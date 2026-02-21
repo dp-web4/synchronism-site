@@ -79,6 +79,12 @@ export default function ResearchPhilosophy() {
           failure documentation, and the testable predictions that remain open.
         </p>
 
+        <h2>Full Research Archive</h2>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          Every session, derivation, failure, and dataset is public:
+          {' '}<a href="https://github.com/dp-web4/Synchronism" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}>github.com/dp-web4/Synchronism</a>
+        </p>
+
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <Link href="/handling-failure" className="btn-primary">
             Next: How We Handle Failure &rarr;

@@ -37,8 +37,8 @@ export default function RootLayout({
             <Link href="/honest-assessment">See what works and what doesn&apos;t.</Link>
           </p>
           <p style={{ marginTop: '0.5rem' }}>
-            <a href="https://github.com/dp-web4" target="_blank" rel="noreferrer">
-              GitHub
+            <a href="https://github.com/dp-web4/Synchronism" target="_blank" rel="noreferrer">
+              Research Archive
             </a>
             {' \u00B7 '}
             <Link href="/research-philosophy">Research Philosophy</Link>

@@ -72,6 +72,9 @@ export default function WhatSynchronismIsNot() {
             <li>A <strong>source of a few genuinely novel predictions</strong> (environment-dependent RAR scatter, density-dependent wide binary anomaly, 51% TFR scatter improvement)</li>
             <li>A <strong>demonstration of radical honesty in science</strong> (failures documented, reparametrizations acknowledged, kill criteria defined)</li>
             <li>An <strong>open question</strong>: does the unified notation reveal something real, or is it just convenient relabeling?</li>
+            <li>A <strong>public record</strong>: every session, failure, and derivation at{' '}
+              <a href="https://github.com/dp-web4/Synchronism" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}>github.com/dp-web4/Synchronism</a>
+            </li>
           </ul>
         </div>
 

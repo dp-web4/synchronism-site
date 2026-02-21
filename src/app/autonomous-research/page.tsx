@@ -101,6 +101,21 @@ export default function AutonomousResearch() {
           </p>
         </div>
 
+        <h2>Public Research Archive</h2>
+        <div className="card" style={{ marginBottom: '1.5rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            All 3,308 sessions, derivations, failures, and raw data are publicly available:
+          </p>
+          <a
+            href="https://github.com/dp-web4/Synchronism"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'var(--color-accent-blue)', fontWeight: 500 }}
+          >
+            github.com/dp-web4/Synchronism &rarr;
+          </a>
+        </div>
+
         <h2>Meta-Significance</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
           <li>First sustained autonomous AI research program (~3 months continuous)</li>

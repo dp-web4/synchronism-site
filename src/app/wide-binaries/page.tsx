@@ -63,6 +63,7 @@ export default function WideBinaries() {
           measurements: positions, proper motions, parallaxes, and radial velocities for over a
           billion stars. From this, wide binary candidates can be identified and their orbital
           dynamics characterized.
+          {' '}<a href="https://gea.esac.esa.int/archive/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}>Gaia Archive (ESA) &rarr;</a>
         </p>
 
         <div className="grid-3" style={{ margin: '1.5rem 0' }}>

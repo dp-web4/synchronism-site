@@ -49,11 +49,18 @@ export const navigationTree: NavigationTree = {
       related: ['/core-idea', '/learning-paths'],
     },
     {
+      title: 'What Synchronism Is Not',
+      href: '/what-synchronism-is-not',
+      desc: 'Scope boundaries: not a TOE, not peer-reviewed, not original physics',
+      keywords: ['scope', 'boundaries', 'not', 'limitations', 'overclaim', 'honest'],
+      related: ['/honest-assessment', '/research-philosophy', '/why-synchronism'],
+    },
+    {
       title: 'Honest Assessment',
       href: '/honest-assessment',
       desc: 'What works, what failed, what we don\'t know',
       keywords: ['honest', 'failures', 'limitations', 'status', 'assessment', 'transparency'],
-      related: ['/why-synchronism', '/chemistry-limitations', '/research-philosophy'],
+      related: ['/why-synchronism', '/chemistry-limitations', '/research-philosophy', '/what-synchronism-is-not'],
     },
   ],
 

@@ -27,7 +27,20 @@ export default function Home() {
           <Link href="/honest-assessment" className="btn-secondary">
             See What Failed
           </Link>
+          <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', display: 'flex', alignItems: 'center' }}>
+            What this is not &rarr;
+          </Link>
         </div>
+      </section>
+
+      {/* Plain-language framing first */}
+      <section style={{ marginBottom: '1.5rem', maxWidth: '65ch' }}>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '1rem', lineHeight: 1.7 }}>
+          <strong>Coherence</strong> is a measure of how collectively a group of particles behaves.
+          When particles act independently (like stars in a galaxy), coherence is low. When they
+          move in lockstep (like electrons in a superconductor), coherence is high. Synchronism
+          asks: can one equation capture this transition across all of physics?
+        </p>
       </section>
 
       {/* The Equation */}
@@ -42,7 +55,7 @@ export default function Home() {
             <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = transition density
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            Derived from first principles. Not fitted to data.{' '}
+            The tanh form and &#x03B3; = 2 are derived from mean-field theory. Three parameters (A, B, &#x03B2;) are fitted to data.{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>See derivations &rarr;</Link>
           </p>
         </div>

@@ -1,10 +1,57 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 
-const paths = [
+const difficultyPaths = [
+  {
+    name: 'Beginner',
+    desc: 'No physics background needed. Plain language, core concepts only.',
+    color: '#10b981',
+    steps: [
+      { title: 'Why Synchronism?', href: '/why-synchronism' },
+      { title: 'First Encounter', href: '/first-encounter' },
+      { title: 'The Core Idea', href: '/core-idea' },
+      { title: 'What Synchronism Is Not', href: '/what-synchronism-is-not' },
+      { title: 'Honest Assessment', href: '/honest-assessment' },
+      { title: 'Glossary', href: '/glossary' },
+    ],
+  },
+  {
+    name: 'Intermediate',
+    desc: 'Undergrad science background. Equations with explanations, key results.',
+    color: 'var(--color-accent-blue)',
+    steps: [
+      { title: 'The Coherence Function', href: '/coherence-function' },
+      { title: 'The γ Parameter', href: '/gamma-parameter' },
+      { title: 'Dark Matter Reframed', href: '/dark-matter' },
+      { title: 'Galaxy Rotation Curves', href: '/galaxy-rotation' },
+      { title: 'The γ ≈ 1 Boundary', href: '/gamma-boundary' },
+      { title: 'The Hard Problem Dissolved', href: '/hard-problem' },
+      { title: 'How We Handle Failure', href: '/handling-failure' },
+      { title: 'Top 5 Decisive Tests', href: '/top-5-tests' },
+    ],
+  },
+  {
+    name: 'Advanced',
+    desc: 'Grad-level physics. Full derivations, parameter chains, test protocols.',
+    color: 'var(--color-accent-violet)',
+    steps: [
+      { title: 'Parameter Derivations', href: '/parameter-derivations' },
+      { title: 'Compression Action', href: '/compression-action' },
+      { title: 'MOND Unification', href: '/mond-unification' },
+      { title: 'CDM Discrimination', href: '/cdm-discrimination' },
+      { title: 'Superconductivity (η)', href: '/superconductivity' },
+      { title: 'Born Rule Derivation', href: '/born-rule' },
+      { title: 'Falsifiability', href: '/falsifiability' },
+      { title: 'Test Catalog (24 experiments)', href: '/test-catalog' },
+    ],
+  },
+];
+
+const domainPaths = [
   {
     name: 'Physics Track',
     desc: 'Quantum mechanics → cosmology → predictions',
@@ -62,24 +109,58 @@ const paths = [
 ];
 
 export default function LearningPaths() {
+  const [view, setView] = useState<'difficulty' | 'domain'>('difficulty');
+
+  const paths = view === 'difficulty' ? difficultyPaths : domainPaths;
+
   return (
     <>
       <Breadcrumbs currentPath="/learning-paths" />
 
       <h1>Learning Paths</h1>
-      <p style={{ color: 'var(--color-text-secondary)', marginBottom: '2rem', maxWidth: '65ch' }}>
-        Choose a track that matches your interest. Each path builds concepts sequentially,
-        so earlier steps provide context for later ones.
+      <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1.5rem', maxWidth: '65ch' }}>
+        Choose by difficulty level or by topic. Each path builds concepts sequentially.
       </p>
 
-      <div className="grid-2">
+      <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '2rem' }}>
+        <button
+          onClick={() => setView('difficulty')}
+          style={{
+            background: view === 'difficulty' ? 'var(--color-accent-violet)' : 'var(--color-dark-surface)',
+            color: view === 'difficulty' ? '#fff' : 'var(--color-text-secondary)',
+            border: '1px solid var(--color-dark-border)',
+            borderRadius: '4px',
+            padding: '0.4rem 1rem',
+            cursor: 'pointer',
+            fontSize: '0.9rem',
+          }}
+        >
+          By Difficulty
+        </button>
+        <button
+          onClick={() => setView('domain')}
+          style={{
+            background: view === 'domain' ? 'var(--color-accent-violet)' : 'var(--color-dark-surface)',
+            color: view === 'domain' ? '#fff' : 'var(--color-text-secondary)',
+            border: '1px solid var(--color-dark-border)',
+            borderRadius: '4px',
+            padding: '0.4rem 1rem',
+            cursor: 'pointer',
+            fontSize: '0.9rem',
+          }}
+        >
+          By Topic
+        </button>
+      </div>
+
+      <div className={view === 'difficulty' ? '' : 'grid-2'} style={view === 'difficulty' ? { display: 'flex', flexDirection: 'column', gap: '1.5rem' } : undefined}>
         {paths.map(path => (
           <div key={path.name} className="card">
             <h2 style={{ color: path.color, fontSize: '1.25rem' }}>{path.name}</h2>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
               {path.desc}
             </p>
-            <ol style={{ listStyle: 'none', padding: 0, margin: 0, counterReset: 'step' }}>
+            <ol style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               {path.steps.map((step, i) => (
                 <li key={step.href} style={{ marginBottom: '0.5rem' }}>
                   <Link

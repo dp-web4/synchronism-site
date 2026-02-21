@@ -14,14 +14,19 @@ export default function CoherenceFunction() {
       <ValidationBadge status="validated" label="Core Equation" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <p>
+          Before the math: <strong>coherence</strong> measures how collectively particles behave.
+          Ice cubes have high coherence (rigid crystal lattice). Steam has low coherence (random
+          motion). This function quantifies that spectrum for any system, at any scale.
+        </p>
+
         <EquationDisplay size="lg" label="The Synchronism coherence function">
           C(&#x03C1;) = tanh(&#x03B3; &middot; log(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </EquationDisplay>
 
         <p>
-          This is the central equation of Synchronism. It maps <strong>density</strong> (a physical
-          observable) to <strong>coherence</strong> (a dimensionless number between 0 and 1 that
-          describes how quantum or classical a system is).
+          This maps <strong>density</strong> (a physical observable) to <strong>coherence</strong>
+          (a dimensionless number between 0 and 1 that describes how quantum or classical a system is).
         </p>
 
         <h2>Inputs and Outputs</h2>

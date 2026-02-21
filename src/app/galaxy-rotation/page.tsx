@@ -34,6 +34,7 @@ export default function GalaxyRotation() {
             <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
               <strong>175 galaxies</strong> with high-quality photometry and resolved rotation curves
               (Lelli, McGaugh &amp; Schombert 2016). The gold standard for RAR studies.
+              {' '}<a href="http://astroweb.cwru.edu/SPARC/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>[Public data]</a>
             </p>
             <ul style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
               <li>Tight RAR confirmed (&#x03C3;<sub>int</sub> &#x2248; 0.057 dex)</li>
@@ -46,6 +47,8 @@ export default function GalaxyRotation() {
             <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
               <strong>14,585 galaxies</strong> from the ALFALFA HI survey cross-matched with SDSS
               photometry. Unresolved rotation curves but massive statistical power.
+              {' '}<a href="http://egg.astro.cornell.edu/alfalfa/data/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>[ALFALFA data]</a>
+              {' '}<a href="https://www.sdss.org/dr17/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>[SDSS DR17]</a>
             </p>
             <ul style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
               <li>Environment-dependent RAR scatter detected at p = 5 &times; 10<sup>&minus;6</sup></li>

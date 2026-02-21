@@ -61,6 +61,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Key Claims — prominent entry */}
+      <Link href="/key-claims" style={{ textDecoration: 'none', display: 'block' }}>
+        <section className="card" style={{
+          marginBottom: '3rem',
+          border: '2px solid var(--color-accent-violet)',
+          background: 'linear-gradient(135deg, rgba(167, 139, 250, 0.08) 0%, rgba(56, 189, 248, 0.08) 100%)',
+          padding: '1.5rem 2rem',
+          position: 'relative',
+          overflow: 'hidden',
+        }}>
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            right: 0,
+            background: 'var(--color-accent-violet)',
+            color: 'white',
+            fontSize: '0.7rem',
+            fontWeight: 600,
+            padding: '0.25rem 0.75rem',
+            borderBottomLeftRadius: '0.5rem',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+          }}>
+            Start here
+          </div>
+          <h2 style={{ margin: '0 0 0.5rem', fontSize: '1.3rem' }}>
+            Where does Synchronism move the needle?
+          </h2>
+          <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 1rem', fontSize: '0.95rem', maxWidth: '60ch' }}>
+            Five claims where this framework says something new &mdash; not restatements in
+            different notation, but predictions with equations, evidence, and kill criteria.
+          </p>
+          <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', fontSize: '0.85rem' }}>
+            <span style={{ color: '#22c55e' }}>
+              <strong>2</strong> consistent with published experiments
+            </span>
+            <span style={{ color: '#f59e0b' }}>
+              <strong>1</strong> with cross-domain convergence
+            </span>
+            <span style={{ color: 'var(--color-text-muted)' }}>
+              <strong>2</strong> speculative with kill criteria
+            </span>
+          </div>
+          <span style={{ color: 'var(--color-accent-violet)', fontSize: '0.9rem', marginTop: '0.75rem', display: 'inline-block' }}>
+            See the key claims &rarr;
+          </span>
+        </section>
+      </Link>
+
       {/* Tabs */}
       <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '2rem' }}>
         <button

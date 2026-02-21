@@ -241,7 +241,7 @@ export default function KeyClaims() {
             Theoretical: 8 independent approaches converge on C &#x2248; 0.50 (range 0.48&ndash;0.52).
             Cross-domain: the Gnosis AI architecture (a correctness-detection system for LLMs) independently
             converged on C &#x2248; 0.50 as its operating threshold through 4 different mathematical frameworks.
-            34 falsifiable predictions enumerated, none tested.
+            <Link href="/consciousness-predictions">34 falsifiable predictions</Link> enumerated, none tested.
           </p>
 
           <div style={{

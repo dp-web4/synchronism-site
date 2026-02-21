@@ -90,18 +90,19 @@ export default function Home() {
             Where does Synchronism move the needle?
           </h2>
           <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 1rem', fontSize: '0.95rem', maxWidth: '60ch' }}>
-            Five claims where this framework says something new &mdash; not restatements in
-            different notation, but predictions with equations, evidence, and kill criteria.
+            Three claims where this framework says something genuinely new. Quantum mysteries
+            reframed as synchronization physics. Consciousness given an equation. Dark matter
+            explained without new particles.
           </p>
           <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', fontSize: '0.85rem' }}>
-            <span style={{ color: '#22c55e' }}>
-              <strong>2</strong> consistent with published experiments
+            <span style={{ color: 'var(--color-accent-violet)' }}>
+              <strong>1</strong> new ontology with testable consequences
             </span>
             <span style={{ color: '#f59e0b' }}>
-              <strong>1</strong> with cross-domain convergence
+              <strong>1</strong> untested with 8-way convergence
             </span>
-            <span style={{ color: 'var(--color-text-muted)' }}>
-              <strong>2</strong> speculative with kill criteria
+            <span style={{ color: '#22c55e' }}>
+              <strong>1</strong> consistent with 14,760 galaxies
             </span>
           </div>
           <span style={{ color: 'var(--color-accent-violet)', fontSize: '0.9rem', marginTop: '0.75rem', display: 'inline-block' }}>

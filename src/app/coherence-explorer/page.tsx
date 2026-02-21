@@ -55,7 +55,26 @@ export default function CoherenceExplorer() {
       <h1>Coherence Explorer</h1>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
-        <p>
+        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-violet)' }}>
+          <h3 style={{ marginBottom: '0.5rem' }}>What you&apos;re seeing</h3>
+          <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+            This tool plots the coherence function &mdash; the single equation at the heart of Synchronism.
+            It takes a density (&#x03C1;) and returns a coherence value between 0 (quantum/random)
+            and 1 (classical/ordered).
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+            <strong>&#x03B3;</strong> controls the transition sharpness. Low &#x03B3; (&lt; 0.6) = quantum regime,
+            &#x03B3; &#x2248; 1 = the boundary where chemistry and biology happen,
+            high &#x03B3; (&gt; 1.4) = classical regime.
+          </p>
+          <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem' }}>
+            <strong>What to notice:</strong> Move &#x03B3; from 0.5 to 2.0 and watch the curve flatten.
+            At &#x03B3; &#x2248; 1, the transition from quantum to classical is steepest &mdash;
+            this is where the most interesting physics happens.
+          </p>
+        </div>
+
+        <p style={{ marginBottom: '1rem' }}>
           Adjust &#x03B3; and &#x03C1;<sub>crit</sub> to see how the coherence function
           C(&#x03C1;) = tanh(&#x03B3; &middot; log(&#x03C1;/&#x03C1;<sub>crit</sub> + 1)) responds.
         </p>

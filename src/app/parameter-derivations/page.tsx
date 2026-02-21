@@ -12,8 +12,12 @@ export default function ParameterDerivations() {
       <Breadcrumbs currentPath="/parameter-derivations" />
       <h1>Parameter Derivations</h1>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '2rem', maxWidth: '65ch' }}>
-        Every parameter in the coherence function is derived from first principles.
-        None are fitted to data. Here is the complete chain.
+        The coherence function has two kinds of parameters: the <strong>functional form</strong> (tanh,
+        &#x03B3; = 2/&#x221A;N<sub>corr</sub>) which is derived from mean-field theory, and
+        the <strong>scaling constants</strong> (A, a&#x2080;, &#x03A3;&#x2080;, R&#x2080;) which are
+        derived from dimensional analysis with fundamental constants but show 3&ndash;12% errors
+        against observations. Whether those errors reflect approximation limits or hidden calibration
+        is an open question.
       </p>
 
       <section className="section content-width">
@@ -98,12 +102,17 @@ export default function ParameterDerivations() {
       <section className="section content-width">
         <h2>What&apos;s Notable</h2>
         <p>
-          The entire derivation chain uses only fundamental constants (c, G, &#x03B1;, H&#x2080;) and
-          one observable (V<sub>flat</sub>). No free parameters. No fitting. The errors (3-12%) come from
-          the approximations in the derivation, not from tuning.
+          The derivation chain uses fundamental constants (c, G, &#x03B1;, H&#x2080;) plus one
+          observable (V<sub>flat</sub>). The functional form (tanh, &#x03B3;) has zero free parameters.
+          The scaling constants (A, a&#x2080;, &#x03A3;&#x2080;, R&#x2080;) show 3&ndash;12%
+          agreement with observations.
         </p>
-        <p>
-          This is Synchronism&apos;s strongest claim: these results are <em>derived</em>, not <em>found</em>.
+        <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.9rem' }}>
+          <strong>Honest caveat:</strong> The 3&ndash;12% errors could reflect either (a) legitimate
+          approximation limits in the dimensional analysis, or (b) implicit calibration through
+          choice of V<sub>flat</sub> as input. Distinguishing these requires independent derivation.
+          The landing page describes the scaling constants as &ldquo;fitted&rdquo; &mdash; that may be
+          the more conservative and accurate framing.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

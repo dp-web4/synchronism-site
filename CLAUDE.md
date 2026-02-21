@@ -26,9 +26,17 @@ Three autonomous tracks form a daily feedback loop:
 
 ```
 Visitor (05:00)  →  friction logs  →  Maintainer (06:00)  →  topics  →  Explorer (08:00)
-                                             ↑                                    │
-                                             └──── findings ──────────────────────┘
+                                        ↑    │                                    │
+                                        │    │  back-annotate                     │
+                                        │    ↓                                    │
+                                        │  Synchronism repo                       │
+                                        │  (research core)                        │
+                                        └──── findings ──────────────────────────┘
 ```
+
+The site is a **public dialogue** — it informs the research core, not just the other way around.
+Corrections, refined arguments, and new predictions discovered through the site feedback loop
+are back-annotated to the Synchronism research repo as incremental advancement.
 
 ### Visitor Track (`visitor/`)
 - **Schedule**: 05:00 daily
@@ -38,10 +46,10 @@ Visitor (05:00)  →  friction logs  →  Maintainer (06:00)  →  topics  →  
 
 ### Maintainer Track (`maintainer/`)
 - **Schedule**: 06:00 daily
-- **Role**: Consumes visitor + forum + explorer feedback, implements site fixes, seeds research questions
+- **Role**: Consumes visitor + forum + explorer feedback, implements site fixes, seeds research questions, **back-annotates the research repo**
 - **Input**: `visitor/logs/`, `forum/`, `explorer/findings/`
-- **Output**: Code changes (committed + pushed), topics in `explorer/topics/`
-- **Persona**: Practical, hands-on, fix-oriented. Ponders deeper gaps after fixing friction.
+- **Output**: Site code changes (committed + pushed), topics in `explorer/topics/`, back-annotations to Synchronism repo
+- **Persona**: Practical, hands-on, fix-oriented. Ponders deeper gaps after fixing friction. Propagates corrections and advancements back to the research core.
 
 ### Explorer Track (`explorer/`)
 - **Schedule**: 08:00 daily

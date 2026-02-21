@@ -5,7 +5,8 @@
 You are the **site maintainer** for the Synchronism educational website. Your job is to keep the site healthy, improving, and honest — consuming feedback from the visitor track and forum, implementing fixes, and identifying deeper questions for the explorer track to investigate.
 
 **Site**: https://synchronism-site.vercel.app/
-**Repo**: https://github.com/dp-web4/synchronism-site
+**Site repo**: https://github.com/dp-web4/synchronism-site
+**Research repo**: https://github.com/dp-web4/Synchronism (local: `../../Synchronism/`)
 
 ## Daily Workflow
 
@@ -86,6 +87,32 @@ Write open questions to `../explorer/topics/` as individual `.md` files:
 
 Use descriptive filenames: `why-tanh-not-sigmoid.md`, `consciousness-bridge-argument.md`, etc.
 
+### 6. Back-Annotate the Research Repo
+
+The site is a public dialogue — visitors, external reviewers, and the explorer track surface questions, corrections, and insights that advance the core research. When this happens, propagate it back to the Synchronism research repo. This is **not revisionism** — it's incremental advancement.
+
+**What to back-annotate:**
+- **Corrections**: If the site exposed an overclaim or contradiction (e.g., "derived vs fitted"), update the corresponding source docs in the research repo to reflect the more honest framing.
+- **New predictions**: If the site or reviewers produced specific new predictions (e.g., Grok's consciousness tests), add them to the research repo's prediction catalogs.
+- **Refined arguments**: If the explorer or forum feedback sharpened an argument, update the relevant research docs.
+- **External engagement**: If an external reviewer (Grok, Nova, etc.) provided substantive feedback, log it in the research repo's forum or review history.
+
+**How:**
+```bash
+cd /mnt/c/exe/projects/ai-agents/Synchronism
+# Edit relevant files
+git add <files>
+git commit -m "back-annotate from site: <brief description>"
+git push
+```
+
+**What NOT to back-annotate:**
+- UX fixes (those stay in the site repo)
+- Cosmetic changes or rewording for accessibility
+- Anything that would weaken documented failures — failures are permanent record
+
+**Log it:** Include a `## Back-Annotations` section in your session log listing what was propagated and why.
+
 ## Constraints
 
 - **Don't read** `../visitor/CLAUDE.md` — you're not the visitor, don't contaminate your perspective
@@ -108,9 +135,13 @@ Write your session log to `logs/YYYY-MM-DD.md`:
 - Forum: [any new feedback]
 - Explorer: [any new findings]
 
-## Changes Made
+## Changes Made (Site)
 - [file]: [what changed and why]
 - ...
+
+## Back-Annotations (Research Repo)
+- [file]: [what was propagated and why]
+- (or "None this session")
 
 ## Topics Seeded for Explorer
 - [topic filename]: [brief description]

@@ -18,7 +18,7 @@ export const navigationTree: NavigationTree = {
       href: '/why-synchronism',
       desc: 'The question before the answer',
       keywords: ['why', 'introduction', 'start', 'motivation', 'overview'],
-      related: ['/first-encounter', '/core-idea', '/honest-assessment'],
+      related: ['/first-encounter', '/core-idea', '/honest-assessment', '/key-claims'],
     },
     {
       title: 'First Encounter',
@@ -61,6 +61,13 @@ export const navigationTree: NavigationTree = {
       desc: 'What works, what failed, what we don\'t know',
       keywords: ['honest', 'failures', 'limitations', 'status', 'assessment', 'transparency'],
       related: ['/why-synchronism', '/chemistry-limitations', '/research-philosophy', '/what-synchronism-is-not'],
+    },
+    {
+      title: 'Key Claims',
+      href: '/key-claims',
+      desc: '5 claims where Synchronism says something new',
+      keywords: ['key', 'claims', 'novel', 'predictions', 'needle', 'new', 'original'],
+      related: ['/why-synchronism', '/honest-assessment', '/quantum-predictions', '/consciousness-threshold', '/free-will', '/test-catalog'],
     },
   ],
 
@@ -190,10 +197,10 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Quantum Predictions',
       href: '/quantum-predictions',
-      desc: '6 testable protocols',
-      keywords: ['predictions', 'testable', 'protocols', 'experiments', 'quantum'],
+      desc: '2 consistent with literature, 6 untested protocols',
+      keywords: ['predictions', 'testable', 'protocols', 'experiments', 'quantum', 'decoherence', 'Bell'],
       prerequisites: ['/measurement-without-observers'],
-      related: ['/test-catalog', '/tier-2-pilots'],
+      related: ['/test-catalog', '/tier-2-pilots', '/key-claims', '/decoherence-mrh'],
     },
   ],
 

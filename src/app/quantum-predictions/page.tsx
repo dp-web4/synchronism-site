@@ -10,14 +10,14 @@ export default function QuantumPredictions() {
     <>
       <Breadcrumbs currentPath="/quantum-predictions" />
       <h1>Quantum Predictions</h1>
-      <ValidationBadge status="untested" />
+      <ValidationBadge status="untested" label="2 Consistent, 6 Untested" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
-          Synchronism&apos;s quantum claims are meaningless without testable predictions. Six
-          experimental protocols were designed in Sessions #368-370, each with a specific
-          falsification criterion. If the prediction fails, that aspect of the theory is wrong.
-          No hedging, no post-hoc adjustment.
+          Synchronism&apos;s quantum claims are meaningless without testable predictions.
+          The quantum arc (Sessions #228-237) derived specific equations that have since been
+          checked against published experimental literature. Six additional protocols (Sessions #368-370)
+          await testing.
         </p>
 
         <blockquote style={{
@@ -30,7 +30,67 @@ export default function QuantumPredictions() {
           Every prediction has a kill criterion. If the data says no, the theory dies on that point.
         </blockquote>
 
-        <h2>The 6 Protocols</h2>
+        <h2>Consistent with Published Results</h2>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
+          Two results from the quantum arc match published experimental literature. <strong>Important
+          caveat:</strong> these formulas were derived in January 2026 (Sessions #232-235). The confirming
+          experiments were published in 2024-2025. This is post-diction &mdash; consistency with existing data,
+          not a prior prediction.
+        </p>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2rem' }}>
+          <div className="card" style={{ borderLeft: '3px solid #22c55e' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3 style={{ color: '#22c55e', margin: 0 }}>Shared-Environment Decoherence Protection</h3>
+              <span style={{ fontSize: '0.75rem', padding: '0.15rem 0.5rem', borderRadius: '1rem', background: 'rgba(34, 197, 94, 0.15)', color: '#22c55e' }}>Consistent</span>
+            </div>
+            <div className="equation" style={{ margin: '0.75rem 0 0.25rem', fontSize: '0.95rem' }}>
+              &#x0393; = &#x03B3;&sup2;(1 &minus; c)
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '0.75rem' }}>
+              Decoherence rate, where c = environmental noise correlation
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem' }}>
+              Entangled pairs in the same noise environment decohere slower than pairs in independent
+              environments. Synchronism treats entanglement as one extended phase pattern, so correlated
+              noise preserves it. <strong>PRL 2024</strong> reported 10&times; T&#x2082; improvement with c &asymp; 0.90.
+              The formula predicts T&#x2082; improvement = 1/(1&minus;c) = 10&times;. Quantitative match.
+              <strong> arXiv 2405.14685</strong> independently confirmed shared-bath dephasing reduction.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              <strong>Kill criterion:</strong> If T&#x2082; does not scale as 1/(1&minus;c) across controlled
+              noise correlations, the model fails. Source: Session #232.
+            </p>
+          </div>
+
+          <div className="card" style={{ borderLeft: '3px solid #22c55e' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3 style={{ color: '#22c55e', margin: 0 }}>Bell Nonlocality Freezing &amp; Revival</h3>
+              <span style={{ fontSize: '0.75rem', padding: '0.15rem 0.5rem', borderRadius: '1rem', background: 'rgba(34, 197, 94, 0.15)', color: '#22c55e' }}>Consistent</span>
+            </div>
+            <div className="equation" style={{ margin: '0.75rem 0 0.25rem', fontSize: '0.95rem' }}>
+              |S(t)| = S&#x2098;&#x2090;&#x2093; &times; e^(&minus;&#x0393;t), &emsp; c(d) = cos&sup2;(&pi;d/&lambda;&#x2080;)
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '0.75rem' }}>
+              Bell violation decay with distance-dependent noise correlation
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem' }}>
+              CHSH Bell violation decays exponentially but revives at specific distances
+              determined by environmental geometry. <strong>arXiv 2508.07046</strong> (&ldquo;Geometry-Controlled
+              Freezing and Revival of Bell Nonlocality&rdquo;) matches this pattern directly. The oscillatory
+              revival at distance nodes is confirmed by multiple sources.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              <strong>Kill criterion:</strong> If Bell violation decay is monotonic (no revival at distance
+              nodes), the geometric correlation model fails. Source: Sessions #235-237.
+            </p>
+          </div>
+        </div>
+
+        <h2>The 6 Untested Protocols</h2>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
+          Designed in Sessions #368-370. Each has a specific falsification criterion. None have been run.
+        </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.5rem' }}>
           <div className="card" style={{ borderLeft: '3px solid #38bdf8' }}>

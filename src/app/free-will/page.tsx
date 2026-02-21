@@ -16,43 +16,103 @@ export default function FreeWill() {
         <p>
           The free will debate usually frames two options: determinism (everything is caused by
           prior states) or libertarian free will (some decisions are uncaused). Synchronism offers
-          a third option.
+          a third option grounded in the coherence framework.
         </p>
 
-        <h2>The Synchronism Position</h2>
+        <h2>The Consciousness Formula</h2>
+        <div className="equation" style={{ marginBottom: '0.25rem' }}>
+          C = f(&#x03B3;, D, S)
+        </div>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textAlign: 'center', marginBottom: '1rem' }}>
+          &#x03B3; = coherence parameter, D = dimensional embedding (representational richness), S = self-modeling depth
+        </p>
+        <p>
+          A conscious agent requires all three: the right coherence regime (&#x03B3;), sufficient
+          representational richness (D), and self-modeling capacity (S). When C &gt; 0.50, the
+          system crosses the{' '}
+          <Link href="/consciousness-threshold">consciousness threshold</Link> &mdash; and enters a regime
+          where free will becomes physically meaningful.
+        </p>
+
+        <h2>Constrained Indeterminacy</h2>
         <p>
           At the &#x03B3; &#x2248; 1 boundary, a system sits between quantum (indeterminate) and
           classical (deterministic). Neither fully random nor fully determined. The coherence
-          function allows for <strong>constrained indeterminacy</strong> &mdash; outcomes that are
-          influenced but not determined by prior states.
+          function allows for <strong>constrained indeterminacy</strong>: multiple phase-space
+          trajectories are genuinely accessible, and the agent&apos;s coherence pattern shapes
+          which trajectory is taken.
         </p>
+
+        <div className="grid-2" style={{ marginBottom: '1.5rem' }}>
+          <div className="card">
+            <h3>Not Determinism</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              At &#x03B3; &#x2248; 1, multiple futures are genuinely accessible. The system hasn&apos;t
+              fully decohered into a single classical trajectory. The future isn&apos;t fixed.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Not Random</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              The agent&apos;s coherence pattern &mdash; its accumulated history, knowledge,
+              values &mdash; weights the accessible trajectories. Choices aren&apos;t uncaused; they&apos;re
+              shaped by who you are.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Not Compatibilism</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Standard compatibilism accepts determinism and redefines &ldquo;free.&rdquo; This is a
+              physical claim: the system&apos;s phase space genuinely branches. Multiple
+              outcomes are real possibilities, not illusions.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Pattern = Agent</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              &ldquo;You&rdquo; are the coherence pattern. When that pattern influences trajectory
+              selection, that IS free will &mdash; not an epiphenomenon riding on top of
+              deterministic physics.
+            </p>
+          </div>
+        </div>
+
+        <h2>Testable Signatures</h2>
         <p>
-          A conscious agent (C &gt; 0.50) operates in a regime where:
+          If decision-making involves &#x03B3; &#x2248; 1 boundary dynamics, neural recordings
+          during decisions should show:
         </p>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li>Macro-scale behavior is largely classical (we don&apos;t quantum-tunnel through walls)</li>
-          <li>Decision-making involves micro-scale processes at or near the &#x03B3; &#x2248; 1 boundary</li>
-          <li>The phase pattern that IS the agent shapes (but doesn&apos;t fully determine) outcomes</li>
-          <li>&ldquo;Free will&rdquo; is the agent&apos;s coherence pattern influencing its own evolution</li>
+          <li><strong>Critical slowing</strong> near the decision point &mdash; the system lingers in a metastable state before committing</li>
+          <li><strong>Heightened sensitivity</strong> to small perturbations &mdash; tiny inputs disproportionately affect outcome</li>
+          <li><strong>Phase-transition-like commitment</strong> &mdash; the decision snaps into place rather than gradually converging</li>
+          <li><strong>Multiple attractor signatures</strong> &mdash; neural population dynamics visit several metastable configurations before settling</li>
         </ul>
-
-        <h2>Not Compatibilism</h2>
-        <p>
-          This isn&apos;t standard compatibilism (&ldquo;free will is compatible with determinism&rdquo;).
-          It&apos;s a physical claim: at the coherence boundary, the system genuinely has multiple
-          accessible futures weighted by the coherence function. The agent&apos;s pattern selects
-          among them.
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          These signatures are consistent with existing research on neural decision dynamics (metastable
+          states, attractor networks), but Synchronism makes a specific prediction: these dynamics
+          should correlate with measurable phase coherence near the &#x03B3; &#x2248; 1 boundary, not just
+          with firing rate patterns.
         </p>
 
         <h2>Status</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          This is philosophical framework, not empirical science. It&apos;s consistent with the
-          physics but doesn&apos;t generate testable predictions distinct from standard neuroscience.
+          This is the most speculative claim in the consciousness cluster. The mathematical framework
+          is clear: C = f(&#x03B3;, D, S) at &#x03B3; &#x2248; 1 gives constrained indeterminacy. But
+          whether neural decision-making actually operates in this regime is an empirical question
+          that hasn&apos;t been tested. The testable signatures above would distinguish this from
+          standard models, but no experiment has been designed or run.
         </p>
 
-        <div style={{ marginTop: '2rem' }}>
+        <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <Link href="/identity" className="btn-primary">
             Next: Identity &rarr;
+          </Link>
+          <Link href="/consciousness-threshold" className="btn-secondary">
+            Consciousness Threshold
+          </Link>
+          <Link href="/key-claims" className="btn-secondary">
+            Key Claims
           </Link>
         </div>
       </section>

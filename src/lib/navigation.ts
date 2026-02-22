@@ -505,10 +505,10 @@ export const navigationTree: NavigationTree = {
       related: ['/publication-roadmap', '/honest-assessment'],
     },
     {
-      title: 'Coupling-Coherence Experiment',
+      title: 'Compression Trust Phase Transition',
       href: '/coupling-experiment',
-      desc: 'Multi-agent knowledge discovery with controllable coupling',
-      keywords: ['coupling', 'coherence', 'experiment', 'multi-agent', 'Bayesian', 'sigmoid', 'p_crit'],
+      desc: 'How compression trust creates collective knowledge',
+      keywords: ['coupling', 'coherence', 'experiment', 'multi-agent', 'Bayesian', 'sigmoid', 'compression', 'trust'],
       related: ['/coherence-function', '/falsifiability', '/test-catalog'],
     },
   ],

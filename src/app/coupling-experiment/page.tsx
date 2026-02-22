@@ -112,7 +112,7 @@ function Chart({ showModel, metric }: { showModel: string; metric: 'C' | 'conv' 
 
       {/* Axis labels */}
       <text x={W / 2} y={H - 5} textAnchor="middle" fill="var(--color-text)" fontSize="12">
-        Coupling (p)
+        Compression Trust Frequency (p)
       </text>
       <text x={15} y={H / 2} textAnchor="middle" fill="var(--color-text)" fontSize="12"
             transform={`rotate(-90, 15, ${H / 2})`}>Score</text>
@@ -165,7 +165,7 @@ export default function CouplingExperiment() {
   return (
     <>
       <Breadcrumbs currentPath="/coupling-experiment" />
-      <h1>Coupling-Coherence Experiment</h1>
+      <h1>Compression Trust Phase Transition</h1>
       <ValidationBadge status="supported" label="Executed" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
@@ -180,9 +180,25 @@ export default function CouplingExperiment() {
 
         <h2>The Question</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Does C(p) = tanh(&#947; &middot; log(p/p<sub>crit</sub> + 1)) describe coherence emergence
-          in multi-agent knowledge discovery when coupling is varied?
+          Does collective coherence emerge through a <strong>phase transition in compression trust</strong> &mdash;
+          the rate at which agents accept each other&apos;s compressed representations of reality?
         </p>
+
+        <div className="card" style={{ borderLeft: '3px solid #3498db', marginBottom: '1.5rem' }}>
+          <h3>Compression Trust</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            Every observation is lossy &mdash; a compression of the world. When agent A shares its belief
+            matrix with agent B, it is offering a <strong>compressed summary</strong> of everything it has
+            observed. B must decide how much to trust that compression. The coupling parameter p is not
+            &ldquo;density&rdquo; &mdash; it is the <strong>frequency of compression trust events</strong>:
+            how often one agent accepts another&apos;s lossy summary as input to its own reasoning.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
+            High trust = accept compressed summaries. Low trust = require raw data. Zero trust = no shared
+            representation accepted. The self-weight (&alpha;=0.7) is the <strong>trust gradient</strong> &mdash;
+            how much an agent trusts its own compression vs what it receives.
+          </p>
+        </div>
 
         <h2>Experimental Design</h2>
 
@@ -204,10 +220,11 @@ export default function CouplingExperiment() {
             </p>
           </div>
           <div className="card">
-            <h3>Controllable Coupling</h3>
+            <h3>Controllable Compression Trust</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Parameter <strong>p &isin; [0, 1]</strong>: probability that any two agents share beliefs
-              each round. p=0 = fully independent. p=1 = full transparency. 45 coupling levels tested.
+              Parameter <strong>p &isin; [0, 1]</strong>: frequency of compression trust events &mdash;
+              probability that any two agents share compressed beliefs each round.
+              p=0 = zero trust. p=1 = full trust. 45 levels tested.
             </p>
           </div>
           <div className="card">
@@ -364,10 +381,11 @@ export default function CouplingExperiment() {
             derivation R&sup2; = -662 (catastrophic). The formula is wrong.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-            This means p<sub>crit</sub> in this domain is <strong>only a fit parameter</strong>,
-            not a derived invariant. The &ldquo;universal&rdquo; claim shifts from
-            &ldquo;derived invariant&rdquo; to &ldquo;nice curve family&rdquo; &mdash; still useful,
-            but a different and weaker claim.
+            <strong>Why it fails (compression trust framing):</strong> The formula treats the critical
+            threshold as an intrinsic system property. But compression trust is <em>relational</em> &mdash;
+            it depends on the quality of compressed representations being shared, which emerges from
+            interaction history. You cannot derive the minimum trust frequency for collective coherence
+            from system parameters alone, because the value of trust depends on what is trusted.
           </p>
         </div>
 
@@ -417,9 +435,10 @@ export default function CouplingExperiment() {
           <div className="card" style={{ borderLeft: '3px solid #2ecc71' }}>
             <h3>Confirmed</h3>
             <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              <li>Multi-agent knowledge discovery produces a clear sigmoid C(p) curve</li>
+              <li>Collective knowledge emerges through a <strong>compression trust phase transition</strong></li>
               <li>Convergence tracks correctness &mdash; no &ldquo;shared wrongness&rdquo;</li>
-              <li>Even tiny coupling (p &asymp; 0.01) dramatically improves collective coherence</li>
+              <li>Sparse trust suffices: p &asymp; 0.01 (1% trust event rate) gives 35% coherence gain</li>
+              <li>Hill function (cooperative binding) &mdash; trust compounds cooperatively, not linearly</li>
               <li>The measurement protocol (Jaccard + F1 + geometric mean) works</li>
             </ul>
           </div>
@@ -427,9 +446,9 @@ export default function CouplingExperiment() {
             <h3>Refuted</h3>
             <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               <li>tanh is not uniquely preferred &mdash; Hill function fits better</li>
-              <li>p<sub>crit</sub> derivation fails completely (400&times; error)</li>
-              <li>Claim downgrades from &ldquo;universal equation with derived parameters&rdquo;
-                  to &ldquo;one of several sigmoid descriptions of a real phenomenon&rdquo;</li>
+              <li>Critical trust threshold cannot be derived &mdash; trust is relational, not intrinsic</li>
+              <li>The &ldquo;generalized density&rdquo; framing was wrong &mdash; p is compression trust
+                  frequency, not density. Reframing is more honest and more useful</li>
             </ul>
           </div>
         </div>

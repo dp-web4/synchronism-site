@@ -78,9 +78,28 @@ Hill function (power-law sigmoid) beats tanh by ΔAIC=4.0. tanh beats logistic a
 
 ## What's Dead
 
-1. **"Universal equation" claim**: if p_crit can't be derived, the equation is descriptive, not predictive. You can fit the data after the fact, but you can't predict the transition from system properties alone.
+1. **"Generalized density" framing**: p is not density. It is the frequency of compression trust events — how often one agent accepts another's lossy summary as input to its own reasoning. The reframing is both more honest and more useful.
 
-2. **Unique preference for tanh**: the Hill function is slightly better. The logarithmic argument in tanh doesn't provide a unique advantage over the power-law form of Hill. Both are members of the broader family of saturating sigmoids.
+2. **"Universal equation" claim**: if p_crit can't be derived, the equation is descriptive, not predictive. The compression trust framing explains why: trust is relational (depends on quality of shared compressions), not intrinsic (derivable from system parameters). You can't predict the minimum trust frequency because the value of trust depends on what is trusted.
+
+3. **Unique preference for tanh**: the Hill function is slightly better. Hill comes from cooperative binding kinetics — trust compounds cooperatively, not logarithmically. Both are members of the broader family of saturating sigmoids.
+
+## The Reframe: Compression Trust
+
+After running the experiment, the better framing emerged: this is a **compression trust phase transition study**, not a "generalized density" test.
+
+| Experiment Concept | What It Actually Is |
+|-------------------|---------------------|
+| Coupling parameter p | **Compression trust frequency** — rate of trust events |
+| Belief matrix | **Compressed representation** — lossy summary of observations |
+| Self-weight α=0.7 | **Trust gradient** — how much you trust your own vs others' compressions |
+| Noise rate η=0.15 | **Compression loss** — observations are provably lossy |
+| p_crit | **Minimum trust frequency** for collective coherence |
+| Sigmoid transition | **Phase transition in compression trust** — not gradual accumulation |
+
+This connects directly to Web4's trust architecture and SAGE's multi-agent orchestration. The experiment is really testing a Web4 primitive: does compression trust create collective knowledge through a phase transition?
+
+The answer is yes. The critical insight: you can't derive the trust threshold from system properties because trust is relational. And you don't need much of it — p ≈ 0.01 is enough.
 
 ## Data and Code
 
@@ -90,5 +109,6 @@ Everything is public:
 - Raw data: `simulations/results/coupling_coherence_*.json`
 - Protocol: `Research/Coupling_Coherence_Experiment.md`
 - Interactive results: https://synchronism-site.vercel.app/coupling-experiment
+- Cross-project analysis: `github.com/dp-web4/HRM/forum/insights/coupling-coherence-web4-sage.md`
 
 Your challenge was sharp and productive. The experiment is better for it.

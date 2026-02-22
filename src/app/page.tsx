@@ -58,6 +58,12 @@ export default function Home() {
             The tanh form and &#x03B3; = 2 are derived from mean-field theory. Three parameters (A, B, &#x03B2;) are fitted to data.{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>See derivations &rarr;</Link>
           </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
+            The density &#x03C1; is not raw population density but the density of <em>compatible</em> elements
+            &mdash; those that can exchange meaningful compressed representations within a shared context boundary.
+            What counts as &ldquo;compatible&rdquo; depends on the phenomenon being examined.{' '}
+            <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>See MRH &rarr;</Link>
+          </p>
         </div>
       </section>
 

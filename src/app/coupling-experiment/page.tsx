@@ -200,6 +200,15 @@ export default function CouplingExperiment() {
           </p>
         </div>
 
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>
+          <strong>Note on density:</strong> In the general coherence equation C(&#961;), the density &#961; is not
+          raw population density but the density of <em>compatible</em> elements &mdash; those capable of
+          productive compression trust within a shared{' '}
+          <a href="/mrh">Markov Relevancy Horizon</a>.
+          This experiment sets compatibility to 1.0 (all agents are identical), isolating coupling frequency
+          as the sole variable. Real-world coherence depends on both frequency <em>and</em> compatibility.
+        </p>
+
         <h2>Experimental Design</h2>
 
         <div className="grid-2" style={{ marginBottom: '1.5rem' }}>

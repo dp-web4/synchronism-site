@@ -14,8 +14,17 @@ export default function MRH() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
-          The Markov Relevancy Horizon (MRH) is the boundary beyond which interactions between
-          two systems become statistically irrelevant &mdash; their correlations decay below the noise floor.
+          The Markov Relevancy Horizon (MRH) is a term proposed by Dennis Palatov, inspired
+          by <strong>Markov blankets</strong> &mdash; a concept from probabilistic graphical models
+          where a node&apos;s Markov blanket is the minimal set of other nodes that makes it
+          conditionally independent of everything else. The blanket is the boundary: everything
+          inside it is relevant to the node, everything outside is statistically screened off.
+        </p>
+        <p>
+          MRH extends this idea from a static graph property to a dynamical, scale-dependent
+          boundary. Where a Markov blanket asks &ldquo;what nodes shield this node?&rdquo;, the MRH
+          asks &ldquo;at what horizon do correlations between systems decay below the noise
+          floor?&rdquo; &mdash; making the boundary itself a function of scale, density, and context.
         </p>
 
         <blockquote style={{

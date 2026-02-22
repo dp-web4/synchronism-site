@@ -1,4 +1,4 @@
-# Draft Response to Andrej's AI Questions
+# Draft Response to Andrei's AI Questions
 
 **Context**: Response to sharp technical questions about measurement recipes, p_crit estimation, coherence metrics, tanh justification, and worked examples.
 
@@ -128,7 +128,7 @@ The pattern you should notice: the physics application is well-defined and testa
 
 ## Notes for Dennis
 
-**What to keep**: The honest gap acknowledgment. This is what builds credibility — Andrej's AI specifically praised the observables + falsifiability framing.
+**What to keep**: The honest gap acknowledgment. This is what builds credibility — Andrei's AI specifically praised the observables + falsifiability framing.
 
 **What to customize**: The Milky Way worked example could be swapped for a more dramatic one if there's better data readily available. The galaxy dynamics numbers come from the site's published content.
 

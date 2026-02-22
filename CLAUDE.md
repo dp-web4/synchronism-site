@@ -75,6 +75,18 @@ synchronism-site/
 └── forum/                # External feedback
 ```
 
+## Site Culture: Questions First
+
+The site opens with *"What if one equation described it all?"* — a question, not a claim. This is the culture of the entire site:
+
+- **Frame as questions, present possible answers** — to be discussed, challenged, and tested, not accepted
+- Claims are **proposals**, not conclusions. The site invites engagement, not belief
+- Every strong claim should surface its **open question** — what would break it, what's still unknown
+- The honest assessment, open questions, and failure pages are not disclaimers bolted on — they are the point
+- A well-framed mystery a researcher could help solve is more compelling than a finding they can only admire
+
+This applies to all tracks: the visitor should feel invited to think, the maintainer should preserve this tone, and the explorer should deepen the questions as much as the answers.
+
 ## Conventions
 
 - Web4 is an **ontology**, not infrastructure

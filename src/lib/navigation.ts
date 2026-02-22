@@ -504,6 +504,13 @@ export const navigationTree: NavigationTree = {
       keywords: ['status', 'dashboard', 'tracking', 'outcome', 'prediction'],
       related: ['/publication-roadmap', '/honest-assessment'],
     },
+    {
+      title: 'Coupling-Coherence Experiment',
+      href: '/coupling-experiment',
+      desc: 'Multi-agent knowledge discovery with controllable coupling',
+      keywords: ['coupling', 'coherence', 'experiment', 'multi-agent', 'Bayesian', 'sigmoid', 'p_crit'],
+      related: ['/coherence-function', '/falsifiability', '/test-catalog'],
+    },
   ],
 
   'Interactive Tools': [

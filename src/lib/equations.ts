@@ -59,6 +59,18 @@ export function regimeLabel(gamma: number): { label: string; color: string } {
   }
 }
 
+/** Coupling-coherence model (generalized form for multi-agent experiments) */
+export function couplingCoherence(p: number, gamma: number, pCrit: number): number {
+  if (p <= 0 || pCrit <= 0) return 0;
+  return Math.tanh(gamma * Math.log(p / pCrit + 1));
+}
+
+/** Hill function sigmoid (power-law alternative to tanh) */
+export function hillSigmoid(p: number, k: number, pHalf: number): number {
+  if (p <= 0 || pHalf <= 0) return 0;
+  return Math.pow(p, k) / (Math.pow(p, k) + Math.pow(pHalf, k));
+}
+
 /** Format a number in scientific notation for display */
 export function sciNotation(n: number, decimals: number = 2): string {
   if (n === 0) return '0';

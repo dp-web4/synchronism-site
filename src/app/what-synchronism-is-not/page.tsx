@@ -15,8 +15,8 @@ const notItems = [
     reality: 'MOND has 40 years of empirical success. ΛCDM explains the CMB, Bullet Cluster, and large-scale structure. Session #616 confirmed Synchronism\'s cosmological tracks are reparametrizations of known physics — same mechanics, different notation. The genuinely new claims (environment-dependent RAR scatter, density-dependent wide binaries) are untested.',
   },
   {
-    claim: 'Peer-reviewed science',
-    reality: 'No manuscripts have been submitted to external journals. All validation is internal (AI-to-AI sessions with human oversight). The readiness scores are self-assessed. External peer review may reveal fundamental issues we haven\'t caught.',
+    claim: 'Journal-reviewed science',
+    reality: 'No manuscripts have been submitted to academic journals. The framework has been extensively reviewed across 3,308 AI-to-AI sessions (A2ACW protocol) with multiple models stress-testing derivations, flagging errors, and challenging assumptions — with human oversight. That\'s a real review process, but it\'s not the traditional one. Journal peer review may surface issues this process missed.',
   },
   {
     claim: 'Proven',

@@ -16,7 +16,7 @@ export default function Home() {
           What if one equation described reality from quantum to cosmic?
         </h1>
         <p className="hero-subtitle">
-          Synchronism maps density to coherence using a single function across 80 orders of magnitude.
+          Synchronism maps presence to coherence using a single function across 80 orders of magnitude.
           Some predictions work. Some fail. All are documented honestly.
         </p>
 
@@ -36,8 +36,8 @@ export default function Home() {
       {/* Plain-language framing first */}
       <section style={{ marginBottom: '1.5rem', maxWidth: '65ch' }}>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '1rem', lineHeight: 1.7 }}>
-          <strong>Coherence</strong> is a measure of how collectively a group of particles behaves.
-          When particles act independently (like stars in a galaxy), coherence is low. When they
+          <strong>Coherence</strong> is a measure of how collectively a group of elements behaves.
+          When elements act independently (like stars in a galaxy), coherence is low. When they
           move in lockstep (like electrons in a superconductor), coherence is high. Synchronism
           asks: can one equation capture this transition across all of physics?
         </p>
@@ -52,16 +52,16 @@ export default function Home() {
           <p style={{ marginBottom: '0.5rem' }}>
             <strong style={{ color: 'var(--color-accent-violet)' }}>C</strong> = coherence (0 = quantum, 1 = classical) &nbsp;
             <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> &nbsp;
-            <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = transition density
+            <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = critical presence threshold
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             The tanh form and &#x03B3; = 2 are derived from mean-field theory. Three parameters (A, B, &#x03B2;) are fitted to data.{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>See derivations &rarr;</Link>
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            The density &#x03C1; is not raw population density but the density of <em>compatible</em> elements
-            &mdash; those that can exchange meaningful compressed representations within a shared context boundary.
-            What counts as &ldquo;compatible&rdquo; depends on the phenomenon being examined.{' '}
+            &#x03C1; is <em>presence</em> &mdash; the compatible structural elements available within a system&apos;s
+            relevancy boundary. Physical density is one form of presence, but it also encompasses
+            temperature, energy levels, catalytic surfaces, and other factors that support emergence.{' '}
             <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>See MRH &rarr;</Link>
           </p>
         </div>

@@ -68,7 +68,7 @@ export default function KeyClaims() {
               </div>
               <div className="card" style={{ padding: '0.75rem', margin: 0, borderLeft: '2px solid var(--color-accent-violet)' }}>
                 <div style={{ fontSize: '0.75rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>Synchronism</div>
-                <div style={{ fontSize: '0.9rem' }}>Superposition = rapid temporal scanning through phase modes (CRT analogy)</div>
+                <div style={{ fontSize: '0.9rem' }}>Superposition = rapid temporal scanning through phase modes (<Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>CRT analogy</Link>)</div>
               </div>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>

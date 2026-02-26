@@ -7,11 +7,9 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 
 const steps = [
   {
-    title: 'Start with Density',
-    content: `Everything in the universe has a density — how much stuff is packed into a given space.
-    A single electron in a vacuum? Very low density. The core of a neutron star? Incredibly high.
-    Synchronism starts here: density is the universal input.`,
-    highlight: 'ρ (density)',
+    title: 'Start with Presence',
+    content: `Everything in the universe has presence — compatible structural elements available within a system's context boundary. At the simplest level, this is density: how much stuff is packed into a given space. A single electron in a vacuum? Very low presence. The core of a neutron star? Incredibly high. But presence also encompasses temperature, energy levels, catalytic surfaces — anything that supports emergence. Synchronism starts here: presence is the universal input.`,
+    highlight: '\u03C1 (presence)',
   },
   {
     title: 'The Coherence Function',
@@ -47,7 +45,8 @@ const steps = [
     title: 'Scale Down: Quantum Measurement',
     content: `What if "wave function collapse" isn't a special event? What if it's just a system
     crossing the MRH — the Markov Relevancy Horizon — where correlations decay below the noise floor?
-    No observer needed. No consciousness required. Just a boundary crossing.`,
+    No observer needed. No consciousness required. Just a boundary crossing.
+    (See "Two Reframes" for the CRT analogy that makes this intuitive.)`,
     highlight: 'Measurement = MRH crossing',
   },
   {

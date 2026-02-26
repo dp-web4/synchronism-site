@@ -139,12 +139,19 @@ export const navigationTree: NavigationTree = {
 
   'Quantum Physics': [
     {
+      title: 'Two Reframes',
+      href: '/two-reframes',
+      desc: 'CRT and pendulum clock: how Synchronism sees physics differently',
+      keywords: ['CRT', 'pendulum', 'reframe', 'analogy', 'synchronization', 'observer', 'heliocentrism', 'raster', 'entanglement'],
+      related: ['/measurement-without-observers', '/observer-problem', '/first-encounter', '/entanglement-coherence'],
+    },
+    {
       title: 'Measurement Without Observers',
       href: '/measurement-without-observers',
       desc: 'MRH crossing replaces wave function collapse',
       keywords: ['measurement', 'observer', 'collapse', 'MRH', 'quantum', 'decoherence'],
-      prerequisites: ['/mrh', '/coherence-function'],
-      related: ['/observer-problem', '/decoherence-mrh', '/wave-function'],
+      prerequisites: ['/two-reframes', '/mrh', '/coherence-function'],
+      related: ['/observer-problem', '/decoherence-mrh', '/wave-function', '/two-reframes'],
     },
     {
       title: 'The Observer Problem',

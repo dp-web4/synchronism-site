@@ -173,6 +173,20 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'Every Synchronism prediction has a defined "kill criterion" \u2014 a specific outcome that would falsify it. This is what separates testable science from unfalsifiable speculation. The site documents both successful and failed predictions.',
     learnMore: '/falsifiability',
   },
+  'CRT analogy': {
+    term: 'CRT Analogy',
+    fullName: 'Superposition as Temporal Scanning',
+    brief: 'An electron beam scans so fast it appears everywhere at once. Measurement = sampling at different sync rates.',
+    explanation: 'A CRT display\u2019s electron beam creates different perceptions depending on sampling rate: a stable image (slow), flickering bands (medium), or a single dot (fast). Nothing about the screen changes \u2014 only synchronization timing. Synchronism claims quantum phenomena work the same way: superposition is temporal scanning, collapse is catching the dot, and entanglement is two synchronized screens.',
+    learnMore: '/two-reframes',
+  },
+  'raster entanglement': {
+    term: 'Raster Entanglement',
+    fullName: 'Entanglement as Synchronized Scanning',
+    brief: 'Two patterns cycling in perfect sync show identical behavior regardless of distance. No information travels between them.',
+    explanation: 'Like two CRT screens displaying identical pictures from synchronized electron beams: sample either screen at any rate, and both show the same thing simultaneously. Not because information traveled, but because their cycles were correlated from the start. Synchronism\u2019s explanation for quantum entanglement.',
+    learnMore: '/two-reframes',
+  },
   'decoherence': {
     term: 'Decoherence',
     fullName: 'Loss of Quantum Behavior',

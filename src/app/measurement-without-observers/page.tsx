@@ -14,6 +14,12 @@ export default function MeasurementWithoutObservers() {
       <ValidationBadge status="untested" label="6 Testable Protocols" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
+          For the intuitive foundation, see{' '}
+          <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>{' '}
+          &mdash; the CRT and pendulum clock analogies that motivate this page.
+        </p>
+
         <p>
           Synchronism&apos;s central claim about quantum mechanics: wave function &ldquo;collapse&rdquo;
           is not a mysterious event triggered by conscious observation. It is decoherence at the

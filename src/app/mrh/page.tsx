@@ -34,8 +34,42 @@ export default function MRH() {
           color: 'var(--color-text-secondary)',
           fontStyle: 'italic',
         }}>
-          Think of it as a causal event horizon, but for information rather than light.
+          The minimal set of interacting degrees of freedom whose state transitions materially
+          influence the coherence evolution of a defined system.
         </blockquote>
+
+        <h2>Operational Criteria</h2>
+        <p>
+          An MRH is not just a vague boundary &mdash; it must satisfy two testable conditions:
+        </p>
+        <div className="grid-2" style={{ marginBottom: '1.5rem' }}>
+          <div className="card">
+            <h3 style={{ color: 'var(--color-accent-violet)' }}>Predictive Sufficiency</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Removing any element inside the MRH degrades coherence prediction.
+              Everything inside is load-bearing.
+            </p>
+          </div>
+          <div className="card">
+            <h3 style={{ color: 'var(--color-accent-violet)' }}>Predictive Closure</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Adding elements outside the MRH does not materially improve prediction.
+              Everything outside is irrelevant. If it does improve prediction, the MRH was incorrectly specified.
+            </p>
+          </div>
+        </div>
+
+        <h2>MRH and Presence</h2>
+        <p>
+          Presence (&#x03C1;) &mdash; the compatible structural elements that drive coherence &mdash; is
+          defined <em>relative to</em> an MRH. Change the MRH boundary, and presence changes.
+          This means coherence is always context-dependent: what counts as &ldquo;present&rdquo;
+          depends on which system you&apos;re examining and at what scale.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          See: <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link> for
+          how presence feeds into C(&#x03C1;).
+        </p>
 
         <h2>How It Works</h2>
         <p>

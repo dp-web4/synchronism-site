@@ -25,7 +25,7 @@ export default function CoherenceFunction() {
         </EquationDisplay>
 
         <p>
-          This maps <strong>density</strong> (a physical observable) to <strong>coherence</strong>
+          This maps <strong>presence</strong> to <strong>coherence</strong>
           (a dimensionless number between 0 and 1 that describes how quantum or classical a system is).
         </p>
 
@@ -34,7 +34,9 @@ export default function CoherenceFunction() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontFamily: 'serif', fontStyle: 'italic', fontSize: '1.3rem', color: 'var(--color-accent-violet)' }}>&#x03C1;</div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <strong>Input:</strong> density of the system (g/cm&sup3;, kg/m&sup3;, etc.)
+              <strong>Input:</strong> presence &mdash; compatible structural elements within the system&apos;s{' '}
+              <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>MRH</Link>.
+              Physical density is one form of presence.
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
@@ -66,7 +68,7 @@ export default function CoherenceFunction() {
         <p>The compression function must satisfy four properties:</p>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
           <li><strong>Bounded [0, 1]</strong>: Coherence can&apos;t exceed unity or go negative</li>
-          <li><strong>Monotonic</strong>: Higher density &rarr; higher coherence (no paradoxical inversions)</li>
+          <li><strong>Monotonic</strong>: Higher presence &rarr; higher coherence (no paradoxical inversions)</li>
           <li><strong>Smooth saturation</strong>: Gradual approach to limits (enables field equations)</li>
           <li><strong>Handles extremes</strong>: &#x03C1; &rarr; 0 gives C &rarr; 0, &#x03C1; &rarr; &infin; gives C &rarr; 1</li>
         </ul>
@@ -77,9 +79,10 @@ export default function CoherenceFunction() {
 
         <h3>3. Why log?</h3>
         <p>
-          Density spans 80+ orders of magnitude (interstellar gas at ~10<sup>&minus;24</sup> g/cm&sup3;
+          Presence spans enormous ranges &mdash; in the astrophysical case, density alone covers 80+ orders
+          of magnitude (interstellar gas at ~10<sup>&minus;24</sup> g/cm&sup3;
           to neutron stars at ~10<sup>14</sup> g/cm&sup3;). The logarithm maps this
-          enormous range into something tanh can differentiate between. The &ldquo;+1&rdquo; inside
+          range into something tanh can differentiate between. The &ldquo;+1&rdquo; inside
           the log prevents divergence at &#x03C1; = 0.
         </p>
 

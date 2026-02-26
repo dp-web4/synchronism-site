@@ -12,15 +12,15 @@ export const terms: Record<string, TermDefinition> = {
   'C(rho)': {
     term: 'C(\u03C1)',
     fullName: 'Coherence Function',
-    brief: 'Maps density to coherence: C(\u03C1) = tanh(\u03B3 log(\u03C1/\u03C1_crit + 1)).',
-    explanation: 'The central equation of Synchronism. Takes a physical density and returns a coherence value between 0 and 1, where 0 is fully incoherent (random) and 1 is fully coherent (ordered).',
+    brief: 'Maps presence to coherence: C(\u03C1) = tanh(\u03B3 log(\u03C1/\u03C1_crit + 1)).',
+    explanation: 'The central equation of Synchronism. Takes presence (\u03C1) \u2014 the density of compatible structural elements within a Markov Relevancy Horizon \u2014 and returns a coherence value between 0 and 1. Physical density (g/cm\u00B3) is one form of presence, but presence also encompasses temperature, energy levels, catalytic surfaces, and other factors that support emergence.',
     learnMore: '/coherence-function',
   },
   '\u03B3': {
     term: '\u03B3',
     fullName: 'Gamma Parameter',
     brief: 'Coupling strength: \u03B3 = 2/\u221AN_corr. Determines which regime you\'re in.',
-    explanation: 'When \u03B3 << 1, behavior is quantum. When \u03B3 \u2248 1, you\'re at the quantum-classical boundary. When \u03B3 >> 1, behavior is classical. Derived from the number of correlated particles N_corr.',
+    explanation: 'When \u03B3 << 1, behavior is quantum. When \u03B3 \u2248 1, you\'re at the quantum-classical boundary. When \u03B3 >> 1, behavior is classical. Derived from N_corr. Structurally, \u03B3 encodes MRH coupling density \u2014 how efficiently compatible presence within an MRH converts into coherent state transitions (\u03B3 \u221D \u03BB\u00B7K/D, where \u03BB = interaction strength, K = connectivity, D = dimensionality).',
     learnMore: '/gamma-parameter',
   },
   'N_corr': {
@@ -32,17 +32,24 @@ export const terms: Record<string, TermDefinition> = {
   },
   '\u03C1_crit': {
     term: '\u03C1_crit',
-    fullName: 'Critical Density',
-    brief: 'The density at which the coherence function transitions. \u03C1_crit = A \u00D7 V_flat\u00B2.',
-    explanation: 'Below this density, coherence drops toward zero. Above it, coherence saturates toward one. Derived from fundamental constants and the rotation velocity of the system.',
+    fullName: 'Critical Presence Threshold',
+    brief: 'The presence level at which the coherence function transitions. \u03C1_crit = A \u00D7 V_flat\u00B2 (astrophysical case).',
+    explanation: 'Below this presence level, coherence drops toward zero. Above it, coherence saturates toward one. In the astrophysical case, derived from fundamental constants and rotation velocity. More generally, \u03C1_crit represents the minimal presence required for sustained coherence given the system\u2019s \u03B3.',
     learnMore: '/critical-density',
   },
   'MRH': {
     term: 'MRH',
     fullName: 'Markov Relevancy Horizon',
-    brief: 'The boundary beyond which interactions become statistically irrelevant.',
-    explanation: 'Like an event horizon for causal influence. Beyond the MRH, correlations decay below the noise floor. In quantum mechanics, crossing the MRH IS what we call measurement/decoherence.',
+    brief: 'The minimal set of interacting degrees of freedom whose state transitions materially influence coherence evolution.',
+    explanation: 'Like an event horizon for causal influence. Beyond the MRH, correlations decay below the noise floor. An MRH must satisfy predictive sufficiency (removing any element inside it degrades prediction) and predictive closure (adding elements outside it doesn\u2019t improve prediction). In quantum mechanics, crossing the MRH IS measurement/decoherence. Presence (\u03C1) is defined relative to an MRH: change the MRH, presence changes.',
     learnMore: '/mrh',
+  },
+  'presence': {
+    term: 'Presence (\u03C1)',
+    fullName: 'Compatible Structural Elements within MRH',
+    brief: 'A scalar representation of compatible degrees of freedom available within a Markov Relevancy Horizon, sufficient to support emergent coherence.',
+    explanation: 'Presence is not merely quantity \u2014 it encodes compatibility, configuration, and environmental suitability. Physical density is one form of presence, but presence also encompasses temperature, energy levels, catalytic surfaces, field gradients, and lower-fractal scaffolding. Formally: \u03C1 = f(compatibility vector), the scalar projection of a multidimensional compatibility space. Must be quantifiable, domain-transparent, MRH-dependent, and falsifiable.',
+    learnMore: '/coherence-function',
   },
   'a\u2080': {
     term: 'a\u2080',
@@ -97,8 +104,8 @@ export const terms: Record<string, TermDefinition> = {
   'coherence': {
     term: 'Coherence',
     fullName: 'Collective Behavior Measure',
-    brief: 'How collectively a group of particles behaves, from independent (0) to fully synchronized (1).',
-    explanation: 'Low coherence: particles act independently (like stars in a galaxy). High coherence: particles move in lockstep (like electrons in a superconductor). The coherence function C(\u03C1) maps density to this 0\u20131 scale.',
+    brief: 'How collectively a group of elements behaves, from independent (0) to fully synchronized (1).',
+    explanation: 'Low coherence: elements act independently (like stars in a galaxy). High coherence: elements move in lockstep (like electrons in a superconductor). The coherence function C(\u03C1) maps presence to this 0\u20131 scale.',
     learnMore: '/coherence-function',
   },
   'phase transition': {

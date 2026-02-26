@@ -76,6 +76,51 @@ export default function GammaParameter() {
           </div>
         </div>
 
+        <h2>Structural Interpretation: MRH Coupling Density</h2>
+        <p>
+          Beyond the formula, &#x03B3; has a structural meaning: it encodes how efficiently compatible
+          presence within an{' '}
+          <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>MRH</Link>{' '}
+          converts into coherent state transitions.
+        </p>
+        <p>
+          Conceptually: &#x03B3; &#x221D; &#x03BB; &middot; K<sub>MRH</sub> / D<sub>MRH</sub>, where
+          &#x03BB; = interaction strength, K = connectivity (interaction density between elements),
+          and D = dimensionality (effective degrees of freedom).
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1.5rem' }}>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <strong style={{ color: '#38bdf8' }}>Quantum scale</strong>
+            <span style={{ color: 'var(--color-text-secondary)', marginLeft: '0.75rem' }}>
+              Few DOF, strong coupling &rarr; high &#x03B3;
+            </span>
+          </div>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <strong style={{ color: 'var(--color-accent-violet)' }}>Chemical systems</strong>
+            <span style={{ color: 'var(--color-text-secondary)', marginLeft: '0.75rem' }}>
+              Moderate dimensionality, variable coupling &rarr; medium &#x03B3;
+            </span>
+          </div>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <strong style={{ color: '#22c55e' }}>Biological systems</strong>
+            <span style={{ color: 'var(--color-text-secondary)', marginLeft: '0.75rem' }}>
+              High dimensionality, structured coupling &rarr; moderate-to-low effective &#x03B3;
+            </span>
+          </div>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <strong style={{ color: 'var(--color-text-muted)' }}>Cosmological scale</strong>
+            <span style={{ color: 'var(--color-text-secondary)', marginLeft: '0.75rem' }}>
+              Enormous dimensionality, weak coupling (gravity) &rarr; low &#x03B3;
+            </span>
+          </div>
+        </div>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          This naturally explains why emergence thresholds differ across scales. High connectivity
+          or strong interaction strength raises &#x03B3;; dimensional redundancy dilutes it.
+          If an MRH expands to include more weakly-coupled DOF, &#x03B3; decreases. If it contracts
+          to a tightly interacting subset, &#x03B3; increases.
+        </p>
+
         <h2>Unification Discovery</h2>
         <p>
           Early research used &#x03B3; = 2.0 for astrophysics (where stars are uncorrelated classical

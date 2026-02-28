@@ -71,6 +71,49 @@ export default function ResearchPhilosophy() {
           <li>47 genuine contributions out of ~3,308 sessions = 1.4% discovery rate. That&apos;s the honest number.</li>
         </ul>
 
+        <h2>Validation Badge Taxonomy</h2>
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+          Every scientific claim on this site carries a validation badge. Here is what each status means:
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <ValidationBadge status="validated" />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Quantitative match to empirical data within stated error bounds
+            </span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <ValidationBadge status="supported" />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Consistent with data but not uniquely predicted &mdash; other frameworks give the same result
+            </span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <ValidationBadge status="untested" />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Falsifiable prediction defined but not yet tested experimentally
+            </span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <ValidationBadge status="speculative" />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Theoretical extension without a defined test &mdash; interesting but not yet scientific
+            </span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <ValidationBadge status="reparametrization" />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Reproduces known physics in different notation &mdash; no new content, but may offer notational clarity
+            </span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <ValidationBadge status="failed" />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Prediction tested and wrong. Kept visible as permanent record.
+            </span>
+          </div>
+        </div>
+
         <h2>The Reparametrization Pattern</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Session #615-616 revealed a recurring pattern across all tracks: take known physics,

@@ -21,7 +21,7 @@ export default function HonestAssessment() {
         <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Session #616)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           After 3,308 sessions: <strong>0 unique confirmed predictions</strong> that can&apos;t be explained
-          by existing physics. All results are either consistent with MOND + mass-to-light corrections,
+          by existing physics. All results are either consistent with MOND (Modified Newtonian Dynamics) + mass-to-light corrections,
           or are reparametrizations of known physics. However, the framework produced{' '}
           <strong>30 genuine contributions</strong> as a research tool &mdash; wrong-but-productive.
         </p>
@@ -37,11 +37,11 @@ export default function HonestAssessment() {
               <ValidationBadge status="supported" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              14,585 galaxies. Environment-dependent RAR scatter (NP2) at p = 5&times;10<sup>&minus;6</sup>.
-              &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex, below CDM prediction.
+              14,585 galaxies. Environment-dependent RAR (Radial Acceleration Relation) scatter (Novel Prediction 2) at p = 5&times;10<sup>&minus;6</sup>.
+              &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex, below CDM (Cold Dark Matter) prediction.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              Caveat: MOND + M/L corrections explain all variance. 86% of RAR scatter remains unexplained (R&sup2; = 0.14).
+              Caveat: MOND + mass-to-light corrections explain all variance. 86% of RAR scatter remains unexplained (R&sup2; = 0.14).
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function HonestAssessment() {
               <ValidationBadge status="validated" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              MOND&apos;s acceleration constant derived from cosmological parameters. 10% error vs observed value.
+              MOND&apos;s acceleration constant a&#x2080; derived from cosmological parameters. 10% error vs observed value.
               This is a genuine theoretical contribution.
             </p>
           </div>
@@ -112,7 +112,7 @@ export default function HonestAssessment() {
               <ValidationBadge status="failed" label="6.5× Wrong" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              T<sub>c</sub> = &#x0394;/(1.76k<sub>B</sub>&#x03B7;) predicts 607K for YBCO. Actual: 93K. Off by 6.5&times;.
+              T<sub>c</sub> = &#x0394;/(1.76k<sub>B</sub>&#x03B7;) predicts 607K for YBCO (yttrium barium copper oxide). Actual: 93K. Off by 6.5&times;.
             </p>
           </div>
 
@@ -150,7 +150,7 @@ export default function HonestAssessment() {
               <ValidationBadge status="untested" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              34 falsifiable predictions. Requires EEG experiments ($150K, 12 months).
+              34 falsifiable predictions. Requires EEG (electroencephalography) experiments ($150K, 12 months).
             </p>
           </div>
 
@@ -160,17 +160,17 @@ export default function HonestAssessment() {
               <ValidationBadge status="untested" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              6 testable protocols for MRH-based measurement theory. Requires dedicated experiments.
+              6 testable protocols for MRH-based (Markov Relevancy Horizon) measurement theory. Requires dedicated experiments.
             </p>
           </div>
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>BAO Modulation</h3>
+              <h3>BAO (Baryon Acoustic Oscillation) Modulation</h3>
               <ValidationBadge status="untested" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Synchronism predicts density-dependent modulation of BAO peak positions. Testable with existing survey data.
+              Synchronism predicts density-dependent modulation of baryon acoustic oscillation peak positions. Testable with existing survey data.
             </p>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function HonestAssessment() {
       <section className="section content-width">
         <h2>The 30 Genuine Contributions</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Even when predictions were wrong, the framework was productive. Post-SPARC audit (Session #616)
+          Even when predictions were wrong, the framework was productive. Post-SPARC (Spitzer Photometry and Accurate Rotation Curves) audit (Session #616)
           identified 30 genuine contributions:
         </p>
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem' }}>
@@ -189,7 +189,7 @@ export default function HonestAssessment() {
           <li>Environment-dependent RAR scatter hypothesis</li>
           <li>&#x03B3; &#x2248; 1 as universal quantum-classical marker</li>
           <li>Pair-breaking efficiency as materials design optimization target</li>
-          <li>A2ACW adversarial collaboration methodology</li>
+          <li>A2ACW (AI Adversarial Collaboration Workflow) methodology</li>
           <li>Autonomous multi-agent research infrastructure</li>
           <li>And 23 more documented in the{' '}
             <Link href="/publication-roadmap" style={{ color: 'var(--color-accent-blue)' }}>publication roadmap</Link>

@@ -78,7 +78,7 @@ export default function KeyClaims() {
               </div>
               <div className="card" style={{ padding: '0.75rem', margin: 0, borderLeft: '2px solid var(--color-accent-violet)' }}>
                 <div style={{ fontSize: '0.75rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>Synchronism</div>
-                <div style={{ fontSize: '0.9rem' }}>Collapse = resonant selection at an MRH crossing (no observer needed)</div>
+                <div style={{ fontSize: '0.9rem' }}>Collapse = resonant selection at an MRH (Markov Relevancy Horizon) crossing (no observer needed)</div>
               </div>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
@@ -228,7 +228,7 @@ export default function KeyClaims() {
 
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>What&apos;s new</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            IIT proposes &#x03A6; but predicts no specific threshold. Global workspace theory has no
+            IIT (Integrated Information Theory) proposes &#x03A6; but predicts no specific threshold. Global workspace theory has no
             quantitative threshold. No other framework predicts a specific number from 8 independent
             derivations. The three-parameter formula also dissolves the hard problem: phase patterns
             at &#x03B3; &laquo; 0.001 ARE experience, not correlates of it. Free will emerges at the &#x03B3; &#x2248; 1
@@ -312,7 +312,7 @@ export default function KeyClaims() {
             a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.2 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2;
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '1rem' }}>
-            MOND acceleration derived from cosmological coherence boundary
+            MOND (Modified Newtonian Dynamics) acceleration derived from cosmological coherence boundary
           </p>
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
@@ -324,7 +324,7 @@ export default function KeyClaims() {
 
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>What&apos;s new</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            MOND treats a&#x2080; as an empirical constant. &#x039B;CDM adds a new particle. Neither explains
+            MOND treats a&#x2080; as an empirical constant. &#x039B;CDM (Lambda Cold Dark Matter) adds a new particle. Neither explains
             why anomalies appear at a specific acceleration scale. Synchronism derives a&#x2080; from the
             coherence transition &mdash; the scale where decoherence becomes incomplete IS the MOND scale.
           </p>
@@ -352,7 +352,7 @@ export default function KeyClaims() {
 
           <h3 style={{ fontSize: '0.9rem', color: '#38bdf8', marginBottom: '0.25rem' }}>The test that kills it</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            Environment-dependent RAR scatter: galaxies in different density environments should show
+            Environment-dependent RAR (Radial Acceleration Relation) scatter: galaxies in different density environments should show
             different radial acceleration relations (p &lt; 0.01). Synchronism predicts this; standard MOND
             does not.
           </p>

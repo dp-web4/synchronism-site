@@ -20,7 +20,13 @@ export default function CoreIdea() {
           C(&#x03C1;) = tanh(&#x03B3; &middot; log(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </div>
 
-        <div className="grid-3" style={{ marginTop: '1.5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem', marginTop: '1.5rem' }}>
+          <div className="card" style={{ textAlign: 'center' }}>
+            <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>&#x03C1;</div>
+            <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+              <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>Presence</Link>: compatible structural elements within a system&apos;s relevancy boundary
+            </div>
+          </div>
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>C</div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
@@ -47,12 +53,18 @@ export default function CoreIdea() {
 
         <h3>Why tanh?</h3>
         <p>
-          The function must be bounded [0, 1], monotonic, and smooth. From information theory
-          (Session #67): compressing a high-dimensional intent field to a binary quantum/classical
-          decision requires exactly these properties. tanh is the unique sigmoid function that
-          arises from mean-field theory.
+          tanh is an S-shaped curve that smoothly transitions from 0 to 1 &mdash; think of it as a
+          dimmer switch between &ldquo;fully quantum&rdquo; and &ldquo;fully classical.&rdquo; The function
+          must be bounded [0, 1], monotonic, and smooth. From information theory (Session #67):
+          compressing a high-dimensional state to a binary quantum/classical decision requires
+          exactly these properties. tanh is the unique sigmoid function that arises from
+          mean-field theory.
         </p>
-        <p><Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Full derivation &rarr;</Link></p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Need an analogy first?</Link>
+          {' '}&middot;{' '}
+          <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Full derivation &rarr;</Link>
+        </p>
 
         <h3>Why &#x03B3; = 2/&#x221A;N<sub>corr</sub>?</h3>
         <p>

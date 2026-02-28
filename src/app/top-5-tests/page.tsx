@@ -8,7 +8,7 @@ import ValidationBadge from '@/components/ValidationBadge';
 const tests = [
   {
     rank: 1,
-    name: 'BAO Coherence Modulation',
+    name: 'BAO (Baryon Acoustic Oscillation) Coherence Modulation',
     id: 'TEST-04',
     tier: 'Tier 1',
     cost: '$0',
@@ -22,13 +22,13 @@ const tests = [
     id: 'TEST-02',
     tier: 'Tier 1',
     cost: '$0',
-    why: 'MOND predicts density-independent anomaly. Synchronism predicts density-dependent. Uses existing Gaia DR3 data. The cleanest test of environment dependence.',
+    why: 'MOND (Modified Newtonian Dynamics) predicts density-independent anomaly. Synchronism predicts density-dependent. Uses existing Gaia DR3 data. The cleanest test of environment dependence.',
     kill: 'Anomaly independent of local stellar density',
     color: '#10b981',
   },
   {
     rank: 3,
-    name: 'EEG Anesthesia Phase Transition',
+    name: 'EEG (Electroencephalography) Anesthesia Phase Transition',
     id: 'TEST-11',
     tier: 'Tier 2',
     cost: '$150K',
@@ -38,11 +38,11 @@ const tests = [
   },
   {
     rank: 4,
-    name: 'GW Speed–DM Column Correlation',
+    name: 'Gravitational Wave Speed–Dark Matter Column Correlation',
     id: 'TEST-15',
     tier: 'Tier 3',
     cost: '$1M–$5M',
-    why: 'General relativity predicts exactly zero correlation between GW propagation and dark matter distribution. Any nonzero signal would be revolutionary. From GW170817: α < 3.0 × 10⁻¹⁵.',
+    why: 'General relativity predicts exactly zero correlation between gravitational wave (GW) propagation and dark matter distribution. Any nonzero signal would be revolutionary. From GW170817: α < 3.0 × 10⁻¹⁵.',
     kill: 'No correlation at 10⁻¹⁶ level after 20+ events',
     color: 'var(--color-accent-violet)',
   },
@@ -68,7 +68,7 @@ export default function Top5Tests() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Of the 24 defined experiments, these five have the highest <strong>distinguishing
-          power</strong> &mdash; they can discriminate between Synchronism, &#x039B;CDM, MOND,
+          power</strong> &mdash; they can discriminate between Synchronism, &#x039B;CDM (Lambda Cold Dark Matter), MOND,
           and standard frameworks. Ranked by decisiveness.
         </p>
 

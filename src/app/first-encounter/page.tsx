@@ -8,7 +8,7 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 const steps = [
   {
     title: 'Start with Presence',
-    content: `Everything in the universe has presence — compatible structural elements available within a system's context boundary. At the simplest level, this is density: how much stuff is packed into a given space. A single electron in a vacuum? Very low presence. The core of a neutron star? Incredibly high. But presence also encompasses temperature, energy levels, catalytic surfaces — anything that supports emergence. Synchronism starts here: presence is the universal input.`,
+    content: `Everything in the universe has presence — compatible structural elements available within a system's relevancy boundary (its Markov Relevancy Horizon, or MRH). At the simplest level, this is density: how much stuff is packed into a given space. A single electron in a vacuum? Very low presence. The core of a neutron star? Incredibly high. But presence also encompasses temperature, energy levels, catalytic surfaces — anything that supports emergence. Synchronism starts here: presence is the universal input.`,
     highlight: '\u03C1 (presence)',
   },
   {
@@ -126,7 +126,7 @@ export default function FirstEncounter() {
       </div>
 
       {/* Navigation */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '3rem' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3rem' }}>
         <button
           className="btn-secondary"
           onClick={() => setStep(s => Math.max(0, s - 1))}
@@ -135,6 +135,9 @@ export default function FirstEncounter() {
         >
           &larr; Previous
         </button>
+        <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)', fontSize: '0.85rem' }}>
+          Need an analogy first?
+        </Link>
         {step < steps.length - 1 ? (
           <button
             className="btn-primary"

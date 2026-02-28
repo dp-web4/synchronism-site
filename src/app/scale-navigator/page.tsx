@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 
@@ -103,6 +104,19 @@ export default function ScaleNavigator() {
           onChange={e => setSliderVal(parseInt(e.target.value))}
           style={{ width: '100%', marginBottom: '1.5rem' }}
         />
+
+        <div className="card" style={{
+          marginBottom: '1.5rem',
+          borderLeft: '3px solid var(--color-accent-violet)',
+          background: 'rgba(139, 92, 246, 0.06)',
+        }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.95rem', margin: 0 }}>
+            <strong>The claim:</strong> the same equation C(&#x03C1;) = tanh(&#x03B3; &middot; log(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
+            applies at every one of these scales. One function, 80 orders of magnitude, from Planck
+            to cosmic. Whether that claim survives testing is what the{' '}
+            <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>top 5 tests</Link> are for.
+          </p>
+        </div>
 
         <h2>Key Insight: &#x03B3; = 2 at Galaxy Scale</h2>
         <div className="card" style={{ marginBottom: '1.5rem' }}>

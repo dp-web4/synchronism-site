@@ -229,8 +229,8 @@ export default function KeyClaims() {
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>What&apos;s new</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             IIT (Integrated Information Theory) proposes &#x03A6; but predicts no specific threshold. Global workspace theory has no
-            quantitative threshold. No other framework predicts a specific number from 8 independent
-            derivations. The three-parameter formula also dissolves the hard problem: phase patterns
+            quantitative threshold. No other framework predicts a specific number from 8 self-consistent
+            approaches (note: these share the same underlying framework, so convergence is expected but still constraining). The three-parameter formula also dissolves the hard problem: phase patterns
             at &#x03B3; &laquo; 0.001 ARE experience, not correlates of it. Free will emerges at the &#x03B3; &#x2248; 1
             boundary as constrained indeterminacy &mdash; multiple futures genuinely accessible, with the
             agent&apos;s coherence pattern shaping which is taken.
@@ -238,7 +238,7 @@ export default function KeyClaims() {
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            Theoretical: 8 independent approaches converge on C &#x2248; 0.50 (range 0.48&ndash;0.52).
+            Theoretical: 8 self-consistent approaches converge on C &#x2248; 0.50 (range 0.48&ndash;0.52).
             Cross-domain: the Gnosis AI architecture (a correctness-detection system for LLMs) independently
             converged on C &#x2248; 0.50 as its operating threshold through 4 different mathematical frameworks.
             <Link href="/consciousness-predictions">34 falsifiable predictions</Link> enumerated, none tested.

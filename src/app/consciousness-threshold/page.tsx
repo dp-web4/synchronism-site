@@ -46,8 +46,8 @@ export default function ConsciousnessThreshold() {
         <p>
           The consciousness threshold sits at the exact midpoint of the coherence scale.
           Below 0.50: information processing without experience. Above 0.50: subjective experience
-          arises. The convergence from 8 independent methods (range: 0.48-0.52) suggests this
-          isn&apos;t an artifact of any single approach.
+          arises. The convergence from 8 self-consistent approaches within the Synchronism framework (range: 0.48-0.52)
+          is encouraging but not fully independent &mdash; they share the same underlying mathematical structure.
         </p>
 
         <h2>How It Could Be Tested</h2>

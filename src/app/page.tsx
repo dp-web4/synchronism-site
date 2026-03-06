@@ -45,9 +45,13 @@ export default function Home() {
 
       {/* The Equation */}
       <section className="card card-highlight" style={{ marginBottom: '3rem' }}>
-        <div className="equation" style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>
+        <div className="equation" style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>
           C(&#x03C1;) = tanh(&#x03B3; &middot; log(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </div>
+        <p style={{ textAlign: 'center', color: 'var(--color-accent-warm)', fontSize: '0.9rem', fontStyle: 'italic', marginBottom: '1rem' }}>
+          &ldquo;Coherence is a smooth S-curve from quantum to classical, shaped by how many
+          particles act together and how dense the system is.&rdquo;
+        </p>
         <div style={{ textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           <p style={{ marginBottom: '0.5rem' }}>
             <strong style={{ color: 'var(--color-accent-violet)' }}>C</strong> = coherence (0 = quantum, 1 = classical) &nbsp;
@@ -55,7 +59,7 @@ export default function Home() {
             <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = critical presence threshold
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            The tanh form and &#x03B3; = 2 are derived from mean-field theory. Three parameters (A, B, &#x03B2;) are fitted to data.{' '}
+            The tanh form is derived from binary Boltzmann statistics (a theorem). The log-density argument is physically motivated. Three parameters (A, B, &#x03B2;) are fitted to data.{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>See derivations &rarr;</Link>
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>

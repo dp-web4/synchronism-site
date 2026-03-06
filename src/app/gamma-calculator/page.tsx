@@ -9,10 +9,10 @@ function gammaFromNcorr(n: number): number {
 }
 
 function regimeInfo(g: number): { label: string; color: string; desc: string } {
-  if (g > 1.4) return { label: 'Classical', color: '#10b981', desc: 'Fully decoherent. Independent particles. Deterministic macro behavior.' };
+  if (g > 1.4) return { label: 'Quantum', color: '#8b5cf6', desc: 'Few correlated particles. Individual quantum behavior dominates. Decoherence is fast.' };
   if (g > 0.6) return { label: 'Boundary (γ ≈ 1)', color: '#f59e0b', desc: 'Quantum-classical edge. Phase transitions, chemistry, consciousness threshold.' };
-  if (g > 0.2) return { label: 'Strongly Correlated', color: 'var(--color-accent-violet)', desc: 'Enzymes, magnets, coordinated quantum behavior.' };
-  return { label: 'Macroscopic Coherence', color: 'var(--color-accent-blue)', desc: 'Superconductors, BEC, superfluids. Many particles as one.' };
+  if (g > 0.2) return { label: 'Strongly Correlated', color: '#38bdf8', desc: 'Enzymes, magnets, coordinated quantum behavior.' };
+  return { label: 'Macroscopic Coherence', color: '#10b981', desc: 'Superconductors, BEC, superfluids. Many particles acting as one. Classical collective behavior.' };
 }
 
 const presets = [

@@ -48,11 +48,12 @@ export default function HonestAssessment() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>MOND Unification: a&#x2080; = cH&#x2080;/(2&#x03C0;)</h3>
-              <ValidationBadge status="validated" />
+              <ValidationBadge status="supported" label="Strongly Supported" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              MOND&apos;s acceleration constant a&#x2080; derived from cosmological parameters. 10% error vs observed value.
-              This is a genuine theoretical contribution.
+              MOND&apos;s acceleration constant a&#x2080; related to cosmological parameters via a&#x2080; = cH&#x2080;/(2&#x03C0;). 10% error vs observed value.
+              However, this numerical coincidence has been noted since Milgrom (1983), and other frameworks (e.g., Verlinde 2017)
+              produce similar relations. The 2&#x03C0; factor is asserted from &ldquo;spherical geometry&rdquo; without a full derivation chain.
             </p>
           </div>
 

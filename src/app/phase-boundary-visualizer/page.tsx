@@ -6,12 +6,12 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 
 const regions = [
   {
-    id: 'quantum',
-    label: 'γ < 0.6 — Quantum',
-    color: '#8b5cf6',
+    id: 'classical',
+    label: 'γ < 0.6 — Classical',
+    color: '#10b981',
     range: [0, 0.6],
     systems: ['Superconductors', 'BEC', 'Superfluids', 'Cooper pairs', 'Quantum computers'],
-    physics: 'Macroscopic coherence. Many particles behave as one. Interference effects dominate. Information preserved across system.',
+    physics: 'Macroscopic coherence. Many correlated particles (large N_corr, small γ) behave as one. Collective quantum phenomena emerge as classical-looking order.',
   },
   {
     id: 'boundary',
@@ -22,12 +22,12 @@ const regions = [
     physics: 'The interesting regime. Quantum and classical effects compete. Phase transitions occur here. Chemistry lives here. Consciousness threshold (C ≈ 0.50) maps to this regime.',
   },
   {
-    id: 'classical',
-    label: 'γ > 1.4 — Classical',
-    color: '#10b981',
+    id: 'quantum',
+    label: 'γ > 1.4 — Quantum',
+    color: '#8b5cf6',
     range: [1.4, 4.0],
-    systems: ['Ideal gases', 'Stars in galaxies', 'Planets', 'Macro objects', 'Everyday physics'],
-    physics: 'Fully decoherent. Particles act independently. Deterministic. Classical mechanics works perfectly. "Dark matter" signal appears at γ = 2.',
+    systems: ['Ideal gases', 'Single atoms', 'Few-particle systems', 'Uncorrelated matter'],
+    physics: 'Few correlated particles (small N_corr, large γ). Individual quantum behavior. Rapid decoherence. At γ = 2 (N_corr = 1), the single-particle limit where galaxy-scale "dark matter" signatures appear.',
   },
 ];
 
@@ -55,18 +55,18 @@ export default function PhaseBoundaryVisualizer() {
         <div className="card" style={{ marginBottom: '1.5rem' }}>
           <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', height: 'auto' }}>
             {/* Three regions */}
-            <rect x="30" y={barY} width={(0.6 / 4.0) * 540} height={barH} fill="#8b5cf6" opacity="0.3" rx="4" />
+            <rect x="30" y={barY} width={(0.6 / 4.0) * 540} height={barH} fill="#10b981" opacity="0.3" rx="4" />
             <rect x={30 + (0.6 / 4.0) * 540} y={barY} width={((1.4 - 0.6) / 4.0) * 540} height={barH} fill="#f59e0b" opacity="0.3" />
-            <rect x={30 + (1.4 / 4.0) * 540} y={barY} width={((4.0 - 1.4) / 4.0) * 540} height={barH} fill="#10b981" opacity="0.3" rx="4" />
+            <rect x={30 + (1.4 / 4.0) * 540} y={barY} width={((4.0 - 1.4) / 4.0) * 540} height={barH} fill="#8b5cf6" opacity="0.3" rx="4" />
 
             {/* Boundary lines */}
             <line x1={30 + (0.6 / 4.0) * 540} y1={barY - 5} x2={30 + (0.6 / 4.0) * 540} y2={barY + barH + 5} stroke="#f59e0b" strokeDasharray="3 3" />
             <line x1={30 + (1.4 / 4.0) * 540} y1={barY - 5} x2={30 + (1.4 / 4.0) * 540} y2={barY + barH + 5} stroke="#f59e0b" strokeDasharray="3 3" />
 
             {/* Labels */}
-            <text x={30 + (0.3 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#8b5cf6" fontSize="11">Quantum</text>
+            <text x={30 + (0.3 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#10b981" fontSize="11">Classical</text>
             <text x={30 + (1.0 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#f59e0b" fontSize="11">Boundary</text>
-            <text x={30 + (2.7 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#10b981" fontSize="11">Classical</text>
+            <text x={30 + (2.7 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#8b5cf6" fontSize="11">Quantum</text>
 
             {/* γ = 2 marker */}
             <line x1={30 + (2.0 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (2.0 / 4.0) * 540} y2={barY + barH + 25} stroke="#38bdf8" strokeWidth="1" />

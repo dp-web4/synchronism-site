@@ -46,8 +46,8 @@ export default function CoherenceExplorer() {
     }).join(' ');
   }, [points, logScale, xMin, xMax, plotW, plotH, pad.left, pad.top]);
 
-  const regime = gamma > 1.4 ? 'Classical (γ > 1.4)' : gamma > 0.6 ? 'Boundary (γ ≈ 1)' : 'Quantum (γ < 0.6)';
-  const regimeColor = gamma > 1.4 ? '#10b981' : gamma > 0.6 ? '#f59e0b' : '#8b5cf6';
+  const regime = gamma > 1.4 ? 'Quantum (γ > 1.4)' : gamma > 0.6 ? 'Boundary (γ ≈ 1)' : 'Classical (γ < 0.6)';
+  const regimeColor = gamma > 1.4 ? '#8b5cf6' : gamma > 0.6 ? '#f59e0b' : '#10b981';
 
   return (
     <>
@@ -63,9 +63,9 @@ export default function CoherenceExplorer() {
             and 1 (classical/ordered).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-            <strong>&#x03B3;</strong> controls the transition sharpness. Low &#x03B3; (&lt; 0.6) = quantum regime,
+            <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> controls the transition sharpness. High &#x03B3; (&gt; 1.4, few correlated particles) = quantum regime,
             &#x03B3; &#x2248; 1 = the boundary where chemistry and biology happen,
-            high &#x03B3; (&gt; 1.4) = classical regime.
+            low &#x03B3; (&lt; 0.6, many correlated particles) = classical regime.
           </p>
           <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem' }}>
             <strong>What to notice:</strong> Move &#x03B3; from 0.5 to 2.0 and watch the curve flatten.

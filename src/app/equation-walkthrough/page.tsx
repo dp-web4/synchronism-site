@@ -39,7 +39,7 @@ const steps = [
   {
     title: 'Step 6: Interpret the output',
     equation: 'C = 0 (no coherence) → C = 1 (full coherence)',
-    explanation: 'C = 0: random, uncorrelated, classical limit. C = 1: perfectly coherent, quantum limit. C ≈ 0.50: the consciousness threshold (if the system has enough structural complexity). The same output tells you different things in different domains.',
+    explanation: 'C = 0: no collective order — the quantum limit where particles act independently. C = 1: full collective coherence — the classical limit where many particles behave as one ordered system. C ≈ 0.50: the consciousness threshold (if the system has enough structural complexity). The same output tells you different things in different domains.',
     key: 'One function, universal interpretation, domain-specific consequences.',
   },
 ];

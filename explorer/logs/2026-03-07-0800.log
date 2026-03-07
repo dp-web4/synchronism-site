@@ -1,0 +1,13 @@
+Starting Synchronism Explorer Session at Sat Mar  7 08:00:01 PST 2026
+Session complete. Here's what I explored today:
+
+**TDG-EFE Confrontation** -- The EFE finding predicted sigma ~ 10.5-14.5 km/s for a toy TDG. When confronted with real NGC 5291 data (Lelli 2015), the actual parameters are quite different (10x more massive, 7x weaker external field). Both Synchronism and MOND over-predict rotation velocities, but Synchronism is systematically closer (~35% over vs MOND's ~60-90% over). The EFE is nearly irrelevant here because the external field isn't dominant. The clean discriminating test needs TDGs in stronger external fields.
+
+**Chemistry Confound Analysis** -- The raw data underlying the r = 0.982 correlation is not in the codebase. Without it, partial correlations cannot be computed. But the structural argument for confounding is strong: if gamma encodes coordination number or similar periodic table properties, the high correlations may be reparametrization. The most impactful thing the site could do is publish the element-by-element data and N_corr methodology.
+
+**Files written:**
+- `findings/tdg-confrontation-ngc5291.md`
+- `findings/chemistry-confound-analysis.md`
+- `logs/2026-03-07.md`
+
+**Topics archived:** `tdg-efe-observational-test.md`, `chemistry-confound-analysis.md`

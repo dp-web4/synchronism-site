@@ -125,6 +125,11 @@ export default function CoherenceExplorer() {
               style={{ width: '100%' }}
             />
             <p style={{ color: regimeColor, fontSize: '0.8rem', marginTop: '0.25rem' }}>{regime}</p>
+            {gamma > 1.5 && (
+              <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.75rem', marginTop: '0.25rem' }}>
+                N<sub>corr</sub> = {(4 / (gamma * gamma)).toFixed(1)} &mdash; mean-field approximation weakens as N<sub>corr</sub> approaches 1
+              </p>
+            )}
           </div>
           <div className="card">
             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>

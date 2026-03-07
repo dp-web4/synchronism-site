@@ -55,10 +55,10 @@ export default function CoreIdea() {
         <p>
           tanh is an S-shaped curve that smoothly transitions from 0 to 1 &mdash; think of it as a
           dimmer switch between &ldquo;fully quantum&rdquo; and &ldquo;fully classical.&rdquo; The function
-          must be bounded [0, 1], monotonic, and smooth. From information theory (Session #67):
-          compressing a high-dimensional state to a binary quantum/classical decision requires
-          exactly these properties. tanh is the unique sigmoid function that arises from
-          mean-field theory.
+          must be bounded [0, 1], monotonic, and smooth. tanh arises naturally in mean-field
+          models (e.g., the Ising model order parameter m = tanh(&beta;Jzm)). Other sigmoids
+          (logistic, error function) share the same qualitative properties; tanh is a natural
+          choice from the Landau theory family, not the only possible one.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Need an analogy first?</Link>
@@ -68,9 +68,11 @@ export default function CoreIdea() {
 
         <h3>Why &#x03B3; = 2/&#x221A;N<sub>corr</sub>?</h3>
         <p>
-          The factor of 2 comes from phase space dimensionality (6D: 3 position + 3 momentum,
-          contracted to 3 effective). N<sub>corr</sub> is the number of particles moving as
-          a correlated unit &mdash; the only physically measurable quantity needed.
+          The 1/&#x221A;N<sub>corr</sub> dependence resembles central-limit-theorem scaling
+          (fluctuations ~ 1/&#x221A;N), which is generic statistics for correlated ensembles.
+          N<sub>corr</sub> (number of correlated particle units) is the physically measurable
+          quantity. The factor of 2 is motivated by phase-space arguments (6D contracted to 3
+          effective) but should be understood as a motivated ansatz rather than a rigorous derivation.
         </p>
         <p><Link href="/gamma-parameter" style={{ color: 'var(--color-accent-blue)' }}>Full derivation &rarr;</Link></p>
 

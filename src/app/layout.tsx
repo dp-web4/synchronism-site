@@ -22,6 +22,13 @@ export default function RootLayout({
           <nav className="nav-links" aria-label="Main navigation">
             <SiteSearch />
             <Link
+              href="/glossary"
+              style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
+              title="30+ terms defined"
+            >
+              Glossary
+            </Link>
+            <Link
               href="/honest-assessment"
               className="honest-link"
               title="What works, what failed, what we don't know"

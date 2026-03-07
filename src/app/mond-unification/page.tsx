@@ -11,7 +11,7 @@ export default function MondUnification() {
     <>
       <Breadcrumbs currentPath="/mond-unification" />
       <h1>MOND Unification</h1>
-      <ValidationBadge status="validated" label="10% Error" />
+      <ValidationBadge status="reparametrization" label="Dimensional Analysis — 10% Error" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <EquationDisplay size="lg" label="The MOND acceleration scale from cosmology">
@@ -19,9 +19,13 @@ export default function MondUnification() {
         </EquationDisplay>
 
         <p>
-          This is one of Synchronism&apos;s strongest results. The MOND acceleration scale a&#x2080;
-          &mdash; a number that Milgrom introduced in 1983 as a fundamental constant of nature &mdash;
-          <strong>emerges</strong> from basic cosmological parameters. It is not fundamental. It is derived.
+          The MOND acceleration scale a&#x2080; is related to cosmological parameters.
+          However, this relationship is not unique to Synchronism: Milgrom noted the a&#x2080; ~ cH&#x2080;
+          coincidence in his original 1983 paper. McCulloch (2007) derived a&#x2080; = cH&#x2080;/(2&#x03C0;)
+          from quantized inertia. Verlinde (2017) obtained a similar relation from emergent gravity.
+          The 2&#x03C0; factor is the standard geometric factor arising from any argument involving a
+          spherical causal horizon. This is best understood as dimensional analysis with a geometric prior,
+          not a unique derivation from first principles.
         </p>
 
         <h2>The Significance</h2>
@@ -34,9 +38,9 @@ export default function MondUnification() {
         </EquationDisplay>
         <p>
           For 40 years, the coincidence that a&#x2080; &#x2248; cH&#x2080; has been noted by many
-          researchers but never explained. It could be a numerical accident. In Synchronism, it is
-          a <em>derivation</em>: the coherence function, applied at cosmological scale, produces this
-          relationship with a factor of 2&#x03C0; that comes from the geometry of the horizon.
+          researchers. Multiple frameworks produce the same relation with the same geometric factor.
+          In Synchronism, the coherence function provides a physical narrative for why this
+          relationship holds, but the result itself is shared with other approaches.
         </p>
 
         <h2>The Derivation Chain</h2>
@@ -89,11 +93,35 @@ export default function MondUnification() {
             <h3>Synchronism</h3>
             <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               <li>a&#x2080; is an <strong>emergent scale</strong></li>
-              <li>Value derived from H&#x2080; and c</li>
-              <li>The cH&#x2080; coincidence is explained, not assumed</li>
-              <li>Inherits MOND&apos;s empirical success plus adds environment dependence</li>
+              <li>Value from dimensional analysis of H&#x2080; and c (shared with other frameworks)</li>
+              <li>Uses the standard McGaugh et al. (2016) RAR interpolating function</li>
+              <li>Predicts a weaker EFE (~0.3&ndash;0.4&times; MOND) as a distinguishing feature</li>
             </ul>
           </div>
+        </div>
+
+        <h2>The External Field Effect</h2>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          The nonlinear Poisson equation that implements the coherence function produces an
+          External Field Effect (EFE) &mdash; a subsystem&apos;s internal dynamics are influenced
+          by the external gravitational field it sits in. This contradicts earlier claims in the
+          research archive (Sessions #212, #215) that Synchronism has &ldquo;no EFE.&rdquo;
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          Perturbative analysis shows the Synchronism EFE is approximately <strong>0.3&ndash;0.4&times;
+          the strength of MOND&apos;s EFE</strong>, with a maximum anisotropy of ~17% at g<sub>ext</sub> ~
+          0.4 a&#x2080;. This is a concrete, testable prediction that distinguishes
+          Synchronism from both MOND (stronger EFE) and CDM (no EFE).
+        </p>
+        <div className="card" style={{ marginTop: '1rem', borderLeft: '3px solid #38bdf8' }}>
+          <h3 style={{ color: '#38bdf8' }}>Tidal Dwarf Galaxy Test</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            The cleanest discriminator: for a 10<sup>7</sup> M&#x2609; TDG at g<sub>ext</sub> = 1.0 a&#x2080;,
+            Synchronism predicts &#x03C3; ~ 10.5&ndash;14.5 km/s while MOND predicts &#x03C3; ~
+            10.9&ndash;40.9 km/s. The isolated predictions differ by nearly 3&times;.
+            Observable with the NGC 5291 system (Bournaud et al. 2007, Lelli et al. 2015).
+          </p>
+          <ValidationBadge status="untested" label="Novel Prediction" />
         </div>
 
         <h2>Sessions and History</h2>

@@ -27,24 +27,30 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>1. &#x03B3; = 2/&#x221A;N<sub>corr</sub></h3>
-              <ValidationBadge status="validated" label="Exact" />
+              <ValidationBadge status="speculative" label="Motivated Ansatz" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #64-65</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              From 6D phase space (3 position + 3 momentum): effective DOF contracts to yield factor of 2.
-              N<sub>corr</sub> enters via central limit theorem for correlated ensembles.
+              The 1/&#x221A;N<sub>corr</sub> scaling follows central-limit-theorem statistics for correlated
+              ensembles. The factor of 2 is motivated by phase-space dimensionality arguments (6D to 3 effective)
+              but is not rigorously derived &mdash; integrating out momenta introduces temperature- and
+              mass-dependent factors, not a clean factor of 2. Best understood as a physically motivated ansatz.
             </p>
           </div>
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>2. tanh form</h3>
-              <ValidationBadge status="validated" label="Exact" />
+              <ValidationBadge status="speculative" label="Motivated Choice" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #66</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Mean-field theory derivation. The bounded, monotonic, smooth sigmoid that arises from
-              self-consistent ordering in many-body systems IS tanh. Not a choice; a consequence.
+              tanh arises naturally in mean-field Ising models (m = tanh(&beta;Jzm)). However, in mean-field
+              theory the order parameter feeds back via a self-consistency equation. Here, C(&#x03C1;) is
+              evaluated directly with no self-consistency loop. tanh is a natural choice from the Landau theory
+              family, but other sigmoids (logistic, erf) share the same qualitative properties. The fractal
+              coherence bridge failure (0/7 boundaries) is consistent with this being a generic sigmoid, not
+              a uniquely derived form.
             </p>
           </div>
 

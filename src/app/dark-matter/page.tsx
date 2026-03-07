@@ -82,10 +82,23 @@ export default function DarkMatter() {
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           This is speculative. Particle dark matter (CDM) explains a vast range of cosmological
-          observations: CMB anisotropies, large-scale structure formation, gravitational lensing,
-          the Bullet Cluster. Any alternative must eventually account for all of these. Synchronism
-          has been tested against galaxy rotation curves (14,760 galaxies) but has not yet been
-          confronted with the full cosmological dataset.
+          observations that Synchronism has not addressed:
+        </p>
+        <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', marginBottom: '1rem' }}>
+          <li><strong>Galaxy clusters:</strong> The Bullet Cluster shows a lensing-baryon offset that
+            requires either dark matter or a gravity modification reproducing the same offset. MOND fails
+            here; Synchronism has no answer yet.</li>
+          <li><strong>CMB acoustic peaks:</strong> The relative heights of the CMB power spectrum peaks
+            are precisely fit by CDM. Any dark-matter-free framework must reproduce these ratios.</li>
+          <li><strong>Large-scale structure:</strong> The matter power spectrum and BAO measurements
+            tightly constrain the dark matter fraction. Synchronism has not been confronted with this data.</li>
+          <li><strong>Gravitational lensing:</strong> Strong and weak lensing surveys map dark matter
+            distributions independently of dynamics. These maps must be explained.</li>
+        </ul>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          Synchronism has been tested against galaxy rotation curves (14,760 galaxies) but has not yet
+          been confronted with the full cosmological dataset. Until it addresses galaxy clusters, the CMB,
+          and large-scale structure, it remains incomplete as a dark matter alternative.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

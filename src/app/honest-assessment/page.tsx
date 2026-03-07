@@ -11,10 +11,28 @@ export default function HonestAssessment() {
       <Breadcrumbs currentPath="/honest-assessment" />
 
       <h1>Honest Assessment</h1>
-      <p style={{ color: 'var(--color-text-secondary)', marginBottom: '2rem', maxWidth: '65ch' }}>
+      <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem', maxWidth: '65ch' }}>
         Synchronism is an experimental research framework. This page documents what works,
         what failed, what we got wrong, and what remains untested. Updated as new results come in.
       </p>
+
+      <details style={{ marginBottom: '2rem', maxWidth: '65ch' }}>
+        <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.9rem' }}>
+          Validation badge definitions
+        </summary>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          <strong>Validated</strong><span>Quantitative match with independent data</span>
+          <strong>Strongly Supported</strong><span>Consistent with data but caveats apply (e.g., known prior art)</span>
+          <strong>Supported</strong><span>Consistent with data, not yet independently confirmed</span>
+          <strong>Untested</strong><span>Prediction exists, no data yet</span>
+          <strong>Speculative</strong><span>Conceptual proposal without quantitative test</span>
+          <strong>Reparametrization</strong><span>Equivalent to existing physics in different notation</span>
+          <strong>Failed</strong><span>Prediction contradicted by data (with specific error)</span>
+        </div>
+        <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
+          Full definitions: <Link href="/research-philosophy" style={{ color: 'var(--color-accent-blue)' }}>Research Philosophy</Link>
+        </p>
+      </details>
 
       {/* Overall Verdict */}
       <section className="card card-highlight section">
@@ -48,12 +66,14 @@ export default function HonestAssessment() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>MOND Unification: a&#x2080; = cH&#x2080;/(2&#x03C0;)</h3>
-              <ValidationBadge status="supported" label="Strongly Supported" />
+              <ValidationBadge status="reparametrization" label="Dimensional Analysis" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               MOND&apos;s acceleration constant a&#x2080; related to cosmological parameters via a&#x2080; = cH&#x2080;/(2&#x03C0;). 10% error vs observed value.
-              However, this numerical coincidence has been noted since Milgrom (1983), and other frameworks (e.g., Verlinde 2017)
-              produce similar relations. The 2&#x03C0; factor is asserted from &ldquo;spherical geometry&rdquo; without a full derivation chain.
+              This numerical coincidence has been noted since Milgrom (1983), and other frameworks (McCulloch 2007, Verlinde 2017,
+              Smolin 2017) derive the same relation with the same geometric factor. The quantities c, H&#x2080;, and G are the only
+              dimensionally relevant cosmological constants, and cH&#x2080; naturally has units of acceleration. Best classified as
+              dimensional analysis, not a unique derivation.
             </p>
           </div>
 

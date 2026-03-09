@@ -107,6 +107,47 @@ export default function TwoReframes() {
           traveled, but because their cycles were correlated from creation.
         </p>
 
+        <h3>The Deeper Implication: Simultaneity Is Constructed</h3>
+        <p>
+          The CRT goes further than explaining measurement. It makes a claim about how spatial configurations
+          exist at all.
+        </p>
+        <p>
+          A CRT phosphor grid updates sequentially &mdash; one cell per scan pass. The &ldquo;image&rdquo; as
+          a simultaneous spatial configuration is never actually present anywhere. It is real, but real as a
+          temporal average over the observer&apos;s integration window (human persistence of vision: ~40ms).
+        </p>
+        <blockquote style={{
+          borderLeft: '3px solid var(--color-accent-violet)',
+          paddingLeft: '1rem',
+          margin: '1.5rem 0',
+          color: 'var(--color-text-secondary)',
+          fontStyle: 'italic',
+          fontSize: '1.05rem',
+        }}>
+          The present moment as simultaneous spatial configuration is not a fact of the grid. It is a
+          construction of the observer&apos;s temporal integration window.
+        </blockquote>
+        <p>
+          In Synchronism, the same structure applies to the universe. The Planck grid ticks. State propagates
+          causally, cell by cell, at most one Planck length per Planck tick &mdash; the speed of light as
+          tick-propagation limit. What any observer perceives as &ldquo;the universe right now&rdquo; is a
+          construction of their Markov Relevancy Horizon (MRH) in time.
+        </p>
+        <p>
+          This has a specific consequence for special relativity: the Lorentz transformation is the exact
+          mathematical description of how tick-averaged spatial configurations transform between observers
+          with different velocities &mdash; different temporal integration windows over the same underlying
+          tick sequence. Length contraction and time dilation are not mysterious forces; they are the geometry
+          of how different integration windows reconstruct the same ticks differently.
+        </p>
+        <p>
+          The &ldquo;single observer model&rdquo; in Synchronism follows from this: there is one tick
+          sequence. All phenomenal observers (humans, animals, AI systems) are regions within the grid that
+          integrate partial projections of this sequence through their MRH. The single observer is not a
+          reference frame &mdash; it is the tick process itself.
+        </p>
+
         <div className="card" style={{ margin: '1.5rem 0', borderLeft: '3px solid #38bdf8' }}>
           <p style={{ fontStyle: 'italic', color: 'var(--color-text-secondary)', margin: 0 }}>
             &ldquo;The electron doesn&apos;t exist everywhere at once &mdash; it visits each location in turn,

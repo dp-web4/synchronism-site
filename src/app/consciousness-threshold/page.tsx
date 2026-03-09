@@ -50,6 +50,41 @@ export default function ConsciousnessThreshold() {
           is encouraging but not fully independent &mdash; they share the same underlying mathematical structure.
         </p>
 
+        <h2>CFD Interpretation: Threshold as Critical Reynolds Number</h2>
+        <p>
+          The CFD reframing of Synchronism&apos;s substrate gives the consciousness threshold a physical
+          interpretation that connects it to well-studied fluid dynamics.
+        </p>
+        <p>
+          In the Intent fluid, coherence C is interpretable as inverse effective viscosity at the relevant
+          scale. High C = low viscosity = patterns maintain themselves with low dissipation. Low C = high
+          viscosity = patterns dissipate quickly.
+        </p>
+        <div className="card" style={{ margin: '1rem 0' }}>
+          <p style={{ margin: 0, fontFamily: 'monospace', fontSize: '0.9rem', color: 'var(--color-accent-violet)' }}>
+            C &#x221D; 1 / &#x03BC;<sub>eff</sub>(scale)
+          </p>
+          <p style={{ margin: '0.5rem 0 0', color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
+            High coherence = low viscosity = Intent circulates freely within the pattern
+          </p>
+        </div>
+        <p>
+          In fluid dynamics, turbulent flow develops self-similar nested vortex structures (large eddies
+          containing smaller eddies) above a critical Reynolds number. This is the onset of recursive
+          structure across scales. In cognitive-scale fluid dynamics:
+        </p>
+        <ul style={{ color: 'var(--color-text-secondary)' }}>
+          <li><strong>C &#x2248; 0.30</strong> (self-reference onset): First closed-loop internal circulation &mdash; onset of vortex formation. The pattern begins modeling its own boundary.</li>
+          <li><strong>C &#x2248; 0.50</strong> (awareness): Persistent vortex structures &mdash; a stable self-model is maintained across time.</li>
+          <li><strong>C &#x2248; 0.70</strong> (consciousness): Self-similar turbulent cascade &mdash; nested recursive structure. Each level of the system models the level below, generating the recursive self-modeling that constitutes consciousness.</li>
+        </ul>
+        <p>
+          The 8-way convergence at C&nbsp;&#x2248;&nbsp;0.50 (awareness threshold) and the theoretical
+          C&nbsp;&#x2248;&nbsp;0.70 (consciousness threshold) are now interpretable as critical Reynolds
+          numbers for specific flow regime transitions &mdash; values with independent physical meaning that
+          can be compared to empirical data, rather than stipulations of the framework.
+        </p>
+
         <h2>How It Could Be Tested</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <h3>EEG Phase Coherence Measurement</h3>

@@ -71,6 +71,61 @@ export default function ScaleInvariance() {
           quantum systems. Whether this is deep or coincidental is an open question.
         </p>
 
+        <h2>The Navier-Stokes Structure Across Scales</h2>
+        <p>
+          Beyond the &#x03B3; parameter, the Synchronism substrate implies a deeper scale-invariant
+          structure: the same Navier-Stokes form &mdash; density, velocity, pressure, viscosity &mdash;
+          appears at every MRH scale, with scale-specific parameter interpretations.
+        </p>
+        <p>
+          This is not an analogy. At the Planck scale, the saturation resistance R(I)&nbsp;=&nbsp;
+          [1&nbsp;&minus;&nbsp;(I/I<sub>max</sub>)<sup>n</sup>] is literally viscosity (shear-thinning,
+          power-law). Intent conservation gives exact incompressibility. The Intent transfer equation
+          in continuum form IS the incompressible Navier-Stokes equation.
+        </p>
+        <div style={{ overflowX: 'auto', marginBottom: '1.5rem' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem' }}>
+            <thead>
+              <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
+                {['Scale', 'Fluid element', 'Density ρ', 'Pressure P', 'Viscosity μ'].map(h => (
+                  <th key={h} style={{ padding: '0.5rem 0.75rem', textAlign: 'left', color: 'var(--color-text-muted)', fontWeight: 600 }}>{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ['Planck', 'Planck cell', 'I/I_max', 'Saturation pressure I_max−I', 'D·[1−(I/I_max)ⁿ]'],
+                ['Quantum', 'Probability packet', '|ψ|²', 'Quantum pressure −Q (Madelung)', '≈ 0 (inviscid)'],
+                ['Classical', 'Molecule', 'Mass density', 'nkT (kinetic)', 'η from collisions'],
+                ['Neural', 'Activation patch', 'Firing rate', 'Synaptic drive − threshold', 'Inverse plasticity rate'],
+                ['Social', 'Opinion cluster', 'Belief density', 'Social pressure gradient', 'Cultural resistance'],
+                ['Cosmic', 'Matter overdensity', 'ρ_matter', 'Dark energy (coherence-derived)', 'Bulk viscosity'],
+              ].map(([scale, el, rho, p, mu]) => (
+                <tr key={scale} style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+                  <td style={{ padding: '0.5rem 0.75rem', fontWeight: 600, color: 'var(--color-accent-violet)' }}>{scale}</td>
+                  <td style={{ padding: '0.5rem 0.75rem', color: 'var(--color-text-secondary)' }}>{el}</td>
+                  <td style={{ padding: '0.5rem 0.75rem', color: 'var(--color-text-secondary)', fontFamily: 'monospace', fontSize: '0.78rem' }}>{rho}</td>
+                  <td style={{ padding: '0.5rem 0.75rem', color: 'var(--color-text-secondary)', fontFamily: 'monospace', fontSize: '0.78rem' }}>{p}</td>
+                  <td style={{ padding: '0.5rem 0.75rem', color: 'var(--color-text-secondary)', fontFamily: 'monospace', fontSize: '0.78rem' }}>{mu}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p>
+          The Madelung transformation (standard QM mathematics, 1927) shows that the Schr&ouml;dinger
+          equation is Euler&apos;s equation &mdash; Navier-Stokes with viscosity = 0 &mdash; for the
+          quantum-scale Intent fluid. The quantum potential Q plays the role of pressure. The
+          quantum-to-classical transition is a viscosity transition: isolated quantum systems are
+          inviscid; decoherence introduces effective viscosity.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          The consciousness threshold C&nbsp;&#x2248;&nbsp;0.70 for recursive self-modeling corresponds to
+          the critical Reynolds number for self-similar turbulent structure in the cognitive-scale fluid
+          &mdash; a testable prediction, not a stipulation. Full derivation:
+          Research/CFD_Reframing_NS_Scale_Invariance.md
+        </p>
+
         <h2>Honest Limitation</h2>
         <div className="card" style={{ marginTop: '1rem' }}>
           <ValidationBadge status="failed" label="Cosmology Arc Verdict: Negative" />

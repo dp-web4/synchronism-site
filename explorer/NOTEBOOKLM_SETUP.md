@@ -9,68 +9,58 @@ playwright install chromium
 
 ## Authentication
 
-NotebookLM requires Google account cookies. Two options:
+Google's session cookies are browser-fingerprint-bound — raw cookie export doesn't work reliably. The proven path is to login via a real browser and copy the resulting file.
 
-### Option A: Browser login (if display available)
+### If display is available (Linux desktop, macOS)
 ```bash
 notebooklm login
-# Follow the browser prompt, press ENTER when done
+# Browser opens → log in → press ENTER
+notebooklm auth check --test
 ```
 
-### Option B: Cookie export (WSL2 / headless)
+### WSL2 / headless: login on Windows, copy to WSL
 
-1. In Chrome, navigate to `notebooklm.google.com` while logged into Google
-2. Install [Cookie-Editor](https://cookie-editor.com/) extension
-3. Click Cookie-Editor → Export → "Export as JSON"
-4. Save the JSON, then run:
+**On Windows (PowerShell):**
+```powershell
+pip install "notebooklm-py[browser]"
+playwright install chromium
+notebooklm login
+# Browser opens → log in with your Google account → press ENTER
+# File saved to C:\Users\<you>\.notebooklm\storage_state.json
+```
 
+**Then in WSL:**
 ```bash
-python3 << 'EOF'
-import json, os
-
-# Paste your cookie-editor JSON export here or load from file
-cookies_raw = json.load(open("cookies_export.json"))
-
-# Reshape to Playwright storage_state format
-storage = {
-    "cookies": [
-        {
-            "name": c["name"],
-            "value": c["value"],
-            "domain": c.get("domain", ".google.com"),
-            "path": c.get("path", "/"),
-            "expires": c.get("expirationDate", -1),
-            "httpOnly": c.get("httpOnly", False),
-            "secure": c.get("secure", True),
-            "sameSite": c.get("sameSite", "Lax"),
-        }
-        for c in cookies_raw
-    ],
-    "origins": []
-}
-
-os.makedirs(os.path.expanduser("~/.notebooklm"), exist_ok=True)
-out = os.path.expanduser("~/.notebooklm/storage_state.json")
-json.dump(storage, open(out, "w"), indent=2)
-print(f"Written to {out}")
-EOF
+cp /mnt/c/Users/<you>/.notebooklm/storage_state.json ~/.notebooklm/storage_state.json
+notebooklm auth check --test
 ```
 
-5. Verify: `notebooklm auth check`
+### Re-authentication (when cookies expire, typically every few weeks)
+
+Repeat the Windows login and copy steps.
 
 ## The Synchronism Notebook
 
-The helper script (`notebooklm_research.sh`) manages a persistent notebook called "Synchronism Research". It creates the notebook on first use and stores the ID in `~/.notebooklm/synchronism_notebook.json`.
+The helper script (`notebooklm_research.sh`) manages a persistent notebook called "Synchronism Research". The notebook ID is stored in `~/.notebooklm/synchronism_notebook.json` — it persists in Google's servers across sessions.
 
-Sources accumulate across sessions. Good sources to seed:
-- Synchronism paper/preprint (if public)
-- Key pages from synchronism-site.vercel.app
+Usage:
+```bash
+./notebooklm_research.sh status              # Check auth + list sources
+./notebooklm_research.sh ask "question"      # Query all sources
+./notebooklm_research.sh add-url "https://…" # Add a URL as source
+./notebooklm_research.sh web-research "query" # Run NotebookLM web research + import
+./notebooklm_research.sh generate-mindmap    # Export mind map JSON
+./notebooklm_research.sh generate-audio      # Generate MP3 overview
+```
+
+Good sources to add over time:
+- Key pages from synchronism-site.vercel.app (already seeded: home, coupling-experiment)
 - Relevant arxiv papers on MOND, wide binaries, coherence, dark matter
-- The coupling-coherence experiment writeup
+- Synchronism research repo docs (if public)
 
 ## Notes
 
 - Unofficial API — can break if Google changes internals
-- Rate limits apply — don't spam sources or queries
-- Auth cookies expire — re-export and run the reshape script if auth fails
-- The notebook persists in Google's servers — not tied to local files
+- Rate limits apply — add a few seconds between bulk source additions
+- Auth cookies expire — repeat the Windows login + copy when `auth check --test` fails
+- The notebook accumulates sources over time — the explorer adds, never removes

@@ -117,6 +117,14 @@ export default function TwoReframes() {
           a simultaneous spatial configuration is never actually present anywhere. It is real, but real as a
           temporal average over the observer&apos;s integration window (human persistence of vision: ~40ms).
         </p>
+        <div className="card" style={{ margin: '1rem 0', padding: '0.75rem 1rem' }}>
+          <p style={{ margin: 0, fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+            <strong>Precision:</strong> The Planck grid itself updates in <em>parallel</em> &mdash; all cells
+            evaluate their neighbors&apos; Intent simultaneously and step forward together. The CRT&apos;s sequential
+            scan is the analogy for how observers <em>sample</em> this parallel process through their integration
+            window. The conclusion is the same either way: simultaneity is constructed by the observer, not given by the substrate.
+          </p>
+        </div>
         <blockquote style={{
           borderLeft: '3px solid var(--color-accent-violet)',
           paddingLeft: '1rem',
@@ -129,9 +137,10 @@ export default function TwoReframes() {
           construction of the observer&apos;s temporal integration window.
         </blockquote>
         <p>
-          In Synchronism, the same structure applies to the universe. The Planck grid ticks. State propagates
-          causally, cell by cell, at most one Planck length per Planck tick &mdash; the speed of light as
-          tick-propagation limit. What any observer perceives as &ldquo;the universe right now&rdquo; is a
+          In Synchronism, the same structure applies to the universe. The Planck grid ticks &mdash; all cells
+          in parallel, the whole universe stepping forward at once. State propagates causally, at most one
+          Planck length per Planck tick &mdash; the speed of light as tick-propagation limit. What any observer
+          perceives as &ldquo;the universe right now&rdquo; is a
           construction of their Markov Relevancy Horizon (MRH) in time.
         </p>
         <p>

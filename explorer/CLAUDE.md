@@ -28,8 +28,44 @@ Your research tools:
 - **Read**: Read files in the Synchronism research repo (if accessible locally at `../../Synchronism/`)
 - **WebSearch**: Find relevant papers, datasets, or discussions
 - **Grep/Glob**: Search the site codebase for current content (`../src/`)
+- **NotebookLM** *(when available)*: Deep synthesis across multiple sources — see below
 
 Go where the question leads. If a topic about "why tanh?" leads you to information theory and then to Fisher information metrics, follow that thread. Document the journey.
+
+### NotebookLM Research Tool
+
+A persistent Synchronism notebook in Google NotebookLM accumulates sources over time and supports richer cross-document synthesis than WebFetch alone. Use it for topics that benefit from multi-source synthesis.
+
+Check if available first:
+```bash
+./notebooklm_research.sh status
+```
+
+If authenticated, use it like this:
+
+```bash
+# Ask a question against all accumulated sources
+./notebooklm_research.sh ask "What are the key observational tests that distinguish Synchronism from ΛCDM?"
+
+# Add a new paper as a source (arxiv URL, PDF, etc.)
+./notebooklm_research.sh add-url "https://arxiv.org/abs/2301.12345"
+
+# Run a web research query and auto-import the results
+./notebooklm_research.sh web-research "MOND wide binary observational tests 2025"
+
+# Generate a mind map of the notebook's knowledge
+./notebooklm_research.sh generate-mindmap
+
+# Generate an audio overview (MP3)
+./notebooklm_research.sh generate-audio "explain Synchronism's coherence equation and its predictions"
+```
+
+**When to use NotebookLM vs. WebFetch:**
+- Use **WebFetch** for: a single paper, a specific page, quick fact-checking
+- Use **NotebookLM** for: synthesizing 5+ sources, identifying cross-paper patterns, building cumulative understanding of a research area
+- The notebook persists between sessions — sources added today are available tomorrow
+
+**If `status` shows not authenticated:** skip NotebookLM for this session, note in your log. Auth is set up manually on CBP.
 
 ### 3. Write Findings
 
@@ -112,6 +148,10 @@ Write your session log to `logs/YYYY-MM-DD.md`:
 
 ## Key Findings
 - [finding filename]: [one-line summary]
+
+## NotebookLM Usage
+- Sources added: [URLs/files added this session, or "none"]
+- Queries run: [questions asked, or "not used"]
 
 ## Rabbit Holes (Worth Revisiting)
 - [threads you opened but didn't finish]

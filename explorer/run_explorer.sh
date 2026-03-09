@@ -48,6 +48,14 @@ if [ -f "$VISITOR_LOG" ]; then
     VISITOR_CONTEXT="Today's visitor log is at ../visitor/logs/$DATE.md — read it for context on what confused a naive visitor."
 fi
 
+# Check NotebookLM availability
+NOTEBOOKLM_STATUS=""
+if command -v notebooklm &>/dev/null && notebooklm auth check &>/dev/null 2>&1; then
+    NOTEBOOKLM_STATUS="NotebookLM is available. Run './notebooklm_research.sh status' to see the Synchronism notebook and its sources. Use it for topics requiring multi-source synthesis."
+else
+    NOTEBOOKLM_STATUS="NotebookLM not authenticated this session — skip it, use WebFetch/WebSearch instead."
+fi
+
 # Launch explorer session
 claude --dangerously-skip-permissions << EOF >> "$LOG_FILE" 2>&1
 # Synchronism Site — Explorer Session ($DATE)
@@ -58,6 +66,10 @@ You are running an automated explorer session. Your instructions are in CLAUDE.m
 
 $TOPIC_CONTEXT
 $VISITOR_CONTEXT
+
+## Tools Available
+
+$NOTEBOOKLM_STATUS
 
 ## Your Task
 

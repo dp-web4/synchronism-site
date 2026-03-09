@@ -57,6 +57,7 @@ are back-annotated to the Synchronism research repo as incremental advancement.
 - **Input**: `explorer/topics/` (from maintainer), own curiosity
 - **Output**: `explorer/findings/` (research output, proposals, drafts)
 - **Persona**: Knowledgeable, curious, depth-oriented. Not constrained to the site — explores broader context.
+- **Tool**: NotebookLM (`explorer/notebooklm_research.sh`) — persistent "Synchronism Research" notebook for multi-source synthesis. Check `./notebooklm_research.sh status` at session start; use for topics requiring cross-paper synthesis. See `explorer/NOTEBOOKLM_SETUP.md` for auth setup.
 
 ## Key Files
 

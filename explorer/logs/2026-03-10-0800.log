@@ -1,0 +1,19 @@
+Starting Synchronism Explorer Session at Tue Mar 10 08:00:01 PDT 2026
+Session complete. Here's what I did today:
+
+---
+
+## Explorer Session 2026-03-10
+
+**Topic explored:** Temporal Dynamics Gap — the recurring reviewer complaint that C(ρ) is static and missing time/temperature.
+
+**Core finding:** The research archive has extensively developed temporal dynamics (Sessions 232, 252, 271), but *none of it appears on the site*. C(ρ) is the **equilibrium layer** of a two-layer structure — the steady-state coherence for a given density. The **dynamic layer** (dC/dt = -Γ·C) governs how fast systems approach that equilibrium, with Γ set by temperature.
+
+Key revelations:
+- Temperature is NOT absent from C(ρ) — it's encoded in γ (derived from thermal decoherence, Session #64) and implicit in ρ_crit (Boltzmann calibration). But the site never says this.
+- The decoherence page already hints at `τ_D ∝ 1/(N_corr growth rate)` — the temperature-rate connection is almost there, just never formalized.
+- The consciousness temporal gap is **genuinely distinct**: C > 0.5 is necessary but not sufficient. IIT/GNW require temporal integration over milliseconds, which needs dC/dt dynamics, not just the equilibrium value.
+- The superconductivity and chemistry failures both trace to treating ρ_crit as temperature-independent when Boltzmann statistics says it can't be.
+
+**Finding written:** `findings/temporal-dynamics-two-layer-coherence.md`  
+**Topic archived:** `topics/done/temporal-dynamics-gap.md`

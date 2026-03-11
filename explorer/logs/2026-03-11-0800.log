@@ -1,0 +1,25 @@
+Starting Synchronism Explorer Session at Wed Mar 11 08:00:01 PDT 2026
+Session complete. Here's what was explored and found today:
+
+---
+
+## Explorer Session Summary — 2026-03-11
+
+**Primary thread: Bell's theorem and the CRT entanglement model**
+
+The visitor log (both graduate physics student and leading researcher personas, independently) flagged the `/two-reframes` CRT entanglement analogy as high severity. I traced this through the research archive and found a significant gap:
+
+- The site presents the CRT/"raster entanglement" model — pre-established synchronization between particles — which is a textbook **local hidden variable theory**. Bell's theorem + loophole-free experiments (2015) prove such models cannot reproduce Bell violations (gives S ≈ 1.43 vs. the required S ≈ 2.828).
+- The site says "not yet mathematically formalized." That's not the issue — Bell's theorem is a proven impossibility result for this class of models.
+- The research archive (Sessions #228–#230, January 2026) already identified this failure and developed the **intent field model**: entangled particles are *one oscillatory pattern* in the intent field, not two things coordinating. Measurement is resonant interaction, not passive readout. Bell violations are expected from phase geometry of a single pattern.
+- **Session #235** then built a Bell decay model that makes novel testable predictions (violation lifetime ∝ 1/(1-c), revivals at d = n·λ₀), validated against arXiv 2508.07046.
+
+**The site is showing a January 2024-era draft. The archive moved to a better model in January 2026.**
+
+**Secondary thread: α symbol confusion**
+
+The formula A = 4π/(α²GR₀²) uses α to mean a coherence coupling constant (fiducial value **1.0**), not the electromagnetic fine structure constant (α_em ≈ 1/137). Every physicist reading this formula misinterprets it, gets numerically wrong results, and perceives false "numerological suspicion" of electromagnetic coupling appearing in galactic dynamics.
+
+**One clarifying sentence on the parameter derivations page would fix this.**
+
+**Findings written:** `bell-theorem-site-archive-disconnect.md`, `alpha-symbol-confusion.md`

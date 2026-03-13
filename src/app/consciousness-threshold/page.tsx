@@ -147,6 +147,11 @@ export default function ConsciousnessThreshold() {
           <li>Converting neural measurements to C requires calibration not yet defined</li>
           <li>The prediction could be unfalsifiable if the mapping from EEG to C is too flexible</li>
           <li>No experiment has been run &mdash; this is entirely theoretical</li>
+          <li><strong>CFD operationalization gap (March 2026):</strong> The Reynolds number interpretation
+            requires Re<sub>max</sub> for neural systems. Stress testing found that the three thresholds
+            (C&nbsp;=&nbsp;0.30, 0.50, 0.70) imply Re<sub>max</sub> values differing by 440&times;. No single
+            Re<sub>max</sub> is consistent with all three thresholds. Until Re<sub>internal</sub> is defined
+            in SI units (&rho;, v, L, &mu;), the Reynolds interpretation is aspirational, not testable.</li>
         </ul>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

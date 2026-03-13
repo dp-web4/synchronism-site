@@ -156,6 +156,12 @@ export default function CoreIdea() {
               Where the theory falls short and what that teaches us
             </p>
           </Link>
+          <Link href="/fundamentals" className="card" style={{ textDecoration: 'none' }}>
+            <h3 style={{ color: 'var(--color-accent-violet)' }}>The Foundations</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Four axioms everything else flows from &mdash; including what Intent actually is
+            </p>
+          </Link>
         </div>
       </section>
 

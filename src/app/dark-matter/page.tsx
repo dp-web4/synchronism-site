@@ -82,9 +82,14 @@ export default function DarkMatter() {
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           This is speculative. Particle dark matter (CDM) explains a vast range of cosmological
-          observations that Synchronism has not addressed:
+          observations that Synchronism has not addressed. Additionally, stress testing (March 2026)
+          found a structural problem with the CFD viscosity interpretation:
         </p>
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', marginBottom: '1rem' }}>
+          <li><strong>Viscosity sign error:</strong> The CFD reframing maps coherence C to inverse viscosity
+            (C = 1/&mu;<sub>eff</sub>). Dark matter should then be HIGH viscosity (less coherent). But the
+            Bullet Cluster shows dark matter passes through itself without drag &mdash; it is LESS sticky
+            than baryons, not more. High viscosity predicts more interaction, which is the wrong direction.</li>
           <li><strong>Galaxy clusters:</strong> The Bullet Cluster shows a lensing-baryon offset that
             requires either dark matter or a gravity modification reproducing the same offset. MOND fails
             here; Synchronism has no answer yet.</li>

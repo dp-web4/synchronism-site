@@ -299,12 +299,12 @@ export default function KeyClaims() {
               fontSize: '0.75rem',
               padding: '0.2rem 0.6rem',
               borderRadius: '1rem',
-              background: 'rgba(34, 197, 94, 0.15)',
-              color: '#22c55e',
+              background: 'rgba(245, 158, 11, 0.15)',
+              color: '#f59e0b',
               fontWeight: 500,
               whiteSpace: 'nowrap',
             }}>
-              Consistent with Data
+              Speculative &mdash; Structural Problems
             </span>
           </div>
 
@@ -346,7 +346,9 @@ export default function KeyClaims() {
               The quantitative predictions are MOND-equivalent &mdash; they match existing MOND results,
               not new data. Session #616 found R&sup2; = 0.14 for environment-dependent scatter. Standard
               MOND + M/L corrections explain all observed variance. The mechanism is novel; the predictions
-              (so far) are not.
+              (so far) are not. Stress testing (March 2026) found a sign error: the CFD viscosity mapping
+              predicts dark matter should be MORE sticky than baryons, but the Bullet Cluster shows it is
+              LESS sticky. This is a structural failure, not a parameter problem.
             </p>
           </div>
 

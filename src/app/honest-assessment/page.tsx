@@ -36,11 +36,13 @@ export default function HonestAssessment() {
 
       {/* Overall Verdict */}
       <section className="card card-highlight section">
-        <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Session #616)</h2>
+        <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated March 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          After 3,308 sessions: <strong>0 unique confirmed predictions</strong> that can&apos;t be explained
-          by existing physics. All results are either consistent with MOND (Modified Newtonian Dynamics) + mass-to-light corrections,
-          or are reparametrizations of known physics. However, the framework produced{' '}
+          After 3,308 sessions + 8 adversarial stress tests: <strong>0 unique confirmed predictions</strong> that
+          can&apos;t be explained by existing physics. One <strong>candidate prediction</strong> (entity criterion
+          &Gamma;&nbsp;&lt;&nbsp;m) found via stress testing &mdash; derivable from oscillation basis, not from QFT,
+          but not yet tested. All other results are either consistent with MOND + mass-to-light corrections,
+          or are reparametrizations of known physics. The framework produced{' '}
           <strong>30 genuine contributions</strong> as a research tool &mdash; wrong-but-productive.
         </p>
       </section>
@@ -156,6 +158,65 @@ export default function HonestAssessment() {
             <p style={{ color: 'var(--color-text-secondary)' }}>
               C(&#x03C1;) was proposed to explain cross-scale hierarchy boundaries. 36/36 tests: 0/7 boundaries predicted.
               The tanh form is generic (Landau theory). C(&#x03C1;) is description, not explanation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Structural Tensions (Stress Tests) */}
+      <section className="section">
+        <h2>Structural Tensions (March 2026 Stress Tests)</h2>
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+          Eight adversarial stress-test sessions probed the CFD reframing for genuine novel predictions.
+          Results: one candidate prediction, four forced choices, and several structural failures.
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div className="card">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>Dark Matter Viscosity Sign Error</h3>
+              <ValidationBadge status="failed" label="Wrong Direction" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              CFD mapping: C = 1/&mu;<sub>eff</sub>. Dark matter (low C) should mean high viscosity = more sticky.
+              But the Bullet Cluster shows dark matter passes through itself &mdash; LESS sticky than baryons.
+              The viscosity interpretation predicts the wrong direction.
+            </p>
+          </div>
+
+          <div className="card">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>Lorentz Invariance Logical Gap</h3>
+              <ValidationBadge status="untested" label="Gap Identified" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              Parallel update eliminates scan-axis preference, but no discrete 3D lattice has continuous
+              rotational symmetry SO(3). &ldquo;No preferred direction&rdquo; does not imply &ldquo;full Lorentz invariance.&rdquo;
+              Grid geometry must be specified.
+            </p>
+          </div>
+
+          <div className="card">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>R(I) Correction Unobservable</h3>
+              <ValidationBadge status="failed" label="~10⁻⁸⁰ at Neutron Stars" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              The only genuine novel prediction path (R(I) viscosity correction to quantum pressure)
+              gives corrections of ~10<sup>&minus;80</sup> at the densest accessible physics. Lives at
+              Planck-scale densities. Not accessible to any foreseeable experiment.
+            </p>
+          </div>
+
+          <div className="card">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>Entity Criterion: &Gamma; &lt; m</h3>
+              <ValidationBadge status="untested" label="Candidate Prediction" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              From oscillation basis: particles must complete at least one Compton oscillation before decaying.
+              Derivable from first principles; not derivable from QFT. The f<sub>0</sub>(500)/sigma
+              (&Gamma;/m &asymp; 1.16) is predicted &ldquo;not a particle&rdquo; &mdash; consistent with
+              genuine PDG controversy. Strongest candidate novel prediction found across all 8 sessions.
             </p>
           </div>
         </div>

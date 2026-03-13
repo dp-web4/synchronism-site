@@ -93,18 +93,62 @@ export default function TwoReframes() {
           structural, not mysterious.
         </p>
 
-        <h3>Entanglement: Two Synchronized Screens</h3>
+        <h3>Entanglement: Phase Alignment in a Common Substrate</h3>
         <p>
-          Imagine two CRT screens displaying identical pictures, perfectly synchronized in their electron
-          beam scanning. No matter how you sample them &mdash; slow for pictures, fast for flickering,
-          pixel-rate for dots &mdash; both screens show identical behavior simultaneously. Regardless of
-          distance.
+          The CRT analogy extends naturally to entanglement. Imagine two CRT screens driven by the same
+          signal source. No matter how far apart you place them, they display identical behavior &mdash; not
+          because information travels between them, but because both are phase-aligned oscillations in a
+          common medium.
         </p>
         <p>
-          No information travels between them. They were synchronized from the start. This is what
-          Synchronism calls <strong>raster entanglement</strong>: &ldquo;entangled&rdquo; particles are
-          patterns cycling in perfect sync. Measuring one tells you about the other not because information
-          traveled, but because their cycles were correlated from creation.
+          This is the key: if pattern A is in phase with substrate S, and pattern B is in phase with
+          substrate S, then A is in phase with B &mdash; because S is common to both. The correlation is not
+          carried by the particles as hidden instructions. It is continuously maintained by the substrate itself.
+          Distance is irrelevant as long as both oscillations maintain their phase relationship with the
+          underlying field.
+        </p>
+
+        <h4>Why This Is Not a Hidden Variable Model</h4>
+        <p>
+          Bell&apos;s theorem (1964) proves that no <strong>local hidden variable</strong> model &mdash; where
+          particles carry pre-determined answers &mdash; can reproduce quantum correlations. The CHSH bound
+          is |S|&nbsp;&le;&nbsp;2 for any LHV theory; quantum mechanics gives |S|&nbsp;&asymp;&nbsp;2.83.
+        </p>
+        <p>
+          The substrate model is structurally different from LHV. The particles do not carry anything. They
+          are oscillations <em>in</em> the intent field, and the field maintains the phase relationship. The
+          substrate is everywhere &mdash; nonlocal by construction. There are no separate things coordinating;
+          there is one pattern spanning both locations, like a vibrating string with two ends. In the singlet
+          state, the pattern phase at location A is &phi;<sub>0</sub> and at
+          B is &phi;<sub>0</sub>&nbsp;+&nbsp;&pi; &mdash; not a correlation between separate things, but the
+          structure of the pattern itself.
+        </p>
+
+        <h4>Measurement as Resonant Interaction</h4>
+        <p>
+          Measurement is not passive readout of a pre-existing value. The detector couples to the field
+          pattern. The combined system (field + detector) settles into a stable resonant configuration.
+          What we record as &ldquo;spin up&rdquo; or &ldquo;spin down&rdquo; is which resonant well the
+          system fell into. Setting the detector to angle &theta; establishes a phase offset in this coupling.
+        </p>
+        <p>
+          Both detectors probe the <em>same</em> pattern. Measuring at A constrains &phi;<sub>0</sub>;
+          B&apos;s outcome follows from the same constraint. The correlations are geometric &mdash;
+          phase relationships in a single oscillatory structure &mdash; not hidden instructions carried
+          by particles, not faster-than-light communication.
+        </p>
+
+        <h4>Bell Violations: Expected, Not Mysterious</h4>
+        <p>
+          Bell&apos;s inequality bounds what is possible if you have two separate things carrying
+          pre-determined answers. But Synchronism does not have that. It has one pattern probed at two
+          locations. From the phase geometry of the singlet pattern, the correlation function
+          E(a,b)&nbsp;=&nbsp;&minus;cos(a&minus;b) can be derived from first principles, giving
+          |S|&nbsp;&asymp;&nbsp;2.39 &mdash; violating the classical bound, as quantum mechanics requires.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          Full derivation: Research Sessions #228&ndash;231.
+          See also: <em>Clarification: Bell Violations, Measurement, and Resonance</em> in the research archive.
         </p>
 
         <h3>The Deeper Implication: Simultaneity Is Constructed</h3>

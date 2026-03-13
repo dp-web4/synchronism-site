@@ -28,11 +28,18 @@ export const navigationTree: NavigationTree = {
       related: ['/why-synchronism', '/core-idea', '/learning-paths'],
     },
     {
+      title: 'Fundamentals',
+      href: '/fundamentals',
+      desc: 'The four foundations — everything else flows from these',
+      keywords: ['fundamentals', 'foundations', 'intent', 'reification', 'saturation', 'grid', 'axioms'],
+      related: ['/core-idea', '/why-synchronism', '/two-reframes', '/what-synchronism-is-not'],
+    },
+    {
       title: 'The Core Idea',
       href: '/core-idea',
       desc: 'One equation, every scale',
       keywords: ['overview', 'summary', 'equation', 'core', 'idea'],
-      related: ['/coherence-function', '/gamma-parameter', '/scale-invariance'],
+      related: ['/fundamentals', '/coherence-function', '/gamma-parameter', '/scale-invariance'],
     },
     {
       title: 'Learning Paths',

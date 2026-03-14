@@ -99,6 +99,59 @@ export default function HandlingFailure() {
           </div>
         </div>
 
+        <h2>Failure Taxonomy: What Kind of Wrong?</h2>
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+          The regimes above classify by <em>physics mechanism</em>. But failures also differ by <em>type</em> &mdash;
+          and the type matters more than the count. A reparametrization (&ldquo;we said something already known&rdquo;)
+          is fundamentally different from a directional error (&ldquo;we predicted the wrong sign&rdquo;).
+        </p>
+        <div style={{ overflowX: 'auto', marginBottom: '1.5rem' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
+            <thead>
+              <tr style={{ borderBottom: '2px solid var(--color-dark-border)' }}>
+                <th style={{ textAlign: 'left', padding: '0.5rem', color: 'var(--color-text-primary)' }}>Category</th>
+                <th style={{ textAlign: 'left', padding: '0.5rem', color: 'var(--color-text-primary)' }}>Count</th>
+                <th style={{ textAlign: 'left', padding: '0.5rem', color: 'var(--color-text-primary)' }}>Implication</th>
+                <th style={{ textAlign: 'left', padding: '0.5rem', color: 'var(--color-text-primary)' }}>Fixable?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
+                <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>Process (reparametrization)</td>
+                <td style={{ padding: '0.5rem', fontFamily: 'monospace' }}>~30+</td>
+                <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>Methodology problem, not physics &mdash; &ldquo;predicted&rdquo; something already known</td>
+                <td style={{ padding: '0.5rem', color: '#22c55e' }}>Yes</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
+                <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>Mean-field limitations</td>
+                <td style={{ padding: '0.5rem', fontFamily: 'monospace' }}>~5</td>
+                <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>Expected &mdash; single-parameter models can&apos;t capture crystal structure or critical exponents</td>
+                <td style={{ padding: '0.5rem', color: '#f59e0b' }}>No (fundamental)</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
+                <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>Directional errors</td>
+                <td style={{ padding: '0.5rem', fontFamily: 'monospace' }}>2</td>
+                <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>Fatal for specific claims &mdash; Bullet Cluster sign error, fractal bridge 0/7</td>
+                <td style={{ padding: '0.5rem', color: '#ef4444' }}>No (conceptual)</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
+                <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>Structural gaps</td>
+                <td style={{ padding: '0.5rem', fontFamily: 'monospace' }}>4+</td>
+                <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>Open problems &mdash; Lorentz invariance, Born rule circularity, Bell derivation</td>
+                <td style={{ padding: '0.5rem', color: '#f59e0b' }}>In principle</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          The nature of the failures matters more than their count.
+          The ~30 reparametrizations tell us the <em>research process</em> needs better literature checking, not that the physics is wrong.
+          The ~5 mean-field limitations tell us exactly <em>where</em> C(&#961;) breaks down &mdash; and that boundary is informative.
+          The 2 directional errors are the ones that actually falsify specific interpretations.
+          The structural gaps are shared with most interpretations of quantum mechanics (Born rule circularity)
+          or are open problems in quantum gravity (Lorentz invariance from discrete substrates).
+        </p>
+
         <h2>The Anomalous Results</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Some results are more interesting than either success or failure:

@@ -258,24 +258,36 @@ export default function HonestAssessment() {
         </div>
       </section>
 
-      {/* 30 Contributions */}
+      {/* 47 Contributions */}
       <section className="section content-width">
-        <h2>The 30 Genuine Contributions</h2>
+        <h2>The 47 Genuine Contributions</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Even when predictions were wrong, the framework was productive. Post-SPARC (Spitzer Photometry and Accurate Rotation Curves) audit (Session #616)
-          identified 30 genuine contributions:
+          Session #615 (final accounting) inventoried all genuine contributions across ~3,302 sessions.
+          Discovery rate: 1.4% &mdash; 47 contributions out of ~3,302 sessions. That&apos;s normal for science.
         </p>
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem' }}>
-          <li>MOND&apos;s a&#x2080; derived from cosmology (strongest result)</li>
-          <li>Freeman&apos;s Law from first principles</li>
-          <li>Environment-dependent RAR scatter hypothesis</li>
-          <li>&#x03B3; &#x2248; 1 as universal quantum-classical marker</li>
-          <li>Pair-breaking efficiency as materials design optimization target</li>
-          <li>A2ACW (AI Adversarial Collaboration Workflow) methodology</li>
-          <li>Autonomous multi-agent research infrastructure</li>
-          <li>And 23 more documented in the{' '}
-            <Link href="/publication-roadmap" style={{ color: 'var(--color-accent-blue)' }}>publication roadmap</Link>
-          </li>
+          <li>14 chemistry contributions (0.52% rate across 2,671 sessions)</li>
+          <li>18 SPARC cosmology contributions (8.5% rate across 211 sessions)</li>
+          <li>5 ALFALFA-SDSS contributions (71.4% rate across 7 focused sessions)</li>
+          <li>5 CDM discrimination contributions (71.4% rate across 7 sessions)</li>
+          <li>4 robust statistics contributions</li>
+          <li>1 fractal bridge negative result (clean closure, 36/36 tests)</li>
+        </ul>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          Top results: 6-variable MOND offset model (LOO R&sup2;=0.938),
+          TFR residual as complete M/L predictor (51.4% improvement on 14,437 galaxies),
+          &#963;<sub>int</sub>&nbsp;=&nbsp;0.086&nbsp;&plusmn;&nbsp;0.003&nbsp;dex (definitive BTFR intrinsic scatter).
+          Full list in the{' '}
+          <Link href="/publication-roadmap" style={{ color: 'var(--color-accent-blue)' }}>publication roadmap</Link>.
+        </p>
+
+        <h3>What the Program Demonstrates</h3>
+        <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem' }}>
+          <li><strong>Wrong theories motivate right questions</strong> &mdash; 0 predictions confirmed, yet 47 genuine contributions</li>
+          <li><strong>Self-correction accelerates with experience</strong> &mdash; error recognition delay: 373 sessions (early) &rarr; 1 session (late)</li>
+          <li><strong>Discovery rate increases with focus</strong> &mdash; chemistry 0.52% &rarr; ALFALFA/CDM 71.4%</li>
+          <li><strong>Honest negative results are valuable</strong> &mdash; OQ007 fractal bridge: 36/36 tests, clean definitive closure</li>
+          <li><strong>A 1.4% discovery rate is normal</strong> &mdash; science is mostly null results</li>
         </ul>
       </section>
 

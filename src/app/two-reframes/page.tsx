@@ -142,12 +142,24 @@ export default function TwoReframes() {
         <p>
           Bell&apos;s inequality bounds what is possible if you have two separate things carrying
           pre-determined answers. But Synchronism does not have that. It has one pattern probed at two
-          locations. From the phase geometry of the singlet pattern, the correlation function
-          E(a,b)&nbsp;=&nbsp;&minus;cos(a&minus;b) can be derived from first principles, giving
-          |S|&nbsp;&asymp;&nbsp;2.39 &mdash; violating the classical bound, as quantum mechanics requires.
+          locations. The substrate model must reproduce the quantum mechanical correlation
+          E(a,b)&nbsp;=&nbsp;&minus;cos(a&minus;b) to match experiment. Standard QM gives
+          |S|&nbsp;=&nbsp;2&radic;2&nbsp;&asymp;&nbsp;2.83 from this correlation (Tsirelson&apos;s bound).
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <strong>Open problem:</strong> Deriving E(a,b)&nbsp;=&nbsp;&minus;cos(a&minus;b) rigorously from the
+          substrate phase geometry requires the measurement probabilities to follow the Born rule. But
+          the Born rule derivation itself is acknowledged as possibly circular (see{' '}
+          <a href="/born-rule">Born Rule</a>). Breaking this circle &mdash; deriving measurement
+          probabilities from substrate dynamics without assuming them &mdash; is the actual hard problem.
+          This is an area of active investigation, not a settled result.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-          Full derivation: Research Sessions #228&ndash;231.
+          Background: Research Sessions #228&ndash;231. An earlier version of this page claimed
+          |S|&nbsp;&asymp;&nbsp;2.39 &mdash; this was a calculation error caught by the{' '}
+          <a href="https://github.com/dp-web4/synchronism-site/tree/main/explorer/findings">
+            explorer feedback loop
+          </a>.
           See also: <em>Clarification: Bell Violations, Measurement, and Resonance</em> in the research archive.
         </p>
 

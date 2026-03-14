@@ -521,9 +521,9 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Compression Trust Phase Transition',
       href: '/coupling-experiment',
-      desc: 'How compression trust creates collective knowledge',
-      keywords: ['coupling', 'coherence', 'experiment', 'multi-agent', 'Bayesian', 'sigmoid', 'compression', 'trust'],
-      related: ['/coherence-function', '/falsifiability', '/test-catalog'],
+      desc: 'Phase 1 (900 runs) + Phase 2 (1,070 runs): compatibility, synthon formation, replacement resilience',
+      keywords: ['coupling', 'coherence', 'experiment', 'multi-agent', 'Bayesian', 'sigmoid', 'compression', 'trust', 'compatibility', 'synthon', 'replacement'],
+      related: ['/coherence-function', '/falsifiability', '/test-catalog', '/honest-assessment'],
     },
   ],
 

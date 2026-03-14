@@ -97,3 +97,22 @@ This applies to all tracks: the visitor should feel invited to think, the mainta
 - The **honest assessment** is never weakened — failures stay visible
 - Avoid "production ready" — we are in R&D
 - Navigation source of truth is `src/lib/navigation.ts`
+
+<!-- gitnexus:start -->
+# GitNexus — Code Knowledge Graph
+
+Indexed as **synchronism-site** (404 symbols, 704 edges, 3 flows). MCP tools available via `mcp__gitnexus__*`.
+
+Re-index after significant changes: `node /mnt/c/exe/projects/ai-agents/GitNexus/gitnexus/dist/cli/index.js analyze`
+
+| Tool | Use for |
+|------|---------|
+| `query` | Find execution flows by concept |
+| `context` | 360-degree view of a symbol (callers, callees, processes) |
+| `impact` | Blast radius before editing (upstream/downstream) |
+| `detect_changes` | Map git diff to affected symbols and flows |
+| `rename` | Graph-aware multi-file rename (dry_run first) |
+| `cypher` | Raw Cypher queries against the graph |
+
+Resources: `gitnexus://repo/synchronism-site/context`, `clusters`, `processes`, `process/{name}`
+<!-- gitnexus:end -->

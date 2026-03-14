@@ -475,6 +475,140 @@ export default function CouplingExperiment() {
           <li><code>results/coupling_coherence_results.json</code> &mdash; 900 runs raw data</li>
           <li><code>results/coupling_coherence_analysis.json</code> &mdash; Fit parameters, model comparison</li>
         </ul>
+
+        <h2 style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--color-border)' }}>
+          Phase 2: Compatibility &amp; Synthon Formation
+        </h2>
+        <ValidationBadge status="supported" label="Executed — March 2026" />
+
+        <p style={{ marginTop: '1rem' }}>
+          Phase 1 fixed compatibility at 1.0 (identical agents). Phase 2 asks: what happens when agents
+          are <em>different</em>? Four experiments, 1,070 runs, heterogeneous agents with a compatibility matrix.
+        </p>
+
+        <div className="grid-2" style={{ marginBottom: '1.5rem' }}>
+          <div className="card">
+            <h3>Exp A: Coupling &times; Compatibility</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              750 runs: 10 coupling levels &times; 5 compatibility values [0.2&ndash;1.0] &times; 15 reps.
+              Specialist agents observe only a subset of edge types.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Exp B: Structure Matters</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Three compatibility structures (uniform / block-diagonal / random) at mean compat = 0.5.
+              Does topology affect the phase transition?
+            </p>
+          </div>
+          <div className="card">
+            <h3>Exp C: Specialists vs Generalists</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Specialist agents observe 2/4 edge types. Do they develop distinct expertise?
+              Does the collective exceed any individual on cross-type inference?
+            </p>
+          </div>
+          <div className="card">
+            <h3>Exp D: Replacement Resilience</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Run to convergence, swap one agent with a fresh one. Does the collective survive?
+              Does it <em>improve</em>?
+            </p>
+          </div>
+        </div>
+
+        <h3>Key Results</h3>
+
+        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', marginBottom: '1.5rem' }}>
+          <thead>
+            <tr style={{ borderBottom: '2px solid var(--color-border)' }}>
+              <th style={{ textAlign: 'left', padding: '0.5rem' }}>Finding</th>
+              <th style={{ textAlign: 'left', padding: '0.5rem' }}>Evidence</th>
+              <th style={{ textAlign: 'center', padding: '0.5rem' }}>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <td style={{ padding: '0.5rem' }}>p<sub>crit</sub> &prop; 1/&lang;compatibility&rang;</td>
+              <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>
+                r = 0.994, p = 0.0006. Low-compat agents need ~73% more coupling events.
+              </td>
+              <td style={{ padding: '0.5rem', textAlign: 'center', color: '#2ecc71' }}>CONFIRMED</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <td style={{ padding: '0.5rem' }}>Block structure amplifies cooperation</td>
+              <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>
+                Block-diagonal gives <em>lower</em> k and lower C<sub>max</sub>. Creates silos, not amplification.
+              </td>
+              <td style={{ padding: '0.5rem', textAlign: 'center', color: '#e74c3c' }}>REFUTED</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <td style={{ padding: '0.5rem' }}>Specialists develop distinct expertise</td>
+              <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>
+                6&times; higher specialization index. But collective doesn&apos;t reliably exceed best individual (ratio = 0.98).
+              </td>
+              <td style={{ padding: '0.5rem', textAlign: 'center', color: '#f39c12' }}>PARTIAL</td>
+            </tr>
+            <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
+              <td style={{ padding: '0.5rem' }}>Replacement destroys the collective</td>
+              <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>
+                Recovery ratio = 1.106 &mdash; the collective is <em>more</em> coherent after replacement.
+              </td>
+              <td style={{ padding: '0.5rem', textAlign: 'center', color: '#2ecc71' }}>REFUTED (surprising)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1.5rem' }}>
+          <div className="card" style={{ borderLeft: '3px solid #2ecc71' }}>
+            <h3>The Compatibility Formula</h3>
+            <p style={{ fontFamily: 'monospace', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
+              p<sub>crit</sub> &asymp; 0.0185 / &lang;compatibility&rang;
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
+              The critical trust frequency scales inversely with compatibility. Measure compatibility,
+              predict the threshold. This closes the loop from Phase 1&apos;s failed derivation &mdash;
+              p<sub>crit</sub> is relational, but now it has a structural handle.
+            </p>
+          </div>
+
+          <div className="card" style={{ borderLeft: '3px solid #9b59b6' }}>
+            <h3>Synthon Identity Is Structural</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
+              The replacement result is the deepest finding. Fresh agents don&apos;t disrupt the collective &mdash;
+              they <em>refresh</em> it. The synthon is not bound to specific agents; it&apos;s the coupling topology
+              and shared compression norms. Component replacement is regenerative, not destructive.
+              This is more biological than physical &mdash; ecosystems benefit from species turnover,
+              neural networks benefit from dropout.
+            </p>
+          </div>
+
+          <div className="card" style={{ borderLeft: '3px solid #e74c3c' }}>
+            <h3>Silos Kill Emergence</h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
+              Block-diagonal compatibility creates information silos. Communities converge internally
+              but the between-community gap persists. Like an impure crystal &mdash; immiscible components
+              suppress the phase transition. Cross-community bridges are required for synthon formation.
+            </p>
+          </div>
+        </div>
+
+        <h3>Next: Causal Worlds</h3>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          The specialist null result (emergence ratio &asymp; 1.0) likely reflects the random world design:
+          type-A edges don&apos;t depend on type-B edges, so specialists never <em>need</em> each other&apos;s
+          knowledge. Next experiment: worlds with causal cross-type dependency, where knowing type-A
+          structure is required to predict type-B outcomes. Also: bridge agents in block structures,
+          optimal replacement frequency, and adaptive compatibility (T3/V3-style trust evolution).
+        </p>
+
+        <h3>Phase 2 Source Code</h3>
+        <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <li><code>compatibility_synthon_experiment.py</code> &mdash; All four experiments</li>
+          <li><code>compatibility_synthon_analysis.py</code> &mdash; Analysis and visualization</li>
+          <li>Full writeup: <a href="https://github.com/dp-web4/Synchronism/blob/main/Research/Compatibility_Synthon_Experiment.md">
+            Compatibility_Synthon_Experiment.md</a></li>
+        </ul>
       </section>
 
       <RelatedConcepts currentPath="/coupling-experiment" />

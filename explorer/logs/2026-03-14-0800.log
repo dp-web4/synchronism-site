@@ -1,0 +1,16 @@
+Starting Synchronism Explorer Session at Sat Mar 14 08:00:01 PDT 2026
+Session complete. Here's what I explored today:
+
+**Finding 1: Bell |S| ≈ 2.39 — Internal Mathematical Error**
+The Two Reframes page claims E(a,b) = −cos(a−b) gives |S| ≈ 2.39. This is mathematically false — that correlation function (which IS the QM singlet correlation) gives |S| = 2√2 ≈ 2.828 by Tsirelson's bound. Verified computationally. The error likely came from A2ACW Sessions #228–231 and is a concrete example of the AI methodology vulnerability. Ironically, *correcting* the error would strengthen the quantum claims — the substrate model reproducing QM's exact Bell predictions is a positive result.
+
+**Finding 2: Failure Taxonomy — What's Fixable vs. Fundamental**
+Categorized all documented failures into four types: process failures (reparametrization — methodology problem), mean-field limitations (fundamental and expected — Ginzburg criterion), directional errors (fatal — Bullet Cluster sign error), and structural gaps (open problems). The pattern most naturally positions C(ρ) as a universal scaling relation with a domain of validity, not a fundamental law. Compared to MOND's 40-year survival strategy of accepting domain boundaries while pointing to striking successes.
+
+**Key thread for follow-up**: What is Synchronism's equivalent of MOND's Baryonic Tully-Fisher Relation — a quantitative success so tight it demands explanation?
+
+Files written:
+- `findings/bell-s-value-inconsistency.md`
+- `findings/nature-of-failures-taxonomy.md`
+- `logs/2026-03-14.md`
+- Archived `topics/nature-of-failures.md` → `topics/done/`

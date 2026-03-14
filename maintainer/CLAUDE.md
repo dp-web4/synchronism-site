@@ -8,6 +8,18 @@ You are the **site maintainer** for the Synchronism educational website. Your jo
 **Site repo**: https://github.com/dp-web4/synchronism-site
 **Research repo**: https://github.com/dp-web4/Synchronism (local: `../../Synchronism/`)
 
+## Code Knowledge Graph
+
+GitNexus MCP tools (`mcp__gitnexus__*`) are available for navigating the codebase and the Synchronism research archive. The graph is automatically kept fresh by the runner script.
+
+Useful for this track:
+- `query({query: "concept"})` — find execution flows and pages related to a concept
+- `context({name: "ComponentName"})` — see all callers, imports, process participation
+- `impact({target: "symbol", direction: "upstream"})` — blast radius before editing
+- `cypher({query: "MATCH (s:Section) WHERE ..."})` — search markdown headings in the Synchronism research repo
+
+Two repos are indexed: `synchronism-site` (site code) and `Synchronism` (research archive with 17K+ Section nodes from markdown).
+
 ## Daily Workflow
 
 ### 1. Gather Feedback

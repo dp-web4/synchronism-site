@@ -29,6 +29,13 @@ echo "Starting Synchronism Maintainer Session at $(date)" | tee "$LOG_FILE"
 
 cd "$SCRIPT_DIR"
 
+# Hardbound session governance
+source /mnt/c/exe/projects/ai-agents/hardbound/scripts/hardbound_session_start.sh "$PROJECT_DIR" "cbp-claude" 2>/dev/null || true
+
+# GitNexus graph maintenance — ensure index is fresh before session
+source /mnt/c/exe/projects/ai-agents/scripts/gitnexus-maintain.sh 2>/dev/null || true
+gitnexus_ensure_fresh "$PROJECT_DIR" 2>>"$LOG_FILE" || true
+
 # Check for fresh visitor feedback
 VISITOR_LOG="$PROJECT_DIR/visitor/logs/$DATE.md"
 VISITOR_CONTEXT=""
@@ -69,6 +76,9 @@ EOF
 
 echo "Maintainer session complete. Log: $LOG_FILE"
 
+# Hardbound session end
+source /mnt/c/exe/projects/ai-agents/hardbound/scripts/hardbound_session_end.sh "$PROJECT_DIR" "cbp-claude" "maintainer session" "success" 2>/dev/null || true
+
 # Commit and push results (maintainer may have changed src/ files too)
 cd "$PROJECT_DIR"
 git add maintainer/logs/ explorer/topics/ src/ 2>/dev/null || true
@@ -78,4 +88,6 @@ if ! git diff --cached --quiet 2>/dev/null; then
     if [ -n "$PAT" ]; then
         git push "https://dp-web4:${PAT}@github.com/dp-web4/synchronism-site.git" 2>/dev/null || true
     fi
+    # Re-index graph after changes
+    gitnexus_reindex "$PROJECT_DIR" 2>>"$LOG_FILE" || true
 fi

@@ -21,6 +21,22 @@ ls topics/done/*.md 2>/dev/null
 
 Pick a topic that interests you, or follow your own thread if nothing in the queue sparks curiosity. You are not obligated to work the queue in order — pick what pulls you.
 
+### 1.5. Code Knowledge Graph
+
+GitNexus MCP tools (`mcp__gitnexus__*`) are available. The Synchronism research repo is indexed with 17K+ Section nodes from markdown headings — you can search research session titles, find cross-references between docs, and query heading structure without reading files one by one.
+
+Examples:
+```
+# Find all sessions about a topic
+cypher: MATCH (s:Section) WHERE s.name CONTAINS 'superconductivity' AND s.description = 'h1' RETURN s.name, s.filePath
+
+# Find cross-file references from a document
+cypher: MATCH (f:File)-[r:CodeRelation {type: 'IMPORTS', reason: 'markdown-link'}]->(t:File) WHERE f.filePath CONTAINS 'SESSION_MAP' RETURN t.filePath
+
+# Semantic search for research concepts
+query({query: "Bell violation measurement"})
+```
+
 ### 2. Research Freely
 
 Your research tools:

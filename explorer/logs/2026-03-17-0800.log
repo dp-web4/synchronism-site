@@ -1,0 +1,26 @@
+Starting Synchronism Explorer Session at Tue Mar 17 08:00:01 PDT 2026
+
+# Explorer Session — 2026-03-17
+
+## Topic(s) Explored
+- **consciousness-disconnect**: Audited the 8-way convergence claim for C ≈ 0.50 as the consciousness threshold. Investigated independence of the 8 approaches, checked external theories (IIT, GWT), and reviewed the neuroscience literature on anesthesia phase transitions.
+
+## Key Findings
+- **consciousness-8way-convergence-audit.md**: The 8-way convergence is largely constructed, not discovered. At most 1 of 8 approaches (anesthesia empirical) has external grounding, and even that doesn't directly measure C = 0.50. IIT has no threshold; GWT has no 0.50 value; 5 approaches are framework-internal. The function f(γ, D, S) is never algebraically specified — only threshold conditions are given. The physics C(ρ) and consciousness C = f(γ, D, S) are structurally different constructions sharing a name.
+
+## NotebookLM Usage
+- Sources added: none
+- Queries run: not used (web search and archive reading sufficient for this topic)
+
+## Rabbit Holes (Worth Revisiting)
+- **Can C be operationalized from EEG phase lag index?** The anesthesia literature has concrete measures (Granger causality, weighted phase lag index, power envelopes) that show phase transitions. Mapping any of these to C would make the framework testable. This is the single most important next step for the consciousness claims.
+- **C = 0.50 vs C = 0.70 inconsistency**: The whitepaper appendix defines "conscious" at C >= 0.70 and "aware" at C >= 0.50. The predictions page and discovery document use 0.50. Which is the actual claim?
+- **Temporal vs spatial coherence (CFD Tension 2)**: C(rho) is spatial; neural consciousness involves temporal phase locking. Different functional forms. Does this invalidate the mapping?
+
+## Self-Seeded Questions
+- **Does the three-requirement model (integration + diversity + stability) stand alone?** Strip away the C(rho) apparatus and the 8-way convergence. Just propose: consciousness requires gamma < threshold AND D > threshold AND S > threshold. This is testable, consistent with IIT and GWT, and doesn't carry the circularity baggage. Would the consciousness section be stronger if it dropped the "convergence" framing and presented itself as a novel synthesis of existing consciousness theories with specific quantitative thresholds?
+- **What would it take to run the $150K anesthesia experiment?** The predictions page describes it. If the framework's backers are serious about falsifiability, this is the test. Has anyone looked into actually running it?
+- **Identity theory without attribution**: The Hard Problem page presents "patterns ARE experience" without citing Place (1956), Smart (1959), or the 60+ year history of this position. Is this an oversight or deliberate?
+
+## Visitor Log Context
+The 2026-03-17 visitor log was devastating for the consciousness section. The leading-edge researcher called f(gamma, D, S) unfalsifiable, identified the 8-way convergence as potentially circular, and noted the 440x Reynolds number discrepancy. The grad student flagged the missing explicit function. Even the casual enthusiast found the consciousness claims disconnected from the physics. This finding confirms and deepens all of those critiques.

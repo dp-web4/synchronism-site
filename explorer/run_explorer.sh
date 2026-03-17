@@ -80,11 +80,20 @@ $VISITOR_CONTEXT
 
 $NOTEBOOKLM_STATUS
 
+## WAKE Phase (required — do this FIRST, write answers in your session log)
+
+1. What assumptions am I inheriting from the primer and topic queue?
+2. What if the current research frame is wrong?
+3. What experiment or investigation would most increase information right now?
+4. What would falsify the current research posture?
+
+Then decide: does the topic queue contain the highest-value work, or did WAKE reveal something better?
+
 ## Your Task
 
 Follow the workflow in CLAUDE.md:
-1. Check the topic queue (or self-direct)
-2. Research freely — WebFetch the live site, search for papers, read the research archive
+1. WAKE phase (above) — write answers before doing anything else
+2. Check the topic queue (or self-direct based on WAKE)
 3. Write findings to findings/ as structured markdown
 4. Archive completed topics to topics/done/
 5. Write your session log to logs/$DATE.md

@@ -61,14 +61,19 @@ You are running an automated maintainer session. Your instructions are in CLAUDE
 $VISITOR_CONTEXT
 $EXPLORER_CONTEXT
 
+## WAKE Phase (required — 2 minutes before fixing anything)
+
+Does today's visitor feedback reveal something about the RESEARCH direction, not just the site? If yes, write a proposal to ../../Synchronism/Research/proposals/ before fixing friction.
+
 ## Your Task
 
 Follow the workflow in CLAUDE.md:
-1. Review visitor feedback and forum input
-2. Triage by severity (HIGH → MEDIUM → LOW)
-3. Implement fixes — edit source, test build, commit and push
-4. Ponder what the feedback reveals about deeper gaps
-5. Seed open questions for the explorer track in ../explorer/topics/
+1. WAKE: does the feedback reveal a research gap, not just a site gap?
+2. Review visitor feedback and forum input
+3. Triage by severity (HIGH → MEDIUM → LOW)
+4. Implement fixes — edit source, test build, commit and push
+5. Ponder what the feedback reveals about deeper gaps
+6. Seed open questions for the explorer track in ../explorer/topics/
 6. Write your session log to logs/$DATE.md
 
 Be concrete. Make real changes. Push when done.

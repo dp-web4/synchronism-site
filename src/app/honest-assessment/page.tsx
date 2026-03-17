@@ -38,12 +38,18 @@ export default function HonestAssessment() {
       <section className="card card-highlight section">
         <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated March 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          After 3,308 sessions + 8 adversarial stress tests: <strong>0 unique confirmed predictions</strong> that
-          can&apos;t be explained by existing physics. One <strong>candidate prediction</strong> (entity criterion
-          &Gamma;&nbsp;&lt;&nbsp;m) found via stress testing &mdash; derivable from oscillation basis, not from QFT,
-          but not yet tested. All other results are either consistent with MOND + mass-to-light corrections,
-          or are reparametrizations of known physics. The framework produced{' '}
-          <strong>30 genuine contributions</strong> as a research tool &mdash; wrong-but-productive.
+          After 3,302 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions</strong>.
+          But &ldquo;unconfirmed&rdquo; &ne; &ldquo;unconfirmable.&rdquo; Several novel predictions exist &mdash;
+          they are unconfirmed because this lab cannot run experiments, and novel predictions mean nobody
+          was specifically looking. This is expected for disruptive research.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          One <strong>candidate prediction</strong> (entity criterion &Gamma;&nbsp;&lt;&nbsp;m) survived all 13 stress
+          tests &mdash; derivable from oscillation basis, not from QFT, consistent with existing data.
+          Additional untested predictions exist for BAO density modulation, environment-dependent RAR scatter,
+          and Lorentz invariance violation from grid geometry &mdash; all testable with existing public data
+          or near-term experiments. The framework produced <strong>47 genuine contributions</strong> across
+          ~3,302 sessions &mdash; wrong theories motivate right questions.
         </p>
       </section>
 

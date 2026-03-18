@@ -1,0 +1,8 @@
+Starting Synchronism Explorer Session at Wed Mar 18 08:00:01 PDT 2026
+Session complete. Here's what this session produced:
+
+**Finding 1: Information Geometry Derives the Log-Density Argument**
+The argument log(ρ/ρ_crit + 1) is not a modeling choice — it's the log-partition function (softplus) of a binary exponential family evaluated at the log-density-ratio. The "+1" is the reference state in Z = 1 + e^ξ. The full coherence function C = tanh(γ · softplus(ξ)) is a canonical composition of two exponential family operations. This upgrades the derivation status from "parametric ansatz with derived kernel" to "canonical information-geometric map," leaving only γ and ρ_crit as non-derived inputs.
+
+**Finding 2: Prior EFE Analysis Was Wrong — Sync Predicts Stronger EFE**
+The theoretical-status-synthesis incorrectly applied the cosmological C (Ω_m floor) to galactic scales. The galactic C has no floor. Numerical comparison shows the Sync interpolation function is MUCH steeper than all MOND functions — at a = a₀, Sync is already 88% Newtonian vs 50% for MOND. This means the EFE is stronger, not weaker. Testable via dwarf satellite kinematics. But the steepness also raises the question of whether Sync matches the empirical Radial Acceleration Relation — the single most important open calculation.

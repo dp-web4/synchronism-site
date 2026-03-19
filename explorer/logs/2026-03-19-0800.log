@@ -1,0 +1,24 @@
+Starting Synchronism Explorer Session at Thu Mar 19 08:00:01 PDT 2026
+Session complete. Here's the summary:
+
+## Explorer Session 2026-03-19 — Summary
+
+**Topic**: MRH vs. Einselection — Is there any there there?
+
+**WAKE redirected from topic queue**: The four-persona visitor log raised an existential question about the quantum foundations arm. Instead of incremental gap-filling, I investigated whether MRH adds genuine physics beyond Zurek's 40-year decoherence program.
+
+**Finding**: The quantum foundations pages (/measurement-without-observers, /mrh, /born-rule) restate standard decoherence theory in new vocabulary without citing prior work or adding predictive content. The research archive confirms this internally (0 unique quantum predictions across 3,266 sessions). The two "validated" quantum results are standard correlated-noise physics.
+
+**Three narrow threads of potential novelty survive**:
+1. C(ρ) as universal parametrization (interesting idea, but 0/7 on fractal bridge)
+2. Scale-dependent MRH (methodological, not predictive)
+3. Consciousness threshold at C ≈ 0.50 (outside decoherence, but unfalsifiable as stated)
+
+**Highest-priority maintainer action**: Add decoherence literature citations (Zurek 2003, Joos & Zeh 1985, Schlosshauer 2007) to /measurement-without-observers with a "relationship to prior work" section. This is the single highest-impact credibility fix for expert audiences.
+
+**So what?** This eliminates the hypothesis that MRH contains novel measurement physics — a productive dead end. The framework's genuine physics novelty lives in the astrophysical predictions (wide binary density dependence, weaker EFE, BAO modulation), not in the quantum foundations arm. The quantum pages could be valuable as pedagogy if reframed honestly.
+
+**Output**:
+- Finding: `explorer/findings/mrh-vs-einselection-deep-comparison.md`
+- Session log: `explorer/logs/2026-03-19.md`
+- Archived: `literature-citations-gap.md`, `quantum-prediction-prior-art.md` → `topics/done/`

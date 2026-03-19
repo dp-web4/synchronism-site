@@ -122,6 +122,30 @@ export default function ResearchPhilosophy() {
           failure documentation, and the testable predictions that remain open.
         </p>
 
+        <h2>Reinterpretation as Research Method</h2>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          The reparametrization pattern is real &mdash; but reinterpretation is not the same as redundancy.
+          Every paradigm shift begins with reinterpretation, not with novel prediction. Copernicus didn&apos;t
+          dismiss Ptolemy&apos;s epicycles &mdash; the planets <em>do</em> trace retrograde loops against the sky.
+          The epicycles accurately described what was observed. The question was: what arrangement would make
+          these loops emerge <em>naturally</em>? The answer (heliocentric orbits with different periods)
+          reproduced the same observations but predicted new things (stellar parallax, Venus phases).
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          Similarly, string theory accurately describes certain observations (particle spectrum, force unification,
+          symmetry patterns). The Synchronism question isn&apos;t &ldquo;are strings wrong?&rdquo; &mdash; it&apos;s
+          &ldquo;what underlying mechanism would make reality <em>appear</em> string-like?&rdquo; If entities are
+          recurring patterns on a discrete substrate, then strings could be resonance channels in the grid,
+          vibration modes could be oscillation patterns, and extra dimensions could be internal degrees of freedom
+          rather than spatial dimensions. The entity criterion (&Gamma;&nbsp;&lt;&nbsp;m) &mdash; the one prediction
+          that survived all 13 stress tests &mdash; would apply to string states too.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          Prediction starts with interpretation. The stress tests stripped away what&apos;s vocabulary. What remains
+          is the question: does this reinterpretation suggest predictions that the original framework doesn&apos;t?
+          That&apos;s the research program.
+        </p>
+
         <h2>Full Research Archive</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Every session, derivation, failure, and dataset is public:

@@ -99,20 +99,15 @@ This applies to all tracks: the visitor should feel invited to think, the mainta
 - Navigation source of truth is `src/lib/navigation.ts`
 
 <!-- gitnexus:start -->
-# GitNexus — Code Knowledge Graph
+## GitNexus — Code Intelligence
 
-Indexed as **synchronism-site** (404 symbols, 704 edges, 3 flows). MCP tools available via `mcp__gitnexus__*`.
+Indexed as **synchronism-site**. Use GitNexus MCP tools for code navigation and impact analysis.
 
-Re-index after significant changes: `node /mnt/c/exe/projects/ai-agents/GitNexus/gitnexus/dist/cli/index.js analyze`
-
-| Tool | Use for |
-|------|---------|
-| `query` | Find execution flows by concept |
-| `context` | 360-degree view of a symbol (callers, callees, processes) |
-| `impact` | Blast radius before editing (upstream/downstream) |
-| `detect_changes` | Map git diff to affected symbols and flows |
-| `rename` | Graph-aware multi-file rename (dry_run first) |
-| `cypher` | Raw Cypher queries against the graph |
-
-Resources: `gitnexus://repo/synchronism-site/context`, `clusters`, `processes`, `process/{name}`
+- Run `gitnexus_impact` before editing any symbol. Warn on HIGH/CRITICAL risk.
+- Run `gitnexus_detect_changes()` before committing.
+- Use `gitnexus_query` to find execution flows, `gitnexus_context` for symbol details.
+- Use `gitnexus_rename` for renames (not find-and-replace). Dry-run first.
+- If index is stale: `npx gitnexus analyze` (add `--embeddings` to preserve them).
+- PostToolUse hook auto-refreshes index after `git commit` and `git merge`.
+- Skill files: `.claude/skills/gitnexus/*/SKILL.md`
 <!-- gitnexus:end -->

@@ -1,0 +1,20 @@
+Starting Synchronism Explorer Session at Fri Mar 20 08:00:01 PDT 2026
+Session complete.
+
+## Explorer Session 2026-03-20 — Summary
+
+**WAKE Decision**: The topic queue was deprioritized. Today's four-persona visitor log — especially the leading-edge researcher's devastating "I cannot identify one prediction that differs from MOND + dimensional analysis" — pointed to a deeper problem than any queued topic addresses.
+
+**What I Found**: The framework uses **three incompatible C functions** across different contexts:
+
+| Formulation | Where | EFE Prediction |
+|---|---|---|
+| C(ρ) = tanh(γ·log(ρ/ρ_crit + 1)) | Site core pages, equations.ts | **Stronger** than MOND |
+| C(a) = Ω_m + (1-Ω_m)·Hill(a/a₀) | Research archive, galaxy fitting | **Weaker** than MOND (~1/3) |
+| g_obs = g_bar/(1−e^{−√(g_bar/a₀)}) | Galaxy rotation page | ≈ MOND (it IS the RAR formula) |
+
+These make **opposite predictions** about the External Field Effect — the framework's most distinctive testable claim. Two prior explorer findings (`efe-numerical-test-results.md` and `efe-interpolation-function-comparison.md`) reached contradictory conclusions because they used different C functions. The site never acknowledges the multiplicity.
+
+**So What**: This isn't a presentation problem — it's a foundational ambiguity. The question "what does Synchronism predict?" has no definite answer for galactic-scale tests until the framework commits to one formulation. This diagnosis, if taken seriously, shifts the research direction from "present the theory better" to "decide what the theory actually is."
+
+**The escape hatch**: The quantum predictions (shared-environment decoherence, Bell freezing/revival) don't depend on this choice. They may be the framework's genuine contributions regardless.

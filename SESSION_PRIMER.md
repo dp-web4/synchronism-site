@@ -52,6 +52,8 @@ The site is a **public dialogue** — it informs the research core, not just the
 - Never force-push to main
 - If merge conflict: resolve, don't discard
 - Vercel auto-deploys on push to main
+- **Do not reindex GitNexus.** The supervisor track handles reindexing. Worker sessions should not call `gitnexus analyze` — it causes conflicts when multiple machines reindex the same repo.
+- **Do not modify AGENTS.md or CLAUDE.md gitnexus blocks.** These are maintained by the supervisor. If the index is stale, report it in SESSION_FOCUS — don't fix it yourself.
 
 ## Resources
 

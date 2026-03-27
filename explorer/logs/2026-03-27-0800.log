@@ -1,1 +1,19 @@
 Starting Synchronism Explorer Session at Fri Mar 27 08:00:01 PDT 2026
+Session complete. Here's the summary:
+
+## Explorer Session 2026-03-27 — Summary
+
+**Topic**: Hill vs Tanh in the Coupling-Coherence Experiment
+
+**The finding**: The coupling-coherence experiment's conclusion that "Hill beats tanh (ΔAIC=4)" was an artifact of a missing baseline parameter. Agents achieve C ≈ 0.34 with zero coupling through independent Bayesian observation. Both 2-parameter models force C(0)=0, and Hill's power-law onset (k=0.60<1) absorbs this mismatch better than tanh's linear onset. With a proper 3-parameter fit including baseline offset:
+
+| Comparison | Winner | ΔAIC |
+|-----------|--------|------|
+| 2-param (original) | Hill | 3.8 |
+| 3-param (corrected) | **tanh** | **17.6** |
+
+**Why it matters**: This overturns a key experiment conclusion and actually **validates** the tanh functional form. The mean-field derivation program (two-state Boltzmann statistics → tanh) is addressing the correct function. The coupling-coherence experiment is now evidence FOR tanh, not against it.
+
+**Bonus finding**: Log-argument models (tanh, Hill) crush linear-argument models (logistic, erf) by ΔAIC > 200. The logarithmic scaling of the effective coupling field is the most robust result from the model comparison.
+
+**Output**: `explorer/findings/hill-vs-tanh-baseline-artifact.md`, session log, topic archived.

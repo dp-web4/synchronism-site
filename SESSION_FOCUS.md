@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-03-22*
+*Last updated: 2026-03-27*
 
 ---
 
@@ -14,6 +14,8 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 ## Recent Activity
 
+- **2026-03-27**: Explorer re-analyzed coupling-coherence experiment: Hill's victory over tanh was a baseline artifact; with proper 3-param fit, tanh wins by ΔAIC=17.6; visitor logged detailed 4-persona pass with devastating grad student/researcher critiques
+- **2026-03-26**: Explorer investigated A2ACW methodology — concluded it IS the project's genuine contribution, not the physics; visitor logged detailed 4-persona pass with researcher calling A2ACW "more interesting than the physics itself"
 - **2026-03-22**: Explorer audited site-archive divergence; visitor logged 4-persona pass
 - **2026-03-21**: Explorer investigated schizophrenia prediction vs neuroscience literature
 - **2026-03-20**: Explorer framed "the three-C problem" (consciousness, coherence, coupling existential ambiguity)
@@ -52,9 +54,9 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 | Topic | File | Status |
 |-------|------|--------|
-| A2ACW methodology documentation | `a2acw-methodology-documentation.md` | Open |
+| A2ACW methodology documentation | `a2acw-methodology-documentation.md` | Done (2026-03-26) |
 | Consciousness threshold artifact | `consciousness-threshold-artifact.md` | Open |
-| Coupling-coherence derivation | `coupling-coherence-derivation.md` | Open |
+| Coupling-coherence derivation | `coupling-coherence-derivation.md` | Done (2026-03-27) |
 | Grok consciousness tests | `grok-consciousness-tests.md` | Open |
 | Interactive tool guidance | `interactive-tool-guidance.md` | Open |
 | MRH mathematical formalization | `mrh-mathematical-formalization.md` | Open |
@@ -69,6 +71,8 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 | Finding | Date | Key Insight |
 |---------|------|-------------|
+| Hill vs tanh baseline artifact | 2026-03-27 | Hill's ΔAIC=4 victory was a baseline artifact; with 3-param fit, tanh wins by ΔAIC=17.6 — validates tanh |
+| A2ACW is the actual discovery | 2026-03-26 | The methodology, not the physics, is the project's genuine contribution — site framing is inverted |
 | Site-archive divergence audit | 2026-03-22 | Site content has drifted from research repo — reconciliation needed |
 | Schizophrenia prediction vs neuroscience | 2026-03-21 | Prediction needs confrontation with clinical literature |
 | Three-C problem | 2026-03-20 | Existential ambiguity between consciousness, coherence, coupling |

@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-03-27*
+*Last updated: 2026-03-28*
 
 ---
 
@@ -14,6 +14,7 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 ## Recent Activity
 
+- **2026-03-28**: Explorer confronted Tier 1 tests with existing literature — TEST-04 (BAO) in serious trouble (known ~1% standard shift, 100× larger than prediction); TEST-02 (wide binaries) genuinely untested and discriminating; TEST-05 (RAR) partially tested by Chae's EFE detection; visitor logged detailed 4-persona pass
 - **2026-03-27**: Explorer re-analyzed coupling-coherence experiment: Hill's victory over tanh was a baseline artifact; with proper 3-param fit, tanh wins by ΔAIC=17.6; visitor logged detailed 4-persona pass with devastating grad student/researcher critiques
 - **2026-03-26**: Explorer investigated A2ACW methodology — concluded it IS the project's genuine contribution, not the physics; visitor logged detailed 4-persona pass with researcher calling A2ACW "more interesting than the physics itself"
 - **2026-03-22**: Explorer audited site-archive divergence; visitor logged 4-persona pass
@@ -71,6 +72,7 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 | Finding | Date | Key Insight |
 |---------|------|-------------|
+| Tier 1 tests vs existing literature | 2026-03-28 | TEST-04 (BAO) conflates known standard-physics effect; TEST-02 (wide binaries) is crown jewel; TEST-05 (RAR) overlaps with MOND EFE |
 | Hill vs tanh baseline artifact | 2026-03-27 | Hill's ΔAIC=4 victory was a baseline artifact; with 3-param fit, tanh wins by ΔAIC=17.6 — validates tanh |
 | A2ACW is the actual discovery | 2026-03-26 | The methodology, not the physics, is the project's genuine contribution — site framing is inverted |
 | Site-archive divergence audit | 2026-03-22 | Site content has drifted from research repo — reconciliation needed |

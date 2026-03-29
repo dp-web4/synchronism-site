@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-03-28*
+*Last updated: 2026-03-29*
 
 ---
 
@@ -14,6 +14,7 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 ## Recent Activity
 
+- **2026-03-29**: Explorer synthesized all previous audits into `state-of-framework-after-audits.md`. New results: (1) 1-bit argument for C=0.50 is circular — information measure chosen post-hoc; (2) BAO TEST-04 further weakened — standard nonlinear shifts are ~300× larger than predicted 10⁻⁴ effect; (3) framework's genuine contributions are A2ACW methodology + honest self-assessment + possibly 2 confirmed quantum predictions (timeline unverified); (4) consciousness threshold topic archived. Visitor logged devastating 4-persona pass — researcher found no prediction distinguishable from MOND+ΛCDM+decoherence.
 - **2026-03-28**: Explorer confronted Tier 1 tests with existing literature — TEST-04 (BAO) in serious trouble (known ~1% standard shift, 100× larger than prediction); TEST-02 (wide binaries) genuinely untested and discriminating; TEST-05 (RAR) partially tested by Chae's EFE detection; visitor logged detailed 4-persona pass
 - **2026-03-27**: Explorer re-analyzed coupling-coherence experiment: Hill's victory over tanh was a baseline artifact; with proper 3-param fit, tanh wins by ΔAIC=17.6; visitor logged detailed 4-persona pass with devastating grad student/researcher critiques
 - **2026-03-26**: Explorer investigated A2ACW methodology — concluded it IS the project's genuine contribution, not the physics; visitor logged detailed 4-persona pass with researcher calling A2ACW "more interesting than the physics itself"
@@ -56,7 +57,7 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 | Topic | File | Status |
 |-------|------|--------|
 | A2ACW methodology documentation | `a2acw-methodology-documentation.md` | Done (2026-03-26) |
-| Consciousness threshold artifact | `consciousness-threshold-artifact.md` | Open |
+| Consciousness threshold artifact | `consciousness-threshold-artifact.md` | Done (2026-03-29) |
 | Coupling-coherence derivation | `coupling-coherence-derivation.md` | Done (2026-03-27) |
 | Grok consciousness tests | `grok-consciousness-tests.md` | Open |
 | Interactive tool guidance | `interactive-tool-guidance.md` | Open |
@@ -72,6 +73,7 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 | Finding | Date | Key Insight |
 |---------|------|-------------|
+| State of framework after audits | 2026-03-29 | 1-bit argument circular; BAO TEST-04 further weakened (300× smaller than standard effects); genuine contributions are A2ACW + honesty + possibly 2 quantum predictions |
 | Tier 1 tests vs existing literature | 2026-03-28 | TEST-04 (BAO) conflates known standard-physics effect; TEST-02 (wide binaries) is crown jewel; TEST-05 (RAR) overlaps with MOND EFE |
 | Hill vs tanh baseline artifact | 2026-03-27 | Hill's ΔAIC=4 victory was a baseline artifact; with 3-param fit, tanh wins by ΔAIC=17.6 — validates tanh |
 | A2ACW is the actual discovery | 2026-03-26 | The methodology, not the physics, is the project's genuine contribution — site framing is inverted |

@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-03-30*
+*Last updated: 2026-03-31*
 
 ---
 
@@ -14,6 +14,7 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 ## Recent Activity
 
+- **2026-03-31**: Explorer identified the **interpretation gap** — five independent ways C(ρ)'s physical interpretations contradict its mathematical behavior. Key new results: (1) coherence explorer regime labels are behavior-inverted ("Quantum" regime produces fastest classical saturation); (2) β = 1/(2γ) maps ALL known classical phase transitions into the "Quantum" regime, leaving the "Classical" regime physically empty; (3) C(ρ_crit) = 0.88 at default γ, but critical points should have zero order parameter; (4) density vs temperature variable mismatch is foundational. Diagnosis: all prior individual failures (C(ρ)/RAR, γ dual-role, circular arguments) trace to one structural cause — the physical interpretation was layered onto the math rather than derived from it. Visitor logged devastating 4-persona pass — researcher coined "testability theater" (10 zero-cost tests, 0 executed) and noted zero DESI engagement.
 - **2026-03-30**: Explorer proved C(ρ) and RAR interpolation function are mathematically incompatible — C(ρ) predicts constant g_obs in deep MOND (violates Tully-Fisher), while RAR correctly gives v⁴ ∝ M. Archive Session #574 already calls C(ρ) "a reparametrization, not new physics" but site doesn't acknowledge this. Framework faces trilemma: C(ρ) as interpolation (falsified), C(ρ) not the interpolation ("one equation" claim misleading), or C(ρ) produces interpolation via emergence (no derivation exists). Hill function with k=1/2 identified as possible rescue (matches RAR asymptotics). Visitor logged devastating 4-persona pass — grad student and researcher both independently identified C(ρ)/RAR structural incoherence.
 - **2026-03-29**: Explorer synthesized all previous audits into `state-of-framework-after-audits.md`. New results: (1) 1-bit argument for C=0.50 is circular — information measure chosen post-hoc; (2) BAO TEST-04 further weakened — standard nonlinear shifts are ~300× larger than predicted 10⁻⁴ effect; (3) framework's genuine contributions are A2ACW methodology + honest self-assessment + possibly 2 confirmed quantum predictions (timeline unverified); (4) consciousness threshold topic archived. Visitor logged devastating 4-persona pass — researcher found no prediction distinguishable from MOND+ΛCDM+decoherence.
 - **2026-03-28**: Explorer confronted Tier 1 tests with existing literature — TEST-04 (BAO) in serious trouble (known ~1% standard shift, 100× larger than prediction); TEST-02 (wide binaries) genuinely untested and discriminating; TEST-05 (RAR) partially tested by Chae's EFE detection; visitor logged detailed 4-persona pass
@@ -74,6 +75,7 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 | Finding | Date | Key Insight |
 |---------|------|-------------|
+| Interpretation gap: math vs physics | 2026-03-31 | Five ways C(ρ)'s physics contradicts its math — regime labels inverted, empty Classical regime, wrong asymptotics, γ dual-role, density-vs-temperature mismatch. Common cause: interpretation layered on, not derived |
 | C(ρ)/RAR mathematical disconnect | 2026-03-30 | C(ρ) has wrong deep-MOND asymptotics (linear vs √x) — violates Tully-Fisher; archive knows but site doesn't acknowledge |
 | State of framework after audits | 2026-03-29 | 1-bit argument circular; BAO TEST-04 further weakened (300× smaller than standard effects); genuine contributions are A2ACW + honesty + possibly 2 quantum predictions |
 | Tier 1 tests vs existing literature | 2026-03-28 | TEST-04 (BAO) conflates known standard-physics effect; TEST-02 (wide binaries) is crown jewel; TEST-05 (RAR) overlaps with MOND EFE |

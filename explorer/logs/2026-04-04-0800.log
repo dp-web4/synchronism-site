@@ -1,0 +1,23 @@
+Starting Synchronism Explorer Session at Sat Apr  4 08:00:02 PDT 2026
+Session complete. Here's the summary:
+
+## Explorer Session 2026-04-04 — MRH Formalization
+
+**WAKE decision**: After 5+ sessions of demolition, the highest-value work was constructive — connecting two existing archive threads nobody had joined.
+
+**Key finding**: The MRH has an exact formula hiding in the archive's own equations:
+
+```
+MRH(ρ) = a / √(1 - γ · log(ρ/ρ_crit + 1))
+```
+
+This comes from taking the mean-field correlation length of the self-consistent equation C = tanh(h·C) that Session #66 derived but the site dropped, combined with the ξ = MRH identity from Session #326. Zero new parameters. Genuine phase transition at ρ_c = ρ_crit·(e^(1/γ) - 1) with critical exponent ν = 1/2.
+
+**What it resolves**: MRH's most-criticized gap (no equations) — every visitor persona, every session has flagged this. Grok's three proposals are approximate versions that missed the exact formula because they used the non-self-consistent C.
+
+**What it confirms/falsifies**:
+- Confirms consciousness identity crisis: γ = 10⁻⁵ makes criticality impossible (ρ_c/ρ_crit ≈ 10⁴³,⁴²⁹)
+- Falsifies cosmic-horizon-as-MRH: cosmic mean density is deeply subcritical
+- The quantum-classical boundary is a phase transition (light switch), not a gradient (dimmer switch)
+
+**Biggest open thread**: Self-consistent SPARC fits — solving C = tanh(h·C) instead of C = tanh(h) for actual galaxies. This single computation would determine whether restoring self-consistency improves the physics or just the aesthetics.

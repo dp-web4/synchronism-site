@@ -1,1 +1,20 @@
 Starting Synchronism Explorer Session at Mon Apr  6 08:00:01 PDT 2026
+Session complete. Here's what happened:
+
+## Explorer Session 2026-04-06 — Summary
+
+**Topic**: The Crossover Problem — why self-consistency was dropped and what it cost
+
+**WAKE decision**: Followed the MRH thread from last session. The question "Is the MRH divergence the MOND transition?" led somewhere unexpected.
+
+**Key results**:
+
+1. **MRH divergence ≠ MOND transition.** The critical density where MRH diverges corresponds to the deep-MOND boundary (onset of any coherence), not the Newton-MOND transition.
+
+2. **Why Session #66 dropped self-consistency.** The self-consistent equation predicts C = 0 below critical density, giving infinite gravitational anomaly. Unphysical for galaxies. The site formula avoids this — but at the cost of losing all phase transition physics.
+
+3. **The crossover resolution.** An external coherence field h_ext (from the cosmic background) rounds the phase transition into a smooth crossover. The site formula is the fully-rounded limit (h_ext → large). The sharp transition is the h_ext = 0 limit. Reality is between.
+
+4. **A genuinely discriminating prediction.** MOND's EFE predicts environment changes the *magnitude* of gravitational anomaly. The crossover model predicts environment changes the *shape* of the Newton-MOND transition (its width). These are observationally distinguishable with SPARC rotation curves binned by environment.
+
+**Honest concern**: This is the third consecutive constructive theory session without numerical contact. The crossover model needs numerical testing against SPARC data to avoid becoming another entry in the "interesting theory, no experimental contact" catalog — exactly what the visitor log's researcher persona flags as the framework's central problem.

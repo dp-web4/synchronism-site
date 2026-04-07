@@ -1,1 +1,15 @@
 Starting Synchronism Explorer Session at Tue Apr  7 08:00:02 PDT 2026
+Session complete. Here's the summary:
+
+## Explorer Session 2026-04-07 — Results
+
+Three significant findings today:
+
+**1. NOVEL-8/9 are post-dictions (critical).** The two "possibly confirmed" quantum predictions — shared-environment decoherence protection and Bell nonlocality revival — were derived in Sessions #232-235 (January 2026), months AFTER the papers they match were published (May 2024, August 2025). Session #234 explicitly calls this "Literature Validation." The framework has **zero confirmed novel predictions**. The honest assessment is exactly correct.
+
+**2. Crossover prediction survives the M/L degeneracy check.** In RAR space, interpolation function sharpness is independent of mass-to-light ratio — they're separate degrees of freedom. Li & McGaugh (2018) held transition shape fixed; nobody has tested whether it varies with environment. The 0.057 dex residual scatter could contain an undetected signal.
+
+**3. Concrete test protocol for NOVEL-11.** The crossover model's prediction maps directly onto the MOND literature's δ-family of interpolation functions (Desmond et al. 2024). The test: fit SPARC galaxies with variable δ, check if δ anti-correlates with Chae's environment density parameter e_N. Zero cost. Existing data. Nobody has run it. This is now the framework's highest-priority testable prediction.
+
+Finding: `explorer/findings/updated-predictions-ledger-post-crossover.md`
+Topic archived: `novel-predictions-page.md` → `topics/done/`

@@ -1,1 +1,27 @@
 Starting Synchronism Explorer Session at Wed Apr  8 08:00:01 PDT 2026
+Session complete. Here's the summary:
+
+---
+
+## Explorer Session 2026-04-08 — Questions-First Tone Audit
+
+**WAKE decision**: After 40+ critical audit findings over the past month, the highest-value work isn't more criticism — it's asking the constructive question: does the site's "questions first" culture actually show up in its content?
+
+**Key finding**: The site has two voices.
+
+- **Voice A (inquiry)** — Honest Assessment, Key Claims, What Synchronism Is Not, Quantum Predictions. Kill criteria, acknowledged failures, invitations to scrutinize. This is the site's stated culture.
+
+- **Voice B (textbook)** — Coherence Function, Core Idea, Consciousness Threshold, Parameter Derivations. Authoritative claims, no open questions at end, reads as settled science.
+
+The problem: visitors encounter Voice B first (the teaching pages) and form an impression of confident claims. Voice A (the meta-pages) comes later — if at all. The site's best quality (its honesty) is structurally hidden from most readers.
+
+**Worst offender**: The Coherence Function page says "tanh is the unique sigmoid... not a choice; it's a consequence of the physics" — which the site's own research sessions have shown is false.
+
+**Structural gaps identified**:
+- `/open-questions` is 404 — no page for what the site genuinely doesn't know yet
+- Entity criterion Γ < m (called "strongest candidate for novelty") has no dedicated page
+- Badge taxonomy inconsistent: 7 types on Honest Assessment, 6 on Research Philosophy
+
+**The deeper point**: The fix isn't just adding closing questions to pages. It's recognizing that the teaching pages should be invitations, not textbooks. "Here's what we're proposing and here's what would break it" is more credible than "here's what we found."
+
+Finding written to `explorer/findings/questions-first-tone-audit.md`. Topic archived.

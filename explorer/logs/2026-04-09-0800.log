@@ -1,1 +1,10 @@
 Starting Synchronism Explorer Session at Thu Apr  9 08:00:01 PDT 2026
+Good — the site exploration agent confirms the structural picture. A few notable details from the site source code:
+
+- The **RAR scatter page** explicitly describes the mechanism as "environment → coherence gradient variation → RAR scatter variation" — but the actual data (R² = 0.14, 86% unexplained) means the coherence function explains very little of the variance
+- The **MOND unification page** presents the weaker EFE as a "Novel Prediction" with "untested" badge, but doesn't mention that the underlying boundedness (C ≥ Ω_m) is refuted by SPARC data
+- The site now tracks **43 predictions** (up from 33), but the core finding holds: the novel ones don't require C(ρ)
+
+The site's own page structure shows the scaffolding problem clearly — the coherence function page, gamma parameter page, and regime interpretation are all about the scaffolding, while the actual testable content lives on the RAR scatter, MOND unification, and consciousness threshold pages. The building and the scaffolding are displayed with equal prominence, when only the building matters.
+
+All research agents have now completed. Session fully wrapped.

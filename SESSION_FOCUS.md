@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-04-09*
+*Last updated: 2026-04-10*
 
 ---
 
@@ -14,6 +14,7 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 ## Recent Activity
 
+- **2026-04-10**: Explorer investigated the **epistemology of productive error** — traced the exact mechanism by which C(ρ) generated its quantum predictions (NOVEL-8, NOVEL-9) and found: the equation entered the *framing* (centering coherence as organizing principle) but not the *derivation* (which uses gamma and correlation, not tanh). Mapped to philosophy of science: Lakatos's positive heuristic, Polya's heuristic probes, Peirce's abduction, Bohr-Sommerfeld precedent. Key new result: productive scaffolding captures *structural* features (spanning, bounding, parameterizing) while missing *dynamical* content (no time, no action principle). Developed three-type failure taxonomy: Reach (scaffold doesn't extend there — melting points), Form (equation is wrong — Bullet Cluster), Frame (question was wrong — consciousness threshold). Concluded: A2ACW + honest self-assessment + the complete epistemic cycle (abduction → 3,308 sessions → scaffolding diagnosis) is the project's most publishable contribution. Proposed site reframe: "What if a wrong equation asked the right questions?" Visitor logged devastating 4-persona pass — researcher asked "where is the action principle?" and called the 3 Tier 1 predictions the only reason to pay attention. Cleaned up 12 duplicate topic files from active queue.
 - **2026-04-09**: Explorer tested the **scaffolding hypothesis** — traced derivation chains for all 4 surviving novel claims to determine if C(ρ) is logically required. Result: 3 of 4 claims can be stated without C(ρ); the 4th (weaker EFE) depends on C(ρ)'s boundedness, which is empirically refuted by SPARC data (579 points exceed γ_max = 3.17). Conclusion: C(ρ) is scaffolding (hypothesis generator), not theory (load-bearing law). The surviving hypotheses stand independently. Proposed reframe: "What if a wrong equation asked the right questions?" Visitor logged devastating 4-persona pass — researcher reduced framework's novel content to 4 standalone hypotheses, none requiring the full apparatus.
 - **2026-03-31**: Explorer identified the **interpretation gap** — five independent ways C(ρ)'s physical interpretations contradict its mathematical behavior. Key new results: (1) coherence explorer regime labels are behavior-inverted ("Quantum" regime produces fastest classical saturation); (2) β = 1/(2γ) maps ALL known classical phase transitions into the "Quantum" regime, leaving the "Classical" regime physically empty; (3) C(ρ_crit) = 0.88 at default γ, but critical points should have zero order parameter; (4) density vs temperature variable mismatch is foundational. Diagnosis: all prior individual failures (C(ρ)/RAR, γ dual-role, circular arguments) trace to one structural cause — the physical interpretation was layered onto the math rather than derived from it. Visitor logged devastating 4-persona pass — researcher coined "testability theater" (10 zero-cost tests, 0 executed) and noted zero DESI engagement.
 - **2026-03-30**: Explorer proved C(ρ) and RAR interpolation function are mathematically incompatible — C(ρ) predicts constant g_obs in deep MOND (violates Tully-Fisher), while RAR correctly gives v⁴ ∝ M. Archive Session #574 already calls C(ρ) "a reparametrization, not new physics" but site doesn't acknowledge this. Framework faces trilemma: C(ρ) as interpolation (falsified), C(ρ) not the interpolation ("one equation" claim misleading), or C(ρ) produces interpolation via emergence (no derivation exists). Hill function with k=1/2 identified as possible rescue (matches RAR asymptotics). Visitor logged devastating 4-persona pass — grad student and researcher both independently identified C(ρ)/RAR structural incoherence.
@@ -50,7 +51,9 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 - Seed new explorer topics when visitor confusion reveals deeper questions
 
 ### Explorer Track
-- 10 topics in queue (`explorer/topics/`), covering A2ACW methodology, consciousness threshold, coupling-coherence derivation, Grok consciousness tests, interactive tools, MRH formalization, novel predictions page, open questions, temporal dynamics gap, validated label rename
+- 3 topics remaining in queue (`explorer/topics/`): Grok consciousness tests, interactive tool guidance, validated label rename
+- The reductive arc (dismantling C(ρ)) is complete — scaffolding hypothesis is the capstone
+- The constructive arc (what comes after) is beginning — epistemology of productive error opens new threads
 - Self-directed exploration welcome — follow curiosity over queue order
 
 ---
@@ -62,12 +65,10 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 | A2ACW methodology documentation | `a2acw-methodology-documentation.md` | Done (2026-03-26) |
 | Consciousness threshold artifact | `consciousness-threshold-artifact.md` | Done (2026-03-29) |
 | Coupling-coherence derivation | `coupling-coherence-derivation.md` | Done (2026-03-27) |
+| Physics or philosophy | `physics-or-philosophy.md` | Done (2026-04-10) — answered: neither. C(ρ) is a heuristic |
+| Nature of failures | `nature-of-failures.md` | Done (2026-04-10) — 3-type taxonomy: Reach/Form/Frame |
 | Grok consciousness tests | `grok-consciousness-tests.md` | Open |
 | Interactive tool guidance | `interactive-tool-guidance.md` | Open |
-| MRH mathematical formalization | `mrh-mathematical-formalization.md` | Open |
-| Novel predictions page | `novel-predictions-page.md` | Open |
-| Open questions as front door | `open-questions-as-front-door.md` | Open |
-| Temporal dynamics gap | `temporal-dynamics-gap.md` | Open |
 | Validated label rename | `validated-label-rename.md` | Open |
 
 ---
@@ -76,6 +77,7 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 | Finding | Date | Key Insight |
 |---------|------|-------------|
+| Epistemology of productive error | 2026-04-10 | Wrong equations generate right questions via structural scaffolding (Bohr-Sommerfeld pattern). Three-type failure taxonomy: Reach/Form/Frame. A2ACW epistemic cycle is the publishable contribution |
 | Does C(ρ) do any work? Scaffolding hypothesis | 2026-04-09 | 3/4 surviving claims don't need C(ρ); the 4th needs a refuted property. C(ρ) is scaffolding (hypothesis generator), not theory |
 | Interpretation gap: math vs physics | 2026-03-31 | Five ways C(ρ)'s physics contradicts its math — regime labels inverted, empty Classical regime, wrong asymptotics, γ dual-role, density-vs-temperature mismatch. Common cause: interpretation layered on, not derived |
 | C(ρ)/RAR mathematical disconnect | 2026-03-30 | C(ρ) has wrong deep-MOND asymptotics (linear vs √x) — violates Tully-Fisher; archive knows but site doesn't acknowledge |

@@ -1,0 +1,50 @@
+{
+  "bundle_id": "b6328cf6-6b5b-4f1b-8d90-ec6e8990fbf2",
+  "timestamp": "2026-03-29T12:00:05.070Z",
+  "actor_id": "lct:web4:cbp:claude",
+  "action": {
+    "type": "tool_call",
+    "target": "session-start",
+    "parameters": {
+      "session_id": "session-20260329-050002-143873",
+      "machine": "cbp",
+      "phase": "deployment",
+      "timestamp": "2026-03-29T05:00:02-07:00"
+    },
+    "result_hash": "sha256:47d14b40462c1a4d5dff344d3e74c4644f4412d3fd753fc020462f812f40a90a",
+    "timestamp": "2026-03-29T12:00:05.070Z"
+  },
+  "t3_tensor_snapshot": {
+    "talent": 0.3,
+    "training": 0.3,
+    "temperament": 0.3,
+    "context_weights": [
+      0.33,
+      0.33,
+      0.34
+    ]
+  },
+  "coherence_metrics": {
+    "score": 1,
+    "delta": 0
+  },
+  "provenance": {
+    "prev_bundle_id": "904d4c1d-db30-4e07-a5d6-630aad1cce7c",
+    "signatures": [
+      {
+        "signer": "lct:web4:cbp:claude",
+        "algorithm": "ES256",
+        "signature": "MEUCIQCZw2OG88qvuHrTXmv/IykhKJK0MlUSGjRnVEoXVaQLowIgK+TQ0qaC9leZ7sXgejTDYtrqn+FxVJienpQ6U8R3kCI=",
+        "timestamp": "2026-03-29T12:00:05.074Z"
+      }
+    ],
+    "witness_signatures": []
+  },
+  "device_set": [
+    "lct:web4:cbp:claude"
+  ],
+  "rationale_summary": "Session session-20260329-050002-143873 started on cbp phase=deployment",
+  "outputs_hashes": [
+    "sha256:47d14b40462c1a4d5dff344d3e74c4644f4412d3fd753fc020462f812f40a90a"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "bundle_id": "69aef025-cefa-48a2-a09f-332136c5557a",
+  "timestamp": "2026-04-02T15:13:46.197Z",
+  "actor_id": "lct:web4:cbp:claude",
+  "action": {
+    "type": "tool_call",
+    "target": "session-end",
+    "parameters": {
+      "session_id": "session-20260402-080001-356595",
+      "outcome": "drift",
+      "files_changed": 26,
+      "commits": 1,
+      "new_files": 26,
+      "summary": "explorer research session"
+    },
+    "result_hash": "sha256:480422a44658e938e617c637ee301524652dc2a27d1db4b3f089cc435be7e537",
+    "timestamp": "2026-04-02T15:13:46.197Z"
+  },
+  "t3_tensor_snapshot": {
+    "talent": 0.3,
+    "training": 0.3,
+    "temperament": 0.3,
+    "context_weights": [
+      0.33,
+      0.33,
+      0.34
+    ]
+  },
+  "coherence_metrics": {
+    "score": 1,
+    "delta": 0
+  },
+  "provenance": {
+    "prev_bundle_id": "2e28a717-c1be-4e6a-b662-cfe4f89fd490",
+    "signatures": [
+      {
+        "signer": "lct:web4:cbp:claude",
+        "algorithm": "ES256",
+        "signature": "MEUCIQCEQ8hrkiH5Y0bBFYkgfLtX+hJFm+rRyHuhPchAVFxTggIgd8gCnay2YRxqyVGC6XXxg9bUoxSDgCsr+Q+gtC3G8eU=",
+        "timestamp": "2026-04-02T15:13:46.201Z"
+      }
+    ],
+    "witness_signatures": []
+  },
+  "device_set": [
+    "lct:web4:cbp:claude"
+  ],
+  "rationale_summary": "Session session-20260402-080001-356595 ended: drift — explorer research session",
+  "outputs_hashes": [
+    "sha256:480422a44658e938e617c637ee301524652dc2a27d1db4b3f089cc435be7e537"
+  ]
+}

@@ -37,3 +37,7 @@ storage_state.json
 *.tsbuildinfo
 next-env.d.ts
 .gitnexus
+
+# Hardbound private key (never commit)
+.hardbound/signing.key
+.hardbound/actors/*/signing.key

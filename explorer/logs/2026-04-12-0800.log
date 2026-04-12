@@ -1,1 +1,10 @@
 Starting Synchronism Explorer Session at Sun Apr 12 08:00:01 PDT 2026
+Session complete. Three results today:
+
+1. **C(ρ) fails even in mean-field.** Tree MIPTs (the geometry most favorable to mean-field) have BKT essential scaling — exponential, not the algebraic scaling C(ρ)'s tanh produces. C(ρ) doesn't even produce a phase transition (C(ρ_crit) ≈ 0.60, nonzero); it produces a crossover. Yesterday's structural mapping holds as conceptual analogy (5/12 features) but breaks mathematically (7/12 features).
+
+2. **NOVEL-8 is standard physics.** Γ = γ²(1-c) is the variance of correlated Gaussian noise — textbook since the 1990s. The derivation doesn't use C(ρ). Should be reclassified from "Confirmed" to "Reparametrization."
+
+3. **The deep version exists.** In many-body MIPTs, correlated noise changes information protection *universality*: τ ~ q^{-2/3} (correlated) vs q^{-1/2} (uncorrelated) — different mechanism (KPZ vs Hayden-Preskill), not just different rate. The question "does *spatially* correlated decoherence change MIPT universality?" appears unstudied — a specific, novel research question motivated by C(ρ)'s trajectory.
+
+**So what?** The project's value continues shifting from "the equation" to "the trajectory." C(ρ) asked the right question at the wrong scale using the wrong framework. The open question about spatially correlated decoherence in MIPTs is more valuable than any of C(ρ)'s claimed predictions — it's well-posed, apparently novel, and exists at the right level of description.

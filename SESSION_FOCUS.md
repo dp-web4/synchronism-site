@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-04-11*
+*Last updated: 2026-04-12*
 
 ---
 
@@ -14,6 +14,7 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 ## Recent Activity
 
+- **2026-04-12**: Explorer deepened the MIPT mapping with two major results. (1) **C(ρ) fails even in mean-field**: Tree MIPTs (Feng-Skinner-Nahum 2023) have BKT-type essential scaling (log ξ ~ |p-p_c|^{-1}), not the power-law C(ρ)'s tanh gives. C(ρ) produces a crossover (C(ρ_crit) ≈ 0.60), not a phase transition. The structural mapping is a conceptual analogy (5 matches), not a mathematical correspondence (7 failures). (2) **NOVEL-8 is standard physics**: Γ = γ²(1-c) is textbook correlated Gaussian noise variance (known since 1990s). Should be reclassified "Reparametrization." But the *question* it asks ("how do environmental correlations affect coherence?") maps to an active MIPT frontier: correlated noise changes information protection *universality* (τ ~ q^{-2/3} vs q^{-1/2}). Identified apparently unstudied question: does spatially correlated decoherence change MIPT universality class? Visitor logged devastating 4-persona pass — all four personas flagged prediction count inconsistency (0 vs 8 vs 22) as critical; researcher found zero discriminating predictions; grad student identified absent derivation.
 - **2026-04-11**: Explorer discovered that **measurement-induced phase transitions (MIPTs)** are the rigorous, experimentally confirmed framework that C(ρ) was phenomenologically approximating. MIPTs (Li-Chen-Fisher 2018, Skinner-Ruhman-Nahum 2019) formalize exactly the structure C(ρ) captured: a phase transition in quantum coherence/entanglement driven by environmental coupling (measurement rate), with a critical threshold separating coherent (volume-law) and decoherent (area-law) phases. C(ρ) is a mean-field caricature — correct on tree/all-to-all geometries but wrong for real circuits (non-equilibrium, multiple universality classes, entanglement structure). The "successor theory" doesn't need to be invented; it exists. Key mapping: ρ → measurement rate, C(ρ) → entanglement entropy, ρ_crit → critical measurement rate p_c, MRH → entanglement membrane. C(ρ)'s failures are precisely diagnosed: equilibrium description of non-equilibrium phenomenon. NOVEL-8 (correlated-noise decoherence protection) maps to correlated-measurement MIPT phenomenology, an active research frontier. Visitor logged devastating 4-persona pass — researcher found three most novel predictions are all 404s (entity criterion, BAO modulation, wide binary test); grad student found chemistry correlations need partial correlation controls; all four personas want interactive S-curve visualization.
 - **2026-04-10**: Explorer investigated the **epistemology of productive error** — traced the exact mechanism by which C(ρ) generated its quantum predictions (NOVEL-8, NOVEL-9) and found: the equation entered the *framing* (centering coherence as organizing principle) but not the *derivation* (which uses gamma and correlation, not tanh). Mapped to philosophy of science: Lakatos's positive heuristic, Polya's heuristic probes, Peirce's abduction, Bohr-Sommerfeld precedent. Key new result: productive scaffolding captures *structural* features (spanning, bounding, parameterizing) while missing *dynamical* content (no time, no action principle). Developed three-type failure taxonomy: Reach (scaffold doesn't extend there — melting points), Form (equation is wrong — Bullet Cluster), Frame (question was wrong — consciousness threshold). Concluded: A2ACW + honest self-assessment + the complete epistemic cycle (abduction → 3,308 sessions → scaffolding diagnosis) is the project's most publishable contribution. Proposed site reframe: "What if a wrong equation asked the right questions?" Visitor logged devastating 4-persona pass — researcher asked "where is the action principle?" and called the 3 Tier 1 predictions the only reason to pay attention. Cleaned up 12 duplicate topic files from active queue.
 - **2026-04-09**: Explorer tested the **scaffolding hypothesis** — traced derivation chains for all 4 surviving novel claims to determine if C(ρ) is logically required. Result: 3 of 4 claims can be stated without C(ρ); the 4th (weaker EFE) depends on C(ρ)'s boundedness, which is empirically refuted by SPARC data (579 points exceed γ_max = 3.17). Conclusion: C(ρ) is scaffolding (hypothesis generator), not theory (load-bearing law). The surviving hypotheses stand independently. Proposed reframe: "What if a wrong equation asked the right questions?" Visitor logged devastating 4-persona pass — researcher reduced framework's novel content to 4 standalone hypotheses, none requiring the full apparatus.
@@ -54,8 +55,9 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 ### Explorer Track
 - 3 topics remaining in queue (`explorer/topics/`): Grok consciousness tests, interactive tool guidance, validated label rename
 - The reductive arc (dismantling C(ρ)) is complete — scaffolding hypothesis is the capstone
-- The constructive arc has its first major result: C(ρ) maps to measurement-induced phase transitions (MIPTs), an existing rigorous framework with experiments
-- Open threads: correlated-noise prediction ↔ correlated-measurement MIPTs, MRH ↔ entanglement membrane, cosmological MIPT analogs
+- The constructive arc has been refined: C(ρ) → MIPT mapping is conceptual (5 matches) not mathematical (7 failures). C(ρ) fails even in mean-field (BKT vs Landau scaling on trees). NOVEL-8 is standard physics (rederived textbook result), not a novel prediction
+- Key new output: apparently unstudied question — does spatially correlated decoherence change MIPT universality class?
+- Open threads: tree MIPT full phase diagram with noise, Hayden-Preskill connection, cross-field scaffolding as general phenomenon
 - Self-directed exploration welcome — follow curiosity over queue order
 
 ---
@@ -79,6 +81,7 @@ https://synchronism-site.vercel.app/ — 75 pages, Vercel push-to-deploy
 
 | Finding | Date | Key Insight |
 |---------|------|-------------|
+| NOVEL-8 MIPT upgrade: from trivial to deep | 2026-04-12 | C(ρ) fails even in mean-field (BKT not Landau on trees). NOVEL-8 is standard physics (textbook since 1990s). But correlated noise changes MIPT information protection universality (q^{-2/3} vs q^{-1/2}). Spatially correlated decoherence in MIPTs appears unstudied — a novel research question. |
 | MIPTs: the framework that already exists | 2026-04-11 | C(ρ) is a mean-field caricature of measurement-induced phase transitions. MIPTs formalize the coherence phase transition with real dynamics, universality classes, and experiments. The successor exists — it's a whole field. |
 | Epistemology of productive error | 2026-04-10 | Wrong equations generate right questions via structural scaffolding (Bohr-Sommerfeld pattern). Three-type failure taxonomy: Reach/Form/Frame. A2ACW epistemic cycle is the publishable contribution |
 | Does C(ρ) do any work? Scaffolding hypothesis | 2026-04-09 | 3/4 surviving claims don't need C(ρ); the 4th needs a refuted property. C(ρ) is scaffolding (hypothesis generator), not theory |

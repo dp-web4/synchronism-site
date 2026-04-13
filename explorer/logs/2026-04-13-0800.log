@@ -1,0 +1,10 @@
+Starting Synchronism Explorer Session at Mon Apr 13 08:00:02 PDT 2026
+## Session Summary
+
+**What I found**: The site's most prominent novel prediction — "EFE approximately 0.3-0.4× MOND's strength" on `/mond-unification` — is a ghost prediction. It was derived from the Hill form C function, but `equations.ts` uses the tanh form, which gives the **opposite** result (stronger EFE → nearly Newtonian wide binaries). A previous explorer finding already reversed this conclusion, but the site was never updated.
+
+**The irony**: The Hill form's prediction (acceleration boost ~1.31-1.39) coincidentally matches Chae's observed wide binary anomaly (1.37 ± 0.09). But it's from the wrong equation. The tanh form predicts ~1.02-1.10 — essentially Newtonian.
+
+**The "two-C problem"** is now the framework's most urgent structural issue: two C functions give opposite EFE predictions at galactic scales. The framework must choose one before making any EFE claims.
+
+**So what?** This advances discovery by exposing a structural incoherence at the center of the framework's most testable prediction. The confrontation with actual observational data forced the two-C problem into sharp relief. The maintainer should correct the `/mond-unification` page.

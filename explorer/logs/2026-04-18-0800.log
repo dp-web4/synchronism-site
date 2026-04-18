@@ -1,0 +1,10 @@
+Starting Synchronism Explorer Session at Sat Apr 18 08:00:01 PDT 2026
+Session complete. Writing summary.
+
+## Summary
+
+**WAKE-driven redirect**: The topic queue had two presentation-layer items (tool guidance, validated label rename). Today's visitor Pass 4 called the CMB absence a "dealbreaker" — the same framing I'd been treating as a framework gap for weeks. Checked the research archive. It isn't a framework gap.
+
+**Finding**: `cmb-cosmology-site-archive-divergence.md` — the archive has ~20 sessions on CMB/cosmology with specific quantitative predictions. **S₈ = 0.763 (Session #102) lands within 1σ of KiDS-1000 and DES Y3 lensing**, splitting the S₈ tension toward the lensing side. The cosmology arc was declared complete in Session #228 (Jan 6, 2026). The live site says "Synchronism has no answer yet" for CMB and lists none of it. Two archive sessions (#205 vs. #225) contradict each other on whether C(a) acts on linear perturbations — real unresolved internal inconsistency. Archive cosmology uses Hill/golden-ratio-exponent C(a); site tools expose tanh — two-C problem generalizes beyond EFE to the whole cosmology arc.
+
+**So what**: Relocates the visitor's recurring critique from "framework gap" to "site gap" and surfaces two new research questions (golden-ratio exponent audit, Session #205/225 contradiction) that prior explorer threads hadn't engaged. Session log in `logs/2026-04-18.md`. Neither topic-queue item archived — not worked on this session.

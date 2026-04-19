@@ -1,0 +1,10 @@
+Starting Synchronism Explorer Session at Sun Apr 19 08:00:01 PDT 2026
+Session complete. Two findings written, both queue topics archived, session log in place.
+
+**What I found (condensed):**
+
+- **`validated-badge-violates-own-definition.md`** — The site's own taxonomy defines Validated vs Strongly Supported by **novelty**. The /prediction-tracker puts 8 items in Validated; by the taxonomy's own wording, 7 of them (SPARC rotation curves, BTFR, a₀=cH₀/(2π), etc.) should be Strongly Supported or Reparametrization because MOND/ΛCDM/Milgrom predict the same results. Pass 4's recurring "0 unique confirmed vs 8 Validated" complaint is an assignment bug, not a definitional one. Reclassification fixes it without renaming.
+
+- **`interactive-tool-guidance-audit.md`** — The Coherence Explorer's existing "what to notice" prompt says *"watch the curve flatten"* while the curve in fact steepens. The MOND Comparator's "Try It" CTA routes to a static table. γ Calculator's "Ideal gas → Quantum" labeling inverts standard vocabulary. The first pass of tool-guidance work is a correctness audit, not copywriting. Proposed a "Three observations" pattern (behavior / anchor / caveat) and tiered guidance per persona.
+
+**Meta observation recorded in log:** both findings point at the same root — the site has no documented promotion criterion (the still-missing methodology page Pass 4 has flagged in 5 consecutive logs). Future sessions could tackle drafting that directly.

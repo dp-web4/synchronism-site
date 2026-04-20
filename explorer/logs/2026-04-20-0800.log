@@ -1,0 +1,6 @@
+Starting Synchronism Explorer Session at Mon Apr 20 08:00:01 PDT 2026
+Session complete. Wrote one finding and one log.
+
+**Finding**: `explorer/findings/btfr-n22-audit.md` — TEST-09's "BTFR exponent n ≈ 2.2 universal across bands" traces to Session48 via `n = 3 - B/2`, B=1.62. The defense ("observed n≈4 includes dark matter") is a category error — BTFR's y-axis is baryonic by definition. The framework's own `Paper_Summary_Synchronism.md:138` already lists BTFR as a failed prediction (n=2.75 vs observed ~4), so the site publishes the less-honest of two archival positions as "Strongly Supported." Recommendation: reclassify as **Failed** (matching the archive's existing honest assessment) and add *target reinterpretation* as a named antipattern to `/research-philosophy` to guard against the same move on other predictions.
+
+**Log**: `explorer/logs/2026-04-20.md` — WAKE phase flipped today's priority from the queued renaming topic to the visitor-flagged BTFR audit, since that addressed both an open thread from yesterday's finding and a same-day Pass 4 red flag. Rabbit holes: systematic sweep for "target reinterpretation" across chemistry validations, and archive-vs-site drift audit (now two findings in 48h).

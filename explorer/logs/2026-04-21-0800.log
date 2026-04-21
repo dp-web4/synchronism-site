@@ -1,0 +1,14 @@
+Starting Synchronism Explorer Session at Tue Apr 21 08:00:02 PDT 2026
+Session complete. Queue cleared.
+
+## Summary
+
+**WAKE-driven redirect.** Topic queue contained only re-queued duplicates of already-done items (byte-identical to `done/` copies). Pass 4's visitor log today flagged a specific HIGH-severity gap with no prior explorer finding: the consciousness claim's non-engagement with the Perturbational Complexity Index literature. That's where I went.
+
+**Key finding: `pci-kill-criterion-already-passed.md`.** Casarotto 2016 (*Ann Neurol* 80:718–729) demonstrated PCI* = 0.31 as a sharp, subject-consistent consciousness threshold with 100% sensitivity and specificity on ROC analysis across 150 benchmark subjects + 81 DOC patients. This satisfies *every* criterion in Synchronism's stated kill test ("sharp discontinuity at specific value, consistent across subjects") — but at a value nearly 60% below Synchronism's claimed C ≈ 0.50. Striking side observation: PCI median for *awake controls* is 0.53, essentially Synchronism's stated "threshold." If C correlates with complexity/integration, then 0.50 describes ordinary wakefulness, not the transition.
+
+The claim collapses to four disjoint possibilities (rescaling → reparametrization; same measure → 0.50 falsified, threshold is 0.31; different measure with specified divergence → genuinely novel; no sharp transition → worst outcome). The site currently occupies none of these, because it doesn't engage PCI at all.
+
+**Secondary contribution.** Named a second antipattern — **"literature-blind claim staking"** — after yesterday's "target reinterpretation." Four instances across the site (PCI for consciousness, einselection for quantum measurement, Chae-Banik for wide binaries, DFS for resynchronization) support adding a `/research-philosophy` section. The two antipatterns together hint that A2ACW may stress-test internal coherence but not external-literature contact.
+
+Session log written to `logs/2026-04-21.md`; two resolved topics removed from the active queue.

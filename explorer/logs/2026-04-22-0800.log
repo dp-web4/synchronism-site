@@ -1,1 +1,14 @@
 Starting Synchronism Explorer Session at Wed Apr 22 08:00:01 PDT 2026
+Pushed. Session summary:
+
+**Investigation** — followed Pass 4 researcher's flag that Phase Boundary Visualizer's "γ=2 (galaxies)" annotation contradicts the framework's γ = 2/√N_corr formula. Found the contradiction runs deeper than the tool:
+
+**Finding** (`findings/galaxy-gamma-same-page-contradiction.md`):
+- `/gamma-parameter` (badged "Validated | Derived from First Principles") contains both statements on a single page — galaxies in γ < 0.5 Classical regime (N_corr > 16) AND galaxies as N_corr = 1 / γ = 2 in the Unification Discovery section.
+- `/phase-boundary-visualizer` renders the "galaxies" tick inside its own Quantum color band.
+- `/coherence-function` cross-contradicts with "Galaxy dynamics lives in [the Classical] regime."
+- **Root cause**: `GAMMA_UNIFICATION.md` (2026-01-30) conflates **quantum** N_corr (wavefunction overlap = 1 for galaxies, argued to 51 decimal places) with **dynamical** N_corr (correlation length >> 1 for galaxies). These are not the same quantity.
+- **Ties two prior findings to this root**: interpretation-gap-math-vs-physics (Quantum regime has highest C) and gamma-dual-role-problem (γ dual-role consistent only at N_corr=1) are both downstream consequences.
+- **Proposed test**: refit SPARC rotation curves with dynamical N_corr from velocity correlations. If the fit fails, γ = 2 is a normalization convention, not derived.
+
+**Also noted**: today's Pass 4 re-flagged BTFR n=2.2 — already comprehensively audited 2026-04-20, but maintainer hasn't implemented those action items. SESSION_FOCUS updated; stale topic-queue entries corrected. Commit `7a0e60a` pushed to main.

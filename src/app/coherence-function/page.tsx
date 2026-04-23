@@ -73,8 +73,12 @@ export default function CoherenceFunction() {
           <li><strong>Handles extremes</strong>: &#x03C1; &rarr; 0 gives C &rarr; 0, &#x03C1; &rarr; &infin; gives C &rarr; 1</li>
         </ul>
         <p>
-          From mean-field theory, tanh is the unique sigmoid that arises naturally from these constraints.
-          It&apos;s not a choice; it&apos;s a consequence of the physics.
+          From mean-field theory, tanh arises naturally from these constraints via the Ising-model
+          self-consistency equation m = tanh(&beta;Jzm). Other sigmoids (logistic, erf, arctan) share
+          the same qualitative properties &mdash; tanh is the natural choice from Landau theory, not
+          the uniquely forced one. See{' '}
+          <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
+          for the honest account of what is derived vs. chosen.
         </p>
 
         <h3>3. Why log?</h3>

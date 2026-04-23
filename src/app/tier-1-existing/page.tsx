@@ -5,7 +5,18 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
-const tests = [
+type Test = {
+  id: string;
+  name: string;
+  data: string;
+  cost: string;
+  time: string;
+  prediction: string;
+  kill: string;
+  alert?: string;
+};
+
+const tests: Test[] = [
   {
     id: 'TEST-01',
     name: 'SPARC Environment Dependence',
@@ -86,6 +97,7 @@ const tests = [
     time: '3 months',
     prediction: 'BTFR exponent n ≈ 2.2 universal across bands',
     kill: 'Exponent varies by >0.3 across bands',
+    alert: 'Status uncertain: published observations show n = 3.85 ± 0.09 (Lelli, McGaugh & Schombert 2019, ApJ 886:77), not n ≈ 2.2. Kill criterion Δn > 0.3 is already met by the discrepancy between prediction and observation. Either the prediction covers a specific sub-population (in which case it needs to be restated precisely) or this test should be moved to the failure catalog. Under investigation.',
   },
   {
     id: 'TEST-10',
@@ -141,6 +153,11 @@ export default function Tier1Existing() {
               <p style={{ color: '#ef4444', fontSize: '0.85rem' }}>
                 <strong>Kill:</strong> {t.kill}
               </p>
+              {t.alert && (
+                <p style={{ color: '#f59e0b', fontSize: '0.8rem', marginTop: '0.5rem', padding: '0.5rem', background: 'rgba(245,158,11,0.1)', borderRadius: '4px', borderLeft: '3px solid #f59e0b' }}>
+                  <strong>⚠ Status note:</strong> {t.alert}
+                </p>
+              )}
             </div>
           ))}
         </div>

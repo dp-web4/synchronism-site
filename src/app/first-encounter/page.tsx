@@ -68,8 +68,11 @@ export default function FirstEncounter() {
       <Breadcrumbs currentPath="/first-encounter" />
 
       <h1>First Encounter</h1>
-      <p style={{ color: 'var(--color-text-secondary)', marginBottom: '2rem' }}>
-        A 10-minute guided walk through the core ideas. No prerequisites needed.
+      <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+        A guided walk through the core ideas. No prerequisites needed.
+      </p>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '2rem' }}>
+        7 short pages &mdash; ~90 seconds each. Use the progress bar above each card to jump to any step.
       </p>
 
       {/* Progress */}

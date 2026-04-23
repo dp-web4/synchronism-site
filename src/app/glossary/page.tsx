@@ -13,9 +13,14 @@ export default function Glossary() {
       <Breadcrumbs currentPath="/glossary" />
 
       <h1>Glossary</h1>
-      <p style={{ color: 'var(--color-text-secondary)', marginBottom: '2rem' }}>
+      <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
         Key terms used throughout Synchronism. Hover over highlighted terms on any page
         to see these definitions inline.
+      </p>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '2rem' }}>
+        <strong>Validation badges</strong> (Validated / Untested / Failed / Speculative / Reparametrization / Strongly Supported)
+        are defined at the bottom of this page under &ldquo;Validated,&rdquo; &ldquo;Untested,&rdquo; etc.
+        Every badge on every page links back here.
       </p>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>

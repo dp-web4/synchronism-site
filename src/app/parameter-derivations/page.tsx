@@ -57,27 +57,37 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>3. A = 4&#x03C0;/(&#x03B1;&sup2;GR&#x2080;&sup2;) &#x2248; 0.029</h3>
-              <ValidationBadge status="validated" label="5% Error" />
+              <ValidationBadge status="speculative" label="Dimensional Fit" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #66</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Relates fine structure constant, gravitational constant, and characteristic length scale
+              Relates fine structure constant &#x03B1;, gravitational constant G, and characteristic length R&#x2080;
               to the proportionality between critical density and rotation velocity.
-              Empirical: 0.028. Derived: 0.029.
+              Empirical: 0.028. Numerical match: 0.029 (5% agreement).
+            </p>
+            <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              <strong>Open question:</strong> The fine-structure constant &#x03B1; is electromagnetic;
+              no current gravity theory places &#x03B1;&sup2; in a galactic dynamical coupling without explanation.
+              Until a Lagrangian-level mechanism is supplied, this is a numerical coincidence rather than a derivation.
             </p>
           </div>
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>4. a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.08&times;10<sup>&minus;10</sup> m/s&sup2;</h3>
-              <ValidationBadge status="validated" label="10% Error" />
+              <ValidationBadge status="reparametrization" label="Dimensional Analysis" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #87-88</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              MOND&apos;s acceleration constant emerges from the coherence function.
-              In MOND, a&#x2080; is fundamental. In Synchronism, it&apos;s <strong>emergent</strong> from
-              cosmological parameters c and H&#x2080;.
-              Milgrom&apos;s observed: 1.20&times;10<sup>&minus;10</sup>.
+              The MOND acceleration scale a&#x2080; = cH&#x2080;/(2&#x03C0;) follows from Synchronism&apos;s coherence function.
+              Milgrom&apos;s observed: 1.20&times;10<sup>&minus;10</sup> m/s&sup2; (10% error).
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              This dimensional relation a&#x2080; &#x223C; cH&#x2080; has been noted since Milgrom (1983) and
+              independently derived by multiple frameworks (McCulloch 2007, Verlinde 2017, Smolin 2017)
+              with the same geometric factor. The quantities c and H&#x2080; are dimensionally sufficient to
+              produce an acceleration &mdash; cH&#x2080; is not a Synchronism-specific derivation.
+              Classified as dimensional analysis / reparametrization on the honest assessment page.
             </p>
           </div>
 

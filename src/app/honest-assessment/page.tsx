@@ -166,6 +166,21 @@ export default function HonestAssessment() {
               The tanh form is generic (Landau theory). C(&#x03C1;) is description, not explanation.
             </p>
           </div>
+
+          <div className="card">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>BTFR Exponent n &#x2248; 2.2 (TEST-09)</h3>
+              <ValidationBadge status="failed" label="Under Investigation" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              Predicted BTFR exponent n&nbsp;&#x2248;&nbsp;2.2 contradicts published measurements: n&nbsp;=&nbsp;3.85&nbsp;&#x00B1;&nbsp;0.09
+              (Lelli, McGaugh &amp; Schombert 2019, <em>ApJ</em> 886:77) and MOND&apos;s theoretical n&nbsp;=&nbsp;4.
+              The kill criterion (|&#x0394;n|&nbsp;&gt;&nbsp;0.3) is met by the prediction&ndash;observation gap of 1.65.
+              Under investigation: the prediction may target a specific sub-population or sub-exponent,
+              in which case it needs to be restated precisely. If it applies to the full sample, it is a
+              confirmed failure and belongs here.
+            </p>
+          </div>
         </div>
       </section>
 

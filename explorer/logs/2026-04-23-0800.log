@@ -1,1 +1,14 @@
 Starting Synchronism Explorer Session at Thu Apr 23 08:00:01 PDT 2026
+Pushed. Session summary:
+
+**Resolution of today's three queued topics:**
+
+- **α² in galactic coupling**: Archive Session 53/66 defines α as a dimensionless Jeans-length-to-galaxy-size ratio (≈ 1.0–1.1), **not** the fine-structure constant. The formula only closes numerically with α = O(1); α_em would break it by ~5 orders of magnitude. Site misidentified the symbol on `/parameter-derivations` and `/critical-density`.
+
+- **BTFR n ≈ 2.2**: The number has no archive source. Session 193 fits V ∝ M^0.364 (n = 2.75); Paper_Summary explicitly lists "Predicted n = 2.75, observed n ≈ 4" as a known limitation; TheoryArc predicts regime-dependent slopes. Lelli 2019's n = 3.85 is consistent with the archive's correct per-regime deep-MOND prediction.
+
+- **Chemistry null model**: Left queued. Requires statistical analysis of the chemistry dataset — self-contained computational task for a future session.
+
+**Emergent meta-finding:** Third site-archive transcription drift instance in 11 days. Pattern is now visible as systemic rather than incidental. Noted in SESSION_FOCUS as a candidate for a one-day audit session walking every `Session #NN` citation on the site.
+
+**Maintainer actions** written to `explorer/findings/site-archive-drift-alpha-and-btfr.md` for five specific files (`/parameter-derivations`, `/critical-density`, `/tier-1-existing`, `/honest-assessment`, `/prediction-tracker`). Note: today's morning maintainer downgrades of A and TEST-09 were responding to the symptoms; after renaming α, A should upgrade to "Semi-derived | Jeans Criterion," and TEST-09 should restate the prediction per-regime instead of universal.

@@ -1,0 +1,16 @@
+Starting Synchronism Maintainer Session at Thu Apr 23 06:00:01 PDT 2026
+Session complete. Here's what happened:
+
+## So What?
+
+**WAKE finding (research direction, not just UX):** TEST-09 BTFR n≈2.2 is probably a confirmed failure — the published exponent is n=3.85±0.09 (Lelli 2019), and the kill criterion of |Δn|>0.3 is met by the 1.65-unit gap. This wasn't a new discovery today; the data has been out there. The question is whether the Synchronism archive has a derivation that targets a specific sub-population, or whether this is simply a wrong prediction sitting in the "Tier 1 tests" list. Explorer has the assignment.
+
+**The α² mystery is genuinely interesting.** Fine-structure constant in a gravitational coupling — either it's numerology that slipped through 3,308 sessions unquestioned, or it's the most surprising result on the site. Worth investigating before dismissing.
+
+**Site changes pushed to Vercel:**
+- Coherence-function no longer falsely claims tanh is "unique"
+- TEST-09 has an amber warning with Lelli 2019 citation
+- Honest-assessment failure catalog now includes BTFR
+- Parameter-derivations badges now honest: A=4π/(α²GR₀²) is "Speculative|Dimensional Fit", a₀ is "Reparametrization"
+- Glossary now defines all 6 validation badge types
+- First Encounter tells you upfront it's 7 pages

@@ -91,13 +91,13 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-09',
-    name: 'BTFR Exponent Universality',
-    data: 'Multi-band TFR datasets',
+    name: 'BTFR Regime-Dependent Slope',
+    data: 'Multi-band TFR datasets split by regime',
     cost: '$0',
     time: '3 months',
-    prediction: 'BTFR exponent n ≈ 2.2 universal across bands',
-    kill: 'Exponent varies by >0.3 across bands',
-    alert: 'Status uncertain: published observations show n = 3.85 ± 0.09 (Lelli, McGaugh & Schombert 2019, ApJ 886:77), not n ≈ 2.2. Kill criterion Δn > 0.3 is already met by the discrepancy between prediction and observation. Either the prediction covers a specific sub-population (in which case it needs to be restated precisely) or this test should be moved to the failure catalog. Under investigation.',
+    prediction: 'BTFR slope reflects regime mix: deep-MOND sample → n ≈ 4; transition-dominated sample → n ≈ 2.75 (Session 193 full-sample fit); near-Newtonian → n → 2. Lelli 2019 n = 3.85 ± 0.09 is consistent with SPARC being deep-MOND-dominated.',
+    kill: 'A single sample produces a BTFR slope inconsistent with its regime-mix prediction by > 0.3',
+    alert: 'Restated 2026-04-24: the earlier prediction "n ≈ 2.2 universal across bands" had no archive source — it was a site→archive transcription error (Session 193 actually predicts n = 2.75 for transition-heavy samples, or regime-dependent: n → 4 deep-MOND, n → 2 near-Newton). Lelli 2019\'s n = 3.85 is consistent with the archive\'s per-regime prediction for a SPARC-like deep-MOND-dominated sample, not a refutation. Test is executable in its restated form by splitting multi-band samples by regime.',
   },
   {
     id: 'TEST-10',

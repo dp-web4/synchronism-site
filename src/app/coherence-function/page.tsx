@@ -73,12 +73,22 @@ export default function CoherenceFunction() {
           <li><strong>Handles extremes</strong>: &#x03C1; &rarr; 0 gives C &rarr; 0, &#x03C1; &rarr; &infin; gives C &rarr; 1</li>
         </ul>
         <p>
-          From mean-field theory, tanh arises naturally from these constraints via the Ising-model
-          self-consistency equation m = tanh(&beta;Jzm). Other sigmoids (logistic, erf, arctan) share
-          the same qualitative properties &mdash; tanh is the natural choice from Landau theory, not
-          the uniquely forced one. See{' '}
+          From mean-field theory, tanh arises <em>naturally</em> from these constraints — the Ising-model
+          self-consistency equation m = tanh(&beta;Jzm) has the same form. <strong>However, Synchronism&apos;s
+          C(&#x03C1;) is not the Ising equation.</strong> The Ising result is a self-consistency loop where m
+          appears on both sides. C(&#x03C1;) evaluates directly with no feedback loop — &#x03C1; goes in, C
+          comes out. This distinction matters: the tanh shape is <em>motivated</em> by mean-field theory, not
+          derived from it. Any sigmoid satisfying the four constraints above (logistic, erf, arctan, Hill) would
+          have been an equally valid choice. tanh is the most natural choice given the Landau-theory connection,
+          but not the uniquely forced one. See{' '}
           <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
-          for the honest account of what is derived vs. chosen.
+          for the complete derivation vs. motivation distinction.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          <strong>Saturation note:</strong> At &#x03B3; = 2, C(&#x03C1;) saturates within ~1 decade of &#x03C1;<sub>crit</sub>
+          (C(10&#x00B7;&#x03C1;<sub>crit</sub>) &#x2248; 0.9999). The coherence transition is sharp — more like a
+          phase transition than a smooth interpolation. Each system has its own &#x03C1;<sub>crit</sub>, so what is
+          universal is the <em>form</em> of the crossover, not its location.
         </p>
 
         <h3>3. Why log?</h3>

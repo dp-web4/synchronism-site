@@ -13,7 +13,7 @@ const predictions = [
   { domain: 'Cosmology', name: 'a₀ = cH₀/(2π) derivation', status: 'supported' as const },
   { domain: 'Cosmology', name: 'Freeman\'s Law from ρ_crit', status: 'supported' as const },
   { domain: 'Cosmology', name: 'Dwarf galaxy DM dominance', status: 'supported' as const },
-  { domain: 'Cosmology', name: 'BTFR exponent n ≈ 2.2', status: 'supported' as const },
+  { domain: 'Cosmology', name: 'BTFR regime-dependent slope (Session 193)', status: 'untested' as const },
   { domain: 'Cosmology', name: 'Environment-dependent RAR scatter', status: 'supported' as const },
   { domain: 'Cosmology', name: 'BAO coherence modulation (~10⁻⁴)', status: 'untested' as const },
   { domain: 'Cosmology', name: 'Wide binary density dependence', status: 'untested' as const },

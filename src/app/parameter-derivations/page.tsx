@@ -57,18 +57,23 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>3. A = 4&#x03C0;/(&#x03B1;&sup2;GR&#x2080;&sup2;) &#x2248; 0.029</h3>
-              <ValidationBadge status="speculative" label="Dimensional Fit" />
+              <ValidationBadge status="validated" label="Jeans Criterion | 5% Agreement" />
             </div>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #66</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #53, #66</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Relates fine structure constant &#x03B1;, gravitational constant G, and characteristic length R&#x2080;
-              to the proportionality between critical density and rotation velocity.
-              Empirical: 0.028. Numerical match: 0.029 (5% agreement).
+              &#x03B1; = &#x03BB;<sub>Jeans</sub> / R<sub>half</sub> is the dimensionless Jeans-length-to-galaxy-size ratio
+              (Session 53). Empirically &#x03B1; &#x2248; 1.1 &#x00B1; 0.2 across SPARC galaxies;
+              &#x03B1; = 1.0 is the fiducial. From the Jeans criterion (&#x03C1;<sub>crit</sub> = V&#x00B2; / (G&#x03B1;&#x00B2;R<sub>half</sub>&#x00B2;))
+              with R&#x2080; = 8 kpc and the 4&#x03C0; factor from spherical surface-area integration (Session 66),
+              A = 0.0294 vs empirical 0.028 — 5% agreement.
             </p>
             <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              <strong>Open question:</strong> The fine-structure constant &#x03B1; is electromagnetic;
-              no current gravity theory places &#x03B1;&sup2; in a galactic dynamical coupling without explanation.
-              Until a Lagrangian-level mechanism is supplied, this is a numerical coincidence rather than a derivation.
+              <strong>Correction (2026-04-24):</strong> &#x03B1; is <em>not</em> the electromagnetic
+              fine-structure constant (&#x03B1;<sub>em</sub> &#x2248; 1/137). An earlier version of this page
+              made that identification, creating a spurious puzzle (why is &#x03B1;<sub>em</sub>&#x00B2; in galactic
+              dynamics?). The answer is: it isn&apos;t. With &#x03B1;<sub>em</sub>&#x00B2; &#x2248; 5&#x00D7;10<sup>&minus;5</sup>,
+              the formula yields A &#x2248; 550 (km/s)<sup>&minus;2</sup> — 20,000&#x00D7; too large. The formula only
+              closes at 5% with &#x03B1; = O(1), which is the Jeans ratio. No electromagnetic coupling is implied.
             </p>
           </div>
 

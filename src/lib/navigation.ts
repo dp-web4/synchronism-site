@@ -80,6 +80,13 @@ export const navigationTree: NavigationTree = {
 
   'Core Theory': [
     {
+      title: 'Presence (ρ)',
+      href: '/presence',
+      desc: 'ρ: compatible structural elements within the MRH — the universal input',
+      keywords: ['presence', 'density', 'rho', 'input', 'compatible', 'MRH', 'structural'],
+      related: ['/coherence-function', '/mrh', '/critical-density'],
+    },
+    {
       title: 'The Coherence Function',
       href: '/coherence-function',
       desc: 'C(\u03C1) = tanh(\u03B3 log(\u03C1/\u03C1_crit + 1))',
@@ -528,6 +535,13 @@ export const navigationTree: NavigationTree = {
   ],
 
   'Interactive Tools': [
+    {
+      title: 'All Interactive Tools',
+      href: '/interactive-tools',
+      desc: 'Index of all tools: Coherence Explorer, Galaxy Plotter, γ Calculator, and more',
+      keywords: ['interactive', 'tools', 'index', 'explorer', 'plotter', 'calculator'],
+      related: ['/coherence-explorer', '/galaxy-plotter', '/gamma-calculator'],
+    },
     {
       title: 'Coherence Explorer',
       href: '/coherence-explorer',

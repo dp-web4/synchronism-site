@@ -169,16 +169,17 @@ export default function HonestAssessment() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>BTFR Exponent n &#x2248; 2.2 (TEST-09)</h3>
-              <ValidationBadge status="failed" label="Under Investigation" />
+              <h3>BTFR Universal-n Claim Withdrawn (TEST-09)</h3>
+              <ValidationBadge status="untested" label="Restated as Regime-Dependent" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Predicted BTFR exponent n&nbsp;&#x2248;&nbsp;2.2 contradicts published measurements: n&nbsp;=&nbsp;3.85&nbsp;&#x00B1;&nbsp;0.09
-              (Lelli, McGaugh &amp; Schombert 2019, <em>ApJ</em> 886:77) and MOND&apos;s theoretical n&nbsp;=&nbsp;4.
-              The kill criterion (|&#x0394;n|&nbsp;&gt;&nbsp;0.3) is met by the prediction&ndash;observation gap of 1.65.
-              Under investigation: the prediction may target a specific sub-population or sub-exponent,
-              in which case it needs to be restated precisely. If it applies to the full sample, it is a
-              confirmed failure and belongs here.
+              The site previously stated a universal BTFR exponent n&nbsp;&#x2248;&nbsp;2.2. This number has
+              no archive source — it was a site&rarr;archive transcription error (explorer finding, 2026-04-23).
+              The archive (Session 193, Paper Summary) actually predicts <em>regime-dependent</em> slopes:
+              n&nbsp;&#x2192;&nbsp;4 in the deep-MOND limit, n&nbsp;&#x2192;&nbsp;2 in the near-Newtonian limit, n&nbsp;&#x2248;&nbsp;2.75
+              for transition-dominated full-sample fits. Lelli 2019&apos;s n&nbsp;=&nbsp;3.85&nbsp;&#x00B1;&nbsp;0.09 is
+              consistent with the archive&apos;s per-regime prediction for a SPARC-like deep-MOND-dominated
+              sample. TEST-09 has been restated in the Tier-1 catalog as a regime-dependent slope test.
             </p>
           </div>
         </div>

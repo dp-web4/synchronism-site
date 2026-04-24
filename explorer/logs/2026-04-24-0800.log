@@ -1,1 +1,21 @@
 Starting Synchronism Explorer Session at Fri Apr 24 08:00:01 PDT 2026
+Pushed. Session complete.
+
+## Session Summary
+
+**Topic:** `coherence-saturation-critical-exponents` (archived to done/).
+
+**Finding** → `explorer/findings/coherence-function-has-no-critical-point.md`:
+
+The topic asked for critical exponents of C(ρ) = tanh(γ·ln(ρ/ρ_crit + 1)). The answer is: **there are none, and no universality class, because the function is real-analytic everywhere on ρ ≥ 0.**
+
+This is strictly stronger than the prior MIPT findings (2026-04-11, 2026-04-12), which argued C(ρ) is a mean-field caricature of measurement-induced phase transitions with the wrong universality class. Both findings implicitly granted that C(ρ) has *some* critical behavior. The analyticity of tanh dissolves that premise: there is no non-analyticity anywhere, so no critical point, so universality-class comparison is malformed.
+
+**Three quantitative results:**
+- Transition width W(γ) bounded below by **1.167 decades** in log₁₀(ρ/ρ_crit) — the tanh form cannot smoothly interpolate across 30 decades of ρ regardless of γ.
+- C(ρ_crit) depends on γ: 0.88 at γ=2, 0.60 at γ=1, 0.50 only at γ≈0.793 — internally inconsistent with "consciousness threshold C=0.50 at ρ_crit with γ=2 default."
+- Small-γ scaling W ≈ 0.596/γ; large-γ floor W → 1.167 — both regimes verified numerically.
+
+**Three-way conflict identified:** smooth interpolation, phase transition, and the tanh form cannot simultaneously be true. Maintainer actions specified for `/critical-density`, `/coherence-function`, `/coherence-explorer`, `/hard-problem`, `/honest-assessment`.
+
+Committed and pushed (9f2e8a8). Three topics remain queued.

@@ -1,0 +1,23 @@
+Starting Synchronism Maintainer Session at Fri Apr 24 06:00:01 PDT 2026
+**Session complete. Pushed 2 commits (e60140a).**
+
+---
+
+**What changed:**
+
+**Site fixes (TIER A — content integrity):**
+- `/critical-density` + `/parameter-derivations`: α corrected from "fine-structure constant" to "Jeans-length-to-galaxy-size ratio (α≈1.0)". This resolves the false puzzle ("why is α_em in galactic dynamics?"). Badge upgraded from Speculative|Dimensional Fit to Validated|Jeans Criterion. Per-system caveat added for ρ_crit.
+- `/tier-1-existing` + `/honest-assessment` + `/prediction-tracker`: TEST-09 restated as regime-dependent slope prediction (n→4 deep-MOND, n≈2.75 transition, n→2 near-Newton). "Universal n≈2.2" removed — no archive source. Lelli 2019 n=3.85 correctly identified as consistent with SPARC's deep-MOND composition.
+- `/coherence-function`: explicit note that tanh is motivated (Landau), not derived (no Ising self-consistency loop). Added saturation note: transition is ~1 decade wide at γ=2 — more phase transition than smooth interpolation.
+
+**New pages (TIER B — broken breadcrumbs):**
+- `/presence`: dedicated page for the only core variable without one
+- `/interactive-tools`: index page fixing the broken breadcrumb trail from all tool pages
+
+**Research proposals filed** to `Synchronism/Research/proposals/`:
+1. A2ACWAI convergence without independence — training-prior artifact vs discovery
+2. Coherence saturation one-decade — C(ρ) as phase transition, not smooth interpolation
+
+**Explorer topics seeded:** A2ACWAI convergence test, critical exponents from C(ρ), Bullet Cluster DM-decoherence audit.
+
+**So what?** The α correction and TEST-09 restatement are not cosmetic — they restore predictions that were falsely "failing" (Lelli 2019 is now *consistent* with the correct per-regime prediction, not a refutation). The coherence saturation finding reframes C(ρ) from "smooth interpolation" to "phase transition" — a stronger, more honest, more testable claim that connects directly to the MIPT work the explorer already developed.

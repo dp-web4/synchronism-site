@@ -232,7 +232,15 @@ export const navigationTree: NavigationTree = {
       desc: 'Patterns interacting indifferently: gravity only, no EM',
       keywords: ['dark matter', 'gravity', 'indifferent', 'interaction', 'reframe'],
       prerequisites: ['/coherence-function'],
-      related: ['/galaxy-rotation', '/mond-unification', '/wide-binaries'],
+      related: ['/galaxy-rotation', '/mond-unification', '/wide-binaries', '/dark-matter-failure'],
+    },
+    {
+      title: 'Dark Matter: Sign Error (March 2026)',
+      href: '/dark-matter-failure',
+      desc: 'CFD viscosity mapping predicts wrong direction — structural failure',
+      keywords: ['dark matter', 'failure', 'Bullet Cluster', 'viscosity', 'sign error', 'CFD'],
+      prerequisites: ['/dark-matter'],
+      related: ['/honest-assessment', '/handling-failure', '/dark-matter'],
     },
     {
       title: 'Galaxy Rotation Curves',
@@ -509,7 +517,15 @@ export const navigationTree: NavigationTree = {
       desc: 'BAO, wide binary, anesthesia, GW-DM, cosmic interference',
       keywords: ['top', 'decisive', 'BAO', 'anesthesia', 'critical', 'key'],
       prerequisites: ['/test-catalog'],
-      related: ['/tier-1-existing', '/tier-2-pilots'],
+      related: ['/tier-1-existing', '/tier-2-pilots', '/cosmic-interference'],
+    },
+    {
+      title: 'Cosmic Interference Patterns (TEST-07)',
+      href: '/cosmic-interference',
+      desc: 'Galaxy cluster oscillations at λ ~ 500 Mpc — derivation pending',
+      keywords: ['cosmic', 'interference', 'BAO', 'oscillation', '500 Mpc', 'cluster'],
+      prerequisites: ['/tier-1-existing'],
+      related: ['/top-5-tests', '/tier-1-existing', '/cosmology-predictions'],
     },
     {
       title: 'Publication Roadmap',

@@ -85,7 +85,7 @@ export default function ResearchPhilosophy() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="supported" />
             <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Consistent with data but not uniquely predicted &mdash; other frameworks give the same result
+              Consistent with data but caveats apply &mdash; may have known prior art or selection bias risk
             </span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>

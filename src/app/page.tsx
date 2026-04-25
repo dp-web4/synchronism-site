@@ -216,6 +216,21 @@ export default function Home() {
                 <h3>The Core Idea</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>One equation, every scale</p>
               </Link>
+              <Link href="/test-catalog" className="card" style={{ textDecoration: 'none' }}>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Deep dive</div>
+                <h3>Test Catalog</h3>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>24 experiments: what would break this?</p>
+              </Link>
+              <Link href="/research-philosophy" className="card" style={{ textDecoration: 'none' }}>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Methodology</div>
+                <h3>Research Philosophy</h3>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>How we work, why we document failures</p>
+              </Link>
+              <Link href="/honest-assessment" className="card" style={{ textDecoration: 'none' }}>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Shortcut</div>
+                <h3>Honest Assessment</h3>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>What works, what failed, what&apos;s unknown</p>
+              </Link>
             </div>
           </section>
         </>

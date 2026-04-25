@@ -25,6 +25,7 @@ const tests: Test[] = [
     time: '6 weeks',
     prediction: 'Rotation curve residuals correlate with local galaxy density',
     kill: 'No correlation between residuals and environment at 2σ',
+    alert: 'Scope note: TEST-01 (SPARC residuals vs. density) and TEST-05 (RAR scatter vs. environment) test the same underlying prediction — environment-dependent RAR — on different samples. SPARC is higher-quality resolved curves (175 galaxies); ALFALFA-SDSS is larger statistical power (14,585 galaxies). These should be read as two phases of one test, not as two independent tests.',
   },
   {
     id: 'TEST-02',
@@ -97,7 +98,7 @@ const tests: Test[] = [
     time: '3 months',
     prediction: 'BTFR slope reflects regime mix: deep-MOND sample → n ≈ 4; transition-dominated sample → n ≈ 2.75 (Session 193 full-sample fit); near-Newtonian → n → 2. Lelli 2019 n = 3.85 ± 0.09 is consistent with SPARC being deep-MOND-dominated.',
     kill: 'A single sample produces a BTFR slope inconsistent with its regime-mix prediction by > 0.3',
-    alert: 'Restated 2026-04-24: the earlier prediction "n ≈ 2.2 universal across bands" had no archive source — it was a site→archive transcription error (Session 193 actually predicts n = 2.75 for transition-heavy samples, or regime-dependent: n → 4 deep-MOND, n → 2 near-Newton). Lelli 2019\'s n = 3.85 is consistent with the archive\'s per-regime prediction for a SPARC-like deep-MOND-dominated sample, not a refutation. Test is executable in its restated form by splitting multi-band samples by regime.',
+    alert: 'Restated 2026-04-24: the earlier prediction "n ≈ 2.2 universal across bands" had no archive source — it was a site→archive transcription error (Session 193 actually predicts n = 2.75 for transition-heavy samples, or regime-dependent: n → 4 deep-MOND, n → 2 near-Newton). Lelli 2019\'s n = 3.85 is consistent with the archive\'s per-regime prediction for a SPARC-like deep-MOND-dominated sample, not a refutation. MOND-shared flag: the regime-dependent BTFR slope (n → 4 in deep-MOND, n → 2 near-Newtonian) is a textbook MOND signature (Milgrom 1983, McGaugh 2012). A positive result is consistent with Synchronism AND standard MOND — it cannot discriminate between them.',
   },
   {
     id: 'TEST-10',
@@ -107,6 +108,7 @@ const tests: Test[] = [
     time: '2 months',
     prediction: 'DM fraction → 100% for M_bar < 10⁸ M☉',
     kill: 'Baryon-dominated dwarfs below 10⁸ M☉ exist',
+    alert: 'MOND-shared flag: dwarfs below 10⁸ M☉ are deep-MOND systems where standard MOND already predicts the rotation is dominated by the Milgrom term — equivalent to near-100% apparent DM fraction in Newtonian terms. A positive result confirms Synchronism and MOND equally; only a null (baryon-dominated dwarfs below 10⁸ M☉) discriminates. The kill criterion is sharp; the confirm criterion is not.',
   },
 ];
 
@@ -115,7 +117,7 @@ export default function Tier1Existing() {
     <>
       <Breadcrumbs currentPath="/tier-1-existing" />
       <h1>Tier 1: Existing Data</h1>
-      <ValidationBadge status="untested" label="10 Tests, $0 Cost" />
+      <ValidationBadge status="untested" label="10 Tests, $0 Cost — see overlap notes" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -165,9 +167,14 @@ export default function Tier1Existing() {
         <h2>Recommended Start</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            <strong>Tests 01, 02, and 04</strong> are the most decisive. They test genuinely novel
+            <strong>Tests 01/05, 02, and 04</strong> are the most decisive. They test genuinely novel
             predictions (not reparametrizations) and can discriminate between Synchronism, MOND,
             and &#x039B;CDM. If all three fail, the framework&apos;s cosmological predictions are dead.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+            Note: Tests 09 and 10 are MOND-shared predictions (positive results do not discriminate Synchronism from MOND).
+            Tests 01 and 05 test the same underlying prediction on different samples and should be counted as one test for
+            independence purposes. The effective independent novel test count is approximately 6.
           </p>
         </div>
 

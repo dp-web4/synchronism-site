@@ -11,7 +11,7 @@ export default function BornRule() {
     <>
       <Breadcrumbs currentPath="/born-rule" />
       <h1>Born Rule Derivation</h1>
-      <ValidationBadge status="speculative" label="Theoretical" />
+      <ValidationBadge status="reparametrization" label="Interpretive Restatement" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -87,12 +87,17 @@ export default function BornRule() {
           Quantum speedup = coherent parallelism, and the Born rule tells you how to extract the answer.
         </p>
 
-        <h2>Honest Caveat</h2>
+        <h2>Honest Assessment</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           This derivation relies on &ldquo;coherence conservation&rdquo; as an axiom. Whether this
           is truly more fundamental than the Born rule itself, or just a reformulation at the same
-          level, is debatable. The argument has not been subjected to peer review and may contain
-          circular reasoning. The Sessions #266-270 treatment is the most rigorous version available.
+          level, is debatable &mdash; and the argument does not predict any deviation from |&alpha;|&sup2;
+          in any regime. A &ldquo;derivation&rdquo; that produces no testable difference from the
+          thing it derives is, by this framework&apos;s own taxonomy, a{' '}
+          <strong>reparametrization</strong>: the same physics in different language. This is no
+          worse than Zurek&apos;s envariance or Carroll-Sebens self-locating uncertainty (both also
+          criticized for circularity) &mdash; but no better. The Sessions #266-270 treatment is the
+          most rigorous version available. The argument has not been subjected to peer review.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

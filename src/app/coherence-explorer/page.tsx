@@ -72,6 +72,14 @@ export default function CoherenceExplorer() {
             At &#x03B3; &#x2248; 1, the transition from quantum to classical is steepest &mdash;
             this is where the most interesting physics happens.
           </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
+            <strong>Why &#x03B3; is decoupled from N<sub>corr</sub> here:</strong> This tool sets &#x03B3;
+            directly to explore how curve shape depends on the sharpness parameter, independently of any
+            physical system. The relationship &#x03B3; = 2/&#x221A;N<sub>corr</sub> links &#x03B3; to
+            real systems &mdash; use the{' '}
+            <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
+            to enter a physical N<sub>corr</sub> and see where a real system lands.
+          </p>
         </div>
 
         <p style={{ marginBottom: '1rem' }}>

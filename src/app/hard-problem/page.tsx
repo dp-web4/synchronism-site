@@ -73,7 +73,7 @@ export default function HardProblem() {
           </div>
         </div>
 
-        <h2>The Consciousness Formula</h2>
+        <h2>The Consciousness Schema</h2>
         <div className="equation" style={{ marginBottom: '1rem' }}>
           C = f(&#x03B3;, D, S)
         </div>
@@ -86,11 +86,32 @@ export default function HardProblem() {
           Derived in the Consciousness Arc (Sessions #280-282) and Consciousness Arc 2.0 (Sessions #356-359).
         </p>
 
+        <div className="card" style={{ borderLeft: '3px solid #f59e0b', marginBottom: '1.5rem' }}>
+          <h3 style={{ color: '#f59e0b', marginBottom: '0.5rem' }}>Honest Assessment</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>D and S are not yet operationally defined.</strong> There is no stated measurement
+            procedure or unit for dimensional embedding (D) or self-modeling depth (S). Without
+            operational definitions, the framework cannot yet compute C for any real system using
+            this formula, and the 34 predictions cannot be tested until D and S are specified. The
+            badge reflects this: the prediction is <em>Speculative</em>, not <em>Untested</em> &mdash;
+            it cannot yet be tested, not just hasn&apos;t been.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>The 8-way convergence at C &#x2248; 0.50 has a dependency problem.</strong> The
+            site&apos;s own <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link>{' '}
+            page acknowledges that the eight approaches &ldquo;share underlying assumptions and are
+            not fully independent.&rdquo; Eight derivations that all import the same threshold parameter
+            will agree on the threshold by construction. This is dependent convergence, not independent
+            confirmation. It is an internal consistency check, not an empirical test.
+          </p>
+        </div>
+
         <h2>Status</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          This is a theoretical framework with 34 falsifiable predictions, none yet tested.
-          The strongest prediction is the consciousness threshold at C &#x2248; 0.50, which
-          should be measurable via EEG phase coherence.
+          This is a theoretical framework with 34 candidate predictions. The strongest would be the
+          consciousness threshold at C &#x2248; 0.50, measurable via EEG phase coherence &mdash;
+          but only once D and S have operational definitions that allow C to be computed. That step
+          is the research gap between &ldquo;schema&rdquo; and &ldquo;falsifiable prediction.&rdquo;
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

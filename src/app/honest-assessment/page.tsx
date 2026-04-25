@@ -22,8 +22,7 @@ export default function HonestAssessment() {
         </summary>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
           <strong>Validated</strong><span>Quantitative match with independent data</span>
-          <strong>Strongly Supported</strong><span>Consistent with data but caveats apply (e.g., known prior art)</span>
-          <strong>Supported</strong><span>Consistent with data, not yet independently confirmed</span>
+          <strong>Strongly Supported</strong><span>Consistent with data but caveats apply (e.g., known prior art, selection bias risk)</span>
           <strong>Untested</strong><span>Prediction exists, no data yet</span>
           <strong>Speculative</strong><span>Conceptual proposal without quantitative test</span>
           <strong>Reparametrization</strong><span>Equivalent to existing physics in different notation</span>
@@ -96,6 +95,14 @@ export default function HonestAssessment() {
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               Caveat: ~11% failure rate. Era 2 chemistry (sessions 134-2660) identified as template-based.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              <strong>Unresolved interpretive question:</strong> The 89% rate mixes prospective predictions
+              and post-hoc correlations, and the 1,703 phenomena are not all statistically independent
+              (sound velocity, electronegativity, and atomic volume co-vary across the periodic table
+              for well-known bonding reasons). Until the rate is decomposed into independent prospective
+              predictions, &ldquo;89% validated&rdquo; is better read as &ldquo;89% consistent with
+              the &#x03B3; &#x2248; 1 boundary&rdquo; &mdash; a weaker but still meaningful statement.
             </p>
           </div>
 

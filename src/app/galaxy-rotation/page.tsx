@@ -58,13 +58,22 @@ export default function GalaxyRotation() {
           </div>
         </div>
 
-        <h2>The Coherence Prediction</h2>
-        <EquationDisplay size="md" label="Coherence-modified acceleration">
+        <h2>The Interpolating Function</h2>
+        <div className="card" style={{ borderLeft: '3px solid #f59e0b', marginBottom: '1rem', padding: '0.75rem 1rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+            <strong>Attribution:</strong> The equation below is the standard RAR interpolating function
+            from McGaugh, Lelli &amp; Schombert (2016) &mdash; already in the literature for a decade
+            and widely used to fit SPARC. <strong>Synchronism&apos;s specific contribution is not the
+            function itself, but the environmental scatter ansatz on top of it</strong> (the claim
+            that σ<sub>int</sub> depends on local density). All fit-quality claims refer to that
+            ansatz and to the McGaugh-2016 baseline together.
+          </p>
+        </div>
+        <EquationDisplay size="md" label="RAR interpolating function (McGaugh et al. 2016)">
           g<sub>obs</sub> = g<sub>bar</sub> / (1 &minus; e<sup>&minus;&#x221A;(g<sub>bar</sub>/a&#x2080;)</sup>)
         </EquationDisplay>
         <p>
-          This is the standard RAR interpolation function (McGaugh et al. 2016). In Synchronism,
-          the acceleration scale a&#x2080; is not a free parameter &mdash; it{' '}
+          In Synchronism, the acceleration scale a&#x2080; is not a free parameter &mdash; it{' '}
           <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>emerges from cosmology</Link>{' '}
           as cH&#x2080;/(2&#x03C0;). The coherence function provides the physical mechanism: at
           accelerations below a&#x2080;, the system crosses a coherence threshold and gravitational
@@ -95,11 +104,20 @@ export default function GalaxyRotation() {
 
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          The environment-dependent scatter is real and statistically significant, but it explains only
-          14% of the total RAR scatter (R&sup2; = 0.14). The remaining 86% is unexplained by the
-          coherence model. Furthermore, standard MOND plus mass-to-light ratio corrections already
-          explains essentially all of the RAR variance. Synchronism adds a small, detectable effect
-          on top of what MOND already provides &mdash; it does not replace MOND&apos;s success.
+          The environment-dependent scatter is real and statistically significant (p = 5&times;10<sup>&minus;6</sup>
+          with N = 14,585), but it explains only 14% of the total RAR scatter (R&sup2; = 0.14). The
+          remaining 86% is unexplained by the coherence model. Furthermore, standard MOND plus
+          mass-to-light ratio corrections already explains essentially all of the RAR variance.
+          Synchronism adds a small, detectable effect on top of what MOND already provides &mdash;
+          it does not replace MOND&apos;s success.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          <strong>Missing measurement:</strong> The incremental value of adding the environmental term
+          has not been quantified via ΔBIC (Bayesian Information Criterion) against baseline MOND on
+          the same dataset. With N = 14,585, even a tiny effect is statistically significant; ΔBIC
+          would determine whether the fit improvement exceeds the penalty for adding the extra parameter.
+          Until that analysis is run, &ldquo;small but detectable effect&rdquo; is a qualitative
+          description, not a measurement.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

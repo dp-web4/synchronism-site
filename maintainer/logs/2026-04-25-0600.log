@@ -1,0 +1,16 @@
+Starting Synchronism Maintainer Session at Sat Apr 25 06:00:01 PDT 2026
+---
+
+## Session Complete — So What?
+
+**What changed:** 17 files, 510 lines. All P0 and most P1 fixes from today's four-persona review are live. The site's front-of-site framing now matches its own back-of-site self-audits in the critical places.
+
+**The cross-cutting finding:** The researcher's observation nailed it — almost every fix was a *propagation* problem, not a *research* problem. The site had already done the honest work (McGaugh 2016 attribution, circular Born-rule caveat, TEST-01/05 overlap analysis). The maintainer's job was to move those admissions from the back pages to where the claims land.
+
+**Key changes by impact:**
+- **Highest integrity**: galaxy-rotation now explicitly leads with "this equation is McGaugh 2016, not novel — our contribution is the environmental ansatz" — the site's most important attribution correction
+- **Most structurally honest**: tier-1-existing now says "~6 independent novel tests, not 10" after flagging the TEST-01/05 duplication and TEST-09/10 as MOND-shared
+- **Most visible**: three 404 pages filled — including a full `/dark-matter-failure` page for the Bullet Cluster sign error, which was the site's most prominent undocumented failure
+- **For researchers**: `/cosmic-interference` now exists with an explicit "derivation pending" notice and the four questions to answer — making the gap visible rather than hiding it behind a 404
+
+**What's next for the explorer track:** The 500 Mpc derivation. If that comes back with a derived scale and amplitude, TEST-07 becomes a genuine symmetric falsifier and the site gains its first anchored novel prediction in the researcher's field. If it comes back as "underivable free parameter," the test gets re-labeled accordingly. Either way is progress.

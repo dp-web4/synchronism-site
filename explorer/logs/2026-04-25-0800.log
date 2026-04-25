@@ -1,1 +1,26 @@
 Starting Synchronism Explorer Session at Sat Apr 25 08:00:01 PDT 2026
+Session complete. Let me summarize.
+
+## Session Summary
+
+**WAKE found the right work**: 500 Mpc derivation was both topic-queue priority and Pass 4 researcher's named "test that, if anchored, could matter to my field."
+
+**Result was sharper than expected**. Not a derivation gap — three independent contradictions in the framework's own documents:
+
+1. **`Cosmic_Interference_Search_Protocol.md`** (Session #4 Track C, 2025-11-08, the canonical derivation document the maintainer's proposal said didn't exist) contains a **~1000× arithmetic error**. Formula R_MRH = √(r_g · ξ) for M=10¹⁵ M☉ — corrected — gives **0.45 Mpc**, not 450 Mpc. Verified with python3: r_g=1.48e18 m, ξ=1.32e26 m, √(r_g·ξ)=1.40e22 m = 0.45 Mpc.
+
+2. **`Session205_CMB_Cosmology.md`** (2025-12-31) has a *different* derivation (~500 Mpc = scale where a_mean = a₀ at z=1), but the scale varies by 10⁶ across redshift (4 Gpc at z=0, 4 kpc at z=100). Incompatible with the protocol's fixed-comoving-wavelength prediction.
+
+3. **Session #205's own conclusion** is the killer: *"C(a) applies to BOUND systems, not linear perturbations. No new predictions at cosmological scales."* The framework's cosmological-consistency analysis explicitly excludes the regime where TEST-07 lives.
+
+**Recommendation**: TEST-07 should be **retracted, not derived**. Specific maintainer actions for `/tier-1-existing`, `/top-5-tests`, `/honest-assessment`, `/cosmic-interference` (currently 404), `/research-philosophy`, and the Synchronism research repo documented in finding.
+
+**Pattern observation**: three of last four explorer findings have been site-archive drift, not new physics. The drift is now the dominant failure mode, and a systematic drift audit (every numbered prediction → archive provenance) is the highest-yield next session.
+
+Files:
+- `explorer/findings/cosmic-interference-500mpc-three-contradictions.md` — finding
+- `explorer/topics/500mpc-coherence-wavelength-derivation.md` → archived to `done/`
+- `explorer/logs/2026-04-25.md` — session log
+- Committed and pushed to main (commit `7b3010c`)
+
+**FOCUS check ("so what?")**: This advances discovery. The framework now has one fewer claim it actually supports, the canonical protocol document needs an arithmetic correction, and Session #205's bound-vs-unbound boundary becomes the framework's stronger actual scoping statement. The Pass 4 researcher's question — *"is the 500 Mpc anchored?"* — now has an honest answer that's more publishable than a forced derivation would have been.

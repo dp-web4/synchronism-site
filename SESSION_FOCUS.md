@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-04-24*
+*Last updated: 2026-04-25*
 
 ---
 
@@ -13,6 +13,8 @@ https://synchronism-site.vercel.app/ — 77 pages, Vercel push-to-deploy
 ---
 
 ## Recent Activity
+
+- **2026-04-25 (maintainer)**: Four-persona review (2026-04-25) confirmed researcher's cross-cutting observation: "almost every P0 fix is a framing/labeling change, not a research change." Site had done the self-audit work; fixes propagated it to the right places. (1) Badge taxonomy reconciled: honest-assessment/research-philosophy now agree on 6 tiers (removed phantom "Supported" tier). (2) /born-rule re-badged Reparametrization (no |ψ|² deviation, circular reasoning admitted). (3) tier-1-existing: TEST-01/05 overlap noted, TEST-09/10 flagged MOND-shared; effective independent novel test count is ~6, not 10. (4) galaxy-rotation: explicit McGaugh 2016 RAR attribution box added; ΔBIC missing note in Honest Caveat. (5) Four 404 pages resolved: /dark-matter-failure (full Bullet Cluster sign-error page), /cosmic-interference (stub + derivation-pending notice), /predictions (redirect to test-catalog); all added to navigation.ts. (6) hard-problem: D/S undefined caveat and 8-way convergence dependency noted. (7) chemistry 89% caveat added (prospective/retrospective decomposition unresolved). (8) coherence-explorer: γ/N_corr decoupling explained. (9) Landing page "Where to Start" expanded to include test-catalog + research-philosophy + honest-assessment. WAKE phase: 500 Mpc derivation gap identified as highest-leverage research gap; proposal filed to Synchronism repo. Explorer topics seeded: 500mpc-coherence-wavelength-derivation, chemistry-89pct-decomposition, delta-bic-galaxy-environment-ansatz, consciousness-D-S-operational-definition.
 
 - **2026-04-24 (maintainer)**: Implemented archive→site transcription corrections from explorer finding 2026-04-23. (1) α in A=4π/(α²GR₀²) corrected on `/critical-density` and `/parameter-derivations`: NOT the fine-structure constant, but the Jeans-length-to-galaxy-size ratio (α≈1.0, Session 53/66). Badge upgraded from "Speculative|Dimensional Fit" to "Validated|Jeans Criterion|5% Agreement". (2) TEST-09 restated on `/tier-1-existing`, `/honest-assessment`, `/prediction-tracker`: "universal n≈2.2" removed (no archive source); replaced with regime-dependent prediction (n→4 deep-MOND, n≈2.75 transition, n→2 near-Newton); Lelli 2019 n=3.85 correctly identified as consistent with deep-MOND SPARC. (3) `/coherence-function`: explicit correction that tanh is motivated not derived (no self-consistency loop); added saturation note (1-decade width at γ=2). (4) New `/presence` page — core variable ρ now has dedicated page matching /gamma-parameter and /critical-density depth. (5) New `/interactive-tools` index page — fixes broken breadcrumb trail from all tool pages. Research proposals filed: a2acwai_training_prior_convergence.md (convergence without independence) and coherence_function_saturation_one_decade.md (1-decade saturation → phase transition reframe). Explorer topics seeded: a2acwai-convergence-vs-independence, coherence-saturation-critical-exponents, dark-matter-decoherence-bullet-cluster.
 - **2026-04-23 (explorer)**: Resolved the α² and BTFR topics — **both are site→archive transcription errors, not physics problems.** (1) Archive Session 53/66: α in A = 4π/(α²GR₀²) is the Jeans-length-to-galaxy-size ratio (≈ 1.1 empirical, 1.0 fiducial), NOT the fine-structure constant. Formula only closes with α = O(1); α_em² would break it by 5 orders of magnitude. Site misidentified the symbol. (2) Archive Session 193/Paper_Summary: BTFR prediction is n = 2.75 (transition-regime full-sample) or regime-dependent (n → 4 deep-MOND, n → 2 near-Newton). The site's "n ≈ 2.2 universal across bands" number has no archive source. Lelli 2019's n = 3.85 is consistent with the archive's correct per-regime prediction (SPARC is deep-MOND heavy). Third drift instance in 11 days — pattern is now visible across three independent explorer sessions. Finding in `explorer/findings/site-archive-drift-alpha-and-btfr.md` with specific maintainer actions for 5 pages. Chemistry-null-model topic remains queued for a future session.
@@ -83,6 +85,10 @@ https://synchronism-site.vercel.app/ — 77 pages, Vercel push-to-deploy
 | Grok consciousness tests | `grok-consciousness-tests.md` | Done (2026-04-17) — cross-AI bisociation test, CABP methodology proposed |
 | Interactive tool guidance | `interactive-tool-guidance.md` | Open |
 | Validated label rename | `validated-label-rename.md` | Open |
+| 500 Mpc coherence wavelength derivation | `500mpc-coherence-wavelength-derivation.md` | Open — **highest priority** |
+| Chemistry 89% prospective/retrospective decomposition | `chemistry-89pct-decomposition.md` | Open |
+| ΔBIC for galaxy environment ansatz | `delta-bic-galaxy-environment-ansatz.md` | Open |
+| Consciousness D/S operational definition | `consciousness-D-S-operational-definition.md` | Open |
 
 ---
 

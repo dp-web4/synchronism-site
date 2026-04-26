@@ -102,6 +102,24 @@ export default function GalaxyRotation() {
           </div>
         </div>
 
+        <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1.5rem', marginTop: '2rem' }}>
+          <h2 style={{ color: '#ef4444', marginTop: 0 }}>Structural Failure: Dark Matter Mechanism (March 2026)</h2>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            Synchronism&apos;s CFD viscosity interpretation mapped low coherence (dark matter) to high
+            viscosity &mdash; predicting dark matter should be <em>stickier</em> than baryons. The Bullet
+            Cluster (1E 0657-558) shows the opposite: dark matter halos pass through each other with
+            negligible self-interaction (σ/m &lt; 0.47 cm²/g, Harvey et al. 2015). The prediction has the
+            wrong sign. This is a structural failure, not a parameter problem &mdash; no adjustment to
+            A, γ, or ρ<sub>crit</sub> can fix a sign error in the mechanism.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: 0 }}>
+            The galaxy rotation fit results on this page are independent of the CFD interpretation and stand
+            as-is (reparametrization of MOND with an environmental scatter term). But the claim that
+            &ldquo;dark matter effects arise from incomplete decoherence&rdquo; is under structural revision.{' '}
+            <Link href="/dark-matter-failure" style={{ color: '#ef4444' }}>Full failure analysis &rarr;</Link>
+          </p>
+        </div>
+
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           The environment-dependent scatter is real and statistically significant (p = 5&times;10<sup>&minus;6</sup>

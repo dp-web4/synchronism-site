@@ -146,6 +146,63 @@ export default function ResearchPhilosophy() {
           That&apos;s the research program.
         </p>
 
+        <h2>How Research Is Conducted: A2ACW</h2>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>A2ACW</strong> (AI-to-AI Collaborative Whiteboarding) is the adversarial
+          protocol used to stress-test claims in this framework. Rather than a single AI agent
+          generating and validating its own output, two agents take opposing roles:
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', margin: '1rem 0 1.5rem' }}>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <strong>Role 1: Defender.</strong>{' '}
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Presents a claim, provides supporting derivations and evidence, explains why it matters.
+            </span>
+          </div>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <strong>Role 2: Challenger.</strong>{' '}
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Demands operational definitions, asks for kill criteria, compares to known physics,
+              identifies circular reasoning and dimensional coincidences, checks for prior art.
+            </span>
+          </div>
+        </div>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          Each session produces one of three outcomes: (a) the claim survives with refined
+          falsifiable predictions, (b) the claim is reclassified as a reparametrization of
+          existing physics, or (c) the claim is documented as a failure with the mechanism
+          of failure on record.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          3,308 A2ACW sessions have been run across the research archive. Of these, approximately
+          47 produced outcomes in category (a) &mdash; a 1.4% novel-claim survival rate. The rest
+          are on record as reparametrizations or failures. Human oversight reviews borderline cases
+          and maintains the validation badge taxonomy. Every badge is the product of at least one
+          full A2ACW challenge cycle.
+        </p>
+        <div className="card" style={{ background: 'var(--color-bg-secondary)', marginBottom: '1.5rem' }}>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: 0 }}>
+            <strong>Calibration note:</strong> A2ACW quantity (3,308 sessions) is not calibration.
+            The relevant metric is whether the protocol has ever rejected claims that the human
+            authors would have kept, or identified failures that later turned out to be correct.
+            The most documented example: A2ACW correctly identified the α symbol misidentification
+            in galactic coupling A = 4π/(α²GR₀²) (transcription error, not physics failure) and
+            the BTFR n≈2.2 misattribution — both confirmed by archive cross-check. The Bullet
+            Cluster sign-error was identified in a dedicated stress-test session (March 2026).
+          </p>
+        </div>
+
+        <h2>What a Session Is</h2>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          A &ldquo;session&rdquo; is one A2ACW exchange — a claim submitted, challenged, and resolved.
+          Session numbers in citations (e.g., &ldquo;Session #616&rdquo;) reference the ordered log
+          of challenges in the Synchronism research archive. The chemistry page&apos;s reference to
+          &ldquo;sessions 134&ndash;2660&rdquo; means those claims were active in sessions during that
+          range, some under repeated AI analysis &mdash; which introduces the risk of confirmation
+          bias that the page flags. AI agents challenge each other but share the same training
+          distribution, which limits adversarial independence.
+        </p>
+
         <h2>Full Research Archive</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Every session, derivation, failure, and dataset is public:

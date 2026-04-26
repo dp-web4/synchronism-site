@@ -50,11 +50,11 @@ const tests = [
     rank: 5,
     name: 'Cosmic Interference Patterns',
     id: 'TEST-07',
-    tier: 'Tier 1',
+    tier: 'Tier 1*',
     cost: '$0',
-    why: 'Unique to Synchronism. No other framework predicts oscillatory modulation in galaxy cluster separations at λ ~ 500 Mpc. If found, it would be strong evidence for the coherence interpretation.',
+    why: 'Exploratory hypothesis (derivation pending). The ~500 Mpc scale has not been derived from the framework\'s parameters — the /cosmic-interference page explicitly states "this is not a prediction in the scientific sense." Listed here because if the scale is derived, it would be unique to Synchronism. Not yet a decisive test.',
     kill: 'No oscillations above 3σ out to 2000 Mpc',
-    color: '#10b981',
+    color: '#f59e0b',
   },
 ];
 
@@ -109,13 +109,19 @@ export default function Top5Tests() {
         <h2>The Strategy</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            Three of the top five are Tier 1 (zero cost). Start there. If all three fail,
-            Synchronism&apos;s cosmological predictions are dead and no further investment is
-            warranted. If any succeed, they fund the case for TEST-11 (EEG, $150K) and
-            eventually TEST-15 (GW correlation, $1M+).
+            Two of the top five are confirmed Tier 1 (TEST-04, TEST-02 — zero cost, existing data).
+            Start there. If both fail, Synchronism&apos;s cosmological predictions are dead and
+            no further investment is warranted. If any succeed, they fund the case for TEST-11
+            (EEG, $150K) and eventually TEST-15 (GW correlation, $1M+).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem' }}>
             This is how science should work: cheapest tests first, escalate only on success.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+            * TEST-07 (Cosmic Interference, #5) is listed as Tier 1 in the test catalog but carries
+            a caveat: the 500 Mpc scale has not been derived from the framework. Until that derivation
+            exists, it is an exploratory hypothesis, not a falsifiable prediction.
+            <Link href="/cosmic-interference" style={{ color: 'var(--color-accent-blue)', marginLeft: '0.25rem' }}>See status &rarr;</Link>
           </p>
         </div>
 

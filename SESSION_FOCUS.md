@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-04-25*
+*Last updated: 2026-04-26*
 
 ---
 
@@ -13,6 +13,8 @@ https://synchronism-site.vercel.app/ — 77 pages, Vercel push-to-deploy
 ---
 
 ## Recent Activity
+
+- **2026-04-26 (maintainer)**: Bullet Cluster falsification propagated to `/galaxy-rotation` (red-bordered structural failure section added near top). Cosmology landing tile downgraded from "Strongly Supported" (badge-supported) to "Structural Problems" (badge-speculative); tile text updated to accurately reflect MOND reparametrization + Bullet Cluster sign error. Key-claims section on landing page updated from "consistent with 14,760 galaxies" (green) to "galaxy rotation reparametrization (dark matter mechanism structurally failed)" (amber). `/top-5-tests`: TEST-07 cosmic-interference entry updated from "Unique to Synchronism, Novel: Yes" to "Exploratory Hypothesis (derivation pending)" — reconciles the contradiction with `/cosmic-interference` page's own language. `/research-philosophy`: added A2ACW methodology section (Defender/Challenger roles, three outcome categories, 1.4% survival rate, calibration caveat), and "What a Session Is" section for casual readers who encounter "sessions 134-2660" references without context. `/failures/page.tsx` created as server-side redirect to `/honest-assessment`. Research proposal filed: `cosmology_claim_status_after_audits.md` — frames the open research question of what the cosmology domain actually claims after Bullet Cluster sign error and MOND reparametrization diagnosis. Two explorer topics seeded: `a2acw-calibration-evidence.md` (does A2ACW have discriminating power?), `entity-criterion-novel-discrimination.md` (find PDG state where Γ < m makes a novel call, not just sides with one camp on f₀(500)).
 
 - **2026-04-25 (maintainer)**: Four-persona review (2026-04-25) confirmed researcher's cross-cutting observation: "almost every P0 fix is a framing/labeling change, not a research change." Site had done the self-audit work; fixes propagated it to the right places. (1) Badge taxonomy reconciled: honest-assessment/research-philosophy now agree on 6 tiers (removed phantom "Supported" tier). (2) /born-rule re-badged Reparametrization (no |ψ|² deviation, circular reasoning admitted). (3) tier-1-existing: TEST-01/05 overlap noted, TEST-09/10 flagged MOND-shared; effective independent novel test count is ~6, not 10. (4) galaxy-rotation: explicit McGaugh 2016 RAR attribution box added; ΔBIC missing note in Honest Caveat. (5) Four 404 pages resolved: /dark-matter-failure (full Bullet Cluster sign-error page), /cosmic-interference (stub + derivation-pending notice), /predictions (redirect to test-catalog); all added to navigation.ts. (6) hard-problem: D/S undefined caveat and 8-way convergence dependency noted. (7) chemistry 89% caveat added (prospective/retrospective decomposition unresolved). (8) coherence-explorer: γ/N_corr decoupling explained. (9) Landing page "Where to Start" expanded to include test-catalog + research-philosophy + honest-assessment. WAKE phase: 500 Mpc derivation gap identified as highest-leverage research gap; proposal filed to Synchronism repo. Explorer topics seeded: 500mpc-coherence-wavelength-derivation, chemistry-89pct-decomposition, delta-bic-galaxy-environment-ansatz, consciousness-D-S-operational-definition.
 
@@ -89,6 +91,8 @@ https://synchronism-site.vercel.app/ — 77 pages, Vercel push-to-deploy
 | Chemistry 89% prospective/retrospective decomposition | `chemistry-89pct-decomposition.md` | Open |
 | ΔBIC for galaxy environment ansatz | `delta-bic-galaxy-environment-ansatz.md` | Open |
 | Consciousness D/S operational definition | `consciousness-D-S-operational-definition.md` | Open |
+| A2ACW calibration evidence | `a2acw-calibration-evidence.md` | Open (seeded 2026-04-26) |
+| Entity criterion novel discrimination | `entity-criterion-novel-discrimination.md` | Open (seeded 2026-04-26) |
 
 ---
 

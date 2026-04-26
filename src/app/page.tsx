@@ -111,8 +111,8 @@ export default function Home() {
             <span style={{ color: '#f59e0b' }}>
               <strong>1</strong> untested with 8-way convergence
             </span>
-            <span style={{ color: '#22c55e' }}>
-              <strong>1</strong> consistent with 14,760 galaxies
+            <span style={{ color: '#f59e0b' }}>
+              <strong>1</strong> galaxy rotation reparametrization (dark matter mechanism structurally failed)
             </span>
           </div>
           <span style={{ color: 'var(--color-accent-violet)', fontSize: '0.9rem', marginTop: '0.75rem', display: 'inline-block' }}>
@@ -171,10 +171,11 @@ export default function Home() {
               <Link href="/galaxy-rotation" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Cosmology</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  Dark matter reframed, galaxy rotation curves tested on 14,760 galaxies,
-                  MOND&apos;s a&#x2080; derived from cosmology.
+                  Galaxy rotation tested on 14,760 galaxies (MOND reparametrization + environment
+                  scatter). Dark matter mechanism: structural failure (Bullet Cluster sign error,
+                  March 2026).
                 </p>
-                <span className="badge badge-supported">Strongly Supported</span>
+                <span className="badge badge-speculative">Structural Problems</span>
               </Link>
 
               <Link href="/gamma-boundary" className="card" style={{ textDecoration: 'none' }}>

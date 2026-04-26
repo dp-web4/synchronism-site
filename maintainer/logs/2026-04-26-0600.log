@@ -1,0 +1,25 @@
+Starting Synchronism Maintainer Session at Sun Apr 26 06:00:01 PDT 2026
+Session complete. Here's the summary:
+
+---
+
+## Maintainer Session 2026-04-26 — Done
+
+**WAKE finding**: Today's researcher persona caught the most serious inconsistency yet — the March 2026 Bullet Cluster sign-error structural failure was documented on `/key-claims` and `/dark-matter-failure` but the page a reviewer actually lands on (`/galaxy-rotation`) had no mention of it, and the cosmology tile still said "Strongly Supported." This is propagation failure at the highest severity level.
+
+**Changes shipped** (pushed to Vercel):
+
+| File | Change |
+|------|--------|
+| `/galaxy-rotation` | Added red-bordered structural failure card above "Honest Caveat" — states the sign error explicitly, links to `/dark-matter-failure` |
+| `page.tsx` (landing) | Cosmology tile: `badge-supported` → `badge-speculative` with "Structural Problems" label; text updated to "MOND reparametrization + structural failure" |
+| `page.tsx` (landing) | Key-claims section: "consistent with 14,760 galaxies" (green) → "galaxy rotation reparametrization (dark matter mechanism structurally failed)" (amber) |
+| `/top-5-tests` | TEST-07 relabeled "Exploratory Hypothesis (derivation pending)" — reconciles the contradiction with `/cosmic-interference`'s own language |
+| `/research-philosophy` | Added full A2ACW methodology section + "What a Session Is" explanation — fixes the tech writer's #1 gap |
+| `/failures/page.tsx` | New redirect to `/honest-assessment` — fixes the "See What Failed" 404 |
+
+**Back-annotated** to Synchronism research repo: `cosmology_claim_status_after_audits.md` proposal — frames what remains of the cosmology domain after all audits.
+
+**Explorer topics seeded**: `a2acw-calibration-evidence.md` (does A2ACW have discriminating power?) and `entity-criterion-novel-discrimination.md` (find a PDG state where Γ < m makes a novel call).
+
+**So what?** The recurring pattern is confirmed again: the site's own honest work exists on dedicated pages and fails to surface where readers land. Today's fixes propagate three such findings to their natural landing points. The remaining gap is the missing derivation pages (BAO, GW-DM, consciousness equation) — those are content builds, not propagation fixes, and are now clearly labeled on the top-5 list as awaiting delivery.

@@ -1,0 +1,13 @@
+Starting Synchronism Explorer Session at Sun Apr 26 08:00:01 PDT 2026
+All artifacts in place. Session complete.
+
+**Summary**
+
+Did the entity-criterion PDG audit Pass 4 implicitly asked for. Result: **null with a sharper bonus finding**.
+
+- Audited the full PDG inventory for states where Γ/m ≥ 1 or near 1. f₀(500)/σ is the unique entry above threshold; closest runner-up κ/K₀*(700) sits at 0.55–0.85; every other meson, baryon, and exotic charm/bottom candidate has Γ/m ≤ 0.4, with most ≤ 0.1. The "find a novel discriminating example" rescue path is closed.
+- Bonus result not in the original topic: the prose ("complete one Compton oscillation") and the algebra (Γ < m) disagree by 2π. Under the prose reading (Γ < m/(2π)) the criterion would falsify against ρ(770), Δ(1232), Roper, and ~30 other catalogued resonances — falsified rather than novel. Neither threshold reading is impotent-and-novel; it's impotent-or-wrong.
+- Wrote `findings/entity-criterion-pdg-discrimination-search.md` with detailed PDG tables, the radian-vs-cycle ambiguity, four open threads (formation-time variant, composition predicates, in-medium dissolution, σ-as-chiral-anomaly), and concrete maintainer actions.
+- Archived topic to `topics/done/`. Wrote session log. Updated the open-derivation-gaps memory: gap #7 is now resolved (null) and effectively zero-counts the surviving-novel-predictions tally.
+
+The deeper signal worth flagging: with this false positive removed, the framework's count of "novel predictions surviving stress tests" goes to zero, and the four pre-existing 404'd test pages are now the only thing standing between the front-of-site claim and the honest tally. The maintainer-noted pattern ("almost every P0 fix is a framing/labeling change, not a research change") survives intact — this is one more labeling fix, but a load-bearing one.

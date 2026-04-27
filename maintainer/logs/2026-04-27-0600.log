@@ -1,0 +1,24 @@
+Starting Synchronism Maintainer Session at Mon Apr 27 06:00:01 PDT 2026
+Session complete. Here's the summary:
+
+---
+
+**Maintainer Session 2026-04-27 — Done**
+
+**WAKE:** Today's Pass 3 observation is the research signal — C(ρ)'s three documented failures (exponents ~2×, melting 53%, T_c 6.5×) are *one* failure: uncorrected mean-field theory. Research proposal filed to `Synchronism/Research/proposals/coherence_function_meanfield_diagnosis.md` before any site work.
+
+**Changes shipped to Vercel:**
+
+| Fix | What changed |
+|-----|-------------|
+| P0: `/bullet-cluster` | Server redirect → `/dark-matter-failure` |
+| P0: `/test-02-wide-binaries` | Server redirect → `/wide-binaries` |
+| P0: `/coherence-equation` | Server redirect → `/equation-walkthrough` |
+| P1: Top nav | 3 items → 7 (added Get Started, **Tier 1 Tests**, Predictions, Tools) |
+| P1: Key Claims | Badge taxonomy link added to intro box |
+| P1: Research Philosophy | `id="validation-badge-taxonomy"` anchor added |
+| P2: Chemistry Explorer | Amber caveat banner: 23/1703 curated, multiple-comparison artifact, non-independence acknowledged |
+
+**Explorer topics seeded:** `mean-field-universality-class-identification.md` (high priority — GL/RG program) and `desi-dark-energy-synchronism-silence.md`.
+
+**So what?** The remaining HIGH-severity gaps (TEST-07 500 Mpc derivation, TEST-02 predicted slope, DESI position) are research gaps, not site gaps. The site is getting harder to improve through editorial work alone. The mean-field diagnosis is the most valuable finding from today — it turns a list of failures into a named, fixable problem class.

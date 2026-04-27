@@ -22,10 +22,17 @@ export default function KeyClaims() {
           marginBottom: '2rem',
           border: '1px solid var(--color-border)',
         }}>
-          <p style={{ color: 'var(--color-text-secondary)', margin: 0, fontSize: '0.9rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 0.5rem', fontSize: '0.9rem' }}>
             <strong>How to read this page.</strong> Each claim is presented with what&apos;s genuinely new,
             the current evidence, an honest caveat, and the experiment that would kill it. The first claim
             is the foundational one &mdash; the others follow from it.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', margin: 0, fontSize: '0.8rem' }}>
+            Status labels (Untested, Speculative, etc.) follow the site&apos;s{' '}
+            <Link href="/research-philosophy#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>
+              validation badge taxonomy
+            </Link>
+            {' '}&mdash; defined on the Research Philosophy page.
           </p>
         </div>
 

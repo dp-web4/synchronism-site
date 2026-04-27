@@ -22,6 +22,34 @@ export default function RootLayout({
           <nav className="nav-links" aria-label="Main navigation">
             <SiteSearch />
             <Link
+              href="/first-encounter"
+              style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
+              title="Getting Started"
+            >
+              Get Started
+            </Link>
+            <Link
+              href="/tier-1-existing"
+              style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
+              title="Tier 1 tests that could falsify Synchronism"
+            >
+              Tier 1 Tests
+            </Link>
+            <Link
+              href="/test-catalog"
+              style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
+              title="24 experiments by tier"
+            >
+              Predictions
+            </Link>
+            <Link
+              href="/interactive-tools"
+              style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
+              title="Interactive tools"
+            >
+              Tools
+            </Link>
+            <Link
               href="/glossary"
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
               title="30+ terms defined"

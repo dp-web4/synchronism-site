@@ -84,6 +84,26 @@ export default function ChemistryCorrelationExplorer() {
           filter by regime. This is a curated sample from 1,703 phenomena.
         </p>
 
+        <div style={{
+          background: 'rgba(245, 158, 11, 0.08)',
+          border: '1px solid rgba(245, 158, 11, 0.3)',
+          borderRadius: '0.5rem',
+          padding: '0.875rem 1rem',
+          marginBottom: '1.25rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#f59e0b' }}>Methodological caveat:</strong>{' '}
+          This display shows 23 hand-curated rows from 1,703 phenomena. Selecting the highest-correlation
+          rows from a large pool inflates apparent effect sizes by construction (multiple-comparison
+          artifact). The 1,703 phenomena are also not statistically independent &mdash; many share
+          underlying physical mechanisms. The r-values shown are Pearson correlations from exploratory
+          curve-fitting, not held-out prediction accuracy. The{' '}
+          <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}
+          acknowledges this; the full null distribution and out-of-sample decomposition remain open
+          research questions.
+        </div>
+
         {/* Regime filter */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
           <button

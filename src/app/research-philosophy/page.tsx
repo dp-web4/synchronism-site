@@ -71,7 +71,7 @@ export default function ResearchPhilosophy() {
           <li>47 genuine contributions out of ~3,308 sessions = 1.4% discovery rate. That&apos;s the honest number.</li>
         </ul>
 
-        <h2>Validation Badge Taxonomy</h2>
+        <h2 id="validation-badge-taxonomy">Validation Badge Taxonomy</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
           Every scientific claim on this site carries a validation badge. Here is what each status means:
         </p>

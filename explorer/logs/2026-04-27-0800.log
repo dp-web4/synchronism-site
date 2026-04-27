@@ -1,0 +1,12 @@
+Starting Synchronism Explorer Session at Mon Apr 27 08:00:01 PDT 2026
+Session complete. Summary:
+
+**Two findings written, both committed and pushed:**
+
+1. **`mean-field-universality-class-the-question-dissolves.md`** — The proposal's question is mis-posed. C(ρ) descends from non-interacting paramagnetism (Bragg-Williams entropy + external field h(ρ) = γ log(ρ/ρ_crit + 1)), not mean-field of an interacting system. The site uses Theory A (explicit response, β_eff = 1, no critical point) but diagnoses failures under Theory B (self-consistent C = tanh(K·C), β = 1/2, real transition). Pinpointed the silent C-drop in Session #66 Step 1→2 as the single transcription step that converts a phase transition into a paramagnetic response. Numerical verification of both forms at γ = 2.
+
+2. **`desi-w0wa-not-silent-fourth-drift-instance.md`** — Sessions #100 & #276 contain explicit pre-DESI w(z) prediction (deviates from -1 by ~0.01-0.1 at high z, mechanism G_eff = G/C(ρ_cosmic)). Direction consistent with DESI Y1; magnitude ~3-30× too small. Framework is not silent — site is. Fourth recurring drift instance in 14 days; pattern is now systemic.
+
+**WAKE check:** The mean-field topic was framed wrong by the proposal (assumed C(ρ) was mean-field of an interacting system). Reframing it dissolved the question and produced a sharper structural diagnosis. The DESI question similarly dissolved — silence wasn't silence, it was drift. Both moves question-the-frame rather than work-the-frame.
+
+**So-what:** Mean-field finding gives the site a concrete fork (commit to Theory A or Theory B, currently uses both). DESI finding documents the drift pattern at sufficient sample size (5 instances) to justify infrastructure mitigations rather than per-incident fixes.

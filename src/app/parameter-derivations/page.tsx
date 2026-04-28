@@ -21,6 +21,13 @@ export default function ParameterDerivations() {
       </p>
 
       <section className="section content-width">
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '1.25rem', borderLeft: '3px solid var(--color-dark-border)', paddingLeft: '0.75rem' }}>
+          Badge labels on this page: <strong>Motivated Ansatz</strong> and <strong>Motivated Choice</strong> are
+          sub-types of <em>Speculative</em> &mdash; indicating the parameter is physically motivated
+          but not uniquely derived. <strong>Freeman&apos;s Law Re-expressed</strong> is a sub-type of <em>Reparametrization</em>.
+          See <a href="/research-philosophy#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>badge taxonomy</a> for the six official tiers.
+        </p>
+
         <h2>The Complete Chain</h2>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -99,11 +106,15 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>5. &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#x2248; 110 M&#x2609;/pc&sup2;</h3>
-              <ValidationBadge status="validated" label="12% Error" />
+              <ValidationBadge status="reparametrization" label="Freeman&apos;s Law Re-expressed" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #89</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Freeman&apos;s surface density law. Observed: 124 M&#x2609;/pc&sup2;. From first principles.
+              Freeman&apos;s surface density law (Freeman 1970): observed 124 M&#x2609;/pc&sup2;, 12% error.
+              The combination cH&#x2080;/G has dimensions of surface density, so this is dimensional
+              bookkeeping &mdash; expressing Freeman&apos;s empirical value via cosmological constants, not
+              deriving it from physics. Re-badged from &ldquo;Validated&rdquo; (2026-04-28): the 12% agreement
+              is not sufficient to claim derivation of what is, in origin, an observational law.
             </p>
           </div>
 

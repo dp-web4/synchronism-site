@@ -71,8 +71,13 @@ export default function FirstEncounter() {
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
         A guided walk through the core ideas. No prerequisites needed.
       </p>
-      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '2rem' }}>
-        7 short pages &mdash; ~90 seconds each. Use the progress bar above each card to jump to any step.
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
+        7 short pages &mdash; ~90 seconds each. Use the progress bar to jump to any step.
+      </p>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '2rem' }}>
+        <strong>New here?</strong> This 10-minute intro is the fastest path to understanding the framework.
+        Want a more structured journey? <a href="/learning-paths" style={{ color: 'var(--color-accent-blue)' }}>Learning Paths</a> offers
+        Beginner / Intermediate / Advanced routes with 6–8 steps each.
       </p>
 
       {/* Progress */}

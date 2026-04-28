@@ -148,7 +148,7 @@ export default function ResearchPhilosophy() {
 
         <h2>How Research Is Conducted: A2ACW</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          <strong>A2ACW</strong> (AI-to-AI Collaborative Whiteboarding) is the adversarial
+          <strong>A2ACW</strong> (AI-to-AI Adversarial Collaboration Workshop) is the adversarial
           protocol used to stress-test claims in this framework. Rather than a single AI agent
           generating and validating its own output, two agents take opposing roles:
         </p>

@@ -42,7 +42,7 @@ const tests = [
     id: 'TEST-15',
     tier: 'Tier 3',
     cost: '$1M–$5M',
-    why: 'General relativity predicts exactly zero correlation between gravitational wave (GW) propagation and dark matter distribution. Any nonzero signal would be revolutionary. From GW170817: α < 3.0 × 10⁻¹⁵.',
+    why: 'GW170817 already constrains Synchronism to GR-equivalent at |α| < 3.0 × 10⁻¹⁵ (Baker et al. 2017). Synchronism is consistent with GR\'s exact-zero prediction — meaning this constraint was passed vacuously. This test discriminates only if Synchronism predicts a positive signal above zero, which it does not currently. Listed to track if a positive-signal prediction is added.',
     kill: 'No correlation at 10⁻¹⁶ level after 20+ events',
     color: 'var(--color-accent-violet)',
   },
@@ -52,7 +52,7 @@ const tests = [
     id: 'TEST-07',
     tier: 'Tier 1*',
     cost: '$0',
-    why: 'Exploratory hypothesis (derivation pending). The ~500 Mpc scale has not been derived from the framework\'s parameters — the /cosmic-interference page explicitly states "this is not a prediction in the scientific sense." Listed here because if the scale is derived, it would be unique to Synchronism. Not yet a decisive test.',
+    why: 'Candidate only — derivation pending. The ~500 Mpc scale has not been derived from the framework\'s parameters. The /cosmic-interference page explicitly states "this is not a prediction in the scientific sense." Listed here to track progress; if the scale is derived from first principles, it would be unique to Synchronism. Until then, not yet a decisive test.',
     kill: 'No oscillations above 3σ out to 2000 Mpc',
     color: '#f59e0b',
   },
@@ -109,19 +109,19 @@ export default function Top5Tests() {
         <h2>The Strategy</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            Two of the top five are confirmed Tier 1 (TEST-04, TEST-02 — zero cost, existing data).
+            Two decisive tests are Tier 1 (TEST-04, TEST-02 — zero cost, existing data).
             Start there. If both fail, Synchronism&apos;s cosmological predictions are dead and
             no further investment is warranted. If any succeed, they fund the case for TEST-11
-            (EEG, $150K) and eventually TEST-15 (GW correlation, $1M+).
+            (EEG, $150K).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem' }}>
             This is how science should work: cheapest tests first, escalate only on success.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-            * TEST-07 (Cosmic Interference, #5) is listed as Tier 1 in the test catalog but carries
-            a caveat: the 500 Mpc scale has not been derived from the framework. Until that derivation
-            exists, it is an exploratory hypothesis, not a falsifiable prediction.
-            <Link href="/cosmic-interference" style={{ color: 'var(--color-accent-blue)', marginLeft: '0.25rem' }}>See status &rarr;</Link>
+            * TEST-15 (GW correlation, #4) was already constrained by GW170817 (Baker+ 2017);
+            it moves from &ldquo;future test&rdquo; to &ldquo;monitoring&rdquo; until a positive-signal prediction is added.
+            TEST-07 (Cosmic Interference, #5) has no derivation yet &mdash; it is a candidate, not a current prediction.
+            <Link href="/cosmic-interference" style={{ color: 'var(--color-accent-blue)', marginLeft: '0.25rem' }}>See derivation status &rarr;</Link>
           </p>
         </div>
 

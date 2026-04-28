@@ -99,6 +99,21 @@ export default function GalaxyPlotter() {
           and Synchronism predictions. The gap between Newtonian and observed is what
           &#x039B;CDM calls &ldquo;dark matter.&rdquo;
         </p>
+        <div style={{
+          background: 'rgba(245, 158, 11, 0.08)',
+          border: '1px solid rgba(245, 158, 11, 0.25)',
+          borderRadius: '0.375rem',
+          padding: '0.6rem 0.9rem',
+          marginBottom: '1rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-muted)',
+        }}>
+          <strong style={{ color: '#f59e0b' }}>Note:</strong> V<sub>flat</sub> is taken from existing
+          SPARC/MOND fits, not independently predicted by Synchronism. The violet curve demonstrates
+          shape recovery with one coherence parameter &mdash; it is a consistency check, not a
+          parameter-free prediction. See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</a> for
+          the honest accounting.
+        </div>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
           {galaxies.map((g, i) => (

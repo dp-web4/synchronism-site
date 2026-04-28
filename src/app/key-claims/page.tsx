@@ -295,7 +295,7 @@ export default function KeyClaims() {
         {/* === CLAIM 3: DARK MATTER === */}
         <div className="card" style={{
           marginBottom: '1.5rem',
-          borderLeft: '3px solid #38bdf8',
+          borderLeft: '3px solid #ef4444',
         }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.15rem' }}>
@@ -306,12 +306,12 @@ export default function KeyClaims() {
               fontSize: '0.75rem',
               padding: '0.2rem 0.6rem',
               borderRadius: '1rem',
-              background: 'rgba(245, 158, 11, 0.15)',
-              color: '#f59e0b',
+              background: 'rgba(239, 68, 68, 0.15)',
+              color: '#ef4444',
               fontWeight: 500,
               whiteSpace: 'nowrap',
             }}>
-              Speculative &mdash; Structural Problems
+              Failed &mdash; Mechanism Under Revision
             </span>
           </div>
 

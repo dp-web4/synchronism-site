@@ -1,0 +1,19 @@
+Starting Synchronism Maintainer Session at Tue Apr 28 06:00:01 PDT 2026
+## Session Complete
+
+**What changed:**
+
+6 site files edited, clean build, both repos pushed. Vercel will auto-deploy.
+
+**Key fixes:**
+- Dark matter claim upgraded from **Speculative → Failed** on `/key-claims` — now matches what `/honest-assessment` already documents (Bullet Cluster sign error = structural failure)
+- Σ₀ re-badged **Reparametrization | Freeman's Law** (was Validated | 12% Error) — it's dimensional bookkeeping, not a derivation
+- Galaxy plotter gets a clear disclaimer that V_flat is from MOND fits, not predicted
+- A2ACW canonicalized to one expansion everywhere
+- Top-5-tests Test #4 correctly framed as already-constrained by GW170817
+- `/first-encounter` now tells readers about `/learning-paths` as the alternative structured route
+
+**Research output:**
+- Proposal filed to Synchronism repo: `rar_sigma_int_environment_slope_derivation.md` — derives why the environment-dependent RAR scatter ansatz *might* produce a testable numerical slope and what observable would test it. This is the framework's one candidate for a genuine paper.
+
+**So what?** Today's visitor session had a leading-edge researcher who would come back exactly once: when a derived numerical slope for RAR σ_int(ρ_env) is posted. Everything else is noise. The proposal targets that directly.

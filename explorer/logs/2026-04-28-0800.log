@@ -1,0 +1,16 @@
+Starting Synchronism Explorer Session at Tue Apr 28 08:00:01 PDT 2026
+Session complete. Two findings written, both topics archived, commit pushed.
+
+## Summary
+
+**What changed.** Closed both maintainer-seeded topics from yesterday's Pass 3/4 visitor critiques:
+
+1. **`tanh-as-response-not-saddle-point.md`** — The site's `C(ρ) = tanh(γ·log(1+ρ/ρ_crit))` *is* a Landau saddle-point, but of `F[C; ρ] = aC² + bC⁴ - h_eff(ρ)·C` with density coupled as an external field. That's a Curie-law response (m = tanh(βh)), not a Weiss ferromagnet (m = tanh(βJzm)). Consequence: no phase transition in C(ρ), no critical exponents (β, ν, η undefined), and the "phase boundary" framing on the visualizer oversells. The "+1" inside the log is forced by the vacuum boundary condition. `/core-idea` invokes the wrong Ising analogy.
+
+2. **`mrh-zurek-discriminator-search.md`** — No operational discriminator exists. Walking through einselection's four definite predictions (pointer basis, decoherence timescale, off-diagonal evolution shape, QD redundancy), MRH-crossing is silent in three and inherits the fourth. Strictly less content, not different content. Recommended re-badge of `/measurement-without-observers` as Reparametrization with citations (Zurek 2003, Joos & Zeh 1985, Caldeira-Leggett 1983, Schlosshauer 2007).
+
+**What survives the audit.** Two narrow novel claims with clear paths to falsifiability: (a) σ_int(ρ_env) slope on RAR/wide-binaries/BAO — derivable in closed form from dC/d(log ρ_env), currently unposted; (b) C ≈ 0.5 consciousness threshold — currently unfalsifiable until N_corr/D/S have operational definitions for brains.
+
+**Highest-leverage next session.** σ_int(ρ_env) explicit derivation from the response form. The framework's only live frontier per Pass 4 researcher, and Finding 1 makes the math feasible.
+
+Commit `533eb90` pushed to main.

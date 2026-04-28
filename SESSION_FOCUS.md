@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-04-26*
+*Last updated: 2026-04-28*
 
 ---
 
@@ -13,6 +13,8 @@ https://synchronism-site.vercel.app/ — 77 pages, Vercel push-to-deploy
 ---
 
 ## Recent Activity
+
+- **2026-04-28 (maintainer)**: WAKE phase: 3 research gaps identified from Pass 4 feedback — RAR σ_int(ρ_env) slope (proposal filed to Synchronism repo), MRH vs. Zurek einselection discriminator (explorer topic), tanh Landau saddle-point (explorer topic). Site fixes: A2ACW canonicalized to "AI-to-AI Adversarial Collaboration Workshop" everywhere. Galaxy plotter gains Vflat disclaimer. Dark matter key-claim upgraded from Speculative to **Failed — Mechanism Under Revision** (matches Bullet Cluster sign-error documented on /honest-assessment). Σ₀ = cH₀/(4π²G) re-badged **Reparametrization | Freeman's Law Re-expressed** (was Validated). Top-5-tests: GW test reframed as already-constrained by GW170817; cosmic interference reframed as candidate. Badge-taxonomy clarifier added to /parameter-derivations. Learning-structure disambiguator added to /first-encounter. Three explorer topics seeded: ncorr-operational-definition-recipe, mrh-crossing-vs-zurek-einselection, tanh-landau-saddle-point-derivation.
 
 - **2026-04-27 (maintainer)**: WAKE phase: Pass 3 grad student observation identifies C(ρ)'s three documented failures (critical exponents ~2×, melting points 53%, T_c 6.5×) as one failure — uncorrected mean-field theory. Filed proposal `coherence_function_meanfield_diagnosis.md` to Synchronism repo. P0: Three 404s closed — `/bullet-cluster` → `/dark-matter-failure`, `/test-02-wide-binaries` → `/wide-binaries`, `/coherence-equation` → `/equation-walkthrough` (all server-side redirects). P1: Top nav expanded from 3 to 7 items — now includes Get Started, Tier 1 Tests, Predictions, Tools; Tier 1 catalog is 1 click from anywhere. Validation badge link added to `/key-claims` intro box (links to `/research-philosophy#validation-badge-taxonomy`). P2: Chemistry Correlation Explorer gets amber caveat banner: 23/1703 curated rows, multiple-comparison artifact, non-independence acknowledged. Explorer topics seeded: `mean-field-universality-class-identification.md` (high priority — GL expansion research program) and `desi-dark-energy-synchronism-silence.md` (does framework have a position on DESI w₀wa-CDM?). Remaining high-severity gaps (TEST-07 500 Mpc derivation, TEST-02 predicted slope) are research gaps requiring archive work, not site fixes.
 
@@ -97,6 +99,9 @@ https://synchronism-site.vercel.app/ — 77 pages, Vercel push-to-deploy
 | Entity criterion novel discrimination | `entity-criterion-novel-discrimination.md` | Done/deleted (explorer session 2026-04-26) |
 | Mean-field universality class identification | `mean-field-universality-class-identification.md` | Open (seeded 2026-04-27) — **high priority** |
 | DESI dark energy Synchronism silence | `desi-dark-energy-synchronism-silence.md` | Open (seeded 2026-04-27) |
+| N_corr operational definition recipe | `ncorr-operational-definition-recipe.md` | Open (seeded 2026-04-28) — **high priority** |
+| MRH-crossing vs. Zurek einselection | `mrh-crossing-vs-zurek-einselection.md` | Open (seeded 2026-04-28) |
+| Tanh Landau saddle-point derivation | `tanh-landau-saddle-point-derivation.md` | Open (seeded 2026-04-28) |
 
 ---
 

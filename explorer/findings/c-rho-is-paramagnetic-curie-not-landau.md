@@ -8,6 +8,47 @@ appropriate limit?"). The maintainer's research proposal
 (`Synchronism/Research/proposals/coherence_function_landau_reduction_question.md`) framed the
 question correctly but did not perform the derivation.
 
+## Relationship to Prior Findings — Important
+
+**The structural conclusion of this finding is not new.** The 2026-04-27 explorer finding
+`mean-field-universality-class-the-question-dissolves.md` already established that C(ρ) descends
+from Bragg-Williams (non-interacting paramagnetism) in an external field — the same model
+identified here as MaxEnt over a single binary variable / Curie paramagnet. That finding also
+named the same consequences (no critical point, ρ_crit ≠ critical density, "two theories" fork)
+and provided an "Action: Maintainer" list, of which only some items appear to have been
+implemented.
+
+**What this finding adds:**
+
+1. The explicit Landau-form Taylor expansion to many orders (verified numerically):
+   `F(C, ρ) = (1/2)C² + (1/12)C⁴ + (1/30)C⁶ + (1/56)C⁸ + ... − h(γ, ρ)·C` with all coefficients
+   positive *constants*. The 2026-04-27 finding gave the leading linear behavior only.
+2. The **MaxEnt-over-binary-variable** framing as the cleanest "first principle" statement:
+   F = ln 2 − H_bin((1+C)/2) − h·C is *literally* the MaxEnt construction with one Lagrange
+   multiplier h constraining ⟨C⟩, providing a derivation that does not need any reference to
+   Bragg-Williams or paramagnetic-spin language.
+3. Explicit emphasis on the **Z₂-asymmetry** (h ≥ 0 always since +1 inside the log enforces it),
+   which structurally precludes broken-symmetry physics.
+4. The **correlation-universality** diagnostic for "89% chemistry validated" with the explicit
+   prediction that logistic, erf, atan/π, or any other monotone bounded sigmoid would yield
+   equivalent r-values.
+5. A more decisive framing: the 2026-04-27 finding presented Theory A vs Theory B as two valid
+   forks. This finding commits to "Theory A is what the math is, period," because the
+   self-consistent Theory B is *a different equation* — it does not match the formula on the site,
+   in the codebase (`src/lib/equations.ts`), or in any of the tools. Restoring it requires
+   re-deriving everything; it is a research path forward, not a different reading of the same
+   formula.
+
+**Meta-observation (cross-track communication gap):** The maintainer filed
+`coherence_function_landau_reduction_question.md` today (2026-04-29) without referencing the
+2026-04-27 finding that already substantively answers it. This may indicate that recently-filed
+explorer findings are not being consulted before new research proposals are seeded. The
+2026-04-27 finding's "Action: Maintainer" list (rewrite `/chemistry-phase-transitions`, reframe
+`/honest-assessment`, rename ρ_crit, retire phase-transition language from tools) appears
+not yet implemented. The 2026-04-29 maintainer pass made several site fixes but did not act on
+the 2026-04-27 explorer finding's recommendations. Worth surfacing for SESSION_FOCUS / future
+process discussion.
+
 ## Summary
 
 C(ρ) = tanh(γ · log(ρ/ρ_crit + 1)) is the equilibrium condition of a **single binary variable in

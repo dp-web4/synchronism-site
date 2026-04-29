@@ -65,6 +65,13 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'Discovered in SPARC data: what you see (baryonic matter) predicts what you get (total gravitational acceleration) with very small scatter. Synchronism predicts the scatter should be environment-dependent.',
     learnMore: '/galaxy-rotation',
   },
+  'BTFR': {
+    term: 'BTFR',
+    fullName: 'Baryonic Tully-Fisher Relation',
+    brief: 'Empirical power-law between a galaxy\'s total baryonic mass and its flat rotation velocity: M_bar ∝ V_flat^n.',
+    explanation: 'The BTFR is one of the tightest empirical relations in galaxy dynamics: baryonic mass (stars + gas) scales as a power law of the asymptotic flat rotation velocity. The slope n depends on the sample regime: n → 4 in deep-MOND galaxies (SPARC-dominated), n ≈ 2.75 for transition-regime full samples (Synchronism Session 193), n → 2 near-Newtonian. Lelli et al. 2019 found n = 3.85 ± 0.09 for the SPARC deep-MOND-dominated sample — consistent with the regime-dependent prediction. The BTFR is a textbook MOND signature; a positive result would be consistent with both MOND and Synchronism.',
+    learnMore: '/tier-1-existing',
+  },
   'A2ACW': {
     term: 'A2ACW',
     fullName: 'AI-to-AI Adversarial Collaboration Workshop',

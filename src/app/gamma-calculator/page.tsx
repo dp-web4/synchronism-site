@@ -9,10 +9,10 @@ function gammaFromNcorr(n: number): number {
 }
 
 function regimeInfo(g: number): { label: string; color: string; desc: string } {
-  if (g > 1.4) return { label: 'Quantum', color: '#8b5cf6', desc: 'Few correlated particles. Individual quantum behavior dominates. Decoherence is fast.' };
-  if (g > 0.6) return { label: 'Boundary (γ ≈ 1)', color: '#f59e0b', desc: 'Quantum-classical edge. Phase transitions, chemistry, consciousness threshold.' };
-  if (g > 0.2) return { label: 'Strongly Correlated', color: '#38bdf8', desc: 'Enzymes, magnets, coordinated quantum behavior.' };
-  return { label: 'Macroscopic Coherence', color: '#10b981', desc: 'Superconductors, BEC, superfluids. Many particles acting as one. Classical collective behavior.' };
+  if (g > 1.4) return { label: 'Weakly Correlated', color: '#8b5cf6', desc: 'Few correlated particles. C(ρ) is near zero — low coherence in the Synchronism sense. Note: N_corr is the correlated/uncorrelated axis, not the quantum/classical axis; a single particle (N_corr = 1) can be quantum.' };
+  if (g > 0.6) return { label: 'Boundary (γ ≈ 1)', color: '#f59e0b', desc: 'Transition zone. Phase transitions, chemistry, consciousness threshold sit near this boundary.' };
+  if (g > 0.2) return { label: 'Strongly Correlated', color: '#38bdf8', desc: 'Enzymes, magnets, large cooperative ensembles. C(ρ) is high.' };
+  return { label: 'Collective Regime', color: '#10b981', desc: 'Superconductors, BEC, superfluids (N_corr ≫ 1). C(ρ) saturates near 1. These systems are quantum by standard tests (Josephson effect, interference) — the high N_corr here reflects collective correlation, not classical behavior.' };
 }
 
 const presets = [

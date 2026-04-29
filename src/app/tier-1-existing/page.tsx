@@ -14,6 +14,7 @@ type Test = {
   prediction: string;
   kill: string;
   alert?: string;
+  derivationHref?: string;
 };
 
 const tests: Test[] = [
@@ -53,6 +54,7 @@ const tests: Test[] = [
     time: '6 months',
     prediction: 'BAO peak shifts ~10⁻⁴ between high/low-density regions',
     kill: 'BAO identical everywhere to 10⁻⁵ precision',
+    derivationHref: '/bao-coherence-modulation',
   },
   {
     id: 'TEST-05',
@@ -80,6 +82,7 @@ const tests: Test[] = [
     time: '6 months',
     prediction: 'Galaxy cluster separations show oscillatory modulation at λ ~ 500 Mpc',
     kill: 'No oscillations above 3σ out to 2000 Mpc',
+    derivationHref: '/cosmic-interference',
   },
   {
     id: 'TEST-08',
@@ -158,6 +161,13 @@ export default function Tier1Existing() {
               {t.alert && (
                 <p style={{ color: '#f59e0b', fontSize: '0.8rem', marginTop: '0.5rem', padding: '0.5rem', background: 'rgba(245,158,11,0.1)', borderRadius: '4px', borderLeft: '3px solid #f59e0b' }}>
                   <strong>⚠ Status note:</strong> {t.alert}
+                </p>
+              )}
+              {t.derivationHref && (
+                <p style={{ marginTop: '0.5rem', fontSize: '0.85rem' }}>
+                  <Link href={t.derivationHref} style={{ color: 'var(--color-accent-blue)' }}>
+                    Derivation status &rarr;
+                  </Link>
                 </p>
               )}
             </div>

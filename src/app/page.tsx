@@ -181,10 +181,11 @@ export default function Home() {
               <Link href="/gamma-boundary" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Chemistry</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  1,703 phenomena at the &#x03B3; &#x2248; 1 boundary. Sound velocity correlation r = 0.982.
-                  Melting point prediction: 53% error (honest failure).
+                  1,703 phenomena at the &#x03B3; &#x2248; 1 boundary. Sound velocity r = 0.982.
+                  Melting point prediction: 53% error. The 89% consistency rate reflects
+                  Landau-universal sigmoid behavior near criticality — not a Synchronism-unique prediction.
                 </p>
-                <span className="badge badge-validated">89% Validated</span>
+                <span className="badge badge-speculative">89% Boundary-Consistent</span>
               </Link>
 
               <Link href="/hard-problem" className="card" style={{ textDecoration: 'none' }}>

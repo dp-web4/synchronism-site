@@ -180,6 +180,28 @@ export default function ResearchPhilosophy() {
           and maintains the validation badge taxonomy. Every badge is the product of at least one
           full A2ACW challenge cycle.
         </p>
+
+        <div className="card" style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.3)', marginBottom: '1.5rem' }}>
+          <h3 style={{ color: '#ef4444', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
+            The In-Distribution Limitation
+          </h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+            A2ACW adversarial agents <strong>share the same training distribution</strong>. Two AI models
+            trained on the same physics corpus will share the same blind spots — they jointly miss what
+            the literature missed, and jointly converge on what the literature over-represents. The
+            protocol cannot detect errors that are systematic across the entire training corpus.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', marginBottom: 0 }}>
+            This is the structural ceiling on the 1.4% discovery rate: it is an upper bound on what
+            in-distribution adversarial AI-AI collaboration can find. The reparametrizations the
+            framework identified (Abrikosov-Gor&apos;kov, Milgrom-Verlinde, Freeman, Landau
+            sigmoids) are exactly what you would predict from in-distribution debate — the corpus
+            already contained these patterns. <strong>This does not invalidate the method, but it
+            means A2ACW cannot substitute for out-of-distribution evaluation by domain experts
+            who are not in the training loop.</strong>
+          </p>
+        </div>
+
         <div className="card" style={{ background: 'var(--color-bg-secondary)', marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: 0 }}>
             <strong>Calibration note:</strong> A2ACW quantity (3,308 sessions) is not calibration.

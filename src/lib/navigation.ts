@@ -520,12 +520,20 @@ export const navigationTree: NavigationTree = {
       related: ['/tier-1-existing', '/tier-2-pilots', '/cosmic-interference'],
     },
     {
+      title: 'BAO Coherence Modulation (TEST-04)',
+      href: '/bao-coherence-modulation',
+      desc: 'Density-dependent BAO peak shift ~10⁻⁴ — derivation pending, estimator not yet specified',
+      keywords: ['BAO', 'baryon acoustic', 'coherence modulation', 'DESI', 'density split', 'TEST-04'],
+      prerequisites: ['/tier-1-existing'],
+      related: ['/top-5-tests', '/tier-1-existing', '/cosmic-interference'],
+    },
+    {
       title: 'Cosmic Interference Patterns (TEST-07)',
       href: '/cosmic-interference',
       desc: 'Galaxy cluster oscillations at λ ~ 500 Mpc — derivation pending',
       keywords: ['cosmic', 'interference', 'BAO', 'oscillation', '500 Mpc', 'cluster'],
       prerequisites: ['/tier-1-existing'],
-      related: ['/top-5-tests', '/tier-1-existing', '/cosmology-predictions'],
+      related: ['/top-5-tests', '/tier-1-existing', '/bao-coherence-modulation', '/cosmology-predictions'],
     },
     {
       title: 'Publication Roadmap',

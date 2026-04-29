@@ -52,35 +52,41 @@ export default function ParameterDerivations() {
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #66</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              tanh arises naturally in mean-field Ising models (m = tanh(&beta;Jzm)). However, in mean-field
-              theory the order parameter feeds back via a self-consistency equation. Here, C(&#x03C1;) is
-              evaluated directly with no self-consistency loop. tanh is a natural choice from the Landau theory
-              family, but other sigmoids (logistic, erf) share the same qualitative properties. The fractal
-              coherence bridge failure (0/7 boundaries) is consistent with this being a generic sigmoid, not
-              a uniquely derived form.
+              tanh is a <strong>phenomenological choice</strong> from the Landau-universality family of
+              sigmoid functions. Other sigmoids (logistic, erf) share the same qualitative properties
+              and would produce indistinguishable physics near γ ≈ 1. The fractal coherence bridge
+              failure (0/7 boundaries on 36 tests) is consistent with tanh being a generic sigmoid
+              here, not a uniquely derived form.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              <strong>Note on the Ising analogy:</strong> tanh arises in mean-field Ising models as
+              m = tanh(βJzm) — but that tanh comes from the <em>self-consistency equation</em>
+              m = tanh(βJz·m), where m feeds back into itself. C(ρ) has no such self-consistency
+              loop: it is evaluated directly at the input ρ with no fixed-point iteration. The Ising
+              tanh is derived; this tanh is chosen. These are structurally different justifications.
             </p>
           </div>
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>3. A = 4&#x03C0;/(&#x03B1;&sup2;GR&#x2080;&sup2;) &#x2248; 0.029</h3>
+              <h3>3. A = 4&#x03C0;/(&#x03B2;<sub>J</sub>&sup2;GR&#x2080;&sup2;) &#x2248; 0.029</h3>
               <ValidationBadge status="validated" label="Jeans Criterion | 5% Agreement" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #53, #66</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              &#x03B1; = &#x03BB;<sub>Jeans</sub> / R<sub>half</sub> is the dimensionless Jeans-length-to-galaxy-size ratio
-              (Session 53). Empirically &#x03B1; &#x2248; 1.1 &#x00B1; 0.2 across SPARC galaxies;
-              &#x03B1; = 1.0 is the fiducial. From the Jeans criterion (&#x03C1;<sub>crit</sub> = V&#x00B2; / (G&#x03B1;&#x00B2;R<sub>half</sub>&#x00B2;))
+              &#x03B2;<sub>J</sub> = &#x03BB;<sub>Jeans</sub> / R<sub>half</sub> is the dimensionless Jeans-length-to-galaxy-size ratio
+              (Session 53). Empirically &#x03B2;<sub>J</sub> &#x2248; 1.1 &#x00B1; 0.2 across SPARC galaxies;
+              &#x03B2;<sub>J</sub> = 1.0 is the fiducial. From the Jeans criterion (&#x03C1;<sub>crit</sub> = V&#x00B2; / (G&#x03B2;<sub>J</sub>&sup2;R<sub>half</sub>&sup2;))
               with R&#x2080; = 8 kpc and the 4&#x03C0; factor from spherical surface-area integration (Session 66),
               A = 0.0294 vs empirical 0.028 — 5% agreement.
             </p>
-            <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              <strong>Correction (2026-04-24):</strong> &#x03B1; is <em>not</em> the electromagnetic
-              fine-structure constant (&#x03B1;<sub>em</sub> &#x2248; 1/137). An earlier version of this page
-              made that identification, creating a spurious puzzle (why is &#x03B1;<sub>em</sub>&#x00B2; in galactic
-              dynamics?). The answer is: it isn&apos;t. With &#x03B1;<sub>em</sub>&#x00B2; &#x2248; 5&#x00D7;10<sup>&minus;5</sup>,
-              the formula yields A &#x2248; 550 (km/s)<sup>&minus;2</sup> — 20,000&#x00D7; too large. The formula only
-              closes at 5% with &#x03B1; = O(1), which is the Jeans ratio. No electromagnetic coupling is implied.
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              <strong>Symbol note (2026-04-24 correction):</strong> &#x03B2;<sub>J</sub> is the Jeans ratio &#x03BB;<sub>Jeans</sub>/R<sub>half</sub>
+              &mdash; an O(1) structural ratio, <em>not</em> the electromagnetic fine-structure constant
+              &#x03B1;<sub>em</sub> &#x2248; 1/137. The formula was previously written with &#x03B1;, which invited
+              that misread. With &#x03B1;<sub>em</sub>&sup2; &#x2248; 5&#x00D7;10<sup>&minus;5</sup>, the formula
+              yields A &#x2248; 550 (km/s)<sup>&minus;2</sup> — 20,000&#x00D7; too large. The formula only closes
+              at 5% with &#x03B2;<sub>J</sub> = O(1). No electromagnetic coupling is implied.
             </p>
           </div>
 

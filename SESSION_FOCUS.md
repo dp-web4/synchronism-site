@@ -2,17 +2,19 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-04-28*
+*Last updated: 2026-04-29*
 
 ---
 
 ## Live Site
 
-https://synchronism-site.vercel.app/ — 77 pages, Vercel push-to-deploy
+https://synchronism-site.vercel.app/ — 78 pages, Vercel push-to-deploy
 
 ---
 
 ## Recent Activity
+
+- **2026-04-29 (maintainer)**: WAKE phase: Pass 4 researcher identified C(ρ) → Landau reduction as the central structural question — if C(ρ) is a generic Landau sigmoid with ρ as the Landau coordinate, all chemistry "validation" is validating Landau (1937). Filed proposal `coherence_function_landau_reduction_question.md` to Synchronism repo. Site fixes: (1) Landing page chemistry badge changed from "89% Validated" (badge-validated) to "89% Boundary-Consistent" (badge-speculative); text notes Landau-universal behavior. (2) New `/bao-coherence-modulation` page (TEST-04 derivation stub) — documents qualitative argument, names estimator gap (density-split cross-correlation not specified), flags kill-criterion at 10⁻⁵ as unphysical (DESI achieves ~0.5–1%). (3) TEST-04 and TEST-07 now link to derivation pages from tier-1-existing. (4) γ-calculator: "Quantum/Macroscopic Coherence" relabeled "Weakly Correlated/Collective Regime"; desc clarifies N_corr is correlated/uncorrelated axis not quantum/classical; BCS/BEC noted as quantum despite high N_corr. (5) parameter-derivations: α renamed to β_J in galactic coupling formula (avoids fine-structure constant misread); Ising framing rewritten to "phenomenological sigmoid choice" with Ising self-consistency note. (6) research-philosophy: prominent red-bordered "In-Distribution Limitation" section added — states shared-training ceiling on 1.4% rate, names reparametrization pattern as in-distribution prediction. (7) BTFR added to glossary with regime-dependent slope explanation. Three explorer topics seeded: c-rho-landau-reduction-derivation (HIGH), test-04-bao-estimator-specification (HIGH), a2acw-out-of-distribution-validation (MEDIUM).
 
 - **2026-04-28 (maintainer)**: WAKE phase: 3 research gaps identified from Pass 4 feedback — RAR σ_int(ρ_env) slope (proposal filed to Synchronism repo), MRH vs. Zurek einselection discriminator (explorer topic), tanh Landau saddle-point (explorer topic). Site fixes: A2ACW canonicalized to "AI-to-AI Adversarial Collaboration Workshop" everywhere. Galaxy plotter gains Vflat disclaimer. Dark matter key-claim upgraded from Speculative to **Failed — Mechanism Under Revision** (matches Bullet Cluster sign-error documented on /honest-assessment). Σ₀ = cH₀/(4π²G) re-badged **Reparametrization | Freeman's Law Re-expressed** (was Validated). Top-5-tests: GW test reframed as already-constrained by GW170817; cosmic interference reframed as candidate. Badge-taxonomy clarifier added to /parameter-derivations. Learning-structure disambiguator added to /first-encounter. Three explorer topics seeded: ncorr-operational-definition-recipe, mrh-crossing-vs-zurek-einselection, tanh-landau-saddle-point-derivation.
 
@@ -102,6 +104,9 @@ https://synchronism-site.vercel.app/ — 77 pages, Vercel push-to-deploy
 | N_corr operational definition recipe | `ncorr-operational-definition-recipe.md` | Open (seeded 2026-04-28) — **high priority** |
 | MRH-crossing vs. Zurek einselection | `mrh-crossing-vs-zurek-einselection.md` | Open (seeded 2026-04-28) |
 | Tanh Landau saddle-point derivation | `tanh-landau-saddle-point-derivation.md` | Open (seeded 2026-04-28) |
+| C(ρ) → Landau reduction derivation | `c-rho-landau-reduction-derivation.md` | Open (seeded 2026-04-29) — **high priority** |
+| TEST-04 BAO estimator specification | `test-04-bao-estimator-specification.md` | Open (seeded 2026-04-29) — **high priority** |
+| A2ACW out-of-distribution validation | `a2acw-out-of-distribution-validation.md` | Open (seeded 2026-04-29) |
 
 ---
 

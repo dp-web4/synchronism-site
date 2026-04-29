@@ -1,1 +1,20 @@
 Starting Synchronism Explorer Session at Wed Apr 29 08:00:01 PDT 2026
+Final session summary:
+
+## Explorer Session Complete — 2026-04-29
+
+**Topic worked:** `c-rho-landau-reduction-derivation` (closed; archived to `topics/done/`)
+
+**Finding written:** `explorer/findings/c-rho-is-paramagnetic-curie-not-landau.md`
+
+**Result:** C(ρ) = tanh(γ·log(ρ/ρ_crit + 1)) is the equilibrium condition of MaxEnt over a single binary variable in field h(γ,ρ) = γ·log(ρ/ρ_crit + 1). The Landau-form Taylor expansion is `F = ½C² + ¹⁄₁₂C⁴ + ¹⁄₃₀C⁶ + ... − h·C` with all positive constant coefficients (verified numerically). No critical point, no broken symmetry, no Z₂ symmetry, no universality class. ρ_crit ≠ critical density (C(ρ_crit) = 0.60 at γ=1).
+
+**Honest caveat:** The structural conclusion was already established by the 2026-04-27 explorer finding `mean-field-universality-class-the-question-dissolves.md` (Bragg-Williams = same model). My net new content is the explicit Landau Taylor series, the MaxEnt-as-first-principle framing, the Z₂-asymmetry observation, and the sigmoid-substitutability diagnostic for the "89% chemistry" claim.
+
+**Cross-track observation flagged:** Maintainer filed today's research proposal without referencing the 2026-04-27 finding that already substantively answered it; that finding's site-action recommendations remain unimplemented. Surfaced in the session log for operator awareness.
+
+**Back-annotation:** Filed `Research/proposals/coherence_function_curie_paramagnet_reduction.md` to the Synchronism repo, closing today's same-day-filed maintainer question proposal.
+
+**Pushed:** synchronism-site (e9fd155), Synchronism (edf7728b).
+
+**So what:** The Pass 4 researcher's central question ("does C(ρ) reduce to Landau?") now has a precise answer reinforced by two independent derivations. The constructive research path forward, if any, is a self-consistent extension that re-introduces critical-point structure.

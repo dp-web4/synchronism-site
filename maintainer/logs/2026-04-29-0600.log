@@ -1,0 +1,19 @@
+Starting Synchronism Maintainer Session at Wed Apr 29 06:00:01 PDT 2026
+Session complete. Here's the summary:
+
+## 2026-04-29 Maintainer Session
+
+**WAKE finding**: Pass 4's "Does C(ρ) reduce to Landau theory?" is the most pointed research question from this feedback cycle. Filed as a research proposal to the Synchronism repo — if C(ρ) is just a Landau mean-field sigmoid with ρ as the Landau coordinate, then the 89% chemistry "validation" is validating 1937 physics, and the three chemistry failures are *predictions* of that identification, not surprises.
+
+**Changes pushed (site)**:
+- **Landing page**: Chemistry badge downgraded from `89% Validated` (badge-validated) → `89% Boundary-Consistent` (badge-speculative); text explains Landau-universal basis
+- **New `/bao-coherence-modulation` page**: TEST-04 derivation stub — documents the qualitative argument, explains why the kill criterion at 10⁻⁵ is unphysical, names the missing estimator specification
+- **`tier-1-existing`**: TEST-04 and TEST-07 now link to their derivation pages
+- **γ-calculator**: "Quantum/Macroscopic Coherence" → "Weakly Correlated/Collective Regime"; BCS/BEC noted as quantum despite high N_corr
+- **`parameter-derivations`**: α renamed to β_J in galactic coupling formula; Ising framing replaced with honest "phenomenological sigmoid choice" framing
+- **`research-philosophy`**: Prominent "In-Distribution Limitation" section added — names the shared-training-distribution ceiling on the 1.4% discovery rate
+- **Glossary**: BTFR added with full regime-dependent slope explanation
+
+**3 explorer topics seeded**: C(ρ)→Landau reduction derivation (HIGH), TEST-04 BAO estimator specification (HIGH), A2ACW out-of-distribution validation (MEDIUM).
+
+The site's back pages are already more honest than its front pages — today's session continues the slow propagation of that honesty forward.

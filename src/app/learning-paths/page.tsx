@@ -156,7 +156,9 @@ export default function LearningPaths() {
       <div className={view === 'difficulty' ? '' : 'grid-2'} style={view === 'difficulty' ? { display: 'flex', flexDirection: 'column', gap: '1.5rem' } : undefined}>
         {paths.map(path => (
           <div key={path.name} className="card">
-            <h2 style={{ color: path.color, fontSize: '1.25rem' }}>{path.name}</h2>
+            <h2 style={{ color: path.color, fontSize: '1.25rem' }}>
+              <Link href={path.steps[0].href} style={{ color: path.color, textDecoration: 'none' }}>{path.name}</Link>
+            </h2>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
               {path.desc}
             </p>

@@ -45,6 +45,7 @@ const tests: Test[] = [
     time: '3 months',
     prediction: 'TFR residual captures all intrinsic scatter (51% improvement)',
     kill: 'TFR residual explains <20% of scatter',
+    alert: 'Kill criterion status — ambiguous: the current measured value is R² = 0.14 (environmental term explains 14% of total RAR scatter), which is already below the <20% threshold. Either (a) the kill criterion is triggered and TEST-03 should be classified Failed, (b) the kill criterion was stated against the wrong denominator (should be MOND-residual scatter, not total scatter), or (c) the "51% improvement" prediction has no archive derivation source and the whole test setup needs reconstruction. This ambiguity is under review — see research proposal test03_kill_criterion_self_trigger.md.',
   },
   {
     id: 'TEST-04',

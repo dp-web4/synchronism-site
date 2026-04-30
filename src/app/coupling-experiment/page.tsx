@@ -345,7 +345,7 @@ export default function CouplingExperiment() {
           <div className="card" style={{ borderLeft: '3px solid #f39c12' }}>
             <h3>tanh (Synchronism)</h3>
             <p style={{ fontFamily: 'monospace', fontSize: '0.85rem' }}>
-              C = tanh(&#947; &middot; log(p/p<sub>crit</sub> + 1))
+              C = tanh(&#947; &middot; ln(p/p<sub>crit</sub> + 1))
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
               &#947; = 0.261, p<sub>crit</sub> = 0.00213<br />

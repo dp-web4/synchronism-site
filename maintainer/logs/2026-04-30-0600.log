@@ -1,0 +1,121 @@
+Starting Synchronism Maintainer Session at Thu Apr 30 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-04-30
+
+## Feedback Reviewed
+
+- **Visitor log: 2026-04-30** — Rich 4-persona pass. Key friction across all personas:
+  - P0: Home page describes tanh as "derived from binary Boltzmann statistics" — contradicts /parameter-derivations explicit disclaimer
+  - P0: `log` vs `ln` ambiguity — coherence-explorer numerical outputs only match natural log; physicists read `log` as log₁₀
+  - P0: TEST-03 kill criterion (< 20% scatter explained) appears already triggered by R²=0.14
+  - P0: Galaxy count 14,760 vs 14,585 inconsistency across pages
+  - P1: Beginner learning-path card heading not clickable
+  - P1: `/what-synchronism-is-not` is the most visitor-recommended page but buried as a small nav link
+  - P1: A2ACW training-distribution limitation buried four clicks deep in research-philosophy
+  - P1: "kill criterion" used throughout test catalog but not defined in glossary
+  - P2: MRH explained only as acronym expansion at /first-encounter, no plain-language meaning
+  - P2: Phase Boundary Visualizer example systems not anchored to γ values on slider
+  - P2: /consciousness-demo "8-way convergence on 0.499" is geometric (tanh midpoint), not empirical; no calibration exists
+
+- **Forum**: no new feedback
+- **Explorer**: no new findings since 2026-04-29
+
+## WAKE Phase
+
+Two research-direction findings, not just site gaps:
+
+1. **TEST-03 self-trigger (R²=0.14 vs <20% kill criterion)**: The framework may already be in its own kill region on TEST-03. The site reports R²=0.14 honestly but doesn't reclassify. Either (a) TEST-03 is failed and belongs on the honest-assessment page, (b) the kill criterion was stated against the wrong denominator, or (c) the "51% improvement" prediction has no archive derivation source. **Proposal filed**: `test03_kill_criterion_self_trigger.md` to Synchronism Research/proposals/.
+
+2. **Wide-binary density slope undefined**: TEST-02 (the framework's only genuinely discriminating prediction vs MOND) has no specified slope, normalization, or density range. Without these it is not falsifiable. Explorer topic seeded as highest-priority item.
+
+## Changes Made (Site)
+
+### `src/app/page.tsx` (home page)
+- Equation description: "tanh form is derived from binary Boltzmann statistics (a theorem)" → "tanh shape is motivated by Landau-class mean-field theory — a phenomenological choice, not a derived result"
+- `log(ρ/ρ_crit + 1)` → `ln(ρ/ρ_crit + 1)` in equation display
+- Galaxy count: added "175 SPARC + 14,585 ALFALFA-SDSS" breakdown under the 14,760 stat
+- Added `What Synchronism Is Not` as a featured green-bordered card above "Where to Start"
+- Added A2ACW methodology honesty note (amber banner): adversarial agents share training distribution and cannot substitute for out-of-distribution domain-expert evaluation
+
+### `src/app/coherence-function/page.tsx`
+- `log(...)` → `ln(...)` in equation display
+
+### `src/app/why-synchronism/page.tsx`
+- `log(...)` → `ln(...)` in equation display
+- "This was derived from first principles" → "The tanh shape is motivated by Landau-universality (a phenomenological choice)" — fixes second overclaim instance
+
+### `src/app/core-idea/page.tsx`
+- `log(...)` → `ln(...)` in equation display
+
+### `src/app/coherence-explorer/page.tsx`
+- `log(...)` → `ln(...)` in display text only (Math.log in computation correctly unchanged)
+
+### `src/app/equation-walkthrough/page.tsx`
+- Step 3: "Take the logarithm" → "Take the natural logarithm"; `log(...)` → `ln(...)`; clarified +1 is a regularizer with no physical scale
+- Step 4: `γ × log(...)` → `γ × ln(...)`
+- Step 5: "tanh is derived, not chosen. It's the only function satisfying the axioms." (false) → "tanh shape is phenomenologically motivated, not uniquely derived — any sigmoid satisfying the boundary conditions works"
+- Full equation display: `log` → `ln`
+
+### `src/app/first-encounter/page.tsx`
+- Step 1: `log(...)` → `ln(...)` in equation
+- MRH definition: now reads "the part of the world a system can feel from where it sits" before introducing the acronym
+
+### `src/app/scale-navigator/page.tsx`
+- `log(...)` → `ln(...)`
+
+### `src/app/coupling-experiment/page.tsx`
+- `tanh(γ · log(p/p_crit + 1))` → `tanh(γ · ln(p/p_crit + 1))`
+
+### `src/lib/terms.ts` (glossary)
+- `C(ρ)` brief: `log` → `ln`
+- `tanh` explanation: "Synchronism uses tanh because it arises from the physics, not an arbitrary choice" → honest: motivated by Landau-universality, any sigmoid equally valid (matches /parameter-derivations)
+- **New term added**: `kill criterion` — full definition linking to /test-catalog
+- `mean-field theory` explanation: removed claim that overstated derivation
+
+### `src/app/tier-1-existing/page.tsx`
+- TEST-03: added amber alert noting R²=0.14 appears to be below the <20% kill criterion; three interpretations given; references research proposal
+
+### `src/app/learning-paths/page.tsx`
+- Path card headings now wrapped in `<Link>` to first step — heading clicks now navigate correctly
+
+### `src/app/phase-boundary-visualizer/page.tsx`
+- Added approximate γ anchor markers in SVG: BEC/SC (γ≈0.15), water/enzymes (γ≈0.85), ideal gas (γ≈1.6), plus existing galaxies (γ=2)
+- Added note that positions are approximate
+
+### `src/app/consciousness-demo/page.tsx`
+- Added ValidationBadge "Speculative — no calibration exists"
+- Added prominent amber caveat: C=0.50 is the tanh inflection point by geometry; 8-way convergence is expected from any half-saturation argument; no calibration mapping EEG/fMRI to C-axis exists
+- "Strongest evidence for the consciousness threshold prediction" → honest framing: convergence consistent with both real threshold and mathematical artifact; external calibration required
+
+## Back-Annotations (Research Repo)
+
+- **New proposal filed**: `Research/proposals/test03_kill_criterion_self_trigger.md`
+  - Documents that R²=0.14 may already trigger TEST-03's <20% kill criterion
+  - Frames three interpretations (triggered, wrong denominator, undeferred prediction)
+  - Calls for archive audit to find source of "51% improvement" prediction and "<20% threshold"
+
+## Topics Seeded for Explorer
+
+- `test03-kill-criterion-archive-audit.md` (HIGH) — Audit whether "51% improvement" and "<20% kill criterion" have archive derivation sources; determine whether TEST-03 is already failed
+- `wide-binary-density-slope-derivation.md` (HIGH) — Derive the predicted slope, normalization, density range for TEST-02; only novel Synchronism discriminator vs MOND; currently no quantitative prediction exists
+- `hubble-sigma8-tension-framework-posture.md` (MEDIUM) — Does the framework have anything to say about Hubble tension or σ₈ tension? At minimum needs explicit scope statement
+
+## Open Items (Deferred)
+
+- Galaxy Rotation environmental-scatter ansatz formula: named as "Synchronism's specific contribution" but not displayed. Needs archive research.
+- ΔBIC vs MOND-only: acknowledged missing; computation required.
+- N_corr worked example for chemistry: deferred, needs archive research.
+- TEST-04 BAO amplitude derivation: still "pending" on /bao-coherence-modulation.
+- /wide-binary-test 404: cannot build without a derived prediction.
+- Glossary search/alphabetization (Pass 2 medium severity): deferred to a low-priority cleanup session.
+- Badge taxonomy enforcement (Pass 2 high severity): home page still uses some ad-hoc labels. Full audit would be a multi-hour pass. Partial progress made (tanh and equation description corrections remove two inconsistencies).
+- Previous link asymmetry on /mrh, /gamma-boundary, /honest-assessment: low-priority.
+- MOND curve missing from galaxy plotter overlay: medium-priority; caveat already above chart.
+
+## So What?
+
+The most consequential change today is that the site no longer claims the equation was "derived" anywhere — all five instances of that overclaim are now accurate. This removes the single most exploitable contradiction between the front page and the honest internal pages.
+
+TEST-03 is the most interesting research finding: the framework may have crossed its own kill threshold and is currently in an unstated ambiguous state. The research proposal forces the archive to answer whether this is a failure, a mis-specification, or an ambiguity. Either outcome improves the framework's epistemic state.
+
+The wide-binary slope remains the single highest-leverage missing piece. A quantitative slope prediction would make TEST-02 immediately testable against existing Gaia DR3 data. The explorer should prioritize this above any other physics topic.

@@ -84,7 +84,7 @@ export default function CoherenceExplorer() {
 
         <p style={{ marginBottom: '1rem' }}>
           Adjust &#x03B3; and &#x03C1;<sub>crit</sub> to see how the coherence function
-          C(&#x03C1;) = tanh(&#x03B3; &middot; log(&#x03C1;/&#x03C1;<sub>crit</sub> + 1)) responds.
+          C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1)) responds.
         </p>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>

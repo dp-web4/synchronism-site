@@ -21,7 +21,7 @@ export default function CoherenceFunction() {
         </p>
 
         <EquationDisplay size="lg" label="The Synchronism coherence function">
-          C(&#x03C1;) = tanh(&#x03B3; &middot; log(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
+          C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </EquationDisplay>
 
         <p>

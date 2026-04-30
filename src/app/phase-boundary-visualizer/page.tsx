@@ -49,7 +49,8 @@ export default function PhaseBoundaryVisualizer() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           The three regimes of &#x03B3; define qualitatively different physics. Drag the slider
-          to explore where different systems live.
+          to explore where different systems live. Labeled positions on the axis are approximate
+          (&#x03B3; = 2/&#x221A;N<sub>corr</sub>; operational N<sub>corr</sub> values are estimated, not precisely measured for most systems).
         </p>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
@@ -68,9 +69,15 @@ export default function PhaseBoundaryVisualizer() {
             <text x={30 + (1.0 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#f59e0b" fontSize="11">Boundary</text>
             <text x={30 + (2.7 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#8b5cf6" fontSize="11">Quantum</text>
 
-            {/* γ = 2 marker */}
+            {/* Anchored example markers */}
+            <line x1={30 + (0.15 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.15 / 4.0) * 540} y2={barY + barH + 25} stroke="#10b981" strokeWidth="1" />
+            <text x={30 + (0.15 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#10b981" fontSize="8">BEC/SC</text>
+            <line x1={30 + (0.85 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.85 / 4.0) * 540} y2={barY + barH + 25} stroke="#f59e0b" strokeWidth="1" />
+            <text x={30 + (0.85 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#f59e0b" fontSize="8">water/enzymes</text>
             <line x1={30 + (2.0 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (2.0 / 4.0) * 540} y2={barY + barH + 25} stroke="#38bdf8" strokeWidth="1" />
-            <text x={30 + (2.0 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#38bdf8" fontSize="9">γ=2 (galaxies)</text>
+            <text x={30 + (2.0 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#38bdf8" fontSize="8">γ=2 (galaxies)</text>
+            <line x1={30 + (1.6 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (1.6 / 4.0) * 540} y2={barY + barH + 25} stroke="#8b5cf6" strokeWidth="1" />
+            <text x={30 + (1.6 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#8b5cf6" fontSize="8">ideal gas</text>
 
             {/* Current position marker */}
             <circle

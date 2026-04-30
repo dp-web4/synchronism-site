@@ -8,12 +8,12 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 const steps = [
   {
     title: 'Start with Presence',
-    content: `Everything in the universe has presence — compatible structural elements available within a system's relevancy boundary (its Markov Relevancy Horizon, or MRH). At the simplest level, this is density: how much stuff is packed into a given space. A single electron in a vacuum? Very low presence. The core of a neutron star? Incredibly high. But presence also encompasses temperature, energy levels, catalytic surfaces — anything that supports emergence. Synchronism starts here: presence is the universal input.`,
+    content: `Everything in the universe has presence — compatible structural elements available within a system's relevancy boundary. Think of that boundary as "the part of the world a system can feel from where it sits" — formally called the Markov Relevancy Horizon (MRH). At the simplest level, presence is density: how much stuff is packed into a given space. A single electron in a vacuum? Very low presence. The core of a neutron star? Incredibly high. But presence also encompasses temperature, energy levels, catalytic surfaces — anything that supports emergence. Synchronism starts here: presence is the universal input.`,
     highlight: '\u03C1 (presence)',
   },
   {
     title: 'The Coherence Function',
-    content: `Feed that density into: C(ρ) = tanh(γ · log(ρ/ρ_crit + 1)).
+    content: `Feed that density into: C(ρ) = tanh(γ · ln(ρ/ρ_crit + 1)).
     Out comes a number between 0 and 1. Zero means fully quantum — superposition, interference,
     wave-like behavior. One means fully classical — definite positions, particle-like, everyday physics.`,
     highlight: 'C = 0 (quantum) → C = 1 (classical)',

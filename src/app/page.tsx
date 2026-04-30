@@ -46,7 +46,7 @@ export default function Home() {
       {/* The Equation */}
       <section className="card card-highlight" style={{ marginBottom: '3rem' }}>
         <div className="equation" style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>
-          C(&#x03C1;) = tanh(&#x03B3; &middot; log(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
+          C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </div>
         <p style={{ textAlign: 'center', color: 'var(--color-accent-warm)', fontSize: '0.9rem', fontStyle: 'italic', marginBottom: '1rem' }}>
           &ldquo;Coherence is a smooth S-curve from quantum to classical, shaped by how many
@@ -59,7 +59,7 @@ export default function Home() {
             <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = critical presence threshold
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            The tanh form is derived from binary Boltzmann statistics (a theorem). The log-density argument is physically motivated. Three parameters (A, B, &#x03B2;) are fitted to data.{' '}
+            The tanh shape is <em>motivated</em> by Landau-class mean-field theory &mdash; a phenomenological choice, not a derived result. The log-density argument is physically motivated. Three parameters (A, B, &#x03B2;) are fitted to data.{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>See derivations &rarr;</Link>
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
@@ -139,6 +139,24 @@ export default function Home() {
 
       {tab === 'intro' ? (
         <>
+          {/* Methodology honest limit */}
+          <section style={{ marginBottom: '2rem' }}>
+            <div style={{
+              background: 'rgba(245,158,11,0.07)',
+              border: '1px solid rgba(245,158,11,0.25)',
+              borderRadius: '0.375rem',
+              padding: '0.7rem 1rem',
+              fontSize: '0.85rem',
+              color: 'var(--color-text-secondary)',
+            }}>
+              <strong style={{ color: '#f59e0b' }}>Methodology note:</strong>{' '}
+              This site was developed via 3,308 A2ACW sessions &mdash; AI agents stress-testing each other&apos;s claims. The adversarial agents share the same training distribution and{' '}
+              <strong>cannot substitute for out-of-distribution evaluation by domain experts.</strong>{' '}
+              The 1.4% novel-claim survival rate and public failure log are the protocol&apos;s honest outputs.{' '}
+              <Link href="/research-philosophy" style={{ color: '#f59e0b' }}>See methodology &rarr;</Link>
+            </div>
+          </section>
+
           {/* Quick Stats */}
           <section className="grid-3" style={{ marginBottom: '3rem' }}>
             <div className="card" style={{ textAlign: 'center' }}>
@@ -152,6 +170,7 @@ export default function Home() {
             <div className="card" style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>14,760</div>
               <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Galaxies analyzed</div>
+              <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>175 SPARC + 14,585 ALFALFA-SDSS</div>
             </div>
           </section>
 
@@ -197,6 +216,29 @@ export default function Home() {
                 <span className="badge badge-untested">34 Predictions</span>
               </Link>
             </div>
+          </section>
+
+          {/* What Synchronism Is Not — featured */}
+          <section style={{ marginBottom: '2rem' }}>
+            <Link href="/what-synchronism-is-not" style={{ textDecoration: 'none', display: 'block' }}>
+              <div className="card" style={{
+                border: '1px solid rgba(16,185,129,0.4)',
+                background: 'rgba(16,185,129,0.06)',
+                padding: '1rem 1.5rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '1rem',
+              }}>
+                <div>
+                  <div style={{ fontWeight: 600, color: '#10b981', marginBottom: '0.2rem' }}>What Synchronism Is Not</div>
+                  <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+                    The fastest way to calibrate expectations — plain language, no equations, no hype.
+                    Start here if you want the honest version before the interesting version.
+                  </div>
+                </div>
+                <div style={{ color: '#10b981', fontSize: '0.85rem', whiteSpace: 'nowrap', marginLeft: 'auto' }}>Read it &rarr;</div>
+              </div>
+            </Link>
           </section>
 
           {/* Guided Path */}

@@ -42,7 +42,7 @@ export default function WhySynchronism() {
       <section className="section content-width">
         <h2>The Approach</h2>
         <p>
-          Synchronism proposes a coherence function: <span className="equation-inline">C(&#x03C1;) = tanh(&#x03B3; &middot; log(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))</span>.
+          Synchronism proposes a coherence function: <span className="equation-inline">C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))</span>.
           It takes one input (density) and returns one output (coherence: how quantum or classical something is).
         </p>
         <p>
@@ -51,7 +51,7 @@ export default function WhySynchronism() {
           When &#x03B3; is small (many correlated particles), behavior is classical.
         </p>
         <p>
-          This was derived from first principles, not fitted to data. Then tested against data.
+          The tanh shape is motivated by Landau-universality (a phenomenological choice). The log-density argument is physically motivated. Then tested against data.
           Some predictions held up. Others failed.
         </p>
       </section>

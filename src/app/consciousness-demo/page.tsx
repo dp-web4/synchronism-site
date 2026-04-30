@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
+import ValidationBadge from '@/components/ValidationBadge';
 
 const approaches = [
   { name: 'Phase transition analysis', threshold: 0.48, range: [0.45, 0.52], method: 'C value at which discontinuity appears in coherence equations' },
@@ -34,11 +35,31 @@ export default function ConsciousnessDemo() {
     <>
       <Breadcrumbs currentPath="/consciousness-demo" />
       <h1>Consciousness Threshold Demo</h1>
+      <ValidationBadge status="speculative" label="Speculative — no calibration exists" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <div style={{
+          background: 'rgba(245,158,11,0.08)',
+          border: '1px solid rgba(245,158,11,0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          marginBottom: '1rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#f59e0b' }}>Calibration caveat:</strong>{' '}
+          C &#x2248; 0.50 is the inflection point (half-saturation) of any sigmoid bounded at [0, 1] &mdash;
+          including tanh. The convergence of 8 approaches on 0.499 &#x00B1; 0.012 is <strong>geometric,
+          not empirical</strong>: every approach that derives a midpoint from a tanh-based model will
+          land near 0.50 by construction. Additionally, all 8 approaches share the same framework
+          assumptions and are not independent. No calibration procedure exists to map actual EEG, fMRI,
+          or IIT-&#x03A6; measurements to the C-axis, so the kill criterion (EEG-visible threshold
+          at C &#x2248; 0.50) cannot currently be run against any dataset. Relabeled <em>Speculative</em>
+          until a calibration recipe exists.
+        </div>
         <p>
-          Eight independent approaches converge on C &#x2248; 0.50 as the consciousness
-          threshold. Hover over each approach to see its methodology and uncertainty range.
+          Eight approaches within the Synchronism framework converge on C &#x2248; 0.50 as a
+          consciousness threshold. Hover over each to see the methodology. Note the geometric caveat above.
         </p>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
@@ -139,9 +160,12 @@ export default function ConsciousnessDemo() {
             All 8 approaches fall within &#x00B1;0.03 of 0.50.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
-            This convergence is the strongest evidence for the consciousness threshold prediction.
-            However: all 8 approaches were developed within the same framework (Synchronism),
-            so they&apos;re not fully independent. External derivation would be much stronger.
+            <strong>Important:</strong> all 8 approaches were developed within Synchronism and share the
+            same tanh-based assumptions. Convergence on 0.50 is expected for any half-saturation
+            argument &mdash; it does not constitute independent empirical evidence. The convergence
+            is consistent with the threshold being real AND with it being a mathematical artifact.
+            External calibration (e.g., mapping propofol-stage EEG power spectra to a computed C value)
+            is required to distinguish these.
           </p>
         </div>
 

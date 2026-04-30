@@ -12,7 +12,7 @@ export const terms: Record<string, TermDefinition> = {
   'C(rho)': {
     term: 'C(\u03C1)',
     fullName: 'Coherence Function',
-    brief: 'Maps presence to coherence: C(\u03C1) = tanh(\u03B3 log(\u03C1/\u03C1_crit + 1)).',
+    brief: 'Maps presence to coherence: C(\u03C1) = tanh(\u03B3 ln(\u03C1/\u03C1_crit + 1)).',
     explanation: 'The central equation of Synchronism. Takes presence (\u03C1) \u2014 the density of compatible structural elements within a Markov Relevancy Horizon \u2014 and returns a coherence value between 0 and 1. Physical density (g/cm\u00B3) is one form of presence, but presence also encompasses temperature, energy levels, catalytic surfaces, and other factors that support emergence.',
     learnMore: '/coherence-function',
   },
@@ -134,14 +134,21 @@ export const terms: Record<string, TermDefinition> = {
     term: 'tanh',
     fullName: 'Hyperbolic Tangent',
     brief: 'A mathematical function that smoothly maps any input to a value between \u22121 and +1 (or 0 and 1 when shifted).',
-    explanation: 'Appears naturally in mean-field theory as the self-consistent solution for ordering in many-body systems (e.g., the Ising model of magnetism). Synchronism uses tanh because it arises from the physics, not as an arbitrary choice \u2014 though other S-curves (sigmoid, erf) share similar properties.',
+    explanation: 'In Ising mean-field theory, tanh arises naturally from the self-consistency loop m = tanh(\u03b2Jz\u00b7m). In Synchronism, there is no such self-consistency \u2014 the tanh shape is a phenomenological choice motivated by Landau-universality. Any sigmoid (logistic, erf, arctan, Hill) satisfying the same boundary conditions would be an equally valid choice. See /parameter-derivations for the explicit disclaimer.',
     learnMore: '/coherence-function',
+  },
+  'kill criterion': {
+    term: 'Kill criterion',
+    fullName: 'Falsification Threshold',
+    brief: 'A specific, pre-registered outcome that would falsify a prediction if observed.',
+    explanation: 'Each Tier-1 test has a kill criterion: a numerical threshold that, if crossed, means the framework\'s prediction is wrong. Example: TEST-02 kill is "wide-binary anomaly is independent of local stellar density." Kill criteria are stated before the data is analyzed, not after \u2014 this is what makes them falsifying rather than rationalizing. The set of kill criteria is the framework\'s most important methodological contribution.',
+    learnMore: '/test-catalog',
   },
   'mean-field theory': {
     term: 'Mean-Field Theory',
     fullName: 'Average-Interaction Approximation',
     brief: 'A physics approach where each particle feels the average effect of all others, not individual interactions.',
-    explanation: 'Simplifies many-body problems by replacing complex particle-by-particle interactions with a single "mean field." The tanh function in Synchronism\'s coherence equation comes from the self-consistency condition in mean-field theory, the same way it appears in the Ising model of magnetism.',
+    explanation: 'Simplifies many-body problems by replacing complex particle-by-particle interactions with a single "mean field." In the Ising model, the self-consistency condition m = tanh(βJz·m) produces the tanh function naturally. Synchronism borrows the tanh shape by analogy — motivated by Landau-universality — but there is no self-consistency loop in C(ρ).',
     learnMore: '/parameter-derivations',
   },
   '\u039BCDM': {

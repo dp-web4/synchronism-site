@@ -19,22 +19,22 @@ const steps = [
     key: 'ρ_crit sets the characteristic scale. It\'s system-specific but derivable.',
   },
   {
-    title: 'Step 3: Take the logarithm',
-    equation: 'log(ρ/ρ_crit + 1) — logarithmic scaling',
-    explanation: 'Why log? Because physical quantities span orders of magnitude. Sound velocity covers 3 orders; galaxy densities cover 6. Logarithms compress this naturally. The +1 prevents log(0) and ensures C(0) = 0.',
-    key: 'Log scaling is why one equation works across 80 orders of magnitude.',
+    title: 'Step 3: Take the natural logarithm',
+    equation: 'ln(ρ/ρ_crit + 1) — natural log scaling',
+    explanation: 'Why natural log? Because physical quantities span orders of magnitude. Sound velocity covers 3 orders; galaxy densities cover 6. Natural logarithms compress this. The +1 prevents ln(0) at ρ = 0 and ensures C(0) = 0. This is a physically motivated regularizer, not a derived scale.',
+    key: 'Natural-log scaling is why one equation works across 80 orders of magnitude.',
   },
   {
     title: 'Step 4: Multiply by γ',
-    equation: 'γ × log(ρ/ρ_crit + 1) — scaled by coherence parameter',
+    equation: 'γ × ln(ρ/ρ_crit + 1) — scaled by coherence parameter',
     explanation: 'γ = 2/√N_corr controls how steeply coherence rises with density. For uncorrelated systems (N_corr = 1, γ = 2), coherence rises fast. For highly correlated systems (large N_corr, γ → 0), coherence is already high everywhere.',
     key: 'γ is the only "knob" that distinguishes quantum from classical.',
   },
   {
     title: 'Step 5: Apply tanh',
-    equation: 'C(ρ) = tanh(γ · log(ρ/ρ_crit + 1))',
-    explanation: 'Why tanh? Three reasons: (1) It maps ℝ → [0,1], giving a proper probability-like measure. (2) It\'s the unique function satisfying coherence conservation under composition. (3) It naturally creates two regimes: linear growth at low ρ, saturation at high ρ.',
-    key: 'tanh is derived, not chosen. It\'s the only function satisfying the axioms.',
+    equation: 'C(ρ) = tanh(γ · ln(ρ/ρ_crit + 1))',
+    explanation: 'Why tanh? It maps any real input to [0,1], giving a proper measure between quantum and classical. The tanh shape is motivated by Landau-class mean-field theory — a sigmoid any sigmoid (logistic, erf, Hill) would serve similarly. See /parameter-derivations for the honest accounting.',
+    key: 'tanh shape is phenomenologically motivated, not uniquely derived — any sigmoid satisfying the boundary conditions works.',
   },
   {
     title: 'Step 6: Interpret the output',
@@ -133,7 +133,7 @@ export default function EquationWalkthrough() {
 
         <h2>Full Equation</h2>
         <EquationDisplay label="The Coherence Function" size="lg">
-          C(&#x03C1;) = tanh(&#x03B3; &middot; log(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
+          C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </EquationDisplay>
       </section>
 

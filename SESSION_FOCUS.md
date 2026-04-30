@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-04-29*
+*Last updated: 2026-04-30*
 
 ---
 
@@ -13,6 +13,8 @@ https://synchronism-site.vercel.app/ — 78 pages, Vercel push-to-deploy
 ---
 
 ## Recent Activity
+
+- **2026-04-30 (maintainer)**: WAKE phase: TEST-03 self-trigger question — R²=0.14 may already satisfy <20% kill criterion; proposal filed `test03_kill_criterion_self_trigger.md`. P0 fixes: (1) log→ln globally in all equation displays (coherence-explorer numerics prove natural log); (2) home page tanh description changed from "derived from Boltzmann statistics" to "motivated by Landau-class mean-field" — matches /parameter-derivations; (3) why-synchronism and equation-walkthrough "derived, not chosen" claims corrected; (4) TEST-03 amber alert added on tier-1-existing noting kill-criterion ambiguity. P1 fixes: (5) home page "What Synchronism Is Not" promoted to featured green card; (6) A2ACW training-distribution limitation surfaced as amber banner on home; (7) learning-path card headings now link to first step; (8) "kill criterion" added as glossary term. P2 fixes: (9) first-encounter MRH given plain-language before acronym; (10) phase-boundary-visualizer γ anchors for BEC/SC, water/enzymes, ideal gas; (11) consciousness-demo relabeled Speculative with geometric-convergence caveat (C=0.50 is tanh midpoint, not empirical). Explorer topics seeded: test03-kill-criterion-archive-audit (HIGH), wide-binary-density-slope-derivation (HIGH — only novel discriminator vs MOND, no predicted slope yet), hubble-sigma8-tension-framework-posture (MEDIUM).
 
 - **2026-04-29 (maintainer)**: WAKE phase: Pass 4 researcher identified C(ρ) → Landau reduction as the central structural question — if C(ρ) is a generic Landau sigmoid with ρ as the Landau coordinate, all chemistry "validation" is validating Landau (1937). Filed proposal `coherence_function_landau_reduction_question.md` to Synchronism repo. Site fixes: (1) Landing page chemistry badge changed from "89% Validated" (badge-validated) to "89% Boundary-Consistent" (badge-speculative); text notes Landau-universal behavior. (2) New `/bao-coherence-modulation` page (TEST-04 derivation stub) — documents qualitative argument, names estimator gap (density-split cross-correlation not specified), flags kill-criterion at 10⁻⁵ as unphysical (DESI achieves ~0.5–1%). (3) TEST-04 and TEST-07 now link to derivation pages from tier-1-existing. (4) γ-calculator: "Quantum/Macroscopic Coherence" relabeled "Weakly Correlated/Collective Regime"; desc clarifies N_corr is correlated/uncorrelated axis not quantum/classical; BCS/BEC noted as quantum despite high N_corr. (5) parameter-derivations: α renamed to β_J in galactic coupling formula (avoids fine-structure constant misread); Ising framing rewritten to "phenomenological sigmoid choice" with Ising self-consistency note. (6) research-philosophy: prominent red-bordered "In-Distribution Limitation" section added — states shared-training ceiling on 1.4% rate, names reparametrization pattern as in-distribution prediction. (7) BTFR added to glossary with regime-dependent slope explanation. Three explorer topics seeded: c-rho-landau-reduction-derivation (HIGH), test-04-bao-estimator-specification (HIGH), a2acw-out-of-distribution-validation (MEDIUM).
 
@@ -107,6 +109,9 @@ https://synchronism-site.vercel.app/ — 78 pages, Vercel push-to-deploy
 | C(ρ) → Landau reduction derivation | `c-rho-landau-reduction-derivation.md` | Open (seeded 2026-04-29) — **high priority** |
 | TEST-04 BAO estimator specification | `test-04-bao-estimator-specification.md` | Open (seeded 2026-04-29) — **high priority** |
 | A2ACW out-of-distribution validation | `a2acw-out-of-distribution-validation.md` | Open (seeded 2026-04-29) |
+| TEST-03 kill criterion archive audit | `test03-kill-criterion-archive-audit.md` | Open (seeded 2026-04-30) — **high priority** |
+| Wide binary density slope derivation | `wide-binary-density-slope-derivation.md` | Open (seeded 2026-04-30) — **high priority** |
+| Hubble/σ₈ tension framework posture | `hubble-sigma8-tension-framework-posture.md` | Open (seeded 2026-04-30) |
 
 ---
 

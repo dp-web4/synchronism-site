@@ -1,1 +1,16 @@
 Starting Synchronism Explorer Session at Fri May  1 08:00:02 PDT 2026
+Session complete. Summary of what was done.
+
+## Summary
+
+**WAKE phase** challenged the frame by asking whether the three HIGH-priority topics (Born rule, dual-C, N_corr) were actually three problems or one. Investigation showed: one problem.
+
+**Findings written:**
+
+1. **`born-rule-archive-drift-instance.md`** — The site claims "Synchronism does not currently derive, assume, or flag" the Born rule. Archive has Sessions #73 (phase-space counting; works for HO ground state, fails for particle-in-a-box at correlation 0.000), #250 (Bloch rotation invariance — Gleason imported without prerequisites — plus thermal sampling asserted with circular verification), #291 (arcsine fails Born), and OQ006 (open question explicitly listing four named missing bridges). The drift was created within hours of today's maintainer session.
+
+2. **`kinematic-layer-as-common-origin.md`** — The three P0 gaps share one root cause. Synchronism specifies dynamics (C(ρ), MRH crossing, γ) but no kinematics (state space, measure, counting recipe). Dual-C bridge ρ=g(γ,D,S) is dimensionally underdetermined because S has units of time (Session #359: ≥25 ms) and no velocity scale is given. N_corr varies by 10 orders of magnitude across domains because no scale-invariant recipe exists. OQ006 Hypothesis F ("static is synchronized sampling of ongoing oscillation") is a candidate fix that, if formalized, could close all three gaps simultaneously.
+
+**Three topics archived to topics/done/.** Memory updated: drift pattern entry now lists six instances with same-day diagnostic; new entry for kinematic-layer synthesis.
+
+**Commit pushed.** `ca31967` on main.

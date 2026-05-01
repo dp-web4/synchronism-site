@@ -133,6 +133,9 @@ export default function CoherenceExplorer() {
               style={{ width: '100%' }}
             />
             <p style={{ color: regimeColor, fontSize: '0.8rem', marginTop: '0.25rem' }}>{regime}</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
+              Higher &#x03B3; = sharper, more abrupt transition. Lower &#x03B3; = gentler slope, more collective behavior.
+            </p>
             {gamma > 1.5 && (
               <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.75rem', marginTop: '0.25rem' }}>
                 N<sub>corr</sub> = {(4 / (gamma * gamma)).toFixed(1)} &mdash; mean-field approximation weakens as N<sub>corr</sub> approaches 1
@@ -148,6 +151,9 @@ export default function CoherenceExplorer() {
               onChange={e => setRhoCrit(parseFloat(e.target.value))}
               style={{ width: '100%' }}
             />
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.25rem' }}>
+              Lower &#x03C1;<sub>crit</sub> = transition starts at lower density (shifts curve left). Higher = transition occurs at higher density.
+            </p>
           </div>
         </div>
 

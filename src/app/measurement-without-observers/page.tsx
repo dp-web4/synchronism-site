@@ -105,6 +105,13 @@ export default function MeasurementWithoutObservers() {
           is large enough.
         </p>
 
+        <div style={{ marginTop: '1.5rem', padding: '0.75rem 1rem', background: 'rgba(239,68,68,0.07)', borderRadius: '6px', borderLeft: '3px solid #ef4444' }}>
+          <h3 style={{ color: '#ef4444', marginTop: 0, fontSize: '0.95rem' }}>Open Gap: The Born Rule</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
+            Any measurement theory must address the Born rule: the probability of a measurement outcome is |⟨ψ|m⟩|². Standard decoherence (Zurek/Joos/Zeh) addresses this via einselection and pointer-state dynamics. Synchronism&apos;s MRH framework does not currently derive the Born rule, assume it explicitly, or flag it as an open question. The statement &ldquo;MRH crossing IS the measurement&rdquo; without a probability assignment is a description of <em>when</em> collapse occurs, not <em>what probabilities</em> the outcomes carry. Until the Born rule is either derived from MRH dynamics or explicitly assumed, this page is best read as an interpretive overlay on decoherence, not a complete measurement theory.
+          </p>
+        </div>
+
         <h2>What&apos;s Untested</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Six experimental protocols have been designed (Sessions #368-370) to test whether

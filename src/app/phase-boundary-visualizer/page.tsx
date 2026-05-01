@@ -75,9 +75,7 @@ export default function PhaseBoundaryVisualizer() {
             <line x1={30 + (0.85 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.85 / 4.0) * 540} y2={barY + barH + 25} stroke="#f59e0b" strokeWidth="1" />
             <text x={30 + (0.85 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#f59e0b" fontSize="8">water/enzymes</text>
             <line x1={30 + (2.0 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (2.0 / 4.0) * 540} y2={barY + barH + 25} stroke="#38bdf8" strokeWidth="1" />
-            <text x={30 + (2.0 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#38bdf8" fontSize="8">γ=2 (galaxies)</text>
-            <line x1={30 + (1.6 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (1.6 / 4.0) * 540} y2={barY + barH + 25} stroke="#8b5cf6" strokeWidth="1" />
-            <text x={30 + (1.6 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#8b5cf6" fontSize="8">ideal gas</text>
+            <text x={30 + (2.0 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#38bdf8" fontSize="8">γ=2 (galaxies/ideal gas)</text>
 
             {/* Current position marker */}
             <circle
@@ -134,6 +132,12 @@ export default function PhaseBoundaryVisualizer() {
               </span>
             ))}
           </div>
+        </div>
+
+        <div style={{ marginBottom: '1.5rem', padding: '0.75rem 1rem', background: 'rgba(245,158,11,0.07)', borderRadius: '6px', borderLeft: '3px solid #f59e0b' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
+            <strong>⚠ Ncorr placement caveat:</strong> The anchor positions use the formula &#x03B3; = 2/&#x221A;N<sub>corr</sub> with estimated N<sub>corr</sub> values. Two issues are unresolved: (1) Ideal gas (N<sub>corr</sub> = 1) and galaxies (N<sub>corr</sub> = 1 by convention) map to the same &#x03B3; = 2.0, even though they represent physically different contexts — this reflects that &ldquo;operational N<sub>corr</sub>&rdquo; may mean something different at galactic scales. (2) The BCS superconductor preset in the &#x03B3; Calculator uses N<sub>corr</sub> = 10,000; physical Cooper-pair coherence volumes contain ~10<sup>6</sup>–10<sup>9</sup> pairs depending on material. Until a scale-invariant N<sub>corr</sub> counting recipe is established, &#x03B3; functions partly as an estimated parameter for cross-scale placements.
+          </p>
         </div>
 
         <h2>The Three Regimes</h2>

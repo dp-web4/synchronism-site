@@ -250,6 +250,27 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'In standard physics, decoherence occurs through interaction with the environment. In Synchronism, decoherence IS the MRH crossing \u2014 when correlations extend beyond the Markov Relevancy Horizon, quantum behavior transitions to classical.',
     learnMore: '/decoherence-mrh',
   },
+  'ln': {
+    term: 'ln',
+    fullName: 'Natural Logarithm',
+    brief: 'The logarithm base e (\u2248 2.718). Compresses very large ranges into manageable numbers.',
+    explanation: 'ln(x) answers: "what power must I raise e to, to get x?" For example, ln(1) = 0, ln(e) = 1, ln(100) \u2248 4.6. In the coherence function C(\u03c1) = tanh(\u03b3 \u00b7 ln(\u03c1/\u03c1_crit + 1)), the natural log compresses the enormous density range of physical systems (interstellar gas to neutron stars spans 80+ orders of magnitude) into a range that tanh can differentiate. The "+1" inside the log ensures the argument is always \u2265 1, so ln \u2265 0 and C \u2265 0.',
+    learnMore: '/coherence-function',
+  },
+  'baryon': {
+    term: 'Baryon',
+    fullName: 'Ordinary Matter Particle',
+    brief: 'Protons, neutrons, and everything made of them \u2014 the ordinary matter you can touch.',
+    explanation: '"Baryonic matter" means ordinary matter (atoms, stars, gas, dust) as opposed to dark matter or dark energy. About 5% of the universe\'s total energy content is baryonic. When galaxy rotation pages mention "baryonic mass" or "baryon density," they mean the mass of ordinary visible matter \u2014 the stars, gas, and dust you can actually observe.',
+    learnMore: '/galaxy-rotation',
+  },
+  'BAO': {
+    term: 'BAO',
+    fullName: 'Baryon Acoustic Oscillations',
+    brief: 'A characteristic spacing (~150 Mpc) imprinted in galaxy distributions by sound waves in the early universe.',
+    explanation: 'Before the universe cooled enough for atoms to form, matter and light were coupled in a hot plasma. Sound waves propagated through this plasma, and when atoms formed (at "recombination"), these waves froze in place. Today, galaxies are preferentially spaced ~150 Mpc apart \u2014 a "standard ruler" used to measure the universe\'s expansion history. Synchronism\'s TEST-04 predicts a ~10\u207b\u2074 shift in this spacing between high- and low-density environments.',
+    learnMore: '/bao-coherence-modulation',
+  },
 };
 
 export function getTerm(key: string): TermDefinition | undefined {

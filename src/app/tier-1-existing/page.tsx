@@ -45,7 +45,7 @@ const tests: Test[] = [
     time: '3 months',
     prediction: 'TFR residual captures all intrinsic scatter (51% improvement)',
     kill: 'TFR residual explains <20% of scatter',
-    alert: 'Kill criterion status — ambiguous: the current measured value is R² = 0.14 (environmental term explains 14% of total RAR scatter), which is already below the <20% threshold. Either (a) the kill criterion is triggered and TEST-03 should be classified Failed, (b) the kill criterion was stated against the wrong denominator (should be MOND-residual scatter, not total scatter), or (c) the "51% improvement" prediction has no archive derivation source and the whole test setup needs reconstruction. This ambiguity is under review — see research proposal test03_kill_criterion_self_trigger.md.',
+    alert: 'Kill criterion TRIGGERED — literal reading: R² = 0.14 (environmental term explains 14% of total RAR scatter) is below the <20% threshold stated in the kill criterion. Under a literal reading, this test is FAILED. It remains listed here rather than on /honest-assessment only because the denominator may be mis-stated (kill criterion may have been intended against MOND-residual scatter, not total scatter) — a distinction that changes the verdict. Until the denominator is audited against the archive source, treat TEST-03 as presumptively failed. See research proposal test03_kill_criterion_self_trigger.md.',
   },
   {
     id: 'TEST-04',
@@ -84,6 +84,7 @@ const tests: Test[] = [
     prediction: 'Galaxy cluster separations show oscillatory modulation at λ ~ 500 Mpc',
     kill: 'No oscillations above 3σ out to 2000 Mpc',
     derivationHref: '/cosmic-interference',
+    alert: 'Not yet a scientific prediction: the /cosmic-interference page itself states "Without it, this is not a prediction in the scientific sense — it is an exploratory hypothesis." No amplitude has been derived from γ/ρ_crit, no mechanism is specified (sound-horizon shift? phase rotation?), and there is no engagement with DESI 2024-2025 BAO results. TEST-07 does not currently qualify as a Tier 1 falsification test. It is listed here as a speculative candidate — a prediction-in-progress, not a prediction.',
   },
   {
     id: 'TEST-08',

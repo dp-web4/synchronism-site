@@ -25,7 +25,7 @@ const tools = [
   {
     title: 'Phase Boundary Visualizer',
     href: '/phase-boundary-visualizer',
-    desc: 'Map systems onto the γ–ρ phase diagram. See where electrons, molecules, and galaxies sit relative to the quantum-classical boundary.',
+    desc: 'Drag the γ slider and see where familiar systems (ideal gas, water, BCS superconductor, galaxies) sit along the coherence axis. Note: the tool shows the γ dimension only; a full γ–ρ phase diagram is not yet implemented.',
     tags: ['Core theory', 'Intermediate'],
   },
   {
@@ -35,9 +35,9 @@ const tools = [
     tags: ['Core theory', 'Beginner'],
   },
   {
-    title: 'Coherence Demo',
+    title: 'Consciousness Threshold Demo',
     href: '/consciousness-demo',
-    desc: 'Adjust consciousness-relevant parameters (γ, D, S) and see how they affect C. Explore what the C ≥ 0.50 threshold means.',
+    desc: 'Hover over eight approaches to coherence-based consciousness (Information Integration, Phase Coherence, Neural Avalanche Criticality, and five more) and see why they converge near C ≈ 0.50. Note: all eight share the same underlying C-parameter structure — the convergence is a self-consistency check, not eight independent measurements.',
     tags: ['Consciousness', 'Intermediate'],
   },
   {

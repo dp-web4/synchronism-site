@@ -176,6 +176,25 @@ export default function HonestAssessment() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>TEST-03: ALFALFA-SDSS TFR Scatter (Kill Criterion Triggered)</h3>
+              <ValidationBadge status="failed" label="Kill Criterion Met — Denominator Under Audit" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              The TEST-03 kill criterion states: &ldquo;TFR residual explains &lt;20% of scatter.&rdquo; The measured value
+              is R&sup2; = 0.14 (environmental term explains 14% of total RAR scatter). Under a literal reading, the kill
+              criterion is triggered: 14% &lt; 20%.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              One open question: whether the kill criterion was intended against <em>total</em> RAR scatter or
+              against the residual-after-MOND scatter — a difference that could change the verdict. Until the
+              archive source is audited, TEST-03 is classified as presumptively failed. The {' '}
+              <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 catalog</Link>{' '}
+              carries a matching notice.
+            </p>
+          </div>
+
+          <div className="card">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>BTFR Universal-n Claim Withdrawn (TEST-09)</h3>
               <ValidationBadge status="untested" label="Restated as Regime-Dependent" />
             </div>

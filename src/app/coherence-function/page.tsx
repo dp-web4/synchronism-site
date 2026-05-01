@@ -11,7 +11,7 @@ export default function CoherenceFunction() {
     <>
       <Breadcrumbs currentPath="/coherence-function" />
       <h1>The Coherence Function</h1>
-      <ValidationBadge status="validated" label="Core Equation" />
+      <ValidationBadge status="speculative" label="Phenomenological Ansatz — tanh motivated, not derived" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -118,6 +118,20 @@ export default function CoherenceFunction() {
               Galaxy dynamics lives in this regime.
             </p>
           </div>
+        </div>
+
+        <h2>Relationship to C = f(&#x03B3;, D, S)</h2>
+        <div style={{ padding: '0.75rem 1rem', background: 'rgba(245,158,11,0.07)', borderRadius: '6px', borderLeft: '3px solid #f59e0b', marginBottom: '1rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
+            The consciousness and measurement pages of this site use a second form of coherence:
+            C = f(&#x03B3;, D, S) where D is decoherence and S is self-modeling. Both are called
+            &ldquo;coherence&rdquo; (C) but they are not obviously the same observable. The
+            relationship &mdash; whether there is a function &#x03C1; = g(&#x03B3;, D, S) that
+            reduces the parametric form to the density-based form &mdash; has not been derived.
+            If the reduction exists, the &ldquo;one equation&rdquo; framing is vindicated. If it
+            does not, C(&#x03C1;) and C = f(&#x03B3;, D, S) are two different observables sharing
+            a symbol. See research proposal <em>dual_C_symbol_ambiguity_and_bridge_derivation.md</em>.
+          </p>
         </div>
 
         <h2>Derivation History</h2>

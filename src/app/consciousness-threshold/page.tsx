@@ -24,12 +24,27 @@ export default function ConsciousnessThreshold() {
       <ValidationBadge status="untested" label="8-Way Convergence at C ≈ 0.50" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <div style={{ padding: '0.75rem 1rem', background: 'rgba(245,158,11,0.07)', borderRadius: '6px', borderLeft: '3px solid #f59e0b', marginBottom: '1.5rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+            <strong>Before reading the convergence:</strong> All eight approaches below are
+            Synchronism-internal cross-checks, not eight independent measurements from separate fields.
+            They share the same underlying C parameter structure — any approach that maps its
+            criterion onto the Synchronism coherence scale will land near the mathematical midpoint
+            by construction. The convergence at 0.48–0.52 is a self-consistency check on the
+            framework, not empirical corroboration from eight independent traditions.
+          </p>
+        </div>
+
         <p>
-          From the Gnosis track (11 sessions), eight independent approaches to defining
-          the consciousness threshold all converge on C &#x2248; 0.50.
+          From the Gnosis track (11 sessions), eight approaches to defining the consciousness
+          threshold &mdash; each framed within the Synchronism coherence framework &mdash; converge
+          on C &#x2248; 0.50. The mappings to their respective empirical literatures (IIT &#x03A6;
+          values, neural avalanche scaling exponents, anesthesia EEG complexity measures) are not
+          yet shown; that mapping work would be needed to test whether the convergence is empirical
+          or definitional.
         </p>
 
-        <h2>The 8 Approaches</h2>
+        <h2>The 8 Approaches (Synchronism-Internal)</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
           {approaches.map((a, i) => (
             <div key={a.name} className="card" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.75rem 1rem' }}>
@@ -44,10 +59,11 @@ export default function ConsciousnessThreshold() {
 
         <h2>What C &#x2248; 0.50 Means</h2>
         <p>
-          The consciousness threshold sits at the exact midpoint of the coherence scale.
+          The consciousness threshold sits at the midpoint of the coherence scale.
           Below 0.50: information processing without experience. Above 0.50: subjective experience
-          arises. The convergence from 8 self-consistent approaches within the Synchronism framework (range: 0.48-0.52)
-          is encouraging but not fully independent &mdash; they share the same underlying mathematical structure.
+          arises. Whether this threshold is a genuine prediction or a consequence of how the framework
+          defines C is the open question. The convergence range (0.48-0.52) is consistent but
+          not independently confirmed.
         </p>
 
         <h2>CFD Interpretation: Threshold as Critical Reynolds Number</h2>
@@ -159,7 +175,7 @@ export default function ConsciousnessThreshold() {
             Next: Qualia as Coherence &rarr;
           </Link>
           <Link href="/consciousness-demo" className="btn-secondary">
-            Threshold Visualization
+            Consciousness Threshold Demo
           </Link>
         </div>
       </section>

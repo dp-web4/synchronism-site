@@ -37,7 +37,7 @@ export default function GalaxyRotation() {
               {' '}<a href="http://astroweb.cwru.edu/SPARC/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>[Public data]</a>
             </p>
             <ul style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <li>Tight RAR confirmed (&#x03C3;<sub>int</sub> &#x2248; 0.057 dex)</li>
+              <li>Tight RAR confirmed (&#x03C3;<sub>int</sub> &#x2248; 0.057 dex) — <em>McGaugh et al. 2016 measured value, restated</em></li>
               <li>Coherence function fits within observational scatter</li>
               <li>Environment-dependent effects visible but sample too small for strong statistics</li>
             </ul>
@@ -144,6 +144,9 @@ export default function GalaxyRotation() {
           </Link>
           <Link href="/cdm-discrimination" className="btn-secondary">
             CDM Discrimination &rarr;
+          </Link>
+          <Link href="/galaxy-plotter" className="btn-secondary">
+            Galaxy Curve Plotter &rarr;
           </Link>
         </div>
       </section>

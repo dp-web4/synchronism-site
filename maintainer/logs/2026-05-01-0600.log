@@ -1,0 +1,58 @@
+Starting Synchronism Maintainer Session at Fri May  1 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-01
+
+## Feedback Reviewed
+
+- **Visitor log: 2026-05-01** — Rich four-persona pass. Cross-persona synthesis identified 7 P0 issues, 10 P1 issues, 9 P2 issues. Highest-signal findings:
+  - Pass 1 (casual): Two broken tool links (galaxy-plotter, consciousness-demo) on highest-engagement pages; equation wall on homepage; "baryon" undefined in Step 1 of equation walkthrough
+  - Pass 2 (tech writer): Same tool has three names; research-philosophy not in nav; C(ρ) vs C=f(γ,D,S) structural ambiguity; Phase Boundary Visualizer described as 2D but is 1D
+  - Pass 3 (grad student): γ Calculator and Phase Boundary Visualizer give inconsistent Ncorr placements for same systems; Born rule absent from measurement page; BCS preset 2-5 orders of magnitude off
+  - Pass 4 (researcher): TEST-03 kill criterion literally triggered (R²=0.14 < 20%); TEST-07 is self-admitted non-prediction listed as Tier 1; consciousness convergence presented before shared-structure admission
+
+## WAKE Phase Finding
+
+**The dual-C problem is a research gap, not a site gap.** Three independent personas flagged that C(ρ) and C=f(γ,D,S) share a symbol without a bridge derivation. If they're the same observable, ρ=g(γ,D,S) must exist — and that derivation doesn't appear in the archive. If they're different observables, the "one equation" homepage claim is structurally incorrect. Filed proposal to Synchronism research repo before starting site fixes.
+
+Additional note: C(ρ_crit) = tanh(γ·ln(2)) ≈ 0.76 at γ=1, but the consciousness threshold is at C=0.50. If the two C's are the same, consciousness is at sub-critical density — a meaningful physical statement or a signal the two C's are unrelated.
+
+## Changes Made (Site)
+
+### P0
+- **tier-1-existing/page.tsx**: TEST-03 alert upgraded from "ambiguous/under review" to "kill criterion TRIGGERED — literal reading: R²=0.14 < 20%"; listed as presumptively failed pending denominator audit. TEST-07 alert added: flagged as exploratory hypothesis — self-admitted on its own page as not a scientific prediction; cannot be a Tier 1 falsification test until amplitude is derived.
+- **honest-assessment/page.tsx**: TEST-03 added to "What Failed" section with "Failed — Kill Criterion Met (Denominator Under Audit)" badge and explanation.
+- **measurement-without-observers/page.tsx**: Born rule gap surfaced as explicit red-border "Open Gap: The Born Rule" section; page characterized as interpretive overlay, not a complete measurement theory.
+- **phase-boundary-visualizer/page.tsx**: Ideal gas SVG anchor corrected from γ=1.6 to γ=2.0 (consistent with γ=2/√N_corr at N_corr=1); galaxies and ideal gas now share γ=2.0 label; amber Ncorr caveat warning added.
+- **gamma-calculator/page.tsx**: Amber Ncorr preset caveat added (BCS N_corr=10,000 vs physical Cooper-pair count 10⁶–10⁹).
+- **galaxy-rotation/page.tsx**: Galaxy Curve Plotter link added to nav buttons; SPARC σ_int=0.057 dex annotated as "McGaugh et al. 2016 measured value, restated" (not a Synchronism prediction).
+- **consciousness-threshold/page.tsx**: Link renamed from "Threshold Visualization" to "Consciousness Threshold Demo"; convergence framing inverted — shared-structure amber admission leads the page before the convergence numbers.
+- **interactive-tools/page.tsx**: "Coherence Demo" renamed to "Consciousness Threshold Demo" with accurate description (hover/convergence display, not γ/D/S sliders); Phase Boundary description corrected from "γ–ρ phase diagram (2D)" to "1D γ slider".
+
+### P1
+- **coherence-function/page.tsx**: Badge changed from "validated/Core Equation" to "speculative/Phenomenological Ansatz"; dual-C bridge note added (C(ρ) vs C=f(γ,D,S) relationship unresolved, points to research proposal).
+
+### P2
+- **coherence-explorer/page.tsx**: Physical meaning captions added under both sliders.
+- **src/lib/terms.ts**: Glossary entries added for `ln` (natural logarithm), `baryon` (ordinary matter), `BAO` (Baryon Acoustic Oscillations).
+
+## Back-Annotations (Research Repo)
+
+- **Research/proposals/dual_C_symbol_ambiguity_and_bridge_derivation.md** — NEW: Three resolution paths for the dual-C ambiguity (full reduction ρ=g(γ,D,S), dual-observable naming with different symbols, archive search for existing implicit parameterization). Notes the critical C=0.50 vs C(ρ_crit)≈0.76 discrepancy. Committed and pushed to Synchronism repo.
+
+## Topics Seeded for Explorer
+
+- **ncorr-scale-invariant-definition.md** (HIGH): What counting procedure gives N_corr consistent across condensed-matter and galactic scales? Without a recipe, γ is a tunable parameter, not a physical observable.
+- **born-rule-from-mrh-dynamics.md** (HIGH): Can Born probabilities be derived from MRH-crossing dynamics? Three options: derive (genuine contribution), assume (honest), or flag open (current state). Prerequisite for /measurement-without-observers to be a measurement theory.
+- **dual-C-bridge-or-rename.md** (HIGH): Investigation of whether C(ρ) and C=f(γ,D,S) are the same observable or require different symbols. The "one equation" claim depends on resolution. Cross-references the Synchronism repo proposal.
+
+## Open Items (Deferred)
+
+- /research-philosophy not in main nav (significant IA change, warrants operator review)
+- a₀ inline citations to McCulloch/Verlinde/Smolin (~8 pages, sweep task)
+- Chemistry failure attribution (requires archive research; better as explorer topic)
+- Wide-binary functional form (waiting on slope derivation from explorer)
+- Acronym first-use expansion site-wide (P2 sweep across ~20 pages)
+
+## So What?
+
+The most important finding of this session is not a site fix — it's the dual-C structural issue surfaced by three independent visitor personas. If C(ρ) and C=f(γ,D,S) are the same observable, a bridge derivation is the most important missing piece in the archive and would vindicate the "one equation" claim. If they're not, the homepage is wrong at the level of its central organizing metaphor. This is the productive kind of wrong: a specific, resolvable question. The TEST-03 kill criterion is also now resolved to "presumptively failed" rather than "ambiguous" — which is the more honest position given the literal reading of the documented numbers.

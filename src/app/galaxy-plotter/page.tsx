@@ -104,7 +104,7 @@ export default function GalaxyPlotter() {
           border: '1px solid rgba(245, 158, 11, 0.25)',
           borderRadius: '0.375rem',
           padding: '0.6rem 0.9rem',
-          marginBottom: '1rem',
+          marginBottom: '0.75rem',
           fontSize: '0.85rem',
           color: 'var(--color-text-muted)',
         }}>
@@ -113,6 +113,20 @@ export default function GalaxyPlotter() {
           shape recovery with one coherence parameter &mdash; it is a consistency check, not a
           parameter-free prediction. See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</a> for
           the honest accounting.
+        </div>
+        <div style={{
+          background: 'rgba(239, 68, 68, 0.08)',
+          border: '1px solid rgba(239, 68, 68, 0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.6rem 0.9rem',
+          marginBottom: '1rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-muted)',
+        }}>
+          <strong style={{ color: '#ef4444' }}>Related test result (TEST-03):</strong> The Tully-Fisher
+          scatter test (R&sup2; = 0.14 against the 20% kill threshold) was <strong>triggered as Failed</strong> on
+          the same SPARC dataset. Rotation curve shape matches are qualitative; the scatter test is
+          a stricter quantitative check and it failed. <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>See Honest Assessment &rarr;</a>
         </div>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>

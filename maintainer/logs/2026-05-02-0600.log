@@ -1,0 +1,46 @@
+Starting Synchronism Maintainer Session at Sat May  2 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-02
+
+## Feedback Reviewed
+
+- **Visitor log: 2026-05-02** — four-persona pass, rich feedback. Key findings:
+  - Pass 1 (Casual): "0 Completed" on Predictions vs "14,760 galaxies matched" on home — can't tell if framework is modest or oversold. `/getting-started` 404.
+  - Pass 2 (Tech Writer): Nav "Predictions" → /test-catalog mismatch. Glossary hover system promised but not deployed. `/learning-paths` orphaned from nav. Five competing entry points. Claim-count inconsistency (3 vs 47 vs 34 vs 0).
+  - Pass 3 (Grad Student): `/key-claims` says a₀ "derives from first principles" contradicting /parameter-derivations "Dimensional Analysis + prior art." Galaxy plotter reads as strong-positive while TEST-03 (R²=0.14) is Failed.
+  - Pass 4 (Researcher): A2ACW 1.4% framed as discovery rate when it's a consistency rate. Lorentz invariance gap admitted but not surfaced up front. Novel quantitative inventory actually ~2 runnable tests.
+
+## WAKE Phase
+
+**Research-direction finding, not just site friction:** The Pass 4 researcher articulates the Lorentz invariance gap as the framework's structural kinematic problem — the discrete-lattice substrate cannot deliver SO(3)/Lorentz symmetry without an IR limit, making all relativistic-regime predictions extrapolations. This is the **fourth face** of the kinematic layer gap already documented in memory (Born rule, dual-C bridge, N_corr scale-invariance). Filed as back-annotation proposal to Synchronism research repo.
+
+## Changes Made (Site)
+
+- **`src/lib/navigation.ts`**: Parameter Derivations desc changed from "First-principles origin of every parameter" to "Status of every parameter: motivated choices, dimensional fits, reparametrizations."
+- **`src/app/layout.tsx`**: Nav "Predictions" renamed to "Test Roadmap" throughout (nav link + footer). Title updated.
+- **`src/app/test-catalog/page.tsx`**: H1 → "Test Roadmap". Badge → "24 Proposed Experiments". Added "What's Already Been Analyzed" green box listing reparametrizations and failures from Honest Assessment, with direct link.
+- **`src/app/key-claims/page.tsx`**: Claim 3 a₀ "What's new" rewrote to acknowledge prior art (McCulloch/Verlinde/Smolin) and locate contribution in interpretation, not the constant.
+- **`src/app/galaxy-plotter/page.tsx`**: Added red TEST-03 failure banner (R²=0.14 < 20% kill, "triggered as Failed") with link to Honest Assessment.
+- **`src/app/getting-started/page.tsx`**: New server-redirect `/getting-started` → `/first-encounter`. Closes the flagged 404.
+- **`src/app/research-philosophy/page.tsx`**: "1.4% discovery rate" → "1.4% internal-consistency-survival rate (not discovery rate — see below)" in two places.
+
+## Back-Annotations (Research Repo)
+
+- **`Research/proposals/lorentz_invariance_gap_kinematic_layer.md`** (new): Filed proposal synthesizing Lorentz invariance gap as fourth face of the kinematic layer problem. Documents two resolution paths (Option A: derive IR limit; Option B: explicit scope restriction), connects to Born/dual-C/N_corr gaps already in archive.
+
+## Topics Seeded for Explorer
+
+- **`lorentz-ir-limit-or-scope-restriction.md`** (HIGH): Which path forward for the Lorentz invariance gap?
+- **`consciousness-sigmoid-family-variation.md`** (HIGH): Is the 8-way C≈0.50 convergence a tanh-inflection artifact? One-day sigmoid-family-variation test.
+- **`novel-quantitative-inventory-page.md`** (HIGH): Draft the single-page referee-ready inventory of genuine novel quantitative predictions.
+
+## Open Items (Deferred)
+
+- Glossary hover-tooltip system (non-trivial engineering, deferred)
+- `/learning-paths` promoted to top nav (significant IA change, deferred)
+- `/coherence-explorer` physical anchors on ρ_crit slider (medium complexity, deferred)
+- `/equation-walkthrough` Beginner label mismatch (needs Step 0 or re-tag)
+
+## So What?
+
+Today's fixes close the most damaging front-of-site contradictions. The deeper result is that the kinematic layer problem now has four documented faces: Born rule, dual-C bridge, N_corr scale-invariance, and Lorentz invariance. This is a well-posed research program, not a scattered list of caveats — and a site page that presents it as an open question would be the framework's most honest and intellectually compelling contribution. Explorer has the topics.

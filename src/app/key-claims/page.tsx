@@ -332,8 +332,11 @@ export default function KeyClaims() {
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>What&apos;s new</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             MOND treats a&#x2080; as an empirical constant. &#x039B;CDM (Lambda Cold Dark Matter) adds a new particle. Neither explains
-            why anomalies appear at a specific acceleration scale. Synchronism derives a&#x2080; from the
-            coherence transition &mdash; the scale where decoherence becomes incomplete IS the MOND scale.
+            why anomalies appear at a specific acceleration scale. Synchronism re-derives a&#x2080; from the
+            coherence transition via dimensional analysis &mdash; the same relation McCulloch (2007), Verlinde (2017),
+            and Smolin (2017) each arrive at independently. The novel contribution is the <em>interpretation</em>:
+            that this scale marks where decoherence becomes incomplete, not just a coincidence of constants.
+            See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</a> for honest accounting.
           </p>
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>

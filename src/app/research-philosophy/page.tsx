@@ -68,7 +68,7 @@ export default function ResearchPhilosophy() {
           <li>Session #616 audited all 4 research tracks and found all are reparametrizations of known physics</li>
           <li>We published that finding prominently, not buried it</li>
           <li>The 89% chemistry validation rate sounds impressive until you learn it&apos;s mathematical consistency, not novel prediction</li>
-          <li>47 genuine contributions out of ~3,308 sessions = 1.4% discovery rate. That&apos;s the honest number.</li>
+          <li>47 genuine contributions out of ~3,308 sessions = 1.4% internal-consistency-survival rate (see below for why this is not a discovery rate).</li>
         </ul>
 
         <h2 id="validation-badge-taxonomy">Validation Badge Taxonomy</h2>
@@ -192,7 +192,7 @@ export default function ResearchPhilosophy() {
             protocol cannot detect errors that are systematic across the entire training corpus.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', marginBottom: 0 }}>
-            This is the structural ceiling on the 1.4% discovery rate: it is an upper bound on what
+            This is why the 1.4% figure is an internal-consistency-survival rate, not a discovery rate: it is an upper bound on what
             in-distribution adversarial AI-AI collaboration can find. The reparametrizations the
             framework identified (Abrikosov-Gor&apos;kov, Milgrom-Verlinde, Freeman, Landau
             sigmoids) are exactly what you would predict from in-distribution debate — the corpus

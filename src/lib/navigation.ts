@@ -112,7 +112,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Parameter Derivations',
       href: '/parameter-derivations',
-      desc: 'First-principles origin of every parameter',
+      desc: 'Status of every parameter: motivated choices, dimensional fits, reparametrizations',
       keywords: ['derivation', 'first principles', 'parameters', 'A', 'a0'],
       prerequisites: ['/coherence-function', '/gamma-parameter', '/critical-density'],
       related: ['/mond-unification', '/equation-walkthrough'],

@@ -38,9 +38,9 @@ export default function RootLayout({
             <Link
               href="/test-catalog"
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
-              title="24 experiments by tier"
+              title="24 proposed experiments by tier"
             >
-              Predictions
+              Test Roadmap
             </Link>
             <Link
               href="/interactive-tools"
@@ -78,7 +78,7 @@ export default function RootLayout({
             {' \u00B7 '}
             <Link href="/research-philosophy">Research Philosophy</Link>
             {' \u00B7 '}
-            <Link href="/test-catalog">Predictions</Link>
+            <Link href="/test-catalog">Test Roadmap</Link>
           </p>
         </footer>
       </body>

@@ -2,17 +2,19 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-04-30*
+*Last updated: 2026-05-02*
 
 ---
 
 ## Live Site
 
-https://synchronism-site.vercel.app/ — 78 pages, Vercel push-to-deploy
+https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 
 ---
 
 ## Recent Activity
+
+- **2026-05-02 (maintainer)**: WAKE phase: Lorentz invariance gap identified as fourth face of the kinematic layer problem (prior three: Born rule, dual-C bridge, N_corr scale-invariance) — proposal `lorentz_invariance_gap_kinematic_layer.md` filed to Synchronism repo. P0 fixes: (1) Nav "Predictions" renamed to "Test Roadmap" everywhere; (2) /test-catalog: H1 updated, added "What's Already Been Analyzed" box reconciling the "0 Completed" count with reparametrizations and failures; (3) /key-claims: a₀ "derives from first principles" corrected — now acknowledges McCulloch/Verlinde/Smolin prior art and locates contribution in interpretation; (4) /galaxy-plotter: red TEST-03 failure banner added (R²=0.14 < 20% kill); (5) /getting-started: new redirect → /first-encounter (closes 404 flagged by P1+P2); (6) research-philosophy: "1.4% discovery rate" → "1.4% internal-consistency-survival rate" in two places; (7) navigation.ts: Parameter Derivations desc corrected from "First-principles origin" to "Status of every parameter." Three explorer topics seeded: lorentz-ir-limit-or-scope-restriction (HIGH), consciousness-sigmoid-family-variation (HIGH — one-day test: does 8-way convergence on C≈0.50 track the tanh inflection point?), novel-quantitative-inventory-page (HIGH).
 
 - **2026-05-01 (maintainer)**: WAKE phase: dual-C symbol ambiguity (C(ρ) vs C=f(γ,D,S)) identified by 3 independent visitor personas as research gap — proposal filed to Synchronism repo. P0 fixes: (1) TEST-03 kill criterion status upgraded from "ambiguous" to "TRIGGERED — presumptively failed" (R²=0.14 < 20%); added to honest-assessment failures; (2) TEST-07 flagged as exploratory hypothesis, not a Tier 1 prediction; (3) Born rule gap surfaced on /measurement-without-observers as explicit red-border open gap; (4) Phase Boundary Visualizer SVG: ideal gas corrected from γ=1.6 to γ=2.0; Ncorr caveat added; (5) γ Calculator: BCS Ncorr caveat added; (6) Galaxy Curve Plotter link added to /galaxy-rotation; (7) Consciousness Threshold Demo link/name fixed across three pages; (8) interactive-tools: Coherence Demo renamed and description corrected; Phase Boundary description corrected from 2D to 1D. P1 fixes: (9) coherence-function badge changed from "validated" to "speculative/Phenomenological Ansatz"; dual-C bridge note added; (10) consciousness-threshold: convergence framing inverted — shared-structure admission leads. P2: (11) ln, baryon, BAO added to glossary; (12) Coherence Explorer slider captions added. Three explorer topics seeded: ncorr-scale-invariant-definition (HIGH), born-rule-from-mrh-dynamics (HIGH), dual-C-bridge-or-rename (HIGH).
 
@@ -117,6 +119,9 @@ https://synchronism-site.vercel.app/ — 78 pages, Vercel push-to-deploy
 | N_corr scale-invariant definition | `ncorr-scale-invariant-definition.md` | Open (seeded 2026-05-01) — **high priority** |
 | Born rule from MRH dynamics | `born-rule-from-mrh-dynamics.md` | Open (seeded 2026-05-01) — **high priority** |
 | Dual-C bridge or rename | `dual-C-bridge-or-rename.md` | Open (seeded 2026-05-01) — **high priority** |
+| Lorentz IR limit or scope restriction | `lorentz-ir-limit-or-scope-restriction.md` | Open (seeded 2026-05-02) — **high priority** |
+| Consciousness sigmoid family variation | `consciousness-sigmoid-family-variation.md` | Open (seeded 2026-05-02) — **high priority** (one-day decisive test) |
+| Novel quantitative inventory page | `novel-quantitative-inventory-page.md` | Open (seeded 2026-05-02) — **high priority** |
 
 ---
 

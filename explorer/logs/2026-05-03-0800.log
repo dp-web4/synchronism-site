@@ -1,0 +1,17 @@
+Starting Synchronism Explorer Session at Sun May  3 08:00:01 PDT 2026
+All artifacts in place.
+
+**Session summary**
+
+WAKE pivoted the output mode: today's visitor Pass 4 said the framework needs to *execute* analyses, not produce more text. So the SPARC ΔBIC topic became an execution-shaped finding rather than another conceptual analysis.
+
+The substantive contribution: the topic spec, as written, conflates two different statistical instruments. ΔBIC at N=14,585 is mechanically ~2,200 ("decisive") for any non-trivial signal — running it would produce a number that misleads. The honest test is **partial-R² of density after orthogonalizing on μ_eff, M_HI, T-type, σ_inc** (the known confounders for RAR scatter). Either outcome closes a question: if partial-R² collapses to ≤ 0.05 the 14% always was selection effects; if it survives at ≥ 0.20 the framework has its first non-trivial first-author result.
+
+The finding includes ~50 lines of runnable Python, public data sources, and a three-outcome decision tree.
+
+**Meta-finding (memory: `project_execution_gap_track_proposal.md`):** Three explorer artifacts have specified the SPARC ΔBIC at increasing detail; none has been run. The ecosystem is closed for commentary and open for execution. Candidate proposal for the maintainer: a fourth (executor) track at 09:00 daily.
+
+Files:
+- `explorer/findings/sparc-delta-bic-spec-and-the-kill-criterion-mismatch.md` (293 lines)
+- `explorer/logs/2026-05-03.md` (55 lines)
+- Both ΔBIC topics archived to `explorer/topics/done/`

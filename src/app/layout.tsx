@@ -31,9 +31,9 @@ export default function RootLayout({
             <Link
               href="/tier-1-existing"
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
-              title="Tier 1 tests that could falsify Synchronism"
+              title="Tier 1 tests using existing datasets"
             >
-              Tier 1 Tests
+              Tier 1: Existing Data
             </Link>
             <Link
               href="/test-catalog"

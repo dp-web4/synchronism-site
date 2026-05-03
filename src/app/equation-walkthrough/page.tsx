@@ -21,8 +21,8 @@ const steps = [
   {
     title: 'Step 3: Take the natural logarithm',
     equation: 'ln(ρ/ρ_crit + 1) — natural log scaling',
-    explanation: 'Why natural log? Because physical quantities span orders of magnitude. Sound velocity covers 3 orders; galaxy densities cover 6. Natural logarithms compress this. The +1 prevents ln(0) at ρ = 0 and ensures C(0) = 0. This is a physically motivated regularizer, not a derived scale.',
-    key: 'Natural-log scaling is why one equation works across 80 orders of magnitude.',
+    explanation: 'Why natural log? ln compresses: a number 1,000× bigger comes out only ~7 units bigger (ln(1000) ≈ 6.9). Physical densities span 80 orders of magnitude — from interstellar gas to neutron stars. Without compression, most of that range would be invisible in a single function. The +1 keeps the argument ≥ 1 so ln ≥ 0 and C ≥ 0 at any density.',
+    key: 'ln compression is why one equation works across 80 orders of magnitude — not an approximation, just arithmetic.',
   },
   {
     title: 'Step 4: Multiply by γ',
@@ -33,8 +33,8 @@ const steps = [
   {
     title: 'Step 5: Apply tanh',
     equation: 'C(ρ) = tanh(γ · ln(ρ/ρ_crit + 1))',
-    explanation: 'Why tanh? It maps any real input to [0,1], giving a proper measure between quantum and classical. The tanh shape is motivated by Landau-class mean-field theory — a sigmoid any sigmoid (logistic, erf, Hill) would serve similarly. See /parameter-derivations for the honest accounting.',
-    key: 'tanh shape is phenomenologically motivated, not uniquely derived — any sigmoid satisfying the boundary conditions works.',
+    explanation: 'tanh (hyperbolic tangent) is a saturation function: it maps any real number smoothly to the range (0, 1), like a dimmer switch with a soft floor and soft ceiling. Feed it a very small number → outputs near 0. Feed it a very large number → outputs near 1. The transition is sharpest near the midpoint. No abrupt jump — just a smooth S-curve. Any sigmoid (logistic, erf, Hill) would serve similarly here. tanh is motivated by Landau-class mean-field theory, not uniquely derived.',
+    key: 'tanh is the saturation wrapper: it ensures C never leaves [0,1] no matter how large or small the input gets.',
   },
   {
     title: 'Step 6: Interpret the output',

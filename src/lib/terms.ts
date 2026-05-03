@@ -187,6 +187,13 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'Every Synchronism prediction has a defined "kill criterion" \u2014 a specific outcome that would falsify it. This is what separates testable science from unfalsifiable speculation. The site documents both successful and failed predictions.',
     learnMore: '/falsifiability',
   },
+  'badge-postdiction': {
+    term: 'Post-diction',
+    fullName: 'Validation Label: Post-diction',
+    brief: 'Formula or derivation produced after the confirming experiment was already published.',
+    explanation: 'A post-diction matches known data but was not a forward prediction — the experiment\'s result was already in the literature when the formula was derived. Epistemically weaker than "Validated" (genuine pre-registered prediction confirmed) but distinct from "Reparametrization" (notation change). Post-dictions can be valuable as consistency checks and can motivate forward predictions, but they do not independently confirm a framework.',
+    learnMore: '/research-philosophy',
+  },
   'badge-validated': {
     term: 'Validated',
     fullName: 'Validation Badge: Validated',
@@ -216,7 +223,7 @@ export const terms: Record<string, TermDefinition> = {
     learnMore: '/honest-assessment',
   },
   'badge-reparametrization': {
-    term: 'Reparametrization',
+    term: 'Reparametrization (badge)',
     fullName: 'Validation Badge: Reparametrization',
     brief: 'The result is mathematically equivalent to existing physics expressed in different variables.',
     explanation: 'A reparametrization is not a failure \u2014 it shows the framework is consistent with known physics. But it is not a new prediction. Example: the \u03b7 reachability factor = Abrikosov-Gor\u2019kov pair-breaking (1960). The honest assessment tracks reparametrizations separately from genuinely novel predictions.',
@@ -278,5 +285,9 @@ export function getTerm(key: string): TermDefinition | undefined {
 }
 
 export function getAllTerms(): TermDefinition[] {
-  return Object.values(terms);
+  return Object.values(terms).sort((a, b) =>
+    a.term.replace(/[^a-zA-Z0-9]/g, '').toLowerCase().localeCompare(
+      b.term.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()
+    )
+  );
 }

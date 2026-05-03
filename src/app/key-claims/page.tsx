@@ -130,7 +130,7 @@ export default function KeyClaims() {
             <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid #22c55e' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
                 <strong style={{ fontSize: '0.9rem' }}>Shared-environment decoherence protection</strong>
-                <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: '1rem', background: 'rgba(34, 197, 94, 0.15)', color: '#22c55e' }}>Consistent with PRL 2024</span>
+                <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: '1rem', background: 'rgba(245, 158, 11, 0.15)', color: '#f59e0b' }}>Post-diction — consistent with PRL 2024</span>
               </div>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
                 &#x0393; = &#x03B3;&sup2;(1 &minus; c). Entangled pairs in the same noise bath
@@ -141,7 +141,7 @@ export default function KeyClaims() {
             <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid #22c55e' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
                 <strong style={{ fontSize: '0.9rem' }}>Bell nonlocality freezing &amp; revival</strong>
-                <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: '1rem', background: 'rgba(34, 197, 94, 0.15)', color: '#22c55e' }}>Consistent with arXiv 2508.07046</span>
+                <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: '1rem', background: 'rgba(245, 158, 11, 0.15)', color: '#f59e0b' }}>Post-diction — consistent with arXiv 2508.07046</span>
               </div>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
                 |S(t)| = S&#x2098;&#x2090;&#x2093; &times; e^(&minus;&#x0393;t), with c(d) = cos&sup2;(&pi;d/&lambda;&#x2080;).
@@ -215,7 +215,7 @@ export default function KeyClaims() {
               fontWeight: 500,
               whiteSpace: 'nowrap',
             }}>
-              Untested &mdash; 8-Way Convergence
+              Speculative &mdash; geometric artifact
             </span>
           </div>
 

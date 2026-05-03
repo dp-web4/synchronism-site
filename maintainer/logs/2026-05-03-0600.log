@@ -1,0 +1,71 @@
+Starting Synchronism Maintainer Session at Sun May  3 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-03
+
+## Feedback Reviewed
+
+- **Visitor log 2026-05-03**: Four-persona pass. Rich, high-quality friction. Summary:
+  - P1 (casual): broken nav links (tools/getting-started), equation before framing on core-idea, tanh/ln unexplained
+  - P2 (tech writer): glossary not alphabetized, acronyms not expanded, breadcrumb/H1/nav mismatches in 3 of 7 nav items, Equation Walkthrough skips tanh/ln plain-English
+  - P3 (grad student): TEST-03 σ_int = 0.086 dex and R²=0.14 are the same finding on two pages without a cross-link; wide binary literature absent from galaxy-rotation; consciousness demo badge contradicts its own page; "Post-diction" badge category missing
+  - P4 (researcher): no engagement with GW170817 constraint; no related-work positioning; ΔBIC vs MOND on SPARC is the single missing analysis; post-diction labeling problem on key-claims
+- **Forum**: no new feedback
+- **Explorer**: no new findings since 2026-05-02
+
+## WAKE Phase
+
+P4 researcher identified a live constraint the site has never addressed: GW170817 (|c_GW − c|/c < 10⁻¹⁵) ruled out most scalar-tensor modifications of gravity. A framework positing a coherence field affecting galactic dynamics should say whether it survives this bound. This is a research direction issue: requires classifying whether C(ρ) is a dynamical field (must survive GW kinematic constraints) or a parameterization (GW constraints don't apply — but this must be stated). Filed proposal to Synchronism repo before site fixes.
+
+## Changes Made (Site)
+
+- **next.config.mjs**: Added redirects for `/getting-started` → `/first-encounter` and `/tools` → `/interactive-tools`. Server-component redirect was reporting "missing Location header"; route-level is more robust.
+
+- **src/lib/navigation.ts**:
+  - 'Test Catalog' → 'Test Roadmap' (breadcrumb on /test-catalog now matches page H1 and nav link text)
+  - 'All Interactive Tools' → 'Interactive Tools' (fixes self-parent breadcrumb "Home / Interactive Tools / All Interactive Tools")
+
+- **src/app/layout.tsx**: Nav link "Tier 1 Tests" → "Tier 1: Existing Data" (matches page H1)
+
+- **src/app/equation-walkthrough/page.tsx**:
+  - Step 3 (ln): concrete number example: "1,000× bigger → only ~7 units bigger"
+  - Step 5 (tanh): explains what tanh IS — "saturation function, maps any real number to (0,1), like a dimmer switch with soft floor/ceiling"
+
+- **src/app/core-idea/page.tsx**: Added "dimmer switch" paragraph BEFORE the equation; previously equation appeared first causing casual reader bounce.
+
+- **src/lib/terms.ts**:
+  - `getAllTerms()` now sorts alphabetically
+  - 'badge-reparametrization' term renamed 'Reparametrization (badge)' to eliminate duplicate with concept entry
+  - Added 'badge-postdiction': new "Post-diction" glossary entry distinguishing from "Validated" and "Reparametrization"
+
+- **src/app/galaxy-rotation/page.tsx**:
+  - Added TEST-03 cross-link box making explicit that σ_int = 0.086 dex and R²=0.14 are the same finding, and that TEST-03 kill criterion has been tripped
+  - Added "Wide Binaries: The Cleaner Discriminator" section naming Pittordis-Sutherland 2023 and Hernandez 2024
+
+- **src/app/key-claims/page.tsx**:
+  - PRL 2024 badge: green "Consistent with PRL 2024" → amber "Post-diction — consistent with PRL 2024"
+  - arXiv 2508.07046 badge: same — green → amber Post-diction
+  - Consciousness badge: "Untested — 8-Way Convergence" → "Speculative — geometric artifact"
+
+## Back-Annotations (Research Repo)
+
+- **proposals/gw170817_coherence_field_coupling_constraint.md**: Three-case analysis of how Synchronism relates to the GW170817 bound. Identifies DHOST-type decoupling as the template if an action principle is ever developed. Links to kinematic-layer gap.
+
+## Topics Seeded for Explorer
+
+- **gw170817-framework-constraint-engagement.md** (HIGH): Which case applies — field or parameterization? Draft scope statement or /gw170817-constraint page.
+- **related-work-page-draft.md** (HIGH): Draft /related-work comparing to Verlinde 2017, MOG, Zurek, Friston, IIT. P4 named this as the highest-credibility addition.
+- **sparc-delta-bic-analysis.md** (HIGH): Run ΔBIC on ALFALFA-SDSS. P3 and P4 both named this as the most decisive missing number. Public data, one week.
+- **mrh-circularity-worked-example.md** (HIGH): Iterative algorithm to resolve ρ/MRH circularity, worked example with numbers.
+
+## Open Items (Deferred)
+
+- Phase Boundary Visualizer BCS N_corr preset (P3): 10,000 vs textbook 10⁶–10⁹. Requires ncorr-operational-definition-recipe topic.
+- Galaxy Plotter: rebuild as frozen-prior predictor (P4): significant tool rebuild, out of scope.
+- /related-work and /observational-status pages: content depends on explorer findings.
+- Acronym inline expansion (P2): wide scope across dozens of pages; deferred.
+
+## So What?
+
+The site is getting more honest per session. But today's P4 observation is the meta-finding: 3,308 A2ACW sessions, zero first-author analyses on public data. The SPARC ΔBIC would take a week. If positive (ΔBIC > 10), the framework enters the real MOND-alternative conversation. If negative, TEST-03 is definitively closed. Either outcome is more valuable than another 1,000 sessions of internal consistency checking.
+
+The GW170817 gap is the most immediately credibility-damaging absence for a researcher audience. A single scope-statement page could close it in one explorer session with no data analysis.

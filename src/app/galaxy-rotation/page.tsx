@@ -129,6 +129,17 @@ export default function GalaxyRotation() {
           Synchronism adds a small, detectable effect on top of what MOND already provides &mdash;
           it does not replace MOND&apos;s success.
         </p>
+        <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1rem', padding: '0.75rem 1rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem 0' }}>
+            <strong>TEST-03 connection:</strong> The R² = 0.14 result above is what{' '}
+            <Link href="/tier-1-existing" style={{ color: '#ef4444' }}>TEST-03</Link>{' '}
+            measures. The pre-registered kill criterion for TEST-03 is R² &lt; 0.20 — meaning the
+            environmental coherence term must explain at least 20% of intrinsic RAR scatter to
+            survive. At R² = 0.14, <strong>TEST-03 has already tripped its own kill criterion</strong>.
+            The σ<sub>int</sub> = 0.086 dex and R² = 0.14 figures on this page are the same
+            finding viewed from two angles; both point to the same conclusion.
+          </p>
+        </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           <strong>Missing measurement:</strong> The incremental value of adding the environmental term
           has not been quantified via ΔBIC (Bayesian Information Criterion) against baseline MOND on
@@ -136,6 +147,26 @@ export default function GalaxyRotation() {
           would determine whether the fit improvement exceeds the penalty for adding the extra parameter.
           Until that analysis is run, &ldquo;small but detectable effect&rdquo; is a qualitative
           description, not a measurement.
+        </p>
+
+        <h2>Wide Binaries: The Cleaner Discriminator</h2>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          While the RAR environmental scatter (TEST-03) has already tripped its kill criterion,
+          the <Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>wide binary test (TEST-02)</Link>{' '}
+          remains the cleanest live discriminator between Synchronism and MOND. Wide stellar binaries
+          (separations &gt; 0.1 pc) probe the sub-a&#x2080; acceleration regime in a fundamentally
+          different mass and density environment from galaxy rotation curves — no dark matter halos,
+          no baryonic feedback, just two stars in a nearly Keplerian orbit.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          The key papers are Pittordis &amp; Sutherland (2023) and Hernandez et al. (2024), using
+          Gaia DR3. They disagree on the strength of the MOND signal. Synchronism&apos;s prediction
+          (density-dependent wide binary anomaly — stronger anomaly in denser stellar fields) is
+          distinguishable from MOND (which predicts the anomaly independent of local density).
+          Gaia DR3 is public; stratifying the sample by local stellar density is a tractable
+          one-week analysis. See{' '}
+          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>TEST-02</Link>{' '}
+          for the kill criterion.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

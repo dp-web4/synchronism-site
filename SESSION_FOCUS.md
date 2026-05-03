@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-05-02*
+*Last updated: 2026-05-03*
 
 ---
 
@@ -13,6 +13,8 @@ https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 ---
 
 ## Recent Activity
+
+- **2026-05-03 (maintainer)**: WAKE phase: GW170817 constraint gap — Pass 4 researcher identified that Synchronism makes no statement about |c_GW − c|/c < 10⁻¹⁵ (kills TeVeS, most scalar-tensor modifications). Proposal `gw170817_coherence_field_coupling_constraint.md` filed to Synchronism repo — three-case analysis: field theory with derivative coupling (falsified like TeVeS), field theory with potential-only coupling (survives but needs mechanism), parameterization (GW constraints don't apply but scope must be stated). P0 fixes: (1) next.config.mjs: added redirects /getting-started→/first-encounter and /tools→/interactive-tools (server-component redirect was reporting "missing Location header"); (2) navigation.ts: 'Test Catalog'→'Test Roadmap' (breadcrumb now matches H1), 'All Interactive Tools'→'Interactive Tools' (fixes self-parent breadcrumb); (3) layout.tsx: nav "Tier 1 Tests"→"Tier 1: Existing Data" (matches H1); (4) equation-walkthrough: Step 3 (ln) and Step 5 (tanh) now give concrete plain-English explanations — "1,000× bigger → only ~7 units bigger" for ln, "saturation function like a dimmer switch" for tanh; (5) core-idea: dimmer-switch paragraph added BEFORE the equation (casual reader bounce fix); (6) terms.ts: getAllTerms() now alphabetized, 'Reparametrization (badge)' deduplicated, new 'Post-diction' glossary entry added; (7) galaxy-rotation: TEST-03 cross-link box (σ_int=0.086 dex = R²=0.14 = same kill-criterion result), wide binaries section added naming Pittordis-Sutherland 2023 and Hernandez 2024; (8) key-claims: PRL 2024 and arXiv 2508.07046 badges changed from green "Consistent with" to amber "Post-diction — consistent with"; consciousness badge changed from "Untested — 8-Way Convergence" to "Speculative — geometric artifact". Four explorer topics seeded: gw170817-framework-constraint-engagement (HIGH), related-work-page-draft (HIGH), sparc-delta-bic-analysis (HIGH), mrh-circularity-worked-example (HIGH).
 
 - **2026-05-02 (maintainer)**: WAKE phase: Lorentz invariance gap identified as fourth face of the kinematic layer problem (prior three: Born rule, dual-C bridge, N_corr scale-invariance) — proposal `lorentz_invariance_gap_kinematic_layer.md` filed to Synchronism repo. P0 fixes: (1) Nav "Predictions" renamed to "Test Roadmap" everywhere; (2) /test-catalog: H1 updated, added "What's Already Been Analyzed" box reconciling the "0 Completed" count with reparametrizations and failures; (3) /key-claims: a₀ "derives from first principles" corrected — now acknowledges McCulloch/Verlinde/Smolin prior art and locates contribution in interpretation; (4) /galaxy-plotter: red TEST-03 failure banner added (R²=0.14 < 20% kill); (5) /getting-started: new redirect → /first-encounter (closes 404 flagged by P1+P2); (6) research-philosophy: "1.4% discovery rate" → "1.4% internal-consistency-survival rate" in two places; (7) navigation.ts: Parameter Derivations desc corrected from "First-principles origin" to "Status of every parameter." Three explorer topics seeded: lorentz-ir-limit-or-scope-restriction (HIGH), consciousness-sigmoid-family-variation (HIGH — one-day test: does 8-way convergence on C≈0.50 track the tanh inflection point?), novel-quantitative-inventory-page (HIGH).
 
@@ -122,6 +124,10 @@ https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 | Lorentz IR limit or scope restriction | `lorentz-ir-limit-or-scope-restriction.md` | Open (seeded 2026-05-02) — **high priority** |
 | Consciousness sigmoid family variation | `consciousness-sigmoid-family-variation.md` | Open (seeded 2026-05-02) — **high priority** (one-day decisive test) |
 | Novel quantitative inventory page | `novel-quantitative-inventory-page.md` | Open (seeded 2026-05-02) — **high priority** |
+| GW170817 framework constraint engagement | `gw170817-framework-constraint-engagement.md` | Open (seeded 2026-05-03) — **high priority** |
+| Related-work page draft | `related-work-page-draft.md` | Open (seeded 2026-05-03) — **high priority** |
+| SPARC ΔBIC analysis | `sparc-delta-bic-analysis.md` | Open (seeded 2026-05-03) — **high priority** |
+| MRH circularity worked example | `mrh-circularity-worked-example.md` | Open (seeded 2026-05-03) — **high priority** |
 
 ---
 

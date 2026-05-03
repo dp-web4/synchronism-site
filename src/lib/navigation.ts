@@ -473,7 +473,7 @@ export const navigationTree: NavigationTree = {
 
   'Predictions & Experiments': [
     {
-      title: 'Test Catalog',
+      title: 'Test Roadmap',
       href: '/test-catalog',
       desc: '24 specific experiments by tier',
       keywords: ['test', 'catalog', 'experiment', 'tier', 'overview'],
@@ -560,7 +560,7 @@ export const navigationTree: NavigationTree = {
 
   'Interactive Tools': [
     {
-      title: 'All Interactive Tools',
+      title: 'Interactive Tools',
       href: '/interactive-tools',
       desc: 'Index of all tools: Coherence Explorer, Galaxy Plotter, γ Calculator, and more',
       keywords: ['interactive', 'tools', 'index', 'explorer', 'plotter', 'calculator'],

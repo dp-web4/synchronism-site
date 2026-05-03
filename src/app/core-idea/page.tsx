@@ -16,6 +16,12 @@ export default function CoreIdea() {
       </p>
 
       <section className="section content-width">
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1.25rem', fontSize: '1.05rem' }}>
+          Think of it as a <strong>dimmer switch</strong> between fully quantum and fully classical.
+          Feed it the local density of a system, and it outputs a number between 0 (quantum) and 1 (classical).
+          The same switch, the same scale, works for a single atom and a galaxy cluster.
+        </p>
+
         <div className="equation" style={{ fontSize: '1.5rem' }}>
           C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </div>

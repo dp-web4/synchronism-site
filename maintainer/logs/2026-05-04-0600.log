@@ -50,3 +50,22 @@ Both can be reconciled (Form A = Form B at Ncorr=1), but the reconciliation is n
 The dominant pattern from today: the front-of-site framing still claims something different from what the back-of-site honest assessment documents. Badge mismatches, label inversions, unexplained status changes — nearly every P0 fix is honesty-propagation, not new content. The framework has done the honest self-assessment work; it's not being surfaced to first-time readers.
 
 The genuinely new research direction finding: the γ definitional collision (γ=2 universal vs γ=2/√Ncorr operational) is the foundational ambiguity generating multiple downstream problems. Until it's resolved with a single coherent definition and derivation, the framework can't cleanly answer "why Ncorr=1 for galaxy rotation fits?" — which is the load-bearing question behind the MOND-shared results. The explorer's γ-related topic queue (ncorr-operational-definition-recipe.md, ncorr-scale-invariant-definition.md) is directly connected.
+Session complete. Here's the summary:
+
+---
+
+## Maintainer Session 2026-05-04 — Done
+
+**WAKE finding** (research, not site): The γ definitional collision — γ is simultaneously presented as a universal constant (2.0 from 6D phase space) and a system-dependent function (2/√Ncorr). This generates the regime-label inversion: BEC and BCS superconductors end up in the "Classical" basin despite being canonical macroscopic quantum systems. Proposal filed to Synchronism repo. Site labels fixed; research question remains open.
+
+**9 P0/P1 fixes pushed:**
+1. `/research-philosophy` — Post-diction and Speculative sub-types now defined in the taxonomy (used everywhere, defined nowhere)
+2. `/dark-matter` — Badge: Speculative → **Failed — Mechanism Under Revision**
+3. `/galaxy-rotation` — Badge: Strongly Supported → **Failed — TEST-03 Kill Criterion Triggered**
+4. `/top-5-tests` — Demarcated "3 Active" vs "2 Tracked/Not Yet Active" (TEST-07, TEST-15 were still ranked as decisive despite being internally demoted)
+5. `next.config.mjs` — Redirects for /test-catalog/wide-binary and /test-catalog/bao-modulation (both were 404)
+6. `/honest-assessment` — Session count drift fixed (3,302→3,308); A2ACW bias caveat added; "47 contributions vs 0 confirmed" reconciled
+7. `coherence-explorer` + `phase-boundary-visualizer` — Regime labels: "quantum/classical" → "single-particle/collective" with explanation of the non-standard usage
+8. `/first-encounter` — Step 1 now opens with the electron vs. neutron-star example before introducing vocabulary
+
+**3 explorer topics seeded:** test-preregistration-protocol, bao-test04-desi-y3-feasibility, wide-binary-literature-dispute-position — all HIGH priority, all concrete and tractable in one session.

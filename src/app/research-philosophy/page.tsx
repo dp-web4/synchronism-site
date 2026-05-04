@@ -114,6 +114,13 @@ export default function ResearchPhilosophy() {
           </div>
         </div>
 
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
+          <strong>Post-diction</strong> is a sub-status used on some pages (amber inline label, not a separate badge tier): the formula was derived <em>after</em> the experimental result was published — it is consistent with the data but was not a prediction ahead of time. Post-diction sits between Reparametrization (algebraically equivalent to known physics) and Untested (a genuine forward prediction). It counts as evidence of framework coherence, not evidence of predictive power.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>
+          <strong>Speculative sub-types</strong> used on /parameter-derivations describe how a parameter was set: &ldquo;Motivated Ansatz&rdquo; (physically motivated but not derived), &ldquo;Dimensional Analysis&rdquo; (set by dimensional coincidence, e.g. a₀ ≈ cH₀/2π), &ldquo;Freeman&apos;s Law Re-expressed&rdquo; (matches an existing empirical law in different notation), &ldquo;Jeans Criterion&rdquo; (derived from gravitational stability arguments), &ldquo;5% Agreement / 3% Error&rdquo; (quantifying how well a Speculative parameter matches data). All are sub-types of Speculative &mdash; they carry no novel predictive content.
+        </p>
+
         <h2>The Reparametrization Pattern</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Session #615-616 revealed a recurring pattern across all tracks: take known physics,

@@ -11,7 +11,7 @@ export default function DarkMatter() {
     <>
       <Breadcrumbs currentPath="/dark-matter" />
       <h1>Dark Matter Reframed</h1>
-      <ValidationBadge status="speculative" label="Alternative Framework" />
+      <ValidationBadge status="failed" label="Failed — Mechanism Under Revision" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

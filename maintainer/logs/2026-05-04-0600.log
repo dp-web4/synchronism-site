@@ -1,0 +1,52 @@
+Starting Synchronism Maintainer Session at Mon May  4 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-04
+
+## WAKE Phase
+
+Today's visitor feedback reveals a research-direction issue not yet in the proposal queue: the γ definitional collision.
+
+**Core question filed as proposal:** `gamma_definitional_collision_regime_label_inversion.md` (Synchronism repo)
+
+γ appears simultaneously as:
+- Universal constant derived as 2.0 from 6D phase space (Form A)
+- System-dependent function γ = 2/√Ncorr (Form B)
+
+Both can be reconciled (Form A = Form B at Ncorr=1), but the reconciliation is never stated. The downstream consequence: BEC and BCS superconductors — canonical macroscopic quantum systems — sit in the "Classical" basin of the phase boundary visualizer because their Ncorr is large (γ small). Correct mathematics, wrong labels. Filed proposal; fixed labels as P0.
+
+## Changes Made (Site)
+
+- `next.config.mjs`: Added redirects for /test-catalog/wide-binary → /wide-binaries and /test-catalog/bao-modulation → /bao-coherence-modulation (both were 404, referenced from tier-1-existing)
+- `src/app/research-philosophy/page.tsx`: Added Post-diction definition + Speculative sub-types paragraph to badge taxonomy (both were used site-wide but undefined in the taxonomy)
+- `src/app/dark-matter/page.tsx`: Badge speculative → failed "Failed — Mechanism Under Revision" (matches /key-claims classification; site knew the mechanism failed but page badge contradicted it)
+- `src/app/galaxy-rotation/page.tsx`: Badge supported → failed "TEST-03 Kill Criterion Triggered" (R²=0.14 vs pre-registered 0.20 threshold; page had the failure documented in a red box but top badge said "Strongly Supported")
+- `src/app/top-5-tests/page.tsx`: Split into "3 Active discriminating tests" + "2 Tracked — not yet active" sections (TEST-07 is "not a scientific prediction" per tier-1-existing; TEST-15 is "monitoring" — both were still ranked as decisive)
+- `src/app/honest-assessment/page.tsx`: Session count 3,302 → 3,308 (drift vs. landing page); A2ACW bias caveat added (methodology limit not surfaced on the summary page); "47 contributions" clarified as exploration outputs not confirmed results
+- `src/app/coherence-explorer/page.tsx`: Regime labels "quantum/classical" → "single-particle/collective"; explanation added that the labels describe correlation count, not the standard quantum/classical distinction
+- `src/app/phase-boundary-visualizer/page.tsx`: Region labels Classical → Collective, Quantum → Single-particle in both data objects and SVG text; physics descriptions updated to explain non-standard naming
+- `src/app/first-encounter/page.tsx`: Step 1 rewritten to open with electron/neutron-star example before introducing vocabulary (visitor said the first sentence was "jargon I read three times and got nothing from")
+
+## Back-Annotations (Research Repo)
+
+- `Synchronism/Research/proposals/gamma_definitional_collision_regime_label_inversion.md`: New proposal — the γ=2 (universal) vs γ=2/√Ncorr (operational) collision and its consequence (regime label inversion). Three-case analysis with proposed resolution.
+
+## Topics Seeded for Explorer
+
+- `test-preregistration-protocol.md` (HIGH): What does "pre-registered kill criterion" mean for computational tests against public datasets? TEST-03's post-hoc threshold audit raises the methodology question — does the framework have a process, and what should it be?
+- `bao-test04-desi-y3-feasibility.md` (HIGH): Is DESI Y3 sensitive enough to detect a 10⁻⁴ environment-dependent BAO shift in environment-split subsamples? Feasibility calculation to determine whether TEST-04 is Tier 1 ($0, existing data) or Tier 3 (future surveys). Researcher says the 10⁻⁵ kill threshold is a generation below current sensitivity.
+- `wide-binary-literature-dispute-position.md` (HIGH): Chae 2023 (+20% anomaly) vs Banik & Pittordis 2023 (null) — the framework's strongest discriminating prediction (TEST-02) is conditional on the anomaly existing, but the framework has no stated position on which methodology is correct.
+
+## Open Items (Deferred)
+
+- **/equation-walkthrough URL routing** — Step pagination is client-side only; ?step=N doesn't navigate to step N. Real fix requires converting to /equation-walkthrough/1, /2 etc. routes — more involved refactor.
+- **"8 independent approaches → C≈0.50" disqualification not propagated from /consciousness-demo to /key-claims** — /consciousness-demo self-disqualifies the convergence; /key-claims still presents it without the caveat. Next session.
+- **a₀ = cH₀/(2π) factor of 2π not motivated** — Research question. Page already acknowledges dimensional analysis; deeper answer requires theory.
+- **Coherence Explorer: missing "what's the takeaway?" guidance** — Visitor couldn't tell what changing sliders was supposed to show. Could add a "Try this" prompt card. Low effort, medium value.
+- **Glossary: circular definitions** — Presence defined using MRH; MRH defined using coherence evolution. Needs dependency-aware rewrite.
+- **First use acronym expansion** — SPARC, MOND, BAO, BTFR, etc. Not expanded on first appearance across most pages.
+
+## So What?
+
+The dominant pattern from today: the front-of-site framing still claims something different from what the back-of-site honest assessment documents. Badge mismatches, label inversions, unexplained status changes — nearly every P0 fix is honesty-propagation, not new content. The framework has done the honest self-assessment work; it's not being surfaced to first-time readers.
+
+The genuinely new research direction finding: the γ definitional collision (γ=2 universal vs γ=2/√Ncorr operational) is the foundational ambiguity generating multiple downstream problems. Until it's resolved with a single coherent definition and derivation, the framework can't cleanly answer "why Ncorr=1 for galaxy rotation fits?" — which is the load-bearing question behind the MOND-shared results. The explorer's γ-related topic queue (ncorr-operational-definition-recipe.md, ncorr-scale-invariant-definition.md) is directly connected.

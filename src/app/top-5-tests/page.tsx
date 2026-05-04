@@ -72,8 +72,11 @@ export default function Top5Tests() {
           and standard frameworks. Ranked by decisiveness.
         </p>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginBottom: '1.5rem' }}>
-          {tests.map(t => (
+        <h3 style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.75rem' }}>
+          Active discriminating tests
+        </h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginBottom: '2rem' }}>
+          {tests.filter(t => t.rank <= 3).map(t => (
             <div key={t.id} className="card">
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                 <span style={{
@@ -92,6 +95,46 @@ export default function Top5Tests() {
                     <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                       <span style={{ color: t.color, fontFamily: 'monospace', fontSize: '0.8rem' }}>{t.tier}</span>
                       <span style={{ color: 'var(--color-text-muted)', fontFamily: 'monospace', fontSize: '0.8rem' }}>{t.cost}</span>
+                    </div>
+                  </div>
+                  <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
+                    {t.why}
+                  </p>
+                  <p style={{ color: '#ef4444', fontSize: '0.85rem' }}>
+                    <strong>Kill:</strong> {t.kill}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <h3 style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem' }}>
+          Tracked — not yet active (derivation or signal pending)
+        </h3>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
+          These are on the radar but do not currently meet the bar for &ldquo;decisive test&rdquo; — either no amplitude has been derived from the framework&apos;s parameters, or the test has already been superseded by existing data.
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginBottom: '1.5rem' }}>
+          {tests.filter(t => t.rank > 3).map(t => (
+            <div key={t.id} className="card" style={{ opacity: 0.75, borderLeft: '3px solid #f59e0b' }}>
+              <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+                <span style={{
+                  fontSize: '2rem',
+                  fontFamily: 'monospace',
+                  color: '#f59e0b',
+                  lineHeight: 1,
+                  minWidth: '2rem',
+                  textAlign: 'center',
+                }}>
+                  {t.rank}
+                </span>
+                <div style={{ flex: 1 }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
+                    <h3 style={{ fontSize: '1rem' }}>{t.name}</h3>
+                    <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                      <span style={{ color: '#f59e0b', fontFamily: 'monospace', fontSize: '0.8rem' }}>Candidate</span>
+                      <span style={{ color: 'var(--color-text-muted)', fontFamily: 'monospace', fontSize: '0.8rem' }}>{t.tier}</span>
                     </div>
                   </div>
                   <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>

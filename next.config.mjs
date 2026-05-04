@@ -13,6 +13,16 @@ const nextConfig = {
         destination: '/interactive-tools',
         permanent: false,
       },
+      {
+        source: '/test-catalog/wide-binary',
+        destination: '/wide-binaries',
+        permanent: false,
+      },
+      {
+        source: '/test-catalog/bao-modulation',
+        destination: '/bao-coherence-modulation',
+        permanent: false,
+      },
     ];
   },
 };

@@ -11,7 +11,7 @@ export default function GalaxyRotation() {
     <>
       <Breadcrumbs currentPath="/galaxy-rotation" />
       <h1>Galaxy Rotation Curves</h1>
-      <ValidationBadge status="supported" label="14,760 Galaxies" />
+      <ValidationBadge status="failed" label="TEST-03 Kill Criterion Triggered" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

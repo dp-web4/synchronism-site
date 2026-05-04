@@ -7,11 +7,11 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 const regions = [
   {
     id: 'classical',
-    label: 'γ < 0.6 — Classical',
+    label: 'γ < 0.6 — Collective',
     color: '#10b981',
     range: [0, 0.6],
     systems: ['Superconductors', 'BEC', 'Superfluids', 'Cooper pairs', 'Quantum computers'],
-    physics: 'Macroscopic coherence. Many correlated particles (large N_corr, small γ) behave as one. Collective quantum phenomena emerge as classical-looking order.',
+    physics: 'Many correlated particles (large N_corr, small γ) — the collective / strongly correlated regime. BEC, BCS superconductors, and superfluids sit here because they have enormous N_corr. Note: this is NOT the same as "classical" in the standard quantum/classical sense — these are macroscopic quantum systems. The label describes correlation count, not quantum-vs-classical.',
   },
   {
     id: 'boundary',
@@ -23,11 +23,11 @@ const regions = [
   },
   {
     id: 'quantum',
-    label: 'γ > 1.4 — Quantum',
+    label: 'γ > 1.4 — Single-particle',
     color: '#8b5cf6',
     range: [1.4, 4.0],
     systems: ['Ideal gases', 'Single atoms', 'Few-particle systems', 'Uncorrelated matter'],
-    physics: 'Few correlated particles (small N_corr, large γ). Individual quantum behavior. Rapid decoherence. At γ = 2 (N_corr = 1), the single-particle limit where galaxy-scale "dark matter" signatures appear.',
+    physics: 'Few correlated particles (small N_corr, large γ) — the single-particle / uncorrelated regime. Individual behavior dominates; rapid decoherence. At γ = 2 (N_corr = 1), the single-particle reference used for galaxy rotation fits.',
   },
 ];
 
@@ -65,9 +65,9 @@ export default function PhaseBoundaryVisualizer() {
             <line x1={30 + (1.4 / 4.0) * 540} y1={barY - 5} x2={30 + (1.4 / 4.0) * 540} y2={barY + barH + 5} stroke="#f59e0b" strokeDasharray="3 3" />
 
             {/* Labels */}
-            <text x={30 + (0.3 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#10b981" fontSize="11">Classical</text>
+            <text x={30 + (0.3 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#10b981" fontSize="11">Collective</text>
             <text x={30 + (1.0 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#f59e0b" fontSize="11">Boundary</text>
-            <text x={30 + (2.7 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#8b5cf6" fontSize="11">Quantum</text>
+            <text x={30 + (2.7 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#8b5cf6" fontSize="11">Single-particle</text>
 
             {/* Anchored example markers */}
             <line x1={30 + (0.15 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.15 / 4.0) * 540} y2={barY + barH + 25} stroke="#10b981" strokeWidth="1" />

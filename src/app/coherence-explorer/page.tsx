@@ -46,7 +46,7 @@ export default function CoherenceExplorer() {
     }).join(' ');
   }, [points, logScale, xMin, xMax, plotW, plotH, pad.left, pad.top]);
 
-  const regime = gamma > 1.4 ? 'Quantum (γ > 1.4)' : gamma > 0.6 ? 'Boundary (γ ≈ 1)' : 'Classical (γ < 0.6)';
+  const regime = gamma > 1.4 ? 'Single-particle (γ > 1.4)' : gamma > 0.6 ? 'Boundary (γ ≈ 1)' : 'Collective (γ < 0.6)';
   const regimeColor = gamma > 1.4 ? '#8b5cf6' : gamma > 0.6 ? '#f59e0b' : '#10b981';
 
   return (
@@ -63,9 +63,11 @@ export default function CoherenceExplorer() {
             and 1 (classical/ordered).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-            <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> controls the transition sharpness. High &#x03B3; (&gt; 1.4, few correlated particles) = quantum regime,
-            &#x03B3; &#x2248; 1 = the boundary where chemistry and biology happen,
-            low &#x03B3; (&lt; 0.6, many correlated particles) = classical regime.
+            <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> controls the transition sharpness.
+            High &#x03B3; (&gt; 1.4, small N<sub>corr</sub>) = <em>single-particle / uncorrelated</em> regime (ideal gases, free atoms);
+            &#x03B3; &#x2248; 1 = the boundary where chemistry and biology happen;
+            low &#x03B3; (&lt; 0.6, large N<sub>corr</sub>) = <em>collective / correlated</em> regime (BEC, superconductors, superfluids).
+            Note: these labels describe the <em>number of correlated degrees of freedom</em>, not the standard quantum/classical distinction — BEC and BCS superconductors appear in the &ldquo;collective&rdquo; basin, which is correct (they have large N<sub>corr</sub>).
           </p>
           <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem' }}>
             <strong>What to notice:</strong> Move &#x03B3; from 0.5 to 2.0 and watch the curve flatten.

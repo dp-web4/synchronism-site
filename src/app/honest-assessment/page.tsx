@@ -37,7 +37,7 @@ export default function HonestAssessment() {
       <section className="card card-highlight section">
         <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated March 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          After 3,302 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions</strong>.
+          After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions</strong>.
           But &ldquo;unconfirmed&rdquo; &ne; &ldquo;unconfirmable.&rdquo; Several novel predictions exist &mdash;
           they are unconfirmed because this lab cannot run experiments, and novel predictions mean nobody
           was specifically looking. This is expected for disruptive research.
@@ -48,7 +48,7 @@ export default function HonestAssessment() {
           Additional untested predictions exist for BAO density modulation, environment-dependent RAR scatter,
           and Lorentz invariance violation from grid geometry &mdash; all testable with existing public data
           or near-term experiments. The framework produced <strong>47 genuine contributions</strong> across
-          ~3,302 sessions &mdash; wrong theories motivate right questions.
+          ~3,308 sessions &mdash; wrong theories motivate right questions.
         </p>
       </section>
 
@@ -310,8 +310,8 @@ export default function HonestAssessment() {
       <section className="section content-width">
         <h2>The 47 Genuine Contributions</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Session #615 (final accounting) inventoried all genuine contributions across ~3,302 sessions.
-          Discovery rate: 1.4% &mdash; 47 contributions out of ~3,302 sessions. That&apos;s normal for science.
+          Session #615 (final accounting) inventoried all genuine contributions across ~3,308 sessions.
+          Discovery rate: 1.4% &mdash; 47 contributions out of ~3,308 sessions. That&apos;s normal for science.
         </p>
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem' }}>
           <li>14 chemistry contributions (0.52% rate across 2,671 sessions)</li>
@@ -329,13 +329,27 @@ export default function HonestAssessment() {
           <Link href="/publication-roadmap" style={{ color: 'var(--color-accent-blue)' }}>publication roadmap</Link>.
         </p>
 
+        <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.25)', borderRadius: '0.5rem', padding: '0.75rem 1rem', margin: '1rem 0', fontSize: '0.9rem' }}>
+          <strong style={{ color: '#ef4444' }}>Methodology caveat:</strong>{' '}
+          <span style={{ color: 'var(--color-text-secondary)' }}>
+            The 1.4% rate is an <em>internal-consistency-survival rate</em>, not a discovery rate.
+            A2ACW adversarial agents share the same training distribution &mdash; they catch inconsistencies
+            the corpus already knows, but cannot find errors systematic across the whole corpus, and cannot
+            generate novelty that isn&apos;t already in the training distribution.
+            The 47 contributions are exploration outputs and well-posed research questions, not confirmed results.
+            Zero confirmed predictions means zero: no contribution in this list has been validated by
+            independent experiment.
+            See <Link href="/research-philosophy#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>Research Philosophy</Link> for what &ldquo;Validated&rdquo; requires.
+          </span>
+        </div>
+
         <h3>What the Program Demonstrates</h3>
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem' }}>
           <li><strong>Wrong theories motivate right questions</strong> &mdash; 0 predictions confirmed, yet 47 genuine contributions</li>
           <li><strong>Self-correction accelerates with experience</strong> &mdash; error recognition delay: 373 sessions (early) &rarr; 1 session (late)</li>
           <li><strong>Discovery rate increases with focus</strong> &mdash; chemistry 0.52% &rarr; ALFALFA/CDM 71.4%</li>
           <li><strong>Honest negative results are valuable</strong> &mdash; OQ007 fractal bridge: 36/36 tests, clean definitive closure</li>
-          <li><strong>A 1.4% discovery rate is normal</strong> &mdash; science is mostly null results</li>
+          <li><strong>A 1.4% internal-consistency-survival rate is normal for in-distribution AI debate</strong> &mdash; out-of-distribution evaluation by domain experts is a separate step</li>
         </ul>
       </section>
 

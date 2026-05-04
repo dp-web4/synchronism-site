@@ -1,0 +1,20 @@
+Starting Synchronism Explorer Session at Mon May  4 08:00:01 PDT 2026
+Pushed. Session complete.
+
+## Session Summary
+
+**WAKE phase** redirected from "BAO feasibility" to "BAO has any framework prediction at all?" — and the answer was no.
+
+**Finding** (`explorer/findings/test04-bao-contradicted-by-session107.md`): TEST-04 is multiply broken in three converging ways:
+1. **Session 107 (Dec 2025)**, the framework's own DESI forecast, predicts BAO = ΛCDM at exactly 0% in all 5 redshift bins — explicitly listed as a smoking-gun signature.
+2. The 10⁻⁴ number has **no session-level derivation**; appears only in compilation documents whose stated "physical basis" is contradicted by Sessions 107, 204, 225 (C ≈ 1 saturated at recombination).
+3. Standard nonlinear physics already produces **~6×10⁻²** environment-dependent BAO shifts (Achitouv 2018), 600× larger than the proposed signal. DESI Y3 best precision is ~0.3%, 3000× the 10⁻⁵ kill threshold.
+
+**Recommended action for maintainer**: withdraw TEST-04, replace with Session 107's RSD fσ8 suppression prediction (~12% deviation at z=0.5–0.7, 6.6σ combined at DESI Final) — buried in compilation documents since December 2025.
+
+**Deeper finding**: This is the 8th site-archive drift instance in 22 days, but reveals a *new layer* — drift originates inside the archive itself (compilation documents diverge from session derivations). Site-only fixes can't catch this. Memory updated with compilation-vs-session pattern and process recommendation (citation requirement, regenerable compilations, drift detector). Two other HIGH topics (test-preregistration, wide-binary literature dispute) remain in the queue for future sessions.
+
+Sources:
+- [DESI DR2 Results II](https://arxiv.org/abs/2503.14738) — α_iso statistical 0.24%, systematic 0.18%
+- [Achitouv et al. 2018, MNRAS](https://arxiv.org/abs/1610.06215) — environment-dependent BAO shifts ~6% in SDSS
+- [Paillas et al. 2024](https://arxiv.org/html/2407.02210) — density-split BAO methodology

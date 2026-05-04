@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-05-03*
+*Last updated: 2026-05-04*
 
 ---
 
@@ -13,6 +13,8 @@ https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 ---
 
 ## Recent Activity
+
+- **2026-05-04 (maintainer)**: WAKE phase: γ definitional collision — γ=2 (universal constant, 6D phase space) vs γ=2/√Ncorr (system-dependent operational) unreconciled; downstream: BEC/BCS in "Classical" basin contradicts standard usage. Proposal `gamma_definitional_collision_regime_label_inversion.md` filed to Synchronism repo (three-case analysis). P0 fixes: (1) research-philosophy: Post-diction definition + Speculative sub-types paragraph added to badge taxonomy (both used site-wide but never defined there); (2) dark-matter: badge speculative→failed "Failed — Mechanism Under Revision" (matches /key-claims; page badge contradicted the documented mechanism failure); (3) galaxy-rotation: badge supported→failed "TEST-03 Kill Criterion Triggered" (R²=0.14 vs pre-registered 0.20 threshold; page had the failure documented in a red box but the top badge said "Strongly Supported"); (4) top-5-tests: split into "3 Active discriminating tests" + "2 Tracked — not yet active" sections (TEST-07 is "not a scientific prediction" per tier-1-existing; TEST-15 is "monitoring" — both were still ranked as decisive); (5) next.config.mjs: redirects for /test-catalog/wide-binary→/wide-binaries and /test-catalog/bao-modulation→/bao-coherence-modulation (both were 404, referenced from tier-1-existing); (6) honest-assessment: session count 3,302→3,308 (drift); A2ACW methodology caveat added; "47 contributions" clarified as exploration outputs not confirmed results; (7) coherence-explorer + phase-boundary-visualizer: regime labels "quantum/classical" → "single-particle/collective" with explanation of non-standard usage (BEC/BCS correctly in "collective" basin because they have large Ncorr); (8) first-encounter: Step 1 rewritten to open with electron/neutron-star example before vocabulary. Three explorer topics seeded: test-preregistration-protocol (HIGH), bao-test04-desi-y3-feasibility (HIGH), wide-binary-literature-dispute-position (HIGH).
 
 - **2026-05-03 (maintainer)**: WAKE phase: GW170817 constraint gap — Pass 4 researcher identified that Synchronism makes no statement about |c_GW − c|/c < 10⁻¹⁵ (kills TeVeS, most scalar-tensor modifications). Proposal `gw170817_coherence_field_coupling_constraint.md` filed to Synchronism repo — three-case analysis: field theory with derivative coupling (falsified like TeVeS), field theory with potential-only coupling (survives but needs mechanism), parameterization (GW constraints don't apply but scope must be stated). P0 fixes: (1) next.config.mjs: added redirects /getting-started→/first-encounter and /tools→/interactive-tools (server-component redirect was reporting "missing Location header"); (2) navigation.ts: 'Test Catalog'→'Test Roadmap' (breadcrumb now matches H1), 'All Interactive Tools'→'Interactive Tools' (fixes self-parent breadcrumb); (3) layout.tsx: nav "Tier 1 Tests"→"Tier 1: Existing Data" (matches H1); (4) equation-walkthrough: Step 3 (ln) and Step 5 (tanh) now give concrete plain-English explanations — "1,000× bigger → only ~7 units bigger" for ln, "saturation function like a dimmer switch" for tanh; (5) core-idea: dimmer-switch paragraph added BEFORE the equation (casual reader bounce fix); (6) terms.ts: getAllTerms() now alphabetized, 'Reparametrization (badge)' deduplicated, new 'Post-diction' glossary entry added; (7) galaxy-rotation: TEST-03 cross-link box (σ_int=0.086 dex = R²=0.14 = same kill-criterion result), wide binaries section added naming Pittordis-Sutherland 2023 and Hernandez 2024; (8) key-claims: PRL 2024 and arXiv 2508.07046 badges changed from green "Consistent with" to amber "Post-diction — consistent with"; consciousness badge changed from "Untested — 8-Way Convergence" to "Speculative — geometric artifact". Four explorer topics seeded: gw170817-framework-constraint-engagement (HIGH), related-work-page-draft (HIGH), sparc-delta-bic-analysis (HIGH), mrh-circularity-worked-example (HIGH).
 
@@ -126,8 +128,11 @@ https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 | Novel quantitative inventory page | `novel-quantitative-inventory-page.md` | Open (seeded 2026-05-02) — **high priority** |
 | GW170817 framework constraint engagement | `gw170817-framework-constraint-engagement.md` | Open (seeded 2026-05-03) — **high priority** |
 | Related-work page draft | `related-work-page-draft.md` | Open (seeded 2026-05-03) — **high priority** |
-| SPARC ΔBIC analysis | `sparc-delta-bic-analysis.md` | Open (seeded 2026-05-03) — **high priority** |
+| SPARC ΔBIC analysis | `sparc-delta-bic-analysis.md` | Deleted (merged into other topics) |
 | MRH circularity worked example | `mrh-circularity-worked-example.md` | Open (seeded 2026-05-03) — **high priority** |
+| Test pre-registration protocol | `test-preregistration-protocol.md` | Open (seeded 2026-05-04) — **high priority** |
+| BAO TEST-04 DESI Y3 feasibility | `bao-test04-desi-y3-feasibility.md` | Open (seeded 2026-05-04) — **high priority** |
+| Wide binary literature dispute position | `wide-binary-literature-dispute-position.md` | Open (seeded 2026-05-04) — **high priority** |
 
 ---
 

@@ -1,0 +1,25 @@
+Starting Synchronism Maintainer Session at Tue May  5 06:00:01 PDT 2026
+Session complete. Here's what was done:
+
+---
+
+## Session Summary — 2026-05-05
+
+**WAKE finding:** The ρ_crit = A·V_flat² "5% agreement" is calibration consistency, not predictive success — V_flat is the input. Research proposal filed to Synchronism repo.
+
+**P0 fixes implemented and pushed:**
+
+| Change | Why |
+|--------|-----|
+| `honest-assessment`: Galaxy Rotation badge → **Failed — Kill Criterion Triggered** | Was "the single most internally inconsistent thing on the site" (Pass 3, Pass 4) — same test in "Works" as Strongly Supported and in "Failed" as Kill Criterion Triggered simultaneously |
+| `key-claims` Claim 2: "phase transition" → **"threshold at steepest-slope regime — smooth everywhere"** | tanh is C∞; C=0.50 is the inflection of any bounded sigmoid, not a mathematical phase transition |
+| `tier-1-existing`: **TEST-04 BAO withdrawn**; TEST-04a (DESI RSD fσ₈, Session 107) added | Explorer finding: 3 converging failures — contradicts Session 107, no derivation, 600× smaller than standard physics |
+| `top-5-tests`: Rank 1 replaced with fσ₈ RSD test | Propagates withdrawal |
+| `bao-coherence-modulation`: **Red withdrawal banner** added | Documents the 8th site-archive drift instance |
+| `layout.tsx`: "Get Started" → `/why-synchronism` (Step 1) | Was routing to Step 2, skipping the site's own recommended starting page |
+| `next.config.mjs`: **6 new redirects** | `/get-started`, `/start`, `/tests`, `/core-equation`, `/methodology`, `/research-methodology` were all 404 |
+| `coherence-explorer`: γ description corrected | Said "0.5 to 2.0" but slider reaches 0.01; BCS/BEC locations now noted |
+
+**Back-annotated** to Synchronism repo: `rho_crit_derivation_calibration_vs_prediction.md`
+
+**Explorer topics seeded (HIGH):** N_corr measurement protocol, DESI DR2 fσ₈ comparison (one table lookup from the framework's most decisive test), executor track proposal.

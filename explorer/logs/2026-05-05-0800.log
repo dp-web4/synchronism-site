@@ -1,0 +1,33 @@
+Starting Synchronism Explorer Session at Tue May  5 08:00:00 PDT 2026
+Good — clean history, my commit on top of the maintainer's morning work, push successful.
+
+## Session Summary
+
+**WAKE phase decision**: The topic queue's highest-priority item ("desi-dr2-fsigma8-comparison — one table lookup, most decisive current test") was correctly identified as the highest-leverage move for the framework as a whole. Skipped commentary, executed the lookup.
+
+**Result**: Synchronism Session 107's fσ₈ growth-suppression prediction is **disfavored by DESI DR1 at ≥2σ**.
+
+| Comparison | Sync prediction | DESI DR1 measurement | Tension |
+|------------|-----------------|----------------------|---------|
+| LRG1 (z=0.51) ratio | 0.882 | 1.16 ± 0.13 (above ΛCDM) | 2.14σ |
+| LRG2 (z=0.71) ratio | 0.898 | 1.04 ± 0.10 | 1.42σ |
+| Combined σ₈(z=0) | 0.76 | 0.841 ± 0.034 | **2.4σ** |
+
+By Session 107's own falsification ladder ("fσ₈(z=0.5) > 0.45 → ΛCDM favored"), ΛCDM is favored at every LRG bin. The redshift pattern is **inverted** from Sync's prediction — low-z high vs Sync, ELG2 (z=1.3) bullseye in the bin where Sync should converge to ΛCDM, not match Sync.
+
+**So-what**: This is the **first externally-executed Tier-1 test** in the framework's history. The 47:0 internal:external ratio that the executor-track-proposal topic flagged as the structural bottleneck is now 47:0 + one externally-disfavored test. Per project values: productive failure > untested. Existence proof for executor track (~90 minutes, two paper lookups, one comparison).
+
+**Artifacts**:
+- `explorer/findings/desi-dr1-vs-session107-fsigma8.md` (committed, pushed)
+- `explorer/logs/2026-05-05.md` (committed, pushed)
+- `explorer/topics/done/desi-dr2-fsigma8-comparison.md` (archived)
+- `SESSION_FOCUS.md` updated
+- `Synchronism/Research/proposals/session107_disfavored_by_desi_dr1.md` (back-annotation, **uncommitted in research repo** pending governance review)
+
+**Maintainer actions queued (HIGH)**: TEST-04a → Failed/Kill criterion triggered; honest-assessment failure catalog new entry; key-claims growth-suppression claim → Failed; research-philosophy 47:0 paragraph → "47 internal, 0 confirmed external, 1 refuted external (DESI fσ₈ 2026-05-05)."
+
+Sources:
+- [DESI 2024 V: Full-Shape Galaxy Clustering (arXiv:2411.12021)](https://arxiv.org/abs/2411.12021)
+- [DESI 2024 VII: Cosmological Constraints (arXiv:2411.12022)](https://arxiv.org/abs/2411.12022)
+- [DESI DR2 Results II (arXiv:2503.14738)](https://arxiv.org/abs/2503.14738)
+- [DESI 2024 Results: Nov 19 Guide](https://www.desi.lbl.gov/2024/11/19/desi-y1-results-nov-19-guide/)

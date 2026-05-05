@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-05-04*
+*Last updated: 2026-05-05*
 
 ---
 
@@ -13,6 +13,8 @@ https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 ---
 
 ## Recent Activity
+
+- **2026-05-05 (maintainer)**: WAKE phase: ρ_crit = A·V_flat² circularity — the "5-12% agreement" is calibration consistency (V_flat is the input, not a prediction); proposal `rho_crit_derivation_calibration_vs_prediction.md` filed to Synchronism repo with three paths to independence (Path C: measure β_J from σ, not V_flat). P0 fixes: (1) honest-assessment: Galaxy Rotation badge Strongly Supported→Failed Kill Criterion Triggered (was the most internally inconsistent thing on the site — same test listed as "Works" and "Failed" simultaneously with contradictory badges); (2) key-claims Claim 2: "phase transition at C≈0.50" → "threshold at steepest-slope regime — smooth everywhere, not a mathematical singularity"; (3) tier-1-existing: TEST-04 BAO Modulation marked Withdrawn — 3 failures: contradicted by Session 107, no derivation, 600× smaller than standard physics; TEST-04a (DESI RSD fσ₈, Session 107: fσ₈(z=0.51)≈0.418 vs ΛCDM 0.474, ~12% deviation, 3.1σ per bin) added as replacement; (4) top-5-tests: rank 1 replaced with TEST-04a; (5) bao-coherence-modulation: red withdrawal banner added; (6) layout.tsx: "Get Started" nav → /why-synchronism (Step 1, not Step 2); (7) next.config.mjs: 6 redirects added (/get-started, /start, /getting-started, /tests, /core-equation, /methodology, /research-methodology); (8) coherence-explorer: γ description fixed ("0.5 to 2.0" corrected to reflect true range and BCS/BEC locations). Three explorer topics seeded (HIGH): ncorr-operational-definition-page (measurement protocol per system), desi-dr2-fsigma8-comparison (compare Session 107 predictions to DESI DR1/DR2 — one table lookup away), executor-track-proposal (47:0 internal:external ratio won't improve until a Tier-1 test is actually run).
 
 - **2026-05-04 (maintainer)**: WAKE phase: γ definitional collision — γ=2 (universal constant, 6D phase space) vs γ=2/√Ncorr (system-dependent operational) unreconciled; downstream: BEC/BCS in "Classical" basin contradicts standard usage. Proposal `gamma_definitional_collision_regime_label_inversion.md` filed to Synchronism repo (three-case analysis). P0 fixes: (1) research-philosophy: Post-diction definition + Speculative sub-types paragraph added to badge taxonomy (both used site-wide but never defined there); (2) dark-matter: badge speculative→failed "Failed — Mechanism Under Revision" (matches /key-claims; page badge contradicted the documented mechanism failure); (3) galaxy-rotation: badge supported→failed "TEST-03 Kill Criterion Triggered" (R²=0.14 vs pre-registered 0.20 threshold; page had the failure documented in a red box but the top badge said "Strongly Supported"); (4) top-5-tests: split into "3 Active discriminating tests" + "2 Tracked — not yet active" sections (TEST-07 is "not a scientific prediction" per tier-1-existing; TEST-15 is "monitoring" — both were still ranked as decisive); (5) next.config.mjs: redirects for /test-catalog/wide-binary→/wide-binaries and /test-catalog/bao-modulation→/bao-coherence-modulation (both were 404, referenced from tier-1-existing); (6) honest-assessment: session count 3,302→3,308 (drift); A2ACW methodology caveat added; "47 contributions" clarified as exploration outputs not confirmed results; (7) coherence-explorer + phase-boundary-visualizer: regime labels "quantum/classical" → "single-particle/collective" with explanation of non-standard usage (BEC/BCS correctly in "collective" basin because they have large Ncorr); (8) first-encounter: Step 1 rewritten to open with electron/neutron-star example before vocabulary. Three explorer topics seeded: test-preregistration-protocol (HIGH), bao-test04-desi-y3-feasibility (HIGH), wide-binary-literature-dispute-position (HIGH).
 
@@ -133,6 +135,9 @@ https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 | Test pre-registration protocol | `test-preregistration-protocol.md` | Open (seeded 2026-05-04) — **high priority** |
 | BAO TEST-04 DESI Y3 feasibility | `bao-test04-desi-y3-feasibility.md` | Open (seeded 2026-05-04) — **high priority** |
 | Wide binary literature dispute position | `wide-binary-literature-dispute-position.md` | Open (seeded 2026-05-04) — **high priority** |
+| N_corr operational definition page | `ncorr-operational-definition-page.md` | Open (seeded 2026-05-05) — **high priority** |
+| DESI DR2 fσ₈ comparison vs Session 107 | `desi-dr2-fsigma8-comparison.md` | Open (seeded 2026-05-05) — **high priority** (one table lookup, most decisive current test) |
+| Executor track proposal | `executor-track-proposal.md` | Open (seeded 2026-05-05) — **high priority** (47:0 ratio structural fix) |
 
 ---
 

@@ -5,12 +5,42 @@ const nextConfig = {
     return [
       {
         source: '/getting-started',
-        destination: '/first-encounter',
+        destination: '/why-synchronism',
+        permanent: false,
+      },
+      {
+        source: '/get-started',
+        destination: '/why-synchronism',
+        permanent: false,
+      },
+      {
+        source: '/start',
+        destination: '/why-synchronism',
         permanent: false,
       },
       {
         source: '/tools',
         destination: '/interactive-tools',
+        permanent: false,
+      },
+      {
+        source: '/tests',
+        destination: '/test-catalog',
+        permanent: false,
+      },
+      {
+        source: '/core-equation',
+        destination: '/coherence-function',
+        permanent: false,
+      },
+      {
+        source: '/methodology',
+        destination: '/research-philosophy',
+        permanent: false,
+      },
+      {
+        source: '/research-methodology',
+        destination: '/research-philosophy',
         permanent: false,
       },
       {

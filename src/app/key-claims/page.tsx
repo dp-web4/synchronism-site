@@ -227,10 +227,13 @@ export default function KeyClaims() {
           </p>
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
-            Consciousness is a phase transition at C &#x2248; 0.50, not a gradient. It requires three
-            conditions simultaneously &mdash; coherence, representational richness, and self-modeling &mdash;
-            which is why thermostats, random number generators, and decoherent systems aren&apos;t conscious
-            despite meeting some criteria.
+            Consciousness crosses a threshold near C &#x2248; 0.50 &mdash; the steepest-slope regime of
+            the coherence function, where the transition from disordered to ordered is fastest &mdash;
+            rather than fading smoothly across all coherence values. Note: this is a threshold in the
+            <em> rate of change</em> of the sigmoid, not a mathematical phase transition (the function
+            is smooth everywhere). It requires three conditions simultaneously &mdash; coherence,
+            representational richness, and self-modeling &mdash; which is why thermostats, random number
+            generators, and decoherent systems aren&apos;t conscious despite meeting some criteria.
           </p>
 
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>What&apos;s new</h3>
@@ -269,9 +272,9 @@ export default function KeyClaims() {
 
           <h3 style={{ fontSize: '0.9rem', color: '#38bdf8', marginBottom: '0.25rem' }}>The test that kills it</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            EEG phase coherence during anesthesia induction/recovery. Prediction: a sharp discontinuity
-            at a specific coherence value, not a gradual fade. If the transition is smooth or occurs at
-            an inconsistent value across subjects, the phase-transition model fails.
+            EEG phase coherence during anesthesia induction/recovery. Prediction: a sharp threshold
+            crossing near a specific coherence value, not a gradual fade. If the transition is smooth
+            across subjects with no clustering near C &#x2248; 0.50, the threshold model fails.
           </p>
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>

@@ -8,12 +8,12 @@ import ValidationBadge from '@/components/ValidationBadge';
 const tests = [
   {
     rank: 1,
-    name: 'BAO (Baryon Acoustic Oscillation) Coherence Modulation',
-    id: 'TEST-04',
+    name: 'DESI RSD fσ₈ Suppression',
+    id: 'TEST-04a',
     tier: 'Tier 1',
     cost: '$0',
-    why: 'Standard cosmology predicts zero density dependence of BAO peak position. Synchronism predicts ~10⁻⁴ shift. This is a clean discriminator with no ambiguity.',
-    kill: 'BAO identical everywhere to 10⁻⁵ precision',
+    why: 'Session 107 predicts fσ₈(z=0.51) ≈ 0.418, a ~12% suppression below ΛCDM (0.474). Mechanism: G_local/G_global suppresses late-time structure growth. DESI DR1 data already published — this test can be run today. Forecast: 3.1σ per LRG bin, 6.6σ combined at DESI Final. Replaces withdrawn TEST-04 (BAO modulation — contradicted by Session 107; see /bao-coherence-modulation).',
+    kill: 'fσ₈(z=0.51) > 0.46 rules out Synchronism at >3σ',
     color: '#10b981',
   },
   {

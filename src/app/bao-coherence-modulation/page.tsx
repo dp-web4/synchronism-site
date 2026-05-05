@@ -9,16 +9,57 @@ export default function BaoCoherenceModulation() {
   return (
     <>
       <Breadcrumbs currentPath="/bao-coherence-modulation" />
-      <h1>BAO Coherence Modulation (TEST-04)</h1>
-      <ValidationBadge status="speculative" label="Derivation Pending" />
+      <h1>BAO Coherence Modulation (TEST-04) — Withdrawn</h1>
+      <ValidationBadge status="failed" label="Withdrawn — 2026-05-04" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <div style={{
+          background: 'rgba(239, 68, 68, 0.10)',
+          border: '1px solid rgba(239, 68, 68, 0.4)',
+          borderRadius: '0.5rem',
+          padding: '1rem 1.25rem',
+          marginBottom: '1.5rem',
+        }}>
+          <h3 style={{ color: '#ef4444', marginBottom: '0.5rem', marginTop: 0 }}>TEST-04 Withdrawn (2026-05-04)</h3>
+          <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 0.75rem' }}>
+            Three converging failures make this test indefensible as stated:
+          </p>
+          <ol style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.5rem', margin: 0 }}>
+            <li style={{ marginBottom: '0.5rem' }}>
+              <strong>Contradicted by Session 107:</strong> The framework&apos;s own DESI forecast (Session 107,
+              Dec 2025) explicitly states BAO matches &Lambda;CDM at 0.0% in all five DESI redshift bins.
+              The sound horizon is set at z&nbsp;&#x223C;&nbsp;1100 when C&nbsp;&#x2248;&nbsp;1 everywhere &mdash; no
+              modification is possible. &ldquo;BAO perfectly consistent with &Lambda;CDM&rdquo; is one of the
+              framework&apos;s own predicted smoking-gun signatures.
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              <strong>No session-level derivation:</strong> The 10<sup>&minus;4</sup> number appears only in
+              two compilation documents that drifted from the underlying sessions. No session derives it.
+              The stated physical basis (&ldquo;BAO forms at recombination when &rho;/&rho;<sub>crit</sub> transitions
+              rapidly&rdquo;) is contradicted by Session 225 and 204, which show C&nbsp;=&nbsp;0.9995 at recombination
+              &mdash; essentially saturated, not transitioning.
+            </li>
+            <li>
+              <strong>Buried under standard physics:</strong> Environment-dependent BAO shifts are an
+              active subfield of standard cosmology. Achitouv et al. (2018) found ~6&times;10<sup>&minus;2</sup>
+              shifts in SDSS &mdash; 600&times; larger than the proposed Synchronism signal. The kill criterion
+              (10<sup>&minus;5</sup>) is 3000&times; below DESI Y3&apos;s best precision (~0.3%).
+            </li>
+          </ol>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.75rem', marginBottom: 0 }}>
+            Replacement: <strong>TEST-04a (DESI RSD f&#x03C3;&#x2088; Suppression)</strong> &mdash; the test Session 107
+            actually predicts: f&#x03C3;&#x2088;(z=0.51)&nbsp;&#x2248;&nbsp;0.418, a 12% deviation from &Lambda;CDM
+            (0.474), testable with already-published DESI DR1 LRG data.
+            See <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 catalog</Link>.
+          </p>
+        </div>
+
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            <strong>Status:</strong> TEST-04 is listed as Tier-1 and is potentially discriminating
-            against ΛCDM. However, the derivation of the predicted 10<sup>−4</sup> shift and the
-            specific estimator required to test it do not yet exist on this site. This page is a
-            derivation stub. The physics argument is given below; the quantitative derivation is open.
+            <strong>Historical record below.</strong> This page is preserved as documentation of the eighth
+            site-archive drift instance (2026-05-04). The prediction appeared in compilation documents
+            that were not checked against underlying session derivations. The page is kept for transparency;
+            the prediction is withdrawn.
           </p>
         </div>
 

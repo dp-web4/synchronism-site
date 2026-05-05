@@ -59,14 +59,16 @@ export default function HonestAssessment() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>Galaxy Rotation: ALFALFA-SDSS</h3>
-              <ValidationBadge status="supported" />
+              <ValidationBadge status="failed" label="Kill Criterion Triggered" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               14,585 galaxies. Environment-dependent RAR (Radial Acceleration Relation) scatter (Novel Prediction 2) at p = 5&times;10<sup>&minus;6</sup>.
               &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex, below CDM (Cold Dark Matter) prediction.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              Caveat: MOND + mass-to-light corrections explain all variance. 86% of RAR scatter remains unexplained (R&sup2; = 0.14).
+              The environmental effect is detectably nonzero (p = 5&times;10<sup>&minus;6</sup>), but explains only
+              14% of total RAR scatter. The pre-registered kill criterion required R&sup2; &gt; 0.20. At R&sup2; = 0.14,
+              the kill criterion fired. See TEST-03 in the &ldquo;What Failed&rdquo; section below.
             </p>
           </div>
 

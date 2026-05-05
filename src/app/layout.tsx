@@ -22,9 +22,9 @@ export default function RootLayout({
           <nav className="nav-links" aria-label="Main navigation">
             <SiteSearch />
             <Link
-              href="/first-encounter"
+              href="/why-synchronism"
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
-              title="Getting Started"
+              title="Start here: the question behind the framework"
             >
               Get Started
             </Link>

@@ -70,9 +70,13 @@ export default function CoherenceExplorer() {
             Note: these labels describe the <em>number of correlated degrees of freedom</em>, not the standard quantum/classical distinction — BEC and BCS superconductors appear in the &ldquo;collective&rdquo; basin, which is correct (they have large N<sub>corr</sub>).
           </p>
           <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem' }}>
-            <strong>What to notice:</strong> Move &#x03B3; from 0.5 to 2.0 and watch the curve flatten.
-            At &#x03B3; &#x2248; 1, the transition from quantum to classical is steepest &mdash;
-            this is where the most interesting physics happens.
+            <strong>What to notice:</strong> Move &#x03B3; from 2.0 downward and watch the curve flatten.
+            At &#x03B3; &#x2248; 1, the transition is steepest &mdash; this is where chemistry and biology happen.
+            The slider goes down to &#x03B3; = 0.01: BCS superconductors sit near &#x03B3; &#x2248; 0.02 and
+            BEC near &#x03B3; &#x2248; 0.002 (use the{' '}
+            <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
+            to reach those regimes). At very low &#x03B3; the curve is nearly flat &mdash; high coherence
+            at almost all densities, which is the strongly collective regime.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             <strong>Why &#x03B3; is decoupled from N<sub>corr</sub> here:</strong> This tool sets &#x03B3;

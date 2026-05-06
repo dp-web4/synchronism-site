@@ -232,6 +232,57 @@ export default function ResearchPhilosophy() {
           distribution, which limits adversarial independence.
         </p>
 
+        <h2 id="kill-criterion-audit-trail">Prediction Audit Trail</h2>
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+          Every Tier-1 prediction that has been registered, modified, withdrawn, or adjudicated &mdash; with dates and reasons.
+          Without this log, &ldquo;kill criteria are pre-registered&rdquo; is a claim, not a demonstrated practice.
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1.5rem' }}>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <strong>TEST-03: ALFALFA-SDSS TFR Scatter</strong>
+              <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>KILL CRITERION TRIGGERED</span>
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
+              Registered: Session 616. Threshold: R² &gt; 0.20. Result: R² = 0.14.
+              Status: presumptively failed (denominator ambiguity under audit). No modification.
+            </p>
+          </div>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <strong>TEST-04: BAO Coherence Modulation</strong>
+              <span style={{ fontSize: '0.75rem', color: '#f59e0b' }}>WITHDRAWN 2026-05-04</span>
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
+              Registered with kill criterion 10⁻⁵ BAO precision. Problem: (1) Session 107 explicitly
+              forecast 0.0% BAO modification; (2) no session-level derivation for 10⁻⁴ number;
+              (3) kill threshold was 3000× below DESI Y3 precision — vacuous at registration.
+              Withdrawal is NOT a clean exit: the original kill criterion was unfalsifiable from day one.
+            </p>
+          </div>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <strong>TEST-04a: DESI RSD fσ₈ Suppression</strong>
+              <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>DISFAVORED 2.4σ (2026-05-05)</span>
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
+              Registered as TEST-04 replacement (2026-05-04). Derivation: Session 107. Threshold: fσ₈(z=0.51) &gt; 0.46
+              rules out at 3σ; &gt; 0.45 disfavors at 2σ. DESI DR1 result (2026-05-05): fσ₈ ≈ 0.55 ± 0.06 at LRG1,
+              σ₈ = 0.841 ± 0.034 combined. By own kill criterion: ΛCDM favored at every LRG bin.
+              Pending DESI DR2 for 3σ+ confirmation. <strong>No replacement will be substituted.</strong>
+            </p>
+          </div>
+        </div>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+          <strong>Operational states vs. validation badges:</strong> Terms like &ldquo;Kill Criterion Triggered,&rdquo;
+          &ldquo;Withdrawn,&rdquo; and &ldquo;MOND-shared&rdquo; are <em>operational states</em> describing prediction lifecycle
+          and scope &mdash; distinct from the six <Link href="#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>validation badges</Link>{' '}
+          (Validated / Supported / Untested / Speculative / Reparametrization / Failed). A prediction flagged
+          &ldquo;Kill Criterion Triggered&rdquo; also carries the Failed badge; &ldquo;Withdrawn&rdquo; does not carry any
+          badge (it was never adjudicated); &ldquo;MOND-shared&rdquo; means a positive result would confirm both
+          MOND and Synchronism and cannot discriminate &mdash; it does not affect the badge until tested.
+        </p>
+
         <h2>Full Research Archive</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Every session, derivation, failure, and dataset is public:

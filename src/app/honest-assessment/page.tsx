@@ -35,20 +35,20 @@ export default function HonestAssessment() {
 
       {/* Overall Verdict */}
       <section className="card card-highlight section">
-        <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated March 2026)</h2>
+        <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated May 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions</strong>.
-          But &ldquo;unconfirmed&rdquo; &ne; &ldquo;unconfirmable.&rdquo; Several novel predictions exist &mdash;
-          they are unconfirmed because this lab cannot run experiments, and novel predictions mean nobody
-          was specifically looking. This is expected for disruptive research.
+          After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 1 refuted by external data</strong>.
+          DESI DR1 (2026-05-05) measures fσ₈(z=0.51) ≈ 0.55 ± 0.06 — above ΛCDM, opposite to Synchronism&apos;s
+          predicted suppression (0.418). By Session 107&apos;s own kill criterion, the framework&apos;s one live
+          cosmological discriminator (TEST-04a) is disfavored at 2.4σ. This is the first external dataset to
+          adjudicate a Synchronism-specific prediction.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           One <strong>candidate prediction</strong> (entity criterion &Gamma;&nbsp;&lt;&nbsp;m) survived all 13 stress
           tests &mdash; derivable from oscillation basis, not from QFT, consistent with existing data.
-          Additional untested predictions exist for BAO density modulation, environment-dependent RAR scatter,
-          and Lorentz invariance violation from grid geometry &mdash; all testable with existing public data
-          or near-term experiments. The framework produced <strong>47 genuine contributions</strong> across
-          ~3,308 sessions &mdash; wrong theories motivate right questions.
+          The framework produced <strong>47 internal contributions</strong> across ~3,308 sessions &mdash;
+          well-posed questions and methodology outputs, zero confirmed novel results.
+          &ldquo;Unconfirmed&rdquo; &ne; &ldquo;wrong&rdquo; &mdash; but the evidence now includes one external refutation.
         </p>
       </section>
 
@@ -192,6 +192,29 @@ export default function HonestAssessment() {
               archive source is audited, TEST-03 is classified as presumptively failed. The {' '}
               <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 catalog</Link>{' '}
               carries a matching notice.
+            </p>
+          </div>
+
+          <div className="card">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>TEST-04a: DESI RSD fσ₈ — Disfavored at 2.4σ</h3>
+              <ValidationBadge status="failed" label="Kill Criterion Triggered — Pending DR2 Confirmation" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              Session 107 (Dec 2025) predicted fσ₈(z=0.51) ≈ 0.418 — a 12% suppression below ΛCDM (0.474),
+              driven by G<sub>local</sub>/G<sub>global</sub> coherence ratio suppressing structure growth.
+              DESI DR1 (arXiv:2411.12021, Table 9) measures fσ₈ ≈ 0.55 ± 0.06 at LRG1 (z=0.51) —
+              ABOVE ΛCDM, not below it. Combined σ₈(z=0) = 0.841 ± 0.034 vs Synchronism&apos;s 0.76 → 2.4σ
+              disagreement. By Session 107&apos;s own kill criterion (&ldquo;fσ₈(z=0.5) &gt; 0.45 → ΛCDM
+              favored&rdquo;), ΛCDM is favored at every LRG bin.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              The failure pattern is inverted — low-z bins are systematically HIGH vs Synchronism (LRG1 +0.86σ,
+              LRG2 +1.5σ, QSO +2.6σ), not suppressed. The ELG2 (z=1.3) bin appears consistent with
+              Synchronism&apos;s 0.76, but ELG2 is where Session 107 predicted convergence to ΛCDM — so
+              the &ldquo;bullseye&rdquo; is anomalous, not confirming. Adjudicated 2026-05-05. Pending DESI DR2
+              for definitive verdict. This was the framework&apos;s only live Synchronism-specific cosmological
+              discriminator — no replacement will be substituted.
             </p>
           </div>
 

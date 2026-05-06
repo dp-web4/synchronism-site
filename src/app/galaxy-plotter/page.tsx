@@ -150,11 +150,18 @@ export default function GalaxyPlotter() {
         </div>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem', flexWrap: 'wrap', gap: '0.5rem' }}>
             <span style={{ color: 'var(--color-text-primary)', fontWeight: 'bold' }}>{galaxy.name}</span>
             <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              {galaxy.type} &nbsp;&bull;&nbsp; V<sub>flat</sub> = {galaxy.vflat} km/s
+              {galaxy.type}
             </span>
+          </div>
+          <div style={{ background: 'rgba(245,158,11,0.08)', borderRadius: '4px', padding: '0.4rem 0.6rem', marginBottom: '0.75rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+            <strong style={{ color: '#f59e0b' }}>V<sub>flat</sub> = {galaxy.vflat} km/s (calibrated input)</strong>
+            {' '}— taken from SPARC/MOND fits for this galaxy. The violet curve is fitted to this value,
+            not predicted from first principles. Any MOND-like shape that uses V<sub>flat</sub> as input
+            will recover the flat portion of the curve by construction. See{' '}
+            <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>.
           </div>
 
           <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', height: 'auto', display: 'block' }}>

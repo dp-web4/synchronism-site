@@ -60,13 +60,13 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-04a',
-    name: 'DESI RSD fσ₈ Suppression',
-    data: 'DESI DR1 LRG + DR2 (published)',
+    name: 'DESI RSD fσ₈ Suppression — DISFAVORED',
+    data: 'DESI DR1 (arXiv:2411.12021, Table 9 & 10)',
     cost: '$0',
-    time: '1 month',
-    prediction: 'fσ₈(z=0.51) ≈ 0.418 — a ~12% suppression below ΛCDM (0.474). Mechanism: G_local/G_global = C_cosmic/C_galactic suppresses structure growth at late times. Session 107 forecasts 1.7σ–3.2σ discrimination per DESI LRG bin, 6.6σ combined at DESI Final.',
+    time: 'ADJUDICATED (2026-05-05)',
+    prediction: 'fσ₈(z=0.51) ≈ 0.418 — a ~12% suppression below ΛCDM (0.474). Mechanism: G_local/G_global = C_cosmic/C_galactic suppresses structure growth at late times. Session 107 forecasts 1.7σ–3.2σ discrimination per DESI LRG bin.',
     kill: 'fσ₈(z=0.51) > 0.46 (rules out Synchronism at >3σ); fσ₈(z=0.51) > 0.45 disfavors at >2σ',
-    alert: 'Replacement for withdrawn TEST-04. Derivation: Session 107 (Dec 10, 2025) — definitive DESI forecast with explicit physics chain. DESI DR1 LRG fσ₈ already published; this is the only current-data cosmological test the framework has with a 3σ+ discrimination prospect.',
+    alert: 'DESI DR1 RESULT (2026-05-05): Kill criterion triggered. DESI DR1 LRG1 (z=0.51) measures fσ₈ ≈ 0.55 ± 0.06 — above ΛCDM, not below it. Combined σ₈(z=0) = 0.841 ± 0.034 vs Synchronism\'s 0.76 → 2.4σ disagreement. The pattern across all LRG bins is inverted from Session 107\'s prediction: low-z bins systematically HIGH vs Sync (LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ). By Session 107\'s own falsification ladder ("fσ₈(z=0.51) > 0.45 → ΛCDM favored"), ΛCDM is favored at every LRG bin. See findings/desi-dr1-vs-session107-fsigma8.md and research proposal session107_disfavored_by_desi_dr1.md. Verdict: DISFAVORED at 2.4σ — pending DESI DR2 for definitive 3σ+ confirmation. No replacement test will be substituted — this was the framework\'s one live cosmological discriminator.',
   },
   {
     id: 'TEST-05',

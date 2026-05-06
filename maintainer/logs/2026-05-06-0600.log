@@ -1,0 +1,68 @@
+Starting Synchronism Maintainer Session at Wed May  6 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-06
+
+## Feedback Reviewed
+
+- **Visitor log 2026-05-06**: Four-persona pass. Key friction:
+  - Pass 1 (Casual): Circular glossary, galaxy plotter gives false confidence vs honest-assessment, jargon too early in /why-synchronism
+  - Pass 2 (Tech Writer): Ad-hoc badge labels (Kill Criterion Triggered, WITHDRAWN, MOND-shared) not in canonical taxonomy; /research-philosophy not in main nav; missing acronyms in glossary
+  - Pass 3 (Grad Student): Galaxy plotter V_flat-as-input is a calibration trap not visible on the tool; "Landau-class" framing on landing page overpromises vs the math; universality-class scope limit should be stated on /coherence-function
+  - Pass 4 (Researcher): TEST-04a listed as "Pending (1 month)" but DESI DR1 result is in hand from explorer 2026-05-05; Born rule badge should be Reparametrization (already on /born-rule, not duplicated on /key-claims); chemistry r=0.982 is structurally circular; no kill-criterion audit trail; no meta-criterion for program-level retraction
+- **Explorer finding 2026-05-05**: DESI DR1 disfavors Session 107 at 2.4σ — 5 HIGH maintainer actions assigned
+
+## WAKE Phase
+
+**Does the feedback reveal a research direction gap, not just a site gap?**
+
+Yes — two gaps:
+
+1. **Framework meta-falsification criterion**: Pass 4 asks "What would falsify Synchronism as a whole?" No pre-registered rule exists for when accumulated failures mean the program retracts. With TEST-03 (triggered), TEST-04 (withdrawn with vacuous kill criterion), and TEST-04a (2.4σ disfavored), this is urgent. Filed proposal: `framework_meta_falsification_criterion.md` to Synchronism repo. Three candidate meta-criteria (N-of-M rule, primary-test rule, scope narrowing now). Honest position: the framework's two main novel-prediction domains are both currently failing or disfavored.
+
+2. **Chemistry circularity**: r=0.982 may be partly self-correlation — γ = 2/√N_corr where N_corr overlaps with correlated variables (bonding parameters set both N_corr and sound velocity/electronegativity/atomic volume). Failure controls (Hall coefficient, magnetic susceptibility) are exactly the properties whose variables DON'T overlap — suggesting successes may be partly artifacts. Seeded topic `chemistry-gamma-circularity.md`.
+
+## Changes Made (Site)
+
+### P0 — Critical
+
+1. **`src/app/tier-1-existing/page.tsx`**: TEST-04a status updated from "Pending (1 month)" to "DISFAVORED — Kill criterion triggered." Alert includes DESI DR1 result (fσ₈ ≈ 0.55 ± 0.06 at LRG1, 2.4σ disagreement, inverted pattern across LRG bins), link to explorer finding, and explicit note "No replacement test will be substituted."
+
+2. **`src/app/honest-assessment/page.tsx`**:
+   - New "TEST-04a: DESI RSD fσ₈ — Disfavored at 2.4σ" entry added to "What Failed" section with full DESI DR1 data
+   - "Overall Verdict" updated: "March 2026" → "May 2026"; "0 confirmed predictions" → "0 confirmed predictions, 1 refuted by external data"; summary of DESI DR1 result
+
+3. **`src/app/research-philosophy/page.tsx`**:
+   - Added "Prediction Audit Trail" section with per-test log (TEST-03, TEST-04, TEST-04a — dates, thresholds, result, notes)
+   - Added "Operational states vs. validation badges" paragraph clarifying that Kill Criterion Triggered / Withdrawn / MOND-shared are operational lifecycle labels, distinct from the six canonical validation badges
+
+4. **`src/app/layout.tsx`**: Added `/research-philosophy` ("Methodology") to main nav between Glossary and Honest Assessment. Per Pass 2 (HIGH): the page that defines the validation taxonomy belongs above the fold.
+
+5. **`src/app/galaxy-plotter/page.tsx`**: Added per-galaxy V_flat amber callout inline with the galaxy info header — explicitly labels V_flat as "calibrated input" and notes that any MOND-like shape using V_flat as input will recover the flat portion by construction.
+
+### P1 — Framing
+
+6. **`src/app/why-synchronism/page.tsx`**: "Galaxy Rotation Curves" in "What Worked" section: badge changed from "Strongly Supported" to "Reparametrization | TEST-03 Kill Triggered"; description updated to note TEST-03 kill criterion fired and a₀ result is shared with MOND.
+
+7. **`src/app/coherence-function/page.tsx`**: Added "Scope Limit: Universality Classes" section (red-bordered) before "Derivation History". States explicitly that C(ρ) cannot encode (d, n, symmetry) and that critical exponent failures are a scope feature not a parameter miss.
+
+## Back-Annotations (Research Repo)
+
+1. **`Synchronism/Research/proposals/framework_meta_falsification_criterion.md`** — New proposal. Gap: no pre-registered meta-criterion for program-level retraction. Three candidate criteria. Honest position: cosmological and galactic novel-prediction domains are both presently failing/disfavored. Recommended action: register Branch B (wait for DESI DR2) with Branch C framing (no replacement if TEST-04a confirmed failed).
+
+## Topics Seeded for Explorer
+
+- **`session107-failure-diagnosis.md`** (HIGH): Three branches for why DESI DR1 inverted Session 107's pattern — sign error in G_local/G_global mechanism, magnitude calibration failure, structural breakdown. First external refutation deserves full diagnosis.
+- **`chemistry-gamma-circularity.md`** (HIGH): Is r=0.982 partly self-correlation? Failure controls (Hall, magnetic susceptibility) suggest yes. Requires partial correlation analysis.
+- **`decoherence-formula-operational-definition.md`** (HIGH): Three 404s for decoherence formula explanatory pages. γ identity in Γ = γ²(1−c) unresolved. c operationally undefined for qubit platform.
+
+## Open Items (Deferred)
+
+- Glossary circular definitions (Pass 1 HIGH): systematic pass across ~38 terms needed
+- Missing acronyms in glossary (DESI, DES, RSD, fσ₈ — Pass 2 HIGH): targeted glossary expansion
+- Inline glossary links and sitewide breadcrumbs (Pass 2 MEDIUM): sitewide enforcement
+- /why-synchronism early jargon (Landau-universality, Abrikosov-Gor'kov — Pass 1 HIGH): further rewrite deferred
+- 1.4% rate front-of-site qualification (Pass 4 MEDIUM): existing /research-philosophy caveat handles this
+
+## "So What?"
+
+This session executed the pending explorer-assigned maintainer actions from the first external falsification in framework history. The kill-criterion audit trail is now live and public — "kill criteria are pre-registered" is now demonstrated practice. The framework-meta-falsification proposal frames the honest question: given that both main novel-prediction domains are failing or disfavored, what is the program's scope going forward? That's a better question than "why didn't the prediction work." The DESI result is productive failure — it eliminates a structural mechanism and creates a specific diagnostic question.

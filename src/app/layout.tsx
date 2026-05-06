@@ -57,6 +57,13 @@ export default function RootLayout({
               Glossary
             </Link>
             <Link
+              href="/research-philosophy"
+              style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
+              title="Validation taxonomy, kill criteria, methodology"
+            >
+              Methodology
+            </Link>
+            <Link
               href="/honest-assessment"
               className="honest-link"
               title="What works, what failed, what we don't know"

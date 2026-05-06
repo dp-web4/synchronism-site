@@ -134,6 +134,27 @@ export default function CoherenceFunction() {
           </p>
         </div>
 
+        <h2>Scope Limit: Universality Classes</h2>
+        <div style={{ padding: '0.75rem 1rem', background: 'rgba(239,68,68,0.06)', borderRadius: '6px', borderLeft: '3px solid #ef4444', marginBottom: '1rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
+            <strong>C(&#x03C1;) cannot encode universality-class structure.</strong> Real phase transitions are
+            classified by (spatial dimension <em>d</em>, order-parameter dimension <em>n</em>, symmetry group) —
+            these determine whether a system belongs to the 3D-Ising universality class (&#x03B1;&nbsp;=&nbsp;0.110),
+            3D-XY (&#x03B1;&nbsp;=&nbsp;&minus;0.015), or mean-field (&#x03B1;&nbsp;=&nbsp;0). C(&#x03C1;) has no
+            inputs encoding <em>d</em>, <em>n</em>, or symmetry. It therefore cannot reproduce critical exponents
+            or distinguish universality classes — a one-parameter scalar coherence function is structurally
+            blind to this information.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
+            This is a <strong>scope limit</strong>, not a parameter-tuning failure. C(&#x03C1;) describes
+            sigmoidal interpolation between coherent and decoherent regimes. It does not claim to predict
+            critical exponents, universality-class membership, or quantitative crossover structure.
+            The failures documented in <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
+            (critical exponents 2&times; off, T<sub>c</sub> 6.5&times; wrong) are consequences of applying the function
+            outside this scope, not evidence that the function itself is wrong within scope.
+          </p>
+        </div>
+
         <h2>Derivation History</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
           <li><strong>Session #64-65</strong>: &#x03B3; = 2.0 derived from 6D phase space degrees of freedom</li>

@@ -63,9 +63,10 @@ export default function WhySynchronism() {
             <h3>Galaxy Rotation Curves</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
               Tested against 14,760 galaxies (SPARC + ALFALFA-SDSS).
-              MOND&apos;s acceleration constant a&#x2080; = cH&#x2080;/(2&#x03C0;) emerged from the theory.
+              a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 10% &mdash; but this result is shared with MOND and other frameworks.
+              The novel environment-dependent scatter prediction (TEST-03) fired its kill criterion (R²=0.14 &lt; 20% threshold).
             </p>
-            <span className="badge badge-supported">Strongly Supported</span>
+            <span className="badge badge-reparametrization">Reparametrization | TEST-03 Kill Triggered</span>
           </div>
           <div className="card">
             <h3>Chemistry: &#x03B3; &#x2248; 1 Boundary</h3>

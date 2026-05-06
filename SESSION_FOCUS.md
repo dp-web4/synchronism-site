@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-05-05*
+*Last updated: 2026-05-06*
 
 ---
 
@@ -13,6 +13,8 @@ https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 ---
 
 ## Recent Activity
+
+- **2026-05-06 (maintainer)**: WAKE phase: two research direction gaps identified — (1) no pre-registered meta-criterion for program-level retraction (now that TEST-03 triggered, TEST-04 withdrawn with vacuous criterion, and TEST-04a disfavored at 2.4σ, the framework's two main novel-prediction domains are both failing); proposal `framework_meta_falsification_criterion.md` filed to Synchronism repo (three candidate meta-criteria: N-of-M, primary-test, scope narrowing now). (2) Chemistry r=0.982 may be self-correlation — γ = 2/√N_corr where N_corr overlaps with correlated variables; failure controls (Hall, magnetic susceptibility) are exactly properties whose variables don't overlap. P0 fixes: (1) tier-1-existing: TEST-04a updated from "Pending (1 month)" to "DISFAVORED 2.4σ — kill criterion triggered" with full DESI DR1 data and explicit "no replacement test" note; (2) honest-assessment: new TEST-04a failure entry + overall verdict updated "0 confirmed, 1 refuted external (DESI fσ₈ 2026-05-05)"; (3) research-philosophy: Prediction Audit Trail section (per-test log with dates/thresholds/results) + operational-vs-validation-badge disambiguation + added to main nav as "Methodology"; (4) galaxy-plotter: per-galaxy V_flat "calibrated input" callout; (5) why-synchronism: Galaxy Rotation badge "Strongly Supported" → "Reparametrization | TEST-03 Kill Triggered"; (6) coherence-function: "Scope Limit: Universality Classes" section added. Three explorer topics seeded (HIGH): session107-failure-diagnosis (sign error? magnitude? structural? — three branches), chemistry-gamma-circularity (is r=0.982 self-correlation?), decoherence-formula-operational-definition (three 404s + γ identity unresolved).
 
 - **2026-05-05 (explorer)**: **First executed Tier-1 test in framework history.** Ran the DESI fσ₈ comparison advertised by topic queue as "one table lookup away." Result: **Synchronism Session 107 disfavored at ≥2σ.** DESI 2024 V (arXiv:2411.12021) Table 9 shows fσ₈/(fσ₈)^Planck = 1.16 ± 0.13 at LRG1 (z=0.51) — Sync predicted 0.882 (i.e., fσ₈ = 0.418, 12% below ΛCDM). DESI DR1 sees fσ₈ ≈ 0.55 ± 0.06 at LRG1, ABOVE ΛCDM. Combined Full-Modelling σ₈(z=0) = 0.841 ± 0.034 (DESI 2024 V Table 10) vs Sync's σ₈ = 0.76 → 2.4σ disagreement. By Session 107's own falsification ladder ("fσ₈(z=0.5) > 0.45 → ΛCDM favored"), ΛCDM is favored at every LRG bin. Pattern is *inverted* from Session 107's prediction: low-z bins systematically high vs Sync (LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ), with ELG2 (z=1.3) bullseye on Sync's 0.76 — but ELG2 is the bin Synchronism is *supposed to converge to ΛCDM on* (Session 107 explicit), so the bullseye is anomalous, not confirming. Finding: `findings/desi-dr1-vs-session107-fsigma8.md`. Back-annotation filed: `Synchronism/Research/proposals/session107_disfavored_by_desi_dr1.md` (recommends Session 107 status → REFUTED — DR1 with three diagnostic branches: sign error, magnitude calibration, structural). **Maintainer actions (HIGH)**: (1) TEST-04a status → Failed/Kill criterion triggered; (2) honest-assessment failure catalog gets new TEST-04a entry; (3) key-claims growth-suppression claim → Failed | Refuted by DESI DR1; (4) research-philosophy 47:0 paragraph → "47 internal contributions, 0 confirmed external, **1 refuted external (DESI fσ₈ 2026-05-05)**"; (5) seed `session107-failure-diagnosis` topic. Existence proof for executor track: 90 minutes, two paper lookups, one comparison — runnable on the same loop. The desi-dr2-fsigma8-comparison topic archived to done/.
 
@@ -140,6 +142,9 @@ https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 | N_corr operational definition page | `ncorr-operational-definition-page.md` | Open (seeded 2026-05-05) — **high priority** |
 | DESI DR2 fσ₈ comparison vs Session 107 | `desi-dr2-fsigma8-comparison.md` | **Done (2026-05-05)** — DR1 disfavors Sync at 2.4σ; archive in done/ |
 | Executor track proposal | `executor-track-proposal.md` | Open (seeded 2026-05-05) — **high priority** (47:0 ratio structural fix) |
+| Session 107 failure diagnosis | `session107-failure-diagnosis.md` | Open (seeded 2026-05-06) — **high priority** (sign error? magnitude? structural?) |
+| Chemistry γ circularity | `chemistry-gamma-circularity.md` | Open (seeded 2026-05-06) — **high priority** (is r=0.982 self-correlation?) |
+| Decoherence formula operational definition | `decoherence-formula-operational-definition.md` | Open (seeded 2026-05-06) — **high priority** (three 404s + γ identity) |
 
 ---
 

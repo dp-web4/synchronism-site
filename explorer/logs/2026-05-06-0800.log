@@ -1,1 +1,20 @@
 Starting Synchronism Explorer Session at Wed May  6 08:00:01 PDT 2026
+## Session Summary
+
+Picked **chemistry-gamma-circularity** from the topic queue (Pass 4 today flagged it as the framework's biggest "looks-like-validation-but-isn't" surface; tractable in one session against the framework's own published methodology).
+
+**Finding** (`explorer/findings/chemistry-gamma-circularity-three-paths.md`): Located Synchronism Chemistry **Session #26** in the research archive — it documents five candidate N_corr measurement methods but does *not* specify which was used to populate the 1,703-phenomenon "89% Validated" cohort. Three of the five methods produce structural self-correlation with the top-correlated properties:
+
+1. **Path 1 (Method 2 atomic-spacing identity)** — N_corr ~ (ξ/a)³ contains a; atomic volume V_a ∝ a³; r = 0.956 is functional identity, not correlation.
+2. **Path 2 (Method 2 phonon coherence)** — ξ = phonon coherence length = v_s × τ_ph; sound velocity (r=0.982), Debye temperature (r=0.948), thermal conductivity (r=0.93) all share inputs with N_corr.
+3. **Path 3 (Method 3 bonding entropy)** — N_corr from S_uncorrelated/S_effective shares bonding-character inputs with electronegativity (r=0.979), ionization energy (r=0.91).
+
+**Fourth issue, independent**: Session #26 Part 3's own simulation table shows Method 2 systematically underestimates N_corr for true N_corr in 4–50, biasing apparent γ toward ≈ 1 — explaining the "89% boundary clustering" as measurement artifact.
+
+The two failure cases (Hall coefficient r≈0.001, magnetic susceptibility r≈0.000) are not falsifying controls of γ — they are the falsifying controls of self-correlation, which they confirm.
+
+**Back-annotation** filed: `Synchronism/Research/proposals/chemistry_validation_ncorr_method_unspecified.md` (pushed). Recommends recipe specification, Method-1 held-out application, or pre-registration; otherwise re-badge to **Reparametrization | Bonding-Character Self-Consistency**.
+
+**Pattern memory saved** (`project_validation_badge_pattern.md`): this is the 4th audited flagship "Validated" claim to collapse to Reparametrization (after Born rule = Gleason, galaxy rotation = MOND-rebadged, a₀ = standard dimensional analysis). Default prior on remaining unaudited Validated claims should now be Reparametrization-pending-recipe.
+
+**So what?** Removes the framework's largest validation cohort. The "0 confirmed external" tally becomes consistent with the per-page badges, not in tension with them. Maintainer actions documented for `/gamma-boundary`, `/honest-assessment`, `/key-claims`, `/chemistry-correlation-explorer`, and `/research-philosophy` audit trail. Both repos pushed.

@@ -37,6 +37,19 @@ export default function GammaCalculator() {
       <h1>&#x03B3; Calculator</h1>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-blue)' }}>
+          <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+            <strong>What this tool does:</strong> N<sub>corr</sub> is the count of particles that move as a correlated unit &mdash; dimensionless, no units.
+            For a single atom, N<sub>corr</sub> = 1. For a crystal oscillating in phase, N<sub>corr</sub> can reach millions.
+            This tool maps that count to &#x03B3; = 2/&#x221A;N<sub>corr</sub> and shows which physical regime results.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginBottom: 0 }}>
+            &#x03B3; &#x2248; 1 marks the boundary where chemistry and phase transitions happen. The presets below cover common systems:
+            {' '}<strong>BCS</strong> = Bardeen-Cooper-Schrieffer superconductors (electrons paired by phonons, conventional: Al, Nb, Pb);
+            {' '}<strong>BEC</strong> = Bose-Einstein Condensate (ultra-cold atoms collapsed into a single quantum state).
+            Both are quantum systems that appear in the &ldquo;collective&rdquo; regime because they have large N<sub>corr</sub>.
+          </p>
+        </div>
         <p>
           Input N<sub>corr</sub> (number of correlated particles) and see the resulting
           &#x03B3; = 2/&#x221A;N<sub>corr</sub> and what physical regime it falls in.

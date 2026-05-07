@@ -74,7 +74,7 @@ export default function WhySynchronism() {
               1,703 chemical phenomena cluster at the quantum-classical boundary.
               Sound velocity correlation: r = 0.982.
             </p>
-            <span className="badge badge-validated">89% Validated</span>
+            <span className="badge badge-reparametrization">89% Boundary-Consistent | Template Bias Caveat</span>
           </div>
         </div>
       </section>
@@ -114,7 +114,7 @@ export default function WhySynchronism() {
         </p>
         <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
           <Link href="/first-encounter" className="btn-primary">
-            Start the Tour
+            First Encounter &rarr;
           </Link>
           <Link href="/honest-assessment" className="btn-secondary">
             Full Honest Assessment

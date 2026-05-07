@@ -136,7 +136,12 @@ export default function PhaseBoundaryVisualizer() {
 
         <div style={{ marginBottom: '1.5rem', padding: '0.75rem 1rem', background: 'rgba(245,158,11,0.07)', borderRadius: '6px', borderLeft: '3px solid #f59e0b' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
-            <strong>⚠ Ncorr placement caveat:</strong> The anchor positions use the formula &#x03B3; = 2/&#x221A;N<sub>corr</sub> with estimated N<sub>corr</sub> values. Two issues are unresolved: (1) Ideal gas (N<sub>corr</sub> = 1) and galaxies (N<sub>corr</sub> = 1 by convention) map to the same &#x03B3; = 2.0, even though they represent physically different contexts — this reflects that &ldquo;operational N<sub>corr</sub>&rdquo; may mean something different at galactic scales. (2) The BCS superconductor preset in the &#x03B3; Calculator uses N<sub>corr</sub> = 10,000; physical Cooper-pair coherence volumes contain ~10<sup>6</sup>–10<sup>9</sup> pairs depending on material. Until a scale-invariant N<sub>corr</sub> counting recipe is established, &#x03B3; functions partly as an estimated parameter for cross-scale placements.
+            <strong>⚠ N<sub>corr</sub>-method caveat (important):</strong> Ideal gases and galaxies both map to &#x03B3; = 2.0 (N<sub>corr</sub> = 1), despite having completely different microphysics.
+            This is not a universality result &mdash; it is an artifact of how N<sub>corr</sub> is counted: both systems happen to be assigned &ldquo;1 correlated particle&rdquo; under the current counting convention.
+            When two physically unrelated systems produce the same &#x03B3;, &#x03B3; is classifying the <em>counting method</em>, not the system.
+            Until a scale-invariant N<sub>corr</sub> recipe is established, every cross-scale &#x03B3; comparison is method-dependent.
+            BCS superconductor placement uses N<sub>corr</sub> = 10,000; physical Cooper-pair volumes contain ~10<sup>6</sup>–10<sup>9</sup> pairs depending on material.
+            The &#x03B3; values shown here are illustrative, not measured.
           </p>
         </div>
 

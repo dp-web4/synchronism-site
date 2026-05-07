@@ -44,6 +44,16 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/tier-1',
+        destination: '/tier-1-existing',
+        permanent: false,
+      },
+      {
+        source: '/tier-2',
+        destination: '/tier-2-pilots',
+        permanent: false,
+      },
+      {
         source: '/test-catalog/wide-binary',
         destination: '/wide-binaries',
         permanent: false,

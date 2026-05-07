@@ -56,11 +56,16 @@ export default function CoherenceExplorer() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-violet)' }}>
-          <h3 style={{ marginBottom: '0.5rem' }}>What you&apos;re seeing</h3>
+          <h3 style={{ marginBottom: '0.5rem' }}>What is coherence?</h3>
+          <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.95rem', marginBottom: '0.75rem', fontStyle: 'italic' }}>
+            Coherence &#x2248; 0 is like a crowd of strangers in a plaza &mdash; everyone moving independently, no shared rhythm.
+            Coherence &#x2248; 1 is like a marching band &mdash; everyone in lockstep.
+            This curve shows how a system transitions between the two as density increases.
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
             This tool plots the coherence function &mdash; the single equation at the heart of Synchronism.
-            It takes a density (&#x03C1;) and returns a coherence value between 0 (quantum/random)
-            and 1 (classical/ordered).
+            It takes a density (&#x03C1;) and returns a coherence value between 0 (independent/quantum-like)
+            and 1 (collective/classical-like).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
             <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> controls the transition sharpness.

@@ -32,7 +32,7 @@ const tools = [
     title: 'Equation Walkthrough',
     href: '/equation-walkthrough',
     desc: 'Step-by-step interactive derivation. Each step shows the equation, the physical motivation, and how the parameters connect.',
-    tags: ['Core theory', 'Beginner'],
+    tags: ['Core theory', 'Conceptual'],
   },
   {
     title: 'Consciousness Threshold Demo',

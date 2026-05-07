@@ -25,7 +25,7 @@ export default function GammaBoundary() {
     <>
       <Breadcrumbs currentPath="/gamma-boundary" />
       <h1>The &#x03B3; &#x2248; 1 Boundary</h1>
-      <ValidationBadge status="validated" label="1,703 Phenomena / 89% Validated" />
+      <ValidationBadge status="reparametrization" label="1,703 Phenomena / 89% Boundary-Consistent | Template Bias Caveat" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

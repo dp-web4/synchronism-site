@@ -78,6 +78,13 @@ export default function GalaxyRotation() {
           as cH&#x2080;/(2&#x03C0;). The coherence function provides the physical mechanism: at
           accelerations below a&#x2080;, the system crosses a coherence threshold and gravitational
           dynamics change.
+          {' '}<span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+            Note: the identification a&#x2080; &#x2248; cH&#x2080;/(2&#x03C0;) was first noted by Milgrom (1983)
+            and has been discussed by Famaey &amp; McGaugh (2012), McCulloch, Verlinde, and Smolin.
+            This is a 40-year-old MOND observation.
+            Synchronism&apos;s contribution is the coherence-function mechanism &mdash; not the identification itself.
+            See{' '}<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}for prior-art acknowledgment.
+          </span>
         </p>
 
         <h2>Key Results Summary</h2>

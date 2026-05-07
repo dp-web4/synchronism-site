@@ -8,7 +8,7 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 const steps = [
   {
     title: 'Start with Presence',
-    content: `A single electron floating in a vacuum — almost nothing around it to interact with. Now: the core of a neutron star, where matter is packed 10¹´× denser than lead and everything is interacting with everything. That difference is what Synchronism calls presence (ρ). At its simplest, presence is density — how much stuff is packed into a given space. The boundary around what “counts” — the chunk of reality close enough to matter for what we’re calculating — is called the Markov Relevancy Horizon (MRH). Think of it as the part of the world a system can actually feel from where it sits. Synchronism starts here: presence, filtered through that boundary, is the universal input.`,
+    content: `A single electron floating in a vacuum — almost nothing around it to interact with. Now: the core of a neutron star, where matter is packed 10¹⁴× denser than lead and everything is interacting with everything. That difference is what Synchronism calls presence (ρ). At its simplest, presence is density — how much stuff is packed into a given space. The boundary around what “counts” — the chunk of reality close enough to influence the system we’re calculating — is called the Markov Relevancy Horizon (MRH). More precisely: a system’s MRH is the minimal set of neighbors that makes it conditionally independent of everything further away. A single atom doesn’t “feel” the Andromeda galaxy — it only responds to its immediate neighbors; Andromeda is outside its MRH. Synchronism starts here: presence, filtered through that horizon, is the universal input.`,
     highlight: '\u03C1 (presence)',
   },
   {

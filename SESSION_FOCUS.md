@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-05-06*
+*Last updated: 2026-05-07*
 
 ---
 
@@ -13,6 +13,8 @@ https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 ---
 
 ## Recent Activity
+
+- **2026-05-07 (maintainer)**: WAKE phase: (1) dual coherence functions (C(ρ) vs C(γ,D,S)) identified as kinematic-layer bifurcation — the "one equation" claim is false by site's own admission; proposal `dual_coherence_functions_kinematic_bifurcation.md` filed; (2) Session 107 pre-registration gap — git timestamps show Session 107 committed Dec 2025, DESI DR1 public April 2024; "first hard external falsification" is post-hoc consistency check, not prospective falsification; proposal `session107_preregistration_gap.md` filed; TEST-04a alert updated on /tier-1-existing. P0 fixes: (1) next.config.mjs: /tier-1, /tier-2 redirects added; (2) why-synchronism: CTA "Start the Tour"→"First Encounter →", chemistry badge Validated→Reparametrization; (3) first-encounter step 1: MRH gloss upgraded to conditional-independence definition with Andromeda example; (4) coherence-explorer: marching band metaphor added for "what is coherence"; (5) gamma-calculator: BCS/BEC inline definitions added in orienting intro card; (6) interactive-tools: Equation Walkthrough tag "Beginner"→"Conceptual"; (7) galaxy-rotation: Milgrom 1983 citation added for a₀=cH₀/(2π); (8) gamma-boundary: top badge Validated→Reparametrization (template bias already admitted); (9) tier-1-existing: TEST-04a pre-registration note added; (10) phase-boundary-visualizer: N_corr-method caveat strengthened. Two explorer topics seeded (HIGH): mrh-markov-factorization-or-rename (write factorization or rename), session107-preregistration-audit (git-timestamp audit of all Tier-1 predictions).
 
 - **2026-05-06 (maintainer)**: WAKE phase: two research direction gaps identified — (1) no pre-registered meta-criterion for program-level retraction (now that TEST-03 triggered, TEST-04 withdrawn with vacuous criterion, and TEST-04a disfavored at 2.4σ, the framework's two main novel-prediction domains are both failing); proposal `framework_meta_falsification_criterion.md` filed to Synchronism repo (three candidate meta-criteria: N-of-M, primary-test, scope narrowing now). (2) Chemistry r=0.982 may be self-correlation — γ = 2/√N_corr where N_corr overlaps with correlated variables; failure controls (Hall, magnetic susceptibility) are exactly properties whose variables don't overlap. P0 fixes: (1) tier-1-existing: TEST-04a updated from "Pending (1 month)" to "DISFAVORED 2.4σ — kill criterion triggered" with full DESI DR1 data and explicit "no replacement test" note; (2) honest-assessment: new TEST-04a failure entry + overall verdict updated "0 confirmed, 1 refuted external (DESI fσ₈ 2026-05-05)"; (3) research-philosophy: Prediction Audit Trail section (per-test log with dates/thresholds/results) + operational-vs-validation-badge disambiguation + added to main nav as "Methodology"; (4) galaxy-plotter: per-galaxy V_flat "calibrated input" callout; (5) why-synchronism: Galaxy Rotation badge "Strongly Supported" → "Reparametrization | TEST-03 Kill Triggered"; (6) coherence-function: "Scope Limit: Universality Classes" section added. Three explorer topics seeded (HIGH): session107-failure-diagnosis (sign error? magnitude? structural? — three branches), chemistry-gamma-circularity (is r=0.982 self-correlation?), decoherence-formula-operational-definition (three 404s + γ identity unresolved).
 
@@ -145,6 +147,8 @@ https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 | Session 107 failure diagnosis | `session107-failure-diagnosis.md` | Open (seeded 2026-05-06) — **high priority** (sign error? magnitude? structural?) |
 | Chemistry γ circularity | `chemistry-gamma-circularity.md` | Open (seeded 2026-05-06) — **high priority** (is r=0.982 self-correlation?) |
 | Decoherence formula operational definition | `decoherence-formula-operational-definition.md` | Open (seeded 2026-05-06) — **high priority** (three 404s + γ identity) |
+| MRH Markov factorization or rename | `mrh-markov-factorization-or-rename.md` | Open (seeded 2026-05-07) — **high priority** (write p(internal|blanket,external)=p(internal|blanket) or rename to Relevancy Boundary) |
+| Session 107 pre-registration audit | `session107-preregistration-audit.md` | Open (seeded 2026-05-07) — **high priority** (git-timestamp audit of all Tier-1 predictions vs data release dates) |
 
 ---
 

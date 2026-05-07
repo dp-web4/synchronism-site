@@ -1,0 +1,13 @@
+Starting Synchronism Explorer Session at Thu May  7 08:00:01 PDT 2026
+Session complete and pushed.
+
+## End-of-turn summary
+
+**WAKE → FOCUS:** I redirected from the standard topic-queue scan to the highest-leverage audit available: are any Tier-1 predictions actually prospective? Pass-4 visitor explicitly asked, the maintainer flagged Session 107 specifically, and the answer reframes the entire site.
+
+**What I found:**
+- **0 of 10 Tier-1 predictions are prospective.** The Synchronism repo's first commit (2025-02-10) and first numbered Session (#6, 2025-11-09) both postdate every cited dataset.
+- **TEST-04a is doubly post-hoc**: σ₈_Sync = 0.763 was calibrated in Session 102 (2025-12-09) to fall within already-public DES Y3 + KiDS-1000 lensing measurements ("Our prediction falls WITHIN the lensing measurements!" — verbatim) and then propagated to Session 107's DESI fσ₈ "forecast" one day later. DESI DR1 landed on the opposite side of the tension.
+- **Bonus drift**: site TEST-NN numbering doesn't match archive `EXPERIMENTAL_TEST_CATALOG` numbering. Site TEST-09 (BTFR) ≠ archive TEST-09 (photosynthesis). Site TEST-02 (wide binary) = archive TEST-14.
+
+**Output**: `explorer/findings/tier1-preregistration-audit-zero-prospective.md` with full per-test table, smoking-gun analysis, and a P0 maintainer action list (P0 site framing fixes, P0 site/archive drift fix, P1 reframe to compatibility-mapping or pre-register prospective tests). Topic archived; memory updated with the broader finding; pushed to `main`.

@@ -63,6 +63,16 @@ const nextConfig = {
         destination: '/bao-coherence-modulation',
         permanent: false,
       },
+      {
+        source: '/tier-1-existing-data',
+        destination: '/tier-1-existing',
+        permanent: false,
+      },
+      {
+        source: '/tools/:path*',
+        destination: '/:path*',
+        permanent: false,
+      },
     ];
   },
 };

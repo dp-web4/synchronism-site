@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
+import ValidationBadge from '@/components/ValidationBadge';
 
 export default function KeyClaims() {
   return (
@@ -46,17 +47,20 @@ export default function KeyClaims() {
               <span style={{ color: 'var(--color-text-muted)', marginRight: '0.5rem' }}>1.</span>
               Quantum Mechanics Is Synchronization Physics
             </h2>
-            <span style={{
-              fontSize: '0.75rem',
-              padding: '0.2rem 0.6rem',
-              borderRadius: '1rem',
-              background: 'rgba(167, 139, 250, 0.15)',
-              color: 'var(--color-accent-violet)',
-              fontWeight: 500,
-              whiteSpace: 'nowrap',
-            }}>
-              New Ontology
-            </span>
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+              <ValidationBadge status="untested" label="Untested — ontological reframe" />
+              <span style={{
+                fontSize: '0.75rem',
+                padding: '0.2rem 0.6rem',
+                borderRadius: '1rem',
+                background: 'rgba(167, 139, 250, 0.15)',
+                color: 'var(--color-accent-violet)',
+                fontWeight: 500,
+                whiteSpace: 'nowrap',
+              }}>
+                New Ontology
+              </span>
+            </div>
           </div>
 
           <p style={{ fontWeight: 500, marginBottom: '1rem' }}>
@@ -184,6 +188,15 @@ export default function KeyClaims() {
             predicts resync outperforms isolation, but standard decoherence theory predicts it doesn&apos;t.
             Run both protocols on the same qubit platform. If isolation wins uniformly, the
             synchronization ontology adds nothing.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
+            <strong>Specification gap:</strong> this kill criterion is not yet operationalized at the
+            level required to run the experiment. Dynamical decoupling (DD) protocols &mdash;
+            Viola-Knill-Lloyd 1999, UDD, CPMG &mdash; already demonstrate that periodic pulse sequences
+            beat passive isolation in non-Markovian baths. If &ldquo;resync&rdquo; reduces to DD,
+            the prediction is known physics, not a novel test. The criterion needs to specify the
+            bath spectral density, the pulse sequence, and the predicted T₂ ratio where Synchronism
+            differs from the standard DD prediction.
           </p>
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>

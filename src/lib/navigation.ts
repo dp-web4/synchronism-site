@@ -76,6 +76,13 @@ export const navigationTree: NavigationTree = {
       keywords: ['key', 'claims', 'novel', 'predictions', 'needle', 'new', 'original'],
       related: ['/why-synchronism', '/honest-assessment', '/quantum-predictions', '/consciousness-threshold', '/free-will', '/test-catalog'],
     },
+    {
+      title: 'Entity Criterion',
+      href: '/entity-criterion',
+      desc: 'Γ < m: the one surviving novel prediction across 3,308 sessions',
+      keywords: ['entity', 'criterion', 'gamma', 'mass', 'decay', 'PDG', 'resonance', 'novel', 'prediction'],
+      related: ['/key-claims', '/honest-assessment', '/quantum-predictions'],
+    },
   ],
 
   'Core Theory': [

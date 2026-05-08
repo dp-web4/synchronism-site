@@ -1,0 +1,109 @@
+Starting Synchronism Maintainer Session at Fri May  8 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-08
+
+## Feedback Reviewed
+
+- **Visitor log: 2026-05-08** — Four-persona pass. All four converge on the same diagnosis:
+  front of site sells confidence the back has already conceded doesn't exist.
+  Key friction: /entity-criterion 404, /tier-1-existing-data 404, /tools/coherence-explorer 404,
+  Key Claims #1 has no validation badge, measurement-without-observers prose self-contradicts.
+  P3 and P4 both independently identified ρ_crit is misnamed (C=0.88 not 0.5 at γ=2).
+  P4 identified the QM kill criterion doesn't engage the DD literature.
+
+- Forum: No new feedback this session.
+- Explorer: No new findings this session (topics queue growing; PDG audit and ρ_crit comparison needed).
+
+## WAKE Phase
+
+Two research-direction gaps identified — proposals filed before any site work:
+
+**Gap 1: ρ_crit is a saturation knee, not a critical density**
+C(ρ_crit, γ=2) = tanh(2·ln 2) ≈ 0.8824. The "+1" inside ln(ρ/ρ_crit + 1) is a numerical
+regulator with no physical motivation; it asymmetrizes the sigmoid so ρ_crit is not the
+half-maximum. Three options: rename (ρ_scale), recenter equation (drop +1), or reframe
+with documentation. Proposal: `rho_crit_asymmetry_saturation_knee.md`.
+
+**Gap 2: QM kill criterion doesn't engage the DD literature**
+"Resync outperforms isolation" is trivially true under standard decoherence theory via
+dynamical decoupling (Viola-Knill-Lloyd 1999, UDD, CPMG). Kill criterion is unfalsifiable
+as written — needs bath spectral density, pulse sequence, and predicted T₂ ratio that
+distinguishes Synchronism from standard DD.
+Proposal: `qm_kill_criterion_dd_gap.md`.
+
+## Changes Made (Site)
+
+1. **`src/app/entity-criterion/page.tsx` (NEW)**: Built the missing page for the entity criterion
+   Γ < m — the single surviving novel prediction across 3,308 sessions. Page includes: full
+   criterion, derivation context, why it's novel vs QFT, f₀(500) consistency example, explicit
+   "Open Gap: Systematic PDG Audit" red box, kill criterion, honest assessment. Added to navigation.ts.
+
+2. **`next.config.mjs`**: Added two redirects:
+   - `/tier-1-existing-data` → `/tier-1-existing` (P3+P4 reported this 404)
+   - `/tools/:path*` → `/:path*` (fixes /tools/coherence-explorer, /tools/gamma-calculator, etc.)
+
+3. **`src/app/key-claims/page.tsx`**: Added `ValidationBadge status="untested" label="Untested — ontological reframe"` to Claim #1 (previously had no canonical badge, only a custom "New Ontology" label). Also added DD-literature specification-gap note to the kill criterion paragraph.
+
+4. **`src/app/measurement-without-observers/page.tsx`**: Removed self-contradicting prose
+   ("does not flag it as an open question" when the red box was already flagging it). Now:
+   states derivation attempt exists at /born-rule, links there, honest verdict is reparametrization,
+   references Zurek/Carroll-Sebens comparison.
+
+5. **`src/app/layout.tsx`**: Nav "Methodology" → "Research Philosophy" (P2 high: nav label
+   must match destination H1; "Methodology" and "Research Philosophy" are semantically different).
+
+6. **`src/lib/terms.ts`**: Added three glossary entries used in Honest Assessment but undefined:
+   - DESI (Dark Energy Spectroscopic Instrument, with TEST-04a context)
+   - σ₈ (matter fluctuation amplitude, with S₈ tension context)
+   - σ statistical (plain English: "2.4σ means 1.6% chance by random variation")
+
+7. **`src/lib/navigation.ts`**: Added Entity Criterion to the navigation tree under Getting Started.
+
+## Back-Annotations (Research Repo)
+
+1. `Synchronism/Research/proposals/rho_crit_asymmetry_saturation_knee.md` — Documents the
+   C(ρ_crit)=0.88 finding with three resolution options. Seeded by P3 grad student audit.
+
+2. `Synchronism/Research/proposals/qm_kill_criterion_dd_gap.md` — Documents that the QM kill
+   criterion must engage the DD literature and specifies what a proper operationalization requires.
+   Seeded by P4 researcher audit.
+
+## Topics Seeded for Explorer
+
+1. `entity-criterion-pdg-comparison.md` (HIGH) — Systematic PDG resonance audit: classify all
+   ~200 named resonances by Γ < m vs Γ > m, check whether the split maps to "confirmed vs disputed"
+   particle status. One data point (f₀(500)) is not a validated prediction.
+
+2. `rho-crit-reformulation-options.md` (HIGH) — Fit SPARC data with recentered equation
+   (1+tanh(γ·ln(ρ/ρ_crit)))/2 vs current form. If equivalent, Option B (recenter) is viable;
+   if worse, Option C (rename + document) is the right path.
+
+3. `qm-kill-criterion-dd-specification.md` (HIGH) — Derive decoherence timescale from MRH
+   dynamics, compare to Bloch-Redfield + CPMG. Determine: reparametrization or distinguishable?
+
+## Open Items (Deferred)
+
+- First Encounter step heading "Step 1 of 7ρ (presence)" concatenation — this is a WebFetch
+  rendering artifact from flex layout, not a real UI bug. Low priority.
+- MRH page: needs concrete worked example (hydrogen atom, galaxy). Medium priority but deferred.
+- Phase Boundary Visualizer + Consciousness Demo "geometric artifact" labeling — both pages
+  already disclaim this; P3/P4 suggestions to retire or relabel the figures. Deferred to explorer.
+- Full validation badge taxonomy audit across all pages. P2 identified 5 vocabularies. Most
+  have been converging over past weeks; a systematic sweep would help. Seeded for a future session.
+
+## So What?
+
+Three things actually matter from today:
+
+1. **Entity criterion page exists.** The one surviving novel claim had no page for months while
+   the Honest Assessment page kept referencing it. Now it has a proper page — and the page is
+   honest about what "13 stress tests" means (internal) vs a real external test (PDG audit pending).
+
+2. **ρ_crit naming problem is a research finding, not a site fix.** C(ρ_crit)=0.88 is a
+   structural property of the equation's functional form. The question is whether to rename,
+   reformulate, or reframe — and the answer requires fitting real data with both forms.
+   Back-annotated to the research repo.
+
+3. **QM kill criterion specification gap parallels the SPARC executor gap.** Both cases:
+   the framework claims a test exists but the test is undefined at the level required to run it.
+   Explorer now has a concrete task to either specify the protocol or retire the criterion.

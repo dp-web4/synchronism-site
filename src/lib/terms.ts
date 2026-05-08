@@ -278,6 +278,26 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'Before the universe cooled enough for atoms to form, matter and light were coupled in a hot plasma. Sound waves propagated through this plasma, and when atoms formed (at "recombination"), these waves froze in place. Today, galaxies are preferentially spaced ~150 Mpc apart \u2014 a "standard ruler" used to measure the universe\'s expansion history. Synchronism\'s TEST-04 predicts a ~10\u207b\u2074 shift in this spacing between high- and low-density environments.',
     learnMore: '/bao-coherence-modulation',
   },
+  'DESI': {
+    term: 'DESI',
+    fullName: 'Dark Energy Spectroscopic Instrument',
+    brief: 'A large-scale sky survey at Kitt Peak Observatory measuring galaxy spectra to map cosmic expansion.',
+    explanation: 'DESI (Dark Energy Spectroscopic Instrument) is a spectroscopic survey that measures the redshifts of ~40 million galaxies and quasars to map the universe\'s large-scale structure. DESI Data Release 1 (DR1, 2024) provided the most precise measurements to date of f\u03c3\u2088 (the combined growth-rate parameter) across multiple redshift bins. Synchronism\'s TEST-04a predicted f\u03c3\u2088(z=0.51) \u2248 0.418, below \u039bCDM; DESI DR1 observed \u2248 0.55 \u00b1 0.06, above \u039bCDM. This 2.4\u03c3 disagreement is the framework\'s first adjudication by external data.',
+    learnMore: '/honest-assessment',
+  },
+  'sigma8': {
+    term: '\u03c3\u2088',
+    fullName: 'Matter Fluctuation Amplitude',
+    brief: 'Measures how "lumpy" the universe is on 8 Mpc/h scales. A key cosmological parameter.',
+    explanation: '\u03c3\u2088 (sigma-8) quantifies the amplitude of matter density fluctuations on scales of 8 Megaparsecs per h (where h is the dimensionless Hubble constant). A higher \u03c3\u2088 means galaxies clump more strongly; a lower \u03c3\u2088 means smoother distribution. Planck CMB data gives \u03c3\u2088 \u2248 0.83; weak-lensing surveys (KiDS, DES) give \u03c3\u2088 \u2248 0.77\u20130.80. This "S\u2088 tension" is an active area of cosmology. Synchronism Session 107 predicted \u03c3\u2088 \u2248 0.76; DESI DR1 measures \u03c3\u2088 = 0.841 \u00b1 0.034, disfavoring the prediction at 2.4\u03c3.',
+    learnMore: '/honest-assessment',
+  },
+  'sigma-stat': {
+    term: '\u03c3 (statistical)',
+    fullName: 'Standard Deviation / Statistical Significance',
+    brief: 'A number like "2.4\u03c3" means the result is 2.4 standard deviations from the expected value \u2014 roughly a 1-in-60 chance if the model is correct.',
+    explanation: 'In statistics, \u03c3 (sigma) is the standard deviation \u2014 a measure of how spread out a distribution is. When scientists say a result is "2.4\u03c3 away" from a prediction, they mean: if the prediction were exactly correct, there is about a 1.6% chance of seeing a discrepancy this large by random chance. The conventional thresholds in physics are: 2\u03c3 = "interesting" (~2% chance), 3\u03c3 = "evidence" (~0.3% chance), 5\u03c3 = "discovery" (~0.00003% chance). A 2.4\u03c3 disagreement (like DESI DR1 vs Synchronism\'s f\u03c3\u2088 prediction) is taken seriously but is not by itself a definitive refutation.',
+  },
 };
 
 export function getTerm(key: string): TermDefinition | undefined {

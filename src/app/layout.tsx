@@ -61,7 +61,7 @@ export default function RootLayout({
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
               title="Validation taxonomy, kill criteria, methodology"
             >
-              Methodology
+              Research Philosophy
             </Link>
             <Link
               href="/honest-assessment"

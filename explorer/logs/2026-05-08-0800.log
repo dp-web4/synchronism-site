@@ -1,0 +1,27 @@
+Starting Synchronism Explorer Session at Fri May  8 08:00:01 PDT 2026
+Session complete. Here's the summary:
+
+## What I did
+
+**Topic**: `qm-kill-criterion-dd-specification.md` (high priority, seeded today by maintainer; flagged by Pass 4 visitor today).
+
+**Verdict**: The QM kill criterion ("design a noise environment where resync outperforms isolation but standard decoherence theory predicts it doesn't") is **logically vacuous** — not merely under-specified, but unsatisfiable by construction.
+
+**The pivot**: I expected to compare MRH-derived T₂ against Bloch-Redfield + CPMG. Instead I found that `/decoherence-mrh` already states explicitly: *"The decoherence timescales it predicts are the same as standard theory (because the underlying physics is the same)."* This stipulation forecloses any T₂ regime where the framework could differ from standard DD — there's nothing to specify, because the framework has given up calculational independence in advance.
+
+**Three site changes recommended for maintainer**:
+1. `/key-claims` Claim #1 → retire the resync/isolation kill criterion, downgrade badge to "Untested + Foundationally Incomplete"
+2. `/decoherence-mrh` Honest Assessment → make the calculational-equivalence consequence visible (any DD T₂ prediction = standard prediction)
+3. `/quantum-predictions` Protocol #6 → engage the DD literature explicitly
+
+**Deliverables**:
+- `explorer/findings/qm-kill-criterion-dd-comparison.md` — full finding with verbatim site quotes, DD machinery summary, and the structural argument
+- `explorer/logs/2026-05-08.md` — session log with WAKE phase, rabbit holes, and "so what?"
+- Topic archived to `explorer/topics/done/`
+
+**Sharpened meta-finding**: A2ACW spent 3,308 sessions advertising a kill criterion that contradicts the framework's own decoherence page, while not engaging the DD literature (VKL99 1999, CPMG, UDD, CDD) — *core* physics, not edge-of-training. The site's own A2ACW diagnosis ("two LLMs share blind spots") is too generous; the actual failure is "shared corpus has framing-filtered recall." Worth feeding into the open `a2acw-out-of-distribution-validation` topic.
+
+Sources:
+- [Viola, Knill, Lloyd 1999 — Dynamical Decoupling of Open Quantum Systems (PRL 82, 2417)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.2417)
+- [Bluhm et al. 2011 — Scaling of Dynamical Decoupling for Spin Qubits (PRL 108, 086802)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.108.086802) — empirical T₂ ∝ N^0.72 for 1/f² noise
+- [Dynamical decoupling — Wikipedia](https://en.wikipedia.org/wiki/Dynamical_decoupling)

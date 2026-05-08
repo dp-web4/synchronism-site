@@ -2,17 +2,19 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-05-07*
+*Last updated: 2026-05-08*
 
 ---
 
 ## Live Site
 
-https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
+https://synchronism-site.vercel.app/ — 80 pages, Vercel push-to-deploy
 
 ---
 
 ## Recent Activity
+
+- **2026-05-08 (maintainer)**: WAKE phase: (1) C(ρ_crit,γ=2)=0.8824 not 0.5 — ρ_crit is a saturation knee parameter, not a critical density; the "+1" regulator asymmetrizes the sigmoid; proposal `rho_crit_asymmetry_saturation_knee.md` filed with 3 resolution options (rename/recenter/reframe); (2) QM kill criterion "resync outperforms isolation" doesn't engage DD literature (VKL99, UDD, CPMG) — unfalsifiable as written; proposal `qm_kill_criterion_dd_gap.md` filed. P0 fixes: (1) /entity-criterion page BUILT — the single surviving novel prediction (Γ < m) finally has a dedicated page, including explicit "Open Gap: Systematic PDG Audit" section and honest assessment; added to navigation.ts; (2) next.config.mjs: /tier-1-existing-data→/tier-1-existing + /tools/:path*→/:path* redirects added (fixes /tools/coherence-explorer 404); (3) key-claims: Claim #1 now has ValidationBadge "Untested — ontological reframe" (previously only a non-standard "New Ontology" label); DD specification gap noted in kill criterion; (4) measurement-without-observers: Born Rule section no longer self-contradicts — updated to acknowledge derivation exists at /born-rule, honest verdict is reparametrization, references Zurek/Carroll-Sebens; (5) layout.tsx: nav "Methodology"→"Research Philosophy" (matches page H1). Glossary additions: DESI, σ₈, σ-statistical (all used on Honest Assessment but undefined). Three explorer topics seeded (HIGH): entity-criterion-pdg-comparison (systematic PDG audit of ~200 resonances), rho-crit-reformulation-options (fit SPARC with recentered equation), qm-kill-criterion-dd-specification (derive T₂ from MRH dynamics vs Bloch-Redfield+CPMG). Site now at 80 pages.
 
 - **2026-05-07 (maintainer)**: WAKE phase: (1) dual coherence functions (C(ρ) vs C(γ,D,S)) identified as kinematic-layer bifurcation — the "one equation" claim is false by site's own admission; proposal `dual_coherence_functions_kinematic_bifurcation.md` filed; (2) Session 107 pre-registration gap — git timestamps show Session 107 committed Dec 2025, DESI DR1 public April 2024; "first hard external falsification" is post-hoc consistency check, not prospective falsification; proposal `session107_preregistration_gap.md` filed; TEST-04a alert updated on /tier-1-existing. P0 fixes: (1) next.config.mjs: /tier-1, /tier-2 redirects added; (2) why-synchronism: CTA "Start the Tour"→"First Encounter →", chemistry badge Validated→Reparametrization; (3) first-encounter step 1: MRH gloss upgraded to conditional-independence definition with Andromeda example; (4) coherence-explorer: marching band metaphor added for "what is coherence"; (5) gamma-calculator: BCS/BEC inline definitions added in orienting intro card; (6) interactive-tools: Equation Walkthrough tag "Beginner"→"Conceptual"; (7) galaxy-rotation: Milgrom 1983 citation added for a₀=cH₀/(2π); (8) gamma-boundary: top badge Validated→Reparametrization (template bias already admitted); (9) tier-1-existing: TEST-04a pre-registration note added; (10) phase-boundary-visualizer: N_corr-method caveat strengthened. Two explorer topics seeded (HIGH): mrh-markov-factorization-or-rename (write factorization or rename), session107-preregistration-audit (git-timestamp audit of all Tier-1 predictions).
 
@@ -149,6 +151,9 @@ https://synchronism-site.vercel.app/ — 79 pages, Vercel push-to-deploy
 | Decoherence formula operational definition | `decoherence-formula-operational-definition.md` | Open (seeded 2026-05-06) — **high priority** (three 404s + γ identity) |
 | MRH Markov factorization or rename | `mrh-markov-factorization-or-rename.md` | Open (seeded 2026-05-07) — **high priority** (write p(internal|blanket,external)=p(internal|blanket) or rename to Relevancy Boundary) |
 | Session 107 pre-registration audit | `session107-preregistration-audit.md` | Open (seeded 2026-05-07) — **high priority** (git-timestamp audit of all Tier-1 predictions vs data release dates) |
+| Entity criterion PDG comparison | `entity-criterion-pdg-comparison.md` | Open (seeded 2026-05-08) — **high priority** (systematic audit of ~200 PDG resonances by Γ < m; one data point is not a prediction) |
+| ρ_crit reformulation options | `rho-crit-reformulation-options.md` | Open (seeded 2026-05-08) — **high priority** (fit SPARC with recentered form to determine: rename vs recenter vs reframe) |
+| QM kill criterion DD specification | `qm-kill-criterion-dd-specification.md` | Open (seeded 2026-05-08) — **high priority** (derive T₂ from MRH dynamics, compare to Bloch-Redfield+CPMG; reparametrization or distinguishable?) |
 
 ---
 

@@ -71,6 +71,22 @@ export default function FirstEncounter() {
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
         A guided walk through the core ideas. No prerequisites needed.
       </p>
+
+      {/* Coherence definition — always visible */}
+      <div className="card" style={{
+        background: 'rgba(56, 189, 248, 0.05)',
+        border: '1px solid rgba(56, 189, 248, 0.2)',
+        marginBottom: '1.25rem',
+        padding: '1rem 1.25rem',
+      }}>
+        <p style={{ margin: 0, color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>
+          <strong style={{ color: 'var(--color-accent-blue)' }}>Coherence</strong> is how collectively a group of things behaves.
+          A marching band moving in lockstep: high coherence. A crowd wandering in a plaza: low coherence.
+          Electrons in a superconductor: extremely high coherence (quantum). Stars scattered across a galaxy: low coherence (classical).
+          Synchronism asks whether <em>one equation</em> can quantify this transition across all of physics.
+        </p>
+      </div>
+
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
         7 short pages &mdash; ~90 seconds each. Use the progress bar to jump to any step.
       </p>

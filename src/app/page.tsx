@@ -11,13 +11,13 @@ export default function Home() {
     <>
       {/* Hero */}
       <section style={{ marginBottom: '3rem' }}>
-        <p className="eyebrow">A Research Framework</p>
+        <p className="eyebrow">An Open Research Notebook — Not a Theory of Everything</p>
         <h1 className="hero-title">
           What if one equation described reality from quantum to cosmic?
         </h1>
         <p className="hero-subtitle">
           Synchronism maps presence to coherence using a single function across 80 orders of magnitude.
-          Some predictions work. Some fail. All are documented honestly.
+          Some predictions work. Some fail. One was refuted by external data. All are documented honestly.
         </p>
 
         <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
@@ -109,7 +109,7 @@ export default function Home() {
               <strong>1</strong> new ontology with testable consequences
             </span>
             <span style={{ color: '#f59e0b' }}>
-              <strong>1</strong> untested with 8-way convergence
+              <strong>1</strong> untested (a₀ ~ cH₀: dimensional rederivation, not independent convergence)
             </span>
             <span style={{ color: '#f59e0b' }}>
               <strong>1</strong> galaxy rotation reparametrization (dark matter mechanism structurally failed)

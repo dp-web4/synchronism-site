@@ -61,10 +61,12 @@ export default function CoreIdea() {
         <p>
           tanh is an S-shaped curve that smoothly transitions from 0 to 1 &mdash; think of it as a
           dimmer switch between &ldquo;fully quantum&rdquo; and &ldquo;fully classical.&rdquo; The function
-          must be bounded [0, 1], monotonic, and smooth. tanh arises naturally in mean-field
-          models (e.g., the Ising model order parameter m = tanh(&beta;Jzm)). Other sigmoids
-          (logistic, error function) share the same qualitative properties; tanh is a natural
-          choice from the Landau theory family, not the only possible one.
+          must be bounded [0, 1], monotonic, and smooth. tanh is <em>motivated</em> by the Ising model
+          self-consistency form m = tanh(&beta;Jzm), but C(&#x03C1;) is not a self-consistency equation &mdash;
+          &#x03C1; goes in, C comes out, with no feedback loop. Other sigmoids (logistic, error function, Hill)
+          satisfy the same four constraints. tanh is a phenomenological choice, not a derived result.
+          Note: Landau-universality critical exponents (&#x03B2;, &#x03BD;, etc.) are off by ~2&times; in practice
+          &mdash; the analogy is motivational, not literal.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Need an analogy first?</Link>

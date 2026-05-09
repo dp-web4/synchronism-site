@@ -37,6 +37,22 @@ export default function GammaCalculator() {
       <h1>&#x03B3; Calculator</h1>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        {/* Load-bearing caveats — promoted to top */}
+        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #f59e0b', background: 'rgba(245, 158, 11, 0.05)' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontWeight: 600, marginBottom: '0.25rem', fontSize: '0.9rem' }}>
+            Two caveats before using this tool:
+          </p>
+          <ol style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', paddingLeft: '1.25rem', margin: 0, lineHeight: 1.7 }}>
+            <li>
+              <strong>&#x03B3; = 2/&#x221A;N<sub>corr</sub> is motivated, not rigorously derived.</strong> The 1/&#x221A;N scaling is a central-limit-theorem analogy; the factor of 2 is physically motivated but not derived from first principles.
+              {' '}<a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)', fontSize: '0.85rem' }}>See Parameter Derivations for what is and isn&apos;t derived &rarr;</a>
+            </li>
+            <li>
+              <strong>The preset N<sub>corr</sub> values are approximate estimates, not measured physical pair counts.</strong> There is currently no derivation protocol that takes a system Hamiltonian and outputs N<sub>corr</sub> without first fitting γ to observed behavior. Until such a protocol exists, every γ &ldquo;prediction&rdquo; is a consistency check on an inferred parameter, not a first-principles calculation.
+            </li>
+          </ol>
+        </div>
+
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-blue)' }}>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
             <strong>What this tool does:</strong> N<sub>corr</sub> is the count of particles that move as a correlated unit &mdash; dimensionless, no units.

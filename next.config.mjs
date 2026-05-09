@@ -73,6 +73,43 @@ const nextConfig = {
         destination: '/:path*',
         permanent: false,
       },
+      // /predictions was a client-side redirect; convert to server-side
+      {
+        source: '/predictions',
+        destination: '/test-catalog',
+        permanent: false,
+      },
+      // Short-form URLs visitors guess
+      {
+        source: '/why',
+        destination: '/why-synchronism',
+        permanent: false,
+      },
+      {
+        source: '/test-roadmap',
+        destination: '/test-catalog',
+        permanent: false,
+      },
+      {
+        source: '/cosmology',
+        destination: '/cosmology-predictions',
+        permanent: false,
+      },
+      {
+        source: '/what-this-is-not',
+        destination: '/what-synchronism-is-not',
+        permanent: false,
+      },
+      {
+        source: '/coherence',
+        destination: '/coherence-function',
+        permanent: false,
+      },
+      {
+        source: '/dual-c',
+        destination: '/coherence-function',
+        permanent: false,
+      },
     ];
   },
 };

@@ -60,13 +60,13 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-04a',
-    name: 'DESI RSD fσ₈ Suppression — DISFAVORED',
+    name: 'DESI RSD fσ₈ Suppression — FAILED (Mechanism-Class: Sign Reversed)',
     data: 'DESI DR1 (arXiv:2411.12021, Table 9 & 10)',
     cost: '$0',
     time: 'ADJUDICATED (2026-05-05)',
     prediction: 'fσ₈(z=0.51) ≈ 0.418 — a ~12% suppression below ΛCDM (0.474). Mechanism: G_local/G_global = C_cosmic/C_galactic suppresses structure growth at late times. Session 107 forecasts 1.7σ–3.2σ discrimination per DESI LRG bin.',
     kill: 'fσ₈(z=0.51) > 0.46 (rules out Synchronism at >3σ); fσ₈(z=0.51) > 0.45 disfavors at >2σ',
-    alert: 'DESI DR1 RESULT (2026-05-05): Kill criterion triggered. DESI DR1 LRG1 (z=0.51) measures fσ₈ ≈ 0.55 ± 0.06 — above ΛCDM, not below it. Combined σ₈(z=0) = 0.841 ± 0.034 vs Synchronism\'s 0.76 → 2.4σ disagreement. The pattern across all LRG bins is inverted from Session 107\'s prediction: low-z bins systematically HIGH vs Sync (LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ). By Session 107\'s own falsification ladder ("fσ₈(z=0.51) > 0.45 → ΛCDM favored"), ΛCDM is favored at every LRG bin. PRE-REGISTRATION NOTE: Session 107 was committed 2025-12-10; DESI DR1 dropped April 2024. This is a post-hoc calculation — the framework was applied to a domain where the answer was already publicly known. The 2.4σ tension is a real internal consistency failure, but it is not a prospective falsification. See proposals/session107_preregistration_gap.md. Verdict: DISFAVORED at 2.4σ — pending DESI DR2. No replacement test will be substituted.',
+    alert: 'FAILED — MECHANISM-CLASS FAILURE (2026-05-09 classification upgrade from "disfavored"): DESI DR1 LRG1 (z=0.51) measures fσ₈ ≈ 0.55 ± 0.06 — ABOVE ΛCDM, not below it. This is not a magnitude miss — it is a sign reversal. The G_local/G_global suppression mechanism predicts growth BELOW ΛCDM at all z; DESI DR1 measures growth ABOVE ΛCDM at every low-z bin (LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ). A suppression mechanism cannot be retuned to produce enhancement — the mechanism class itself is contradicted. Combined σ₈(z=0) = 0.841 ± 0.034 vs Synchronism\'s 0.76 → 2.4σ. PRE-REGISTRATION NOTE: Session 107 committed 2025-12-10; DESI DR1 published April 2024 — post-hoc calculation. The internal consistency failure is real; it is not a prospective falsification. No replacement test substituted.',
   },
   {
     id: 'TEST-05',

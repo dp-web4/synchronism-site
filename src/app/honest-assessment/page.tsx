@@ -40,7 +40,10 @@ export default function HonestAssessment() {
           After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 1 refuted by external data</strong>.
           DESI DR1 (2026-05-05) measures fσ₈(z=0.51) ≈ 0.55 ± 0.06 — above ΛCDM, opposite to Synchronism&apos;s
           predicted suppression (0.418). By Session 107&apos;s own kill criterion, the framework&apos;s one live
-          cosmological discriminator (TEST-04a) is disfavored at 2.4σ. This is the first external dataset to
+          cosmological discriminator (TEST-04a) has failed — not just by magnitude (2.4σ), but in the
+          <em> direction</em> of the prediction: any G<sub>local</sub>/G<sub>global</sub> suppression mechanism
+          predicts fσ₈ <em>below</em> ΛCDM; DESI DR1 measures it <em>above</em>. This is a
+          mechanism-class failure — the sign of the leading-order effect is reversed. This is the first external dataset to
           adjudicate a Synchronism-specific prediction.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -111,10 +114,15 @@ export default function HonestAssessment() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>Freeman&apos;s Law: &#x03A3;&#x2080; from First Principles</h3>
-              <ValidationBadge status="validated" label="12% Error" />
+              <ValidationBadge status="reparametrization" label="Dimensional Identity — Same Class as a₀" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               Surface density &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G). 12% error vs Freeman&apos;s observed value (124 M&#x2609;/pc&sup2;).
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              Like a&#x2080; ~ cH&#x2080;, this is the only surface-density scale buildable from the available cosmological
+              constants (c, H&#x2080;, G). Any framework that imports these constants will recover the same dimensional
+              relation. Reclassified from &ldquo;Validated&rdquo; to Reparametrization alongside a&#x2080; on the same grounds.
             </p>
           </div>
         </div>
@@ -124,6 +132,21 @@ export default function HonestAssessment() {
       <section className="section">
         <h2>What Failed</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>Critical Exponents — Deepest Theoretical Failure</h3>
+              <ValidationBadge status="failed" label="2× Off — Undermines Landau Framing" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              Predicted exponents (&#x03B2;, &#x03BD;, &#x03B1;, &#x03B3;<sub>susc</sub>, &#x03B4;, &#x03B7;) differ from observed by a factor of ~2.
+              These are RG-primary quantities — no multiplicative reparametrization can move them.
+              The site motivates C(&#x03C1;)&apos;s tanh form via &ldquo;Landau-universality family.&rdquo;
+              A framework whose tanh form is Landau-motivated but misses Landau critical exponents by 2&times;
+              has lost the universality argument. This failure removes &ldquo;Landau-universality family&rdquo;
+              as a justification across the site — the tanh form is phenomenological, full stop.
+            </p>
+          </div>
+
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>Melting Point Predictions</h3>
@@ -131,16 +154,6 @@ export default function HonestAssessment() {
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               Average error 53%. Crystal structure dominates melting behavior, and C(&#x03C1;) has no crystal-specific parameters.
-            </p>
-          </div>
-
-          <div className="card">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>Critical Exponents</h3>
-              <ValidationBadge status="failed" label="2× Off" />
-            </div>
-            <p style={{ color: 'var(--color-text-secondary)' }}>
-              Predicted exponents differ from observed by a factor of ~2. Universality class physics can&apos;t be captured by a single coherence parameter.
             </p>
           </div>
 
@@ -195,26 +208,27 @@ export default function HonestAssessment() {
             </p>
           </div>
 
-          <div className="card">
+          <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>TEST-04a: DESI RSD fσ₈ — Disfavored at 2.4σ</h3>
-              <ValidationBadge status="failed" label="Kill Criterion Triggered — Pending DR2 Confirmation" />
+              <h3>TEST-04a: DESI RSD fσ₈ — Mechanism-Class Failure (Sign Reversed)</h3>
+              <ValidationBadge status="failed" label="Failed — Wrong Direction, Not Just Magnitude" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Session 107 (Dec 2025) predicted fσ₈(z=0.51) ≈ 0.418 — a 12% suppression below ΛCDM (0.474),
+              Session 107 (Dec 2025) predicted fσ₈(z=0.51) ≈ 0.418 — a 12% <em>suppression</em> below ΛCDM (0.474),
               driven by G<sub>local</sub>/G<sub>global</sub> coherence ratio suppressing structure growth.
               DESI DR1 (arXiv:2411.12021, Table 9) measures fσ₈ ≈ 0.55 ± 0.06 at LRG1 (z=0.51) —
-              ABOVE ΛCDM, not below it. Combined σ₈(z=0) = 0.841 ± 0.034 vs Synchronism&apos;s 0.76 → 2.4σ
+              <strong>above ΛCDM, not below it.</strong> Combined σ₈(z=0) = 0.841 ± 0.034 vs Synchronism&apos;s 0.76 → 2.4σ
               disagreement. By Session 107&apos;s own kill criterion (&ldquo;fσ₈(z=0.5) &gt; 0.45 → ΛCDM
               favored&rdquo;), ΛCDM is favored at every LRG bin.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              The failure pattern is inverted — low-z bins are systematically HIGH vs Synchronism (LRG1 +0.86σ,
-              LRG2 +1.5σ, QSO +2.6σ), not suppressed. The ELG2 (z=1.3) bin appears consistent with
-              Synchronism&apos;s 0.76, but ELG2 is where Session 107 predicted convergence to ΛCDM — so
-              the &ldquo;bullseye&rdquo; is anomalous, not confirming. Adjudicated 2026-05-05. Pending DESI DR2
-              for definitive verdict. This was the framework&apos;s only live Synchronism-specific cosmological
-              discriminator — no replacement will be substituted.
+              <strong>This is a mechanism-class failure, not a magnitude miss.</strong> A suppression mechanism
+              that predicts growth below ΛCDM and observes growth above ΛCDM fails in the <em>sign</em> of its
+              leading-order effect. No retuning of σ₈(z=0) or the C<sub>cosmic</sub>/C<sub>galactic</sub> ratio
+              can repair a sign error — the mechanism class itself is contradicted. The redshift pattern is inverted
+              (low-z bins systematically HIGH vs Synchronism: LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ).
+              Adjudicated 2026-05-05; mechanism-class framing added 2026-05-09 after four-persona review.
+              This was the framework&apos;s only live cosmological discriminator — no replacement substituted.
             </p>
           </div>
 

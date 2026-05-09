@@ -79,8 +79,11 @@ export default function CoherenceFunction() {
           appears on both sides. C(&#x03C1;) evaluates directly with no feedback loop — &#x03C1; goes in, C
           comes out. This distinction matters: the tanh shape is <em>motivated</em> by mean-field theory, not
           derived from it. Any sigmoid satisfying the four constraints above (logistic, erf, arctan, Hill) would
-          have been an equally valid choice. tanh is the most natural choice given the Landau-theory connection,
-          but not the uniquely forced one. See{' '}
+          have been an equally valid choice. tanh is the most natural choice given the Landau analogy,
+          but not the uniquely forced one. <strong>Empirical caveat:</strong> Landau-universality critical exponents
+          (&#x03B2;, &#x03BD;, &#x03B1;, &#x03B4;, &#x03B7;) are off by ~2&times; in practice — the Landau analogy
+          is motivational, not an accurate prediction of universality class. See{' '}
+          <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>. See{' '}
           <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
           for the complete derivation vs. motivation distinction.
         </p>

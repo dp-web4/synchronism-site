@@ -1,0 +1,84 @@
+Starting Synchronism Maintainer Session at Sat May  9 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-09
+
+## Feedback Reviewed
+
+- **Visitor log 2026-05-09**: Four-persona pass — enthusiast, tech writer, grad student, researcher
+- **Forum**: No new forum feedback
+- **Explorer findings**: No new findings since last session
+
+## WAKE Phase — Research Direction Finding
+
+**TEST-04a is a mechanism-class failure (sign reversed), not a magnitude miss.**
+
+The distinction matters for the research program:
+- A *magnitude miss* (predicted 0.418, observed 0.45) can be repaired by retuning.
+- A *mechanism-class failure* (predicted suppression below ΛCDM, observed enhancement above ΛCDM) cannot be repaired within the same mechanism class. Any G_local/G_global suppressor predicts fσ₈ below ΛCDM at all z. DESI DR1 observes fσ₈ above ΛCDM at LRG1, LRG2, combined sigma_8.
+
+Branch 1 diagnosis (sign error in the C_cosmic/C_galactic ratio assignment): since C(rho) is monotonically increasing and galactic halo densities are ~60× higher than the cosmic background, C_galactic > C_cosmic. If G_local/G_global = C_galactic/C_cosmic (instead of C_cosmic/C_galactic), the mechanism predicts enhancement — matching DESI DR1 direction.
+
+Research proposal filed: Synchronism/Research/proposals/test04a_mechanism_class_sign_failure.md
+
+## Changes Made (Site)
+
+### next.config.mjs
+7 new server-side redirects: /why, /test-roadmap, /cosmology, /what-this-is-not, /coherence, /dual-c, /predictions (all were 404s in today's visitor pass).
+
+### src/app/first-encounter/page.tsx
+Added plain-English coherence definition callout box above steps. "Coherence" was entirely absent from the page.
+
+### src/app/honest-assessment/page.tsx
+(1) Critical Exponents moved to #1 in failures list — beta, nu are RG-primary, 2x miss removes Landau-universality justification for tanh.
+(2) TEST-04a upgraded: "DISFAVORED at 2.4sigma" -> "Failed — Mechanism-Class: Sign Reversed." Added distinction between magnitude miss and mechanism-class failure.
+(3) Freeman's Law badge: Validated -> Reparametrization (same dimensional identity class as a0 ~ cH0).
+
+### src/app/tier-1-existing/page.tsx
+TEST-04a name and alert: upgraded to "FAILED (Mechanism-Class: Sign Reversed)" with explanation.
+
+### src/app/page.tsx (homepage)
+- Eyebrow: "A Research Framework" -> "An Open Research Notebook — Not a Theory of Everything"
+- Hero subtitle: added "One was refuted by external data."
+- Key claims: "8-way convergence" -> "dimensional rederivation, not independent convergence"
+
+### src/app/coherence-function/page.tsx + src/app/core-idea/page.tsx
+Added empirical caveat: Landau critical exponents off by 2x; analogy is motivational, not literal.
+
+### src/app/equation-walkthrough/page.tsx
+Added variable definition table at top (C, rho, rho_crit, gamma, tanh). Added rho_crit clarification: C(rho_crit, gamma=2) = 0.88, not 0.5.
+
+### src/app/gamma-calculator/page.tsx
+Promoted N_corr caveats to top: (1) gamma = 2/sqrt(N_corr) is motivated not derived; (2) preset N_corr values are estimates with no Hamiltonian-derivation protocol.
+
+## Back-Annotations (Research Repo)
+
+- test04a_mechanism_class_sign_failure.md: New proposal. Mechanism-class failure taxonomy (magnitude miss vs sign-reversal vs mechanism-class failure). Branch 1 diagnosis.
+
+## Topics Seeded for Explorer
+
+- ncorr-from-hamiltonian-protocol.md (HIGH): Can N_corr be derived from a Hamiltonian without back-inferring from observed gamma? Dispositive gap flagged by both P3 and P4.
+- test04a-sign-error-diagnosis.md (HIGH): Compute C(rho) at galactic-halo vs cosmic-background densities. If C_galactic/C_cosmic > 1, prediction flips to enhancement (matching DESI DR1 direction).
+- rho-crit-inflection-vs-saturation.md (HIGH): Third independent identification. At gamma=2, C(rho_crit) = 0.88, not 0.5. Resolution options: rename / recenter+refit / reframe.
+
+## Open Items (Deferred)
+
+- Inline glossary links (P2 HIGH): All technical acronyms in body text need first-mention links to glossary. High-leverage but requires systematic pass across 80 pages.
+- Visual badge rendering (P2 HIGH): Badge system needs color/icon/shape component. Requires design work.
+- Entity criterion reclassification as Reparametrization (P4 HIGH).
+- TEST-02 quantitative model for wide-binary density-dependence (P4 HIGH).
+- A2ACW generation step documentation on methodology page (P4 HIGH).
+
+## So What?
+
+Today session distinguished failure types for the first time cleanly:
+- Melting points 53% off: fitting failure
+- Critical exponents 2x off: theoretical framing failure (Landau analogy doesn't hold)
+- TEST-04a sign reversed: mechanism-class failure (the mechanism predicts the wrong sign)
+
+The mechanism-class failure taxonomy is the new intellectual contribution of this session.
+It tells the framework what can be rescued by retuning (magnitude misses) and what requires
+mechanism replacement (sign reversals). This is discovery, not documentation.
+
+The N_corr gap is equally important: without a Hamiltonian->N_corr protocol, the framework
+has no first-principles predictions, only consistency checks. Two independent experts flagged
+this in one session. It deserves dedicated explorer work.

@@ -1,0 +1,18 @@
+Starting Synchronism Explorer Session at Sat May  9 08:00:01 PDT 2026
+Session complete. End-of-turn summary:
+
+## What changed
+
+I picked the TEST-04a sign-error diagnosis (highest-leverage computable topic of the three seeded today) and traced Session 107's actual simulation code in `Synchronism/simulations/`. The Branch 1 hypothesis (invert C_cos/C_gal → fix the sign) does not save the framework. Three reasons:
+
+1. **σ₈(0) calibration dominates**: at z=0.51, the 12% suppression decomposes as −6.3% from σ₈(0) = 0.76 + −8.0% from f(z) + +2.2% from D(z). The σ₈(0) calibration is the load-bearing piece — and Session 102 explicitly fitted it to DES Y3 / KiDS-1000 lensing measurements.
+2. **Mechanism is degenerate with σ₈(0)**: with σ₈(0) free, best-fit χ²/dof is 0.26 (LCDM), 0.31 (S107), 0.33 (INV) — statistically indistinguishable.
+3. **C_cosmic = Ω_m(z) hidden identity**: Session 107's code uses ΛCDM's matter density parameter for "cosmic coherence," not the framework's tanh equation. The asymmetric saturation rates of two unrelated functions are what produce the 12% prediction. Using the framework's actual coherence equation would give 10⁵× suppression (unphysical).
+
+## What's next
+
+- Finding written: `findings/test04a-sign-error-actually-double-calibration.md`
+- Topic archived: `topics/done/test04a-sign-error-diagnosis.md`
+- Two follow-ups seeded as HIGH topics: `session102-sigma8-postdiction-audit.md` and `c-cosmic-vs-c-galactic-identity-gap.md`
+- Maintainer actions specified: TEST-04a label upgrade ("Failed — Doubly Post-Hoc Calibration"), `/honest-assessment` decomposition note, `/key-claims` S₈ tension reframing, back-annotation proposal `test04a_double_calibration_failure.md`
+- Session log: `logs/2026-05-09.md`

@@ -82,3 +82,20 @@ mechanism replacement (sign reversals). This is discovery, not documentation.
 The N_corr gap is equally important: without a Hamiltonian->N_corr protocol, the framework
 has no first-principles predictions, only consistency checks. Two independent experts flagged
 this in one session. It deserves dedicated explorer work.
+Session complete. Here's the summary:
+
+---
+
+## 2026-05-09 Maintainer Session Summary
+
+**WAKE finding (research direction):** TEST-04a is a **mechanism-class failure**, not a magnitude miss. The G_local/G_global suppression mechanism predicts fσ₈ below ΛCDM; DESI DR1 observes above. A suppressor that observes enhancement cannot be retuned within its mechanism class. Research proposal `test04a_mechanism_class_sign_failure.md` filed to the Synchronism repo — with Branch 1 diagnosis: since C(ρ) is monotonically increasing and galactic halos are ~60× denser than the cosmic background, the ratio may be inverted (C_galactic/C_cosmic > 1, not < 1), flipping the prediction to match DESI DR1's direction.
+
+**Site changes pushed (9 files, Vercel deployed):**
+- **7 new server-side redirects** for confirmed 404s: `/why`, `/test-roadmap`, `/cosmology`, `/what-this-is-not`, `/coherence`, `/dual-c`, `/predictions`
+- **`/first-encounter`**: plain-English coherence definition added — "coherence" was entirely absent from the introductory page
+- **Honest assessment**: Critical Exponents moved to #1 in failures (β, ν are RG-primary; 2× miss removes Landau-universality as justification sitewide); TEST-04a upgraded to "mechanism-class failure, sign reversed"; Freeman's Law Σ₀ downgraded to Reparametrization
+- **Homepage**: eyebrow → "Open Research Notebook — Not a Theory of Everything"; "8-way convergence" → "dimensional rederivation"; hero now mentions "one was refuted by external data"
+- **γ Calculator**: N_corr caveats promoted to top (no Hamiltonian→N_corr protocol = no first-principles predictions)
+- **Equation Walkthrough**: variable definitions table added; ρ_crit clarified as NOT the midpoint
+
+**3 explorer topics seeded** (all HIGH): N_corr from Hamiltonian protocol (dispositive gap, flagged by two independent experts); TEST-04a sign-error diagnosis (compute C_galactic vs C_cosmic); ρ_crit inflection vs saturation (C=0.5 marker, resolution options).

@@ -59,6 +59,15 @@ function synchronismVel(r: number, vflat: number): number {
   return Math.sqrt(baryon * baryon + coherence * coherence);
 }
 
+function mondVel(r: number, vflat: number): number {
+  // MOND (simple µ-function approximation for illustration)
+  // Deep-MOND asymptotics: v → vflat; rise profile differs from Synchronism
+  const rScale = 2.5;
+  const baryon = vflat * Math.sqrt(1 - Math.exp(-r / rScale)) * 0.6;
+  const mondContrib = vflat * Math.sqrt(Math.tanh(0.55 * r / rScale));
+  return Math.sqrt(baryon * baryon + mondContrib * mondContrib);
+}
+
 export default function GalaxyPlotter() {
   const [selected, setSelected] = useState(0);
   const galaxy = galaxies[selected];
@@ -76,13 +85,14 @@ export default function GalaxyPlotter() {
   const toY = (v: number) => pad.top + (1 - v / yMax) * plotH;
 
   const modelPoints = useMemo(() => {
-    const pts: { r: number; vNew: number; vSyn: number }[] = [];
+    const pts: { r: number; vNew: number; vSyn: number; vMond: number }[] = [];
     for (let i = 0; i <= 50; i++) {
       const r = (i / 50) * xMax;
       pts.push({
         r,
         vNew: newtonianVel(r, galaxy.vflat),
         vSyn: synchronismVel(r, galaxy.vflat),
+        vMond: mondVel(r, galaxy.vflat),
       });
     }
     return pts;
@@ -95,9 +105,21 @@ export default function GalaxyPlotter() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
-          Select a SPARC galaxy and compare observed rotation curves with Newtonian (baryons only)
-          and Synchronism predictions. The gap between Newtonian and observed is what
-          &#x039B;CDM calls &ldquo;dark matter.&rdquo;
+          <strong>The dark matter puzzle in one picture:</strong> Physics predicts that galaxies
+          should rotate more slowly at their outer edges (like planets in the solar system — the
+          further out, the slower). They don&apos;t. The outer stars rotate just as fast as the inner
+          ones. Something invisible is adding gravity. Most physicists call it dark matter. MOND
+          (Modified Newtonian Dynamics) explains the same curves by changing the gravity law.
+          Synchronism offers a third interpretation: the coherence function C(ρ) mimics the extra
+          gravity via density-dependent coupling. All three fit the observations; none is confirmed
+          over the others by rotation curve data alone.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '-0.5rem' }}>
+          Select a SPARC galaxy. The plot shows four things: what visible matter predicts (dashed),
+          what we observe (dots), what Synchronism gives (violet), and what MOND gives (green).
+          Notice that Synchronism and MOND nearly overlap — the framework&apos;s own{' '}
+          <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}
+          labels this a <em>reparametrization</em>.
         </p>
         <div style={{
           background: 'rgba(245, 158, 11, 0.08)',
@@ -189,6 +211,12 @@ export default function GalaxyPlotter() {
               fill="none" stroke="#6b7280" strokeWidth="1.5" strokeDasharray="5 3"
             />
 
+            {/* MOND curve (green dashed) */}
+            <path
+              d={modelPoints.map((p, i) => `${i === 0 ? 'M' : 'L'}${toX(p.r).toFixed(1)},${toY(p.vMond).toFixed(1)}`).join(' ')}
+              fill="none" stroke="#22c55e" strokeWidth="1.5" strokeDasharray="6 3"
+            />
+
             {/* Synchronism curve (violet) */}
             <path
               d={modelPoints.map((p, i) => `${i === 0 ? 'M' : 'L'}${toX(p.r).toFixed(1)},${toY(p.vSyn).toFixed(1)}`).join(' ')}
@@ -205,8 +233,10 @@ export default function GalaxyPlotter() {
             <text x={pad.left + 30} y={pad.top + 19} fill="#38bdf8" fontSize="10">Observed</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 30} x2={pad.left + 20 + 8} y2={pad.top + 30} stroke="#8b5cf6" strokeWidth="2" />
             <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism</text>
-            <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#6b7280" strokeWidth="1.5" strokeDasharray="3 2" />
-            <text x={pad.left + 30} y={pad.top + 49} fill="#6b7280" fontSize="10">Newtonian (baryons only)</text>
+            <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={pad.left + 30} y={pad.top + 49} fill="#22c55e" fontSize="10">MOND (approx.)</text>
+            <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#6b7280" strokeWidth="1.5" strokeDasharray="3 2" />
+            <text x={pad.left + 30} y={pad.top + 64} fill="#6b7280" fontSize="10">Newtonian (baryons only)</text>
           </svg>
         </div>
 

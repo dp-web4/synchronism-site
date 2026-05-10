@@ -70,17 +70,29 @@ export default function EntityCriterion() {
           have measurable Γ and m. The question is whether Γ/m &lt; 1.
         </p>
 
-        <h2>Why This Is Novel</h2>
+        <h2>What Is and Isn&apos;t Novel</h2>
         <p>
-          Standard QFT has no criterion for &ldquo;entity-hood&rdquo; — all excitations above
-          the vacuum are equally real regardless of their lifetime. The Γ &lt; m condition
-          is not derivable from QFT; it comes from the Synchronism oscillation basis and
-          imposes a physical threshold that QFT does not.
+          <strong>The narrow-resonance condition Γ ≪ m is known to QFT.</strong> It is the condition
+          required for a Breit-Wigner resonance to be well-defined as an isolated pole in the
+          Källén-Lehmann spectral representation. The f₀(500)/σ is the textbook example of a state
+          where this condition fails — its width is comparable to its mass, which is precisely why
+          the PDG debates whether it qualifies as a particle.
         </p>
         <p>
-          The criterion survived 13 adversarial A2ACW stress tests across sessions
-          (Sessions #1800–1900). The consistent finding: it is derivable from the oscillation
-          basis, not from QFT, and is consistent with all examined PDG resonance data.
+          <strong>What Synchronism adds is an ontological interpretation, not the condition itself.</strong>
+          Standard QFT treats Γ ≪ m as a practical approximation (narrow resonances are easier to
+          compute), not a fundamental threshold for &ldquo;entity-hood.&rdquo; QFT assigns equal
+          ontological status to all excitations above the vacuum regardless of their lifetime. The
+          Synchronism claim is that the oscillation basis gives Γ &lt; m a physical meaning beyond
+          mere approximation: it marks the boundary between structures that can complete a coherence
+          cycle and those that cannot. Whether this framing adds predictive content beyond QFT&apos;s
+          existing resonance classification is the open research question.
+        </p>
+        <p>
+          The criterion survived 13 adversarial A2ACW stress tests (Sessions #1800–1900). The
+          consistent finding: its ontological interpretation is derivable from the oscillation basis
+          and is consistent with all examined PDG resonance data — but a systematic audit against
+          the full PDG table has not yet been done.
         </p>
 
         <h2>The External Test</h2>

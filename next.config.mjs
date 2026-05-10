@@ -110,6 +110,23 @@ const nextConfig = {
         destination: '/coherence-function',
         permanent: false,
       },
+      // Individual tier-1 test URLs (no per-test pages exist; redirect to summary)
+      {
+        source: '/tier-1/test-:slug*',
+        destination: '/tier-1-existing',
+        permanent: false,
+      },
+      {
+        source: '/tier-1-existing/test-:slug*',
+        destination: '/tier-1-existing',
+        permanent: false,
+      },
+      // /decoherence-explorer was removed; redirect to decoherence-mrh
+      {
+        source: '/decoherence-explorer',
+        destination: '/decoherence-mrh',
+        permanent: false,
+      },
     ];
   },
 };

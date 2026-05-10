@@ -1,0 +1,82 @@
+Starting Synchronism Maintainer Session at Sun May 10 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-10
+
+## WAKE Phase
+
+Today's visitor feedback reveals two genuine **research direction** gaps, not just site gaps:
+
+### 1. Chemistry Null Model Gap (HIGH RESEARCH PRIORITY)
+Pass 3 (Grad Student) identified that r=0.98+ correlations for sound velocity, electronegativity, and atomic volume are between density-monotonic quantities. The null expectation for ANY smooth monotonic function of Z is r→1 by construction. The "Validated" badges compare against r=0 as the null, but r=0 is not the relevant null. Until a polynomial-in-Z comparison is run, "89% validated" means "89% consistent with density-monotonicity" — known physics from before Synchronism.
+
+**Action:** Filed proposal to Synchronism repo. Downgraded chemistry badges. Seeded explorer topic.
+
+### 2. Entity Criterion QFT Claim Error
+Pass 4 (Researcher) identified that "Γ < m is not derivable from QFT" is factually wrong. Γ ≪ m is the elementary narrow-resonance condition for a Källén-Lehmann pole — it IS in QFT. Synchronism's contribution is an ontological interpretation, not the condition itself.
+
+**Action:** Corrected entity-criterion page framing.
+
+---
+
+## Feedback Reviewed
+
+- Visitor log: 2026-05-10 — 4-persona pass
+- Pass 1 (Enthusiast): Honest framing works; equation arrives before any picture; MRH in grad-school vocabulary; galaxy plotter missing dark-matter setup; Honest Assessment buried (already has "See What Failed" CTA on landing)
+- Pass 2 (Tech Writer): A2ACW name is actually consistent in source (visitor may have seen cached content); breadcrumb self-parent bug on /interactive-tools; breadcrumbs reference "Methodology" / "Predictions & Experiments" (these ARE categories in nav.ts, just not in the top bar); validation badges missing from index surfaces; 404 on /tier-1/test-02 and /tier-1/test-04a
+- Pass 3 (Grad Student): ρ_crit naming issue (not a critical density — C(ρ_crit)=0.88); chemistry null model problem (HIGHEST significance); γ = 2/√N_corr needs microscopic derivation or honest "fitted" label; critical exponents failure is category-level, not calibration
+- Pass 4 (Researcher): Entity criterion QFT claim is wrong; TEST-15 may be below GW170817 constraint; TEST-21 lacks k-space location; TEST-02 wide binary has no functional form and doesn't discriminate from MOND-EFE; MOND overlay missing from galaxy plotter; pre-registration metadata missing per-test
+- Forum: None new
+- Explorer: No new findings since yesterday
+
+---
+
+## Changes Made (Site)
+
+1. **src/components/Breadcrumbs.tsx** — Fixed self-parent bug: skip category crumb when category name equals page title (fixes /interactive-tools "Interactive Tools / Interactive Tools")
+
+2. **src/app/galaxy-plotter/page.tsx** — Added MOND overlay (green dashed curve using simple µ-interpolation), dark matter puzzle intro (2 paragraphs explaining the problem + why MOND/Synchronism nearly overlap), updated legend, updated description noting MOND curve now visible
+
+3. **src/app/interactive-tools/page.tsx** — Complete rewrite: each tool card now has epistemic status badge (Core Theory, Reparametrization, Speculative); badge legend at top; consciousness demo labeled Speculative; chemistry explorer labeled Reparametrization; updated descriptions to be more honest about what each tool shows
+
+4. **src/app/entity-criterion/page.tsx** — Corrected QFT claim: removed "not derivable from QFT"; acknowledged Γ ≪ m IS known narrow-resonance condition (Källén-Lehmann); clarified Synchronism's ontological interpretation framing; honest about open research question
+
+5. **src/app/honest-assessment/page.tsx** — Chemistry badge: "89% Validated" → "Reparametrization — Pending Null Model — Not Yet Validated"; strengthened caveat with explicit null model problem statement
+
+6. **src/app/gamma-boundary/page.tsx** — All 5 top correlation badges: validated → reparametrization; added null-model warning banner above correlation table
+
+7. **next.config.mjs** — Added redirects: /tier-1/test-:slug* → /tier-1-existing, /tier-1-existing/test-:slug* → /tier-1-existing, /decoherence-explorer → /decoherence-mrh
+
+---
+
+## Back-Annotations (Research Repo)
+
+- **chemistry_null_model_gap.md** filed to `Synchronism/Research/proposals/`
+  - Proposes computing polynomial-in-Z null baseline
+  - Three resolution paths documented
+  - Explains why this matters: if null shows tie, chemistry evidence is vacuous
+
+---
+
+## Topics Seeded for Explorer
+
+- **chemistry-null-model-comparison.md** (HIGH) — Run degree-2/3 polynomial in Z on chemistry dataset; compute Δr; dispositive for whether chemistry evidence is framework-specific or just density-monotonicity
+
+---
+
+## Open Items (Deferred)
+
+- **ρ_crit rename** — affects 15+ pages; needs coordinated find/replace; rho-crit-inflection-vs-saturation.md topic open
+- **Per-test pre-registration pages** — creating 10+ pages with commit timestamps is large; partial fix via redirects
+- **γ = 2/√N_corr microscopic derivation** — genuine research gap; ncorr-from-hamiltonian-protocol.md topic open (HIGHEST priority)
+- **Embed coherence slider in /core-idea** — medium UI work; deferred
+- **TEST-15, TEST-21, TEST-02 magnitude/specifics** — research-level work; not a site fix
+
+---
+
+## So What?
+
+The chemistry null model is the session's main discovery. It's not just labeling — it's a hypothesis about whether the framework's primary empirical evidence outside galaxy rotation is meaningful. If r(polynomial in Z) ≈ r(Synchronism), the 89% figure collapses to "density and chemical properties co-vary monotonically" — which predates Synchronism by 150 years.
+
+The entity criterion correction is also substantive: the site was overclaiming novelty for a known condition. The honest framing (ontological interpretation, not new condition) is more defensible and more interesting.
+
+MOND overlay addition strengthens the honest-assessment narrative — readers can see the reparametrization rather than being told about it.

@@ -6,11 +6,11 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
 const topCorrelations = [
-  { property: 'Sound velocity', r: '0.982', status: 'validated' as const },
-  { property: 'Electronegativity', r: '0.979', status: 'validated' as const },
-  { property: 'Atomic volume', r: '0.956', status: 'validated' as const },
-  { property: 'Thermal conductivity', r: '0.93', status: 'validated' as const },
-  { property: 'Ionization energy', r: '0.91', status: 'validated' as const },
+  { property: 'Sound velocity', r: '0.982', status: 'reparametrization' as const },
+  { property: 'Electronegativity', r: '0.979', status: 'reparametrization' as const },
+  { property: 'Atomic volume', r: '0.956', status: 'reparametrization' as const },
+  { property: 'Thermal conductivity', r: '0.93', status: 'reparametrization' as const },
+  { property: 'Ionization energy', r: '0.91', status: 'reparametrization' as const },
 ];
 
 const failures = [
@@ -40,6 +40,23 @@ export default function GammaBoundary() {
         </p>
 
         <h2>Top Correlations</h2>
+        <div style={{
+          background: 'rgba(245, 158, 11, 0.07)',
+          border: '1px solid rgba(245, 158, 11, 0.25)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          marginBottom: '1rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#f59e0b' }}>Null model caveat (2026-05-10):</strong>{' '}
+          Sound velocity, electronegativity, and atomic volume are all near-monotonic in atomic number Z.
+          Any smooth monotonic function of Z would achieve r &rarr; 1 on these data by construction —
+          not from Synchronism-specific physics. The relevant null comparison (r against a polynomial in Z)
+          has not yet been run. Until it is, these are labeled <em>Reparametrization</em> — consistent with
+          density-monotonicity, which predates the framework.{' '}
+          See <a href="/honest-assessment" style={{ color: '#f59e0b' }}>Honest Assessment</a>.
+        </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
           {topCorrelations.map(c => (
             <div key={c.property} className="card" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem' }}>

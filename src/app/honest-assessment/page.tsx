@@ -92,22 +92,26 @@ export default function HonestAssessment() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>Chemistry: &#x03B3; &#x2248; 1 Boundary</h3>
-              <ValidationBadge status="validated" label="89% Validated" />
+              <ValidationBadge status="reparametrization" label="Pending Null Model — Not Yet Validated" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               1,703 chemical phenomena. Sound velocity r = 0.982, electronegativity r = 0.979.
-              Top correlations are strong.
+              Top correlations are strong — but the relevant null has not been computed.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              Caveat: ~11% failure rate. Era 2 chemistry (sessions 134-2660) identified as template-based.
+              <strong>Null model problem (2026-05-10):</strong> Sound velocity, electronegativity,
+              and atomic volume are all near-monotonic functions of atomic number Z. Any smooth
+              monotonic function fit through the same data would achieve r → 1 by construction —
+              not because it captures the physics, but because density and chemical properties
+              are known to covary monotonically. The relevant null comparison is r(polynomial in Z),
+              not r = 0. Until this comparison is run, r = 0.98 is evidence of density-monotonicity
+              (known physics), not specifically of Synchronism&apos;s C(ρ) framework.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              <strong>Unresolved interpretive question:</strong> The 89% rate mixes prospective predictions
-              and post-hoc correlations, and the 1,703 phenomena are not all statistically independent
-              (sound velocity, electronegativity, and atomic volume co-vary across the periodic table
-              for well-known bonding reasons). Until the rate is decomposed into independent prospective
-              predictions, &ldquo;89% validated&rdquo; is better read as &ldquo;89% consistent with
-              the &#x03B3; &#x2248; 1 boundary&rdquo; &mdash; a weaker but still meaningful statement.
+              Additional caveats: ~11% failure rate. Era 2 chemistry (sessions 134-2660) identified as
+              template-based. 1,703 phenomena include statistically dependent samples (sound velocity,
+              electronegativity, and atomic volume co-vary for well-known bonding reasons).
+              See <a href="/chemistry-limitations" style={{ color: 'var(--color-accent-blue)' }}>Chemistry Limitations</a>.
             </p>
           </div>
 

@@ -15,6 +15,8 @@ export default function Breadcrumbs({ currentPath }: BreadcrumbsProps) {
     return null;
   }
 
+  const showCategory = category !== pageInfo.title;
+
   return (
     <nav
       aria-label="Breadcrumb"
@@ -34,10 +36,14 @@ export default function Breadcrumbs({ currentPath }: BreadcrumbsProps) {
         <li>
           <Link href="/" style={{ color: 'var(--color-text-muted)' }}>Home</Link>
         </li>
-        <li style={{ color: 'var(--color-text-muted)' }} aria-hidden="true">/</li>
-        <li>
-          <span style={{ color: 'var(--color-text-secondary)' }}>{category}</span>
-        </li>
+        {showCategory && (
+          <>
+            <li style={{ color: 'var(--color-text-muted)' }} aria-hidden="true">/</li>
+            <li>
+              <span style={{ color: 'var(--color-text-secondary)' }}>{category}</span>
+            </li>
+          </>
+        )}
         <li style={{ color: 'var(--color-text-muted)' }} aria-hidden="true">/</li>
         <li aria-current="page">
           <span style={{ color: 'var(--color-text-primary)', fontWeight: 500 }}>

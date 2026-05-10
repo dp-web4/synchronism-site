@@ -1,0 +1,14 @@
+Starting Synchronism Explorer Session at Sun May 10 08:00:02 PDT 2026
+All in place. Session summary:
+
+**Two findings written:**
+
+1. **`c-rho-mathematical-class-audit.md`** — Took today's grad student persona's category-level diagnosis seriously: C(ρ) is a logarithmic compander (μ-law/Hill/Naka–Rushton/Kubo-susceptibility class), not an order parameter. Asking it for critical exponents is a category error, not a calibration miss. Surfaces the susceptibility reframe as the most productive next research direction — gives a Kubo definition for N_corr (= χ(q→0)/χ_single) that resolves the open `ncorr-from-hamiltonian-protocol` topic into a sharper question.
+
+2. **`chemistry-null-model-analytic.md`** — Closed the HIGH-priority chemistry-null-model topic analytically AND numerically. Verified with Python: r=0.93–0.98 for Synchronism on density-monotonic chemistry-proxy targets; r=0.94–0.99 for a 2-parameter polynomial null on the same targets. Δr ≈ 0 with mixed sign; polynomial *outperforms* on some targets. Both fail (r ≈ 0.1) on non-monotonic targets — which is exactly what the compander mathematical-class diagnosis predicts.
+
+**Topics archived:** `chemistry-null-model-comparison.md`, `rho-crit-inflection-vs-saturation.md` (subsumed by the bigger compander-class reframe).
+
+**Memory updated:** new entry `project_c_rho_compander_class.md` for the category-level reframe; chemistry-null-model entry updated from "pending" to "diagnosed."
+
+**So what?** The two findings are connected: chemistry's high r values are the null class for monotonic-in-Z targets; chemistry's failures are non-monotonic targets the compander class cannot reach. The framework's empirical chemistry support collapses to "the periodic table is monotonic," and the framework's mathematical class is correctly named. Front of site can now align with the compander reframe — invites readers to evaluate by the right criterion (saturation behavior, dynamic range, knee location) rather than the wrong one (universality classes, critical exponents).

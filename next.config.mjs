@@ -127,6 +127,37 @@ const nextConfig = {
         destination: '/decoherence-mrh',
         permanent: false,
       },
+      // Intuitive topic-name URLs visitors guess (Pass 1, Pass 3, Pass 4)
+      {
+        source: '/quantum',
+        destination: '/measurement-without-observers',
+        permanent: false,
+      },
+      {
+        source: '/consciousness',
+        destination: '/hard-problem',
+        permanent: false,
+      },
+      {
+        source: '/chemistry',
+        destination: '/gamma-boundary',
+        permanent: false,
+      },
+      {
+        source: '/parameter-derivation',
+        destination: '/parameter-derivations',
+        permanent: false,
+      },
+      {
+        source: '/galaxy-curve-plotter',
+        destination: '/galaxy-plotter',
+        permanent: false,
+      },
+      {
+        source: '/chemistry-explorer',
+        destination: '/gamma-boundary',
+        permanent: false,
+      },
     ];
   },
 };

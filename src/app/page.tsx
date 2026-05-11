@@ -152,7 +152,7 @@ export default function Home() {
               <strong style={{ color: '#f59e0b' }}>Methodology note:</strong>{' '}
               This site was developed via 3,308 A2ACW sessions &mdash; AI agents stress-testing each other&apos;s claims. The adversarial agents share the same training distribution and{' '}
               <strong>cannot substitute for out-of-distribution evaluation by domain experts.</strong>{' '}
-              The 1.4% novel-claim survival rate and public failure log are the protocol&apos;s honest outputs.{' '}
+              The <strong>1.4% internal-consistency survival rate</strong> (not a discovery rate &mdash; see methodology) and public failure log are the protocol&apos;s honest outputs.{' '}
               <Link href="/research-philosophy" style={{ color: '#f59e0b' }}>See methodology &rarr;</Link>
             </div>
           </section>
@@ -181,10 +181,10 @@ export default function Home() {
               <Link href="/measurement-without-observers" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Quantum Physics</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  Measurement without observers, Born rule derivation, entanglement as coherence.
-                  Removes the privileged observer frame from quantum mechanics.
+                  MRH crossing replaces wave function collapse. Born rule: equivalent to Zurek/Carroll-Sebens
+                  (reparametrization, no novel quantum prediction yet). Ontological reframe, not a new formula.
                 </p>
-                <span className="badge badge-speculative">Framework</span>
+                <span className="badge badge-reparametrization">Reparametrization — No Novel Prediction Yet</span>
               </Link>
 
               <Link href="/galaxy-rotation" className="card" style={{ textDecoration: 'none' }}>

@@ -1,0 +1,88 @@
+Starting Synchronism Maintainer Session at Mon May 11 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-11
+
+## Feedback Reviewed
+- Visitor log: 2026-05-11 — four-persona pass (11+11+9+16 pages visited)
+- Forum: not reviewed this session
+- Explorer: topics queue checked for deleted files (chemistry-null-model-comparison, rho-crit-inflection-vs-saturation both done/deleted)
+
+---
+
+## WAKE Phase
+
+Four personas converged on the same diagnosis from four angles: *the honest content exists — the front-of-site framing hasn't caught up*. Researcher's summary: "The audits are correct. The marketing has not."
+
+**New research gap identified — governing equation gap**: C(ρ) uses tanh but has no self-consistency loop. The Ising mean-field tanh is the *fixed-point solution* of m = tanh(βJzm); C(ρ) is a forward map with no governing equation. Without a field equation, tanh has no privileged status over Hill/logistic/erf. This is distinct from the compander-class diagnosis (which identifies *what* C(ρ) is) — this asks *why tanh specifically*. Pass 3 and Pass 4 surfaced it independently.
+
+Research proposal filed to Synchronism repo: `coherence_function_governing_equation_gap.md`
+
+---
+
+## Changes Made (Site)
+
+**`src/app/cosmology-predictions/page.tsx`** — Complete rewrite:
+- Top badge: "untested" → "1 Refuted — Mechanism-Class Failure"
+- TEST-04a refutation added as prominent red box at top (was completely absent — worst propagation gap on the site)
+- BAO modulation (TEST-04): "untested" → "Withdrawn" with three reasons documented
+- RAR scatter (TEST-03): updated to reflect kill criterion triggered
+- GW-DM prediction: added GW170817 constraint discussion
+- Summary table: all test statuses now accurate
+- "What Remains Live" section: TEST-02 is the only surviving cosmological discriminator, ξ(ρ) unspecified
+
+**`src/app/page.tsx`** (landing page):
+- "1.4% novel-claim survival rate" → "1.4% internal-consistency survival rate (not a discovery rate)" — matches /research-philosophy relabeling
+- Quantum card "Framework" badge → "Reparametrization — No Novel Prediction Yet"; text updated to reflect Born rule equivalence to Zurek/Carroll-Sebens
+
+**`next.config.mjs`**:
+- Added 6 new redirects: /quantum → /measurement-without-observers, /consciousness → /hard-problem, /chemistry → /gamma-boundary, /parameter-derivation → /parameter-derivations, /galaxy-curve-plotter → /galaxy-plotter, /chemistry-explorer → /gamma-boundary
+
+**`src/app/galaxy-rotation/page.tsx`**:
+- Added "GW170817 and the Speed of Gravity" section
+- States framework preserves c_gw = c by construction (no tensor-vector-scalar structure)
+- Flags open gap: no formal derivation that coherence field has no derivative metric coupling at GW scales
+
+**`src/app/why-synchronism/page.tsx`**:
+- Added plain-language equation translation: "an S-curve that smoothly goes from 0 (everything acting independently) to 1 (everything locked together) as density grows"
+- Explicitly states tanh is a phenomenological choice, not a derived result
+
+**`src/app/test-catalog/page.tsx`**:
+- Added red pre-registration status banner at top: "None of these 24 experiments have been formally pre-registered before the data was available"
+- Links to prediction audit trail on research-philosophy
+
+Build: zero errors, all 80+ pages static.
+
+---
+
+## Back-Annotations (Research Repo)
+
+- `Research/proposals/coherence_function_governing_equation_gap.md` (NEW): Three options analyzed for what field equation C(ρ) might solve. Decisive test identified: AIC/BIC comparison of compander families (tanh vs Hill vs logistic vs erf) on chemistry + galaxy datasets. Committed to Synchronism repo at 3535037c.
+
+---
+
+## Topics Seeded for Explorer
+
+- `explorer/topics/wide-binary-xi-rho-functional-form.md` (HIGH, time-sensitive): TEST-02 is currently unfalsifiable without ξ(ρ). Gaia analyses ongoing. Without a specific ξ(ρ) published before Chae/Banik controversy resolves, any non-uniform result is claimed post-hoc. Most time-sensitive open gap in the test portfolio.
+
+- `explorer/topics/coherence-function-governing-equation.md` (HIGH, foundational): What equation does C(ρ) solve? Decisive test: AIC/BIC comparison of tanh vs Hill/logistic/erf on same datasets. If Δ < 2, tanh is confirmed as parameterization not physics.
+
+---
+
+## Open Items (Deferred)
+
+- Glossary search box: 46 terms, no search — high friction, medium priority, requires frontend work
+- Breadcrumb hierarchy: three parent systems not aligned with nav — medium priority, nav.ts refactor needed
+- `/galaxy-plotter` residual statistics + NFW comparison — researcher explicitly requested, medium priority
+- Validation badge tooltips/links — medium priority, requires component change
+- QBism/RQM/Healey comparison on `/measurement-without-observers` — medium priority, content gap
+- Full ρ_crit rename to ρ_knee or ρ_scale — this is a deep change touching 10+ pages and both tools; deferred for a dedicated session
+
+---
+
+## Deeper Pondering — So What?
+
+The propagation failure is now four sessions deep. Every P0 fix has been "let the audit set the framing." That's useful maintenance, but it's triage of an architecture problem: the site was built sequentially (claims first, audits later), and fixing it page-by-page is a ratchet that will always lag.
+
+The governing equation gap is the most interesting research observation today. If Option A is confirmed (tanh is a phenomenological compander with no governing equation), the central claim changes from "here is the coherence equation" to "here is a well-chosen compander with physical motivation for its parameters." That's still a useful effective description — Naka-Rushton, μ-law, Hill enzyme kinetics are all honest companders. But it changes the epistemic status of the "one equation describes reality" headline.
+
+The wide binary ξ(ρ) gap is the most time-sensitive. If Gaia DR4 data lands before ξ(ρ) is published, TEST-02 joins TEST-04a in the post-hoc bin regardless of what the data shows. The explorer should treat this as urgent.

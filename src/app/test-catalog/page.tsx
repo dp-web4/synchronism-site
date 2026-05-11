@@ -52,6 +52,24 @@ export default function TestCatalog() {
       <ValidationBadge status="untested" label="24 Proposed Experiments" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <div style={{
+          background: 'rgba(239, 68, 68, 0.07)',
+          border: '1px solid rgba(239, 68, 68, 0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.7rem 1rem',
+          marginBottom: '1.25rem',
+          fontSize: '0.875rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#ef4444' }}>Pre-registration status:</strong>{' '}
+          None of these 24 experiments have been formally pre-registered before the data was available.
+          This means results cannot be treated as prospective predictions &mdash; they are retrospective
+          consistency checks until a kill criterion is publicly registered <em>before</em> the relevant
+          dataset is analyzed.{' '}
+          <Link href="/research-philosophy#prediction-audit-trail" style={{ color: '#ef4444' }}>
+            See the prediction audit trail →
+          </Link>
+        </div>
         <p>
           Synchronism has defined 24 specific, falsifiable experiments organized into four tiers
           by cost and feasibility. Every experiment has an explicit kill criterion &mdash; a result

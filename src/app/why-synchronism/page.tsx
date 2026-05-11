@@ -45,6 +45,13 @@ export default function WhySynchronism() {
           Synchronism proposes a coherence function: <span className="equation-inline">C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))</span>.
           It takes one input (density) and returns one output (coherence: how quantum or classical something is).
         </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontStyle: 'italic', borderLeft: '3px solid var(--color-accent-violet)', paddingLeft: '0.75rem' }}>
+          In plain English: an S-curve that smoothly goes from 0 (everything acting independently)
+          to 1 (everything locked together) as density grows. The parameter &#x03B3; controls how sharp
+          the transition is; &#x03C1;<sub>crit</sub> is a reference density setting where on the curve
+          you are. The shape &mdash; tanh &mdash; is a phenomenological choice, not a derived result:
+          any S-curve with the same saturation properties would fit the same data equally well.
+        </p>
         <p>
           The parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> depends only on how many particles are
           moving as a correlated unit. When &#x03B3; is large (few correlated particles), behavior is quantum.

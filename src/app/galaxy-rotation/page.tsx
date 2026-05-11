@@ -176,6 +176,29 @@ export default function GalaxyRotation() {
           for the kill criterion.
         </p>
 
+        <h2>GW170817 and the Speed of Gravity</h2>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          The binary neutron star merger GW170817 constrained |c<sub>GW</sub> &minus; c|/c &lt; 10<sup>&minus;15</sup>,
+          killing TeVeS, Bekenstein-Sanders, and large swaths of Horndeski parameter space (Sakstein &amp; Jain 2017,
+          Ezquiaga &amp; Zumalacárregui 2017). Synchronism is marketed in part as a modified-gravity alternative,
+          so this constraint is relevant.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>Synchronism&apos;s posture:</strong> The coherence function C(&#x03C1;) is not a tensor-vector-scalar
+          theory and does not introduce new propagating tensor degrees of freedom.
+          It does not modify the graviton kinetic term or introduce derivative couplings of a scalar
+          to the metric that would change gravitational wave speed. Therefore the framework&apos;s
+          prediction is c<sub>GW</sub> = c by construction, and GW170817 does not apply.
+        </p>
+        <div style={{ background: 'rgba(245, 158, 11, 0.07)', border: '1px solid rgba(245, 158, 11, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+          <strong style={{ color: '#f59e0b' }}>Open gap:</strong>{' '}
+          This statement has not been formally derived from the framework&apos;s equations.
+          The coherence field couples to density (ρ), not directly to the metric, but the precise
+          relationship between C(ρ) and the effective gravitational action at GW propagation scales
+          has never been written down. Until it is, &ldquo;GW170817 doesn&apos;t apply&rdquo;
+          is a reasonable expectation but not a proven constraint.
+        </div>
+
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <Link href="/rar-scatter" className="btn-primary">
             Next: RAR Scatter &rarr;

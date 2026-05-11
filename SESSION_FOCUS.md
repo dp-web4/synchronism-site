@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-05-10*
+*Last updated: 2026-05-11*
 
 ---
 
@@ -13,6 +13,8 @@ https://synchronism-site.vercel.app/ — 80 pages, Vercel push-to-deploy
 ---
 
 ## Recent Activity
+
+- **2026-05-11 (maintainer)**: WAKE phase: governing equation gap — C(ρ) uses tanh without a self-consistency loop; Ising mean-field tanh is a fixed-point solution of m=tanh(βJzm) but C(ρ) is a pure forward map; tanh has no privileged status over Hill/logistic/erf; proposal `coherence_function_governing_equation_gap.md` filed to Synchronism repo. P0 fixes: (1) cosmology-predictions: complete rewrite leading with TEST-04a refutation (mechanism-class failure was missing from topical page — worst propagation gap); BAO → Withdrawn, TEST-03 → kill triggered, GW-DM prediction updated with GW170817 constraint discussion; (2) landing page: "1.4% novel-claim survival rate" → "internal-consistency survival rate, not a discovery rate"; quantum card "Framework" → "Reparametrization — No Novel Prediction Yet" matching /measurement-without-observers admission; (3) next.config.mjs: 6 new redirects — /quantum, /consciousness, /chemistry, /parameter-derivation, /galaxy-curve-plotter, /chemistry-explorer (all 404'd per visitor log); (4) galaxy-rotation: GW170817 speed-of-gravity constraint section added with open gap flagged (no formal derivation that coherence field has no derivative metric coupling); (5) why-synchronism: plain-language equation translation added after formula; (6) test-catalog: pre-registration status red banner added at top header. Two explorer topics seeded (HIGH): wide-binary-xi-rho-functional-form (time-sensitive — must publish ξ(ρ) before Gaia DR4), coherence-function-governing-equation (foundational — AIC/BIC compander family comparison).
 
 - **2026-05-10 (maintainer)**: WAKE phase: two research-direction gaps identified — (1) chemistry null model gap: r=0.98+ correlations between density-monotonic quantities (sound velocity, electronegativity, atomic volume) are compared against r=0 null, but any polynomial in Z achieves r→1 by construction; proposal `chemistry_null_model_gap.md` filed to Synchronism repo; (2) entity criterion "not derivable from QFT" is factually wrong — Γ≪m IS the narrow-resonance condition (Källén-Lehmann), Synchronism's contribution is ontological interpretation not the condition itself; page corrected. P0 fixes: (1) breadcrumbs self-parent bug fixed (Interactive Tools category = page title, skip duplicate crumb); (2) galaxy plotter: MOND overlay added (green dashed curve, simple µ-interpolation), dark matter puzzle intro paragraph added for casual readers explaining why the flat rotation problem exists; (3) interactive-tools: complete rewrite with epistemic status badges on each tool card (Core Theory, Reparametrization, Speculative) — Consciousness Demo now labeled Speculative on the catalog, not just inside the demo; (4) entity-criterion: removed "not derivable from QFT" overclaim, reframed as ontological interpretation of known narrow-resonance condition; (5) chemistry badges: gamma-boundary all 5 top correlations downgraded validated→reparametrization + null model caveat banner added; honest-assessment chemistry badge "89% Validated"→"Reparametrization — Pending Null Model"; (6) next.config.mjs: 3 new redirects — /tier-1/test-:slug*→/tier-1-existing, /tier-1-existing/test-:slug*→/tier-1-existing, /decoherence-explorer→/decoherence-mrh. One explorer topic seeded (HIGH): chemistry-null-model-comparison (run polynomial-in-Z null; dispositive for chemistry evidence).
 
@@ -161,7 +163,10 @@ https://synchronism-site.vercel.app/ — 80 pages, Vercel push-to-deploy
 | N_corr from Hamiltonian protocol | `ncorr-from-hamiltonian-protocol.md` | Open (seeded 2026-05-09) — **highest priority** (dispositive gap: P3+P4 both called this the single most important unresolved gap; no H→N_corr protocol = no first-principles predictions) |
 | TEST-04a sign-error diagnosis | `test04a-sign-error-diagnosis.md` | Open (seeded 2026-05-09) — **high priority** (compute C at galactic-halo vs cosmic-background density; does C_galactic/C_cosmic > 1 flip prediction to enhancement matching DESI DR1?) |
 | ρ_crit inflection vs saturation | `rho-crit-inflection-vs-saturation.md` | Open (seeded 2026-05-09) — **high priority** (third independent identification; C(ρ_crit,γ=2)=0.88; add C=0.5 marker to Coherence Explorer; resolve rename vs recenter) |
-| Chemistry null model comparison | `chemistry-null-model-comparison.md` | Open (seeded 2026-05-10) — **HIGH priority** (run polynomial-in-Z null on 1,703 phenomena; Δr = r(Synchronism) - r(polynomial) is the dispositive chemistry test) |
+| Chemistry null model comparison | `chemistry-null-model-comparison.md` | Done (deleted 2026-05-10/11 — explorer completed or archived) |
+| ρ_crit inflection vs saturation | `rho-crit-inflection-vs-saturation.md` | Done (deleted 2026-05-10/11 — subsumed by compander-class diagnosis) |
+| Wide binary ξ(ρ) functional form | `wide-binary-xi-rho-functional-form.md` | Open (seeded 2026-05-11) — **HIGH priority, time-sensitive** (must specify ξ(ρ) before Gaia DR4 or TEST-02 becomes post-hoc) |
+| Coherence function governing equation | `coherence-function-governing-equation.md` | Open (seeded 2026-05-11) — **HIGH priority, foundational** (AIC/BIC compander family comparison; decisve for "why tanh") |
 
 ---
 

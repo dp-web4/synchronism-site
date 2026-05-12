@@ -1,0 +1,74 @@
+Starting Synchronism Maintainer Session at Tue May 12 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-12
+
+## Feedback Reviewed
+- **Visitor log 2026-05-12**: Four-persona pass. Unusually high-signal day — all four personas independently converged on related issues. Casual enthusiast: equation wall + MRH jargon on page 1, Test Roadmap "0 Completed" confusion. Tech Writer: ρ_crit notation drift, glossary not linked from body, badge definition inconsistency, "0 Completed" counter. Grad Student: compander/order-parameter equivocation (highest-signal finding), +1 regulator explanation, no AIC/BIC across sigmoid family. Researcher: 7 of 10 Tier-1 tests non-discriminating, GW170817 unaddressed, /predictions/desi 404, Consciousness demo as credibility liability, suppressor-class diagnosis unresolved, MRH formal definition missing.
+- **Forum**: No new forum feedback this session.
+- **Explorer findings**: No new findings since last session.
+
+## WAKE Phase
+
+**Research-direction issues, not just site issues:**
+
+Two binary research decisions that can't be resolved by site copy alone were identified. Both triggered by the visitor session and filed as proposals to the Synchronism repo before any site work was touched.
+
+1. **Compander vs. Order Parameter** (both grad student and researcher independently): C(ρ) is presented as an order parameter on the front of site (phase transition, critical density) but the deep pages explicitly disclaim the order-parameter properties (no self-consistency loop, no Z₂ symmetry, tanh is a motivated functional choice). These are mutually exclusive framings with completely different diagnostics for what counts as failure. The research core needs to commit to one; the site can then propagate that commitment. Proposal: `compander_vs_order_parameter_category_decision.md`.
+
+2. **Suppressor-class dead or recoverable** (researcher): Both the Bullet Cluster and DESI fσ₈ failures produced sign errors attacking the suppressor-class mechanism. The site says "mechanism-class failure" but doesn't commit to which diagnosis. This is a binary research decision. Proposal: `suppressor_class_dead_or_recoverable.md`.
+
+Both proposals committed to Synchronism repo.
+
+## Changes Made (Site)
+
+### P0 — High Severity
+
+1. **`src/app/page.tsx`**: Landing page dark matter description "explained without new particles" → "mechanism attempted twice; both attempts produced sign errors." Accurately reflects the site's own documented failures.
+
+2. **`src/app/first-encounter/page.tsx`**: Step 1 MRH definition rewritten to drop "conditionally independent" probability vocabulary. New text: "the bubble of nearest neighbors that matter — everything outside the bubble can be ignored." The Andromeda example is preserved. Casual enthusiast flagged this as page-1 intimidation.
+
+3. **`src/app/test-catalog/page.tsx`**: Counter disambiguation. "Completed" → "Pre-registered & Completed" (0 remains). Added explanatory paragraph distinguishing pre-registered tests (0) from retrospective analyses (galaxy rotation, chemistry, TEST-03/04a). Confused all four personas.
+
+4. **`next.config.mjs`**: Added redirects for `/predictions/desi` (→ `/honest-assessment`) and `/predictions/:path*` (→ `/test-catalog`). Researcher's most-referenced page 404'd.
+
+5. **`src/app/mrh/page.tsx`**: Added prominent "Open Gap: Formal Mathematical Definition" section with the conditional-independence statement in monospace, and two resolution options (formalize or rename to "Relevance Horizon"). Grad student and researcher both flagged "Markov" promises a mathematical structure not delivered.
+
+6. **`src/app/interactive-tools/page.tsx`**: Consciousness Threshold Demo separated into its own "Speculative — Read Before Using" section at the bottom, visually divided from the core tools by a red-bordered separator. Extended description explicitly states convergence is geometric (tanh assumption), not empirical. Researcher: "single largest credibility liability on the site for an expert audience." Galaxy Plotter description also updated to "consistency check (fitted to V_flat)."
+
+7. **`src/app/research-philosophy/page.tsx`**: Added symmetric lower-bound statement to the A2ACW in-distribution limitation card: "4 of 4 'Validated' badges audited to date have been demoted to Reparametrization on closer review. Effective novelty rate after expert audit: currently 0 of 4 retained." Researcher flagged the missing lower-bound as implicit but unexpressed.
+
+### P1 — Medium Severity
+
+8. **`src/lib/terms.ts`**: Added `fσ₈` and `BIC`/`ΔBIC` as standalone glossary entries. Both appear prominently on Honest Assessment and Tier-1 Existing; neither was defined as a primary entry.
+
+9. **`src/app/galaxy-plotter/page.tsx`**: Legend label changed from `Synchronism` to `Synchronism (consistency check, V_flat fitted)`. Page body text already disclosed this; the legend itself did not.
+
+### P2 — Polish
+
+10. **`src/lib/navigation.ts`**: Added `/coherence-function` to the `related` array for the γ Calculator. Missing back-link in the navigation graph.
+
+## Back-Annotations (Research Repo)
+
+- **`Research/proposals/compander_vs_order_parameter_category_decision.md`**: Filed. Binary research decision: order parameter (needs Hamiltonian + self-consistency + RG treatment) vs. compander (needs AIC/BIC comparison across tanh/logistic/erf/Hill family). Site's deep pages already commit to compander; research core and front pages don't.
+
+- **`Research/proposals/suppressor_class_dead_or_recoverable.md`**: Filed. Binary research decision: does Branch 1 (C_galactic/C_cosmic ratio inverted in Session 107) or Branch 2 (suppressor class genuinely dead) apply? Requires reading Session 107's derivation chain and computing C numerically. Site correctly labels "mechanism-class failure — sign error" but doesn't commit to which diagnosis.
+
+## Topics Seeded for Explorer
+
+- **`compander-vs-order-parameter-commit.md`** (HIGH): Commit to compander or order parameter. Determine what follows for the Phase Transitions page, ρ_crit naming, and compander-comparison tool design.
+
+- **`dark-matter-suppressor-class-diagnosis.md`** (HIGH): Read Session 107's fσ₈ derivation chain. Compute C_galactic vs. C_cosmic numerically. Determine Branch 1 or Branch 2. Output: committed verdict that either seeds a corrected forward prediction or an honest "no dark-matter mechanism" statement.
+
+## Open Items (Deferred)
+
+- **AIC/BIC compander-comparison tool**: Multiple high-priority requests but requires executor-track capability. Explorer seeding completed; implementation deferred.
+- **`/predictions/desi` dedicated page**: Redirected to `/honest-assessment` for now. Needs dedicated page with Session 107 derivation chain and committed diagnosis once explorer completes dark-matter topic.
+- **Phase Transitions page rewrite**: Depends on compander/order-parameter commit completing.
+- **GW170817 site statement**: Explorer topic already open. Need physics position from explorer before maintainer can write it.
+- **ρ_crit notation drift** (underscore vs. subscript in equation-walkthrough): Requires JSX refactoring of step data strings. Deferred as P2.
+- **Chemistry null model**: Executor task still open.
+- **Tier-1 test cards validation badges**: Badge system stops at Test Roadmap door. Future session.
+
+## So What?
+
+Today's session was the highest-signal visitor day to date. Four personas independently reached the same diagnosis: the site's front pages and deep pages have reached different verdicts, and the gap is the main credibility problem. The deep pages are correct. This session propagated several more of them to the front of site. What's deferred is the compander/order-parameter binary — that belongs in the research core before the site can commit to it. Both explorer topics and both research proposals create that path.

@@ -292,6 +292,20 @@ export const terms: Record<string, TermDefinition> = {
     explanation: '\u03c3\u2088 (sigma-8) quantifies the amplitude of matter density fluctuations on scales of 8 Megaparsecs per h (where h is the dimensionless Hubble constant). A higher \u03c3\u2088 means galaxies clump more strongly; a lower \u03c3\u2088 means smoother distribution. Planck CMB data gives \u03c3\u2088 \u2248 0.83; weak-lensing surveys (KiDS, DES) give \u03c3\u2088 \u2248 0.77\u20130.80. This "S\u2088 tension" is an active area of cosmology. Synchronism Session 107 predicted \u03c3\u2088 \u2248 0.76; DESI DR1 measures \u03c3\u2088 = 0.841 \u00b1 0.034, disfavoring the prediction at 2.4\u03c3.',
     learnMore: '/honest-assessment',
   },
+  'fsigma8': {
+    term: 'f\u03c3\u2088',
+    fullName: 'Growth-Rate \u00d7 Amplitude Parameter',
+    brief: 'The product of the growth rate f(z) and the matter fluctuation amplitude \u03c3\u2088 \u2014 a key observable for structure growth.',
+    explanation: 'f\u03c3\u2088(z) combines two cosmological measurements: f(z) = d(ln D)/d(ln a), the logarithmic growth rate of structure (how fast overdensities grow), and \u03c3\u2088(z), the amplitude of matter fluctuations at redshift z. Together they quantify how rapidly large-scale structure is building up. Higher f\u03c3\u2088 = faster growth = more clustering. Synchronism Session 107 predicted f\u03c3\u2088(z=0.51) \u2248 0.418, below \u039bCDM (\u22480.474). DESI DR1 measured \u22480.55 \u00b1 0.06, above \u039bCDM \u2014 a 2.4\u03c3 disagreement with Synchronism, and a sign reversal relative to the prediction.',
+    learnMore: '/honest-assessment',
+  },
+  'BIC': {
+    term: 'BIC',
+    fullName: 'Bayesian Information Criterion',
+    brief: 'A model-selection score that penalizes free parameters. Lower BIC = better model given data. \u0394BIC > 10 is strong evidence against the weaker model.',
+    explanation: 'BIC = k\u00b7ln(n) \u2212 2\u00b7ln(L), where k is the number of free parameters, n is the number of data points, and L is the maximum likelihood. The \u0394BIC between two models quantifies the evidence in favor of the model with lower BIC. By convention: |\u0394BIC| < 2 = negligible evidence, 2\u20136 = positive evidence, 6\u201310 = strong evidence, >10 = very strong evidence. In the Synchronism context, the unanswered question is: does C(\u03c1) achieve a lower BIC than (a) a polynomial of similar order, (b) the MOND RAR interpolating function, or (c) other sigmoid companders (logistic, Hill, erf)? This comparison has not yet been run.',
+    learnMore: '/honest-assessment',
+  },
   'sigma-stat': {
     term: '\u03c3 (statistical)',
     fullName: 'Standard Deviation / Statistical Significance',

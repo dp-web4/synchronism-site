@@ -125,6 +125,37 @@ export default function MRH() {
           of the system.
         </p>
 
+        <h2>Open Gap: Formal Mathematical Definition</h2>
+        <div style={{
+          border: '2px solid rgba(239, 68, 68, 0.4)',
+          background: 'rgba(239, 68, 68, 0.05)',
+          borderRadius: '0.5rem',
+          padding: '1rem 1.25rem',
+          marginBottom: '1.5rem',
+        }}>
+          <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem', fontSize: '0.9rem' }}>
+            The name <strong>Markov</strong> Relevancy Horizon promises a specific mathematical structure:
+            a conditional independence statement. In standard graphical models, a Markov boundary for
+            node <em>X</em> satisfies:
+          </p>
+          <div style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)', fontSize: '0.95rem', padding: '0.5rem 1rem', background: 'rgba(139, 92, 246, 0.08)', borderRadius: '4px', marginBottom: '0.75rem' }}>
+            P(X<sub>future</sub> | X<sub>MRH</sub>, X<sub>external</sub>) = P(X<sub>future</sub> | X<sub>MRH</sub>)
+          </div>
+          <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
+            The current MRH framework specifies <em>operational criteria</em> (predictive sufficiency,
+            predictive closure) but not a probability distribution, integration measure, graphical model,
+            or explicit mapping from coherence dynamics to the conditional-independence condition.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0' }}>
+            <strong>Two paths forward:</strong> (1) Provide the integration measure that defines
+            &ldquo;inside MRH&rdquo; vs. &ldquo;outside MRH&rdquo; and write the explicit
+            conditional-independence statement with a probability distribution. (2) Or rename to
+            <em>Relevance Horizon</em> &mdash; acknowledging the intuition is Markov-motivated but
+            the formalism is not yet Markov. The &ldquo;Markov&rdquo; label sets an expectation
+            that is not currently met.
+          </p>
+        </div>
+
         <h2>What&apos;s Untested</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           The MRH as a replacement for &ldquo;wave function collapse&rdquo; is the central untested

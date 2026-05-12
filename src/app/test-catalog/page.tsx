@@ -137,20 +137,26 @@ export default function TestCatalog() {
         </div>
 
         <h2>Status</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginBottom: '1.5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginBottom: '0.5rem' }}>
           <div className="card" style={{ textAlign: 'center' }}>
             <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: '#f59e0b' }}>24</p>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Defined</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Proposed</p>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
             <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: '#ef4444' }}>0</p>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Completed</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Pre-registered &amp; Completed</p>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
             <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: '#10b981' }}>10</p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Zero Cost</p>
           </div>
         </div>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1.5rem' }}>
+          The &ldquo;Pre-registered &amp; Completed: 0&rdquo; counts only tests whose kill criterion was registered
+          <em> before</em> the relevant dataset was analyzed. This is distinct from the retrospective analyses
+          in the &ldquo;What&apos;s Already Been Analyzed&rdquo; box above (galaxy rotation, chemistry, TEST-03/04a).
+          Those analyses produced results, but they were not pre-registered prospective predictions.
+        </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <Link href="/tier-1-existing" className="btn-primary">

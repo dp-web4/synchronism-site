@@ -158,6 +158,18 @@ const nextConfig = {
         destination: '/gamma-boundary',
         permanent: false,
       },
+      // /predictions/desi 404d (researcher pass 4); redirect to honest-assessment where refutation is documented
+      {
+        source: '/predictions/desi',
+        destination: '/honest-assessment',
+        permanent: false,
+      },
+      // /predictions/:path* fallback
+      {
+        source: '/predictions/:path*',
+        destination: '/test-catalog',
+        permanent: false,
+      },
     ];
   },
 };

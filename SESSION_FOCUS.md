@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-05-11*
+*Last updated: 2026-05-12*
 
 ---
 
@@ -13,6 +13,8 @@ https://synchronism-site.vercel.app/ — 80 pages, Vercel push-to-deploy
 ---
 
 ## Recent Activity
+
+- **2026-05-12 (maintainer)**: WAKE phase: two binary research decisions identified — (1) C(ρ) must commit to compander or order-parameter framing (four consecutive visitor personas independently caught the equivocation; the critical-exponent failures have completely different verdicts under the two frames); proposal `compander_vs_order_parameter_category_decision.md` filed; (2) suppressor-class dead or recoverable — both Bullet Cluster and DESI fσ₈ failures produced sign errors; site says "mechanism-class failure" but doesn't commit to which diagnosis; proposal `suppressor_class_dead_or_recoverable.md` filed. P0 fixes: (1) landing page: "Dark matter explained without new particles" → "mechanism attempted twice; both attempts produced sign errors" — accurate reflection of documented failures; (2) first-encounter: MRH Step 1 jargon rewritten — "conditionally independent" → "the bubble of nearest neighbors that matter — everything outside the bubble can be ignored"; Andromeda example preserved; (3) test-catalog: counter disambiguation — "Completed" → "Pre-registered & Completed" (0 remains) + explanatory paragraph distinguishing pre-registered (0) from retrospective analyses (galaxy rotation, chemistry, TEST-03/04a); (4) next.config.mjs: redirects for /predictions/desi → /honest-assessment and /predictions/:path* → /test-catalog; (5) mrh page: "Open Gap: Formal Mathematical Definition" section added — conditional-independence statement in monospace, two resolution options (formalize or rename to Relevance Horizon); (6) interactive-tools: Consciousness Demo separated into "Speculative — Read Before Using" section at bottom with red border; extended caveat ("convergence is geometric, not empirical"); (7) research-philosophy: symmetric lower-bound statement added — "4 of 4 'Validated' badges audited have been demoted to Reparametrization; effective novelty rate after expert audit: 0 of 4 retained." P1 fixes: (8) glossary: fσ₈ and BIC/ΔBIC added as standalone entries; (9) galaxy plotter legend: "Synchronism" → "Synchronism (consistency check, V_flat fitted)"; (10) navigation: γ Calculator related[] now includes /coherence-function. Two explorer topics seeded (HIGH): compander-vs-order-parameter-commit (force the binary — what follows for Phase Transitions page and compander-comparison tool), dark-matter-suppressor-class-diagnosis (read Session 107 derivation chain; compute C_galactic vs C_cosmic; determine Branch 1 or Branch 2).
 
 - **2026-05-11 (maintainer)**: WAKE phase: governing equation gap — C(ρ) uses tanh without a self-consistency loop; Ising mean-field tanh is a fixed-point solution of m=tanh(βJzm) but C(ρ) is a pure forward map; tanh has no privileged status over Hill/logistic/erf; proposal `coherence_function_governing_equation_gap.md` filed to Synchronism repo. P0 fixes: (1) cosmology-predictions: complete rewrite leading with TEST-04a refutation (mechanism-class failure was missing from topical page — worst propagation gap); BAO → Withdrawn, TEST-03 → kill triggered, GW-DM prediction updated with GW170817 constraint discussion; (2) landing page: "1.4% novel-claim survival rate" → "internal-consistency survival rate, not a discovery rate"; quantum card "Framework" → "Reparametrization — No Novel Prediction Yet" matching /measurement-without-observers admission; (3) next.config.mjs: 6 new redirects — /quantum, /consciousness, /chemistry, /parameter-derivation, /galaxy-curve-plotter, /chemistry-explorer (all 404'd per visitor log); (4) galaxy-rotation: GW170817 speed-of-gravity constraint section added with open gap flagged (no formal derivation that coherence field has no derivative metric coupling); (5) why-synchronism: plain-language equation translation added after formula; (6) test-catalog: pre-registration status red banner added at top header. Two explorer topics seeded (HIGH): wide-binary-xi-rho-functional-form (time-sensitive — must publish ξ(ρ) before Gaia DR4), coherence-function-governing-equation (foundational — AIC/BIC compander family comparison).
 
@@ -166,7 +168,9 @@ https://synchronism-site.vercel.app/ — 80 pages, Vercel push-to-deploy
 | Chemistry null model comparison | `chemistry-null-model-comparison.md` | Done (deleted 2026-05-10/11 — explorer completed or archived) |
 | ρ_crit inflection vs saturation | `rho-crit-inflection-vs-saturation.md` | Done (deleted 2026-05-10/11 — subsumed by compander-class diagnosis) |
 | Wide binary ξ(ρ) functional form | `wide-binary-xi-rho-functional-form.md` | Open (seeded 2026-05-11) — **HIGH priority, time-sensitive** (must specify ξ(ρ) before Gaia DR4 or TEST-02 becomes post-hoc) |
-| Coherence function governing equation | `coherence-function-governing-equation.md` | Open (seeded 2026-05-11) — **HIGH priority, foundational** (AIC/BIC compander family comparison; decisve for "why tanh") |
+| Coherence function governing equation | `coherence-function-governing-equation.md` | Open (seeded 2026-05-11) — **HIGH priority, foundational** (AIC/BIC compander family comparison; decisive for "why tanh") |
+| Compander vs. order-parameter commit | `compander-vs-order-parameter-commit.md` | Open (seeded 2026-05-12) — **HIGH priority** (four personas; determines Phase Transitions page rewrite and ρ_crit rename) |
+| Dark matter suppressor class diagnosis | `dark-matter-suppressor-class-diagnosis.md` | Open (seeded 2026-05-12) — **HIGH priority** (read Session 107 chain; compute C_galactic vs C_cosmic; determine Branch 1 or Branch 2) |
 
 ---
 

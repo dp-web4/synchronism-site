@@ -207,6 +207,16 @@ export default function ResearchPhilosophy() {
             means A2ACW cannot substitute for out-of-distribution evaluation by domain experts
             who are not in the training loop.</strong>
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', marginBottom: 0 }}>
+            <strong>The symmetric lower-bound problem:</strong> A2ACW also systematically
+            <em> over-credits</em> reformulations of known physics as &ldquo;Validated.&rdquo;
+            Adversarial AIs in shared distribution badge the same patterns the training corpus rewards.
+            The track record: <strong>4 of 4 &ldquo;Validated&rdquo; badges audited to date have been demoted
+            to Reparametrization on closer review</strong> (galaxy rotation, chemistry r=0.982, Born rule,
+            a₀ = cH₀/2π). The effective novelty rate after expert audit is currently 0 of 4
+            retained. The 1.4% figure is therefore both an upper bound (on in-distribution detection)
+            and — by track record — an overestimate of actual novelty.
+          </p>
         </div>
 
         <div className="card" style={{ background: 'var(--color-bg-secondary)', marginBottom: '1.5rem' }}>

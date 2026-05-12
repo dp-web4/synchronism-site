@@ -599,7 +599,7 @@ export const navigationTree: NavigationTree = {
       href: '/gamma-calculator',
       desc: 'Input N_corr, get \u03B3, see what regime you\'re in',
       keywords: ['gamma', 'calculator', 'N_corr', 'regime', 'compute'],
-      related: ['/gamma-parameter', '/phase-transitions'],
+      related: ['/gamma-parameter', '/phase-transitions', '/coherence-function'],
     },
     {
       title: 'Phase Boundary Visualizer',

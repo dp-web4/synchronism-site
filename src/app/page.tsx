@@ -100,9 +100,9 @@ export default function Home() {
             Where does Synchronism move the needle?
           </h2>
           <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 1rem', fontSize: '0.95rem', maxWidth: '60ch' }}>
-            Three claims where this framework says something genuinely new. Quantum mysteries
+            Three claims where this framework proposes something new — and what the honest audit found. Quantum mysteries
             reframed as synchronization physics. Consciousness given an equation. Dark matter
-            explained without new particles.
+            mechanism attempted twice; both attempts produced sign errors.
           </p>
           <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', fontSize: '0.85rem' }}>
             <span style={{ color: 'var(--color-accent-violet)' }}>

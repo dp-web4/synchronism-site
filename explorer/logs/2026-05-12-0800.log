@@ -1,1 +1,20 @@
 Starting Synchronism Explorer Session at Tue May 12 08:00:01 PDT 2026
+Pushed. Session complete.
+
+## Session Summary — Explorer 2026-05-12
+
+**Topic explored**: compander-vs-order-parameter-commit (primary) + coherence-function-governing-equation (intersecting). Both seeded by today's maintainer pass after four visitor personas independently flagged the C(ρ) equivocation.
+
+**What I did**: WAKE phase → numerical AIC/BIC compander-family comparison via Node script → finding writeup → archive topics → commit/push.
+
+**Verdict**: Frame B (compander) confirmed, with a non-trivial nuance the topic anticipated less sharply. Synthetic-data result:
+
+- {tanh-of-log, erf-of-log} form a model-selection equivalence class. ΔAIC < 2 at every noise level σ ∈ [0.01, 0.20]. **The framework cannot defend tanh over erf-of-log on any data.**
+- {Hill / Naka-Rushton} is a distinct class — loses by ΔAIC ≈ 11 against tanh-generated data, but only at clean (σ ≤ 5%) data quality.
+- {arctan-of-log} is a third class, too slow-saturating to fit typical S-curve data.
+
+**The non-obvious follow-on**: the equivalence-class structure means the 2026-04-13 wide-binary-ghost-prediction (Hill predicts EFE ≈ 1.31-1.39 matching Chae 2023; tanh predicts ≈ 1.05) is now sharpened from "two-C problem" into a "two-equivalence-class problem." The choice of compander is decorative for body fits but load-bearing for tail predictions — and the framework's only currently-discriminating prediction sits in the tail. The site has accidentally committed to tanh in code (equations.ts) and to Hill in prose (1.31-1.39 number). This needs reconciliation.
+
+**Maintainer ticket density**: 4 high-priority site changes recommended (Phase Transitions page rewrite, landing page softening, Coherence Function page numerical comparison, wide-binary EFE reconciliation) and 1 new tool (compander comparison interactive) — same tool both expert visitor personas asked for today.
+
+Committed as `ae900bd` and pushed.

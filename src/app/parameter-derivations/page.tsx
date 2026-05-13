@@ -23,8 +23,11 @@ export default function ParameterDerivations() {
       <section className="section content-width">
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '1.25rem', borderLeft: '3px solid var(--color-dark-border)', paddingLeft: '0.75rem' }}>
           Badge labels on this page: <strong>Motivated Ansatz</strong> and <strong>Motivated Choice</strong> are
-          sub-types of <em>Speculative</em> &mdash; indicating the parameter is physically motivated
-          but not uniquely derived. <strong>Freeman&apos;s Law Re-expressed</strong> is a sub-type of <em>Reparametrization</em>.
+          sub-types of <em>Speculative</em> &mdash; physically motivated but not uniquely derived.{' '}
+          <strong>Freeman&apos;s Law Re-expressed</strong> and <strong>Dimensional Analysis</strong> are
+          sub-types of <em>Reparametrization</em> &mdash; reproducing known observational laws in different notation.{' '}
+          <strong>Jeans Criterion</strong> is a sub-type of <em>Validated</em> &mdash; derived from a
+          physical principle with quantitative agreement.
           See <a href="/research-philosophy#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>badge taxonomy</a> for the six official tiers.
         </p>
 
@@ -140,8 +143,9 @@ export default function ParameterDerivations() {
       <section className="section content-width">
         <h2>What&apos;s Notable</h2>
         <p>
-          The derivation chain uses fundamental constants (c, G, &#x03B1;, H&#x2080;) plus one
-          observable (V<sub>flat</sub>). The functional form (tanh, &#x03B3;) has zero free parameters.
+          The derivation chain uses fundamental constants (c, G, H&#x2080;) plus one structural ratio
+          (&#x03B2;<sub>J</sub> &#x2248; 1 from the Jeans criterion) and one observable (V<sub>flat</sub>).
+          The functional form (tanh, &#x03B3;) has zero free parameters.
           The scaling constants (A, a&#x2080;, &#x03A3;&#x2080;, R&#x2080;) show 3&ndash;12%
           agreement with observations.
         </p>
@@ -149,8 +153,10 @@ export default function ParameterDerivations() {
           <strong>Honest caveat:</strong> The 3&ndash;12% errors could reflect either (a) legitimate
           approximation limits in the dimensional analysis, or (b) implicit calibration through
           choice of V<sub>flat</sub> as input. Distinguishing these requires independent derivation.
-          The landing page describes the scaling constants as &ldquo;fitted&rdquo; &mdash; that may be
-          the more conservative and accurate framing.
+          a&#x2080; and &#x03A3;&#x2080; reproduce known observational relations (Milgrom 1983;
+          Freeman 1970) using dimensional bookkeeping &mdash; classified as Reparametrization, not derivation.
+          The effective novel parameter in this chain is A (Jeans criterion, 5% agreement), which has
+          a derivation path independent of the observational coincidences.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

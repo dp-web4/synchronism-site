@@ -170,6 +170,37 @@ const nextConfig = {
         destination: '/test-catalog',
         permanent: false,
       },
+      // Natural URL guesses from Pass 1 casual visitor (2026-05-13)
+      {
+        source: '/the-equation',
+        destination: '/coherence-function',
+        permanent: false,
+      },
+      {
+        source: '/failures',
+        destination: '/honest-assessment',
+        permanent: false,
+      },
+      {
+        source: '/explore',
+        destination: '/first-encounter',
+        permanent: false,
+      },
+      {
+        source: '/mrh-explorer',
+        destination: '/mrh',
+        permanent: false,
+      },
+      {
+        source: '/prediction-explorer',
+        destination: '/test-catalog',
+        permanent: false,
+      },
+      {
+        source: '/what-it-is-not',
+        destination: '/what-synchronism-is-not',
+        permanent: false,
+      },
     ];
   },
 };

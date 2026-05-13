@@ -31,13 +31,29 @@ export default function GammaBoundary() {
         <p>
           Across 1,840 chemistry sessions, Synchronism tested the prediction that chemical phenomena
           cluster at &#x03B3; &#x2248; 1 &mdash; the quantum-classical boundary. The result: 1,703
-          distinct phenomena types, validated at 89%.
+          distinct phenomena types, with 89% boundary-consistent and 11% failures.
         </p>
-        <p>
-          This is the strongest chemistry result. The coherence function correctly identifies WHERE
-          interesting chemistry happens (the boundary), even when it fails to predict HOW specific
-          reactions unfold.
-        </p>
+
+        <div style={{
+          background: 'rgba(239,68,68,0.07)',
+          border: '1px solid rgba(239,68,68,0.25)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          marginBottom: '1.5rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#ef4444' }}>Key failures (non-density-monotonic properties):</strong>
+          <ul style={{ marginTop: '0.4rem', marginBottom: 0, paddingLeft: '1.2rem' }}>
+            <li><strong>Melting point predictions: 53% average error</strong> — melting points are bond-symmetry dominated, not density-monotonic across the periodic table.</li>
+            <li><strong>Superconductor T<sub>c</sub>: 6.5&times; wrong</strong> — T<sub>c</sub> depends on electron-phonon coupling strength, which does not scale with density in the way C(&#x03C1;) assumes.</li>
+          </ul>
+          <p style={{ marginTop: '0.5rem', marginBottom: 0 }}>
+            Pattern: the framework &ldquo;works&rdquo; where targets are density-monotonic by construction (sound velocity, electronegativity, atomic volume)
+            and fails where they are not. A polynomial in Z achieves r &#x2192; 1 on the same density-monotonic rows &mdash; the null comparison has not yet been run.
+            See <a href="/honest-assessment" style={{ color: '#ef4444' }}>Honest Assessment</a>.
+          </p>
+        </div>
 
         <h2>Top Correlations</h2>
         <div style={{

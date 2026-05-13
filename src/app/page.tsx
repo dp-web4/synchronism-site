@@ -157,8 +157,26 @@ export default function Home() {
             </div>
           </section>
 
+          {/* Honest framing */}
+          <section style={{ marginBottom: '2rem' }}>
+            <blockquote style={{
+              borderLeft: '3px solid var(--color-accent-violet)',
+              paddingLeft: '1rem',
+              margin: 0,
+              color: 'var(--color-text-secondary)',
+              fontStyle: 'italic',
+              fontSize: '0.95rem',
+            }}>
+              &ldquo;Synchronism is not a theory of everything. It&apos;s a research tool that maps density to coherence
+              and sometimes produces useful insights.&rdquo;
+              <footer style={{ marginTop: '0.35rem', fontStyle: 'normal', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+                &mdash; <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment page</Link>
+              </footer>
+            </blockquote>
+          </section>
+
           {/* Quick Stats */}
-          <section className="grid-3" style={{ marginBottom: '3rem' }}>
+          <section className="grid-3" style={{ marginBottom: '1rem' }}>
             <div className="card" style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>3,308</div>
               <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Research sessions</div>
@@ -171,6 +189,27 @@ export default function Home() {
               <div style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>14,760</div>
               <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Galaxies analyzed</div>
               <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>175 SPARC + 14,585 ALFALFA-SDSS</div>
+            </div>
+          </section>
+
+          {/* Prediction scorecard — paired with stats above */}
+          <section style={{ marginBottom: '3rem' }}>
+            <div style={{
+              background: 'rgba(239,68,68,0.05)',
+              border: '1px solid rgba(239,68,68,0.2)',
+              borderRadius: '0.375rem',
+              padding: '0.6rem 1rem',
+              fontSize: '0.82rem',
+              color: 'var(--color-text-muted)',
+              display: 'flex',
+              gap: '1.5rem',
+              flexWrap: 'wrap',
+            }}>
+              <span>Predictions confirmed by independent data: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
+              <span>Refuted by external data: <strong style={{ color: '#ef4444' }}>1</strong> (DESI fσ₈)</span>
+              <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO modulation)</span>
+              <span>Reparametrizations: <strong style={{ color: 'var(--color-text-secondary)' }}>3+</strong></span>
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto' }}>Full ledger &rarr;</Link>
             </div>
           </section>
 

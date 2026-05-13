@@ -190,14 +190,21 @@ export default function Tier1Existing() {
         <h2>Recommended Start</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            <strong>Tests 01/05, 02, and 04</strong> are the most decisive. They test genuinely novel
-            predictions (not reparametrizations) and can discriminate between Synchronism, MOND,
-            and &#x039B;CDM. If all three fail, the framework&apos;s cosmological predictions are dead.
+            <strong>TEST-04a is closed (FAILED — sign reversed).</strong> TEST-04 was withdrawn. The remaining
+            priority is <strong>TEST-02</strong> (wide binaries, Gaia DR3 — zero cost). Tests 01 and 05
+            test the same underlying prediction on different samples (count as one test).
+          </p>
+          <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+            <strong>EFE gap (2026-05-13):</strong> TEST-01, TEST-02, and TEST-05 are all environment-dependent
+            predictions. MOND&apos;s External Field Effect (Bekenstein &amp; Milgrom 1984; AQUAL/QUMOND) also predicts
+            environment-dependent dynamics. For these tests to be discriminating, the Synchronism prediction must
+            quantitatively diverge from the MOND+EFE prediction at some measurable parameter value. That comparison
+            has not yet been computed. Until it is, treat these as &ldquo;possibly MOND+EFE degenerate.&rdquo;
+            See <a href="../../Synchronism/Research/proposals/tier1_mond_efe_discriminator_gap.md" style={{ color: 'var(--color-accent-blue)' }}>research proposal</a>.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-            Note: Tests 09 and 10 are MOND-shared predictions (positive results do not discriminate Synchronism from MOND).
-            Tests 01 and 05 test the same underlying prediction on different samples and should be counted as one test for
-            independence purposes. The effective independent novel test count is approximately 6.
+            Tests 09 and 10 are MOND-shared predictions (positive results do not discriminate Synchronism from MOND).
+            The effective independent novel test count, after TEST-04a failure and TEST-04 withdrawal, is approximately 4.
           </p>
         </div>
 

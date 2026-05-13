@@ -5,39 +5,34 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
-const tests = [
+const activeTests = [
   {
     rank: 1,
-    name: 'DESI RSD fσ₈ Suppression',
-    id: 'TEST-04a',
-    tier: 'Tier 1',
-    cost: '$0',
-    why: 'Session 107 predicts fσ₈(z=0.51) ≈ 0.418, a ~12% suppression below ΛCDM (0.474). Mechanism: G_local/G_global suppresses late-time structure growth. DESI DR1 data already published — this test can be run today. Forecast: 3.1σ per LRG bin, 6.6σ combined at DESI Final. Replaces withdrawn TEST-04 (BAO modulation — contradicted by Session 107; see /bao-coherence-modulation).',
-    kill: 'fσ₈(z=0.51) > 0.46 rules out Synchronism at >3σ',
-    color: '#10b981',
-  },
-  {
-    rank: 2,
     name: 'Wide Binary Density Dependence',
     id: 'TEST-02',
     tier: 'Tier 1',
     cost: '$0',
-    why: 'MOND (Modified Newtonian Dynamics) predicts density-independent anomaly. Synchronism predicts density-dependent. Uses existing Gaia DR3 data. The cleanest test of environment dependence.',
-    kill: 'Anomaly independent of local stellar density',
+    why: 'Synchronism predicts the wide-binary gravitational anomaly is stronger in denser environments — density-dependent rather than constant. Uses existing Gaia DR3 data. EFE caveat: MOND\'s External Field Effect (Bekenstein-Milgrom 1984; AQUAL/QUMOND) also predicts environment-dependent dynamics. For TEST-02 to be a true discriminator, the predicted functional form ξ(ρ_ext) from Synchronism must quantitatively differ from the EFE prediction. This comparison has not yet been computed. Until it is, label this test as "possibly MOND+EFE degenerate."',
+    kill: 'Anomaly independent of local stellar density — or identical in functional form to standard MOND+EFE',
     color: '#10b981',
+    note: null,
   },
   {
-    rank: 3,
-    name: 'EEG (Electroencephalography) Anesthesia Phase Transition',
+    rank: 2,
+    name: 'EEG Anesthesia Phase Transition',
     id: 'TEST-11',
     tier: 'Tier 2',
     cost: '$150K',
-    why: 'Tests the most striking consciousness prediction: consciousness loss is a phase transition, not gradual decline. If the threshold is universal, the entire consciousness framework has empirical support.',
+    why: 'Tests the most striking consciousness prediction: consciousness loss is a phase transition, not a gradual decline. If the threshold is universal, the entire consciousness framework gains empirical grounding. The D and S parameters in the consciousness equation are not yet operationally defined — this test would force that gap to close.',
     kill: 'Consciousness loss is gradual with no threshold clustering',
     color: 'var(--color-accent-blue)',
+    note: null,
   },
+];
+
+const pendingTests = [
   {
-    rank: 4,
+    rank: 3,
     name: 'Gravitational Wave Speed–Dark Matter Column Correlation',
     id: 'TEST-15',
     tier: 'Tier 3',
@@ -47,7 +42,7 @@ const tests = [
     color: 'var(--color-accent-violet)',
   },
   {
-    rank: 5,
+    rank: 4,
     name: 'Cosmic Interference Patterns',
     id: 'TEST-07',
     tier: 'Tier 1*',
@@ -58,25 +53,58 @@ const tests = [
   },
 ];
 
+const closedTests = [
+  {
+    id: 'TEST-04a',
+    name: 'DESI RSD fσ₈ Suppression',
+    status: 'FAILED — Mechanism-Class: Sign Reversed',
+    verdict: 'Session 107 predicted fσ₈(z=0.51) ≈ 0.418 (suppressed growth, ~12% below ΛCDM). DESI DR1 measured fσ₈ ≈ 0.55 ± 0.06 — enhanced growth, above ΛCDM, not below it. This is a sign reversal, not a magnitude miss. A suppression mechanism cannot be retuned to produce enhancement. Mechanism class ruled out. See /tier-1-existing for full documentation.',
+  },
+  {
+    id: 'TEST-04',
+    name: 'BAO Coherence Modulation',
+    status: 'WITHDRAWN — Internal Contradiction',
+    verdict: 'Framework\'s own Session 107 forecasts BAO matches ΛCDM at 0.0% — the sound horizon is set at z~1100 when C ≈ 1 everywhere. The 10⁻⁴ modulation number had no session-level derivation.',
+  },
+];
+
 export default function Top5Tests() {
   return (
     <>
       <Breadcrumbs currentPath="/top-5-tests" />
-      <h1>Top 5 Decisive Tests</h1>
-      <ValidationBadge status="untested" label="Most Discriminating" />
+      <h1>Top Decisive Tests</h1>
+      <ValidationBadge status="untested" label="Most Discriminating — Updated 2026-05-13" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
-          Of the 24 defined experiments, these five have the highest <strong>distinguishing
-          power</strong> &mdash; they can discriminate between Synchronism, &#x039B;CDM (Lambda Cold Dark Matter), MOND,
-          and standard frameworks. Ranked by decisiveness.
+          Of the defined experiments, these have the highest <strong>distinguishing
+          power</strong> &mdash; tests that can discriminate between Synchronism and existing frameworks.
+          Two predictions have now closed: one failed by sign reversal, one withdrawn by internal contradiction.
         </p>
+
+        <div style={{
+          background: 'rgba(239,68,68,0.07)',
+          border: '1px solid rgba(239,68,68,0.25)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          marginBottom: '1.5rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#ef4444' }}>Scorecard (2026-05-13):</strong>{' '}
+          Confirmed: <strong>0</strong> &nbsp;|&nbsp;
+          Refuted: <strong>1</strong> (TEST-04a sign-reversed) &nbsp;|&nbsp;
+          Withdrawn: <strong>1</strong> (TEST-04 internal contradiction) &nbsp;|&nbsp;
+          Active: <strong>1 discriminating</strong> (TEST-02, EFE-degeneracy caveat pending) &nbsp;|&nbsp;
+          Monitoring: <strong>1</strong> (TEST-07 no derivation) &nbsp;|&nbsp;
+          New domains: <strong>1 untested</strong> (TEST-11 consciousness)
+        </div>
 
         <h3 style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.75rem' }}>
           Active discriminating tests
         </h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginBottom: '2rem' }}>
-          {tests.filter(t => t.rank <= 3).map(t => (
+          {activeTests.map(t => (
             <div key={t.id} className="card">
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                 <span style={{
@@ -110,13 +138,13 @@ export default function Top5Tests() {
         </div>
 
         <h3 style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem' }}>
-          Tracked — not yet active (derivation or signal pending)
+          Tracked — derivation or signal pending
         </h3>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
-          These are on the radar but do not currently meet the bar for &ldquo;decisive test&rdquo; — either no amplitude has been derived from the framework&apos;s parameters, or the test has already been superseded by existing data.
+          On the radar but not yet decisive: either no amplitude has been derived from the framework&apos;s parameters, or the test has already been superseded.
         </p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginBottom: '1.5rem' }}>
-          {tests.filter(t => t.rank > 3).map(t => (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginBottom: '2rem' }}>
+          {pendingTests.map(t => (
             <div key={t.id} className="card" style={{ opacity: 0.75, borderLeft: '3px solid #f59e0b' }}>
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                 <span style={{
@@ -149,21 +177,36 @@ export default function Top5Tests() {
           ))}
         </div>
 
+        <h3 style={{ fontSize: '0.95rem', color: '#ef4444', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem' }}>
+          Closed predictions
+        </h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
+          {closedTests.map(t => (
+            <div key={t.id} className="card" style={{ borderLeft: '3px solid #ef4444', opacity: 0.8 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.35rem' }}>
+                <h3 style={{ fontSize: '0.95rem' }}>{t.id}: {t.name}</h3>
+                <span style={{ color: '#ef4444', fontFamily: 'monospace', fontSize: '0.75rem', whiteSpace: 'nowrap', marginLeft: '0.5rem' }}>{t.status}</span>
+              </div>
+              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>{t.verdict}</p>
+            </div>
+          ))}
+        </div>
+
         <h2>The Strategy</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            Two decisive tests are Tier 1 (TEST-04, TEST-02 — zero cost, existing data).
-            Start there. If both fail, Synchronism&apos;s cosmological predictions are dead and
-            no further investment is warranted. If any succeed, they fund the case for TEST-11
-            (EEG, $150K).
+            With TEST-04 withdrawn and TEST-04a sign-reversed, the immediate discriminating work shifts to
+            TEST-02 (wide binaries, Gaia DR3 — zero cost). But TEST-02 needs a critical prerequisite:
+            compute the MOND+EFE prediction for the same observable and show where Synchronism diverges
+            numerically. Without that, a positive TEST-02 result cannot distinguish the frameworks.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem' }}>
-            This is how science should work: cheapest tests first, escalate only on success.
+            Cheapest tests first. TEST-02 is zero-cost analysis. TEST-11 (EEG, $150K) is next only on a
+            positive TEST-02 result.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-            * TEST-15 (GW correlation, #4) was already constrained by GW170817 (Baker+ 2017);
-            it moves from &ldquo;future test&rdquo; to &ldquo;monitoring&rdquo; until a positive-signal prediction is added.
-            TEST-07 (Cosmic Interference, #5) has no derivation yet &mdash; it is a candidate, not a current prediction.
+            * TEST-15 (GW correlation) was already constrained by GW170817 — monitoring only until a positive-signal prediction is added.
+            TEST-07 (500 Mpc Cosmic Interference) has no derivation — candidate only.
             <Link href="/cosmic-interference" style={{ color: 'var(--color-accent-blue)', marginLeft: '0.25rem' }}>See derivation status &rarr;</Link>
           </p>
         </div>

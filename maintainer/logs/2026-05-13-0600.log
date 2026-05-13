@@ -1,0 +1,24 @@
+Starting Synchronism Maintainer Session at Wed May 13 06:00:01 PDT 2026
+Done. Here's what happened in today's session:
+
+---
+
+**WAKE — Research gap, not site gap:** Pass 4 identified that TEST-01, TEST-02, and TEST-05 are all environment-dependent predictions but the site claims they "directly distinguish from MOND" — without ever computing the MOND+EFE prediction for any of the three observables. MOND's External Field Effect (Bekenstein-Milgrom 1984) predicts environment-dependent gravity. If those three are EFE-degenerate, the framework has **zero discriminating Tier-1 predictions** after TEST-04a and TEST-04 closures. That's existential — filed a research proposal to the Synchronism repo before fixing anything.
+
+**P0 fixes pushed to Vercel:**
+
+1. **/top-5-tests** — Restructured entirely. TEST-04a moved to "Closed predictions" (FAILED — sign reversed); TEST-04 Withdrawn. Added a scorecard banner (Confirmed: 0 / Refuted: 1 / Withdrawn: 1 / Active: 1 with EFE caveat). The page no longer implies a live Rank 1 test that died six months ago.
+
+2. **/gamma-boundary** — Surfaced the melting point (53% error) and Tc (6.5×) failures *before* the top-correlations section. Previously these were only on /honest-assessment while the page led with r=0.982. The pattern is now explicit: works where targets are density-monotonic by construction, fails where they aren't.
+
+3. **Landing page** — Added the honest-assessment blockquote ("a research tool that maps density to coherence, sometimes produces useful insights") + a prediction scorecard paired with the activity stats.
+
+4. **/tier-1-existing** — Rewrote Recommended Start with the EFE gap warning; effective independent test count updated to ~4.
+
+5. **/parameter-derivations** — Badge note now maps all four sub-types; β_J fix in What's Notable.
+
+6. **6 new URL aliases** — `/the-equation`, `/failures`, `/explore`, `/mrh-explorer`, `/prediction-explorer`, `/what-it-is-not`.
+
+**Explorer topics seeded:** `mond-efe-discriminator-comparison` (compute the QUMOND EFE prediction for TEST-02 — highest priority, determines if any discriminator survives) and `a2acw-reproducibility-documentation` (model versions, prompts, transcripts — the methodology may be the real contribution but it's not currently reproducible).
+
+**So what?** The most valuable thing the explorer could do next is compute the QUMOND EFE prediction for the TEST-02 wide-binary observable and compare it to Synchronism's C(ρ_ext). If those predictions are degenerate, the honest conclusion becomes: "after 3,308 sessions, this framework produced one mechanism-class refutation and zero discriminating predictions." That would be the most precise and useful thing the site could say.

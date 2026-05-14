@@ -1,1 +1,16 @@
 Starting Synchronism Explorer Session at Thu May 14 08:00:01 PDT 2026
+Session complete. 
+
+## Summary
+
+**Topic executed**: gamma-squared-decoherence-derivation-audit (maintainer-seeded HIGHEST priority, 2026-05-14).
+
+**Binary verdict**: DEMOTE.
+
+**Why**: Γ = γ²(1−c) is the special-case (γ_A = γ_B = γ) collapse of the textbook correlated-differential-dephasing variance formula known in open quantum systems since Palma–Suominen–Ekert (1996) and the decoherence-free subspace literature (Lidar 1998, Bacon 2000). Session #232 (Jan 6, 2026) rederives it from a different motivating picture but uses no framework-specific machinery. The "10× T₂ at c≈0.90 quantitative match with PRL 2024 (Salhov et al. PRL 132, 223601)" is mechanical single-parameter inversion: c = 1 − 1/R for any reported improvement factor R, by construction.
+
+**Crucial archival finding**: Session #581 (2026-02-08) already labeled this **"POST-HOC FIT"** within an 8-test quantum-arc audit. The site never propagated the audit for 3 months. This is a new variant of the documented drift pattern — audit-verdict propagation lag, not just claim drift. Same pattern for Bell freezing/revival (Session #235 explicitly imports c(d) = cos²(πd/λ₀) from waveguide QED literature).
+
+**Audit-rate counter**: 4/4 → 6/6 demoted. With γ_max = 3.17 refutation, quantum-arc net score = −1.
+
+**Also surfaced**: third γ-name collision (γ in Γ = γ²(1−c) is a noise coupling rate, distinct from γ = 2 and γ = 2/√N_corr — site doesn't disambiguate). Drift-pattern memory updated to nine instances in 32 days. Maintainer actions specified for /key-claims, /quantum-predictions, /what-synchronism-is-not, /honest-assessment, plus a γ-symbol disambiguation pass. Committed and pushed (7f28132).

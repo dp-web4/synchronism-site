@@ -201,6 +201,30 @@ const nextConfig = {
         destination: '/what-synchronism-is-not',
         permanent: false,
       },
+      // /tier1-existing-data (no hyphen between tier1) guessed by researcher
+      {
+        source: '/tier1-existing-data',
+        destination: '/tier-1-existing',
+        permanent: false,
+      },
+      // /the-math 404d by grad student and researcher (expected derivation page)
+      {
+        source: '/the-math',
+        destination: '/equation-walkthrough',
+        permanent: false,
+      },
+      // /explore/coherence 404d by casual visitor (guessed URL)
+      {
+        source: '/explore/coherence',
+        destination: '/coherence-explorer',
+        permanent: false,
+      },
+      // /phase-boundary 404d by grad student (shorter alias for visualizer)
+      {
+        source: '/phase-boundary',
+        destination: '/phase-boundary-visualizer',
+        permanent: false,
+      },
     ];
   },
 };

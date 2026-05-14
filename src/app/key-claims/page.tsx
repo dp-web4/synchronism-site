@@ -378,12 +378,29 @@ export default function KeyClaims() {
             </p>
           </div>
 
-          <h3 style={{ fontSize: '0.9rem', color: '#38bdf8', marginBottom: '0.25rem' }}>The test that kills it</h3>
+          <h3 style={{ fontSize: '0.9rem', color: '#ef4444', marginBottom: '0.25rem' }}>The test — and its result</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Environment-dependent RAR (Radial Acceleration Relation) scatter: galaxies in different density environments should show
             different radial acceleration relations (p &lt; 0.01). Synchronism predicts this; standard MOND
-            does not.
+            does not. <strong>This test was run (Session #616, ALFALFA-SDSS). Result: R&sup2; = 0.14, against a
+            pre-registered kill criterion of R&sup2; &lt; 0.20. The kill criterion was triggered.</strong>{' '}
+            The prediction &ldquo;differs from MOND&rdquo; is technically correct &mdash; but the
+            difference is in the wrong direction: Synchronism predicted an effect MOND lacks,
+            and the effect is not present in the data. This is a refutation of the novel prediction,
+            not a MOND-equivalent reparametrization.
           </p>
+          <div style={{
+            background: 'rgba(239, 68, 68, 0.08)',
+            border: '1px solid rgba(239, 68, 68, 0.3)',
+            borderRadius: '0.375rem',
+            padding: '0.5rem 0.75rem',
+            marginTop: '0.5rem',
+            fontSize: '0.8rem',
+            color: '#ef4444',
+          }}>
+            Status: <strong>Failed</strong> — R&sup2; = 0.14 &lt; 0.20 kill criterion (ALFALFA-SDSS, Session #616).
+            See <Link href="/honest-assessment" style={{ color: '#ef4444' }}>honest assessment</Link> for the full failure catalog.
+          </div>
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>
             <Link href="/dark-matter" style={{ fontSize: '0.85rem' }}>

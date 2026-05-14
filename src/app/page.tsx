@@ -31,6 +31,11 @@ export default function Home() {
             What this is not &rarr;
           </Link>
         </div>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem' }}>
+          <strong>New here?</strong> Start with <Link href="/first-encounter" style={{ color: 'var(--color-accent-blue)' }}>First Encounter</Link>.{' '}
+          <strong>Physicist?</strong> Jump to <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link> or <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.{' '}
+          <strong>Researcher?</strong> <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 tests</Link> are the entry point.
+        </p>
       </section>
 
       {/* Plain-language framing first */}

@@ -93,6 +93,13 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'The gold-standard dataset for testing galaxy rotation theories. Synchronism was tested against all 175 galaxies.',
     learnMore: '/galaxy-rotation',
   },
+  'ALFALFA-SDSS': {
+    term: 'ALFALFA-SDSS',
+    fullName: 'Arecibo Legacy Fast ALFA × Sloan Digital Sky Survey',
+    brief: 'A cross-matched catalog of ~15,000 galaxies combining 21-cm HI gas masses (ALFALFA) with optical properties and environment metrics (SDSS).',
+    explanation: 'ALFALFA (Arecibo Legacy Fast ALFA) mapped HI 21-cm radio emission from nearby galaxies, providing gas masses and rotation widths. Cross-matching with SDSS gives stellar masses, star formation rates, and large-scale environment metrics. The combined ALFALFA-SDSS catalog was used to test Synchronism\'s environment-dependent RAR scatter prediction (TEST-03). Result: R² = 0.14, below the pre-registered kill criterion of R² > 0.20 — the test failed.',
+    learnMore: '/galaxy-rotation',
+  },
   'NP2': {
     term: 'NP2',
     fullName: 'New Prediction #2',

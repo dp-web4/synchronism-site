@@ -95,6 +95,25 @@ export default function CoreIdea() {
       <section className="section content-width">
         <h2>What It Predicts</h2>
 
+        <div style={{
+          background: 'rgba(245, 158, 11, 0.07)',
+          border: '1px solid rgba(245, 158, 11, 0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.6rem 1rem',
+          marginBottom: '1rem',
+          fontSize: '0.82rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#f59e0b' }}>Audit note:</strong>{' '}
+          4 of 4 badges previously labeled &ldquo;Validated&rdquo; on this site have been
+          demoted to Reparametrization on closer review. These regime cards have not yet
+          been independently audited &mdash; treat all current badges as{' '}
+          <Link href="/research-philosophy#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>
+            Reparametrization-pending-audit
+          </Link>
+          {' '}until shown otherwise. See <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</Link>.
+        </div>
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -105,7 +124,7 @@ export default function CoreIdea() {
                   entanglement. The domain of quantum mechanics.
                 </p>
               </div>
-              <ValidationBadge status="validated" />
+              <ValidationBadge status="reparametrization" label="Reparametrization — regime definition" />
             </div>
           </div>
 
@@ -115,10 +134,14 @@ export default function CoreIdea() {
                 <h3>&#x03B3; &#x2248; 1: The Boundary</h3>
                 <p style={{ color: 'var(--color-text-secondary)' }}>
                   Phase transitions, chemistry, catalysis, biology. Where quantum meets classical.
-                  1,703 phenomena cluster here at 89% validation rate.
+                  1,703 phenomena cluster here at 89% boundary-consistency rate.
+                </p>
+                <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
+                  Pending null model: density-monotonic targets produce r &gt; 0.95 from trivial polynomial fits.
+                  Chemistry correlations may reflect monotonic data structure, not framework specificity.
                 </p>
               </div>
-              <ValidationBadge status="validated" label="89% Validated" />
+              <ValidationBadge status="reparametrization" label="Reparametrization — null model pending" />
             </div>
           </div>
 
@@ -131,9 +154,28 @@ export default function CoreIdea() {
                   The domain of Newton and general relativity.
                 </p>
               </div>
-              <ValidationBadge status="validated" />
+              <ValidationBadge status="reparametrization" label="Reparametrization — regime definition" />
             </div>
           </div>
+        </div>
+
+        <div style={{
+          background: 'rgba(167, 139, 250, 0.07)',
+          border: '1px solid rgba(167, 139, 250, 0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          marginTop: '1rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: 'var(--color-accent-violet)' }}>What C(&#x03C1;) actually is:</strong>{' '}
+          A logarithmic compander &mdash; in the family of &#x03BC;-law encoders, Hill functions,
+          and Naka&ndash;Rushton curves &mdash; that maps log-density onto a [0,1] saturation curve.
+          The &ldquo;Ising motivation&rdquo; is conceptual: C(&#x03C1;) is not a self-consistency equation
+          (&#x03C1; goes in, C comes out, no feedback). Critical exponents (&#x03B2;, &#x03BD;) are off by 2&#x00D7;
+          &mdash; the diagnostic result that rules out C(&#x03C1;) as a Landau-theory continuum
+          order parameter. See{' '}
+          <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</Link>.
         </div>
       </section>
 

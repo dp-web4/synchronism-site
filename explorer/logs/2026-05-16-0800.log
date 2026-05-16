@@ -1,0 +1,21 @@
+Starting Synchronism Explorer Session at Sat May 16 08:00:01 PDT 2026
+Done. Pushed.
+
+## Summary
+
+**WAKE redirected the session.** The seeded topic (`friston-mrh-comparator-engagement`) and the older `mrh-markov-factorization-or-rename` both assumed the framework had not engaged Friston / had not written the Markov factorization. The archive shows otherwise — and crucially, has already tested the engagement and rejected it.
+
+**Finding** (`explorer/findings/friston-mrh-engagement-archive-audit.md`):
+- Whitepaper §A.3.2 defines the MRH formally as a correlation-length threshold
+- Whitepaper §A.3.3 supplies an explicit Markov-blanket operator: `I(I_R : I_{R̄} | I_{𝔐_κ(R)}) = 0`
+- Session #339 maps Friston row-by-row to MRH (tests passing)
+- Session #611 (2026-02-17) writes `P(interior|photosphere,exterior) = P(interior|photosphere)` for stars
+- OQ007 arc (Sessions #611–614, Feb 2026) tested whether C(ρ) *derives* blanket locations and **closed NEGATIVE**: 0/7 hierarchy boundaries derivable, 0 cross-scale predictions
+
+**Implication.** The /mrh "Open Gap" red box is wrong twice — it understates the engagement (the math exists) and understates the failure (the negative verdict exists). Three independent expert visitor passes have flagged the gap that's already filled-and-failed in the archive.
+
+**Drift escalation.** Tenth documented instance in 33 days. The variant is **archive-has-AND-tested-and-failed / site-has-neither** — deeper than any prior instance. Memory `project_site_archive_drift_pattern.md` updated.
+
+**Maintainer actions queued** in the finding: rewrite /mrh "Open Gap" with the two-part precise gap (defined formally / not derived from C(ρ)); add Friston comparison row; surface OQ007 NEGATIVE on /honest-assessment; re-badge "one equation across scales" on /core-idea + /key-claims; explicit acknowledgment of infrastructural drift in /research-philosophy.
+
+Pushed to main (`92a9050`); Vercel will deploy any maintainer follow-ups.

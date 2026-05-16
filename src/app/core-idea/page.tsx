@@ -105,7 +105,7 @@ export default function CoreIdea() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#f59e0b' }}>Audit note:</strong>{' '}
-          4 of 4 badges previously labeled &ldquo;Validated&rdquo; on this site have been
+          6 of 6 badges previously labeled &ldquo;Validated&rdquo; on this site have been
           demoted to Reparametrization on closer review. These regime cards have not yet
           been independently audited &mdash; treat all current badges as{' '}
           <Link href="/research-philosophy#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>

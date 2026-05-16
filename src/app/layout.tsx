@@ -26,7 +26,7 @@ export default function RootLayout({
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
               title="Start here: the question behind the framework"
             >
-              Get Started
+              Why Synchronism?
             </Link>
             <Link
               href="/tier-1-existing"

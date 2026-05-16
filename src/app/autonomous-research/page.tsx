@@ -92,11 +92,12 @@ export default function AutonomousResearch() {
             </div>
             <div>
               <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Tracks Reparametrized</p>
-              <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: 'var(--color-text-primary)' }}>4 of 4</p>
+              <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: 'var(--color-text-primary)' }}>6 of 6</p>
             </div>
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '1rem' }}>
-            Session #615&ndash;616 audit: all 4 tracks are reparametrizations of known physics.
+            Audit track record: 6 of 6 &ldquo;Validated&rdquo; badges demoted to Reparametrization on expert review
+            (galaxy rotation, chemistry, Born rule, a₀, decoherence formula, Bell-freezing functional form).
             The 2,045 passing tests are mathematical consistency checks, not novel predictions.
           </p>
         </div>

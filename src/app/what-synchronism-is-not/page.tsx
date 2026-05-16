@@ -20,7 +20,7 @@ const notItems = [
   },
   {
     claim: 'Proven',
-    reality: '59% of predictions are untested. Two quantum results are consistent with published experiments (PRL 2024, arXiv 2508.07046), but those are post-dictions — the framework was derived after the experiments were published. The genuinely novel predictions (BAO modulation, wide binary density dependence, resynchronization vs isolation) have not been tested.',
+    reality: '59% of predictions are untested. Two quantum results are consistent with published experiments (PRL 2024, arXiv 2508.07046), but both are reparametrizations: the decoherence formula Γ = γ²(1−c) is the textbook correlated-dephasing variance (Palma–Suominen–Ekert 1996); the Bell-freezing functional form c(d) was imported from waveguide QED. Session #581 audit (2026-02-08): zero confirmed quantum predictions, 4 reparametrizations, 1 refutation. The genuinely novel predictions (wide binary density dependence, resynchronization vs isolation) have not been tested.',
   },
   {
     claim: 'Just notation',

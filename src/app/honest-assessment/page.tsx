@@ -55,9 +55,15 @@ export default function HonestAssessment() {
         </p>
       </section>
 
-      {/* What Works */}
+      {/* What Was Tested */}
       <section className="section">
-        <h2>What Works</h2>
+        <h2>What Was Tested</h2>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
+          Analyses run with results. A kill-criterion-triggered result appears here, not under &ldquo;What Works&rdquo;
+          &mdash; the heading reflects what was <em>attempted</em>, not what succeeded.
+          The landing ledger (&ldquo;0 confirmed, 1 refuted&rdquo;) applies the stricter standard:
+          prospective pre-registered tests that passed or failed their own kill criterion.
+        </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -233,6 +239,32 @@ export default function HonestAssessment() {
               (low-z bins systematically HIGH vs Synchronism: LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ).
               Adjudicated 2026-05-05; mechanism-class framing added 2026-05-09 after four-persona review.
               This was the framework&apos;s only live cosmological discriminator — no replacement substituted.
+            </p>
+          </div>
+
+          <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>Quantum Arc — Zero Confirmed Predictions (Session #581 Audit)</h3>
+              <ValidationBadge status="reparametrization" label="0 Confirmed, 1 Refuted — 2026-02-08" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              Session #581 (2026-02-08) conducted an 8-test quantum audit. Overall verdict:
+              <strong> zero confirmed predictions, 4 reparametrizations, 1 refutation, 1 post-hoc fit,
+              1 not-preferred.</strong>
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              <strong>Key refutation — &#x03B3;<sub>max</sub> = 3.17:</strong> The framework predicts a
+              maximum coherence parameter &#x03B3;<sub>max</sub> &#x2248; 3.17 (from SPARC calibration).
+              The deepest SPARC bin shows &#x27E8;&#x03B3;&#x27E9; = 10.82, with 579 individual SPARC
+              galaxies exceeding &#x03B3;<sub>max</sub>. This is the strongest direct refutation in the
+              framework&apos;s own internal audit. It was not previously visible on this page.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              The two &ldquo;literature-consistent&rdquo; quantum results (&#x0393; = &#x03B3;&sup2;(1&minus;c)
+              and Bell-freezing c(d)) are both reparametrizations: the decoherence formula is the
+              textbook correlated-dephasing variance (Palma&ndash;Suominen&ndash;Ekert 1996);
+              the Bell-freezing functional form was imported from waveguide QED (Session #235 admission).
+              Audit finding propagated to site 2026-05-16.
             </p>
           </div>
 

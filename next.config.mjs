@@ -225,6 +225,12 @@ const nextConfig = {
         destination: '/phase-boundary-visualizer',
         permanent: false,
       },
+      // /decisive-tests 404d by P4 researcher — referenced from test-catalog
+      {
+        source: '/decisive-tests',
+        destination: '/top-5-tests',
+        permanent: false,
+      },
     ];
   },
 };

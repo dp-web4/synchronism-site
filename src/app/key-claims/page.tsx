@@ -131,26 +131,35 @@ export default function KeyClaims() {
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', margin: '1rem 0' }}>
-            <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid #22c55e' }}>
+            <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid #f59e0b' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
                 <strong style={{ fontSize: '0.9rem' }}>Shared-environment decoherence protection</strong>
-                <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: '1rem', background: 'rgba(245, 158, 11, 0.15)', color: '#f59e0b' }}>Post-diction — consistent with PRL 2024</span>
+                <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: '1rem', background: 'rgba(148, 163, 184, 0.15)', color: '#94a3b8' }}>Reparametrization — Post-hoc Fit to PRL 2024</span>
               </div>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
-                &#x0393; = &#x03B3;&sup2;(1 &minus; c). Entangled pairs in the same noise bath
-                decohere slower. PRL 2024: 10&times; T&#x2082; improvement at c &asymp; 0.90. Formula match is
-                quantitative. (Post-diction: formula derived Jan 2026, experiment published 2024.)
+                &#x0393; = &#x03B3;&sup2;(1 &minus; c). Entangled pairs in the same noise bath decohere slower.
+                PRL 2024 (Salhov et al.): 10&times; T&#x2082; improvement at c &asymp; 0.90.
+                <strong>Audit verdict (Session #581, 2026-02-08):</strong> &#x0393; = &#x03B3;&sup2;(1 &minus; c) is the
+                special case (&#x03B3;<sub>A</sub> = &#x03B3;<sub>B</sub> = &#x03B3;) of the textbook
+                correlated-differential-dephasing variance &#x0393; = (&#x03B3;<sub>A</sub>&sup2; + &#x03B3;<sub>B</sub>&sup2;
+                &minus; 2c&#x03B3;<sub>A</sub>&#x03B3;<sub>B</sub>)/2 (Palma&ndash;Suominen&ndash;Ekert 1996,
+                DFS literature 1998&ndash;2000). The &ldquo;10&times; T&#x2082;&rdquo; match is mechanical
+                single-parameter inversion: c = 1 &minus; 1/R for any reported improvement factor R.
+                This formula uses &#x03B3; as a <em>noise coupling rate</em> [units 1/&radic;time] &mdash;
+                distinct from the regime parameter &#x03B3; = 2/&radic;N<sub>corr</sub>.
               </p>
             </div>
-            <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid #22c55e' }}>
+            <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid #f59e0b' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
                 <strong style={{ fontSize: '0.9rem' }}>Bell nonlocality freezing &amp; revival</strong>
-                <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: '1rem', background: 'rgba(245, 158, 11, 0.15)', color: '#f59e0b' }}>Post-diction — consistent with arXiv 2508.07046</span>
+                <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: '1rem', background: 'rgba(148, 163, 184, 0.15)', color: '#94a3b8' }}>Reparametrization — c(d) imported from waveguide QED</span>
               </div>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
-                |S(t)| = S&#x2098;&#x2090;&#x2093; &times; e^(&minus;&#x0393;t), with c(d) = cos&sup2;(&pi;d/&lambda;&#x2080;).
-                Bell violations decay but revive at geometry-determined distance nodes.
-                Literature confirmation from multiple groups.
+                |S(t)| = S<sub>max</sub> &times; e<sup>(&minus;&#x0393;t)</sup>, with c(d) = cos&sup2;(&pi;d/&lambda;&#x2080;).
+                Bell violations decay but revive at geometry-determined distance nodes (arXiv 2508.07046).
+                <strong>Audit verdict:</strong> Session #235 explicitly notes c(d) = cos&sup2;(&pi;d/&lambda;&#x2080;)
+                &ldquo;from the literature on waveguide QED.&rdquo; The functional form is imported, not
+                derived from Synchronism&apos;s MRH machinery. Literature consistency is expected by construction.
               </p>
             </div>
             <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid #f59e0b' }}>
@@ -174,10 +183,14 @@ export default function KeyClaims() {
           }}>
             <h3 style={{ fontSize: '0.9rem', color: '#f59e0b', marginBottom: '0.25rem', marginTop: 0 }}>Honest caveat</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
-              The two literature-consistent results are post-dictions (derived after the experiments were
-              published). The CRT temporal-scanning model is not yet mathematically formalized to
-              the level where it reproduces all of standard QM&apos;s quantitative predictions.
-              The Copernican analogy is suggestive but analogies aren&apos;t proofs.
+              Both &ldquo;consistent with literature&rdquo; quantum results are post-hoc reparametrizations:
+              &#x0393; = &#x03B3;&sup2;(1 &minus; c) is a textbook open-quantum-systems result;
+              c(d) = cos&sup2;(&pi;d/&lambda;&#x2080;) is imported from waveguide QED.
+              Session #581 (2026-02-08) audited 8 quantum claims and concluded: &ldquo;zero confirmed
+              predictions, 4 reparametrizations, 1 refutation (&#x03B3;<sub>max</sub> = 3.17 violated
+              by 579 SPARC points with &#x27E8;&#x03B3;&#x27E9; = 10.82), 1 post-hoc fit.&rdquo;
+              The CRT temporal-scanning model is not mathematically formalized to the level where
+              it reproduces all of standard QM&apos;s quantitative predictions.
               What&apos;s needed: a prediction that differs from standard QM and hasn&apos;t been measured yet.
             </p>
           </div>
@@ -316,7 +329,7 @@ export default function KeyClaims() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.15rem' }}>
               <span style={{ color: 'var(--color-text-muted)', marginRight: '0.5rem' }}>3.</span>
-              Dark Matter as Incomplete Decoherence
+              Dark Matter Is Incomplete Decoherence
             </h2>
             <span style={{
               fontSize: '0.75rem',

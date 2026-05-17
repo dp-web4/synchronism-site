@@ -44,11 +44,11 @@ export default function GammaCalculator() {
           </p>
           <ol style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', paddingLeft: '1.25rem', margin: 0, lineHeight: 1.7 }}>
             <li>
-              <strong>&#x03B3; = 2/&#x221A;N<sub>corr</sub> is motivated, not rigorously derived.</strong> The 1/&#x221A;N scaling is a central-limit-theorem analogy; the factor of 2 is physically motivated but not derived from first principles.
+              <strong>&#x03B3; = 2/&#x221A;N<sub>corr</sub> is motivated, not rigorously derived.</strong> The 1/&#x221A;N scaling is a dimensional ansatz inspired by fluctuation theory — <em>not</em> a consequence of the CLT (which governs sample-mean fluctuation, not transition sharpness). The factor of 2 is not derived from first principles.
               {' '}<a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)', fontSize: '0.85rem' }}>See Parameter Derivations for what is and isn&apos;t derived &rarr;</a>
             </li>
             <li>
-              <strong>The preset N<sub>corr</sub> values are approximate estimates, not measured physical pair counts.</strong> There is currently no derivation protocol that takes a system Hamiltonian and outputs N<sub>corr</sub> without first fitting γ to observed behavior. Until such a protocol exists, every γ &ldquo;prediction&rdquo; is a consistency check on an inferred parameter, not a first-principles calculation.
+              <strong>Preset N<sub>corr</sub> values are back-fits, not measurements.</strong> For BCS superconductors, the physical Cooper-pair coherence volume contains 10<sup>6</sup>–10<sup>9</sup> pairs, yet the preset uses N<sub>corr</sub> = 10<sup>4</sup> — fitted to produce a plausible γ, not derived from the Hamiltonian. No protocol exists for converting a system&apos;s Hamiltonian into N<sub>corr</sub> without first fitting γ to observed behavior. Every γ &ldquo;prediction&rdquo; is therefore a consistency check on a back-fitted parameter, not a first-principles result.
             </li>
           </ol>
         </div>

@@ -180,41 +180,50 @@ export default function Home() {
             </blockquote>
           </section>
 
-          {/* Quick Stats */}
-          <section className="grid-3" style={{ marginBottom: '1rem' }}>
-            <div className="card" style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>3,308</div>
-              <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Research sessions</div>
+          {/* Scientific Outcomes — lead with this */}
+          <section style={{ marginBottom: '1.5rem' }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
+              Scientific Outcomes
             </div>
-            <div className="card" style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>1,703</div>
-              <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Chemical phenomena tested</div>
-            </div>
-            <div className="card" style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>14,760</div>
-              <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Galaxies analyzed</div>
-              <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>175 SPARC + 14,585 ALFALFA-SDSS</div>
-            </div>
-          </section>
-
-          {/* Prediction scorecard — paired with stats above */}
-          <section style={{ marginBottom: '3rem' }}>
             <div style={{
               background: 'rgba(239,68,68,0.05)',
               border: '1px solid rgba(239,68,68,0.2)',
               borderRadius: '0.375rem',
-              padding: '0.6rem 1rem',
-              fontSize: '0.82rem',
-              color: 'var(--color-text-muted)',
+              padding: '0.75rem 1rem',
+              fontSize: '0.85rem',
+              color: 'var(--color-text-secondary)',
               display: 'flex',
               gap: '1.5rem',
               flexWrap: 'wrap',
+              alignItems: 'center',
             }}>
               <span>Predictions confirmed by independent data: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Refuted by external data: <strong style={{ color: '#ef4444' }}>1</strong> (DESI fσ₈)</span>
+              <span>Refuted by external data: <strong style={{ color: '#ef4444' }}>1</strong> (DESI fσ₈ — sign reversed)</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO modulation)</span>
-              <span>Reparametrizations: <strong style={{ color: 'var(--color-text-secondary)' }}>3+</strong></span>
-              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto' }}>Full ledger &rarr;</Link>
+              <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong> (all demoted from &ldquo;Validated&rdquo;)</span>
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>Full ledger &rarr;</Link>
+            </div>
+          </section>
+
+          {/* Research Activity — clearly labeled, secondary */}
+          <section style={{ marginBottom: '3rem' }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
+              Research Activity
+            </div>
+            <div className="grid-3">
+              <div className="card" style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>3,308</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>A2ACW research sessions</div>
+              </div>
+              <div className="card" style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>1,703</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Chemical phenomena analyzed</div>
+              </div>
+              <div className="card" style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>14,760</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Galaxies analyzed</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>175 SPARC + 14,585 ALFALFA-SDSS</div>
+              </div>
             </div>
           </section>
 
@@ -254,10 +263,11 @@ export default function Home() {
               <Link href="/hard-problem" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Consciousness</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  Hard problem dissolved, consciousness threshold at C &#x2248; 0.50,
-                  34 falsifiable predictions. Qualia as coherence resonance patterns.
+                  Hard problem reframed, consciousness threshold conjecture at C &#x2248; 0.50.
+                  D, S, and f in C = f(&#x03B3;, D, S) are not yet operationally defined &mdash;
+                  this is a typed signature, not a tested equation.
                 </p>
-                <span className="badge badge-untested">34 Predictions</span>
+                <span className="badge badge-speculative">Threshold Conjecture — Functional Form Open</span>
               </Link>
             </div>
           </section>

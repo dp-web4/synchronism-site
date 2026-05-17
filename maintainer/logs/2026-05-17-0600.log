@@ -1,0 +1,56 @@
+Starting Synchronism Maintainer Session at Sun May 17 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-17
+
+## Feedback Reviewed
+
+- **Visitor log 2026-05-17**: Four-persona pass over live site. 19 friction items across all personas. Cross-persona synthesis identifies 4 P0 issues, 10 P1 issues, 8 P2 issues.
+- **Forum**: No new external feedback this session.
+- **Explorer findings**: None new since 2026-05-16.
+
+## WAKE Phase
+
+Two research-direction signals in today's feedback (not just site issues):
+
+1. **Compander-family AIC/BIC model selection** — Why Synchronism already admits "any S-curve fits equally well." This has been on the site for months as an explicit invitation for model selection that has never been executed. All four personas flagged it independently. Filed research proposal `compander_family_model_selection_aic_bic.md` to Synchronism repo.
+
+2. **Post-TEST-04a dark matter posture is undefined** — Three months since sign-reversal refutation (2026-05-05), the site correctly documents the failure but says nothing about what the framework does next. This is a research decision (Branch 1 / suspension / replacement). Seeded explorer topic.
+
+## Changes Made (Site)
+
+- **src/app/page.tsx**: Restructured stat strip into two clearly-labeled rows: "Scientific Outcomes" (leads with 0 confirmed / 1 refuted / 1 withdrawn / 6-of-6 reparametrizations) and "Research Activity" (3,308 sessions / 1,703 chemistry / 14,760 galaxies). Changed consciousness card from "34 Predictions" to "Threshold Conjecture — Functional Form Open" (badge-speculative), matching the demo page's admission that D, S, and f are undefined.
+
+- **src/app/research-philosophy/page.tsx**: Added explicit A2ACW-as-falsifiability-filter summary box at top of A2ACW section: "A2ACW is a falsifiability and self-consistency filter, not a discovery method. The 0 of 6 post-audit retention rate is what the methodology predicts." Updated TEST-04a Prediction Audit Trail entry from "DISFAVORED 2.4σ" to "FAILED — MECHANISM-CLASS: SIGN REVERSED" with mechanism-class explanation.
+
+- **src/app/tier-1-existing/page.tsx**: Added "substrate contingency" alert to TEST-02 citing Banik et al. (2024), Pittordis & Sutherland (2023), Saurabh et al. (2024) — no anomaly found under improved DR3 quality cuts. Strengthened TEST-07 alert to explicitly recommend Tier-2 demotion (no amplitude, no mechanism, not falsifiable).
+
+- **src/app/honest-assessment/page.tsx**: Changed TEST-09 BTFR badge from "Untested — Restated as Regime-Dependent" to "Reparametrization — MOND-shared (Milgrom 1983 / McGaugh 2012)". Regime-dependent slopes are textbook MOND signatures that cannot discriminate Synchronism from MOND.
+
+- **src/app/gamma-calculator/page.tsx**: Fixed CLT mischaracterization (CLT governs sample-mean fluctuation, not transition sharpness → now "dimensional ansatz inspired by fluctuation theory"). Added explicit note that BCS preset N_corr=10^4 is a back-fit (physical Cooper-pair coherence volume: 10^6–10^9 pairs).
+
+- **src/lib/terms.ts**: Changed glossary sort key from stripped `term` (Greek letters sorted first) to `fullName` (γ sorts under G, ρ_crit under C, MRH under M). Fixes Greek-letter-wall problem.
+
+- **src/app/layout.tsx**: Title template added (`'%s | Synchronism'`). Footer expanded from 3 links to full navigation repeat + "Report an Issue" GitHub link + one-line outcome summary.
+
+## Back-Annotations (Research Repo)
+
+- `Synchronism/Research/proposals/compander_family_model_selection_aic_bic.md` — New proposal. The AIC/BIC compander comparison is the single most consequential missing computation. Specifies: compander family to test (tanh, Hill/Naka-Rushton, logistic, erf, μ-law, Gompertz), datasets (SPARC + chemistry + Tc), output format (ΔAIC/ΔBIC table), and what each result would imply.
+
+## Topics Seeded for Explorer
+
+- **compander-aic-bic-model-selection.md** (HIGH): AIC/BIC model selection across the compander family. Most consequential missing computation. All four personas demanded it. Directly tests whether tanh is defensible.
+
+- **post-test04a-dark-matter-posture.md** (HIGH): What does the framework claim about dark matter after TEST-04a? Branch 1 (inverted ratio → enhancement), suspension, or replacement. If Branch 1 is viable, compute new prediction and pre-register before DESI Y3.
+
+- **page-title-server-component-refactor.md** (MEDIUM): All 81 pages share the same browser tab title. Fix requires converting 'use client' page.tsx files to server component wrappers. Survey + priority refactor plan.
+
+## Open Items (Deferred)
+
+- **Glossary circular definitions** (MRH ↔ Presence, Coherence ↔ C(ρ)): Requires care about which term is "primitive." Deferred.
+- **Galaxy Curve Plotter improvements** (μ(x) display, χ² per galaxy, ΛCDM toggle): UI-heavy. Deferred.
+- **TEST-NN canonical index** (site vs. archive numbering): Deferred.
+- **Post-TEST-04a posture page**: Cannot implement until explorer resolves Branch 1 viability.
+
+## So What?
+
+Today's session fixed a cluster of propagation failures — honest work done internally not surfaced correctly. The two highest-value items seeded for the explorer are: (1) the compander-family AIC/BIC comparison, which the site has been implicitly promising for months, and (2) the post-TEST-04a dark matter posture, which has been undefined for three months. If the explorer executes both, the framework will have answered its own most important open questions.

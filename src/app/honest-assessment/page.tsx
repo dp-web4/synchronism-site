@@ -270,17 +270,19 @@ export default function HonestAssessment() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>BTFR Universal-n Claim Withdrawn (TEST-09)</h3>
-              <ValidationBadge status="untested" label="Restated as Regime-Dependent" />
+              <h3>BTFR Slope (TEST-09) — MOND-shared, Not Discriminating</h3>
+              <ValidationBadge status="reparametrization" label="MOND-shared — Milgrom 1983 / McGaugh 2012" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              The site previously stated a universal BTFR exponent n&nbsp;&#x2248;&nbsp;2.2. This number has
-              no archive source — it was a site&rarr;archive transcription error (explorer finding, 2026-04-23).
-              The archive (Session 193, Paper Summary) actually predicts <em>regime-dependent</em> slopes:
-              n&nbsp;&#x2192;&nbsp;4 in the deep-MOND limit, n&nbsp;&#x2192;&nbsp;2 in the near-Newtonian limit, n&nbsp;&#x2248;&nbsp;2.75
-              for transition-dominated full-sample fits. Lelli 2019&apos;s n&nbsp;=&nbsp;3.85&nbsp;&#x00B1;&nbsp;0.09 is
-              consistent with the archive&apos;s per-regime prediction for a SPARC-like deep-MOND-dominated
-              sample. TEST-09 has been restated in the Tier-1 catalog as a regime-dependent slope test.
+              The site previously stated a universal BTFR exponent n&nbsp;&#x2248;&nbsp;2.2 — a transcription error (no archive source). The archive (Session 193) correctly predicts
+              <em> regime-dependent</em> slopes: n&nbsp;&#x2192;&nbsp;4 deep-MOND, n&nbsp;&#x2192;&nbsp;2 near-Newtonian,
+              n&nbsp;&#x2248;&nbsp;2.75 full-sample. Lelli 2019&apos;s n&nbsp;=&nbsp;3.85 is consistent with a SPARC deep-MOND sample.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              <strong>Critical issue:</strong> The regime-dependent slope (n&nbsp;&#x2192;&nbsp;4 deep-MOND, n&nbsp;&#x2192;&nbsp;2 Newtonian)
+              is a textbook MOND signature (Milgrom 1983, McGaugh 2012) that follows directly from the MOND interpolating function.
+              A positive result confirms both Synchronism and MOND — it cannot discriminate. Reclassified from
+              &ldquo;Restated as Regime-Dependent&rdquo; to Reparametrization.
             </p>
           </div>
         </div>

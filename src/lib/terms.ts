@@ -327,8 +327,6 @@ export function getTerm(key: string): TermDefinition | undefined {
 
 export function getAllTerms(): TermDefinition[] {
   return Object.values(terms).sort((a, b) =>
-    a.term.replace(/[^a-zA-Z0-9]/g, '').toLowerCase().localeCompare(
-      b.term.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()
-    )
+    a.fullName.toLowerCase().localeCompare(b.fullName.toLowerCase())
   );
 }

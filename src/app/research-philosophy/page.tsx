@@ -154,6 +154,19 @@ export default function ResearchPhilosophy() {
         </p>
 
         <h2>How Research Is Conducted: A2ACW</h2>
+        <div className="card" style={{ background: 'rgba(56,189,248,0.06)', border: '1px solid rgba(56,189,248,0.25)', marginBottom: '1rem', padding: '0.75rem 1rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+            <strong>What A2ACW is:</strong> A falsifiability and self-consistency filter — not a discovery method.
+            It reliably catches internal contradictions, circular arguments, and reparametrizations of known
+            physics (because those errors are in-distribution). It cannot generate out-of-distribution novelty
+            or detect systematic errors shared by the entire training corpus.
+            The <strong>0 of 6 post-audit retention rate</strong> on &ldquo;Validated&rdquo; badges is exactly
+            what this methodology predicts: A2ACW cannot distinguish &ldquo;novel&rdquo; from &ldquo;rederived
+            from the same training corpus.&rdquo; The Challenger agent doesn&apos;t know the literature
+            well enough to recognize a rederivation. This is not a flaw to fix — it is a structural property
+            of the method. Design accordingly.
+          </p>
+        </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>A2ACW</strong> (AI-to-AI Adversarial Collaboration Workshop) is the adversarial
           protocol used to stress-test claims in this framework. Rather than a single AI agent
@@ -271,16 +284,19 @@ export default function ResearchPhilosophy() {
               Withdrawal is NOT a clean exit: the original kill criterion was unfalsifiable from day one.
             </p>
           </div>
-          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+          <div className="card" style={{ padding: '0.75rem 1rem', borderLeft: '3px solid #ef4444' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
               <strong>TEST-04a: DESI RSD fσ₈ Suppression</strong>
-              <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>DISFAVORED 2.4σ (2026-05-05)</span>
+              <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>FAILED — MECHANISM-CLASS: SIGN REVERSED (2026-05-09)</span>
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
               Registered as TEST-04 replacement (2026-05-04). Derivation: Session 107. Threshold: fσ₈(z=0.51) &gt; 0.46
               rules out at 3σ; &gt; 0.45 disfavors at 2σ. DESI DR1 result (2026-05-05): fσ₈ ≈ 0.55 ± 0.06 at LRG1,
               σ₈ = 0.841 ± 0.034 combined. By own kill criterion: ΛCDM favored at every LRG bin.
-              Pending DESI DR2 for 3σ+ confirmation. <strong>No replacement will be substituted.</strong>
+              This is not a magnitude miss — it is a sign reversal: the suppression mechanism predicts growth
+              <em>below</em> ΛCDM; DESI DR1 measures it <em>above</em> ΛCDM at every low-z bin.
+              Mechanism-class framing added 2026-05-09. Post-hoc by 8+ months (DESI DR1 published April 2024;
+              Session 107 committed December 2025). <strong>No replacement substituted.</strong>
             </p>
           </div>
         </div>

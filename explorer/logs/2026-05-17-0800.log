@@ -1,0 +1,20 @@
+Starting Synchronism Explorer Session at Sun May 17 08:00:01 PDT 2026
+Session done. Pushed and live.
+
+## Summary
+
+**Topic executed:** `compander-aic-bic-model-selection` (the highest-priority topic seeded by today's maintainer, demanded by all four visitor personas).
+
+**Three findings, ranked by maintainer-actionability:**
+
+1. **Topic not executable on real physics data as stated.** The framework's local SPARC `.dat` cache is synthetic-by-header; chemistry "catalog" is 5,037 `np.linspace`-based Python scripts that generate analytic curves on the fly; Tc not curated. The "2-4 hour Python session" estimate is wrong because the data doesn't exist in fittable form inside the framework's repo.
+
+2. **The site already has the result — and contradicts it elsewhere.** `/coupling-experiment` published Hill > tanh by ΔAIC=4 (aggregated n=45). But on the full per-repetition data (n=900, not previously published), Hill beats tanh by **ΔAIC=57** — a Bayes factor ~12 orders of magnitude larger. And three other pages (Why Synchronism, equation-walkthrough, coherence-function) still claim "any S-curve fits equally well."
+
+3. **Extended fit (4→8 compander members)** sharpens the verdict. At n=45: best class is {Hill, erf-log} (ΔAIC<2); tanh-log loses to erf-log by ΔAIC=2.46 — refutes the 2026-05-12 "tanh-log and erf-log are interchangeable" finding, which was a synthetic-data artifact.
+
+**Files committed and pushed:**
+- `explorer/findings/compander-aic-bic-real-data-attempt.md`
+- `explorer/logs/2026-05-17.md`
+- `explorer/work/compander_aic_extended.py` (reproducible 30-start L-BFGS-B fits)
+- Topic archived to `topics/done/`

@@ -1,1 +1,14 @@
 Starting Synchronism Explorer Session at Mon May 18 08:00:01 PDT 2026
+All tasks are completed. Session done.
+
+## Session Summary
+
+**Topic executed**: `a2acw-temporal-asymmetry-experiment` (seeded today by maintainer in response to Pass 4 researcher's Q5).
+
+**Result**: The temporal-asymmetry remedy catches **0 of 6** documented Validated→Reparametrization demotions for any plausible Agent A cutoff N ≥ 2000. All load-bearing prior art predates the deployable window (median year ≈ 1996; Gleason 1957, Milgrom 1983, PSE 1996, density-monotonicity textbook stat, waveguide QED 2010s). The candidate fix is structurally incapable of catching the failure mode the framework has documented.
+
+**Reframe**: Closed-loop is **vocabulary lock-in**, not training-distribution boundary. Both agents had the prior art and didn't surface it — failure is salience under framework-native vocabulary, where CHALLENGER attacks intra-framework consistency rather than cross-vocabulary priority.
+
+**Successor experiment**: vocabulary asymmetry (CHALLENGER-TRANSLATED prompt forbidden framework-native vocabulary; must translate before evaluating) + new TPR (Translation Priority Rate) protocol metric. Single-session tractable, retrospectively replayable on the 6 demoted claims.
+
+**Deliverables**: finding `findings/a2acw-temporal-asymmetry-counterfactual-audit.md` with concrete site-copy updates for `/research-philosophy` and a new `/handling-failure` row; session log; topic archived; memory updated; committed and pushed.

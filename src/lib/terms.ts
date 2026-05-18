@@ -313,6 +313,13 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'BIC = k\u00b7ln(n) \u2212 2\u00b7ln(L), where k is the number of free parameters, n is the number of data points, and L is the maximum likelihood. The \u0394BIC between two models quantifies the evidence in favor of the model with lower BIC. By convention: |\u0394BIC| < 2 = negligible evidence, 2\u20136 = positive evidence, 6\u201310 = strong evidence, >10 = very strong evidence. In the Synchronism context, the unanswered question is: does C(\u03c1) achieve a lower BIC than (a) a polynomial of similar order, (b) the MOND RAR interpolating function, or (c) other sigmoid companders (logistic, Hill, erf)? This comparison has not yet been run.',
     learnMore: '/honest-assessment',
   },
+  'born-rule': {
+    term: 'Born Rule',
+    fullName: 'Born Rule (Quantum Probability)',
+    brief: 'The quantum mechanics rule that measurement probabilities equal |\u03c8|\u00b2 \u2014 the squared amplitude of the wave function.',
+    explanation: 'Standard quantum mechanics: if a system is in state \u03c8 = \u03b1|0\u27e9 + \u03b2|1\u27e9, the probability of measuring outcome "0" is |\u03b1|\u00b2 and "1" is |\u03b2|\u00b2. The Born rule is an axiom of standard QM \u2014 it cannot be derived from the Schr\u00f6dinger equation alone without additional assumptions. Synchronism\'s /born-rule page attempts to derive it from coherence conservation, but the page\'s own verdict: "no worse than Zurek\'s envariance, no better" \u2014 the derivation is a Reparametrization. No experimental deviation from |\u03c8|\u00b2 is predicted.',
+    learnMore: '/born-rule',
+  },
   'sigma-stat': {
     term: '\u03c3 (statistical)',
     fullName: 'Standard Deviation / Statistical Significance',

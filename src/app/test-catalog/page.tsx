@@ -53,6 +53,25 @@ export default function TestCatalog() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{
+          background: 'rgba(255,255,255,0.03)',
+          border: '1px solid var(--color-dark-border)',
+          borderRadius: '0.375rem',
+          padding: '0.7rem 1rem',
+          marginBottom: '1.25rem',
+          fontSize: '0.8rem',
+          color: 'var(--color-text-muted)',
+        }}>
+          <strong style={{ color: 'var(--color-text-secondary)' }}>Validation Badge Guide:</strong>{' '}
+          <span style={{ color: '#22c55e' }}>■ Validated</span> — externally confirmed &nbsp;|&nbsp;
+          <span style={{ color: '#f59e0b' }}>■ Reparametrization</span> — known result in new notation &nbsp;|&nbsp;
+          <span style={{ color: '#f59e0b' }}>■ Untested</span> — no data yet &nbsp;|&nbsp;
+          <span style={{ color: '#94a3b8' }}>■ Speculative</span> — reasoning gap &nbsp;|&nbsp;
+          <span style={{ color: '#ef4444' }}>■ Failed</span> — falsified by data.{' '}
+          <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-text-muted)' }}>
+            Full definitions →
+          </Link>
+        </div>
+        <div style={{
           background: 'rgba(239, 68, 68, 0.07)',
           border: '1px solid rgba(239, 68, 68, 0.3)',
           borderRadius: '0.375rem',

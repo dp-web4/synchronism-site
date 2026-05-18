@@ -231,6 +231,12 @@ const nextConfig = {
         destination: '/top-5-tests',
         permanent: false,
       },
+      // /the-core-idea — slug guessed by beginner visitors (title includes "The")
+      {
+        source: '/the-core-idea',
+        destination: '/core-idea',
+        permanent: false,
+      },
     ];
   },
 };

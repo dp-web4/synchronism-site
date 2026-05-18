@@ -380,6 +380,22 @@ export default function HonestAssessment() {
               Synchronism predicts density-dependent modulation of baryon acoustic oscillation peak positions. Testable with existing survey data.
             </p>
           </div>
+
+          <div className="card" style={{ borderLeft: '3px solid #ef4444' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>H₀ Tension — Not Addressed</h3>
+              <ValidationBadge status="speculative" label="No prediction" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              The Hubble tension — a ~5σ discrepancy between early-universe (CMB) and late-universe
+              (distance-ladder) measurements of H₀ — is the dominant open problem in cosmology (2018–2026).
+              Synchronism makes no statement on H₀. If C(ρ) couples to expansion-rate physics via
+              ρ_crit ↔ Λ, there should be a prediction about how coherence modifies recombination
+              (early-time fix) or late-time acceleration (late-time fix). Neither has been worked out.
+              A framework claiming cosmological scope that does not address H₀ tension is leaving
+              the most-cited empirical opening in cosmology off the table.
+            </p>
+          </div>
         </div>
       </section>
 

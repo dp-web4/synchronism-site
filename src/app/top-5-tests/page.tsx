@@ -83,6 +83,26 @@ export default function Top5Tests() {
         </p>
 
         <div style={{
+          background: 'rgba(245,158,11,0.07)',
+          border: '1px solid rgba(245,158,11,0.25)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          marginBottom: '1.25rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#f59e0b' }}>Referee note:</strong>{' '}
+          For a test to decisively discriminate, it needs both (a) a derived quantitative prediction
+          from the framework&apos;s parameters and (b) a prediction that differs numerically from MOND+EFE.
+          Of the tests listed below, <strong>none currently satisfies both conditions</strong>:
+          TEST-02 has no computed ξ(ρ) functional form, so MOND+EFE degeneracy is unresolved;
+          TEST-11 (consciousness) has undefined D and S parameters;
+          TEST-07 has no derived amplitude;
+          TEST-15 is monitoring-only.
+          These are aspirations with the highest discrimination potential &mdash; not confirmed discriminators.
+        </div>
+
+        <div style={{
           background: 'rgba(239,68,68,0.07)',
           border: '1px solid rgba(239,68,68,0.25)',
           borderRadius: '0.375rem',

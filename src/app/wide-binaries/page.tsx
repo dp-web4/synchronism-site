@@ -89,26 +89,49 @@ export default function WideBinaries() {
 
         <h2>Current Observational Status</h2>
         <p>
-          Several groups have analyzed Gaia wide binaries with conflicting results. Chae (2023)
-          reported a clear anomaly consistent with MOND. Banik et al. (2024) found no significant
-          anomaly. The disagreement centers on sample selection, contamination from unresolved
-          triples, and statistical methodology.
+          Several groups have analyzed Gaia wide binaries with conflicting results. Chae (2023, 2024)
+          reported a clear anomaly consistent with MOND. Banik et al. (2024) and Pittordis &amp; Sutherland
+          (2023) found no significant anomaly under improved sample selection and contamination treatment.
+          Saurabh &amp; Desmond (2024) found no anomaly in high-quality Gaia DR3 cuts.
+          The Hernandez Stellar Cinematics group (Hernandez 2023) reports anomalies in projected-velocity
+          statistics. The disagreement centers on sample selection, contamination from unresolved
+          triples, projected-vs-3D-separation methodology, and statistical cuts.
         </p>
+
+        <div style={{
+          background: 'rgba(245,158,11,0.07)',
+          border: '1px solid rgba(245,158,11,0.25)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          margin: '1rem 0 1.25rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#f59e0b' }}>MOND+EFE caveat (Bekenstein &amp; Milgrom 1984):</strong>{' '}
+          MOND&apos;s External Field Effect (EFE) also predicts environment-dependent orbital dynamics:
+          a strong external gravitational field suppresses the MOND anomaly. Standard MOND+EFE therefore
+          predicts a weaker anomaly in dense environments — the same directional prediction as Synchronism.
+          For TEST-02 to genuinely discriminate between frameworks, the predicted functional form ξ(ρ_env)
+          from Synchronism must differ <em>quantitatively</em> from the MOND+EFE prediction. This comparison
+          has not yet been computed. Until it is, TEST-02 is <strong>possibly MOND+EFE degenerate</strong>.
+        </div>
+
         <p>
-          Synchronism&apos;s environment-dependent prediction offers a potential resolution: both
-          groups may be correct for their respective samples if the anomaly depends on local
-          density. This can be tested by binning existing catalogs by Galactic latitude, local
-          stellar density, and distance from the Galactic plane.
+          Synchronism&apos;s environment-dependent prediction offers a potential resolution to the
+          Chae-vs-Banik dispute: both groups may be correct for their respective samples if the anomaly
+          depends on local density. This can be tested by binning existing catalogs by Galactic latitude,
+          local stellar density, and distance from the Galactic plane — but only if the functional form
+          ξ(ρ) is derived from the framework&apos;s parameters before the test, not fitted afterward.
         </p>
 
         <h2>Why This Test Is Decisive</h2>
         <div className="grid-2" style={{ margin: '1.5rem 0' }}>
           <div className="card">
-            <h3 style={{ color: '#22c55e' }}>If confirmed</h3>
+            <h3 style={{ color: '#22c55e' }}>If confirmed (and MOND+EFE excluded)</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              A density-dependent wide binary anomaly would strongly support the coherence
-              framework. Neither standard MOND nor CDM predicts this pattern. It would be a
-              genuine new prediction confirmed by data.
+              A density-dependent wide binary anomaly with functional form that differs from
+              MOND+EFE would be a genuine discriminating prediction confirmed by data.
+              Pre-condition: the ξ(ρ_env) functional form must be derived before the analysis.
             </p>
           </div>
           <div className="card">

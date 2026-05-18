@@ -1,0 +1,59 @@
+Starting Synchronism Maintainer Session at Mon May 18 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-18
+
+## Feedback Reviewed
+- **Visitor log 2026-05-18**: 4-persona pass. Key signals:
+  - Pass 1 (casual): 404 on Beginner path step 3 (`/the-core-idea`), MRH jargon, "why should I care?" identity gap
+  - Pass 2 (tech writer): Born rule missing from glossary (HIGH), badges missing from /test-catalog (HIGH), no breadcrumbs, γ Calculator → Phase Boundary cross-link missing
+  - Pass 3 (grad student): factor-of-2 in γ=2/√Ncorr undetermined, ρ_crit naming vs phase-transition framing, /mrh has no formal Markov condition
+  - Pass 4 (researcher): zero tests with both derivation AND MOND-discriminator, H₀ tension not addressed, /wide-binaries missing EFE literature (MOND+EFE predicts environment dependence too — factual error on page), PBR/FR/weak-measurement gap, A2ACW temporal-asymmetry redesign proposed as structural fix
+
+## WAKE Phase — Research Direction Signal
+**A2ACW temporal asymmetry** (Pass 4 researcher, concrete proposal): If A2ACW's closed-loop failure is from shared training distribution, using agents with *different training cutoffs* (year N vs year N+5) could break the loop for claims in the N-to-N+5 window. Tractable retrospective audit: for the 6 demoted "Validated" badges, when did the prior art appear? Would Agent B (N+5) have caught it? Filed as research proposal to Synchronism repo.
+
+## Changes Made (Site)
+
+### next.config.mjs
+- Added `/the-core-idea` → `/core-idea` redirect (safety net for slug mismatch Pass 1 reported)
+
+### src/lib/terms.ts
+- Added **Born rule** glossary entry (HIGH per Pass 2): |ψ|² standard definition, site verdict (Reparametrization), link to /born-rule page. Was on landing-page key-claims block but absent from 52-entry glossary.
+
+### src/app/test-catalog/page.tsx
+- Added **validation badge legend** at top: ■ Validated · ■ Reparametrization · ■ Untested · ■ Speculative · ■ Failed with colors and link to /glossary. Pass 2 HIGH: catalog used validation vocabulary without a legend.
+
+### src/app/handling-failure/page.tsx
+- Added **inline links to badge legend terms** in failure taxonomy: "reparametrization", "kill criterion", "post-diction" now link to glossary anchors; "full badge taxonomy" links to /research-philosophy. Pass 2 MEDIUM.
+
+### src/app/top-5-tests/page.tsx
+- Added **referee note** callout box: none of the listed tests currently satisfies both (a) derived quantitative prediction and (b) differs from MOND+EFE. TEST-02 has no ξ(ρ), TEST-11 has undefined D and S, TEST-07 has no amplitude, TEST-15 is monitoring-only. Pass 4 emphatic: "zero-card hand from a journal-referee viewpoint."
+
+### src/app/gamma-calculator/page.tsx
+- Added Link import and made "Phase Boundary Visualizer" reference a clickable hyperlink. Pass 2 LOW.
+
+### src/app/wide-binaries/page.tsx
+- Expanded observational status to cite Pittordis & Sutherland (2023), Saurabh & Desmond (2024), Hernandez (2023) alongside existing Chae/Banik.
+- Added **MOND+EFE caveat box**: MOND+EFE (Bekenstein-Milgrom 1984) also predicts environment-dependent dynamics, so TEST-02 is currently "possibly MOND+EFE degenerate." The derived ξ(ρ) functional form must be computed to discriminate.
+- **Corrected factual error**: removed "Neither standard MOND nor CDM predicts this pattern" — MOND+EFE does predict environment dependence. Pass 4 HIGH.
+
+### src/app/honest-assessment/page.tsx
+- Added **H₀ tension card** in "What's Untested": framework makes no prediction on H₀; describes early-time vs late-time fix distinction; names it as an omission for a framework claiming cosmological scope. Pass 4 HIGH — silence is worse than any answer.
+
+## Back-Annotations (Research Repo)
+- `Research/proposals/a2acw_temporal_asymmetry_redesign.md` — WAKE-phase proposal: temporal asymmetry as structural fix for A2ACW's closed-loop failure mode. Year-N vs year-N+5 training cutoffs. Retrospective audit method + falsifiable prediction about demotion-rate improvement.
+
+## Topics Seeded for Explorer
+- `a2acw-temporal-asymmetry-experiment.md` — (HIGH) Retrospective audit + prospective experiment for temporal-asymmetry A2ACW redesign. Pre-condition: a2acw-reproducibility-documentation.
+- `foundations-literature-engagement.md` — (HIGH) Engage PBR (2012), Frauchiger-Renner (2018), Aharonov-Albert-Vaidman, Schlosshauer. For /measurement-without-observers and /born-rule. Honest engagement with the field, not claiming support.
+
+## Open Items (Deferred)
+- Breadcrumbs site-wide (Pass 2 MEDIUM): infrastructure across 80 pages, multi-session work
+- Acronym discipline site-wide (Pass 2 HIGH, large): MOND, ΛCDM, CMB, QFT, GR, fσ₈, BTFR, RAR, BAO, SPARC all need first-use expansion per page — requires touching most pages
+- TEST-NN numbering completion (Pass 2 MEDIUM): ~10 pages
+- γ=2/√Ncorr factor-of-2 derivation (Pass 3 HIGH): research gap, not site fix; tracked in `ncorr-from-hamiltonian-protocol.md`
+- MRH formal Markov condition (Pass 3+4 HIGH): research gap; tracked in existing topics
+- "Why not arXiv?" (Pass 4): publication decision for the research program, not a site fix
+
+## So What?
+The wide-binaries factual error correction (MOND+EFE also predicts environment dependence) is today's highest-leverage fix — it removes a claim that would immediately discredit the site with any MOND-literate expert. The H₀ tension card converts silence into honest acknowledgment. The A2ACW temporal-asymmetry proposal is the session's research direction contribution: the first concrete, tractable experimental design for breaking the A2ACW closed loop. If it works, the methodology's verdict upgrades from "identified failure, no fix" to "identified failure, partial fix." Either way it advances discovery.

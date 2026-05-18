@@ -100,10 +100,24 @@ export default function HandlingFailure() {
         </div>
 
         <h2>Failure Taxonomy: What Kind of Wrong?</h2>
-        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
           The regimes above classify by <em>physics mechanism</em>. But failures also differ by <em>type</em> &mdash;
-          and the type matters more than the count. A reparametrization (&ldquo;we said something already known&rdquo;)
+          and the type matters more than the count. A{' '}
+          <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-text-secondary)' }}>
+            reparametrization
+          </Link>{' '}
+          (&ldquo;we said something already known&rdquo;)
           is fundamentally different from a directional error (&ldquo;we predicted the wrong sign&rdquo;).
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem' }}>
+          Terms used below:{' '}
+          <Link href="/glossary#kill-criterion" style={{ color: 'var(--color-text-muted)' }}>kill criterion</Link>
+          {' · '}
+          <Link href="/glossary#post-diction" style={{ color: 'var(--color-text-muted)' }}>post-diction</Link>
+          {' · '}
+          <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-text-muted)' }}>reparametrization</Link>
+          {' · '}
+          <Link href="/research-philosophy#validation-badge-taxonomy" style={{ color: 'var(--color-text-muted)' }}>full badge taxonomy</Link>
         </p>
         <div style={{ overflowX: 'auto', marginBottom: '1.5rem' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>

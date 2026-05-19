@@ -156,7 +156,7 @@ export default function Tier1Existing() {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.5rem' }}>
           {tests.map(t => (
-            <div key={t.id} className="card">
+            <div key={t.id} id={t.id} className="card">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
                 <h3 style={{ fontSize: '0.95rem' }}>{t.id}: {t.name}</h3>
                 <span style={{ color: '#10b981', fontFamily: 'monospace', fontSize: '0.8rem', whiteSpace: 'nowrap' }}>

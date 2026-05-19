@@ -10,14 +10,16 @@ export default function BornRule() {
   return (
     <>
       <Breadcrumbs currentPath="/born-rule" />
-      <h1>Born Rule Derivation</h1>
+      <h1>Born Rule as Coherence Conservation: An Equivalent Formulation</h1>
       <ValidationBadge status="reparametrization" label="Interpretive Restatement" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           The Born rule &mdash; that quantum measurement probabilities are given by |&#x03B1;|&sup2;
           &mdash; is one of the foundational postulates of quantum mechanics. In standard QM, it is
-          simply asserted. Synchronism derives it from coherence conservation.
+          simply asserted. Synchronism offers an equivalent statement in coherence-conservation language.
+          This is a reparametrization, not a derivation: the argument below does not predict any deviation
+          from |&#x03B1;|&sup2; in any regime (see verdict below).
         </p>
 
         <EquationDisplay size="lg" label="The Born rule">

@@ -38,7 +38,7 @@ export default function HonestAssessment() {
         <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated May 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 1 refuted by external data</strong>.
-          DESI DR1 (2026-05-05) measures fσ₈(z=0.51) ≈ 0.55 ± 0.06 — above ΛCDM, opposite to Synchronism&apos;s
+          DESI (Dark Energy Spectroscopic Instrument) DR1 (2026-05-05) measures fσ₈ (growth rate × amplitude of matter fluctuations, z=0.51) ≈ 0.55 ± 0.06 — above ΛCDM (Lambda Cold Dark Matter standard model), opposite to Synchronism&apos;s
           predicted suppression (0.418). By Session 107&apos;s own kill criterion, the framework&apos;s one live
           cosmological discriminator (TEST-04a) has failed — not just by magnitude (2.4σ), but in the
           <em> direction</em> of the prediction: any G<sub>local</sub>/G<sub>global</sub> suppression mechanism
@@ -83,7 +83,7 @@ export default function HonestAssessment() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>MOND Unification: a&#x2080; = cH&#x2080;/(2&#x03C0;)</h3>
+              <h3>MOND (Modified Newtonian Dynamics) Unification: a&#x2080; = cH&#x2080;/(2&#x03C0;)</h3>
               <ValidationBadge status="reparametrization" label="Dimensional Analysis" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -254,7 +254,7 @@ export default function HonestAssessment() {
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Key refutation — &#x03B3;<sub>max</sub> = 3.17:</strong> The framework predicts a
-              maximum coherence parameter &#x03B3;<sub>max</sub> &#x2248; 3.17 (from SPARC calibration).
+              maximum coherence parameter &#x03B3;<sub>max</sub> &#x2248; 3.17 (from SPARC — Spitzer Photometry &amp; Accurate Rotation Curves — calibration).
               The deepest SPARC bin shows &#x27E8;&#x03B3;&#x27E9; = 10.82, with 579 individual SPARC
               galaxies exceeding &#x03B3;<sub>max</sub>. This is the strongest direct refutation in the
               framework&apos;s own internal audit. It was not previously visible on this page.

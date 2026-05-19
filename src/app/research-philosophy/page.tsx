@@ -233,6 +233,28 @@ export default function ResearchPhilosophy() {
           </p>
         </div>
 
+        <div className="card" style={{ background: 'rgba(56, 189, 248, 0.06)', border: '1px solid rgba(56, 189, 248, 0.2)', marginBottom: '1.5rem' }}>
+          <h3 style={{ color: 'var(--color-accent-blue)', fontSize: '0.95rem', marginTop: 0 }}>The meta-finding: this pattern is the result</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
+            The combined pattern across the full research arc is itself a publishable finding about
+            AI-generated science: <strong>every structurally novel commitment (TEST-04a sign-reversed,
+            critical exponents 2&times; off, Bullet Cluster viscosity sign-reversed) has failed by sign
+            or magnitude; every surviving prediction is degenerate with MOND or standard QM</strong>.
+            This is exactly what you would predict from a training-distribution filter operating on a
+            physics corpus that already contains MOND and QM. The framework is not a failed attempt at new physics —
+            it is a successful demonstration of the ceiling on AI-to-AI adversarial collaboration when
+            held to a strict prospective standard.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem', marginBottom: 0 }}>
+            <strong>Temporal-asymmetry counterfactual (2026-05-18):</strong> A retrospective audit tested whether A2ACW
+            would have caught 6 subsequently-demoted claims by pairing models with different training cutoffs.
+            Result: 0 of 6 demotions caught; median prior-art year ~1996. The protocol challenges
+            within-distribution but cannot detect priority-rediscovery. Successor experiment: vocabulary-asymmetry
+            test (submit pre-Planck-era results in post-2015 vocabulary; measure true-positive rate). Full
+            result on the <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</a>.
+          </p>
+        </div>
+
         <div className="card" style={{ background: 'var(--color-bg-secondary)', marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: 0 }}>
             <strong>Calibration note:</strong> A2ACW quantity (3,308 sessions) is not calibration.

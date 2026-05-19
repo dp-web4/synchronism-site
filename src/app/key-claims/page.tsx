@@ -188,7 +188,7 @@ export default function KeyClaims() {
               c(d) = cos&sup2;(&pi;d/&lambda;&#x2080;) is imported from waveguide QED.
               Session #581 (2026-02-08) audited 8 quantum claims and concluded: &ldquo;zero confirmed
               predictions, 4 reparametrizations, 1 refutation (&#x03B3;<sub>max</sub> = 3.17 violated
-              by 579 SPARC points with &#x27E8;&#x03B3;&#x27E9; = 10.82), 1 post-hoc fit.&rdquo;
+              by 579 SPARC (Spitzer Photometry &amp; Accurate Rotation Curves) points with &#x27E8;&#x03B3;&#x27E9; = 10.82), 1 post-hoc fit.&rdquo;
               The CRT temporal-scanning model is not mathematically formalized to the level where
               it reproduces all of standard QM&apos;s quantitative predictions.
               What&apos;s needed: a prediction that differs from standard QM and hasn&apos;t been measured yet.
@@ -433,11 +433,31 @@ export default function KeyClaims() {
           marginTop: '2rem',
           border: '1px solid var(--color-border)',
         }}>
-          <h2 style={{ fontSize: '1rem', marginTop: 0 }}>What&apos;s not on this page</h2>
+          <h2 style={{ fontSize: '1rem', marginTop: 0 }}>What&apos;s not on this page — and why</h2>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
+            The three claims above are what the framework says that <em>might</em> be new.
+            The largest single category of framework output is missing from this page intentionally:
+          </p>
+          <div style={{
+            background: 'rgba(148, 163, 184, 0.08)',
+            borderRadius: '0.375rem',
+            padding: '0.75rem 1rem',
+            marginBottom: '0.75rem',
+          }}>
+            <strong style={{ fontSize: '0.9rem' }}>6 Reparametrizations</strong>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
+              Six results appeared novel at first but turned out to be equivalent to existing physics in
+              different notation: Born rule (Gleason/Zurek), a&#x2080; = cH&#x2080;/(2&#x03C0;) (dimensional coincidence),
+              Freeman&apos;s Law, BTFR slope, &#x0393; = &#x03B3;&sup2;(1&minus;c) (Palma&ndash;Suominen&ndash;Ekert 1996),
+              Bell-freezing c(d) (waveguide QED). These are documented on the{' '}
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link> page.
+              Reparametrizations are not failures &mdash; they confirm the framework is internally consistent
+              with known physics &mdash; but they are not novel contributions.
+            </p>
+          </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
-            Results that are consistent with existing physics but don&apos;t say anything new (e.g., galaxy
-            rotation fits that reproduce MOND). The A2ACW methodology, which is novel but is a process
-            contribution, not a physics claim. And the many failures documented in the{' '}
+            Also absent: the <Link href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW methodology</Link>,
+            which is a process contribution; and the many failures in the{' '}
             <Link href="/honest-assessment">honest assessment</Link>.
           </p>
         </div>

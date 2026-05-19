@@ -95,6 +95,12 @@ export default function TestCatalog() {
           that would falsify the prediction. This page covers <em>proposed</em> tests; for results
           on what has actually been analyzed, see below.
         </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
+          Tests are numbered TEST-01 through TEST-10 on the{' '}
+          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 page</Link>{' '}
+          (each test card has an anchor: e.g., <code style={{ fontSize: '0.8rem' }}>/tier-1-existing#TEST-04a</code>).
+          Cross-references elsewhere on the site to TEST-NN resolve directly to those cards.
+        </p>
 
         <div style={{
           background: 'rgba(16, 185, 129, 0.08)',

@@ -21,7 +21,7 @@ const presets = [
   { label: 'Liquid water', ncorr: 4 },
   { label: 'Enzyme site', ncorr: 30 },
   { label: 'Ferromagnet', ncorr: 100 },
-  { label: 'BCS superconductor', ncorr: 10000 },
+  { label: 'BCS superconductor (10⁷ — mid of physical 10⁶–10⁹)', ncorr: 10000000 },
   { label: 'BEC', ncorr: 1000000 },
 ];
 

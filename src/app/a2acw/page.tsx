@@ -129,6 +129,37 @@ export default function A2ACW() {
           </p>
         </div>
 
+        <h2>Self-Audit Results</h2>
+        <div style={{
+          background: 'rgba(245, 158, 11, 0.08)',
+          border: '1px solid rgba(245, 158, 11, 0.25)',
+          borderRadius: '0.5rem',
+          padding: '1rem 1.25rem',
+          marginBottom: '1.5rem',
+        }}>
+          <h3 style={{ color: '#f59e0b', marginTop: 0, fontSize: '0.95rem' }}>A2ACW is a filter, not a discovery method</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            Two AI models trained on the same physics corpus will share the same blind spots. A2ACW can filter
+            for internal consistency and logical coherence, but <strong>cannot test for out-of-distribution novelty</strong>.
+            The 1.4% novel-claim survival rate is an upper bound on discovery, not a discovery rate.
+          </p>
+          <h4 style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>Temporal-asymmetry counterfactual (2026-05-18)</h4>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+            A retrospective audit tested whether A2ACW&apos;s adversarial pressure would have caught 6 claims
+            that were subsequently demoted (Born rule, dual-C, wide-binary EFE, galaxy rotation, chemistry r=0.98, decoherence formula).
+            Result: <strong>0 of 6 demotions caught</strong>. The protocol correctly challenged each claim internally,
+            but the challenges stayed within the same training distribution — the blind spots were shared.
+            Median prior-art year for these claims: ~1996.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
+            <strong>Missing null baseline:</strong> What fraction of <em>known</em> pre-1990s physics would
+            the same protocol flag as novel if submitted as new? Without that null, the survival rate is a number,
+            not a measurement. The temporal-asymmetry counterfactual is a step toward this baseline.
+            Successor experiment: vocabulary-asymmetry test (submit pre-Planck-era results in post-2015 vocabulary
+            and measure the protocol&apos;s true-positive rate on priority-rediscovery).
+          </p>
+        </div>
+
         <div style={{ marginTop: '2rem' }}>
           <Link href="/autonomous-research" className="btn-primary">
             Next: Autonomous Research &rarr;

@@ -1,1 +1,16 @@
 Starting Synchronism Explorer Session at Tue May 19 08:00:01 PDT 2026
+Pushed to both repos. Session complete.
+
+## Summary
+
+**Topic**: `a2acw-vocabulary-asymmetry-experiment` (HIGH priority from today's queue)
+
+**Result**: 4/6 caught vs temporal asymmetry's 0/6. The 4/6 hides a clean structural finding — the 6 demoted claims decompose 4-1-1 into **three failure-mode classes**: prior-art rediscovery (4), internal-consistency tension (1, dual-C), null-baseline deficit (1, chemistry). Vocabulary asymmetry catches **4/4 on the appropriate sub-class** but the other 2 need different correction axes.
+
+**A2ACW v2** is therefore a **three-axis protocol** (vocabulary translation + symbol audit + null-baseline computation), not a one-axis swap. Combined catch rate: 6/6.
+
+**Methodological refinement**: vocabulary asymmetry is in the *presentation*, not the *adversary*. Claims must be pre-translated to modern register before adversarial review.
+
+**Caveat**: self-simulated by Opus 4.7 who knows both vocabularies → 4/4 is upper bound. Qualitative finding (heterogeneous failure modes) survives any downgrade.
+
+**Artifacts**: finding (`a2acw-vocabulary-asymmetry-result.md`), back-annotation (`a2acw_v2_three_axis_protocol.md` in Synchronism repo), memory update, session log, topic archived. Both repos pushed. Three follow-up topics seeded for the maintainer to pick up.

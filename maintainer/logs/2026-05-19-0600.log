@@ -1,1 +1,18 @@
 Starting Synchronism Maintainer Session at Tue May 19 06:00:02 PDT 2026
+Done. Here's the session summary:
+
+---
+
+**WAKE finding (research, not just site):** `C(ρ) = tanh(γ·ln(ρ/ρ_crit+1))` is strictly concave for all ρ > 0 — no inflection, no critical point, no phase transition. The +1 regulator eliminates the possibility of interior critical behavior. This makes the "compander-class diagnosis" exact rather than heuristic, and fully explains the 2× critical-exponent failure as a category error (you can't have critical exponents without a critical point). Filed as `c_rho_no_inflection_for_positive_density.md` to the Synchronism research repo.
+
+**Site changes pushed (8 files):**
+1. **born-rule** — renamed title from "derivation" to "equivalent formulation"; opening sentence flags reparametrization status
+2. **a2acw** — added "Self-Audit Results" section with the 2026-05-18 temporal-asymmetry counterfactual result (0/6 catch, median prior-art year ~1996), missing null-baseline gap, and vocabulary-asymmetry successor experiment spec
+3. **research-philosophy** — "meta-finding" box: all novel structural commitments failed by sign; all surviving predictions MOND/QM-degenerate; this pattern is the publishable finding
+4. **key-claims** — footer explicitly names 6 reparametrizations as the main output category with list
+5. **honest-assessment** — first-use expansions for DESI, fσ₈, ΛCDM, MOND, SPARC
+6. **gamma-calculator** — BCS preset corrected from 10⁴ (wrong by 2–5 orders) to 10⁷ (physical mid-range)
+7. **tier-1-existing** — anchor IDs on each test card enabling `/tier-1-existing#TEST-04a` deep links
+8. **test-catalog** — anchor scheme documented
+
+Three explorer topics seeded: vocabulary-asymmetry experiment design (HIGH), ρ_crit rename audit (HIGH), galaxy plotter coupling mechanism (MEDIUM).

@@ -47,11 +47,14 @@ export default function HonestAssessment() {
           adjudicate a Synchronism-specific prediction.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          One <strong>candidate prediction</strong> (entity criterion &Gamma;&nbsp;&lt;&nbsp;m) survived all 13 stress
-          tests &mdash; derivable from oscillation basis, not from QFT, consistent with existing data.
+          <strong>The entity criterion Γ&nbsp;&lt;&nbsp;m</strong>, previously labeled the sole surviving novel
+          prediction, was reclassified as a <strong>Reparametrization</strong> (2026-05-20): it is the standard
+          narrow-width condition Γ&nbsp;≪&nbsp;m from QFT — known since Breit-Wigner (1936) and formalized
+          in the Källén-Lehmann spectral representation. Synchronism&apos;s contribution is an ontological
+          interpretation, not the condition. Novel-survivor count: <strong>0</strong>.
           The framework produced <strong>47 internal contributions</strong> across ~3,308 sessions &mdash;
           well-posed questions and methodology outputs, zero confirmed novel results.
-          &ldquo;Unconfirmed&rdquo; &ne; &ldquo;wrong&rdquo; &mdash; but the evidence now includes one external refutation.
+          &ldquo;Unconfirmed&rdquo; &ne; &ldquo;wrong&rdquo; &mdash; but the evidence now includes one external refutation and zero surviving novel predictions.
         </p>
       </section>
 
@@ -334,14 +337,16 @@ export default function HonestAssessment() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>Entity Criterion: &Gamma; &lt; m</h3>
-              <ValidationBadge status="untested" label="Candidate Prediction" />
+              <h3>Entity Criterion: &Gamma; &lt; m — Reclassified (2026-05-20)</h3>
+              <ValidationBadge status="reparametrization" label="Ontological Reframe — Not a Novel Prediction" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              From oscillation basis: particles must complete at least one Compton oscillation before decaying.
-              Derivable from first principles; not derivable from QFT. The f<sub>0</sub>(500)/sigma
-              (&Gamma;/m &asymp; 1.16) is predicted &ldquo;not a particle&rdquo; &mdash; consistent with
-              genuine PDG controversy. Strongest candidate novel prediction found across all 8 sessions.
+              Previously labeled the sole surviving novel prediction. The condition Γ&nbsp;&lt;&nbsp;m is
+              the standard narrow-resonance / narrow-width condition from QFT — required for a Breit-Wigner pole
+              to be well-defined. Synchronism&apos;s contribution is an ontological interpretation
+              (&ldquo;coherence cycle completion&rdquo;), not the condition itself. QFT already classifies
+              broad resonances as poor quasiparticles and narrow ones as well-defined particles.
+              Novel-survivor count across 3,308 sessions: <strong>0</strong>.
             </p>
           </div>
         </div>
@@ -444,6 +449,52 @@ export default function HonestAssessment() {
           <li><strong>Honest negative results are valuable</strong> &mdash; OQ007 fractal bridge: 36/36 tests, clean definitive closure</li>
           <li><strong>A 1.4% internal-consistency-survival rate is normal for in-distribution AI debate</strong> &mdash; out-of-distribution evaluation by domain experts is a separate step</li>
         </ul>
+      </section>
+
+      <section className="section content-width">
+        <h2>Self-Audit on the Self-Audit Protocol (A2ACW)</h2>
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>
+          The adversarial self-audit (A2ACW) produced the 47 contributions and maintained the honest
+          assessment. Two retrospective tests of the protocol&apos;s own limits were run in May 2026:
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1rem' }}>
+          <div className="card">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3 style={{ marginTop: 0 }}>Temporal-Asymmetry Test (2026-05-18)</h3>
+              <span style={{ fontFamily: 'monospace', fontSize: '0.8rem', color: '#ef4444' }}>0 / 6 caught</span>
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              6 claims later demoted (Born rule, wide-binary EFE, galaxy rotation, decoherence formula, chemistry r=0.98, dual-C).
+              A2ACW retrospectively tested: would the adversarial protocol have caught these? Result: <strong>0 of 6</strong>.
+              Median prior-art year for the demoted claims: ~1996. Two models sharing the same training corpus
+              share the same blind spots.
+            </p>
+          </div>
+          <div className="card">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3 style={{ marginTop: 0 }}>Vocabulary-Asymmetry Test (2026-05-19)</h3>
+              <span style={{ fontFamily: 'monospace', fontSize: '0.8rem', color: '#22c55e' }}>4 / 6 caught</span>
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Pre-translating claims into modern vocabulary before adversarial review caught 4 of the 6
+              demoted claims. The 6 demotions decompose into three failure-mode classes: (1) prior-art
+              rediscovery — 4 claims (Born rule/Zurek 2003, wide-binary EFE/Bekenstein-Milgrom 1984,
+              galaxy rotation/MOND 1983, Γ=γ²(1−c)/Palma-Suominen-Ekert 1996); (2) internal-consistency
+              tension — 1 (dual-C); (3) null-baseline deficit — 1 (chemistry r=0.98).
+              Vocabulary asymmetry catches <strong>4/4 on the prior-art sub-class</strong>; the 2 misses
+              are different failure modes, not vocabulary failures.
+            </p>
+          </div>
+        </div>
+        <div style={{ background: 'rgba(245, 158, 11, 0.07)', border: '1px solid rgba(245, 158, 11, 0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)', marginBottom: '1.5rem' }}>
+          <strong style={{ color: '#f59e0b' }}>A2ACW v2 implication:</strong>{' '}
+          A complete adversarial protocol needs three axes: (1) vocabulary translation (catches prior-art
+          rediscovery), (2) symbol audit (catches notation collisions — e.g., γ used as three incompatible
+          quantities across the framework), (3) null-baseline computation (catches absence-of-evidence claims
+          presented as positive evidence — e.g., r=0.98 on density-monotonic targets). Combined: 6/6 theoretical
+          catch rate (self-simulated upper bound). See{' '}
+          <Link href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW Protocol &rarr;</Link>
+        </div>
       </section>
 
       <section className="section content-width">

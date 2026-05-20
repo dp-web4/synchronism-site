@@ -254,6 +254,12 @@ export default function GalaxyPlotter() {
             particles needed. The coherence function adds an effective mass component from the
             density field itself.
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+            The <span style={{ color: '#22c55e' }}>green dashed curve</span> is MOND (Modified
+            Newtonian Dynamics), which modifies gravity below the acceleration scale a&#x2080; &#x2248; 1.2&times;10&#x207B;&#xB9;&#x2070; m/s&sup2;.
+            Notice that Synchronism and MOND nearly overlap — both use the same interpolating function
+            (McGaugh et al. 2016 RAR), and the site labels this a <em>reparametrization</em>.
+          </p>
         </div>
 
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>

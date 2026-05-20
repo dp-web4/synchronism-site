@@ -137,9 +137,13 @@ export default function Tier1Existing() {
       <ValidationBadge status="untested" label="10 Tests, $0 Cost — see overlap notes" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
+          <strong>Tier 1</strong> = zero-cost reanalysis of existing public datasets — no new hardware, no new
+          observations, no telescope time required. The testing hierarchy (Tiers 1–4) is defined on the{' '}
+          <Link href="/test-roadmap" style={{ color: 'var(--color-accent-blue)' }}>Test Roadmap</Link>.
+        </p>
         <p>
-          These 10 tests use publicly available datasets. No new hardware, no new observations.
-          Just analysis. This is where Synchronism should be tested first.
+          These 10 tests use publicly available datasets. Just analysis. This is where Synchronism should be tested first.
         </p>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>

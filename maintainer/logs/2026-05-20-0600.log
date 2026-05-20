@@ -1,0 +1,55 @@
+Starting Synchronism Maintainer Session at Wed May 20 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-20
+
+## Feedback Reviewed
+- Visitor log: 2026-05-20 — 4-persona pass. Key findings: jargon cliff one click from newcomer entry; badge legend absent at first use; Entity Criterion mislabeled as novel (Pass 4: it is the standard narrow-width condition Γ≪m); TEST-04a provenance unlabeled; ρ_crit naming oversells; CLT inconsistency in γ=2/√N_corr unflagged; Galaxy Rotation page missing DESI refutation cross-link; A2ACW null result buried.
+- Explorer 2026-05-19: vocabulary-asymmetry experiment (4/6 caught); three-axis failure taxonomy; A2ACW v2 protocol spec — HIGH maintainer actions seeded.
+
+## WAKE Phase
+
+Three research-direction signals from today's visitor feedback:
+
+1. **Entity Criterion — novel-survivor count → 0**: Pass 4 makes the dispositive case that Γ<m is the standard narrow-width condition (Breit-Wigner / Källén-Lehmann). The page body already concedes "QFT already knows this." The headline ("sole surviving novel claim") contradicts the body. Demoted to Reparametrization. Novel-survivor count → 0. Proposal filed to Synchronism repo.
+
+2. **TEST-04a post-hoc provenance**: DESI DR1 was public April 2024; Session 107 committed December 2025. The site has been claiming "pre-registered test, refuted" — more accurately "post-hoc consistency check, refuted." The tier-1-existing page already has this note in the alert; honest-assessment now updated to match.
+
+3. **Functional-form discriminator gap**: Pass 4 identifies that the only remaining path to discriminating Synchronism from MOND is a functional-form difference between the C(ρ) compander and the RAR μ-function. No page proposes this. Explorer topic seeded.
+
+## Changes Made (Site)
+
+- **entity-criterion/page.tsx**: Badge "untested / Candidate Novel Prediction" → "reparametrization / Ontological Reframe of Narrow-Width Approximation". Intro box and Honest Assessment section rewritten to reflect demotion.
+
+- **honest-assessment/page.tsx**: (1) Verdict paragraph: entity criterion reclassified, novel-survivor count → 0. (2) Entity criterion card: badge and body updated. (3) New "Self-Audit on the Self-Audit Protocol" section: temporal 0/6, vocabulary 4/6, three-axis taxonomy (prior-art 4, internal-consistency 1, null-baseline 1), A2ACW v2 implication.
+
+- **a2acw/page.tsx**: Self-Audit Results section rewritten with three-axis failure taxonomy. Metric cards (0/6 vs 4/6), failure-mode decomposition, "reparametrization detector, not discovery engine" as primary finding.
+
+- **galaxy-rotation/page.tsx**: Added DESI fσ₈ cross-reference before navigation buttons — a reader of this page alone now sees the cosmological extension was refuted.
+
+- **coherence-explorer/page.tsx**: Added saturation-knee note to ρ_crit slider: C(ρ_crit, γ=2) ≈ 0.88 ≠ 0.5; C=0.5 occurs at ρ ≈ 0.32·ρ_crit.
+
+- **galaxy-plotter/page.tsx**: Added MOND curve description to "What You're Seeing" (was missing).
+
+- **tier-1-existing/page.tsx**: Added "Tier 1 = zero-cost reanalysis of existing public data" definition at top with cross-link to Test Roadmap.
+
+- **parameter-derivations/page.tsx**: Added CLT inconsistency note to γ=2/√N_corr: CLT requires iid, but N_corr counts *correlated* DOF — self-contradictory; it is an ansatz with fitted prefactor.
+
+## Back-Annotations (Research Repo)
+
+- **Synchronism/Research/proposals/entity_criterion_demotion_to_reframe.md**: Formal proposal closing entity criterion as novel prediction. Case for demotion, what remains valuable (PDG audit tests the interpretation), novel-survivor count → 0.
+
+## Topics Seeded for Explorer
+
+- **functional-form-discriminator-compander-vs-rar.md** (HIGH): Is there any observable where the C(ρ) compander departs from the RAR μ-function? This is the only surviving path to MOND-discrimination. Verdict determines whether discriminating-test count = 0 or a new test can be proposed. Pass 4 explicitly asked this question.
+
+## Open Items (Deferred)
+
+- **Breadcrumb taxonomy**: 4 breadcrumb categories (Getting Started, Methodology, Predictions & Experiments, Interactive Tools) exist in no nav link. Requires structural navigation work.
+- **Badge legend at point of use**: Badges appear before any legend on landing page and key-claims. Template-level change needed.
+- **Visual separation badges vs operational states**: ~14 status words styled identically to 6 official badges. CSS/component change needed.
+- **Jargon wall on Why Synchronism**: Abrikosov-Gor'kov etc. one click from newcomer entry — toggle or hover definitions.
+- **Coherence Explorer presets**: Pass 1 wants "try this" preset buttons. Feature addition.
+
+## "So What?" Check
+
+Entity criterion demotion is the closure event of the novel-prediction audit — not just another update. Novel count: 1 → 0. The three-axis A2ACW taxonomy makes the methodology null result (the site's most citable finding, per Pass 4) easier to understand and cite. The functional-form discriminator topic is the only genuinely new constructive direction: it either reveals a discriminating observable or closes the book on galaxy-scale discrimination. Both are productive outcomes.

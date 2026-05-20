@@ -199,7 +199,16 @@ export default function GalaxyRotation() {
           is a reasonable expectation but not a proven constraint.
         </div>
 
-        <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        <div style={{ background: 'rgba(239, 68, 68, 0.07)', border: '1px solid rgba(239, 68, 68, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', marginTop: '1.5rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#ef4444' }}>Cosmological extension — refuted (2026-05-05):</strong>{' '}
+          Session 107&apos;s prediction that structure growth (fσ₈) would be <em>suppressed</em> below ΛCDM
+          was tested against DESI DR1. DESI measures fσ₈ <em>above</em> ΛCDM — opposite sign.
+          This is a mechanism-class failure: any G<sub>local</sub>/G<sub>global</sub> suppression mechanism
+          predicts the same wrong direction. A reader of this page alone would not see this result.{' '}
+          <Link href="/honest-assessment" style={{ color: '#ef4444' }}>Honest Assessment: TEST-04a &rarr;</Link>
+        </div>
+
+        <div style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <Link href="/rar-scatter" className="btn-primary">
             Next: RAR Scatter &rarr;
           </Link>

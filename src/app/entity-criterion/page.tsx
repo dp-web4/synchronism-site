@@ -10,22 +10,23 @@ export default function EntityCriterion() {
     <>
       <Breadcrumbs currentPath="/entity-criterion" />
       <h1>The Entity Criterion</h1>
-      <ValidationBadge status="untested" label="Candidate Novel Prediction" />
+      <ValidationBadge status="reparametrization" label="Ontological Reframe of Narrow-Width Approximation" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{
-          background: 'rgba(139, 92, 246, 0.08)',
+          background: 'rgba(239, 68, 68, 0.07)',
           borderRadius: '0.5rem',
           padding: '1rem 1.25rem',
           marginBottom: '1.5rem',
-          border: '1px solid rgba(139, 92, 246, 0.25)',
+          border: '1px solid rgba(239, 68, 68, 0.25)',
         }}>
           <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            <strong>Why this page exists.</strong> After 3,308 sessions and 13 adversarial
-            stress tests, the entity criterion Γ&nbsp;&lt;&nbsp;m is the one surviving candidate
-            prediction that (a) does not reduce to standard QFT, (b) survived all internal
-            challenges, and (c) has a concrete external test against known data. It deserves
-            the site&apos;s most careful treatment.
+            <strong>Demotion (2026-05-20).</strong> Γ&nbsp;&lt;&nbsp;m was previously labeled the
+            &ldquo;sole surviving novel prediction.&rdquo; After further review, this is the standard
+            narrow-resonance / narrow-width condition Γ&nbsp;≪&nbsp;m from QFT — the requirement for a
+            Breit-Wigner pole to be well-defined. Synchronism&apos;s contribution is an <em>ontological
+            interpretation</em> of a known condition, not the condition itself. Novel-survivor count: <strong>0</strong>.
+            The page is preserved because the proposed PDG audit remains a useful test of the interpretation.
           </p>
         </div>
 
@@ -163,18 +164,22 @@ export default function EntityCriterion() {
 
         <h2>Honest Assessment</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          This is currently the framework&apos;s strongest surviving novel claim. It is also
-          its <em>only</em> surviving novel claim across 3,308 sessions. That context matters:
-          one candidate across a large exploration is not strong evidence for the criterion
-          itself — it may be the last survivor in a selection process that was also selecting
-          against falsification. The appropriate epistemic status is{' '}
-          <strong>Untested candidate: consistent with available data, systematic test pending.</strong>
+          <strong>Reclassified from &ldquo;Candidate Novel Prediction&rdquo; to &ldquo;Reparametrization&rdquo;
+          (2026-05-20).</strong> The narrow-width condition Γ&nbsp;≪&nbsp;m is standard QFT —
+          the condition for a Breit-Wigner resonance to be well-defined as an isolated pole.
+          Every QFT student learns that broad resonances (f₀(500), the ρ, the κ) are problematic
+          quasiparticles and narrow resonances (J/ψ, Υ) are not. Synchronism&apos;s contribution
+          is a physical interpretation (&ldquo;coherence cycle completion&rdquo;) of a
+          well-known condition, not the condition itself.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          The criterion is derivable from the oscillation basis (not from the coherence
-          function C(ρ)) — which means it survives even if C(ρ) is a phenomenological
-          ansatz. This is a structural strength: the surviving claim is independent of the
-          framework&apos;s most problematic element.
+          The proposed PDG audit — classifying ~200 resonances by Γ/m and checking whether the
+          Γ&nbsp;&lt;&nbsp;m boundary maps to any physically meaningful classification the PDG
+          does not already apply — remains a useful empirical test of the <em>interpretation</em>.
+          It will not discover new physics, but it could confirm or refute whether the oscillation-basis
+          framing adds explanatory value beyond the known narrow-resonance taxonomy.
+          The criterion is derivable from the oscillation basis independently of C(ρ), which is a
+          structural strength — but structural independence from a failed model is a weak endorsement.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

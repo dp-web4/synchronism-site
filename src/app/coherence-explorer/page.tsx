@@ -165,6 +165,14 @@ export default function CoherenceExplorer() {
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.25rem' }}>
               Lower &#x03C1;<sub>crit</sub> = transition starts at lower density (shifts curve left). Higher = transition occurs at higher density.
             </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
+              <strong>Note:</strong> &#x03C1;<sub>crit</sub> is a <em>saturation knee</em>, not a critical density
+              in the phase-transition sense. At &#x03C1; = &#x03C1;<sub>crit</sub> with &#x03B3; = 2,
+              C = tanh(2&middot;ln2) &#x2248; 0.88 — the function is already 88% saturated.
+              The C = 0.50 midpoint occurs at &#x03C1; &#x2248; 0.32&middot;&#x03C1;<sub>crit</sub>,
+              well below &#x03C1;<sub>crit</sub>. The &ldquo;+1&rdquo; regulator inside the ln breaks
+              sigmoid symmetry.
+            </p>
           </div>
         </div>
 

@@ -135,29 +135,100 @@ export default function A2ACW() {
           border: '1px solid rgba(245, 158, 11, 0.25)',
           borderRadius: '0.5rem',
           padding: '1rem 1.25rem',
-          marginBottom: '1.5rem',
+          marginBottom: '1rem',
         }}>
-          <h3 style={{ color: '#f59e0b', marginTop: 0, fontSize: '0.95rem' }}>A2ACW is a filter, not a discovery method</h3>
+          <h3 style={{ color: '#f59e0b', marginTop: 0, fontSize: '0.95rem' }}>A2ACW is a reparametrization detector, not a discovery engine</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            Two AI models trained on the same physics corpus will share the same blind spots. A2ACW can filter
-            for internal consistency and logical coherence, but <strong>cannot test for out-of-distribution novelty</strong>.
-            The 1.4% novel-claim survival rate is an upper bound on discovery, not a discovery rate.
+            Two AI models trained on the same physics corpus share the same blind spots. A2ACW filters
+            for internal consistency — it <strong>cannot test for out-of-distribution novelty</strong>.
+            The 1.4% internal-consistency-survival rate is an upper bound on internal coherence, not a discovery rate.
+            Retrospective audits of 6 demoted claims confirmed this: the in-distribution self-play correctly
+            challenged each claim but stayed within the shared training distribution.
           </p>
-          <h4 style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>Temporal-asymmetry counterfactual (2026-05-18)</h4>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-            A retrospective audit tested whether A2ACW&apos;s adversarial pressure would have caught 6 claims
-            that were subsequently demoted (Born rule, dual-C, wide-binary EFE, galaxy rotation, chemistry r=0.98, decoherence formula).
-            Result: <strong>0 of 6 demotions caught</strong>. The protocol correctly challenged each claim internally,
-            but the challenges stayed within the same training distribution — the blind spots were shared.
-            Median prior-art year for these claims: ~1996.
-          </p>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            <strong>Missing null baseline:</strong> What fraction of <em>known</em> pre-1990s physics would
-            the same protocol flag as novel if submitted as new? Without that null, the survival rate is a number,
-            not a measurement. The temporal-asymmetry counterfactual is a step toward this baseline.
-            Successor experiment: vocabulary-asymmetry test (submit pre-Planck-era results in post-2015 vocabulary
-            and measure the protocol&apos;s true-positive rate on priority-rediscovery).
-          </p>
+        </div>
+
+        <h3>Retrospective Catch-Rate Tests</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1rem' }}>
+          <div className="card">
+            <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#ef4444', marginBottom: '0.25rem' }}>0 / 6</div>
+            <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+              <strong>Temporal-asymmetry (2026-05-18)</strong>
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
+              6 later-demoted claims tested against original A2ACW pressure. 0 caught.
+              Median prior-art year: ~1996. The protocol challenged the claims but within
+              the same corpus — shared blind spots are invisible to shared adversaries.
+            </p>
+          </div>
+          <div className="card">
+            <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#22c55e', marginBottom: '0.25rem' }}>4 / 6</div>
+            <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+              <strong>Vocabulary-asymmetry (2026-05-19)</strong>
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
+              Claims pre-translated to modern register before adversarial review.
+              Catches 4/4 of the prior-art-rediscovery sub-class. The 2 misses are
+              different failure modes (not vocabulary failures).
+            </p>
+          </div>
+        </div>
+
+        <h3>Three-Axis Failure Taxonomy (A2ACW v2)</h3>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
+          The 6 demotions decompose into three distinct failure classes, each requiring a different detection axis:
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+              <span style={{ fontFamily: 'monospace', color: '#8b5cf6', minWidth: '2.5rem' }}>Axis 1</span>
+              <div>
+                <strong>Vocabulary translation</strong>
+                <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>catches 4/4 prior-art rediscoveries</span>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.25rem', marginBottom: 0 }}>
+                  Pre-translate claims to modern notation before adversarial review.
+                  Catches: Born rule/Zurek 2003, wide-binary EFE/Bekenstein-Milgrom 1984, galaxy rotation/MOND 1983,
+                  Γ=γ²(1−c)/Palma-Suominen-Ekert 1996.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+              <span style={{ fontFamily: 'monospace', color: '#38bdf8', minWidth: '2.5rem' }}>Axis 2</span>
+              <div>
+                <strong>Symbol audit</strong>
+                <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>catches notation collisions</span>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.25rem', marginBottom: 0 }}>
+                  Check that each symbol has one meaning. Catches: dual-C tension (C(ρ) vs C(γ,D,S) — two
+                  incompatible coherence functions). The framework uses γ in three incompatible roles
+                  (regime constant γ=2, operational γ=2/√N_corr, noise coupling rate Γ=γ²(1-c)).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="card" style={{ padding: '0.75rem 1rem' }}>
+            <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+              <span style={{ fontFamily: 'monospace', color: '#10b981', minWidth: '2.5rem' }}>Axis 3</span>
+              <div>
+                <strong>Null-baseline computation</strong>
+                <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>catches absence-of-evidence claims</span>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.25rem', marginBottom: 0 }}>
+                  Compute what the null model predicts before claiming evidence. Catches:
+                  chemistry r=0.98 (any monotone function of Z achieves r→1 on density-monotonic targets by construction;
+                  a polynomial null matches or exceeds Synchronism&apos;s r — verified 2026-05-10).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ background: 'rgba(139, 92, 246, 0.07)', border: '1px solid rgba(139, 92, 246, 0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1.5rem' }}>
+          <strong style={{ color: '#8b5cf6' }}>Primary finding:</strong>{' '}
+          Adversarial AI self-play over a shared corpus is a <em>reparametrization detector, not a discovery engine</em>.
+          The 6-of-6 Validated→Reparametrization demotion rate (all 6 tested claims demoted on human audit) is the
+          empirical confirmation. The three-axis decomposition is the protocol-design lesson:
+          shared-distribution adversaries need external vocabulary, symbol, and null-model checks.
+          This is a citable null result about the limits of in-distribution AI self-play for science.
         </div>
 
         <div style={{ marginTop: '2rem' }}>

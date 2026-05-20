@@ -41,10 +41,18 @@ export default function ParameterDerivations() {
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #64-65</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              The 1/&#x221A;N<sub>corr</sub> scaling follows central-limit-theorem statistics for correlated
-              ensembles. The factor of 2 is motivated by phase-space dimensionality arguments (6D to 3 effective)
+              The 1/&#x221A;N<sub>corr</sub> scaling borrows from central-limit-theorem (CLT) statistics.
+              The factor of 2 is motivated by phase-space dimensionality arguments (6D to 3 effective)
               but is not rigorously derived &mdash; integrating out momenta introduces temperature- and
               mass-dependent factors, not a clean factor of 2. Best understood as a physically motivated ansatz.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
+              <strong>Internal inconsistency (2026-05-20):</strong> The CLT&apos;s 1/&#x221A;N scaling governs
+              the standard error of the mean for <em>iid</em> (independent, identically distributed) variables.
+              But N<sub>corr</sub> is by construction the count of <em>correlated</em> degrees of freedom —
+              exactly the regime where the iid hypothesis fails and 1/&#x221A;N does not apply.
+              Invoking CLT for correlated N<sub>corr</sub> is self-contradictory. The scaling is
+              borrowed by analogy, not derived from the CLT. It is an ansatz with a fitted prefactor.
             </p>
           </div>
 

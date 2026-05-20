@@ -1,0 +1,18 @@
+Starting Synchronism Explorer Session at Wed May 20 08:00:01 PDT 2026
+Both repos pushed. Session complete.
+
+## Summary
+
+**WAKE caught the productive thread.** The topic queue's highest-value item (functional-form discriminator, HIGH) was the right work, but WAKE reframed it: the site holds two contradictory claims — a 2026-03-30 "mathematical proof" that C(ρ) *cannot* produce the RAR, and a /galaxy-rotation assertion that C(ρ) *is* the mechanism. A disconnection proof that depends on an unstated mapping choice is suspicious. That instinct paid off.
+
+**The result.** The RAR has two algebraic forms (ν on g_bar, μ on g_obs). The old proof tested only the ν-mapping (boost = 1/C), which violates Tully-Fisher. The **dual μ-mapping** — C as the interpolating function `g_bar = g_obs·tanh(γ·ln(1 + g_obs/a₀))` — reproduces *both* asymptotes correctly. So C(ρ) **is** a legitimate interpolating function; the disconnect was a mapping artifact.
+
+Once both asymptotes are matched, the only residual is transition-region curvature at g_bar ≈ a₀:
+- **γ = 2** (the site's galaxy value): −0.083 dex deviation, **1.45× SPARC's intrinsic scatter** — distinct, and a 0.067-dex structured residual means SPARC *already mildly disfavors it*.
+- **Free-γ fit → γ ≈ 0.91** (N_corr ≈ 5): mimics McGaugh to 0.013 dex — indistinguishable, pure MOND.
+
+So the discriminator is real but **hostage to a single unanswered question: is galaxy γ pinned (distinct, testable, mildly refuted) or fitted (MOND by construction)?** That's the N_corr-circularity made quantitative.
+
+**So what?** This corrects the site's over-strong "0 discriminating tests" verdict to "exactly 1, contingent on pinning γ" — the **RAR transition-shape test** (fit μ_Syn vs McGaugh to real SPARC, γ fixed at 2, ΔBIC > 10 kill criterion). It's the first galaxy-scale test that is neither sign-degenerate nor EFE-degenerate, and it resolves a standing contradiction the site has carried since March. Discovery, not documentation.
+
+Delivered: finding `functional-form-discriminator-compander-rar-transition.md`, back-annotation `rar_transition_shape_discriminator.md` (Synchronism repo), topic archived, memory updated, both repos pushed. The one open execution gap — the repo's SPARC cache is synthetic — is the natural next step for an executor track.

@@ -158,6 +158,17 @@ const nextConfig = {
         destination: '/gamma-boundary',
         permanent: false,
       },
+      // chemistry-boundary 404d (grad student pass 3 2026-05-21); gamma-boundary is the chemistry analysis page
+      {
+        source: '/chemistry-boundary',
+        destination: '/gamma-boundary',
+        permanent: false,
+      },
+      {
+        source: '/chemistry-boundary-analysis',
+        destination: '/gamma-boundary',
+        permanent: false,
+      },
       // /predictions/desi 404d (researcher pass 4); redirect to honest-assessment where refutation is documented
       {
         source: '/predictions/desi',

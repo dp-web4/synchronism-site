@@ -25,6 +25,13 @@ export default function RootLayout({
           <nav className="nav-links" aria-label="Main navigation">
             <SiteSearch />
             <Link
+              href="/first-encounter"
+              style={{ color: 'var(--color-accent-blue)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: 600 }}
+              title="New here? Start with First Encounter"
+            >
+              Start Here
+            </Link>
+            <Link
               href="/why-synchronism"
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
               title="Start here: the question behind the framework"

@@ -96,9 +96,12 @@ export default function GalaxyRotation() {
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>5 &times; 10<sup>&minus;6</sup></div>
+            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#ef4444' }}>5 &times; 10<sup>&minus;6</sup></div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
               p-value for environment effect
+            </div>
+            <div style={{ fontSize: '0.75rem', color: '#ef4444', marginTop: '0.25rem' }}>
+              R² = 0.14 — kill criterion triggered
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
@@ -167,14 +170,25 @@ export default function GalaxyRotation() {
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           The key papers are Pittordis &amp; Sutherland (2023) and Hernandez et al. (2024), using
-          Gaia DR3. They disagree on the strength of the MOND signal. Synchronism&apos;s prediction
-          (density-dependent wide binary anomaly — stronger anomaly in denser stellar fields) is
-          distinguishable from MOND (which predicts the anomaly independent of local density).
+          Gaia DR3. They disagree on the strength of the MOND signal. Synchronism predicts
+          a density-dependent wide binary anomaly (stronger anomaly in denser stellar fields).
           Gaia DR3 is public; stratifying the sample by local stellar density is a tractable
           one-week analysis. See{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>TEST-02</Link>{' '}
           for the kill criterion.
         </p>
+        <div style={{ background: 'rgba(245, 158, 11, 0.07)', border: '1px solid rgba(245, 158, 11, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.5rem', marginBottom: '0.5rem' }}>
+          <strong style={{ color: '#f59e0b' }}>MOND+EFE caveat:</strong>{' '}
+          MOND <em>with the External Field Effect</em> (EFE, Bekenstein-Milgrom 1984) also predicts
+          environment-dependent wide-binary dynamics — the galactic external field suppresses the
+          MOND anomaly in low-density environments and enhances it in high-density ones.
+          The qualitative signature (anomaly varies with local density) is shared with Synchronism.
+          The quantitative divergence between the two predictions has not yet been computed.
+          Until that calculation is done, the wide-binary density stratification cannot discriminate
+          Synchronism from MOND+EFE. See{' '}
+          <Link href="/wide-binaries" style={{ color: '#f59e0b' }}>TEST-02 substrate note</Link>{' '}
+          for the full EFE discussion.
+        </div>
 
         <h2>GW170817 and the Speed of Gravity</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>

@@ -143,7 +143,9 @@ export default function Tier1Existing() {
           <Link href="/test-roadmap" style={{ color: 'var(--color-accent-blue)' }}>Test Roadmap</Link>.
         </p>
         <p>
-          These 10 tests use publicly available datasets. Just analysis. This is where Synchronism should be tested first.
+          These 10 numbered tests use publicly available datasets — plus TEST-04a, a sub-test of TEST-04
+          added after TEST-04 was withdrawn. Effective independent tests after failures and withdrawals: approximately 4.
+          Just analysis. This is where Synchronism should be tested first.
         </p>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>

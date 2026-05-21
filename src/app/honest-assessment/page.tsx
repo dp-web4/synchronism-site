@@ -33,6 +33,18 @@ export default function HonestAssessment() {
         </p>
       </details>
 
+      {/* Plain-language summary for casual readers */}
+      <div style={{ background: 'rgba(59, 130, 246, 0.06)', border: '1px solid rgba(59, 130, 246, 0.2)', borderRadius: '0.5rem', padding: '1rem 1.25rem', marginBottom: '1.5rem', maxWidth: '65ch' }}>
+        <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
+          <strong>In plain language:</strong> The framework&apos;s biggest external test came out backwards —
+          we predicted the universe&apos;s large-scale structure should be growing <em>slower</em> than
+          the standard model, but real data (DESI 2024) shows it growing at or <em>above</em> standard-model
+          rates. The predictions we thought were novel turned out to already exist in physics under
+          different names. Zero predictions have been independently confirmed. The research continues —
+          but the scoreboard is honest: <strong>0 confirmed, 1 refuted, 6 reparametrizations</strong>.
+        </p>
+      </div>
+
       {/* Overall Verdict */}
       <section className="card card-highlight section">
         <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated May 2026)</h2>

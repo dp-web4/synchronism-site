@@ -48,10 +48,20 @@ export default function PhaseBoundaryVisualizer() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
-          The three regimes of &#x03B3; define qualitatively different physics. Drag the slider
-          to explore where different systems live. Labeled positions on the axis are approximate
-          (&#x03B3; = 2/&#x221A;N<sub>corr</sub>; operational N<sub>corr</sub> values are estimated, not precisely measured for most systems).
+          The three regimes of &#x03B3; map qualitatively different correlation structures.
+          Drag the slider to explore where different systems are <em>estimated</em> to fall.
+          Labeled positions are approximate (&#x03B3; = 2/&#x221A;N<sub>corr</sub>;
+          N<sub>corr</sub> values are estimated, not precisely measured for most systems).
         </p>
+        <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.85rem', color: 'var(--color-text-muted)', marginBottom: '1rem' }}>
+          <strong style={{ color: '#ef4444' }}>What γ actually classifies:</strong>{' '}
+          γ = 2/√N<sub>corr</sub> encodes the <em>counting convention</em> used for N<sub>corr</sub>,
+          not a physical invariant of the system. Two unrelated systems with the same estimated N<sub>corr</sub>
+          (e.g., ideal gases and galaxies, both assigned N<sub>corr</sub> = 1) share a γ value for
+          methodological reasons, not physical ones. This visualizer shows how systems cluster under
+          the current counting convention; it does not imply they have the same microphysics.
+          See the caveat box below for details.
+        </div>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
           <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', height: 'auto' }}>

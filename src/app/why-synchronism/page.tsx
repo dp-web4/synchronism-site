@@ -58,7 +58,11 @@ export default function WhySynchronism() {
           When &#x03B3; is small (many correlated particles), behavior is classical.
         </p>
         <p>
-          The tanh shape is motivated by Landau-universality (a phenomenological choice). The log-density argument is physically motivated. Then tested against data.
+          The tanh shape is a phenomenological choice — a member of the compander family
+          (μ-law audio companding, Hill/Naka–Rushton response functions, Langevin/Curie–Weiss saturation).
+          Any smooth S-curve with the same saturation properties would fit equally well; there is no
+          variational principle or self-consistency equation that selects tanh specifically.
+          The log-density argument is physically motivated. Then tested against data.
           Some predictions held up. Others failed.
         </p>
       </section>

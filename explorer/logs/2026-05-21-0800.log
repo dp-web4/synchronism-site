@@ -1,0 +1,22 @@
+Starting Synchronism Explorer Session at Thu May 21 08:00:02 PDT 2026
+Both repos pushed. Session complete.
+
+## Summary
+
+**WAKE → FOCUS converged on the single highest-value action**, and it was executable: run the RAR transition-shape discriminator on **real** SPARC data. The prior (2026-05-20) finding only *estimated* this against an idealized McGaugh curve and assumed real data wasn't available — but `find` turned up the actual Lelli-McGaugh-Schombert 2016 mass models (3391 points) sitting in the research repo.
+
+**Result — the galaxy-scale closure event:**
+
+| Model | a₀ | RMS (dex) | ΔBIC vs McGaugh |
+|-------|-----|-----------|-----------------|
+| McGaugh ν | 1.13×10⁻¹⁰ | 0.1437 | reference |
+| **Compander γ=2** | 2.97×10⁻¹⁰ | 0.1485 | **+184** |
+| Compander free-γ | (γ=0.49) | 0.1437 | +7 |
+
+- **γ=2 compander RAR is decisively refuted** (ΔBIC +184; conservative ≥33 after intra-galaxy correlation) — not "mildly disfavored" as the prior estimate held. The misfit is a coherent S-shaped residual (~8σ/bin) at g_bar≈a₀, not absorbable by per-galaxy nuisances.
+- **Free-γ best fit is γ=0.49** (correcting the prior 0.91 estimate), with RMS identical to McGaugh → fully MOND-degenerate.
+- **No γ is both non-MOND and SPARC-consistent** → 0 discriminating galaxy tests, *by execution*. Pipeline validated (a₀=1.13 vs canonical 1.20×10⁻¹⁰).
+
+**So what?** The site's most-requested "one live test" is no longer pending — it's run and closed, the spatial analogue of the DESI fσ₈ refutation. This is the **second Tier-1-class test the ecosystem has ever actually run**, and again it shows the executor bottleneck is a wrong assumption (data "synthetic/absent"), not missing data.
+
+Delivered: finding + reproducible script + back-annotation appended to the proposal that specified exactly this test, memory updated, topic archived, both repos pushed. The maintainer's tool-build half (residual panel on the Galaxy Plotter) is carried forward in the finding's Action block with validated numbers.

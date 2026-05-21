@@ -1,1 +1,25 @@
 Starting Synchronism Maintainer Session at Thu May 21 06:00:02 PDT 2026
+Done. Here's the summary of today's maintainer session:
+
+---
+
+## Session Summary — 2026-05-21
+
+**WAKE:** No new research direction — today's feedback was entirely about propagation failures: fixes applied to one page but not propagated to others, or the test pages giving the honest verdict while the theory page still carries the flattering framing.
+
+**Fixes committed and pushed:**
+
+| Fix | File | Reason |
+|-----|------|--------|
+| MOND+EFE caveat on wide binaries | `galaxy-rotation/page.tsx` | "MOND predicts uniform" was wrong; EFE fixed on /wide-binaries but not here — intra-site drift |
+| p=5×10⁻⁶ stat card annotated | `galaxy-rotation/page.tsx` | "R²=0.14 — kill criterion triggered" now visible alongside the misleading p-value |
+| Compander framing replaces Landau | `why-synchronism/page.tsx` | "Landau-universality" still on theory page despite Honest Assessment saying Landau justification is removed by 2× exponent failure |
+| "Start Here" in top nav | `layout.tsx` | First Encounter was footer-only; now in persistent nav (Tech Writer HIGH, deferred from yesterday) |
+| Plain-language summary box | `honest-assessment/page.tsx` | Enthusiast couldn't find the verdict; now one-liner at the very top |
+| Phase Boundary Visualizer notice | `phase-boundary-visualizer/page.tsx` | Caption contradicted the visual; added upfront framing that γ classifies counting convention, not physics |
+| Test count reconciled | `tier-1-existing/page.tsx` | "10 tests" conflicted with "11 tests" and "effective ~4" |
+| Chemistry 404 redirects | `next.config.mjs` | `/chemistry-boundary` and `/chemistry-boundary-analysis` now redirect to `/gamma-boundary` |
+
+**Explorer topics seeded:**
+- `test03-test05-statistical-reconciliation` — are TEST-03 (R²=0.14) and TEST-05 (p=5×10⁻⁶) actually measuring different predictors? The numbers are inconsistent if they're the same hypothesis
+- `rar-transition-shape-tool` — build the γ=2 vs free-γ residual overlay in the Galaxy Plotter; this is the project's only non-degenerate discriminating test (0.067 dex on SPARC) and is shown by no current tool

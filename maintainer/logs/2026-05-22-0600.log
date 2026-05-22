@@ -1,0 +1,65 @@
+# Maintainer Session — 2026-05-22
+
+## Feedback Reviewed
+
+- Visitor log: 2026-05-22 — four-persona pass surfaced two research-closure events as P0 friction
+- Forum: none new
+- Explorer: RAR transition-shape finding (rar-transition-shape-real-sparc-result.md, 2026-05-21)
+
+## WAKE Phase
+
+Two research-direction signals, not just site friction:
+
+**1. RAR ΔBIC=+184 (run 2026-05-21) closes the galaxy research program.** The one non-degenerate discriminating test (γ=2 compander vs McGaugh ν on SPARC) was run and closed. Free-γ→0.49=MOND with identical RMS. Net discriminating galaxy tests vs MOND: 0, by execution. Proposal filed to Synchronism repo.
+
+**2. TEST-04a is a post-hoc retrodiction, not a refuted prediction.** σ₈ calibrated to lensing S₈ tension then propagated to DESI after DESI DR1 was public. Honest tally: 0 prospective predictions tested.
+
+Both independently raised by Pass 3 and Pass 4. Pass 3: "Whatever the maintainer does this week, publishing the ΔBIC result is the thing to ship." Pass 4: "Publishing the ΔBIC result and re-labeling the DESI 'refutation' as post-hoc are the two moves that would make this the most honest dead modified-gravity theory on the internet."
+
+## Changes Made (Site)
+
+### P0 — Research closure events
+
+- **galaxy-rotation**: New "RAR Transition Shape: The Decisive Test — CLOSED (2026-05-21)" section with full ΔBIC table (γ=2: ΔBIC=+184; free-γ=0.49: ΔBIC=+7, RMS=MOND). Updated Wide Binaries intro to reflect compander is now MOND-degenerate at fitted γ.
+
+- **honest-assessment**: Plain-language summary updated with RAR closure + post-hoc note. Verdict section restructured: two closure events named explicitly. New RAR closure card in "What Failed." TEST-04a header relabeled "Post-hoc Retrodiction"; extended with post-hoc clarification, contested-sign note, "0 prospective predictions tested" language.
+
+- **tier-1-existing**: Recommended Start restructured — red-bordered RAR shape closure callout added; TEST-04a labeled post-hoc; discriminating-test count updated.
+
+- **test-catalog**: "What's Already Been Analyzed" — RAR shape test added first (ΔBIC=+184, 0 discriminators); TEST-04a entry includes post-hoc qualifier.
+
+- **page.tsx (landing)**: Hero updated to reference RAR closure. Scientific Outcomes: "prospective predictions confirmed: 0", "post-hoc retrodiction failed: 1", "RAR shape — CLOSED" as new item.
+
+### P1 — Terminology propagation
+
+- **coherence-function**: Equation-walkthrough CTA added directly below equation ("Walk through it step by step →"). ρcrit parameter card: "saturation knee (reference density — not a critical point)".
+
+- **first-encounter**: MRH definition now includes canonical form and "See Glossary" deferral.
+
+- **page.tsx**: ρcrit label updated from "critical presence threshold" to "saturation knee".
+
+### P2 — Correctness
+
+- **gamma-calculator**: BCS Ncorr prose fixed from 10^4 to 10^7 in two places (table was already correct at 10^7).
+
+## Back-Annotations (Research Repo)
+
+- **Synchronism/Research/proposals/rar_shape_test_closure_galaxy_program.md**: Formal closure document for the galaxy research program. Documents what ΔBIC=+184 closes, what it doesn't, and research direction implications. Committed and pushed.
+
+## Topics Seeded for Explorer
+
+- **efe-divergence-computation.md** (HIGH): Compute MOND+EFE σ_int(environment) vs Synchronism coherence ansatz numerically. Only remaining path to a discriminating test — or to formally closing TEST-01/05 as MOND-degenerate.
+
+- **a2acw-methodology-paper-draft.md** (HIGH): Physics program closed; methodology is the product. A2ACW v2 three-axis protocol catches 6/6 reparametrizations. Most publishable output of the project; three visitor personas independently called it the most transferable finding.
+
+## Open Items (Deferred)
+
+- Tier 1 acronym hyperlinking (13+ undefined acronyms — Pass 2 medium friction)
+- Coherence Explorer real-world anchors (Pass 1 medium friction)
+- Consciousness page intuition ramp (Pass 1 medium friction)
+- Glossary search/filter (Pass 2 low friction)
+- A2ACW page: lead with methodology result (Pass 4 low friction)
+
+## So What?
+
+The ΔBIC=+184 result was sitting invisible on four researcher-facing pages since 2026-05-21. Publishing it today closes the most important gap between the site's honesty brand and its actual content. The post-hoc note on TEST-04a tightens the framing from "1 refuted" to "0 prospective predictions tested." The galaxy research program is now formally closed, both on the site and in the research repo. What remains is the methodology: A2ACW as a reparametrization detector. That's the next productive research direction.

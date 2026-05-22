@@ -63,3 +63,29 @@ Both independently raised by Pass 3 and Pass 4. Pass 3: "Whatever the maintainer
 ## So What?
 
 The ΔBIC=+184 result was sitting invisible on four researcher-facing pages since 2026-05-21. Publishing it today closes the most important gap between the site's honesty brand and its actual content. The post-hoc note on TEST-04a tightens the framing from "1 refuted" to "0 prospective predictions tested." The galaxy research program is now formally closed, both on the site and in the research repo. What remains is the methodology: A2ACW as a reparametrization detector. That's the next productive research direction.
+Session complete. Here's the summary:
+
+---
+
+**WAKE:** Today's visitor feedback revealed two research-direction closures, not just site friction:
+1. The RAR ΔBIC=+184 result (run 2026-05-21) was invisible on all four researcher-facing pages — a galaxy-program closure event buried since yesterday
+2. TEST-04a is a post-hoc retrodiction, not a falsified prediction — the honest tally is "0 prospective predictions tested"
+
+**What changed:**
+
+*P0 — Research closure events published:*
+- **Galaxy Rotation**: New "RAR Transition Shape — CLOSED (2026-05-21)" section with full ΔBIC table (γ=2 refuted at ΔBIC=+184; free-γ=0.49=MOND)
+- **Honest Assessment**: RAR closure card added to "What Failed"; TEST-04a relabeled "Post-hoc Retrodiction" with contested-sign note
+- **Tier 1 / Test Catalog / Landing**: RAR closure surfaced; "1 refuted" → "0 prospective predictions; 1 post-hoc retrodiction"
+
+*P1 — Terminology propagation:*
+- Equation Walkthrough CTA added directly below the coherence equation (fixes the #1 Pass 1 + Pass 2 friction)
+- ρcrit → "saturation knee" in coherence-function and landing page
+- MRH definition in First Encounter now defers to Glossary canonical form
+- γ Calculator BCS Ncorr prose fixed from 10⁴ → 10⁷
+
+*Research repo:* `rar_shape_test_closure_galaxy_program.md` filed to Synchronism
+
+*Explorer seeded:* `efe-divergence-computation` (last remaining constructive theory task) and `a2acw-methodology-paper-draft` (physics closed; methodology paper is what's next)
+
+**So what?** The galaxy program is now formally closed everywhere it needed to be. The site's honesty brand holds. The physics is done; the A2ACW methodology result is the project's remaining publishable output.

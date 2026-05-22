@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
         <p className="hero-subtitle">
           Synchronism maps presence to coherence using a single function across 80 orders of magnitude.
-          Some predictions work. Some fail. One was refuted by external data. All are documented honestly.
+          Some predictions work. Some fail. The one non-degenerate galaxy test was run — and collapsed the framework onto MOND. All are documented honestly.
         </p>
 
         <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
@@ -61,7 +61,7 @@ export default function Home() {
           <p style={{ marginBottom: '0.5rem' }}>
             <strong style={{ color: 'var(--color-accent-violet)' }}>C</strong> = coherence (0 = quantum, 1 = classical) &nbsp;
             <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> &nbsp;
-            <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = critical presence threshold
+            <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = saturation knee (reference density; not a critical point)
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             The tanh shape is <em>motivated</em> by Landau-class mean-field theory &mdash; a phenomenological choice, not a derived result. The log-density argument is physically motivated. Three parameters (A, B, &#x03B2;) are fitted to data.{' '}
@@ -197,10 +197,11 @@ export default function Home() {
               flexWrap: 'wrap',
               alignItems: 'center',
             }}>
-              <span>Predictions confirmed by independent data: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Refuted by external data: <strong style={{ color: '#ef4444' }}>1</strong> (DESI fσ₈ — sign reversed)</span>
+              <span>Prospective predictions confirmed: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
+              <span>Post-hoc retrodiction failed: <strong style={{ color: '#ef4444' }}>1</strong> (DESI fσ₈ — sign reversed)</span>
+              <span>RAR shape test — CLOSED: <strong style={{ color: '#ef4444' }}>γ=2 refuted</strong> (ΔBIC=+184; free-γ→MOND)</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO modulation)</span>
-              <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong> (all demoted from &ldquo;Validated&rdquo;)</span>
+              <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong></span>
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>Full ledger &rarr;</Link>
             </div>
           </section>

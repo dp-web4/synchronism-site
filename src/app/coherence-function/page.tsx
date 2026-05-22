@@ -24,6 +24,14 @@ export default function CoherenceFunction() {
           C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </EquationDisplay>
 
+        <div style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.25)', borderRadius: '0.375rem', padding: '0.6rem 1rem', marginBottom: '1rem', fontSize: '0.88rem' }}>
+          <strong>New to the notation?</strong>{' '}
+          <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>
+            Walk through it step by step &rarr;
+          </Link>{' '}
+          — a 6-step interactive that defines every symbol (C, &#x03C1;, &#x03C1;<sub>crit</sub>, &#x03B3;, ln, tanh) in plain language.
+        </div>
+
         <p>
           This maps <strong>presence</strong> to <strong>coherence</strong>
           (a dimensionless number between 0 and 1 that describes how quantum or classical a system is).
@@ -48,7 +56,7 @@ export default function CoherenceFunction() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontFamily: 'serif', fontStyle: 'italic', fontSize: '1.3rem', color: 'var(--color-accent-violet)' }}>&#x03B3;, &#x03C1;<sub>crit</sub></div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <strong>Parameters:</strong> coupling strength, transition density
+              <strong>Parameters:</strong> coupling strength, saturation knee (reference density — not a critical point; C(&#x03C1;<sub>crit</sub>,&#x03B3;=2)&#x2248;0.88)
             </div>
           </div>
         </div>

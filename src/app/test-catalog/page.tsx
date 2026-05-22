@@ -118,11 +118,13 @@ export default function TestCatalog() {
             datasets with these results:
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem', paddingLeft: '1.25rem' }}>
+            <li><strong>RAR transition shape</strong> (2807 SPARC points, 2026-05-21): γ=2 compander refuted at ΔBIC=+184; free-γ=0.49=MOND — <span style={{ color: '#ef4444' }}>FAILED (γ=2); collapses to MOND at fitted γ. Net discriminating galaxy tests vs MOND: 0.</span></li>
             <li><strong>Galaxy rotation</strong> (14,760 galaxies, SPARC + ALFALFA-SDSS): qualitative curve match — <span style={{ color: '#f59e0b' }}>MOND reparametrization</span>, not novel</li>
             <li><strong>TEST-03 TFR scatter</strong> (same SPARC data): R&sup2; = 0.14 &lt; 20% kill threshold — <span style={{ color: '#ef4444' }}>FAILED</span></li>
+            <li><strong>DESI fσ₈ (TEST-04a)</strong>: sign-reversed mechanism-class failure — <span style={{ color: '#ef4444' }}>FAILED</span> <span style={{ color: '#f59e0b' }}>(post-hoc retrodiction, not a prospective prediction)</span></li>
             <li><strong>Chemistry boundary consistency</strong> (1,703 phenomena): 89% consistent — <span style={{ color: '#f59e0b' }}>calibration set, not blind test</span></li>
             <li><strong>Superconductivity (η factor)</strong>: reproduces Abrikosov-Gor&apos;kov formula — <span style={{ color: '#f59e0b' }}>reparametrization</span></li>
-            <li><strong>Born rule</strong>: reproduces |&#x03B1;|&sup2; via coherence conservation — <span style={{ color: '#f59e0b' }}>reparametrization</span> (no deviation predicted)</li>
+            <li><strong>Born rule</strong>: reproduces |α|² via coherence conservation — <span style={{ color: '#f59e0b' }}>reparametrization</span> (no deviation predicted)</li>
           </ul>
           <Link href="/honest-assessment" style={{ color: '#10b981', fontSize: '0.85rem' }}>
             Full ledger: wins, failures, and reparametrizations &rarr;

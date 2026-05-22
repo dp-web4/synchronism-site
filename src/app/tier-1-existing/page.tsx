@@ -195,23 +195,35 @@ export default function Tier1Existing() {
         </div>
 
         <h2>Recommended Start</h2>
+        <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1rem', padding: '0.75rem 1rem', background: 'rgba(239,68,68,0.05)' }}>
+          <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 0.5rem' }}>
+            <strong style={{ color: '#ef4444' }}>RAR Transition Shape — CLOSED (2026-05-21):</strong>{' '}
+            The only non-degenerate galaxy discriminating test between the Synchronism γ=2 compander and
+            McGaugh&apos;s MOND interpolating function was executed on 2807 real SPARC points.
+            γ=2 refuted at ΔBIC=+184 (conservative: ≈33). Free-γ fit: γ≈0.49&nbsp;=&nbsp;MOND,
+            RMS identical to McGaugh. There is no γ for which the compander is both distinct from MOND and
+            consistent with SPARC. <strong>Net discriminating galaxy tests vs MOND: 0, by execution.</strong>
+            See <Link href="/galaxy-rotation" style={{ color: '#ef4444' }}>Galaxy Rotation: RAR Transition Shape</Link>{' '}
+            and <Link href="/honest-assessment" style={{ color: '#ef4444' }}>Honest Assessment</Link>.
+          </p>
+        </div>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            <strong>TEST-04a is closed (FAILED — sign reversed).</strong> TEST-04 was withdrawn. The remaining
-            priority is <strong>TEST-02</strong> (wide binaries, Gaia DR3 — zero cost). Tests 01 and 05
-            test the same underlying prediction on different samples (count as one test).
+            <strong>TEST-04a is closed (FAILED — sign reversed; post-hoc retrodiction).</strong> TEST-04 was withdrawn.
+            Tests 01 and 05 test the same underlying prediction on different samples (count as one test).
+            TEST-02 (wide binaries, Gaia DR3) remains pending — but with the compander now MOND-degenerate at all
+            fitted γ values, wide-binary discrimination requires quantifying the MOND+EFE divergence first.
           </p>
           <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
             <strong>EFE gap (2026-05-13):</strong> TEST-01, TEST-02, and TEST-05 are all environment-dependent
             predictions. MOND&apos;s External Field Effect (Bekenstein &amp; Milgrom 1984; AQUAL/QUMOND) also predicts
-            environment-dependent dynamics. For these tests to be discriminating, the Synchronism prediction must
-            quantitatively diverge from the MOND+EFE prediction at some measurable parameter value. That comparison
-            has not yet been computed. Until it is, treat these as &ldquo;possibly MOND+EFE degenerate.&rdquo;
-            See <a href="../../Synchronism/Research/proposals/tier1_mond_efe_discriminator_gap.md" style={{ color: 'var(--color-accent-blue)' }}>research proposal</a>.
+            environment-dependent dynamics. The compander is now known to be MOND-equivalent at its best-fit γ.
+            Until the MOND+EFE divergence is computed at some parameter value, these tests cannot discriminate
+            Synchronism from MOND.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-            Tests 09 and 10 are MOND-shared predictions (positive results do not discriminate Synchronism from MOND).
-            The effective independent novel test count, after TEST-04a failure and TEST-04 withdrawal, is approximately 4.
+            Tests 09 and 10 are MOND-shared predictions. The effective independent novel test count
+            after TEST-04a failure, TEST-04 withdrawal, and RAR shape closure is approximately 2–3 (TEST-02, TEST-01/05 combined — pending EFE divergence computation).
           </p>
         </div>
 

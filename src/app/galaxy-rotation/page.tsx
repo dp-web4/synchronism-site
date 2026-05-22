@@ -151,19 +151,81 @@ export default function GalaxyRotation() {
           </p>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-          <strong>Missing measurement:</strong> The incremental value of adding the environmental term
-          has not been quantified via ΔBIC (Bayesian Information Criterion) against baseline MOND on
-          the same dataset. With N = 14,585, even a tiny effect is statistically significant; ΔBIC
-          would determine whether the fit improvement exceeds the penalty for adding the extra parameter.
-          Until that analysis is run, &ldquo;small but detectable effect&rdquo; is a qualitative
-          description, not a measurement.
+          <strong>ΔBIC note:</strong> The incremental value of the environmental scatter term above
+          baseline MOND has not been quantified via ΔBIC on the ALFALFA-SDSS dataset. A separate
+          ΔBIC analysis was run for the RAR transition-shape question (see below) — which is the
+          more fundamental discriminating question.
         </p>
 
-        <h2>Wide Binaries: The Cleaner Discriminator</h2>
+        <div style={{ borderLeft: '3px solid #ef4444', background: 'rgba(239,68,68,0.06)', borderRadius: '0.375rem', padding: '0.875rem 1rem', marginTop: '1.5rem', marginBottom: '1.5rem' }}>
+          <h2 style={{ color: '#ef4444', marginTop: 0, fontSize: '1.1rem' }}>RAR Transition Shape: The Decisive Test — CLOSED (2026-05-21)</h2>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            The environment-dependent scatter tests (TEST-01, TEST-05) probe the <em>size</em> of
+            deviations from MOND&apos;s RAR. A more fundamental question is whether the compander&apos;s
+            functional form (μ<sub>Syn</sub> = tanh(γ ln(1+x)), γ=2) differs from McGaugh&apos;s
+            interpolating function ν(x) = 1/(1&minus;e<sup>&minus;√x</sup>) in the <em>shape</em> of
+            the transition — the only test that could discriminate the two frameworks without assuming
+            any environmental coupling.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            This test was run on 2807 real SPARC points (Lelli-McGaugh-Schombert 2016, 10% velocity-error cut)
+            with a₀ free and standard M/L priors. Result:
+          </p>
+          <div style={{ overflowX: 'auto', marginBottom: '0.75rem' }}>
+            <table style={{ borderCollapse: 'collapse', fontSize: '0.85rem', color: 'var(--color-text-secondary)', width: '100%' }}>
+              <thead>
+                <tr style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
+                  <th style={{ textAlign: 'left', padding: '0.3rem 0.75rem 0.3rem 0' }}>Model</th>
+                  <th style={{ textAlign: 'right', padding: '0.3rem 0.75rem' }}>RMS (dex)</th>
+                  <th style={{ textAlign: 'right', padding: '0.3rem 0' }}>ΔBIC vs McGaugh</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>McGaugh ν (standard MOND)</td>
+                  <td style={{ textAlign: 'right', padding: '0.25rem 0.75rem' }}>0.1437</td>
+                  <td style={{ textAlign: 'right', padding: '0.25rem 0', color: '#10b981' }}>— (reference)</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Compander μ, <strong>γ=2 pinned</strong></td>
+                  <td style={{ textAlign: 'right', padding: '0.25rem 0.75rem' }}>0.1485</td>
+                  <td style={{ textAlign: 'right', padding: '0.25rem 0', color: '#ef4444', fontWeight: 700 }}>+184</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Compander μ, γ free (best fit: γ=0.49)</td>
+                  <td style={{ textAlign: 'right', padding: '0.25rem 0.75rem' }}>0.1437</td>
+                  <td style={{ textAlign: 'right', padding: '0.25rem 0', color: '#f59e0b' }}>+7.1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+            <strong>Kill criterion triggered.</strong> ΔBIC = +184 ≫ 10 refutes the γ=2 compander
+            as the galaxy mechanism. Conservative correction for intra-galaxy point correlation
+            (effective N≈500–1000): ΔBIC ≈ 33 — still decisive. The residual is a coherent
+            S-shaped ≈0.05–0.10 dex signature at the transition, significant at ~8σ per bin.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+            <strong>The fork that closes the question:</strong> free-γ converges to γ≈0.49 with
+            RMS identical to McGaugh to four digits. ΔBIC=+7 is entirely the BIC penalty for the
+            extra parameter — the fit improvement is zero. There is no γ for which the compander is
+            both (a) distinct from MOND and (b) consistent with SPARC. Pin γ=2 → refuted. Fit γ → MOND.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
+            Net discriminating galaxy tests vs MOND: <strong style={{ color: '#ef4444' }}>0, by execution</strong>.
+            Script + full analysis: <code style={{ fontSize: '0.78rem' }}>explorer/scripts/rar_transition_shape_real_sparc.py</code>,
+            finding: <code style={{ fontSize: '0.78rem' }}>explorer/findings/rar-transition-shape-real-sparc-result.md</code>.
+          </p>
+        </div>
+
+        <h2>Wide Binaries</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          While the RAR environmental scatter (TEST-03) has already tripped its kill criterion,
-          the <Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>wide binary test (TEST-02)</Link>{' '}
-          remains the cleanest live discriminator between Synchronism and MOND. Wide stellar binaries
+          The RAR environmental scatter (TEST-03) tripped its kill criterion, and the RAR
+          transition-shape test (above) has now closed the main galaxy-scale question.
+          The <Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>wide binary test (TEST-02)</Link>{' '}
+          was previously identified as a discriminator, but with the compander collapsing to MOND
+          at its best-fit γ, the wide-binary question is now whether MOND+EFE and the compander
+          (at fitted γ≈0.49) diverge in a density-stratified wide-binary sample. Wide stellar binaries
           (separations &gt; 0.1 pc) probe the sub-a&#x2080; acceleration regime in a fundamentally
           different mass and density environment from galaxy rotation curves — no dark matter halos,
           no baryonic feedback, just two stars in a nearly Keplerian orbit.

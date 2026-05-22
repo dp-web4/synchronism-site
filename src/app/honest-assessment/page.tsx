@@ -39,9 +39,12 @@ export default function HonestAssessment() {
           <strong>In plain language:</strong> The framework&apos;s biggest external test came out backwards —
           we predicted the universe&apos;s large-scale structure should be growing <em>slower</em> than
           the standard model, but real data (DESI 2024) shows it growing at or <em>above</em> standard-model
-          rates. The predictions we thought were novel turned out to already exist in physics under
-          different names. Zero predictions have been independently confirmed. The research continues —
-          but the scoreboard is honest: <strong>0 confirmed, 1 refuted, 6 reparametrizations</strong>.
+          rates (note: that particular test was post-hoc, not pre-registered). The galaxy transition-shape
+          test — the one non-degenerate discriminating test vs MOND — was run on 2807 SPARC galaxies
+          in May 2026 and collapsed the framework onto MOND (ΔBIC=+184 against the γ=2 version;
+          free-γ = MOND). The predictions we thought were novel turned out to already exist in physics under
+          different names. Zero predictions have been independently confirmed.
+          Scoreboard: <strong>0 confirmed, 0 prospective predictions tested, 6 reparametrizations, 1 galaxy-program closure</strong>.
         </p>
       </div>
 
@@ -49,14 +52,25 @@ export default function HonestAssessment() {
       <section className="card card-highlight section">
         <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated May 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 1 refuted by external data</strong>.
-          DESI (Dark Energy Spectroscopic Instrument) DR1 (2026-05-05) measures fσ₈ (growth rate × amplitude of matter fluctuations, z=0.51) ≈ 0.55 ± 0.06 — above ΛCDM (Lambda Cold Dark Matter standard model), opposite to Synchronism&apos;s
-          predicted suppression (0.418). By Session 107&apos;s own kill criterion, the framework&apos;s one live
-          cosmological discriminator (TEST-04a) has failed — not just by magnitude (2.4σ), but in the
-          <em> direction</em> of the prediction: any G<sub>local</sub>/G<sub>global</sub> suppression mechanism
-          predicts fσ₈ <em>below</em> ΛCDM; DESI DR1 measures it <em>above</em>. This is a
-          mechanism-class failure — the sign of the leading-order effect is reversed. This is the first external dataset to
-          adjudicate a Synchronism-specific prediction.
+          After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 0 prospective
+          predictions tested</strong>. Two major closure events in May 2026:
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>(1) DESI fσ₈ (TEST-04a, 2026-05-05):</strong> The framework predicted
+          fσ₈(z=0.51)&nbsp;≈&nbsp;0.418 (12% suppression below ΛCDM). DESI DR1 measures fσ₈&nbsp;≈&nbsp;0.55&nbsp;±&nbsp;0.06 —
+          above ΛCDM, opposite sign. Mechanism-class failure — no retuning of parameters can repair a sign error.
+          <strong> Caveat: this was a post-hoc retrodiction, not a prospective prediction</strong> (σ₈ was
+          calibrated to the lensing S₈ tension and propagated to DESI after DESI DR1 was public;
+          the internal consistency failure is real, but it is not a falsified advance prediction).
+          Note also that the low-z growth sign is contested: DESI fσ₈ is broadly ΛCDM-consistent,
+          while lensing S₈ (KiDS, DES) favors suppression — the two datasets point opposite directions.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>(2) RAR Transition Shape (2026-05-21):</strong> The one non-degenerate galaxy-scale
+          discriminating test — whether the compander&apos;s transition curve (γ=2) differs from McGaugh&apos;s MOND
+          interpolating function — was run on 2807 real SPARC points. γ=2 is refuted at ΔBIC=+184
+          (conservative: ≈33). Free-γ converges to γ≈0.49&nbsp;=&nbsp;MOND, with RMS identical to McGaugh.
+          Net discriminating galaxy tests vs MOND: <strong>0, by execution</strong>.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>The entity criterion Γ&nbsp;&lt;&nbsp;m</strong>, previously labeled the sole surviving novel
@@ -235,7 +249,30 @@ export default function HonestAssessment() {
 
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>TEST-04a: DESI RSD fσ₈ — Mechanism-Class Failure (Sign Reversed)</h3>
+              <h3>RAR Transition Shape — SPARC ΔBIC=+184, γ=2 Refuted, γ<sub>free</sub>=MOND (2026-05-21)</h3>
+              <ValidationBadge status="failed" label="Kill Criterion Triggered — CLOSED" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              The only non-degenerate galaxy-scale discriminating test between the Synchronism compander
+              (μ<sub>Syn</sub>&nbsp;=&nbsp;tanh(γ&nbsp;ln(1+x)), γ=2) and MOND&apos;s RAR interpolating function
+              was executed on 2807 real SPARC points. Kill criterion: ΔBIC &gt; 10 favoring McGaugh refutes γ=2.
+              Actual result: <strong>ΔBIC&nbsp;=&nbsp;+184</strong> (conservative intra-galaxy correlation
+              correction: ΔBIC&nbsp;≈&nbsp;33 — still decisive).
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              The residual is a coherent S-shaped ≈0.05–0.10 dex signature at the RAR transition
+              (g<sub>bar</sub>&nbsp;≈&nbsp;a₀), significant at ~8σ per bin. Free-γ fit converges to γ≈0.49&nbsp;=&nbsp;MOND,
+              with RMS identical to McGaugh to four digits. ΔBIC&nbsp;=&nbsp;+7 for free-γ is entirely the BIC
+              parameter penalty, not a fit difference — the compander at its best-fit γ is MOND.
+              <strong> Net discriminating galaxy tests vs MOND: 0, by execution.</strong>
+              Script: <code style={{ fontSize: '0.78rem' }}>explorer/scripts/rar_transition_shape_real_sparc.py</code>.
+              See also <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation: RAR Transition Shape</Link>.
+            </p>
+          </div>
+
+          <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>TEST-04a: DESI RSD fσ₈ — Mechanism-Class Failure (Sign Reversed) — Post-hoc Retrodiction</h3>
               <ValidationBadge status="failed" label="Failed — Wrong Direction, Not Just Magnitude" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -254,6 +291,12 @@ export default function HonestAssessment() {
               (low-z bins systematically HIGH vs Synchronism: LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ).
               Adjudicated 2026-05-05; mechanism-class framing added 2026-05-09 after four-persona review.
               This was the framework&apos;s only live cosmological discriminator — no replacement substituted.
+              <strong> Post-hoc status (2026-05-22):</strong> Session 107 committed 2025-12-10; DESI DR1
+              published April 2024. σ₈ was calibrated to the lensing S₈ tension then propagated to DESI —
+              no prospective advance prediction was registered before the data was available. The internal
+              consistency failure is real; it is not a falsified prospective prediction. Honest tally:
+              0 prospective predictions tested. Note also that the low-z growth sign is contested: DESI fσ₈
+              is broadly ΛCDM-consistent, while lensing S₈ (KiDS, DES) favors suppression.
             </p>
           </div>
 

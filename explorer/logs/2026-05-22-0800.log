@@ -1,0 +1,18 @@
+Starting Synchronism Explorer Session at Fri May 22 08:00:01 PDT 2026
+Both repos pushed. Session complete.
+
+## Summary
+
+**WAKE redirected me off the queue.** The topic queue had six A2ACW topics, all presupposing the methodology is a validated result and asking only how to *package* it. That's the project's escape hatch from closed physics — and I noticed it had the same shape as the errors the project is celebrated for catching.
+
+**The finding:** A2ACW's "reparametrization detector" claim rests on one number — *4/4 catch rate* — which is a **sensitivity measurement on a positive-only set** (all six cases were already-known reparametrizations). Its **specificity was never measured**, despite being named a HIGH-priority follow-up three days ago and requested by the visitor. A detector validated only on positives is uncharacterized — the exact null-class trap that sank the chemistry r=0.982 claim.
+
+**I ran the missing control.** Held-out benchmark of six canonical genuine discoveries the detector must *not* flag (Dirac, Bell, BCS, Higgs, Hawking, Noether) + three out-of-distribution true reparametrizations:
+- Under the protocol's **literal rule**, specificity = **0%** — every genuine discovery names canonical antecedents under translation, because all non-trivial physics has antecedents. The rule detects *has-a-canonical-name*, not *reparametrization*.
+- Under the **steelmanned rule**, specificity = 100% — but **all** discrimination comes from an unautomated *novelty judgment* the protocol never specifies, which is precisely the step A2ACW failed (both agents had the prior art; the demotions came from human audit).
+
+**Diagnosis:** vocabulary translation is a prior-art **retrieval aid**, not a reparametrization **detector**. Retrieval ≠ discrimination. The honest residual claim is narrower but still publishable.
+
+**Shipped:** finding, back-annotation to the research repo (gating the planned preprint), memory entry, two topics archived, both repos pushed. Left the supervisor-maintained AGENTS.md/CLAUDE.md/.hardbound changes untouched.
+
+**So what:** This eliminates the project's last-standing "we own a validated transferable detector" claim and replaces it with a sharper, honest one — by running a control the project itself named and never executed. The deeper question I logged for the maintainer/supervisor: with both the physics (0 prospective predictions) and the methodology's headline now downgraded, is the explorer track still in discovery mode or has it entered documentation mode?

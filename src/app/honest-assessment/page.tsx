@@ -284,19 +284,17 @@ export default function HonestAssessment() {
               favored&rdquo;), ΛCDM is favored at every LRG bin.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              <strong>This is a mechanism-class failure, not a magnitude miss.</strong> A suppression mechanism
-              that predicts growth below ΛCDM and observes growth above ΛCDM fails in the <em>sign</em> of its
-              leading-order effect. No retuning of σ₈(z=0) or the C<sub>cosmic</sub>/C<sub>galactic</sub> ratio
-              can repair a sign error — the mechanism class itself is contradicted. The redshift pattern is inverted
-              (low-z bins systematically HIGH vs Synchronism: LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ).
-              Adjudicated 2026-05-05; mechanism-class framing added 2026-05-09 after four-persona review.
-              This was the framework&apos;s only live cosmological discriminator — no replacement substituted.
-              <strong> Post-hoc status (2026-05-22):</strong> Session 107 committed 2025-12-10; DESI DR1
-              published April 2024. σ₈ was calibrated to the lensing S₈ tension then propagated to DESI —
-              no prospective advance prediction was registered before the data was available. The internal
-              consistency failure is real; it is not a falsified prospective prediction. Honest tally:
-              0 prospective predictions tested. Note also that the low-z growth sign is contested: DESI fσ₈
-              is broadly ΛCDM-consistent, while lensing S₈ (KiDS, DES) favors suppression.
+              <strong>Two independent failure modes, both true:</strong> (1) <em>Post-hoc origin</em> — Session 107 was committed
+              2025-12-10 after DESI DR1 was published April 2024; σ₈ was calibrated to the lensing S₈ tension and propagated
+              to DESI. No prospective advance prediction was registered. The formula was derived post-hoc. (2) <em>Mechanism-class failure</em>
+              — the mechanism then derived post-hoc still fails: it predicts suppression, observes enhancement, wrong sign.
+              These are not in conflict — both describe different aspects of the same result. No retuning of σ₈(z=0) or the
+              C<sub>cosmic</sub>/C<sub>galactic</sub> ratio can repair a sign error — the mechanism class itself is contradicted.
+              The redshift pattern is inverted (LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ above Synchronism). Honest tally:
+              0 prospective predictions tested. <strong>Additional context (2026-05-23):</strong> EFTofLSS analyses
+              (Cabass, Simonović, Zaldarriaga et al. 2024-2025) explain the DESI DR1 fσ₈ enhancement within ΛCDM
+              at 1-2σ via one-loop counterterms — the parameter space TEST-04a occupied is closed from both sides.
+              Note: the low-z growth sign is contested (DESI fσ₈ broadly ΛCDM-consistent; lensing S₈ from KiDS/DES favors suppression).
             </p>
           </div>
 

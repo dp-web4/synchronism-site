@@ -326,6 +326,34 @@ export const terms: Record<string, TermDefinition> = {
     brief: 'A number like "2.4\u03c3" means the result is 2.4 standard deviations from the expected value \u2014 roughly a 1-in-60 chance if the model is correct.',
     explanation: 'In statistics, \u03c3 (sigma) is the standard deviation \u2014 a measure of how spread out a distribution is. When scientists say a result is "2.4\u03c3 away" from a prediction, they mean: if the prediction were exactly correct, there is about a 1.6% chance of seeing a discrepancy this large by random chance. The conventional thresholds in physics are: 2\u03c3 = "interesting" (~2% chance), 3\u03c3 = "evidence" (~0.3% chance), 5\u03c3 = "discovery" (~0.00003% chance). A 2.4\u03c3 disagreement (like DESI DR1 vs Synchronism\'s f\u03c3\u2088 prediction) is taken seriously but is not by itself a definitive refutation.',
   },
+  'EFE': {
+    term: 'EFE',
+    fullName: 'External Field Effect',
+    brief: 'In MOND, a system embedded in an external gravitational field can be affected even if the internal acceleration is above the MOND threshold.',
+    explanation: 'The External Field Effect (EFE) is a feature of MOND theories (Bekenstein-Milgrom 1984) with no Newtonian analog. In Newtonian gravity, external uniform fields cancel out internally (equivalence principle). In MOND, a system\'s internal dynamics depend on the total (internal + external) acceleration relative to a\u2080. This means a wide binary star system in a high-density environment (high external field) behaves more Newtonian than the same system in a low-density void. The EFE is observationally relevant for the Synchronism TEST-02 (wide binary density dependence): MOND+EFE also predicts environment-dependent dynamics, making TEST-02 potentially degenerate with MOND unless the amplitude prediction differs.',
+    learnMore: '/wide-binaries',
+  },
+  'AIC': {
+    term: 'AIC',
+    fullName: 'Akaike Information Criterion',
+    brief: 'A model-selection score balancing fit quality against the number of parameters. Lower AIC = better model.',
+    explanation: 'AIC = 2k \u2212 2\u00b7ln(L), where k is the number of free parameters and L is the maximum likelihood. Unlike BIC, AIC does not penalize parameters as strongly (uses 2k not k\u00b7ln(n)). AIC favors models that fit well; BIC also penalizes complexity more. In the Synchronism context, running AIC across the compander family (tanh, Hill/Naka-Rushton, logistic, erf, \u03bc-law) would determine whether the tanh choice is informative or arbitrary. This comparison has not yet been run.',
+    learnMore: '/coherence-function',
+  },
+  'BCS': {
+    term: 'BCS',
+    fullName: 'Bardeen-Cooper-Schrieffer (Superconductivity)',
+    brief: 'The standard theory of conventional superconductivity: electrons form Cooper pairs and condense into a macroscopic quantum state.',
+    explanation: 'BCS theory (Bardeen, Cooper, Schrieffer 1957) explains how phonon-mediated attraction causes electrons to form bound pairs (Cooper pairs) below a critical temperature T_c. Above T_c, electrons behave independently (low coherence). Below T_c, they condense into a macroscopic quantum state with high coherence. In Synchronism\'s \u03b3 Calculator, BCS superconductors are placed in the "Collective" regime with N_corr \u2248 10\u2077 (pairs per coherence volume) \u2014 but this is a back-fit, not a forward prediction from BCS theory itself.',
+    learnMore: '/gamma-calculator',
+  },
+  'BEC': {
+    term: 'BEC',
+    fullName: 'Bose-Einstein Condensate',
+    brief: 'A state of matter where bosons occupy the same quantum ground state below a critical temperature, forming a macroscopic quantum object.',
+    explanation: 'A Bose-Einstein Condensate (BEC) forms when bosons (integer-spin particles: photons, He-4 atoms, Cooper pairs) are cooled below a critical temperature T_c. Unlike fermions, bosons can occupy the same quantum state, allowing a macroscopic fraction to condense into the ground state. BEC is highly coherent \u2014 N_corr is the entire condensate (10\u2076\u201310\u2079 atoms). In Synchronism\'s \u03b3 Calculator, BEC is placed in the "Collective" regime, which is correct (high N_corr, classical in Synchronism\'s non-standard usage). Note: Synchronism uses "Classical" to mean high-coherence collective behavior \u2014 the opposite of the standard physics usage.',
+    learnMore: '/gamma-calculator',
+  },
 };
 
 export function getTerm(key: string): TermDefinition | undefined {

@@ -67,7 +67,7 @@ const tests: Test[] = [
     time: 'ADJUDICATED (2026-05-05)',
     prediction: 'fσ₈(z=0.51) ≈ 0.418 — a ~12% suppression below ΛCDM (0.474). Mechanism: G_local/G_global = C_cosmic/C_galactic suppresses structure growth at late times. Session 107 forecasts 1.7σ–3.2σ discrimination per DESI LRG bin.',
     kill: 'fσ₈(z=0.51) > 0.46 (rules out Synchronism at >3σ); fσ₈(z=0.51) > 0.45 disfavors at >2σ',
-    alert: 'FAILED — MECHANISM-CLASS FAILURE (2026-05-09 classification upgrade from "disfavored"): DESI DR1 LRG1 (z=0.51) measures fσ₈ ≈ 0.55 ± 0.06 — ABOVE ΛCDM, not below it. This is not a magnitude miss — it is a sign reversal. The G_local/G_global suppression mechanism predicts growth BELOW ΛCDM at all z; DESI DR1 measures growth ABOVE ΛCDM at every low-z bin (LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ). A suppression mechanism cannot be retuned to produce enhancement — the mechanism class itself is contradicted. Combined σ₈(z=0) = 0.841 ± 0.034 vs Synchronism\'s 0.76 → 2.4σ. PRE-REGISTRATION NOTE: Session 107 committed 2025-12-10; DESI DR1 published April 2024 — post-hoc calculation. The internal consistency failure is real; it is not a prospective falsification. No replacement test substituted.',
+    alert: 'FAILED — MECHANISM-CLASS FAILURE (2026-05-09 classification upgrade from "disfavored"): DESI DR1 LRG1 (z=0.51) measures fσ₈ ≈ 0.55 ± 0.06 — ABOVE ΛCDM, not below it. This is not a magnitude miss — it is a sign reversal. The G_local/G_global suppression mechanism predicts growth BELOW ΛCDM at all z; DESI DR1 measures growth ABOVE ΛCDM at every low-z bin (LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ). A suppression mechanism cannot be retuned to produce enhancement — the mechanism class itself is contradicted. Combined σ₈(z=0) = 0.841 ± 0.034 vs Synchronism\'s 0.76 → 2.4σ. PRE-REGISTRATION NOTE: Session 107 committed 2025-12-10; DESI DR1 published April 2024 — post-hoc calculation. The internal consistency failure is real; it is not a prospective falsification. No replacement test substituted. ADDITIONAL CONTEXT (2026-05-23): EFTofLSS (Effective Field Theory of Large-Scale Structure) analyses by Cabass, Simonović, Zaldarriaga et al. (2024-2025) explain the DESI DR1 fσ₈ enhancement within ΛCDM at 1-2σ via one-loop counterterms, leaving no residual anomaly requiring a beyond-ΛCDM explanation. The parameter space TEST-04a occupied is closed from both sides: suppression predicted, enhancement observed, enhancement explained by standard EFT. TEST-04a is doubly closed.',
   },
   {
     id: 'TEST-05',
@@ -147,6 +147,26 @@ export default function Tier1Existing() {
           added after TEST-04 was withdrawn. Effective independent tests after failures and withdrawals: approximately 4.
           Just analysis. This is where Synchronism should be tested first.
         </p>
+
+        {/* Badge legend — requested by all four personas 2026-05-23 */}
+        <details style={{ marginBottom: '1.5rem' }}>
+          <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.9rem' }}>
+            Status badge definitions
+          </summary>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+            <strong>Validated</strong><span>Quantitative match with independent data</span>
+            <strong>Reparametrization</strong><span>Equivalent to existing physics (MOND, textbook QM) in different notation</span>
+            <strong>Untested</strong><span>Prediction exists, no data yet</span>
+            <strong>Speculative</strong><span>Conceptual proposal without quantitative test</span>
+            <strong>Failed</strong><span>Prediction contradicted by data (specific error documented)</span>
+            <strong>MOND-shared</strong><span>Operational state: positive result confirms Synchronism AND MOND; only a null discriminates</span>
+            <strong>Kill Triggered</strong><span>Operational state: measured value crossed the pre-registered kill criterion threshold</span>
+            <strong>Withdrawn</strong><span>Operational state: test retracted before execution due to derivation failure</span>
+          </div>
+          <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
+            Full definitions + operational states: <Link href="/research-philosophy" style={{ color: 'var(--color-accent-blue)' }}>Research Philosophy</Link>
+          </p>
+        </details>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
           <h3 style={{ fontSize: '0.9rem', marginBottom: '0.5rem' }}>Public Data Sources</h3>

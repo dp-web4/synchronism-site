@@ -155,7 +155,7 @@ export default function Home() {
               color: 'var(--color-text-secondary)',
             }}>
               <strong style={{ color: '#f59e0b' }}>Methodology note:</strong>{' '}
-              This site was developed via 3,308 A2ACW sessions &mdash; AI agents stress-testing each other&apos;s claims. The adversarial agents share the same training distribution and{' '}
+              This site was developed via 3,308 A2ACW (AI-to-AI Adversarial Collaboration Workshop) sessions &mdash; AI agents stress-testing each other&apos;s claims. The adversarial agents share the same training distribution and{' '}
               <strong>cannot substitute for out-of-distribution evaluation by domain experts.</strong>{' '}
               The <strong>1.4% internal-consistency survival rate</strong> (not a discovery rate &mdash; see methodology) and public failure log are the protocol&apos;s honest outputs.{' '}
               <Link href="/research-philosophy" style={{ color: '#f59e0b' }}>See methodology &rarr;</Link>
@@ -198,9 +198,9 @@ export default function Home() {
               alignItems: 'center',
             }}>
               <span>Prospective predictions confirmed: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Post-hoc retrodiction failed: <strong style={{ color: '#ef4444' }}>1</strong> (DESI fσ₈ — sign reversed)</span>
-              <span>RAR shape test — CLOSED: <strong style={{ color: '#ef4444' }}>γ=2 refuted</strong> (ΔBIC=+184; free-γ→MOND)</span>
-              <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO modulation)</span>
+              <span>Post-hoc retrodiction failed: <strong style={{ color: '#ef4444' }}>1</strong> (DESI (Dark Energy Spectroscopic Instrument) fσ₈ — sign reversed)</span>
+              <span>RAR (Radial Acceleration Relation) shape test — CLOSED: <strong style={{ color: '#ef4444' }}>γ=2 refuted</strong> (ΔBIC=+184; free-γ→MOND (Modified Newtonian Dynamics))</span>
+              <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
               <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong></span>
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>Full ledger &rarr;</Link>
             </div>
@@ -235,7 +235,7 @@ export default function Home() {
               <Link href="/measurement-without-observers" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Quantum Physics</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  MRH crossing replaces wave function collapse. Born rule: equivalent to Zurek/Carroll-Sebens
+                  MRH (Minimal Relevance Horizon) crossing replaces wave function collapse. Born rule: equivalent to Zurek/Carroll-Sebens
                   (reparametrization, no novel quantum prediction yet). Ontological reframe, not a new formula.
                 </p>
                 <span className="badge badge-reparametrization">Reparametrization — No Novel Prediction Yet</span>

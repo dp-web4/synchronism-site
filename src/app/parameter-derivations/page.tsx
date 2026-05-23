@@ -11,13 +11,24 @@ export default function ParameterDerivations() {
     <>
       <Breadcrumbs currentPath="/parameter-derivations" />
       <h1>Parameter Derivations</h1>
+      <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1.5rem', maxWidth: '65ch' }}>
+        <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <strong style={{ color: '#f59e0b' }}>Honest framing:</strong> Despite the page title, this is not a
+          derivations page in the mathematical sense. γ = 2/√N<sub>corr</sub> is a <strong>motivated ansatz</strong> (the
+          factor 2 is not rigorously derived; CLT is invoked for correlated DOF where CLT doesn&apos;t apply).
+          ρ<sub>crit</sub> = A·V<sub>flat</sub>² with A ≈ 0.029 is <strong>calibrated</strong> to the Jeans criterion — V<sub>flat</sub> is the input.
+          The scaling constants are dimensional analyses with 3–12% errors that may reflect implicit calibration
+          rather than predictive accuracy. The functional form tanh is <strong>motivated</strong> by Landau-class
+          mean-field theory, not uniquely derived. A more accurate title: <em>Parameter Calibration &amp; Honest Ansätze</em>.
+          Read this page before concluding the equation is derived.
+        </p>
+      </div>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '2rem', maxWidth: '65ch' }}>
         The coherence function has two kinds of parameters: the <strong>functional form</strong> (tanh,
-        &#x03B3; = 2/&#x221A;N<sub>corr</sub>) which is derived from mean-field theory, and
+        &#x03B3; = 2/&#x221A;N<sub>corr</sub>) which is motivated by mean-field theory, and
         the <strong>scaling constants</strong> (A, a&#x2080;, &#x03A3;&#x2080;, R&#x2080;) which are
-        derived from dimensional analysis with fundamental constants but show 3&ndash;12% errors
-        against observations. Whether those errors reflect approximation limits or hidden calibration
-        is an open question.
+        calibrated to observational anchors with 3&ndash;12% errors.
+        Whether those errors reflect approximation limits or implicit calibration is an open question.
       </p>
 
       <section className="section content-width">

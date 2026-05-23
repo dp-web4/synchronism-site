@@ -248,6 +248,12 @@ const nextConfig = {
         destination: '/core-idea',
         permanent: false,
       },
+      // /start-here — guessed by visitors seeing "Start Here" label in nav (2026-05-23 two personas)
+      {
+        source: '/start-here',
+        destination: '/first-encounter',
+        permanent: false,
+      },
     ];
   },
 };

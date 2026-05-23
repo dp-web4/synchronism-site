@@ -20,7 +20,7 @@ const notItems = [
   },
   {
     claim: 'Proven',
-    reality: '59% of predictions are untested. Two quantum results are consistent with published experiments (PRL 2024, arXiv 2508.07046), but both are reparametrizations: the decoherence formula Γ = γ²(1−c) is the textbook correlated-dephasing variance (Palma–Suominen–Ekert 1996); the Bell-freezing functional form c(d) was imported from waveguide QED. Session #581 audit (2026-02-08): zero confirmed quantum predictions, 4 reparametrizations, 1 refutation. The genuinely novel predictions (wide binary density dependence, resynchronization vs isolation) have not been tested.',
+    reality: '59% of predictions are untested. Two quantum results are consistent with published experiments (PRL 2024, arXiv 2508.07046), but both are reparametrizations: the decoherence formula Γ = γ²(1−c) is the textbook correlated-dephasing variance (Palma–Suominen–Ekert 1996); the Bell-freezing functional form c(d) was imported from waveguide QED. Session #581 audit (2026-02-08) of the quantum arc specifically: zero confirmed quantum predictions, 4 quantum-arc reparametrizations, 1 refutation. Site-wide audit total: 6 reparametrizations (4 quantum + Born rule + entity criterion). The genuinely novel predictions (wide binary density dependence, resynchronization vs isolation) have not been tested.',
   },
   {
     claim: 'Just notation',
@@ -65,25 +65,49 @@ export default function WhatSynchronismIsNot() {
         </div>
 
         <h2>What Synchronism <em>Is</em></h2>
+
+        {/* Honest classification box */}
+        <div style={{ background: 'rgba(59,130,246,0.07)', border: '1px solid rgba(59,130,246,0.25)', borderRadius: '0.5rem', padding: '1rem 1.25rem', marginBottom: '1.5rem' }}>
+          <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.7 }}>
+            <strong>Honest classification (2026):</strong> By the framework&apos;s own audit results — 0 prospective
+            predictions confirmed, 6 reparametrizations, 0 galaxy-scale discriminators vs MOND — Synchronism
+            currently occupies the <strong>interpretation + methodology</strong> category rather than the
+            novel-physics category. An <em>interpretation</em> is evaluated by parsimony, explanatory elegance, and
+            conceptual economy, not by novel empirical predictions (like Bohmian mechanics vs Copenhagen vs Many-Worlds —
+            all make identical predictions). A <em>methodology</em> is evaluated by its reproducibility and
+            applicability as a research tool. Both are legitimate contributions; neither requires confirmed novel physics.
+            If TEST-02 (wide binary density dependence) or a future prospective test succeeds, this classification
+            can be upgraded.
+          </p>
+        </div>
+
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <ul style={{ color: 'var(--color-text-secondary)' }}>
-            <li>An <strong>ontological proposal</strong>: quantum mechanics, consciousness, and astrophysical coherence are synchronization phenomena described by one equation across 80 orders of magnitude</li>
-            <li>A <strong>source of specific, falsifiable predictions</strong> &mdash; <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>3 concrete claims</Link> with defined tests, plus 34 EEG protocols and 10 zero-cost astrophysical experiments</li>
-            <li>An <strong>autonomous research experiment</strong> (3,308 AI sessions, A2ACW protocol) &mdash; itself a test case for AI-human collaborative science</li>
-            <li>A <strong>demonstration of radical honesty</strong>: failures documented, reparametrizations acknowledged, kill criteria defined, 0 unique confirmed predictions (yet)</li>
-            <li>An <strong>open question with a proposed answer</strong>: does the unified equation reveal something real, or is it useful notation? The answer matters &mdash; <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>here&apos;s why</Link></li>
+            <li>A <strong>coherence-language interpretation</strong> of known physics: quantum mechanics, consciousness,
+              and astrophysical coherence reframed as synchronization phenomena — same equations, different ontology.
+              Currently no measurement distinguishes Synchronism&apos;s ontology from standard physics + MOND + decoherence.</li>
+            <li>A <strong>methodology research program</strong>: A2ACW protocol (3,308 sessions), validation badges,
+              kill criteria, pre-registration discipline, mechanism-class failure taxonomy — a reproducible self-audit
+              infrastructure for AI-collaborative science. This is the most distinctive and citable output.</li>
+            <li>A <strong>source of open questions</strong>: TEST-02 wide-binary density dependence is the
+              highest-priority remaining discriminating test (contingent on the wide-binary anomaly resolving);
+              the self-consistency loop gap (C(ρ) has no fixed-point equation) is the deepest structural question.</li>
+            <li>A <strong>demonstration of radical honesty</strong>: failures documented, reparametrizations acknowledged,
+              kill criteria defined, 0 unique confirmed predictions. The honest-assessment page is the most
+              rigorous self-audit on any physics-adjacent research site.</li>
             <li>A <strong>public record</strong>: every session, failure, and derivation at{' '}
               <a href="https://github.com/dp-web4/Synchronism" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}>github.com/dp-web4/Synchronism</a>
             </li>
           </ul>
         </div>
 
-        <h2>The Acid Test</h2>
+        <h2>The Distinguishing-Experiment Question</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          The 10 zero-cost Tier 1 experiments using existing data (SPARC, Gaia DR3, SDSS) will
-          answer this. If the genuinely novel predictions fail, Synchronism is a useful notation
-          exercise and nothing more. If they succeed, there may be something deeper here.
-          Either outcome is valuable.
+          For a physics audience, the classification question is specific: <em>Is there one equation, regime, or
+          measurement where Synchronism predicts something that MOND + ΛCDM + decoherence does not?</em> As of May 2026,
+          the honest answer is: not yet confirmed, possibly TEST-02 wide-binary density dependence. Until that test
+          executes with a discriminating result, the framework&apos;s contribution is interpretive and methodological,
+          not empirically novel. That&apos;s a real contribution — just not the one the landing page implies.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

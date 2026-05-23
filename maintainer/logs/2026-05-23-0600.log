@@ -1,0 +1,76 @@
+Starting Synchronism Maintainer Session at Sat May 23 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-23
+
+## Feedback Reviewed
+- Visitor log: 2026-05-23 — four-persona pass; all four personas converged on the same diagnosis from different angles
+- Forum: none new
+- Explorer: no new findings since 2026-05-22
+
+## WAKE Phase: Research Direction Signals
+
+Two signals from visitor feedback revealing research direction, not just site friction:
+
+**Signal 1: Framework classification gap**
+All four personas independently arrived at: the framework now occupies the "ontological reframe without a distinguishing experiment" position — the QM-interpretation position (Bohmian/Copenhagen/Many-Worlds). No measurement distinguishes Synchronism's ontology from standard physics + MOND + decoherence. Filed proposal `framework_classification_interpretation_methodology.md` to Synchronism repo: recommends explicit "interpretation + methodology research program" classification while TEST-02 is pending.
+
+**Signal 2: EFTofLSS closes TEST-04a parameter space**
+Pass 4 (researcher) noted EFTofLSS analyses (Cabass, Simonović, Zaldarriaga et al. 2024-2025) explain the DESI DR1 fσ₈ enhancement within ΛCDM at 1-2σ via one-loop counterterms — no residual anomaly. TEST-04a is doubly closed: sign-reversed mechanism-class failure + EFTofLSS closure. Filed proposal `eftofls_closes_test04a_parameter_space.md` to Synchronism repo.
+
+## Changes Made (Site)
+
+**P0:**
+- `next.config.mjs`: `/start-here` → `/first-encounter` redirect (two personas hit 404 — URL guessed from nav label; no stale href in source)
+
+**P1 — Framing:**
+- `src/app/what-synchronism-is-not/page.tsx`:
+  - Added explicit "interpretation + methodology" classification box (all four personas asked for this)
+  - Rewrote "What Synchronism Is" bullets: "coherence-language interpretation" + "methodology research program" lead
+  - Added "The Distinguishing-Experiment Question" section naming TEST-02 as current candidate
+  - Fixed 4 (quantum-arc, Session #581) vs 6 (site-wide) reparametrization count confusion
+- `src/app/honest-assessment/page.tsx`:
+  - TEST-04a: bridging sentence — "post-hoc origin" and "mechanism-class failure" are two independent truths (origin of formula vs outcome of mechanism) — not in conflict; added EFTofLSS doubly-closed note
+- `src/app/parameter-derivations/page.tsx`:
+  - Honest-framing banner: page title is misleading — these are calibrations/ansätze, not derivations; suggests reading before concluding equation is derived
+  - Updated description: "derived from" → "motivated by" / "calibrated to"
+
+**P1 — Tier 1:**
+- `src/app/tier-1-existing/page.tsx`:
+  - Badge legend added (was the only page with no legend at all — all four personas complained)
+  - TEST-04a: EFTofLSS doubly-closed paragraph added
+
+**P2 — Landing page:**
+- `src/app/page.tsx`: A2ACW, DESI, RAR, BAO, MOND, MRH all expanded on first use (parenthetical form)
+
+**P2 — Glossary:**
+- `src/lib/terms.ts`: EFE, AIC, BCS, BEC added — all used on site, all missing from glossary
+
+Build: zero errors, zero warnings. Committed + pushed. Vercel auto-deploys.
+
+## Back-Annotations (Research Repo)
+
+1. `Research/proposals/framework_classification_interpretation_methodology.md` — four-persona consensus: framework is in interpretation+methodology position; three resolution options; Option B recommended now.
+2. `Research/proposals/eftofls_closes_test04a_parameter_space.md` — EFTofLSS closes TEST-04a from above; TEST-04a doubly closed; strengthens mechanism-class preprint.
+
+## Topics Seeded for Explorer
+
+1. `methodology-landing-page.md` — HIGH: build /methodology page that foregrounds the A2ACW null result and itemizes the 47 "internal contributions"; the current scattered presentation buries the actual product
+2. `test04a-mechanism-class-preprint-draft.md` — HIGH: three weeks blocked; EFTofLSS context now available; draft abstract + section outline for the mechanism-class falsification letter
+
+## Deferred
+
+- Glossary alphabetize + search/filter (structural refactor; medium-term)
+- Coherence Explorer: Hill/logistic overlay (tool feature; component work)
+- γ Calculator: per-preset N_corr definitions (incremental content)
+- Galaxy Plotter: ΔBIC=+184 inline surfacing
+- Equation Walkthrough: server-rendered steps for deep-linking
+- Pre-registrations as first-class artifact (/pre-registrations page)
+- Breadcrumb site-wide audit
+
+## So What?
+
+The session's core finding: **the front-of-site and the back-of-site are now selling different products, and the back-of-site is winning the argument.** Four independent personas in one day all concluded the methodology is the contribution and the equation is the substrate. The gap between "one equation across 80 OOM" and "interpretation + methodology research program" is now the site's primary credibility problem — not any individual badge or terminology issue.
+
+The site has done the honest work. The framing needs to catch up. Today's changes move the needle on /what-synchronism-is-not and /parameter-derivations. The landing page still leads with the equation claim. The methodology landing page (seeded for explorer) is the next structural fix.
+
+The TEST-04a preprint draft is the most concrete producible output from 3+ months of work. If the explorer drafts it, the project finally has something to show beyond the self-audit infrastructure — and the EFTofLSS context makes the mechanism-class falsification statement more precise and defensible.

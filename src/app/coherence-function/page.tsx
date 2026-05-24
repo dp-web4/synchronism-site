@@ -145,6 +145,28 @@ export default function CoherenceFunction() {
           </p>
         </div>
 
+        <h2>What Class of Function Is C(ρ)?</h2>
+        <div style={{ padding: '0.75rem 1rem', background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '6px', marginBottom: '1rem', fontSize: '0.9rem' }}>
+          <p style={{ margin: 0 }}>
+            <strong>C(ρ) is a <em>compander</em> — a logarithmic companding function</strong>, not an order parameter.
+            This is the settled self-identification used on the <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link> page
+            and in the <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
+          </p>
+          <p style={{ margin: '0.5rem 0 0', color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+            The <strong>compander class</strong> includes: μ-law audio compression (telephone networks), Hill function (oxygen binding to hemoglobin),
+            Naka-Rushton equation (retinal response), Kubo susceptibility (stat-mech near criticality). All map a wide dynamic range onto a
+            bounded output using a sigmoidal curve. C(ρ) does the same: density spanning 80+ orders of magnitude →
+            coherence in [0, 1].
+          </p>
+          <p style={{ margin: '0.5rem 0 0', color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+            <strong>Key implication:</strong> Companders are purely evaluative (input → output). They cannot encode
+            universality classes, critical exponents, or spontaneous symmetry breaking — those require a self-consistency loop.
+            The Ising mean-field equation m = tanh(βJzm) is in a different structural class: it is implicit (m appears on both sides)
+            and supports a phase transition. C(ρ) evaluates C from ρ directly with no feedback. These are different objects.
+            The Landau analogy is motivational, not a claim of class membership.
+          </p>
+        </div>
+
         <h2>Scope Limit: Universality Classes</h2>
         <div style={{ padding: '0.75rem 1rem', background: 'rgba(239,68,68,0.06)', borderRadius: '6px', borderLeft: '3px solid #ef4444', marginBottom: '1rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>

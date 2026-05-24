@@ -354,6 +354,34 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'A Bose-Einstein Condensate (BEC) forms when bosons (integer-spin particles: photons, He-4 atoms, Cooper pairs) are cooled below a critical temperature T_c. Unlike fermions, bosons can occupy the same quantum state, allowing a macroscopic fraction to condense into the ground state. BEC is highly coherent \u2014 N_corr is the entire condensate (10\u2076\u201310\u2079 atoms). In Synchronism\'s \u03b3 Calculator, BEC is placed in the "Collective" regime, which is correct (high N_corr, classical in Synchronism\'s non-standard usage). Note: Synchronism uses "Classical" to mean high-coherence collective behavior \u2014 the opposite of the standard physics usage.',
     learnMore: '/gamma-calculator',
   },
+  'compander': {
+    term: 'Compander',
+    fullName: 'Compander (Companding Function)',
+    brief: 'A sigmoidal function that maps a wide dynamic range onto a bounded output \u2014 the mathematical class C(\u03c1) belongs to.',
+    explanation: 'A compander (compressing + expanding) maps a large input range to a bounded output via a smooth sigmoidal curve. The name comes from audio compression: \u03bc-law companding (telephone networks) uses tanh to compress loud signals without clipping quiet ones. The same class appears across disciplines: Hill function (biochemistry: oxygen binding to hemoglobin), Naka-Rushton equation (retinal response to light intensity), Kubo susceptibility (statistical mechanics near criticality). C(\u03c1) = tanh(\u03b3\u00b7ln(\u03c1/\u03c1_crit + 1)) is a compander in this class \u2014 it maps density across 80+ orders of magnitude to a bounded coherence value [0,1]. Key consequence: companders are purely evaluative (input \u2192 output), not self-consistency equations. They cannot encode universality classes, critical exponents, or spontaneous symmetry breaking \u2014 these require a feedback loop (e.g., m = tanh(\u03b2Jzm) in Ising mean-field). The site\'s /parameter-derivations page explicitly uses the term compander; this is the settled self-identification of C(\u03c1).',
+    learnMore: '/coherence-function',
+  },
+  'kill-criterion-triggered': {
+    term: 'Kill Criterion Triggered (badge)',
+    fullName: 'Kill Criterion Triggered \u2014 Operational Badge',
+    brief: 'A pre-registered numerical threshold has been crossed; the test is treated as failed unless a revised pre-registration is made.',
+    explanation: 'A Kill Criterion is a pre-registered falsification threshold: before the test is run, a specific numerical value is set such that if the result crosses it, the prediction is treated as failed. "Kill Criterion Triggered" means that threshold was crossed. It is a stronger statement than "Failed" alone because it means the failure was anticipated and quantified in advance. In Synchronism\'s test catalog, TEST-03 (RAR environment scatter) has kill criterion R\u00b2 < 0.20 \u2014 observed R\u00b2 = 0.14, criterion triggered. TEST-04a has kill criterion f\u03c3\u2088(z=0.5) > 0.46 \u2014 DESI DR1 measures \u2248 0.55, criterion triggered. Note: "Kill Criterion Triggered" and "Speculative" are mutually exclusive \u2014 Speculative means no quantitative test has been defined; Kill Triggered means one was defined and crossed.',
+    learnMore: '/tier-1-existing',
+  },
+  'mond-shared': {
+    term: 'MOND-shared (badge)',
+    fullName: 'MOND-shared \u2014 Non-Discriminating Test',
+    brief: 'Synchronism and MOND make identical predictions for this test; the outcome cannot discriminate between them.',
+    explanation: 'Some Tier-1 tests cannot distinguish Synchronism from MOND regardless of outcome, because both frameworks make the same prediction in that regime. These are labeled "MOND-shared." Examples: TEST-09 (BTFR slope variation with regime) \u2014 Milgrom (1983) and McGaugh (2012) already predict the same regime-dependent slope; TEST-10 (dwarf galaxy dark matter dominance) \u2014 standard MOND predicts the same pattern. A MOND-shared test is not useless \u2014 it tests both frameworks against data \u2014 but it cannot provide evidence for Synchronism over MOND. The site uses this badge on /tier-1-existing to distinguish tests that discriminate (potentially) from tests that do not.',
+    learnMore: '/tier-1-existing',
+  },
+  'withdrawn': {
+    term: 'Withdrawn (badge)',
+    fullName: 'Withdrawn \u2014 Prediction Retired',
+    brief: 'A prediction or test has been voluntarily retired because it was found to be contradicted by the framework itself, physically unmotivated, or replaced by a better formulation.',
+    explanation: 'A Withdrawn prediction means the framework itself has disowned the test \u2014 not because external data refuted it, but because internal analysis showed it was either (a) contradicted by another part of the framework, (b) unmotivated (no derivation of the predicted amplitude), or (c) superseded by a more precise test. In Synchronism\'s test catalog: TEST-04 (BAO coherence modulation) was withdrawn because (1) Session 107 contradicts it internally, (2) the predicted effect (10\u207b\u2074) is 600\u00d7 below standard nonlinear BAO shifts and thus unmotivated, and (3) the kill criterion of 10\u207b\u2075 is smaller than current measurement precision. Withdrawn differs from Failed: failure comes from data; withdrawal comes from the framework itself.',
+    learnMore: '/tier-1-existing',
+  },
 };
 
 export function getTerm(key: string): TermDefinition | undefined {

@@ -13,6 +13,7 @@ type Test = {
   time: string;
   prediction: string;
   kill: string;
+  preregistration?: string;
   alert?: string;
   derivationHref?: string;
 };
@@ -67,6 +68,7 @@ const tests: Test[] = [
     time: 'ADJUDICATED (2026-05-05)',
     prediction: 'fσ₈(z=0.51) ≈ 0.418 — a ~12% suppression below ΛCDM (0.474). Mechanism: G_local/G_global = C_cosmic/C_galactic suppresses structure growth at late times. Session 107 forecasts 1.7σ–3.2σ discrimination per DESI LRG bin.',
     kill: 'fσ₈(z=0.51) > 0.46 (rules out Synchronism at >3σ); fσ₈(z=0.51) > 0.45 disfavors at >2σ',
+    preregistration: 'Post-hoc retrodiction — σ₈ calibrated to lensing S₈ tension in Session 102 (before DESI DR1); propagated to DESI fσ₈ in Session 107 (committed 2025-12-10); DESI DR1 published April 2024. This is the worst-case failure mode: post-hoc retrodiction with sign reversal.',
     alert: 'FAILED — MECHANISM-CLASS FAILURE (2026-05-09 classification upgrade from "disfavored"): DESI DR1 LRG1 (z=0.51) measures fσ₈ ≈ 0.55 ± 0.06 — ABOVE ΛCDM, not below it. This is not a magnitude miss — it is a sign reversal. The G_local/G_global suppression mechanism predicts growth BELOW ΛCDM at all z; DESI DR1 measures growth ABOVE ΛCDM at every low-z bin (LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ). A suppression mechanism cannot be retuned to produce enhancement — the mechanism class itself is contradicted. Combined σ₈(z=0) = 0.841 ± 0.034 vs Synchronism\'s 0.76 → 2.4σ. PRE-REGISTRATION NOTE: Session 107 committed 2025-12-10; DESI DR1 published April 2024 — post-hoc calculation. The internal consistency failure is real; it is not a prospective falsification. No replacement test substituted. ADDITIONAL CONTEXT (2026-05-23): EFTofLSS (Effective Field Theory of Large-Scale Structure) analyses by Cabass, Simonović, Zaldarriaga et al. (2024-2025) explain the DESI DR1 fσ₈ enhancement within ΛCDM at 1-2σ via one-loop counterterms, leaving no residual anomaly requiring a beyond-ΛCDM explanation. The parameter space TEST-04a occupied is closed from both sides: suppression predicted, enhancement observed, enhancement explained by standard EFT. TEST-04a is doubly closed.',
   },
   {
@@ -198,6 +200,11 @@ export default function Tier1Existing() {
               <p style={{ color: '#ef4444', fontSize: '0.85rem' }}>
                 <strong>Kill:</strong> {t.kill}
               </p>
+              {t.preregistration && (
+                <p style={{ color: '#f87171', fontSize: '0.8rem', marginTop: '0.4rem', padding: '0.4rem 0.6rem', background: 'rgba(239,68,68,0.08)', borderRadius: '4px', borderLeft: '3px solid #ef4444' }}>
+                  <strong>Pre-registration status:</strong> {t.preregistration}
+                </p>
+              )}
               {t.alert && (
                 <p style={{ color: '#f59e0b', fontSize: '0.8rem', marginTop: '0.5rem', padding: '0.5rem', background: 'rgba(245,158,11,0.1)', borderRadius: '4px', borderLeft: '3px solid #f59e0b' }}>
                   <strong>⚠ Status note:</strong> {t.alert}

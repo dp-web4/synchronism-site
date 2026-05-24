@@ -93,6 +93,15 @@ export default function CoherenceExplorer() {
           </p>
         </div>
 
+        <div style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.2)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem' }}>
+          <strong>What the symbols do, in plain language:</strong>
+          <ul style={{ marginTop: '0.5rem', marginBottom: 0, color: 'var(--color-text-secondary)' }}>
+            <li><strong>ln(x)</strong> — logarithm: it compresses huge ranges into small ones. A density 1,000× bigger becomes only ~7 units bigger. This is why the curve works across quantum to cosmic scales.</li>
+            <li><strong>tanh(u)</strong> — the &ldquo;S-curve&rdquo; shape. For very negative u it returns ≈ 0; for large positive u it returns ≈ 1; near zero it rises steeply. Think of a dimmer switch that snaps rather than fading gradually.</li>
+            <li><strong>&#x03B3;</strong> — controls how quickly the snap happens. Large &#x03B3; (γ = 2, free atoms) = a sharp cliff. Small &#x03B3; (γ ≈ 0.02, superconductors) = a long gentle ramp.</li>
+            <li><strong>&#x03C1;<sub>crit</sub></strong> — the density where the middle of the S-curve sits; a reference point set by fitting, not a physical critical point.</li>
+          </ul>
+        </div>
         <p style={{ marginBottom: '1rem' }}>
           Adjust &#x03B3; and &#x03C1;<sub>crit</sub> to see how the coherence function
           C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1)) responds.

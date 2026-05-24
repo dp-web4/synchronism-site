@@ -1,0 +1,56 @@
+Starting Synchronism Maintainer Session at Sun May 24 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-24
+
+## WAKE Phase
+
+Two research-direction signals from today's visitor feedback. Both filed as proposals to Synchronism repo before fixing site friction.
+
+**Signal 1: Modified-gravity landscape positioning**
+Pass 4 researcher asked: "What does C(ρ) add over Verlinde's entropic-gravity sketch, which also derives a₀ from cosmological constants?" Since SPARC shows free-γ collapses to MOND (ΔBIC=+7), and Verlinde's framework also yields MOND-like dynamics from entropy gradients, the relationship between C(ρ) and Verlinde is uncharted. Filed `modified_gravity_landscape_positioning.md` to Synchronism/Research/proposals/.
+
+**Signal 2: A2ACW vs. AI-discovery landscape**
+Pass 4 researcher asked for comparison with FunSearch, AlphaProof, Sakana AI Scientist. A2ACW's negative result (shared training distribution → shared blind spots) is most informative when positioned against the optimistic claims it falsifies. Filed `a2acw_vs_ai_discovery_landscape.md` to Synchronism/Research/proposals/.
+
+**So what?** The Verlinde comparison is the frame-level question any physics reader will ask. If free-γ → MOND at SPARC precision, and Verlinde also reduces to MOND-like dynamics, then C(ρ) may be a reparametrization of Verlinde in the galaxy regime. That's a third reparametrization in the same class — but more consequential because Verlinde has a field-theoretic foundation. Explorer topic seeded.
+
+## Feedback Reviewed
+
+- Visitor log: 2026-05-24 — Four-persona pass. P0 issues: MRH typo on landing page, /test-04a 404, /mond-derivation 404, tanh/ln unexplained in Coherence Explorer. P1 issues: "Compander" missing from glossary; "Kill Triggered"/"Withdrawn"/"MOND-shared" used but undefined in glossary; /coherence-function still leans Landau-class framing. P2: no "Reading this plot" callout in Galaxy Plotter. P3: TEST-04a card doesn't surface post-hoc retrodiction status visibly. P5: missing modified-gravity landscape comparison and AI-discovery landscape comparison.
+- Forum: no new feedback
+- Explorer findings: no new findings since 2026-05-23
+
+## Changes Made (Site)
+
+- `src/app/page.tsx`: "Minimal Relevance Horizon" → "Markov Relevancy Horizon" (load-bearing term was misnamed on front door); also expanded "80 orders of magnitude" to include anchor "from electrons (10⁻³⁰ kg) to galaxy clusters (10⁵⁰ kg)"
+- `next.config.mjs`: Added three redirects — /test-04a → /tier-1-existing#TEST-04a; /mond-derivation → /galaxy-rotation; /mond → /galaxy-rotation
+- `src/app/coherence-explorer/page.tsx`: Added purple-bordered "What the symbols do, in plain language" block above the equation — explains ln, tanh, γ, ρ_crit in casual terms
+- `src/lib/terms.ts`: Added four new glossary entries — Compander (with μ-law/Hill/Naka-Rushton lineage and key implication about critical exponents); Kill Criterion Triggered (operational state, notes mutual exclusivity with Speculative); MOND-shared (non-discriminating test definition); Withdrawn (voluntary retirement vs. data refutation)
+- `src/app/coherence-function/page.tsx`: Added "What Class of Function Is C(ρ)?" section with explicit compander identification, lineage, and structural implication (companders are evaluative, not self-consistency equations)
+- `src/app/galaxy-plotter/page.tsx`: Added "Reading this plot" callout explaining each curve, what fitting vs. prediction means, and what the discriminating test (ΔBIC=+184) showed
+- `src/app/tier-1-existing/page.tsx`: Added `preregistration` field to Test type; TEST-04a now shows "Pre-registration status: Post-hoc retrodiction — σ₈ calibrated to lensing S₈ tension in Session 102 (before DESI DR1); propagated to DESI fσ₈ in Session 107 (committed 2025-12-10); DESI DR1 published April 2024. This is the worst-case failure mode: post-hoc retrodiction with sign reversal."
+- `src/app/honest-assessment/page.tsx`: Added two new sections — "Where This Sits in the Modified-Gravity Landscape" (MOND, Verlinde, TeVeS, MOG comparison); "Cosmological Tensions We Don't Address" (H₀, JWST early galaxies, S₈ note, fNL)
+- `src/app/research-philosophy/page.tsx`: Added "Related Work in AI-Driven Discovery" section with FunSearch, AlphaProof, Sakana AI Scientist, Iten/SciNet comparisons and the structural diagnosis
+
+## Back-Annotations (Research Repo)
+
+- `Research/proposals/modified_gravity_landscape_positioning.md` — new proposal: where does C(ρ) sit relative to Verlinde, TeVeS, MOG, conformal gravity? Asks whether free-γ → MOND implies C(ρ) is also a reparametrization of Verlinde.
+- `Research/proposals/a2acw_vs_ai_discovery_landscape.md` — new proposal: structural diagnosis of A2ACW failure mode relative to FunSearch/AlphaProof (different class: external oracle) vs. Sakana AI Scientist (same class: no oracle).
+
+## Topics Seeded for Explorer
+
+- `verlinde-compander-comparison.md` (HIGH) — Does C(ρ) reduce to Verlinde's emergent gravity in the low-acceleration regime? If yes: third reparametrization, more consequential because Verlinde has a field-theoretic foundation. If no: new discriminating test.
+- `glossary-plain-language-audit.md` (MEDIUM) — Audit brief fields in terms.ts for entries where plain-language version is absent. Priority: MRH, γ, ρ_crit, Reparametrization.
+
+## Open Items (Deferred)
+
+- **Landing page lede reframe (P3)**: Pass 3/4 ask to reframe the lede from "one equation describes reality" to "what we learned trying to find one equation — and why the failure is the result." Deferred because it requires the /methodology page (seeded 2026-05-23) to exist first. That page should be built and deployed before the front door points at it.
+- **First Encounter Step 1 analogy-first rewrite**: Pass 1 asks MRH to be introduced with plain-English name ("relevance bubble?") before the acronym. Quick fix but not done today given the volume of other fixes.
+- **TEST-07 demotion from Tier 1**: The alert already says "SHOULD BE DEMOTED TO TIER-2" — the page agrees; the data structure doesn't yet move it. Deferred.
+- **TEST-09/TEST-10 separate MOND-shared section**: P4 asks to move these to a separate "MOND-shared (non-discriminating)" subsection. Partial — they have MOND-shared flags and the legend is clear. Full structural separation deferred.
+- **Breadcrumb/nav section alignment**: P2 notes section names in breadcrumbs don't match nav labels. Deferred.
+- **Interactive Tools index "✓ Validated" badges**: P2 says tools should use a different vocabulary than prediction-validation badges. The current code uses EpistemicStatus (core/reparametrization/speculative/failed) not "Validated" — possibly the visitor saw a cached version. Needs live site verification.
+
+## Build
+
+`node_modules/.bin/next build` — clean, 0 errors.

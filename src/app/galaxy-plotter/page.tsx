@@ -151,6 +151,19 @@ export default function GalaxyPlotter() {
           a stricter quantitative check and it failed. <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>See Honest Assessment &rarr;</a>
         </div>
 
+        <div style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem' }}>
+          <strong>Reading this plot:</strong>
+          <ul style={{ margin: '0.4rem 0 0', color: 'var(--color-text-secondary)', paddingLeft: '1.2rem' }}>
+            <li><strong>Dashed gray</strong> — Newtonian prediction using visible matter only. Drops off at the edges; this is the puzzle.</li>
+            <li><strong>Dots</strong> — observed rotation velocities. Flat at large radius; doesn&apos;t drop like Newtonian says it should.</li>
+            <li><strong>Violet</strong> — Synchronism (consistency check). Fitted to V<sub>flat</sub> — not a parameter-free prediction.</li>
+            <li><strong>Green dashed</strong> — MOND. Also fitted to V<sub>flat</sub>. Synchronism and MOND nearly overlap — this is what a reparametrization looks like.</li>
+          </ul>
+          <p style={{ margin: '0.4rem 0 0', color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
+            <strong>What losing looks like:</strong> All three curves (Sync, MOND, dark matter) fit rotation curves. The discriminating test is the <em>RAR transition shape</em> — γ=2 was refuted at ΔBIC=+184 by SPARC; free-γ collapses to MOND. <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>See Honest Assessment &rarr;</a>
+          </p>
+        </div>
+
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
           {galaxies.map((g, i) => (
             <button

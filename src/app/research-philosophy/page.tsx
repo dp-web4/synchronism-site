@@ -332,6 +332,51 @@ export default function ResearchPhilosophy() {
           MOND and Synchronism and cannot discriminate &mdash; it does not affect the badge until tested.
         </p>
 
+        <h2>Related Work in AI-Driven Discovery</h2>
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>
+          The A2ACW negative result — AI-AI adversarial collaboration fails when both agents share the same training distribution — is most informative when placed against the optimistic AI-discovery claims it directly addresses:
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem', fontSize: '0.88rem' }}>
+          {[
+            {
+              name: 'FunSearch (DeepMind, 2023)',
+              verdict: 'Different structural class',
+              desc: 'Uses LLM to propose combinatorial constructions, evaluated by an external formal oracle. The key difference: the oracle is outside the training distribution. A2ACW\'s failure mode (shared training → shared blind spots) does not apply when a formal verifier is available.',
+            },
+            {
+              name: 'AlphaProof / AlphaGeometry (DeepMind, 2024)',
+              verdict: 'Different structural class',
+              desc: 'Reinforcement learning + formal proof verification. Not text generation from training data. The ground-truth check (formal verifier) is external to the LLM. This is why AlphaProof can solve IMO problems that exceed training data.',
+            },
+            {
+              name: 'Sakana AI Scientist (2024)',
+              verdict: 'Same structural class as A2ACW',
+              desc: 'Generates research papers via LLM orchestration with self-review. Has been shown to produce errors that human reviewers catch, and its "novelty" comes from recombination within the training distribution — the same failure mode A2ACW demonstrates.',
+            },
+            {
+              name: 'Iten/SciNet symbolic regression (2020)',
+              verdict: 'Different mechanism',
+              desc: 'Discovers physical laws by fitting latent representations to observational data. The discovery is constrained by data, not by text generation from prior knowledge. A2ACW operates on natural-language claims before any data constraint is applied.',
+            },
+          ].map(f => (
+            <div key={f.name} className="card" style={{ padding: '0.6rem 0.9rem' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.5rem', flexWrap: 'wrap' }}>
+                <strong style={{ color: 'var(--color-accent-blue)' }}>{f.name}</strong>
+                <span style={{ fontSize: '0.78rem', color: f.verdict.includes('Same') ? '#f59e0b' : '#10b981', whiteSpace: 'nowrap' }}>{f.verdict}</span>
+              </div>
+              <span style={{ color: 'var(--color-text-secondary)' }}>{f.desc}</span>
+            </div>
+          ))}
+        </div>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem' }}>
+          <strong>Diagnosis:</strong> The out-of-distribution problem is solved for AI systems with <em>external formal oracles</em>
+          (FunSearch, AlphaProof). It is not solved for <em>natural-language theory generation</em>, where no formal verifier
+          exists outside the training distribution. A2ACW makes this specific structural point with a documented empirical
+          result: 6/6 retrospective demotions, 0/6 caught by temporal-asymmetry, 4/6 caught by vocabulary-asymmetry (prior-art subclass only).
+          The methodology finding is: AI-AI adversarial collaboration without an external oracle has a shared-blind-spot ceiling
+          that cannot be removed by choosing more capable or more adversarial agents.
+        </p>
+
         <h2>Full Research Archive</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Every session, derivation, failure, and dataset is public:

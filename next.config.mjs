@@ -254,6 +254,24 @@ const nextConfig = {
         destination: '/first-encounter',
         permanent: false,
       },
+      // /test-04a — headline empirical result (DESI fσ₈ sign reversal); no per-test page exists
+      {
+        source: '/test-04a',
+        destination: '/tier-1-existing#TEST-04a',
+        permanent: false,
+      },
+      // /mond-derivation — page grad students look for first; redirect to galaxy-rotation SPARC section
+      {
+        source: '/mond-derivation',
+        destination: '/galaxy-rotation',
+        permanent: false,
+      },
+      // /mond — short alias
+      {
+        source: '/mond',
+        destination: '/galaxy-rotation',
+        permanent: false,
+      },
     ];
   },
 };

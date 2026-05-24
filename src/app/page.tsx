@@ -16,7 +16,7 @@ export default function Home() {
           What if one equation described reality from quantum to cosmic?
         </h1>
         <p className="hero-subtitle">
-          Synchronism maps presence to coherence using a single function across 80 orders of magnitude.
+          Synchronism maps presence to coherence using a single function across 80 orders of magnitude — from electrons (10⁻³⁰ kg) to galaxy clusters (10⁵⁰ kg).
           Some predictions work. Some fail. The one non-degenerate galaxy test was run — and collapsed the framework onto MOND. All are documented honestly.
         </p>
 
@@ -235,7 +235,7 @@ export default function Home() {
               <Link href="/measurement-without-observers" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Quantum Physics</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  MRH (Minimal Relevance Horizon) crossing replaces wave function collapse. Born rule: equivalent to Zurek/Carroll-Sebens
+                  MRH (Markov Relevancy Horizon) crossing replaces wave function collapse. Born rule: equivalent to Zurek/Carroll-Sebens
                   (reparametrization, no novel quantum prediction yet). Ontological reframe, not a new formula.
                 </p>
                 <span className="badge badge-reparametrization">Reparametrization — No Novel Prediction Yet</span>

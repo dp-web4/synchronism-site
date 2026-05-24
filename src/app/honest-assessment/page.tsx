@@ -504,6 +504,46 @@ export default function HonestAssessment() {
         </ul>
       </section>
 
+      {/* Landscape positioning — added 2026-05-24 per P4 researcher request */}
+      <section className="section content-width">
+        <h2>Where This Sits in the Modified-Gravity Landscape</h2>
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+          Several frameworks occupy the same phenomenological territory as Synchronism in the low-acceleration galaxy regime. All share the observation that a₀ ≈ cH₀/(2π) emerges from cosmological constants:
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem', fontSize: '0.88rem' }}>
+          {[
+            { name: 'MOND (Milgrom 1983)', desc: 'Empirical μ-function. No dynamics, no governing equation. Synchronism\'s compander collapses onto MOND at free-γ (SPARC RAR, ΔBIC=+7 vs ΔBIC=+184 for γ=2).' },
+            { name: 'Verlinde Emergent Gravity (2016)', desc: 'Derives MOND-like rotation curves from entropy gradients in the Hubble volume. Tested by Brouwer et al. (2017) KiDS lensing — consistent at ~1σ. Key question: does C(ρ) reduce to Verlinde in the low-acceleration limit? Not yet shown.' },
+            { name: 'TeVeS (Bekenstein 2004)', desc: 'Lorentz-covariant scalar-vector-tensor extension of MOND. Has galaxy-rotation and lensing predictions. Failed: requires dark matter for the Bullet Cluster; GW170817 constrains the tensor sector.' },
+            { name: 'MOG / STVG (Moffat 2006)', desc: 'Running gravitational coupling with massive vector field. Makes post-Newtonian predictions beyond rotation curves. No direct comparison with Synchronism compander exists.' },
+          ].map(f => (
+            <div key={f.name} className="card" style={{ padding: '0.6rem 0.9rem' }}>
+              <strong style={{ color: 'var(--color-accent-blue)' }}>{f.name}</strong>
+              <span style={{ color: 'var(--color-text-secondary)', marginLeft: '0.5rem' }}>{f.desc}</span>
+            </div>
+          ))}
+        </div>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          <strong>Current status:</strong> Synchronism&apos;s compander is MOND-equivalent in the galaxy regime (free-γ = 0.49 ≡ MOND at SPARC precision). Relationship to Verlinde&apos;s entropic gravity is uncharted — whether C(ρ) is a sub-case, extension, or reparametrization of Verlinde in that regime has not been worked out. See <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> for the SPARC result.
+        </p>
+      </section>
+
+      <section className="section content-width">
+        <h2>Cosmological Tensions We Don&apos;t Address</h2>
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>
+          A framework claiming cosmological scope should say explicitly where it is silent. The following are open problems in cosmology (2024–2026) where Synchronism makes no prediction:
+        </p>
+        <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', fontSize: '0.9rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+          <li><strong>H₀ tension (~5σ):</strong> CMB vs. distance-ladder Hubble constant disagreement. Synchronism makes no statement on H₀. (See <Link href="/honest-assessment#h0-tension" style={{ color: 'var(--color-accent-blue)' }}>What&apos;s Untested</Link> above.)</li>
+          <li><strong>JWST early galaxies:</strong> JWST has found massive, evolved galaxies at z &gt; 10 that challenge standard structure formation. Several modified-gravity frameworks address this; Synchronism has no analysis.</li>
+          <li><strong>S₈ tension:</strong> KiDS/DES measure σ₈ lower than Planck CMB predicts. Synchronism&apos;s σ₈ prediction (0.76) was calibrated to this tension in Session 102 — it is the anchor of the TEST-04a prediction, not an independent constraint.</li>
+          <li><strong>Primordial non-Gaussianity (fNL):</strong> DESI and future surveys constrain non-Gaussianity from large-scale structure. No coherence-based prediction exists.</li>
+        </ul>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+          Explicit silence is more honest than tacit omission: these are open problems for Synchronism, not just unaddressed topics.
+        </p>
+      </section>
+
       <section className="section content-width">
         <h2>Self-Audit on the Self-Audit Protocol (A2ACW)</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>

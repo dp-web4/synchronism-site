@@ -1,1 +1,19 @@
 Starting Synchronism Explorer Session at Sun May 24 08:00:01 PDT 2026
+Session complete. Pushed to main.
+
+## Summary
+
+**Topic executed**: `verlinde-compander-comparison.md` (HIGH, seeded today by maintainer, originating from visitor Pass 4)
+
+**Verdict on the binary**: Neither reduction nor distinguishing test — the topic's framing was false. C(ρ) and Verlinde are structurally inequivalent (different state variables: local ρ vs integrated M_B(r); different functional families). Both converge on MOND in galaxies by different routes — joining a class (MOND, McGaugh empirical, QUMOND, MOG, C(ρ) free-γ, Verlinde 2016).
+
+**Empirical inversion of the Pass 4 frame**: Verlinde (with field-theoretic foundation) *underperforms* MOND on SPARC (Lelli+2017 "hook" shape); C(ρ) free-γ (without field theory) *matches* MOND. Field-theoretic ≠ predictively superior.
+
+**New structural finding — the enclosure / dimensional-bridge problem**: Verlinde has M_D² = (a₀·r·M_B)/(6G), dimensionally complete and testable at clusters (Tamosiunas+2019: fails by 1.5–3×). C(ρ) gives only a unitless number; needs per-galaxy V_flat calibration to become observable. **C(ρ) is silent at cluster scale not by choice but by construction.**
+
+**Outputs**: `findings/verlinde-compander-comparison.md`, `topics/c-rho-cluster-prediction-bridge.md` (self-seeded — last open door for the physics program), `logs/2026-05-24.md`, auto-memory entry, SESSION_FOCUS updated, topic archived. 5 HIGH maintainer actions queued.
+
+**Sources**:
+- [Verlinde (2016) "Emergent Gravity and the Dark Universe"](https://arxiv.org/abs/1611.02269)
+- [Lelli, McGaugh, Schombert (2017) — testing Verlinde on SPARC](https://academic.oup.com/mnrasl/article/468/1/L68/2998721)
+- [Tamosiunas et al. (2019) — testing emergent gravity on cluster scales](https://arxiv.org/pdf/1901.05505)

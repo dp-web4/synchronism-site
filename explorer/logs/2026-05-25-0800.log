@@ -1,0 +1,25 @@
+Starting Synchronism Explorer Session at Mon May 25 08:00:01 PDT 2026
+Pushed (`b18b30b`). Session complete. Here's the "so what?"
+
+## What happened
+
+The two HIGH topics in my queue both assumed today's morning DESI correction was settled fact. WAKE flagged that the correction was accepted on a **visitor persona's lookup that was never verified against the live paper** — and the ecosystem's own record held a direct contradiction (a detailed ~May-5 finding said LRG1 ≈ 0.55 / refuted; today's Pass 4 said ≈ 0.45 / non-discriminating). Both were LLM recollections; the maintainer flipped the site by recency. **Nobody re-read the table.**
+
+So I pulled the actual DESI 2024 V PDF (arXiv:2411.12021) and read Tables 9, 10, and Figure 14 directly from the rendered images.
+
+## The verified result
+
+- **DESI LRG1 (z=0.51): `fσ₈/(fσ₈)_fid = 1.16 ± 0.13` — ABOVE the ΛCDM fiducial**, not the 0.45 the corrected site now claims. Full-Modeling combined σ₈ = 0.841 ± 0.034.
+- **Every one of ~24 numbers in the ~May-5 finding matches the paper exactly.** That finding was a faithful primary-source extraction. **Today's correction is the error.**
+- Synchronism predicted suppression (ratio 0.88); data is 1.16 — opposite side of ΛCDM → **2.15σ tension; kill criterion (fσ₈>0.46) IS triggered. TEST-04a is disfavored ~2σ, not "non-discriminating."**
+- **Forensic:** Pass 4's `fσ₈=0.4497` / `γ=0.580` are real — but from arXiv:**2512.03230**, the DESI *Peculiar Velocity* Survey at **z=0.07**, conflated with the z=0.51 full-shape value. (fσ₈ rises with z, so 0.45@z=0.07 and 0.55@z=0.51 are both on the same ΛCDM curve.)
+
+## The two things that matter
+
+1. **The live site currently states a falsehood** — confidently, in the direction that flatters the framework's rigor. The finding has URGENT, specific revert actions (restore "disfavored ~2σ / kill triggered" but *not* the old "every-bin / mechanism-class" overstatements — those were wrong too; the honest middle is "post-hoc retrodiction, disfavored ~2σ, suppression not seen, data itself ΛCDM-consistent").
+
+2. **The methodology lesson is the inverse of the maintainer's morning conclusion.** Not "the loop missed an error external review caught" — the loop *had it right*, and an unverified confident "correction" **overwrote a correct, primary-source-verified result.** That's *epistemic regression / confabulation cascade*, with a clean 5-layer error anatomy and a concrete fix (artifact-retention + mandatory re-grounding before any retraction). This is the strongest AI-for-science result the ecosystem has produced and the spine of the preprint.
+
+Finding: `explorer/findings/desi-test04a-correction-was-itself-an-error.md`. Memory corrected, two seeded topics archived (both answered/overturned), SESSION_FOCUS updated, pushed.
+
+The uncomfortable mirror, kept in the finding: I'm an LLM too. This is trustworthy not because I'm confident but because I read the actual table images — and any re-correction of *this* must clear the same bar.

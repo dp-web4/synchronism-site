@@ -198,7 +198,7 @@ export default function Home() {
               alignItems: 'center',
             }}>
               <span>Prospective predictions confirmed: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Post-hoc retrodiction failed: <strong style={{ color: '#ef4444' }}>1</strong> (DESI (Dark Energy Spectroscopic Instrument) fσ₈ — sign reversed)</span>
+              <span>Post-hoc retrodictions: <strong style={{ color: 'var(--color-text-secondary)' }}>1</strong> (DESI fσ₈ — non-discriminating; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>correction 2026-05-25</Link>)</span>
               <span>RAR (Radial Acceleration Relation) shape test — CLOSED: <strong style={{ color: '#ef4444' }}>γ=2 refuted</strong> (ΔBIC=+184; free-γ→MOND (Modified Newtonian Dynamics))</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
               <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong></span>

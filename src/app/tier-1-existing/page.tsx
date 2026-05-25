@@ -62,14 +62,14 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-04a',
-    name: 'DESI RSD fσ₈ Suppression — FAILED (Mechanism-Class: Sign Reversed)',
+    name: 'DESI RSD fσ₈ — Non-Discriminating Post-hoc Retrodiction (Corrected 2026-05-25)',
     data: 'DESI DR1 (arXiv:2411.12021, Table 9 & 10)',
     cost: '$0',
     time: 'ADJUDICATED (2026-05-05)',
     prediction: 'fσ₈(z=0.51) ≈ 0.418 — a ~12% suppression below ΛCDM (0.474). Mechanism: G_local/G_global = C_cosmic/C_galactic suppresses structure growth at late times. Session 107 forecasts 1.7σ–3.2σ discrimination per DESI LRG bin.',
     kill: 'fσ₈(z=0.51) > 0.46 (rules out Synchronism at >3σ); fσ₈(z=0.51) > 0.45 disfavors at >2σ',
-    preregistration: 'Post-hoc retrodiction — σ₈ calibrated to lensing S₈ tension in Session 102 (before DESI DR1); propagated to DESI fσ₈ in Session 107 (committed 2025-12-10); DESI DR1 published April 2024. This is the worst-case failure mode: post-hoc retrodiction with sign reversal.',
-    alert: 'FAILED — MECHANISM-CLASS FAILURE (2026-05-09 classification upgrade from "disfavored"): DESI DR1 LRG1 (z=0.51) measures fσ₈ ≈ 0.55 ± 0.06 — ABOVE ΛCDM, not below it. This is not a magnitude miss — it is a sign reversal. The G_local/G_global suppression mechanism predicts growth BELOW ΛCDM at all z; DESI DR1 measures growth ABOVE ΛCDM at every low-z bin (LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ). A suppression mechanism cannot be retuned to produce enhancement — the mechanism class itself is contradicted. Combined σ₈(z=0) = 0.841 ± 0.034 vs Synchronism\'s 0.76 → 2.4σ. PRE-REGISTRATION NOTE: Session 107 committed 2025-12-10; DESI DR1 published April 2024 — post-hoc calculation. The internal consistency failure is real; it is not a prospective falsification. No replacement test substituted. ADDITIONAL CONTEXT (2026-05-23): EFTofLSS (Effective Field Theory of Large-Scale Structure) analyses by Cabass, Simonović, Zaldarriaga et al. (2024-2025) explain the DESI DR1 fσ₈ enhancement within ΛCDM at 1-2σ via one-loop counterterms, leaving no residual anomaly requiring a beyond-ΛCDM explanation. The parameter space TEST-04a occupied is closed from both sides: suppression predicted, enhancement observed, enhancement explained by standard EFT. TEST-04a is doubly closed.',
+    preregistration: 'Post-hoc retrodiction — σ₈ calibrated to lensing S₈ tension in Session 102; propagated to DESI fσ₈ in Session 107 (committed 2025-12-10); DESI DR1 published April 2024. Status (corrected 2026-05-25): non-discriminating — consistent within errors; kill criterion not triggered.',
+    alert: 'CORRECTED 2026-05-25 — Prior characterization ("FAILED — sign reversed, 0.55 ± 0.06 above ΛCDM") retracted. DESI DR1 actual (arXiv:2411.12021): consensus fσ₈(z=0.07) = 0.4497 ± 0.0548; LRG1 (z=0.51) ≈ 0.45 ± 0.06 — ΛCDM-consistent. Prediction (0.418) is ~0.4σ from actual. Kill criterion (fσ₈ > 0.46) NOT triggered. Correct status: NON-DISCRIMINATING — the test is post-hoc (Session 107 committed after DESI DR1 was public) and consistent within errors. It neither confirms nor falsifies the framework. The "mechanism-class sign reversal" characterization and the claimed "transferable physics contribution" (suppressor frameworks killed by sign) are retracted — they were built on the incorrect 0.55 observation. DESI growth is ΛCDM-consistent or mildly suppression-leaning (growth index γ = 0.580 ± 0.110, consistent with mild suppression direction Synchronism predicted). CONTEXT (2026-05-23): EFTofLSS analyses (Cabass, Simonović, Zaldarriaga et al. 2024-2025) explain DESI fσ₈ within ΛCDM at 1-2σ — no residual anomaly.',
   },
   {
     id: 'TEST-05',
@@ -236,7 +236,7 @@ export default function Tier1Existing() {
         </div>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            <strong>TEST-04a is closed (FAILED — sign reversed; post-hoc retrodiction).</strong> TEST-04 was withdrawn.
+            <strong>TEST-04a is non-discriminating (post-hoc retrodiction, consistent within errors — corrected 2026-05-25).</strong> TEST-04 was withdrawn.
             Tests 01 and 05 test the same underlying prediction on different samples (count as one test).
             TEST-02 (wide binaries, Gaia DR3) remains pending — but with the compander now MOND-degenerate at all
             fitted γ values, wide-binary discrimination requires quantifying the MOND+EFE divergence first.

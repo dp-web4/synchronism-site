@@ -57,8 +57,8 @@ const closedTests = [
   {
     id: 'TEST-04a',
     name: 'DESI RSD fσ₈ Suppression',
-    status: 'FAILED — Mechanism-Class: Sign Reversed',
-    verdict: 'Session 107 predicted fσ₈(z=0.51) ≈ 0.418 (suppressed growth, ~12% below ΛCDM). DESI DR1 measured fσ₈ ≈ 0.55 ± 0.06 — enhanced growth, above ΛCDM, not below it. This is a sign reversal, not a magnitude miss. A suppression mechanism cannot be retuned to produce enhancement. Mechanism class ruled out. See /tier-1-existing for full documentation.',
+    status: 'NON-DISCRIMINATING — Post-hoc, Consistent Within Errors (corrected 2026-05-25)',
+    verdict: 'Session 107 predicted fσ₈(z=0.51) ≈ 0.418. DESI DR1 actual: LRG1 ≈ 0.45 ± 0.06 — ΛCDM-consistent. Prior characterization ("0.55 ± 0.06 above ΛCDM, sign reversed") was not supported by arXiv:2411.12021 and is retracted. Prediction is ~0.4σ from actual; kill criterion (fσ₈ > 0.46) not triggered. Honest verdict: non-discriminating post-hoc retrodiction — consistent, not falsifying, not confirming. See /tier-1-existing for full documentation.',
   },
   {
     id: 'TEST-04',
@@ -79,7 +79,7 @@ export default function Top5Tests() {
         <p>
           Of the defined experiments, these have the highest <strong>distinguishing
           power</strong> &mdash; tests that can discriminate between Synchronism and existing frameworks.
-          Two predictions have now closed: one failed by sign reversal, one withdrawn by internal contradiction.
+          Two predictions have now closed: one is non-discriminating (post-hoc, consistent; corrected 2026-05-25), one withdrawn by internal contradiction.
         </p>
 
         <div style={{
@@ -113,7 +113,7 @@ export default function Top5Tests() {
         }}>
           <strong style={{ color: '#ef4444' }}>Scorecard (2026-05-13):</strong>{' '}
           Confirmed: <strong>0</strong> &nbsp;|&nbsp;
-          Refuted: <strong>1</strong> (TEST-04a sign-reversed) &nbsp;|&nbsp;
+          Non-discriminating: <strong>1</strong> (TEST-04a post-hoc, consistent; corrected 2026-05-25) &nbsp;|&nbsp;
           Withdrawn: <strong>1</strong> (TEST-04 internal contradiction) &nbsp;|&nbsp;
           Active: <strong>1 discriminating</strong> (TEST-02, EFE-degeneracy caveat pending) &nbsp;|&nbsp;
           Monitoring: <strong>1</strong> (TEST-07 no derivation) &nbsp;|&nbsp;
@@ -215,7 +215,7 @@ export default function Top5Tests() {
         <h2>The Strategy</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            With TEST-04 withdrawn and TEST-04a sign-reversed, the immediate discriminating work shifts to
+            With TEST-04 withdrawn and TEST-04a non-discriminating (corrected 2026-05-25), the immediate discriminating work shifts to
             TEST-02 (wide binaries, Gaia DR3 — zero cost). But TEST-02 needs a critical prerequisite:
             compute the MOND+EFE prediction for the same observable and show where Synchronism diverges
             numerically. Without that, a positive TEST-02 result cannot distinguish the frameworks.

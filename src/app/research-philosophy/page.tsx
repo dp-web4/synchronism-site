@@ -237,9 +237,9 @@ export default function ResearchPhilosophy() {
           <h3 style={{ color: 'var(--color-accent-blue)', fontSize: '0.95rem', marginTop: 0 }}>The meta-finding: this pattern is the result</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
             The combined pattern across the full research arc is itself a publishable finding about
-            AI-generated science: <strong>every structurally novel commitment (TEST-04a sign-reversed,
-            critical exponents 2&times; off, Bullet Cluster viscosity sign-reversed) has failed by sign
-            or magnitude; every surviving prediction is degenerate with MOND or standard QM</strong>.
+            AI-generated science: <strong>every structurally novel commitment (TEST-04a non-discriminating post-hoc,
+            critical exponents category-error, Bullet Cluster viscosity sign-reversed) has either failed
+            or collapsed to non-discriminating; every surviving prediction is degenerate with MOND or standard QM</strong>.
             This is exactly what you would predict from a training-distribution filter operating on a
             physics corpus that already contains MOND and QM. The framework is not a failed attempt at new physics —
             it is a successful demonstration of the ceiling on AI-to-AI adversarial collaboration when
@@ -309,16 +309,16 @@ export default function ResearchPhilosophy() {
           <div className="card" style={{ padding: '0.75rem 1rem', borderLeft: '3px solid #ef4444' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
               <strong>TEST-04a: DESI RSD fσ₈ Suppression</strong>
-              <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>FAILED — MECHANISM-CLASS: SIGN REVERSED (2026-05-09)</span>
+              <span style={{ fontSize: '0.75rem', color: '#f59e0b' }}>NON-DISCRIMINATING — Post-hoc, Consistent (corrected 2026-05-25)</span>
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
               Registered as TEST-04 replacement (2026-05-04). Derivation: Session 107. Threshold: fσ₈(z=0.51) &gt; 0.46
-              rules out at 3σ; &gt; 0.45 disfavors at 2σ. DESI DR1 result (2026-05-05): fσ₈ ≈ 0.55 ± 0.06 at LRG1,
-              σ₈ = 0.841 ± 0.034 combined. By own kill criterion: ΛCDM favored at every LRG bin.
-              This is not a magnitude miss — it is a sign reversal: the suppression mechanism predicts growth
-              <em>below</em> ΛCDM; DESI DR1 measures it <em>above</em> ΛCDM at every low-z bin.
-              Mechanism-class framing added 2026-05-09. Post-hoc by 8+ months (DESI DR1 published April 2024;
-              Session 107 committed December 2025). <strong>No replacement substituted.</strong>
+              rules out at 3σ. DESI DR1 actual (arXiv:2411.12021): consensus fσ₈ = 0.4497 ± 0.0548; LRG1 ≈ 0.45 ± 0.06.
+              Kill criterion NOT triggered (actual ≤ 0.45). Prediction (0.418) is ~0.4σ from actual — consistent.
+              Prior characterization (&ldquo;0.55 ± 0.06 above ΛCDM, sign reversed&rdquo;) retracted 2026-05-25 —
+              not supported by the cited paper. Post-hoc by 8+ months (DESI DR1 April 2024;
+              Session 107 committed December 2025). Verdict: non-discriminating, not falsifying.
+              <strong>No replacement substituted.</strong>
             </p>
           </div>
         </div>

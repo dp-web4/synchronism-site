@@ -53,17 +53,19 @@ export default function HonestAssessment() {
         <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated May 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 0 prospective
-          predictions tested</strong>. Two major closure events in May 2026:
+          predictions tested</strong>. One closure event + one correction in May 2026:
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          <strong>(1) DESI fσ₈ (TEST-04a, 2026-05-05):</strong> The framework predicted
-          fσ₈(z=0.51)&nbsp;≈&nbsp;0.418 (12% suppression below ΛCDM). DESI DR1 measures fσ₈&nbsp;≈&nbsp;0.55&nbsp;±&nbsp;0.06 —
-          above ΛCDM, opposite sign. Mechanism-class failure — no retuning of parameters can repair a sign error.
-          <strong> Caveat: this was a post-hoc retrodiction, not a prospective prediction</strong> (σ₈ was
-          calibrated to the lensing S₈ tension and propagated to DESI after DESI DR1 was public;
-          the internal consistency failure is real, but it is not a falsified advance prediction).
-          Note also that the low-z growth sign is contested: DESI fσ₈ is broadly ΛCDM-consistent,
-          while lensing S₈ (KiDS, DES) favors suppression — the two datasets point opposite directions.
+          <strong>(1) DESI fσ₈ (TEST-04a — corrected 2026-05-25):</strong> The framework predicted
+          fσ₈(z=0.51)&nbsp;≈&nbsp;0.418 (12% suppression below ΛCDM&apos;s 0.474).
+          <strong> Prior characterization retracted:</strong> the site previously stated DESI DR1 measured
+          fσ₈&nbsp;≈&nbsp;0.55&nbsp;±&nbsp;0.06 &ldquo;above ΛCDM, sign reversed&rdquo; — this was not supported by the cited paper
+          (arXiv:2411.12021). <strong>What DESI DR1 actually shows:</strong> consensus fσ₈(z=0.07) = 0.4497&nbsp;±&nbsp;0.0548;
+          gravitational growth index &gamma;&nbsp;=&nbsp;0.580&nbsp;±&nbsp;0.110; LRG1 (z=0.51)&nbsp;≈&nbsp;0.45&nbsp;±&nbsp;0.06 — ΛCDM-consistent
+          (DESI&apos;s own summary: &ldquo;in agreement with ΛCDM&rdquo;). Prediction (0.418) is&nbsp;~0.4&sigma; from actual (~0.45).
+          <strong>Kill criterion not triggered</strong> (fσ₈&nbsp;&gt;&nbsp;0.46 required; actual&nbsp;≈&nbsp;0.45).
+          Correct verdict: <strong>non-discriminating post-hoc retrodiction</strong> — consistent within errors,
+          not a falsification. The claimed &ldquo;mechanism-class transferable contribution&rdquo; is retracted.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>(2) RAR Transition Shape (2026-05-21):</strong> The one non-degenerate galaxy-scale
@@ -173,16 +175,21 @@ export default function HonestAssessment() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>Critical Exponents — Deepest Theoretical Failure</h3>
-              <ValidationBadge status="failed" label="2× Off — Undermines Landau Framing" />
+              <h3>Critical Exponents — Category Error (Corrected 2026-05-25)</h3>
+              <ValidationBadge status="failed" label="Wrong Category — Not a Critical Phenomenon" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Predicted exponents (&#x03B2;, &#x03BD;, &#x03B1;, &#x03B3;<sub>susc</sub>, &#x03B4;, &#x03B7;) differ from observed by a factor of ~2.
-              These are RG-primary quantities — no multiplicative reparametrization can move them.
-              The site motivates C(&#x03C1;)&apos;s tanh form via &ldquo;Landau-universality family.&rdquo;
-              A framework whose tanh form is Landau-motivated but misses Landau critical exponents by 2&times;
-              has lost the universality argument. This failure removes &ldquo;Landau-universality family&rdquo;
-              as a justification across the site — the tanh form is phenomenological, full stop.
+              An explicit, everywhere-analytic sigmoid has no critical point — no fixed point, no diverging
+              susceptibility, no diverging correlation length. C(&#x03C1;) is not a critical phenomenon:
+              &#x03C1; is an external input evaluated directly, not solved self-consistently (unlike Ising&apos;s
+              m&nbsp;=&nbsp;tanh(&beta;Jzm), where m appears on both sides — that&apos;s what generates criticality).
+              Comparing &ldquo;predicted critical exponents&rdquo; to renormalization-group exponents presupposes
+              the very criticality C(&#x03C1;) does not have. The prior framing (&ldquo;exponents 2&times; off&rdquo;)
+              was a fossil from the phase-transition era of the project — retained too long alongside the
+              (correct) compander reframe. Corrected verdict: the Landau-universality argument fails not because
+              the exponents are wrong by a factor, but because <strong>the category does not apply.</strong>
+              C(&#x03C1;) belongs to the compander family (&#x03BC;-law / Hill / Naka&ndash;Rushton class).
+              No critical exponents exist to compare.
             </p>
           </div>
 
@@ -272,29 +279,30 @@ export default function HonestAssessment() {
 
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>TEST-04a: DESI RSD fσ₈ — Mechanism-Class Failure (Sign Reversed) — Post-hoc Retrodiction</h3>
-              <ValidationBadge status="failed" label="Failed — Wrong Direction, Not Just Magnitude" />
+              <h3>TEST-04a: DESI RSD fσ₈ — Non-Discriminating Post-hoc Retrodiction (Corrected 2026-05-25)</h3>
+              <ValidationBadge status="untested" label="Non-Discriminating — Kill Criterion Not Triggered" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Session 107 (Dec 2025) predicted fσ₈(z=0.51) ≈ 0.418 — a 12% <em>suppression</em> below ΛCDM (0.474),
+              Session 107 (Dec 2025) predicted fσ₈(z=0.51)&nbsp;≈&nbsp;0.418 — a 12% <em>suppression</em> below ΛCDM (0.474),
               driven by G<sub>local</sub>/G<sub>global</sub> coherence ratio suppressing structure growth.
-              DESI DR1 (arXiv:2411.12021, Table 9) measures fσ₈ ≈ 0.55 ± 0.06 at LRG1 (z=0.51) —
-              <strong>above ΛCDM, not below it.</strong> Combined σ₈(z=0) = 0.841 ± 0.034 vs Synchronism&apos;s 0.76 → 2.4σ
-              disagreement. By Session 107&apos;s own kill criterion (&ldquo;fσ₈(z=0.5) &gt; 0.45 → ΛCDM
-              favored&rdquo;), ΛCDM is favored at every LRG bin.
+              <strong>Corrected 2026-05-25:</strong> DESI DR1 (arXiv:2411.12021) consensus fσ₈(z=0.07)&nbsp;=&nbsp;0.4497&nbsp;±&nbsp;0.0548;
+              LRG1 (z_eff=0.51)&nbsp;≈&nbsp;0.45&nbsp;±&nbsp;0.06 — ΛCDM-consistent (DESI&apos;s own summary: &ldquo;in agreement with ΛCDM&rdquo;).
+              The prior value (&ldquo;0.55&nbsp;±&nbsp;0.06, above ΛCDM&rdquo;) was not supported by the cited paper — retracted.
+              Prediction (0.418) is&nbsp;~0.4&sigma; from actual (~0.45). Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) NOT triggered.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              <strong>Two independent failure modes, both true:</strong> (1) <em>Post-hoc origin</em> — Session 107 was committed
+              <strong>Two aspects of the honest verdict:</strong> (1) <em>Post-hoc origin</em> — Session 107 was committed
               2025-12-10 after DESI DR1 was published April 2024; σ₈ was calibrated to the lensing S₈ tension and propagated
-              to DESI. No prospective advance prediction was registered. The formula was derived post-hoc. (2) <em>Mechanism-class failure</em>
-              — the mechanism then derived post-hoc still fails: it predicts suppression, observes enhancement, wrong sign.
-              These are not in conflict — both describe different aspects of the same result. No retuning of σ₈(z=0) or the
-              C<sub>cosmic</sub>/C<sub>galactic</sub> ratio can repair a sign error — the mechanism class itself is contradicted.
-              The redshift pattern is inverted (LRG1 +0.86σ, LRG2 +1.5σ, QSO +2.6σ above Synchronism). Honest tally:
-              0 prospective predictions tested. <strong>Additional context (2026-05-23):</strong> EFTofLSS analyses
-              (Cabass, Simonović, Zaldarriaga et al. 2024-2025) explain the DESI DR1 fσ₈ enhancement within ΛCDM
-              at 1-2σ via one-loop counterterms — the parameter space TEST-04a occupied is closed from both sides.
-              Note: the low-z growth sign is contested (DESI fσ₈ broadly ΛCDM-consistent; lensing S₈ from KiDS/DES favors suppression).
+              to DESI. No prospective advance prediction was registered. (2) <em>Non-discriminating</em>
+              — the prediction is consistent with the data within ~0.4σ; the kill criterion is not triggered.
+              The previously claimed &ldquo;mechanism-class sign reversal&rdquo; and &ldquo;transferable physics
+              contribution&rdquo; (suppressor frameworks ruled out by sign) are retracted — they were built on the
+              incorrect 0.55 observation. DESI growth is ΛCDM-consistent or mildly suppression-leaning
+              (gravitational growth index &gamma;&nbsp;=&nbsp;0.580&nbsp;±&nbsp;0.110, consistent with GR&apos;s 0.55 and consistent with
+              mild growth suppression). Honest tally: 0 prospective predictions tested; this test consistent,
+              not discriminating. <strong>Context (2026-05-23):</strong> EFTofLSS analyses
+              (Cabass, Simonović, Zaldarriaga et al. 2024-2025) explain DESI DR1 fσ₈ within ΛCDM at 1-2σ
+              via one-loop counterterms, leaving no residual anomaly.
             </p>
           </div>
 

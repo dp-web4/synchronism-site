@@ -47,10 +47,12 @@ export default function WhySynchronism() {
         </p>
         <p style={{ color: 'var(--color-text-secondary)', fontStyle: 'italic', borderLeft: '3px solid var(--color-accent-violet)', paddingLeft: '0.75rem' }}>
           In plain English: an S-curve that smoothly goes from 0 (everything acting independently)
-          to 1 (everything locked together) as density grows. The parameter &#x03B3; controls how sharp
-          the transition is; &#x03C1;<sub>crit</sub> is a reference density setting where on the curve
-          you are. The shape &mdash; tanh &mdash; is a phenomenological choice, not a derived result:
+          to 1 (everything locked together) as density grows. <strong>tanh</strong> is the hyperbolic tangent
+          — an S-shaped saturation function that maps any real number to (0, 1). The &#x03B3; parameter
+          controls how sharp the transition is; &#x03C1;<sub>crit</sub> is a reference density setting where
+          on the curve you are. The shape &mdash; tanh &mdash; is a phenomenological choice, not a derived result:
           any S-curve with the same saturation properties would fit the same data equally well.
+          (Full step-by-step breakdown: <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Walkthrough &rarr;</Link>)
         </p>
         <p>
           The parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> depends only on how many particles are

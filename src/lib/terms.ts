@@ -40,15 +40,15 @@ export const terms: Record<string, TermDefinition> = {
   'MRH': {
     term: 'MRH',
     fullName: 'Markov Relevancy Horizon',
-    brief: 'The minimal set of interacting degrees of freedom whose state transitions materially influence coherence evolution.',
-    explanation: 'Like an event horizon for causal influence. Beyond the MRH, correlations decay below the noise floor. An MRH must satisfy predictive sufficiency (removing any element inside it degrades prediction) and predictive closure (adding elements outside it doesn\u2019t improve prediction). In quantum mechanics, crossing the MRH IS measurement/decoherence. Presence (\u03C1) is defined relative to an MRH: change the MRH, presence changes.',
+    brief: 'An "event horizon for influence" \u2014 the bubble of nearest neighbors that matter. Everything outside it can be ignored without losing predictive accuracy.',
+    explanation: 'Think of an atom: Andromeda exists, but its gravitational and electromagnetic influence on a single atom is below the noise floor. The MRH is the minimal neighborhood such that removing anything inside degrades prediction, and adding anything outside does not improve it. Formally: the minimal set of interacting degrees of freedom whose state transitions materially influence coherence evolution. In quantum mechanics, crossing the MRH IS measurement/decoherence. Presence (\u03C1) is defined relative to an MRH: change the MRH, presence changes.',
     learnMore: '/mrh',
   },
   'presence': {
     term: 'Presence (\u03C1)',
     fullName: 'Compatible Structural Elements within MRH',
-    brief: 'A scalar representation of compatible degrees of freedom available within a Markov Relevancy Horizon, sufficient to support emergent coherence.',
-    explanation: 'Presence is not merely quantity \u2014 it encodes compatibility, configuration, and environmental suitability. Physical density is one form of presence, but presence also encompasses temperature, energy levels, catalytic surfaces, field gradients, and lower-fractal scaffolding. Formally: \u03C1 = f(compatibility vector), the scalar projection of a multidimensional compatibility space. Must be quantifiable, domain-transparent, MRH-dependent, and falsifiable.',
+    brief: 'How much compatible stuff is nearby \u2014 "density" but generalized. A single word for "the right kind of neighbors within your MRH."',
+    explanation: 'Why not just call it density? Physical density (g/cm\u00B3) is one form of presence, but the framework applies the same equation to chemistry (presence = compatible molecular configurations), neural tissue (presence = coupled neurons), and galaxies (presence = baryonic density). A single word covers all these cases. Presence is not merely quantity \u2014 it encodes compatibility, configuration, and environmental suitability: \u03C1 = f(compatibility vector), the scalar projection of a multidimensional compatibility space onto a single number. Must be quantifiable, domain-transparent, MRH-dependent, and falsifiable.',
     learnMore: '/coherence-function',
   },
   'a\u2080': {

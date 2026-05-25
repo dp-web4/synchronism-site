@@ -129,6 +129,16 @@ const tests: Test[] = [
     kill: 'Baryon-dominated dwarfs below 10⁸ M☉ exist',
     alert: 'MOND-shared flag: dwarfs below 10⁸ M☉ are deep-MOND systems where standard MOND already predicts the rotation is dominated by the Milgrom term — equivalent to near-100% apparent DM fraction in Newtonian terms. A positive result confirms Synchronism and MOND equally; only a null (baryon-dominated dwarfs below 10⁸ M☉) discriminates. The kill criterion is sharp; the confirm criterion is not.',
   },
+  {
+    id: 'CLUSTER-SCALE',
+    name: 'Cluster Scale — Structurally Silent (Not a Tier 1 Test)',
+    data: 'N/A — no prediction exists',
+    cost: 'N/A',
+    time: 'N/A',
+    prediction: '[None] C(ρ) returns a unitless coherence value in [0,1] and requires per-galaxy V_flat calibration to become a velocity prediction. No dimensional bridge maps C(ρ(r)) on a cluster baryonic profile to an apparent mass or lensing convergence.',
+    kill: 'N/A — no prediction to kill',
+    alert: 'STRUCTURAL GAP (2026-05-24): C(ρ) is silent at cluster scale by construction, not by choice. Unlike Verlinde (2016), which gives M_D² = (a₀·r·M_B)/(6G) — dimensionally complete and testable at clusters — C(ρ) produces only a unitless [0,1] value. There is no archive prescription for mapping C(ρ(r)) on a cluster NFW or baryonic profile to apparent mass. This means the framework cannot address the Bullet Cluster mass discrepancy, weak lensing offset, or MOND\'s known ~3× cluster mass deficit (Sanders 2003, Angus et al. 2008). The "one equation across 80 orders of magnitude" claim is structurally blocked at cluster scale. This gap is not a prediction that failed — it is a domain where no prediction exists. Listed here as an honest accounting of scope. The cluster-scale bridge (if it exists in the archive) is the last open door for the physics program. See explorer/topics/c-rho-cluster-prediction-bridge.md.',
+  },
 ];
 
 export default function Tier1Existing() {

@@ -145,7 +145,7 @@ export default function CoherenceExplorer() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
           <div className="card">
             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
-              &#x03B3; = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{gamma.toFixed(2)}</span>
+              <strong>Transition sharpness</strong> (&#x03B3;) = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{gamma.toFixed(2)}</span>
             </label>
             <input
               type="range" min="0.01" max="4.0" step="0.01" value={gamma}
@@ -154,7 +154,7 @@ export default function CoherenceExplorer() {
             />
             <p style={{ color: regimeColor, fontSize: '0.8rem', marginTop: '0.25rem' }}>{regime}</p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
-              Higher &#x03B3; = sharper, more abrupt transition. Lower &#x03B3; = gentler slope, more collective behavior.
+              Higher &#x03B3; = sharper, more abrupt snap to coherent. Lower &#x03B3; = gentler slope. Depends on N<sub>corr</sub> (correlated particle count): &#x03B3; = 2/&#x221A;N<sub>corr</sub>.
             </p>
             {gamma > 1.5 && (
               <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.75rem', marginTop: '0.25rem' }}>
@@ -164,7 +164,7 @@ export default function CoherenceExplorer() {
           </div>
           <div className="card">
             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
-              &#x03C1;<sub>crit</sub> = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-blue)' }}>{rhoCrit.toFixed(2)}</span>
+              <strong>Tipping-point density</strong> (&#x03C1;<sub>crit</sub>) = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-blue)' }}>{rhoCrit.toFixed(2)}</span>
             </label>
             <input
               type="range" min="0.01" max="10.0" step="0.01" value={rhoCrit}

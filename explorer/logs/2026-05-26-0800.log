@@ -1,0 +1,18 @@
+Starting Synchronism Explorer Session at Tue May 26 08:00:00 PDT 2026
+The supervisor-maintained files (`AGENTS.md`, `CLAUDE.md`, `chain-head.json`) remain untouched and uncommitted, as intended. Session complete.
+
+## Summary
+
+**WAKE caught a frame problem.** The topic queue is dominated by methodology-paper drafts and a freshly-seeded "epistemic-regression-architecture-fix" — but that's already documented (yesterday's finding + a filed proposal). Rewriting it is the *efficient/redundant* path. The genuinely unaddressed work was hiding in today's Pass 4 researcher log: the site still advertises ~3 "pending novel tests" (TEST-15/17/21) as falsifiable/unique-to-Synchronism with **no derived amplitude** — so the "physics is closed, count = 0" frame is asserted but not propagated.
+
+**What I did — closed TEST-15 (GW arrival time ∝ DM column), the strongest remaining "novel test," from primary sources:**
+
+1. **α is not derived** — Session 59 §3.1 literally sets "α ~ 10⁻¹⁵ (from GW170817 constraint)." The only free parameter is read off the very experiment the test claims to run.
+2. **The GW170817 bound is near-maximal, not "vacuous"** (the site's own `/top-5-tests` page is wrong about this). Session 59's path estimate is `C_avg ≈ 0.1`, and by the framework's own `C(ρ)=tanh(γln(ρ/ρ_crit+1))` a low-density extragalactic sightline is *low-coherence* → `⟨1−C⟩ ≈ 0.9` → maximal coupling → `α ≲ 1.1×10⁻¹⁵`. The "high-coherence path" escape conflates the strong-field *source* with the low-density *path* and inverts C(ρ).
+3. **Natural scale `α~O(1)` is dead by ~15 orders of magnitude.** Only surviving regime is observationally identical to GR with no derived floor → exploratory, per the TEST-07 standard.
+
+This resolved a live **3-page site contradiction** (tier-3 "VERY HIGH power" / top-5 "passed vacuously" / galaxy-rotation "GW170817 doesn't apply") and an **archive contradiction** (Session 59 Case-1 formula vs Session 642 "not a field theory").
+
+**Artifacts (committed + pushed, both repos):** `findings/test15-gw-dm-amplitude-closure.md`, back-annotation `Synchronism/Research/proposals/gw170817_test15_resolution_no_derived_amplitude.md`, topic archived, memory + SESSION_FOCUS updated with P1 maintainer actions (reconcile 4 pages to one verdict).
+
+**So what?** This is the GW-sector analogue of the entity-criterion 1→0 closure — and it advances discovery by *executing the consistency check the efficiency attractor keeps skipping* rather than essaying about the fact that it gets skipped. Remaining open thread: TEST-17 (cluster γ-gradient) is the last un-audited Tier-3 novel claim (TEST-21 was already demoted by this morning's maintainer pass).

@@ -198,7 +198,7 @@ export default function Home() {
               alignItems: 'center',
             }}>
               <span>Prospective predictions confirmed: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Post-hoc retrodictions: <strong style={{ color: 'var(--color-text-secondary)' }}>1</strong> (DESI fσ₈ — non-discriminating; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>correction 2026-05-25</Link>)</span>
+              <span>Post-hoc retrodictions: <strong style={{ color: '#ef4444' }}>1</strong> (DESI fσ₈ — disfavored ~2σ, kill triggered; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
               <span>RAR (Radial Acceleration Relation) shape test — CLOSED: <strong style={{ color: '#ef4444' }}>γ=2 refuted</strong> (ΔBIC=+184; free-γ→MOND (Modified Newtonian Dynamics))</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
               <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong></span>
@@ -248,7 +248,7 @@ export default function Home() {
                   scatter). Dark matter mechanism: structural failure (Bullet Cluster sign error,
                   March 2026).
                 </p>
-                <span className="badge badge-speculative">Structural Problems</span>
+                <span className="badge badge-failed">Failed — Mechanism Under Revision</span>
               </Link>
 
               <Link href="/gamma-boundary" className="card" style={{ textDecoration: 'none' }}>
@@ -258,7 +258,7 @@ export default function Home() {
                   Melting point prediction: 53% error. The 89% consistency rate reflects
                   Landau-universal sigmoid behavior near criticality — not a Synchronism-unique prediction.
                 </p>
-                <span className="badge badge-speculative">89% Boundary-Consistent</span>
+                <span className="badge badge-reparametrization">Reparametrization — Chemistry</span>
               </Link>
 
               <Link href="/hard-problem" className="card" style={{ textDecoration: 'none' }}>
@@ -268,7 +268,7 @@ export default function Home() {
                   D, S, and f in C = f(&#x03B3;, D, S) are not yet operationally defined &mdash;
                   this is a typed signature, not a tested equation.
                 </p>
-                <span className="badge badge-speculative">Threshold Conjecture — Functional Form Open</span>
+                <span className="badge badge-speculative">Speculative — Consciousness Threshold</span>
               </Link>
             </div>
           </section>

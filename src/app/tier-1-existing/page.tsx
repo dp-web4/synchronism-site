@@ -62,14 +62,14 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-04a',
-    name: 'DESI RSD fσ₈ — Non-Discriminating Post-hoc Retrodiction (Corrected 2026-05-25)',
+    name: 'DESI RSD fσ₈ — Post-hoc Retrodiction, Disfavored ~2σ (Corrected 2026-05-26)',
     data: 'DESI DR1 (arXiv:2411.12021, Table 9 & 10)',
     cost: '$0',
     time: 'ADJUDICATED (2026-05-05)',
     prediction: 'fσ₈(z=0.51) ≈ 0.418 — a ~12% suppression below ΛCDM (0.474). Mechanism: G_local/G_global = C_cosmic/C_galactic suppresses structure growth at late times. Session 107 forecasts 1.7σ–3.2σ discrimination per DESI LRG bin.',
     kill: 'fσ₈(z=0.51) > 0.46 (rules out Synchronism at >3σ); fσ₈(z=0.51) > 0.45 disfavors at >2σ',
-    preregistration: 'Post-hoc retrodiction — σ₈ calibrated to lensing S₈ tension in Session 102; propagated to DESI fσ₈ in Session 107 (committed 2025-12-10); DESI DR1 published April 2024. Status (corrected 2026-05-25): non-discriminating — consistent within errors; kill criterion not triggered.',
-    alert: 'CORRECTED 2026-05-25 — Prior characterization ("FAILED — sign reversed, 0.55 ± 0.06 above ΛCDM") retracted. DESI DR1 actual (arXiv:2411.12021): consensus fσ₈(z=0.07) = 0.4497 ± 0.0548; LRG1 (z=0.51) ≈ 0.45 ± 0.06 — ΛCDM-consistent. Prediction (0.418) is ~0.4σ from actual. Kill criterion (fσ₈ > 0.46) NOT triggered. Correct status: NON-DISCRIMINATING — the test is post-hoc (Session 107 committed after DESI DR1 was public) and consistent within errors. It neither confirms nor falsifies the framework. The "mechanism-class sign reversal" characterization and the claimed "transferable physics contribution" (suppressor frameworks killed by sign) are retracted — they were built on the incorrect 0.55 observation. DESI growth is ΛCDM-consistent or mildly suppression-leaning (growth index γ = 0.580 ± 0.110, consistent with mild suppression direction Synchronism predicted). CONTEXT (2026-05-23): EFTofLSS analyses (Cabass, Simonović, Zaldarriaga et al. 2024-2025) explain DESI fσ₈ within ΛCDM at 1-2σ — no residual anomaly.',
+    preregistration: 'Post-hoc retrodiction — σ₈ calibrated to lensing S₈ tension in Session 102; propagated to DESI fσ₈ in Session 107 (committed 2025-12-10); DESI DR1 published April 2024. Status (corrected 2026-05-26): disfavored ~2σ — kill criterion triggered.',
+    alert: 'CORRECTED 2026-05-26 (previous 2026-05-25 "correction" was itself an error). DESI DR1 full-shape (arXiv:2411.12021): LRG1 (z=0.51) fσ₈/(fσ₈)_fid = 1.16 ± 0.13 — above ΛCDM fiducial. Combined σ₈ = 0.841 ± 0.034 (Table 10). Synchronism predicted fσ₈ ≈ 0.418 (σ₈ ≈ 0.76) — a suppression. Actual σ₈ = 0.841 → tension 2.4σ. Kill criterion (fσ₈ > 0.46) triggered. Verdict: post-hoc retrodiction — disfavored ~2σ; suppression not observed; data itself ΛCDM-consistent. The 0.4497 ± 0.0548 figure cited in the 2026-05-25 edit belongs to arXiv:2512.03230 (DESI Peculiar Velocity Survey, z≈0.07) — a different survey misattributed to the z=0.51 full-shape slot. Note: the "mechanism-class sign reversal / transferable contribution" characterization is NOT restored — that was an overstatement; this is a post-hoc test. CONTEXT (2026-05-23): EFTofLSS analyses (Cabass, Simonović, Zaldarriaga et al. 2024-2025) explain DESI DR1 fσ₈ within ΛCDM at 1-2σ.',
   },
   {
     id: 'TEST-05',
@@ -246,7 +246,7 @@ export default function Tier1Existing() {
         </div>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            <strong>TEST-04a is non-discriminating (post-hoc retrodiction, consistent within errors — corrected 2026-05-25).</strong> TEST-04 was withdrawn.
+            <strong>TEST-04a is disfavored ~2σ — kill criterion triggered (post-hoc retrodiction; corrected 2026-05-26).</strong> TEST-04 was withdrawn.
             Tests 01 and 05 test the same underlying prediction on different samples (count as one test).
             TEST-02 (wide binaries, Gaia DR3) remains pending — but with the compander now MOND-degenerate at all
             fitted γ values, wide-binary discrimination requires quantifying the MOND+EFE divergence first.
@@ -260,7 +260,7 @@ export default function Tier1Existing() {
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
             Tests 09 and 10 are MOND-shared predictions. The effective independent novel test count
-            after TEST-04a failure, TEST-04 withdrawal, and RAR shape closure is approximately 2–3 (TEST-02, TEST-01/05 combined — pending EFE divergence computation).
+            after TEST-04a disfavor (~2σ), TEST-04 withdrawal, and RAR shape closure is approximately 2–3 (TEST-02, TEST-01/05 combined — pending EFE divergence computation).
           </p>
         </div>
 

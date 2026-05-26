@@ -53,19 +53,19 @@ export default function HonestAssessment() {
         <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated May 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 0 prospective
-          predictions tested</strong>. One closure event + one correction in May 2026:
+          predictions tested</strong>. One closure event + one external disfavor in May 2026:
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          <strong>(1) DESI fσ₈ (TEST-04a — corrected 2026-05-25):</strong> The framework predicted
+          <strong>(1) DESI fσ₈ (TEST-04a — corrected 2026-05-26):</strong> The framework predicted
           fσ₈(z=0.51)&nbsp;≈&nbsp;0.418 (12% suppression below ΛCDM&apos;s 0.474).
-          <strong> Prior characterization retracted:</strong> the site previously stated DESI DR1 measured
-          fσ₈&nbsp;≈&nbsp;0.55&nbsp;±&nbsp;0.06 &ldquo;above ΛCDM, sign reversed&rdquo; — this was not supported by the cited paper
-          (arXiv:2411.12021). <strong>What DESI DR1 actually shows:</strong> consensus fσ₈(z=0.07) = 0.4497&nbsp;±&nbsp;0.0548;
-          gravitational growth index &gamma;&nbsp;=&nbsp;0.580&nbsp;±&nbsp;0.110; LRG1 (z=0.51)&nbsp;≈&nbsp;0.45&nbsp;±&nbsp;0.06 — ΛCDM-consistent
-          (DESI&apos;s own summary: &ldquo;in agreement with ΛCDM&rdquo;). Prediction (0.418) is&nbsp;~0.4&sigma; from actual (~0.45).
-          <strong>Kill criterion not triggered</strong> (fσ₈&nbsp;&gt;&nbsp;0.46 required; actual&nbsp;≈&nbsp;0.45).
-          Correct verdict: <strong>non-discriminating post-hoc retrodiction</strong> — consistent within errors,
-          not a falsification. The claimed &ldquo;mechanism-class transferable contribution&rdquo; is retracted.
+          <strong>What DESI DR1 full-shape actually shows (arXiv:2411.12021):</strong> LRG1 (z=0.51)
+          fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 — <em>above</em> the ΛCDM fiducial; combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10).
+          Synchronism predicted σ₈&nbsp;≈&nbsp;0.76; actual 0.841 → <strong>2.4σ tension</strong>.
+          <strong>Kill criterion triggered</strong> (fσ₈&nbsp;&gt;&nbsp;0.46 required; LRG1 actual fσ₈&nbsp;&asymp;&nbsp;1.16&times;fid&nbsp;&gg;&nbsp;0.46).
+          Verdict: <strong>post-hoc retrodiction — disfavored ~2σ; suppression not observed; data ΛCDM-consistent.</strong>
+          Note: a 2026-05-25 &ldquo;correction&rdquo; that claimed fσ₈&nbsp;≈&nbsp;0.45 was itself an error — that value belongs to arXiv:2512.03230
+          (DESI Peculiar Velocity Survey, z&asymp;0.07), misattributed to the z=0.51 full-shape slot. The &ldquo;mechanism-class
+          transferable contribution&rdquo; characterization is not restored — it was an overstatement of a post-hoc test.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>(2) RAR Transition Shape (2026-05-21):</strong> The one non-degenerate galaxy-scale
@@ -279,30 +279,26 @@ export default function HonestAssessment() {
 
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>TEST-04a: DESI RSD fσ₈ — Non-Discriminating Post-hoc Retrodiction (Corrected 2026-05-25)</h3>
-              <ValidationBadge status="untested" label="Non-Discriminating — Kill Criterion Not Triggered" />
+              <h3>TEST-04a: DESI RSD fσ₈ — Post-hoc Retrodiction, Disfavored ~2σ (Corrected 2026-05-26)</h3>
+              <ValidationBadge status="failed" label="Disfavored ~2σ — Kill Criterion Triggered" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Session 107 (Dec 2025) predicted fσ₈(z=0.51)&nbsp;≈&nbsp;0.418 — a 12% <em>suppression</em> below ΛCDM (0.474),
-              driven by G<sub>local</sub>/G<sub>global</sub> coherence ratio suppressing structure growth.
-              <strong>Corrected 2026-05-25:</strong> DESI DR1 (arXiv:2411.12021) consensus fσ₈(z=0.07)&nbsp;=&nbsp;0.4497&nbsp;±&nbsp;0.0548;
-              LRG1 (z_eff=0.51)&nbsp;≈&nbsp;0.45&nbsp;±&nbsp;0.06 — ΛCDM-consistent (DESI&apos;s own summary: &ldquo;in agreement with ΛCDM&rdquo;).
-              The prior value (&ldquo;0.55&nbsp;±&nbsp;0.06, above ΛCDM&rdquo;) was not supported by the cited paper — retracted.
-              Prediction (0.418) is&nbsp;~0.4&sigma; from actual (~0.45). Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) NOT triggered.
+              Session 107 (Dec 2025) predicted fσ₈(z=0.51)&nbsp;≈&nbsp;0.418 — a 12% <em>suppression</em> below ΛCDM (0.474).
+              <strong>DESI DR1 full-shape (arXiv:2411.12021):</strong> LRG1 (z_eff=0.51)
+              fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 — above the ΛCDM fiducial.
+              Combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10). Synchronism predicted σ₈&nbsp;≈&nbsp;0.76.
+              Tension: <strong>2.4σ</strong>. Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) triggered.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Two aspects of the honest verdict:</strong> (1) <em>Post-hoc origin</em> — Session 107 was committed
-              2025-12-10 after DESI DR1 was published April 2024; σ₈ was calibrated to the lensing S₈ tension and propagated
-              to DESI. No prospective advance prediction was registered. (2) <em>Non-discriminating</em>
-              — the prediction is consistent with the data within ~0.4σ; the kill criterion is not triggered.
-              The previously claimed &ldquo;mechanism-class sign reversal&rdquo; and &ldquo;transferable physics
-              contribution&rdquo; (suppressor frameworks ruled out by sign) are retracted — they were built on the
-              incorrect 0.55 observation. DESI growth is ΛCDM-consistent or mildly suppression-leaning
-              (gravitational growth index &gamma;&nbsp;=&nbsp;0.580&nbsp;±&nbsp;0.110, consistent with GR&apos;s 0.55 and consistent with
-              mild growth suppression). Honest tally: 0 prospective predictions tested; this test consistent,
-              not discriminating. <strong>Context (2026-05-23):</strong> EFTofLSS analyses
-              (Cabass, Simonović, Zaldarriaga et al. 2024-2025) explain DESI DR1 fσ₈ within ΛCDM at 1-2σ
-              via one-loop counterterms, leaving no residual anomaly.
+              2025-12-10 after DESI DR1 was published April 2024; σ₈ calibrated to lensing S₈ tension, then propagated to DESI.
+              No prospective prediction registered. (2) <em>Disfavored ~2σ</em>
+              — suppression not observed; data is ΛCDM-consistent or mildly above. A 2026-05-25 &ldquo;correction&rdquo;
+              that claimed kill not triggered was itself an error: 0.4497&nbsp;±&nbsp;0.0548 belongs to arXiv:2512.03230
+              (DESI Peculiar Velocity Survey, z&asymp;0.07) misattributed to the z=0.51 full-shape slot.
+              The &ldquo;mechanism-class transferable contribution&rdquo; is NOT restored — it was an overstatement.
+              <strong>Context (2026-05-23):</strong> EFTofLSS analyses (Cabass, Simonović, Zaldarriaga et al. 2024-2025)
+              explain DESI DR1 fσ₈ within ΛCDM at 1-2σ via one-loop counterterms.
             </p>
           </div>
 

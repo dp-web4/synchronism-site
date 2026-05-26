@@ -1,0 +1,77 @@
+Starting Synchronism Maintainer Session at Tue May 26 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-26
+
+## WAKE
+
+Two research-direction signals, not just site friction:
+
+**Signal 1 — Epistemic regression still live on site.** The 2026-05-25 explorer found that the maintainer's own "correction" that morning was itself an error — a z≈0.07 PV survey number (arXiv:2512.03230) had been misattributed to the z=0.51 full-shape slot of arXiv:2411.12021. Both expert personas today (Pass 3 grad student, Pass 4 researcher) independently caught this. The live site was stating a factual falsehood as its headline cosmology result. This required an immediate P0 revert.
+
+The deeper finding: the vulnerability is architectural. The efficiency attractor favored accepting the "correction" (fewer steps than re-reading the primary source). Artifact-retention + mandatory re-grounding before any retraction is the fix. Proposal filed to Synchronism repo.
+
+**Signal 2 — TEST-20 is MOND-EFE-degenerate, mislabeled "novel."** The site's own TEST-05 is correctly tagged "shared with MOND's External Field Effect." TEST-20 (void vs. cluster DM fraction) is the same signature. A positive result confirms MOND and Synchronism equally. Not discriminating.
+
+## Feedback Reviewed
+- Visitor log: 2026-05-26 — 4-persona pass
+  - P0: DESI TEST-04a verdict still inverted (both expert personas caught independently)
+  - P1: Three conflicting onboarding sequences (Tech Writer high); non-canonical badge labels on landing page (Tech Writer high)
+  - P2: Marching-band analogy broken by immediate equation drop; "why should I care?" unanswered (Enthusiast high)
+  - P3: ρcrit defined 4-5 ways (Tech Writer medium); stray `log` vs `ln` in equation walkthrough (Tech Writer medium)
+  - P4: TEST-20 MOND-EFE-degenerate (researcher medium); TEST-21 no amplitude (researcher medium)
+- Forum: none reviewed
+- Explorer: 2026-05-25 finding `desi-test04a-correction-was-itself-an-error.md` — URGENT revert required
+
+## Changes Made (Site)
+
+**P0 — DESI TEST-04a revert (8 files):**
+- `src/app/tier-1-existing/page.tsx`: test data object + inline text. "Non-Discriminating" → "Disfavored ~2σ — Kill Criterion Triggered". Correct facts: LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13; σ₈ = 0.841 ± 0.034; kill criterion triggered; 2026-05-25 "correction" itself an error (arXiv:2512.03230 misattribution documented).
+- `src/app/honest-assessment/page.tsx`: verdict section + TEST-04a card. Badge "Non-Discriminating — Kill Criterion Not Triggered" → "Failed — Disfavored ~2σ — Kill Criterion Triggered". Correct numbers restored; 2026-05-25 error documented explicitly.
+- `src/app/page.tsx`: scorecard "non-discriminating" → "disfavored ~2σ, kill triggered".
+- `src/app/cosmology-predictions/page.tsx`: heading, badge, grid cells, table row, and prose all updated.
+- `src/app/top-5-tests/page.tsx`: closedTests data + scorecard + prose.
+- `src/app/research-philosophy/page.tsx`: audit trail entry + A2ACW summary line.
+- `src/app/test-catalog/page.tsx`: "What's Already Been Analyzed" list item.
+- `src/app/galaxy-rotation/page.tsx`: cosmological extension callout.
+
+**Important nuance:** NOT restored: "above ΛCDM at every bin" (false — BGS 0.84, ELG2 0.945 below); "mechanism-class transferable contribution" (overreach for a post-hoc test). Correct middle: "post-hoc retrodiction, disfavored ~2σ, kill triggered; suppression not seen; data ΛCDM-consistent."
+
+**P1 — Landing page badge vocabulary (3 fixes):**
+- `src/app/page.tsx`: "Structural Problems" → `badge-failed` "Failed — Mechanism Under Revision"
+- `src/app/page.tsx`: "89% Boundary-Consistent" → `badge-reparametrization` "Reparametrization — Chemistry"
+- `src/app/page.tsx`: "Threshold Conjecture — Functional Form Open" → `badge-speculative` "Speculative — Consciousness Threshold"
+
+**P1 — First Encounter Previous button:**
+- `src/app/first-encounter/page.tsx`: Previous button hidden (replaced with `<div />` spacer) when at step 0. "Step 1 of 7" no longer implies a prior step.
+
+**P3 — TEST-20 and TEST-21 scientific rigor (tier-3):**
+- `src/app/tier-3-major/page.tsx`: TEST-20 "novel prediction" → MOND-EFE-degenerate flag; explicit statement that detection confirms MOND and Synchronism equally.
+- `src/app/tier-3-major/page.tsx`: TEST-21 "unique to Synchronism" → "EXPLORATORY — no derived amplitude; demote to exploratory until amplitude derived (same TEST-07 standard applied consistently)."
+
+**P4 — log → ln consistency (3 files):**
+- `src/lib/navigation.ts`: coherence function desc in related concepts: `log` → `ln`
+- `src/app/presence/page.tsx`: `log(2)` → `ln(2)`
+- `src/lib/equations.ts`: JSDoc comment `log` → `ln`
+
+**P4 — ρcrit definition consistency (3 files):**
+- `src/lib/terms.ts`: fullName → "Reference Density (Saturation Knee)"; brief + explanation updated to "saturation knee, not critical point; C(ρ_crit,γ=2)=0.88"
+- `src/app/equation-walkthrough/page.tsx`: Step 2 explanation → "saturation knee, not a phase-transition critical point"
+- `src/app/core-idea/page.tsx`: "transition density" → "saturation knee (not a critical point)"
+
+## Back-Annotations (Research Repo)
+- `Synchronism/Research/proposals/epistemic_regression_autonomous_loop.md` — filed. Documents 5-layer error anatomy, efficiency-attractor vulnerability, re-grounding protocol fix. Relevant for A2ACW methodology paper as Appendix: Epistemic Regression Case Study.
+
+## Topics Seeded for Explorer
+- `epistemic-regression-architecture-fix.md` (HIGH) — design spec for re-grounding protocol; A2ACW paper appendix material; prevents the 2026-05-25 regression class
+- `onboarding-spine-canonical-path.md` (MEDIUM) — reconcile three conflicting numbered sequences; pick canonical and align all references
+
+## Open Items (Deferred)
+- "Why should I care?" landing page hook for non-physicists (P2, Enthusiast high) — needs /methodology page context first
+- Glossary search/A-Z bar (P4 low) — infrastructure improvement
+- Acronym first-use linking to glossary (P4 medium) — systematic audit needed across deep pages
+- TEST-17 (cluster γ-gradient) amplitude derivation flag — same issue as TEST-21; apply consistent standard
+- Two-reframes "Need an analogy first?" link — could be relabeled "Optional prequel: Two Reframes" to clarify it's supplementary not sequential (low)
+
+## So What?
+
+The site was stating a factual falsehood as its headline cosmology result, and two independent expert personas caught it on the same day. The revert is done. The deeper finding — that the loop's efficiency attractor makes it easier to accept a confident correction than to re-verify — is now documented as a research-grade finding. The architecture fix (artifact-retention + re-grounding before retraction) is the real output of today's session. The badge vocabulary and ρcrit consistency fixes close four specific Tech Writer criticisms that will reduce friction for the information-architecture audience. The "why should I care?" onboarding gap remains; it requires /methodology to land first.

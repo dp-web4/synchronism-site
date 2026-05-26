@@ -96,7 +96,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'The Coherence Function',
       href: '/coherence-function',
-      desc: 'C(\u03C1) = tanh(\u03B3 log(\u03C1/\u03C1_crit + 1))',
+      desc: 'C(\u03C1) = tanh(\u03B3 ln(\u03C1/\u03C1_crit + 1))',
       keywords: ['coherence', 'function', 'equation', 'tanh', 'density', 'C(rho)'],
       related: ['/gamma-parameter', '/critical-density', '/phase-transitions'],
     },

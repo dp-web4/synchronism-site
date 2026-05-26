@@ -237,7 +237,7 @@ export default function ResearchPhilosophy() {
           <h3 style={{ color: 'var(--color-accent-blue)', fontSize: '0.95rem', marginTop: 0 }}>The meta-finding: this pattern is the result</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
             The combined pattern across the full research arc is itself a publishable finding about
-            AI-generated science: <strong>every structurally novel commitment (TEST-04a non-discriminating post-hoc,
+            AI-generated science: <strong>every structurally novel commitment (TEST-04a disfavored ~2σ post-hoc,
             critical exponents category-error, Bullet Cluster viscosity sign-reversed) has either failed
             or collapsed to non-discriminating; every surviving prediction is degenerate with MOND or standard QM</strong>.
             This is exactly what you would predict from a training-distribution filter operating on a
@@ -309,15 +309,16 @@ export default function ResearchPhilosophy() {
           <div className="card" style={{ padding: '0.75rem 1rem', borderLeft: '3px solid #ef4444' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
               <strong>TEST-04a: DESI RSD fσ₈ Suppression</strong>
-              <span style={{ fontSize: '0.75rem', color: '#f59e0b' }}>NON-DISCRIMINATING — Post-hoc, Consistent (corrected 2026-05-25)</span>
+              <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>DISFAVORED ~2σ — Kill Criterion Triggered (corrected 2026-05-26)</span>
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
               Registered as TEST-04 replacement (2026-05-04). Derivation: Session 107. Threshold: fσ₈(z=0.51) &gt; 0.46
-              rules out at 3σ. DESI DR1 actual (arXiv:2411.12021): consensus fσ₈ = 0.4497 ± 0.0548; LRG1 ≈ 0.45 ± 0.06.
-              Kill criterion NOT triggered (actual ≤ 0.45). Prediction (0.418) is ~0.4σ from actual — consistent.
-              Prior characterization (&ldquo;0.55 ± 0.06 above ΛCDM, sign reversed&rdquo;) retracted 2026-05-25 —
-              not supported by the cited paper. Post-hoc by 8+ months (DESI DR1 April 2024;
-              Session 107 committed December 2025). Verdict: non-discriminating, not falsifying.
+              rules out at 3σ. DESI DR1 full-shape (arXiv:2411.12021): LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13 — above ΛCDM fiducial;
+              combined σ₈ = 0.841 ± 0.034 (Table 10). Kill criterion triggered (LRG1 actual ≫ 0.46).
+              Tension: σ₈ 0.841 vs predicted 0.76 = 2.4σ. Post-hoc by 8+ months (DESI DR1 April 2024;
+              Session 107 committed December 2025). Verdict: disfavored ~2σ — suppression not observed.
+              Note: 2026-05-25 &ldquo;correction&rdquo; that claimed kill not triggered was itself an error
+              (misattributed arXiv:2512.03230 z≈0.07 PV value to z=0.51 full-shape slot).
               <strong>No replacement substituted.</strong>
             </p>
           </div>

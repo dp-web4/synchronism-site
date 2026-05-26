@@ -2,7 +2,7 @@
  * Core Synchronism equations for interactive tools and page computations.
  */
 
-/** Coherence function: C(ρ) = tanh(γ · log(ρ/ρ_crit + 1)) */
+/** Coherence function: C(ρ) = tanh(γ · ln(ρ/ρ_crit + 1)) */
 export function coherence(rho: number, gamma: number, rhoCrit: number): number {
   if (rho <= 0 || rhoCrit <= 0) return 0;
   return Math.tanh(gamma * Math.log(rho / rhoCrit + 1));

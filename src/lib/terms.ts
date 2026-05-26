@@ -32,9 +32,9 @@ export const terms: Record<string, TermDefinition> = {
   },
   '\u03C1_crit': {
     term: '\u03C1_crit',
-    fullName: 'Critical Presence Threshold',
-    brief: 'The presence level at which the coherence function transitions. \u03C1_crit = A \u00D7 V_flat\u00B2 (astrophysical case).',
-    explanation: 'Below this presence level, coherence drops toward zero. Above it, coherence saturates toward one. In the astrophysical case, derived from fundamental constants and rotation velocity. More generally, \u03C1_crit represents the minimal presence required for sustained coherence given the system\u2019s \u03B3.',
+    fullName: 'Reference Density (Saturation Knee)',
+    brief: 'Reference density \u2014 a saturation knee, not a critical point. C(\u03C1_crit, \u03B3=2) = 0.88; the midpoint C=0.5 sits at \u03C1 \u2248 0.32\u00D7\u03C1_crit. \u03C1_crit = A \u00D7 V_flat\u00B2 (astrophysical case).',
+    explanation: '\u03C1_crit sets the scale at which the coherence function enters saturation \u2014 NOT a phase-transition critical density. At \u03B3=2, C(\u03C1_crit) = tanh(2\u00B7ln 2) = 0.88; the actual C=0.5 midpoint is at \u03C1 \u2248 0.32\u00D7\u03C1_crit. The "+1" regulator in ln(\u03C1/\u03C1_crit + 1) makes the function asymmetric. "Critical density" or "transition density" are misleading terms for this parameter \u2014 the correct description is saturation knee or reference density.',
     learnMore: '/critical-density',
   },
   'MRH': {

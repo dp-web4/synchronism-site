@@ -48,7 +48,7 @@ export default function CoreIdea() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>&#x03C1;<sub>crit</sub></div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-              A &times; V<sub>flat</sub>&sup2;: transition density
+              A &times; V<sub>flat</sub>&sup2;: saturation knee (not a critical point)
             </div>
           </div>
         </div>

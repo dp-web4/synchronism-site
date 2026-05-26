@@ -57,8 +57,8 @@ const closedTests = [
   {
     id: 'TEST-04a',
     name: 'DESI RSD fσ₈ Suppression',
-    status: 'NON-DISCRIMINATING — Post-hoc, Consistent Within Errors (corrected 2026-05-25)',
-    verdict: 'Session 107 predicted fσ₈(z=0.51) ≈ 0.418. DESI DR1 actual: LRG1 ≈ 0.45 ± 0.06 — ΛCDM-consistent. Prior characterization ("0.55 ± 0.06 above ΛCDM, sign reversed") was not supported by arXiv:2411.12021 and is retracted. Prediction is ~0.4σ from actual; kill criterion (fσ₈ > 0.46) not triggered. Honest verdict: non-discriminating post-hoc retrodiction — consistent, not falsifying, not confirming. See /tier-1-existing for full documentation.',
+    status: 'DISFAVORED ~2σ — Kill Criterion Triggered (corrected 2026-05-26)',
+    verdict: 'Session 107 predicted fσ₈(z=0.51) ≈ 0.418 (suppression). DESI DR1 full-shape (arXiv:2411.12021): LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13 — above ΛCDM fiducial; combined σ₈ = 0.841 ± 0.034. Tension: 2.4σ. Kill criterion (fσ₈ > 0.46) triggered. Honest verdict: post-hoc retrodiction — disfavored ~2σ; suppression not observed; data ΛCDM-consistent. Note: 2026-05-25 "correction" claiming kill not triggered was itself an error (misattributed a z≈0.07 PV survey value). See /tier-1-existing for full documentation.',
   },
   {
     id: 'TEST-04',
@@ -79,7 +79,7 @@ export default function Top5Tests() {
         <p>
           Of the defined experiments, these have the highest <strong>distinguishing
           power</strong> &mdash; tests that can discriminate between Synchronism and existing frameworks.
-          Two predictions have now closed: one is non-discriminating (post-hoc, consistent; corrected 2026-05-25), one withdrawn by internal contradiction.
+          Two predictions have now closed: one is disfavored ~2σ with kill criterion triggered (post-hoc; corrected 2026-05-26), one withdrawn by internal contradiction.
         </p>
 
         <div style={{
@@ -113,7 +113,7 @@ export default function Top5Tests() {
         }}>
           <strong style={{ color: '#ef4444' }}>Scorecard (2026-05-13):</strong>{' '}
           Confirmed: <strong>0</strong> &nbsp;|&nbsp;
-          Non-discriminating: <strong>1</strong> (TEST-04a post-hoc, consistent; corrected 2026-05-25) &nbsp;|&nbsp;
+          Disfavored ~2σ: <strong>1</strong> (TEST-04a post-hoc, kill triggered; corrected 2026-05-26) &nbsp;|&nbsp;
           Withdrawn: <strong>1</strong> (TEST-04 internal contradiction) &nbsp;|&nbsp;
           Active: <strong>1 discriminating</strong> (TEST-02, EFE-degeneracy caveat pending) &nbsp;|&nbsp;
           Monitoring: <strong>1</strong> (TEST-07 no derivation) &nbsp;|&nbsp;

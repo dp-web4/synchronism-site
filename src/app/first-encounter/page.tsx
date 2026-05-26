@@ -151,14 +151,16 @@ export default function FirstEncounter() {
 
       {/* Navigation */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3rem' }}>
-        <button
-          className="btn-secondary"
-          onClick={() => setStep(s => Math.max(0, s - 1))}
-          disabled={step === 0}
-          style={{ opacity: step === 0 ? 0.3 : 1 }}
-        >
-          &larr; Previous
-        </button>
+        {step > 0 ? (
+          <button
+            className="btn-secondary"
+            onClick={() => setStep(s => s - 1)}
+          >
+            &larr; Previous
+          </button>
+        ) : (
+          <div />
+        )}
         <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)', fontSize: '0.85rem' }}>
           Need an analogy first?
         </Link>

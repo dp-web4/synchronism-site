@@ -64,7 +64,7 @@ const tests = [
     facility: 'Radio telescope time (resolved HI rotation curves in voids)',
     prediction: 'Void galaxies show higher DM fraction than cluster galaxies at same M_bar',
     kill: 'DM fraction independent of cosmic environment',
-    power: 'HIGH — tests environment dependence (novel prediction)',
+    power: 'MEDIUM — environment-dependent DM fraction is also predicted by MOND\'s External Field Effect (Bekenstein-Milgrom 1984; EFE weakens in voids). A positive result confirms Synchronism and MOND+EFE equally. Not a discriminating test vs MOND. See TEST-05 (same EFE signature, lower cost).',
   },
   {
     id: 'TEST-21',
@@ -74,7 +74,7 @@ const tests = [
     facility: 'Euclid mission data',
     prediction: 'BAO peak shows fine structure (sub-peaks) from coherence interference',
     kill: 'BAO peak is smooth Gaussian to 10⁻⁵ level in Euclid data',
-    power: 'VERY HIGH — unique to Synchronism, no other framework predicts this',
+    power: 'EXPLORATORY — no derived amplitude exists. Without a predicted sub-peak amplitude, any non-detection is consistent with "amplitude too small." Demote to exploratory until amplitude is derived. (Same standard applied to TEST-07 — 500 Mpc oscillation demoted for missing amplitude.)',
   },
 ];
 

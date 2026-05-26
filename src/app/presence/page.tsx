@@ -57,7 +57,7 @@ export default function Presence() {
             <h3><Link href="/critical-density" style={{ color: 'inherit', textDecoration: 'none' }}>&#x03C1;<sub>crit</sub> — Critical threshold</Link></h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               &#x03C1;<sub>crit</sub> = A &times; V<sub>flat</sub>&#x00B2;. The transition point, unique
-              to each system, where C = tanh(&#x03B3; &middot; log(2)) &#x2248; 0.76.
+              to each system, where C = tanh(&#x03B3; &middot; ln(2)) &#x2248; 0.76.
             </p>
           </div>
           <div className="card">

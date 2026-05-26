@@ -10,7 +10,7 @@ export default function CosmologyPredictions() {
     <>
       <Breadcrumbs currentPath="/cosmology-predictions" />
       <h1>Cosmology Predictions</h1>
-      <ValidationBadge status="untested" label="0 Refuted, 1 Non-Discriminating — Corrected 2026-05-25" />
+      <ValidationBadge status="failed" label="TEST-04a Disfavored ~2σ — Kill Triggered (Corrected 2026-05-26)" />
 
       {/* TEST-04a kill — most important cosmological result */}
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
@@ -21,45 +21,43 @@ export default function CosmologyPredictions() {
           padding: '1.25rem 1.5rem',
           marginBottom: '2rem',
         }}>
-          <h2 style={{ color: '#f59e0b', marginTop: 0, marginBottom: '0.5rem' }}>
-            TEST-04a: DESI DR1 fσ₈ — Non-Discriminating Post-hoc Retrodiction (Corrected 2026-05-25)
+          <h2 style={{ color: '#ef4444', marginTop: 0, marginBottom: '0.5rem' }}>
+            TEST-04a: DESI DR1 fσ₈ — Post-hoc Retrodiction, Disfavored ~2σ (Corrected 2026-05-26)
           </h2>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>
-            The framework&apos;s primary cosmological test compared against DESI DR1 (arXiv:2411.12021).
-            <strong> Prior characterization (&ldquo;refuted by sign reversal&rdquo;) retracted.</strong>
+            The framework&apos;s primary cosmological test compared against DESI DR1 full-shape (arXiv:2411.12021).
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '0.75rem' }}>
             <div style={{ background: 'rgba(239, 68, 68, 0.05)', borderRadius: '0.375rem', padding: '0.75rem' }}>
               <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '0.25rem' }}>Synchronism predicted</div>
               <div style={{ fontWeight: 700, color: '#ef4444' }}>fσ₈(z=0.51) ≈ 0.418</div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>12% <em>below</em> ΛCDM (suppression)</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>12% <em>below</em> ΛCDM; σ₈ ≈ 0.76</div>
             </div>
-            <div style={{ background: 'rgba(245, 158, 11, 0.05)', borderRadius: '0.375rem', padding: '0.75rem' }}>
-              <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '0.25rem' }}>DESI DR1 actual (corrected)</div>
-              <div style={{ fontWeight: 700, color: '#f59e0b' }}>fσ₈(z=0.51) ≈ 0.45 ± 0.06</div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>ΛCDM-consistent — ~0.4σ from prediction</div>
+            <div style={{ background: 'rgba(239, 68, 68, 0.08)', borderRadius: '0.375rem', padding: '0.75rem' }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '0.25rem' }}>DESI DR1 full-shape (arXiv:2411.12021)</div>
+              <div style={{ fontWeight: 700, color: '#ef4444' }}>LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Above ΛCDM fiducial; σ₈ = 0.841 ± 0.034 — tension 2.4σ</div>
             </div>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
-            DESI DR1 consensus fσ₈(z=0.07) = 0.4497&nbsp;±&nbsp;0.0548; growth index γ&nbsp;=&nbsp;0.580&nbsp;±&nbsp;0.110 (GR-consistent).
-            Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) not triggered. Prediction is ~0.4σ from actual — consistent within errors.
-            The previously advertised &ldquo;sign reversal / mechanism-class refutation&rdquo; was built on
-            an incorrect observed value (0.55) and is retracted. This test is <strong>non-discriminating</strong>:
-            it neither confirms nor falsifies the framework. The &ldquo;transferable contribution&rdquo;
-            (suppressor frameworks killed by sign) is not established by this data.
+            Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) triggered — LRG1 actual fσ₈ ≫ 0.46.
+            Suppression not observed; data is ΛCDM-consistent or above.
+            A 2026-05-25 &ldquo;correction&rdquo; claiming kill not triggered was itself an error:
+            0.4497&nbsp;±&nbsp;0.0548 belongs to arXiv:2512.03230 (DESI Peculiar Velocity Survey, z≈0.07),
+            misattributed to the z=0.51 full-shape slot.
+            Honest verdict: <strong>post-hoc retrodiction — disfavored ~2σ; suppression mechanism not supported.</strong>
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
             <strong>Post-hoc note:</strong> Session 107 was committed December 2025; DESI DR1 was
-            published April 2024. This was not a prospective pre-registered prediction regardless.{' '}
+            published April 2024. The &ldquo;mechanism-class transferable contribution&rdquo; is NOT restored — it over-reaches for a post-hoc test.{' '}
             <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Full TEST-04a documentation →</Link>
           </p>
         </div>
 
         <p>
           After TEST-04a, the surviving cosmological predictions are those not yet tested by existing
-          data. The two refutations to date (TEST-03 RAR scatter, TEST-04a DESI RSD) cover the
-          framework&apos;s two main quantitative cosmological bets. The remaining predictions below
-          await analysis.
+          data. TEST-03 (RAR scatter) and TEST-04a (DESI RSD) have now both been adjudicated.
+          The remaining predictions below await analysis.
         </p>
 
         <h2>Prediction 1: BAO Modulation (TEST-04 — Withdrawn)</h2>
@@ -144,9 +142,9 @@ export default function CosmologyPredictions() {
             <tbody>
               <tr style={{ borderBottom: '1px solid var(--color-dark-border)', background: 'rgba(245,158,11,0.04)' }}>
                 <td style={{ padding: '0.75rem' }}>DESI RSD fσ₈ (TEST-04a)</td>
-                <td style={{ padding: '0.75rem' }}><ValidationBadge status="untested" label="Non-Discriminating" /></td>
+                <td style={{ padding: '0.75rem' }}><ValidationBadge status="failed" label="Disfavored ~2σ" /></td>
                 <td style={{ padding: '0.75rem', color: 'var(--color-text-secondary)' }}>DESI DR1</td>
-                <td style={{ padding: '0.75rem', color: '#f59e0b', fontSize: '0.85rem' }}>Post-hoc, consistent within errors — kill criterion not triggered (corrected 2026-05-25)</td>
+                <td style={{ padding: '0.75rem', color: '#ef4444', fontSize: '0.85rem' }}>Post-hoc; kill triggered; σ₈=0.841 vs predicted 0.76 (2.4σ) — corrected 2026-05-26</td>
               </tr>
               <tr style={{ borderBottom: '1px solid var(--color-dark-border)', background: 'rgba(239,68,68,0.04)' }}>
                 <td style={{ padding: '0.75rem' }}>RAR env. scatter (TEST-03)</td>

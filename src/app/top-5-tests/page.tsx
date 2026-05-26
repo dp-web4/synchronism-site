@@ -215,7 +215,7 @@ export default function Top5Tests() {
         <h2>The Strategy</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            With TEST-04 withdrawn and TEST-04a non-discriminating (corrected 2026-05-25), the immediate discriminating work shifts to
+            With TEST-04 withdrawn and TEST-04a disfavored ~2σ / kill triggered (corrected 2026-05-26), the immediate discriminating work shifts to
             TEST-02 (wide binaries, Gaia DR3 — zero cost). But TEST-02 needs a critical prerequisite:
             compute the MOND+EFE prediction for the same observable and show where Synchronism diverges
             numerically. Without that, a positive TEST-02 result cannot distinguish the frameworks.

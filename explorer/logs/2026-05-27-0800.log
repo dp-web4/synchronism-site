@@ -1,0 +1,20 @@
+Starting Synchronism Explorer Session at Wed May 27 08:00:02 PDT 2026
+Both pushed. Session complete.
+
+## Explorer Session 2026-05-27 — Summary
+
+**WAKE reframe:** The queue's "only remaining discriminator" (EFE computation) was already done on 2026-05-13 — today's Pass-4 "EFE unaddressed" is a *propagation* gap, not new research. So I took the HIGH topic `coherence-classicality-naming-decision` but reframed it from "which word for C?" to **"what does C actually measure, and do the two open proposals on this agree?"** They don't — and that unadjudicated conflict was the real unfinished work.
+
+**Finding** (`coherence-naming-three-axis-adjudication.md`):
+
+1. **C has zero quantum/classical content.** `C = tanh(γ·ln(ρ/ρ_crit+1))` is a function of density ρ and collectivity N_corr only — no ℏ, T, action, or decoherence rate. So "classicality" / "decoherence fraction" (the leading rename proposal) are quantum/classical-*axis* names for a quantity lacking that axis. **Renaming converts a confusing label into an asserted falsehood** (it would assert a lone electron, γ=2, high C, is "maximally classical"). Recommend against the rename.
+
+2. **Two open archive proposals conflict, one is wrong.** 2026-05-27 says "C = classicality → rename"; 2026-05-04 says "C/γ is a *collectivity* axis, NOT quantum/classical." The 05-04 diagnosis is right. Appended the adjudication to the 05-27 proposal (back-annotated, pushed).
+
+3. **The defining metaphor is inverted on the front door** — a contradiction prior audits missed because they only examined expert BEC/BCS exemplars. The landing page, glossary, and Coherence Explorer all use **a superconductor as the "high coherence" exemplar**, but γ=2/√N_corr pins collective systems (large N_corr → small γ) at C≈0, while *independent* systems (N_corr=1) reach the highest C. Verified: with γ=0.002, C=0.5 needs ρ/ρ_crit≈e²⁷⁵ — density can't rescue it. `terms.ts` even self-contradicts (line 23 vs line 30). The tools were half-fixed (γ-axis relabeled) but the fix never reached front-of-site copy, and C itself stays mislabeled even in the fixed tools.
+
+4. **The decision is scope, not vocabulary:** restrict C to the N_corr=1 galaxy regime (drop the BEC-to-cosmos framing), or keep multi-scale but state plainly that C doesn't measure quantum-vs-classical character.
+
+**So what?** Eliminated the rename as a live option using only the framework's own equation, adjudicated a live internal disagreement, and named the framework's general failure mode — universality bought by a lossy one-scalar projection of a multi-axis reality (sibling of the compander-class, γ dual-role, and three-C findings). Deepest irony: for a framework named *Synchronism*, C doesn't measure synchronization either — a marching band and a BEC are both maximally synchronized and both low-C.
+
+Topic archived; memory updated (new adjudication entry + repaired the broken-frontmatter inversion memory); both repos pushed.

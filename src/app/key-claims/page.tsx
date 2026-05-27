@@ -182,7 +182,7 @@ export default function KeyClaims() {
             margin: '0.75rem 0',
           }}>
             <h3 style={{ fontSize: '0.9rem', color: '#f59e0b', marginBottom: '0.25rem', marginTop: 0 }}>Honest caveat</h3>
-            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0 0 0.5rem' }}>
               Both &ldquo;consistent with literature&rdquo; quantum results are post-hoc reparametrizations:
               &#x0393; = &#x03B3;&sup2;(1 &minus; c) is a textbook open-quantum-systems result;
               c(d) = cos&sup2;(&pi;d/&lambda;&#x2080;) is imported from waveguide QED.
@@ -192,6 +192,17 @@ export default function KeyClaims() {
               The CRT temporal-scanning model is not mathematically formalized to the level where
               it reproduces all of standard QM&apos;s quantitative predictions.
               What&apos;s needed: a prediction that differs from standard QM and hasn&apos;t been measured yet.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
+              <strong>Prior art:</strong> observer-free/no-special-frame interpretations of QM are an active
+              literature. Cramer&apos;s <em>transactional interpretation</em> (1986) removes observer privilege via
+              retarded/advanced wave transactions. Aharonov&apos;s <em>two-state-vector formalism</em> (time-symmetric QM,
+              Aharonov, Bergmann &amp; Lebowitz 1964; Aharonov &amp; Vaidman 2007) introduces backward-in-time
+              boundary conditions. Rovelli&apos;s <em>relational QM</em> (1996) makes state assignments
+              observer-relative without a privileged observer. The Synchronism reframe (temporal scanning,
+              MRH-crossing collapse) occupies the same conceptual space and needs to be distinguished from
+              these — both in what it adds and what predictions (if any) differ from standard QM.
+              If no prediction differs, this is classification as an interpretation, not as novel ontology.
             </p>
           </div>
 
@@ -253,11 +264,14 @@ export default function KeyClaims() {
           </p>
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
-            Consciousness crosses a threshold near C &#x2248; 0.50 &mdash; the steepest-slope regime of
-            the coherence function, where the transition from disordered to ordered is fastest &mdash;
-            rather than fading smoothly across all coherence values. Note: this is a threshold in the
-            <em> rate of change</em> of the sigmoid, not a mathematical phase transition (the function
-            is smooth everywhere). It requires three conditions simultaneously &mdash; coherence,
+            Consciousness crosses a threshold near C &#x2248; 0.50 &mdash; the output-range midpoint of
+            the coherence function, chosen by the framework&apos;s internal convergence across 8
+            Synchronism-based approaches &mdash; rather than fading smoothly across all coherence values.
+            Note: C&nbsp;&#x2248;&nbsp;0.50 is the arithmetic midpoint of [0,1), not the dynamically privileged
+            point — the maximum rate of change occurs at C&nbsp;&#x2248;&nbsp;0.58–0.59 (vs log-density, γ=2)
+            or at C&nbsp;=&nbsp;0 (vs linear density). This is a geometric threshold in the output range,
+            not a mathematical phase transition (the function is smooth everywhere). It requires three
+            conditions simultaneously &mdash; coherence,
             representational richness, and self-modeling &mdash; which is why thermostats, random number
             generators, and decoherent systems aren&apos;t conscious despite meeting some criteria.
           </p>

@@ -1,0 +1,68 @@
+Starting Synchronism Maintainer Session at Wed May 27 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-27
+
+## Feedback Reviewed
+
+- Visitor log: 2026-05-27 — four-persona pass (Casual, Tech Writer, Grad Student, Researcher)
+- Forum: none new
+- Explorer: TEST-15 GW-DM closure finding (2026-05-26), TEST-20 MOND-EFE-degenerate fix, epistemic-regression-architecture-fix — all previously actioned
+
+## WAKE Phase
+
+Two signals worth a research-level response (before touching the site):
+
+**Signal 1 — "Coherence" names its opposite for physicists.** Three of four personas flagged the C axis (C≈0=quantum, C≈1=classical) as inverted relative to CM usage, where coherence = quantum phase coherence (maximized in BEC/BCS). The framework assigns "low coherence" to the most quantum-coherent systems. This is not cosmetic — it determines which community can engage. Proposal filed to Synchronism repo before fixing anything.
+
+**Signal 2 — TEST-03/TEST-05 double-file.** Pass 4 researcher correctly observed that p=5×10⁻⁶ (TEST-05, listed as "Untested") and R²=0.14/kill triggered (TEST-03, "Failed") may be two views of the same regression. Filing the same result as discovery AND failure is an epistemic inconsistency. Proposal filed.
+
+## Changes Made (Site)
+
+### P0 — Accuracy (mathematically false or self-contradicting)
+
+**key-claims/page.tsx**
+- Claim 2 (Consciousness): removed "steepest-slope regime of the coherence function, where the transition is fastest" — mathematically false. C(ρ) is concave on [0,1) for ρ≥0; max slope vs linear-ρ is at C=0; vs log-ρ at C≈0.58–0.59 (γ=2). C=0.50 is the arithmetic midpoint of the output range. Replaced with: "output-range midpoint of the sigmoid... C≈0.50 is the arithmetic midpoint of [0,1), not the dynamically privileged point."
+- Claim 1 (QM reframe): Added prior-art note to honest-caveat: Cramer's transactional interpretation (1986), Aharonov's two-state-vector formalism (1964/2007), Rovelli's relational QM (1996) occupy the same observer-free space. Needs distinguishing from these; if no differing prediction, it's interpretation.
+
+**src/lib/terms.ts**
+- Mean-Field Theory entry: clarified that Ising self-consistency is a fixed-point equation (m on both sides = real SSB + critical exponents). C(ρ)'s argument is external ρ, not the order parameter — no fixed-point, no SSB, no critical exponents. Honest Assessment calls this a "Category Error." C(ρ) belongs to the compander family.
+
+**tier-1-existing/page.tsx**
+- TEST-05: added alert — p=5×10⁻⁶ and R²=0.14 are from the same/related regression; p-value significance ≠ passing the kill criterion; R²=0.14 < 20% = failure by effect size. TEST-05 is not "Untested/open" — it shares TEST-03's kill verdict.
+
+**coherence-explorer/page.tsx**
+- Added "Terminology note for physicists" box: "coherence" in Synchronism = classical collective ordering (C≈0=quantum-like, C≈1=classically ordered). Anti-correlated with quantum phase coherence in CM physics. BEC/BCS are maximally coherent in CM but low-C here (large N_corr). The two axes (classical ordering, quantum coherence) are orthogonal.
+
+**honest-assessment/page.tsx**
+- TEST-04a card: added leading "sign-wrong" sentence — "The fundamental failure is directional (sign-wrong), independent of bin choice: the prediction was a suppression (below ΛCDM), and DESI sees above ΛCDM." The 2.4σ tension follows from the directional reversal, not the other way around. Hardens the verdict against "you cherry-picked the high bin" rebuttal.
+
+### P2 — Framing (correct but lands wrong)
+
+**page.tsx** (landing page)
+- A2ACW note: added "The decisive number: 0 of 6 'Validated' claims survived expert audit (all demoted to Reparametrization or Failed). Volume (3,308 sessions) is not evidence; the 0/6 retention rate is." Three personas asked for this.
+
+## Back-Annotations (Research Repo)
+
+**Synchronism/Research/proposals/coherence_classicality_naming_and_test03_test05_double_filing.md**
+- Problem 1: "Coherence" naming inverts CM meaning. Propose rename to "classicality"/"decoherence fraction" or add canonical disambiguation. Research-level commitment needed.
+- Problem 2: TEST-03/TEST-05 double-file. Same regression result simultaneously "discovery" (p=5e-6) and "failure" (R²=0.14 < kill). Resolve via R²-first reporting.
+
+## Topics Seeded for Explorer
+
+- **qm-reframe-prior-art-comparison.md** (MEDIUM): Compare Synchronism's observer-free reframe to Cramer/Aharonov/Rovelli. What specifically overlaps? What might be distinct? Does MRH add anything they lack?
+- **coherence-classicality-naming-decision.md** (HIGH): Research-level investigation — what does C(ρ) actually measure? Classicality, decoherence fraction, or collective ordering? What would rename vs. disambiguation imply?
+
+## Open Items (Deferred)
+
+- Badge taxonomy consolidation (Tech Writer HIGH ×2): 6 tiers defined, ~20 status strings in use, 3 homes. Needs site-wide sweep — own session.
+- Breadcrumb/nav taxonomy unification (Tech Writer HIGH): breadcrumb parents don't exist as nav items. Complex structural change.
+- TEST-07 formal demotion: name already says "Not a Tier 1 Test"; LOW severity. Deferred.
+- Hero equation toggle (Casual HIGH): lead with metaphor, tuck equation behind toggle. Significant structural change. Deferred.
+- First Encounter "Step 1 of 7ρ" counter/title collision (Tech Writer MEDIUM): deferred.
+- Glossary filter/search box (Tech Writer LOW): deferred.
+
+## So What?
+
+Three P0 errors corrected: the false "steepest-slope at C≈0.50" (single most mathematically clear error in front-of-site claims), the Glossary's Ising self-consistency implication (false impression of mean-field derivation), and TEST-05 double-file (same signal filed as both success and failure). DESI sign-wrong leading language hardens the verdict. A2ACW 0/6 retention rate now surfaces at same weight as session count.
+
+The research signal from this session: the "coherence" naming is not cosmetic. It inverts the meaning for exactly the audience most likely to know the physics. Fixing it at the research level — committing to "classicality" or "decoherence fraction" — would resolve multiple site-level inconsistencies simultaneously. Now queued for explorer.

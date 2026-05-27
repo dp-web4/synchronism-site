@@ -79,6 +79,7 @@ const tests: Test[] = [
     time: '2 months',
     prediction: 'RAR scatter shows NP2 environment dependence (p = 5×10⁻⁶)',
     kill: 'RAR scatter independent of Hubble type / environment',
+    alert: 'Same verdict as TEST-03: p=5×10⁻⁶ and R²=0.14 (TEST-03 result) are from the same underlying regression. The p-value indicates the effect is real; the R² indicates it is below the kill criterion. A significant-but-small effect (R²=0.14) that fails the pre-registered kill threshold (<20%) is a failure by effect size, not a discovery. TEST-05 should not be read as "open" or "Untested" — the environment-RAR dependence exists but is sub-threshold. Verdict: same as TEST-03 — presumptively failed by kill criterion.',
   },
   {
     id: 'TEST-06',

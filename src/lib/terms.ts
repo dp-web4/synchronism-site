@@ -155,7 +155,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Mean-Field Theory',
     fullName: 'Average-Interaction Approximation',
     brief: 'A physics approach where each particle feels the average effect of all others, not individual interactions.',
-    explanation: 'Simplifies many-body problems by replacing complex particle-by-particle interactions with a single "mean field." In the Ising model, the self-consistency condition m = tanh(βJz·m) produces the tanh function naturally. Synchronism borrows the tanh shape by analogy — motivated by Landau-universality — but there is no self-consistency loop in C(ρ).',
+    explanation: 'Simplifies many-body problems by replacing complex particle-by-particle interactions with a single "mean field." In the Ising model, the self-consistency condition m = tanh(βJz·m) is a fixed-point equation — m appears on both sides, tanh is the self-consistent solution, and the result is genuine spontaneous symmetry breaking with critical exponents. C(ρ) borrows the tanh *form* but is not derived this way: its argument is ρ (external density), not the order parameter itself. There is no fixed-point equation, no free energy minimized, no SSB, and no critical exponents — the Honest Assessment labels this a "Category Error." C(ρ) belongs to the compander family (μ-law/Hill/Naka–Rushton), not the mean-field class.',
     learnMore: '/parameter-derivations',
   },
   '\u039BCDM': {

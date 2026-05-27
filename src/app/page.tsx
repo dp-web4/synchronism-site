@@ -157,7 +157,9 @@ export default function Home() {
               <strong style={{ color: '#f59e0b' }}>Methodology note:</strong>{' '}
               This site was developed via 3,308 A2ACW (AI-to-AI Adversarial Collaboration Workshop) sessions &mdash; AI agents stress-testing each other&apos;s claims. The adversarial agents share the same training distribution and{' '}
               <strong>cannot substitute for out-of-distribution evaluation by domain experts.</strong>{' '}
-              The <strong>1.4% internal-consistency survival rate</strong> (not a discovery rate &mdash; see methodology) and public failure log are the protocol&apos;s honest outputs.{' '}
+              The <strong>1.4% internal-consistency survival rate</strong> (not a discovery rate &mdash; see methodology) and public failure log are the protocol&apos;s honest outputs.
+              The decisive number: <strong>0 of 6 &ldquo;Validated&rdquo; claims survived expert audit</strong> (all demoted to Reparametrization or Failed).
+              Volume (3,308 sessions) is not evidence; the 0/6 retention rate is.{' '}
               <Link href="/research-philosophy" style={{ color: '#f59e0b' }}>See methodology &rarr;</Link>
             </div>
           </section>

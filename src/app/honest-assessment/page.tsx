@@ -283,8 +283,14 @@ export default function HonestAssessment() {
               <ValidationBadge status="failed" label="Disfavored ~2σ — Kill Criterion Triggered" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Session 107 (Dec 2025) predicted fσ₈(z=0.51)&nbsp;≈&nbsp;0.418 — a 12% <em>suppression</em> below ΛCDM (0.474).
-              <strong>DESI DR1 full-shape (arXiv:2411.12021):</strong> LRG1 (z_eff=0.51)
+              <strong>The fundamental failure is directional (sign-wrong), independent of bin choice:</strong> the
+              prediction was a <em>suppression</em> of structure growth (fσ₈ below ΛCDM), and DESI sees growth at or
+              <em> above</em> ΛCDM. A suppression model that lands above the fiducial is sign-wrong regardless of
+              which bin you look at. The 2.4σ tension follows from this directional reversal, not the other way around.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              Session 107 (Dec 2025) predicted fσ₈(z=0.51)&nbsp;≈&nbsp;0.418 — a 12% suppression below ΛCDM (0.474).
+              <strong> DESI DR1 full-shape (arXiv:2411.12021):</strong> LRG1 (z_eff=0.51)
               fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 — above the ΛCDM fiducial.
               Combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10). Synchronism predicted σ₈&nbsp;≈&nbsp;0.76.
               Tension: <strong>2.4σ</strong>. Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) triggered.
@@ -292,7 +298,7 @@ export default function HonestAssessment() {
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Two aspects of the honest verdict:</strong> (1) <em>Post-hoc origin</em> — Session 107 was committed
               2025-12-10 after DESI DR1 was published April 2024; σ₈ calibrated to lensing S₈ tension, then propagated to DESI.
-              No prospective prediction registered. (2) <em>Disfavored ~2σ</em>
+              No prospective prediction registered. (2) <em>Disfavored ~2σ, wrong direction</em>
               — suppression not observed; data is ΛCDM-consistent or mildly above. A 2026-05-25 &ldquo;correction&rdquo;
               that claimed kill not triggered was itself an error: 0.4497&nbsp;±&nbsp;0.0548 belongs to arXiv:2512.03230
               (DESI Peculiar Velocity Survey, z&asymp;0.07) misattributed to the z=0.51 full-shape slot.

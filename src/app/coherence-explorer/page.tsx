@@ -67,6 +67,9 @@ export default function CoherenceExplorer() {
             It takes a density (&#x03C1;) and returns a coherence value between 0 (independent/quantum-like)
             and 1 (collective/classical-like).
           </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(239,68,68,0.06)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(239,68,68,0.4)' }}>
+            <strong>&#x26A0; Terminology note for physicists:</strong> &ldquo;Coherence&rdquo; here means <em>classical collective ordering</em> (C&nbsp;&#x2248;&nbsp;0 = independent/quantum-like; C&nbsp;&#x2248;&nbsp;1 = classically ordered). This is <em>anti-correlated</em> with <strong>quantum phase coherence</strong> as used in condensed-matter physics, where BEC/BCS condensates &mdash; the most quantum-coherent systems known &mdash; would sit at low C by this measure (due to their large N<sub>corr</sub>). The two axes are orthogonal: macroscopic quantum states are simultaneously quantum <em>and</em> collective. The site uses &ldquo;coherence&rdquo; in the ordering/classicality sense, not the off-diagonal-long-range-order sense.
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
             <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> controls the transition sharpness.
             High &#x03B3; (&gt; 1.4, small N<sub>corr</sub>) = <em>single-particle / uncorrelated</em> regime (ideal gases, free atoms);

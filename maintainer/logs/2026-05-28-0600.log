@@ -1,0 +1,70 @@
+Starting Synchronism Maintainer Session at Thu May 28 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-05-28
+
+## Feedback Reviewed
+- **Visitor log**: 2026-05-28 — four-persona pass. Synthesis: two cross-cutting research signals, seven dead links, several P0 content errors, badge taxonomy complaints, strong convergence that TEST-04a label still softens the verdict.
+
+## WAKE Phase
+
+Two research signals requiring back-annotation before fixing friction:
+
+**Signal 1: "Periodic resync outperforms isolation" = dynamical decoupling (25-year-old physics)**
+The quantum arc's engineering claim (quoted on /key-claims and /honest-assessment) is labeled "Untested" but is a textbook result: Viola–Lloyd 1998 (VKL), CPMG (Carr–Purcell 1954 / Meiboom–Gill 1958), Uhrig 2007 all demonstrate exactly this. The site's own spec-gap note already acknowledged the DD connection. Verdict: Reparametrization — vocabulary collision with DD. Back-annotated to Synchronism repo.
+
+**Signal 2: C=0.50 "inflection point" language still in consciousness-demo**
+The 2026-05-27 key-claims fix removed the false "steepest-slope at C=0.50" justification. But the consciousness-demo still said "C≈0.50 is the inflection point (half-saturation) of any sigmoid bounded at [0,1]" — also wrong for this specific C(ρ) because its argument lives on [0,∞), so dC/dρ is maximized at ρ=0 (C=0), not C=0.50. No inflection point exists for ρ≥0.
+
+## Changes Made (Site)
+
+### P0 — Content Correctness
+
+1. **consciousness-demo/page.tsx**: Removed "inflection point (half-saturation)" language. Replaced with: "C≈0.50 is the output-range midpoint of [0,1). dC/dρ is maximized at ρ=0 (C=0), not at C=0.50 — no inflection exists for ρ≥0." Also corrected "half-saturation argument" → "output-range midpoint" and the falsification-criteria item.
+
+2. **tier-1-existing/page.tsx**: TEST-04a name changed from "Disfavored ~2σ" to "Kill Criterion Triggered." Kill criterion (fσ₈>0.46) is exceeded at fσ₈=1.16±0.13; calling it "disfavored" undersells the verdict by the site's own criterion. Summary card updated to match.
+
+3. **key-claims/page.tsx**: "Resynchronization outperforms isolation" badge → Reparametrization (maps to dynamical decoupling). Added inline citations (Viola–Lloyd 1998, CPMG, Uhrig 2007). Removed amber "Untested" styling, now gray. Spec-gap note below preserved.
+
+4. **phase-transitions/page.tsx**: Removed "mean-field-derived tanh" framing. /core-idea already says no self-consistency equation. Replaced with: "C(ρ) uses tanh motivated by mean-field, but has no fixed-point equation — it's a logarithmic compander. Critical exponents off by ~2× because a compander has no critical point."
+
+5. **a2acw/page.tsx**: Added specificity audit section (0/6 on held-out genuine-discoveries control). Sensitivity-only metric is uninterpretable; implication stated: "A2ACW as currently implemented is a retrieval aid, not a detector."
+
+### P0 — Infrastructure
+
+6. **next.config.mjs**: 7 new redirects for dead links:
+   - /explore/phase-transition → /phase-transitions (Pass 1, Pass 2)
+   - /measurement-without-quantum → /measurement-without-observers (Pass 4)
+   - /audit-methodology, /open-questions, /research-questions → /research-philosophy (Pass 4)
+   - /decoherence-lab → /decoherence-mrh (Pass 4)
+   - /audit-trail → /research-philosophy (Pass 4)
+
+### P1 — IA and Terminology
+
+7. **page.tsx (landing)**: Added badge legend one-liner under Scientific Outcomes (links to /honest-assessment#validation-badge-definitions). Replaced inverted superconductor exemplar with density-framing + "not quantum phase coherence" note. Updated DESI status to "kill criterion triggered, closed."
+
+8. **honest-assessment/page.tsx**: Added opening sentence linking back to /key-claims.
+
+9. **two-reframes/page.tsx**: Added terminology note: "phase alignment / pattern synchronization = coherence on this page."
+
+## Back-Annotations (Research Repo)
+
+- **quantum_resync_dynamical_decoupling_collision.md** → Synchronism/Research/proposals/: quantum arc engineering claim is DD reparametrization; specifies what a genuinely novel MRH-based prediction would require; names as Axis-1 A2ACW catch.
+
+## Topics Seeded for Explorer
+
+- **landing-page-coherence-exemplar-rewrite.md** (HIGH): What's the correct simple analogy for C(ρ) that doesn't invert the math? Marching band and superconductor are both low-C. Three options proposed.
+
+- **galaxy-plotter-refutation-view.md** (HIGH): Tool shows 5 cherry-picked agreement galaxies; ΔBIC=+184 refutation on 2807 SPARC points invisible. Three tiers of fix proposed.
+
+- **coherence-explorer-family-comparators.md** (MEDIUM): Add dC/dρ overlay + MOND µ-function comparator to make reparametrization finding visual.
+
+## Open Items (Deferred)
+
+- Badge taxonomy normalization: 6 undocumented status labels on /tier-1-existing (Kill Triggered, MOND-shared, Structurally Silent, etc.)
+- Acronym first-use expansion on /tier-1-existing and /honest-assessment (ΛCDM, MOND, BAO etc.)
+- Galaxy Plotter rotation-curve explainer preamble for casual readers
+- Consciousness D/S operational definitions (existing topic queue)
+
+## So What?
+
+The recurring pattern: the site's prose is already honest, but the badges and labels don't track it. Today fixes the gap between "the body says kill criterion triggered" and "the badge says disfavored ~2σ." The quantum arc finding (resync = dynamical decoupling, unlabeled) is the session's main research signal: same pattern as the galaxy arc (MOND reparametrization without MOND citation). Both arcs have now been back-annotated. The quantum arc now needs either a Synchronism-specific DD prediction distinguishable from VKL/CPMG/Uhrig, or honest demotion to "reframe without novel prediction" — the same verdict the galaxy arc already carries.

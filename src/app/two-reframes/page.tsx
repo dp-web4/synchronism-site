@@ -13,6 +13,12 @@ export default function TwoReframes() {
       <ValidationBadge status="speculative" label="Conceptual Framework" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginBottom: '1rem', borderLeft: '2px solid rgba(148,163,184,0.3)', paddingLeft: '0.75rem' }}>
+          <strong>Terminology note:</strong> this page uses <em>phase relationship</em>, <em>phase alignment</em>,
+          and <em>pattern synchronization</em> for what the rest of the site calls &ldquo;coherence.&rdquo;
+          These are the same quantity — the CRT framing emphasizes the oscillatory picture.
+          See the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link> for the canonical definition.
+        </div>
         <p>
           Synchronism proposes a shift analogous to heliocentrism. Anthropocentric physics places
           the observer at the center &mdash; measurement &ldquo;collapses&rdquo; quantum states,

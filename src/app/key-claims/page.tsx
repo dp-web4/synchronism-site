@@ -162,15 +162,18 @@ export default function KeyClaims() {
                 derived from Synchronism&apos;s MRH machinery. Literature consistency is expected by construction.
               </p>
             </div>
-            <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid #f59e0b' }}>
+            <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid rgba(148,163,184,0.4)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
                 <strong style={{ fontSize: '0.9rem' }}>Resynchronization outperforms isolation</strong>
-                <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: '1rem', background: 'rgba(245, 158, 11, 0.15)', color: '#f59e0b' }}>Untested</span>
+                <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: '1rem', background: 'rgba(148, 163, 184, 0.15)', color: '#94a3b8' }}>Reparametrization — maps to dynamical decoupling</span>
               </div>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
                 If decoherence is desynchronization, then periodic resync protocols should
-                outperform continuous isolation for certain noise profiles. This is a direct engineering
-                prediction that differs from the standard model&apos;s &ldquo;isolate harder&rdquo; strategy.
+                outperform continuous isolation for certain noise profiles. <strong>This is dynamical decoupling (DD):</strong>{' '}
+                Viola–Lloyd 1998, CPMG (Carr–Purcell 1954 / Meiboom–Gill 1958), Uhrig 2007 — all demonstrate
+                periodic pulse sequences beat passive isolation in non-Markovian baths. As stated, this is known
+                physics relabeled. A novel prediction requires specifying a bath spectral density, pulse sequence,
+                and T₂ ratio where the MRH-based protocol differs from standard DD. See specification gap below.
               </p>
             </div>
           </div>

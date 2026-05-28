@@ -48,9 +48,11 @@ export default function ConsciousnessDemo() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#f59e0b' }}>Calibration caveat:</strong>{' '}
-          C &#x2248; 0.50 is the inflection point (half-saturation) of any sigmoid bounded at [0, 1] &mdash;
-          including tanh. The convergence of 8 approaches on 0.499 &#x00B1; 0.012 is <strong>geometric,
-          not empirical</strong>: every approach that derives a midpoint from a tanh-based model will
+          C &#x2248; 0.50 is the <strong>output-range midpoint</strong> of [0, 1) &mdash; a geometric label,
+          not a dynamically privileged value. For C(&#x03C1;) = tanh(&#x03B3;&thinsp;&middot;&thinsp;ln(&#x03C1;/&#x03C1;<sub>crit</sub>&thinsp;+&thinsp;1)),
+          the slope dC/d&#x03C1; is maximized at &#x03C1; = 0 (where C = 0), not at C = 0.50 — there is no inflection
+          point in this specific function for &#x03C1; &#x2265; 0. The convergence of 8 approaches on 0.499 &#x00B1; 0.012 is <strong>geometric,
+          not empirical</strong>: every approach that picks the midpoint of a [0,1)-bounded output range will
           land near 0.50 by construction. Additionally, all 8 approaches share the same framework
           assumptions and are not independent. No calibration procedure exists to map actual EEG, fMRI,
           or IIT-&#x03A6; measurements to the C-axis, so the kill criterion (EEG-visible threshold
@@ -161,8 +163,8 @@ export default function ConsciousnessDemo() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
             <strong>Important:</strong> all 8 approaches were developed within Synchronism and share the
-            same tanh-based assumptions. Convergence on 0.50 is expected for any half-saturation
-            argument &mdash; it does not constitute independent empirical evidence. The convergence
+            same tanh-based assumptions. Convergence on 0.50 is expected for any approach that picks
+            the output-range midpoint of a [0,1)-bounded function &mdash; it does not constitute independent empirical evidence. The convergence
             is consistent with the threshold being real AND with it being a mathematical artifact.
             External calibration (e.g., mapping propofol-stage EEG power spectra to a computed C value)
             is required to distinguish these.
@@ -173,7 +175,7 @@ export default function ConsciousnessDemo() {
         <ul style={{ color: 'var(--color-text-secondary)' }}>
           <li>EEG anesthesia study showing consciousness loss at widely varying C values (1.0 to 6.0)</li>
           <li>Species with consciousness at demonstrably different C thresholds</li>
-          <li>C &#x2248; 0.50 being an artifact of the tanh function&apos;s inflection point (mathematical, not physical)</li>
+          <li>C &#x2248; 0.50 being an artifact of the output-range midpoint (geometric, not dynamical)</li>
         </ul>
       </section>
 

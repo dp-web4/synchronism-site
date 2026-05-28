@@ -62,7 +62,7 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-04a',
-    name: 'DESI RSD fσ₈ — Post-hoc Retrodiction, Disfavored ~2σ (Corrected 2026-05-26)',
+    name: 'DESI RSD fσ₈ — Post-hoc Retrodiction, Kill Criterion Triggered (Corrected 2026-05-26)',
     data: 'DESI DR1 (arXiv:2411.12021, Table 9 & 10)',
     cost: '$0',
     time: 'ADJUDICATED (2026-05-05)',
@@ -247,7 +247,7 @@ export default function Tier1Existing() {
         </div>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            <strong>TEST-04a is disfavored ~2σ — kill criterion triggered (post-hoc retrodiction; corrected 2026-05-26).</strong> TEST-04 was withdrawn.
+            <strong>TEST-04a: kill criterion triggered — closed (post-hoc retrodiction; corrected 2026-05-26).</strong> TEST-04 was withdrawn.
             Tests 01 and 05 test the same underlying prediction on different samples (count as one test).
             TEST-02 (wide binaries, Gaia DR3) remains pending — but with the compander now MOND-degenerate at all
             fitted γ values, wide-binary discrimination requires quantifying the MOND+EFE divergence first.

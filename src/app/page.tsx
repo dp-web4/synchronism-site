@@ -41,10 +41,11 @@ export default function Home() {
       {/* Plain-language framing first */}
       <section style={{ marginBottom: '1.5rem', maxWidth: '65ch' }}>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '1rem', lineHeight: 1.7 }}>
-          <strong>Coherence</strong> is a measure of how collectively a group of elements behaves.
-          When elements act independently (like stars in a galaxy), coherence is low. When they
-          move in lockstep (like electrons in a superconductor), coherence is high. Synchronism
-          asks: can one equation capture this transition across all of physics?
+          <strong>Coherence</strong> (in Synchronism) measures how density-driven a system&rsquo;s behavior is.
+          When matter is sparse and independent (like stars in a galaxy), C is low.
+          When matter is extremely dense and tightly packed (like inside a neutron star), C is high.
+          <em>Note: this is not quantum phase coherence</em> — superconductors (large N<sub>corr</sub>, small &gamma;) are low-C in this framework.
+          Synchronism asks: can one equation capture this transition across all of physics?
         </p>
       </section>
 
@@ -200,11 +201,16 @@ export default function Home() {
               alignItems: 'center',
             }}>
               <span>Prospective predictions confirmed: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Post-hoc retrodictions: <strong style={{ color: '#ef4444' }}>1</strong> (DESI fσ₈ — disfavored ~2σ, kill triggered; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
+              <span>Post-hoc retrodictions: <strong style={{ color: '#ef4444' }}>1</strong> (DESI fσ₈ — kill criterion triggered, closed; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
               <span>RAR (Radial Acceleration Relation) shape test — CLOSED: <strong style={{ color: '#ef4444' }}>γ=2 refuted</strong> (ΔBIC=+184; free-γ→MOND (Modified Newtonian Dynamics))</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
               <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong></span>
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>Full ledger &rarr;</Link>
+            </div>
+            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
+              Badges used below:{' '}
+              <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Validated · Reparametrization · Speculative · Untested · Failed · Withdrawn</Link>
+              {' '}— definitions on the <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment page</Link>.
             </div>
           </section>
 

@@ -222,6 +222,38 @@ export default function A2ACW() {
           </div>
         </div>
 
+        <h3>Specificity Audit (2026-05-22)</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1rem' }}>
+          <div className="card">
+            <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#22c55e', marginBottom: '0.25rem' }}>6 / 6</div>
+            <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+              <strong>Sensitivity (catch rate on demotions)</strong>
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
+              All 6 demoted claims caught by the combined three-axis protocol.
+              This number alone is uninterpretable without specificity.
+            </p>
+          </div>
+          <div className="card">
+            <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#ef4444', marginBottom: '0.25rem' }}>0 / 6</div>
+            <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+              <strong>Specificity (genuine discoveries correctly passed)</strong>
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
+              Held-out control: 6 genuine physics discoveries (COBE fluctuations, Higgs boson, gravitational wave first detection, etc.)
+              submitted to vocabulary-asymmetry audit. Result: 0/6 passed — all were flagged as potential reparametrizations.
+              Discrimination relies entirely on unautomated novelty judgment, not protocol mechanics.
+            </p>
+          </div>
+        </div>
+        <div style={{ background: 'rgba(239, 68, 68, 0.07)', border: '1px solid rgba(239, 68, 68, 0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1.5rem' }}>
+          <strong style={{ color: '#ef4444' }}>Implication:</strong>{' '}
+          A 6/6 sensitivity combined with 0/6 specificity means A2ACW as currently implemented
+          is a <em>retrieval aid</em>, not a detector. It surfaces prior-art candidates for human review;
+          it cannot distinguish genuine discoveries from reparametrizations without that human judgment step.
+          The methodology contribution claim requires this number to be reported alongside the catch rate.
+        </div>
+
         <div style={{ background: 'rgba(139, 92, 246, 0.07)', border: '1px solid rgba(139, 92, 246, 0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1.5rem' }}>
           <strong style={{ color: '#8b5cf6' }}>Primary finding:</strong>{' '}
           Adversarial AI self-play over a shared corpus is a <em>reparametrization detector, not a discovery engine</em>.
@@ -229,6 +261,7 @@ export default function A2ACW() {
           empirical confirmation. The three-axis decomposition is the protocol-design lesson:
           shared-distribution adversaries need external vocabulary, symbol, and null-model checks.
           This is a citable null result about the limits of in-distribution AI self-play for science.
+          <strong> Caveat:</strong> specificity 0/6 means the protocol catches everything — and therefore discriminates nothing on its own.
         </div>
 
         <div style={{ marginTop: '2rem' }}>

@@ -272,6 +272,46 @@ const nextConfig = {
         destination: '/galaxy-rotation',
         permanent: false,
       },
+      // /explore/phase-transition — dead link caught by Pass 1, Pass 2 (2026-05-28); real page is /phase-transitions
+      {
+        source: '/explore/phase-transition',
+        destination: '/phase-transitions',
+        permanent: false,
+      },
+      // /measurement-without-quantum — guessed URL by researcher (2026-05-28); real page is /measurement-without-observers
+      {
+        source: '/measurement-without-quantum',
+        destination: '/measurement-without-observers',
+        permanent: false,
+      },
+      // Researcher-pathway dead links (Pass 4, 2026-05-28): /audit-methodology, /open-questions, /research-questions → /research-philosophy
+      {
+        source: '/audit-methodology',
+        destination: '/research-philosophy',
+        permanent: false,
+      },
+      {
+        source: '/open-questions',
+        destination: '/research-philosophy',
+        permanent: false,
+      },
+      {
+        source: '/research-questions',
+        destination: '/research-philosophy',
+        permanent: false,
+      },
+      // /decoherence-lab — guessed by researcher; real page is /decoherence-mrh
+      {
+        source: '/decoherence-lab',
+        destination: '/decoherence-mrh',
+        permanent: false,
+      },
+      // /audit-trail — guessed by researcher; redirect to /research-philosophy (audit documentation)
+      {
+        source: '/audit-trail',
+        destination: '/research-philosophy',
+        permanent: false,
+      },
     ];
   },
 };

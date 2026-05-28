@@ -80,8 +80,11 @@ export default function PhaseTransitions() {
           <ValidationBadge status="failed" label="Critical Exponents: 2× Off" />
           <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem' }}>
             Real phase transitions have universality classes with specific critical exponents.
-            Synchronism&apos;s mean-field-derived tanh gives the wrong exponents by a factor of ~2.
-            The function captures <em>where</em> transitions happen but not <em>how</em> they unfold.
+            C(&#x03C1;) uses a tanh <em>motivated by</em> mean-field theory, but has no self-consistency
+            equation — &#x03C1; goes in, C comes out with no feedback loop. It belongs to the logarithmic
+            compander family (&#x03BC;-law / Hill / Naka–Rushton), not Landau theory. The critical exponents
+            are off by ~2× not because of a calibration miss, but because a compander has no critical point
+            to generate exponents from. The function captures <em>where</em> transitions happen but not <em>how</em> they unfold.
           </p>
         </div>
 

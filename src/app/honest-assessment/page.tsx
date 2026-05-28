@@ -11,9 +11,11 @@ export default function HonestAssessment() {
       <Breadcrumbs currentPath="/honest-assessment" />
 
       <h1>Honest Assessment</h1>
-      <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem', maxWidth: '65ch' }}>
-        Synchronism is an experimental research framework. This page documents what works,
-        what failed, what we got wrong, and what remains untested. Updated as new results come in.
+      <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem', maxWidth: '65ch' }}>
+        This page audits the claims listed in{' '}
+        <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link>.
+        It documents what works, what failed, what we got wrong, and what remains untested.
+        Updated as new results come in.
       </p>
 
       <details style={{ marginBottom: '2rem', maxWidth: '65ch' }}>

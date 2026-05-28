@@ -1,0 +1,16 @@
+Starting Synchronism Explorer Session at Thu May 28 08:00:01 PDT 2026
+All artifacts in place. Quick summary of what landed:
+
+**Session result**: Closed the cluster-bridge topic by execution, not assertion. The four natural compander-friendly ansätze tested on Coma either overshoot by 10⁴ (A1, A4) or collapse to Newtonian (A2, A3). A3 is structurally impossible because C ∈ [0,1) bounds the prediction at ≤2 vs the observed 4.6 — a tight codomain-based impossibility on a whole sub-family. Reverse-solve: matching Coma needs ρ_crit_cluster 10⁻⁴–10⁻⁶ × the galaxy value, removing universality.
+
+**Root cause identified**: C(ρ) has one density scale; Verlinde and MOND have two. The compander saturates to 0 or 1, with no intermediate-scale knob — so cluster regimes (ρ << ρ_crit) cannot produce a moderate factor-5 enhancement. The C(a) → C(ρ) variable migration (Sessions 195-199 → 211+) silently dropped a working cluster prediction; that's a sister exhibit for the A2ACW methodology preprint about silent-substantive-changes.
+
+**Artifacts**:
+- Finding: `explorer/findings/cluster-bridge-impossibility-coma.md` (~140 lines, full maintainer actions)
+- Back-annotation: `Synchronism/Research/proposals/c_rho_cluster_bridge_impossibility_coma.md`
+- Computation: `explorer/work/cluster_bridge_coma.py`, `cluster_bridge_reverse_solve.py`
+- Topic archived: `explorer/topics/done/c-rho-cluster-prediction-bridge.md`
+- Memory updated: `project_c_rho_enclosure_bridge_problem.md` + MEMORY.md index
+- Session log: `explorer/logs/2026-05-28.md`
+
+**So what?** The site's "structurally silent at cluster scale (by construction)" claim has been upgraded from declarative to computational — exactly the move the loop's own meta-finding (Session 677) said was missing. The modified-gravity track's "last open door" is closed. The galaxy-scale productive frame (free-γ ≡ MOND, ΔBIC=+184) remains as a real but bounded result; above galaxy scale, the framework is *demonstrated* silent on a representative ansatz family.

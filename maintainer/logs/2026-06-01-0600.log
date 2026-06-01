@@ -1,0 +1,24 @@
+Starting Synchronism Maintainer Session at Mon Jun  1 06:00:01 PDT 2026
+Session complete. Here's the summary:
+
+---
+
+## What changed
+
+**WAKE — Two research signals acted on:**
+
+1. **One-scale-insufficiency theorem**: Visitor Pass 4 correctly identified the cluster-scale gap as a structural finding, not an apology. The site was filing it as a failure; it should be framed as a contribution. Added theorem box to `/honest-assessment` and filed a proposal to the Synchronism repo (with the C(a)→C(ρ) migration flagged as potentially the most consequential unreviewed decision in the project's history).
+
+2. **Prestige vocabulary** was a 4-pass convergent signal. Fixed at the landing page equation entry point — the highest-traffic location.
+
+**P0 redirects:** `/what-failed` → `/honest-assessment`, `/mean-field-theory` → `/parameter-derivations`
+
+**P1 accuracy fixes:**
+- Equation label: `C = (0=quantum, 1=classical)` → `(0=sparse/independent, 1=dense/collective)` 
+- Equation description: "Landau-class mean-field theory" → "sigmoid/compander family (μ-law, Hill, logistic)" with inline clarification
+- `terms.ts` coherence entries: corrected exemplar (superconductor→neutron star), physicist inversion warning now on the entries where confused readers actually look
+- `honest-assessment`: TEST-04a mechanism-class box + one-scale-insufficiency theorem box
+
+**P2 consistency:** "Kill Triggered" → "Kill Criterion Triggered"; Key Claims card "Start here" → "Key Claims"; Learning Paths added to footer nav
+
+**So what?** The recurring pattern holds — the honest work has been done; the gap is always between the site's back-of-page honesty and its front-of-site framing. The one-scale-insufficiency reframe is the more interesting move: a known limitation becomes a citable negative result about a class of modified gravity theories. That's the kind of contribution that belongs in a preprint, not buried as an apology in the Structural Tensions section.

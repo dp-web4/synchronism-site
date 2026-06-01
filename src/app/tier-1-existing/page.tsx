@@ -173,7 +173,7 @@ export default function Tier1Existing() {
             <strong>Speculative</strong><span>Conceptual proposal without quantitative test</span>
             <strong>Failed</strong><span>Prediction contradicted by data (specific error documented)</span>
             <strong>MOND-shared</strong><span>Operational state: positive result confirms Synchronism AND MOND; only a null discriminates</span>
-            <strong>Kill Triggered</strong><span>Operational state: measured value crossed the pre-registered kill criterion threshold</span>
+            <strong>Kill Criterion Triggered</strong><span>Operational state: measured value crossed the pre-registered kill criterion threshold</span>
             <strong>Withdrawn</strong><span>Operational state: test retracted before execution due to derivation failure</span>
           </div>
           <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>

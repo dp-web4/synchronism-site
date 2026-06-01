@@ -12,8 +12,9 @@ export const terms: Record<string, TermDefinition> = {
   'C(rho)': {
     term: 'C(\u03C1)',
     fullName: 'Coherence Function',
-    brief: 'Maps presence to coherence: C(\u03C1) = tanh(\u03B3 ln(\u03C1/\u03C1_crit + 1)).',
+    brief: 'Maps presence to coherence: C(\u03C1) = tanh(\u03B3 ln(\u03C1/\u03C1_crit + 1)). A sigmoid/compander function, not an order parameter.',
     explanation: 'The central equation of Synchronism. Takes presence (\u03C1) \u2014 the density of compatible structural elements within a Markov Relevancy Horizon \u2014 and returns a coherence value between 0 and 1. Physical density (g/cm\u00B3) is one form of presence, but presence also encompasses temperature, energy levels, catalytic surfaces, and other factors that support emergence.',
+    educationalNote: '\u26A0 Physicist note: C is NOT quantum phase coherence. Quantum-coherent systems (BEC, BCS, superconductors) sit at LOW C because they have large N_corr \u2192 small \u03B3. C measures density-driven collective ordering, the opposite of the standard CM usage.',
     learnMore: '/coherence-function',
   },
   '\u03B3': {
@@ -118,8 +119,9 @@ export const terms: Record<string, TermDefinition> = {
   'coherence': {
     term: 'Coherence',
     fullName: 'Collective Behavior Measure',
-    brief: 'How collectively a group of elements behaves, from independent (0) to fully synchronized (1).',
-    explanation: 'Low coherence: elements act independently (like stars in a galaxy). High coherence: elements move in lockstep (like electrons in a superconductor). The coherence function C(\u03C1) maps presence to this 0\u20131 scale.',
+    brief: 'How collectively a group of elements behaves, from sparse/independent (0) to dense/collective (1).',
+    explanation: 'Low coherence (C\u21920): elements act independently \u2014 sparse matter, individual particles. High coherence (C\u21921): extremely dense, tightly packed systems \u2014 neutron stars, not superconductors. \u26A0 Terminology note for physicists: Synchronism uses "coherence" to mean density-driven classical ordering, NOT quantum phase coherence. Quantum-coherent systems (BEC, BCS superconductors) have large N_corr \u2192 small \u03B3 \u2192 LOW C in this framework. C=0 does not mean "incoherent" in the quantum sense; it means sparsely interacting. The key physics is density and collective behavior, not quantum-vs-classical character.',
+    educationalNote: '\u26A0 Physicist terminology note: Synchronism "coherence" is NOT quantum phase coherence. In condensed matter, quantum-coherent systems (BEC, BCS superconductors) are maximally quantum-coherent \u2014 but they have large N_corr \u2192 small \u03B3 \u2192 LOW C in this framework. C=0 does not mean "incoherent" in the CM sense; it means sparsely interacting. C measures density-driven collective behavior, the opposite of the standard quantum-coherence usage. See also: C(\u03C1) entry, Mean-Field Theory entry.',
     learnMore: '/coherence-function',
   },
   'phase transition': {

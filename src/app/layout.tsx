@@ -32,9 +32,16 @@ export default function RootLayout({
               Start Here
             </Link>
             <Link
+              href="/learning-paths"
+              style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
+              title="Choose your journey: Physics, Chemistry, Philosophy, or All"
+            >
+              Learning Paths
+            </Link>
+            <Link
               href="/why-synchronism"
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
-              title="Start here: the question behind the framework"
+              title="The question behind the framework"
             >
               Why Synchronism?
             </Link>
@@ -92,6 +99,8 @@ export default function RootLayout({
             <Link href="/why-synchronism">Why Synchronism?</Link>
             {' \u00B7 '}
             <Link href="/first-encounter">First Encounter</Link>
+            {' \u00B7 '}
+            <Link href="/learning-paths">Learning Paths</Link>
             {' \u00B7 '}
             <Link href="/key-claims">Key Claims</Link>
             {' \u00B7 '}

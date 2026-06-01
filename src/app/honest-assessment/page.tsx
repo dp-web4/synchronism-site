@@ -308,6 +308,13 @@ export default function HonestAssessment() {
               <strong>Context (2026-05-23):</strong> EFTofLSS analyses (Cabass, Simonović, Zaldarriaga et al. 2024-2025)
               explain DESI DR1 fσ₈ within ΛCDM at 1-2σ via one-loop counterterms.
             </p>
+            <div style={{ background: 'rgba(56,189,248,0.06)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
+              <strong style={{ color: 'var(--color-accent-blue)' }}>What this rules out beyond Synchronism:</strong>{' '}
+              DESI DR1 full-shape (arXiv:2411.12021) finds LRG1 fσ₈/(fσ₈)<sub>fid</sub>&nbsp;=&nbsp;1.16&plusmn;0.13 — growth <em>above</em> ΛCDM, opposite the predicted suppression.
+              This constrains the entire <strong>coherence-damped structure-growth mechanism class</strong>: any framework that predicts growth suppression from density-coherence coupling sits in the same disfavored box — alongside massive-ν, warm-DM, and certain f(R) suppression frameworks.
+              This is not unique to Synchronism; it is a transferable negative result about a class of suppression mechanisms.
+              The null is clean: DESI full-shape 2024 is the appropriate dataset; the constraint is independent of which specific model generated the suppression prediction.
+            </div>
           </div>
 
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
@@ -374,6 +381,14 @@ export default function HonestAssessment() {
               But the Bullet Cluster shows dark matter passes through itself &mdash; LESS sticky than baryons.
               The viscosity interpretation predicts the wrong direction.
             </p>
+            <div style={{ background: 'rgba(167,139,250,0.06)', border: '1px solid rgba(167,139,250,0.2)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
+              <strong style={{ color: 'var(--color-accent-violet)' }}>One-scale-insufficiency theorem (2026-05-28):</strong>{' '}
+              C(&#x03C1;) has exactly one free density scale (&#x03C1;<sub>crit</sub>). Multi-scale dynamics — galaxies (~10<sup>22</sup>&nbsp;kg/m&sup3;) vs clusters (~10<sup>19</sup>&nbsp;kg/m&sup3;) — require at least two independent scale parameters to fit independently.
+              Four natural ansätze were tested on the Coma cluster: A1/A4 overshoot by 10<sup>4</sup>; A2 collapses to Newtonian; A3 is structurally impossible (C &#x2208; [0,1) bounds at ≤2 vs observed velocity dispersion requiring ~4.6).
+              Required &#x03C1;<sub>crit,cluster</sub> is 10<sup>&minus;4</sup> to 10<sup>&minus;6</sup> &times; the galaxy value &mdash; incompatible with universality.
+              This is the same structural reason MOND fails at clusters (one acceleration scale a&#x2080; is insufficient for both regimes — Verlinde needed two scales and still underperforms at clusters).
+              <strong>This is a finding, not a calibration miss:</strong> a one-parameter density map is structurally insufficient for multi-scale gravitational dynamics.
+            </div>
           </div>
 
           <div className="card">

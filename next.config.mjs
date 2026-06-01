@@ -312,6 +312,18 @@ const nextConfig = {
         destination: '/research-philosophy',
         permanent: false,
       },
+      // /what-failed — guessed URL from homepage "See What Failed" button (all personas, 2026-06-01)
+      {
+        source: '/what-failed',
+        destination: '/honest-assessment',
+        permanent: false,
+      },
+      // /mean-field-theory — load-bearing theory page 404d by grad student (Pass 3, 2026-06-01); redirect to parameter-derivations
+      {
+        source: '/mean-field-theory',
+        destination: '/parameter-derivations',
+        permanent: false,
+      },
     ];
   },
 };

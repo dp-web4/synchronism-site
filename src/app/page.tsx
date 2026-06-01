@@ -60,12 +60,12 @@ export default function Home() {
         </p>
         <div style={{ textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           <p style={{ marginBottom: '0.5rem' }}>
-            <strong style={{ color: 'var(--color-accent-violet)' }}>C</strong> = coherence (0 = quantum, 1 = classical) &nbsp;
+            <strong style={{ color: 'var(--color-accent-violet)' }}>C</strong> = coherence (0 = sparse/independent, 1 = dense/collective) &nbsp;
             <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> &nbsp;
             <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = saturation knee (reference density; not a critical point)
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            The tanh shape is <em>motivated</em> by Landau-class mean-field theory &mdash; a phenomenological choice, not a derived result. The log-density argument is physically motivated. Three parameters (A, B, &#x03B2;) are fitted to data.{' '}
+            The tanh shape is <em>motivated</em> by the sigmoid/compander family (&mu;-law, Hill, logistic) &mdash; a phenomenological choice, not derived. See /parameter-derivations for why &ldquo;mean-field theory&rdquo; is the wrong category: there is no self-consistency loop, no free energy, no critical exponents. The log-density argument is physically motivated. Three parameters are fitted to data.{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>See derivations &rarr;</Link>
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
@@ -100,7 +100,7 @@ export default function Home() {
             textTransform: 'uppercase',
             letterSpacing: '0.05em',
           }}>
-            Start here
+            Key Claims
           </div>
           <h2 style={{ margin: '0 0 0.5rem', fontSize: '1.3rem' }}>
             Where does Synchronism move the needle?

@@ -97,7 +97,10 @@ This applies to all tracks: the visitor should feel invited to think, the mainta
 
 - Web4 is an **ontology**, not infrastructure
 - Synchronism is the **theoretical foundation**
-- Every scientific claim needs a **validation badge** (Validated/Untested/Failed/Speculative/Reparametrization)
+- Every scientific claim needs a **validation badge**. Two families:
+  - **MRH-relationship** (preferred for in-flight work): `active-mrh` / `parallel-paths` / `sidelined` / `superseded` / `audited-negative`. No "established" tags during stewardship — per dp 2026-05-28, nothing is honestly characterizable as established at the current stewardship stage.
+  - **Descriptive** (empirical relationship, not verdict): `untested` / `failed` / `speculative` / `reparametrization`.
+  - **Deprecated** (kept for back-compat; do not use in new content): `validated` / `supported`. Existing usages being migrated incrementally by the daily maintainer track.
 - The **honest assessment** is never weakened — failures stay visible
 - Avoid "production ready" — we are in R&D
 - Navigation source of truth is `src/lib/navigation.ts`
@@ -106,7 +109,7 @@ This applies to all tracks: the visitor should feel invited to think, the mainta
 <!-- gitnexus:keep -->
 # GitNexus — Code Knowledge Graph
 
-Indexed as **synchronism-site** (3210 symbols, 3532 relationships, 8 execution flows). MCP tools available via `mcp__gitnexus__*`.
+Indexed as **synchronism-site** (3361 symbols, 3722 relationships, 13 execution flows). MCP tools available via `mcp__gitnexus__*`.
 
 **Do not reindex.** The supervisor handles GitNexus indexing. If the index is stale, note it in SESSION_FOCUS.
 

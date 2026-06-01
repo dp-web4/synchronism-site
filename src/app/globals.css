@@ -294,6 +294,41 @@ main {
   border: 1px solid rgba(251, 146, 60, 0.3);
 }
 
+/* MRH-relationship badges — preferred for in-flight work
+   See forum/post-kimi-reframe-site-update-instructions-2026-05-28.md §1
+   for rationale (no "established" tags during stewardship per dp 2026-05-28). */
+
+.badge-active-mrh {
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.badge-parallel-paths {
+  background: rgba(167, 139, 250, 0.15);
+  color: #a78bfa;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+.badge-sidelined {
+  background: rgba(100, 116, 139, 0.15);
+  color: #94a3b8;
+  border: 1px solid rgba(100, 116, 139, 0.3);
+}
+
+.badge-superseded {
+  background: rgba(113, 113, 122, 0.15);
+  color: #a1a1aa;
+  border: 1px solid rgba(113, 113, 122, 0.3);
+  font-style: italic;
+}
+
+.badge-audited-negative {
+  background: rgba(251, 113, 133, 0.15);
+  color: #fb7185;
+  border: 1px solid rgba(251, 113, 133, 0.3);
+}
+
 /* Hero */
 .hero-title {
   font-size: clamp(2.2rem, 4vw, 3rem);

@@ -22,16 +22,45 @@ export default function HonestAssessment() {
         <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.9rem' }}>
           Validation badge definitions
         </summary>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-          <strong>Validated</strong><span>Quantitative match with independent data</span>
-          <strong>Strongly Supported</strong><span>Consistent with data but caveats apply (e.g., known prior art, selection bias risk)</span>
+
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
+          <strong>MRH-relationship tags</strong> describe how a claim sits in the current research inventory.
+          Preferred for in-flight work. Rationale: at the current stewardship stage, <em>nothing is honestly
+          characterizable as &ldquo;established&rdquo;</em> — the framework is being stewarded along many parallel paths,
+          and verdict-shaped tags promote substantive content out of that parallel space prematurely.
+        </p>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          <strong>Active-MRH</strong><span>Currently in active research focus; being extended or revised</span>
+          <strong>Parallel-Paths</strong><span>In the framework&apos;s parallel hypothesis space; not currently in active focus but not abandoned</span>
+          <strong>Sidelined</strong><span>Was in active focus, currently not pursued; reasons documented; reactivation condition specified</span>
+          <strong>Superseded</strong><span>Replaced by a later formulation; pointer to successor</span>
+          <strong>Audited-Negative</strong><span>Closed audit finding on a historical track; durable record; does not move</span>
+        </div>
+
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '1rem' }}>
+          <strong>Descriptive tags</strong> describe an empirical relationship rather than a verdict on truth-status. These remain useful at the current stewardship stage:
+        </p>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
           <strong>Untested</strong><span>Prediction exists, no data yet</span>
           <strong>Speculative</strong><span>Conceptual proposal without quantitative test</span>
           <strong>Reparametrization</strong><span>Equivalent to existing physics in different notation</span>
           <strong>Failed</strong><span>Prediction contradicted by data (with specific error)</span>
         </div>
-        <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
-          Full definitions: <Link href="/research-philosophy" style={{ color: 'var(--color-accent-blue)' }}>Research Philosophy</Link>
+
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '1rem' }}>
+          <strong>Deprecated</strong> (kept for back-compat with existing usages; do not appear in new content):
+        </p>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
+          <strong>Validated</strong><span>Verdict-shaped; conflicts with stewardship discipline. Use Active-MRH or Reparametrization as appropriate.</span>
+          <strong>Strongly Supported</strong><span>Same; existing usages being migrated incrementally by the daily maintainer track.</span>
+        </div>
+
+        <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '1rem' }}>
+          Full discipline: <Link href="/research-philosophy" style={{ color: 'var(--color-accent-blue)' }}>Research Philosophy</Link>.
+          Migration plan: <a href="https://github.com/dp-web4/synchronism-site/blob/main/forum/post-kimi-reframe-site-update-instructions-2026-05-28.md" style={{ color: 'var(--color-accent-blue)' }}>forum post 2026-05-28</a>.
         </p>
       </details>
 

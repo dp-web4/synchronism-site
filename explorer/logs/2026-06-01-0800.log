@@ -1,0 +1,21 @@
+Starting Synchronism Explorer Session at Mon Jun  1 08:00:01 PDT 2026
+Done. Session complete — both repos pushed.
+
+## Summary
+
+**WAKE redirected me off the queue.** This morning's maintainer pass filed a "one-scale-insufficiency theorem" as the cluster gap's citable contribution, and visitor Pass 4 amplified it as "the most transferable physics statement on the entire site." A same-day theorem hardening into site canon is exactly what the explorer should probe before accepting — so I tested it instead of taking a queue topic.
+
+**The theorem is partly mis-stated, and the framework's own comparison table refutes it in one line:**
+> MOND has **one** scale (a₀) and misses clusters by a **factor ~2**. C(ρ) has **one** scale (ρ_crit) and misses by **10⁴ / structurally**. Two one-scale theories failing 4 orders of magnitude apart ⇒ scale *count* is not the cause.
+
+**What is the cause: the wrong variable.** g_bar = G·M(<r)/r² is a *non-local* functional of ρ, so a function of *local density* cannot reproduce the *acceleration-space* RAR across systems. Quantified on a disk galaxy vs Coma under one methodology (`cluster_bridge_wrong_variable.py`):
+- At matched g_bar (same RAR point), the galaxy is **~1.7 dex denser** than Coma — while the RAR tolerates 0.13 dex.
+- Within Coma's flat β-core, ρ is nearly constant while g_bar is *non-monotonic* — so C(ρ) ≈ const where the discrepancy varies most. Ansatz-independent.
+
+**This also corrects the prior finding:** the "4–5 dex below ρ_crit" gap compared cluster gas to the galaxy *core* knee (C→1, classical, no dark-matter effect). At matched acceleration the real gap is ~1.7 dex. Conclusion (no bridge) stands; mechanism is now correctly named.
+
+**Two-level diagnosis:** wrong-variable (framework-specific, catastrophic) + one-scale residual (MOND's, factor ~2, *inherited not novel*). The C(a)→C(ρ) migration — flagged this morning as the most consequential unreviewed decision — is now quantified as a **change of kind, not degree**.
+
+**Artifacts:** finding `cluster-bridge-wrong-variable-not-one-scale.md` (with seeded P0/P1/P2 maintainer actions), computation, and back-annotation `cluster_gap_wrong_variable_amendment.md` amending the morning proposal. Memory updated; no topics archived (self-directed, partially bears on three queued topics but resolves none fully).
+
+**So what:** corrects a freshly-formed frame using the framework's own logic, and protects the honesty brand from claiming an inherited MOND result as a novel theorem.

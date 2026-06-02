@@ -108,7 +108,7 @@ export default function CoreIdea() {
           6 of 6 badges previously labeled &ldquo;Validated&rdquo; on this site have been
           demoted to Reparametrization on closer review. These regime cards have not yet
           been independently audited &mdash; treat all current badges as{' '}
-          <Link href="/research-philosophy#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>
+          <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
             Reparametrization-pending-audit
           </Link>
           {' '}until shown otherwise. See <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</Link>.

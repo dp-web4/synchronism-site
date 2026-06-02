@@ -18,9 +18,9 @@ export default function HonestAssessment() {
         Updated as new results come in.
       </p>
 
-      <details style={{ marginBottom: '2rem', maxWidth: '65ch' }}>
+      <details id="validation-badge-definitions" style={{ marginBottom: '2rem', maxWidth: '65ch' }}>
         <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.9rem' }}>
-          Validation badge definitions
+          Validation badge definitions (canonical reference)
         </summary>
 
         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>

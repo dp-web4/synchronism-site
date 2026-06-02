@@ -59,6 +59,14 @@ export default function WhySynchronism() {
           moving as a correlated unit. When &#x03B3; is large (few correlated particles), behavior is quantum.
           When &#x03B3; is small (many correlated particles), behavior is classical.
         </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', borderLeft: '2px solid rgba(245,158,11,0.4)', paddingLeft: '0.75rem' }}>
+          <strong>Circularity caveat:</strong> The 1/&#x221A;N<sub>corr</sub> scaling is a dimensional ansatz
+          inspired by fluctuation theory &mdash; not a derivation from first principles. No counting protocol exists to
+          derive N<sub>corr</sub> from a system&apos;s Hamiltonian without first fitting &#x03B3; to observed data.
+          In practice, N<sub>corr</sub> is back-fit from &#x03B3; &mdash; so &#x03B3; has no independent predictive
+          content beyond the calibration target. The &#x03B3; Calculator states this explicitly.
+          See <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator &rarr;</Link>
+        </p>
         <p>
           The tanh shape is a phenomenological choice — a member of the compander family
           (μ-law audio companding, Hill/Naka–Rushton response functions, Langevin/Curie–Weiss saturation).

@@ -39,7 +39,7 @@ export default function ParameterDerivations() {
           sub-types of <em>Reparametrization</em> &mdash; reproducing known observational laws in different notation.{' '}
           <strong>Jeans Criterion</strong> is a sub-type of <em>Validated</em> &mdash; derived from a
           physical principle with quantitative agreement.
-          See <a href="/research-philosophy#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>badge taxonomy</a> for the six official tiers.
+          See <a href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>badge taxonomy</a> for the current two-family system.
         </p>
 
         <h2>The Complete Chain</h2>

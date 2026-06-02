@@ -30,10 +30,10 @@ export default function KeyClaims() {
           </p>
           <p style={{ color: 'var(--color-text-muted)', margin: 0, fontSize: '0.8rem' }}>
             Status labels (Untested, Speculative, etc.) follow the site&apos;s{' '}
-            <Link href="/research-philosophy#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>
+            <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
               validation badge taxonomy
             </Link>
-            {' '}&mdash; defined on the Research Philosophy page.
+            {' '}&mdash; canonical reference on the Honest Assessment page.
           </p>
         </div>
 
@@ -244,7 +244,7 @@ export default function KeyClaims() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.15rem' }}>
               <span style={{ color: 'var(--color-text-muted)', marginRight: '0.5rem' }}>2.</span>
-              Consciousness Has an Equation
+              Could Consciousness Have an Equation?
             </h2>
             <span style={{
               fontSize: '0.75rem',

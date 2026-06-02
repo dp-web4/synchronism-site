@@ -1,0 +1,66 @@
+Starting Synchronism Maintainer Session at Tue Jun  2 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-06-02
+
+## Feedback Reviewed
+- Visitor log: 2026-06-02 — 4-persona pass. Convergent signal across Passes 2+3+4 on badge taxonomy inconsistency (single highest-severity multi-pass finding). Pass 4 flagged TEST-04a fσ₈ vs σ₈ quantity mismatch. Passes 1+2 flagged tanh/ln undefined at landing equation. Passes 3+4 flagged landing universality vs cluster-scale admission.
+- Forum: none new
+- Explorer: no new findings
+
+## WAKE Phase
+
+**Research signal: None new today.** All P0 issues are propagation gaps, not new research directions:
+- Badge taxonomy conflict — site architecture, already documented
+- TEST-04a fσ₈/σ₈ clarification — presentation fix; physics verdict unchanged (disfavored ~2σ, kill triggered)
+- Consciousness headline overclaim — framing fix
+- Landing universality vs cluster-scale — known since 2026-05-28 one-scale-insufficiency
+
+No proposal filed to research repo. Prior back-annotations cover all these physics findings.
+
+**So what?** The convergent 3-of-4-persona confirmation of the badge taxonomy problem is the diagnostic signal. The site's central honesty mechanism (badges) was itself inconsistent — research-philosophy showed a deprecated 6-badge taxonomy while honest-assessment used the current 9-badge two-family taxonomy. Three independent expert passes spotted this without coordination. Fixed today.
+
+## Changes Made (Site)
+
+**P0 — HIGH:**
+
+1. `src/app/research-philosophy/page.tsx`:
+   - Page-level badge: validated → active-mrh (deprecated → current)
+   - `#validation-badge-taxonomy` section: Replaced old 6-badge block (Validated + Supported as current) with current two-family taxonomy (5 MRH-relationship + 4 descriptive, with deprecated note for Validated/Supported)
+   - Operational states paragraph: "six validation badges (Validated / Supported / ...)" → "nine validation badges (5 MRH-relationship: ... 4 descriptive: ...)"
+
+2. `src/app/honest-assessment/page.tsx`:
+   - Added id="validation-badge-definitions" to the details element — fixes broken anchor
+
+3. `src/app/key-claims/page.tsx`:
+   - Badge link: /research-philosophy#validation-badge-taxonomy → /honest-assessment#validation-badge-definitions
+   - H2: "Consciousness Has an Equation" → "Could Consciousness Have an Equation?"
+
+4. `src/app/tier-1-existing/page.tsx`:
+   - TEST-04a alert: Added explicit like-for-like fσ₈ comparison (predicted 0.418 vs observed ≈0.55 = ~2σ); separated from σ₈ comparison (0.76 vs 0.841 = 2.4σ). Clear note: these are different observables, do not compare 0.418 fσ₈ to 0.841 σ₈ directly.
+
+5. `src/app/parameter-derivations/page.tsx`, `handling-failure/page.tsx`, `core-idea/page.tsx`:
+   - Badge links: all updated from /research-philosophy#validation-badge-taxonomy → /honest-assessment#validation-badge-definitions
+
+**P1 — MEDIUM:**
+
+6. `src/app/why-synchronism/page.tsx`:
+   - Added γ = 2/√Ncorr circularity caveat after the γ description: "no counting protocol exists to derive Ncorr from a system's Hamiltonian without first fitting γ to observed data — γ has no independent predictive content beyond the calibration target."
+
+7. `src/app/page.tsx` (landing):
+   - Added tanh/ln inline definitions: "tanh = S-shaped saturation function (maps any real number to (0,1)) — you can skip this and just think 'smooth S-curve.' ln = natural log: compression — 1,000× bigger becomes only ~7 units bigger."
+   - γ label: "= 2/√Ncorr" → "= sharpness of transition (= 2/√Ncorr)"
+   - Hero subtitle: Removed "across 80 orders of magnitude — from electrons to galaxy clusters" (contradicted by cluster-scale failure); replaced with "from electrons to galaxies" + explicit cluster-scale insufficiency admission
+
+**Build:** clean, zero errors, zero warnings.
+
+## Back-Annotations (Research Repo)
+None this session. Physics findings reflected in today's changes were all previously back-annotated.
+
+## Topics Seeded for Explorer
+- `test-inventory-map.md` (MEDIUM): Four overlapping test inventories with no nesting map (Tier 1 / Test Catalog / Top 5 / 24-experiment). Write a one-paragraph "how these pages relate" map. Flagged independently by Passes 2 and 3.
+
+## Open Items (Deferred)
+- Glossary beginner subset ("10 words to know") — Passes 1+2. Low priority UX.
+- a₀ = cH₀/(2π): state 2π is a tuned normalization — Pass 4. One sentence on /galaxy-rotation.
+- TEST-07 "~500 Mpc": note it is not the BAO scale (~150 Mpc) — Pass 4. Low priority.
+- Landing equation progressive disclosure (show/hide toggle for equation) — Pass 1 bounce risk remains, tanh/ln fix helps but doesn't fully solve it.

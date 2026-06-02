@@ -10,7 +10,7 @@ export default function ResearchPhilosophy() {
     <>
       <Breadcrumbs currentPath="/research-philosophy" />
       <h1>Research Philosophy</h1>
-      <ValidationBadge status="validated" label="Methodology" />
+      <ValidationBadge status="active-mrh" label="Active Research" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <blockquote style={{
@@ -72,47 +72,68 @@ export default function ResearchPhilosophy() {
         </ul>
 
         <h2 id="validation-badge-taxonomy">Validation Badge Taxonomy</h2>
-        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
-          Every scientific claim on this site carries a validation badge. Here is what each status means:
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+          Every scientific claim on this site carries a validation badge.
+          The <strong>canonical reference</strong> is on the{' '}
+          <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
+            Honest Assessment page
+          </Link>. The taxonomy has two families:
         </p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
+
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
+          <strong>MRH-relationship tags</strong> (preferred for in-flight work) — describe how a claim sits in the current research inventory:
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <ValidationBadge status="validated" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Quantitative match to empirical data within stated error bounds
-            </span>
+            <ValidationBadge status="active-mrh" />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Currently in active research focus; being extended or revised</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <ValidationBadge status="supported" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Consistent with data but caveats apply &mdash; may have known prior art or selection bias risk
-            </span>
+            <ValidationBadge status="parallel-paths" />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>In the framework&apos;s parallel hypothesis space; not currently in active focus but not abandoned</span>
           </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <ValidationBadge status="sidelined" />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Was in active focus, currently not pursued; reasons documented; reactivation condition specified</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <ValidationBadge status="superseded" />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Replaced by a later formulation; pointer to successor</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <ValidationBadge status="audited-negative" />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Closed audit finding on a historical track; durable record; does not move</span>
+          </div>
+        </div>
+
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
+          <strong>Descriptive tags</strong> — describe an empirical relationship rather than a verdict on truth-status:
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="untested" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Falsifiable prediction defined but not yet tested experimentally
-            </span>
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Prediction exists, no data yet</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="speculative" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Theoretical extension without a defined test &mdash; interesting but not yet scientific
-            </span>
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Conceptual proposal without quantitative test</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="reparametrization" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Reproduces known physics in different notation &mdash; no new content, but may offer notational clarity
-            </span>
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Equivalent to existing physics in different notation</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="failed" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Prediction tested and wrong. Kept visible as permanent record.
-            </span>
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Prediction tested and wrong. Kept visible as permanent record.</span>
           </div>
         </div>
+
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+          <strong>Deprecated</strong> (kept for back-compat with existing usages; do not appear in new content):{' '}
+          <ValidationBadge status="validated" />{' '}and{' '}<ValidationBadge status="supported" />{' '}
+          &mdash; verdict-shaped; conflicts with the stewardship discipline (nothing is honestly characterizable as &ldquo;established&rdquo; at the current stage).
+          Existing usages being migrated incrementally by the daily maintainer track.
+        </p>
 
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
           <strong>Post-diction</strong> is a sub-status used on some pages (amber inline label, not a separate badge tier): the formula was derived <em>after</em> the experimental result was published — it is consistent with the data but was not a prediction ahead of time. Post-diction sits between Reparametrization (algebraically equivalent to known physics) and Untested (a genuine forward prediction). It counts as evidence of framework coherence, not evidence of predictive power.
@@ -326,8 +347,8 @@ export default function ResearchPhilosophy() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
           <strong>Operational states vs. validation badges:</strong> Terms like &ldquo;Kill Criterion Triggered,&rdquo;
           &ldquo;Withdrawn,&rdquo; and &ldquo;MOND-shared&rdquo; are <em>operational states</em> describing prediction lifecycle
-          and scope &mdash; distinct from the six <Link href="#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>validation badges</Link>{' '}
-          (Validated / Supported / Untested / Speculative / Reparametrization / Failed). A prediction flagged
+          and scope &mdash; distinct from the nine <Link href="#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>validation badges</Link>{' '}
+          (5 MRH-relationship: Active-MRH / Parallel-Paths / Sidelined / Superseded / Audited-Negative; 4 descriptive: Untested / Speculative / Reparametrization / Failed). A prediction flagged
           &ldquo;Kill Criterion Triggered&rdquo; also carries the Failed badge; &ldquo;Withdrawn&rdquo; does not carry any
           badge (it was never adjudicated); &ldquo;MOND-shared&rdquo; means a positive result would confirm both
           MOND and Synchronism and cannot discriminate &mdash; it does not affect the badge until tested.

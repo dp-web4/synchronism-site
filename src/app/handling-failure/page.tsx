@@ -117,7 +117,7 @@ export default function HandlingFailure() {
           {' · '}
           <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-text-muted)' }}>reparametrization</Link>
           {' · '}
-          <Link href="/research-philosophy#validation-badge-taxonomy" style={{ color: 'var(--color-text-muted)' }}>full badge taxonomy</Link>
+          <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-text-muted)' }}>full badge taxonomy</Link>
         </p>
         <div style={{ overflowX: 'auto', marginBottom: '1.5rem' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>

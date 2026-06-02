@@ -16,8 +16,8 @@ export default function Home() {
           What if one equation described reality from quantum to cosmic?
         </h1>
         <p className="hero-subtitle">
-          Synchronism maps presence to coherence using a single function across 80 orders of magnitude — from electrons (10⁻³⁰ kg) to galaxy clusters (10⁵⁰ kg).
-          Some predictions work. Some fail. The one non-degenerate galaxy test was run — and collapsed the framework onto MOND. All are documented honestly.
+          Synchronism maps presence to coherence using a single function — from electrons to galaxies.
+          Some predictions work. Some fail. The one non-degenerate galaxy test collapsed the framework onto MOND; the cluster scale requires a second density parameter the framework doesn&apos;t currently have. All documented honestly.
         </p>
 
         <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
@@ -61,8 +61,12 @@ export default function Home() {
         <div style={{ textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           <p style={{ marginBottom: '0.5rem' }}>
             <strong style={{ color: 'var(--color-accent-violet)' }}>C</strong> = coherence (0 = sparse/independent, 1 = dense/collective) &nbsp;
-            <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> &nbsp;
+            <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03B3;</strong> = sharpness of transition (= 2/&#x221A;N<sub>corr</sub>) &nbsp;
             <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = saturation knee (reference density; not a critical point)
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>
+            <strong>tanh</strong> = S-shaped saturation function: maps any real number to (0,1) — you can skip this and just think &ldquo;smooth S-curve.&rdquo;{' '}
+            <strong>ln</strong> = natural log: compression — 1,000× bigger becomes only ~7 units bigger on this axis.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             The tanh shape is <em>motivated</em> by the sigmoid/compander family (&mu;-law, Hill, logistic) &mdash; a phenomenological choice, not derived. See /parameter-derivations for why &ldquo;mean-field theory&rdquo; is the wrong category: there is no self-consistency loop, no free energy, no critical exponents. The log-density argument is physically motivated. Three parameters are fitted to data.{' '}

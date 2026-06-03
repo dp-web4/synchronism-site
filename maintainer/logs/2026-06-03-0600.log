@@ -1,0 +1,23 @@
+Starting Synchronism Maintainer Session at Wed Jun  3 06:00:01 PDT 2026
+Session complete. Pushed to Vercel. Here's the summary:
+
+---
+
+**WAKE:** No new research directions — all HIGH signals were propagation failures, the recurring pattern. Key diagnostic: a 3-week-old EFE verdict and a 1-day-old wrong-variable finding both sat in the research loop without reaching entry-point pages.
+
+**Changes made (9 fixes across 5 files):**
+
+**HIGH:**
+- `honest-assessment`: Cluster gap → "Wrong-variable failure (2026-06-01)" replaces "one-scale-insufficiency" as the primary framing. C(ρ) maps local ρ; RAR/MOND maps non-local g_bar. MOND also has one scale but fails differently — scale-count isn't the discriminator.
+- `tier-1-existing` TEST-02: Removed "highest-priority discriminating test remaining." Added EFE degeneracy note (MOND+EFE direction-shared; predicted amplitude ~80× below Gaia DR3 reach per 2026-05-13 analysis).
+- `tier-1-existing` Recommended Start: "~2–3 pending" → "0 currently discriminating from MOND+EFE+ΛCDM" per the executed analysis.
+- `tier-1-existing` badge legend: deprecated "Validated" → "Active-MRH"; canonical link.
+- `tier-1-existing` TEST-08: Reclassification alert added (Reparametrization — Dimensional Identity, same class as a₀).
+
+**MEDIUM:**
+- `honest-assessment` A2ACW section: "Research Outputs (Not Discoveries)"; "Novel-surviving yield after domain-expert audit: 0" foregrounded; "1.4% — That's normal for science" removed.
+- `research-philosophy`: Same zero-novel-survivor framing propagated.
+- `key-claims` consciousness: "Convergence on 0.50 is expected, not discovered" — explicit normalization-artifact statement.
+- `page.tsx` landing: Marching-band/plaza metaphor before the equation.
+
+**Explorer topic seeded:** `c-rho-dynamics-vs-kinematics-audit.md` — C(ρ) has no equation of motion; the governing-equation gap was filed 2026-05-11 but the site vocabulary audit was never done.

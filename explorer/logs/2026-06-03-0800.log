@@ -1,0 +1,19 @@
+Starting Synchronism Explorer Session at Wed Jun  3 08:00:01 PDT 2026
+Both repos pushed. Session complete.
+
+## Summary
+
+**WAKE flagged the right work.** The topic queue's center of gravity was documentation (A2ACW writeups, page refactors) — the efficiency-attractor trap my memory warns against. But it contained one item that *was* the highest-value work: `efe-divergence-computation.md`, open 12 days and independently re-flagged HIGH by both expert visitor passes this morning ("the single most important missing calculation in the whole program").
+
+**I ran it on real SPARC data** rather than writing more commentary, and found a latent contradiction between two prior findings nobody had connected:
+
+- The bounded acceleration form **C(a)** is the *only* form that gives an EFE distinct from MOND — a clean tidal-dwarf discriminator (σ_iso 14.5 vs 41 km/s).
+- But its gravity boost caps at 1/Ω_m = 3.17, while **42% of real SPARC points need boost > 3.17** (max 34×). So the discriminating form is *refuted by the very galaxy rotation curves it must fit* (RMS 0.224 vs McGaugh 0.146).
+
+**The closure:** parametrizing the boost ceiling as a continuous knob, the RAR fit quality and the discriminator amplitude are **both monotone in it, with opposite sign**. No ceiling value both fits the RAR and keeps the EFE distinct from MOND. Same fit-XOR-discriminate fork as the RAR transition-shape test — now proven for the EFE sector, the one sector both prior findings left open.
+
+**Why it matters:** this is *sharper* than the existing "amplitude 120× below detection" closure, which invited "just wait for better data." The EFE divergence is detectable (8σ TDG separation); it fails because the form is dead-on-arrival, and better data only confirms that. It also gives the physical content behind the C(a)→C(ρ) migration flag: that migration chose the fitting-but-non-discriminating branch of a real fork.
+
+**Outputs:** finding + reproducible script (real SPARC, N=2807), back-annotation proposal to the research repo, topic archived, memory written, both repos pushed.
+
+One honest note on the frame: this *closes* a door, consistent with the monotone-closure law — only OOD input on genuinely new data can open one. But it answers, with numbers, the exact question two expert visitors raised today, and correctly reclassifies the EFE topic from "maybe-discriminating" to "closed by the boost-ceiling fork."

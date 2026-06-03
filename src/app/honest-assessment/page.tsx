@@ -411,12 +411,15 @@ export default function HonestAssessment() {
               The viscosity interpretation predicts the wrong direction.
             </p>
             <div style={{ background: 'rgba(167,139,250,0.06)', border: '1px solid rgba(167,139,250,0.2)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
-              <strong style={{ color: 'var(--color-accent-violet)' }}>One-scale-insufficiency theorem (2026-05-28):</strong>{' '}
-              C(&#x03C1;) has exactly one free density scale (&#x03C1;<sub>crit</sub>). Multi-scale dynamics — galaxies (~10<sup>22</sup>&nbsp;kg/m&sup3;) vs clusters (~10<sup>19</sup>&nbsp;kg/m&sup3;) — require at least two independent scale parameters to fit independently.
+              <strong style={{ color: 'var(--color-accent-violet)' }}>Wrong-variable failure (2026-06-01):</strong>{' '}
+              C(&#x03C1;) is a function of <em>local density</em> &#x03C1;. But the RAR/MOND relation it mimics in galaxies is a function of g<sub>bar</sub> — the <em>enclosed-mass acceleration</em>, a non-local quantity. A local density map cannot reproduce an acceleration-space relation across systems whose mass distributions differ in shape: disk galaxies happen to permit it via V<sub>flat</sub>, clusters do not. This is the primary structural reason C(&#x03C1;) fails at cluster scale — not the number of free scales.
+              <br /><br />
+              <strong>Secondary observation (scale count):</strong>{' '}
+              C(&#x03C1;) has exactly one free density scale (&#x03C1;<sub>crit</sub>).
               Four natural ansätze were tested on the Coma cluster: A1/A4 overshoot by 10<sup>4</sup>; A2 collapses to Newtonian; A3 is structurally impossible (C &#x2208; [0,1) bounds at ≤2 vs observed velocity dispersion requiring ~4.6).
-              Required &#x03C1;<sub>crit,cluster</sub> is 10<sup>&minus;4</sup> to 10<sup>&minus;6</sup> &times; the galaxy value &mdash; incompatible with universality.
-              This is the same structural reason MOND fails at clusters (one acceleration scale a&#x2080; is insufficient for both regimes — Verlinde needed two scales and still underperforms at clusters).
-              <strong>This is a finding, not a calibration miss:</strong> a one-parameter density map is structurally insufficient for multi-scale gravitational dynamics.
+              Required &#x03C1;<sub>crit,cluster</sub> is 10<sup>&minus;4</sup> to 10<sup>&minus;6</sup> &times; the galaxy value — incompatible with universality.
+              Note: MOND also has one acceleration scale (a<sub>0</sub>) and fails at clusters by a residual factor of ~2 — so scale-count alone is not the discriminator between C(&#x03C1;) and MOND at cluster scale.
+              <strong>This is a finding, not a calibration miss.</strong>
             </div>
           </div>
 
@@ -515,10 +518,15 @@ export default function HonestAssessment() {
 
       {/* 47 Contributions */}
       <section className="section content-width">
-        <h2>The 47 Genuine Contributions</h2>
+        <h2>Research Outputs (Not Discoveries)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Session #615 (final accounting) inventoried all genuine contributions across ~3,308 sessions.
-          Discovery rate: 1.4% &mdash; 47 contributions out of ~3,308 sessions. That&apos;s normal for science.
+          Session #615 (final accounting) inventoried all outputs across ~3,308 sessions:
+          47 research contributions at a 1.4% session yield.
+          <strong> Novel-surviving yield after domain-expert audit: 0.</strong>{' '}
+          Every output that a domain expert examined resolved as a reparametrization of known physics,
+          an internal consistency finding, or a null result. The 47 outputs are genuine —
+          well-posed questions, characterized failures, methodology results — but none constitutes a
+          confirmed novel prediction.
         </p>
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem' }}>
           <li>14 chemistry contributions (0.52% rate across 2,671 sessions)</li>
@@ -556,7 +564,7 @@ export default function HonestAssessment() {
           <li><strong>Self-correction accelerates with experience</strong> &mdash; error recognition delay: 373 sessions (early) &rarr; 1 session (late)</li>
           <li><strong>Discovery rate increases with focus</strong> &mdash; chemistry 0.52% &rarr; ALFALFA/CDM 71.4%</li>
           <li><strong>Honest negative results are valuable</strong> &mdash; OQ007 fractal bridge: 36/36 tests, clean definitive closure</li>
-          <li><strong>A 1.4% internal-consistency-survival rate is normal for in-distribution AI debate</strong> &mdash; out-of-distribution evaluation by domain experts is a separate step</li>
+          <li><strong>In-distribution self-critique has a ceiling</strong> &mdash; A2ACW filters errors the corpus already knows; 1.4% session yield / 0 novel survivors is the result. Out-of-distribution novelty requires out-of-distribution input (new data, different training set).</li>
         </ul>
       </section>
 

@@ -216,10 +216,11 @@ export default function ResearchPhilosophy() {
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           3,308 A2ACW sessions have been run across the research archive. Of these, approximately
-          47 produced outcomes in category (a) &mdash; a 1.4% novel-claim survival rate. The rest
-          are on record as reparametrizations or failures. Human oversight reviews borderline cases
-          and maintains the validation badge taxonomy. Every badge is the product of at least one
-          full A2ACW challenge cycle.
+          47 produced internal-consistency survivors &mdash; a 1.4% session yield. <strong>Novel-surviving
+          yield after domain-expert audit: 0.</strong> All 47 resolved as reparametrizations of known physics,
+          internal consistency findings, or null results when examined by physicists outside the training
+          distribution. Human oversight reviews borderline cases and maintains the validation badge taxonomy.
+          Every badge is the product of at least one full A2ACW challenge cycle.
         </p>
 
         <div className="card" style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.3)', marginBottom: '1.5rem' }}>

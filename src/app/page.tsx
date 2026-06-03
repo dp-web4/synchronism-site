@@ -41,11 +41,14 @@ export default function Home() {
       {/* Plain-language framing first */}
       <section style={{ marginBottom: '1.5rem', maxWidth: '65ch' }}>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '1rem', lineHeight: 1.7 }}>
-          <strong>Coherence</strong> (in Synchronism) measures how density-driven a system&rsquo;s behavior is.
-          When matter is sparse and independent (like stars in a galaxy), C is low.
-          When matter is extremely dense and tightly packed (like inside a neutron star), C is high.
-          <em>Note: this is not quantum phase coherence</em> — superconductors (large N<sub>corr</sub>, small &gamma;) are low-C in this framework.
-          Synchronism asks: can one equation capture this transition across all of physics?
+          A marching band moving in lockstep: high coherence.
+          A crowd wandering in a plaza: low coherence.
+          Synchronism&rsquo;s central idea is that one number — <strong>C</strong>, from 0 to 1 — captures
+          this &ldquo;how collectively does this system behave?&rdquo; question across all of physics.
+          Sparse, independent systems (stars in a galaxy) land near 0.
+          Dense, tightly-coupled systems (inside a neutron star) land near 1.
+          The equation below is how that number is computed.
+          <em> Note: &ldquo;coherence&rdquo; here is not quantum phase coherence</em> — superconductors are low-C in this framework.
         </p>
       </section>
 

@@ -37,7 +37,7 @@ const tests: Test[] = [
     time: '6 months',
     prediction: 'Wide binary anomaly depends on local stellar density: systems in higher-density environments should show stronger coherence-driven deviation from Newtonian dynamics.',
     kill: 'Anomaly independent of local density; or underlying wide-binary anomaly fails to exist under improved quality cuts',
-    alert: 'Substrate contingency (2026-05-17): this test is conditional on the wide-binary anomaly existing in the first place. As of 2026, the anomaly\'s existence is actively disputed. Chae (2023) detected the anomaly in Gaia DR3; Banik et al. (2024) and Pittordis & Sutherland (2023) found no significant anomaly under improved quality cuts and proper 3D velocity priors on the same DR3 data; Saurabh et al. (2024) also finds no detection with stricter contamination filters. The framework\'s prediction "anomaly varies with local density" becomes unfalsifiable if the underlying anomaly does not robustly exist. TEST-02 is the highest-priority discriminating test remaining — but this dispute must be resolved in the literature before TEST-02 can be executed meaningfully.',
+    alert: 'Substrate contingency (2026-05-17): this test is conditional on the wide-binary anomaly existing in the first place. As of 2026, the anomaly\'s existence is actively disputed. Chae (2023) detected the anomaly in Gaia DR3; Banik et al. (2024) and Pittordis & Sutherland (2023) found no significant anomaly under improved quality cuts and proper 3D velocity priors on the same DR3 data; Saurabh et al. (2024) also finds no detection with stricter contamination filters. The framework\'s prediction "anomaly varies with local density" becomes unfalsifiable if the underlying anomaly does not robustly exist. EFE degeneracy (2026-05-13): MOND\'s External Field Effect (Bekenstein & Milgrom 1984; AQUAL/QUMOND) also predicts environment-dependent wide-binary dynamics — so the direction of TEST-02 is shared with MOND+EFE, not novel to Synchronism. The 2026-05-13 analysis found the Synchronism prediction amplitude ~80× below Gaia DR3 reach at the derived ρ_crit. Until the MOND+EFE divergence is computed at some parameter value, TEST-02 cannot discriminate Synchronism from MOND+EFE.',
   },
   {
     id: 'TEST-03',
@@ -109,6 +109,7 @@ const tests: Test[] = [
     time: '1 month',
     prediction: 'Σ₀ emerges from first principles with <5% error',
     kill: 'Derived Σ₀ differs from observed by >15%',
+    alert: 'RECLASSIFIED (see /honest-assessment): Σ₀ = cH₀/(4π²G) is the unique surface-density scale buildable from the cosmological constants c, H₀, G — the same dimensional identity class as a₀ = cH₀/(2π). Any framework that imports these constants recovers the same relation. The 12% agreement with Freeman\'s observed value (124 M☉/pc²) is consistent with dimensional analysis, not a framework-specific prediction. Classified: Reparametrization — Dimensional Identity.',
   },
   {
     id: 'TEST-09',
@@ -167,7 +168,7 @@ export default function Tier1Existing() {
             Status badge definitions
           </summary>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-            <strong>Validated</strong><span>Quantitative match with independent data</span>
+            <strong>Active-MRH</strong><span>In active research focus; being extended or revised</span>
             <strong>Reparametrization</strong><span>Equivalent to existing physics (MOND, textbook QM) in different notation</span>
             <strong>Untested</strong><span>Prediction exists, no data yet</span>
             <strong>Speculative</strong><span>Conceptual proposal without quantitative test</span>
@@ -177,7 +178,7 @@ export default function Tier1Existing() {
             <strong>Withdrawn</strong><span>Operational state: test retracted before execution due to derivation failure</span>
           </div>
           <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
-            Full definitions + operational states: <Link href="/research-philosophy" style={{ color: 'var(--color-accent-blue)' }}>Research Philosophy</Link>
+            Full canonical definitions: <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment — Badge Definitions</Link>
           </p>
         </details>
 
@@ -260,8 +261,7 @@ export default function Tier1Existing() {
             Synchronism from MOND.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-            Tests 09 and 10 are MOND-shared predictions. The effective independent novel test count
-            after TEST-04a disfavor (~2σ), TEST-04 withdrawal, and RAR shape closure is approximately 2–3 (TEST-02, TEST-01/05 combined — pending EFE divergence computation).
+            Tests 09 and 10 are MOND-shared predictions. The 2026-05-13 analysis found <strong>0 currently discriminating tests from MOND+EFE+ΛCDM</strong>: TEST-01/05 are MOND-EFE-shared in direction with amplitudes ~120× below SPARC reach; TEST-02 has a structurally distinct direction but predicted amplitude ~80× below Gaia DR3 reach. Until the MOND+EFE divergence is computed, the effective discriminating test count is 0.
           </p>
         </div>
 

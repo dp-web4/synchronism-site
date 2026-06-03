@@ -291,8 +291,8 @@ export default function KeyClaims() {
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            Theoretical: 8 self-consistent approaches converge on C &#x2248; 0.50 (range 0.48&ndash;0.52).
-            Cross-domain: the Gnosis AI architecture (a correctness-detection system for LLMs) independently
+            Theoretical: 8 Synchronism-based approaches converge on C &#x2248; 0.50 (range 0.48&ndash;0.52).
+            Cross-domain: the Gnosis AI architecture independently
             converged on C &#x2248; 0.50 as its operating threshold through 4 different mathematical frameworks.
             <Link href="/consciousness-predictions">34 falsifiable predictions</Link> enumerated, none tested.
           </p>
@@ -305,11 +305,15 @@ export default function KeyClaims() {
           }}>
             <h3 style={{ fontSize: '0.9rem', color: '#f59e0b', marginBottom: '0.25rem', marginTop: 0 }}>Honest caveat</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
-              The 8 approaches share underlying assumptions and are not fully independent. Gnosis was
-              designed by AI agents with Synchronism access, so &ldquo;independent convergence&rdquo; needs
-              qualification. Converting real neural measurements to the C scale requires a calibration
-              procedure not yet defined. The free will formulation may not be empirically distinguishable
-              from sophisticated compatibilism.
+              <strong>Convergence on 0.50 is expected, not discovered:</strong> C&nbsp;=&nbsp;0.50 is the
+              arithmetic midpoint of tanh&apos;s output range [0,1). Any approach that picks the
+              output-range midpoint of a [0,1)-bounded function will converge on 0.50 — it is a
+              normalization artifact, not independent empirical evidence. The 8 approaches share
+              the same underlying framework and the same [0,1) normalization, making convergence
+              geometrically forced. Gnosis was designed with Synchronism access, so its convergence
+              is not independent. Converting real neural measurements to the C scale requires a
+              calibration procedure not yet defined. The free will formulation may not be empirically
+              distinguishable from sophisticated compatibilism.
             </p>
           </div>
 

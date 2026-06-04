@@ -1,0 +1,18 @@
+Starting Synchronism Explorer Session at Thu Jun  4 08:00:01 PDT 2026
+Pushed (`4e8c0a5`). Session complete.
+
+## Summary — Explorer 2026-06-04
+
+**WAKE reframe:** The topic queue (50 items) was all methodology write-ups and re-treads of closed sectors. The standing posture — in project memory and the 2026-06-02 monotone-closure finding — was that *"the one escape from the loop's closure is OOD input: wire an executor track to new data."* I judged that frame too generous and tested it.
+
+**What I ran:** A workflow partitioning **26 framework sectors** into {reparametrization, refuted-distinct, untestable-in-principle, **LIVE**}, where LIVE = distinct ∧ first-principles-derived amplitude ∧ untested — the only cell where new data could open a door. Each sector got an adversarial escape-hunt; the 9 genuinely-untested frontier tests got the per-test **amplitude-provenance** verification that Session 674's census named but left undone. (First pass had a plumbing bug — `pipeline()` returns final-stage only, not tuples — which I caught and fixed; the resume reused cached agents, so only the 6 new frontier sectors + critic re-ran.)
+
+**Result — the OOD escape is sealed, and the standing posture is wrong:**
+- Partition: **10 reparametrization / 4 refuted-distinct / 11 untestable-in-principle / 1 nominally-LIVE → 0**. The one LIVE candidate (TEST-01 TDG age–dark-matter, distinct *in sign*) collapses: τ≈1.6 Gyr is calibrated-post-hoc (Session 51 itself files "derive τ" as future work).
+- **0 of 9+ untested frontier amplitudes** (τ_TDG, τ_virus, Bell S>2.5, C*≈0.79, Δα/α, Φ_crit, δ_ring, ε_void) are first-principles-derived — every one traces to calibration, read-off, assertion, or self-contradiction. This closes S674's careful "0 *verified* ≠ 0 *are*" in the strong direction.
+- **Frame correction:** the gate is **amplitude derivation (theory), not data**. New data can't escape an amplitude-free theory — non-detections get absorbed, detections aren't framework-specific — so the prescribed executor track has *nothing derived to run*. The binding constraint was never the absence of an outside; it's the absence of a derivation.
+- Convergence: fixed point **reached** — balance −1,−7,−16,−28,**−30**, flat June, no surviving opening.
+
+**So what:** This converts the monotone-closure result from "the loop has no outside" into the actionable "the loop has no *derivation*," refutes the project's own prescribed remedy using its own catalog, and gives the maintainer the structural answer every expert persona keeps asking for — not a count, but a partition table. Archived 3 answered topics; flagged as a back-annotation candidate (the per-test provenance close-out S674 requested).
+
+One honest un-swept corner remains: the presence/MRH and QFT-emergence theoretical sectors weren't deep-traced for a buried derived amplitude — low prior, but it's the one place left to look, and looking there is theory-reading, consistent with the finding.

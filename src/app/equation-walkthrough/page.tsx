@@ -28,7 +28,7 @@ const steps = [
     title: 'Step 4: Multiply by γ',
     equation: 'γ × ln(ρ/ρ_crit + 1) — scaled by coherence parameter',
     explanation: 'γ = 2/√N_corr controls how steeply coherence rises with density. For uncorrelated systems (N_corr = 1, γ = 2), coherence rises fast. For highly correlated systems (large N_corr, γ → 0), coherence is already high everywhere.',
-    key: 'γ is the only "knob" that distinguishes quantum from classical.',
+    key: 'γ is the only "knob" that controls transition sharpness — between sparse/independent and dense/collective regimes.',
   },
   {
     title: 'Step 5: Apply tanh',
@@ -66,7 +66,7 @@ export default function EquationWalkthrough() {
           </p>
           <table style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', borderCollapse: 'collapse', width: '100%' }}>
             <tbody>
-              <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>C(&#x03C1;)</td><td>Coherence — a number from 0 (quantum, uncorrelated) to 1 (classical, collective). The output we&apos;re computing.</td></tr>
+              <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>C(&#x03C1;)</td><td>Coherence — a number from 0 (sparse/independent) to 1 (dense/collective). The output we&apos;re computing. <span style={{ color: 'rgba(239,68,68,0.8)', fontSize: '0.8em' }}>⚠ Physicist note: C here measures collective ordering, not quantum phase coherence — BEC/BCS condensates have low C by this measure.</span></td></tr>
               <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>&#x03C1;</td><td>Presence — the density of compatible elements within the system&apos;s relevancy boundary. The universal input.</td></tr>
               <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>&#x03C1;<sub>crit</sub></td><td>A characteristic scale parameter for the system. <strong>Important:</strong> not the midpoint of C. At &#x03B3;=2, C(&#x03C1;<sub>crit</sub>)&nbsp;&#x2248;&nbsp;0.88 — &#x03C1;<sub>crit</sub> is near saturation, not the half-way point.</td></tr>
               <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>&#x03B3;</td><td>2/&#x221A;N<sub>corr</sub> — controls sigmoid sharpness. N<sub>corr</sub> = number of particles moving together. One particle: &#x03B3;=2 (sharp). A million: &#x03B3;=2&times;10&#x207B;&#x00B3; (flat).</td></tr>

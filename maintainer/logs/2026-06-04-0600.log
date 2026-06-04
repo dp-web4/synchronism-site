@@ -1,0 +1,58 @@
+Starting Synchronism Maintainer Session at Thu Jun  4 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-06-04
+
+## WAKE Phase
+
+Does today's visitor feedback reveal something about the RESEARCH direction, not just the site?
+
+**Answer: No new research directions. All P0/P1 items are propagation failures.**
+
+Today's specific instances:
+- **EFE closure (P4 researcher, HIGH)**: `/galaxy-rotation` EFE section still says "quantitative divergence not yet computed" for MOND+EFE vs Synchronism on wide binaries. This WAS computed on 2026-06-03 (boost ceiling ~3.17; ~42% of RAR points above ceiling; RAR-fit and EFE-distinctness trade off monotonically → closed). A referee following this thread is pointed at a closed door. Highest-value propagation failure.
+- **Coherence definition (P2 + P3, HIGH)**: "0 = quantum / 1 = classical" framing still on `/equation-walkthrough` and superconductor as "extremely high coherence" on `/first-encounter`. Both contradict the Glossary and the corrected landing page.
+- **a₀ overclaim (P3 + P4, HIGH)**: `/galaxy-rotation` leads with "not a free parameter — emerges from cosmology" while canonical pages call it a dimensional coincidence.
+- **Landau vocabulary (P3 + P4, MEDIUM)**: `/parameter-derivations` still says "Landau-universality family" for tanh while landing page and Coherence Explorer reject this.
+- **Badge legend drift (P2, MEDIUM)**: Landing page legend lists deprecated "Validated" and undefined "Withdrawn."
+
+Research-quality signal from P4 researcher: The "shared weights = single model arguing with itself" A2ACW critique. Already covered by `a2acwai-convergence-vs-independence.md` — not new.
+
+## Triage
+
+### P0 (false or actively misleading statements)
+1. `/galaxy-rotation` EFE: "not yet computed" → 2026-06-03 closure result (red box, specific numbers)
+2. `/equation-walkthrough`: "0 = quantum / 1 = classical" → "0 = sparse/independent / 1 = dense/collective" + physicist note
+3. `/first-encounter` superconductor: "extremely high coherence (quantum)" → crystal lattice (correct) + BEC/BCS inversion note
+4. `/galaxy-rotation` a₀ framing: demote from "not a free parameter / emerges from cosmology" to "40-year-old dimensional coincidence" with explicit 10% miss
+
+### P1 (category errors in expert-facing copy)
+5. `/parameter-derivations` tanh: "Landau-universality family" → "sigmoid/compander family"
+6. `/coherence-explorer` "steepest at γ≈1": replace with regime-boundary framing, state where slope actually peaks
+7. Landing page badge legend: remove deprecated "Validated" and undefined "Withdrawn"
+
+### P2 (onboarding)
+8. Explorer topic seeded: `casual-reader-value-proposition-design.md`
+
+## Changes Made (Site)
+
+All P0 and P1 fixes applied:
+
+- `/galaxy-rotation` EFE section: amber "not yet computed" box → red "CLOSED (2026-06-03)" box with full closure: bounded C(a) caps boost at ~3.17; ~42% of SPARC RAR points need more (up to ~34×); RMS 0.224 vs McGaugh 0.146; RAR-fit and EFE-distinctness trade off monotonically → no ceiling fits both simultaneously. Same fork as RAR transition shape.
+- `/galaxy-rotation` a₀ paragraph: lead clause demoted from "not a free parameter / emerges from cosmology" → "40-year-old dimensional coincidence (Milgrom 1983)"; explicit 10% miss (1.08 vs 1.2×10⁻¹⁰ m/s²); links to honest-assessment + parameter-derivations for canonical framing.
+- `/equation-walkthrough` variables table: C(ρ) definition corrected "0 = quantum / 1 = classical" → "0 = sparse/independent / 1 = dense/collective" with physicist note (BEC/BCS = low C); Step 4 key updated to remove "quantum from classical" framing.
+- `/first-encounter` coherence exemplar: superconductor → crystal lattice (correct high-C system; dense/collective) + physicist note about BEC/BCS inversion.
+- `/parameter-derivations` tanh card + banner + intro: "Landau-universality family" and "mean-field theory" motivation removed; replaced with "sigmoid/compander family (μ-law, Hill, logistic, erf)" throughout; note added that compander with argument ≥0 has no critical point or exponents.
+- `/coherence-explorer` steepness claim: "At γ≈1, the transition is steepest" → "γ≈1 is the regime boundary where chemistry and biology happen — not a steepness extremum"; slope analysis noted (steepest at ρ=0 linear, peak grows as γ→0 log).
+- Landing page badge legend: removed deprecated "Validated" and undefined "Withdrawn"; canonical set now "Reparametrization · Speculative · Untested · Failed" with explanatory note.
+
+## Back-Annotations (Research Repo)
+
+None this session — all fixes are propagation of existing research findings.
+
+## Topics Seeded for Explorer
+
+- `casual-reader-value-proposition-design.md` (MEDIUM) — What does this site honestly offer a casual reader, and where/when should that be made explicit? Pass 1 persona's "why spend time here given null results?" has a real answer (methodology contribution, interesting questions, honest failure as science) but the answer never arrives at the right moment.
+
+## So What?
+
+The propagation chain failure is the site's most persistent documented pattern. WAKE today caught five propagation failures, including the EFE closure (highest leverage: any researcher following that thread now gets the correct answer). The structural pattern: the multi-hop update (explorer finding → all affected entry pages) is reliably skipped by the efficiency attractor. The WAKE propagation check formalized on 2026-06-03 is working — it's catching the misses. Continuing to run it each session is the compounding fix.

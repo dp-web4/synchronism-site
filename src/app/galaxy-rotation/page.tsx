@@ -73,18 +73,17 @@ export default function GalaxyRotation() {
           g<sub>obs</sub> = g<sub>bar</sub> / (1 &minus; e<sup>&minus;&#x221A;(g<sub>bar</sub>/a&#x2080;)</sup>)
         </EquationDisplay>
         <p>
-          In Synchronism, the acceleration scale a&#x2080; is not a free parameter &mdash; it{' '}
-          <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>emerges from cosmology</Link>{' '}
-          as cH&#x2080;/(2&#x03C0;). The coherence function provides the physical mechanism: at
-          accelerations below a&#x2080;, the system crosses a coherence threshold and gravitational
-          dynamics change.
-          {' '}<span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-            Note: the identification a&#x2080; &#x2248; cH&#x2080;/(2&#x03C0;) was first noted by Milgrom (1983)
-            and has been discussed by Famaey &amp; McGaugh (2012), McCulloch, Verlinde, and Smolin.
-            This is a 40-year-old MOND observation.
-            Synchronism&apos;s contribution is the coherence-function mechanism &mdash; not the identification itself.
-            See{' '}<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}for prior-art acknowledgment.
-          </span>
+          In Synchronism, the acceleration scale a&#x2080; &#x2248; cH&#x2080;/(2&#x03C0;) is a
+          <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}> 40-year-old dimensional coincidence</Link>{' '}
+          (Milgrom 1983), discussed by Famaey &amp; McGaugh (2012), McCulloch, Verlinde, and Smolin
+          under different theoretical umbrellas. The 2&#x03C0; prefactor is chosen to match the
+          observed value; cH&#x2080;/(2&#x03C0;) &#x2248; 1.08&#x00D7;10&#x207B;&#xB9;&#x2070; m/s&#x00B2;
+          undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;10%.
+          Synchronism&apos;s contribution is the coherence-function mechanism that provides a
+          <em>reason</em> for this scale &mdash; not the identification itself.
+          See{' '}<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
+          and{' '}<Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
+          for prior-art acknowledgment and the canonical reparametrization framing.
         </p>
 
         <h2>Key Results Summary</h2>
@@ -239,17 +238,22 @@ export default function GalaxyRotation() {
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>TEST-02</Link>{' '}
           for the kill criterion.
         </p>
-        <div style={{ background: 'rgba(245, 158, 11, 0.07)', border: '1px solid rgba(245, 158, 11, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.5rem', marginBottom: '0.5rem' }}>
-          <strong style={{ color: '#f59e0b' }}>MOND+EFE caveat:</strong>{' '}
+        <div style={{ background: 'rgba(239, 68, 68, 0.07)', border: '1px solid rgba(239, 68, 68, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.5rem', marginBottom: '0.5rem' }}>
+          <strong style={{ color: '#ef4444' }}>MOND+EFE / wide-binary avenue: CLOSED (2026-06-03)</strong>{' '}
           MOND <em>with the External Field Effect</em> (EFE, Bekenstein-Milgrom 1984) also predicts
-          environment-dependent wide-binary dynamics — the galactic external field suppresses the
-          MOND anomaly in low-density environments and enhances it in high-density ones.
-          The qualitative signature (anomaly varies with local density) is shared with Synchronism.
-          The quantitative divergence between the two predictions has not yet been computed.
-          Until that calculation is done, the wide-binary density stratification cannot discriminate
+          environment-dependent wide-binary dynamics. The quantitative divergence was computed
+          on 2026-06-03: a bounded C(a) is the only form whose EFE prediction differs from MOND
+          (TDG velocity dispersion σ ≈ 14.5 vs 41 km/s in Tidal Dwarf Galaxies), but that same
+          boundedness caps the acceleration boost at ≈3.17 while ~42% of SPARC RAR data points
+          require boosts above that (up to ~34×), giving RMS 0.224 vs McGaugh&apos;s 0.146.
+          The boost ceiling and RAR fit trade off monotonically with opposite sign — no ceiling
+          simultaneously fits the RAR and stays distinct from MOND+EFE.
+          This is the same fork as the RAR transition-shape test: the one non-degenerate
+          form is refuted by the data. Wide-binary density stratification cannot discriminate
           Synchronism from MOND+EFE. See{' '}
-          <Link href="/wide-binaries" style={{ color: '#f59e0b' }}>TEST-02 substrate note</Link>{' '}
-          for the full EFE discussion.
+          <Link href="/wide-binaries" style={{ color: '#ef4444' }}>TEST-02</Link>{' '}
+          and <Link href="/honest-assessment" style={{ color: '#ef4444' }}>Honest Assessment</Link>{' '}
+          for the full picture.
         </div>
 
         <h2>GW170817 and the Speed of Gravity</h2>

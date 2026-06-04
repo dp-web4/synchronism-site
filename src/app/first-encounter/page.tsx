@@ -82,8 +82,12 @@ export default function FirstEncounter() {
         <p style={{ margin: 0, color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>
           <strong style={{ color: 'var(--color-accent-blue)' }}>Coherence</strong> is how collectively a group of things behaves.
           A marching band moving in lockstep: high coherence. A crowd wandering in a plaza: low coherence.
-          Electrons in a superconductor: extremely high coherence (quantum). Stars scattered across a galaxy: low coherence (classical).
+          Dense matter in a crystal lattice — every atom locked in step: high coherence.
+          Sparse gas drifting between stars: low coherence.
           Synchronism asks whether <em>one equation</em> can quantify this transition across all of physics.
+          <span style={{ display: 'block', marginTop: '0.5rem', fontSize: '0.8em', color: 'rgba(239,68,68,0.8)' }}>
+            ⚠ Physicist note: BEC/superconductors score <em>low</em> on this measure despite being quantum-coherent — because coherence here means collective ordering (large N<sub>corr</sub>), not quantum phase coherence.
+          </span>
         </p>
       </div>
 

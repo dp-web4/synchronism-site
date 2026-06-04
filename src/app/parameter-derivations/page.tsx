@@ -18,14 +18,13 @@ export default function ParameterDerivations() {
           factor 2 is not rigorously derived; CLT is invoked for correlated DOF where CLT doesn&apos;t apply).
           ρ<sub>crit</sub> = A·V<sub>flat</sub>² with A ≈ 0.029 is <strong>calibrated</strong> to the Jeans criterion — V<sub>flat</sub> is the input.
           The scaling constants are dimensional analyses with 3–12% errors that may reflect implicit calibration
-          rather than predictive accuracy. The functional form tanh is <strong>motivated</strong> by Landau-class
-          mean-field theory, not uniquely derived. A more accurate title: <em>Parameter Calibration &amp; Honest Ansätze</em>.
+          rather than predictive accuracy. The functional form tanh is <strong>motivated</strong> by analogy with the sigmoid/compander family (μ-law, Hill, logistic), not uniquely derived. A more accurate title: <em>Parameter Calibration &amp; Honest Ansätze</em>.
           Read this page before concluding the equation is derived.
         </p>
       </div>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '2rem', maxWidth: '65ch' }}>
         The coherence function has two kinds of parameters: the <strong>functional form</strong> (tanh,
-        &#x03B3; = 2/&#x221A;N<sub>corr</sub>) which is motivated by mean-field theory, and
+        &#x03B3; = 2/&#x221A;N<sub>corr</sub>) which is motivated by the sigmoid/compander family (μ-law, Hill, logistic), and
         the <strong>scaling constants</strong> (A, a&#x2080;, &#x03A3;&#x2080;, R&#x2080;) which are
         calibrated to observational anchors with 3&ndash;12% errors.
         Whether those errors reflect approximation limits or implicit calibration is an open question.
@@ -74,11 +73,14 @@ export default function ParameterDerivations() {
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #66</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              tanh is a <strong>phenomenological choice</strong> from the Landau-universality family of
-              sigmoid functions. Other sigmoids (logistic, erf) share the same qualitative properties
+              tanh is a <strong>phenomenological choice</strong> from the sigmoid/compander family
+              (μ-law, Hill, logistic, erf). Other sigmoids share the same qualitative properties
               and would produce indistinguishable physics near γ ≈ 1. The fractal coherence bridge
               failure (0/7 boundaries on 36 tests) is consistent with tanh being a generic sigmoid
-              here, not a uniquely derived form.
+              here, not a uniquely derived form. <strong>Not Landau:</strong> a saturating compander
+              with argument ≥ 0 has no critical point, no diverging correlation length, and no
+              critical exponents — nothing to put it in a universality class. The Landau framing
+              was retired at the landing page (compander family); this page now matches.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               <strong>Note on the Ising analogy:</strong> tanh arises in mean-field Ising models as

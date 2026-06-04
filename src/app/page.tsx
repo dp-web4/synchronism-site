@@ -32,6 +32,7 @@ export default function Home() {
           </Link>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem' }}>
+          <strong>No physics background?</strong> Try the <Link href="/learning-paths" style={{ color: 'var(--color-accent-green, #10b981)' }}>Beginner learning path</Link> or jump straight to the <Link href="/galaxy-curve-plotter" style={{ color: 'var(--color-accent-green, #10b981)' }}>Galaxy Curve Plotter</Link>.{' '}
           <strong>New here?</strong> Start with <Link href="/first-encounter" style={{ color: 'var(--color-accent-blue)' }}>First Encounter</Link>.{' '}
           <strong>Physicist?</strong> Jump to <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link> or <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.{' '}
           <strong>Researcher?</strong> <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 tests</Link> are the entry point.
@@ -216,8 +217,9 @@ export default function Home() {
             </div>
             <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
               Badges used below:{' '}
-              <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Validated · Reparametrization · Speculative · Untested · Failed · Withdrawn</Link>
+              <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization · Speculative · Untested · Failed</Link>
               {' '}— definitions on the <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment page</Link>.
+              {' '}<span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em' }}>("Validated" is deprecated; "Withdrawn" is an operational state, not a badge.)</span>
             </div>
           </section>
 

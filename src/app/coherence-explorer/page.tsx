@@ -79,7 +79,9 @@ export default function CoherenceExplorer() {
           </p>
           <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem' }}>
             <strong>What to notice:</strong> Move &#x03B3; from 2.0 downward and watch the curve flatten.
-            At &#x03B3; &#x2248; 1, the transition is steepest &mdash; this is where chemistry and biology happen.
+            &#x03B3; &#x2248; 1 is the <em>regime boundary</em> where chemistry and biology happen &mdash;
+            not a steepness extremum. (The slope is actually largest at &#x03C1; = 0 on a linear
+            &#x03C1; axis; on a log axis, the peak slope grows as &#x03B3; decreases.)
             The slider goes down to &#x03B3; = 0.01: BCS superconductors sit near &#x03B3; &#x2248; 0.02 and
             BEC near &#x03B3; &#x2248; 0.002 (use the{' '}
             <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}

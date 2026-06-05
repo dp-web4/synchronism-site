@@ -327,9 +327,12 @@ export default function HonestAssessment() {
               Tension: <strong>2.4σ</strong>. Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) triggered.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              <strong>Two aspects of the honest verdict:</strong> (1) <em>Post-hoc origin</em> — Session 107 was committed
-              2025-12-10 after DESI DR1 was published April 2024; σ₈ calibrated to lensing S₈ tension, then propagated to DESI.
-              No prospective prediction registered. (2) <em>Disfavored ~2σ, wrong direction</em>
+              <strong>Two aspects of the honest verdict:</strong> (1) <em>Post-hoc origin — doubly so</em> — Session 107 was committed
+              2025-12-10 after DESI DR1 was published April 2024; σ₈ calibrated to the lensing S₈ tension (KiDS/DES era), then propagated to DESI.
+              No prospective prediction registered. Additional layer: the S₈ tension itself is receding —
+              DES Y3 6×2pt and KiDS-Legacy (2024–2025) reanalyses have pulled S₈ back toward Planck,
+              so the calibration anchor was a transient observational state, not a stable target.
+              This makes TEST-04a post-hoc against a moving baseline. (2) <em>Disfavored ~2σ, wrong direction</em>
               — suppression not observed; data is ΛCDM-consistent or mildly above. A 2026-05-25 &ldquo;correction&rdquo;
               that claimed kill not triggered was itself an error: 0.4497&nbsp;±&nbsp;0.0548 belongs to arXiv:2512.03230
               (DESI Peculiar Velocity Survey, z&asymp;0.07) misattributed to the z=0.51 full-shape slot.
@@ -400,6 +403,37 @@ export default function HonestAssessment() {
           Results: one candidate prediction, four forced choices, and several structural failures.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div className="card" style={{ borderLeft: '3px solid rgba(167,139,250,0.6)', background: 'rgba(167,139,250,0.04)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3 style={{ color: 'var(--color-accent-violet)' }}>Structural No-go: Local Density vs Non-local Acceleration</h3>
+              <ValidationBadge status="failed" label="Wrong Variable (2026-06-01)" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              C(&#x03C1;) is a function of <em>local density</em> &#x03C1;. The RAR/MOND relation it mimics
+              in galaxies is a function of g<sub>bar</sub> — the <em>enclosed-mass acceleration</em>, a
+              non-local, geometry-dependent quantity. A pointwise intensive variable cannot reproduce an
+              acceleration-space relation across systems with different mass geometries except by
+              per-system calibration.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              The failure surfaces exactly where the two variables decouple:{' '}
+              <strong>clusters require &#x03C1;<sub>crit,cluster</sub> 10<sup>4</sup>–10<sup>6</sup>&times;
+              smaller than the galaxy value</strong> — destroying universality. Four natural ansätze tested
+              on Coma: A1/A4 overshoot by 10<sup>4</sup>; A2 collapses to Newtonian; A3 is structurally
+              impossible (C &#x2208; [0,1) bounds velocity at ≤2, observed dispersion requires ~4.6).
+            </p>
+            <div style={{ background: 'rgba(167,139,250,0.08)', border: '1px solid rgba(167,139,250,0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
+              <strong style={{ color: 'var(--color-accent-violet)' }}>Transferable finding:</strong>{' '}
+              This no-go generalizes beyond Synchronism to <em>any density-based emergent or entropic gravity
+              mimic of MOND</em> — any framework that substitutes a pointwise local-density function for
+              g<sub>bar</sub> will face the same decoupling failure at clusters. The specific C(&#x03C1;)
+              execution is an illustration of a class constraint.{' '}
+              Note: MOND also has one acceleration scale (a<sub>0</sub>) and fails at clusters by a
+              residual factor of ~2 — so scale-count alone is not the discriminator; the variable (local
+              &#x03C1; vs non-local g<sub>bar</sub>) is.
+            </div>
+          </div>
+
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>Dark Matter Viscosity Sign Error</h3>
@@ -408,19 +442,9 @@ export default function HonestAssessment() {
             <p style={{ color: 'var(--color-text-secondary)' }}>
               CFD mapping: C = 1/&mu;<sub>eff</sub>. Dark matter (low C) should mean high viscosity = more sticky.
               But the Bullet Cluster shows dark matter passes through itself &mdash; LESS sticky than baryons.
-              The viscosity interpretation predicts the wrong direction.
+              The viscosity interpretation predicts the wrong direction. The deeper structural failure (local &#x03C1; vs
+              non-local g<sub>bar</sub> variable mismatch) is described in the box above.
             </p>
-            <div style={{ background: 'rgba(167,139,250,0.06)', border: '1px solid rgba(167,139,250,0.2)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
-              <strong style={{ color: 'var(--color-accent-violet)' }}>Wrong-variable failure (2026-06-01):</strong>{' '}
-              C(&#x03C1;) is a function of <em>local density</em> &#x03C1;. But the RAR/MOND relation it mimics in galaxies is a function of g<sub>bar</sub> — the <em>enclosed-mass acceleration</em>, a non-local quantity. A local density map cannot reproduce an acceleration-space relation across systems whose mass distributions differ in shape: disk galaxies happen to permit it via V<sub>flat</sub>, clusters do not. This is the primary structural reason C(&#x03C1;) fails at cluster scale — not the number of free scales.
-              <br /><br />
-              <strong>Secondary observation (scale count):</strong>{' '}
-              C(&#x03C1;) has exactly one free density scale (&#x03C1;<sub>crit</sub>).
-              Four natural ansätze were tested on the Coma cluster: A1/A4 overshoot by 10<sup>4</sup>; A2 collapses to Newtonian; A3 is structurally impossible (C &#x2208; [0,1) bounds at ≤2 vs observed velocity dispersion requiring ~4.6).
-              Required &#x03C1;<sub>crit,cluster</sub> is 10<sup>&minus;4</sup> to 10<sup>&minus;6</sup> &times; the galaxy value — incompatible with universality.
-              Note: MOND also has one acceleration scale (a<sub>0</sub>) and fails at clusters by a residual factor of ~2 — so scale-count alone is not the discriminator between C(&#x03C1;) and MOND at cluster scale.
-              <strong>This is a finding, not a calibration miss.</strong>
-            </div>
           </div>
 
           <div className="card">
@@ -600,7 +624,7 @@ export default function HonestAssessment() {
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', fontSize: '0.9rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
           <li><strong>H₀ tension (~5σ):</strong> CMB vs. distance-ladder Hubble constant disagreement. Synchronism makes no statement on H₀. (See <Link href="/honest-assessment#h0-tension" style={{ color: 'var(--color-accent-blue)' }}>What&apos;s Untested</Link> above.)</li>
           <li><strong>JWST early galaxies:</strong> JWST has found massive, evolved galaxies at z &gt; 10 that challenge standard structure formation. Several modified-gravity frameworks address this; Synchronism has no analysis.</li>
-          <li><strong>S₈ tension:</strong> KiDS/DES measure σ₈ lower than Planck CMB predicts. Synchronism&apos;s σ₈ prediction (0.76) was calibrated to this tension in Session 102 — it is the anchor of the TEST-04a prediction, not an independent constraint.</li>
+          <li><strong>S₈ tension (receding):</strong> KiDS/DES historically measured σ₈ lower than Planck CMB predicts. Synchronism&apos;s σ₈ prediction (0.76) was calibrated to this tension in Session 102. However, DES Y3 6×2pt and KiDS-Legacy (2024–2025) are pulling S₈ back toward Planck, weakening the tension. Synchronism&apos;s calibration anchor is a transient state, not a stable observational target — which makes TEST-04a post-hoc against a moving baseline.</li>
           <li><strong>Primordial non-Gaussianity (fNL):</strong> DESI and future surveys constrain non-Gaussianity from large-scale structure. No coherence-based prediction exists.</li>
         </ul>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>

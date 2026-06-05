@@ -308,6 +308,20 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'f\u03c3\u2088(z) combines two cosmological measurements: f(z) = d(ln D)/d(ln a), the logarithmic growth rate of structure (how fast overdensities grow), and \u03c3\u2088(z), the amplitude of matter fluctuations at redshift z. Together they quantify how rapidly large-scale structure is building up. Higher f\u03c3\u2088 = faster growth = more clustering. Synchronism Session 107 predicted f\u03c3\u2088(z=0.51) \u2248 0.418, below \u039bCDM (\u22480.474). DESI DR1 measured \u22480.55 \u00b1 0.06, above \u039bCDM \u2014 a 2.4\u03c3 disagreement with Synchronism, and a sign reversal relative to the prediction.',
     learnMore: '/honest-assessment',
   },
+  'delta-BIC': {
+    term: 'ΔBIC',
+    fullName: 'Delta Bayesian Information Criterion (BIC difference)',
+    brief: 'The BIC difference between two models. ΔBIC > 10 = very strong evidence against the worse model; ΔBIC=+184 (point estimate) or ≥+33 (conservative) both far exceed this threshold.',
+    explanation: 'ΔBIC = BIC_model1 − BIC_model2. Positive ΔBIC means model 2 is better. Convention: ΔBIC > 10 is "very strong evidence." In the Synchronism RAR shape test (2026-05-21): γ=2 compander vs free-γ on 2807 SPARC points gave ΔBIC=+184 (point estimate) or ≥+33 under conservative intra-galaxy correlation correction. Both values far exceed the >10 threshold — the γ=2 form is categorically rejected regardless of which figure is used. The free-γ form collapses to MOND (γ≈0.49), so either result closes the discriminating test.',
+    learnMore: '/honest-assessment',
+  },
+  'Breit-Wigner': {
+    term: 'Breit-Wigner',
+    fullName: 'Breit-Wigner resonance / relativistic propagator',
+    brief: 'The standard formula describing a particle resonance: probability amplitude ∝ 1/[(E−M)² + (Γ/2)²], where M is the rest mass and Γ is the decay width.',
+    explanation: 'The Breit-Wigner distribution gives the probability that a particle resonance is observed at energy E, given a true mass M and total decay width Γ. The narrow-width approximation (Γ ≪ M) is the standard condition for a stable resonance appearing as a sharp peak in cross-section data — equivalent to the Källén-Lehmann spectral condition in QFT. Synchronism\'s entity criterion (Γ < m) is this narrow-width condition. The connection to the PDG resonance catalog: real resonances satisfying Γ < m appear as sharp peaks; borderline cases (σ/f₀(500), ρ(770)) sit at Γ ≈ M. The entity criterion adds an ontological interpretation (entities "exist" only when Γ < m) rather than a new mathematical condition.',
+    learnMore: '/entity-criterion',
+  },
   'BIC': {
     term: 'BIC',
     fullName: 'Bayesian Information Criterion',

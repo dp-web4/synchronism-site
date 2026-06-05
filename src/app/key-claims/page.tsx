@@ -373,10 +373,15 @@ export default function KeyClaims() {
           </p>
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
-            Dark matter effects arise where quantum-to-classical decoherence is incomplete. The MOND
-            acceleration scale a&#x2080; emerges from the coherence transition, not as a fundamental constant.
-            The &ldquo;dark matter&rdquo; is not missing matter &mdash; it&apos;s the residual coherence of a system
-            that hasn&apos;t fully become classical.
+            Dark matter effects arise where density falls into the sparse/independent (low&nbsp;C) regime.
+            The MOND acceleration scale a&#x2080; emerges from the coherence transition, not as a fundamental constant.
+            The &ldquo;dark matter&rdquo; is not missing matter &mdash; it&apos;s the coherence gradient at the
+            transition from dense/collective to sparse/independent behavior.
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em', display: 'block', marginTop: '0.25rem' }}>
+              Note: &ldquo;coherence&rdquo; here means density-driven collective ordering (0=sparse/independent,
+              1=dense/collective) &mdash; not quantum phase coherence. BEC/BCS, which are maximally quantum-coherent,
+              sit at <em>low</em> C. See <a href="/glossary#coherence" style={{ color: 'var(--color-accent-blue)' }}>Glossary</a>.
+            </span>
           </p>
 
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>What&apos;s new</h3>
@@ -385,7 +390,7 @@ export default function KeyClaims() {
             why anomalies appear at a specific acceleration scale. Synchronism re-derives a&#x2080; from the
             coherence transition via dimensional analysis &mdash; the same relation McCulloch (2007), Verlinde (2017),
             and Smolin (2017) each arrive at independently. The novel contribution is the <em>interpretation</em>:
-            that this scale marks where decoherence becomes incomplete, not just a coincidence of constants.
+            that this scale marks the density-coherence transition — where systems cross from dense/collective to sparse/independent behavior — not just a coincidence of constants.
             See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</a> for honest accounting.
           </p>
 

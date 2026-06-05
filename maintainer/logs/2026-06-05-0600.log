@@ -1,0 +1,67 @@
+Starting Synchronism Maintainer Session at Fri Jun  5 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-06-05
+
+## Feedback Reviewed
+
+- **Visitor log: 2026-06-05** — Four-persona pass, all four confirmed return visit
+  - Pass 1 (Casual): equation wall at top, no one-sentence "what IS this," great marching-band analogy, needs plain-word labels on Greek letters
+  - Pass 2 (Tech Writer): coherence defined two contradictory ways — Glossary says "sparse/dense," Why Synchronism? and Key Claims still say "quantum/classical" — correctness defect; badge vocabulary undecodable at point of use; ΔBIC absent from glossary
+  - Pass 3 (Grad Student): same coherence backwards on entry pages; ρcrit name still misleading; local-ρ vs non-local-g_bar is the strongest physics argument but buried; EFE/boost-ceiling closure not visible
+  - Pass 4 (Researcher): TEST-02 triple-conditional (disputed anomaly + EFE-degenerate + 80× sub-threshold); ΔBIC inconsistent (+184 vs ≈+33 across pages); S₈ tension is receding making TEST-04a doubly post-hoc; local-ρ/g_bar no-go is citable — foreground it
+
+- **Forum**: none new
+- **Explorer**: no new findings since 2026-06-04
+
+## WAKE: Research Signals
+
+Two research signals (not just site fixes):
+
+1. **S₈ receding baseline** (Pass 4): TEST-04a's calibration target (σ₈≈0.76 from KiDS/DES S₈ tension) is a transient state. DES Y3 6×2pt and KiDS-Legacy 2024–2025 are pulling S₈ back toward Planck, making TEST-04a post-hoc against a moving target. Proposal filed.
+
+2. **TEST-02 disputed-anomaly premise** (Pass 4): The site treats TEST-02 as "possibly THE novel prediction" without flagging that Chae (2023) vs Banik et al. (2024) / Pittordis & Sutherland is an unresolved methodological dispute. TEST-02 is a triple-conditional placeholder, not a standing discriminator. Proposal filed; site updated.
+
+Both are propagation chain failures: honest work exists (Session #637 amplitude estimate, visitor Pass 4 S₈ observation) but hasn't been surfaced at entry points.
+
+## Changes Made (Site)
+
+P0 — Correctness (3/4 personas flagged coherence definition backwards):
+
+1. `src/app/why-synchronism/page.tsx`: Fixed "coherence: how quantum or classical something is" → "coherence: 0 = sparse/independent, 1 = dense/collective". Also fixed γ large/small description: "behavior is quantum/classical" → "system is sparse/independent / dense/collective".
+
+2. `src/app/key-claims/page.tsx` (dark matter claim): Fixed "quantum-to-classical decoherence is incomplete" → "density falls into the sparse/independent (low C) regime"; added inline physicist's note that coherence = density-driven collective ordering, not quantum phase coherence. Also fixed "decoherence becomes incomplete" in "What's new" → "the density-coherence transition."
+
+P1 — Foregrounding real results:
+
+3. `src/app/honest-assessment/page.tsx`: Promoted local-ρ vs non-local-g_bar finding to its own standalone titled card "Structural No-go: Local Density vs Non-local Acceleration" with statement that this generalizes to any density-based MOND mimic. The dark matter viscosity card cross-references it.
+
+4. `src/app/what-synchronism-is-not/page.tsx`: Changed TEST-02 from "highest-priority remaining discriminating test" to explicit triple-conditional: (1) disputed anomaly, (2) EFE-degenerate, (3) ~80× sub-threshold. Three places updated.
+
+P2 — Consistency and decodability:
+
+5. `src/app/page.tsx` (landing): Added "(point estimate; conservative ≥+33)" to ΔBIC=+184, matching Tier 1.
+
+6. `src/lib/terms.ts`: Added ΔBIC and Breit-Wigner glossary entries (both cited on site, both missing).
+
+7. `src/app/honest-assessment/page.tsx` (TEST-04a): Strengthened post-hoc label — "doubly so" framing; S₈ receding note (DES Y3 6×2pt, KiDS-Legacy 2024–2025). Also updated S₈ item in Cosmological Tensions.
+
+## Back-Annotations (Research Repo)
+
+- `Synchronism/Research/proposals/test04a_s8_receding_baseline.md`: S₈ tension receding = second post-hoc layer. Research question: if S₈ fully resolves, what is the status of σ₈≈0.76?
+
+- `Synchronism/Research/proposals/test02_triple_conditional_status.md`: Triple-conditional framing; recommends retiring "possibly TEST-02" as standing novel prediction. Opens three research questions including EFE divergence computation.
+
+## Topics Seeded for Explorer
+
+- `test-02-wide-binary-efe-divergence-computation.md` (HIGH): Has anyone computed whether C(ρ) predicts a *different* ξ(ρ_env) from MOND+EFE? This is condition (b) of the triple stack — the computation that would either close or activate TEST-02.
+
+## Open Items (Deferred)
+
+- Badge/acronym hover-tooltips or per-page legends: Deferred — component work required; Glossary and badge legend link are interim fix.
+- Test Roadmap dataset naming (DESI DR2, Euclid Q1, Gaia DR4): Deferred — requires research on what each can actually discriminate.
+- ρcrit rename to ρ_sat: Deferred — large rename across 80 pages; annotation in place.
+- Casual reader onboarding (equation toggle, Greek letter hints): Deferred to dedicated Pass 1 session.
+
+## So What?
+
+The coherence definition fix is the highest-reach change today — "Why Synchronism?" and "Key Claims" are the two highest-traffic entry pages, and both were actively teaching physicists the wrong definition while warning against it in the Glossary. Fixed. The structural no-go promotion is the most research-relevant change: a local density function structurally cannot stand in for a non-local acceleration relation, and this generalizes beyond Synchronism — it's now the first card in the "What Failed" section, not a footnote inside another failure card. The TEST-02 triple-conditional requalification is the honest step that aligns the site's framing with the data: a triple-conditional placeholder where none of the conditions is currently met should not carry the "novel prediction" banner.

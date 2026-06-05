@@ -43,7 +43,7 @@ export default function WhySynchronism() {
         <h2>The Approach</h2>
         <p>
           Synchronism proposes a coherence function: <span className="equation-inline">C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))</span>.
-          It takes one input (density) and returns one output (coherence: how quantum or classical something is).
+          It takes one input (density) and returns one output (coherence: 0 = sparse/independent, 1 = dense/collective).
         </p>
         <p style={{ color: 'var(--color-text-secondary)', fontStyle: 'italic', borderLeft: '3px solid var(--color-accent-violet)', paddingLeft: '0.75rem' }}>
           In plain English: an S-curve that smoothly goes from 0 (everything acting independently)
@@ -56,8 +56,8 @@ export default function WhySynchronism() {
         </p>
         <p>
           The parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> depends only on how many particles are
-          moving as a correlated unit. When &#x03B3; is large (few correlated particles), behavior is quantum.
-          When &#x03B3; is small (many correlated particles), behavior is classical.
+          moving as a correlated unit. When &#x03B3; is large (few correlated particles), the system is sparse/independent (low C).
+          When &#x03B3; is small (many correlated particles), the system is dense/collective (high C).
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', borderLeft: '2px solid rgba(245,158,11,0.4)', paddingLeft: '0.75rem' }}>
           <strong>Circularity caveat:</strong> The 1/&#x221A;N<sub>corr</sub> scaling is a dimensional ansatz

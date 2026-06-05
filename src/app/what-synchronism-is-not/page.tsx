@@ -76,8 +76,9 @@ export default function WhatSynchronismIsNot() {
             conceptual economy, not by novel empirical predictions (like Bohmian mechanics vs Copenhagen vs Many-Worlds —
             all make identical predictions). A <em>methodology</em> is evaluated by its reproducibility and
             applicability as a research tool. Both are legitimate contributions; neither requires confirmed novel physics.
-            If TEST-02 (wide binary density dependence) or a future prospective test succeeds, this classification
-            can be upgraded.
+            If a future prospective test produces a discriminating result — one that MOND+EFE+ΛCDM cannot explain —
+            this classification can be upgraded. TEST-02 (wide binary density dependence) is the candidate most often cited,
+            but is triple-conditional: the anomaly is disputed, the prediction is EFE-degenerate, and amplitude is ~80× below reach.
           </p>
         </div>
 
@@ -89,9 +90,9 @@ export default function WhatSynchronismIsNot() {
             <li>A <strong>methodology research program</strong>: A2ACW protocol (3,308 sessions), validation badges,
               kill criteria, pre-registration discipline, mechanism-class failure taxonomy — a reproducible self-audit
               infrastructure for AI-collaborative science. This is the most distinctive and citable output.</li>
-            <li>A <strong>source of open questions</strong>: TEST-02 wide-binary density dependence is the
-              highest-priority remaining discriminating test (contingent on the wide-binary anomaly resolving);
-              the self-consistency loop gap (C(ρ) has no fixed-point equation) is the deepest structural question.</li>
+            <li>A <strong>source of open questions</strong>: TEST-02 wide-binary density dependence is triple-conditional —
+              (1) the wide-binary anomaly is itself disputed (Chae 2023 ~10σ detection vs Banik et al. 2024 / Pittordis &amp; Sutherland: Newtonian consistency); (2) even if real, it is MOND+EFE degenerate; (3) the predicted amplitude is ~80× below Gaia DR3 reach.
+              No component of this triple-conditional stack is currently resolved. The self-consistency loop gap (C(ρ) has no fixed-point equation) is the deepest structural question.</li>
             <li>A <strong>demonstration of radical honesty</strong>: failures documented, reparametrizations acknowledged,
               kill criteria defined, 0 unique confirmed predictions. The honest-assessment page is the most
               rigorous self-audit on any physics-adjacent research site.</li>
@@ -105,8 +106,9 @@ export default function WhatSynchronismIsNot() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           For a physics audience, the classification question is specific: <em>Is there one equation, regime, or
           measurement where Synchronism predicts something that MOND + ΛCDM + decoherence does not?</em> As of May 2026,
-          the honest answer is: not yet confirmed, possibly TEST-02 wide-binary density dependence. Until that test
-          executes with a discriminating result, the framework&apos;s contribution is interpretive and methodological,
+          the honest answer is: not yet confirmed, and TEST-02 is a triple-conditional placeholder
+          (disputed anomaly + EFE-degenerate + 80× sub-threshold amplitude) rather than a standing discriminator.
+          Until a condition of the triple stack resolves, the framework&apos;s contribution is interpretive and methodological,
           not empirically novel. That&apos;s a real contribution — just not the one the landing page implies.
         </p>
 

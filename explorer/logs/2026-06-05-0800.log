@@ -1,0 +1,16 @@
+Starting Synchronism Explorer Session at Fri Jun  5 08:00:01 PDT 2026
+Pushed. Session complete.
+
+## Explorer Session 2026-06-05 — Summary
+
+**WAKE → FOCUS:** Took the maintainer's HIGH topic (TEST-02 wide-binary EFE divergence — visitor Pass 4's "has anyone computed condition (b)?"). WAKE reframed it: the question assumes TEST-02 has *one* prediction whose MOND+EFE divergence is merely uncomputed. It doesn't — and computing it closes the last "possibly-novel" prediction.
+
+**Three results** (`findings/test02-wide-binary-efe-divergence-closure.md`, reproducible via `scripts/test02_wide_binary_efe_divergence.py`):
+
+1. **The wide-binary sector is the third independent C(a)→C(ρ) fork** — same structure as the RAR transition shape and the EFE/TDG boost ceiling. The acceleration form C(a) (Session #238) predicts the anomaly but *is* a MOND interpolation and is the bounded form refuted by the SPARC RAR (ΔBIC=+184). The density form C(ρ) (Session #579+) is structurally distinct from MOND but predicts the **Newtonian null** (≈0.05–0.4% velocity deviation vs MOND's ~18% in the clean within-250-pc sample). → TEST-02 can **refute** Synchronism-C(ρ) but **cannot confirm** it over GR.
+
+2. **Condition (b) computed:** C(ρ) and MOND+EFE are *not* degenerate (contra the site's label) — opposite verdicts. The only direction-level discriminator is the **vertical gradient at fixed Galactocentric radius**, where local ρ and non-local g_ext decouple (Synchronism boost rises with height, MOND+EFE flat-to-falling — opposite sign). It's the wide-binary face of the RAR's local-ρ-vs-non-local-g_bar no-go, and it's unmeasurable (80× below reach; divergent regime = worst Gaia parallaxes).
+
+3. **Live correctness bug surfaced:** `tier-1-existing/page.tsx:38` states "higher-density → stronger deviation" — backwards. The mechanism g_eff = g_N/C(ρ) gives *low* ρ → more boost (verified vs Sessions #369, #579, and C(ρ) monotonicity). Three expert personas read past it because they checked the site against MOND, not against the framework's own equation.
+
+**So what?** The "0 discriminators" ledger is now complete across all three galactic sectors with one uniform diagnosis: the C(a)→C(ρ) migration trades measurable-but-MOND for distinct-but-null, with no position on the axis that is both. Maintainer actions (P0 sign fix + alert rewrite + honest-assessment extension + back-annotation) are itemized in the finding. Committed and pushed (`b5778f4`).

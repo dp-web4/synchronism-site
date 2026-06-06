@@ -50,7 +50,7 @@ export default function GammaBoundary() {
           </ul>
           <p style={{ marginTop: '0.5rem', marginBottom: 0 }}>
             Pattern: the framework &ldquo;works&rdquo; where targets are density-monotonic by construction (sound velocity, electronegativity, atomic volume)
-            and fails where they are not. A polynomial in Z achieves r &#x2192; 1 on the same density-monotonic rows &mdash; the null comparison has not yet been run.
+            and fails where they are not. A degree-2 polynomial in Z achieves comparable r on density-monotonic rows (Δr ≤ 0.07; sometimes exceeds Synchronism). The null was computed 2026-05-10.
             See <a href="/honest-assessment" style={{ color: '#ef4444' }}>Honest Assessment</a>.
           </p>
         </div>
@@ -65,12 +65,9 @@ export default function GammaBoundary() {
           fontSize: '0.85rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: '#f59e0b' }}>Null model caveat (2026-05-10):</strong>{' '}
-          Sound velocity, electronegativity, and atomic volume are all near-monotonic in atomic number Z.
-          Any smooth monotonic function of Z would achieve r &rarr; 1 on these data by construction —
-          not from Synchronism-specific physics. The relevant null comparison (r against a polynomial in Z)
-          has not yet been run. Until it is, these are labeled <em>Reparametrization</em> — consistent with
-          density-monotonicity, which predates the framework.{' '}
+          <strong style={{ color: '#f59e0b' }}>Null model result (2026-05-10 explorer, propagated 2026-06-06):</strong>{' '}
+          Sound velocity, electronegativity, and atomic volume are all near-monotonic in atomic number Z —
+          and a 2-parameter polynomial in Z achieves comparable or higher r than Synchronism in most density-monotonic cases (Δr ≤ 0.07; polynomial sometimes wins). The null was computed analytically and numerically in <code>chemistry-null-model-analytic.md</code>: any smooth monotonic function of Z achieves r ≥ 0.9 on density-monotonic targets by construction. Synchronism is <em>not</em> meaningfully above the polynomial null on its &ldquo;success&rdquo; cases. The r-values below are consistent with the periodic table being density-monotonic in Z, not with Synchronism-specific physics.{' '}
           See <a href="/honest-assessment" style={{ color: '#f59e0b' }}>Honest Assessment</a>.
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>

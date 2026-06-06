@@ -41,12 +41,15 @@ export default function GammaCalculator() {
         {/* Load-bearing caveats — promoted to top */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #f59e0b', background: 'rgba(245, 158, 11, 0.05)' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontWeight: 600, marginBottom: '0.25rem', fontSize: '0.9rem' }}>
-            Two caveats before using this tool:
+            Three caveats before using this tool:
           </p>
           <ol style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', paddingLeft: '1.25rem', margin: 0, lineHeight: 1.7 }}>
             <li>
               <strong>&#x03B3; = 2/&#x221A;N<sub>corr</sub> is motivated, not rigorously derived.</strong> The 1/&#x221A;N scaling is a dimensional ansatz inspired by fluctuation theory — <em>not</em> a consequence of the CLT (which governs sample-mean fluctuation, not transition sharpness). The factor of 2 is not derived from first principles.
               {' '}<a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)', fontSize: '0.85rem' }}>See Parameter Derivations for what is and isn&apos;t derived &rarr;</a>
+            </li>
+            <li>
+              <strong>The direction of the N<sub>corr</sub>→sharpness mapping is inverted relative to the stated analogy (2026-06-06).</strong> In fluctuation theory, 1/&#x221A;N is a <em>width</em> — more correlation &#x2192; smaller width &#x2192; sharper transition. But in &#x03B3; = 2/&#x221A;N<sub>corr</sub>, more correlation &#x2192; larger N<sub>corr</sub> &#x2192; smaller &#x03B3; &#x2192; <em>flatter</em> tanh. This assigns the sharpest transition (&#x03B3;=2) to the least-correlated system (ideal gas, no real phase transition) and the flattest (&#x03B3;&#x2248;6&#xD7;10<sup>&#x2212;4</sup>) to the most-correlated (BCS superconductor, which has a real sharp T<sub>c</sub>). The sign of the analogy is inverted — a structural issue independent of the prefactor. See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</a> and research proposal <code>gamma_ncorr_sign_inversion_sharpness.md</code>.
             </li>
             <li>
               <strong>Preset N<sub>corr</sub> values are back-fits, not measurements.</strong> For BCS superconductors, the physical Cooper-pair coherence volume contains 10<sup>6</sup>–10<sup>9</sup> pairs; the preset uses N<sub>corr</sub> = 10<sup>7</sup> (mid-range of physical estimates) — fitted to produce a plausible γ (6.32×10<sup>−4</sup>), not derived from the Hamiltonian. No protocol exists for converting a system&apos;s Hamiltonian into N<sub>corr</sub> without first fitting γ to observed behavior. Every γ &ldquo;prediction&rdquo; is therefore a consistency check on a back-fitted parameter, not a first-principles result.

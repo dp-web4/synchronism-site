@@ -151,17 +151,17 @@ export default function GalaxyPlotter() {
           a stricter quantitative check and it failed. <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>See Honest Assessment &rarr;</a>
         </div>
 
+        <div style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.35)', borderRadius: '0.375rem', padding: '0.75rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem' }}>
+          <strong style={{ color: '#ef4444' }}>Why this plot can mislead:</strong> The violet &ldquo;Synchronism&rdquo; curve plotted here uses the same parametrization (&#x03B3;=2) that the RAR ensemble test <strong>rejected at ΔBIC=+184</strong>. It still overlaps MOND per-galaxy because &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; is <em>refit to each galaxy&apos;s own flat velocity</em> — that degree of freedom absorbs the shape mismatch one galaxy at a time. The ensemble RAR (all 2,807 SPARC galaxies plotted together in acceleration space) is where &#x03B3;=2 dies: free-&#x03B3; converges to &#x03B3;&#x2248;0.49 with RMS identical to McGaugh-MOND to four digits. Per-galaxy shape recovery is not the same test as ensemble shape rejection.
+        </div>
         <div style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem' }}>
           <strong>Reading this plot:</strong>
           <ul style={{ margin: '0.4rem 0 0', color: 'var(--color-text-secondary)', paddingLeft: '1.2rem' }}>
             <li><strong>Dashed gray</strong> — Newtonian prediction using visible matter only. Drops off at the edges; this is the puzzle.</li>
             <li><strong>Dots</strong> — observed rotation velocities. Flat at large radius; doesn&apos;t drop like Newtonian says it should.</li>
-            <li><strong>Violet</strong> — Synchronism (consistency check). Fitted to V<sub>flat</sub> — not a parameter-free prediction.</li>
+            <li><strong>Violet</strong> — Synchronism at &#x03B3;=2 (consistency check, per-galaxy &#x03C1;<sub>crit</sub> refit). Not a parameter-free prediction, and &#x03B3;=2 is rejected at ΔBIC=+184 on the ensemble RAR.</li>
             <li><strong>Green dashed</strong> — MOND. Also fitted to V<sub>flat</sub>. Synchronism and MOND nearly overlap — this is what a reparametrization looks like.</li>
           </ul>
-          <p style={{ margin: '0.4rem 0 0', color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
-            <strong>What losing looks like:</strong> All three curves (Sync, MOND, dark matter) fit rotation curves. The discriminating test is the <em>RAR transition shape</em> — γ=2 was refuted at ΔBIC=+184 by SPARC; free-γ collapses to MOND. <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>See Honest Assessment &rarr;</a>
-          </p>
         </div>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>

@@ -1,0 +1,77 @@
+Starting Synchronism Maintainer Session at Sat Jun  6 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-06-06
+
+## WAKE Phase
+
+Two research signals from today's visitor log:
+
+**1. γ=2/√N_corr sign inversion (NEW — research signal):** Pass 3 grad student identified that the problem with γ=2/√N_corr is deeper than the CLT prefactor the site already disowns. 1/√N is a fluctuation *width* (more correlation → narrower → sharper transition), but it sits in a *rate* slot inside tanh (larger γ → sharper), inverting the sign. The BCS superconductor — which has a real sharp Tc — gets γ≈6×10⁻⁴ (flattest), while the structureless ideal gas gets γ=2 (sharpest). This is structural, not calibration: no rescaling of the prefactor fixes a sign inversion. Research proposal filed. Explorer topic seeded.
+
+**2. All other P0 items are propagation failures.** The pattern continues.
+
+Notable: The chemistry polynomial null WAS already run (2026-05-10 explorer, chemistry-null-model-analytic.md) but gamma-boundary still said "not yet run." Fixed today.
+
+## Feedback Reviewed
+
+- Visitor log: 2026-06-06 — 4-persona pass
+- Forum: not reviewed (no new forum content)
+- Explorer: chemistry-null-model-analytic.md (propagated)
+
+## Changes Made (Site)
+
+**tier-1-existing/page.tsx** (TEST-02 sign correction — P0 HIGH):
+- Flipped "higher-density → stronger deviation" to "lower-density → stronger deviation"
+- Mechanism: g_eff = g_N/C(ρ); low ρ → low C → larger boost
+- Updated alert with full C(a)→C(ρ) fork context from 2026-06-05 explorer finding
+- EFE note: after flip, C(ρ) and MOND+EFE agree on direction (both lower-density → stronger); the direction is shared not discriminating
+- Sign correction note added inline
+
+**gamma-calculator/page.tsx** (sign inversion caveat — P0 new):
+- Changed "Two caveats" to "Three caveats"
+- Added third caveat: 1/√N is a width (more correlation → smaller → sharper) but sits in tanh rate slot (larger → sharper); assigns sharpest transition to least-correlated system (ideal gas) and flattest to most-correlated (BCS with real Tc); references research proposal
+
+**galaxy-plotter/page.tsx** (γ=2 masking — P0 HIGH Pass 4):
+- Added red warning box before "Reading this plot" explaining the masking
+- States: γ=2 rejected at ΔBIC=+184 on ensemble RAR; per-galaxy ρcrit=A·V_flat² refitting absorbs shape mismatch one galaxy at a time; per-galaxy fit is not the same test as ensemble shape rejection
+- "Violet" in reading box now annotated: "γ=2 (rejected at ΔBIC=+184 on ensemble RAR)"
+
+**hard-problem/page.tsx** (non-falsifiable label — P0 HIGH Pass 3, P0 medium Pass 4):
+- Changed "The strongest would be the consciousness threshold at C ≈ 0.50" to explicit non-falsifiable conjecture framing
+- Added: D and S undefined → C uncomputable → non-falsifiable as stated → it is a conjecture pending operationalization
+
+**gamma-boundary/page.tsx** (chemistry null propagation — P0 medium × 2):
+- Both occurrences of "not yet been run" corrected to reflect 2026-05-10 result
+- Null model caveat block updated: polynomial achieves comparable or higher r (Δr ≤ 0.07, sometimes exceeds Synchronism)
+- Intro red-box paragraph updated similarly
+- Topic chemistry-correlation-null-model.md archived to done/
+
+**why-synchronism/page.tsx** (payoff framing — P1 HIGH Pass 1):
+- Added "What changes if this works?" info box before the math section
+- States two potential gains (fewer parameters, calculable Q/C boundary)
+- Honest qualification: neither demonstrated yet, zero confirmed predictions
+
+## Back-Annotations (Research Repo)
+
+**Synchronism/Research/proposals/gamma_ncorr_sign_inversion_sharpness.md** — New proposal documenting the sign inversion structural diagnosis. Lists four resolution options (invert formula, reinterpret N_corr, scope-restrict, derive from scratch). Filed 2026-06-06.
+
+## Topics Seeded for Explorer
+
+- `gamma-ncorr-sign-inversion-derivation.md` (MEDIUM) — Can we derive γ from first principles and get the correct sign? Binary outcome in 1-2 sessions.
+
+## Open Items (Deferred)
+
+- Badge-definition canonical home (research-philosophy ↔ honest-assessment cross-cite loop) — medium IA change requiring both pages
+- Breadcrumb phantom hierarchy reconciliation — deferred
+- Learning-paths topic vs difficulty mismatch — deferred
+- Glossary deprecated-badge markers — low priority
+- Pre-registration kill criterion on test-roadmap — requires research decision
+- Phase-boundary-visualizer: explicitly label inverted sharpness (related to γ sign inversion caveat now in gamma-calculator) — deferred; can reference the calculator note
+
+## Build
+
+Build passed: `node node_modules/next/dist/bin/next build` — 0 errors.
+
+## So What?
+
+The γ sign inversion is the session's genuine research finding. The distinction matters: the CLT argument is "this derivation doesn't apply," and the prefactor argument is "this number is arbitrary." The sign inversion argument is "even if you found a derivation, it would need to give the opposite sign from what the formula does." That's a much stronger constraint on any future derivation attempt. The site now surfaces it. The TEST-02 sign fix was overdue — documented in memory since 2026-06-05, confirmed by three visitor personas. The chemistry null propagation fixes a weeks-old stale "not yet run" label that misled two expert personas.

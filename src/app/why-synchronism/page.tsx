@@ -16,6 +16,12 @@ export default function WhySynchronism() {
       </p>
 
       <section className="section content-width">
+        <div style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.2)', borderRadius: '0.5rem', padding: '1rem 1.25rem', marginBottom: '1.5rem' }}>
+          <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.95rem' }}>
+            <strong>What changes if this works?</strong> If one density function really spans quantum to galactic scales, two things become possible that aren&apos;t now: (1) a single measurable quantity (density) predicts behavior in domains currently requiring separate frameworks — fewer free parameters, more cross-domain predictions; (2) the boundary between &ldquo;quantum&rdquo; and &ldquo;classical&rdquo; becomes a calculable density threshold, not a philosophical category. Neither has been demonstrated yet. The site&apos;s self-audit has found zero confirmed predictions and the decisive galaxy test collapses to MOND. The question is live, not resolved.
+          </p>
+        </div>
+
         <h2>The Problem</h2>
         <p>
           Modern physics uses different equations for different scales.

@@ -108,10 +108,14 @@ export default function HardProblem() {
 
         <h2>Status</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          This is a theoretical framework with 34 candidate predictions. The strongest would be the
-          consciousness threshold at C &#x2248; 0.50, measurable via EEG phase coherence &mdash;
-          but only once D and S have operational definitions that allow C to be computed. That step
-          is the research gap between &ldquo;schema&rdquo; and &ldquo;falsifiable prediction.&rdquo;
+          This is a theoretical framework with 34 candidate predictions. The leading candidate is
+          the consciousness threshold at C &#x2248; 0.50, measurable via EEG phase coherence &mdash;
+          but it is <strong>non-falsifiable as currently stated</strong>: D and S are not yet
+          operationally defined, so C cannot be computed for any real system. It is a conjecture
+          pending operationalization, not yet a falsifiable prediction. See{' '}
+          <Link href="/consciousness-threshold" style={{ color: 'var(--color-accent-blue)' }}>
+            Consciousness Threshold
+          </Link>{' '}for the honest-caveat list.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

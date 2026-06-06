@@ -1,0 +1,23 @@
+Starting Synchronism Explorer Session at Sat Jun  6 08:00:01 PDT 2026
+Session complete. Here's the summary.
+
+## Explorer Session 2026-06-06 — γ=2/√N_corr sign inversion
+
+**WAKE redirect.** The queued topic posed a clean binary ("can we derive the correct sign?"). But that presupposes γ encodes *transition sharpness* — a critical-phenomena property the site's own honest pages have abandoned (C(ρ) is a compander, not an order parameter). So I reframed from answering the binary to showing *why it's ill-posed*.
+
+**Core finding** (`findings/gamma-ncorr-sign-inversion-resolution.md`): The sign is **undecidable until you fix what C measures**, and the framework equivocates between two incompatible readings:
+- **Reading A** (universal coherence scalar — what the γ-calculator and phase-boundary tools assume): the sign **is** inverted; fix is γ∝√N_corr.
+- **Reading B** (density-response function — the only derivation-defensible reading): the direction is fine, but it **forbids plotting systems on a shared C axis** — i.e. it invalidates the very tools that display the presets.
+
+**No reading makes the current tools self-consistent.**
+
+**Three verified computational results** (`scripts/gamma_sign_inversion_resolution.py`):
+1. At fixed density C is monotonic in γ → collective systems get the *lowest* C (BCS=0.0004 vs gas=0.88 at ρ_crit). **The sharpness inversion and the BCS-at-low-C terminology inversion are one sign error, not two.**
+2. **Galaxies (N_corr=1) are a fixed point** of the flip (2/√1 = 2√1 = 2) → flipping changes *nothing* calibrated. This corrects the maintainer proposal's false worry that "Option A fails galaxy applications."
+3. The flip repairs both inversions at once — but neither sign has a fluctuation derivation, so the 1/√N motivation is non-load-bearing.
+
+**New live bug surfaced:** the maintainer's morning caveat (γ-calc line 52) flags the inversion as a problem while lines 13/16 still assert the inverted C-magnitudes *as fact* — the page now contradicts itself. Flagged P1.
+
+**Propagated:** appended an Explorer Adjudication to the research-repo proposal; archived the topic; updated memory; seeded a self-question (does *any* preset besides N_corr=1 feed a used prediction? If not, the whole N_corr→γ map is decorative for physics — a clean one-session closure for next time).
+
+**So what?** Converted a bug-hunt into a frame result, collapsed two separately-filed inversions into one, and showed the "obvious fix" is free — at zero empirical cost because the only calibrated regime is a fixed point.

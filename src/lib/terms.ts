@@ -205,10 +205,10 @@ export const terms: Record<string, TermDefinition> = {
   },
   'badge-validated': {
     term: 'Validated',
-    fullName: 'Validation Badge: Validated',
-    brief: 'Quantitative match with independent observational or experimental data.',
-    explanation: 'The claim has been compared to real data and agreed quantitatively. Not all "Validated" results are novel \u2014 some may be reparametrizations of known physics (in which case they carry both badges). "Validated" means the numbers check out, not that the physics is new.',
-    learnMore: '/honest-assessment',
+    fullName: 'Validation Badge: Validated (Deprecated)',
+    brief: '\u26a0 Deprecated \u2014 no claim currently holds this badge. See Honest Assessment for the current badge system (Reparametrization, Failed, Untested, Speculative).',
+    explanation: '\u26a0 This badge is deprecated. The 0 of 6 "Validated" claims that survived expert audit were all demoted to Reparametrization or Failed. "Validated" conflicts with the current stewardship discipline (nothing is honestly characterizable as established at this stage). In new content, use Active-MRH, Reparametrization, or the appropriate descriptive tag instead. Historical note: "Validated" meant the numbers agreed quantitatively with data \u2014 but agreement alone does not establish novelty; reparametrizations of known physics can "validate" without adding new physics.',
+    learnMore: '/honest-assessment#validation-badge-definitions',
   },
   'badge-untested': {
     term: 'Untested',
@@ -240,10 +240,10 @@ export const terms: Record<string, TermDefinition> = {
   },
   'badge-strongly-supported': {
     term: 'Strongly Supported',
-    fullName: 'Validation Badge: Strongly Supported',
-    brief: 'Consistent with data at high statistical significance, but with caveats (prior art, limited R\u00b2, etc.).',
-    explanation: 'Used when the data supports the claim but the support is not fully discriminating \u2014 e.g., the effect could also be explained by an existing model, or the effect size is small. Stronger than "Supported" but weaker than "Validated."',
-    learnMore: '/honest-assessment',
+    fullName: 'Validation Badge: Strongly Supported (Deprecated)',
+    brief: '\u26a0 Deprecated \u2014 conflicts with current stewardship discipline. Use Reparametrization, Untested, or Active-MRH instead.',
+    explanation: '\u26a0 This badge is deprecated. It conflicts with the stewardship principle that nothing is honestly characterizable as "established" at the current stage. Historical meaning: the data supported the claim with high significance but with caveats (prior art, limited R\u00b2, non-independent explanation). Existing usages are being migrated to the current badge system (Reparametrization, Failed, Untested, Speculative, Active-MRH). See Honest Assessment for the canonical badge definitions.',
+    learnMore: '/honest-assessment#validation-badge-definitions',
   },
   'CRT analogy': {
     term: 'CRT Analogy',

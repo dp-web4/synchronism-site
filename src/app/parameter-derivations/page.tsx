@@ -94,7 +94,7 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>3. A = 4&#x03C0;/(&#x03B2;<sub>J</sub>&sup2;GR&#x2080;&sup2;) &#x2248; 0.029</h3>
-              <ValidationBadge status="validated" label="Jeans Criterion | 5% Agreement" />
+              <ValidationBadge status="active-mrh" label="Active-MRH — Derivation Under Scrutiny" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #53, #66</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -104,6 +104,17 @@ export default function ParameterDerivations() {
               with R&#x2080; = 8 kpc and the 4&#x03C0; factor from spherical surface-area integration (Session 66),
               A = 0.0294 vs empirical 0.028 — 5% agreement.
             </p>
+            <div style={{ background: 'rgba(245, 158, 11, 0.08)', border: '1px solid rgba(245, 158, 11, 0.3)', borderRadius: '0.375rem', padding: '0.75rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+              <strong>⚠ Open question (2026-06-07):</strong> R&#x2080; = 8 kpc is the Sun&apos;s galactocentric radius in
+              the Milky Way. Why would the Sun&apos;s position set a constant claimed universal across all galaxies?
+              With &#x03B2;<sub>J</sub> as a free O(1) parameter and one calibration point, the 5% match may be
+              one-point calibration rather than a derivation. The decisive test: re-derive A using a galaxy-intrinsic
+              scale (V<sub>flat</sub>/H&#x2080;, R<sub>half</sub>, or R<sub>disk</sub>) instead of R&#x2080;.
+              If the agreement survives with galaxy-intrinsic scales, the derivation is real; if it requires R&#x2080; = 8 kpc,
+              it is a Milky-Way coincidence. This is now the only surviving first-principles claim in the framework
+              and should be the most auditable derivation on the site.
+              Proposal: <code>a_from_jeans_r0_universality_flaw.md</code> (Synchronism Research repo, 2026-06-07).
+            </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               <strong>Symbol note (2026-04-24 correction):</strong> &#x03B2;<sub>J</sub> is the Jeans ratio &#x03BB;<sub>Jeans</sub>/R<sub>half</sub>
               &mdash; an O(1) structural ratio, <em>not</em> the electromagnetic fine-structure constant

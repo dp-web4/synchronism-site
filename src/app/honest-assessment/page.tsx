@@ -58,6 +58,16 @@ export default function HonestAssessment() {
           <strong>Strongly Supported</strong><span>Same; existing usages being migrated incrementally by the daily maintainer track.</span>
         </div>
 
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '1rem' }}>
+          <strong>Operational states</strong> (not badges; describe prediction lifecycle):
+        </p>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          <strong>Kill Criterion Triggered</strong><span>A pre-registered falsification threshold was crossed. Carries Failed badge. Stronger than "Failed" alone because failure was quantified in advance.</span>
+          <strong>MOND-shared</strong><span>A positive result confirms Synchronism AND MOND equally; only a null can discriminate. TEST-09, TEST-10. Not a badge — a non-discrimination marker.</span>
+          <strong>Withdrawn</strong><span>Framework disowned the test — not from data refutation, but from internal contradiction, unmotivated amplitude, or supersession. Carries no badge (never adjudicated). TEST-04 (BAO).</span>
+        </div>
+
         <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '1rem' }}>
           Full discipline: <Link href="/research-philosophy" style={{ color: 'var(--color-accent-blue)' }}>Research Philosophy</Link>.
           Migration plan: <a href="https://github.com/dp-web4/synchronism-site/blob/main/forum/post-kimi-reframe-site-update-instructions-2026-05-28.md" style={{ color: 'var(--color-accent-blue)' }}>forum post 2026-05-28</a>.
@@ -66,8 +76,16 @@ export default function HonestAssessment() {
 
       {/* Plain-language summary for casual readers */}
       <div style={{ background: 'rgba(59, 130, 246, 0.06)', border: '1px solid rgba(59, 130, 246, 0.2)', borderRadius: '0.5rem', padding: '1rem 1.25rem', marginBottom: '1.5rem', maxWidth: '65ch' }}>
+        <p style={{ margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
+          <strong>Why read an audit of a theory that didn&apos;t pan out?</strong> Because the honest map of what
+          failed — and <em>why</em> — is the actual product. Knowing what a density-based coherence function
+          structurally cannot do is genuinely useful: it eliminates a class of modified-gravity ideas
+          in one stroke, explains why galaxy fits can&apos;t extend to clusters, and documents a rare case of
+          a self-audited theory reaching its own null verdict. The methodology that produced this audit
+          is the contribution; the physics just provided the test case.
+        </p>
         <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-          <strong>In plain language:</strong> The framework&apos;s biggest external test came out backwards —
+          <strong>In plain language — what failed:</strong> The framework&apos;s biggest external test came out backwards —
           we predicted the universe&apos;s large-scale structure should be growing <em>slower</em> than
           the standard model, but real data (DESI 2024) shows it growing at or <em>above</em> standard-model
           rates (note: that particular test was post-hoc, not pre-registered). The galaxy transition-shape

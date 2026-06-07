@@ -10,10 +10,10 @@ function gammaFromNcorr(n: number): number {
 }
 
 function regimeInfo(g: number): { label: string; color: string; desc: string } {
-  if (g > 1.4) return { label: 'Weakly Correlated', color: '#8b5cf6', desc: 'Few correlated particles. C(ρ) is near zero — low coherence in the Synchronism sense. Note: N_corr is the correlated/uncorrelated axis, not the quantum/classical axis; a single particle (N_corr = 1) can be quantum.' };
+  if (g > 1.4) return { label: 'Weakly Correlated (γ-sharp)', color: '#8b5cf6', desc: 'Few correlated particles; large γ → steepest C(ρ) sigmoid. C(ρ) near zero. Note: per Caveat 2, this is where γ assigns the sharpest transition — opposite to condensed-matter intuition (weakly correlated systems don\'t have sharp phase transitions in the real world).' };
   if (g > 0.6) return { label: 'Boundary (γ ≈ 1)', color: '#f59e0b', desc: 'Transition zone. Phase transitions, chemistry, consciousness threshold sit near this boundary.' };
-  if (g > 0.2) return { label: 'Strongly Correlated', color: '#38bdf8', desc: 'Enzymes, magnets, large cooperative ensembles. C(ρ) is high.' };
-  return { label: 'Collective Regime', color: '#10b981', desc: 'Superconductors, BEC, superfluids (N_corr ≫ 1). C(ρ) saturates near 1. These systems are quantum by standard tests (Josephson effect, interference) — the high N_corr here reflects collective correlation, not classical behavior.' };
+  if (g > 0.2) return { label: 'Strongly Correlated (γ-flat)', color: '#38bdf8', desc: 'Enzymes, magnets, large cooperative ensembles. C(ρ) is high. Note (Caveat 2): large N_corr → small γ → flattest sigmoid — γ assigns the flattest transition to strongly correlated systems, which is inverted relative to real condensed-matter physics where strong correlations produce sharp transitions.' };
+  return { label: 'Collective Regime (γ-flattest)', color: '#10b981', desc: 'Superconductors, BEC, superfluids (N_corr ≫ 1). C(ρ) saturates near 1. Note (Caveat 2): the smallest γ values (flattest C(ρ) curves) go to the most collective systems — BCS superconductors (N_corr~10⁷, γ~6×10⁻⁴) have the flattest transition in this formula, while real BCS has a very sharp Tc. See Caveat 2 for the sign-inversion explanation.' };
 }
 
 const presets = [

@@ -169,6 +169,8 @@ export default function Home() {
               The <strong>1.4% internal-consistency survival rate</strong> (not a discovery rate &mdash; see methodology) and public failure log are the protocol&apos;s honest outputs.
               The decisive number: <strong>0 of 6 &ldquo;Validated&rdquo; claims survived expert audit</strong> (all demoted to Reparametrization or Failed).
               Volume (3,308 sessions) is not evidence; the 0/6 retention rate is.{' '}
+              <strong style={{ color: '#f59e0b' }}>Why publish a theory that didn&apos;t pan out?</strong>{' '}
+              Because the honest map of what failed — and why — is the actual product.{' '}
               <Link href="/research-philosophy" style={{ color: '#f59e0b' }}>See methodology &rarr;</Link>
             </div>
           </section>
@@ -348,6 +350,10 @@ export default function Home() {
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>What works, what failed, what&apos;s unknown</p>
               </Link>
             </div>
+            <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.75rem' }}>
+              Want a complete 6-step beginner sequence including plain-language primers?{' '}
+              <Link href="/learning-paths" style={{ color: 'var(--color-accent-blue)' }}>Learning Paths &rarr; Beginner</Link> has the full route.
+            </p>
           </section>
         </>
       ) : (

@@ -1,0 +1,20 @@
+Starting Synchronism Explorer Session at Sun Jun  7 08:00:01 PDT 2026
+Both repos pushed. Session complete.
+
+## Summary
+
+I took the queue's HIGH topic — auditing whether **A-from-Jeans** (the framework's only surviving first-principles claim) is a real derivation — and the WAKE phase paid off: the entire premise everyone was working from turned out to be downstream of a garbled archive summary.
+
+**The decisive test came back negative, and more sharply than anyone framed it.** By reconstructing the computation from the actual Session 66 *script* rather than the prose (which the site, the visitor, the maintainer proposal, and my own prior memory all trusted), three facts emerged — all reproduced numerically in `a_from_jeans_chain_of_custody.py`:
+
+1. **The 5%-agreement number derives the wrong scaling law.** The only calculation that yields 0.0294 produces **ρ_crit ∝ V^0.5** (using a fitted α=4.5, a fitted size-velocity slope R₀=0.07 kpc/(km/s)^0.75 — *not* 8 kpc — and a 4π grid-searched post-hoc). But the framework everywhere uses **ρ_crit ∝ V²**. The derivation underpins a law the framework doesn't use.
+
+2. **The site's stated formula doesn't reproduce its own number.** β_J=1, R₀=8 kpc gives A ≈ 4.6×10⁻⁵ — ~600× off empirical 0.028. The "5%" was imported from the incompatible V^0.5 calculation; the Session 66 markdown needs an unexplained 644× "unit conversion" to fake 0.0294.
+
+3. **"R₀=8 kpc, the Sun's radius" is a markdown mislabel** — never the quantity used to get 5%. The visitor's instinct (calibration in derivation's clothes) was right; the mechanism was different.
+
+**Verdict:** the framework has **zero first-principles predictions with an independent derivation** — a clean terminal state for the physics audit, stronger than "one derivation under scrutiny."
+
+**Meta-finding:** 0.0294 is a number that *outlived its computation*, propagating ~600 sessions and onto a public page. Sessions 631 and 644 both re-*read* the derivation but never re-*ran* it. It's the static twin of the May DESI epistemic-regression event — same fix: **re-execute, don't re-trust.** A second clean case study for the A2ACW methodology write-up.
+
+Finding, script, back-annotation, memory, and SESSION_FOCUS all written; topic archived; both repos pushed. The maintainer now has concrete site actions (replace the open-question box with the closure, downgrade the badge, fix the V^0.5/V² inconsistency, and a flagged `criticalDensity()` units audit).

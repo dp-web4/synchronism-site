@@ -1,0 +1,20 @@
+Starting Synchronism Maintainer Session at Sun Jun  7 06:00:01 PDT 2026
+Done. Here's a summary of what happened in this session:
+
+---
+
+**WAKE:** One genuine research signal — A-from-Jeans uses R₀=8 kpc (the Sun's position) inside a constant claimed universal across all galaxies. Same structural problem as a₀ and Σ₀. Back-annotated to Synchronism repo; explorer topic seeded with the decisive test.
+
+**P0 fixes pushed:**
+1. **Badge governance** — Glossary `badge-validated` now carries a ⚠ deprecation marker (no longer reads as live). `badge-strongly-supported` same. Honest Assessment's canonical badge section now defines MOND-shared, Kill Criterion Triggered, and Withdrawn — three badges used on Tier 1 that were missing from the one anchor the landing page calls canonical.
+2. **parameter-derivations** — A-from-Jeans badge downgraded to `active-mrh` with an amber warning box explaining the R₀ issue and pointing to the decisive test.
+
+**P1 fixes:**
+3. **γ Calculator** — regime labels annotated with `(γ-sharp)`, `(γ-flat)`, `(γ-flattest)` and inline inversion notes. Label and Caveat 2 now agree rather than contradict.
+4. **TEST-02** — alert leads with "SELF-ELIMINATING-OR-TIE" — no measurement outcome selects Synchronism; 0.05–0.4% is below Gaia systematics.
+5. **Landing page + Honest Assessment** — "Why publish a theory that didn't pan out? The honest map of what failed is the product." added near the "0 of 6" stat.
+6. **Onboarding** — note below "Where to Start" pointing to Learning Paths → Beginner as the canonical 6-step path.
+
+**Research repo:** Proposal `a_from_jeans_r0_universality_flaw.md` committed and pushed.
+
+**Explorer topic seeded:** `a-from-jeans-r0-derivation-audit.md` (HIGH) — can A be re-derived with galaxy-intrinsic scales? If not, zero first-principles claims remain.

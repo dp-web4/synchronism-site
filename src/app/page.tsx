@@ -59,7 +59,7 @@ export default function Home() {
           C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </div>
         <p style={{ textAlign: 'center', color: 'var(--color-accent-warm)', fontSize: '0.9rem', fontStyle: 'italic', marginBottom: '1rem' }}>
-          &ldquo;Coherence is a smooth S-curve from quantum to classical, shaped by how many
+          &ldquo;Coherence is a smooth S-curve from sparse/independent to dense/collective, shaped by how many
           particles act together and how dense the system is.&rdquo;
         </p>
         <div style={{ textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
@@ -69,7 +69,7 @@ export default function Home() {
             <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = saturation knee (reference density; not a critical point)
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>
-            <strong>tanh</strong> = S-shaped saturation function: maps any real number to (0,1) — you can skip this and just think &ldquo;smooth S-curve.&rdquo;{' '}
+            <strong>tanh</strong> = S-shaped saturation function: maps any real number to (−1,+1) — C(ρ) stays in [0,1) because the input argument ≥ 0. You can just think &ldquo;smooth S-curve.&rdquo;{' '}
             <strong>ln</strong> = natural log: compression — 1,000× bigger becomes only ~7 units bigger on this axis.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>

@@ -16,7 +16,7 @@ const coreTools = [
   {
     title: 'Coherence Explorer',
     href: '/coherence-explorer',
-    desc: 'Drag γ and ρ_crit sliders and watch the C(ρ) curve update live. See how the quantum-classical transition sharpens or flattens. Best first tool.',
+    desc: 'Drag γ and ρ_crit sliders and watch the C(ρ) curve update live. See how the sparse/independent → dense/collective transition sharpens or flattens. Best first tool.',
     tags: ['Beginner'],
     epistemic: 'core' as EpistemicStatus,
   },

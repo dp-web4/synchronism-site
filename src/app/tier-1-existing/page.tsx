@@ -254,14 +254,16 @@ export default function Tier1Existing() {
             fitted γ values, wide-binary discrimination requires quantifying the MOND+EFE divergence first.
           </p>
           <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-            <strong>EFE gap (2026-05-13):</strong> TEST-01, TEST-02, and TEST-05 are all environment-dependent
+            <strong>EFE gap — CLOSED (2026-06-03):</strong> TEST-01, TEST-02, and TEST-05 are all environment-dependent
             predictions. MOND&apos;s External Field Effect (Bekenstein &amp; Milgrom 1984; AQUAL/QUMOND) also predicts
             environment-dependent dynamics. The compander is now known to be MOND-equivalent at its best-fit γ.
-            Until the MOND+EFE divergence is computed at some parameter value, these tests cannot discriminate
-            Synchronism from MOND.
+            The MOND+EFE divergence was computed on 2026-06-03 (explorer finding):
+            bounded-C(a) caps the boost at ~3.17×, while ~42% of SPARC RAR points require &gt;3.17×
+            (maximum observed ~34×). RAR-fit quality and EFE distinctness trade off monotonically — no
+            boost ceiling fits RAR AND stays EFE-distinct from MOND. This closes the last possible EFE discriminator.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-            Tests 09 and 10 are MOND-shared predictions. The 2026-05-13 analysis found <strong>0 currently discriminating tests from MOND+EFE+ΛCDM</strong>: TEST-01/05 are MOND-EFE-shared in direction with amplitudes ~120× below SPARC reach; TEST-02 has a structurally distinct direction but predicted amplitude ~80× below Gaia DR3 reach. Until the MOND+EFE divergence is computed, the effective discriminating test count is 0.
+            Tests 09 and 10 are MOND-shared predictions. The 2026-05-13 analysis found <strong>0 currently discriminating tests from MOND+EFE+ΛCDM</strong>: TEST-01/05 are MOND-EFE-shared in direction with amplitudes ~120× below SPARC reach; TEST-02 has a structurally distinct direction but predicted amplitude ~80× below Gaia DR3 reach. The EFE closure (2026-06-03) confirms the effective discriminating test count is <strong>0</strong> — no parameter value makes these tests discriminate.
           </p>
         </div>
 

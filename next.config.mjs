@@ -324,6 +324,18 @@ const nextConfig = {
         destination: '/parameter-derivations',
         permanent: false,
       },
+      // /quantum-mechanics — 404d by grad student (Pass 3, 2026-06-08); correct route is /quantum
+      {
+        source: '/quantum-mechanics',
+        destination: '/quantum',
+        permanent: false,
+      },
+      // /learning-path (singular) — 404 reported by casual reader (Pass 1, 2026-06-08); canonical is /learning-paths
+      {
+        source: '/learning-path',
+        destination: '/learning-paths',
+        permanent: false,
+      },
     ];
   },
 };

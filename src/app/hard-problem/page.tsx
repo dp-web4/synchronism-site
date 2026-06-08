@@ -78,7 +78,7 @@ export default function HardProblem() {
           C = f(&#x03B3;, D, S)
         </div>
         <p>
-          Where &#x03B3; is the coherence parameter, D is dimensional embedding (how rich the
+          Where &#x03B3; is the sharpness exponent (= 2/&#x221A;N<sub>corr</sub> — same parameter as in C(ρ) elsewhere on the site; <em>not</em> a separate coherence variable), D is dimensional embedding (how rich the
           representation space is), and S is the degree of self-modeling. All three must be in
           the right range for consciousness to arise.
         </p>
@@ -92,7 +92,7 @@ export default function HardProblem() {
             <strong>D and S are not yet operationally defined.</strong> There is no stated measurement
             procedure or unit for dimensional embedding (D) or self-modeling depth (S). Without
             operational definitions, the framework cannot yet compute C for any real system using
-            this formula, and the 34 predictions cannot be tested until D and S are specified. The
+            this formula, and the candidate predictions cannot be tested until D and S are specified. The
             badge reflects this: the prediction is <em>Speculative</em>, not <em>Untested</em> &mdash;
             it cannot yet be tested, not just hasn&apos;t been.
           </p>
@@ -108,11 +108,8 @@ export default function HardProblem() {
 
         <h2>Status</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          This is a theoretical framework with 34 candidate predictions. The leading candidate is
-          the consciousness threshold at C &#x2248; 0.50, measurable via EEG phase coherence &mdash;
-          but it is <strong>non-falsifiable as currently stated</strong>: D and S are not yet
-          operationally defined, so C cannot be computed for any real system. It is a conjecture
-          pending operationalization, not yet a falsifiable prediction. See{' '}
+          This framework proposes candidate predictions, none currently testable: D and S are not operationally defined, so C cannot be computed for any real system using this formula. The leading conjecture is
+          the consciousness threshold at C &#x2248; 0.50 &mdash; but it is <strong>non-falsifiable as currently stated</strong> and should be read as a research direction, not a prediction. See{' '}
           <Link href="/consciousness-threshold" style={{ color: 'var(--color-accent-blue)' }}>
             Consciousness Threshold
           </Link>{' '}for the honest-caveat list.
@@ -123,7 +120,7 @@ export default function HardProblem() {
             Next: Consciousness Threshold &rarr;
           </Link>
           <Link href="/consciousness-predictions" className="btn-secondary">
-            See the 34 Predictions
+            See candidate predictions
           </Link>
         </div>
       </section>

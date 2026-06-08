@@ -18,7 +18,7 @@ export default function ParameterDerivations() {
           factor 2 is not rigorously derived; CLT is invoked for correlated DOF where CLT doesn&apos;t apply).
           ρ<sub>crit</sub> = A·V<sub>flat</sub>² with A ≈ 0.029 is <strong>calibrated</strong> to the Jeans criterion — V<sub>flat</sub> is the input.
           The scaling constants are dimensional analyses with 3–12% errors that may reflect implicit calibration
-          rather than predictive accuracy. The functional form tanh is <strong>motivated</strong> by analogy with the sigmoid/compander family (μ-law, Hill, logistic), not uniquely derived. A more accurate title: <em>Parameter Calibration &amp; Honest Ansätze</em>.
+          rather than predictive accuracy. The functional form tanh is <strong>motivated</strong> by analogy with the sigmoid/compander family (μ-law, Hill, logistic), not uniquely derived. <strong>Update (2026-06-07):</strong> A-from-Jeans — the only surviving first-principles candidate — is now audited-negative: the derivation that produces 0.029 uses a different scaling law (ρ<sub>crit</sub> ∝ V<sup>0.5</sup>) than the framework's stated ρ<sub>crit</sub> ∝ V², and the stated formula gives A ≈ 4.6×10⁻⁵ (600× off). Zero parameters have independent first-principles derivations. A more accurate title: <em>Parameter Calibration &amp; Honest Ansätze</em>.
           Read this page before concluding the equation is derived.
         </p>
       </div>
@@ -94,26 +94,31 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>3. A = 4&#x03C0;/(&#x03B2;<sub>J</sub>&sup2;GR&#x2080;&sup2;) &#x2248; 0.029</h3>
-              <ValidationBadge status="active-mrh" label="Active-MRH — Derivation Under Scrutiny" />
+              <ValidationBadge status="audited-negative" label="Audited-Negative — Chain-of-Custody Failure" />
             </div>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #53, #66</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #53, #66 — decisive test run 2026-06-07</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               &#x03B2;<sub>J</sub> = &#x03BB;<sub>Jeans</sub> / R<sub>half</sub> is the dimensionless Jeans-length-to-galaxy-size ratio
-              (Session 53). Empirically &#x03B2;<sub>J</sub> &#x2248; 1.1 &#x00B1; 0.2 across SPARC galaxies;
-              &#x03B2;<sub>J</sub> = 1.0 is the fiducial. From the Jeans criterion (&#x03C1;<sub>crit</sub> = V&#x00B2; / (G&#x03B2;<sub>J</sub>&sup2;R<sub>half</sub>&sup2;))
-              with R&#x2080; = 8 kpc and the 4&#x03C0; factor from spherical surface-area integration (Session 66),
-              A = 0.0294 vs empirical 0.028 — 5% agreement.
+              (Session 53). Empirically &#x03B2;<sub>J</sub> &#x2248; 1.1 &#x00B1; 0.2 across SPARC galaxies.
             </p>
-            <div style={{ background: 'rgba(245, 158, 11, 0.08)', border: '1px solid rgba(245, 158, 11, 0.3)', borderRadius: '0.375rem', padding: '0.75rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <strong>⚠ Open question (2026-06-07):</strong> R&#x2080; = 8 kpc is the Sun&apos;s galactocentric radius in
-              the Milky Way. Why would the Sun&apos;s position set a constant claimed universal across all galaxies?
-              With &#x03B2;<sub>J</sub> as a free O(1) parameter and one calibration point, the 5% match may be
-              one-point calibration rather than a derivation. The decisive test: re-derive A using a galaxy-intrinsic
-              scale (V<sub>flat</sub>/H&#x2080;, R<sub>half</sub>, or R<sub>disk</sub>) instead of R&#x2080;.
-              If the agreement survives with galaxy-intrinsic scales, the derivation is real; if it requires R&#x2080; = 8 kpc,
-              it is a Milky-Way coincidence. This is now the only surviving first-principles claim in the framework
-              and should be the most auditable derivation on the site.
-              Proposal: <code>a_from_jeans_r0_universality_flaw.md</code> (Synchronism Research repo, 2026-06-07).
+            <div style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.3)', borderRadius: '0.375rem', padding: '0.75rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+              <strong style={{ color: '#ef4444' }}>✗ CLOSED — Audited-Negative (2026-06-07).</strong> The decisive test was run
+              against the Session 66 <em>script</em> (not the prose summary). Three findings:
+              <ol style={{ marginTop: '0.5rem', marginBottom: '0.5rem', paddingLeft: '1.25rem' }}>
+                <li><strong>Wrong scaling law:</strong> The only computation that yields A ≈ 0.0294 uses
+                ρ<sub>crit</sub> ∝ V<sup>0.5</sup> (Session 65: exponent B=0.5) with a fitted R₀ = 0.07 kpc/(km/s)^0.75
+                — <em>not</em> R₀ = 8 kpc and not the framework&apos;s ρ<sub>crit</sub> ∝ V² used everywhere else
+                (equations.ts). The derivation that hits 5% underpins a law the framework does not use.</li>
+                <li><strong>Stated formula gives 600× off:</strong> A = 4π/(β<sub>J</sub>²·G·R₀²) with β<sub>J</sub>=1,
+                R₀=8 kpc gives A ≈ 4.6×10⁻⁵ — not 0.029. The Session 66 markdown bridges them with an
+                unexplained 644× &ldquo;unit conversion.&rdquo;</li>
+                <li><strong>Number detached from computation:</strong> 0.0294 propagated ~600 sessions without
+                anyone re-running the stated formula. Same failure mode as the 2026-05-25 DESI epistemic regression.</li>
+              </ol>
+              Verdict: A-from-Jeans is <strong>not</strong> an independent first-principles derivation under any reading.
+              The framework has zero first-principles predictions with an independent derivation.
+              Finding: <code>a-from-jeans-chain-of-custody-failure.md</code>; back-annotation:
+              <code>a_from_jeans_chain_of_custody_closure.md</code> (Synchronism Research repo, 2026-06-07).
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               <strong>Symbol note (2026-04-24 correction):</strong> &#x03B2;<sub>J</sub> is the Jeans ratio &#x03BB;<sub>Jeans</sub>/R<sub>half</sub>

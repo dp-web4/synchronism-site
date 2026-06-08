@@ -7,11 +7,11 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 const regions = [
   {
     id: 'classical',
-    label: 'γ < 0.6 — Collective',
+    label: 'γ < 0.6 — High-N_corr (strongly correlated)',
     color: '#10b981',
     range: [0, 0.6],
     systems: ['Superconductors', 'BEC', 'Superfluids', 'Cooper pairs', 'Quantum computers'],
-    physics: 'Many correlated particles (large N_corr, small γ) — the collective / strongly correlated regime. BEC, BCS superconductors, and superfluids sit here because they have enormous N_corr. Note: this is NOT the same as "classical" in the standard quantum/classical sense — these are macroscopic quantum systems. The label describes correlation count, not quantum-vs-classical.',
+    physics: 'Many correlated particles (large N_corr, small γ) — the strongly correlated regime. BEC, BCS superconductors, and superfluids sit here because they have enormous N_corr, giving them very small γ (≈6×10⁻⁴ for BCS). Important: "collective" in the C-axis sense (C→1) is separate from "large N_corr" here — small γ gives a nearly flat tanh curve, so C stays near 0 at physically accessible densities despite large N_corr. See γ Calculator caveats for this documented inversion.',
   },
   {
     id: 'boundary',
@@ -19,7 +19,7 @@ const regions = [
     color: '#f59e0b',
     range: [0.6, 1.4],
     systems: ['Liquid water', 'Enzymes', 'Phase transitions', 'Chemical bonds', 'Neural firing', 'Consciousness threshold'],
-    physics: 'The interesting regime. Quantum and classical effects compete. Phase transitions occur here. Chemistry lives here. Consciousness threshold (C ≈ 0.50) maps to this regime.',
+    physics: 'The interesting regime where collective and independent behavior balance. Phase transitions, chemical bonding, and neural dynamics occur here. The consciousness threshold conjecture (C ≈ 0.50) maps to this regime, though D and S remain undefined — see hard-problem page.',
   },
   {
     id: 'quantum',

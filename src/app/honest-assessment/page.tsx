@@ -93,7 +93,8 @@ export default function HonestAssessment() {
           in May 2026 and collapsed the framework onto MOND (ΔBIC=+184 against the γ=2 version;
           free-γ = MOND). The predictions we thought were novel turned out to already exist in physics under
           different names. Zero predictions have been independently confirmed.
-          Scoreboard: <strong>0 confirmed, 0 prospective predictions tested, 6 reparametrizations, 1 galaxy-program closure</strong>.
+          Zero parameters have an independent first-principles derivation — the last surviving candidate (A-from-Jeans) was closed as audited-negative on 2026-06-07: the Session 66 script produces A ≈ 4.6×10⁻⁵ (600× off the stated 0.029) under the framework&apos;s own ρ<sub>crit</sub> ∝ V² scaling.
+          Scoreboard: <strong>0 confirmed, 0 prospective predictions tested, 6 reparametrizations, 1 galaxy-program closure, 0 independently-derived parameters</strong>.
         </p>
       </div>
 

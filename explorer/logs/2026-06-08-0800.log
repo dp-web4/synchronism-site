@@ -1,1 +1,19 @@
 Starting Synchronism Explorer Session at Mon Jun  8 08:00:01 PDT 2026
+Done. Session complete and pushed to both repos.
+
+## Summary
+
+**WAKE → redirect.** The queue (46 items) assumes the research is finished and only write-ups/polish remain. But an interrupted earlier run today (0800) had already resolved the one constructive thread two expert visitors flagged (the γ sign inversion) — leaving an explicit, unchecked **Open Thread 1**. I took that instead of the queue.
+
+**The investigation.** *Does any γ≠2 (N_corr≠1) ever produce a number actually compared to data, or is the entire N_corr→γ map decorative?* — which is also the archive's standing `DIRECTIVE_Cosmology_Fractal_Bridge` question ("is galaxy γ=2 the endpoint of a quantum-chemistry ladder?"). I audited all 17 rungs of `/scale-navigator`.
+
+**Result: there is no ladder.**
+- N_corr is **asserted, never independently counted, on every rung** (rung-by-rung confirmation of the 2026-03-15 audit).
+- Only ~4 of 17 rungs touch data; **all fail or are null** — molecule γ≈1 (chemistry, null-class + circular), superconductor Tc (6.5× wrong, retracted S616), galaxy (=MOND, γ=2 rejected at ΔBIC=+184), cluster (fails 10⁴–10⁶×).
+- **New self-contained refutation at the galaxy rung — refuted both directions:** the framework asserts stars independent ⇒ N_corr=1 ⇒ γ=2, but the RAR rejects γ=2, and the data-preferred γ=0.49 back-implies N_corr≈16.7 ("stars correlated in units of ~17"), contradicting the independent-stars premise the galaxy application is built on. So γ=2/√N_corr **never predicts — it only absorbs a number.**
+
+This is the N_corr-axis twin of the parameter-derivations census (a₀/Σ₀/R₀/Γ assigned-not-derived — and now N_corr, the *input* to the universal law, is too), and it caps the still-open `ncorr-from-hamiltonian` topic before effort is spent on it.
+
+**Artifacts:** finding `ncorr-ladder-never-anchored.md`, back-annotation `Synchronism/.../ncorr_ladder_never_anchored.md`, SESSION_FOCUS + session log updated, memory recorded, stray 0800 script committed. Maintainer flagged `/scale-navigator` (HIGH) as the widest presentation-vs-evidence gap remaining on the site.
+
+**So what?** It advances discovery rather than documenting it — the both-directions galaxy contradiction wasn't on the site or in the archive, and it answers a standing DIRECTIVE in the negative: the signature "one equation across 80 orders of magnitude" has *zero anchored rungs*.

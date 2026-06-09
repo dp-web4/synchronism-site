@@ -17,9 +17,9 @@ export default function CoreIdea() {
 
       <section className="section content-width">
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1.25rem', fontSize: '1.05rem' }}>
-          Think of it as a <strong>dimmer switch</strong> between fully quantum and fully classical.
-          Feed it the local density of a system, and it outputs a number between 0 (quantum) and 1 (classical).
-          The same switch, the same scale, works for a single atom and a galaxy cluster.
+          Think of it as a <strong>dimmer switch</strong> from sparse/independent to dense/collective.
+          Feed it the local density of a system, and it outputs a number between 0 (sparse/independent)
+          and 1 (dense/collective). The same switch, the same scale, works for a single atom and a galaxy cluster.
         </p>
 
         <div className="equation" style={{ fontSize: '1.5rem' }}>
@@ -36,7 +36,7 @@ export default function CoreIdea() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>C</div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-              Coherence: 0 = quantum, 1 = classical
+              Coherence: 0 = sparse/independent, 1 = dense/collective
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
@@ -60,7 +60,7 @@ export default function CoreIdea() {
         <h3>Why tanh?</h3>
         <p>
           tanh is an S-shaped curve that smoothly transitions from 0 to 1 &mdash; think of it as a
-          dimmer switch between &ldquo;fully quantum&rdquo; and &ldquo;fully classical.&rdquo; The function
+          dimmer switch from sparse/independent to dense/collective. The function
           must be bounded [0, 1], monotonic, and smooth. tanh is <em>motivated</em> by the Ising model
           self-consistency form m = tanh(&beta;Jzm), but C(&#x03C1;) is not a self-consistency equation &mdash;
           &#x03C1; goes in, C comes out, with no feedback loop. Other sigmoids (logistic, error function, Hill)

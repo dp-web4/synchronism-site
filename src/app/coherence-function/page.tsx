@@ -34,8 +34,16 @@ export default function CoherenceFunction() {
 
         <p>
           This maps <strong>presence</strong> to <strong>coherence</strong>
-          (a dimensionless number between 0 and 1 that describes how quantum or classical a system is).
+          (a dimensionless number between 0 and 1 that measures how collectively elements behave
+          &mdash; from sparse/independent (C&nbsp;&asymp;&nbsp;0) to dense/collective (C&nbsp;&asymp;&nbsp;1)).
         </p>
+        <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem', marginBottom: '0.5rem', fontSize: '0.82rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#f59e0b' }}>Note for physicists:</strong>{' '}
+          &ldquo;Coherence&rdquo; here means density-driven <em>classicality/collectivity</em>, not quantum phase coherence.
+          BCS superconductors and BECs land at C&nbsp;&asymp;&nbsp;0 at all physical densities because their large
+          N<sub>corr</sub> → tiny γ → flat tanh curve &mdash; not because they lack macroscopic phase coherence.
+          See the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>glossary</Link> warning.
+        </div>
 
         <h2>Inputs and Outputs</h2>
         <div className="grid-3" style={{ marginBottom: '1.5rem' }}>
@@ -81,14 +89,14 @@ export default function CoherenceFunction() {
           <li><strong>Handles extremes</strong>: &#x03C1; &rarr; 0 gives C &rarr; 0, &#x03C1; &rarr; &infin; gives C &rarr; 1</li>
         </ul>
         <p>
-          From mean-field theory, tanh arises <em>naturally</em> from these constraints — the Ising-model
-          self-consistency equation m = tanh(&beta;Jzm) has the same form. <strong>However, Synchronism&apos;s
+          Several compander functions satisfy all four constraints: logistic, erf, arctan, Hill, and tanh.
+          tanh is the chosen form, motivated historically by its appearance in the Ising mean-field
+          self-consistency equation m&nbsp;=&nbsp;tanh(&beta;Jzm) — the same shape. <strong>However, Synchronism&apos;s
           C(&#x03C1;) is not the Ising equation.</strong> The Ising result is a self-consistency loop where m
           appears on both sides. C(&#x03C1;) evaluates directly with no feedback loop — &#x03C1; goes in, C
-          comes out. This distinction matters: the tanh shape is <em>motivated</em> by mean-field theory, not
-          derived from it. Any sigmoid satisfying the four constraints above (logistic, erf, arctan, Hill) would
-          have been an equally valid choice. tanh is the most natural choice given the Landau analogy,
-          but not the uniquely forced one. <strong>Empirical caveat:</strong> Landau-universality critical exponents
+          comes out. The tanh shape is <em>motivated</em> by the Ising analogy, not derived from it;
+          it is a phenomenological choice from the compander family (μ-law, Hill, logistic, tanh), not the uniquely forced form.
+          <strong>Empirical caveat:</strong> Landau-universality critical exponents
           (&#x03B2;, &#x03BD;, &#x03B1;, &#x03B4;, &#x03B7;) are off by ~2&times; in practice — the Landau analogy
           is motivational, not an accurate prediction of universality class. See{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>. See{' '}
@@ -114,19 +122,21 @@ export default function CoherenceFunction() {
         <h2>What C = 0 and C = 1 Mean</h2>
         <div className="grid-2" style={{ marginBottom: '1.5rem' }}>
           <div className="card">
-            <h3 style={{ color: '#38bdf8' }}>C &rarr; 0: Quantum</h3>
+            <h3 style={{ color: '#38bdf8' }}>C &rarr; 0: Sparse/Independent</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Superposition maintained. Wave-like behavior. Interference possible.
-              Systems in this regime show non-classical correlations.
-              This is where quantum computing operates.
+              Low density or flat tanh (large N<sub>corr</sub>). Wave-like behavior, superposition,
+              interference — associated behaviors in the sparse limit.
+              Sparse gases and quantum computing operate here.
+              Note: BCS superconductors also land here due to tiny γ, not because they lack phase coherence.
             </p>
           </div>
           <div className="card">
-            <h3 style={{ color: '#22c55e' }}>C &rarr; 1: Classical</h3>
+            <h3 style={{ color: '#22c55e' }}>C &rarr; 1: Dense/Collective</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Definite positions. Particle-like behavior. No interference.
+              High density relative to ρ<sub>crit</sub>, moderate N<sub>corr</sub>.
+              Definite positions, particle-like behavior, no interference.
               Everyday physics. Newton&apos;s laws work here.
-              Galaxy dynamics lives in this regime.
+              Galaxy dynamics (N<sub>corr</sub>&asymp;1, γ=2) lives in this regime.
             </p>
           </div>
         </div>

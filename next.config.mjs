@@ -69,6 +69,11 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/tools/galaxy-curve',
+        destination: '/galaxy-plotter',
+        permanent: false,
+      },
+      {
         source: '/tools/:path*',
         destination: '/:path*',
         permanent: false,

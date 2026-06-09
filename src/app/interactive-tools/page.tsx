@@ -50,7 +50,7 @@ const coreTools = [
   },
   {
     title: 'Chemistry Correlation Explorer',
-    href: '/gamma-boundary',
+    href: '/chemistry-correlation-explorer',
     desc: 'See how γ correlates with chemical properties across 1,703 phenomena. High r values (0.98+) reflect density-monotonicity, not Synchronism-specific physics — null model comparison pending.',
     tags: ['Advanced'],
     epistemic: 'reparametrization' as EpistemicStatus,

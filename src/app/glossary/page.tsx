@@ -18,9 +18,15 @@ export default function Glossary() {
         to see these definitions inline.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '2rem' }}>
-        <strong>Validation badges</strong> (Validated / Untested / Failed / Speculative / Reparametrization / Strongly Supported)
-        are defined at the bottom of this page under &ldquo;Validated,&rdquo; &ldquo;Untested,&rdquo; etc.
-        Every badge on every page links back here.
+        <strong>Validation badges</strong> come in two families.{' '}
+        <em>MRH-relationship</em> badges (Active-MRH, Parallel-Paths, Sidelined, Superseded, Audited-Negative)
+        describe where a claim sits in the research inventory.{' '}
+        <em>Descriptive</em> badges (Untested, Speculative, Reparametrization, Failed) describe the empirical status.
+        Both families are defined below and at the{' '}
+        <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
+          canonical reference in Honest Assessment
+        </Link>.
+        Deprecated badges (Validated, Strongly Supported) are kept for back-compat but no longer used in new content.
       </p>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>

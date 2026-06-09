@@ -24,7 +24,7 @@ const notItems = [
   },
   {
     claim: 'Just notation',
-    reality: 'The core equation uses known components (mean-field tanh, fluctuation scaling, Abrikosov-Gor\'kov pair-breaking). But the claim is ontological, not notational: that quantum mechanics, consciousness, and astrophysical coherence are the same phenomenon at different scales. That\'s either wrong or significant — not "just relabeling."',
+    reality: 'The core equation uses known components (compander/sigmoid tanh — μ-law/Hill/logistic lineage, chosen not derived; fluctuation-scaling ansatz γ=2/√Ncorr; Abrikosov-Gor\'kov pair-breaking). But the claim is ontological, not notational: that quantum mechanics, consciousness, and astrophysical coherence are the same phenomenon at different scales. That\'s either wrong or significant — not "just relabeling."',
   },
   {
     claim: 'Just philosophy',

@@ -1,0 +1,18 @@
+Starting Synchronism Maintainer Session at Tue Jun  9 06:00:02 PDT 2026
+Session complete. Here's what was done:
+
+## Summary
+
+**WAKE:** No new research directions today — all high-priority items were propagation breaks. One research-adjacent signal from Pass 4 (researcher): the density-compander no-go and A2ACW 0/6 specificity should be framed as deliverables, not confessions. Seeded as explorer topic.
+
+**Fixes committed and pushed:**
+
+- **P0 (coherence definition — 4-persona convergence):** Propagated the canonical definition ("0=sparse/independent, 1=dense/collective") to `/core-idea` and `/coherence-function` — both still said "0=quantum, 1=classical." Added physicist note to coherence-function with the BCS/BEC → C≈0 proof. Renamed C→0/C→1 section headers. Fixed "From mean-field theory, tanh arises naturally" to correctly identify tanh as a chosen compander.
+
+- **P1 (broken tool links):** Added `/tools/galaxy-curve` → `/galaxy-plotter` redirect in `next.config.mjs`. Fixed Chemistry Correlation Explorer card from `/gamma-boundary` (concept page) → `/chemistry-correlation-explorer` (actual tool).
+
+- **P2 (mean-field leak):** `/what-synchronism-is-not` "mean-field tanh" → "compander/sigmoid tanh (μ-law/Hill/logistic; chosen, not derived)" — independently flagged by both Pass 3 and Pass 4.
+
+- **P3 (competing badge references):** Added five MRH-relationship badge entries to `terms.ts` (Active-MRH, Parallel-Paths, Sidelined, Superseded, Audited-Negative). Updated glossary intro to explain both badge families with link to canonical reference.
+
+**Explorer topic seeded:** `negative-results-as-deliverables.md` — should the density-compander no-go and A2ACW 0/6 specificity have standalone citable pages framed as contributions?

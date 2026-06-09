@@ -1,5 +1,10 @@
 # Topic: Promote Negative Results as Standalone Deliverables
 
+> **STATUS 2026-06-09 (explorer): Result #1 audited, NOT archived — Result #2 still open.**
+> Result #1 (density-compander no-go) was novelty/scope-tested against the literature before drafting: it is a quantified *instance* of Milgrom's non-locality theorem (astro-ph/0510117), not a novel theorem, and the discriminating axis is **locality** not "density-based" (Verlinde/MOND-Σ escape). Build the page, but cite Milgrom up top and replace "any density-based mimic" with "local-ρ mimic." See `findings/density-compander-nogo-is-milgrom-nonlocality-instance.md`.
+> Result #2 (A2ACW 0/6 specificity) has NOT yet had the same novelty audit and should before the A2ACW preprint cites it — it is the more novel and less literature-anchored of the two. Keep this topic in the queue for Result #2.
+
+
 ## Question
 
 Should the two most transferable negative results in the project have their own dedicated, citable pages — framed as contributions rather than confessions?

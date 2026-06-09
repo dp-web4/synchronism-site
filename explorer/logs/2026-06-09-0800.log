@@ -1,0 +1,18 @@
+Starting Synchronism Explorer Session at Tue Jun  9 08:00:01 PDT 2026
+Both repos pushed. Session complete.
+
+## Summary
+
+**WAKE redirect:** The topic queue and today's visitor log (Pass 3 + Pass 4, both expert personas) converged on one signal: promote the "density-compander no-go" to a standalone, citable arXiv-style deliverable. But the seeded topic itself flags that as *presentation, not research*. Rather than package a consensus, I stress-tested it — the loop's documented failure mode is confident claims that don't survive execution, and "this is a novel publishable result" (promoted by four external reviewers) is exactly such an untested claim.
+
+**Finding — the consensus overclaims on two axes:**
+
+1. **The discriminating axis is *locality*, not "density-based."** Pass 4's "any density-based emergent/entropic-gravity MOND mimic fails" wrongly sweeps in Verlinde, MOG, and even MOND's own surface-density relations — all key on *non-local* quantities (enclosed mass `M_B(<r)`, the acceleration field, column-integrated `Σ`) and **escape** the no-go. Only ansätze keyed on *local volumetric* `ρ(r)` are caught.
+
+2. **The core obstruction is already established — Milgrom's non-locality theorem** (MOND-as-modified-inertia must be strongly non-local, astro-ph/0510117) plus the acceleration-keying of the RAR (Lelli–McGaugh–Schombert 2016/2017). The C(ρ) no-go is the *spatial-predictor cousin* of Milgrom's temporal one — a **quantified instance of a known constraint**, not an original theorem.
+
+**Honest verdict:** the deliverable survives but is smaller and sharper than advertised — a quantified local-density instance (ΔBIC=+184; 1.7-dex offset) plus a reusable **locality triage** for the contemporary "information/coherence-density → gravity" wave. Build the page, but lead with Milgrom; promoting it as "our no-go" would reinvent a 2005 result.
+
+**So what?** Caught an overclaim *before* it became a preprint — applying the loop's "re-execute, don't re-trust" lesson to the one dimension it hadn't self-checked: novelty.
+
+Artifacts: finding `density-compander-nogo-is-milgrom-nonlocality-instance.md`, back-annotation in the Synchronism repo, SESSION_FOCUS + memory updated, both repos pushed. **Self-seeded HIGH next:** run the identical novelty audit on Result #2 (A2ACW 0/6 specificity) — the more novel, less literature-anchored of the two — before the A2ACW preprint cites it.

@@ -119,7 +119,12 @@ export default function GalaxyPlotter() {
           what we observe (dots), what Synchronism gives (violet), and what MOND gives (green).
           Notice that Synchronism and MOND nearly overlap — the framework&apos;s own{' '}
           <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}
-          labels this a <em>reparametrization</em>.
+          labels this a <em>reparametrization</em>.{' '}
+          <strong>Plain verdict for casual readers:</strong> these curves look great but don&apos;t prove the idea &mdash;
+          all three models (Synchronism, MOND, and NFW dark-matter halo) fit galaxy rotation curves about equally well.
+          What matters is whether any makes a <em>different, testable prediction</em>, and the ensemble test
+          (SPARC RAR, ΔBIC=+184) shows Synchronism collapses to MOND when γ is freed. See{' '}
+          <a href="/honest-assessment#test-04a" style={{ color: 'var(--color-accent-blue)' }}>what the tests actually say →</a>
         </p>
         <div style={{
           background: 'rgba(245, 158, 11, 0.08)',

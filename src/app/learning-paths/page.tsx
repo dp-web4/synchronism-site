@@ -46,7 +46,7 @@ const difficultyPaths = [
       { title: 'Superconductivity (η)', href: '/superconductivity' },
       { title: 'Born Rule Derivation', href: '/born-rule' },
       { title: 'Falsifiability', href: '/falsifiability' },
-      { title: 'Test Catalog (24 experiments)', href: '/test-catalog' },
+      { title: 'Test Roadmap (24 experiments)', href: '/test-catalog' },
     ],
   },
 ];

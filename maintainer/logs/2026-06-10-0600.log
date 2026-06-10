@@ -1,0 +1,50 @@
+Starting Synchronism Maintainer Session at Wed Jun 10 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-06-10
+
+## Feedback Reviewed
+- Visitor log: 2026-06-10 — 4-persona pass, primarily propagation failures
+- Forum: no new input
+- Explorer: 2026-06-09 finding (density-compander no-go locality classification) had HIGH maintainer actions not yet propagated
+
+## WAKE Assessment
+No new research directions today. All P0 items are propagation failures from prior sessions:
+- 2026-06-09 explorer (HIGH): density-compander no-go overclaims "any density-based MOND mimic"; correct framing is "any keyed on local volumetric ρ(r); Verlinde/MOG/MOND-Σ escape via non-local variables; root obstruction = Milgrom astro-ph/0510117"
+- 2026-06-08 explorer (HIGH): scale-navigator N_corr values shown as measured progression; none are independently measured; galaxy rung contradicts itself in both directions
+- Two-pass convergence (Pass 2 + 3, HIGH): test-catalog badge legend still had deprecated "Validated" despite the site's own "0 Validated survived" headline
+
+Pass 4's DESI single-bin concern is already addressed: honest-assessment line 336 already states "fundamental failure is directional (sign-wrong), independent of bin choice."
+
+## Changes Made (Site)
+
+- src/app/test-catalog/page.tsx: Replaced deprecated "Validated — externally confirmed" badge legend with canonical two-family taxonomy (MRH-relationship: Active-MRH, Parallel-Paths, Sidelined, Superseded, Audited-Negative; Descriptive: Reparametrization, Untested, Speculative, Failed). Updated canonical-definitions link to /honest-assessment#validation-badge-definitions. P0 — flagged HIGH by both Pass 2 and Pass 3.
+
+- src/app/scale-navigator/page.tsx: Added red epistemic-status banner: "Every N_corr value is asserted not independently measured; ~4/17 rungs confronted with data (all fail/null); galaxy rung self-contradictory (γ=2 rejected ΔBIC=+184; γ≈0.49 → N_corr≈17 contradicts N_corr=1 premise)." Softened intro. Renamed "Key Insight: γ=2 at Galaxy Scale" section to "Galaxy Scale: γ=2 is asserted and rejected." P0 — outstanding HIGH from 2026-06-08 explorer.
+
+- src/app/honest-assessment/page.tsx: Narrowed density no-go "Transferable finding" from "any density-based emergent gravity mimic" to "any ansatz keyed on local volumetric density ρ(r)." Explicit statement that Verlinde/MOG/MOND-Σ escape via non-local state variables. Added Milgrom astro-ph/0510117 and Lelli+2017 citations. Expanded EFE to "External Field Effect (EFE)." P0/P1 — outstanding HIGH from 2026-06-09 explorer.
+
+- src/app/equation-walkthrough/page.tsx: Changed "Step through the derivation" to "Step through the construction ... tanh and γ=2/√N_corr are motivated choices, not derived results." P1.
+
+- src/app/core-idea/page.tsx: Two "Full derivation →" links changed to "Why tanh? (motivation, not derivation)" and "Why 2/√N_corr? (motivation, not derivation)." P1.
+
+- next.config.mjs: Added /coherence-derivation → /coherence-function redirect (Pass 3 hit 404). P1.
+
+- src/app/why-synchronism/page.tsx: "quantum-classical boundary" → "γ≈1 boundary (sparse/independent ↔ dense/collective crossover)" + physicist note that BEC/BCS sit at low C. P1.
+
+- src/app/galaxy-plotter/page.tsx: Added plain-verdict sentence for casual readers explaining why the visual match doesn't prove the idea, and pointing to the ensemble test. P2.
+
+- src/app/learning-paths/page.tsx: "Test Catalog (24 experiments)" → "Test Roadmap (24 experiments)" to match h1 and navigation.ts. P2.
+
+## Back-Annotations (Research Repo)
+None this session. The density no-go locality correction was already back-annotated by the 2026-06-09 explorer as density_compander_nogo_locality_classification.md.
+
+## Topics Seeded for Explorer
+- explorer/topics/c-symbol-overload-consciousness.md (MEDIUM): C(ρ) compander output vs C=f(γ,D,S) consciousness input are the same symbol but unrelated objects; Pass 3 flagged as physics issue; whether to rename and whether 8-way convergence on C=0.50 is circular.
+
+## Open Items (Deferred)
+- Galaxy Plotter: NFW curve — Pass 4 requested; requires SPARC NFW fit parameters; non-trivial, deferred.
+- C symbol overload (consciousness page rename) — seeded as explorer topic; actual rename is a larger change.
+- γ=2/√N_corr as headline "definition" on landing page — landing page already has back-fit caveat; marginal improvement, deferred.
+
+## So What?
+The scale-navigator banner is the most impactful fix: it was presenting 17 rows of N_corr values as if they were a measured ladder when every value is an assertion and the only tested rung contradicts itself in both directions. The honest-assessment density no-go correction prevents an overclaim that four reviewer passes have now independently spotted (Verlinde escapes, site was wrong to include it). Both fixes address the same structural failure: results from the research loop not propagating to reader-facing pages fast enough.

@@ -55,8 +55,10 @@ export default function EquationWalkthrough() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
-          Step through the derivation of C(&#x03C1;) interactively. Each step adds one piece
-          to the equation and explains why it&apos;s there.
+          Step through the construction of C(&#x03C1;) interactively. Each step adds one piece
+          to the equation and explains the motivation behind it. Note: tanh and
+          &#x03B3;&nbsp;=&nbsp;2/&#x221A;N<sub>corr</sub> are motivated choices, not derived results &mdash;
+          see the caveat blocks in each step.
         </p>
 
         {/* Variable glossary — teach before walking */}

@@ -98,8 +98,13 @@ export default function WhySynchronism() {
           <div className="card">
             <h3>Chemistry: &#x03B3; &#x2248; 1 Boundary</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-              1,703 chemical phenomena cluster at the quantum-classical boundary.
+              1,703 chemical phenomena cluster near the &#x03B3;&#x2248;1 boundary
+              (sparse/independent &#x2194; dense/collective crossover).
               Sound velocity correlation: r = 0.982.
+              <br /><small style={{ color: 'var(--color-text-muted)' }}>
+                Note: C here measures collective ordering, not quantum phase coherence —
+                quantum-coherent systems (BEC, BCS) sit at <em>low</em> C due to their tiny &#x03B3;.
+              </small>
             </p>
             <span className="badge badge-reparametrization">89% Boundary-Consistent | Template Bias Caveat</span>
           </div>

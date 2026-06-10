@@ -61,14 +61,19 @@ export default function TestCatalog() {
           fontSize: '0.8rem',
           color: 'var(--color-text-muted)',
         }}>
-          <strong style={{ color: 'var(--color-text-secondary)' }}>Validation Badge Guide:</strong>{' '}
-          <span style={{ color: '#22c55e' }}>■ Validated</span> — externally confirmed &nbsp;|&nbsp;
+          <strong style={{ color: 'var(--color-text-secondary)' }}>Validation Badge Guide — MRH-relationship:</strong>{' '}
+          <span style={{ color: '#8b5cf6' }}>■ Active-MRH</span> — under active investigation &nbsp;|&nbsp;
+          <span style={{ color: '#6366f1' }}>■ Parallel-Paths</span> — competing approaches &nbsp;|&nbsp;
+          <span style={{ color: '#94a3b8' }}>■ Sidelined</span> — deprioritised &nbsp;|&nbsp;
+          <span style={{ color: '#6b7280' }}>■ Superseded</span> — replaced by better framing &nbsp;|&nbsp;
+          <span style={{ color: '#ef4444' }}>■ Audited-Negative</span> — closed as wrong.{' '}
+          <strong style={{ color: 'var(--color-text-secondary)' }}>Descriptive:</strong>{' '}
           <span style={{ color: '#f59e0b' }}>■ Reparametrization</span> — known result in new notation &nbsp;|&nbsp;
           <span style={{ color: '#f59e0b' }}>■ Untested</span> — no data yet &nbsp;|&nbsp;
           <span style={{ color: '#94a3b8' }}>■ Speculative</span> — reasoning gap &nbsp;|&nbsp;
           <span style={{ color: '#ef4444' }}>■ Failed</span> — falsified by data.{' '}
-          <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-text-muted)' }}>
-            Full definitions →
+          <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-text-muted)' }}>
+            Canonical definitions →
           </Link>
         </div>
         <div style={{

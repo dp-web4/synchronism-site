@@ -41,8 +41,27 @@ export default function ScaleNavigator() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Slide from Planck (10<sup>&minus;35</sup>m) to cosmic (10<sup>26</sup>m) and see
-          how &#x03B3; changes at every scale. The same equation applies everywhere.
+          how &#x03B3; changes at every scale. The <em>claim</em> is that one equation applies at every
+          scale &mdash; see the epistemic-status note below for what has and hasn&apos;t been tested.
         </p>
+
+        <div className="card" style={{
+          marginBottom: '1.5rem',
+          borderLeft: '3px solid rgba(239, 68, 68, 0.5)',
+          background: 'rgba(239, 68, 68, 0.05)',
+          fontSize: '0.875rem',
+        }}>
+          <strong style={{ color: '#ef4444' }}>Epistemic status of this table (2026-06-08 audit):</strong>{' '}
+          Every N<sub>corr</sub> value in this navigator is <em>asserted, not independently measured</em>.
+          No counting protocol exists that derives N<sub>corr</sub> from a Hamiltonian without first
+          fitting &#x03B3; to observed data &mdash; so the displayed N<sub>corr</sub> values are
+          back-computed from &#x03B3;, not forward-predicted from physics.
+          Only ~4 of 17 rungs have ever been confronted with data; all fail or are null. The galaxy
+          rung is self-contradictory in both directions: the framework asserts N<sub>corr</sub>=1 (independent
+          stars) &rarr; &#x03B3;=2, but SPARC RAR rejects &#x03B3;=2 (&#x394;BIC=+184); the data-preferred
+          &#x03B3;&#x2248;0.49 back-implies N<sub>corr</sub>&#x2248;17 &mdash; contradicting the
+          independent-stars premise that motivates applying C(&#x03C1;) to galaxies at all.
+        </div>
 
         <div className="card card-highlight" style={{ marginBottom: '1.5rem', textAlign: 'center', padding: '2rem' }}>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem' }}>
@@ -118,13 +137,16 @@ export default function ScaleNavigator() {
           </p>
         </div>
 
-        <h2>Key Insight: &#x03B3; = 2 at Galaxy Scale</h2>
+        <h2>Galaxy Scale: &#x03B3; = 2 is asserted and rejected</h2>
         <div className="card" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            Stars in a galaxy are <strong>uncorrelated</strong> (N<sub>corr</sub> = 1, &#x03B3; = 2).
-            This is the same &#x03B3; as an ideal gas. The &ldquo;dark matter&rdquo; signal emerges
-            from applying the coherence function at this classical limit &mdash; patterns interacting
-            indifferently with each other, coupled only by gravity.
+            The framework asserts stars are <strong>uncorrelated</strong> (N<sub>corr</sub> = 1, &#x03B3; = 2),
+            the same &#x03B3; as an ideal gas, and applies C(&#x03C1;) at this value to predict rotation
+            curves. <strong style={{ color: '#ef4444' }}>However, &#x03B3;=2 is rejected on SPARC
+            RAR at &#x394;BIC=+184 (conservative threshold &#x2265;33)</strong> — the data-preferred
+            free &#x03B3;&#x2248;0.49 equals MOND. Furthermore, &#x03B3;&#x2248;0.49 back-implies
+            N<sub>corr</sub>&#x2248;17 (&ldquo;stars correlated in units of ~17&rdquo;), directly
+            contradicting the N<sub>corr</sub>=1 independent-stars premise.
           </p>
         </div>
 

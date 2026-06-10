@@ -443,10 +443,15 @@ export default function HonestAssessment() {
             </p>
             <div style={{ background: 'rgba(167,139,250,0.08)', border: '1px solid rgba(167,139,250,0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
               <strong style={{ color: 'var(--color-accent-violet)' }}>Transferable finding:</strong>{' '}
-              This no-go generalizes beyond Synchronism to <em>any density-based emergent or entropic gravity
-              mimic of MOND</em> — any framework that substitutes a pointwise local-density function for
-              g<sub>bar</sub> will face the same decoupling failure at clusters. The specific C(&#x03C1;)
-              execution is an illustration of a class constraint.{' '}
+              This no-go applies to any modified-gravity ansatz keyed on <em>local volumetric density &#x03C1;(r)</em>.
+              It does <strong>not</strong> apply to frameworks using non-local state variables — Verlinde (enclosed
+              baryonic mass M<sub>B</sub>(&lt;r)), MOG/STVG (enclosed mass scalar), or MOND surface-density
+              formulations (column-integrated &Sigma;) all escape it. The discriminating axis is the
+              <em>locality</em> of the state variable, not whether the framework is &ldquo;density-based.&rdquo;{' '}
+              The root obstruction is Milgrom&apos;s non-locality theorem (astro-ph/0510117): a MOND-type
+              modification must be strongly non-local in space/trajectory to produce the acceleration-keyed
+              RAR (Lelli et al. 2017). C(&#x03C1;) is the quantified <em>local-density instance</em> of
+              that obstruction, not a new theorem.
               Note: MOND also has one acceleration scale (a<sub>0</sub>) and fails at clusters by a
               residual factor of ~2 — so scale-count alone is not the discriminator; the variable (local
               &#x03C1; vs non-local g<sub>bar</sub>) is.
@@ -664,7 +669,7 @@ export default function HonestAssessment() {
               <span style={{ fontFamily: 'monospace', fontSize: '0.8rem', color: '#ef4444' }}>0 / 6 caught</span>
             </div>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              6 claims later demoted (Born rule, wide-binary EFE, galaxy rotation, decoherence formula, chemistry r=0.98, dual-C).
+              6 claims later demoted (Born rule, wide-binary EFE [External Field Effect — MOND], galaxy rotation, decoherence formula, chemistry r=0.98, dual-C).
               A2ACW retrospectively tested: would the adversarial protocol have caught these? Result: <strong>0 of 6</strong>.
               Median prior-art year for the demoted claims: ~1996. Two models sharing the same training corpus
               share the same blind spots.

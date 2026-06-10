@@ -71,7 +71,7 @@ export default function CoreIdea() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Need an analogy first?</Link>
           {' '}&middot;{' '}
-          <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Full derivation &rarr;</Link>
+          <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Why tanh? (motivation, not derivation) &rarr;</Link>
         </p>
 
         <h3>Why &#x03B3; = 2/&#x221A;N<sub>corr</sub>?</h3>
@@ -82,7 +82,7 @@ export default function CoreIdea() {
           quantity. The factor of 2 is motivated by phase-space arguments (6D contracted to 3
           effective) but should be understood as a motivated ansatz rather than a rigorous derivation.
         </p>
-        <p><Link href="/gamma-parameter" style={{ color: 'var(--color-accent-blue)' }}>Full derivation &rarr;</Link></p>
+        <p><Link href="/gamma-parameter" style={{ color: 'var(--color-accent-blue)' }}>Why 2/&#x221A;N<sub>corr</sub>? (motivation, not derivation) &rarr;</Link></p>
 
         <h3>Why log?</h3>
         <p>

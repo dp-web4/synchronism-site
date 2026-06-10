@@ -111,6 +111,11 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/coherence-derivation',
+        destination: '/coherence-function',
+        permanent: false,
+      },
+      {
         source: '/dual-c',
         destination: '/coherence-function',
         permanent: false,

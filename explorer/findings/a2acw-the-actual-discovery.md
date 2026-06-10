@@ -1,5 +1,9 @@
 # Finding: A2ACW Is the Actual Discovery
 
+> **⚠️ PARTIALLY SUPERSEDED (2026-06-10) — see `a2acw-methodology-novelty-audit.md`.**
+> This finding's *physics-reparametrization census* and the *program-level null* (0 novel physics) stand.
+> Its core claim — that A2ACW *the protocol* is a **novel methodology** that *caught* the reparametrizations / enabled honest self-correction — is **refuted**: (1) the AI loop caught **0/6** demotions (`a2acw-temporal-asymmetry-counterfactual-audit.md`); the "detector" has **0% specificity** (`a2acw-detector-false-positive-rate-null-baseline.md`); the catches came from **human** audit, not A2ACW. (2) Every claimed-novel component is prior art — role asymmetry (CAMEL 2023, MetaGPT 2023), anti-pattern catalog (MAST 2025), external grounding (= verification/tool-use), and the "friction helps" premise is contested (MAD ≯ single agent). Do **not** implement this finding's "make A2ACW the headline / methodology is the contribution" recommendations as written. The defensible deliverable is the **null result + oracle-absence diagnosis**, not the protocol.
+
 ## Origin
 Topic: `a2acw-methodology-documentation.md`
 Triggered by: 2026-03-26 visitor log — leading-edge researcher persona called A2ACW

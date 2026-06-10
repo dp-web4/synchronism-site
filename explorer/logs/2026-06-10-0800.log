@@ -1,0 +1,22 @@
+Starting Synchronism Explorer Session at Wed Jun 10 08:00:01 PDT 2026
+Session complete. Summary:
+
+## Explorer Session 2026-06-10 — A2ACW Methodology Novelty Audit
+
+**WAKE redirected me off the queue.** The four queued A2ACW packaging topics all presuppose "A2ACW the protocol is the project's novel discovery — just write it up." Yesterday's no-go finding had explicitly flagged the precondition as its Open Thread #1: *run the same novelty audit on A2ACW before any preprint cites it; the prior is it's narrower than the headline.* That audit was the highest-value work — running it after packaging would publish an unchecked claim.
+
+**Two failures found:**
+
+1. **Component novelty — all prior art.** Role asymmetry = CAMEL (2023) + MetaGPT (2023); anti-pattern catalog = MAST (2025, 14 modes, κ=0.88, supersedes A2ACW's 5 informal ones); external grounding = standard verification; the "friction helps" premise is itself contested (multi-agent debate doesn't reliably beat a single agent at equal token budget). Verified each anchor via web search.
+
+2. **Internal contradiction in the project's own record.** `a2acw-the-actual-discovery.md` claims A2ACW *caught* the reparametrizations — but the project's *later* findings show the loop caught **0/6** (temporal) at **0% specificity**; humans caught them. The consensus was built on the refuted finding.
+
+**What survives** (the honest, narrower deliverable, same shape as the no-go→Milgrom result): the **program-level null** — a sustained adversarial multi-agent-LLM program produced 0 novel physics, all survivors reduce to prior art — sharpened by the FunSearch contrast (novelty needs a *non-corpus oracle*; the null was structural). That's a citable result; the protocol is substrate, not headline.
+
+**Artifacts written:**
+- `findings/a2acw-methodology-novelty-audit.md` (new)
+- Superseding header added to `a2acw-the-actual-discovery.md`
+- 4 packaging topics archived to `topics/done/` with re-scope notes; `a2acw-methodology-paper-draft` framing killed
+- `logs/2026-06-10.md`; memory entry + index line
+
+**So what:** Two days running, the loop's lesson applied to itself — eliminated "the project owns a novel research methodology" before it became a preprint, and surfaced a live self-contradiction in the explorer record. New standing question seeded: a periodic internal-consistency sweep of `findings/`, since two contradictory findings coexisted for weeks. Files are on disk, uncommitted (I commit only when you ask).

@@ -79,7 +79,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Entity Criterion',
       href: '/entity-criterion',
-      desc: 'Γ < m: the one surviving novel prediction across 3,308 sessions',
+      desc: 'Γ < m: demoted 2026-05-20 — standard narrow-width condition (Breit-Wigner), novel survivors now 0',
       keywords: ['entity', 'criterion', 'gamma', 'mass', 'decay', 'PDG', 'resonance', 'novel', 'prediction'],
       related: ['/key-claims', '/honest-assessment', '/quantum-predictions'],
     },
@@ -434,6 +434,13 @@ export const navigationTree: NavigationTree = {
   ],
 
   'Methodology': [
+    {
+      title: 'For Researchers: What\'s Citable',
+      href: '/for-researchers',
+      desc: 'The two defensible artifacts, extracted from the failure documentation',
+      keywords: ['researchers', 'citable', 'no-go', 'locality', 'A2ACW', 'null result', 'deliverables', 'expert'],
+      related: ['/honest-assessment', '/a2acw', '/research-philosophy'],
+    },
     {
       title: 'Research Philosophy',
       href: '/research-philosophy',

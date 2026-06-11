@@ -265,6 +265,12 @@ export default function KeyClaims() {
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '1rem' }}>
             &#x03B3; = coherence parameter, D = dimensional embedding (representational richness), S = self-modeling depth
           </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem' }}>
+            Note: &ldquo;coherence&rdquo; here means density-driven collective ordering (0=sparse/independent,
+            1=dense/collective) &mdash; <em>not</em> quantum phase coherence or neural phase synchrony.
+            BEC/BCS, which are maximally phase-coherent, sit at <em>low</em> C.
+            See <a href="/glossary#coherence" style={{ color: 'var(--color-accent-blue)' }}>Glossary</a>.
+          </p>
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
             Consciousness crosses a threshold near C &#x2248; 0.50 &mdash; the output-range midpoint of
@@ -294,7 +300,8 @@ export default function KeyClaims() {
             Theoretical: 8 Synchronism-based approaches converge on C &#x2248; 0.50 (range 0.48&ndash;0.52).
             Cross-domain: the Gnosis AI architecture independently
             converged on C &#x2248; 0.50 as its operating threshold through 4 different mathematical frameworks.
-            <Link href="/consciousness-predictions">34 falsifiable predictions</Link> enumerated, none tested.
+            <Link href="/consciousness-predictions">34 candidate predictions</Link> enumerated, none tested
+            (most bottleneck on the missing C-calibration protocol below).
           </p>
 
           <div style={{
@@ -317,11 +324,19 @@ export default function KeyClaims() {
             </p>
           </div>
 
-          <h3 style={{ fontSize: '0.9rem', color: '#38bdf8', marginBottom: '0.25rem' }}>The test that kills it</h3>
+          <h3 style={{ fontSize: '0.9rem', color: '#ef4444', marginBottom: '0.25rem' }}>Falsifiability status: currently unrunnable</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            EEG phase coherence during anesthesia induction/recovery. Prediction: a sharp threshold
-            crossing near a specific coherence value, not a gradual fade. If the transition is smooth
-            across subjects with no clustering near C &#x2248; 0.50, the threshold model fails.
+            An earlier version of this page proposed &ldquo;EEG phase coherence during anesthesia&rdquo;
+            as the kill criterion. That test measures the <em>wrong observable</em>: the framework&apos;s C is
+            density-driven collective ordering, explicitly not phase coherence (BCS, maximally
+            phase-coherent, sits at C&nbsp;&#x2248;&nbsp;0) &mdash; so EEG phase synchrony can neither kill nor
+            confirm this claim. Deeper: as the{' '}
+            <Link href="/consciousness-demo" style={{ color: 'var(--color-accent-blue)' }}>threshold demo</Link>{' '}
+            states, <strong>no calibration procedure exists to map any measurement (EEG, fMRI, IIT-&#x03A6;) to the
+            C-axis</strong>. Until such a protocol is defined, this claim is{' '}
+            <strong>unfalsifiable as stated</strong> &mdash; not &ldquo;untested&rdquo; but unrunnable.
+            For contrast, the anesthesia literature has an empirically calibrated threshold candidate
+            (PCI* = 0.31, Casali et al. 2013); the framework has no map from C to it or any other measurable.
           </p>
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -361,15 +376,16 @@ export default function KeyClaims() {
               fontWeight: 500,
               whiteSpace: 'nowrap',
             }}>
-              Failed &mdash; Mechanism Under Revision
+              Failed
             </span>
           </div>
 
           <div className="equation" style={{ marginBottom: '0.25rem', fontSize: '1rem' }}>
-            a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.2 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2;
+            a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.08 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2;
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '1rem' }}>
-            MOND (Modified Newtonian Dynamics) acceleration derived from cosmological coherence boundary
+            MOND (Modified Newtonian Dynamics) acceleration from dimensional analysis
+            (observed: 1.2 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2; &mdash; a ~10% miss, not an exact hit)
           </p>
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
@@ -437,7 +453,8 @@ export default function KeyClaims() {
             fontSize: '0.8rem',
             color: '#ef4444',
           }}>
-            Status: <strong>Failed</strong> — R&sup2; = 0.14 &lt; 0.20 kill criterion (ALFALFA-SDSS, Session #616).
+            Status: <strong>Failed</strong> — R&sup2; = 0.14 &lt; 0.20 kill criterion (ALFALFA-SDSS, Session #616)
+            &middot; Follow-up: mechanism under revision.
             See <Link href="/honest-assessment" style={{ color: '#ef4444' }}>honest assessment</Link> for the full failure catalog.
           </div>
 

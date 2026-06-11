@@ -89,8 +89,8 @@ export default function HonestAssessment() {
           we predicted the universe&apos;s large-scale structure should be growing <em>slower</em> than
           the standard model, but real data (DESI 2024) shows it growing at or <em>above</em> standard-model
           rates (note: that particular test was post-hoc, not pre-registered). The galaxy transition-shape
-          test — the one non-degenerate discriminating test vs MOND — was run on 2807 SPARC galaxies
-          in May 2026 and collapsed the framework onto MOND (ΔBIC=+184 against the γ=2 version;
+          test — the one non-degenerate discriminating test vs MOND — was run on 2,807 SPARC data
+          points (175 galaxies) in May 2026 and collapsed the framework onto MOND (ΔBIC=+184 against the γ=2 version;
           free-γ = MOND). The predictions we thought were novel turned out to already exist in physics under
           different names. Zero predictions have been independently confirmed.
           Zero parameters have an independent first-principles derivation — the last surviving candidate (A-from-Jeans) was closed as audited-negative on 2026-06-07: the Session 66 script produces A ≈ 4.6×10⁻⁵ (600× off the stated 0.029) under the framework&apos;s own ρ<sub>crit</sub> ∝ V² scaling.
@@ -586,8 +586,12 @@ export default function HonestAssessment() {
         </ul>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Top results: 6-variable MOND offset model (LOO R&sup2;=0.938),
-          TFR residual as complete M/L predictor (51.4% improvement on 14,437 galaxies),
+          TFR residual as complete M/L predictor (51.4% improvement on 14,437 galaxies — an
+          analysis subset of the 14,585-galaxy ALFALFA-SDSS cross-match),
           &#963;<sub>int</sub>&nbsp;=&nbsp;0.086&nbsp;&plusmn;&nbsp;0.003&nbsp;dex (definitive BTFR intrinsic scatter).
+          <strong> Status: uncharacterized — not audited.</strong> Unlike the framework&apos;s headline
+          claims, these numbers have not been run against null models or prior art (residual modeling
+          on SPARC/ALFALFA is a worked field); treat them as exploration outputs, not vetted contributions.
           Full list in the{' '}
           <Link href="/publication-roadmap" style={{ color: 'var(--color-accent-blue)' }}>publication roadmap</Link>.
         </p>

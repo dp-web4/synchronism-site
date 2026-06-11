@@ -10,7 +10,7 @@ export default function A2ACW() {
     <>
       <Breadcrumbs currentPath="/a2acw" />
       <h1>A2ACW Protocol</h1>
-      <ValidationBadge status="validated" label="In Use" />
+      <ValidationBadge status="active-mrh" label="In Use — Protocol Is Assembled Prior Art" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -98,6 +98,34 @@ export default function A2ACW() {
               automatic escalation to human.
             </p>
           </div>
+        </div>
+
+        <h2>Prior Art</h2>
+        <div style={{
+          background: 'rgba(56, 189, 248, 0.06)',
+          border: '1px solid rgba(56, 189, 248, 0.25)',
+          borderRadius: '0.5rem',
+          padding: '1rem 1.25rem',
+          marginBottom: '1.5rem',
+        }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: 0 }}>
+            The protocol&apos;s components are not novel, and this page should say so with the same
+            discipline the site applies to its physics. Adversarial AI pairs descend directly from{' '}
+            <strong>AI Safety via Debate</strong> (Irving, Christiano &amp; Amodei 2018, arXiv:1805.00899).
+            Structured multi-agent role protocols (Primary/Challenger/Observer/Coordinator) follow{' '}
+            <strong>CAMEL</strong> (Li et al. 2023) and <strong>MetaGPT</strong> (Hong et al. 2023).
+            The failure modes cataloged above (sycophancy, drift, silent propagation) are documented
+            in the multi-agent failure-mode literature (e.g., the <strong>MAST</strong> taxonomy).
+            External-verification grounding is standard practice in AI-for-science pipelines.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
+            <strong>What is the contribution, then?</strong> Not the protocol — the{' '}
+            <em>controlled program-level null result</em>: a 3,308-session demonstration, with measured
+            sensitivity (4/4 prior-art rediscoveries caught after vocabulary translation) <em>and</em>{' '}
+            measured specificity (0/6 — every held-out genuine discovery false-flagged), that
+            same-corpus adversarial AI pairs filter for internal consistency but cannot generate or
+            detect novelty. The controls are the artifact; the protocol is assembled prior art.
+          </p>
         </div>
 
         <h2>Health Metrics</h2>

@@ -17,27 +17,27 @@ interface ValidationBadgeProps {
  * per dp 2026-05-28, *"we're not at a stage where anything can be honestly claimed
  * as 'established'."*
  */
-const statusConfig: Record<ValidationStatus, { className: string; defaultLabel: string }> = {
+const statusConfig: Record<ValidationStatus, { className: string; defaultLabel: string; definition: string }> = {
   // MRH-relationship tags (preferred)
-  'active-mrh':       { className: 'badge badge-active-mrh',       defaultLabel: 'Active-MRH' },
-  'parallel-paths':   { className: 'badge badge-parallel-paths',   defaultLabel: 'Parallel-Paths' },
-  'sidelined':        { className: 'badge badge-sidelined',        defaultLabel: 'Sidelined' },
-  'superseded':       { className: 'badge badge-superseded',       defaultLabel: 'Superseded' },
-  'audited-negative': { className: 'badge badge-audited-negative', defaultLabel: 'Audited-Negative' },
+  'active-mrh':       { className: 'badge badge-active-mrh',       defaultLabel: 'Active-MRH',        definition: 'Currently in active research focus; being extended or revised' },
+  'parallel-paths':   { className: 'badge badge-parallel-paths',   defaultLabel: 'Parallel-Paths',    definition: 'In the framework’s parallel hypothesis space; not in active focus but not abandoned' },
+  'sidelined':        { className: 'badge badge-sidelined',        defaultLabel: 'Sidelined',         definition: 'Was in active focus, currently not pursued; reasons documented' },
+  'superseded':       { className: 'badge badge-superseded',       defaultLabel: 'Superseded',        definition: 'Replaced by a later formulation' },
+  'audited-negative': { className: 'badge badge-audited-negative', defaultLabel: 'Audited-Negative',  definition: 'Closed audit finding on a historical track; durable record' },
   // Descriptive tags
-  untested:           { className: 'badge badge-untested',         defaultLabel: 'Untested' },
-  failed:             { className: 'badge badge-failed',           defaultLabel: 'Failed' },
-  speculative:        { className: 'badge badge-speculative',      defaultLabel: 'Speculative' },
-  reparametrization:  { className: 'badge badge-reparametrization', defaultLabel: 'Reparametrization' },
+  untested:           { className: 'badge badge-untested',         defaultLabel: 'Untested',          definition: 'Prediction exists, no data yet' },
+  failed:             { className: 'badge badge-failed',           defaultLabel: 'Failed',            definition: 'Prediction contradicted by data' },
+  speculative:        { className: 'badge badge-speculative',      defaultLabel: 'Speculative',       definition: 'Conceptual proposal without quantitative test' },
+  reparametrization:  { className: 'badge badge-reparametrization', defaultLabel: 'Reparametrization', definition: 'Equivalent to existing physics in different notation — same math, not new physics' },
   // Deprecated — kept for back-compat; do not use in new code
-  validated:          { className: 'badge badge-validated',        defaultLabel: 'Validated' },
-  supported:          { className: 'badge badge-supported',        defaultLabel: 'Strongly Supported' },
+  validated:          { className: 'badge badge-validated',        defaultLabel: 'Validated',         definition: 'Deprecated badge — see Honest Assessment for current taxonomy' },
+  supported:          { className: 'badge badge-supported',        defaultLabel: 'Strongly Supported', definition: 'Deprecated badge — see Honest Assessment for current taxonomy' },
 };
 
 export default function ValidationBadge({ status, label }: ValidationBadgeProps) {
   const config = statusConfig[status];
   return (
-    <span className={config.className}>
+    <span className={config.className} title={config.definition}>
       {label || config.defaultLabel}
     </span>
   );

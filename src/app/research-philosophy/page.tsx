@@ -214,6 +214,14 @@ export default function ResearchPhilosophy() {
           existing physics, or (c) the claim is documented as a failure with the mechanism
           of failure on record.
         </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          <strong>Prior art:</strong> the protocol itself is assembled from existing work — adversarial
+          AI pairs from AI Safety via Debate (Irving, Christiano &amp; Amodei 2018), multi-agent role
+          structure from CAMEL/MetaGPT, failure modes from the multi-agent-systems literature. The
+          contribution is the controlled null result with measured sensitivity and specificity, not
+          the protocol. Full prior-art accounting on the{' '}
+          <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</a>.
+        </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           3,308 A2ACW sessions have been run across the research archive. Of these, approximately
           47 produced internal-consistency survivors &mdash; a 1.4% session yield. <strong>Novel-surviving

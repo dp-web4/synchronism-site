@@ -222,6 +222,9 @@ export default function Home() {
               <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization · Speculative · Untested · Failed</Link>
               {' '}— definitions on the <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment page</Link>.
               {' '}<span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em' }}>("Validated" is deprecated; "Withdrawn" is an operational state, not a badge.)</span>
+              <br />
+              <strong>Reparametrization</strong>, this site&apos;s most common verdict, means:{' '}
+              <em>equivalent to existing physics in different notation — the same math wearing a new costume, not new physics.</em>
             </div>
           </section>
 
@@ -257,7 +260,7 @@ export default function Home() {
                   MRH (Markov Relevancy Horizon) crossing replaces wave function collapse. Born rule: equivalent to Zurek/Carroll-Sebens
                   (reparametrization, no novel quantum prediction yet). Ontological reframe, not a new formula.
                 </p>
-                <span className="badge badge-reparametrization">Reparametrization — No Novel Prediction Yet</span>
+                <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — same math, not new physics">Reparametrization — No Novel Prediction Yet</span>
               </Link>
 
               <Link href="/galaxy-rotation" className="card" style={{ textDecoration: 'none' }}>
@@ -275,9 +278,9 @@ export default function Home() {
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
                   1,703 phenomena at the &#x03B3; &#x2248; 1 boundary. Sound velocity r = 0.982.
                   Melting point prediction: 53% error. The 89% consistency rate reflects
-                  Landau-universal sigmoid behavior near criticality — not a Synchronism-unique prediction.
+                  generic sigmoid behavior on density-monotonic properties — not a Synchronism-unique prediction.
                 </p>
-                <span className="badge badge-reparametrization">Reparametrization — Chemistry</span>
+                <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — same math, not new physics">Reparametrization — Chemistry</span>
               </Link>
 
               <Link href="/hard-problem" className="card" style={{ textDecoration: 'none' }}>

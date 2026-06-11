@@ -11,7 +11,7 @@ const regions = [
     color: '#10b981',
     range: [0, 0.6],
     systems: ['Superconductors', 'BEC', 'Superfluids', 'Cooper pairs', 'Quantum computers'],
-    physics: 'Many correlated particles (large N_corr, small γ) — the strongly correlated regime. BEC, BCS superconductors, and superfluids sit here because they have enormous N_corr, giving them very small γ (≈6×10⁻⁴ for BCS). Important: "collective" in the C-axis sense (C→1) is separate from "large N_corr" here — small γ gives a nearly flat tanh curve, so C stays near 0 at physically accessible densities despite large N_corr. See γ Calculator caveats for this documented inversion.',
+    physics: 'Many correlated particles (large N_corr, small γ) — the strongly correlated regime. BEC, BCS superconductors, and superfluids sit here because they have enormous N_corr, giving them very small γ (BCS: N_corr = 10⁷, the γ Calculator preset, giving γ = 2/√10⁷ ≈ 6×10⁻⁴). Important: "collective" in the C-axis sense (C→1) is separate from "large N_corr" here — small γ gives a nearly flat tanh curve, so C stays near 0 at physically accessible densities despite large N_corr. See γ Calculator caveats for this documented inversion.',
   },
   {
     id: 'boundary',
@@ -19,7 +19,7 @@ const regions = [
     color: '#f59e0b',
     range: [0.6, 1.4],
     systems: ['Liquid water', 'Enzymes', 'Phase transitions', 'Chemical bonds', 'Neural firing', 'Consciousness threshold'],
-    physics: 'The interesting regime where collective and independent behavior balance. Phase transitions, chemical bonding, and neural dynamics occur here. The consciousness threshold conjecture (C ≈ 0.50) maps to this regime, though D and S remain undefined — see hard-problem page.',
+    physics: 'The regime where collective and independent behavior balance. Systems whose estimated γ falls here include liquid water, enzymes, and neural dynamics. Note: C(ρ) itself is a smooth compander with no critical point — "boundary" here means a regime boundary in γ, not a mathematical phase boundary. The consciousness threshold conjecture (C ≈ 0.50) maps to this regime, though D and S remain undefined — see hard-problem page.',
   },
   {
     id: 'quantum',
@@ -27,7 +27,7 @@ const regions = [
     color: '#8b5cf6',
     range: [1.4, 4.0],
     systems: ['Ideal gases', 'Single atoms', 'Few-particle systems', 'Uncorrelated matter'],
-    physics: 'Few correlated particles (small N_corr, large γ) — the single-particle / uncorrelated regime. Individual behavior dominates; rapid decoherence. At γ = 2 (N_corr = 1), the single-particle reference used for galaxy rotation fits.',
+    physics: 'Few correlated particles (small N_corr, large γ) — the single-particle / uncorrelated regime. Individual behavior dominates; rapid decoherence. γ = 2 (N_corr = 1) is the value the framework asserts for galaxies — but the SPARC RAR ensemble test rejected γ = 2 at ΔBIC = +184; the free fit gives γ ≈ 0.49, which back-implies N_corr ≈ 17 and contradicts the N_corr = 1 premise. The galaxy marker below is shown at the asserted value with that refutation flagged.',
   },
 ];
 
@@ -52,6 +52,11 @@ export default function PhaseBoundaryVisualizer() {
           Drag the slider to explore where different systems are <em>estimated</em> to fall.
           Labeled positions are approximate (&#x03B3; = 2/&#x221A;N<sub>corr</sub>;
           N<sub>corr</sub> values are estimated, not precisely measured for most systems).
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          <strong>Naming note:</strong> despite the historical name, C(&#x03C1;) is a smooth compander
+          (&#x03BC;-law/Hill/logistic family) with no critical point &mdash; &ldquo;boundary&rdquo; on this
+          page means a regime boundary along the &#x03B3; axis, not a phase transition.
         </p>
         <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.85rem', color: 'var(--color-text-muted)', marginBottom: '1rem' }}>
           <strong style={{ color: '#ef4444' }}>What γ actually classifies:</strong>{' '}
@@ -84,8 +89,10 @@ export default function PhaseBoundaryVisualizer() {
             <text x={30 + (0.15 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#10b981" fontSize="8">BEC/SC</text>
             <line x1={30 + (0.85 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.85 / 4.0) * 540} y2={barY + barH + 25} stroke="#f59e0b" strokeWidth="1" />
             <text x={30 + (0.85 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#f59e0b" fontSize="8">water/enzymes</text>
+            <line x1={30 + (0.49 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.49 / 4.0) * 540} y2={barY + barH + 25} stroke="#ef4444" strokeWidth="1" />
+            <text x={30 + (0.49 / 4.0) * 540} y={barY + barH + 46} textAnchor="middle" fill="#ef4444" fontSize="8">γ=0.49 (galaxies, SPARC fit)</text>
             <line x1={30 + (2.0 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (2.0 / 4.0) * 540} y2={barY + barH + 25} stroke="#38bdf8" strokeWidth="1" />
-            <text x={30 + (2.0 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#38bdf8" fontSize="8">γ=2 (galaxies/ideal gas)</text>
+            <text x={30 + (2.0 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#38bdf8" fontSize="8">γ=2 (ideal gas; galaxies asserted — refuted ΔBIC=+184)</text>
 
             {/* Current position marker */}
             <circle
@@ -150,7 +157,8 @@ export default function PhaseBoundaryVisualizer() {
             This is not a universality result &mdash; it is an artifact of how N<sub>corr</sub> is counted: both systems happen to be assigned &ldquo;1 correlated particle&rdquo; under the current counting convention.
             When two physically unrelated systems produce the same &#x03B3;, &#x03B3; is classifying the <em>counting method</em>, not the system.
             Until a scale-invariant N<sub>corr</sub> recipe is established, every cross-scale &#x03B3; comparison is method-dependent.
-            BCS superconductor placement uses N<sub>corr</sub> = 10,000; physical Cooper-pair volumes contain ~10<sup>6</sup>–10<sup>9</sup> pairs depending on material.
+            BCS superconductor placement uses N<sub>corr</sub> = 10<sup>7</sup> (&#x03B3; = 2/&#x221A;10<sup>7</sup> &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>, matching the &#x03B3; Calculator preset); physical Cooper-pair volumes contain ~10<sup>6</sup>–10<sup>9</sup> pairs depending on material.
+            <strong>Galaxy placement (2026-06-11):</strong> the asserted &#x03B3; = 2 (N<sub>corr</sub> = 1) was rejected on the SPARC RAR ensemble at &#x394;BIC = +184; the free fit gives &#x03B3; &#x2248; 0.49 &#x2192; N<sub>corr</sub> &#x2248; 17, contradicting the independent-stars premise. Both markers are shown so the refutation is visible, not hidden.
             The &#x03B3; values shown here are illustrative, not measured.
           </p>
         </div>

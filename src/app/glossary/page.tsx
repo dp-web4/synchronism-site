@@ -6,7 +6,9 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 import { getAllTerms } from '@/lib/terms';
 
 export default function Glossary() {
-  const allTerms = getAllTerms();
+  const allTerms = getAllTerms()
+    .slice()
+    .sort((a, b) => a.term.localeCompare(b.term, undefined, { sensitivity: 'base' }));
 
   return (
     <>
@@ -14,7 +16,8 @@ export default function Glossary() {
 
       <h1>Glossary</h1>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
-        Key terms used throughout Synchronism. Hover over highlighted terms on any page
+        Key terms used throughout Synchronism, listed alphabetically (Greek-symbol terms sort
+        after the Latin alphabet). Hover over highlighted terms on any page
         to see these definitions inline.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '2rem' }}>

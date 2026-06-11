@@ -157,10 +157,14 @@ export default function GalaxyPlotter() {
         </div>
 
         <div style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.35)', borderRadius: '0.375rem', padding: '0.75rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem' }}>
-          <strong style={{ color: '#ef4444' }}>Why this plot can mislead:</strong> The violet &ldquo;Synchronism&rdquo; curve plotted here uses the same parametrization (&#x03B3;=2) that the RAR ensemble test <strong>rejected at ΔBIC=+184</strong>. It still overlaps MOND per-galaxy because &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; is <em>refit to each galaxy&apos;s own flat velocity</em> — that degree of freedom absorbs the shape mismatch one galaxy at a time. The ensemble RAR (all 2,807 SPARC galaxies plotted together in acceleration space) is where &#x03B3;=2 dies: free-&#x03B3; converges to &#x03B3;&#x2248;0.49 with RMS identical to McGaugh-MOND to four digits. Per-galaxy shape recovery is not the same test as ensemble shape rejection.
+          <strong style={{ color: '#ef4444' }}>Why this plot can mislead:</strong> The violet &ldquo;Synchronism&rdquo; curve plotted here uses the same parametrization (&#x03B3;=2) that the RAR ensemble test <strong>rejected at ΔBIC=+184</strong>. It still overlaps MOND per-galaxy because &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; is <em>refit to each galaxy&apos;s own flat velocity</em> — that degree of freedom absorbs the shape mismatch one galaxy at a time. The ensemble RAR (all 2,807 SPARC data points — 175 galaxies — plotted together in acceleration space) is where &#x03B3;=2 dies: free-&#x03B3; converges to &#x03B3;&#x2248;0.49 with RMS identical to McGaugh-MOND to four digits. Per-galaxy shape recovery is not the same test as ensemble shape rejection.
         </div>
         <div style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem' }}>
-          <strong>Reading this plot:</strong>
+          <strong>Reading this plot:</strong>{' '}
+          <span style={{ color: 'var(--color-text-secondary)' }}>
+            In plain terms: all three theories draw nearly the same curve here, so a good fit proves nothing —
+            what this plot <em>does</em> show is the dark matter puzzle itself (the gray line sagging below the dots).
+          </span>
           <ul style={{ margin: '0.4rem 0 0', color: 'var(--color-text-secondary)', paddingLeft: '1.2rem' }}>
             <li><strong>Dashed gray</strong> — Newtonian prediction using visible matter only. Drops off at the edges; this is the puzzle.</li>
             <li><strong>Dots</strong> — observed rotation velocities. Flat at large radius; doesn&apos;t drop like Newtonian says it should.</li>

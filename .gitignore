@@ -44,3 +44,4 @@ next-env.d.ts
 
 # Hardbound runtime audit bundles — stay local to each machine, don't commit
 .hardbound/bundles/
+__pycache__/

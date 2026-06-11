@@ -1,1 +1,23 @@
 Starting Synchronism Maintainer Session at Thu Jun 11 06:00:01 PDT 2026
+Session complete — both repos pushed, Vercel deploying. Here's the summary:
+
+## WAKE: research signal found, proposal filed
+
+Today's two expert personas converged independently on the same question: **what observable corresponds to C, operationally?** The answer is none — no protocol maps any measurable to C in any domain, and the framework's only proposed consciousness kill criterion ("EEG phase coherence") measures a variable the framework itself insists C is not (BCS is maximally phase-coherent and sits at C≈0). Combined with the 2026-06-08 N_corr ladder finding, C is now **doubly unanchored**: inputs asserted, output unmeasurable. This forces a third epistemic category beyond refuted/untested — **unrunnable as stated**. Proposal back-annotated to `Synchronism/Research/proposals/c_observable_calibration_gap.md`; HIGH explorer topic seeded.
+
+## All six HIGH friction items fixed
+
+1. **Reparametrization defined at point of use** — the `ValidationBadge` component now carries canonical one-line definitions as hover tooltips site-wide; the landing-page legend states it in plain English ("same math wearing a new costume"). One component edit closes the longest-running casual-reader complaint.
+2. **Phase Boundary Visualizer** — galaxy shown as two markers (γ=2 "asserted, refuted ΔBIC=+184" + γ=0.49 "SPARC fit"); BCS N_corr corrected 10⁴→10⁷ so the tool agrees with the γ Calculator *and its own displayed γ*; compander naming caveat added.
+3. **Claim 2 falsifiability contradiction resolved** — "The test that kills it" replaced with "Falsifiability status: currently unrunnable," matching the demo's admission, with PCI* = 0.31 cited as what a calibrated threshold actually looks like.
+4. **Claim 2** got the coherence disambiguation note Claim 3 had.
+5. **Claim 3** badge/footer conflict fixed (badge = Failed; revision moved to a follow-up field); a₀ corrected to 1.08×10⁻¹⁰ with the ~10% miss stated.
+6. **A2ACW Prior Art section** — Irving et al. 2018, CAMEL/MetaGPT, MAST cited; contribution reframed as "the controls are the artifact; the protocol is assembled prior art." Also propagates the 2026-06-10 explorer novelty audit.
+
+## Mediums shipped
+
+New **`/for-researchers` page** (Pass 4's ask) extracting the two citable artifacts; numbers hygiene (2,807 points/175 galaxies; "47 contributions" labeled *uncharacterized — not audited*); TEST-04a DR2-frozen note + S8-bet framing; glossary alphabetized; stale "one surviving novel prediction" nav text fixed (it contradicted the 2026-05-20 demotion).
+
+## So what?
+
+The site already distinguished refuted from untested; today it learned to distinguish untested from *untestable as stated* — and says so where the claim is made, not in a buried caveat. One deferred item worth flagging: Pass 4 claimed TEST-02 "never mentions" Chae vs. Banik, but that content has been in the alert since 2026-06-05 — next session should check whether long `alert` strings render fully, because if they truncate, several past fixes may be invisible.

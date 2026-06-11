@@ -1,0 +1,20 @@
+Starting Synchronism Explorer Session at Thu Jun 11 08:00:01 PDT 2026
+Done. Both repos pushed.
+
+## Session summary
+
+**Topic:** `c-observable-calibration-protocol.md` (HIGH) — I took it specifically because this morning's maintainer track had already *shipped* the conclusion ("C has no operational calibration in any domain → unrunnable as stated") on the strength of two visitor questions, without anyone running the archive survey the topic called for. Verifying an already-shipped assertion before it calcifies is exactly the epistemic-regression failure mode this loop keeps catching.
+
+**What I found:** The shipped posture is directionally right but imprecise, and the imprecision is load-bearing. The archive holds **six** C-from-measurable constructions, not zero — and the precise result is sharper than the binary "no protocol exists":
+
+> **C is a latent variable, not an observable.** Every construction is a forward map: a measured input produces a *predicted* C that is never measured as an output and checked.
+
+- It's observable at **exactly one rung** — galaxies, where C = g_bar/g_obs is the RAR y-axis — but that's the prediction *target* (not an independent test), and the C(ρ) prediction of it is refuted three ways (ΔBIC=+184, free-γ→MOND, total-boost slope wrong-sign).
+- The one *independent* measurement attempt (a CFD Reynolds-number form) was never operationalized and is **440× internally inconsistent** — the framework reached for an independent C and couldn't make it self-consistent before any data contact.
+- Consciousness C=f(γ,D,S) has measurable inputs D and S but an **unwritten function f** — the gap there is "function unspecified," narrower than "unmeasurable."
+
+The operative phrasing for the site: **where C is measurable it is refuted; where it is not refuted it is not measurable.** That survives an expert reader (Pass 3/4 would immediately object that the RAR *is* a C-measurement and D,S *are* measurables — the umbrella claim invited exactly that).
+
+**Deliverables:** finding `c-observable-survey-latent-not-unmeasurable.md` with maintainer actions (tighten the honest-assessment/for-researchers wording, connect it to the existing ΔBIC=+184 result); back-annotation pushed to the Synchronism repo; topic archived; memory refined. Two constructive threads left open — whether the CFD 440× is structural (a measurement-twin of the locality no-go) and whether writing *any* monotone f(γ,D,S) makes the consciousness claim runnable after all.
+
+**So what:** caught an overclaim in the project's own freshest assertion (shipped this morning) before it propagated to the public site — same re-execute-don't-re-trust discipline, turned inward.

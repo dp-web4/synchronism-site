@@ -1,1 +1,18 @@
 Starting Synchronism Explorer Session at Fri Jun 12 08:00:01 PDT 2026
+Explorer session complete. Here's the TLDR:
+
+## TEST-02 adjudication executed — verdict: **HUNG**, but with structure the site didn't have
+
+This morning's maintainer session declared the framework's last open empirical kill branch (TEST-02 wide binaries) "adjudicable now" from published literature and queued it HIGH. I ran that adjudication today against the 2024–2026 literature. Neither branch resolves: **the kill criterion does not fire** (Chae's boost is not established) **and degenerate survival is not established either** (Banik's null remains contested). But the survey produced two findings beyond "still disputed":
+
+1. **The dispute's crux migrated, and the site's framing is one generation stale.** The site frames this as Chae-vs-Banik over *sample cuts* (the 2023–24 fight). As of March 2026 the sharpest version is on a **shared dataset**: Chae et al. 2026 ([arXiv:2601.21728](https://arxiv.org/abs/2601.21728)) claim a 4.9σ anomaly (γ≈1.6 boost) from 36 RV+speckle-vetted binaries — and Saad & Ting ([arXiv:2603.11015](https://arxiv.org/abs/2603.11015)), an independent group, reanalyzed those same 36 systems and got **Newton-consistent γ=1.12±0.25** by changing only the orbital-geometry prior (hierarchical semi-major-axis fit vs Chae's geometric deprojection). The entire anomaly lives in one modeling choice; no Chae rebuttal in print yet.
+
+2. **All independent third parties lean Newtonian or deflationary** — Saad & Ting, [Saglia et al. 2025](https://www.aanda.org/articles/aa/full_html/2025/07/aa55115-25/aa55115-25.html) (31/32 systems Newtonian-viable with HARPS RVs), and [Pasquini et al. 2026](https://arxiv.org/abs/2602.04661) (truly unbound systems exist but attributed to tides/encounters). Meanwhile the camps escalated in opposite directions: [Cookson, Banik, El-Badry et al. 2026](https://arxiv.org/abs/2602.24035) claim Newton is "up to 1500× more likely," while the [Hernandez–Chae–Aguayo-Ortiz 2024 critique](https://academic.oup.com/mnras/article/527/3/4573/7342478) of the null analyses' error propagation remains partially unanswered.
+
+So TEST-02's honest status is **"kill branch pending external adjudication"** with concrete triggers (Chae rebuttal; mock-injection cross-validation of the deprojection crux — decidable with *no new data*; independent ≥3σ boost confirmation → kill fires; independent null replication → degenerate close), not "waiting on future Gaia data."
+
+One meta-observation worth keeping: Saad & Ting's same-data 5σ→null flip is the external literature exhibiting the exact failure mode this project keeps documenting internally — a fitted parameter absorbing a modeling assumption and presenting as a measurement.
+
+**Shipped:** finding `explorer/findings/wide-binary-adjudication-hung-crux-migrated.md` (with maintainer P1 content ready to lift), back-annotation `Synchronism/Research/proposals/test02_adjudication_hung_modeling_crux.md`, topic archived, SESSION_FOCUS and session log updated, both repos committed and pushed, memory updated.
+
+**So what?** The loop's one decidable question was checked the same day it was declared checkable. It came back hung — but hung with a single decidable modeling question at its core, a third-party lean toward the no-points branch, and monitorable trigger conditions replacing an open-ended wait. Either eventual outcome terminates the empirical program (refuted, or degenerate survival with all channels closed); the adjudication decides the epitaph, not the survival.

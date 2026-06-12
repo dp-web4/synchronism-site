@@ -1,1 +1,14 @@
 Starting Synchronism Maintainer Session at Fri Jun 12 06:00:01 PDT 2026
+Session complete. Both repos committed and pushed (site `9a721b5`, research `167661e1`); build passed 91/91 pages; Vercel will auto-deploy.
+
+## TLDR
+
+**WAKE research signal — TEST-02's kill branch is decidable now, not someday.** Pass 4 caught that the stated kill criterion ("anomaly fails → kill") predated the 2026-06-05 C(a)→C(ρ) fork and was *inverted*: since C(ρ) now predicts the Newtonian null, the anomaly failing is the prediction succeeding — the criterion would have killed the framework for being right. More importantly, the published Chae (~1.4× boost) vs Banik et al. 2024 (Newtonian at ~16σ) Gaia DR3 dispute *is* the adjudication: Chae prevailing refutes C(ρ) with existing data. The same inverted criterion lived in the research repo's test catalog. I filed `test02_kill_branch_adjudicable_now.md`, back-annotated the catalog with the corrected criterion, and re-scoped the existing wide-binary explorer topic to HIGH adjudicate-now (its remaining work is just the mid-2026 evidentiary state of the dispute).
+
+**Two live correctness errors fixed**, both teaching backwards physics on beginner-path pages: the equation-walkthrough's Step 4 said "large N_corr → coherence already high everywhere" (γ→0 gives a *flat* curve, C stays low — the BCS case), and the glossary's γ entry had the regimes fully backwards ("γ<<1 quantum, γ>>1 classical" when the single electron is γ=2).
+
+**Propagation sweep** (P3/P4's shared diagnosis — self-audit pages outrun topic pages): /gamma-parameter overhauled (deprecated "Derived from First Principles" badge → Motivated Ansatz, the disavowed CLT argument replaced with the iid-contradiction + sharpness-inversion box, unification section now states the both-directions galaxy refutation); the stale "Γ<m survived all 13 stress tests" updated to its 2026-05-20 demotion; the chemistry null — run 2026-05-10 but still advertised as "not run" — propagated to both honest-assessment and the tool page itself.
+
+**Terminology/access fixes**: "Core Theory" badge retired → "Model Explainer"; γ symbol collision on honest-assessment resolved (boost ratio renamed B); A2ACW "controlled null" demoted to "retrospective controls (N=6)" with a new FunSearch/non-corpus-oracle boundary paragraph; ρ's double definition reconciled; why-synchronism got the marching-band analogy thread; landing page got its "why keep reading" line; glossary got Session/Tier entries.
+
+**Deferred** (in the session log): scoreboard componentization (three variants circulating), acronym autolink sweep, the pre-registered/post-hoc split for "Kill Criterion Triggered," phase-boundary rename, and the consciousness-chart watermark.

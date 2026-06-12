@@ -79,7 +79,11 @@ export default function Home() {
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             &#x03C1; is <em>presence</em> &mdash; the compatible structural elements available within a system&apos;s
             relevancy boundary. Physical density is one form of presence, but it also encompasses
-            temperature, energy levels, catalytic surfaces, and other factors that support emergence.{' '}
+            temperature, energy levels, catalytic surfaces, and other factors that support emergence.
+            In every <em>quantitative</em> test the framework has run (SPARC galaxies, chemistry),
+            &#x03C1; reduces to the ordinary local mass/energy or number density &mdash; the broader
+            &ldquo;presence&rdquo; reading has never been operationalized, so treat the physics
+            definition as the one under test.{' '}
             <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>See MRH &rarr;</Link>
           </p>
         </div>
@@ -217,6 +221,13 @@ export default function Home() {
               <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong></span>
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>Full ledger &rarr;</Link>
             </div>
+            <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.6rem 0 0' }}>
+              <strong>Why keep reading a theory with zero confirmed predictions?</strong>{' '}
+              Because this is what testing an idea in public looks like &mdash; you get to watch a
+              theory be taken apart honestly: which claims collapsed into known physics, which died
+              against data, and what that rules out for <em>any</em> theory of the same shape. The
+              autopsy is the product.
+            </p>
             <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
               Badges used below:{' '}
               <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization · Speculative · Untested · Failed</Link>

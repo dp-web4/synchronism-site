@@ -102,6 +102,15 @@ export default function ChemistryCorrelationExplorer() {
           <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}
           acknowledges this; the full null distribution and out-of-sample decomposition remain open
           research questions.
+          <br /><br />
+          <strong style={{ color: '#ef4444' }}>Null-model verdict (computed 2026-05-10):</strong>{' '}
+          before reading any number in this table as evidence, know that a plain 2-parameter
+          polynomial in atomic number Z, fit to the same targets, <strong>matches these correlations
+          (|&#x0394;r| &#x2264; 0.07) and sometimes beats them</strong>. The targets are near-monotonic
+          in Z, so any smooth monotonic curve scores r &#x2248; 1 by construction. High r here is
+          evidence of density-monotonicity (known chemistry), not of C(&#x03C1;)-specific physics.
+          The 47 entries marked &ldquo;research contributions&rdquo; elsewhere on the site remain{' '}
+          <strong>uncharacterized</strong> — not audited against this null.
         </div>
 
         {/* Regime filter */}

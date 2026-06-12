@@ -9,7 +9,7 @@ const steps = [
   {
     title: 'Step 1: Start with density',
     equation: 'ρ — the local mass/energy density',
-    explanation: 'Everything begins with density. In a galaxy, ρ is the baryon density profile. In chemistry, it\'s the number density of particles. The same starting point everywhere.',
+    explanation: 'Everything begins with density. In a galaxy, ρ is the baryon density profile. In chemistry, it\'s the number density of particles. The same starting point everywhere. (Definition note: the ontology pages define ρ more broadly as "presence within a relevancy boundary" — but every executed test uses exactly this physical density, and no broader form has ever been operationalized. This walkthrough uses the definition the tests use.)',
     key: 'Density is the universal input to the coherence function.',
   },
   {
@@ -27,13 +27,13 @@ const steps = [
   {
     title: 'Step 4: Multiply by γ',
     equation: 'γ × ln(ρ/ρ_crit + 1) — scaled by coherence parameter',
-    explanation: 'γ = 2/√N_corr controls how steeply coherence rises with density. For uncorrelated systems (N_corr = 1, γ = 2), coherence rises fast. For highly correlated systems (large N_corr, γ → 0), coherence is already high everywhere.',
+    explanation: 'γ = 2/√N_corr controls how steeply coherence rises with density. For uncorrelated systems (N_corr = 1, γ = 2), coherence rises fast. For highly correlated systems (large N_corr, γ → 0), the curve goes FLAT — C stays low at every physical density. This is the inversion the site warns about: the most collective systems (BCS superconductors, BECs) get the flattest curves and land at C ≈ 0, not high C.',
     key: 'γ is the only "knob" that controls transition sharpness — between sparse/independent and dense/collective regimes.',
   },
   {
     title: 'Step 5: Apply tanh',
     equation: 'C(ρ) = tanh(γ · ln(ρ/ρ_crit + 1))',
-    explanation: 'tanh (hyperbolic tangent) is a saturation function: it maps any real number smoothly to the range (0, 1), like a dimmer switch with a soft floor and soft ceiling. Feed it a very small number → outputs near 0. Feed it a very large number → outputs near 1. The transition is sharpest near the midpoint. No abrupt jump — just a smooth S-curve. Any sigmoid (logistic, erf, Hill) would serve similarly here. tanh is motivated by Landau-class mean-field theory, not uniquely derived.',
+    explanation: 'tanh (hyperbolic tangent) is a saturation function: over all real inputs it ranges (−1, +1), but since the argument γ·ln(ρ/ρ_crit + 1) is always ≥ 0, C stays in [0, 1) — like a dimmer switch with a soft floor and soft ceiling. Feed it a small number → outputs near 0. Feed it a large number → outputs near 1. No abrupt jump — just a smooth S-curve. Any sigmoid (logistic, erf, Hill) would serve similarly: tanh is a chosen member of the compander family (μ-law, Hill, Naka–Rushton), not a derived result. The +1 inside the log is a regulator chosen for finiteness at ρ = 0; it is load-bearing — it asymmetrizes the sigmoid, puts the knee at C(ρ_crit) ≈ 0.88 rather than 0.5, and excludes any pure power-law behavior as ρ → 0.',
     key: 'tanh is the saturation wrapper: it ensures C never leaves [0,1] no matter how large or small the input gets.',
   },
   {

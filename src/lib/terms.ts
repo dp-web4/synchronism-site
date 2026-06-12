@@ -20,8 +20,8 @@ export const terms: Record<string, TermDefinition> = {
   '\u03B3': {
     term: '\u03B3',
     fullName: 'Gamma Parameter',
-    brief: 'Coupling strength: \u03B3 = 2/\u221AN_corr. Determines which regime you\'re in.',
-    explanation: 'When \u03B3 << 1, behavior is quantum. When \u03B3 \u2248 1, you\'re at the quantum-classical boundary. When \u03B3 >> 1, behavior is classical. Derived from N_corr. Structurally, \u03B3 encodes MRH coupling density \u2014 how efficiently compatible presence within an MRH converts into coherent state transitions (\u03B3 \u221D \u03BB\u00B7K/D, where \u03BB = interaction strength, K = connectivity, D = dimensionality).',
+    brief: 'Transition-sharpness exponent: \u03B3 = 2/\u221AN_corr. A motivated ansatz, not a derivation.',
+    explanation: 'Large \u03B3 (few correlated units \u2014 a single electron: N_corr = 1, \u03B3 = 2) gives a sharp C(\u03C1) transition; small \u03B3 (many correlated units \u2014 a crystal: \u03B3 \u2248 10\u207B\u00B9\u00B2) gives a flat one. \u03B3 \u2248 1 marks the sparse/collective boundary where chemistry clusters. Note the inversion: the most collective systems get the FLATTEST curves \u2014 BCS superconductors land at C \u2248 0. (This entry previously stated the regimes backwards \u2014 "\u03B3 << 1 quantum, \u03B3 >> 1 classical" \u2014 corrected 2026-06-12.) Structurally, \u03B3 is claimed to encode MRH coupling density (\u03B3 \u221D \u03BB\u00B7K/D, where \u03BB = interaction strength, K = connectivity, D = dimensionality), but no protocol independently measures N_corr in any system.',
     learnMore: '/gamma-parameter',
   },
   'N_corr': {
@@ -431,6 +431,20 @@ export const terms: Record<string, TermDefinition> = {
     fullName: 'Withdrawn \u2014 Prediction Retired',
     brief: 'A prediction or test has been voluntarily retired because it was found to be contradicted by the framework itself, physically unmotivated, or replaced by a better formulation.',
     explanation: 'A Withdrawn prediction means the framework itself has disowned the test \u2014 not because external data refuted it, but because internal analysis showed it was either (a) contradicted by another part of the framework, (b) unmotivated (no derivation of the predicted amplitude), or (c) superseded by a more precise test. In Synchronism\'s test catalog: TEST-04 (BAO coherence modulation) was withdrawn because (1) Session 107 contradicts it internally, (2) the predicted effect (10\u207b\u2074) is 600\u00d7 below standard nonlinear BAO shifts and thus unmotivated, and (3) the kill criterion of 10\u207b\u2075 is smaller than current measurement precision. Withdrawn differs from Failed: failure comes from data; withdrawal comes from the framework itself.',
+    learnMore: '/tier-1-existing',
+  },
+  'session': {
+    term: 'Session',
+    fullName: 'Session (research unit)',
+    brief: 'One autonomous AI research exchange in the Synchronism archive \u2014 a claim worked, challenged, and resolved. Sessions are numbered (e.g. "Session 107") and roughly chronological.',
+    explanation: 'The research archive was produced by 3,308 autonomous AI sessions. Each session is one unit of work: a derivation attempted, a claim stress-tested, a dataset analyzed. Site citations like "Session 107" point to the archive document with that number. Session count measures activity, not validity \u2014 the site\'s own audit found the number of sessions has no bearing on whether a result is correct (several headline numbers propagated for hundreds of sessions before anyone re-ran the underlying computation).',
+    learnMore: '/research-philosophy',
+  },
+  'tier': {
+    term: 'Tier (test classification)',
+    fullName: 'Tier 1 / Tier 2 \u2014 Test Tiers',
+    brief: 'Tier 1: falsification tests runnable against existing public data (Gaia, SPARC, DESI). Tier 2: exploratory hypotheses lacking a derived amplitude or mechanism \u2014 not yet falsifiable as stated.',
+    explanation: 'The tier system classifies proposed tests by readiness, not importance. Tier 1 means existing data could in principle decide the test now: a stated prediction, a stated kill criterion, and a public dataset. Tier 2 means the idea is exploratory \u2014 no derived amplitude, no specified mechanism, or no meaningful kill criterion yet (e.g. TEST-07 cosmic interference, recommended for demotion to Tier 2 by the site\'s own audit). There is no Tier 3. The only Tier-1 listing is on the Tier 1: Existing Data page.',
     learnMore: '/tier-1-existing',
   },
 };

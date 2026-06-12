@@ -179,20 +179,23 @@ export default function HonestAssessment() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>Chemistry: &#x03B3; &#x2248; 1 Boundary</h3>
-              <ValidationBadge status="reparametrization" label="Pending Null Model — Not Yet Validated" />
+              <ValidationBadge status="reparametrization" label="Null Model RUN (2026-05-10) — Null-Class" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               1,703 chemical phenomena. Sound velocity r = 0.982, electronegativity r = 0.979.
-              Top correlations are strong — but the relevant null has not been computed.
+              Top correlations are strong — and the relevant null <strong>has been computed</strong>: it
+              matches them.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              <strong>Null model problem (2026-05-10):</strong> Sound velocity, electronegativity,
-              and atomic volume are all near-monotonic functions of atomic number Z. Any smooth
-              monotonic function fit through the same data would achieve r → 1 by construction —
-              not because it captures the physics, but because density and chemical properties
-              are known to covary monotonically. The relevant null comparison is r(polynomial in Z),
-              not r = 0. Until this comparison is run, r = 0.98 is evidence of density-monotonicity
-              (known physics), not specifically of Synchronism&apos;s C(ρ) framework.
+              <strong>Null model result (run 2026-05-10; this row previously said &ldquo;not yet
+              run&rdquo; — that was stale):</strong> Sound velocity, electronegativity, and atomic
+              volume are all near-monotonic functions of atomic number Z, so the relevant null is
+              r(polynomial in Z), not r = 0. A 2-parameter degree-2 polynomial in Z was fit to the
+              same targets, analytically and numerically: <strong>|&#x0394;r| &#x2264; 0.07 on
+              essentially all density-monotonic targets, and the polynomial sometimes outperforms
+              Synchronism</strong> (r &#x2248; 0.99 vs &#x2248; 0.87 on linear-in-Z and generic
+              smooth-monotonic targets). Verdict: the chemistry correlations are <strong>null-class</strong> —
+              they demonstrate density-monotonicity (known physics), not anything specific to C(&#x03C1;).
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               Additional caveats: ~11% failure rate. Era 2 chemistry (sessions 134-2660) identified as
@@ -379,11 +382,17 @@ export default function HonestAssessment() {
               1 not-preferred.</strong>
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              <strong>Key refutation — &#x03B3;<sub>max</sub> = 3.17:</strong> The framework predicts a
-              maximum coherence parameter &#x03B3;<sub>max</sub> &#x2248; 3.17 (from SPARC — Spitzer Photometry &amp; Accurate Rotation Curves — calibration).
-              The deepest SPARC bin shows &#x27E8;&#x03B3;&#x27E9; = 10.82, with 579 individual SPARC
-              galaxies exceeding &#x03B3;<sub>max</sub>. This is the strongest direct refutation in the
+              <strong>Key refutation — boost ceiling B<sub>max</sub> = 3.17:</strong> The framework predicts a
+              maximum gravitational boost ratio B = g<sub>obs</sub>/g<sub>bar</sub> of
+              B<sub>max</sub> &#x2248; 3.17 (from SPARC — Spitzer Photometry &amp; Accurate Rotation Curves — calibration).
+              The deepest SPARC bin shows &#x27E8;B&#x27E9; = 10.82, with 579 individual SPARC
+              galaxies exceeding B<sub>max</sub>. This is the strongest direct refutation in the
               framework&apos;s own internal audit. It was not previously visible on this page.
+              <em> (Notation note 2026-06-12: the source audit called this quantity &ldquo;&#x03B3;&rdquo;,
+              colliding with the transition-sharpness parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> used
+              everywhere else on this page — including the separate &ldquo;&#x03B3; = 2 refuted at
+              &#x0394;BIC = +184&rdquo; result. They are different quantities; we use B here to keep
+              them apart.)</em>
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               The two &ldquo;literature-consistent&rdquo; quantum results (&#x0393; = &#x03B3;&sup2;(1&minus;c)

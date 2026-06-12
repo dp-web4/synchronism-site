@@ -120,11 +120,34 @@ export default function A2ACW() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
             <strong>What is the contribution, then?</strong> Not the protocol — the{' '}
-            <em>controlled program-level null result</em>: a 3,308-session demonstration, with measured
-            sensitivity (4/4 prior-art rediscoveries caught after vocabulary translation) <em>and</em>{' '}
-            measured specificity (0/6 — every held-out genuine discovery false-flagged), that
-            same-corpus adversarial AI pairs filter for internal consistency but cannot generate or
-            detect novelty. The controls are the artifact; the protocol is assembled prior art.
+            <em>program-level null result with retrospective controls (N=6)</em>: a 3,308-session
+            demonstration, with measured sensitivity (4/4 prior-art rediscoveries caught after
+            vocabulary translation) <em>and</em> measured specificity (0/6 — every held-out genuine
+            discovery false-flagged), that same-corpus adversarial AI pairs filter for internal
+            consistency but cannot generate or detect novelty. The controls are the artifact; the
+            protocol is assembled prior art. <em>Evidence-class caveat: the controls are
+            retrospective audits on six items from one corpus and one framework — not preregistered
+            held-out experiments. &ldquo;Controlled&rdquo; in the experimental-design sense would
+            overstate it.</em>
+          </p>
+        </div>
+
+        <div className="card" style={{ background: 'rgba(56,189,248,0.06)', border: '1px solid rgba(56,189,248,0.25)', marginBottom: '1.5rem' }}>
+          <h3 style={{ color: '#38bdf8', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
+            The Boundary of the Null — Why FunSearch-Class Systems Are Different
+          </h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+            This null does <strong>not</strong> say AI systems cannot produce verified novelty — they
+            have. <strong>FunSearch</strong> (new combinatorial constructions), <strong>AlphaEvolve</strong>-class
+            systems, and <strong>GNoME</strong> (new stable materials) all produced results no human had
+            published. The structural difference: each has a <strong>non-corpus oracle</strong> in the
+            loop — a formal verifier, an executable evaluator, or a physics simulation that scores
+            candidates against reality rather than against the training distribution. A2ACW&apos;s
+            Challenger is another sample from the <em>same corpus</em>: it can check internal
+            consistency, but novelty-vs-rederivation is precisely the question the corpus cannot
+            answer about itself. That is the diagnosis this null supports: <strong>same-corpus
+            self-play without an external oracle converges on internal consistency, not
+            discovery</strong>. The boundary is the oracle, not the ambition.
           </p>
         </div>
 

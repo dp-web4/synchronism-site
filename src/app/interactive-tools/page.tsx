@@ -6,7 +6,11 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 type EpistemicStatus = 'core' | 'reparametrization' | 'speculative' | 'failed';
 
 const statusStyle: Record<EpistemicStatus, { bg: string; color: string; label: string }> = {
-  core: { bg: 'rgba(56, 189, 248, 0.12)', color: '#38bdf8', label: 'Core Theory' },
+  // Descriptive content grouping, NOT a validation verdict: marks tools that explain the
+  // model's own machinery (equation, parameters) rather than present evidence for it.
+  // Renamed from "Core Theory" 2026-06-12 — that label read as certification on a site
+  // whose own audit counts 0 independently-derived parameters.
+  core: { bg: 'rgba(56, 189, 248, 0.12)', color: '#38bdf8', label: 'Model Explainer' },
   reparametrization: { bg: 'rgba(245, 158, 11, 0.12)', color: '#f59e0b', label: 'Reparametrization' },
   speculative: { bg: 'rgba(239, 68, 68, 0.10)', color: '#f87171', label: 'Speculative' },
   failed: { bg: 'rgba(239, 68, 68, 0.10)', color: '#ef4444', label: 'Kill Criterion Triggered' },
@@ -132,7 +136,8 @@ export default function InteractiveTools() {
 
       <div style={{ marginTop: '2rem', padding: '1rem', borderRadius: '8px', background: 'rgba(56, 189, 248, 0.05)', border: '1px solid rgba(56, 189, 248, 0.15)', marginBottom: '2rem' }}>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: 0 }}>
-          <strong>Where to start:</strong> Coherence Explorer (Core Theory) → Galaxy Plotter (Reparametrization) → Honest Assessment.
+          <strong>Where to start:</strong> Coherence Explorer (Model Explainer) → Galaxy Plotter (Reparametrization) → Honest Assessment.
+          <span style={{ color: 'var(--color-text-muted)' }}> &ldquo;Model Explainer&rdquo; is a content grouping (tools that show how the equation works), not a validation badge — no tool here certifies the model as correct; see the badge definitions on the Honest Assessment.</span>
           The six tools above are grounded in the framework&apos;s core theory or known reparametrizations.
         </p>
       </div>

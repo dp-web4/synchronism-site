@@ -108,18 +108,24 @@ export default function GalaxyPlotter() {
           <strong>The dark matter puzzle in one picture:</strong> Physics predicts that galaxies
           should rotate more slowly at their outer edges (like planets in the solar system — the
           further out, the slower). They don&apos;t. The outer stars rotate just as fast as the inner
-          ones. Something invisible is adding gravity. Most physicists call it dark matter. MOND
+          ones. Something invisible is adding gravity. Most physicists call it dark matter &mdash;
+          a proposed invisible substance that has never been directly detected; we infer it only
+          from its gravitational pull (whether it&apos;s real stuff or a placeholder for missing
+          physics is exactly what&apos;s being debated). MOND
           (Modified Newtonian Dynamics) explains the same curves by changing the gravity law.
           Synchronism offers a third interpretation: the coherence function C(ρ) mimics the extra
           gravity via density-dependent coupling. All three fit the observations; none is confirmed
-          over the others by rotation curve data alone.
+          over the others by rotation curve data alone &mdash; though the fits are not on equal
+          footing: MOND uses one global constant (a&#x2080;) for every galaxy, while the violet
+          Synchronism curve refits &#x03C1;<sub>crit</sub> per galaxy.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '-0.5rem' }}>
           Select a SPARC galaxy. The plot shows four things: what visible matter predicts (dashed),
           what we observe (dots), what Synchronism gives (violet), and what MOND gives (green).
           Notice that Synchronism and MOND nearly overlap — the framework&apos;s own{' '}
           <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}
-          labels this a <em>reparametrization</em>.{' '}
+          labels this a <em>reparametrization</em> &mdash; plain words: the same curve wearing a
+          different costume; fitting a known curve isn&apos;t discovering anything new.{' '}
           <strong>Plain verdict for casual readers:</strong> these curves look great but don&apos;t prove the idea &mdash;
           all three models (Synchronism, MOND, and NFW dark-matter halo) fit galaxy rotation curves about equally well.
           What matters is whether any makes a <em>different, testable prediction</em>, and the ensemble test

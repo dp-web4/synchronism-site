@@ -165,8 +165,11 @@ export default function ResearchPhilosophy() {
           &ldquo;what underlying mechanism would make reality <em>appear</em> string-like?&rdquo; If entities are
           recurring patterns on a discrete substrate, then strings could be resonance channels in the grid,
           vibration modes could be oscillation patterns, and extra dimensions could be internal degrees of freedom
-          rather than spatial dimensions. The entity criterion (&Gamma;&nbsp;&lt;&nbsp;m) &mdash; the one prediction
-          that survived all 13 stress tests &mdash; would apply to string states too.
+          rather than spatial dimensions. The entity criterion (&Gamma;&nbsp;&lt;&nbsp;m) survived the internal
+          stress tests but was demoted on prior-art review (2026-05-20): it is the standard
+          Breit&ndash;Wigner / K&auml;ll&eacute;n&ndash;Lehmann narrow-width condition, with Synchronism adding
+          interpretation, not prediction. It would &ldquo;apply&rdquo; to string states only in the sense that
+          standard resonance physics already does.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Prediction starts with interpretation. The stress tests stripped away what&apos;s vocabulary. What remains
@@ -228,7 +231,10 @@ export default function ResearchPhilosophy() {
           yield after domain-expert audit: 0.</strong> All 47 resolved as reparametrizations of known physics,
           internal consistency findings, or null results when examined by physicists outside the training
           distribution. Human oversight reviews borderline cases and maintains the validation badge taxonomy.
-          Every badge is the product of at least one full A2ACW challenge cycle.
+          Every badge is the product of at least one full A2ACW challenge cycle &mdash; which, given the
+          measured 0% specificity of that cycle on held-out genuine discoveries, is provenance, not
+          assurance: a badge means the claim was challenged, not that the challenge could have
+          distinguished a real discovery from a rederivation.
         </p>
 
         <div className="card" style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.3)', marginBottom: '1.5rem' }}>

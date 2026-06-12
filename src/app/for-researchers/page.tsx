@@ -6,7 +6,7 @@ import ValidationBadge from '@/components/ValidationBadge';
 
 export const metadata: Metadata = {
   title: 'For Researchers: What\'s Citable — Synchronism',
-  description: 'The defensible artifacts extracted from the failure documentation: the local-density locality no-go and the A2ACW controlled null result.',
+  description: 'The defensible artifacts extracted from the failure documentation: the local-density locality no-go and the A2ACW program-level null result.',
 };
 
 export default function ForResearchers() {
@@ -57,14 +57,15 @@ export default function ForResearchers() {
         {/* Artifact 2: A2ACW null */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #38bdf8' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>2. The A2ACW controlled null — same-corpus adversarial AI pairs do not generate or detect novelty</h2>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>2. The A2ACW program-level null (retrospective controls, N=6) — same-corpus adversarial AI pairs do not generate or detect novelty</h2>
             <ValidationBadge status="audited-negative" label="Audited-Negative — Program-Level Null" />
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             <strong>Honest novelty statement:</strong> the protocol is assembled prior art — adversarial
             pairs from AI Safety via Debate (Irving, Christiano &amp; Amodei 2018), role structure from
             CAMEL/MetaGPT, failure modes from the multi-agent-systems literature. The citable artifact
-            is the <strong>controlled program-level null result</strong>: across 3,308 sessions, a 1.4%
+            is the <strong>program-level null result with retrospective controls</strong> (N=6 audits,
+            not preregistered held-out experiments; one corpus, one framework): across 3,308 sessions, a 1.4%
             internal-consistency survival rate yielded <strong>0 novel survivors</strong> after external
             expert audit, with both error rates measured — temporal-asymmetry control 0/6 (later-demoted
             claims caught; median prior-art year ~1996), vocabulary-asymmetry 4/4 on the
@@ -95,6 +96,19 @@ export default function ForResearchers() {
             just on this framework.
           </p>
           <Link href="/tier-1-existing" style={{ fontSize: '0.85rem' }}>TEST-04a full accounting &rarr;</Link>
+        </div>
+
+        <div style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+          <strong style={{ color: 'var(--color-accent-violet)' }}>Referee-relevant structural gap — C has no
+          measurement protocol:</strong>{' '}
+          no protocol maps any laboratory or astronomical observable to the coherence value C, in any
+          domain (the consciousness kill criterion named EEG phase coherence — a quantity the framework
+          says C is <em>not</em>; BCS condensates sit at C &#x2248; 0). Combined with N<sub>corr</sub> being
+          asserted rather than counted on all 17 scales, C is <strong>doubly unanchored</strong>: inputs
+          asserted, output unmeasurable. This is why several claims are labeled{' '}
+          <em>unrunnable as stated</em> rather than untested — a third category beyond
+          refuted/untested. The only data contact is galaxy rotation, where C&apos;s parameters are fit
+          to the prediction target.
         </div>
 
         <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>

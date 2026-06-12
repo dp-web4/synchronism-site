@@ -43,6 +43,14 @@ export default function WhySynchronism() {
         }}>
           What if there&apos;s a single function that maps density to behavior across all scales?
         </blockquote>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          The picture to hold onto (the same one used on{' '}
+          <Link href="/first-encounter" style={{ color: 'var(--color-accent-blue)' }}>Start Here</Link>):
+          a crowd milling around a plaza behaves like independent individuals; a marching band
+          behaves like one organism. Synchronism&apos;s bet is that <em>how densely packed</em> the
+          parts are is what moves a system from crowd-like to band-like &mdash; and that one
+          dimmer-switch curve describes that shift everywhere, from electrons to galaxies.
+        </p>
       </section>
 
       <section className="section content-width">
@@ -52,11 +60,13 @@ export default function WhySynchronism() {
           It takes one input (density) and returns one output (coherence: 0 = sparse/independent, 1 = dense/collective).
         </p>
         <p style={{ color: 'var(--color-text-secondary)', fontStyle: 'italic', borderLeft: '3px solid var(--color-accent-violet)', paddingLeft: '0.75rem' }}>
-          In plain English: an S-curve that smoothly goes from 0 (everything acting independently)
-          to 1 (everything locked together) as density grows. <strong>tanh</strong> is the hyperbolic tangent
-          — an S-shaped saturation function that maps any real number to (0, 1). The &#x03B3; parameter
-          controls how sharp the transition is; &#x03C1;<sub>crit</sub> is a reference density setting where
-          on the curve you are. The shape &mdash; tanh &mdash; is a phenomenological choice, not a derived result:
+          In plain English: an S-curve that smoothly goes from 0 (everything acting independently
+          &mdash; the crowd) to 1 (everything locked together &mdash; the marching band) as density grows.{' '}
+          <strong>tanh</strong> is the hyperbolic tangent &mdash; an S-shaped saturation function; over
+          all inputs it spans (&minus;1, +1), but the argument here is never negative, so C stays
+          between 0 and 1. The &#x03B3; parameter is the dial that sets how abrupt the crowd&#x2192;band
+          snap is &mdash; big &#x03B3;, sudden snap; small &#x03B3;, gradual fade; &#x03C1;<sub>crit</sub> is
+          a reference density setting where on the curve you are. The shape &mdash; tanh &mdash; is a phenomenological choice, not a derived result:
           any S-curve with the same saturation properties would fit the same data equally well.
           (Full step-by-step breakdown: <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Walkthrough &rarr;</Link>)
         </p>
@@ -68,7 +78,8 @@ export default function WhySynchronism() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', borderLeft: '2px solid rgba(245,158,11,0.4)', paddingLeft: '0.75rem' }}>
           <strong>Circularity caveat:</strong> The 1/&#x221A;N<sub>corr</sub> scaling is a dimensional ansatz
           inspired by fluctuation theory &mdash; not a derivation from first principles. No counting protocol exists to
-          derive N<sub>corr</sub> from a system&apos;s Hamiltonian without first fitting &#x03B3; to observed data.
+          derive N<sub>corr</sub> from a system&apos;s Hamiltonian (the equation describing all its
+          interactions and energies) without first fitting &#x03B3; to observed data.
           In practice, N<sub>corr</sub> is back-fit from &#x03B3; &mdash; so &#x03B3; has no independent predictive
           content beyond the calibration target. The &#x03B3; Calculator states this explicitly.
           See <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator &rarr;</Link>
@@ -100,7 +111,9 @@ export default function WhySynchronism() {
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
               1,703 chemical phenomena cluster near the &#x03B3;&#x2248;1 boundary
               (sparse/independent &#x2194; dense/collective crossover).
-              Sound velocity correlation: r = 0.982.
+              Sound velocity correlation: r = 0.982 &mdash; but the null model (run 2026-05-10) shows a
+              plain polynomial in atomic number matches or beats these correlations, so they are
+              evidence of known density-monotonic chemistry, not of this framework.
               <br /><small style={{ color: 'var(--color-text-muted)' }}>
                 Note: C here measures collective ordering, not quantum phase coherence —
                 quantum-coherent systems (BEC, BCS) sit at <em>low</em> C due to their tiny &#x03B3;.

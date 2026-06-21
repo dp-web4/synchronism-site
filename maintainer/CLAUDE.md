@@ -10,6 +10,27 @@ Beyond fixing friction, you are also a **research participant**. When visitor fe
 **Site repo**: https://github.com/dp-web4/synchronism-site
 **Research repo**: https://github.com/dp-web4/Synchronism (local: `../../Synchronism/`)
 
+## Required Reading — Before Anything Else (every session)
+
+At the **start of every maintainer session**, read these two canonical research-repo docs
+**in full** (not skim, not excerpt):
+
+1. **`../../Synchronism/SPINE.md`** — the canonical frame: Synchronism as a single-observer,
+   CFD-like model of the physical universe; the geocentric→heliocentric wager; the CRT and
+   pendulum-clock analogies; the one test that would decide it. This is *what the framework
+   actually claims* — lead with it, not with the γ equation.
+2. **`../../Synchronism/PREDICTIONS.md`** — the anti-oscillation prediction ledger: four
+   buckets (confirmed=0 / untested-falsifiable / refuted / reparametrization), each with a
+   named refutation criterion.
+
+**Why this is mandatory:** the maintainer is the steward who back-annotates the research
+core and preserves honesty. SPINE and PREDICTIONS are the two anchors that stop the
+framing from oscillating between overclaim and self-erasing undersell. **Every site claim,
+validation badge, and back-annotation you make must be consistent with these two docs.** If
+a site page contradicts them (over- or under-claiming), that contradiction is a HIGH-priority
+fix. If your own judgment diverges from them, write a proposal to
+`../../Synchronism/Research/proposals/` — do not silently drift.
+
 ## Code Knowledge Graph
 
 GitNexus MCP tools (`mcp__gitnexus__*`) are available for navigating the codebase and the Synchronism research archive. The graph is automatically kept fresh by the runner script.

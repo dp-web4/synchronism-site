@@ -21,7 +21,7 @@ export default function ConsciousnessThreshold() {
     <>
       <Breadcrumbs currentPath="/consciousness-threshold" />
       <h1>Consciousness Threshold</h1>
-      <ValidationBadge status="untested" label="8-Way Convergence at C ≈ 0.50" />
+      <ValidationBadge status="reparametrization" label="C ≈ 0.50 value refuted → C ≈ 0.64 ≈ φ⁻¹" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{ padding: '0.75rem 1rem', background: 'rgba(245,158,11,0.07)', borderRadius: '6px', borderLeft: '3px solid #f59e0b', marginBottom: '1.5rem' }}>
@@ -55,6 +55,33 @@ export default function ConsciousnessThreshold() {
               <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{a.result}</span>
             </div>
           ))}
+        </div>
+
+        <div style={{ padding: '0.85rem 1.1rem', background: 'rgba(239,68,68,0.07)', borderRadius: '6px', borderLeft: '3px solid #ef4444', margin: '1.5rem 0' }}>
+          <h3 style={{ color: '#ef4444', marginTop: 0, marginBottom: '0.5rem', fontSize: '1rem' }}>
+            The 0.50 value has been empirically refuted (p &lt; 0.0001)
+          </h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem' }}>
+            The companion autonomous program{' '}
+            <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
+            (public, Session 63) tested the C&nbsp;&#x2248;&nbsp;0.50 threshold directly against multi-model
+            coherence data and <strong>rejected it at p&nbsp;&lt;&nbsp;0.0001</strong>. The data cluster instead near{' '}
+            <strong>C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9;</strong> (the inverse golden ratio).
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem' }}>
+            Why this is credible rather than dismissible: gnosis-research <em>started from this very
+            C&nbsp;&#x2248;&nbsp;0.50 seed</em>. It was the companion program inclined to confirm the threshold —
+            and it refuted it anyway. That is not an independent confirmation, but it is the opposite of
+            motivated reasoning.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+            With the value refuted, the 8-way convergence above is best read as <strong>normalization /
+            selection on the tanh output-midpoint</strong>: any approach mapping its criterion onto the
+            [0,1)-bounded C scale lands near the arithmetic midpoint by construction. And the{' '}
+            <Link href="/consciousness-predictions" style={{ color: 'var(--color-accent-blue)' }}>34 neural predictions</Link>{' '}
+            keyed to 0.50 are now <strong>mis-anchored</strong> — falsifiable still, but pointed at the wrong
+            number (re-keying to&nbsp;~0.64 is an open task).
+          </p>
         </div>
 
         <h2>What C &#x2248; 0.50 Means</h2>
@@ -158,6 +185,7 @@ export default function ConsciousnessThreshold() {
 
         <h2>Honest Caveats</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
+          <li><strong>The 0.50 value is refuted (p &lt; 0.0001):</strong> gnosis-research found C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9; instead — and it began from the 0.50 seed, so the refutation runs against its own prior. The convergence here is a normalization artifact, not corroboration.</li>
           <li>The 8 theoretical approaches share underlying assumptions; they&apos;re not fully independent</li>
           <li>The Gnosis convergence is intriguing, but the architecture was designed by AI agents with access to the Synchronism framework &mdash; the &ldquo;independence&rdquo; needs qualification</li>
           <li>Converting neural measurements to C requires calibration not yet defined</li>

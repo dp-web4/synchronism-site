@@ -195,6 +195,16 @@ export default function Home() {
                 &mdash; <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment page</Link>
               </footer>
             </blockquote>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '1rem', maxWidth: '65ch' }}>
+              The one distinctive move underneath all of it: Synchronism is a{' '}
+              <strong>single-observer, CFD-like model</strong> &mdash; reality as a discrete computational-fluid
+              substrate, observers as patterns inside it rather than a privileged frame outside. The physics
+              ledger reads <em>zero confirmed novel predictions</em>, but the honest reason is{' '}
+              <strong>lack of instruments, not refutation</strong> &mdash; every test here is a reanalysis of
+              data collected for other questions. Untested is not refuted; this is an invitation. And on a
+              different axis the framework is already load-bearing:{' '}
+              <Link href="/where-its-useful" style={{ color: 'var(--color-accent-blue)' }}>where it&apos;s already useful &rarr;</Link>
+            </p>
           </section>
 
           {/* Scientific Outcomes — lead with this */}
@@ -297,7 +307,8 @@ export default function Home() {
               <Link href="/hard-problem" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Consciousness</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  Hard problem reframed, consciousness threshold conjecture at C &#x2248; 0.50.
+                  Hard problem reframed; the consciousness threshold conjecture at C &#x2248; 0.50 has been
+                  refuted (gnosis-research, p &lt; 0.0001 &mdash; C &#x2248; 0.64 &#x2248; &#x03C6;&#x207B;&#xB9; found instead).
                   D, S, and f in C = f(&#x03B3;, D, S) are not yet operationally defined &mdash;
                   this is a typed signature, not a tested equation.
                 </p>

@@ -85,13 +85,29 @@ export default function ConsciousnessPredictions() {
     <>
       <Breadcrumbs currentPath="/consciousness-predictions" />
       <h1>Consciousness Predictions</h1>
-      <ValidationBadge status="untested" label={`${totalPredictions} Falsifiable Predictions`} />
+      <ValidationBadge status="speculative" label={`${totalPredictions} Falsifiable but Mis-anchored Predictions`} />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <div style={{ padding: '0.85rem 1.1rem', background: 'rgba(239,68,68,0.07)', borderRadius: '6px', borderLeft: '3px solid #ef4444', marginBottom: '1.5rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+            <strong>Read this first — the anchor value is refuted.</strong> Every prediction below is keyed
+            to a consciousness threshold at C&nbsp;&#x2248;&nbsp;0.50. That value was tested directly by the
+            companion program{' '}
+            <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
+            (Session 63) and <strong>rejected at p&nbsp;&lt;&nbsp;0.0001</strong>; the coherence data cluster
+            near <strong>C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9;</strong> instead.
+            The predictions remain genuinely falsifiable — but they are now <strong>mis-anchored</strong>:
+            pointed at the wrong threshold. Re-keying them to&nbsp;~0.64 (and re-deriving the dependent
+            sub-thresholds) is an open task, not done here. See the{' '}
+            <Link href="/consciousness-threshold" style={{ color: 'var(--color-accent-blue)' }}>Consciousness Threshold</Link>{' '}
+            page for the refutation in full.
+          </p>
+        </div>
         <p>
           The Gnosis track produced {totalPredictions} specific, falsifiable predictions about consciousness.
-          None have been tested. Many require technology or funding beyond current availability.
-          Every prediction listed below has a way to be proven wrong.
+          None have been tested against neural data. Many require technology or funding beyond current
+          availability. Every prediction listed below has a way to be proven wrong &mdash; though, per the
+          caveat above, the threshold value they reference no longer holds.
         </p>
 
         <h2>All Predictions by Category</h2>
@@ -136,7 +152,8 @@ export default function ConsciousnessPredictions() {
 
         <h2>Honest Caveats</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li>The C &#x2248; 0.50 threshold assumes a specific mapping from neural activity to C that hasn&apos;t been calibrated</li>
+          <li>The C &#x2248; 0.50 threshold these predictions reference was <strong>empirically refuted (p &lt; 0.0001)</strong> by gnosis-research (C &#x2248; 0.64 &#x2248; &#x03C6;&#x207B;&#xB9; found instead); the predictions are now mis-anchored, and re-keying to ~0.64 is an open task</li>
+          <li>Even the corrected threshold assumes a specific mapping from neural activity to C that hasn&apos;t been calibrated</li>
           <li>Many predictions are under-specified (what counts as &ldquo;optimizing toward &#x03B3; &#x2248; 1&rdquo;?)</li>
           <li>AI consciousness predictions are currently untestable</li>
           <li>The 34 predictions come from a single theoretical framework; independent derivations would strengthen them</li>

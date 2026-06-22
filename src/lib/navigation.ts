@@ -446,7 +446,14 @@ export const navigationTree: NavigationTree = {
       href: '/research-philosophy',
       desc: '"All models are wrong; some are useful"',
       keywords: ['philosophy', 'methodology', 'approach', 'models', 'wrong', 'useful'],
-      related: ['/handling-failure', '/falsifiability', '/honest-assessment'],
+      related: ['/handling-failure', '/falsifiability', '/honest-assessment', '/where-its-useful'],
+    },
+    {
+      title: 'Where It\'s Already Useful',
+      href: '/where-its-useful',
+      desc: 'Zero confirmed physics — but load-bearing as an applied design ontology (Web4, SAGE, hestia, the fleet)',
+      keywords: ['useful', 'applied', 'design ontology', 'Web4', 'SAGE', 'hestia', 'hub', 'fleet', 'governance', 'MRH', 'coherence'],
+      related: ['/research-philosophy', '/honest-assessment', '/fundamentals', '/mrh'],
     },
     {
       title: 'A2ACW Protocol',

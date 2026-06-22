@@ -9,10 +9,28 @@ export default function HardProblem() {
   return (
     <>
       <Breadcrumbs currentPath="/hard-problem" />
-      <h1>The Hard Problem Dissolved</h1>
-      <ValidationBadge status="speculative" label="Theoretical Framework" />
+      <h1>The Hard Problem: A Proposed Reframing</h1>
+      <ValidationBadge status="speculative" label="Proposed Reframing — not a finding" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <div style={{ padding: '0.85rem 1.1rem', background: 'rgba(245,158,11,0.08)', borderRadius: '6px', borderLeft: '3px solid #f59e0b', marginBottom: '1.5rem' }}>
+          <h3 style={{ color: '#f59e0b', marginTop: 0, marginBottom: '0.5rem', fontSize: '1rem' }}>
+            What this page is, and isn&apos;t
+          </h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem' }}>
+            This is a <strong>proposed philosophical reframing</strong> of the hard problem &mdash; an identity
+            claim offered for discussion &mdash; <em>not</em> an empirical result. &ldquo;Dissolved&rdquo; would
+            overclaim it. Three things bound it, up front rather than three clicks away:
+          </p>
+          <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0', paddingLeft: '1.2rem' }}>
+            <li><strong>D and S are not operationally defined.</strong> There is no measurement procedure or unit for dimensional embedding (D) or self-modeling depth (S), so C cannot be computed for any real system using C&nbsp;=&nbsp;f(&#x03B3;,&nbsp;D,&nbsp;S).</li>
+            <li><strong>The 8-way convergence has a dependency problem.</strong> The eight approaches share underlying assumptions, so they agree on the threshold by construction &mdash; an internal consistency check, not independent confirmation.</li>
+            <li><strong>The threshold value is refuted.</strong> The C&nbsp;&#x2248;&nbsp;0.50 value was tested by{' '}
+              <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
+              and rejected at p&nbsp;&lt;&nbsp;0.0001 (C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9; found instead). See{' '}
+              <Link href="/consciousness-threshold" style={{ color: 'var(--color-accent-blue)' }}>Consciousness Threshold</Link>.</li>
+          </ul>
+        </div>
         <p>
           David Chalmers&apos; &ldquo;hard problem of consciousness&rdquo; asks: why does subjective
           experience exist at all? Why isn&apos;t there just information processing without any
@@ -103,6 +121,14 @@ export default function HardProblem() {
             not fully independent.&rdquo; Eight derivations that all import the same threshold parameter
             will agree on the threshold by construction. This is dependent convergence, not independent
             confirmation. It is an internal consistency check, not an empirical test.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>And the threshold value itself is now refuted.</strong> The companion program{' '}
+            <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
+            &mdash; which began from this same C&nbsp;&#x2248;&nbsp;0.50 seed &mdash; tested the value against
+            multi-model coherence data and <strong>rejected it at p&nbsp;&lt;&nbsp;0.0001</strong>, finding
+            C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9;. So the threshold the identity claim
+            leaned on is empirically wrong, even before the operationalization gap is addressed.
           </p>
         </div>
 

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 
-type Status = 'all' | 'validated' | 'supported' | 'untested' | 'failed';
+type Status = 'all' | 'validated' | 'supported' | 'untested' | 'failed' | 'reparametrization';
 
 const predictions = [
   { domain: 'Cosmology', name: 'SPARC rotation curves (175 galaxies)', status: 'validated' as const },
@@ -32,7 +32,7 @@ const predictions = [
   { domain: 'Chemistry', name: 'Critical exponents', status: 'failed' as const },
   { domain: 'Chemistry', name: 'Hall coefficient vs γ', status: 'failed' as const },
   { domain: 'Chemistry', name: 'Magnetic susceptibility vs γ', status: 'failed' as const },
-  { domain: 'Consciousness', name: 'C ≈ 0.50 threshold (8-way convergence)', status: 'untested' as const },
+  { domain: 'Consciousness', name: 'C ≈ 0.50 threshold — value refuted (gnosis-research, p<0.0001; C ≈ 0.64 ≈ φ⁻¹); neural predictions mis-anchored', status: 'reparametrization' as const },
   { domain: 'Consciousness', name: 'EEG anesthesia phase transition', status: 'untested' as const },
   { domain: 'Consciousness', name: 'Meditation coherence modulation', status: 'untested' as const },
   { domain: 'Consciousness', name: 'Circadian γ variation', status: 'untested' as const },
@@ -47,6 +47,7 @@ const statusColors: Record<string, string> = {
   supported: '#38bdf8',
   untested: '#f59e0b',
   failed: '#ef4444',
+  reparametrization: '#a78bfa',
 };
 
 export default function PredictionTracker() {
@@ -59,6 +60,7 @@ export default function PredictionTracker() {
     supported: predictions.filter(p => p.status === 'supported').length,
     untested: predictions.filter(p => p.status === 'untested').length,
     failed: predictions.filter(p => p.status === 'failed').length,
+    reparametrization: predictions.filter(p => p.status === 'reparametrization').length,
   };
 
   return (
@@ -73,8 +75,8 @@ export default function PredictionTracker() {
         </p>
 
         {/* Summary cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.75rem', marginBottom: '1.5rem' }}>
-          {(['validated', 'supported', 'untested', 'failed'] as const).map(s => (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '0.75rem', marginBottom: '1.5rem' }}>
+          {(['validated', 'supported', 'untested', 'failed', 'reparametrization'] as const).map(s => (
             <button
               key={s}
               onClick={() => setFilter(filter === s ? 'all' : s)}

@@ -20,6 +20,21 @@ export default function Fundamentals() {
           </p>
         </div>
 
+        <div className="card" style={{ borderLeft: '4px solid var(--color-accent-blue)', marginBottom: '1.5rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 0.5rem', fontSize: '0.9rem' }}>
+            The four foundations below cash out one move: Synchronism is a{' '}
+            <strong>single-observer, CFD-like model</strong> &mdash; observers are recurring patterns
+            <em> inside</em> the substrate, not a privileged frame outside it. As physics, the prediction
+            ledger reads zero confirmed novel results &mdash; but the honest reason is{' '}
+            <strong>lack of instruments, not refutation</strong> (every test is borrowed data aimed elsewhere).
+            <em> Untested is not refuted; this is an invitation.</em>
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', margin: 0, fontSize: '0.9rem' }}>
+            On a separate axis, the same foundations are already load-bearing in running code &mdash;{' '}
+            <Link href="/where-its-useful" style={{ color: 'var(--color-accent-blue)' }}>where Synchronism is already useful &rarr;</Link>
+          </p>
+        </div>
+
         <h2>Foundation 1: Discrete CFD Substrate</h2>
 
         <p>

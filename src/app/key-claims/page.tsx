@@ -275,7 +275,14 @@ export default function KeyClaims() {
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
             Consciousness crosses a threshold near C &#x2248; 0.50 &mdash; the output-range midpoint of
             the coherence function, chosen by the framework&apos;s internal convergence across 8
-            Synchronism-based approaches &mdash; rather than fading smoothly across all coherence values.
+            Synchronism-based approaches &mdash; rather than fading smoothly across all coherence values.{' '}
+            <span style={{ color: '#ef4444' }}>
+              That specific value has since been empirically refuted: the companion program{' '}
+              <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
+              (which began from this 0.50 seed) tested it against multi-model coherence data and rejected
+              it at p&nbsp;&lt;&nbsp;0.0001, finding C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9; instead.
+              The 34 dependent neural predictions are now mis-anchored.
+            </span>
             Note: C&nbsp;&#x2248;&nbsp;0.50 is the arithmetic midpoint of [0,1), not the dynamically privileged
             point — the maximum rate of change occurs at C&nbsp;&#x2248;&nbsp;0.58–0.59 (vs log-density, γ=2)
             or at C&nbsp;=&nbsp;0 (vs linear density). This is a geometric threshold in the output range,
@@ -321,6 +328,16 @@ export default function KeyClaims() {
               is not independent. Converting real neural measurements to the C scale requires a
               calibration procedure not yet defined. The free will formulation may not be empirically
               distinguishable from sophisticated compatibilism.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
+              <strong>Direct empirical refutation of the 0.50 value:</strong> the companion autonomous
+              program <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
+              (Session 63) &mdash; which <em>started from this very C&nbsp;&#x2248;&nbsp;0.50 seed</em> &mdash; tested
+              it against multi-model coherence data and <strong>rejected it at p&nbsp;&lt;&nbsp;0.0001</strong>,
+              with the data clustering near <strong>C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9;</strong>.
+              Because the refuting program was inclined to confirm the seed and didn&apos;t, the refutation is
+              more credible, not less. The <Link href="/consciousness-predictions" style={{ color: 'var(--color-accent-blue)' }}>34 predictions</Link>{' '}
+              keyed to 0.50 are now mis-anchored; re-keying to&nbsp;~0.64 is an open task.
             </p>
           </div>
 

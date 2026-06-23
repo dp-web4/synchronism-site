@@ -637,10 +637,10 @@ export const navigationTree: NavigationTree = {
       related: ['/test-catalog', '/status-dashboard'],
     },
     {
-      title: 'Equation Walkthrough',
+      title: 'Equation Anatomy',
       href: '/equation-walkthrough',
-      desc: 'Step through parameter derivations interactively',
-      keywords: ['equation', 'walkthrough', 'derivation', 'step', 'interactive'],
+      desc: 'Term-by-term tour of C(ρ) — what each piece means and why it was chosen (motivated, not derived)',
+      keywords: ['equation', 'anatomy', 'walkthrough', 'term', 'tour', 'interactive'],
       related: ['/parameter-derivations', '/coherence-function'],
     },
     {

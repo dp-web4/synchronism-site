@@ -141,11 +141,9 @@ export default function GalaxyPlotter() {
           fontSize: '0.85rem',
           color: 'var(--color-text-muted)',
         }}>
-          <strong style={{ color: '#f59e0b' }}>Note:</strong> V<sub>flat</sub> is taken from existing
-          SPARC/MOND fits, not independently predicted by Synchronism. The violet curve demonstrates
-          shape recovery with one coherence parameter &mdash; it is a consistency check, not a
-          parameter-free prediction. See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</a> for
-          the honest accounting.
+          <strong style={{ color: '#f59e0b' }}>Parsimony note:</strong> MOND fits all 175 SPARC galaxies with a <em>single global</em> constant (a&#x2080;). Synchronism refits one free &#x03C1;<sub>crit</sub> <em>per galaxy</em> — an extra free parameter for each galaxy. By parsimony (BIC), the Synchronism per-galaxy fit is strictly dominated, not equivalent. Additionally, the scale A in &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; is itself{' '}
+          <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Audited-Negative</a>{' '}
+          (chain-of-custody failure: stated derivation gives A ≈ 4.6×10⁻⁵, 600× off the claimed 0.029 &mdash; the number outlived its computation). V<sub>flat</sub> is taken from existing SPARC/MOND fits, not independently predicted. See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</a> for full accounting.
         </div>
         <div style={{
           background: 'rgba(239, 68, 68, 0.08)',

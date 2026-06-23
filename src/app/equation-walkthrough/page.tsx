@@ -51,14 +51,13 @@ export default function EquationWalkthrough() {
   return (
     <>
       <Breadcrumbs currentPath="/equation-walkthrough" />
-      <h1>Equation Walkthrough</h1>
+      <h1>Equation Anatomy</h1>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
-          Step through the construction of C(&#x03C1;) interactively. Each step adds one piece
-          to the equation and explains the motivation behind it. Note: tanh and
-          &#x03B3;&nbsp;=&nbsp;2/&#x221A;N<sub>corr</sub> are motivated choices, not derived results &mdash;
-          see the caveat blocks in each step.
+          A term-by-term tour of C(&#x03C1;) &mdash; what each piece means and why it was chosen.
+          Note: tanh and &#x03B3;&nbsp;=&nbsp;2/&#x221A;N<sub>corr</sub> are motivated choices, not derived results
+          (there is no derivation to walk through &mdash; only choices to examine). See the caveat blocks in each step.
         </p>
 
         {/* Variable glossary — teach before walking */}

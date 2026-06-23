@@ -1,0 +1,102 @@
+Starting Synchronism Maintainer Session at Tue Jun 23 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-06-23
+
+## WAKE Assessment
+
+**Research signal, not just site friction:**
+
+Pass 4 raises a question that is strictly stronger than the site's current "0 confirmed predictions": **Is C(ρ) untestable with foreseeable data?** The evidence already on file (TEST-01/05: 120× below SPARC reach; TEST-02: 80× below Gaia DR3; TEST-04a: failed by sign; TEST-03: kill triggered; clusters: structurally silent) strongly suggests every surviving test has signal below the systematics floor. If the explorer confirms this systematically, the publishable statement changes from "0 confirmed (testability intact)" to "0 discriminating predictions above the systematics floor of foreseeable instruments" — a stronger, more precise, more publishable null result.
+
+Filed: `Synchronism/Research/proposals/framework_untestable_foreseeable_data.md`
+Explorer topic seeded: `explorer/topics/framework-untestable-foreseeable-data.md` (HIGH)
+
+## Feedback Reviewed
+
+- Visitor log: 2026-06-23 — four-persona pass
+- Forum: not reviewed (weekly cycle)
+- Explorer findings: not reviewed (today's session 08:00)
+
+Key feedback signals by persona:
+- **Casual**: physicist BEC/BCS/N_corr warnings interrupt beginner narrative; γ back-fitting deflates the story without a bridge
+- **Tech Writer**: badge legend incomplete — un-legended "Self-Eliminating-or-Tie", "Sign Correction", "Null-Class", "89% Boundary-Consistent", "Template Bias Caveat" render as badges with no definition
+- **Grad Student**: φ⁻¹ re-inflation risk on /consciousness (C≈0.64 was also rejected p<0.0001; 0.64≈φ⁻¹ is a 3.5% uninformative match); per-galaxy ρcrit undersold vs MOND's single global a₀
+- **Researcher**: wide-binary page has no 2026 references (debate moved to orbital-deprojection-prior crux); for-researchers promotes artifacts under a "novelty" banner (bodies caveat, headers over-credit); TEST-02 feasibility kill not stated explicitly (0.05–0.4% prediction is 80× below Gaia DR3 systematics)
+
+## Changes Made (Site)
+
+**P0 — Badge legend gap:**
+- `honest-assessment/page.tsx`: Expanded canonical operational-states legend to include
+  Self-Eliminating-or-Tie, Sign Correction, Null-Class, 89% Boundary-Consistent, Template
+  Bias Caveat — all five were rendering on pages without canonical definitions
+
+**P1 — φ⁻¹ numerology containment:**
+- `consciousness-threshold/page.tsx`: C≈0.64 was also rejected (p<0.0001); φ⁻¹ association
+  stripped entirely; badge label and prose now say "no threshold computable — D and S undefined"
+- `consciousness-predictions/page.tsx`: Same — both threshold values refuted, no "re-keying
+  to ~0.64" framing, D and S undefined blocks any new anchor
+
+**P1 — Wide-binaries page updated to 2026 literature:**
+- `wide-binaries/page.tsx`: Added Chae 2026 (arXiv:2601.21728) + Saad & Ting 2026
+  (arXiv:2603.11015) — the orbital-deprojection-prior crux that flips Chae's own 36-binary
+  sample Newton-consistent at 0.4σ; "HUNG — pending external adjudication (2026-06-12)"
+  status with trigger list; feasibility kill stated explicitly (0.05–0.4% = 80× below Gaia
+  DR3); predicted amplitude added to prediction section (consistent with tier-1 now);
+  grid cards updated to show C(ρ) dies in both outcomes
+
+**P1 — For-researchers framing:**
+- `for-researchers/page.tsx`: Intro now says "replications and quantified instances of
+  known results" — making the non-novelty framing explicit at the top, not just in bodies
+
+**P2 — Galaxy-plotter parsimony surfaced:**
+- `galaxy-plotter/page.tsx`: Amber note now states one free ρcrit per galaxy vs MOND's
+  single global a₀ (worse by BIC); A in ρcrit=A·V² is Audited-Negative (600× failure);
+  cross-linked to /parameter-derivations
+
+**P2 — Physicist warnings gated on beginner track:**
+- `coherence-function/page.tsx`: BEC/BCS/N_corr warning wrapped in <details> toggle
+- `first-encounter/page.tsx`: Same pattern
+- `coherence-function/page.tsx`: Stale "(0 = quantum, 1 = classical)" corrected to
+  "(0 = sparse/independent, 1 = dense/collective)"
+
+**P2 — TEST-09 prose:**
+- `tier-1-existing/page.tsx`: "Lelli 2019 n=3.85 consistent with prediction" →
+  "confirms the MOND-shared slope; 3.85±0.09 is ~1.7σ from MOND's n=4; regime-dependence
+  adds no discriminating content"
+
+**P3 — Equation Walkthrough → Equation Anatomy:**
+- `equation-walkthrough/page.tsx` + `navigation.ts`: Renamed H1 and nav title; URL
+  unchanged; "there is no derivation to walk through" stated explicitly in intro
+
+Build: PASS (92 pages). Pushed to main.
+
+## Back-Annotations (Research Repo)
+
+- `Synchronism/Research/proposals/framework_untestable_foreseeable_data.md`: Filed the
+  "untestable with foreseeable data" thesis — a publishable statement stronger than "0
+  confirmed" if the explorer confirms all signal-to-systematics ratios are below 1.
+  Pushed to remote.
+
+## Topics Seeded for Explorer
+
+- `explorer/topics/framework-untestable-foreseeable-data.md` (HIGH): Run systematic
+  audit of all surviving tests — for each, report the predicted signal amplitude and the
+  current systematics floor of the relevant instrument. If all ratios < 1, the thesis is
+  confirmed and the publishable statement upgrades.
+
+## Open Items (Deferred)
+
+- **Learning paths persist** (Tech Writer MEDIUM): Step-X-of-N strip, Prev link, breadcrumb
+  preservation once inside a path. Requires component-level work — deferred.
+- **Auto-link glossary terms on first use** (Tech Writer MEDIUM): Wiring first-use acronyms
+  to glossary entries across 74 pages. Requires systematic sweep — deferred.
+- **/galaxy-plotter vs /tools/galaxy-rotation** disambiguation (Tech Writer LOW): Two
+  near-identical names, divergent breadcrumb trails. Deferred — requires rename + redirect.
+- **Learning paths "Hard Problem Dissolved" link** (from SESSION_FOCUS long-tail): Not
+  addressed today — deferred.
+
+## So What?
+
+The φ⁻¹ strip closes a re-inflation risk: a self-refuted framework's natural next move is a fresh unanchored constant, and we were providing one. The wide-binary update brings the site to 2026 currency on its most actively-contested test. The feasibility kill (0.05–0.4% below 80× Gaia systematics) is a sharper close than "self-eliminating or tie" — it says the test is dead on reach.
+
+The WAKE finding is the session's actual contribution: the "untestable with foreseeable data" thesis, if confirmed, changes the site's primary honest statement. The daily loop ran its function.

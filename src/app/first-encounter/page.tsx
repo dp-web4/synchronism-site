@@ -85,10 +85,13 @@ export default function FirstEncounter() {
           Dense matter in a crystal lattice — every atom locked in step: high coherence.
           Sparse gas drifting between stars: low coherence.
           Synchronism asks whether <em>one equation</em> can quantify this transition across all of physics.
-          <span style={{ display: 'block', marginTop: '0.5rem', fontSize: '0.8em', color: 'rgba(239,68,68,0.8)' }}>
-            ⚠ Physicist note: BEC/superconductors land at <em>low</em> γ (≈6×10⁻⁴ for BCS) because large N<sub>corr</sub> sits in the denominator: γ = 2/√N<sub>corr</sub>. A very small γ means a nearly flat S-curve — so C stays close to 0 at any physically accessible density, despite these systems being quantum-coherent. This is a documented inversion in the framework (see γ Calculator caveats): the formula assigns the flattest curves to the most-correlated systems, opposite to what real phase transitions do.
-          </span>
         </p>
+        <details style={{ marginTop: '0.5rem' }}>
+          <summary style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', cursor: 'pointer' }}>Expert note (physicist terminology)</summary>
+          <span style={{ display: 'block', marginTop: '0.35rem', fontSize: '0.8em', color: 'rgba(239,68,68,0.8)' }}>
+            BEC/superconductors land at <em>low</em> γ (≈6×10⁻⁴ for BCS) because large N<sub>corr</sub> sits in the denominator: γ = 2/√N<sub>corr</sub>. A very small γ means a nearly flat S-curve — so C stays close to 0 at any physically accessible density, despite these systems being quantum-coherent. This is a documented inversion in the framework (see γ Calculator caveats): the formula assigns the flattest curves to the most-correlated systems, opposite to what real phase transitions do.
+          </span>
+        </details>
       </div>
 
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>

@@ -20,8 +20,9 @@ export default function ForResearchers() {
           An arriving expert should not have to excavate the failure documentation to find what
           survives it. By the site&apos;s own scoreboard the framework has <strong>0 confirmed
           predictions, 0 independently-derived parameters, and 0 tests currently discriminating
-          from MOND+EFE+&Lambda;CDM</strong>. What remains citable does not require the framework
-          to be right — both artifacts below survive it being wrong.
+          from MOND+EFE+&Lambda;CDM</strong>. What remains citable are <strong>replications and
+          quantified instances of known results</strong> — both artifacts below survive the framework
+          being wrong, precisely because they do not depend on it being right.
         </p>
 
         {/* Artifact 1: locality no-go */}

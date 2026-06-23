@@ -94,11 +94,11 @@ export default function ConsciousnessPredictions() {
             to a consciousness threshold at C&nbsp;&#x2248;&nbsp;0.50. That value was tested directly by the
             companion program{' '}
             <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
-            (Session 63) and <strong>rejected at p&nbsp;&lt;&nbsp;0.0001</strong>; the coherence data cluster
-            near <strong>C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9;</strong> instead.
+            (Session 63) and <strong>rejected at p&nbsp;&lt;&nbsp;0.0001</strong>; the data suggested C&nbsp;&#x2248;&nbsp;0.64,
+            which was <strong>also rejected at p&nbsp;&lt;&nbsp;0.0001</strong>. No replacement threshold survives.
             The predictions remain genuinely falsifiable — but they are now <strong>mis-anchored</strong>:
-            pointed at the wrong threshold. Re-keying them to&nbsp;~0.64 (and re-deriving the dependent
-            sub-thresholds) is an open task, not done here. See the{' '}
+            pointed at a refuted value, with no operationally-defined replacement (D and S undefined; no
+            C measurement protocol exists). See the{' '}
             <Link href="/consciousness-threshold" style={{ color: 'var(--color-accent-blue)' }}>Consciousness Threshold</Link>{' '}
             page for the refutation in full.
           </p>
@@ -152,7 +152,7 @@ export default function ConsciousnessPredictions() {
 
         <h2>Honest Caveats</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li>The C &#x2248; 0.50 threshold these predictions reference was <strong>empirically refuted (p &lt; 0.0001)</strong> by gnosis-research (C &#x2248; 0.64 &#x2248; &#x03C6;&#x207B;&#xB9; found instead); the predictions are now mis-anchored, and re-keying to ~0.64 is an open task</li>
+          <li>The C &#x2248; 0.50 threshold was <strong>empirically refuted (p &lt; 0.0001)</strong> by gnosis-research; the refit suggested C &#x2248; 0.64, which was also rejected at p &lt; 0.0001. Both threshold values are refuted. No replacement is computable until D and S are operationally defined.</li>
           <li>Even the corrected threshold assumes a specific mapping from neural activity to C that hasn&apos;t been calibrated</li>
           <li>Many predictions are under-specified (what counts as &ldquo;optimizing toward &#x03B3; &#x2248; 1&rdquo;?)</li>
           <li>AI consciousness predictions are currently untestable</li>

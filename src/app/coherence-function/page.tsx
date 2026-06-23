@@ -37,13 +37,15 @@ export default function CoherenceFunction() {
           (a dimensionless number between 0 and 1 that measures how collectively elements behave
           &mdash; from sparse/independent (C&nbsp;&asymp;&nbsp;0) to dense/collective (C&nbsp;&asymp;&nbsp;1)).
         </p>
-        <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem', marginBottom: '0.5rem', fontSize: '0.82rem', color: 'var(--color-text-secondary)' }}>
-          <strong style={{ color: '#f59e0b' }}>Note for physicists:</strong>{' '}
-          &ldquo;Coherence&rdquo; here means density-driven <em>classicality/collectivity</em>, not quantum phase coherence.
-          BCS superconductors and BECs land at C&nbsp;&asymp;&nbsp;0 at all physical densities because their large
-          N<sub>corr</sub> → tiny γ → flat tanh curve &mdash; not because they lack macroscopic phase coherence.
-          See the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>glossary</Link> warning.
-        </div>
+        <details style={{ marginBottom: '0.5rem' }}>
+          <summary style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', cursor: 'pointer' }}>Expert note (physicist terminology)</summary>
+          <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem', marginTop: '0.35rem', fontSize: '0.82rem', color: 'var(--color-text-secondary)' }}>
+            &ldquo;Coherence&rdquo; here means density-driven <em>classicality/collectivity</em>, not quantum phase coherence.
+            BCS superconductors and BECs land at C&nbsp;&asymp;&nbsp;0 at all physical densities because their large
+            N<sub>corr</sub> → tiny γ → flat tanh curve &mdash; not because they lack macroscopic phase coherence.
+            See the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>glossary</Link> warning.
+          </div>
+        </details>
 
         <h2>Inputs and Outputs</h2>
         <div className="grid-3" style={{ marginBottom: '1.5rem' }}>
@@ -58,7 +60,7 @@ export default function CoherenceFunction() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontFamily: 'serif', fontStyle: 'italic', fontSize: '1.3rem', color: 'var(--color-accent-violet)' }}>C</div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <strong>Output:</strong> coherence (0 = quantum, 1 = classical)
+              <strong>Output:</strong> coherence (0 = sparse/independent, 1 = dense/collective)
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>

@@ -11,7 +11,7 @@ export default function WideBinaries() {
     <>
       <Breadcrumbs currentPath="/wide-binaries" />
       <h1>Wide Binaries</h1>
-      <ValidationBadge status="untested" label="Gaia DR3" />
+      <ValidationBadge status="untested" label="Self-Eliminating — Pending External Adjudication (2026)" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -55,6 +55,12 @@ export default function WideBinaries() {
             appear. In dense environments, the external coherence field &ldquo;masks&rdquo; the
             low-acceleration effects.
           </p>
+          <p style={{ color: 'var(--color-text-secondary)' }}>
+            <strong>Predicted amplitude:</strong> In the clean within-250-pc Gaia sample, C(ρ) predicts
+            only <strong>0.05–0.4% velocity deviation</strong> from Newtonian dynamics — because the
+            C(ρ) prediction for wide binaries is effectively the Newtonian null (g_eff ≈ g_N at the relevant
+            densities). This is ~80× below Gaia DR3 wide-binary systematics. Cf. MOND prediction: ~18%
+            velocity enhancement. The amplitude difference is fundamental, not instrumental.</p>
         </div>
 
         <h2>The Data</h2>
@@ -87,17 +93,43 @@ export default function WideBinaries() {
           </div>
         </div>
 
-        <h2>Current Observational Status</h2>
-        <p>
-          Several groups have analyzed Gaia wide binaries with conflicting results. Chae (2023, 2024)
-          reported a clear anomaly consistent with MOND. Banik et al. (2024) and Pittordis &amp; Sutherland
-          (2023) found no significant anomaly under improved sample selection and contamination treatment.
-          Saurabh &amp; Desmond (2024) found no anomaly in high-quality Gaia DR3 cuts.
-          The Hernandez Stellar Cinematics group (Hernandez 2023) reports anomalies in projected-velocity
-          statistics. The disagreement centers on sample selection, contamination from unresolved
-          triples, projected-vs-3D-separation methodology, and statistical cuts.
-        </p>
+        <h2>Feasibility Kill — Signal Below Gaia Systematics</h2>
+        <div style={{
+          background: 'rgba(239,68,68,0.07)',
+          border: '1px solid rgba(239,68,68,0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          margin: '1rem 0 1.5rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#ef4444' }}>Feasibility kill (independent of the Chae–Banik dispute):</strong>{' '}
+          C(ρ) predicts a Newtonian null — only <strong>0.05–0.4% velocity deviation</strong> from Newtonian
+          dynamics — because low-density wide-binary environments give C ≈ 1 (near-Newtonian).
+          Gaia DR3 systematics on clean wide-binary velocity samples are ~3–5%, placing the predicted
+          signal <strong>~80× below reach</strong>. Even if Chae (2023–2026) wins the observational dispute,
+          C(ρ) is refuted — it predicts the Newtonian null, not the MOND-scale anomaly Chae reports.
+          Even if Banik wins (no anomaly), C(ρ) survives but degenerately with Newton. <strong>No measurement
+          outcome selects Synchronism over the standard alternatives.</strong>
+        </div>
 
+        <h2>Current Observational Status (updated 2026-06-23)</h2>
+        <p>
+          The wide-binary debate escalated in 2026. The earlier dispute (sample selection,
+          contamination, statistical cuts) has been superseded by a sharper disagreement:
+        </p>
+        <ul style={{ color: 'var(--color-text-secondary)' }}>
+          <li><strong>Chae et al. 2026 (arXiv:2601.21728)</strong>: Enlarged RV+speckle-vetted sample
+            of 36 binaries → 4.9σ boost with γ_boost ≈ 1.6 — consistent with MOND.</li>
+          <li><strong>Saad &amp; Ting 2026 (arXiv:2603.11015)</strong>: Reanalyzed the <em>same</em> 36 binaries
+            from Chae et al. 2026 using a hierarchical semi-major-axis fit (replacing geometric deprojection)
+            → <strong>γ = 1.12 ± 0.25, Newton-consistent at 0.4σ</strong>. The entire anomaly lives in one
+            modeling assumption (orbital deprojection prior).</li>
+          <li><strong>Prior generation (2023–2024)</strong>: Banik et al. (2024), Pittordis &amp; Sutherland
+            (2023), Saurabh &amp; Desmond (2024) all Newtonian-consistent with different cuts.</li>
+          <li><strong>Hernandez (2023–2024)</strong>: Anomalies in projected-velocity statistics; methodology
+            disputed.</li>
+        </ul>
         <div style={{
           background: 'rgba(245,158,11,0.07)',
           border: '1px solid rgba(245,158,11,0.25)',
@@ -107,55 +139,58 @@ export default function WideBinaries() {
           fontSize: '0.85rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: '#f59e0b' }}>MOND+EFE caveat (Bekenstein &amp; Milgrom 1984):</strong>{' '}
-          MOND&apos;s External Field Effect (EFE) also predicts environment-dependent orbital dynamics:
-          a strong external gravitational field suppresses the MOND anomaly. Standard MOND+EFE therefore
-          predicts a weaker anomaly in dense environments — the same directional prediction as Synchronism.
-          For TEST-02 to genuinely discriminate between frameworks, the predicted functional form ξ(ρ_env)
-          from Synchronism must differ <em>quantitatively</em> from the MOND+EFE prediction. This comparison
-          has not yet been computed. Until it is, TEST-02 is <strong>possibly MOND+EFE degenerate</strong>.
+          <strong style={{ color: '#f59e0b' }}>Status: pending external adjudication (adjudication executed 2026-06-12 — HUNG).</strong>{' '}
+          The crux migrated from sample cuts to orbital modeling prior. The adjudication will turn on:
+          (1) Chae rebuttal of Saad &amp; Ting's deprojection model; (2) mock-injection cross-validation
+          of the deprojection crux (decidable with <em>no new data</em>); (3) independent ≥3σ boost
+          confirmation → kill fires; (4) independent null replication → degenerate survival; (5) Gaia DR4.
+          All independent third parties (Saad &amp; Ting, Saglia et al. 2025, Pasquini et al. 2026) currently
+          lean Newtonian or deflationary.
         </div>
 
-        <p>
-          Synchronism&apos;s environment-dependent prediction offers a potential resolution to the
-          Chae-vs-Banik dispute: both groups may be correct for their respective samples if the anomaly
-          depends on local density. This can be tested by binning existing catalogs by Galactic latitude,
-          local stellar density, and distance from the Galactic plane — but only if the functional form
-          ξ(ρ) is derived from the framework&apos;s parameters before the test, not fitted afterward.
-        </p>
+        <div style={{
+          background: 'rgba(59,130,246,0.07)',
+          border: '1px solid rgba(59,130,246,0.2)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          margin: '1rem 0 1.25rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: 'var(--color-accent-blue)' }}>MOND+EFE degeneracy (Bekenstein &amp; Milgrom 1984):</strong>{' '}
+          MOND+EFE predicts environment-dependent orbital dynamics in the same direction as Synchronism (weaker
+          anomaly in denser environments). The C(ρ) and MOND+EFE functional forms have been computed and
+          compared (2026-06-05): they make <em>opposite amplitude</em> predictions — C(ρ) predicts the
+          Newtonian null (~0.05–0.4%); MOND predicts ~18% enhancement. These are not degenerate in amplitude,
+          but C(ρ)'s predicted amplitude is ~80× below Gaia reach. The test cannot discriminate.
+        </div>
 
-        <h2>Why This Test Is Decisive</h2>
+        <h2>Why This Test Cannot Be Decisive (As Currently Formulated)</h2>
         <div className="grid-2" style={{ margin: '1.5rem 0' }}>
           <div className="card">
-            <h3 style={{ color: '#22c55e' }}>If confirmed (and MOND+EFE excluded)</h3>
+            <h3 style={{ color: '#ef4444' }}>If anomaly confirmed (Chae wins)</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              A density-dependent wide binary anomaly with functional form that differs from
-              MOND+EFE would be a genuine discriminating prediction confirmed by data.
-              Pre-condition: the ξ(ρ_env) functional form must be derived before the analysis.
+              C(ρ) predicts the Newtonian null — so a confirmed MOND-scale anomaly would
+              <strong> refute C(ρ)</strong> (it predicts ~0.05–0.4%, not ~18%). The &ldquo;kill branch&rdquo;
+              fires with existing data if Chae&apos;s deprojection approach is vindicated.
             </p>
           </div>
           <div className="card">
-            <h3 style={{ color: '#ef4444' }}>If refuted</h3>
+            <h3 style={{ color: 'var(--color-text-secondary)' }}>If null confirmed (Banik wins)</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              If the anomaly shows no environment dependence (or doesn&apos;t exist at all),
-              it falsifies the coherence-based mechanism for modified gravity. The galactic-scale
-              results would need a different explanation.
+              C(ρ) survives — but degenerately with Newton. The predicted signal (0.05–0.4%)
+              sits 80× below Gaia DR3 systematics, so there is no measurement that selects
+              Synchronism over Newton.
             </p>
           </div>
         </div>
-
-        <p style={{ color: 'var(--color-text-secondary)' }}>
-          This is one of the cheapest decisive experiments in fundamental physics: the data already
-          exists, the analysis requires computational resources but no new observations, and the
-          prediction is specific enough to be clearly confirmed or refuted.
-        </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <Link href="/cosmology-predictions" className="btn-primary">
             Next: Cosmology Predictions &rarr;
           </Link>
-          <Link href="/test-catalog" className="btn-secondary">
-            Full Test Catalog &rarr;
+          <Link href="/tier-1-existing" className="btn-secondary">
+            Full Tier 1 Test Roadmap &rarr;
           </Link>
         </div>
       </section>

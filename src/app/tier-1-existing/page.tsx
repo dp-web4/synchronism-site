@@ -117,7 +117,7 @@ const tests: Test[] = [
     data: 'Multi-band TFR datasets split by regime',
     cost: '$0',
     time: '3 months',
-    prediction: 'BTFR slope reflects regime mix: deep-MOND sample → n ≈ 4; transition-dominated sample → n ≈ 2.75 (Session 193 full-sample fit); near-Newtonian → n → 2. Lelli 2019 n = 3.85 ± 0.09 is consistent with SPARC being deep-MOND-dominated.',
+    prediction: 'BTFR slope reflects regime mix: deep-MOND sample → n ≈ 4; transition-dominated sample → n ≈ 2.75 (Session 193 full-sample fit); near-Newtonian → n → 2. Lelli 2019 n = 3.85 ± 0.09 confirms the MOND-shared slope for a SPARC-like deep-MOND-dominated sample. Note: 3.85 ± 0.09 is ~1.7σ from asymptotic MOND\'s n=4, so it confirms the direction but not the exact MOND prediction either — regime-dependence adds no discriminating content.',
     kill: 'A single sample produces a BTFR slope inconsistent with its regime-mix prediction by > 0.3',
     alert: 'Restated 2026-04-24: the earlier prediction "n ≈ 2.2 universal across bands" had no archive source — it was a site→archive transcription error (Session 193 actually predicts n = 2.75 for transition-heavy samples, or regime-dependent: n → 4 deep-MOND, n → 2 near-Newton). Lelli 2019\'s n = 3.85 is consistent with the archive\'s per-regime prediction for a SPARC-like deep-MOND-dominated sample, not a refutation. MOND-shared flag: the regime-dependent BTFR slope (n → 4 in deep-MOND, n → 2 near-Newtonian) is a textbook MOND signature (Milgrom 1983, McGaugh 2012). A positive result is consistent with Synchronism AND standard MOND — it cannot discriminate between them.',
   },

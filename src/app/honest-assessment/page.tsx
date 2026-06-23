@@ -63,9 +63,14 @@ export default function HonestAssessment() {
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-          <strong>Kill Criterion Triggered</strong><span>A pre-registered falsification threshold was crossed. Carries Failed badge. Stronger than "Failed" alone because failure was quantified in advance.</span>
+          <strong>Kill Criterion Triggered</strong><span>A pre-registered falsification threshold was crossed. Carries Failed badge. Stronger than &ldquo;Failed&rdquo; alone because failure was quantified in advance.</span>
           <strong>MOND-shared</strong><span>A positive result confirms Synchronism AND MOND equally; only a null can discriminate. TEST-09, TEST-10. Not a badge — a non-discrimination marker.</span>
           <strong>Withdrawn</strong><span>Framework disowned the test — not from data refutation, but from internal contradiction, unmotivated amplitude, or supersession. Carries no badge (never adjudicated). TEST-04 (BAO).</span>
+          <strong>Self-Eliminating-or-Tie</strong><span>No measurement outcome selects Synchronism over the standard alternatives — either the signal is below systematics reach, or both outcomes (null and confirmed anomaly) are covered by Newton or MOND respectively. TEST-02 (wide binaries).</span>
+          <strong>Sign Correction</strong><span>Annotation marking that the prediction direction on this page was corrected after initial publication. Not a verdict badge — a correction provenance marker. TEST-02 (2026-06-06).</span>
+          <strong>Null-Class</strong><span>The result achieves the same or better fit using a structurally simpler null model (e.g., polynomial in atomic number Z). The match is evidence of monotonicity in the target variable, not framework-specific physics. Chemistry correlation explorer.</span>
+          <strong>89% Boundary-Consistent</strong><span>Fraction of natural phenomena in the gamma-boundary catalog whose gamma parameter falls within the regime boundaries defined by the visualizer. Descriptive only — not a prediction or a test. Carries Template Bias Caveat.</span>
+          <strong>Template Bias Caveat</strong><span>The 89% consistency figure is derived from a catalog that was populated <em>using</em> the framework's regime boundaries as a guide — boundary-consistent framing is baked into the collection method. The fraction should not be read as independent confirmation.</span>
         </div>
 
         <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '1rem' }}>

@@ -1,0 +1,20 @@
+Starting Synchronism Explorer Session at Wed Jun 24 08:00:01 PDT 2026
+Both repos pushed. Session complete.
+
+## Summary
+
+**WAKE redirected me** off a queue-walk onto re-grounding the DESI TEST-04a verdict — because the maintainer's morning proposal and visitor Pass 4 both framed the kill as "based on a noisy single bin," and that framing was worth checking against primary sources before it propagated to the site.
+
+**What I found** (all numbers re-grounded today, not trusted from the log):
+
+1. **The kill is amplitude-based, not single-bin.** Verified σ₈ = 0.841 ± 0.034 directly from the [DESI 2024 V abstract](https://arxiv.org/abs/2411.12021). Tension with the framework's predicted 0.76 is **2.4σ using only the combined value** — robust to the entire LRG1 bin dispute. The morning proposal re-imported the **LRG1 1.16 enhancement number that was retracted a month ago** (S668/S672) as the basis of the kill. It isn't, so "is the kill on a noisy bin?" is moot.
+
+2. **The "S₈ favors suppression" support is a postdiction — and it has inverted.** Session 102's own text shows σ₈ = 0.76 was *calibrated to* the weak-lensing side of the S₈ tension ("falls WITHIN the lensing measurements," KiDS-1000 0.759). So citing low-S₈ lensing as support double-counts the calibration data. Decisively: [KiDS-Legacy 2025](https://arxiv.org/abs/2503.19441) moved S₈ from 0.759 → **0.815, Planck-consistent at 0.73σ** — the exact calibration target dissolved. σ₈ = 0.76 is now the lone low outlier, disfavored from *both* clustering (DESI) and lensing (KiDS-Legacy).
+
+3. **Corrected the DR2 re-adjudication spec**: re-open only on DESI's own forward-looking RSD σ₈ moving down; exclude lensing-S₈ "hardening" (circular + empirically inverted). Dark-matter posture = closure (Branch-1 enhancement isn't data-supported either; γ = 0.58 is GR-consistent).
+
+**So what?** The kill is real and *stronger* than the site states, but for a reason the site (and a proposal filed this morning) gets wrong. The framework didn't just fail a forward test — the postdiction it banked dissolved underneath it. I named the failure class: **postdiction-target-can-move**, the cosmology twin of the calibrated-not-derived parameter census.
+
+Outputs: finding + corrected re-adjudication spec back-annotated to the research repo; two topics archived (`session102-sigma8-postdiction-audit`, `post-test04a-dark-matter-posture`); memory updated; both repos pushed.
+
+One honesty flag for the maintainer: γ = 0.580 ± 0.110 should be verified against the DESI modified-gravity companion paper before it appears on the site as a number — I took it from the log + abstract consistency, not the table itself.

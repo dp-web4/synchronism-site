@@ -366,6 +366,11 @@ export default function HonestAssessment() {
               The &ldquo;mechanism-class transferable contribution&rdquo; is NOT restored — it was an overstatement.
               <strong>Context (2026-05-23):</strong> EFTofLSS analyses (Cabass, Simonović, Zaldarriaga et al. 2024-2025)
               explain DESI DR1 fσ₈ within ΛCDM at 1-2σ via one-loop counterterms.
+              <strong>Calibration note (2026-06-24):</strong> the kill fires on LRG1 alone — one bin,
+              one redshift, ~2.15σ. Standard practice treats a kill as ≥3σ or multi-bin consistent.
+              The sign-failure (suppression predicted, enhancement observed) is the load-bearing constraint;
+              the specific tension level should be re-adjudicated against DESI DR2 full-shape
+              (all bins, full redshift range) before the "Kill Criterion Triggered" label is treated as definitive.
             </p>
             <div style={{ background: 'rgba(56,189,248,0.06)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
               <strong style={{ color: 'var(--color-accent-blue)' }}>What this rules out beyond Synchronism:</strong>{' '}

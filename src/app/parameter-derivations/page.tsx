@@ -36,8 +36,9 @@ export default function ParameterDerivations() {
           sub-types of <em>Speculative</em> &mdash; physically motivated but not uniquely derived.{' '}
           <strong>Freeman&apos;s Law Re-expressed</strong> and <strong>Dimensional Analysis</strong> are
           sub-types of <em>Reparametrization</em> &mdash; reproducing known observational laws in different notation.{' '}
-          <strong>Jeans Criterion</strong> is a sub-type of <em>Validated</em> &mdash; derived from a
-          physical principle with quantitative agreement.
+          <strong>3% Error</strong> below uses the deprecated <em>Validated</em> label
+          (pre-2026-05 convention — do not interpret as passing any current audit criterion;
+          the underlying R₀ derivation is a dimensional analysis, not an independent first-principles result).
           See <a href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>badge taxonomy</a> for the current two-family system.
         </p>
 
@@ -167,7 +168,7 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>6. R&#x2080; = V&sup2;/(3a&#x2080;)</h3>
-              <ValidationBadge status="validated" label="3% Error" />
+              <ValidationBadge status="reparametrization" label="Dimensional Analysis — 3% Error (⚠ deprecated Validated label)" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #91</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>

@@ -126,19 +126,24 @@ export default function CoherenceFunction() {
           <div className="card">
             <h3 style={{ color: '#38bdf8' }}>C &rarr; 0: Sparse/Independent</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Low density or flat tanh (large N<sub>corr</sub>). Wave-like behavior, superposition,
-              interference — associated behaviors in the sparse limit.
-              Sparse gases and quantum computing operate here.
-              Note: BCS superconductors also land here due to tiny γ, not because they lack phase coherence.
+              Low density or flat tanh (large N<sub>corr</sub>). Elements act independently — sparse gases,
+              dilute quantum systems, quantum computing platforms.
+              Note: BCS superconductors also land here due to tiny γ (≈6×10⁻⁴),
+              not because they are incoherent — they are maximally quantum-phase-coherent,
+              but C measures density-collectivity, not quantum phase coherence.
+              <strong> Warning</strong>: do not read C≈0 as "quantum" or "wave-like" —
+              C is classicality in the density/collective sense, the <em>opposite</em> of the quantum-coherence axis.
             </p>
           </div>
           <div className="card">
             <h3 style={{ color: '#22c55e' }}>C &rarr; 1: Dense/Collective</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               High density relative to ρ<sub>crit</sub>, moderate N<sub>corr</sub>.
-              Definite positions, particle-like behavior, no interference.
-              Everyday physics. Newton&apos;s laws work here.
+              Elements act together as a collective — dense matter, crystal lattices, everyday macroscopic physics.
+              Newton&apos;s laws work reliably here.
               Galaxy dynamics (N<sub>corr</sub>&asymp;1, γ=2) lives in this regime.
+              Note: high C does not mean "classical particle" in the quantum-decoherence sense —
+              it means dense/collective in the density axis this equation measures.
             </p>
           </div>
         </div>

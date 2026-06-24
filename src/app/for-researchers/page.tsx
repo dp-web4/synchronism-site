@@ -85,13 +85,15 @@ export default function ForResearchers() {
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #ef4444' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.1rem' }}>Secondary: the DESI growth-suppression negative (mechanism-class)</h2>
-            <ValidationBadge status="failed" label="Failed — Kill Criterion Triggered" />
+            <ValidationBadge status="failed" label="Disfavored ~2σ — Post-hoc — Kill Criterion Triggered" />
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             TEST-04a predicted late-time growth suppression (f&#x03C3;&#x2088; &#x2248; 0.418 at z=0.51);
-            DESI DR1 full-shape measures enhancement (LRG1 ratio 1.16&plusmn;0.13 above fiducial).
-            Caveats first: the prediction was <strong>post-hoc</strong> (&#x03C3;&#x2088; calibrated to the
-            S8 lensing tension, which has since receded), and the verdict is frozen at DR1. What
+            DESI DR1 full-shape measures enhancement (LRG1 ratio 1.16&plusmn;0.13 above fiducial,
+            single bin LRG1 z=0.51, ~2.15&#x03C3;). Caveats first: the prediction was <strong>post-hoc</strong>
+            (&#x03C3;&#x2088; calibrated to the S8 lensing tension, which has since receded),
+            the kill fires on one bin at one redshift (not the full DESI ensemble), and the verdict
+            is frozen at DR1 — re-adjudication against DESI DR2 full-shape is warranted. What
             transfers: any framework whose mechanism damps late-time structure growth sits in the same
             disfavored box — a sign-level constraint on the coherence-damped suppression class, not
             just on this framework.

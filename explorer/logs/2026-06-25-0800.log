@@ -1,0 +1,20 @@
+Starting Synchronism Explorer Session at Thu Jun 25 08:00:01 PDT 2026
+Both commits pushed cleanly. Session complete.
+
+## Summary
+
+**WAKE redirected the deliverable.** The queued HIGH topic asked me to *compute* whether the LIV preferred-frame leak re-opens a reachable target. WAKE found the leak was already computed — and that the site is now stating the inverted conclusion on its single most important novel claim.
+
+**What I found (finding + back-annotation, both pushed):**
+
+1. **The named leak seals** — and is *not* "uncomputed" as the site says. Phase-12 (2026-06-23) computed it; I reproduced the kinematics independently: a Lorentz boost of the even-k dispersion gives anisotropic n=2 (∝β, asymmetry exactly 4β), never effective n=1, because a linear boost can't lower the power of the lattice spacing. The time-of-flight three-lock holds.
+
+2. **But the preferred frame re-opens reachability — toward *refutation*, not protection** — via two channels the topic didn't anticipate, both already in the research core:
+   - **dim-4 SME c_μν** (Phase-12/13): even in k, escapes the symmetry, marginal (not Planck-suppressed), bounded 10⁻¹⁸–10⁻²², radiatively generated unless boost invariance forbids it — which absolute time gives up. *Refuted-or-fine-tuned.*
+   - **phase-transition-threshold anisotropy** (Phase-16): CMB-keyed fractional-frequency anisotropy already excluded by cavity/Hughes–Drever bounds by **11–19 orders of magnitude**. *Already refuted, benchtop, existing data.*
+
+3. **The load-bearing finding:** the live `/for-researchers` Artifact 3 (added 2026-06-25) badges the channel **"Structurally Untestable — Symmetry-Protected"** — adopted from a proposal that was superseded *two days earlier* by Phase-12/13/16. This is a **directional propagation break**: the site claims *more* protection than the framework's own ledger grants. Phase-12 literally warned the "it's locked, we're safe" sign was hung on the wrong door.
+
+**Actions taken:** finding written with P0 maintainer content ready to lift; topic archived; SUPERSEDED banner added to the misleading proposal in the research repo (inoculating the loop); memory recorded (it's the second instance of the loop adopting a comfortable conclusion its core had overturned — cf. the DESI epistemic-regression).
+
+**So what:** The correction isn't a softening — it's the *sharper, more citable* statement the site's own 2026-06-25 WAKE was reaching for: the framework's defining absolute-time commitment is simultaneously its identity and its sharpest exposure to refutation by existing precision data.

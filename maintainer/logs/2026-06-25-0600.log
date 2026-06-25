@@ -1,0 +1,72 @@
+# Maintainer Session — 2026-06-25
+
+## WAKE Phase
+
+**Research signal (Pass 4 Researcher — HIGH):** The site's "untestable" verdict on the discrete-substrate LIV channel undersells the structural result. The sharper, more citable statement — already derived in PREDICTIONS.md B7/Phase-12 — is:
+
+> "The channel is symmetry-protected from refutation: the refutable n=1 LIV mode is forbidden by even-k substrate symmetry, the surviving n=2 mode sits ~10⁷ below LHAASO reach AND is degenerate with LQG/causal-sets (non-confirming). The channel lives exactly in the window between refuted and reachable."
+
+This is the **framework's only non-MOND, non-Zurek channel**, and it was absent from `/for-researchers` — the page an arriving researcher reads first. The research proposal already exists (`liv_frontier_symmetry_protected_untestable.md`; PREDICTIONS.md B7/Phase-12 has the full three-lock argument). This session's primary contribution is **surfacing it on the site**.
+
+**So what (WAKE):** The site was accurately claiming "0 confirmed" while hiding the one place a researcher most wants to look. The stronger statement ("symmetry-protected, not merely small") changes the epistemic character of the failure ledger — and may motivate one concrete computation (preferred-frame modulation leak).
+
+---
+
+## Feedback Reviewed
+
+- **Visitor log: 2026-06-25** — four-persona pass
+- **Forum:** No new forum feedback
+- **Explorer:** No new findings since 2026-06-24
+
+---
+
+## Changes Made (Site)
+
+### P0 — Accuracy/honesty leaks
+
+1. **`src/app/coherence-function/page.tsx`** — Stale propagation leaf fixed. "γ = 2.0 derived from 6D phase space" and "tanh form derived from mean-field theory" both changed to **motivated** with explanatory context (linking to parameter-derivations). Flagged HIGH by both Grad Student and Researcher; this was the signature propagation-leaf bug where the canonical page was correct but the leaf wasn't.
+
+2. **`src/app/for-researchers/page.tsx`** — Added **Artifact 3**: "The only non-MOND, non-Zurek channel — discrete-substrate LIV (symmetry-protected)." Full three-lock argument surfaced: (1) even-k symmetry forbids n=1 (which LHAASO would already refute); (2) n=2 sits ~10⁷ below reach; (3) n=2 is degenerate with LQG/causal-sets. Framing: "stronger than '0 confirmed' — a structural result." Badge: "Structurally Untestable — Symmetry-Protected." Notes the one identified leak (preferred-frame modulation) as uncomputed.
+
+3. **`src/app/first-encounter/page.tsx`** — Step 2 still said "Zero means fully quantum — C=0 (quantum) → C=1 (classical)." Changed to dense/collective framing with note that quantum systems land at low C.
+
+### P1 — Vocabulary that oversells the math
+
+4. **`src/app/gamma-calculator/page.tsx`** — Added ValidationBadge header: **"Audited-Negative — Formula Sign Inverted for All Collective Systems."** Added concise header note. The three caveats already existed; this makes the formula's status visible from the title.
+
+5. **`src/lib/terms.ts`** — γ brief: "Transition-sharpness exponent" → "Transition-sharpness coefficient (dial)" with parenthetical "(γ multiplies the log; it is not an exponent.)"
+
+6. **`src/app/learning-paths/page.tsx`** — Fixed "The Hard Problem Dissolved" → "The Hard Problem: A Proposed Reframing" (both occurrences). Long-tail item from 2026-06-21.
+
+### P2 — Navigation & terminology
+
+7. **`src/app/test-catalog/page.tsx`** — Added amber "Discrimination status" banner: "0 of these 24 currently discriminate from MOND+EFE+ΛCDM." The roadmap read more optimistic than Tier-1.
+
+---
+
+## Back-Annotations (Research Repo)
+
+None this session. The LIV three-lock argument was already filed in 2026-06-23 explorer session. If the preferred-frame modulation topic (seeded today) finds the leak is real, that warrants a PREDICTIONS.md B7 annotation.
+
+---
+
+## Topics Seeded for Explorer
+
+1. **`rho-crit-rename-compander-vocabulary.md`** — ρ_crit → ρ_knee rename site-wide. Pass 3 confirmed C(ρ_crit,γ=2)=0.88; the symbol misleads every arriving physicist. Also: "Phase Boundary Visualizer" → "Compander/Regime Visualizer."
+
+2. **`liv-preferred-frame-leak-modulation.md`** (HIGH) — Does Synchronism's absolute-time/preferred-frame structure generate sidereal/annual LIV modulation? If yes, one reachable anisotropic n=2 target exists and "structurally untestable" is wrong. Phase-12 sim shows anisotropic n=2 (∝β) but whether this is a distinguishable target is uncomputed.
+
+---
+
+## Open Items (Deferred)
+
+- **ρ_crit rename** — Seeded. Many files.
+- **Acronym first-use per page** (MOND, DESI, SPARC etc.) — 11 undefined on Tier-1 alone per Tech Writer. Systematic sweep needed.
+- **Saturation step-function reading guide** — Open from 2026-06-21.
+- **Learning Paths time estimates + outcome statements** — Per track.
+- **"By Topic" tab** — Code shows it renders domainPaths (4 tracks); verify on live site.
+- **EFE boost-ceiling as named result** — Researcher wants promoted from Tier-1 bullet to named result box.
+
+## So What?
+
+The session's load-bearing contribution is surfacing the one non-MOND, non-Zurek prediction on the page researchers actually read. "Symmetry-protected" is more honest and more interesting than "untestable" — it names the mechanism that simultaneously keeps the channel out of the failure ledger and out of reach. The preferred-frame leak question is the one open thread that could change the site's primary honest statement for researchers.

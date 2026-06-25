@@ -14,9 +14,10 @@ const steps = [
   {
     title: 'The Coherence Function',
     content: `Feed that density into: C(ρ) = tanh(γ · ln(ρ/ρ_crit + 1)).
-    Out comes a number between 0 and 1. Zero means fully quantum — superposition, interference,
-    wave-like behavior. One means fully classical — definite positions, particle-like, everyday physics.`,
-    highlight: 'C = 0 (quantum) → C = 1 (classical)',
+    Out comes a number between 0 and 1. Zero means sparse and independent — few neighbors, each element acting on its own.
+    One means dense and collective — everything interacting, behavior dominated by the crowd.
+    (Note: in this framework C measures density-driven collective ordering, not quantum phase coherence — quantum systems like superconductors land at low C.)`,
+    highlight: 'C = 0 (sparse) → C = 1 (collective)',
   },
   {
     title: 'The γ Parameter',

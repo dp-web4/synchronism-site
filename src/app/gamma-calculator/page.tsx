@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
+import ValidationBadge from '@/components/ValidationBadge';
 
 function gammaFromNcorr(n: number): number {
   return 2 / Math.sqrt(n);
@@ -35,7 +36,18 @@ export default function GammaCalculator() {
   return (
     <>
       <Breadcrumbs currentPath="/gamma-calculator" />
-      <h1>&#x03B3; Calculator</h1>
+      <div style={{ display: 'flex', alignItems: 'baseline', gap: '1rem', flexWrap: 'wrap', marginBottom: '0.5rem' }}>
+        <h1 style={{ margin: 0 }}>&#x03B3; Calculator</h1>
+        <ValidationBadge status="audited-negative" label="Formula Audited-Negative — Sign Inverted for All Collective Systems" />
+      </div>
+      <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
+        &#x03B3; = 2/&#x221A;N<sub>corr</sub> assigns the <em>sharpest</em> coherence transition to the
+        least-correlated system (ideal gas) and the <em>flattest</em> to the most-correlated (BCS
+        superconductor) — the opposite of real condensed-matter transitions. This is a structural
+        inversion in the formula (Caveat 2 below), not a calibration issue. This tool is preserved
+        for exploration; treat its outputs as &ldquo;what the inverted formula predicts&rdquo; rather
+        than as physical estimates.
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         {/* Load-bearing caveats — promoted to top */}

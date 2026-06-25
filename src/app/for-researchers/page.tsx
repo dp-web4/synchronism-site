@@ -101,6 +101,62 @@ export default function ForResearchers() {
           <Link href="/tier-1-existing" style={{ fontSize: '0.85rem' }}>TEST-04a full accounting &rarr;</Link>
         </div>
 
+        {/* Artifact 3: The one novel channel */}
+        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #f59e0b' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>3. The only non-MOND, non-Zurek channel — discrete-substrate Lorentz violation (symmetry-protected)</h2>
+            <ValidationBadge status="untested" label="Structurally Untestable — Symmetry-Protected" />
+          </div>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
+            Every other prediction in this framework either (a) reproduces MOND/ΛCDM/Zurek
+            without discriminating content, or (b) is refuted. The <strong>one channel that isn&apos;t
+            MOND-or-Zurek</strong> is the substrate-discreteness Lorentz-violation signature
+            (LIV), and its status is more precise than &ldquo;untestable with foreseeable
+            data&rdquo; — it is <strong>structurally untestable, by a three-lock argument:</strong>
+          </p>
+          <ol style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', paddingLeft: '1.25rem', lineHeight: 1.7 }}>
+            <li>
+              <strong>Symmetry forbids the refutable channel.</strong> The substrate dispersion
+              relation is even in k (lattice reflection symmetry), so the leading LIV correction
+              is <em>quadratic</em> (n=2) — no linear (n=1) term. Current GRB time-of-flight
+              bounds put n=1 LIV <em>above</em> the Planck scale (LHAASO GRB 221009A 2024:
+              E<sub>QG,1</sub> &gt; 5.9 E<sub>Pl</sub>; Fermi-LAT: &gt; 7.6 E<sub>Pl</sub>).
+              A Planck-scale linear prediction would already be <em>refuted</em> — the even-k
+              symmetry is the only thing keeping this channel out of the failure ledger.
+            </li>
+            <li>
+              <strong>The same symmetry pins the prediction below reach.</strong> Confined to n=2,
+              the prediction sits at E<sub>QG,2</sub> &#x2248; E<sub>Pl</sub>, while the current
+              n=2 bound is E<sub>QG,2</sub> &gt; 6&times;10<sup>&#x2212;8</sup> E<sub>Pl</sub>
+              (LHAASO 2024) — a gap of ~1.7&times;10<sup>7</sup> in energy scale. The
+              field&apos;s n=2 sensitivity gains are factors of a few per breakthrough GRB;
+              closing 10<sup>7</sup> is not a foreseeable-instrument prospect.
+            </li>
+            <li>
+              <strong>Non-uniqueness makes it non-confirming even if reached.</strong> n=2
+              discrete-substrate LIV is generic: LQG and causal-set models predict the same
+              signature. A detection would read as &ldquo;quantum gravity,&rdquo; not as
+              Synchronism specifically.
+            </li>
+          </ol>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Net:</strong> the channel is placed exactly in the window between <em>refuted</em>
+            (n=1, symmetry-forbidden) and <em>reachable</em> (near-future n=2), and is
+            non-discriminating even if reached. This is <strong>stronger than &ldquo;0 confirmed&rdquo;</strong>
+            — it is a structural result: the one remaining seam is simultaneously protected from
+            refutation and blocked from confirmation. A possible leak: if preferred-frame structure
+            generates sidereal/annual modulation of the LIV scale (an isotropic-n=2 ≠ anisotropic
+            modulation channel), it could re-open a reachable target. This is uncomputed.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+            Full argument and simulation evidence: <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment &rarr;</Link>{' '}
+            and PREDICTIONS.md B7/Phase-12 in the{' '}
+            <a href="https://github.com/dp-web4/Synchronism" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}>
+              Synchronism research archive
+            </a>.
+          </p>
+        </div>
+
         <div style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
           <strong style={{ color: 'var(--color-accent-violet)' }}>Referee-relevant structural gap — C has no
           measurement protocol:</strong>{' '}

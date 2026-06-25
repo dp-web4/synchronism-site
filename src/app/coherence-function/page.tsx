@@ -207,8 +207,8 @@ export default function CoherenceFunction() {
 
         <h2>Derivation History</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li><strong>Session #64-65</strong>: &#x03B3; = 2.0 derived from 6D phase space degrees of freedom</li>
-          <li><strong>Session #66</strong>: tanh form derived from mean-field theory</li>
+          <li><strong>Session #64-65</strong>: &#x03B3; = 2.0 <em>motivated</em> by 6D phase space degrees of freedom &mdash; see <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</a> for why &ldquo;motivated, not derived&rdquo; is the correct framing</li>
+          <li><strong>Session #66</strong>: tanh form <em>motivated</em> by the Ising self-consistency equation (tanh appears in the fixed-point, not as a derivation from it)</li>
           <li><strong>Session #67</strong>: Information-theoretic compression argument</li>
           <li><strong>Session #87-91</strong>: Connected to cosmological parameters (a&#x2080;, &#x03A3;&#x2080;)</li>
         </ul>

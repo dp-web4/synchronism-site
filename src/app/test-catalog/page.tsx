@@ -94,6 +94,24 @@ export default function TestCatalog() {
             See the prediction audit trail →
           </Link>
         </div>
+        <div style={{
+          background: 'rgba(245, 158, 11, 0.07)',
+          border: '1px solid rgba(245, 158, 11, 0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.7rem 1rem',
+          marginBottom: '1.25rem',
+          fontSize: '0.875rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#f59e0b' }}>Discrimination status:</strong>{' '}
+          Of these 24 proposed tests, <strong>0 currently discriminate from MOND+EFE+&Lambda;CDM</strong>.
+          The Tier-1 analyzed tests are either self-eliminating (no outcome selects Synchronism),
+          failed by sign, or produce results shared equally with MOND. The roadmap represents proposed tests,
+          not tests that are ready to run or are expected to discriminate.{' '}
+          <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>
+            See Tier 1 for per-test verdicts →
+          </Link>
+        </div>
         <p>
           Synchronism has defined 24 specific, falsifiable experiments organized into four tiers
           by cost and feasibility. Every experiment has an explicit kill criterion &mdash; a result

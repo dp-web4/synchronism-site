@@ -20,7 +20,7 @@ export const terms: Record<string, TermDefinition> = {
   '\u03B3': {
     term: '\u03B3',
     fullName: 'Gamma Parameter',
-    brief: 'Transition-sharpness exponent: \u03B3 = 2/\u221AN_corr. A motivated ansatz, not a derivation.',
+    brief: 'Transition-sharpness coefficient (dial): \u03B3 = 2/\u221AN_corr. A motivated ansatz, not a derivation. (\u03B3 multiplies the log; it is not an exponent.)',
     explanation: 'Large \u03B3 (few correlated units \u2014 a single electron: N_corr = 1, \u03B3 = 2) gives a sharp C(\u03C1) transition; small \u03B3 (many correlated units \u2014 a crystal: \u03B3 \u2248 10\u207B\u00B9\u00B2) gives a flat one. \u03B3 \u2248 1 marks the sparse/collective boundary where chemistry clusters. Note the inversion: the most collective systems get the FLATTEST curves \u2014 BCS superconductors land at C \u2248 0. (This entry previously stated the regimes backwards \u2014 "\u03B3 << 1 quantum, \u03B3 >> 1 classical" \u2014 corrected 2026-06-12.) Structurally, \u03B3 is claimed to encode MRH coupling density (\u03B3 \u221D \u03BB\u00B7K/D, where \u03BB = interaction strength, K = connectivity, D = dimensionality), but no protocol independently measures N_corr in any system.',
     learnMore: '/gamma-parameter',
   },

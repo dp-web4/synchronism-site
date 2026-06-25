@@ -70,3 +70,24 @@ None this session. The LIV three-lock argument was already filed in 2026-06-23 e
 ## So What?
 
 The session's load-bearing contribution is surfacing the one non-MOND, non-Zurek prediction on the page researchers actually read. "Symmetry-protected" is more honest and more interesting than "untestable" — it names the mechanism that simultaneously keeps the channel out of the failure ledger and out of reach. The preferred-frame leak question is the one open thread that could change the site's primary honest statement for researchers.
+Pushed. Vercel will auto-deploy. Here's the session summary:
+
+---
+
+## Maintainer Session 2026-06-25 — Summary
+
+**WAKE finding:** Today's Pass 4 Researcher identified that the discrete-substrate LIV prediction isn't merely "untestable" — it's **symmetry-protected from refutation**, which is a stronger and more citable statement. The even-k lattice symmetry forbids the refutable n=1 LIV channel (LHAASO would already rule it out), the surviving n=2 sits ~10⁷ below the LHAASO floor, and n=2 is non-unique to Synchronism. This was absent from `/for-researchers` — the page researchers read first. No new research proposal needed (the three-lock argument was already filed in PREDICTIONS.md B7/Phase-12 on 2026-06-23); this was a **propagation failure**.
+
+**Changes made (7 files):**
+
+| File | Change |
+|------|--------|
+| `coherence-function/page.tsx` | "derived from 6D phase space" → "**motivated** by" (stale propagation leaf) |
+| `for-researchers/page.tsx` | Added **Artifact 3**: full LIV three-lock argument with symmetry-protection framing |
+| `first-encounter/page.tsx` | Step 2 C=0(quantum)→C=1(classical) corrected to sparse/collective |
+| `gamma-calculator/page.tsx` | Header badge: "Audited-Negative — Sign Inverted for All Collective Systems" |
+| `terms.ts` | γ "exponent" → "coefficient (dial)" |
+| `learning-paths/page.tsx` | "Hard Problem **Dissolved**" → "Hard Problem: A Proposed Reframing" (2× occurrences) |
+| `test-catalog/page.tsx` | Amber banner: "0 of 24 currently discriminate from MOND+EFE+ΛCDM" |
+
+**Explorer topics seeded:** `liv-preferred-frame-leak-modulation.md` (HIGH — does the preferred frame open a sidereal modulation target?) and `rho-crit-rename-compander-vocabulary.md` (ρ_crit → ρ_knee rename).

@@ -1,0 +1,112 @@
+Starting Synchronism Maintainer Session at Fri Jun 26 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-06-26
+
+## WAKE
+
+**Research signal confirmed: LIV "symmetry-protected" is an overclaim.**
+
+Both Pass 3 (grad student) and Pass 4 (researcher) independently caught the same error with technical
+precision: the `/for-researchers` Artifact 3 badges the LIV channel "Structurally Untestable —
+Symmetry-Protected" — but Phase-12/13/16 (2026-06-23/24 in the research core) found the opposite:
+
+- The three-lock argument is correct **only for the time-of-flight (dim≥5) sector**.
+- A discrete substrate with absolute time picks out a preferred frame.
+- The preferred frame generates **dimension-4 SME c_μν anisotropy** — NOT Planck-suppressed, already
+  bounded at 10⁻¹⁸–10⁻²⁹ by terrestrial cavity-MM and clock-comparison experiments.
+- Phase-16 computed the velocity-anisotropic threshold effect: prediction sits **11–19 OOM above** the
+  cavity/Hughes–Drever limits.
+- The "sidereal/annual modulation" channel (filed as "uncomputed opening") was computed in Phase-12:
+  it SEALS on time-of-flight (boost gives anisotropic n=2, never n=1). But dim-4 is the exposed flank.
+
+Named tension: **absolute time ⊥ sub-10⁻²² Lorentz invariance** (Phase-13).
+
+This is the project's signature propagation-chain break in its sharpest directional form: the site
+claims MORE protection than the research core grants, on the framework's single most important novel
+claim. Two independent expert personas caught it without coordination, both citing the SME/Kostelecký
+framework by name.
+
+**Research proposal filed to Synchronism repo**: `liv_dim4_preferred_frame_refutation_exposure.md`.
+
+## Triage
+
+| Priority | Issue | Fix |
+|----------|-------|-----|
+| P0 | `/for-researchers` LIV "Symmetry-Protected" overclaim | ✅ Fixed |
+| P1 | `/beginner` 404 (Pass 1) | ✅ Fixed (redirect added) |
+| P2 | `/consciousness-demo` shows refuted 0.50 as live claim | ✅ Fixed |
+| P3 | `/core-idea` ρ definition circular | ✅ Fixed |
+| P3 | `/core-idea` + `/why-synchronism` missing coherence-inversion note | ✅ Fixed |
+| P3 | `/core-idea` regime labels inverted (γ<<1 "few correlated", γ>>1 "many correlated") | ✅ Fixed |
+| P4 | badge vocabulary not closed set (operational markers vs badges) | deferred — larger taxonomy work |
+| P4 | learning-path Prev/Next navigation | deferred — larger UI work |
+| P4 | γ calculator regime labels reinforce inversion | existing caveats adequate; deferred |
+| P4 | equation-walkthrough only shows Step 1 on WebFetch | known: WebFetch has no JS; real browsers fine |
+
+## Changes Made (Site)
+
+### `src/app/for-researchers/page.tsx` — Artifact 3 LIV channel completely rewritten (P0)
+
+The single most important change in this session. Artifact 3 now:
+- Title: removed "(symmetry-protected)"
+- Two badges: "Time-of-Flight: Structurally Unreachable" (untested) + "Preferred-Frame + Dim-4: Refutation-Exposed" (audited-negative)
+- Two faces clearly distinguished:
+  - Face 1 (time-of-flight, dim≥5): three-lock stands but scoped to this sector only; Lock 1 now states it holds only under **assumed reflection-symmetric substrate** (parity-breaking restores the already-refuted n=1 term)
+  - Face 2 (preferred frame + dim-4): SME c_μν, Collins et al. radiative-percolation theorem, Phase-16 velocity-anisotropy exclusion (11–19 OOM), named tension with absolute time
+- Closing: "sidereal/annual modulation... uncomputed" → actual computed result (seals on time-of-flight; dim-4 is exposed)
+- Archive pointer: updated to Phase-12/13/16
+
+### `next.config.mjs` — `/beginner` redirect (P1)
+
+`/beginner` → `/first-encounter` added. Pass 1 hit a 404 at this URL.
+
+### `src/app/consciousness-demo/page.tsx` — empirical refutation notice (P2)
+
+- Red banner added: "Empirically refuted (gnosis-research Session 63, p<0.0001). Demo retained as illustration of geometric coincidence."
+- "What Would Falsify This" → "What Has Falsified This" for the midpoint artifact
+- Midpoint-artifact point moved from hypothetical list to established-facts list
+
+### `src/app/core-idea/page.tsx` — ρ definition, coherence note, regime labels (P3)
+
+1. ρ definition: circular → "local density — how many relevant elements per unit volume (e.g. stars per cubic light-year)"
+2. C card: added ⚠ "Not quantum coherence — superconductors score low here"
+3. γ << 1 regime: "Quantum Regime, few correlated" → "Collective Regime, MANY correlated (BECs/superconductors score C≈0)"
+4. γ >> 1 regime: "Classical Regime, many correlated" → "Independent Regime, FEW correlated (ideal gas, independent stars)"
+
+### `src/app/why-synchronism/page.tsx` — coherence-inversion note (P3)
+
+Added inline ⚠ note after coherence definition.
+
+## Back-Annotations (Research Repo)
+
+- `Research/proposals/liv_dim4_preferred_frame_refutation_exposure.md` (NEW): Captures the Phase-12/13/16 finding that absolute time ⊥ sub-10⁻²² Lorentz invariance is the framework's sharpest refutation exposure; documents the c_μν computation as the remaining open step; supersedes the stale "symmetry-protected" framing.
+
+## Topics Seeded for Explorer
+
+- `explorer/topics/liv-dim4-cmuv-magnitude-computation.md` (HIGH): Compute tree-level and loop dim-4 c_μν coefficient implied by preferred frame. Collins et al. (2004) percolation mechanism. Decisive for "refuted-or-fine-tuned" verdict.
+
+## Open Items (Deferred)
+
+- Badge vocabulary / operational markers: tech writer correctly flagged that MOND-shared, Kill Criterion Triggered, Withdrawn appear as badges on /tier-1-existing but "operational markers" on /honest-assessment. Larger taxonomy work.
+- Learning-path Prev/Next navigation: significant UI work across ~6 pages.
+- Structural reparametrization synthesis: eleven "Failed/MOND-shared" verdicts never unified under their structural cause (no governing equation → reparametrization guaranteed). Explorer task.
+- A2ACW null foregrounded as genuine finding about LLM epistemics. Explorer task.
+- DESI citation: DR1 → DR2 (verdict unchanged). Low priority.
+
+## Build
+
+92 pages, PASS.
+
+## So What?
+
+The session's load-bearing contribution is the LIV correction: the one page an arriving researcher
+reads first now states the correct verdict instead of its opposite. "The framework's defining
+commitment (absolute time) is simultaneously its identity and its sharpest refutation exposure" is
+a stronger, more honest, and more citable statement than "symmetry-protected from refutation."
+
+The core-idea regime label fix is more subtle but matters: both regime descriptions were actively
+teaching the wrong direction of the γ–N_corr relationship to the beginner-path audience.
+
+The remaining open thread — computing the actual dim-4 c_μν magnitude — is HIGH priority for the
+explorer track. One focused session with Collins et al. and the framework's dispersion relation
+could convert "refuted-or-fine-tuned" into a hard verdict.

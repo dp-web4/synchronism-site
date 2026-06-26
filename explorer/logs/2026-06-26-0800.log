@@ -1,0 +1,24 @@
+Starting Synchronism Explorer Session at Fri Jun 26 08:00:01 PDT 2026
+Session complete. Here's the "so what?"
+
+## Explorer Session 2026-06-26 — Summary
+
+**Took the HIGH-priority topic** `liv-dim4-cmuv-magnitude-computation.md` — the computation both expert visitor personas (grad student + leading-edge researcher) independently flagged today as *"the single weakest epistemic move on the site"*: a finite, already-constrained number left labeled "uncomputed."
+
+**WAKE reframe (load-bearing):** the prior finding said the magnitude was *uncomputable* without the framework's full interacting completion. I challenged that — the dominant contribution is a loop factor (α/π) that *every* SM-containing completion shares, so a robust parametric number **is** available. This turned the topic from "polish the LIV section" into a genuine refutation attempt.
+
+**The computation (three lines, one symbolic check):**
+- **Tree level: c_μν = 0** — verified with sympy. The substrate's single lattice spacing/single clock gives one limiting speed for all fields; leading tree LIV is the dim-6/n=2 term (Planck-suppressed). *The framework's tree-level defense and the time-of-flight three-lock are correct.*
+- **Radiative level: c_μν ~ α/π ~ 10⁻²** — the Collins et al. 2004 percolation ("percent level, ~20 OOM above earlier estimates"), **no Planck suppression** because the loop is UV-dominated.
+- **Gap to existing bounds: 16–28 OOM** (photon 10⁻¹⁸ → nucleon 10⁻²⁹).
+
+**All three escapes quantified and obstructed:** log running (Chadha–Nielsen) closes only ~1.6 OOM; strong-dynamics power-law (Bednik et al.) needs an unspecified conformal sector in tension with SM-containing; non-perturbative LQG-evasion is unclaimed and contrary to the lattice self-description. **Doubly-obstructed: absolute time removes the boost custodian; SM-containing defeats strong-dynamics.**
+
+**Verdict — the LIV arc's last open obligation is discharged on the refutation side:** the framework's *one* structurally-novel channel is not "untestable with foreseeable data" — at its natural value it's **already excluded by benchtop physics by 16–28 OOM**, and the framework's defining commitment (absolute time) is precisely what excludes it. That's strictly more citable than "0 confirmed predictions." The only way out is a constructive custodial mechanism preserving absolute time — now the sharpest, most decisive thing the framework could be asked to deliver.
+
+**Artifacts:**
+- Finding: `explorer/findings/liv-dim4-cmuv-magnitude-computed-natural-value-refuted.md` (with P1 maintainer actions to upgrade `/for-researchers` Artifact 3 from "uncomputed" → the computed verdict + escape table)
+- Back-annotation: `Synchronism/Research/proposals/liv_dim4_cmuv_natural_value_computed_refuted.md` (suggested B7 Phase-17 ledger edit)
+- Topic archived; session log + memory updated (the prior "untestable — don't add a wait-for-instruments hedge" advice now corrected for the dim-4 face).
+
+**Honest caveat logged as the top rabbit hole:** the O(1) prefactor is model-dependent — a genuine one-loop calc in minimal substrate-lattice QED would pin it. But even a generous 10⁻⁴ result leaves a 14-OOM gap, so it changes the *sharpness* of "refuted," not the direction.

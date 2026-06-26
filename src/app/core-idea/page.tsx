@@ -30,13 +30,14 @@ export default function CoreIdea() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>&#x03C1;</div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-              <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>Presence</Link>: compatible structural elements within a system&apos;s relevancy boundary
+              <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>Presence</Link>: local density — how many relevant elements are packed in a given region (e.g. stars per cubic light-year, atoms per unit volume)
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>C</div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-              Coherence: 0 = sparse/independent, 1 = dense/collective
+              Coherence: 0 = sparse/independent, 1 = dense/collective.{' '}
+              <span style={{ color: 'var(--color-text-muted)' }}>⚠ Not quantum coherence — superconductors score <em>low</em> here.</span>
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
@@ -118,10 +119,12 @@ export default function CoreIdea() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
               <div>
-                <h3>&#x03B3; &laquo; 1: Quantum Regime</h3>
+                <h3>&#x03B3; &laquo; 1: Collective Regime</h3>
                 <p style={{ color: 'var(--color-text-secondary)' }}>
-                  Few correlated particles, strong coherence effects. Superposition, interference,
-                  entanglement. The domain of quantum mechanics.
+                  <strong>Many</strong> correlated particles (large N<sub>corr</sub> → small &#x03B3; = 2/&#x221A;N<sub>corr</sub>).
+                  BECs, superconductors. Despite being quantum systems in the real-world sense,
+                  these score C &#x2248; 0 here — the S-curve is so flat that typical densities leave C near zero.
+                  <em> This is why &ldquo;coherence&rdquo; in Synchronism is not quantum coherence.</em>
                 </p>
               </div>
               <ValidationBadge status="reparametrization" label="Reparametrization — regime definition" />
@@ -133,7 +136,7 @@ export default function CoreIdea() {
               <div>
                 <h3>&#x03B3; &#x2248; 1: The Boundary</h3>
                 <p style={{ color: 'var(--color-text-secondary)' }}>
-                  Phase transitions, chemistry, catalysis, biology. Where quantum meets classical.
+                  Phase transitions, chemistry, catalysis, biology. Where the S-curve has intermediate steepness.
                   1,703 phenomena cluster here at 89% boundary-consistency rate.
                 </p>
                 <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
@@ -148,10 +151,11 @@ export default function CoreIdea() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
               <div>
-                <h3>&#x03B3; &raquo; 1: Classical Regime</h3>
+                <h3>&#x03B3; &raquo; 1: Independent Regime</h3>
                 <p style={{ color: 'var(--color-text-secondary)' }}>
-                  Many correlated particles, classical behavior. Galaxy dynamics, everyday physics.
-                  The domain of Newton and general relativity.
+                  <strong>Few</strong> correlated particles (N<sub>corr</sub> ≈ 1 → large &#x03B3;).
+                  Ideal gas, independent stars in a galaxy. Steepest S-curve — C rises quickly with density.
+                  Galaxy dynamics is here (stars treated as independent, N<sub>corr</sub>=1, &#x03B3;=2).
                 </p>
               </div>
               <ValidationBadge status="reparametrization" label="Reparametrization — regime definition" />

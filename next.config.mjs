@@ -258,6 +258,12 @@ const nextConfig = {
         destination: '/core-idea',
         permanent: false,
       },
+      // /beginner — guessed by visitors from the "Beginner Path" CTA label (2026-06-26 Pass 1 404)
+      {
+        source: '/beginner',
+        destination: '/first-encounter',
+        permanent: false,
+      },
       // /start-here — guessed by visitors seeing "Start Here" label in nav (2026-05-23 two personas)
       {
         source: '/start-here',

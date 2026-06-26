@@ -57,7 +57,8 @@ export default function WhySynchronism() {
         <h2>The Approach</h2>
         <p>
           Synchronism proposes a coherence function: <span className="equation-inline">C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))</span>.
-          It takes one input (density) and returns one output (coherence: 0 = sparse/independent, 1 = dense/collective).
+          It takes one input (density) and returns one output (coherence: 0 = sparse/independent, 1 = dense/collective).{' '}
+          <span style={{ fontSize: '0.9em', color: 'var(--color-text-muted)' }}>⚠ &ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence — superconductors and BECs score <em>low</em> on this scale (large N<sub>corr</sub> → γ→0 → flat S-curve → C≈0).</span>
         </p>
         <p style={{ color: 'var(--color-text-secondary)', fontStyle: 'italic', borderLeft: '3px solid var(--color-accent-violet)', paddingLeft: '0.75rem' }}>
           In plain English: an S-curve that smoothly goes from 0 (everything acting independently

@@ -104,56 +104,93 @@ export default function ForResearchers() {
         {/* Artifact 3: The one novel channel */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #f59e0b' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>3. The only non-MOND, non-Zurek channel — discrete-substrate Lorentz violation (symmetry-protected)</h2>
-            <ValidationBadge status="untested" label="Structurally Untestable — Symmetry-Protected" />
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>3. The only non-MOND, non-Zurek channel — discrete-substrate Lorentz violation</h2>
+            <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
+              <ValidationBadge status="untested" label="Time-of-Flight: Structurally Unreachable" />
+              <ValidationBadge status="audited-negative" label="Preferred-Frame + Dim-4: Refutation-Exposed" />
+            </div>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             Every other prediction in this framework either (a) reproduces MOND/ΛCDM/Zurek
             without discriminating content, or (b) is refuted. The <strong>one channel that isn&apos;t
             MOND-or-Zurek</strong> is the substrate-discreteness Lorentz-violation signature
-            (LIV), and its status is more precise than &ldquo;untestable with foreseeable
-            data&rdquo; — it is <strong>structurally untestable, by a three-lock argument:</strong>
+            (LIV). Its status has two faces — one that is genuinely unreachable, one that is
+            already constrained by existing experiments:
           </p>
-          <ol style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', paddingLeft: '1.25rem', lineHeight: 1.7 }}>
+
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.25rem' }}>
+            Face 1 — Time-of-flight (dim≥5): three locks, genuinely unreachable
+          </p>
+          <ol style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', paddingLeft: '1.25rem', lineHeight: 1.7, marginTop: 0 }}>
             <li>
-              <strong>Symmetry forbids the refutable channel.</strong> The substrate dispersion
-              relation is even in k (lattice reflection symmetry), so the leading LIV correction
-              is <em>quadratic</em> (n=2) — no linear (n=1) term. Current GRB time-of-flight
+              <strong>Symmetry forbids the refutable channel</strong> <em>(under assumed reflection-symmetric substrate)</em>.{' '}
+              The substrate dispersion relation is even in k (lattice reflection symmetry), so the leading
+              LIV correction is <em>quadratic</em> (n=2) — no linear (n=1) term. Current GRB time-of-flight
               bounds put n=1 LIV <em>above</em> the Planck scale (LHAASO GRB 221009A 2024:
               E<sub>QG,1</sub> &gt; 5.9 E<sub>Pl</sub>; Fermi-LAT: &gt; 7.6 E<sub>Pl</sub>).
-              A Planck-scale linear prediction would already be <em>refuted</em> — the even-k
-              symmetry is the only thing keeping this channel out of the failure ledger.
+              <em>Note: Lock 1 holds only if the substrate has reflection symmetry. A parity-breaking
+              discretization restores the n=1 term — which is already refuted. The choice of
+              even-k symmetry is an assumption, not a derivation.</em>
             </li>
             <li>
-              <strong>The same symmetry pins the prediction below reach.</strong> Confined to n=2,
-              the prediction sits at E<sub>QG,2</sub> &#x2248; E<sub>Pl</sub>, while the current
-              n=2 bound is E<sub>QG,2</sub> &gt; 6&times;10<sup>&#x2212;8</sup> E<sub>Pl</sub>
-              (LHAASO 2024) — a gap of ~1.7&times;10<sup>7</sup> in energy scale. The
-              field&apos;s n=2 sensitivity gains are factors of a few per breakthrough GRB;
-              closing 10<sup>7</sup> is not a foreseeable-instrument prospect.
+              <strong>The same symmetry pins the prediction below reach.</strong> n=2 sits at
+              E<sub>QG,2</sub> &#x2248; E<sub>Pl</sub>, while the current bound is
+              E<sub>QG,2</sub> &gt; 6&times;10<sup>&#x2212;8</sup> E<sub>Pl</sub> (LHAASO 2024)
+              — a gap of ~10<sup>7</sup>. Foreseeable GRB instruments gain factors of a few per
+              event; closing 10<sup>7</sup> is not a foreseeable-instrument prospect.
             </li>
             <li>
               <strong>Non-uniqueness makes it non-confirming even if reached.</strong> n=2
-              discrete-substrate LIV is generic: LQG and causal-set models predict the same
-              signature. A detection would read as &ldquo;quantum gravity,&rdquo; not as
-              Synchronism specifically.
+              discrete-substrate LIV is generic to LQG and causal-set models; a detection would
+              read as &ldquo;quantum gravity,&rdquo; not as Synchronism specifically.
             </li>
           </ol>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600, marginBottom: '0.25rem' }}>
+            Face 2 — Preferred frame + dim-4: refutation-exposed, already constrained
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            <strong>Net:</strong> the channel is placed exactly in the window between <em>refuted</em>
-            (n=1, symmetry-forbidden) and <em>reachable</em> (near-future n=2), and is
-            non-discriminating even if reached. This is <strong>stronger than &ldquo;0 confirmed&rdquo;</strong>
-            — it is a structural result: the one remaining seam is simultaneously protected from
-            refutation and blocked from confirmation. A possible leak: if preferred-frame structure
-            generates sidereal/annual modulation of the LIV scale (an isotropic-n=2 ≠ anisotropic
-            modulation channel), it could re-open a reachable target. This is uncomputed.
+            A discrete substrate with absolute time picks out a preferred (CMB-rest) frame. Preferred-frame
+            physics shows up at <strong>dimension four</strong> — the renormalizable, <em>non-Planck-suppressed</em>
+            level — via two channels:
+          </p>
+          <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', paddingLeft: '1.25rem', lineHeight: 1.7 }}>
+            <li>
+              <strong>Species-dependent limiting speed (SME c<sub>μν</sub>).</strong> A dim-4
+              operator ω²=m²+(1+c<sub>LIV</sub>)k² is <em>even in k</em> — the even-k symmetry
+              does <em>not</em> forbid it. Existing bounds: |c<sub>LIV</sub>| ≲ 10<sup>&#x2212;18</sup>{' '}
+              (cavity Michelson–Morley rotating resonators) to ~10<sup>&#x2212;22</sup>–10<sup>&#x2212;29</sup>{' '}
+              (Hughes–Drever clock-comparison experiments). These are tabulated annually in the{' '}
+              <em>SME Data Tables</em> (Kostelecký &amp; Russell, <em>Rev. Mod. Phys.</em> 83, 11 (2011), updated 2024).
+              The framework's absolute-time / universal-clock commitment gives up the only custodial symmetry
+              (boost invariance) that could forbid radiative generation of this coefficient from the Planck
+              sector (Collins–Perez–Sudarsky–Gambini–Pullin, <em>PRL</em> 93, 191301 (2004)).
+              <strong> Named tension: absolute time ⊥ sub-10<sup>&#x2212;22</sup> Lorentz invariance.</strong>
+              Status: refuted-or-fine-tuned (pending marginal-coupling computation).
+            </li>
+            <li>
+              <strong>Velocity-anisotropic phase-transition threshold (Phase-16, 2026-06-24).</strong>{' '}
+              If identity thresholds are fixed in the substrate/CMB frame, Earth's motion (v ≈ 370 km/s,
+              β ≈ 1.2×10<sup>&#x2212;3</sup>) produces a fractional-frequency anisotropy: dipole ∼β ≈ 1.2×10<sup>&#x2212;3</sup>,
+              quadrupole ∼β² ≈ 1.5×10<sup>&#x2212;6</sup>. Cavity-MM and clock-comparison experiments bound
+              this at 10<sup>&#x2212;18</sup>–10<sup>&#x2212;22</sup>. The prediction is <strong>11–19 orders of
+              magnitude above existing limits</strong>. Escape: co-moving thresholds — survivable but non-novel
+              (recovers standard SR with zero new content).
+            </li>
+          </ul>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Net:</strong> the time-of-flight face is symmetry-protected and unreachable (three locks stand).
+            The preferred-frame / dim-4 face is the framework&apos;s <em>sharpest refutation exposure</em> —
+            and it is the framework&apos;s defining commitment (absolute time) that creates it. The &ldquo;sidereal
+            modulation&rdquo; channel is not an uncomputed future opening: the preferred-frame anisotropy is already
+            constrained by existing experiments at 11–19 OOM above the prediction.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-            Full argument and simulation evidence: <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment &rarr;</Link>{' '}
-            and PREDICTIONS.md B7/Phase-12 in the{' '}
+            Research lineage: PREDICTIONS.md B7 / Phase-12 / Phase-13 / Phase-16 in the{' '}
             <a href="https://github.com/dp-web4/Synchronism" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}>
               Synchronism research archive
-            </a>.
+            </a>.{' '}
+            Dim-4 c<sub>μν</sub> coefficient uncomputed — the decisive next step is a marginal-coupling lattice loop
+            or explicit custodial mechanism.
           </p>
         </div>
 

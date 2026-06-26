@@ -39,6 +39,22 @@ export default function ConsciousnessDemo() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{
+          background: 'rgba(239,68,68,0.07)',
+          border: '1px solid rgba(239,68,68,0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          marginBottom: '0.75rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#ef4444' }}>Empirically refuted (2026):</strong>{' '}
+          The C &#x2248; 0.50 threshold was tested against actual data in gnosis-research Session 63
+          and <strong>rejected at p &lt; 0.0001</strong>. The 8-approach convergence shown below is a
+          geometric artifact, not an empirical finding — see details in the calibration caveat. This
+          demo is retained as an illustration of <em>why</em> a geometric coincidence looked meaningful:
+          any approach that picks the midpoint of a [0,1)-bounded output range will land near 0.50 by construction.
+        </div>
+        <div style={{
           background: 'rgba(245,158,11,0.08)',
           border: '1px solid rgba(245,158,11,0.3)',
           borderRadius: '0.375rem',
@@ -50,18 +66,17 @@ export default function ConsciousnessDemo() {
           <strong style={{ color: '#f59e0b' }}>Calibration caveat:</strong>{' '}
           C &#x2248; 0.50 is the <strong>output-range midpoint</strong> of [0, 1) &mdash; a geometric label,
           not a dynamically privileged value. For C(&#x03C1;) = tanh(&#x03B3;&thinsp;&middot;&thinsp;ln(&#x03C1;/&#x03C1;<sub>crit</sub>&thinsp;+&thinsp;1)),
-          the slope dC/d&#x03C1; is maximized at &#x03C1; = 0 (where C = 0), not at C = 0.50 — there is no inflection
+          the slope dC/d&#x03C1; is maximized at &#x03C1; = 0 (where C = 0), not at C = 0.50 &mdash; there is no inflection
           point in this specific function for &#x03C1; &#x2265; 0. The convergence of 8 approaches on 0.499 &#x00B1; 0.012 is <strong>geometric,
           not empirical</strong>: every approach that picks the midpoint of a [0,1)-bounded output range will
           land near 0.50 by construction. Additionally, all 8 approaches share the same framework
           assumptions and are not independent. No calibration procedure exists to map actual EEG, fMRI,
-          or IIT-&#x03A6; measurements to the C-axis, so the kill criterion (EEG-visible threshold
-          at C &#x2248; 0.50) cannot currently be run against any dataset. Relabeled <em>Speculative</em>
-          until a calibration recipe exists.
+          or IIT-&#x03A6; measurements to the C-axis.
         </div>
         <p>
-          Eight approaches within the Synchronism framework converge on C &#x2248; 0.50 as a
-          consciousness threshold. Hover over each to see the methodology. Note the geometric caveat above.
+          The 8 approaches below all converge on C &#x2248; 0.50 — an illustration of how the geometric
+          midpoint artifact operates. The convergence was shown to be forced (geometric, not empirical) and
+          the threshold was subsequently refuted empirically. Hover over each to see the methodology.
         </p>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
@@ -171,11 +186,15 @@ export default function ConsciousnessDemo() {
           </p>
         </div>
 
-        <h2>What Would Falsify This</h2>
+        <h2>What Has Falsified This</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li>EEG anesthesia study showing consciousness loss at widely varying C values (1.0 to 6.0)</li>
-          <li>Species with consciousness at demonstrably different C thresholds</li>
-          <li>C &#x2248; 0.50 being an artifact of the output-range midpoint (geometric, not dynamical)</li>
+          <li><strong>C &#x2248; 0.50 is the output-range midpoint (established).</strong> gnosis-research Session 63 rejected C=0.50 at p&lt;0.0001. The convergence is geometrically forced — any approach keyed to the midpoint of [0,1) will land near 0.50 by construction.</li>
+        </ul>
+        <h2>What Would Still Falsify C(&#x03C1;)-Based Consciousness More Broadly</h2>
+        <ul style={{ color: 'var(--color-text-secondary)' }}>
+          <li>EEG/fMRI mapping establishing a C threshold at a different value than any of the 8 approaches predict</li>
+          <li>Species with demonstrably different C thresholds at the same density</li>
+          <li>A calibration protocol mapping IIT-Φ or EEG phase to the C-axis (does not exist yet)</li>
         </ul>
       </section>
 

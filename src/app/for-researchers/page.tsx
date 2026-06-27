@@ -107,7 +107,7 @@ export default function ForResearchers() {
             <h2 style={{ margin: 0, fontSize: '1.1rem' }}>3. The only non-MOND, non-Zurek channel — discrete-substrate Lorentz violation</h2>
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
               <ValidationBadge status="untested" label="Time-of-Flight: Structurally Unreachable" />
-              <ValidationBadge status="audited-negative" label="Preferred-Frame + Dim-4: Refutation-Exposed" />
+              <ValidationBadge status="audited-negative" label="Preferred-Frame + Dim-4: Refuted at Natural Value (16–28 OOM)" />
             </div>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
@@ -146,7 +146,7 @@ export default function ForResearchers() {
             </li>
           </ol>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600, marginBottom: '0.25rem' }}>
-            Face 2 — Preferred frame + dim-4: refutation-exposed, already constrained
+            Face 2 — Preferred frame + dim-4: <strong>refuted at the natural radiative value</strong> (c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;10<sup>&#x2212;2</sup>, 16–28 OOM above bounds)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             A discrete substrate with absolute time picks out a preferred (CMB-rest) frame. Preferred-frame
@@ -164,8 +164,8 @@ export default function ForResearchers() {
               The framework's absolute-time / universal-clock commitment gives up the only custodial symmetry
               (boost invariance) that could forbid radiative generation of this coefficient from the Planck
               sector (Collins–Perez–Sudarsky–Gambini–Pullin, <em>PRL</em> 93, 191301 (2004)).
-              <strong> Named tension: absolute time ⊥ sub-10<sup>&#x2212;22</sup> Lorentz invariance.</strong>
-              Status: refuted-or-fine-tuned (pending marginal-coupling computation).
+              <strong> Verdict: refuted at the natural radiative value.</strong>{' '}
+              Computation (2026-06-26 explorer, Collins–Perez–Sudarsky–Gambini–Pullin 2004): tree-level c<sub>&#x03BC;&#x03BD;</sub>=0 by single-substrate universality (no species-dependent k² coefficient). But the one-loop radiative correction is UV-dominated and Planck-cutoff-independent: c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;&#x03B1;/&#x03C0;&nbsp;~&nbsp;10<sup>&#x2212;2</sup>–10<sup>&#x2212;3</sup>. Existing bounds: ≲10<sup>&#x2212;18</sup> (cavity MM), ≲10<sup>&#x2212;29</sup>–10<sup>&#x2212;30</sup> (nucleon comagnetometer). Fine-tuning gap: <strong>16–28 orders of magnitude</strong>. Absolute time removes the only custodial symmetry (boost invariance). SM-containing completion forces perturbative gauge couplings, defeating the strong-dynamics escape. Doubly-obstructed: the framework's defining ontological commitment is the source of its own exclusion.
             </li>
             <li>
               <strong>Velocity-anisotropic phase-transition threshold (Phase-16, 2026-06-24).</strong>{' '}
@@ -179,18 +179,14 @@ export default function ForResearchers() {
           </ul>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Net:</strong> the time-of-flight face is symmetry-protected and unreachable (three locks stand).
-            The preferred-frame / dim-4 face is the framework&apos;s <em>sharpest refutation exposure</em> —
-            and it is the framework&apos;s defining commitment (absolute time) that creates it. The &ldquo;sidereal
-            modulation&rdquo; channel is not an uncomputed future opening: the preferred-frame anisotropy is already
-            constrained by existing experiments at 11–19 OOM above the prediction.
+            The preferred-frame / dim-4 face is <strong>refuted at the natural radiative value</strong> (c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;10<sup>&#x2212;2</sup>, 16–28 OOM above existing bounds) — and it is the framework&apos;s defining commitment (absolute time) that causes the exclusion. This is the framework&apos;s only non-MOND, non-Zurek channel, and it falls on the <em>refutation</em> side. A survival path exists only with an unspecified, doubly-obstructed custodial UV mechanism.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             Research lineage: PREDICTIONS.md B7 / Phase-12 / Phase-13 / Phase-16 in the{' '}
             <a href="https://github.com/dp-web4/Synchronism" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}>
               Synchronism research archive
             </a>.{' '}
-            Dim-4 c<sub>μν</sub> coefficient uncomputed — the decisive next step is a marginal-coupling lattice loop
-            or explicit custodial mechanism.
+            Dim-4 c<sub>μν</sub> coefficient computed (2026-06-26): radiative value ~10<sup>&#x2212;2</sup>, refuted by 16–28 OOM. For the framework to survive this channel, an unspecified UV mechanism that is simultaneously boost-symmetry-independent and non-perturbative must be exhibited. Absent that, this is the framework&apos;s most decisive falsification.
           </p>
         </div>
 

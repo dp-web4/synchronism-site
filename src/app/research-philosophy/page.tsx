@@ -221,8 +221,8 @@ export default function ResearchPhilosophy() {
           <strong>Prior art:</strong> the protocol itself is assembled from existing work — adversarial
           AI pairs from AI Safety via Debate (Irving, Christiano &amp; Amodei 2018), multi-agent role
           structure from CAMEL/MetaGPT, failure modes from the multi-agent-systems literature. The
-          contribution is the controlled null result with measured sensitivity and specificity, not
-          the protocol. Full prior-art accounting on the{' '}
+          contribution is the controlled null result with measured sensitivity (how many framework claims survive the adversarial filter), not
+          the protocol. Specificity cannot be measured here: there is no labeled corpus of genuine out-of-distribution discoveries to run through the filter — and an AI adversarial pair sharing the same training distribution would flag OOD novelty as reparametrization even if genuine. Full prior-art accounting on the{' '}
           <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</a>.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -232,9 +232,9 @@ export default function ResearchPhilosophy() {
           internal consistency findings, or null results when examined by physicists outside the training
           distribution. Human oversight reviews borderline cases and maintains the validation badge taxonomy.
           Every badge is the product of at least one full A2ACW challenge cycle &mdash; which, given the
-          measured 0% specificity of that cycle on held-out genuine discoveries, is provenance, not
+          0% novel-survivor rate of that cycle on held-out claims, is provenance, not
           assurance: a badge means the claim was challenged, not that the challenge could have
-          distinguished a real discovery from a rederivation.
+          distinguished a real discovery from a rederivation. Critically, the 0% rate cannot distinguish &ldquo;no novelty exists in the framework&rdquo; from &ldquo;the method is systematically blind to novelty when present.&rdquo;
         </p>
 
         <div className="card" style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.3)', marginBottom: '1.5rem' }}>

@@ -204,6 +204,12 @@ export default function GalaxyRotation() {
             (effective N≈500–1000): ΔBIC ≈ 33 — still decisive. The residual is a coherent
             S-shaped ≈0.05–0.10 dex signature at the transition, significant at ~8σ per bin.
           </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', fontStyle: 'italic' }}>
+            <strong>Note on γ=2:</strong> γ=2 follows from N<sub>corr</sub>=1 (individual stars taken as uncorrelated),
+            but N<sub>corr</sub> is asserted, not independently counted. The SPARC-preferred γ≈0.49 back-implies
+            N<sub>corr</sub>≈17, contradicting the independent-stars premise. γ=2 is the most <em>charitable</em>
+            pin for galaxies given the framework&apos;s own logic — not a prediction derived from independent evidence.
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             <strong>The fork that closes the question:</strong> free-γ converges to γ≈0.49 with
             RMS identical to McGaugh to four digits. ΔBIC=+7 is entirely the BIC penalty for the

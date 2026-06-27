@@ -27,7 +27,7 @@ export default function HardProblem() {
             <li><strong>The 8-way convergence has a dependency problem.</strong> The eight approaches share underlying assumptions, so they agree on the threshold by construction &mdash; an internal consistency check, not independent confirmation.</li>
             <li><strong>The threshold value is refuted.</strong> The C&nbsp;&#x2248;&nbsp;0.50 value was tested by{' '}
               <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
-              and rejected at p&nbsp;&lt;&nbsp;0.0001 (C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9; found instead). See{' '}
+              and rejected at p&nbsp;&lt;&nbsp;0.0001 (C&nbsp;&#x2248;&nbsp;0.64 found instead; this is a non-operational placeholder value &mdash; D,S undefined &mdash; with no golden-ratio framing). See{' '}
               <Link href="/consciousness-threshold" style={{ color: 'var(--color-accent-blue)' }}>Consciousness Threshold</Link>.</li>
           </ul>
         </div>
@@ -127,7 +127,7 @@ export default function HardProblem() {
             <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
             &mdash; which began from this same C&nbsp;&#x2248;&nbsp;0.50 seed &mdash; tested the value against
             multi-model coherence data and <strong>rejected it at p&nbsp;&lt;&nbsp;0.0001</strong>, finding
-            C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9;. So the threshold the identity claim
+            C&nbsp;&#x2248;&nbsp;0.64 (a non-operational placeholder &mdash; D and S remain undefined, so this value has no computable provenance and no golden-ratio framing is warranted). So the threshold the identity claim
             leaned on is empirically wrong, even before the operationalization gap is addressed.
           </p>
         </div>

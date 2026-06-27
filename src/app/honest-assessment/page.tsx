@@ -375,9 +375,8 @@ export default function HonestAssessment() {
             <div style={{ background: 'rgba(56,189,248,0.06)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
               <strong style={{ color: 'var(--color-accent-blue)' }}>What this rules out beyond Synchronism:</strong>{' '}
               DESI DR1 full-shape (arXiv:2411.12021) finds LRG1 fσ₈/(fσ₈)<sub>fid</sub>&nbsp;=&nbsp;1.16&plusmn;0.13 — growth <em>above</em> ΛCDM, opposite the predicted suppression.
-              This constrains the entire <strong>coherence-damped structure-growth mechanism class</strong>: any framework that predicts growth suppression from density-coherence coupling sits in the same disfavored box — alongside massive-ν, warm-DM, and certain f(R) suppression frameworks.
-              This is not unique to Synchronism; it is a transferable negative result about a class of suppression mechanisms.
-              The null is clean: DESI full-shape 2024 is the appropriate dataset; the constraint is independent of which specific model generated the suppression prediction.
+              This constrains <strong>Synchronism-form uniform, scale-independent late-time growth suppression</strong>: any framework that predicts a uniform coherence-damping of structure growth across all scales sits in the same disfavored direction.
+              <em>Scope note:</em> this does <strong>not</strong> exclude massive neutrinos, warm dark matter, or f(R) gravity &mdash; those mechanisms are k-dependent and scale-localized, fundamentally distinct from a uniform coherence suppression; DESI+CMB joint analyses treat them as fully live. The constraint applies specifically to the uniform scale-independent class, not to suppression mechanisms in general.
             </div>
           </div>
 
@@ -443,7 +442,7 @@ export default function HonestAssessment() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div className="card" style={{ borderLeft: '3px solid rgba(167,139,250,0.6)', background: 'rgba(167,139,250,0.04)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3 style={{ color: 'var(--color-accent-violet)' }}>Structural No-go: Local Density vs Non-local Acceleration</h3>
+              <h3 style={{ color: 'var(--color-accent-violet)' }}>Structural No-go: Local Density vs Non-local Acceleration (Milgrom 2005 instance)</h3>
               <ValidationBadge status="failed" label="Wrong Variable (2026-06-01)" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>

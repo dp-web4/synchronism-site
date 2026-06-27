@@ -136,7 +136,7 @@ export default function FirstEncounter() {
           marginBottom: '1rem',
         }}>
           <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            Step {step + 1} of {steps.length}
+            Section {step + 1} of {steps.length}
           </span>
           <span style={{
             padding: '0.25rem 0.75rem',

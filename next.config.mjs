@@ -86,6 +86,11 @@ const nextConfig = {
       },
       // Short-form URLs visitors guess
       {
+        source: '/galaxy',
+        destination: '/galaxy-plotter',
+        permanent: false,
+      },
+      {
         source: '/why',
         destination: '/why-synchronism',
         permanent: false,

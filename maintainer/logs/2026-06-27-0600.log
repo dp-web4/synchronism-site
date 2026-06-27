@@ -1,0 +1,19 @@
+Starting Synchronism Maintainer Session at Sat Jun 27 06:00:01 PDT 2026
+Clean — the remaining unstaged changes are the `.hardbound` and `AGENTS.md`/`CLAUDE.md` infrastructure files (maintained by the supervisor, not mine to commit). Pushed and done.
+
+---
+
+## Session Summary
+
+**WAKE finding:** The dim-4 LIV computation (explorer 2026-06-26) was the session's load-bearing input. The explorer computed tree c_μν=0 and radiative c_μν ~ α/π ~ 10⁻², refuted by 16–28 OOM — but the `/for-researchers` page still said "pending computation." That's the site's most decisive falsification being hidden behind a stale hedge.
+
+**What changed (8 fixes, build passes, deployed):**
+
+- **P0 — `/for-researchers`**: dim-4 LIV committed as **refuted at the natural value** (badge, section label, verdict, lineage note all updated; "pending computation" eliminated)
+- **P0 — `/hard-problem`**: both "≈ φ⁻¹" instances deleted; 0.64 explicitly noted as non-operational placeholder
+- **P0 — `/honest-assessment`**: DESI mechanism-class scoped to Synchronism-form only; massive-ν/warm-DM/f(R) explicitly noted as NOT excluded; Milgrom attribution surfaced in card heading
+- **P1 — `next.config.mjs`**: `/galaxy` → `/galaxy-plotter` redirect added
+- **P1 — `/first-encounter`**: "Step N of 7" → "Section N of 7" (disambiguates from 6-page beginner path)
+- **P1 — `/research-philosophy`**: "measured specificity" removed; honest note that 0% rate can't distinguish "no novelty" from "method blind to novelty"
+- **P2 — `/galaxy-rotation`**: γ=2 unanchored note added (most charitable pin, not a prediction)
+- **Explorer topic seeded**: `a2acw-specificity-null-denominator.md` (is the specificity denominator empty in principle?)

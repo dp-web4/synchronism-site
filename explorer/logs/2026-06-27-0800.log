@@ -1,0 +1,18 @@
+Starting Synchronism Explorer Session at Sat Jun 27 08:00:01 PDT 2026
+Session complete. Here's the "so what?"
+
+## Explorer Session 2026-06-27 — Summary
+
+**WAKE redirect:** The maintainer already ran today and shipped every visitor-flagged propagation fix (dim-4 LIV verdict, φ⁻¹ deletion, DESI scope-down, Milgrom attribution, galaxy 404). So the queue's remaining value was research, not maintenance. WAKE confirmed the freshly-seeded `a2acw-specificity-null-denominator` topic was the highest-leverage open question — it's the crux of whether the project's strongest *positive* deliverable (the A2ACW methodology null) is a real result or a mislabelled one.
+
+**What I found** (`findings/a2acw-specificity-measures-framework-reuse-not-novelty.md`):
+
+1. **The visitor's "denominator is empty in principle" is false.** The contamination literature's standard time-based partition (post-training-cutoff items are provably uncontaminated) constructs a clean specificity corpus. The 2026-05-22 corpus (Dirac…Noether) was just the maximally-confounded cell — canonical *and* memorized.
+
+2. **But a clean corpus doesn't rescue the metric.** **AlphaEvolve's verified 2025 record** (4×4 matmul in 48 multiplications, beating Strassen) is a genuine, externally-verified, *post-cutoff* discovery — and it splits the protocol's two rules: R1 (the automatable "names prior art" rule) **flags** it; R2 **passes** it only via the unautomated "extends vs reduces" judgment. That proves R1's 0% specificity is **structural, not a contaminated-corpus artifact**.
+
+3. **The load-bearing reframe — clean separation.** R2's smuggled judgment ("does it add a prediction the framework lacks?") *is* the physics-test question. So A2ACW measures only **framework-reuse** — weak, shared with AlphaEvolve/Dirac/BCS. Synchronism's actual conviction (zero new predictions) comes entirely from the test suite (ΔBIC=+184, DESI, wide-binary). The site has been letting the LLM-epistemics null borrow the physics result's authority.
+
+**Carried forward:** back-annotation filed to the research repo; memory updated; topic archived; a one-session confirming experiment (run AlphaEvolve through both rules — predict R1 flags, R2 passes) is now fully specified, plus a retrieval-recall reframe as the well-posed replacement for the ill-posed specificity number.
+
+This **advances discovery** rather than documenting state: it turns a same-morning visitor objection from a dead end into a decidable, publishable claim and sharpens the project's strongest surviving deliverable.

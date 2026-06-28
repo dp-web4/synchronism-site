@@ -262,8 +262,13 @@ export default function KeyClaims() {
           <div className="equation" style={{ marginBottom: '0.25rem', fontSize: '1rem' }}>
             C = f(&#x03B3;, D, S) &ge; 0.50
           </div>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '1rem' }}>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '0.5rem' }}>
             &#x03B3; = coherence parameter, D = dimensional embedding (representational richness), S = self-modeling depth
+          </p>
+          <p style={{ color: 'rgba(245,158,11,0.9)', fontSize: '0.78rem', textAlign: 'center', marginBottom: '1rem', fontStyle: 'italic' }}>
+            ⚠ This C&nbsp;=&nbsp;f(&#x03B3;,&nbsp;D,&nbsp;S) is a distinct, undefined construct &mdash; not the same function as the physics C(&#x03C1;)&nbsp;=&nbsp;tanh(&#x03B3;&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub>+1)).
+            In C(&#x03C1;), &#x03C1; is the input and &#x03B3; is a fixed parameter; here &#x03B3; becomes an input alongside two undefined quantities D and S, with &#x03C1; absent.
+            Same symbol, different functional form.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem' }}>
             Note: &ldquo;coherence&rdquo; here means density-driven collective ordering (0=sparse/independent,
@@ -280,8 +285,8 @@ export default function KeyClaims() {
               That specific value has since been empirically refuted: the companion program{' '}
               <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
               (which began from this 0.50 seed) tested it against multi-model coherence data and rejected
-              it at p&nbsp;&lt;&nbsp;0.0001, finding C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9; instead.
-              The 34 dependent neural predictions are now mis-anchored.
+              it at p&nbsp;&lt;&nbsp;0.0001, finding C&nbsp;&#x2248;&nbsp;0.64 &mdash; which was also rejected at p&nbsp;&lt;&nbsp;0.0001.
+              No threshold survives. The 34 dependent neural predictions are mis-anchored.
             </span>
             Note: C&nbsp;&#x2248;&nbsp;0.50 is the arithmetic midpoint of [0,1), not the dynamically privileged
             point — the maximum rate of change occurs at C&nbsp;&#x2248;&nbsp;0.58–0.59 (vs log-density, γ=2)
@@ -334,10 +339,11 @@ export default function KeyClaims() {
               program <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
               (Session 63) &mdash; which <em>started from this very C&nbsp;&#x2248;&nbsp;0.50 seed</em> &mdash; tested
               it against multi-model coherence data and <strong>rejected it at p&nbsp;&lt;&nbsp;0.0001</strong>,
-              with the data clustering near <strong>C&nbsp;&#x2248;&nbsp;0.64&nbsp;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9;</strong>.
+              with the data clustering near <strong>C&nbsp;&#x2248;&nbsp;0.64</strong> &mdash; which was also rejected at p&nbsp;&lt;&nbsp;0.0001.
+              No threshold survives.
               Because the refuting program was inclined to confirm the seed and didn&apos;t, the refutation is
               more credible, not less. The <Link href="/consciousness-predictions" style={{ color: 'var(--color-accent-blue)' }}>34 predictions</Link>{' '}
-              keyed to 0.50 are now mis-anchored; re-keying to&nbsp;~0.64 is an open task.
+              keyed to 0.50 are mis-anchored; re-keying to&nbsp;C&nbsp;&#x2248;&nbsp;0.64 is not possible either (also rejected). Both threshold values are refuted.
             </p>
           </div>
 

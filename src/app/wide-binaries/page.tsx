@@ -106,6 +106,8 @@ export default function WideBinaries() {
           <strong style={{ color: '#ef4444' }}>Feasibility kill (independent of the Chae–Banik dispute):</strong>{' '}
           C(ρ) predicts a Newtonian null — only <strong>0.05–0.4% velocity deviation</strong> from Newtonian
           dynamics — because low-density wide-binary environments give C ≈ 1 (near-Newtonian).
+          (Note: &ldquo;low-density&rdquo; here is relative to the galaxy outskirts where ρ<sub>crit</sub> is calibrated &mdash;
+          solar-neighborhood ρ sits <em>above</em> that ρ<sub>crit</sub>, placing it in the C≈1 near-Newtonian regime.)
           Gaia DR3 systematics on clean wide-binary velocity samples are ~3–5%, placing the predicted
           signal <strong>~80× below reach</strong>. Even if Chae (2023–2026) wins the observational dispute,
           C(ρ) is refuted — it predicts the Newtonian null, not the MOND-scale anomaly Chae reports.

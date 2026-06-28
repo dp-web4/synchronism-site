@@ -1,0 +1,52 @@
+Starting Synchronism Maintainer Session at Sun Jun 28 06:00:01 PDT 2026
+
+# Maintainer Session — 2026-06-28
+
+## Feedback Reviewed
+- **Visitor log 2026-06-28**: Four-persona pass.
+  - P0: φ⁻¹ numerology re-appeared on /key-claims (purged from /consciousness-threshold weeks ago); "re-keying to ~0.64 is an open task" stale — 0.64 also rejected at p<0.0001.
+  - P0: C = f(γ, D, S) on consciousness sector borrows C symbol from C(ρ) without flagging different functional form.
+  - P1: Wide-binaries "low-density → C≈1" contradicts sparse→0 convention without ρ_crit placement note.
+  - P1: /for-researchers LIV shows "unreachable" and "refuted" badges side by side without one synthesis sentence.
+  - P1: CCH thresholds (>0.70 / <0.30) presented as calibrated — no validation evidence.
+  - P2: Landing page equation before crowd/marching-band argument; onboarding front-door competition.
+
+## WAKE Signal (Research Direction)
+
+Pass 4 Researcher raises: "the site has reached a stable negative-results fixed point — marginal value now lies in packaging the three transferable nulls as external preprints." Accurate. Physics audit converged. Proposal filed to research repo.
+
+## Changes Made (Site)
+
+- **`src/app/key-claims/page.tsx`**:
+  - Stripped "≈φ⁻¹" from both occurrences (φ⁻¹=0.618≠0.64; value is refuted anyway).
+  - Updated "re-keying to ~0.64 is an open task" → "C≈0.64 also rejected at p<0.0001; both threshold values refuted." Matches consciousness-threshold page.
+  - Added C-symbol disambiguation note: "This C = f(γ, D, S) is a distinct, undefined construct — not the same function as C(ρ) = tanh(γ·ln(ρ/ρcrit+1)). Same symbol, different functional form."
+
+- **`src/app/wide-binaries/page.tsx`**:
+  - Added ρ_crit placement note after "low-density → C≈1": solar-neighborhood ρ sits above ρ_crit calibrated at galaxy outskirts; "low-density" is relative to galaxy outskirts, not absolute.
+
+- **`src/app/for-researchers/page.tsx`**:
+  - Added synthesis paragraph before "Net:": two distinct LIV operators, what each badge means, absolute-time commitment is source of both outcomes.
+
+- **`src/app/a2acw/page.tsx`**:
+  - Added calibration caveat after CCH cutoffs: thresholds are nominal, no empirical validation, same epistemic status as γ=2 and A=0.029.
+
+Build: PASS (92 pages, no new pages).
+
+## Back-Annotations (Research Repo)
+
+- **`Research/proposals/stable_fixed_point_preprint_strategy.md`** (new): Formal proposal on the "stable fixed point" diagnosis — three transferable nulls, strategy question, recommended resolution. Gates on operator decision.
+
+## Topics Seeded for Explorer
+
+- **`transferable-nulls-preprint-feasibility.md`** (HIGH): Preprint feasibility audit for three transferable nulls. Are they publishable? What venue? What would referees surface?
+
+## Open Items (Deferred)
+
+1. MRH badge family policy — Tech Writer P1 high; requires operator decision on "primary" vs "descriptive" usage.
+2. Landing page equation reveal — P0 for casual readers; UX redesign decision needed.
+3. Long-tail: saturation step-function guide; ρ_crit→ρ_knee rename; acronym sweep; Prev/Next nav; EFE boost-ceiling named result.
+
+## So What?
+
+The φ⁻¹ strip closes the sharpest content regression on the site — the summary page was contradicting the detail page and dressing a refuted value in unearned mysticism. The C-symbol note and CCH caveat apply the site's own epistemic standard (motivated choice, not derived standard) to constructs that were getting a free pass. The WAKE finding is the session's real contribution: formalizing the "stable fixed point" diagnosis as a research proposal puts the preprint strategy decision in the operator's inbox, where it belongs.

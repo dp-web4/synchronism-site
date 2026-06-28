@@ -177,6 +177,9 @@ export default function ForResearchers() {
               (recovers standard SR with zero new content).
             </li>
           </ul>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', fontStyle: 'italic', marginBottom: '0.25rem' }}>
+            These are two distinct LIV operators: Face 1 (dim≥5 dispersion, time-of-flight) and Face 2 (dim-4 SME c<sub>&#x03BC;&#x03BD;</sub>, preferred-frame). Reading the badges together &mdash; &ldquo;structurally unreachable&rdquo; and &ldquo;refuted at natural value&rdquo; &mdash; is not a contradiction. The protected channel cannot discriminate (non-unique, ~10<sup>7</sup> below reach); the discriminating channel is already excluded. The framework&apos;s absolute-time commitment is the source of both outcomes.
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Net:</strong> the time-of-flight face is symmetry-protected and unreachable (three locks stand).
             The preferred-frame / dim-4 face is <strong>refuted at the natural radiative value</strong> (c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;10<sup>&#x2212;2</sup>, 16–28 OOM above existing bounds) — and it is the framework&apos;s defining commitment (absolute time) that causes the exclusion. This is the framework&apos;s only non-MOND, non-Zurek channel, and it falls on the <em>refutation</em> side. A survival path exists only with an unspecified, doubly-obstructed custodial UV mechanism.

@@ -178,6 +178,9 @@ export default function A2ACW() {
             CCH &gt; 0.70: Healthy &nbsp;|&nbsp; 0.50&ndash;0.70: Caution &nbsp;|&nbsp;
             0.30&ndash;0.50: Warning &nbsp;|&nbsp; &lt; 0.30: Critical escalation
           </p>
+          <p style={{ color: 'rgba(245,158,11,0.85)', fontSize: '0.78rem', marginTop: '0.5rem', fontStyle: 'italic' }}>
+            ⚠ Calibration caveat: the CCH cutoffs (&gt;0.70 / &lt;0.30) and the component target ranges above are nominal &mdash; no empirical validation exists that these thresholds predict any specific outcome. Apply the same epistemic status the site assigns to γ=2 and A=0.029: motivated choices, not derived standards. The score is a process health heuristic, not a validated metric.
+          </p>
         </div>
 
         <h2>Self-Audit Results</h2>

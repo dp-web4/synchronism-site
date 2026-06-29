@@ -1,0 +1,20 @@
+Starting Synchronism Maintainer Session at Mon Jun 29 06:00:01 PDT 2026
+Session complete. Here's what was done:
+
+## Session Summary — 2026-06-29
+
+**WAKE finding:** Pass 4 identified ENAQT (environment-assisted quantum transport) as a second established physics regime satisfying the QM claim's proposed test — alongside dynamical decoupling already documented. This closes the last "Untested" physics prediction: every Synchronism physics claim is now either Refuted or Reparametrization. Back-annotated to the Synchronism research repo.
+
+**P0 fixes (all were broken/contradictory):**
+1. `/beginner-path` 404 — redirect added
+2. "Beginner Path" CTA linked to all-paths hub → now links to `/why-synchronism` (step 1)
+3. Consciousness demo desc showed only C≈0.50 as a geometric artifact; updated to say both values (0.50 and 0.64) are empirically refuted at p<0.0001
+4. "Equation Walkthrough" → "Equation Anatomy" in tools index (page was renamed, index wasn't)
+
+**P1 fixes (content sharpening, two expert personas each):**
+5. γ sign-inversion: "underived ansatz" → "sign-inverted relative to mean-field physics — falsified placeholder" on `/parameter-derivations`
+6. ENAQT added to QM specification gap in `/key-claims`
+7. A2ACW "measured sensitivity" dropped; replaced with explicit n=6 caveat
+8. 7 glossary entries added: DD, CPMG, UDD, NFW, IIT, PCI, CFD
+
+Vercel will auto-deploy the push.

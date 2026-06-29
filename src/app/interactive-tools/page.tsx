@@ -46,9 +46,9 @@ const coreTools = [
     epistemic: 'core' as EpistemicStatus,
   },
   {
-    title: 'Equation Walkthrough',
+    title: 'Equation Anatomy',
     href: '/equation-walkthrough',
-    desc: 'Step-by-step interactive derivation. Each step shows the equation, the physical motivation, and how the parameters connect.',
+    desc: 'Step-by-step breakdown of C(ρ) = tanh(γ·ln(ρ/ρcrit + 1)). Each step shows one equation component, its physical motivation, and why the specific functional form was chosen (not derived).',
     tags: ['Conceptual'],
     epistemic: 'core' as EpistemicStatus,
   },
@@ -65,7 +65,7 @@ const speculativeTools = [
   {
     title: 'Consciousness Threshold Demo',
     href: '/consciousness-demo',
-    desc: 'Eight approaches to coherence-based consciousness all converge near C ≈ 0.50. Important: this convergence is geometric (all eight share the tanh assumption and cluster at its inflection by construction), not empirical. No calibration to EEG/fMRI/IIT data exists. This tool illustrates a mathematical property of the sigmoid, not a finding about consciousness.',
+    desc: 'Eight approaches to coherence-based consciousness all converge near C ≈ 0.50 — a geometric artifact: all eight share the tanh assumption and cluster at its inflection by construction. Both C ≈ 0.50 (this tool) and the empirically-derived C ≈ 0.64 (gnosis-research) have been refuted at p < 0.0001. No calibration to EEG/fMRI/IIT data exists. This tool illustrates a mathematical property of the sigmoid, not a finding about consciousness.',
     tags: ['Advanced'],
     epistemic: 'speculative' as EpistemicStatus,
   },

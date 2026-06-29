@@ -65,6 +65,21 @@ export default function ParameterDerivations() {
               Invoking CLT for correlated N<sub>corr</sub> is self-contradictory. The scaling is
               borrowed by analogy, not derived from the CLT. It is an ansatz with a fitted prefactor.
             </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
+              <strong>Sign inversion (2026-06-06 / 2026-06-29):</strong> Beyond being underived, the
+              N<sub>corr</sub>-dependence is <em>sign-inverted relative to the mean-field physics it borrows</em>.
+              In any mean-field model (Ising, Curie–Weiss), increasing the number of correlated units
+              makes the transition <em>sharper</em> — fluctuations stop self-averaging near criticality;
+              cooperative effects build. Here, &#x03B3; = 2/&#x221A;N<sub>corr</sub> <em>decreases</em> with
+              N<sub>corr</sub>, giving the most-correlated systems (BCS, BEC, N<sub>corr</sub> ≈ 10⁶)
+              the <em>flattest</em> transitions. The γ-calculator (try γ = 10⁻³) shows this directly:
+              the "sharpest" transition (γ = 2) belongs to the single uncorrelated particle, while
+              BCS superconductors — among the most collectively ordered systems known — sit near C ≈ 0,
+              the flattest possible curve. &ldquo;Underived ansatz&rdquo; understates the problem:
+              the relation is anti-correlated with the physical intuition that motivates it.
+              Any first-principles derivation must recover γ that <em>increases</em> with N<sub>corr</sub>
+              to match mean-field expectations — making the formula a falsified placeholder, not a gap to fill.
+            </p>
           </div>
 
           <div className="card">

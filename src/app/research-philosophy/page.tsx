@@ -221,7 +221,7 @@ export default function ResearchPhilosophy() {
           <strong>Prior art:</strong> the protocol itself is assembled from existing work — adversarial
           AI pairs from AI Safety via Debate (Irving, Christiano &amp; Amodei 2018), multi-agent role
           structure from CAMEL/MetaGPT, failure modes from the multi-agent-systems literature. The
-          contribution is the controlled null result with measured sensitivity (how many framework claims survive the adversarial filter), not
+          contribution is the controlled null result (how many framework claims survive the adversarial filter — n=6 demotions on one non-independent corpus at 0/6 detection; not sufficient to claim calibrated sensitivity), not
           the protocol. Specificity cannot be measured here: there is no labeled corpus of genuine out-of-distribution discoveries to run through the filter — and an AI adversarial pair sharing the same training distribution would flag OOD novelty as reparametrization even if genuine. Full prior-art accounting on the{' '}
           <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</a>.
         </p>

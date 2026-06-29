@@ -269,6 +269,12 @@ const nextConfig = {
         destination: '/first-encounter',
         permanent: false,
       },
+      // /beginner-path — exact text of the CTA button on the landing page (2026-06-29 Pass 1 404)
+      {
+        source: '/beginner-path',
+        destination: '/why-synchronism',
+        permanent: false,
+      },
       // /start-here — guessed by visitors seeing "Start Here" label in nav (2026-05-23 two personas)
       {
         source: '/start-here',

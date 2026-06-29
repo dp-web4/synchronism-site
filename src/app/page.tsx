@@ -27,7 +27,7 @@ export default function Home() {
           <Link href="/honest-assessment" className="btn-secondary">
             See What Failed
           </Link>
-          <Link href="/learning-paths"
+          <Link href="/why-synchronism"
             style={{ display: 'inline-flex', alignItems: 'center', padding: '0.5rem 1rem', borderRadius: '0.375rem',
               background: 'rgba(16,185,129,0.12)', color: '#10b981', border: '1px solid rgba(16,185,129,0.35)',
               fontSize: '0.9rem', fontWeight: 500, textDecoration: 'none', transition: 'background 0.15s' }}>
@@ -35,7 +35,7 @@ export default function Home() {
           </Link>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem' }}>
-          <strong>No physics background?</strong> Use the <Link href="/learning-paths" style={{ color: 'var(--color-accent-green, #10b981)' }}>Beginner Path</Link> (6 steps, ~30 min, no equations required) or jump to the <Link href="/galaxy-curve-plotter" style={{ color: 'var(--color-accent-green, #10b981)' }}>Galaxy Curve Plotter</Link>.{' '}
+          <strong>No physics background?</strong> Use the <Link href="/why-synchronism" style={{ color: 'var(--color-accent-green, #10b981)' }}>Beginner Path</Link> (6 steps, ~30 min, no equations required) or jump to the <Link href="/galaxy-curve-plotter" style={{ color: 'var(--color-accent-green, #10b981)' }}>Galaxy Curve Plotter</Link>.{' '}
           <strong>Physicist?</strong> Jump to <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link> or <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.{' '}
           <strong>Researcher?</strong> <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 tests</Link> or <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>.
         </p>

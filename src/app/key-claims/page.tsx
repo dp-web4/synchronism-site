@@ -218,12 +218,17 @@ export default function KeyClaims() {
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
             <strong>Specification gap:</strong> this kill criterion is not yet operationalized at the
-            level required to run the experiment. Dynamical decoupling (DD) protocols &mdash;
-            Viola-Knill-Lloyd 1999, UDD, CPMG &mdash; already demonstrate that periodic pulse sequences
-            beat passive isolation in non-Markovian baths. If &ldquo;resync&rdquo; reduces to DD,
-            the prediction is known physics, not a novel test. The criterion needs to specify the
-            bath spectral density, the pulse sequence, and the predicted T₂ ratio where Synchronism
-            differs from the standard DD prediction.
+            level required to run the experiment. Two established physics regimes already satisfy
+            &ldquo;resynchronization outperforms isolation&rdquo; without any Synchronism machinery:
+            (1) <strong>Dynamical decoupling (DD)</strong> — Viola-Knill-Lloyd 1999, UDD, CPMG —
+            demonstrates that periodic pulse sequences beat passive isolation in non-Markovian baths;
+            (2) <strong>Environment-assisted quantum transport (ENAQT)</strong> and engineered-bath
+            resynchronization, where a structured environment restores coherence the system cannot
+            hold in isolation (Plenio &amp; Huelga 2008; Mohseni et al. 2008).
+            If &ldquo;resync&rdquo; reduces to either of these, the prediction is known physics, not a novel test.
+            A discriminating criterion requires specifying a bath spectral density, pulse sequence,
+            and T₂ ratio where the MRH-based protocol departs from the filter-function prediction —
+            something none of the existing Synchronism claims specify.
           </p>
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>

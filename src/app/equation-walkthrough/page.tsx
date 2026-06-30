@@ -1,9 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import EquationDisplay from '@/components/EquationDisplay';
+import ValidationBadge from '@/components/ValidationBadge';
 
 const steps = [
   {
@@ -27,8 +29,8 @@ const steps = [
   {
     title: 'Step 4: Multiply by γ',
     equation: 'γ × ln(ρ/ρ_crit + 1) — scaled by coherence parameter',
-    explanation: 'γ = 2/√N_corr controls how steeply coherence rises with density. For uncorrelated systems (N_corr = 1, γ = 2), coherence rises fast. For highly correlated systems (large N_corr, γ → 0), the curve goes FLAT — C stays low at every physical density. This is the inversion the site warns about: the most collective systems (BCS superconductors, BECs) get the flattest curves and land at C ≈ 0, not high C.',
-    key: 'γ is the only "knob" that controls transition sharpness — between sparse/independent and dense/collective regimes.',
+    explanation: 'γ = 2/√N_corr controls how steeply coherence rises with density. For uncorrelated systems (N_corr = 1, γ = 2), coherence rises fast. For highly correlated systems (large N_corr, γ → 0), the curve goes FLAT — C stays low at every physical density. This is the inversion the site warns about: the most collective systems (BCS superconductors, BECs) get the flattest curves and land at C ≈ 0, not high C. See the Audited-Negative honesty note below — the formula has a sign problem and a self-contradictory CLT motivation.',
+    key: 'γ is the only "knob" — Audited-Negative. Sign inverted vs. mean-field physics. The γ Calculator shows the BCS reductio directly.',
   },
   {
     title: 'Step 5: Apply tanh',
@@ -39,8 +41,8 @@ const steps = [
   {
     title: 'Step 6: Interpret the output',
     equation: 'C = 0 (no coherence) → C = 1 (full coherence)',
-    explanation: 'C = 0: no collective order — the quantum limit where particles act independently. C = 1: full collective coherence — the classical limit where many particles behave as one ordered system. C ≈ 0.50: the consciousness threshold (if the system has enough structural complexity). The same output tells you different things in different domains.',
-    key: 'One function, universal interpretation, domain-specific consequences.',
+    explanation: 'C = 0: no collective order — the sparse/independent regime. C = 1: full collective coherence — the dense/collective regime. The same output tells you different things in different domains. Note on consciousness: C ≈ 0.50 was the proposed consciousness threshold — it was empirically refuted at p<0.0001 (gnosis-research Session 63, 2026); C ≈ 0.64 was also rejected. No threshold value currently survives test.',
+    key: 'One function, universal interpretation, domain-specific consequences — but the consciousness threshold value was refuted.',
   },
 ];
 
@@ -147,6 +149,38 @@ export default function EquationWalkthrough() {
           >
             Next &rarr;
           </button>
+        </div>
+
+        {/* γ honesty note — parity with γ Calculator (Pass 2 + Pass 3, 2026-06-30) */}
+        <div style={{
+          background: 'rgba(239,68,68,0.07)',
+          border: '1px solid rgba(239,68,68,0.35)',
+          borderRadius: '0.5rem',
+          padding: '0.875rem 1rem',
+          marginBottom: '1.5rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
+            <strong style={{ color: '#ef4444' }}>Honesty note — γ = 2/√N<sub>corr</sub>:</strong>
+            <ValidationBadge status="audited-negative" label="Audited-Negative — Sign Inverted for All Collective Systems" />
+          </div>
+          <p style={{ margin: 0, lineHeight: 1.6 }}>
+            Two independent failures in the formula&apos;s motivation: <strong>(1) Sign inverted.</strong>{' '}
+            1/√N is a fluctuation <em>width</em> that shrinks as N grows (sharper collective behavior) —
+            but sitting in the <em>rate</em> slot of tanh, larger N<sub>corr</sub> gives a
+            <em>flatter</em> curve. A BCS superconductor (N<sub>corr</sub> ≈ 10<sup>7</sup>, among the
+            sharpest real transitions) gets γ ≈ 6×10<sup>&#x2212;4</sup>, the flattest possible curve.
+            An ideal gas (N<sub>corr</sub> = 1, no real transition) gets γ = 2, the sharpest.
+            Backwards at the level of the physics, not just the prefactor.{' '}
+            <strong>(2) CLT self-contradiction.</strong> The 2/√N formula invokes the Central Limit
+            Theorem, which requires <em>independent</em> variables — but N<sub>corr</sub> is defined
+            as the count of <em>correlated</em> ones. The statistical motivation undercuts itself before
+            you reach the sign.{' '}
+            <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>
+              See the γ Calculator for the full reductio with interactive BCS/ideal-gas examples →
+            </Link>
+          </p>
         </div>
 
         <h2>Full Equation</h2>

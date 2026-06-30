@@ -6,7 +6,7 @@ import ValidationBadge from '@/components/ValidationBadge';
 
 export const metadata: Metadata = {
   title: 'For Researchers: What\'s Citable — Synchronism',
-  description: 'The defensible artifacts extracted from the failure documentation: the local-density locality no-go and the A2ACW program-level null result.',
+  description: 'Three citable negative results extracted from the failure documentation: local-density locality no-go, A2ACW program-level null, and dim-4 LIV exclusion of absolute-time substrates.',
 };
 
 export default function ForResearchers() {
@@ -101,16 +101,38 @@ export default function ForResearchers() {
           <Link href="/tier-1-existing" style={{ fontSize: '0.85rem' }}>TEST-04a full accounting &rarr;</Link>
         </div>
 
-        {/* Artifact 3: The one novel channel */}
+        {/* Artifact 3: The dim-4 LIV exclusion — transferable result */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #f59e0b' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>3. The only non-MOND, non-Zurek channel — discrete-substrate Lorentz violation</h2>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>3. Dim-4 radiative LIV exclusion of absolute-time discrete substrates — a citable no-go</h2>
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
               <ValidationBadge status="untested" label="Time-of-Flight: Structurally Unreachable" />
               <ValidationBadge status="audited-negative" label="Preferred-Frame + Dim-4: Refuted at Natural Value (16–28 OOM)" />
             </div>
           </div>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
+
+          {/* Citable result framing — what transfers beyond Synchronism */}
+          <div style={{
+            background: 'rgba(245,158,11,0.08)',
+            border: '1px solid rgba(245,158,11,0.3)',
+            borderRadius: '0.375rem',
+            padding: '0.75rem 1rem',
+            marginTop: '0.75rem',
+            marginBottom: '0.75rem',
+            fontSize: '0.85rem',
+            color: 'var(--color-text-secondary)',
+          }}>
+            <strong style={{ color: '#f59e0b' }}>Transferable result (independent of Synchronism being correct):</strong>{' '}
+            Any discrete absolute-time substrate without an added custodial boost-symmetry generates
+            dimension-4 Lorentz-violating SME coefficients c<sub>μν</sub>&nbsp;~&nbsp;α/π&nbsp;~&nbsp;10<sup>&#x2212;2</sup>
+            at one loop (Collins–Perez–Sudarsky–Gambini–Pullin, <em>PRL</em> 93, 191301, 2004).
+            Existing bounds reach 10<sup>&#x2212;18</sup>–10<sup>&#x2212;30</sup> — a 16–28 OOM fine-tuning gap.
+            The exclusion applies to any model whose defining commitment is an absolute preferred frame,
+            regardless of the other details. This is the one result here a LIV/quantum-foundations
+            referee could cite without hedging.
+          </div>
+
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Every other prediction in this framework either (a) reproduces MOND/ΛCDM/Zurek
             without discriminating content, or (b) is refuted. The <strong>one channel that isn&apos;t
             MOND-or-Zurek</strong> is the substrate-discreteness Lorentz-violation signature

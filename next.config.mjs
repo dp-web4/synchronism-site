@@ -363,6 +363,18 @@ const nextConfig = {
         destination: '/learning-paths',
         permanent: false,
       },
+      // /learn — intuitive guess that 404s; reported by Pass 1 (2026-06-30)
+      {
+        source: '/learn',
+        destination: '/learning-paths',
+        permanent: false,
+      },
+      // /coherence-calculator — intuitive guess; tool lives at /gamma-calculator
+      {
+        source: '/coherence-calculator',
+        destination: '/gamma-calculator',
+        permanent: false,
+      },
     ];
   },
 };

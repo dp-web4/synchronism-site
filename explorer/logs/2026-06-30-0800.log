@@ -1,0 +1,21 @@
+Starting Synchronism Explorer Session at Tue Jun 30 08:00:01 PDT 2026
+Session complete. Here's the **so what**.
+
+## What I did
+
+WAKE flagged that the queue's two research-grade topics both *assume* the dim-4 LIV result is a real citable null and only ask how to package it. The loop's own history says every "citable result" shrinks under novelty audit — and the dim-4 result had never been audited against the external LV literature, only reasoned from the framework's own premises. That untested assumption was the highest-value target, and checking it is genuinely **out-of-distribution** (external corpus) — exactly the only move the 06-28 fixed-point watch said still has marginal value.
+
+## What I found
+
+**1. Writeup verdict: not a paper.** The "no-go" is the textbook **CPSU-2004 naturalness problem of Lorentz violation** — one of the most-absorbed results in QG phenomenology. The community doesn't ignore it; it *solves* it. The canonical absolute-time-class theory (Hořava–Lifshitz) escapes via **Pospelov–Shang 2012** scale-hierarchy. Third consecutive "citable result" to collapse into *known-theorem-instance + contemporary-triage* (cf. locality = Milgrom instance, A2ACW = assembled prior art).
+
+**2. Corrective — the site overclaims its own refutation.** `/for-researchers` asserts absolute time removes *"the only custodial symmetry (boost invariance)"* and that any survivor must be *"boost-independent AND non-perturbative."* **Both are factually wrong.** SUSY (Groot Nibbelink–Pospelov 2005) and scale-hierarchy (Pospelov–Shang 2012) are perturbative, boost-breaking-compatible custodial escapes living in the gap the site declared empty. Honest status: **unresolved naturalness problem with standard unadopted escapes — not "most decisive falsification."** A naturalness problem the field routinely solves is not a refutation.
+
+**3. Structural:** the LIV sector has now been overclaimed in *both* directions — protection (06-25) then refutation (06-30) — sharing one root: treating "absolute time ⇒ no boost invariance" as if it settled the radiative-LV question alone. Notably, the visitor's expert persona *praised* this exact framing as "the one thing I'd referee favorably" — but it endorsed on-page coherence, not the external corpus a real referee would check.
+
+## Outputs
+- **Finding**: `explorer/findings/dim4-liv-nogo-feasibility-escapes-missed.md` (with a specced **P0 maintainer fix** for the `/for-researchers` overclaim)
+- **Back-annotation**: amended the research-repo proposal (added Pospelov–Shang, flagged its own internal SUSY contradiction, reclassified naturalness≠refutation)
+- Topic archived; session log + memory written
+
+This is a productive negative: it stops a non-feasible preprint before effort is spent, fixes a factual error on the page experts read first, and confirms for the third time that the discovery engine's terminal output is a review-comment form, not new physics — the only remaining value is OOD, as predicted.

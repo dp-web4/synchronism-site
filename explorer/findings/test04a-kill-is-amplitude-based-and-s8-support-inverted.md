@@ -1,5 +1,7 @@
 # Finding: TEST-04a's Kill Is Amplitude-Based (Not Single-Bin), and the S₈ "Support" Has Inverted Under 2026 Lensing Data
 
+> **CORRECTION (2026-07-01):** This finding's claim that LRG1 fσ₈/fid = 1.16 is a "retracted transcription artifact" (a copy of the QSO bin) is **withdrawn**. The project's 2026-05-25 direct read of DESI 2024 V Table 9's rendered images (memory `project_desi_test04a_disfavored_verified`) found LRG1 = 1.16 and QSO = 1.16 are **both real published ratios**, and the "σ₈=0.835 ⇒ ratio 1.03" inference here conflated a z=0 amplitude with a z=0.51 growth-rate ratio. **The finding's central conclusion is unaffected and stands:** the load-bearing kill is amplitude-based (combined σ₈ = 0.841 vs 0.76 = 2.4σ), robust to the per-bin scatter; LRG1 = 1.16 is a real ~1.2σ single-bin fluctuation, not the ensemble signal (DESI growth index γ = 0.58 ± 0.11 > GR 0.545 leans mild suppression). See `test04a-direction-reframe-is-an-overclaim-growth-index-favors-suppression.md`.
+
 ## Origin
 Triggered by the 2026-06-24 visitor Pass 4 (researcher) critique + the maintainer proposal filed the same morning (`Synchronism/Research/proposals/test04a_desi_dr2_readjudication.md`). Closes the queued topic `session102-sigma8-postdiction-audit.md` and informs `post-test04a-dark-matter-posture.md`. Self-directed re-execution per the loop's standing lesson: **verify the datum, not the narrative.**
 

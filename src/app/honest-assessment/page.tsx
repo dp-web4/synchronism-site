@@ -117,7 +117,7 @@ export default function HonestAssessment() {
           fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 — <em>above</em> the ΛCDM fiducial; combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10).
           Synchronism predicted σ₈&nbsp;≈&nbsp;0.76; actual 0.841 → <strong>2.4σ tension</strong>.
           <strong>Kill criterion triggered</strong> (fσ₈&nbsp;&gt;&nbsp;0.46 required; LRG1 actual fσ₈&nbsp;&asymp;&nbsp;1.16&times;fid&nbsp;&gg;&nbsp;0.46).
-          Verdict: <strong>post-hoc retrodiction — disfavored ~2σ; suppression not observed; data ΛCDM-consistent.</strong>
+          Verdict: <strong>post-hoc retrodiction — wrong direction (enhancement observed, suppression predicted); disfavored ~2σ; data ΛCDM-consistent.</strong> The direction failure is the load-bearing constraint; the ~2σ significance is a secondary corroboration.
           Note: a 2026-05-25 &ldquo;correction&rdquo; that claimed fσ₈&nbsp;≈&nbsp;0.45 was itself an error — that value belongs to arXiv:2512.03230
           (DESI Peculiar Velocity Survey, z&asymp;0.07), misattributed to the z=0.51 full-shape slot. The &ldquo;mechanism-class
           transferable contribution&rdquo; characterization is not restored — it was an overstatement of a post-hoc test.
@@ -337,8 +337,8 @@ export default function HonestAssessment() {
 
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>TEST-04a: DESI RSD fσ₈ — Post-hoc Retrodiction, Disfavored ~2σ (Corrected 2026-05-26)</h3>
-              <ValidationBadge status="failed" label="Disfavored ~2σ — Kill Criterion Triggered" />
+              <h3>TEST-04a: DESI RSD fσ₈ — Post-hoc Retrodiction, Wrong Direction (Corrected 2026-05-26)</h3>
+              <ValidationBadge status="failed" label="Wrong Direction (Enhancement, Not Suppression) — Kill Criterion Triggered" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               <strong>The fundamental failure is directional (sign-wrong), independent of bin choice:</strong> the

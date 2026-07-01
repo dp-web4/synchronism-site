@@ -133,6 +133,10 @@ export default function ParameterDerivations() {
               </ol>
               Verdict: A-from-Jeans is <strong>not</strong> an independent first-principles derivation under any reading.
               The framework has zero first-principles predictions with an independent derivation.
+              <strong>Which scaling is the framework&apos;s stated position?</strong> ρ<sub>crit</sub> ∝ V² (equations.ts:23, used site-wide).
+              The 0.0294 computation used ρ<sub>crit</sub> ∝ V<sup>0.5</sup> — inconsistent with the stated framework.
+              Both are documented as separate failures: the V<sup>0.5</sup> derivation contradicts the site&apos;s own equations; the stated V² formula gives A ≈ 4.6×10⁻⁵, 600× off.
+              The number 0.0294 is a flagged inconsistency (number detached from its derivation), not a rounding error.
               Finding: <code>a-from-jeans-chain-of-custody-failure.md</code>; back-annotation:
               <code>a_from_jeans_chain_of_custody_closure.md</code> (Synchronism Research repo, 2026-06-07).
             </div>

@@ -242,6 +242,12 @@ export default function TwoReframes() {
             quantitative predictions. The analogy is compelling; the formalization is incomplete.
             The mapping table above is conceptual, not derived.
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.75rem', marginBottom: 0, fontSize: '0.85rem' }}>
+            <strong>One quantitative foothold:</strong> the decoherence decay rate Γ = γ²(1−c), where c(d) = cos²(πd/λ₀), is the Palma–Suominen–Ekert 1996 correlated-dephasing variance (spin-boson / collective-dephasing physics, <em>Proc. R. Soc. A</em> 452, 567–584). This equation and its attribution appear on the{' '}
+            <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims page</Link>{' '}
+            — not here — because the CRT framing is analogy-only and does not yet connect to this result quantitatively.
+            A physicist arriving at this page sees only metaphors; the PSE-1996 connection is one level deeper.
+          </p>
         </div>
 
         {/* ===================== PENDULUM CLOCK ===================== */}

@@ -41,7 +41,7 @@ const coreTools = [
   {
     title: 'Phase Boundary Visualizer',
     href: '/phase-boundary-visualizer',
-    desc: 'Drag the γ slider and see where familiar systems (ideal gas, water, BCS superconductor, galaxies) sit along the coherence axis. Note: the tool shows the γ dimension only; a full γ–ρ phase diagram is not yet implemented.',
+    desc: 'Drag the γ slider and see where familiar systems (ideal gas, water, BCS superconductor, galaxies) sit along the γ axis (transition sharpness). Note: the axis here is γ, not coherence C — coherence also depends on ρ. A full γ–ρ phase diagram is not yet implemented.',
     tags: ['Intermediate'],
     epistemic: 'core' as EpistemicStatus,
   },

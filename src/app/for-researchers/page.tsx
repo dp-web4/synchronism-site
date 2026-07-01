@@ -85,7 +85,7 @@ export default function ForResearchers() {
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #ef4444' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.1rem' }}>Secondary: the DESI growth-suppression negative (mechanism-class)</h2>
-            <ValidationBadge status="failed" label="Disfavored ~2σ — Post-hoc — Kill Criterion Triggered" />
+            <ValidationBadge status="failed" label="Wrong Direction (Enhancement, Not Suppression) — Post-hoc — Kill Criterion Triggered" />
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             TEST-04a predicted late-time growth suppression (f&#x03C3;&#x2088; &#x2248; 0.418 at z=0.51);
@@ -98,6 +98,12 @@ export default function ForResearchers() {
             disfavored box — a sign-level constraint on the coherence-damped suppression class, not
             just on this framework.
           </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem', marginBottom: '0.25rem' }}>
+            Currency: verdict anchored to DESI DR1 (arXiv:2411.12021) as of 2026-07-01.
+            DESI DR2 full-shape RSD fσ₈ at z≈0.5 has not been re-run against the kill criterion.
+            If DR2 full-shape reports fσ₈(z≈0.5) ≤ 0.46, the verdict unfreezes for re-adjudication;
+            any DR2 value above DR1&apos;s would deepen the disfavor, not relieve it.
+          </p>
           <Link href="/tier-1-existing" style={{ fontSize: '0.85rem' }}>TEST-04a full accounting &rarr;</Link>
         </div>
 
@@ -107,7 +113,7 @@ export default function ForResearchers() {
             <h2 style={{ margin: 0, fontSize: '1.1rem' }}>3. Dim-4 radiative LIV exclusion of absolute-time discrete substrates — a citable no-go</h2>
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
               <ValidationBadge status="untested" label="Time-of-Flight: Structurally Unreachable" />
-              <ValidationBadge status="audited-negative" label="Preferred-Frame + Dim-4: Refuted at Natural Value (16–28 OOM)" />
+              <ValidationBadge status="audited-negative" label="Preferred-Frame + Dim-4: Naturalness Gap (16–28 OOM; custodial escapes unexhibited)" />
             </div>
           </div>
 
@@ -128,16 +134,18 @@ export default function ForResearchers() {
             at one loop (Collins–Perez–Sudarsky–Gambini–Pullin, <em>PRL</em> 93, 191301, 2004).
             Existing bounds reach 10<sup>&#x2212;18</sup>–10<sup>&#x2212;30</sup> — a 16–28 OOM fine-tuning gap.
             The exclusion applies to any model whose defining commitment is an absolute preferred frame,
-            regardless of the other details. This is the one result here a LIV/quantum-foundations
-            referee could cite without hedging.
+            regardless of the other details. A LIV/quantum-foundations referee can cite this as a
+            naturalness problem — not a falsification. The distinction matters for the site&apos;s own
+            epistemic discipline: &ldquo;refuted&rdquo; is reserved for data contradictions; this is a severe
+            fine-tuning gap (matching the electroweak hierarchy problem in kind, if not in degree).
           </div>
 
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Every other prediction in this framework either (a) reproduces MOND/ΛCDM/Zurek
-            without discriminating content, or (b) is refuted. The <strong>one channel that isn&apos;t
+            without discriminating content, or (b) faces a decisive constraint. The <strong>one channel that isn&apos;t
             MOND-or-Zurek</strong> is the substrate-discreteness Lorentz-violation signature
-            (LIV). Its status has two faces — one that is genuinely unreachable, one that is
-            already constrained by existing experiments:
+            (LIV). Its status has two faces — one that is genuinely unreachable, one that carries
+            a severe naturalness gap under existing experiments:
           </p>
 
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.25rem' }}>
@@ -168,7 +176,7 @@ export default function ForResearchers() {
             </li>
           </ol>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600, marginBottom: '0.25rem' }}>
-            Face 2 — Preferred frame + dim-4: <strong>refuted at the natural radiative value</strong> (c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;10<sup>&#x2212;2</sup>, 16–28 OOM above bounds)
+            Face 2 — Preferred frame + dim-4: <strong>CPSU 2004 naturalness gap</strong> (c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;10<sup>&#x2212;2</sup> at one loop, 16–28 OOM above bounds; custodial escapes unexhibited)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             A discrete substrate with absolute time picks out a preferred (CMB-rest) frame. Preferred-frame
@@ -183,11 +191,11 @@ export default function ForResearchers() {
               (cavity Michelson–Morley rotating resonators) to ~10<sup>&#x2212;22</sup>–10<sup>&#x2212;29</sup>{' '}
               (Hughes–Drever clock-comparison experiments). These are tabulated annually in the{' '}
               <em>SME Data Tables</em> (Kostelecký &amp; Russell, <em>Rev. Mod. Phys.</em> 83, 11 (2011), updated 2024).
-              The framework's absolute-time / universal-clock commitment gives up the only custodial symmetry
-              (boost invariance) that could forbid radiative generation of this coefficient from the Planck
-              sector (Collins–Perez–Sudarsky–Gambini–Pullin, <em>PRL</em> 93, 191301 (2004)).
-              <strong> Verdict: refuted at the natural radiative value.</strong>{' '}
-              Computation (2026-06-26 explorer, Collins–Perez–Sudarsky–Gambini–Pullin 2004): tree-level c<sub>&#x03BC;&#x03BD;</sub>=0 by single-substrate universality (no species-dependent k² coefficient). But the one-loop radiative correction is UV-dominated and Planck-cutoff-independent: c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;&#x03B1;/&#x03C0;&nbsp;~&nbsp;10<sup>&#x2212;2</sup>–10<sup>&#x2212;3</sup>. Existing bounds: ≲10<sup>&#x2212;18</sup> (cavity MM), ≲10<sup>&#x2212;29</sup>–10<sup>&#x2212;30</sup> (nucleon comagnetometer). Fine-tuning gap: <strong>16–28 orders of magnitude</strong>. Absolute time removes the only custodial symmetry (boost invariance). SM-containing completion forces perturbative gauge couplings, defeating the strong-dynamics escape. Doubly-obstructed: the framework's defining ontological commitment is the source of its own exclusion.
+              The framework&apos;s absolute-time / universal-clock commitment gives up boost invariance —
+              the minimal custodial protector against radiative generation of this coefficient
+              (Collins–Perez–Sudarsky–Gambini–Pullin, <em>PRL</em> 93, 191301 (2004)).
+              <strong> Verdict: severe naturalness/fine-tuning gap (CPSU 2004).</strong>{' '}
+              Computation (2026-06-26 explorer): tree-level c<sub>&#x03BC;&#x03BD;</sub>=0 by single-substrate universality (no species-dependent k² coefficient at tree level). One-loop correction is UV-dominated and Planck-cutoff-independent: c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;&#x03B1;/&#x03C0;&nbsp;~&nbsp;10<sup>&#x2212;2</sup>–10<sup>&#x2212;3</sup>. Existing bounds: ≲10<sup>&#x2212;18</sup> (cavity MM), ≲10<sup>&#x2212;29</sup>–10<sup>&#x2212;30</sup> (nucleon comagnetometer). Fine-tuning gap: <strong>16–28 orders of magnitude</strong>. Two standard perturbative custodial escapes exist in the literature but are unexhibited in this framework: (1) <strong>SUSY</strong> (Groot Nibbelink &amp; Pospelov, <em>PRL</em> 94, 081601, 2005): forbids dim-3/4 LV operators entirely; (2) <strong>Anisotropic scale-hierarchy</strong> (Pospelov &amp; Shang, <em>PRD</em> 85, 105001, 2012): demonstrated for Hořava–Lifshitz gravity (the canonical absolute-time class) — separates the LV-generating scale from the electroweak scale via Λ_HL ≪ M_pl, suppressing SM-sector LV perturbatively without restoring boost invariance. The framework adopts neither: single-substrate universality is itself the obstacle to a Λ_HL ≪ M_pl scale separation. Status: <em>open custodial-mechanism gap, not a closed refutation.</em>
             </li>
             <li>
               <strong>Velocity-anisotropic phase-transition threshold (Phase-16, 2026-06-24).</strong>{' '}
@@ -200,18 +208,18 @@ export default function ForResearchers() {
             </li>
           </ul>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', fontStyle: 'italic', marginBottom: '0.25rem' }}>
-            These are two distinct LIV operators: Face 1 (dim≥5 dispersion, time-of-flight) and Face 2 (dim-4 SME c<sub>&#x03BC;&#x03BD;</sub>, preferred-frame). Reading the badges together &mdash; &ldquo;structurally unreachable&rdquo; and &ldquo;refuted at natural value&rdquo; &mdash; is not a contradiction. The protected channel cannot discriminate (non-unique, ~10<sup>7</sup> below reach); the discriminating channel is already excluded. The framework&apos;s absolute-time commitment is the source of both outcomes.
+            These are two distinct LIV operators: Face 1 (dim≥5 dispersion, time-of-flight) and Face 2 (dim-4 SME c<sub>&#x03BC;&#x03BD;</sub>, preferred-frame). Reading the badges together &mdash; &ldquo;structurally unreachable&rdquo; and &ldquo;naturalness gap&rdquo; &mdash; is not a contradiction. The protected channel cannot discriminate (non-unique, ~10<sup>7</sup> below reach); the preferred-frame channel carries a severe fine-tuning requirement. The framework&apos;s absolute-time commitment is the source of both.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Net:</strong> the time-of-flight face is symmetry-protected and unreachable (three locks stand).
-            The preferred-frame / dim-4 face is <strong>refuted at the natural radiative value</strong> (c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;10<sup>&#x2212;2</sup>, 16–28 OOM above existing bounds) — and it is the framework&apos;s defining commitment (absolute time) that causes the exclusion. This is the framework&apos;s only non-MOND, non-Zurek channel, and it falls on the <em>refutation</em> side. A survival path exists only with an unspecified, doubly-obstructed custodial UV mechanism.
+            The preferred-frame / dim-4 face carries a <strong>severe naturalness gap</strong> (c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;10<sup>&#x2212;2</sup>, 16–28 OOM above existing bounds; CPSU 2004) — and it is the framework&apos;s defining commitment (absolute time) that generates it. This is the framework&apos;s only non-MOND, non-Zurek channel. Standard perturbative escapes (SUSY, anisotropic scale-hierarchy) exist in the literature but are unexhibited in the framework; without one, the naturalness gap is unresolved.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             Research lineage: PREDICTIONS.md B7 / Phase-12 / Phase-13 / Phase-16 in the{' '}
             <a href="https://github.com/dp-web4/Synchronism" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}>
               Synchronism research archive
             </a>.{' '}
-            Dim-4 c<sub>μν</sub> coefficient computed (2026-06-26): radiative value ~10<sup>&#x2212;2</sup>, refuted by 16–28 OOM. For the framework to survive this channel, an unspecified UV mechanism that is simultaneously boost-symmetry-independent and non-perturbative must be exhibited. Absent that, this is the framework&apos;s most decisive falsification.
+            Dim-4 c<sub>μν</sub> coefficient computed (2026-06-26): radiative value ~10<sup>&#x2212;2</sup>, 16–28 OOM above existing bounds (CPSU 2004 naturalness problem, not a data-driven refutation). For the framework to survive this channel, an unexhibited custodial mechanism must be specified — known candidates are SUSY (Groot Nibbelink &amp; Pospelov 2005) and anisotropic scale-hierarchy (Pospelov &amp; Shang 2012, demonstrated for Hořava–Lifshitz). This is the framework&apos;s most severe naturalness constraint. Corrected framing per 2026-06-30 explorer audit: earlier versions mislabeled this &ldquo;refuted&rdquo; and &ldquo;doubly-obstructed&rdquo; — both overstatements corrected here.
           </p>
         </div>
 

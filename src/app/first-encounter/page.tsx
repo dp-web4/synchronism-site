@@ -155,10 +155,24 @@ export default function FirstEncounter() {
         <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8, whiteSpace: 'pre-line' }}>
           {current.content}
         </p>
+        {step === 1 && (
+          <div style={{ marginTop: '1rem', padding: '0.6rem 1rem', background: 'rgba(56,189,248,0.07)', borderRadius: '0.375rem', fontSize: '0.85rem' }}>
+            <strong>Try it: </strong>
+            <Link href="/coherence-explorer" style={{ color: 'var(--color-accent-blue)' }}>Coherence Explorer</Link>
+            {' '}— drag two sliders and watch C(ρ) change in real time. Best hands-on intro on the site.
+          </div>
+        )}
+        {step === 2 && (
+          <div style={{ marginTop: '1rem', padding: '0.6rem 1rem', background: 'rgba(56,189,248,0.07)', borderRadius: '0.375rem', fontSize: '0.85rem' }}>
+            <strong>Try it: </strong>
+            <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>γ Calculator</Link>
+            {' '}— click any preset (Ideal Gas, Water, BEC) to see γ and its regime.
+          </div>
+        )}
       </div>
 
       {/* Navigation */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3rem' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
         {step > 0 ? (
           <button
             className="btn-secondary"
@@ -169,9 +183,6 @@ export default function FirstEncounter() {
         ) : (
           <div />
         )}
-        <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)', fontSize: '0.85rem' }}>
-          Need an analogy first?
-        </Link>
         {step < steps.length - 1 ? (
           <button
             className="btn-primary"
@@ -184,6 +195,11 @@ export default function FirstEncounter() {
             Go Deeper &rarr;
           </Link>
         )}
+      </div>
+      <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+        <Link href="/two-reframes" style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
+          Prefer analogies to equations? Try Two Reframes (side trip — not part of this sequence) &rarr;
+        </Link>
       </div>
 
       <RelatedConcepts currentPath="/first-encounter" />

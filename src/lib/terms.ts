@@ -489,6 +489,20 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'The research archive was produced by 3,308 autonomous AI sessions. Each session is one unit of work: a derivation attempted, a claim stress-tested, a dataset analyzed. Site citations like "Session 107" point to the archive document with that number. Session count measures activity, not validity \u2014 the site\'s own audit found the number of sessions has no bearing on whether a result is correct (several headline numbers propagated for hundreds of sessions before anyone re-ran the underlying computation).',
     learnMore: '/research-philosophy',
   },
+  'LIV': {
+    term: 'LIV',
+    fullName: 'Lorentz Invariance Violation',
+    brief: 'Predicted deviation from exact Lorentz symmetry — any model with an absolute preferred frame inherits dimension-4 LIV operators radiatively (CPSU 2004 naturalness problem).',
+    explanation: 'Lorentz invariance is the symmetry of special relativity: physics looks the same in all inertial frames. Discrete-substrate models that commit to an absolute preferred frame (like Synchronism\'s absolute-time substrate) generate Lorentz-violating Standard Model Extension (SME) operators radiatively at one loop. The Collins–Perez–Sudarsky–Gambini–Pullin (CPSU 2004, PRL 93, 191301) result shows that the dimension-4 c_μν coefficient is generated at O(α/π) ~ 10⁻² — 16–28 orders of magnitude above existing experimental bounds (cavity Michelson–Morley, Hughes–Drever). This is a naturalness problem, not a falsification: perturbative escapes exist (SUSY, anisotropic scale-hierarchy) but have not been exhibited within the Synchronism framework. The dimension≥5 (time-of-flight) channel is structurally unreachable by three independent locks and is not the exposed sector.',
+    learnMore: '/for-researchers',
+  },
+  'SME': {
+    term: 'SME',
+    fullName: 'Standard Model Extension',
+    brief: 'A comprehensive effective field theory parameterizing all possible Lorentz- and CPT-violating operators — the standard framework for constraining LIV experimentally.',
+    explanation: 'The Standard Model Extension (Colladay & Kostelecký 1997, 1998) catalogs every renormalizable and non-renormalizable operator that could appear in an extension of the Standard Model that breaks Lorentz invariance or CPT. Experimental bounds on SME coefficients (tabulated annually in the SME Data Tables, Kostelecký & Russell, Rev. Mod. Phys. 83, 2011) constrain these operators across atomic, nuclear, photon, and gravitational tests. The c_μν coefficients relevant to Synchronism\'s preferred-frame sector are bounded at |c_μν| ≲ 10⁻¹⁸–10⁻³⁰ by cavity and clock-comparison experiments.',
+    learnMore: '/for-researchers',
+  },
   'tier': {
     term: 'Tier (test classification)',
     fullName: 'Tier 1 / Tier 2 \u2014 Test Tiers',

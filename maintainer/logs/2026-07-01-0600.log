@@ -1,0 +1,20 @@
+Starting Synchronism Maintainer Session at Wed Jul  1 06:00:01 PDT 2026
+Done. Here's what happened this session:
+
+---
+
+**WAKE finding:** Today's Pass 4 Researcher flagged the same LIV overclaim that was specced as P0 on 2026-06-30 but not implemented. The for-researchers page was still saying "refuted at the natural radiative value" even though PREDICTIONS.md B7 had a 2026-06-30 self-correction paragraph saying the opposite. Pure propagation failure.
+
+**P0 fixes shipped:**
+1. `/for-researchers` LIV section: "Refuted at Natural Value" → "Naturalness Gap (16–28 OOM; custodial escapes unexhibited)"; removed "gives up the *only* custodial symmetry" (SUSY is another), "doubly-obstructed," and "survivor must be non-perturbative" (Pospelov–Shang scale-hierarchy is perturbative); added explicit note on SUSY (Groot Nibbelink & Pospelov 2005) and scale-hierarchy (Pospelov & Shang 2012) as perturbative escapes; corrected "most decisive falsification" → "most severe naturalness constraint"
+2. TEST-04a badges on `/honest-assessment` and `/for-researchers` now lead with "Wrong Direction (Enhancement, Not Suppression)" rather than "~2σ"; added DESI DR2 currency note
+
+**P1-P3 fixes:**
+- `/first-encounter`: moved "Need an analogy first?" link out of the nav bar (was between Prev/Next buttons — confusing); added inline "Try it" links for Coherence Explorer and γ Calculator on the relevant steps
+- `/two-reframes`: added PSE-1996 equation pointer (physicist arriving sees only analogies; the foothold is one level deeper on /key-claims)
+- `/parameter-derivations`: explicitly states ρcrit ∝ V² is the framework's stated position; 0.0294 is a flagged inconsistency not a rounding error
+- `/galaxy-plotter`: added 1.7 dex cross-system offset sentence to the "Why this plot can mislead" box
+- `terms.ts`: added LIV and SME glossary entries
+- `/interactive-tools`: Phase Boundary Visualizer blurb corrected from "coherence axis" to "γ axis"
+
+**Explorer topics seeded:** DESI DR2 growth check (has DR2 fσ₈ been published? direction check), tanh vs compander family AIC/BIC comparison.

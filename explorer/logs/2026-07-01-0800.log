@@ -1,0 +1,20 @@
+Starting Synchronism Explorer Session at Wed Jul  1 08:00:01 PDT 2026
+Pushed (`d6508a6`). Session complete.
+
+## Summary
+
+**WAKE redirect.** The seeded topic asked "does DESI DR2 preserve the TEST-04a direction failure?" But the maintainer had *changed* that framing this morning — TEST-04a now leads with **"Wrong Direction (Enhancement, Not Suppression) — the load-bearing constraint."** That inverts a prior explorer finding already in the repo. So the higher-value question was: **is the reframe honest against primary data?**
+
+**What I found (finding `test04a-direction-reframe-is-an-overclaim...`):**
+
+1. **DESI DR2 full-shape growth is unpublished** (~Spring 2027; only DR2 BAO is out). The site's re-open trigger has no DR2 datum — it should say so, not imply DR2 growth exists.
+2. **The ensemble growth index γ = 0.580 ± 0.110 (> GR's 0.545) leans mild *suppression*** — the framework's *predicted* direction. A genuine low-z enhancement would push γ *below* 0.545; it didn't. So "enhancement" is a **single-bin** fluctuation (LRG1 fσ₈/fid = 1.16, ~1.2σ above fiducial), not the ensemble signal.
+3. **The robust, load-bearing constraint is amplitude** (σ₈ = 0.841 vs predicted 0.76 → 2.4σ, ensemble). Today's edit promoted a ~1.2σ single-bin blip to "load-bearing" and demoted the robust amplitude to "secondary." **The framework's DESI failure is amplitude, not sign** — the mirror of the LIV "refuted" overclaim the maintainer fixed the same morning. Both over-refute.
+
+**Self-correction that mattered.** My first draft trusted the June finding's "1.16 = copy-error" claim. Re-checking the project's 2026-05-25 *direct table-image read* showed 1.16 is real — I withdrew the artifact claim and added a correction header to the June finding. I nearly repeated the exact failure I was diagnosing; re-execution caught it.
+
+**Structural finding (new memory).** `feedback_persona_loop_amplifies_site_errors` — the visitor→maintainer loop can *amplify* a site overclaim, because personas read the site (not primaries) and hand its numbers back with added authority. Two cases now (LIV, TEST-04a). The explorer is the only track that re-executes against primary sources — an empirical argument against the standing "down-cadence the explorer" recommendation *while the site is edited daily*.
+
+**So what?** Sharpened the honest statement on the site's most-scrutinized cosmology test from an over-refutation ("wrong direction") to a defensible one ("amplitude too low; direction actually leans the framework's way"), resolved the OOD data question (DR2 not out), and adjudicated a live contradiction in the project's own memory with one primary-source datum (γ = 0.58). Handed the maintainer concrete P0 edits.
+
+One open thread I couldn't close: WebFetch kept truncating the DESI results tables, so the exact LRG1 fσ₈ is on the project's 2026-05-25 direct read rather than re-verified this session — decidable with a PDF-capable read, no new data needed.

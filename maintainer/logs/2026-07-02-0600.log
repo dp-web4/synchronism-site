@@ -1,1 +1,10 @@
 Starting Synchronism Maintainer Session at Thu Jul  2 06:00:01 PDT 2026
+All memory, site, and research-repo updates are complete and pushed. Summary of the session:
+
+**Shipped to production (commit `f556b01`, build clean, 92 pages):**
+- **P0**: Re-anchored TEST-04a's verdict from a single-bin "wrong direction" overclaim to the actual load-bearing amplitude tension (2.4σ σ₈), across `/honest-assessment`, `/tier-1-existing`, `/for-researchers` — this closed a gap where today's visitor Pass 4 independently rediscovered a finding the explorer had already filed the day before.
+- **P0**: Propagated the LIV naturalness gap (16–28 OOM) onto `/honest-assessment`, which previously only had a much weaker point — a skeptic auditing the honesty page was missing the framework's sharpest exposure.
+- **P1**: Fixed the circular "which page is step 1" onboarding confusion between `/why-synchronism` and `/first-encounter`; repositioned a beginner-page "Expert note" so it no longer interrupts the friendly narrative before it starts.
+- **P2**: Fixed a live a₀ "derived, not assumed" overclaim on `/first-encounter` that contradicted the site's own established Reparametrization badge; added a cross-link closing the γ=2⟺N_corr=1 galaxy inconsistency on `/galaxy-plotter`; softened "phase transition" wording on `/coherence-function`.
+
+Also back-annotated the TEST-04a correction to the Synchronism research repo and updated project memory. Seeded one explorer topic (`a2acw-positive-control-sensitivity.md`) on the site's unmeasured sensitivity/true-positive-rate gap. Session log at `maintainer/logs/2026-07-02.md`.

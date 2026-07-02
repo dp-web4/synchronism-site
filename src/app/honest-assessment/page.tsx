@@ -337,21 +337,24 @@ export default function HonestAssessment() {
 
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>TEST-04a: DESI RSD fσ₈ — Post-hoc Retrodiction, Wrong Direction (Corrected 2026-05-26)</h3>
-              <ValidationBadge status="failed" label="Wrong Direction (Enhancement, Not Suppression) — Kill Criterion Triggered" />
+              <h3>TEST-04a: DESI RSD fσ₈ — Post-hoc Retrodiction, Disfavored on Amplitude (Reframed 2026-07-02)</h3>
+              <ValidationBadge status="failed" label="Disfavored 2.4σ — σ₈ Amplitude — Post-hoc — Kill Criterion Triggered" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              <strong>The fundamental failure is directional (sign-wrong), independent of bin choice:</strong> the
-              prediction was a <em>suppression</em> of structure growth (fσ₈ below ΛCDM), and DESI sees growth at or
-              <em> above</em> ΛCDM. A suppression model that lands above the fiducial is sign-wrong regardless of
-              which bin you look at. The 2.4σ tension follows from this directional reversal, not the other way around.
+              <strong>The load-bearing constraint is amplitude, not direction.</strong> Session 107 (Dec 2025)
+              predicted σ₈&nbsp;≈&nbsp;0.76 (calibrated to the then-live S₈ lensing tension). DESI DR1 full-shape
+              (arXiv:2411.12021) combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10) — a <strong>2.4σ</strong> tension.
+              That tension is robust regardless of which single bin is inspected.
             </p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Session 107 (Dec 2025) predicted fσ₈(z=0.51)&nbsp;≈&nbsp;0.418 — a 12% suppression below ΛCDM (0.474).
-              <strong> DESI DR1 full-shape (arXiv:2411.12021):</strong> LRG1 (z_eff=0.51)
-              fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 — above the ΛCDM fiducial.
-              Combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10). Synchronism predicted σ₈&nbsp;≈&nbsp;0.76.
-              Tension: <strong>2.4σ</strong>. Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) triggered.
+              <strong>The single-bin &ldquo;enhancement&rdquo; reading is a qualified, not load-bearing, finding.</strong>{' '}
+              LRG1 (z_eff=0.51) fσ₈/(fσ₈)<sub>fid</sub>&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 — growth above the ΛCDM fiducial
+              in that one bin (~1.2σ). But the DESI DR1 full-shape RSD <em>ensemble</em> growth index
+              γ<sub>growth</sub>&nbsp;≈&nbsp;0.58&nbsp;±&nbsp;0.11, <strong>above</strong> GR&apos;s 0.545 — which leans mildly
+              toward <em>suppression</em>, the framework&apos;s own predicted direction. Reading LRG1 alone as
+              &ldquo;sign-wrong regardless of which bin&rdquo; over-reads a single ~1.2σ bin against an ensemble that
+              trends the other way. (Corrected 2026-07-02: a 2026-07-01 explorer re-execution and an independent
+              2026-07-02 visitor Pass&nbsp;4 researcher read both flagged the same overclaim.)
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Two aspects of the honest verdict:</strong> (1) <em>Post-hoc origin — doubly so</em> — Session 107 was committed
@@ -359,18 +362,20 @@ export default function HonestAssessment() {
               No prospective prediction registered. Additional layer: the S₈ tension itself is receding —
               DES Y3 6×2pt and KiDS-Legacy (2024–2025) reanalyses have pulled S₈ back toward Planck,
               so the calibration anchor was a transient observational state, not a stable target.
-              This makes TEST-04a post-hoc against a moving baseline. (2) <em>Disfavored ~2σ, wrong direction</em>
-              — suppression not observed; data is ΛCDM-consistent or mildly above. A 2026-05-25 &ldquo;correction&rdquo;
+              This makes TEST-04a post-hoc against a moving baseline. (2) <em>Disfavored 2.4σ on amplitude</em>
+              — the σ₈≈0.76 prediction sits 2.4σ below the DESI DR1 combined fit; this is the durable kill.
+              A 2026-05-25 &ldquo;correction&rdquo;
               that claimed kill not triggered was itself an error: 0.4497&nbsp;±&nbsp;0.0548 belongs to arXiv:2512.03230
               (DESI Peculiar Velocity Survey, z&asymp;0.07) misattributed to the z=0.51 full-shape slot.
               The &ldquo;mechanism-class transferable contribution&rdquo; is NOT restored — it was an overstatement.
               <strong>Context (2026-05-23):</strong> EFTofLSS analyses (Cabass, Simonović, Zaldarriaga et al. 2024-2025)
               explain DESI DR1 fσ₈ within ΛCDM at 1-2σ via one-loop counterterms.
-              <strong>Calibration note (2026-06-24):</strong> the kill fires on LRG1 alone — one bin,
-              one redshift, ~2.15σ. Standard practice treats a kill as ≥3σ or multi-bin consistent.
-              The sign-failure (suppression predicted, enhancement observed) is the load-bearing constraint;
-              the specific tension level should be re-adjudicated against DESI DR2 full-shape
-              (all bins, full redshift range) before the "Kill Criterion Triggered" label is treated as definitive.
+              <strong>Calibration note (2026-06-24):</strong> the kill fires on LRG1 alone at ~2.15σ if read as a
+              single-bin sign test — standard practice treats that as sub-threshold. The amplitude tension (2.4σ,
+              ensemble σ₈) is what carries the &ldquo;Kill Criterion Triggered&rdquo; label, not the single-bin direction.
+              <strong>Currency (2026-07-02):</strong> DESI DR2 full-shape growth (fσ₈) constraints are not yet
+              published (expected ~Spring 2027); this verdict is frozen at DR1. The re-open policy below is
+              unaffected — no DR2 growth datum exists yet to trigger it.
             </p>
             <div style={{ background: 'rgba(56,189,248,0.06)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
               <strong style={{ color: 'var(--color-accent-blue)' }}>What this rules out beyond Synchronism:</strong>{' '}
@@ -489,15 +494,34 @@ export default function HonestAssessment() {
             </p>
           </div>
 
-          <div className="card">
+          <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>Lorentz Invariance Logical Gap</h3>
-              <ValidationBadge status="untested" label="Gap Identified" />
+              <h3>Lorentz Invariance: Preferred-Frame + Dim-4 Naturalness Gap (Added 2026-07-02)</h3>
+              <ValidationBadge status="audited-negative" label="Naturalness Gap: 16–28 OOM; custodial escapes unexhibited" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Parallel update eliminates scan-axis preference, but no discrete 3D lattice has continuous
-              rotational symmetry SO(3). &ldquo;No preferred direction&rdquo; does not imply &ldquo;full Lorentz invariance.&rdquo;
-              Grid geometry must be specified.
+              The framework&apos;s defining commitment — a discrete substrate with absolute time — generates a
+              preferred rest frame. Two computed consequences: (1) no discrete 3D lattice has continuous
+              rotational symmetry SO(3); &ldquo;no preferred scan-axis&rdquo; does not imply &ldquo;full Lorentz invariance,&rdquo;
+              and grid geometry is unspecified. (2) The sharper result (2026-06-26 computation): the dim-4
+              SME Lorentz-violating coefficient c<sub>μν</sub> is <strong>not</strong> Planck-suppressed here —
+              tree-level c<sub>μν</sub>&nbsp;=&nbsp;0 by single-substrate universality, but the one-loop radiative
+              correction is UV-dominated and Planck-cutoff-independent: c<sub>μν</sub>&nbsp;~&nbsp;α/π&nbsp;~&nbsp;10<sup>−2</sup>.
+              Existing cavity and nucleon-comagnetometer bounds reach 10<sup>−18</sup>–10<sup>−30</sup> — a
+              <strong> 16–28 order-of-magnitude fine-tuning gap</strong> (a CPSU 2004 naturalness problem, not a
+              data-driven refutation). Two standard perturbative escapes exist in the literature (SUSY —
+              Groot Nibbelink &amp; Pospelov 2005; anisotropic scale-hierarchy — Pospelov &amp; Shang 2012, demonstrated
+              for Hořava-class absolute-time gravity) but neither is exhibited in this framework; single-substrate
+              universality is itself the obstacle to adopting the scale-hierarchy route. Status: open custodial-mechanism
+              gap, not a closed refutation — this is the framework&apos;s most severe naturalness constraint and its
+              only non-MOND, non-Zurek falsification channel.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              A separate, structurally protected LIV channel (time-of-flight dispersion, dim≥5) is <em>not</em>
+              affected by this gap — even-k lattice symmetry forbids the linear term, and the surviving quadratic
+              term sits ~10<sup>7</sup> below current LHAASO reach and is non-unique to this framework (shared with
+              LQG/causal-set models). Full three-lock argument and both LIV faces:{' '}
+              <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers &rarr;</Link>.
             </p>
           </div>
 

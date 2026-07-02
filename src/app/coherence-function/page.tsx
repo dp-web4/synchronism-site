@@ -107,9 +107,10 @@ export default function CoherenceFunction() {
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           <strong>Saturation note:</strong> At &#x03B3; = 2, C(&#x03C1;) saturates within ~1 decade of &#x03C1;<sub>crit</sub>
-          (C(10&#x00B7;&#x03C1;<sub>crit</sub>) &#x2248; 0.9999). The coherence transition is sharp — more like a
-          phase transition than a smooth interpolation. Each system has its own &#x03C1;<sub>crit</sub>, so what is
-          universal is the <em>form</em> of the crossover, not its location.
+          (C(10&#x00B7;&#x03C1;<sub>crit</sub>) &#x2248; 0.9999). The coherence transition is a sharp but smooth
+          saturation (a companding curve) — analytic, with no non-analyticity or critical exponents, so
+          &ldquo;phase transition&rdquo; is a loose description, not a literal one. Each system has its own
+          &#x03C1;<sub>crit</sub>, so what is universal is the <em>form</em> of the crossover, not its location.
         </p>
 
         <h3>3. Why log?</h3>

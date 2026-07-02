@@ -25,9 +25,9 @@ export default function RootLayout({
           <nav className="nav-links" aria-label="Main navigation">
             <SiteSearch />
             <Link
-              href="/first-encounter"
+              href="/why-synchronism"
               style={{ color: 'var(--color-accent-blue)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: 600 }}
-              title="New here? Start with First Encounter"
+              title="New here? Start with Why Synchronism? — step 1 of the Beginner Path"
             >
               Start Here
             </Link>
@@ -37,13 +37,6 @@ export default function RootLayout({
               title="Choose your journey: Physics, Chemistry, Philosophy, or All"
             >
               Learning Paths
-            </Link>
-            <Link
-              href="/why-synchronism"
-              style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
-              title="The question behind the framework"
-            >
-              Why Synchronism?
             </Link>
             <Link
               href="/tier-1-existing"

@@ -38,9 +38,10 @@ const steps = [
     title: 'Scale Up: Galaxies',
     content: `Apply the same equation to galaxies. Stars in a galaxy are individual uncorrelated
     classical particles (N_corr = 1, γ = 2). The critical density ρ_crit = A × V_flat² connects
-    to rotation velocity. What emerges? MOND's acceleration constant a₀ = cH₀/(2π) —
-    derived, not assumed.`,
-    highlight: 'a₀ emerges from C(ρ)',
+    to rotation velocity. MOND's acceleration constant a₀ = cH₀/(2π) falls out of the same constants —
+    but this is a dimensional coincidence (the only scale buildable from c and H₀), not a first-principles
+    derivation; the 2π is unexplained and the match is off by ~10%. See Honest Assessment.`,
+    highlight: 'a₀ ≈ cH₀/(2π): a coincidence, not a derivation',
   },
   {
     title: 'Scale Down: Quantum Measurement',
@@ -69,6 +70,10 @@ export default function FirstEncounter() {
       <Breadcrumbs currentPath="/first-encounter" />
 
       <h1>First Encounter</h1>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
+        Beginner Path — Step 2 of 6 &nbsp;(&larr;{' '}
+        <Link href="/why-synchronism" style={{ color: 'var(--color-accent-blue)' }}>Prev: Why Synchronism?</Link>)
+      </p>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
         A guided walk through the core ideas. No prerequisites needed.
       </p>
@@ -87,12 +92,6 @@ export default function FirstEncounter() {
           Sparse gas drifting between stars: low coherence.
           Synchronism asks whether <em>one equation</em> can quantify this transition across all of physics.
         </p>
-        <details style={{ marginTop: '0.5rem' }}>
-          <summary style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', cursor: 'pointer' }}>Expert note (physicist terminology)</summary>
-          <span style={{ display: 'block', marginTop: '0.35rem', fontSize: '0.8em', color: 'rgba(239,68,68,0.8)' }}>
-            BEC/superconductors land at <em>low</em> γ (≈6×10⁻⁴ for BCS) because large N<sub>corr</sub> sits in the denominator: γ = 2/√N<sub>corr</sub>. A very small γ means a nearly flat S-curve — so C stays close to 0 at any physically accessible density, despite these systems being quantum-coherent. This is a documented inversion in the framework (see γ Calculator caveats): the formula assigns the flattest curves to the most-correlated systems, opposite to what real phase transitions do.
-          </span>
-        </details>
       </div>
 
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
@@ -156,11 +155,19 @@ export default function FirstEncounter() {
           {current.content}
         </p>
         {step === 1 && (
-          <div style={{ marginTop: '1rem', padding: '0.6rem 1rem', background: 'rgba(56,189,248,0.07)', borderRadius: '0.375rem', fontSize: '0.85rem' }}>
-            <strong>Try it: </strong>
-            <Link href="/coherence-explorer" style={{ color: 'var(--color-accent-blue)' }}>Coherence Explorer</Link>
-            {' '}— drag two sliders and watch C(ρ) change in real time. Best hands-on intro on the site.
-          </div>
+          <>
+            <div style={{ marginTop: '1rem', padding: '0.6rem 1rem', background: 'rgba(56,189,248,0.07)', borderRadius: '0.375rem', fontSize: '0.85rem' }}>
+              <strong>Try it: </strong>
+              <Link href="/coherence-explorer" style={{ color: 'var(--color-accent-blue)' }}>Coherence Explorer</Link>
+              {' '}— drag two sliders and watch C(ρ) change in real time. Best hands-on intro on the site.
+            </div>
+            <details style={{ marginTop: '0.75rem' }}>
+              <summary style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', cursor: 'pointer' }}>Expert note (physicist terminology)</summary>
+              <span style={{ display: 'block', marginTop: '0.35rem', fontSize: '0.8em', color: 'rgba(239,68,68,0.8)' }}>
+                BEC/superconductors land at <em>low</em> γ (≈6×10⁻⁴ for BCS) because large N<sub>corr</sub> sits in the denominator: γ = 2/√N<sub>corr</sub>. A very small γ means a nearly flat S-curve — so C stays close to 0 at any physically accessible density, despite these systems being quantum-coherent. This is a documented inversion in the framework (see γ Calculator caveats): the formula assigns the flattest curves to the most-correlated systems, opposite to what real phase transitions do.
+              </span>
+            </details>
+          </>
         )}
         {step === 2 && (
           <div style={{ marginTop: '1rem', padding: '0.6rem 1rem', background: 'rgba(56,189,248,0.07)', borderRadius: '0.375rem', fontSize: '0.85rem' }}>

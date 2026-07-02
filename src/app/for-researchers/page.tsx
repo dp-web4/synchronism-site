@@ -85,22 +85,28 @@ export default function ForResearchers() {
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #ef4444' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.1rem' }}>Secondary: the DESI growth-suppression negative (mechanism-class)</h2>
-            <ValidationBadge status="failed" label="Wrong Direction (Enhancement, Not Suppression) — Post-hoc — Kill Criterion Triggered" />
+            <ValidationBadge status="failed" label="Disfavored 2.4σ — σ₈ Amplitude — Post-hoc — Kill Criterion Triggered" />
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
-            TEST-04a predicted late-time growth suppression (f&#x03C3;&#x2088; &#x2248; 0.418 at z=0.51);
-            DESI DR1 full-shape measures enhancement (LRG1 ratio 1.16&plusmn;0.13 above fiducial,
-            single bin LRG1 z=0.51, ~2.15&#x03C3;). Caveats first: the prediction was <strong>post-hoc</strong>
+            TEST-04a predicted &#x03C3;&#x2088;&nbsp;&#x2248;&nbsp;0.76 (calibrated to the then-live S8 lensing tension);
+            DESI DR1 full-shape combined &#x03C3;&#x2088;&nbsp;=&nbsp;0.841&plusmn;0.034 (Table 10) &mdash; a
+            <strong> 2.4&#x03C3;</strong> amplitude tension. That is the load-bearing kill. A single bin
+            (LRG1, z=0.51) also shows fσ₈ growth above fiducial (ratio 1.16&plusmn;0.13, ~1.2&#x03C3;), but the
+            DESI DR1 full-shape RSD <em>ensemble</em> growth index &#x03B3;<sub>growth</sub>&nbsp;&#x2248;&nbsp;0.58,
+            above GR&apos;s 0.545, which leans mildly toward suppression &mdash; the predicted direction.
+            Reading the single bin as &ldquo;wrong direction regardless of bin&rdquo; over-reads a ~1.2&#x03C3;
+            fluctuation against an ensemble that trends the other way (corrected 2026-07-02). Caveats first: the
+            prediction was <strong>post-hoc</strong>
             (&#x03C3;&#x2088; calibrated to the S8 lensing tension, which has since receded),
-            the kill fires on one bin at one redshift (not the full DESI ensemble), and the verdict
+            and the verdict
             is frozen at DR1 — re-adjudication against DESI DR2 full-shape is warranted. What
-            transfers: any framework whose mechanism damps late-time structure growth sits in the same
-            disfavored box — a sign-level constraint on the coherence-damped suppression class, not
-            just on this framework.
+            transfers: any framework whose mechanism damps late-time structure growth to match a receded S8
+            tension sits in the same disfavored box &mdash; an amplitude constraint on the coherence-damped
+            suppression class, not just on this framework.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem', marginBottom: '0.25rem' }}>
-            Currency: verdict anchored to DESI DR1 (arXiv:2411.12021) as of 2026-07-01.
-            DESI DR2 full-shape RSD fσ₈ at z≈0.5 has not been re-run against the kill criterion.
+            Currency: verdict anchored to DESI DR1 (arXiv:2411.12021) as of 2026-07-02.
+            DESI DR2 full-shape growth constraints are not yet published (expected ~Spring 2027).
             If DR2 full-shape reports fσ₈(z≈0.5) ≤ 0.46, the verdict unfreezes for re-adjudication;
             any DR2 value above DR1&apos;s would deepen the disfavor, not relieve it.
           </p>

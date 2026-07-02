@@ -10,6 +10,9 @@ export default function WhySynchronism() {
       <Breadcrumbs currentPath="/why-synchronism" />
 
       <h1>Why Synchronism?</h1>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
+        Beginner Path — Step 1 of 6
+      </p>
       <p className="hero-subtitle" style={{ marginBottom: '2rem' }}>
         Physics has a fragmentation problem. Synchronism asks whether one principle
         could connect what we currently treat as separate domains.
@@ -44,9 +47,9 @@ export default function WhySynchronism() {
           What if there&apos;s a single function that maps density to behavior across all scales?
         </blockquote>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          The picture to hold onto (the same one used on{' '}
-          <Link href="/first-encounter" style={{ color: 'var(--color-accent-blue)' }}>Start Here</Link>):
-          a crowd milling around a plaza behaves like independent individuals; a marching band
+          The picture to hold onto (you&apos;ll see it again on{' '}
+          <Link href="/first-encounter" style={{ color: 'var(--color-accent-blue)' }}>First Encounter</Link>,
+          the next step): a crowd milling around a plaza behaves like independent individuals; a marching band
           behaves like one organism. Synchronism&apos;s bet is that <em>how densely packed</em> the
           parts are is what moves a system from crowd-like to band-like &mdash; and that one
           dimmer-switch curve describes that shift everywhere, from electrons to galaxies.

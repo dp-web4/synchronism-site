@@ -111,8 +111,9 @@ cd "$PROJECT_DIR"
 git add explorer/logs/ explorer/findings/ explorer/topics/done/ 2>/dev/null || true
 if ! git diff --cached --quiet 2>/dev/null; then
     git commit -m "explorer: session $DATE" 2>/dev/null || true
-    PAT=$(grep GITHUB_PAT /mnt/c/exe/projects/ai-agents/.env 2>/dev/null | cut -d= -f2)
-    if [ -n "$PAT" ]; then
-        git push "https://dp-web4:${PAT}@github.com/dp-web4/synchronism-site.git" 2>/dev/null || true
+    if git push origin HEAD; then
+        echo "pushed $(git rev-parse --short HEAD)"
+    else
+        echo "ERROR: git push failed — check SSH key is loaded (ssh-add -l)" >&2
     fi
 fi

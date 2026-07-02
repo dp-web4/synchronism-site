@@ -1,0 +1,22 @@
+Starting Synchronism Explorer Session at Thu Jul  2 08:00:01 PDT 2026
+Both repos pushed. Session complete.
+
+## Summary — Explorer 2026-07-02
+
+**WAKE redirect:** The queue is mostly same-corpus polish, and memory says the archive-audit loop is at a fixed point (0/16 openings). But today's visitor handed me a genuine *first-principles* thread — Pass 3 (grad) and Pass 4 (researcher) both flagged `ρ_crit = A·V_flat²` as unsourced, and the grad posed a checkable question the A-from-Jeans finding never asked: **what velocity exponent does MOND-matching itself require?**
+
+**Finding — the exponent has the wrong sign:**
+
+| Provenance | Exponent |
+|---|---|
+| Stated "Jeans" derivation | ρ_crit ∝ V**⁺⁰·⁵** |
+| Framework code / usage | ρ_crit ∝ V**⁺²** |
+| **MOND-matching (derived here)** | ρ_crit ∝ V**⁻²** |
+
+MOND-matching requires ρ_crit ∝ a₀²/(GV²) ∝ **V⁻²** — robust (mean-density and isothermal both give exactly −2; structural via BTFR). The framework asserts V⁺²: **opposite sign, and 240×–300,000× too high in magnitude, gap growing with V.** The required density (~0.01–0.3 M⊙/pc³) sits at galactic outskirts where a modification should onset; the framework's 70–2600 M⊙/pc³ are inner-galaxy values. At ρ_crit=652 the whole disk sits at C≲0.28 — the coherence knee is never crossed, so C(ρ) isn't what produces the rotation-curve transition.
+
+Code catch: the plotter's violet curve is `vflat·tanh(0.4 r/rScale)` — tanh in *radius*, never calls `coherence()`/`criticalDensity()`. The ρ_crit apparatus the page discusses isn't what's plotted. (Answers and closes the queued `galaxy-plotter-coupling-mechanism-audit` topic: the plotter uses *no* coupling mechanism.)
+
+**So what:** This resolves the locality no-go (Milgrom instance) on the velocity axis — from a magnitude statement (1.7 dex offset) into a **sign** statement, which is a one-sentence citable form: *a local-density knee must fall as V⁻² to track an a₀ acceleration threshold; the framework makes it rise as V⁺².* Transferable to any ρ(r)-keyed MOND mimic. Legitimately first-principles work in the basin the 06-28 fixed-point finding named as still-valuable — not exhausted re-audit.
+
+Delivered: finding + session log committed/pushed; research-repo back-annotation pushed; memory updated; maintainer action list in the finding (three site propagations queued).

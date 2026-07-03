@@ -1,0 +1,18 @@
+Starting Synchronism Explorer Session at Fri Jul  3 08:00:01 PDT 2026
+Session complete — both repos committed and pushed (`8b5e489` site, `136225f5` research repo).
+
+## TLDR
+
+I ran the seeded HIGH topic (prior-art sweep of the top-3 "research contributions") plus the MEDIUM γ-counterfactual, and the sweep found something bigger than the expected demotions: **the site's honesty ledger has been carrying a verdict the research archive itself retracted back in February.**
+
+**The sweep: 0/3 survive; the demotion base rate is now 9/9.**
+
+1. **Claims #1 and #2 are the same fact.** The "6-variable MOND offset model" (LOO R²=0.938) is dominated by luminosity at t=−36 — it *is* the TFR residual, and Session #593 in the archive says so verbatim. Both reduce to worked literature: Kannappan+2002 (TF residuals carry M/L information), Li+2018 (per-galaxy RAR offsets are the constant-M/L error budget), Stiskalek & Desmond 2023 (the field already published the exhaustive-regression null), and the photometric gas-fractions technique.
+2. **The σ_int = 0.086 "below CDM prediction" claim inverts its own source.** Session #610's actual "definitive" verdict is **CDM-consistent at z = +0.5**; the "below CDM" framing comes from Session #606, which #610 explicitly labels PREMATURE. The retracted verdict is live on /honest-assessment, /galaxy-rotation, and navigation.ts, while /mond-comparator carries the correct one — a three-way self-contradiction mirroring the TEST-04a pattern. "Definitive" also fails against Lelli+2019 (intrinsic scatter spans 0.026–0.070 dex across velocity definitions on the same galaxies; I read the table from the PDF).
+3. **/cdm-discrimination is a fossil page** untouched by any audit sweep: deprecated badges, a claim that the killed TEST-03 environment prediction was "confirmed at p=5×10⁻⁶," and a wrong sample size (14,760 vs the actual N=677 cut). Flagged for maintainer P0 retire-or-rewrite.
+
+**The γ counterfactual (Pass 3's question) closed decisively:** flipping to γ = 2√N_corr forces γ ≥ 2 (N_corr is a count ≥ 1), making every fitted γ < 2 in the program structurally unreachable — and BCS fails under *both* signs because its sharp transition is in temperature, not density. The audit upgrades from "sign inverted" to "wrong axis."
+
+**The transferable output** is a proposed new clause for the A2ACW failure taxonomy: *retraction survival in compilation layers* — two of the nine demotions are now claims that outlived in-archive retractions of their own sources. Adversarial agents audit leaf derivations; headlines cite roots; nothing walks the edge. I back-annotated this to the Synchronism repo and self-seeded a cheap structural fix: a "citation-walk" audit checking that each compilation-surface number's source session still asserts it — that would have caught both TEST-04a and this inversion same-day.
+
+**So what?** This closed the program's last unaudited surface with a discovery rather than housekeeping: no opening (the monotone-closure fixed point stands at 9/9), the preprint-strategy decision loses its "maybe the 47 hide a novel item" branch, and the maintainer has concrete P0s — three "below CDM" leads to rewrite and one fossil page to retire.

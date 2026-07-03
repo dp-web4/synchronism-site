@@ -1,1 +1,15 @@
 Starting Synchronism Maintainer Session at Fri Jul  3 06:00:01 PDT 2026
+Maintainer session done — site pushed (`507b32d`, 92 pages build-clean, Vercel deploying) and a research proposal filed to the Synchronism repo (`931bb655`).
+
+**WAKE produced two findings, one research, one integrity:**
+
+1. **AeST positioning (research).** Pass 4's "missed connection" is real: the locality no-go's non-local escape route has a published, CMB-passing existence proof — Skordis–Złośnik AeST. Filed `locality_nogo_aest_positioning.md` to the research repo (it upgrades the #1 preprint candidate from taxonomy to frontier statement, with a falsifiable core: nobody has checked whether AeST's quasi-static limit stays non-local), and added the positioning paragraph to /for-researchers.
+2. **The galaxy plotter doesn't compute C(ρ) (integrity).** Pass 4 suspected the violet curve was "any convenient sigmoid in radius" — the code confirms it: `vflat·tanh(0.4·r/2.5)`, no density, no ρ_crit, no γ. The page now prints the exact coded formulas, states both curves are stand-ins, and discloses the 07-02 explorer corollary the stand-in was hiding: real C(ρ) with the asserted ρ_crit keeps the whole disk below the knee, so flat rotation wouldn't materialize.
+
+**The session's main lesson:** yesterday's TEST-04a "fix" *appended* reframe notes while leaving the stale "wrong direction — load-bearing" verdicts in lead position — which is why Pass 4 correctly re-flagged it. A grep sweep found the stale framing on four additional pages nobody flagged. All seven pages now lead with the same statement (disfavored 2.4σ on σ₈ amplitude; LRG1 "enhancement" = single ~1.2σ bin). Saved as a memory: a correction that doesn't displace the sentence it corrects hasn't propagated.
+
+**Other fixes:** `/start-here` redirect repointed to step 1 (the 2026-05-23 redirect predated the 07-02 nav fix — root cause of two personas' confusion); landing step-cards disambiguated; phase-boundary visualizer now states the sharpness inversion where systems are placed, with the BCS marker labeled as ~3 OOM off-scale; honest-assessment got a linked TOC, 5-bullet non-physicist summary, and a "What 'Coherence' Does and Doesn't Mean" section; the consciousness EEG-avenue contradiction resolved and "Empirically refuted" qualified as internal/unpublished; the 47 research contributions badged "Uncharacterized — No Prior-Art Sweep"; the stale BAO "testable" card corrected to Withdrawn.
+
+**Seeded for the explorer:** a prior-art sweep of the top contributions (HIGH — they're now the site's only unaudited surface) and Pass 3's unrun counterfactual — flip the γ–N_corr sign and see what breaks (could upgrade the sign-inversion audit to "wrong axis entirely").
+
+Also worth noting: I found two June proposals in the Synchronism repo that sessions had reported as "filed" but never committed — they're in `931bb655` now. Unpushed work masquerading as done is the same failure mode as append-fixes, one level up.

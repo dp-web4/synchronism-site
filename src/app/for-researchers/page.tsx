@@ -52,6 +52,18 @@ export default function ForResearchers() {
             MOND&apos;s acceleration or surface-density &Sigma; relations — <em>explicitly escapes</em>.
             This sorts proposals before fitting.
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Positioning against the relativistic completions (added 2026-07-03):</strong> the
+            non-local escape route this no-go identifies is not hypothetical — it is the one the
+            published relativistic MOND completions already take. AeST (Aether-Scalar-Tensor;
+            Skordis &amp; Z&#x0142;o&#x015B;nik, PRL 127, 161302 (2021)) reproduces MOND phenomenology
+            from non-local field structure <em>and</em> passes CMB and linear-LSS constraints — the
+            existence proof that the escape class is viable, modulo ongoing stability/ghost analyses
+            of that theory. Read together: the local-density shortcut is quantitatively dead (this
+            result); the surviving program is the AeST-class completions (the field&apos;s current
+            frontier). A referee evaluating any new &ldquo;density &rarr; gravity&rdquo; proposal can
+            use the triage above to decide which side of that line it falls on before fitting anything.
+          </p>
           <Link href="/honest-assessment" style={{ fontSize: '0.85rem' }}>Full closure documentation in Honest Assessment &rarr;</Link>
         </div>
 

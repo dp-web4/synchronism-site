@@ -273,7 +273,7 @@ export default function ResearchPhilosophy() {
           <h3 style={{ color: 'var(--color-accent-blue)', fontSize: '0.95rem', marginTop: 0 }}>The meta-finding: this pattern is the result</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
             The combined pattern across the full research arc is itself a publishable finding about
-            AI-generated science: <strong>every structurally novel commitment (TEST-04a disfavored ~2σ post-hoc,
+            AI-generated science: <strong>every structurally novel commitment (TEST-04a disfavored 2.4σ on σ₈ amplitude, post-hoc,
             critical exponents category-error, Bullet Cluster viscosity sign-reversed) has either failed
             or collapsed to non-discriminating; every surviving prediction is degenerate with MOND or standard QM</strong>.
             This is exactly what you would predict from a training-distribution filter operating on a
@@ -352,7 +352,8 @@ export default function ResearchPhilosophy() {
               rules out at 3σ. DESI DR1 full-shape (arXiv:2411.12021): LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13 — above ΛCDM fiducial;
               combined σ₈ = 0.841 ± 0.034 (Table 10). Kill criterion triggered (LRG1 actual ≫ 0.46).
               Tension: σ₈ 0.841 vs predicted 0.76 = 2.4σ. Post-hoc by 8+ months (DESI DR1 April 2024;
-              Session 107 committed December 2025). Verdict: disfavored ~2σ — suppression not observed.
+              Session 107 committed December 2025). Verdict: disfavored 2.4σ on σ₈ amplitude — the predicted
+              suppression is absent (the LRG1 &ldquo;enhancement&rdquo; is a single ~1.2σ bin, not load-bearing; reframed 2026-07-02).
               Note: 2026-05-25 &ldquo;correction&rdquo; that claimed kill not triggered was itself an error
               (misattributed arXiv:2512.03230 z≈0.07 PV value to z=0.51 full-shape slot).
               <strong>No replacement substituted.</strong>

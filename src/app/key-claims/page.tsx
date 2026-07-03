@@ -287,7 +287,7 @@ export default function KeyClaims() {
             the coherence function, chosen by the framework&apos;s internal convergence across 8
             Synchronism-based approaches &mdash; rather than fading smoothly across all coherence values.{' '}
             <span style={{ color: '#ef4444' }}>
-              That specific value has since been empirically refuted: the companion program{' '}
+              That specific value has since been refuted in internal (unpublished, publicly archived) analysis: the companion program{' '}
               <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
               (which began from this 0.50 seed) tested it against multi-model coherence data and rejected
               it at p&nbsp;&lt;&nbsp;0.0001, finding C&nbsp;&#x2248;&nbsp;0.64 &mdash; which was also rejected at p&nbsp;&lt;&nbsp;0.0001.

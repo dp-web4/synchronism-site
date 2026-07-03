@@ -180,6 +180,26 @@ export default function GalaxyPlotter() {
           </ul>
         </div>
 
+        <div style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.35)', borderRadius: '0.375rem', padding: '0.75rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#ef4444' }}>The actual formulas plotted (disclosure, 2026-07-03):</strong>{' '}
+          for a page badged Reparametrization, the formulas are the argument — so here they are, exactly as coded:
+          <div style={{ fontFamily: 'monospace', fontSize: '0.8rem', margin: '0.5rem 0', padding: '0.5rem 0.75rem', background: 'rgba(0,0,0,0.25)', borderRadius: '4px', overflowX: 'auto' }}>
+            v_baryon(r) = 0.6 &middot; V_flat &middot; &radic;(1 &minus; e^(&minus;r/r_s))<br />
+            Violet &ldquo;Synchronism&rdquo;: v(r) = &radic;(v_baryon&sup2; + [V_flat &middot; tanh(0.4&middot;r/r_s)]&sup2;), r_s = 2.5 kpc<br />
+            Green &ldquo;MOND&rdquo;: v(r) = &radic;(v_baryon&sup2; + [V_flat &middot; &radic;tanh(0.55&middot;r/r_s)]&sup2;), r_s = 2.5 kpc
+          </div>
+          Note what the violet curve is <strong>not</strong>: it is <em>not</em> C(&#x03C1;) = tanh(&#x03B3;&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub>+1))
+          evaluated on a measured density profile. The tanh takes <em>radius</em> as its argument, with hand-tuned
+          constants (0.4, 2.5 kpc) chosen to look right — no density profile, no &#x03C1;<sub>crit</sub>, and no &#x03B3;
+          appear in the computation. Likewise the green curve is a toy interpolation, not MOND&apos;s &#x03BC;-function
+          with a&#x2080;. Both are illustrative stand-ins for the qualitative shapes.
+          Why the stand-in matters (2026-07-02 audit): running the <em>real</em> C(&#x03C1;) on an exponential-disk
+          density profile with the framework&apos;s asserted &#x03C1;<sub>crit</sub> values keeps the entire disk at
+          C &#x2272; 0.28 — the curve never crosses its own knee, and the flat rotation the violet line shows
+          would not materialize. The radius-sigmoid stand-in silently hides that failure. This is the strongest
+          single piece of evidence on this page that the fit is a reparametrization rather than a mechanism.
+        </div>
+
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
           {galaxies.map((g, i) => (
             <button

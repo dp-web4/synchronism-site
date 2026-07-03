@@ -275,10 +275,13 @@ const nextConfig = {
         destination: '/why-synchronism',
         permanent: false,
       },
-      // /start-here — guessed by visitors seeing "Start Here" label in nav (2026-05-23 two personas)
+      // /start-here — guessed by visitors seeing "Start Here" label in nav (2026-05-23 two personas).
+      // 2026-07-03: repointed to /why-synchronism (Beginner Path step 1) to match the nav's Start Here
+      // target — previously landed on /first-encounter (step 2), so bookmark/typed-URL visitors entered
+      // the sequence a step late (Pass 1 "walked in a scene late"; Pass 2 root-caused it).
       {
         source: '/start-here',
-        destination: '/first-encounter',
+        destination: '/why-synchronism',
         permanent: false,
       },
       // /test-04a — headline empirical result (DESI fσ₈ sign reversal); no per-test page exists

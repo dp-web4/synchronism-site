@@ -47,9 +47,14 @@ export default function ConsciousnessDemo() {
           fontSize: '0.85rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: '#ef4444' }}>Empirically refuted (2026):</strong>{' '}
-          The C &#x2248; 0.50 threshold was tested against actual data in gnosis-research Session 63
-          and <strong>rejected at p &lt; 0.0001</strong>. The 8-approach convergence shown below is a
+          <strong style={{ color: '#ef4444' }}>Refuted in internal analysis (2026):</strong>{' '}
+          The C &#x2248; 0.50 threshold was tested against multi-model coherence data in{' '}
+          <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
+          Session 63 and <strong>rejected at p &lt; 0.0001</strong>. Scope note: this is an in-house
+          analysis by a companion program — publicly archived, but not externally reproduced or
+          peer-reviewed, and there is no external dataset behind the p-value. It refutes the threshold{' '}
+          <em>as the framework defined it</em>; treat it with the same caution as any single unreplicated result.
+          The 8-approach convergence shown below is a
           geometric artifact, not an empirical finding — see details in the calibration caveat. This
           demo is retained as an illustration of <em>why</em> a geometric coincidence looked meaningful:
           any approach that picks the midpoint of a [0,1)-bounded output range will land near 0.50 by construction.

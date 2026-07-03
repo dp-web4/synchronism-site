@@ -90,10 +90,11 @@ export default function HonestAssessment() {
           is the contribution; the physics just provided the test case.
         </p>
         <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-          <strong>In plain language — what failed:</strong> The framework&apos;s biggest external test came out backwards —
+          <strong>In plain language — what failed:</strong> The framework&apos;s biggest external test missed —
           we predicted the universe&apos;s large-scale structure should be growing <em>slower</em> than
-          the standard model, but real data (DESI 2024) shows it growing at or <em>above</em> standard-model
-          rates (note: that particular test was post-hoc, not pre-registered). The galaxy transition-shape
+          the standard model, but real data (DESI 2024) shows no such suppression — the measured clumping
+          amplitude sits 2.4σ above the framework&apos;s prediction, consistent with the standard model
+          (note: that particular test was post-hoc, not pre-registered). The galaxy transition-shape
           test — the one non-degenerate discriminating test vs MOND — was run on 2,807 SPARC data
           points (175 galaxies) in May 2026 and collapsed the framework onto MOND (ΔBIC=+184 against the γ=2 version;
           free-γ = MOND). The predictions we thought were novel turned out to already exist in physics under
@@ -101,23 +102,53 @@ export default function HonestAssessment() {
           Zero parameters have an independent first-principles derivation — the last surviving candidate (A-from-Jeans) was closed as audited-negative on 2026-06-07: the Session 66 script produces A ≈ 4.6×10⁻⁵ (600× off the stated 0.029) under the framework&apos;s own ρ<sub>crit</sub> ∝ V² scaling.
           Scoreboard: <strong>0 confirmed, 0 prospective predictions tested, 6 reparametrizations, 1 galaxy-program closure, 0 independently-derived parameters</strong>.
         </p>
+        <div style={{ marginTop: '0.75rem' }}>
+          <strong style={{ color: 'var(--color-text-primary)', fontSize: '0.95rem' }}>What a non-physicist should take away:</strong>
+          <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0.5rem 0 0', paddingLeft: '1.25rem' }}>
+            <li>The one equation fits galaxy rotation — but only as well as MOND, an existing 40-year-old idea, and never better.</li>
+            <li>Its biggest cosmology prediction (slower growth of cosmic structure) missed: the measured amplitude is 2.4σ above what it predicted.</li>
+            <li>None of its numbers come from first principles — every parameter is fitted to data or simply asserted.</li>
+            <li>No currently proposed experiment can tell it apart from existing physics.</li>
+            <li>The real product is this audit itself: every failure documented, with the numbers, by the same project that made the claims.</li>
+          </ul>
+        </div>
       </div>
+
+      {/* Table of contents */}
+      <nav style={{ marginBottom: '2rem', maxWidth: '65ch', fontSize: '0.85rem' }} aria-label="Page contents">
+        <strong style={{ color: 'var(--color-text-secondary)' }}>On this page:</strong>{' '}
+        <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>The Verdict</a> &middot;{' '}
+        <a href="#coherence-meaning" style={{ color: 'var(--color-accent-blue)' }}>What &ldquo;Coherence&rdquo; Means Here</a> &middot;{' '}
+        <a href="#what-was-tested" style={{ color: 'var(--color-accent-blue)' }}>What Was Tested</a> &middot;{' '}
+        <a href="#what-failed" style={{ color: 'var(--color-accent-blue)' }}>What Failed</a> &middot;{' '}
+        <a href="#structural-tensions" style={{ color: 'var(--color-accent-blue)' }}>Structural Tensions</a> &middot;{' '}
+        <a href="#whats-untested" style={{ color: 'var(--color-accent-blue)' }}>What&apos;s Untested</a> &middot;{' '}
+        <a href="#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</a> &middot;{' '}
+        <a href="#landscape" style={{ color: 'var(--color-accent-blue)' }}>Modified-Gravity Landscape</a> &middot;{' '}
+        <a href="#cosmological-tensions" style={{ color: 'var(--color-accent-blue)' }}>Cosmological Tensions</a> &middot;{' '}
+        <a href="#a2acw-self-audit" style={{ color: 'var(--color-accent-blue)' }}>A2ACW Self-Audit</a> &middot;{' '}
+        <a href="#bottom-line" style={{ color: 'var(--color-accent-blue)' }}>Bottom Line</a>
+      </nav>
 
       {/* Overall Verdict */}
       <section className="card card-highlight section">
-        <h2 style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated May 2026)</h2>
+        <h2 id="verdict" style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated May 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 0 prospective
           predictions tested</strong>. One closure event + one external disfavor in May 2026:
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          <strong>(1) DESI fσ₈ (TEST-04a — corrected 2026-05-26):</strong> The framework predicted
-          fσ₈(z=0.51)&nbsp;≈&nbsp;0.418 (12% suppression below ΛCDM&apos;s 0.474).
-          <strong>What DESI DR1 full-shape actually shows (arXiv:2411.12021):</strong> LRG1 (z=0.51)
-          fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 — <em>above</em> the ΛCDM fiducial; combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10).
-          Synchronism predicted σ₈&nbsp;≈&nbsp;0.76; actual 0.841 → <strong>2.4σ tension</strong>.
-          <strong>Kill criterion triggered</strong> (fσ₈&nbsp;&gt;&nbsp;0.46 required; LRG1 actual fσ₈&nbsp;&asymp;&nbsp;1.16&times;fid&nbsp;&gg;&nbsp;0.46).
-          Verdict: <strong>post-hoc retrodiction — wrong direction (enhancement observed, suppression predicted); disfavored ~2σ; data ΛCDM-consistent.</strong> The direction failure is the load-bearing constraint; the ~2σ significance is a secondary corroboration.
+          <strong>(1) DESI fσ₈ (TEST-04a — reframed 2026-07-02):</strong> The framework predicted
+          suppressed growth: σ₈&nbsp;≈&nbsp;0.76 (fσ₈(z=0.51)&nbsp;≈&nbsp;0.418, 12% below ΛCDM&apos;s 0.474).
+          <strong>What DESI DR1 full-shape actually shows (arXiv:2411.12021):</strong> combined
+          σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10) → <strong>2.4σ tension — the predicted suppression is absent.
+          This ensemble amplitude miss is the load-bearing constraint.</strong>{' '}
+          <strong>Kill criterion triggered</strong> (fσ₈&nbsp;&gt;&nbsp;0.46 required; observed &gg; 0.46).
+          Verdict: <strong>post-hoc retrodiction — disfavored 2.4σ on σ₈ amplitude; data ΛCDM-consistent.</strong>{' '}
+          The LRG1 (z=0.51) bin at fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 (&ldquo;enhancement&rdquo;) is a single
+          ~1.2σ fluctuation, not the ensemble signal — the DR1 ensemble growth index γ_growth&nbsp;≈&nbsp;0.58&nbsp;±&nbsp;0.11
+          actually leans mildly toward suppression, the framework&apos;s own direction. Pinning the kill on
+          &ldquo;wrong direction&rdquo; would be fragile against DR2 (growth results unpublished, ~Spring 2027); the amplitude statistic is the defensible one.
           Note: a 2026-05-25 &ldquo;correction&rdquo; that claimed fσ₈&nbsp;≈&nbsp;0.45 was itself an error — that value belongs to arXiv:2512.03230
           (DESI Peculiar Velocity Survey, z&asymp;0.07), misattributed to the z=0.51 full-shape slot. The &ldquo;mechanism-class
           transferable contribution&rdquo; characterization is not restored — it was an overstatement of a post-hoc test.
@@ -141,9 +172,33 @@ export default function HonestAssessment() {
         </p>
       </section>
 
+      {/* Coherence definition — what the central variable does and doesn't mean */}
+      <section className="section content-width">
+        <h2 id="coherence-meaning">What &ldquo;Coherence&rdquo; Does and Doesn&apos;t Mean Here</h2>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          This page audits parameters, tests, and symmetry constraints — so it should also audit the
+          framework&apos;s central variable by name. <strong>C(&#x03C1;) runs from 0 (sparse, independent
+          constituents) to 1 (dense, collective behavior).</strong> That is <em>not</em> the physicist&apos;s
+          &ldquo;quantum coherence&rdquo; — it is closer to a <em>classicality</em> or collectivity measure
+          along the density axis. The naming is close to inverted relative to standard usage: BCS
+          superconductors and Bose&ndash;Einstein condensates — the most quantum-phase-coherent systems
+          known — score <em>low and flat</em> on C(&#x03C1;) at all physically accessible densities
+          (their enormous N<sub>corr</sub> makes &#x03B3; tiny, flattening the curve). A condensed-matter
+          reader who imports the standard meaning of &ldquo;coherence&rdquo; will read several pages backwards.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          Why not rename it? A rename was adjudicated and rejected (2026-06): retrofitting a new name
+          across a historical research corpus would assert that the corpus said something it didn&apos;t.
+          The honest fix is stating the collision wherever it can mislead — the{' '}
+          <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>glossary</Link> carries the
+          &#x26A0; warning on every coherence-adjacent entry, and it is stated here because this is the
+          page that claims to audit everything.
+        </p>
+      </section>
+
       {/* What Was Tested */}
       <section className="section">
-        <h2>What Was Tested</h2>
+        <h2 id="what-was-tested">What Was Tested</h2>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
           Analyses run with results. A kill-criterion-triggered result appears here, not under &ldquo;What Works&rdquo;
           &mdash; the heading reflects what was <em>attempted</em>, not what succeeded.
@@ -229,7 +284,7 @@ export default function HonestAssessment() {
 
       {/* What Failed */}
       <section className="section">
-        <h2>What Failed</h2>
+        <h2 id="what-failed">What Failed</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -439,7 +494,7 @@ export default function HonestAssessment() {
 
       {/* Structural Tensions (Stress Tests) */}
       <section className="section">
-        <h2>Structural Tensions (March 2026 Stress Tests)</h2>
+        <h2 id="structural-tensions">Structural Tensions (March 2026 Stress Tests)</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
           Eight adversarial stress-test sessions probed the CFD reframing for genuine novel predictions.
           Results: one candidate prediction, four forced choices, and several structural failures.
@@ -556,7 +611,7 @@ export default function HonestAssessment() {
 
       {/* Untested */}
       <section className="section">
-        <h2>What&apos;s Untested</h2>
+        <h2 id="whats-untested">What&apos;s Untested</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -564,7 +619,14 @@ export default function HonestAssessment() {
               <ValidationBadge status="untested" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              34 falsifiable predictions. Requires EEG (electroencephalography) experiments ($150K, 12 months).
+              34 predictions, <strong>contingent on a C-axis calibration protocol that does not yet exist</strong>.
+              The EEG (electroencephalography) experiment sketch ($150K, 12 months) cannot run as stated:
+              per <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link>,
+              no procedure maps any measurement (EEG phase coherence, fMRI, &#x03A6;) onto the C-axis — the
+              claim is currently <em>unrunnable</em>, which is the stronger verdict. Calling these
+              &ldquo;falsifiable&rdquo; without the calibration step would contradict that verdict.
+              Both candidate threshold values (C &#x2248; 0.50 and C &#x2248; 0.64) were separately rejected
+              at p &lt; 0.0001 in internal analysis.
             </p>
           </div>
 
@@ -580,11 +642,17 @@ export default function HonestAssessment() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>BAO (Baryon Acoustic Oscillation) Modulation</h3>
-              <ValidationBadge status="untested" />
+              <h3>BAO (Baryon Acoustic Oscillation) Modulation — Withdrawn</h3>
+              <ValidationBadge status="superseded" label="Withdrawn 2026-05-04 (TEST-04)" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Synchronism predicts density-dependent modulation of baryon acoustic oscillation peak positions. Testable with existing survey data.
+              Formerly listed here as &ldquo;testable with existing survey data.&rdquo; That was stale:
+              TEST-04 (BAO peak-shift modulation) was <strong>withdrawn 2026-05-04</strong> by internal
+              contradiction — the framework&apos;s own Session 107 forecasts BAO matching &#x039B;CDM at
+              0.0% in all five DESI redshift bins (the sound horizon is set at z~1100 when C &#x2248; 1
+              everywhere), so no modulation is predicted. The growth sector moved to RSD f&#x03C3;&#x2088;
+              (TEST-04a, adjudicated above). See{' '}
+              <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>test catalog</Link>.
             </p>
           </div>
 
@@ -608,7 +676,10 @@ export default function HonestAssessment() {
 
       {/* 47 Contributions */}
       <section className="section content-width">
-        <h2>Research Outputs (Not Discoveries)</h2>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+          <h2 id="research-outputs" style={{ marginBottom: 0 }}>Research Outputs (Not Discoveries)</h2>
+          <ValidationBadge status="untested" label="Uncharacterized — No Prior-Art Sweep" />
+        </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Session #615 (final accounting) inventoried all outputs across ~3,308 sessions:
           47 research contributions at a 1.4% session yield.
@@ -633,7 +704,11 @@ export default function HonestAssessment() {
           &#963;<sub>int</sub>&nbsp;=&nbsp;0.086&nbsp;&plusmn;&nbsp;0.003&nbsp;dex (definitive BTFR intrinsic scatter).
           <strong> Status: uncharacterized — not audited.</strong> Unlike the framework&apos;s headline
           claims, these numbers have not been run against null models or prior art (residual modeling
-          on SPARC/ALFALFA is a worked field); treat them as exploration outputs, not vetted contributions.
+          on SPARC/ALFALFA is a worked field — environment regressions &agrave; la Desmond, EFE fits
+          &agrave; la Chae, standard M/L&ndash;color relations); treat them as exploration outputs, not
+          vetted contributions. Historical prior: 6 of 6 claims previously badged &ldquo;Validated&rdquo;
+          on this site were demoted on audit — the prior on these surviving a prior-art sweep is low,
+          and until that sweep runs they should be read as this site&apos;s remaining unaudited surface.
           Full list in the{' '}
           <Link href="/publication-roadmap" style={{ color: 'var(--color-accent-blue)' }}>publication roadmap</Link>.
         </p>
@@ -664,7 +739,7 @@ export default function HonestAssessment() {
 
       {/* Landscape positioning — added 2026-05-24 per P4 researcher request */}
       <section className="section content-width">
-        <h2>Where This Sits in the Modified-Gravity Landscape</h2>
+        <h2 id="landscape">Where This Sits in the Modified-Gravity Landscape</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
           Several frameworks occupy the same phenomenological territory as Synchronism in the low-acceleration galaxy regime. All share the observation that a₀ ≈ cH₀/(2π) emerges from cosmological constants:
         </p>
@@ -687,7 +762,7 @@ export default function HonestAssessment() {
       </section>
 
       <section className="section content-width">
-        <h2>Cosmological Tensions We Don&apos;t Address</h2>
+        <h2 id="cosmological-tensions">Cosmological Tensions We Don&apos;t Address</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>
           A framework claiming cosmological scope should say explicitly where it is silent. The following are open problems in cosmology (2024–2026) where Synchronism makes no prediction:
         </p>
@@ -703,7 +778,7 @@ export default function HonestAssessment() {
       </section>
 
       <section className="section content-width">
-        <h2>Self-Audit on the Self-Audit Protocol (A2ACW)</h2>
+        <h2 id="a2acw-self-audit">Self-Audit on the Self-Audit Protocol (A2ACW)</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>
           The adversarial self-audit (A2ACW) produced the 47 contributions and maintained the honest
           assessment. Two retrospective tests of the protocol&apos;s own limits were run in May 2026:
@@ -749,7 +824,7 @@ export default function HonestAssessment() {
       </section>
 
       <section className="section content-width">
-        <h2>Bottom Line</h2>
+        <h2 id="bottom-line">Bottom Line</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Synchronism is not a theory of everything. It&apos;s a research tool that maps density
           to coherence and sometimes produces useful insights. The coherence function works well

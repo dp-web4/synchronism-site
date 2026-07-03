@@ -286,11 +286,11 @@ export default function GalaxyRotation() {
         </div>
 
         <div style={{ background: 'rgba(239, 68, 68, 0.07)', border: '1px solid rgba(239, 68, 68, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', marginTop: '1.5rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
-          <strong style={{ color: '#ef4444' }}>Cosmological extension — disfavored ~2σ (corrected 2026-05-26):</strong>{' '}
+          <strong style={{ color: '#ef4444' }}>Cosmological extension — disfavored 2.4σ on σ₈ amplitude (reframed 2026-07-02):</strong>{' '}
           Session 107&apos;s prediction of suppressed growth (fσ₈&nbsp;≈&nbsp;0.418) was compared against DESI DR1.
-          Full-shape result (arXiv:2411.12021): LRG1 fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 — above ΛCDM fiducial.
-          Combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 vs predicted 0.76 → 2.4σ tension. Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) triggered.
-          Verdict: post-hoc retrodiction, disfavored ~2σ. (Prior 2026-05-25 &ldquo;correction&rdquo; was itself an error — misattributed z≈0.07 PV value.){' '}
+          Full-shape result (arXiv:2411.12021): combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 vs predicted 0.76 → 2.4σ tension. Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) triggered.
+          The LRG1 fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 &ldquo;enhancement&rdquo; is a single ~1.2σ bin, not load-bearing.
+          Verdict: post-hoc retrodiction, disfavored 2.4σ on amplitude. (Prior 2026-05-25 &ldquo;correction&rdquo; was itself an error — misattributed z≈0.07 PV value.){' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment: TEST-04a &rarr;</Link>
         </div>
 

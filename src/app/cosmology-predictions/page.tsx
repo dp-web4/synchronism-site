@@ -10,7 +10,7 @@ export default function CosmologyPredictions() {
     <>
       <Breadcrumbs currentPath="/cosmology-predictions" />
       <h1>Cosmology Predictions</h1>
-      <ValidationBadge status="failed" label="TEST-04a Disfavored ~2σ — Kill Triggered (Corrected 2026-05-26)" />
+      <ValidationBadge status="failed" label="TEST-04a Disfavored 2.4σ — σ₈ Amplitude — Kill Triggered (Reframed 2026-07-02)" />
 
       {/* TEST-04a kill — most important cosmological result */}
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
@@ -22,7 +22,7 @@ export default function CosmologyPredictions() {
           marginBottom: '2rem',
         }}>
           <h2 style={{ color: '#ef4444', marginTop: 0, marginBottom: '0.5rem' }}>
-            TEST-04a: DESI DR1 fσ₈ — Post-hoc Retrodiction, Disfavored ~2σ (Corrected 2026-05-26)
+            TEST-04a: DESI DR1 fσ₈ — Post-hoc Retrodiction, Disfavored 2.4σ on σ₈ Amplitude (Reframed 2026-07-02)
           </h2>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>
             The framework&apos;s primary cosmological test compared against DESI DR1 full-shape (arXiv:2411.12021).
@@ -41,11 +41,13 @@ export default function CosmologyPredictions() {
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
             Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) triggered — LRG1 actual fσ₈ ≫ 0.46.
-            Suppression not observed; data is ΛCDM-consistent or above.
+            Suppression not observed; data is ΛCDM-consistent. The LRG1 &ldquo;enhancement&rdquo; is a
+            single ~1.2σ bin — the ensemble growth index (γ_growth ≈ 0.58 ± 0.11) leans mildly toward
+            suppression, so the load-bearing failure is the σ₈ amplitude, not direction.
             A 2026-05-25 &ldquo;correction&rdquo; claiming kill not triggered was itself an error:
             0.4497&nbsp;±&nbsp;0.0548 belongs to arXiv:2512.03230 (DESI Peculiar Velocity Survey, z≈0.07),
             misattributed to the z=0.51 full-shape slot.
-            Honest verdict: <strong>post-hoc retrodiction — disfavored ~2σ; suppression mechanism not supported.</strong>
+            Honest verdict: <strong>post-hoc retrodiction — disfavored 2.4σ on σ₈ amplitude; suppression mechanism not supported.</strong>
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
             <strong>Post-hoc note:</strong> Session 107 was committed December 2025; DESI DR1 was
@@ -142,7 +144,7 @@ export default function CosmologyPredictions() {
             <tbody>
               <tr style={{ borderBottom: '1px solid var(--color-dark-border)', background: 'rgba(245,158,11,0.04)' }}>
                 <td style={{ padding: '0.75rem' }}>DESI RSD fσ₈ (TEST-04a)</td>
-                <td style={{ padding: '0.75rem' }}><ValidationBadge status="failed" label="Disfavored ~2σ" /></td>
+                <td style={{ padding: '0.75rem' }}><ValidationBadge status="failed" label="Disfavored 2.4σ — σ₈ Amplitude" /></td>
                 <td style={{ padding: '0.75rem', color: 'var(--color-text-secondary)' }}>DESI DR1</td>
                 <td style={{ padding: '0.75rem', color: '#ef4444', fontSize: '0.85rem' }}>Post-hoc; kill triggered; σ₈=0.841 vs predicted 0.76 (2.4σ) — corrected 2026-05-26</td>
               </tr>

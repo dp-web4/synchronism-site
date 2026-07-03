@@ -11,7 +11,7 @@ const regions = [
     color: '#10b981',
     range: [0, 0.6],
     systems: ['Superconductors', 'BEC', 'Superfluids', 'Cooper pairs', 'Quantum computers'],
-    physics: 'Many correlated particles (large N_corr, small γ) — the strongly correlated regime. BEC, BCS superconductors, and superfluids sit here because they have enormous N_corr, giving them very small γ (BCS: N_corr = 10⁷, the γ Calculator preset, giving γ = 2/√10⁷ ≈ 6×10⁻⁴). Important: "collective" in the C-axis sense (C→1) is separate from "large N_corr" here — small γ gives a nearly flat tanh curve, so C stays near 0 at physically accessible densities despite large N_corr. See γ Calculator caveats for this documented inversion.',
+    physics: 'Many correlated particles (large N_corr, small γ) — the strongly correlated regime. BEC, BCS superconductors, and superfluids sit here because they have enormous N_corr, giving them very small γ (BCS: N_corr = 10⁷, the γ Calculator preset, giving γ = 2/√10⁷ ≈ 6×10⁻⁴). Important: "collective" in the C-axis sense (C→1) is separate from "large N_corr" here — small γ gives a nearly flat tanh curve, so C stays near 0 at physically accessible densities despite large N_corr. Direction caveat: real BCS/BEC transitions are among the sharpest in nature, yet this formula assigns them the flattest curves — the correlation→sharpness direction is inverted (audited-negative; see γ Calculator).',
   },
   {
     id: 'boundary',
@@ -67,6 +67,20 @@ export default function PhaseBoundaryVisualizer() {
           the current counting convention; it does not imply they have the same microphysics.
           See the caveat box below for details.
         </div>
+        <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.85rem', color: 'var(--color-text-muted)', marginBottom: '1rem' }}>
+          <strong style={{ color: '#ef4444' }}>Sharpness direction is inverted (open problem):</strong>{' '}
+          this tool positions systems by transition sharpness, and &#x03B3; = 2/&#x221A;N<sub>corr</sub>{' '}
+          assigns the most strongly correlated systems the <em>flattest</em> C(&#x03C1;) curves.
+          In real physics the opposite holds: BCS superconductors and BECs — the highest-N<sub>corr</sub>{' '}
+          systems shown here — undergo transitions that are among the <em>sharpest</em> in nature.
+          So a condensed-matter reading of this map is backwards: more correlation should not mean a
+          smoother transition. This is the same audited-negative sign inversion documented on the{' '}
+          <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
+          (1/&#x221A;N is a width, not a rate); it is stated here because this is the page where systems
+          are visually placed. Also note the axis itself: the quoted BCS value
+          (&#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>) sits three orders of magnitude off the left
+          edge of the displayed 0&ndash;4 range — the marker below is a direction indicator, not a position.
+        </div>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
           <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', height: 'auto' }}>
@@ -85,8 +99,8 @@ export default function PhaseBoundaryVisualizer() {
             <text x={30 + (2.7 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#8b5cf6" fontSize="11">Single-particle</text>
 
             {/* Anchored example markers */}
-            <line x1={30 + (0.15 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.15 / 4.0) * 540} y2={barY + barH + 25} stroke="#10b981" strokeWidth="1" />
-            <text x={30 + (0.15 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#10b981" fontSize="8">BEC/SC</text>
+            <line x1={32} y1={barY + barH + 5} x2={32} y2={barY + barH + 25} stroke="#10b981" strokeWidth="1" />
+            <text x={36} y={barY + barH + 36} textAnchor="start" fill="#10b981" fontSize="8">&#x2190; BEC/SC (γ≈6×10⁻⁴, ~3 OOM off-scale left)</text>
             <line x1={30 + (0.85 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.85 / 4.0) * 540} y2={barY + barH + 25} stroke="#f59e0b" strokeWidth="1" />
             <text x={30 + (0.85 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#f59e0b" fontSize="8">water/enzymes</text>
             <line x1={30 + (0.49 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.49 / 4.0) * 540} y2={barY + barH + 25} stroke="#ef4444" strokeWidth="1" />

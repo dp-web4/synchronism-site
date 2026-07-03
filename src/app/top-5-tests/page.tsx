@@ -79,7 +79,7 @@ export default function Top5Tests() {
         <p>
           Of the defined experiments, these have the highest <strong>distinguishing
           power</strong> &mdash; tests that can discriminate between Synchronism and existing frameworks.
-          Two predictions have now closed: one is disfavored ~2σ with kill criterion triggered (post-hoc; corrected 2026-05-26), one withdrawn by internal contradiction.
+          Two predictions have now closed: one is disfavored 2.4σ on σ₈ amplitude with kill criterion triggered (post-hoc; reframed 2026-07-02), one withdrawn by internal contradiction.
         </p>
 
         <div style={{
@@ -113,7 +113,7 @@ export default function Top5Tests() {
         }}>
           <strong style={{ color: '#ef4444' }}>Scorecard (2026-05-13):</strong>{' '}
           Confirmed: <strong>0</strong> &nbsp;|&nbsp;
-          Disfavored ~2σ: <strong>1</strong> (TEST-04a post-hoc, kill triggered; corrected 2026-05-26) &nbsp;|&nbsp;
+          Disfavored 2.4σ (σ₈ amplitude): <strong>1</strong> (TEST-04a post-hoc, kill triggered; reframed 2026-07-02) &nbsp;|&nbsp;
           Withdrawn: <strong>1</strong> (TEST-04 internal contradiction) &nbsp;|&nbsp;
           Active: <strong>1 discriminating</strong> (TEST-02, EFE-degeneracy caveat pending) &nbsp;|&nbsp;
           Monitoring: <strong>1</strong> (TEST-07 no derivation) &nbsp;|&nbsp;
@@ -215,7 +215,7 @@ export default function Top5Tests() {
         <h2>The Strategy</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            With TEST-04 withdrawn and TEST-04a disfavored ~2σ / kill triggered (corrected 2026-05-26), the immediate discriminating work shifts to
+            With TEST-04 withdrawn and TEST-04a disfavored 2.4σ on σ₈ amplitude / kill triggered (reframed 2026-07-02), the immediate discriminating work shifts to
             TEST-02 (wide binaries, Gaia DR3 — zero cost). But TEST-02 needs a critical prerequisite:
             compute the MOND+EFE prediction for the same observable and show where Synchronism diverges
             numerically. Without that, a positive TEST-02 result cannot distinguish the frameworks.

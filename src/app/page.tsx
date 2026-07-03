@@ -35,7 +35,7 @@ export default function Home() {
           </Link>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem' }}>
-          <strong>No physics background?</strong> Use the <Link href="/why-synchronism" style={{ color: 'var(--color-accent-green, #10b981)' }}>Beginner Path</Link> (6 steps, ~30 min, no equations required) or jump to the <Link href="/galaxy-curve-plotter" style={{ color: 'var(--color-accent-green, #10b981)' }}>Galaxy Curve Plotter</Link>.{' '}
+          <strong>No physics background?</strong> Use the <Link href="/why-synchronism" style={{ color: 'var(--color-accent-green, #10b981)' }}>Beginner Path</Link> (6 steps, ~30 min, no equations required) or jump to the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-green, #10b981)' }}>Galaxy Curve Plotter</Link>.{' '}
           <strong>Physicist?</strong> Jump to <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link> or <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.{' '}
           <strong>Researcher?</strong> <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 tests</Link> or <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>.
         </p>
@@ -347,39 +347,42 @@ export default function Home() {
             <h2>Where to Start</h2>
             <div className="grid-3">
               <Link href="/why-synchronism" className="card" style={{ textDecoration: 'none' }}>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Step 1</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Beginner Path &middot; Step 1 of 6</div>
                 <h3>Why Synchronism?</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>The question that started it all</p>
               </Link>
               <Link href="/first-encounter" className="card" style={{ textDecoration: 'none' }}>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Step 2</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Beginner Path &middot; Step 2 of 6</div>
                 <h3>First Encounter</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>10-minute guided introduction</p>
               </Link>
               <Link href="/core-idea" className="card" style={{ textDecoration: 'none' }}>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Step 3</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Beginner Path &middot; Step 3 of 6</div>
                 <h3>The Core Idea</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>One equation, every scale</p>
               </Link>
               <Link href="/test-catalog" className="card" style={{ textDecoration: 'none' }}>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Deep dive</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Deep dive &middot; not a path step</div>
                 <h3>Test Catalog</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>24 experiments: what would break this?</p>
               </Link>
               <Link href="/research-philosophy" className="card" style={{ textDecoration: 'none' }}>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Methodology</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Methodology &middot; not a path step</div>
                 <h3>Research Philosophy</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>How we work, why we document failures</p>
               </Link>
               <Link href="/honest-assessment" className="card" style={{ textDecoration: 'none' }}>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Shortcut</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Shortcut &middot; not a path step</div>
                 <h3>Honest Assessment</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>What works, what failed, what&apos;s unknown</p>
               </Link>
             </div>
             <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.75rem' }}>
-              Want a complete 6-step beginner sequence including plain-language primers?{' '}
-              <Link href="/learning-paths" style={{ color: 'var(--color-accent-blue)' }}>Learning Paths &rarr; Beginner</Link> has the full route.
+              The Beginner Path continues past step 3 with{' '}
+              <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not</Link> (step 4),{' '}
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link> (step 5), and{' '}
+              <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link> (step 6) —{' '}
+              <Link href="/learning-paths" style={{ color: 'var(--color-accent-blue)' }}>Learning Paths &rarr; Beginner</Link> is the canonical route.
             </p>
           </section>
         </>

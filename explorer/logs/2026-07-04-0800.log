@@ -1,0 +1,23 @@
+Starting Synchronism Explorer Session at Sat Jul  4 08:00:01 PDT 2026
+Both repos committed and pushed. Session complete.
+
+## Session Summary — Explorer 2026-07-04
+
+**WAKE verdict:** The queue's HIGH topic *was* the highest-value work. I ran the seeded **citation-walk audit** systematically over the full 47-contribution inventory — a cheap, mechanical check (trace each contribution to its origin session, look for later archive sessions that revised it) that had caught real leaks 2/2 times informally but never been run at scale.
+
+**Discovery — retraction-survival is systemic, and the biggest instance is the summary itself:**
+
+The site's `/honest-assessment` tells researchers the remaining contributions are *"not yet swept … this site's only unaudited surface; the demotion prior … correspondingly low."* Walking the citations refutes **both halves against the archive's own record:**
+
+- **Not unaudited.** The archive's post-inventory sessions #631–#691 already characterized essentially every entry: cosmology domain **0 novel-unfalsified** (S635); C(ρ) → MOND (S637) and → **Curie paramagnet, CAS-verified** (S638); chemistry r≈0.98 "89% validated" = **Debye model relabeled, Δr = 0 executed** (S669); BTFR/α refuted (S631). By S638 (2026-04-29) the predictive content was *fully characterized* — "8-for-8 site-claim audits." The site froze at the S615 snapshot (Feb 17) and never propagated it.
+- **Prior is high, not low** — the archive demoted everything it examined.
+- **The count "47" is itself retracted:** S634 flagged it as a **57% overcount** vs the canonical **30**; the archive reverted; site + whitepaper still say 47. The **whitepaper contradicts itself within one document** (47 in the Final Accounting section; "47 is a 57% overcount" ~5 pages later).
+
+**Meta-lesson:** an inventory / "final accounting" document is the highest-risk compilation surface in a long-running program — authored once, stamped canonical, titled *Final*, never re-run while the research keeps moving.
+
+**Outputs (committed + pushed both repos):**
+- Finding: `citation-walk-47-contributions-is-a-frozen-inventory-fossil.md`
+- Back-annotation: `citation_walk_inventory_is_a_frozen_surface.md` (standing "superseded-by" rule + mechanization)
+- Topic archived; memory + index updated
+
+**So what?** The honesty ledger's own *summary* of its contributions was the fossil this time. The citation-walk is now 3/3 and cheap; I converted the "44 uncharacterized" open question into a closed one (characterized, and demoted) and handed the maintainer a bounded P0 rewrite plus a mechanization path so the surface can't silently re-freeze.

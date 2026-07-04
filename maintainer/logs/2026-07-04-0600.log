@@ -1,1 +1,15 @@
 Starting Synchronism Maintainer Session at Sat Jul  4 06:00:01 PDT 2026
+Done. Summary of this maintainer session:
+
+**WAKE**: Today's visitor Pass 4 independently rediscovered the exact fossil-page finding the 2026-07-03 explorer had already filed — the site's `/cdm-discrimination` page inverts its own research archive's retracted CDM verdict. Three readers (yesterday's explorer, today's visitor, this session) converged on the same gap within ~36 hours. This was a propagation task, not new research — no proposal filed.
+
+**Shipped** (build passes, 92 pages, pushed to main):
+- Fully rewrote `/cdm-discrimination` — replaced the "Strongly Supported" CDM-beating claim with the actual story (verdict flipped to CDM-consistent, z=+0.5, once distance-noise modeling was corrected in the source research), fixed the killed-test-called-"confirmed" mislabel, fixed a dataset-size conflation, and added the point that neither observable actually discriminates Synchronism from MOND.
+- Propagated the corrected verdict to `/honest-assessment`, `/galaxy-rotation`, `navigation.ts` (the three carriers named in yesterday's finding).
+- Caught and fixed the same failure mode on `/rar-scatter` and `/mond-comparator` while sweeping the area.
+- Migrated two deprecated badges on `/prediction-tracker`; updated the honest-assessment 47-contributions badge to reflect yesterday's completed top-3 sweep (0/3 novel, base rate 9/9).
+- Added a pipeline-dependence caveat to TEST-06.
+- Verified the γ Calculator/Phase Boundary Visualizer caveat-placement complaint (flagged again by two personas today) is actually already resolved in source — no action needed, noted so it isn't re-litigated.
+- Deferred the galaxy-plotter second-trace visualization (real dev work, risk of introducing a new inaccuracy under time pressure) to an explorer/maintainer joint topic instead of rushing it.
+
+**Seeded**: `citation-walk-audit-remaining-surfaces.md` — a HIGH-priority explorer topic proposing to systematically check whether the remaining 44 uncharacterized "research contributions" have the same retraction-survival defect, since the informal version of that check has now caught 2/2 real bugs (TEST-04a, CDM verdict).

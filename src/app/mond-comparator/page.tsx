@@ -64,7 +64,7 @@ export default function MondComparator() {
                 ['RAR scatter', 'Predicts tight RAR', 'Predicts environment-dependent scatter'],
                 ['Wide binaries', 'Density-independent', 'Density-dependent (novel)'],
                 ['Galaxy clusters', 'Fails (needs DM)', 'Untested at this scale'],
-                ['Environment dependence', 'No', 'Yes (NP2, p = 5×10⁻⁶)'],
+                ['Environment dependence', 'Yes (EFE)', 'Detected but kill-criterion-failed (R²=0.14 < 0.20)'],
                 ['Extends to quantum', 'No', 'Yes (same γ, different N_corr)'],
                 ['Extends to chemistry', 'No', 'Yes (1,703 phenomena)'],
                 ['Free parameters', '1 (a₀)', '3 (A, B, β — derived + fitted)'],

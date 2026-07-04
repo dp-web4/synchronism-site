@@ -213,12 +213,22 @@ export default function HonestAssessment() {
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               14,585 galaxies. Environment-dependent RAR (Radial Acceleration Relation) scatter (Novel Prediction 2) at p = 5&times;10<sup>&minus;6</sup>.
-              &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex, below CDM (Cold Dark Matter) prediction.
+              &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>CDM-consistent</strong> (z&nbsp;=&nbsp;+0.5 in the definitive run), not below CDM.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               The environmental effect is detectably nonzero (p = 5&times;10<sup>&minus;6</sup>), but explains only
               14% of total RAR scatter. The pre-registered kill criterion required R&sup2; &gt; 0.20. At R&sup2; = 0.14,
               the kill criterion fired. See TEST-03 in the &ldquo;What Failed&rdquo; section below.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              <strong>Verdict correction (2026-07-04):</strong> an intermediate session had read &#x03C3;<sub>int</sub> as
+              &minus;6.2&sigma; below the CDM prediction; that reading was retracted in-archive once distance-noise
+              modeling was added &mdash; the source session&apos;s own definitive run reports CDM-consistent at z&nbsp;=&nbsp;+0.5,
+              and the verdict is itself modeling-choice-dependent (z ranges +0.5 to +64 across choices). The
+              retracted &ldquo;below CDM&rdquo; framing had propagated to this page, {' '}
+              <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>, and{' '}
+              <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link> &mdash;
+              all three now carry the corrected verdict.
             </p>
           </div>
 
@@ -678,7 +688,7 @@ export default function HonestAssessment() {
       <section className="section content-width">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
           <h2 id="research-outputs" style={{ marginBottom: 0 }}>Research Outputs (Not Discoveries)</h2>
-          <ValidationBadge status="untested" label="Uncharacterized — No Prior-Art Sweep" />
+          <ValidationBadge status="reparametrization" label="Top-3 Swept 2026-07-03 — 0/3 Novel" />
         </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Session #615 (final accounting) inventoried all outputs across ~3,308 sessions:
@@ -701,15 +711,18 @@ export default function HonestAssessment() {
           Top results: 6-variable MOND offset model (LOO R&sup2;=0.938),
           TFR residual as complete M/L predictor (51.4% improvement on 14,437 galaxies — an
           analysis subset of the 14,585-galaxy ALFALFA-SDSS cross-match),
-          &#963;<sub>int</sub>&nbsp;=&nbsp;0.086&nbsp;&plusmn;&nbsp;0.003&nbsp;dex (definitive BTFR intrinsic scatter).
-          <strong> Status: uncharacterized — not audited.</strong> Unlike the framework&apos;s headline
-          claims, these numbers have not been run against null models or prior art (residual modeling
-          on SPARC/ALFALFA is a worked field — environment regressions &agrave; la Desmond, EFE fits
-          &agrave; la Chae, standard M/L&ndash;color relations); treat them as exploration outputs, not
-          vetted contributions. Historical prior: 6 of 6 claims previously badged &ldquo;Validated&rdquo;
-          on this site were demoted on audit — the prior on these surviving a prior-art sweep is low,
-          and until that sweep runs they should be read as this site&apos;s remaining unaudited surface.
-          Full list in the{' '}
+          &#963;<sub>int</sub>&nbsp;=&nbsp;0.086&nbsp;&plusmn;&nbsp;0.003&nbsp;dex (BTFR intrinsic scatter).
+          <strong> Status (updated 2026-07-04): these three were swept against prior art and the archive on 2026-07-03 — 0/3 survive.</strong>{' '}
+          The offset model and the TFR-residual predictor are <em>the same fact</em> (the offset model is
+          dominated by log-luminosity at t&nbsp;=&nbsp;&minus;36, i.e. it <em>is</em> the Tully-Fisher residual),
+          and both reduce to published work: Kannappan et al. 2002 (TF residuals carry M/L information),
+          Li et al. 2018 (RAR offsets are the error budget of a constant-M/L assumption), and
+          Stiskalek &amp; Desmond 2023 (exhaustive regression null over galaxy features). The
+          &#963;<sub>int</sub>&nbsp;=&nbsp;0.086 figure is addressed above &mdash; it inverted the source
+          session&apos;s own retracted verdict. Demotion base rate across the whole program: 9 of 9 audited
+          claims (the prior 6 &ldquo;Validated&rdquo; claims plus these 3) failed to survive. The remaining
+          44 contributions are not yet swept and remain this site&apos;s only unaudited surface; the demotion
+          prior for them is correspondingly low. Full list in the{' '}
           <Link href="/publication-roadmap" style={{ color: 'var(--color-accent-blue)' }}>publication roadmap</Link>.
         </p>
 

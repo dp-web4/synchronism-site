@@ -276,7 +276,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'CDM Discrimination',
       href: '/cdm-discrimination',
-      desc: '\u03C3_int = 0.086 dex: below CDM prediction',
+      desc: '\u03C3_int = 0.086 dex: CDM-consistent (z=+0.5), not below-CDM',
       keywords: ['CDM', 'discrimination', 'sigma', 'intrinsic', 'scatter'],
       prerequisites: ['/galaxy-rotation', '/rar-scatter'],
       related: ['/cosmology-predictions', '/dark-matter'],

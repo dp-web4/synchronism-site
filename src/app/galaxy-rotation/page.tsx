@@ -51,9 +51,10 @@ export default function GalaxyRotation() {
               {' '}<a href="https://www.sdss.org/dr17/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>[SDSS DR17]</a>
             </p>
             <ul style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <li>Environment-dependent RAR scatter detected at p = 5 &times; 10<sup>&minus;6</sup></li>
-              <li>&#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex (below CDM prediction)</li>
-              <li>Cluster vs. field galaxies show different scatter &mdash; as predicted</li>
+              <li>Environment-dependent RAR scatter detected at p = 5 &times; 10<sup>&minus;6</sup>, but R&sup2; = 0.14 trips the pre-registered TEST-03 kill criterion (R&sup2; &lt; 0.20)</li>
+              <li>&#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>CDM-consistent</strong> (z&nbsp;=&nbsp;+0.5 in the source session&apos;s definitive run), not below CDM. An earlier &minus;6.2&sigma; &ldquo;below CDM&rdquo; reading from an intermediate session was retracted in-archive as premature once distance-noise modeling was added; the verdict is also modeling-choice-dependent (z ranges +0.5 to +64). See{' '}
+                <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link> for the full history.</li>
+              <li>Cluster vs. field galaxies show different scatter &mdash; the effect is real but sub-threshold, not a confirmed prediction</li>
             </ul>
           </div>
         </div>

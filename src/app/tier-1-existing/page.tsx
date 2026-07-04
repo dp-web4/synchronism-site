@@ -89,6 +89,7 @@ const tests: Test[] = [
     time: '1–2 years (data availability)',
     prediction: 'σ_int remains at 0.086 dex with larger sample',
     kill: 'σ_int > 0.12 dex with N > 1000',
+    alert: 'Pipeline-dependence caveat (2026-07-04): Lelli et al. 2019 (MNRAS 484, 3267) report BTFR orthogonal intrinsic scatter on the same galaxy population ranging 0.026–0.070 dex depending solely on which velocity definition is used (V_flat vs. W_P20 vs. V_max vs. V_2.2). A single-pipeline σ_int value is not a fixed target — the kill threshold should be read against that ~3× pipeline-dependent range, not as a precise number. See CDM Discrimination for the corrected CDM verdict (z = +0.5, CDM-consistent) this test is downstream of.',
   },
   {
     id: 'TEST-07',

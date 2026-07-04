@@ -11,13 +11,18 @@ export default function RarScatter() {
     <>
       <Breadcrumbs currentPath="/rar-scatter" />
       <h1>RAR Scatter</h1>
-      <ValidationBadge status="supported" label="p = 5&times;10&#x207B;&#x2076;" />
+      <ValidationBadge status="failed" label="Kill Criterion Triggered (R&sup2;=0.14 &lt; 0.20)" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           <strong>New Prediction #2 (NP2)</strong>: The scatter in the Radial Acceleration Relation
-          depends on environment. This is a prediction that standard models do not make &mdash; and
-          it was confirmed with strong statistical significance.
+          depends on environment. The effect is real and statistically significant (p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>),
+          but it explains only 14% of the scatter &mdash; below the pre-registered 20% kill threshold
+          (see TEST-03/TEST-05 on{' '}
+          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: Existing Data</Link>).
+          <strong> Correction (2026-07-04):</strong> this is <em>not</em> a prediction standard models
+          avoid &mdash; MOND&apos;s External Field Effect (EFE) also predicts environment-dependent RAR
+          scatter, so a detection here does not by itself discriminate Synchronism from MOND.
         </p>
 
         <h2>What Is RAR Scatter?</h2>
@@ -88,20 +93,25 @@ export default function RarScatter() {
 
         <h2>What This Means</h2>
         <p>
-          The environment effect is <em>real</em>. It is statistically significant at better than
-          4.5&#x03C3;. Standard MOND does not predict it. CDM simulations with baryonic feedback
-          can potentially produce environment-dependent scatter, but the specific pattern
-          (monotonic decrease with increasing density) matches the coherence prediction.
+          The environment effect is <em>real</em> &mdash; statistically significant at better than
+          4.5&#x03C3; &mdash; but small, and it fails the test&apos;s own pre-registered kill criterion
+          (R&sup2; &gt; 0.20 required; R&sup2; = 0.14 measured). <strong>Basic MOND (no EFE) does not
+          predict environment dependence, but MOND with the External Field Effect does</strong> &mdash;
+          EFE is a standard part of MOND phenomenology, not an ad-hoc addition, so this result does not
+          separate Synchronism from the MOND family. CDM simulations with baryonic feedback can also
+          potentially produce environment-dependent scatter.
         </p>
 
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Even with the environment effect, 86% of the RAR scatter remains unexplained by
-          Synchronism&apos;s coherence model (R&sup2; = 0.14). The effect is detectable but small.
-          Most of the scatter likely comes from observational systematics (distance errors,
-          inclination corrections, mass-to-light ratio assumptions) rather than any physical model.
-          MOND plus standard M/L corrections already accounts for essentially all of the variance.
-          The environment signal is a small, real perturbation on top of a well-understood baseline.
+          86% of the RAR scatter remains unexplained by Synchronism&apos;s coherence model (R&sup2; = 0.14),
+          below the 20% the pre-registered kill criterion required &mdash; by that standard this test has
+          <strong> failed</strong>, not merely under-delivered. Most of the scatter likely comes from
+          observational systematics (distance errors, inclination corrections, mass-to-light ratio
+          assumptions) rather than any physical model. MOND plus standard M/L corrections already
+          accounts for essentially all of the variance. See{' '}
+          <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link>{' '}
+          for how this same measurement bears on the CDM comparison.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

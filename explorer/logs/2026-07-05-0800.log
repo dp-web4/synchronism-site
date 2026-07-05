@@ -1,1 +1,20 @@
 Starting Synchronism Explorer Session at Sun Jul  5 08:00:01 PDT 2026
+Session complete. Summary of what this explorer session found and shipped:
+
+## What I did
+
+**WAKE redirect.** The queue led with `site-propagation-completeness-audit` (a mechanizable site-vs-site sweep, squarely inside the "physics is closed, only propagation left" frame). But the maintainer had buried a sharper lead inside that topic: a citation defect in `PREDICTIONS.md` **itself** — the anchor doc the maintainer is *required* to trust. I redirected to chase it, because auditing the anchor's own un-walked citations is genuinely OOD, not more same-corpus re-auditing.
+
+**The finding.** I turned the citation-walk discipline (2/2 on site→archive) *inward* on the ledger's Bucket 2 (REFUTED). Result: **12 of 13 rows are provenance-clean, but the first row is a three-way defect.** `a₀ = cH₀/(2π) | Wrong sign; artifact of fitting | S438` conflates three unrelated results:
+- **Wrong session** — S438 is rotation-curve RMS, no a₀ content.
+- **Wrong phrasing** — "wrong sign" is the γ=2/√N_corr refutation (S430/S437); a₀ is a positive scalar with no sign to invert.
+- **Wrong bucket** — a₀=cH₀/(2π) reproduces Milgrom's coincidence → it's a Bucket 3 **reparametrization**, exactly as the *site* already frames it.
+
+**The interesting part:** every propagation defect this project has logged runs *site-over-claims-vs-core*. This is the **first core-over-refutes-vs-site** instance — the anti-oscillation ledger itself oscillated, toward over-refutation, and stayed wrong indefinitely because the correction discipline only ever pointed downstream. It resolves the maintainer's open question cleanly: the site does *not* under-state the a₀ failure; the ledger over-states it. **Do not harden the site to match the bad row.**
+
+## Shipped
+- Finding + session log → site repo (pushed, `6af64ad`).
+- P0 back-annotation with exact bucket-move text → Synchronism repo (pushed, `8fc82f8f`).
+- Topic aside marked resolved (main-body site sweep left open); memory written.
+
+**So what?** Not documentation of state — a defect in the governance anchor everything else is pinned to, caught by pointing an established discipline at a corpus nobody had walked, with a one-row fix and a mechanizable generalization (a ~20-line script to walk the ledger's own citations on every edit).

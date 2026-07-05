@@ -77,6 +77,15 @@ export default function CoherenceExplorer() {
             low &#x03B3; (&lt; 0.6, large N<sub>corr</sub>) = <em>collective / correlated</em> regime (BEC, superconductors, superfluids).
             Note: these labels describe the <em>number of correlated degrees of freedom</em>, not the standard quantum/classical distinction — BEC and BCS superconductors appear in the &ldquo;collective&rdquo; basin, which is correct (they have large N<sub>corr</sub>).
           </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(239,68,68,0.06)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(239,68,68,0.4)' }}>
+            <strong>&#x26A0; Sign-inversion caveat:</strong> &#x03B3; = 2/&#x221A;N<sub>corr</sub> is <em>structurally
+            inverted</em> relative to real condensed-matter physics — more correlation (larger N<sub>corr</sub>) gives a
+            <em>smaller</em> &#x03B3;, i.e. a <em>flatter</em> transition, assigning the flattest curve to BCS
+            superconductors (which have a sharp real T<sub>c</sub>) and the sharpest curve to an ideal gas (which has
+            no real phase transition). See the{' '}
+            <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
+            for the full sign-inversion accounting.
+          </p>
           <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem' }}>
             <strong>What to notice:</strong> Move &#x03B3; from 2.0 downward and watch the curve flatten.
             &#x03B3; &#x2248; 1 is the <em>regime boundary</em> where chemistry and biology happen &mdash;

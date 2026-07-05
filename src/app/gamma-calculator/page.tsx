@@ -76,7 +76,9 @@ export default function GammaCalculator() {
             This tool maps that count to &#x03B3; = 2/&#x221A;N<sub>corr</sub> and shows which physical regime results.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginBottom: 0 }}>
-            &#x03B3; &#x2248; 1 marks the boundary where chemistry and phase transitions happen. The presets below cover common systems:
+            &#x03B3; &#x2248; 1 marks the regime boundary where chemistry and collective/correlated behavior happen &mdash;
+            C(&#x03C1;) itself is a smooth crossover here, not a phase transition (tanh has no non-analyticity).
+            The presets below cover common systems:
             {' '}<strong>BCS</strong> = Bardeen-Cooper-Schrieffer superconductors (electrons paired by phonons, conventional: Al, Nb, Pb);
             {' '}<strong>BEC</strong> = Bose-Einstein Condensate (ultra-cold atoms collapsed into a single quantum state).
             Both are quantum systems that appear in the &ldquo;collective&rdquo; regime because they have large N<sub>corr</sub>.

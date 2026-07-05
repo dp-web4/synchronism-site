@@ -281,7 +281,7 @@ export default function GalaxyPlotter() {
             <circle cx={pad.left + 20} cy={pad.top + 15} r="4" fill="#38bdf8" />
             <text x={pad.left + 30} y={pad.top + 19} fill="#38bdf8" fontSize="10">Observed</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 30} x2={pad.left + 20 + 8} y2={pad.top + 30} stroke="#8b5cf6" strokeWidth="2" />
-            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism (consistency check, V_flat fitted)</text>
+            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">&quot;Synchronism&quot; (not C(&#x03C1;) &mdash; tanh(radius), hand-tuned)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />
             <text x={pad.left + 30} y={pad.top + 49} fill="#22c55e" fontSize="10">MOND (approx.)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#6b7280" strokeWidth="1.5" strokeDasharray="3 2" />
@@ -298,10 +298,11 @@ export default function GalaxyPlotter() {
             The gap is the &ldquo;dark matter problem.&rdquo;
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
-            Synchronism&apos;s <span style={{ color: '#8b5cf6' }}>violet curve</span> fills the
-            gap using C(&#x03C1;) with &#x03B3; = 2 (uncorrelated stars) &mdash; no dark matter
-            particles needed. The coherence function adds an effective mass component from the
-            density field itself.
+            The <span style={{ color: '#8b5cf6' }}>violet curve</span> fills the gap and is labeled
+            &ldquo;Synchronism&rdquo; &mdash; but it is <strong>not</strong> C(&#x03C1;) evaluated on a density
+            profile. It is a hand-tuned tanh(radius) stand-in chosen to look right; no &#x03C1;,
+            &#x03C1;<sub>crit</sub>, or &#x03B3; enters its computation. See the full disclosure below the
+            plot for why the real C(&#x03C1;) does not reproduce this curve.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
             The <span style={{ color: '#22c55e' }}>green dashed curve</span> is MOND (Modified

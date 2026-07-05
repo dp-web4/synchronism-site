@@ -48,7 +48,7 @@ export default function KeyClaims() {
               Quantum Mechanics Is Synchronization Physics
             </h2>
             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
-              <ValidationBadge status="untested" label="Untested — ontological reframe" />
+              <ValidationBadge status="speculative" label="Untestable-as-stated — ontological reframe" />
               <span style={{
                 fontSize: '0.75rem',
                 padding: '0.2rem 0.6rem',
@@ -430,12 +430,15 @@ export default function KeyClaims() {
 
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>What&apos;s new</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            MOND treats a&#x2080; as an empirical constant. &#x039B;CDM (Lambda Cold Dark Matter) adds a new particle. Neither explains
-            why anomalies appear at a specific acceleration scale. Synchronism re-derives a&#x2080; from the
-            coherence transition via dimensional analysis &mdash; the same relation McCulloch (2007), Verlinde (2017),
-            and Smolin (2017) each arrive at independently. The novel contribution is the <em>interpretation</em>:
-            that this scale marks the density-coherence transition — where systems cross from dense/collective to sparse/independent behavior — not just a coincidence of constants.
-            See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</a> for honest accounting.
+            MOND treats a&#x2080; as an empirical constant. &#x039B;CDM (Lambda Cold Dark Matter) adds a new particle.
+            Synchronism reproduces the <em>same</em> a&#x2080;&#x2248;cH&#x2080;/6 dimensional coincidence as
+            McCulloch (2007), Verlinde (2017), and Smolin (2017) &mdash; it does not derive a&#x2080; from first
+            principles any more than they do; see <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter
+            derivations</a>, which calls this &ldquo;dimensional bookkeeping, not a Synchronism-specific derivation.&rdquo;
+            The only candidate novelty is the <em>interpretation</em> layered on top &mdash; that this scale marks a
+            density-coherence transition &mdash; and that interpretation is what the Failed badge above refers to: the
+            structural test of it (environment-dependent RAR scatter, and the CFD/Bullet Cluster sign error below) did
+            not survive.
           </p>
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>

@@ -2,7 +2,7 @@
 <!-- gitnexus:keep -->
 # GitNexus — Code Knowledge Graph
 
-Indexed as **synchronism-site** (4065 symbols, 4421 relationships, 17 execution flows). MCP tools available via `mcp__gitnexus__*`.
+Indexed as **synchronism-site** (4086 symbols, 4434 relationships, 17 execution flows). MCP tools available via `mcp__gitnexus__*`.
 
 **Do not reindex.** The supervisor handles GitNexus indexing. If the index is stale, note it in SESSION_FOCUS.
 

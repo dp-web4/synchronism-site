@@ -134,13 +134,13 @@ const tests: Test[] = [
   },
   {
     id: 'CLUSTER-SCALE',
-    name: 'Cluster Scale — Structurally Silent (Not a Tier 1 Test)',
-    data: 'N/A — no prediction exists',
-    cost: 'N/A',
-    time: 'N/A',
-    prediction: '[None] C(ρ) returns a unitless coherence value in [0,1] and requires per-galaxy V_flat calibration to become a velocity prediction. No dimensional bridge maps C(ρ(r)) on a cluster baryonic profile to an apparent mass or lensing convergence.',
-    kill: 'N/A — no prediction to kill',
-    alert: 'STRUCTURAL GAP (2026-05-24): C(ρ) is silent at cluster scale by construction, not by choice. Unlike Verlinde (2016), which gives M_D² = (a₀·r·M_B)/(6G) — dimensionally complete and testable at clusters — C(ρ) produces only a unitless [0,1] value. There is no archive prescription for mapping C(ρ(r)) on a cluster NFW or baryonic profile to apparent mass. This means the framework cannot address the Bullet Cluster mass discrepancy, weak lensing offset, or MOND\'s known ~3× cluster mass deficit (Sanders 2003, Angus et al. 2008). The "one equation across 80 orders of magnitude" claim is structurally blocked at cluster scale. This gap is not a prediction that failed — it is a domain where no prediction exists. Listed here as an honest accounting of scope. The cluster-scale bridge (if it exists in the archive) is the last open door for the physics program. See explorer/topics/c-rho-cluster-prediction-bridge.md.',
+    name: 'Cluster Scale — Bridge Tested on Coma, Closed 2026-05-28 (Not a Tier 1 Test)',
+    data: 'Coma cluster (X-ray gas + galaxy velocity dispersion mass estimates)',
+    cost: '$0',
+    time: 'Closed',
+    prediction: '[Closed] Four natural C(ρ)-to-apparent-mass ansätze were tried against Coma: A1 M_app/M_B = ⟨1/C⟩_vol; A2 M_app/M_B = 1/(1−⟨C⟩); A3 M_app/M_B = 1 + ∫Cρ dV/M_B; A4 M_app/M_B = 1/⟨C⟩_mass.',
+    kill: 'All four failed: A1 and A4 overshoot the observed mass ratio by 10⁴; A2 collapses to Newtonian (no boost at all); A3 is structurally bounded at ≤2 regardless of parameters, vs. the observed ratio of 4.6 — impossible by construction, not by fit.',
+    alert: 'CLOSED BY EXECUTION (2026-05-28, refined 2026-06-01 and 2026-06-09): the earlier framing here ("if [a bridge] exists in the archive, it is the last open door") is superseded — the bridge was built four ways and tested on Coma; all four fail. Root cause (2026-06-01): NOT one-scale insufficiency — MOND has exactly one scale (a₀) and only misses clusters by a factor ~2 (Sanders 2003). C(ρ) also has one scale (ρ_crit) and misses by 10⁴. The dominant cause is the WRONG VARIABLE: g_bar = G·M(&lt;r)/r² is non-local in ρ, so a function of local density cannot reproduce an acceleration-space law (the RAR) across systems of very different density profiles at matched acceleration. Novelty audit (2026-06-09): this is a quantified INSTANCE of Milgrom\'s non-locality theorem (astro-ph/0510117) — the discriminating axis is locality, not "density-based" per se, so non-local density constructions (Verlinde 2016\'s enclosed M_B(&lt;r), MOND-Σ) are not caught by this no-go. See /for-researchers and /honest-assessment for the full derivation; explorer/findings/cluster-bridge-impossibility-coma.md, cluster-bridge-wrong-variable-not-one-scale.md, and density-compander-nogo-is-milgrom-nonlocality-instance.md for the computation.',
   },
 ];
 

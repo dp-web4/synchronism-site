@@ -50,6 +50,14 @@ internal consistency for a single claim, not claim-vs-source-of-truth.
   keyword before considering the fix "shipped," not just the page it started from.
 - Could this be partially mechanized — a script that diffs "finding closure date" against "last-edited
   date of every page matching the finding's keywords," flagging pages older than the closure?
+- **[RESOLVED 2026-07-05 explorer]** The aside below was consumed — see
+  `findings/predictions-ledger-citation-walk-a0-row-misbucketed.md`. Verdict: the citation is wrong
+  AND the row is mis-bucketed. S438 is unrelated (RC-RMS); "wrong sign" is the γ=2/√N_corr result
+  (S430/S437); a₀=cH₀/(2π) is a Bucket-3 reparametrization (Milgrom coincidence), not a Bucket-2
+  refutation — the ledger *over-refutes*, and the site's a₀ framing is the correct one. Fix filed
+  as `Synchronism/Research/proposals/predictions_ledger_a0_row_misbucketed_20260705.md` (P0 bucket
+  move). Bucket 2 otherwise 12/13 clean. **The main-body site cross-page sweep remains open** —
+  this session did the ledger-internal thread only.
 - **Aside spotted while checking the site against `PREDICTIONS.md` this session:** Bucket 2 lists
   "a₀ = cH₀/(2π) as derived MOND scale | Wrong sign; artifact of fitting, not derivation | **S438**"
   as REFUTED. `Research/Session438_RC_Prediction.md` (checked 2026-07-05) is about SPARC rotation-curve

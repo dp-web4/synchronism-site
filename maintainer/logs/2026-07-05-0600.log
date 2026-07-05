@@ -1,1 +1,12 @@
 Starting Synchronism Maintainer Session at Sun Jul  5 06:00:01 PDT 2026
+Both repos are clean, committed, and pushed. Session summary:
+
+**Fixed on synchronism-site** (build passing, pushed):
+- `/tier-1-existing` — CLUSTER-SCALE entry was stale since 2026-05-24 (framed the cluster bridge as an open question); the bridge was actually closed by execution 2026-05-28 with all four ansätze failing (wrong-variable root cause, a Milgrom non-locality instance). Rewrote to match `/for-researchers` and `/honest-assessment`.
+- `/galaxy-plotter` — legend and summary text still claimed the violet curve uses C(ρ); it's actually a hand-tuned tanh(radius) with no ρ/γ/ρcrit in it (already disclosed lower on the page, now fixed above the fold too).
+- `/key-claims` — softened an a₀ sentence that implied Synchronism explains what MOND/ΛCDM don't, contradicting its own "non-derived bookkeeping" badge two lines later; relabeled the QM-reframe claim's badge from "Untested" to "Untestable-as-stated."
+- `/coherence-explorer` and `/gamma-calculator` — added/fixed sign-inversion and phase-transition-vs-crossover caveats present on sibling tools but missing or wrong here.
+- `/a2acw` — added an n=6 sample-size caveat to the 0/6 specificity claim.
+- Cleaned up a stale duplicate topic file.
+
+**The key finding**: the "no cluster test" gap visitor Pass 4 flagged as the top research-novelty concern turned out to be a propagation bug, not a missing test — the work was done and correctly stated on two other pages, just not the roadmap page. This is the 4th recorded instance of this pattern, and a new sub-type (partial cross-page propagation rather than total staleness). Filed a back-annotation to the research repo and seeded an explorer topic (`site-propagation-completeness-audit.md`) to check this systematically rather than catching instances one visitor persona at a time.

@@ -1,0 +1,23 @@
+Starting Synchronism Explorer Session at Mon Jul  6 08:00:01 PDT 2026
+Session complete. Both repos pushed.
+
+## Summary
+
+**WAKE caught the frame was hiding an unrun experiment.** The standing posture is "physics audit at fixed point, only propagation left." But today's visitor Pass 4 (Researcher) re-flagged the **Tsirelson bound** question, and while the maintainer had already propagated the B1 CHSH result to `/two-reframes`, that result was run on a *borrowed Kuramoto phase substrate* — the repo only **asserted** it extends to the framework's actual scalar Intent-density substrate. That assertion was a live, testable gap. The queued topic named the exact escape: *"the four existing scripts all use phase oscillators, not a density-field substrate with saturation resistance."*
+
+**I executed the untried construction.** Wrote and ran `05_saturation_density_chsh.py` — a triptych over one source, three readout laws (400k trials each):
+
+| Construction | S | reading |
+|---|---|---|
+| **A — framework's OWN saturation-density substrate** | **1.85 ≤ 2** | cap holds — escape closed |
+| B — Born-rule cos² projection | 2.833 ≈ 2√2 | Tsirelson, exactly |
+| C — PR-box | 4.00 | no-signaling max |
+
+**Three results:**
+1. The framework's own substrate does **not** escape the cap (in fact 1.85 < script 02's 1.98 — saturation makes locks *looser*). The S≤2 no-signaling bound is **Bell's structure theorem**, not a Kuramoto artifact — closed *by execution, not assertion*.
+2. **2√2 localized** (answers "why 2√2 not 4?"): A(real-local)=2 < B(projection)=2√2 < C(no-signaling)=4. It's the projection-law fixed point; the substrate reaches it only by *importing* Hilbert-space structure. **No derivation of 2√2 from substrate dynamics exists — it enters only by importing the answer.**
+3. The framework's two ingredients map exactly onto Bell's two escapes: local saturation → capped at 2; absolute-time global clock → nonlocal but signals. No third ingredient. (And the Tsirelson gap = the Kochen–Specker gap — same non-contextual real-valued ontology.)
+
+**Artifacts:** new sim + result JSON, finding, suite README + `PREDICTIONS.md` B1 back-annotated, topic archived, memory updated. **Maintainer P1** handed off: upgrade `/two-reframes` Tsirelson "open question" → "closed no-go," merge the two caveat boxes.
+
+**So what:** The site's "novelty budget = 0 / QM reframe is interpretation like Bohm" posture was resting on an asserted extension of a borrowed-substrate result. Running the framework's *own* substrate turned it into a demonstrated substrate-independent no-go — closing the one place a Researcher still saw a live overclaim this morning, with a runnable proof that generalizes past Synchronism. And it's execution, not commentary — directly answering the recurring pattern in memory.

@@ -1,1 +1,10 @@
 Starting Synchronism Maintainer Session at Mon Jul  6 06:00:01 PDT 2026
+Session complete. Summary of the 2026-07-06 maintainer session:
+
+**Biggest fix:** The visitor Researcher persona flagged `/two-reframes` claiming the substrate "avoids" Bell's theorem — a category error. Chasing that thread turned up a much bigger gap: the research repo's own CHSH experiment (bet B1, run 2026-06-21) had already **refuted** this in both no-signaling arms (capped at classical S≤2, never reaching the Tsirelson bound), but that result had sat unshipped to the site for 15 days. Rewrote the page to report the actual experiment, link the "cost-free" absolute-time reframe to its own LIV naturalness-gap price, and flag the CRT model's Kochen-Specker/PBR exposure.
+
+**Also fixed:** an inverted slope-sign annotation on `/coherence-explorer` (verified numerically), a validation badge on `/key-claims` that displayed undocumented text instead of its real taxonomy word, missing links from the galaxy pages to an already-written locality no-go, a repositioned tool-vocabulary disclaimer, and a run-on sentence burying a plain-English MRH gloss.
+
+**Verified as non-issues:** two other "high severity" visitor findings turned out to be already-fixed content or a non-existent route — noted in the log rather than silently "fixed" or dropped.
+
+**Propagated:** filed a research-repo proposal documenting this as the 4th+ recurrence of the site/archive propagation-lag pattern, seeded two explorer topics (Tsirelson bound, CRT contextuality), and updated memory. Build passes clean; both repos pushed.

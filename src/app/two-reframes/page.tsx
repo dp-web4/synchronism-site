@@ -114,20 +114,27 @@ export default function TwoReframes() {
           underlying field.
         </p>
 
-        <h4>Why This Is Not a Hidden Variable Model</h4>
+        <h4>This Pays Bell&apos;s Theorem &mdash; It Does Not Avoid It</h4>
         <p>
-          Bell&apos;s theorem (1964) proves that no <strong>local hidden variable</strong> model &mdash; where
-          particles carry pre-determined answers &mdash; can reproduce quantum correlations. The CHSH bound
-          is |S|&nbsp;&le;&nbsp;2 for any LHV theory; quantum mechanics gives |S|&nbsp;&asymp;&nbsp;2.83.
+          Bell&apos;s theorem (1964) is a <strong>dichotomy</strong>, not a single constraint: any model
+          reproducing the quantum correlations must be nonlocal, superdeterministic, or retrocausal.
+          Declaring the substrate &ldquo;nonlocal by construction&rdquo; does not <em>evade</em> Bell &mdash;
+          it <em>chooses the nonlocal horn</em>, the same horn Bohmian mechanics sits on. That is a legitimate
+          position, but it is not a free one, and an earlier version of this page implied it was.
         </p>
         <p>
-          The substrate model is structurally different from LHV. The particles do not carry anything. They
-          are oscillations <em>in</em> the intent field, and the field maintains the phase relationship. The
-          substrate is everywhere &mdash; nonlocal by construction. There are no separate things coordinating;
-          there is one pattern spanning both locations, like a vibrating string with two ends. In the singlet
-          state, the pattern phase at location A is &phi;<sub>0</sub> and at
-          B is &phi;<sub>0</sub>&nbsp;+&nbsp;&pi; &mdash; not a correlation between separate things, but the
-          structure of the pattern itself.
+          The substrate model is structurally different from a local hidden-variable (LHV) theory. The
+          particles do not carry anything. They are oscillations <em>in</em> the intent field, and the field
+          maintains the phase relationship. The substrate is everywhere &mdash; nonlocal by construction. There
+          are no separate things coordinating; there is one pattern spanning both locations, like a vibrating
+          string with two ends. In the singlet state, the pattern phase at location A is &phi;<sub>0</sub> and
+          at B is &phi;<sub>0</sub>&nbsp;+&nbsp;&pi; &mdash; not a correlation between separate things, but the
+          structure of the pattern itself. That gets the substrate off the <em>local</em>-hidden-variable hook.
+          It does not, by itself, explain why nature stops at the <strong>Tsirelson bound</strong>
+          (|S|&nbsp;=&nbsp;2&radic;2&nbsp;&asymp;&nbsp;2.83) rather than the algebraic maximum of 4 that generic
+          no-signaling nonlocal (PR-box) correlations allow. A substrate reframe of QM owes an account of
+          <em> why 2&radic;2 and not 4</em> &mdash; and the honest state below is that the framework does not
+          yet have one.
         </p>
 
         <h4>Measurement as Resonant Interaction</h4>
@@ -144,21 +151,43 @@ export default function TwoReframes() {
           by particles, not faster-than-light communication.
         </p>
 
-        <h4>Bell Violations: Expected, Not Mysterious</h4>
+        <h4>The Test Was Run &mdash; and the Substrate Model Failed It (So Far)</h4>
         <p>
-          Bell&apos;s inequality bounds what is possible if you have two separate things carrying
-          pre-determined answers. But Synchronism does not have that. It has one pattern probed at two
-          locations. The substrate model must reproduce the quantum mechanical correlation
-          E(a,b)&nbsp;=&nbsp;&minus;cos(a&minus;b) to match experiment. Standard QM gives
-          |S|&nbsp;=&nbsp;2&radic;2&nbsp;&asymp;&nbsp;2.83 from this correlation (Tsirelson&apos;s bound).
+          &ldquo;One pattern probed at two locations&rdquo; is the right intuition to test, so it was tested:
+          the observer-relative CHSH experiment (<a href="https://github.com/dp-web4/Synchronism/tree/main/simulations/kuramoto-lattice-suite" target="_blank" rel="noopener noreferrer">kuramoto-lattice-suite</a>,
+          research-ledger bet <strong>B1</strong>), run 2026-06-21. Two constructions were built and both
+          were measured <em>only</em> through observer-pattern phase-lock, with freely chosen CHSH settings:
+        </p>
+        <ul style={{ color: 'var(--color-text-secondary)' }}>
+          <li><strong>Local construction</strong> (a shared preparation, no coupling between regions during
+            measurement): S&nbsp;=&nbsp;1.98 &mdash; at the classical bound, as a local-realist model must be.</li>
+          <li><strong>Nonlocal-grid construction</strong> (the shared substrate lets region B&apos;s state mix
+            into region A&apos;s measurement, tunable coupling g): S&nbsp;&equiv;&nbsp;2.00 for <em>every</em>
+            coupling strength tried, still with zero signaling. The reason is itself the finding: a uniform
+            shared phase only adds a constant offset to one side&apos;s readout axis, which is
+            <em> gauge-equivalent to relabeling the measurement angles</em> &mdash; smooth single-grid mediation
+            stays local-realist and buys nothing.</li>
+          <li>A third variant let the shared variable back-react on both probes (the &ldquo;global clock&rdquo;
+            construction) and reached S&nbsp;up&nbsp;to&nbsp;2.67 &mdash; but only by also introducing
+            signaling. No construction has reached the Tsirelson bound (2.83) <em>without</em> signaling.</li>
+        </ul>
+        <p>
+          <strong>Verdict (PREDICTIONS.md, bet B1): refuted, both no-signaling arms.</strong> As currently
+          constructed, the single-observer substrate reproduces only classical (S&nbsp;&le;&nbsp;2) correlations
+          &mdash; it does not yet reproduce the quantum correlation E(a,b)&nbsp;=&nbsp;&minus;cos(a&minus;b) that
+          gives Tsirelson&apos;s bound. This is the same point made structurally above: getting off the
+          local-hidden-variable hook (nonlocal by construction) is not the same as deriving <em>why</em> quantum
+          correlations saturate at 2&radic;2. The gap is now precisely named &mdash; a genuine no-signaling
+          violation needs a <em>non-relabelable, conditional</em> setting-dependence, a primitive this ontology
+          does not currently contain and would have to derive, not assume.
         </p>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           <strong>Open problem:</strong> Deriving E(a,b)&nbsp;=&nbsp;&minus;cos(a&minus;b) rigorously from the
           substrate phase geometry requires the measurement probabilities to follow the Born rule. But
           the Born rule derivation itself is acknowledged as possibly circular (see{' '}
           <a href="/born-rule">Born Rule</a>). Breaking this circle &mdash; deriving measurement
-          probabilities from substrate dynamics without assuming them &mdash; is the actual hard problem.
-          This is an area of active investigation, not a settled result.
+          probabilities from substrate dynamics without assuming them &mdash; is the actual hard problem, and
+          the B1 result above is the concrete evidence that it is unsolved, not just unformalized.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           Background: Research Sessions #228&ndash;231. An earlier version of this page claimed
@@ -240,7 +269,11 @@ export default function TwoReframes() {
             <strong style={{ color: '#f59e0b' }}>Honest caveat:</strong> The CRT temporal-scanning model
             is not yet mathematically formalized to the level where it reproduces all of standard QM&apos;s
             quantitative predictions. The analogy is compelling; the formalization is incomplete.
-            The mapping table above is conceptual, not derived.
+            The mapping table above is conceptual, not derived. &ldquo;Incomplete&rdquo; is not a small
+            residual: at face value, a fast deterministic cycle through definite states is a
+            <strong> non-contextual hidden-variable model</strong>, which collides directly with
+            Kochen&ndash;Specker contextuality and the PBR theorem unless the scanning is made contextual
+            &mdash; unsolved, same open problem as the B1 CHSH gap above, not a separate footnote.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.75rem', marginBottom: 0, fontSize: '0.85rem' }}>
             <strong>One quantitative foothold:</strong> the decoherence decay rate Γ = γ²(1−c), where c(d) = cos²(πd/λ₀), is the Palma–Suominen–Ekert 1996 correlated-dephasing variance (spin-boson / collective-dephasing physics, <em>Proc. R. Soc. A</em> 452, 567–584). This equation and its attribution appear on the{' '}
@@ -323,7 +356,21 @@ export default function TwoReframes() {
             <strong style={{ color: '#f59e0b' }}>Honest caveat:</strong> This reframes existing predictions,
             it does not generate new ones. GR&apos;s time dilation predictions are unchanged. The question is
             interpretive: does time dilate, or does the rate of pattern evolution change? Both produce
-            identical measurements. Distinguishing them experimentally is an open problem.
+            identical measurements &mdash; <strong>as a continuum theory, this is not distinguishable</strong>,
+            and that much is now resolved rather than open: the framework&apos;s own inflow-gravity model
+            advects every pattern by one universal rate (equivalent to
+            d&#x03C4;/dt&nbsp;=&nbsp;&radic;(1&minus;2GM/r) for <em>any</em> mechanism), which <em>is</em> the
+            equivalence principle &mdash; so it predicts clock universality, the opposite of the
+            mechanism-dependence a real instrument-effect claim would need to show. This reframe is not free:
+            it is the same absolute-time interpretation that produces the
+            16&ndash;28 order-of-magnitude Lorentz-violation naturalness gap documented on{' '}
+            <Link href="/honest-assessment#structural-tensions" style={{ color: 'var(--color-accent-blue)' }}>
+              Honest Assessment
+            </Link>. The only place mechanism-dependence could still show up is relocated, not open: a
+            discrete substrate sampled slightly differently by different patterns, at the LIV order &mdash;
+            which is exactly the channel under the heaviest observational pressure. Absolute time is
+            simultaneously this framework&apos;s only source of potential novelty and its sharpest refutation
+            exposure &mdash; the same commitment, priced on a different page.
           </p>
         </div>
 

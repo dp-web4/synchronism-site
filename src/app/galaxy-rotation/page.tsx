@@ -27,6 +27,19 @@ export default function GalaxyRotation() {
           We tested this against two major datasets.
         </p>
 
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          One structural reason to expect this fit to reparametrize rather than derive MOND: C(&#x03C1;) is a
+          function of <em>local</em> density, while the RAR is organized by g<sub>bar</sub>, a <em>non-local</em>
+          enclosed-mass acceleration. A pointwise map cannot in general reproduce an acceleration-space
+          relation across systems with different mass geometries except by per-system calibration &mdash; see
+          the{' '}
+          <Link href="/honest-assessment#structural-tensions" style={{ color: 'var(--color-accent-blue)' }}>
+            local-vs-non-local structural no-go
+          </Link>. The{' '}
+          <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link>&apos;s
+          hand-tuned radius stand-in is that no-go showing through in a single demo.
+        </p>
+
         <h2>Dataset Results</h2>
         <div className="grid-2" style={{ margin: '1.5rem 0' }}>
           <div className="card card-highlight">

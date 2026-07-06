@@ -198,6 +198,14 @@ export default function GalaxyPlotter() {
           C &#x2272; 0.28 — the curve never crosses its own knee, and the flat rotation the violet line shows
           would not materialize. The radius-sigmoid stand-in silently hides that failure. This is the strongest
           single piece of evidence on this page that the fit is a reparametrization rather than a mechanism.
+          The stand-in is forced, not incidental: C(&#x03C1;) is a function of <em>local</em> density, while the
+          rotation curve it needs to reproduce is organized by g<sub>bar</sub>, a <em>non-local</em>
+          enclosed-mass acceleration — see the{' '}
+          <a href="/honest-assessment#structural-tensions" style={{ color: 'var(--color-accent-blue)' }}>
+            local-vs-non-local structural no-go
+          </a>{' '}
+          for why a pointwise density map cannot in general reproduce an acceleration-space relation without
+          per-galaxy calibration.
         </div>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>

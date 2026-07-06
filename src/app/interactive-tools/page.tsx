@@ -80,6 +80,16 @@ export default function InteractiveTools() {
         All of Synchronism&apos;s interactive tools in one place. Each card shows an epistemic status
         badge so you know what you&apos;re looking at before you click in.
       </p>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem', maxWidth: '60ch' }}>
+        <strong>Before the legend:</strong> this is a <em>content grouping</em>, not the site&apos;s validation
+        badge taxonomy. &ldquo;Model Explainer&rdquo; means &ldquo;shows how the equation works,&rdquo; not a
+        verdict on whether the equation is correct. &ldquo;Reparametrization&rdquo; and &ldquo;Speculative&rdquo;
+        here match those two{' '}
+        <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
+          documented descriptive badges
+        </Link>{' '}
+        — no tool here is certified correct.
+      </p>
       <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2rem', fontSize: '0.8rem' }}>
         {Object.entries(statusStyle).map(([key, s]) => (
           <span key={key} style={{ padding: '0.15rem 0.6rem', borderRadius: '9999px', background: s.bg, color: s.color }}>

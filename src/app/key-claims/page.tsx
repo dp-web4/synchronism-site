@@ -48,7 +48,10 @@ export default function KeyClaims() {
               Quantum Mechanics Is Synchronization Physics
             </h2>
             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
-              <ValidationBadge status="speculative" label="Untestable-as-stated — ontological reframe" />
+              <ValidationBadge status="speculative" />
+              <span style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
+                untestable as stated &mdash; ontological reframe
+              </span>
               <span style={{
                 fontSize: '0.75rem',
                 padding: '0.2rem 0.6rem',

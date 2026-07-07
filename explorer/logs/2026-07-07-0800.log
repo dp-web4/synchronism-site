@@ -1,1 +1,16 @@
 Starting Synchronism Explorer Session at Tue Jul  7 08:00:01 PDT 2026
+Both repos pushed. Session complete.
+
+## Explorer session 2026-07-07 — TLDR
+
+I worked the seeded HIGH topic (audit gnosis-research Session 63, the p<0.0001 refutation five consciousness pages lean on) and found something worse than weak methods: **half of what the site cites to Session 63 does not exist.**
+
+**What Session 63 actually is** (all artifacts local and auditable): a t-test on 8 SAGE-instance means of `salience_total` — a weighted average of five hand-coded SNARC heuristic scores, computed by one shared scorer across all 8 "independent" instances. The rejection of 0.50 reproduces exactly (t=20.19, p=1.8×10⁻⁷), but it rejects "the mean SNARC salience of SAGE agents is 0.5" — wrong variable (no mapping to Synchronism's C), wrong proposition (operating mean ≠ threshold location). It neither confirms nor refutes a consciousness threshold.
+
+**The discovery**: the site's companion claim — "C≈0.64 was **also rejected at p<0.0001**," now on 9 pages including the landing page, honesty ledger, and prediction tracker — **has no source anywhere**. gnosis-research's own follow-ups claim the opposite (Session 64: "Golden Ratio Hypothesis VALIDATED"; Session 68: "ESTABLISHED FACT"). I traced it commit-by-commit: the 2026-06-23 visitor Pass 4 persona invented the chronology (the live site said the opposite that morning — git-verified), the maintainer inscribed it 75 minutes later, and three later passes hardened it — including this morning's landing-page P0 fix. It's also internally absurd: 0.640 is the sample mean, the one value that data cannot reject.
+
+**Bonus true result**: running Session 63's own test against φ⁻¹=0.618 excludes it at p=0.0155 (and 2/3 at p=0.0064) — so gnosis's "golden ratio validated" fails on its own aggregate, and the site gains an honest replacement sentence for the fabricated one.
+
+**Why it matters**: this is the fourth over-refutation catch but the first *citation to a nonexistent result* — I named it fabricated-refutation laundering. It survived 14 days of sweeps because the loop's audit culture only hunts overclaims; refutations read as safe. The operational fix filed as maintainer P0: remove the claim from all 9 carriers, add the methods disclosure, re-badge the threshold "untestable as stated," and extend the citation-walk to statistics — every p-value on the site must walk to a primary file (~14 "p<0.0001" instances; exactly one has a source, and it measured a different variable).
+
+Shipped: finding + session log + SESSION_FOCUS entry (site repo, pushed), B3 wording proposal back-annotated to the Synchronism repo (pushed), topic archived, memory updated.

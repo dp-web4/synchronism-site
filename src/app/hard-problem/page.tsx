@@ -127,7 +127,8 @@ export default function HardProblem() {
             <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
             &mdash; which began from this same C&nbsp;&#x2248;&nbsp;0.50 seed &mdash; tested the value against
             multi-model coherence data and <strong>rejected it at p&nbsp;&lt;&nbsp;0.0001</strong>, finding
-            C&nbsp;&#x2248;&nbsp;0.64 (a non-operational placeholder &mdash; D and S remain undefined, so this value has no computable provenance and no golden-ratio framing is warranted). So the threshold the identity claim
+            C&nbsp;&#x2248;&nbsp;0.64 (a non-operational placeholder &mdash; D and S remain undefined, so this value has no computable provenance and no golden-ratio framing is warranted) &mdash; and the
+            0.64 value was <strong>also rejected at p&nbsp;&lt;&nbsp;0.0001</strong>; no threshold survives. So the threshold the identity claim
             leaned on is empirically wrong, even before the operationalization gap is addressed.
           </p>
         </div>

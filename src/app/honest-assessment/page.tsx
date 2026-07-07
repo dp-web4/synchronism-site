@@ -482,6 +482,33 @@ export default function HonestAssessment() {
             </p>
           </div>
 
+          <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>Bell/CHSH Substrate Test (Bet B1) — Refuted, Both No-Signaling Arms</h3>
+              <ValidationBadge status="failed" label="Executed 2026-06-21 / 2026-07-06 — S ≤ 2 Without Signaling" />
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              The framework&apos;s single-observer substrate was tested directly against Bell: CHSH
+              simulations with freely chosen settings, measured only through observer-pattern
+              phase-lock. <strong>Local construction: S = 1.98. Nonlocal-grid construction:
+              S &equiv; 2.00 at every coupling strength (gauge-equivalent to relabeling the
+              measurement angles &mdash; a local model in disguise). Global-clock construction:
+              S up to 2.67, but only by introducing signaling.</strong> No construction reaches the
+              Tsirelson bound (2&radic;2 &asymp; 2.83) without signaling.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              <strong>Substrate-independence (run 2026-07-06):</strong> the same cap holds on the
+              framework&apos;s own saturation-gated Intent-density substrate (S = 1.85 &le; 2, no
+              signaling) &mdash; the S &le; 2 bound is Bell&apos;s structure theorem for any
+              real-valued local-realist model, not an artifact of the borrowed phase substrate.
+              The Born-rule cos&sup2; projection law reaches 2&radic;2 exactly, but only by importing
+              Hilbert-space structure wholesale. This is the framework&apos;s cleanest self-executed
+              negative result; full construction detail on{' '}
+              <a href="/two-reframes">Two Reframes</a>. The substrate&apos;s Bell behavior is not
+              an untested protocol: it was tested, by execution, and capped at the classical bound.
+            </p>
+          </div>
+
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>BTFR Slope (TEST-09) — MOND-shared, Not Discriminating</h3>
@@ -544,6 +571,16 @@ export default function HonestAssessment() {
               residual factor of ~2 — so scale-count alone is not the discriminator; the variable (local
               &#x03C1; vs non-local g<sub>bar</sub>) is.
             </div>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.75rem' }}>
+              <strong>The no-go on the velocity axis (2026-07-02):</strong> the same obstruction as a
+              sign statement — for the density knee to track MOND&apos;s acceleration threshold, the BTFR
+              forces &rho;<sub>crit</sub> &prop; a&#x2080;&sup2;/(GV&sup2;) &prop; <strong>V<sup>&minus;2</sup></strong>{' '}
+              (profile-independent); the framework asserts &rho;<sub>crit</sub> = A&middot;V<sup>+2</sup>.
+              The exponent is inverted, the magnitude is 240&times;&ndash;300,000&times; too high, and with the
+              framework&apos;s own values the entire luminous disk sits at C &#x2272; 0.28 — the knee is never
+              crossed inside a galaxy. No recalibration of A repairs a sign. Full derivation on{' '}
+              <a href="/parameter-derivations">Parameter Derivations</a>.
+            </p>
           </div>
 
           <div className="card">

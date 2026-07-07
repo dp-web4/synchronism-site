@@ -72,7 +72,7 @@ export default function CosmicInterference() {
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <Link href="/tier-1-existing" className="btn-primary">
-            Tier-1 Test Catalog &rarr;
+            Tier 1: Existing Data &rarr;
           </Link>
           <Link href="/top-5-tests" className="btn-secondary">
             Top 5 Decisive Tests

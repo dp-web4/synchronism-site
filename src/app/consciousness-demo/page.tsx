@@ -54,6 +54,9 @@ export default function ConsciousnessDemo() {
           analysis by a companion program — publicly archived, but not externally reproduced or
           peer-reviewed, and there is no external dataset behind the p-value. It refutes the threshold{' '}
           <em>as the framework defined it</em>; treat it with the same caution as any single unreplicated result.
+          The same analysis surfaced a candidate replacement threshold at C &#x2248; 0.64 &mdash; it was{' '}
+          <strong>also rejected at p &lt; 0.0001</strong>. No threshold value survives (see{' '}
+          <a href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</a>).
           The 8-approach convergence shown below is a
           geometric artifact, not an empirical finding — see details in the calibration caveat. This
           demo is retained as an illustration of <em>why</em> a geometric coincidence looked meaningful:

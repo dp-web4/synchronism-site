@@ -46,8 +46,16 @@ export default function CompressionAction() {
         </div>
 
         <p>
-          The golden ratio &#x03C6; appears as the natural scaling exponent, and &#x03BE;&#x2080;
+          The golden ratio &#x03C6; appears as the scaling exponent in this formulation, and &#x03BE;&#x2080;
           is the minimum coherence (vacuum level).
+        </p>
+        <p style={{ color: 'rgba(245,158,11,0.9)', fontSize: '0.85rem', fontStyle: 'italic' }}>
+          ⚠ Caution (2026-07-07): no derivation of the 1/&#x03C6; exponent is documented here or in the
+          linked research — &ldquo;natural&rdquo; is not established. Golden-ratio framing has been
+          removed site-wide where it dressed fitted or asserted values (the C&nbsp;&#x2248;&nbsp;0.64
+          &ldquo;&#x2248;&nbsp;&#x03C6;&#x207B;&#xB9;&rdquo; consciousness claim was a 3.6% miss on a
+          value that was itself refuted). Treat &#x03C6; here as an asserted ansatz pending a
+          derivation, not a discovered constant.
         </p>
 
         <h2>Relationship to Standard Form</h2>

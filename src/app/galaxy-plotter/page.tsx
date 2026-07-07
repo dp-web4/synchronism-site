@@ -104,6 +104,15 @@ export default function GalaxyPlotter() {
       <h1>Galaxy Curve Plotter</h1>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <div style={{ background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: 'var(--color-accent-blue)' }}>What this tool is for:</strong>{' '}
+          seeing the dark-matter problem itself — pick a real galaxy and watch the gray line (what
+          visible matter predicts) sag below the dots (what telescopes measure). That gap is the
+          puzzle. The violet and green model curves are <em>illustrative stand-ins</em> (disclosed in
+          full below), kept to show what &ldquo;a curve that fits&rdquo; looks like — and why a good
+          fit alone proves nothing. The real evidence about the framework lives in the caveats, not
+          the curves.
+        </div>
         <p>
           <strong>The dark matter puzzle in one picture:</strong> Physics predicts that galaxies
           should rotate more slowly at their outer edges (like planets in the solar system — the
@@ -198,6 +207,10 @@ export default function GalaxyPlotter() {
           C &#x2272; 0.28 — the curve never crosses its own knee, and the flat rotation the violet line shows
           would not materialize. The radius-sigmoid stand-in silently hides that failure. This is the strongest
           single piece of evidence on this page that the fit is a reparametrization rather than a mechanism.
+          The 2026-07-02 audit also showed the &#x03C1;<sub>crit</sub> = A&middot;V&sup2; scaling itself is
+          sign-inverted: MOND-matching forces the knee density to <em>fall</em> as V<sup>&minus;2</sup>{' '}
+          (BTFR envelope), while the framework makes it rise as V<sup>+2</sup> — see{' '}
+          <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</a>.
           The stand-in is forced, not incidental: C(&#x03C1;) is a function of <em>local</em> density, while the
           rotation curve it needs to reproduce is organized by g<sub>bar</sub>, a <em>non-local</em>
           enclosed-mass acceleration — see the{' '}

@@ -6,7 +6,7 @@ import ValidationBadge from '@/components/ValidationBadge';
 
 export const metadata: Metadata = {
   title: 'For Researchers: What\'s Citable — Synchronism',
-  description: 'Three citable negative results extracted from the failure documentation: local-density locality no-go, A2ACW program-level null, and dim-4 LIV exclusion of absolute-time substrates.',
+  description: 'Four citable negative results extracted from the failure documentation: local-density locality no-go, A2ACW program-level null, dim-4 LIV exclusion of absolute-time substrates, and the B1 CHSH substrate null (S ≤ 2 without signaling).',
 };
 
 export default function ForResearchers() {
@@ -20,9 +20,10 @@ export default function ForResearchers() {
           An arriving expert should not have to excavate the failure documentation to find what
           survives it. By the site&apos;s own scoreboard the framework has <strong>0 confirmed
           predictions, 0 independently-derived parameters, and 0 tests currently discriminating
-          from MOND+EFE+&Lambda;CDM</strong>. What remains citable are <strong>replications and
-          quantified instances of known results</strong> — both artifacts below survive the framework
-          being wrong, precisely because they do not depend on it being right.
+          from MOND+EFE+&Lambda;CDM</strong>. What remains citable are <strong>replications,
+          quantified instances of known results, and executed negative results</strong> — the four
+          artifacts below survive the framework being wrong, precisely because they do not depend
+          on it being right.
         </p>
 
         {/* Artifact 1: locality no-go */}
@@ -42,6 +43,16 @@ export default function ForResearchers() {
             at &#x0394;BIC=+184 (free fit collapses to MOND); the cross-system &#x03C1;&#x2194;g<sub>bar</sub>{' '}
             offset is ~1.7 dex; and clusters require a &#x03C1;<sub>crit</sub> 10<sup>4</sup>–10<sup>6</sup>&times;
             off the galaxy calibration (Coma, four ansätze, one structurally bounded at velocity ratio &le;2 vs observed 4.6).
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>One-line citable form — the sign statement (2026-07-02):</strong> a knee keyed on
+            local volumetric density must <em>fall</em> as V<sup>&minus;2</sup> to track an a&#x2080;
+            acceleration threshold (forced by the BTFR: r<sub>t</sub> &prop; V&sup2;, M &prop; V&#x2074;,
+            so &rho;<sub>t</sub> &prop; a&#x2080;&sup2;/GV&sup2;); the framework asserts
+            &rho;<sub>crit</sub> &prop; V<sup>+2</sup> — inverted sign, 240&times;&ndash;300,000&times;
+            magnitude error growing with V. This is profile-independent and holds for <em>any</em>{' '}
+            local-&rho; MOND mimic, not just this one — the no-go projected onto the velocity axis.
+            Detail on <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>The usable lemma is a locality triage:</strong> the discriminating axis for the
@@ -238,6 +249,37 @@ export default function ForResearchers() {
               Synchronism research archive
             </a>.{' '}
             Dim-4 c<sub>μν</sub> coefficient computed (2026-06-26): radiative value ~10<sup>&#x2212;2</sup>, 16–28 OOM above existing bounds (CPSU 2004 naturalness problem, not a data-driven refutation). For the framework to survive this channel, an unexhibited custodial mechanism must be specified — known candidates are SUSY (Groot Nibbelink &amp; Pospelov 2005) and anisotropic scale-hierarchy (Pospelov &amp; Shang 2012, demonstrated for Hořava–Lifshitz). This is the framework&apos;s most severe naturalness constraint. Corrected framing per 2026-06-30 explorer audit: earlier versions mislabeled this &ldquo;refuted&rdquo; and &ldquo;doubly-obstructed&rdquo; — both overstatements corrected here.
+          </p>
+        </div>
+
+        {/* Artifact 4: B1 CHSH substrate null */}
+        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-violet)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>4. CHSH substrate null — the single-observer substrate is capped at the classical bound (Bet B1, executed)</h2>
+            <ValidationBadge status="failed" label="S ≤ 2 Both No-Signaling Arms — Executed 2026-06-21 / 2026-07-06" />
+          </div>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            The framework&apos;s substrate ontology was tested against Bell by direct CHSH simulation
+            (kuramoto-lattice-suite, research-ledger bet B1), with freely chosen settings and
+            measurement only through observer-pattern phase-lock. Results:{' '}
+            <strong>local construction S = 1.98; nonlocal-grid construction S &equiv; 2.00 at every
+            coupling strength with zero signaling</strong> (a uniform shared phase is gauge-equivalent
+            to relabeling the measurement angles — smooth single-grid mediation stays local-realist);
+            a global-clock construction reaches S = 2.67 only by also signaling. The 2026-07-06 run
+            extends the cap to the framework&apos;s <em>own</em> saturation-gated Intent-density
+            substrate (S = 1.85 &le; 2, no signaling): the cap is <strong>substrate-independent</strong> —
+            Bell&apos;s structure theorem for any real-valued local-realist model, not an artifact of
+            the phase substrate. The triptych A (real-local) = 2 &lt; B (Born-rule cos&sup2;
+            projection) = 2&radic;2 &lt; C (PR-box) = 4 localizes the Tsirelson value as the fixed
+            point of the projection law — reachable only by importing Hilbert-space structure wholesale.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+            <strong>Why it transfers:</strong> &ldquo;our substrate is nonlocal by construction, so
+            Bell doesn&apos;t apply&rdquo; is a recurring move in emergent-QM proposals. This is a
+            minimal executed counterexample: declaring the substrate nonlocal does not evade Bell — it
+            chooses the nonlocal horn, and the construction must then produce a non-relabelable,
+            <em> conditional</em> setting-dependence or stay at S &le; 2. Full construction detail and
+            the open Born-rule problem on <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>.
           </p>
         </div>
 

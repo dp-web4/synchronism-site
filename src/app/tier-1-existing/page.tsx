@@ -100,7 +100,7 @@ const tests: Test[] = [
     prediction: '[Exploratory] Galaxy cluster separations may show oscillatory modulation at λ ~ 500 Mpc',
     kill: 'N/A — no amplitude derivation exists; no mechanism is specified; not falsifiable as stated',
     derivationHref: '/cosmic-interference',
-    alert: 'SHOULD BE DEMOTED TO TIER-2 (2026-05-17): This does not qualify as a Tier 1 falsification test. The /cosmic-interference page itself states "Without a derivation, this is not a prediction in the scientific sense — it is an exploratory hypothesis." No amplitude has been derived from γ or ρ_crit. No mechanism is specified (sound-horizon shift? phase rotation? coherence interference?). No engagement with DESI 2024-2025 BAO results. No kill criterion is physically meaningful without an amplitude. Including it in Tier 1 inflates the discriminating-test count. Retained here for continuity — recommended: promote to Tier 2 (exploratory hypothesis) pending derivation.',
+    alert: 'DEMOTED TO TIER-2 (executed 2026-07-07; flagged 2026-05-17): This does not qualify as a Tier 1 falsification test and no longer counts toward the Tier 1 inventory. The /cosmic-interference page itself states "Without a derivation, this is not a prediction in the scientific sense — it is an exploratory hypothesis." No amplitude has been derived from γ or ρ_crit. No mechanism is specified (sound-horizon shift? phase rotation? coherence interference?). No engagement with DESI 2024-2025 BAO results. No kill criterion is physically meaningful without an amplitude. The row is retained here, demoted in place, so the demotion is visible rather than silent — it is an exploratory hypothesis pending derivation, not a test.',
   },
   {
     id: 'TEST-08',

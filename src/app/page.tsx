@@ -238,7 +238,10 @@ export default function Home() {
               Because this is what testing an idea in public looks like &mdash; you get to watch a
               theory be taken apart honestly: which claims collapsed into known physics, which died
               against data, and what that rules out for <em>any</em> theory of the same shape. The
-              autopsy is the product.
+              autopsy is the product. In one sentence: the equation fits galaxy rotation &mdash; but
+              only as well as MOND, an existing 40-year-old idea, and never better. What would count
+              as a confirmation is a prediction that <em>differs</em> from MOND and &Lambda;CDM and
+              wins; no test currently on the books can deliver that.
             </p>
             <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
               Badges used below:{' '}
@@ -293,7 +296,7 @@ export default function Home() {
                   scatter). Dark matter mechanism: structural failure (Bullet Cluster sign error,
                   March 2026).
                 </p>
-                <span className="badge badge-failed">Failed — Mechanism Under Revision</span>
+                <span className="badge badge-failed" title="Prediction contradicted by data — kill criterion fired or claim demoted on audit">Failed — Mechanism Under Revision</span>
               </Link>
 
               <Link href="/gamma-boundary" className="card" style={{ textDecoration: 'none' }}>
@@ -309,12 +312,12 @@ export default function Home() {
               <Link href="/hard-problem" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Consciousness</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  Hard problem reframed; the consciousness threshold conjecture at C &#x2248; 0.50 has been
-                  refuted (gnosis-research, p &lt; 0.0001 &mdash; C &#x2248; 0.64 &#x2248; &#x03C6;&#x207B;&#xB9; found instead).
-                  D, S, and f in C = f(&#x03B3;, D, S) are not yet operationally defined &mdash;
-                  this is a typed signature, not a tested equation.
+                  Hard problem reframed; both proposed consciousness thresholds &mdash; C &#x2248; 0.50
+                  and the follow-up candidate C &#x2248; 0.64 &mdash; were rejected at p &lt; 0.0001
+                  (gnosis-research). No threshold survives. D, S, and f in C = f(&#x03B3;, D, S) are
+                  not yet operationally defined &mdash; this is a typed signature, not a tested equation.
                 </p>
-                <span className="badge badge-speculative">Speculative — Consciousness Threshold</span>
+                <span className="badge badge-speculative" title="Interpretive claim with no operational test as stated — the parent reframing is unfalsifiable; its only quantitative instances (both thresholds) are refuted">Speculative — Both Thresholds Refuted</span>
               </Link>
             </div>
           </section>
@@ -363,7 +366,7 @@ export default function Home() {
               </Link>
               <Link href="/test-catalog" className="card" style={{ textDecoration: 'none' }}>
                 <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Deep dive &middot; not a path step</div>
-                <h3>Test Catalog</h3>
+                <h3>Test Roadmap</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>24 experiments: what would break this?</p>
               </Link>
               <Link href="/research-philosophy" className="card" style={{ textDecoration: 'none' }}>

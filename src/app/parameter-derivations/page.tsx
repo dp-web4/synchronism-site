@@ -117,6 +117,28 @@ export default function ParameterDerivations() {
               &#x03B2;<sub>J</sub> = &#x03BB;<sub>Jeans</sub> / R<sub>half</sub> is the dimensionless Jeans-length-to-galaxy-size ratio
               (Session 53). Empirically &#x03B2;<sub>J</sub> &#x2248; 1.1 &#x00B1; 0.2 across SPARC galaxies.
             </p>
+            <div style={{ background: 'rgba(239, 68, 68, 0.12)', border: '1px solid rgba(239, 68, 68, 0.45)', borderRadius: '0.375rem', padding: '0.75rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+              <strong style={{ color: '#ef4444' }}>✗ LEAD AUDIT ITEM — the velocity exponent has the wrong <em>sign</em> for MOND-matching (2026-07-02, propagated 2026-07-07).</strong>{' '}
+              The audit below catches A&apos;s provenance, but the more decisive failure is the exponent itself.
+              For C(&rho;)&apos;s density threshold to coincide with MOND&apos;s acceleration threshold
+              (g<sub>bar</sub> = a&#x2080;), the knee must sit at the baryonic density of the MOND transition
+              radius. The BTFR (M<sub>bar</sub> = V&#x2074;/Ga&#x2080;) plus r<sub>t</sub> = V&sup2;/a&#x2080; force{' '}
+              <strong>&rho;<sub>crit</sub> &prop; a&#x2080;&sup2;/(GV&sup2;) &prop; V<sup>&minus;2</sup></strong>{' '}
+              — robust to baryon-profile choice (mean-enclosed and isothermal estimates both give exactly &minus;2),
+              magnitude ~0.01&ndash;0.3 M&#x2299;/pc&sup3; (galactic-outskirt densities, where a modification
+              <em> should</em> switch on). The framework asserts &rho;<sub>crit</sub> = A&middot;V<sup>+2</sup>,
+              giving ~70&ndash;2,600 M&#x2299;/pc&sup3; — <strong>240&times;&ndash;300,000&times; too high, and
+              scaling the opposite way</strong>: as galaxies get more massive the framework&apos;s knee density
+              rises while the MOND-transition density falls. No recalibration of A can repair an inverted
+              exponent. With the framework&apos;s own values (&rho;<sub>crit</sub> = 652 M&#x2299;/pc&sup3; at
+              V=150), the entire luminous disk sits at C &#x2272; 0.28 and never crosses the knee. The V&sup2;
+              exponent now has three mutually incompatible provenances — stated-Jeans &rarr; +0.5, code/usage
+              &rarr; +2, MOND-requirement &rarr; &minus;2 — and no derived one. This is the{' '}
+              <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>locality no-go</a>{' '}
+              (Milgrom instance) seen on the velocity axis: <em>a knee keyed on local volumetric density must
+              fall as V<sup>&minus;2</sup> to track an a&#x2080; acceleration threshold; the framework makes it
+              rise as V<sup>+2</sup></em>. Finding: <code>rho-crit-velocity-exponent-mond-requires-minus2.md</code>.
+            </div>
             <div style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.3)', borderRadius: '0.375rem', padding: '0.75rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
               <strong style={{ color: '#ef4444' }}>✗ CLOSED — Audited-Negative (2026-06-07).</strong> The decisive test was run
               against the Session 66 <em>script</em> (not the prose summary). Three findings:

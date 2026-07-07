@@ -40,6 +40,13 @@ export default function GammaCalculator() {
         <h1 style={{ margin: 0 }}>&#x03B3; Calculator</h1>
         <ValidationBadge status="audited-negative" label="Formula Audited-Negative — Sign Inverted for All Collective Systems" />
       </div>
+      <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
+        <strong style={{ color: 'var(--color-accent-blue)' }}>What this tool is for:</strong> pick a
+        physical system (ideal gas &rarr; BEC presets) or enter N<sub>corr</sub> yourself, and see the
+        &#x03B3; the formula assigns and how it reshapes the coherence S-curve. What to conclude: not a
+        physical estimate, but a live demonstration of the formula&apos;s central defect &mdash; watch
+        the most-correlated systems get the <em>flattest</em> curves, which is backwards.
+      </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
         &#x03B3; = 2/&#x221A;N<sub>corr</sub> assigns the <em>sharpest</em> coherence transition to the
         least-correlated system (ideal gas) and the <em>flattest</em> to the most-correlated (BCS

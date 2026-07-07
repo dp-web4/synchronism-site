@@ -289,6 +289,18 @@ export default function ResearchPhilosophy() {
             test (submit pre-Planck-era results in post-2015 vocabulary; measure true-positive rate). Full
             result on the <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</a>.
           </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem', marginBottom: 0 }}>
+            <strong>Registered next experiment — cross-vendor corpus control (2026-07-07):</strong>{' '}
+            the null&apos;s own diagnosis (shared-corpus vocabulary lock-in, not training-cutoff leakage)
+            points at one decisive control this program has not yet run: an adversarial pair whose
+            models come from vendors with maximally disjoint training pipelines, run against the 6
+            demoted claims plus a small OOD positive-control set. If the cross-vendor challenger
+            catches demotions the same-corpus pair missed, the null scopes to <em>corpus
+            monoculture</em>; if 0/6 again, it strengthens toward a ceiling on AI-adversarial
+            collaboration as such. Registered as a research proposal
+            (<code>a2acw_cross_vendor_corpus_control</code>); execution gates on access to a
+            genuinely different-corpus model pair.
+          </p>
         </div>
 
         <div className="card" style={{ background: 'var(--color-bg-secondary)', marginBottom: '1.5rem' }}>

@@ -263,7 +263,7 @@ export default function KeyClaims() {
               fontWeight: 500,
               whiteSpace: 'nowrap',
             }}>
-              Speculative &mdash; geometric artifact
+              Speculative (parent claim, unfalsifiable as stated) &mdash; both threshold values Failed
             </span>
           </div>
 
@@ -541,7 +541,7 @@ export default function KeyClaims() {
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <Link href="/test-catalog" className="btn-primary">
-            Full Test Catalog &rarr;
+            Full Test Roadmap &rarr;
           </Link>
           <Link href="/honest-assessment" className="btn-secondary">
             Honest Assessment

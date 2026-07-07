@@ -251,7 +251,7 @@ export default function QuantumPredictions() {
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <Link href="/test-catalog" className="btn-primary">
-            Full Test Catalog &rarr;
+            Full Test Roadmap &rarr;
           </Link>
           <Link href="/measurement-without-observers" className="btn-secondary">
             Back: Measurement Without Observers

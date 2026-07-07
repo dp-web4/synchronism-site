@@ -47,6 +47,13 @@ export default function PhaseBoundaryVisualizer() {
       <h1>Phase Boundary Visualizer</h1>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <strong style={{ color: 'var(--color-accent-blue)' }}>What this tool is for:</strong> drag
+          the slider to see which physical systems the &#x03B3; formula groups together &mdash; and why
+          that grouping is now known to be misleading (the placements carry the formula&apos;s
+          documented sign inversion: real BCS/BEC transitions are among the sharpest in nature, yet
+          the formula files them at the flat end).
+        </p>
         <p>
           The three regimes of &#x03B3; map qualitatively different correlation structures.
           Drag the slider to explore where different systems are <em>estimated</em> to fall.

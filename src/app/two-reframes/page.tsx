@@ -133,8 +133,13 @@ export default function TwoReframes() {
           It does not, by itself, explain why nature stops at the <strong>Tsirelson bound</strong>
           (|S|&nbsp;=&nbsp;2&radic;2&nbsp;&asymp;&nbsp;2.83) rather than the algebraic maximum of 4 that generic
           no-signaling nonlocal (PR-box) correlations allow. A substrate reframe of QM owes an account of
-          <em> why 2&radic;2 and not 4</em> &mdash; and the honest state below is that the framework does not
-          yet have one.
+          <em> why 2&radic;2 and not 4</em> &mdash; and the 2026-07-06 triptych run below localizes exactly
+          where that value lives: A&nbsp;(any real-valued local substrate)&nbsp;=&nbsp;2&nbsp;&lt;
+          B&nbsp;(Born-rule cos&sup2; projection)&nbsp;=&nbsp;2&radic;2&nbsp;&lt;
+          C&nbsp;(PR-box no-signaling maximum)&nbsp;=&nbsp;4. The Tsirelson value is a fixed point of the
+          <em> projection law</em> &mdash; a property of interfering complex amplitudes &mdash; and the
+          substrate reaches it only by importing that Hilbert-space structure wholesale. No derivation of
+          2&radic;2 from substrate dynamics exists; it enters only by importing the answer.
         </p>
 
         <h4>Measurement as Resonant Interaction</h4>
@@ -155,8 +160,9 @@ export default function TwoReframes() {
         <p>
           &ldquo;One pattern probed at two locations&rdquo; is the right intuition to test, so it was tested:
           the observer-relative CHSH experiment (<a href="https://github.com/dp-web4/Synchronism/tree/main/simulations/kuramoto-lattice-suite" target="_blank" rel="noopener noreferrer">kuramoto-lattice-suite</a>,
-          research-ledger bet <strong>B1</strong>), run 2026-06-21. Two constructions were built and both
-          were measured <em>only</em> through observer-pattern phase-lock, with freely chosen CHSH settings:
+          research-ledger bet <strong>B1</strong>), first run 2026-06-21, extended to the framework&apos;s
+          own density substrate 2026-07-06. Each construction was measured <em>only</em> through
+          observer-pattern phase-lock, with freely chosen CHSH settings:
         </p>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
           <li><strong>Local construction</strong> (a shared preparation, no coupling between regions during
@@ -170,6 +176,15 @@ export default function TwoReframes() {
           <li>A third variant let the shared variable back-react on both probes (the &ldquo;global clock&rdquo;
             construction) and reached S&nbsp;up&nbsp;to&nbsp;2.67 &mdash; but only by also introducing
             signaling. No construction has reached the Tsirelson bound (2.83) <em>without</em> signaling.</li>
+          <li><strong>Substrate-independence check (run 2026-07-06):</strong> the earlier runs used a
+            borrowed Kuramoto <em>phase</em> substrate, leaving one escape open &mdash; maybe the
+            framework&apos;s own scalar Intent-<em>density</em> substrate behaves differently. It was
+            built and run (construction 05): the saturation-gated density substrate, read out through
+            C(&rho;)-style saturation dynamics, gives <strong>S&nbsp;=&nbsp;1.85&nbsp;&le;&nbsp;2 with no
+            signaling</strong> &mdash; the same cap, in fact slightly worse than the phase substrate&apos;s
+            1.98, because saturation loosens some locks. The S&nbsp;&le;&nbsp;2 cap is Bell&apos;s structure
+            theorem for <em>any</em> real-valued local-realist model, not an artifact of the borrowed
+            substrate. The escape is closed by execution, not assertion.</li>
         </ul>
         <p>
           <strong>Verdict (PREDICTIONS.md, bet B1): refuted, both no-signaling arms.</strong> As currently

@@ -110,7 +110,7 @@ export default function Falsifiability() {
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <Link href="/test-catalog" className="btn-primary">
-            Full Test Catalog &rarr;
+            Full Test Roadmap &rarr;
           </Link>
           <Link href="/research-philosophy" className="btn-secondary">
             Research Philosophy

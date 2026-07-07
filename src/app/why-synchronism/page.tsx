@@ -70,7 +70,9 @@ export default function WhySynchronism() {
           all inputs it spans (&minus;1, +1), but the argument here is never negative, so C stays
           between 0 and 1. The &#x03B3; parameter is the dial that sets how abrupt the crowd&#x2192;band
           snap is &mdash; big &#x03B3;, sudden snap; small &#x03B3;, gradual fade; &#x03C1;<sub>crit</sub> is
-          a reference density setting where on the curve you are. The shape &mdash; tanh &mdash; is a phenomenological choice, not a derived result:
+          a reference density setting where on the curve you are. The shape &mdash; tanh &mdash; is a{' '}
+          <strong>phenomenological</strong> choice (plain words: picked because it matches the data,
+          not because a deeper theory demands it), not a derived result:
           any S-curve with the same saturation properties would fit the same data equally well.
           (Full step-by-step breakdown: <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Walkthrough &rarr;</Link>)
         </p>
@@ -80,7 +82,8 @@ export default function WhySynchronism() {
           When &#x03B3; is small (many correlated particles), the system is dense/collective (high C).
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', borderLeft: '2px solid rgba(245,158,11,0.4)', paddingLeft: '0.75rem' }}>
-          <strong>Circularity caveat:</strong> The 1/&#x221A;N<sub>corr</sub> scaling is a dimensional ansatz
+          <strong>Circularity caveat:</strong> The 1/&#x221A;N<sub>corr</sub> scaling is a dimensional{' '}
+          <strong>ansatz</strong> (an educated starting guess, shaped so the units work out)
           inspired by fluctuation theory &mdash; not a derivation from first principles. No counting protocol exists to
           derive N<sub>corr</sub> from a system&apos;s Hamiltonian (the equation describing all its
           interactions and energies) without first fitting &#x03B3; to observed data.
@@ -89,8 +92,10 @@ export default function WhySynchronism() {
           See <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator &rarr;</Link>
         </p>
         <p>
-          The tanh shape is a phenomenological choice — a member of the compander family
-          (μ-law audio companding, Hill/Naka–Rushton response functions, Langevin/Curie–Weiss saturation).
+          The tanh shape is a phenomenological choice — a member of the <strong>compander</strong> family
+          (short for compressor&ndash;expander: curves that squash a huge input range into a small
+          output range, the way audio volume-levelling does; examples include μ-law audio companding,
+          Hill/Naka–Rushton response functions, and Langevin/Curie–Weiss saturation).
           Any smooth S-curve with the same saturation properties would fit equally well; there is no
           variational principle or self-consistency equation that selects tanh specifically.
           The log-density argument is physically motivated. Then tested against data.
@@ -108,7 +113,7 @@ export default function WhySynchronism() {
               a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 10% &mdash; but this result is shared with MOND and other frameworks.
               The novel environment-dependent scatter prediction (TEST-03) fired its kill criterion (R²=0.14 &lt; 20% threshold).
             </p>
-            <span className="badge badge-reparametrization">Reparametrization | TEST-03 Kill Triggered</span>
+            <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — same math, not new physics; the TEST-03 scatter kill criterion also fired (R²=0.14 < 0.20)">Reparametrization | TEST-03 Kill Triggered</span>
           </div>
           <div className="card">
             <h3>Chemistry: &#x03B3; &#x2248; 1 Boundary</h3>
@@ -123,7 +128,7 @@ export default function WhySynchronism() {
                 quantum-coherent systems (BEC, BCS) sit at <em>low</em> C due to their tiny &#x03B3;.
               </small>
             </p>
-            <span className="badge badge-reparametrization">89% Boundary-Consistent | Template Bias Caveat</span>
+            <span className="badge badge-reparametrization" title="Descriptive rate, not a verdict — 89% reflects generic sigmoid behavior on density-monotonic properties; a polynomial null model matches it">89% Boundary-Consistent | Template Bias Caveat</span>
           </div>
         </div>
       </section>
@@ -137,7 +142,7 @@ export default function WhySynchronism() {
               Average error: 53%. The coherence function doesn&apos;t capture enough
               crystal-specific physics for accurate melting points.
             </p>
-            <span className="badge badge-failed">Failed</span>
+            <span className="badge badge-failed" title="Prediction contradicted by data — kill criterion fired or claim demoted on audit">Failed</span>
           </div>
           <div className="card">
             <h3>Superconductivity T<sub>c</sub></h3>
@@ -145,7 +150,7 @@ export default function WhySynchronism() {
               Predicted 607K for YBCO, actual is 93K. The &#x03B7; (reachability factor) turned out
               to be a reparametrization of Abrikosov-Gor&apos;kov pair-breaking (known since 1960).
             </p>
-            <span className="badge badge-reparametrization">Reparametrization</span>
+            <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — same math, not new physics">Reparametrization</span>
           </div>
         </div>
       </section>

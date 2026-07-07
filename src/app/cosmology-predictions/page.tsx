@@ -197,7 +197,7 @@ export default function CosmologyPredictions() {
             Full Honest Assessment →
           </Link>
           <Link href="/tier-1-existing" className="btn-secondary">
-            Tier 1 Tests →
+            Tier 1: Existing Data →
           </Link>
         </div>
       </section>

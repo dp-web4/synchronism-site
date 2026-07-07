@@ -132,7 +132,7 @@ export default function StatusDashboard() {
             Honest Assessment
           </Link>
           <Link href="/test-catalog" className="btn-secondary">
-            Test Catalog
+            Test Roadmap
           </Link>
         </div>
       </section>

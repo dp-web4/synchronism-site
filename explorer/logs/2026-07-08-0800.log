@@ -1,0 +1,16 @@
+Starting Synchronism Explorer Session at Wed Jul  8 08:00:01 PDT 2026
+Both repos committed and pushed. Session complete.
+
+## Explorer session 2026-07-08 — summary
+
+**WAKE decision:** Ran the morning's seeded citation-walk topic as the primary thread (five parallel walk agents over every load-bearing statistic), and executed the HIGH Peres–Mermin topic as the secondary. Both topics archived.
+
+**Finding 1 — the physics layer is provably clean.** Every CHSH S-value regenerates bit-identical from fixed-seed committed scripts; ΔBIC=+184 re-runs to +184.0 from committed SPARC data with the γ=0.489/RMS-tie pair literally printed; DESI, LIV, and *all* of yesterday's fresh inscriptions (S63 statistics, plotter formulas) recompute exactly from primaries — the provenance-walk-before-inscription rule demonstrably prevented new drift. Bonus: the plotter's open "A=47 vs 62.8" validation ask is answered (62.8 = 1/(G·a₀) theoretical; 47 = McGaugh empirical, correct for the V_flat definition as coded).
+
+**Finding 2 — TEST-03's "kill" is a second manufactured refutation.** Verified against primaries first-hand: the registered falsification threshold was r²<0.09 (which R²=0.138 *passes* — 0.20 was the success expectation, not a kill bar); the catalog postdates the measurement by 15 days, so "pre-registered" is false; 0.138 is a morphology term on N≈171 SPARC galaxies (archive S381: structure, not environment); the site's N=14,585 was spliced from an unrelated ALFALFA run, making its own p/N/R² triple arithmetically impossible; and "Session 616" never measured it. Honest status: **never run as registered** — and the registered environment test is runnable today with public catalogs. P0 filed for ~12 carrier pages.
+
+**Finding 3 — the bias is directional.** Across all citation-walk campaigns: 6 provenance breaks found, 6 over-refute, 0 over-claim (plus the wide-binary "80× below Gaia systematics" referent drift and the unreproducible "3,308 sessions" landing count). On an honesty-branded site, self-refutations are the least-scrutinized claims — the inverse of hype-corpus drift, and a candidate for the program's most transferable methodological result.
+
+**Finding 4 — Peres–Mermin executed:** suite script 06 derives the six constraints from the operators and exhausts all 512 non-contextual assignments → 0/512 consistent, best 5/6. The CRT scanning model's Kochen–Specker exclusion is now a runnable artifact of the same class as the CHSH triptych.
+
+**So what?** The rule born from the S63 fabrication found the second fabrication on its first systematic run, certified the physics layer clean in the same pass, and named a directional law worth testing beyond this corpus. Memory updated (one stale memory corrected — it had inherited the site's spliced N), back-annotations pushed to the research repo, maintainer P0/P1/P2 queue filed in the finding.

@@ -281,14 +281,19 @@ export default function TwoReframes() {
           marginBottom: '1.5rem',
         }}>
           <p style={{ color: 'var(--color-text-secondary)', margin: 0, fontSize: '0.9rem' }}>
-            <strong style={{ color: '#f59e0b' }}>Honest caveat:</strong> The CRT temporal-scanning model
-            is not yet mathematically formalized to the level where it reproduces all of standard QM&apos;s
-            quantitative predictions. The analogy is compelling; the formalization is incomplete.
-            The mapping table above is conceptual, not derived. &ldquo;Incomplete&rdquo; is not a small
-            residual: at face value, a fast deterministic cycle through definite states is a
-            <strong> non-contextual hidden-variable model</strong>, which collides directly with
-            Kochen&ndash;Specker contextuality and the PBR theorem unless the scanning is made contextual
-            &mdash; unsolved, same open problem as the B1 CHSH gap above, not a separate footnote.
+            <strong style={{ color: '#f59e0b' }}>Honest caveat (sharpened 2026-07-08):</strong> The CRT
+            temporal-scanning model is not yet mathematically formalized, and the mapping table above is
+            conceptual, not derived. But &ldquo;not yet formalized&rdquo; understates the obstruction: a fast
+            deterministic cycle through definite states is a
+            <strong> non-contextual hidden-variable model</strong>, and for that class Kochen&ndash;Specker is
+            not an open problem — it is a <strong>theorem-level exclusion</strong> (no consistent
+            non-contextual value assignment reproduces QM in Hilbert dimension ≥ 3), with PBR further
+            constraining the epistemic reading. The scanning picture survives only if made explicitly
+            contextual (the sampled value depending on the <em>global measurement context</em>, not just
+            timing) — <strong>no contextual version exists</strong>, and building one would surrender the
+            &ldquo;just sampling timing&rdquo; simplicity that makes the analogy compelling. This is the same
+            non-contextual real-valued ontology that caps the B1 CHSH score at S ≤ 2 above — one
+            obstruction, two corollaries, not two separate open questions.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.75rem', marginBottom: 0, fontSize: '0.85rem' }}>
             <strong>One quantitative foothold:</strong> the decoherence decay rate Γ = γ²(1−c), where c(d) = cos²(πd/λ₀), is the Palma–Suominen–Ekert 1996 correlated-dephasing variance (spin-boson / collective-dephasing physics, <em>Proc. R. Soc. A</em> 452, 567–584). This equation and its attribution appear on the{' '}

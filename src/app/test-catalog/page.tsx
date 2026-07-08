@@ -179,10 +179,17 @@ export default function TestCatalog() {
         <h2>Recommendation</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            <strong>Start with zero-cost Tier 1 tests.</strong> The BAO coherence modulation,
-            wide binary density dependence, and SPARC environment analysis can all be done with
-            existing public data. If these fail, no further investment is needed. If they succeed,
-            they build the case for Tier 2 pilot experiments.
+            <strong>Update (2026-07-08): the zero-cost Tier 1 recommendations have all been run or
+            closed.</strong> An earlier version of this box recommended starting with three
+            existing-data tests; all three have since been adjudicated. BAO coherence modulation:{' '}
+            <em>Withdrawn 2026-05-04</em> (internal contradiction, never adjudicated). SPARC
+            environment analysis (TEST-03): <em>Failed</em> — kill criterion triggered (R&sup2; = 0.14
+            vs the pre-registered 0.20). Wide binaries (TEST-02): <em>Self-Eliminating-or-Tie</em> —
+            the predicted 0.05–0.4% signal sits ~80&times; below Gaia DR3 systematics, and either
+            outcome of the ongoing Chae-vs-Banik dispute is covered by Newton or MOND respectively,
+            so no result selects this framework. See{' '}
+            <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
+            and <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: Existing Data</Link>.
           </p>
         </div>
 

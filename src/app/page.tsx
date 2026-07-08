@@ -67,7 +67,7 @@ export default function Home() {
         <div style={{ textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           <p style={{ marginBottom: '0.5rem' }}>
             <strong style={{ color: 'var(--color-accent-violet)' }}>C</strong> = coherence (0 = sparse/independent, 1 = dense/collective) &nbsp;
-            <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03B3;</strong> = sharpness of transition (= 2/&#x221A;N<sub>corr</sub>) &nbsp;
+            <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03B3;</strong> = sharpness of transition (the proposed &#x03B3; = 2/&#x221A;N<sub>corr</sub> relation is sign-inverted vs. mean-field physics and audited-negative — see <a href="/gamma-calculator" style={{ color: 'var(--color-accent-violet)' }}>&#x03B3; Calculator</a>) &nbsp;
             <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = saturation knee (reference density; not a critical point)
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>
@@ -312,12 +312,15 @@ export default function Home() {
               <Link href="/hard-problem" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Consciousness</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  Hard problem reframed; both proposed consciousness thresholds &mdash; C &#x2248; 0.50
-                  and the follow-up candidate C &#x2248; 0.64 &mdash; were rejected at p &lt; 0.0001
-                  (gnosis-research). No threshold survives. D, S, and f in C = f(&#x03B3;, D, S) are
-                  not yet operationally defined &mdash; this is a typed signature, not a tested equation.
+                  Hard problem reframed; the proposed C &#x2248; 0.50 threshold is untestable as
+                  stated &mdash; no procedure maps any measurement onto the C-axis, and the one
+                  empirical test cited for it (gnosis-research Session 63) measured a different
+                  variable. D, S, and f in C = f(&#x03B3;, D, S) are not yet operationally
+                  defined &mdash; this is a typed signature, not a tested equation.
+                  (A &ldquo;C &#x2248; 0.64 also rejected at p &lt; 0.0001&rdquo; claim previously
+                  shown here had no source and was removed 2026-07-08.)
                 </p>
-                <span className="badge badge-speculative" title="Interpretive claim with no operational test as stated — the parent reframing is unfalsifiable; its only quantitative instances (both thresholds) are refuted">Speculative — Both Thresholds Refuted</span>
+                <span className="badge badge-speculative" title="Interpretive claim with no operational test as stated — the parent reframing is unfalsifiable; no calibration maps any measurement to C, so the threshold cannot currently be tested">Speculative — Untestable as Stated</span>
               </Link>
             </div>
           </section>

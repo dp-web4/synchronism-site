@@ -378,6 +378,19 @@ const nextConfig = {
         destination: '/gamma-calculator',
         permanent: false,
       },
+      // /paths — guessed from nav label "Learning Paths" (visitor 2026-07-08 Pass 1)
+      {
+        source: '/paths',
+        destination: '/learning-paths',
+        permanent: false,
+      },
+      // /equation-anatomy — card is titled "Equation Anatomy" but page lives at
+      // /equation-walkthrough (visitor 2026-07-08 Pass 2 guessed-URL 404)
+      {
+        source: '/equation-anatomy',
+        destination: '/equation-walkthrough',
+        permanent: false,
+      },
     ];
   },
 };

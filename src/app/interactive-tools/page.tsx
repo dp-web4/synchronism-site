@@ -55,7 +55,7 @@ const coreTools = [
   {
     title: 'Chemistry Correlation Explorer',
     href: '/chemistry-correlation-explorer',
-    desc: 'See how γ correlates with chemical properties across 1,703 phenomena. High r values (0.98+) reflect density-monotonicity, not Synchronism-specific physics — null model comparison pending.',
+    desc: 'See how γ correlates with chemical properties across 1,703 phenomena. High r values (0.98+) reflect density-monotonicity, not Synchronism-specific physics — the tool shows the null model (2-parameter polynomial in Z) alongside the data, and the null matches or beats it.',
     tags: ['Advanced'],
     epistemic: 'reparametrization' as EpistemicStatus,
   },
@@ -65,7 +65,7 @@ const speculativeTools = [
   {
     title: 'Consciousness Threshold Demo',
     href: '/consciousness-demo',
-    desc: 'Eight approaches to coherence-based consciousness all converge near C ≈ 0.50 — a geometric artifact: all eight share the tanh assumption and cluster at its inflection by construction. Both C ≈ 0.50 (this tool) and the empirically-derived C ≈ 0.64 (gnosis-research) have been refuted at p < 0.0001. No calibration to EEG/fMRI/IIT data exists. This tool illustrates a mathematical property of the sigmoid, not a finding about consciousness.',
+    desc: 'Eight approaches to coherence-based consciousness all converge near C ≈ 0.50 — a geometric artifact: all eight share the tanh assumption and cluster at its inflection by construction. The threshold is untestable as stated: no calibration to EEG/fMRI/IIT data exists, and the one cited test (gnosis-research S63) measured a different variable. This tool illustrates a mathematical property of the sigmoid, not a finding about consciousness.',
     tags: ['Advanced'],
     epistemic: 'speculative' as EpistemicStatus,
   },

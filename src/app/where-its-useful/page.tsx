@@ -37,7 +37,7 @@ const applications = [
     where: 'gnosis-research',
     link: 'https://github.com/dp-web4/gnosis-research',
     linkLabel: 'github.com/dp-web4/gnosis-research',
-    what: 'A 4.5-month autonomous arc whose strongest, most reproducible results land in exactly this register — systems behavior — not hard-science prediction. (It also refuted the C ≈ 0.50 consciousness threshold at p < 0.0001.)',
+    what: 'A 4.5-month autonomous arc whose strongest, most reproducible results land in exactly this register — systems behavior — not hard-science prediction. (Its Session 63 also showed the C ≈ 0.50 consciousness threshold had never really been tested: the test variable was SNARC salience, not C.)',
   },
 ];
 

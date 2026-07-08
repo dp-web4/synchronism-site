@@ -36,9 +36,17 @@ const statusConfig: Record<ValidationStatus, { className: string; defaultLabel: 
 
 export default function ValidationBadge({ status, label }: ValidationBadgeProps) {
   const config = statusConfig[status];
+  // Contract (2026-07-08): every badge displays its formal status name, even when a
+  // free-text finding label is supplied — labels describe the specific result, they
+  // are not additional badge types. Skip the prefix if the label already contains it.
+  const text = !label
+    ? config.defaultLabel
+    : label.toLowerCase().includes(config.defaultLabel.toLowerCase())
+      ? label
+      : `${config.defaultLabel} — ${label}`;
   return (
-    <span className={config.className} title={config.definition}>
-      {label || config.defaultLabel}
+    <span className={config.className} title={`${config.defaultLabel}: ${config.definition}`}>
+      {text}
     </span>
   );
 }

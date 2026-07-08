@@ -45,6 +45,17 @@ export default function ForResearchers() {
             off the galaxy calibration (Coma, four ansätze, one structurally bounded at velocity ratio &le;2 vs observed 4.6).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Scope split — which half generalizes (2026-07-08):</strong> the three numbered
+            results carry different generality. The <em>sign statement below</em> (&rho;<sub>crit</sub>{' '}
+            must scale as V<sup>&minus;2</sup>) is BTFR-forced and profile-independent — it holds for any
+            local-&rho; MOND mimic. The <em>&#x0394;BIC=+184 ensemble rejection</em> is specific to the
+            log-density compander family actually tested (&mu; = tanh(&#x03B3;&nbsp;ln(1+x))); other
+            local-density functional forms would need their own ensemble runs. The cluster/offset
+            arguments sit in between: the ~1.7 dex &rho;&#x2194;g<sub>bar</sub> mismatch is a property of
+            the data geometry, but its magnitude was computed for this framework&apos;s calibration.
+            Cite the sign statement for generality; cite the &#x0394;BIC for this family.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>One-line citable form — the sign statement (2026-07-02):</strong> a knee keyed on
             local volumetric density must <em>fall</em> as V<sup>&minus;2</sup> to track an a&#x2080;
             acceleration threshold (forced by the BTFR: r<sub>t</sub> &prop; V&sup2;, M &prop; V&#x2074;,

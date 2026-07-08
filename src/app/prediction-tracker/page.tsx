@@ -32,7 +32,7 @@ const predictions = [
   { domain: 'Chemistry', name: 'Critical exponents', status: 'failed' as const },
   { domain: 'Chemistry', name: 'Hall coefficient vs γ', status: 'failed' as const },
   { domain: 'Chemistry', name: 'Magnetic susceptibility vs γ', status: 'failed' as const },
-  { domain: 'Consciousness', name: 'C ≈ 0.50 threshold — refuted (gnosis-research, p<0.0001); follow-up C ≈ 0.64 also rejected at p<0.0001, no threshold survives; neural predictions mis-anchored', status: 'reparametrization' as const },
+  { domain: 'Consciousness', name: 'C ≈ 0.50 threshold — untestable as stated (no measurement maps to C; the one cited test, gnosis-research S63, measured SNARC salience — a different variable); neural predictions inherit the verdict', status: 'speculative' as const },
   { domain: 'Consciousness', name: 'EEG anesthesia phase transition', status: 'untested' as const },
   { domain: 'Consciousness', name: 'Meditation coherence modulation', status: 'untested' as const },
   { domain: 'Consciousness', name: 'Circadian γ variation', status: 'untested' as const },

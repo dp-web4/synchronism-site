@@ -290,11 +290,11 @@ export default function KeyClaims() {
             the coherence function, chosen by the framework&apos;s internal convergence across 8
             Synchronism-based approaches &mdash; rather than fading smoothly across all coherence values.{' '}
             <span style={{ color: '#ef4444' }}>
-              That specific value has since been refuted in internal (unpublished, publicly archived) analysis: the companion program{' '}
+              The one empirical test ever cited for this value measured a different variable: the companion program{' '}
               <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
-              (which began from this 0.50 seed) tested it against multi-model coherence data and rejected
-              it at p&nbsp;&lt;&nbsp;0.0001, finding C&nbsp;&#x2248;&nbsp;0.64 &mdash; which was also rejected at p&nbsp;&lt;&nbsp;0.0001.
-              No threshold survives. The 34 dependent neural predictions are mis-anchored.
+              (Session 63) tested 0.50 against SNARC salience scores &mdash; a hand-coded heuristic
+              with no calibration to C &mdash; not against C itself. The threshold is untestable as
+              stated, and the 34 dependent neural predictions inherit that verdict.
             </span>
             Note: C&nbsp;&#x2248;&nbsp;0.50 is the arithmetic midpoint of [0,1), not the dynamically privileged
             point — the maximum rate of change occurs at C&nbsp;&#x2248;&nbsp;0.58–0.59 (vs log-density, γ=2)
@@ -343,15 +343,21 @@ export default function KeyClaims() {
               distinguishable from sophisticated compatibilism.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
-              <strong>Direct empirical refutation of the 0.50 value:</strong> the companion autonomous
+              <strong>What the one cited test actually measured (correction 2026-07-08):</strong> the companion
               program <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
-              (Session 63) &mdash; which <em>started from this very C&nbsp;&#x2248;&nbsp;0.50 seed</em> &mdash; tested
-              it against multi-model coherence data and <strong>rejected it at p&nbsp;&lt;&nbsp;0.0001</strong>,
-              with the data clustering near <strong>C&nbsp;&#x2248;&nbsp;0.64</strong> &mdash; which was also rejected at p&nbsp;&lt;&nbsp;0.0001.
-              No threshold survives.
-              Because the refuting program was inclined to confirm the seed and didn&apos;t, the refutation is
-              more credible, not less. The <Link href="/consciousness-predictions" style={{ color: 'var(--color-accent-blue)' }}>34 predictions</Link>{' '}
-              keyed to 0.50 are mis-anchored; re-keying to&nbsp;C&nbsp;&#x2248;&nbsp;0.64 is not possible either (also rejected). Both threshold values are refuted.
+              (Session 63) did not measure C. It measured SNARC <code>salience_total</code> &mdash; a weighted
+              mean of five hand-coded heuristics, one shared scoring function across 8 agent instances &mdash;
+              whose operating mean of 0.640&nbsp;&plusmn;&nbsp;0.018 rejects 0.50 <em>for that variable</em>{' '}
+              (t&nbsp;=&nbsp;20.19, p&nbsp;&#x2248;&nbsp;1.8&times;10<sup>&minus;7</sup>, n&nbsp;=&nbsp;8). With no
+              mapping from salience to C, this is a wrong-variable test: it neither refutes nor confirms a
+              C-threshold, which is consistent with the unrunnable verdict below (no contradiction &mdash; the
+              claim was never actually run). An earlier version of this page also said C&nbsp;&#x2248;&nbsp;0.64
+              was &ldquo;also rejected at p&nbsp;&lt;&nbsp;0.0001&rdquo;; a 2026-07-07 audit found that claim has
+              no source in any repository and it has been removed. What Session 63&apos;s own data <em>do</em>{' '}
+              exclude as the operating mean: &#x03C6;<sup>&minus;1</sup>&nbsp;=&nbsp;0.618 (p&nbsp;=&nbsp;0.0155)
+              and 2/3 (p&nbsp;=&nbsp;0.0064) &mdash; the follow-up &ldquo;golden ratio&rdquo; reading fails on its
+              own aggregate. The <Link href="/consciousness-predictions" style={{ color: 'var(--color-accent-blue)' }}>34 predictions</Link>{' '}
+              keyed to 0.50 inherit the untestable-as-stated status.
             </p>
           </div>
 

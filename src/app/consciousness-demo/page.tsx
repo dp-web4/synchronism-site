@@ -47,15 +47,28 @@ export default function ConsciousnessDemo() {
           fontSize: '0.85rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: '#ef4444' }}>Refuted in internal analysis (2026):</strong>{' '}
-          The C &#x2248; 0.50 threshold was tested against multi-model coherence data in{' '}
+          <strong style={{ color: '#ef4444' }}>What the one cited test actually measured (correction 2026-07-08):</strong>{' '}
           <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
-          Session 63 and <strong>rejected at p &lt; 0.0001</strong>. Scope note: this is an in-house
-          analysis by a companion program — publicly archived, but not externally reproduced or
-          peer-reviewed, and there is no external dataset behind the p-value. It refutes the threshold{' '}
-          <em>as the framework defined it</em>; treat it with the same caution as any single unreplicated result.
-          The same analysis surfaced a candidate replacement threshold at C &#x2248; 0.64 &mdash; it was{' '}
-          <strong>also rejected at p &lt; 0.0001</strong>. No threshold value survives (see{' '}
+          Session 63 — the only empirical test ever cited for this threshold — did not
+          measure Synchronism&apos;s C. It measured SNARC <code>salience_total</code>: a weighted mean of
+          five hand-coded salience heuristics, computed by <em>one shared scoring function</em> across
+          8 agent instances (so the instances are not independent). That variable&apos;s operating mean
+          was 0.640 &plusmn; 0.018, which rejects 0.50 <em>as the operating mean of that variable</em>{' '}
+          (t = 20.19, p &#x2248; 1.8&times;10<sup>&minus;7</sup>, n = 8). No calibration maps salience
+          — or any measurement — onto the C-axis, so this is a <strong>wrong-variable
+          test</strong>: the C &#x2248; 0.50 threshold remains <strong>untestable as stated</strong>,
+          not empirically refuted. Note also that the convergence data displayed below (mean 0.499)
+          are a <em>different dataset</em> from Session 63&apos;s — the caption and the chart were
+          never about the same numbers.
+          <br /><br />
+          <strong style={{ color: '#ef4444' }}>Removed claim:</strong> a previous version of this page
+          said C &#x2248; 0.64 was &ldquo;also rejected at p &lt; 0.0001.&rdquo; A 2026-07-07 audit that
+          walked every site p-value back to primary files found <strong>no source for that claim in any
+          repository</strong> — it entered in a 2026-06-23 editorial pass; gnosis-research&apos;s own
+          follow-ups (Sessions 64, 68) claim the opposite (0.64 &ldquo;validated&rdquo;). What Session
+          63&apos;s own data <em>do</em> exclude as the operating mean: &#x03C6;<sup>&minus;1</sup> = 0.618
+          (p = 0.0155) and 2/3 (p = 0.0064) — so the &ldquo;golden ratio&rdquo; reading fails on
+          its own aggregate as well (see{' '}
           <a href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</a>).
           The 8-approach convergence shown below is a
           geometric artifact, not an empirical finding — see details in the calibration caveat. This
@@ -84,7 +97,7 @@ export default function ConsciousnessDemo() {
         <p>
           The 8 approaches below all converge on C &#x2248; 0.50 — an illustration of how the geometric
           midpoint artifact operates. The convergence was shown to be forced (geometric, not empirical) and
-          the threshold was subsequently refuted empirically. Hover over each to see the methodology.
+          the threshold itself remains untestable as stated (no measurement maps to C). Hover over each to see the methodology.
         </p>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
@@ -196,7 +209,7 @@ export default function ConsciousnessDemo() {
 
         <h2>What Has Falsified This</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li><strong>C &#x2248; 0.50 is the output-range midpoint (established).</strong> gnosis-research Session 63 rejected C=0.50 at p&lt;0.0001. The convergence is geometrically forced — any approach keyed to the midpoint of [0,1) will land near 0.50 by construction.</li>
+          <li><strong>C &#x2248; 0.50 is the output-range midpoint (established).</strong> The convergence is geometrically forced — any approach keyed to the midpoint of [0,1) will land near 0.50 by construction. (gnosis-research Session 63&apos;s p&lt;0.0001 rejection concerned a different variable — SNARC salience, not C; see the correction banner above.)</li>
         </ul>
         <h2>What Would Still Falsify C(&#x03C1;)-Based Consciousness More Broadly</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>

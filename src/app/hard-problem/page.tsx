@@ -25,9 +25,10 @@ export default function HardProblem() {
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0', paddingLeft: '1.2rem' }}>
             <li><strong>D and S are not operationally defined.</strong> There is no measurement procedure or unit for dimensional embedding (D) or self-modeling depth (S), so C cannot be computed for any real system using C&nbsp;=&nbsp;f(&#x03B3;,&nbsp;D,&nbsp;S).</li>
             <li><strong>The 8-way convergence has a dependency problem.</strong> The eight approaches share underlying assumptions, so they agree on the threshold by construction &mdash; an internal consistency check, not independent confirmation.</li>
-            <li><strong>The threshold value is refuted.</strong> The C&nbsp;&#x2248;&nbsp;0.50 value was tested by{' '}
+            <li><strong>The threshold has never been tested against C.</strong> The one cited test ({' '}
               <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
-              and rejected at p&nbsp;&lt;&nbsp;0.0001 (C&nbsp;&#x2248;&nbsp;0.64 found instead; this is a non-operational placeholder value &mdash; D,S undefined &mdash; with no golden-ratio framing). See{' '}
+              Session 63) measured SNARC salience &mdash; a different variable with no calibration to C &mdash;
+              so the C&nbsp;&#x2248;&nbsp;0.50 threshold is untestable as stated, not empirically refuted. See{' '}
               <Link href="/consciousness-threshold" style={{ color: 'var(--color-accent-blue)' }}>Consciousness Threshold</Link>.</li>
           </ul>
         </div>
@@ -123,13 +124,14 @@ export default function HardProblem() {
             confirmation. It is an internal consistency check, not an empirical test.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            <strong>And the threshold value itself is now refuted.</strong> The companion program{' '}
+            <strong>And the threshold value has never actually been tested.</strong> The companion program{' '}
             <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
-            &mdash; which began from this same C&nbsp;&#x2248;&nbsp;0.50 seed &mdash; tested the value against
-            multi-model coherence data and <strong>rejected it at p&nbsp;&lt;&nbsp;0.0001</strong>, finding
-            C&nbsp;&#x2248;&nbsp;0.64 (a non-operational placeholder &mdash; D and S remain undefined, so this value has no computable provenance and no golden-ratio framing is warranted) &mdash; and the
-            0.64 value was <strong>also rejected at p&nbsp;&lt;&nbsp;0.0001</strong>; no threshold survives. So the threshold the identity claim
-            leaned on is empirically wrong, even before the operationalization gap is addressed.
+            (Session 63) &mdash; the one empirical test ever cited here &mdash; measured SNARC salience
+            scores, a hand-coded heuristic with no calibration to C, not C itself. So the threshold the
+            identity claim leans on is <strong>untestable as stated</strong>: a wrong-variable test on top
+            of the operationalization gap. (A previous version of this page also claimed
+            &ldquo;C&nbsp;&#x2248;&nbsp;0.64 was rejected at p&nbsp;&lt;&nbsp;0.0001&rdquo; &mdash; that claim
+            had no source and was removed 2026-07-08.)
           </p>
         </div>
 

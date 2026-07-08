@@ -5,6 +5,17 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
+// One-sentence translation for readers without the statistics vocabulary (added 2026-07-08
+// after a visitor log showed casual readers skim the second half of this page entirely).
+function PlainTerms({ children }: { children: React.ReactNode }) {
+  return (
+    <p style={{ background: 'rgba(59,130,246,0.07)', borderLeft: '3px solid rgba(59,130,246,0.5)', borderRadius: '4px', padding: '0.5rem 0.75rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.5rem 0' }}>
+      <strong>In plain terms:</strong> {children}{' '}
+      <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary&nbsp;&rarr;</Link>
+    </p>
+  );
+}
+
 export default function HonestAssessment() {
   return (
     <>
@@ -22,6 +33,18 @@ export default function HonestAssessment() {
         <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.9rem' }}>
           Validation badge definitions (canonical reference)
         </summary>
+
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
+          <strong>How to read a badge (contract, 2026-07-08):</strong> every badge has two parts. The color
+          and leading word(s) are the <em>formal status</em>, drawn only from the two families below (plus
+          deprecated back-compat tags). Any text after the dash is a <em>free-text finding descriptor</em>{' '}
+          specific to that result — e.g. &ldquo;Wrong Category,&rdquo; &ldquo;Dimensional Identity,&rdquo;
+          &ldquo;Naturalness Gap,&rdquo; &ldquo;Ontological Reframe.&rdquo; Descriptors are not additional badge
+          types; the epistemic verdict is always the formal status. Not every defined tag has a current
+          instance — tags exist to cover the claim lifecycle, not to guarantee one of each. (The
+          &ldquo;Model Explainer&rdquo; tag on the Tools page is a content grouping, not a validation badge —
+          it means &ldquo;shows how the equation works,&rdquo; with no verdict content.)
+        </p>
 
         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
           <strong>MRH-relationship tags</strong> describe how a claim sits in the current research inventory.
@@ -363,6 +386,12 @@ export default function HonestAssessment() {
               <h3>TEST-03: ALFALFA-SDSS TFR Scatter (Kill Criterion Triggered)</h3>
               <ValidationBadge status="failed" label="Kill Criterion Met — Denominator Under Audit" />
             </div>
+            <PlainTerms>
+              the framework predicted that a galaxy&apos;s environment would noticeably affect how tightly
+              its brightness and rotation speed track each other. The team pre-registered a pass mark
+              (&ldquo;explain at least 20% of the scatter&rdquo;); the real data came in at 14% — below the
+              mark the framework itself set. Failing your own pre-set bar is the strongest kind of failure.
+            </PlainTerms>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               The TEST-03 kill criterion states: &ldquo;TFR residual explains &lt;20% of scatter.&rdquo; The measured value
               is R&sup2; = 0.14 (environmental term explains 14% of total RAR scatter). Under a literal reading, the kill
@@ -382,6 +411,13 @@ export default function HonestAssessment() {
               <h3>RAR Transition Shape — SPARC ΔBIC=+184, γ=2 Refuted, γ<sub>free</sub>=MOND (2026-05-21)</h3>
               <ValidationBadge status="failed" label="Kill Criterion Triggered — CLOSED" />
             </div>
+            <PlainTerms>
+              across 175 galaxies analyzed together, the framework&apos;s preferred curve-shape fits
+              measurably worse than MOND&apos;s (ΔBIC is a fit-quality penalty; +184 is decisive, and even
+              the conservative estimate ≥ +33 is). If you let the framework&apos;s shape parameter float
+              freely, it simply turns into MOND&apos;s curve — so it is either worse than MOND or identical
+              to it, never better.
+            </PlainTerms>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               The only non-degenerate galaxy-scale discriminating test between the Synchronism compander
               (μ<sub>Syn</sub>&nbsp;=&nbsp;tanh(γ&nbsp;ln(1+x)), γ=2) and MOND&apos;s RAR interpolating function
@@ -405,6 +441,13 @@ export default function HonestAssessment() {
               <h3>TEST-04a: DESI RSD fσ₈ — Post-hoc Retrodiction, Disfavored on Amplitude (Reframed 2026-07-02)</h3>
               <ValidationBadge status="failed" label="Disfavored 2.4σ — σ₈ Amplitude — Post-hoc — Kill Criterion Triggered" />
             </div>
+            <PlainTerms>
+              the framework predicted the universe&apos;s large-scale structure should be about 10%
+              &ldquo;smoother&rdquo; (less clumpy) than standard cosmology expects. The DESI galaxy survey
+              measured the clumpiness (that&apos;s σ₈): the prediction misses by 2.4 standard deviations —
+              unlikely to be luck — and it was written down only after earlier hints pointed that way,
+              which makes it weaker still.
+            </PlainTerms>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               <strong>The load-bearing constraint is amplitude, not direction.</strong> Session 107 (Dec 2025)
               predicted σ₈&nbsp;≈&nbsp;0.76 (calibrated to the then-live S₈ lensing tension). DESI DR1 full-shape
@@ -487,6 +530,13 @@ export default function HonestAssessment() {
               <h3>Bell/CHSH Substrate Test (Bet B1) — Refuted, Both No-Signaling Arms</h3>
               <ValidationBadge status="failed" label="Executed 2026-06-21 / 2026-07-06 — S ≤ 2 Without Signaling" />
             </div>
+            <PlainTerms>
+              Bell tests give quantum mechanics a distinctive score: real experiments reach about 2.83,
+              while any classical, local mechanism can score at most 2. Simulations built from this
+              framework&apos;s own machinery score 1.85–2.00 — classical territory — and only beat 2 when
+              allowed to cheat with faster-than-light signaling. So the framework doesn&apos;t sidestep the
+              famous quantum weirdness; it fails the same test classical physics fails.
+            </PlainTerms>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               The framework&apos;s single-observer substrate was tested directly against Bell: CHSH
               simulations with freely chosen settings, measured only through observer-pattern
@@ -542,6 +592,13 @@ export default function HonestAssessment() {
               <h3 style={{ color: 'var(--color-accent-violet)' }}>Structural No-go: Local Density vs Non-local Acceleration (Milgrom 2005 instance)</h3>
               <ValidationBadge status="failed" label="Wrong Variable (2026-06-01)" />
             </div>
+            <PlainTerms>
+              the framework computes its gravity boost from how dense matter is <em>right at each point</em>.
+              But real galaxy data organize by the total pull of <em>everything enclosed within your orbit</em> —
+              a fundamentally different quantity. No single density threshold can bridge the two across
+              systems (it misses clusters by factors of thousands), which is why the galaxy fits can&apos;t
+              extend anywhere else.
+            </PlainTerms>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               C(&#x03C1;) is a function of <em>local density</em> &#x03C1;. The RAR/MOND relation it mimics
               in galaxies is a function of g<sub>bar</sub> — the <em>enclosed-mass acceleration</em>, a
@@ -601,6 +658,13 @@ export default function HonestAssessment() {
               <h3>Lorentz Invariance: Preferred-Frame + Dim-4 Naturalness Gap (Added 2026-07-02)</h3>
               <ValidationBadge status="audited-negative" label="Naturalness Gap: 16–28 OOM; custodial escapes unexhibited" />
             </div>
+            <PlainTerms>
+              the framework needs a universal &ldquo;absolute clock,&rdquo; which physics-wise means a preferred
+              frame of reference. Coupling that to known particle physics generically produces effects that
+              experiments have already excluded at 16–28 orders of magnitude below the expected size. Other
+              theories have known escape mechanisms; this framework implements none of them. Not a data
+              refutation — a severe &ldquo;why don&apos;t we see it?&rdquo; problem.
+            </PlainTerms>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               The framework&apos;s defining commitment — a discrete substrate with absolute time — generates a
               preferred rest frame. Two computed consequences: (1) no discrete 3D lattice has continuous
@@ -672,8 +736,11 @@ export default function HonestAssessment() {
               no procedure maps any measurement (EEG phase coherence, fMRI, &#x03A6;) onto the C-axis — the
               claim is currently <em>unrunnable</em>, which is the stronger verdict. Calling these
               &ldquo;falsifiable&rdquo; without the calibration step would contradict that verdict.
-              Both candidate threshold values (C &#x2248; 0.50 and C &#x2248; 0.64) were separately rejected
-              at p &lt; 0.0001 in internal analysis.
+              Consistent with that: the one internal test ever cited against the 0.50 value
+              (gnosis-research Session 63) measured SNARC salience &mdash; a different variable with no
+              mapping to C &mdash; so no threshold value has actually been tested. (A prior version of
+              this page said both 0.50 and 0.64 were &ldquo;rejected at p &lt; 0.0001&rdquo;; the 0.64
+              rejection had no source in any repository and was removed 2026-07-08.)
             </p>
           </div>
 
@@ -757,9 +824,13 @@ export default function HonestAssessment() {
           Stiskalek &amp; Desmond 2023 (exhaustive regression null over galaxy features). The
           &#963;<sub>int</sub>&nbsp;=&nbsp;0.086 figure is addressed above &mdash; it inverted the source
           session&apos;s own retracted verdict. Demotion base rate across the whole program: 9 of 9 audited
-          claims (the prior 6 &ldquo;Validated&rdquo; claims plus these 3) failed to survive. The remaining
-          44 contributions are not yet swept and remain this site&apos;s only unaudited surface; the demotion
-          prior for them is correspondingly low. Full list in the{' '}
+          claims (the prior 6 &ldquo;Validated&rdquo; claims plus these 3) failed to survive. Given that
+          record, the honest prior on any not-yet-swept contribution is <strong>near-certain demotion</strong>,
+          not residual upside — and the research archive&apos;s own later sessions (#631–#691) have in fact
+          already demoted the remainder in-archive (cosmology: zero novel items; C(&#x03C1;)&nbsp;&rarr;&nbsp;MOND
+          + Curie-paramagnet identities verified by computer algebra; chemistry claims reduce to the Debye
+          model; the &ldquo;47&rdquo; count itself is a flagged ~57% overcount against a canonical list of ~30).
+          The site&apos;s citation-walk of those in-archive demotions is ongoing. Full list in the{' '}
           <Link href="/publication-roadmap" style={{ color: 'var(--color-accent-blue)' }}>publication roadmap</Link>.
         </p>
 

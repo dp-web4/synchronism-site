@@ -90,17 +90,18 @@ export default function ConsciousnessPredictions() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{ padding: '0.85rem 1.1rem', background: 'rgba(239,68,68,0.07)', borderRadius: '6px', borderLeft: '3px solid #ef4444', marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
-            <strong>Read this first — the anchor value is refuted.</strong> Every prediction below is keyed
-            to a consciousness threshold at C&nbsp;&#x2248;&nbsp;0.50. That value was tested directly by the
-            companion program{' '}
+            <strong>Read this first — the anchor value has never been tested against C.</strong> Every
+            prediction below is keyed to a consciousness threshold at C&nbsp;&#x2248;&nbsp;0.50. The one
+            empirical test ever cited against that value — companion program{' '}
             <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
-            (Session 63) and <strong>rejected at p&nbsp;&lt;&nbsp;0.0001</strong>; the data suggested C&nbsp;&#x2248;&nbsp;0.64,
-            which was <strong>also rejected at p&nbsp;&lt;&nbsp;0.0001</strong>. No replacement threshold survives.
-            The predictions remain genuinely falsifiable — but they are now <strong>mis-anchored</strong>:
-            pointed at a refuted value, with no operationally-defined replacement (D and S undefined; no
-            C measurement protocol exists). See the{' '}
+            Session 63 — measured SNARC salience, a different variable with no calibration to C, so it
+            neither refutes nor confirms a C-threshold. (A prior version of this page also said
+            C&nbsp;&#x2248;&nbsp;0.64 was &ldquo;rejected at p&nbsp;&lt;&nbsp;0.0001&rdquo;; that claim had no
+            source and was removed 2026-07-08.) The predictions remain genuinely falsifiable in form — but
+            they are <strong>unrunnable</strong>: pointed at an untestable anchor, with no
+            operationally-defined replacement (D and S undefined; no C measurement protocol exists). See the{' '}
             <Link href="/consciousness-threshold" style={{ color: 'var(--color-accent-blue)' }}>Consciousness Threshold</Link>{' '}
-            page for the refutation in full.
+            page for the full correction.
           </p>
         </div>
         <p>
@@ -152,8 +153,8 @@ export default function ConsciousnessPredictions() {
 
         <h2>Honest Caveats</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li>The C &#x2248; 0.50 threshold was <strong>empirically refuted (p &lt; 0.0001)</strong> by gnosis-research; the refit suggested C &#x2248; 0.64, which was also rejected at p &lt; 0.0001. Both threshold values are refuted. No replacement is computable until D and S are operationally defined.</li>
-          <li>Even the corrected threshold assumes a specific mapping from neural activity to C that hasn&apos;t been calibrated</li>
+          <li>The C &#x2248; 0.50 threshold is <strong>untestable as stated</strong> — the one cited test (gnosis-research Session 63) measured SNARC salience, not C, and no calibration maps any measurement to the C-axis. No replacement is computable until D and S are operationally defined.</li>
+          <li>Any future threshold test requires a specific mapping from neural activity to C that hasn&apos;t been calibrated</li>
           <li>Many predictions are under-specified (what counts as &ldquo;optimizing toward &#x03B3; &#x2248; 1&rdquo;?)</li>
           <li>AI consciousness predictions are currently untestable</li>
           <li>The 34 predictions come from a single theoretical framework; independent derivations would strengthen them</li>

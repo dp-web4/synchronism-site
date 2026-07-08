@@ -482,6 +482,13 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'Computational fluid dynamics solves the Navier-Stokes equations on a discrete grid (finite-element, finite-volume, or lattice methods). SPINE.md describes Synchronism as a "CFD-like model": reality is a Planck-scale discrete grid where a field (Intent) flows, with saturation resistance forming walls that stabilize patterns. The analogy emphasizes that Synchronism models dynamics (flowing, saturating) on a grid, not objects in a container. Like CFD, stability emerges from the interplay of flow and boundary conditions — not from properties of the objects themselves.',
     learnMore: '/core-idea',
   },
+  'chsh': {
+    term: 'CHSH',
+    fullName: 'Clauser-Horne-Shimony-Holt inequality',
+    brief: 'The standard experimental form of Bell\'s inequality: local hidden-variable theories score S \u2264 2; quantum mechanics reaches S = 2\u221a2 \u2248 2.83 (Tsirelson\'s bound); experiments confirm the quantum value.',
+    explanation: 'CHSH (Clauser-Horne-Shimony-Holt, 1969) turns Bell\'s theorem into a measurable number: two parties each choose between two measurement settings, and a correlation score S is computed. Any local realist model (each system carrying pre-set answers, no faster-than-light influence) obeys S \u2264 2. Quantum entanglement reaches S = 2\u221a2 \u2248 2.83 but no higher (Tsirelson\'s bound); no-signaling alone would allow up to S = 4 (the PR-box). Real experiments robustly measure \u2248 2.83. The Synchronism substrate was tested against CHSH directly (Bet B1): local constructions score S = 1.98, the framework\'s own saturation-density substrate scores S = 1.85, and no construction exceeds 2 without signaling \u2014 the substrate pays Bell\'s cost rather than avoiding it.',
+    learnMore: '/two-reframes',
+  },
   'session': {
     term: 'Session',
     fullName: 'Session (research unit)',

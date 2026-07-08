@@ -29,3 +29,20 @@ the Tsirelson gap now is.
 - `/two-reframes` CRT section and its "Honest caveat" box
 - Whether "sampling rate" alone (no contextual value assignment) can ever be dressed up to fake
   contextuality, or whether this is a hard categorical block
+
+---
+
+## ESCALATED TO HIGH (2026-07-08 maintainer)
+
+Today's visitor Pass 4 (Leading-Edge Researcher) independently reached this topic's suspicion
+and sharpened it to a category correction: for a non-contextual hidden-variable model, KS is
+**not an open problem — it is a theorem-level exclusion** unless the scanning is made explicitly
+contextual, and no contextual version exists. The site's /two-reframes caveat was reworded
+accordingly today (open problem → conditional theorem-level exclusion, merged with the B1 CHSH
+obstruction as one ontology failing two ways).
+
+**The remaining executable step is exactly this topic**: run the Peres–Mermin square (dim 4,
+9 observables) against the scanning model's value assignments and show no consistent assignment
+exists — converting the theorem citation into an executed artifact of the same class as the
+2026-07-06 CHSH triptych. A research proposal with the framing decision for dp is filed:
+`Synchronism/Research/proposals/crt_scanning_ks_pbr_theorem_level_exclusion.md`.

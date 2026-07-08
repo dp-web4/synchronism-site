@@ -21,7 +21,7 @@ export default function ConsciousnessThreshold() {
     <>
       <Breadcrumbs currentPath="/consciousness-threshold" />
       <h1>Consciousness Threshold</h1>
-      <ValidationBadge status="reparametrization" label="C ≈ 0.50 refuted (p < 0.0001); refit C ≈ 0.64 also rejected; no threshold computable" />
+      <ValidationBadge status="speculative" label="Untestable as stated — no calibration maps any measurement to C; the one cited test measured a different variable" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{ padding: '0.75rem 1rem', background: 'rgba(245,158,11,0.07)', borderRadius: '6px', borderLeft: '3px solid #f59e0b', marginBottom: '1.5rem' }}>
@@ -59,29 +59,36 @@ export default function ConsciousnessThreshold() {
 
         <div style={{ padding: '0.85rem 1.1rem', background: 'rgba(239,68,68,0.07)', borderRadius: '6px', borderLeft: '3px solid #ef4444', margin: '1.5rem 0' }}>
           <h3 style={{ color: '#ef4444', marginTop: 0, marginBottom: '0.5rem', fontSize: '1rem' }}>
-            The 0.50 value has been empirically refuted (p &lt; 0.0001)
+            What the one cited test actually measured (correction 2026-07-08)
           </h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem' }}>
             The companion autonomous program{' '}
             <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
-            (public, Session 63) tested the C&nbsp;&#x2248;&nbsp;0.50 threshold directly against multi-model
-            coherence data and <strong>rejected it at p&nbsp;&lt;&nbsp;0.0001</strong>. The data suggested C&nbsp;&#x2248;&nbsp;0.64,
-            which was <strong>also rejected at p&nbsp;&lt;&nbsp;0.0001</strong> — so neither value survives.
+            (public, Session 63) is the only empirical test ever cited for this threshold — and it
+            did not measure Synchronism&apos;s C. It measured SNARC <code>salience_total</code>, a weighted
+            mean of five hand-coded salience heuristics computed by one shared scoring function across
+            8 agent instances. That variable&apos;s operating mean was 0.640&nbsp;&plusmn;&nbsp;0.018, rejecting
+            0.50 <em>as the operating mean of that variable</em> (t&nbsp;=&nbsp;20.19,
+            p&nbsp;&#x2248;&nbsp;1.8&times;10<sup>&minus;7</sup>, n&nbsp;=&nbsp;8). Since no calibration maps
+            salience — or anything else — onto the C-axis, this was a <strong>wrong-variable test</strong>:
+            the C&nbsp;&#x2248;&nbsp;0.50 threshold is <strong>untestable as stated</strong>, not empirically refuted.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem' }}>
-            Why this is credible rather than dismissible: gnosis-research <em>started from this very
-            C&nbsp;&#x2248;&nbsp;0.50 seed</em>. It was the companion program inclined to confirm the threshold —
-            and it refuted it anyway. That is not an independent confirmation, but it is the opposite of
-            motivated reasoning.
+            <strong>Removed claim:</strong> earlier versions of this page said C&nbsp;&#x2248;&nbsp;0.64 was
+            &ldquo;also rejected at p&nbsp;&lt;&nbsp;0.0001.&rdquo; A 2026-07-07 audit walking every site p-value
+            to primary files found no source for that claim in any repository — gnosis-research&apos;s own
+            follow-ups (Sessions 64, 68) claim the opposite. What Session 63&apos;s own data <em>do</em> exclude
+            as the operating mean: &#x03C6;<sup>&minus;1</sup>&nbsp;=&nbsp;0.618 (p&nbsp;=&nbsp;0.0155) and
+            2/3 (p&nbsp;=&nbsp;0.0064) — the &ldquo;golden ratio&rdquo; reading fails on its own aggregate.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
-            With the value refuted and the refit also rejected, the 8-way convergence above is best read
+            The 8-way convergence above is best read
             as <strong>normalization / selection on the tanh output-midpoint</strong>: any approach mapping
             its criterion onto the [0,1)-bounded C scale lands near the arithmetic midpoint by construction.
             The{' '}
             <Link href="/consciousness-predictions" style={{ color: 'var(--color-accent-blue)' }}>34 neural predictions</Link>{' '}
-            keyed to 0.50 are <strong>mis-anchored</strong> — falsifiable still, but pointed at a refuted threshold.
-            No replacement threshold is computable until D and S are operationally defined.
+            keyed to 0.50 inherit the untestable-as-stated verdict — no measurement maps to C, and
+            no replacement threshold is computable until D and S are operationally defined.
           </p>
         </div>
 
@@ -177,7 +184,7 @@ export default function ConsciousnessThreshold() {
 
         <h2>Honest Caveats</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li><strong>Both threshold values are refuted (p &lt; 0.0001):</strong> gnosis-research rejected C&nbsp;&#x2248;&nbsp;0.50 starting from that very seed (refutation against its own prior, not from motivated skepticism). The data suggested C&nbsp;&#x2248;&nbsp;0.64, which was also rejected at p&nbsp;&lt;&nbsp;0.0001. No anchored threshold survives. The 8-way convergence is a normalization artifact, not corroboration.</li>
+          <li><strong>No threshold value has ever been tested against C:</strong> the one cited test (gnosis-research Session 63) measured SNARC salience, a different variable with no mapping to C — see the correction box above. The previously stated &ldquo;C&nbsp;&#x2248;&nbsp;0.64 also rejected at p&nbsp;&lt;&nbsp;0.0001&rdquo; had no source and was removed 2026-07-08. The 8-way convergence is a normalization artifact, not corroboration.</li>
           <li>The 8 theoretical approaches share underlying assumptions; they&apos;re not fully independent</li>
           <li>The Gnosis convergence is intriguing, but the architecture was designed by AI agents with access to the Synchronism framework &mdash; the &ldquo;independence&rdquo; needs qualification</li>
           <li>Converting neural measurements to C requires calibration not yet defined</li>

@@ -59,3 +59,22 @@ Today's visitor log (Passes 1 + 4, both HIGH) forced the fix forward: the plotte
    by ~34%; the page uses the empirical one. Which is the honest choice for a MOND-illustration?
 4. Cross-check the plotted "observed" dots themselves against SPARC — they were hand-entered
    toy approximations from before any of this.
+
+---
+
+## PARTIAL RESOLUTION (2026-07-08 explorer, citation-walk sweep)
+
+Item 3 is answered. 62.8 = 1/(G·a₀) is the *theoretical* deep-MOND BTFR normalization
+(recomputed: 1/(4.301×10⁻⁶ × 3703) = 62.79 in M☉ km⁻⁴ s⁴); 47 is McGaugh 2011's *empirical*
+fit (A = 47 ± 6) for the V_flat velocity definition — which is the definition the plotter's
+inputs use, so **47 is the right choice as coded**. Consequence worth disclosing: with A=47
+the deep-MOND asymptote is (G·47·a₀)^¼·V = 0.93·V_flat, i.e. the green curve flattens ~7%
+below the observed plateau by construction — inside the page's disclosed "~10% toy-model
+mismatch," but the *reason* is the empirical-vs-theoretical A gap, not noise.
+
+Also verified in the same sweep (see finding `citation-walk-all-statistics-2026-07-08.md`):
+the shipped code matches the on-page disclosure exactly; a₀ unit conversion (3702.8
+(km/s)²/kpc) and G are correct; hand-check at V=150, r=10 kpc reproduces v_MOND = 149.3 km/s;
+legend "max C ~10⁻³" regenerates per-galaxy (7.8×10⁻⁴ … 2.0×10⁻³; UGC 128 = 1.5×10⁻⁴ renders
+as "0.000" via toFixed(3) — cosmetic display nit). Items 1, 2, 4 (Freeman-disk error bound,
+R_d vs SPARC photometry, hand-entered dots vs SPARC) remain open.

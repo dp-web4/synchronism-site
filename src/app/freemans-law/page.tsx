@@ -11,11 +11,11 @@ export default function FreemansLaw() {
     <>
       <Breadcrumbs currentPath="/freemans-law" />
       <h1>Freeman&apos;s Law</h1>
-      <ValidationBadge status="validated" label="12% Error" />
+      <ValidationBadge status="reparametrization" label="~4% Error (corrected 2026-07-09; was 110 / 12%)" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <EquationDisplay size="lg" label="Surface density from first principles">
-          &#x03A3;&#x2080; = cH&#x2080; / (4&#x03C0;&sup2;G) &#x2248; 110 M&#x2609;/pc&sup2;
+          &#x03A3;&#x2080; = cH&#x2080; / (4&#x03C0;&sup2;G) &#x2248; 119 M&#x2609;/pc&sup2;
         </EquationDisplay>
 
         <p>
@@ -31,7 +31,7 @@ export default function FreemansLaw() {
             <div style={{ fontFamily: 'serif', fontStyle: 'italic', fontSize: '1.3rem', color: 'var(--color-accent-violet)' }}>
               &#x03A3;&#x2080;<sup>predicted</sup>
             </div>
-            <div style={{ fontSize: '1.5rem', fontWeight: 700 }}>&#x2248; 110</div>
+            <div style={{ fontSize: '1.5rem', fontWeight: 700 }}>&#x2248; 119</div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
               M&#x2609;/pc&sup2; (Synchronism derivation)
             </div>
@@ -48,8 +48,12 @@ export default function FreemansLaw() {
         </div>
 
         <p>
-          The error is approximately 12%. For a first-principles derivation using only cosmological
-          constants (c, H&#x2080;, G), this is a strong result.
+          The error is approximately 4% (corrected 2026-07-09 &mdash; a prior arithmetic error on this
+          page reported &#8776;110 / 12%; the page&apos;s own stated constants give &#8776;119). This is a
+          dimensional-bookkeeping match, not an independent derivation &mdash; see the caveat below and{' '}
+          <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
+          Derivations</Link>, which shows &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) is not a second, independent
+          check on a&#x2080; but the same &#8776;10% MOND-comparison gap propagated through a linear relation.
         </p>
 
         <h2>The Derivation</h2>
@@ -87,8 +91,8 @@ export default function FreemansLaw() {
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               With c = 3 &times; 10<sup>8</sup> m/s, H&#x2080; = 67.4 km/s/Mpc, and
               G = 6.674 &times; 10<sup>&minus;11</sup> m&sup3;kg<sup>&minus;1</sup>s<sup>&minus;2</sup>,
-              the result is approximately 110 M&#x2609;/pc&sup2;.
-              Freeman&apos;s observed value: ~124 M&#x2609;/pc&sup2;. Error: 12%.
+              the result is approximately 119 M&#x2609;/pc&sup2;.
+              Freeman&apos;s observed value: ~124 M&#x2609;/pc&sup2;. Error: &#8776;4%.
             </p>
           </div>
         </div>
@@ -109,11 +113,14 @@ export default function FreemansLaw() {
 
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          A 12% error is encouraging but not conclusive. The derivation makes simplifying assumptions
-          (thin disk, no bulge contribution, uniform M/L ratio) that could shift the predicted value.
-          Additionally, Freeman&apos;s Law itself has been refined over the decades &mdash; there is
-          a population of low surface brightness (LSB) galaxies that violate it, though the
-          <em> high</em> surface brightness cutoff remains robust.
+          A &#8776;4% match is not independent confirmation: &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) is an exact algebraic
+          identity, so this number is the a&#x2080;-vs-Milgrom gap (&#8776;10%, see{' '}
+          <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>MOND Unification</Link>)
+          propagated through a fixed linear relation, not a second derivation. Freeman&apos;s Law itself has
+          been refined over the decades &mdash; there is a population of low surface brightness (LSB)
+          galaxies that violate it, though the <em>high</em> surface brightness cutoff remains robust.
+          Classified Reparametrization: dimensional bookkeeping that reproduces a known 1970 empirical
+          value, not a first-principles prediction.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

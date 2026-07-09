@@ -444,16 +444,22 @@ export default function KeyClaims() {
             McCulloch (2007), Verlinde (2017), and Smolin (2017) &mdash; it does not derive a&#x2080; from first
             principles any more than they do; see <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter
             derivations</a>, which calls this &ldquo;dimensional bookkeeping, not a Synchronism-specific derivation.&rdquo;
-            The only candidate novelty is the <em>interpretation</em> layered on top &mdash; that this scale marks a
-            density-coherence transition &mdash; and that interpretation is what the Failed badge above refers to: the
-            structural test of it (environment-dependent RAR scatter, and the CFD/Bullet Cluster sign error below) did
-            not survive.
+            <strong> a&#x2080; itself is badged Reparametrization, not Failed</strong> &mdash; the Failed badge above is on
+            the <em>interpretation</em> layered on top of it (that a local-density function marks the transition),
+            which fails structurally: with &#x03C1;<sub>crit</sub> &#x221D; V&sup2;, mass cancels out of a disk&apos;s
+            &#x03C1;/&#x03C1;<sub>crit</sub> ratio entirely (see{' '}
+            <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>)
+            &mdash; no galaxy, of any mass, crosses the coherence knee for any value of the calibration constant. This
+            is a quantified instance of Milgrom&apos;s locality no-go (a local-density function cannot reproduce an
+            acceleration-space law), not a fitting problem.
           </p>
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Tested against 14,760 galaxies (SPARC + ALFALFA-SDSS). a&#x2080; derivation within 10%.
-            Freeman&apos;s Law &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) derived independently, 12% error.
+            Freeman&apos;s Law &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#8776; 119 M&#x2609;/pc&sup2;, &#8776;4% error
+            (corrected 2026-07-09; not independent of a&#x2080;&apos;s gap &mdash; see{' '}
+            <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>).
           </p>
 
           <div style={{
@@ -465,24 +471,38 @@ export default function KeyClaims() {
             <h3 style={{ fontSize: '0.9rem', color: '#f59e0b', marginBottom: '0.25rem', marginTop: 0 }}>Honest caveat</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
               The quantitative predictions are MOND-equivalent &mdash; they match existing MOND results,
-              not new data. Session #616 found R&sup2; = 0.14 for environment-dependent scatter. Standard
-              MOND + M/L corrections explain all observed variance. The mechanism is novel; the predictions
-              (so far) are not. Stress testing (March 2026) found a sign error: the CFD viscosity mapping
-              predicts dark matter should be MORE sticky than baryons, but the Bullet Cluster shows it is
-              LESS sticky. This is a structural failure, not a parameter problem.
+              not new data. Standard MOND + M/L corrections explain all observed variance. The mechanism is
+              novel; the predictions (so far) are not.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
+              <strong>Corrected 2026-07-09:</strong> this box previously cited &ldquo;Session #616 found R&sup2; = 0.14&rdquo;
+              as the environment-scatter refutation. Session 616 is the unrelated η/superconductivity audit and never
+              measured RAR scatter; the R&sup2; = 0.14 figure belongs to a different, SPARC-scale test (TEST-05) which
+              in fact met its own registered criterion — see{' '}
+              <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: TEST-05</Link>.
+              It also previously cited a CFD-viscosity sign error (dark matter predicted &ldquo;stickier&rdquo; than
+              baryons, contradicted by the Bullet Cluster) as evidence against this claim&apos;s headline. That
+              viscosity ansatz is a real, separately documented failure (see{' '}
+              <Link href="/dark-matter-failure" style={{ color: '#f59e0b' }}>Dark Matter: The Sign Error</Link>) &mdash;
+              but it assumes dark matter is a substance with a viscosity to get the sign of, which this claim&apos;s
+              headline (&ldquo;not missing matter&rdquo;) does not assert. It is not evidence against the headline
+              claim. The standard, stronger Bullet Cluster argument applies instead: lensing-mass peaks track the
+              collisionless galaxies while the X-ray gas &mdash; most of the baryonic mass &mdash; lags behind
+              (Clowe et al. 2006). Any gravity sourced by <em>local</em> baryon density must put the extra gravity
+              where the baryons are; it isn&apos;t there. This is the same locality no-go as the mass-cancellation
+              argument above, at cluster scale &mdash; one failure, not two.
             </p>
           </div>
 
           <h3 style={{ fontSize: '0.9rem', color: '#ef4444', marginBottom: '0.25rem' }}>The test — and its result</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Environment-dependent RAR (Radial Acceleration Relation) scatter: galaxies in different density environments should show
-            different radial acceleration relations (p &lt; 0.01). Synchronism predicts this; standard MOND
-            does not. <strong>This test was run (Session #616, ALFALFA-SDSS). Result: R&sup2; = 0.14, against a
-            pre-registered kill criterion of R&sup2; &lt; 0.20. The kill criterion was triggered.</strong>{' '}
-            The prediction &ldquo;differs from MOND&rdquo; is technically correct &mdash; but the
-            difference is in the wrong direction: Synchronism predicted an effect MOND lacks,
-            and the effect is not present in the data. This is a refutation of the novel prediction,
-            not a MOND-equivalent reparametrization.
+            different radial acceleration relations. Synchronism predicts this; so does standard MOND via its
+            External Field Effect (Chae et al. 2020/2021) &mdash; so a detection would not discriminate the two.
+            <strong> Corrected 2026-07-09:</strong> the claim that this was &ldquo;run (Session #616), R&sup2; = 0.14,
+            kill criterion triggered&rdquo; conflated two different tests on two different samples (verified
+            independently by the explorer track 2026-07-08 and two visitor personas 2026-07-09). The registered
+            TEST-03 environment-density test on the 14,585-galaxy ALFALFA-SDSS sample has never actually been run.
           </p>
           <div style={{
             background: 'rgba(239, 68, 68, 0.08)',
@@ -493,8 +513,9 @@ export default function KeyClaims() {
             fontSize: '0.8rem',
             color: '#ef4444',
           }}>
-            Status: <strong>Failed</strong> — R&sup2; = 0.14 &lt; 0.20 kill criterion (ALFALFA-SDSS, Session #616)
-            &middot; Follow-up: mechanism under revision.
+            Status: <strong>Failed</strong> (unchanged) &mdash; not on the retracted R&sup2;=0.14/Session-616 claim, but
+            on the mass-cancellation locality no-go above (no galaxy crosses the coherence knee for any A) and the
+            Clowe 2006 Bullet Cluster argument.
             See <Link href="/honest-assessment" style={{ color: '#ef4444' }}>honest assessment</Link> for the full failure catalog.
           </div>
 

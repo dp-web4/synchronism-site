@@ -110,23 +110,24 @@ export default function CosmologyPredictions() {
           </p>
         </div>
 
-        <h2>Prediction 3: Environment-Dependent RAR Scatter (TEST-03 — Kill Triggered)</h2>
-        <div className="card" style={{ margin: '1rem 0', borderLeft: '3px solid #ef4444' }}>
+        <h2>Prediction 3: Environment-Dependent RAR Scatter (TEST-03/05 — Corrected 2026-07-09)</h2>
+        <div className="card" style={{ margin: '1rem 0', borderLeft: '3px solid #f59e0b' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
             <h3>RAR Scatter Varies with Local Density</h3>
-            <ValidationBadge status="failed" label="TEST-03 Kill Criterion Triggered" />
+            <ValidationBadge status="untested" label="TEST-03 Never Run — TEST-05 MOND-shared" />
           </div>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            The intrinsic scatter in the Radial Acceleration Relation was predicted to depend on
-            local galaxy environment. Tested on 14,585 ALFALFA-SDSS galaxies: p = 5 × 10<sup>−6</sup>
-            environment detection, σ<sub>int</sub> = 0.086 dex.
+            On 14,585 ALFALFA-SDSS galaxies: σ<sub>int</sub> = 0.086 dex (CDM-consistent). The
+            p = 5×10<sup>−6</sup>, R² = 0.14 environment-detection figure previously shown here is not a
+            valid statistic for this sample — it belongs to SPARC scale (N≈130–175, TEST-05&apos;s sample).
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-            <strong>Kill criterion triggered:</strong> Pre-registered threshold was R² ≥ 0.20 (environment
-            term must explain ≥20% of intrinsic RAR scatter). Achieved: R² = 0.14. The environment
-            detection is real and statistically significant, but the effect size is below the
-            pre-registered minimum to count as framework confirmation.{' '}
-            <Link href="/rar-scatter" style={{ color: '#ef4444' }}>Full RAR scatter analysis →</Link>
+            <strong>Corrected:</strong> at N = 14,585, R² = 0.14 implies p of order 10<sup>−500</sup>, not
+            5×10<sup>−6</sup> — the two numbers cannot describe the same measurement. TEST-03&apos;s registered
+            environment-density test on this sample was never run. TEST-05 does own the (R²=0.14, p=5×10⁻⁶)
+            result on its own registered criterion (reject independence) — met, but non-discriminating
+            against MOND&apos;s External Field Effect. Full trace:{' '}
+            <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: TEST-03/TEST-05 →</Link>
           </p>
         </div>
 
@@ -149,10 +150,10 @@ export default function CosmologyPredictions() {
                 <td style={{ padding: '0.75rem', color: '#ef4444', fontSize: '0.85rem' }}>Post-hoc; kill triggered; σ₈=0.841 vs predicted 0.76 (2.4σ) — corrected 2026-05-26</td>
               </tr>
               <tr style={{ borderBottom: '1px solid var(--color-dark-border)', background: 'rgba(239,68,68,0.04)' }}>
-                <td style={{ padding: '0.75rem' }}>RAR env. scatter (TEST-03)</td>
-                <td style={{ padding: '0.75rem' }}><ValidationBadge status="failed" label="Kill Triggered" /></td>
-                <td style={{ padding: '0.75rem', color: 'var(--color-text-secondary)' }}>ALFALFA-SDSS</td>
-                <td style={{ padding: '0.75rem', color: '#ef4444', fontSize: '0.85rem' }}>R²=0.14 &lt; 0.20 threshold</td>
+                <td style={{ padding: '0.75rem' }}>RAR env. scatter (TEST-03/05)</td>
+                <td style={{ padding: '0.75rem' }}><ValidationBadge status="untested" label="Never Run / MOND-shared" /></td>
+                <td style={{ padding: '0.75rem', color: 'var(--color-text-secondary)' }}>ALFALFA-SDSS / SPARC</td>
+                <td style={{ padding: '0.75rem', color: '#f59e0b', fontSize: '0.85rem' }}>TEST-03 stat was TEST-05&apos;s (corrected 07-09)</td>
               </tr>
               <tr style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
                 <td style={{ padding: '0.75rem' }}>BAO modulation (TEST-04)</td>

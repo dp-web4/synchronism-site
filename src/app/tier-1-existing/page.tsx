@@ -47,7 +47,7 @@ const tests: Test[] = [
     time: '3 months',
     prediction: 'TFR residual captures all intrinsic scatter (51% improvement)',
     kill: 'TFR residual explains <20% of scatter',
-    alert: 'Kill criterion TRIGGERED — literal reading: R² = 0.14 (environmental term explains 14% of total RAR scatter) is below the <20% threshold stated in the kill criterion. Under a literal reading, this test is FAILED. It remains listed here rather than on /honest-assessment only because the denominator may be mis-stated (kill criterion may have been intended against MOND-residual scatter, not total scatter) — a distinction that changes the verdict. Until the denominator is audited against the archive source, treat TEST-03 as presumptively failed. See research proposal test03_kill_criterion_self_trigger.md.',
+    alert: 'NEVER RUN AS REGISTERED — metric conflation (corrected 2026-07-09, closing the "presumptively failed" note below after independent citation-walks by the explorer track 2026-07-08 and two visitor personas 2026-07-09 converged on the same five errors). The R² = 0.14 figure previously shown here as TEST-03\'s result is not a valid measurement of the N = 14,585 ALFALFA-SDSS sample: at N = 14,585, R² = 0.14 implies t ≈ 48.7 (p of order 10⁻⁵⁰⁰), not the p = 5×10⁻⁶ quoted alongside it. The (R², p) pair is self-consistent only at N ≈ 130–175 — SPARC scale, i.e. the sample used by TEST-05, not TEST-03. Tracing the number further (archive S377/S381/S591): 0.14 is a Hubble-type/morphology term on N ≈ 171, not a measurement of environmental density on the 14,585-galaxy ALFALFA-SDSS cross-match; the registered environment-density correlation (classify by cluster/field/void, apply the <20% bar) was never executed. The 51% TFR-residual/BTFR prediction above (Session 593, N = 14,437) is a separate, already-passing result that this same card had been conflating with the failing 14% figure since 2026-04. Honest status: the registered TEST-03 environment-density test is open and runnable with public catalogs (Tully groups / cosmicflows), not failed.',
   },
   {
     id: 'TEST-04',
@@ -79,7 +79,7 @@ const tests: Test[] = [
     time: '2 months',
     prediction: 'RAR scatter shows NP2 environment dependence (p = 5×10⁻⁶)',
     kill: 'RAR scatter independent of Hubble type / environment',
-    alert: 'Same verdict as TEST-03: p=5×10⁻⁶ and R²=0.14 (TEST-03 result) are from the same underlying regression. The p-value indicates the effect is real; the R² indicates it is below the kill criterion. A significant-but-small effect (R²=0.14) that fails the pre-registered kill threshold (<20%) is a failure by effect size, not a discovery. TEST-05 should not be read as "open" or "Untested" — the environment-RAR dependence exists but is sub-threshold. Verdict: same as TEST-03 — presumptively failed by kill criterion.',
+    alert: 'RECLASSIFIED (2026-07-09): TEST-05\'s own registered criterion is a null-independence test — "RAR scatter independent of Hubble type / environment" — not the effect-size bar (<20%) that TEST-03 registered. The p = 5×10⁻⁶ result (R² = 0.14, N ≈ 130–175, SPARC scale — this is where these two numbers actually belong; see the corrected TEST-03 note above) rejects that independence null on its own registered terms. TEST-05 should therefore read MOND-shared, not "presumptively failed": the criterion it registered was met. This does not discriminate Synchronism from MOND — MOND\'s External Field Effect (Bekenstein & Milgrom 1984; Chae et al. 2020/2021, ~4σ detection in SPARC) predicts the same qualitative environment dependence, and the site\'s own EFE-closure note below already establishes MOND-equivalence at every fitted γ. One further caveat: archive session S381 characterizes the underlying 0.14 as a Hubble-type/morphology effect rather than a cleanly environmental (density-field) one, so even "environment dependence" may overstate what was measured — worth a dedicated re-run classified strictly by local density, not morphology.',
   },
   {
     id: 'TEST-06',
@@ -110,7 +110,7 @@ const tests: Test[] = [
     time: '1 month',
     prediction: 'Σ₀ emerges from first principles with <5% error',
     kill: 'Derived Σ₀ differs from observed by >15%',
-    alert: 'RECLASSIFIED (see /honest-assessment): Σ₀ = cH₀/(4π²G) is the unique surface-density scale buildable from the cosmological constants c, H₀, G — the same dimensional identity class as a₀ = cH₀/(2π). Any framework that imports these constants recovers the same relation. The 12% agreement with Freeman\'s observed value (124 M☉/pc²) is consistent with dimensional analysis, not a framework-specific prediction. Classified: Reparametrization — Dimensional Identity.',
+    alert: 'RECLASSIFIED (see /honest-assessment): Σ₀ = cH₀/(4π²G) is the unique surface-density scale buildable from the cosmological constants c, H₀, G — the same dimensional identity class as a₀ = cH₀/(2π). Any framework that imports these constants recovers the same relation. The ≈4% agreement with Freeman\'s observed value (124 M☉/pc²) — corrected 2026-07-09 from a prior arithmetic error stating 110/12% — is consistent with dimensional analysis, not a framework-specific prediction, and is not independent of a₀\'s own ~10% gap (Σ₀ = a₀/(2πG) exactly). Classified: Reparametrization — Dimensional Identity.',
   },
   {
     id: 'TEST-09',

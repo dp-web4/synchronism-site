@@ -111,9 +111,11 @@ export default function WhySynchronism() {
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
               Tested against 14,760 galaxies (SPARC + ALFALFA-SDSS).
               a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 10% &mdash; but this result is shared with MOND and other frameworks.
-              The novel environment-dependent scatter prediction (TEST-03) fired its kill criterion (R²=0.14 &lt; 20% threshold).
+              The environment-dependent scatter prediction (TEST-03/05) has a corrected verdict as of 2026-07-09:
+              R²=0.14 is a real, significant effect (p=5&times;10⁻⁶) but on the SPARC-scale sample, not the
+              14,585-galaxy ALFALFA-SDSS one this page previously attributed it to — MOND-shared, not a kill.
             </p>
-            <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — same math, not new physics; the TEST-03 scatter kill criterion also fired (R²=0.14 < 0.20)">Reparametrization | TEST-03 Kill Triggered</span>
+            <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — same math, not new physics; environment-dependent scatter is real but MOND-shared, not a kill (corrected 2026-07-09, see /tier-1-existing)">Reparametrization | TEST-03/05 MOND-shared</span>
           </div>
           <div className="card">
             <h3>Chemistry: &#x03B3; &#x2248; 1 Boundary</h3>

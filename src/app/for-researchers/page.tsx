@@ -100,17 +100,32 @@ export default function ForResearchers() {
             pairs from AI Safety via Debate (Irving, Christiano &amp; Amodei 2018), role structure from
             CAMEL/MetaGPT, failure modes from the multi-agent-systems literature. The citable artifact
             is the <strong>program-level null result with retrospective controls</strong> (N=6 audits,
-            not preregistered held-out experiments; one corpus, one framework): across 3,308 sessions, a 1.4%
-            internal-consistency survival rate yielded <strong>0 novel survivors</strong> after external
-            expert audit, with both error rates measured — temporal-asymmetry control 0/6 (later-demoted
-            claims caught; median prior-art year ~1996), vocabulary-asymmetry 4/4 on the
-            prior-art-rediscovery subclass, and <strong>specificity 0/6</strong> (every held-out genuine
-            discovery false-flagged). Discrimination lives entirely in unautomated human novelty judgment.
+            not preregistered held-out experiments; one corpus, one framework): <strong>3,308 sessions
+            produced ~47 internally-consistent candidate claims (1.4% survival rate); of those, 6 received
+            external expert audit, and 0 survived</strong>. The honest denominator is <strong>0 of 6
+            audited</strong> (0 of 47 pending audit) &mdash; not &ldquo;0 across 3,308 sessions,&rdquo; which
+            would overstate the number of adjudicated trials by two orders of magnitude (corrected 2026-07-09
+            after two visitor personas independently flagged the site quoting this null at three different,
+            mutually inconsistent denominators). Both error rates on the 6 are measured — temporal-asymmetry
+            control 0/6 (later-demoted claims caught; median prior-art year ~1996), vocabulary-asymmetry 4/4 on
+            the prior-art-rediscovery subclass, and <strong>specificity 0/6</strong> (every held-out genuine
+            discovery false-flagged, i.e. no measured false-positive rate for the detector — see{' '}
+            <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
+            Discrimination lives entirely in unautomated human novelty judgment.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Measured, not asserted: adversarial same-corpus AI pairs filter for internal consistency
             but cannot substitute for out-of-distribution evaluation. Relevant to anyone building
             AI-for-science generation pipelines on shared training corpora.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+            <strong>No control arm; a confound the null doesn&apos;t resolve:</strong> the corpus audited
+            is Synchronism itself, which this site independently concludes is a MOND reparametrization.
+            &ldquo;Adversarial same-corpus AI pairs cannot generate out-of-distribution novelty&rdquo; and
+            &ldquo;this particular seed framework contained none to find&rdquo; are observationally
+            degenerate in a single-arm, single-corpus design — there is no measured human-pair survival
+            rate on the same corpus to compare against. The generalization to AI-for-science pipelines
+            generally is a hypothesis this design cannot license on its own.
           </p>
           <Link href="/a2acw" style={{ fontSize: '0.85rem' }}>Protocol, prior art, and audit details &rarr;</Link>
         </div>
@@ -171,7 +186,9 @@ export default function ForResearchers() {
             <strong style={{ color: '#f59e0b' }}>Transferable result (independent of Synchronism being correct):</strong>{' '}
             Any discrete absolute-time substrate without an added custodial boost-symmetry generates
             dimension-4 Lorentz-violating SME coefficients c<sub>μν</sub>&nbsp;~&nbsp;α/π&nbsp;~&nbsp;10<sup>&#x2212;2</sup>
-            at one loop (Collins–Perez–Sudarsky–Gambini–Pullin, <em>PRL</em> 93, 191301, 2004).
+            at one loop (Collins, Perez, Sudarsky, Urrutia &amp; Vucetich, <em>PRL</em> 93, 191301, 2004 &mdash;
+            author list corrected 2026-07-09; previously misattributed to Gambini &amp; Pullin, who are not
+            authors on this paper).
             Existing bounds reach 10<sup>&#x2212;18</sup>–10<sup>&#x2212;30</sup> — a 16–28 OOM fine-tuning gap.
             The exclusion applies to any model whose defining commitment is an absolute preferred frame,
             regardless of the other details. A LIV/quantum-foundations referee can cite this as a

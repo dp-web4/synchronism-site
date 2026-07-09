@@ -17,7 +17,7 @@ export default function ParameterDerivations() {
           derivations page in the mathematical sense. γ = 2/√N<sub>corr</sub> is a <strong>motivated ansatz</strong> (the
           factor 2 is not rigorously derived; CLT is invoked for correlated DOF where CLT doesn&apos;t apply).
           ρ<sub>crit</sub> = A·V<sub>flat</sub>² with A ≈ 0.029 is <strong>calibrated</strong> to the Jeans criterion — V<sub>flat</sub> is the input.
-          The scaling constants are dimensional analyses with 3–12% errors that may reflect implicit calibration
+          The scaling constants are dimensional analyses with 3–10% errors that may reflect implicit calibration
           rather than predictive accuracy. The functional form tanh is <strong>motivated</strong> by analogy with the sigmoid/compander family (μ-law, Hill, logistic), not uniquely derived. <strong>Update (2026-06-07):</strong> A-from-Jeans — the only surviving first-principles candidate — is now audited-negative: the derivation that produces 0.029 uses a different scaling law (ρ<sub>crit</sub> ∝ V<sup>0.5</sup>) than the framework's stated ρ<sub>crit</sub> ∝ V², and the stated formula gives A ≈ 4.6×10⁻⁵ (600× off). Zero parameters have independent first-principles derivations. A more accurate title: <em>Parameter Calibration &amp; Honest Ansätze</em>.
           Read this page before concluding the equation is derived.
         </p>
@@ -26,7 +26,7 @@ export default function ParameterDerivations() {
         The coherence function has two kinds of parameters: the <strong>functional form</strong> (tanh,
         &#x03B3; = 2/&#x221A;N<sub>corr</sub>) which is motivated by the sigmoid/compander family (μ-law, Hill, logistic), and
         the <strong>scaling constants</strong> (A, a&#x2080;, &#x03A3;&#x2080;, R&#x2080;) which are
-        calibrated to observational anchors with 3&ndash;12% errors.
+        calibrated to observational anchors with 3&ndash;10% errors.
         Whether those errors reflect approximation limits or implicit calibration is an open question.
       </p>
 
@@ -193,16 +193,28 @@ export default function ParameterDerivations() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>5. &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#x2248; 110 M&#x2609;/pc&sup2;</h3>
+              <h3>5. &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#x2248; 123 M&#x2609;/pc&sup2;</h3>
               <ValidationBadge status="reparametrization" label="Freeman&apos;s Law Re-expressed" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #89</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Freeman&apos;s surface density law (Freeman 1970): observed 124 M&#x2609;/pc&sup2;, 12% error.
+              <strong>Arithmetic corrected 2026-07-09</strong> (independently caught by two visitor
+              personas the same day): using this page&apos;s own a&#x2080; &#x2248; 1.08&times;10<sup>&minus;10</sup> m/s&sup2;
+              (item 4, since &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) algebraically), &#x03A3;&#x2080; &#x2248; 123.3 M&#x2609;/pc&sup2;
+              &mdash; a <strong>0.5% match</strong> to Freeman&apos;s observed 124 M&#x2609;/pc&sup2; (Freeman 1970),
+              not the previously stated &ldquo;&#x2248;110, 12% error&rdquo; (that 110 required H&#x2080; &#x2248; 62 km/s/Mpc,
+              inconsistent with the a&#x2080; row directly above it).
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               The combination cH&#x2080;/G has dimensions of surface density, so this is dimensional
               bookkeeping &mdash; expressing Freeman&apos;s empirical value via cosmological constants, not
-              deriving it from physics. Re-badged from &ldquo;Validated&rdquo; (2026-04-28): the 12% agreement
-              is not sufficient to claim derivation of what is, in origin, an observational law.
+              deriving it from physics. <strong>&#x03A3;&#x2080; is not independent evidence from a&#x2080;:</strong> since
+              &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) exactly, this is the a&#x2080; row propagated through a linear relation, not
+              a second derivation. Milgrom&apos;s own &#x03A3;<sub>M</sub> = a&#x2080;<sub>,obs</sub>/(2&#x03C0;G) &#x2248; 137 M&#x2609;/pc&sup2;
+              sits 9.6% above Freeman&apos;s 124, and this page&apos;s a&#x2080; sits 9.8% below Milgrom&apos;s observed
+              a&#x2080; &mdash; the same &#x223C;10% gap in both places, one number, not two rows of independent support.
+              Re-badged from &ldquo;Validated&rdquo; (2026-04-28): a tight numeric match is not sufficient to claim
+              derivation of what is, in origin, an observational law.
             </p>
           </div>
 
@@ -225,11 +237,11 @@ export default function ParameterDerivations() {
           The derivation chain uses fundamental constants (c, G, H&#x2080;) plus one structural ratio
           (&#x03B2;<sub>J</sub> &#x2248; 1 from the Jeans criterion) and one observable (V<sub>flat</sub>).
           The functional form (tanh, &#x03B3;) has zero free parameters.
-          The scaling constants (A, a&#x2080;, &#x03A3;&#x2080;, R&#x2080;) show 3&ndash;12%
+          The scaling constants (A, a&#x2080;, &#x03A3;&#x2080;, R&#x2080;) show 3&ndash;10%
           agreement with observations.
         </p>
         <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.9rem' }}>
-          <strong>Honest caveat:</strong> The 3&ndash;12% errors could reflect either (a) legitimate
+          <strong>Honest caveat:</strong> The 3&ndash;10% errors could reflect either (a) legitimate
           approximation limits in the dimensional analysis, or (b) implicit calibration through
           choice of V<sub>flat</sub> as input. Distinguishing these requires independent derivation.
           a&#x2080; and &#x03A3;&#x2080; reproduce known observational relations (Milgrom 1983;

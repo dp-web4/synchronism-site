@@ -335,11 +335,16 @@ export default function ResearchPhilosophy() {
           <div className="card" style={{ padding: '0.75rem 1rem' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
               <strong>TEST-03: ALFALFA-SDSS TFR Scatter</strong>
-              <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>KILL CRITERION TRIGGERED</span>
+              <span style={{ fontSize: '0.75rem', color: '#f59e0b' }}>NEVER RUN AS REGISTERED (corrected 2026-07-09)</span>
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
-              Registered: Session 616. Threshold: R² &gt; 0.20. Result: R² = 0.14.
-              Status: presumptively failed (denominator ambiguity under audit). No modification.
+              This log previously read &ldquo;Registered: Session 616. Threshold: R² &gt; 0.20. Result: R² = 0.14&rdquo;
+              — three separate errors: Session 616 is the η/superconductivity audit and never measured RAR
+              scatter; R² = 0.14 belongs to a SPARC-scale (N≈171) morphology regression, not the 14,585-galaxy
+              ALFALFA-SDSS sample this test registers; and 0.20 was the catalog&apos;s <em>expected-success</em>{' '}
+              value, not its falsification threshold. This is exactly the kind of registration-log error this
+              section exists to make impossible — see corrected{' '}
+              <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>TEST-03</Link>.
             </p>
           </div>
           <div className="card" style={{ padding: '0.75rem 1rem' }}>

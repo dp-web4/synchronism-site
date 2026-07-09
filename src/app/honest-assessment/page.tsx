@@ -232,16 +232,19 @@ export default function HonestAssessment() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>Galaxy Rotation: ALFALFA-SDSS</h3>
-              <ValidationBadge status="failed" label="Kill Criterion Triggered" />
+              <ValidationBadge status="untested" label="TEST-03 Never Run As Registered" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              14,585 galaxies. Environment-dependent RAR (Radial Acceleration Relation) scatter (Novel Prediction 2) at p = 5&times;10<sup>&minus;6</sup>.
-              &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>CDM-consistent</strong> (z&nbsp;=&nbsp;+0.5 in the definitive run), not below CDM.
+              14,585 galaxies. &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>CDM-consistent</strong> (z&nbsp;=&nbsp;+0.5 in the definitive run), not below CDM.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              The environmental effect is detectably nonzero (p = 5&times;10<sup>&minus;6</sup>), but explains only
-              14% of total RAR scatter. The pre-registered kill criterion required R&sup2; &gt; 0.20. At R&sup2; = 0.14,
-              the kill criterion fired. See TEST-03 in the &ldquo;What Failed&rdquo; section below.
+              <strong>Correction (2026-07-09):</strong> this card previously reported &ldquo;environment-dependent RAR scatter at
+              p = 5&times;10<sup>&minus;6</sup>, R&sup2; = 0.14&rdquo; as the ALFALFA-SDSS (N = 14,585) result and said its kill criterion
+              fired. That pairing is mathematically impossible at N = 14,585 (R&sup2; = 0.14 there implies p of order 10<sup>&minus;500</sup>,
+              not 10<sup>&minus;6</sup>) &mdash; the (R&sup2;, p) pair is only self-consistent at SPARC scale (N &asymp; 130&ndash;175), which is
+              TEST-05&apos;s sample, not this one. TEST-03&apos;s actual environment-density result on the 14,585-galaxy cross-match was
+              never computed as registered. See the corrected <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>TEST-03</Link>{' '}
+              and <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>TEST-05</Link> cards for the full provenance trace.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Verdict correction (2026-07-04):</strong> an intermediate session had read &#x03C3;<sub>int</sub> as
@@ -304,12 +307,17 @@ export default function HonestAssessment() {
               <ValidationBadge status="reparametrization" label="Dimensional Identity — Same Class as a₀" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Surface density &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G). 12% error vs Freeman&apos;s observed value (124 M&#x2609;/pc&sup2;).
+              Surface density &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#8776; 119 M&#x2609;/pc&sup2;. &#8776;4% error vs
+              Freeman&apos;s observed value (124 M&#x2609;/pc&sup2;) &mdash; corrected 2026-07-09 from a previously
+              stated 110 / 12% arithmetic error (two visitor personas independently caught it the same day).
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               Like a&#x2080; ~ cH&#x2080;, this is the only surface-density scale buildable from the available cosmological
               constants (c, H&#x2080;, G). Any framework that imports these constants will recover the same dimensional
-              relation. Reclassified from &ldquo;Validated&rdquo; to Reparametrization alongside a&#x2080; on the same grounds.
+              relation. It is also <strong>not independent evidence</strong> from a&#x2080;: &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) exactly,
+              so the &#8776;4% Freeman match is the same &#8776;10% a&#x2080;-vs-Milgrom gap propagated through a fixed linear
+              relation, not a second derivation. Reclassified from &ldquo;Validated&rdquo; to Reparametrization
+              alongside a&#x2080; on the same grounds.
             </p>
           </div>
         </div>
@@ -383,26 +391,32 @@ export default function HonestAssessment() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>TEST-03: ALFALFA-SDSS TFR Scatter (Kill Criterion Triggered)</h3>
-              <ValidationBadge status="failed" label="Kill Criterion Met — Denominator Under Audit" />
+              <h3>TEST-03: ALFALFA-SDSS TFR Scatter — REMOVED FROM &ldquo;WHAT FAILED&rdquo; (2026-07-09)</h3>
+              <ValidationBadge status="untested" label="Never Run As Registered" />
             </div>
             <PlainTerms>
-              the framework predicted that a galaxy&apos;s environment would noticeably affect how tightly
-              its brightness and rotation speed track each other. The team pre-registered a pass mark
-              (&ldquo;explain at least 20% of the scatter&rdquo;); the real data came in at 14% — below the
-              mark the framework itself set. Failing your own pre-set bar is the strongest kind of failure.
+              this card previously said the framework failed its own pre-registered environment test.
+              It didn&apos;t — the number reported as the failing result belongs to a different test on a
+              different, smaller sample. The environment test on the 14,585-galaxy sample was never
+              actually run. That&apos;s a gap, not a failure, and it&apos;s a more embarrassing kind of error
+              to have made on the site&apos;s own self-audit page than the failure it was reporting.
             </PlainTerms>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              The TEST-03 kill criterion states: &ldquo;TFR residual explains &lt;20% of scatter.&rdquo; The measured value
-              is R&sup2; = 0.14 (environmental term explains 14% of total RAR scatter). Under a literal reading, the kill
-              criterion is triggered: 14% &lt; 20%.
+              R&sup2; = 0.14 with p = 5&times;10<sup>&minus;6</sup> and N = 14,585 is internally impossible: at that N,
+              R&sup2; = 0.14 implies t &asymp; 48.7 (p of order 10<sup>&minus;500</sup>). The pair is self-consistent only at
+              N &asymp; 130&ndash;175 (SPARC scale) &mdash; TEST-05&apos;s sample. Archive tracing confirms it: 0.14 is a
+              Hubble-type/morphology term from Session 377 on N &asymp; 171, misattributed to the ALFALFA-SDSS
+              cross-match. The registered TEST-03 environment-density correlation on 14,585 galaxies was never computed.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              One open question: whether the kill criterion was intended against <em>total</em> RAR scatter or
-              against the residual-after-MOND scatter — a difference that could change the verdict. Until the
-              archive source is audited, TEST-03 is classified as presumptively failed. The {' '}
-              <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 catalog</Link>{' '}
-              carries a matching notice.
+              Independently found three ways: archive Session 639 (2026-04-30) first traced the metric conflation;
+              the explorer track&apos;s 2026-07-08 citation-walk closed the provenance chain (registered threshold was
+              r&sup2; &lt; 0.09, which R&sup2; = 0.138 passes, and the catalog postdates the measurement by 15 days);
+              two visitor personas independently re-derived the (N, p) inconsistency on 2026-07-09. See the corrected{' '}
+              <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>TEST-03</Link>{' '}
+              and <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>TEST-05</Link>{' '}
+              cards for the full trace. TEST-05, which does own the (R&sup2;=0.14, p=5&times;10<sup>&minus;6</sup>) result on
+              its registered terms, is reclassified MOND-shared (non-discriminating), not failed.
             </p>
           </div>
 
@@ -714,7 +728,9 @@ export default function HonestAssessment() {
               to be well-defined. Synchronism&apos;s contribution is an ontological interpretation
               (&ldquo;coherence cycle completion&rdquo;), not the condition itself. QFT already classifies
               broad resonances as poor quasiparticles and narrow ones as well-defined particles.
-              Novel-survivor count across 3,308 sessions: <strong>0</strong>.
+              Novel-survivor count after external expert audit: <strong>0 of 6</strong> (0 of 47 internal-consistency
+              candidates pending audit, out of 3,308 total sessions — see the{' '}
+              <Link href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW methodology</Link> for the full chain).
             </p>
           </div>
         </div>

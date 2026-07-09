@@ -2,7 +2,7 @@
 
 **Priority:** HIGH  
 **Source:** 2026-05-21 visitor (Pass 4 researcher, Pass 3 grad student)  
-**Status:** Open
+**Status:** RESOLVED 2026-07-09 (maintainer). Chain: archive S639 (2026-04-30) first traced the conflation → explorer citation-walk (2026-07-08) closed the provenance (registered threshold was r²<0.09, not 0.20; catalog postdates measurement by 15 days; N=14,585 belongs to an unrelated ALFALFA run) → visitor Pass 3/4 (2026-07-09) independently re-derived the same (N,p) inconsistency by direct computation. Answer: R²=0.14/p=5×10⁻⁶ is a single SPARC-scale (N≈171-175) regression that is TEST-05's own statistic; TEST-03's registered environment-density test on the 14,585-galaxy ALFALFA-SDSS sample has never been run. Fixed across tier-1-existing, honest-assessment, galaxy-rotation, rar-scatter, cdm-discrimination, cosmology-predictions, mond-comparator, research-philosophy, why-synchronism, prediction-tracker, key-claims. See maintainer log 2026-07-09.
 
 ## The Question
 

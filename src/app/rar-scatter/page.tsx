@@ -11,14 +11,15 @@ export default function RarScatter() {
     <>
       <Breadcrumbs currentPath="/rar-scatter" />
       <h1>RAR Scatter</h1>
-      <ValidationBadge status="failed" label="Kill Criterion Triggered (R&sup2;=0.14 &lt; 0.20)" />
+      <ValidationBadge status="untested" label="TEST-03 Never Run — TEST-05 MOND-shared (corrected 2026-07-09)" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           <strong>New Prediction #2 (NP2)</strong>: The scatter in the Radial Acceleration Relation
-          depends on environment. The effect is real and statistically significant (p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>),
-          but it explains only 14% of the scatter &mdash; below the pre-registered 20% kill threshold
-          (see TEST-03/TEST-05 on{' '}
+          depends on environment. The effect is real and statistically significant (p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>,
+          R&sup2;=0.14) — but on the SPARC-scale sample (N&asymp;130&ndash;175), not the 14,585-galaxy
+          ALFALFA-SDSS sample this page originally attributed it to (see correction below;
+          TEST-03/TEST-05 on{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: Existing Data</Link>).
           <strong> Correction (2026-07-04):</strong> this is <em>not</em> a prediction standard models
           avoid &mdash; MOND&apos;s External Field Effect (EFE) also predicts environment-dependent RAR
@@ -65,10 +66,21 @@ export default function RarScatter() {
 
         <h2>The Test</h2>
         <p>
-          Using the ALFALFA-SDSS cross-matched sample (14,585 galaxies), we divided galaxies by
-          local density proxy (Nth-nearest-neighbor density estimator) and measured &#x03C3;<sub>int</sub>
-          in each bin. The result:
+          Using the ALFALFA-SDSS cross-matched sample (14,585 galaxies), &#x03C3;<sub>int</sub> = 0.086 dex
+          was measured (CDM-consistent — see{' '}
+          <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link>).
+          The p = 5&times;10<sup>&minus;6</sup>, R&sup2; = 0.14 environment-density statistics below are <strong>not</strong>
+          from this sample: they trace to a SPARC-scale (N&asymp;171) Hubble-type/morphology regression
+          (archive Session 377), mislabeled as this test&apos;s result since 2026-04. The result:
         </p>
+        <div className="card" style={{ borderLeft: '3px solid #f59e0b', margin: '1rem 0', padding: '0.75rem 1rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+            <strong>Correction (2026-07-09):</strong> at N = 14,585, R² = 0.14 would imply p of order
+            10<sup>&minus;500</sup>, not 5×10<sup>&minus;6</sup> — mathematically impossible together. The registered
+            environment-density test on the 14,585-galaxy sample has never been run. Full trace on{' '}
+            <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: TEST-03/TEST-05 →</Link>
+          </p>
+        </div>
 
         <div className="grid-3" style={{ margin: '1.5rem 0' }}>
           <div className="card" style={{ textAlign: 'center' }}>

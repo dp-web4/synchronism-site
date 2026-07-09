@@ -107,10 +107,12 @@ export default function CdmDiscrimination() {
           <li>
             The environment-dependence test (the other half of this page&apos;s original claim) is
             <strong> not a Synchronism-vs-MOND discriminator either</strong> &mdash; MOND&apos;s External
-            Field Effect (EFE) also predicts environment-dependent RAR scatter (see{' '}
-            <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: Existing
-            Data</Link>, TEST-05) &mdash; and this program&apos;s version of the test failed its own kill
-            criterion regardless (R&sup2;&nbsp;=&nbsp;0.14 &lt; 0.20 required).
+            Field Effect (EFE) also predicts environment-dependent RAR scatter. TEST-05, which measured
+            it (p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>, R&sup2;&nbsp;=&nbsp;0.14 on SPARC scale), met its
+            own registered criterion — corrected 2026-07-09 from &ldquo;failed&rdquo; to MOND-shared/
+            non-discriminating; see{' '}
+            <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: TEST-05</Link>{' '}
+            for the corrected verdict and the TEST-03 provenance error it had been conflated with.
           </li>
         </ul>
 

@@ -37,7 +37,7 @@ export default function WhatSynchronismIsNot() {
     <>
       <Breadcrumbs currentPath="/what-synchronism-is-not" />
       <h1>What Synchronism Is Not</h1>
-      <ValidationBadge status="validated" label="Scope Boundaries" />
+      <ValidationBadge status="active-mrh" label="Scope Boundaries — Not a Claim (corrected 2026-07-09; was deprecated 'Validated')" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

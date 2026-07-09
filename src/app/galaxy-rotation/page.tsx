@@ -11,7 +11,7 @@ export default function GalaxyRotation() {
     <>
       <Breadcrumbs currentPath="/galaxy-rotation" />
       <h1>Galaxy Rotation Curves</h1>
-      <ValidationBadge status="failed" label="TEST-03 Kill Criterion Triggered" />
+      <ValidationBadge status="untested" label="TEST-03 Never Run As Registered — see correction below" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -64,7 +64,7 @@ export default function GalaxyRotation() {
               {' '}<a href="https://www.sdss.org/dr17/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>[SDSS DR17]</a>
             </p>
             <ul style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <li>Environment-dependent RAR scatter detected at p = 5 &times; 10<sup>&minus;6</sup>, but R&sup2; = 0.14 trips the pre-registered TEST-03 kill criterion (R&sup2; &lt; 0.20)</li>
+              <li>Environment-dependent RAR scatter detected at p = 5 &times; 10<sup>&minus;6</sup>, R&sup2; = 0.14 &mdash; <strong>but this statistic is SPARC-scale (N &asymp; 130&ndash;175), not a valid measurement of this 14,585-galaxy sample</strong> (see correction below). The registered TEST-03 environment-density test on this sample was never run.</li>
               <li>&#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>CDM-consistent</strong> (z&nbsp;=&nbsp;+0.5 in the source session&apos;s definitive run), not below CDM. An earlier &minus;6.2&sigma; &ldquo;below CDM&rdquo; reading from an intermediate session was retracted in-archive as premature once distance-noise modeling was added; the verdict is also modeling-choice-dependent (z ranges +0.5 to +64). See{' '}
                 <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link> for the full history.</li>
               <li>Cluster vs. field galaxies show different scatter &mdash; the effect is real but sub-threshold, not a confirmed prediction</li>
@@ -113,8 +113,8 @@ export default function GalaxyRotation() {
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
               p-value for environment effect
             </div>
-            <div style={{ fontSize: '0.75rem', color: '#ef4444', marginTop: '0.25rem' }}>
-              R² = 0.14 — kill criterion triggered
+            <div style={{ fontSize: '0.75rem', color: '#f59e0b', marginTop: '0.25rem' }}>
+              R² = 0.14 belongs to SPARC (N≈171), not this sample — see correction
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
@@ -131,36 +131,50 @@ export default function GalaxyRotation() {
             Synchronism&apos;s CFD viscosity interpretation mapped low coherence (dark matter) to high
             viscosity &mdash; predicting dark matter should be <em>stickier</em> than baryons. The Bullet
             Cluster (1E 0657-558) shows the opposite: dark matter halos pass through each other with
-            negligible self-interaction (σ/m &lt; 0.47 cm²/g, Harvey et al. 2015). The prediction has the
-            wrong sign. This is a structural failure, not a parameter problem &mdash; no adjustment to
-            A, γ, or ρ<sub>crit</sub> can fix a sign error in the mechanism.
+            negligible self-interaction (σ/m &lt; 0.47 cm²/g, Harvey et al. 2015). That specific ansatz
+            has the wrong sign — see the{' '}
+            <Link href="/dark-matter-failure" style={{ color: '#ef4444' }}>full failure analysis</Link>.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Scope note (added 2026-07-09):</strong> this is a documented failure of the specific CFD
+            viscosity <em>ansatz</em>, not of Claim 3&apos;s headline form (&ldquo;dark matter is incomplete
+            decoherence&rdquo;), which asserts a modified gravitational response, not a substance with a
+            viscosity to get the sign of. The Bullet Cluster still refutes any local-density-sourced-gravity
+            reading of Claim 3, via a different and stronger argument: the lensing-mass peaks track the
+            collisionless galaxies while the X-ray gas — most of the baryonic mass — is stripped and lags
+            behind (Clowe et al. 2006, ApJ 648, L109). Any theory where gravity responds to <em>local</em>
+            baryon density must put the extra gravity where the baryons are; it isn&apos;t there. This is the
+            same local-vs-non-local no-go documented above, applied at cluster scale — not a second,
+            independent failure. (MOND needs additional collisionless mass at cluster scale for the same
+            reason: Angus, Famaey &amp; Zhao 2006.)
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: 0 }}>
             The galaxy rotation fit results on this page are independent of the CFD interpretation and stand
-            as-is (reparametrization of MOND with an environmental scatter term). But the claim that
-            &ldquo;dark matter effects arise from incomplete decoherence&rdquo; is under structural revision.{' '}
-            <Link href="/dark-matter-failure" style={{ color: '#ef4444' }}>Full failure analysis &rarr;</Link>
+            as-is (reparametrization of MOND with an environmental scatter term).
           </p>
         </div>
 
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          The environment-dependent scatter is real and statistically significant (p = 5&times;10<sup>&minus;6</sup>
-          with N = 14,585), but it explains only 14% of the total RAR scatter (R&sup2; = 0.14). The
-          remaining 86% is unexplained by the coherence model. Furthermore, standard MOND plus
-          mass-to-light ratio corrections already explains essentially all of the RAR variance.
-          Synchronism adds a small, detectable effect on top of what MOND already provides &mdash;
-          it does not replace MOND&apos;s success.
+          The environment-dependent scatter is real and statistically significant (p = 5&times;10<sup>&minus;6</sup>),
+          but the R&sup2; = 0.14 / p = 5&times;10<sup>&minus;6</sup> pair is only mutually consistent at SPARC scale
+          (N &asymp; 130&ndash;175) — see correction below. Furthermore, standard MOND plus mass-to-light ratio
+          corrections already explains essentially all of the RAR variance. Synchronism adds at most a
+          small, detectable effect on top of what MOND already provides &mdash; it does not replace
+          MOND&apos;s success, and MOND&apos;s own External Field Effect predicts the same qualitative
+          environment dependence (Chae et al. 2020/2021), so the effect does not discriminate the two.
         </p>
-        <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1rem', padding: '0.75rem 1rem' }}>
+        <div className="card" style={{ borderLeft: '3px solid #f59e0b', marginBottom: '1rem', padding: '0.75rem 1rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem 0' }}>
-            <strong>TEST-03 connection:</strong> The R² = 0.14 result above is what{' '}
-            <Link href="/tier-1-existing" style={{ color: '#ef4444' }}>TEST-03</Link>{' '}
-            measures. The pre-registered kill criterion for TEST-03 is R² &lt; 0.20 — meaning the
-            environmental coherence term must explain at least 20% of intrinsic RAR scatter to
-            survive. At R² = 0.14, <strong>TEST-03 has already tripped its own kill criterion</strong>.
-            The σ<sub>int</sub> = 0.086 dex and R² = 0.14 figures on this page are the same
-            finding viewed from two angles; both point to the same conclusion.
+            <strong>Correction (2026-07-09) — TEST-03/TEST-05 provenance:</strong> This page previously said
+            R² = 0.14 was TEST-03&apos;s result on this 14,585-galaxy sample and that it tripped TEST-03&apos;s
+            kill criterion. It doesn&apos;t: at N = 14,585, R² = 0.14 implies p of order 10<sup>&minus;500</sup>, not
+            5&times;10<sup>&minus;6</sup> — the pair is self-consistent only at SPARC scale, TEST-05&apos;s sample.
+            TEST-03&apos;s actual environment-density result on this sample was never computed as registered.
+            TEST-05, which does own this statistic on its registered terms, met its own criterion (rejecting
+            independence) — reclassified MOND-shared, not failed. Full trace on{' '}
+            <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: TEST-03</Link>{' '}
+            and <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>TEST-05</Link>.
           </p>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>

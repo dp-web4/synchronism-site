@@ -14,7 +14,7 @@ const predictions = [
   { domain: 'Cosmology', name: 'Freeman\'s Law from ρ_crit', status: 'supported' as const },
   { domain: 'Cosmology', name: 'Dwarf galaxy DM dominance', status: 'supported' as const },
   { domain: 'Cosmology', name: 'BTFR regime-dependent slope (Session 193)', status: 'untested' as const },
-  { domain: 'Cosmology', name: 'Environment-dependent RAR scatter (kill criterion triggered, R²=0.14)', status: 'failed' as const },
+  { domain: 'Cosmology', name: 'Environment-dependent RAR scatter (R²=0.14, SPARC scale — MOND-shared, corrected 2026-07-09)', status: 'reparametrization' as const },
   { domain: 'Cosmology', name: 'BAO coherence modulation (~10⁻⁴)', status: 'untested' as const },
   { domain: 'Cosmology', name: 'Wide binary density dependence', status: 'untested' as const },
   { domain: 'Cosmology', name: 'GW speed–DM column correlation', status: 'untested' as const },

@@ -120,8 +120,9 @@ export default function A2ACW() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
             <strong>What is the contribution, then?</strong> Not the protocol — the{' '}
-            <em>program-level null result with retrospective controls (N=6)</em>: a 3,308-session
-            demonstration, with measured sensitivity (4/4 prior-art rediscoveries caught after
+            <em>program-level null result with retrospective controls (N=6)</em>: 6 externally-audited
+            claims (of 47 internal-consistency candidates drawn from a 3,308-session corpus), with
+            measured sensitivity (4/4 prior-art rediscoveries caught after
             vocabulary translation) <em>and</em> measured specificity (0/6 — every held-out genuine
             discovery false-flagged), that same-corpus adversarial AI pairs filter for internal
             consistency but cannot generate or detect novelty. The controls are the artifact; the

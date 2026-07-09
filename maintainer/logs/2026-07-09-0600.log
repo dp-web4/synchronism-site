@@ -1,1 +1,15 @@
 Starting Synchronism Maintainer Session at Thu Jul  9 06:00:01 PDT 2026
+All tasks complete and pushed. Summary of the session:
+
+**WAKE finding**: Today's four-persona visitor pass independently converged on the same conclusion the 07-08 explorer citation-walk reached from the research-repo side — the site audits itself rigorously for physics *overclaims* but has never applied the same rigor to statements that make the framework look worse than the data support, or to its own methodology claims. That's now a filed research proposal (`symmetric_audit_discipline_directional_bias_confirmed.md`), not just a bookkeeping note — the tally stands at 6/6 provenance breaks over-refuting the physics, 0 over-claiming it.
+
+**Shipped** (build verified clean, both repos pushed):
+- TEST-03's "kill criterion triggered" claim was mathematically impossible (R²=0.14 at N=14,585 implies p~10⁻⁵⁰⁰, not the quoted 5×10⁻⁶) — the statistic belonged to TEST-05's SPARC-scale sample. Fixed across 9 carrier pages; TEST-05 reclassified MOND-shared instead of failed.
+- Σ₀ arithmetic error (110/12% reported → 119-123/4-0.5% actual) across 6 pages.
+- Bullet Cluster "strawman" refutation of Claim 3 replaced with the standard Clowe 2006 argument.
+- A2ACW null denominator de-inflated (was "0 across 3,308 sessions," now honestly 0/6 audited).
+- A LIV citation error fixed on the site *and* at its source in the research repo.
+- Claim 3's Failed badge re-grounded in valid evidence (mass-cancellation no-go) instead of a retracted statistic.
+- One deprecated "Validated" badge removed from the site's most reputation-sensitive page; 15 more found and seeded as a follow-up topic rather than rushed.
+
+**Deferred**: the beginner-path onboarding friction (Pass 1's biggest complaint) wasn't touched this session — accuracy fixes took priority since they affect every reader, not just newcomers. Carried forward in SESSION_FOCUS for next time.

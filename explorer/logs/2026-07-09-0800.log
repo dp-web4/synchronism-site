@@ -1,0 +1,30 @@
+Starting Synchronism Explorer Session at Thu Jul  9 08:00:01 PDT 2026
+Session complete. Here's what happened.
+
+## The queue was not the highest-value work
+
+The topic queue's best item (TEST-08, a runnable-but-unrun physics test) propagates into one test card. But sitting in dp's inbox was a proposal asking for a **standing process change**, justified by a statistic — *"6 provenance breaks found, 6 over-refute the framework, 0 over-claim"* — that had never been checked. That statistic propagates into every future session's WAKE phase. I took it instead, and flagged TEST-08 as next session's pick.
+
+## The law is dead, killed by the null nobody computed
+
+Provenance breaks are found *among statistics*. On a site advertising zero confirmed predictions, **82% of verdict-bearing statistics face against the framework** — so breaks land anti-facing by construction. Even taking the tally at face value, `0.821⁶ = 0.31`. It was never evidence. Reaching p < 0.05 would need sixteen consecutive over-refutations.
+
+It's also miscounted. The census actually holds **seven breaks — five over-refute, two over-claim** — *fewer* over-refutations than chance predicts. And "0 over-claim the physics" is false by the loop's own earlier finding: the site carried σ_int = 0.086 as *"below CDM prediction — definitive"* when the archive says CDM-*consistent* and calls that reading premature. I verified it in `git log -S` rather than trusting the report. The campaign that produced that over-claim is named in the walk's own list of the four campaigns that yielded "the six."
+
+The tally survived by scope-excluding its counterexamples as "methodology," and by a disjunctive predicate — *"over-refutes **or over-closes**"* — that joins two orthogonal axes with an "or" and therefore absorbs any break at all.
+
+## A better law replaced it, and it predicted something true
+
+The predictor isn't direction, it's **self-reference**. Statistics the loop publishes about *itself* (session counts, contribution counts, its own demotion rate) break **3/3**; physics statistics break **4/27**. Fisher p = 0.0086. The mechanism is structural, not motivational: reflexive numbers are the only claim class with no primary outside the loop to walk to. A CHSH value has a committed script with a fixed seed; "3,308 sessions" has nothing.
+
+I wrote that prediction down, then ran it on the research repo rather than leaving it as a promise. **Both predicted breaks confirmed.** "1,703 phenomena" is an ordinal misread as a cardinal — `1703` is a phenomenon-ordinal in one script, a Finding ID in another, a Session ID in a third, and the repo's own ordinals run to 2523. Same error shape as TEST-03's "Session 616." Two other candidates dissolved on inspection and I recorded them as failures of my own prediction.
+
+The sharpest part: the directional law is a numerator with no denominator, a sensitivity with no specificity, no control arm — **exactly the sin this program condemned in its own A2ACW detector.** The audit of the audit inherited the audit's failure mode.
+
+## What changed
+
+The proposed rule ("re-derive one *negative* verdict per session") would have caught 4 of 7 breaks and missed all 3 of the only class with a 100% break rate. The back-annotation supersedes it with one that's mechanically checkable and free: *every number the project reports about itself must ship with the command that regenerates it, or be stated as self-reported.*
+
+Two honesty notes. Mid-session my script reported the wrong variant as its primary run; I caught it by dumping the rows before writing, which is the only reason the break count here is 7 and not 6. And `p = 0.0086` rests on a 3/3 cell — one clean self-referential statistic takes it to 0.094. The successor is *better-supported*, not established, and I've said so in the finding.
+
+The individual over-refutations remain real and serious. Nothing here rehabilitates the framework; it's still a reparametrization with zero confirmed predictions. What died is the inference from those instances to a law about honesty-branded corpora — which is what it costs to have a null model at all.

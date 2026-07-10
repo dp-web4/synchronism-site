@@ -62,10 +62,11 @@ export default function CoreIdea() {
         <p>
           tanh is an S-shaped curve that smoothly transitions from 0 to 1 &mdash; think of it as a
           dimmer switch from sparse/independent to dense/collective. The function
-          must be bounded [0, 1], monotonic, and smooth. tanh is <em>motivated</em> by the Ising model
-          self-consistency form m = tanh(&beta;Jzm), but C(&#x03C1;) is not a self-consistency equation &mdash;
-          &#x03C1; goes in, C comes out, with no feedback loop. Other sigmoids (logistic, error function, Hill)
-          satisfy the same four constraints. tanh is a phenomenological choice, not a derived result.
+          must be bounded [0, 1], monotonic, and smooth. tanh&apos;s form recalls the Ising model
+          self-consistency equation m = tanh(&beta;Jzm), but the resemblance is only visual: C(&#x03C1;) has no
+          feedback loop (&#x03C1; goes in, C comes out), so the Ising analogy carries no motivating force.
+          Other sigmoids (logistic, error function, Hill) satisfy the same four constraints.
+          tanh is a phenomenological choice, not a derived result.
           Note: Landau-universality critical exponents (&#x03B2;, &#x03BD;, etc.) are off by ~2&times; in practice
           &mdash; the analogy is motivational, not literal.
         </p>
@@ -85,11 +86,25 @@ export default function CoreIdea() {
         </p>
         <p><Link href="/gamma-parameter" style={{ color: 'var(--color-accent-blue)' }}>Why 2/&#x221A;N<sub>corr</sub>? (motivation, not derivation) &rarr;</Link></p>
 
-        <h3>Why log?</h3>
+        <h3>Why log? (Honest answer: it&apos;s cosmetic)</h3>
         <p>
-          Density spans 80+ orders of magnitude (from interstellar gas at 10<sup>&minus;24</sup> g/cm&sup3;
-          to neutron stars at 10<sup>14</sup> g/cm&sup3;). The logarithm compresses this range into
-          something the tanh can work with.
+          The traditional motivation was compression: density spans 80+ orders of magnitude (from
+          interstellar gas at 10<sup>&minus;24</sup> g/cm&sup3; to neutron stars at 10<sup>14</sup> g/cm&sup3;),
+          and the logarithm squeezes that range into something the tanh can work with. But an exact
+          identity retires that story. With x&nbsp;=&nbsp;&#x03C1;/&#x03C1;<sub>crit</sub>:
+        </p>
+        <p style={{ fontFamily: 'monospace', fontSize: '0.9rem', color: 'var(--color-accent-violet)' }}>
+          tanh(&#x03B3;&middot;ln(1+x)) &equiv; [(1+x)<sup>2&#x03B3;</sup> &minus; 1] / [(1+x)<sup>2&#x03B3;</sup> + 1] &mdash; exactly.
+        </p>
+        <p>
+          The equation is an ordinary rational (Hill-type) saturation function of (1+x)<sup>2&#x03B3;</sup>;
+          the tanh&#x2218;ln decomposition is notation, not mechanism. Any saturating rational function
+          &ldquo;spans 80 orders of magnitude&rdquo; for free &mdash; the ln does no work that the exponent
+          2&#x03B3; doesn&apos;t undo. So the Hill functions and Naka&ndash;Rushton curves named below are not
+          merely <em>similar</em> alternatives; the flagship equation <em>is</em> one of them, exactly.
+          (Identity stated 2026-07-10. Provenance: derived independently by two successive internal
+          review passes, 2026-07-09 and 2026-07-10 &mdash; the audit machinery caught it; the identity
+          then took a day to reach this page. No external derivation is on record.)
         </p>
       </section>
 
@@ -173,8 +188,10 @@ export default function CoreIdea() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: 'var(--color-accent-violet)' }}>What C(&#x03C1;) actually is:</strong>{' '}
-          A logarithmic compander &mdash; in the family of &#x03BC;-law encoders, Hill functions,
-          and Naka&ndash;Rushton curves &mdash; that maps log-density onto a [0,1] saturation curve.
+          A logarithmic compander &mdash; not merely <em>in the family of</em> &#x03BC;-law encoders, Hill functions,
+          and Naka&ndash;Rushton curves, but algebraically <em>identical</em> to a Hill-type rational
+          saturation function: tanh(&#x03B3;&middot;ln(1+x)) &equiv; [(1+x)<sup>2&#x03B3;</sup>&minus;1]/[(1+x)<sup>2&#x03B3;</sup>+1]
+          exactly (see &ldquo;Why log?&rdquo; above).
           The &ldquo;Ising motivation&rdquo; is conceptual: C(&#x03C1;) is not a self-consistency equation
           (&#x03C1; goes in, C comes out, no feedback). Critical exponents (&#x03B2;, &#x03BD;) are off by 2&#x00D7;
           &mdash; the diagnostic result that rules out C(&#x03C1;) as a Landau-theory continuum

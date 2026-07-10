@@ -161,6 +161,11 @@ export default function Home() {
         <>
           {/* Methodology honest limit */}
           <section style={{ marginBottom: '2rem' }}>
+            <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', margin: '0 0 0.6rem', maxWidth: '65ch' }}>
+              <strong>Orientation:</strong> this site tracks an idea being tested in public &mdash;
+              including every failure. The zeros and &ldquo;failed&rdquo; badges below are the scoreboard
+              of that process, kept honestly; they are the point, not the fine print.
+            </p>
             <div style={{
               background: 'rgba(245,158,11,0.07)',
               border: '1px solid rgba(245,158,11,0.25)',
@@ -170,11 +175,11 @@ export default function Home() {
               color: 'var(--color-text-secondary)',
             }}>
               <strong style={{ color: '#f59e0b' }}>Methodology note:</strong>{' '}
-              This site was developed via 3,308 A2ACW (AI-to-AI Adversarial Collaboration Workshop) sessions &mdash; AI agents stress-testing each other&apos;s claims. The adversarial agents share the same training distribution and{' '}
+              This site was developed via ~3,300 A2ACW (AI-to-AI Adversarial Collaboration Workshop) sessions (self-reported count; not independently regenerable &mdash; the archive&apos;s own tallies disagree by hundreds) &mdash; AI agents stress-testing each other&apos;s claims. The adversarial agents share the same training distribution and{' '}
               <strong>cannot substitute for out-of-distribution evaluation by domain experts.</strong>{' '}
               The <strong>1.4% internal-consistency survival rate</strong> (not a discovery rate &mdash; see methodology) and public failure log are the protocol&apos;s honest outputs.
               The decisive number: <strong>0 of 6 &ldquo;Validated&rdquo; claims survived expert audit</strong> (all demoted to Reparametrization or Failed).
-              Volume (3,308 sessions) is not evidence; the 0/6 retention rate is.{' '}
+              Volume (~3,300 sessions) is not evidence; the 0/6 retention rate is.{' '}
               <strong style={{ color: '#f59e0b' }}>Why publish a theory that didn&apos;t pan out?</strong>{' '}
               Because the honest map of what failed — and why — is the actual product.{' '}
               <Link href="/research-philosophy" style={{ color: '#f59e0b' }}>See methodology &rarr;</Link>
@@ -227,7 +232,7 @@ export default function Home() {
               alignItems: 'center',
             }}>
               <span>Prospective predictions confirmed: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Post-hoc retrodictions: <strong style={{ color: '#ef4444' }}>1</strong> (DESI fσ₈ — kill criterion triggered, closed; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
+              <span>Post-hoc retrodictions attempted: <strong style={{ color: '#ef4444' }}>1 — failed</strong> (DESI fσ₈ — kill criterion triggered, closed; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
               <span>RAR (Radial Acceleration Relation) shape test — CLOSED: <strong style={{ color: '#ef4444' }}>γ=2 refuted</strong> (ΔBIC=+184 point estimate; conservative ≥+33; free-γ→MOND (Modified Newtonian Dynamics))</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
               <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong></span>

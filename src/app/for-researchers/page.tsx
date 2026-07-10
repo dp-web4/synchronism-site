@@ -86,6 +86,24 @@ export default function ForResearchers() {
             frontier). A referee evaluating any new &ldquo;density &rarr; gravity&rdquo; proposal can
             use the triage above to decide which side of that line it falls on before fitting anything.
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Known escapes from this no-go (added 2026-07-10):</strong> AeST is not the only
+            published escape, and the second one is the more instructive because it <em>keeps a local
+            density criterion</em>. Superfluid dark matter (Berezhiani &amp; Khoury, PRD 92, 103510
+            (2015)) has dark matter Bose-condense in galaxies above a local density/temperature
+            threshold — the same core intuition as this framework — but the MOND-like force is mediated
+            by the condensate&apos;s <em>phonons</em>, so the force scale enters independently of the
+            switching criterion. That separation is exactly what C(&#x03C1;) lacks: it conflates the
+            switch and the force into one local function, and that conflation — not the density
+            threshold per se — is what the data kill. Related prior art for the wrong-variable
+            diagnosis: symmetron/chameleon screening, where density-dependent transitions are a mature
+            field and the &#x03C1;-vs-g<sub>bar</sub> mismatch is the standard reason screened scalars
+            don&apos;t reproduce MOND. (Whether the BTFR-forced V<sup>&minus;2</sup> argument constrains
+            the superfluid&apos;s condensation threshold is an open check, queued — the expectation is
+            no, because the phonon coupling carries the a&#x2080; scale separately.) Escape taxonomy:
+            non-local theory (AeST-class), or local-criterion-<em>gated medium</em>
+            (superfluid-DM-class); local-density <em>direct</em> modulation remains excluded.
+          </p>
           <Link href="/honest-assessment" style={{ fontSize: '0.85rem' }}>Full closure documentation in Honest Assessment &rarr;</Link>
         </div>
 

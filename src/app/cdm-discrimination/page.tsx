@@ -38,6 +38,11 @@ export default function CdmDiscrimination() {
           Acceleration Relation (RAR) from halo-to-halo assembly diversity. The measured value,
           0.086 &plusmn; 0.003 dex, sits <strong>inside</strong> that predicted range once the
           measurement&apos;s own noise budget is modeled correctly &mdash; it does not beat CDM.
+          <strong> Benchmark disclosure (2026-07-10):</strong> the &ldquo;CDM prediction&rdquo; used here is the
+          source session&apos;s own internal figure (&#x2248;0.085 dex from halo-concentration scatter, Session 610)
+          &mdash; no external published CDM scatter estimate (semi-analytic or hydrodynamic-simulation) has been
+          cited or checked against, so the CDM-consistency verdict is internally coherent but not yet anchored
+          to the literature&apos;s range. An external-benchmark check is queued.
           The number comes from an optimal N&nbsp;=&nbsp;677 subsample (Mendel stellar masses) drawn
           from the larger 14,585-galaxy ALFALFA-SDSS cross-match used elsewhere on this site &mdash;
           not from &ldquo;14,760 galaxies,&rdquo; a figure that matched no accounting in the underlying

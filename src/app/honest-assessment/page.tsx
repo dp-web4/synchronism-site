@@ -235,7 +235,12 @@ export default function HonestAssessment() {
               <ValidationBadge status="untested" label="TEST-03 Never Run As Registered" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              14,585 galaxies. &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>CDM-consistent</strong> (z&nbsp;=&nbsp;+0.5 in the definitive run), not below CDM.
+              &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>CDM-consistent</strong> (z&nbsp;=&nbsp;+0.5 in the definitive run), not below CDM.
+              <strong> Sample correction (2026-07-10):</strong> the 0.086 figure belongs to the source session&apos;s{' '}
+              <em>optimal quality cut, N&nbsp;=&nbsp;677</em> (SNR&nbsp;&gt;&nbsp;15, e<sub>W50</sub>&nbsp;&lt;&nbsp;10, b/a&nbsp;&lt;&nbsp;0.65, V&nbsp;&gt;&nbsp;80&nbsp;km/s),
+              not to the full ALFALFA&ndash;SDSS cross-match &mdash; the full sample (N&nbsp;=&nbsp;14,435 in the definitive session) gives
+              &#x03C3;<sub>int</sub>&nbsp;=&nbsp;0.118&nbsp;&plusmn;&nbsp;0.001. This card previously paired the headline N with the optimal-cut statistic
+              &mdash; the same numerator/denominator splice class as the TEST-03 correction below, caught by walking the number to Session 610&apos;s own table.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Correction (2026-07-09):</strong> this card previously reported &ldquo;environment-dependent RAR scatter at

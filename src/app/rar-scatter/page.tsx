@@ -66,8 +66,10 @@ export default function RarScatter() {
 
         <h2>The Test</h2>
         <p>
-          Using the ALFALFA-SDSS cross-matched sample (14,585 galaxies), &#x03C3;<sub>int</sub> = 0.086 dex
-          was measured (CDM-consistent — see{' '}
+          Using the ALFALFA-SDSS cross-matched sample, &#x03C3;<sub>int</sub> = 0.086 dex was measured on the
+          <em> optimal quality cut (N = 677)</em> — the full cross-match (N = 14,435) gives 0.118 dex; pairing
+          the headline N with the optimal-cut statistic was a sample splice, corrected 2026-07-10
+          (CDM-consistent — see{' '}
           <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link>).
           The p = 5&times;10<sup>&minus;6</sup>, R&sup2; = 0.14 environment-density statistics below are <strong>not</strong>
           from this sample: they trace to a SPARC-scale (N&asymp;171) Hubble-type/morphology regression

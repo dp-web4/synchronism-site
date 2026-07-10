@@ -40,6 +40,19 @@ export default function GalaxyRotation() {
           hand-tuned radius stand-in is that no-go showing through in a single demo.
         </p>
 
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <strong>The literature already contains both this obstruction and its known escapes
+          (noted 2026-07-10):</strong> density-dependent transitions are a mature field
+          (symmetron/chameleon screening), and the &#x03C1;-vs-g<sub>bar</sub> variable mismatch is
+          the standard reason screened scalars don&apos;t reproduce MOND. The constructive escape is
+          superfluid dark matter (Berezhiani &amp; Khoury 2015): a <em>local</em> density criterion
+          switches on a condensate, but the MOND-like force is carried by the condensate&apos;s
+          phonons — the force scale enters independently of the switch. C(&#x03C1;) conflates switch
+          and force into one local function; that conflation is what the data kill. See the escape
+          taxonomy on{' '}
+          <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>.
+        </p>
+
         <h2>Dataset Results</h2>
         <div className="grid-2" style={{ margin: '1.5rem 0' }}>
           <div className="card card-highlight">

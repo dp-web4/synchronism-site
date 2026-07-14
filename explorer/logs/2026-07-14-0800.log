@@ -1,1 +1,36 @@
 Starting Synchronism Explorer Session at Tue Jul 14 08:00:01 PDT 2026
+Done. Here's what happened.
+
+## TEST-09 is not "MOND-Shared." It's the sharpest discriminator in the ledger, and the framework loses it.
+
+The maintainer seeded this topic as bookkeeping — *"which velocity definition is the prediction stated on?"* WAKE replaced the question: **can a bounded boost produce a BTFR at all?** It can't, and that makes the velocity definition irrelevant.
+
+I ran it on real SPARC data (already in the repo) using the framework's own galaxy law, applying the same V_flat estimator and fit to all three curves:
+
+| BTFR slope, 123 galaxies | n | verdict |
+|---|---|---|
+| Observed | 3.75 ± 0.10 | reproduces Lelli+2019 (3.85 ± 0.09) ✓ |
+| MOND | 3.81 ± 0.04 | 0.6σ — passes |
+| **Synchronism** | **3.35 ± 0.07** | **3.3σ — fails** |
+
+Deviation 0.41 against a **registered kill criterion of 0.3**. It fires, on the variable the criterion actually names.
+
+**Why:** the framework's `C(a)` is bounded below by Ω_m, capping the boost at 3.17. MOND's diverges. A saturating boost is asymptotically just a constant rescaling of G — Newtonian — so the deep limit is BTFR n = 2 (verified: 2.01, vs MOND's 3.99). **The framework is Newtonian at both ends of its own regime ladder.** It has no deep-MOND regime at all. No parameters rescue it: at its own Ω_m = 0.315 the best over all (φ, a₀) is 3.45. Reaching the data requires Ω_m → 0.001 and φ → 2, where the law degenerates algebraically to MOND. **Its two "derived from cosmology" ingredients are precisely the two that put it off the BTFR.**
+
+Three things make this more than one dead test:
+
+**The site already contained the refutation, twice, and never connected it.** `/honest-assessment` calls the boost ceiling *"the strongest direct refutation in the framework's own internal audit."* `/galaxy-rotation` says boundedness is *"the only form whose prediction differs from MOND."* `/tier-1-existing` says the BTFR *"cannot discriminate."* Those can't all be true.
+
+**A refutation was recorded, then overwritten.** Session 58 honestly logged "predicted n=2.75, observed n≈4 — acknowledged discrepancy." Session 193 declared *"This is NOT a failure"* using a synthetic 9-galaxy ladder, asserting a deep-MOND limb its own formula cannot produce — and printed "BTFR: Matches" two rows from "Bounded? Yes" in one table. S58 was right.
+
+**It generalizes.** TEST-10 carries the same never-run badge and dies of the same ceiling: it predicts DM fraction → 100%; the framework caps it at 68.5%. Two of two MOND-Shared badges audited are concealed refutations.
+
+## The methodological finding
+
+**"MOND-Shared" is the site's only unfalsifiable badge.** It asserts a *tie* — no execution, no number, cannot be wrong — and it *sounds modest*, which is exactly why an honesty-tuned audit can't see it. But "we tie with MOND on the BTFR" is a concealed win claim, because tying there would be a genuine success.
+
+This is a third error direction. Today's maintainer named two biases and had no slot for **over-claiming inside a verdict**. The 07-09 reflexivity law found the program is harder on itself than on its theory (self-stats break 4/4, physics 4/27) — this is the counterexample that completes it. Both biases share one root: **the audit checks a claim's sentiment, not whether it was ever executed.**
+
+Everything is committed and pushed to both repos, with `PREDICTIONS.md` Bucket 2 updated (S58 vindicated, S193's rescue invalidated) and a proposal filed on the badge class. Maintainer P0s: re-badge TEST-09 and TEST-10, delete the "deep-MOND → n≈4" line, and audit every remaining MOND-Shared badge.
+
+One caveat worth flagging: my BTFR fit is a vertical log-log fit, not the orthogonal fit Lelli uses — so don't quote 3.75 as a new BTFR measurement. The *model comparison* is what carries the result, and it's internally controlled.

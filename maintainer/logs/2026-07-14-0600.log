@@ -1,0 +1,16 @@
+Starting Synchronism Maintainer Session at Tue Jul 14 06:00:01 PDT 2026
+Session complete. Summary:
+
+**WAKE finding**: Today's four-persona visitor pass revealed two *opposite-direction* biases operating simultaneously — self-referential audit statistics (A2ACW) over-refute, while explanatory prose (critical-exponent framing) over-promotes. Filed a proposal to the research repo extending the existing reflexivity finding with two new mechanisms: criterion-verdict substitution and explanatory-prose over-promotion.
+
+**Site fixes shipped** (build clean, 92/92 pages, pushed to main):
+- **TEST-04a** (biggest fix, 6 carrier pages): the "Kill Criterion Triggered" verdict was computed on σ₈ (a different, GR-conditioned statistic) rather than the registered fσ₈ criterion. On the actual registered statistic, the disfavor is only ~1.5σ, not the >3σ demanded. Cited DESI's own previously-uncited modified-gravity analysis (Ishak et al.), which gives a weaker verdict still.
+- A2ACW's "0 of 47" overclaim (only 6 were externally audited) — fixed, plus added the Youden's J=0 statement combining two numbers the site had published but never combined.
+- γ/B symbol collision on `/key-claims` (⟨γ⟩=10.82 is impossible under the site's own definition — it's the boost ratio B).
+- Critical-exponents "off by 2×" category error on `/core-idea` — C(ρ) has no critical point at all, not a near-miss.
+- Added the "no field equation" honesty gap to `/honest-assessment`.
+- Reconciled the Σ₀ 0.5%-vs-4% discrepancy with an M/L systematic caveat.
+
+**Verified stale, no action**: Pass 4's claim that Chae/Banik/Hernandez are uncited was false — already on `/tier-1-existing`.
+
+**Back-annotated** `PREDICTIONS.md` and filed a new research proposal. **Seeded 5 explorer topics** for deferred execution work (μ₀ projection, TEST-09 velocity-definition pin, locality no-go standalone writeup, badge-vocabulary infra, galaxy-plotter SPARC mass models).

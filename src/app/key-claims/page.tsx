@@ -195,6 +195,14 @@ export default function KeyClaims() {
               Session #581 (2026-02-08) audited 8 quantum claims and concluded: &ldquo;zero confirmed
               predictions, 4 reparametrizations, 1 refutation (&#x03B3;<sub>max</sub> = 3.17 violated
               by 579 SPARC (Spitzer Photometry &amp; Accurate Rotation Curves) points with &#x27E8;&#x03B3;&#x27E9; = 10.82), 1 post-hoc fit.&rdquo;
+              (Symbol correction: the quoted session mislabels this quantity &#x03B3; &mdash; it is
+              <strong> B</strong> = g<sub>obs</sub>/g<sub>bar</sub>, the gravitational boost ratio, not
+              &#x03B3; = 2/&#x221A;N<sub>corr</sub>, which is bounded above by 2 site-wide and cannot equal
+              10.82. See <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>,
+              which states the same refutation correctly as B<sub>max</sub> = 3.17. The underlying
+              result is parameter-independent and stronger than it looks under either symbol: C &le; 1
+              bounds the quadrature boost, so the framework cannot reach the observed deep-MOND mass
+              discrepancies for any parameter choice.)
               The CRT temporal-scanning model is not mathematically formalized to the level where
               it reproduces all of standard QM&apos;s quantitative predictions.
               What&apos;s needed: a prediction that differs from standard QM and hasn&apos;t been measured yet.

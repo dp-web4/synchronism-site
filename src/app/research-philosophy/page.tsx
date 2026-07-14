@@ -227,10 +227,15 @@ export default function ResearchPhilosophy() {
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           3,308 A2ACW sessions have been run across the research archive. Of these, approximately
-          47 produced internal-consistency survivors &mdash; a 1.4% session yield. <strong>Novel-surviving
-          yield after domain-expert audit: 0.</strong> All 47 resolved as reparametrizations of known physics,
-          internal consistency findings, or null results when examined by physicists outside the training
-          distribution. Human oversight reviews borderline cases and maintains the validation badge taxonomy.
+          47 produced internal-consistency survivors &mdash; a 1.4% session yield. <strong>Of those 47,
+          6 have been through a full external domain-expert audit; all 6 resolved as
+          reparametrizations of known physics, internal consistency findings, or null results.
+          Novel-surviving yield on the audited subset: 0 of 6.</strong> The remaining 41 are
+          internally-consistent but have not yet been put in front of an outside physicist &mdash;
+          they are unaudited, not confirmed-negative; treating &ldquo;0 of 47&rdquo; as if all 47
+          were checked overstates what has actually been reviewed (see{' '}
+          <a href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</a>{' '}
+          for the audited-vs-pending breakdown). Human oversight reviews borderline cases and maintains the validation badge taxonomy.
           Every badge is the product of at least one full A2ACW challenge cycle &mdash; which, given the
           0% novel-survivor rate of that cycle on held-out claims, is provenance, not
           assurance: a badge means the claim was challenged, not that the challenge could have
@@ -362,18 +367,23 @@ export default function ResearchPhilosophy() {
           <div className="card" style={{ padding: '0.75rem 1rem', borderLeft: '3px solid #ef4444' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
               <strong>TEST-04a: DESI RSD fσ₈ Suppression</strong>
-              <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>DISFAVORED ~2σ — Kill Criterion Triggered (corrected 2026-05-26)</span>
+              <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>DISFAVORED 2.4σ on σ₈ — ~1.5σ on Registered fσ₈ (corrected 2026-07-14)</span>
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
               Registered as TEST-04 replacement (2026-05-04). Derivation: Session 107. Threshold: fσ₈(z=0.51) &gt; 0.46
-              rules out at 3σ. DESI DR1 full-shape (arXiv:2411.12021): LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13 — above ΛCDM fiducial;
-              combined σ₈ = 0.841 ± 0.034 (Table 10). Kill criterion triggered (LRG1 actual ≫ 0.46).
-              Tension: σ₈ 0.841 vs predicted 0.76 = 2.4σ. Post-hoc by 8+ months (DESI DR1 April 2024;
-              Session 107 committed December 2025). Verdict: disfavored 2.4σ on σ₈ amplitude — the predicted
-              suppression is absent (the LRG1 &ldquo;enhancement&rdquo; is a single ~1.2σ bin, not load-bearing; reframed 2026-07-02).
-              Note: 2026-05-25 &ldquo;correction&rdquo; that claimed kill not triggered was itself an error
-              (misattributed arXiv:2512.03230 z≈0.07 PV value to z=0.51 full-shape slot).
-              <strong>No replacement substituted.</strong>
+              rules out at &gt;3σ. DESI DR1 full-shape (arXiv:2411.12021): LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13 — above ΛCDM fiducial,
+              i.e. fσ₈ = 0.474 × 1.16 ± 0.062 = 0.550 ± 0.062. <strong>Corrected 2026-07-14:</strong> that exceeds 0.46 by only
+              ~1.5σ, not the &gt;3σ the criterion demands — &ldquo;LRG1 actual ≫ 0.46&rdquo; overstated the margin.
+              The kill was instead delivered on a different statistic, combined σ₈ = 0.841 ± 0.034 (Table 10),
+              which is GR-conditioned (inferred assuming GR growth kernels) and therefore risks circularity as
+              a test of modified growth. Tension: σ₈ 0.841 vs predicted 0.76 = 2.4σ — real, but not the
+              registered kill. DESI&apos;s own modified-gravity analysis (Ishak et al. arXiv:2411.12026) gives a
+              weaker verdict still (μ₀ within 1σ of zero). Post-hoc by 8+ months either way (DESI DR1 April 2024;
+              Session 107 committed December 2025). Honest verdict: the test as registered lacked the power to
+              discriminate this framework from GR; the framework&apos;s cosmology sector remains dead on other
+              grounds (no field equation, locality no-go). See{' '}
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
+              for the full correction. <strong>No replacement substituted.</strong>
             </p>
           </div>
         </div>

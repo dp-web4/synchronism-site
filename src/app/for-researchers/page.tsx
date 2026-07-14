@@ -132,6 +132,18 @@ export default function ForResearchers() {
             Discrimination lives entirely in unautomated human novelty judgment.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Put the two rates together and the detector is uninformative:</strong> combined
+            sensitivity (true-positive rate) is 6/6 = 1.0 (self-simulated upper bound, see above);
+            specificity is 0/6, i.e. the false-positive rate is also 6/6 = 1.0. Youden&apos;s
+            J = TPR − FPR = 1.0 − 1.0 = <strong>0</strong> (AUC ≈ 0.5). A classifier that
+            flags every demoted claim <em>and</em> every genuine discovery carries zero
+            discriminating information — both numbers were already published on this site, on
+            two different pages, and had never been combined until a 2026-07-14 visitor pass did the
+            subtraction. The 6/6 catch rate is not the methodology&apos;s best result; multiplied
+            against its own specificity, it is the demonstration that the detector cannot tell a
+            demotion from a discovery.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Measured, not asserted: adversarial same-corpus AI pairs filter for internal consistency
             but cannot substitute for out-of-distribution evaluation. Relevant to anyone building
             AI-for-science generation pipelines on shared training corpora.
@@ -152,24 +164,30 @@ export default function ForResearchers() {
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #ef4444' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.1rem' }}>Secondary: the DESI growth-suppression negative (mechanism-class)</h2>
-            <ValidationBadge status="failed" label="Disfavored 2.4σ — σ₈ Amplitude — Post-hoc — Kill Criterion Triggered" />
+            <ValidationBadge status="failed" label="Disfavored 2.4σ on σ₈ — ~1.5σ on Registered fσ₈ — Post-hoc — Underpowered to Discriminate" />
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             TEST-04a predicted &#x03C3;&#x2088;&nbsp;&#x2248;&nbsp;0.76 (calibrated to the then-live S8 lensing tension);
             DESI DR1 full-shape combined &#x03C3;&#x2088;&nbsp;=&nbsp;0.841&plusmn;0.034 (Table 10) &mdash; a
-            <strong> 2.4&#x03C3;</strong> amplitude tension. That is the load-bearing kill. A single bin
-            (LRG1, z=0.51) also shows fσ₈ growth above fiducial (ratio 1.16&plusmn;0.13, ~1.2&#x03C3;), but the
+            <strong> 2.4&#x03C3;</strong> amplitude tension on &#x03C3;&#x2088;. <strong>Correction (2026-07-14):
+            the criterion was registered on a different statistic, fσ₈(z=0.51) &gt; 0.46 for &gt;3&#x03C3;.</strong>{' '}
+            On that statistic directly &mdash; LRG1 fσ₈&nbsp;=&nbsp;0.474&nbsp;&times;&nbsp;1.16&plusmn;0.062&nbsp;=
+            &nbsp;0.550&plusmn;0.062 &mdash; the threshold is exceeded by only <strong>~1.5&#x03C3;</strong>, short
+            of the registered &gt;3&#x03C3; bar. &#x03C3;&#x2088; is inferred assuming GR growth kernels, so using
+            it to falsify a modified-growth model risks circularity. DESI&apos;s own purpose-built
+            modified-gravity analysis, Ishak et al. arXiv:2411.12026 (JCAP 09 (2025) 053, previously uncited
+            here), gives &#x3bc;&#x2080;&nbsp;=&nbsp;0.11 (+0.45/&minus;0.54) from DESI alone &mdash; a 12%
+            fσ₈ suppression maps to a &#x3bc;&#x2080; inside that 1&#x03C3; band. Honest reading: <strong>the test
+            as registered lacked the power to discriminate this framework from GR</strong> &mdash; the
+            &#x03C3;&#x2088; comparison is real but is not the registered kill. A single bin
+            (LRG1, z=0.51) also shows fσ₈ growth above fiducial (ratio 1.16&plusmn;0.13, ~1.2&#x03C3;), and the
             DESI DR1 full-shape RSD <em>ensemble</em> growth index &#x03B3;<sub>growth</sub>&nbsp;&#x2248;&nbsp;0.58,
-            above GR&apos;s 0.545, which leans mildly toward suppression &mdash; the predicted direction.
-            Reading the single bin as &ldquo;wrong direction regardless of bin&rdquo; over-reads a ~1.2&#x03C3;
-            fluctuation against an ensemble that trends the other way (corrected 2026-07-02). Caveats first: the
-            prediction was <strong>post-hoc</strong>
-            (&#x03C3;&#x2088; calibrated to the S8 lensing tension, which has since receded),
-            and the verdict
-            is frozen at DR1 — re-adjudication against DESI DR2 full-shape is warranted. What
-            transfers: any framework whose mechanism damps late-time structure growth to match a receded S8
-            tension sits in the same disfavored box &mdash; an amplitude constraint on the coherence-damped
-            suppression class, not just on this framework.
+            above GR&apos;s 0.545, leans mildly toward suppression &mdash; the predicted direction. Caveats:
+            the prediction was <strong>post-hoc</strong> (&#x03C3;&#x2088; calibrated to the S8 lensing tension,
+            which has since receded), the &#x3bc;&#x2080; projection above has not been formally run (seeded as
+            an explorer topic), and the verdict is frozen at DR1. What transfers: any framework whose
+            mechanism damps late-time structure growth to match a receded S8 tension sits in the same
+            disfavored-on-&#x03C3;&#x2088; box, though this specific DESI test does not discriminate it from GR.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem', marginBottom: '0.25rem' }}>
             Currency: verdict anchored to DESI DR1 (arXiv:2411.12021) as of 2026-07-02.

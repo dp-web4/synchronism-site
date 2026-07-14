@@ -216,6 +216,22 @@ export default function ParameterDerivations() {
               Re-badged from &ldquo;Validated&rdquo; (2026-04-28): a tight numeric match is not sufficient to claim
               derivation of what is, in origin, an observational law.
             </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              <strong>Two more caveats (2026-07-14):</strong> (1) This page&apos;s 0.5% figure and{' '}
+              <Link href="/honest-assessment#landscape" style={{ color: 'var(--color-accent-blue)' }}>Honest
+              Assessment&apos;s</Link> &#8776;4% figure use different H&#x2080; values (this page derives
+              &#x03A3;&#x2080; from its own a&#x2080; &#8776; 1.08&times;10<sup>&minus;10</sup> m/s&sup2; above; Honest
+              Assessment computes &#x03A3;&#x2080; &#8776; 119 directly from cH&#x2080;/(4&#x03C0;&sup2;G) with a
+              different H&#x2080;) &mdash; an open H&#x2080; inconsistency across pages (seeded 2026-07-09,
+              still open), not a resolved arithmetic question. (2) Neither error bar is meaningful on its
+              own terms: Freeman (1970) reports a central surface <em>brightness</em>
+              (21.65&plusmn;0.30 B-mag/arcsec&sup2;), and converting to a surface <em>density</em> requires a
+              mass-to-light ratio M/L<sub>B</sub> that for disk galaxies spans roughly 1&ndash;3 &mdash; the
+              target itself is uncertain by a factor of &#x223C;2. Quoting agreement to 0.5% (or 4%) against a
+              quantity known to a factor of two is precision theater; the honest statement is
+              &ldquo;consistent with Freeman&apos;s law within the M/L systematic,&rdquo; not a specific
+              percentage.
+            </p>
           </div>
 
           <div className="card">

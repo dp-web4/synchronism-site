@@ -324,6 +324,16 @@ export default function HonestAssessment() {
               relation, not a second derivation. Reclassified from &ldquo;Validated&rdquo; to Reparametrization
               alongside a&#x2080; on the same grounds.
             </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
+              <strong>Caveats (2026-07-14):</strong> this page&apos;s &#8776;119/&#8776;4% figure uses a different
+              H&#x2080; than{' '}
+              <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
+              Derivations&apos;</Link> 123.3/0.5% figure — an open H&#x2080; inconsistency across pages
+              (seeded 2026-07-09), not resolved. Separately, Freeman&apos;s (1970) value is a surface
+              <em> brightness</em>; converting to surface <em>density</em> needs M/L<sub>B</sub>&nbsp;&#8776;&nbsp;1&ndash;3,
+              so the target is uncertain by a factor of &#x223C;2 — neither page&apos;s percentage is
+              meaningful standing alone.
+            </p>
           </div>
         </div>
       </section>
@@ -457,8 +467,8 @@ export default function HonestAssessment() {
 
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>TEST-04a: DESI RSD fσ₈ — Post-hoc Retrodiction, Disfavored on Amplitude (Reframed 2026-07-02)</h3>
-              <ValidationBadge status="failed" label="Disfavored 2.4σ — σ₈ Amplitude — Post-hoc — Kill Criterion Triggered" />
+              <h3>TEST-04a: DESI RSD fσ₈ — Post-hoc Retrodiction, Disfavored on σ₈ but Underpowered on the Registered Statistic (Corrected 2026-07-14)</h3>
+              <ValidationBadge status="failed" label="Disfavored 2.4σ on σ₈ — ~1.5σ on Registered fσ₈ — Post-hoc — Test Underpowered to Discriminate" />
             </div>
             <PlainTerms>
               the framework predicted the universe&apos;s large-scale structure should be about 10%
@@ -482,6 +492,35 @@ export default function HonestAssessment() {
               &ldquo;sign-wrong regardless of which bin&rdquo; over-reads a single ~1.2σ bin against an ensemble that
               trends the other way. (Corrected 2026-07-02: a 2026-07-01 explorer re-execution and an independent
               2026-07-02 visitor Pass&nbsp;4 researcher read both flagged the same overclaim.)
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              <strong>Correction (2026-07-14): the registered kill criterion and the delivered verdict use
+              different statistics, and the substitution is not innocent.</strong> The kill criterion below
+              is registered on fσ₈(z=0.51) &gt; 0.46 for a &gt;3σ ruling-out. Computed directly from this
+              page&apos;s own numbers — LRG1 fσ₈&nbsp;=&nbsp;(fσ₈)<sub>fid</sub>&nbsp;×&nbsp;1.16&nbsp;±&nbsp;0.13
+              &nbsp;=&nbsp;0.474&nbsp;×&nbsp;1.16&nbsp;±&nbsp;0.062&nbsp;=&nbsp;0.550&nbsp;±&nbsp;0.062 — the 0.46
+              threshold is exceeded by only <strong>~1.5σ</strong>, well short of the &gt;3σ the criterion
+              demands for a ruling-out (it does clear the weaker &gt;2σ &ldquo;disfavors&rdquo; clause at 0.45).
+              The 2.4σ figure carrying the &ldquo;Kill Criterion Triggered&rdquo; label above is instead a
+              comparison on <strong>σ₈</strong>, a different parameter inferred from a full-shape EFTofLSS fit
+              whose perturbation kernels <em>assume GR growth</em> — using a GR-conditioned amplitude to
+              falsify a modified-growth model risks circularity, a point this page&apos;s own EFTofLSS citation
+              below already half-concedes (1–2σ theory systematic). DESI&apos;s own purpose-built
+              modified-gravity analysis — Ishak et al., &ldquo;Modified Gravity Constraints from the Full-Shape
+              Modeling of Clustering Measurements from DESI 2024,&rdquo; arXiv:2411.12026 (JCAP 09 (2025) 053),
+              previously uncited on this site — constrains exactly the parameter a growth-suppression mechanism
+              lives on: μ₀&nbsp;=&nbsp;0.11&nbsp;(+0.45/−0.54) from DESI FS+BAO+BBN+n<sub>s</sub> alone,
+              tightening to μ₀&nbsp;=&nbsp;0.05&nbsp;±&nbsp;0.22 with CMB+DES-SN. A ~12% fσ₈ suppression maps to
+              a substantially negative μ₀, which sits inside DESI-alone&apos;s 1σ band (the exact mapping needs
+              the assumed time-dependence worked out — not yet run on this site; seeded as an explorer topic).
+              <strong>Honest reading: the test as registered lacks the statistical power to discriminate this
+              framework from GR</strong> — a more useful negative result than a manufactured kill, but
+              materially weaker than &ldquo;Kill Criterion Triggered&rdquo; implied. The framework&apos;s
+              cosmology sector is not rescued by this correction: it still has no field equation to source a
+              growth suppression from in the first place, and the σ₈ discrepancy on its own predicted value
+              (0.76 vs. 0.841) remains a real, if GR-conditioned, 2.4σ miss. (Found and verified: 2026-07-14
+              visitor Pass 3 and Pass 4, cross-checked against this page&apos;s own cited numbers before
+              editing.)
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Two aspects of the honest verdict:</strong> (1) <em>Post-hoc origin — doubly so</em> — Session 107 was committed
@@ -899,7 +938,23 @@ export default function HonestAssessment() {
           ))}
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-          <strong>Current status:</strong> Synchronism&apos;s compander is MOND-equivalent in the galaxy regime (free-γ = 0.49 ≡ MOND at SPARC precision). Relationship to Verlinde&apos;s entropic gravity is uncharted — whether C(ρ) is a sub-case, extension, or reparametrization of Verlinde in that regime has not been worked out. See <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> for the SPARC result.
+          <strong>Current status:</strong> Synchronism&apos;s compander is <em>curve</em>-equivalent to MOND in the galaxy regime (free-γ = 0.49 ≡ MOND at SPARC precision) — not <em>theory</em>-equivalent (see caveat below). Relationship to Verlinde&apos;s entropic gravity is uncharted — whether C(ρ) is a sub-case, extension, or reparametrization of Verlinde in that regime has not been worked out. See <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> for the SPARC result.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+          <strong>There is no field equation anywhere in this framework&apos;s galaxy sector.</strong> The
+          rotation curve is built by adding a boost in quadrature to a velocity —
+          v(r)&nbsp;=&nbsp;&radic;(v<sub>b</sub>&sup2;&nbsp;+&nbsp;[V<sub>flat</sub>&middot;C(&#x03C1;(r))]&sup2;)
+          on the interactive plotter — not by sourcing gravity from a modified Poisson equation or a
+          Lagrangian. MOND itself started the same way (Milgrom 1983&apos;s μ-function had &ldquo;no
+          dynamics, no governing equation&rdquo; either), but MOND was completed a year later by AQUAL
+          (Bekenstein &amp; Milgrom 1984) and again by QUMOND (Milgrom 2010) — both well-posed
+          boundary-value problems with conserved momentum, a Lagrangian, and cluster/lensing predictions.
+          Synchronism has no analogous completion: no momentum conservation, no lensing prediction, no
+          way to source growth suppression in cosmology (see TEST-04a above) except by post-hoc
+          calibration. Calling the framework &ldquo;MOND-equivalent&rdquo; therefore flatters it — it is
+          equivalent to MOND&apos;s <em>curve</em>, not to MOND&apos;s <em>theory</em>, and unlike Milgrom&apos;s
+          1983 starting point it has no field-equation program in progress to complete it. (2026-07-14,
+          visitor Pass 3 + Pass 4, independently.)
         </p>
       </section>
 

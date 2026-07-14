@@ -57,8 +57,8 @@ const closedTests = [
   {
     id: 'TEST-04a',
     name: 'DESI RSD fσ₈ Suppression',
-    status: 'DISFAVORED ~2σ — Kill Criterion Triggered (corrected 2026-05-26)',
-    verdict: 'Session 107 predicted fσ₈(z=0.51) ≈ 0.418 (suppression). DESI DR1 full-shape (arXiv:2411.12021): LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13 — above ΛCDM fiducial; combined σ₈ = 0.841 ± 0.034. Tension: 2.4σ. Kill criterion (fσ₈ > 0.46) triggered. Honest verdict: post-hoc retrodiction — disfavored ~2σ; suppression not observed; data ΛCDM-consistent. Note: 2026-05-25 "correction" claiming kill not triggered was itself an error (misattributed a z≈0.07 PV survey value). See /tier-1-existing for full documentation.',
+    status: 'DISFAVORED 2.4σ on σ₈ — ~1.5σ on Registered fσ₈ (corrected 2026-07-14)',
+    verdict: 'Session 107 predicted fσ₈(z=0.51) ≈ 0.418 (suppression), kill criterion fσ₈ > 0.46 for >3σ. DESI DR1 full-shape (arXiv:2411.12021): LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13 → fσ₈ = 0.550 ± 0.062 — exceeds 0.46 by only ~1.5σ, short of the registered >3σ. Combined σ₈ = 0.841 ± 0.034 gives a 2.4σ tension, but σ₈ is a different, GR-conditioned statistic — using it to falsify a modified-growth model risks circularity. DESI\'s own modified-gravity analysis (Ishak et al. arXiv:2411.12026) gives a weaker verdict (μ₀ within 1σ of zero). Honest verdict: post-hoc either way; the test as registered lacked the power to discriminate this framework from GR. See /tier-1-existing and /honest-assessment for the full correction.',
   },
   {
     id: 'TEST-04',
@@ -79,7 +79,7 @@ export default function Top5Tests() {
         <p>
           Of the defined experiments, these have the highest <strong>distinguishing
           power</strong> &mdash; tests that can discriminate between Synchronism and existing frameworks.
-          Two predictions have now closed: one is disfavored 2.4σ on σ₈ amplitude with kill criterion triggered (post-hoc; reframed 2026-07-02), one withdrawn by internal contradiction.
+          Two predictions have now closed: one is disfavored 2.4σ on σ₈ amplitude but the registered fσ₈ kill criterion fell short of its own &gt;3σ bar (post-hoc; corrected 2026-07-14), one withdrawn by internal contradiction.
         </p>
 
         <div style={{

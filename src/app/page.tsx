@@ -232,7 +232,7 @@ export default function Home() {
               alignItems: 'center',
             }}>
               <span>Prospective predictions confirmed: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Post-hoc retrodictions attempted: <strong style={{ color: '#ef4444' }}>1 — failed</strong> (DESI fσ₈ — kill criterion triggered, closed; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
+              <span>Post-hoc retrodictions attempted: <strong style={{ color: '#ef4444' }}>1 — disfavored</strong> (DESI fσ₈ — disfavored 2.4σ on σ₈, but registered fσ₈ criterion fell short of its own &gt;3σ bar; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
               <span>RAR (Radial Acceleration Relation) shape test — CLOSED: <strong style={{ color: '#ef4444' }}>γ=2 refuted</strong> (ΔBIC=+184 point estimate; conservative ≥+33; free-γ→MOND (Modified Newtonian Dynamics))</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
               <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong></span>

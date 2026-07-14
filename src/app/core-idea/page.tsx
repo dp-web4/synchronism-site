@@ -67,8 +67,10 @@ export default function CoreIdea() {
           feedback loop (&#x03C1; goes in, C comes out), so the Ising analogy carries no motivating force.
           Other sigmoids (logistic, error function, Hill) satisfy the same four constraints.
           tanh is a phenomenological choice, not a derived result.
-          Note: Landau-universality critical exponents (&#x03B2;, &#x03BD;, etc.) are off by ~2&times; in practice
-          &mdash; the analogy is motivational, not literal.
+          Note: C(&#x03C1;) is real-analytic everywhere on its domain &mdash; no singularity, no free-energy
+          functional, and no length scale anywhere in the equation &mdash; so it has no critical point and
+          therefore no critical exponents (&#x03B2;, &#x03BD;) to compare. Asking for them is a category error,
+          not a near-miss with Landau theory; the analogy is motivational only.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Need an analogy first?</Link>
@@ -193,9 +195,14 @@ export default function CoreIdea() {
           saturation function: tanh(&#x03B3;&middot;ln(1+x)) &equiv; [(1+x)<sup>2&#x03B3;</sup>&minus;1]/[(1+x)<sup>2&#x03B3;</sup>+1]
           exactly (see &ldquo;Why log?&rdquo; above).
           The &ldquo;Ising motivation&rdquo; is conceptual: C(&#x03C1;) is not a self-consistency equation
-          (&#x03C1; goes in, C comes out, no feedback). Critical exponents (&#x03B2;, &#x03BD;) are off by 2&#x00D7;
-          &mdash; the diagnostic result that rules out C(&#x03C1;) as a Landau-theory continuum
-          order parameter. See{' '}
+          (&#x03C1; goes in, C comes out, no feedback). C(&#x03C1;) is analytic on its whole domain, with no
+          singularity and no length scale in the equation &mdash; so it has <em>no critical point</em>,
+          and critical exponents (&#x03B2;, &#x03BD;) are undefined by construction, not &ldquo;off by
+          2&#x00D7;.&rdquo; (The apparent &ldquo;2&#x00D7;&rdquo; is &#x03B2;<sub>eff</sub> = 1 from the small-x
+          expansion vs. mean-field &#x00BD; &mdash; but &#x03B2;<sub>eff</sub> = 1 is a tautology for any
+          analytic function vanishing at the origin, not a measurement.) That is the diagnostic result
+          that rules out C(&#x03C1;) as a Landau-theory continuum
+          order parameter &mdash; a category error, not a near miss. See{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</Link>.
         </div>
       </section>

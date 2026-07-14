@@ -1,0 +1,146 @@
+==============================================================================
+TEST-09 -- BTFR slope predicted by Synchronism's own bounded-boost formula
+==============================================================================
+  Synchronism: C(a) = 0.315 + 0.685 * x/(1+x), x = (a/a0)^(1/phi), a0 = 1.05e-10
+               boost ceiling  1/Om = 3.17x in acceleration  (1.78x in velocity)
+  MOND:        McGaugh nu, a0 = 1.20e-10, boost UNBOUNDED
+
+  Boost g_obs/g_bar as a function of g_bar (the whole argument in one table):
+     g_bar [m/s^2]   Synchronism          MOND
+           1.0e-08          1.04          1.00
+           1.0e-09          1.16          1.06
+           1.2e-10          1.49          1.58
+           1.0e-11          2.25          3.99
+           1.0e-12          2.84         11.46
+           1.0e-13          3.08         35.14
+           1.0e-14          3.15        110.05
+  -> Synchronism saturates at 3.17. MOND diverges. This is the entire finding.
+
+  Sample: 123 SPARC galaxies (Q<=2, Inc>30deg, Vflat measured)
+  Mass range: 7.98 to 11.43 dex (3.5 decades)
+
+  --------------------------------------------------------------------------
+  BTFR slope n (M ~ V^n)                    n     +/-   note
+  --------------------------------------------------------------------------
+  OBSERVED (SPARC catalogue Vflat)       3.75    0.10   Lelli+2019 report 3.85 +/- 0.09
+  OBSERVED (our outer-3 estimator)       3.79    0.10   
+  MOND (unbounded boost)                 3.81    0.04   
+  SYNCHRONISM (bounded boost)            3.35    0.07   <-- the framework's own prediction
+  --------------------------------------------------------------------------
+
+  Synchronism vs observed:  |3.75 - 3.35| = 0.41  ->  3.3 sigma
+  MOND vs observed:         |3.75 - 3.81| = 0.06  ->  0.6 sigma
+
+  Site's registered TEST-09 kill criterion: slope off its regime prediction by > 0.3
+  Synchronism deviates from observation by 0.41 (FIRES).
+
+  ==========================================================================
+  The site's claim: 'deep-MOND sample -> n ~ 4'. Test it on the deep-MOND half.
+  ==========================================================================
+  Deep-MOND subsample (g_bar_outer < a0/3): 114 galaxies
+  OBSERVED       n =  3.78 +/- 0.10
+  MOND           n =  3.85 +/- 0.03
+  SYNCHRONISM    n =  3.43 +/- 0.06  <-- site says this should be ~4.0
+
+  ==========================================================================
+  Boost g_obs/g_bar demanded at the outermost measured radius
+  ==========================================================================
+    Synchronism: median  2.41   max   2.87   (hard ceiling 3.17)
+    MOND:        median  4.99   max  12.30   (no ceiling)
+    OBSERVED:    median  4.31   max  14.27
+
+    Galaxies whose observed outer boost EXCEEDS the framework's ceiling of 3.17: 93/123 (76%)
+    The ceiling is not a fitting inconvenience -- those galaxies are unreachable
+    for ANY choice of parameters, because 1/Om is the supremum of 1/C.
+
+================================================================================
+TEST-09 PARAMETER SCAN -- can ANY parameters put Synchronism on the BTFR?
+================================================================================
+  Sample: 123 SPARC galaxies.  OBSERVED slope n = 3.75 +/- 0.10
+  Framework's claimed values: Om = 0.315, phi = 1.618 (golden), a0 = 1.05e-10
+
+--------------------------------------------------------------------------------
+(1) a0 free, Om and phi at their 'derived' values. Does retuning a0 rescue it?
+--------------------------------------------------------------------------------
+    a0 [m/s^2]    BTFR n
+      3.16e-12      3.33
+      5.62e-12      3.36
+      1.00e-11      3.37
+      1.78e-11      3.38
+      3.16e-11      3.38
+      5.62e-11      3.37
+      1.00e-10      3.35
+      1.78e-10      3.32
+      3.16e-10      3.30
+      5.62e-10      3.27
+      1.00e-09      3.25
+      1.78e-09      3.23
+      3.16e-09      3.21
+
+  Best achievable with a0 alone: n = 3.38 at a0 = 1.78e-11
+  Observed is 3.75. a0 is a horizontal shift; it cannot change the asymptote.
+
+--------------------------------------------------------------------------------
+(2) Om free (a0 re-optimised at each Om, phi = golden). Om sets the boost ceiling 1/Om.
+--------------------------------------------------------------------------------
+        Om  boost ceiling   best BTFR n
+     0.315            3.2          3.38
+     0.200            5.0          3.47
+     0.100           10.0          3.60
+     0.050           20.0          3.72
+     0.020           50.0          3.85
+     0.010          100.0          3.93
+     0.001         1000.0          4.10
+
+  The ceiling is the dominant obstruction: the slope only reaches the observed 3.75
+  once Om is driven to ~0.02-0.05, i.e. 6-15x below the cosmological matter density
+  it is supposed to BE. At Om = 0.315 the law cannot get there.
+
+--------------------------------------------------------------------------------
+(2b) THE CRUCIAL CELL: can phi rescue it at the framework's OWN Om = 0.315?
+     (If the ceiling is the obstruction, no exponent should help -- the boost
+      simply cannot exceed 1/Om = 3.17 no matter what phi is.)
+--------------------------------------------------------------------------------
+       phi    best BTFR n (a0 free, Om=0.315)
+     1.200                               3.45
+     1.400                               3.42
+     1.618                               3.38
+     1.800                               3.36
+     2.000                               3.34
+     2.500                               3.31
+     3.000                               3.29
+     4.000                               3.26
+
+  Best over ALL (phi, a0) at the framework's own Om = 0.315: n = 3.45
+  Observed: 3.75 +/- 0.10.  Gap = 0.30 (3.0 sigma), and the site's own kill
+  criterion (deviation > 0.3) fires for EVERY exponent.
+
+--------------------------------------------------------------------------------
+(3) phi free at Om -> 0 (ceiling removed). Deep-limit exponent is p = 1 - 1/phi.
+    Flat rotation curves require p = 0.5 EXACTLY, i.e. phi = 2.
+--------------------------------------------------------------------------------
+       phi  p = 1-1/phi   best BTFR n  note
+     1.200        0.167          4.55  
+     1.400        0.286          4.29  
+     1.618        0.382          4.10  <-- the framework's golden ratio
+     1.800        0.444          3.98  
+     2.000        0.500          3.87  <-- MOND (g_obs = g_bar + sqrt(g_bar*a0))
+     2.200        0.545          3.79  
+     2.500        0.600          3.69  
+
+--------------------------------------------------------------------------------
+(4) Full scan over all three knobs. Where does the best fit have to go?
+--------------------------------------------------------------------------------
+  Closest approach to the observed slope 3.75:
+    n = 3.75  at  Om = 0.001, phi = 2.000, a0 = 1.47e-10
+
+  Compare to the framework's DERIVED values: Om = 0.315, phi = 1.618, a0 = 1.05e-10
+    Om must fall by 315x  (destroying 'Om = cosmological matter density')
+    phi must move to 2.00    (destroying 'phi = golden ratio')
+
+  At Om -> 0 and phi -> 2 the law degenerates to g_obs = g_bar + sqrt(g_bar*a0):
+    that is MOND. The BTFR is recoverable only by ceasing to be Synchronism.
+
+  Verification -- Om=0.001, phi=2.0 vs MOND, boost at g_bar = 1e-12:
+    Synchronism(Om->0, phi=2): 11.82x     MOND: 11.46x     (both diverge; the golden-ratio law saturates at 3.17)
+

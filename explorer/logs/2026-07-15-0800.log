@@ -1,1 +1,18 @@
 Starting Synchronism Explorer Session at Wed Jul 15 08:00:01 PDT 2026
+## Session complete — MOND-Shared class audit: 3/3 tie badges dissolve; class retired; fixes shipped
+
+**⚠ First, an infrastructure alert for you**: the 06:00 maintainer never ran today — it died at 06:00:01 with `API Error: 401 Invalid authentication credentials` (`maintainer/logs/2026-07-15-0600.log`). Until that credential is fixed, the loop has no fix-shipping track. This is flagged at the top of SESSION_FOCUS.
+
+**What WAKE changed**: yesterday's TEST-09 refutation was still badged "cannot discriminate" on the live site, and today's visitor Passes 3 *and* 4 independently re-derived it from scratch — the third and fourth derivations of one finding. So I ran the seeded class audit as research, then shipped the P0 badge fixes as emergency recovery (the 07-10 precedent), since they were triply-derived and fully specified.
+
+**The audit** (finding: `2026-07-15-mond-shared-class-audit-3-of-3-dissolve.md`):
+
+- **TEST-10 executed on real SPARC**: the bounded boost caps apparent DM fraction at 1 − Ω_m = 68.5%. Observed outer fractions: median 0.755, max 0.927 — **69% of all SPARC galaxies (106/153) exceed the ceiling**. MOND's median residual is −0.03 (passes); the framework's is +0.18. The registered prediction "f_DM → 100%" was MOND's, never the framework's. Failed.
+- **TEST-05 adjudicated**: the 07-09 tie compared directions with neither amplitude computed. Computed, MOND+EFE's environment lever (external acceleration, ~0.09 dex) is **50–5,000× larger** than C(ρ)'s (ambient density, ≤2×10⁻³ dex), and the C(a) law predicts exactly zero — the framework registered a >20% environment effect its own equation cannot produce. During back-annotation I found the research repo had **executed the registered run yesterday**: r² = 0.0001 vs the registered >20%. Structure predicted the null; execution delivered it.
+- **The class law**: the framework differs from MOND in exactly two structural features — bounded boost and local coupling variable — and every tie badge sat on an observable controlled by one of them. A tie with MOND is only possible where the framework *is* MOND. The site's only unfalsifiable badge class marked, exactly and exhaustively, its falsifiable surface.
+
+**Shipped** (build 92/92, pushed → Vercel): TEST-09 → Failed/Kill-Fired with the false "deep-MOND → n≈4" prediction deleted; TEST-10 → Failed with execution numbers; TEST-05 → refuted-by-execution across 6 carriers; MOND-shared retired in every legend and the glossary, with the new rule inscribed: *a claimed tie carries the same execution burden as a claimed kill*. Bonus catch: prediction-tracker was carrying a deprecated `supported` badge **on TEST-10**. Back-annotated PREDICTIONS.md Bucket 2 (both repos committed and pushed).
+
+**Handoff for the next maintainer** (in SESSION_FOCUS): the rest of today's visitor log — badge-vocabulary consolidation, the syndicated stale "1 refuted" count, the chemistry 89% headline, Σ₀ propagation, the beginner-path cliff.
+
+**So what?** Discovery advanced, not just documented: one new executed refutation, one adjudicated dissolution, and a structural law — tie badges are the discrimination map, inverted. And the day stress-tested the loop itself: when the shipping track crashed, the discovery track absorbed the P0s without losing its research function.

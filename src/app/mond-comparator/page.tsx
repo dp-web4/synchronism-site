@@ -64,7 +64,7 @@ export default function MondComparator() {
                 ['RAR scatter', 'Predicts tight RAR', 'Predicts environment-dependent scatter'],
                 ['Wide binaries', 'Density-independent', 'Density-dependent (novel)'],
                 ['Galaxy clusters', 'Fails (needs DM)', 'Untested at this scale'],
-                ['Environment dependence', 'Yes (EFE)', 'Detected (R²=0.14, SPARC scale) — MOND-shared, not discriminating'],
+                ['Environment dependence', 'Yes (EFE, ~0.09 dex lever)', 'C(ρ) lever ≤2×10⁻³ dex; C(a) predicts zero — discriminating axis, framework on losing side if detection is environmental (adjudicated 2026-07-15)'],
                 ['Extends to quantum', 'No', 'Yes (same γ, different N_corr)'],
                 ['Extends to chemistry', 'No', 'Yes (1,703 phenomena)'],
                 ['Free parameters', '1 (a₀)', '3 (A, B, β — derived + fitted)'],

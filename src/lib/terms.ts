@@ -420,10 +420,10 @@ export const terms: Record<string, TermDefinition> = {
     learnMore: '/tier-1-existing',
   },
   'mond-shared': {
-    term: 'MOND-shared (badge)',
-    fullName: 'MOND-shared \u2014 Non-Discriminating Test',
-    brief: 'Synchronism and MOND make identical predictions for this test; the outcome cannot discriminate between them.',
-    explanation: 'Some Tier-1 tests cannot distinguish Synchronism from MOND regardless of outcome, because both frameworks make the same prediction in that regime. These are labeled "MOND-shared." Examples: TEST-09 (BTFR slope variation with regime) \u2014 Milgrom (1983) and McGaugh (2012) already predict the same regime-dependent slope; TEST-10 (dwarf galaxy dark matter dominance) \u2014 standard MOND predicts the same pattern. A MOND-shared test is not useless \u2014 it tests both frameworks against data \u2014 but it cannot provide evidence for Synchronism over MOND. The site uses this badge on /tier-1-existing to distinguish tests that discriminate (potentially) from tests that do not.',
+    term: 'MOND-shared (retired marker)',
+    fullName: 'MOND-shared \u2014 Retired Tie Marker (Class Audited 2026-07-14/15)',
+    brief: 'A retired label that asserted Synchronism and MOND make identical predictions for a test. All three tests that carried it turned out to be discriminators \u2014 the framework loses each one.',
+    explanation: 'Until July 2026 the site labeled tests "MOND-shared" when both frameworks were believed to make the same prediction, so the outcome could not discriminate between them. A class audit (2026-07-14/15) dissolved every instance: TEST-09 (BTFR slope) \u2014 the framework\'s bounded boost has no deep-MOND regime, its computed slope fails the observed 3.75\u00b10.10 at 3.3\u03c3 and its registered kill criterion fired; TEST-10 (dwarf DM dominance) \u2014 the bounded boost caps apparent DM fraction at 68.5%, which 69% of SPARC galaxies exceed; TEST-05 (environment-dependent RAR scatter) \u2014 MOND+EFE\'s external-acceleration lever is ~50\u20135,000\u00d7 larger than C(\u03c1)\'s ambient-density lever, so a detected dependence is specific to MOND. The structural lesson: the framework differs from MOND in exactly two features (bounded boost; local coupling variable), and each "shared" test sat on an observable controlled by one of them \u2014 a tie was only possible where the framework IS MOND. Methodological lesson: a tie badge was the site\'s only unfalsifiable label (no execution, no number, sounds modest); the site now requires a claimed tie to carry the same execution burden as a claimed kill.',
     learnMore: '/tier-1-existing',
   },
   'withdrawn': {

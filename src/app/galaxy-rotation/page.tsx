@@ -185,7 +185,10 @@ export default function GalaxyRotation() {
             5&times;10<sup>&minus;6</sup> — the pair is self-consistent only at SPARC scale, TEST-05&apos;s sample.
             TEST-03&apos;s actual environment-density result on this sample was never computed as registered.
             TEST-05, which does own this statistic on its registered terms, met its own criterion (rejecting
-            independence) — reclassified MOND-shared, not failed. Full trace on{' '}
+            independence) — briefly reclassified MOND-shared (2026-07-09), a tie dissolved on adjudication
+            2026-07-15: the two frameworks&apos; environment levers differ by ~50&times;&ndash;5,000&times; (local
+            density vs external acceleration), so the axis discriminates; honest status is &ldquo;never run as
+            registered.&rdquo; Full trace on{' '}
             <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: TEST-03</Link>{' '}
             and <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>TEST-05</Link>.
           </p>

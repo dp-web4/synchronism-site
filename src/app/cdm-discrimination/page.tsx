@@ -114,10 +114,13 @@ export default function CdmDiscrimination() {
             <strong> not a Synchronism-vs-MOND discriminator either</strong> &mdash; MOND&apos;s External
             Field Effect (EFE) also predicts environment-dependent RAR scatter. TEST-05, which measured
             it (p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>, R&sup2;&nbsp;=&nbsp;0.14 on SPARC scale), met its
-            own registered criterion — corrected 2026-07-09 from &ldquo;failed&rdquo; to MOND-shared/
-            non-discriminating; see{' '}
+            own registered criterion — corrected 2026-07-09 from &ldquo;failed&rdquo; to MOND-shared, then
+            re-adjudicated 2026-07-15: the tie dissolves on lever magnitude (MOND+EFE couples to external
+            acceleration, ~0.09 dex modulation; C(&rho;) to ambient density, &le;2&times;10<sup>&minus;3</sup> dex
+            — environment dependence is a discriminating axis, and the registered density-classified run
+            executed 2026-07-14 in the research repo gives r&sup2; = 0.0001: refuted by execution); see{' '}
             <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: TEST-05</Link>{' '}
-            for the corrected verdict and the TEST-03 provenance error it had been conflated with.
+            for the adjudication and the TEST-03 provenance error it had been conflated with.
           </li>
         </ul>
 

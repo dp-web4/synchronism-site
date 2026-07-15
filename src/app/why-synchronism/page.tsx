@@ -111,11 +111,15 @@ export default function WhySynchronism() {
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
               Tested against 14,760 galaxies (SPARC + ALFALFA-SDSS).
               a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 10% &mdash; but this result is shared with MOND and other frameworks.
-              The environment-dependent scatter prediction (TEST-03/05) has a corrected verdict as of 2026-07-09:
+              The environment-dependent scatter prediction (TEST-03/05) has a corrected verdict as of 2026-07-15:
               R²=0.14 is a real, significant effect (p=5&times;10⁻⁶) but on the SPARC-scale sample, not the
-              14,585-galaxy ALFALFA-SDSS one this page previously attributed it to — MOND-shared, not a kill.
+              14,585-galaxy ALFALFA-SDSS one this page previously attributed it to — and it is morphology, not
+              cleanly environment. The brief &ldquo;MOND-shared&rdquo; verdict (07-09) dissolved on adjudication:
+              the frameworks&apos; environment levers differ by orders of magnitude, so the axis discriminates —
+              and the registered density-classified run now exists (research repo, 2026-07-14): r²=0.0001 against
+              the framework&apos;s registered &gt;20% claim. Refuted by execution.
             </p>
-            <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — same math, not new physics; environment-dependent scatter is real but MOND-shared, not a kill (corrected 2026-07-09, see /tier-1-existing)">Reparametrization | TEST-03/05 MOND-shared</span>
+            <span className="badge badge-failed" title="Registered environment-density run executed 2026-07-14 (SPARC RAR offsets vs Cosmicflows-4): r²=0.0001 vs registered >20% — refuted; the MOND+EFE tie dissolved on adjudication 2026-07-15 (levers differ ~50–5,000×), see /tier-1-existing#TEST-05">Failed | TEST-03/05 Environment Run — Refuted by Execution</span>
           </div>
           <div className="card">
             <h3>Chemistry: &#x03B3; &#x2248; 1 Boundary</h3>

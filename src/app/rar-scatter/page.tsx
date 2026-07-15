@@ -11,7 +11,7 @@ export default function RarScatter() {
     <>
       <Breadcrumbs currentPath="/rar-scatter" />
       <h1>RAR Scatter</h1>
-      <ValidationBadge status="untested" label="TEST-03 Never Run — TEST-05 MOND-shared (corrected 2026-07-09)" />
+      <ValidationBadge status="failed" label="Environment run executed 2026-07-14: r²=0.0001 vs registered >20% — refuted; MOND tie dissolved 2026-07-15" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

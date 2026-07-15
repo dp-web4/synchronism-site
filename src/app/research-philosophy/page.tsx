@@ -393,8 +393,10 @@ export default function ResearchPhilosophy() {
           and scope &mdash; distinct from the nine <Link href="#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>validation badges</Link>{' '}
           (5 MRH-relationship: Active-MRH / Parallel-Paths / Sidelined / Superseded / Audited-Negative; 4 descriptive: Untested / Speculative / Reparametrization / Failed). A prediction flagged
           &ldquo;Kill Criterion Triggered&rdquo; also carries the Failed badge; &ldquo;Withdrawn&rdquo; does not carry any
-          badge (it was never adjudicated); &ldquo;MOND-shared&rdquo; means a positive result would confirm both
-          MOND and Synchronism and cannot discriminate &mdash; it does not affect the badge until tested.
+          badge (it was never adjudicated); &ldquo;MOND-shared&rdquo; (RETIRED 2026-07-15) asserted a positive result
+          would confirm both MOND and Synchronism &mdash; a class audit executed all three carriers (TEST-05/09/10)
+          and each dissolved into a discriminator the framework loses; a claimed tie now carries the same execution
+          burden as a claimed kill (both predictions computed, agreement shown within the data&apos;s power).
         </p>
 
         <h2>Related Work in AI-Driven Discovery</h2>

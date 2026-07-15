@@ -87,7 +87,7 @@ export default function HonestAssessment() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
           <strong>Kill Criterion Triggered</strong><span>A pre-registered falsification threshold was crossed. Carries Failed badge. Stronger than &ldquo;Failed&rdquo; alone because failure was quantified in advance.</span>
-          <strong>MOND-shared</strong><span>A positive result confirms Synchronism AND MOND equally; only a null can discriminate. TEST-09, TEST-10. Not a badge — a non-discrimination marker.</span>
+          <strong>MOND-shared</strong><span>RETIRED (class audited 2026-07-14/15). Asserted &ldquo;a positive result confirms Synchronism AND MOND equally.&rdquo; All three carriers dissolved when executed or adjudicated: TEST-09 (BTFR — kill fired, 3.3σ), TEST-10 (dwarf DM fractions — 69% of SPARC exceeds the framework&apos;s 68.5% ceiling), TEST-05 (environment levers differ by ~50–5,000×). A tie badge was the site&apos;s only unfalsifiable label — it carried no execution burden and sounded modest. New rule: a claimed tie carries the same execution burden as a claimed kill (both predictions computed, agreement shown within the data&apos;s discriminating power).</span>
           <strong>Withdrawn</strong><span>Framework disowned the test — not from data refutation, but from internal contradiction, unmotivated amplitude, or supersession. Carries no badge (never adjudicated). TEST-04 (BAO).</span>
           <strong>Self-Eliminating-or-Tie</strong><span>No measurement outcome selects Synchronism over the standard alternatives — either the signal is below systematics reach, or both outcomes (null and confirmed anomaly) are covered by Newton or MOND respectively. TEST-02 (wide binaries).</span>
           <strong>Sign Correction</strong><span>Annotation marking that the prediction direction on this page was corrected after initial publication. Not a verdict badge — a correction provenance marker. TEST-02 (2026-06-06).</span>
@@ -431,7 +431,12 @@ export default function HonestAssessment() {
               <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>TEST-03</Link>{' '}
               and <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>TEST-05</Link>{' '}
               cards for the full trace. TEST-05, which does own the (R&sup2;=0.14, p=5&times;10<sup>&minus;6</sup>) result on
-              its registered terms, is reclassified MOND-shared (non-discriminating), not failed.
+              its registered terms, was reclassified MOND-shared on 2026-07-09 — a verdict re-adjudicated 2026-07-15:
+              the tie dissolves on lever magnitude (MOND+EFE&apos;s external-acceleration lever moves outer g_obs by
+              ~0.09 dex; C(&rho;)&apos;s ambient-density lever by &le;2&times;10<sup>&minus;3</sup> dex — and the C(a)
+              law predicts exactly zero). The registered environment-density run now exists (research repo,
+              2026-07-14: SPARC RAR offsets vs Cosmicflows-4 density, r&sup2; = 0.0001 vs the registered &gt;20% claim
+              — refuted by execution; weak secondaries are opposite-signed, EFE-like). See the TEST-05 card.
             </p>
           </div>
 
@@ -568,6 +573,10 @@ export default function HonestAssessment() {
               The deepest SPARC bin shows &#x27E8;B&#x27E9; = 10.82, with 579 individual SPARC
               galaxies exceeding B<sub>max</sub>. This is the strongest direct refutation in the
               framework&apos;s own internal audit. It was not previously visible on this page.
+              <strong> Its corollaries were executed 2026-07-14/15 and both fail:</strong> a bounded boost has no
+              deep-MOND regime, forcing the wrong BTFR slope (TEST-09 — kill fired at 3.3σ), and caps the apparent
+              DM fraction at 1&nbsp;&minus;&nbsp;&Omega;_m = 68.5%, which 69% of SPARC galaxies exceed (TEST-10).
+              Everything gravitational on this page that differs from MOND is downstream of this one bound.
               <em> (Notation note 2026-06-12: the source audit called this quantity &ldquo;&#x03B3;&rdquo;,
               colliding with the transition-sharpness parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> used
               everywhere else on this page — including the separate &ldquo;&#x03B3; = 2 refuted at
@@ -617,21 +626,37 @@ export default function HonestAssessment() {
             </p>
           </div>
 
-          <div className="card">
+          <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>BTFR Slope (TEST-09) — MOND-shared, Not Discriminating</h3>
-              <ValidationBadge status="reparametrization" label="MOND-shared — Milgrom 1983 / McGaugh 2012" />
+              <h3>BTFR Slope (TEST-09) — FAILED, Kill Criterion Fired (Executed 2026-07-14)</h3>
+              <ValidationBadge status="failed" label="Kill Criterion Triggered — 3.3σ, deviation 0.41 > 0.3" />
             </div>
+            <PlainTerms>
+              the heavier a galaxy, the faster its outer edge spins — and the exact mathematical relationship
+              between mass and speed (the &ldquo;slope&rdquo;) is measured precisely. MOND&apos;s prediction matches it.
+              This framework&apos;s gravity boost has a built-in maximum, and a maxed-out boost behaves like ordinary
+              Newtonian gravity — which forces the wrong slope. Run on 123 real galaxies, the framework misses by
+              more than its own pre-registered failure threshold.
+            </PlainTerms>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              The site previously stated a universal BTFR exponent n&nbsp;&#x2248;&nbsp;2.2 — a transcription error (no archive source). The archive (Session 193) correctly predicts
-              <em> regime-dependent</em> slopes: n&nbsp;&#x2192;&nbsp;4 deep-MOND, n&nbsp;&#x2192;&nbsp;2 near-Newtonian,
-              n&nbsp;&#x2248;&nbsp;2.75 full-sample. Lelli 2019&apos;s n&nbsp;=&nbsp;3.85 is consistent with a SPARC deep-MOND sample.
+              Executed 2026-07-14 on real SPARC (same V_flat estimator applied to observation, MOND, and Synchronism):
+              observed n&nbsp;=&nbsp;3.75&nbsp;&plusmn;&nbsp;0.10 (reproduces Lelli 2019&apos;s 3.85&nbsp;&plusmn;&nbsp;0.09);
+              MOND n&nbsp;=&nbsp;3.81&nbsp;&plusmn;&nbsp;0.04 (passes, 0.6σ); Synchronism n&nbsp;=&nbsp;3.35&nbsp;&plusmn;&nbsp;0.07
+              (<strong>fails, 3.3σ; registered kill criterion &gt; 0.3 fires at 0.41</strong>). No parameters rescue it —
+              reaching 3.75 requires &Omega;_m&nbsp;&rarr;&nbsp;0.001 and &phi;&nbsp;&rarr;&nbsp;2, where the law degenerates
+              algebraically into MOND.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              <strong>Critical issue:</strong> The regime-dependent slope (n&nbsp;&#x2192;&nbsp;4 deep-MOND, n&nbsp;&#x2192;&nbsp;2 Newtonian)
-              is a textbook MOND signature (Milgrom 1983, McGaugh 2012) that follows directly from the MOND interpolating function.
-              A positive result confirms both Synchronism and MOND — it cannot discriminate. Reclassified from
-              &ldquo;Restated as Regime-Dependent&rdquo; to Reparametrization.
+              <strong>Why the old &ldquo;MOND-shared / cannot discriminate&rdquo; badge was wrong in structure:</strong>{' '}
+              the framework&apos;s boost is bounded (B&nbsp;&le;&nbsp;1/&Omega;_m&nbsp;=&nbsp;3.17 — the ceiling in the
+              boost-ceiling entry above), so it has <em>no deep-MOND regime</em>: its deep limit is Newtonian-times-constant,
+              slope n&nbsp;&rarr;&nbsp;2, not MOND&apos;s n&nbsp;&rarr;&nbsp;4 (which requires the divergent
+              &radic;(a&#8320;/g) boost). The previously listed &ldquo;n&nbsp;&rarr;&nbsp;4 deep-MOND&rdquo; limb was asserted
+              (S193, synthetic 9-galaxy ladder), never derivable from the bounded formula; archive S58 had recorded the
+              discrepancy honestly and was overwritten. The BTFR is exactly an asymptotic-boost observable — this failure is
+              a corollary of the boost ceiling, as is TEST-10&apos;s (dwarf DM fractions: 69% of SPARC exceeds the
+              framework&apos;s 68.5% structural cap; executed 2026-07-15). Full trace on{' '}
+              <Link href="/tier-1-existing#TEST-09" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 — TEST-09</Link>.
             </p>
           </div>
         </div>

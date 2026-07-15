@@ -114,7 +114,7 @@ export default function CosmologyPredictions() {
         <div className="card" style={{ margin: '1rem 0', borderLeft: '3px solid #f59e0b' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
             <h3>RAR Scatter Varies with Local Density</h3>
-            <ValidationBadge status="untested" label="TEST-03 Never Run — TEST-05 MOND-shared" />
+            <ValidationBadge status="untested" label="TEST-03 Never Run — TEST-05 Tie Dissolved 2026-07-15 (discriminator, never run as registered)" />
           </div>
           <p style={{ color: 'var(--color-text-secondary)' }}>
             On the ALFALFA-SDSS cross-match: σ<sub>int</sub> = 0.086 dex (CDM-consistent) — a figure that
@@ -153,7 +153,7 @@ export default function CosmologyPredictions() {
               </tr>
               <tr style={{ borderBottom: '1px solid var(--color-dark-border)', background: 'rgba(239,68,68,0.04)' }}>
                 <td style={{ padding: '0.75rem' }}>RAR env. scatter (TEST-03/05)</td>
-                <td style={{ padding: '0.75rem' }}><ValidationBadge status="untested" label="Never Run / MOND-shared" /></td>
+                <td style={{ padding: '0.75rem' }}><ValidationBadge status="untested" label="Never Run / Tie Dissolved 07-15" /></td>
                 <td style={{ padding: '0.75rem', color: 'var(--color-text-secondary)' }}>ALFALFA-SDSS / SPARC</td>
                 <td style={{ padding: '0.75rem', color: '#f59e0b', fontSize: '0.85rem' }}>TEST-03 stat was TEST-05&apos;s (corrected 07-09)</td>
               </tr>

@@ -280,6 +280,18 @@ export default function GalaxyPlotter() {
           </a>{' '}
           for why a pointwise density map cannot in general reproduce an acceleration-space relation without
           per-galaxy calibration.
+          <p style={{ margin: '0.6rem 0 0' }}>
+            <strong style={{ color: '#f59e0b' }}>Approximation note (added 2026-07-17, flagged by an
+            expert reader):</strong> the gray Newtonian curve uses <em>spherical</em> enclosed mass for what is
+            physically a thin exponential disk. The exact thin-disk result (Freeman 1970:
+            v&sup2; = 4&pi;G&Sigma;&#x2080;R<sub>d</sub>&middot;y&sup2;[I&#x2080;K&#x2080; &minus; I&#x2081;K&#x2081;],
+            modified Bessel functions) runs ~15&ndash;20% <em>higher</em> near the peak (r &#x2248; 2R<sub>d</sub>),
+            so the plotted Newtonian baseline understates the baryonic prediction there and the visual
+            &ldquo;dark matter gap&rdquo; — this page&apos;s pedagogical centerpiece — is modestly exaggerated near
+            the peak. The gap itself is real and much larger than this correction at large radius (where the
+            discrepancy actually lives), so no conclusion flips; a Bessel-function implementation is queued for a
+            future pass rather than rushed here.
+          </p>
         </div>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>

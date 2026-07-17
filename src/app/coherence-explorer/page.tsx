@@ -180,7 +180,7 @@ export default function CoherenceExplorer() {
           </div>
           <div className="card">
             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
-              <strong>Tipping-point density</strong> (&#x03C1;<sub>crit</sub>) = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-blue)' }}>{rhoCrit.toFixed(2)}</span>
+              <strong>Reference density &mdash; saturation knee</strong> (&#x03C1;<sub>crit</sub>) = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-blue)' }}>{rhoCrit.toFixed(2)}</span>
             </label>
             <input
               type="range" min="0.01" max="10.0" step="0.01" value={rhoCrit}

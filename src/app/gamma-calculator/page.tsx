@@ -18,12 +18,12 @@ function regimeInfo(g: number): { label: string; color: string; desc: string } {
 }
 
 const presets = [
-  { label: 'Ideal gas', ncorr: 1 },
-  { label: 'Liquid water', ncorr: 4 },
-  { label: 'Enzyme site', ncorr: 30 },
-  { label: 'Ferromagnet', ncorr: 100 },
-  { label: 'BCS superconductor (10⁷ — mid of physical 10⁶–10⁹)', ncorr: 10000000 },
-  { label: 'BEC', ncorr: 1000000 },
+  { label: 'Ideal gas', ncorr: 1, story: 'Nothing moves together in an ideal gas — every particle is its own unit (N_corr = 1) — so γ hits its maximum of 2. In this framework that means the sharpest possible switch from "individuals" to "crowd" as density rises.' },
+  { label: 'Liquid water', ncorr: 4, story: 'Water molecules hydrogen-bond into small transient clusters (~4 moving together), which drops γ from 2 toward 1 — the boundary zone where the framework says chemistry lives. Compare: one preset click took you from "lone particles" to "small teams."' },
+  { label: 'Enzyme site', ncorr: 30, story: 'An enzyme’s active site moves as one unit of ~30 atoms. More teamwork → smaller γ → a gentler, earlier-starting S-curve. You’re watching γ measure "how big is the team?"' },
+  { label: 'Ferromagnet', ncorr: 100, story: 'In a magnet, ~100 spins per correlated patch flip together. γ keeps falling as the teams get bigger — and notice the direction: bigger teams are getting FLATTER curves, not sharper ones.' },
+  { label: 'BCS superconductor (10⁷ — mid of physical 10⁶–10⁹)', ncorr: 10000000, story: 'Ten million Cooper pairs overlap in a superconductor, so γ collapses to ~0.0006 — the flattest curve on this tool. That is the audited failure in one click: a real superconductor has one of the SHARPEST transitions in nature, and this formula gives it the flattest. The formula’s sharpness direction is inverted.' },
+  { label: 'BEC', ncorr: 1000000, story: 'A million atoms share one quantum state in a BEC — maximal quantum coherence — yet this "coherence" function scores it nearly flat and low. That mismatch is why the site warns that C is not quantum coherence.' },
 ];
 
 export default function GammaCalculator() {
@@ -103,6 +103,12 @@ export default function GammaCalculator() {
           </p>
           <p style={{ color: regime.color, fontSize: '1rem', fontWeight: 'bold' }}>{regime.label}</p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>{regime.desc}</p>
+          {presets.find(p => p.ncorr === ncorr) && (
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', textAlign: 'left', borderTop: '1px solid var(--color-border)', paddingTop: '0.75rem' }}>
+              <strong style={{ color: 'var(--color-accent-violet)' }}>What just changed, and why it matters:</strong>{' '}
+              {presets.find(p => p.ncorr === ncorr)!.story}
+            </p>
+          )}
         </div>
 
         <div className="card" style={{ marginBottom: '1rem' }}>

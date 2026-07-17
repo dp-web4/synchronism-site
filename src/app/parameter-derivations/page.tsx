@@ -193,7 +193,7 @@ export default function ParameterDerivations() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>5. &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#x2248; 123 M&#x2609;/pc&sup2;</h3>
+              <h3>5. &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#x2248; 119 M&#x2609;/pc&sup2; (at the site-standard H&#x2080; = 67.4)</h3>
               <ValidationBadge status="reparametrization" label="Freeman&apos;s Law Re-expressed" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #89</p>
@@ -203,7 +203,9 @@ export default function ParameterDerivations() {
               (item 4, since &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) algebraically), &#x03A3;&#x2080; &#x2248; 123.3 M&#x2609;/pc&sup2;
               &mdash; a <strong>0.5% match</strong> to Freeman&apos;s observed 124 M&#x2609;/pc&sup2; (Freeman 1970),
               not the previously stated &ldquo;&#x2248;110, 12% error&rdquo; (that 110 required H&#x2080; &#x2248; 62 km/s/Mpc,
-              inconsistent with the a&#x2080; row directly above it).
+              inconsistent with the a&#x2080; row directly above it). At the site-standard
+              H&#x2080; = 67.4 km/s/Mpc (adopted 2026-07-17, resolution note below) the same formula gives
+              &#x03A3;&#x2080; &#x2248; 119.0.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               The combination cH&#x2080;/G has dimensions of surface density, so this is dimensional
@@ -217,13 +219,14 @@ export default function ParameterDerivations() {
               derivation of what is, in origin, an observational law.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              <strong>Two more caveats (2026-07-14):</strong> (1) This page&apos;s 0.5% figure and{' '}
-              <Link href="/honest-assessment#landscape" style={{ color: 'var(--color-accent-blue)' }}>Honest
-              Assessment&apos;s</Link> &#8776;4% figure use different H&#x2080; values (this page derives
-              &#x03A3;&#x2080; from its own a&#x2080; &#8776; 1.08&times;10<sup>&minus;10</sup> m/s&sup2; above; Honest
-              Assessment computes &#x03A3;&#x2080; &#8776; 119 directly from cH&#x2080;/(4&#x03C0;&sup2;G) with a
-              different H&#x2080;) &mdash; an open H&#x2080; inconsistency across pages (seeded 2026-07-09,
-              still open), not a resolved arithmetic question. (2) Neither error bar is meaningful on its
+              <strong>H&#x2080; inconsistency RESOLVED (2026-07-17</strong>, root cause identified by a visitor
+              physics persona 2026-07-17): the 119-vs-123.3 split across pages was exactly an undisclosed
+              Hubble-constant switch &mdash; &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) gives 119.0 M&#x2609;/pc&sup2;
+              at H&#x2080; = 67.4 km/s/Mpc (Planck 2018) and 123.6 at H&#x2080; = 70 (the value implicit in this
+              page&apos;s a&#x2080; &#8776; 1.08&times;10<sup>&minus;10</sup> m/s&sup2;). <strong>Site standard is
+              now H&#x2080; = 67.4 km/s/Mpc</strong> (matching /freemans-law and Honest Assessment), giving
+              &#x03A3;&#x2080; &#8776; 119. Given the caveat below, no sub-percent &ldquo;match&rdquo; claim
+              survives either H&#x2080; choice, so the choice changes bookkeeping, not verdicts. (2) Neither error bar is meaningful on its
               own terms: Freeman (1970) reports a central surface <em>brightness</em>
               (21.65&plusmn;0.30 B-mag/arcsec&sup2;), and converting to a surface <em>density</em> requires a
               mass-to-light ratio M/L<sub>B</sub> that for disk galaxies spans roughly 1&ndash;3 &mdash; the

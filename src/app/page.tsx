@@ -232,8 +232,8 @@ export default function Home() {
               alignItems: 'center',
             }}>
               <span>Prospective predictions confirmed: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Post-hoc retrodictions attempted: <strong style={{ color: '#ef4444' }}>1 — disfavored</strong> (DESI fσ₈ — disfavored 2.4σ on σ₈, but registered fσ₈ criterion fell short of its own &gt;3σ bar; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
-              <span>RAR (Radial Acceleration Relation) shape test — CLOSED: <strong style={{ color: '#ef4444' }}>γ=2 refuted</strong> (ΔBIC=+184 point estimate; conservative ≥+33; free-γ→MOND (Modified Newtonian Dynamics))</span>
+              <span>Refutations executed on external data: <strong style={{ color: '#ef4444' }}>4</strong> — BTFR slope (TEST-09, registered kill fired 3.3σ, 2026-07-14), dwarf DM fractions (TEST-10, 69% of SPARC above the framework&apos;s 68.5% structural ceiling, 2026-07-15), environment null (registered run r²=0.0001 vs &gt;20% claim), RAR shape (γ=2, ΔBIC=+184; conservative ≥+33; free-γ→MOND (Modified Newtonian Dynamics))</span>
+              <span>Post-hoc retrodictions attempted: <strong style={{ color: '#f59e0b' }}>1 — underpowered</strong> (DESI fσ₈ — disfavored 2.4σ on σ₈, but the registered fσ₈ criterion fell short of its own &gt;3σ bar and is not counted as a refutation; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
               <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong></span>
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>Full ledger &rarr;</Link>
@@ -272,6 +272,7 @@ export default function Home() {
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>1,703</div>
                 <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Chemical phenomena analyzed</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>23 curated on-site; a 2-parameter null model matches or beats every correlation</div>
               </div>
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>14,760</div>

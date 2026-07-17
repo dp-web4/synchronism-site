@@ -282,9 +282,16 @@ export default function ResearchPhilosophy() {
             critical exponents category-error, Bullet Cluster viscosity sign-reversed) has either failed
             or collapsed to non-discriminating; every surviving prediction is degenerate with MOND or standard QM</strong>.
             This is exactly what you would predict from a training-distribution filter operating on a
-            physics corpus that already contains MOND and QM. The framework is not a failed attempt at new physics —
-            it is a successful demonstration of the ceiling on AI-to-AI adversarial collaboration when
-            held to a strict prospective standard.
+            physics corpus that already contains MOND and QM. <strong>What this pattern cannot establish
+            (corrected 2026-07-17):</strong> whether the ceiling belongs to AI-to-AI adversarial collaboration
+            itself or to the corpus it ran on — the seed framework was independently concluded to be a MOND
+            reparametrization, so a 0% novelty yield is also what a <em>perfect</em> filter would report on a
+            corpus containing no novelty. A single-arm, single-corpus retrospective with N&nbsp;=&nbsp;6 audited
+            demotions cannot separate those readings (the confound is stated in full on{' '}
+            <a href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</a>).
+            The missing experiment is a control arm: the same protocol run on a corpus containing known
+            genuine discoveries post-dating the models&apos; training cutoffs. Until that runs, the honest
+            claim is a well-documented program-level null, not a measured ceiling.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem', marginBottom: 0 }}>
             <strong>Temporal-asymmetry counterfactual (2026-05-18):</strong> A retrospective audit tested whether A2ACW

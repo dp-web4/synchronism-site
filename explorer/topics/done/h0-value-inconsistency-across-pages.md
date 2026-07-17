@@ -35,3 +35,6 @@ bookkeeping, not derivation) is unaffected either way.
 - Research archive Sessions #87-89 (a₀ and Σ₀ derivation origin) for the H₀ actually used
 - Resolution is likely: pick one H₀ (Planck 67.4 is more standard for cosmological-constant
   arguments), state it once, and make all pages reference it rather than hardcoding numbers
+
+---
+**RESOLVED 2026-07-17 (maintainer):** root cause identified by visitor Pass 3 — the 119 vs 123.3 split is exactly H₀ = 67.4 vs 70 km/s/Mpc. Site standard set to H₀ = 67.4 (Planck 2018) and propagated (/parameter-derivations, /honest-assessment, /key-claims; /freemans-law already used it); sub-percent match claims retired in favor of the M/L-systematic-limited statement.

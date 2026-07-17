@@ -113,23 +113,29 @@ export default function HonestAssessment() {
           is the contribution; the physics just provided the test case.
         </p>
         <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-          <strong>In plain language — what failed:</strong> The framework&apos;s biggest external test missed —
-          we predicted the universe&apos;s large-scale structure should be growing <em>slower</em> than
-          the standard model, but real data (DESI 2024) shows no such suppression — the measured clumping
-          amplitude sits 2.4σ above the framework&apos;s prediction, consistent with the standard model
-          (note: that particular test was post-hoc, not pre-registered). The galaxy transition-shape
-          test — the one non-degenerate discriminating test vs MOND — was run on 2,807 SPARC data
-          points (175 galaxies) in May 2026 and collapsed the framework onto MOND (ΔBIC=+184 against the γ=2 version;
+          <strong>In plain language — what failed:</strong> The sharpest failure is now the galaxy mass&ndash;speed
+          relation (the BTFR, TEST-09, run 2026-07-14): the framework&apos;s built-in ceiling on how much it can
+          boost gravity forces a prediction that genuinely differs from the rival theory MOND — and the real
+          data (123 SPARC galaxies) fired the pre-stated kill criterion at 3.3σ. The same ceiling caps how
+          dark-matter-dominated a galaxy can appear at 68.5% — and 69% of real galaxies exceed that (TEST-10,
+          2026-07-15). The framework&apos;s registered environment effect was also run (2026-07-14): no trace
+          (r² = 0.0001 against a &gt;20% claim). The earlier cosmology test (DESI growth suppression) is
+          <em>disfavored but not counted as a refutation</em> — the test as registered lacked the power to
+          discriminate (corrected 2026-07-14). The galaxy transition-shape
+          test — run on 2,807 SPARC data
+          points (175 galaxies) in May 2026 — collapsed the framework onto MOND (ΔBIC=+184 against the γ=2 version;
           free-γ = MOND). The predictions we thought were novel turned out to already exist in physics under
           different names. Zero predictions have been independently confirmed.
           Zero parameters have an independent first-principles derivation — the last surviving candidate (A-from-Jeans) was closed as audited-negative on 2026-06-07: the Session 66 script produces A ≈ 4.6×10⁻⁵ (600× off the stated 0.029) under the framework&apos;s own ρ<sub>crit</sub> ∝ V² scaling.
-          Scoreboard: <strong>0 confirmed, 0 prospective predictions tested, 6 reparametrizations, 1 galaxy-program closure, 0 independently-derived parameters</strong>.
+          Scoreboard: <strong>0 confirmed, 0 prospective predictions tested, 4 refutations executed on external
+          data, 5 reparametrizations, 0 independently-derived parameters</strong> (recounted 2026-07-17; the BTFR
+          slope moved from the reparametrization list to an executed refutation on 2026-07-14).
         </p>
         <div style={{ marginTop: '0.75rem' }}>
           <strong style={{ color: 'var(--color-text-primary)', fontSize: '0.95rem' }}>What a non-physicist should take away:</strong>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0.5rem 0 0', paddingLeft: '1.25rem' }}>
             <li>The one equation fits galaxy rotation — but only as well as MOND, an existing 40-year-old idea, and never better.</li>
-            <li>Its biggest cosmology prediction (slower growth of cosmic structure) missed: the measured amplitude is 2.4σ above what it predicted.</li>
+            <li>Its one genuinely distinguishing galaxy prediction (the mass&ndash;speed relation, TEST-09) was run against real data in July 2026 and failed its own pre-stated kill criterion at 3.3σ; its cosmology prediction (slower growth of cosmic structure) is disfavored but that test turned out to lack the power to decide.</li>
             <li>None of its numbers come from first principles — every parameter is fitted to data or simply asserted.</li>
             <li>No currently proposed experiment can tell it apart from existing physics.</li>
             <li>The real product is this audit itself: every failure documented, with the numbers, by the same project that made the claims.</li>
@@ -155,19 +161,32 @@ export default function HonestAssessment() {
 
       {/* Overall Verdict */}
       <section className="card card-highlight section">
-        <h2 id="verdict" style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated May 2026)</h2>
+        <h2 id="verdict" style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated July 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 0 prospective
-          predictions tested</strong>. One closure event + one external disfavor in May 2026:
+          predictions tested, 4 refutations executed on external data</strong>. The sharpest events, in order
+          of decisiveness:
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          <strong>(1) DESI fσ₈ (TEST-04a — reframed 2026-07-02):</strong> The framework predicted
+          <strong>(0) The boost-ceiling pair (TEST-09/TEST-10 — executed 2026-07-14/15):</strong> The bounded
+          boost C(a) caps gravitational amplification at 1/Ω<sub>m</sub>&nbsp;=&nbsp;3.17 — the framework&apos;s
+          only structural difference from MOND. That ceiling forces a BTFR slope prediction (n&nbsp;=&nbsp;3.35)
+          that genuinely differs from MOND&apos;s (3.81); observed n&nbsp;=&nbsp;3.75&nbsp;±&nbsp;0.10 fired the
+          registered kill criterion at <strong>3.3σ</strong>, and no parameter choice rescues it. Read as a
+          dark-matter-fraction cap, the same ceiling limits apparent f<sub>DM</sub> to 68.5% — exceeded by 69%
+          of SPARC. The framework&apos;s registered environment effect (&gt;20% of RAR scatter) was also run as
+          registered: r²&nbsp;=&nbsp;0.0001 — refuted by execution. These, plus the RAR shape test below, are
+          the four executed refutations in the footer count.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>(1) DESI fσ₈ (TEST-04a — corrected 2026-07-14):</strong> The framework predicted
           suppressed growth: σ₈&nbsp;≈&nbsp;0.76 (fσ₈(z=0.51)&nbsp;≈&nbsp;0.418, 12% below ΛCDM&apos;s 0.474).
           <strong>What DESI DR1 full-shape actually shows (arXiv:2411.12021):</strong> combined
-          σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10) → <strong>2.4σ tension — the predicted suppression is absent.
-          This ensemble amplitude miss is the load-bearing constraint.</strong>{' '}
-          <strong>Kill criterion triggered</strong> (fσ₈&nbsp;&gt;&nbsp;0.46 required; observed &gg; 0.46).
-          Verdict: <strong>post-hoc retrodiction — disfavored 2.4σ on σ₈ amplitude; data ΛCDM-consistent.</strong>{' '}
+          σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10) → <strong>2.4σ tension — the predicted suppression is absent.</strong>{' '}
+          But that amplitude is a GR-conditioned statistic; the <em>registered</em> criterion
+          (fσ₈(z=0.51)&nbsp;&gt;&nbsp;0.46 at &gt;3σ) was met at only ~1.5σ — <strong>the test as registered
+          lacked the power to discriminate, and is not counted as a refutation.</strong>{' '}
+          Verdict: <strong>post-hoc retrodiction — disfavored on σ₈ amplitude; underpowered on the registered statistic.</strong>{' '}
           The LRG1 (z=0.51) bin at fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 (&ldquo;enhancement&rdquo;) is a single
           ~1.2σ fluctuation, not the ensemble signal — the DR1 ensemble growth index γ_growth&nbsp;≈&nbsp;0.58&nbsp;±&nbsp;0.11
           actually leans mildly toward suppression, the framework&apos;s own direction. Pinning the kill on
@@ -191,7 +210,7 @@ export default function HonestAssessment() {
           interpretation, not the condition. Novel-survivor count: <strong>0</strong>.
           The framework produced <strong>47 internal contributions</strong> across ~3,308 sessions &mdash;
           well-posed questions and methodology outputs, zero confirmed novel results.
-          &ldquo;Unconfirmed&rdquo; &ne; &ldquo;wrong&rdquo; &mdash; but the evidence now includes one external refutation and zero surviving novel predictions.
+          &ldquo;Unconfirmed&rdquo; &ne; &ldquo;wrong&rdquo; &mdash; but the evidence now includes four executed refutations on external data and zero surviving novel predictions.
         </p>
       </section>
 
@@ -225,8 +244,15 @@ export default function HonestAssessment() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
           Analyses run with results. A kill-criterion-triggered result appears here, not under &ldquo;What Works&rdquo;
           &mdash; the heading reflects what was <em>attempted</em>, not what succeeded.
-          The landing ledger (&ldquo;0 confirmed, 1 refuted&rdquo;) applies the stricter standard:
-          prospective pre-registered tests that passed or failed their own kill criterion.
+          The site-wide footer count (&ldquo;0 confirmed; 4 refutations executed on external data&rdquo;, recounted
+          2026-07-17) refers to executed refutations adjudicated on external astronomical data: the RAR
+          transition shape (&#x03B3;=2 pinned, &#x0394;BIC=+184), the BTFR slope (TEST-09, registered kill
+          fired at 3.3&sigma;, 2026-07-14), dwarf DM fractions (TEST-10, 69% of SPARC above the framework&apos;s
+          structural ceiling, 2026-07-15), and the registered environment run (r&sup2; = 0.0001 vs the
+          registered &gt;20% claim, 2026-07-14). DESI TEST-04a is deliberately <em>not</em> counted &mdash; the
+          test as registered lacked the power to discriminate (corrected 2026-07-14). Note what the count is
+          not: none of these tests is <em>prospective</em> &mdash; every adjudication used data that existed
+          before the criterion. The program&apos;s prospective-registration count remains 0.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div className="card">
@@ -325,11 +351,12 @@ export default function HonestAssessment() {
               alongside a&#x2080; on the same grounds.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-              <strong>Caveats (2026-07-14):</strong> this page&apos;s &#8776;119/&#8776;4% figure uses a different
-              H&#x2080; than{' '}
+              <strong>Caveats (updated 2026-07-17):</strong> the H&#x2080; inconsistency with{' '}
               <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
-              Derivations&apos;</Link> 123.3/0.5% figure — an open H&#x2080; inconsistency across pages
-              (seeded 2026-07-09), not resolved. Separately, Freeman&apos;s (1970) value is a surface
+              Derivations&apos;</Link> former 123.3/0.5% figure is <strong>resolved</strong> — the split was an
+              undisclosed Hubble-constant switch (119.0 at H&#x2080; = 67.4, 123.6 at H&#x2080; = 70; identified
+              by a visitor physics persona). Site standard is now H&#x2080; = 67.4 km/s/Mpc (Planck 2018),
+              giving the &#8776;119 shown here. Separately, Freeman&apos;s (1970) value is a surface
               <em> brightness</em>; converting to surface <em>density</em> needs M/L<sub>B</sub>&nbsp;&#8776;&nbsp;1&ndash;3,
               so the target is uncertain by a factor of &#x223C;2 — neither page&apos;s percentage is
               meaningful standing alone.
@@ -506,7 +533,8 @@ export default function HonestAssessment() {
               &nbsp;=&nbsp;0.474&nbsp;×&nbsp;1.16&nbsp;±&nbsp;0.062&nbsp;=&nbsp;0.550&nbsp;±&nbsp;0.062 — the 0.46
               threshold is exceeded by only <strong>~1.5σ</strong>, well short of the &gt;3σ the criterion
               demands for a ruling-out (it does clear the weaker &gt;2σ &ldquo;disfavors&rdquo; clause at 0.45).
-              The 2.4σ figure carrying the &ldquo;Kill Criterion Triggered&rdquo; label above is instead a
+              The 2.4σ figure that formerly carried a &ldquo;Kill Criterion Triggered&rdquo; label on this
+              page (last instance removed from the Verdict section 2026-07-17) is instead a
               comparison on <strong>σ₈</strong>, a different parameter inferred from a full-shape EFTofLSS fit
               whose perturbation kernels <em>assume GR growth</em> — using a GR-conditioned amplitude to
               falsify a modified-growth model risks circularity, a point this page&apos;s own EFTofLSS citation
@@ -534,7 +562,8 @@ export default function HonestAssessment() {
               DES Y3 6×2pt and KiDS-Legacy (2024–2025) reanalyses have pulled S₈ back toward Planck,
               so the calibration anchor was a transient observational state, not a stable target.
               This makes TEST-04a post-hoc against a moving baseline. (2) <em>Disfavored 2.4σ on amplitude</em>
-              — the σ₈≈0.76 prediction sits 2.4σ below the DESI DR1 combined fit; this is the durable kill.
+              — the σ₈≈0.76 prediction sits 2.4σ below the DESI DR1 combined fit; this is the durable
+              disfavor (a GR-conditioned statistic, not the registered kill — see the 2026-07-14 correction above).
               A 2026-05-25 &ldquo;correction&rdquo;
               that claimed kill not triggered was itself an error: 0.4497&nbsp;±&nbsp;0.0548 belongs to arXiv:2512.03230
               (DESI Peculiar Velocity Survey, z&asymp;0.07) misattributed to the z=0.51 full-shape slot.
@@ -543,7 +572,8 @@ export default function HonestAssessment() {
               explain DESI DR1 fσ₈ within ΛCDM at 1-2σ via one-loop counterterms.
               <strong>Calibration note (2026-06-24):</strong> the kill fires on LRG1 alone at ~2.15σ if read as a
               single-bin sign test — standard practice treats that as sub-threshold. The amplitude tension (2.4σ,
-              ensemble σ₈) is what carries the &ldquo;Kill Criterion Triggered&rdquo; label, not the single-bin direction.
+              ensemble σ₈) is what previously carried the &ldquo;Kill Criterion Triggered&rdquo; label
+              (label retired 2026-07-14; see correction above), not the single-bin direction.
               <strong>Currency (2026-07-02):</strong> DESI DR2 full-shape growth (fσ₈) constraints are not yet
               published (expected ~Spring 2027); this verdict is frozen at DR1. The re-open policy below is
               unaffected — no DR2 growth datum exists yet to trigger it.

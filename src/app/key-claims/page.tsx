@@ -150,6 +150,9 @@ export default function KeyClaims() {
                 single-parameter inversion: c = 1 &minus; 1/R for any reported improvement factor R.
                 This formula uses &#x03B3; as a <em>noise coupling rate</em> [units 1/&radic;time] &mdash;
                 distinct from the regime parameter &#x03B3; = 2/&radic;N<sub>corr</sub>.
+                {' '}<strong>Citation discipline (2026-07-17):</strong> the PRL result is
+                <em> consistent with, not predicted by</em> this framework — no advance prediction about
+                that experiment was ever registered; the external citation lends no support to the reframe.
               </p>
             </div>
             <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid #f59e0b' }}>
@@ -202,7 +205,10 @@ export default function KeyClaims() {
               which states the same refutation correctly as B<sub>max</sub> = 3.17. The underlying
               result is parameter-independent and stronger than it looks under either symbol: C &le; 1
               bounds the quadrature boost, so the framework cannot reach the observed deep-MOND mass
-              discrepancies for any parameter choice.)
+              discrepancies for any parameter choice. Count currency: the &ldquo;1 refutation&rdquo; is the
+              quoted 2026-02 audit&apos;s count for the quantum arc; the site-wide count as of 2026-07-17 is
+              4 executed refutations on external data &mdash; the boost ceiling quoted here was
+              subsequently cashed out as two of them, TEST-09 and TEST-10.)
               The CRT temporal-scanning model is not mathematically formalized to the level where
               it reproduces all of standard QM&apos;s quantitative predictions.
               What&apos;s needed: a prediction that differs from standard QM and hasn&apos;t been measured yet.
@@ -271,7 +277,8 @@ export default function KeyClaims() {
               fontWeight: 500,
               whiteSpace: 'nowrap',
             }}>
-              Speculative (parent claim, unfalsifiable as stated) &mdash; both threshold values Failed
+              Speculative (parent claim, unfalsifiable as stated) &mdash; threshold untestable as stated
+              (the one cited test measured a different variable; corrected 2026-07-17)
             </span>
           </div>
 
@@ -465,8 +472,10 @@ export default function KeyClaims() {
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Tested against 14,760 galaxies (SPARC + ALFALFA-SDSS). a&#x2080; derivation within 10%.
-            Freeman&apos;s Law &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#8776; 119 M&#x2609;/pc&sup2;, &#8776;4% error
-            (corrected 2026-07-09; not independent of a&#x2080;&apos;s gap &mdash; see{' '}
+            Freeman&apos;s Law &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#8776; 119 M&#x2609;/pc&sup2; at the
+            site-standard H&#x2080; = 67.4 km/s/Mpc &mdash; consistent with Freeman&apos;s observed normalization
+            within the factor-of-~2 mass-to-light systematic, which is all the observable supports (sub-percent
+            &ldquo;match&rdquo; percentages retired 2026-07-17; not independent of a&#x2080;&apos;s gap &mdash; see{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>).
           </p>
 
@@ -556,15 +565,23 @@ export default function KeyClaims() {
             padding: '0.75rem 1rem',
             marginBottom: '0.75rem',
           }}>
-            <strong style={{ fontSize: '0.9rem' }}>6 Reparametrizations</strong>
+            <strong style={{ fontSize: '0.9rem' }}>5 Reparametrizations &mdash; and 1 former member now an executed refutation</strong>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
-              Six results appeared novel at first but turned out to be equivalent to existing physics in
+              Five results appeared novel at first but turned out to be equivalent to existing physics in
               different notation: Born rule (Gleason/Zurek), a&#x2080; = cH&#x2080;/(2&#x03C0;) (dimensional coincidence),
-              Freeman&apos;s Law, BTFR slope, &#x0393; = &#x03B3;&sup2;(1&minus;c) (Palma&ndash;Suominen&ndash;Ekert 1996),
+              Freeman&apos;s Law, &#x0393; = &#x03B3;&sup2;(1&minus;c) (Palma&ndash;Suominen&ndash;Ekert 1996),
               Bell-freezing c(d) (waveguide QED). These are documented on the{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link> page.
               Reparametrizations are not failures &mdash; they confirm the framework is internally consistent
               with known physics &mdash; but they are not novel contributions.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
+              <strong>The BTFR slope left this list on 2026-07-14</strong> &mdash; executed on real SPARC, it is
+              the opposite of a reparametrization: the framework&apos;s bounded boost predicts a slope
+              (n = 3.35) that genuinely <em>differs</em> from MOND&apos;s (3.81), and the observed 3.75 &plusmn; 0.10
+              fired the registered kill criterion at 3.3&sigma;. It is the framework&apos;s one genuinely
+              discriminating test &mdash; run, lost, and recorded as{' '}
+              <Link href="/tier-1-existing#TEST-09" style={{ color: 'var(--color-accent-blue)' }}>TEST-09</Link>.
             </p>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>

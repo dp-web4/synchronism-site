@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
-type EpistemicStatus = 'core' | 'reparametrization' | 'speculative' | 'failed';
+type EpistemicStatus = 'core' | 'reparametrization' | 'speculative';
 
 const statusStyle: Record<EpistemicStatus, { bg: string; color: string; label: string }> = {
   // Descriptive content grouping, NOT a validation verdict: marks tools that explain the
@@ -13,7 +13,8 @@ const statusStyle: Record<EpistemicStatus, { bg: string; color: string; label: s
   core: { bg: 'rgba(56, 189, 248, 0.12)', color: '#38bdf8', label: 'Model Explainer' },
   reparametrization: { bg: 'rgba(245, 158, 11, 0.12)', color: '#f59e0b', label: 'Reparametrization' },
   speculative: { bg: 'rgba(239, 68, 68, 0.10)', color: '#f87171', label: 'Speculative' },
-  failed: { bg: 'rgba(239, 68, 68, 0.10)', color: '#ef4444', label: 'Kill Criterion Triggered' },
+  // 'failed' ("Kill Criterion Triggered") removed from this legend 2026-07-17: no tool card uses it,
+  // and the canonical taxonomy classifies it as an operational state, not a badge.
 };
 
 const coreTools = [

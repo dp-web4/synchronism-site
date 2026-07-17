@@ -185,11 +185,21 @@ export default function PhaseBoundaryVisualizer() {
         </div>
 
         <h2>The Three Regimes</h2>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.75rem' }}>
+          Summary index only &mdash; move the slider above to read each regime&apos;s full physics in the
+          highlight card (duplicated text removed 2026-07-17).
+        </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
           {regions.map(r => (
             <div key={r.id} className="card" style={{ borderLeft: `3px solid ${r.color}` }}>
               <h3 style={{ color: r.color, fontSize: '0.95rem' }}>{r.label}</h3>
-              <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>{r.physics}</p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                {r.systems.map(s => (
+                  <span key={s} style={{ background: 'rgba(255,255,255,0.05)', border: `1px solid ${r.color}`, borderRadius: '12px', padding: '0.15rem 0.5rem', fontSize: '0.8rem', color: r.color }}>
+                    {s}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>

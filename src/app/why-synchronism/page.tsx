@@ -81,7 +81,11 @@ export default function WhySynchronism() {
           moving as a correlated unit. When &#x03B3; is large (few correlated particles), the system is sparse/independent (low C).
           When &#x03B3; is small (many correlated particles), the system is dense/collective (high C).
         </p>
-        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', borderLeft: '2px solid rgba(245,158,11,0.4)', paddingLeft: '0.75rem' }}>
+        <details style={{ margin: '0.75rem 0', border: '1px solid var(--color-border)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
+          <summary style={{ cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+            For physicists: the fine print on &#x03B3; and the S-curve (optional &mdash; skip freely on a first read)
+          </summary>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', borderLeft: '2px solid rgba(245,158,11,0.4)', paddingLeft: '0.75rem', marginTop: '0.75rem' }}>
           <strong>Circularity caveat:</strong> The 1/&#x221A;N<sub>corr</sub> scaling is a dimensional{' '}
           <strong>ansatz</strong> (an educated starting guess, shaped so the units work out)
           inspired by fluctuation theory &mdash; not a derivation from first principles. No counting protocol exists to
@@ -98,13 +102,21 @@ export default function WhySynchronism() {
           Hill/Naka–Rushton response functions, and Langevin/Curie–Weiss saturation).
           Any smooth S-curve with the same saturation properties would fit equally well; there is no
           variational principle or self-consistency equation that selects tanh specifically.
+        </p>
+        </details>
+        <p>
           The log-density argument is physically motivated. Then tested against data.
           Some predictions held up. Others failed.
         </p>
       </section>
 
       <section className="section content-width">
-        <h2>What Worked</h2>
+        <h2>What We Tested &mdash; and How It Went</h2>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
+          (This section was titled &ldquo;What Worked&rdquo; until 2026-07-17 &mdash; the verdicts below were
+          updated in place as tests were executed, and several are now Failed. The heading caught up with its
+          own cards.)
+        </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div className="card">
             <h3>Galaxy Rotation Curves</h3>

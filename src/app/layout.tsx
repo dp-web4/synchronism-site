@@ -120,7 +120,9 @@ export default function RootLayout({
           </p>
           <p style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             All sessions, derivations, and failures are public.{' '}
-            0 confirmed predictions, 1 refuted by external data.{' '}
+            0 confirmed predictions; 4 refutations executed on external data
+            (RAR shape, BTFR slope, dwarf DM fractions, environment null &mdash; recounted 2026-07-17;{' '}
+            <Link href="/honest-assessment#what-was-tested" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>ledger</Link>).{' '}
             <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-text-muted)' }}>What this is not &rarr;</Link>
           </p>
         </footer>

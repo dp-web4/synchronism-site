@@ -1,1 +1,21 @@
 Starting Synchronism Explorer Session at Fri Jul 17 08:00:01 PDT 2026
+Session complete — both repos committed and pushed. Here's the summary:
+
+## Explorer session 2026-07-17: φ provenance audit (the morning's HIGH topic)
+
+**Verdict: the golden ratio is fitted-then-named — zero surviving derivations, three independent retro-justifications, and the archive's own guardrail against exactly this was breached silently.**
+
+**WAKE first**: the dirty tree flagged in git status turned out benign (supervisor GitNexus count bumps + this session's own start log; the 06:00 maintainer committed cleanly). Then I worked the seeded HIGH topic, which was visitor Pass 4's question: "if a fitted exponent is being written as φ, that's numerology the parameter-derivations page would normally catch."
+
+**The provenance chain**, every claim walked to primary files:
+
+- **S45 (Nov 25, 2025) already ruled on this.** The day after S44 noticed an empirical fit B=1.62 ≈ φ, S45 adjudicated: "intriguing coincidence, NOT significant — **Don't: Claim φ is fundamental**" (0/8 other scalings have φ exponents; φ and 1.62 give identical success rates). No session from #46–#169 mentions φ. It then reappears *fully formed* inside C(ρ) at S170 with no derivation and no citation. That's the **second instance** of the archive's most dangerous pattern (S58→S193 was the first): early honest adjudication → un-cited override → override becomes load-bearing.
+- **The derivations are circular or non-sequitur.** S186's "information conservation law" x + x² = 1 *is the defining identity of 1/φ* postulated as physics. S219's "scale recursion THEOREM" inserts λ = 1 + 1/λ with nothing forcing it. Best of all, **S218 concedes its own Boltzmann route "gives exponent 1, not 1/φ"** and re-opens the question S186 claimed closed eight days earlier. Derivations that get re-invented rather than cited are the signature of retro-justification.
+- **The data always preferred a different constant.** S185's fit: 0.66 (2/3 is 1.0% off; 1/φ is 6.8% off). S217's a₀ exponent: needs 1.469 (3/2 is 2.1% off; φ is 10.1% off). S239's Gaia fit: 0.688 ± 0.10 (2/3 near center; 1/φ is 0.009 inside the 1σ *edge* — which the whitepaper prints as "VALIDATED"). S192 states the actual selection criterion in writing: φ preferred for "symmetric structure." And **Ω_m^φ ≈ 1/(2π) to 3.1%** — the a₀ formula is Milgrom's dimensional relation re-encoded with a celebrity constant.
+- **Third sector**: Gnosis matched an empirical 0.40 to 1−1/φ = 0.382 ("intriguing"). With both 0.618 and 0.382 available, any value in [0,1] is within ~12% of a golden-ratio landmark.
+
+**Consequence — TEST-09 gets stronger, not weaker.** The live site grants φ "derived from cosmology" status in the BTFR kill text. The honest framing: one derived ingredient (Ω_m) plus one free exponent dressed as a constant — and the 07-14 scan already showed the kill fires for *every* exponent value. A free parameter that still can't reach the data is a deeper failure than a derived one.
+
+**Shipped**: finding + session log + SESSION_FOCUS entry (site repo, `6bf87a9`); back-annotation proposal with the whitepaper "VALIDATED" flag (Synchronism repo, `441c7ecb`, whitepaper edits gate on dp); topic archived; maintainer P1 queued (/parameter-derivations φ row — the page of record has **zero** φ occurrences; TEST-09 carrier sentence fix); memory saved.
+
+**So what?** Beyond closing the visitor's question, the audit produced a transferable, grep-scale detector — *derivation non-accumulation*: a parameter with two independent derivations that don't cite each other is a fit. It would have caught this at S219, and it's runnable on every other "derived" constant in the archive (γ=2, ρ_t, M_break — seeded as a self-question).

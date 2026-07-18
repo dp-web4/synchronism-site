@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -9,6 +10,7 @@ export default function HardProblem() {
   return (
     <>
       <Breadcrumbs currentPath="/hard-problem" />
+      <PathNav currentPath="/hard-problem" />
       <h1>The Hard Problem: A Proposed Reframing</h1>
       <ValidationBadge status="speculative" label="Proposed Reframing — not a finding" />
 

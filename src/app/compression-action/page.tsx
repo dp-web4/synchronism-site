@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
@@ -10,6 +11,7 @@ export default function CompressionAction() {
   return (
     <>
       <Breadcrumbs currentPath="/compression-action" />
+      <PathNav currentPath="/compression-action" />
       <h1>Compression Action</h1>
       <ValidationBadge status="speculative" label="Theoretical Extension" />
 

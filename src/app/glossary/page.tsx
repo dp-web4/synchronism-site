@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import { getAllTerms } from '@/lib/terms';
 
@@ -13,6 +14,7 @@ export default function Glossary() {
   return (
     <>
       <Breadcrumbs currentPath="/glossary" />
+      <PathNav currentPath="/glossary" />
 
       <h1>Glossary</h1>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>

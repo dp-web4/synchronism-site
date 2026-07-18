@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -9,6 +10,7 @@ export default function A2ACW() {
   return (
     <>
       <Breadcrumbs currentPath="/a2acw" />
+      <PathNav currentPath="/a2acw" />
       <h1>A2ACW Protocol</h1>
       <ValidationBadge status="active-mrh" label="In Use — Protocol Is Assembled Prior Art" />
 

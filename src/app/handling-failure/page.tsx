@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -18,6 +19,7 @@ export default function HandlingFailure() {
   return (
     <>
       <Breadcrumbs currentPath="/handling-failure" />
+      <PathNav currentPath="/handling-failure" />
       <h1>How We Handle Failure</h1>
       <ValidationBadge status="validated" label="Methodology" />
 

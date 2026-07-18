@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -24,6 +25,7 @@ export default function GammaBoundary() {
   return (
     <>
       <Breadcrumbs currentPath="/gamma-boundary" />
+      <PathNav currentPath="/gamma-boundary" />
       <h1>The &#x03B3; &#x2248; 1 Boundary</h1>
       <ValidationBadge status="reparametrization" label="1,703 Phenomena / 89% Boundary-Consistent | Template Bias Caveat" />
 

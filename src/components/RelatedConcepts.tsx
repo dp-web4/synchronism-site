@@ -99,6 +99,7 @@ function PagePill({ page, variant }: { page: NavItem; variant: 'related' | 'prer
       }}
     >
       <span style={{ fontWeight: 500 }}>{page.title}</span>
+      <span aria-hidden="true" style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem' }}>&mdash;</span>
       <span style={{
         fontSize: '0.75rem',
         color: 'var(--color-text-muted)',

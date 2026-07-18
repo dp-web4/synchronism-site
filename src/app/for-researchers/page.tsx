@@ -111,7 +111,7 @@ export default function ForResearchers() {
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #38bdf8' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.1rem' }}>2. The A2ACW program-level null (retrospective controls, N=6) — same-corpus adversarial AI pairs do not generate or detect novelty</h2>
-            <ValidationBadge status="audited-negative" label="Audited-Negative — Program-Level Null" />
+            <ValidationBadge status="audited-negative" label="Registered Null — Pending Cross-Vendor Control" />
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             <strong>Honest novelty statement:</strong> the protocol is assembled prior art — adversarial
@@ -156,6 +156,14 @@ export default function ForResearchers() {
             degenerate in a single-arm, single-corpus design — there is no measured human-pair survival
             rate on the same corpus to compare against. The generalization to AI-for-science pipelines
             generally is a hypothesis this design cannot license on its own.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+            <strong>Artifact status downgraded (2026-07-18, external researcher review):</strong> until the
+            cross-vendor corpus control runs — the one registered experiment that would break the
+            single-arm degeneracy above — this is a <em>registered null with a stated path to becoming a
+            citable artifact</em>, not yet the artifact. What is citable today is the measured
+            retrospective-control numbers (0/6, J = 0) and the confound analysis itself; the
+            program-level generalization gates on the unrun control arm.
           </p>
           <Link href="/a2acw" style={{ fontSize: '0.85rem' }}>Protocol, prior art, and audit details &rarr;</Link>
         </div>
@@ -319,7 +327,7 @@ export default function ForResearchers() {
         {/* Artifact 4: B1 CHSH substrate null */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-violet)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>4. CHSH substrate null — the single-observer substrate is capped at the classical bound (Bet B1, executed)</h2>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>4. CHSH substrate null — a worked corollary of Bell&apos;s theorem (Bet B1, executed)</h2>
             <ValidationBadge status="failed" label="S ≤ 2 Both No-Signaling Arms — Executed 2026-06-21 / 2026-07-06" />
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
@@ -338,12 +346,17 @@ export default function ForResearchers() {
             point of the projection law — reachable only by importing Hilbert-space structure wholesale.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-            <strong>Why it transfers:</strong> &ldquo;our substrate is nonlocal by construction, so
-            Bell doesn&apos;t apply&rdquo; is a recurring move in emergent-QM proposals. This is a
-            minimal executed counterexample: declaring the substrate nonlocal does not evade Bell — it
-            chooses the nonlocal horn, and the construction must then produce a non-relabelable,
-            <em> conditional</em> setting-dependence or stay at S &le; 2. Full construction detail and
-            the open Born-rule problem on <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>.
+            <strong>Honest classification (sharpened 2026-07-18, external researcher review): the number is a
+            corollary, the lesson is what transfers.</strong> S &le; 2 was the <em>guaranteed</em> outcome for
+            any no-signaling local-realist construction — Bell&apos;s theorem functioning as designed — so the
+            simulations are pedagogy plus a registered bet honestly lost, not a new result. What transfers is
+            the worked lesson: &ldquo;our substrate is nonlocal by construction, so Bell doesn&apos;t
+            apply&rdquo; is a recurring move in emergent-QM proposals, and this is a minimal executed
+            counterexample — declaring the substrate nonlocal does not evade Bell, it chooses the nonlocal
+            horn, and the construction must then produce a non-relabelable, <em>conditional</em>
+            setting-dependence or stay at S &le; 2. Cite it for that lesson, not for the number. Full
+            construction detail and the open Born-rule problem on{' '}
+            <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>.
           </p>
         </div>
 

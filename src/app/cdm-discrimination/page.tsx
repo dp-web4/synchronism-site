@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
@@ -10,6 +11,7 @@ export default function CdmDiscrimination() {
   return (
     <>
       <Breadcrumbs currentPath="/cdm-discrimination" />
+      <PathNav currentPath="/cdm-discrimination" />
       <h1>CDM Discrimination</h1>
       <ValidationBadge status="superseded" label="Superseded — Original 'Below CDM' Claim Retracted In-Archive" />
 

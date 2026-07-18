@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
@@ -10,6 +11,7 @@ export default function GammaParameter() {
   return (
     <>
       <Breadcrumbs currentPath="/gamma-parameter" />
+      <PathNav currentPath="/gamma-parameter" />
       <h1>The &#x03B3; Parameter</h1>
       <ValidationBadge status="speculative" label="Motivated Ansatz — Not Derived" />
 

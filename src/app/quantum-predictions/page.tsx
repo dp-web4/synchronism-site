@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -9,6 +10,7 @@ export default function QuantumPredictions() {
   return (
     <>
       <Breadcrumbs currentPath="/quantum-predictions" />
+      <PathNav currentPath="/quantum-predictions" />
       <h1>Quantum Predictions</h1>
       <ValidationBadge status="untested" label="2 Post-dictions, 6 Untested" />
 

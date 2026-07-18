@@ -45,7 +45,11 @@ export default function GammaCalculator() {
         physical system (ideal gas &rarr; BEC presets) or enter N<sub>corr</sub> yourself, and see the
         &#x03B3; the formula assigns and how it reshapes the coherence S-curve. What to conclude: not a
         physical estimate, but a live demonstration of the formula&apos;s central defect &mdash; watch
-        the most-correlated systems get the <em>flattest</em> curves, which is backwards.
+        the most-correlated systems get the <em>flattest</em> curves, which is backwards.{' '}
+        <strong>Why is a formula we know is wrong still interactive?</strong> So you can see the flaw
+        yourself: click the &ldquo;Ideal gas&rdquo; preset, then &ldquo;BCS superconductor,&rdquo; and
+        notice the far more collective system gets the far <em>flatter</em> curve. Real superconductors
+        have among the sharpest transitions in nature — you just watched the formula get that backwards.
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
         &#x03B3; = 2/&#x221A;N<sub>corr</sub> assigns the <em>sharpest</em> coherence transition to the
@@ -101,7 +105,12 @@ export default function GammaCalculator() {
           <p style={{ fontFamily: 'monospace', fontSize: '2.5rem', color: 'var(--color-accent-violet)', margin: '0.5rem 0' }}>
             &#x03B3; = {gamma < 0.001 ? gamma.toExponential(2) : gamma.toFixed(4)}
           </p>
-          <p style={{ color: regime.color, fontSize: '1rem', fontWeight: 'bold' }}>{regime.label}</p>
+          <p style={{ color: regime.color, fontSize: '1rem', fontWeight: 'bold' }}>
+            {regime.label}{' '}
+            <span style={{ fontSize: '0.75rem', fontWeight: 'normal', color: 'var(--color-text-muted)' }}>
+              — a label per the inverted formula (Caveat 2), not a physical classification
+            </span>
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>{regime.desc}</p>
           {presets.find(p => p.ncorr === ncorr) && (
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', textAlign: 'left', borderTop: '1px solid var(--color-border)', paddingTop: '0.75rem' }}>

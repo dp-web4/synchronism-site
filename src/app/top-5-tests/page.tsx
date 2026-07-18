@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -72,6 +73,7 @@ export default function Top5Tests() {
   return (
     <>
       <Breadcrumbs currentPath="/top-5-tests" />
+      <PathNav currentPath="/top-5-tests" />
       <h1>Top Decisive Tests</h1>
       <ValidationBadge status="untested" label="Most Discriminating — Updated 2026-05-13" />
 

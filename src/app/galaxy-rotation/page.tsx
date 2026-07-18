@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
@@ -10,6 +11,7 @@ export default function GalaxyRotation() {
   return (
     <>
       <Breadcrumbs currentPath="/galaxy-rotation" />
+      <PathNav currentPath="/galaxy-rotation" />
       <h1>Galaxy Rotation Curves</h1>
       <ValidationBadge status="untested" label="TEST-03 Never Run As Registered — see correction below" />
 

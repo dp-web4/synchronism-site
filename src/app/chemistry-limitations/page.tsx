@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -16,6 +17,7 @@ export default function ChemistryLimitations() {
   return (
     <>
       <Breadcrumbs currentPath="/chemistry-limitations" />
+      <PathNav currentPath="/chemistry-limitations" />
       <h1>Chemistry Limitations</h1>
       <ValidationBadge status="failed" label="Documented Failures" />
 

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
@@ -10,6 +11,7 @@ export default function MeasurementWithoutObservers() {
   return (
     <>
       <Breadcrumbs currentPath="/measurement-without-observers" />
+      <PathNav currentPath="/measurement-without-observers" />
       <h1>Measurement Without Observers</h1>
       <ValidationBadge status="untested" label="6 Testable Protocols" />
 

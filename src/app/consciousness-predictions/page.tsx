@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -84,6 +85,7 @@ export default function ConsciousnessPredictions() {
   return (
     <>
       <Breadcrumbs currentPath="/consciousness-predictions" />
+      <PathNav currentPath="/consciousness-predictions" />
       <h1>Consciousness Predictions</h1>
       <ValidationBadge status="speculative" label={`${totalPredictions} Falsifiable but Mis-anchored Predictions`} />
 

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -20,6 +21,7 @@ export default function HonestAssessment() {
   return (
     <>
       <Breadcrumbs currentPath="/honest-assessment" />
+      <PathNav currentPath="/honest-assessment" />
 
       <h1>Honest Assessment</h1>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem', maxWidth: '65ch' }}>
@@ -38,9 +40,16 @@ export default function HonestAssessment() {
           <strong>How to read a badge (contract, 2026-07-08):</strong> every badge has two parts. The color
           and leading word(s) are the <em>formal status</em>, drawn only from the two families below (plus
           deprecated back-compat tags). Any text after the dash is a <em>free-text finding descriptor</em>{' '}
-          specific to that result — e.g. &ldquo;Wrong Category,&rdquo; &ldquo;Dimensional Identity,&rdquo;
-          &ldquo;Naturalness Gap,&rdquo; &ldquo;Ontological Reframe.&rdquo; Descriptors are not additional badge
-          types; the epistemic verdict is always the formal status. Not every defined tag has a current
+          specific to that result — e.g. &ldquo;Wrong Category,&rdquo; &ldquo;Wrong Direction,&rdquo;
+          &ldquo;Dimensional Identity,&rdquo; &ldquo;Naturalness Gap,&rdquo; &ldquo;Refuted by Execution,&rdquo;
+          &ldquo;Ontological Reframe.&rdquo; Descriptors are not additional badge
+          types; the epistemic verdict is always the formal status. <strong>Three negative-outcome words, one
+          relationship (added 2026-07-18):</strong> a <em>Failed</em> badge is the formal status of any
+          data-contradicted prediction; a <em>refutation</em> (the footer count) is the narrower subset of
+          Failed results executed on external data against a registered criterion; &ldquo;Refuted by
+          Execution&rdquo; is the descriptor marking that a specific run — not an argument — did the killing.
+          Every refutation carries a Failed badge; not every Failed badge counts as a refutation. Not every
+          defined tag has a current
           instance — tags exist to cover the claim lifecycle, not to guarantee one of each. (The
           &ldquo;Model Explainer&rdquo; tag on the Tools page is a content grouping, not a validation badge —
           it means &ldquo;shows how the equation works,&rdquo; with no verdict content.)

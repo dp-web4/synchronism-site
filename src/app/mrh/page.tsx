@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -9,6 +10,7 @@ export default function MRH() {
   return (
     <>
       <Breadcrumbs currentPath="/mrh" />
+      <PathNav currentPath="/mrh" />
       <h1>MRH: Markov Relevancy Horizon</h1>
       <ValidationBadge status="speculative" label="Theoretical Framework" />
 

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
@@ -10,6 +11,7 @@ export default function ParameterDerivations() {
   return (
     <>
       <Breadcrumbs currentPath="/parameter-derivations" />
+      <PathNav currentPath="/parameter-derivations" />
       <h1>Parameter Derivations</h1>
       <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1.5rem', maxWidth: '65ch' }}>
         <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
@@ -247,26 +249,60 @@ export default function ParameterDerivations() {
               Characteristic radius from velocity and acceleration. 97% accuracy against observed values.
             </p>
           </div>
+
+          <div className="card">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>7. &#x03C6; (golden ratio) &mdash; the exponent 1/&#x03C6; in C(&rho;)/C(a), and &#x03A9;<sub>m</sub><sup>&#x03C6;</sup> in a&#x2080;</h3>
+              <ValidationBadge status="audited-negative" label="Fitted-Then-Named — Provenance Audit 2026-07-17" />
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #44&ndash;45, #170, #185&ndash;186, #218&ndash;219 — provenance audit executed 2026-07-17</p>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              This page&apos;s bottom line is &ldquo;zero parameters with first-principles derivations,&rdquo; and
+              &#x03C6; is its strongest exhibit — previously missing from this page entirely. The golden ratio
+              entered as an empirical fit (S44: virial exponent B = 1.62, noted &ldquo;&asymp; &#x03C6;&rdquo;), was
+              adjudicated the next day by the archive&apos;s own audit (S45: &ldquo;<strong>intriguing coincidence
+              but not significant</strong> — don&apos;t claim &#x03C6; is fundamental&rdquo;; 0/8 comparator scalings
+              have &#x03C6; exponents), then reappeared fully formed inside C(&rho;) at S170 <em>with no derivation
+              and no citation of the S45 ruling</em>.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
+              <strong>The claimed derivations do not survive their own text:</strong> S186&apos;s
+              &ldquo;information conservation x + x&sup2; = 1&rdquo; is the golden ratio&apos;s <em>defining
+              identity</em> postulated as physics (circular); S219&apos;s &ldquo;scale recursion theorem&rdquo;
+              inserts &#x03BB; = 1 + 1/&#x03BB; without anything forcing it; S218 concedes its own Boltzmann route
+              &ldquo;gives exponent 1, not 1/&#x03C6;.&rdquo; The three retro-justifications do not cite each other —
+              derivations that get re-invented rather than accumulate are the signature of fitted-then-named.
+              <strong> And at every measured slot the data preferred a different constant:</strong> the anchor fit was
+              0.66 (1.0% from 2/3, 6.8% from 1/&#x03C6;); the a&#x2080; slot prefers 3/2 (S217); Gaia gives
+              0.688 &plusmn; 0.10 (2/3 at center). Consequence for the ledger: TEST-09&apos;s BTFR kill gets{' '}
+              <em>stronger</em> — the honest accounting is one derived ingredient (&#x03A9;<sub>m</sub>) plus one free
+              exponent dressed as a constant, and the parameter scan shows no exponent value rescues the slope.
+              Full chain: <code>explorer/findings/2026-07-17-phi-exponent-provenance-fitted-then-named.md</code>.
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="section content-width">
         <h2>What&apos;s Notable</h2>
         <p>
-          The derivation chain uses fundamental constants (c, G, H&#x2080;) plus one structural ratio
+          The chain uses fundamental constants (c, G, H&#x2080;) plus one structural ratio
           (&#x03B2;<sub>J</sub> &#x2248; 1 from the Jeans criterion) and one observable (V<sub>flat</sub>).
-          The functional form (tanh, &#x03B3;) has zero free parameters.
-          The scaling constants (A, a&#x2080;, &#x03A3;&#x2080;, R&#x2080;) show 3&ndash;10%
-          agreement with observations.
+          The scaling constants (a&#x2080;, &#x03A3;&#x2080;, R&#x2080;) show 3&ndash;10%
+          agreement with observations &mdash; as dimensional restatements of known observational laws.
         </p>
         <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.9rem' }}>
-          <strong>Honest caveat:</strong> The 3&ndash;10% errors could reflect either (a) legitimate
-          approximation limits in the dimensional analysis, or (b) implicit calibration through
-          choice of V<sub>flat</sub> as input. Distinguishing these requires independent derivation.
-          a&#x2080; and &#x03A3;&#x2080; reproduce known observational relations (Milgrom 1983;
-          Freeman 1970) using dimensional bookkeeping &mdash; classified as Reparametrization, not derivation.
-          The effective novel parameter in this chain is A (Jeans criterion, 5% agreement), which has
-          a derivation path independent of the observational coincidences.
+          <strong>Honest bottom line (updated 2026-07-18; the previous version of this paragraph was a
+          fossil):</strong> zero parameters in this chain have independent first-principles derivations.
+          A &mdash; formerly presented here as &ldquo;the effective novel parameter&rdquo; with an independent
+          derivation path &mdash; is audited-negative (item 3: the stated formula gives a value 600&times; off;
+          the computation that hits 5% uses a scaling law the framework does not use). The exponent &#x03C6; is
+          fitted-then-named (item 7). &#x03B3; = 2/&#x221A;N<sub>corr</sub> is a sign-inverted ansatz (item 1).
+          a&#x2080; and &#x03A3;&#x2080; reproduce known observational relations (Milgrom 1983; Freeman 1970)
+          via dimensional bookkeeping &mdash; Reparametrization, not derivation &mdash; and are one number, not
+          two (&#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) exactly). The 3&ndash;10% agreements could reflect
+          approximation limits or implicit calibration through V<sub>flat</sub>; distinguishing these would
+          require the independent derivations that do not exist.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
@@ -10,6 +11,7 @@ export default function MondUnification() {
   return (
     <>
       <Breadcrumbs currentPath="/mond-unification" />
+      <PathNav currentPath="/mond-unification" />
       <h1>MOND Unification</h1>
       <ValidationBadge status="reparametrization" label="Dimensional Analysis — 10% Error" />
 

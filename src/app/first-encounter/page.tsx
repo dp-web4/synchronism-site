@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 
 const steps = [
@@ -68,6 +69,7 @@ export default function FirstEncounter() {
   return (
     <>
       <Breadcrumbs currentPath="/first-encounter" />
+      <PathNav currentPath="/first-encounter" />
 
       <h1>First Encounter</h1>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>

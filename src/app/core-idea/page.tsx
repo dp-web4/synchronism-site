@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -9,6 +10,7 @@ export default function CoreIdea() {
   return (
     <>
       <Breadcrumbs currentPath="/core-idea" />
+      <PathNav currentPath="/core-idea" />
 
       <h1>The Core Idea</h1>
       <p className="hero-subtitle" style={{ marginBottom: '2rem' }}>

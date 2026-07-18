@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
@@ -10,6 +11,7 @@ export default function CoherenceFunction() {
   return (
     <>
       <Breadcrumbs currentPath="/coherence-function" />
+      <PathNav currentPath="/coherence-function" />
       <h1>The Coherence Function</h1>
       <ValidationBadge status="speculative" label="Phenomenological Ansatz — tanh motivated, not derived" />
 
@@ -30,6 +32,34 @@ export default function CoherenceFunction() {
             Walk through it step by step &rarr;
           </Link>{' '}
           — a 6-step interactive that defines every symbol (C, &#x03C1;, &#x03C1;<sub>crit</sub>, &#x03B3;, ln, tanh) in plain language.
+        </div>
+
+        <div style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: 'var(--color-accent-violet)' }}>The most clarifying algebraic fact about this
+          equation (moved here 2026-07-18 — it previously lived only on the walkthrough):</strong>{' '}
+          the tanh&#x2218;ln composition is <em>exactly</em> a two-parameter Hill function. With
+          x = &#x03C1;/&#x03C1;<sub>crit</sub>,
+          tanh(&#x03B3;&middot;ln(1+x)) = [(1+x)<sup>2&#x03B3;</sup> &minus; 1] / [(1+x)<sup>2&#x03B3;</sup> + 1]
+          — an algebraic identity, verified numerically (the ln is cosmetic; nothing about the composition is
+          load-bearing). Slope behavior follows directly: dC/dx = &#x03B3;(1&minus;C&sup2;)/(1+x) is maximal at
+          x = 0 (where it equals &#x03B3;) and decreases monotonically — the curve is concave in x everywhere on x &ge; 0, with no critical
+          point and no inflection to serve as a &ldquo;transition.&rdquo; Asymptotics: C &asymp; &#x03B3;x for
+          small x; C &rarr; 1 like 1 &minus; 2(1+x)<sup>&minus;2&#x03B3;</sup> for large x. This dissolves any
+          residual mystique: the equation is a saturating rational function in the μ-law/Hill/Naka&ndash;Rushton
+          lineage. Full six-piece decomposition on the{' '}
+          <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-violet)' }}>walkthrough</Link>.
+        </div>
+
+        <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#ef4444' }}>The first question a physicist asks, answered where the equation
+          is defined (moved here 2026-07-18):</strong>{' '}
+          &#x03C1; has no stated units and no measurement protocol, and <strong>no protocol maps any laboratory
+          or astronomical observable to the coherence value C, in any domain</strong>. N<sub>corr</sub> (inside
+          &#x03B3;) is asserted rather than counted on every scale where it is used. C is therefore doubly
+          unanchored — inputs asserted, output unmeasurable — which is why several claims on this site are
+          labeled <em>unrunnable as stated</em> rather than merely untested. The only data contact is galaxy
+          rotation, where the parameters are fit to the prediction target. Details on{' '}
+          <Link href="/for-researchers" style={{ color: '#ef4444' }}>For Researchers</Link>.
         </div>
 
         <p>

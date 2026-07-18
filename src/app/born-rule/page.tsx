@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
@@ -10,6 +11,7 @@ export default function BornRule() {
   return (
     <>
       <Breadcrumbs currentPath="/born-rule" />
+      <PathNav currentPath="/born-rule" />
       <h1>Born Rule as Coherence Conservation: An Equivalent Formulation</h1>
       <ValidationBadge status="reparametrization" label="Interpretive Restatement" />
 

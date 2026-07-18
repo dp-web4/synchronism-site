@@ -2,12 +2,14 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 
 export default function WhySynchronism() {
   return (
     <>
       <Breadcrumbs currentPath="/why-synchronism" />
+      <PathNav currentPath="/why-synchronism" />
 
       <h1>Start Here: Why Synchronism?</h1>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>

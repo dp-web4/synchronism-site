@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -36,6 +37,7 @@ export default function WhatSynchronismIsNot() {
   return (
     <>
       <Breadcrumbs currentPath="/what-synchronism-is-not" />
+      <PathNav currentPath="/what-synchronism-is-not" />
       <h1>What Synchronism Is Not</h1>
       <ValidationBadge status="active-mrh" label="Scope Boundaries — Not a Claim (corrected 2026-07-09; was deprecated 'Validated')" />
 

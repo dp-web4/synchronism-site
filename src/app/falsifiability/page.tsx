@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -42,6 +43,7 @@ export default function Falsifiability() {
   return (
     <>
       <Breadcrumbs currentPath="/falsifiability" />
+      <PathNav currentPath="/falsifiability" />
       <h1>Falsifiability</h1>
       <ValidationBadge status="validated" label="Core Principle" />
 

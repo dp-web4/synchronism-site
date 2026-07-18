@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -20,6 +21,7 @@ export default function ConsciousnessThreshold() {
   return (
     <>
       <Breadcrumbs currentPath="/consciousness-threshold" />
+      <PathNav currentPath="/consciousness-threshold" />
       <h1>Consciousness Threshold</h1>
       <ValidationBadge status="speculative" label="Untestable as stated — no calibration maps any measurement to C; the one cited test measured a different variable" />
 

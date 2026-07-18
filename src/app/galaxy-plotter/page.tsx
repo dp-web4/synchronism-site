@@ -169,7 +169,10 @@ export default function GalaxyPlotter() {
           anywhere near its knee. The dotted violet curve is the hand-tuned stand-in this page used
           to show. The green curve is now MOND&apos;s real simple-&#x03BD; interpolating function on a
           toy mass model whose only inputs (V<sub>flat</sub>, disk scale length) are observed
-          quantities — nothing is fitted to the dots.
+          quantities — nothing is fitted to the dots.{' '}
+          <strong>Why two violet curves?</strong> The dotted one is what a curve <em>would</em> need to
+          look like to fit the data — drawn by hand, not computed. The solid one is what the equation
+          actually produces. Showing both is the point: the gap between them <em>is</em> the failure.
         </div>
         <p>
           <strong>The dark matter puzzle in one picture:</strong> Physics predicts that galaxies

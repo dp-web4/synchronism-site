@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -22,7 +23,7 @@ const tiers = [
     time: '6–24 months',
     color: 'var(--color-accent-blue)',
     href: '/tier-2-pilots',
-    desc: 'Small-scale experiments: EEG studies, circadian rhythm monitoring, QC coherence tests.',
+    desc: 'Small-scale experiments: EEG studies, circadian rhythm monitoring, QC coherence tests. ⚠ Every C-dependent entry is unrunnable as stated — no protocol maps any observable to C (see the protocol-status box above).',
   },
   {
     tier: 'Tier 3: Major Experiments',
@@ -48,6 +49,7 @@ export default function TestCatalog() {
   return (
     <>
       <Breadcrumbs currentPath="/test-catalog" />
+      <PathNav currentPath="/test-catalog" />
       <h1>Test Roadmap</h1>
       <ValidationBadge status="untested" label="24 Proposed Experiments" />
 
@@ -112,6 +114,28 @@ export default function TestCatalog() {
             See Tier 1 for per-test verdicts →
           </Link>
         </div>
+        <div style={{
+          background: 'rgba(239, 68, 68, 0.07)',
+          border: '1px solid rgba(239, 68, 68, 0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.7rem 1rem',
+          marginBottom: '1.25rem',
+          fontSize: '0.875rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#ef4444' }}>Protocol status — the &ldquo;unrunnable&rdquo; verdict, propagated
+          (2026-07-18):</strong>{' '}
+          No protocol maps any laboratory or astronomical observable to the coherence value C, in any domain
+          (the site&apos;s own adjudication — see{' '}
+          <Link href="/for-researchers" style={{ color: '#ef4444' }}>For Researchers</Link> and{' '}
+          <Link href="/key-claims" style={{ color: '#ef4444' }}>Key Claims</Link>). Every Tier 2 and Tier 4
+          experiment whose outcome depends on measuring C — the EEG, circadian, and QC-coherence pilots
+          included — is therefore <strong>unrunnable as stated</strong>: funding one at the listed $50K&ndash;$500K
+          would buy a measurement of a variable the framework has already ruled uninterpretable as C. These
+          entries stay listed as what they are — proposals pending a calibration protocol that does not exist —
+          not as fundable tests. An external review flagged this page as presenting them as fundable; this box
+          is the correction.
+        </div>
         <p>
           Synchronism has defined 24 specific, falsifiable experiments organized into four tiers
           by cost and feasibility. Every experiment has an explicit kill criterion &mdash; a result
@@ -143,8 +167,8 @@ export default function TestCatalog() {
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem', paddingLeft: '1.25rem' }}>
             <li><strong>RAR transition shape</strong> (2807 SPARC points, 2026-05-21): γ=2 compander refuted at ΔBIC=+184; free-γ=0.49=MOND — <span style={{ color: '#ef4444' }}>FAILED (γ=2); collapses to MOND at fitted γ. Net discriminating galaxy tests vs MOND: 0.</span></li>
             <li><strong>Galaxy rotation</strong> (14,760 galaxies, SPARC + ALFALFA-SDSS): qualitative curve match — <span style={{ color: '#f59e0b' }}>MOND reparametrization</span>, not novel</li>
-            <li><strong>TEST-03 TFR scatter</strong> (same SPARC data): R&sup2; = 0.14 &lt; 20% kill threshold — <span style={{ color: '#ef4444' }}>FAILED</span></li>
-            <li><strong>DESI fσ₈ (TEST-04a)</strong>: post-hoc retrodiction, kill criterion triggered — <span style={{ color: '#ef4444' }}>DISFAVORED ~2σ</span> <span style={{ color: 'var(--color-text-muted)' }}>(corrected 2026-05-26; LRG1 fσ₈/(fσ₈)_fid=1.16±0.13; σ₈=0.841 vs predicted 0.76; prior &ldquo;non-discriminating&rdquo; correction was itself an error)</span></li>
+            <li><strong>TEST-03 TFR scatter</strong>: <span style={{ color: '#f59e0b' }}>NEVER RUN AS REGISTERED</span> — the R&sup2; = 0.14 figure previously reported here was a metric conflation (morphology statistic on N &asymp; 171, not the registered test on N = 14,585; corrected 2026-07-09). The registered <em>environment</em> claim was later executed 2026-07-14 (research repo): r&sup2; = 0.0001, ~900&times; under the framework&apos;s &gt;20% claim — <span style={{ color: '#ef4444' }}>environment prediction REFUTED by execution</span></li>
+            <li><strong>DESI fσ₈ (TEST-04a)</strong>: <span style={{ color: '#f59e0b' }}>UNDERPOWERED AS REGISTERED</span> <span style={{ color: 'var(--color-text-muted)' }}>(corrected 2026-07-14: the registered fσ₈(z=0.51) &gt; 0.46 criterion was met at only ~1.5σ, short of the demanded &gt;3σ; the widely-quoted 2.4σ disfavor is on σ₈, a GR-conditioned statistic that cannot falsify modified growth; DESI&apos;s own MG analysis gives μ₀ within 1σ of zero. Not counted in the refutation census. DR2 both-outcome pre-commitment registered 2026-07-17 — the program&apos;s first prospective registration)</span></li>
             <li><strong>Chemistry boundary consistency</strong> (1,703 phenomena): 89% consistent — <span style={{ color: '#f59e0b' }}>calibration set, not blind test</span></li>
             <li><strong>Superconductivity (η factor)</strong>: reproduces Abrikosov-Gor&apos;kov formula — <span style={{ color: '#f59e0b' }}>reparametrization</span></li>
             <li><strong>Born rule</strong>: reproduces |α|² via coherence conservation — <span style={{ color: '#f59e0b' }}>reparametrization</span> (no deviation predicted)</li>
@@ -183,8 +207,9 @@ export default function TestCatalog() {
             closed.</strong> An earlier version of this box recommended starting with three
             existing-data tests; all three have since been adjudicated. BAO coherence modulation:{' '}
             <em>Withdrawn 2026-05-04</em> (internal contradiction, never adjudicated). SPARC
-            environment analysis (TEST-03): <em>Failed</em> — kill criterion triggered (R&sup2; = 0.14
-            vs the pre-registered 0.20). Wide binaries (TEST-02): <em>Self-Eliminating-or-Tie</em> —
+            environment analysis (TEST-03): <em>Never run as registered</em> (the old &ldquo;R&sup2; = 0.14
+            kill&rdquo; was a metric conflation, corrected 2026-07-09); the registered environment claim was
+            executed 2026-07-14 with r&sup2; = 0.0001 — refuted. Wide binaries (TEST-02): <em>Self-Eliminating-or-Tie</em> —
             the predicted 0.05–0.4% signal sits ~80&times; below Gaia DR3 systematics, and either
             outcome of the ongoing Chae-vs-Banik dispute is covered by Newton or MOND respectively,
             so no result selects this framework. See{' '}

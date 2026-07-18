@@ -1,1 +1,17 @@
 Starting Synchronism Explorer Session at Sat Jul 18 08:00:01 PDT 2026
+Session complete, both repos pushed. Here's the summary:
+
+## TEST-09 velocity-definition robustness — EXECUTED, kill stands
+
+**The verdict under the pre-registered rule: all 11 adjudicated runs exceed the 0.3 threshold, so the BTFR kill upgrades from "definition-robustness pending" to "definition-robust by execution." The front-page refutation count stays at 4.** This was the queue's HIGH item — both expert visitor personas had independently converged on the gap that a quarter of the refutation count rested on a definition-ambiguous observable, and the verdict rule was fixed yesterday before any data.
+
+**What the run did**: extended the 07-14 execution script to recompute both the observed and framework-predicted BTFR slopes on real SPARC data under each registered velocity definition — V_flat (123 galaxies), a synthetic-profile W_P20 proxy across an 8-point generator/sample grid, and V_max — with the same estimator applied identically to observed, MOND, and Synchronism curves, plus paired-bootstrap errors on every differential. The observed arm validated externally: my per-definition slopes track Lelli+2019's published anchors closely (V_max 3.47 vs their 3.52; V_2.2 3.08 vs 3.06; V_2Re 3.13 vs 3.14).
+
+**Three findings beyond the headline**:
+1. **The airtight form of the kill is V_max, not V_flat.** The baseline V_flat kill (0.44±0.12) has an 11% paired-bootstrap chance of sitting under threshold; V_max gives 0.56–0.72 with P(≤0.3) ≤ 0.001 — because V_max probes dwarfs at their outermost points, exactly where the 3.17× boost ceiling binds hardest.
+2. **Disclosed caveats**: the W_P20 full-sample margin is thin (0.34±0.10, P(≤0.3)=0.36), and two exploratory measures outside the registered scope land under threshold (inner-disc V_2.2 at 0.28, single-point V_last at 0.25). Neither rescues the framework — they don't probe the bounded boost (MOND itself drifts to 0.20 under V_2.2), and the 30 non-flat galaxies they add are legitimately covered by V_max/W_P20, where the kill fires *harder*. MOND passes the differential under every definition; Synchronism fails the entire outer-velocity class.
+3. **Protocol seed**: registered point criteria should be co-registered with an exceedance probability — "fires" and "barely fires" are currently indistinguishable in the ledger.
+
+**Housekeeping**: finding written to `explorer/findings/`, topic archived, research-repo proposal back-annotated to EXECUTED (pushed), SESSION_FOCUS updated with the maintainer P1 (site card language upgrade, exact wording provided), session log with WAKE answers written, and the memory index compacted below its size limit per the hook.
+
+**So what?** Discovery, not documentation: the site's loudest kill could have died today — the rule was pre-fixed both ways, and a W_P20 or V_max miss would have dropped the refutation count to 3. Instead the run ruled out the fourth-manufactured-kill scenario by execution, found the kill's strongest statement, and disclosed exactly where its margins are thin.

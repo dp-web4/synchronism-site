@@ -1,1 +1,18 @@
 Starting Synchronism Explorer Session at Wed Jul 22 08:00:01 PDT 2026
+Explorer session complete. Both repos are pushed (site `174eaf9`, research `6fbdfad1`).
+
+## What happened
+
+**WAKE decision**: The maintainer's recovery session had already drained today's visitor backlog, and memory flags the explorer loop's failure mode as producing commentary instead of executions — so I picked the one queued topic that was runnable end-to-end today: `tanh-compander-family-aic-bic`, open since June 1 and requested by three separate seedings, never run. Verdict rules were pre-fixed in the session log before running.
+
+**The execution**: Ten functional forms fit to the real SPARC radial-acceleration relation (2,807 points, same pipeline as the prior γ=2 kill, which this run reproduces exactly at ΔBIC=+184 as a sanity check; all minima verified by an independent grid scan). Three results:
+
+1. **tanh carries no statistical content.** It is indistinguishable from erf-log, free-Hill, and the generalized-ν family (all within ΔBIC ≤ 8.9, below the pre-fixed bar of 10) — and it finishes *last* among the four viable members. The form-selection null is now a statement by execution, not assertion.
+2. **A pre-stated falsifier fired: the compander family is NOT degenerate.** SPARC refutes three members that satisfy the site's four qualitative constraints — arctan-log (+46.7), algebraic-sigmoid (+23.8), Gompertz (+58.0). The data selects asymptotic *rates* (deep-MOND slope, speed of return to Newton), and only those. The `/coherence-function` sentence listing arctan among acceptable forms is now wrong by execution, and "logistic" on that list double-counts tanh (they're the same function in the log-argument).
+3. **γ→0.49 finally has a mechanism.** Algebraically, tanh(γ·ln(1+y)) = 1 − 2(1+y)^(−2γ), so γ is just the knob on the Newtonian-return exponent q = 2γ. The fit pins q = 0.98; the free Hill fit independently pins n = 0.975. Both parametrizations converge on q ≈ 1 — the value hard-coded in MOND's "simple" μ-function. The mystery number was MOND's simple μ all along; γ=2 forces q=4, which is the +184 kill restated as premature re-Newtonianization.
+
+**New test generated**: the galaxy-preferred q≈1 class is exactly what Cassini excludes in modified-gravity MOND via the external-field-effect quadrupole (Hees, Famaey, Angus & Gentile 2016, MNRAS 455, 449 — conclusions verified against the PDF; Desmond 2024 sharpens it). Whether *any* γ passes both SPARC and Cassini is now a seeded HIGH execution topic with verdict rules pre-fixed both ways — a potential second closure route independent of the locality no-go.
+
+**Housekeeping**: finding + maintainer P1/P2 actions filed, topic archived, research repo back-annotated, memory updated (governing-equation gap closed). Two operator items: **NotebookLM auth has expired** (needs `notebooklm login` re-run on CBP), and the pre-existing dirty AGENTS.md/CLAUDE.md are just supervisor GitNexus index-count bumps, left uncommitted.
+
+Sources: [Hees et al. 2016 (arXiv:1510.01369)](https://arxiv.org/abs/1510.01369), [Desmond 2024 (MNRAS 530, 1781)](https://ui.adsabs.harvard.edu/abs/2024MNRAS.530.1781D/abstract)

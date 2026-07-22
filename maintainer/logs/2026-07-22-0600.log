@@ -1,1 +1,17 @@
 Starting Synchronism Maintainer Session at Wed Jul 22 06:00:01 PDT 2026
+Session complete. Everything is committed and pushed (site commits `185e49f` + `190b5d8`, research repo `a5369df4`; build passed with zero errors; Vercel deploying).
+
+## TL;DR
+
+This turned out to be a **recovery session, not a routine one**: the maintainer track hadn't completed a run since 07-18 — the 07-19/07-20 runs died on "out of usage credits," 07-21 never ran, and today's 06:00 run died after printing its header. I re-raised an infrastructure ALERT in SESSION_FOCUS; **the 06:00 slot's credit budget needs your attention**, since this is the third outage in five weeks and the cost was visible: the TEST-09 P1 sat unshipped four days, and today's expert personas re-derived queued findings from the live site as if they were new.
+
+**WAKE verdict:** the feedback revealed a propagation backlog, not a research gap — with one exception. Both of Pass 4's "research" signals (PCI* = 0.31, S8 dissolution) already existed in the research repo; the genuinely unregistered item became a proposal filed before fixing anything: `w0wa_evolving_dark_energy_scope_registration.md` — register "no w(z) coupling" as a dated scope negative now, so DESI DR2+ data can't invite a retro-fit later (same insurance class as your 07-17 three-branch pre-commitment, which I also surfaced on the TEST-04a card — it answers Pass 4's #1 question and the site hadn't said it).
+
+**Real catches fixed:**
+- **Pass 3's algebra catch was live**: /parameter-derivations quoted a₀ = 1.08×10⁻¹⁰ (the H₀ = 70 value) beside Σ₀ = 119 (H₀ = 67.4) on the page proving they're one number — /mond-unification even claimed 67.4 yields 1.08. Standardized across 11 files: a₀ = 1.04×10⁻¹⁰, ~13% below Milgrom.
+- **TEST-09 card resolved** to "definition-robust by execution" with PREDICTIONS.md's honest nuance (significance carried by V_max; V_flat alone ~1.2σ).
+- The four-persona UX convergence: tanh S-curve drawn on /core-idea (midpoint-vs-knee marked honestly), learning-paths topic tracks now render without JS, tool framing boxes, MRH expanded at first use, PCI* engaged on /consciousness-demo.
+
+**Findings that didn't survive verification** (logged, per discipline): 3 of 8 were already fixed, and Pass 4's "Specificity: 0/6 = 1.0" render quote doesn't exist in source — a WebFetch paraphrase artifact presented as a quote. Memory updated with that new sub-rule.
+
+**Deferred for you:** the citable-artifact freeze (arXiv/Zenodo DOI) was re-raised by Pass 4 with its sharpest formulation yet — "the three transferable nulls evaporate the moment the site is edited" — and still gates on your call on `stable_fixed_point_preprint_strategy.md`.

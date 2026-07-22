@@ -17,7 +17,7 @@ export default function MondUnification() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <EquationDisplay size="lg" label="The MOND acceleration scale from cosmology">
-          a&#x2080; = cH&#x2080; / (2&#x03C0;) &#x2248; 1.08 &times; 10<sup>&minus;10</sup> m/s&sup2;
+          a&#x2080; = cH&#x2080; / (2&#x03C0;) &#x2248; 1.04 &times; 10<sup>&minus;10</sup> m/s&sup2;
         </EquationDisplay>
 
         <p>
@@ -73,9 +73,10 @@ export default function MondUnification() {
             </EquationDisplay>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               Plugging in H&#x2080; = 67.4 km/s/Mpc and c = 3 &times; 10<sup>8</sup> m/s
-              gives 1.08 &times; 10<sup>&minus;10</sup> m/s&sup2;.
+              gives 1.04 &times; 10<sup>&minus;10</sup> m/s&sup2;.
               Milgrom&apos;s observed value: 1.20 &times; 10<sup>&minus;10</sup>.
-              Error: ~10%.
+              Error: ~13%. (Corrected 2026-07-22: the 1.08 / &ldquo;~10%&rdquo; previously
+              shown here belongs to H&#x2080; = 70, not the 67.4 stated in this very step.)
             </p>
           </div>
         </div>

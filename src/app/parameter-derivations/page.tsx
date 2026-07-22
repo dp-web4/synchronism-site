@@ -176,13 +176,19 @@ export default function ParameterDerivations() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>4. a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.08&times;10<sup>&minus;10</sup> m/s&sup2;</h3>
+              <h3>4. a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.04&times;10<sup>&minus;10</sup> m/s&sup2; (at the site-standard H&#x2080; = 67.4)</h3>
               <ValidationBadge status="reparametrization" label="Dimensional Analysis" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #87-88</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               The MOND acceleration scale a&#x2080; = cH&#x2080;/(2&#x03C0;) follows from Synchronism&apos;s coherence function.
-              Milgrom&apos;s observed: 1.20&times;10<sup>&minus;10</sup> m/s&sup2; (10% error).
+              Milgrom&apos;s observed: 1.20&times;10<sup>&minus;10</sup> m/s&sup2; &mdash; the formula sits
+              13% below it. <strong>H&#x2080; bookkeeping corrected 2026-07-22</strong> (caught by a visitor
+              physics persona): this card previously quoted a&#x2080; &#x2248; 1.08&times;10<sup>&minus;10</sup>
+              (&ldquo;within 10%&rdquo;), which is the H&#x2080; = 70 value &mdash; algebraically incompatible
+              with item 5&apos;s &#x03A3;&#x2080; = 119 at H&#x2080; = 67.4, since &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G)
+              exactly (one number, not two). At the site-standard H&#x2080; = 67.4: a&#x2080; = 1.04&times;10<sup>&minus;10</sup>
+              (13% below Milgrom) with &#x03A3;&#x2080; = 119 &mdash; the consistent pair, now quoted site-wide.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               This dimensional relation a&#x2080; &#x223C; cH&#x2080; has been noted since Milgrom (1983) and
@@ -201,8 +207,9 @@ export default function ParameterDerivations() {
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #89</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               <strong>Arithmetic corrected 2026-07-09</strong> (independently caught by two visitor
-              personas the same day): using this page&apos;s own a&#x2080; &#x2248; 1.08&times;10<sup>&minus;10</sup> m/s&sup2;
-              (item 4, since &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) algebraically), &#x03A3;&#x2080; &#x2248; 123.3 M&#x2609;/pc&sup2;
+              personas the same day): using the a&#x2080; &#x2248; 1.08&times;10<sup>&minus;10</sup> m/s&sup2; item 4
+              quoted at the time (the H&#x2080; = 70 value; corrected to 1.04 at H&#x2080; = 67.4 on 2026-07-22,
+              since &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) algebraically), &#x03A3;&#x2080; &#x2248; 123.3 M&#x2609;/pc&sup2;
               &mdash; a <strong>0.5% match</strong> to Freeman&apos;s observed 124 M&#x2609;/pc&sup2; (Freeman 1970),
               not the previously stated &ldquo;&#x2248;110, 12% error&rdquo; (that 110 required H&#x2080; &#x2248; 62 km/s/Mpc,
               inconsistent with the a&#x2080; row directly above it). At the site-standard
@@ -215,8 +222,8 @@ export default function ParameterDerivations() {
               deriving it from physics. <strong>&#x03A3;&#x2080; is not independent evidence from a&#x2080;:</strong> since
               &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) exactly, this is the a&#x2080; row propagated through a linear relation, not
               a second derivation. Milgrom&apos;s own &#x03A3;<sub>M</sub> = a&#x2080;<sub>,obs</sub>/(2&#x03C0;G) &#x2248; 137 M&#x2609;/pc&sup2;
-              sits 9.6% above Freeman&apos;s 124, and this page&apos;s a&#x2080; sits 9.8% below Milgrom&apos;s observed
-              a&#x2080; &mdash; the same &#x223C;10% gap in both places, one number, not two rows of independent support.
+              sits 10% above Freeman&apos;s 124, and this page&apos;s a&#x2080; (1.04 at H&#x2080; = 67.4) sits 13% below Milgrom&apos;s observed
+              a&#x2080; &mdash; equivalently, &#x03A3;&#x2080; = 119 sits the same 13% below Milgrom&apos;s &#x03A3;<sub>M</sub> = 137: one gap, one number, not two rows of independent support.
               Re-badged from &ldquo;Validated&rdquo; (2026-04-28): a tight numeric match is not sufficient to claim
               derivation of what is, in origin, an observational law.
             </p>
@@ -224,8 +231,8 @@ export default function ParameterDerivations() {
               <strong>H&#x2080; inconsistency RESOLVED (2026-07-17</strong>, root cause identified by a visitor
               physics persona 2026-07-17): the 119-vs-123.3 split across pages was exactly an undisclosed
               Hubble-constant switch &mdash; &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) gives 119.0 M&#x2609;/pc&sup2;
-              at H&#x2080; = 67.4 km/s/Mpc (Planck 2018) and 123.6 at H&#x2080; = 70 (the value implicit in this
-              page&apos;s a&#x2080; &#8776; 1.08&times;10<sup>&minus;10</sup> m/s&sup2;). <strong>Site standard is
+              at H&#x2080; = 67.4 km/s/Mpc (Planck 2018) and 123.6 at H&#x2080; = 70 (the value implicit in the
+              a&#x2080; &#8776; 1.08&times;10<sup>&minus;10</sup> m/s&sup2; this page quoted until 2026-07-22). <strong>Site standard is
               now H&#x2080; = 67.4 km/s/Mpc</strong> (matching /freemans-law and Honest Assessment), giving
               &#x03A3;&#x2080; &#8776; 119. Given the caveat below, no sub-percent &ldquo;match&rdquo; claim
               survives either H&#x2080; choice, so the choice changes bookkeeping, not verdicts. (2) Neither error bar is meaningful on its

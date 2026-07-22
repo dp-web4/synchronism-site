@@ -433,11 +433,11 @@ export default function KeyClaims() {
           </div>
 
           <div className="equation" style={{ marginBottom: '0.25rem', fontSize: '1rem' }}>
-            a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.08 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2;
+            a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.04 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2;
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '1rem' }}>
             MOND (Modified Newtonian Dynamics) acceleration from dimensional analysis
-            (observed: 1.2 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2; &mdash; a ~10% miss, not an exact hit)
+            (observed: 1.2 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2; &mdash; a ~13% miss at the site-standard H&#x2080; = 67.4, not an exact hit)
           </p>
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
@@ -471,7 +471,7 @@ export default function KeyClaims() {
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            Tested against 14,760 galaxies (SPARC + ALFALFA-SDSS). a&#x2080; derivation within 10%.
+            Tested against 14,760 galaxies (SPARC + ALFALFA-SDSS). a&#x2080; derivation within 13%.
             Freeman&apos;s Law &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#8776; 119 M&#x2609;/pc&sup2; at the
             site-standard H&#x2080; = 67.4 km/s/Mpc &mdash; consistent with Freeman&apos;s observed normalization
             within the factor-of-~2 mass-to-light systematic, which is all the observable supports (sub-percent

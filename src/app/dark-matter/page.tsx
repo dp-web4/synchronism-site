@@ -68,7 +68,7 @@ export default function DarkMatter() {
         </p>
 
         <EquationDisplay size="sm" label="The MOND acceleration scale emerges from cosmology">
-          a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.08 &times; 10<sup>&minus;10</sup> m/s&sup2;
+          a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.04 &times; 10<sup>&minus;10</sup> m/s&sup2;
         </EquationDisplay>
 
         <h2>What This Means</h2>

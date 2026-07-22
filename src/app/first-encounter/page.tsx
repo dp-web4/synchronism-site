@@ -41,7 +41,7 @@ const steps = [
     classical particles (N_corr = 1, γ = 2). The critical density ρ_crit = A × V_flat² connects
     to rotation velocity. MOND's acceleration constant a₀ = cH₀/(2π) falls out of the same constants —
     but this is a dimensional coincidence (the only scale buildable from c and H₀), not a first-principles
-    derivation; the 2π is unexplained and the match is off by ~10%. See Honest Assessment.`,
+    derivation; the 2π is unexplained and the match is off by ~13%. See Honest Assessment.`,
     highlight: 'a₀ ≈ cH₀/(2π): a coincidence, not a derivation',
   },
   {

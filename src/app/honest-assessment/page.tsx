@@ -56,8 +56,9 @@ export default function HonestAssessment() {
         </p>
 
         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
-          <strong>MRH-relationship tags</strong> describe how a claim sits in the current research inventory.
-          Preferred for in-flight work. Rationale: at the current stewardship stage, <em>nothing is honestly
+          <strong>MRH-relationship tags</strong> (MRH = <em>Markov Relevancy Horizon</em> &mdash; the framework&apos;s
+          term for the bounded context something is currently relevant within) describe how a claim sits in the
+          current research inventory. Preferred for in-flight work. Rationale: at the current stewardship stage, <em>nothing is honestly
           characterizable as &ldquo;established&rdquo;</em> — the framework is being stewarded along many parallel paths,
           and verdict-shaped tags promote substantive content out of that parallel space prematurely.
         </p>
@@ -304,7 +305,7 @@ export default function HonestAssessment() {
               <ValidationBadge status="reparametrization" label="Dimensional Analysis" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              MOND&apos;s acceleration constant a&#x2080; related to cosmological parameters via a&#x2080; = cH&#x2080;/(2&#x03C0;). 10% error vs observed value.
+              MOND&apos;s acceleration constant a&#x2080; related to cosmological parameters via a&#x2080; = cH&#x2080;/(2&#x03C0;). 13% error at H&#x2080; = 67.4 vs observed value.
               This numerical coincidence has been noted since Milgrom (1983), and other frameworks (McCulloch 2007, Verlinde 2017,
               Smolin 2017) derive the same relation with the same geometric factor. The quantities c, H&#x2080;, and G are the only
               dimensionally relevant cosmological constants, and cH&#x2080; naturally has units of acceleration. Best classified as
@@ -355,7 +356,7 @@ export default function HonestAssessment() {
               Like a&#x2080; ~ cH&#x2080;, this is the only surface-density scale buildable from the available cosmological
               constants (c, H&#x2080;, G). Any framework that imports these constants will recover the same dimensional
               relation. It is also <strong>not independent evidence</strong> from a&#x2080;: &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) exactly,
-              so the &#8776;4% Freeman match is the same &#8776;10% a&#x2080;-vs-Milgrom gap propagated through a fixed linear
+              so the &#8776;4% Freeman match is the same &#8776;13% a&#x2080;-vs-Milgrom gap propagated through a fixed linear
               relation, not a second derivation. Reclassified from &ldquo;Validated&rdquo; to Reparametrization
               alongside a&#x2080; on the same grounds.
             </p>
@@ -1031,6 +1032,7 @@ export default function HonestAssessment() {
           <li><strong>H₀ tension (~5σ):</strong> CMB vs. distance-ladder Hubble constant disagreement. Synchronism makes no statement on H₀. (See <Link href="/honest-assessment#h0-tension" style={{ color: 'var(--color-accent-blue)' }}>What&apos;s Untested</Link> above.)</li>
           <li><strong>JWST early galaxies:</strong> JWST has found massive, evolved galaxies at z &gt; 10 that challenge standard structure formation. Several modified-gravity frameworks address this; Synchronism has no analysis.</li>
           <li><strong>S₈ tension (receding):</strong> KiDS/DES historically measured σ₈ lower than Planck CMB predicts. Synchronism&apos;s σ₈ prediction (0.76) was calibrated to this tension in Session 102. However, DES Y3 6×2pt and KiDS-Legacy (2024–2025) are pulling S₈ back toward Planck, weakening the tension. Synchronism&apos;s calibration anchor is a transient state, not a stable observational target — which makes TEST-04a post-hoc against a moving baseline.</li>
+          <li><strong>Evolving dark energy (DESI DR2 w&#x2080;w&#x2090;):</strong> DESI DR2 BAO combined with CMB and supernovae shows a 2.8&ndash;4.2&sigma; preference (depending on SNe compilation) for evolving dark energy (w&#x2080;w&#x2090;CDM) over &Lambda;CDM &mdash; the dominant live anomaly in cosmology right now (2025&ndash;2026). A framework claiming density&rarr;coherence&rarr;growth machinery should register whether it has any coupling to w(z). It does not: C(&rho;) contains no dark-energy sector and no mechanism that modifies the expansion history &mdash; which is itself a mark against cosmological scope. (Added 2026-07-22 after an expert visitor flagged the silence.)</li>
           <li><strong>Primordial non-Gaussianity (fNL):</strong> DESI and future surveys constrain non-Gaussianity from large-scale structure. No coherence-based prediction exists.</li>
         </ul>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>

@@ -106,8 +106,9 @@ export default function GalaxyRotation() {
           <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}> 40-year-old dimensional coincidence</Link>{' '}
           (Milgrom 1983), discussed by Famaey &amp; McGaugh (2012), McCulloch, Verlinde, and Smolin
           under different theoretical umbrellas. The 2&#x03C0; prefactor is chosen to match the
-          observed value; cH&#x2080;/(2&#x03C0;) &#x2248; 1.08&#x00D7;10&#x207B;&#xB9;&#x2070; m/s&#x00B2;
-          undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;10%.
+          observed value; cH&#x2080;/(2&#x03C0;) &#x2248; 1.04&#x00D7;10&#x207B;&#xB9;&#x2070; m/s&#x00B2; at the
+          site-standard H&#x2080; = 67.4
+          undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;13%.
           Synchronism&apos;s contribution is the coherence-function mechanism that provides a
           <em>reason</em> for this scale &mdash; not the identification itself.
           See{' '}<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}

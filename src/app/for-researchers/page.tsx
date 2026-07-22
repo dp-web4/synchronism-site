@@ -127,7 +127,7 @@ export default function ForResearchers() {
             mutually inconsistent denominators). Both error rates on the 6 are measured — temporal-asymmetry
             control 0/6 (later-demoted claims caught; median prior-art year ~1996), vocabulary-asymmetry 4/4 on
             the prior-art-rediscovery subclass, and <strong>specificity 0/6</strong> (every held-out genuine
-            discovery false-flagged, i.e. no measured false-positive rate for the detector — see{' '}
+            discovery false-flagged — a measured false-positive rate of 6/6 = 1.0 on the control set — see{' '}
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
             Discrimination lives entirely in unautomated human novelty judgment.
           </p>

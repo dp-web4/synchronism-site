@@ -74,7 +74,7 @@ export default function CriticalDensity() {
               a&#x2080; = cH&#x2080;/(2&#x03C0;)
             </EquationDisplay>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              10% error vs Milgrom&apos;s value
+              13% error vs Milgrom&apos;s value (at site-standard H&#x2080; = 67.4)
             </p>
             <ValidationBadge status="validated" />
           </div>
@@ -84,7 +84,7 @@ export default function CriticalDensity() {
               &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G)
             </EquationDisplay>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              &#8776;4% error vs Freeman&apos;s value (corrected 2026-07-09; not independent of a&#x2080;&apos;s &#8776;10% gap)
+              &#8776;4% error vs Freeman&apos;s value (corrected 2026-07-09; not independent of a&#x2080;&apos;s &#8776;13% gap)
             </p>
             <ValidationBadge status="validated" label="12% Error" />
           </div>

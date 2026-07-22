@@ -55,7 +55,7 @@ export const terms: Record<string, TermDefinition> = {
   'a\u2080': {
     term: 'a\u2080',
     fullName: 'MOND Acceleration Scale',
-    brief: 'Milgrom\'s acceleration constant: a\u2080 = cH\u2080/(2\u03C0) \u2248 1.08\u00D710\u207B\u00B9\u2070 m/s\u00B2.',
+    brief: 'Milgrom\'s acceleration constant, observed \u2248 1.2\u00D710\u207B\u00B9\u2070 m/s\u00B2; cH\u2080/(2\u03C0) \u2248 1.04\u00D710\u207B\u00B9\u2070 at H\u2080 = 67.4 (~13% below).',
     explanation: 'In MOND, this is a fundamental constant. Synchronism writes it as cH\u2080/(2\u03C0) \u2014 but that is a dimensional rederivation of a numerical coincidence Milgrom himself noted in 1983 (a\u2080 \u2248 cH\u2080/6; the 2\u03C0 vs 6 difference is ~5%), not an independent derivation. The site\u2019s audited verdict is Reparametrization: the relation is real, shared with MOND-adjacent literature (McCulloch, Verlinde, Smolin), and predicts nothing MOND doesn\u2019t. (Glossary entry rewritten 2026-07-17 to match the audited framing \u2014 an earlier version called this \u201Cone of Synchronism\u2019s strongest results,\u201D which contradicted the landing page and Honest Assessment.)',
     learnMore: '/mond-unification',
   },

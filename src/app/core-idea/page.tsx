@@ -28,6 +28,42 @@ export default function CoreIdea() {
           C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </div>
 
+        <div className="card" style={{ marginTop: '1.5rem', padding: '1rem 1.25rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
+            <strong>tanh, in one picture.</strong> tanh is just an S-shaped curve &mdash; flat, then steep,
+            then flat again. Nothing happens at low density, a small change flips the behavior in the
+            middle, and past the knee more density changes almost nothing. That&apos;s the whole
+            &ldquo;dimmer switch.&rdquo;
+          </p>
+          <svg viewBox="0 0 560 240" role="img" aria-label="The S-shaped tanh curve: coherence C rises from 0 (sparse, independent) through a steep switch region to 1 (dense, collective) as density increases" style={{ width: '100%', height: 'auto' }}>
+            {/* axes */}
+            <line x1="50" y1="200" x2="530" y2="200" stroke="var(--color-dark-border, #374151)" strokeWidth="1" />
+            <line x1="50" y1="20" x2="50" y2="200" stroke="var(--color-dark-border, #374151)" strokeWidth="1" />
+            <text x="42" y="204" fill="#9ca3af" fontSize="11" textAnchor="end">0</text>
+            <text x="42" y="34" fill="#9ca3af" fontSize="11" textAnchor="end">1</text>
+            <text x="30" y="115" fill="#9ca3af" fontSize="12" textAnchor="middle" transform="rotate(-90 30 115)">coherence C</text>
+            <text x="290" y="228" fill="#9ca3af" fontSize="12" textAnchor="middle">density &#x03C1; (log scale &#x2192;)</text>
+            {/* rho_crit marker */}
+            <line x1="336" y1="30" x2="336" y2="200" stroke="#9ca3af" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" />
+            <text x="341" y="192" fill="#9ca3af" fontSize="10">&#x03C1;<tspan baselineShift="sub" fontSize="8">crit</tspan> &mdash; C &#x2248; 0.88 here: a saturation knee, not a midpoint</text>
+            {/* the curve: C = tanh(2·ln(1+rho/rho_crit)) on a log-density axis */}
+            <polyline points="60,200 106,199 152,197 198,189 244,168 267,146 290,115 313,79 336,50 359,36 382,31 428,30 520,30" fill="none" stroke="#8b5cf6" strokeWidth="2.5" strokeLinejoin="round" />
+            {/* midpoint dot */}
+            <circle cx="290" cy="115" r="4" fill="#8b5cf6" />
+            <text x="283" y="112" fill="#c4b5fd" fontSize="10" textAnchor="end">C = 0.5 at &#x2248; 0.32&#x00B7;&#x03C1;<tspan baselineShift="sub" fontSize="8">crit</tspan></text>
+            {/* region labels */}
+            <text x="140" y="172" fill="#9ca3af" fontSize="11">dim: sparse, independent (C &#x2248; 0)</text>
+            <text x="415" y="55" fill="#9ca3af" fontSize="11">bright: dense, collective (C &#x2248; 1)</text>
+            <text x="262" y="95" fill="#c4b5fd" fontSize="11" transform="rotate(-52 262 95)">the switch</text>
+          </svg>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.5rem 0 0' }}>
+            Drawn with &#x03B3; = 2 (the galaxy-scale pin &mdash; refuted on SPARC data, see the caveat
+            below) on a logarithmic density axis. Note the two honest markers: the curve&apos;s true
+            midpoint (C = 0.5) sits near 0.32&#x00B7;&#x03C1;<sub>crit</sub>, and at &#x03C1;<sub>crit</sub> itself
+            C &#x2248; 0.88 &mdash; &#x03C1;<sub>crit</sub> is a saturation knee, not a critical point.
+          </p>
+        </div>
+
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem', marginTop: '1.5rem' }}>
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>&#x03C1;</div>

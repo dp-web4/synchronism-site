@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 
@@ -53,6 +54,13 @@ export default function PhaseBoundaryVisualizer() {
           that grouping is now known to be misleading (the placements carry the formula&apos;s
           documented sign inversion: real BCS/BEC transitions are among the sharpest in nature, yet
           the formula files them at the flat end).
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          <strong>One more thing to know before reading the map:</strong> the N<sub>corr</sub> values
+          driving every placement (10&#x2077; for BCS, 17 for galaxies, &#x2026;) are <em>asserted, not
+          counted</em> &mdash; no independent counting procedure exists on any of the 17 scales (the{' '}
+          <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>derivations page</Link>{' '}
+          documents this). Treat the positions as the formula&apos;s claims, not as data.
         </p>
         <p>
           The three regimes of &#x03B3; map qualitatively different correlation structures.

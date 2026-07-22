@@ -67,6 +67,16 @@ export default function CoherenceExplorer() {
             It takes a density (&#x03C1;) and returns a coherence value between 0 (independent/quantum-like)
             and 1 (collective/classical-like).
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(139,92,246,0.07)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(139,92,246,0.4)' }}>
+            <strong>What this shows / what it gets wrong:</strong> the tool shows how the curve&apos;s
+            shape responds to its three parameters &mdash; that part is faithful. What the formula gets
+            wrong, and you should know before sliding: the &#x03B3; = 2/&#x221A;N<sub>corr</sub> sharpness
+            rule runs <em>backwards</em> against real condensed-matter physics (the most correlated
+            systems get the flattest curves; real BCS transitions are among nature&apos;s sharpest), and
+            the &#x201C;&#x03C1;<sub>crit</sub>&#x201D; slider marks a <em>saturation knee</em>, not the
+            curve&apos;s midpoint &mdash; at &#x03C1;<sub>crit</sub> the curve already reads C &#x2248; 0.88;
+            the true C = 0.5 midpoint sits near 0.32&#x00B7;&#x03C1;<sub>crit</sub>. Details in the caveats below.
+          </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(239,68,68,0.06)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(239,68,68,0.4)' }}>
             <strong>&#x26A0; Terminology note for physicists:</strong> &ldquo;Coherence&rdquo; here means <em>classical collective ordering</em> (C&nbsp;&#x2248;&nbsp;0 = independent/quantum-like; C&nbsp;&#x2248;&nbsp;1 = classically ordered). This is <em>anti-correlated</em> with <strong>quantum phase coherence</strong> as used in condensed-matter physics, where BEC/BCS condensates &mdash; the most quantum-coherent systems known &mdash; would sit at low C by this measure (due to their large N<sub>corr</sub>). The two axes are orthogonal: macroscopic quantum states are simultaneously quantum <em>and</em> collective. The site uses &ldquo;coherence&rdquo; in the ordering/classicality sense, not the off-diagonal-long-range-order sense.
           </p>

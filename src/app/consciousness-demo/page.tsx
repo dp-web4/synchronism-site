@@ -217,6 +217,21 @@ export default function ConsciousnessDemo() {
           <li>Species with demonstrably different C thresholds at the same density</li>
           <li>A calibration protocol mapping IIT-Φ or EEG phase to the C-axis (does not exist yet)</li>
         </ul>
+        <div style={{ background: 'rgba(56, 189, 248, 0.07)', border: '1px solid rgba(56, 189, 248, 0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)', marginTop: '1rem' }}>
+          <strong style={{ color: '#38bdf8' }}>The calibration target that already exists (added 2026-07-22):</strong>{' '}
+          &ldquo;no calibration procedure exists&rdquo; is true of the C-axis &mdash; but neuroscience
+          does have an empirically validated consciousness-threshold measurement this page should name:
+          the <strong>Perturbational Complexity Index</strong> (PCI, Casali et al. 2013), whose cutoff
+          PCI* = 0.31 was validated on 150 subjects across wakefulness, sleep, anesthesia, and
+          disorders of consciousness (Casarotto et al. 2016) with ~95% accuracy. That makes the gap
+          here <em>engageable, not just lamentable</em>: a C&rarr;PCI mapping would need (1) an
+          operational rule computing C from TMS-EEG response data, and (2) a demonstration that the
+          framework&apos;s predicted C threshold maps onto PCI* = 0.31 rather than being fit to it.
+          Until someone attempts that mapping &mdash; or shows why none can exist &mdash; the
+          consciousness sector&apos;s honest status is <em>untested against the one calibrated
+          instrument available</em>, which is a sharper statement than &ldquo;no calibration
+          exists.&rdquo; (Research-repo proposal: c_observable_calibration_gap.md.)
+        </div>
       </section>
 
       <RelatedConcepts currentPath="/consciousness-demo" />

@@ -260,7 +260,7 @@ export default function GalaxyPlotter() {
             Toy mass model: M_b = 47&middot;V_flat&#x2074; M&#x2609; (empirical BTFR, McGaugh 2011), exponential disk with each galaxy&apos;s observed scale length R_d, h = 0.3 kpc<br />
             Gray &ldquo;Newtonian&rdquo;: v_b(r) = &radic;(G&middot;M(&lt;r)/r), M(&lt;r) = M_disk&middot;[1 &minus; e^(&minus;r/R_d)(1+r/R_d)]<br />
             Violet SOLID &ldquo;Synchronism (real)&rdquo;: v(r) = &radic;(v_b&sup2; + [V_flat&middot;C(&#x03C1;(r))]&sup2;), C(&#x03C1;) = tanh(2&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub>+1)), &#x03C1;(r) = &#x03A3;(r)/2h, &#x03C1;<sub>crit</sub> = 0.029&middot;V_flat&sup2;<br />
-            Violet DOTTED (pre-2026-07-08 stand-in): v(r) = &radic;(v_toy&sup2; + [V_flat&middot;tanh(0.4&middot;r/2.5)]&sup2;), v_toy = 0.6&middot;V_flat&middot;&radic;(1&minus;e^(&minus;r/2.5))<br />
+            Violet DOTTED (old illustrative stand-in &mdash; what this page showed before 2026-07-08, kept for comparison): v(r) = &radic;(v_toy&sup2; + [V_flat&middot;tanh(0.4&middot;r/2.5)]&sup2;), v_toy = 0.6&middot;V_flat&middot;&radic;(1&minus;e^(&minus;r/2.5))<br />
             Green &ldquo;MOND&rdquo;: v(r) = v_b&middot;&radic;&#x03BD;(y), &#x03BD;(y) = &frac12; + &radic;(&frac14; + 1/y), y = g_N/a&#x2080;, g_N = v_b&sup2;/r (real simple-&#x03BD;)
           </div>
           The solid violet curve and the dotted one differ in exactly one ingredient: the coherence factor.
@@ -386,7 +386,7 @@ export default function GalaxyPlotter() {
             <line x1={pad.left + 20 - 8} y1={pad.top + 30} x2={pad.left + 20 + 8} y2={pad.top + 30} stroke="#8b5cf6" strokeWidth="2.5" />
             <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism &mdash; REAL C(&#x03C1;), &#x03B3;=2 (max C on this disk: {maxC.toFixed(3)} &mdash; boost never turns on)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#8b5cf6" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.7" />
-            <text x={pad.left + 30} y={pad.top + 49} fill="#8b5cf6" fontSize="10" opacity="0.8">Hand-tuned stand-in (tanh(radius) &mdash; pre-2026-07-08 display)</text>
+            <text x={pad.left + 30} y={pad.top + 49} fill="#8b5cf6" fontSize="10" opacity="0.8">Old illustrative curve (hand-tuned; kept for comparison)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />
             <text x={pad.left + 30} y={pad.top + 64} fill="#22c55e" fontSize="10">MOND (real simple-&#x03BD;, BTFR mass, no per-galaxy tuning)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 75} x2={pad.left + 20 + 8} y2={pad.top + 75} stroke="#6b7280" strokeWidth="1.5" strokeDasharray="3 2" />

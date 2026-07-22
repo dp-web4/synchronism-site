@@ -53,7 +53,7 @@ export default function FreemansLaw() {
           dimensional-bookkeeping match, not an independent derivation &mdash; see the caveat below and{' '}
           <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
           Derivations</Link>, which shows &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) is not a second, independent
-          check on a&#x2080; but the same &#8776;10% MOND-comparison gap propagated through a linear relation.
+          check on a&#x2080; but the same &#8776;13% MOND-comparison gap propagated through a linear relation.
         </p>
 
         <h2>The Derivation</h2>
@@ -114,7 +114,7 @@ export default function FreemansLaw() {
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           A &#8776;4% match is not independent confirmation: &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) is an exact algebraic
-          identity, so this number is the a&#x2080;-vs-Milgrom gap (&#8776;10%, see{' '}
+          identity, so this number is the a&#x2080;-vs-Milgrom gap (&#8776;13%, see{' '}
           <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>MOND Unification</Link>)
           propagated through a fixed linear relation, not a second derivation. Freeman&apos;s Law itself has
           been refined over the decades &mdash; there is a population of low surface brightness (LSB)

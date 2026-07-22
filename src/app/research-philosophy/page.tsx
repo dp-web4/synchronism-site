@@ -83,7 +83,10 @@ export default function ResearchPhilosophy() {
         </p>
 
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
-          <strong>MRH-relationship tags</strong> (preferred for in-flight work) — describe how a claim sits in the current research inventory:
+          <strong>MRH-relationship tags</strong> (MRH = <em>Markov Relevancy Horizon</em>, the framework&apos;s
+          term for the bounded context a system &mdash; or here, a claim &mdash; is currently relevant within;
+          see the <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>MRH page</Link>). Preferred
+          for in-flight work &mdash; these describe how a claim sits in the current research inventory:
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>

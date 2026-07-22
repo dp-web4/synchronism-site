@@ -61,6 +61,14 @@ export default function EquationWalkthrough() {
           Note: tanh and &#x03B3;&nbsp;=&nbsp;2/&#x221A;N<sub>corr</sub> are motivated choices, not derived results
           (there is no derivation to walk through &mdash; only choices to examine). See the caveat blocks in each step.
         </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', padding: '0.5rem 0.75rem', background: 'rgba(139,92,246,0.07)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(139,92,246,0.4)' }}>
+          <strong>Read this before Step 1:</strong> one of the terms you are about to tour is
+          known-broken. The &#x03B3; = 2/&#x221A;N<sub>corr</sub> rule is <em>sign-inverted</em> against
+          real finite-size scaling &mdash; more correlated systems should sharpen transitions, but this
+          formula flattens them (it files BCS superconductors, among nature&apos;s sharpest transitions,
+          at the flattest end). The step for &#x03B3; repeats this in its honesty note; it is stated here
+          first so you don&apos;t absorb the formula as-is and get the correction only at the end.
+        </p>
 
         {/* Variable glossary — teach before walking */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-violet)' }}>

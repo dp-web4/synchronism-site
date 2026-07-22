@@ -124,7 +124,7 @@ export default function WhySynchronism() {
             <h3>Galaxy Rotation Curves</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
               Tested against 14,760 galaxies (SPARC + ALFALFA-SDSS).
-              a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 10% &mdash; but this result is shared with MOND and other frameworks.
+              a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 13% &mdash; but this result is shared with MOND and other frameworks.
               The environment-dependent scatter prediction (TEST-03/05) has a corrected verdict as of 2026-07-15:
               R²=0.14 is a real, significant effect (p=5&times;10⁻⁶) but on the SPARC-scale sample, not the
               14,585-galaxy ALFALFA-SDSS one this page previously attributed it to — and it is morphology, not

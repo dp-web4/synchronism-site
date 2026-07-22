@@ -86,6 +86,9 @@ export default function Home() {
             &#x03C1; reduces to the ordinary local mass/energy or number density &mdash; the broader
             &ldquo;presence&rdquo; reading has never been operationalized, so treat the physics
             definition as the one under test.{' '}
+            The relevancy boundary is the <strong>MRH (Markov Relevancy Horizon)</strong> &mdash; the
+            bubble of nearest neighbors that actually influence a system; everything outside it can be
+            ignored.{' '}
             <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>See MRH &rarr;</Link>
           </p>
         </div>
@@ -177,7 +180,8 @@ export default function Home() {
               <strong style={{ color: '#f59e0b' }}>Methodology note:</strong>{' '}
               This site was developed via ~3,300 A2ACW (AI-to-AI Adversarial Collaboration Workshop) sessions (self-reported count; not independently regenerable &mdash; the archive&apos;s own tallies disagree by hundreds) &mdash; AI agents stress-testing each other&apos;s claims. The adversarial agents share the same training distribution and{' '}
               <strong>cannot substitute for out-of-distribution evaluation by domain experts.</strong>{' '}
-              The <strong>1.4% internal-consistency survival rate</strong> (not a discovery rate &mdash; see methodology) and public failure log are the protocol&apos;s honest outputs.
+              The <strong>1.4% internal-consistency survival rate</strong> (&#x2248;47 candidate claims out of ~3,300 sessions survived the protocol&apos;s own consistency checks &mdash; not a discovery rate; denominator and breakdown on{' '}
+              <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>) and public failure log are the protocol&apos;s honest outputs.
               The decisive number: <strong>0 of 6 &ldquo;Validated&rdquo; claims survived expert audit</strong> (all demoted to Reparametrization or Failed).
               Volume (~3,300 sessions) is not evidence; the 0/6 retention rate is.{' '}
               <strong style={{ color: '#f59e0b' }}>Why publish a theory that didn&apos;t pan out?</strong>{' '}

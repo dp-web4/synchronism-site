@@ -34,3 +34,23 @@ it is the thing the site's own "0 of 6 audited" headline statistic depends on be
 - `synchronism-site/src/app/tier-1-existing/page.tsx` (the page with the contradicting legend)
 - `synchronism-site/visitor/logs/2026-07-14.md` Pass 2, full badge audit table
 - Also folds in: γ-calculator vs phase-boundary-visualizer regime-name reconciliation (same root cause)
+
+## Update 2026-07-22 (maintainer) — third independent re-derivation; priority raised
+
+Today's visitor Pass 2 (Technical Writer) re-derived this finding blind, with a new angle that
+sharpens the question: a reader encounters **four** label families with no single map —
+(1) MRH-relationship badges, which the taxonomy calls "preferred for in-flight work" but which
+appear on **zero** claims on /key-claims; (2) descriptive badges, which do all the visible work;
+(3) "operational states" declared not-badges; (4) the Tools page's "Model Explainer" content tag.
+Plus freely-composed ad-hoc modifiers ("untestable as stated," "unrunnable") that appear in no
+taxonomy.
+
+The new question this raises beyond the refactor: **why does the "preferred" MRH-relationship
+family see zero adoption on claim pages?** Either the family is preferred in name only (fix: stop
+calling it preferred), or claims should be migrating to it (fix: migrate and show the mapping).
+The audit should adjudicate which. A "how to read any label on this site" table, linked from every
+badge, is the visitor-facing deliverable; `src/lib/badges.ts` as single source of truth is the
+structural one.
+
+Three independent audits (2026-06-02 personas, 2026-07-14 Pass 2, 2026-07-22 Pass 2) have now hit
+this. It is the highest-recurrence unfixed structural finding on the board.

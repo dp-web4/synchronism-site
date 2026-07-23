@@ -1,1 +1,17 @@
 Starting Synchronism Maintainer Session at Thu Jul 23 06:00:01 PDT 2026
+Session complete — everything committed and pushed (site `84f35fc`, research repo `889d3d11`; Vercel auto-deploying). Here's the TLDR.
+
+**Infrastructure first:** the 06:00 maintainer slot died again today after printing only its header — that's the **fifth consecutive failure**; I ran as the recovery session and updated the SESSION_FOCUS alert. The 05:00 visitor slot is completing fine, so the failure window is specific to ~06:00. Operator action still stands: check that slot's credit budget or move it later.
+
+**WAKE outcome — a research-direction find, not just site friction:** Pass 4 (external-researcher persona) spotted that the locality no-go — the *one* artifact the program stakes novelty on — has never been prior-art-walked against Milgrom's surface-density literature for a prior quantified instance. I filed a proposal with a two-way pre-fixed verdict rule to `Synchronism/Research/proposals/` (pushed); it gates the preprint strategy decision that's waiting on you. Either outcome helps: prior art found → demote before investing preprint effort; not found → the artifact gains the audited prior-art line a referee will demand.
+
+**Main site work (build passed, 92 pages):**
+- **Explorer 07-22 P1/P2 drained**: `/coherence-function` compander sentence corrected (arctan refuted by execution, "logistic" ≡ tanh) with the full executed 10-form selection table; the γ=0.49 mechanism sentence (q = 2γ Newtonian-return exponent) added to `/galaxy-rotation` and `/gamma-calculator`.
+- **Status-lifecycle verbs documented** on `/honest-assessment` (EXECUTED/ADJUDICATED/CLOSED/WITHDRAWN/RETIRED/RECLASSIFIED/Ceiling-Exceeded + transition rules) — this was the fourth independent re-derivation of that gap; the content half is now drained, the `badges.ts` structural refactor remains open.
+- **MOND finally explained**: glossary entry rewritten at casual level (also fixing a fossil "Synchronism derives a₀" framing), first-use gloss on the beginner path, acronym key box on `/tier-1-existing`.
+- **Tools stopped outrunning their caveats**: the Phase Boundary Visualizer is reframed as an inversion *lesson* (banner + live per-regime reality-check lines), the galaxy-plotter's hand-tuned stand-in is recolored violet→amber and labeled "Illustration only — NOT computed from the theory", the γ-calculator got its missing live S-curve, and PBV/consciousness-demo are retagged "Artifact Lesson" on the tools index.
+- **Currency and honesty**: AeST added to the landscape table (which is now date-stamped like refutations), "no field equation" promoted to the top of the honest assessment, the preferred-frame 11–28-OOM exclusion now sits beside the "4 refutations" scoreboard, and the landing page no longer says "the equation fits galaxy rotation" (it has no derived link — the fits run on MOND's machinery).
+
+**Persona claims verified false before fixing** (per the standing rule): Pass 4's "Chae/Banik never cited" is a WebFetch truncation artifact — the TEST-02 card has cited both camps since 06-12. I added a new mechanism note to memory: the longest, most complete status cards are exactly the ones that generate false "X is never mentioned" findings.
+
+**Seeded for the explorer**: the Milgrom prior-art audit (HIGH) and an EFE-corrected RAR rerun that also asks whether the ~8σ transition residual is framework-independent structure — the only candidate *positive* empirical finding on the board.

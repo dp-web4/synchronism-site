@@ -1,1 +1,20 @@
 Starting Synchronism Explorer Session at Thu Jul 23 08:00:01 PDT 2026
+Session complete. Here's the summary:
+
+## Explorer session 2026-07-23 — Milgrom prior-art audit EXECUTED, verdict: Branch 2 (no prior quantification found)
+
+**WAKE decision.** Two HIGH topics competed; I chose the Milgrom surface-density prior-art audit over the Cassini Q₂ squeeze because it gates dp's preprint decision, blocks the queued no-go writeup, and targets the program's known top failure mode (novelty claims dying on unwalked prior art — the A2ACW lesson). The dirty tree at WAKE was benign (supervisor GitNexus bumps + this session's own launch log).
+
+**The walk.** With NotebookLM auth still expired, I read 13 sources on primaries via curl + pdftotext: the 1983 trilogy (1983a via ADS OCR; 1983b's §III via three agreeing secondary witnesses since its scan is image-only), astro-ph/0510117 in full, McGaugh 2004, Sanders & McGaugh 2002, Famaey & McGaugh 2012, Milgrom's Scholarpedia entry, Milgrom 2009b, Scarpa 2006, Banik & Zhao 2022, Lelli et al. 2017, and Stiskalek & Desmond 2023.
+
+**The result.** The tested-variable record of the entire literature is closed, and local volumetric density is not in it. Every published organizing-variable discrimination — from Milgrom 1983 through the 2023 machine-learning feature sweep — tests acceleration against radius, orbital frequency, size, or *surface* density. The phrase "volumetric density" never occurs in an organizing-variable role; Stiskalek & Desmond's feature table (three surface densities, no ρ) is the nearest miss. Per the pre-registered verdict rule, the no-go's citability **strengthens** and it gains the audited prior-art line a referee will demand.
+
+**Two enrichments the walk surfaced:**
+1. **A required credit line**: the site's V⁻² sign statement instantiates a 1983 argument *template* — Milgrom excluded length-keyed modifications for forcing Tully-Fisher slope 2 instead of 4, and Sanders 1986 stated the direction form. Crediting the template strengthens the claim (40-year pedigree) and pre-empts the one referee objection.
+2. **Two imprecise citation glosses on /for-researchers**: astro-ph/0510117's non-locality theorem is *temporal* (modified-inertia trajectory functionals), not the *spatial* enclosed-mass non-locality the no-go uses; and Lelli et al. tested surface columns, never volumetric ρ.
+
+**Honest holes carried**: Milgrom 1983b's primary scan remains unread (image-only, no OCR available — a ~15-page manual read is the belt-and-braces step), and the chameleon/symmetron screening vein needs its own walk only if the writeup claims priority for the *diagnosis* rather than the quantification.
+
+**Shipped**: per-paper audit in `Synchronism/explorations/` + dated gate-cleared note in the preprint strategy doc (pushed, 7803d0cc); site finding with referee-ready maintainer wording + session log + SESSION_FOCUS entry (pushed, 0e0d72a); topic archived; memory updated. The `locality-nogo-standalone-writeup` topic is now unblocked. Self-seeded follow-up: run ρ(r) as an actual feature in the Stiskalek & Desmond framework on SPARC — converting "never tested" into a measured number.
+
+**So what?** The program's last standing novelty claim now carries an executed, pre-registered prior-art audit — and passed it by finding its own method's pedigree rather than a prior occupant. That's the strengthening branch the verdict rule registered before the search began.

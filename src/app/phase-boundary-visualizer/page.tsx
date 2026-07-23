@@ -12,7 +12,8 @@ const regions = [
     color: '#10b981',
     range: [0, 0.6],
     systems: ['Superconductors', 'BEC', 'Superfluids', 'Cooper pairs', 'Quantum computers'],
-    physics: 'Many correlated particles (large N_corr, small γ) — the strongly correlated regime. BEC, BCS superconductors, and superfluids sit here because they have enormous N_corr, giving them very small γ (BCS: N_corr = 10⁷, the γ Calculator preset, giving γ = 2/√10⁷ ≈ 6×10⁻⁴). Important: "collective" in the C-axis sense (C→1) is separate from "large N_corr" here — small γ gives a nearly flat tanh curve, so C stays near 0 at physically accessible densities despite large N_corr. Direction caveat: real BCS/BEC transitions are among the sharpest in nature, yet this formula assigns them the flattest curves — the correlation→sharpness direction is inverted (audited-negative; see γ Calculator).',
+    physics: 'Many correlated particles (large N_corr, small γ) — the strongly correlated regime. BEC, BCS superconductors, and superfluids sit here because they have enormous N_corr, giving them very small γ (BCS: N_corr = 10⁷, the γ Calculator preset, giving γ = 2/√10⁷ ≈ 6×10⁻⁴). Important: "collective" in the C-axis sense (C→1) is separate from "large N_corr" here — small γ gives a nearly flat tanh curve, so C stays near 0 at physically accessible densities despite large N_corr.',
+    realityCheck: 'Reality check: the systems in this bin — BCS superconductors, BECs, superfluids — undergo transitions that are among the SHARPEST in nature. The formula just told you they are the flattest. You are looking directly at the inversion; that is the finding.',
   },
   {
     id: 'boundary',
@@ -21,6 +22,7 @@ const regions = [
     range: [0.6, 1.4],
     systems: ['Liquid water', 'Enzymes', 'Phase transitions', 'Chemical bonds', 'Neural firing', 'Consciousness threshold'],
     physics: 'The regime where collective and independent behavior balance. Systems whose estimated γ falls here include liquid water, enzymes, and neural dynamics. Note: C(ρ) itself is a smooth compander with no critical point — "boundary" here means a regime boundary in γ, not a mathematical phase boundary. The consciousness threshold conjecture (C ≈ 0.50) maps to this regime, though D and S remain undefined — see hard-problem page.',
+    realityCheck: 'Reality check: no shared transition physics is known to connect the systems grouped here — water, enzymes, and neural firing land together because of how their N_corr was estimated, not because of any measured common behavior at γ ≈ 1. The grouping is the counting convention, visualized.',
   },
   {
     id: 'quantum',
@@ -29,6 +31,7 @@ const regions = [
     range: [1.4, 4.0],
     systems: ['Ideal gases', 'Single atoms', 'Few-particle systems', 'Uncorrelated matter'],
     physics: 'Few correlated particles (small N_corr, large γ) — the single-particle / uncorrelated regime. Individual behavior dominates; rapid decoherence. γ = 2 (N_corr = 1) is the value the framework asserts for galaxies — but the SPARC RAR ensemble test rejected γ = 2 at ΔBIC = +184; the free fit gives γ ≈ 0.49, which back-implies N_corr ≈ 17 and contradicts the N_corr = 1 premise. The galaxy marker below is shown at the asserted value with that refutation flagged.',
+    realityCheck: 'Reality check: an ideal gas has no phase transition at all — yet the formula assigns it the sharpest curve on the map: maximal sharpness with nothing to be sharp about. And the galaxies the framework pins here at γ = 2 were refuted on SPARC data at ΔBIC = +184.',
   },
 ];
 
@@ -48,6 +51,15 @@ export default function PhaseBoundaryVisualizer() {
       <h1>Phase Boundary Visualizer</h1>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <div style={{ background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.95rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#ef4444' }}>This tool animates a refuted relation — on purpose.</strong>{' '}
+          The &#x03B3; = 2/&#x221A;N<sub>corr</sub> map you are about to drag is audited-negative: it
+          predicts the <em>opposite</em> of real condensed-matter behavior. The lesson is the inversion
+          itself. As you move the slider, each regime card carries a <strong>reality check</strong> line —
+          your task is to catch the formula being wrong at every stop, not to learn its placements.
+          (Reframed 2026-07-23: an earlier version presented the map first and the inversion as a caveat;
+          reviewers kept reporting that the animation out-taught the caveat.)
+        </div>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           <strong style={{ color: 'var(--color-accent-blue)' }}>What this tool is for:</strong> drag
           the slider to see which physical systems the &#x03B3; formula groups together &mdash; and why
@@ -119,7 +131,7 @@ export default function PhaseBoundaryVisualizer() {
             <line x1={30 + (0.85 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.85 / 4.0) * 540} y2={barY + barH + 25} stroke="#f59e0b" strokeWidth="1" />
             <text x={30 + (0.85 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#f59e0b" fontSize="8">water/enzymes</text>
             <line x1={30 + (0.49 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.49 / 4.0) * 540} y2={barY + barH + 25} stroke="#ef4444" strokeWidth="1" />
-            <text x={30 + (0.49 / 4.0) * 540} y={barY + barH + 46} textAnchor="middle" fill="#ef4444" fontSize="8">γ=0.49 (galaxies, SPARC fit)</text>
+            <text x={30 + (0.49 / 4.0) * 540} y={barY + barH + 46} textAnchor="middle" fill="#ef4444" fontSize="8">γ=0.49 (galaxies, SPARC fit — N_corr≈17 back-solved from this fit, not counted)</text>
             <line x1={30 + (2.0 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (2.0 / 4.0) * 540} y2={barY + barH + 25} stroke="#38bdf8" strokeWidth="1" />
             <text x={30 + (2.0 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#38bdf8" fontSize="8">γ=2 (ideal gas; galaxies asserted — refuted ΔBIC=+184)</text>
 
@@ -163,6 +175,9 @@ export default function PhaseBoundaryVisualizer() {
           <h3 style={{ color: activeRegion.color }}>{activeRegion.label}</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
             {activeRegion.physics}
+          </p>
+          <p style={{ color: '#ef4444', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(239,68,68,0.08)', borderRadius: '4px' }}>
+            {activeRegion.realityCheck}
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
             {activeRegion.systems.map(s => (

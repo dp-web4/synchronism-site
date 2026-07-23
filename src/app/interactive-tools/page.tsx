@@ -42,15 +42,15 @@ const coreTools = [
   {
     title: 'Phase Boundary Visualizer',
     href: '/phase-boundary-visualizer',
-    desc: 'Drag the γ slider and see where familiar systems (ideal gas, water, BCS superconductor, galaxies) sit along the γ axis (transition sharpness). Note: the axis here is γ, not coherence C — coherence also depends on ρ. A full γ–ρ phase diagram is not yet implemented.',
-    tags: ['Intermediate'],
+    desc: 'Drag the γ slider and catch a refuted formula being wrong at every stop — the tool now teaches the audited sign inversion as its lesson (real BCS/BEC transitions are among nature\'s sharpest; the formula files them at the flat end). Each regime card carries a live reality-check line. Note: the axis here is γ, not coherence C.',
+    tags: ['Artifact Lesson'],
     epistemic: 'core' as EpistemicStatus,
   },
   {
     title: 'Equation Anatomy',
     href: '/equation-walkthrough',
     desc: 'Step-by-step breakdown of C(ρ) = tanh(γ·ln(ρ/ρcrit + 1)). Each step shows one equation component, its physical motivation, and why the specific functional form was chosen (not derived).',
-    tags: ['Conceptual'],
+    tags: ['Beginner'],
     epistemic: 'core' as EpistemicStatus,
   },
   {
@@ -66,8 +66,8 @@ const speculativeTools = [
   {
     title: 'Consciousness Threshold Demo',
     href: '/consciousness-demo',
-    desc: 'Eight approaches to coherence-based consciousness all converge near C ≈ 0.50 — a geometric artifact: all eight share the tanh assumption and cluster at its inflection by construction. The threshold is untestable as stated: no calibration to EEG/fMRI/IIT data exists, and the one cited test (gnosis-research S63) measured a different variable. This tool illustrates a mathematical property of the sigmoid, not a finding about consciousness.',
-    tags: ['Advanced'],
+    desc: 'Watch 8 "independent" approaches converge on C ≈ 0.50 — because they share one assumption. The convergence is geometric, not empirical: any approach keyed to the midpoint of a [0,1)-bounded range lands near 0.50 by construction. The threshold is untestable as stated (no calibration to EEG/fMRI/IIT/PCI* exists; the one cited test measured a different variable). An artifact lesson, not a finding about consciousness.',
+    tags: ['Artifact Lesson'],
     epistemic: 'speculative' as EpistemicStatus,
   },
 ];
@@ -89,7 +89,10 @@ export default function InteractiveTools() {
         <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
           documented descriptive badges
         </Link>{' '}
-        — no tool here is certified correct.
+        — no tool here is certified correct. Level tags use one scale — Beginner / Intermediate /
+        Advanced — plus <strong>Artifact Lesson</strong> for tools kept deliberately to demonstrate a
+        documented failure (a sign inversion, a geometric convergence) rather than to teach a working
+        relation. (Scale unified 2026-07-23; a &ldquo;Conceptual&rdquo; tag previously mixed levels.)
       </p>
       <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2rem', fontSize: '0.8rem' }}>
         {Object.entries(statusStyle).map(([key, s]) => (

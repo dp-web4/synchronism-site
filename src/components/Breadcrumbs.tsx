@@ -7,6 +7,13 @@ interface BreadcrumbsProps {
   currentPath: string;
 }
 
+// Category crumbs link to a hub page when one exists (visitor 2026-07-23:
+// an unlinked "Getting Started" crumb read as a phantom hierarchy level).
+const categoryHubs: Record<string, string> = {
+  'Getting Started': '/getting-started',
+  'Interactive Tools': '/interactive-tools',
+};
+
 export default function Breadcrumbs({ currentPath }: BreadcrumbsProps) {
   const category = getCategory(currentPath);
   const pageInfo = getPageInfo(currentPath);
@@ -40,7 +47,11 @@ export default function Breadcrumbs({ currentPath }: BreadcrumbsProps) {
           <>
             <li style={{ color: 'var(--color-text-muted)' }} aria-hidden="true">/</li>
             <li>
-              <span style={{ color: 'var(--color-text-secondary)' }}>{category}</span>
+              {categoryHubs[category] ? (
+                <Link href={categoryHubs[category]} style={{ color: 'var(--color-text-secondary)' }}>{category}</Link>
+              ) : (
+                <span style={{ color: 'var(--color-text-secondary)' }}>{category}</span>
+              )}
             </li>
           </>
         )}

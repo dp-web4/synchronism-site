@@ -247,10 +247,20 @@ export default function Home() {
               Because this is what testing an idea in public looks like &mdash; you get to watch a
               theory be taken apart honestly: which claims collapsed into known physics, which died
               against data, and what that rules out for <em>any</em> theory of the same shape. The
-              autopsy is the product. In one sentence: the equation fits galaxy rotation &mdash; but
-              only as well as MOND, an existing 40-year-old idea, and never better. What would count
+              autopsy is the product. In one sentence: the headline equation has no derived link to
+              galaxy rotation at all &mdash; the fits on this site run on the standard machinery of
+              MOND, an existing 40-year-old rival, and everywhere the equation&apos;s own variants
+              genuinely differed from MOND, the data killed them. What would count
               as a confirmation is a prediction that <em>differs</em> from MOND and &Lambda;CDM and
               wins; no test currently on the books can deliver that.
+            </p>
+            <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', margin: '0.5rem 0 0' }}>
+              <strong>One count the scoreboard doesn&apos;t capture:</strong> the &ldquo;4 refutations&rdquo; counts
+              only tests <em>executed</em> against registered criteria. Separately, the framework&apos;s
+              preferred-frame (absolute-time) sector is excluded at face value by <em>existing</em> precision
+              measurements — by 11 to 28 orders of magnitude — unless a protection mechanism nobody has
+              exhibited exists. See{' '}
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
             </p>
             <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
               Badges used below:{' '}

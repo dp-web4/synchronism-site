@@ -301,7 +301,8 @@ export default function A2ACW() {
               submitted to vocabulary-asymmetry audit. Result: 0/6 passed — all were flagged as potential reparametrizations.
               Discrimination relies entirely on unautomated novelty judgment, not protocol mechanics.
               <strong> Sample-size caveat:</strong> n=6 gives a wide binomial confidence interval on the true
-              false-positive rate — this is not a tight bound. The test is also partly over-determined: every
+              false-positive rate — the 95% (Clopper&ndash;Pearson) interval on 0/6 extends up to ~0.46, so
+              even &ldquo;flags everything&rdquo; is under-powered as stated; this is not a tight bound. The test is also partly over-determined: every
               real discovery sits atop decades of prior art, so &ldquo;flagged as reparametrization&rdquo; is
               expected to some degree by construction, not purely a protocol failure. The qualitative conclusion
               (retrieval aid, not detector) is likely right; the 0/6 precision is oversold relative to n=6.

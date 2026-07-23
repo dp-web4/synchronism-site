@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
+import TermTooltip from '@/components/TermTooltip';
 
 export default function WhySynchronism() {
   return (
@@ -124,7 +125,11 @@ export default function WhySynchronism() {
             <h3>Galaxy Rotation Curves</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
               Tested against 14,760 galaxies (SPARC + ALFALFA-SDSS).
-              a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 13% &mdash; but this result is shared with MOND and other frameworks.
+              a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 13% &mdash; but this result is shared
+              with <TermTooltip term="MOND">MOND</TermTooltip> and other frameworks.
+              (<strong>MOND</strong>, in one line: a 1983 rival idea that explains fast-spinning galaxy
+              edges by tweaking gravity itself instead of adding invisible dark matter — it is the
+              benchmark Synchronism keeps being compared to, and losing to, throughout this site.)
               The environment-dependent scatter prediction (TEST-03/05) has a corrected verdict as of 2026-07-15:
               R²=0.14 is a real, significant effect (p=5&times;10⁻⁶) but on the SPARC-scale sample, not the
               14,585-galaxy ALFALFA-SDSS one this page previously attributed it to — and it is morphology, not

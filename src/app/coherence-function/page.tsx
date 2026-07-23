@@ -121,13 +121,23 @@ export default function CoherenceFunction() {
           <li><strong>Handles extremes</strong>: &#x03C1; &rarr; 0 gives C &rarr; 0, &#x03C1; &rarr; &infin; gives C &rarr; 1</li>
         </ul>
         <p>
-          Several compander functions satisfy all four constraints: logistic, erf, arctan, Hill, and tanh.
+          Several compander functions satisfy the four qualitative constraints — but as of 2026-07-22 the
+          family has been put to data, and the constraints turn out to be incomplete. Fitting ten forms to
+          the real SPARC radial-acceleration relation (2,807 points), <strong>SPARC refutes three members
+          that pass all four qualitative constraints</strong> — arctan-log (&#x0394;BIC +46.7), algebraic-log
+          (+23.8), Gompertz (+58.0) — on <em>asymptotic-rate</em> grounds the qualitative list never
+          mentions. Among the survivors (tanh, erf-log, Hill, exponential-&#x03BD;) the data cannot
+          distinguish (mutual &#x0394;BIC &le; 8.9), and tanh finishes <em>last</em> of the four.
+          (&ldquo;Logistic&rdquo; is not a distinct member: the logistic sigmoid applied to the log-argument
+          is identically tanh.) See the executed selection table below.
           tanh is the chosen form, motivated historically by its appearance in the Ising mean-field
           self-consistency equation m&nbsp;=&nbsp;tanh(&beta;Jzm) — the same shape. <strong>However, Synchronism&apos;s
           C(&#x03C1;) is not the Ising equation.</strong> The Ising result is a self-consistency loop where m
           appears on both sides. C(&#x03C1;) evaluates directly with no feedback loop — &#x03C1; goes in, C
           comes out. The tanh shape is <em>motivated</em> by the Ising analogy, not derived from it;
-          it is a phenomenological choice from the compander family (μ-law, Hill, logistic, tanh), not the uniquely forced form.
+          it is a phenomenological choice from the compander family, not the uniquely forced form — confirmed
+          by execution: not uniquely forced, and not even the family&apos;s best member, though inside the
+          indistinguishability band.
           <strong>Empirical caveat:</strong> Landau-universality critical exponents
           (&#x03B2;, &#x03BD;, &#x03B1;, &#x03B4;, &#x03B7;) are off by ~2&times; in practice — the Landau analogy
           is motivational, not an accurate prediction of universality class. See{' '}
@@ -142,6 +152,42 @@ export default function CoherenceFunction() {
           &ldquo;phase transition&rdquo; is a loose description, not a literal one. Each system has its own
           &#x03C1;<sub>crit</sub>, so what is universal is the <em>form</em> of the crossover, not its location.
         </p>
+
+        <div style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1.5rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: 'var(--color-accent-violet)' }}>Form selection, executed (2026-07-22).</strong>{' '}
+          Ten compander forms fit to the real SPARC RAR (2,807 points, same pipeline that produced the
+          &#x03B3;=2 kill, reproduced at +184.0 as a sanity check). Verdict rule pre-fixed before running
+          (&ldquo;privileged&rdquo; = beat every same-parameter-count member by &#x0394;BIC &gt; 10):
+          <table style={{ width: '100%', marginTop: '0.6rem', marginBottom: '0.6rem', borderCollapse: 'collapse', fontSize: '0.84rem' }}>
+            <thead>
+              <tr style={{ borderBottom: '1px solid rgba(139,92,246,0.3)', textAlign: 'left' }}>
+                <th style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Form</th>
+                <th style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Best shape</th>
+                <th style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>RMS (dex)</th>
+                <th style={{ padding: '0.25rem 0' }}>&#x0394;BIC vs McGaugh &#x03BD;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>generalized &#x03BD;-&#x03B4;</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>&#x03B4;=0.44</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1435</td><td style={{ padding: '0.2rem 0' }}>&minus;1.8</td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>Hill n=1 (MOND &ldquo;simple&rdquo; &#x03BC;)</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>pinned</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1437</td><td style={{ padding: '0.2rem 0' }}>&minus;0.7</td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>erf-log, free &#x03B3;</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>&#x03B3;=0.39</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1435</td><td style={{ padding: '0.2rem 0' }}>+1.5</td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>Hill, free n</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>n=0.975</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1437</td><td style={{ padding: '0.2rem 0' }}>+5.9</td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}><strong>tanh-log, free &#x03B3; (this site&apos;s form)</strong></td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>&#x03B3;=0.489</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1437</td><td style={{ padding: '0.2rem 0' }}>+7.1</td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>algebraic-log</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>&#x03B3;=0.66</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1441</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#ef4444' }}>+23.8 (refuted)</strong></td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>arctan-log</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>&#x03B3;=2.15</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1447</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#ef4444' }}>+46.7 (refuted)</strong></td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>Gompertz</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>n=0.61</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1450</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#ef4444' }}>+58.0 (refuted)</strong></td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>tanh-log, &#x03B3;=2 pinned (the framework&apos;s asserted value)</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>pinned</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1485</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#ef4444' }}>+184.0 (refuted)</strong></td></tr>
+            </tbody>
+          </table>
+          What the data actually selects is the pair of <em>asymptotic rates</em> — deep-MOND slope
+          &#x03BC; &#x221D; y, and a return to Newton at least power-law fast — not any particular sigmoid.
+          The three refuted members fail at the edges (Gompertz vanishes too fast at low y; arctan-log and
+          algebraic-log return to Newton only as powers of 1/ln y). Between any two members with acceptable
+          asymptotics, SPARC is silent. So the honest statement is two-sided: <strong>tanh carries no
+          statistical content (form-selection null)</strong>, and <strong>the family is not degenerate
+          either</strong> — the data discriminates, just not in tanh&apos;s favor. Full table and scripts:{' '}
+          <code style={{ fontSize: '0.8rem' }}>explorer/findings/compander-family-selection-executed-tanh-not-privileged.md</code>.
+        </div>
 
         <h3>3. Why log?</h3>
         <p>

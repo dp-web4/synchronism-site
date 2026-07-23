@@ -240,7 +240,12 @@ export default function CoreIdea() {
           expansion vs. mean-field &#x00BD; &mdash; but &#x03B2;<sub>eff</sub> = 1 is a tautology for any
           analytic function vanishing at the origin, not a measurement.) That is the diagnostic result
           that rules out C(&#x03C1;) as a Landau-theory continuum
-          order parameter &mdash; a category error, not a near miss. See{' '}
+          order parameter &mdash; a category error, not a near miss. <strong>The cost of this dismissal,
+          stated where it is made (added 2026-07-23):</strong> abandoning criticality means abandoning
+          universality classes entirely &mdash; so every &ldquo;phase transition&rdquo; phrasing elsewhere
+          on this site is decorative vocabulary, not physics. The compander reframing absorbs this
+          honestly, but the trade should be visible: no critical point &rArr; no universality &rArr; no
+          Landau machinery to borrow authority from. See{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</Link>.
         </div>
       </section>

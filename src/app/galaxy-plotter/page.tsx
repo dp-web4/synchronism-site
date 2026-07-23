@@ -166,11 +166,12 @@ export default function GalaxyPlotter() {
           puzzle. As of 2026-07-08 this page also renders the framework&apos;s <em>actual</em> failure
           instead of narrating it: the solid violet curve is the real C(&#x03C1;) evaluated on a disk
           density profile — it hugs the baryon line and never fills the gap, because C never gets
-          anywhere near its knee. The dotted violet curve is the hand-tuned stand-in this page used
-          to show. The green curve is now MOND&apos;s real simple-&#x03BD; interpolating function on a
+          anywhere near its knee. The dotted amber curve is the hand-tuned stand-in this page used
+          to show (recolored from violet 2026-07-23 so the theory and the illustration can&apos;t be
+          confused). The green curve is now MOND&apos;s real simple-&#x03BD; interpolating function on a
           toy mass model whose only inputs (V<sub>flat</sub>, disk scale length) are observed
           quantities — nothing is fitted to the dots.{' '}
-          <strong>Why two violet curves?</strong> The dotted one is what a curve <em>would</em> need to
+          <strong>Why a second (amber) curve?</strong> The dotted one is what a curve <em>would</em> need to
           look like to fit the data — drawn by hand, not computed. The solid one is what the equation
           actually produces. Showing both is the point: the gap between them <em>is</em> the failure.
         </div>
@@ -192,7 +193,7 @@ export default function GalaxyPlotter() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '-0.5rem' }}>
           Select a SPARC galaxy. The plot shows five things: what visible matter predicts (dashed gray),
           what we observe (dots), what Synchronism&apos;s real equation gives (violet solid — it fails),
-          the hand-tuned stand-in formerly shown (violet dotted), and what MOND gives (green).
+          the hand-tuned stand-in formerly shown (amber dotted — illustration only), and what MOND gives (green).
           Notice that the <em>stand-in</em> and MOND nearly overlap — the framework&apos;s own{' '}
           <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}
           labels this a <em>reparametrization</em> &mdash; plain words: the same curve wearing a
@@ -241,14 +242,14 @@ export default function GalaxyPlotter() {
           <strong>Reading this plot:</strong>{' '}
           <span style={{ color: 'var(--color-text-secondary)' }}>
             In plain terms: the gray line sagging below the dots is the dark matter puzzle. The solid
-            violet line — the framework&apos;s real equation — fails to fix it. The dotted violet line that
+            violet line — the framework&apos;s real equation — fails to fix it. The dotted amber line that
             used to be shown here was drawn to fit, not computed from the theory.
           </span>
           <ul style={{ margin: '0.4rem 0 0', color: 'var(--color-text-secondary)', paddingLeft: '1.2rem' }}>
             <li><strong>Dashed gray</strong> — Newtonian prediction using visible matter only (toy exponential disk). Drops off at the edges; this is the puzzle.</li>
             <li><strong>Dots</strong> — observed rotation velocities. Flat at large radius; doesn&apos;t drop like Newtonian says it should.</li>
             <li><strong>Violet solid</strong> — Synchronism&apos;s real C(&#x03C1;) at &#x03B3;=2 with the framework&apos;s asserted &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;. The disk&apos;s density is thousands of times below &#x03C1;<sub>crit</sub>, so C stays near zero and the curve sits on the baryon line. <strong>This is the 2026-07-02 audit result, rendered.</strong></li>
-            <li><strong>Violet dotted</strong> — the hand-tuned tanh(radius) stand-in previously displayed. It fits because it was drawn to fit; no &#x03C1;, &#x03C1;<sub>crit</sub>, or &#x03B3; enters it.</li>
+            <li><strong>Amber dotted</strong> — the hand-tuned tanh(radius) stand-in previously displayed. It fits because it was drawn to fit; no &#x03C1;, &#x03C1;<sub>crit</sub>, or &#x03B3; enters it. (Recolored from violet 2026-07-23: it is an illustration, not the theory.)</li>
             <li><strong>Green dashed</strong> — MOND&apos;s real simple-&#x03BD; function on a BTFR-assigned mass (one global a&#x2080;, zero per-galaxy knobs). It lands close to the dots — expect ~10% mismatches from the toy mass model, not from tuning.</li>
           </ul>
         </div>
@@ -260,7 +261,7 @@ export default function GalaxyPlotter() {
             Toy mass model: M_b = 47&middot;V_flat&#x2074; M&#x2609; (empirical BTFR, McGaugh 2011), exponential disk with each galaxy&apos;s observed scale length R_d, h = 0.3 kpc<br />
             Gray &ldquo;Newtonian&rdquo;: v_b(r) = &radic;(G&middot;M(&lt;r)/r), M(&lt;r) = M_disk&middot;[1 &minus; e^(&minus;r/R_d)(1+r/R_d)]<br />
             Violet SOLID &ldquo;Synchronism (real)&rdquo;: v(r) = &radic;(v_b&sup2; + [V_flat&middot;C(&#x03C1;(r))]&sup2;), C(&#x03C1;) = tanh(2&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub>+1)), &#x03C1;(r) = &#x03A3;(r)/2h, &#x03C1;<sub>crit</sub> = 0.029&middot;V_flat&sup2;<br />
-            Violet DOTTED (old illustrative stand-in &mdash; what this page showed before 2026-07-08, kept for comparison): v(r) = &radic;(v_toy&sup2; + [V_flat&middot;tanh(0.4&middot;r/2.5)]&sup2;), v_toy = 0.6&middot;V_flat&middot;&radic;(1&minus;e^(&minus;r/2.5))<br />
+            Amber DOTTED (old illustrative stand-in &mdash; what this page showed before 2026-07-08, kept for comparison): v(r) = &radic;(v_toy&sup2; + [V_flat&middot;tanh(0.4&middot;r/2.5)]&sup2;), v_toy = 0.6&middot;V_flat&middot;&radic;(1&minus;e^(&minus;r/2.5))<br />
             Green &ldquo;MOND&rdquo;: v(r) = v_b&middot;&radic;&#x03BD;(y), &#x03BD;(y) = &frac12; + &radic;(&frac14; + 1/y), y = g_N/a&#x2080;, g_N = v_b&sup2;/r (real simple-&#x03BD;)
           </div>
           The solid violet curve and the dotted one differ in exactly one ingredient: the coherence factor.
@@ -363,10 +364,10 @@ export default function GalaxyPlotter() {
               fill="none" stroke="#22c55e" strokeWidth="1.5" strokeDasharray="6 3"
             />
 
-            {/* Hand-tuned stand-in (violet dotted) — what this page showed before 2026-07-08 */}
+            {/* Hand-tuned stand-in (amber dotted — recolored 2026-07-23; two violet curves were indistinguishable to casual readers) */}
             <path
               d={modelPoints.map((p, i) => `${i === 0 ? 'M' : 'L'}${toX(p.r).toFixed(1)},${toY(p.vSyn).toFixed(1)}`).join(' ')}
-              fill="none" stroke="#8b5cf6" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.7"
+              fill="none" stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.75"
             />
 
             {/* Real C(ρ) Synchronism curve (violet solid) — hugs the baryon line */}
@@ -385,8 +386,8 @@ export default function GalaxyPlotter() {
             <text x={pad.left + 30} y={pad.top + 19} fill="#38bdf8" fontSize="10">Observed</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 30} x2={pad.left + 20 + 8} y2={pad.top + 30} stroke="#8b5cf6" strokeWidth="2.5" />
             <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism &mdash; REAL C(&#x03C1;), &#x03B3;=2 (max C on this disk: {maxC.toFixed(3)} &mdash; boost never turns on)</text>
-            <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#8b5cf6" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.7" />
-            <text x={pad.left + 30} y={pad.top + 49} fill="#8b5cf6" fontSize="10" opacity="0.8">Old illustrative curve (hand-tuned; kept for comparison)</text>
+            <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.75" />
+            <text x={pad.left + 30} y={pad.top + 49} fill="#f59e0b" fontSize="10" opacity="0.9">Illustration only — hand-tuned to fit, NOT computed from the theory</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />
             <text x={pad.left + 30} y={pad.top + 64} fill="#22c55e" fontSize="10">MOND (real simple-&#x03BD;, BTFR mass, no per-galaxy tuning)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 75} x2={pad.left + 20 + 8} y2={pad.top + 75} stroke="#6b7280" strokeWidth="1.5" strokeDasharray="3 2" />
@@ -407,7 +408,7 @@ export default function GalaxyPlotter() {
             C(&#x03C1;) evaluated on the disk&apos;s density profile &mdash; and it <strong>fails to fill the
             gap</strong>: the disk never gets dense enough for the coherence boost to turn on
             (this galaxy&apos;s maximum C is {maxC.toFixed(3)}; the knee needs C to approach 1). The{' '}
-            <span style={{ color: '#8b5cf6' }}>dotted violet curve</span> is the hand-tuned
+            <span style={{ color: '#f59e0b' }}>dotted amber curve</span> is the hand-tuned
             tanh(radius) stand-in this page displayed before 2026-07-08 &mdash; it fit because it was
             drawn to fit. Full disclosure of both formulas below the plot.
           </p>

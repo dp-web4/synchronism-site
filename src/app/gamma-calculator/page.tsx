@@ -40,6 +40,12 @@ export default function GammaCalculator() {
         <h1 style={{ margin: 0 }}>&#x03B3; Calculator</h1>
         <ValidationBadge status="audited-negative" label="Formula Audited-Negative — Sign Inverted for All Collective Systems" />
       </div>
+      <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
+        <strong>In one sentence: &#x03B3; is the steepness of the coherence S-curve</strong> — how abruptly
+        a system switches from &ldquo;independent individuals&rdquo; to &ldquo;acting as one&rdquo; as density
+        rises. Big &#x03B3; = hair-trigger switch; small &#x03B3; = slow fade. The live curve below redraws
+        as you change N<sub>corr</sub>.
+      </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
         <strong style={{ color: 'var(--color-accent-blue)' }}>What this tool is for:</strong> pick a
         physical system (ideal gas &rarr; BEC presets) or enter N<sub>corr</sub> yourself, and see the
@@ -118,6 +124,66 @@ export default function GammaCalculator() {
               {presets.find(p => p.ncorr === ncorr)!.story}
             </p>
           )}
+        </div>
+
+        <div className="card" style={{ marginBottom: '1.5rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
+            <strong>The curve this &#x03B3; produces</strong> — C(&#x03C1;) = tanh(&#x03B3;&middot;ln(1+&#x03C1;/&#x03C1;<sub>crit</sub>))
+            at your current &#x03B3; (violet), with the &#x03B3;=2 galaxy pin ghosted for comparison (gray).
+          </p>
+          <svg viewBox="0 0 560 240" role="img" aria-label={`The coherence S-curve at gamma = ${gamma < 0.001 ? gamma.toExponential(2) : gamma.toFixed(3)}: larger gamma means a steeper switch, smaller gamma a flatter curve`} style={{ width: '100%', height: 'auto' }}>
+            <line x1="50" y1="200" x2="530" y2="200" stroke="var(--color-dark-border, #374151)" strokeWidth="1" />
+            <line x1="50" y1="20" x2="50" y2="200" stroke="var(--color-dark-border, #374151)" strokeWidth="1" />
+            <text x="42" y="204" fill="#9ca3af" fontSize="11" textAnchor="end">0</text>
+            <text x="42" y="34" fill="#9ca3af" fontSize="11" textAnchor="end">1</text>
+            <text x="30" y="115" fill="#9ca3af" fontSize="12" textAnchor="middle" transform="rotate(-90 30 115)">coherence C</text>
+            <text x="290" y="228" fill="#9ca3af" fontSize="12" textAnchor="middle">density &#x03C1;/&#x03C1;<tspan baselineShift="sub" fontSize="9">crit</tspan> (log scale: 0.01 &rarr; 100)</text>
+            <line x1="290" y1="20" x2="290" y2="200" stroke="#9ca3af" strokeWidth="1" strokeDasharray="4 4" opacity="0.5" />
+            <text x="295" y="192" fill="#9ca3af" fontSize="10">&#x03C1;<tspan baselineShift="sub" fontSize="8">crit</tspan></text>
+            {/* ghost reference: gamma = 2 */}
+            <polyline
+              points={Array.from({ length: 81 }, (_, i) => {
+                const lx = -2 + (4 * i) / 80;
+                const c = Math.tanh(2 * Math.log(1 + Math.pow(10, lx)));
+                return `${50 + ((lx + 2) / 4) * 480},${200 - c * 180}`;
+              }).join(' ')}
+              fill="none" stroke="#6b7280" strokeWidth="1.5" strokeDasharray="5 4" opacity="0.55" strokeLinejoin="round"
+            />
+            {/* live curve at current gamma */}
+            <polyline
+              points={Array.from({ length: 81 }, (_, i) => {
+                const lx = -2 + (4 * i) / 80;
+                const c = Math.tanh(gamma * Math.log(1 + Math.pow(10, lx)));
+                return `${50 + ((lx + 2) / 4) * 480},${200 - c * 180}`;
+              }).join(' ')}
+              fill="none" stroke="#8b5cf6" strokeWidth="2.5" strokeLinejoin="round"
+            />
+            <circle cx="290" cy={200 - Math.tanh(gamma * Math.log(2)) * 180} r="4" fill="#8b5cf6" />
+            <text x="298" y={Math.max(32, 196 - Math.tanh(gamma * Math.log(2)) * 180)} fill="#c4b5fd" fontSize="10">
+              C(&#x03C1;<tspan baselineShift="sub" fontSize="8">crit</tspan>) = {Math.tanh(gamma * Math.log(2)).toFixed(gamma < 0.01 ? 4 : 2)}
+            </text>
+          </svg>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.5rem 0 0' }}>
+            Try it: click &ldquo;Ideal gas&rdquo; (&#x03B3;=2, the steep violet S) then
+            &ldquo;BCS superconductor&rdquo; (&#x03B3;&asymp;6&times;10<sup>&minus;4</sup>) and watch the curve
+            collapse to nearly flat — the inversion in Caveat 2, drawn live: the <em>most</em> collective
+            system gets the <em>flattest</em> curve.
+          </p>
+        </div>
+
+        <div style={{ marginBottom: '1.5rem', padding: '0.75rem 1rem', background: 'rgba(139,92,246,0.07)', borderRadius: '6px', borderLeft: '3px solid var(--color-accent-violet)' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
+            <strong>Where &#x03B3; lands when data chooses (2026-07-22 mechanism):</strong> fit free on SPARC
+            galaxy data, &#x03B3; converges to 0.49 — and that number now has an identified meaning. &#x03B3; sets
+            the curve&apos;s <em>Newtonian-return exponent</em> q = 2&#x03B3; (C approaches 1 like
+            (1+&#x03C1;/&#x03C1;<sub>crit</sub>)<sup>&minus;2&#x03B3;</sup>), and the fit pins q &asymp; 0.98 —
+            cross-validated by an independent free-Hill fit (n = 0.975). q = 1 is the value hard-coded in
+            MOND&apos;s &ldquo;simple&rdquo; &#x03BC;-function, so &#x03B3; = 0.49 is not a constant awaiting
+            derivation: it is the tanh family&apos;s encoding of MOND. The framework&apos;s asserted &#x03B3; = 2
+            means q = 4 — returning to Newton far too abruptly, which is the &#x0394;BIC = +184 refutation
+            restated as a mechanism. See{' '}
+            <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-violet)' }}>Galaxy Rotation</Link>.
+          </p>
         </div>
 
         <div className="card" style={{ marginBottom: '1rem' }}>

@@ -54,3 +54,21 @@ structural one.
 
 Three independent audits (2026-06-02 personas, 2026-07-14 Pass 2, 2026-07-22 Pass 2) have now hit
 this. It is the highest-recurrence unfixed structural finding on the board.
+
+## Update 2026-07-23 (maintainer) — fourth re-derivation; content half SHIPPED, structural half still open
+
+Today's Pass 2 hit it a fourth time, with the sharpest formulation yet: the lifecycle *verbs*
+(WITHDRAWN / RETIRED / CLOSED / RECLASSIFIED / ADJUDICATED / EXECUTED / "Ceiling Exceeded" /
+bracket conventions) are used with evident precision and documented nowhere — "a reader who
+learns the badge taxonomy still can't parse 'MOND-shared / RETIRED'."
+
+**Shipped today (content):** a "Status lifecycle verbs" section added to
+/honest-assessment#validation-badge-definitions — defines all seven verbs plus the bracket
+convention, states the one-way transition discipline, and names adjudication authority
+(explorer executes, maintainer propagates, contested calls gate on dp). This drains the
+documentation gap the four audits converged on.
+
+**Still open (structural):** `src/lib/badges.ts` single source of truth + legends rendering
+from it + the MRH-family zero-adoption adjudication. The drift mechanism (retyped legends)
+is untouched — expect a fifth re-derivation eventually unless the refactor lands. Needs a
+dedicated session.

@@ -106,6 +106,32 @@ export default function HonestAssessment() {
           <strong>Template Bias Caveat</strong><span>The 89% consistency figure is derived from a catalog that was populated <em>using</em> the framework's regime boundaries as a guide — boundary-consistent framing is baked into the collection method. The fraction should not be read as independent confirmation.</span>
         </div>
 
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '1rem' }}>
+          <strong>Status lifecycle verbs</strong> (added 2026-07-23 — this vocabulary was used with precision
+          across test cards but documented nowhere; four independent reviews flagged the gap). These are the
+          capitalized verbs that appear in headings and status notes. They are distinct on purpose:
+        </p>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          <strong>EXECUTED</strong><span>The registered computation was actually run on real data, with scripts cited — as opposed to asserted, estimated, or argued. Always date-stamped. The strongest provenance word on the site.</span>
+          <strong>ADJUDICATED</strong><span>A verdict was rendered by structural argument or by analysis of already-published results, without a new run (e.g. TEST-05&apos;s lever-magnitude comparison). Weaker provenance than EXECUTED; the distinction is preserved so readers can tell which verdicts rest on runs.</span>
+          <strong>CLOSED</strong><span>Applies to a research <em>question</em>, not a prediction: the question is resolved (sometimes as a null) and no further work is planned. E.g. &ldquo;EFE gap — CLOSED,&rdquo; &ldquo;form selection closed as a null.&rdquo;</span>
+          <strong>WITHDRAWN</strong><span>Applies to a <em>test</em>: retracted by the framework before execution because of internal contradiction, underivable amplitude, or supersession. Never adjudicated, carries no verdict badge. E.g. TEST-04 (BAO).</span>
+          <strong>RETIRED</strong><span>Applies to <em>vocabulary or framing</em>, not to data verdicts: a label or badge class removed from service after audit showed it defective. E.g. the &ldquo;MOND-shared&rdquo; tie-badge class (retired 2026-07-15 when all three carriers dissolved on execution). &ldquo;MOND-shared / RETIRED&rdquo; therefore means: this label used to sit here, and the label itself — not the test — was withdrawn from the site&apos;s vocabulary.</span>
+          <strong>RECLASSIFIED</strong><span>Moved between categories (e.g. Tier 1 → Tier 2, prediction → exploratory hypothesis) after audit showed the original category&apos;s entry requirements were never met. The row is kept in place, demoted visibly, so the demotion is not silent.</span>
+          <strong>Ceiling Exceeded</strong><span>A structural failure mode specific to this framework: the data demands more than the framework&apos;s built-in maximum (the bounded boost 1/&Omega;_m = 3.17), so no parameter choice can rescue the fit. Needs no threshold registration — the ceiling is algebraic.</span>
+          <strong>[Brackets]</strong><span>Text in brackets inside a quoted prediction (e.g. &ldquo;[Withdrawn]&rdquo;) marks that the surrounding wording is preserved verbatim for the record but is no longer asserted.</span>
+        </div>
+
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
+          <strong>Transitions:</strong> statuses move in one direction. Untested → Executed/Adjudicated → Failed
+          (or survives); Failed never softens back. A retirement or reclassification is itself a dated, logged
+          event with the audit that forced it linked from the card. Adjudication authority: the daily explorer
+          track runs executions; the maintainer track propagates verdicts to pages; contested calls are gated on
+          the human operator and marked as such. If a status note seems to contradict its heading, the most
+          recent dated entry wins — cards accumulate their history deliberately rather than rewriting it.
+        </p>
+
         <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '1rem' }}>
           Full discipline: <Link href="/research-philosophy" style={{ color: 'var(--color-accent-blue)' }}>Research Philosophy</Link>.
           Migration plan: <a href="https://github.com/dp-web4/synchronism-site/blob/main/forum/post-kimi-reframe-site-update-instructions-2026-05-28.md" style={{ color: 'var(--color-accent-blue)' }}>forum post 2026-05-28</a>.
@@ -123,6 +149,13 @@ export default function HonestAssessment() {
           is the contribution; the physics just provided the test case.
         </p>
         <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
+          <strong>The single most important sentence on this page, promoted from the landscape section
+          (2026-07-23, expert-review request): there is no field equation anywhere in this framework&apos;s
+          galaxy sector</strong> — no action, no Lagrangian, no covariant formulation, no dynamics. The
+          framework is a static map plus an interpretation. Everything below should be read with that in
+          mind. (<a href="#landscape" style={{ color: 'var(--color-accent-blue)' }}>Full statement &darr;</a>)
+        </p>
+        <p style={{ margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
           <strong>In plain language — what failed:</strong> The sharpest failure is now the galaxy mass&ndash;speed
           relation (the BTFR, TEST-09, run 2026-07-14): the framework&apos;s built-in ceiling on how much it can
           boost gravity forces a prediction that genuinely differs from the rival theory MOND — and the real
@@ -987,13 +1020,15 @@ export default function HonestAssessment() {
       <section className="section content-width">
         <h2 id="landscape">Where This Sits in the Modified-Gravity Landscape</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
-          Several frameworks occupy the same phenomenological territory as Synchronism in the low-acceleration galaxy regime. All share the observation that a₀ ≈ cH₀/(2π) emerges from cosmological constants:
+          Several frameworks occupy the same phenomenological territory as Synchronism in the low-acceleration galaxy regime. All share the observation that a₀ ≈ cH₀/(2π) emerges from cosmological constants.
+          <em> Rival lineup last refreshed: 2026-07-23 — this table is date-stamped the same way refutations are, because a &ldquo;0 discriminating tests&rdquo; verdict is only as current as the rivals it is scored against.</em>
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem', fontSize: '0.88rem' }}>
           {[
             { name: 'MOND (Milgrom 1983)', desc: 'Empirical μ-function. No dynamics, no governing equation. Synchronism\'s compander collapses onto MOND at free-γ (SPARC RAR, ΔBIC=+7 vs ΔBIC=+184 for γ=2).' },
             { name: 'Verlinde Emergent Gravity (2016)', desc: 'Derives MOND-like rotation curves from entropy gradients in the Hubble volume. Tested by Brouwer et al. (2017) KiDS lensing — consistent at ~1σ. Key question: does C(ρ) reduce to Verlinde in the low-acceleration limit? Not yet shown.' },
-            { name: 'TeVeS (Bekenstein 2004)', desc: 'Lorentz-covariant scalar-vector-tensor extension of MOND. Has galaxy-rotation and lensing predictions. Failed: requires dark matter for the Bullet Cluster; GW170817 constrains the tensor sector.' },
+            { name: 'TeVeS (Bekenstein 2004)', desc: 'Lorentz-covariant scalar-vector-tensor extension of MOND. Has galaxy-rotation and lensing predictions. Failed: requires dark matter for the Bullet Cluster; GW170817 constrains the tensor sector. No longer the benchmark relativistic completion — see AeST below.' },
+            { name: 'AeST (Skordis & Złośnik 2021)', desc: 'Aether-scalar-tensor theory — the current benchmark relativistic MOND completion. Reproduces galaxy phenomenology, passes CMB power-spectrum tests where TeVeS failed, and GW speed equals c. Keyed on |∇Φ| — i.e. NON-local in density — which is exactly the escape class the locality no-go on this page identifies: the surviving relativistic MOND theory avoids the local-density trap that kills C(ρ). Caveat: post-2021 stability concerns are under active discussion; cite as "AeST-class," not AeST-final. (Added 2026-07-23 — an expert review correctly flagged that this table was frozen at TeVeS-2006 while the verdict "0 discriminating tests vs MOND+ΛCDM" was being scored against it.)' },
             { name: 'MOG / STVG (Moffat 2006)', desc: 'Running gravitational coupling with massive vector field. Makes post-Newtonian predictions beyond rotation curves. No direct comparison with Synchronism compander exists.' },
           ].map(f => (
             <div key={f.name} className="card" style={{ padding: '0.6rem 0.9rem' }}>

@@ -24,10 +24,14 @@ export default function GalaxyRotation() {
           baryonic mass, but systematically exceeds it below a critical scale.
         </p>
 
-        <p>
-          Synchronism&apos;s coherence function predicts how and where rotation curves should flatten.
-          We tested this against two major datasets.
-        </p>
+        <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#ef4444' }}>Read this first (promoted to the top 2026-07-23):</strong>{' '}
+          the headline equation never reaches this page&apos;s observable. <strong>No algebraic chain from
+          C(&#x03C1;) to g<sub>obs</sub> exists anywhere in the framework</strong> — the galaxy fits shown
+          below use McGaugh&apos;s standard RAR interpolating function (MOND phenomenology), with Synchronism
+          contributing only a scatter hypothesis on top (since refuted; see TEST-08). The structural reason
+          is in the next paragraph; the tested-and-killed compander variants are further down.
+        </div>
 
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           One structural reason to expect this fit to reparametrize rather than derive MOND: C(&#x03C1;) is a
@@ -262,6 +266,15 @@ export default function GalaxyRotation() {
             RMS identical to McGaugh to four digits. ΔBIC=+7 is entirely the BIC penalty for the
             extra parameter — the fit improvement is zero. There is no γ for which the compander is
             both (a) distinct from MOND and (b) consistent with SPARC. Pin γ=2 → refuted. Fit γ → MOND.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+            <strong>Why 0.49? Mechanism identified (2026-07-22 form-selection run):</strong> γ controls the
+            Newtonian-return exponent — algebraically, tanh(γ·ln(1+y)) approaches 1 like (1+y)<sup>−2γ</sup>,
+            so the return exponent is q = 2γ. The fit pins q ≈ 0.98, cross-validated by an independent free-Hill
+            fit landing n = 0.975 — two parametrizations converging on q ≈ 1, the value hard-coded in MOND&apos;s
+            &ldquo;simple&rdquo; μ-function. γ = 0.49 was never a constant awaiting derivation; it is the tanh
+            family&apos;s encoding of MOND&apos;s simple μ. The framework&apos;s asserted γ=2 means q=4 —
+            re-Newtonianizing far too abruptly — which is the +184 kill restated mechanistically.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
             Net discriminating galaxy tests vs MOND: <strong style={{ color: '#ef4444' }}>0, by execution</strong>.

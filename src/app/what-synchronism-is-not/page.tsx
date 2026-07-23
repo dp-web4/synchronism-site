@@ -25,7 +25,7 @@ const notItems = [
   },
   {
     claim: 'Just notation',
-    reality: 'The core equation uses known components (compander/sigmoid tanh — μ-law/Hill/logistic lineage, chosen not derived; fluctuation-scaling ansatz γ=2/√Ncorr; Abrikosov-Gor\'kov pair-breaking). But the claim is ontological, not notational: that quantum mechanics, consciousness, and astrophysical coherence are the same phenomenon at different scales. That\'s either wrong or significant — not "just relabeling."',
+    reality: 'The core equation uses known components (compander/sigmoid tanh — μ-law/Hill/logistic lineage, chosen not derived; fluctuation-scaling ansatz γ=2/√Ncorr; Abrikosov-Gor\'kov pair-breaking — a textbook 1960 superconductivity result the framework\'s η formula turns out to restate). But the claim is ontological, not notational: that quantum mechanics, consciousness, and astrophysical coherence are the same phenomenon at different scales. That\'s either wrong or significant — not "just relabeling."',
   },
   {
     claim: 'Just philosophy',
@@ -80,7 +80,9 @@ export default function WhatSynchronismIsNot() {
             applicability as a research tool. Both are legitimate contributions; neither requires confirmed novel physics.
             If a future prospective test produces a discriminating result — one that MOND+EFE+ΛCDM cannot explain —
             this classification can be upgraded. TEST-02 (wide binary density dependence) is the candidate most often cited,
-            but is triple-conditional: the anomaly is disputed, the prediction is EFE-degenerate, and amplitude is ~80× below reach.
+            but is triple-conditional: the anomaly is disputed, the prediction is EFE-degenerate (EFE = MOND&apos;s
+            &ldquo;external field effect&rdquo; — MOND predicts the same signal, so even a detection would not
+            distinguish the two frameworks), and amplitude is ~80× below reach.
           </p>
         </div>
 

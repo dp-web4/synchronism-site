@@ -1,0 +1,29 @@
+{
+  "N_joined": 141,
+  "primary_pearson_r": 0.432098500423238,
+  "primary_r2": 0.186709114068011,
+  "primary_spearman": 0.5404315502182936,
+  "verdict": "SEPARABLE - framing survives step-0",
+  "erratum_check": {
+    "NGC5055": {
+      "x0": -10.536,
+      "e": 0.054,
+      "eenv": 0.04
+    },
+    "NGC5033": {
+      "x0": -10.737,
+      "e": 0.104,
+      "eenv": 0.05
+    },
+    "NGC1090": {
+      "x0": -10.626,
+      "e": 0.061,
+      "eenv": 0.011
+    },
+    "NGC6674": {
+      "x0": -10.613,
+      "e": -0.015,
+      "eenv": 0.011
+    }
+  }
+}

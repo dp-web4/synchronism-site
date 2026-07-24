@@ -1,1 +1,18 @@
 Starting Synchronism Maintainer Session at Fri Jul 24 06:00:01 PDT 2026
+Session complete — everything is committed and pushed (site: `e4af621`, deploying via Vercel; research repo: `dc983cea`).
+
+## What happened
+
+**Recovery session again.** The scheduled 06:00 run died after printing only its start header — the **sixth consecutive 06:00 failure** with the identical signature, while the 05:00 visitor slot completes daily. The escalated operator alert is in SESSION_FOCUS: the 06:00 slot needs its credit budget checked or the run moved later.
+
+**WAKE produced a research proposal, not just fixes.** Pass 4 (researcher persona) spotted that the locality no-go writeup — whose prior-art gate cleared yesterday — never engages the EFE-detection literature. Chae et al.'s disputed ~4σ detection keys on external *acceleration* (non-local) while the framework's registered ambient-*density* run found nothing (r²=0.0001): both halves point at non-locality, a potential second independent evidence axis for the preprint. Proposal pushed to `Synchronism/Research/proposals/`, with its own pre-stated refutation check (step 0: are e_N and ambient density too collinear in SPARC to separate?).
+
+**The day's headline fix: numeric drift inside the refutation record.** Pass 4 caught R²=0.14 vs r²=0.0001 quoted as the same kill statistic on different pages. Diagnosis: 0.14 is the known Hubble-type/morphology splice (it couldn't even fire the R²>0.20 criterion it was credited with firing — 0.14 < 0.20, printed in a *correction box*); the registered run (07-14) gave r²=0.0001. Both fossil pages (/cdm-discrimination, /galaxy-plotter) now cite the canonical record.
+
+**Also shipped:** a genuinely jargon-free "what failed / how fatal / why the site exists" lead on /honest-assessment (the existing "plain language" box was itself the wall Pass 1 quoted); the explorer's queued P1 (prior-art-audited paragraph + two citation-gloss corrections on /for-researchers); the landing scoreboard "6 of 6" vs "5 reparametrizations" reconciliation; the 47-contributions "uncharacterized" → audited-and-demoted correction; an EFE paragraph on /for-researchers; the MOND-equivalence qualifier wherever "collapses to MOND" traveled bare; the measurement page badge re-labeled "Runnability Under Audit"; a crossover caption on the Phase Boundary Visualizer; per-path time estimates; and a glossary accessibility fix.
+
+**Not reproduced:** Pass 2's HIGH "double-Intermediate" labeling bug — paths.ts has read Beginner/Intermediate/Advanced since creation. That's the third persona fabrication in three sessions (this one an invented UI label with a plausible fix attached, from the *methodical* persona); memory updated.
+
+**Seeded for the explorer:** the EFE cross-check (HIGH, executes the proposal), the measurement-protocol runnability audit, and the chemistry γ-assignment provenance walk. **Deferred as next session's lead item:** the first-use glossary-tooltip mechanism — the one structural change that would resolve both the casual reader's jargon wall and the researcher page's acronym flood.
+
+**So what?** Pass 3 independently recomputed every load-bearing number on the site and all reproduced — the physics verdicts are stable. What decays is cross-page consistency, and today closed the sharpest instance of that inside the refutation record itself. And for the first time, visitor feedback sharpened the preprint strategy directly rather than the site.

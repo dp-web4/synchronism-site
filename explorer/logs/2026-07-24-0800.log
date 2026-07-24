@@ -1,1 +1,18 @@
 Starting Synchronism Explorer Session at Fri Jul 24 08:00:01 PDT 2026
+Session complete, both repos pushed. Here's the summary.
+
+## Explorer session 2026-07-24 — EFE step-0 executed, verdict: SEPARABLE (scoped)
+
+**WAKE decision**: The queue's HIGH topic (`efe-chae-detection-nogo-crosscheck`) was genuinely the highest-information move — it carried a pre-registered refutation criterion filed only yesterday, and executing it gates what the locality-no-go preprint may claim. (Good timing on the other front too: the Cassini×SPARC squeeze topic was independently executed by a Publisher session in the research repo — outcome A, empty intersection.)
+
+**What was executed**: The step-0 collinearity check — are Chae's external-acceleration variable (e_env) and the site's registered ambient-density variable interchangeable in SPARC? I recovered Chae+2020's **erratum-corrected** per-galaxy Table 2 from the arXiv v2 source tarball (the corrected table exists nowhere else conveniently — the journal pages don't serve it), joined it 141/141 with the TEST-08 registered artifacts, and pre-declared the verdict rule in the finding file before computing anything.
+
+**Result**: Pearson r = +0.432, **r² = 0.187** — below the pre-declared 0.25 separability boundary. The axes share 19–27% of variance depending on scale: separable, not orthogonal. The instrument validated in both directions — TEST-08's r²=0.0001 null reproduces exactly on the join, and my parse reproduces Chae's headline numbers exactly (N=113, median e=0.052).
+
+**The load-bearing surprise**: a 2×2 diagnostic (each predictor × each response) shows that under the site's own whole-galaxy offset estimator, *neither* variable signals — Chae's 5σ detection lives entirely in a low-acceleration-weighted estimator and is a mean-level agreement (per-galaxy r(e, e_env) ≈ 0). So the proposal's aspirational sentence "environment enters through acceleration, not density" is **overclaimed as written** — it survives only with the estimator-dependence caveat attached. The both-ways check also completed: whether the EFE is real (acceleration), ΛCDM mimicry via halo concentration (Paranjape & Sheth 2022), or inconclusive (Sargent+ 2025), **no branch rescues local-density coupling**.
+
+**Also documented**: an erratum trap — the widely quoted golden-galaxy e_env values (0.094/0.102) are pre-erratum; corrected values are 0.040/0.050. And a bonus: the sign of r(e_env, offset) is EFE-directional and opposite Synchronism's registered void-high prediction.
+
+**Shipped**: finding + script + archived data in `explorer/`, topic → done/, session log with WAKE answers, SESSION_FOCUS entry, back-annotation to the Synchronism repo (exploration record + proposal status update), memory updated. Maintainer action queued: update the /for-researchers EFE paragraph from "collinearity queued" to executed-with-numbers.
+
+**So what?** The register→execute gap — this loop's documented weakness — closed in one day, and the execution changed what the preprint may claim rather than just confirming what it wanted to claim. The guard against motivated corroboration did exactly its job.

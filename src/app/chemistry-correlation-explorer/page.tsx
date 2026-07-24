@@ -109,8 +109,15 @@ export default function ChemistryCorrelationExplorer() {
           (|&#x0394;r| &#x2264; 0.07) and sometimes beats them</strong>. The targets are near-monotonic
           in Z, so any smooth monotonic curve scores r &#x2248; 1 by construction. High r here is
           evidence of density-monotonicity (known chemistry), not of C(&#x03C1;)-specific physics.
-          The 47 entries marked &ldquo;research contributions&rdquo; elsewhere on the site remain{' '}
-          <strong>uncharacterized</strong> — not audited against this null.
+          The &ldquo;47 research contributions&rdquo; cited elsewhere on the site are <strong>audited and
+          demoted</strong>, not uncharacterized (corrected 2026-07-24; this caveat previously said
+          &ldquo;not audited&rdquo;): every contribution a domain expert examined resolved to a
+          reparametrization, an internal-consistency finding, or a null result (top-3 swept 2026-07-03,
+          0/3 novel; the archive&apos;s later sessions demoted the remainder, and the count itself is a
+          flagged ~57% overcount). What remains true is narrower: none was run against <em>this page&apos;s
+          polynomial null specifically</em>. See the{' '}
+          <a href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research
+          Outputs audit</a> for the operative verdict.
         </div>
 
         {/* Regime filter */}

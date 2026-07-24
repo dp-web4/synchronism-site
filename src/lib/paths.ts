@@ -14,12 +14,16 @@ export interface LearningPath {
   desc: string;
   color: string;
   kind: 'difficulty' | 'domain';
+  /** Rough end-to-end reading time, shown on the index (visitor request 2026-07-24:
+   *  the landing page promised "~30 min" but the paths page showed no estimates). */
+  timeEstimate?: string;
   steps: PathStep[];
 }
 
 export const learningPaths: LearningPath[] = [
   {
     name: 'Beginner',
+    timeEstimate: '~30 min',
     desc: 'No physics background needed. Plain language, core concepts only.',
     color: '#10b981',
     kind: 'difficulty',
@@ -34,6 +38,7 @@ export const learningPaths: LearningPath[] = [
   },
   {
     name: 'Intermediate',
+    timeEstimate: '~1 hour',
     desc: 'Undergrad science background. Equations with explanations, key results.',
     color: 'var(--color-accent-blue)',
     kind: 'difficulty',
@@ -50,6 +55,7 @@ export const learningPaths: LearningPath[] = [
   },
   {
     name: 'Advanced',
+    timeEstimate: '~2 hours',
     desc: 'Grad-level physics. Full derivations, parameter chains, test protocols.',
     color: 'var(--color-accent-violet)',
     kind: 'difficulty',
@@ -66,6 +72,7 @@ export const learningPaths: LearningPath[] = [
   },
   {
     name: 'Physics Track',
+    timeEstimate: '~1 hour',
     desc: 'Quantum mechanics → cosmology → predictions',
     color: '#38bdf8',
     kind: 'domain',
@@ -81,6 +88,7 @@ export const learningPaths: LearningPath[] = [
   },
   {
     name: 'Chemistry Track',
+    timeEstimate: '~45 min',
     desc: 'The γ ≈ 1 boundary → correlations → limitations',
     color: '#22c55e',
     kind: 'domain',
@@ -95,6 +103,7 @@ export const learningPaths: LearningPath[] = [
   },
   {
     name: 'Philosophy Track',
+    timeEstimate: '~45 min',
     desc: 'Consciousness → free will → identity',
     color: '#a78bfa',
     kind: 'domain',
@@ -110,6 +119,7 @@ export const learningPaths: LearningPath[] = [
   },
   {
     name: 'Methodology Track',
+    timeEstimate: '~45 min',
     desc: 'How the research was done → how we handle failure',
     color: '#f59e0b',
     kind: 'domain',

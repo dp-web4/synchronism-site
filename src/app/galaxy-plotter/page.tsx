@@ -201,7 +201,9 @@ export default function GalaxyPlotter() {
           <strong>Plain verdict for casual readers:</strong> these curves look great but don&apos;t prove the idea &mdash;
           all three models (Synchronism, MOND, and NFW dark-matter halo) fit galaxy rotation curves about equally well.
           What matters is whether any makes a <em>different, testable prediction</em>, and the ensemble test
-          (SPARC RAR, ΔBIC=+184) shows Synchronism collapses to MOND when γ is freed. See{' '}
+          (SPARC RAR, ΔBIC=+184) shows Synchronism collapses to MOND when γ is freed — curve-equivalence
+          at fitted γ only, not theory-equivalence: the framework has no action, no Lagrangian, and no
+          dynamics, so it inherits none of MOND&apos;s predictions beyond the fitted curve. See{' '}
           <a href="/honest-assessment#test-04a" style={{ color: 'var(--color-accent-blue)' }}>what the tests actually say →</a>
         </p>
         <div style={{
@@ -228,10 +230,15 @@ export default function GalaxyPlotter() {
           fontSize: '0.85rem',
           color: 'var(--color-text-muted)',
         }}>
-          <strong style={{ color: '#ef4444' }}>Related test result (TEST-03):</strong> The Tully-Fisher
-          scatter test (R&sup2; = 0.14 against the 20% kill threshold) was <strong>triggered as Failed</strong> on
-          the same SPARC dataset. Rotation curve shape matches are qualitative; the scatter test is
-          a stricter quantitative check and it failed. <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>See Honest Assessment &rarr;</a>
+          <strong style={{ color: '#ef4444' }}>Related environment result (corrected 2026-07-24):</strong> This card
+          previously reported &ldquo;TEST-03: R&sup2; = 0.14 triggered as Failed against the 20% kill threshold.&rdquo;
+          That statistic was never a valid TEST-03 measurement — archive tracing (2026-07-09) shows 0.14 is a
+          Hubble-type/morphology term at SPARC scale (N &asymp; 171), not an environment-density result, and 0.14
+          does not even exceed the 0.20 threshold it was said to fire. The registered environment test has since
+          been run as registered (2026-07-14: SPARC RAR offsets vs Cosmicflows-4 ambient densities):
+          <strong> r&sup2; = 0.0001</strong> against the framework&apos;s &gt;20% claim — the environment prediction
+          is <strong>refuted by execution</strong>, not by the old conflated statistic.{' '}
+          <a href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>See Tier 1: TEST-03/TEST-05 for the full trace &rarr;</a>
         </div>
 
         <div style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.35)', borderRadius: '0.375rem', padding: '0.75rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem' }}>

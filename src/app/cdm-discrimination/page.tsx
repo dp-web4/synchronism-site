@@ -22,8 +22,12 @@ export default function CdmDiscrimination() {
           CDM prediction&rdquo; and called the environment-dependence test &ldquo;confirmed at p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>.&rdquo;
           Both claims were wrong: the &ldquo;below CDM&rdquo; reading was an intermediate session&apos;s premature
           conclusion, retracted in-archive by the source program&apos;s own later, definitive run; and the
-          environment-dependence test&apos;s pre-registered kill criterion (R&sup2; &gt; 0.20) <strong>fired</strong>
-          {' '}(R&sup2;&nbsp;=&nbsp;0.14) &mdash; it is a failed test, not a confirmed one. See{' '}
+          environment-dependence claim was not confirmed &mdash; and (second correction, 2026-07-24) the
+          R&sup2;&nbsp;=&nbsp;0.14 previously quoted here as having &ldquo;fired&rdquo; the R&sup2; &gt; 0.20 kill
+          criterion could not have fired it (0.14&nbsp;&lt;&nbsp;0.20) and was later traced to a Hubble-type/morphology
+          term at SPARC scale, not an environment measurement. The registered environment test, run as registered
+          on 2026-07-14 (SPARC RAR offsets vs Cosmicflows-4 densities), gives <strong>r&sup2;&nbsp;=&nbsp;0.0001</strong> against
+          the &gt;20% claim &mdash; the environment prediction is refuted by execution. See{' '}
           <Link href="/honest-assessment" style={{ color: '#ef4444' }}>Honest Assessment</Link> for the
           current ledger. This page is rewritten below to tell the more interesting story: why the CDM
           verdict flipped once distance-noise modeling was added.
@@ -114,8 +118,9 @@ export default function CdmDiscrimination() {
           <li>
             The environment-dependence test (the other half of this page&apos;s original claim) is
             <strong> not a Synchronism-vs-MOND discriminator either</strong> &mdash; MOND&apos;s External
-            Field Effect (EFE) also predicts environment-dependent RAR scatter. TEST-05, which measured
-            it (p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>, R&sup2;&nbsp;=&nbsp;0.14 on SPARC scale), met its
+            Field Effect (EFE) also predicts environment-dependent RAR scatter. TEST-05&apos;s
+            null-independence rejection (p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>, R&sup2;&nbsp;=&nbsp;0.14 on SPARC
+            scale &mdash; a Hubble-type/morphology dependence, not ambient density) met its
             own registered criterion — corrected 2026-07-09 from &ldquo;failed&rdquo; to MOND-shared, then
             re-adjudicated 2026-07-15: the tie dissolves on lever magnitude (MOND+EFE couples to external
             acceleration, ~0.09 dex modulation; C(&rho;) to ambient density, &le;2&times;10<sup>&minus;3</sup> dex
@@ -129,7 +134,8 @@ export default function CdmDiscrimination() {
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Net verdict: &#x03C3;<sub>int</sub> = 0.086 dex is consistent with CDM, not a constraint on it;
-          the environment-dependence test failed its pre-registered kill criterion; and no reading of
+          the framework&apos;s registered environment prediction was refuted when run as registered
+          (r&sup2;&nbsp;=&nbsp;0.0001 vs a &gt;20% claim, 2026-07-14); and no reading of
           either result separates Synchronism from MOND, which remains the framework&apos;s actual
           competitor on galaxy dynamics. This page exists now primarily as a documented case study in
           how a noise-modeling correction can flip a headline verdict, and in how compilation pages can

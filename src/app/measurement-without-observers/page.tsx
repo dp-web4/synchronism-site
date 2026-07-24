@@ -13,7 +13,16 @@ export default function MeasurementWithoutObservers() {
       <Breadcrumbs currentPath="/measurement-without-observers" />
       <PathNav currentPath="/measurement-without-observers" />
       <h1>Measurement Without Observers</h1>
-      <ValidationBadge status="untested" label="6 Testable Protocols" />
+      <ValidationBadge status="untested" label="6 Protocols — Runnability Under Audit" />
+      <p style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
+        <strong style={{ color: '#f59e0b' }}>Badge caveat (2026-07-24, from expert review):</strong> this page&apos;s
+        badge previously read &ldquo;6 Testable Protocols&rdquo; unqualified — but the framework-wide finding on{' '}
+        <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link> is that no
+        calibration procedure maps any real apparatus to &#x03B3; or N<sub>corr</sub>. A protocol that cannot specify
+        its parameters for an actual device may be <em>unrunnable as stated</em> — the same gap that re-badged the
+        consciousness-threshold claims. A protocol-by-protocol audit against the calibration gap is queued; until it
+        completes, read &ldquo;testable&rdquo; as &ldquo;testable in form, calibration unanchored.&rdquo;
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>

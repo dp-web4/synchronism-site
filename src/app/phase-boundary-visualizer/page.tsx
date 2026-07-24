@@ -49,6 +49,11 @@ export default function PhaseBoundaryVisualizer() {
     <>
       <Breadcrumbs currentPath="/phase-boundary-visualizer" />
       <h1>Phase Boundary Visualizer</h1>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
+        Despite the name: C(&#x03C1;) is analytic everywhere — a smooth <em>crossover</em>, not a
+        thermodynamic phase transition. &ldquo;Boundary&rdquo; here is a visual convenience (full
+        naming note below).
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{ background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.95rem', color: 'var(--color-text-secondary)' }}>

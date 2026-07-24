@@ -34,9 +34,13 @@ export default function ForResearchers() {
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             <strong>Honest novelty statement:</strong> the core obstruction is <em>not</em> ours.
-            Milgrom showed MOND-as-modified-inertia must be strongly non-local
-            (astro-ph/0510117), and the RAR/MDAR is keyed on acceleration, not density
-            (Lelli, McGaugh &amp; Schombert 2016; Lelli et al. 2017, scatter &#x2272;0.13 dex).
+            Milgrom proved MOND-as-modified-inertia must be non-local <em>in time</em> (astro-ph/0510117,
+            building on the Milgrom 1994 Galilei-invariance theorem); the <em>spatial</em> non-locality this
+            no-go actually uses — the successful organizing variable is acceleration/enclosed mass, not any
+            local column — is carried by the RAR/MDAR literature (McGaugh 2004; Lelli, McGaugh &amp;
+            Schombert 2016; Lelli et al. 2017, scatter &#x2272;0.13 dex — who tested <em>surface</em>{' '}
+            columns, never volumetric &#x03C1;; Stiskalek &amp; Desmond 2023 for the systematic
+            variable sweep) and by the elliptic Bekenstein&ndash;Milgrom field equation.
             What this project adds is the <strong>quantified local-density instance</strong>: any
             gravity modification keyed on the <em>local volumetric density</em> &#x03C1;(r) fails in
             three independently executed ways — the SPARC RAR ensemble rejects the density-compander
@@ -103,6 +107,36 @@ export default function ForResearchers() {
             no, because the phonon coupling carries the a&#x2080; scale separately.) Escape taxonomy:
             non-local theory (AeST-class), or local-criterion-<em>gated medium</em>
             (superfluid-DM-class); local-density <em>direct</em> modulation remains excluded.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>The live discriminator context — the External Field Effect (added 2026-07-24):</strong>{' '}
+            the sharpest currently-contested MOND-vs-&Lambda;CDM discriminator is the claimed detection of
+            MOND&apos;s External Field Effect in SPARC (Chae et al. 2020, ApJ 904, 51; 2021 — ~4&sigma;,
+            disputed: Freundlich et al. 2022 and Paranjape &amp; Sheth 2022 offer &Lambda;CDM-consistent
+            readings). It bears on this no-go from the positive side: the EFE keys on external{' '}
+            <em>acceleration</em> — a strictly non-local variable — while the framework&apos;s registered
+            ambient-<em>density</em> environment effect, run as registered (2026-07-14), shows no trace
+            (r&sup2;&nbsp;=&nbsp;0.0001). If environment enters galaxy dynamics at all, it enters through
+            the non-local variable class this no-go predicts must win; if the EFE detection dissolves into
+            &Lambda;CDM systematics, environment enters through neither variable and the no-go is untouched.
+            No branch rescues a local-density coupling. (Whether Chae&apos;s estimators can in principle
+            separate external-acceleration from ambient-density coupling is queued as a research check.)
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Prior-art audited (2026-07-23):</strong> the Milgrom surface-density and modified-inertia
+            corpus (1983 trilogy; astro-ph/0510117 including its worked examples; the
+            &Sigma;<sup>&dagger;</sup>/central-surface-density line through Milgrom 2016; Famaey &amp; McGaugh
+            2012; Banik &amp; Zhao 2022) and the modern variable-comparison literature (McGaugh 2004; Lelli et
+            al. 2017; Stiskalek &amp; Desmond 2023) were searched for a prior quantified instance of local
+            volumetric density failing as the organizing variable. <strong>None exists</strong>: every published
+            discrimination tests acceleration against radius, orbital frequency, size, or surface density —
+            &#x03C1;(r) was never in any tested variable set (Stiskalek &amp; Desmond&apos;s 2023 feature sweep
+            is the nearest miss: three surface densities, no volume density). The argument <em>template</em> of
+            the sign statement is Milgrom&apos;s own — length-keyed modifications were excluded in 1983 for
+            forcing Tully-Fisher slope 2 instead of 4 (1983b &sect;III; Sanders 1986 for the direction form) —
+            and the volumetric-density instantiation quantified here appears to be the first. Caveats: Milgrom
+            1983b was verified through secondary witnesses (the archival scan is image-only), and the
+            screening-literature vein (chameleon/symmetron) has not been separately walked.
           </p>
           <Link href="/honest-assessment" style={{ fontSize: '0.85rem' }}>Full closure documentation in Honest Assessment &rarr;</Link>
         </div>
@@ -377,8 +411,9 @@ export default function ForResearchers() {
           <strong style={{ color: '#f59e0b' }}>What is deliberately not on this page:</strong>{' '}
           the framework&apos;s positive claims (all reparametrizations, failures, or unrunnable as
           stated — see <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>),
-          and the &ldquo;47 research contributions&rdquo; (uncharacterized — no null-model or prior-art
-          comparison; see the sidebar caveat on Honest Assessment).
+          and the &ldquo;47 research contributions&rdquo; (audited and demoted — top-3 swept 0/3 novel,
+          remainder demoted in-archive, the count itself a flagged ~57% overcount; see the Research
+          Outputs audit on Honest Assessment).
         </div>
       </section>
 

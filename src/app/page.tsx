@@ -239,17 +239,22 @@ export default function Home() {
               <span>Refutations executed on external data: <strong style={{ color: '#ef4444' }}>4</strong> — BTFR slope (TEST-09, registered kill fired 3.3σ, 2026-07-14), dwarf DM fractions (TEST-10, 69% of SPARC above the framework&apos;s 68.5% structural ceiling, 2026-07-15), environment null (registered run r²=0.0001 vs &gt;20% claim), RAR shape (γ=2, ΔBIC=+184; conservative ≥+33; free-γ→MOND (Modified Newtonian Dynamics))</span>
               <span>Post-hoc retrodictions attempted: <strong style={{ color: '#f59e0b' }}>1 — underpowered</strong> (DESI fσ₈ — disfavored 2.4σ on σ₈, but the registered fσ₈ criterion fell short of its own &gt;3σ bar and is not counted as a refutation; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
-              <span>Reparametrizations audited: <strong style={{ color: 'var(--color-text-secondary)' }}>6 of 6</strong></span>
+              <span>&ldquo;Validated&rdquo; claims surviving audit: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 6</strong> — all demoted (current ledger: 5 reparametrizations; the sixth, the BTFR slope, moved to the refutation column 2026-07-14)</span>
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>Full ledger &rarr;</Link>
             </div>
             <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.6rem 0 0' }}>
+              <strong>So is the idea alive or dead?</strong> As tested physics: dead — every decisive
+              test it ran, it lost, and this site says so. As a public record of how you find that out
+              honestly — and as an untested ontology whose few genuinely novel bets no instrument has
+              yet been pointed at — it is alive and still being worked.{' '}
               <strong>Why keep reading a theory with zero confirmed predictions?</strong>{' '}
               Because this is what testing an idea in public looks like &mdash; you get to watch a
               theory be taken apart honestly: which claims collapsed into known physics, which died
               against data, and what that rules out for <em>any</em> theory of the same shape. The
               autopsy is the product. In one sentence: the headline equation has no derived link to
               galaxy rotation at all &mdash; the fits on this site run on the standard machinery of
-              MOND, an existing 40-year-old rival, and everywhere the equation&apos;s own variants
+              MOND (Modified Newtonian Dynamics — a 40-year-old rival theory that tweaks gravity
+              instead of adding dark matter), and everywhere the equation&apos;s own variants
               genuinely differed from MOND, the data killed them. What would count
               as a confirmation is a prediction that <em>differs</em> from MOND and &Lambda;CDM and
               wins; no test currently on the books can deliver that.

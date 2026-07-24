@@ -47,6 +47,9 @@ export default function Glossary() {
               }}>
                 {term.term}
               </span>
+              {/* whitespace matters: without it, screen readers and text extractors
+                  concatenate term + fullName ("A2ACWAI-to-AI…") — flex layout ignores it */}
+              {' '}
               <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
                 {term.fullName}
               </span>

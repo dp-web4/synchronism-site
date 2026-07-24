@@ -18,6 +18,11 @@ function PathCard({ path }: { path: PathEntry }) {
     <div className="card">
       <h3 style={{ color: path.color, fontSize: '1.25rem' }}>
         <Link href={path.steps[0].href} style={{ color: path.color, textDecoration: 'none' }}>{path.name}</Link>
+        {path.timeEstimate && (
+          <span style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', fontWeight: 400, marginLeft: '0.6rem' }}>
+            {path.steps.length} steps &middot; {path.timeEstimate}
+          </span>
+        )}
       </h3>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
         {path.desc}

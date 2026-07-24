@@ -155,8 +155,26 @@ export default function HonestAssessment() {
           framework is a static map plus an interpretation. Everything below should be read with that in
           mind. (<a href="#landscape" style={{ color: 'var(--color-accent-blue)' }}>Full statement &darr;</a>)
         </p>
+        <p style={{ margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, background: 'rgba(59,130,246,0.07)', borderLeft: '3px solid rgba(59,130,246,0.5)', borderRadius: '4px', padding: '0.75rem 1rem' }}>
+          <strong>What failed, in one paragraph — no jargon (added 2026-07-24 for readers on the beginner
+          path):</strong> This project proposed one equation meant to describe how things hold together at
+          every scale, from atoms to galaxies. When its galaxy predictions were tested against real telescope
+          measurements, it failed every decisive test. It predicted a specific relationship between a
+          galaxy&apos;s mass and its rotation speed — the measured relationship landed far enough away to cross
+          the line the project itself had drawn in advance as &ldquo;this would kill the theory.&rdquo; It puts
+          a hard cap on how much &ldquo;missing gravity&rdquo; a galaxy can display — and about two-thirds of
+          real galaxies display more than that cap allows. And an environmental effect it predicted turned out,
+          when measured, not to exist at all. Where the equation <em>does</em> fit galaxies, it fits only by
+          imitating MOND — a 40-year-old rival theory that tweaks gravity instead of adding dark matter — and
+          never fits better than it. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
+          own scoreboard — zero confirmed predictions, four executed refutations. <strong>Why does the site
+          still exist?</strong> Because a few of the framework&apos;s core ideas have never been testable with
+          existing instruments (untested is not the same as failed), and because this record — a theory testing
+          itself in public and publishing every failure — is itself the point. The paragraph below says the
+          same thing with the actual numbers.
+        </p>
         <p style={{ margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-          <strong>In plain language — what failed:</strong> The sharpest failure is now the galaxy mass&ndash;speed
+          <strong>The same, with the numbers:</strong> The sharpest failure is now the galaxy mass&ndash;speed
           relation (the BTFR, TEST-09, run 2026-07-14): the framework&apos;s built-in ceiling on how much it can
           boost gravity forces a prediction that genuinely differs from the rival theory MOND — and the real
           data (123 SPARC galaxies) fired the pre-stated kill criterion at 3.3σ. The same ceiling caps how

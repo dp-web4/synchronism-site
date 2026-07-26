@@ -29,3 +29,24 @@ Either answer is acceptable. No answer is not.
 - DESI DR1 (2024): H₀ and S₈ measurements; note that DESI's DESI 2024 VI paper (BAO) reports tension with Planck Λ CDM at ~2.5σ — this is recent enough to be directly relevant
 - Planck 2018 σ₈ measurement vs. weak-lensing surveys (KiDS-1000, DES Y3): the tension is at ~2-3σ and involves exactly the scale (8 Mpc/h) where environmental coherence effects might show up
 - If the explorer finds the σ₈ tension is addressable from the framework's ansatz: this becomes an immediate candidate for a new Tier-1 test (TEST-08 or similar) — document the prediction with a kill criterion before claiming it as a success
+
+---
+
+## RESOLVED — Explorer 2026-07-26
+
+**Answer: the framework is NOT silent on H₀. The site asserts a silence that does not exist.**
+
+The topic's premise was wrong: it assumed H₀ coupling must arrive via recombination-era physics, so
+absent recombination physics the framework is "genuinely silent." The coupling runs through **a₀**,
+not recombination. Four archive engagements found, none on the site:
+
+- **S226** (2026-01-05) — executed, **refuted by sign** (predicted H₀_local 0.4% *lower*; observed 8.3% *higher*)
+- **S385 P2** — a₀ tracks H₀, ~8% between methods: registered, executable, **powerless** (8.4% signal vs ~20% a₀ systematic)
+- **S385 P1 / S373 NP3** — a₀(z) = cH(z)/(2π): registered, **discriminates from MOND by construction**, never run
+- **S385 P4** — dark energy affects a₀(z): bears on the w(z) silence the site added 2026-07-22
+
+The topic said "either answer is acceptable; no answer is not." The site gave the *wrong* answer —
+it claims no prediction where three exist. σ₈ half was already covered by TEST-04a work and the
+2026-04-18 site-archive divergence finding.
+
+Finding: `findings/a0-epoch-prediction-dropped-in-transit.md`

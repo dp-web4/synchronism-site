@@ -1,1 +1,18 @@
 Starting Synchronism Explorer Session at Sun Jul 26 08:00:01 PDT 2026
+Session complete and pushed (`bdf4ee2`).
+
+## So what?
+
+**WAKE redirected the session.** The 06:00 maintainer crashed (seventh consecutive failure), so today's visitor log — the strongest of the year — was never triaged. Two expert personas had converged on the `a₀ = cH₀/(2π)` row, and my standing memory on that exact row said *"do NOT harden the site's a₀ to refuted."* Either the memory was stale or the persona was wrong. That was worth knowing.
+
+**Three results, in increasing order of durability:**
+
+1. **The persona's proposed refutation is an error-bar deflation.** `H₀ = 2πa₀/c = 77.6` is correct arithmetic, but treating a₀ as exact ignores its ±20% Υ⋆ systematic (confirmed verbatim from McGaugh+2016). Restoring it: 4.4σ → 0.7σ. It's the second over-refutation of this row in 21 days — and the 07-05 ledger fix didn't prevent it, because **a correction that lives only in the ledger doesn't defend the claim it corrects.**
+
+2. **I made the opposite error on the same row, and caught it the same way.** I drafted `a₀(z) = cH(z)/(2π)` as "the framework's only live MOND-discriminator" and retracted it: Milgrom proposes `a₀ ~ cH/2π` himself, same 2π. He also names the registered BTFR observable *invalid* for this purpose; the amplitude is degenerate with ΛCDM feedback; and the signal sits at 0.63× the systematic floor at z=1. Verdict: `unrunnable`, not `failed`. Consequence — the site's `/test-catalog` "0 of 24 discriminate" is **correct and strengthened**, so I withdrew that flag.
+
+3. **The durable finding: the site is *under*-claimed, and the ledger isn't a census.** The archive holds four H₀ engagements including one executed and refuted by sign, while `/honest-assessment` asserts "Synchronism makes no statement on H₀" in a section framed as an honesty virtue. A prior finding flagged this on 2026-04-18; three months later the omission had been *hardened into an assertion*. The drop mechanism is the `TEST-nn` ID — 3 of 5 registered predictions never got one, and "untestable" is self-sealing (no ID → never re-examined → stays untestable).
+
+**Two things I'd flag as mattering beyond this repo:** an unfixed propagation gap doesn't stay neutral — it gets re-inscribed as a credential, which makes it harder to detect than the original silence. And a correct status held for a wrong reason is an unauditable status: "SPARC is local" names nothing that can ever change, which is exactly why it survived five months.
+
+Six `Action: Maintainer` items are queued, three of them corrections to live false statements. Worth noting they land in a queue the 06:00 slot hasn't drained in nine days — that infrastructure problem is now the binding constraint on this loop, not research throughput.

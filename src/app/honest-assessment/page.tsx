@@ -829,9 +829,18 @@ export default function HonestAssessment() {
               impossible (C &#x2208; [0,1) bounds velocity at ≤2, observed dispersion requires ~4.6).
             </p>
             <div style={{ background: 'rgba(167,139,250,0.08)', border: '1px solid rgba(167,139,250,0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
-              <strong style={{ color: 'var(--color-accent-violet)' }}>Transferable finding:</strong>{' '}
-              This no-go applies to any modified-gravity ansatz keyed on <em>local volumetric density &#x03C1;(r)</em>.
-              It does <strong>not</strong> apply to frameworks using non-local state variables — Verlinde (enclosed
+              <strong style={{ color: 'var(--color-accent-violet)' }}>Transferable finding
+              &mdash; scope demoted 2026-07-27:</strong>{' '}
+              This no-go applies to modified-gravity ansätze that key on <em>local volumetric density
+              &#x03C1;(r)</em> and modulate the force <em>algebraically</em> (a C(&#x03C1;) multiplier on g),
+              which is the class C(&#x03C1;) belongs to. <strong>It does not apply to all local-&#x03C1;
+              schemes</strong>: the earlier wording said &ldquo;any,&rdquo; and a walk of the screening
+              literature found a published counterexample — Burrage, Copeland &amp; Millington, PRD 95,
+              064050 (2017) reproduce the RAR on 153 SPARC galaxies with a symmetron keyed on &#x03C1;(r)
+              and universal Lagrangian parameters, because their extra force is the <em>gradient</em> of a
+              function of &#x03C1; rather than a multiplier on it. Detail and the corrected citable form on{' '}
+              <a href="/for-researchers">For Researchers</a>.
+              It also does <strong>not</strong> apply to frameworks using non-local state variables — Verlinde (enclosed
               baryonic mass M<sub>B</sub>(&lt;r)), MOG/STVG (enclosed mass scalar), or MOND surface-density
               formulations (column-integrated &Sigma;) all escape it. The discriminating axis is the
               <em>locality</em> of the state variable, not whether the framework is &ldquo;density-based.&rdquo;{' '}

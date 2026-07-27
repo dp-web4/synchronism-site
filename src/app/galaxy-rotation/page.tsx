@@ -48,9 +48,18 @@ export default function GalaxyRotation() {
 
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           <strong>The literature already contains both this obstruction and its known escapes
-          (noted 2026-07-10):</strong> density-dependent transitions are a mature field
-          (symmetron/chameleon screening), and the &#x03C1;-vs-g<sub>bar</sub> variable mismatch is
-          the standard reason screened scalars don&apos;t reproduce MOND. The constructive escape is
+          (noted 2026-07-10; corrected 2026-07-27):</strong> density-dependent transitions are a mature
+          field (symmetron/chameleon screening). This paragraph previously claimed that &ldquo;the
+          &#x03C1;-vs-g<sub>bar</sub> variable mismatch is the standard reason screened scalars
+          don&apos;t reproduce MOND.&rdquo; <strong>That attribution was never sourced and is wrong</strong>:
+          the screening literature does not make it, and Burrage, Copeland &amp; Millington, PRD 95,
+          064050 (2017) reproduce the radial acceleration relation for 153 SPARC galaxies with a scalar
+          keyed on local volumetric &#x03C1;(r) and universal Lagrangian parameters. Their extra force is
+          the <em>gradient</em> of a function of &#x03C1;, not a multiplier on g — which is what lets a
+          density-keyed field track an acceleration-keyed relation, and is precisely what C(&#x03C1;)
+          does not do. See the counterexample paragraph on{' '}
+          <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>.
+          The other constructive escape is
           superfluid dark matter (Berezhiani &amp; Khoury 2015): a <em>local</em> density criterion
           switches on a condensate, but the MOND-like force is carried by the condensate&apos;s
           phonons — the force scale enters independently of the switch. C(&#x03C1;) conflates switch

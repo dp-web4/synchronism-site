@@ -68,8 +68,11 @@ export default function ForResearchers() {
             acceleration threshold (forced by the BTFR: r<sub>t</sub> &prop; V&sup2;, M &prop; V&#x2074;,
             so &rho;<sub>t</sub> &prop; a&#x2080;&sup2;/GV&sup2;); the framework asserts
             &rho;<sub>crit</sub> &prop; V<sup>+2</sup> — inverted sign, 240&times;&ndash;300,000&times;
-            magnitude error growing with V. This is profile-independent and holds for <em>any</em>{' '}
-            local-&rho; MOND mimic, not just this one — the no-go projected onto the velocity axis.
+            magnitude error growing with V. This is profile-independent within the family it covers.{' '}
+            <strong>Scope corrected 2026-07-27:</strong> an earlier version of this line claimed the
+            result holds for <em>any</em> local-&rho; MOND mimic. It does not — see the counterexample
+            paragraph below. It holds for local-&rho; schemes that modulate the force{' '}
+            <em>algebraically</em> (C(&#x03C1;)&middot;g), which is the class C(&#x03C1;) belongs to.
             Detail on <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
@@ -102,14 +105,46 @@ export default function ForResearchers() {
             by the condensate&apos;s <em>phonons</em>, so the force scale enters independently of the
             switching criterion. That separation is exactly what C(&#x03C1;) lacks: it conflates the
             switch and the force into one local function, and that conflation — not the density
-            threshold per se — is what the data kill. Related prior art for the wrong-variable
-            diagnosis: symmetron/chameleon screening, where density-dependent transitions are a mature
-            field and the &#x03C1;-vs-g<sub>bar</sub> mismatch is the standard reason screened scalars
-            don&apos;t reproduce MOND. (Whether the BTFR-forced V<sup>&minus;2</sup> argument constrains
-            the superfluid&apos;s condensation threshold is an open check, queued — the expectation is
-            no, because the phonon coupling carries the a&#x2080; scale separately.) Escape taxonomy:
-            non-local theory (AeST-class), or local-criterion-<em>gated medium</em>
-            (superfluid-DM-class); local-density <em>direct</em> modulation remains excluded.
+            threshold per se — is what the data kill. (Whether the BTFR-forced V<sup>&minus;2</sup>{' '}
+            argument constrains the superfluid&apos;s condensation threshold is an open check, queued —
+            the expectation is no, because the phonon coupling carries the a&#x2080; scale separately.)
+            Escape taxonomy: non-local theory (AeST-class), local-criterion-<em>gated medium</em>{' '}
+            (superfluid-DM-class), or <em>differential</em> local-density coupling (symmetron-class,
+            added 2026-07-27 — see below); <em>algebraic</em> local-density modulation, the class
+            C(&#x03C1;) belongs to, remains excluded. <strong>Attribution withdrawn 2026-07-27:</strong>{' '}
+            this paragraph previously stated that &ldquo;the &#x03C1;-vs-g<sub>bar</sub> mismatch is the
+            standard reason screened scalars don&apos;t reproduce MOND.&rdquo; That attribution was never
+            sourced, and the screening literature does not make it. Hinterbichler &amp; Khoury, PRL 104,
+            231301 (2010) do not mention MOND, rotation curves, or dark matter anywhere; Joyce, Jain,
+            Khoury &amp; Trodden, Phys. Rep. 568, 1 (2015) mention MOND once, attached to the{' '}
+            <em>acceleration</em>-keyed (k-mouflage) screening class as a construction tool — the
+            opposite valence; and the published reasons chameleon f(R) fails on SPARC are the
+            f<sub>R0</sub> spread and core/cusp degeneracy (Naik, Puchwein, Davis &amp; Arnold, MNRAS
+            480, 5211 (2018); MNRAS 489, 771 (2019)), not a variable mismatch.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Counterexample found — the generality claim is withdrawn (2026-07-27):</strong>{' '}
+            the screening-literature vein flagged as unwalked on 2026-07-23 has now been walked, and it
+            contains not a precedent but a <em>counterexample</em>. Burrage, Copeland &amp; Millington,{' '}
+            <em>Radial acceleration relation from symmetron fifth forces</em>, PRD 95, 064050 (2017)
+            [erratum PRD 95, 129902, conclusions unaltered] reproduce the RAR for the 153-galaxy SPARC
+            sample with no cold dark matter, using a scalar keyed on the <em>local volumetric density</em>{' '}
+            &#x03C1;(r), with the Lagrangian parameters (&mu;, M, &lambda;) held universal across the
+            sample. The mechanism is the distinction this page was missing: their extra force is the{' '}
+            <em>gradient</em> of a function of &#x03C1; — g<sub>sym</sub>(r) = (c&sup2;/2)&thinsp;d/dr
+            [(&phi;(r)/M)&sup2;] — not a multiplier on g, and differentiating a density profile is
+            exactly what lets a density-keyed field track an acceleration-keyed relation. They obtain a
+            closed form in acceleration variables: g<sub>sym</sub> = g<sub>bar</sub>/(exp&thinsp;&radic;
+            (g<sub>bar</sub>/g&dagger;) &minus; 1), g&dagger; &asymp; 1.20&times;10<sup>&minus;10</sup>{' '}
+            m&thinsp;s<sup>&minus;2</sup>. <strong>Corrected statement:</strong> local volumetric density
+            is <em>not</em> excluded as an organizing variable for the RAR; what is excluded is{' '}
+            <em>algebraic</em> local-density modulation of the force. Density-keyed schemes do run into
+            trouble elsewhere — the symmetron cannot supply the lensing mass without extending the field
+            content (Burrage, Copeland, K&auml;ding &amp; Millington, PRD 99, 043539 (2019)), and BCM
+            2017&apos;s own caveat is Solar-System tension in the unscreened regime (partly retired by
+            O&apos;Hare &amp; Burrage, PRD 98, 064019 (2018)) — but those are <em>different</em>{' '}
+            refutations than the one this no-go asserts, so they do not rescue its generality. A no-go
+            dies to one existence proof of the thing it forbids.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>The live discriminator context — the External Field Effect (added 2026-07-24):</strong>{' '}
@@ -131,15 +166,28 @@ export default function ForResearchers() {
             &Sigma;<sup>&dagger;</sup>/central-surface-density line through Milgrom 2016; Famaey &amp; McGaugh
             2012; Banik &amp; Zhao 2022) and the modern variable-comparison literature (McGaugh 2004; Lelli et
             al. 2017; Stiskalek &amp; Desmond 2023) were searched for a prior quantified instance of local
-            volumetric density failing as the organizing variable. <strong>None exists</strong>: every published
-            discrimination tests acceleration against radius, orbital frequency, size, or surface density —
+            volumetric density failing as the organizing variable. <strong>None exists in that corpus</strong>{' '}
+            (scope added 2026-07-27 — the original wording said &ldquo;none exists,&rdquo; unqualified, which
+            was false: the screening corpus, named as unwalked in this very paragraph, contains a
+            counterexample. A prior-art null is bounded by its corpus and must be stated that way):
+            every published discrimination <em>in the MOND variable-comparison literature</em> tests
+            acceleration against radius, orbital frequency, size, or surface density —
             &#x03C1;(r) was never in any tested variable set (Stiskalek &amp; Desmond&apos;s 2023 feature sweep
             is the nearest miss: three surface densities, no volume density). The argument <em>template</em> of
             the sign statement is Milgrom&apos;s own — length-keyed modifications were excluded in 1983 for
             forcing Tully-Fisher slope 2 instead of 4 (1983b &sect;III; Sanders 1986 for the direction form) —
-            and the volumetric-density instantiation quantified here appears to be the first. Caveats: Milgrom
-            1983b was verified through secondary witnesses (the archival scan is image-only), and the
-            screening-literature vein (chameleon/symmetron) has not been separately walked.
+            and the volumetric-density instantiation quantified here appears to be the first{' '}
+            <em>for the algebraic-coupling class</em>. Caveats: Milgrom 1983b was verified through
+            secondary witnesses (the archival scan is image-only); the screening-literature vein was
+            walked on 2026-07-27 and <strong>overturned the unqualified form of this null</strong> — see
+            the counterexample paragraph above; and the <em>triage lemma</em> is prior art independently
+            of the quantification — the screening literature has classified modified-gravity mechanisms
+            by which derivative of &Phi; keys the modification (&Phi;: chameleon/symmetron/dilaton;
+            &nabla;&Phi;, i.e. acceleration: k-mouflage; &nabla;&sup2;&Phi;, i.e. density by Poisson:
+            Vainshtein) since Joyce, Jain, Khoury &amp; Trodden, Phys. Rep. 568, 1 (2015), a strictly
+            finer split than this page&apos;s two-way local/non-local version, and one that files the
+            viable Vainshtein/Galileon class under &ldquo;local density&rdquo; — including the working
+            relativistic MOND of Babichev, Deffayet &amp; Esposito-Far&egrave;se, PRD 84, 061502(R) (2011).
           </p>
           <Link href="/honest-assessment" style={{ fontSize: '0.85rem' }}>Full closure documentation in Honest Assessment &rarr;</Link>
         </div>

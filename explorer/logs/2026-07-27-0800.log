@@ -1,1 +1,24 @@
 Starting Synchronism Explorer Session at Mon Jul 27 08:00:01 PDT 2026
+Done. Both repos pushed, site builds clean.
+
+## What happened
+
+I took `vocabulary-test-on-own-flagship-artifact.md` (HIGH, gates the preprint track) and pre-registered the verdict rules **before** searching — the topic came pre-loaded with its author's guess ("the gate probably holds narrowly"), which is exactly the anchoring that produced this program's two previously-caught fabricated refutations.
+
+**The flagship artifact has a published counterexample.** [Burrage, Copeland & Millington, PRD 95, 064050 (2017)](https://arxiv.org/abs/1610.07529) reproduce the radial acceleration relation for **153 SPARC galaxies**, no cold dark matter, with a symmetron keyed on **local volumetric ρ(r)** and universal Lagrangian parameters. The site's citable form says the no-go "holds for **any** local-ρ MOND mimic." A no-go dies to one existence proof.
+
+**The mechanism is the useful part, and the site nearly had it.** Their force is the *gradient* of a function of ρ; C(ρ) is a *multiplier* on g. Differentiating a density profile is what lets a density-keyed field track an acceleration-keyed relation. So the real axis is **algebraic vs differential coupling**, not local vs non-local. The corrected claim is shorter, sharper, and survives.
+
+**Two false statements were live on the flagship** — the unqualified "None exists" (whose own caveat, four sentences later, admitted the corpus was unwalked), and a **fabricated consensus**: "the ρ-vs-g_bar mismatch is *the standard reason* screened scalars don't reproduce MOND." No source I checked makes it; the leading paper contradicts it. I corrected `/for-researchers`, `/galaxy-rotation`, `/honest-assessment` myself — the 06:00 maintainer slot has produced zero completed sessions since 07-18 and these shouldn't sit live.
+
+**The detector failed its first out-of-sample test, mechanistically.** My blind query had all the right nouns and still missed, because it was phrased negatively (*"...cannot reproduce..."*). Searching for the **claim** retrieves confirmations, never counterexamples — the detector is confirmation-seeking by construction, which plausibly also explains its 0/6 specificity.
+
+## The thing worth your attention
+
+Two failures this session share one shape: the careful, pre-registered 07-23 audit **scoped its corpus by the claim it wanted to protect**, and the detector **phrases its searches as the claim it expects to confirm**. Both search where the answer they want lives. That's one correctable defect, not two — and it sits underneath a program whose entire method is self-audit.
+
+Also: my own registered branch set (qualitative precedent / quantified precedent / neither) had **no slot for "the claim is false."** Registration didn't just discipline the verdict — it exposed which question I was structurally unable to ask.
+
+**Constructive lead, first in weeks:** run C(ρ) *differentially* — g ∝ ∇[C(ρ)] instead of C(ρ)·g. Executable on local SPARC data. And BCM's ρ_\* = μ²M² is a Lagrangian constant (V⁰), not the V⁻² our sign argument demands — yet they fit. Either that argument silently assumes algebraic coupling, or one of the two results is wrong. Pure arithmetic on published numbers, and it's internal to the claim that survived.
+
+**Preprint gate for transferable null #1: not cleared.**

@@ -1,1 +1,24 @@
 Starting Synchronism Maintainer Session at Mon Jul 27 06:00:01 PDT 2026
+Session complete. Both repos pushed.
+
+## WAKE first — the feedback did reveal research gaps, and one was a timing signal
+
+The strongest thing in today's log wasn't a finding, it was a **coincidence**. On 07-23 the prior-art walk cleared the gate for the locality no-go, recording a named residual hole: *"screening-literature vein."* On 07-27 the researcher persona — no access to that note, browsing only the live site — walked into exactly that vein and called it the thing that would sink the claim in review, naming symmetron (a scalar whose Z₂ symmetry restores above a critical *local matter density*, with an action). A named unclosed hole re-derived from outside in four days is load-bearing. Filed as a **gate on the preprint track**.
+
+Second proposal: `B_max = 1/Ω_m ≈ 3.17` is called the framework's only structural difference from MOND, every executed galaxy refutation descends from it, and **it is never derived**. Worse, a boost is a dynamical/baryonic ratio whose cosmic value is Ω_m/Ω_b = 6.40 — under which TEST-10's median statistic *passes*. The kill still stands on f_DM,max = 0.927 (needs B ≥ 13.7), but the headline "69% exceed" is convention-dependent.
+
+## The site was under-claiming
+
+`/test-catalog`, `/for-researchers` and `/honest-assessment` all said "0 tests discriminate from MOND+EFE+ΛCDM" while `/tier-1-existing` said of TEST-10 "this observable discriminates, and the framework loses it." TEST-09 separated the models at 3.3σ. Split into "0 could *select* Synchronism" vs "2 discriminated, both selecting MOND." Correcting upward is rarer here than downward, and the machinery wasn't set up for it.
+
+Also rewrote `/falsifiability`, which was selling two retracted results as "genuinely novel," quoting a withdrawn test's criterion as exemplary, and listing a GW criterion at 10⁻¹⁶ against GW170817's 10⁻¹⁵ best bound — a criterion below the best limit ever measured, on the page arguing the framework is falsifiable. Every criterion now carries a reachability tag.
+
+## Verified before fixing — two persona "high" findings didn't survive
+
+The Clopper–Pearson CI already existed on `/a2acw` (persona used one-sided 0.393, site shows two-sided 0.46); `/test-roadmap` isn't a route; and the sensitivity/specificity labels aren't swapped — the site's positive class is "is a reparametrization," under which they're consistent. The *real* defect was that the convention was never stated, which is why two experts misread it.
+
+## What I'd flag for you
+
+Five of today's findings came from arithmetic on numbers **already published on the site**, with zero new data. The "explorer loop reached a fixed point" conclusion was measured along the external-audit axis; the internal-consistency axis was never worked and is visibly not converged. That bears on the preprint-packaging decision — the program may have converged where it was looking, not everywhere. Seeded as a topic with a concrete instrument (a relation registry), but the call is yours.
+
+I deferred the P2 onboarding work deliberately — it's a coherent redesign, not patches, and piecemeal fixes would add another layer over a stale spine. It's now the oldest unaddressed item in the queue.

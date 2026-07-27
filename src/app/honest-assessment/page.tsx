@@ -261,7 +261,48 @@ export default function HonestAssessment() {
           discriminating test — whether the compander&apos;s transition curve (γ=2) differs from McGaugh&apos;s MOND
           interpolating function — was run on 2807 real SPARC points. γ=2 is refuted at ΔBIC=+184
           (conservative: ≈33). Free-γ converges to γ≈0.49&nbsp;=&nbsp;MOND, with RMS identical to McGaugh.
-          Net discriminating galaxy tests vs MOND: <strong>0, by execution</strong>.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>How to read the ΔBIC ladder (sharpened 2026-07-27, external-reviewer point).</strong>{' '}
+          The two numbers do different work and should not be read as one scale. The γ=2 result is a
+          pure likelihood verdict (Δk&nbsp;=&nbsp;0): ΔBIC&nbsp;=&nbsp;+184 is decisive misfit. The free-γ
+          result is almost pure parameter charge: with N&nbsp;=&nbsp;2807, ln&nbsp;N&nbsp;=&nbsp;7.94, so one
+          added free parameter costs +7.94 in BIC <em>before any likelihood is considered</em>. The observed
+          ΔBIC&nbsp;=&nbsp;+7.1 therefore implies Δχ²&nbsp;≈&nbsp;&minus;0.84 — the free-γ compander fits the
+          data <em>marginally better</em> than McGaugh&apos;s ν and loses on BIC solely as a complexity
+          charge for carrying a knob MOND does not need. The honest statement is not &ldquo;collapses to
+          MOND equivalence&rdquo; but the stronger one: <strong>the compander is a strictly worse-parameterized
+          reparametrization of the RAR, buying Δχ²&nbsp;&lt;&nbsp;1 for one added degree of freedom.</strong>{' '}
+          (Open bookkeeping item: whether a₀ was floated in both arms, i.e. whether Δk&nbsp;=&nbsp;1 or 2.
+          At Δk&nbsp;=&nbsp;2 the penalty is 15.9 and the compander fits better by Δχ²&nbsp;≈&nbsp;8.8 —
+          a different number, the same conclusion. The fit record should state which.)
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>Discrimination, stated precisely (corrected 2026-07-27).</strong> This page previously
+          read &ldquo;net discriminating galaxy tests vs MOND: 0, by execution.&rdquo; That sentence was
+          written on 2026-05-21, before TEST-09 and TEST-10 executed, and it is <em>false as written</em> —
+          it also contradicted{' '}
+          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>, which
+          says of TEST-10 &ldquo;this observable discriminates, and the framework loses it.&rdquo; The claim
+          splits in two, and both halves are worth stating:
+        </p>
+        <ul style={{ color: 'var(--color-text-secondary)' }}>
+          <li>
+            <strong>0 executed tests could select Synchronism over MOND+EFE+ΛCDM.</strong> This is the true
+            statement, and it is the one the site meant.
+          </li>
+          <li>
+            <strong>2 executed tests discriminated between them, and both selected MOND</strong> — TEST-09
+            (BTFR slope: MOND 0.6σ passes, Synchronism 3.3σ fails) and TEST-10 (dwarf DM fractions: MOND
+            median residual &minus;0.03, Synchronism +0.18). A test that separates two models at 3.3σ
+            <em> is</em> a discriminating test regardless of which model wins; that is what discrimination
+            means. Booking them as zero was an <strong>under-claim</strong> — the site&apos;s two strongest
+            empirical results were being reported as nothing.
+          </li>
+        </ul>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          The RAR transition-shape test is the one that genuinely <em>cannot</em> discriminate: at free γ
+          the curves coincide. Discrimination is absent there, not across the executed ledger.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>The entity criterion Γ&nbsp;&lt;&nbsp;m</strong>, previously labeled the sole surviving novel
@@ -959,6 +1000,21 @@ export default function HonestAssessment() {
               (early-time fix) or late-time acceleration (late-time fix). Neither has been worked out.
               A framework claiming cosmological scope that does not address H₀ tension is leaving
               the most-cited empirical opening in cosmology off the table.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.75rem', paddingTop: '0.75rem', borderTop: '1px solid rgba(239,68,68,0.25)' }}>
+              <strong>Correction (2026-07-27): &ldquo;makes no statement on H₀&rdquo; is too strong, and
+              this page was the one over-claiming its own silence.</strong> The framework carries
+              a₀ = cH₀/(2π) as Claim 3&apos;s key equation. That relation is invertible: with the
+              measured a₀ = 1.2 × 10⁻¹⁰ m/s² it returns
+              H₀ = 2πa₀/c ≈ <strong>77.6 km/s/Mpc</strong> — above SH0ES by several σ and far above the
+              CMB value. So there <em>is</em> an H₀ consequence; it is simply unflattering, and it was
+              being booked as no statement at all. What remains true is the substantive point above:
+              no <em>mechanism</em> for the tension has been worked out, neither an early-time nor a
+              late-time fix. The correct badge is a failing soft constraint, not silence — and it is one
+              more reading on which a₀ ≈ cH₀/2π looks like numerology rather than a derivation. Flagged
+              by the graduate-physics visitor pass; the same inversion had been noted internally
+              2026-07-26 without reaching this page, which is the propagation break rather than the
+              physics.
             </p>
           </div>
         </div>

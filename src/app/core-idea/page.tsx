@@ -81,13 +81,32 @@ export default function CoreIdea() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>&#x03B3;</div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-              2/&#x221A;N<sub>corr</sub>: coupling strength
+              2/&#x221A;N<sub>corr</sub>: <strong>transition sharpness</strong>
+              <span style={{ color: 'var(--color-text-muted)', display: 'block', marginTop: '0.35rem', fontSize: '0.95em' }}>
+                ⚠ This card used to read &ldquo;coupling strength&rdquo; (corrected 2026-07-27). That is
+                the wrong <em>kind</em> of quantity: the Hill identity proved below makes &#x03B3; a
+                <strong> Hill coefficient</strong> — a log-log slope, with Hill index n&nbsp;=&nbsp;2&#x03B3; —
+                not a coupling. Also note the map 2/&#x221A;N<sub>corr</sub> is audited{' '}
+                <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>sign-inverted</a>,
+                and the galaxy pin &#x03B3;&nbsp;=&nbsp;2 inverts to N<sub>corr</sub>&nbsp;=&nbsp;1 — the
+                ideal-gas value.
+              </span>
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>&#x03C1;<sub>crit</sub></div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
               A &times; V<sub>flat</sub>&sup2;: saturation knee (not a critical point)
+              <span style={{ color: '#ef4444', display: 'block', marginTop: '0.35rem', fontSize: '0.95em' }}>
+                ⚠ <strong>This scaling is refuted, and had been sitting here uncaveated
+                (added 2026-07-27).</strong> The BTFR forces &#x03C1;<sub>crit</sub> &#x221D; V<sup>&minus;2</sup>,
+                the opposite sign to the V<sup>+2</sup> written above: at the knee GM/r² = a₀ gives
+                r = &#x221A;(GM/a₀), so &#x03C1; ~ M/r³ &#x221D; M<sup>&minus;1/2</sup> &#x221D; V<sup>&minus;2</sup>{' '}
+                using M &#x221D; V⁴. See the{' '}
+                <a href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>locality no-go</a>.
+                The constant A is separately unanchored — its stated first-principles formula is off
+                by ~600&times; from the value in use.
+              </span>
             </div>
           </div>
         </div>

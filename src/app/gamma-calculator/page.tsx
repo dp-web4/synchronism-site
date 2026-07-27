@@ -5,10 +5,7 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
-
-function gammaFromNcorr(n: number): number {
-  return 2 / Math.sqrt(n);
-}
+import { GAMMA_PRESETS, gammaFromNcorr, GALAXY_PIN_GAMMA, GALAXY_SPARC_GAMMA } from '@/lib/gammaPresets';
 
 function regimeInfo(g: number): { label: string; color: string; desc: string } {
   if (g > 1.4) return { label: 'Weakly Correlated (γ-sharp)', color: '#8b5cf6', desc: 'Few correlated particles; large γ → steepest C(ρ) sigmoid. C(ρ) near zero. Note: per Caveat 2, this is where γ assigns the sharpest transition — opposite to condensed-matter intuition (weakly correlated systems don\'t have sharp phase transitions in the real world).' };
@@ -17,14 +14,7 @@ function regimeInfo(g: number): { label: string; color: string; desc: string } {
   return { label: 'Collective Regime (γ-flattest)', color: '#10b981', desc: 'Superconductors, BEC, superfluids (N_corr ≫ 1). C(ρ) saturates near 1. Note (Caveat 2): the smallest γ values (flattest C(ρ) curves) go to the most collective systems — BCS superconductors (N_corr~10⁷, γ~6×10⁻⁴) have the flattest transition in this formula, while real BCS has a very sharp Tc. See Caveat 2 for the sign-inversion explanation.' };
 }
 
-const presets = [
-  { label: 'Ideal gas', ncorr: 1, story: 'Nothing moves together in an ideal gas — every particle is its own unit (N_corr = 1) — so γ hits its maximum of 2. In this framework that means the sharpest possible switch from "individuals" to "crowd" as density rises.' },
-  { label: 'Liquid water', ncorr: 4, story: 'Water molecules hydrogen-bond into small transient clusters (~4 moving together), which drops γ from 2 toward 1 — the boundary zone where the framework says chemistry lives. Compare: one preset click took you from "lone particles" to "small teams."' },
-  { label: 'Enzyme site', ncorr: 30, story: 'An enzyme’s active site moves as one unit of ~30 atoms. More teamwork → smaller γ → a gentler, earlier-starting S-curve. You’re watching γ measure "how big is the team?"' },
-  { label: 'Ferromagnet', ncorr: 100, story: 'In a magnet, ~100 spins per correlated patch flip together. γ keeps falling as the teams get bigger — and notice the direction: bigger teams are getting FLATTER curves, not sharper ones.' },
-  { label: 'BCS superconductor (10⁷ — mid of physical 10⁶–10⁹)', ncorr: 10000000, story: 'Ten million Cooper pairs overlap in a superconductor, so γ collapses to ~0.0006 — the flattest curve on this tool. That is the audited failure in one click: a real superconductor has one of the SHARPEST transitions in nature, and this formula gives it the flattest. The formula’s sharpness direction is inverted.' },
-  { label: 'BEC', ncorr: 1000000, story: 'A million atoms share one quantum state in a BEC — maximal quantum coherence — yet this "coherence" function scores it nearly flat and low. That mismatch is why the site warns that C is not quantum coherence.' },
-];
+const presets = GAMMA_PRESETS;
 
 export default function GammaCalculator() {
   const [ncorr, setNcorr] = useState(4);
@@ -70,7 +60,7 @@ export default function GammaCalculator() {
         {/* Load-bearing caveats — promoted to top */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #f59e0b', background: 'rgba(245, 158, 11, 0.05)' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontWeight: 600, marginBottom: '0.25rem', fontSize: '0.9rem' }}>
-            Three caveats before using this tool:
+            Four caveats before using this tool:
           </p>
           <ol style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', paddingLeft: '1.25rem', margin: 0, lineHeight: 1.7 }}>
             <li>
@@ -82,6 +72,26 @@ export default function GammaCalculator() {
             </li>
             <li>
               <strong>Preset N<sub>corr</sub> values are back-fits, not measurements.</strong> For BCS superconductors, the physical Cooper-pair coherence volume contains 10<sup>6</sup>–10<sup>9</sup> pairs; the preset uses N<sub>corr</sub> = 10<sup>7</sup> (mid-range of physical estimates) — fitted to produce a plausible γ (6.32×10<sup>−4</sup>), not derived from the Hamiltonian. No protocol exists for converting a system&apos;s Hamiltonian into N<sub>corr</sub> without first fitting γ to observed behavior. Every γ &ldquo;prediction&rdquo; is therefore a consistency check on a back-fitted parameter, not a first-principles result.
+            </li>
+            <li>
+              <strong>Run the framework&apos;s own galaxy parameters through this tool and it refutes them (added 2026-07-27).</strong>{' '}
+              Until today this page never applied its map to the one sector where the framework
+              actually uses γ. Inverting the framework&apos;s own relation, N<sub>corr</sub> = (2/&#x03B3;)²:
+              the galaxy pin &#x03B3; = {GALAXY_PIN_GAMMA} quoted on <a href="/core-idea" style={{ color: 'var(--color-accent-blue)' }}>Core Idea</a> gives
+              N<sub>corr</sub> = <strong>1</strong> — the <em>ideal gas</em> preset, exactly; and the SPARC best fit
+              &#x03B3; &#x2248; {GALAXY_SPARC_GAMMA} quoted on <a href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</a> gives
+              N<sub>corr</sub> &#x2248; <strong>17</strong>, between liquid water (4) and an enzyme active site (30).
+              So the framework&apos;s original galaxy-scale parameter says a galaxy is a system of one
+              correlated unit, and its data-preferred value says a galaxy is about as collectively
+              organized as a small protein pocket — while a BCS superconductor in the same table gets 10⁷.
+              Both galaxy numbers were published on this site for months, one arithmetic step apart, on
+              pages that never cited each other. <strong>Either &#x03B3; = 2/&#x221A;N<sub>corr</sub> is void at
+              galaxy scale — in which case it is not a framework-wide relation and should stop being
+              presented as one — or the framework asserts the above.</strong> The SPARC row is now in the
+              preset table below so the arithmetic is one click away. (Note this also breaks the
+              2026-06-06 finding that flipping the sign to &#x03B3; &#x221D; &#x221A;N<sub>corr</sub> &ldquo;changes
+              nothing calibrated&rdquo;: that held only because &#x03B3; = 2 sits at the fixed point
+              N<sub>corr</sub> = 1. At N<sub>corr</sub> &#x2248; 17 the flip moves &#x03B3; by a factor ~8.)
             </li>
           </ol>
         </div>

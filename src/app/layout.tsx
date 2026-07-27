@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteSearch from "@/components/SiteSearch";
+import { getAllTerms } from "@/lib/terms";
 import "./globals.css";
+
+// Derived, not hand-written: the nav tooltip read "30+ terms defined" while the glossary held
+// 72, which a docs-audit visitor pass (2026-07-27) caught as stale metadata under-selling the
+// site's strongest reference page. Computing it removes the class of defect, not just the instance.
+const GLOSSARY_TERM_COUNT = getAllTerms().length;
 
 export const metadata: Metadata = {
   title: {
@@ -62,7 +68,7 @@ export default function RootLayout({
             <Link
               href="/glossary"
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
-              title="30+ terms defined"
+              title={`${GLOSSARY_TERM_COUNT} terms defined`}
             >
               Glossary
             </Link>

@@ -264,7 +264,18 @@ export default function GalaxyRotation() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             <strong>The fork that closes the question:</strong> free-γ converges to γ≈0.49 with
             RMS identical to McGaugh to four digits. ΔBIC=+7 is entirely the BIC penalty for the
-            extra parameter — the fit improvement is zero. There is no γ for which the compander is
+            extra parameter — the fit improvement is zero.{' '}
+            <strong>Made quantitative (2026-07-27, external-reviewer point):</strong> with N = 2807,
+            ln&nbsp;N = 7.94, so one added free parameter costs +7.94 in BIC <em>before any likelihood
+            is considered</em>. The observed +7.1 therefore implies Δχ² ≈ &minus;0.84 — the free-γ
+            compander fits the data <em>marginally better</em> than McGaugh&apos;s ν and loses purely
+            on the complexity charge for a knob MOND does not need. That is a sharper statement than
+            &ldquo;collapses to MOND equivalence&rdquo;: the compander is a strictly worse-parameterized
+            reparametrization of the RAR, buying Δχ² &lt; 1 for one degree of freedom. (Bookkeeping the
+            fit record should state: whether a₀ was floated in both arms, i.e. Δk = 1 or 2. At Δk = 2
+            the penalty is 15.9 and the compander fits better by Δχ² ≈ 8.8 — different number, same
+            conclusion.) Note the contrast with the γ=2 row: ΔBIC = +184 there is <em>pure likelihood</em>{' '}
+            (Δk = 0). The two numbers do different work and are not one ladder. There is no γ for which the compander is
             both (a) distinct from MOND and (b) consistent with SPARC. Pin γ=2 → refuted. Fit γ → MOND.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>

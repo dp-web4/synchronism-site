@@ -74,8 +74,10 @@ export default function CoherenceExplorer() {
             rule runs <em>backwards</em> against real condensed-matter physics (the most correlated
             systems get the flattest curves; real BCS transitions are among nature&apos;s sharpest), and
             the &#x201C;&#x03C1;<sub>crit</sub>&#x201D; slider marks a <em>saturation knee</em>, not the
-            curve&apos;s midpoint &mdash; at &#x03C1;<sub>crit</sub> the curve already reads C &#x2248; 0.88;
-            the true C = 0.5 midpoint sits near 0.32&#x00B7;&#x03C1;<sub>crit</sub>. Details in the caveats below.
+            curve&apos;s midpoint &mdash; at &#x03C1;<sub>crit</sub> and &#x03B3; = 2 the curve already reads
+            C &#x2248; 0.88, and the true C = 0.5 midpoint sits near 0.32&#x00B7;&#x03C1;<sub>crit</sub>.
+            Both numbers are &#x03B3;-specific: the live readout by the &#x03C1;<sub>crit</sub> slider
+            recomputes them as you drag &#x03B3;. Details in the caveats below.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(239,68,68,0.06)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(239,68,68,0.4)' }}>
             <strong>&#x26A0; Terminology note for physicists:</strong> &ldquo;Coherence&rdquo; here means <em>classical collective ordering</em> (C&nbsp;&#x2248;&nbsp;0 = independent/quantum-like; C&nbsp;&#x2248;&nbsp;1 = classically ordered). This is <em>anti-correlated</em> with <strong>quantum phase coherence</strong> as used in condensed-matter physics, where BEC/BCS condensates &mdash; the most quantum-coherent systems known &mdash; would sit at low C by this measure (due to their large N<sub>corr</sub>). The two axes are orthogonal: macroscopic quantum states are simultaneously quantum <em>and</em> collective. The site uses &ldquo;coherence&rdquo; in the ordering/classicality sense, not the off-diagonal-long-range-order sense.
@@ -103,8 +105,10 @@ export default function CoherenceExplorer() {
             &#x03C1; axis; on a log axis, the peak slope grows as &#x03B3; <em>increases</em> &mdash;
             e.g. peak dC/d(log&#x2081;&#x2080;&#x03C1;) &#x2248; 0.375 at &#x03B3;=2 vs &#x2248; 0.25 at
             &#x03B3;=0.5 &mdash; consistent with &#x03B3;=2 being the sharpest curve.)
-            The slider goes down to &#x03B3; = 0.01: BCS superconductors sit near &#x03B3; &#x2248; 0.02 and
-            BEC near &#x03B3; &#x2248; 0.002 (use the{' '}
+            The slider goes down to &#x03B3; = 0.01: on the canonical ladder BEC sits near
+            &#x03B3; &#x2248; 2&#xD7;10<sup>&#x2212;3</sup> (N<sub>corr</sub> = 10<sup>6</sup>) and BCS
+            superconductors near &#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>
+            (N<sub>corr</sub> = 10<sup>7</sup>) &mdash; both below the slider&apos;s floor (use the{' '}
             <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
             to reach those regimes). At very low &#x03B3; the curve is nearly flat &mdash; high coherence
             at almost all densities, which is the strongly collective regime.
@@ -124,7 +128,7 @@ export default function CoherenceExplorer() {
           <ul style={{ marginTop: '0.5rem', marginBottom: 0, color: 'var(--color-text-secondary)' }}>
             <li><strong>ln(x)</strong> — logarithm: it compresses huge ranges into small ones. A density 1,000× bigger becomes only ~7 units bigger. This is why the curve works across quantum to cosmic scales.</li>
             <li><strong>tanh(u)</strong> — the &ldquo;S-curve&rdquo; shape. For very negative u it returns ≈ 0; for large positive u it returns ≈ 1; near zero it rises steeply. Think of a dimmer switch that snaps rather than fading gradually.</li>
-            <li><strong>&#x03B3;</strong> — controls how quickly the snap happens. Large &#x03B3; (γ = 2, free atoms) = a sharp cliff. Small &#x03B3; (γ ≈ 0.02, superconductors) = a long gentle ramp.</li>
+            <li><strong>&#x03B3;</strong> — controls how quickly the snap happens. Large &#x03B3; (γ = 2, free atoms) = a sharp cliff. Small &#x03B3; (γ ≈ 6×10⁻⁴, superconductors) = a long gentle ramp.</li>
             <li><strong>&#x03C1;<sub>crit</sub></strong> — the density where the middle of the S-curve sits; a reference point set by fitting, not a physical critical point.</li>
           </ul>
         </div>
@@ -202,11 +206,17 @@ export default function CoherenceExplorer() {
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               <strong>Note:</strong> &#x03C1;<sub>crit</sub> is a <em>saturation knee</em>, not a critical density
-              in the phase-transition sense. At &#x03C1; = &#x03C1;<sub>crit</sub> with &#x03B3; = 2,
-              C = tanh(2&middot;ln2) &#x2248; 0.88 — the function is already 88% saturated.
-              The C = 0.50 midpoint occurs at &#x03C1; &#x2248; 0.32&middot;&#x03C1;<sub>crit</sub>,
-              well below &#x03C1;<sub>crit</sub>. The &ldquo;+1&rdquo; regulator inside the ln breaks
-              sigmoid symmetry.
+              in the phase-transition sense. At &#x03C1; = &#x03C1;<sub>crit</sub> and the current
+              &#x03B3; = {gamma.toFixed(2)}, C = tanh({gamma.toFixed(2)}&middot;ln2) &#x2248;{' '}
+              {Math.tanh(gamma * Math.LN2).toFixed(3)} — the &ldquo;+1&rdquo; regulator inside the ln breaks
+              sigmoid symmetry, so &#x03C1;<sub>crit</sub> is not the curve&apos;s midpoint.
+              The C = 0.50 midpoint sits at &#x03C1; &#x2248;{' '}
+              <strong>{(Math.exp(Math.atanh(0.5) / gamma) - 1).toPrecision(3)}&middot;&#x03C1;<sub>crit</sub></strong>.
+              {' '}<em>This offset is &#x03B3;-dependent and moves as you drag the slider</em> (corrected
+              2026-07-27 — this note used to quote the &#x03B3;=2 value 0.32 as if it were a general
+              property, which goes wrong the moment the slider it accompanies is touched: at the
+              SPARC-preferred &#x03B3; = 0.49 the midpoint is at 2.07&middot;&#x03C1;<sub>crit</sub>,
+              i.e. <em>above</em> the knee).
             </p>
           </div>
         </div>

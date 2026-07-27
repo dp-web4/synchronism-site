@@ -439,6 +439,33 @@ export default function KeyClaims() {
             MOND (Modified Newtonian Dynamics) acceleration from dimensional analysis
             (observed: 1.2 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2; &mdash; a ~13% miss at the site-standard H&#x2080; = 67.4, not an exact hit)
           </p>
+          <div style={{ background: 'rgba(245, 158, 11, 0.06)', border: '1px solid rgba(245, 158, 11, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', fontSize: '0.82rem', color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+            <strong>&ldquo;~13%&rdquo; needs an error bar to mean anything (added 2026-07-27).</strong> A bare
+            percentage is the one soft overclaim an external reviewer found on this page, because 13% reads
+            very differently against three different denominators:
+            <ul style={{ marginTop: '0.4rem', marginBottom: '0.4rem', paddingLeft: '1.1rem', lineHeight: 1.7 }}>
+              <li>Against SPARC&apos;s <em>statistical</em> a&#x2080; = 1.20 &plusmn; 0.02 &#x00D7; 10&#x207B;&#x00B9;&#x2070;, the 0.16 offset is <strong>~8&#x03C3;</strong>.</li>
+              <li>Against McGaugh&apos;s ~20% <em>systematic</em> budget, it is <strong>under 1&#x03C3; — consistent</strong>.</li>
+              <li>It is H&#x2080;-dependent: at the SH0ES H&#x2080; = 73 the relation gives 1.13 &#x00D7; 10&#x207B;&#x00B9;&#x2070;, only <strong>6% low</strong>.</li>
+            </ul>
+            The honest statement is therefore <strong>&ldquo;consistent within systematics; the residual is
+            the size of the H&#x2080; tension&rdquo;</strong> — which is neither the win a bare &ldquo;matches
+            within 13%&rdquo; implies nor the failure an 8&#x03C3; alone would imply. Note also that this
+            relation is <em>Milgrom&apos;s own</em> 1983 coincidence, available equally to MOND, Verlinde and
+            McCulloch; it is not the framework&apos;s to score either way.
+          </div>
+          <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', fontSize: '0.82rem', color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+            <strong>The framework does make an H&#x2080; statement — an unflattering one (added 2026-07-27).</strong>{' '}
+            <a href="/honest-assessment#h0-tension" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}
+            says &ldquo;Synchronism makes no statement on H&#x2080;&rdquo; while this claim carries
+            a&#x2080; = cH&#x2080;/(2&#x03C0;). Those cannot both hold: invert the relation with the measured
+            a&#x2080; = 1.2 &#x00D7; 10&#x207B;&#x00B9;&#x2070; and you get
+            H&#x2080; = 2&#x03C0;a&#x2080;/c &#x2248; <strong>77.6 km/s/Mpc</strong> — above even SH0ES by
+            several &#x03C3;, and far above the CMB value. A refutable consequence was being booked as
+            silence. Read either as a soft constraint the framework fails, or as further evidence that
+            a&#x2080; &#x2248; cH&#x2080;/2&#x03C0; is numerology rather than a derivation — but not as
+            &ldquo;no statement.&rdquo;
+          </div>
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
             Dark matter effects arise where density falls into the sparse/independent (low&nbsp;C) regime.

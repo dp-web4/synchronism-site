@@ -105,11 +105,15 @@ export default function TestCatalog() {
           fontSize: '0.875rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: '#f59e0b' }}>Discrimination status:</strong>{' '}
-          Of these 24 proposed tests, <strong>0 currently discriminate from MOND+EFE+&Lambda;CDM</strong>.
-          The Tier-1 analyzed tests are either self-eliminating (no outcome selects Synchronism),
-          failed by sign, or produce results shared equally with MOND. The roadmap represents proposed tests,
-          not tests that are ready to run or are expected to discriminate.{' '}
+          <strong style={{ color: '#f59e0b' }}>Discrimination status (restated 2026-07-27):</strong>{' '}
+          Of these 24 proposed tests, <strong>0 could select Synchronism over MOND+EFE+&Lambda;CDM</strong>.
+          That is the accurate claim. The blunter form this box used to carry — &ldquo;0 discriminate&rdquo; —
+          was false, and contradicted Tier 1: <strong>2 executed tests did discriminate, and both selected
+          MOND</strong> (TEST-09, BTFR slope, separating the models at 3.3σ; TEST-10, dwarf DM fractions).
+          A test that separates two models <em>is</em> discriminating regardless of which one wins. The
+          remaining Tier-1 tests are self-eliminating (no outcome selects Synchronism), failed by sign, or
+          genuinely non-discriminating (the RAR transition shape, where free-γ curves coincide). The roadmap
+          represents proposed tests, not tests that are ready to run or are expected to discriminate.{' '}
           <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>
             See Tier 1 for per-test verdicts →
           </Link>
@@ -167,7 +171,7 @@ export default function TestCatalog() {
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem', paddingLeft: '1.25rem' }}>
             <li><strong>RAR transition shape</strong> (2807 SPARC points, 2026-05-21): γ=2 compander refuted at ΔBIC=+184; free-γ=0.49=MOND — <span style={{ color: '#ef4444' }}>FAILED (γ=2); collapses to MOND at fitted γ (curve-equivalence only — no action, no Lagrangian, no dynamics). Net discriminating galaxy tests vs MOND: 0.</span></li>
             <li><strong>Galaxy rotation</strong> (14,760 galaxies, SPARC + ALFALFA-SDSS): qualitative curve match — <span style={{ color: '#f59e0b' }}>MOND reparametrization</span>, not novel</li>
-            <li><strong>TEST-03 TFR scatter</strong>: <span style={{ color: '#f59e0b' }}>NEVER RUN AS REGISTERED</span> — the R&sup2; = 0.14 figure previously reported here was a metric conflation (morphology statistic on N &asymp; 171, not the registered test on N = 14,585; corrected 2026-07-09). The registered <em>environment</em> claim was later executed 2026-07-14 (research repo): r&sup2; = 0.0001, ~900&times; under the framework&apos;s &gt;20% claim — <span style={{ color: '#ef4444' }}>environment prediction REFUTED by execution</span></li>
+            <li><strong>TEST-03 TFR scatter</strong>: <span style={{ color: '#f59e0b' }}>NEVER RUN AS REGISTERED</span> — the R&sup2; = 0.14 figure previously reported here was a metric conflation (morphology statistic on N &asymp; 171, not the registered test on N = 14,585; corrected 2026-07-09). The environment claim was later executed 2026-07-14 (research repo): r&sup2; = 0.0001, ~900&times; under the framework&apos;s &gt;20% claim — <span style={{ color: '#ef4444' }}>environment prediction REFUTED by execution</span>. <strong>But not as registered</strong> (declared 2026-07-27): that run used N = 141 SPARC galaxies vs Cosmicflows-4 ambient density, not the registered N = 14,585 ALFALFA-SDSS cluster/field/void classification — different dataset, different proxy, ~100&times; smaller sample. It is designated <strong>TEST-03s</strong> and the registered TEST-03 remains unrun and runnable. Read the census as <strong>3 registered kills + 1 substituted-protocol kill</strong>, not 4 identical ones</li>
             <li><strong>DESI fσ₈ (TEST-04a)</strong>: <span style={{ color: '#f59e0b' }}>UNDERPOWERED AS REGISTERED</span> <span style={{ color: 'var(--color-text-muted)' }}>(corrected 2026-07-14: the registered fσ₈(z=0.51) &gt; 0.46 criterion was met at only ~1.5σ, short of the demanded &gt;3σ; the widely-quoted 2.4σ disfavor is on σ₈, a GR-conditioned statistic that cannot falsify modified growth; DESI&apos;s own MG analysis gives μ₀ within 1σ of zero. Not counted in the refutation census. DR2 both-outcome pre-commitment registered 2026-07-17 — the program&apos;s first prospective registration)</span></li>
             <li><strong>Chemistry boundary consistency</strong> (1,703 phenomena): 89% consistent — <span style={{ color: '#f59e0b' }}>calibration set, not blind test</span></li>
             <li><strong>Superconductivity (η factor)</strong>: reproduces Abrikosov-Gor&apos;kov formula — <span style={{ color: '#f59e0b' }}>reparametrization</span></li>

@@ -227,8 +227,18 @@ export default function ResearchPhilosophy() {
           AI pairs from AI Safety via Debate (Irving, Christiano &amp; Amodei 2018), multi-agent role
           structure from CAMEL/MetaGPT, failure modes from the multi-agent-systems literature. The
           contribution is the controlled null result (how many framework claims survive the adversarial filter — n=6 demotions on one non-independent corpus at 0/6 detection; not sufficient to claim calibrated sensitivity), not
-          the protocol. Specificity cannot be measured here: there is no labeled corpus of genuine out-of-distribution discoveries to run through the filter — and an AI adversarial pair sharing the same training distribution would flag OOD novelty as reparametrization even if genuine. Full prior-art accounting on the{' '}
-          <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</a>.
+          the protocol. <strong>Correction (2026-07-27):</strong> this paragraph used to end
+          &ldquo;specificity cannot be measured here — there is no labeled corpus of genuine
+          out-of-distribution discoveries to run through the filter.&rdquo; That was true when written and
+          stale by two months: the control <em>was</em> built and run on <strong>2026-05-22</strong>, using a
+          held-out set of six canonical genuine discoveries (Dirac, Bell, BCS, Higgs, Hawking, Noether)
+          plus three out-of-distribution reparametrizations. The result confirmed the concern in its
+          strongest form rather than leaving it hypothetical: <strong>every one of the six genuine
+          discoveries was false-flagged as a reparametrization</strong>, exactly because an adversarial
+          pair sharing one training distribution keys on &ldquo;has canonical prior art&rdquo; — which all
+          non-trivial physics does. Read the measured numbers on the{' '}
+          <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</a>, which also carries
+          the full prior-art accounting and the confidence interval on the null.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           3,308 A2ACW sessions have been run across the research archive. Of these, approximately

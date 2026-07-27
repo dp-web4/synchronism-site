@@ -280,6 +280,21 @@ export default function A2ACW() {
         </div>
 
         <h3>Specificity Audit (2026-05-22)</h3>
+        <div style={{ background: 'rgba(139, 92, 246, 0.07)', border: '1px solid rgba(139, 92, 246, 0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+          <strong>Positive class, stated explicitly (added 2026-07-27):</strong> throughout this section the
+          <strong> positive class is &ldquo;the claim IS a reparametrization&rdquo;</strong> — the thing the
+          detector is built to flag. So <em>sensitivity</em> is the catch rate on known-demoted claims, and
+          <em> specificity</em> is the rate at which genuine discoveries are correctly <em>passed</em>.
+          <br /><br />
+          This is spelled out because two independent expert readers have now read these numbers as
+          swapped — both assumed the positive class was &ldquo;genuinely novel,&rdquo; under which the
+          labels do invert (sensitivity 0/6, specificity 6/6). Both conventions are defensible and both
+          describe the same detector; the defect was leaving the convention unstated on a page whose
+          subject is measurement discipline. <strong>Nothing about the verdict depends on the choice:</strong>{' '}
+          Youden&apos;s J = sensitivity + specificity &minus; 1 = 0 under either labeling, which is the
+          formal statement that this detector carries no information — it performs exactly at chance.
+          J = 0 here is a degeneracy of the design, not a measurement, and should be read as such.
+        </div>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1rem' }}>
           <div className="card">
             <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#22c55e', marginBottom: '0.25rem' }}>6 / 6</div>
@@ -300,9 +315,16 @@ export default function A2ACW() {
               Held-out control: 6 genuine physics discoveries (COBE fluctuations, Higgs boson, gravitational wave first detection, etc.)
               submitted to vocabulary-asymmetry audit. Result: 0/6 passed — all were flagged as potential reparametrizations.
               Discrimination relies entirely on unautomated novelty judgment, not protocol mechanics.
-              <strong> Sample-size caveat:</strong> n=6 gives a wide binomial confidence interval on the true
-              false-positive rate — the 95% (Clopper&ndash;Pearson) interval on 0/6 extends up to ~0.46, so
-              even &ldquo;flags everything&rdquo; is under-powered as stated; this is not a tight bound. The test is also partly over-determined: every
+              <strong> Sample-size caveat:</strong> n=6 gives a wide binomial confidence interval. Stated
+              precisely (tightened 2026-07-27): the 95% two-sided Clopper&ndash;Pearson interval for 0
+              successes in 6 puts the true <em>specificity</em> at ≤ ~0.46 — equivalently the true
+              false-positive rate at ≥ ~0.54, <em>not</em> ≤ 0.46, which is how this sentence previously read.
+              (A one-sided 95% bound gives 0.393 instead of 0.46; a reader who computes either number is
+              right, and the convention is now named so the two don&apos;t look like a discrepancy.)
+              So even &ldquo;flags everything&rdquo; is under-powered as stated; this is not a tight bound.
+              The same caveat applies to the program-level null this sector is built on — a novelty-survival
+              rate as high as ~39–46% is consistent with 0/6, and that null gets the
+              &ldquo;underpowered&rdquo; badge on the same terms the galaxy tests do. The test is also partly over-determined: every
               real discovery sits atop decades of prior art, so &ldquo;flagged as reparametrization&rdquo; is
               expected to some degree by construction, not purely a protocol failure. The qualitative conclusion
               (retrieval aid, not detector) is likely right; the 0/6 precision is oversold relative to n=6.

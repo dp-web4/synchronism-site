@@ -19,8 +19,11 @@ export default function ForResearchers() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           An arriving expert should not have to excavate the failure documentation to find what
           survives it. By the site&apos;s own scoreboard the framework has <strong>0 confirmed
-          predictions, 0 independently-derived parameters, and 0 tests currently discriminating
-          from MOND+EFE+&Lambda;CDM</strong>. What remains citable are <strong>replications,
+          predictions, 0 independently-derived parameters, and 0 tests that could select it
+          over MOND+EFE+&Lambda;CDM</strong>. Two executed tests <em>did</em> discriminate between the
+          models (TEST-09 at 3.3σ, TEST-10 on the boost ceiling) and both selected MOND — this page
+          previously said &ldquo;0 tests currently discriminating,&rdquo; which booked the framework&apos;s
+          two strongest empirical results as zero (corrected 2026-07-27). What remains citable are <strong>replications,
           quantified instances of known results, and executed negative results</strong> — the four
           artifacts below survive the framework being wrong, precisely because they do not depend
           on it being right.
@@ -176,6 +179,21 @@ export default function ForResearchers() {
             subtraction. The 6/6 catch rate is not the methodology&apos;s best result; multiplied
             against its own specificity, it is the demonstration that the detector cannot tell a
             demotion from a discovery.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Three precisions on the above (added 2026-07-27, from an external-reviewer pass).</strong>{' '}
+            (1) <em>The positive class is &ldquo;is a reparametrization.&rdquo;</em> Under the opposite
+            convention the sensitivity and specificity labels invert; both are defensible, and J = 0
+            either way, but the convention was never stated and two expert readers have now read the
+            numbers as swapped. (2) <em>6/6 = 1.0 is better described as a false <strong>discovery</strong>
+            rate</em> — a true false-positive rate needs a true-negative count this positive-only design
+            does not have, and J = 0 here is a degeneracy of the design rather than a measurement.
+            (3) <em>The program-level null is itself underpowered and now says so.</em> On n = 6 with 0
+            survivors, the Clopper&ndash;Pearson bound admits a true novelty-survival rate up to ~0.39
+            (one-sided) or ~0.46 (two-sided). The site badges its galaxy tests
+            &ldquo;underpowered as registered&rdquo; unflinchingly; holding the methodology verdict —
+            the sector nominated as the real contribution — to a lower evidentiary standard than the
+            physics was the asymmetry worth fixing.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Measured, not asserted: adversarial same-corpus AI pairs filter for internal consistency

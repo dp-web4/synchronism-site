@@ -34,7 +34,8 @@ export default function ParameterDerivations() {
 
       <section className="section content-width">
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '1.25rem', borderLeft: '3px solid var(--color-dark-border)', paddingLeft: '0.75rem' }}>
-          Badge labels on this page: <strong>Motivated Ansatz</strong> and <strong>Motivated Choice</strong> are
+          Badge labels on this page: <strong>Motivated Ansatz</strong>, <strong>Motivated Choice</strong>, and{' '}
+          <strong>Asserted, Not Derived</strong> are
           sub-types of <em>Speculative</em> &mdash; physically motivated but not uniquely derived.{' '}
           <strong>Freeman&apos;s Law Re-expressed</strong> and <strong>Dimensional Analysis</strong> are
           sub-types of <em>Reparametrization</em> &mdash; reproducing known observational laws in different notation.{' '}
@@ -287,6 +288,37 @@ export default function ParameterDerivations() {
               Full chain: <code>explorer/findings/2026-07-17-phi-exponent-provenance-fitted-then-named.md</code>.
             </p>
           </div>
+
+          <div className="card">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>8. B<sub>max</sub> = 1/&#x03A9;<sub>m</sub> &#x2248; 3.17 (the bounded boost ceiling)</h3>
+              <ValidationBadge status="speculative" label="Asserted, Not Derived" />
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Added 2026-07-28 &mdash; flagged missing from this page by a visitor persona (grad student + researcher)</p>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a> calls
+              the bounded acceleration boost B &#8804; 1/&#x03A9;<sub>m</sub> &#8776; 3.17 &ldquo;the framework&apos;s
+              only structural difference from MOND,&rdquo; and both executed discriminating tests (TEST-09&apos;s
+              BTFR slope, TEST-10&apos;s dwarf DM fractions) are corollaries of this one number. It carries the
+              site&apos;s entire discriminating weight and, until today, appeared nowhere in this chain &mdash;
+              a parameter-inventory gap, not a derivation.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
+              <strong>No archive document derives 1/&#x03A9;<sub>m</sub> from the compander or from anything else
+              &mdash; it is asserted.</strong> A live, unexecuted proposal
+              (<code>Research/proposals/boost_ceiling_provenance_and_class_exclusion.md</code>) flags that the
+              cosmic ratio a <em>dynamical-to-baryonic</em> boost should reference is arguably
+              &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> &#8776; 6.40 (the baryon budget), not 1/&#x03A9;<sub>m</sub>
+              (a matter-to-critical-density ratio). Under that convention TEST-10&apos;s reported
+              <em> median</em> f<sub>DM</sub> = 0.755 passes (ceiling 0.844) and the &ldquo;69% of SPARC exceeds
+              the ceiling&rdquo; headline is convention-dependent. The kill does not depend on the convention
+              choice at the tail: SPARC&apos;s maximum observed f<sub>DM</sub> = 0.927 requires B &#8805; 13.7,
+              which no candidate cosmic ratio supplies &mdash; so the robust, convention-free statement is a
+              class exclusion (B<sub>max</sub> &#8818; 14 is excluded by SPARC dwarfs), not the median-based
+              percentage. This registered sweep has not yet been executed against the full per-galaxy dataset;
+              see the proposal for the pre-fixed verdict rule.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -309,7 +341,9 @@ export default function ParameterDerivations() {
           via dimensional bookkeeping &mdash; Reparametrization, not derivation &mdash; and are one number, not
           two (&#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) exactly). The 3&ndash;10% agreements could reflect
           approximation limits or implicit calibration through V<sub>flat</sub>; distinguishing these would
-          require the independent derivations that do not exist.
+          require the independent derivations that do not exist. B<sub>max</sub> = 1/&#x03A9;<sub>m</sub>
+          (item 8) is the parameter carrying the most discriminating weight of all of them, and it is also
+          asserted, not derived.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

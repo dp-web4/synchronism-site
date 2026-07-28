@@ -114,6 +114,11 @@ export default function TestCatalog() {
           remaining Tier-1 tests are self-eliminating (no outcome selects Synchronism), failed by sign, or
           genuinely non-discriminating (the RAR transition shape, where free-γ curves coincide). The roadmap
           represents proposed tests, not tests that are ready to run or are expected to discriminate.{' '}
+          <strong>A third executed result (TEST-11, added 2026-07-28) is a different kind of kill</strong> —
+          not Synchronism-vs-MOND discrimination, but an internal-consistency squeeze: the SPARC-preferred
+          γ interval and the Cassini Solar-System bound have a robust empty intersection under the
+          scale-universal tanh-log QUMOND realization (+17.7&ndash;18.0σ discrepancy across the retained
+          grid). Scoped narrowly to that realization; see Tier 1 for the full statement.{' '}
           <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>
             See Tier 1 for per-test verdicts →
           </Link>
@@ -147,7 +152,7 @@ export default function TestCatalog() {
           on what has actually been analyzed, see below.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
-          Tests are numbered TEST-01 through TEST-10 on the{' '}
+          Tests are numbered TEST-01 through TEST-11 on the{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 page</Link>{' '}
           (each test card has an anchor: e.g., <code style={{ fontSize: '0.8rem' }}>/tier-1-existing#TEST-04a</code>).
           Cross-references elsewhere on the site to TEST-NN resolve directly to those cards.

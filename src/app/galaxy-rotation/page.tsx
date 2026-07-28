@@ -296,6 +296,21 @@ export default function GalaxyRotation() {
             family&apos;s encoding of MOND&apos;s simple μ. The framework&apos;s asserted γ=2 means q=4 —
             re-Newtonianizing far too abruptly — which is the +184 kill restated mechanistically.
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+            <strong>The fitted γ has a consequence beyond MOND-equivalence: the Solar System (TEST-11, added
+            2026-07-28).</strong> γ ≈ 0.49 landing on MOND&apos;s simple-μ family (q ≈ 1, above) is not merely a
+            reparametrization finding — it exposes the compander to a constraint that has nothing to do with
+            SPARC. Simple-μ&apos;s slow high-acceleration return is disfavored by planetary ephemerides
+            (Blanchet &amp; Novak 2011; Hees et al. 2016), because a slow return produces an anomalous
+            perihelion precession under the same Galactic external field that shapes the RAR. A pre-registered
+            joint squeeze (Cassini quadrupole bound vs the full SPARC-retained γ interval, ΔBIC ≤ 10 ⇒
+            γ = 0.425&ndash;0.600) found a <strong>robust empty intersection</strong>: every retained γ value
+            fails Cassini by +17.7σ to +18.0σ. No γ satisfies both galaxy rotation and the Solar System under
+            one scale-universal tanh-log QUMOND realization — this needs no new γ preference from SPARC, only
+            the one already fitted. See <Link href="/tier-1-existing#TEST-11" style={{ color: 'var(--color-accent-blue)' }}>TEST-11</Link>{' '}
+            for the full scope statement (it closes the realization, not modified inertia, dark-matter models, or
+            the umbrella ontology).
+          </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
             Net discriminating galaxy tests vs MOND: <strong style={{ color: '#ef4444' }}>0, by execution</strong>.
             Script + full analysis: <code style={{ fontSize: '0.78rem' }}>explorer/scripts/rar_transition_shape_real_sparc.py</code>,

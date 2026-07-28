@@ -28,6 +28,20 @@ export default function ForResearchers() {
           artifacts below survive the framework being wrong, precisely because they do not depend
           on it being right.
         </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>Why &ldquo;0 tests could select it&rdquo; was never in doubt (added 2026-07-28,
+          visitor persona):</strong> <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest
+          Assessment</a> names the bounded boost B &#8804; 1/&#x03A9;<sub>m</sub> &#8776; 3.17 as
+          &ldquo;the framework&apos;s only structural difference from MOND.&rdquo; A ceiling is a
+          <em> restriction</em>, so the galaxy sector is literally <strong>MOND &cap; {'{'}B &#8804; 3.17{'}'}</strong>
+          &mdash; a strict submodel of a theory it does not otherwise modify. A nested submodel has exactly
+          two possible outcomes against its parent: statistically indistinguishable, or refuted (by the
+          ceiling firing where MOND has no ceiling to fire on). It cannot win. This follows from the model&apos;s
+          own stated structure, with no SPARC data required &mdash; the extensive rotation-curve program
+          reached the same place empirically, at far greater cost. See item 8 on{' '}
+          <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
+          for the ceiling&apos;s own provenance, which is itself asserted rather than derived.
+        </p>
 
         {/* Artifact 1: locality no-go */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #8b5cf6' }}>

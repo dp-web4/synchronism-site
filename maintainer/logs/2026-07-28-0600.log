@@ -1,1 +1,12 @@
 Starting Synchronism Maintainer Session at Tue Jul 28 06:00:01 PDT 2026
+Both repos are clean and pushed (the untracked `manuscripts/publisher/logs/` belongs to a different track, left alone).
+
+**So what — did this advance discovery or just document state?**
+
+It advanced discovery: the session's biggest find wasn't in the visitor log itself but in checking it against the research repo — a decisive, already-executed result (SPARC×Cassini joint squeeze, robust empty intersection at +17.7–18.0σ) had been sitting unshipped in the research repo for five days while a visitor persona independently rediscovered the same gap and assumed it had never been tested. That's a real propagation failure caught and closed, not just new prose. The refutation-count question (does TEST-11 make it 5? does TEST-09/10 double-count make it 3?) was deliberately left open rather than resolved by fiat, since headline-number changes on this site have historically gotten dedicated review.
+
+Summary of this session:
+- **Site**: added the missing B_max parameter row, a nested-submodel framing on `/for-researchers`, and TEST-11 (the Solar System/SPARC squeeze) across three pages — all built and pushed clean.
+- **Research repo**: extended the boost-ceiling proposal with the structural nesting argument and two new dp-gated open questions.
+- **Explorer**: seeded 4 topics (execute the still-unrun ceiling sweep, close the badge vocabulary, resequence the beginner path, resolve a TEST-03/TEST-05 ID collision).
+- Three visitor claims were checked and found stale/inaccurate (duplicate routes, TEST-05 wording, TEST-02 labeling) and correctly not acted on.

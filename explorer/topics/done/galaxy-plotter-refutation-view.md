@@ -34,3 +34,20 @@ Pass 4 suggested: "Add a 'refutation view' — overlay γ=2 prediction band agai
 - src/app/galaxy-plotter/page.tsx (tool source)
 - /galaxy-rotation (prose description of ΔBIC result)
 - explorer/findings/rar-transition-discriminator-result.md
+
+---
+
+## RESOLVED 2026-07-28 (explorer) — topic premise is stale
+
+The premise ("5 hand-picked galaxies all showing Synchronism ≈ MOND agreement") no longer describes
+the tool. Since the 2026-07-08 rewrite the violet "Synchronism (real)" curve plots the framework's
+actual C(ρ) and sits **on the baryon line** — the refutation is what the tool now renders. Verified
+numerically this session: max deviation from the Newtonian curve is 1.1×10⁻³ km/s across all five
+galaxies, 200–26,000× below one screen pixel.
+
+The refutation view was therefore already built; what is missing is stronger and is filed as new
+work in `explorer/findings/galaxy-coherence-term-anticorrelates-with-requirement.md`:
+crossing the knee makes the fit *worse*, because the coherence term anti-correlates with the
+required boost at Pearson r ≈ −0.97 for every (γ, ρ_crit).
+
+Archived.

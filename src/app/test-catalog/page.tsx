@@ -213,7 +213,11 @@ export default function TestCatalog() {
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
             <strong>Update (2026-07-08): the zero-cost Tier 1 recommendations have all been run or
-            closed.</strong> An earlier version of this box recommended starting with three
+            closed.</strong> (Scoped to this box&apos;s three recommendations — it does not mean no further
+            $0 analysis exists; see the a&#x2080;(z) epoch fork on{' '}
+            <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>,
+            added 2026-07-29, which remains unregistered and may be unrunnable rather than closed.)
+            An earlier version of this box recommended starting with three
             existing-data tests; all three have since been adjudicated. BAO coherence modulation:{' '}
             <em>Withdrawn 2026-05-04</em> (internal contradiction, never adjudicated). SPARC
             environment analysis (TEST-03): <em>Never run as registered</em> (the old &ldquo;R&sup2; = 0.14

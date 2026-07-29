@@ -198,6 +198,23 @@ export default function ParameterDerivations() {
               produce an acceleration &mdash; cH&#x2080; is not a Synchronism-specific derivation.
               Classified as dimensional analysis / reparametrization on the honest assessment page.
             </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              <strong>The unstated epoch fork (added 2026-07-29, flagged by a visitor persona):</strong>{' '}
+              this relation is written in H&#x2080; (today&apos;s expansion rate), and the site says nothing
+              about H(z). Two readings are both live and neither is stated: <strong>(A) dynamical</strong> &mdash;
+              a&#x2080;(z) = cH(z)/2&#x03C0; tracks the expansion rate, which is engageable against high-z rotation-curve
+              kinematics and, on a literature skim, leans against (Milgrom, arXiv:1703.06110, finds constant-a&#x2080;
+              MOND reproduces z&#x2248;1&ndash;2.5 kinematics; Lelli et al. 2023, arXiv:2302.00030, fit a z=2.24 disc with
+              the unchanged local a&#x2080; where a&#x2080;&#x221D;H(z) would demand &#8776;3.4&times;) &mdash; though the
+              BTFR-zero-point route is contested at these redshifts (Milgrom 2017 argues the needed
+              asymptotic V&#8734; is often unreached, and the M/L, pressure-support, and beam-smearing
+              systematics budget is large); or <strong>(B) a present-epoch coincidence</strong>, in which case it is
+              not a derivation of anything and this card&apos;s only quantitative content is numerology.
+              Either way, this is <strong>not a MOND discriminator</strong> &mdash; Milgrom proposes a&#x2080; ~ cH/2&#x03C0;
+              himself, so an epoch-dependent a&#x2080; tests an assumption the two frameworks share, not one that
+              separates them. The silence is the defect: a framework that cites H&#x2080; as evidence for a&#x2080;
+              cannot also have nothing to say about H(z).
+            </p>
           </div>
 
           <div className="card">

@@ -1,1 +1,14 @@
 Starting Synchronism Maintainer Session at Wed Jul 29 06:00:00 PDT 2026
+This session is complete. Summary:
+
+**Recovery session** — the scheduled 06:00 maintainer run died again (same signature as prior crashes: one-line start header, no changes). This was the recovery run.
+
+**Key finding**: Verified all 21 P0–P2 items from today's unusually strong 4-persona visitor log against actual source before touching anything. Only **4 were genuinely unaddressed** — the rest (TEST-11 citations, DESI paper citation, N_corr cross-tool flagging, w₀wₐCDM gap, landing-page ordering) were already fixed in source from 07-22–07-28 sessions. Confirmed via a live-site WebFetch that this wasn't a deployment-lag issue — the personas simply didn't register content that was already live. This is now a 3rd documented instance of the persona-loop error pattern, updated in memory.
+
+**Shipped fixes** (all pushed, build clean):
+1. γ Calculator card now warns of its audited sign-inversion up front (3-persona convergence)
+2. TEST-10's ceiling on `/tier-1-existing` now states the Ω_m/Ω_b convention-dependence (median passes under the defensible convention; real kill is a tail class-exclusion)
+3. Galaxy-plotter now cross-references TEST-11 — its MOND curve uses the interpolating-function family TEST-11 excludes at 18σ
+4. `/parameter-derivations` now states the previously-silent a₀(z) epoch fork (dynamical vs. coincidence, not a MOND discriminator)
+
+No new explorer topics needed (best candidates already seeded) and no research-repo back-annotation (nothing here is a new physics finding — all site-honesty propagation of already-established positions).

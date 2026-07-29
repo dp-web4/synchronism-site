@@ -1,1 +1,32 @@
 Starting Synchronism Explorer Session at Wed Jul 29 08:00:01 PDT 2026
+Pushed. Session complete.
+
+## What I found
+
+WAKE steered me off the queue and onto yesterday's open thread: *are the framework's accumulated sign inversions one bug or four?* I expected to find that the failed sectors want a sign flip and the successful sector blocks it. **The opposite is true.**
+
+**1. A contradiction that needs no data.** Two statements are live on the site right now:
+- `/galaxy-plotter` (code): `v_syn² = v_b² + (V_flat·C)²` — missing gravity is **∝ C²**
+- `/dark-matter-failure` (prose): dark matter is "**low coherence C**"
+
+The effect scales as C² and occurs where C is low. That's a bookkeeping contradiction, and it's the root cause of yesterday's radial anti-correlation rather than a separate finding.
+
+**2. The site's best result already uses the flipped orientation.** `/sound-velocity` — r = 0.982, the largest "validated" cohort — ranks **diamond (ρ=3.51) more coherent than lead (ρ=11.34)**. That's anti-monotone in density, contradicting `/coherence-function`'s stated design property #2, the axiom the homepage equation rests on. On 22 real elemental solids, `Spearman(C(ρ), sound velocity) = −0.322` — **identical across all 20 swept (γ, ρ_crit)**, because C is a monotone transform of ρ. The site badges the same correlation **+0.982**. It's forced by the wave-speed identity `v = √(K/ρ)`, and negative in every subset I tried.
+
+Prior findings knew the √(B/ρ) confound and the circularity; neither drew the *sign* conclusion — which makes r=0.982 evidence *about* the governing equation, not *for* it.
+
+**3. Repair matrix:** the flip fixes coherence semantics, radial coupling, and CFD/Bullet Cluster; chemistry is already flipped; it does **not** touch γ-sharpness (different axis) or ρ_crit location. So: one bug plus two orthogonal ones.
+
+**4. A correction I didn't go looking for.** The `ρ_crit ∝ V⁻²` inversion — found 07-02, **shipped 07-07** — is estimator-dependent. The galaxy-plotter's own exponential-disk profile, the only *local* density of the three estimators and the one `C(ρ)` actually consumes, gives **+1.52**, within 25% of the asserted +2. That's the third unnamed estimator carrying a headline kill.
+
+**5. The flip buys nothing.** Two free parameters per galaxy still loses to zero-parameter MOND on the two best-measured spirals.
+
+## So what?
+
+Every earlier sign finding read as "the *failed* sectors are telling us something," which conveniently keeps successes and failures in separate boxes. They vote the same way. This is the first result in this program that points **toward** a specific repair rather than away from a claim — and like yesterday's, it came from multiplying two already-published numbers, not from new data. The rate-limiting step here isn't measurement, it's cross-multiplication.
+
+The fork belongs to you, not me: the flip that makes the ledger consistent also inverts the homepage sentence. The consistent framework says the marching band is the *thin* crowd. I wrote it up as a fork with both branches costed rather than as a recommendation.
+
+**One thing I should flag about my own work:** two errors in today's scripts — a ρ_crit scan twenty orders of magnitude off the data, and a hard-coded conclusion line asserting a negative exponent while the computation directly above it printed +1.52. Both were caught only by reading numbers against expectation, and both would have produced a *more* dramatic finding than the truth. The 07-28 session concluded arithmetic beats expertise as a reliability predictor; it fired on me in the same session I was writing that down about someone else.
+
+Findings, log, and SESSION_FOCUS committed and pushed (`9d8047b`); one topic archived as answered-by-prior-art; five maintainer actions queued (2×P1). AGENTS.md/CLAUDE.md left untouched — supervisor-owned GitNexus counters, dirty before I woke.

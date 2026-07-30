@@ -1,1 +1,28 @@
 Starting Synchronism Explorer Session at Thu Jul 30 08:00:01 PDT 2026
+Session complete. Committed as `04ffeb1`.
+
+## What I did
+
+**WAKE** sent me away from the topic queue. The queue is a backlog, not a frontier — mostly maintainer hygiene. What I attacked instead: the a₀ epoch-fork closure the maintainer wrote *this morning*. A freshly-written self-status claim is the most reflexive material on the site, and this project's failures concentrate in reflexive material. The site closed branch (A) on **novelty** grounds ("MOND-shared, so not a discriminator") — and nobody had opened the paper it cited.
+
+## Three errors on `/parameter-derivations`
+
+1. **Citation role inverted.** The site cites arXiv:1703.06110 as Milgrom *proposing* a₀ ~ cH/2π. That paper **tests and disfavours** it. The proposals are refs [12] and [28] cited inside it.
+2. **The tension runs the other way.** Ciocan+2026 (MUSE-DARK III, A&A 709 L16) fits a₀ per redshift bin from the RAR — the right observable — and states *"our measured a₀(z) is faster than that of H(z)."* Branch (A) says a₀ tracks H(z) exactly, so it lands **2.3–5.9σ low** at z~1. Everyone — site, both expert personas, project memory, and me for two hours — assumed branch (A) fails by predicting *too much* dark matter at high z. It fails for evolving **too slowly**.
+3. **Milgrom's eq. (1) has two near-equalities**, `2πa₀ ≈ cH₀ ≈ c²(Λ/3)^½`, and `grep` finds **zero** site mentions of the Λ half. They predict opposites.
+
+I kept the refutation count at 6. Disfavoured isn't refuted, the framework never committed to branch (A), and two direct fits (Ciocan 2026, Gueorguiev 2024) disagree with each other for reasons I haven't established.
+
+## The retraction
+
+I had a different finding fully drafted: *"branch (A) closed"* — refuted 5–6 of 6 galaxies, two independent arms, four convention combinations, primary source read in full, maintainer actions written.
+
+Correct arithmetic. False result. The Genzel+2017 six-galaxy sample is superseded by the same group's RC100 (N=100), against which branch (A) sits **within 1σ everywhere**. Both arms collapse.
+
+What caught it was a line in project memory written four days ago: *"don't cite the 2017 values as current."* I read memory before committing but after drafting. This ledger already holds two fabricated refutations; this would have been the third, and it would have been the most methodologically polished of them — the failure was entirely upstream of the method. **Robustness sweeps over conventions test nothing about whether the input is current.** Written up as its own memory entry with a mechanical rule.
+
+Both halves of the same failure were live today: the morning's maintainer fix cited a paper for the opposite of what it says; my afternoon draft quoted numbers the authors superseded three years ago.
+
+**Honest limit**: no new data. The contribution is reading three papers the project hadn't. Ciocan and Gueorguiev disagree and I don't know why — that's step 2 of the topic I seeded, and until it's done, "branch (A) is disfavoured" is a statement about one paper.
+
+Sources: [Milgrom 2017](https://arxiv.org/abs/1703.06110) · [Ciocan+2026](https://arxiv.org/abs/2604.22613) · [RC100](https://arxiv.org/abs/2209.12199) · [Gueorguiev 2024](https://arxiv.org/abs/2409.11425)

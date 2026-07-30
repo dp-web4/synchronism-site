@@ -1,0 +1,70 @@
+====================================================================================================
+ARM 1 (RETRACTED): phantom-matter fractions
+====================================================================================================
+  galaxy           z   E(z)  zeta_A   Genzel+2017 N=6        vs RC100 N=100
+  COS4 01351    0.85   1.64   0.312              0.210.38+-0.23 -> -0.29sig
+  D3a 6397      1.50   2.37   0.349              0.170.38+-0.23 -> -0.14sig
+  GS4 43501     1.61   2.51   0.356              0.190.38+-0.23 -> -0.10sig
+  zC 406690     2.20   3.31   0.376              0.000.27+-0.18 -> +0.59sig
+  zC 400569     2.24   3.38   0.175              0.000.27+-0.18 -> -0.53sig
+  D3a 15504     2.38   3.59   0.422              0.120.27+-0.18 -> +0.85sig
+  -> vs the N=6 2017 values branch (A) looked refuted; vs the N=100 2023
+     resample from the SAME GROUP it is consistent within 1 sigma everywhere.
+     Arm 1 carries no weight.  A refutation built on it would have been false.
+
+====================================================================================================
+ARM 2 (SURVIVING): direct RAR-fitted a0(z) -- Ciocan+2026, arXiv:2604.22613
+Branch (A) is a ZERO-PARAMETER prediction: a0(z)/a0(0) = E(z).
+====================================================================================================
+
+  normalisation a0(0) = framework cH0/2pi = 1.04 e-10 m/s^2
+    z_eff   Ciocan a0   branch(A)  Ciocan lin.  A shortfall
+     0.45        1.99        1.33         1.72         0.66
+     0.65        2.15        1.51         2.03         0.64
+     0.95        2.50        1.81         2.51         0.69
+     1.25        2.71        2.15         2.99         0.56
+  whole-sample a0|z~1 = 2.38 (+0.12/-0.10) vs branch(A) = 1.86  ->  +5.2 sigma LOW
+
+  normalisation a0(0) = Milgrom local   = 1.20 e-10 m/s^2
+    z_eff   Ciocan a0   branch(A)  Ciocan lin.  A shortfall
+     0.45        1.99        1.54         1.72         0.45
+     0.65        2.15        1.74         2.03         0.41
+     0.95        2.50        2.09         2.51         0.41
+     1.25        2.71        2.48         2.99         0.23
+  whole-sample a0|z~1 = 2.38 (+0.12/-0.10) vs branch(A) = 2.15  ->  +2.3 sigma LOW
+
+  normalisation a0(0) = Ciocan's own fit = 1.00 e-10 m/s^2
+    z_eff   Ciocan a0   branch(A)  Ciocan lin.  A shortfall
+     0.45        1.99        1.28         1.72         0.71
+     0.65        2.15        1.45         2.03         0.70
+     0.95        2.50        1.74         2.51         0.76
+     1.25        2.71        2.07         2.99         0.64
+  whole-sample a0|z~1 = 2.38 (+0.12/-0.10) vs branch(A) = 1.79  ->  +5.9 sigma LOW
+
+  Ciocan+2026 states it directly: 'Our measured a0(z) is faster than that of H(z).'
+  Branch (A) says a0 tracks H(z) EXACTLY.  So the 2026 measurement disfavours
+  branch (A) for evolving TOO SLOWLY -- the opposite direction from the one
+  the site, and every visitor persona, has assumed.
+
+====================================================================================================
+THE LITERATURE IS IN CONFLICT WITH ITSELF
+====================================================================================================
+  Ciocan+2026  (N=79, 0.33<z<1.44, RAR-fitted)  : a0 grows, FASTER than H(z)
+  Gueorguiev 2024 (arXiv:2409.11425, SIV revisit): log10(a0) z-slope ~ ZERO
+  Milgrom 2017 (N=6, superseded by RC100)        : ~4 a0 at z~2 'all but excluded'
+  RC100 2023   (N=100, supersedes the N=6)       : f_DM 0.38(z~1) -> 0.27(z~2)
+
+  Branch (A) sits between the first and third and is disfavoured by both,
+  from OPPOSITE sides.  It is not closed; it is squeezed -- structurally the
+  same shape as TEST-11's Cassini/SPARC empty intersection, but with the two
+  bounding measurements mutually inconsistent, so neither bound is yet firm.
+
+====================================================================================================
+CALIBRATION: what Milgrom actually excluded
+====================================================================================================
+       z   E(z) branch(A)   (1+z)^1.5 excluded   ratio
+    1.00             1.79                 2.83    0.63
+    2.00             3.03                 5.20    0.58
+    2.20             3.32                 5.72    0.58
+  -> Milgrom's named exclusion a0 ~ (1+z)^1.5 is the matter-dominated limit and is
+     42-58% STRONGER than LCDM E(z).  His sentence does not cover branch (A).

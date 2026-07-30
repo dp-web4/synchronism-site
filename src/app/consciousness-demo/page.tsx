@@ -53,7 +53,9 @@ export default function ConsciousnessDemo() {
           measure Synchronism&apos;s C. It measured SNARC <code>salience_total</code>: a weighted mean of
           five hand-coded salience heuristics, computed by <em>one shared scoring function</em> across
           8 agent instances (so the instances are not independent). That variable&apos;s operating mean
-          was 0.640 &plusmn; 0.018, which rejects 0.50 <em>as the operating mean of that variable</em>{' '}
+          was 0.640 &plusmn; 0.0196 (SD; corrected 2026-07-30 &mdash; the ±0.018 previously printed here was
+          inconsistent with its own t-statistic, caught by a visitor persona backing SD out of t = &Delta;/SEM),
+          which rejects 0.50 <em>as the operating mean of that variable</em>{' '}
           (t = 20.19, p &#x2248; 1.8&times;10<sup>&minus;7</sup>, n = 8). No calibration maps salience
           — or any measurement — onto the C-axis, so this is a <strong>wrong-variable
           test</strong>: the C &#x2248; 0.50 threshold remains <strong>untestable as stated</strong>,

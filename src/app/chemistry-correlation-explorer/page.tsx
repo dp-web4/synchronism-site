@@ -120,6 +120,34 @@ export default function ChemistryCorrelationExplorer() {
           Outputs audit</a> for the operative verdict.
         </div>
 
+        <div style={{
+          background: 'rgba(239, 68, 68, 0.08)',
+          border: '1px solid rgba(239, 68, 68, 0.3)',
+          borderRadius: '0.5rem',
+          padding: '0.875rem 1rem',
+          marginBottom: '1.25rem',
+          fontSize: '0.85rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#ef4444' }}>What &#x03B3; means here, and why the flagship row is
+          suspect (added 2026-07-30, two visitor personas independently flagged this):</strong>{' '}
+          &#x03B3; = 2/&#x221A;N<sub>corr</sub> is <strong>audited-negative and sign-inverted for every
+          collective system</strong> &mdash; see the{' '}
+          <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>:
+          high &#x03B3; means <em>few</em> correlated particles (gas-like), low &#x03B3; means <em>many</em>
+          (BCS-superconductor-like). This page&apos;s top result &mdash; sound velocity, r&nbsp;=&nbsp;+0.982,
+          highest in the stiffest, most strongly-bonded, most collective solids (diamond &#x2248; 12,000 m/s
+          vs air &#x2248; 340 m/s) &mdash; is therefore a <strong>positive</strong> correlation with &#x03B3;
+          running in the direction that formula assigns <em>low</em> N<sub>corr</sub> to the most collective
+          materials, the same inversion badged audited-negative one click away. Two readings are both live and
+          neither is stated on this page: either the per-material &#x03B3; values were computed from
+          2/&#x221A;N<sub>corr</sub>, in which case this table&apos;s r-column inherits the refuted sign; or
+          &#x03B3; was fit per material independently of N<sub>corr</sub>, in which case r&nbsp;=&nbsp;0.982 is
+          a goodness-of-fit statistic for a free parameter, not a correlation with anything the framework
+          predicts. Which branch applies to this dataset is an open bookkeeping question, not yet resolved
+          here.
+        </div>
+
         {/* Regime filter */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
           <button

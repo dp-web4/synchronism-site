@@ -362,7 +362,7 @@ export default function KeyClaims() {
               program <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
               (Session 63) did not measure C. It measured SNARC <code>salience_total</code> &mdash; a weighted
               mean of five hand-coded heuristics, one shared scoring function across 8 agent instances &mdash;
-              whose operating mean of 0.640&nbsp;&plusmn;&nbsp;0.018 rejects 0.50 <em>for that variable</em>{' '}
+              whose operating mean of 0.640&nbsp;&plusmn;&nbsp;0.0196&nbsp;(SD) rejects 0.50 <em>for that variable</em>{' '}
               (t&nbsp;=&nbsp;20.19, p&nbsp;&#x2248;&nbsp;1.8&times;10<sup>&minus;7</sup>, n&nbsp;=&nbsp;8). With no
               mapping from salience to C, this is a wrong-variable test: it neither refutes nor confirms a
               C-threshold, which is consistent with the unrunnable verdict below (no contradiction &mdash; the

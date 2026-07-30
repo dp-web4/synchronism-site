@@ -311,6 +311,25 @@ export default function GalaxyRotation() {
             for the full scope statement (it closes the realization, not modified inertia, dark-matter models, or
             the umbrella ontology).
           </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
+            <strong>Why the intersection is empty (added 2026-07-30, visitor persona pass): a tail-shape
+            mismatch, not a tuning failure.</strong> The compander saturates as a <strong>power law</strong>,
+            1&minus;C = 2(1+x)<sup>&minus;2γ</sup>; McGaugh&apos;s simple-μ approaches Newtonian as an{' '}
+            <strong>exponential</strong>, ν&minus;1 ~ e<sup>&minus;&radic;x</sup>. At Saturn, x = g<sub>Saturn</sub>/a₀
+            &#8776; 6.5×10⁻⁵/1.2×10⁻¹⁰ &#8776; 5×10⁵. At the SPARC-preferred γ &#8776; 0.489 the compander&apos;s
+            fractional anomaly is &#8776;2·(5×10⁵)<sup>&minus;0.978</sup> &#8776; 5×10⁻⁶; the exponential form gives
+            e<sup>&minus;&radic;(5×10⁵)</sup> = e<sup>&minus;707</sup>, indistinguishable from zero at any precision.
+            The two tails are numerically identical over the SPARC range (10⁻² &lt; x &lt; 10²) — which is why
+            &ldquo;curve-equivalent to MOND&rdquo; holds there — but a power-law tail decays far slower than an
+            exponential one, so any sufficiently strong field separates them, and the Solar System is far enough
+            into that regime that the gap is five-plus orders of magnitude rather than a fitting margin. This is
+            the framework&apos;s one genuinely non-MOND-degenerate piece of physics, and it is a direct
+            consequence of choosing a power-law compander for the deep-field limit — the same choice that gives
+            the bounded-C formulation its finite boost ceiling (B<sub>max</sub> = 1/Ω<sub>m</sub>, see{' '}
+            <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
+            Derivations</Link>). Full derivation back-annotated to the research archive alongside TEST-11&apos;s
+            registered result.
+          </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
             Net discriminating galaxy tests vs MOND: <strong style={{ color: '#ef4444' }}>0, by execution</strong>.
             Script + full analysis: <code style={{ fontSize: '0.78rem' }}>explorer/scripts/rar_transition_shape_real_sparc.py</code>,

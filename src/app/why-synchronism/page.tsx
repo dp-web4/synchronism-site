@@ -61,29 +61,38 @@ export default function WhySynchronism() {
 
       <section className="section content-width">
         <h2>The Approach</h2>
-        <p>
+        <p style={{ color: 'var(--color-text-secondary)', fontStyle: 'italic', borderLeft: '3px solid var(--color-accent-violet)', paddingLeft: '0.75rem' }}>
+          In plain English: Synchronism proposes one S-curve that smoothly goes from 0 (everything
+          acting independently &mdash; the crowd) to 1 (everything locked together &mdash; the marching
+          band) as density grows. There&apos;s a dial for how abrupt the crowd&#x2192;band snap is
+          &mdash; turn it up and the system snaps suddenly; turn it down and the change is gradual
+          &mdash; and a reference density that sets where on the curve a given system sits.
+        </p>
+        <details style={{ margin: '0.75rem 0', border: '1px solid var(--color-border)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
+          <summary style={{ cursor: 'pointer', color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            Show the equation (optional &mdash; the plain-English version above is the whole idea)
+          </summary>
+        <p style={{ marginTop: '0.75rem' }}>
           Synchronism proposes a coherence function: <span className="equation-inline">C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))</span>.
           It takes one input (density) and returns one output (coherence: 0 = sparse/independent, 1 = dense/collective).{' '}
           <span style={{ fontSize: '0.9em', color: 'var(--color-text-muted)' }}>⚠ &ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence — superconductors and BECs score <em>low</em> on this scale (large N<sub>corr</sub> → γ→0 → flat S-curve → C≈0).</span>
         </p>
-        <p style={{ color: 'var(--color-text-secondary)', fontStyle: 'italic', borderLeft: '3px solid var(--color-accent-violet)', paddingLeft: '0.75rem' }}>
-          In plain English: an S-curve that smoothly goes from 0 (everything acting independently
-          &mdash; the crowd) to 1 (everything locked together &mdash; the marching band) as density grows.{' '}
+        <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>tanh</strong> is the hyperbolic tangent &mdash; an S-shaped saturation function; over
           all inputs it spans (&minus;1, +1), but the argument here is never negative, so C stays
-          between 0 and 1. The &#x03B3; parameter is the dial that sets how abrupt the crowd&#x2192;band
-          snap is &mdash; big &#x03B3;, sudden snap; small &#x03B3;, gradual fade; &#x03C1;<sub>crit</sub> is
-          a reference density setting where on the curve you are. The shape &mdash; tanh &mdash; is a{' '}
+          between 0 and 1. The &#x03B3; parameter is the crowd&#x2192;band dial from above; &#x03C1;<sub>crit</sub> is
+          the reference density. The shape &mdash; tanh &mdash; is a{' '}
           <strong>phenomenological</strong> choice (plain words: picked because it matches the data,
           not because a deeper theory demands it), not a derived result:
           any S-curve with the same saturation properties would fit the same data equally well.
           (Full step-by-step breakdown: <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Walkthrough &rarr;</Link>)
         </p>
-        <p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
           The parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> depends only on how many particles are
           moving as a correlated unit. When &#x03B3; is large (few correlated particles), the system is sparse/independent (low C).
           When &#x03B3; is small (many correlated particles), the system is dense/collective (high C).
         </p>
+        </details>
         <details style={{ margin: '0.75rem 0', border: '1px solid var(--color-border)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
           <summary style={{ cursor: 'pointer', color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
             For physicists: the fine print on &#x03B3; and the S-curve (optional &mdash; skip freely on a first read)

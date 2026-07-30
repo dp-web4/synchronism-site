@@ -3,11 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   async redirects() {
     return [
-      {
-        source: '/getting-started',
-        destination: '/why-synchronism',
-        permanent: false,
-      },
+      // /getting-started has its own page (src/app/getting-started/page.tsx, redirects to
+      // /first-encounter) which this config-level rule was silently shadowing — Next.js
+      // resolves next.config.js redirects before app routes, so the page.tsx never fired.
+      // Visitor 2026-07-30 (tech writer persona): this made the breadcrumb's "Getting Started"
+      // parent crumb circular on /why-synchronism (it linked back to the page you're standing on).
       {
         source: '/get-started',
         destination: '/why-synchronism',

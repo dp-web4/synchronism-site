@@ -188,9 +188,11 @@ export default function HonestAssessment() {
           free-γ = MOND). The predictions we thought were novel turned out to already exist in physics under
           different names. Zero predictions have been independently confirmed.
           Zero parameters have an independent first-principles derivation — the last surviving candidate (A-from-Jeans) was closed as audited-negative on 2026-06-07: the Session 66 script produces A ≈ 4.6×10⁻⁵ (600× off the stated 0.029) under the framework&apos;s own ρ<sub>crit</sub> ∝ V² scaling.
-          Scoreboard: <strong>0 confirmed, 0 prospective predictions tested, 4 refutations executed on external
-          data, 5 reparametrizations, 0 independently-derived parameters</strong> (recounted 2026-07-17; the BTFR
-          slope moved from the reparametrization list to an executed refutation on 2026-07-14).
+          Scoreboard: <strong>0 confirmed, 0 prospective predictions tested, 6 refutations executed on external
+          data, 5 reparametrizations, 0 independently-derived parameters</strong> (recounted 2026-07-30; the BTFR
+          slope moved from the reparametrization list to an executed refutation on 2026-07-14, and the Cassini/SPARC
+          squeeze and Bell/CHSH substrate test were added to the count on 2026-07-30 &mdash; both were already
+          executed and badged Failed/Refuted elsewhere on the site).
         </p>
         <div style={{ marginTop: '0.75rem' }}>
           <strong style={{ color: 'var(--color-text-primary)', fontSize: '0.95rem' }}>What a non-physicist should take away:</strong>
@@ -225,8 +227,8 @@ export default function HonestAssessment() {
         <h2 id="verdict" style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated July 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 0 prospective
-          predictions tested, 4 refutations executed on external data</strong>. The sharpest events, in order
-          of decisiveness:
+          predictions tested, 6 refutations executed on external data</strong> (astronomical, ephemeris, and
+          laboratory). The sharpest events, in order of decisiveness:
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>(0) The boost-ceiling pair (TEST-09/TEST-10 — executed 2026-07-14/15):</strong> The bounded
@@ -236,8 +238,9 @@ export default function HonestAssessment() {
           registered kill criterion at <strong>3.3σ</strong>, and no parameter choice rescues it. Read as a
           dark-matter-fraction cap, the same ceiling limits apparent f<sub>DM</sub> to 68.5% — exceeded by 69%
           of SPARC. The framework&apos;s registered environment effect (&gt;20% of RAR scatter) was also run as
-          registered: r²&nbsp;=&nbsp;0.0001 — refuted by execution. These, plus the RAR shape test below, are
-          the four executed refutations in the footer count.
+          registered: r²&nbsp;=&nbsp;0.0001 — refuted by execution. These, plus the RAR shape test and the
+          Cassini/SPARC squeeze and Bell/CHSH substrate test below, are the six executed refutations in the
+          footer count.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>(1) DESI fσ₈ (TEST-04a — corrected 2026-07-14):</strong> The framework predicted
@@ -305,6 +308,34 @@ export default function HonestAssessment() {
           the curves coincide. Discrimination is absent there, not across the executed ledger.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>(3) Cassini/SPARC joint squeeze (TEST-11 — executed 2026-07-23, propagated to site
+          2026-07-28):</strong> the framework&apos;s single scale-universal compander cannot be used as
+          <em>both</em> the SPARC-fitting galaxy function <em>and</em> a QUMOND-style Solar System
+          interpolation function &mdash; at the SPARC-preferred γ&nbsp;≈&nbsp;0.489, the Cassini quadrupole
+          discrepancy is <strong>+17.95σ</strong>, and every point in the retained ΔBIC&nbsp;≤&nbsp;10 grid
+          (γ&nbsp;=&nbsp;0.425&ndash;0.600) fails Cassini by +17.7σ to +18.0σ &mdash; a robust empty
+          intersection, not a boundary artifact. This is by far the sharpest number on the site. See{' '}
+          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> for
+          the full scope statement (it closes the joint realization, not modified inertia or a
+          multi-scale function).
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>(4) Bell/CHSH substrate test (Bet B1):</strong> the framework&apos;s single-observer
+          substrate was tested directly against Bell&apos;s inequality and refuted on both no-signaling
+          arms &mdash; see{' '}
+          <Link href="#a2acw-self-audit" style={{ color: 'var(--color-accent-blue)' }}>below</Link> for
+          detail. The only executed lab-data refutation on the site.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+          <strong>Added 2026-07-30:</strong> (3) and (4) were both executed and badged Failed/Refuted
+          elsewhere on the site (Tier 1, Bell/CHSH section below) but were silently absent from the
+          footer&apos;s &ldquo;4 refutations&rdquo; count and from this page&apos;s &ldquo;sharpest events&rdquo;
+          list &mdash; the count&apos;s scope word (&ldquo;astronomical&rdquo;) filtered out the one
+          ephemeris result and the one laboratory result without saying so, and both happen to be
+          failures. Two visitor personas independently caught this the same day. The footer count is now
+          <strong> 6</strong>, spanning astronomical, ephemeris, and laboratory data.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>The entity criterion Γ&nbsp;&lt;&nbsp;m</strong>, previously labeled the sole surviving novel
           prediction, was reclassified as a <strong>Reparametrization</strong> (2026-05-20): it is the standard
           narrow-width condition Γ&nbsp;≪&nbsp;m from QFT — known since Breit-Wigner (1936) and formalized
@@ -312,7 +343,7 @@ export default function HonestAssessment() {
           interpretation, not the condition. Novel-survivor count: <strong>0</strong>.
           The framework produced <strong>47 internal contributions</strong> across ~3,308 sessions &mdash;
           well-posed questions and methodology outputs, zero confirmed novel results.
-          &ldquo;Unconfirmed&rdquo; &ne; &ldquo;wrong&rdquo; &mdash; but the evidence now includes four executed refutations on external data and zero surviving novel predictions.
+          &ldquo;Unconfirmed&rdquo; &ne; &ldquo;wrong&rdquo; &mdash; but the evidence now includes six executed refutations on external data (astronomical, ephemeris, and laboratory) and zero surviving novel predictions.
         </p>
       </section>
 
@@ -346,15 +377,21 @@ export default function HonestAssessment() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
           Analyses run with results. A kill-criterion-triggered result appears here, not under &ldquo;What Works&rdquo;
           &mdash; the heading reflects what was <em>attempted</em>, not what succeeded.
-          The site-wide footer count (&ldquo;0 confirmed; 4 refutations executed on external data&rdquo;, recounted
-          2026-07-17) refers to executed refutations adjudicated on external astronomical data: the RAR
+          The site-wide footer count (&ldquo;0 confirmed; 6 refutations executed on external data&rdquo;, recounted
+          2026-07-30) covers executed refutations across three data types &mdash; astronomical: the RAR
           transition shape (&#x03B3;=2 pinned, &#x0394;BIC=+184), the BTFR slope (TEST-09, registered kill
           fired at 3.3&sigma;, 2026-07-14), dwarf DM fractions (TEST-10, 69% of SPARC above the framework&apos;s
           structural ceiling, 2026-07-15), and the registered environment run (r&sup2; = 0.0001 vs the
-          registered &gt;20% claim, 2026-07-14). DESI TEST-04a is deliberately <em>not</em> counted &mdash; the
-          test as registered lacked the power to discriminate (corrected 2026-07-14). Note what the count is
-          not: none of these tests is <em>prospective</em> &mdash; every adjudication used data that existed
-          before the criterion. The program&apos;s prospective-registration count remains 0.
+          registered &gt;20% claim, 2026-07-14); ephemeris: the Cassini/SPARC joint squeeze (TEST-11, +17.95&sigma;,
+          2026-07-23); and laboratory: the Bell/CHSH substrate test (Bet B1, refuted on both no-signaling arms).
+          Through 2026-07-29 the count and its stated scope (&ldquo;external astronomical data&rdquo;) silently
+          excluded the last two, both of which were already executed and badged Failed/Refuted elsewhere on the
+          site &mdash; a scope word that happens to filter out only failures understates the audit rather than
+          strengthening it, which is the opposite of this page&apos;s purpose. DESI TEST-04a is still
+          deliberately <em>not</em> counted &mdash; the test as registered lacked the power to discriminate
+          (corrected 2026-07-14). Note what the count is not: none of these tests is <em>prospective</em> &mdash;
+          every adjudication used data that existed before the criterion. The program&apos;s
+          prospective-registration count remains 0.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div className="card">

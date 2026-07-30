@@ -9,8 +9,12 @@ interface BreadcrumbsProps {
 
 // Category crumbs link to a hub page when one exists (visitor 2026-07-23:
 // an unlinked "Getting Started" crumb read as a phantom hierarchy level).
+// "Getting Started" has no section-index page — every page in the category is a sibling,
+// not a child — so linking it is either circular (on whichever page it redirects to) or
+// wrong (a sibling masquerading as a parent) on every other page in the category. Visitor
+// 2026-07-30 (tech writer persona) caught the circular case on /why-synchronism. Left
+// unlinked here rather than pointed at any one sibling.
 const categoryHubs: Record<string, string> = {
-  'Getting Started': '/getting-started',
   'Interactive Tools': '/interactive-tools',
 };
 

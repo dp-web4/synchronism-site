@@ -10,7 +10,10 @@ function coherence(rho: number, gamma: number, rhoCrit: number): number {
 }
 
 export default function CoherenceExplorer() {
-  const [gamma, setGamma] = useState(2.0);
+  // Default is the SPARC free-γ fit (≈0.49), not the original γ=2 galaxy guess that
+  // the site's own tests refuted — visitor 2026-07-30 (casual persona) found γ=2 as the
+  // opening default confusing next to /core-idea's own "refuted" label for that value.
+  const [gamma, setGamma] = useState(0.49);
   const [rhoCrit, setRhoCrit] = useState(1.0);
   const [logScale, setLogScale] = useState(true);
 
@@ -185,6 +188,10 @@ export default function CoherenceExplorer() {
             <p style={{ color: regimeColor, fontSize: '0.8rem', marginTop: '0.25rem' }}>{regime}</p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               Higher &#x03B3; = sharper, more abrupt snap to coherent. Lower &#x03B3; = gentler slope. Depends on N<sub>corr</sub> (correlated particle count): &#x03B3; = 2/&#x221A;N<sub>corr</sub>.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
+              Opens at &#x03B3; &#x2248; 0.49, the value SPARC galaxy data actually prefers when fit freely.
+              &#x03B3; = 2 was the framework&apos;s original galaxy guess &mdash; refuted (drag the slider up to see it).
             </p>
             {gamma > 1.5 && (
               <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.75rem', marginTop: '0.25rem' }}>

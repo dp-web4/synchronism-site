@@ -199,21 +199,34 @@ export default function ParameterDerivations() {
               Classified as dimensional analysis / reparametrization on the honest assessment page.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              <strong>The unstated epoch fork (added 2026-07-29, flagged by a visitor persona):</strong>{' '}
-              this relation is written in H&#x2080; (today&apos;s expansion rate), and the site says nothing
-              about H(z). Two readings are both live and neither is stated: <strong>(A) dynamical</strong> &mdash;
+              <strong>The unstated epoch fork (added 2026-07-29; reordered 2026-07-30 after two
+              more visitor personas read past the caveat below to re-derive the over-claim it was
+              written to close &mdash; see note at the end):</strong>{' '}
+              this relation is written in H&#x2080; (today&apos;s expansion rate), and the site said nothing
+              about H(z). <strong>Lead with the conclusion: neither branch of the fork discriminates
+              Synchronism from MOND.</strong> Milgrom proposes a&#x2080; ~ cH/2&#x03C0; himself (arXiv:1703.06110)
+              &mdash; an epoch-dependent a&#x2080; tests an assumption the two frameworks share, not one that
+              separates them, and Lelli et al. 2023 (arXiv:2302.00030) already fit a z=2.24 disc with the
+              <em>unchanged local</em> a&#x2080;, where a&#x2080;&#x221D;H(z) would have demanded &#8776;3.4&times;.
+              Two readings are both live and neither is stated: <strong>(A) dynamical</strong> &mdash;
               a&#x2080;(z) = cH(z)/2&#x03C0; tracks the expansion rate, which is engageable against high-z rotation-curve
-              kinematics and, on a literature skim, leans against (Milgrom, arXiv:1703.06110, finds constant-a&#x2080;
-              MOND reproduces z&#x2248;1&ndash;2.5 kinematics; Lelli et al. 2023, arXiv:2302.00030, fit a z=2.24 disc with
-              the unchanged local a&#x2080; where a&#x2080;&#x221D;H(z) would demand &#8776;3.4&times;) &mdash; though the
-              BTFR-zero-point route is contested at these redshifts (Milgrom 2017 argues the needed
-              asymptotic V&#8734; is often unreached, and the M/L, pressure-support, and beam-smearing
+              kinematics, though the BTFR-zero-point route is contested at these redshifts (Milgrom 2017 argues the
+              needed asymptotic V&#8734; is often unreached, and the M/L, pressure-support, and beam-smearing
               systematics budget is large); or <strong>(B) a present-epoch coincidence</strong>, in which case it is
-              not a derivation of anything and this card&apos;s only quantitative content is numerology.
-              Either way, this is <strong>not a MOND discriminator</strong> &mdash; Milgrom proposes a&#x2080; ~ cH/2&#x03C0;
-              himself, so an epoch-dependent a&#x2080; tests an assumption the two frameworks share, not one that
-              separates them. The silence is the defect: a framework that cites H&#x2080; as evidence for a&#x2080;
-              cannot also have nothing to say about H(z).
+              not a derivation of anything and this card&apos;s only quantitative content is numerology. The silence
+              on H(z) is still the defect &mdash; a framework that cites H&#x2080; as evidence for a&#x2080; cannot also
+              have nothing to say about H(z) &mdash; but the fix is naming and closing the fork, not treating
+              branch (A) as a pending discriminator: it would be running a MOND-shared test, not a Synchronism one.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem' }}>
+              <strong>Why this note exists:</strong> the 2026-07-29 version stated the same two citations but
+              after describing branch (A)&apos;s testable prediction, not before it. Two independent visitor
+              personas (2026-07-29, 2026-07-30) each read the exciting quantitative claim first and either
+              stopped short of the closing sentence or read past it, and both re-derived &ldquo;a&#x2080;(z) is
+              the framework&apos;s one live discriminator&rdquo; &mdash; the exact claim the citations were added
+              to close. Leading with the conclusion is the fix; see{' '}
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
+              for the general pattern (stated conclusions get read; buried ones get re-derived wrong).
             </p>
           </div>
 

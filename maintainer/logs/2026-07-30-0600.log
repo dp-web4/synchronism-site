@@ -1,1 +1,8 @@
 Starting Synchronism Maintainer Session at Thu Jul 30 06:00:01 PDT 2026
+Both repos are committed and pushed. Session complete.
+
+**Summary**: Today's visitor pass (2026-07-30) was unusually strong — two expert personas hand-verified ~12 numbers correctly and independently converged on a real structural finding (the site's own galaxy sector is a strict submodel of MOND, proven, not just asserted). WAKE check found no new research proposal was warranted — the a₀(z) "live discriminator" over-claim was already refuted in source, just mis-ordered.
+
+Shipped 6 verified site fixes: gated the equation behind plain-English on `/why-synchronism`, fixed a `next.config`/`page.tsx` redirect conflict causing a circular breadcrumb, moved the coherence-explorer slider off its refuted default, corrected an inconsistent ± figure on the consciousness demo, closed a real gap where the "4 refutations" count silently excluded the site's two sharpest failures (Cassini +17.95σ and Bell/CHSH) via an unstated scope word, and added a missing sign-inversion caveat to the chemistry explorer. Stated the actual physics mechanism behind the Cassini result (power-law vs. exponential saturation tails) on-site and back-annotated it to the research archive, which was missing it too.
+
+Caught and documented (not fixed) two stale/mis-ordered findings rather than re-editing already-correct content — one more data point for the recurring persona-loop-error memory. Deferred a larger `/tier-1-existing` badge refactor and the "four galaxy formalisms" reconciliation as explorer topics rather than rushing them.

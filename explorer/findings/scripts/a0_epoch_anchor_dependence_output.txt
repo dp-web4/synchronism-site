@@ -1,0 +1,88 @@
+==============================================================================
+PART 1 -- Is 'branch (A) is 2.3-5.9 sigma LOW' a property of the data
+          or of the anchor?   Test: a0(z=1) = anchor * E(1)
+==============================================================================
+E(1) = 1.7903    Ciocan a0|z~1 = 2.38 (+0.12/-0.1, 95% CI)
+  => 1-sigma = +0.0612 / -0.0510
+
+anchor                             a0(0)  pred z=1      dev    sigma  verdict
+------------------------------------------------------------------------------
+Ciocan+2026 fitted intercept        1.00     1.790   +0.590    +9.40  branch (A) LOW
+framework c*H0/2pi                  1.04     1.862   +0.518    +9.80  branch (A) LOW
+McGaugh+2016 SPARC (canonical)      1.20     2.148   +0.232    +0.49  branch (A) LOW  (CONSISTENT)
+Varasteanu+2025 MIGHTEE-HI          1.69     2.909   -0.529    -2.28  branch (A) HIGH
+------------------------------------------------------------------------------
+RANGE ACROSS PUBLISHED ANCHORS: -2.28 sigma to +9.80 sigma -- THE SIGN FLIPS.
+Anchor spread: 1.00 to 1.69 = 69% disagreement on the SAME quantity a0(z~0).
+Cosmological signal being tested, z=0 -> z=1: E(1)-1 = 79% growth.
+SIGNAL / SYSTEMATIC = 1.15
+
+==============================================================================
+PART 2 -- Does the row discriminate Synchronism from LambdaCDM?
+==============================================================================
+  a0(z=2)/a0(0) predicted by branch (A)  = E(2)   = 3.032
+  a0(z=2)/a0(0) produced by LCDM+baryons (Mayer+2023, Magneticum) = 3.000
+  a0(z=2)/a0(0) measured (Ciocan linear model)                    = 4.180
+
+  NOTE: Mayer quote their factor as 'approximately 3' (one significant figure),
+  so the correct statement is that branch (A) and LCDM+baryons are
+  INDISTINGUISHABLE AT THE PRECISION MAYER STATES -- not that they agree to 1%.
+  => An observation confirming branch (A) confirms LCDM+baryons equally well.
+  => Mayer+2023 eq.(13) IS a0(0)*[Om(1+z)^3+OL]^(1/2) -- branch (A) verbatim,
+     written down and tested in a LambdaCDM paper in 2022. Not a novel prediction.
+  => Mayer further report eq.(13) 'fails to accurately describe the trend
+     observed in Magneticum' -- so branch (A) is not even the right shape WITHIN LCDM.
+
+==============================================================================
+PART 3 -- Power of the one analysis that used the CURRENT high-z sample
+==============================================================================
+  Gueorguiev 2024 measured slope d log10(a0)/dz = 0.01 +/- 0.2 dex/z
+    (sample: RC100 / Nestor Shachar+2023, N=100 -- the CURRENT high-z sample,
+     i.e. the one the 2026-07-30 session correctly identified as non-superseded)
+
+  branch (A) implies slope over 0.5<z<2.5 = 0.2274 dex/z  -> 1.09 sigma from Gueorguiev
+  Ciocan model implies slope            = 0.2214 dex/z  -> 1.06 sigma from Gueorguiev
+  no evolution (a0 = const, Lambda anchor) = 0.0000 dex/z  -> -0.05 sigma from Gueorguiev
+
+  Ciocan vs branch (A) separation, in Gueorguiev's units: 0.030 sigma
+  => On the current high-z sample, branch (A), Ciocan's model, and NO evolution
+     are all mutually indistinguishable. Gueorguiev's null is a POWER limit,
+     not a contradicting measurement. Gueorguiev himself: 'the uncertainty in
+     the data is too big for the clear demonstration of a z-dependence yet.'
+
+==============================================================================
+PART 4 -- Ciocan's own significance claims, with anchor errors restored
+==============================================================================
+  a0|z~1 vs McGaugh+2016 SPARC   measurement-error-only:  23.1 sigma   |  both errors:  4.5 sigma
+  a0|z~1 vs Varasteanu+2025      measurement-error-only:  13.5 sigma   |  both errors:  4.9 sigma
+  (Paper quotes ~19 sigma vs SPARC and ~5 sigma vs Varasteanu -- i.e. it uses
+   its OWN error for the SPARC comparison and the OTHER paper's error for the
+   Varasteanu one. Restoring SPARC's +/-0.26 gives ~4 sigma, not 19.)
+
+==============================================================================
+PART 5 -- A method-systematic floor, measured at fixed epoch
+==============================================================================
+  McGaugh z=0        : 1.20 +/- 0.26
+  Varasteanu z<0.08   : 1.69 +/- 0.13
+  branch (A) allows only E(0.08) = 1.0401 growth => 1.248
+  observed excess over what cosmology permits: +0.442 = 35% (1.47 sigma)
+  => Not significant on its own (~1.5 sigma; Ciocan agree, calling the two
+     determinations 'statistically consistent within ~1.5 sigma').
+  => But it SETS THE SCALE: a method-to-method systematic of tens of percent
+     on a0 at FIXED epoch is entirely unexcluded by current data.
+
+  Folding a 35% method systematic into Ciocan's a0|z~1:
+    2.38 +/- 0.84  vs branch (A) framework anchor 1.862
+    => 0.61 sigma  -- CONSISTENT.
+  The entire branch-(A) discrepancy is erased by a systematic no larger than
+  the one the two low-z measurements already hint at between themselves.
+
+==============================================================================
+SOURCES (all numbers above are quoted, none are derived by this project)
+==============================================================================
+  - Ciocan et al. 2026, MUSE-DARK III, A&A 709, L16 (arXiv:2604.22613) -- full text read
+  - Mayer, Teklu, Dolag & Remus 2023, MNRAS 518, 257 (arXiv:2206.04333) -- abstract + OUP text
+  - Gueorguiev 2024 (arXiv:2409.11425) -- SIV revisit; high-z arm = RC100
+  - Varasteanu et al. 2025, MNRAS 541, 2366 (arXiv:2504.20857) -- MIGHTEE-HI RAR, N=19, z<0.08
+  - Nestor Shachar et al. 2023, RC100, ApJ 944, 78 (arXiv:2209.12199)
+  - McGaugh, Lelli & Schombert 2016, PRL 117, 201101 -- SPARC a0 = 1.2 +/- 0.26e-10

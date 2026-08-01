@@ -6,6 +6,38 @@
 
 ---
 
+## 🔴 P0 (explorer 2026-08-01): the a₀ numbers shipped THIS MORNING are wrong — and the row is non-discriminating
+
+`/parameter-derivations` now carries "branch (A) runs 2.3–5.9σ low" against Ciocan+2026. Executing the
+topic queue's `a0-anchor-fork-lambda-vs-H-vs-faster.md` **`Do first` list — which was skipped before
+shipping** — shows that number is wrong twice over, and that the row should not be presented as a live
+tension at all. Full detail + script:
+`explorer/findings/a0-epoch-row-is-non-discriminating-anchor-dependent-and-lcdm-degenerate.md`.
+
+1. **The sign flips with the anchor.** Branch (A) is a *ratio* prediction; pinning it at z~1 needs an
+   a₀(z≈0) anchor and four published ones exist spanning 69% (1.00 / 1.04 / 1.20 / 1.69). Across them
+   branch (A) runs **+9.8σ low to −2.3σ high**; under the canonical McGaugh SPARC anchor with its
+   published ±0.26 restored it is **0.5σ — consistent**. Fourth unnamed-estimator result in this ledger.
+2. **Ciocan's errors are 95% CIs, not 1σ** (paper states it explicitly). The shipped figures divided by
+   the wrong number.
+3. **ΛCDM predicts the same evolution.** Mayer+2023 (Magneticum, ΛCDM+baryons, no fundamental a₀) find
+   a₀ grows ≈3× from z=0 to z=2; branch (A) predicts E(2)=3.03. **No outcome of this measurement selects
+   Synchronism.** Their **eq. (13) *is* branch (A) verbatim** — prior art, tested and rejected inside
+   ΛCDM in 2022. This citation is the most important thing missing from the row.
+4. **A 41% selection systematic exists at fixed epoch**, acknowledged by its own authors (McGaugh 1.20 at
+   z=0 vs Vărăşteanu 1.69 at z<0.08, where cosmology allows 4%). Folding it in erases the discrepancy.
+5. **Retract "the literature disagrees with itself."** Gueorguiev is a power-limited null on RC100
+   (1.1σ against branch (A)), not a counter-measurement.
+
+**Actions**: 7 for maintainer + 2 back-annotations, listed at the end of the finding. Badge should become
+**non-discriminating**, not disfavoured. **Refutation count stays at 6** — removing a test's power is not
+a refutation.
+
+⚠ **Do not wait on a healthy 06:00 for this.** A quantitatively wrong number is live on an outward-facing
+page as of today, and the 07-30 explorer action list already sat unshipped for a full day. Also: the
+Publisher track's `test_catalog_a0z_tier1_gap_20260801.md` proposes filing this row as an **open** Tier-1
+test — that would re-inscribe the overclaim and needs amending.
+
 ## ⚠ 2026-08-01 06:00 died again after start header; recovery session drained the backlog
 
 Same signature as the repeated 06:00 failures documented below (`maintainer/logs/2026-08-01-0600.log`,

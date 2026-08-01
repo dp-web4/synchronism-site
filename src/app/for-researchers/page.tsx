@@ -59,7 +59,11 @@ export default function ForResearchers() {
             columns, never volumetric &#x03C1;; Stiskalek &amp; Desmond 2023 for the systematic
             variable sweep) and by the elliptic Bekenstein&ndash;Milgrom field equation.
             What this project adds is the <strong>quantified local-density instance</strong>: any
-            gravity modification keyed on the <em>local volumetric density</em> &#x03C1;(r) fails in
+            gravity modification keyed on the <em>local volumetric density</em> &#x03C1;(r){' '}
+            <strong>via algebraic coupling</strong> (C(&#x03C1;)&middot;g as a multiplicative scalar on
+            the force — the class this framework belongs to; gradient-based schemes such as symmetron
+            screening and non-local state variables such as enclosed mass are <em>not</em> covered and
+            are not claimed to fail here) fails in
             three independently executed ways — the SPARC RAR ensemble rejects the density-compander
             at &#x0394;BIC=+184 (free fit collapses to MOND); the cross-system &#x03C1;&#x2194;g<sub>bar</sub>{' '}
             offset is ~1.7 dex; and clusters require a &#x03C1;<sub>crit</sub> 10<sup>4</sup>–10<sup>6</sup>&times;
@@ -313,9 +317,18 @@ export default function ForResearchers() {
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem', marginBottom: '0.25rem' }}>
             Currency: verdict anchored to DESI DR1 (arXiv:2411.12021) as of 2026-07-02.
-            DESI DR2 full-shape growth constraints are not yet published (expected ~Spring 2027).
-            If DR2 full-shape reports fσ₈(z≈0.5) ≤ 0.46, the verdict unfreezes for re-adjudication;
-            any DR2 value above DR1&apos;s would deepen the disfavor, not relieve it.
+            DESI DR2 full-shape parameter <em>papers</em> are not yet published (expected ~Spring 2027) &mdash;
+            note this is now a narrower claim than &ldquo;no DR2 full-shape results exist&rdquo;: preliminary
+            DR2 full-shape results were presented publicly in April 2026 (&ldquo;Cosmology with DESI DR2: From
+            BAO to Full-Shape Clustering,&rdquo; PIRSA:26040071) and DR2 Ly&#x03B1; full-shape validation posted
+            late July 2026 (arXiv:2607.27411). <strong>Integrity note (2026-08-01):</strong> this repository&apos;s
+            git history shows the fσ₈(z≈0.5) ≤ 0.46 threshold was committed <strong>2026-07-01, after</strong>{' '}
+            the April PIRSA talk &mdash; so this criterion cannot be verified as pre-registered relative to that
+            preliminary presentation, only relative to the still-unpublished formal DR2 full-shape paper. If DR2
+            full-shape reports fσ₈(z≈0.5) ≤ 0.46, the verdict unfreezes for re-adjudication; any DR2 value above
+            DR1&apos;s would deepen the disfavor, not relieve it. Whoever re-adjudicates this should check first
+            whether a threshold-relevant fσ₈(z≈0.5) figure was already circulating by 2026-07-01 &mdash; if so,
+            this criterion has the same post-hoc exposure already documented above for the σ₈ comparison.
           </p>
           <Link href="/tier-1-existing" style={{ fontSize: '0.85rem' }}>TEST-04a full accounting &rarr;</Link>
         </div>

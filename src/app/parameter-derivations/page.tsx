@@ -199,34 +199,75 @@ export default function ParameterDerivations() {
               Classified as dimensional analysis / reparametrization on the honest assessment page.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              <strong>The unstated epoch fork (added 2026-07-29; reordered 2026-07-30 after two
-              more visitor personas read past the caveat below to re-derive the over-claim it was
-              written to close &mdash; see note at the end):</strong>{' '}
-              this relation is written in H&#x2080; (today&apos;s expansion rate), and the site said nothing
-              about H(z). <strong>Lead with the conclusion: neither branch of the fork discriminates
-              Synchronism from MOND.</strong> Milgrom proposes a&#x2080; ~ cH/2&#x03C0; himself (arXiv:1703.06110)
-              &mdash; an epoch-dependent a&#x2080; tests an assumption the two frameworks share, not one that
-              separates them, and Lelli et al. 2023 (arXiv:2302.00030) already fit a z=2.24 disc with the
-              <em>unchanged local</em> a&#x2080;, where a&#x2080;&#x221D;H(z) would have demanded &#8776;3.4&times;.
-              Two readings are both live and neither is stated: <strong>(A) dynamical</strong> &mdash;
-              a&#x2080;(z) = cH(z)/2&#x03C0; tracks the expansion rate, which is engageable against high-z rotation-curve
-              kinematics, though the BTFR-zero-point route is contested at these redshifts (Milgrom 2017 argues the
-              needed asymptotic V&#8734; is often unreached, and the M/L, pressure-support, and beam-smearing
-              systematics budget is large); or <strong>(B) a present-epoch coincidence</strong>, in which case it is
-              not a derivation of anything and this card&apos;s only quantitative content is numerology. The silence
-              on H(z) is still the defect &mdash; a framework that cites H&#x2080; as evidence for a&#x2080; cannot also
-              have nothing to say about H(z) &mdash; but the fix is naming and closing the fork, not treating
-              branch (A) as a pending discriminator: it would be running a MOND-shared test, not a Synchronism one.
+              <strong>The epoch fork is closed, and branch (A) has been tested and disfavored
+              (updated 2026-08-01, after a 2026-07-30 explorer execution).</strong>{' '}
+              this relation is written in H&#x2080; (today&apos;s expansion rate); the site previously said
+              nothing about H(z), and two prior citations were doing the wrong job. <strong>Citation
+              correction:</strong> arXiv:1703.06110 is not Milgrom proposing a&#x2080; ~ cH/2&#x03C0; &mdash; it is
+              the paper that <em>tests and disfavors</em> an evolving a&#x2080; against six high-z discs.
+              Milgrom&apos;s actual proposals are arXiv:0801.3133 and ApJ 698, 1630 (2009), both cited
+              <em>inside</em> 1703.06110 as references. <strong>Branch (B) (&ldquo;present-epoch
+              coincidence, no H(z) statement&rdquo;) is not actually available:</strong> it requires a&#x2080; to
+              be fundamental, which is the MOND position this framework explicitly rejects elsewhere
+              (a&#x2080; is described as an <em>emergent</em> scale on this page and on{' '}
+              <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>MOND Unification</Link>).
+              An emergent a&#x2080; tied to the coherence transition forces branch (A): a&#x2080;(z) = cH(z)/2&#x03C0;.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              <strong>Branch (A), tested against direct RAR data:</strong> Ciocan et al. 2026
+              (MUSE-DARK III, A&amp;A 709, L16; arXiv:2604.22613) fit the RAR directly in 79
+              star-forming galaxies, 0.33 &lt; z &lt; 1.44, and report a&#x2080;(z) = a&#x2080;(0) + a&#8321;z with
+              a&#8321; = 1.59 (+0.11/&minus;0.10) &times;10<sup>&minus;10</sup>, stating plainly:
+              <em>&ldquo;our measured a&#x2080;(z) is faster than that of H(z).&rdquo;</em> Branch (A) is a
+              zero-parameter prediction, a&#x2080;(z)/a&#x2080;(0) = E(z), and it undershoots &mdash; the measured
+              growth is steeper than expansion allows, in every bin and under every normalization tried:
+            </p>
+            <div style={{ overflowX: 'auto', margin: '0.5rem 0' }}>
+              <table style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)', borderCollapse: 'collapse' }}>
+                <thead>
+                  <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
+                    <th style={{ textAlign: 'left', padding: '0.25rem 0.75rem 0.25rem 0' }}>a&#x2080;(0) normalization</th>
+                    <th style={{ textAlign: 'left', padding: '0.25rem 0.75rem' }}>Branch (A) at z~1</th>
+                    <th style={{ textAlign: 'left', padding: '0.25rem 0' }}>Deviation from observed 2.38</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>framework&apos;s own, cH&#x2080;/2&#x03C0; = 1.04</td><td style={{ padding: '0.25rem 0.75rem' }}>1.86</td><td style={{ padding: '0.25rem 0' }}>5.2&#x03C3; low</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Milgrom local, 1.20</td><td style={{ padding: '0.25rem 0.75rem' }}>2.15</td><td style={{ padding: '0.25rem 0' }}>2.3&#x03C3; low</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan&apos;s own fitted intercept, 1.00</td><td style={{ padding: '0.25rem 0.75rem' }}>1.79</td><td style={{ padding: '0.25rem 0' }}>5.9&#x03C3; low</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              <strong>Milgrom&apos;s coincidence has a second, unstated face:</strong> 2&#x03C0;a&#x2080; &#8776;
+              cH&#x2080; &#8776; c&sup2;(&#x039B;/3)<sup>1/2</sup> &mdash; the site has cited only the H&#x2080; half. The
+              &#x039B; half predicts <em>zero</em> epoch evolution, since &#x039B; is constant, and fares worse
+              against Ciocan than branch (A): at the Milgrom-local normalization, a constant a&#x2080; = 1.20
+              against the observed 2.38 &plusmn; 0.10 is roughly <strong>12&#x03C3;</strong> away. An a&#x2080; evolving
+              faster than H(z) embarrasses both halves of the 1983 coincidence, not this framework specifically.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              <strong>Verdict &mdash; disfavored, not refuted, and the count stays at 6:</strong> Ciocan&apos;s
+              own systematics are large (a_tot and a_bar share a forward model, ~0.2 dex gas systematics,
+              1.5&times; the SPARC scatter), the deviation is normalization-sensitive by a factor of two
+              (2.3&#x03C3;&ndash;5.9&#x03C3;), and the framework never committed to branch (A) in writing before this
+              page stated it &mdash; so this does not join the refutation tally on{' '}
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
+              It is the framework&apos;s one forced, outstanding, prospective commitment (a rival with a
+              fundamental a&#x2080; only makes this bet optionally), and it is currently losing 2&#x03C3;&ndash;6&#x03C3;
+              depending on whose local a&#x2080; you anchor to. One further note on the 13% figure two cards
+              above: Ciocan&apos;s fitted z=0 intercept is 1.00 &plusmn; 0.04, only 1.0&#x03C3; from this framework&apos;s
+              1.04 &mdash; but that intercept is the extrapolated endpoint of a linear fit over 0.33 &lt; z &lt; 1.44
+              that the authors themselves call &ldquo;phenomenological&hellip;rather than physically motivated,&rdquo;
+              not a local measurement, so this is a reason to stop treating the 13% gap as settled, not a claim
+              of agreement.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem' }}>
-              <strong>Why this note exists:</strong> the 2026-07-29 version stated the same two citations but
-              after describing branch (A)&apos;s testable prediction, not before it. Two independent visitor
-              personas (2026-07-29, 2026-07-30) each read the exciting quantitative claim first and either
-              stopped short of the closing sentence or read past it, and both re-derived &ldquo;a&#x2080;(z) is
-              the framework&apos;s one live discriminator&rdquo; &mdash; the exact claim the citations were added
-              to close. Leading with the conclusion is the fix; see{' '}
+              Source: Ciocan et al. 2026, MUSE-DARK III, A&amp;A 709, L16 (arXiv:2604.22613). See also{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
-              for the general pattern (stated conclusions get read; buried ones get re-derived wrong).
+              for the general pattern this row is an instance of: stated conclusions get read, buried ones get
+              re-derived wrong &mdash; two prior visitor personas (2026-07-29, 2026-07-30) independently re-derived
+              the pre-Ciocan version of this fork before it was closed.
             </p>
           </div>
 

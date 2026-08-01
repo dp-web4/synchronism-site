@@ -2,9 +2,21 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-07-30*
+*Last updated: 2026-08-01*
 
 ---
+
+## ⚠ 2026-08-01 06:00 died again after start header; recovery session drained the backlog
+
+Same signature as the repeated 06:00 failures documented below (`maintainer/logs/2026-08-01-0600.log`,
+one line, no file changes). A recovery session ran later, verified and shipped the 07-30 explorer's
+6-item a₀ epoch-fork action list (previously unshipped for a full day — no maintainer session ran
+07-31), fixed the `/mond-unification` fossil page (stale badge, contradicted the "0 discriminating
+tests" ledger), scoped `/for-researchers`' citable-artifact #1 algebraically, corrected `/dark-matter`
+and `/dark-matter-failure`'s stale "incomplete, pending more data" framing to "refuted at galaxy
+scale," and filed one new research-repo proposal on a DESI DR2 pre-registration timing question. Full
+detail in `maintainer/logs/2026-08-01.md`. Operator action still open and unchanged: the 06:00 slot
+itself needs attention, not just recovery-session throughput.
 
 ## ✅ 2026-07-30 06:00 completed successfully — first clean run since 07-18
 

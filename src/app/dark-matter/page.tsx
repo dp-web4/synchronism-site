@@ -103,9 +103,19 @@ export default function DarkMatter() {
             distributions independently of dynamics. These maps must be explained.</li>
         </ul>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Synchronism has been tested against galaxy rotation curves (14,760 galaxies) but has not yet
-          been confronted with the full cosmological dataset. Until it addresses galaxy clusters, the CMB,
-          and large-scale structure, it remains incomplete as a dark matter alternative.
+          <strong>Update 2026-08-01 — the galaxy-scale mechanism itself is refuted, not just incomplete:</strong>{' '}
+          the coherence function has no algebraic chain to the observed acceleration relation (see{' '}
+          <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>{' '}
+          for the locality argument), and on real SPARC data the density-keyed compander is rejected at
+          &#x0394;BIC=+184, the BTFR slope kill fires at 3.3&#x03C3;, and 69% of galaxies exceed the framework&apos;s
+          dark-matter-fraction ceiling &mdash; see{' '}
+          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>. The
+          &ldquo;14,760 galaxies&rdquo; figure pools two different measurements: 175 resolved SPARC rotation
+          curves (where the mechanism was actually tested and failed) and 14,585 ALFALFA&ndash;SDSS
+          Tully&ndash;Fisher objects from a registered test (TEST-03) that never ran as registered. This page
+          is not waiting on clusters, the CMB, or large-scale structure to reach a verdict at galaxy scale
+          &mdash; that verdict is already in, and it is Failed. What remains open is whether anything about
+          the coherence framing survives outside the galaxy sector.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

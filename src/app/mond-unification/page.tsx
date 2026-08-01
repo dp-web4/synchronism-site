@@ -13,7 +13,7 @@ export default function MondUnification() {
       <Breadcrumbs currentPath="/mond-unification" />
       <PathNav currentPath="/mond-unification" />
       <h1>MOND Unification</h1>
-      <ValidationBadge status="reparametrization" label="Dimensional Analysis — 10% Error" />
+      <ValidationBadge status="reparametrization" label="Dimensional Analysis — 13% Error" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <EquationDisplay size="lg" label="The MOND acceleration scale from cosmology">
@@ -43,6 +43,15 @@ export default function MondUnification() {
           researchers. Multiple frameworks produce the same relation with the same geometric factor.
           In Synchronism, the coherence function provides a physical narrative for why this
           relationship holds, but the result itself is shared with other approaches.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>Update 2026-08-01:</strong> treating a&#x2080; as emergent rather than fundamental is not
+          cost-free &mdash; it is a forced commitment to a&#x2080;(z) = cH(z)/2&#x03C0;, which is now measurable and
+          currently disfavored by 2&#x03C3;&ndash;6&#x03C3; against real high-z RAR data (Ciocan et al. 2026). See the
+          epoch-fork row on{' '}
+          <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
+          for the full account &mdash; disfavored, not refuted, and it does not move the site&apos;s refutation
+          count.
         </p>
 
         <h2>The Derivation Chain</h2>
@@ -119,12 +128,29 @@ export default function MondUnification() {
         <div className="card" style={{ marginTop: '1rem', borderLeft: '3px solid #38bdf8' }}>
           <h3 style={{ color: '#38bdf8' }}>Tidal Dwarf Galaxy Test</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            The cleanest discriminator: for a 10<sup>7</sup> M&#x2609; TDG at g<sub>ext</sub> = 1.0 a&#x2080;,
+            For a 10<sup>7</sup> M&#x2609; TDG at g<sub>ext</sub> = 1.0 a&#x2080;,
             Synchronism predicts &#x03C3; ~ 10.5&ndash;14.5 km/s while MOND predicts &#x03C3; ~
-            10.9&ndash;40.9 km/s. The isolated predictions differ by nearly 3&times;.
-            Observable with the NGC 5291 system (Bournaud et al. 2007, Lelli et al. 2015).
+            10.9&ndash;40.9 km/s. Observable with the NGC 5291 system (Bournaud et al. 2007, Lelli et al. 2015).
           </p>
-          <ValidationBadge status="untested" label="Novel Prediction" />
+          <ValidationBadge status="untested" label="Can only tie or refute — see caveat" />
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+            <strong>Correction (2026-08-01):</strong> this is not an independent novel prediction. Three
+            problems, on the site&apos;s own numbers elsewhere: (1) <strong>the intervals are nested</strong> &mdash;
+            [10.5, 14.5] sits almost entirely inside MOND&apos;s [10.9, 40.9]. Only &#x03C3; &gt; 14.5 discriminates,
+            and that outcome falsifies Synchronism while leaving MOND untouched &mdash; this is the site&apos;s own
+            <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}> nested-submodel argument</Link>{' '}
+            showing up as a concrete interval. (2) <strong>The lever generating it is already dead:</strong> the
+            weaker EFE is a consequence of the bounded boost B &#8804; 1/&#x03A9;<sub>m</sub> &#8776; 3.17, and that
+            boost ceiling is exactly what TEST-09 and TEST-10 fire on in{' '}
+            <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>. (3) The
+            0.3&ndash;0.4&times; factor is read off the same RAR fit that converges to MOND&apos;s simple-&#x03BC;
+            function (see <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy
+            Rotation</Link>), so it is not independent of that fit. This card is kept for the record; it should
+            not be read as a standing discriminating prediction, consistent with{' '}
+            <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>{' '}
+            and <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> both
+            stating zero discriminating tests remain.
+          </p>
         </div>
 
         <h2>Sessions and History</h2>

@@ -59,11 +59,16 @@ export default function DarkMatterFailure() {
 
         <h2>What Survives</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          The viscosity ansatz was the CFD-track dark matter prediction. The other dark matter
-          predictions in the framework &mdash; specifically the environment-dependent RAR scatter
-          (TEST-05, p = 5×10<sup>−6</sup>) and the McGaugh-2016 RAR fit on 14,760 galaxies &mdash;
-          do not depend on the CFD viscosity mapping and survive independently. Whether the original
-          viscosity ansatz was load-bearing for those results is an open question for the explorer track.
+          <strong>Correction, 2026-08-01: nothing in this section survives anymore.</strong> This page
+          originally claimed TEST-05 (environment-dependent RAR scatter) and the McGaugh-2016 RAR fit
+          were independent of the viscosity mapping and stood on their own. Both have since been
+          executed and failed on their own terms: TEST-05 was retired with the rest of the &ldquo;MOND-shared&rdquo;
+          badge class (all three tests in that class dissolved on execution — see{' '}
+          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>), and the
+          density-keyed RAR fit itself is rejected on real SPARC data at &#x0394;BIC=+184 (see{' '}
+          <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>).
+          The viscosity sign error documented above was never the framework&apos;s only galaxy-scale problem
+          &mdash; it was the first one found.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           <strong>Open question:</strong> Can the coherence framework make a dark matter self-interaction

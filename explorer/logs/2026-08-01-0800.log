@@ -1,1 +1,30 @@
 Starting Synchronism Explorer Session at Sat Aug  1 08:00:02 PDT 2026
+Pushed. Here's the session.
+
+## WAKE redirected the work
+
+The queue's 65 topics are mostly vocabulary/propagation items — the class the explorer loop has already closed to a fixed point. What pulled instead: today's visitor Researcher pass declared the a₀(z) row "the framework's only remaining forced commitment… the death has an exception with a date on it," and the maintainer shipped that reading to `/parameter-derivations` this morning. But the topic file carried an explicit **`Do first`** list — read Ciocan's systematics, reconcile against Gueorguiev 2024 — that was skipped before shipping. I executed it.
+
+(Dirty tree checked first per the crashed-predecessor rule: it's only the supervisor's GitNexus counter bump. Left alone.)
+
+## The exception isn't one
+
+Four results, each removing power from the row:
+
+**ΛCDM predicts the same thing.** Mayer et al. 2023 (Magneticum — ΛCDM+baryons, no MOND, no fundamental a₀) find fitted a₀ grows ≈3× from z=0 to z=2. Branch (A) predicts E(2) = 3.03. No outcome of this measurement selects Synchronism. Worse for novelty: their **eq. (13) *is* branch (A) verbatim**, written down and rejected inside ΛCDM in 2022.
+
+**The shipped "2.3–5.9σ low" flips sign.** Branch (A) is a *ratio* prediction; pinning it at z~1 needs an a₀(z≈0) anchor, and four published ones span 69%. Across them branch (A) runs **+9.8σ low to −2.3σ high** — and under the canonical SPARC anchor with its published ±0.26 restored, **0.5σ, consistent**. The 07-30 session used three anchors that all happened to sit low; the fourth is one sentence away in the same paper. Fourth unnamed-estimator result in this ledger.
+
+**A 41% selection systematic exists at fixed epoch**, acknowledged by its own authors — McGaugh 1.20 at z=0 vs Vărăşteanu 1.69 at z<0.08, where cosmology allows 4%. Folding it in erases the discrepancy entirely.
+
+**Two retractions of our own record.** "The literature does not agree with itself" is withdrawn — Gueorguiev's high-z arm is RC100 with 1.1σ power against branch (A); that's a power-limited null (he says so), not a counter-measurement. And Ciocan's error bars are 95% CIs, not 1σ.
+
+One guard fired: I nearly built a result on four bin values quoted second-hand, then found Ciocan publish them in a figure with no per-bin errors. Dropped that claim.
+
+## So what
+
+Three of this project's sharpest results now share one structure — galaxy sector is a MOND submodel, the locality no-go has a published counterexample, and now a₀(z) is ΛCDM-degenerate prior art. In all three, the power was removable **a priori from already-published numbers, with no new data**. The failure isn't that predictions fail; it's that nobody checks whether a prediction is *shared* before registering it as a test. Proposed gate for `PREDICTIONS.md`: name one rival that produces the same signal, or state that none does and why.
+
+**Refutation count stays at 6** — removing a test's power is the opposite of a refutation, and I kept it from borrowing a kill's authority.
+
+Two things need your attention: a quantitatively wrong number is live on `/parameter-derivations` right now, and I left the site edit to the maintainer track (P0 at the top of SESSION_FOCUS) — but the 06:00 slot has died repeatedly and the 07-30 action list already sat a full day, so this shouldn't wait on a healthy 06:00. Separately, the Publisher track's `test_catalog_a0z_tier1_gap_20260801.md` proposes filing this row as an **open** Tier-1 test; that would re-inscribe the overclaim and needs amending.

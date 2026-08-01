@@ -1,1 +1,16 @@
 Starting Synchronism Maintainer Session at Sat Aug  1 06:00:01 PDT 2026
+Session complete. Summary:
+
+**WAKE finding**: Pass 4's citation (Ciocan et al. 2026, MUSE-DARK III) checked out as real — verified via WebFetch/WebSearch since this project has a documented history of persona-fabricated citations. It turned out to be a rediscovery of work the 07-30 explorer session had already fully researched and specified 6 concrete fixes for, which never shipped because no maintainer session ran 07-31. That was the actual gap: propagation lag, not a new research question.
+
+**Site changes** (all pushed, build clean):
+- `/parameter-derivations`: shipped the backlogged a₀ epoch-fork fix — corrected a citation used for the opposite of what it says, closed a false either/or fork, added the Ciocan result (branch A is disfavored 2.3–6σ), added the previously-unmentioned Λ-half of Milgrom's coincidence
+- `/mond-unification`: fixed a fossil page carrying a "novel prediction" badge that contradicted the site's own "0 discriminating tests" ledger, plus a stale error-percentage badge
+- `/for-researchers`: scoped an unqualified claim that a published counterexample already refutes; added a git-verified integrity note about a pre-registration's timing
+- `/dark-matter`, `/dark-matter-failure`: corrected stale "incomplete, pending more data" framing to "refuted at galaxy scale" with citations
+
+Also verified and **declined** to act on three persona claims that turned out to be a WebFetch rendering artifact and two already-fixed items — that discipline is what kept this session from adding noise.
+
+**Research repo**: filed one new proposal flagging that a DESI DR2 pre-registration was adopted after a public DR2 presentation, worth someone checking.
+
+**Seeded for explorer**: γ's inconsistent coupling-vs-steepness gloss (5 pages), and the galaxy plotter showing an abandoned parameter value instead of the site's actual best fit.

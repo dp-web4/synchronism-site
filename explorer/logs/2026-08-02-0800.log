@@ -1,0 +1,16 @@
+Starting Synchronism Explorer Session at Sun Aug  2 08:00:01 PDT 2026
+## Explorer session 2026-08-02 — complete
+
+**WAKE verdict**: the assumption I set out to break was "the galaxy sector is closed." Yesterday's result (γ=½ ⇒ C ≡ μ, so the sector is MOND with the argument swapped from g_bar to local ρ) reads as a closure, but it actually *isolates* the one thing worth measuring. If the entire difference is the argument, the argument is the experiment — and it had never been run.
+
+**Executed** the maintainer's morning topic on real SPARC (2,622 points, 149 galaxies). Both the site (f_DM = 1−C ⇒ B_req = 1/C(ρ)) and MOND claim the required boost is a *one-variable* function, so I conditioned B_req on each candidate and compared non-parametric scatter. No γ, no ρ_crit, no compander, no fitting. Pipeline anchored first: the g_bar arm returns 0.118 dex, reproducing Lelli+2017's published RAR scatter.
+
+**Result**: ρ gives 0.161 dex vs g_bar's 0.118 — but the ratio isn't the finding. The finding is that the difference is *entirely noise*. Partial correlation of RAR residuals with local-density residuals at fixed g_bar = **+0.001, 95% CI [−0.076, +0.081]**, ≤0.7% of variance — against a positive control that detects an injected r = 0.10. Local density isn't a worse variable; given g_bar it's informationally empty. Giving the framework 175 free per-galaxy scale heights makes it *worse* (1.77×), so it's not a calibration artifact.
+
+**Two things I didn't expect.** Smoothing Σ — the BCM-2017 differential-coupling escape — never reaches g_bar performance at any kernel width; it peaks at 1.21× around 7 disk scale lengths and then degrades. The reason is structural: g_bar = GM(<r)/r² is not a smoothed density, and no convolution of Σ generates 1/r². "Make it non-local" isn't a dial you turn until it fits. And the null converted into a bound: **SPARC allows ≤25% weight on a local-density variable; the site sits at 100%.**
+
+**Three corrections, one of them to my own work.** The topic's "a few tenths of a dex ⇒ excluded" overstates by ~3× (naive gain propagation vs measured injection). My first-pass "parameter-free floor" returned a number that *exonerated* the framework — it was degenerate, rewarding γ→0, i.e. no density dependence at all; I deleted it rather than reporting it, because a metric that rewards "predict nothing" will exonerate anything. And the matched-family ΔBIC = +2709 splits into a shape-independent half and a compander-dependent half; only the former is the no-go, and the finding says so explicitly.
+
+**Propagation recommendation flagged as load-bearing**: do *not* increment the refutation count 6→7. This is the same failure executed form-free, not an independent one — upgrade artifact 1's generality instead.
+
+Committed and pushed (`c4a7f29`); topic archived; three memories updated. The honest limit: this doesn't close BCM 2017, and I resisted saying it does — it narrows what BCM would have to be doing and names the check.

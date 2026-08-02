@@ -107,23 +107,41 @@ export default function MondUnification() {
               <li>a&#x2080; is an <strong>emergent scale</strong></li>
               <li>Value from dimensional analysis of H&#x2080; and c (shared with other frameworks)</li>
               <li>Uses the standard McGaugh et al. (2016) RAR interpolating function</li>
-              <li>Predicts a weaker EFE (~0.3&ndash;0.4&times; MOND) as a distinguishing feature</li>
+              <li>Predicts EFE = 0 structurally (C depends only on local ρ); real environmental coupling is an untested ambient-density effect, not an EFE &mdash; see correction below</li>
             </ul>
           </div>
         </div>
 
-        <h2>The External Field Effect</h2>
+        <h2>The External Field Effect &mdash; Correction</h2>
+        <div className="card" style={{ borderLeft: '3px solid #f87171', marginBottom: '1rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Correction (2026-08-02):</strong> the paragraphs below previously attributed the External
+            Field Effect to &ldquo;the nonlinear Poisson equation that implements the coherence function.&rdquo;
+            That object does not exist in this framework. <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest
+            Assessment</Link> states, correctly and repeatedly, that <strong>there is no field equation anywhere
+            in this framework&apos;s galaxy sector &mdash; no action, no Lagrangian, no covariant formulation, no
+            dynamics.</strong> A page cannot derive an EFE from an equation the site elsewhere says doesn&apos;t
+            exist, and the 0.3&ndash;0.4&times; figure below was never actually derived from one.
+          </p>
+        </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          The nonlinear Poisson equation that implements the coherence function produces an
-          External Field Effect (EFE) &mdash; a subsystem&apos;s internal dynamics are influenced
-          by the external gravitational field it sits in. This contradicts earlier claims in the
-          research archive (Sessions #212, #215) that Synchronism has &ldquo;no EFE.&rdquo;
+          Applying the framework&apos;s actual structure instead: C is a function of <strong>local matter
+          density ρ</strong> alone. A uniform external gravitational field does not change ρ. So an algebraic
+          C(ρ)&middot;g modification <strong>satisfies the Strong Equivalence Principle by construction and
+          predicts EFE&nbsp;=&nbsp;0 exactly</strong> &mdash; a sharper and more discriminating structural claim
+          than &ldquo;0.3&ndash;0.4&times; MOND,&rdquo; and one already in tension with Chae, Lelli, Desmond,
+          McGaugh, Li &amp; Schombert (2020, ApJ 904, 51), who report a ~4σ detection of MOND&apos;s EFE in SPARC
+          rotation curves.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Perturbative analysis shows the Synchronism EFE is approximately <strong>0.3&ndash;0.4&times;
-          the strength of MOND&apos;s EFE</strong>, with a maximum anisotropy of ~17% at g<sub>ext</sub> ~
-          0.4 a&#x2080;. This is a concrete, testable prediction that distinguishes
-          Synchronism from both MOND (stronger EFE) and CDM (no EFE).
+          There <em>is</em> a real environmental effect in this framework &mdash; it is just not the EFE. Ambient
+          medium density adds to local ρ, raising C and suppressing the boost: an <strong>ambient-density
+          effect</strong>, keyed on ρ<sub>ambient</sub> rather than MOND&apos;s g<sub>ext</sub>&nbsp;∝&nbsp;M/r².
+          Two satellites at the same external acceleration but different host gas content would behave
+          identically under MOND and differently here &mdash; that variable difference, not a scalar EFE ratio,
+          is the genuine discriminator, and it has not yet been fit against SPARC or checked against Chae et al.
+          (2020). It is an open, unclaimed test (see{' '}
+          <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>).
         </p>
         <div className="card" style={{ marginTop: '1rem', borderLeft: '3px solid #38bdf8' }}>
           <h3 style={{ color: '#38bdf8' }}>Tidal Dwarf Galaxy Test</h3>
@@ -150,6 +168,18 @@ export default function MondUnification() {
             <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>{' '}
             and <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> both
             stating zero discriminating tests remain.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+            <strong>Further correction (2026-08-02):</strong> the mechanism this card&apos;s numbers were built
+            on (the &ldquo;nonlinear Poisson equation&rdquo;) has been retracted above &mdash; the structural
+            prediction is EFE&nbsp;=&nbsp;0, not a weakened MOND EFE, so the quoted 10.5&ndash;14.5 km/s interval
+            does not follow from anything currently on the site. Independently, an isolated-deep-MOND check for a
+            10<sup>7</sup>&nbsp;M&#x2609; system gives &#x03C3;&nbsp;=&nbsp;(4GMa&#x2080;/81)<sup>1/4</sup>&nbsp;&approx;&nbsp;9.4&nbsp;km/s,
+            radius-independent &mdash; below both quoted intervals, which the EFE (in MOND) can only lower further, not
+            raise. No radius is stated for either interval and MOND&apos;s 40.9&nbsp;km/s upper bound does not
+            reconstruct from the stated mass. The nested-interval, non-discriminating conclusion above still
+            stands independent of this arithmetic; the specific numbers in this card do not and should not be
+            cited.
           </p>
         </div>
 

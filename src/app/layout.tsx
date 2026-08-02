@@ -116,6 +116,8 @@ export default function RootLayout({
             {' \u00B7 '}
             <Link href="/research-philosophy">Research Philosophy</Link>
             {' \u00B7 '}
+            <Link href="/for-researchers" title="What's citable - the two defensible negative results">For Researchers</Link>
+            {' \u00B7 '}
             <a href="https://github.com/dp-web4/Synchronism" target="_blank" rel="noreferrer">
               Research Archive
             </a>

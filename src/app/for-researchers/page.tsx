@@ -69,6 +69,21 @@ export default function ForResearchers() {
             offset is ~1.7 dex; and clusters require a &#x03C1;<sub>crit</sub> 10<sup>4</sup>–10<sup>6</sup>&times;
             off the galaxy calibration (Coma, four ansätze, one structurally bounded at velocity ratio &le;2 vs observed 4.6).
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
+            <strong style={{ color: '#38bdf8' }}>Why this is the whole difference, not one failure among six (added
+            2026-08-02):</strong>{' '}
+            <Link href="/tier-1-existing" style={{ color: '#38bdf8' }}>Tier 1</Link> defines
+            f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C, so C <em>is</em> the interpolating function &#956; by
+            definition. And at &#947;=1/2 &mdash; SPARC&apos;s free fit lands at 0.489, 2.2% away &mdash;
+            C(&#961;)&nbsp;=&nbsp;x/(x+2)&nbsp;=&nbsp;&#956;<sub>simple</sub>(x/2) <em>identically</em> (see{' '}
+            <Link href="/coherence-function" style={{ color: '#38bdf8' }}>Coherence Function</Link>). Put those
+            together: the galaxy sector is MOND, with &#956;&apos;s argument swapped from the enclosed-mass
+            acceleration g<sub>bar</sub> to local density &#961;. That single substitution &mdash; the one this
+            no-go quantifies &mdash; is not one result among the site&apos;s six executed refutations. It is the
+            entire content of what makes this framework different from MOND in the galaxy sector. Everything
+            else downstream (BTFR slope, DM-fraction ceiling, RAR shape) is a consequence of that one swap
+            failing.
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Scope split — which half generalizes (2026-07-08):</strong> the three numbered
             results carry different generality. The <em>sign statement below</em> (&rho;<sub>crit</sub>{' '}

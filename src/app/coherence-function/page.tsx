@@ -50,6 +50,32 @@ export default function CoherenceFunction() {
           <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-violet)' }}>walkthrough</Link>.
         </div>
 
+        <div style={{ background: 'rgba(56,189,248,0.09)', border: '1px solid rgba(56,189,248,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#38bdf8' }}>The identity the Hill form above was one substitution short of
+          (added 2026-08-02):</strong>{' '}
+          set &#x03B3;&nbsp;=&nbsp;1/2 in the identity above. Then 2&#x03B3;&nbsp;=&nbsp;1 and it collapses to
+          C&nbsp;=&nbsp;[(1+x)&minus;1]/[(1+x)+1]&nbsp;=&nbsp;x/(x+2)&nbsp;=&nbsp;&#x03BC;<sub>simple</sub>(x/2)
+          &mdash; MOND&apos;s simple interpolating function &#x03BC;<sub>simple</sub>(u) = u/(1+u), <strong>identically,
+          for all x</strong>, not asymptotically. &#x03B3;&nbsp;=&nbsp;1/2 is the exact algebraic MOND point of
+          this function family. The free-&#x03B3; SPARC fit in the table below independently lands at
+          &#x03B3;&nbsp;=&nbsp;0.489 &mdash; 2.2% from that point. This is the executed form-selection table
+          (below) reporting the <em>same</em> parameter two ways: its independently-fitted Hill exponent
+          n&nbsp;=&nbsp;0.975 and this page&apos;s 2&#x03B3;&nbsp;=&nbsp;0.978 agree to 0.3% because they are the
+          same quantity, and the table&apos;s best-scoring simple form is Hill with n&nbsp;=&nbsp;1 exactly &mdash;
+          again, MOND. Combined with f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C on{' '}
+          <Link href="/tier-1-existing" style={{ color: '#38bdf8' }}>Tier 1</Link> (so C <em>is</em> the
+          interpolating function μ by definition), the galaxy sector reduces to: <strong>MOND, with μ&apos;s
+          argument swapped from the enclosed-mass acceleration g<sub>bar</sub> to local density ρ.</strong> That
+          single substitution is the entire difference from MOND &mdash; and it is the same substitution behind
+          the local-density no-go on{' '}
+          <Link href="/for-researchers" style={{ color: '#38bdf8' }}>For Researchers</Link>. One caveat: for
+          &#x03C1;&nbsp;&#x226a;&nbsp;&#x03C1;<sub>crit</sub> (real galaxy outskirts), C&nbsp;&asymp;&nbsp;&#x03B3;x/(1+&#x03B3;x)
+          depends on &#x03B3; and &#x03C1;<sub>crit</sub> only through their ratio &mdash; the
+          degeneracy-breaking term is &#x03B3;(2&#x03B3;&minus;1), which vanishes at exactly &#x03B3;=1/2. So near
+          the fitted value, &#x03B3;&nbsp;&asymp;&nbsp;0.489 is not a clean measurement of &#x03B3; alone without
+          also stating the &#x03C1;<sub>crit</sub> prior it was fit under.
+        </div>
+
         <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#ef4444' }}>The first question a physicist asks, answered where the equation
           is defined (moved here 2026-07-18):</strong>{' '}
@@ -185,7 +211,10 @@ export default function CoherenceFunction() {
           algebraic-log return to Newton only as powers of 1/ln y). Between any two members with acceptable
           asymptotics, SPARC is silent. So the honest statement is two-sided: <strong>tanh carries no
           statistical content (form-selection null)</strong>, and <strong>the family is not degenerate
-          either</strong> — the data discriminates, just not in tanh&apos;s favor. Full table and scripts:{' '}
+          either</strong> — the data discriminates, just not in tanh&apos;s favor. Read against the identity
+          above: the top-scoring simple form is Hill n=1, which <em>is</em> &#x03B3;=1/2 &mdash; the data is not
+          neutral about tanh, it prefers the point where tanh <em>becomes</em> MOND&apos;s &#x03BC;<sub>simple</sub>.
+          Full table and scripts:{' '}
           <code style={{ fontSize: '0.8rem' }}>explorer/findings/compander-family-selection-executed-tanh-not-privileged.md</code>.
         </div>
 

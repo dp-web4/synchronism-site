@@ -178,8 +178,10 @@ export default function HonestAssessment() {
           relation (the BTFR, TEST-09, run 2026-07-14): the framework&apos;s built-in ceiling on how much it can
           boost gravity forces a prediction that genuinely differs from the rival theory MOND — and the real
           data (123 SPARC galaxies) fired the pre-stated kill criterion at 3.3σ. The same ceiling caps how
-          dark-matter-dominated a galaxy can appear at 68.5% — and 69% of real galaxies exceed that (TEST-10,
-          2026-07-15). The framework&apos;s registered environment effect was also run (2026-07-14): no trace
+          dark-matter-dominated a galaxy can appear at 68.5% — a convention-dependent figure (see the Verdict
+          section below); the number that survives regardless of convention is the tail: SPARC&apos;s maximum
+          observed DM fraction (0.927) requires a boost of at least 13.7, which no candidate cosmic ratio
+          supplies (TEST-10, 2026-07-15). The framework&apos;s registered environment effect was also run (2026-07-14): no trace
           (r² = 0.0001 against a &gt;20% claim). The earlier cosmology test (DESI growth suppression) is
           <em>disfavored but not counted as a refutation</em> — the test as registered lacked the power to
           discriminate (corrected 2026-07-14). The galaxy transition-shape
@@ -236,8 +238,14 @@ export default function HonestAssessment() {
           only structural difference from MOND. That ceiling forces a BTFR slope prediction (n&nbsp;=&nbsp;3.35)
           that genuinely differs from MOND&apos;s (3.81); observed n&nbsp;=&nbsp;3.75&nbsp;±&nbsp;0.10 fired the
           registered kill criterion at <strong>3.3σ</strong>, and no parameter choice rescues it. Read as a
-          dark-matter-fraction cap, the same ceiling limits apparent f<sub>DM</sub> to 68.5% — exceeded by 69%
-          of SPARC. The framework&apos;s registered environment effect (&gt;20% of RAR scatter) was also run as
+          dark-matter-fraction cap, the same ceiling limits apparent f<sub>DM</sub> to 68.5% under the
+          1&minus;Ω<sub>m</sub> convention — the headline &ldquo;69% of SPARC exceeds it&rdquo; figure is
+          convention-dependent: under the alternative baryon-budget convention (Ω<sub>m</sub>/Ω<sub>b</sub>&nbsp;≈&nbsp;6.40,
+          giving f<sub>DM,max</sub>&nbsp;≈&nbsp;0.844) the reported <em>median</em> (0.755) actually passes, and
+          the 69% figure does not hold. What survives under <em>either</em> convention is the tail: SPARC&apos;s
+          maximum observed DM fraction is 0.927, which requires a boost of at least 13.7 — no candidate cosmic
+          ratio supplies that, a class exclusion regardless of which convention sets the ceiling. The
+          framework&apos;s registered environment effect (&gt;20% of RAR scatter) was also run as
           registered: r²&nbsp;=&nbsp;0.0001 — refuted by execution. These, plus the RAR shape test and the
           Cassini/SPARC squeeze and Bell/CHSH substrate test below, are the six executed refutations in the
           footer count.
@@ -380,8 +388,9 @@ export default function HonestAssessment() {
           The site-wide footer count (&ldquo;0 confirmed; 6 refutations executed on external data&rdquo;, recounted
           2026-07-30) covers executed refutations across three data types &mdash; astronomical: the RAR
           transition shape (&#x03B3;=2 pinned, &#x0394;BIC=+184), the BTFR slope (TEST-09, registered kill
-          fired at 3.3&sigma;, 2026-07-14), dwarf DM fractions (TEST-10, 69% of SPARC above the framework&apos;s
-          structural ceiling, 2026-07-15), and the registered environment run (r&sup2; = 0.0001 vs the
+          fired at 3.3&sigma;, 2026-07-14), dwarf DM fractions (TEST-10 — class exclusion via SPARC&apos;s max
+          observed DM fraction, 2026-07-15; the &ldquo;69% exceeds ceiling&rdquo; headline is convention-dependent,
+          see the Verdict section above), and the registered environment run (r&sup2; = 0.0001 vs the
           registered &gt;20% claim, 2026-07-14); ephemeris: the Cassini/SPARC joint squeeze (TEST-11, +17.95&sigma;,
           2026-07-23); and laboratory: the Bell/CHSH substrate test (Bet B1, refuted on both no-signaling arms).
           Through 2026-07-29 the count and its stated scope (&ldquo;external astronomical data&rdquo;) silently
@@ -744,7 +753,9 @@ export default function HonestAssessment() {
               framework&apos;s own internal audit. It was not previously visible on this page.
               <strong> Its corollaries were executed 2026-07-14/15 and both fail:</strong> a bounded boost has no
               deep-MOND regime, forcing the wrong BTFR slope (TEST-09 — kill fired at 3.3σ), and caps the apparent
-              DM fraction at 1&nbsp;&minus;&nbsp;&Omega;_m = 68.5%, which 69% of SPARC galaxies exceed (TEST-10).
+              DM fraction at 1&nbsp;&minus;&nbsp;&Omega;_m = 68.5% under one convention — the &ldquo;69% of SPARC
+              exceeds it&rdquo; headline doesn&apos;t survive the alternative baryon-budget convention (see Verdict,
+              above); the class exclusion via SPARC&apos;s max observed fraction (TEST-10) does.
               Everything gravitational on this page that differs from MOND is downstream of this one bound.
               <em> (Notation note 2026-06-12: the source audit called this quantity &ldquo;&#x03B3;&rdquo;,
               colliding with the transition-sharpness parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> used
@@ -823,8 +834,9 @@ export default function HonestAssessment() {
               &radic;(a&#8320;/g) boost). The previously listed &ldquo;n&nbsp;&rarr;&nbsp;4 deep-MOND&rdquo; limb was asserted
               (S193, synthetic 9-galaxy ladder), never derivable from the bounded formula; archive S58 had recorded the
               discrepancy honestly and was overwritten. The BTFR is exactly an asymptotic-boost observable — this failure is
-              a corollary of the boost ceiling, as is TEST-10&apos;s (dwarf DM fractions: 69% of SPARC exceeds the
-              framework&apos;s 68.5% structural cap; executed 2026-07-15). Full trace on{' '}
+              a corollary of the boost ceiling, as is TEST-10&apos;s (dwarf DM fractions — the class exclusion via
+              SPARC&apos;s max observed fraction, not the convention-dependent 69%/68.5% headline; see Verdict
+              above; executed 2026-07-15). Full trace on{' '}
               <Link href="/tier-1-existing#TEST-09" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 — TEST-09</Link>.
             </p>
           </div>

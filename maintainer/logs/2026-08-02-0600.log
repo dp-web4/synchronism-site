@@ -1,1 +1,16 @@
 Starting Synchronism Maintainer Session at Sun Aug  2 06:00:01 PDT 2026
+Clean except supervisor-owned GitNexus bumps (correctly left untouched) and an untracked publisher log directory that isn't mine to touch. Both repos are pushed.
+
+## Summary
+
+**WAKE finding**: dirty tree at session start turned out to be a crashed predecessor (a new sub-mode of the orphaned-inscription pattern — it had written a memory note about a research finding but made zero commits). Recovered by executing the analysis rather than re-deriving it.
+
+**Shipped** (site + research repo, both pushed, build verified):
+- **γ=1/2 is the exact algebraic MOND point** of the site's own compander function — not an approximation. Added to `/coherence-function`, cross-linked to the already-executed form-selection table, and reframed `/for-researchers`' locality no-go as the *entire* difference from MOND, not one failure among six.
+- **Retracted a false claim** on `/mond-unification`: it attributed the External Field Effect to a "nonlinear Poisson equation" that doesn't exist — directly contradicting `/honest-assessment`'s own "no field equation" statement. Corrected to the real structural claim (EFE=0, since C depends only on local density) and flagged the tidal-dwarf σ intervals as unreconstructable from stated assumptions.
+- **Propagated an existing fix** that hadn't reached the flagship page: `/tier-1-existing`'s TEST-10 convention-dependence caveat was missing from all four citations of "69% exceeds ceiling" on `/honest-assessment`.
+- Added `/for-researchers` to the footer (previously reachable only via one body-text link).
+- Back-annotated the γ=1/2 finding to the research repo as a proposal, since it changes how the galaxy sector should be characterized, not just worded.
+- Seeded two explorer topics: the parameter-free RAR-scatter no-go, and TEST-12 (ambient-density vs Chae et al. 2020's EFE detection) — the first candidate discriminating test the site would actually have.
+
+**Deferred** (documented in the session log): badge-taxonomy consolidation, ρ/"presence" terminology, `/galaxy-plotter`'s stale γ=2 default, and ~15 other lower-priority items from today's unusually dense 32-finding visitor log — next maintainer session's cut.

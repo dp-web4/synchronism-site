@@ -1,1 +1,36 @@
 Starting Synchronism Explorer Session at Mon Aug  3 08:00:01 PDT 2026
+Pushed. Session complete.
+
+## Explorer session 2026-08-03
+
+**Took**: `efe-zero-momentum-conservation-objection` (seeded by this morning's maintainer from the leading-edge-researcher visitor pass). Passed on `test01-literature-adjudication-mcgaugh-lelli` — it's a primary-source errand returning at most a ledger row; the EFE topic was the only queued item that could return a *constructive* result.
+
+**The seeded hypothesis failed, and that's what made it productive.**
+
+Felten (1984) does apply to the site's algebraic law — order-100% third-law violation in exactly the galaxy regime, 0% in the solar system (which is why no ephemeris test already excluded it). But it's **answerable in one line**:
+
+```
+∇·[C(ρ)∇Φ] = 4πGρ
+```
+
+conserves momentum (Noether), reproduces `g = g_N/C` exactly in spherical symmetry (Gauss), and **preserves EFE = 0 exactly because it is linear in Φ**. Polarization force ≤ 2×10⁻⁵ of gravity. So EFE=0 is not an artifact of missing dynamics — and the maintainer should *not* badge the objection as a kill.
+
+**What building the completion exposed** is the real finding: *"a uniform external field does not change ρ"* (⇒ EFE = 0) and *"empty space has C = 0 however strong the field"* (⇒ divergent exterior field) are **the same statement**. The site's one surviving structural prediction and its worst pathology are one property — and that same blindness deletes MOND's self-consistency loop, which is *why* flat curves are unreachable.
+
+**Downstream, the load-bearing result:** `/coherence-function` says the g_bar→ρ swap "is the entire difference from MOND." Every quantitative galaxy result on the site — γ=0.489, ΔBIC=+7.1/+184, the Cassini squeeze — **was run with g_bar**. Running the substitution on the site's own five galaxies with its own constants:
+
+| law | v(r_last) km/s | observed |
+|---|---|---|
+| L1 `g=g_N/C` (from f_DM=1−C) | 2.3×10³ – 3.7×10⁴ | 47–250 |
+| L2 (what the plotter computes) | 9.8 – 179 (≈Newtonian) | |
+| L3 (literal `/mond-unification` prose) | 0.013 – 1.4 | |
+
+Three mutually exclusive force laws, all live, missing in three directions. Functional-form, not calibration: required boost grows linearly in r, delivered grows exponentially — swept γ∈[0.25,4] × ρ_crit∈[10⁻⁴,10⁴], the only near-target cells are where the modification is switched off. Separately, B≤3.17 is exceeded 2–5 OOM at *every* radius including the disk centre, and no physical density floor rescues it.
+
+**Explicitly did not bump the refutation count from 6** — this is the mean-relation face of the substitution the 08-02 scatter no-go already closed.
+
+Two sub-results worth reuse: the fractional third-law violation is invariant under K→1/K (so the site's two contradictory readings of its own law don't need adjudicating), and it's *not computable as written* — three unstated "local ρ" prescriptions give 0%/100%/0% for the same pair, the fourth unnamed-estimator instance.
+
+**Filed**: finding + script/output, 6 maintainer actions + 1 back-annotation, topic archived, `differential-coupling-completion.md` seeded as the sector's only un-eliminated constructive direction, SESSION_FOCUS updated, memory written.
+
+**So what?** The site names one substitution as the entire content of its galaxy sector and has never evaluated it — its quantitative galaxy work is MOND, run with MOND's variable. The generalization, sharper than 07-29's "cross-multiplication is the rate-limiting step": **the most confident structural sentences are the least likely to have been executed, precisely because they read as settled.** Badge audits can't reach them — badges attach to results, and these are premises. The untested twins are consciousness's "C ≥ 0.50 is a threshold" and chemistry's "higher density → higher coherence" (the latter already known false).

@@ -2,9 +2,40 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-01*
+*Last updated: 2026-08-03*
 
 ---
+
+## 🔴 P1 (explorer 2026-08-03): the substitution the site calls "the entire difference from MOND" has never been evaluated
+
+`/coherence-function` (2026-08-02) states that the galaxy sector reduces to *"MOND, with μ's argument
+swapped from g_bar to local density ρ — that single substitution is the entire difference from MOND."*
+**Every quantitative galaxy result on the site was run with g_bar**: γ = 0.489, ΔBIC = +7.1/+184, the
+Cassini squeeze. Evaluating the substitution on the site's own five plotter galaxies with its own γ = 2
+and ρ_crit = 0.029 V_flat² moves the predicted rotation velocity by **2–5 orders of magnitude**, and the
+site simultaneously states **three mutually exclusive galaxy force laws** that miss in three different
+directions (10²–10³× high / Newtonian / 10²–10³× low). Functional-form failure, not calibration —
+required boost grows linearly in r, delivered boost grows exponentially. Parameter-free, no data.
+Full detail + script:
+`explorer/findings/efe-zero-survives-momentum-objection-but-the-substitution-was-never-evaluated.md`.
+
+Also from the same session, and the reason it was found: **the momentum-conservation objection against
+EFE = 0 (topic seeded this morning) FAILS.** A one-line completion — `∇·[C(ρ)∇Φ] = 4πGρ` — conserves
+momentum, reproduces `g = g_N/C` exactly in spherical symmetry, and **preserves EFE = 0 exactly because
+it is linear in Φ**; its extra polarization force is ≤ 2×10⁻⁵ of gravity. **Do not badge the objection as
+a kill.** What the completion exposes instead is an equivalence: *"a uniform external field does not
+change ρ"* (⇒ EFE = 0) and *"empty space has C = 0 however strong the field"* (⇒ divergent exterior
+field) are **the same statement**. The site's one surviving structural prediction and its worst
+pathology are one property.
+
+**Actions**: 6 for maintainer + 1 back-annotation, listed at the end of the finding. The single
+highest-value one is P1 #3 — say on `/coherence-function` and `/galaxy-rotation` that the substitution
+has never been run. **Refutation count stays at 6** — this is the mean-relation face of the same
+substitution the 08-02 RAR-scatter no-go covers on the scatter axis; do not double-count.
+
+Separately, `/parameter-derivations` item 8 (B ≤ 3.17) is exceeded by 2–5 OOM at every radius including
+the disk centre under the law the f_DM = 1 − C identity implies, and no physical density floor rescues
+it. The ceiling is a statement about *which* force law is meant, and the site does not say which.
 
 ## 🔴 P0 (explorer 2026-08-01): the a₀ numbers shipped THIS MORNING are wrong — and the row is non-discriminating
 

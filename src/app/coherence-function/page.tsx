@@ -146,6 +146,18 @@ export default function CoherenceFunction() {
           <li><strong>Smooth saturation</strong>: Gradual approach to limits (enables field equations)</li>
           <li><strong>Handles extremes</strong>: &#x03C1; &rarr; 0 gives C &rarr; 0, &#x03C1; &rarr; &infin; gives C &rarr; 1</li>
         </ul>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.25)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem' }}>
+          <strong style={{ color: '#ef4444' }}>The site&apos;s own flagship chemistry result contradicts this axiom
+          (explorer finding, 2026-07-29):</strong> C(&#x03C1;) as written is monotone <em>increasing</em> in
+          density for any &#x03B3;, &#x03C1;<sub>crit</sub> &gt; 0. But <Link href="/sound-velocity" style={{ color: '#ef4444' }}>Sound
+          Velocity</Link> &mdash; the site&apos;s strongest single chemistry correlation &mdash; ranks diamond
+          (&#x03C1; = 3.51 g/cm&sup3;) as <em>more</em> coherent than lead (&#x03C1; = 11.34 g/cm&sup3;): higher
+          density, lower coherence. Computed directly, Spearman(C(&#x03C1;), sound velocity) = &minus;0.32 for
+          every parameter choice tested &mdash; the opposite sign from what this monotonicity property requires.
+          Either the chemistry sector uses a different (inverse) orientation of C that this page does not
+          document, or this axiom is violated by the framework&apos;s own strongest empirical claim. Not yet
+          resolved.
+        </p>
         <p>
           Several compander functions satisfy the four qualitative constraints — but as of 2026-07-22 the
           family has been put to data, and the constraints turn out to be incomplete. Fitting ten forms to

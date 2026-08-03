@@ -115,7 +115,7 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-09',
-    name: 'BTFR Slope — FAILED, Kill Criterion Fired (Executed 2026-07-14)',
+    name: 'BTFR Slope — FAILED, Kill Criterion Triggered (Executed 2026-07-14)',
     data: 'SPARC (Lelli 2016 mass models, 123 galaxies after quality cuts)',
     cost: '$0',
     time: 'EXECUTED (2026-07-14)',

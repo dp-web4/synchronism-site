@@ -73,6 +73,17 @@ const nextConfig = {
         destination: '/galaxy-plotter',
         permanent: false,
       },
+      // /tools/consciousness-threshold collided with the real top-level page
+      // /consciousness-threshold (Philosophy track essay, no controls) via the generic
+      // /tools/:path* rewrite below — a visitor guessing the interactive demo's URL from its
+      // displayed title ("Consciousness Threshold Demo") silently landed on the wrong page
+      // instead of 404ing. The actual tool lives at /consciousness-demo. Visitor 2026-08-03
+      // (tech writer + casual passes, independently).
+      {
+        source: '/tools/consciousness-threshold',
+        destination: '/consciousness-demo',
+        permanent: false,
+      },
       {
         source: '/tools/:path*',
         destination: '/:path*',

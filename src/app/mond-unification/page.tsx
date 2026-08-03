@@ -139,9 +139,20 @@ export default function MondUnification() {
           effect</strong>, keyed on ρ<sub>ambient</sub> rather than MOND&apos;s g<sub>ext</sub>&nbsp;∝&nbsp;M/r².
           Two satellites at the same external acceleration but different host gas content would behave
           identically under MOND and differently here &mdash; that variable difference, not a scalar EFE ratio,
-          is the genuine discriminator, and it has not yet been fit against SPARC or checked against Chae et al.
-          (2020). It is an open, unclaimed test (see{' '}
-          <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>).
+          is the genuine discriminator.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
+          <strong style={{ color: '#38bdf8' }}>Correction (2026-08-03):</strong> the paragraph above previously
+          called this &ldquo;an open, unclaimed test&rdquo; that had not been checked against SPARC or Chae et al.
+          (2020). That was stale &mdash; it already has an ID and a verdict. <Link href="/tier-1-existing" style={{ color: '#38bdf8' }}>TEST-05</Link>{' '}
+          computes exactly this lever comparison (MOND+EFE&apos;s external-acceleration coupling vs. this
+          framework&apos;s ambient-density coupling), cites Chae et al. 2020/2021&apos;s ~4σ EFE detection, and
+          the registered run (SPARC RAR offsets vs. Cosmicflows-4 ambient density, N&nbsp;=&nbsp;141) gives
+          r²&nbsp;=&nbsp;0.0001 &mdash; the kill bar fires. Two independent expert visitor passes (2026-08-03)
+          flagged this page and <Link href="/for-researchers" style={{ color: '#38bdf8' }}>For Researchers</Link>{' '}
+          as stating incompatible things (&ldquo;0 tests that could select it&rdquo; vs. an uncatalogued live
+          discriminator); the resolution is that it was never uncatalogued, the cross-reference from this page
+          just never pointed to it.
         </p>
         <div className="card" style={{ marginTop: '1rem', borderLeft: '3px solid #38bdf8' }}>
           <h3 style={{ color: '#38bdf8' }}>Tidal Dwarf Galaxy Test</h3>

@@ -57,6 +57,20 @@ export default function DarkMatterFailure() {
           under current coherence-function conventions.
         </p>
 
+        <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1.5rem' }}>
+          <h3 style={{ color: '#ef4444' }}>A second, independent bookkeeping contradiction (explorer finding, 2026-07-29)</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            This page identifies dark matter&apos;s missing gravity with <strong>low coherence</strong> C. But{' '}
+            <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Plotter</Link>&apos;s
+            own code computes the extra (dark-matter-like) velocity term as v(r)&nbsp;=&nbsp;&radic;(v<sub>b</sub>&sup2;&nbsp;+&nbsp;[V<sub>flat</sub>&middot;C(&#x03C1;)]&sup2;)
+            &mdash; the missing-gravity boost is <strong>proportional to C</strong>, so it is largest where C is{' '}
+            <em>high</em>, not low. If dark matter is low-C and the boost term needs high C to activate, the
+            framework predicts the boost is absent exactly where the phenomenon it&apos;s supposed to explain
+            occurs. This is a bookkeeping contradiction, checkable with no telescope data, independent of the
+            viscosity-sign failure above.
+          </p>
+        </div>
+
         <h2>What Survives</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>Correction, 2026-08-01: nothing in this section survives anymore.</strong> This page

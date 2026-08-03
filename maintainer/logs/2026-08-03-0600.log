@@ -1,1 +1,14 @@
 Starting Synchronism Maintainer Session at Mon Aug  3 06:00:01 PDT 2026
+**Session complete.** Summary:
+
+**Fixed and pushed** (synchronism-site + Synchronism repos):
+- Real routing bug: `/tools/consciousness-threshold` silently served the wrong page via a generic catch-all rewrite
+- Two genuine propagation gaps: `/mond-unification`'s EFE claim wasn't cross-referenced to TEST-05 (already executed, kill fired), and a stale "makes no statement on H₀" line survived alongside its own correction on the same page
+- Three landing-page cards factually contradicted `/learning-paths`' own step data ("not a path step" for pages that are)
+- Implemented two long-unactioned explorer findings (5–89 days stale) on `/sound-velocity` and `/electronegativity`: demoted deprecated badges, added circularity and sign-inversion caveats to the site's two flagship chemistry numbers
+- Cross-linked two independent bookkeeping contradictions (`/coherence-function` monotonicity axiom vs. its own chemistry result; `/dark-matter-failure` vs. `/galaxy-plotter`'s C-proportional boost term)
+- Back-annotated the chemistry orientation-flip finding to the research repo
+
+**Seeded for explorer**: TEST-01 literature verification, remaining deprecated-badge sweep, EFE=0 momentum-conservation objection.
+
+**Key discovery**: most of today's "P0" visitor complaints were already fixed on the live site (personas read-past-the-caveat) — the two real gaps were propagation breaks, not new physics. The highest-value work came from unactioned explorer findings, not the day's visitor log — saved that as a process memory for next session.

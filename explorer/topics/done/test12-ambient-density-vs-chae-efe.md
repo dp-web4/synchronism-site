@@ -35,3 +35,24 @@ it's the first result on the site that isn't a reparametrization of MOND.
 - Chae, Lelli, Desmond, McGaugh, Li & Schombert 2020, ApJ 904, 51 (SPARC EFE detection, e_N)
 - SPARC environmental/gas-content metadata (already partially used for TEST-05's null result —
   check what host gas density data is available per galaxy)
+
+---
+
+## RESOLVED 2026-08-04 (explorer) — ANSWERED AND BLOCKED
+
+Executed: `explorer/scripts/efe_required_ambient_density_vs_chae2020.py`.
+Finding: `explorer/findings/efe-zero-is-not-refutable-by-chae2020-the-baseline-is-off-by-3-dex.md`.
+
+Two answers, both negative:
+
+1. **The comparison to Chae+2020 cannot be made.** At Chae's own measurement radii the framework's
+   predicted rotation velocity is 2.0–4.2 dex too high (MOND: 0.01–0.07 dex). The EFE signal is
+   0.046–0.083 dex — ~50× under the baseline error, in dex. EFE = 0 is *not-evaluable*, not refuted.
+
+2. **TEST-12 cannot be registered yet, and the blocker is not data.** The site's two C conventions
+   give opposite-signed environmental effects: the ledger form gives a deficit, the plotter form gives
+   +0.335/+0.382 dex and saturates at C = 1, so it can never produce a deficit at any ρ_ext. The
+   framework's ambient-density prediction has no defined sign until the convention is fixed.
+
+Prerequisite to reopening: fix the C convention site-wide, then evaluate the differential completion
+`∇·[C(ρ)∇Φ] = 4πGρ` (topic `differential-coupling-completion.md`, still open).

@@ -1,0 +1,206 @@
+
+==============================================================================
+EFE = 0 vs CHAE+2020: REQUIRED AMBIENT DENSITY (real SPARC)
+==============================================================================
+a0 = 1.20e-10 m/s^2   rho_crit = 0.029 * V_flat^2 [Msun/pc^3]
+Chae+2020 fitted e read from explorer/data/chae2020_ms_r2.tex
+
+==============================================================================
+gamma = 2.0   scale height = h300   gas = vgas
+==============================================================================
+galaxy   kind           e  sig  R_out    rho_out     C_out  deficit  rho_ext_req  delta_req
+-------------------------------------------------------------------------------------------
+NGC5055  golden     0.054   11   48.8  1.583e-03 3.407e-06  -0.0455    3.693e-04   8.62e+03
+NGC5033  golden     0.104    8   44.6  7.804e-05 1.427e-07  -0.0831    3.639e-05   8.49e+02
+NGC1090  control    0.000    0   30.1  1.125e-02 2.871e-05   0.0000    0.000e+00        nan
+NGC6674  control    0.000    0   67.4  8.333e-06 9.870e-09   0.0000    0.000e+00        nan
+
+galaxy       Vobs  V_MOND(e=0)    V_frmwk  MOND err  frmwk err     ratio
+------------------------------------------------------------------------
+NGC5055     179.0        210.3  5.051e+04    +0.070     +2.451  2.82e+02
+NGC5033     196.0        200.3  2.344e+05    +0.009     +3.078  1.20e+03
+NGC1090     160.0        187.2  1.709e+04    +0.068     +2.029  1.07e+02
+NGC6674     242.0        232.9  9.902e+05    -0.017     +3.612  4.09e+03
+
+==============================================================================
+gamma = 2.0   scale height = bershady   gas = vgas
+==============================================================================
+galaxy   kind           e  sig  R_out    rho_out     C_out  deficit  rho_ext_req  delta_req
+-------------------------------------------------------------------------------------------
+NGC5055  golden     0.054   11   48.8  1.160e-03 2.498e-06  -0.0455    2.707e-04   6.32e+03
+NGC5033  golden     0.104    8   44.6  4.227e-05 7.731e-08  -0.0831    1.971e-05   4.60e+02
+NGC1090  control    0.000    0   30.1  7.751e-03 1.978e-05   0.0000    0.000e+00        nan
+NGC6674  control    0.000    0   67.4  4.086e-06 4.840e-09   0.0000    0.000e+00        nan
+
+galaxy       Vobs  V_MOND(e=0)    V_frmwk  MOND err  frmwk err     ratio
+------------------------------------------------------------------------
+NGC5055     179.0        210.3  5.900e+04    +0.070     +2.518  3.30e+02
+NGC5033     196.0        200.3  3.185e+05    +0.009     +3.211  1.62e+03
+NGC1090     160.0        187.2  2.059e+04    +0.068     +2.110  1.29e+02
+NGC6674     242.0        232.9  1.414e+06    -0.017     +3.767  5.84e+03
+
+==============================================================================
+gamma = 2.0   scale height = h1000   gas = vgas
+==============================================================================
+galaxy   kind           e  sig  R_out    rho_out     C_out  deficit  rho_ext_req  delta_req
+-------------------------------------------------------------------------------------------
+NGC5055  golden     0.054   11   48.8  4.749e-04 1.022e-06  -0.0455    1.108e-04   2.59e+03
+NGC5033  golden     0.104    8   44.6  2.341e-05 4.281e-08  -0.0831    1.092e-05   2.55e+02
+NGC1090  control    0.000    0   30.1  3.376e-03 8.614e-06   0.0000    0.000e+00        nan
+NGC6674  control    0.000    0   67.4  2.500e-06 2.961e-09   0.0000    0.000e+00        nan
+
+galaxy       Vobs  V_MOND(e=0)    V_frmwk  MOND err  frmwk err     ratio
+------------------------------------------------------------------------
+NGC5055     179.0        210.3  9.222e+04    +0.070     +2.712  5.15e+02
+NGC5033     196.0        200.3  4.280e+05    +0.009     +3.339  2.18e+03
+NGC1090     160.0        187.2  3.121e+04    +0.068     +2.290  1.95e+02
+NGC6674     242.0        232.9  1.808e+06    -0.017     +3.873  7.47e+03
+
+==============================================================================
+gamma = 0.489   scale height = h300   gas = vgas
+==============================================================================
+galaxy   kind           e  sig  R_out    rho_out     C_out  deficit  rho_ext_req  delta_req
+-------------------------------------------------------------------------------------------
+NGC5055  golden     0.054   11   48.8  1.583e-03 8.331e-07  -0.0455    3.693e-04   8.62e+03
+NGC5033  golden     0.104    8   44.6  7.804e-05 3.489e-08  -0.0831    3.639e-05   8.49e+02
+NGC1090  control    0.000    0   30.1  1.125e-02 7.020e-06   0.0000    0.000e+00        nan
+NGC6674  control    0.000    0   67.4  8.333e-06 2.413e-09   0.0000    0.000e+00        nan
+
+galaxy       Vobs  V_MOND(e=0)    V_frmwk  MOND err  frmwk err     ratio
+------------------------------------------------------------------------
+NGC5055     179.0        210.3  1.022e+05    +0.070     +2.756  5.71e+02
+NGC5033     196.0        200.3  4.740e+05    +0.009     +3.384  2.42e+03
+NGC1090     160.0        187.2  3.457e+04    +0.068     +2.335  2.16e+02
+NGC6674     242.0        232.9  2.002e+06    -0.017     +3.918  8.27e+03
+
+==============================================================================
+gamma = 0.489   scale height = bershady   gas = vgas
+==============================================================================
+galaxy   kind           e  sig  R_out    rho_out     C_out  deficit  rho_ext_req  delta_req
+-------------------------------------------------------------------------------------------
+NGC5055  golden     0.054   11   48.8  1.160e-03 6.107e-07  -0.0455    2.707e-04   6.32e+03
+NGC5033  golden     0.104    8   44.6  4.227e-05 1.890e-08  -0.0831    1.971e-05   4.60e+02
+NGC1090  control    0.000    0   30.1  7.751e-03 4.836e-06   0.0000    0.000e+00        nan
+NGC6674  control    0.000    0   67.4  4.086e-06 1.183e-09   0.0000    0.000e+00        nan
+
+galaxy       Vobs  V_MOND(e=0)    V_frmwk  MOND err  frmwk err     ratio
+------------------------------------------------------------------------
+NGC5055     179.0        210.3  1.193e+05    +0.070     +2.824  6.67e+02
+NGC5033     196.0        200.3  6.441e+05    +0.009     +3.517  3.29e+03
+NGC1090     160.0        187.2  4.165e+04    +0.068     +2.415  2.60e+02
+NGC6674     242.0        232.9  2.860e+06    -0.017     +4.073  1.18e+04
+
+==============================================================================
+gamma = 0.489   scale height = h1000   gas = vgas
+==============================================================================
+galaxy   kind           e  sig  R_out    rho_out     C_out  deficit  rho_ext_req  delta_req
+-------------------------------------------------------------------------------------------
+NGC5055  golden     0.054   11   48.8  4.749e-04 2.499e-07  -0.0455    1.108e-04   2.59e+03
+NGC5033  golden     0.104    8   44.6  2.341e-05 1.047e-08  -0.0831    1.092e-05   2.55e+02
+NGC1090  control    0.000    0   30.1  3.376e-03 2.106e-06   0.0000    0.000e+00        nan
+NGC6674  control    0.000    0   67.4  2.500e-06 7.240e-10   0.0000    0.000e+00        nan
+
+galaxy       Vobs  V_MOND(e=0)    V_frmwk  MOND err  frmwk err     ratio
+------------------------------------------------------------------------
+NGC5055     179.0        210.3  1.865e+05    +0.070     +3.018  1.04e+03
+NGC5033     196.0        200.3  8.655e+05    +0.009     +3.645  4.42e+03
+NGC1090     160.0        187.2  6.311e+04    +0.068     +2.596  3.94e+02
+NGC6674     242.0        232.9  3.656e+06    -0.017     +4.179  1.51e+04
+
+==============================================================================
+IS THE REQUIRED AMBIENT DENSITY PHYSICALLY AVAILABLE?
+==============================================================================
+Physical ambient-density ladder [Msun/pc^3]:
+   cosmic mean baryon                6.705e-09
+   cosmic mean matter                4.284e-08
+   group, delta = 100 (matter)       4.284e-06
+   group, delta = 1000 (matter)      4.284e-05
+   cluster ICM, n_e ~ 1e-3 /cm^3     2.500e-05
+   cluster core, n_e ~ 1e-1 /cm^3    2.500e-03
+
+Shortfall = rho_ext_required / rho_available  (>1 means the framework
+needs MORE ambient matter than exists at that location).
+
+galaxy    rho_ext_req  cosmic mean ba  cosmic mean ma  group, delta =  group, delta =  cluster ICM, n  cluster core, 
+---------------------------------------------------------------------------------------------------------------------
+NGC5055     1.108e-04        1.65e+04        2.59e+03        2.59e+01        2.59e+00        4.43e+00        4.43e-02
+NGC5033     1.092e-05        1.63e+03        2.55e+02        2.55e+00        2.55e-01        4.37e-01        4.37e-03
+
+==============================================================================
+STEELMAN S1: THE PLOTTER CONVENTION CANNOT PRODUCE THE SIGN
+==============================================================================
+Ledger convention   V^2 = g_bar*R / C(rho)      -> rho_ext raises C, LOWERS V  (deficit, correct sign)
+Plotter convention  V^2 = V_bar^2 + (V_flat*C)^2 -> rho_ext raises C, RAISES V  (surplus, WRONG sign)
+   NGC5055: plotter V(rho_ext=0) =   93.2 km/s -> V(rho_ext=inf) =  201.8 km/s   (change +0.335 dex, EFE needs -0.046)
+   NGC5033: plotter V(rho_ext=0) =   88.6 km/s -> V(rho_ext=inf) =  213.4 km/s   (change +0.382 dex, EFE needs -0.083)
+
+==============================================================================
+WHAT THE FRAMEWORK'S OWN AMBIENT DENSITY ACTUALLY DELIVERS
+==============================================================================
+Largest physically defensible ambient density for a group galaxy
+(delta = 1000 matter overdensity), evaluated at the outermost radius:
+
+   gamma=2.0    NGC5055: delivered -0.0188 dex   needed -0.0455 dex   ratio delivered/needed 0.412
+   gamma=2.0    NGC5033: delivered -0.2259 dex   needed -0.0831 dex   ratio delivered/needed 2.718
+   gamma=0.489  NGC5055: delivered -0.0188 dex   needed -0.0455 dex   ratio delivered/needed 0.412
+   gamma=0.489  NGC5033: delivered -0.2259 dex   needed -0.0831 dex   ratio delivered/needed 2.718
+
+==============================================================================
+TEST-05's AMBIENT LEVER WAS EVALUATED AT THE WRONG RADIUS
+==============================================================================
+/tier-1-existing TEST-05 states the framework's ambient contribution is a
+'4e-5 (field) to 4e-3 (delta~100 group) FRACTIONAL perturbation' to rho,
+giving ~2e-5 to 2e-3 dex -- '~50x smaller than MOND's lever'.
+That fraction is rho_ext/rho_local, so it depends entirely on WHERE rho is
+evaluated.  The EFE is measured in the OUTER rotation curve, not mid-disk.
+
+galaxy         Rwhere            rho_local  rho_ext/rho @field   @delta=100
+---------------------------------------------------------------------------
+NGC5055      2.9mid-disk (1 Rd)   7.497e-01            5.71e-08     5.71e-06
+NGC5055     48.8outermost        1.583e-03            2.71e-05     2.71e-03
+NGC5033      5.3mid-disk (1 Rd)   1.269e-01            3.38e-07     3.38e-05
+NGC5033     44.6outermost        7.804e-05            5.49e-04     5.49e-02
+
+==============================================================================
+DELIVERED LEVER AND ITS RANK ORDER vs CHAE's MEASURED e
+==============================================================================
+Chae: NGC5055 e=0.054 (11sig)  NGC5033 e=0.104 (8sig)  NGC1090/NGC6674 controls.
+If the framework's mechanism were the EFE, the delivered deficit should be
+LARGEST in the golden galaxies and ~0 in the controls.  Ambient = delta 100.
+NOTE: delivered deficit is INDEPENDENT of gamma (C ~ gamma*rho/rho_crit in the
+small-x limit, so gamma cancels in C0/C1) -- verified below.
+
+  gamma    gas         h     NGC5055     NGC5033     NGC1090     NGC6674        rank verdict
+--------------------------------------------------------------------------------------------
+    2.0   vgas      h300    -0.00059    -0.01160    -0.00008    -0.09007     CONTROL LARGEST
+    2.0   vgas  bershady    -0.00080    -0.02096    -0.00012    -0.15572     CONTROL LARGEST
+    2.0   vgas     h1000    -0.00195    -0.03649    -0.00028    -0.21677     CONTROL LARGEST
+    2.0   vgas       rd5    -0.00125    -0.03756    -0.00019    -0.24357     CONTROL LARGEST
+    2.0    exp      h300    -0.00326    -0.00208    -0.00060    -0.00175        no inversion
+    2.0    exp  bershady    -0.00443    -0.00383    -0.00087    -0.00355        no inversion
+    2.0    exp     h1000    -0.01067    -0.00687    -0.00199    -0.00577        no inversion
+    2.0    exp       rd5    -0.00689    -0.00709    -0.00140    -0.00695        no inversion
+  0.489   vgas      h300    -0.00059    -0.01160    -0.00008    -0.09007     CONTROL LARGEST
+  0.489   vgas  bershady    -0.00080    -0.02096    -0.00012    -0.15572     CONTROL LARGEST
+  0.489   vgas     h1000    -0.00195    -0.03649    -0.00028    -0.21677     CONTROL LARGEST
+  0.489   vgas       rd5    -0.00125    -0.03756    -0.00019    -0.24357     CONTROL LARGEST
+  0.489    exp      h300    -0.00326    -0.00208    -0.00060    -0.00175        no inversion
+  0.489    exp  bershady    -0.00443    -0.00383    -0.00087    -0.00355        no inversion
+  0.489    exp     h1000    -0.01067    -0.00687    -0.00199    -0.00577        no inversion
+  0.489    exp       rd5    -0.00689    -0.00709    -0.00140    -0.00695        no inversion
+    1.0   vgas      h300    -0.00059    -0.01160    -0.00008    -0.09007     CONTROL LARGEST
+    1.0   vgas  bershady    -0.00080    -0.02096    -0.00012    -0.15572     CONTROL LARGEST
+    1.0   vgas     h1000    -0.00195    -0.03649    -0.00028    -0.21677     CONTROL LARGEST
+    1.0   vgas       rd5    -0.00125    -0.03756    -0.00019    -0.24357     CONTROL LARGEST
+    1.0    exp      h300    -0.00326    -0.00208    -0.00060    -0.00175        no inversion
+    1.0    exp  bershady    -0.00443    -0.00383    -0.00087    -0.00355        no inversion
+    1.0    exp     h1000    -0.01067    -0.00687    -0.00199    -0.00577        no inversion
+    1.0    exp       rd5    -0.00689    -0.00709    -0.00140    -0.00695        no inversion
+
+ESTIMATOR DEPENDENCE: the rank inversion holds in all 12 'vgas' rows and in
+NONE of the 12 'exp' rows.  It is therefore gas-prescription dependent and must
+NOT be reported as a kill.  What IS prescription-independent: in every one of
+the 24 configurations the delivered deficit fails to track Chae's measured e,
+and NGC5055's 11-sigma detection is under-delivered by 4x-75x.
+
+results -> /mnt/c/exe/projects/ai-agents/synchronism-site/explorer/data/efe_required_ambient_density.json

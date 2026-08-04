@@ -127,11 +127,26 @@ export default function MondUnification() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Applying the framework&apos;s actual structure instead: C is a function of <strong>local matter
           density ρ</strong> alone. A uniform external gravitational field does not change ρ. So an algebraic
-          C(ρ)&middot;g modification <strong>satisfies the Strong Equivalence Principle by construction and
-          predicts EFE&nbsp;=&nbsp;0 exactly</strong> &mdash; a sharper and more discriminating structural claim
-          than &ldquo;0.3&ndash;0.4&times; MOND,&rdquo; and one already in tension with Chae, Lelli, Desmond,
-          McGaugh, Li &amp; Schombert (2020, ApJ 904, 51), who report a ~4σ detection of MOND&apos;s EFE in SPARC
-          rotation curves.
+          g<sub>obs</sub>&nbsp;=&nbsp;g<sub>bar</sub>/C(ρ) modification (the direction the site&apos;s own
+          f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C identity implies &mdash; corrected 2026-08-04, this previously
+          read &ldquo;C(ρ)&middot;g,&rdquo; the opposite direction) <strong>satisfies the Strong Equivalence
+          Principle by construction and predicts EFE&nbsp;=&nbsp;0 exactly</strong> &mdash; a sharper and more
+          discriminating structural claim than &ldquo;0.3&ndash;0.4&times; MOND,&rdquo; and one already in
+          tension with Chae, Lelli, Desmond, McGaugh, Li &amp; Schombert (2020, ApJ 904, 51), who report a ~4σ
+          detection of MOND&apos;s EFE in SPARC rotation curves.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
+          <strong style={{ color: '#38bdf8' }}>EFE = 0 survives the obvious momentum-conservation objection
+          (2026-08-04):</strong> an algebraic g = g<sub>bar</sub>/C(ρ) modification looks like it violates
+          momentum conservation, since it isn&apos;t obviously sourced by a field equation. It survives: the
+          one-line completion &nabla;&middot;[C(ρ)&nabla;Φ] = 4πGρ conserves momentum, reproduces g =
+          g<sub>N</sub>/C exactly in spherical symmetry, and its extra polarization force is
+          &#8804;2&times;10&#8315;&#8309; of gravity &mdash; negligible. Because this completion is
+          <em> linear in Φ</em>, EFE = 0 is preserved exactly, and the same linearity is why the exterior field
+          of an isolated mass diverges as C&nbsp;&rarr;&nbsp;0 in vacuum: &ldquo;a uniform external field does
+          not change ρ&rdquo; (&rArr; EFE = 0) and &ldquo;empty space has C = 0 however strong the field&rdquo;
+          (&rArr; divergent exterior field) are the same statement, not two separate properties. Full
+          derivation: <code>explorer/findings/efe-zero-survives-momentum-objection-but-the-substitution-was-never-evaluated.md</code>.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           There <em>is</em> a real environmental effect in this framework &mdash; it is just not the EFE. Ambient

@@ -194,6 +194,14 @@ export default function ForResearchers() {
             separate external-acceleration from ambient-density coupling is queued as a research check.)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>EFE = 0 survives the momentum-conservation objection (2026-08-04):</strong> the algebraic
+            g = g<sub>bar</sub>/C(ρ) modification above looks unsourced, but a field-equation completion exists
+            (&nabla;&middot;[C(ρ)&nabla;Φ] = 4πGρ) that conserves momentum and is linear in Φ &mdash; which
+            preserves EFE = 0 exactly while also being why the exterior field of an isolated mass diverges as
+            ρ&nbsp;&rarr;&nbsp;0. See the full derivation on{' '}
+            <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>MOND Unification</Link>.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Prior-art audited (2026-07-23):</strong> the Milgrom surface-density and modified-inertia
             corpus (1983 trilogy; astro-ph/0510117 including its worked examples; the
             &Sigma;<sup>&dagger;</sup>/central-surface-density line through Milgrom 2016; Famaey &amp; McGaugh

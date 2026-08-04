@@ -16,9 +16,15 @@ export default function GammaParameter() {
       <ValidationBadge status="speculative" label="Motivated Ansatz — Not Derived" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
-        <EquationDisplay size="lg" label="Universal coupling strength">
+        <EquationDisplay size="lg" label="Transition sharpness (Hill coefficient)">
           &#x03B3; = 2 / &#x221A;N<sub>corr</sub>
         </EquationDisplay>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
+          Corrected 2026-07-27: this label previously read &ldquo;coupling strength&rdquo; &mdash; the wrong
+          <em> kind</em> of quantity. The Hill identity on{' '}
+          <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>{' '}
+          makes γ a log-log slope (Hill index n = 2γ), not a coupling.
+        </p>
 
         <p>
           &#x03B3; (gamma) is the single parameter that determines which regime a system is in.

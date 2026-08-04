@@ -219,25 +219,50 @@ export default function ParameterDerivations() {
               star-forming galaxies, 0.33 &lt; z &lt; 1.44, and report a&#x2080;(z) = a&#x2080;(0) + a&#8321;z with
               a&#8321; = 1.59 (+0.11/&minus;0.10) &times;10<sup>&minus;10</sup>, stating plainly:
               <em>&ldquo;our measured a&#x2080;(z) is faster than that of H(z).&rdquo;</em> Branch (A) is a
-              zero-parameter prediction, a&#x2080;(z)/a&#x2080;(0) = E(z), and it undershoots &mdash; the measured
-              growth is steeper than expansion allows, in every bin and under every normalization tried:
+              zero-parameter prediction, a&#x2080;(z)/a&#x2080;(0) = E(z).
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              <strong>Correction (2026-08-04): the deviation is anchor-dominated, and the sign flips
+              with the anchor.</strong> Branch (A) is a <em>ratio</em> prediction &mdash; converting it to a
+              number at z~1 requires picking a₀(0), and four published values disagree by 69%:
             </p>
             <div style={{ overflowX: 'auto', margin: '0.5rem 0' }}>
               <table style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)', borderCollapse: 'collapse' }}>
                 <thead>
                   <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
-                    <th style={{ textAlign: 'left', padding: '0.25rem 0.75rem 0.25rem 0' }}>a&#x2080;(0) normalization</th>
+                    <th style={{ textAlign: 'left', padding: '0.25rem 0.75rem 0.25rem 0' }}>a&#x2080;(0) anchor</th>
+                    <th style={{ textAlign: 'left', padding: '0.25rem 0.75rem' }}>value (10&#x207B;&#xB9;&#x2070;)</th>
                     <th style={{ textAlign: 'left', padding: '0.25rem 0.75rem' }}>Branch (A) at z~1</th>
-                    <th style={{ textAlign: 'left', padding: '0.25rem 0' }}>Deviation from observed 2.38</th>
+                    <th style={{ textAlign: 'left', padding: '0.25rem 0' }}>vs Ciocan 2.38</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>framework&apos;s own, cH&#x2080;/2&#x03C0; = 1.04</td><td style={{ padding: '0.25rem 0.75rem' }}>1.86</td><td style={{ padding: '0.25rem 0' }}>5.2&#x03C3; low</td></tr>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Milgrom local, 1.20</td><td style={{ padding: '0.25rem 0.75rem' }}>2.15</td><td style={{ padding: '0.25rem 0' }}>2.3&#x03C3; low</td></tr>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan&apos;s own fitted intercept, 1.00</td><td style={{ padding: '0.25rem 0.75rem' }}>1.79</td><td style={{ padding: '0.25rem 0' }}>5.9&#x03C3; low</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan&apos;s own fitted intercept</td><td style={{ padding: '0.25rem 0.75rem' }}>1.00 &plusmn; 0.02</td><td style={{ padding: '0.25rem 0.75rem' }}>1.79</td><td style={{ padding: '0.25rem 0' }}>+9.4&#x03C3; low</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>framework&apos;s own, cH&#x2080;/2&#x03C0;</td><td style={{ padding: '0.25rem 0.75rem' }}>1.04</td><td style={{ padding: '0.25rem 0.75rem' }}>1.86</td><td style={{ padding: '0.25rem 0' }}>+9.8&#x03C3; low</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>McGaugh+2016 SPARC (canonical)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.20 &plusmn; 0.26</td><td style={{ padding: '0.25rem 0.75rem' }}>2.15</td><td style={{ padding: '0.25rem 0', color: '#38bdf8' }}>+0.5&#x03C3; &mdash; CONSISTENT</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>V&#x103;r&#x103;&#x15F;teanu+2025 MIGHTEE-HI</td><td style={{ padding: '0.25rem 0.75rem' }}>1.69 &plusmn; 0.13</td><td style={{ padding: '0.25rem 0.75rem' }}>2.91</td><td style={{ padding: '0.25rem 0', color: '#38bdf8' }}>&minus;2.3&#x03C3; &mdash; branch (A) HIGH</td></tr>
                 </tbody>
               </table>
             </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              The 2026-08-01 shipped figure (2.3&ndash;5.9&sigma; low) used only the three low-side anchors;
+              the fourth &mdash; the same McGaugh+2016 value the site uses as canonical a&#x2080; elsewhere
+              &mdash; is one sentence away in Ciocan&apos;s own paper and reverses the verdict to consistent.
+              Signal (79% predicted growth to z~1) vs. systematic (69% spread among a&#x2080;(0)
+              determinations) is signal/systematic &#8776; 1.15 &mdash; this places the row in the
+              &ldquo;untestable with foreseeable data&rdquo; category, not &ldquo;disfavoured.&rdquo;
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              <strong>ΛCDM predicts the same evolution, and the functional form is prior art.</strong>{' '}
+              Mayer, Teklu, Dolag &amp; Remus 2023 (Magneticum simulations, ΛCDM+baryons, no MOND, no
+              fundamental a&#x2080;; MNRAS 518, 257, arXiv:2206.04333) fit a&#x2080; growing by a factor
+              &#8776;3 from z=0 to z=2 &mdash; branch (A) predicts E(2) = 3.03. Their eq. (13) <em>is</em>{' '}
+              branch (A), written down and tested inside a ΛCDM paper in 2022, where it is reported to
+              fail to describe the simulated trend precisely. No outcome of the Ciocan measurement
+              selects Synchronism over ΛCDM+baryons: both predict the RAR-fitted a&#x2080; grows with
+              epoch, by a similar factor, for unrelated reasons (galaxy-assembly physics vs. an
+              emergent coherence scale).
+            </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               <strong>Milgrom&apos;s coincidence has a second, unstated face:</strong> 2&#x03C0;a&#x2080; &#8776;
               cH&#x2080; &#8776; c&sup2;(&#x039B;/3)<sup>1/2</sup> &mdash; the site has cited only the H&#x2080; half. The
@@ -247,15 +272,17 @@ export default function ParameterDerivations() {
               faster than H(z) embarrasses both halves of the 1983 coincidence, not this framework specifically.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              <strong>Verdict &mdash; disfavored, not refuted, and the count stays at 6:</strong> Ciocan&apos;s
-              own systematics are large (a_tot and a_bar share a forward model, ~0.2 dex gas systematics,
-              1.5&times; the SPARC scatter), the deviation is normalization-sensitive by a factor of two
-              (2.3&#x03C3;&ndash;5.9&#x03C3;), and the framework never committed to branch (A) in writing before this
-              page stated it &mdash; so this does not join the refutation tally on{' '}
+              <strong>Verdict &mdash; non-discriminating (revised 2026-08-04), and the count stays at 6:</strong>{' '}
+              this row joins every other row in the ledger, reached the same way &mdash; a priori, from
+              already-published numbers, with no new data or computation. It is not a live tension with a
+              date on it; it is a forced, outstanding, <em>prospective</em> commitment (a rival with a
+              fundamental a&#x2080; only makes this bet optionally) whose power to discriminate was removed
+              by the anchor dependence and the ΛCDM+baryons degeneracy above &mdash; not evidence against
+              Synchronism specifically, and not evidence for it either. Consistency with a
+              non-discriminating prediction (the McGaugh-anchor 0.5&sigma; row) is not evidence for the
+              framework. This does not join the refutation tally on{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
-              It is the framework&apos;s one forced, outstanding, prospective commitment (a rival with a
-              fundamental a&#x2080; only makes this bet optionally), and it is currently losing 2&#x03C3;&ndash;6&#x03C3;
-              depending on whose local a&#x2080; you anchor to. One further note on the 13% figure two cards
+              One further note on the 13% figure two cards
               above: Ciocan&apos;s fitted z=0 intercept is 1.00 &plusmn; 0.04, only 1.0&#x03C3; from this framework&apos;s
               1.04 &mdash; but that intercept is the extrapolated endpoint of a linear fit over 0.33 &lt; z &lt; 1.44
               that the authors themselves call &ldquo;phenomenological&hellip;rather than physically motivated,&rdquo;
@@ -388,6 +415,20 @@ export default function ParameterDerivations() {
               class exclusion (B<sub>max</sub> &#8818; 14 is excluded by SPARC dwarfs), not the median-based
               percentage. This registered sweep has not yet been executed against the full per-galaxy dataset;
               see the proposal for the pre-fixed verdict rule.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
+              <strong>Which force law this ceiling is a statement about (2026-08-04):</strong> B<sub>max</sub> =
+              3.17 is a statement about which of the site&apos;s live galaxy-sector formalisms is meant. Under
+              g<sub>obs</sub> = g<sub>bar</sub>/C(ρ) &mdash; the reading the f<sub>DM</sub> = 1&minus;C identity
+              implies &mdash; the boost B = 1/C is unbounded by construction and exceeds 3.17 by 2&ndash;5 orders
+              of magnitude at <em>every</em> radius, including the disk centre, on the site&apos;s own five
+              plotter galaxies. The ceiling is consistent only with the{' '}
+              <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve
+              Plotter</Link>&apos;s amplitude law v² = v<sub>b</sub>² + (V<sub>flat</sub>·C)², where the extra
+              term is bounded by V<sub>flat</sub> irrespective of C. No physical density floor rescues the other
+              reading: capping B at 3.17 there requires ρ &#8805; 0.177 ρ<sub>crit</sub>, a floor
+              10²&ndash;10⁴× the densest point of the model disk. See the C-convention note on{' '}
+              <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>.
             </p>
           </div>
         </div>

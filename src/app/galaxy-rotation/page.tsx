@@ -46,6 +46,22 @@ export default function GalaxyRotation() {
           hand-tuned radius stand-in is that no-go showing through in a single demo.
         </p>
 
+        <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#ef4444' }}>C-convention note (2026-08-04):</strong> the site currently runs
+          three mutually exclusive readings of the substitution above, all live: this plotter codes
+          v² = v<sub>b</sub>² + (V<sub>flat</sub>·C)², i.e. g<sub>obs</sub> = C·g<sub>bar</sub> shifted into an
+          amplitude term; the f<sub>DM</sub> = 1 − C identity on{' '}
+          <Link href="/tier-1-existing" style={{ color: '#ef4444' }}>Tier 1</Link> implies
+          g<sub>obs</sub> = g<sub>bar</sub>/C; and{' '}
+          <Link href="/mond-unification" style={{ color: '#ef4444' }}>MOND Unification</Link>&apos;s prose says
+          g<sub>obs</sub> = C·g<sub>bar</sub> directly. On the site&apos;s own five plotter galaxies these three
+          laws miss the observed curve in three different directions &mdash; roughly 10²&ndash;10³× high,
+          converging on Newtonian, and 10²&ndash;10³× low &mdash; and no calibration reconciles them, because the
+          disagreement is a functional-form mismatch (delivered boost falls exponentially with radius under an
+          exponential disk; a flat curve needs it to rise roughly linearly), not an amplitude one. This plotter
+          shows the amplitude reading only; it is not necessarily the framework&apos;s asserted one.
+        </div>
+
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           <strong>The literature already contains both this obstruction and its known escapes
           (noted 2026-07-10; corrected 2026-07-27):</strong> density-dependent transitions are a mature

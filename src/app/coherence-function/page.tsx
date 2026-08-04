@@ -68,7 +68,25 @@ export default function CoherenceFunction() {
           argument swapped from the enclosed-mass acceleration g<sub>bar</sub> to local density ρ.</strong> That
           single substitution is the entire difference from MOND &mdash; and it is the same substitution behind
           the local-density no-go on{' '}
-          <Link href="/for-researchers" style={{ color: '#38bdf8' }}>For Researchers</Link>. One caveat: for
+          <Link href="/for-researchers" style={{ color: '#38bdf8' }}>For Researchers</Link>.
+        </div>
+
+        <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#ef4444' }}>The substitution above has never itself been evaluated
+          (2026-08-04):</strong>{' '}
+          every quantitative galaxy result on this site &mdash; γ = 0.489, the ΔBIC form-selection table, the
+          Cassini/SPARC squeeze &mdash; was computed with the argument g<sub>bar</sub>, not ρ. Running the
+          framework&apos;s own numbers (γ = 2, ρ<sub>crit</sub> = 0.029 V<sub>flat</sub>²) with ρ actually
+          substituted in moves the predicted rotation velocity by <strong>2&ndash;5 orders of magnitude</strong> on
+          the site&apos;s own five plotter galaxies, and three mutually exclusive galaxy force laws are live on
+          the site depending on how <code>C(ρ)·g</code> vs <code>g/C(ρ)</code> is read (see the C-convention note
+          on <Link href="/galaxy-rotation" style={{ color: '#ef4444' }}>Galaxy Rotation</Link>). Parameter-free
+          &mdash; no calibration of A, γ, or ρ<sub>crit</sub> reconciles it. Full derivation:{' '}
+          <code>explorer/findings/efe-zero-survives-momentum-objection-but-the-substitution-was-never-evaluated.md</code>.
+        </div>
+
+        <div style={{ marginBottom: '1rem' }}>
+          One caveat: for
           &#x03C1;&nbsp;&#x226a;&nbsp;&#x03C1;<sub>crit</sub> (real galaxy outskirts), C&nbsp;&asymp;&nbsp;&#x03B3;x/(1+&#x03B3;x)
           depends on &#x03B3; and &#x03C1;<sub>crit</sub> only through their ratio &mdash; the
           degeneracy-breaking term is &#x03B3;(2&#x03B3;&minus;1), which vanishes at exactly &#x03B3;=1/2. So near
@@ -122,7 +140,7 @@ export default function CoherenceFunction() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontFamily: 'serif', fontStyle: 'italic', fontSize: '1.3rem', color: 'var(--color-accent-violet)' }}>&#x03B3;, &#x03C1;<sub>crit</sub></div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <strong>Parameters:</strong> coupling strength, saturation knee (reference density — not a critical point; C(&#x03C1;<sub>crit</sub>,&#x03B3;=2)&#x2248;0.88)
+              <strong>Parameters:</strong> transition sharpness (Hill coefficient — corrected 2026-07-27 from &ldquo;coupling strength,&rdquo; the wrong kind of quantity), saturation knee (reference density — not a critical point; C(&#x03C1;<sub>crit</sub>,&#x03B3;=2)&#x2248;0.88)
             </div>
           </div>
         </div>

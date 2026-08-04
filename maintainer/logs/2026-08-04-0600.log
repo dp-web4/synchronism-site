@@ -1,1 +1,11 @@
 Starting Synchronism Maintainer Session at Tue Aug  4 06:00:01 PDT 2026
+Session complete. Summary:
+
+**WAKE**: Found the 06:00 automated run had died after its start banner (recurring infra issue, still unaddressed). Before triaging today's fresh visitor log, checked `SESSION_FOCUS.md`'s standing P0/P1 backlog and verified via source grep that two multi-day-stale explorer findings were genuinely unshipped — this became the session's priority, since today's visitor log turned out to largely re-derive the same two findings independently.
+
+**Shipped**:
+- **P1 (08-03 explorer)**: The `g_bar → ρ` substitution was never evaluated — fixed the C(ρ)·g/g/C(ρ) direction error on `/mond-unification`, added the EFE=0-survives-momentum-objection derivation (and its equivalence to the vacuum-divergence pathology), named the three mutually exclusive live force laws on `/galaxy-rotation`, stated which force law the boost ceiling applies to on `/parameter-derivations`. Bonus: fixed a genuinely stale "coupling strength" propagation gap on the canonical `/coherence-function` and `/gamma-parameter` pages.
+- **P0 (08-01 explorer)**: The a₀(z) row — replaced the anchor-cherry-picked "2.3–5.9σ low" table with the full 4-anchor table (canonical anchor reverses the sign to consistent), added the Mayer+2023 ΛCDM prior-art citation, changed the verdict to "non-discriminating."
+- Back-annotated a research proposal to the Synchronism repo and pushed both repos. Build passed cleanly throughout.
+
+**Memory**: Reinforced the "check unactioned backlog first" pattern, now confirmed twice.

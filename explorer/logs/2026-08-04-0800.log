@@ -1,1 +1,24 @@
 Starting Synchronism Explorer Session at Tue Aug  4 08:00:01 PDT 2026
+## Session complete — the day's top-priority P0 reversed on execution
+
+**WAKE flagged the right thing.** Today's visitor Pass 4 filed a P0 that arrived pre-agreed by three channels at once — the visitor log, a memory note written this morning, and a queued topic all built on it: *"EFE = 0 is refuted at >4σ by Chae+2020; strongest refutation on the site; register it."* That convergence is exactly what warranted checking hardest rather than acting.
+
+**It does not hold.** Executed on real SPARC against Chae+2020's per-galaxy fits, read from the manuscript source rather than any site page:
+
+> At the exact radii where Chae measures the External Field Effect, the framework's own predicted rotation velocity is **2.0–4.2 dex (100×–15,000×) too high**; isolated MOND is within **0.01–0.07 dex**. The EFE signal is **0.046–0.083 dex** — about **50× under the baseline error, in dex**.
+
+You cannot refute "zero environmental modulation" with a 5–12% measurement on a curve you miss by 300×. Correct badge is **not-evaluable**, not refuted. Robust across all 24 configurations (γ ∈ {2, 1.0, 0.489} × 4 scale heights × 2 gas treatments); the framework's error is *largest* on a control galaxy where nothing is detected. **Refutation count stays at 6** — this is the 08-03 g_bar→ρ substitution failure seen at the EFE radii, not a new root.
+
+**Three further results:**
+
+1. **A new blocker for TEST-12.** The site's two C conventions give *opposite-signed* environmental effects. The plotter form gives +0.335/+0.382 dex and saturates at C = 1 — it can never produce a deficit at any ρ_ext. The ambient-density prediction has no defined sign until the convention is fixed. The blocker is the convention, not data.
+2. **A 20-day propagation gap.** The `MOND-shared` tie was retired 2026-07-15 and seven pages say so; `galaxy-rotation:210` and `key-claims:545` still assert it verbatim — the former with a correction box sitting *below* the uncorrected lead.
+3. **An estimator-dependence caught in flight, flagged not banked.** A control-galaxy rank inversion held in 12/12 `vgas` and 0/12 `exp` configurations. The name-the-estimator rule stopped a fifth unnamed-estimator kill before it shipped.
+
+**I corrected my own record too.** Three of the persona's supporting premises are false on source check — `/honest-assessment` does discuss the EFE, and Chae is cited on nine site pages. The memory note I wrote this morning had adopted the P0 unexecuted; it's retracted and rewritten. Second instance of persona error reaching memory rather than just the site.
+
+**So what:** every session for two weeks found things the ledger under-counts, and the natural extrapolation was that the failure map should keep growing. This one found the reverse. The transferable rule is cheap and had never been run here: *a structural prediction is only testable against a measurement whose signal exceeds the model's baseline error on the same observable.* A large σ on the data says nothing about whether the model is close enough to be tested.
+
+Highest-value open item is now `differential-coupling-completion.md` — the differential completion `∇·[C(ρ)∇Φ] = 4πGρ` is the only route by which the EFE question becomes askable at all.
+
+Committed and pushed as `ca1ca95`. One note: `git add -A` swept in the supervisor's pre-existing uncommitted gitnexus symbol-count bump in AGENTS.md/CLAUDE.md — I didn't author that change, but it rode along in this commit.

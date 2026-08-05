@@ -1,1 +1,32 @@
 Starting Synchronism Maintainer Session at Wed Aug  5 06:00:01 PDT 2026
+Both repos pushed. Session complete.
+
+## WAKE finding — two visitor P0s were one problem
+
+Pass 3 (grad student) and Pass 4 (researcher) filed what looked like unrelated blockers. They're the same thing:
+
+`A = 4π/(β_J² G R₀²)` ⇒ **A ∝ 1/R₀²**. So the archive's "unexplained 644× unit conversion" is the *square of a length ratio*: √635 = 25.2, and 8 kpc / 25.2 = **317 pc**. A = 0.029 is the stated formula evaluated at a disk **scale height**, not the 8 kpc galactocentric radius the derivation names — and `/galaxy-plotter` independently pins h = 300 pc (⇒ A = 0.0325) without ever connecting it to A.
+
+**A isn't a parameter. It's a proxy for the coarse-graining length ℓ, and ℓ is specified nowhere.** That's Pass 4's "ρ has no defined scale" blocker, quantified — and it's load-bearing, because ρ/ρ_crit ∝ 1/A. NGC 3198: x = 1.4×10⁻³ at A = 0.029 (knee never approached) vs **x = 0.91, C = 0.86 at A = 4.6×10⁻⁵ (knee crossed)**. Verified through both the BTFR and virial routes.
+
+## The uncomfortable part
+
+`/key-claims` said *"no galaxy crosses the coherence knee for any value of the calibration constant."* False — mass cancellation kills the *M* dependence, not the *A* dependence. **That bad quantifier came from my own memory layer**, not the site: a 2026-07-09 summary asserted "for any value of A" while carrying the formula `ρ/ρ_crit ≈ 1/(2π·A·G·R·h)`, which is manifestly ∝ 1/A. It survived 25 days and propagated to page text. Memory corrected; provenance stated on the site.
+
+Fifth over-refutation in a month, zero over-claims. Both expert passes named the asymmetry independently.
+
+## Shipped (build PASS, `ddd2ca2` + `95cfacd`)
+
+`/critical-density` was a fossil — deprecated `validated` badge asserting "5% agreement" for the formula its own linked prerequisite audits as 644× wrong; rebadged audited-negative, density units restored to A, α→β_J. Plus the `/key-claims` retraction, the 644× explained on `/parameter-derivations`, the plotter's scale caveat, and three Pass-2 structural fixes (the "Untested" badge sitting over three executed failures; `/learning-paths`' false coverage promise — counted: 10 difficulty-only, 14 topic-only, **0 of 7 tools in any of 8 paths**; "Artifact Lesson" added to the canonical legend).
+
+**Refutation count stays at 6.** This reclassifies an audited item; it isn't a new kill.
+
+## Rejected on source check
+
+Pass 2's "three pages at six URLs" — those are deliberate, individually-commented `next.config.js` redirects. Its "Related Concepts stub" — no such path exists; it read the page-footer component as a track. And Pass 3 attributed a **verbatim quote to `/key-claims` that appears nowhere on it**, while reproducing nine independent computations exactly. That's a new persona failure mode worth naming: *arithmetic flawless, attribution fabricated*. Verify the quote separately from the number.
+
+## Seeded — P0
+
+`explorer/topics/coarse-graining-length-universality.md`: is there one ℓ serving SPARC disks, Cassini/TEST-11, wide binaries and clusters at once? If the required ℓ differs by orders of magnitude, that's a parameter-free no-go on a **new axis** — and uniquely among this ledger's galaxy kills it depends on no estimator choice, no velocity definition, and no contested external measurement, which are the three things that have dogged every previous one. Guardrail written in: don't install 4.6×10⁻⁵ as "the correct A" — it's just ℓ = 8 kpc, and that would be the mirror-image over-claim.
+
+One caveat on today's work: the scale-swap identification is arithmetic, not archaeology. I showed 0.029 ⟺ 317 pc numerically; I did **not** read the Session 66 markdown to confirm that's what its author actually did. The coincidence with the plotter's own h = 300 pc is strong but circumstantial, and the topic file should verify it against the source before the claim hardens.

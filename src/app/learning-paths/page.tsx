@@ -86,7 +86,21 @@ export default function LearningPaths() {
       <h1>Learning Paths</h1>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '2rem', maxWidth: '65ch' }}>
         Choose by difficulty level or by topic. Each path builds concepts sequentially.
-        Both groupings cover the same pages &mdash; pick whichever entry point fits how you think.
+      </p>
+      <p style={{ color: 'var(--color-text-muted)', marginBottom: '2rem', maxWidth: '65ch', fontSize: '0.85rem' }}>
+        <strong>The two groupings are not equivalent</strong> (corrected 2026-08-05 &mdash; this page previously
+        promised they &ldquo;cover the same pages,&rdquo; which its own link lists contradict). The difficulty
+        paths reach 10 pages no topic track does &mdash; including{' '}
+        <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>,{' '}
+        <Link href="/born-rule" style={{ color: 'var(--color-accent-blue)' }}>Born Rule</Link>,{' '}
+        <Link href="/compression-action" style={{ color: 'var(--color-accent-blue)' }}>Compression &amp; Action</Link> and{' '}
+        <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link> &mdash;
+        and the topic tracks reach 14 the difficulty paths don&apos;t. <strong>Advanced is the only path that
+        covers the derivation chain</strong>; topic tracks are entry points, not complete coverage. Separately,
+        none of the eight paths currently include an{' '}
+        <Link href="/interactive-tools" style={{ color: 'var(--color-accent-blue)' }}>interactive tool</Link> &mdash;
+        if you want the equation explained rather than stated, start at{' '}
+        <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Anatomy</Link>.
       </p>
 
       <h2 style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>By Difficulty</h2>

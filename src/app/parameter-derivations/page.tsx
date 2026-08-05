@@ -152,7 +152,21 @@ export default function ParameterDerivations() {
                 (equations.ts). The derivation that hits 5% underpins a law the framework does not use.</li>
                 <li><strong>Stated formula gives 600× off:</strong> A = 4π/(β<sub>J</sub>²·G·R₀²) with β<sub>J</sub>=1,
                 R₀=8 kpc gives A ≈ 4.6×10⁻⁵ — not 0.029. The Session 66 markdown bridges them with an
-                unexplained 644× &ldquo;unit conversion.&rdquo;</li>
+                unexplained 644× &ldquo;unit conversion.&rdquo;
+                <strong> The 644× is now identified (2026-08-05): it is not a unit conversion.</strong> Since
+                A ∝ 1/R₀², a factor of 635 is the <em>square of a length ratio</em> — √635 = 25.2 and
+                8 kpc / 25.2 = <strong>317 pc</strong>. A = 0.029 is this same formula evaluated at a disk
+                <em> scale height</em> rather than at the 8 kpc galactocentric radius the derivation names
+                (the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>galaxy plotter</Link>{' '}
+                independently pins h = 300 pc ⇒ A = 0.0325). So A is not an independent parameter at all: it is a
+                proxy for the <strong>coarse-graining length ℓ</strong> used to define ρ, with A ∝ 1/ℓ², and the
+                framework specifies ℓ nowhere. This changes the failure mode — the derivation is not
+                arithmetically broken, it has one undetermined length — and it is <em>load-bearing</em>, because
+                ρ/ρ<sub>crit</sub> ∝ 1/A means the galaxy-sector knee verdict flips with ℓ (NGC 3198:
+                1.4×10⁻³ at A = 0.029, <strong>0.91 at A = 4.6×10⁻⁵</strong>). See{' '}
+                <Link href="/critical-density" style={{ color: 'var(--color-accent-blue)' }}>Critical Density</Link>.
+                <strong> No refutation is added to the ledger from this</strong> — it reclassifies an existing
+                audited item and opens a question.</li>
                 <li><strong>Number detached from computation:</strong> 0.0294 propagated ~600 sessions without
                 anyone re-running the stated formula. Same failure mode as the 2026-05-25 DESI epistemic regression.</li>
               </ol>

@@ -160,7 +160,7 @@ export default function Tier1Existing() {
     <>
       <Breadcrumbs currentPath="/tier-1-existing" />
       <h1>Tier 1: Existing Data</h1>
-      <ValidationBadge status="untested" label="10 Tests, $0 Cost — see overlap notes" />
+      <ValidationBadge status="failed" label="4 executed — 3 failed, 1 substituted-protocol kill; 1 withdrawn; rest untested. $0 cost — see overlap notes" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>

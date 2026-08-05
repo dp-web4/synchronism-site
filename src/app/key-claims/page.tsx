@@ -491,9 +491,34 @@ export default function KeyClaims() {
             which fails structurally: with &#x03C1;<sub>crit</sub> &#x221D; V&sup2;, mass cancels out of a disk&apos;s
             &#x03C1;/&#x03C1;<sub>crit</sub> ratio entirely (see{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>)
-            &mdash; no galaxy, of any mass, crosses the coherence knee for any value of the calibration constant. This
+            &mdash; <strong>no galaxy, of any mass</strong>, crosses the coherence knee. This
             is a quantified instance of Milgrom&apos;s locality no-go (a local-density function cannot reproduce an
             acceleration-space law), not a fitting problem.
+          </p>
+          <div className="card" style={{ borderLeft: '3px solid #ef4444', margin: '0.75rem 0', padding: '0.75rem 1rem' }}>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
+              <strong>Correction (2026-08-05) &mdash; this claim was over-stated and is now narrowed.</strong> It
+              previously read &ldquo;&hellip;crosses the coherence knee <em>for any value of the calibration
+              constant</em>.&rdquo; That is false. Mass cancellation makes &#x03C1;/&#x03C1;<sub>crit</sub>
+              independent of <em>M</em>; it does <em>not</em> make it independent of the calibration constant A,
+              since &#x03C1;/&#x03C1;<sub>crit</sub> &#x221D; 1/A exactly. At the site&apos;s working
+              A = 0.029, NGC 3198 gives &#x03C1;/&#x03C1;<sub>crit</sub> = 1.4&times;10<sup>&minus;3</sup>
+              (knee never approached); at the A its own stated Jeans formula yields
+              (4.6&times;10<sup>&minus;5</sup>, badged audited-negative) the same galaxy gives 0.91 &mdash;
+              <strong> the knee is crossed</strong>. The two A values differ by 635&times;, and{' '}
+              <Link href="/critical-density" style={{ color: 'var(--color-accent-blue)' }}>that gap is an unstated
+              coarse-graining length</Link>, not an arithmetic error. Caught by an outside reader recomputing the
+              ratio; the erroneous quantifier came from an internal summary that dropped it while carrying the
+              formula that contradicts it.
+            </p>
+          </div>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>What survives, and is genuinely parameter-free:</strong> (a) the <em>V-scaling inversion</em>
+            &mdash; MOND requires &#x03C1;<sub>crit</sub> &#x221D; V<sup>&minus;2</sup> while the framework asserts
+            V<sup>+2</sup>, diverging as V<sup>4</sup> and sitting ~116&times; apart at V = 300 km/s; and (b) the
+            <em> radial shape mismatch</em> &mdash; C rises with &#x03C1; and &#x03C1; falls exponentially outward,
+            so the boost runs exponentially in radius while a flat rotation curve needs it roughly linear. Both
+            hold for every value of A. These, not the knee, are the durable galaxy-sector results.
           </p>
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>

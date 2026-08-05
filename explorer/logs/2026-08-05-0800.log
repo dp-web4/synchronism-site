@@ -1,1 +1,26 @@
 Starting Synchronism Explorer Session at Wed Aug  5 08:00:01 PDT 2026
+Session complete and pushed (`01c4bd2`).
+
+## What happened
+
+I ran the P0 topic — *"is there one coarse-graining length ℓ that survives SPARC, Cassini, wide binaries and clusters?"* — and **closed it by dissolving it**. The question has no content, for two independent reasons.
+
+**1. R₀ is not a smoothing length.** `/critical-density` defines β_J = λ_Jeans/**R_half**, *"the Jeans-length-to-**galaxy-size** ratio, empirically 1.1 ± 0.2 across SPARC galaxies"* — then calls R₀ a "coarse-graining length ℓ" three paragraphs later, same page, added the same day. The archive's Session 53 is unambiguous.
+
+**2. Even granting the ℓ reading, ℓ cancels.** A coarse-graining length must smooth ρ as well as ρ_crit — this morning's calculation moved only one side. Doing both gives
+
+> **x(ℓ) = (3/16π²)·β_J²·[V_c(ℓ)/V_flat]² = 0.019·β_J²·[V_c/V]²**
+
+x is a **virial ratio**, so **x ≤ ~0.02 for every bound system, in every sector, at every ℓ** — the knee is unreachable by ~40×, for free. Verified on all five plotter disks (max over ℓ: 1.7e-3 to 1.1e-2) and to four digits at Cassini and wide-binary scales. Kernel-robust: Gaussian gives 0.00505, moving the ceiling *down*. This is the first galaxy-sector statement on the site that survives without an estimator choice, a velocity definition, or a contested external measurement.
+
+**The 644× already had an explanation, two months old.** A depends only on the *product* β_J·R₀. Session 687 §1.2 (2026-06-07) recorded Session 66's factorization: 4.5 × 0.07 = **0.315 kpc — 0.8% from the "317 pc."** Forcing β_J = 1 relabels the product as a length; h = 300 pc is a 5% coincidence. Two further gaps nobody had flagged: the site's formula carries a **4π Session 53's does not** (12.57 of the 635), and **β_J = 4.5 is 17σ from the same page's own calibration**.
+
+## Other results
+- **Cassini is ℓ-independent** — x = 9.1e-4 unsmoothed, 0.01899 smoothed, C ≈ 0 either way, because the ρ jump and the ρ_crit jump are the same jump. TEST-11 strengthened; do not reopen.
+- **The "knee flips with A" is a law swap**, not a parameter choice — per-galaxy R_half gives A_eff spanning 19× and ρ_crit ∝ V^0.5, the fork documented since 06-07.
+- **Three numbers shipped this morning don't reproduce** from the plotter's own `midplaneDensity()`: ρ(0) = 0.6164 not 0.934, x(0) = 9.45e-4 not 1.43e-3, and the headline **0.91 is 0.60**. One error, factor 1.515, now live on three pages.
+
+Refutation count unchanged at **6**. Six ranked maintainer actions are at the end of the finding; SESSION_FOCUS's morning P0 is marked superseded rather than deleted.
+
+## The uncomfortable part
+This is the fifth same-day over-correction in a month, and the first where the over-correction was itself a *correction of an over-refutation*. The topic's own guardrail — "don't install 4.6×10⁻⁵ as the audited-correct A, that would be the mirror-image over-claim" — was the right instinct aimed one level too shallow. The mirror-image over-claim wasn't a *value* of A. It was the *existence* of ℓ.

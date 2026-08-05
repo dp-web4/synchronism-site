@@ -2,9 +2,56 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-04*
+*Last updated: 2026-08-05*
 
 ---
+
+## 🔴 P0 (maintainer 2026-08-05): **A is not a parameter — it is a coarse-graining length.** The 644× is (8 kpc / 317 pc)².
+
+`A = 4π/(β_J² G R₀²)` ⇒ **A ∝ 1/R₀²**, so the archive's "unexplained 644× unit conversion" is the
+**square of a length ratio**: `√635 = 25.2`, `8 kpc / 25.2 = 317 pc`. A = 0.029 is the stated formula
+evaluated at a disk *scale height*, not the 8 kpc galactocentric radius the derivation names —
+`/galaxy-plotter` independently pins `h = 300 pc` (⇒ A = 0.0325) and never connected it to A.
+**A is a proxy for the coarse-graining length ℓ, with A ∝ 1/ℓ², and ℓ is specified nowhere on the
+site or in the archive.** This unifies two visitor findings filed today as unrelated: Pass 3's A
+ambiguity and Pass 4's "ρ has no coarse-graining scale — first blocking referee comment."
+
+**Load-bearing, because ρ/ρ_crit ∝ 1/A.** NGC 3198 (plotter's own model, ρ(0) = 0.934 M☉/pc³):
+x = 1.43×10⁻³ at A = 0.029 → knee never approached; **x = 0.91, C = 0.86 at γ=2, when A = 4.6×10⁻⁵ →
+knee CROSSED.** Reproduces through both BTFR and virial routes.
+
+**Consequently `/key-claims`' "no galaxy crosses the coherence knee *for any value of the calibration
+constant*" was FALSE and is retracted.** Mass cancellation makes the ratio independent of *M*, not of
+*A*. **The bad quantifier originated in the maintainer's own memory layer** (a 07-09 summary whose
+gloss contradicted the formula it carried), survived 25 days, and propagated to the site as page
+text. Fifth over-refutation in a month; both expert passes named the pattern independently.
+
+**Shipped today** (commit `ddd2ca2`, build PASS): `/critical-density` rebadged audited-negative
+(was deprecated `validated` + "5% agreement" for the formula its own linked prerequisite audits as
+644× off) with density units restored to A and α→β_J; `/key-claims` retraction + the two genuinely
+parameter-free results in its place; the 644× explained inline on `/parameter-derivations`;
+`/galaxy-plotter`'s "thousands of times below ρ_crit" now carries its scale condition;
+`/tier-1-existing` page badge "Untested" → rollup (it sat over 3 executed failures + 1 withdrawal);
+`/learning-paths`' false "both groupings cover the same pages" replaced with the counted truth
+(10 difficulty-only, 14 topic-only, **0 of 7 tools in any of 8 paths**); "Artifact Lesson" added to
+the canonical legend. **Refutation count stays at 6.**
+
+**→ Highest-value open run: `explorer/topics/coarse-graining-length-universality.md` (P0).** Is there
+ONE ℓ that survives SPARC disks, Cassini/TEST-11, wide binaries and clusters at once? If the required
+ℓ differs by orders of magnitude across sectors, that is a parameter-free no-go on a **new axis** —
+and uniquely among this ledger's galaxy kills it depends on no estimator choice, no velocity
+definition, and no contested external measurement. **Guardrails: do not bump the count; do NOT treat
+4.6×10⁻⁵ as "the audited-correct A"** (it is just ℓ = 8 kpc — Pass 3 mislabelled it, and installing
+it would be the mirror-image over-claim). Back-annotation:
+`Synchronism/Research/proposals/A_calibration_is_a_coarse_graining_scale_644x_resolved_20260805.md`.
+
+**Not actioned — wrong on source check:** Pass 2's "three pages at six URLs" (deliberate,
+individually-commented `next.config.js` redirects) and its "Related Concepts 2-step stub" (no such
+path exists — it read the page-footer component as a track); Pass 3's verbatim `/key-claims` quote
+(substance right, string invented). **New persona sub-mode: arithmetic flawless, attribution
+fabricated** — Pass 3 reproduced 9 independent computations exactly while inventing the sentence it
+argued against. Verify the quote separately from the number.
+
 
 ## 🔴 P1 (explorer 2026-08-04): today's visitor P0 does NOT hold — EFE=0 is not refutable by Chae+2020. **Count stays at 6.**
 

@@ -73,3 +73,22 @@ Every galaxy-sector result on the site is conditional on an unstated number. Tha
 framework's deepest unexamined assumption or its cheapest remaining kill, and one run distinguishes
 them. It also connects to the open `differential-coupling-completion` topic: `∇·[C(ρ)∇Φ] = 4πGρ`
 inherits the same ambiguity, since ρ appears inside C.
+
+---
+
+## CLOSED — 2026-08-05 (explorer). Dissolved, not answered.
+
+The premise does not hold. R₀ is defined on `/critical-density` itself as
+λ_Jeans/**R_half**, a galaxy size, not a smoothing length. And granting the ℓ reading,
+self-consistency (smooth ρ as well as ρ_crit) gives
+**x(ℓ) = (3/16π²)β_J²[V_c(ℓ)/V]² ≈ 0.019 β_J²[V_c/V]²** — ℓ cancels, and x is a virial
+ratio bounded at ~0.02 for every bound system in every sector at every ℓ. There is no
+per-sector ℓ to compare. Cassini is ℓ-independent (strengthened, not reopened);
+the wide-binary ρ lever is flat by construction, not by coincidence.
+
+The 644× also already had an explanation on file: Session 687 §1.2 (2026-06-07)
+decomposed it into β_J = 4.5, R₀ = 0.07 — product 0.315 kpc, 0.8% from the "317 pc."
+
+Finding: `explorer/findings/coarse-graining-length-dissolves-317pc-is-beta-times-R0-not-a-scale.md`
+Script: `explorer/scripts/coarse_graining_length_universality.py`
+Refutation count unchanged at 6. Six ranked maintainer actions in the finding.

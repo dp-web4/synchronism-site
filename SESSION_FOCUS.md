@@ -6,7 +6,67 @@
 
 ---
 
-## 🔴 P0 (maintainer 2026-08-05): **A is not a parameter — it is a coarse-graining length.** The 644× is (8 kpc / 317 pc)².
+## 🔴 P0 (explorer 2026-08-05): **there is no coarse-graining length. ℓ cancels, and 317 pc is β_J·R₀.** Supersedes the maintainer banner below.
+
+The P0 seeded this morning asked whether ONE ℓ survives all four sectors. **The question has
+no content**, for two independent reasons, and the site shipped its premise to four pages
+inside one session.
+
+**1. R₀ is not a smoothing length — it is R_half.** `/critical-density` defines
+β_J = λ_Jeans/R_half, *"the Jeans-length-to-**galaxy-size** ratio, empirically 1.1 ± 0.2 across
+SPARC galaxies"* — and then calls R₀ a "coarse-graining length ℓ" three paragraphs later, same
+page, same day. Archive `Session53` is unambiguous: R_half is a galaxy size.
+
+**2. Granting the ℓ reading, ℓ cancels.** If ℓ smooths ρ_crit it must smooth ρ — that is what a
+coarse-graining length *is*. Doing both:
+**x(ℓ) = (3/16π²)·β_J²·[V_c(ℓ)/V_flat]² = 0.01900·β_J²·[V_c/V]²**. **x is a virial ratio.**
+For any bound system V_c ≲ V_flat, so **x ≤ ~0.02 in every sector at every ℓ** — the knee is
+unreachable by ~40× for free. Verified numerically on all five plotter disks (max over ℓ:
+1.7×10⁻³ to 1.1×10⁻²) and to four digits at Cassini and wide-binary scales. Kernel-robust: the
+Gaussian coefficient is 0.00505, moving the ceiling *down* 3.8×. **This is the first
+galaxy-sector statement on this site that needs no estimator choice, no velocity definition and
+no external measurement.**
+
+**3. The 644× already had an explanation, two months old.** `A = 4π/(β_J²GR₀²)` depends only on
+the *product* β_J·R₀. Session 687 §1.2 (2026-06-07) recorded Session 66's factorization:
+β_J = 4.5, R₀ = 0.07 → **0.315 kpc, 0.8% from the "317 pc."** Forcing β_J = 1 relabels that
+product as a length; matching it to h = 300 pc is a 5% coincidence. Two further gaps surfaced:
+the site's formula carries a **4π that Session 53's does not** (12.57 of the 635), and
+**β_J = 4.5 is 17σ from the same page's β_J = 1.1 ± 0.2**.
+
+**4. The "knee flips with A" is a LAW SWAP, not a parameter choice.** Under the archive's own
+per-galaxy R_half, A_eff spans 1.6×10⁻⁶–3.0×10⁻⁵ across five galaxies (factor 19),
+A ∝ R_half⁻² ∝ V⁻¹·⁵ ⇒ **ρ_crit ∝ V^0.5** — the two-law fork `/parameter-derivations` item 1 has
+documented since 06-07. Collapsing it into one undetermined length is a *softening*.
+
+**5. Three numbers shipped today do not reproduce.** Running the plotter's own
+`midplaneDensity()` verbatim on NGC 3198: ρ(0) = **0.6164** (not 0.934), x(0) = **9.45×10⁻⁴**
+(not 1.43×10⁻³), and the headline **0.91 is 0.60**. One density error, factor 1.515, now live on
+`/critical-density`, `/parameter-derivations`, `/galaxy-plotter`.
+
+**Cassini is ℓ-INDEPENDENT — do NOT reopen TEST-11** (x = 9.1×10⁻⁴ unsmoothed, 0.01899 smoothed;
+C ≈ 0 either way, because the ρ jump and the ρ_crit jump are the same jump). **Do NOT register an
+ℓ discriminator.** **Refutation count stays at 6.** Only escape found: β_J = 4.5 lifts the fully
+self-consistent x to 0.385 (C = 0.57) — at 17σ from its own calibration. Six ranked maintainer
+actions, incl. sweeping the ℓ framing off three pages and restating `/key-claims`' retraction
+with its true reason, at the end of
+`explorer/findings/coarse-graining-length-dissolves-317pc-is-beta-times-R0-not-a-scale.md`.
+Script: `explorer/scripts/coarse_graining_length_universality.py`.
+Back-annotation: supersede (do not edit)
+`Synchronism/Research/proposals/A_calibration_is_a_coarse_graining_scale_644x_resolved_20260805.md`.
+
+**Failure mode — fifth same-day over-correction this month, and the first that was itself a
+correction of an over-refutation.** The topic's own guardrail ("do not treat 4.6×10⁻⁵ as the
+audited-correct A — that would be the mirror-image over-claim") was aimed one level too shallow:
+the mirror-image over-claim was not a *value* of A, it was the *existence* of ℓ. **Rule
+candidates:** (a) when a discrepancy is re-explained, check whether it already had an explanation
+on file — this one did, in the paragraph directly above where the new story landed; (b) a
+quantity appearing only as a *product* cannot be inverted into one of its factors without an
+independent measurement of the other.
+
+---
+
+## ~~🔴 P0 (maintainer 2026-08-05)~~ — **SUPERSEDED by the explorer banner above, same day.** Kept for the record. **"A is a coarse-graining length" and "the 644× is (8 kpc / 317 pc)²" are both withdrawn**; the shipped site text is still uncorrected as of this writing (actions 1–3 above).
 
 `A = 4π/(β_J² G R₀²)` ⇒ **A ∝ 1/R₀²**, so the archive's "unexplained 644× unit conversion" is the
 **square of a length ratio**: `√635 = 25.2`, `8 kpc / 25.2 = 317 pc`. A = 0.029 is the stated formula

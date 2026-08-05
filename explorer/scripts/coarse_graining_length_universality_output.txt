@@ -1,0 +1,189 @@
+
+==============================================================================
+1. A(R0): unit-exact reproduction, and where 317 pc comes from
+==============================================================================
+  A(R0 = 8 kpc,   beta_J=1, with 4pi) = 4.5652e-05   [site/parameter-derivations quotes 4.6e-5]
+  A(R0 = 0.3 kpc, beta_J=1, with 4pi) = 3.2464e-02   [plotter h = 300 pc; site quotes 0.0325]
+  R0 that reproduces A = 0.029 exactly (beta_J=1)   = 317.4 pc
+  A_site / A(8 kpc) = 635.2   sqrt = 25.20   8 kpc / 25.20 = 317.4 pc
+  -> the maintainer's 317 pc arithmetic reproduces exactly.
+
+==============================================================================
+2. Does 635x require a NEW length, or is it Session 66's own (beta_J, R0)?
+==============================================================================
+  The formula depends only on the PRODUCT beta_J * R0.  Any factorization
+  of that product reproduces the same A.  Session 687's audit records the
+  factorization Session 66 actually used:  beta_J = 4.5, R0 = 0.07.
+
+  A(beta_J=4.5, R0=0.07, with 4pi) = 0.02945    [site's headline 'derived' value: 0.0294]
+  beta_J * R0 (S66)      = 0.3150 kpc = 315 pc
+  beta_J * R0 (maintainer, beta_J:=1) = 0.3174 kpc = 317 pc
+  agreement: 0.8%
+
+  => 317 pc is NOT an independent physical scale.  It is S66's documented
+     product beta_J*R0 = 4.5 x 0.07, re-factorized with beta_J forced to 1.
+     Matching it to the plotter's h = 300 pc is a 5% numerical coincidence.
+
+  Cross-check, archive Session 53 form A = 1/(b^2 G R0^2), b=1.1, R0=0.088:
+     A = 0.0248   [S53's stated empirical A = 0.028]  -> reproduces.
+  Note: S53 has NO 4pi.  The site's rendering added it.  4pi = 12.57 of the 635.
+  Residual after 4pi: 50.6 = beta_J^2 x (R0 ratio)^2 bookkeeping.
+
+==============================================================================
+3. SITE LAW  rho_crit = 0.029 V^2 (universal A) -- x and C at r=0
+==============================================================================
+  galaxy         V   R_d     rho(0)   rho_crit       x(0)    C g=2  C g=.489
+  DDO 154       47   1.5     0.0270      64.06  4.221e-04   0.0008    0.0002
+  NGC 2403     136   2.7     0.5851     536.38  1.091e-03   0.0022    0.0005
+  NGC 3198     150   3.2     0.6164     652.50  9.446e-04   0.0019    0.0005
+  UGC 128       55   4.0     0.0071      87.72  8.128e-05   0.0002    0.0000
+  NGC 7331     250   6.5     1.1527    1812.50  6.359e-04   0.0013    0.0003
+  -> knee never approached anywhere.  This is what every site galaxy result uses.
+
+==============================================================================
+4. ARCHIVE LAW  rho_crit = V^2/(G beta_J^2 R_half^2), R_half PER GALAXY
+==============================================================================
+  Session 53: lambda_Jeans = beta_J * R_half at rho = rho_crit, beta_J ~ 1.1 +/- 0.2.
+  R_half is a GALAXY SIZE, not a smoothing length.  Two independent estimates:
+    (a) exponential disk: R_half = 1.678 R_d
+    (b) S53's size-velocity relation: R_half = 0.088 V^0.75 kpc
+
+  galaxy       Rh(a)   Rh(b)   A_eff(a)    x(0) a   C g=2    x(0) b   C g=2   r(x=1)
+  DDO 154       2.52    1.58  3.033e-05     0.404  0.5902     0.159  0.2867      nan
+  NGC 2403      4.53    3.50  9.361e-06     3.379  0.9946     2.022  0.9763     3.29
+  NGC 3198      5.37    3.77  6.664e-06     4.110  0.9971     2.028  0.9765     4.52
+  UGC 128       6.71    1.78  4.265e-06     0.553  0.7064     0.039  0.0759      nan
+  NGC 7331     10.91    5.53  1.615e-06    11.418  0.9999     2.938  0.9917    15.83
+  r(x=1) = radius in kpc where the knee is crossed, estimate (a).
+  -> A_eff is per-galaxy and spans a wide range; it is NOT 0.029 and NOT 4.6e-5.
+     A_eff ~ 1/R_half^2 ~ V^-1.5  =>  rho_crit ~ V^0.5, NOT V^2.
+
+==============================================================================
+5. SELF-CONSISTENT COARSE-GRAINING: if l smooths rho_crit it must smooth rho
+==============================================================================
+  Analytic identity.  Take l as a genuine smoothing length and apply it to
+  BOTH sides (top-hat sphere of radius l, mass M(<l)):
+      rho_l      = 3 M / (4 pi l^3)
+      rho_crit(l)= 4 pi V^2 / (beta^2 G l^2)
+      x(l) = rho_l/rho_crit = (3/(16 pi^2)) beta^2 * G M / (l V^2)
+           = (3/(16 pi^2)) beta^2 * [V_c(l)/V]^2
+
+      x(l) = 0.01900 * beta_J^2 * [V_c(l)/V_flat]^2       <-- l CANCELS
+      beta_J=1.0 and V_c(l)=V_flat  ->  x = 0.01900,  C(g=2) = 0.0376, C(g=0.489) = 0.0092
+      beta_J=1.1                    ->  x = 0.02299,  C(g=2) = 0.0454
+
+  For any gravitationally BOUND system V_c(l) <= ~V_flat, so x <= ~0.02.
+  The knee (x ~ 1) is unreachable at EVERY l, in EVERY sector, for free.
+
+  Numerical check on the toy disks (top-hat sphere centred at r=0,
+  exponential disk of scale length R_d, half-thickness h = 0.3 kpc):
+  galaxy         l=0.1     l=0.3       l=1       l=3       l=8      l=20   max_l x
+  DDO 154    6.011e-05 4.955e-04 1.224e-03 1.680e-03 1.028e-03 4.242e-04 1.688e-03
+  NGC 2403   1.584e-04 1.358e-03 3.821e-03 7.222e-03 7.061e-03 3.533e-03 7.851e-03
+  NGC 3198   1.377e-04 1.189e-03 3.435e-03 6.949e-03 7.698e-03 4.260e-03 8.058e-03
+  UGC 128    1.190e-05 1.036e-04 3.078e-04 6.713e-04 8.626e-04 5.574e-04 8.667e-04
+  NGC 7331   9.372e-05 8.264e-04 2.565e-03 6.302e-03 1.045e-02 9.745e-03 1.102e-02
+  analytic ceiling 0.0190 (beta=1) is respected by every entry.
+  -> 'ONE universal l' is not merely undetermined: l has NO effect on x
+     beyond the rotation-curve shape V_c(l)/V_flat.  The topic's premise
+     (required l differs across sectors => new no-go) DISSOLVES.
+
+==============================================================================
+6. Cassini / TEST-11 and wide binaries under the same identity
+==============================================================================
+  (a) Cassini, Saturn at 9.5 AU.  Two readings:
+      V_c(Saturn) = 9.66 km/s
+      UNsmoothed rho(interplanetary) = 2.471e-03 Msun/pc^3
+      rho_crit (site A, V=V_c)       = 2.709e+00 Msun/pc^3
+      x = 9.124e-04   C(g=2) = 1.824e-03
+      SMOOTHED at l = r_Sat: rho_l = 2.444e+12, rho_crit = 1.286e+14
+      x = 0.01899  (identity predicts 0.01900)   C(g=2) = 0.0376
+      -> C ~ 0 under BOTH readings.  f_DM = 1-C ~ 1: the framework demands a
+         full 'dark matter' boost inside Saturn's orbit at every l.
+         The +17.95 sigma Cassini kill is l-INDEPENDENT.  It is not a scale choice.
+
+  (b) Wide binaries (Gaia), separation s ~ 5 kAU, V_c ~ 0.1-0.4 km/s,
+      ambient solar-neighbourhood rho ~ 0.04-0.1 Msun/pc^3.
+      l = 5 kAU = 0.0242 pc, smoothed rho = 3.352e+04 Msun/pc^3
+      V_c = 0.5958 km/s, rho_crit = 1.765e+06, x = 0.01899  (identity 0.01900)
+      -> same ceiling.  The rho lever is flat across Gaia not because the
+         solar-neighbourhood density happens to be uniform, but because x is
+         a VIRIAL RATIO and is pinned at ~0.02 for every bound system.
+
+==============================================================================
+7. Estimator robustness (standing rule: name the kernel AND one alternative)
+==============================================================================
+  Top-hat sphere radius l : rho_l = 3M/(4 pi l^3)
+      x = 0.01900 beta^2 [V_c/V]^2
+  Gaussian kernel width s : rho_s = M/(2 pi s^2)^{3/2}
+      x = 0.00505 beta^2 [V_c/V]^2
+  ratio = 3.76x.  Kernel choice moves the ceiling by O(1)
+  and moves it DOWNWARD for the Gaussian.  The conclusion is kernel-robust:
+  no kernel brings x within two orders of magnitude of the knee.
+
+==============================================================================
+8. FULLY self-consistent Jeans reading: the velocity is also taken at scale l
+==============================================================================
+  The Jeans criterion's velocity is the SOUND SPEED / dispersion at the scale
+  where the criterion is applied, not the asymptotic V_flat.  The site
+  substitutes V_flat.  If the velocity is taken self-consistently at l, then
+  V = V_c(l) and the identity collapses to a PURE NUMBER:
+      beta_J = 1.0   x = 0.01900   C(g=2) = 0.0376   C(g=0.489) = 0.0092
+      beta_J = 1.1   x = 0.02299   C(g=2) = 0.0454   C(g=0.489) = 0.0111
+      beta_J = 1.3   x = 0.03211   C(g=2) = 0.0631   C(g=0.489) = 0.0155
+      beta_J = 4.5   x = 0.38470   C(g=2) = 0.5723   C(g=0.489) = 0.1578
+
+  x is then IDENTICAL for the Solar System, a wide binary, a dwarf, a spiral
+  and a cluster.  C is a universal constant ~0.02-0.35 (beta-dependent only),
+  carrying zero information about any system.  f_DM = 1-C is then a constant
+  rescaling of G, which cannot produce a flat rotation curve for ANY galaxy.
+
+  The site's V_flat substitution is what gives C any variation at all.  It is
+  a THIRD undocumented substitution in this chain, alongside R_half -> 8 kpc
+  and the added 4pi.
+
+==============================================================================
+9. What the plotter's 'Synchronism (real)' curve actually is (NGC 3198)
+==============================================================================
+     r    v_bar   v_Sync  v_Sync-v_bar       C(r)  observed
+     1    63.78    63.78       0.00034   1.38e-03        60
+     2    81.62    81.62       0.00014   1.01e-03       105
+     4    95.35    95.35       0.00003   5.41e-04       140
+     6    97.65    97.65       0.00001   2.90e-04       148
+     8    95.48    95.48       0.00000   1.55e-04       150
+    10    91.54    91.54       0.00000   8.30e-05       150
+    13    84.77    84.77       0.00000   3.25e-05       149
+    16    78.34    78.34       0.00000   1.27e-05       150
+    20    71.03    71.03       0.00000   3.65e-06       150
+  The coherence term contributes < 0.0003 km/s (< 30 cm/s) at every radius.
+  Max C anywhere in the disk = 1.89e-03, not the 0.28 quoted on
+  /parameter-derivations and /galaxy-plotter (already-banked cross-page gap).
+
+==============================================================================
+SUMMARY
+==============================================================================
+
+  1. 317 pc is not a physical scale.  A depends only on beta_J*R0; Session 66's
+     documented factorization is beta_J=4.5, R0=0.07 (product 0.315 kpc).  Forcing
+     beta_J=1 relabels that product as a length; matching it to h=300 pc is a 5%
+     coincidence.  The 644x was already fully decomposed on 2026-06-07.
+
+  2. beta_J is DEFINED on /critical-density as lambda_Jeans/R_half, "the
+     Jeans-length-to-GALAXY-SIZE ratio ... across SPARC galaxies."  R0 is a galaxy
+     size.  The same page calls it a coarse-graining length three paragraphs later.
+
+  3. Under the archive's own law with per-galaxy R_half, A is NOT universal
+     (A ~ R_half^-2 ~ V^-1.5 => rho_crit ~ V^0.5) and the inner disk DOES cross the
+     knee.  That is the already-documented two-law fork (V^2 vs V^0.5), not one
+     undetermined length.
+
+  4. If l IS read as a smoothing length, self-consistency forces rho to be smoothed
+     too, and then x = (3/16pi^2) beta^2 [V_c(l)/V]^2 <= ~0.02 at EVERY l in EVERY
+     sector.  l cancels.  There is no cross-sector l to compare.
+
+  5. Consequence of (4): C ~ 0.02-0.04 everywhere -> f_DM = 1-C ~ const ~ 0.97, with
+     no radial or galaxy-to-galaxy structure.  The coherence function degenerates to
+     a constant rescaling of G and cannot produce a rotation curve at all.
+
+  6. Cassini is l-independent by the same identity.  Do NOT reopen TEST-11.
+

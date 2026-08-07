@@ -501,15 +501,22 @@ export default function KeyClaims() {
               previously read &ldquo;&hellip;crosses the coherence knee <em>for any value of the calibration
               constant</em>.&rdquo; That is false. Mass cancellation makes &#x03C1;/&#x03C1;<sub>crit</sub>
               independent of <em>M</em>; it does <em>not</em> make it independent of the calibration constant A,
-              since &#x03C1;/&#x03C1;<sub>crit</sub> &#x221D; 1/A exactly. At the site&apos;s working
-              A = 0.029, NGC 3198 gives &#x03C1;/&#x03C1;<sub>crit</sub> = 1.4&times;10<sup>&minus;3</sup>
-              (knee never approached); at the A its own stated Jeans formula yields
-              (4.6&times;10<sup>&minus;5</sup>, badged audited-negative) the same galaxy gives 0.91 &mdash;
-              <strong> the knee is crossed</strong>. The two A values differ by 635&times;, and{' '}
-              <Link href="/critical-density" style={{ color: 'var(--color-accent-blue)' }}>that gap is an unstated
-              coarse-graining length</Link>, not an arithmetic error. Caught by an outside reader recomputing the
-              ratio; the erroneous quantifier came from an internal summary that dropped it while carrying the
-              formula that contradicts it.
+              since &#x03C1;/&#x03C1;<sub>crit</sub> &#x221D; 1/A exactly &mdash; any x exceeds 1 for small
+              enough A. <strong>The retraction stands; the reason first given for it does not.</strong> That
+              reason (&ldquo;the 635&times; gap is an unstated coarse-graining length &#x2113;&rdquo;) was
+              published here on 2026-08-05 and withdrawn the same day: a self-consistent &#x2113; smooths
+              &#x03C1; and &#x03C1;<sub>crit</sub> alike and <em>cancels</em>. The 635&times; is a{' '}
+              <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>law swap</Link>{' '}
+              (universal A, &#x03C1;<sub>crit</sub> &#x221D; V&sup2; vs per-galaxy A, &#x03C1;<sub>crit</sub> &#x221D; V<sup>0.5</sup>).
+              <strong> The scopes under which the claim is true:</strong> under the framework&apos;s own stated
+              law (&#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, universal A) no galaxy approaches the knee
+              (NGC 3198: 9.45&times;10<sup>&minus;4</sup>); and under <em>self-consistent coarse-graining</em> no
+              bound system in any sector can, at any &#x2113;, because{' '}
+              <Link href="/critical-density" style={{ color: 'var(--color-accent-blue)' }}>&#x03C1;/&#x03C1;<sub>crit</sub>
+              &#x2272; 0.019&#x03B2;<sub>J</sub>&sup2;</Link> is a virial ratio. What is <em>not</em> true is the
+              unrestricted &ldquo;for any value of the calibration constant.&rdquo; Caught by an outside reader
+              recomputing the ratio; the erroneous quantifier came from an internal summary that dropped it while
+              carrying the formula that contradicts it.
             </p>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>

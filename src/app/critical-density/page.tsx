@@ -54,27 +54,59 @@ export default function CriticalDensity() {
             prerequisite; it was caught by an outside reader recomputing the integral, not by the badge system.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
-            <strong>What the 644&times; actually is (new, 2026-08-05).</strong> The archive bridges the two
-            numbers with an unexplained &ldquo;644&times; unit conversion.&rdquo; It is not a unit conversion.
-            Because A &#x221D; 1/R<sub>0</sub>&sup2;, a factor of 635 is the <em>square of a length ratio</em>:
-            &#x221A;635 = 25.2, and 8 kpc / 25.2 = <strong>317 pc</strong>. So A = 0.029 is the stated formula
-            evaluated at R<sub>0</sub> &#x2248; 317 pc — a disk <em>scale height</em> — rather than at the 8 kpc
-            galactocentric radius the derivation names. The{' '}
-            <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>galaxy plotter</Link>{' '}
-            independently pins h = 300 pc (giving A = 0.0325). The discrepancy is an unstated choice of
-            <strong> coarse-graining length</strong>, not an arithmetic error.
+            <strong>What the 644&times; actually is (2026-08-05, revised same day).</strong> The archive bridges
+            the two numbers with an unexplained &ldquo;644&times; unit conversion.&rdquo; It is not a unit
+            conversion, and it is <em>not</em> a new quantity: the 644&times; was already decomposed on
+            2026-06-07. A depends only on the <strong>product</strong> &#x03B2;<sub>J</sub>&middot;R<sub>0</sub>,
+            and <code>Session687_A_From_Jeans_Arithmetic_Audit.md</code> &sect;1.2 records Session 66&apos;s own
+            factorization: &#x03B2;<sub>J</sub> = 4.5, R<sub>0</sub> = 0.07 kpc &mdash; product 0.315 kpc, within
+            <strong> 0.8%</strong> of the &ldquo;317 pc&rdquo; that setting &#x03B2;<sub>J</sub> = 1 produces.
+            Forcing &#x03B2;<sub>J</sub> = 1 simply relabels that product as a length; matching it to the{' '}
+            <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>galaxy plotter</Link>&apos;s
+            pinned h = 300 pc is a 5% coincidence.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0.5rem 0 0 0' }}>
+            <strong>Retracted (2026-08-05, same day): &ldquo;A is a proxy for a coarse-graining length
+            &#x2113;.&rdquo;</strong> That reading was published here for a few hours and is withdrawn. A quantity
+            that appears in a formula only as a <em>product</em> cannot be inverted into one of its factors
+            without an independent measurement of the other &mdash; and the inversion contradicted this page&apos;s
+            own calibration. <strong>The two residual questions are not about an unspecified length:</strong>
+            (1) why &#x03B2;<sub>J</sub> = 4.5 when the calibration above gives 1.1 &plusmn; 0.2 (a
+            <strong> 17&#x03C3;</strong> gap), and (2) why this site&apos;s rendering of the formula carries a
+            4&#x03C0; that Session 53&apos;s does not &mdash; 12.57 of the 635.
           </p>
         </div>
 
         <p>
-          <strong>Consequence.</strong> A is not an independent parameter — it is a proxy for the smoothing
-          length &#x2113; used to define &#x03C1;, with A &#x221D; 1/&#x2113;&sup2;. Every statement on this site
-          about whether a system crosses the coherence knee is therefore conditional on &#x2113;, and
-          &#x2113; is specified nowhere. For NGC 3198 the same model gives
-          &#x03C1;/&#x03C1;<sub>crit</sub> = 1.4&times;10<sup>&minus;3</sup> at A = 0.029 (knee never approached)
-          and <strong>0.91 at A = 4.6&times;10<sup>&minus;5</sup> (knee crossed, C &#x2248; 0.86 at &#x03B3; = 2)</strong>.
-          Neither value of A is &ldquo;the correct one&rdquo; until &#x2113; is fixed. This is an open question,
-          not a repaired derivation — and it does <em>not</em> add a refutation to the ledger.
+          <strong>Consequence &mdash; the knee is unreachable, and no length choice rescues it.</strong> If
+          &#x2113; were a coarse-graining length it would have to smooth &#x03C1; and &#x03C1;<sub>crit</sub>
+          alike &mdash; that is what a coarse-graining length <em>is</em>. Doing both, <strong>&#x2113;
+          cancels</strong>:
+        </p>
+        <div style={{ textAlign: 'center', margin: '0.75rem 0', fontSize: '1rem', color: 'var(--color-text-primary)' }}>
+          x(&#x2113;) = &#x03C1;/&#x03C1;<sub>crit</sub> = (3/16&#x03C0;&sup2;)&middot;&#x03B2;<sub>J</sub>&sup2;&middot;[V<sub>c</sub>(&#x2113;)/V<sub>flat</sub>]&sup2;
+          = 0.0190&middot;&#x03B2;<sub>J</sub>&sup2;&middot;[V<sub>c</sub>/V<sub>flat</sub>]&sup2;
+        </div>
+        <p>
+          <strong>x is a virial ratio.</strong> For any bound system V<sub>c</sub> &#x2272; V<sub>flat</sub>, so
+          x &#x2272; 0.019&#x03B2;<sub>J</sub>&sup2; &#x2248; <strong>0.02 in every sector at every
+          &#x2113;</strong> &mdash; the knee is out of reach by roughly 40&times; for free, with no fitted
+          parameter. Verified numerically on all five plotter disks (max over &#x2113;:
+          1.7&times;10<sup>&minus;3</sup> to 1.1&times;10<sup>&minus;2</sup>) and to four digits at Cassini and
+          wide-binary scales. It is kernel-robust: a Gaussian kernel gives coefficient 0.00505, moving the ceiling
+          <em> down</em> a further 3.8&times;. This is the only galaxy-sector statement on this site that requires
+          <strong> no estimator choice, no velocity definition, and no contested external measurement.</strong>
+          The single escape found is &#x03B2;<sub>J</sub> = 4.5, which lifts the self-consistent x to 0.385
+          (C = 0.57) &mdash; at 17&#x03C3; from this page&apos;s own calibration. <strong>No refutation is added
+          to the ledger from this</strong> (it remains at 6): it closes a question rather than opening one.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+          At the site&apos;s working A = 0.029, NGC 3198 gives
+          &#x03C1;/&#x03C1;<sub>crit</sub> = 9.45&times;10<sup>&minus;4</sup> &mdash; recomputed from the{' '}
+          <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>plotter</Link>&apos;s own{' '}
+          <code>midplaneDensity()</code> (&#x03C1;(0) = 0.6164 M<sub>&#x2609;</sub> pc<sup>&minus;3</sup>), so it
+          can be re-run. Values of 0.934, 1.43&times;10<sup>&minus;3</sup> and 0.91 briefly shown here on
+          2026-08-05 were high by a factor of 1.515 and are corrected.
         </p>
 
         <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem' }}>

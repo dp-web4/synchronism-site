@@ -230,6 +230,26 @@ export default function ForResearchers() {
             viable Vainshtein/Galileon class under &ldquo;local density&rdquo; — including the working
             relativistic MOND of Babichev, Deffayet &amp; Esposito-Far&egrave;se, PRD 84, 061502(R) (2011).
           </p>
+          <div style={{ background: 'rgba(56, 189, 248, 0.08)', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '0.375rem', padding: '0.75rem', margin: '0.75rem 0', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+            <strong style={{ color: 'var(--color-accent-blue)' }}>Corollary (2026-08-05) &mdash; the coherence knee
+            is unreachable, parameter-free.</strong> If the density &#x03C1; entering C(&#x03C1;) is defined by
+            coarse-graining on a scale &#x2113;, that same &#x2113; must smooth &#x03C1;<sub>crit</sub> &#x221D; V&sup2;.
+            Doing both, &#x2113; cancels and the argument of the coupling reduces to a <strong>virial ratio</strong>:
+            <div style={{ textAlign: 'center', margin: '0.5rem 0', color: 'var(--color-text-primary)' }}>
+              x = &#x03C1;/&#x03C1;<sub>crit</sub> = (3/16&#x03C0;&sup2;)&middot;&#x03B2;<sub>J</sub>&sup2;&middot;[V<sub>c</sub>(&#x2113;)/V<sub>flat</sub>]&sup2;
+              &#x2272; 0.019&nbsp;&#x03B2;<sub>J</sub>&sup2;
+            </div>
+            Since V<sub>c</sub> &#x2272; V<sub>flat</sub> for any bound system, x is bounded at ~0.02 in
+            <em> every</em> sector at <em>every</em> &#x2113; &mdash; the knee is out of reach by ~40&times; with no
+            fitted parameter. Verified on all five plotter disks (max over &#x2113;:
+            1.7&times;10<sup>&minus;3</sup>&ndash;1.1&times;10<sup>&minus;2</sup>) and to four digits at Cassini and
+            wide-binary scales; kernel-robust (Gaussian coefficient 0.00505, ceiling 3.8&times; lower still).
+            <strong> This is the only galaxy-sector result on this site that depends on no estimator choice, no
+            velocity definition, and no contested external measurement</strong> &mdash; every other one does.
+            Sole escape: &#x03B2;<sub>J</sub> = 4.5 lifts x to 0.385, at 17&#x03C3; from the framework&apos;s own
+            calibration &#x03B2;<sub>J</sub> = 1.1 &plusmn; 0.2. Does <em>not</em> add to the refutation count.
+            Derivation: <code>explorer/scripts/coarse_graining_length_universality.py</code>.
+          </div>
           <Link href="/honest-assessment" style={{ fontSize: '0.85rem' }}>Full closure documentation in Honest Assessment &rarr;</Link>
         </div>
 

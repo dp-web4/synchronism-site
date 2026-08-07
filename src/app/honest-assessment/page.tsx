@@ -752,7 +752,11 @@ export default function HonestAssessment() {
               maximum gravitational boost ratio B = g<sub>obs</sub>/g<sub>bar</sub> of
               B<sub>max</sub> &#x2248; 3.17 (from SPARC — Spitzer Photometry &amp; Accurate Rotation Curves — calibration).
               The deepest SPARC bin shows &#x27E8;B&#x27E9; = 10.82, with 579 individual SPARC
-              galaxies exceeding B<sub>max</sub>. This is the strongest direct refutation in the
+              <strong> data points</strong> exceeding B<sub>max</sub> (corrected 2026-08-07: this page previously
+              read &ldquo;579 galaxies,&rdquo; but SPARC contains 175 galaxies &mdash; the 579 counts
+              rotation-curve points, as{' '}
+              <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>key claims</Link> states
+              correctly). This is the strongest direct refutation in the
               framework&apos;s own internal audit. It was not previously visible on this page.
               <strong> Its corollaries were executed 2026-07-14/15 and both fail:</strong> a bounded boost has no
               deep-MOND regime, forcing the wrong BTFR slope (TEST-09 — kill fired at 3.3σ), and caps the apparent

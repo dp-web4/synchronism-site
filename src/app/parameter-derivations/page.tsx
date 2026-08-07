@@ -153,20 +153,27 @@ export default function ParameterDerivations() {
                 <li><strong>Stated formula gives 600× off:</strong> A = 4π/(β<sub>J</sub>²·G·R₀²) with β<sub>J</sub>=1,
                 R₀=8 kpc gives A ≈ 4.6×10⁻⁵ — not 0.029. The Session 66 markdown bridges them with an
                 unexplained 644× &ldquo;unit conversion.&rdquo;
-                <strong> The 644× is now identified (2026-08-05): it is not a unit conversion.</strong> Since
-                A ∝ 1/R₀², a factor of 635 is the <em>square of a length ratio</em> — √635 = 25.2 and
-                8 kpc / 25.2 = <strong>317 pc</strong>. A = 0.029 is this same formula evaluated at a disk
-                <em> scale height</em> rather than at the 8 kpc galactocentric radius the derivation names
-                (the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>galaxy plotter</Link>{' '}
-                independently pins h = 300 pc ⇒ A = 0.0325). So A is not an independent parameter at all: it is a
-                proxy for the <strong>coarse-graining length ℓ</strong> used to define ρ, with A ∝ 1/ℓ², and the
-                framework specifies ℓ nowhere. This changes the failure mode — the derivation is not
-                arithmetically broken, it has one undetermined length — and it is <em>load-bearing</em>, because
-                ρ/ρ<sub>crit</sub> ∝ 1/A means the galaxy-sector knee verdict flips with ℓ (NGC 3198:
-                1.4×10⁻³ at A = 0.029, <strong>0.91 at A = 4.6×10⁻⁵</strong>). See{' '}
-                <Link href="/critical-density" style={{ color: 'var(--color-accent-blue)' }}>Critical Density</Link>.
-                <strong> No refutation is added to the ledger from this</strong> — it reclassifies an existing
-                audited item and opens a question.</li>
+                <strong> The 644× is not a unit conversion — and it was already decomposed, on 2026-06-07.</strong>{' '}
+                A depends only on the <em>product</em> β<sub>J</sub>·R₀, and <code>Session687</code> §1.2 records
+                Session 66&apos;s own factorization β<sub>J</sub> = 4.5, R₀ = 0.07 kpc — product 0.315 kpc, within
+                0.8% of the &ldquo;317 pc&rdquo; that setting β<sub>J</sub> = 1 produces. The R₀ = 0.07 half of that
+                decomposition is stated in item 1 <em>directly above</em>. The residual questions are therefore
+                (a) why β<sub>J</sub> = 4.5 when <Link href="/critical-density" style={{ color: 'var(--color-accent-blue)' }}>Critical Density</Link>&apos;s
+                own calibration gives 1.1 ± 0.2 — a <strong>17σ</strong> gap — and (b) why this site&apos;s rendering
+                carries a 4π that Session 53&apos;s does not (12.57 of the 635).
+                <br /><br />
+                <strong>Retracted same day (2026-08-05): &ldquo;A is a proxy for a coarse-graining length ℓ, and the
+                knee verdict flips with ℓ.&rdquo;</strong> Both halves are withdrawn. A product cannot be inverted
+                into one factor without independently measuring the other. And if ℓ were a coarse-graining length it
+                would smooth ρ and ρ<sub>crit</sub> alike, in which case <strong>ℓ cancels</strong> and
+                x = ρ/ρ<sub>crit</sub> = (3/16π²)β<sub>J</sub>²[V<sub>c</sub>/V<sub>flat</sub>]² ≲ 0.019β<sub>J</sub>²
+                — a virial ratio, bounded in every sector at every ℓ, putting the knee ~40× out of reach with no free
+                parameter. The &ldquo;flip&rdquo; that appeared to depend on ℓ is a <strong>law swap</strong>
+                (universal A with ρ<sub>crit</sub> ∝ V² vs per-galaxy A ∝ R<sub>half</sub><sup>−2</sup> with
+                ρ<sub>crit</sub> ∝ V<sup>0.5</sup>) — the same two-law fork item 1 above has documented since
+                2026-06-07. <strong>No refutation is added to the ledger from this</strong> (count stays 6); it
+                closes a question rather than opening one. See{' '}
+                <Link href="/critical-density" style={{ color: 'var(--color-accent-blue)' }}>Critical Density</Link>.</li>
                 <li><strong>Number detached from computation:</strong> 0.0294 propagated ~600 sessions without
                 anyone re-running the stated formula. Same failure mode as the 2026-05-25 DESI epistemic regression.</li>
               </ol>

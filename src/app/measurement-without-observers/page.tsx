@@ -23,6 +23,19 @@ export default function MeasurementWithoutObservers() {
         consciousness-threshold claims. A protocol-by-protocol audit against the calibration gap is queued; until it
         completes, read &ldquo;testable&rdquo; as &ldquo;testable in form, calibration unanchored.&rdquo;
       </p>
+      <p style={{ background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.6rem' }}>
+        <strong style={{ color: '#ef4444' }}>Dependency status (2026-08-07): this page&apos;s badge is weaker than
+        its own mechanism warrants.</strong> Every protocol below runs on
+        &#x03B3;&nbsp;=&nbsp;2/&#x221A;N<sub>corr</sub>, and that relation is badged{' '}
+        <strong>audited-negative</strong> elsewhere on this site, for two independent reasons: the
+        N<sub>corr</sub>&nbsp;&rarr;&nbsp;&#x03B3; ladder has <em>zero anchored rungs</em> (it absorbs values, it
+        has never predicted one), and the relation <em>inverts the sign</em> of the correlation-to-sharpness
+        mapping &mdash; the galaxy-sector pin requires N<sub>corr</sub>&nbsp;=&nbsp;1 while the SPARC fit requires
+        N<sub>corr</sub>&nbsp;&#x2248;&nbsp;17. A page badged &ldquo;Untested&rdquo; whose mechanism is
+        audited-negative is not untested; it is <strong>downstream of a negative audit</strong>. Read the protocols
+        below as illustrating what the framework would predict <em>if</em> the ladder were anchored. See{' '}
+        <Link href="/parameter-derivations" style={{ color: '#ef4444' }}>Parameter Derivations</Link>.
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>

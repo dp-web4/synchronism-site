@@ -174,6 +174,40 @@ export default function Tier1Existing() {
           Just analysis. This is where Synchronism should be tested first.
         </p>
 
+        <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1.5rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          <h3 style={{ fontSize: '0.9rem', marginBottom: '0.5rem', color: '#ef4444' }}>
+            Two caveats that belong here, not only on the pages that discovered them (added 2026-08-07)
+          </h3>
+          <p style={{ margin: '0 0 0.5rem 0' }}>
+            <strong>1. TEST-09 and TEST-10 are convention-dependent, and they share one root.</strong> Both are
+            corollaries of the boost ceiling B &#x2264; 1/&#x03A9;<sub>m</sub> = 3.17, which follows from the
+            f<sub>DM</sub> = 1&minus;C identity &mdash; i.e. from reading the coupling as
+            g<sub>obs</sub> = g<sub>bar</sub>/C. The site runs <strong>three mutually exclusive readings</strong> of
+            that substitution, documented on{' '}
+            <Link href="/galaxy-rotation" style={{ color: '#ef4444' }}>Galaxy Rotation</Link> since 2026-08-04, and
+            they miss the observed curves in three different directions (~10²&ndash;10³&times; high, converging on
+            Newtonian, ~10²&ndash;10³&times; low). <strong>This caveat was previously stated only where it was
+            found, not where the tests are counted.</strong> Counting TEST-09 and TEST-10 as two independent
+            refutations overstates the ledger twice over: they are one structural root, and that root presupposes
+            one of three live conventions. The honest figure for independent empirical roots behind the headline
+            count is <strong>3&ndash;4, not 6</strong>.
+          </p>
+          <p style={{ margin: 0 }}>
+            <strong>2. EFE = 0 is missing from this ledger, and that absence is not an oversight &mdash; it is
+            blocked.</strong> A vanishing{' '}
+            <TermTooltip term="EFE">External Field Effect</TermTooltip> is the framework&apos;s only
+            <em> structurally</em> discriminating prediction against MOND: it follows from
+            &#x2207;&middot;[C(&#x03C1;)&#x2207;&#x03A6;] = 4&#x03C0;G&#x03C1; being linear in &#x03A6;, and it is
+            testable on data that already exists. It has no TEST ID, appears in no ID-keyed inventory, and is
+            therefore invisible to every audit that walks this ledger by ID &mdash; the same mechanism that dropped
+            the a&#x2080;(z) prediction. <strong>Why it is not simply registered:</strong> the two C conventions in
+            caveat 1 give EFE of <em>opposite sign</em>, so there is no single prediction to register until the
+            force law is fixed. Registration is blocked on a <em>theory</em> decision, not on data. Until then, the
+            &ldquo;0 of 24 tests could select Synchronism&rdquo; framing should be read with the knowledge that the
+            one test which structurally <em>could</em> is not in the denominator.
+          </p>
+        </div>
+
         <div className="card" style={{ marginBottom: '1.5rem', fontSize: '0.85rem' }}>
           <h3 style={{ fontSize: '0.9rem', marginBottom: '0.5rem' }}>Acronym key (used throughout the test cards below)</h3>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 5fr', gap: '0.25rem 1rem', color: 'var(--color-text-secondary)' }}>

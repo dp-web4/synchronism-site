@@ -2,11 +2,69 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-05*
+*Last updated: 2026-08-07*
 
 ---
 
-## 🔴 P0 (explorer 2026-08-05): **there is no coarse-graining length. ℓ cancels, and 317 pc is β_J·R₀.** Supersedes the maintainer banner below.
+## 🔴 P0 (maintainer 2026-08-07): **the force-law fork blocks the framework's only discriminating test.** Decision needed from dp — theory, not data.
+
+Today's visitor filed three separate P0s that are **one item**: *register EFE = 0 as a numbered
+test*, *pick one force law site-wide*, and *give every ledger row an ID*. Specifically: **the first
+is not actionable, and the second is why.** The two C conventions give EFE of *opposite sign*
+(banked 08-04), so there is no single prediction to register. Registration is blocked on a **theory
+decision**, and nothing on the site said so — which is why a fresh reader files it as new and will
+keep doing so. Same self-sealing pattern as a₀(z): **the silence about why a gap exists gets
+re-inscribed by each reader as a fresh finding.**
+
+Second consequence: TEST-09 and TEST-10 are both corollaries of the boost ceiling B ≤ 1/Ω_m, which
+follows from f_DM = 1−C — the **division** reading specifically. They are one root, resting on one
+of three live conventions, and **the caveat saying so lived only on `/galaxy-rotation` where it was
+found, never on `/tier-1-existing` where the tests are counted.** A caveat that doesn't reach the
+counting page is not a caveat. Honest independent-root figure: **3–4, not 6.**
+
+**Shipped today** (build PASS): `/tier-1-existing` carries both caveats where the count is stated,
+including EFE = 0 marked *absent because blocked, with the reason named*;
+`/measurement-without-observers` gets a dependency banner (badged "Untested" while its entire
+mechanism runs on γ = 2/√N_corr, audited-negative elsewhere — it is downstream of a negative audit,
+not untested); `/honest-assessment`'s "579 individual SPARC **galaxies**" corrected to **points**
+(SPARC has 175; `/key-claims` already said it correctly).
+
+**→ Highest-value open run: `explorer/topics/efe-sign-convention-dependence.md` (P0).** Is EFE's
+sign *actually* convention-dependent? EFE = 0 was argued from ∇·[C(ρ)∇Φ] = 4πGρ being **linear in
+Φ** — a statement about the field equation, which none of the three readings changes. If the
+08-04 "opposite sign" was an artifact of comparing at fixed output rather than fixed field
+equation, registration unblocks today. Third possible answer: the amplitude reading has no
+Lagrangian and EFE is *undefined* under it — which would settle the fork by elimination.
+**Guardrails: do not bump the count; the 08-04 retraction of "EFE=0 refuted by Chae+2020"
+(baseline off 2–4 dex ⇒ not-evaluable) stands until displaced on its own merits; grep
+`Synchronism/Research/` for a prior EFE sign derivation BEFORE writing a new one.**
+Back-annotation: `Synchronism/Research/proposals/force_law_fork_blocks_efe_registration_and_makes_count_convention_dependent_20260807.md`.
+
+---
+
+## ✅ P0 (explorer 2026-08-05) — **SHIPPED 2026-08-07**, commit `26bdd3f`. Actions 1–5 all landed. **There is no coarse-graining length. ℓ cancels, and 317 pc is β_J·R₀.**
+
+**Two-day propagation lag, and it cost.** No maintainer session ran on 08-06, so the withdrawn
+"coarse-graining length" story stayed live on four pages for two days — and **today's visitor
+Researcher pass read it and filed a P0 asking to *promote* it** to the top of `/galaxy-rotation`,
+quoting the non-reproducing 0.91. **Leaving a retracted story live manufactures its own
+amplification.** This is a new sub-mode: not persona fabrication, not stale rediscovery — the
+persona read the site correctly and the site was wrong.
+
+Shipped: `/critical-density` and `/parameter-derivations` now attribute the 644× to Session687
+§1.2's existing decomposition (β_J = 4.5, R₀ = 0.07 → 0.315 kpc, 0.8% from "317 pc") with the two
+real residuals (17σ β_J gap; the site's extra 4π = 12.57 of 635); the cancellation identity
+x ≲ 0.019 β_J² added; `/galaxy-plotter`'s scale caveat → law-swap caveat; `/key-claims`' retraction
+restated with the two scopes it *is* true under; `/for-researchers` gains the virial-ratio ceiling
+— the one galaxy-sector result needing no estimator choice, no velocity definition, no external
+measurement. Numbers corrected 1.515× throughout (ρ(0) 0.934→**0.6164**, x 1.43e-3→**9.45e-4**,
+headline 0.91→**0.60**), attributed to the plotter's `midplaneDensity()` so they re-run.
+Back-annotation: `A_calibration_coarse_graining_reading_SUPERSEDED_20260807.md`.
+**Count stays 6. TEST-11 not reopened. No ℓ discriminator registered.**
+
+---
+
+## ~~🔴 P0 (explorer 2026-08-05)~~ — original banner, kept for the record
 
 The P0 seeded this morning asked whether ONE ℓ survives all four sectors. **The question has
 no content**, for two independent reasons, and the site shipped its premise to four pages

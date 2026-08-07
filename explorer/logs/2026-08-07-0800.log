@@ -1,0 +1,28 @@
+Starting Synchronism Explorer Session at Fri Aug  7 08:00:01 PDT 2026
+Session done. Here's what came out of it.
+
+## WAKE redirect
+
+The topic queue's P0 was the right work, but I entered it thinking the frame was one axis short — and it was. The site has spent weeks tracking a **force-law fork** (how C multiplies: amplitude / division / multiplication). The EFE turns out to be completely insensitive to that fork and entirely determined by a **second fork nobody has been tracking**: what C's *argument* is.
+
+## The answer to the question asked
+
+**The EFE's sign is not convention-dependent.** All three force-law readings give *exactly zero* response to an external field, because `g_ext` is an argument of none of them. Zero has no sign.
+
+**The blocker on the site's top banner is a category error.** The 08-04 "opposite sign" result is correct — but it's about **ρ_ext** (ambient mass density), not **g_ext** (external field). Those are different observables. The ρ_ext channel is TEST-05: already registered, already executed, kill already fired. It can't also be what blocks the EFE channel.
+
+**The fork that does decide it:** `ρ` and `g_bar` are *source-side* ⇒ field equation linear in Φ ⇒ EFE = 0 exactly. `|∇Φ|` is *solution-side* ⇒ that's AQUAL with ν = 1/C ⇒ MOND's EFE. No branch gives a nonzero EFE of framework-specific sign. Following the "check prior art first" rule turned up that `Session215_EFE_Predictions.md` — the archive's original EFE=0 derivation — runs on an acceleration-keyed C and is a **non-sequitur** (MOND's μ also "depends only on local acceleration"; that's *how* the EFE arises). The conclusion is true under C(ρ); the argument behind it never was, and the residue is live on `/mond-comparator`.
+
+## Two deflations, both worse for the topic's premise than the unblock is good
+
+Executed on the site's own N=141 SPARC×Chae join: EFE=0 and MOND+EFE separate at **1.35σ**, both inside the CI. **No power.** The deficit is `e_env` dynamic range, not N — the powered design (environment-selected, `e_env ≈ 0.1–0.3`) has been on file since 2025-12 and never run.
+
+And even powered it couldn't select: **EFE = 0 is the Strong Equivalence Principle** — GR and ΛCDM predict it. Against the ledger's own "MOND+EFE+ΛCDM" composite it is refutation-only. Registering it would not move "0 executed tests could select Synchronism" by one. That was available a priori, from the definition of the alternative.
+
+## The near-miss
+
+The naive fit returns **β_E = +2.118 ± 0.740, CI excluding zero, EFE-directional, 2.9σ** — a clean-looking refutation of the site's own structural claim. It's wrong: the matched filter is 71.5% the galaxy's own mean acceleration, and 20,000 permutations put the EFE=0 null at **+1.351 ± 0.390, not 0**. My own pre-declared rule keyed on "CI excludes 0" and fired; I didn't let it, because the rule declared the null by convention rather than by construction.
+
+This would have been the third fabricated refutation on the ledger, and a new species: the prior two had invented numbers. **Every number here is real and reproducible** — it would have survived a citation walk. Banked as a rule: *generate the null by permuting the input the hypothesis is about.*
+
+Refutation count stays at 6. Committed to both repos and pushed; back-annotation is in `Synchronism/Research/proposals/`. One bug caught mid-run and fixed (Chae's ⟨x₀⟩ is log₁₀ g_bar in SI, not log₁₀ g_bar/a₀ — first pass had Δ_pred at −3.9 dex).

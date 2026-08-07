@@ -1,0 +1,36 @@
+N = 141
+
+--- how much of Delta_pred is <x0> and how much is e_env? ---
+  r(Delta_pred, <x0>)        = +0.8458   (r^2 = 0.715)
+  r(Delta_pred, log e_env)   = -0.3726   (r^2 = 0.139)
+  r(<x0>, log e_env)         = -0.0232
+
+--- marginal correlations with the measured RAR offset ---
+  Delta_pred (matched filter)    r = +0.2355   t = +2.86
+  <x0>  (mean acceleration)      r = +0.1420   t = +1.69
+  log e_env (environment)        r = -0.1140   t = -1.35
+  ambient density (dist-corr)    r = +0.0118   t = +0.14
+
+--- additive decomposition: offset ~ 1 + log e_env + <x0> + density ---
+  intercept    = +0.1204 +/- 0.2461    t = +0.49
+  log e_env    = -0.1269 +/- 0.0857    t = -1.48
+  <x0>         = +0.0302 +/- 0.0189    t = +1.60
+  density      = +0.0172 +/- 0.0256    t = +0.67
+  residual sigma = 0.1239
+
+--- controlling the matched filter for <x0> directly: offset ~ Delta_pred + <x0> + density ---
+  intercept    = -0.4681 +/- 0.3553    t = -1.32
+  Delta_pred   = +3.8270 +/- 1.4161    t = +2.70
+  <x0>         = -0.0502 +/- 0.0355    t = -1.41
+  density      = +0.0150 +/- 0.0232    t = +0.65
+  residual sigma = 0.1217
+  95% CI on beta_E = [+1.051, +6.603]   contains 0: False   contains 1: False
+
+--- PERMUTATION (pre-declared decisive test): shuffle e_env, hold <x0> + density ---
+  observed beta_E                 = +2.1184
+  permuted null: mean +1.3509  sd 0.3903
+  null 2.5/50/97.5 pct            = +0.5631 / +1.3560 / +2.1027
+  two-sided permutation p         = 0.0228   (457/20000)
+  z of observed vs permuted null  = +1.97
+
+wrote explorer/data/efe_confound_decomposition.json

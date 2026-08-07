@@ -1,0 +1,109 @@
+==============================================================================
+PART A  -  EFE (response to g_ext) under the three force-law readings
+==============================================================================
+
+Setup: an isolated system with internal baryonic acceleration g_bar and local
+density rho is embedded in a uniform external field g_ext.  Baryons held fixed.
+A UNIFORM field exerts no tide, so rho is unchanged by construction.
+
+  isolated  (g_ext = 0)             C = 3.062764e-05   L1 g_obs = 3.265025e-06   L3 g_obs = 3.062764e-15   L2 v = 71.0000
+  e = 0.05  (g_ext = 0.05 a0)       C = 3.062764e-05   L1 g_obs = 3.265025e-06   L3 g_obs = 3.062764e-15   L2 v = 71.0000
+  e = 0.50  (g_ext = 0.50 a0)       C = 3.062764e-05   L1 g_obs = 3.265025e-06   L3 g_obs = 3.062764e-15   L2 v = 71.0000
+  e = 5.00  (g_ext = 5.00 a0)       C = 3.062764e-05   L1 g_obs = 3.265025e-06   L3 g_obs = 3.062764e-15   L2 v = 71.0000
+
+  -> All four rows identical.  The response to g_ext is EXACTLY ZERO under all three
+     force-law readings, because g_ext appears in none of them.  Zero has no sign,
+     so the sign of the EFE is not convention-dependent on the force-law axis.
+
+------------------------------------------------------------------------------
+PART A2 - the axis that DOES determine the EFE: what C's argument is
+------------------------------------------------------------------------------
+
+  Source-side arguments (functionals of the matter distribution only):
+    C(rho)    : uniform g_ext leaves rho unchanged            -> EFE = 0 exactly
+    C(g_bar)  : g_bar is Newtonian-Poisson from rho; the
+                external mass is not internal baryons         -> EFE = 0 exactly
+
+  Solution-side argument (a functional of the field being solved for):
+    C(|grad Phi|) : |grad Phi| = |g_int + g_ext| includes the external field.
+                    This IS AQUAL with nu = 1/C.  Bekenstein-Milgrom 1984 derive
+                    the EFE from exactly this.  EFE != 0, MOND-sized, suppressing.
+
+  Numerically, algebraic MOND-with-EFE, g_obs*(g_obs + g_ext) = g_bar*a0:
+    e =  0.00  ->  g_obs/g_iso = 1.0000   Delta log10 = +0.0000 dex
+    e =  0.03  ->  g_obs/g_iso = 0.9837   Delta log10 = -0.0071 dex
+    e =  0.05  ->  g_obs/g_iso = 0.9730   Delta log10 = -0.0119 dex
+    e =  0.15  ->  g_obs/g_iso = 0.9212   Delta log10 = -0.0356 dex
+    e =  0.50  ->  g_obs/g_iso = 0.7630   Delta log10 = -0.1175 dex
+
+  -> EFE is set by the ARGUMENT fork (rho / g_bar / |grad Phi|), not by the
+     FORCE-LAW fork (amplitude / division / multiplication).  The two forks are
+     orthogonal.  Under both source-side arguments EFE = 0; under the solution-side
+     argument the framework IS MOND and has MOND's EFE.  No branch gives a nonzero
+     EFE of framework-specific sign.
+
+==============================================================================
+PART B  -  the rho_ext channel (ambient-density effect), where the fork bites
+==============================================================================
+
+Adding ambient mass density rho_ext to the local rho DOES change C.  Direction:
+
+   rho_ext/rho_local             C        L1 g/C        L3 C*g        L2 v
+               0e+00    3.0628e-05    3.2650e-06    3.0628e-15     71.0000
+               1e+00    6.1255e-05    1.6325e-06    6.1255e-15     71.0000
+               1e+01    3.3688e-04    2.9684e-07    3.3688e-14     71.0000
+               1e+03    3.0417e-02    3.2877e-09    3.0417e-12     71.1464
+               1e+06    9.9997e-01    1.0000e-10    9.9997e-11    165.9510
+
+  L1 (division)       : g_obs DECREASES  (3.265e-06 -> 1.000e-10)  = velocity DEFICIT   [same sign as MOND's EFE]
+  L3 (multiplication) : g_obs INCREASES  (3.063e-15 -> 1.000e-10)  = velocity SURPLUS   [opposite sign]
+  L2 (amplitude)      : v INCREASES      (71.000 -> 165.951)  = velocity SURPLUS   [opposite sign]
+
+  -> The 2026-08-04 'the two conventions give opposite-signed environmental effects'
+     is CORRECT, and it is a statement about the rho_ext channel.  It says nothing
+     about the EFE, which is the g_ext channel and is zero in every reading.
+
+==============================================================================
+PART C  -  is EFE = 0 registrable?  Matched-filter regression + power
+==============================================================================
+
+Chae Table 2 rows parsed: 148
+  erratum check  NGC5055 e_env = 0.040 (pre-erratum body text 0.094), NGC5033 = 0.050 (0.102)
+Joined sample: N = 141
+
+--- descriptive ---
+  measured RAR offset : mean -0.0136  sd 0.1248 dex
+  MOND+EFE predicted  : mean -3.8715  sd 0.3129 dex (range -4.4864 .. -2.9857)
+  marginal r(offset, dpred)   = +0.1760
+  marginal r(offset, cyl_dc)  = +0.0118   [TEST-08 registered null]
+  r(dpred, cyl_dc)            = -0.1296
+
+--- PRIMARY: offset ~ 1 + beta_E * dpred + beta_rho * cyl_dc ---
+  beta_E   = +0.072 +/- 0.034    95% CI [+0.006, +0.138]
+  beta_rho = +0.0096 +/- 0.0231
+  residual sigma = 0.1237 dex
+
+  CI contains 0 (framework EFE=0)?  False
+  CI contains 1 (MOND+EFE)?         False
+
+--- POWER ---
+  minimum detectable |beta_E| at 95% : 0.066
+  MOND+EFE amplitude is beta_E = 1.  Detectable? True
+  implied SNR of the MOND+EFE signal in this estimator: 29.68 sigma
+
+  Signal budget:
+    sd of the MOND+EFE predicted offset (the signal)   : 0.3129 dex
+    residual scatter of the RAR offset (the noise)     : 0.1237 dex
+    signal/noise per galaxy                            : 2.5296
+    N required for 3-sigma on beta_E = 1               : 2
+
+--- robustness: low-acceleration subsample (<x0> < -0.3), N = 141 ---
+  beta_E = +0.072 +/- 0.034   95% CI [+0.006, +0.138]   sd(dpred) = 0.3129
+  SNR of beta_E = 1 : 29.68 sigma
+
+--- what a powered version would require ---
+  3-sigma on beta_E = 1 at current scatter (0.124 dex): N = 2 galaxies
+  5-sigma on beta_E = 1 at current scatter (0.124 dex): N = 4 galaxies
+  ...or, at N = 141, residual scatter must fall to 1.2383 dex (currently 0.1237)
+
+wrote explorer/data/efe_sign_convention_and_power.json

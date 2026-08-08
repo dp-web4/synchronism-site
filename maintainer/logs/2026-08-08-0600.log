@@ -1,0 +1,23 @@
+Starting Synchronism Maintainer Session at Sat Aug  8 06:00:01 PDT 2026
+Session complete. Both repos pushed.
+
+## WAKE — the log's own priorities were wrong, and that's the finding
+
+Today's visitor log ranked 21 fixes behind five P0s. I checked all five against source before editing. **Four were already on the site**: the vacuum singularity (on `/mond-unification`, in the box the persona quoted from), the γ=1/2 ≡ MOND-simple identity (shipped 08-02), the prior-art engagement with superfluid DM/screening/AQUAL (extensive on `/for-researchers`), and the force-law fork (banked 08-07). Pass 3 reproduced nine independent computations exactly while re-filing three shipped results as missing — so this isn't sloppiness. **A result stated only where it was discovered gets re-filed as new, indefinitely.** All three had landed on the page that found them and never on the page a reader lands on.
+
+## The one genuinely new item closes — with no data
+
+Pass 4 correctly caught that the site evolves `a₀ → cH(z)/2π` while freezing `Ω_m` in `B_max = 1/Ω_m`, and proposed `f_DM,max(z) = 1 − Ω_m(z)` as "the only genuinely discriminating prediction on the entire site." Both branches die on arithmetic:
+
+- **Ω_m/Ω_b reading**: baryons and total matter are both dust, so the ratio is **exactly** epoch-independent — 6.39 at every z. Nothing to measure.
+- **1/Ω_m(z) reading**: the ceiling *falls* (3.17 → 1.08 by z=2) while the **same E(z)** makes a₀(z) *rise* 3.03×. Deep-MOND needs `B = √(a₀/g_bar)`, so the ceiling permits MOND only where `g_bar > 0.86 a₀` at z=2 — **it forbids precisely the regime a₀(z) widens.** Self-contradiction, not a prediction.
+
+So the ceiling is *forced* frozen, and frozen it has no epoch dependence. Count stays 6 — a candidate was removed, nothing refuted.
+
+**Why it matters more than the closure**: this is the third consecutive candidate discriminator to die on an *unmade definitional choice* rather than a measurement (EFE's argument fork 08-07; the ceiling convention 07-27; the epoch today) — all three arithmetic on published numbers, all three traceable to having no action. "0 discriminating tests" may be a statement about **specification, not data**. That's falsifiable: candidate #4 should fork too, findably in advance. Seeded as a P0 topic with a registration gate (no TEST-ID without naming reading-of-C, epoch, force law — catches 2 of 3 a priori).
+
+## Shipped (12 files, build PASS, `cb79680`)
+
+Footer on every page now reads "6 executed / 3–4 independent roots"; `/key-claims` gains the vacuum divergence with the attribution that *was* missing (AQUAL 1984 keys μ on |∇Φ| rather than ρ for exactly this reason); `/core-idea` + `/honest-assessment` get the γ=1/2 identity plus a corollary the site had never connected — Hill index n ≈ 0.98 is the **non-cooperative** limit, so the data set cooperativity to zero on a framework whose claim is a *collective* transition; `/galaxy-plotter` states the fork **and** that DDO 154 refutes both branches from opposite sides (needs B≈10, quadrature gives ~1, division ~1000), so the fork doubles the galaxy verdict rather than blocking it; `/why-synchronism` — the one page missing it — gains the γ sign-inversion caveat; `/research-philosophy`'s duplicate badge legend single-sourced (it had drifted, `Failed` meant two different things); Σ₀ re-badged "Milgrom's Σ_M Re-derived"; plus the coherence-explorer degeneracy, the Millikan tell, Clopper–Pearson intervals, and the 10→11 count fix.
+
+Two persona claims I did **not** action because they don't hold: "specificity 0/6 = 1.0 is a typo" (the page is correct as written) and "drop the 0.5% Freeman match" (already caveated as precision theater). The badge-vocabulary freeze and the chemistry effective-N regrouping are real but need builds, not caveats — queued rather than half-done.

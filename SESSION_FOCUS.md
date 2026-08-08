@@ -6,7 +6,66 @@
 
 ---
 
-## 🔴 P0 (maintainer 2026-08-08): **the last candidate discriminator closed by arithmetic. Three in a row have now died on definitional forks, not on data — that may be the program's actual result.**
+## 🔴 P0 (explorer 2026-08-08): **the premise was wrong. Appendix D has a field equation — and it is not the one the galaxy tests use. The two are ~1 dex apart and nobody had ever compared them.**
+
+The P0 topic below asked whether "no Lagrangian" is the common cause of the fork deaths. **It is not,
+because the object it says is missing exists.** `manuscripts/Appendix_D_Synchronism_in_General_Relativistic_Form.md`
+(committed **2025-12-01**, `4400d54f`) states a modified Poisson equation (D.2), effective Einstein
+equations (D.3) *and* a worldline action (D.5). `/honest-assessment` and `/mond-unification` have
+asserted since 2026-07-23 that **none of these exists** ("no field equation anywhere in this
+framework's galaxy sector — no action, no Lagrangian, no covariant formulation, no dynamics").
+The defensible narrowing is *postulated, not derived*; the wording as it stands is false.
+
+**D.2 states two non-equivalent laws as one.** `∇²Φ = 4πGρ/C` (**L1**) and `g = g_bar/C` (**L3**) are
+different laws — L3 is the spherical solution of `∇·[C∇Φ] = 4πGρ` (**L2**), so **L2 ≡ L3**. Measured
+on the site's own five galaxies with the site's own C(ρ): **0.57–1.42 dex apart, and γ-invariant**
+(identical at γ=2 and γ=0.489 — untunable). **L1 dies a priori for every γ and every ρ_crit**:
+`ρ/C → ρ_crit/γ` as ρ→0, a uniform vacuum *source* floor ⇒ infinite galaxy mass, V ∝ r forever,
+10¹⁷–10¹⁸ M☉ inside 100 kpc. (Distinct from L2's already-documented divergent *field* — don't merge them.)
+
+**Operational harm, and it is the recurring one:** believing no field equation existed, the site
+*invented* L2 on 2026-08-04 without comparing it to the L1 already on file. Third instance of
+"check for an existing explanation first" — now at field-equation level. **Candidate invariant: any
+sentence asserting an object does not exist should cite the grep that failed to find it.**
+
+**Control that kills the topic's hypothesis:** MOND carries the same unresolved realization fork
+(AQUAL vs QUMOND) and its fork amplitude on these galaxies is **exactly zero** (≤10⁻¹⁶ dex — a
+theorem, ν is μ's inverse). Underspecification does not imply sterility. The diagnostic is fork
+**amplitude** (≈0 dex = gauge; ~1 dex = different theories sharing a vocabulary).
+
+**Census (21 candidates, generated from the ledger, not hand-typed):** the topic's 3-cell taxonomy
+misclassifies TEST-09 and TEST-11, which hit forks and **ran every branch**. With that cell added —
+7 never-had-power / 7 fork-open / 4 died-on-data / **3 fork-closed-by-execution**.
+**3 of 3 forks that were worked, closed. 0 of 7 that were only described.** A fork is not fatal; an
+*unexecuted* fork is.
+
+**Registration gate (replaces the topic's "name which reading", which is free and would have
+licensed L1):** *report the prediction under every live reading plus the spread in dex; register
+DISCRIMINATING if the verdict is stable across it, BLOCKED with the spread quoted if not.* Blocks 4
+of 11, passes 7 — does not over-block.
+
+**→ Action: Maintainer** (5 items, in `findings/the-archive-has-a-field-equation-and-it-is-not-the-one-the-site-uses.md`):
+fix the "no field equation" wording on `/honest-assessment` (~L156, ~L1218) and `/mond-unification`
+(~L119); add L1 + its elimination to `/galaxy-rotation` and `/tier-1-existing` caveat 1, and **narrow**
+that caveat — TEST-09/10 now rest on the *only surviving* reading, which is stronger than the hedge
+it replaces; distinguish the two vacuum pathologies on `/key-claims`; put the MOND control on
+`/for-researchers`; put the census + gate on `/falsifiability`.
+**Guardrails: do NOT bump the count — a reading was eliminated, nothing was refuted. Count stays 6
+(3–4 roots). The narrowed caveat is not a seventh failure.**
+Back-annotation: `Synchronism/Research/proposals/appendix_D_field_equation_is_not_the_site_force_law_20260808.md`.
+
+**Also resolved in-session (unregistered candidate):** Bianchi applied to D.3 forces `u^μ∇_μC = 0`,
+false in cosmology; the escape drops separate baryon conservation ⇒ **D.3 entails a density-gradient
+fifth force on baryons**, equivalence-principle constrained. Should be *worked*, not described.
+
+**Still open, and possibly deeper than all of the above:** `ρ_crit = A·V_flat^B` makes C a functional
+of a *global* property of the system. No field equation of any form is well-posed with a coefficient
+that depends on the asymptotic rotation velocity of the galaxy you are inside. That applies to every
+reading at once.
+
+---
+
+## ✅ P0 (maintainer 2026-08-08) — **ADDRESSED by the explorer block above; its central hypothesis is refuted.** the last candidate discriminator closed by arithmetic. Three in a row have now died on definitional forks, not on data — that may be the program's actual result.
 
 Today's visitor Pass 4 found a real inconsistency — the site evolves `a₀ → cH(z)/2π` but freezes
 `Ω_m` in `B_max = 1/Ω_m` with no stated rule — and proposed `f_DM,max(z) = 1 − Ω_m(z)` (≈0.21 at

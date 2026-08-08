@@ -1,0 +1,30 @@
+--- PERMUTATION (pre-declared decisive test): shuffle e_env, hold <x0> + density ---
+  observed beta_E                 = +2.1184
+  permuted null: mean +1.3509  sd 0.3903
+  null 2.5/50/97.5 pct            = +0.5631 / +1.3560 / +2.1027
+  two-sided permutation p         = 0.0228   (457/20000)
+  z of observed vs permuted null  = +1.97
+
+wrote explorer/data/efe_confound_decomposition.json
+
+======================================================================
+ADDENDUM - hypothesis separation against the permuted (confound) null
+======================================================================
+  observed beta_E            = +2.1184 +/- 0.7398   95% CI [+0.668, +3.568]
+  H0  EFE = 0  (confound only)     -> beta_E = +1.3509   |dev| = 1.04 sigma   inside CI: True
+  H1  MOND+EFE                     -> beta_E = +2.3509   |dev| = 0.31 sigma   inside CI: True
+  separation between H0 and H1     = 1.35 sigma
+  proper two-sided permutation p (centred on null) = 0.0508
+  z vs confound null = +1.97
+
+--- what an estimator WOULD need ---
+  current signal sd(Delta_pred) = 0.0140 dex over e_env in [0.0110, 0.0570]
+  current noise (residual sigma) = 0.1221 dex
+  3-sigma separation at N=141: need sd(Delta_pred) >= 0.0309 dex = 2.21x the SPARC field range
+  3-sigma separation at N=175: need sd(Delta_pred) >= 0.0277 dex = 1.98x the SPARC field range
+  5-sigma separation at N=175: need sd(Delta_pred) >= 0.0462 dex = 3.30x the SPARC field range
+    e_env =  0.05 at median <x0> -> Delta_pred = -0.0308 dex
+    e_env =  0.10 at median <x0> -> Delta_pred = -0.0614 dex
+    e_env =  0.30 at median <x0> -> Delta_pred = -0.1795 dex
+    e_env =  1.00 at median <x0> -> Delta_pred = -0.4986 dex
+    e_env =  3.00 at median <x0> -> Delta_pred = -0.9356 dex

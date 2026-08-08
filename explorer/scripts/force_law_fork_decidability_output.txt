@@ -1,0 +1,87 @@
+==============================================================================
+PART 1 -- does the L1/L3 fork survive at the ONLY viable gamma?
+==============================================================================
+
+gamma = 2      : the framework's asserted value (refuted by SPARC, dBIC = +184)
+gamma = 0.489  : the free-gamma SPARC optimum (= MOND simple-mu; TEST-11)
+
+--- gamma = 2.0
+    galaxy  V_obs       V_L1     V_L2=L3  fork dex(g)
+   DDO 154     47       1139        2353         0.63
+  NGC 2403    136       4891   1.244e+04         0.81
+  NGC 3198    150       7273   3.719e+04         1.42
+   UGC 128     55       2530        7310         0.92
+  NGC 7331    250  1.212e+04   2.338e+04         0.57
+           fork amplitude: min 0.57, median 0.81, max 1.42 dex
+
+--- gamma = 0.489
+    galaxy  V_obs       V_L1     V_L2=L3  fork dex(g)
+   DDO 154     47       2304        4759         0.63
+  NGC 2403    136       9891   2.516e+04         0.81
+  NGC 3198    150  1.471e+04   7.522e+04         1.42
+   UGC 128     55       5117   1.478e+04         0.92
+  NGC 7331    250  2.452e+04   4.729e+04         0.57
+           fork amplitude: min 0.57, median 0.81, max 1.42 dex
+
+==============================================================================
+PART 2 -- the vacuum source floor: an a-priori kill of L1 for EVERY gamma
+==============================================================================
+
+C(rho) = tanh(gamma ln(1 + rho/rho_crit)).  As rho -> 0:
+  ln(1+x) -> x,  tanh(u) -> u   =>   C -> gamma * rho/rho_crit
+  =>  rho_eff = rho/C -> rho_crit/gamma,  a CONSTANT independent of rho.
+
+So L1's source does not vanish in vacuum.  It approaches a uniform floor
+that fills all space.  Numerical check of the limit at rho/rho_crit = 1e-8:
+
+   gamma    rho_crit/gamma (DDO154)    rho/C at x=1e-8    ratio
+   0.250                   256.2440           256.2440   1.0000
+   0.489                   131.0041           131.0041   1.0000
+   1.000                    64.0610            64.0610   1.0000
+   2.000                    32.0305            32.0305   1.0000
+   5.000                    12.8122            12.8122   1.0000
+
+Consequences of a uniform effective source rho_f = rho_crit/gamma:
+  M_eff(<r) ~ (4/3) pi r^3 rho_f  ->  diverges
+  V^2 = G M_eff/r ~ (4/3) pi G rho_f r^2  ->  V grows LINEARLY with r, forever
+  Every isolated galaxy has infinite mass; no rotation curve ever flattens.
+
+Scale of the absurdity -- the implied halo mass inside 100 kpc:
+    galaxy  rho_f (Msun/pc^3)    M(<100kpc) Msun     M_bar Msun      ratio
+   DDO 154              32.03          1.342e+17      2.293e+08   5.85e+08
+  NGC 2403              268.2          1.123e+18      1.608e+10  6.987e+07
+  NGC 3198              326.3          1.367e+18      2.379e+10  5.743e+07
+   UGC 128              43.86          1.837e+17      4.301e+08  4.272e+08
+  NGC 7331              906.2          3.796e+18      1.836e+11  2.068e+07
+
+For comparison, the mass of the observable universe is ~1e53 kg ~ 5e22 Msun.
+
+This kill is PARAMETER-FREE in gamma and rho_crit: the floor exists for every
+gamma > 0 and every rho_crit > 0.  It is also independent of the disk model --
+it follows from the small-x expansion of the compander alone.  L1 is therefore
+eliminable WITHOUT data, on internal grounds.
+
+==============================================================================
+PART 3 -- the surviving reading, and what it costs
+==============================================================================
+
+L4 (plotter quadrature) has no field equation and appears in no manuscript;
+   it is a plotting stand-in, self-labelled as such in the source comment.
+L5 (g = g_bar * C) was retracted site-side on 2026-08-04 (wrong direction:
+   the site's own f_DM = 1-C identity requires division).
+L1 dies on the vacuum floor above.
+=> L2 == L3 is the ONLY reading that is (a) sourced by a field equation,
+   (b) momentum-conserving, (c) consistent with f_DM = 1-C, and (d) not
+   eliminable a priori.
+
+Cost of that survival, stated plainly: L2 = L3 is exactly the reading that
+TEST-09 and TEST-10 already refute (boost ceiling B <= 1/Omega_m).  Closing
+the coupling fork in favour of L2=L3 does not add a refutation -- it removes
+the escape hatch that made the existing two conditional.
+
+L2's own known pathology (already on /mond-unification, 2026-08-04): because
+g = g_N/C and C -> 0 in vacuum, the EXTERIOR field of an isolated mass
+diverges.  Note this is a DIFFERENT object from L1's floor: L1 diverges in
+the SOURCE (rho_eff -> const), L2 diverges in the FIELD (g -> inf at fixed
+M).  Both are vacuum pathologies; they are not the same pathology, and
+neither implies the other.

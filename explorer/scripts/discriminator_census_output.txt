@@ -1,0 +1,131 @@
+==============================================================================
+CANDIDATE DISCRIMINATOR CENSUS -- generated from src/app/tier-1-existing/page.tsx
+==============================================================================
+
+Parsed 13 ledger rows: TEST-01, TEST-02, TEST-03, TEST-04, TEST-04a, TEST-05, TEST-06, TEST-07, TEST-08, TEST-09, TEST-10, TEST-11, CLUSTER-SCALE
+Numbered TEST-nn rows: 11  (page states 11)
+
+==============================================================================
+PER-ROW EVIDENCE (verdict is the first non-empty column, by the stated rule)
+==============================================================================
+
+      TEST-01  ->  NEVER-HAD-POWER  [ADJUDICATED: merged with TEST-05 by the page's own scope note -- two phases of one test, not an independent candidate]
+
+      TEST-02  ->  NEVER-HAD-POWER
+                 power   : signal below systematics; cannot select / underpowered
+
+      TEST-03  ->  DIED-ON-FORK  [ADJUDICATED: registered test never ran; what ran was a different sample and density proxy (TEST-03s). The verdict depends on which object you call the test]
+                 power   : never executed
+                 fork    : executed object differs from the registered one
+
+      TEST-04  ->  NEVER-HAD-POWER  [ADJUDICATED: withdrawn before execution: the 1e-4 amplitude had no derivation and the kill bar sat 3000x below DESI Y3 precision]
+
+     TEST-04a  ->  DIED-ON-FORK  [ADJUDICATED: the verdict depends on WHICH STATISTIC carries the kill: 2.4 sigma on sigma_8 vs ~1.5 sigma on the registered f sigma_8. Registered criterion not met; the exclusion quoted is on a different observable]
+                 power   : cannot select / underpowered
+                 fork    : two or more live readings of the same symbol
+                 data    : a registered threshold was crossed; measured exclusion
+
+      TEST-05  ->  DIED-ON-DATA
+                 data    : a registered threshold was crossed
+
+      TEST-06  ->  NEVER-HAD-POWER
+                 power   : cannot select / underpowered
+                 fork    : verdict depends on an unfixed estimator
+
+      TEST-07  ->  NEVER-HAD-POWER
+                 power   : no amplitude or mechanism derived
+
+      TEST-08  ->  DIED-ON-FORK
+                 fork    : reduces to a reparametrization of existing physics
+
+      TEST-09  ->  FORK-CLOSED-BY-EXECUTION
+                 fork    : verdict depends on an unfixed estimator
+                 data    : a registered threshold was crossed
+                 closed  : every branch of the fork was executed; verdict stable across all of them
+
+      TEST-10  ->  DIED-ON-FORK
+                 fork    : verdict flips with an unmade convention
+                 data    : a registered threshold was crossed
+
+      TEST-11  ->  FORK-CLOSED-BY-EXECUTION
+                 fork    : verdict flips with an unmade convention
+                 data    : measured exclusion
+                 closed  : every branch of the fork was executed; verdict stable across all of them
+
+CLUSTER-SCALE  ->  DIED-ON-FORK
+                 fork    : two or more live readings of the same symbol
+                 data    : executed and failed
+
+==============================================================================
+TALLY over ledger rows
+==============================================================================
+  NEVER-HAD-POWER    5
+  DIED-ON-FORK       5
+  FORK-CLOSED-BY-EXECUTION 2
+  DIED-ON-DATA       1
+
+==============================================================================
+CANDIDATES CARRYING NO TEST-ID -- invisible to any ID-keyed audit
+==============================================================================
+(hand-listed from SESSION_FOCUS + findings/; each names its source page)
+
+  EFE = 0
+      source : /mond-unification, /tier-1-existing caveat 2
+      verdict: DIED-ON-FORK
+      why    : registration blocked: readings of C's argument give opposite-signed EFE (08-07)
+
+  a_0(z) = cH(z)/2pi
+      source : /parameter-derivations
+      verdict: NEVER-HAD-POWER
+      why    : LCDM predicts the same ~3x; and it is Milgrom's own relation (08-01)
+
+  High-z boost ceiling f_DM,max(z)
+      source : /parameter-derivations item 8
+      verdict: DIED-ON-FORK
+      why    : Omega_m/Omega_b reading exactly flat; 1/Omega_m(z) reading self-contradictory (08-08)
+
+  TDG 'novel prediction' interval
+      source : /mond-unification
+      verdict: NEVER-HAD-POWER
+      why    : interval is nested inside MOND's (08-01)
+
+  RAR transition shape (gamma)
+      source : /galaxy-rotation
+      verdict: DIED-ON-DATA
+      why    : gamma=2 refuted dBIC=+184 on 2807 SPARC points; free gamma -> MOND
+
+  Cluster C(rho) bridge
+      source : /tier-1-existing CLUSTER-SCALE
+      verdict: DIED-ON-DATA
+      why    : four ansaetze, all fail on Coma; root cause locality
+
+  RAR scatter vs local density
+      source : /rar-scatter
+      verdict: DIED-ON-DATA
+      why    : local density carries <=0.7% of the variance; form-free no-go (08-02)
+
+  Coupling fork L1 vs L2=L3
+      source : archive Appendix D.2 -- ON NO SITE PAGE
+      verdict: FORK-CLOSED-BY-EXECUTION
+      why    : 0.57-1.42 dex apart and gamma-invariant, but L1 is eliminable a priori by its vacuum source floor => the fork closes on L2=L3 (THIS SESSION)
+
+==============================================================================
+COMBINED TALLY
+==============================================================================
+  NEVER-HAD-POWER      7    33.3%
+  DIED-ON-FORK         7    33.3%
+  DIED-ON-DATA         4    19.0%
+  FORK-CLOSED-BY-EXECUTION   3    14.3%
+  TOTAL               21
+
+Read the fork column against the hypothesis under test:
+  'the framework's discriminating content is limited by specification,
+   not by observation.'
+
+Candidates that ENCOUNTERED a definitional fork: 10 of 21
+  of those, closed by executing every branch : 3
+  of those, still open (nobody ran them)     : 7
+
+The decisive number is not the fork rate.  It is that 3 of 10 forks
+that were actually WORKED closed, and every one that remains open is one
+nobody has run.  A fork is not fatal; an UNEXECUTED fork is.

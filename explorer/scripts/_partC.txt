@@ -1,0 +1,45 @@
+
+==============================================================================
+PART C  -  is EFE = 0 registrable?  Matched-filter regression + power
+==============================================================================
+
+Chae Table 2 rows parsed: 148
+  erratum check  NGC5055 e_env = 0.040 (pre-erratum body text 0.094), NGC5033 = 0.050 (0.102)
+Joined sample: N = 141
+
+--- descriptive ---
+  measured RAR offset : mean -0.0136  sd 0.1248 dex
+  MOND+EFE predicted  : mean -0.0221  sd 0.0140 dex (range -0.0726 .. -0.0023)
+  marginal r(offset, dpred)   = +0.2355
+  marginal r(offset, cyl_dc)  = +0.0118   [TEST-08 registered null]
+  r(dpred, cyl_dc)            = -0.0664
+
+--- PRIMARY: offset ~ 1 + beta_E * dpred + beta_rho * cyl_dc ---
+  beta_E   = +2.118 +/- 0.740    95% CI [+0.668, +3.568]
+  beta_rho = +0.0075 +/- 0.0227
+  residual sigma = 0.1221 dex
+
+  CI contains 0 (framework EFE=0)?  False
+  CI contains 1 (MOND+EFE)?         True
+
+--- POWER ---
+  minimum detectable |beta_E| at 95% : 1.450
+  MOND+EFE amplitude is beta_E = 1.  Detectable? False
+  implied SNR of the MOND+EFE signal in this estimator: 1.35 sigma
+
+  Signal budget:
+    sd of the MOND+EFE predicted offset (the signal)   : 0.0140 dex
+    residual scatter of the RAR offset (the noise)     : 0.1221 dex
+    signal/noise per galaxy                            : 0.1145
+    N required for 3-sigma on beta_E = 1               : 687
+
+--- robustness: low-acceleration subsample (<x0> < -10.3, Chae's cut), N = 106 ---
+  beta_E = +2.709 +/- 0.957   95% CI [+0.834, +4.584]   sd(dpred) = 0.0129
+  SNR of beta_E = 1 : 1.05 sigma
+
+--- what a powered version would require ---
+  3-sigma on beta_E = 1 at current scatter (0.122 dex): N = 687 galaxies
+  5-sigma on beta_E = 1 at current scatter (0.122 dex): N = 1908 galaxies
+  ...or, at N = 141, residual scatter must fall to 0.0553 dex (currently 0.1221)
+
+wrote explorer/data/efe_sign_convention_and_power.json

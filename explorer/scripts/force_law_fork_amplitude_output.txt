@@ -1,0 +1,88 @@
+==============================================================================
+FORCE-LAW FORK AMPLITUDE  --  site's own C(rho), gamma=2, rho_crit=0.029 V^2
+==============================================================================
+
+L1  = Appendix D.2 field eq:  nabla^2 Phi = 4 pi G rho/C   (source rescaling)
+L2  = div[C grad Phi] = 4 pi G rho  (site /key-claims; AQUAL-like)
+L3  = g_obs = g_bar/C  (algebraic division; TEST-09/10's f_DM = 1-C)
+L4  = galaxy-plotter quadrature: V^2 = V_bar^2 + (V_flat C)^2
+
+PROVEN IDENTITY: in spherical symmetry L2 and L3 are the SAME law
+  (integrate div[C grad Phi]=4 pi G rho over a ball: C g r^2 = G M(<r)).
+  So the live fork is L1 vs L2=L3 vs L4.
+
+------------------------------------------------------------------------------
+DDO 154   rd=1.5 kpc   V_flat=47.0 km/s   rho_crit=64.1 Msun/pc^3
+  r/kpc         C    V_bar      V_L1    V_L2=L3     V_L4  |L1-L3| dex(g)
+   1.25  3.67e-04     12.7     569.8        661     12.7            0.13
+   2.50  1.59e-04     14.0     805.8   1.11e+03     14.0            0.28
+   5.00  3.01e-05     12.9    1139.5   2.35e+03     12.9            0.63
+------------------------------------------------------------------------------
+NGC 2403   rd=2.7 kpc   V_flat=136.0 km/s   rho_crit=536 Msun/pc^3
+  r/kpc         C    V_bar      V_L1    V_L2=L3     V_L4  |L1-L3| dex(g)
+   2.75  7.88e-04     82.6    2445.6   2.94e+03     82.6            0.16
+   5.50  2.84e-04     87.1    3458.4   5.17e+03     87.1            0.35
+  11.00  3.71e-05     75.8    4890.7   1.24e+04     75.8            0.81
+------------------------------------------------------------------------------
+NGC 3198   rd=3.2 kpc   V_flat=150.0 km/s   rho_crit=653 Msun/pc^3
+  r/kpc         C    V_bar      V_L1    V_L2=L3     V_L4  |L1-L3| dex(g)
+   5.00  3.96e-04     97.3    3636.9   4.89e+03     97.3            0.26
+  10.00  8.30e-05     91.5    5143.1      1e+04     91.5            0.58
+  20.00  3.65e-06     71.0    7273.3   3.72e+04     71.0            1.42
+------------------------------------------------------------------------------
+UGC 128   rd=4.0 kpc   V_flat=55.0 km/s   rho_crit=87.7 Msun/pc^3
+  r/kpc         C    V_bar      V_L1    V_L2=L3     V_L4  |L1-L3| dex(g)
+   4.50  5.28e-05     11.3    1265.0   1.55e+03     11.3            0.18
+   9.00  1.71e-05     11.6    1789.0   2.81e+03     11.6            0.39
+  18.00  1.81e-06      9.8    2530.0   7.31e+03      9.8            0.92
+------------------------------------------------------------------------------
+NGC 7331   rd=6.5 kpc   V_flat=250.0 km/s   rho_crit=1.81e+03 Msun/pc^3
+  r/kpc         C    V_bar      V_L1    V_L2=L3     V_L4  |L1-L3| dex(g)
+   5.00  5.89e-04    168.7    6061.6   6.95e+03    168.7            0.12
+  10.00  2.73e-04    189.5    8572.1   1.15e+04    189.5            0.25
+  20.00  5.86e-05    179.1   12122.3   2.34e+04    179.1            0.57
+
+==============================================================================
+AT THE OUTERMOST OBSERVED POINT
+==============================================================================
+    galaxy   V_obs      V_L1      V_L2=L3     V_L4  fork dex(g)
+   DDO 154      47    1139.5         2353     12.9         0.63
+  NGC 2403     136    4890.7    1.244e+04     75.8         0.81
+  NGC 3198     150    7273.3    3.719e+04     71.0         1.42
+   UGC 128      55    2530.0         7310      9.8         0.92
+  NGC 7331     250   12122.3    2.338e+04    179.1         0.57
+
+Synchronism force-law fork amplitude L1 vs L3: min 0.57 dex, median 0.81 dex, max 1.42 dex
+
+==============================================================================
+CONTROL: MOND's OWN realization fork (AQUAL vs QUMOND), same galaxies
+==============================================================================
+    galaxy   r/kpc      g_AQUAL     g_QUMOND   fork dex
+   DDO 154    5.00        368.5        368.5   4.82e-17
+  NGC 2403   11.00         1676         1676   0.00e+00
+  NGC 3198   20.00         1101         1101   0.00e+00
+   UGC 128   18.00        143.6        143.6   0.00e+00
+  NGC 7331   20.00         3366         3366   0.00e+00
+
+MOND realization fork amplitude: max 9.64e-17 dex over all points
+(exact zero to roundoff -- nu is the functional inverse of mu, so AQUAL and
+ QUMOND coincide IDENTICALLY in spherical symmetry.  Milgrom 2010.)
+
+==============================================================================
+ASYMPTOTICS -- why L1 and L3 cannot be reconciled by tuning
+==============================================================================
+Small-x expansion of the site's compander:
+  C = tanh(gamma ln(1+x)) -> gamma x   as x = rho/rho_crit -> 0
+  => rho/C -> rho_crit/gamma  = a CONSTANT, independent of rho.
+
+     DDO 154: rho_crit/gamma = 32.03   rho/C at r=20 kpc = 32.03 Msun/pc^3  (ratio 1.0000)
+    NGC 2403: rho_crit/gamma = 268.2   rho/C at r=44 kpc = 268.2 Msun/pc^3  (ratio 1.0000)
+    NGC 3198: rho_crit/gamma = 326.3   rho/C at r=80 kpc = 326.7 Msun/pc^3  (ratio 1.0014)
+     UGC 128: rho_crit/gamma = 43.86   rho/C at r=72 kpc = 43.86 Msun/pc^3  (ratio 1.0000)
+    NGC 7331: rho_crit/gamma = 906.2   rho/C at r=80 kpc = 906.2 Msun/pc^3  (ratio 1.0000)
+
+L1 therefore sources a UNIFORM effective density floor rho_crit/gamma that
+fills all space: M_eff diverges, V(r) rises without bound, and the total
+mass of an isolated galaxy is infinite.  L3 has no such floor.
+The two laws are not two calibrations of one theory; they have different
+asymptotic mass functions.

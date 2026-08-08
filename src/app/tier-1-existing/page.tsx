@@ -169,9 +169,14 @@ export default function Tier1Existing() {
           <Link href="/test-roadmap" style={{ color: 'var(--color-accent-blue)' }}>Test Roadmap</Link>.
         </p>
         <p>
-          These 10 numbered tests use publicly available datasets — plus TEST-04a, a sub-test of TEST-04
-          added after TEST-04 was withdrawn. Effective independent tests after failures and withdrawals: approximately 4.
-          Just analysis. This is where Synchronism should be tested first.
+          These <strong>11</strong> numbered tests (TEST-01 through TEST-11) use publicly available datasets —
+          plus TEST-04a, a sub-test of TEST-04 added after TEST-04 was withdrawn, and TEST-03s, a substituted
+          protocol. Effective independent tests after failures and withdrawals: approximately 4.
+          Just analysis. This is where Synchronism should be tested first.{' '}
+          <em style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>(Count corrected from &ldquo;10&rdquo;
+          2026-08-08 — a hand-maintained number that drifted when TEST-11 was added. Flagged by a visitor
+          documentation persona, along with the observation that every hand-typed count on this site has drifted
+          at least once.)</em>
         </p>
 
         <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1.5rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
@@ -205,6 +210,24 @@ export default function Tier1Existing() {
             force law is fixed. Registration is blocked on a <em>theory</em> decision, not on data. Until then, the
             &ldquo;0 of 24 tests could select Synchronism&rdquo; framing should be read with the knowledge that the
             one test which structurally <em>could</em> is not in the denominator.
+          </p>
+          <p style={{ margin: '0.75rem 0 0 0', paddingTop: '0.6rem', borderTop: '1px solid rgba(239,68,68,0.25)' }}>
+            <strong>3. The high-z boost ceiling was proposed as a new discriminator on 2026-08-08, and it closes
+            without data.</strong> An expert visitor pass observed &mdash; correctly &mdash; that this site evolves
+            a&#x2080; to cH(z)/2&#x03C0; while freezing &#x03A9;<sub>m</sub>, with no stated rule, and proposed
+            registering <strong>f<sub>DM,max</sub>(z) = 1 &minus; &#x03A9;<sub>m</sub>(z)</strong> (&#8776; 0.21 at
+            z = 1, &#8776; 0.05 at z = 2) as a Tier-1 test on published high-z kinematics. It does not survive
+            either branch. Under the &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> reading of the ceiling the baryon
+            fraction is <em>exactly</em> epoch-independent (both components are dust), so the prediction is flat by
+            construction. Under the 1/&#x03A9;<sub>m</sub>(z) reading the ceiling falls to 1.08 by z = 2 while the
+            framework&apos;s own a&#x2080;(z) rises 3.03&times; over the same interval &mdash; the ceiling forbids
+            precisely the MOND regime that a&#x2080;(z) widens, which is an internal contradiction rather than a
+            prediction. <strong>The ceiling must therefore be frozen at &#x03A9;<sub>m,0</sub>, and no high-z
+            discriminator exists.</strong> Full arithmetic on{' '}
+            <Link href="/parameter-derivations" style={{ color: '#ef4444' }}>Parameter Derivations</Link> item 8.
+            Recorded here because this is the <em>third</em> candidate discriminator in a month to die on an unmade
+            definitional choice rather than on a measurement &mdash; and because a closure stated only where it was
+            found is exactly the failure caveat 1 documents.
           </p>
         </div>
 

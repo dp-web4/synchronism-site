@@ -88,9 +88,25 @@ export default function WhySynchronism() {
           (Full step-by-step breakdown: <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Walkthrough &rarr;</Link>)
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          The parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> depends only on how many particles are
-          moving as a correlated unit. When &#x03B3; is large (few correlated particles), the system is sparse/independent (low C).
-          When &#x03B3; is small (many correlated particles), the system is dense/collective (high C).
+          The parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> is meant to depend only on how many
+          particles are moving as a correlated unit: many correlated particles &rarr; small &#x03B3;,
+          few &rarr; large &#x03B3;. Note what &#x03B3; is <em>not</em> &mdash; it is the{' '}
+          <strong>sharpness</strong> dial, setting how abruptly C rises as density increases. What
+          makes a system sparse or dense is &#x03C1;, the other input. Two systems at the same density
+          with different &#x03B3; sit at different points on the curve; &#x03B3; does not move them
+          along the density axis.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', borderLeft: '3px solid rgba(245,158,11,0.6)', paddingLeft: '0.75rem' }}>
+          <strong style={{ color: '#f59e0b' }}>And this mapping is the wrong way round.</strong>{' '}
+          &#x03B3; = 2/&#x221A;N<sub>corr</sub> is badged{' '}
+          <strong>audited-negative &mdash; sign-inverted for all collective systems</strong>: the real
+          systems with the most correlated particles (superconductors, Bose&ndash;Einstein condensates)
+          come out at the <em>wrong end</em> of the relation. So read the paragraph above as the
+          framework&apos;s stated intent, not as an established result. The relation is also arguably{' '}
+          <em>empty</em> rather than merely inverted, since N<sub>corr</sub> is never measured
+          independently &mdash; it is always back-solved from a fitted &#x03B3;, and the sign of a
+          definition cannot be inverted. Details and a working calculator:{' '}
+          <Link href="/gamma-calculator" style={{ color: '#f59e0b' }}>&#x03B3; Calculator &rarr;</Link>
         </p>
         </details>
         <details style={{ margin: '0.75rem 0', border: '1px solid var(--color-border)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>

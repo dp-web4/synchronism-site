@@ -322,7 +322,7 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>5. &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#x2248; 119 M&#x2609;/pc&sup2; (at the site-standard H&#x2080; = 67.4)</h3>
-              <ValidationBadge status="reparametrization" label="Freeman&apos;s Law Re-expressed" />
+              <ValidationBadge status="reparametrization" label="Milgrom&apos;s &#x03A3;_M Re-derived (was: Freeman&apos;s Law Re-expressed)" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #89</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -363,6 +363,18 @@ export default function ParameterDerivations() {
               quantity known to a factor of two is precision theater; the honest statement is
               &ldquo;consistent with Freeman&apos;s law within the M/L systematic,&rdquo; not a specific
               percentage.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
+              <strong style={{ color: '#a78bfa' }}>Attribution corrected 2026-08-08 &mdash; the badge said the wrong
+              prior art.</strong> This row was labelled &ldquo;Freeman&apos;s Law Re-expressed,&rdquo; but
+              a&#x2080;/(2&#x03C0;G) is not a re-expression of Freeman &mdash; it <em>is</em>{' '}
+              <strong>Milgrom&apos;s critical surface density &#x03A3;<sub>M</sub></strong>, a standard MOND quantity,
+              and <em>&ldquo;Freeman&apos;s law follows from &#x03A3;<sub>M</sub>&rdquo; is Milgrom&apos;s own 1983
+              result</em> (the observation that disc galaxies cluster near the MOND transition surface density).
+              So this row re-derives &#x03A3;<sub>M</sub> and rediscovers Milgrom&apos;s explanation of Freeman&apos;s
+              law &mdash; same demotion, correct lineage. The a&#x2080; row above already credits
+              McCulloch/Verlinde/Smolin for exactly this reason; the same standard now applies one row down. Caught
+              by a visitor physics persona, 2026-08-08.
             </p>
           </div>
 
@@ -436,6 +448,35 @@ export default function ParameterDerivations() {
               class exclusion (B<sub>max</sub> &#8818; 14 is excluded by SPARC dwarfs), not the median-based
               percentage. This registered sweep has not yet been executed against the full per-galaxy dataset;
               see the proposal for the pre-fixed verdict rule.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
+              <strong style={{ color: '#38bdf8' }}>At which epoch? The fork is real, and closing it removes a
+              candidate test rather than adding one (executed 2026-08-08).</strong> An expert visitor pass noted a
+              genuine inconsistency: this page promotes a&#x2080; to <strong>a&#x2080;(z) = cH(z)/2&#x03C0;</strong>{' '}
+              but freezes &#x03A9;<sub>m</sub> at its present value, with no stated rule &mdash; and proposed that
+              an evolving ceiling gives <strong>f<sub>DM,max</sub>(z) = 1 &minus; &#x03A9;<sub>m</sub>(z)</strong>{' '}
+              &#8776; 0.21 at z = 1 and &#8776; 0.05 at z = 2, a sharp epoch dependence neither MOND nor &#x039B;CDM
+              predicts. Both branches were checked. <strong>Branch (i), the &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub>{' '}
+              reading:</strong> baryons and total matter are both dust, so
+              &#x03A9;<sub>b</sub>(z)/&#x03A9;<sub>m</sub>(z) = &#x03A9;<sub>b,0</sub>/&#x03A9;<sub>m,0</sub> = 0.1565{' '}
+              <em>identically at every z</em> &mdash; the ceiling is 6.39 at all epochs and there is nothing to
+              measure. <strong>Branch (ii), the 1/&#x03A9;<sub>m</sub>(z) reading:</strong> it self-destructs.
+              Writing B<sub>max</sub>(z) = E(z)&sup2;/[&#x03A9;<sub>m,0</sub>(1+z)&sup3;], the ceiling <em>falls</em>{' '}
+              (3.17 &rarr; 1.27 at z = 1 &rarr; 1.08 at z = 2) while the same E(z) makes a&#x2080;(z) <em>rise</em>{' '}
+              (1.79&times; at z = 1, 3.03&times; at z = 2). Since the galaxy sector <em>is</em> deep-MOND at
+              &#x03B3; = 1/2, the required boost is B = &radic;(a&#x2080;(z)/g<sub>bar</sub>), so the ceiling permits
+              MOND behaviour only where g<sub>bar</sub> &gt; &#x03A9;<sub>m</sub>(z)&sup2;&middot;a&#x2080;(z): that
+              is g<sub>bar</sub> &gt; 0.099 a&#x2080; today but g<sub>bar</sub> &gt; 0.86 a&#x2080; at z = 2.
+              <strong> By z &#8776; 1 the evolving ceiling forbids essentially the whole MOND regime that the
+              framework&apos;s own evolving a&#x2080; has just widened.</strong> The two cosmological inputs evolve in
+              opposite directions, so branch (ii) is not a prediction but an internal contradiction &mdash; which
+              means <em>the ceiling must be frozen at &#x03A9;<sub>m,0</sub></em>, and once frozen it carries no
+              epoch dependence. <strong>Either branch: no high-z discriminator exists. No data was needed, and the
+              refutation count is unchanged at 6.</strong> This is the third consecutive candidate discriminator to
+              die on an unmade definitional choice rather than on a measurement (after the EFE argument fork and the
+              ceiling&apos;s own 1/&#x03A9;<sub>m</sub> vs &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> ambiguity) &mdash;
+              the pattern is recorded in{' '}
+              <code style={{ fontSize: '0.78rem' }}>Research/proposals/boost_ceiling_epoch_fork_closes_the_last_candidate_discriminator_20260808.md</code>.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
               <strong>Which force law this ceiling is a statement about (2026-08-04):</strong> B<sub>max</sub> =

@@ -193,6 +193,14 @@ export default function CoherenceExplorer() {
               Opens at &#x03B3; &#x2248; 0.49, the value SPARC galaxy data actually prefers when fit freely.
               &#x03B3; = 2 was the framework&apos;s original galaxy guess &mdash; refuted (drag the slider up to see it).
             </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', marginTop: '0.35rem', borderLeft: '2px solid rgba(139,92,246,0.6)', paddingLeft: '0.5rem' }}>
+              <strong style={{ color: '#a78bfa' }}>What the default view actually shows (added 2026-08-08):
+              MOND.</strong> Set &#x03B3; = 1/2 exactly and the compander collapses algebraically to
+              C(x) = x/(x+2) = &#x03BC;<sub>simple</sub>(x/2) &mdash; MOND&apos;s simple interpolating function,
+              the factor of 2 absorbed by the fitted &#x03C1;<sub>crit</sub>. SPARC&apos;s 0.489 is 2.2% from that
+              point, so the curve you are looking at on load is MOND&apos;s &#x03BC;, not an alternative to it.
+              Drag &#x03B3; away from 0.5 and you are leaving MOND; the data pull it back.
+            </p>
             {gamma > 1.5 && (
               <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.75rem', marginTop: '0.25rem' }}>
                 N<sub>corr</sub> = {(4 / (gamma * gamma)).toFixed(1)} &mdash; mean-field approximation weakens as N<sub>corr</sub> approaches 1
@@ -210,6 +218,19 @@ export default function CoherenceExplorer() {
             />
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.25rem' }}>
               Lower &#x03C1;<sub>crit</sub> = transition starts at lower density (shifts curve left). Higher = transition occurs at higher density.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', marginTop: '0.25rem', borderLeft: '2px solid rgba(139,92,246,0.6)', paddingLeft: '0.5rem' }}>
+              <strong style={{ color: '#a78bfa' }}>This slider carries no shape information &mdash; and that is the
+              point (added 2026-08-08).</strong> C depends on &#x03C1; and &#x03C1;<sub>crit</sub> only through the
+              single ratio x = &#x03C1;/&#x03C1;<sub>crit</sub>, <em>exactly</em>, not just asymptotically. On the
+              log axis this slider therefore performs a rigid horizontal translation by
+              &minus;log<sub>10</sub>&#x03C1;<sub>crit</sub> and changes nothing about the curve&apos;s shape:
+              the tool is a <strong>one-parameter family plus a pan control</strong>, presented as two parameters.
+              That is not a UI nit &mdash; it is the &#x03B3;&#x2194;&#x03C1;<sub>crit</sub> degeneracy that makes
+              SPARC&apos;s &#x03B3; = 0.489 non-identifiable against a rescaled critical density, which is the crux
+              of the whole galaxy sector, made visible. Read the abscissa as
+              log<sub>10</sub>(&#x03C1;/&#x03C1;<sub>crit</sub>) &mdash; dimensionless &mdash; and the degeneracy is
+              the only thing the slider can express. Raised by a visitor researcher pass.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               <strong>Note:</strong> &#x03C1;<sub>crit</sub> is a <em>saturation knee</em>, not a critical density

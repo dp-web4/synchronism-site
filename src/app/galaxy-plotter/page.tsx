@@ -281,6 +281,33 @@ export default function GalaxyPlotter() {
             Amber DOTTED (old illustrative stand-in &mdash; what this page showed before 2026-07-08, kept for comparison): v(r) = &radic;(v_toy&sup2; + [V_flat&middot;tanh(0.4&middot;r/2.5)]&sup2;), v_toy = 0.6&middot;V_flat&middot;&radic;(1&minus;e^(&minus;r/2.5))<br />
             Green &ldquo;MOND&rdquo;: v(r) = v_b&middot;&radic;&#x03BD;(y), &#x03BD;(y) = &frac12; + &radic;(&frac14; + 1/y), y = g_N/a&#x2080;, g_N = v_b&sup2;/r (real simple-&#x03BD;)
           </div>
+          <div style={{ margin: '0.75rem 0', padding: '0.7rem 0.9rem', background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', fontSize: '0.85rem' }}>
+            <strong style={{ color: '#f87171' }}>This figure and the ledger run different force laws &mdash; the fork,
+            stated (2026-08-08).</strong> The violet curve above couples C <em>in quadrature</em>:
+            v&sup2;&nbsp;=&nbsp;v_b&sup2;&nbsp;+&nbsp;[V_flat&middot;C]&sup2;, so C&nbsp;&rarr;&nbsp;0 means{' '}
+            <em>no boost</em>. But{' '}
+            <a href="/tier-1-existing" style={{ color: '#f87171' }}>Tier 1</a> derives the boost ceiling behind
+            TEST-09/TEST-10 from f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C, i.e. from reading the coupling as{' '}
+            <strong>g<sub>obs</sub>&nbsp;=&nbsp;g<sub>bar</sub>/C</strong>, where C&nbsp;&rarr;&nbsp;0 means an{' '}
+            <em>infinite</em> boost. Same symbol, opposite orientation. The legend&apos;s &ldquo;max C on this disk:
+            0.001 &mdash; boost never turns on&rdquo; would read &ldquo;f<sub>DM</sub>&nbsp;=&nbsp;0.999, a 1000&times;
+            acceleration boost&rdquo; under the ledger&apos;s law. Every &#x03C3; on{' '}
+            <a href="/honest-assessment" style={{ color: '#f87171' }}>Honest Assessment</a> is conditional on this
+            choice, and the site has not made it &mdash; the fork is what currently{' '}
+            <a href="/mond-unification" style={{ color: '#f87171' }}>blocks registering EFE&nbsp;=&nbsp;0</a> as a
+            numbered test.
+            <br /><br />
+            <strong>For rotation curves specifically, though, the fork does not block the verdict &mdash; it doubles
+            it.</strong> Take a gas-rich dwarf like DDO&nbsp;154, which needs a boost of B&nbsp;&#8776;&nbsp;10 in
+            acceleration to explain its outer curve (SPARC&apos;s most DM-dominated systems reach
+            f<sub>DM</sub>&nbsp;=&nbsp;0.927, i.e. B&nbsp;&#8805;&nbsp;13.7 &mdash; see{' '}
+            <a href="/tier-1-existing" style={{ color: '#f87171' }}>TEST-10</a>). At max C = 0.001 the quadrature
+            branch delivers B&nbsp;&#8776;&nbsp;1 &mdash; a factor ~10 <em>under</em>. The division branch delivers
+            B&nbsp;=&nbsp;1/C&nbsp;&#8776;&nbsp;1000 &mdash; a factor ~100 <em>over</em>. <strong>Both branches are
+            refuted by the same galaxy, from opposite sides.</strong> Registering a canonical coupling is still
+            required for the EFE and cluster sectors; it is not required to conclude that the galaxy sector fails.
+            (Raised independently by two expert visitor passes, 2026-08-08.)
+          </div>
           The solid violet curve and the dotted one differ in exactly one ingredient: the coherence factor.
           The stand-in used tanh(<em>radius</em>) with hand-tuned constants; the real curve uses
           C(&#x03C1;) on the disk&apos;s density profile. With the framework&apos;s asserted

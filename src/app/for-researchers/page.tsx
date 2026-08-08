@@ -19,11 +19,15 @@ export default function ForResearchers() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           An arriving expert should not have to excavate the failure documentation to find what
           survives it. By the site&apos;s own scoreboard the framework has <strong>0 confirmed
-          predictions, 0 independently-derived parameters, and 0 tests that could select it
-          over MOND+EFE+&Lambda;CDM</strong>. Two executed tests <em>did</em> discriminate between the
-          models (TEST-09 at 3.3σ, TEST-10 on the boost ceiling) and both selected MOND — this page
-          previously said &ldquo;0 tests currently discriminating,&rdquo; which booked the framework&apos;s
-          two strongest empirical results as zero (corrected 2026-07-27). What remains citable are <strong>replications,
+          predictions, 0 independently-derived parameters, and &mdash; on the discrimination axis &mdash;
+          2 executed tests that discriminated, both of which selected MOND, and 0 that could have
+          selected Synchronism</strong> over MOND+EFE+&Lambda;CDM. Those are one sentence because they are
+          one fact read two ways, and stating them apart has confused three expert readers: the framework&apos;s
+          galaxy sector is a strict submodel of MOND (see below), so a discriminating test can only tie or lose.
+          The two that discriminated are TEST-09 (3.3σ) and TEST-10 (boost ceiling). (This page said
+          &ldquo;0 tests currently discriminating&rdquo; until 2026-07-27, which booked the framework&apos;s two
+          strongest empirical results as zero; the bolded line was reunified 2026-08-08.)
+          What remains citable are <strong>replications,
           quantified instances of known results, and executed negative results</strong> — the four
           artifacts below survive the framework being wrong, precisely because they do not depend
           on it being right.
@@ -302,8 +306,15 @@ export default function ForResearchers() {
             (one-sided) or ~0.46 (two-sided). The site badges its galaxy tests
             &ldquo;underpowered as registered&rdquo; unflinchingly; holding the methodology verdict —
             the sector nominated as the real contribution — to a lower evidentiary standard than the
-            physics was the asymmetry worth fixing.
-          </p>
+            physics was the asymmetry worth fixing. (4) <em>J = 0 is a point estimate on n = 6 and n = 6,
+            and should be quoted with its interval</em> (added 2026-08-08, from a visitor researcher pass
+            applying precision (3) to the detector itself). Clopper&ndash;Pearson at 95% gives sensitivity
+            &#8805; 0.541 and specificity &#8804; 0.459, hence <strong>J &#8712; [&minus;0.46, +0.46]</strong> —
+            an interval running from anti-informative to moderately informative. The point estimate is the right
+            sign and the design degeneracy in (2) is the deeper problem, but quoting <em>J = 0</em> bare on the
+            page labelled &ldquo;what&apos;s citable&rdquo; is the same sin this site correctly flags on{' '}
+            <Link href="/consciousness-demo" style={{ color: 'var(--color-accent-blue)' }}>the consciousness
+            demo</Link>.</p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Measured, not asserted: adversarial same-corpus AI pairs filter for internal consistency
             but cannot substitute for out-of-distribution evaluation. Relevant to anyone building

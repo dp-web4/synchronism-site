@@ -95,6 +95,18 @@ export default function ConsciousnessDemo() {
           land near 0.50 by construction. Additionally, all 8 approaches share the same framework
           assumptions and are not independent. No calibration procedure exists to map actual EEG, fMRI,
           or IIT-&#x03A6; measurements to the C-axis.
+          <p style={{ margin: '0.75rem 0 0 0' }}>
+            <strong style={{ color: '#f59e0b' }}>Sharper (added 2026-08-08): the scatter is not just
+            uninformative &mdash; it is too small to be honest.</strong> If the 8 approaches really were
+            independent estimators of a psychological threshold, &#x03C3; = 0.012 would be an{' '}
+            <em>implausibly</em> tight agreement &mdash; a Millikan-style clustering signature, which is
+            evidence that estimators inherited each other&apos;s assumptions rather than evidence that they
+            agree. Independent methods for a quantity this loosely defined should scatter by far more than 1.2%
+            of the range. So the low scatter is a <em>diagnostic of shared derivation</em>, not weak support:
+            it points the same direction as the geometric-midpoint argument above, and it does so from the
+            statistics alone, without needing to know how the eight approaches were built. Raised by a visitor
+            physics persona, 2026-08-08.
+          </p>
         </div>
         <p>
           The 8 approaches below all converge on C &#x2248; 0.50 — an illustration of how the geometric

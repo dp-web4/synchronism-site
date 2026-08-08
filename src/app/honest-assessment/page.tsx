@@ -235,6 +235,19 @@ export default function HonestAssessment() {
           predictions tested, 6 refutations executed on external data</strong> (astronomical, ephemeris, and
           laboratory). The sharpest events, in order of decisiveness:
         </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
+          <strong style={{ color: '#f59e0b' }}>Read &ldquo;6&rdquo; as executed runs, not independent roots
+          (qualified 2026-08-08).</strong> Two of the six (TEST-09, TEST-10) are corollaries of the same
+          bounded-boost ceiling B&nbsp;&#8804;&nbsp;1/&#x03A9;<sub>m</sub>, which{' '}
+          <Link href="/parameter-derivations" style={{ color: '#f59e0b' }}>Parameter Derivations</Link> badges{' '}
+          <em>Asserted, Not Derived</em> &mdash; so strictly they refute the assertion, and the honest figure for
+          independent empirical roots is <strong>3&ndash;4, not 6</strong> (worked through on{' '}
+          <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>Tier 1</Link>). Three expert visitor passes
+          have now flagged the footer&apos;s bare &ldquo;6&rdquo; against that body text; the footer now carries the
+          qualifier. The two failures that depend on <em>no</em> convention and <em>no</em> data are the
+          mass-cancellation no-go and the vacuum divergence &mdash; see{' '}
+          <Link href="/key-claims" style={{ color: '#f59e0b' }}>Key Claims</Link>.
+        </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>(0) The boost-ceiling pair (TEST-09/TEST-10 — executed 2026-07-14/15):</strong> The bounded
           boost C(a) caps gravitational amplification at 1/Ω<sub>m</sub>&nbsp;=&nbsp;3.17 — the framework&apos;s
@@ -645,6 +658,28 @@ export default function HonestAssessment() {
               <strong> Net discriminating galaxy tests vs MOND: 0, by execution.</strong>
               Script: <code style={{ fontSize: '0.78rem' }}>explorer/scripts/rar_transition_shape_real_sparc.py</code>.
               See also <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation: RAR Transition Shape</Link>.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
+              <strong style={{ color: '#a78bfa' }}>&ldquo;Converges to MOND&rdquo; is not a coincidence &mdash;
+              it is an identity, and here it is (added 2026-08-08).</strong> The free fit could not have landed
+              anywhere else. Using this page&apos;s own Hill form,
+              tanh(&#x03B3;&nbsp;ln(1+x))&nbsp;=&nbsp;[(1+x)<sup>2&#x03B3;</sup>&minus;1]/[(1+x)<sup>2&#x03B3;</sup>+1],
+              set <strong>&#x03B3;&nbsp;=&nbsp;1/2</strong> exactly. Then 2&#x03B3;&nbsp;=&nbsp;1 and it collapses to
+              <strong> C(x)&nbsp;=&nbsp;x/(x+2)&nbsp;=&nbsp;&#x03BC;<sub>simple</sub>(x/2)</strong> &mdash; MOND&apos;s
+              simple interpolating function, with the factor of 2 absorbed entirely into the fitted
+              &#x03C1;<sub>crit</sub>. SPARC&apos;s 0.489 is 2.2% from that exact point. So the four-digit RMS
+              agreement with McGaugh is the <em>only possible outcome</em> once the fit is free to find
+              &#x03B3;&nbsp;=&nbsp;1/2: <strong>the functional form was never a difference from MOND at all. The
+              only difference that ever existed is the argument</strong> (local &#x03C1; in place of
+              g<sub>bar</sub>) &mdash; which is exactly what{' '}
+              <Link href="/for-researchers" style={{ color: '#a78bfa' }}>For Researchers</Link> isolates and
+              refutes. Corollary: the Hill index at the preferred fit is n&nbsp;=&nbsp;2&#x03B3;&nbsp;=&nbsp;0.978&nbsp;&#8776;&nbsp;1,
+              and n&nbsp;=&nbsp;1 is the <em>non-cooperative</em> limit of a Hill function. The framework&apos;s
+              distinctive content is that density drives a <em>collective</em> transition; the data set the
+              cooperativity parameter to the value meaning <em>there is no collective transition</em> &mdash; the
+              same fact as the criticality retraction on{' '}
+              <Link href="/core-idea" style={{ color: '#a78bfa' }}>The Core Idea</Link>, arriving through the fit
+              rather than through the math.
             </p>
           </div>
 

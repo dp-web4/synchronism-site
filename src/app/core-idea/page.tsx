@@ -266,6 +266,21 @@ export default function CoreIdea() {
           honestly, but the trade should be visible: no critical point &rArr; no universality &rArr; no
           Landau machinery to borrow authority from. See{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</Link>.
+          <p style={{ marginTop: '0.85rem', marginBottom: 0 }}>
+            <strong>The data say the same thing, independently (added 2026-08-08).</strong> Written as a Hill
+            function the exponent is the Hill index n&nbsp;=&nbsp;2&#x03B3;. Fit freely to SPARC, the galaxy
+            sector prefers &#x03B3;&nbsp;&#x2248;&nbsp;0.489, i.e.{' '}
+            <strong>n&nbsp;&#x2248;&nbsp;0.98&nbsp;&#x2248;&nbsp;1</strong> &mdash; and n&nbsp;=&nbsp;1 is the{' '}
+            <em>non-cooperative</em> limit of a Hill function, the value that means <em>no collective
+            effect</em>. The framework&apos;s whole distinctive claim is that density drives a{' '}
+            <em>collective</em> transition. Its own best fit sets cooperativity to zero. That is the criticality
+            retraction above arriving a second time, through the data rather than through the algebra. At exactly
+            &#x03B3;&nbsp;=&nbsp;1/2 the identity closes: C(x)&nbsp;=&nbsp;x/(x+2)&nbsp;=&nbsp;&#x03BC;<sub>simple</sub>(x/2),
+            MOND&apos;s simple interpolating function &mdash; so &ldquo;the fit converges to MOND&rdquo; is not an
+            empirical coincidence but algebra (see{' '}
+            <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>the RAR entry</Link> and{' '}
+            <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>).
+          </p>
         </div>
       </section>
 

@@ -82,6 +82,21 @@ export default function ResearchPhilosophy() {
           </Link>. The taxonomy has two families:
         </p>
 
+        <div style={{ background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#f87171' }}>Single-sourced 2026-08-08 &mdash; this page was a second copy, and
+          it had already drifted.</strong> Until today the chips below carried their own definition text while this
+          same paragraph named Honest Assessment canonical. The copies disagreed: <em>Failed</em> read
+          &ldquo;Prediction tested and wrong. Kept visible as permanent record&rdquo; here and &ldquo;Prediction
+          contradicted by data (with specific error)&rdquo; there &mdash; one badge, two definitions, two pages.
+          The definitions now live in exactly one place; this page keeps only the <em>rationale</em> for having two
+          families, which is what it is for. A visitor documentation persona found the drift as part of a larger
+          finding: the site&apos;s status vocabulary has grown from the documented 10 badges to <strong>40+ ad-hoc
+          strings</strong> across five pages, several of them (&ldquo;Empty Intersection,&rdquo; &ldquo;Adjudicable
+          Now,&rdquo; &ldquo;Untestable&rdquo; &mdash; one keystroke from <em>Untested</em>, which means something
+          else) used but nowhere defined. Freezing that vocabulary to a machine-readable list is queued as a
+          maintainer task; this is the first installment.
+        </div>
+
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
           <strong>MRH-relationship tags</strong> (MRH = <em>Markov Relevancy Horizon</em>, the framework&apos;s
           term for the bounded context a system &mdash; or here, a claim &mdash; is currently relevant within;
@@ -91,23 +106,23 @@ export default function ResearchPhilosophy() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="active-mrh" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Currently in active research focus; being extended or revised</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="parallel-paths" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>In the framework&apos;s parallel hypothesis space; not currently in active focus but not abandoned</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="sidelined" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Was in active focus, currently not pursued; reasons documented; reactivation condition specified</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="superseded" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Replaced by a later formulation; pointer to successor</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="audited-negative" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Closed audit finding on a historical track; durable record; does not move</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
           </div>
         </div>
 
@@ -117,19 +132,19 @@ export default function ResearchPhilosophy() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="untested" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Prediction exists, no data yet</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="speculative" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Conceptual proposal without quantitative test</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="reparametrization" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Equivalent to existing physics in different notation</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="failed" />
-            <span style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>Prediction tested and wrong. Kept visible as permanent record.</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
           </div>
         </div>
 

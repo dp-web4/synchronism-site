@@ -527,6 +527,34 @@ export default function KeyClaims() {
             so the boost runs exponentially in radius while a flat rotation curve needs it roughly linear. Both
             hold for every value of A. These, not the knee, are the durable galaxy-sector results.
           </p>
+          <div className="card" style={{ borderLeft: '3px solid #8b5cf6', margin: '0.75rem 0', padding: '0.75rem 1rem' }}>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
+              <strong style={{ color: '#a78bfa' }}>Sharper than (b): under the ledger&apos;s coupling the theory is
+              singular in vacuum &mdash; and that is why AQUAL rejected this substitution in 1984
+              (stated here 2026-08-08).</strong>{' '}
+              <Link href="/tier-1-existing" style={{ color: '#a78bfa' }}>Tier 1</Link> reads the coupling as
+              g<sub>obs</sub>&nbsp;=&nbsp;g<sub>bar</sub>/C(&#x03C1;) with f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C.
+              But C(&#x03C1;&nbsp;&rarr;&nbsp;0)&nbsp;&rarr;&nbsp;&#x03B3;&#x03C1;/&#x03C1;<sub>crit</sub>&nbsp;&rarr;&nbsp;0
+              and the coupling <em>divides</em> by it, so g<sub>obs</sub> diverges wherever matter runs out &mdash;
+              which is everywhere outside a galaxy. For an exponential disc, midplane
+              &#x03C1;&nbsp;&#x221D;&nbsp;e<sup>&minus;r/R<sub>d</sub></sup> while
+              g<sub>bar</sub>&nbsp;&#x221D;&nbsp;r<sup>&minus;2</sup>, giving
+              <strong> v&sup2;(r)&nbsp;&#x221D;&nbsp;e<sup>+r/R<sub>d</sub></sup>/r&nbsp;&rarr;&nbsp;&#8734;</strong>{' '}
+              a few scale lengths out. Rotation curves under this reading do not fail to flatten &mdash; they blow up.
+              This is not a new refutation and the count stays at 6: it is the same statement as (b) and as
+              EFE&nbsp;=&nbsp;0, taken to its limit (&ldquo;a uniform external field does not change &#x03C1;&rdquo; and
+              &ldquo;empty space has C&nbsp;=&nbsp;0 however strong the field&rdquo; are one property, not two &mdash;
+              derived on <Link href="/mond-unification" style={{ color: '#a78bfa' }}>MOND Unification</Link>). What it
+              adds is the <em>attribution</em>: Bekenstein &amp; Milgrom&apos;s AQUAL (1984, ApJ 286, 7) keys its
+              interpolating function on |&nabla;&#x03A6;|, which never vanishes near mass, rather than on &#x03C1;,
+              which vanishes everywhere outside matter &mdash; for exactly this reason. The substitution{' '}
+              <Link href="/for-researchers" style={{ color: '#a78bfa' }}>For Researchers</Link> calls &ldquo;the
+              entire content of what makes this framework different from MOND&rdquo; is the substitution AQUAL was
+              built to avoid, 42 years ago. Like the mass-cancellation no-go, this needs no data, no fit, no
+              estimator choice &mdash; but unlike it, this one <em>is</em> conditional on the division reading of C
+              (see the force-law fork on <Link href="/galaxy-plotter" style={{ color: '#a78bfa' }}>the plotter</Link>).
+            </p>
+          </div>
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>

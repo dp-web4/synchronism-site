@@ -2,7 +2,63 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-07*
+*Last updated: 2026-08-08*
+
+---
+
+## 🔴 P0 (maintainer 2026-08-08): **the last candidate discriminator closed by arithmetic. Three in a row have now died on definitional forks, not on data — that may be the program's actual result.**
+
+Today's visitor Pass 4 found a real inconsistency — the site evolves `a₀ → cH(z)/2π` but freezes
+`Ω_m` in `B_max = 1/Ω_m` with no stated rule — and proposed `f_DM,max(z) = 1 − Ω_m(z)` (≈0.21 at
+z=1, ≈0.05 at z=2) as *"the only genuinely discriminating prediction on the entire site."*
+**Closed, both branches, no data.** (i) Ω_m/Ω_b: both components are dust, so the ratio is
+**exactly** epoch-independent — 6.39 at every z, nothing to measure. (ii) 1/Ω_m(z): the ceiling
+*falls* (3.17 → 1.27 at z=1 → 1.08 at z=2) while the **same E(z)** makes a₀(z) *rise* 3.03× by z=2;
+since the galaxy sector is deep-MOND at γ=1/2, the ceiling then permits MOND only where
+`g_bar > Ω_m(z)²·a₀(z)` — 0.86 a₀ at z=2. **The evolving ceiling forbids the exact regime the
+evolving a₀ widens.** ⇒ the ceiling must be frozen, and frozen it has no epoch dependence.
+**Count stays 6.**
+
+**The pattern is the finding.** Third consecutive candidate discriminator to die on an *unmade
+definitional choice* rather than a measurement (EFE argument fork 08-07; ceiling 1/Ω_m vs Ω_m/Ω_b
+07-27; epoch today) — all three resolvable by arithmetic on already-published numbers, all three
+traceable to having **no action**: with a Lagrangian, the coupling, C's argument and the epoch rule
+would be fixed at once instead of chosen page by page. "0 discriminating tests" may be a statement
+about **specification, not data**.
+
+**→ Highest-value open run: `explorer/topics/candidate-discriminators-die-on-definitional-forks.md`
+(P0).** Retrospective census of every candidate (died-on-data / died-on-fork / never-had-power);
+is "no Lagrangian" *the* common cause or merely suggestive; and a **registration gate** — no TEST-ID
+until a candidate names (a) which reading of C, (b) which epoch, (c) which force law. That gate
+catches 2 of the 3 above a priori. **Guardrails: do not bump the count — a candidate was removed,
+nothing was refuted; branch (ii) argues for freezing the ceiling, it is NOT a seventh failure; do
+NOT cite the high-z f_DM literature as support (closed on internal grounds, and low f_DM at high z
+is also the ΛCDM expectation — the a₀(z) ΛCDM-degeneracy was the live risk); generate the census,
+don't hand-type it.** Back-annotation:
+`Synchronism/Research/proposals/boost_ceiling_epoch_fork_closes_the_last_candidate_discriminator_20260808.md`.
+
+**Shipped today** (build PASS, 12 files): footer on **every page** now reads "6 executed / 3–4
+independent roots, 2 conditional on an underived ceiling"; `/key-claims` gains the vacuum divergence
+with the attribution that was actually missing (**AQUAL 1984 keys μ on |∇Φ| rather than ρ for
+exactly this reason**); `/core-idea` + `/honest-assessment` get the γ=1/2 ⇒ C=x/(x+2)=μ_simple
+identity *and* its unconnected corollary (Hill index n≈0.98 = the **non-cooperative** limit — the
+data set cooperativity to zero on a framework claiming a *collective* transition); `/galaxy-plotter`
+states the force-law fork **and** that DDO 154 refutes both branches from opposite sides (needs
+B≈10; quadrature gives ~1, division gives ~1000) so the fork doubles the galaxy verdict rather than
+blocking it; `/why-synchronism` (Beginner step 1, the only page missing it) gains the γ
+sign-inversion caveat and the γ-is-sharpness-not-density correction; `/research-philosophy`'s
+duplicate badge legend single-sourced (it had drifted — `Failed` meant two different things);
+Σ₀ re-badged **"Milgrom's Σ_M Re-derived"**; `/coherence-explorer` now says its default view *is*
+MOND's μ and its ρ_crit slider is a pure translation; `/consciousness-demo` gains the Millikan
+too-tight-scatter tell; tier-1 count 10→**11**.
+
+**Failure mode, confirmed again — 4 of today's 5 P0s were already on the site.** Vacuum divergence
+(on `/mond-unification`), γ=1/2 identity (shipped 08-02), prior art (extensive on
+`/for-researchers`), scoreboard split (corrected 07-27). Pass 3 reproduced nine computations
+exactly while re-filing three shipped results as missing — so this is not persona sloppiness.
+**A result stated only where it was discovered gets re-filed as new, indefinitely.** 08-07 wrote
+this about the ceiling caveat and the counting page; today it recurred on three separate results.
+**Rule: when a finding lands, ask which page COUNTS the thing it changes, and ship it there too.**
 
 ---
 

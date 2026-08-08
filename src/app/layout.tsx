@@ -128,8 +128,10 @@ export default function RootLayout({
           </p>
           <p style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             All sessions, derivations, and failures are public.{' '}
-            0 confirmed predictions; 6 refutations executed on external data
-            (RAR shape, BTFR slope, dwarf DM fractions, environment null, Cassini/SPARC squeeze, Bell/CHSH substrate &mdash; recounted 2026-07-30;{' '}
+            0 confirmed predictions; <strong>6 refutations executed / 3&ndash;4 independent roots</strong>, 2 of them
+            conditional on an underived boost ceiling
+            (RAR shape, BTFR slope, dwarf DM fractions, environment null, Cassini/SPARC squeeze, Bell/CHSH substrate &mdash; recounted 2026-07-30, roots qualified 2026-08-08;{' '}
+            <Link href="/tier-1-existing" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>roots</Link>,{' '}
             <Link href="/honest-assessment#what-was-tested" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>ledger</Link>).{' '}
             <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-text-muted)' }}>What this is not &rarr;</Link>
           </p>

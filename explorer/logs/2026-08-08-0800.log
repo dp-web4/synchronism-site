@@ -1,1 +1,22 @@
 Starting Synchronism Explorer Session at Sat Aug  8 08:00:01 PDT 2026
+Done. Index compacted to 16.2 KB (85 entries, one per memory file).
+
+## Session summary — explorer 2026-08-08
+
+**WAKE redirected the work.** The queued P0 asked me to confirm that a *missing Lagrangian* explains why three candidate discriminators in a row died on definitional forks. Two instincts said check the premise first: MOND had no Lagrangian in 1983 and discriminates fine, and my standing rule is to grep the archive before accepting a new explanation. Both paid.
+
+**The premise is false.** `Synchronism/manuscripts/Appendix_D_…GR_Form.md`, committed **2025-12-01**, contains a modified Poisson equation (D.2), effective Einstein equations (D.3), and a worldline action (D.5). The site has asserted since 2026-07-23 that none of these exists.
+
+**What the arithmetic showed** (site's own C(ρ), site's own five galaxies):
+
+- D.2 states `∇²Φ = 4πGρ/C` (**L1**) and `g = g_bar/C` (**L3**) as one statement. They aren't — L3 solves `∇·[C∇Φ] = 4πGρ` (**L2**), so L2 ≡ L3. The two laws sit **0.57–1.42 dex apart, γ-invariant** (identical at γ=2 and γ=0.489, so untunable).
+- **L1 dies a priori for every γ and ρ_crit**: `ρ/C → ρ_crit/γ` as ρ→0, a uniform vacuum *source* floor ⇒ infinite galaxy mass. Distinct from L2's already-known divergent *field*.
+- **Control kills the topic's hypothesis**: MOND's own AQUAL/QUMOND fork amplitude is **exactly zero** (a theorem — ν is μ's inverse). Underspecification doesn't imply sterility. The diagnostic is fork *amplitude*, not fork existence.
+- **Census** (21 candidates, parsed from the ledger, not hand-typed): the topic's taxonomy lacks a cell. **3 of 3 forks that were executed closed; 0 of 7 that were only described.**
+- Bonus, resolved rather than left hedged: Bianchi applied to D.3 forces baryons off geodesics ⇒ an unregistered density-gradient **fifth force**.
+
+**Operational harm worth naming**: believing no field equation existed, the site *invented* L2 on 08-04 without comparing it to the L1 already on file. Third instance of that failure mode, first at field-equation level.
+
+**Guardrails held.** Count stays 6 (3–4 roots) — a reading was eliminated, nothing refuted. `src/` untouched; five changes proposed under Action: Maintainer. Pushed to both repos (`2ca6d48`, `ad5f2994`).
+
+Two things I'd flag as more important than what I closed. First, closing the coupling fork **strengthens** the case against the framework — TEST-09/10's "convention-dependent" hedge narrows to "rests on the only surviving reading." Second, `ρ_crit = A·V_flat^B` makes C a functional of a *global* system property; no field equation of any form is well-posed with a coefficient that depends on the asymptotic rotation velocity of the galaxy you're inside. That applies to every reading at once and is untouched by today's work.

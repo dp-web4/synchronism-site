@@ -260,11 +260,16 @@ export default function Home() {
               wins; no test currently on the books can deliver that.
             </p>
             <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', margin: '0.5rem 0 0' }}>
-              <strong>One count the scoreboard doesn&apos;t capture:</strong> the &ldquo;4 refutations&rdquo; counts
-              only tests <em>executed</em> against registered criteria. Separately, the framework&apos;s
+              <strong>One count the scoreboard doesn&apos;t capture:</strong> the &ldquo;6 refutations&rdquo; counts
+              only tests <em>executed</em> against registered criteria (this read &ldquo;4&rdquo; until 2026-08-09 —
+              the pre-recount number, stale here while the footer said 6). Separately, the framework&apos;s
               preferred-frame (absolute-time) sector is excluded at face value by <em>existing</em> precision
-              measurements — by 11 to 28 orders of magnitude — unless a protection mechanism nobody has
-              exhibited exists. See{' '}
+              measurements — by 16 to 28 orders of magnitude — unless a protection mechanism nobody has
+              exhibited exists. (Corrected 2026-08-09 from &ldquo;11 to 28&rdquo;: 16&ndash;28 is the range the
+              computation on <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link> actually
+              yields — one-loop c<sub>μν</sub>&nbsp;~&nbsp;10<sup>&minus;2</sup>&ndash;10<sup>&minus;3</sup> against
+              cavity bounds ≲10<sup>&minus;18</sup> and comagnetometer bounds ≲10<sup>&minus;29</sup>&ndash;10<sup>&minus;30</sup>.
+              The &ldquo;11&rdquo; had no derivation behind it.) See{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
             </p>
             <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>

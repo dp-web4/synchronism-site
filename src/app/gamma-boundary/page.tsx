@@ -97,17 +97,52 @@ export default function GammaBoundary() {
           ))}
         </div>
 
-        <h2>Why &#x03B3; &#x2248; 1 Matters</h2>
-        <p>
-          At &#x03B3; &#x2248; 1, the coherence function has maximum curvature. Small changes in
-          density produce maximum change in coherence. This is where:
+        <h2>Why &#x03B3; &#x2248; 1 Matters &mdash; <span style={{ color: '#ef4444' }}>retracted 2026-08-09</span></h2>
+        <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>This section asserted: &ldquo;At γ&nbsp;≈&nbsp;1, the coherence function has maximum
+            curvature. Small changes in density produce maximum change in coherence.&rdquo; That is false</strong>,
+            and it was the stated physical rationale for this page&apos;s entire 1,703-phenomenon result.
+            Write x&nbsp;=&nbsp;ρ/ρ<sub>crit</sub>, C&nbsp;=&nbsp;tanh[γ&nbsp;ln(1+x)]. Then
+          </p>
+          <p style={{ fontFamily: 'monospace', fontSize: '0.85rem', color: 'var(--color-accent-warm)', margin: '0.5rem 0' }}>
+            dC/dx = 4&#x03B3;&middot;t<sup>2&#x03B3;&minus;1</sup>/(t<sup>2&#x03B3;</sup>+1)&sup2;, t = 1+x &nbsp;&#x21D2;&nbsp; dC/dx&#x2223;<sub>x=0</sub> = &#x03B3;
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            &mdash; strictly increasing in γ, with no maximum at γ&nbsp;≈&nbsp;1 or at any finite γ. Reading
+            &ldquo;curvature&rdquo; in log-density instead does not rescue it: max<sub>x</sub>&nbsp;dC/d&nbsp;ln&nbsp;x
+            rises monotonically with γ and <em>saturates</em> at ≈&nbsp;0.446 (verified numerically: 0.250 at
+            γ=0.5, 0.322 at γ=1, 0.375 at γ=2, 0.408 at γ=4, 0.446 as γ→∞). And C is <strong>concave on the
+            whole domain</strong> &mdash; d²C/dx²&nbsp;&lt;&nbsp;0 for every x&nbsp;≥&nbsp;0 &mdash; so there is
+            no inflection point to sit at. <strong>No feature of C(ρ) singles out γ&nbsp;≈&nbsp;1.</strong>
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            The correct derivative fact was already stated on{' '}
+            <Link href="/consciousness-demo" style={{ color: 'var(--color-accent-blue)' }}>Consciousness Demo</Link>
+            {' '}(&ldquo;the slope dC/dρ is maximized at ρ&nbsp;=&nbsp;0 … there is no inflection point in this
+            specific function for ρ&nbsp;≥&nbsp;0&rdquo;) &mdash; one click from the page asserting its
+            negation. Fixing one page and not sweeping for the same error elsewhere is the site&apos;s most
+            frequent failure mode; the identical sentence on{' '}
+            <Link href="/phase-transitions" style={{ color: 'var(--color-accent-blue)' }}>Phase Transitions</Link>
+            {' '}was corrected in the same pass.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>What this costs:</strong> the γ&nbsp;≈&nbsp;1 clustering below is left as a bare empirical
+            regularity with <em>no derivation from the equation behind it</em>. Combined with the template-bias
+            caveat and the null-model result on the{' '}
+            <Link href="/chemistry-correlation-explorer" style={{ color: 'var(--color-accent-blue)' }}>Chemistry Correlation Explorer</Link>
+            {' '}(a plain 2-parameter polynomial in Z matches C(ρ) to |Δr|&nbsp;≤&nbsp;0.07 &mdash; the high
+            correlations track density-monotonicity, known chemistry, not C(ρ)-specific physics), the chemistry
+            sector now has a fitted parameter, an unexplained clustering, and no mechanism.
+            (Visitor Pass 3, 2026-08-09; verified independently before the edit.)
+          </p>
+        </div>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          The claims that were attached to the retracted rationale &mdash; that γ&nbsp;≈&nbsp;1 is where phase
+          transitions happen, catalysis is most effective, new materials emerge, and biology originates &mdash;
+          are <strong>not</strong> derived from the shape of C and are not evidence for it. They are restatements
+          of where the fitted γ landed.
         </p>
-        <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li>Phase transitions happen (quantum &#x2194; classical)</li>
-          <li>Catalysis is most effective (enzymes operate at this boundary)</li>
-          <li>New materials emerge (superconductors, superfluids)</li>
-          <li>Biology originates (molecular recognition requires quantum sensitivity)</li>
-        </ul>
 
         <h2>Caveat: Era 2 Chemistry</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>

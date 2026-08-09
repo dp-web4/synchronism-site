@@ -53,10 +53,24 @@ export default function PhaseTransitions() {
         </div>
 
         <h2>The &#x03B3; &#x2248; 1 Boundary</h2>
+        <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Correction (2026-08-09):</strong> this section stated that at γ&nbsp;≈&nbsp;1
+            (N<sub>corr</sub>&nbsp;≈&nbsp;4) &ldquo;the coherence function has maximum curvature.&rdquo;
+            <strong> It does not.</strong> With x&nbsp;=&nbsp;ρ/ρ<sub>crit</sub>,
+            dC/dx&#x2223;<sub>x=0</sub>&nbsp;=&nbsp;γ &mdash; strictly increasing in γ, no interior maximum
+            anywhere; in log-density the peak sensitivity also rises monotonically with γ and merely saturates
+            (≈0.32 at γ=1, ≈0.45 as γ→∞); and C is concave for every x&nbsp;≥&nbsp;0, so it has no inflection
+            point. <strong>Nothing in the shape of C distinguishes γ&nbsp;≈&nbsp;1.</strong> The γ&nbsp;≈&nbsp;1
+            clustering is an empirical fit result with no derivation behind it. Full retraction and the
+            derivative on{' '}
+            <Link href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>the γ boundary page</Link>.
+            (Visitor Pass 3 found the /gamma-boundary instance; this second one was found by sweeping.)
+          </p>
+        </div>
         <p>
-          This is where Synchronism makes its strongest chemistry prediction. At &#x03B3; &#x2248; 1
-          (N<sub>corr</sub> &#x2248; 4), the coherence function has maximum curvature &mdash; small
-          changes in density produce large changes in coherence. This is why:
+          What the chemistry sector actually has is a clustering of fitted γ near 1, and the list below is a
+          description of <em>where that clustering falls</em> &mdash; not a consequence of the equation:
         </p>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
           <li>Phase transitions cluster here (melting, boiling, sublimation)</li>

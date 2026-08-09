@@ -418,7 +418,8 @@ export default function ResearchPhilosophy() {
               weaker verdict still (μ₀ within 1σ of zero). Post-hoc by 8+ months either way (DESI DR1 April 2024;
               Session 107 committed December 2025). Honest verdict: the test as registered lacked the power to
               discriminate this framework from GR; the framework&apos;s cosmology sector remains dead on other
-              grounds (no field equation, locality no-go). See{' '}
+              grounds (the field equation is postulated rather than derived and its archive version is eliminated
+              a priori — corrected 2026-08-09 from &ldquo;no field equation&rdquo;; and the locality no-go). See{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
               for the full correction. <strong>No replacement substituted.</strong>
             </p>

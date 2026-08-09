@@ -115,13 +115,20 @@ export default function MondUnification() {
         <h2>The External Field Effect &mdash; Correction</h2>
         <div className="card" style={{ borderLeft: '3px solid #f87171', marginBottom: '1rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            <strong>Correction (2026-08-02):</strong> the paragraphs below previously attributed the External
-            Field Effect to &ldquo;the nonlinear Poisson equation that implements the coherence function.&rdquo;
-            That object does not exist in this framework. <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest
-            Assessment</Link> states, correctly and repeatedly, that <strong>there is no field equation anywhere
-            in this framework&apos;s galaxy sector &mdash; no action, no Lagrangian, no covariant formulation, no
-            dynamics.</strong> A page cannot derive an EFE from an equation the site elsewhere says doesn&apos;t
-            exist, and the 0.3&ndash;0.4&times; figure below was never actually derived from one.
+            <strong>Correction (2026-08-02), itself corrected 2026-08-09:</strong> the paragraphs below previously
+            attributed the External Field Effect to &ldquo;the nonlinear Poisson equation that implements the
+            coherence function,&rdquo; and the 0.3&ndash;0.4&times; figure was never actually derived from one.
+            That much stands. <strong>But the 2026-08-02 correction justified itself with a claim that was
+            false</strong> &mdash; it said the object &ldquo;does not exist in this framework&rdquo; and cited{' '}
+            <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>
+            {' '}as stating &ldquo;correctly and repeatedly&rdquo; that there is no field equation anywhere in the
+            galaxy sector. The archive has had one since 2025-12-01: Appendix D §D.2 states
+            ∇²Φ&nbsp;=&nbsp;4πGρ/C, §D.3 effective Einstein equations, §D.5 a worldline action. The reason the
+            0.3&ndash;0.4&times; figure is not derivable is <em>not</em> that no field equation exists; it is that
+            the one the archive states (L1) is eliminated a priori by a vacuum source floor, and the one the
+            site&apos;s tests actually use (∇·[C∇Φ]&nbsp;=&nbsp;4πGρ, equivalently
+            g&nbsp;=&nbsp;g<sub>bar</sub>/C) gives EFE&nbsp;=&nbsp;0, not 0.3&ndash;0.4&times;. The conclusion
+            below is unchanged; its stated reason is.
           </p>
         </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>

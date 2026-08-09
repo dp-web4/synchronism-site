@@ -203,8 +203,13 @@ export default function GalaxyPlotter() {
           all three models (Synchronism, MOND, and NFW dark-matter halo) fit galaxy rotation curves about equally well.
           What matters is whether any makes a <em>different, testable prediction</em>, and the ensemble test
           (SPARC RAR, ΔBIC=+184) shows Synchronism collapses to MOND when γ is freed — curve-equivalence
-          at fitted γ only, not theory-equivalence: the framework has no action, no Lagrangian, and no
-          dynamics, so it inherits none of MOND&apos;s predictions beyond the fitted curve. See{' '}
+          at fitted γ only, not theory-equivalence. (Corrected 2026-08-09: this read &ldquo;the framework has no
+          action, no Lagrangian, and no dynamics.&rdquo; It has all three, postulated in Appendix D of the
+          archive since 2025-12-01 — but the version stated there is eliminated a priori, and writing down the
+          surviving one changes none of the refutations. See{' '}
+          <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>.)
+          The curve on this plotter is built from a quadrature stand-in, not from any field equation — see the
+          formula box below. See{' '}
           <a href="/honest-assessment#test-04a" style={{ color: 'var(--color-accent-blue)' }}>what the tests actually say →</a>
         </p>
         <div style={{

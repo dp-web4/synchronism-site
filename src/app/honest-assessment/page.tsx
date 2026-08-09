@@ -152,11 +152,25 @@ export default function HonestAssessment() {
           is the contribution; the physics just provided the test case.
         </p>
         <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-          <strong>The single most important sentence on this page, promoted from the landscape section
-          (2026-07-23, expert-review request): there is no field equation anywhere in this framework&apos;s
-          galaxy sector</strong> — no action, no Lagrangian, no covariant formulation, no dynamics. The
-          framework is a static map plus an interpretation. Everything below should be read with that in
-          mind. (<a href="#landscape" style={{ color: 'var(--color-accent-blue)' }}>Full statement &darr;</a>)
+          <strong>CORRECTED 2026-08-09 — the sentence that stood here from 2026-07-23 was false.</strong> It
+          read: &ldquo;there is no field equation anywhere in this framework&apos;s galaxy sector — no action,
+          no Lagrangian, no covariant formulation, no dynamics.&rdquo; The archive has had one since
+          <strong> 2025-12-01</strong>: <code>manuscripts/Appendix_D_Synchronism_in_General_Relativistic_Form.md</code>
+          §D.2 states a modified Poisson equation, §D.3 effective Einstein equations, §D.5 a worldline action.
+          The site asserted their non-existence for seven months without grepping for them.
+          <strong> The accurate statement is narrower and still damaging: the field equation is postulated,
+          not derived — and the one the archive actually states is eliminated.</strong> Appendix D writes
+          ∇²Φ&nbsp;=&nbsp;4πGρ/C (call it <strong>L1</strong>) and g&nbsp;=&nbsp;g<sub>bar</sub>/C
+          (<strong>L3</strong>) as if they were one law. They are not: L3 is the spherical solution of
+          ∇·[C∇Φ]&nbsp;=&nbsp;4πGρ (<strong>L2</strong>), so L2&nbsp;≡&nbsp;L3, while L1 is a different theory —
+          0.57&ndash;1.42 dex away in g on the site&apos;s own five galaxies, and <em>γ-invariant</em>, so no
+          choice of the framework&apos;s one free parameter closes the gap. L1 dies with no data at all: as
+          ρ→0, C→γρ/ρ<sub>crit</sub>, so the source ρ/C→ρ<sub>crit</sub>/γ, a uniform density floor filling
+          all space ⇒ every isolated galaxy gets 10¹⁷&ndash;10¹⁸&nbsp;M<sub>☉</sub> inside 100 kpc and a curve
+          rising forever, for every γ and every ρ<sub>crit</sub>. Every test on this page uses L2&nbsp;≡&nbsp;L3.
+          <strong> None of the refutations below change</strong> — they are driven by the shape of C and the
+          B&nbsp;≤&nbsp;3.17 ceiling, not by the presence or absence of a Lagrangian.
+          (<a href="#landscape" style={{ color: 'var(--color-accent-blue)' }}>Full statement &darr;</a>)
         </p>
         <p style={{ margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, background: 'rgba(59,130,246,0.07)', borderLeft: '3px solid rgba(59,130,246,0.5)', borderRadius: '4px', padding: '0.75rem 1rem' }}>
           <strong>What failed, in one paragraph — no jargon (added 2026-07-24 for readers on the beginner
@@ -170,7 +184,11 @@ export default function HonestAssessment() {
           when measured, not to exist at all. Where the equation <em>does</em> fit galaxies, it fits only by
           imitating MOND — a 40-year-old rival theory that tweaks gravity instead of adding dark matter — and
           never fits better than it. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
-          own scoreboard — zero confirmed predictions, four executed refutations. <strong>Why does the site
+          own scoreboard — zero confirmed predictions, <strong>six</strong> executed refutations
+          resting on three to four independent roots. (This sentence read &ldquo;four executed
+          refutations&rdquo; until 2026-08-09 — the pre-recount number, left stale on the page while the
+          header of the same page said six. One count, one place: six executed, 3&ndash;4 roots, classified
+          by kind in the table below.) <strong>Why does the site
           still exist?</strong> Because a few of the framework&apos;s core ideas have never been testable with
           existing instruments (untested is not the same as failed), and because this record — a theory testing
           itself in public and publishing every failure — is itself the point. The paragraph below says the
@@ -418,6 +436,58 @@ export default function HonestAssessment() {
           every adjudication used data that existed before the criterion. The program&apos;s
           prospective-registration count remains 0.
         </p>
+
+        <div className="card" style={{ borderLeft: '3px solid rgba(59,130,246,0.5)', marginBottom: '1rem' }} id="ledger-classification">
+          <h3 style={{ marginTop: 0, fontSize: '1rem' }}>What the six actually refute &mdash; classification added 2026-08-09</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem' }}>
+            Every visitor persona in the 2026-08-09 pass independently hit the same defect: the count is quoted
+            everywhere and auditable nowhere. Two separate problems. <strong>(a) The inclusion rule was never
+            written down.</strong> It is: a row counts if it was <em>executed against a registered criterion on
+            data the framework did not fit</em>, and carries one of the operational labels
+            <em> Kill Criterion Triggered</em>, <em>Failed</em>, <em>Ceiling Exceeded</em>, or <em>Empty
+            Intersection</em>. Three of those four labels are absent from the{' '}
+            <a href="#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>badge legend</a>
+            {' '}readers are pointed to &mdash; so the number could not be reconstructed from the site&apos;s own
+            vocabulary. That vocabulary gap is real and is not fixed by this table (it is queued as its own
+            sweep). <strong>(b) The six are not six of a kind.</strong>
+          </p>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem' }}>
+              <thead>
+                <tr style={{ textAlign: 'left', color: 'var(--color-text-muted)' }}>
+                  <th style={{ padding: '0.4rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>Entry</th>
+                  <th style={{ padding: '0.4rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>What it refutes</th>
+                  <th style={{ padding: '0.4rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>Class</th>
+                </tr>
+              </thead>
+              <tbody style={{ color: 'var(--color-text-secondary)' }}>
+                <tr><td style={{ padding: '0.4rem' }}>TEST-09 BTFR slope 3.35 vs 3.75&plusmn;0.10 (3.3&sigma;)</td><td style={{ padding: '0.4rem' }}>The asserted ceiling B<sub>max</sub></td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>TEST-10 dwarf f<sub>DM</sub> ceiling</td><td style={{ padding: '0.4rem' }}>The same asserted B<sub>max</sub> &mdash; corollary, not an independent root</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>RAR shape, &#x0394;BIC = +184 at &#x03B3;=2</td><td style={{ padding: '0.4rem' }}>The asserted &#x03B3;=2 pin. Free-&#x03B3; &rarr; 0.489 recovers MOND, so this refutes a pin, not a mechanism</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>Environment scatter, r&sup2; = 0.0001</td><td style={{ padding: '0.4rem' }}>A genuinely framework-specific prediction. The cleanest kill on the list</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>TEST-11 Cassini/SPARC, +17.95&sigma;</td><td style={{ padding: '0.4rem' }}>The RAR-preferred interpolating-function family &mdash; <strong>which MOND also uses</strong>. Published as Desmond, Hees &amp; Famaey 2024 at 8.7&sigma;</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Inherited from MOND</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>Bell/CHSH substrate (Bet B1), S &le; 2.00</td><td style={{ padding: '0.4rem' }}>Bell&apos;s theorem. A proof, not an experiment &mdash; this page calls it a &ldquo;pedagogical corollary&rdquo; elsewhere</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Theorem</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem', marginTop: '0.75rem' }}>
+            <strong>Read the column, not the total.</strong> Four entries are about this framework and they test
+            <em> two</em> asserted constants (B<sub>max</sub>, the &#x03B3;=2 pin) plus one real prediction &mdash;
+            which is what the existing &ldquo;3&ndash;4 independent roots&rdquo; figure already says, and that is
+            the number to quote. One entry is a published MOND constraint the framework inherits by being in the
+            same IF family; it does not discriminate between the two. One is a theorem, and a theorem is not
+            &ldquo;external data.&rdquo;
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem' }}>
+            <strong>Why the total is still 6 and not 4.</strong> The 2026-07-30 recount raised it from 4 precisely
+            because a scope word (&ldquo;astronomical&rdquo;) was filtering out the site&apos;s two sharpest
+            failures. Dropping them again on a different technicality would re-commit that error in the opposite
+            direction. Both are executed, both are badged Failed, both stay counted &mdash; and both are now
+            labelled for what they are, which is what the count was missing. <strong>The honest one-line summary:
+            everything that distinguishes this framework from MOND is a single asserted constant, and two of the
+            six refutations test it.</strong>
+          </p>
+        </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -735,8 +805,12 @@ export default function HonestAssessment() {
               <strong>Honest reading: the test as registered lacks the statistical power to discriminate this
               framework from GR</strong> — a more useful negative result than a manufactured kill, but
               materially weaker than &ldquo;Kill Criterion Triggered&rdquo; implied. The framework&apos;s
-              cosmology sector is not rescued by this correction: it still has no field equation to source a
-              growth suppression from in the first place, and the σ₈ discrepancy on its own predicted value
+              cosmology sector is not rescued by this correction: the growth suppression was never <em>derived</em>
+              &mdash; it was calibrated. (Corrected 2026-08-09: this read &ldquo;it still has no field equation to
+              source a growth suppression from in the first place.&rdquo; Appendix D §D.3 does state effective
+              Einstein equations G<sub>μν</sub>&nbsp;=&nbsp;8πG&nbsp;T<sub>μν</sub>/C(ρ), which are cosmology-capable;
+              nobody has ever solved them for the growth history and compared. The gap is an unrun calculation,
+              not a missing object &mdash; which makes it a task rather than an excuse.) The σ₈ discrepancy on its own predicted value
               (0.76 vs. 0.841) remains a real, if GR-conditioned, 2.4σ miss. (Found and verified: 2026-07-14
               visitor Pass 3 and Pass 4, cross-checked against this page&apos;s own cited numbers before
               editing.)
@@ -1215,20 +1289,25 @@ export default function HonestAssessment() {
           <strong>Current status:</strong> Synchronism&apos;s compander is <em>curve</em>-equivalent to MOND in the galaxy regime (free-γ = 0.49 ≡ MOND at SPARC precision) — not <em>theory</em>-equivalent (see caveat below). Relationship to Verlinde&apos;s entropic gravity is uncharted — whether C(ρ) is a sub-case, extension, or reparametrization of Verlinde in that regime has not been worked out. See <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> for the SPARC result.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-          <strong>There is no field equation anywhere in this framework&apos;s galaxy sector.</strong> The
-          rotation curve is built by adding a boost in quadrature to a velocity —
+          <strong>CORRECTED 2026-08-09: this paragraph asserted &ldquo;there is no field equation anywhere in
+          this framework&apos;s galaxy sector.&rdquo; That was false</strong> — Appendix D of the archive stated
+          one on 2025-12-01, seven months before the assertion was written (see the correction at the top of
+          this page for L1/L2/L3 and the a-priori elimination of L1). Two further facts make the old wording
+          untenable rather than merely imprecise. <strong>(1)</strong> The completion was never hard: substituting
+          C for μ in AQUAL (Bekenstein &amp; Milgrom 1984) or QUMOND (Milgrom 2010) is mechanical, and AQUAL and
+          QUMOND agree to &lt;0.1 dex on realistic disks — for rotation curves the choice of completion is nearly
+          a formality. <strong>(2)</strong> The site had already crossed the bridge it said did not exist:
+          TEST-11 computes a solar-system quadrupole moment <em>in QUMOND</em>, which is not possible without
+          dynamics. What survives, and is the honest claim: the framework&apos;s field equation is
+          <em> postulated, not derived</em>; the archive&apos;s own version (L1) is eliminated a priori; and
+          writing the surviving one down <strong>changes none of the refutations</strong>, because all of them
+          are driven by the shape of C and the B&nbsp;≤&nbsp;3.17 ceiling. That is a narrower claim than
+          &ldquo;no dynamics exist&rdquo; and a stronger one — it says the missing Lagrangian was never what was
+          wrong. The plotter&apos;s quadrature form
           v(r)&nbsp;=&nbsp;&radic;(v<sub>b</sub>&sup2;&nbsp;+&nbsp;[V<sub>flat</sub>&middot;C(&#x03C1;(r))]&sup2;)
-          on the interactive plotter — not by sourcing gravity from a modified Poisson equation or a
-          Lagrangian. MOND itself started the same way (Milgrom 1983&apos;s μ-function had &ldquo;no
-          dynamics, no governing equation&rdquo; either), but MOND was completed a year later by AQUAL
-          (Bekenstein &amp; Milgrom 1984) and again by QUMOND (Milgrom 2010) — both well-posed
-          boundary-value problems with conserved momentum, a Lagrangian, and cluster/lensing predictions.
-          Synchronism has no analogous completion: no momentum conservation, no lensing prediction, no
-          way to source growth suppression in cosmology (see TEST-04a above) except by post-hoc
-          calibration. Calling the framework &ldquo;MOND-equivalent&rdquo; therefore flatters it — it is
-          equivalent to MOND&apos;s <em>curve</em>, not to MOND&apos;s <em>theory</em>, and unlike Milgrom&apos;s
-          1983 starting point it has no field-equation program in progress to complete it. (2026-07-14,
-          visitor Pass 3 + Pass 4, independently.)
+          remains a plotting stand-in with no field equation behind it, and is labelled as such there.
+          (Original note 2026-07-14, visitor Pass 3 + Pass 4; corrected 2026-08-09 after explorer 2026-08-08
+          found Appendix D and visitor Pass 3 + Pass 4 independently flagged the AQUAL/TEST-11 contradiction.)
         </p>
       </section>
 

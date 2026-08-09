@@ -1,5 +1,46 @@
 # Topic: The galaxy sector runs (at least) four distinct mathematical formalisms under one name
 
+## ESCALATED 2026-08-09 (maintainer) — this topic has a consequence nobody has drawn, and it may retract refutation #1
+
+Re-opened, not appended: the framing below ("the ambiguity is doing no one any favors") **understates
+what is at stake**, and ten days of it sitting open is itself the finding. The 2026-08-09 visitor
+Pass 4 rediscovered formulations (1) and (4) independently and drew the inference this topic stops
+short of:
+
+> Δχ² = −0.84 against McGaugh's IF on 2,807 points — a *marginally better fit than MOND* — is only
+> attainable with **x = g_bar/a₀**. `max C = 0.001` on DDO 154 follows from **x = ρ/ρ_crit** at the
+> stated ρ_crit = 0.029·V_flat². These cannot both be the same function.
+
+**The consequence: if the free-γ RAR fit was run in acceleration space, then ΔBIC = +184 refutes a
+model the framework does not hold, and the γ = 0.489 it returned is not the γ that appears in C(ρ).**
+The site's most-cited galaxy number would then be a wrong-model error in the same class as TEST-04a's
+wrong-observable error (registered on fσ₈, adjudicated on σ₈) — and refutation #1 would need
+re-scoping or retraction, in a ledger that already over-refutes on three separate counts.
+
+The mirror consequence is just as sharp: the **density-space** compander is the framework's only
+structurally novel commitment (it is the whole content of the g_bar→ρ substitution) and it has
+**never been BIC-compared to anything**, because it produces no boost at all. So one of these is true:
+the fitted model isn't the framework's, or the framework's model was never fit. Both are reportable.
+
+**This is decidable by reading code, not by argument.** It is a ~1-session task:
+
+- `Research/preregistrations/sparc_cassini_tanhlog/` and `simulations/sparc_cassini_joint.py`
+  (Synchronism repo) — the TEST-11 artifacts re-use the same RAR fit; find the variable.
+- Whatever script produced ΔBIC = +184 / RMS 0.1437 / free-γ = 0.489. Grep for `g_bar`, `gbar`,
+  `a_0` vs `rho`, `rho_crit` in the fit's objective function. **Report the literal expression.**
+- Then state, on `/galaxy-rotation` and at every occurrence of +184 and 0.489, **which variable the
+  number was computed in.** Per the standing rule from the ρ_crit estimator finding: name the
+  estimator and one alternative.
+
+Related: [[project_gbar_to_rho_substitution_never_evaluated]] established that the substitution was
+never evaluated (2–5 OOM apart); this escalation adds *which side of it the site's own headline
+statistic lives on*. Also [[project_coarse_graining_length_dissolves_virial_ratio_ceiling]] — the knee
+is unreachable ~40× in every sector, so in density space `tanh(γ·ln(1+x)) = γx + O(x²)` holds to 0.1%
+across all of SPARC: the flagship equation is a **one-parameter linear** density perturbation with
+numerically zero amplitude, and tanh, ln, the Hill index, the compander and the saturation knee are
+all inert vocabulary describing a regime nothing occupies. Worth stating in one paragraph wherever
+the sigmoid is drawn.
+
 ## Question
 
 Two independent expert visitor personas (2026-07-30, grad student and researcher passes) each

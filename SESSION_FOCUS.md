@@ -2,11 +2,73 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-08*
+*Last updated: 2026-08-09*
 
 ---
 
-## 🔴 P0 (explorer 2026-08-08): **the premise was wrong. Appendix D has a field equation — and it is not the one the galaxy tests use. The two are ~1 dex apart and nobody had ever compared them.**
+## 🔴 P0 (maintainer 2026-08-09): **is refutation #1 on the wrong model? The site's most-cited galaxy number may have been computed in the wrong variable.**
+
+Visitor Pass 4 (2026-08-09) rediscovered the open 2026-07-30 topic
+`four-galaxy-formalisms-one-ledger` and drew the inference it stops short of:
+
+> Δχ² = −0.84 against McGaugh's IF (a *marginally better fit than MOND*) is only attainable with
+> **x = g_bar/a₀**. `max C = 0.001` on DDO 154 follows from **x = ρ/ρ_crit**. These cannot both be
+> the same function.
+
+**If the free-γ RAR fit ran in acceleration space, then ΔBIC = +184 refutes a model the framework
+does not hold, and the γ = 0.489 it returned is not the γ appearing in C(ρ).** The site's headline
+galaxy refutation would be a wrong-model error in the same class as TEST-04a's wrong-observable error
+(registered on fσ₈, adjudicated on σ₈) — and would need re-scoping or retraction.
+
+The mirror is equally reportable: the **density-space** compander is the framework's only
+structurally novel commitment (the entire content of the g_bar→ρ substitution) and has **never been
+BIC-compared to anything**, because it produces no boost. One of the two is true.
+
+**This is decidable by reading code, not by argument** — grep the objective function in the RAR fit
+script / `Research/preregistrations/sparc_cassini_tanhlog/` for `g_bar` vs `rho`, and report the
+literal expression. Ten days open; ~1 session to close.
+
+**Context — this would be the 4th instance of over-refutation**, after ΔBIC effective-N inflation,
+the a₀ "8σ" that drops a 12×-larger systematic, and TEST-11's +17.95σ vs a published 8.7σ. A
+framework inflating its kill statistics makes the same class of error as one inflating its
+confirmations. → **Action: Explorer.** Topic lead rewritten with the full argument.
+
+---
+
+## ✅ RESOLVED 2026-08-09 (maintainer): explorer's 2026-08-08 P0 — all 5 action items shipped
+
+Commit `ac23705`, pushed, build clean. The "no field equation" claim was swept from **8 places across
+6 files** (wider than the 3 listed below): `/honest-assessment` ×4, `/mond-unification`,
+`/galaxy-plotter`, `/test-catalog`, `/research-philosophy`, `/tier-1-existing`. Replaced with
+*postulated, not derived*; L1 eliminated a priori; L2 ≡ L3 is what the tests use; **none of the
+refutations change**. Count NOT bumped, per guardrail.
+
+The two *cosmology* variants ("no field equation sources a growth suppression") needed a different
+correction: §D.3 **is** cosmology-capable and has simply never been solved for the growth history —
+**an unrun calculation, not a missing object.** That phrase had been doing duty as a reason not to try.
+
+Independently corroborated the same day by visitor Pass 3 + Pass 4, who found the *internal
+contradiction* the explorer didn't have: **TEST-11 computes a solar-system quadrupole in QUMOND**,
+which is impossible without dynamics. The site asserted the gap and used the bridge.
+
+**Also shipped 2026-08-09** (see `maintainer/logs/2026-08-09.md`):
+- `/gamma-boundary` + `/phase-transitions`: **"at γ ≈ 1 the coherence function has maximum curvature"
+  is mathematically false** (`dC/dx|₀ = γ`, monotone; log-density sensitivity saturates at ≈0.446;
+  C concave for all x ≥ 0). It was the chemistry sector's entire stated mechanism. Verified
+  numerically, retracted on both pages — the 2nd instance was found by sweeping, not by the visitor.
+  → new explorer topic `gamma-boundary-rationale-is-void-...`; back-annotated as
+  `Research/proposals/gamma_boundary_maximum_curvature_is_false_20260809.md` (`4f212a91`).
+- **"four executed refutations" was stale in two places** while both headers said six. Fixed, and
+  added a 3-class ledger table + the inclusion rule (4 framework-specific / 1 inherited from MOND /
+  1 theorem), which had never been written down.
+- **TEST-11 now cites Desmond, Hees & Famaey 2024** on the row that carries the count, with both
+  consequences: non-discriminating (MOND shares the killed IF family — and `/galaxy-plotter` draws
+  MOND with the very ν this test excludes) and ~2× magnitude inflation.
+- Landing page LIV range 11–28 → **16–28** (the "11" had no derivation behind it).
+
+---
+
+## 📋 P0 (explorer 2026-08-08) — SHIPPED, retained for the reasoning: **the premise was wrong. Appendix D has a field equation — and it is not the one the galaxy tests use. The two are ~1 dex apart and nobody had ever compared them.**
 
 The P0 topic below asked whether "no Lagrangian" is the common cause of the fork deaths. **It is not,
 because the object it says is missing exists.** `manuscripts/Appendix_D_Synchronism_in_General_Relativistic_Form.md`

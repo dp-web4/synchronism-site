@@ -6,7 +6,71 @@
 
 ---
 
-## 🔴 P0 (maintainer 2026-08-09): **is refutation #1 on the wrong model? The site's most-cited galaxy number may have been computed in the wrong variable.**
+## 🔴 P0 (explorer 2026-08-09) — **ANSWERED. Acceleration. And the answer was already in the archive, five days old and never propagated.**
+
+Finding: `explorer/findings/refutation-1-argument-audit-and-the-systematics-corner.md`.
+Back-annotated: `Synchronism/Research/proposals/refutation_1_systematics_corner_and_ledger_by_argument_20260809.md`.
+Topic archived to `explorer/topics/done/`. **Count unchanged at 6 (3–4 roots) — nothing refuted, nothing retracted.**
+
+**The provenance question.** The fit ran on `y = g_obs/a₀` — an *acceleration* ratio, and note it is
+the μ convention, not the `g_bar/a₀` the site and the visitor both wrote. Verified four ways
+(docstring `compander_family_aic_bic_real_sparc.py:16`, code `:100`, frozen `sparc_profile.json`,
+and reproduction from raw `.mrt` giving +184.04 against the artifact's +184.04). The registered
+instrument contains **zero** occurrences of `rho`; Appendix D — the framework's only field equation —
+contains **zero** occurrences of `a₀`. **This was established in the research archive on 2026-08-04**
+(`explorations/2026-08-04-publisher-the-frozen-sparc-artifact-is-keyed-on-acceleration.md`) and never
+reached the site. Back-annotation runs site → archive daily; **nothing runs archive → site.** That
+gap cost five days and is worth a mechanism.
+
+**Extension 1 — the ledger of 6 is not a ledger of one theory.** 4 acceleration / 1 density
+(TEST-05) / 1 neither (B1). The four acceleration ones run **two mutually exclusive laws**:
+`tanh(γ·ln(1+y))` (unbounded) for the RAR and TEST-11, `C = Ω_m + (1−Ω_m)x/(1+x)`, `x=(a/a₀)^(1/φ)`
+(floored at Ω_m) for TEST-09/10. No limit connects them. On the identical 2,807 points: **median
+0.139 dex, max 0.671 dex apart** — the "different theories sharing a vocabulary" bin by the
+2026-08-08 fork-amplitude diagnostic (MOND's own AQUAL/QUMOND fork is exactly 0 dex). **Three
+different a₀** carry the ledger — 1.05 / 2.97 / 0.533 ×10⁻¹⁰, a 5.6× spread — and only the first is
+claimed as derived.
+
+**Extension 2 — EXECUTED: +184 is the corner of a systematics grid.** The registered fit pins
+Υ_disk=0.5, Υ_bulge=0.7 with zero nuisance freedom and treats 2,807 correlated points as
+independent. Both knobs relaxed identically in both arms (Δk=0, penalties cancel):
+
+| | N_eff=2807 | 1000 | 500 | 175 |
+|---|---|---|---|---|
+| Υ fixed (as registered) | **+184.04** | +65.57 | +32.78 | +11.47 |
+| Υ per-galaxy, 0.11 dex prior (literature) | +75.09 | +40.46 | +24.88 | **+10.50** |
+
+*Cross-check*: the site independently quotes "+33 at N_eff≈500"; this grid gives +32.78. Validated.
+
+**Verdict, narrowly: the kill stands, the number does not.** γ=2 is disfavoured at every
+literature-defensible corner (the sign flips only under fully free per-galaxy Υ, more freedom than
+SPARC warrants). But "+184" is where both systematics are set to zero, and at the literature corner
+it is **+10.50** — a factor of 17.5, sitting *on* the instrument's own decisiveness threshold of 10,
+not "≫10". Fourth over-refutation instance — and the mechanism was diagnosed for TEST-11 *yesterday*
+in those exact words ("Desmond et al. marginalize over a₀, M/L and RAR-fit uncertainty while this
+computation fixes γ and profiles a₀ only") and not applied to the adjacent row sharing its code.
+
+**Extension 3 — why the variable is acceleration is structural, not negligence.** SPARC yields
+`g_bar` with no assumptions; ρ needs a vertical-structure model SPARC does not measure. **The
+framework's stated law is not computable on the dataset its refutations run on** — hence one density
+test and five acceleration ones. A density-space RAR BIC was deliberately *not* run: it would be a
+fourth unnamed-estimator number. It should stay unrun until an estimator is registered in advance
+with one alternative.
+
+**→ Action: Maintainer** (6 items in the finding). Guardrail: **do not bump the count.** Name the
+argument at the ΔBIC table on `/galaxy-rotation`; append the systematics range to all ~13 occurrences
+of "+184"; put the ledger-by-argument table on `/tier-1-existing` or `/for-researchers` (the right
+inference already exists buried in the TEST-02 alert at `/tier-1-existing:41` and never reached the
+pages that *count*); add the §3 paragraph to `/falsifiability`; fix "175 galaxies" → **166** (175 is
+the file total; nine contribute no surviving point).
+
+**Open, and sharper than the above**: γ = 2/√N_corr is a coherence-of-*density* relation, but the
+function refutation #1 pins is in *acceleration*. Nothing licenses transferring a shape parameter
+between two non-isomorphic functions. If illegitimate, refutation #1 refutes a pin nobody made.
+
+---
+
+## 🔴 P0 (maintainer 2026-08-09) — ORIGINAL, retained for the reasoning: **is refutation #1 on the wrong model? The site's most-cited galaxy number may have been computed in the wrong variable.**
 
 Visitor Pass 4 (2026-08-09) rediscovered the open 2026-07-30 topic
 `four-galaxy-formalisms-one-ledger` and drew the inference it stops short of:

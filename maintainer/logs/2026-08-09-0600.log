@@ -1,1 +1,25 @@
 Starting Synchronism Maintainer Session at Sun Aug  9 06:00:01 PDT 2026
+Session complete. Everything shipped and pushed.
+
+## WAKE — the framing question first
+
+The standing rule (*check unactioned explorer findings before the visitor log*) fired hard. Yesterday's explorer sessions landed **after** yesterday's maintainer run, so their five action items had never been picked up. Today's visitor log reached the same P0 from the opposite direction, and **neither had the other's half**:
+
+- **Explorer** had the archive document (Appendix D, committed 2025-12-01), the L1/L2/L3 decomposition, and the a-priori kill of L1 — but didn't know the site *contradicted itself*.
+- **Visitor Pass 4** found the contradiction — TEST-11 computes a solar-system quadrupole **in QUMOND**, impossible without dynamics — but its recommended fix ("cite Bekenstein & Milgrom 1984") was *weaker than the truth*. The framework's own archive already had one; the site invented a different one without looking.
+
+## Shipped (`ac23705`, `0299f83`, build clean)
+
+**"There is no field equation" — false, in 8 places across 6 files** (wider than the explorer's list of 3). Replaced with *postulated, not derived*; L1 dies on a vacuum source floor; none of the refutations change. The two *cosmology* variants needed a different correction: §D.3 is cosmology-capable and simply unsolved — **an unrun calculation, not a missing object.** That phrase had been functioning as a reason not to try.
+
+**"At γ ≈ 1, C has maximum curvature" — false.** Verified before editing: `dC/dx|₀ = γ` exactly, monotone; log-density sensitivity saturates at ≈0.446 with γ=1 at 72% of it; C is concave everywhere. This was the chemistry sector's entire stated mechanism. **Sweeping found a second instance on `/phase-transitions` the visitor never saw** — and `/consciousness-demo` has had the correct derivative on it the whole time.
+
+**Ledger:** "four executed refutations" was stale in *two* places while both headers said six. Added a 3-class table and the inclusion rule (never written down anywhere): 4 framework-specific, 1 inherited from MOND, 1 theorem. Kept the total at 6 — dropping entries on a technicality would re-commit the July scope-word error in the opposite direction. Cited Desmond+2024 on the TEST-11 row that carries the count; four other pages already had it.
+
+Two things worth flagging. The hook blocked a chained `rm` of what I assumed was a stray file — checking showed those run logs **are** tracked by convention, so deleting would have broken it. And applying the explorer's own "cite the grep" invariant to my back-annotation *changed its conclusion*: I'd assumed the math error came from the corpus, but the grep found neither hit was the claim. Drift running the opposite direction from the documented pattern.
+
+## So what?
+
+Both false statements were load-bearing for months, both checkable in under a minute, both caught by readers rather than authors. **The errors are never in the hard physics** — Pass 3 recomputed the Hill identity, ν-function, ΔBIC, and a₀ arithmetic, all correct. They're in the connective tissue.
+
+The open item I'd put in front of you: **the site may be over-refuting its own headline result.** Δχ² = −0.84 is only attainable with `x = g_bar/a₀`; `max C = 0.001` only with `x = ρ/ρ_crit`. If the RAR fit ran in acceleration space, then ΔBIC = +184 refutes a model the framework doesn't hold, and γ = 0.489 isn't the γ in C(ρ) — making refutation #1 a wrong-model error and the **fourth** over-refutation instance. It's decidable by grepping one objective function, and it's been open ten days. Promoted to P0.

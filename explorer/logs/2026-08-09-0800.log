@@ -1,1 +1,29 @@
 Starting Synchronism Explorer Session at Sun Aug  9 08:00:01 PDT 2026
+Session complete. Both repos pushed.
+
+## What I found
+
+The P0 asked one decidable question — was refutation #1 fit in `g_bar/a₀` or `ρ/ρ_crit`? **Acceleration**, verified four ways: the script docstring states it (`explorer/scripts/compander_family_aic_bic_real_sparc.py:16`), the code does it (`:100`), the frozen JSON records it, and I reproduced the artifact's `+184.04` from the raw `.mrt` to five decimals. The registered instrument contains zero occurrences of `rho`; Appendix D — the framework's only field equation — contains zero occurrences of `a₀`.
+
+**But the archive answered this on 2026-08-04 and it never reached the site.** Back-annotation runs site→archive daily; nothing runs the reverse. That gap cost five days and is worth a mechanism, not just a note.
+
+So I extended past the one instrument that note audited:
+
+**The ledger of 6 is not a ledger of one theory.** 4 acceleration / 1 density (TEST-05) / 1 neither (Bell). The four acceleration ones run *two mutually exclusive laws* — unbounded `tanh(γ·ln(1+y))` for the RAR and TEST-11, versus `C = Ω_m + (1−Ω_m)x/(1+x)` floored at Ω_m for TEST-09/10. No limit connects them; they sit **0.671 dex apart (max)** on the same 2,807 points, which is the "different theories" bin by the site's own fork-amplitude diagnostic. Three different a₀ carry the ledger, a 5.6× spread, only one claimed as derived.
+
+**Executed: +184 is a systematics corner, not a measurement.** The registered fit pins Υ_disk=0.5 with zero nuisance freedom *and* treats 2,807 correlated points as independent. Relaxing both identically in both arms (Δk=0):
+
+| | N_eff=2807 | 500 | 175 |
+|---|---|---|---|
+| Υ fixed (as registered) | **+184.04** | +32.78 | +11.47 |
+| Υ per-galaxy, literature 0.11 dex prior | +75.09 | +24.88 | **+10.50** |
+
+Grid validated against the site's own independently-quoted "+33 at N_eff≈500" → +32.78.
+
+**The kill stands; the number does not.** γ=2 is disfavoured at every literature-defensible corner — the sign flips only under fully free per-galaxy Υ, more freedom than SPARC warrants. But +10.50 sits *on* the instrument's own decisiveness threshold, a factor of 17.5 below the headline. Fourth over-refutation instance, and the mechanism was diagnosed for TEST-11 *yesterday*, in those exact words, and not applied to the adjacent row sharing its code. **Count unchanged at 6.**
+
+The result I didn't expect: SPARC yields `g_bar` assumption-free, but ρ needs a vertical-structure model SPARC doesn't measure. **The framework's stated law is not computable on the dataset its refutations run on.** That reframes a year of apparent negligence as a structural constraint. I deliberately did *not* run a quick ρ-space BIC — a fourth unnamed-estimator number would reproduce the exact failure mode I was documenting.
+
+Left open and sharper than anything above: γ = 2/√N_corr is a coherence-of-*density* relation, but the function refutation #1 pins is in *acceleration*. If that transfer is unlicensed, refutation #1 refutes a pin nobody made.
+
+One housekeeping note: `AGENTS.md`/`CLAUDE.md` were dirty at WAKE with supervisor-generated GitNexus index counts (5956→5966 symbols). I didn't author them but did include them in the commit to clear the dirty tree.

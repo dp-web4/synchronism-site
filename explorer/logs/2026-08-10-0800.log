@@ -1,1 +1,24 @@
 Starting Synchronism Explorer Session at Mon Aug 10 08:00:01 PDT 2026
+Session complete. Both repos committed and pushed.
+
+## What I did
+
+WAKE flagged that the topic queue was almost entirely archaeology — audits of results already obtained. I took the one forward-looking item (`compute-w-eff-z`), partly because it challenged a claim made in the **pessimistic** direction, which is the same error class as this program's documented over-refutation habit, pointed inward.
+
+## Three results
+
+**1. The "no dark-energy sector" claim is false, and how it was verified is the finding.** `Research/Session100_Modified_Friedmann.md` (2025-12-08) derives `H² = 8πGρ_m/(3C)` and tabulates w(z). The 2026-07-22 scope negative in `PREDICTIONS.md:152` is stamped *"Verified before registering (grep of SPINE/FUNDAMENTALS/PREDICTIONS/STATUS)"* — the four **compilation** documents. `Research/` was never grepped. Rule extracted: compilation documents can prove presence, never absence. Second instance in three days (the Appendix-D finding was the mirror), so the failure is the *layer*, not the directory.
+
+Worse: that registration says any later w₀wₐ claim "is to be judged against this statement that no such coupling exists." Built as insurance against retro-fitting, it would score a **correct** rediscovery as a retro-fit.
+
+**2. The published w(z) is wrong twice.** Sessions #100/#101 use a sign-flipped equation of state (unit test: returns −2 for matter, −7/3 for radiation), and the tabulated column follows neither their formula nor the right one — it drops the leading −1. Correct `w(0) = −1.24`, not "> 0". That "> 0" was the *entire* stated reason Session #101 declared the galactic C(ρ) a cosmic "category error" and invented a separate form — which SymPy shows is **identically the galactic form at γ = 1/2**.
+
+**3. Sign-lock theorem.** `C₀ = Ω_m` is forced by the definition of Ω_m, so γ is the only parameter. w runs monotonically from `−2γ` to exactly `−1`, hence **sign(w₀+1) = sign(wₐ)** for every γ — no phantom crossing is possible. DESI DR2 prefers a crossing in all four combinations; 0 of 16 scanned γ reach that quadrant. The framework isn't silent on the dominant live anomaly; it **forbids** it.
+
+## What I deliberately did not claim
+
+The naive fixed-parameter H(z) comparison gives −9.8% against ~1% BAO — a "10σ kill," and would have been the program's fifth self-inflicted over-refutation. Marginalising Ω_m and r_dH₀ collapses it to **1.76% rms**: real tension, not a kill. The γ ≈ 1/2 branch isn't refuted at all — it *is* ΛCDM. **Refutation count unchanged at 6.**
+
+I also deflated my own most attractive result: γ = 1/2 being both the exact MOND point and the exact Λ point is one algebraic fact (it's the unique Möbius member of the family), not two coincidences — and the two γ's aren't even the same object, one being fitted in acceleration space and one living in density space.
+
+**Net:** the loop opened something instead of closing it — a false scope negative retracted, and the first prospective registration with a live instrument behind it, recorded explicitly as kill-or-tie so a later tie can't be read as success. The highest-value follow-on is deriving the 00-component covariantly from Appendix D; if the sign lock survives that, the no-go becomes unconditional.

@@ -1,1 +1,23 @@
 Starting Synchronism Maintainer Session at Mon Aug 10 06:00:02 PDT 2026
+Done. Session summary:
+
+## WAKE finding (the actual result)
+
+I checked all 7 cross-persona P0 items against source before touching anything. **5 of 7 were corrections the site already contained, sitting below or after an uncorrected lead.** Only one — the TEST-ID collision — was genuinely new.
+
+The sharpest case: the TEST-10 card on `/tier-1-existing` contains the sentence *"not the median-based percentage this card leads with"* — the page states in writing that its own lead is wrong, and leaves the lead standing.
+
+So two failure modes I'd tracked separately are one causal chain: correction goes in a box → lead still carries the refuted number → next reader reports it as a fresh P0 → another box gets appended. **Append-fix doesn't just fail to finish the job; it manufactures the next day's false report.** Proposal written to the research repo *before* fixing, with a falsifiable prediction registered: if leads now carry corrected values, tomorrow's P0 list should drop to ≤3 with ≥2 new. If it stays at 6–7 and still contains a₀/B_max/14,760, my diagnosis is wrong and the problem is persona methodology instead.
+
+## Shipped (2 commits, pushed, build passes)
+
+- **Leads rewritten** to carry the corrected value: landing galaxy tile 14,760→14,610 (the 14,585 sample is the *registered* test the ledger marks never-run); TEST-10 lead → the convention-independent kill (max f_DM=0.927 ⇒ B≥13.7); refutation count → 6 executed but 2 independent roots; `/key-claims` a₀ → 0.66σ against McGaugh's published systematic, not "~13% miss."
+- **TEST-ID collision resolved** — `TEST-11` denoted both the Cassini squeeze and the EEG test on linked pages, so no TEST-ID identified anything. Renumbered the interloper to TEST-25 across 6 files; documented the flat namespace and the undocumented `a`/`s` suffix grammar.
+- **`/top-5-tests` destaled** — now zero active discriminating tests. I let it go empty rather than reordering: applied consistently, the page's own criterion empties it.
+- **A2ACW confound closed in the pro-framework direction** — the two null control arms *are* the control arm the page calls unrun, so "0 of 47 survivors" is instrument-limited.
+
+## Two things worth flagging
+
+**I did not do the vocabulary governance work (P2).** The tech writer is right that ~28 status strings across four systems is the highest-leverage fix, but it needs one decision — which γ band vocabulary is canonical — that I shouldn't make unilaterally mid-sweep. That's the call I'd want from you.
+
+**A caveat on my own work:** several of my lead rewrites replaced a box with a long correction-*narrative* in lead position. Better than a box below, still not a short correct lead. Pass 1 bounced off this site in 40 seconds and it wasn't the physics that did it — the accumulated correction-provenance prose may now be its own barrier.

@@ -2,7 +2,74 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-09*
+*Last updated: 2026-08-10*
+
+---
+
+## 🔴 P0 (explorer 2026-08-10) — **The framework HAS a dark-energy sector. It was derived in Dec 2025, its w(z) is wrong twice over, and corrected it FORBIDS the one thing DESI DR2 prefers.**
+
+Finding: `explorer/findings/w-eff-the-archive-has-a-dark-energy-sector-and-it-forbids-the-desi-quadrant.md`.
+Back-annotated: `Synchronism/Research/proposals/dark_energy_sector_exists_and_forbids_desi_quadrant_20260810.md`.
+Script: `explorer/findings/scripts/w_eff_from_C_rho_cosmic.py`. Topic archived.
+**Count UNCHANGED at 6. Nothing new is refuted.** A scope *negative* becomes a scope *positive*
+carrying a live, currently-disfavoured prediction.
+
+**1 — The negative was false, and how it was verified is the finding.** `/honest-assessment:1323` and
+`PREDICTIONS.md:152` both say C(ρ) has "no mechanism that modifies the expansion history."
+`Research/Session100_Modified_Friedmann.md` (**2025-12-08**) derives `H² = 8πGρ_m/(3C)`, identifies
+`ρ_DE = ρ_m(1−C)/C`, and tabulates w(z). The registration is stamped **"Verified before registering
+(grep of SPINE/FUNDAMENTALS/PREDICTIONS/STATUS)"** — the four *compilation* documents. `Research/` was
+never grepped. **Rule: compilation documents can prove presence, never absence.** Mirror of the
+2026-08-08 Appendix-D finding; two instances in three days ⇒ the failure is the *layer*. Worse: the
+registration says any later w₀wₐ claim "is to be judged against this statement that no such coupling
+exists" — so a **correct** rediscovery would be scored as a retro-fit. The anti-overclaiming machinery
+produced an under-claim and armoured it.
+
+**2 — Two arithmetic errors sent the arc down a wrong branch for eight months.** Sessions #100/#101 use
+`w = −1 + (1/3)dlnρ_DE/dlna`; continuity gives a **minus**. Unit test: their form returns −2 for matter,
+−7/3 for radiation. And the *tabulated* column follows neither formula — it is the stated expression
+with the leading −1 dropped. **Correct w(0) = −1.24, not "> 0".** Session #101's entire premise (that
+"w_eff > 0" proved the galactic C(ρ) a "category error" at cosmic scales) is an artifact — and SymPy
+shows its replacement `C_cosmic = Ω_m(z)` **is identically the galactic form at γ = 1/2**. It back-solved
+`dlnρ_DE/dlna = 0` and rediscovered the family it was rejecting.
+
+**3 — EXECUTED: the sign-lock theorem.** C₀ = Ω_m is *forced* (identity, not calibration) ⇒ γ is the only
+parameter. Exact limits: `w → −2γ` (z→∞), `w → −1` (a→∞), monotone between ⇒ **sign(w₀+1) = sign(wₐ)**
+for every γ. `w = −1` is a one-sided attractor; **no phantom crossing is possible.** DESI DR2
+(arXiv:2503.14738) prefers a crossing in **all four** combinations. Scanning γ∈[0.05,20]: **0 of 16 reach
+the DESI quadrant**; forcing w₀ to match forces wₐ to **+0.21…+0.32**, wrong sign every time.
+
+**Over-refutation avoided — the number I could have published was 5.6× the one that survives.** Naive
+fixed-parameter H(z): **−9.8%** at z≈0.72 vs ~1% BAO ("10σ"). Marginalising Ω_m and r_dH₀ — the exact
+nuisances BAO cannot separate from shape — gives **1.76% rms at γ=2**, 0.031% at γ=0.489, **0.000% at
+γ=1/2**. Real tension at γ=2; *not* a kill. And **the γ≈1/2 branch is not refuted at all — it IS ΛCDM
+and inherits ΛCDM's 2.8–4.2σ tension, no more.** No quadrature σ claimed (w₀,wₐ anti-correlated ρ≈−0.9);
+only the covariance-free *quadrant* statement is load-bearing.
+
+**γ = 1/2 deflation.** It is the exact MOND point *and* the exact Λ point, and free-γ SPARC returns
+0.489 (2.2% away). Not a deep coincidence: γ=1/2 is the unique **Möbius** member of the tanh-log family,
+`C = x/(x+2)`, which is simple-μ in one sector and Λ in the other. **One algebraic fact, two faces.** And
+the two γ's aren't the same object — SPARC's is fitted in *acceleration* space, this one in *density*
+space. Suggestive, not licensed.
+
+**Structural**: both sectors now have the same architecture — a one-parameter deformation of the
+standard model whose optimum *is* the standard model (galaxies: "MOND ∩ {B ≤ 3.17}, could only tie or
+lose"; cosmology: same with ΛCDM). Worth stating **before** the next sector is tested, not after.
+Also: ρ_crit is unanchored across sectors by **1.5×10¹⁰** (A·V² would need V_flat ≈ 1.2 m/s for the
+universe) ⇒ ρ_crit is a per-system fitted quantity, not a constant of the framework.
+
+**→ Action: Maintainer** (6 items in the finding). **Rewrite the lead, don't append a box** — per today's
+own append-fix finding. (1) `/honest-assessment:1323` rewritten to the positive statement; (2) retract
+`PREDICTIONS.md:152` scope negative, correcting the "Verified before registering" line to name what was
+grepped; (3) add the presence/absence verification rule to registration discipline; (4) dated erratum on
+Sessions #100/#101, withdrawing the "category error" framing; (5) `/top-5-tests` candidate — with the
+caveat that it is **kill-or-tie, not discriminating**; (6) `/falsifiability` 0→1 prospective, gates on dp.
+
+**→ Action: Explorer (highest-value follow-on).** Session #100 *substitutes* G_eff = G/C into Friedmann;
+it never derives the 00-component covariantly. An Appendix-D completion adds Ċ terms that could move the
+locus off the sign lock. **If the lock survives, the no-go becomes unconditional** and is a small,
+well-posed, potentially publishable result. Secondary: **Session #107's DESI forecasts (3.1–3.2σ fσ₈)
+have never been audited** and predate the TEST-04a correction — same over-forecast shape, unopened file.
 
 ---
 

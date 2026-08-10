@@ -1,0 +1,180 @@
+==============================================================================
+w_eff(z) FROM C(rho-bar(z)) -- SOURCE (L1) BRANCH
+==============================================================================
+
+UNIT TEST of the equation-of-state estimator
+  fluid                       correct formula   Session-100 formula    truth
+  matter    (rho ~ a^-3)             0.000000             -2.000000   0.0000
+  radiation (rho ~ a^-4)             0.333333             -2.333333   0.3333
+  Lambda    (rho = const)           -1.000000             -1.000000  -1.0000
+  -> correct formula passes all three: True
+  -> Session-100 formula fails all three (matter -> -2, radiation -> -7/3,
+     Lambda -> -1 only because the derivative vanishes there).
+
+REPRODUCTION of Session 100/101 published tables
+  gamma = 2.0, calibrated rho_0/rho_crit = x0 = 0.16738
+  (x0 is set by requiring C(0) = Omega_m = 0.3 -- a fit with zero first-principles content)
+
+  Session 100 Part 3:  C(z) and rho_DE/rho_m
+      z   C pub   C here  ratio pub  ratio here
+    0.0    0.30   0.3000       2.33      2.3333
+    0.5    0.72   0.7142       0.40      0.4002
+    1.0    0.94   0.9353       0.07      0.0691
+    2.0    1.00   0.9978       0.00      0.0022
+    5.0    1.00   1.0000       0.00      0.0000
+  -> C(z) reproduces exactly. gamma=2 and the C0=Omega_m calibration are confirmed as the inputs.
+
+AUDIT of the published w_eff numbers (Session 101 Part 3 table)
+      z  published  their stated    -1 + T   CORRECT
+        w_galactic       formula              w = -T
+    0.1       0.32       -0.6814    0.3186   -1.3186
+    0.5       0.73       -0.2671    0.7329   -1.7329
+    1.0       1.37        0.3690    1.3690   -2.3690
+    2.0       2.28        1.2788    2.2788   -3.2788
+
+  Column 3 is Session 101's OWN stated formula, evaluated numerically.
+  Column 4 is (1/3) d ln rho_DE / d ln a, i.e. the stated formula with
+  the leading -1 dropped. Column 4 reproduces the published numbers.
+  -> The published table is wrong TWICE: the stated formula has a sign
+     error against the continuity equation, AND the tabulated values do
+     not even follow that stated formula (the -1 term is missing).
+  -> Corrected w_eff(z=0) = -1.2426, not '> 0'.
+
+  analytic/numeric agreement on 0<z<3: max |diff| = 7.03e-09
+
+EXPANSION HISTORY -- galactic branch, gamma = 2.0
+      z    E_sync    E_LCDM    dH/H %     w_eff
+   0.15    1.0363    1.0753     -3.62   -1.3611
+   0.30    1.0893    1.1658     -6.57   -1.5057
+   0.50    1.1907    1.3086     -9.01   -1.7329
+   0.70    1.3296    1.4744     -9.82   -1.9850
+   1.00    1.6018    1.7607     -9.02   -2.3690
+   1.50    2.1778    2.3211     -6.17   -2.9106
+   2.00    2.8491    2.9665     -3.96   -3.2788
+   2.33    3.3296    3.4319     -2.98   -3.4442
+   3.00    4.3820    4.4609     -1.77   -3.6587
+  DESI DR2 BAO measures H(z) r_d to ~1% per bin over 0.3 < z < 2.3.
+
+GAMMA SWEEP -- is the failure specific to the abandoned gamma = 2?
+  For every gamma, x0 is re-calibrated so that C(0) = Omega_m = 0.3,
+  so every row is a fair, fully-calibrated version of the model.
+    gamma        x0        w0    wa_CPL  max |dH/H|%  z of max  CPL rms%
+    0.489    0.8832   -0.9938    0.0197         0.26      0.89      0.00
+    0.500    0.8571   -1.0000    0.0000         0.00      0.06      0.00
+    1.000    0.3628   -1.1535   -0.8931        -6.28      0.78      0.11
+    1.500    0.2292   -1.2119   -1.5116        -8.61      0.74      0.19
+    2.000    0.1674   -1.2426   -1.9132        -9.83      0.72      0.24
+    3.000    0.1087   -1.2744   -2.3893       -11.08      0.70      0.28
+    5.000    0.0639   -1.3006   -2.8319       -12.10      0.68      0.32
+   10.000    0.0314   -1.3207   -3.2043       -12.88      0.67      0.35
+
+COSMIC BRANCH -- Session 101's C_cosmic(z) = Omega_m(z)
+  z =  0.0   C_cosmic = 0.3000   rho_DE/rho_DE(0) = 1.000000   w_eff = -1.00000000
+  z =  0.5   C_cosmic = 0.5912   rho_DE/rho_DE(0) = 1.000000   w_eff = -1.00000000
+  z =  1.0   C_cosmic = 0.7742   rho_DE/rho_DE(0) = 1.000000   w_eff = -1.00000000
+  z =  2.0   C_cosmic = 0.9205   rho_DE/rho_DE(0) = 1.000000   w_eff = -1.00000000
+  z =  5.0   C_cosmic = 0.9893   rho_DE/rho_DE(0) = 1.000000   w_eff = -1.00000000
+
+  rho_DE is EXACTLY constant and w == -1 to machine precision, at all z.
+  This is not a result -- Session 101 imposed d ln rho_DE/d ln a = 0 and
+  solved for C. The 'verification' table is the assumption read back.
+  Consequence: this branch is ALGEBRAICALLY IDENTICAL to LCDM in the
+  background. It has zero free parameters and cannot be tuned.
+  It therefore makes a hard prediction: (w0, wa) = (-1, 0) exactly.
+
+ANALYTIC LIMITS AND MONOTONICITY CHECK
+    gamma   w(z=1e6)   -2*gamma   w(a=1e4)        w0   monotone in z?
+    0.100    -0.2000    -0.2000    -1.0000   -0.4137             True
+    0.300    -0.6000    -0.6000    -1.0000   -0.8367             True
+    0.489    -0.9780    -0.9780    -1.0000   -0.9938             True
+    0.500    -1.0000    -1.0000    -1.0000   -1.0000             True
+    1.000    -2.0000    -2.0000    -1.0000   -1.1535             True
+    2.000    -4.0000    -4.0000    -1.0000   -1.2426             True
+    5.000   -10.0000   -10.0000    -1.0000   -1.3006             True
+  -> w(z->inf) = -2 gamma exactly; w(a->inf) = -1 exactly; monotone
+     throughout. The sign lock sign(w0+1) == sign(wa) is therefore a
+     THEOREM for this family, not a sampling artifact.
+
+GAMMA CONSTRAINT FROM BACKGROUND SHAPE (Omega_m and r_d H0 MARGINALISED)
+    gamma  rms shape resid %  profiled Om        k   vs ~1% BAO
+    0.200              1.046       0.2956   0.9056     marginal
+    0.300              0.651       0.3166   0.9416           OK
+    0.400              0.301       0.3188   0.9733           OK
+    0.450              0.145       0.3172   0.9872           OK
+    0.489              0.031       0.3155   0.9973           OK
+    0.500              0.000       0.3150   1.0000           OK
+    0.520              0.055       0.3140   1.0048           OK
+    0.550              0.134       0.3124   1.0117           OK
+    0.600              0.258       0.3097   1.0223           OK
+    0.700              0.478       0.3043   1.0409           OK
+    1.000              0.973       0.2909   1.0810           OK
+    2.000              1.756       0.2696   1.1396     marginal
+
+  -> Even after marginalising Omega_m and the r_d H0 scale, the shape
+     residual grows steeply away from gamma = 1/2. This is the FIRST
+     constraint on gamma in DENSITY space: the cosmological background
+     is the only observable where rho is known without a structural
+     model (rho_bar(z) = Omega_m rho_c (1+z)^3, exact), whereas SPARC
+     yields g_bar and requires a vertical-structure model to reach rho.
+
+QUADRANT LOCUS -- the whole one-parameter family in the (w0, wa) plane
+  C0 = Omega_m is FORCED by the definition of Omega_m, not chosen.
+  gamma is the only free parameter. gamma = 1/2 is the exact LCDM point
+  (proved analytically: C = x/(x+2) => rho_DE = 2 rho_m0/x0 = const).
+
+     gamma    w0_CPL    wa_CPL                   quadrant
+     0.050   -0.2173    0.0799            w0 > -1, wa > 0
+     0.100   -0.4112    0.2021            w0 > -1, wa > 0
+     0.200   -0.6808    0.3213            w0 > -1, wa > 0
+     0.300   -0.8408    0.2880            w0 > -1, wa > 0
+     0.400   -0.9386    0.1669            w0 > -1, wa > 0
+     0.450   -0.9728    0.0872            w0 > -1, wa > 0
+     0.489   -0.9945    0.0197            w0 > -1, wa > 0
+     0.499   -0.9995    0.0018            w0 > -1, wa > 0
+     0.500   -1.0000    0.0000         LCDM point (exact)
+     0.501   -1.0005   -0.0018            w0 < -1, wa < 0
+     0.550   -1.0218   -0.0919            w0 < -1, wa < 0
+     0.700   -1.0652   -0.3762            w0 < -1, wa < 0
+     1.000   -1.1034   -0.8931            w0 < -1, wa < 0
+     2.000   -1.1303   -1.9132            w0 < -1, wa < 0
+     5.000   -1.1357   -2.8319            w0 < -1, wa < 0
+    20.000   -1.1348   -3.4046            w0 < -1, wa < 0
+
+  gamma values reaching the DESI quadrant: 0 of 16
+  -> For gamma > 1/2 the locus sits in (w0 < -1, wa < 0).
+  -> For gamma < 1/2 it sits in (w0 > -1, wa > 0).
+  -> DESI DR2 prefers (w0 > -1, wa < 0) -- a phantom crossing from below.
+     The framework's locus passes through LCDM and enters the two
+     quadrants ADJACENT to DESI's, never DESI's own. It fails by
+     QUADRANT, for every gamma, with no parameter left to adjust.
+
+  What gamma would DESI's w0 require, and what wa does it then force?
+  BAO+CMB                w0 = -0.420 -> gamma = 0.10256 -> wa = +0.207  (DESI wants -1.750, 3.4 sigma away, wrong sign)
+  BAO+CMB+Pantheon+      w0 = -0.838 -> gamma = 0.29776 -> wa = +0.290  (DESI wants -0.620, 4.1 sigma away, wrong sign)
+  BAO+CMB+Union3         w0 = -0.667 -> gamma = 0.19335 -> wa = +0.319  (DESI wants -1.090, 4.5 sigma away, wrong sign)
+  BAO+CMB+DESY5          w0 = -0.752 -> gamma = 0.23841 -> wa = +0.323  (DESI wants -0.860, 5.4 sigma away, wrong sign)
+
+DESI DR2 COMPARISON  (w0, wa) plane
+  galactic branch (gamma=2.0) CPL projection: w0 = -1.130, wa = -1.913  [CPL fit rms 0.24%]
+  cosmic branch (Session 101):                w0 = -1.000, wa = +0.000  [exact]
+  LCDM:                                       w0 = -1.000, wa = +0.000
+
+  dataset                              w0               wa  pull: galactic  pull: cosmic
+  BAO+CMB                  -0.420+/-0.210   -1.750+/-0.580             3.4           4.1
+  BAO+CMB+Pantheon+        -0.838+/-0.055   -0.620+/-0.220             7.9           4.1
+  BAO+CMB+Union3           -0.667+/-0.088   -1.090+/-0.310             5.9           5.2
+  BAO+CMB+DESY5            -0.752+/-0.057   -0.860+/-0.220             8.2           5.8
+
+  'pull' is a crude uncorrelated quadrature distance, NOT a chi^2 from
+  the published covariance -- w0 and wa are strongly anti-correlated
+  (rho ~ -0.9), so these OVERSTATE the tension. They are reported only
+  to fix the sign and rough scale. The defensible statement is the
+  H(z) comparison above, which needs no contour.
+
+DISTANCE CROSS-CHECK (units of c/H0)
+  D_C(z<    1.0):  sync =  0.83027   LCDM =  0.77143   diff =   +7.63%
+  D_C(z<    2.5):  sync =  1.45531   LCDM =  1.36070   diff =   +6.95%
+  D_C(z< 1100.0):  sync =  3.29705   LCDM =  3.19503   diff =   +3.19%
+  The CMB acoustic scale theta_* is measured to ~0.03%. A percent-level
+  shift in D_C(1100) at fixed sound horizon is not survivable.
+

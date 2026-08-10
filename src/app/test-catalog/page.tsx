@@ -114,7 +114,7 @@ export default function TestCatalog() {
           remaining Tier-1 tests are self-eliminating (no outcome selects Synchronism), failed by sign, or
           genuinely non-discriminating (the RAR transition shape, where free-γ curves coincide). The roadmap
           represents proposed tests, not tests that are ready to run or are expected to discriminate.{' '}
-          <strong>A third executed result (TEST-11, added 2026-07-28) is a different kind of kill</strong> —
+          <strong>A third executed result (TEST-25, added 2026-07-28) is a different kind of kill</strong> —
           not Synchronism-vs-MOND discrimination, but an internal-consistency squeeze: the SPARC-preferred
           γ interval and the Cassini Solar-System bound have a robust empty intersection under the
           scale-universal tanh-log QUMOND realization (+17.7&ndash;18.0σ discrepancy across the retained
@@ -152,7 +152,16 @@ export default function TestCatalog() {
           on what has actually been analyzed, see below.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
-          Tests are numbered TEST-01 through TEST-11 on the{' '}
+          Tests use <strong>one flat namespace</strong>: TEST-01 &hellip; TEST-24 across the four tiers
+          (Tier 1 = 01&ndash;10, Tier 2 = 11&ndash;14, Tier 3+ = 15&ndash;24), plus <strong>TEST-25</strong>,
+          the Cassini/SPARC squeeze added out-of-band 2026-07-28. Suffixes: <code>a</code> = amended sub-test
+          registered after the parent was withdrawn (TEST-04a); <code>s</code> = substituted protocol, run on a
+          different sample than the one registered (TEST-03s). Both suffixes mark a test that is{' '}
+          <em>not</em> the registered one and must not be read as the parent&apos;s result.{' '}
+          <em style={{ color: 'var(--color-text-muted)' }}>(Namespace and suffix grammar stated here
+          2026-08-10, after a visitor Pass 3 found TEST-11 denoting two unrelated experiments and Pass 2 found
+          the suffix convention undocumented. The Cassini squeeze was renumbered 11 &rarr; 25 to clear the
+          collision.)</em> Tier 1 cards live on the{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 page</Link>{' '}
           (each test card has an anchor: e.g., <code style={{ fontSize: '0.8rem' }}>/tier-1-existing#TEST-04a</code>).
           Cross-references elsewhere on the site to TEST-NN resolve directly to those cards.

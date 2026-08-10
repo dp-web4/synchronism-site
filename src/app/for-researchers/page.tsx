@@ -69,7 +69,7 @@ export default function ForResearchers() {
             screening and non-local state variables such as enclosed mass are <em>not</em> covered and
             are not claimed to fail here) fails in
             three independently executed ways — the SPARC RAR ensemble rejects the density-compander
-            at &#x0394;BIC=+184 (free fit collapses to MOND); the cross-system &#x03C1;&#x2194;g<sub>bar</sub>{' '}
+            at &#x0394;BIC=+184 (conservative &ge;+33) (free fit collapses to MOND); the cross-system &#x03C1;&#x2194;g<sub>bar</sub>{' '}
             offset is ~1.7 dex; and clusters require a &#x03C1;<sub>crit</sub> 10<sup>4</sup>–10<sup>6</sup>&times;
             off the galaxy calibration (Coma, four ansätze, one structurally bounded at velocity ratio &le;2 vs observed 4.6).
           </p>
@@ -92,7 +92,7 @@ export default function ForResearchers() {
             <strong>Scope split — which half generalizes (2026-07-08):</strong> the three numbered
             results carry different generality. The <em>sign statement below</em> (&rho;<sub>crit</sub>{' '}
             must scale as V<sup>&minus;2</sup>) is BTFR-forced and profile-independent — it holds for any
-            local-&rho; MOND mimic. The <em>&#x0394;BIC=+184 ensemble rejection</em> is specific to the
+            local-&rho; MOND mimic. The <em>&#x0394;BIC=+184 (conservative &ge;+33) ensemble rejection</em> is specific to the
             log-density compander family actually tested (&mu; = tanh(&#x03B3;&nbsp;ln(1+x))); other
             local-density functional forms would need their own ensemble runs. The cluster/offset
             arguments sit in between: the ~1.7 dex &rho;&#x2194;g<sub>bar</sub> mismatch is a property of
@@ -320,8 +320,34 @@ export default function ForResearchers() {
             but cannot substitute for out-of-distribution evaluation. Relevant to anyone building
             AI-for-science generation pipelines on shared training corpora.
           </p>
+          <div style={{ background: 'rgba(56, 189, 248, 0.07)', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '0.375rem', padding: '0.8rem 1rem', fontSize: '0.87rem', color: 'var(--color-text-secondary)', margin: '0.75rem 0' }}>
+            <strong style={{ color: '#38bdf8' }}>Correction 2026-08-10 — the confound below is CLOSED, by
+            this program&apos;s own controls, and closing it cuts <em>for</em> the framework.</strong>{' '}
+            The paragraph that follows calls the degeneracy unresolved pending a cross-vendor control arm.
+            But two control arms have already run and both returned null: the{' '}
+            <strong>canonical-discoveries arm</strong> false-flagged <strong>6 of 6</strong> genuine
+            discoveries as reparametrizations (specificity 0/6), and the{' '}
+            <strong>temporal-asymmetry arm</strong> (paired training cutoffs) caught{' '}
+            <strong>0 of 6</strong> demotions. An instrument that misclassifies every known positive is
+            not weakly informative about the seed framework &mdash; it is <em>uninformative by
+            construction</em>. Therefore: <strong>&ldquo;47 contributions, 0 survivors&rdquo; and any
+            &ldquo;0 confirmed predictions&rdquo; that rests on A2ACW audit rather than on external data
+            are instrument-limited, and carry no information about whether the seed framework contains
+            novelty.</strong> This does not touch the physics ledger that stands on external data &mdash;
+            the boost ceiling and the γ=2 pin are unaffected and stand. It does mean the headline null has
+            been quoted with more authority than the device that produced it can support. Note also that
+            the sensitivity arm has no independent gold standard: the claim that the framework&apos;s own
+            claims genuinely <em>are</em> reparametrizations comes from the same audit process under
+            evaluation, so &ldquo;sensitivity = 1.0&rdquo; is circular and only the 0/6 specificity arm has
+            ground truth. Both arms are n = 6 &mdash; Wilson 95% CIs are roughly [0.61, 1.00] and
+            [0.00, 0.39], so <strong>J = 0 should not be quoted without an interval</strong>, and the 1.4%
+            session yield divides by 3,308 context-chained sessions whose effective N is unknown and
+            certainly not thousands. (Flagged by visitor Pass 4, 2026-08-10; it is the rare audit finding
+            that points toward the framework rather than against it, which is why it went unnoticed.)
+          </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-            <strong>No control arm; a confound the null doesn&apos;t resolve:</strong> the corpus audited
+            <strong>No control arm; a confound the null doesn&apos;t resolve
+            <em> (superseded by the correction above — retained for the record)</em>:</strong> the corpus audited
             is Synchronism itself, which this site independently concludes is a MOND reparametrization.
             &ldquo;Adversarial same-corpus AI pairs cannot generate out-of-distribution novelty&rdquo; and
             &ldquo;this particular seed framework contained none to find&rdquo; are observationally

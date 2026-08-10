@@ -313,7 +313,7 @@ export default function GalaxyRotation() {
             re-Newtonianizing far too abruptly — which is the +184 kill restated mechanistically.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-            <strong>The fitted γ has a consequence beyond MOND-equivalence: the Solar System (TEST-11, added
+            <strong>The fitted γ has a consequence beyond MOND-equivalence: the Solar System (TEST-25, added
             2026-07-28).</strong> γ ≈ 0.49 landing on MOND&apos;s simple-μ family (q ≈ 1, above) is not merely a
             reparametrization finding — it exposes the compander to a constraint that has nothing to do with
             SPARC. Simple-μ&apos;s slow high-acceleration return is disfavored by planetary ephemerides
@@ -323,7 +323,7 @@ export default function GalaxyRotation() {
             γ = 0.425&ndash;0.600) found a <strong>robust empty intersection</strong>: every retained γ value
             fails Cassini by +17.7σ to +18.0σ. No γ satisfies both galaxy rotation and the Solar System under
             one scale-universal tanh-log QUMOND realization — this needs no new γ preference from SPARC, only
-            the one already fitted. See <Link href="/tier-1-existing#TEST-11" style={{ color: 'var(--color-accent-blue)' }}>TEST-11</Link>{' '}
+            the one already fitted. See <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>{' '}
             for the full scope statement (it closes the realization, not modified inertia, dark-matter models, or
             the umbrella ontology).
           </p>
@@ -343,7 +343,7 @@ export default function GalaxyRotation() {
             consequence of choosing a power-law compander for the deep-field limit — the same choice that gives
             the bounded-C formulation its finite boost ceiling (B<sub>max</sub> = 1/Ω<sub>m</sub>, see{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
-            Derivations</Link>). Full derivation back-annotated to the research archive alongside TEST-11&apos;s
+            Derivations</Link>). Full derivation back-annotated to the research archive alongside TEST-25&apos;s
             registered result.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>

@@ -436,16 +436,28 @@ export default function KeyClaims() {
             a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.04 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2;
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '1rem' }}>
-            MOND (Modified Newtonian Dynamics) acceleration from dimensional analysis
-            (observed: 1.2 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2; &mdash; a ~13% miss at the site-standard H&#x2080; = 67.4, not an exact hit)
+            MOND (Modified Newtonian Dynamics) acceleration from dimensional analysis. Observed:
+            g&#x2020; = 1.20 &plusmn; 0.02 (random) &plusmn; 0.24 (systematic) &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2;
+            (McGaugh, Lelli &amp; Schombert 2016, PRL 117, 201101). The 0.16 offset is
+            <strong> 0.7&#x03C3; against the systematic &mdash; consistent</strong>, and it is
+            H&#x2080;-dependent: at SH0ES&apos; H&#x2080; = 73 the same relation gives
+            1.13 &#x00D7; 10&#x207B;&#x00B9;&#x2070;, 6% low.
+            <br />
+            <em style={{ fontSize: '0.9em' }}>
+              Lead rewritten 2026-08-10. It previously read &ldquo;a ~13% miss&hellip; not an exact
+              hit,&rdquo; with the systematic-error resolution sitting in the box below it since
+              2026-07-27 &mdash; so the page led with the refuted framing and corrected it underneath.
+              The relation is not this framework&apos;s to score in either direction: it is Milgrom&apos;s
+              own 1983 coincidence.
+            </em>
           </p>
           <div style={{ background: 'rgba(245, 158, 11, 0.06)', border: '1px solid rgba(245, 158, 11, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', fontSize: '0.82rem', color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
             <strong>&ldquo;~13%&rdquo; needs an error bar to mean anything (added 2026-07-27).</strong> A bare
             percentage is the one soft overclaim an external reviewer found on this page, because 13% reads
             very differently against three different denominators:
             <ul style={{ marginTop: '0.4rem', marginBottom: '0.4rem', paddingLeft: '1.1rem', lineHeight: 1.7 }}>
-              <li>Against SPARC&apos;s <em>statistical</em> a&#x2080; = 1.20 &plusmn; 0.02 &#x00D7; 10&#x207B;&#x00B9;&#x2070;, the 0.16 offset is <strong>~8&#x03C3;</strong>.</li>
-              <li>Against McGaugh&apos;s ~20% <em>systematic</em> budget, it is <strong>under 1&#x03C3; — consistent</strong>.</li>
+              <li>Against SPARC&apos;s <em>random</em> error alone (&plusmn;0.02), the 0.158 offset is <strong>~7.9&#x03C3;</strong> &mdash; this is the number that used to be quoted bare, and it is the wrong denominator.</li>
+              <li>Against the <em>systematic</em> McGaugh, Lelli &amp; Schombert quote in the same sentence of the same paper (&plusmn;0.24), it is <strong>0.158/0.24 = 0.66&#x03C3; — consistent</strong>. (Sharpened 2026-08-10 from &ldquo;McGaugh&apos;s ~20% budget, under 1&#x03C3;&rdquo;; independently re-derived by a visitor Pass 4 that named the dropped term.)</li>
               <li>It is H&#x2080;-dependent: at the SH0ES H&#x2080; = 73 the relation gives 1.13 &#x00D7; 10&#x207B;&#x00B9;&#x2070;, only <strong>6% low</strong>.</li>
             </ul>
             The honest statement is therefore <strong>&ldquo;consistent within systematics; the residual is

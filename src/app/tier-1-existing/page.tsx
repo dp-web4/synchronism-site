@@ -131,10 +131,10 @@ const tests: Test[] = [
     time: 'EXECUTED (2026-07-15)',
     prediction: 'CORRECTED: the registered "DM fraction → 100% for M_bar < 10⁸ M☉" was never the framework\'s prediction — it is MOND\'s (unbounded ν). The framework\'s own bounded boost (B ≤ 1/Ω_m = 3.17) caps the apparent DM fraction at f_DM = 1 − C ≤ 1 − Ω_m = 68.5%, for every galaxy, at every radius, for every parameter choice.',
     kill: 'As registered: "baryon-dominated dwarfs below 10⁸ M☉ exist." The kill fires in REVERSE: the framework dies at the DM-dominated tail its own ceiling forbids. Threshold provenance: the 68.5% ceiling needs no registration date because it is STRUCTURAL, not tuned — f_DM = 1 − C ≤ 1 − Ω_m = 0.685 (equivalently 1 − 1/3.17), fixed by the framework\'s own Ω_m = 0.315 with zero adjustable freedom. No choice made before or after the data could move it.',
-    alert: 'FAILED (executed 2026-07-15 on SPARC outer points; MOND-shared flag RETRACTED). Observed outer apparent DM fractions: median 0.755, max 0.927 — 106/153 = 69% of ALL SPARC galaxies exceed the framework\'s structural 68.5% ceiling (dwarfs below 10⁹ M☉: 67% exceed; the ten most DM-dominated galaxies are all impossible for the bounded boost while MOND matches them to a few percent — median residual f_obs − f_pred is +0.18 for Synchronism vs −0.03 for MOND). Beyond SPARC it is worse: pressure-supported dwarf spheroidals reach M_dyn/M_bar ~ 10²–10³ (Walker & Peñarrubia 2011 and subsequent dispersion-based mass modeling) against the framework\'s cap of 3.17. "A positive result confirms Synchronism and MOND equally" was wrong: MOND\'s boost is unbounded and accommodates near-100% fractions; the framework\'s cannot — this observable discriminates, and the framework loses it. Same structural root as TEST-09: both are corollaries of the boost ceiling. CEILING CONVENTION-DEPENDENCE (propagated from /parameter-derivations, flagged 2026-07-28 and independently re-confirmed by a 2026-07-29 visitor pass): B_max = 1/Ω_m has no derivation — no archive document connects it to the compander. A dynamical-to-baryonic boost more plausibly references the baryon budget Ω_m/Ω_b ≈ 6.40, giving f_DM,max ≈ 0.844, under which the reported MEDIAN (0.755) actually PASSES and the "69% of SPARC exceeds the ceiling" headline does not hold under this convention. The kill that survives regardless of convention is narrower and lives in the tail: SPARC\'s maximum observed f_DM = 0.927 requires B ≥ 13.7, which no candidate cosmic ratio supplies — a class exclusion (B_max ≲ 14 is excluded by SPARC dwarfs), not the median-based percentage this card leads with. Script: explorer/scripts/test10_dwarf_dm_fraction_ceiling.py.',
+    alert: 'FAILED (executed 2026-07-15 on SPARC outer points; MOND-shared flag RETRACTED). LEAD REWRITTEN 2026-08-10 — this card previously led with the "69% exceed the ceiling" percentage while its own text, further down, said the surviving kill was "not the median-based percentage this card leads with." The page stated its lead was wrong and left the lead standing; a visitor Pass 4 then re-reported the convention-dependence as a new P0. The kill, stated in the form that survives every convention: SPARC\'s MAXIMUM observed outer f_DM = 0.927 requires a boost B ≥ 1/(1−0.927) = 13.7, and no candidate cosmic ratio supplies it — a class exclusion, B_max ≲ 14 is excluded by SPARC dwarfs. Everything below is the fuller accounting. Observed outer apparent DM fractions: median 0.755, max 0.927 — 106/153 = 69% of ALL SPARC galaxies exceed the framework\'s structural 68.5% ceiling ONLY under the underived convention B_max = 1/Ω_m (dwarfs below 10⁹ M☉: 67% exceed; the ten most DM-dominated galaxies are all impossible for the bounded boost while MOND matches them to a few percent — median residual f_obs − f_pred is +0.18 for Synchronism vs −0.03 for MOND). Beyond SPARC it is worse: pressure-supported dwarf spheroidals reach M_dyn/M_bar ~ 10²–10³ (Walker & Peñarrubia 2011 and subsequent dispersion-based mass modeling) against the framework\'s cap of 3.17. "A positive result confirms Synchronism and MOND equally" was wrong: MOND\'s boost is unbounded and accommodates near-100% fractions; the framework\'s cannot — this observable discriminates, and the framework loses it. Same structural root as TEST-09: both are corollaries of the boost ceiling. CEILING CONVENTION-DEPENDENCE (propagated from /parameter-derivations, flagged 2026-07-28 and independently re-confirmed by a 2026-07-29 visitor pass): B_max = 1/Ω_m has no derivation — no archive document connects it to the compander. A dynamical-to-baryonic boost more plausibly references the baryon budget Ω_m/Ω_b ≈ 6.40, giving f_DM,max ≈ 0.844, under which the reported MEDIAN (0.755) actually PASSES and the "69% of SPARC exceeds the ceiling" headline does not hold under this convention. The kill that survives regardless of convention is narrower and lives in the tail: SPARC\'s maximum observed f_DM = 0.927 requires B ≥ 13.7, which no candidate cosmic ratio supplies — a class exclusion (B_max ≲ 14 is excluded by SPARC dwarfs), not the median-based percentage this card leads with. Script: explorer/scripts/test10_dwarf_dm_fraction_ceiling.py.',
   },
   {
-    id: 'TEST-11',
+    id: 'TEST-25',
     name: 'Solar System / SPARC Joint Squeeze — FAILED, Empty Intersection (Executed 2026-07-23, propagated to site 2026-07-28)',
     data: 'SPARC (2,807-point RAR, McGaugh 2016 pipeline) + Cassini spacecraft quadrupole bound on the Solar System',
     cost: '$0',
@@ -169,15 +169,33 @@ export default function Tier1Existing() {
           <Link href="/test-roadmap" style={{ color: 'var(--color-accent-blue)' }}>Test Roadmap</Link>.
         </p>
         <p>
-          These <strong>11</strong> numbered tests (TEST-01 through TEST-11) use publicly available datasets —
-          plus TEST-04a, a sub-test of TEST-04 added after TEST-04 was withdrawn, and TEST-03s, a substituted
-          protocol. Effective independent tests after failures and withdrawals: approximately 4.
-          Just analysis. This is where Synchronism should be tested first.{' '}
+          These <strong>11</strong> numbered tests (TEST-01 through TEST-10, plus TEST-25) use publicly
+          available datasets — plus TEST-04a, a sub-test of TEST-04 added after TEST-04 was withdrawn, and
+          TEST-03s, a substituted protocol. Effective independent tests after failures and withdrawals:
+          approximately 4. Just analysis. This is where Synchronism should be tested first.{' '}
           <em style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>(Count corrected from &ldquo;10&rdquo;
-          2026-08-08 — a hand-maintained number that drifted when TEST-11 was added. Flagged by a visitor
-          documentation persona, along with the observation that every hand-typed count on this site has drifted
-          at least once.)</em>
+          2026-08-08 — a hand-maintained number that drifted when the Cassini squeeze was added. Flagged by a
+          visitor documentation persona, along with the observation that every hand-typed count on this site has
+          drifted at least once.)</em>
         </p>
+        <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.3)', borderRadius: '0.375rem', padding: '0.8rem 1rem', fontSize: '0.85rem', marginBottom: '1rem' }}>
+          <strong style={{ color: '#ef4444' }}>TEST-ID collision resolved 2026-08-10 — the Cassini/SPARC squeeze
+          was renumbered TEST-11 &rarr; TEST-25.</strong>{' '}
+          <span style={{ color: 'var(--color-text-secondary)' }}>
+            A visitor Pass 3 found that <code>TEST-11</code> denoted <em>two unrelated experiments</em> on
+            mutually linked pages: the Cassini/SPARC joint squeeze here, and the EEG Anesthesia Phase
+            Transition on{' '}
+            <Link href="/tier-2-pilots" style={{ color: 'var(--color-accent-blue)' }}>Tier 2</Link> and{' '}
+            <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>Top 5 Tests</Link>.
+            Cause: the 24-test catalog assigns TEST-01–10 to Tier 1 and TEST-11–14 to Tier 2, and the Cassini
+            squeeze — added out-of-band on 2026-07-28 — took the next number on <em>this page</em> rather than
+            the next free number in the catalog. The EEG test holds the number by seniority; the interloper
+            moved. <strong>There is one flat namespace, TEST-01 … TEST-25</strong>, and no ID denotes two
+            things. Citations to &ldquo;TEST-11 (Cassini)&rdquo; dated before 2026-08-10 mean TEST-25; the
+            anchor <code>/tier-1-existing#TEST-25</code> is the stable target. This defect made every TEST-ID
+            on the site non-citable for 13 days and was not caught by any internal audit.
+          </span>
+        </div>
 
         <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1.5rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
           <h3 style={{ fontSize: '0.9rem', marginBottom: '0.5rem', color: '#ef4444' }}>

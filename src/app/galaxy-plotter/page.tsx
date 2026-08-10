@@ -269,7 +269,7 @@ export default function GalaxyPlotter() {
           <p style={{ margin: '0.6rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             <strong>Which MOND, and why it matters (added 2026-07-29):</strong> the green curve here uses the simple-&#x03BD; family
             (&#x03BD; = &frac12; + &radic;(&frac14; + 1/y), power-law high-acceleration return) — the same family{' '}
-            <Link href="/tier-1-existing#TEST-11" style={{ color: 'var(--color-accent-blue)' }}>TEST-11</Link>{' '}
+            <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>{' '}
             excludes at +17.7&ndash;18.0&sigma; against Cassini planetary ephemerides. The <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> page&apos;s
             RAR/&#x394;BIC test uses McGaugh&apos;s different exponential-return &#x03BD; = 1/(1&minus;e<sup>&minus;&radic;x</sup>), which is Cassini-safe. Both are called
             &ldquo;MOND&rdquo; on this site; they are not the same function, and only one of them survives the solar system.

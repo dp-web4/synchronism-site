@@ -350,7 +350,7 @@ export default function HonestAssessment() {
           the curves coincide. Discrimination is absent there, not across the executed ledger.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          <strong>(3) Cassini/SPARC joint squeeze (TEST-11 — executed 2026-07-23, propagated to site
+          <strong>(3) Cassini/SPARC joint squeeze (TEST-25 — executed 2026-07-23, propagated to site
           2026-07-28):</strong> the framework&apos;s single scale-universal compander cannot be used as
           <em>both</em> the SPARC-fitting galaxy function <em>and</em> a QUMOND-style Solar System
           interpolation function &mdash; at the SPARC-preferred γ&nbsp;≈&nbsp;0.489, the Cassini quadrupole
@@ -425,7 +425,7 @@ export default function HonestAssessment() {
           fired at 3.3&sigma;, 2026-07-14), dwarf DM fractions (TEST-10 — class exclusion via SPARC&apos;s max
           observed DM fraction, 2026-07-15; the &ldquo;69% exceeds ceiling&rdquo; headline is convention-dependent,
           see the Verdict section above), and the registered environment run (r&sup2; = 0.0001 vs the
-          registered &gt;20% claim, 2026-07-14); ephemeris: the Cassini/SPARC joint squeeze (TEST-11, +17.95&sigma;,
+          registered &gt;20% claim, 2026-07-14); ephemeris: the Cassini/SPARC joint squeeze (TEST-25, +17.95&sigma;,
           2026-07-23); and laboratory: the Bell/CHSH substrate test (Bet B1, refuted on both no-signaling arms).
           Through 2026-07-29 the count and its stated scope (&ldquo;external astronomical data&rdquo;) silently
           excluded the last two, both of which were already executed and badged Failed/Refuted elsewhere on the
@@ -465,7 +465,7 @@ export default function HonestAssessment() {
                 <tr><td style={{ padding: '0.4rem' }}>TEST-10 dwarf f<sub>DM</sub> ceiling</td><td style={{ padding: '0.4rem' }}>The same asserted B<sub>max</sub> &mdash; corollary, not an independent root</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>RAR shape, &#x0394;BIC = +184 at &#x03B3;=2</td><td style={{ padding: '0.4rem' }}>The asserted &#x03B3;=2 pin. Free-&#x03B3; &rarr; 0.489 recovers MOND, so this refutes a pin, not a mechanism</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>Environment scatter, r&sup2; = 0.0001</td><td style={{ padding: '0.4rem' }}>A genuinely framework-specific prediction. The cleanest kill on the list</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
-                <tr><td style={{ padding: '0.4rem' }}>TEST-11 Cassini/SPARC, +17.95&sigma;</td><td style={{ padding: '0.4rem' }}>The RAR-preferred interpolating-function family &mdash; <strong>which MOND also uses</strong>. Published as Desmond, Hees &amp; Famaey 2024 at 8.7&sigma;</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Inherited from MOND</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>TEST-25 Cassini/SPARC, +17.95&sigma;</td><td style={{ padding: '0.4rem' }}>The RAR-preferred interpolating-function family &mdash; <strong>which MOND also uses</strong>. Published as Desmond, Hees &amp; Famaey 2024 at 8.7&sigma;</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Inherited from MOND</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>Bell/CHSH substrate (Bet B1), S &le; 2.00</td><td style={{ padding: '0.4rem' }}>Bell&apos;s theorem. A proof, not an experiment &mdash; this page calls it a &ldquo;pedagogical corollary&rdquo; elsewhere</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Theorem</td></tr>
               </tbody>
             </table>
@@ -1297,7 +1297,7 @@ export default function HonestAssessment() {
           C for μ in AQUAL (Bekenstein &amp; Milgrom 1984) or QUMOND (Milgrom 2010) is mechanical, and AQUAL and
           QUMOND agree to &lt;0.1 dex on realistic disks — for rotation curves the choice of completion is nearly
           a formality. <strong>(2)</strong> The site had already crossed the bridge it said did not exist:
-          TEST-11 computes a solar-system quadrupole moment <em>in QUMOND</em>, which is not possible without
+          TEST-25 computes a solar-system quadrupole moment <em>in QUMOND</em>, which is not possible without
           dynamics. What survives, and is the honest claim: the framework&apos;s field equation is
           <em> postulated, not derived</em>; the archive&apos;s own version (L1) is eliminated a priori; and
           writing the surviving one down <strong>changes none of the refutations</strong>, because all of them
@@ -1307,7 +1307,7 @@ export default function HonestAssessment() {
           v(r)&nbsp;=&nbsp;&radic;(v<sub>b</sub>&sup2;&nbsp;+&nbsp;[V<sub>flat</sub>&middot;C(&#x03C1;(r))]&sup2;)
           remains a plotting stand-in with no field equation behind it, and is labelled as such there.
           (Original note 2026-07-14, visitor Pass 3 + Pass 4; corrected 2026-08-09 after explorer 2026-08-08
-          found Appendix D and visitor Pass 3 + Pass 4 independently flagged the AQUAL/TEST-11 contradiction.)
+          found Appendix D and visitor Pass 3 + Pass 4 independently flagged the AQUAL/TEST-25 contradiction.)
         </p>
       </section>
 

@@ -6,30 +6,17 @@ import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
-const activeTests = [
-  {
-    rank: 1,
-    name: 'Wide Binary Density Dependence',
-    id: 'TEST-02',
-    tier: 'Tier 1',
-    cost: '$0',
-    why: 'Synchronism predicts the wide-binary gravitational anomaly is stronger in denser environments — density-dependent rather than constant. Uses existing Gaia DR3 data. EFE caveat: MOND\'s External Field Effect (Bekenstein-Milgrom 1984; AQUAL/QUMOND) also predicts environment-dependent dynamics. For TEST-02 to be a true discriminator, the predicted functional form ξ(ρ_ext) from Synchronism must quantitatively differ from the EFE prediction. This comparison has not yet been computed. Until it is, label this test as "possibly MOND+EFE degenerate."',
-    kill: 'Anomaly independent of local stellar density — or identical in functional form to standard MOND+EFE',
-    color: '#10b981',
-    note: null,
-  },
-  {
-    rank: 2,
-    name: 'EEG Anesthesia Phase Transition',
-    id: 'TEST-11',
-    tier: 'Tier 2',
-    cost: '$150K',
-    why: 'Tests the most striking consciousness prediction: consciousness loss is a phase transition, not a gradual decline. If the threshold is universal, the entire consciousness framework gains empirical grounding. The D and S parameters in the consciousness equation are not yet operationally defined — this test would force that gap to close.',
-    kill: 'Consciousness loss is gradual with no threshold clustering',
-    color: 'var(--color-accent-blue)',
-    note: null,
-  },
-];
+const activeTests: {
+  rank: number;
+  name: string;
+  id: string;
+  tier: string;
+  cost: string;
+  why: string;
+  kill: string;
+  color: string;
+  note: string | null;
+}[] = [];
 
 const pendingTests = [
   {
@@ -56,6 +43,18 @@ const pendingTests = [
 
 const closedTests = [
   {
+    id: 'TEST-02',
+    name: 'Wide Binary Density Dependence',
+    status: 'CLOSED — SELF-ELIMINATING-OR-TIE (demoted off this page 2026-08-10)',
+    verdict: 'This page advertised TEST-02 as the #1 active discriminating test — "requires zero-cost Gaia DR3 analysis" — for weeks after /tier-1-existing had closed it. It has no outcome that favours the framework. If Gaia confirms a MOND-scale ~18% anomaly (Chae 2023–2025), C(ρ) is refuted, because C(ρ) predicts a Newtonian null of 0.05–0.4%. If Gaia confirms the null (Banik et al. 2024; Pittordis & Sutherland 2023), the framework merely reproduces Newton and is not selected over it. Both branches lose or tie. Worse, the confirmation branch is not reachable: the predicted 0.05–0.4% deviation sits ~80× below the Gaia DR3 wide-binary systematics floor, so the distinguishing measurement cannot be made at all with current data. Separately, Desmond, Hees & Famaey (2024) — the same paper TEST-25 inherits — pre-empts this test. Demoted here 2026-08-10 after a visitor Pass 3 found this page still selling it; the closure was on the Tier-1 ledger since 2026-06-07 and never propagated to the page a researcher opens to find live tests.',
+  },
+  {
+    id: 'TEST-11',
+    name: 'EEG Anesthesia Phase Transition',
+    status: 'NOT RANKABLE — OBSERVABLES OPERATIONALLY UNDEFINED (demoted 2026-08-10)',
+    verdict: 'Ranked #2 among decisive tests at $150K while this same page conceded that D and S — the two parameters in the consciousness equation the experiment would measure — are "not yet operationally defined." A test whose observables have no definition cannot be ranked among the most discriminating; there is no calibration procedure mapping any EEG quantity onto the C axis, so no outcome could be scored against a prediction. The gap is upstream of the experiment and no amount of funding closes it. It stays in the catalog as Tier 2 (TEST-11 — the ID retained; the Cassini squeeze that had been colliding with it was renumbered TEST-25 on 2026-08-10) and returns to a ranking only if D and S acquire measurement protocols. Demoted after a visitor Pass 3 flagged the contradiction between the ranking and the page\'s own caveat.',
+  },
+  {
     id: 'TEST-04a',
     name: 'DESI RSD fσ₈ Suppression',
     status: 'DISFAVORED 2.4σ on σ₈ — ~1.5σ on Registered fσ₈ (corrected 2026-07-14)',
@@ -79,10 +78,36 @@ export default function Top5Tests() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
-          Of the defined experiments, these have the highest <strong>distinguishing
-          power</strong> &mdash; tests that can discriminate between Synchronism and existing frameworks.
-          Two predictions have now closed: one is disfavored 2.4σ on σ₈ amplitude but the registered fσ₈ kill criterion fell short of its own &gt;3σ bar (post-hoc; corrected 2026-07-14), one withdrawn by internal contradiction.
+          Of the defined experiments, these were ranked by <strong>distinguishing power</strong> &mdash;
+          capacity to discriminate between Synchronism and existing frameworks.
         </p>
+        <div style={{
+          background: 'rgba(239,68,68,0.08)',
+          border: '1px solid rgba(239,68,68,0.35)',
+          borderRadius: '0.375rem',
+          padding: '0.8rem 1rem',
+          marginBottom: '1.25rem',
+          fontSize: '0.87rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#ef4444' }}>This page is now empty at the top, and that is the
+          result (2026-08-10).</strong>{' '}
+          <strong>There are zero active discriminating tests.</strong> The two that stood here until today
+          were demoted, both for reasons that had been documented elsewhere on this site and had never
+          reached this page: TEST-02 is <em>self-eliminating-or-tie</em> — no Gaia outcome selects the
+          framework, and the confirmation branch sits ~80× below the systematics floor — and the EEG test
+          ranks an experiment whose two observables have no operational definition. Neither was refuted
+          today; both were closed weeks ago on{' '}
+          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>{' '}
+          while this page — the one a researcher opens to find what could still work — kept advertising
+          them. That propagation lag is the defect a visitor Pass 3 caught, not the emptiness.{' '}
+          <strong>The emptiness is corroborated independently:</strong>{' '}
+          <Link href="/test-catalog" style={{ color: 'var(--color-accent-blue)' }}>the 24-test catalog</Link>{' '}
+          finds <strong>0 of 24 designed experiments could select Synchronism over MOND+EFE+ΛCDM</strong> —
+          a structural result about the theory that required no data at all. Two closed predictions remain
+          below: one disfavored 2.4σ on σ₈ while its registered fσ₈ criterion fell short of its own &gt;3σ
+          bar (post-hoc either way; corrected 2026-07-14), one withdrawn on internal contradiction.
+        </div>
 
         <div style={{
           background: 'rgba(245,158,11,0.07)',
@@ -96,12 +121,15 @@ export default function Top5Tests() {
           <strong style={{ color: '#f59e0b' }}>Referee note:</strong>{' '}
           For a test to decisively discriminate, it needs both (a) a derived quantitative prediction
           from the framework&apos;s parameters and (b) a prediction that differs numerically from MOND+EFE.
-          Of the tests listed below, <strong>none currently satisfies both conditions</strong>:
-          TEST-02 has no computed ξ(ρ) functional form, so MOND+EFE degeneracy is unresolved;
-          TEST-11 (consciousness) has undefined D and S parameters;
+          Of every test ever listed on this page, <strong>none has satisfied both conditions</strong>:
+          TEST-02 never had a computed ξ(ρ) functional form, so MOND+EFE degeneracy was never resolved
+          (now closed as self-eliminating);
+          TEST-11 (consciousness) has undefined D and S parameters (now demoted as not rankable);
           TEST-07 has no derived amplitude;
           TEST-15 is monitoring-only.
-          These are aspirations with the highest discrimination potential &mdash; not confirmed discriminators.
+          Applied consistently, this criterion empties the page &mdash; which is the honest reading, and is
+          why the ranked list above is now empty rather than reordered. These were aspirations with the
+          highest discrimination potential, never confirmed discriminators.
         </div>
 
         <div style={{
@@ -113,13 +141,15 @@ export default function Top5Tests() {
           fontSize: '0.85rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: '#ef4444' }}>Scorecard (2026-05-13):</strong>{' '}
+          <strong style={{ color: '#ef4444' }}>Scorecard (updated 2026-08-10; previously stamped 2026-05-13
+          and stale by three months):</strong>{' '}
           Confirmed: <strong>0</strong> &nbsp;|&nbsp;
-          Disfavored 2.4σ (σ₈ amplitude): <strong>1</strong> (TEST-04a post-hoc, kill triggered; reframed 2026-07-02) &nbsp;|&nbsp;
+          <strong style={{ color: '#ef4444' }}>Active discriminating: 0</strong> &nbsp;|&nbsp;
+          Disfavored 2.4σ (σ₈ amplitude): <strong>1</strong> (TEST-04a post-hoc, registered endpoint underpowered; reframed 2026-07-02) &nbsp;|&nbsp;
           Withdrawn: <strong>1</strong> (TEST-04 internal contradiction) &nbsp;|&nbsp;
-          Active: <strong>1 discriminating</strong> (TEST-02, EFE-degeneracy caveat pending) &nbsp;|&nbsp;
-          Monitoring: <strong>1</strong> (TEST-07 no derivation) &nbsp;|&nbsp;
-          New domains: <strong>1 untested</strong> (TEST-11 consciousness)
+          Closed self-eliminating: <strong>1</strong> (TEST-02) &nbsp;|&nbsp;
+          Not rankable, observables undefined: <strong>1</strong> (TEST-11 consciousness) &nbsp;|&nbsp;
+          Monitoring: <strong>1</strong> (TEST-07 no derivation)
         </div>
 
         <h3 style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.75rem' }}>

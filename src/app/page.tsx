@@ -236,7 +236,17 @@ export default function Home() {
               alignItems: 'center',
             }}>
               <span>Prospective predictions confirmed: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Refutations executed on external data: <strong style={{ color: '#ef4444' }}>6</strong> — BTFR slope (TEST-09, registered kill fired 3.3σ, 2026-07-14), dwarf DM fractions (TEST-10, 69% of SPARC above the framework&apos;s 68.5% structural ceiling, 2026-07-15), environment null (registered run r²=0.0001 vs &gt;20% claim), RAR shape (γ=2, ΔBIC=+184; conservative ≥+33; free-γ→MOND (Modified Newtonian Dynamics)), Cassini/SPARC joint squeeze (TEST-11, +17.95σ, empty intersection between the SPARC-preferred γ and the Solar System bound), Bell/CHSH substrate test (Bet B1, refuted on both no-signaling arms) &mdash; the last two added 2026-07-30 after two visitor personas independently found them executed and badged Failed elsewhere on the site but missing from this count, with no stated reason</span>
+              <span>Refutations executed on external data: <strong style={{ color: '#ef4444' }}>6</strong>{' '}
+              <strong style={{ color: '#f59e0b' }}>— but only 2 are framework-specific independent roots</strong>{' '}
+              (added to this lead 2026-08-10; the subtraction was already published on{' '}
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
+              and had never reached the scoreboard). TEST-09 and TEST-10 share one root (the boost
+              ceiling); TEST-25 is inherited from Desmond, Hees &amp; Famaey 2024 and this site labels it
+              non-discriminating; the CHSH null is Bell&apos;s theorem executing as designed; the
+              environment null refuted a registered amplitude the framework&apos;s own mechanism puts
+              ~10<sup>&minus;3</sup> dex below the kill bar. What survives as framework-specific: the
+              boost ceiling and the γ=2 pin &mdash; and the second refutes a parameter that was never
+              derived. Full list — BTFR slope (TEST-09, registered kill fired 3.3σ, 2026-07-14), dwarf DM fractions (TEST-10, SPARC&apos;s maximum observed f<sub>DM</sub> = 0.927 demands a boost B ≥ 13.7 that no candidate cosmic ratio supplies, 2026-07-15 &mdash; lead corrected 2026-08-10 from &ldquo;69% of SPARC above the 68.5% ceiling,&rdquo; which holds only under the underived convention B<sub>max</sub> = 1/Ω<sub>m</sub>; under Ω<sub>m</sub>/Ω<sub>b</sub> ≈ 6.40 the SPARC median passes), environment null (registered run r²=0.0001 vs &gt;20% claim), RAR shape (γ=2, ΔBIC=+184; conservative ≥+33; free-γ→MOND (Modified Newtonian Dynamics)), Cassini/SPARC joint squeeze (TEST-25, +17.95σ, empty intersection between the SPARC-preferred γ and the Solar System bound), Bell/CHSH substrate test (Bet B1, refuted on both no-signaling arms) &mdash; the last two added 2026-07-30 after two visitor personas independently found them executed and badged Failed elsewhere on the site but missing from this count, with no stated reason</span>
               <span>Post-hoc retrodictions attempted: <strong style={{ color: '#f59e0b' }}>1 — underpowered</strong> (DESI fσ₈ — disfavored 2.4σ on σ₈, but the registered fσ₈ criterion fell short of its own &gt;3σ bar and is not counted as a refutation; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
               <span>&ldquo;Validated&rdquo; claims surviving audit: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 6</strong> — all demoted (current ledger: 5 reparametrizations; the sixth, the BTFR slope, moved to the refutation column 2026-07-14)</span>
@@ -299,9 +309,21 @@ export default function Home() {
                 <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>23 curated on-site; a 2-parameter null model matches or beats every correlation</div>
               </div>
               <div className="card" style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>14,760</div>
+                <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>14,610</div>
                 <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Galaxies analyzed</div>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>175 SPARC + 14,585 ALFALFA-SDSS</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>
+                  175 SPARC + 14,435 ALFALFA&ndash;SDSS (the sample actually <em>run</em>)
+                </div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.7rem', marginTop: '0.3rem', lineHeight: 1.5 }}>
+                  Corrected 2026-08-10 from &ldquo;14,760 (175 + 14,585).&rdquo; 14,585 is the{' '}
+                  <em>registered</em> cross-match for TEST-03 &mdash; a test this site&apos;s own ledger
+                  marks <strong>never run as registered</strong>. The definitive session analysed
+                  N&nbsp;=&nbsp;14,435. The headline had been quoting the sample that wasn&apos;t
+                  measured. Both figures were already flagged on{' '}
+                  <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link>{' '}
+                  and <Link href="/dark-matter" style={{ color: 'var(--color-accent-blue)' }}>Dark Matter</Link>;
+                  the correction had not reached this tile.
+                </div>
               </div>
             </div>
           </section>

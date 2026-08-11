@@ -1,1 +1,15 @@
 Starting Synchronism Explorer Session at Tue Aug 11 08:00:02 PDT 2026
+Session complete — both repos committed and pushed (site `43a047c`, Synchronism `2339c5de`).
+
+## TLDR
+
+I executed the dispatched topic — deriving the cosmic 00-component covariantly — and the answer is the interesting third option nobody framed: **the sign lock dies, but the DESI no-go it was protecting comes out stronger, hardening from "model as specified" to "model class."** And along the way, a sharper result: **the archive's own covariant field equation has no dark-energy sector at all.**
+
+**The structural discovery.** Session #100's dark-energy sector assumes both `H² = 8πGρ_m/(3C)` and `ρ_m ∝ a⁻³`. Those two jointly violate the Bianchi identity of Appendix D §D.3's own equation `G_μν = 8πG T_μν/C` — the substituted model isn't a solution of *any* covariant theory. Appendix D §D.7 conceded this in December 2025 ("ensuring energy-momentum conservation, potentially via additional internal fields") and it was never executed. The two minimal repairs bracket the completion space:
+
+- **Completion A** (the equation as written, no new fields): Bianchi forces `ρ/C ∝ a⁻³`, so the background is **exactly Einstein–de Sitter** for every γ and ρ_crit (verified to 3.5×10⁻¹³). The C-boost is forced to dilute like *matter* — the coupling can manufacture dark-matter phenomenology, never dark energy. "Dark energy emerges naturally" was the conservation assumption read back. Bonus: the vacuum floor makes the FRW constraint unsolvable past a ≈ 1.037 — about 4% more expansion — so the L1 lift is now closed a priori in *both* sectors.
+- **Completion B** (C as a Brans-Dicke scalar pinned to its algebraic trajectory): the Ċ terms destroy the w = −1 attractor (every γ now ends in a finite-scale-factor singularity), break the γ = 1/2 Λ-degeneracy (no member of the completed family is ΛCDM anymore), and kill the literal sign lock — but **0 of 192 γ values, at four Brans-Dicke ω values, reach the DESI quadrant**. Matching DESI's w₀ forces wₐ to the wrong sign in all four data combinations.
+
+**The one-line why**: for any dark energy slaved to matter density, `w_DE = dlnF/dlnx` with F = ρ_DE/ρ_m. DESI's phantom crossing requires an interior *maximum* of ρ_DE(x); this family only ever produces monotone (→ sign lock), an interior *minimum* (→ crossing in the anti-DESI direction), or zero. That's now TEST-26's exact escape condition.
+
+Refutation count untouched at 6 (fork closure + hardening, nothing newly counted). Finding, script, and output are in `explorer/findings/`; back-annotation proposal is in the Synchronism repo; SESSION_FOCUS carries four maintainer items (honest-assessment lead extension, TEST-26 Strategy card resolution, Appendix D note, PREDICTIONS.md conditionality update). One flag for dp: the `w = dlnF/dlnx` identity needs a prior-art check against the interacting-DE/dark-degeneracy literature before any external claim.

@@ -1,0 +1,126 @@
+UNIT TEST of w estimator on matter/radiation/Lambda: pass = True
+
+==============================================================================
+COMPLETION A -- Appendix D's own equation, G_munu = 8 pi G T_munu/C
+==============================================================================
+
+  Bianchi bookkeeping (exact, no numerics needed):
+    T~_munu = (rho/C) u_mu u_nu is a dust tensor. nabla G = 0 forces
+    nabla T~ = 0, i.e. rho/C propto a^-3 and geodesic dust. The 00-component
+    3H^2 = 8 pi G rho/C then reads 3H^2 = 8 pi G K a^-3:
+
+        THE BACKGROUND IS EXACTLY EINSTEIN-DE SITTER (Omega_eff = 1 matter).
+
+    The 'emergent dark energy' of Session #100 was assumption (ii) read back:
+    holding rho_m propto a^-3 while modifying the coupling puts the boost
+    (1-C)/C into a component nothing conserves. Under the archive's own
+    covariant equation the boost is forced to dilute like MATTER -- the
+    C-coupling can manufacture dark-matter-like phenomenology, never dark
+    energy. If one insists on writing the EdS background as LCDM + 'DE', the
+    DE component is (1-Omega_m) a^-3: w = 0 exactly, (w0, wa) = (0, 0).
+
+  Vacuum floor check (gamma = 2.0, x0 = 0.16738):
+    (rho/C)/rho_crit today K = 0.55793; floor = 1/gamma = 0.50000
+    -> the constraint rho/C = K a^-3 has NO solution for a > 1.0372
+    i.e. matter density is driven to exactly zero at finite scale
+    factor a_end = 1.0372 (3.72% of expansion from now);
+    the field equation has no FRW solution beyond it. This is the
+    FRW avatar of the vacuum source floor that killed L1 in the
+    galaxy sector (Appendix D correction, 2026-08-09).
+    Implicit-solution check: max |H^2 a^3 / H0^2 - 1| = 3.5e-13 (EdS to machine precision)
+
+  EdS vs LCDM(0.315) shape over 0.3 < z < 2.33, scale (r_d H0)
+  marginalised: rms = 8.6%  against ~1% BAO precision.
+  (This is the pre-1998 SCDM background; the exclusion is the
+   original dark-energy discovery itself, not a new computation.)
+
+==============================================================================
+COMPLETION B -- Brans-Dicke 00-component, C pinned to C(rho_m(a))
+==============================================================================
+
+  Control: B == 1 must reproduce the 2026-08-10 substituted-model numbers.
+    substituted gamma=0.489: w0 = -0.9945, wa = +0.0197  (2026-08-10 script agrees)
+    substituted gamma=2.000: w0 = -1.1303, wa = -1.9132  (2026-08-10 script agrees)
+
+  Structure of the completed model (omega = 0):
+    gamma         x0       C0       B0    a_rip    w(z=0)    w(z=1)  w(z=2.33)
+    0.200    44.7113   0.6437   0.4661   1.6755   -0.9219   -0.5415    -0.4676
+    0.489     7.9411   0.7899   0.3798   1.2465   -2.1174   -1.0593    -0.9955
+    0.500     7.6526   0.7928   0.3784   1.2414   -2.1564   -1.0780    -1.0161
+    1.000     2.6697   0.8617   0.3481   1.1403   -3.5166   -1.9168    -1.9737
+    2.000     1.0814   0.8988   0.3338   1.0984   -4.9070   -3.4995    -3.8798
+    5.000     0.3762   0.9211   0.3257   1.0761   -6.2838   -7.2674    -9.2636
+
+  Note x0 and C0: the calibration C0*B0 = Omega_m pushes today's coherence
+  far above the substituted model's C0 = 0.3, and a finite-a future
+  singularity (a_rip) exists for every gamma -- the w = -1 attractor that
+  generated the sign lock is gone.
+
+  Past-limit check, w(z=999) vs -2*gamma (the lock's past anchor):
+    gamma=0.300:  w(z=999) =   -0.6000   -2*gamma =   -0.6000
+    gamma=0.489:  w(z=999) =   -0.9780   -2*gamma =   -0.9780
+    gamma=1.000:  w(z=999) =   -2.0000   -2*gamma =   -2.0000
+    gamma=2.000:  w(z=999) =   -4.0000   -2*gamma =   -4.0000
+
+  gamma = 1/2 branch (exact Lambda in the substituted model):
+    completion B: w(0) = -2.1564, w(1) = -1.0780, w(2.33) = -1.0161
+    -> the Mobius/Lambda degeneracy is BROKEN by the C-dot terms;
+       no member of the completed family is exactly LCDM.
+
+  QUADRANT SCAN, omega = 0 -- where does the completed locus land?
+     gamma    w0_CPL    wa_CPL  CPL rms%                   quadrant
+     0.050   -0.2211   +0.0831     0.006            w0 > -1, wa > 0
+     0.100   -0.4418   +0.2438     0.033            w0 > -1, wa > 0
+     0.200   -0.8531   +0.6132     0.185            w0 > -1, wa > 0
+     0.300   -1.2150   +0.9693     0.317            w0 < -1, wa > 0
+     0.400   -1.5340   +1.2957     0.397            w0 < -1, wa > 0
+     0.489   -1.7885   +1.5651     0.433            w0 < -1, wa > 0
+     0.500   -1.8183   +1.5973     0.436            w0 < -1, wa > 0
+     0.600   -2.0738   +1.8804     0.449            w0 < -1, wa > 0
+     0.800   -2.5140   +2.4050     0.440            w0 < -1, wa > 0
+     1.000   -2.8780   +2.8799     0.417            w0 < -1, wa > 0
+     1.500   -3.5518   +3.8511     0.366            w0 < -1, wa > 0
+     2.000   -4.0084   +4.5562     0.335            w0 < -1, wa > 0
+     3.000   -4.5808   +5.4542     0.302            w0 < -1, wa > 0
+     5.000   -5.1495   +6.3089     0.276            w0 < -1, wa > 0
+    10.000   -5.6594   +6.9869     0.257            w0 < -1, wa > 0
+    20.000   -5.9467   +7.3098     0.248            w0 < -1, wa > 0
+
+  DENSE SCAN omega=0: 0 of 192 gamma values land in the DESI quadrant (w0 > -1, wa < 0)
+
+  OMEGA DEPENDENCE (dense gamma scan per omega):
+    omega =   0.0: 0 hits
+    omega =   1.0: 0 hits
+    omega =   5.0: 0 hits
+    omega =  50.0: 0 hits
+
+  MATCHING DESI (omega = 0.0): force w0, read the forced wa
+    BAO+CMB                w0 = -0.420 -> gamma =  0.0950 -> wa = +0.226  (DESI: -1.750 +/- 0.58; wrong sign, 3.4 sigma)
+    BAO+CMB+Pantheon+      w0 = -0.838 -> gamma =  0.1961 -> wa = +0.599  (DESI: -0.620 +/- 0.22; wrong sign, 5.5 sigma)
+    BAO+CMB+Union3         w0 = -0.667 -> gamma =  0.1533 -> wa = +0.439  (DESI: -1.090 +/- 0.31; wrong sign, 4.9 sigma)
+    BAO+CMB+DESY5          w0 = -0.752 -> gamma =  0.1743 -> wa = +0.518  (DESI: -0.860 +/- 0.22; wrong sign, 6.3 sigma)
+
+  BAO SHAPE CONSTRAINT, completion B (omega = 0.0):
+  Omega_m (calibration target) and scale k MARGINALISED;
+  reference LCDM Omega_m = 0.315, range 0.3 < z < 2.33.
+    gamma  rms shape resid %  profiled Om   vs ~1% BAO
+    0.050              1.568       0.1269     marginal
+    0.100              1.363       0.2151     marginal
+    0.150              1.090       0.2578     marginal
+    0.200              0.797       0.2698           OK
+    0.250              0.509       0.2637           OK
+    0.300              0.251       0.2471           OK
+    0.400              0.383       0.1984           OK
+    0.489              0.796       0.1486           OK
+    0.500              0.845       0.1423           OK
+    0.700              1.658       0.0500     marginal
+    1.000              3.398       0.0500     EXCLUDED
+    2.000              5.922       0.0500     EXCLUDED
+  -> best member of the completed family: gamma ~ 0.3, rms 0.251%
+     (substituted family's best member: gamma = 1/2, rms 0.000%)
+
+  w(z) shape, gamma = 0.489, omega = 0.0: peak w = -0.9882 at z = 3.000; w(0) = -2.1174
+  w(z) shape, gamma = 0.7, omega = 0.0: peak w = -1.3960 at z = 2.251; w(0) = -2.7884
+  w(z) shape, gamma = 1.0, omega = 0.0: peak w = -1.9057 at z = 0.718; w(0) = -3.5166
+  w(z) shape, gamma = 2.0, omega = 0.0: peak w = -2.9285 at z = 0.285; w(0) = -4.9070
+

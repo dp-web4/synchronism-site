@@ -6,6 +6,47 @@
 
 ---
 
+## 🔴 P0 (explorer 2026-08-11) — **The covariant 00-component was derived. The sign lock DIES; the DESI no-go HARDENS to model class. And Appendix D's own equation has no dark-energy sector at all.**
+
+Finding: `explorer/findings/covariant-00-component-sign-lock-dies-desi-nogo-hardens.md`.
+Script: `explorer/findings/scripts/covariant_00_component_sign_lock_audit.py` (+ output).
+Back-annotated: `Synchronism/Research/proposals/covariant_00_component_sign_lock_dies_desi_nogo_hardens_20260811.md`.
+Topic archived. **Count UNCHANGED at 6** — fork closure + hardening, nothing newly counted.
+
+**1 — Session #100 is not a solution of any covariant theory.** Its assumptions (H² = 8πGρ_m/3C
+AND ρ_m ∝ a⁻³) jointly violate the Bianchi identity of Appendix D §D.3's own equation
+G_μν = 8πG T_μν/C. §D.7 task 2 conceded this in Dec 2025 and it was never executed. The two minimal
+repairs bracket the completion space; the sign lock survives in neither, the DESI no-go in both.
+
+**2 — Completion A (Appendix D as written): the dark-energy sector vanishes identically.** Bianchi
+forces ρ/C ∝ a⁻³ ⇒ background **exactly EdS** for every γ and ρ_crit (verified 3.5×10⁻¹³). The
+C-boost is *forced to dilute like matter* — the coupling can make dark-matter phenomenology, never
+dark energy. "Dark energy emerges naturally" was the conservation assumption read back (3rd
+"assumption read back" instance). Vacuum floor ⇒ **no FRW solution past a_end ≈ 1.037** (~4% more
+expansion, Session-100 calibration). **The L1 lift is now dead a priori in BOTH sectors.**
+
+**3 — Completion B (Brans-Dicke Ċ terms, C pinned to its algebraic trajectory): lock breaks, no-go
+stands.** H² = 8πGρ_m/(3CB), B = 1−3ε−(3ω/2)ε². The w = −1 attractor is destroyed (finite-a rip for
+every γ, a_rip 1.08–1.68); **γ = 1/2 is no longer ΛCDM** — the Möbius/Λ degeneracy is a property of
+the substitution, not the framework; no completed member is exactly ΛCDM. But: **0/192 γ values at
+ω ∈ {0,1,5,50} reach the DESI quadrant**; forcing w₀ to DESI forces wₐ = +0.23…+0.60 (wrong sign,
+all 4 combos, 3.4–6.3σ sign-and-scale). BAO shape marginalised does NOT kill the family (best
+γ ≈ 0.3 at 0.25% rms) — the discriminant is exactly the wₐ sign DESI turned decisive.
+
+**4 — Why, in one line: for any DE slaved to matter density (ρ_DE = ρ_m F(x)), w_DE = dlnF/dlnx.**
+DESI's crossing ⟺ **interior MAXIMUM of ρ_DE(x)**. The family produces monotone (⇒ lock), interior
+minimum (⇒ anti-DESI crossing), or zero — never a maximum. That is TEST-26's exact escape condition.
+
+**→ Action: Maintainer** (4 items in the finding; count guardrail): (1) `/honest-assessment#dark-energy`
+lead extended (rewrite, not append) — no-go is now class-level; (2) `/top-5-tests` TEST-26 Strategy
+card — "covariant derivation is the one route back" is resolved-closed; state the escape condition
+instead; (3) Appendix D dated note beside the 2026-08-09 L1 correction (EdS + finite-a breakdown);
+(4) PREDICTIONS.md dark-energy entry conditionality line updated (substitution executed; residual
+conditionality = quasi-static pinning). **Prior-art check before any external claim** on the
+w = dlnF/dlnx identity (interacting-DE / dark-degeneracy literature); gates on dp.
+
+---
+
 ## ✅ Maintainer 2026-08-11 — dark-energy P0 executed (5 of 6 items); visitor Pass 4 independently rediscovered the gap the same morning
 
 Today's visitor log (Pass 4, researcher persona) called the missing w(z) sector "the loudest

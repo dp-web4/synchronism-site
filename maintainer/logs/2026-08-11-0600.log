@@ -1,1 +1,22 @@
 Starting Synchronism Maintainer Session at Tue Aug 11 06:00:01 PDT 2026
+Session complete — both repos pushed, Vercel deploying. Here's the summary:
+
+## What happened
+
+**WAKE finding:** Today's visitor log confirmed the feedback loop working at full speed — Pass 4 (researcher persona) ranked "no dark-energy sector anywhere" as the site's loudest omission, **one day after the explorer derived that exact sector** and proved it forbids the DESI-preferred quadrant. The site's lead sentence was still false when the persona browsed. So today was a propagation session, and the research-direction proposal already existed (`dark_energy_sector_exists_and_forbids_desi_quadrant_20260810.md`) — no new one needed.
+
+**Site changes (pushed, `7cf3c51`):**
+- **/honest-assessment** — the false "C(ρ) contains no dark-energy sector" sentence rewritten as the lead (not annotated): the sector exists (Session 100, Dec 2025), the corrected w(z) runs monotonically from −2γ to −1, and the sign-lock sign(w₀+1)=sign(wₐ) forbids the phantom crossing DESI DR2 prefers in all four data combinations. Both honest bounds carried: the γ=½ branch *is* ΛCDM (so "refuted by DESI" would over-claim), and the lock is conditional on the non-covariant substitution. Refutation count untouched at 6.
+- **/top-5-tests** — TEST-26 added as "Proposed — prospective registration pending adoption" (explicitly kill-or-tie; adoption gates on you). Also fixed a fossil: the page's Strategy card still directed work to TEST-02, a test the same page closed as self-eliminating on 08-10.
+- **Landing** — the "0 of 6 survived audit" headline now carries the instrument-limitation caveat at point of headline (the audit false-flags 6/6 genuine discoveries — Dirac through Noether — so the audit null is instrument-limited, kept separate from the data-driven kills). Also fixed a same-page drift: the Cosmology card still said 14,760 galaxies after the 08-10 tile correction to 14,610.
+- Build passes clean.
+
+**Back-annotations (Synchronism repo, pushed, `a066dc57`):** dated errata on Sessions #100 and #101 — the w_eff sign error, the dropped −1 term, corrected w_eff(0) = −1.24 (not "> 0"), and withdrawal of #101's "category error" framing (its "different cosmic form" is identically the galactic form at γ=½). The PREDICTIONS.md:152 retraction was already inscribed by the explorer; verified in place.
+
+**Verified-manufactured:** Pass 1's claim that the beginner path uses "ansatz/phenomenological/Hamiltonian/compander with no explanation" is false — all four carry inline plain-word glosses, three inside a collapsed "For physicists — skip freely" block. Only MOND's first use genuinely preceded its gloss (fixed). Logged as confirmation #6 of the verify-both-directions rule.
+
+**Seeded for the explorer:** the covariant 00-component derivation (does the sign lock survive Ċ terms? — the one identified route back to a discriminating test) and the never-audited Session #107 DESI forecasts (~16 cosmology-arc files remain unread by any track).
+
+**Gates on you (dp):** TEST-26 adoption (and with it /falsifiability 0→1 prospective), and the canonical refutation-count figure (6 vs ≤5 vs 3–4 roots per the independence audit).
+
+**So what:** the site moved from *silent* on the dominant live cosmology anomaly to *forbidding* it — a falsifiable, currently-disfavoured, pre-registrable position, which is strictly more scientific content than honest silence.

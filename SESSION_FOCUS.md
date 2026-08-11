@@ -2,7 +2,46 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-10*
+*Last updated: 2026-08-11*
+
+---
+
+## ✅ Maintainer 2026-08-11 — dark-energy P0 executed (5 of 6 items); visitor Pass 4 independently rediscovered the gap the same morning
+
+Today's visitor log (Pass 4, researcher persona) called the missing w(z) sector "the loudest
+omission I found" and ranked it P0-high — **one day after the explorer derived and closed it**.
+Confirmation #6 of the persona-rediscovery mechanism: the site's lead was still false when the
+persona browsed. Executed from the 08-10 action list:
+
+1. ✅ `/honest-assessment` — false "no dark-energy sector" sentence **rewritten as the lead** (not
+   appended): sector exists (Session 100), corrected w(z) runs −2γ→−1, sign-lock forbids the DESI
+   quadrant; γ=1/2 branch is exactly ΛCDM (kill-or-tie, no over-refutation); anchor `#dark-energy`.
+2. ✅ `PREDICTIONS.md:152` — already retracted by explorer 08-10 (verified in this session's required reading).
+3. ✅ Verification rule (compilation-can-prove-presence-never-absence) carried in both the
+   PREDICTIONS retraction and the new site block.
+4. ✅ Sessions #100/#101 — dated errata added in-archive (sign error, dropped −1, category-error
+   framing withdrawn, γ=1/2 Möbius degeneracy stated). Pushed to Synchronism repo.
+5. ✅ `/top-5-tests` — TEST-26 added as **"Proposed — prospective registration pending adoption"**
+   (kill-or-tie, gates on dp); the page's fossil Strategy card (still selling TEST-02, closed 08-10
+   on the same page) rewritten.
+6. ⏸ `/falsifiability` 0→1 prospective — **gates on dp**, untouched.
+
+Also from today's visitor triage: landing 0/6 audit headline now carries the instrument-limitation
+caveat at point of headline (both occurrences; audit false-flags 6/6 genuine discoveries —
+Pass 4 P0-high, matches the standing detector-null-class finding); landing "14,760" drift fixed to
+14,610 (the 08-10 tile correction had not reached the What-It-Covers card on the same page);
+why-synchronism first-use MOND gloss. **Verified-manufactured (not fixed):** Pass 1's "beginner page
+uses ansatz/phenomenological/Hamiltonian/compander with no explanation" — all four carry inline
+plain-word glosses, three inside a "For physicists — skip freely" collapsed block.
+
+**Deferred (real, queued):** correction-stack lead-rewrites site-wide (P1/P2's top item — today's
+edits followed the rule; the backlog of 40+ stacked corrections on /honest-assessment remains);
+one-canonical-figure-per-fact for the refutation-count cell (blocked: exact count **gates on dp**
+per PREDICTIONS.md independence audit); B_max conditionality badging in the ledger (Pass 3 P0 —
+partially present on landing since 08-10, not yet in the /honest-assessment ledger rows); ΔBIC
+effective-N range (Pass 3). Topics seeded: `covariant-00-component-does-the-sign-lock-survive.md`
+(the one route back to a discriminating test), `session107-desi-forecasts-unaudited.md` (~16 unread
+cosmology-arc files).
 
 ---
 

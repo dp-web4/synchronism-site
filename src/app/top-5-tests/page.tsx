@@ -41,6 +41,15 @@ const pendingTests = [
   },
 ];
 
+const proposedTests = [
+  {
+    id: 'TEST-26 (proposed)',
+    name: 'DESI DR3 Dark-Energy Sign-Lock (kill-or-tie)',
+    status: 'DRAFTED 2026-08-10 — ADOPTION GATES ON OPERATOR',
+    verdict: 'The framework\'s cosmic sector (Session 100: G_eff = G/C in the Friedmann equation, C₀ = Ω_m forced, γ the only parameter) requires sign(w₀ + 1) = sign(wₐ) and cannot produce a w = −1 crossing, for any γ and any calibration. DESI DR2 prefers exactly a crossing (w₀ > −1 with wₐ < 0) in all four data combinations. Refuted if a DESI DR3 (or comparable Stage-IV) contour excludes the sign-locked locus at >3σ using the full published covariance, with Ω_m and r_d·H₀ marginalised and one SNe compilation fixed in advance. NOT discriminating in the confirming direction: the γ = 1/2 branch IS ΛCDM identically, so this test can only kill the framework or tie — recorded now so a later tie is not read as a success. If adopted, it would be the site\'s second genuinely prospective registration (after the DR2 fσ₈ pre-commitment) and its only live falsifiable position on the dominant current anomaly in cosmology. Timeline: DESI DR3 ~2027–2028. Full derivation and honest bounds: /honest-assessment#dark-energy.',
+  },
+];
+
 const closedTests = [
   {
     id: 'TEST-02',
@@ -101,6 +110,10 @@ export default function Top5Tests() {
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>{' '}
           while this page — the one a researcher opens to find what could still work — kept advertising
           them. That propagation lag is the defect a visitor Pass 3 caught, not the emptiness.{' '}
+          <strong>One candidate has appeared since (2026-08-11):</strong> a proposed kill-or-tie
+          pre-registration against DESI DR3 (TEST-26, below) &mdash; falsifiable and currently disfavoured,
+          but structurally unable to <em>select</em> the framework over &Lambda;CDM, so it does not
+          repopulate this list either.{' '}
           <strong>The emptiness is corroborated independently:</strong>{' '}
           <Link href="/test-catalog" style={{ color: 'var(--color-accent-blue)' }}>the 24-test catalog</Link>{' '}
           finds <strong>0 of 24 designed experiments could select Synchronism over MOND+EFE+ΛCDM</strong> —
@@ -149,7 +162,8 @@ export default function Top5Tests() {
           Withdrawn: <strong>1</strong> (TEST-04 internal contradiction) &nbsp;|&nbsp;
           Closed self-eliminating: <strong>1</strong> (TEST-02) &nbsp;|&nbsp;
           Not rankable, observables undefined: <strong>1</strong> (TEST-11 consciousness) &nbsp;|&nbsp;
-          Monitoring: <strong>1</strong> (TEST-07 no derivation)
+          Monitoring: <strong>1</strong> (TEST-07 no derivation) &nbsp;|&nbsp;
+          Proposed prospective, kill-or-tie: <strong>1</strong> (TEST-26 DESI DR3 sign-lock — adoption gates on operator)
         </div>
 
         <h3 style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.75rem' }}>
@@ -229,6 +243,26 @@ export default function Top5Tests() {
           ))}
         </div>
 
+        <h3 style={{ fontSize: '0.95rem', color: 'var(--color-accent-violet)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem' }}>
+          Proposed — prospective registration pending adoption
+        </h3>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
+          Drafted with a fixed refutation criterion <em>before</em> the deciding data exists. Listed
+          separately from the (empty) discriminating list because its confirming branch is a tie with
+          &Lambda;CDM, not a win.
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
+          {proposedTests.map(t => (
+            <div key={t.id} className="card" style={{ borderLeft: '3px solid var(--color-accent-violet)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.35rem' }}>
+                <h3 style={{ fontSize: '0.95rem' }}>{t.id}: {t.name}</h3>
+                <span style={{ color: 'var(--color-accent-violet)', fontFamily: 'monospace', fontSize: '0.75rem', whiteSpace: 'nowrap', marginLeft: '0.5rem' }}>{t.status}</span>
+              </div>
+              <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>{t.verdict}</p>
+            </div>
+          ))}
+        </div>
+
         <h3 style={{ fontSize: '0.95rem', color: '#ef4444', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem' }}>
           Closed predictions
         </h3>
@@ -247,19 +281,24 @@ export default function Top5Tests() {
         <h2>The Strategy</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            With TEST-04 withdrawn and TEST-04a disfavored 2.4σ on σ₈ amplitude / kill triggered (reframed 2026-07-02), the immediate discriminating work shifts to
-            TEST-02 (wide binaries, Gaia DR3 — zero cost). But TEST-02 needs a critical prerequisite:
-            compute the MOND+EFE prediction for the same observable and show where Synchronism diverges
-            numerically. Without that, a positive TEST-02 result cannot distinguish the frameworks.
+            With zero active discriminating tests, the strategy is no longer &ldquo;run the next test&rdquo; —
+            it is to hold the two falsifiable positions the framework still occupies, both prospective and
+            both kill-or-tie: the adopted DESI DR2 f&sigma;&#x2088; pre-commitment (adjudicates ~Spring 2027)
+            and the proposed TEST-26 DESI DR3 sign-lock registration (above; adoption gates on the operator).
+            Neither can select the framework over &Lambda;CDM; each can kill it or retire cleanly. That is what
+            remains when the discriminating list is honestly empty.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem' }}>
-            Cheapest tests first. TEST-02 is zero-cost analysis. TEST-11 (EEG, $150K) is next only on a
-            positive TEST-02 result.
+            The one identified route back to a discriminating test is theoretical, not observational: derive
+            the cosmic 00-component covariantly from the Appendix-D field equation and check whether the
+            &#x10A;-terms break the sign lock. If they do not, the sign-lock no-go becomes unconditional; if
+            they do, the moved locus is a new prediction.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-            * TEST-15 (GW correlation) was already constrained by GW170817 — monitoring only until a positive-signal prediction is added.
-            TEST-07 (500 Mpc Cosmic Interference) has no derivation — candidate only.
-            <Link href="/cosmic-interference" style={{ color: 'var(--color-accent-blue)', marginLeft: '0.25rem' }}>See derivation status &rarr;</Link>
+            (This card said until 2026-08-11 that &ldquo;the immediate discriminating work shifts to
+            TEST-02&rdquo; — a test closed as self-eliminating higher on this same page. * TEST-15 remains
+            monitoring-only; TEST-07 has no derivation — candidate only.
+            <Link href="/cosmic-interference" style={{ color: 'var(--color-accent-blue)', marginLeft: '0.25rem' }}>See derivation status &rarr;</Link>)
           </p>
         </div>
 

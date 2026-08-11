@@ -184,6 +184,11 @@ export default function Home() {
               <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>) and public failure log are the protocol&apos;s honest outputs.
               The decisive number: <strong>0 of 6 &ldquo;Validated&rdquo; claims survived expert audit</strong> (all demoted to Reparametrization or Failed).
               Volume (~3,300 sessions) is not evidence; the 0/6 retention rate is.{' '}
+              <em>Caveat carried at point of headline: the audit instrument, calibrated against six canonical
+              genuine discoveries (Dirac, Bell, BCS, Higgs, Hawking, Noether), false-flagged all six as
+              reparametrizations &mdash; so the audit 0/6 is instrument-limited and says little about novelty.
+              The data-driven refutations below stand on external data and do not share this caveat.
+              See <Link href="/research-philosophy" style={{ color: '#f59e0b' }}>the calibration</Link>.</em>{' '}
               <strong style={{ color: '#f59e0b' }}>Why publish a theory that didn&apos;t pan out?</strong>{' '}
               Because the honest map of what failed — and why — is the actual product.{' '}
               <Link href="/research-philosophy" style={{ color: '#f59e0b' }}>See methodology &rarr;</Link>
@@ -249,7 +254,7 @@ export default function Home() {
               derived. Full list — BTFR slope (TEST-09, registered kill fired 3.3σ, 2026-07-14), dwarf DM fractions (TEST-10, SPARC&apos;s maximum observed f<sub>DM</sub> = 0.927 demands a boost B ≥ 13.7 that no candidate cosmic ratio supplies, 2026-07-15 &mdash; lead corrected 2026-08-10 from &ldquo;69% of SPARC above the 68.5% ceiling,&rdquo; which holds only under the underived convention B<sub>max</sub> = 1/Ω<sub>m</sub>; under Ω<sub>m</sub>/Ω<sub>b</sub> ≈ 6.40 the SPARC median passes), environment null (registered run r²=0.0001 vs &gt;20% claim), RAR shape (γ=2, ΔBIC=+184; conservative ≥+33; free-γ→MOND (Modified Newtonian Dynamics)), Cassini/SPARC joint squeeze (TEST-25, +17.95σ, empty intersection between the SPARC-preferred γ and the Solar System bound), Bell/CHSH substrate test (Bet B1, refuted on both no-signaling arms) &mdash; the last two added 2026-07-30 after two visitor personas independently found them executed and badged Failed elsewhere on the site but missing from this count, with no stated reason</span>
               <span>Post-hoc retrodictions attempted: <strong style={{ color: '#f59e0b' }}>1 — underpowered</strong> (DESI fσ₈ — disfavored 2.4σ on σ₈, but the registered fσ₈ criterion fell short of its own &gt;3σ bar and is not counted as a refutation; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
-              <span>&ldquo;Validated&rdquo; claims surviving audit: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 6</strong> — all demoted (current ledger: 5 reparametrizations; the sixth, the BTFR slope, moved to the refutation column 2026-07-14)</span>
+              <span>&ldquo;Validated&rdquo; claims surviving audit: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 6</strong> — all demoted (current ledger: 5 reparametrizations; the sixth, the BTFR slope, moved to the refutation column 2026-07-14). Instrument-limited: the same audit false-flags 6/6 genuine discoveries as reparametrizations — kept in a separate cell from the data-driven refutations for that reason</span>
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>Full ledger &rarr;</Link>
             </div>
             <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.6rem 0 0' }}>
@@ -344,7 +349,7 @@ export default function Home() {
               <Link href="/galaxy-rotation" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Cosmology</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  Galaxy rotation tested on 14,760 galaxies (MOND reparametrization + environment
+                  Galaxy rotation tested on 14,610 galaxies (MOND reparametrization + environment
                   scatter). Dark matter mechanism: structural failure (Bullet Cluster sign error,
                   March 2026).
                 </p>

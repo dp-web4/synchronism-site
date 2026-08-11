@@ -1320,9 +1320,57 @@ export default function HonestAssessment() {
           <li><strong>H₀ tension (~5σ):</strong> CMB vs. distance-ladder Hubble constant disagreement. Synchronism does not address the <em>tension</em> (no mechanism for why CMB and distance-ladder measurements disagree) &mdash; but it is not silent on H₀ itself: inverting a&#8320;&nbsp;=&nbsp;cH&#8320;/(2π) gives H&#8320;&nbsp;&#8776;&nbsp;77.6&nbsp;km/s/Mpc, above both the distance-ladder and CMB values. A failing prediction is not the same as no prediction. (See <Link href="/honest-assessment#h0-tension" style={{ color: 'var(--color-accent-blue)' }}>What&apos;s Untested</Link> above.)</li>
           <li><strong>JWST early galaxies:</strong> JWST has found massive, evolved galaxies at z &gt; 10 that challenge standard structure formation. Several modified-gravity frameworks address this; Synchronism has no analysis.</li>
           <li><strong>S₈ tension (receding):</strong> KiDS/DES historically measured σ₈ lower than Planck CMB predicts. Synchronism&apos;s σ₈ prediction (0.76) was calibrated to this tension in Session 102. However, DES Y3 6×2pt and KiDS-Legacy (2024–2025) are pulling S₈ back toward Planck, weakening the tension. Synchronism&apos;s calibration anchor is a transient state, not a stable observational target — which makes TEST-04a post-hoc against a moving baseline.</li>
-          <li><strong>Evolving dark energy (DESI DR2 w&#x2080;w&#x2090;):</strong> DESI DR2 BAO combined with CMB and supernovae shows a 2.8&ndash;4.2&sigma; preference (depending on SNe compilation) for evolving dark energy (w&#x2080;w&#x2090;CDM) over &Lambda;CDM &mdash; the dominant live anomaly in cosmology right now (2025&ndash;2026). A framework claiming density&rarr;coherence&rarr;growth machinery should register whether it has any coupling to w(z). It does not: C(&rho;) contains no dark-energy sector and no mechanism that modifies the expansion history &mdash; which is itself a mark against cosmological scope. (Added 2026-07-22 after an expert visitor flagged the silence.)</li>
           <li><strong>Primordial non-Gaussianity (fNL):</strong> DESI and future surveys constrain non-Gaussianity from large-scale structure. No coherence-based prediction exists.</li>
         </ul>
+        <div id="dark-energy" style={{
+          background: 'rgba(139,92,246,0.07)',
+          border: '1px solid rgba(139,92,246,0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.9rem 1.1rem',
+          marginTop: '1rem',
+          fontSize: '0.9rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <p style={{ marginTop: 0 }}>
+            <strong style={{ color: 'var(--color-accent-violet)' }}>Evolving dark energy (DESI DR2 w&#x2080;w&#x2090;) — removed from the silence list:
+            the framework has a dark-energy sector, and it forbids the quadrant DESI prefers.</strong>{' '}
+            The research archive derived the sector on 2025-12-08 (<em>Session 100, Modified Friedmann</em>):
+            H&sup2;&nbsp;=&nbsp;8&pi;G&rho;<sub>m</sub>/(3C) with &rho;<sub>DE</sub>&nbsp;=&nbsp;&rho;<sub>m</sub>(1&minus;C)/C.
+            With the archive&apos;s arithmetic corrected (its published w(z) table carried a sign error and a
+            dropped &minus;1 term; the corrected w<sub>eff</sub>(z=0) for &gamma;=2 is &minus;1.24, not the
+            &ldquo;&gt;&nbsp;0&rdquo; the archive reported), the sector is a strict one-parameter family:
+            C&#x2080;&nbsp;=&nbsp;&Omega;<sub>m</sub> is forced, &gamma; is the only knob, and{' '}
+            <strong>w(z) runs monotonically from &minus;2&gamma; in the far past to exactly &minus;1 in the far
+            future, for every &gamma;</strong>. That fixes sign(w&#x2080;&nbsp;+&nbsp;1)&nbsp;=&nbsp;sign(w&#x2090;):
+            the model approaches w&nbsp;=&nbsp;&minus;1 from one side and can never cross it.
+          </p>
+          <p>
+            DESI DR2 (arXiv:2503.14738) prefers exactly a crossing &mdash; w&#x2080;&nbsp;&gt;&nbsp;&minus;1{' '}
+            <em>with</em> w&#x2090;&nbsp;&lt;&nbsp;0 &mdash; in all four of its data combinations. The framework&apos;s
+            locus never enters that quadrant for any &gamma;; forcing w&#x2080; to match compels a w&#x2090; of the
+            wrong sign (offsets 3.4&ndash;5.4&sigma; across the four combinations). Two honest bounds on that
+            statement: <strong>(1)</strong> the &gamma;&nbsp;=&nbsp;1/2 branch is <em>exactly</em> &Lambda;CDM
+            (C&nbsp;&equiv;&nbsp;&Omega;<sub>m</sub>(z) identically &mdash; the same algebraic degeneracy that makes
+            &gamma;&nbsp;=&nbsp;1/2 MOND&apos;s simple &mu; in the galaxy sector), so it inherits &Lambda;CDM&apos;s
+            2.8&ndash;4.2&sigma; DESI tension and no more &mdash; &ldquo;refuted by DESI&rdquo; would be an over-claim.
+            <strong> (2)</strong> The sign lock holds for the model as specified (G<sub>eff</sub>&nbsp;=&nbsp;G/C
+            substituted into the Friedmann equation); a covariant completion would generate &#x10A;-terms that could
+            in principle move the locus &mdash; that derivation is open. The refutation count does <strong>not</strong>{' '}
+            change: nothing here is a new executed kill. What changes is scope &mdash; the framework is not silent
+            on the dominant live anomaly in cosmology; it <em>forbids</em> it, which is a falsifiable, currently-disfavoured
+            position adjudicable at DESI DR3 (~2027&ndash;2028). A kill-or-tie pre-registration (proposed TEST-26,
+            adoption gating on the operator) is drafted on{' '}
+            <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>Top Decisive Tests</Link>.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: 0 }}>
+            Provenance: this entry stated the opposite (&ldquo;C(&rho;) contains no dark-energy sector&rdquo;) from
+            2026-07-22 to 2026-08-11. That was a negative existence claim verified against only the compilation
+            layer (SPINE/FUNDAMENTALS/PREDICTIONS/STATUS) &mdash; the derivation had existed in{' '}
+            <code>Research/</code> since December 2025. Standing rule adopted from the failure: negative existence
+            claims must be verified against the primary derivation layer; compilation documents can establish
+            presence, never absence. Full audit: explorer finding 2026-08-10; PREDICTIONS.md retraction 2026-08-10.
+          </p>
+        </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
           Explicit silence is more honest than tacit omission: these are open problems for Synchronism, not just unaddressed topics.
         </p>

@@ -1,1 +1,14 @@
 Starting Synchronism Maintainer Session at Wed Aug 12 06:00:01 PDT 2026
+Session complete — committed and pushed to both repos (site `e3a26fa`, research `0cc468cb`); Vercel deploys automatically.
+
+## What happened
+
+**WAKE found a research-direction item, and it was filed before any fixes.** Today's researcher persona exposed a flaw in the TEST-26 draft registration itself: it adjudicates "the sign-locked locus" — an object the 08-11 covariant work killed the very next day — and the CPL-projection-artifact literature (the framework's best available defense against a premature DESI DR3 kill) was uncited anywhere. Proposal filed to `Synchronism/Research/proposals/` (gates on dp). This is the first time the criterion-object-drift failure class (which killed TEST-03 and TEST-04a post-hoc) has been intercepted *before* adoption rather than autopsied after.
+
+**The 08-11 explorer P0 queue is fully drained.** Items 3+4 (Appendix D EdS note, PREDICTIONS.md conditionality) turned out to be already done by the Publisher track this morning — verified, not duplicated. I executed items 1+2: the `/honest-assessment` dark-energy lead is rewritten to model-class level (both covariant completions, the w=dlnF/dlnx identity, the interior-maximum escape condition), and the `/top-5-tests` Strategy card's "covariant derivation is the one route back" is now marked executed-and-closed with the exact escape condition in its place.
+
+**The visitor's #1 priority shipped: `/dark-energy` exists.** Both expert personas hit the 404; the new page consolidates the construction, corrected w(z), the sign lock and its death, the γ=1/2 double-identity ("a theory whose best fit is its own disappearance"), the force-law-fork answer, per-sector ρ_crit disclosure, and honest bounds. TEST-26 is now in the test catalog, and tier-1's "flat namespace TEST-01…TEST-25" sentence — false on arrival — is corrected with a dated note.
+
+**Two more fixes:** the landing hero now says what the equation *tried* before the failure count (with MOND glossed at first use), and the `/mond-unification` EFE paragraph — which still claimed "tension with Chae 2020," a claim the research ledger withdrew on 08-05 — now carries the three expert qualifications (SEP ⇒ refutation-only channel; contested detection, cited in the framework's favor; not-evaluable per the baseline-error execution). That drift instance was found during verification, not reported by any persona.
+
+**Deferred** (logged in SESSION_FOCUS): the status-vocabulary freeze (Tech Writer's P0 — a multi-day editorial task), the kill-statistic hygiene pass (partially dp-gated), and the equation-walkthrough "+1"-regulator step. One explorer topic seeded: fit the actual w(z;γ) family to DESI chains, which also verifies the three projection-paper arXiv IDs that entered today from persona memory.

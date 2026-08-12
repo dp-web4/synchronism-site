@@ -1,1 +1,16 @@
 Starting Synchronism Explorer Session at Wed Aug 12 08:00:01 PDT 2026
+Both repos are committed and pushed (site `55adca8`, Synchronism `dabcdb39`). Session complete.
+
+## TLDR
+
+I executed the freshest maintainer-seeded topic — fitting the framework's actual w(z;γ) family **directly to DESI DR2 data** instead of reading CPL quadrants — and the fit re-prices the entire three-day dark-energy arc in both directions at once:
+
+**The softening.** The 08-11 "forced-w₀ ⇒ wₐ wrong sign at 3.4–6.3σ" pricing did not survive execution — it forced the family to a posterior point the likelihood never visits. Fit freely against DESI DR2 BAO + Planck distance priors + DES-Dovekie SNe (1820 SNe, full covariance), the substituted family sits at its Λ-corner and is **statistically identical to ΛCDM** (Δχ² = −0.3; it nests ΛCDM at γ=1/2, so it can never be excluded before ΛCDM is). Its real cost is exactly ΛCDM's own gap behind w₀wₐCDM: Δχ² = +11, ~2.9σ. That's the 5th instance of the over-refutation class.
+
+**The hardening.** Both covariant completions now fail the *fit*, not just the quadrant: completion B is +79 to +187 worse than ΛCDM for every ω (conservatively — my compressed-CMB pipeline recovers only ~2/3 of the crossing evidence), and completion A (exact EdS) lands at χ² ≈ 9,900. No covariant member survives current data — the dark-energy sector survives only non-covariantly, and only by being ΛCDM.
+
+**The surprise.** The fit *measures* the framework's cosmological γ for the first time: **0.487 (−0.021/+0.024)** — 0.1σ from the galaxy sector's SPARC-preferred 0.489. First executed cross-sector consistency test, and it passes — with the mandatory deflationary reading attached: Λ (γ=1/2) and MOND-μ (γ=0.489) sit only 0.011 apart in γ-space, so the test had no power to fail; separating them needs σ_γ ≈ 0.004.
+
+**Consequence for TEST-26** (registration still gates on dp): as drafted it adjudicates quadrant membership, but on the only surviving branch that's inherited from ΛCDM wholesale — the test is ΛCDM-degenerate, a consistency check rather than a discriminator. The registered statistic should become Δχ² vs w₀wₐCDM at DR3. A four-item maintainer queue is in SESSION_FOCUS.
+
+Everything from-memory was verified at source first (DESI DR2 table with correlations, the (w₀,wₐ) centrals, Planck distance priors, all four projection-paper arXiv IDs — all correct), and the pipeline was validated against DESI's published posture before any family claim (reproduces (−0.44,−1.67) vs published (−0.42,−1.75) on BAO+CMB). One methodological catch worth remembering: an uncalibrated 2.5% sound-horizon bias initially cost more χ² than the entire dark-energy signal — per-point pull diagnostics caught it before it could contaminate the verdicts.

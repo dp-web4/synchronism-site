@@ -137,10 +137,23 @@ export default function MondUnification() {
           g<sub>obs</sub>&nbsp;=&nbsp;g<sub>bar</sub>/C(ρ) modification (the direction the site&apos;s own
           f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C identity implies &mdash; corrected 2026-08-04, this previously
           read &ldquo;C(ρ)&middot;g,&rdquo; the opposite direction) <strong>satisfies the Strong Equivalence
-          Principle by construction and predicts EFE&nbsp;=&nbsp;0 exactly</strong> &mdash; a sharper and more
-          discriminating structural claim than &ldquo;0.3&ndash;0.4&times; MOND,&rdquo; and one already in
-          tension with Chae, Lelli, Desmond, McGaugh, Li &amp; Schombert (2020, ApJ 904, 51), who report a ~4σ
-          detection of MOND&apos;s EFE in SPARC rotation curves.
+          Principle by construction and predicts EFE&nbsp;=&nbsp;0 exactly</strong> &mdash; a sharper structural
+          claim than &ldquo;0.3&ndash;0.4&times; MOND.&rdquo; Three qualifications an expert reader supplies
+          immediately, stated here so they don&apos;t have to (rewritten 2026-08-12; this sentence previously
+          ended &ldquo;already in tension with Chae et al. 2020&rdquo;, a claim the research ledger withdrew on
+          2026-08-05): <strong>(1)</strong> EFE&nbsp;=&nbsp;0 <em>is</em> the Strong Equivalence Principle, which
+          is also &Lambda;CDM&apos;s prediction for internal galaxy dynamics &mdash; so this channel is{' '}
+          <strong>refutation-only</strong>: a confirmed EFE detection wounds this framework and &Lambda;CDM alike
+          while selecting MOND, and no EFE outcome can ever select this framework over &Lambda;CDM.{' '}
+          <strong>(2)</strong> The reported ~4&sigma; detection (Chae, Lelli, Desmond, McGaugh, Li &amp;
+          Schombert 2020, ApJ 904, 51) is contested in the literature &mdash; environmental-systematics rebuttals
+          by Freundlich et al. and Paranjape &amp; Sheth &mdash; a debate cited here in both directions, noting it
+          currently cuts in this framework&apos;s <em>favor</em>. <strong>(3)</strong> Per the ledger&apos;s
+          2026-08-05 execution, EFE&nbsp;=&nbsp;0 is <strong>not-evaluable</strong> against Chae&apos;s data
+          anyway: at Chae&apos;s own measurement radii the framework&apos;s density law misses the rotation curves
+          by 3&ndash;4 dex &mdash; 38&ndash;92&times; the entire EFE signal &mdash; so a 10&ndash;17% velocity
+          effect cannot refute (or support) a model whose baseline is off by 10&sup3;&ndash;10&#x2074; on the
+          same points.
         </p>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
           <strong style={{ color: '#38bdf8' }}>EFE = 0 survives the obvious momentum-conservation objection

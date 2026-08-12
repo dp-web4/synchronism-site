@@ -1333,7 +1333,8 @@ export default function HonestAssessment() {
         }}>
           <p style={{ marginTop: 0 }}>
             <strong style={{ color: 'var(--color-accent-violet)' }}>Evolving dark energy (DESI DR2 w&#x2080;w&#x2090;) — removed from the silence list:
-            the framework has a dark-energy sector, and it forbids the quadrant DESI prefers.</strong>{' '}
+            the framework has a dark-energy sector, and it misses the quadrant DESI prefers at the level of the
+            whole model class, not just the model as specified.</strong>{' '}
             The research archive derived the sector on 2025-12-08 (<em>Session 100, Modified Friedmann</em>):
             H&sup2;&nbsp;=&nbsp;8&pi;G&rho;<sub>m</sub>/(3C) with &rho;<sub>DE</sub>&nbsp;=&nbsp;&rho;<sub>m</sub>(1&minus;C)/C.
             With the archive&apos;s arithmetic corrected (its published w(z) table carried a sign error and a
@@ -1341,26 +1342,55 @@ export default function HonestAssessment() {
             &ldquo;&gt;&nbsp;0&rdquo; the archive reported), the sector is a strict one-parameter family:
             C&#x2080;&nbsp;=&nbsp;&Omega;<sub>m</sub> is forced, &gamma; is the only knob, and{' '}
             <strong>w(z) runs monotonically from &minus;2&gamma; in the far past to exactly &minus;1 in the far
-            future, for every &gamma;</strong>. That fixes sign(w&#x2080;&nbsp;+&nbsp;1)&nbsp;=&nbsp;sign(w&#x2090;):
-            the model approaches w&nbsp;=&nbsp;&minus;1 from one side and can never cross it.
+            future, for every &gamma;</strong> &mdash; a &ldquo;sign lock&rdquo; sign(w&#x2080;&nbsp;+&nbsp;1)&nbsp;=&nbsp;sign(w&#x2090;)
+            forbidding the w&nbsp;=&nbsp;&minus;1 crossing DESI DR2 (arXiv:2503.14738) prefers in all four of its
+            data combinations (forcing w&#x2080; to match compels a wrong-sign w&#x2090;, offsets 3.4&ndash;5.4&sigma;).
           </p>
           <p>
-            DESI DR2 (arXiv:2503.14738) prefers exactly a crossing &mdash; w&#x2080;&nbsp;&gt;&nbsp;&minus;1{' '}
-            <em>with</em> w&#x2090;&nbsp;&lt;&nbsp;0 &mdash; in all four of its data combinations. The framework&apos;s
-            locus never enters that quadrant for any &gamma;; forcing w&#x2080; to match compels a w&#x2090; of the
-            wrong sign (offsets 3.4&ndash;5.4&sigma; across the four combinations). Two honest bounds on that
-            statement: <strong>(1)</strong> the &gamma;&nbsp;=&nbsp;1/2 branch is <em>exactly</em> &Lambda;CDM
-            (C&nbsp;&equiv;&nbsp;&Omega;<sub>m</sub>(z) identically &mdash; the same algebraic degeneracy that makes
-            &gamma;&nbsp;=&nbsp;1/2 MOND&apos;s simple &mu; in the galaxy sector), so it inherits &Lambda;CDM&apos;s
-            2.8&ndash;4.2&sigma; DESI tension and no more &mdash; &ldquo;refuted by DESI&rdquo; would be an over-claim.
-            <strong> (2)</strong> The sign lock holds for the model as specified (G<sub>eff</sub>&nbsp;=&nbsp;G/C
-            substituted into the Friedmann equation); a covariant completion would generate &#x10A;-terms that could
-            in principle move the locus &mdash; that derivation is open. The refutation count does <strong>not</strong>{' '}
-            change: nothing here is a new executed kill. What changes is scope &mdash; the framework is not silent
-            on the dominant live anomaly in cosmology; it <em>forbids</em> it, which is a falsifiable, currently-disfavoured
-            position adjudicable at DESI DR3 (~2027&ndash;2028). A kill-or-tie pre-registration (proposed TEST-26,
-            adoption gating on the operator) is drafted on{' '}
-            <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>Top Decisive Tests</Link>.
+            <strong>The covariant completion was then derived, and it sharpened the verdict in both directions
+            (2026-08-11).</strong> The substituted model above is not a solution of any covariant theory: its two
+            assumptions jointly violate the Bianchi identity of the archive&apos;s own field equation
+            (Appendix D, G<sub>&mu;&nu;</sub>&nbsp;=&nbsp;8&pi;G&thinsp;T<sub>&mu;&nu;</sub>/C). The two minimal
+            repairs bracket the completion space. <strong>Completion A</strong> (the field equation exactly as
+            written): the Bianchi identity forces &rho;/C&nbsp;&prop;&nbsp;a&#x207B;&sup3;, so the background is{' '}
+            <em>exactly</em> Einstein&ndash;de Sitter for every &gamma; &mdash; the dark-energy sector vanishes
+            identically, and the FRW constraint has no solution past a&nbsp;&asymp;&nbsp;1.04.{' '}
+            <strong>Completion B</strong> (C promoted to a Brans-Dicke-type scalar pinned to its algebraic
+            trajectory): the &#x10A;-terms destroy the w&nbsp;=&nbsp;&minus;1 attractor, so the <em>literal</em> sign
+            lock dies (mixed-sign pairs exist; no member of the completed family is &Lambda;CDM) &mdash; but{' '}
+            <strong>0 of 192 &gamma; values reach the DESI quadrant at every Brans-Dicke &omega; tested</strong>{' '}
+            (0, 1, 5, 50); forcing w&#x2080; to DESI&apos;s value forces w&#x2090;&nbsp;=&nbsp;+0.23&hellip;+0.60,
+            wrong sign in all four combinations (3.4&ndash;6.3&sigma; on DESI&apos;s own &sigma;<sub>w&#x2090;</sub>,
+            sign-and-scale only). The reason is one identity: for any dark energy algebraically slaved to matter
+            density (&rho;<sub>DE</sub>&nbsp;=&nbsp;&rho;<sub>m</sub>&middot;F(x)), w<sub>DE</sub>&nbsp;=&nbsp;dlnF/dlnx,
+            so DESI&apos;s crossing requires an <strong>interior maximum of &rho;<sub>DE</sub>(x)</strong> &mdash;
+            and no completion of C&nbsp;=&nbsp;tanh(&gamma;&thinsp;ln(1+x)) produces one (the family yields monotone,
+            zero, or minimum-type &rho;<sub>DE</sub>, never a maximum). That interior-maximum condition is the exact
+            escape hatch, stated so it can be checked against any future functional commitment.
+          </p>
+          <p>
+            Three honest bounds. <strong>(1)</strong> The &gamma;&nbsp;=&nbsp;1/2 branch of the <em>substituted</em>{' '}
+            model is exactly &Lambda;CDM (C&nbsp;&equiv;&nbsp;&Omega;<sub>m</sub>(z) identically &mdash; the same
+            algebraic degeneracy that makes &gamma;&nbsp;=&nbsp;1/2 MOND&apos;s simple &mu; in the galaxy sector), so
+            that branch inherits &Lambda;CDM&apos;s 2.8&ndash;4.2&sigma; DESI tension and no more &mdash; but this
+            degeneracy is a property of the substitution, not the framework: completion B has no &Lambda;CDM member,
+            so the &ldquo;kill-or-tie&rdquo; framing of the proposed DR3 test is substitution-conditional.{' '}
+            <strong>(2)</strong> The DESI comparison here is quadrant-level in CPL (w&#x2080;,&thinsp;w&#x2090;) space.
+            Projecting a non-CPL w(z) onto that plane has known biases, and whether DESI&apos;s crossing preference
+            is robust to the parameterization is actively debated in the literature (Shlivko&nbsp;&amp;&nbsp;Steinhardt
+            2024; Cort&ecirc;s&nbsp;&amp;&nbsp;Liddle 2024; Wolf, Garc&iacute;a-Garc&iacute;a&nbsp;&amp;&nbsp;Ferreira
+            2024&ndash;25) &mdash; a debate that currently cuts in the framework&apos;s <em>favor</em> and is cited
+            here in both directions: the honest adjudication is a fit of the actual w(z;&thinsp;&gamma;) family to the
+            published chains, which has not been done. <strong>(3)</strong> Completion B pins C to its algebraic
+            trajectory (quasi-static ansatz); a dynamical enforcing sector with non-negligible stress is unconstrained
+            by anything in the archive. The refutation count does <strong>not</strong> change: nothing here is a new
+            executed kill. What stands is scope &mdash; the framework is not silent on the dominant live anomaly in
+            cosmology; every consistent completion of it <em>misses</em> that anomaly, a falsifiable,
+            currently-disfavoured position adjudicable at DESI DR3 (~2027&ndash;2028). A kill-or-tie pre-registration
+            (proposed TEST-26, adoption gating on the operator) is drafted on{' '}
+            <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>Top Decisive Tests</Link>{' '}
+            and the full sector now has its own page:{' '}
+            <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy &amp; DESI</Link>.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: 0 }}>
             Provenance: this entry stated the opposite (&ldquo;C(&rho;) contains no dark-energy sector&rdquo;) from
@@ -1369,6 +1399,11 @@ export default function HonestAssessment() {
             <code>Research/</code> since December 2025. Standing rule adopted from the failure: negative existence
             claims must be verified against the primary derivation layer; compilation documents can establish
             presence, never absence. Full audit: explorer finding 2026-08-10; PREDICTIONS.md retraction 2026-08-10.
+            The class-level hardening above replaced (2026-08-12) an earlier version of this entry whose load-bearing
+            caveat &mdash; &ldquo;a covariant completion could in principle move the locus; that derivation is
+            open&rdquo; &mdash; was resolved by execution on 2026-08-11: the completions were derived, and the locus
+            moved <em>away</em> from DESI. Covariant work independently re-verified in the research repo
+            (Publisher, 2026-08-12).
           </p>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>

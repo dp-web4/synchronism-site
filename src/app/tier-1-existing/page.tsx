@@ -190,7 +190,10 @@ export default function Tier1Existing() {
             Cause: the 24-test catalog assigns TEST-01–10 to Tier 1 and TEST-11–14 to Tier 2, and the Cassini
             squeeze — added out-of-band on 2026-07-28 — took the next number on <em>this page</em> rather than
             the next free number in the catalog. The EEG test holds the number by seniority; the interloper
-            moved. <strong>There is one flat namespace, TEST-01 … TEST-25</strong>, and no ID denotes two
+            moved. <strong>There is one flat namespace, TEST-01 … TEST-26</strong> (updated 2026-08-12: this
+            sentence read &ldquo;… TEST-25&rdquo; for two days while TEST-26, the proposed DESI DR3 dark-energy
+            no-go, already existed on Top Decisive Tests &mdash; the namespace claim was stale on arrival, which
+            is the exact defect this box documents), and no ID denotes two
             things. Citations to &ldquo;TEST-11 (Cassini)&rdquo; dated before 2026-08-10 mean TEST-25; the
             anchor <code>/tier-1-existing#TEST-25</code> is the stable target. This defect made every TEST-ID
             on the site non-citable for 13 days and was not caught by any internal audit.

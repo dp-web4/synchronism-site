@@ -154,7 +154,9 @@ export default function TestCatalog() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
           Tests use <strong>one flat namespace</strong>: TEST-01 &hellip; TEST-24 across the four tiers
           (Tier 1 = 01&ndash;10, Tier 2 = 11&ndash;14, Tier 3+ = 15&ndash;24), plus <strong>TEST-25</strong>,
-          the Cassini/SPARC squeeze added out-of-band 2026-07-28. Suffixes: <code>a</code> = amended sub-test
+          the Cassini/SPARC squeeze added out-of-band 2026-07-28, and <strong>TEST-26</strong>, the DESI DR3
+          dark-energy class no-go (proposed 2026-08-10, prospective, kill-or-tie; catalog-registered 2026-08-12
+          after a visitor pass found it existing on one page and absent here). Suffixes: <code>a</code> = amended sub-test
           registered after the parent was withdrawn (TEST-04a); <code>s</code> = substituted protocol, run on a
           different sample than the one registered (TEST-03s). Both suffixes mark a test that is{' '}
           <em>not</em> the registered one and must not be read as the parent&apos;s result.{' '}
@@ -194,6 +196,27 @@ export default function TestCatalog() {
           <Link href="/honest-assessment" style={{ color: '#10b981', fontSize: '0.85rem' }}>
             Full ledger: wins, failures, and reparametrizations &rarr;
           </Link>
+        </div>
+
+        <div style={{
+          background: 'rgba(139,92,246,0.07)',
+          border: '1px solid rgba(139,92,246,0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.7rem 1rem',
+          marginBottom: '1.25rem',
+          fontSize: '0.875rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: 'var(--color-accent-violet)' }}>TEST-26 (proposed, prospective, kill-or-tie)
+          &mdash; DESI DR3 dark-energy class no-go.</strong>{' '}
+          The framework&apos;s dark-energy sector cannot produce the w&nbsp;=&nbsp;&minus;1 crossing DESI DR2
+          prefers, at model-class level (every covariant completion misses the quadrant &mdash; hardened
+          2026-08-11). Kill fires if DR3 robustly requires that crossing; the confirming branch is a tie with
+          &Lambda;CDM, so this test cannot select the framework and is listed outside the 24-test discrimination
+          count. Adoption gates on the operator. Full statement:{' '}
+          <Link href="/top-5-tests" style={{ color: 'var(--color-accent-violet)' }}>Top Decisive Tests</Link>{' '}
+          &middot; derivation:{' '}
+          <Link href="/dark-energy" style={{ color: 'var(--color-accent-violet)' }}>Dark Energy &amp; DESI</Link>.
         </div>
 
         <h2>Overview by Tier</h2>

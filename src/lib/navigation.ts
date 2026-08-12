@@ -313,6 +313,14 @@ export const navigationTree: NavigationTree = {
       prerequisites: ['/galaxy-rotation'],
       related: ['/test-catalog', '/top-5-tests'],
     },
+    {
+      title: 'Dark Energy & DESI',
+      href: '/dark-energy',
+      desc: 'The one live falsifiable position: every completion misses the DESI quadrant',
+      keywords: ['dark energy', 'DESI', 'w0wa', 'equation of state', 'sign lock', 'TEST-26', 'Friedmann', 'covariant'],
+      prerequisites: ['/coherence-function'],
+      related: ['/honest-assessment', '/top-5-tests', '/cosmology-predictions', '/mond-unification'],
+    },
   ],
 
   'Chemistry': [

@@ -2,11 +2,66 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-11*
+*Last updated: 2026-08-12*
 
 ---
 
-## 🔴 P0 (explorer 2026-08-11) — **The covariant 00-component was derived. The sign lock DIES; the DESI no-go HARDENS to model class. And Appendix D's own equation has no dark-energy sector at all.**
+## ✅ Maintainer 2026-08-12 — 08-11 P0 queue DRAINED (all 4 items); /dark-energy SHIPPED; TEST-26 catalog-registered
+
+The 08-11 explorer finding's 4-item maintainer queue is fully executed. Items 3+4 (Appendix D
+EdS note, PREDICTIONS.md conditionality) were **already done by the Publisher track**
+(Synchronism commit f6de09d3, 2026-08-12 — it also independently re-ran the covariant checks).
+Items 1+2 done this session:
+
+1. ✅ `/honest-assessment#dark-energy` — lead **rewritten** (not appended) to class level: covariant
+   completions derived and scanned; A = exactly EdS (no DE sector, no FRW past a≈1.04); B = literal
+   sign lock dies but 0/192 γ at 4 ω reach DESI; w=dlnF/dlnx identity + interior-maximum escape
+   condition; three honest bounds (γ=1/2=ΛCDM now flagged substitution-conditional; CPL-projection
+   debate cited both ways; quasi-static pinning). Provenance note records the resolved caveat.
+2. ✅ `/top-5-tests` — TEST-26 card renamed "Class No-Go", verdict rewritten to the class statement
+   with projection-robustness pre-commitment; Strategy card's "covariant derivation is the one route
+   back" replaced with executed-and-closed + exact escape condition.
+
+**Visitor 2026-08-12 triage (4 personas).** Headline: Pass 4 (researcher) found the DE sector
+half-shipped — "lives in prose on one page, /dark-energy 404s, missing from the catalog" — and
+Pass 3 (grad student) independently demanded the cosmology page. Both P0-high. Executed:
+
+- ✅ **`/dark-energy` page SHIPPED** (new, in navigation under Cosmology): construction, corrected
+  w(z), sign lock, γ=1/2 double-identity box, both covariant completions, escape condition,
+  force-law-fork section (answers Pass 4's "which force law generates the cosmology?" — neither,
+  exactly), per-sector ρ_crit disclosure, honest-bounds list (CPL projection, background-only,
+  pinning ansatz, from-memory DESI centrals), TEST-26 + provenance chain.
+- ✅ TEST-26 registered in `/test-catalog` (namespace paragraph + violet card); `/tier-1-existing`
+  "flat namespace TEST-01…TEST-25" sentence corrected to TEST-26 with a dated note that the
+  namespace claim was stale on arrival — the exact defect that box documents.
+- ✅ Landing hero rewritten (Enthusiast P1: "handed the obituary before meeting the patient"):
+  one plain "what it tried" sentence now precedes the failure verdict; MOND glossed at first use;
+  "the honest map of where it fails is the product" now stated on the landing page.
+- ✅ `/mond-unification` EFE paragraph rewritten (Pass 4): stale "in tension with Chae 2020"
+  (withdrawn in-archive 2026-08-05!) replaced with the three qualifications — EFE=0 is SEP ⇒
+  refutation-only channel (also ΛCDM's prediction); Chae detection contested (Freundlich et al.;
+  Paranjape & Sheth — cuts in the framework's favor, now cited); not-evaluable per the 38–92×
+  baseline-error execution.
+
+**WAKE output (research-direction, filed before fixes):**
+`Synchronism/Research/proposals/test26_registration_projection_robustness_20260812.md` — the
+TEST-26 draft adjudicates the *literal sign lock*, an object the archive killed the next day;
+restate class-level + projection-robust (CPL-artifact literature = the framework's best defense,
+uncited until today). Gates on dp. Topic seeded: `fit-the-gamma-family-to-desi-chains.md`
+(chain-level fit of both w(z;γ) branches; verify the three projection-paper arXiv IDs).
+
+**Deferred (real, queued):** status-vocabulary freeze (Tech Writer P0 — 20+ terms, legend cites
+labels it never defines; multi-day editorial task, topics `badge-vocabulary-*` already queued);
+kill-statistic hygiene pass (ΔBIC +184 vs corrected ≈33/N_eff as the quoted verdict — Pass 3 P0,
+standing deferral; blocked in part on the dp-gated count reconciliation); equation-walkthrough
+"+1"-regulator step + Ising-disclaimer port (Pass 3 HIGH — argument-sweep memory note stands);
+glossary analogy-first + hover-promise resolution; tools-into-learning-paths; galaxy-plotter
+Cassini-safe ν default; chemistry Null-Class/Failed boundary; γ-calculator badge-above-input;
+TEST-04a registered-statistic-first ordering; breadcrumb aria markup.
+
+---
+
+## 🔴 P0 (explorer 2026-08-11) — **[DRAINED 2026-08-12 — all 4 maintainer items executed; see block above]** The covariant 00-component was derived. The sign lock DIES; the DESI no-go HARDENS to model class. And Appendix D's own equation has no dark-energy sector at all.
 
 Finding: `explorer/findings/covariant-00-component-sign-lock-dies-desi-nogo-hardens.md`.
 Script: `explorer/findings/scripts/covariant_00_component_sign_lock_audit.py` (+ output).

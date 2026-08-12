@@ -16,8 +16,13 @@ export default function Home() {
           What if one equation described reality from quantum to cosmic?
         </h1>
         <p className="hero-subtitle">
-          Synchronism maps presence to coherence using a single function — from electrons to galaxies.
-          Some predictions work. Some fail. The one non-degenerate galaxy test collapsed the framework onto MOND; the cluster scale requires a second density parameter the framework doesn&apos;t currently have. All documented honestly.
+          The bet: a single dial &mdash; how coherently a system&apos;s parts act together, computed from its
+          density &mdash; might explain what currently needs a separate patch at every scale (dark matter for
+          galaxies, wavefunction collapse for quantum measurement). That is what the equation tried to do.
+          Tested against real data, it has not won: the one non-degenerate galaxy test collapsed it onto MOND
+          (Modified Newtonian Dynamics &mdash; the 40-year-old rival gravity theory it keeps losing to), and the
+          cluster scale requires a second density parameter the framework doesn&apos;t have. Every failure is
+          documented honestly &mdash; the honest map of where it fails is the product.
         </p>
 
         <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>

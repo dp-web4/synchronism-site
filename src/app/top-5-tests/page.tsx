@@ -44,9 +44,9 @@ const pendingTests = [
 const proposedTests = [
   {
     id: 'TEST-26 (proposed)',
-    name: 'DESI DR3 Dark-Energy Sign-Lock (kill-or-tie)',
-    status: 'DRAFTED 2026-08-10 — ADOPTION GATES ON OPERATOR',
-    verdict: 'The framework\'s cosmic sector (Session 100: G_eff = G/C in the Friedmann equation, C₀ = Ω_m forced, γ the only parameter) requires sign(w₀ + 1) = sign(wₐ) and cannot produce a w = −1 crossing, for any γ and any calibration. DESI DR2 prefers exactly a crossing (w₀ > −1 with wₐ < 0) in all four data combinations. Refuted if a DESI DR3 (or comparable Stage-IV) contour excludes the sign-locked locus at >3σ using the full published covariance, with Ω_m and r_d·H₀ marginalised and one SNe compilation fixed in advance. NOT discriminating in the confirming direction: the γ = 1/2 branch IS ΛCDM identically, so this test can only kill the framework or tie — recorded now so a later tie is not read as a success. If adopted, it would be the site\'s second genuinely prospective registration (after the DR2 fσ₈ pre-commitment) and its only live falsifiable position on the dominant current anomaly in cosmology. Timeline: DESI DR3 ~2027–2028. Full derivation and honest bounds: /honest-assessment#dark-energy.',
+    name: 'DESI DR3 Dark-Energy Class No-Go (kill-or-tie)',
+    status: 'DRAFTED 2026-08-10 — HARDENED TO MODEL CLASS 2026-08-11 — ADOPTION GATES ON OPERATOR',
+    verdict: 'The framework\'s cosmic sector (Session 100: G_eff = G/C in the Friedmann equation, C₀ = Ω_m forced, γ the only parameter) cannot produce the w = −1 crossing DESI DR2 prefers (w₀ > −1 with wₐ < 0, all four data combinations) — and as of 2026-08-11 that statement holds for the model CLASS, not just the model as specified. The originally drafted criterion targeted the substituted model\'s literal sign lock, sign(w₀ + 1) = sign(wₐ); the covariant completions were then derived and the literal lock DIED (the Brans-Dicke completion populates mixed-sign pairs, and the Appendix-D equation as written has no dark-energy sector at all) while the no-go HARDENED: every consistent completion misses the DESI quadrant — 0/192 γ values at four Brans-Dicke ω; forced wₐ comes out +0.23…+0.60, wrong sign every time. The class statement to register: dark energy slaved to matter density reaches the DESI quadrant iff ρ_DE(x) has an interior maximum, and no completion of C = tanh(γ·ln(1+x)) produces one. Kill fires if DR3 (full published covariance, Ω_m and r_d·H₀ marginalised, one SNe compilation fixed in advance) robustly requires the crossing the class cannot produce — with a pre-committed projection-robustness check, since the CPL (w₀, wₐ) crossing preference is itself debated as a parameterization artifact (Shlivko & Steinhardt 2024; Cortês & Liddle 2024 — a debate that cuts in the framework\'s favor and is cited both ways). NOT discriminating in the confirming direction — though the tie is now conditional: the γ = 1/2 = ΛCDM identity is a property of the substitution (completion B has no ΛCDM member), so "kill-or-tie" is substitution-conditional. Timeline: DESI DR3 ~2027–2028. Full derivation and honest bounds: /dark-energy and /honest-assessment#dark-energy.',
   },
 ];
 
@@ -289,10 +289,16 @@ export default function Top5Tests() {
             remains when the discriminating list is honestly empty.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem' }}>
-            The one identified route back to a discriminating test is theoretical, not observational: derive
-            the cosmic 00-component covariantly from the Appendix-D field equation and check whether the
-            &#x10A;-terms break the sign lock. If they do not, the sign-lock no-go becomes unconditional; if
-            they do, the moved locus is a new prediction.
+            The one identified route back to a discriminating test &mdash; derive the cosmic 00-component
+            covariantly and check whether the &#x10A;-terms move the locus &mdash; <strong>was executed on
+            2026-08-11 and closed</strong>: the &#x10A;-terms do break the literal sign lock, but they push the
+            locus <em>away</em> from DESI (0/192 &gamma; reach the preferred quadrant, at every Brans-Dicke
+            &omega; tested). What evidence <em>would</em> move this: a completion whose &rho;<sub>DE</sub>(x) has
+            an <strong>interior maximum</strong> &mdash; the exact condition for the DESI crossing &mdash; which
+            requires either a new functional commitment for C (nothing in the archive proposes one) or an
+            independent scalar not slaved to the matter density, at which point the model is generic quintessence
+            and the framework contributes nothing. See{' '}
+            <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy &amp; DESI</Link>.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
             (This card said until 2026-08-11 that &ldquo;the immediate discriminating work shifts to

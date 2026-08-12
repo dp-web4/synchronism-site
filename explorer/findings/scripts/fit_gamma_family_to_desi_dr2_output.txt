@@ -1,0 +1,76 @@
+CAMB calibration constants: r_* x1.01154, r_d x0.98570
+===============================================================================
+DIRECT FIT: gamma family vs LCDM vs w0waCDM on DESI DR2 BAO
++ Planck-2018 distance priors + DES-Dovekie SNe
+===============================================================================
+  SN loaded: 1820 (Dovekie), z in [0.0251, 1.1442]
+
+  LCDM                               chi2 =  1650.608  (BAO  12.606 | CMB  3.113 | SN 1634.889)  Om=0.3023 h=0.6840 ob=0.02252 
+  w0waCDM                            chi2 =  1639.648  (BAO   9.558 | CMB  0.602 | SN 1629.488)  Om=0.3132 h=0.6749 ob=0.02243 w0=-0.8194 wa=-0.6503
+  substituted family                 chi2 =  1650.305  (BAO  12.534 | CMB  4.143 | SN 1633.628)  Om=0.3038 h=0.6815 ob=0.02255 gamma=0.4870
+
+  gamma profile, substituted family (om,h,ob refit per point):
+    gamma = 0.300:  chi2 =  1787.868   (Delta vs LCDM +137.259)
+    gamma = 0.400:  chi2 =  1669.563   (Delta vs LCDM  +18.955)
+    gamma = 0.450:  chi2 =  1653.193   (Delta vs LCDM   +2.585)
+    gamma = 0.470:  chi2 =  1650.872   (Delta vs LCDM   +0.264)
+    gamma = 0.480:  chi2 =  1650.397   (Delta vs LCDM   -0.211)
+    gamma = 0.489:  chi2 =  1650.313   (Delta vs LCDM   -0.296)
+    gamma = 0.500:  chi2 =  1650.608   (Delta vs LCDM   -0.000)
+    gamma = 0.510:  chi2 =  1651.222   (Delta vs LCDM   +0.614)
+    gamma = 0.520:  chi2 =  1652.132   (Delta vs LCDM   +1.523)
+    gamma = 0.540:  chi2 =  1654.729   (Delta vs LCDM   +4.120)
+    gamma = 0.600:  chi2 =  1667.165   (Delta vs LCDM  +16.556)
+    gamma = 0.800:  chi2 =  1729.261   (Delta vs LCDM  +78.652)
+    gamma = 1.000:  chi2 =  1793.156   (Delta vs LCDM +142.548)
+    gamma = 2.000:  chi2 =  1995.719   (Delta vs LCDM +345.111)
+    -> gamma = 0.4870  (-0.0207/+0.0240)  at Delta chi2 = 1   [galaxy-sector SPARC best fit: gamma = 0.489]
+
+  completion B (omega=0)             chi2 =  1729.833  (BAO  46.453 | CMB 28.005 | SN 1655.374)  Om=0.2959 h=0.6809 ob=0.02285 gamma=0.2968 omega=0.0
+  completion B (omega=1)             chi2 =  1745.097  (BAO  54.017 | CMB 32.328 | SN 1658.752)  Om=0.2953 h=0.6805 ob=0.02288 gamma=0.2808 omega=1.0
+  completion B (omega=5)             chi2 =  1780.597  (BAO  71.948 | CMB 42.623 | SN 1666.026)  Om=0.2940 h=0.6795 ob=0.02295 gamma=0.2469 omega=5.0
+  completion B (omega=50)            chi2 =  1837.524  (BAO 100.498 | CMB 60.176 | SN 1676.850)  Om=0.2917 h=0.6785 ob=0.02306 gamma=0.1825 omega=50.0
+
+===============================================================================
+VERDICT TABLE (Delta chi^2 vs LCDM; negative = better than LCDM)
+===============================================================================
+  lcdm             chi2 =  1650.608   Delta =   +0.000   params = 3
+  cpl              chi2 =  1639.648   Delta =  -10.960   params = 5
+  subst            chi2 =  1650.305   Delta =   -0.303   params = 4
+  compB_w0         chi2 =  1729.833   Delta =  +79.224   params = 4
+  compB_w1         chi2 =  1745.097   Delta =  +94.488   params = 4
+  compB_w5         chi2 =  1780.597   Delta = +129.989   params = 4
+  compB_w50        chi2 =  1837.524   Delta = +186.916   params = 4
+
+CPL PROJECTION vs DIRECT FIT (the projection-bias measurement):
+  subst            best-fit member projects to CPL (w0=-0.993, wa=+0.023, rms 0.00%)  [outside]
+  compB_w0         best-fit member projects to CPL (w0=-1.203, wa=+0.933, rms 0.34%)  [outside]
+  compB_w1         best-fit member projects to CPL (w0=-1.222, wa=+1.013, rms 0.39%)  [outside]
+  DESI DR2 published centrals for context: {'BAO+CMB': (-0.42, -1.75), 'BAO+CMB+Pantheon+': (-0.838, -0.62), 'BAO+CMB+DESY5': (-0.752, -0.86)}
+
+DIAGNOSTICS (LCDM best fit):
+  z_drag = 1020.91  r_d = 147.381 Mpc  r_d*h = 100.802  |  z* = 1091.56  r_s(z*) = 144.761 Mpc
+  z=0.295  DV/rd model   7.949 vs   7.944 pull +0.06
+  z=0.510  DM/rd  13.330 vs  13.587 pull -1.52   DH/rd  22.553 vs  21.863 pull +1.62
+  z=0.706  DM/rd  17.501 vs  17.347 pull +0.86   DH/rd  20.053 vs  19.458 pull +1.79
+  z=0.934  DM/rd  21.775 vs  21.574 pull +1.32   DH/rd  17.507 vs  17.641 pull -0.69
+  z=1.321  DM/rd  27.849 vs  27.605 pull +0.76   DH/rd  14.050 vs  14.178 pull -0.59
+  z=1.484  DM/rd  30.041 vs  30.519 pull -0.63   DH/rd  12.876 vs  12.816 pull +0.12
+  z=2.330  DM/rd  38.956 vs  38.988 pull -0.06   DH/rd   8.631 vs   8.632 pull -0.01
+
+VALIDATION ARM: BAO + CMB only (no SN)
+  LCDM                               chi2 =    15.494  (BAO  11.579 | CMB  3.915 | SN    0.000)  Om=0.3006 h=0.6853 ob=0.02255 
+  w0waCDM                            chi2 =     7.191  (BAO   7.140 | CMB  0.052 | SN    0.000)  Om=0.3517 h=0.6384 ob=0.02238 w0=-0.4396 wa=-1.6727
+  substituted family                 chi2 =    14.318  (BAO  12.449 | CMB  1.869 | SN    0.000)  Om=0.2959 h=0.6926 ob=0.02248 gamma=0.5384
+  completion B (omega=0)             chi2 =    33.160  (BAO  26.084 | CMB  7.077 | SN    0.000)  Om=0.2394 h=0.7656 ob=0.02260 gamma=0.3733 omega=0.0
+  BAO+CMB Delta chi2 vs LCDM:  cpl -8.303  subst -1.176  compB_w0 +17.666
+  (DESI DR2 full-likelihood BAO+CMB: w0waCDM preferred at 3.1 sigma, i.e. Delta chi2 ~ -12.5 for 2 params -- arXiv:2503.14738)
+
+COMPLETION A (exact EdS background):
+  best over coarse (h, ob) grid: chi2_BAO+CMB = 9900  (BAO 7462 | CMB 2438) at h=0.45, ob=0.02  -- excluded by ~sqrt(9900) sigma-scale
+
+CONTEXT. DESI DR2 (arXiv:2503.14738) quotes LCDM disfavoured vs w0waCDM at
+2.8-4.2 sigma depending on SN sample (3.1 sigma BAO+CMB). The numbers above
+recompute that comparison with compressed likelihoods and the Dovekie SN
+recalibration, then place the gamma family on the SAME axis -- the number
+the CPL quadrant statements could not produce.

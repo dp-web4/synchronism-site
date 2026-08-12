@@ -6,6 +6,44 @@
 
 ---
 
+## 🔴 P0 (explorer 2026-08-12) — The DIRECT FIT to DESI DR2+CMB+SN re-prices the whole dark-energy arc: the substituted family IS ΛCDM (Δχ² = −0.3, γ = 0.487 ± 0.02); both covariant completions FAIL THE FIT outright; TEST-26 as drafted is ΛCDM-degenerate on every surviving branch
+
+Finding: `explorer/findings/gamma-family-direct-fit-desi-dr2-substituted-is-lcdm-covariant-excluded.md`.
+Script: `explorer/findings/scripts/fit_gamma_family_to_desi_dr2.py` (+ output; pipeline validated
+against DESI's published posture before any family claim). Back-annotated:
+`Synchronism/Research/proposals/gamma_family_direct_fit_desi_dr2_20260812.md`. Topic archived.
+**Count UNCHANGED at 6** — audit-fit re-pricing, nothing newly counted.
+
+**1 — The "3.4–6.3σ" figure did not survive execution (5th over-refutation instance).** It came
+from *forcing* w₀ to DESI's central — a point the likelihood never visits. Fit directly, the
+substituted family sits at its Λ-corner (best member projects to CPL (−0.993, +0.023)) and pays
+exactly ΛCDM's price: Δχ² = +11.0 behind w₀wₐCDM (~2.9σ), −0.3 vs ΛCDM. It nests ΛCDM at γ=1/2,
+so it can never be excluded before ΛCDM is. The quadrant no-go STANDS; the exclusion-flavored
+number attached to it is dead.
+
+**2 — The covariant class hardens from "can't reach the crossing" to "fails the fit".**
+Completion B: Δχ² = +79…+187 vs ΛCDM for every ω ∈ {0,1,5,50} (+18 with no SN; conservative —
+compressed CMB recovers only ~2/3 of the crossing evidence). Completion A (exact EdS):
+χ² ≈ 9,900. **No covariant member survives DR2-era data — the DE sector survives only
+non-covariantly, and only by being ΛCDM.**
+
+**3 — First executed cross-sector consistency test: PASS at 0.1σ.** γ_cosmo = 0.487
+(−0.021/+0.024) vs γ_SPARC = 0.489. Deflationary reading mandatory: γ=1/2 is exactly Λ, 0.489 is
+exactly MOND-μ; the two standard models sit 0.011 apart, so the test had no power to fail.
+Separating them needs σ_γ ≈ 0.004. SPARC-side σ(γ) has never been derived (open thread).
+
+**→ Action: Maintainer** (4 items, details in finding): (1) `/dark-energy` — replace "3.4–6.3σ
+sign-and-scale" with the fit-level pricing; add completion-B fit exclusion + completion-A χ²≈10⁴
+(strengthens that section); the four projection-paper arXiv IDs are now verified at paper level.
+(2) `/honest-assessment#dark-energy` — lead REWRITE (not append): sharpest number is now Δχ², not
+"0/192" (keep scan as detail). (3) `/top-5-tests` TEST-26 — registered statistic → Δχ² vs
+w₀wₐCDM at DR3; add the ΛCDM-degeneracy honesty line (consistency check, not discriminator; same
+class as the a₀(z) row). (4) γ-concordance is new site content — publish WITH the deflationary
+reading. Research-side: TEST-26 registration draft (dp-gated) must absorb the new statistic
+before dp reviews.
+
+---
+
 ## ✅ Maintainer 2026-08-12 — 08-11 P0 queue DRAINED (all 4 items); /dark-energy SHIPPED; TEST-26 catalog-registered
 
 The 08-11 explorer finding's 4-item maintainer queue is fully executed. Items 3+4 (Appendix D

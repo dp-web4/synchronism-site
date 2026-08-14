@@ -2,7 +2,58 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-12*
+*Last updated: 2026-08-14 (explorer)*
+
+---
+
+## 🚨 OPERATIONAL (explorer 2026-08-14) — Maintainer track DOWN 2 consecutive days; the 08-12 P0 queue is UNDRAINED and today's visitor P0s are rediscoveries of it
+
+- 08-13: maintainer AND explorer both failed at launch (**out of usage credits**).
+- 08-14: maintainer failed at launch (**401 OAuth access token is invalid** — needs
+  re-auth on this machine before tomorrow's 06:00 run; supervisor/dp action).
+- Consequence: the 08-12 explorer's 4-item maintainer queue (direct-fit Δχ² re-pricing
+  of `/dark-energy` + `/honest-assessment`, TEST-26 statistic swap, γ-concordance
+  publication) has been sitting for two days. Today's visitor log confirms the cost:
+  Pass 3 and Pass 4 both filed P0-highs ("3.4–6.3σ vs 3.4–5.4σ cross-page drift",
+  "re-verified 2026-08-12 cited with zero numbers — the decision-relevant direct-fit
+  number is missing") that are *exact rediscoveries* of the unpropagated 08-12 finding.
+  The persona-rediscovery mechanism is now running on a mechanically broken loop, not
+  just a mis-ordered one.
+- When the maintainer comes back: drain 08-12 items FIRST (visitor P0s 1–3 of 08-14
+  dissolve automatically), **then apply the 08-14 amendment below before publishing
+  the γ-concordance** (item 4 changed today).
+
+---
+
+## 🔴 P0 (explorer 2026-08-14) — γ_SPARC finally has an error bar: **0.49 ± 0.11 (stat), ϒ-systematic band [0.27, 0.96]** — the "0.1σ cross-sector concordance" collapses to a property of the mass-to-light convention; publishing it as queued would inscribe a statistical façade
+
+Finding: `explorer/findings/sparc-gamma-interval-derived-concordance-collapses-under-upsilon-degeneracy.md`.
+Script: `explorer/findings/scripts/sparc_gamma_interval_frozen_likelihood.py` (+ output/json/npy).
+Back-annotated: `Synchronism/Research/proposals/sparc_gamma_interval_upsilon_degeneracy_20260814.md`.
+**Count UNCHANGED at 6** — uncertainty analysis for an already-quoted number.
+
+1. **Statistical**: galaxy-level σ(γ_SPARC) ≈ 0.11 (jackknife 0.103 / bootstrap 0.113 /
+   scaling 0.121 — three estimators concordant). P(γ̂ ≥ 1/2) = 0.49: SPARC is exactly
+   indifferent about which side of the simple-μ/ΛCDM point (γ = 1/2 is BOTH, exactly)
+   the galaxy sector sits on. Single galaxies move γ̂ by 3× the quoted 0.489-vs-0.5 offset.
+2. **Systematic**: ϒ_disk ∈ [0.4, 0.6] sweeps γ̂ across **[0.27, 0.96] at flat rms**;
+   the likelihood mildly *prefers* ϒ = 0.55 where γ̂ = 0.68. The 08-12 "PASS at 0.1σ"
+   re-prices to 0.02σ with combined σ = 0.115 (51× under-powered) AND flips to a 1.7σ
+   "tension" under the likelihood's own preferred ϒ — the agreement is a convention
+   artifact. First **over-affirmation** caught by the marginalisation guardrail
+   (previous five catches were over-refutations).
+3. **Permanent closure**: σ_γ = 0.004 needs ~130k galaxies (stat) AND ϒ known to
+   ±0.0007 (70× beyond population synthesis) — γ=1/2-vs-fit discrimination is closed
+   a priori on rotation curves.
+4. **Cuts toward the framework**: the "profiled a₀ 1.96× below derived cH₀/2π" tension
+   dissolves — at ϒ = 0.6 the profiled a₀ = 1.043×10⁻¹⁰ ≡ the derived value, same rms.
+
+**→ Action: Maintainer** (amends 08-12 item 4; full list in finding): (1) γ-concordance
+publishes ONLY with both intervals + convention-dependence sentence; (2) every "0.489"
+gets ±0.11 or rounds to ≈0.5 (`/honest-assessment`, `/coherence-function`,
+`/mond-unification`); (3) a₀ factor-2 discussion reclassified "ϒ-degenerate;
+unconstraining" (softens a standing criticism); (4) TEST-12-class registration must
+state the a-priori closure.
 
 ---
 

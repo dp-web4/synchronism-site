@@ -1,0 +1,280 @@
+
+==============================================================================
+PART A -- COMPLETE ENUMERATION OF LOCAL DIFFERENTIAL COUPLINGS
+==============================================================================
+
+  A local differential coupling is a dimensionless function
+
+      F = F( rho , s1 , s2 ; G , a0 )        s1 = |grad rho| , s2 = lap rho
+
+  Dimensions:
+      [rho] = M L^-3      [s1] = M L^-4      [s2] = M L^-5
+      [G]   = L^3 M^-1 T^-2                  [a0] = L T^-2
+
+  Seek pi = rho^a s1^b s2^c G^d a0^e with all exponents killed:
+
+      M :   a + b + c - d              = 0
+      L : -3a - 4b - 5c + 3d + e       = 0
+      T :            -2d - 2e          = 0   =>  e = -d
+
+  Substituting e = -d into L and using d = a + b + c from M:
+
+      -3a - 4b - 5c + 2(a+b+c) = 0     =>   a = -2b - 3c
+
+  Two free exponents (b, c) => the null space is exactly 2-DIMENSIONAL.
+  *** Any local differential coupling is a function of exactly two groups. ***
+
+  Basis choice 1 -- (b,c) = (1,0):
+
+      pi_1  =  a0 |grad rho| / (G rho^2)          [the SCALE group]
+
+  It is more natural inverted, so that large means "deep in the high-density
+  regime" exactly like the site's x = rho/rho_crit:
+
+      x_diff  =  1 / pi_1  =  G rho^2 / ( a0 |grad rho| )
+
+  Basis choice 2 -- (b,c) = (0,1):
+
+      pi_2  =  a0^2 (lap rho) / (G^2 rho^3)
+
+  A more informative second basis vector is pi_2 / pi_1^2, which is free of BOTH
+  G and a0 -- a pure profile-shape number:
+
+      q  =  rho (lap rho) / |grad rho|^2          [the SHAPE group]
+
+  So the complete class is  F = F(x_diff, q)  and nothing else.
+
+  *** STRUCTURAL RESULT 1 (cuts TOWARD the framework) ***
+  The algebraic branch needs a free density scale rho_crit to form x = rho/rho_crit.
+  The differential branch needs NO new constant at all: x_diff is built from rho and
+  grad rho with G and a0 alone, and q needs not even those.  The differential branch
+  is strictly LESS parameterised than the algebraic one it would replace.  Since
+  rho_crit is degenerate with gamma (2026-08-02 memory), removing it is a real gain.
+
+  *** STRUCTURAL RESULT 2 (the vacuum fork -- see PART B) ***
+  What killed the algebraic branch was C(rho -> 0) = 0 exactly, which makes the
+  exterior field g = g_bar / C diverge.  The survival question for the differential
+  branch is therefore entirely about the vacuum limits of x_diff and q.
+
+
+==============================================================================
+PART B -- VACUUM LIMITS: DOES THE DIFFERENTIAL BRANCH ESCAPE THE 08-03 KILL?
+==============================================================================
+
+  Take the site's own baseline geometry, an exponential disk rho ~ exp(-r/R_d),
+  and push r -> infinity (rho -> 0), which is where the algebraic branch died.
+
+    |grad rho| = rho / R_d
+    x_diff     = G rho^2 / (a0 rho / R_d) = G rho R_d / a0    ->  0   as rho -> 0
+    lap rho    = rho / R_d^2  (radial part)
+    q          = rho (rho/R_d^2) / (rho/R_d)^2 = 1            ->  1   EXACTLY, and
+                 identically 1 at every radius, for any exponential.
+
+  Read that carefully -- it is a TRAP with two horns:
+
+    HORN 1  F depending on x_diff inherits the vacuum pathology unchanged.
+            x_diff -> 0 exactly as rho -> 0, so any F with F(0, .) = 0 -- which is
+            what the site's compander C(x) = x^g/(x^g + 1) does by construction --
+            gives a divergent exterior field.  The differential branch buys NOTHING
+            on the axis that killed the algebraic branch.
+
+    HORN 2  F depending only on q is vacuum-finite (q -> 1), but q is IDENTICALLY 1
+            at every radius of a pure exponential disk.  A coupling that is constant
+            across the whole disk is not a modification of gravity at all: it
+            renormalises G.  This is precisely the 2026-07-28 degeneracy
+            (|grad ln rho| = 1/R_d is radially constant) re-derived at class level,
+            and the failure mode memory flags as project_ncorr_ladder_never_anchored.
+
+  So on the site's own baseline geometry the class is closed by construction.
+  The ONLY escape is that real galaxies are not pure exponentials: gas, bulges and
+  truncations make q(r) vary.  Whether that variation carries the boost is an
+  EMPIRICAL question, and it is the one PART C answers on real SPARC data.
+
+  *** STRUCTURAL RESULT 3 (the thin-disk midplane problem) ***
+  The above used radial derivatives only.  A real disk is thin: h ~ 0.3 kpc against
+  R_d ~ 2-4 kpc.  Write rho(r,z) = rho_0(r) f(z/h) with f even and peaked at z = 0.
+
+    at z = 0:   d rho/dz = 0            (symmetry -- the midplane is an extremum)
+                d^2 rho/dz^2 = rho_0 f''(0) / h^2   with f''(0) < 0
+
+  So the midplane FIRST derivative is purely radial (~ rho/R_d) while the midplane
+  SECOND derivative is dominated by the vertical term:
+
+    q(midplane) ~= rho * (rho f''(0)/h^2) / (rho/R_d)^2 = f''(0) * (R_d/h)^2
+
+  For a sech^2 profile f''(0) = -2, giving q ~= -2 (R_d/h)^2, i.e. of order -200 for
+  SPARC-like aspect ratios -- and set ENTIRELY by the aspect ratio R_d/h, a per-galaxy
+  geometric constant, not by the radial profile at all.  The shape group is therefore
+  degenerate with disk thickness, the single WORST-constrained quantity in the problem,
+  while the variable it must beat (g_bar) depends only on the measured rotation curve.
+
+  PART C nonetheless runs the RADIAL-ONLY groups, which is the steelman: it is the
+  most generous possible reading, since it discards the vertical term that makes q a
+  per-galaxy constant.
+
+
+==============================================================================
+PART C -- REAL SPARC: sigma( log F_req | pi ) FOR EVERY GROUP IN THE CLASS
+==============================================================================
+  N = 2614 points, 145 galaxies
+  unconditional sigma(log F_req)            rms=0.2802  MAD-sig=0.3090 dex
+  ^ this is the NO-INFORMATION ceiling: a pure-noise variable scores here.
+
+  variable                                      rms   MAD-sig  vs g_bar      N
+  ----------------------------------------------------------------------------
+  log g_bar          (MOND/RAR target)       0.1353    0.1174     1.00x   2614
+  log rho            (algebraic, 08-02)      0.1809    0.1607     1.36x   2614
+  log R              (trivial baseline)      0.2729    0.2778     2.36x   2614
+  log x_diff         (DIFF scale group)      0.2194    0.1945     1.65x   2614
+  q                  (DIFF shape group)      0.2716    0.2994     2.54x   2614
+  sign(q) log|q|     (shape, log-spread)     0.2743    0.3002     2.55x   2614
+  log|grad ln rho|   (07-28 hand form)       0.2781    0.2837     2.41x   2614
+  dln rho/dln r      (log-slope)             0.2464    0.2566     2.18x   2614
+
+==============================================================================
+PART C2 -- THE FULL CLASS: F(x_diff, q) JOINTLY, 2-D CONDITIONING
+==============================================================================
+  The class allows F to depend on BOTH groups.  Condition on the pair by
+  binning in 2-D (equal-count in each axis) and taking residuals about the
+  per-cell median.  This is the most generous possible test of the class: it
+  assumes the best F that any 2-argument function could be.
+
+  (x_diff, q)   FULL DIFFERENTIAL CLASS       rms=0.2045  MAD-sig=0.1798  (1.53x g_bar)  N=2604
+  (rho, q)      algebraic + shape             rms=0.1796  MAD-sig=0.1581  (1.34x g_bar)  N=2604
+  (g_bar, q)    control: does q add to MOND?  rms=0.1369  MAD-sig=0.1171  (0.99x g_bar)  N=2609
+  (g_bar, g_bar) control: 2-D cost of binning rms=0.1383  MAD-sig=0.1210  (1.03x g_bar)  N=2614
+
+==============================================================================
+PART D -- DEGENERACY CHECK: WITHIN- vs BETWEEN-GALAXY VARIANCE
+==============================================================================
+  The 2026-07-28 pass rejected |grad ln rho| because it is radially CONSTANT for
+  an exponential disk -- it fits flat curves only by smuggling in a per-galaxy
+  number, which is not a mechanism.  Quantify that for every group: split the
+  variance of each variable into within-galaxy (real radial structure, the part
+  that can do mechanistic work) and between-galaxy (a per-galaxy constant).
+
+  variable              total var    within   between   within %
+  --------------------------------------------------------------
+  log g_bar                0.5527    0.1936    0.3591      35.0%
+  log rho                  0.8564    0.5913    0.2651      69.0%
+  log x_diff               0.9772    0.6521    0.3252      66.7%
+  sign(q) log|q|           0.9222    0.8784    0.0438      95.3%
+  log|grad ln rho|         0.2722    0.1954    0.0768      71.8%
+
+  A variable whose within-galaxy share is small is mostly a per-galaxy label.
+  g_bar's share is the reference: it varies strongly ALONG each rotation curve,
+  which is exactly why it can carry the boost pointwise.
+
+==============================================================================
+PART E -- PERMUTATION NULL AND NOISE-ATTENUATION BOUND
+==============================================================================
+  Guardrail (feedback_declare_the_null_by_permutation): a conditional scatter is
+  only evidence if it beats what the SAME estimator returns on a destroyed variable.
+  Permute each group across all data points (breaking any real relation while keeping
+  its exact marginal distribution) and re-run the identical estimator 200x.
+
+  variable                measured  null mean   null sd        z                   verdict
+  ----------------------------------------------------------------------------------------
+  log x_diff                0.1945     0.3067    0.0024    -47.6       carries information
+  sign(q)log|q|             0.3002     0.3067    0.0024     -2.7                  marginal
+  log g_bar                 0.1174     0.3064    0.0023    -81.5       carries information
+
+  Reading: 'measured' below 'null mean' by many sigma means the variable genuinely
+  predicts the required coupling.  A variable sitting AT its own permutation null is
+  carrying no information about the boost -- and, crucially, that conclusion is
+  immune to the objection that the variable is merely noisy, because the null was
+  constructed from that same noisy variable.
+
+==============================================================================
+PART G -- IS x_diff A NEW VARIABLE, OR rho REPARAMETRISED?
+==============================================================================
+  For a disk |grad rho| = rho |dln rho/dr|, so
+      x_diff = G rho^2/(a0|grad rho|) = G rho L / a0,   L = local density scale length.
+  If L is a per-galaxy constant (~R_d), x_diff is rho times a per-galaxy number -- a
+  REPARAMETRISATION, not a new variable.  Regress log x_diff on log rho, then ask
+  whether the RESIDUAL (the genuinely differential part) carries any boost info.
+
+  h=const      log x_diff = 0.912*log rho + c   r=0.8534   var explained by rho = 72.8%
+     sig(logF|rho)=0.1607  sig(logF|x_diff)=0.1945  sig(logF|x_diff residual after removing rho)=0.2893
+     median within-galaxy sd of log10 L = 0.382 dex   (0 = L is a per-galaxy constant)
+
+  h=rd5        log x_diff = 0.842*log rho + c   r=0.8352   var explained by rho = 69.8%
+     sig(logF|rho)=0.1944  sig(logF|x_diff)=0.2219  sig(logF|x_diff residual after removing rho)=0.2830
+     median within-galaxy sd of log10 L = 0.382 dex   (0 = L is a per-galaxy constant)
+
+  h=bershady   log x_diff = 0.864*log rho + c   r=0.8372   var explained by rho = 70.1%
+     sig(logF|rho)=0.1846  sig(logF|x_diff)=0.2091  sig(logF|x_diff residual after removing rho)=0.2845
+     median within-galaxy sd of log10 L = 0.382 dex   (0 = L is a per-galaxy constant)
+
+
+==============================================================================
+PART H -- WHAT DOES THE DATA SAY THE COUPLING MUST DEPEND ON?
+==============================================================================
+  dB = RAR residual (log F_req minus its local g_bar relation).
+  A differential group that is the missing physics MUST correlate with dB.
+
+  group                      r(dB,group|g_bar)   var expl
+  -------------------------------------------------------
+  log x_diff                           -0.0335      0.11%
+  sign(q)log|q|                        -0.0225      0.05%
+  log|grad ln rho|                      0.0382      0.15%
+  dln rho/dln r                        -0.0394      0.16%
+
+  Reference: the 2026-08-02 no-go found local rho explains <=0.7% of dB.
+
+==============================================================================
+PART I -- UPSILON SWEEP: THE DOMINANT SYSTEMATIC (per 2026-08-14)
+==============================================================================
+  The 08-14 session showed Upsilon_disk in [0.4,0.6] sweeps gamma across
+  [0.27,0.96] at flat rms, so no galaxy-sector conclusion may be quoted at a single
+  Upsilon.  Does ANY Upsilon let a differential group beat g_bar?
+
+     Ups      N  sig|g_bar   sig|rho  sig|x_diff    sig|q  best/g_bar
+  -------------------------------------------------------------------
+    0.30   2614     0.1232    0.1698      0.2177   0.2868       1.38x
+    0.40   2614     0.1177    0.1643      0.2046   0.2941       1.40x
+    0.45   2614     0.1176    0.1617      0.1992   0.2977       1.38x
+    0.50   2614     0.1174    0.1607      0.1945   0.3002       1.37x
+    0.55   2614     0.1171    0.1570      0.1941   0.2997       1.34x
+    0.60   2614     0.1164    0.1576      0.1913   0.2984       1.35x
+    0.70   2614     0.1167    0.1596      0.1890   0.2942       1.37x
+    0.80   2614     0.1180    0.1640      0.1882   0.2941       1.39x
+
+==============================================================================
+PART J -- DERIVATIVE ORDER: DOES grad^3 rho REOPEN THE CLASS?
+==============================================================================
+  Each extra derivative order adds exactly one pi group (6 quantities, rank 3
+  => 3 groups).  The third-order group is c3 = rho^2 (d3 rho/dr3)/|grad rho|^3.
+  Test it rather than assert the class stays closed.
+
+  N=2474   sigma(logF|g_bar)=0.1161   sigma(logF|c3)=0.2950  (2.54x)
+  r(dB, c3 | g_bar) = -0.0279   RAR-residual variance explained = 0.08%
+
+  -> the third-order group behaves exactly like the first two.
+
+==============================================================================
+PART F -- ROBUSTNESS GRID (estimator, window, scale height, gas)
+==============================================================================
+  deriv     win           h    gas      N  sig|x_diff    sig|q  sig|g_bar
+  -----------------------------------------------------------------------
+  poly        5       const   vgas   2614      0.1945   0.3002     0.1174
+  poly        5       const   none   2440      0.1589   0.2792     0.1110
+  poly        5    bershady   vgas   2614      0.2091   0.3002     0.1174
+  poly        5    bershady   none   2440      0.1633   0.2792     0.1110
+  poly        7       const   vgas   2588      0.1941   0.2955     0.1157
+  poly        7       const   none   2396      0.1589   0.2655     0.1130
+  poly        7    bershady   vgas   2588      0.2061   0.2955     0.1157
+  poly        7    bershady   none   2396      0.1639   0.2655     0.1130
+  poly        9       const   vgas   2474      0.1921   0.2971     0.1161
+  poly        9       const   none   2266      0.1585   0.2526     0.1125
+  poly        9    bershady   vgas   2474      0.2056   0.2971     0.1161
+  poly        9    bershady   none   2266      0.1633   0.2526     0.1125
+  fd          0       const   vgas   2612      0.1957   0.3061     0.1173
+  fd          0       const   none   2422      0.1604   0.2811     0.1135
+  fd          0    bershady   vgas   2612      0.2099   0.3061     0.1173
+  fd          0    bershady   none   2422      0.1662   0.2811     0.1135
+
+==============================================================================
+SUMMARY
+==============================================================================
+  See finding: explorer/findings/differential-coupling-pi-enumeration.md

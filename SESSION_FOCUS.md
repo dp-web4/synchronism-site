@@ -2,15 +2,33 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-14 (explorer)*
+*Last updated: 2026-08-15 (explorer)*
 
 ---
 
-## 🚨 OPERATIONAL (explorer 2026-08-14) — Maintainer track DOWN 2 consecutive days; the 08-12 P0 queue is UNDRAINED and today's visitor P0s are rediscoveries of it
+## 🚨 OPERATIONAL (explorer 2026-08-15) — Maintainer DOWN 3 consecutive days; VISITOR now down too. Explorer is the only track running, and the P0 queue has TWO undrained days on it
 
+**Escalated from the 08-14 entry below. This is now the binding constraint on the whole
+loop, not a nuisance.**
+
+- 08-15: **no maintainer log and no visitor log at all** — neither track produced a file.
+  Explorer ran normally, so this is not a machine-wide outage.
 - 08-13: maintainer AND explorer both failed at launch (**out of usage credits**).
-- 08-14: maintainer failed at launch (**401 OAuth access token is invalid** — needs
-  re-auth on this machine before tomorrow's 06:00 run; supervisor/dp action).
+- 08-14: maintainer failed at launch (**401 OAuth access token is invalid**).
+- 08-13/08-14 maintainer logs are 170- and 142-byte failure stubs; today there is no stub
+  at all, which is a *different* failure mode (didn't launch vs launched-and-died) and
+  worth distinguishing when diagnosing.
+- **Consequence**: the 08-12 four-item queue and the 08-14 γ-interval queue are both
+  undrained. The site still carries the dead **"3.4–6.3σ"** number
+  (`src/app/dark-energy/page.tsx:132`, alongside "3.4–5.4σ" at line 77 — the exact
+  cross-page drift the 08-14 visitor filed P0-high) and bare **0.489** with no interval
+  (`src/app/honest-assessment/page.tsx:740`).
+- **Explorer's own accounting**: today's finding is the THIRD consecutive undrained P0.
+  Marginal value of a fourth is low. If the maintainer is still down on 08-16, the
+  research-side back-annotations (which do not depend on the maintainer) are the only
+  channel still delivering, and the site is drifting from the archive by one day per day.
+- **→ dp / supervisor**: re-auth is the single highest-value action available to this
+  project right now. It unblocks more than any explorer session can produce.
 - Consequence: the 08-12 explorer's 4-item maintainer queue (direct-fit Δχ² re-pricing
   of `/dark-energy` + `/honest-assessment`, TEST-26 statistic swap, γ-concordance
   publication) has been sitting for two days. Today's visitor log confirms the cost:
@@ -22,6 +40,66 @@
 - When the maintainer comes back: drain 08-12 items FIRST (visitor P0s 1–3 of 08-14
   dissolve automatically), **then apply the 08-14 amendment below before publishing
   the γ-concordance** (item 4 changed today).
+
+---
+
+## 🟠 P1 (explorer 2026-08-15) — The galaxy sector's LAST constructive lead is closed: no *local* coupling, algebraic or differential, at any derivative order, reproduces the RAR. And the 07-27 scope demotion rests on a misclassification of its own counterexample
+
+Finding: `explorer/findings/differential-coupling-pi-enumeration-local-branch-closed.md`.
+Script: `explorer/findings/scripts/differential_coupling_pi_enumeration_real_sparc.py` (+ output).
+Back-annotated: `Synchronism/Research/proposals/differential_coupling_pi_enumeration_local_branch_closed_20260815.md`.
+Topic archived. **Count UNCHANGED at 6** — constructive-lead closure, nothing newly counted.
+**Filed P1, not P0**: nothing here is publicly wrong on the site *today*; it changes a taxonomy
+and closes a lead. The two genuinely-wrong P0s below outrank it and must drain first.
+
+**1 — The class is exactly 2-dimensional, so this is a closure and not another case check.**
+Buckingham π on `F(ρ, |∇ρ|, ∇²ρ; G, a₀)` — 5 quantities, rank-3 dimensional matrix — gives
+*exactly two* independent groups: a scale group `x_diff = Gρ²/(a₀|∇ρ|)` and a shape group
+`q = ρ∇²ρ/|∇ρ|²`. "Which F?" was never an open search. Note in the framework's favour: the
+differential branch needs **no new constant** (the algebraic branch needs a free ρ_crit,
+degenerate with γ) — it deserved execution, and got it.
+
+**2 — Nothing in the class carries the boost** (real SPARC, N=2614, 145 galaxies, no functional
+form / no γ / no ρ_crit / no fitting). Against σ(log F_req|g_bar) = 0.1174 dex: `x_diff` 0.1945,
+`q` 0.3002 against a 0.3090 no-information ceiling, full class jointly 0.1798 (1.53×). Decisive
+row: correlation with the RAR residual controlling for g_bar gives **≤ 0.16 %** of variance for
+every group — *less than local ρ's 0.7 %*. `(g_bar, q)` = 0.1171 vs g_bar alone 0.1174: the shape
+group adds literally nothing to MOND.
+
+**3 — Pre-empted, not asserted.** Permutation null (200×): `q` at z = −2.7, indistinguishable from
+its own destroyed version. `x_diff` is 72.8 % ρ by regression, and its residual after projecting ρ
+out sits at the ceiling. Flat at **1.34–1.40× across ϒ ∈ [0.30, 0.80]** — the systematic that
+dissolved the γ concordance on 08-14 does *not* touch this, which is evidence the marginalisation
+guardrail is discriminating rather than a universal solvent. Robust across 16 estimator × window ×
+scale-height × gas combinations and to 3rd derivative order (0.08 %).
+
+**4 — The escape class is empty, and the site contradicts itself about it.** BCM 2017 is a
+**symmetron**: φ solves a nonlinear screened PDE, and BCM's own closed form — which
+`/for-researchers` already quotes correctly — is `g_sym = g_bar/(exp√(g_bar/g†) − 1)`, written in
+**g_bar**, an integral of ρ. It is **not** a local differential coupling. Yet the escape taxonomy
+files it as *"differential local-density coupling (symmetron-class)"* and demoted the locality
+no-go's scope on that basis (07-27). The `/honest-assessment` box names locality as the
+discriminating axis and Milgrom's non-locality theorem as the root obstruction **three sentences
+after** demoting scope on a non-local counterexample. **The BCM citations themselves are accurate
+and unusually careful — do not touch them.** The defect is the filing.
+
+**→ Action: Maintainer** (4 items, details in finding): (1) `/for-researchers` ~line 149 — delete
+the "differential local-density coupling" escape class, refile symmetron under **non-local**
+alongside AeST; (2) `/honest-assessment` "scope demoted 2026-07-27" box — restore scope to all
+local ρ-keyed couplings (algebraic *and* differential), resolve the internal contradiction, cite
+this session's numbers as the backing the pre-07-27 wording never had; (3) `/galaxy-rotation`
+~line 66–76 — keep the retraction, but make explicit that φ is not a local function of ρ;
+(4) retire the 08-02 no-go's "making the coupling differential is not a free dial" — that was
+concluded from a **smoothing-kernel** scan, which is the opposite operation.
+
+**→ Research (dp-gated).** The preprint blocked since 07-27 now has a *stronger* statement than the
+one withdrawn, with 2614-point backing and a complete π-enumeration behind the word "any". Credit
+line required (Milgrom's non-locality theorem, local-density instance). Gate: direct read of BCM's
+field equations.
+
+**→ Explorer (next).** Only the non-local branch survives. The question is no longer "can it fit
+the RAR" but **"does anything in that branch keep EFE = 0?"** — the framework's only claimed
+discriminator, which §7 of the finding argues the branch forfeits generically.
 
 ---
 

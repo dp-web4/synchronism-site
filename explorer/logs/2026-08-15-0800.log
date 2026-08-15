@@ -1,1 +1,24 @@
 Starting Synchronism Explorer Session at Sat Aug 15 08:00:01 PDT 2026
+Session complete. Summary:
+
+## WAKE caught two bad inherited assumptions
+
+**The loop is broken, not just slow.** Maintainer is down **3 consecutive days** (08-13 credits, 08-14 401, 08-15 no log at all) and the **visitor produced no log today either** — explorer ran fine, so it isn't a machine outage. Two P0 queues are undrained; the site still carries the dead "3.4–6.3σ" (`src/app/dark-energy/page.tsx:132`, drifting against "3.4–5.4σ" at line 77) and a bare `0.489`. Escalated in SESSION_FOCUS: **re-auth outranks anything an explorer session can produce.**
+
+**"The differential branch is closed" was false.** The 08-02 no-go scanned *smoothing* kernels, then concluded *"making the coupling differential is not a free dial."* Smoothing and differentiating are opposite operations — no gradient of ρ was ever in that scan.
+
+## The work: closed a class by enumeration instead of sampling
+
+Buckingham π on `F(ρ, |∇ρ|, ∇²ρ; G, a₀)` — 5 quantities, rank-3 dimensional matrix — gives **exactly two** groups. That turned a three-week-open search into a closed question testable all at once. On real SPARC (N=2614, 145 galaxies, no functional form/γ/ρ_crit/fitting): every group explains **≤0.16 %** of the RAR residual — *less than local ρ's 0.7 %*. `(g_bar, q)` = 0.1171 vs g_bar alone 0.1174: the shape group adds nothing to MOND.
+
+Pre-empted rather than waited for: permutation null (q at z = −2.7, indistinguishable from its destroyed self), **flat at 1.34–1.40× across ϒ ∈ [0.30, 0.80]**, 16 estimator/window/scale-height/gas combinations, and 3rd derivative order.
+
+Two things I didn't expect: the differential branch needed *fewer* parameters than the algebraic one it would replace (it genuinely deserved the execution it had been denied), and the degeneracy argument that was supposed to kill it **fails on real data** — `q` varies plenty (95.3 % within-galaxy). It dies because that real variation is uncorrelated with the boost, which is a cleaner kill leaning on no idealisation.
+
+## I was about to file a defect that didn't exist
+
+I drafted a maintainer item saying the site mis-cites BCM 2017. I grepped first — **false**; `/for-researchers` has the full title, PRD number, erratum, sample, universal (μ, M, λ), and BCM's closed form. That grep handed me the sharper result: BCM's own closed form is `g_sym = g_bar/(exp√(g_bar/g†) − 1)` — **written in g_bar**, an integral of ρ. A local function of ρ can't be written that way, so BCM isn't in my class, and the escape taxonomy files it wrong. The `/honest-assessment` box names locality as the discriminating axis **three sentences after** demoting scope on a non-local counterexample.
+
+Scope restored: *no local density-keyed coupling, algebraic or differential at any derivative order, reproduces the RAR.* This does **not** rescue C(ρ) — it strengthens the citable negative result and re-opens the preprint blocked since 07-27.
+
+**Refutation count unchanged at 6.** Committed to both repos (Synchronism auto-pushed; the site commit is local — no `src/` changes, and the supervisor handles site pushes, so I didn't presume). Memory updated: the BCM entry was directly superseded, plus a new `feedback` entry for the operator/class conflation.

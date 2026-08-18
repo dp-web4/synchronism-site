@@ -2,11 +2,27 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-15 (explorer)*
+*Last updated: 2026-08-18 (explorer)*
 
 ---
 
-## 🚨 OPERATIONAL (explorer 2026-08-15) — Maintainer DOWN 3 consecutive days; VISITOR now down too. Explorer is the only track running, and the P0 queue has TWO undrained days on it
+## 🚨 OPERATIONAL (updated explorer 2026-08-18) — Maintainer DOWN **6 consecutive days** (401 OAuth). Explorer lost 08-16 and 08-17 to weekly limit. Only the VISITOR has run continuously — and it is now rediscovering and *manufacturing* work no track can drain
+
+**08-18 status.** maintainer 08-13 credits, 08-14/16/17/18 `401 OAuth access token is invalid` — six days.
+Explorer: no session 08-16, 08-17 (`weekly limit`); ran 08-15 and 08-18. Visitor: ran every day.
+**Four undrained explorer queues now**: 08-12 (4 items), 08-14 (γ-interval), 08-15 (4 items, locality
+refiling), 08-18 (4 items, this session). The site still carries the dead **"3.4–6.3σ"**
+(`src/app/dark-energy/page.tsx:132` vs "3.4–5.4σ" at line 77) and bare **0.489** with no interval
+(`src/app/honest-assessment/page.tsx:740`).
+**New evidence on the cost, 08-18**: the visitor no longer only *rediscovers* unpropagated findings —
+Pass 4 **manufactured** a decisive test (P1-7, "either horn closes TEST-26 in 2026") that this
+session refuted by execution. Its targeting was excellent, its magnitude and sign asserted. A visitor
+running against a frozen site with no maintainer starts generating leads rather than reporting friction.
+**→ dp / supervisor: re-auth remains the single highest-value action available to this project.**
+
+<details><summary>Prior escalation (explorer 2026-08-15), retained</summary>
+
+### Maintainer DOWN 3 consecutive days; VISITOR now down too
 
 **Escalated from the 08-14 entry below. This is now the binding constraint on the whole
 loop, not a nuisance.**
@@ -40,6 +56,81 @@ loop, not a nuisance.**
 - When the maintainer comes back: drain 08-12 items FIRST (visitor P0s 1–3 of 08-14
   dissolve automatically), **then apply the 08-14 amendment below before publishing
   the γ-concordance** (item 4 changed today).
+
+</details>
+
+---
+
+## 🟠 P1 (explorer 2026-08-18) — The DE-sector locality fork is EXECUTED: it buys **exactly ×2**, and at γ = 1/2 dark energy is a constant *field*, not just a constant background. TEST-26 is not closable by DR3 either — **power, not data, is the blocker**
+
+Finding: `explorer/findings/de-locality-fork-executed-perturbation-channel-buys-exactly-a-factor-of-two.md`.
+Scripts: `explorer/findings/scripts/de_locality_fork_perturbations.py`, `session107_forecast_vs_de_sector.py` (+ outputs).
+Back-annotated: `Synchronism/Research/proposals/de_locality_fork_perturbation_channel_factor_two_20260818.md`.
+**Count UNCHANGED at 6** — nothing newly refuted; a proposed *new test* is priced and a standing caveat resolved.
+Filed P1: the site is not publicly *wrong* here, it is publicly *under-informative* (one sentence at
+`/dark-energy:195` is an under-claim). The undrained P0s below still outrank it.
+
+**Origin**: the 08-18 visitor (Pass 4) filed P1-7 — *"local ⇒ order-unity anti-correlated DE
+clustering, closable on DR2-era data now … either horn closes TEST-26 in 2026."* That is a claim about
+the site's **only live scientific claim**, and it was the explicit standing caveat on the 08-12 fit
+(*"Background-only: no growth, no perturbations"*). Executed rather than triaged. **It does not survive.**
+
+**1 — There was never a second channel.** The site's own identity `w_DE = dlnF/dlnx`, plus locality,
+forces `δ_DE/δ_m = 1 + w_DE` **exactly**, at all scales and all γ (SymPy, difference identically 0).
+The clustering amplitude *is* the departure from Λ. Background and perturbation power are one parameter.
+
+**2 — γ = 1/2 is a constant FIELD.** `ρ_DE = 2ρ_crit`, `dρ_DE/dρ_m ≡ 0` — independent of density, hence
+of space, not just of time. At the Möbius point the model is ΛCDM in background, linear perturbations,
+*and* non-perturbatively: same field configuration in a void, a cluster, a disk, a neutron star.
+**Strengthens 08-12 from "degenerate fit" to "identical model."**
+
+**3 — Locality is worth exactly ×2.** Peak |Δfσ₈| ratio local/background → **2.00 as γ → 1/2** (1.99 at
+0.489); both channels linear in ε ≡ 2γ − 1. A 3σ separation of 0.489 from 1/2 needs **σ_γ = 0.0037**
+vs 08-12's background-only **0.004** — a **7 %** improvement. Measured input ε = −0.022 ± 0.220 =
+**0.10σ from zero**. And the *sign* at z = 0 is undetermined (+0.44 % vs −0.30 % under the two
+defensible pressure treatments), unfixable without the covariant completion excluded on 08-11. The
+forks are **nested**, not parallel.
+
+**4 — Three corrections that go the framework's way**, recorded deliberately against the 08-18
+visitor's "summary harsher than detail" pattern: backreaction ⟨ρ_DE(ρ_m)⟩ vs ρ_DE(⟨ρ_m⟩) is **< 0.6 %**
+at γ = 0.489 even at σ_lnρ = 3 (⇒ the 08-11/08-12 backgrounds are **not** invalidated by locality);
+`/dark-energy:195` *"there is no perturbation sector"* is **false** (both horns force one; Horn N's is
+exactly ΛCDM's); and ρ_DE ∝ ρ_m^0.022 ⇒ 45 decades of density move it ×19.5, so no instability, no
+screening, no compact-object bound.
+
+**5 — Free from the same integrator: Session #107's DESI forecast is 173× the DE sector's.** Same
+cosmology arc, two days apart. The **local horn cannot reach** its −11.9 % at z = 0.51 for **any**
+γ ∈ [0.05, 0.499] (saturates at −0.93 %); the background horn needs γ = 0.179 — **29× the measured |ε|**.
+Shape is wrong too: #107's |Δ| declines monotonically with z, the DE sector's peaks at z ≈ 0.5–0.7 —
+the signature of a **σ₈ normalisation choice**, which its own Part 2 states (σ₈(z=0) = 0.76). Its
+"6.6σ combined" must not be load-bearing for TEST-26 adjudication.
+
+**→ Action: Maintainer** (4 items): (1) `/dark-energy` ~line 195 — replace *"there is no perturbation
+sector"*; the sector is **forced**, `δ_DE = (1+w)δ_m` (local) or `δ_DE = 0` ≡ ΛCDM (background-only).
+(2) `/dark-energy` badge line 13 — "adjudicable at DESI DR3 (~2027–28)" is unsupported; suggested
+*"kill-or-tie — no channel with the required precision is forecast; **power, not data, is the blocker**."*
+(3) Add the γ = 1/2 constant-**field** statement beside the existing "algebraically identical to ΛCDM"
+box. (4) Retire the 08-12 *"no growth, no perturbations, no full-shape"* caveat — growth has been run;
+**full-shape stays genuinely open.**
+
+**→ Explorer (next).** (a) **Read Session #107's Part 1 growth equation.** If it forecasts the
+*growth-suppression* mechanism rather than the DE sector, item 5 upgrades to *two cosmological
+mechanisms inside one arc disagreeing 173× on one observable, recorded nowhere*. Smallest-cost,
+highest-value follow-on. (b) **Full-shape / k-dependence** — Horn L's δ_DE is exactly **scale-free**, so
+it predicts *no* sound-horizon feature, unlike generic clustering DE. Shape tests do **not** carry the
+ε suppression: **the only identified route to closing TEST-26 before DR3.** Do not re-open the
+pressure-sector fork independently — it is the covariant-completion blocker in a different hat.
+
+**→ Research (dp-gated).** `δ_DE/δ_m = 1+w` holds for any `ρ_DE = f(ρ_m)`, is general, and is close to
+standard adiabatic-DE results. **Presumed prior art until a literature check is done.**
+
+**Program-level instinct, stated plainly.** The 08-18 visitor's Pass 4 recommended spending the next
+month on the A2ACW cross-vendor control rather than astrophysics, and supported it partly with the
+claim this session refuted. **The recommendation survives the loss of that support and I endorse it.**
+Astrophysics is now closed to the ε ceiling in cosmology and to the π-enumeration in galaxies; the
+cross-vendor control is the only registered experiment left whose outcome is not fixed in advance —
+and because the detector already measures at specificity 0, it is the one test that separates *"the
+instrument is blind"* from *"there is nothing there."*
 
 ---
 

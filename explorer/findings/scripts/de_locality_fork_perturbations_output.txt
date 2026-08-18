@@ -1,0 +1,124 @@
+
+==============================================================================
+1. EXACT ALGEBRA (SymPy)
+==============================================================================
+C(x)            = ((x + 1)**(2*gamma) - 1)/((x + 1)**(2*gamma) + 1)
+F = rho_DE/rho_m= 2/((x + 1)**(2*gamma) - 1)
+rho_DE/rho_crit = 2*x/((x + 1)**(2*gamma) - 1)
+
+  -- at gamma = 1/2 --
+rho_DE/rho_crit (gamma=1/2) = 2
+  d(rho_DE)/dx  = 0
+  => rho_DE is INDEPENDENT OF DENSITY, identically. Not just constant in time.
+
+  -- the locality identity --
+  1 + w_DE                       = (-2*gamma*x*(x + 1)**(2*gamma - 1) + (x + 1)**(2*gamma) - 1)/((x + 1)**(2*gamma) - 1)
+  dln(rho_DE)/dln(rho_m)         = (-2*gamma*x*(x + 1)**(2*gamma) + (x + 1)*((x + 1)**(2*gamma) - 1))/((x + 1)*((x + 1)**(2*gamma) - 1))
+  difference (must be 0)         = 0
+  => delta_DE / delta_m = 1 + w_DE, EXACTLY, at all x and all gamma.
+     The clustering amplitude IS the departure from Lambda. Same number, one channel.
+
+==============================================================================
+2. HORN L IN THE NONLINEAR REGIME -- rho_DE across the real density range
+==============================================================================
+x0 (mean density today) per gamma, then rho_DE/rho_crit at density contrast d:
+  gamma        x0      void (0.1x)             mean   cluster (200x)     disk (1e5 x)    inner (1e7 x)
+  0.270    2.1467         3.877454         5.009074        33.753715       567.834799      4717.335927
+  0.400    1.1680         2.528232         2.725303         6.008824        20.632553        51.822519
+  0.489    0.8832         2.046921         2.060765         2.242935         2.569476         2.843434
+  0.500    0.8571         2.000000         2.000000         2.000000         2.000000         2.000000
+  0.600    0.6751         1.655685         1.575207         0.745252         0.216347         0.086131
+  0.960    0.3805         1.023768         0.887738         0.036259         0.000122         0.000002
+  2.000    0.1674         0.487620         0.390548         0.000047         0.000000         0.000000
+
+At gamma=1/2 the row is flat at 2.000000 -> an exact cosmological constant AS A FIELD.
+Departure over 8 decades of density scales as (density)^(1-2*gamma):
+  gamma=0.489:  rho_DE(1e7 x mean)/rho_DE(0.1 x mean) =    1.3891   [predicted 1e8^(1-2g) =    1.4997]
+  gamma=0.400:  rho_DE(1e7 x mean)/rho_DE(0.1 x mean) =   20.4975   [predicted 1e8^(1-2g) =   39.8107]
+  gamma=0.270:  rho_DE(1e7 x mean)/rho_DE(0.1 x mean) = 1216.6066   [predicted 1e8^(1-2g) = 4786.3009]
+  gamma=0.960:  rho_DE(1e7 x mean)/rho_DE(0.1 x mean) =    0.0000   [predicted 1e8^(1-2g) =    0.0000]
+
+==============================================================================
+3. HORN L GROWTH -- does DE clustering give an independent handle on gamma?
+==============================================================================
+Fractional change in f*sigma8 relative to gamma=1/2 (= LambdaCDM), in %:
+  gamma         chan z=0.0   z=0.3   z=0.5   z=0.8   z=1.1   z=1.5  
+  0.270    HornN(bg)  -1.224  -5.735  -6.843  -6.799  -5.712  -3.721
+          HornL(rho)  14.864   3.331  -0.772  -3.836  -4.892  -4.911
+           HornL(+p)  -6.259 -10.014 -10.246  -8.955  -6.825  -3.739
+  0.400    HornN(bg)  -0.391  -1.944  -2.330  -2.259  -1.793  -1.002
+          HornL(rho)   4.772   0.918  -0.528  -1.570  -1.843  -1.693
+           HornL(+p)  -2.843  -4.221  -4.157  -3.351  -2.247  -0.805
+  0.450    HornN(bg)  -0.177  -0.896  -1.075  -1.034  -0.805  -0.425
+          HornL(rho)   2.166   0.394  -0.280  -0.760  -0.871  -0.777
+           HornL(+p)  -1.391  -2.051  -2.002  -1.574  -1.008  -0.289
+  0.489    HornN(bg)  -0.036  -0.186  -0.223  -0.213  -0.164  -0.083
+          HornL(rho)   0.444   0.078  -0.064  -0.163  -0.183  -0.160
+           HornL(+p)  -0.299  -0.440  -0.427  -0.330  -0.204  -0.047
+  0.550    HornN(bg)   0.149   0.775   0.932   0.883   0.664   0.314
+          HornL(rho)  -1.826  -0.300   0.296   0.708   0.780   0.659
+           HornL(+p)   1.306   1.918   1.849   1.391   0.813   0.116
+  0.600    HornN(bg)   0.277   1.452   1.747   1.646   1.218   0.545
+          HornL(rho)  -3.384  -0.530   0.597   1.365   1.478   1.219
+           HornL(+p)   2.520   3.704   3.551   2.620   1.464   0.102
+  0.960    HornN(bg)   0.829   4.594   5.548   5.036   3.398   1.041
+          HornL(rho) -10.162  -1.171   2.552   4.880   4.818   3.448
+           HornL(+p)   8.940  13.323  12.479   8.210   3.350  -1.674
+
+Added power of the LOCAL horn over the background horn (|HornL| - |HornN|), max over z, in %:
+  gamma=0.270:  bg   6.843   local  14.864   local+p  10.246   ratio local/bg =   2.17
+  gamma=0.400:  bg   2.330   local   4.772   local+p   4.221   ratio local/bg =   2.05
+  gamma=0.450:  bg   1.075   local   2.166   local+p   2.051   ratio local/bg =   2.01
+  gamma=0.489:  bg   0.223   local   0.444   local+p   0.440   ratio local/bg =   1.99
+  gamma=0.550:  bg   0.932   local   1.826   local+p   1.918   ratio local/bg =   1.96
+  gamma=0.600:  bg   1.747   local   3.384   local+p   3.704   ratio local/bg =   1.94
+  gamma=0.960:  bg   5.548   local  10.162   local+p  13.323   ratio local/bg =   1.83
+
+==============================================================================
+4. WHAT PRECISION WOULD THE LOCAL HORN NEED?
+==============================================================================
+d|Delta f*sigma8| / d gamma near 1/2  = 39.293 % per unit gamma
+  DESI-class f*sigma8 precision  0.5% -> 1-sigma on gamma =  0.013   (3-sigma detection of gamma=0.489 needs 0.0330)
+  DESI-class f*sigma8 precision  1.0% -> 1-sigma on gamma =  0.025   (3-sigma detection of gamma=0.489 needs 0.0330)
+  DESI-class f*sigma8 precision  3.0% -> 1-sigma on gamma =  0.076   (3-sigma detection of gamma=0.489 needs 0.0330)
+
+SPARC galaxy-sector gamma (2026-08-14): 0.489 +/- 0.11 (stat), Upsilon band [0.27, 0.96]
+  epsilon = 2*gamma-1 = -0.0220 +/- 0.220  ->  0.10 sigma from zero
+
+==============================================================================
+5. DOES HORN L EVEN REPRODUCE THE BACKGROUND THE SITE SOLVED?
+==============================================================================
+Lognormal matter PDF, volume-weighted.  <rho_DE(rho_m)>  vs  rho_DE(<rho_m>).
+  gamma s_lnrho=0.5   s_lnrho=1.0   s_lnrho=2.0   s_lnrho=3.0  
+  0.489      -0.0262%      -0.1011%      -0.3361%      -0.5564%
+  0.450      -0.1281%      -0.4922%      -1.6293%      -2.7034%
+  0.400      -0.2832%      -1.0814%      -3.5618%      -5.9274%
+  0.270      -0.8767%      -3.3017%     -10.7407%     -18.0499%
+  0.960       0.5768%       2.3344%       7.9858%      12.9982%
+  0.500      -0.0000%      -0.0000%      -0.0000%      -0.0000%
+
+(gamma=1/2 row is identically 0 -- rho_DE has no density dependence to average over.)
+
+==============================================================================
+6. WHY EVERYTHING SCALES AS epsilon = 2*gamma - 1  (series, exact)
+==============================================================================
+1 + w  to O(eps): epsilon*(-x + log(x + 1))/x
+   -> 1 + w = eps * ( ln(1+x)/x - 1 ) + O(eps^2).  Vanishes identically at eps=0.
+F*(1+w) [the Poisson-source correction] to O(eps): 2*epsilon*(-x + log(x + 1))/x**2
+   at x0 = 6/7 (mean density today): coefficient = -0.648171 (times eps)
+   with eps = 2*0.489-1 = -0.022  ->  G_eff/G - 1 = +0.01426 at z=0
+
+==============================================================================
+7. IS THE LOCAL HORN EXCLUDED BY DENSE OBJECTS?  (rho_DE ~ x^(1-2gamma) for x>>1)
+==============================================================================
+                    object  rho_m/rho_bar g=0.489  g=0.450  g=0.400  g=0.270 
+               cosmic mean          1e+00        2.061        2.309        2.725        5.009
+              cluster core          2e+02        2.243        3.407        6.009        33.75
+               galaxy disk          1e+05        2.569        6.318        20.63        567.8
+           molecular cloud          1e+12        3.663        31.66        518.2    9.411e+05
+                     water          1e+30        9.117         1998    2.063e+06    1.793e+14
+            nuclear matter          1e+45        19.49    6.318e+04    2.063e+09    1.424e+21
+
+Units are rho_crit(cosmological) ~ 1e-29 g/cm^3.  Even 45 decades of density contrast
+moves rho_DE by ~1 decade at gamma=0.489.  No laboratory, stellar, or compact-object
+constraint touches the local horn -- which is the same fact as its untestability.

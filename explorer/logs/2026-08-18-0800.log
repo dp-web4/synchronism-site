@@ -1,1 +1,32 @@
 Starting Synchronism Explorer Session at Tue Aug 18 08:00:02 PDT 2026
+## Session complete — 2026-08-18 explorer
+
+**WAKE redirected me off the topic queue.** The loop is broken: the maintainer has failed at launch for **six consecutive days** (401 OAuth), explorer lost 08-16/08-17 to weekly limit, and only the visitor has run continuously. There are now four undrained explorer queues. Rather than add a fifth deep finding with no consumer, I checked the one thing that would change the program's direction: today's visitor (Pass 4) filed a claim that the site's **only live scientific claim** could be closed this year.
+
+### What I executed
+
+The dark-energy sector's **locality fork** — `ρ_DE = ρ_m(1−C)/C` read at the *local* matter density rather than the background mean. This was the explicit standing caveat on the 08-12 fit (*"no growth, no perturbations"*) and on `/dark-energy:195`. Nobody had run it.
+
+**It does not close TEST-26.**
+
+1. **There was never a second channel.** The site's own identity `w_DE = dlnF/dlnx`, plus locality, forces `δ_DE/δ_m = 1 + w_DE` *exactly*, at all scales and all γ. Background and clustering power are one parameter.
+2. **At γ = 1/2, ρ_DE = 2ρ_crit with dρ_DE/dρ_m ≡ 0** — constant in *density*, hence in space. So the Möbius point is ΛCDM in the background, in linear perturbations, *and* non-perturbatively. This strengthens 08-12 from "degenerate fit" to **"identical model."**
+3. **Locality is worth exactly ×2** (ratio → 2.00 as γ → 1/2). A 3σ separation needs σ_γ = 0.0037 vs the background-only 0.004 — a **7% improvement**. Measured input: ε = 2γ−1 = −0.022 ± 0.220, **0.10σ from zero**. The honest badge is *"power, not data, is the blocker"* — DR3 won't adjudicate it either.
+4. **Three corrections that go the framework's way**, recorded deliberately: backreaction is <0.6% (the 08-11/08-12 backgrounds stand); *"there is no perturbation sector"* is **false** — both horns force one, and the background-only horn's is exactly ΛCDM's; no dense-object constraint touches the local horn.
+5. **Bonus from the same integrator**: Session #107's DESI fσ₈ forecast is **173×** the DE sector's — unreachable in the local horn at *any* γ, and its z-shape is a σ₈-normalisation signature its own Part 2 admits. Partially adjudicates a queued topic.
+
+**Refutation count unchanged at 6.** Committed and pushed to both repos; back-annotated to `Synchronism/Research/proposals/`.
+
+### So what?
+
+The DE sector is now fully mapped rather than merely constrained — one parameter ε, every channel at order ε, none at ε⁰. It closes the possibility I was hoping to open. **One live route survives**: Horn L's δ_DE is exactly *scale-free*, so it predicts no sound-horizon feature — shape tests don't carry the ε suppression. That's the only identified way to close TEST-26 before DR3.
+
+### Two things I'd flag
+
+**The visitor is now manufacturing leads, not reporting friction.** Pass 4's targeting was excellent — it found the one unexecuted caveat on the one live claim — but every asserted magnitude and sign was wrong (clustering is 0.006, not order-unity; *positively* correlated, not anti-). That's the 08-02 rule confirmed on a proposed *test* rather than a defect claim. A visitor running against a frozen site starts generating work no track can drain.
+
+**I endorse Pass 4's program recommendation even though I refuted its argument.** Astrophysics is now closed to the ε ceiling in cosmology and the π-enumeration in galaxies. The A2ACW cross-vendor control is the only registered experiment left whose outcome isn't fixed in advance — and since the detector already measures at specificity 0, it's the one test that separates *"the instrument is blind"* from *"there is nothing there."*
+
+**→ dp/supervisor: maintainer re-auth remains the highest-value action available to this project.** This is the fourth consecutive session whose output has no consumer.
+
+*(Note: `AGENTS.md`/`CLAUDE.md` are left dirty — that's the supervisor's GitNexus reindex inside the `gitnexus:keep` blocks, which workers are told not to touch. Recorded in the log so the next session's crashed-predecessor check doesn't false-fire.)*

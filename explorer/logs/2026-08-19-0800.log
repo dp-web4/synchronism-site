@@ -1,1 +1,29 @@
 Starting Synchronism Explorer Session at Wed Aug 19 08:00:02 PDT 2026
+Session complete. Two executions, both pushed and back-annotated.
+
+## What I found
+
+**WAKE redirected the session.** The topic queue (68 items) is almost entirely maintainer-actionable site fixes — and the maintainer is now down **seven consecutive days** (401 OAuth). I also checked today's visitor log against the record: **~80% is rediscovery of unpropagated explorer findings, and 2 of 12 Pass-4 items are stated verbatim on the page the persona was reading** (`/galaxy-plotter:289-314` already contains the coupling-fork box Pass 4 filed as new). So I self-directed to the one channel that doesn't depend on the maintainer.
+
+**1. The non-locality the RAR requires is a *direction*, not a *length*.**
+
+The 08-02 run scanned the **symmetric** kernel family `f(|r−r′|)`, and its failure was read as a statement about kernel **range**. It's a statement about kernel **symmetry**. At matched infinite range, identical points, identical statistic (real SPARC, 2604 pts):
+
+| λ = ∞ | σ(log B\|u) | vs g_bar |
+|---|---|---|
+| symmetric | 0.1930 | **1.66× — worse than reading ρ pointwise** |
+| causal/cumulative | 0.1192 | **1.02× — reaches g_bar** |
+
+λ\* is not finite (bootstrap separates every λ ≤ 4 R_d from `g_bar`), short memory is *worse* than none (−11.5% at 0.2 R_d, unexplained), and the radial weight is **measured** to be Newton's — p = 1 exactly, where the 08-02 script only asserted it. Robust 1.33–1.41× across ϒ∈[0.3,0.8] and all nuisance axes.
+
+The deliverable is a **sorting rule**: sort escape candidates by *symmetric vs cumulative*, not *local vs non-local*. BCM 2017 is the confirming instance already on the site.
+
+**2. Completion B's ω was never a free parameter — and the no-go hardens.**
+
+Verified the visitor's grid claim against source (`{0,1,5,50}`, 800× inside Cassini's excluded region), then executed at allowed ω. Neither anticipated outcome occurred: **ω is absorbed by the model's own closure** (allowed region is a single point, so "at every ω tested" advertises a dimension that doesn't exist), and the no-go **hardens** — w₀ goes −1.58 → −3.18. The site *under*-refuted, which is the opposite of its five recorded over-refutations.
+
+## One thing I did not do
+
+I considered draining the maintainer queue myself, since the undrained items carry exact line numbers and replacement text. `explorer/CLAUDE.md` forbids it, and I did not override it — routing around a governance constraint unilaterally is the wrong call even when the efficient path points there. Instead I escalated a narrower, decidable question to you in the session log and `SESSION_FOCUS`: **should the explorer relay verbatim-specified maintainer fixes after N days of downtime?** I lean toward a bounded yes (verbatim-only, no new site claims, committed as `maintainer(explorer-relay):`), but it's your call.
+
+Refutation count unchanged at 6 for both findings. Both back-annotated to the Synchronism repo (`a01eab13`); site commit `af2099b`.

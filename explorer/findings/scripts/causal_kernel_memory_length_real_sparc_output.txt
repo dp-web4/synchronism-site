@@ -1,0 +1,292 @@
+
+HOW MUCH NON-LOCALITY DOES THE RAR ACTUALLY REQUIRE?
+The CAUSAL (inward-cumulative) radial-kernel family, executed on real SPARC.
+
+Topic: self-directed, explorer 2026-08-19.  Converges on two independently-raised
+questions:
+  * visitor 2026-08-19 Pass 4 (Leading-Edge Researcher), "Unanswered Questions" #6 --
+    "What is the weakest non-pointwise functional of rho that reproduces the RAR at
+    observed scatter?  This is the site's best question and it is not in the test
+    catalog."
+  * explorer 2026-08-15 "-> Explorer (next)" -- after the Buckingham-pi enumeration
+    closed the LOCAL DIFFERENTIAL branch, "only the non-local branch survives."
+
+WHY THIS IS NOT A RE-RUN
+------------------------
+Two members of the radial-kernel class
+
+        u(r) = INT K(r, r') Sigma(r') dr'
+
+have already been closed on this data set:
+
+  (1) LOCAL / delta-kernel        K = delta(r - r')
+      -> 2026-08-02 rar_scatter_nogo_real_sparc.py: sigma(log B | rho) = 0.1613 dex
+         vs sigma(log B | g_bar) = 0.1178 dex  (1.37x).  Local rho carries <= 0.7%
+         of the RAR residual variance.
+  (2) LOCAL DIFFERENTIAL          F(rho, |grad rho|, lap rho; G, a0)
+      -> 2026-08-15 differential_coupling_pi_enumeration_real_sparc.py: the class is
+         exactly 2-dimensional and every group is at or near the no-information
+         ceiling (<= 0.16% of residual variance).
+  (3) SYMMETRIC CONVOLUTION       K = f(|r - r'|)     [exponential, range lambda]
+      -> also 2026-08-02, same script, "CONSTRUCTIVE" section: best 1.21x at
+         lambda = 16 kpc (~7 R_d), then DEGRADES; never reaches g_bar.
+
+But (3) is the WRONG FAMILY, and the 08-02 script says so in its own closing note
+without drawing the consequence: "g_bar = G M(<r)/r^2 is not a smoothed density: it
+carries an explicit 1/r^2 that no convolution of Sigma can generate."  Exactly.  A
+two-sided kernel f(|r - r'|) can never produce a cumulative quantity, so its failure
+to reach g_bar is a statement about the SYMMETRY of the kernel, not about the RANGE.
+Scanning lambda in the wrong family measures nothing about how non-local a viable
+theory must be.
+
+The family that CONTAINS g_bar is the CAUSAL / inward-cumulative one:
+
+        K(r, r') = W(r, r') * Theta(r - r')
+
+with g_bar itself the member W = 2 pi G r' / r^2, W-support = all of [0, r].
+So the honest version of the question is:
+
+        *** HOW FAR IN DOES THE THEORY HAVE TO REMEMBER? ***
+
+Define the causal, mass-weighted running mean of the surface density with an
+exponential MEMORY LENGTH lambda:
+
+                  INT_0^r  Sigma(r') exp(-(r - r')/lambda) r' dr'
+    Sbar_l(r) =  ----------------------------------------------------
+                  INT_0^r            exp(-(r - r')/lambda) r' dr'
+
+    u_l(r) = pi G Sbar_l(r)
+
+  lambda -> 0    :  u -> pi G Sigma(r)              == the SITE's variable (local rho
+                                                       at fixed h, up to a constant)
+  lambda -> inf  :  u -> pi G M(<r)/(pi r^2)
+                       = G M(<r)/r^2 == g_bar       == MOND's variable
+
+ONE parameter.  BOTH endpoints are exactly the two competing variables.  lambda* --
+the memory length at which the causal variable becomes as good a predictor of the
+required boost as g_bar is -- is a genuine, model-free LOWER BOUND on the non-locality
+any density-keyed theory must carry.  That number does not exist anywhere in the
+literature or on the site.
+
+WHAT EACH OUTCOME MEANS (pre-registered here, before running)
+-------------------------------------------------------------
+  lambda* << R_d          CONSTRUCTIVE.  A nearly-local theory suffices; the galaxy
+                          sector has a live escape and the locality no-go is scoped
+                          much more narrowly than currently stated.
+  lambda* ~ 1-2 R_d       INTERMEDIATE.  A finite, physically-motivatable coupling
+                          range works.  Still constructive, and quantified.
+  lambda* >~ disk         CLOSURE WITH A NUMBER.  The theory must remember essentially
+                          the entire enclosed mass => the non-locality is global =>
+                          the required kernel is Newton's, and "how non-local" has a
+                          measured answer instead of an assertion.
+  lambda* not reached     STRONGEST CLOSURE.  Even infinite memory in this family does
+                          not reach g_bar => the deficit is NOT about range at all and
+                          the remaining freedom is in the RADIAL WEIGHT, tested in
+                          PART C.
+
+METHOD DISCIPLINE (carried over from 08-14/08-15)
+-------------------------------------------------
+ * No functional form, no gamma, no rho_crit, no fitting.  AQUAL-type symmetry gives
+   F_req(r) = g_bar/g_obs = 1/B_req exactly, so B_req is DATA.
+ * Every family member is scored by the SAME non-parametric statistic on the SAME
+   points: sigma(log B_req | log u), equal-count bins, robust MAD.
+ * A no-information ceiling and a permutation null are reported, so "does not reach
+   g_bar" is separated from "carries no information."
+ * Upsilon_disk is SWEPT, not fixed -- it is the systematic that dissolved the
+   2026-08-12 gamma concordance on 2026-08-14.  Any claim here must survive it.
+ * The lambda = inf member of MY family is reported alongside SPARC's own g_bar, so
+   the spherical-approximation cost of the construction is visible and not hidden
+   inside the comparison.
+
+DATA: Lelli, McGaugh & Schombert 2016 SPARC (MassModels_Lelli2016c.mrt + Table1).
+
+
+==============================================================================
+PART A -- THE RADIAL-KERNEL CLASS AND WHAT IS ALREADY CLOSED IN IT
+==============================================================================
+
+  Any density-keyed coupling that is not a pointwise function of rho is some
+  functional of the density profile:
+
+      u(r) = INT K(r, r') Sigma(r') dr'
+
+  Sub-families, ordered by how much of the profile they can see:
+
+    K = delta(r - r')                LOCAL              CLOSED 2026-08-02  (1.37x)
+    K = derivatives of delta         LOCAL DIFFERENTIAL CLOSED 2026-08-15  (>= 1.53x)
+    K = f(|r - r'|)                  SYMMETRIC CONV.    CLOSED 2026-08-02  (best 1.21x,
+                                                        then DEGRADES; wrong symmetry)
+    K = W(r,r') Theta(r - r')        CAUSAL / CUMULATIVE  <-- CONTAINS g_bar.  UNSCANNED.
+
+  The 08-02 script closed the symmetric family and then wrote, correctly:
+    "g_bar = G M(<r)/r^2 is not a smoothed density: it carries an explicit 1/r^2
+     that no convolution of Sigma can generate."
+  That sentence is a statement about kernel SYMMETRY.  It was then generalised on the
+  site to "making the coupling differential is not a free dial" -- a statement about
+  kernel RANGE, in a family that was never scanned.  This script scans it.
+
+  One-parameter causal family, exponential memory length lambda:
+
+      Sbar_l(r) = INT_0^r S(r') e^{-(r-r')/l} r' dr'  /  INT_0^r e^{-(r-r')/l} r' dr'
+      u_l(r)    = pi G Sbar_l(r)
+
+      l -> 0    =>  u = pi G Sigma(r)      == the site's local variable
+      l -> inf  =>  u = G M(<r)/r^2        == g_bar, MOND's variable
+
+  Scoring statistic, identical for every member and taken from the 08-02 run:
+      sigma( log B_req | log u ),  B_req = g_obs/g_bar,  equal-count bins, robust MAD.
+  No functional form, no gamma, no rho_crit, no fitting anywhere in this script.
+
+
+==============================================================================
+PART B -- THE MEMORY-LENGTH SCAN: HOW FAR IN MUST THE THEORY REMEMBER?
+==============================================================================
+  N points = 2604,  N galaxies = 139,  median R_d = 2.42 kpc
+  sigma(log B | g_bar)  [SPARC's own g_bar, the target]  = 0.1163 dex
+  sigma(log B | Sigma)  [lambda = 0, the site's variable] = 0.1611 dex   (1.38x)
+  no-information ceiling sigma(log B)                    = 0.3098 dex
+
+   lambda (kpc)   l/R_d   sigma(logB|u_l)  vs g_bar   % of gap closed
+              0     0.0            0.1611     1.38x              0.0%
+            0.1     0.0            0.1611     1.38x             -0.1%
+           0.25     0.1            0.1637     1.41x             -5.8%
+            0.5     0.2            0.1662     1.43x            -11.5%
+           0.75     0.3            0.1647     1.42x             -8.2%
+              1     0.4            0.1644     1.41x             -7.4%
+            1.5     0.6            0.1597     1.37x              3.1%
+              2     0.8            0.1553     1.33x             12.9%
+              3     1.2            0.1486     1.28x             27.8%
+              4     1.7            0.1462     1.26x             33.2%
+              6     2.5            0.1391     1.20x             49.2%
+              8     3.3            0.1354     1.16x             57.3%
+             12     5.0            0.1310     1.13x             67.2%
+             16     6.6            0.1286     1.11x             72.6%
+             24     9.9            0.1243     1.07x             82.1%
+             32    13.2            0.1227     1.05x             85.8%
+             64    26.4            0.1192     1.02x             93.7%
+            inf     inf            0.1192     1.02x             93.6%
+
+  lambda* (first lambda reaching g_bar performance within 1%) = NOT REACHED on the grid
+  lambda_50 (half the local->g_bar gap closed) = 8 kpc = 3.3 R_d
+
+==============================================================================
+PART C -- IS THE RADIAL WEIGHT FIXED TO NEWTON'S?
+==============================================================================
+
+  The causal family above holds the interior weight at Newton's r' dr' (i.e. mass)
+  and the normalisation at 1/r^2.  Generalise the weight exponent p:
+
+      u_{inf,p}(r) = pi G * INT_0^r S(r') r'^p dr' / INT_0^r r'^p dr'
+
+  p = 1 is Newtonian (mass-weighted, giving M(<r)/(pi r^2)).  p = 0 weights radii
+  equally; large p weights the outskirts.  If the data is indifferent to p, the
+  "the kernel is fixed to Newton's" claim is unsupported; if sigma has a clear
+  minimum at p ~ 1, the claim is MEASURED rather than asserted.
+
+       p   sigma(logB|u)  vs g_bar
+    -1.0          0.1681     1.44x
+    -0.5          0.1540     1.32x
+     0.0          0.1376     1.18x
+     0.5          0.1249     1.07x
+     1.0          0.1192     1.02x
+     1.5          0.1224     1.05x
+     2.0          0.1273     1.09x
+     3.0          0.1423     1.22x
+     5.0          0.1528     1.31x
+
+  minimum at p = 1  (sigma = 0.1192 dex)
+
+==============================================================================
+PART D -- NULL CONTROLS
+==============================================================================
+  no-information ceiling  sigma(log B)                  = 0.3098 dex
+  sigma(log B | g_bar)                                  = 0.1163 dex
+  sigma(log B | Sigma)   (lambda = 0)                   = 0.1611 dex
+  sigma(log B | u_inf)   (my family's endpoint)         = 0.1192 dex
+  -> spherical-approximation cost of the construction   = +0.0029 dex
+
+  permutation null on u_inf (200x): mean 0.3073 +- 0.0025 dex   => z = 76.5
+
+  variance of log B explained:  by Sigma  73.0%     by g_bar 85.9%
+
+==============================================================================
+PART E -- ROBUSTNESS GRID (Upsilon_disk, h, gas, inner extrapolation)
+==============================================================================
+  Upsilon_disk is the systematic that dissolved the 2026-08-12 gamma
+  concordance on 2026-08-14.  Any conclusion here must survive it.
+
+   Upsilon    h mode    gas   inner   sig(l=0)  sig(l=1Rd)  sig(g_bar)  l=0 ratio
+      0.30     const   vgas     exp     0.1692      0.1549      0.1229      1.38x
+      0.40     const   vgas     exp     0.1653      0.1523      0.1172      1.41x
+      0.50     const   vgas     exp     0.1611      0.1519      0.1163      1.38x
+      0.60     const   vgas     exp     0.1572      0.1551      0.1165      1.35x
+      0.80     const   vgas     exp     0.1637      0.1590      0.1182      1.39x
+      0.50       rd5   vgas     exp     0.1611      0.1519      0.1163      1.38x
+      0.50  bershady   vgas     exp     0.1611      0.1519      0.1163      1.38x
+      0.50     const    exp     exp     0.1606      0.1573      0.1163      1.38x
+      0.50     const   none     exp     0.1503      0.1466      0.1133      1.33x
+      0.50     const   vgas    none     0.1611      0.1535      0.1163      1.38x
+      0.50     const   vgas  double     0.1611      0.1542      0.1163      1.38x
+
+  lambda=0 ratio across the whole grid: 1.33x - 1.41x
+
+==============================================================================
+PART F -- GALAXY-BLOCK BOOTSTRAP ON THE MEMORY-LENGTH CURVE
+==============================================================================
+  150 galaxy-block resamples
+
+      member    median                95% CI
+         l=0    0.1570   [0.1389, 0.1808]
+      l=Rd/4    0.1580   [0.1397, 0.1813]
+      l=Rd/2    0.1533   [0.1347, 0.1766]
+        l=Rd    0.1464   [0.1261, 0.1722]
+       l=2Rd    0.1368   [0.1154, 0.1603]
+       l=4Rd    0.1299   [0.1084, 0.1521]
+       l=inf    0.1135   [0.0998, 0.1340]
+       g_bar    0.1127   [0.0953, 0.1336]
+
+         l=0  delta vs g_bar = +0.0451 dex  [+0.0264, +0.0682]   SEPARATED from g_bar
+      l=Rd/4  delta vs g_bar = +0.0454 dex  [+0.0283, +0.0678]   SEPARATED from g_bar
+      l=Rd/2  delta vs g_bar = +0.0418 dex  [+0.0234, +0.0634]   SEPARATED from g_bar
+        l=Rd  delta vs g_bar = +0.0350 dex  [+0.0154, +0.0584]   SEPARATED from g_bar
+       l=2Rd  delta vs g_bar = +0.0233 dex  [+0.0082, +0.0443]   SEPARATED from g_bar
+       l=4Rd  delta vs g_bar = +0.0157 dex  [+0.0003, +0.0340]   SEPARATED from g_bar
+       l=inf  delta vs g_bar = +0.0024 dex  [-0.0062, +0.0108]   OVERLAPS g_bar
+
+==============================================================================
+PART G -- IS THE REQUIRED NON-LOCALITY A *RANGE* OR A *DIRECTION*?
+==============================================================================
+
+  The 2026-08-02 run scanned the SYMMETRIC family K = f(|r - r'|) and found it never
+  reaches g_bar.  That was read on the site as a statement about kernel RANGE
+  ("making the coupling differential is not a free dial").  Here both families are
+  run at MATCHED range, on the SAME points, with the SAME statistic, so range is
+  held fixed and only the kernel's symmetry differs.
+
+   lambda (kpc)   symmetric    causal   sym vs g_bar   causal vs g_bar
+              0      0.1611    0.1611          1.38x             1.38x
+              1      0.1567    0.1644          1.35x             1.41x
+              2      0.1577    0.1553          1.36x             1.33x
+              4      0.1547    0.1462          1.33x             1.26x
+              8      0.1518    0.1354          1.31x             1.16x
+             16      0.1417    0.1286          1.22x             1.11x
+             32      0.1659    0.1227          1.43x             1.05x
+             64      0.1718    0.1192          1.48x             1.02x
+            inf      0.1930    0.1192          1.66x             1.02x
+
+  sigma(log B | g_bar) = 0.1163 dex
+
+  READ THIS ROW-WISE, NOT COLUMN-WISE.  At every range the two families are given
+  exactly the same amount of the density profile to look at.  If the deficit were
+  about RANGE, both columns would improve together.  They do not.
+
+
+==============================================================================
+VERDICT INPUTS
+==============================================================================
+  sigma(log B | g_bar)            = 0.1163 dex
+  sigma(log B | Sigma) [l=0]      = 0.1611 dex
+  no-information ceiling          = 0.3098 dex
+  median R_d                      = 2.42 kpc
+  lambda*                         = NOT REACHED
+  lambda_50                       = 8 kpc

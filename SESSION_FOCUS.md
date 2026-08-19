@@ -2,62 +2,120 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-18 (explorer)*
+*Last updated: 2026-08-19 (explorer)*
 
 ---
 
-## 🚨 OPERATIONAL (updated explorer 2026-08-18) — Maintainer DOWN **6 consecutive days** (401 OAuth). Explorer lost 08-16 and 08-17 to weekly limit. Only the VISITOR has run continuously — and it is now rediscovering and *manufacturing* work no track can drain
+## 🚨 OPERATIONAL (updated explorer 2026-08-19) — Maintainer DOWN **7 consecutive days** (401 OAuth). Five undrained explorer queues. The visitor is now **rediscovering findings that are already on the pages it is reading** — the loop is spending most of its capacity re-deriving itself
 
-**08-18 status.** maintainer 08-13 credits, 08-14/16/17/18 `401 OAuth access token is invalid` — six days.
-Explorer: no session 08-16, 08-17 (`weekly limit`); ran 08-15 and 08-18. Visitor: ran every day.
-**Four undrained explorer queues now**: 08-12 (4 items), 08-14 (γ-interval), 08-15 (4 items, locality
-refiling), 08-18 (4 items, this session). The site still carries the dead **"3.4–6.3σ"**
-(`src/app/dark-energy/page.tsx:132` vs "3.4–5.4σ" at line 77) and bare **0.489** with no interval
-(`src/app/honest-assessment/page.tsx:740`).
-**New evidence on the cost, 08-18**: the visitor no longer only *rediscovers* unpropagated findings —
-Pass 4 **manufactured** a decisive test (P1-7, "either horn closes TEST-26 in 2026") that this
-session refuted by execution. Its targeting was excellent, its magnitude and sign asserted. A visitor
-running against a frozen site with no maintainer starts generating leads rather than reporting friction.
-**→ dp / supervisor: re-auth remains the single highest-value action available to this project.**
+**08-19 status.** maintainer `401 OAuth access token is invalid` again (08-13 credits;
+08-14/16/17/18/19 all 401). Explorer ran. Visitor ran.
 
-<details><summary>Prior escalation (explorer 2026-08-15), retained</summary>
+**New evidence on the cost, 08-19**: of the 12 items in today's visitor Pass 4, **5 are
+rediscoveries of unpropagated explorer findings, and 2 of those are stated verbatim on the page the
+persona was reading** — `/galaxy-plotter` L289–314 already contains the quadrature/division fork box
+and the "division branch delivers B ≈ 1000" statement that Pass 4 filed as a new `high`. The persona
+browses *fetched page summaries*, which lose in-page correction boxes. So the loop now has two
+distinct degradation modes: manufacturing (08-18) and re-derivation (08-19).
 
-### Maintainer DOWN 3 consecutive days; VISITOR now down too
+**→ dp / supervisor: re-auth is still the single highest-value action.** Since it has not happened
+in five days of asking, the explorer has escalated a narrower, *decidable* question instead — see
+`explorer/logs/2026-08-19.md` §Escalation: **should the explorer be permitted to apply
+verbatim-specified maintainer fixes after N days of maintainer downtime?** The explorer declined to
+route around `explorer/CLAUDE.md` unilaterally and proposes a bounded relay rule. dp's call.
 
-**Escalated from the 08-14 entry below. This is now the binding constraint on the whole
-loop, not a nuisance.**
+---
 
-- 08-15: **no maintainer log and no visitor log at all** — neither track produced a file.
-  Explorer ran normally, so this is not a machine-wide outage.
-- 08-13: maintainer AND explorer both failed at launch (**out of usage credits**).
-- 08-14: maintainer failed at launch (**401 OAuth access token is invalid**).
-- 08-13/08-14 maintainer logs are 170- and 142-byte failure stubs; today there is no stub
-  at all, which is a *different* failure mode (didn't launch vs launched-and-died) and
-  worth distinguishing when diagnosing.
-- **Consequence**: the 08-12 four-item queue and the 08-14 γ-interval queue are both
-  undrained. The site still carries the dead **"3.4–6.3σ"** number
-  (`src/app/dark-energy/page.tsx:132`, alongside "3.4–5.4σ" at line 77 — the exact
-  cross-page drift the 08-14 visitor filed P0-high) and bare **0.489** with no interval
-  (`src/app/honest-assessment/page.tsx:740`).
-- **Explorer's own accounting**: today's finding is the THIRD consecutive undrained P0.
-  Marginal value of a fourth is low. If the maintainer is still down on 08-16, the
-  research-side back-annotations (which do not depend on the maintainer) are the only
-  channel still delivering, and the site is drifting from the archive by one day per day.
-- **→ dp / supervisor**: re-auth is the single highest-value action available to this
-  project right now. It unblocks more than any explorer session can produce.
-- Consequence: the 08-12 explorer's 4-item maintainer queue (direct-fit Δχ² re-pricing
-  of `/dark-energy` + `/honest-assessment`, TEST-26 statistic swap, γ-concordance
-  publication) has been sitting for two days. Today's visitor log confirms the cost:
-  Pass 3 and Pass 4 both filed P0-highs ("3.4–6.3σ vs 3.4–5.4σ cross-page drift",
-  "re-verified 2026-08-12 cited with zero numbers — the decision-relevant direct-fit
-  number is missing") that are *exact rediscoveries* of the unpropagated 08-12 finding.
-  The persona-rediscovery mechanism is now running on a mechanically broken loop, not
-  just a mis-ordered one.
-- When the maintainer comes back: drain 08-12 items FIRST (visitor P0s 1–3 of 08-14
-  dissolve automatically), **then apply the 08-14 amendment below before publishing
-  the γ-concordance** (item 4 changed today).
+## 🟢 NEW (explorer 2026-08-19) — Two executions, both leaving verdicts intact and fixing the *reasoning* underneath them. **Count UNCHANGED at 6.**
 
-</details>
+### A. The non-locality the RAR requires is a **direction**, not a **length**
+
+Finding: `explorer/findings/causal-kernel-scan-the-required-nonlocality-is-a-direction-not-a-length.md`
+Script: `explorer/findings/scripts/causal_kernel_memory_length_real_sparc.py` (+ output).
+Back-annotated: `Synchronism/Research/proposals/causal_kernel_required_nonlocality_is_directional_20260819.md`.
+
+Answers the question **two independent readers named as the site's best open one** — visitor 08-19
+Pass 4 Q#6 (*"the weakest non-pointwise functional of ρ that reproduces the RAR … not in the test
+catalog"*) and explorer 08-15's own "→ Explorer (next)".
+
+The 08-02 run scanned the **symmetric** kernel family `f(|r−r′|)` and its failure was read as being
+about **range**. It is about **symmetry**. Executed on real SPARC (2604 pts, 139 galaxies), matched
+range, identical points, identical statistic:
+
+| kernel, λ = ∞ | σ(log B \| u) | vs g_bar |
+|---|---|---|
+| symmetric | 0.1930 | **1.66× — worse than reading ρ pointwise** |
+| causal / cumulative | 0.1192 | **1.02× — reaches g_bar** |
+
+1. **λ\* is not finite.** λ₅₀ = 8 kpc = 3.3 R_d; 94 % of the gap needs ≈26 R_d. Galaxy-block
+   bootstrap separates **every** finite λ ≤ 4 R_d from `g_bar` at 95 %; only λ = ∞ overlaps.
+2. **Short memory is worse than none** — λ ∈ [0.1, 0.4] R_d sits *below* λ = 0 (−11.5 % of the gap).
+   No cheap partial non-locality. Unexplained; flagged as a live thread.
+3. **The radial weight is MEASURED to be Newton's** — σ minimises exactly at p = 1 in
+   `∫Σ r′^p dr′ / ∫r′^p dr′`. The 08-02 script *asserted* this. Rare case of an assertion coming
+   back **confirmed**.
+4. **Over-refutation guard**: local Σ explains **73 %** of the raw variance of log B. The "≤0.7 %"
+   figure is the *residual after conditioning on g_bar*. Quoting only the second reads as "ρ is
+   noise," which the data does not say.
+5. Robust 1.33×–1.41× across ϒ_disk ∈ [0.3, 0.8], 3 h prescriptions, 3 gas treatments, 3 inner
+   extrapolations. Permutation z = 76.5.
+
+**Scope, stated to avoid the class-widening failure mode**: this is a **2-parameter scan** (memory
+length × radial weight), *not* a π-enumeration like 08-15's. Kernels are 1-D radial on Σ(r), not 3-D
+on ρ.
+
+**The transferable deliverable — a sorting rule.** The escape taxonomy sorts candidates by
+*local vs non-local*. The discriminating axis is **symmetric vs cumulative**: symmetric/finite-range
+smoothing is in the closed branch *at any range*; cumulative/enclosed-mass-like is live, and its only
+viable point is Newton's kernel. **BCM 2017 is the confirming instance already on the site** — its
+closed form is written in `g_bar`.
+
+**→ Action: Maintainer** (5 items, details in finding): (1) `/galaxy-rotation` + `/for-researchers` —
+retire *"making the coupling differential is not a free dial"* (already queued 08-15) but **replace
+with the correct mechanism**, not delete; (2) `/honest-assessment` locality box — discriminating axis
+is kernel **symmetry**; this *strengthens* the box; (3) `/for-researchers` escape taxonomy — sort by
+symmetric-vs-cumulative, BCM as worked instance (do the 08-15 refiling first); (4) anywhere quoting
+"≤0.7 % of the variance" — add the raw-73 % clause; (5) upgrade "the data fixes the kernel to the
+Newtonian one" from asserted to measured.
+
+**→ Explorer (next).** Project a genuine **3-D Yukawa** kernel onto a radial kernel and re-run the
+head-to-head. If a screened linear scalar lands in the *live* branch the sorting rule is wrong.
+**Cheapest available test of my own strongest claim — run it before anyone cites the rule.**
+
+### B. Completion B at Cassini-allowed ω: the no-go **hardens 2×**, and ω was never a free parameter
+
+Finding: `explorer/findings/completion-b-at-cassini-allowed-omega-the-no-go-hardens-and-omega-was-never-free.md`
+Script: `explorer/findings/scripts/completion_b_cassini_omega_execution.py` (+ output).
+Back-annotated: `Synchronism/Research/proposals/completion_b_cassini_omega_absorbed_by_closure_20260819.md`.
+
+Origin: visitor 08-19 Pass 4. **Verified against source before acting** — the grid really is
+`{0,1,5,50}` (`fit_gamma_family_to_desi_dr2.py:531`, `covariant_00_component_sign_lock_audit.py:355`)
+and no Cassini/PPN/Bertotti reference exists in the DE sections. Cassini requires **ω ≳ 4×10⁴**; the
+grid is **800× inside the excluded region**.
+
+Executed there, and the result is neither of the two outcomes the visitor anticipated:
+1. **ω is absorbed by the model's own closure.** `C_eff(x₀) = Ω_m` is maintained by sliding x₀
+   (0.95 → 672 → 3.6×10⁴), not by ω doing work. Trajectories at ω = 4×10⁴ and 10⁶ agree to < 2 %.
+   **The allowed region is a single point** ⇒ *"0/192 γ at every Brans-Dicke ω tested"* advertises a
+   dimension the construction does not have (192 × 1, not 192 × 4).
+2. **The no-go HARDENS.** w₀ = **−1.58** (ω=0) → **−2.46** (ω=50, grid max) → **−3.18** (allowed).
+   Every ω is in the wrong quadrant as published, but the grid scanned the *most favourable end of
+   an excluded range*. At the allowed point ρ_DE is 2 % of its present value by z = 2.
+3. **The screening horn invalidates rather than rescues.** A pinning potential gives the scalar a
+   mass and evades PPN — but `B(x) = 1 − 3ε − 1.5ωε²` is the **massless** BD energy density and a
+   potential `V(C)` is absent from it. *The scan cannot be simultaneously PPN-safe and
+   self-consistent.*
+4. **This is an UNDER-refutation** — the opposite of the site's five recorded over-refutations.
+
+**→ Action: Maintainer** (4 items): (1) `/honest-assessment` ~L1358 + `/dark-energy` ~L129 — replace
+"at every Brans-Dicke ω tested"; (2) add the Cassini citation to the DE sector (it is already cited
+for TEST-25 — its absence here is the real defect); (3) **do not drop the 0/192 result** — it stands
+and is conservative; re-badge the framing, not the verdict; (4) state the massive-scalar horn as a
+live, unimplemented escape.
+
+**→ Explorer (next).** The **density-pinned massive scalar** is the DE sector's only unexecuted
+branch: add `V(C)` to `B(x)`. It evades Cassini by construction, and per 08-11 the quadrant is
+reachable iff `ρ_DE(x)` has an interior maximum — which a potential is exactly what could supply.
 
 ---
 

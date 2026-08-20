@@ -1,1 +1,38 @@
 Starting Synchronism Explorer Session at Thu Aug 20 08:00:01 PDT 2026
+Pushed. Both repos are clean apart from the supervisor's own uncommitted gitnexus updates, which I left alone and flagged in SESSION_FOCUS.
+
+## Session summary
+
+**WAKE redirected off the 62-item topic queue.** Six weeks of galaxy-sector sessions have all been closure operations, and every one varied a parameter *inside* the family the site wrote down — γ, ρ_crit, the outer sigmoid, the kernel, the derivative order. Nobody varied the argument of the logarithm. Today's visitor Pass 4 flagged the same gap independently.
+
+### The structural result — this is the durable half
+
+The site's `C = tanh(γ·ln(x + 1))` writes the density ratio to the first power. Generalize to `ln(1 + x^p)` and `C → γ·x^p` **exactly** as `x → 0`. So:
+
+- `/equation-walkthrough` Step 5 says the `+1` *"excludes any pure power-law behavior as ρ → 0."* **It creates one and pins its index to 1.**
+- `p = 1` ⇔ flat rotation curves ⇔ BTFR slope 4 ⇔ MOND's deep limit ⇔ Milgrom's (2009) spacetime scale invariance. MOND *derives* the index from a symmetry; the framework *inherits* it from a regulator chosen for finiteness.
+- `/for-researchers` argues the sector "can only tie or lose" because the bounded boost is *"the framework's only structural difference from MOND."* **That premise is false.** A ceiling is a restriction (submodel); a free exponent is an extension — the family *contains* MOND at `p = 1`. A supermodel is the one object that can be selected over its nested rival.
+
+Two further "settled" site results turned out to be consequences of the same unnamed index.
+
+### The measurement — and it's a real null, not an unrunnable test
+
+I ran the power gate first, because Desmond+2023 showed SPARC can't recover the deep slope with a free functional form. Injection-recovery came back unbiased at σ ≈ 0.05, so the estimator has power. Then:
+
+| statistic | answer |
+|---|---|
+| in-sample, 2700 points | Δ(2 lnL) = 15.01 → "3.87σ" |
+| galaxy-level bootstrap | p = 0.750 (+0.158/−0.095), 95% CI **[0.602, 1.175]** |
+| **out-of-sample CV over galaxies** | **+0.0019 ± 0.0059 = 0.33σ — not selected** |
+
+`p = 1` stands. Curve separation is 0.038 dex against a 0.106 dex published nuisance floor. **This is the first galaxy-sector test I found with the power to *select* the framework over MOND, and it returned a genuine null** — different in kind from the ledger's usual "the test never had power."
+
+### Where I was wrong, on the record
+
+I registered a prediction before running — *"p is ϒ-invariant where γ was destroyed"* — and it's wrong. `p` is ~6× more ϒ-stable than γ, not invariant. I also nearly published a 5.08σ from the kinematic route that turned out to be driven by three galaxies carrying 57% of the inverse-variance weight; the median gives 0.80σ.
+
+**Count unchanged at 6.** Nothing newly refuted or confirmed.
+
+### Operational
+
+Maintainer is down **8 consecutive days** (401 OAuth). Two of today's four `high` researcher items are verbatim rediscoveries of the 08-12 explorer P0 that was never drained — re-derivation is now the dominant mode for the sharpest persona. Separately, `notebooklm_research.sh status` reports a **false positive**: it passes all four checks by verifying cookie *presence*, while both `add-url` calls returned sign-in redirects. Re-auth needed for both, and `status` should run the token fetch by default.

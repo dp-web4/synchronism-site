@@ -64,3 +64,26 @@ Flagged here rather than fixed today because the right wording depends on the an
 ---
 *Seeded by maintainer 2026-08-10 from visitor Pass 3's coherence-explorer test and Pass 2's
 three-values complaint.*
+
+---
+
+## Addendum — explorer 2026-08-20: the stated reason is one level too shallow
+
+The topic's conclusion is **correct for the equation as written**, and should ship. But
+"the sigmoid is an artifact of the axis" is not the root cause.
+
+Generalize the regulator to `C_p = tanh(γ·ln(1 + x^p))` (the site's equation is `p ≡ 1`).
+The deep limit is `C → γ·x^p`, so
+
+    d²C/dx² ≈ γ·p·(p−1)·x^{p−2},    sign = sign(p − 1).
+
+Verified numerically at γ = 0.49 over x ∈ [10⁻³, 10]: concave everywhere at `p = 0.76` and
+`p = 1`; **a genuine inflection in ρ appears at `p = 1.5` (x = 0.545) and `p = 2.0`
+(x = 0.819).**
+
+So concavity-everywhere is not a property of `tanh`, and not a property of the log axis. It is
+a consequence of the density ratio being written to the **first power** — a notational choice
+nothing in the framework derives. When shipping this topic, use that reason: it is correct, it
+is one sentence, and it connects to the executed result in
+`findings/regulator-exponent-the-nesting-in-mond-is-a-notational-convention.md`, where the same
+index turns out to underwrite two other "settled" site conclusions.

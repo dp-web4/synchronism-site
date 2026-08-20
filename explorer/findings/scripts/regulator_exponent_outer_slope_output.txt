@@ -1,0 +1,91 @@
+
+==============================================================================
+PART A -- the model-free statistic: outer d lnV / d lnr on real SPARC
+==============================================================================
+  No Upsilon in the statistic.  Windows are restricted to the deep regime AND to
+  radii where the enclosed baryonic mass has converged, because the conversion
+  s_V -> n is only valid where g_bar ~ r^-2.  Exclusion counts printed, not hidden.
+  galaxies in     : 132
+  galaxies usable : 42
+  exclusions      : no-leverage=12, not-converged=65, not-deep=13
+
+  N galaxies      = 42
+  median window   = 8 pts, 0.23 dex in radius
+  s_V (weighted)  = -0.1062 +- 0.0032 (formal)   +- 0.0209 (galaxy bootstrap)
+  s_V (median)    = -0.0244    population sd = 0.1497
+  MOND / scale invariance predicts s_V = 0 exactly.
+  -> departure = 5.08 sigma (bootstrap)
+
+  n  = 0.6496   1-sigma [0.5946, 0.7086]
+      2-sigma [0.5432, 0.7719]
+
+==============================================================================
+PART B -- OUTCOME (c): is s_V universal, or does it track galaxy properties?
+==============================================================================
+  n is meant to be a constant of the theory.  If s_V correlates with luminosity or
+  size, no single n exists and the extension class dies while MOND does not.
+  (Persic & Salucci's universal-rotation-curve work reports exactly such a trend,
+  so this is the outcome to beat, not a formality.)
+
+  chi2 of 'all galaxies share one s_V' = 613.1 / 41 dof = 14.95
+  (>> 1 means the spread in s_V is REAL, not measurement noise)
+  intrinsic galaxy-to-galaxy sd in s_V = 0.1168   -> spans n in [0.383, 1.043]
+  corr(s_V, log10 L[3.6um]  ) = -0.291   perm p = 0.0665   (N=42)
+  corr(s_V, log10 R_disk    ) = -0.171   perm p = 0.2875   (N=42)
+  corr(s_V, Hubble type T   ) = +0.191   perm p = 0.2300   (N=42)
+
+==============================================================================
+PART C -- Upsilon dependence of an estimator that contains no Upsilon
+==============================================================================
+  Upsilon touches this estimator only through the window-selection cuts.
+  Registered prediction (same as the RAR-fit script): n from this route is far more
+  Upsilon-stable than gamma was on 08-14 ([0.27, 0.96] over ups 0.4-0.6).
+
+   ups_d |    N |       s_V   boot sd |        n
+  ------------------------------------------------
+    0.30 |   41 |   -0.1152    0.0240 |   0.6255
+    0.40 |   40 |   -0.1139    0.0259 |   0.6288
+    0.50 |   42 |   -0.1062    0.0206 |   0.6496
+    0.60 |   43 |   -0.0876    0.0195 |   0.7019
+    0.70 |   43 |   -0.0656    0.0268 |   0.7680
+    0.80 |   42 |   -0.0599    0.0161 |   0.7860
+
+  n span across the Upsilon band: 0.1605 (23.1% of mean)
+
+==============================================================================
+PART D -- robustness of the window definition (the cuts ARE the assumption)
+==============================================================================
+   deep_f    tol |    N |       s_V |        n
+  --------------------------------------------
+      1.0   0.05 |   27 |   -0.1246 |   0.6011
+      1.0   0.10 |   49 |   -0.1178 |   0.6187
+      1.0   0.20 |   74 |   -0.0822 |   0.7177
+      2.0   0.05 |   26 |   -0.1254 |   0.5990
+      2.0   0.10 |   48 |   -0.1114 |   0.6356
+      2.0   0.20 |   70 |   -0.0594 |   0.7878
+      3.0   0.05 |   23 |   -0.1197 |   0.6138
+      3.0   0.10 |   42 |   -0.1062 |   0.6496
+      3.0   0.20 |   64 |   -0.0549 |   0.8022
+      5.0   0.05 |   19 |   -0.0521 |   0.8112
+      5.0   0.10 |   34 |   -0.0583 |   0.7913
+      5.0   0.20 |   53 |   -0.0295 |   0.8887
+     10.0   0.05 |   11 |        -- |       --   (too few)
+     10.0   0.10 |   19 |   -0.0400 |   0.8519
+     10.0   0.20 |   34 |   -0.0468 |   0.8289
+
+  n range across 15 window definitions: [0.599, 0.889]
+
+==============================================================================
+PART E -- what SPARC itself says: does 'flat' mean flat?
+==============================================================================
+  Lelli+2016 assign V_flat only where the outer curve is flat by their criterion.
+  If the fitted n implies a real outer decline, SPARC's own flatness classification
+  is the cheapest independent cross-check on it.
+  fraction of galaxies with |s_V| < 0.02  : 0.143
+  fraction of galaxies with |s_V| < 0.05  : 0.381
+  fraction of galaxies with |s_V| < 0.10  : 0.548
+  fraction with s_V < 0 (declining): 0.619
+  sign test vs 50/50: N_neg=26 of 42
+
+
+[json written: /mnt/c/exe/projects/ai-agents/synchronism-site/explorer/findings/scripts/regulator_exponent_outer_slope_output.json]

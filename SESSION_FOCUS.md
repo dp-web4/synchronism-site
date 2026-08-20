@@ -2,27 +2,207 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-19 (explorer)*
+*Last updated: 2026-08-20 (explorer)*
 
 ---
 
-## 🚨 OPERATIONAL (updated explorer 2026-08-19) — Maintainer DOWN **7 consecutive days** (401 OAuth). Five undrained explorer queues. The visitor is now **rediscovering findings that are already on the pages it is reading** — the loop is spending most of its capacity re-deriving itself
+## 🚨 OPERATIONAL (updated explorer 2026-08-20) — Maintainer DOWN **8 consecutive days** (401 OAuth). Six undrained explorer queues. Re-derivation is now the loop's dominant mode: **2 of today's 4 `high` researcher items are verbatim rediscoveries of the 08-12 explorer P0**
 
-**08-19 status.** maintainer `401 OAuth access token is invalid` again (08-13 credits;
-08-14/16/17/18/19 all 401). Explorer ran. Visitor ran.
+**08-20 status.** maintainer `401 OAuth access token is invalid` again (08-13 credits;
+08-14/16/17/18/19/20 all 401). Explorer ran. Visitor ran.
 
-**New evidence on the cost, 08-19**: of the 12 items in today's visitor Pass 4, **5 are
-rediscoveries of unpropagated explorer findings, and 2 of those are stated verbatim on the page the
-persona was reading** — `/galaxy-plotter` L289–314 already contains the quadrature/division fork box
-and the "division branch delivers B ≈ 1000" statement that Pass 4 filed as a new `high`. The persona
-browses *fetched page summaries*, which lose in-page correction boxes. So the loop now has two
-distinct degradation modes: manufacturing (08-18) and re-derivation (08-19).
+**New evidence on the cost, 08-20 — and it is now measurable against a specific undrained queue.**
+Today's visitor Pass 4 filed two `high` dark-energy items: *"the no-go compares the model's
+**analytic** (w₀, wₐ) against DESI's **fitted CPL** contour"* and *"drop the 3.4–5.4σ."*
+**Both were executed and resolved by the 2026-08-12 explorer P0**, which ran exactly that direct fit
+under DESI's own likelihood (substituted family ≡ ΛCDM, γ = 0.487 ± 0.02; both covariant completions
+fail the fit) and already retracted the σ as a forced-w₀ artifact. The finding exists, the fix was
+queued, the maintainer never ran, so the page still says the old thing and the persona re-derives it.
+The 08-19 pattern (re-derivation) has hardened into the majority mode for the sharpest persona.
 
-**→ dp / supervisor: re-auth is still the single highest-value action.** Since it has not happened
-in five days of asking, the explorer has escalated a narrower, *decidable* question instead — see
-`explorer/logs/2026-08-19.md` §Escalation: **should the explorer be permitted to apply
-verbatim-specified maintainer fixes after N days of maintainer downtime?** The explorer declined to
-route around `explorer/CLAUDE.md` unilaterally and proposes a bounded relay rule. dp's call.
+**Also 08-20, the inverse error — a persona finding that does NOT survive source check.** Pass 4
+reports `/equation-walkthrough` explains the `+1` "only as preventing a log divergence." That is
+**Step 3**; **Step 5** already calls it load-bearing. The page's real defect is *Step 5's third
+clause*, which Pass 4 did not reach and which is factually backwards (see today's 🟢 block).
+`feedback_verify_visitor_findings_against_source` — 3rd confirmation. Persona error remains
+uncorrelated with site state in **both** directions.
+
+**→ dp / supervisor: re-auth is still the single highest-value action**, and it is cheaper to
+justify today than on any previous day — the blocked fixes are known, verbatim, and uncontested.
+The 08-19 escalation still stands and is still dp's call: **should the explorer be permitted to
+apply verbatim-specified maintainer fixes after N days of maintainer downtime?** (see
+`explorer/logs/2026-08-19.md` §Escalation). The explorer has again declined to route around
+`explorer/CLAUDE.md` unilaterally.
+
+**→ Housekeeping note so the next WAKE does not misread the tree.** `AGENTS.md` and `CLAUDE.md`
+carry **uncommitted supervisor gitnexus-index updates** (6588→7030 symbols, 7722→8471
+relationships, 96→144 flows), and `Synchronism/simulations/session373_acceleration_regime.png`
+is modified in the research repo. **None of these are explorer work and the explorer has left
+them alone** (per the primer's "do not modify the gitnexus blocks"). Per
+`project_orphaned_inscription_failure_mode` a dirty tree at WAKE reads as a crashed
+predecessor — it is not one here. Supervisor: please commit or discard them.
+
+**→ Second, smaller operational item (new 08-20): NotebookLM `status` reports a false positive.**
+`./notebooklm_research.sh status` passes all four checks — storage exists, JSON valid, 15 cookies,
+SID cookie present — because it verifies cookie *presence*; the token-fetch check is `⊘ skipped`
+unless `--test` is passed. Both `add-url` attempts this session returned a Google sign-in redirect
+and *"Run 'notebooklm login' to re-authenticate."* The notebook needs re-auth on CBP, and **`status`
+should run the token fetch by default** — a check that cannot fail is the same defect this site
+documents in its own test catalog.
+
+---
+
+## 🟢 NEW (explorer 2026-08-20) — The galaxy sector's nesting inside MOND is imposed by a **notational convention**, not by the model. The site's a-priori "can only tie or lose" argument has a false premise. The exponent was freed, measured, and **came back consistent with 1** — the first galaxy-sector test with the power to *select* the framework, and it returned a real null. **Count UNCHANGED at 6.**
+
+Finding: `explorer/findings/regulator-exponent-the-nesting-in-mond-is-a-notational-convention.md`
+Scripts: `explorer/findings/scripts/regulator_exponent_n_real_sparc.py`,
+`regulator_exponent_outer_slope.py`, `regulator_exponent_n_crossval.py` (+ outputs, + json).
+Back-annotated: `Synchronism/Research/proposals/regulator_exponent_nesting_is_notational_20260820.md`.
+
+**Origin.** Visitor 08-20 Pass 4's *"the thing I'd actually want the program to do"*, plus the
+standing memory note that every compander sweep this program ran varied the **outer sigmoid at
+fixed argument** (05-02) — the opposite operation to the one that matters. WAKE redirect off
+the 62-item topic queue, which contains no item on the exponent inside the log.
+
+### 1 — The structural result (stands regardless of the measurement)
+
+`C(ρ) = tanh(γ·ln(ρ/ρ_crit + 1))` writes the density ratio to the first power. Generalize to
+`C_p = tanh(γ·ln(1 + x^p))`: then `C → γ·x^p` **exactly** as `x → 0` (verified to 8 s.f. at
+x = 10⁻¹⁰, γ-independent), and
+
+    g = (g_bar·a₀^p/γ)^{1/(p+1)} ,  V² ∝ r^{(p−1)/(p+1)} ,  M ∝ V^{2(p+1)} ,  s_deep = 1/(p+1).
+
+`p = 1` ⇔ flat rotation curves ⇔ BTFR slope 4 ⇔ MOND's deep limit ⇔ **Milgrom (2009) spacetime
+scale invariance**. MOND *derives* the index from a symmetry; the framework *inherits* it from
+a regulator chosen for finiteness at ρ = 0.
+
+**`/for-researchers` ~L41 says the bounded boost is "the framework's ONLY structural difference
+from MOND", hence `MOND ∩ {B ≤ 3.17}`, hence "cannot win", "with no SPARC data required."
+The premise is false.** The index is a second structural difference of the **opposite sign** —
+the ceiling is a *restriction*, a free `p` is an *extension*, so the family **contains** MOND at
+`p = 1`. A supermodel is exactly the object that *can* be selected over its nested rival. The
+tie-or-lose conclusion holds only conditional on `p ≡ 1`, which nothing derives or even names.
+
+Two more "settled" results are conditional on the same index: `d²C/dx² ≈ γp(p−1)x^{p−2}`, so
+concavity-everywhere-in-ρ (⇒ "the S-curve is a log-axis artifact", queued topic) holds only for
+`p ≤ 1` — a real inflection appears at p = 1.5 (x = 0.545) and p = 2 (x = 0.819); and TEST-09's
+"the framework's deep limit is BTFR slope → 2, the opposite end from MOND's 4" is a statement
+about `p ≡ 1` plus the asserted `B_max`.
+
+**And `/equation-walkthrough` Step 5 states the key fact backwards**: *"the +1 … excludes any
+pure power-law behavior as ρ → 0."* It **creates** the power law and pins its index to 1.
+
+### 2 — The measurement, and four error bars that are the real deliverable
+
+Real SPARC (Lelli+2016, 2700 pts / 149 galaxies, Q<3, i>30°, e_V/V<0.10). **Power gate run
+first**, because Desmond+2023's ESR could not recover `s_deep` from MOND mocks with a free
+functional form: injection–recovery gives unbiased `p̂` (worst bias 0.038) at scatter ≈0.05
+across injected `p ∈ [0.70, 1.30]`, `dp̂/dp_true = 1.039`. **Gate passes.**
+
+| statistic | `p` | reading |
+|---|---|---|
+| in-sample, point-level | Δ(2 lnL) = 15.01 → "3.87σ" | **inflated** — 2700 correlated points, ≲0.3σ each |
+| galaxy-level bootstrap | **0.750 (+0.158/−0.095)**, 95 % CI **[0.602, 1.175]** | 1.71σ from 1; CI contains 1 |
+| **deep regime only** (`g_bar < a₀/3`, N=1568) | **1.186 ± 0.697** | **the deep end alone says nothing** |
+| **high regime only** (`g_bar > a₀`, N=627) | **0.885 ± 0.851** | neither does the Newtonian end |
+| **out-of-sample CV** (10-fold over galaxies × 3) | Δ lnL/pt = **+0.0019 ± 0.0059 = 0.33σ** | **NOT SELECTED. `p = 1` stands.** |
+
+Curve-level separation between the two best fits is **0.038 dex** against σ_int = 0.122 dex —
+*under* the 0.106 dex per-galaxy nuisance floor published in arXiv:2608.08945 (Aug 2026), which
+independently reaches the same null by a different route.
+
+**The deep-only row is the honesty line.** The full fit's precision does **not** come from the
+deep regime — only 0.4 % of SPARC points sit below a₀/100. It comes from the family's rigidity
+(`p` also sets the Newtonian approach rate via `γp`). The injection gate measures the
+estimator's precision *given the family*; the deep-only fit measures what the data alone say.
+**Quote σ(p) = 0.146 as the error and 0.05 only as pre-stated power.**
+
+**Robustness checks that could have dissolved it, and did not.** (i) `p̂` moves only
+**0.091 = 0.62 bootstrap σ** across three qualitatively different outer sigmoids (tanh /
+`u/√(1+u²)` / `1−e^{−u}`) while γ̂ moves ×36 and â₀ ×213 — the argument exponent is separately
+identifiable from the 05-02 outer-sigmoid freedom. (ii) **Outcome (c) — "no universal `p`" — is
+NOT supported**: per-galaxy `p` (125 galaxies) has IQR [0.591, 0.916] and correlations of
+−0.064 / +0.103 with acceleration regime / mass proxy. The kinematic route's alarming
+universality χ² (613.1/41 dof = 14.95) is most plausibly underestimated correlated errors —
+adjacent rotation-curve points inside a beam are not independent — not real variation in `p`.
+(iii) Permutation null: `p̂` piles at the parameter bound (median 8.0) — the family cannot fit
+destroyed data, so `p̂ ≈ 0.76` responds to real structure. Because the null is at a boundary its
+"6.6σ" is **not** interpretable as a significance; do not quote it as one.
+
+**This null is a REAL null, and that is what is new.** The ledger is full of tests that
+returned nothing because they never had power (TEST-02 hung both ways, TEST-04a on the wrong
+observable, the γ concordance at 0.1σ between two models 0.011 apart, C doubly unanchored).
+This one had power and returned a null ⇒ **"0 tests could select it" stops being a wrong
+a-priori claim and becomes a correct executed negative result with a number behind it.**
+
+### 3 — Three by-products, all cutting toward the deflationary reading
+
+1. **The site's γ is identifiable only because `p` is frozen.** With `p` free, γ = 1.63 ± 17.2
+   and runs to the fit bound (50) for every ϒ ≥ 0.6, while `p̂` moves ≈1.2σ.
+   `corr(p, ln a₀) = −0.75` — the deep limit contains γ and a₀ only through `a₀^p/γ`. So
+   "γ_SPARC = 0.489 ± 0.11" measures `a₀^p/γ` at `p ≡ 1` with a₀ pinned to Milgrom's value.
+   Sharpens 08-14 from "ϒ-degenerate" to "conditional on a notational convention."
+2. **Freeing γ COSTS out-of-sample accuracy: −1.34σ.** MOND simple-μ with γ ≡ ½ predicts
+   held-out galaxies *better* than the site's fitted γ (in-sample Δ(2 lnL) = 0.39). And
+   1-parameter MOND ties the 3-parameter extension out of sample (0.44040 vs 0.44074).
+3. **Pipeline validation:** at `p ≡ 1` this independent implementation returns γ = 0.4834,
+   reproducing the site's 0.489 to 1 %.
+
+### 4 — Guardrails that fired, including on my own registered prediction
+
+- **Registered before running and WRONG:** *"ϒ translates the RAR horizontally, so `p̂` is
+  ϒ-invariant."* ϒ scales only the stellar component (changing the star/gas *mix*, hence the
+  shape of g_bar) and re-selects the windows. `p̂` spans 20–23 % of its mean on both routes.
+  Surviving comparative form: **`p` moves ≈1.2 bootstrap σ where γ runs to a bound**, and
+  `p̂ < 1` at every ϒ on both routes ⇒ direction ϒ-robust, value not.
+- **Estimator trap, caught:** the ϒ-free kinematic route (`s_V = d lnV/d lnr`) first returned
+  **5.08σ** against `s_V = 0` — an artifact of inverse-variance weighting in which **one galaxy
+  carries 30 % of the weight and three carry 57 %.** Across five estimators the exclusion of
+  `p = 1` runs **0.80σ (median — does not exclude) to 5.13σ** while the central value stays
+  `p ∈ [0.65, 0.91]`. Fourth instance of the unnamed-estimator failure mode.
+
+### 5 — Scope limit that must travel with the result
+
+The `p` direction is alive **only** in the `g`-variable reading (the one where the site's own
+identity `C ≡ μ` holds). In the site's literal variable `x = ρ/ρ_crit`, `C_p(ρ)` is a local
+algebraic function of ρ, and 08-02's form-free bound (`σ(log B | ρ) = 0.1613` vs
+`σ(log B | g_bar) = 0.1178 dex`) is an infimum over **all** functions of ρ — no `p` escapes it,
+no fitting required. **So this is a one-parameter generalization *of* MOND's deep limit, not an
+escape from MOND's variable.** It is still a direction MOND cannot take, because there `p = 1`
+is a theorem.
+
+**→ Action: Maintainer** (9 items, details in the finding). Highest-value three:
+(1) `/equation-walkthrough` Step 5 — the "+1 excludes any pure power-law behavior" clause is
+backwards; it *creates* the power law and pins its index to 1 (Steps 3 and 5 also disagree with
+each other about how load-bearing the +1 is). (2) `/for-researchers` ~L41 and
+`/honest-assessment` — keep the ceiling argument, kill the word **"only"**, and re-badge the
+"can only tie or lose" conclusion from *a-priori* to *measured*: this **strengthens** the box.
+(3) Register the negative result with a TEST-ID and an **out-of-sample** registered statistic
+(per-galaxy Δ lnL under galaxy-level K-fold), with the pre-stated power σ(p̂) ≈ 0.05 — otherwise
+it is invisible to ledger audits exactly as the a₀(z) prediction was.
+
+**→ Also for the maintainer, and it is the cheaper win:** two of today's visitor Pass-4 `high`
+items (the DE CPL-projection objection; "drop the 3.4–5.4σ") are **verbatim rediscoveries of
+the 2026-08-12 explorer P0**, which executed exactly that direct fit and already retracted the
+σ. They need no new work — they need the 08-12 queue drained. Also, Pass 4's claim that
+`/equation-walkthrough` explains the +1 "only as preventing a log divergence" describes **Step
+3**; **Step 5** already calls it load-bearing. The page's real defect is Step 5's third clause,
+which Pass 4 did not reach. **Verify persona findings against source** — 3rd confirmation.
+
+**→ Explorer (next).** (a) **Is the DESI no-go `p`-conditional?** The DE sector uses the same
+`C(ρ)` and `w_DE = dlnF/dlnx`; a free `p` rescales the argument non-linearly, so 08-11's escape
+condition (interior maximum of `ρ_DE(x)`) may not be `p`-invariant. Cheap against
+`covariant_00_component_sign_lock_audit.py`. **Not run — do not assume either way.**
+(b) The 08-19 Yukawa self-check is **still queued and still the cheapest test of that session's
+own sorting rule.** I chose today's test over it because a defensive check cannot move the
+program; it should still be run before anyone cites the rule.
+
+**→ Research (dp-gated).** Credit line required: the theoretical content — that scale
+invariance fixes the deep exponent — is **Milgrom (2009, ApJ 698, 1630)**. This deliverable is
+the *measurement* and the *null*. Do not stack the four `p < 1` directions (family fit 0.762;
+kinematic ≈0.76; the site's own observed BTFR 3.75 ± 0.10 ⇒ p = 0.875 ± 0.050; arXiv:2006.06700's
+independent-data weak preference): three are SPARC-correlated, only the last is independent, and
+the one out-of-sample adjudication is null.
 
 ---
 

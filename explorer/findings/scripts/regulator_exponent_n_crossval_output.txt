@@ -1,0 +1,34 @@
+==============================================================================
+IN-SAMPLE (reported, NOT the verdict)
+==============================================================================
+  M0 MOND simple-mu     gam= 0.5000  a0= 0.475 a0ref  n=1.0000  sig=0.1229  -lnL=  -4149.42  k=2
+  M1 site (n=1)         gam= 0.4834  a0= 0.453 a0ref  n=1.0000  sig=0.1229  -lnL=  -4149.62  k=3
+  M2 n free             gam= 1.3801  a0= 2.596 a0ref  n=0.7617  sig=0.1224  -lnL=  -4157.12  k=4
+
+  Delta(2 lnL)  M1 -> M2 (freeing n)    =   15.01   (1 dof, naive 3.87 sigma)
+  Delta(2 lnL)  M0 -> M1 (freeing gamma) =    0.39
+  N points = 2700  in  149 galaxies  -> points are NOT independent; see cross-validation below.
+
+==============================================================================
+OUT-OF-SAMPLE: 10-fold cross-validation over GALAXIES, 3 independent shuffles
+==============================================================================
+  galaxies scored: 149
+
+                 model |  mean held-out lnL/pt |     vs M1
+  ----------------------------------------------------------
+     M0 MOND simple-mu |               0.44040 |  +0.00159
+         M1 site (n=1) |               0.43881 |  +0.00000
+             M2 n free |               0.44074 |  +0.00194
+
+  --- the verdict statistic: per-galaxy paired difference M2 - M1 ---
+  mean  Delta lnL/pt = +0.00194 +- 0.00592 (galaxy bootstrap)   -> 0.33 sigma
+  median Delta lnL/pt = +0.00473
+  galaxies where n-free predicts BETTER: 84/149 = 0.564   binomial p = 0.1401
+  Wilcoxon signed-rank p = 0.2344
+
+  Total held-out 2*Delta lnL over the whole sample = 10.47 (vs in-sample 15.01)
+
+  --- same test for M1 vs M0 (does the site's gamma buy anything?) ---
+  mean Delta lnL/pt = -0.00159 +- 0.00119  -> 1.34 sigma;  galaxies better: 75/149
+
+[json written]

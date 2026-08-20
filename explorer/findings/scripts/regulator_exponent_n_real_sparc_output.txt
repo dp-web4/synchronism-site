@@ -1,0 +1,123 @@
+
+==============================================================================
+PART 0 -- the data, and how much of it is actually in the deep regime
+==============================================================================
+  points 2700   galaxies 149   (Upsilon_disk=0.5, Upsilon_bul=0.7, Q<3, inc>30, eV/V<0.10)
+          g_bar < a0:  2073 pts ( 76.8%)  in 148 galaxies
+       g_bar < a0/10:   960 pts ( 35.6%)  in 115 galaxies
+      g_bar < a0/100:    11 pts (  0.4%)  in   6 galaxies
+  dynamic range in log10(g_bar/a0): [-2.16, 1.74]  = 3.90 dex
+
+==============================================================================
+PART 1 -- THE POWER GATE.  Injection-recovery before any measurement is quoted.
+==============================================================================
+  Desmond+2023 could not recover the deep slope from MOND mocks with a FREE
+  functional form.  This family is rigid (3 shape parameters), so the question is
+  open.  Inject at known n, with SPARC's own g_bar sampling and its own error bars.
+
+  reference fit for the injection scatter: sigma_int = 0.1224 dex
+
+   n_true |  n_hat median     bias  scatter |  gam_hat a0_hat/a0ref | recovered?
+  ----------------------------------------------------------------------------
+     0.70 |        0.6974  -0.0026   0.0501 |   0.4952       0.9856 | YES
+     0.85 |        0.8596  +0.0096   0.0470 |   0.4798       0.9478 | YES
+     1.00 |        1.0377  +0.0377   0.0702 |   0.4561       0.8703 | YES
+     1.15 |        1.1145  -0.0355   0.0514 |   0.5616       1.1306 | YES
+     1.30 |        1.3208  +0.0208   0.0654 |   0.4738       0.9506 | YES
+
+  monotone in n_true? YES   dn_hat/dn_true over [0.70,1.30] = 1.039
+
+==============================================================================
+PART 2 -- the measurement on real SPARC
+==============================================================================
+  gam    = 1.3801
+  a0     = 3.1152e-10 m/s^2   (2.596 x Lelli+2017)
+  n      = 0.7617
+  sig_int= 0.1224 dex
+  s_deep = 1/(n+1) = 0.5676   (MOND: 0.5)   outer V^2 slope (n-1)/(n+1) = -0.1352
+
+  n frozen at 1 (= MOND / scale-invariant deep limit):
+    gam = 0.4834   a0 = 0.453 a0_ref   sig = 0.1229
+    Delta(2 lnL) freeing n = 15.01   -> naive sqrt = 3.87 sigma  [POINT-LEVEL, correlated: NOT the answer]
+
+==============================================================================
+PART 3 -- galaxy-level bootstrap (the honest error bar)
+==============================================================================
+  nboot = 200
+  n  = 0.7502  (+0.1583 / -0.0951)   95% CI [0.6023, 1.1745]
+  sigma(n) = 0.1460
+  P(n > 1) = 0.100   -> |n-1| = 0.2498 = 1.71 sigma
+  gam = 1.6299 +- 17.2173   [08-14 quoted 0.49 +- 0.11]
+  corr(n, gam) = -0.471     corr(n, ln a0) = -0.752
+
+==============================================================================
+PART 4 -- THE REGISTERED PREDICTION: is n Upsilon-invariant where gamma is not?
+==============================================================================
+  Registered in the header before running: Upsilon rescaling translates the RAR
+  horizontally, and a translation cannot change a slope, so n-hat should be ~flat
+  across the same band that sweeps gam-hat over [0.27, 0.96] (2026-08-14).
+
+   ups_d  ups_b |     N |      gam  a0/a0ref        n     sig |  s_deep
+  --------------------------------------------------------------------------
+    0.30   0.42 |  2700 |   0.1793    0.1673   0.9087  0.1293 |  0.5239
+    0.40   0.56 |  2700 |   0.3882    0.4371   0.8448  0.1249 |  0.5421
+    0.50   0.70 |  2700 |   1.3801    2.5960   0.7617  0.1224 |  0.5676
+    0.60   0.84 |  2700 |  50.0000  279.6980   0.7602  0.1221 |  0.5681
+    0.70   0.98 |  2700 |  50.0000  112.2415   0.8572  0.1258 |  0.5385
+    0.80   1.00 |  2700 |  50.0000   62.0445   0.9329  0.1291 |  0.5174
+
+  gam range over the band : [0.1793, 50.0000]  span 49.8207  = 196.7% of mean
+  n   range over the band : [0.7602, 0.9329]  span 0.1727  = 20.5% of mean
+  n span in units of the bootstrap sigma(n): 1.18
+  gam span in units of its bootstrap sigma : 2.89
+
+==============================================================================
+PART 5 -- WHERE does the constraint on n come from?  (data, or family rigidity?)
+==============================================================================
+  n is a deep-end slope, but it also enters the Newtonian end through gam*n
+  (1 - C ~ 2 x^(-2 gam n)).  If the deep-only fit is uninformative while the full
+  fit is tight, then the number is the FAMILY talking, not the data -- and this
+  program has been burned by exactly that before (the N_corr ladder, B_max).
+  deep only  (g_bar < a0/3): N= 1568  n = 1.1860 +- 0.6971   gam = 0.2228
+  deep only  (g_bar < a0)  : N= 2073  n = 0.8982 +- 0.4211   gam = 0.5428
+  high only  (g_bar > a0)  : N=  627  n = 0.8849 +- 0.8513   gam = 1.3412
+  all points               : N= 2700  n = 0.7617 +- 0.1570   gam = 1.3801
+
+==============================================================================
+PART 6 -- is n-hat a property of the data, or of tanh?  (swap the OUTER sigmoid)
+==============================================================================
+  The 2026-05-02 sweep varied the outer sigmoid at fixed argument and found the
+  consciousness threshold moved.  Here the argument is generalized and the outer
+  sigmoid is varied: if n-hat moves with the sigmoid, n is not separately measurable
+  and the 'non-nested direction' is entangled with a second unconstrained choice.
+       outer S |      gam  a0/a0ref        n     sig          nll
+  --------------------------------------------------------------
+          tanh |   1.3801    2.5960   0.7617  0.1224     -4157.12
+     algebraic |  50.0000  554.7857   0.7065  0.1225     -4156.31
+          expo |   4.5690    9.8469   0.7975  0.1224     -4157.60
+
+  n span across outer sigmoids: 0.0910 = 0.62 bootstrap sigma
+
+==============================================================================
+PART 7 -- OUTCOME (c) TEST: is there a universal n at all?
+==============================================================================
+  n is supposed to be a constant of the theory, like a0.  Fit n per galaxy with
+  gam and a0 frozen at the global values.  If per-galaxy n scatters beyond its own
+  errors, or tracks a galaxy property, no universal n exists and the extension class
+  dies while MOND does not.
+
+  galaxies fit: 125
+  per-galaxy n : median 0.743   mean 0.775   sd 0.333   IQR [0.591, 0.916]
+  expected sd if universal (bootstrap sigma * sqrt(Ngal)) ~ 1.633
+  corr(n_gal, median log10(g_bar/a0)      ) = -0.064   (N=125)
+  corr(n_gal, log10(V^2 r) proxy for mass ) = +0.103   (N=125)
+
+==============================================================================
+PART 8 -- permutation null
+==============================================================================
+  Destroy the RAR by shuffling g_obs across galaxies; refit n.
+  n under permutation: median 8.0000  sd 1.0899
+  real n = 0.7617  ->  z = -6.64 from the destroyed data
+
+
+[json written: /mnt/c/exe/projects/ai-agents/synchronism-site/explorer/findings/scripts/regulator_exponent_n_real_sparc_output.json]

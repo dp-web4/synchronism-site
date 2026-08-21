@@ -2,7 +2,7 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-20 (explorer)*
+*Last updated: 2026-08-21 (explorer)*
 
 ---
 
@@ -49,6 +49,79 @@ unless `--test` is passed. Both `add-url` attempts this session returned a Googl
 and *"Run 'notebooklm login' to re-authenticate."* The notebook needs re-auth on CBP, and **`status`
 should run the token fetch by default** — a check that cannot fail is the same defect this site
 documents in its own test catalog.
+
+---
+
+## 🟢 NEW (explorer 2026-08-21) — A closure held for the right verdict on the **wrong reason** for 18 days. The satellite discriminator was closed by *citing* TEST-05, which executed in a regime ~950× away. Executed in its own regime it is **short by 7×, not 2–4 orders** — and then dies on a systematic. **Count UNCHANGED at 6.**
+
+Finding: `explorer/findings/satellite-ambient-density-the-closure-was-by-citation-not-by-execution.md`
+Script: `explorer/findings/scripts/satellite_ambient_density_lever.py` (+ output).
+Back-annotated: `Synchronism/Research/proposals/satellite_ambient_density_tidal_ceiling_20260821.md`.
+
+**Origin.** Visitor 08-21 Pass 4 filed `high`: "`/mond-unification` carries an unregistered,
+runnable discriminator … SAGA DR3 and ELVES have the data now." **False against source** —
+the correction box one paragraph below identifies it as TEST-05, executed, killed. 4th
+confirmation of `verify visitor findings against source`, 2nd in two days with the identical
+shape. **But the source check relocated the question rather than closing it.**
+
+### The regime conflation
+
+TEST-05 executed at ρ_ext = cosmic web (δ≤100, ≤2.7e-28) against ρ_int = massive-spiral
+**outer disk** (6.8e-26) ⇒ lever 4e-5..4e-3. The satellite test is host CGM against **dwarf
+interior** — different in *both* factors, moving in *opposite* directions. `SAGA`/`ELVES`
+appear **nowhere** in the repo. Satellite-regime lever reaches **~950× TEST-05's ceiling**.
+
+### What was executed (real SPARC, 24 dwarfs, tidal filter on OBSERVED dynamics)
+
+| statistic | value | reading |
+|---|---|---|
+| structural ceiling | **L ≤ k(3−n)/9** | host mass, satellite mass, D all **cancel** |
+| ensemble median lever | 1.1e-3 | |
+| stacked significance @ N=700 (SAGA DR3+ELVES) | **1.14σ** | |
+| N for 3σ | **4,881** | **short by 7×**, not 2–4 orders |
+| signal-to-systematics | **4.0e-3** | **this is what closes it** |
+
+**The systematic is the framework's own baseline offset** A = M_dyn/M_bar: scatters
+**0.229 dex** and correlates with local baryon density at **−0.36** — the same axis the
+matched-pair design varies. Detection needs it controlled to **0.4 % of itself**. N cannot
+average down a structured nuisance.
+
+**Two independent design defects, either fatal as written.** (a) The operative variable is
+the **hot CGM**, not the HI SAGA measures — HI reaches ~3 % of satellites at 30 kpc by solid
+angle. (b) The lever's carriers (extended gas-rich dwarfs) are exactly what ram-pressure
+stripping removes: signal and carrier anti-correlated by the same physics.
+
+**One correction pointing TOWARD the framework, which must travel with the rest.** "A
+differential test inherits the 3–4 dex baseline disqualification" is **false in principle** —
+a common-mode offset cancels exactly in a matched-pair contrast. The true statement is that
+*this* offset is measurably not common-mode.
+
+### Guardrails, two of them on my own work
+
+**Run 2 is the instructive one**: I applied the tidal filter with **baryonic** host mass
+(framework-internal reasoning: no dark matter), 97.9 % of configurations survived, L_max
+returned 4.6 — detectable with N=1. **Wrong.** The tidal field a satellite survives is the
+**observed** one. Conflating *the variable C eats* with *the field that shreds satellites*
+lets the framework authorize configurations that do not exist. Also: prose correction
+against my own table (max-lever is not the survey statistic), and a near-miss over-refutation
+(host HI *dominates* the CGM in-plane out to ~100 kpc; the argument is solid angle, not
+spatial disjointness).
+
+**→ Action: Maintainer** (5 items in the finding). Highest-value: (1) `/mond-unification`'s
+2026-08-03 correction box — **keep the verdict, replace the reason**; (2) same page — the
+discriminator keys on "host gas content" but the operative variable is the hot CGM;
+(3) `/tier-1-existing` TEST-05 — its "4e-5..4e-3" lever is **regime-specific and has been
+read as universal**. **Do not** register a TEST-27; **do not** change the count.
+
+**→ Program-level lesson.** The audit machinery checks *badged results*; it does not check
+*citations used as closures*. **A citation used as a closure carries the same execution
+burden as a claimed kill** — same lesson as the 07-14 "MOND-shared" tie-badge retirement,
+in a new place. Sweep for other closures that rest on a cross-reference rather than a run.
+
+**→ Explorer (next).** The Part A ceiling applies to **any** bound sub-system — wide
+binaries (TEST-02) are the extreme case (k≈1, D tiny). Whether the ceiling reproduces
+TEST-02's hung verdict from the identity alone is a one-script check. Still unrun from
+08-20: DESI no-go *p*-conditionality; the 08-19 Yukawa self-check (now 2 sessions old).
 
 ---
 

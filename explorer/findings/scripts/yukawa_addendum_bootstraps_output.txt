@@ -1,0 +1,69 @@
+
+==============================================================================
+(1) EXTERIOR EXPONENT q -- IS 1.75 DISTINGUISHABLE FROM NEWTON'S 2?
+==============================================================================
+      member    median                95% CI            delta vs q=2
+      q=1.25    0.1353   [0.1182, 0.1565]    +0.0236 [+0.0039,+0.0432]   <-- DISTINGUISHABLE from q=2
+       q=1.5    0.1213   [0.1040, 0.1407]    +0.0104 [-0.0051,+0.0236]
+      q=1.75    0.1110   [0.0920, 0.1292]    -0.0009 [-0.0103,+0.0091]
+       q=2.0    0.1115   [0.0900, 0.1316]    +0.0000 [+0.0000,+0.0000]
+      q=2.25    0.1174   [0.0960, 0.1365]    +0.0056 [-0.0049,+0.0173]
+       q=2.5    0.1264   [0.1055, 0.1504]    +0.0145 [-0.0025,+0.0324]
+
+  bootstrap distribution of argmin_q:  median 1.75, 95% CI [1.75, 2.25]
+  fraction of resamples with argmin >= 2.0 : 0.490
+  q = 0 (pure accumulated mass, no falloff): 0.2269 dex
+
+==============================================================================
+(2) WHERE DOES SCREENING START TO COST?  FINE lambda_s GRID
+==============================================================================
+   lambda_s/R_d    median            delta vs g_bar   verdict
+           0.25    0.1362    +0.0257 [+0.0102,+0.0455]   SEPARATED from g_bar
+            0.4    0.1307    +0.0210 [+0.0059,+0.0395]   SEPARATED from g_bar
+            0.5    0.1291    +0.0193 [+0.0037,+0.0369]   SEPARATED from g_bar
+            0.6    0.1275    +0.0184 [+0.0029,+0.0354]   SEPARATED from g_bar
+           0.75    0.1258    +0.0162 [+0.0011,+0.0327]   SEPARATED from g_bar
+              1    0.1230    +0.0135 [-0.0007,+0.0293]   OVERLAPS g_bar
+           1.25    0.1193    +0.0108 [-0.0020,+0.0250]   OVERLAPS g_bar
+            1.5    0.1174    +0.0087 [-0.0026,+0.0224]   OVERLAPS g_bar
+              2    0.1149    +0.0053 [-0.0056,+0.0187]   OVERLAPS g_bar
+              3    0.1103    +0.0011 [-0.0077,+0.0119]   OVERLAPS g_bar
+              4    0.1075    -0.0015 [-0.0109,+0.0086]   OVERLAPS g_bar
+            inf    0.1083    -0.0009 [-0.0109,+0.0079]   OVERLAPS g_bar
+
+==============================================================================
+(3) DOES 08-19'S OWN 'SEPARATED AT 4 R_d' REPRODUCE?
+==============================================================================
+  08-19 Part F reported causal l=4Rd: delta = +0.0157 [+0.0003, +0.0340].
+  The lower edge is +0.0003 -- separation by 3e-4 dex.  Re-run here on
+  (a) my common-validity point set and (b) the unmasked 08-19 point set.
+
+         common-validity mask (N=2270): delta = +0.0075 [-0.0040, +0.0223]  OVERLAPS
+    unmasked, 08-19 point set (N=2604): delta = +0.0096 [-0.0046, +0.0215]  OVERLAPS
+
+==============================================================================
+(4) THE OPERATOR CLAIM, BOOTSTRAPPED
+==============================================================================
+  Symmetry held fixed; only the functional varies.  lambda_s = 4 R_d and inf.
+
+          functional    median            delta vs g_bar   verdict
+       <Sigma>_Y 4Rd    0.1270    +0.0190 [+0.0046,+0.0330]   SEPARATED from g_bar
+         |Phi_Y| 4Rd    0.1248    +0.0171 [-0.0023,+0.0376]   OVERLAPS g_bar
+             g_Y 4Rd    0.1076    -0.0011 [-0.0119,+0.0082]   OVERLAPS g_bar
+       <Sigma>_Y inf    0.1205    +0.0123 [-0.0094,+0.0415]   OVERLAPS g_bar
+         |Phi_Y| inf    0.1410    +0.0327 [+0.0118,+0.0578]   SEPARATED from g_bar
+             g_Y inf    0.1070    -0.0016 [-0.0102,+0.0077]   OVERLAPS g_bar
+               g_bar    0.1089    +0.0000 [+0.0000,+0.0000]   OVERLAPS g_bar
+
+==============================================================================
+(5) IS THE |Phi_Y| FAILURE REAL, OR AN OUTER-TRUNCATION ARTIFACT?
+==============================================================================
+  Phi converges more slowly than g with the outer radius, so the Phi row of the
+  operator table could in principle be a truncation artifact.  Sweep r_out.
+
+   r_out/R_last    g_bar  |Phi_Y| inf   g_Y inf  |Phi_Y| ratio  g_Y ratio
+            1.0   0.1156       0.1496    0.1138          1.29x      0.98x
+            2.0   0.1142       0.1488    0.1132          1.30x      0.99x
+            3.0   0.1150       0.1481    0.1138          1.29x      0.99x
+            6.0   0.1179       0.1480    0.1135          1.25x      0.96x
+           12.0   0.1188       0.1451    0.1174          1.22x      0.99x

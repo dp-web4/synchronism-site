@@ -1,0 +1,286 @@
+
+DOES THE 2026-08-19 SORTING RULE SURVIVE ITS OWN OBVIOUS COUNTEREXAMPLE?
+A genuine screened-scalar (Yukawa) kernel on real SPARC.
+
+Topic: self-directed, explorer 2026-08-22.  This is the "-> Explorer (next)" item
+named by the explorer on 2026-08-19 and deferred on 08-20 and 08-21:
+
+    "Project a genuine 3-D Yukawa kernel onto a radial kernel and re-run the
+     head-to-head.  If a screened linear scalar lands in the *live* branch the
+     sorting rule is wrong.  Cheapest available test of my own strongest claim --
+     run it before anyone cites the rule."
+
+WHAT THE RULE SAYS
+------------------
+2026-08-19 (causal_kernel_memory_length_real_sparc.py) scanned the CAUSAL/cumulative
+radial-kernel family and compared it to the SYMMETRIC family scanned on 2026-08-02.
+At matched range the causal family reaches sigma(log B | g_bar); the symmetric family
+does not, and gets *worse* with range (1.66x at lambda = inf).  The transferable
+deliverable was a SORTING RULE, and it is what the maintainer was told to inscribe:
+
+    "The escape taxonomy sorts candidates by local vs non-local.  The discriminating
+     axis is SYMMETRIC vs CUMULATIVE: symmetric/finite-range smoothing is in the
+     closed branch AT ANY RANGE; cumulative/enclosed-mass-like is live."
+
+WHY I THINK IT IS WRONG, BEFORE RUNNING ANYTHING
+------------------------------------------------
+Newtonian gravity is a symmetric convolution.
+
+    Phi = -G rho * (1/|r|),        g_bar = |grad Phi|
+
+The kernel 1/|r-r'| is two-sided, isotropic and infinite-range.  So the branch the
+rule declares dead CONTAINS THE WINNER.  The argument must be at the wrong level.
+
+Reading the two implementations side by side, the difference is not symmetry:
+
+  SYMMETRIC family (08-02):   u(r) = INT S(r') K r' dr'  /  INT K r' dr'
+                              <- NORMALISED.  A weighted MEAN of Sigma.  Intensive.
+                                 Units of Sigma.  lambda -> inf gives the galaxy-wide
+                                 mean surface density: a CONSTANT per galaxy.
+                                 That is why it degrades with range.
+
+  CAUSAL family (08-19):      u(r) = INT_0^r S(r') K r' dr' / INT_0^r K r' dr'
+                              <- also normalised, BUT over a domain [0, r] that GROWS
+                                 WITH r.  At lambda -> inf the denominator is r^2/2,
+                                 and THAT is where the 1/r^2 comes from -- not from
+                                 the one-sidedness.
+
+  NEWTON:                     g_bar = |grad (-G rho * 1/|r-r'|)|
+                              <- symmetric, UNNORMALISED, and a GRADIENT of a
+                                 potential.  Extensive.  Units of acceleration.
+
+So the two 08-19 families differ in TWO factors at once (support, and whether the
+normalisation domain scales with r) and the whole effect was attributed to one.
+This is the failure class the program already has a name for -- a conclusion one
+CLASS wider than its own test; check the OPERATOR, not the number -- firing on my
+own work three days later.  Smoothing is not convolving with a Green's function.
+
+THE TEST
+--------
+The cleanest symmetric, unnormalised, finite-range kernel in physics is the Yukawa
+propagator of a screened linear scalar -- exactly what the escape literature actually
+contains (Burrage-Copeland-Millington 2017; chameleon / symmetron):
+
+    (lap - m^2) h = 4 pi G rho     =>     h(r) = -G INT rho(r') e^{-m|r-r'|}/|r-r'| d3r'
+
+with in-plane radial field, for a thin axisymmetric disk of surface density Sigma and
+half-thickness h_z (softening):
+
+    g_Y(R) = G INT dr' INT dphi  Sigma(r') r' e^{-m d} (1 + m d) (R - r' cos phi) / d^3
+             d = sqrt(R^2 + r'^2 - 2 R r' cos phi + h_z^2)
+
+  m -> 0        =>  g_Y -> the exact thin-disk Newtonian in-plane field == g_bar
+  m -> inf      =>  g_Y -> 0 / contact-like
+
+ONE parameter (the screening length lambda_s = 1/m), symmetric at every value of it,
+and its unscreened endpoint IS the winner.  If sigma(log B | g_Y) reaches g_bar at
+any finite lambda_s, the sorting rule is refuted by explicit construction.
+
+PRE-REGISTERED OUTCOMES (written before running)
+------------------------------------------------
+ (O1) lambda_s -> inf reaches sigma(log B | g_bar) to within the reconstruction cost
+      of the 08-19 causal endpoint (+0.0029 dex).  If it does NOT, my disk
+      reconstruction is broken and nothing else in this script is interpretable.
+      This is a VALIDATION GATE, not a result.
+ (O2) The sorting rule is REFUTED at the level of symmetry regardless of the
+      lambda_s curve, purely because a symmetric family reaches g_bar.  The only
+      question left is whether it is also refuted at the level of RANGE.
+ (O3) RANGE.  lambda_s* = the largest screening MASS (shortest range) still matching
+      g_bar within the galaxy-block bootstrap.
+        lambda_s* <~ few R_d  -> finite-range non-locality is LIVE.  The site's
+                                 locality no-go is scoped much too widely and a
+                                 physically-motivated escape has a measured range.
+        lambda_s* >~ disk     -> 08-19's RANGE conclusion survives; only its REASON
+                                 changes, from symmetry to accumulation.
+ (O4) ACCUMULATION vs INVERSE SQUARE.  Free the exterior exponent: u = M(<r)/r^q.
+      08-19 freed the interior weight p and measured Newton's r' dr'; it never freed
+      q.  If q_hat ~ 2 the inverse square is measured, not assumed.  If sigma is flat
+      in q, then "the data fixes the kernel to Newton's" is over-stated in the other
+      direction.
+
+METHOD DISCIPLINE (carried from 08-14/08-15/08-19)
+--------------------------------------------------
+ * Same data, same cuts, same points, same scoring statistic as 08-02/08-19:
+   sigma(log B_req | log u), B_req = g_obs/g_bar, equal-count bins, robust MAD.
+ * No functional form, no gamma, no rho_crit, no fitting of the coherence law.
+ * Upsilon_disk SWEPT (the systematic that dissolved the 08-12 concordance on 08-14).
+ * The outward extrapolation is NEW here and is a nuisance: a symmetric kernel sees
+   mass beyond R_last that a causal one does not.  It is swept in PART F.
+ * Galaxy-block bootstrap on every claim of "reaches / does not reach" g_bar.
+
+DATA: Lelli, McGaugh & Schombert 2016 SPARC (MassModels_Lelli2016c.mrt + Table1).
+
+
+==============================================================================
+PART A -- SETUP, AND THE TWO ANCHORS
+==============================================================================
+  N points = 2141 of 2604 (common-validity mask), N galaxies = 139, median R_d = 2.42 kpc
+  sigma(log B | g_bar)   [SPARC's own g_bar, the target] = 0.1107 dex
+  sigma(log B | Sigma)   [the site's local variable]      = 0.1549 dex   (1.40x)
+  no-information ceiling sigma(log B)                     = 0.3065 dex
+
+  08-19 reference numbers on the same cuts, for continuity:
+    sigma(log B | g_bar) = 0.1163   sigma(log B | Sigma) = 0.1611
+    causal family, lambda = inf     = 0.1192  (1.02x)
+    symmetric NORMALISED family, lambda = inf = 0.1930  (1.66x)  <- 'closed'
+
+==============================================================================
+PART B -- THE VALIDATION GATE (O1): DOES MY DISK RECONSTRUCTION WORK?
+==============================================================================
+  The unscreened member m -> 0 of the Yukawa family IS the Newtonian thin-disk
+  in-plane field.  It must reproduce sigma(log B | g_bar).  If it does not,
+  nothing below is interpretable.  This is a gate, not a result.
+
+    sigma(log B | g_Y, lambda_s -> inf) = 0.1080 dex
+    sigma(log B | g_bar)                = 0.1107 dex
+    reconstruction cost                 = -0.0026 dex
+    (08-19 causal endpoint's cost was  = +0.0029 dex)
+
+  GATE: PASSES
+
+==============================================================================
+PART C -- (O2) IS THE SORTING RULE TRUE?  THE SCREENING-LENGTH SCAN
+==============================================================================
+  Every member below is SYMMETRIC: two-sided, isotropic, K = K(|r - r'|).
+  The 08-19 rule says this entire column is in the closed branch at ANY range.
+
+   lambda_s/R_d  lambda_s (kpc)   sigma(logB|g_Y)   vs g_bar   % of gap closed
+           0.10            0.24            0.1455      1.31x             21.4%
+           0.25            0.60            0.1359      1.23x             43.1%
+           0.50            1.21            0.1316      1.19x             52.7%
+           0.75            1.81            0.1287      1.16x             59.3%
+           1.00            2.42            0.1264      1.14x             64.4%
+           1.50            3.63            0.1231      1.11x             71.9%
+           2.00            4.84            0.1209      1.09x             76.9%
+           3.00            7.26            0.1133      1.02x             94.2%
+           4.00            9.68            0.1103      1.00x            100.8%
+           6.00           14.52            0.1078      0.97x            106.4%
+           8.00           19.36            0.1061      0.96x            110.4%
+          12.00           29.04            0.1055      0.95x            111.8%
+          16.00           38.72            0.1056      0.95x            111.5%
+          24.00           58.08            0.1079      0.98x            106.2%
+          32.00           77.44            0.1075      0.97x            107.1%
+          64.00          154.88            0.1075      0.97x            107.1%
+            inf             inf            0.1080      0.98x            106.0%
+
+==============================================================================
+PART D -- THE OPERATOR DECOMPOSITION: WHAT ACTUALLY DISCRIMINATES
+==============================================================================
+  Same kernel, same range, same points, same statistic.  SYMMETRY IS HELD
+  FIXED -- all three are two-sided and isotropic.  What varies is whether the
+  functional is NORMALISED (a mean of Sigma; intensive) or UNNORMALISED (a
+  field; extensive), and whether a GRADIENT is taken.
+
+   lambda_s/R_d     <Sigma>_Y     |Phi_Y|   g_Y=|grad Phi|   ratios vs g_bar
+                   NORMALISED     UNNORM.     UNNORM.+GRAD
+           0.10        0.1542      0.1582           0.1455   1.39x / 1.43x / 1.31x
+           0.25        0.1512      0.1467           0.1359   1.37x / 1.33x / 1.23x
+           0.50        0.1496      0.1407           0.1316   1.35x / 1.27x / 1.19x
+           0.75        0.1469      0.1387           0.1287   1.33x / 1.25x / 1.16x
+           1.00        0.1488      0.1366           0.1264   1.34x / 1.23x / 1.14x
+           1.50        0.1444      0.1323           0.1231   1.30x / 1.20x / 1.11x
+           2.00        0.1421      0.1278           0.1209   1.28x / 1.15x / 1.09x
+           3.00        0.1374      0.1287           0.1133   1.24x / 1.16x / 1.02x
+           4.00        0.1350      0.1294           0.1103   1.22x / 1.17x / 1.00x
+           6.00        0.1306      0.1313           0.1078   1.18x / 1.19x / 0.97x
+           8.00        0.1266      0.1343           0.1061   1.14x / 1.21x / 0.96x
+          12.00        0.1264      0.1377           0.1055   1.14x / 1.24x / 0.95x
+          16.00        0.1265      0.1405           0.1056   1.14x / 1.27x / 0.95x
+          24.00        0.1280      0.1416           0.1079   1.16x / 1.28x / 0.98x
+          32.00        0.1255      0.1411           0.1075   1.13x / 1.28x / 0.97x
+          64.00        0.1238      0.1463           0.1075   1.12x / 1.32x / 0.97x
+            inf        0.1236      0.1492           0.1080   1.12x / 1.35x / 0.98x
+
+==============================================================================
+PART E -- HEAD-TO-HEAD AT MATCHED RANGE: SYMMETRIC FIELD vs CAUSAL MEAN
+==============================================================================
+  The 08-19 Part G table, re-run with the symmetric family replaced by the
+  symmetric family that a FIELD EQUATION actually produces.  Same ranges,
+  same points, same statistic.  Read row-wise.
+
+    range/R_d   symmetric g_Y  causal <Sigma>   sym vs g_bar   causal vs g_bar
+         0.25          0.1359          0.1455          1.23x             1.31x
+         0.50          0.1316          0.1405          1.19x             1.27x
+         1.00          0.1264          0.1332          1.14x             1.20x
+         2.00          0.1209          0.1250          1.09x             1.13x
+         4.00          0.1103          0.1184          1.00x             1.07x
+         8.00          0.1061          0.1150          0.96x             1.04x
+        16.00          0.1056          0.1132          0.95x             1.02x
+          inf          0.1080          0.1139          0.98x             1.03x
+
+==============================================================================
+PART F -- (O4) ACCUMULATION OR INVERSE SQUARE?  FREE THE EXTERIOR EXPONENT
+==============================================================================
+  08-19 freed the INTERIOR weight p in INT Sigma r'^p dr' and measured
+  Newton's p = 1.  It never freed the EXTERIOR exponent.  u = G M(<r)/r^q:
+  q = 0 is pure accumulated mass, q = 2 is Newton.
+
+       q   sigma(logB|u)   vs g_bar
+    0.00          0.2316      2.09x
+    0.50          0.2096      1.89x
+    1.00          0.1580      1.43x
+    1.50          0.1274      1.15x
+    1.75          0.1145      1.04x
+    2.00          0.1175      1.06x
+    2.25          0.1243      1.12x
+    2.50          0.1356      1.23x
+    3.00          0.1472      1.33x
+    4.00          0.1796      1.62x
+
+  minimum at q = 1.75  (sigma = 0.1145 dex)
+
+==============================================================================
+PART G -- GALAXY-BLOCK BOOTSTRAP: WHICH RANGES ARE SEPARATED FROM g_bar?
+==============================================================================
+  150 galaxy-block resamples.  A finite screening length only counts as
+  'reaching g_bar' if its delta overlaps zero.
+
+            member    median                95% CI    delta vs g_bar   verdict
+     g_Y ls=0.25Rd    0.1316   [0.1073, 0.1565]    +0.0239 [+0.0053,+0.0414]  SEPARATED from g_bar
+      g_Y ls=0.5Rd    0.1271   [0.0997, 0.1532]    +0.0181 [+0.0018,+0.0385]  SEPARATED from g_bar
+        g_Y ls=1Rd    0.1222   [0.0964, 0.1440]    +0.0127 [-0.0008,+0.0300]  OVERLAPS g_bar
+        g_Y ls=2Rd    0.1144   [0.0893, 0.1379]    +0.0050 [-0.0075,+0.0181]  OVERLAPS g_bar
+        g_Y ls=4Rd    0.1081   [0.0853, 0.1262]    -0.0018 [-0.0115,+0.0079]  OVERLAPS g_bar
+        g_Y ls=inf    0.1071   [0.0863, 0.1262]    -0.0014 [-0.0127,+0.0069]  OVERLAPS g_bar
+        causal 4Rd    0.1163   [0.0886, 0.1375]    +0.0073 [-0.0045,+0.0188]  OVERLAPS g_bar
+     <Sigma>_Y inf    0.1211   [0.1015, 0.1474]    +0.0142 [-0.0093,+0.0350]  OVERLAPS g_bar
+       Sigma local    0.1490   [0.1221, 0.1706]    +0.0390 [+0.0179,+0.0592]  SEPARATED from g_bar
+             g_bar    0.1081   [0.0885, 0.1295]    +0.0000 [+0.0000,+0.0000]  OVERLAPS g_bar
+
+==============================================================================
+PART H -- NULL CONTROL
+==============================================================================
+  permutation null on g_Y(ls=2Rd), 200x: 0.3025 +- 0.0029 dex
+  observed 0.1209 dex  => z = 62.5
+
+==============================================================================
+PART I -- ROBUSTNESS GRID
+==============================================================================
+  Upsilon_disk is the systematic that dissolved the 08-12 concordance on 08-14.
+  r_out_mult is NEW and specific to symmetric kernels: a two-sided kernel sees
+  mass beyond the last measured point that a causal one never does.
+
+     Ups    h mode    gas  r_out   inner    g_bar   ls=1Rd   ls=2Rd   ls=4Rd   ls=inf
+    0.50     const   vgas    3.0     exp   0.1093   0.1331   0.1206   0.1124   0.1099
+    0.30     const   vgas    3.0     exp   0.1184   0.1282   0.1170   0.1151   0.1149
+    0.40     const   vgas    3.0     exp   0.1143   0.1291   0.1199   0.1106   0.1120
+    0.60     const   vgas    3.0     exp   0.1109   0.1343   0.1225   0.1144   0.1126
+    0.80     const   vgas    3.0     exp   0.1155   0.1417   0.1308   0.1200   0.1167
+    0.50       rd5   vgas    3.0     exp   0.1101   0.1325   0.1259   0.1143   0.1161
+    0.50  bershady   vgas    3.0     exp   0.1109   0.1327   0.1239   0.1128   0.1128
+    0.50     const   none    3.0     exp   0.1129   0.1334   0.1287   0.1242   0.1227
+    0.50     const   vgas    1.0     exp   0.1097   0.1330   0.1214   0.1103   0.1092
+    0.50     const   vgas    2.0     exp   0.1101   0.1330   0.1211   0.1117   0.1095
+    0.50     const   vgas    6.0     exp   0.1123   0.1332   0.1237   0.1164   0.1135
+    0.50     const   vgas    3.0    none   0.1066   0.1251   0.1150   0.1096   0.1093
+    0.50     const   vgas    3.0    flat   0.1108   0.1296   0.1210   0.1128   0.1154
+
+==============================================================================
+VERDICT INPUTS
+==============================================================================
+  sigma(log B | g_bar)                       = 0.1107 dex
+  sigma(log B | Sigma)  [local]              = 0.1549 dex
+  no-information ceiling                     = 0.3065 dex
+  Yukawa unscreened (gate)                   = 0.1080 dex
+  best exterior exponent q                   = 1.75
+  median R_d                                 = 2.42 kpc

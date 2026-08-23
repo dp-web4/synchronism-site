@@ -1,1 +1,40 @@
 Starting Synchronism Explorer Session at Sun Aug 23 08:00:02 PDT 2026
+Both repos pushed. Here's what happened.
+
+## WAKE redirected me off both inputs
+
+The topic queue (68 items) had nothing research-shaped and unexecuted. More importantly, **both of today's Pass-4 `high` items turned out to already be on the site** — but on a *different page* from the one that leads:
+
+- `/tier-1-existing` has stated since 2026-07-23 that MOND's BTFR prediction is exactly **4.00** and that 3.75±0.10 sits 2.5σ below it. `/key-claims` — the page that counts discriminating tests — still prints the bare fitted 3.81.
+- TEST-10's alert already asserts the dSph ceiling exceedance, **by citation**.
+
+That's a new variant of a known failure mode: within-page consistency checks pass on both pages. Only grepping the *stale* value cross-surface catches it.
+
+## What I executed
+
+The pressure-supported sector — cited on the site, never computed. `B_req = (σ_obs/σ_N)²` (Wolf+2010, M/L swept as a band, not marginalised) needs no coupling branch, no σ→V_flat convention, no γ/ρ_crit/A/ℓ:
+
+| system | B_req | M/L band | vs 3.17 | vs 13.7 |
+|---|---|---|---|---|
+| Crater II | 60.2 | [30,120] | 4.3σ | **3.5σ band-robust** |
+| Draco | 101.5 | [51,203] | 3.7σ | **3.3σ band-robust** |
+| Fornax | 5.6 | [3.5,9.3] | 2.8σ | passes |
+| NGC 1052-DF2 | 1.9 | [1.3,2.6] | passes | passes |
+
+**Only Crater II discriminates.** MOND+EFE a priori (McGaugh 2016 — Pass 4 mis-attributes this to Milgrom) gives 2.1 (+0.9/−0.6) vs measured 2.7±0.3 = **0.6σ, consistent**; the framework's ceiling caps σ at 1.29 km/s = **4.7σ short**. I nearly led with Draco, which has the biggest number and is the most equilibrium-safe — then found **MOND misses Draco too** (2.2–4.3 vs 9.1). Checking the comparison model on the same pipeline is what stopped that from becoming another over-refutation.
+
+## The durable result
+
+EFE = 0 is the framework's *most favourable* case on these systems — an external field only lowers σ — and the ceiling fails anyway. Since EFE matters only where `g_ext ≳ g_int`, i.e. in sparse satellites, which is exactly where `B_req` is largest:
+
+**The bounded boost structurally screens EFE = 0 from test.** Two structural differences from MOND aren't independently testable, because the class where one is observable is the class where the other has already failed. Pass 4's "fork-immune TEST-27" isn't a test of EFE = 0. And DF2, the one system where the ceiling passes, is *maximally* fork-exposed: 22.5 km/s on the `1/C` branch vs 6.09 on `/galaxy-plotter`'s `V_flat·C` branch, bracketing the measurement in opposite directions.
+
+## The thing I didn't expect
+
+The archive already ran this. `arXiv_preprint_draft_v1.md` §5.1: *"Our standard model predicts C ~ 0.04, implying σ ~ 80 km/s"* for DF2, against 8.5 observed — repaired by *formation coherence* `C_eff = max(C(ρ_local), C_formation)`. The whitepaper's Session #97 repairs the same object **incompatibly** (tidal stripping → high-C core). `/mond-unification` derives EFE = 0 from exactly one premise: *"C depends only on local ρ."* **Either repair invalidates it.** Neither the miss nor either repair is on the site.
+
+Count held at 6 — new sector, existing boost-ceiling root.
+
+**Caveats I'm not hiding:** Crater II's equilibrium is the single load-bearing assumption; σ tidally inflated ≥1.63× escapes, though it also voids McGaugh's a-priori hit. And the `1/C` vs `V_flat·C` fork stays open — nothing here bears on it.
+
+**Operational:** maintainer is down **10 consecutive days** on 401 OAuth, so today's visitor log was never triaged. Four maintainer items are queued in `SESSION_FOCUS.md`. Re-auth remains the highest-value action, and the 08-19 escalation (may the explorer apply verbatim-specified maintainer fixes after N days down?) is still yours to decide — I declined to route around `explorer/CLAUDE.md` again.

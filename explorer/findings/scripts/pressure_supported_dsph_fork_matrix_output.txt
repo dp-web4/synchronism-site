@@ -1,0 +1,94 @@
+====================================================================================================
+PRESSURE-SUPPORTED SYSTEMS UNDER THE FRAMEWORK'S OWN LAW
+a0 = 1.20e-10 m/s^2 = 3702.8131 (km/s)^2/kpc
+====================================================================================================
+
+### Crater II   M_bar=3.20e+05 Msun  r_1/2=1.42 kpc   [Torrealba+2016; Caldwell+2017]
+    observed sigma_los       = 2.70 +/- 0.30 km/s
+    Newtonian baryons only   = 0.35 km/s        (ratio obs/N = 7.76)
+    MOND isolated (deep)     = 3.98 km/s        (ratio obs/M = 0.68)
+    V convention                 rho convention              x=rho/rhoc         C  sig 1/C branch  sig V*C branch
+    V = sqrt(3)*sigma_obs        rho_bar(<r_half)             2.103e-05   0.00001          108.53            0.35
+    V = sqrt(3)*sigma_obs        rho_bar(<r_half) total M     4.207e-05   0.00002           76.74            0.35
+    V = sqrt(3)*sigma_obs        Plummer central              6.310e-05   0.00003           62.66            0.35
+    V = sqrt(2)*sigma_obs        rho_bar(<r_half)             3.155e-05   0.00002           88.62            0.35
+    V = sqrt(2)*sigma_obs        rho_bar(<r_half) total M     6.310e-05   0.00003           62.66            0.35
+    V = sqrt(2)*sigma_obs        Plummer central              9.465e-05   0.00005           51.16            0.35
+    V = sigma_obs                rho_bar(<r_half)             6.310e-05   0.00003           62.66            0.35
+    V = sigma_obs                rho_bar(<r_half) total M     1.262e-04   0.00006           44.31            0.35
+    V = sigma_obs                Plummer central              1.893e-04   0.00009           36.18            0.35
+    V = V_circ,bar(r_half)       rho_bar(<r_half)             9.492e-04   0.00046           16.16            0.35
+    V = V_circ,bar(r_half)       rho_bar(<r_half) total M     1.898e-03   0.00093           11.43            0.35
+    V = V_circ,bar(r_half)       Plummer central              2.848e-03   0.00139            9.33            0.35
+
+### NGC 1052-DF2   M_bar=2.00e+08 Msun  r_1/2=2.9 kpc   [van Dokkum+2018; Danieli+2019]
+    observed sigma_los       = 8.50 +/- 2.30 km/s
+    Newtonian baryons only   = 6.09 km/s        (ratio obs/N = 1.40)
+    MOND isolated (deep)     = 19.91 km/s        (ratio obs/M = 0.43)
+    V convention                 rho convention              x=rho/rhoc         C  sig 1/C branch  sig V*C branch
+    V = sqrt(3)*sigma_obs        rho_bar(<r_half)             1.557e-04   0.00008          697.80            6.09
+    V = sqrt(3)*sigma_obs        rho_bar(<r_half) total M     3.115e-04   0.00015          493.44            6.09
+    V = sqrt(3)*sigma_obs        Plummer central              4.672e-04   0.00023          402.91            6.09
+    V = sqrt(2)*sigma_obs        rho_bar(<r_half)             2.336e-04   0.00011          569.77            6.09
+    V = sqrt(2)*sigma_obs        rho_bar(<r_half) total M     4.672e-04   0.00023          402.91            6.09
+    V = sqrt(2)*sigma_obs        Plummer central              7.008e-04   0.00034          328.99            6.09
+    V = sigma_obs                rho_bar(<r_half)             4.672e-04   0.00023          402.91            6.09
+    V = sigma_obs                rho_bar(<r_half) total M     9.344e-04   0.00046          284.93            6.09
+    V = sigma_obs                Plummer central              1.402e-03   0.00068          232.67            6.09
+    V = V_circ,bar(r_half)       rho_bar(<r_half)             2.276e-04   0.00011          577.22            6.09
+    V = V_circ,bar(r_half)       rho_bar(<r_half) total M     4.552e-04   0.00022          408.18            6.09
+    V = V_circ,bar(r_half)       Plummer central              6.828e-04   0.00033          333.30            6.09
+
+### NGC 1052-DF4   M_bar=1.50e+08 Msun  r_1/2=2.1 kpc   [van Dokkum+2019]
+    observed sigma_los       = 4.20 +/- 3.00 km/s
+    Newtonian baryons only   = 6.20 km/s        (ratio obs/N = 0.68)
+    MOND isolated (deep)     = 18.53 km/s        (ratio obs/M = 0.23)
+    V convention                 rho convention              x=rho/rhoc         C  sig 1/C branch  sig V*C branch
+    V = sqrt(3)*sigma_obs        rho_bar(<r_half)             1.260e-03   0.00062          249.75            6.20
+    V = sqrt(3)*sigma_obs        rho_bar(<r_half) total M     2.520e-03   0.00123          176.66            6.20
+    V = sqrt(3)*sigma_obs        Plummer central              3.779e-03   0.00184          144.28            6.20
+    V = sqrt(2)*sigma_obs        rho_bar(<r_half)             1.890e-03   0.00092          203.95            6.20
+    V = sqrt(2)*sigma_obs        rho_bar(<r_half) total M     3.779e-03   0.00184          144.28            6.20
+    V = sqrt(2)*sigma_obs        Plummer central              5.669e-03   0.00276          117.86            6.20
+    V = sigma_obs                rho_bar(<r_half)             3.779e-03   0.00184          144.28            6.20
+    V = sigma_obs                rho_bar(<r_half) total M     7.559e-03   0.00368          102.12            6.20
+    V = sigma_obs                Plummer central              1.134e-02   0.00551           83.46            6.20
+    V = V_circ,bar(r_half)       rho_bar(<r_half)             4.340e-04   0.00021          425.41            6.20
+    V = V_circ,bar(r_half)       rho_bar(<r_half) total M     8.680e-04   0.00042          300.84            6.20
+    V = V_circ,bar(r_half)       Plummer central              1.302e-03   0.00064          245.66            6.20
+
+### Fornax dSph   M_bar=4.30e+07 Msun  r_1/2=0.93 kpc   [de Boer+2012; Walker+2009]
+    observed sigma_los       = 11.70 +/- 0.90 km/s
+    Newtonian baryons only   = 4.99 km/s        (ratio obs/N = 2.35)
+    MOND isolated (deep)     = 13.56 km/s        (ratio obs/M = 0.86)
+    V convention                 rho convention              x=rho/rhoc         C  sig 1/C branch  sig V*C branch
+    V = sqrt(3)*sigma_obs        rho_bar(<r_half)             5.358e-04   0.00026          308.05            4.99
+    V = sqrt(3)*sigma_obs        rho_bar(<r_half) total M     1.072e-03   0.00052          217.86            4.99
+    V = sqrt(3)*sigma_obs        Plummer central              1.607e-03   0.00079          177.90            4.99
+    V = sqrt(2)*sigma_obs        rho_bar(<r_half)             8.037e-04   0.00039          251.54            4.99
+    V = sqrt(2)*sigma_obs        rho_bar(<r_half) total M     1.607e-03   0.00079          177.90            4.99
+    V = sqrt(2)*sigma_obs        Plummer central              2.411e-03   0.00118          145.29            4.99
+    V = sigma_obs                rho_bar(<r_half)             1.607e-03   0.00079          177.90            4.99
+    V = sigma_obs                rho_bar(<r_half) total M     3.215e-03   0.00157          125.85            4.99
+    V = sigma_obs                Plummer central              4.822e-03   0.00235          102.79            4.99
+    V = V_circ,bar(r_half)       rho_bar(<r_half)             2.213e-03   0.00108          151.64            4.99
+    V = V_circ,bar(r_half)       rho_bar(<r_half) total M     4.426e-03   0.00216          107.29            4.99
+    V = V_circ,bar(r_half)       Plummer central              6.639e-03   0.00324           87.65            4.99
+
+### Sculptor dSph   M_bar=2.30e+06 Msun  r_1/2=0.38 kpc   [de Boer+2012; Walker+2009]
+    observed sigma_los       = 9.20 +/- 1.40 km/s
+    Newtonian baryons only   = 1.80 km/s        (ratio obs/N = 5.10)
+    MOND isolated (deep)     = 6.52 km/s        (ratio obs/M = 1.41)
+    V convention                 rho convention              x=rho/rhoc         C  sig 1/C branch  sig V*C branch
+    V = sqrt(3)*sigma_obs        rho_bar(<r_half)             6.795e-04   0.00033           98.98            1.80
+    V = sqrt(3)*sigma_obs        rho_bar(<r_half) total M     1.359e-03   0.00066           70.00            1.80
+    V = sqrt(3)*sigma_obs        Plummer central              2.038e-03   0.00100           57.17            1.80
+    V = sqrt(2)*sigma_obs        rho_bar(<r_half)             1.019e-03   0.00050           80.82            1.80
+    V = sqrt(2)*sigma_obs        rho_bar(<r_half) total M     2.038e-03   0.00100           57.17            1.80
+    V = sqrt(2)*sigma_obs        Plummer central              3.058e-03   0.00149           46.69            1.80
+    V = sigma_obs                rho_bar(<r_half)             2.038e-03   0.00100           57.17            1.80
+    V = sigma_obs                rho_bar(<r_half) total M     4.077e-03   0.00199           40.44            1.80
+    V = sigma_obs                Plummer central              6.115e-03   0.00298           33.04            1.80
+    V = V_circ,bar(r_half)       rho_bar(<r_half)             1.326e-02   0.00644           22.48            1.80
+    V = V_circ,bar(r_half)       rho_bar(<r_half) total M     2.651e-02   0.01279           15.95            1.80
+    V = V_circ,bar(r_half)       Plummer central              3.977e-02   0.01907           13.06            1.81

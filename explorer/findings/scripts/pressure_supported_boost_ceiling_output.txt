@@ -1,0 +1,34 @@
+========================================================================================================
+REQUIRED BOOST B_req = (sigma_obs/sigma_N)^2  vs the framework's own ceiling
+M/L SYSTEMATIC IS REPORTED AS A BAND, NOT MARGINALISED INTO THE SIGNIFICANCE.
+========================================================================================================
+system          M_bar(fid)  sig_N  sig_obs B_req(fid)     B_req band(M/L) n_sig vs 3.17 n_sig vs 13.7
+--------------------------------------------------------------------------------------------------------
+Crater II         3.20e+05   0.35     2.70       60.2       [30.1, 120.3]           4.3           3.5
+Sculptor dSph     2.24e+06   1.78     9.20       26.7        [14.2, 42.7]           2.9           1.6
+Fornax dSph       4.25e+07   4.96    11.70        5.6          [3.5, 9.3]           2.8          -9.5
+Draco dSph        4.40e+05   0.90     9.10      101.5       [50.8, 203.0]           3.7           3.3
+NGC 1052-DF2      2.00e+08   6.09     8.50        1.9          [1.3, 2.6]          -1.2         -11.1
+NGC 1052-DF4      1.60e+08   6.40     4.20        0.4          [0.3, 0.6]          -4.5         -21.6
+--------------------------------------------------------------------------------------------------------
+
+VERDICT PER SYSTEM (ceiling exceeded at >3 sigma on the RANDOM error, and
+the WHOLE M/L band above the ceiling => the exceedance is not an M/L artifact):
+  Crater II       vs 1/Omega_m = 3.17         B_req=   60.2  band=[30.1,120.3]  -> EXCEEDS (band-robust)
+  Crater II       vs 1/(1-f_DM,max) = 13.7    B_req=   60.2  band=[30.1,120.3]  -> EXCEEDS (band-robust)
+  Sculptor dSph   vs 1/Omega_m = 3.17         B_req=   26.7  band=[14.2,42.7]  -> exceeds (fid only)
+  Sculptor dSph   vs 1/(1-f_DM,max) = 13.7    B_req=   26.7  band=[14.2,42.7]  -> exceeds (fid only)
+  Fornax dSph     vs 1/Omega_m = 3.17         B_req=    5.6  band=[3.5,9.3]  -> exceeds (fid only)
+  Fornax dSph     vs 1/(1-f_DM,max) = 13.7    B_req=    5.6  band=[3.5,9.3]  -> passes
+  Draco dSph      vs 1/Omega_m = 3.17         B_req=  101.5  band=[50.8,203.0]  -> EXCEEDS (band-robust)
+  Draco dSph      vs 1/(1-f_DM,max) = 13.7    B_req=  101.5  band=[50.8,203.0]  -> EXCEEDS (band-robust)
+  NGC 1052-DF2    vs 1/Omega_m = 3.17         B_req=    1.9  band=[1.3,2.6]  -> passes
+  NGC 1052-DF2    vs 1/(1-f_DM,max) = 13.7    B_req=    1.9  band=[1.3,2.6]  -> passes
+  NGC 1052-DF4    vs 1/Omega_m = 3.17         B_req=    0.4  band=[0.3,0.6]  -> passes
+  NGC 1052-DF4    vs 1/(1-f_DM,max) = 13.7    B_req=    0.4  band=[0.3,0.6]  -> passes
+
+========================================================================================================
+CONTROL: same statistic on the ROTATING sector the ceiling was calibrated on
+TEST-10 reports 69% of SPARC galaxies exceed the 3.17 ceiling.  Typical SPARC
+dwarf f_DM ~ 0.85-0.95 => B ~ 6.7-20.  Crater II's B_req is ~3-9x THAT.
+========================================================================================================

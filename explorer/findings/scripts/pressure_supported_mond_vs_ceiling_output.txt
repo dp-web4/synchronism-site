@@ -1,0 +1,20 @@
+================================================================================================================
+MOND vs the framework's CEILING-CAPPED maximum on pressure-supported dwarfs
+system           sig_N  sig_obs  MOND iso   x_ext  MOND+EFE Sync max(3.17) Sync max(13.7) n_sig(13.7)
+----------------------------------------------------------------------------------------------------------------
+Crater II         0.35     2.70      3.98   0.084      1.25           0.62           1.29         4.7
+Draco dSph        0.90     9.10      4.31   0.201      2.21           1.61           3.34         4.8
+Sculptor dSph     1.78     9.20      6.48   0.157      4.83           3.17           6.59         1.9
+Fornax dSph       4.96    11.70     13.52   0.054     21.95           8.83          18.35        -7.4
+NGC 1052-DF2      6.09     8.50     19.91   0.181     15.54          10.84          22.54        -6.1
+----------------------------------------------------------------------------------------------------------------
+MOND+EFE column uses the quasi-Newtonian EFE-dominated limit G_eff=G/mu_simple(g_ext/a0).
+For Crater II, Milgrom (2016) published sigma ~= 2.1 km/s a priori (full treatment);
+this crude limit is shown only to confirm the regime, not to replace that prediction.
+
+DISCRIMINATION TEST -- does MOND succeed where the framework's ceiling fails?
+  Crater II       MOND can reach obs: True   | framework ceiling can reach obs: False  | -> DISCRIMINATES
+  Draco dSph      MOND can reach obs: False  | framework ceiling can reach obs: False  | -> no discrimination
+  Sculptor dSph   MOND can reach obs: True   | framework ceiling can reach obs: True   | -> no discrimination
+  Fornax dSph     MOND can reach obs: True   | framework ceiling can reach obs: True   | -> no discrimination
+  NGC 1052-DF2    MOND can reach obs: True   | framework ceiling can reach obs: True   | -> no discrimination

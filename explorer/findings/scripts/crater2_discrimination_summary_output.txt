@@ -1,0 +1,15 @@
+Crater II   M_bar = 3.20e+05 Msun (L_V=1.6e5, M/L=2)   r_1/2 = 1.42 kpc
+  Newtonian baryons only        sigma_N   = 0.35 km/s
+  MEASURED (Caldwell+2017)      sigma_obs = 2.7 +/- 0.3 km/s
+  Required boost B_req = (obs/N)^2        = 60.2
+
+  MOND+EFE, a priori (McGaugh 2016)       = 2.1 (+0.9/-0.6) km/s   -> 0.6 sigma  CONSISTENT
+  Framework MAX at B_max = 1/Omega_m  = 3.17        = 0.62 km/s   -> 6.9 sigma  EXCEEDED
+  Framework MAX at B_max = 1/(1-f_DM,max) = 13.7    = 1.29 km/s   -> 4.7 sigma  EXCEEDED
+
+  Errors are RANDOM-ONLY on sigma_obs. M/L in [1,4] moves B_req to [30,120];
+  the whole band exceeds both ceilings. Sole live escape: Crater II out of
+  equilibrium (needs sigma inflated >=1.63x), which also voids McGaugh's a-priori hit.
+
+  NOTE: EFE=0 -- the framework's OTHER structural difference -- is the framework's
+  MOST FAVOURABLE case here (an EFE only LOWERS sigma). The ceiling fails anyway.

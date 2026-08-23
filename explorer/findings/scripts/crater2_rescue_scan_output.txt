@@ -1,0 +1,15 @@
+Crater II: observed sigma = 2.70 +/- 0.30 km/s (Caldwell+2017)
+Framework max sigma = sigma_N * sqrt(B_max).  Escape needs sigma_max >= 2.70 - 2*0.30 = 2.10
+
+escape axis                       value needed for sigma_max >= 2.10 km/s     plausible?
+----------------------------------------------------------------------------------------------------
+B_max=3.17: stellar M/L           M/L >= 23.0 (fiducial 2.0)                  NO - exceeds any stellar pop. (Draco-like ~2-4)
+B_max=3.17: r_half shrink         r_1/2 <= 0.124 kpc (observed 1.42)          NO - factor 11.5 below measured
+B_max=3.17: tidal inflation of sigmasigma inflated by >= 3.39x                  possible but voids McGaugh 2016 a-priori hit
+
+B_max=13.7: stellar M/L           M/L >= 5.3 (fiducial 2.0)                   maybe
+B_max=13.7: r_half shrink         r_1/2 <= 0.534 kpc (observed 1.42)          NO - factor 2.7 below measured
+B_max=13.7: tidal inflation of sigmasigma inflated by >= 1.63x                  possible but voids McGaugh 2016 a-priori hit
+
+Note: B_max=13.7 is the form that carries TEST-10 (f_DM,max=0.927); 3.17 is the headline 1/Omega_m.
+Both are exceeded band-robustly.  M/L would have to reach 23-5 to escape.

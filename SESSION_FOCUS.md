@@ -2,7 +2,99 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-22 (explorer)*
+*Last updated: 2026-08-23 (explorer)*
+
+---
+
+## 🚨 OPERATIONAL (updated explorer 2026-08-23) — Maintainer DOWN **10 consecutive days** (401 OAuth; `maintainer/logs/2026-08-23-0600.log`). Today's visitor log was never triaged. **New 08-23: the dominant failure mode has shifted from rediscovery to MIS-LOCALISED propagation** — both of today's Pass-4 headline items are already ON the site, one page away from where the persona looked. See the 🟢 block. Prior header (08-22) follows.
+
+**08-23 status.** maintainer `401 OAuth access token is invalid` (08-13 credits; 08-14 through 08-23
+all 401). Explorer ran. Visitor ran (4 personas).
+
+**The propagation diagnosis, sharpened 08-23.** Pass 4 filed two `high` items as unregistered:
+(a) *"MOND's BTFR slope is 4.00, not 3.81"* — **already on `/tier-1-existing` since 2026-07-23**,
+which states MOND's parameter-free deep-limit prediction is exactly 4 and that the observed
+3.75 ± 0.10 sits ~2.5σ below it. `/key-claims`, the page that *counts*, still carries the bare 3.81.
+(b) *"pressure-supported dSphs test EFE = 0 for free; register as TEST-27"* — **the dSph ceiling
+claim is already inside TEST-10's alert text**, by citation. Neither item is a persona error and
+neither is new: both are fixes that exist on one surface and never reached the surface that leads.
+**5th confirmation of `verify visitor findings against source`.**
+
+**→ dp / supervisor: re-auth remains the single highest-value action.** The 08-19 escalation still
+stands and is still dp's call: **should the explorer be permitted to apply verbatim-specified
+maintainer fixes after N days of maintainer downtime?** The explorer has again declined to route
+around `explorer/CLAUDE.md` unilaterally.
+
+**→ Housekeeping.** `AGENTS.md`/`CLAUDE.md` carry uncommitted supervisor gitnexus-index updates
+(now 7541 symbols / 9104 relationships / 160 flows). **Not explorer work; left alone** per the
+primer. Supervisor: please commit or discard. Per `orphaned_inscription_failure_mode` a dirty tree
+at WAKE reads as a crashed predecessor — it is not one here.
+
+**→ NotebookLM `status` still reports a false positive** (verifies cookie presence; token-fetch check
+is `⊘ skipped` unless `--test`). A check that cannot fail is the defect this site documents in its
+own test catalog.
+
+---
+
+## 🟢 NEW (explorer 2026-08-23) — **The boost ceiling structurally SCREENS EFE = 0 from test.** Two structural differences from MOND are not independently testable: the class of systems where one is observable is the class where the other has already failed. **Count UNCHANGED at 6.**
+
+Finding: `explorer/findings/pressure-supported-dwarfs-the-ceiling-screens-efe-zero-from-test.md`
+Scripts: `explorer/findings/scripts/pressure_supported_{dsph_fork_matrix,boost_ceiling,mond_vs_ceiling}.py`,
+`crater2_{rescue_scan,discrimination_summary}.py` (+ outputs).
+Back-annotated: `Synchronism/Research/proposals/pressure_supported_ceiling_screens_efe_zero_20260823.md`.
+
+**Executed** the framework's own ceiling on six pressure-supported dwarfs (Wolf+2010;
+`B_req = (σ_obs/σ_N)²`; M/L swept as a **band**, not marginalised into the significance):
+
+| system | B_req | M/L band [1,4] | vs 3.17 | vs 13.7 |
+|---|---|---|---|---|
+| **Crater II** | **60.2** | [30, 120] | 4.3σ | **3.5σ band-robust** |
+| **Draco** | **101.5** | [51, 203] | 3.7σ | **3.3σ band-robust** |
+| Sculptor | 26.7 | [14, 43] | 2.9σ | 1.6σ |
+| Fornax | 5.6 | [3.5, 9.3] | 2.8σ | passes |
+| NGC 1052-DF2 | 1.9 | [1.3, 2.6] | passes | passes |
+
+`B_req` needs **no** coupling-branch choice, **no** σ→V_flat convention (which the framework requires
+merely to *define* `ρ_crit` for a non-rotating system), and no γ, ρ_crit, A or ℓ.
+
+**Only Crater II discriminates.** MOND+EFE a priori (**McGaugh 2016, ApJL 832 L8** — Pass 4
+mis-attributes this to Milgrom) = 2.1 (+0.9/−0.6) vs Caldwell+2017's 2.7 ± 0.3 ⇒ **0.6σ, consistent**.
+The framework's ceiling caps σ at **1.29 km/s ⇒ 4.7σ short**. **Draco is a SHARED failure** — MOND
+misses it too (2.2–4.3 vs 9.1). Draco has the largest B_req and is useless as a discriminator; the
+honest headline is Crater II at 60, not Draco at 101.
+
+**The screening argument.** EFE = 0 is the framework's *most favourable* case here — an external
+field only *lowers* σ — and the ceiling fails anyway. EFE matters only where `g_ext ≳ g_int`, i.e.
+in sparse satellites, which is exactly where `B_req` is largest. So **Pass 4's "fork-immune TEST-27"
+is not a test of EFE = 0 at all.** The one system where the ceiling passes and the field is strong
+(DF2) is *maximally* fork-exposed: **22.5 km/s** on the `1/C` branch (6.1σ high) vs **6.09** on
+`/galaxy-plotter`'s `V_flat·C` branch (1.0σ low) — the two branches bracket the measurement in
+opposite directions.
+
+**Archive divergence, and it lands on the EFE = 0 derivation itself.**
+`manuscripts/arXiv_preprint_draft_v1.md` §5.1 records that the standard model predicts
+**σ ~ 80 km/s for DF2 against 8.5 observed**, repaired in §5.2 by *formation coherence*
+`C_eff = max(C(ρ_local), C_formation)`. The whitepaper's **Session #97** repairs the same object
+*incompatibly* (tidal stripping leaving a high-C core — which contradicts `C(ρ)` at DF2's measured
+density). `/mond-unification` derives EFE = 0 from one premise: *"C depends only on local ρ."*
+**Either repair invalidates that premise.** Neither the miss nor either repair is on the site.
+
+### → Maintainer (queued, day 10 down)
+1. **P0** — `/key-claims` still prints MOND BTFR = 3.81 bare; `/tier-1-existing` corrected it to 4.00
+   on 07-23. Propagate the correction to the page that leads.
+2. **P1** — TEST-10's dSph sentence: replace `M_dyn/M_bar ~ 10²–10³` (that is `M_dyn/L_V`, inflated
+   2–10×) with the executed `B_req = 5.6–101`; add the equilibrium caveat; **narrow the class claim —
+   MOND fails Draco too.**
+3. **P1** — `/mond-unification`: state the EFE = 0 derivation's dependency on `C = C(ρ_local)` and
+   that the archive's own DF2 repairs break it.
+4. **P2** — do NOT register Pass 4's TEST-27 as an EFE test. Register Crater II as a *ceiling* test;
+   keep DF2 out of the ledger until the coupling fork closes.
+
+### Open, not closed
+- Crater II's equilibrium is the single load-bearing assumption (escape: σ tidally inflated ≥1.63×,
+  which also voids McGaugh's a-priori hit). Not excluded here.
+- The `1/C` vs `V_flat·C` coupling fork remains the site's oldest open structural question and
+  nothing this session bears on it.
 
 ---
 

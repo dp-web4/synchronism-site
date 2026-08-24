@@ -1,0 +1,161 @@
+
+==============================================================================
+THE ARGUMENT OF C -- executed 2026-08-24
+==============================================================================
+
+==============================================================================
+PART 1 -- the four branches, and what each does in the deep limit
+==============================================================================
+
+Branch      argument of C     coupling                          deep limit (g_bar << a0)
+---------------------------------------------------------------------------------------
+A-quad      rho/rho_crit      v^2 = v_b^2 + [V_flat*C]^2        C->0 outward => halo term dies
+A-div       rho/rho_crit      g_obs = g_bar / C(rho)            C->0 outward => g_obs DIVERGES
+B-expl      g_bar/a0          g_obs = g_bar / C(g_bar/a0)       g_obs -> a0/gam  (CONSTANT)
+B-impl      g_obs/a0          g_obs * C(g_obs/a0) = g_bar       g_obs -> sqrt(g_bar*a0/gam)
+
+  measured deep-limit slope  dlog g_obs / dlog g_bar   (g_bar in 1e-13..1e-12)
+    B-explicit (C at g_bar):  +0.0014   -> analytic 0    => g_obs const
+    B-implicit (C at g_obs):  +0.5091   -> analytic 1/2  => MOND sqrt law
+
+  Rotation-curve consequence (v^2 = g*r, flat curve needs g ~ 1/r ~ g_bar^(1/2)):
+    B-explicit  g_obs = const  =>  v ~ sqrt(r).  RISING, never flat.
+    B-implicit  g_obs ~ g_bar^(1/2)  =>  v -> const.  FLAT.  <-- the only one that works
+
+  => Only the implicit branch reproduces flat rotation curves at all.
+     The site's prose describes the explicit one; the code runs the implicit one.
+
+==============================================================================
+PART 2 -- the External Field Effect each pillar predicts
+==============================================================================
+
+DEFINITION (standard, algebraic mu-form).  For a system with internal field g_i
+embedded in an external field g_e, linearise the relation g_N = g * mu(g/a0) about
+g = g_e for |g_i| << |g_e|:
+
+    g_N,i,par = d/dg [ g mu(g/a0) ]|_{g_e} * g_i,par
+              = mu(x) [1 + L(x)] * g_i,par ,   x = g_e/a0,  L = dln mu / dln x
+
+So the embedded system is Newtonian with an effective boost
+
+    B_par(x) = 1 / ( mu(x) [1 + L(x)] )        (radial / along the field)
+
+PILLAR A.  mu = C(rho).  Then d/dg [ g C(rho) ] = C(rho): NO x anywhere.
+    B is independent of g_e.  EFE = 0 exactly.  This is the site's derivation, and
+    it is correct GIVEN the premise.  It is also why the completion
+    div[C(rho) grad Phi] = 4 pi G rho is LINEAR in Phi.
+
+PILLAR B.  mu = C(g/a0).  B_par depends on x = g_e/a0 explicitly.  EFE != 0.
+    The completion div[C(|grad Phi|/a0) grad Phi] = 4 pi G rho is AQUAL --
+    the original nonlinear-in-Phi MOND field equation, whose EFE is Milgrom's.
+
+
+==============================================================================
+PART 2a -- at gamma = 1/2 the two EFEs are ALGEBRAICALLY IDENTICAL
+==============================================================================
+
+  tanh(0.5 * ln(1+x)) = [(1+x)^.5 - (1+x)^-.5] / [(1+x)^.5 + (1+x)^-.5]
+                      = [(1+x) - 1] / [(1+x) + 1]
+                      = x / (x+2)
+                      = mu_simple(x/2)
+
+  So C_{gamma=1/2}(g/a0) == mu_simple(g / 2a0), an EXACT identity, and every
+  EFE quantity built from it inherits the identity with a0 -> 2a0.
+
+     x=g_ext/a0     framework mu(1+L)   MOND-simple@(x/2)      |diff|
+          0.001       0.0009992505        0.0009992505     2.17e-19
+       0.003162       0.0031547934        0.0031547934     4.34e-19
+           0.01       0.0099254969        0.0099254969     0.00e+00
+        0.03162       0.0308882813        0.0308882813     3.47e-18
+            0.1       0.0929705215        0.0929705215     0.00e+00
+         0.3162       0.2544144810        0.2544144810     0.00e+00
+              1       0.5555555556        0.5555555556     1.11e-16
+          3.162       0.8499011823        0.8499011823     0.00e+00
+             10       0.9722222222        0.9722222222     2.22e-16
+          31.62       0.9964617148        0.9964617148     1.11e-16
+            100       0.9996155325        0.9996155325     1.11e-16
+          316.2       0.9999605012        0.9999605012     0.00e+00
+           1000       0.9999960160        0.9999960160     0.00e+00
+
+     max |difference| over 6 decades: 2.220e-16  (machine zero)
+
+==============================================================================
+PART 2b -- the a0 factor-2 anomaly is this identity, not a measurement
+==============================================================================
+
+  This program has carried an unexplained discrepancy since 2026-08-18:
+  the frozen SPARC profile prefers a0 = 5.333e-11 m/s^2, a factor
+  2.250 BELOW MOND's g_dagger = 1.2e-10.
+
+  The identity above says the factor is forced: C_{1/2}(g/a0) == mu_simple(g/2a0),
+  so a framework fit at gamma ~ 1/2 MUST return a0 = g_dagger / 2.
+
+    predicted from the identity : 6e-11
+    actually fitted             : 5.333e-11
+    ratio                       : 0.8888
+
+  Equivalently: 2*a0_frozen = 1.067e-10, versus McGaugh's
+  g_dagger = 1.2e-10 +- 2.4e-11 (systematic) -> 0.56 sigma.
+
+  => The "factor ~2 in a0" was never an independent result.  It is the gamma=1/2
+     reparametrization, read back out of the fit.
+
+
+==============================================================================
+PART 2c -- residual EFE difference at the FITTED gamma = 0.489
+==============================================================================
+
+  At gamma != 1/2 the identity breaks and a residual appears.  Expand:
+  gamma = (1 + eps)/2, so eps = 2*gamma - 1 is the ONLY deformation parameter.
+  Fit value:
+    eps = 2*0.489 - 1 = -0.0220
+
+  Residual in the EFE boost, framework(gamma) vs MOND-simple, with a0 marginalised
+  (i.e. MOND's a0 rescaled to the framework's best-matching value at each gamma):
+
+      gamma    eps      max |dlog10 B_EFE| over g_ext/a0 in [1e-2,1e2]
+      0.400  -0.200    0.0204 dex
+      0.450  -0.100    0.0096 dex
+      0.489  -0.022    0.0023 dex   <-- SPARC fit
+      0.500  +0.000    0.0005 dex
+      0.550  +0.100    0.0089 dex
+      0.600  +0.200    0.0163 dex
+
+  The residual is O(eps) and vanishes identically at eps = 0.
+
+
+==============================================================================
+PART 3 -- the boost ceiling exists in Pillar A and NOT in Pillar B
+==============================================================================
+
+  The ceiling B <= 1/Omega_m = 3.17 is derived from f_DM = 1 - C with a premise
+  C >= Omega_m.  Two of the six counted refutations (TEST-09 BTFR slope, TEST-10
+  dwarf f_DM) are computed from it.  Ask what C actually is in each pillar.
+
+  SPARC points passing the standard cuts: N = 2700  (149 galaxies)
+
+  PILLAR B -- C = C(g_obs/a0) at the fitted gamma:
+    min C over all points      : 0.0357
+    max implied boost 1/C      : 28.0
+    fraction of points with C < Omega_m = 0.315: 39.6%
+    => C(x) -> 0 as x -> 0.  NOTHING bounds it below.  NO CEILING EXISTS.
+
+    sanity: 1/C reproduces the required boost g_obs/g_bar?
+      median log10 residual -0.0004 dex, rms 0.2140 dex  (should be ~0: this IS the fitted relation)
+
+  PILLAR A -- C = C(rho/rho_crit), the plotter's law:
+    /galaxy-plotter reports max C on the DDO 154 disk = 0.001,
+    i.e. 1/C = 1000 -- 315x ABOVE the ceiling it is
+    supposed to obey.  Pass 3 of the 2026-08-24 visitor log filed this
+    as an unexplained 300x contradiction.  It is not a contradiction:
+    the ceiling premise C >= Omega_m is FALSE in both pillars, and the
+    site never states which C it is a premise about.
+
+==============================================================================
+PART 4 -- the six counted refutations do not test one model
+==============================================================================
+    refutation                           pillar  what it is computed from
+    --------------------------------------------------------------------------
+    #1 BTFR slope (TEST-09)              A       boost ceiling B <= 1/Omega_m
+    #2 dwarf f_DM (TEST-10)              A       boost ceiling / f_DM = 1 - C
+    #3 RAR shape dBIC =

@@ -1,0 +1,70 @@
+
+==============================================================================
+TWO PILLARS, FITTED HEAD-TO-HEAD -- executed 2026-08-24
+==============================================================================
+
+  N = 2438 points, 122 galaxies (Q<3, inc>30, e_V/V<0.10, Vflat>0)
+  3 free parameters in every model -> BIC penalties cancel exactly,
+  so Delta(-2lnL) IS Delta BIC.  ln N = 7.80.
+
+==============================================================================
+THE FITS
+==============================================================================
+    PILLAR B  C(g_obs/a0)  [implicit]  -2lnL =      -7564.2   gamma=0.5093  a0=6.061e-11  sig=0.1215 dex
+    PILLAR A1 C(rho/rho_crit) global   -2lnL =      -4721.7   gamma=0.0462  rho_c=2.979e-25 kg/m3  sig=0.2261 dex
+    PILLAR A2 rho_crit = A*Vflat^2     -2lnL =      -4255.2   gamma=0.0389  A=2.625e-30  sig=0.2496 dex
+
+==============================================================================
+THE COMPARISON
+==============================================================================
+
+    Delta BIC (A1 - B) =      +2842.6
+    Delta BIC (A2 - B) =      +3309.0
+
+    For scale, the site's headline galaxy-sector kill is dBIC = +184, and its
+    stated decisive threshold is dBIC > 10.
+
+    intrinsic scatter required:
+      Pillar B  (acceleration keying) : 0.1215 dex
+      Pillar A1 (density, global)     : 0.2261 dex   (1.9x)
+      Pillar A2 (density, A*Vflat^2)  : 0.2496 dex   (2.1x)
+
+    McGaugh+2016 report the RAR's total observed scatter as 0.13 dex, of which
+    ~0.11 dex is accounted for by observational uncertainty.  A model needing
+    an intrinsic scatter far above 0.13 dex is not describing the RAR at all.
+
+
+==============================================================================
+ESTIMATOR SWEEP -- because this program has been burned by unnamed ones
+==============================================================================
+
+    rho = Sigma / 2h.  Both h and Upsilon_disk are conventions.  Sweep them and
+    check the sign of the verdict, not just its size.
+
+    h mode     Ups_disk       N    dBIC(A1-B)    dBIC(A2-B)
+    --------------------------------------------------------
+    const      0.50        2438       +2842.6       +3309.0
+    const      0.70        2438       +2898.1       +3366.3
+    rd5        0.50        2438       +3140.8       +3534.6
+    rd5        0.70        2438       +3193.6       +3581.6
+    bershady   0.50        2438       +3032.4       +3457.0
+    bershady   0.70        2438       +3087.9       +3507.6
+
+==============================================================================
+VERDICT
+==============================================================================
+
+    Pass 4's Unanswered Question 2 -- "has the density-keyed model ever been
+    fitted to anything?" -- now has an answer, on the same points and the same
+    likelihood as the acceleration keying, with the parameter count matched.
+
+    The novelty is not untested.  It is tested, and it loses by a margin that
+    dwarfs the site's own headline kill, in every (h, Upsilon) convention.
+
+    Note what this does NOT say.  It does not rescue Pillar B: at the fitted
+    gamma, Pillar B is MOND's simple mu with a0 -> a0/2, exactly (see
+    two_pillars_argument_of_C.py Part 2a).  The galaxy sector's honest state is
+    a dichotomy, not a refutation count:
+        the keying that is novel cannot fit galaxies;
+        the keying that fits galaxies is not novel.
+

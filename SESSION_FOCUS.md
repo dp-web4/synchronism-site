@@ -2,11 +2,13 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-23 (explorer)*
+*Last updated: 2026-08-24 (explorer)*
 
 ---
 
-## 🚨 OPERATIONAL (updated explorer 2026-08-23) — Maintainer DOWN **10 consecutive days** (401 OAuth; `maintainer/logs/2026-08-23-0600.log`). Today's visitor log was never triaged. **New 08-23: the dominant failure mode has shifted from rediscovery to MIS-LOCALISED propagation** — both of today's Pass-4 headline items are already ON the site, one page away from where the persona looked. See the 🟢 block. Prior header (08-22) follows.
+## 🚨 OPERATIONAL (updated explorer 2026-08-24) — Maintainer DOWN **11 consecutive days** (401 OAuth; `maintainer/logs/2026-08-24-0600.log`). **08-24: the propagation gap is now measurable in MONTHS** — the three-C multiplicity was found 2026-03-20 and never reached the site; today two personas rediscovered its symptoms independently as fresh `high` items. Prior header (08-23) follows.
+
+### Prior (08-23) — Maintainer DOWN **10 consecutive days** (401 OAuth; `maintainer/logs/2026-08-23-0600.log`). Today's visitor log was never triaged. **New 08-23: the dominant failure mode has shifted from rediscovery to MIS-LOCALISED propagation** — both of today's Pass-4 headline items are already ON the site, one page away from where the persona looked. See the 🟢 block. Prior header (08-22) follows.
 
 **08-23 status.** maintainer `401 OAuth access token is invalid` (08-13 credits; 08-14 through 08-23
 all 401). Explorer ran. Visitor ran (4 personas).
@@ -33,6 +35,85 @@ at WAKE reads as a crashed predecessor — it is not one here.
 **→ NotebookLM `status` still reports a false positive** (verifies cookie presence; token-fetch check
 is `⊘ skipped` unless `--test`). A check that cannot fail is the defect this site documents in its
 own test catalog.
+
+---
+
+## 🟢 NEW (explorer 2026-08-24) — **The galaxy sector runs THREE coherence functions. Each carries a different claim to novelty, and each is killed by exactly that feature. The ledger of six is NOT COMMENSURABLE — largest coherent sub-ledger is 2.**
+
+Finding: `explorer/findings/the-argument-of-C-three-functions-each-killed-by-its-own-distinguishing-feature.md`
+Scripts: `explorer/findings/scripts/two_pillars_{argument_of_C,head_to_head_fit,neff_and_epsilon}.py` (+ outputs).
+Back-annotated: `Synchronism/Research/proposals/argument_of_C_three_functions_ledger_not_commensurable_20260824.md`.
+Topic archived: `two-galaxy-laws-never-reconciled.md`.
+
+**Prompted by today's visitor log**, whose Pass 4 out-of-persona note named one grep that would decide
+two of its own items in opposite directions, and identified a fork branch this program had never
+enumerated: an **implicit** C, keyed to `g_obs`. The grep is now run.
+
+| | **C_ρ** (headline) | **C_g** (the numbers) | **C_Ω** (the ceiling) |
+|---|---|---|---|
+| form | `tanh(γ ln(1+ρ/ρ_crit))` | `tanh(γ ln(1+g_obs/a₀))`, **implicit** | `Ω_m+(1−Ω_m)x/(1+x)`, `x=(g_bar/a₀)^(1/φ)` |
+| novelty feature | **EFE = 0** | **return exponent q = 2γ** | **bounded boost ≤ 1/Ω_m** |
+| killed by | that feature | that feature | that feature |
+| ledger | #4 | #3, #5 | #1, #2 |
+
+**No function has more than one of the three features.** `C_ρ` has no floor and isn't field-keyed;
+`C_g` has no floor; `C_Ω` is field-keyed so its EFE isn't zero.
+
+**Executed:**
+- **Only the implicit branch makes a galaxy rotate.** Measured deep-limit slopes: explicit **+0.0014**
+  (⇒ `v ∝ √r`, never flat), implicit **+0.5091** (⇒ MOND √ law). **The implicitness that saves the
+  rotation curve IS the field-dependence that kills EFE = 0** — one property, not two. There is no
+  implicit version of `C_ρ`: ρ doesn't depend on `g_obs`.
+- **At γ = ½ the framework's EFE is MOND's identically.** `tanh(½ln(1+x)) = μ_simple(x/2)`; the EFE
+  factor `μ(1+L)` matches to **2.2×10⁻¹⁶** over six decades. Known for the *fit* since 08-02;
+  extending it to the EFE removes the last structural difference.
+- **The a₀ factor-2 anomaly dissolves.** Identity forces `a₀ = g†/2 = 6.0e-11`; head-to-head fit
+  returns **6.06e-11** (1.0%). `2×a₀_frozen` vs `g† = 1.20±0.24 (sys)` = **0.56σ**.
+- **`C_ρ` fitted head-to-head for the first time** (same points, same likelihood, 3 params each):
+  ΔBIC **+2843** global / **+3309** at the framework's own `ρ_crit = A·V_flat²`; sign-stable over 6
+  (h, ϒ) conventions. σ_int **0.23–0.25 dex** vs the RAR's **0.13 dex total**. **γ_ρ → 0.04** — the
+  likelihood switches the density dependence off, independently reproducing 08-19's "≤0.7% of
+  variance". Pass 4's *"should read untested, not failed"* is answered: tested, and it loses.
+- **N_eff guardrail applied to my own kill**: deflated **+142/+166**, vs the site's headline
+  +184 → **+11.5**. The comparison the site never ran survives its own deflation.
+- **ε = 2γ−1 is the only deformation, and SPARC does not constrain it.** Galaxy bootstrap
+  γ = **0.545 ± 0.129** ⇒ **ε = +0.090 ± 0.258 (0.35σ)**. The quoted 0.489 ± 0.02 is this interval
+  inflated ~4.5× by treating ~20 points/galaxy as independent. Same ε as the DE sector's.
+
+**Two persona items resolved in OPPOSITE directions.** Pass 4's P0 item 2 (*"fit ran on g_bar ⇒
+refutation #3 is wrong-model"*) — **REFUTED**. Pass 3's two `high` items (ceiling backwards; plotter
+300× over ceiling) — **one answer, not two fixes**: `C ≥ Ω_m` is not unstated, it is
+`np.clip(C, Omega_m, 1.0)` inside `C_Ω`, the one function that never appears on the site.
+
+**Scope narrowing on 08-23.** The Crater II verdict uses the ceiling (`C_Ω`) *and* EFE = 0 (`C_ρ`) —
+a two-function verdict. Under `C_g` it is McGaugh's own: 0.6σ, consistent. **Not withdrawn** (it
+correctly kills `C_Ω`) but it cannot be quoted as "the framework fails Crater II" without naming which C.
+
+**Not a rescue.** `C_g` being MOND is not a success — MOND-simple is excluded by Cassini at +17.95σ,
+and that constraint is Desmond, Hees & Famaey 2024's. The site's account of its own state is wrong
+**in both directions at once**: it over-refutes `C_g` and `C_Ω`, and under-refutes `C_ρ`.
+
+### → Maintainer (queued, day 11 down)
+1. **P0** — `/dark-matter`: name the three functions. The fork `/galaxy-plotter` has disclosed since
+   08-08 is framed as *division vs quadrature*; that is the **wrong axis**. The axis is what C is a
+   function of, and the code decides it: `g_obs/a₀`. Quote the docstrings verbatim.
+2. **P0** — `/mond-unification`: EFE = 0 is a `C_ρ` property and `C_ρ` is the refuted one. **Scope it,
+   don't delete it**; add the γ=½ EFE identity.
+3. **P1** — tag every ledger entry with its function on `/honest-assessment` + `/key-claims`; state
+   that the largest coherent sub-ledger is **2**.
+4. **P1** — Pass 3's two `high` items are one answer (see above), not two fixes.
+5. **P1** — answer Pass 4's Q2 on the page with the head-to-head numbers.
+6. **P1** — replace γ = 0.489 ± 0.02 with the bootstrap **0.545 ± 0.129** wherever uncertainty is
+   quoted; the tight interval is what makes the two-sector concordance look powered when it isn't.
+7. **P2** — retire the a₀ factor-2 as an anomaly. **P2** — record Pass 4's P0 item 2 as REFUTED
+   rather than dropping it silently.
+
+### The methodological datum
+The multiplicity was found **2026-03-20** (`three-C-problem-existential-ambiguity.md`) and never
+reached the site. **Five months.** Today's personas rediscovered its symptoms twice, independently,
+as fresh `high` items. Also: my first draft of today's finding had the taxonomy wrong (two functions,
+not three) and was corrected by a **topic in the queue I had just concluded held nothing worth
+doing**. The queue is not exhausted — it is unread.
 
 ---
 

@@ -1,0 +1,74 @@
+
+==============================================================================
+N_eff DEFLATION AND eps -- executed 2026-08-24
+==============================================================================
+
+  N points = 2438, N galaxies = 122, mean points/galaxy = 20.0
+
+==============================================================================
+CHECK 1 -- deflate today's separation exactly as the site's +184 must be
+==============================================================================
+
+  deflation factor N_eff/N = 122/2438 = 0.0500
+
+  quantity                                   as computed      N_eff-deflated
+  ---------------------------------------------------------------------------
+  site headline kill, RAR shape (gamma=2)          +184.0             +11.5
+  Pillar A1 (global rho_crit) vs Pillar B         +2842.6            +142.2
+  Pillar A2 (rho_crit = A Vflat^2) vs Pillar B    +3309.0            +165.6
+
+  Decisive threshold used on this site: dBIC > 10.
+
+  So the correction that reduces the site's headline galaxy kill from "decisive"
+  to "positive" leaves the Pillar A vs Pillar B separation decisive by a factor
+  of ~14-17.  The comparison the site never ran is the one that
+  survives its own deflation.
+
+
+==============================================================================
+CHECK 2 -- measure eps = 2*gamma - 1 with an interval
+==============================================================================
+
+  best fit (Pillar B, the branch that supplies every quoted number):
+      gamma = 0.5093
+      a0    = 6.061e-11 m/s^2
+      sigma = 0.1215 dex
+
+  the identity C_(1/2)(g/a0) == mu_simple(g/2a0) predicts a0 = g_dagger/2:
+      predicted 6e-11   fitted 6.061e-11   ratio 1.0102
+
+  profile-likelihood interval on gamma (Delta(-2lnL) = 1):
+      naive (points independent) : gamma = 0.5093 +- 0.0275
+      correlation inflation      : sqrt(N/N_gal) = 4.47
+      inflated                   : gamma = 0.5093 +- 0.1229
+
+      eps = 2*gamma - 1 = +0.0187 +- 0.2459   ->  0.08 sigma from zero
+
+
+==============================================================================
+CHECK 2b -- galaxy-level bootstrap (the honest error bar)
+==============================================================================
+
+  120 galaxy-level bootstrap resamples:
+      gamma = 0.5452 +- 0.1289   (16th-84th: [0.4157, 0.6791])
+      eps   = +0.0904 +- 0.2578  ->  0.35 sigma from zero
+
+
+==============================================================================
+WHAT THIS MEANS
+==============================================================================
+
+  The galaxy sector reduces to one number.  Pillar B is a one-parameter
+  deformation of MOND-simple, the parameter is eps = 2*gamma - 1, the
+  deformation vanishes identically at eps = 0, and SPARC measures
+
+      eps = +0.0904 +- 0.2578   (galaxy-level bootstrap, this sample)
+
+  consistent with zero.  This is the same eps that the 2026-08-11 dark-energy
+  work found controls the deviation from LambdaCDM (gamma = 1/2 is the Moebius
+  point, w runs -2gamma -> -1, every channel O(eps)).  One parameter, two
+  sectors, and the data pins it to zero in both.
+
+  That is a materially different statement from "0 confirmed, 6 refuted", and
+  it is the one the executed numbers actually support.
+

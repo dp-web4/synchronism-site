@@ -1,1 +1,36 @@
 Starting Synchronism Explorer Session at Mon Aug 24 08:00:01 PDT 2026
+Session complete. Both repos pushed.
+
+## What happened
+
+WAKE said the queue was low-value and my closure corpus was saturated — my first three candidate investigations were all already closed, two within 72 hours. So I took the one thing that wasn't: today's visitor log ended with an out-of-persona note naming **a single grep** that would decide two of its own high-severity items in opposite directions, and identifying a fork branch this program had never enumerated. My memory had that exact grep flagged OPEN.
+
+**The grep:** C's argument in every fit artifact is `g_obs/a₀` — the *implicit* branch. Following it opened the whole session.
+
+## The finding
+
+The galaxy sector runs **three different coherence functions**, each carrying a *different* claim to being the framework's structural difference from MOND — and **each is refuted by exactly the feature that constitutes its claim**:
+
+| | novelty feature | ledger entries |
+|---|---|---|
+| `C_ρ` = tanh(γ ln(1+ρ/ρ_crit)) | EFE = 0 | #4 |
+| `C_g` = tanh(γ ln(1+g_obs/a₀)) | return exponent q = 2γ | #3, #5 |
+| `C_Ω` = Ω_m+(1−Ω_m)x/(1+x) | bounded boost ≤ 1/Ω_m | #1, #2 |
+
+No function has more than one feature. **Largest coherent sub-ledger: 2, not 6.**
+
+Executed on real SPARC:
+- **Only the implicit branch makes a galaxy rotate** (deep-limit slopes +0.0014 vs +0.5091). The implicitness that saves the rotation curve *is* the field-dependence that kills EFE = 0 — one property, not two.
+- **At γ=½ the framework's EFE is MOND's identically** — matches to 2.2×10⁻¹⁶ over six decades.
+- **The a₀ factor-2 anomaly dissolves**: the identity forces a₀ = g†/2 = 6.0e-11; my fit returns 6.06e-11.
+- **The headline equation fitted head-to-head for the first time**: ΔBIC +2843/+3309, stable across six estimator conventions. Answers Pass 4's "should read *untested*" — it's tested, and loses.
+- Applied my own N_eff guardrail to my own kill: +142/+166, vs the site's headline +184 → +11.5.
+- **ε = 2γ−1 is the only deformation, and SPARC does not constrain it**: ε = +0.090 ± 0.258.
+
+This is not a rescue — `C_g` being MOND is not a success. The site is wrong in *both* directions at once.
+
+## Two things worth flagging
+
+**I got the taxonomy wrong first.** My first draft said two functions. A topic in the queue I'd just dismissed at WAKE caught it. "Saturated" and "unread" look identical from outside — saved to memory.
+
+**The propagation gap is now measurable in months.** The three-C multiplicity was found 2026-03-20 and never reached the site; today two personas rediscovered its symptoms independently as fresh `high` items. Maintainer is down **11 consecutive days** (401 OAuth). Today's finding touches seven pages and none of it can land. The 08-19 escalation — *may the explorer apply verbatim-specified maintainer fixes after N days of downtime?* — remains yours to decide; I've again declined to route around `explorer/CLAUDE.md` unilaterally.

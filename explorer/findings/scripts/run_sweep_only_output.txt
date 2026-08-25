@@ -1,0 +1,34 @@
+
+================================================================================
+ESTIMATOR SWEEP -- h and Upsilon are conventions; name them and one alternative
+================================================================================
+  bootstrap sigma(beta) from the const/0.50 run = 0.0262
+  |beta| cap = |beta_hat| + 2 sigma_boot
+
+        h mode  Ups_disk   beta_hat    gamma          a0  |beta| cap
+  ------------------------------------------------------------------
+         const      0.50    -0.0030   0.4983   5.733e-11      0.0554
+         const      0.70     0.0082   1.0735   1.078e-10      0.0606
+           rd5      0.50    -0.0124   0.5124   6.002e-11      0.0649
+           rd5      0.70    -0.0059   1.1768   1.223e-10      0.0584
+      bershady      0.50    -0.0104   0.5108   5.970e-11      0.0628
+      bershady      0.70    -0.0022   1.1530   1.189e-10      0.0546
+
+  worst-case cap carried forward:  |beta| < 0.0649
+  (bootstrap 95% upper alone was  +0.0628)
+
+================================================================================
+PROPAGATION -- power of each of Pass 4's four proposed discriminators
+================================================================================
+  |d ln C| = beta * ln10 * (d log rho AT MATCHED |g|);  |dv/v| = 0.5 |d ln C|
+  Levers from rho_g_lever_is_size.py and vertical_lever_total_field.py.
+
+  discriminator                                 lever  floor  beta_min  headroom     verdict
+  ------------------------------------------------------------------------------------------
+  vertical K_z, |z|<2 kpc, fixed R (Gaia DR3)    2.30     3%    0.0113      5.7x  REAL POWER
+  GC vs UDG at matched g_int (Pal14/DF44)        2.22    10%    0.0391      1.7x    marginal
+  GMC interior vs disk mean at matched |g|       1.50    10%    0.0579      1.1x    marginal
+  external density EFE (Antlia II, best LG)      0.04    10%    2.3419      0.0x    NO POWER
+
+  headroom = (SPARC's allowed |beta|) / (beta needed to see the effect).
+  headroom > 1 means the test probes a region SPARC has not already excluded.

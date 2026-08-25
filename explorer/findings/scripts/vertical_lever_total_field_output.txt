@@ -1,0 +1,95 @@
+
+================================================================================
+SETUP -- solar neighbourhood, baryons only
+================================================================================
+  R0 = 8.122 kpc,  V_c = 229.0 km/s   ->  g_R = 2.092e-10 m/s^2 = 1.74 a0
+  Sigma_bar(|z|<1.1kpc) = 47.0 Msun/pc^2 (Bovy & Rix 2013)
+  sech^2 scale z0 = 0.3 kpc  ->  rho0 = 2.651e-21 kg/m^3 = 0.0392 Msun/pc^3
+  (Local baryonic midplane density, literature ~0.084-0.10 Msun/pc^3.)
+
+================================================================================
+(1) THE LEVER, DONE RIGHT
+================================================================================
+  C keys on the TOTAL field.  At fixed R the radial part is z-independent,
+  so |g| barely moves while rho collapses.
+
+    z/kpc   rho/rho0  d log rho   g_z/a0   |g|/a0  d log|g|    LEVER
+  --------------------------------------------------------------------
+      0.0     1.0000       0.00    0.000    1.744    0.0000     0.00
+      0.1     0.9727      -0.01    0.057    1.745    0.0002    -0.01
+      0.2     0.8966      -0.05    0.110    1.747    0.0009    -0.05
+      0.3     0.7864      -0.10    0.159    1.751    0.0018    -0.11
+      0.5     0.5345      -0.27    0.234    1.759    0.0039    -0.28
+      0.8     0.2430      -0.61    0.299    1.769    0.0063    -0.62
+      1.1     0.0972      -1.01    0.326    1.774    0.0075    -1.02
+      1.5     0.0266      -1.58    0.338    1.776    0.0080    -1.58
+      2.0     0.0051      -2.29    0.342    1.777    0.0082    -2.30
+      2.5     0.0010      -3.02    0.343    1.777    0.0082    -3.03
+      3.0     0.0002      -3.74    0.343    1.777    0.0082    -3.75
+
+  lever over |z| < 1.1 kpc (Bovy & Rix regime) : 1.02 dex
+  lever over |z| < 2.0 kpc (Gaia DR3 regime)   : 2.30 dex
+  |g| changes over |z| < 2.0 kpc               : 1.9%  -- essentially fixed
+
+  Compare: the best matched-pair lever available anywhere in the Local Group
+  (Pal 14 / Dragonfly 44) is 2.22 dex, needs two objects in two different
+  hosts with ~10% dispersion errors and unmatched tidal histories.  This is
+  the same lever, inside ONE galaxy, along ONE line, with 10^6 stars.
+
+================================================================================
+(2) WHY IT ESCAPES THE SIZE IDENTITY
+================================================================================
+  For a virialised system rho/g = 3/(4 pi G r) exactly -- mass cancels and
+  the only lever is size.  A disk column at fixed R is NOT such a system:
+  it is supported in z by pressure against a field set mostly at another
+  scale (the radial one).  So rho and |g| are genuinely decoupled here,
+  and the decoupling is not bought by making an object physically bigger.
+
+  system                                  rho/|g| at z=0    at z=2kpc   ratio
+  ----------------------------------------------------------------------------
+  solar column (this calc)                     1.267e-11    6.314e-14  0.0050
+  equivalent virial radius at z=0        :   9148.5 pc
+  equivalent virial radius at z=2 kpc    : 1836105.0 pc
+  -> the column 'looks like' an object 201x larger at z=2 kpc without
+     anything getting larger.  That is the loophole, and it is free.
+
+================================================================================
+(3) PREDICTED K_z SPLIT, as a function of beta
+================================================================================
+  Hybrid: x = (|g|/a0)*(rho/rho_ref)^beta.  Working observable is the
+  vertical force K_z(z) = |g_z| including the coherence boost:
+     K_z^pred(z) = K_z^bar(z) / C(x(z))
+  Both keyings agree at z=0 by construction (a0/rho_ref absorb it); the
+  SHAPE in z is the discriminant.
+
+    z/kpc     b=0.01     b=0.02     b=0.05      b=0.1      b=0.2
+  --------------------------------------------------------------
+      0.3      0.13%      0.26%      0.65%      1.30%      2.63%
+      1.1      1.25%      2.53%      6.56%     13.92%     31.50%
+      2.0      2.88%      5.91%     16.02%     36.89%     99.45%
+      3.0      4.77%      9.97%     28.53%     72.41%    243.73%
+
+  (entries are the % change in the predicted vertical force relative to the
+   pure acceleration-keyed model, at the same z)
+
+================================================================================
+(4) WHAT THE DATA CAN ACTUALLY SEE
+================================================================================
+  Bovy & Rix (2013): Sigma(|z|<1.1 kpc) measured to ~6% per mono-abundance
+  population, ~3% combined.  Gaia DR3 vertical Jeans analyses reach 2-5%
+  on K_z out to |z| ~ 2 kpc.  Take 3% as the achievable systematic floor.
+
+  beta detectable at 3% (Gaia DR3 systematic floor)        : beta > 0.0104
+  beta detectable at 6% (single mono-abundance population) : beta > 0.0203
+  beta detectable at 10% (dSph dispersion, for comparison) : beta > 0.0327
+
+================================================================================
+(5) THE HONEST CAVEAT
+================================================================================
+  This is a Newtonian sech^2 column used to compute a LEVER, not a
+  self-consistent solution of the modified vertical Jeans equation.  A
+  real test must re-solve hydrostatic equilibrium with the boost included,
+  because changing K_z changes the scale height that sets rho(z).  The
+  back-reaction is second order in the boost and will REDUCE the split
+  somewhat.  Quoted numbers are therefore upper bounds on the signal --
+  which is the direction that matters, since the conclusion is a ceiling.

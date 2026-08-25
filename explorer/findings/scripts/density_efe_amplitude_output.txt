@@ -1,0 +1,113 @@
+
+================================================================================
+AMPLITUDE: the two external ratios, per object
+================================================================================
+  rho_int : mean baryonic density inside r_h(3D) = (4/3) r_h(2D)
+  rho_ext : MW hot corona, Miller & Bregman 2015 beta-model n = 0.0136 r_kpc^-1.5
+  g_int   : G M_star / r_h(3D)^2      g_ext : G M_MW,bar / D^2
+
+  object          r_h3D/pc  D/kpc     n_ext g_ext/g_int rho_ext/rho_int  ratio-of-
+                                      cm^-3  (MOND EFE)   (density EFE)     ratios
+  ------------------------------------------------------------------------------
+  Segue 1               32     28   9.2e-05     230.492        1.28e-03    1.8e+05
+  Segue 2               47     42   5.0e-05      86.133        8.56e-04    1.0e+05
+  Willman 1             33     43   4.8e-05      36.056        2.59e-04    1.4e+05
+  Bootes II             68     42   5.0e-05     157.279        2.28e-03    6.9e+04
+  Coma Ber             103     45   4.5e-05      84.408        1.91e-03    4.4e+04
+  Ursa Major II        199     40   5.4e-05     360.992        1.49e-02    2.4e+04
+  Hercules             440    132   9.0e-06      18.018        2.99e-03    6.0e+03
+  Leo IV               275    155   7.0e-06       9.916        1.11e-03    8.9e+03
+  Canes Ven I          752    218   4.2e-06       3.104        1.13e-03    2.7e+03
+  Draco                295     76   2.1e-05       3.110        2.62e-04    1.2e+04
+  Ursa Minor           241     78   2.0e-05       1.981        1.39e-04    1.4e+04
+  Sculptor             377     86   1.7e-05       0.502        5.77e-05    8.7e+03
+  Sextans              927     89   1.6e-05      14.783        4.24e-03    3.5e+03
+  Carina               333    107   1.2e-05       1.532        1.74e-04    8.8e+03
+  Fornax               947    149   7.5e-06       0.121        4.60e-05    2.6e+03
+  Leo I                335    258   3.3e-06       0.018        3.24e-06    5.7e+03
+  Leo II               235    236   3.8e-06       0.080        9.49e-06    8.4e+03
+  Crater II           1421    117   1.1e-05      55.342        2.79e-02    2.0e+03
+  Antlia II           3867    132   9.0e-06      58.505        8.54e-02    6.9e+02
+  And XIX             2267    115   1.1e-05      52.976        4.23e-02    1.3e+03
+  Sagittarius         3467     18   1.8e-04     105.977        5.12e-02    2.1e+03
+  NGC 6752 (GC)          7      5   1.2e-03       0.762        3.73e-07    2.0e+06
+  M13 (GC)               4      9   5.0e-04       0.020        7.78e-09    2.5e+06
+  Pal 5 (GC)            27     19   1.6e-04       9.092        3.47e-05    2.6e+05
+  Pal 14 (GC)           37     72   2.2e-05       1.241        1.29e-05    9.6e+04
+  AM 1 (GC)             21    124   9.8e-06       0.104        8.15e-07    1.3e+05
+
+================================================================================
+SPREAD
+================================================================================
+  g_ext/g_int     : median 9.504  span 4.29 dex  [0.0184, 361.0]
+  rho_ext/rho_int : median 5.59e-04  span 7.04 dex  [7.8e-09, 8.5e-02]
+  objects with rho_ext/rho_int > 1%  : 5 / 26
+  objects with rho_ext/rho_int > 10% : 0 / 26
+  largest: Antlia II (0.09), Sagittarius (0.05), And XIX (0.04), Crater II (0.03)
+
+================================================================================
+IS IT DEGENERATE WITH THE MOND EFE?  -- the question the proposal skips
+================================================================================
+  A discriminator needs rho_ext/rho_int to VARY at FIXED g_ext/g_int.
+  Scaling, at fixed M_star:  g_ext/g_int  ∝ r_h^2 / D^2
+                             rho_ext/rho_int ∝ r_h^3 * n(D)  ∝ r_h^3 D^-1.5
+  so   (density EFE)/(MOND EFE)  ∝  r_h * D^0.5     -- NOT constant.
+  The lever is the HALF-LIGHT RADIUS: it enters the density ratio one power
+  more steeply than it enters the acceleration ratio.
+
+  measured on the table: log10[(rho-EFE)/(g-EFE)] = +1.000 log r_h +0.500 log D -7.484
+  predicted analytically:                          +1.000 log r_h +0.500 log D
+  residual rms = 0.0000 dex  (deviation is the M_star dependence,
+  which cancels exactly in the ratio only at fixed M_star)
+
+  correlation of log(MOND EFE) with log(density EFE) across the sample: r = +0.841
+
+================================================================================
+THE MATCHED PAIRS -- where the two theories say different things
+================================================================================
+  Pairs with |Delta log(g_ext/g_int)| < 0.15 dex (MOND EFE matched to 40%)
+  ranked by |Delta log(rho_ext/rho_int)|:
+
+  pair                              d log g-EFE  d log rho-EFE            rho ratios
+  ----------------------------------------------------------------------------------
+  Leo I / M13 (GC)                        0.032           2.62    3.2e-06 vs 7.8e-09
+  Segue 2 / Sagittarius                   0.090           1.78    8.6e-04 vs 5.1e-02
+  Fornax / AM 1 (GC)                      0.064           1.75    4.6e-05 vs 8.2e-07
+  Leo IV / Pal 5 (GC)                     0.038           1.51    1.1e-03 vs 3.5e-05
+  Coma Ber / Sagittarius                  0.099           1.43    1.9e-03 vs 5.1e-02
+  Carina / Pal 14 (GC)                    0.092           1.13    1.7e-04 vs 1.3e-05
+  Leo II / AM 1 (GC)                      0.115           1.07    9.5e-06 vs 8.2e-07
+  Canes Ven I / Draco                     0.001           0.63    1.1e-03 vs 2.6e-04
+
+  14 matched pairs available in a 26-object hand table;
+  max density-EFE separation at matched MOND-EFE = 2.62 dex
+
+================================================================================
+OBSERVABLE AMPLITUDE
+================================================================================
+  In the small-x limit C ~= gamma*(rho/rho_crit), so delta C/C = rho_ext/rho_int
+  exactly, independent of gamma and rho_crit.  Division law g = g_bar/C gives
+  delta v / v = -0.5 * rho_ext/rho_int.
+
+  object          rho_ext/rho_int     dv/v   vs sigma_obs err ~10%
+  ----------------------------------------------------------------
+  Antlia II                 0.085     4.3%                marginal
+  Sagittarius               0.051     2.6%             below noise
+  And XIX                   0.042     2.1%             below noise
+  Crater II                 0.028     1.4%             below noise
+  Ursa Major II             0.015     0.7%             below noise
+  Sextans                   0.004     0.2%             below noise
+  Hercules                  0.003     0.1%             below noise
+  Bootes II                 0.002     0.1%             below noise
+
+================================================================================
+SYSTEMATIC: the corona normalisation
+================================================================================
+  Every number above scales linearly with the CGM density.  Literature range
+  for the MW hot halo at 100 kpc spans roughly 1e-5 to 1e-3 cm^-3.
+    norm (x MB15)   n(100kpc)  CraterII dv/v   #objs >3% dv/v
+  ------------------------------------------------------------
+            0.1     1.4e-06           0.1%                0
+            0.3     4.1e-06           0.4%                0
+            1.0     1.4e-05           1.4%                1
+            3.0     4.1e-05           4.2%                4

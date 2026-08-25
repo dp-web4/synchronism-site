@@ -2,7 +2,100 @@
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
 
-*Last updated: 2026-08-24 (explorer)*
+*Last updated: 2026-08-25 (explorer)*
+
+---
+
+## 🚨 OPERATIONAL (updated explorer 2026-08-25) — Maintainer DOWN **12 consecutive days** (401 OAuth; `maintainer/logs/2026-08-25-0600.log`). **08-25: the propagation gap is no longer the biggest problem — a PRIOR-ART gap is.** The galaxy sector's field equation has been in the literature since 2016 under a different name, with a fitted permittivity, a covariant completion, and 30 galaxies of the exact vertical data today's persona called an unexploited gap. Prior header (08-24) follows.
+
+---
+
+## 🟢 NEW (explorer 2026-08-25) — **The field equation is REFRACTED GRAVITY (Matsakos & Diaferio 2016). `C_Ω` ≡ its permittivity to 2.2e-16. And the ρ-vs-g lever is exactly `log r` — mass cancels — so 3 of the 4 "live discriminators" filed today collapse. The 4th has 5.7× headroom and is now pre-registrable against an already-published measurement.**
+
+Finding: `explorer/findings/the-field-equation-has-a-name-refracted-gravity-and-the-density-lever-is-log-size.md`
+Scripts: `explorer/findings/scripts/{refracted_gravity_identity,rho_g_lever_is_size,vertical_lever_total_field,hybrid_beta_admixture_fit,run_sweep_only,density_efe_amplitude}.py`
+Back-annotated: `Synchronism/Research/proposals/refracted_gravity_prior_art_and_density_lever_is_log_size_20260825.md`
+Topics archived: `test-inventory-map.md`, `related-work-page-draft.md`.
+
+**Prompted by today's Pass 4**, which offered the program its most hopeful item in months — *"'0 of 24'
+is a fact about which 24 tests were written, and it is fixable this month"* — with four existing-data
+discriminators. All four vary ρ at fixed acceleration, so all four test `C_ρ`, the branch 08-24
+showed cannot rotate a galaxy. Their amplitude is therefore not a free choice; it is whatever the
+SPARC likelihood allows. I went to measure it and found the prior art on the way.
+
+**1. Prior art — gate CLEARED NEGATIVE.** `∇·[C(ρ)∇Φ]=4πGρ` with a tanh-log-density coupling **is
+Refracted Gravity** (arXiv:1603.04943), `ε(ρ) = ε₀ + (1−ε₀)·½{tanh[log((ρ/ρ_c)^q)]+1}`.
+- `C_Ω` **is** `ε` exactly — same logistic, max |diff| **2.2e-16** over 8 decades.
+- `C_ρ` is `ε` at `ε₀ = 0`; rms residual **0.014** over 7 decades.
+- Mapped through the regulator: ρ_crit lands **inside** RG's published galaxy range; γ ⇒ q ≈ 1.5
+  vs RG's 0.75; floor Ω_m = 0.315 vs fitted ε₀ = 0.20–0.25.
+- **`B ≤ 1/Ω_m` — *"the framework's only feature distinguishing it from MOND"* — is `1/ε₀`, published 2016.**
+- **A covariant completion EXISTS** (Sanna/Pipino/Diaferio 2023, scalar–tensor, `φ = 2ε`). The site's
+  *"none exists"* is false, and this is the referent for the DE sector's undisclosed Brans–Dicke.
+- **M&D §2.2.1 flags possible SEP violation as OPEN** on this equation while the site asserts EFE = 0
+  as a theorem.
+- Only surviving novelty: the floor is **derived** where RG **fits** it. Parameter economy, not physics.
+- **Why we missed it 4 times:** the 08-03 screen searched *"density-keyed interpolating function"*
+  (MOND's word) while writing *"C is the gravitational permittivity"* one paragraph above. Screens
+  must enumerate synonyms of the **construction**, not the house vocabulary.
+- Pass 4's version is right in spirit, wrong in target (chameleon/symmetron are a different
+  construction) and wrong on fact — they are cited on `/for-researchers` (symmetron ×5, Khoury ×4).
+  `Refracted`/`Diaferio`/`permittivity` appear **zero** times sitewide. **6th confirmation of
+  `verify visitor findings against source`.**
+
+**2. `ρ/g = 3/(4πG r)` — mass cancels identically** (4.4e-16 over 33 objects). At fixed `g`,
+`log ρ = −log r`. So the discriminating lever is the **size** range, never the density range:
+
+| | dex |
+|---|---|
+| density contrast as the objects are (**what Pass 4 quotes**) | **8.79** |
+| at matched `g` | **3.19** |
+| best matched pair that exists (Pal 14 / Dragonfly 44) | **2.22** |
+
+**3. SPARC allows `|β| < 0.065`.** `x = (g_obs/a₀)(ρ/ρ_ref)^β`: β = **−0.0030**, β=0 costs **0.25σ**,
+galaxy-block bootstrap 95% **[−0.050, +0.063]**, N_eff inflation **3.5×**, stable over 3 h-modes × 2 ϒ.
+γ returns to **0.498** — the exact MOND point, 4th independent time.
+
+**4. Headroom = (SPARC's |β|)/(β needed to see it):**
+
+| discriminator | lever | headroom | |
+|---|---|---|---|
+| **vertical `K_z`, \|z\|<2 kpc at fixed R** | 2.30 dex | **5.7×** | **REAL POWER** |
+| GC vs UDG at matched `g_int` | 2.22 dex | 1.7× | marginal |
+| GMC interior vs disk mean | 1.50 dex | 1.1× | marginal |
+| external density EFE | 0.04 dex | 0.03× | no power |
+
+The vertical channel is the **only one that escapes the size identity** — a disk column at fixed R
+is not virialised in z, so ρ falls 2.3 dex while `|g|` moves **1.9%**. It is also Cesare+2020's own
+method (30 DiskMass galaxies, vertical dispersions used to *determine* ε).
+
+**5. PRE-REGISTERED, before reading the amplitude.** Wang et al. 2026 (arXiv:2605.10857) report that
+**no acceleration-keyed model** fits the MW's radial and vertical fields jointly — MOND >13σ
+disfavoured. `β` is exactly the freedom that decouples them. Predicted `K_z` excess at z = 2 kpc:
+
+> **> 21.7%** → refuted by SPARC **and** Gaia jointly (first two-dataset refutation)
+> **[3.3%, 21.7%]** → a **selection** — this ledger has never recorded one
+> **< 3.3%** → non-discriminating
+
+**Count of refutations does not move.** Nothing here refutes; it prices four proposals and finds one
+worth running.
+
+### → Maintainer (queued, day 12 down)
+1. **P0** `/for-researchers`, `/what-synchronism-is-not` — cite Matsakos & Diaferio 2016 beside the
+   field equation; state that this construction is Refracted Gravity.
+2. **P0** `/tier-1-existing` TEST-09, `/parameter-derivations` — retire `B ≤ 1/Ω_m` as a
+   distinguishing feature; it is `1/ε₀`.
+3. **P0** `/for-researchers`, `/honest-assessment` — *"no covariant completion exists"* is false.
+4. **P0** `/test-catalog` — register **TEST-27** with the pre-registered 3.3%–21.7% window. First
+   genuinely prospective entry (cf. 0/10 prospective).
+5. **P1** `/mond-unification`, `/key-claims` — EFE = 0 is flagged OPEN in the prior art.
+6. **P1** record the three closures with their numbers, and the reason **once** (`ρ/g = 3/4πGr`).
+
+### → dp / supervisor
+Re-auth is still the highest-value action, now 12 days. The 08-19 escalation stands and is still
+dp's call: **may the explorer apply verbatim-specified maintainer fixes after N days of downtime?**
+Declined to route around `explorer/CLAUDE.md` unilaterally again today. The prior-art items above
+are the first queued fixes where the *cost of delay is external* — the claim is public and wrong.
 
 ---
 

@@ -1,0 +1,105 @@
+
+================================================================================
+(a) THE IDENTITY  rho/g = 3/(4 pi G r),  verified numerically
+================================================================================
+  object         class       r_h3D/pc      g_int    rho_int       rho/g   3/(4piGr)   ratio
+  -----------------------------------------------------------------------------------------
+  M13            GC               4.0   5.23e-09   1.52e-16  2.8981e-08  2.8981e-08 1.00000
+  NGC 6752       GC               6.7   4.39e-10   7.64e-18  1.7389e-08  1.7389e-08 1.00000
+  47 Tuc         GC               5.3   3.43e-09   7.46e-17  2.1736e-08  2.1736e-08 1.00000
+  Omega Cen      GC               8.0   7.84e-09   1.14e-16  1.4491e-08  1.4491e-08 1.00000
+  NGC 6397       GC               4.0   8.71e-10   2.53e-17  2.8981e-08  2.8981e-08 1.00000
+  Pal 5          GC              26.7   2.55e-12   1.11e-20  4.3472e-09  4.3472e-09 1.00000
+  Crater II      UDG-like      1421.3   1.10e-14   9.01e-25  8.1560e-11  8.1560e-11 1.00000
+  Antlia II      UDG-like      3866.7   8.21e-15   2.46e-25  2.9980e-11  2.9980e-11 1.00000
+  And XIX        UDG-like      2266.7   1.19e-14   6.11e-25  5.1143e-11  5.1143e-11 1.00000
+  NGC1052-DF2    UDG           2933.3   3.24e-12   1.28e-22  3.9520e-11  3.9520e-11 1.00000
+  NGC1052-DF4    UDG           2133.3   4.59e-12   2.50e-22  5.4340e-11  5.4340e-11 1.00000
+  Dragonfly 44   UDG           6266.7   1.07e-12   1.97e-23  1.8499e-11  1.8499e-11 1.00000
+
+  max fractional deviation over all 33 objects: 4.44e-16  (exact)
+
+================================================================================
+(b) THE LEVER ACTUALLY AVAILABLE
+================================================================================
+  UNMATCHED density contrast in the sample   : 8.79 dex
+  (this is the number Pass 4 quotes as the discriminating power)
+  size range in the sample                   : 3.19 dex
+  => MAXIMUM density contrast AT MATCHED g   : 3.19 dex
+     (M13 at 4 pc  vs  Dragonfly 44 at 6267 pc)
+
+  the two differ by 5.59 dex.  The missing factor is MASS, which is
+  not a lever: it cancels out of rho/g identically.
+
+  M_star range in the sample: 5.95 dex  -- carries ZERO discriminating information
+
+================================================================================
+(c) DO MATCHED-g PAIRS SPANNING THE LEVER EXIST?
+================================================================================
+  A usable pair needs |d log g_int| small AND |d log r_h| large.
+  Matching g at fixed rho-lever requires M ~ r^2, i.e. 2x the size range in mass.
+
+  |d log g| < 0.10 :   21 pairs, best d log rho = 2.22 dex  (Pal 14 / Dragonfly 44)
+  |d log g| < 0.20 :   52 pairs, best d log rho = 2.22 dex  (Pal 14 / Dragonfly 44)
+  |d log g| < 0.30 :   72 pairs, best d log rho = 2.22 dex  (Pal 14 / Dragonfly 44)
+  |d log g| < 0.50 :  115 pairs, best d log rho = 2.37 dex  (Pal 5 / Dragonfly 44)
+
+  pair                              class                 d log g  d log rho
+  ----------------------------------------------------------------------------
+  Pal 14 / Dragonfly 44             GC/UDG                  0.087       2.22
+  AM 1 / NGC1052-DF2                GC/UDG                  0.206       2.14
+  Eridanus / NGC1052-DF4            GC/UDG                  0.150       2.09
+  Pal 4 / NGC1052-DF2               GC/UDG                  0.174       2.09
+  Pal 5 / NGC1052-DF2               GC/UDG                  0.104       2.04
+  AM 1 / NGC1052-DF4                GC/UDG                  0.054       2.00
+  Pal 4 / NGC1052-DF4               GC/UDG                  0.023       1.95
+  Pal 5 / NGC1052-DF4               GC/UDG                  0.256       1.90
+  AM 1 / Fornax                     GC/dSph                 0.224       1.65
+  Pal 4 / Fornax                    GC/dSph                 0.192       1.60
+
+================================================================================
+(d) WHAT THE BEST PAIR BUYS, AS A FUNCTION OF beta
+================================================================================
+  delta ln C = beta * dlnC/dlnrho * delta ln rho.  In the deep regime
+  (x << 1, which holds for every object here) dlnC/dlnrho -> 1, so
+  delta ln C = beta * ln(10) * d log rho, and delta v / v = -0.5 delta ln C.
+
+  best matched pair: Pal 14 / Dragonfly 44, d log rho = 2.22 dex
+
+      beta    |d ln C|    |dv/v|    detectable vs 10% sigma?
+  ----------------------------------------------------------
+      1.00       5.123    256.2%                         YES
+      0.50       2.562    128.1%                         YES
+      0.20       1.025     51.2%                         YES
+      0.10       0.512     25.6%                         YES
+      0.05       0.256     12.8%                         YES
+      0.02       0.102      5.1%                    marginal
+      0.01       0.051      2.6%                          no
+
+  beta required for a 10% velocity split on the best available pair:  beta > 0.0390
+
+================================================================================
+(e) THE VERTICAL TEST IS DIFFERENT -- and it is the one that is not a size test
+================================================================================
+  At fixed R in a disk, varying z:  rho(z) falls ~exponentially, but g_z RISES
+  then saturates.  The system is not virialised in z, so rho/g is NOT fixed by
+  a radius, and the identity above does not apply.  For a sech^2 disk of scale
+  height h and midplane density rho0:
+     rho(z) = rho0 sech^2(z/2h)      g_z(z) = 4 pi G rho0 * 2h tanh(z/2h)
+     => rho/g_z = sech^2(z/2h) / (8 pi G h tanh(z/2h))    -- z-DEPENDENT
+
+  h = 0.3 kpc (thin disk).  Referenced to z = 0.1 kpc:
+    z/kpc  d log rho  d log g_z   LEVER d log(rho/g)
+  ----------------------------------------------------
+      0.1       0.00       0.00                 0.00
+      0.2      -0.04       0.29                -0.32
+      0.3      -0.09       0.45                -0.54
+      0.5      -0.26       0.62                -0.88
+      0.8      -0.60       0.72                -1.32
+      1.1      -1.00       0.76                -1.76
+      1.5      -1.56       0.78                -2.34
+      2.0      -2.28       0.78                -3.06
+
+  lever over the Gaia DR3 range |z| < 1.1 kpc: 1.76 dex
+  -- comparable to the best matched-pair lever (2.22 dex), in ONE galaxy,
+  with a sample of 10^6 stars instead of a pair of objects with ~10% errors.

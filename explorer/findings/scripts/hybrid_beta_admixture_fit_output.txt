@@ -1,0 +1,78 @@
+
+================================================================================
+SAMPLE
+================================================================================
+  N = 2622 points, 149 galaxies (Q<3, inc>30, e_Vobs/Vobs<0.10)
+  rho_ref (geometric mean)   = 2.391e-21 kg/m^3
+  log10 rho span in-sample   = 7.00 dex
+  log10 g_bar span           = 3.90 dex
+  corr(log rho, log g_bar)   = +0.834   <- the degeneracy Pass 4 correctly names
+
+================================================================================
+FIT: beta FREE  (gamma, a0, beta, sigma_int)
+================================================================================
+  gamma     = 0.4983
+  a0        = 5.7333e-11 m/s^2
+  beta      = -0.00300
+  sigma_int = 0.1227 dex
+  -2lnL     = -8063.448      (8.5s)
+
+================================================================================
+PROFILE LIKELIHOOD ON beta
+================================================================================
+  beta = 0 (pure C_g / MOND-simple at gamma=1/2):
+     gamma = 0.4922  a0 = 5.6194e-11  sigma = 0.1227
+  Delta(-2lnL) of beta=0 vs free = 0.0614  ->  0.25 sigma (1 dof)
+  ** the data does not require any density keying **
+
+      beta         -2lnL    Delta  sigma_int    gamma          a0
+  ---------------------------------------------------------------
+     -0.30     -7318.038  745.410     0.1439  20.0000   4.159e-09
+     -0.20     -7749.068  314.380     0.1313   1.7867   3.194e-10
+     -0.10     -7992.626   70.822     0.1246   0.8044   1.171e-10
+     -0.05     -8047.573   15.875     0.1231   0.6148   7.959e-11
+     -0.02     -8061.433    2.015     0.1227   0.5356   6.436e-11
+      0.00     -8063.387    0.061     0.1227   0.4922   5.619e-11
+      0.02     -8059.915    3.533     0.1228   0.4547   4.926e-11
+      0.05     -8045.314   18.134     0.1231   0.4071   4.067e-11
+      0.10     -7998.896   64.551     0.1244   0.3448   2.991e-11
+      0.20     -7842.370  221.078     0.1286   0.2598   1.661e-11
+      0.30     -7631.878  431.570     0.1345   0.2044   9.306e-12
+      0.50     -7156.663  906.785     0.1485   0.1360   2.761e-12
+
+  68%  (Delta=1.00): ['-0.0096', '+0.0054']
+  95%  (Delta=3.84): ['-0.0240', '+0.0206']
+  NOTE: these treat 2622 correlated points as independent and are
+  therefore TOO TIGHT.  The bootstrap below is the number to quote.
+
+================================================================================
+GALAXY-BLOCK BOOTSTRAP ON beta  (the honest interval)
+================================================================================
+  150 resamples of 149 galaxies   (316s)
+  beta        = -0.0030
+  68% CI      = [-0.0284, +0.0202]
+  95% CI      = [-0.0498, +0.0628]
+  sigma(beta) = 0.0262    beta/sigma = -0.12
+  P(beta > 0) = 0.467
+  bootstrap sigma / naive profile sigma = 3.5x   (N_eff inflation, cf. the +184 -> +11.5 guardrail)
+
+================================================================================
+ESTIMATOR SWEEP -- h and Upsilon are conventions; name them and one alternative
+================================================================================
+        h mode  Ups_disk   beta_hat  |beta| 95% cap    gamma
+  ----------------------------------------------------------
+         const      0.50    -0.0030          0.0554   0.4983
+         const      0.70     0.0082          0.0606   1.0735
+Traceback (most recent call last):
+  File "/mnt/c/exe/projects/ai-agents/synchronism-site/explorer/findings/scripts/hybrid_beta_admixture_fit.py", line 174, in <module>
+    g2, gb2, go2, rho2, el2 = build(h_mode=hm, up_disk=up)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/exe/projects/ai-agents/synchronism-site/explorer/findings/scripts/hybrid_beta_admixture_fit.py", line 54, in build
+    rows = L.build(gas_mode="vgas", h_mode=h_mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/exe/projects/ai-agents/synchronism-site/explorer/findings/scripts/../../scripts/rar_scatter_nogo_real_sparc.py", line 167, in build
+    h = scale_height(h_mode, p["Rdisk"])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/exe/projects/ai-agents/synchronism-site/explorer/findings/scripts/../../scripts/rar_scatter_nogo_real_sparc.py", line 140, in scale_height
+    raise ValueError(kind)
+ValueError: Rd5

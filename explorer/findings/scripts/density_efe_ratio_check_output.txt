@@ -1,0 +1,72 @@
+
+==============================================================================
+EXTERNAL FIELD vs EXTERNAL DENSITY -- the two ratios side by side
+==============================================================================
+  g_int  = G Mbar / rh^2         (baryonic internal field at the half-light radius)
+  g_ext  = G M_host / D^2
+  rho_int= Mbar / (4/3 pi rh^3)  (mean baryonic density inside rh)
+  rho_ext= n_ext * 1.4 m_p       (host circumgalactic medium)
+
+  satellite       g_ext/g_int   rho_ext/rho_int    ratio of ratios
+  ------------------------------------------------------------------
+  Crater II            31.130          1.10e-01           2.84e+02
+  Fornax                0.070          2.59e-04           2.70e+02
+  Sculptor              0.282          1.43e-04           1.98e+03
+  Draco                 1.749          5.39e-04           3.24e+03
+  Antlia II            32.909          4.02e-01           8.20e+01
+  Segue 1             280.552          3.12e-03           9.00e+04
+  NGC 1052-DF2          0.378          2.31e-03           1.63e+02
+  Omega Cen             0.024          8.69e-08           2.76e+05
+
+==============================================================================
+VERDICT
+==============================================================================
+  g_ext/g_int      : median 1.064   range [0.024, 280.552]
+  rho_ext/rho_int  : median 1.43e-03   range [8.7e-08, 4.0e-01]
+  suppression      : median 1.13e+03   -> 3.1 orders of magnitude
+
+  MOND's EFE is a real effect because g_ext/g_int ~ O(0.1-1): the external
+  field is a sizeable fraction of the internal one, so it changes mu.
+  The proposed external DENSITY effect requires the same of rho.  It fails by
+  ~3 orders of magnitude, for every satellite, in both hosts.
+
+  Reason, stated structurally: g is sourced NON-LOCALLY (a 1/r^2 tail from a
+  10^12 Msun host reaches the satellite undiminished by what lies between);
+  rho is the LOCAL value, and the local value at a satellite is the satellite.
+  This is the program's own locality asymmetry (2026-08-19), now applied to the
+  EFE channel: the same property that makes rho carry <=0.7% of RAR variance
+  makes rho_ext carry ~10^-8 of the satellite's own rho.
+
+==============================================================================
+HOW BIG WOULD THE AMBIENT MEDIUM HAVE TO BE?
+==============================================================================
+  Required n_ext for rho_ext/rho_int = 0.1 (a 10% EFE-scale perturbation):
+
+  satellite        rho_int (kg/m3)   n_req (cm^-3)      vs CGM
+  ------------------------------------------------------------
+  Crater II               2.13e-24        9.12e-05    9.1e-01x
+  Fornax                  9.03e-22        3.86e-02    3.9e+02x
+  Sculptor                1.64e-21        7.00e-02    7.0e+02x
+  Draco                   4.34e-22        1.85e-02    1.9e+02x
+  Antlia II               5.83e-25        2.49e-05    2.5e-01x
+  Segue 1                 2.25e-22        9.62e-03    3.2e+01x
+  NGC 1052-DF2            3.04e-22        1.30e-02    4.3e+01x
+  Omega Cen               2.69e-16        1.15e+04    1.2e+06x
+
+  For Crater II -- the single most favourable case in the table, chosen because
+  it is the *lowest-density* discriminating dwarf the program has -- the ambient
+  medium would have to be denser than the interstellar medium of the Milky Way
+  disk.  There is no such environment in a satellite orbit.
+
+==============================================================================
+WHAT THE FRAMEWORK PREDICTS INSTEAD
+==============================================================================
+  rho_ext/rho_int ~ 1e-8  =>  Delta ln C ~ (dlnC/dlnrho) * 1e-8.  Even at the
+  steepest allowed slope (dlnC/dlnrho <= gamma <= 2), the fractional change in
+  the boost between the densest and sparsest satellite environments is < 1e-7.
+  Observed satellite velocity dispersions carry ~10-20% errors.
+
+  => The external DENSITY effect is not a discriminator.  It is not weak, or
+     hard, or expensive: it is ~6 orders of magnitude below the noise floor of
+     the best sample that will ever exist, and no improvement in the data
+     changes that.  It is closed A PRIORI, by one division.

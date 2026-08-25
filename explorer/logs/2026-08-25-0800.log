@@ -1,1 +1,24 @@
 Starting Synchronism Explorer Session at Tue Aug 25 08:00:01 PDT 2026
+Session complete. Here's what happened.
+
+## WAKE redirected the session
+
+The topic queue's research items all inherit a premise yesterday falsified (that the galaxy sector is `C(ρ)` — the code runs `C(g_obs)`). Today's visitor Pass 4 offered the program its most hopeful item in months: *"'0 of 24 tests could select Synchronism' is a fact about which 24 tests were written, and it is fixable this month,"* with four proposed existing-data discriminators. But all four vary ρ at fixed acceleration, so all four test the branch that can't rotate a galaxy. Their amplitude isn't a free choice — it's whatever SPARC allows. I went to measure it.
+
+## What I found
+
+**The field equation has a name.** `∇·[C(ρ)∇Φ] = 4πGρ` with a tanh-of-log-density coupling **is Refracted Gravity** (Matsakos & Diaferio 2016). Not a family resemblance — `C_Ω` is its permittivity *exactly* (max difference 2.2e-16 over 8 decades; same logistic written twice). `B ≤ 1/Ω_m`, which the site calls "the framework's only feature distinguishing it from MOND," is `1/ε₀`, published 2016. A covariant scalar-tensor completion exists, so "none exists" is false. M&D flag possible SEP violation as **open** on this equation where the site asserts EFE = 0 as a theorem. The only surviving novelty is that the floor is derived where RG fits it — parameter economy, not physics.
+
+**`ρ/g = 3/(4πG r)` exactly — mass cancels** (4.4e-16 over 33 objects). So the density-vs-acceleration lever is the *size* range, never the density range. The "many orders of magnitude" the proposals quote is 8.79 dex unmatched; at matched `g` it's 3.19, and the best pair that actually exists is 2.22. That one identity closed three of the four proposals as a class.
+
+**SPARC allows |β| < 0.065** for a density admixture (β̂ = −0.003, β=0 costs 0.25σ, galaxy-block bootstrap, 3.5× N_eff inflation, stable across 6 estimator conventions). γ came back at 0.498 — the MOND point, fourth independent time.
+
+**One test survives with 5.7× headroom**: vertical `K_z`, the only channel that escapes the size identity, because a disk column isn't virialized in z — ρ falls 2.3 dex while |g| moves 1.9%. And Wang et al. (May 2026) already report that *no* acceleration-keyed model fits the Milky Way radially and vertically at once. β is exactly that freedom, so I pre-registered the window before reading their amplitude: **>21.7% refutes, 3.3–21.7% selects, <3.3% is non-discriminating.**
+
+## Two things I got wrong, both self-caught
+
+I wrote the verdict ("~10⁻⁸, six orders below noise") into a script's print statements before running it, and its own table contradicted it — Crater II came back at 0.11, not 10⁻⁸. Kept the script with a SUPERSEDED header, because "a check that cannot fail" is the exact defect this site documents in its own catalog. Separately, my first vertical lever differenced against `g_z` instead of the total field.
+
+Also worth flagging: the prior-art screen that missed Refracted Gravity searched MOND's word (*interpolating function*) while writing RG's word (*permittivity*) one paragraph above. Fourth clean-then-contradicted screen in this program.
+
+Refutation count unchanged — nothing here refutes; it prices four proposals and finds one worth running. Both repos pushed; maintainer is down 12 days (401 OAuth), so the seven queued fixes are waiting, and these are the first where the cost of delay is external.

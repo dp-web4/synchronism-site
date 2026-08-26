@@ -1,8 +1,140 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
+*Last updated: 2026-08-26 (explorer)*
 
-*Last updated: 2026-08-25 (explorer)*
+---
+
+## 🚨 OPERATIONAL (updated explorer 2026-08-26) — Maintainer DOWN **13 consecutive days** (401 OAuth; `maintainer/logs/2026-08-26-0600.log`). **08-26: two statements currently public on `/honest-assessment` are false, and one of them is the statement that closes the question this finding reopens.** Prior header (08-25) follows.
+
+---
+
+## 🟢 NEW (explorer 2026-08-26) — **The field equation has an action. Running it changes the force law. `L2 ≡ L3` is false for a disc by up to `B_max` (measured 5.89), and the Lagrangian the equation's own authors deferred in 2016 adds a vertical force up to 164× K_z. No refutation count moves — and that is the interesting part.**
+
+Finding: `explorer/findings/l2-is-not-l3-for-a-disc-and-the-action-adds-a-force-the-tests-omit.md`
+Script: `explorer/findings/scripts/l2_vs_l3_and_the_missing_striction_force.py` (+ `_output.txt`)
+
+**Prompted by visitor Pass 3's frame objection**, not by the queue: *"is there an action? — has no
+page, no test ID, and no scoreboard slot. That question is worth more than the next six
+refutations."* `variational` appears **once** in `src/`, about `tanh`. Pass 4 named the unrun
+computation. And Matsakos & Diaferio 2016 — whose equation this is (est. 08-25) — wrote the
+Lagrangian down themselves and deferred it: *"The consequences of a variational approach applied to
+a possible RG Lagrangian of the form L = ε/8πG(∇Φ)² + ρΦ should also be investigated."* Ten years.
+
+**1. `L2 ≡ L3` is FALSE off spherical symmetry.** `/honest-assessment` L164–170 asserts it, and
+that every test on the page uses it. Axisymmetric finite-volume solve (validated to 0.13% against
+an exact Hankel transform; `L2 ≡ L3` reproduced to 0.18% *when the source is spherical*):
+
+| R (kpc) | C(midplane) | ⟨C⟩ over enclosing sphere | **L2/L3** |
+|---|---|---|---|
+| 3 | 0.983 | **0.303** | 2.52 |
+| 8 | 0.923 | **0.148** | 4.60 |
+| 15 | 0.589 | **0.102** | **5.70** |
+
+Gauss's law sets the field by the permittivity averaged over the *enclosing surface*; a thin disc
+is measure-zero on its own sphere. Closed form: `max(L2/L3) → 1/C_min = B_max`; measured **3.178**
+against `1/Ω_m = 3.175`. **The maximum error of the site's substitution is exactly its boost
+ceiling.** Consequence: the site's *diagnosis* of the galaxy failure ("C(ρ) falls outward so the
+required boost rises") is the L3 story. L2's boost **saturates at the ceiling** across the disc ⇒
+near-constant rescaling ⇒ asymptotically Keplerian. Verdict survives, explanation does not.
+
+**2. The variational force the tests omit.** Varying M&D's Lagrangian w.r.t. the matter
+(`δρ = −∇·(ρξ)`) gives `g = −∇Φ − ∇Ψ`, `Ψ ≡ C′(ρ)|∇Φ|²/8πG` — the gravitational copy of the
+Korteweg–Helmholtz **electrostriction** term (Landau & Lifshitz *ECM* §15; the physics is
+textbook, the application is not). Magnitude: **0.72× gravity radially**, and **up to 164× K_z
+vertically**, in a thin shell where ρ crosses ρ_c. Generic (245× at q=1, 5.2× at q=2, 10× for the
+framework's own tanh form).
+
+**3. Without it, Newton's third law fails by 3.6×.** Two equal-mass, unequal-density spheres,
+uniform grid, C=1 control on the same grid = 0.001. Naive `g = −∇Φ`: **−3.6365** × the pair's own
+mutual force. Analytic identity `−(1/8πG)∫|∇Φ|²∇C` reproduces it to **0.4%**; striction term
+cancels it to **0.0%**. Isolated pair self-accelerates at **0.047 a₀**.
+
+**4. NEW A-PRIORI CLOSURE — the repair and the escape are the same door.** ρ_crit scan:
+
+| ρ_crit (M☉/pc³) | knee at R | max L2/L3 | vertical striction / K_z |
+|---|---|---|---|
+| 1e-3 | 21 kpc | 3.05 | **858** |
+| 1e-2 | 14 kpc | 2.80 | **104** |
+| 1e-1 | 8 kpc | 2.43 | **12.9** |
+| 1 | 3 kpc | 1.87 | 0.51 |
+| **652** = 0.029·150² | never | 1.004 | 0.0005 |
+
+> **The omitted vertical force drops below the vertical gravity only when the knee sits inside
+> R ≲ 3 kpc — inside the radius where no boost is needed at all.**
+
+Any reformulation that moves the knee into the disc (`rho-crit-reformulation-options.md`, the V⁻²
+sign inversion, the 600× chain-of-custody failure) switches on a vertical force 1–3 dex larger than
+K_z. **Needs no data.**
+
+**5. WHAT DOES NOT MOVE — stated first, because the pull runs the other way.** **No refutation
+count changes.** The site's sentence *"none of the refutations below change"* is **true for the
+framework's own parameters**: at ρ_crit = 0.029·V² every term above is ≤ 0.4%. It is true for a
+reason the site does not state — the knee is 4.5 dex too high, C is pinned at Ω_m from 1 kpc
+outward, and the galaxy sector is **`G → G/Ω_m`**, a constant rescaling with a coherence function
+attached that never varies. The *general* claim, as written, is false.
+
+**6. COST TO OUR OWN WORK.** **TEST-27, pre-registered yesterday, is void as registered.** Its
+K_z window (3.3%–21.7%, |z| < 2 kpc) was computed on the L3-type field, and the vertical channel is
+exactly where the omitted term is largest. Withdraw or re-condition on the non-variational branch.
+Filed the day after registering it — that is what pre-registration is for.
+
+**7. THE TRILEMMA, and the branch nobody has looked at.**
+- **(V) variational** — momentum conserved, but every rotation curve ever fitted with this equation
+  used the wrong force law, and the vertical shell looks immediately fatal against MW K_z.
+- **(N) non-variational** (published + site-used) — isolated systems self-accelerate at 0.047 a₀;
+  no conserved energy or momentum; fitting formula, not a candidate law.
+- **(C) covariant** — Sanna+2023 scalar–tensor completion exists and dissolves the problem, **by
+  making ε a dynamical field rather than a local function of ρ.** Price: the framework's advertised
+  distinguishing feature. **4th time an escape from this obstruction required dropping locality**
+  (cf. BCM 2017, Verlinde M_B(<r), MOND Σ, the 08-19 ∇Φ axis).
+
+**7b. Appendix D states FOUR dynamical laws, and the site tests a fifth** (checked in the archive,
+not conjectured): §D.2 = **L2**; §D.5 = **L2 + a fifth force** `+λ∇ln C(ρ)` with λ *"to be
+calibrated"* — **never calibrated, used by no test**; §D.6.1 = **L1**; §D.6.2 = **L1 covariantly**.
+The site cites *"§D.5 a worldline action"* as closing the Lagrangian question while that section
+opens a second one. **And §D.5's force cannot be the repair**, by a short theorem: any force
+`−∇f(ρ)` gives *exactly zero* net force on an isolated system (`∫ρ∇f = ∫∇F = 0`, `F′ = ρf′`), so no
+purely density-dependent term can restore the third law — the restoring term must depend on the
+**field**, and (★) is uniquely it. Measured: §D.5's net force is **1.9e−08** of the violation, and
+the required λ disagrees **12×** across three separations.
+
+**8. Internal edge.** The site's own escape criterion for its own no-go (from BCM 2017) is *"their
+extra force is the **gradient of a function of ρ** rather than a multiplier on it."* `−∇Ψ` **is**
+one. The framework's own field equation sits on the escape side of the framework's own no-go — the
+no-go is a theorem about `C(ρ)·g`, the L3 branch. Doesn't rescue the fits (see 4); should be said
+on the page.
+
+### → Maintainer (queued, day 13 down; joins 08-25's six)
+1. **P0** `/honest-assessment` L164–170 — *"so L2 ≡ L3"* / *"Every test on this page uses L2 ≡ L3"*
+   are **false**. True only for spherical sources; disc error ≤ `B_max`, measured 5.89.
+2. **P0** `/honest-assessment` L172 — *"not by the presence or absence of a Lagrangian"* is
+   **false**. Replace with the narrower, more damaging true statement (item 5).
+3. **P0** `/test-catalog` — **withdraw or re-condition TEST-27**.
+4. **P1** new page (or `/for-researchers`): *Is there an action?* — Pass 3's question, §1/§5/§8 of
+   the finding are the content.
+5. **P1** `/galaxy-rotation`, `/for-researchers` — the no-go is scoped to `C(ρ)·g`; the framework's
+   own L2 is a gradient scheme outside its scope.
+6. **P1** `/honest-assessment` — replace the L3 mechanism-story for the galaxy failure with L2's
+   ceiling-saturation. Verdict unchanged.
+7. **P1** `/honest-assessment` L157–162 — *"§D.5 a worldline action"* does not close the question;
+   it opens one (uncalibrated λ, used by no test), and §D.6 uses **L1**. Record the four-law table.
+8. **P2** ledger — third structural difference from MOND: AQUAL is variational by construction,
+   `C(ρ)` gravity is not unless it carries `−∇Ψ`. First non-constant structural difference in
+   months.
+
+### → dp / supervisor
+Re-auth, now **13 days**; the 08-19 escalation stands unchanged and is still dp's call. Two of
+today's P0s correct **false statements that are public right now**.
+
+**And a frame point, raised directly rather than filed as a topic.** The site is organised as a
+scoreboard of refutations. That scheme has no slot for *"what does the theory become when you make
+it consistent?"* — which is why an open question from 2016, flagged by its own authors, sat
+uncounted while the ledger was audited eleven times. Pass 3 spotted this and is right. Consider
+whether the next structural change to the site is a **consistency** axis alongside the refutation
+count: for each sector, is there an action, is momentum conserved, is the tested equation the
+stated equation. Today all three answers for the galaxy sector were *no*, *no*, and *no*, and none
+of them were visible under the current scoring.
 
 ---
 

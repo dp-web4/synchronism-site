@@ -1,1 +1,24 @@
 Starting Synchronism Explorer Session at Wed Aug 26 08:00:01 PDT 2026
+Both repos pushed.
+
+## Session summary — explorer 2026-08-26
+
+**WAKE said: skip the queue.** All 65 topics are bookkeeping. Visitor Pass 3 filed a *frame* objection — *"is there an action? has no page, no test ID, no scoreboard slot; that question is worth more than the next six refutations"* — and Pass 4 named the specific unrun computation. Matsakos & Diaferio wrote the same Lagrangian down in 2016 and deferred it. Ran it.
+
+**Built** an axisymmetric finite-volume solver for `∇·[C(ρ)∇Φ] = 4πGρ`. Validated: sphere vs `−GM/r` to 7e-4, disc vs **exact Hankel transform** to 0.13%, Gauss check 0.984–1.003, and `L2 ≡ L3` reproduced to 0.18% *when the source is spherical*. Everything converged <2% over resolution and box size.
+
+**Five results:**
+
+1. **`L2 ≡ L3` is false for a disc** — the site asserts it twice on `/honest-assessment`. Gauss's law sets the field by C averaged over the *enclosing sphere*, and a disc is measure-zero on its own sphere (at r=8 kpc: ⟨C⟩=0.148 vs C(midplane)=0.923). Max ratio **5.89**, and in closed form the error is bounded by **exactly `B_max`** — measured 3.178 against `1/Ω_m` = 3.175.
+2. **The Lagrangian adds a force** `−∇[C′(ρ)|∇Φ|²/8πG]`, the gravitational electrostriction term: 0.72× gravity radially, **up to 164× K_z vertically**.
+3. **Without it Newton's third law fails by 3.6×** the pair's own mutual force. Analytic identity matches to 0.4%; the term cancels it to 0.0%.
+4. **New a-priori closure, no data needed:** the omitted force drops below K_z only for a knee inside R ≲ 3 kpc — inside the radius where no boost is needed. Every ρ_crit repair is self-defeating.
+5. **Appendix D states four laws** and the site tests a fifth. §D.5's fifth force can't be the repair — any `−∇f(ρ)` gives *exactly zero* net force, so the restoring term must depend on the field.
+
+**No refutation count moves**, and that took saying twice. At the framework's own `ρ_crit = 0.029·V²` every term above is ≤0.4% — so the site's "none of the refutations change" is true *for its own parameters*, and true only because the knee is 4.5 dex too high and the galaxy sector is `G → G/Ω_m`.
+
+**It cost my own work:** TEST-27, pre-registered yesterday, is void — its K_z window was computed on the L3 field, in exactly the channel where the omitted term is largest. Filed the day after registering it.
+
+**Two things worth your attention, not filed as topics:**
+- Maintainer is **down 13 days** (401 OAuth). Two of today's P0s correct statements that are *false and public right now*. The 08-19 escalation is still yours to call.
+- The scoreboard frame has no slot for *"what does the theory become when you make it consistent?"* — which is why a question its own authors flagged in 2016 sat uncounted through eleven ledger audits. Branch (C), the covariant completion, resolves everything above by making ε a dynamical field rather than a local function of ρ — the **fourth** time an escape here required dropping locality. Nobody in this program has looked at it, and I think it's the highest-value open item in the galaxy sector.

@@ -1,1 +1,35 @@
 Starting Synchronism Explorer Session at Thu Aug 27 08:00:01 PDT 2026
+Session complete and pushed (`a82069c`).
+
+## What I did
+
+WAKE said the queue wasn't the highest-value work. Today's visitor Pass 3 attacked the frame directly — claiming the site's flagship citable no-go is *"aimed at an arithmetic slip."* I audited that against the archive **primaries** (Session 53, Session 91) rather than the compilation docs, then measured the number nobody had ever measured.
+
+## The result
+
+**ρ_crit ∝ V^(−0.15 ± 0.18)** on 129 SPARC galaxies — the critical density is **velocity-independent**. Median 0.161 M☉/pc³, constant to ×2.8.
+
+- Framework's asserted **V^+2 excluded at 12.2σ**
+- MOND's required **V^−2 excluded at 10.5σ**
+
+The no-go isn't a sign inversion. It's that a Jeans-type knee is *velocity-blind* while an a₀ knee must run as V⁻². That form is stronger than what's published, cites a measurement instead of an assertion, and answers the visitor rather than conceding.
+
+**The visitor's arithmetic was exact** (630 = 5.01⁴; their guessed ~300 and ~60 km/s reproduce to three digits). Their diagnosis fails only because it requires p = 2, and p = 1.08 ± 0.09.
+
+## What I found on the way
+
+- **`A = 0.029` has units `M☉ pc⁻³ (km/s)^−0.5`** and is used in a V² law. The published `ρ_crit = 652 M☉/pc³ at V=150` is 1,837× of that units error and **4,000× the measured value**. The 06-07 audit read the source *script* and still missed it — it asked "is A derived?" and never asked "what are A's units?"
+- **Cards 3 and 5 of `/parameter-derivations` contradict each other.** V⁻² ⟺ Freeman's law ⟺ s=0; card 5 (Σ₀) asserts s=0, card 3 asserts V^+2 ⇒ s=4. The gap of 4 *is* the "sign inversion" — internal to one page, not framework-vs-MOND.
+- **A is σ_ISM in disguise**: `β_J·R₀ = 317 pc = λ_Jeans at σ = 10.71 km/s` — the MW HI dispersion, no free parameter.
+
+## Cost to our own work
+
+"The knee is never crossed" is **reopened**. The 3.5× shortfall (not ~43×) is entirely an unattributed 4π, and 3.5× is inside a real disc's local-vs-mean density ratio. Our own 08-05 bound is 4π× too strong. Four published self-refutation numbers are wrong by 1–4 dex, all over-refuting — sixth catch of that pattern.
+
+## Two things worth your attention
+
+**The estimator trap almost caught me.** Direct R–V regression is bracketed (OLS 1.04 / inverse 1.93 / orthogonal 1.59) and would have let me ship any verdict. I routed through the identity `p = 2 − s/2` instead and *settled* the forward/inverse question with SPARC's own error column (0.7% attenuation) rather than caveating it. Fourth encounter with that failure mode; first time it was closed.
+
+**The maintainer has been down 15 days** (401 OAuth; last site change 2026-08-12). The P0 backlog is ~15 items. The loop has become explorer→archive — findings that never reach the page can't be attacked by the visitor personas, which is the only adversarial pressure this program has. I escalated it at the top of SESSION_FOCUS; it isn't fixable from this track.
+
+**Left deliberately undone:** back-annotating the Synchronism repo. The canonical `PARAMETER_DEFINITIONS_AND_DERIVATIONS.md` contains a dimensionally invalid arrow (3.6 kpc fed into a slot needing kpc·(km/s)^−0.75) that is the source of the site's error. CLAUDE.md assigns back-annotation to the maintainer, so I didn't cross into the research repo unilaterally — but that correction is the highest-value unqueued item, and I'd file it on your say-so.

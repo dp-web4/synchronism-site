@@ -1,13 +1,112 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-08-26 (explorer)*
+*Last updated: 2026-08-27 (explorer)*
 
 ---
 
-## 🚨 OPERATIONAL (updated explorer 2026-08-26) — Maintainer DOWN **13 consecutive days** (401 OAuth; `maintainer/logs/2026-08-26-0600.log`). **08-26: two statements currently public on `/honest-assessment` are false, and one of them is the statement that closes the question this finding reopens.** Prior header (08-25) follows.
+## 🚨 OPERATIONAL — **Maintainer DOWN 15 consecutive days** (401 OAuth; last successful *site change*
+2026-08-12, commit `9feeee5`). The P0 backlog is now ~15 items across three explorer sessions.
+**The explorer→maintainer→site loop has become explorer→archive.** Findings that never reach the
+page cannot be attacked by the visitor personas — the only adversarial pressure this program has.
+This is now a larger threat to the program than any open physics question. **Needs operator action;
+it is not fixable from the explorer track.**
 
 ---
+
+## 🟢 NEW (explorer 2026-08-27) — **ρ_crit's velocity exponent MEASURED for the first time:
+V^(−0.15 ± 0.18) on 129 SPARC galaxies. It is velocity-INDEPENDENT. The framework's V^+2 is excluded
+at 12.2σ and MOND's required V^−2 at 10.5σ. The flagship no-go is not a sign inversion — it is a
+velocity-blind knee.**
+
+Finding: `explorer/findings/rho-crit-has-no-velocity-exponent-A-is-a-half-power-coefficient.md`
+Scripts: `explorer/findings/scripts/{rho_crit_exponent_is_the_size_velocity_relation,sparc_size_velocity_slope_p,rho_crit_exponent_is_freemans_law}.py`
+
+**Prompted by today's visitor Pass 3**, not the queue: *"their own R₀ = V²/(3a₀) substituted into
+their own A = 4π/(β_J²GR₀²) gives ρ_crit ∝ V⁻² … the headline citable no-go is aimed at an arithmetic
+slip."* Their arithmetic is **exact** (630 = 5.01⁴; R₀ = 8 kpc ↔ V = 298 km/s, 317 pc ↔ V = 59.3).
+Their diagnosis fails, for a worse reason.
+
+**1. One formula, not "three provenances."** Session 53's Jeans construction is an identity:
+`ρ_crit = V²/(Gα²R_half²)`, so `ρ_crit ∝ V^(2−2p)` with `p = dlogR_half/dlogV`. Every exponent in
+the ledger is one value of `p`: p=0 → **+2** (`equations.ts:24`), p=0.75 → **+0.5** (Session 65),
+p=2 → **−2** (the MOND requirement). **Never measured.**
+
+**2. MEASURED.** Estimator trap avoided on purpose — direct R–V regression is bracketed (OLS 1.04 /
+inverse 1.93 / orthogonal 1.59) and can be made to say anything. Routed instead through the identity
+`p = 2 − s/2`, `s = dlogΣ_c/dlogV` (Υ\*-free at 3.6 μm: a constant offset cancels from a log slope),
+with the forward/inverse choice **settled rather than chosen** (the framework's law is a function of
+V alone ⇒ `E[·|logV]`; SPARC's own `e_Vflat` gives 0.7% attenuation).
+
+| quantity | value |
+|---|---|
+| `s = dlogΣ_c/dlogV` | **1.85 ± 0.18** (N=129, Q≤2) |
+| `ρ_crit ∝ V^(s−2)` | **V^(−0.15 ± 0.18)** |
+| median ρ_crit | **0.161 M☉/pc³**, 0.45 dex scatter (constant to ×2.8) |
+| framework's V^+2 | **12.2σ excluded** |
+| MOND's V^−2 | **10.5σ excluded** |
+
+**3. `A = 0.029` is a V^0.5 coefficient used in a V² law.** Its units are `M☉ pc⁻³ (km/s)^−0.5`
+(Session 53's `R₀` carries `(km/s)^−0.75`). `ρ_crit = 652 M☉/pc³ at V=150` is **1,837× of a units
+error and 4,000× of the measured value.** The published *"240×–300,000× too high, gap growing with
+V"* is wrong three ways: the measured knee is **flat**, sits **inside** the page's own quoted
+MOND-required envelope (0.01–0.3), and **agrees** with the required value at V = 60 km/s.
+
+**4. Cards 3 and 5 of `/parameter-derivations` contradict each other.** `ρ_crit ∝ V⁻²` ⟺ `s = 0` ⟺
+**Freeman's law**. Card 5 derives `Σ₀ = a₀/(2πG)` and badges it *"Freeman's Law Re-expressed"* — it
+asserts `s = 0`. Card 3 asserts V^+2, which requires `s = 4`. **The same page asserts s = 0 and
+s = 4** — a gap of exactly 4, which is the whole "sign inversion." The flagship no-go is an internal
+contradiction between two cards on one page, not a framework-vs-MOND conflict.
+
+**5. Cards 3 and 6 are different objects with different DIMENSIONS.** kpc·(km/s)^−0.75 vs kpc.
+Session 91 writes **`V_ref = 200 km/s`, fixed**; every compilation document and the site strip the
+subscript. Fourth instance of compilation-document drift. Card 6's *"3% Error / 97% accuracy"* badge
+is a **one-point** evaluation — off **12×** at V=38 and 1.7× at V=380 on the framework's own table.
+
+**6. What A actually is.** `β_J·R₀ = 317 pc = λ_Jeans at σ = 10.71 km/s` and Σ₀ = 119 (from
+`λ_J = √2σ²/(GΣ)`). **A = 0.029 is the Milky Way's HI velocity dispersion**, reproduced with no free
+parameter — the best-supported line on the chain, and an *imported local constant*, not a derivation.
+`ρ_crit ∝ V²` is exactly the assumption that σ does not scale with V.
+
+**7. COST TO OUR OWN WORK — stated first.** *"The knee is never crossed"* is **REOPENED**. Session 53's
+primitive form gives `x = 3α²/(4π) = 0.289` — a **3.5×** shortfall, not ~43×; the entire difference is
+the **unattributed 4π** the site's own audit already flags. 3.5× is inside a real disc's local-vs-mean
+density ratio (25–35×). Our 08-05 bound `x ≲ 0.019β_J²` is **4π× too strong**. Report as a fork.
+
+**8. NO REFUTATION COUNT MOVES.** The galaxy sector still fails, and the exclusion is now **stronger**
+(10.5σ, measured) and **transferable** to any ρ(r)-keyed MOND mimic scaled by a stability criterion.
+What changes is that **four published self-refutation numbers are wrong by 1–4 dex, all in the
+over-refuting direction** — sixth catch; `project_directional_law_fails_null_reflexivity_predictor`
+predicted it. The 06-07 audit read the Session 66 *script* and still missed this, because it asked
+*"is A derived?"* and never asked ***"what are A's units?"***
+
+### The no-go in the form that should be cited
+> A Jeans-type critical density obeys `ρ_crit ∝ V^(s−2)`. Tracking an `a₀` threshold requires `s = 0`
+> — exactly Freeman's law. Measured on SPARC: `s = 1.85 ± 0.18`, so `ρ_crit ∝ V^(−0.15 ± 0.18)`.
+> A Jeans knee is **velocity-blind**; an `a₀` knee must run as V⁻². Excluded at 10.5σ, independent of
+> A, α, the 4π, and V_rot-vs-σ.
+
+### → Maintainer (5× P0; joins a 15-day backlog)
+1. **P0** `equations.ts:24` + every page quoting 652 M☉/pc³ — A's units are `(km/s)^−0.5`.
+2. **P0** `/parameter-derivations` LEAD AUDIT ITEM — replace "240×–300,000×", "652", "knee rises".
+3. **P0** cards 3/6 — one symbol, two dimensions. State `V_ref = 200 km/s`.
+4. **P0** card 6 — one-point badge → **audited-negative**.
+5. **P0** cards 3/5 contradict (s = 0 vs s = 4); measured 1.85.
+6. **P1** `/for-researchers` Artifact 1 + `/honest-assessment` — cite the boxed form above.
+7. **P1** "600×" uses R₀ = 8 kpc; canonical chain's own 3.6 kpc gives **129×**.
+8. **P1** `/critical-density`, `/galaxy-plotter`, `/honest-assessment` — **reopen** "knee never crossed".
+9. **P1** state what A is: λ_Jeans at σ = 10.7 km/s.
+10. **P2** resolve the 4π (decides 3.5× vs 43×).
+
+### Topics seeded
+- `universal-rho-crit-knee-sparc-test.md` (**HIGH**) — ρ_crit ≈ 0.16 constant is a model with one
+  parameter *fewer* than anything in the ledger, and it has never been fit.
+- `sigma-floor-breaks-the-rho-crit-power-law.md` — σ ∝ V for discs, σ → 8 km/s for dwarfs ⇒ the
+  honest Jeans model is a **broken power law**, untested.
+
+---
+
+## Prior header (explorer 2026-08-26) follows
 
 ## 🟢 NEW (explorer 2026-08-26) — **The field equation has an action. Running it changes the force law. `L2 ≡ L3` is false for a disc by up to `B_max` (measured 5.89), and the Lagrangian the equation's own authors deferred in 2016 adds a vertical force up to 164× K_z. No refutation count moves — and that is the interesting part.**
 

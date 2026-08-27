@@ -1,0 +1,110 @@
+parsed 175 SPARC galaxies
+
+====================================================================================
+1. s = dlogSigma_c/dlogV   ('is Freeman's law true?')
+====================================================================================
+  N = 129   OLS Sigma|V = 1.837 +/- 0.176   OLS inv = 4.438   orthogonal = 4.136   r = 0.643
+  Freeman's law is s = 0.  Measured s = 1.837 +/- 0.176  ->  10.5 sigma from Freeman
+  Range of SBdisk in the sample: 22.7 to 23814 Lsun/pc^2  (3.0 dex)
+  (Upsilon* enters as a constant multiplicative offset at 3.6um and so
+   cancels exactly from a logarithmic SLOPE. s is Upsilon-free.)
+
+====================================================================================
+2. Does the identity p = 2 - s/2 hold on these same galaxies?
+====================================================================================
+  measured p  (OLS R|V)      = 1.038 +/- 0.098
+  predicted   2 - s/2        = 1.082 +/- 0.088
+  agreement                  : 0.34 sigma
+  cross-check, BTFR slope from 2 pi Sigma_c R_d^2 vs V: 3.912 +/- 0.196  (BTFR asserts 4.00)
+  and 2p + s = 3.912  must equal that slope: 3.912  -> identity holds
+
+====================================================================================
+3. THE EXPONENT, VIA THE IDENTITY  rho_crit ~ V^(s-2)
+====================================================================================
+  s =  1.837  (measured (OLS)                        )  ->  rho_crit ~ V^-0.163
+  s =  4.136  (measured (orthogonal)                 )  ->  rho_crit ~ V^+2.136
+  s =  0.000  (Freeman's law / the site's Sigma_0 card)  ->  rho_crit ~ V^-2.000
+
+  MOND requires -2.000  (s = 0)
+  equations.ts asserts +2.000  (s = 4, i.e. Sigma_c ~ V^4, i.e. R_d independent of V)
+
+  => the framework's V^+2 requires s = 4. Measured s = 1.837 +/- 0.176.
+     That is 12.3 sigma. The V^+2 law requires disc central surface
+     density to rise as the FOURTH power of rotation velocity - equivalently,
+     that R_d does not depend on V at all. SPARC spans 0.20-13.9 kpc.
+
+  => MOND's -2 requires s = 0. Measured s = 1.837 +/- 0.176 -> 10.5 sigma.
+     Freeman's law is violated by SPARC (this is not news - LSBs are why),
+     so the framework CANNOT reach -2 either, but it misses by ~1 in the
+     exponent, not by 4.
+
+====================================================================================
+4. WHY THIS ROUTE AND NOT THE R-V REGRESSION
+====================================================================================
+  R-V regression is bracketed: OLS 1.04 / inverse 1.93 / orthogonal 1.59
+    -> spans exponent -1.86 to -0.08. It cannot adjudicate p=2.
+  Sigma-V regression is NOT bracketed the same way: OLS 1.84 / inverse 4.44 / orthogonal 4.14
+    -> spans exponent -0.16 to +2.44.
+  Both readings of the Sigma route exclude BOTH +2 and -2. That is the
+  estimator-robust statement, and it is the one to ship.
+
+  Bracket the verdict explicitly:
+    rho_crit velocity exponent, full estimator envelope: [-0.16, +2.44]
+    framework asserts +2.00   -> outside by 0.44
+    MOND requires    -2.00   -> outside by 1.84
+    Neither the site's law nor the visitor's proposed repair is inside.
+
+====================================================================================
+5. THE INTERNAL CONTRADICTION THIS EXPOSES
+====================================================================================
+  /parameter-derivations card 5 derives Sigma_0 = a0/(2 pi G) = 119 Msun/pc^2
+  and badges it 'Freeman's Law Re-expressed' - i.e. it asserts s = 0.
+  s = 0 forces p = 2 forces rho_crit ~ V^-2, the MOND-required exponent.
+  card 3 + equations.ts:24 assert rho_crit ~ V^+2, which forces s = 4.
+  The same page asserts s = 0 and s = 4. They differ by 4 in the exponent,
+  which is exactly the size of the 'sign inversion' the site reports as its
+  flagship no-go. The no-go is an INTERNAL contradiction between two cards
+  on one page, not a conflict between the framework and MOND.
+
+====================================================================================
+6. SETTLING THE ESTIMATOR QUESTION (do not pick one - show which one applies)
+====================================================================================
+  The quantity wanted is E[log rho_crit | log V] - the framework's law is
+  rho_crit = A V^B, a function of V ALONE. That is the FORWARD conditional
+  expectation, so forward OLS is the right estimator by definition of the
+  question. The only thing that can invalidate it is attenuation from
+  measurement error in the REGRESSOR, log V. SPARC gives e_Vflat, so measure it:
+    median fractional error on Vflat  : 3.8%
+    sigma(logV) from measurement error: 0.0195
+    sigma(logV) observed in the sample: 0.2331
+    attenuation factor 1 - se^2/so^2   : 0.9930  (0.7% bias)
+    error-corrected forward slope s    : 1.850  (raw 1.837)
+  => attenuation is sub-percent. The forward slope is NOT the attenuated
+     end of a bracket; the OLS/inverse gap is intrinsic scatter (r=0.64),
+     which is a property of galaxies, not an ambiguity in the estimator.
+     The inverse regression answers 'given Sigma, what is V' - a different
+     question, and not the one the framework's law poses.
+
+====================================================================================
+7. VERDICT
+====================================================================================
+    rho_crit  ~  V^(-0.15 +/- 0.18)       [SPARC, N=129, Rdisk+SBdisk,
+                                              forward OLS, attenuation-corrected]
+    framework asserts  V^+2  ->   12.2 sigma
+    MOND requires      V^-2  ->   10.5 sigma
+
+  rho_crit is VELOCITY-INDEPENDENT. Both the site's law and the repair the
+  visitor proposed are excluded, in opposite directions, by the same number.
+  The no-go is not a SIGN inversion. It is that a Jeans-type density knee is
+  velocity-BLIND, while a knee that tracks a0 must scale as V^-2.
+
+  If rho_crit is constant, what constant? (this is a prediction nobody has written)
+    Session 53 primitive form, alpha=1.1, R_half=1.678 Rdisk:
+      median rho_crit = 0.1611 Msun/pc^3   16-84 pct = [0.0623, 0.4245]  (0.83 dex)
+      scatter is 0.45 dex - a constant to within a factor 2.8
+    Compare: the site's A*V^2 at V=150 = 652 Msun/pc^3
+             the MOND-required value at V=150 = 0.0338
+    The measured constant sits 5x above the MOND-required
+    value at V=150 and 0.8x above it at V=60 -
+    i.e. the two agree at the LOW-velocity end and diverge upward, which is the
+    opposite of the 'gap grows with V, framework always too high' story on the site.

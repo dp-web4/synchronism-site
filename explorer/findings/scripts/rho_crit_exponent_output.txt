@@ -1,0 +1,195 @@
+==============================================================================
+0. UNIT ANCHORS
+==============================================================================
+  a0 (MOND,  1.20e-10 m/s^2) = 3.7028 (km/s)^2/pc
+  a0 (frame, 1.042e-10)      = 3.2153 (km/s)^2/pc
+  1 (km/s)^2/pc              = 3.2408e-11 m/s^2
+  check Sigma0 = a0/(2 pi G) = 137.0 Msun/pc^2 (site: 119)
+
+==============================================================================
+1. SESSION 53 - the ONLY place A is computed from anything
+==============================================================================
+  A = 1/(G alpha^2 R0^2), alpha=1.1, R0=0.088 kpc/(km/s)^0.75
+    -> A = 0.02481  Msun pc^-3 (km/s)^-0.5      [S53 claims 0.028]
+       alpha=0.9 -> A = 0.03707
+       alpha=1.0 -> A = 0.03002
+       alpha=1.1 -> A = 0.02481
+       alpha=1.2 -> A = 0.02085
+       alpha=1.4 -> A = 0.01532
+  => the 0.028/0.029 number REPRODUCES, and its units carry (km/s)^-0.5.
+     It is the coefficient of rho_crit = A V^0.5, i.e. of B = 2-2*0.75 = 0.5.
+
+  S53's own validation table (WLM/N2403/MW/M87) regresses to
+    p = dlogR_half/dlogV = 0.617   (S53 asserts 0.75)
+    -> B = 2-2p = 0.767  (S53 asserts 0.5)
+
+==============================================================================
+2. THE MASTER IDENTITY - the exponent IS the size-velocity slope
+==============================================================================
+  rho_crit = V^2 / (G alpha^2 R_half^2)   and   R_half ~ V^p
+     =>  rho_crit ~ V^(2-2p).   The velocity exponent is 2-2p, nothing else.
+
+   p        exponent   provenance in the ledger
+  0.00      +2.000    R0 universal (a fixed length) -> equations.ts:24 / site-wide
+  0.62      +0.766    S53's own 4-galaxy table
+  0.75      +0.500    S53's asserted size-velocity slope -> Session65 B=0.5
+  1.00      +0.000    R_half ~ V  (observed disc size-velocity, Bottema/SPARC-like)
+  1.30      -0.600    steep end of observed disc size-velocity
+  2.00      -2.000    R0 = V^2/(3a0) read PER-GALAXY -> the MOND requirement
+
+  Every exponent in the site's 'three mutually incompatible provenances'
+  is one value of p. There is one formula, not three.
+
+==============================================================================
+3. SESSION 91's R0 IS A DIFFERENT OBJECT - different DIMENSIONS
+==============================================================================
+  S91: R0 = V_ref^2/(3 a0), V_ref = 200 km/s (a FIXED reference velocity,
+       'the typical velocity for disk galaxies where BTFR is normalized')
+    -> R0 = 3.60 kpc   (S91 claims 3.6 kpc, empirical 3.5)  [units: kpc]
+  S53: R0 = 0.088 kpc/(km/s)^0.75                                   [units: kpc (km/s)^-0.75]
+  These are not the same quantity and do not have the same dimensions.
+  The site prints them as cards 3 and 6 of 'The Complete Chain', same symbol, no note.
+
+  The archive's canonical chain (PARAMETER_DEFINITIONS_AND_DERIVATIONS.md) links them:
+     R0 = V^2/(3a0) = 3.6 kpc  [97%]   ->   A = 4pi/(alpha^2 G R0^2) = 0.029  [5%]
+    R0 =  3.600 kpc, beta_J=1  ->  A = 2.254e-04   ratio to 0.029:    128.6x   (S91's own derived value)
+    R0 =  8.000 kpc, beta_J=1  ->  A = 4.565e-05   ratio to 0.029:    635.2x   (the value the SITE audits)
+    R0 =  0.317 kpc, beta_J=1  ->  A = 2.908e-02   ratio to 0.029:      1.0x   (the value A=0.029 actually requires at beta_J=1)
+  => the site audits 8 kpc and reports '600x off'. The canonical chain's OWN
+     stated R0 (3.6 kpc) gives 129x, not 600x. The verdict survives; the number does not.
+     And beta_J*R0 = 317 pc is all A fixes - beta_J and R0 are never separable.
+
+==============================================================================
+4. THE UNITS BREAK - A is a V^0.5 coefficient used in a V^2 law
+==============================================================================
+     V   A*V^2 (site)   A*V^0.5 (S53)  MOND-required   site/req   S53/req
+    30           26.1          0.1588         0.8456       30.9       0.2
+    50           72.5          0.2051         0.3044      238.2       0.7
+    60          104.4          0.2246         0.2114      493.8       1.1
+   100            290            0.29        0.07611     3810.5       3.8
+   150          652.5          0.3552        0.03382    19290.7      10.5
+   220           1404          0.4301        0.01572    89263.5      27.4
+   300           2610          0.5023       0.008456   308651.5      59.4
+
+  A*V^2 vs A*V^0.5 differ by V^1.5: at V=150 that is 1837x
+  The V^0.5 law crosses the MOND requirement at V = 58.6 km/s
+  (below it the framework's knee is too LOW, above it too high).
+  The site's headline '240x-300,000x too high, gap growing with V' is computed
+  under the V^2 law. Under the law A was actually derived for, the V=150 excess
+  is 11x, not 19291x.
+
+==============================================================================
+5. DOES THE 'KNEE NEVER CROSSED' COROLLARY SURVIVE?
+==============================================================================
+  Use S53's PRIMITIVE definition (no size-velocity relation, no A, no units risk):
+     rho_crit == rho at which lambda_J = alpha * R_half,  lambda_J = V/sqrt(G rho)
+     =>  rho_crit = V^2/(G alpha^2 R_half^2)
+  A self-gravitating disc's own mean density inside R_half is
+     rho_gal = 3 M/(4 pi R_half^3),  M = V^2 R_half/G  =>  3 V^2/(4 pi G R_half^2)
+     =>  x = rho_gal/rho_crit = 3 alpha^2/(4 pi) = 0.289  at alpha=1.1
+  i.e. x is O(alpha^2) BY CONSTRUCTION - rho_crit was DEFINED as the density
+  where the Jeans length equals the galaxy size, and a galaxy sits there.
+
+  The site's rendering inserts a 4pi that Session 53 does not carry:
+     site:  A = 4pi/(beta_J^2 G R0^2)      S53:  A = 1/(alpha^2 G R0^2)
+     S53 form (no 4pi)     : x =   0.2889  -> knee not crossed (short by    3.5x)
+     site form (with 4pi)  : x =   0.0230  -> knee not crossed (short by   43.5x)
+  The 'knee is never crossed' corollary rests entirely on the unattributed 4pi
+  the site's own audit already flags ('why does this site's rendering carry a 4pi
+  that Session 53's does not').
+
+==============================================================================
+6. THE REPAIR THAT DOES NOT WORK, AND THE NO-GO THAT SURVIVES
+==============================================================================
+  Visitor's proposal: read R0 as V^2/(3a0) per-galaxy => p=2 => exponent -2,
+  the MOND-required sign, so the flagship no-go has no target.
+  p=2 means R_half ~ V^2. That is a statement about galaxy SIZES and it is
+  measurable. What do galaxies do?
+
+    p = 0.617  (S53's own 4 galaxies        ) -> rho_crit ~ V^+0.77
+    p = 0.750  (S53 asserted                ) -> rho_crit ~ V^+0.50
+    p = 1.000  (disc size-velocity, shallow ) -> rho_crit ~ V^+0.00
+    p = 1.300  (disc size-velocity, steep   ) -> rho_crit ~ V^-0.60
+    p = 2.000  (REQUIRED to reach the MOND exponent -2)
+
+  No observed disc size-velocity slope is near 2. R_half ~ V^2 would make a
+  300 km/s spiral 62x larger than a 38 km/s dwarf; the observed ratio is ~5.
+    predicted R_half(M87)/R_half(WLM) at p=2 : 100x
+    S53's own tabulated ratio                : 4.7x
+    -> p=2 is excluded by the framework's own validation table by 21x
+
+  SURVIVING FORM OF THE NO-GO (anchored to a measurable, not an assertion):
+    A Jeans-type critical density obeys rho_crit ~ V^(2-2p) with p the
+    size-velocity slope. Matching an a0 acceleration threshold requires p=2.
+    Observed p for discs is 0.62-1.3, so the exponent is off by
+    2.77 to 1.40 - and no choice of A, alpha, 4pi,
+    or velocity-vs-dispersion in the Jeans length can move it, because none of
+    them carries a velocity dependence.
+
+==============================================================================
+7. WHAT lambda_J = V/sqrt(G rho) SMUGGLES IN
+==============================================================================
+  The Jeans length uses the SOUND SPEED / velocity dispersion, not V_rot.
+  S53 substitutes V_rot. Bottema: sigma_z ~ 0.29 V_max, so lambda_J is
+  overestimated by 1/0.29 = 3.4x and rho_crit by 11.9x.
+  This is a pure NORMALIZATION shift - sigma ~ V leaves the exponent alone.
+
+  Sanity check on the required beta_J*R0 = 317 pc, done independently:
+  self-gravitating isothermal sheet rho_0 = pi G Sigma^2/(2 sigma^2)
+     =>  lambda_J = sigma sqrt(pi/(G rho_0)) = sqrt(2) sigma^2/(G Sigma)
+     sigma =  8.0 km/s, Sigma = 119 Msun/pc^2 -> lambda_J =  176.8 pc
+     sigma = 10.0 km/s, Sigma = 119 Msun/pc^2 -> lambda_J =  276.3 pc
+     sigma = 10.7 km/s, Sigma = 119 Msun/pc^2 -> lambda_J =  316.4 pc
+     sigma = 12.0 km/s, Sigma = 119 Msun/pc^2 -> lambda_J =  397.9 pc
+  -> the 317 pc that A = 0.029 requires is exactly sigma = 10.71 km/s
+     at the site's own Sigma0. A is the ISM velocity dispersion in disguise,
+     and rho_crit ~ V^2 is the assumption that sigma does not scale with V.
+
+==============================================================================
+8. DECISIVE: card 6's R0 = V^2/(3a0) EVALUATED AT MORE THAN ONE VELOCITY
+==============================================================================
+  S91 badge: 'Dimensional Analysis - 3% Error', 97% accuracy, evaluated at
+  ONE point (V_ref = 200 -> 3.6 kpc vs 'empirical R0 ~ 3.5 kpc').
+  A one-point match constrains a NORMALISATION. The load-bearing quantity is
+  the SLOPE. So evaluate the same formula on S53's own validation table:
+
+  galaxy         V  R_half obs   V^2/(3a0)    ratio
+  WLM           38        1.60       0.130     0.08
+  NGC 2403     136        3.90       1.665     0.43
+  Milky Way    220        3.60       4.357     1.21
+  M87          380        7.50      12.999     1.73
+
+  spread of the ratio across two decades in V: 0.08x to 1.73x  (21x)
+  The formula is 12x LOW at the dwarf end and 1.7x HIGH at the giant end.
+  It is not a 3%-error relation; it is a one-point coincidence at V_ref=200,
+  which is exactly the velocity at which it was evaluated.
+  => card 6's badge is measuring the normalisation of a relation whose SLOPE
+     is wrong by ~1.3 dex over the sample, and the slope is the whole question.
+
+  The visitor's 630 = 5.01^4 identity, checked:
+    (8.0 kpc / 0.317 kpc)^2 = 637   [= the '600x' in A]
+    under R0 ~ V^2 that is a velocity ratio of 5.02
+    R0 =  8.000 kpc  <->  V_ref = sqrt(3 a0 R0) =  298.1 km/s
+    R0 =  0.317 kpc  <->  V_ref = sqrt(3 a0 R0) =   59.3 km/s
+    R0 =  3.600 kpc  <->  V_ref = sqrt(3 a0 R0) =  200.0 km/s
+  The arithmetic is exact and reproduces ~300 and ~59 km/s as claimed.
+  It is nonetheless not the diagnosis, because it REQUIRES p=2, which the
+  table above excludes by ~21x.
+
+==============================================================================
+9. REOPENING: is the knee reachable once the 4pi is removed?
+==============================================================================
+  Section 5: shortfall is 43.5x in the site's form, 3.5x in S53's form.
+  3.5x is inside the mean-vs-local density ratio of a real disc, so the
+  question is no longer settled by margin. Freeman disc, Sigma(R)=Sigma_c e^-R/Rd,
+  isothermal in z with scale height h:
+    Rd= 3.0 kpc h=0.30 Sigma_c=  800: rho_mid(0)= 1.3333  rho_mean(<R_half)= 0.0423   ratio=  31.5x
+    Rd= 2.0 kpc h=0.25 Sigma_c= 1000: rho_mid(0)= 2.0000  rho_mean(<R_half)= 0.0794   ratio=  25.2x
+    Rd= 4.5 kpc h=0.40 Sigma_c=  600: rho_mid(0)= 0.7500  rho_mean(<R_half)= 0.0212   ratio=  35.4x
+  => local central density exceeds the mean-within-R_half by ~10-30x, which
+     covers the 3.5x shortfall. Under S53's normalisation the knee is reached
+     in the INNER disc and not in the outskirts - i.e. C(rho) switches on where
+     no boost is needed and switches off where it is. That is a DIFFERENT
+     failure from 'the knee is never crossed', and a sharper one.
+  It is not a rescue. It is a relocation of the failure, and it is
+  estimator-dependent, so it must be reported as a fork, not a verdict.

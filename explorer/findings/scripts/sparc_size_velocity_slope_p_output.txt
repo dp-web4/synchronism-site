@@ -1,0 +1,46 @@
+parsed 175 galaxies from SPARC Table 1
+
+========================================================================================
+p = dlogR/dlogV  on SPARC.  Framework needs p=2 to reach the MOND exponent -2.
+========================================================================================
+sample                    radius      N   OLS R|V    +/-  OLS inv   orthog      r  -> rho_crit exponent 2-2p
+all                       Rdisk     135     0.997  0.087    1.892    1.539  0.726     +0.006
+all                       Reff      135     0.861  0.090    1.974    1.485  0.660     +0.278
+all                       RHI       133     1.045  0.080    1.653    1.407  0.795     -0.091
+Q<=2 (high/med qual)      Rdisk     129     1.038  0.098    1.931    1.594  0.733     -0.075
+Q<=2 (high/med qual)      Reff      129     0.914  0.095    1.997    1.549  0.677     +0.171
+Q<=2 (high/med qual)      RHI       127     1.109  0.080    1.704    1.478  0.807     -0.217
+Q<=2, V>50 km/s           Rdisk     123     1.103  0.105    2.072    1.740  0.730     -0.207
+Q<=2, V>50 km/s           Reff      123     0.927  0.101    2.167    1.683  0.654     +0.145
+Q<=2, V>50 km/s           RHI       121     1.105  0.088    1.825    1.560  0.778     -0.209
+Q<=2, discs T>=3          Rdisk     114     1.078  0.107    2.020    1.686  0.731     -0.157
+Q<=2, discs T>=3          Reff      114     1.043  0.101    2.000    1.648  0.722     -0.086
+Q<=2, discs T>=3          RHI       112     1.169  0.079    1.708    1.514  0.827     -0.338
+
+========================================================================================
+VERDICT
+========================================================================================
+  Headline (Rdisk, Q<=2, N=129):  p = 1.038 +/- 0.098
+     -> rho_crit exponent 2-2p = -0.075 +/- 0.195
+  Distance from p = 2 (required to reach the MOND exponent): 9.9 sigma  (statistical only)
+  Full estimator/sample envelope: p = 0.861 to 1.169  -> exponent -0.338 to +0.278
+  Every estimator, every cut, both OLS directions and orthogonal: p < 1.4.
+
+  Framework's stated laws, scored against the measured p:
+    p = 0.000  equations.ts (rho_crit ~ V^2)          10.6 sigma from measured
+    p = 0.750  Session 53 asserted                     2.9 sigma from measured
+    p = 0.617  Session 53's own 4-galaxy table         4.3 sigma from measured
+    p = 2.000  MOND requirement                        9.9 sigma from measured
+
+  NOTE the direction: the measured p is ~1, i.e. rho_crit ~ V^0 - the
+  framework's V^+2 is as wrong as V^-2 is, in the opposite direction, and
+  BOTH are excluded by the same measurement. Neither the site's asserted law
+  nor the visitor's proposed repair survives.
+
+  Bootstrap SE is statistical only. Systematics NOT marginalised:
+   - distance errors are common-mode within a group and correlate R and V
+   - Rdisk is a [3.6um] photometric scale length, not the dynamical R_half
+     that Session 53's Jeans criterion actually calls for
+   - inclination errors propagate to Vflat only, biasing OLS R|V shallow
+  These move p by O(0.1-0.2), not by O(1). The p=2 exclusion is safe;
+  the distinction between p=1.0 and p=1.2 is not.

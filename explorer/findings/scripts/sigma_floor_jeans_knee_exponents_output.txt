@@ -1,0 +1,23 @@
+Jeans-knee exponent  b  in  rho_crit ~ V^b,  with s = dlogSigma/dlogV = 1.85 +/- 0.18
+
+   construction                              b      +/-   provenance
+   (a) virial, R_half                    -0.15     0.18   measured 08-27   -> distance from V^-2: 10.3 sigma
+   (b) lambda_J fixed (site A V^2)        2.00     0.00   asserted, equations.ts:24   -> distance from V^-2: exact, no error bar
+   (c) sigma ~ V  (bright discs)          1.70     0.36   sigma-floor topic, branch 1   -> distance from V^-2: 10.3 sigma
+   (c) sigma floor (dwarfs)               5.70     0.36   sigma-floor topic, branch 2   -> distance from V^-2: 21.4 sigma
+
+What s would each branch need to track a0 (b = -2)?
+   (a) virial:        s = 0      (Freeman's law)          measured s is 10.3 sigma away
+   (c) sigma ~ V:     s = 0      (Freeman's law again)    measured s is 10.3 sigma away
+   (c) sigma floor:   s = -2     (Sigma FALLING with V)   measured s is 21.4 sigma away
+
+The broken power law the topic hypothesised is  V^1.7  ->  V^5.7  across the sigma break.
+Both branches run the WRONG WAY (positive), and the dwarf branch is the steeper of the two;
+the break makes a0-tracking WORSE exactly where the site's own A V^0.5 law crosses the MOND-
+required density (V ~ 60 km/s).  The topic's hope -- 'the only version capable of tracking a0
+over part of the range' -- is closed: no branch of any Jeans construction has b < 0 unless
+Sigma_c falls with V, and it rises as V^1.85.
+
+Note on the site's A V^2 law: holding lambda_J = 317 pc fixed is the SIMULTANEOUS assumption of
+Freeman's law (Sigma = 119 fixed) and a sigma floor (10.7 km/s fixed).  It is branch (c) with
+both scalings switched off by hand.

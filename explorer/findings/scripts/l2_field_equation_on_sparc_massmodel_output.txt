@@ -1,0 +1,120 @@
+built 153 galaxies in 10s  [gas=vgas gas=vgas h=bershady Ups_d=0.5]
+
+==============================================================================
+1. NEWTONIAN ON-GRID vs SPARC V_bar  [gas=vgas]  (is the grid mass model SPARC's?)
+==============================================================================
+   per-point log10(V_N,grid / V_bar,SPARC): rms 0.090 dex, median -0.011, 16-84% [-0.070,+0.024]
+   per-galaxy median offset: rms 0.046 dex; |offset|>0.05 dex in 20% of galaxies
+   -> the BOOST transfer (V_pred^2 = B_grid * V_bar,SPARC^2) removes this at first order.
+
+==============================================================================
+2. FIXED-PARAMETER MODELS under L2  [gas=vgas]  (N_eff = galaxies; no per-galaxy nuisance)
+==============================================================================
+   model                                                chi2/N med chi2/n med rms(dex)  f(red<5)
+   MOND simple mu (a0=1.2e-10)                           52.32      10.51        0.067      0.34
+   MOND RAR nu (McGaugh+16)                              52.37      10.49        0.066      0.34
+   L2raw Jeans gamma=2    rho_c=0.161   floor=Om        211.24      32.56        0.112      0.15
+   L2raw Jeans gamma=.489 rho_c=0.161   floor=Om        298.36      34.74        0.121      0.16
+   L2raw site  gamma=2   rho_c=0.029V^2 floor=Om        420.47      46.97        0.133      0.17
+   L2raw site  gamma=.489 rho_c=0.029V^2 floor=Om       421.39      46.97        0.134      0.17
+   L2 site  gamma=2   rho_c=0.029V^2 floor=Om           468.84      36.95        0.127      0.19
+   L2 site  gamma=.489 rho_c=0.029V^2 floor=Om          470.03      35.92        0.128      0.19
+   Newton (C=1)                                         625.78     113.26        0.247      0.03
+   L2raw RG    Cesare+20  e0=.089 q=.47 rc=8.3e-3      1851.51      83.72        0.162      0.10
+   L2raw RG    Pass4-quoted e0=.09 q=.7 rc=0.015       2351.04     125.87        0.173      0.06
+   L2raw Jeans gamma=.489 rho_c=0.161   floor=.089     4435.61     361.37        0.245      0.01
+   L2raw nofloor gamma=.489 rho_c=0.161 floor=1e-3    421048.43   33866.34        0.808      0.00
+   L2 Jeans gamma=.489 rho_c=0.161   floor=Om         403138503335346041759186550784.00      35.15        0.113      0.21
+   L2 Jeans gamma=2    rho_c=0.161   floor=Om         1649224429852654259178089480192.00      32.36        0.102      0.20
+   L2 Jeans gamma=.489 rho_c=0.161   floor=.089       6663101162818175556553682190336.00     410.43        0.251      0.03
+   L2 RG    Pass4-quoted e0=.09 q=.7 rc=0.015         33331321277049944789012835205120.00     235.32        0.182      0.07
+   L2 RG    Cesare+20  e0=.089 q=.47 rc=8.3e-3        43868614930254867833677164838912.00     145.36        0.159      0.09
+   L2 nofloor gamma=.489 rho_c=0.161 floor=1e-3       3847920320166289403865803262001152.00   40598.11        0.842      0.00
+
+==============================================================================
+2b. GALAXY-LEVEL HEAD-TO-HEAD vs MOND simple mu  [gas=vgas]
+==============================================================================
+   MOND simple mu (a0=1.2e-10)                        wins    0% of galaxies;  median log10(chi2/chi2_MOND) = +0.00;  sum dchi2 = +0
+   MOND RAR nu (McGaugh+16)                           wins   64% of galaxies;  median log10(chi2/chi2_MOND) = -0.00;  sum dchi2 = +131
+   L2 site  gamma=2   rho_c=0.029V^2 floor=Om         wins   24% of galaxies;  median log10(chi2/chi2_MOND) = +0.58;  sum dchi2 = +1288183
+   L2 site  gamma=.489 rho_c=0.029V^2 floor=Om        wins   24% of galaxies;  median log10(chi2/chi2_MOND) = +0.58;  sum dchi2 = +1291862
+   Newton (C=1)                                       wins   10% of galaxies;  median log10(chi2/chi2_MOND) = +1.05;  sum dchi2 = +1780014
+   L2 Jeans gamma=.489 rho_c=0.161   floor=Om         wins   23% of galaxies;  median log10(chi2/chi2_MOND) = +0.56;  sum dchi2 = +1248519944829566775981799993507840
+   L2 Jeans gamma=2    rho_c=0.161   floor=Om         wins   25% of galaxies;  median log10(chi2/chi2_MOND) = +0.50;  sum dchi2 = +5112595732543228088610286890647552
+   L2 Jeans gamma=.489 rho_c=0.161   floor=.089       wins    4% of galaxies;  median log10(chi2/chi2_MOND) = +1.61;  sum dchi2 = +20662276705899163281326695623163904
+   L2 RG    Pass4-quoted e0=.09 q=.7 rc=0.015         wins    8% of galaxies;  median log10(chi2/chi2_MOND) = +1.20;  sum dchi2 = +103427089922685977838133697323204608
+   L2 RG    Cesare+20  e0=.089 q=.47 rc=8.3e-3        wins   13% of galaxies;  median log10(chi2/chi2_MOND) = +1.08;  sum dchi2 = +136168180743511113790959185783947264
+   L2 nofloor gamma=.489 rho_c=0.161 floor=1e-3       wins    0% of galaxies;  median log10(chi2/chi2_MOND) = +3.61;  sum dchi2 = +11943944673796162051345036293317853184
+
+==============================================================================
+2c. WHERE DOES THE BOOST TURN ON?  [gas=vgas]  (max B per galaxy; knee radius)
+==============================================================================
+   Jeans gamma=.489 rho_c=0.161   floor=Om
+      B at innermost/outermost: min-over-sample of min B = -60840687829324926772213180268544.00, median min B = 2.40;  median max B = 3.20, ceiling 1/floor = 3.17
+      required max boost (Vobs^2/Vbar^2): median 5.12; galaxies needing > delivered max B: 76%
+   RG    Cesare+20  e0=.089 q=.47 rc=8.3e-3
+      B at innermost/outermost: min-over-sample of min B = 1.00, median min B = 2.01;  median max B = 12.11, ceiling 1/floor = 11.24
+      required max boost (Vobs^2/Vbar^2): median 5.12; galaxies needing > delivered max B: 8%
+   site  gamma=2   rho_c=0.029V^2 floor=Om
+      B at innermost/outermost: min-over-sample of min B = -70632982107925694815715601678336.00, median min B = 3.17;  median max B = 3.17, ceiling 1/floor = 3.17
+      required max boost (Vobs^2/Vbar^2): median 5.12; galaxies needing > delivered max B: 77%
+built 153 galaxies in 7s  [gas=exp gas=exp h=bershady Ups_d=0.5]
+
+==============================================================================
+1. NEWTONIAN ON-GRID vs SPARC V_bar  [gas=exp]  (is the grid mass model SPARC's?)
+==============================================================================
+   per-point log10(V_N,grid / V_bar,SPARC): rms 0.073 dex, median -0.003, 16-84% [-0.039,+0.039]
+   per-galaxy median offset: rms 0.059 dex; |offset|>0.05 dex in 25% of galaxies
+   -> the BOOST transfer (V_pred^2 = B_grid * V_bar,SPARC^2) removes this at first order.
+
+==============================================================================
+2. FIXED-PARAMETER MODELS under L2  [gas=exp]  (N_eff = galaxies; no per-galaxy nuisance)
+==============================================================================
+   model                                                chi2/N med chi2/n med rms(dex)  f(red<5)
+   MOND simple mu (a0=1.2e-10)                           51.46      10.51        0.067      0.34
+   MOND RAR nu (McGaugh+16)                              51.50      10.49        0.066      0.34
+   L2 Jeans gamma=2    rho_c=0.161   floor=Om           223.95      29.64        0.101      0.21
+   L2raw Jeans gamma=2    rho_c=0.161   floor=Om        224.03      26.70        0.102      0.24
+   L2raw Jeans gamma=.489 rho_c=0.161   floor=Om        316.73      30.16        0.110      0.20
+   L2 Jeans gamma=.489 rho_c=0.161   floor=Om           320.16      35.71        0.114      0.20
+   L2raw site  gamma=2   rho_c=0.029V^2 floor=Om        444.67      32.82        0.113      0.17
+   L2raw site  gamma=.489 rho_c=0.029V^2 floor=Om       445.66      32.82        0.117      0.17
+   L2 site  gamma=2   rho_c=0.029V^2 floor=Om           459.55      36.99        0.130      0.18
+   L2 site  gamma=.489 rho_c=0.029V^2 floor=Om          460.74      36.93        0.131      0.18
+   Newton (C=1)                                         616.63     113.26        0.247      0.03
+   L2raw RG    Cesare+20  e0=.089 q=.47 rc=8.3e-3      1951.38      77.34        0.143      0.12
+   L2 RG    Cesare+20  e0=.089 q=.47 rc=8.3e-3         2081.32     111.98        0.159      0.09
+   L2raw RG    Pass4-quoted e0=.09 q=.7 rc=0.015       2502.73     147.48        0.174      0.07
+   L2 RG    Pass4-quoted e0=.09 q=.7 rc=0.015          2650.15     163.06        0.179      0.07
+   L2raw Jeans gamma=.489 rho_c=0.161   floor=.089     4450.51     382.39        0.251      0.01
+   L2 Jeans gamma=.489 rho_c=0.161   floor=.089        4608.63     382.86        0.245      0.03
+   L2raw nofloor gamma=.489 rho_c=0.161 floor=1e-3    474237.29   36786.16        0.857      0.00
+   L2 nofloor gamma=.489 rho_c=0.161 floor=1e-3       497064.94   38137.18        0.832      0.00
+
+==============================================================================
+2b. GALAXY-LEVEL HEAD-TO-HEAD vs MOND simple mu  [gas=exp]
+==============================================================================
+   MOND simple mu (a0=1.2e-10)                        wins    0% of galaxies;  median log10(chi2/chi2_MOND) = +0.00;  sum dchi2 = +0
+   MOND RAR nu (McGaugh+16)                           wins   63% of galaxies;  median log10(chi2/chi2_MOND) = -0.00;  sum dchi2 = +131
+   L2 Jeans gamma=2    rho_c=0.161   floor=Om         wins   25% of galaxies;  median log10(chi2/chi2_MOND) = +0.48;  sum dchi2 = +546108
+   L2 Jeans gamma=.489 rho_c=0.161   floor=Om         wins   24% of galaxies;  median log10(chi2/chi2_MOND) = +0.54;  sum dchi2 = +850721
+   L2 site  gamma=2   rho_c=0.029V^2 floor=Om         wins   24% of galaxies;  median log10(chi2/chi2_MOND) = +0.58;  sum dchi2 = +1292022
+   L2 site  gamma=.489 rho_c=0.029V^2 floor=Om        wins   24% of galaxies;  median log10(chi2/chi2_MOND) = +0.58;  sum dchi2 = +1295785
+   Newton (C=1)                                       wins   10% of galaxies;  median log10(chi2/chi2_MOND) = +1.05;  sum dchi2 = +1789335
+   L2 RG    Cesare+20  e0=.089 q=.47 rc=8.3e-3        wins   12% of galaxies;  median log10(chi2/chi2_MOND) = +1.01;  sum dchi2 = +6426529
+   L2 RG    Pass4-quoted e0=.09 q=.7 rc=0.015         wins    8% of galaxies;  median log10(chi2/chi2_MOND) = +1.22;  sum dchi2 = +8227465
+   L2 Jeans gamma=.489 rho_c=0.161   floor=.089       wins    4% of galaxies;  median log10(chi2/chi2_MOND) = +1.52;  sum dchi2 = +14427994
+   L2 nofloor gamma=.489 rho_c=0.161 floor=1e-3       wins    0% of galaxies;  median log10(chi2/chi2_MOND) = +3.61;  sum dchi2 = +1573544673
+
+==============================================================================
+2c. WHERE DOES THE BOOST TURN ON?  [gas=exp]  (max B per galaxy; knee radius)
+==============================================================================
+   Jeans gamma=.489 rho_c=0.161   floor=Om
+      B at innermost/outermost: min-over-sample of min B = 1.01, median min B = 2.41;  median max B = 3.18, ceiling 1/floor = 3.17
+      required max boost (Vobs^2/Vbar^2): median 5.14; galaxies needing > delivered max B: 77%
+   RG    Cesare+20  e0=.089 q=.47 rc=8.3e-3
+      B at innermost/outermost: min-over-sample of min B = 1.00, median min B = 1.95;  median max B = 11.04, ceiling 1/floor = 11.24
+      required max boost (Vobs^2/Vbar^2): median 5.14; galaxies needing > delivered max B: 12%
+   site  gamma=2   rho_c=0.029V^2 floor=Om
+      B at innermost/outermost: min-over-sample of min B = 1.33, median min B = 3.17;  median max B = 3.17, ceiling 1/floor = 3.17
+      required max boost (Vobs^2/Vbar^2): median 5.14; galaxies needing > delivered max B: 77%

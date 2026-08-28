@@ -1,0 +1,12 @@
+built 153 galaxies in 35s  [baseline gas=vgas h=bershady Ups_d=0.5]  transfer-guard dropped 131 of 3166 points
+
+==============================================================================
+1. NEWTONIAN ON-GRID vs SPARC V_bar  [baseline]  (is the grid mass model SPARC's?)
+==============================================================================
+   per-point log10(V_N,grid / V_bar,SPARC): rms 0.061 dex, median -0.011, 16-84% [-0.062,+0.025]
+   per-galaxy median offset: rms 0.043 dex; |offset|>0.05 dex in 20% of galaxies
+   -> the BOOST transfer (V_pred^2 = B_grid * V_bar,SPARC^2) removes this at first order.
+
+==============================================================================
+2. FIXED-PARAMETER MODELS under L2  [baseline]  (N_eff = galaxies; no per-galaxy nuisance)
+==============================================================================

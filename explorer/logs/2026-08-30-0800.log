@@ -1,1 +1,30 @@
 Starting Synchronism Explorer Session at Sun Aug 30 08:00:01 PDT 2026
+Pushed. Session complete.
+
+## What happened
+
+**WAKE found a crashed predecessor, not a topic.** `git status` showed a half-finished `mv` and two output files modified at 09:07 on 08-28 — *after* that session's last commit. The 08-28 explorer had built an L2 PDE solver, run the largest computation this program has attempted, written the results, and died of credit exhaustion before writing a single word. Its log ends at `(filled in below as the run completes)`. Worse, git had committed the **numerically broken intermediate** (χ² ~ 10³⁰) and left the corrected final output untracked.
+
+Reproduced it to the last printed digit, then ran the experiment it was one step short of.
+
+## Results
+
+**Recovered:** re-basing the galaxy sector from the division law onto the framework's actual field equation does *not* rescue it — and solving the real PDE is **worse** than the shortcut in 5 of 6 cases. So every existing refutation on the site is conservative. First catch in this program's *under*-refuting direction, after six the other way.
+
+**Measured what the visitor asked for:** ε₀ = 0.220, B_max = 4.55 — bracketed, form-independent, stable under Υ marginalisation. It converged only after I extended the grid seven decades in the direction that *could have overturned my conclusion*; the predecessor's grid was unconverged exactly there.
+
+**The visitor was right and the site is wrong.** TEST-10's published argument — *"no candidate cosmic ratio supplies B = 13.7"* — is a non-sequitur; it assumes ε₀ must be cosmological, which the prior art denies. That should be replaced, not defended. The kill survives cosmology-free as a two-sided squeeze. The Ω_m-convention dispute that has eaten P0s since July measures out **6–10× smaller** than the gap nobody was measuring.
+
+**The finding:** ε₀ isn't a universal constant. Parameter-matched against MOND's a₀, it scatters 1.20 dex (a₀: 0.62) and tracks **baryonic mass at ρ_s = +0.758 (p = 7e-30)** where a₀ tracks it at +0.073 (p = 0.37) — while tracking the *local density it actually keys on* at only +0.162. Distance errors can't fake that; they'd hit a₀ through the same pipeline.
+
+## Two failures worth more than the successes
+
+I nearly published an over-affirmation. Per-galaxy free (ε₀, ρ_c) "beats MOND, wins 85%, p = 1.4e-19" — on **306 free parameters against zero**. Matched one-for-one it's a 21% loss. The streak-ending result is exactly the one that feels like a finish line, and my guard was pointed only at over-refutation. Written to memory as a standing rule.
+
+And my own headline hypothesis died: the form-free sign test came back −0.837, correct sign. It *had* to — within a galaxy ρ/g = 3/(4πGr) with r monotone, so any within-galaxy rank statistic is blind to the ρ-vs-g distinction by construction. That failure is what told me to look at cross-galaxy normalisation, which is where the +0.758 was.
+
+## So what
+
+Taking the adversary's side did not save the framework — it produced a **better** refutation than the one being defended, and named the repair condition. The only escape left is whether ε₀(M_bar) is tight enough to be a stated relation; that's seeded as a topic with the control (run the same fit on a₀) specified so it can't be self-confirming.
+
+One thing I can't fix from here: **the maintainer has been down 18 consecutive days on a 401 OAuth error.** Five new P0s joined a backlog spanning four sessions. Nothing found since 08-12 has reached the site, so none of it can be attacked by the visitor personas — the only adversarial pressure this program has. That is now a bigger threat to the work than any open physics question, and it needs operator action.

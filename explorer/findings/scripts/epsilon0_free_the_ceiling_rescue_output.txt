@@ -1,0 +1,144 @@
+built 153 galaxies x 3 Upsilon in 26s
+N points = 3035   (transfer-guard dropped 131)
+
+==============================================================================
+0. REFERENCES (identical points, identical nuisance treatment)
+==============================================================================
+   Reported at BOTH Upsilon treatments, because the L2 grid below is run at
+   Upsilon = 0.5 fixed and must be compared like-for-like.
+
+   model                             Ups=0.5 fixed   Ups profiled
+   Newton (C=1)                             635.97         465.43
+   MOND simple mu  a0=1.2e-10                52.21          21.25
+   MOND RAR nu     McGaugh+16                52.25          21.55
+   MOND simple mu, a0 FREE          chi2/N =    21.63   at a0 = 1.265e-10
+
+==============================================================================
+E1. CONVERGED (eps0, rho_c) PROFILE UNDER L2   [Upsilon_d = 0.5 fixed]
+==============================================================================
+    C_fw(rho) = eps0 + (1-eps0) tanh( 0.489 ln(1+rho/rho_c) )      ceiling = 1/eps0
+    C_rg(rho) = eps0 + (1-eps0) (1/2)[tanh( 0.47 ln(rho/rho_c) )+1]
+    rho_c -> 0  is the NEWTONIAN limit of the framework form;
+    rho_c -> inf is the UNIFORM-BOOST limit (B = 1/eps0 everywhere).
+
+   --- fw form ---
+   eps0 \ rho_c    1e-07  5.9e-07  3.5e-06  2.1e-05  0.00012  0.00073   0.0043    0.026     0.15      0.9      5.3       32     row min
+   0.020          477.6    714.3   1130.6   1853.8   3176.9   5905.0  11374.6  20977.7  33667.2  45249.0  53405.1  57361.7      477.6 @ 1e-07  <-EDGE
+   0.035          365.8    533.4    823.4   1300.2   2128.1   3709.5   6664.8  11603.5  17602.0  22932.4  26405.5  27950.8      365.8 @ 1e-07  <-EDGE
+   0.050          292.1    412.4    622.7    960.3   1530.3   2573.9   4462.5   7520.2  11097.3  14245.3  16193.2  17013.2      292.1 @ 1e-07  <-EDGE
+   0.073          221.0    292.6    425.3    637.4    989.4   1613.2   2716.9   4452.7   6443.4   8178.7   9197.1   9600.5      221.0 @ 1e-07  <-EDGE
+   0.089          190.4    238.4    335.2    492.5    753.5   1212.0   2018.2   3273.6   4711.6   5958.5   6671.1   6944.3      190.4 @ 1e-07  <-EDGE
+   0.120          157.3    174.2    225.1    314.6    467.0    736.3   1211.2   1948.5   2802.9   3538.0   3942.2   4089.5      157.3 @ 1e-07  <-EDGE
+   0.160          145.2    138.5    155.4    196.6    274.3    418.1    679.6   1094.6   1589.5   2012.9   2237.6   2315.6      138.5 @ 5.9e-07
+   0.220          159.0    134.8    126.5    132.2    155.8    211.4    326.1    523.7    774.7    989.7   1099.6   1135.7      126.5 @ 3.5e-06
+   0.315          212.9    180.1    157.8    142.5    133.8    136.7    163.5    230.3    330.4    418.4    461.6    475.0      133.8 @ 0.00012
+   0.420          285.7    253.9    229.6    209.0    190.5    175.7    170.9    187.4    225.5    261.5    278.9    284.1      170.9 @ 0.0043
+   0.560          382.7    357.8    337.7    319.3    301.0    283.0    268.1    263.6    271.8    282.4    287.6    289.1      263.6 @ 0.026
+   0.661          448.3    429.3    413.7    399.1    384.2    368.8    354.6    346.7    347.3    350.9    352.8    353.4      346.7 @ 0.026
+   0.800          531.2    520.3    511.3    502.7    493.7    484.1    474.8    468.2    466.0    466.1    466.3    466.4      466.0 @ 0.15
+   --- rg form ---
+   eps0 \ rho_c    1e-07  5.9e-07  3.5e-06  2.1e-05  0.00012  0.00073   0.0043    0.026     0.15      0.9      5.3       32     row min
+   0.020          409.7    594.4    922.9   1495.2   2506.6   4483.9   8530.2  15976.8  27389.3  39548.1  49477.2  55467.7      409.7 @ 1e-07  <-EDGE
+   0.035          319.0    447.8    679.8   1067.3   1716.3   2907.4   5159.2   9106.1  14721.9  20373.3  24797.2  27242.6      319.0 @ 1e-07  <-EDGE
+   0.050          260.0    350.1    518.7    796.4   1249.4   2051.6   3510.2   6001.9   9400.7  12763.6  15312.5  16648.2      260.0 @ 1e-07  <-EDGE
+   0.073          204.6    254.2    359.4    534.7    817.1   1304.2   2165.3   3604.9   5506.9   7380.9   8748.6   9426.5      204.6 @ 1e-07  <-EDGE
+   0.089          181.6    211.6    286.7    416.2    625.9    985.5   1616.8   2664.5   4037.1   5392.4   6361.8   6828.4      181.6 @ 1e-07  <-EDGE
+   0.120          158.7    162.6    198.7    270.6    392.2    603.3    975.5   1593.1   2403.6   3210.5   3770.8   4028.5      158.7 @ 1e-07  <-EDGE
+   0.160          154.3    138.3    145.2    175.6    235.5    346.5    549.5    894.7   1358.8   1827.6   2144.6   2284.1      138.3 @ 5.9e-07
+   0.220          173.7    143.3    128.3    128.0    142.9    182.7    268.0    427.6    657.8    897.4   1055.3   1121.4      128.0 @ 2.1e-05
+   0.315          229.7    193.0    166.4    148.3    136.4    133.5    148.2    196.4    283.5    381.3    444.7    469.8      133.5 @ 0.00073
+   0.420          301.2    266.7    239.4    217.5    198.0    181.2    171.2    177.6    207.2    246.5    272.3    282.2      171.2 @ 0.0043
+   0.560          394.7    367.9    345.9    327.0    308.6    290.4    273.7    264.1    267.3    278.0    285.7    288.6      264.1 @ 0.026
+   0.661          457.4    437.0    420.1    405.2    390.5    375.2    360.2    349.2    346.4    349.4    352.1    353.2      346.4 @ 0.15
+   0.800          536.3    524.7    515.0    506.3    497.5    488.1    478.6    470.6    466.7    466.0    466.3    466.4      466.0 @ 0.9
+
+   BEST over the whole 2-parameter class: ('fw', 0.22, 3.5111917342151275e-06)  chi2/N = 126.53
+   (MOND simple a0 fixed 21.25 at Ups profiled;  Newton 465.43)
+
+   exponent scan at the optimum (adds a 3rd free parameter):
+      exponent  0.10: chi2/N =   189.43
+      exponent  0.25: chi2/N =   130.15
+      exponent  0.49: chi2/N =   126.53
+      exponent  1.00: chi2/N =   129.66
+      exponent  2.00: chi2/N =   135.53
+      exponent  4.00: chi2/N =   144.17
+
+==============================================================================
+E2. PER-GALAXY FREE eps0  (the maximally generous form of the rescue)
+==============================================================================
+    Every galaxy picks its own ceiling AND its own rho_c from the E1 grid.
+    That is 2 free parameters per galaxy = 306, against MOND's 0.
+
+    LIKE-FOR-LIKE: the grid is at Upsilon = 0.5 fixed, so the comparison
+    reference here is MOND at Upsilon = 0.5 fixed too.
+
+   fw: chi2/N, per-galaxy (eps0,rho_c) free =    18.69   vs MOND (0 free params)    52.88   wins  85% of galaxies
+        GALAXY-LEVEL (N_eff = 153): median reduced chi2 class   3.17 vs MOND  10.51; paired Wilcoxon p = 1.38e-19
+        top 5 galaxies carry 175142553656368% of the total chi2 gap (NGC6674, NGC2403, NGC6015, UGC03205, NGC2903)
+        preferred eps0 per galaxy: median 0.220, 16-84% [0.089,0.315]; pinned at grid floor 3%, at grid top 0%
+        implied ceiling 1/eps0: median 4.55, 16-84% [3.17,11.24]
+   rg: chi2/N, per-galaxy (eps0,rho_c) free =    18.69   vs MOND (0 free params)    52.88   wins  87% of galaxies
+        GALAXY-LEVEL (N_eff = 153): median reduced chi2 class   3.10 vs MOND  10.51; paired Wilcoxon p = 3.98e-20
+        top 5 galaxies carry 154983148947176% of the total chi2 gap (NGC6015, UGC03205, NGC6674, NGC2903, NGC1003)
+        preferred eps0 per galaxy: median 0.220, 16-84% [0.120,0.315]; pinned at grid floor 3%, at grid top 0%
+        implied ceiling 1/eps0: median 4.55, 16-84% [3.17,8.33]
+
+==============================================================================
+E2b. SAME, WITH Upsilon ALSO MARGINALISED FOR THE CLASS  (basin sub-grid)
+==============================================================================
+    sub-grid 9 eps0 x 6 rho_c, Upsilon profiled on [0.3, 0.5, 0.7]
+    (both sides now carry the same nuisance treatment)
+
+   fw: global best (eps0,rho_c) =    54.11 ;  per-galaxy free =    12.99 ;  MOND =    21.25 ;  per-galaxy wins  83%
+        GALAXY-LEVEL: median reduced chi2 class   2.33 vs MOND   6.26;  paired Wilcoxon p = 1.21e-14
+        preferred eps0: median 0.220, 16-84% [0.120,0.315]
+   rg: global best (eps0,rho_c) =    55.28 ;  per-galaxy free =    12.93 ;  MOND =    21.25 ;  per-galaxy wins  83%
+        GALAXY-LEVEL: median reduced chi2 class   2.39 vs MOND   6.26;  paired Wilcoxon p = 5.33e-15
+        preferred eps0: median 0.220, 16-84% [0.120,0.315]
+
+==============================================================================
+E3. FORM-FREE SIGN TEST  (no parameters at all)
+==============================================================================
+    Any monotone-increasing C(rho) => boost B = f(rho) monotone DECREASING.
+    So Spearman[ rho_mid(r), B_required(r) ] must be NEGATIVE in every galaxy.
+    B_required = Vobs^2 / Vbar^2 on the same points, Upsilon_d = 0.5.
+
+   N galaxies with >=5 usable points: 148
+   median Spearman(rho, B_req) = -0.837   (a perfect C would give -1)
+   WRONG SIGN (rho and B_req rise together): 19/148 = 13%
+   wrong sign AND p < 0.05:                  4/148 = 3%
+   right sign AND p < 0.05:                  99/148
+
+   SAME TEST ON THE ACCELERATION VARIABLE (what MOND keys on):
+   median Spearman(g_bar, B_req) = -0.865
+   WRONG SIGN: 20/148 = 14%
+
+   worst offenders (rho and required boost rise together):
+      galaxy         rho_s         p    n  maxBreq
+      UGC09992      +0.900  3.74e-02    5     3.20
+      UGC06667      +0.886  1.88e-02    6    12.05
+      UGC04325      +0.786  2.08e-02    8     8.36
+      UGC05764      +0.697  2.51e-02   10    20.93
+      UGC10310      +0.607  1.48e-01    7     4.67
+      DDO064        +0.600  8.76e-02    9    61.44
+      UGC00731      +0.600  2.08e-01    6    28.07
+      NGC4051       +0.486  3.29e-01    6     1.70
+      UGC02259      +0.429  2.89e-01    8     9.88
+      NGC5985       +0.284  1.15e-01   32     4.43
+      UGC05716      +0.203  5.27e-01   12     6.57
+      UGC12632      +0.147  6.49e-01   12     6.86
+
+==============================================================================
+E4. RESIDUAL SHAPE AFTER PER-GALAXY (eps0, rho_c) FREEDOM
+==============================================================================
+    At each galaxy's OWN best (eps0,rho_c), regress log10(Vobs/Vpred) on
+    log10(R/Rdisk).  A nonzero systematic slope is a RADIAL SHAPE error --
+    the one thing no amplitude parameter (eps0) can absorb.
+
+   L2 class, per-galaxy eps0,rho_c    median slope +0.0061 dex/dex   |slope|>0.02 in  81%   Wilcoxon p = 8.81e-01   median rms 0.042 dex
+   MOND simple mu, 0 free params      median slope +0.0339 dex/dex   |slope|>0.02 in  89%   Wilcoxon p = 1.62e-03   median rms 0.067 dex
+   Newton                             median slope +0.1570 dex/dex   |slope|>0.02 in  97%   Wilcoxon p = 3.80e-17   median rms 0.238 dex
+
+   The class has 0.67x MOND's median |radial slope error| WHILE carrying 2 free parameters per galaxy to MOND's 0.
+
+[cache -> epsilon0_free_the_ceiling_rescue_cache.json]   total 5505s

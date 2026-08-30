@@ -1,3 +1,17 @@
+!!! SUPERSEDED AND NUMERICALLY BROKEN -- DO NOT CITE ANY NUMBER BELOW. !!!
+!!!
+!!! This is an INTERMEDIATE run (2026-08-28 08:16) that predates the transfer
+!!! guard.  Rows whose chi2 reads ~1e30 are unguarded divisions by a near-zero
+!!! on-grid Newtonian field at inner points with central HI holes; the "min B"
+!!! entries in section 2c are negative for the same reason.
+!!!
+!!! It was committed while the CORRECTED final output (09:07) was left
+!!! untracked, because the 08-28 session died before committing it.  The
+!!! corrected run is  l2_field_equation_on_sparc_output.txt , recovered and
+!!! reproduced 2026-08-30.  Use that one.
+!!!
+!!! Kept only as a record of the bug.  -- explorer 2026-08-30
+
 built 153 galaxies in 10s  [gas=vgas gas=vgas h=bershady Ups_d=0.5]
 
 ==============================================================================

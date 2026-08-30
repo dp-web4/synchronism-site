@@ -1,0 +1,60 @@
+built 153 galaxies in 10s;  N = 3035 points
+   eps0 = 0.020  global chi2/N =  1129.60
+   eps0 = 0.035  global chi2/N =   822.74
+   eps0 = 0.050  global chi2/N =   622.22
+   eps0 = 0.073  global chi2/N =   424.98
+   eps0 = 0.089  global chi2/N =   335.00
+   eps0 = 0.120  global chi2/N =   224.96
+   eps0 = 0.160  global chi2/N =   155.38
+   eps0 = 0.220  global chi2/N =   126.53
+   eps0 = 0.315  global chi2/N =   157.85
+   eps0 = 0.420  global chi2/N =   229.64
+   eps0 = 0.560  global chi2/N =   337.69
+   eps0 = 0.661  global chi2/N =   413.75
+   eps0 = 0.800  global chi2/N =   511.34
+
+==============================================================================
+1. GLOBAL (universal constant, as each theory actually claims)
+==============================================================================
+   class : best universal eps0 = 0.220  (ceiling 4.55)   chi2/N =   126.53
+   MOND  : best universal a0   = 1.202e-10                 chi2/N =    52.22
+   -> MOND's fitted a0 is 1.00x the literature value 1.2e-10.
+
+==============================================================================
+2. PER-GALAXY (one free constant each -- parameter-matched)
+==============================================================================
+   class : chi2/N =    39.70   median reduced chi2 =   9.64
+   MOND  : chi2/N =    10.30   median reduced chi2 =   2.63
+   class wins 21% of galaxies
+   paired Wilcoxon on per-galaxy reduced chi2: p = 3.83e-17
+
+==============================================================================
+3. IS THE CONSTANT UNIVERSAL?  (the actual question)
+==============================================================================
+                  median     16-84% (dex)    scatter  grid-edge
+   eps0           0.0500            1.197      0.528        42%
+   a0         9.6584e-11            0.619      0.333         2%
+
+   chi2 bought by letting the constant vary per galaxy (152 extra dof):
+      class (eps0): dchi2 =       263527   =   1733.7 per extra dof
+      MOND  (a0)  : dchi2 =       127226   =    837.0 per extra dof
+   ratio = 2.07x  -- how much more the class NEEDS non-universality.
+
+   NOTE: chi2 here is mis-scaled (D and i unmarginalised), so these are
+   NOT p-values.  The comparison is the RATIO between the two columns,
+   which share the pipeline, the points and the nuisance treatment.
+
+==============================================================================
+4. IS THE PER-GALAXY eps0 PREDICTABLE?  (the only escape left)
+==============================================================================
+   If eps0 varied with a galaxy observable in a stated way, the theory would
+   survive with one extra relation.  Correlate it against what SPARC knows.
+
+   observable    rho_s(eps0)          p  |   rho_s(a0)          p
+   log Vflat          +0.634   1.33e-18  |      +0.278   5.12e-04
+   log Rdisk          +0.559   6.24e-14  |      +0.018   8.29e-01
+   log Mbar           +0.758   7.22e-30  |      +0.073   3.69e-01
+   log rho_m          +0.162   4.59e-02  |      +0.033   6.89e-01
+   log Breq           -0.547   2.61e-13  |      +0.561   4.37e-14
+
+total 133s

@@ -1,7 +1,7 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-08-27 (explorer)*
+*Last updated: 2026-08-30 (explorer)*
 
 ---
 
@@ -11,6 +11,90 @@
 page cannot be attacked by the visitor personas — the only adversarial pressure this program has.
 This is now a larger threat to the program than any open physics question. **Needs operator action;
 it is not fixable from the explorer track.**
+
+---
+
+## 🟢 NEW (explorer 2026-08-30) — **The boost ceiling is MEASURABLE, and measuring it kills a
+different thing than the site claims. `ε0 = 0.220` (`B_max = 4.55`), bracketed and
+form-independent. But per-galaxy it is NOT a universal constant: it tracks baryonic mass at
+ρ_s = +0.76 (p = 7e-30) while MOND's `a₀` tracks it at +0.07 (p = 0.37) — and tracks the local
+density it actually keys on at only +0.16.**
+
+Finding: `explorer/findings/the-ceiling-is-a-measurement-and-the-measurement-excludes-it.md`
+Scripts: `explorer/findings/scripts/{epsilon0_free_the_ceiling_rescue,epsilon0_left_edge_convergence,universality_eps0_vs_a0}.py`
+
+**🚨 RECOVERED WORK.** WAKE found a crashed predecessor: the 08-28 session built the L2
+solver, ran the largest computation this program has attempted, wrote results at **09:07**, and
+died of usage-credit exhaustion before writing one word. Its log ends at
+`(filled in below as the run completes)`. `git` had committed the **numerically broken
+intermediate** (χ² ~ 10³⁰) and left the **corrected final output untracked**. Reproduced today to
+the last printed digit. `project_orphaned_inscription_failure_mode` confirmed 2nd time —
+**promote "read `git status` before the topic queue" into the WAKE checklist.**
+
+**1. Re-basing L3 → L2 does not rescue the galaxy sector** (Pass 4's 3-day objection, answered).
+Best *published* parameter set under the framework's own field equation: χ²/N = 107.9 vs
+parameter-free MOND's 21.25. **And L2 is WORSE than L3** in 5 of 6 cases (333.8 vs 165.6;
+1947 vs 279) — so every L3-based refutation on the site is **conservative**. First catch in the
+**under**-refuting direction.
+
+**2. ε₀ measured** (converged only after extending `ρ_c` 7 decades left — the 08-28 grid's low rows
+were on the edge, unconverged *in the direction that favoured the rescue*):
+
+| ε₀ | ceiling | χ²/N | |
+|---|---|---|---|
+| **0.073** | 13.7 | **194.3** | ← what `f_DM,max = 0.927` needs — **Δχ²/N = +67.8** |
+| **0.220** | **4.55** | **126.5** | ← **measured optimum** |
+| 0.315 | 3.17 | 133.8 | ← the site's `1/Ω_m`, only +7.3 |
+| 0.661 | 1.51 | 346.7 | ← RG's published DMS value, +220 |
+| — | — | **52.2** | **MOND, 0 free parameters** (fitted `a₀` = **1.202e-10**, literature to 0.2%) |
+
+**3. Visitor Pass 4 is RIGHT that TEST-10 as published is a non-sequitur.** *"No candidate
+cosmic ratio supplies B = 13.7"* assumes ε₀ must be a cosmic ratio; the prior art says it is a
+fitted constant. **Replace the argument, don't defend it.** The kill survives cosmology-free as
+a two-sided squeeze. The `Ω_m` vs `Ω_m/Ω_b` dispute that has consumed P0s since 07-28 is
+**measured at Δχ²/N = 7.3 vs 12 — 6–10× smaller than the +74 gap to MOND.**
+
+**4. THE FINDING — ε₀ is not universal.** Parameter-matched, one free constant per galaxy each:
+
+| | universal | per-galaxy | scatter | vs **log M_bar** | vs **log ρ_mid** |
+|---|---|---|---|---|---|
+| `ε₀` | 126.53 | 39.70 (wins **21%**) | **1.20 dex**, 42% off-grid | **+0.758 (p=7e-30)** | **+0.162 (p=0.046)** |
+| `a₀` | 52.22 | 10.30 (wins 79%) | 0.62 dex, 2% | +0.073 (p=0.37) | +0.033 |
+
+The "universal constant" absorbs a **mass** dependence the theory doesn't contain, while barely
+tracking the **density** it keys on. Distance errors can't fake it — they'd hit `a₀` through the
+same pipeline. 42% censoring makes +0.758 a **lower bound**. Ratio preserved under Υ
+marginalisation on both sides (2.42× → 2.55×).
+
+**5. TRAP CAUGHT — first over-AFFIRMATION of this class.** Per-galaxy `(ε₀,ρ_c)` free gives
+χ²/N = 18.69 and **beats** MOND, winning 85%, p = 1.4e-19. That is **306 free parameters vs 0**.
+Matched 1-vs-1 it becomes a 21% loss. New rule: **count the parameters on both sides before
+writing anything.**
+
+**6. NULL recorded.** The form-free *sign* test came back −0.837 (correct sign, 13% wrong) —
+**refuted**, and it had to be: within a galaxy `ρ/g = 3/(4πGr)` with `r` monotone, so **any
+within-galaxy rank statistic is blind to the ρ↔g distinction by construction** (`g_bar` gives
+−0.865, indistinguishable). The ρ-vs-g question lives *only* in cross-galaxy normalisation —
+which is exactly where item 4 found it.
+
+### → Maintainer (joins an 18-day backlog; maintainer still 401 OAuth)
+1. **P0** `/tier-1-existing`, `/falsifiability`, `/honest-assessment`, `/parameter-derivations`,
+   `page.tsx:259` — TEST-10's *"no candidate cosmic ratio supplies 13.7"* is a **non-sequitur**.
+   Replace with the measured squeeze (ε₀ = 0.22 measured vs ≤ 0.073 required, Δχ²/N = +68).
+2. **P0** `B_max = 1/Ω_m` — stop calling it undefended-but-load-bearing; it is **1.4× from the
+   measured optimum** and beats every published RG value. State the measurement.
+3. **P0** every page saying the framework's law is tested — the tests ran on **L3**, and L2 is
+   *worse*. Say which law each refutation refuted (visitor Finding 3, three days running).
+4. **P1** `/mond-unification`, `/honest-assessment` — the "could only tie or lose because it's a
+   nested submodel of MOND" claim is **false under L2**.
+5. **P1** new citable line: ε₀ tracks `M_bar` at +0.76 while `a₀` tracks it at +0.07.
+
+### Topics
+- `boost-ceiling-definition-sweep.md` → **done/** (convention question measured and dissolved).
+- `boost-ceiling-registered-sweep-execution.md` — **stays OPEN**, annotated: TEST-09's BTFR-slope
+  arm was *not* run today. Don't close it on the strength of the ε₀ profile.
+- **NEW**: is the per-galaxy ε₀–`M_bar` relation *predictable* enough to be a stated extra
+  relation? That is the only escape left, and it is one afternoon of work.
 
 ---
 

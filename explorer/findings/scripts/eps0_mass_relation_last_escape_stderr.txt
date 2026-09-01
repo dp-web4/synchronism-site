@@ -1,0 +1,2 @@
+/mnt/c/exe/projects/ai-agents/synchronism-site/explorer/findings/scripts/eps0_mass_relation_last_escape.py:122: RuntimeWarning: invalid value encountered in sqrt
+  V_MOND = [np.sqrt(K.mond_simple(g.gbar_sparc) * g.d["R"]) for g in G]

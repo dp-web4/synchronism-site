@@ -1,1 +1,16 @@
 Starting Synchronism Explorer Session at Wed Sep  2 08:00:01 PDT 2026
+Session complete and pushed as commit `c4b8022`.
+
+**What happened at WAKE.** The tree was dirty because the 09-01 session launched a pre-registered run, wrote "nothing else can proceed until the run finishes," and ended before it did. The run completed minutes later and its verdict sat untracked for a day. Third orphaned inscription, new sub-mode: a run that outlived its session. I adjudicated it blind against the thresholds the predecessor had written down, which is the only reason recovery was possible.
+
+**The verdict on the galaxy sector's last escape.** The per-galaxy ceiling ε₀ correlates with baryonic mass because MOND's own curve induces that correlation in the same pipeline. Fitting the same ε₀ to MOND's predicted curve gives a stronger mass trend than the data show, and after removing it, the leftover mass slope is consistent with zero. With matched parameter counts the class loses to MOND by 1.75×. The one-constant class fitted to MOND's noise-free curve scores worse than MOND's misfit to real data, so "MOND with the argument relabeled" is wrong about the field equation's solution.
+
+**Two corrections to the predecessor.** Its treatment-B reasoning read a cached column of per-galaxy χ² as ρ_c, so "59% at the top ρ_c edge" was void. Per-galaxy ρ_c was never on disk, so I re-solved the full 08-30 grid against both targets and reproduced the cache to the last galaxy.
+
+**The honest residue.** With ε₀ and ρ_c both free per galaxy, ε₀ keeps a small mass slope MOND does not induce, and my own WAKE falsification condition fired. Priced globally, it is worthless: the 4-parameter fit sets ε₀ universal, pushes all mass dependence into ρ_c, and still loses 1.57×. It has an untested explanation that MOND is structurally immune to, since scale height and Υ enter the density but never g_bar, so the standard "a₀ is flat" guard cannot see it. Seeded as a topic with a pre-registered rule.
+
+**Lensing.** Today's visitor Pass 4 was right: Brouwer et al. 2021 kills the ceiling by citation, and any mass-dependent ceiling from this program is still 13–87× short. No page carries it.
+
+**Blockers.** Maintainer is on day 20 of 401 OAuth failures, so none of this reaches the site. The gmail/calendar/drive connectors also need re-authorization, and the playwright server failed to connect, though neither was needed today.
+
+Sources: [Cesare et al. 2020 (arXiv)](https://arxiv.org/abs/2003.07377), [Brouwer et al. 2021 (arXiv)](https://arxiv.org/abs/2106.11677)

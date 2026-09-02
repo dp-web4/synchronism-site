@@ -1,0 +1,44 @@
+built 153 galaxies;  grid 13 eps0 x 12 rho_c = 156 solves/galaxy
+   eps0 = 0.020 done   row-min chi2/N vs data   477.59   vs MOND   436.97   [122s]
+   eps0 = 0.035 done   row-min chi2/N vs data   365.83   vs MOND   326.38   [235s]
+   eps0 = 0.050 done   row-min chi2/N vs data   292.09   vs MOND   253.68   [345s]
+   eps0 = 0.073 done   row-min chi2/N vs data   221.04   vs MOND   184.00   [459s]
+   eps0 = 0.089 done   row-min chi2/N vs data   190.37   vs MOND   154.12   [572s]
+   eps0 = 0.120 done   row-min chi2/N vs data   157.35   vs MOND   122.34   [695s]
+   eps0 = 0.160 done   row-min chi2/N vs data   138.46   vs MOND   111.32   [809s]
+   eps0 = 0.220 done   row-min chi2/N vs data   126.53   vs MOND   110.59   [921s]
+   eps0 = 0.315 done   row-min chi2/N vs data   133.80   vs MOND   119.28   [1035s]
+   eps0 = 0.420 done   row-min chi2/N vs data   170.92   vs MOND   151.88   [1152s]
+   eps0 = 0.560 done   row-min chi2/N vs data   263.58   vs MOND   236.35   [1270s]
+   eps0 = 0.661 done   row-min chi2/N vs data   346.68   vs MOND   315.35   [1390s]
+   eps0 = 0.800 done   row-min chi2/N vs data   466.04   vs MOND   432.83   [1519s]
+
+==============================================================================
+B0. PER-GALAXY CO-FIT (eps0, rho_c) -- data target and MOND target
+==============================================================================
+   global best (data): eps0 = 0.220, rho_c = 3.51e-06, chi2/N = 126.53   (08-30: 0.220, 3.5e-6, 126.53)
+   per-galaxy free chi2/N: data-target 18.46 (08-30: 18.69);  MOND-target 12.32 (how well 2 params/galaxy can imitate MOND's curve)
+   [data-target]  eps0 median 0.220, std 0.317 dex, at eps0 edge 3%;  rho_c median 4.33e-03, at TOP edge 8%, at BOTTOM edge 11%
+   [MOND-target]  eps0 median 0.220, std 0.183 dex, at eps0 edge 0%;  rho_c median 2.57e-02, at TOP edge 7%, at BOTTOM edge 8%
+   Spearman(rho_c,data, log M) = -0.446;  Spearman(eps0,data, rho_c,data) = +0.063
+   consistency with 08-30 cache: eps0 identical for 100% of galaxies
+
+==============================================================================
+B1. THE MASS RELATION, treatment B
+==============================================================================
+   eps0 (data) : k = +0.170 dex/dex, resid sigma 0.278 (robust 0.197), rho_s = +0.512 (perm p 5.0e-05)
+   eps0 (MOND) : k = +0.086 dex/dex, resid sigma 0.167 (robust 0.133), rho_s = +0.451 (perm p 5.0e-05)
+
+==============================================================================
+B2. R4 FOR TREATMENT B: is the co-fit eps0 anything other than what MOND induces?
+==============================================================================
+   log(eps0_data / eps0_MOND): median +0.000, sigma 0.297, robust 0.205 dex
+   Spearman(eps0_data, eps0_MOND) = +0.458 (perm p 5.0e-05)
+   joint OLS log eps0_data = a + b log eps0_MOND + c log M:  b = +0.397 [+0.152,+0.623]   c = +0.136 [+0.083,+0.191]
+   resid sigma: M only 0.278;  eps0_MOND only 0.293;  joint 0.271
+   permutation p(|c| >= obs) = 0.000
+
+   rho_c: Spearman(rho_c,data, rho_c,MOND) = +0.561;  same edge class for 71% of galaxies
+   residual (eps0_data | eps0_MOND) vs log B_req,last: rho_s = -0.363;  vs log M: +0.332
+
+total 1541s

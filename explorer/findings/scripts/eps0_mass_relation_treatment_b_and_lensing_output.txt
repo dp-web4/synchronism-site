@@ -1,0 +1,60 @@
+==============================================================================
+S1. does the uniform-boost reading of treatment B hold?
+==============================================================================
+   top-edge galaxies (rho_c >= 30 Msun/pc^3): 90/153 = 59%
+   log(eps0_uniform,data / eps0_cofit) on top-edge: median +0.117, robust sigma 0.141 dex, max |.| 1.340
+   (grid spacing of the 08-30 E2 eps0 grid ~0.1-0.15 dex; agreement within that = same object)
+   all galaxies: Spearman(eps0_uniform,data, eps0_cofit) = +0.528
+
+==============================================================================
+S2. TREATMENT-B R4: is the co-fit eps0 anything other than what MOND induces?
+==============================================================================
+
+   [top-edge subset, n=90]
+   log(eps0_cofit / eps0_MOND,uniform): median -0.155, sigma 0.242, robust 0.152 dex
+   Spearman(eps0_cofit, eps0_MOND,uniform) = +0.643 (perm p = 5.0e-05)
+   Spearman(eps0_MOND,uniform, log M) = +0.748 (perm p = 5.0e-05)   <- MOND-induced mass relation, uniform-boost form
+   resid sigma about M only 0.223 (robust 0.165);  about eps0_MOND only 0.233 (robust 0.159);  joint 0.222 (robust 0.164)
+   joint: b(eps0_MOND) = +0.232 [-0.140,+0.550]   c(log M) = +0.137 [+0.050,+0.252]
+
+   [all galaxies, n=153]
+   log(eps0_cofit / eps0_MOND,uniform): median -0.148, sigma 0.291, robust 0.213 dex
+   Spearman(eps0_cofit, eps0_MOND,uniform) = +0.511 (perm p = 5.0e-05)
+   Spearman(eps0_MOND,uniform, log M) = +0.740 (perm p = 5.0e-05)   <- MOND-induced mass relation, uniform-boost form
+   resid sigma about M only 0.278 (robust 0.197);  about eps0_MOND only 0.286 (robust 0.214);  joint 0.276 (robust 0.208)
+   joint: b(eps0_MOND) = +0.293 [+0.008,+0.574]   c(log M) = +0.121 [+0.049,+0.196]
+
+==============================================================================
+S3. permutation null for the 09-01 partial slope c (log M | eps0_MOND), treatment A
+==============================================================================
+   c = +0.110;  permutation p(|c| >= obs) = 0.099;  null sigma(c) = 0.066
+   b = +0.750;  permutation p(|b| >= obs | M already in) = 5.0e-05
+
+==============================================================================
+S4. what the class fitted to DATA knows that the class fitted to MOND does not
+==============================================================================
+   observable         rho_s(eps0_data - eps0_MOND)   perm p
+   log M_bar                                +0.262  1.0e-03
+   log g_bar,last                           +0.169  3.8e-02
+   log B_req,last                           -0.566  2.0e-04
+   log R_last/R_d                           +0.005  9.5e-01
+   log Sigma_eff                            +0.119  1.4e-01
+   log V_flat                               +0.026  7.5e-01
+   log R_d                                  +0.213  1.0e-02
+   log a0 (per gal)                         -0.713  2.0e-04
+   robust sigma of that residual: 0.263 dex;  of log(a0_gal): 0.298 dex
+
+==============================================================================
+S5. the R3 relation against the weak-lensing RAR (Brouwer+2021, KiDS-1000)
+==============================================================================
+   relation: eps0 = 0.1187 (M/1e10)^+0.325   =>   B_max = 1/eps0
+   M_bar = 1e+09: eps0 = 0.056, B_max =  17.81
+   M_bar = 1e+10: eps0 = 0.119, B_max =   8.42
+   M_bar = 1e+11: eps0 = 0.251, B_max =   3.99
+   MOND (simple nu) boost g_obs/g_bar at g_bar:
+      g_bar = 1e-12 m/s^2: nu =    11.5
+      g_bar = 1e-13 m/s^2: nu =    35.1
+      g_bar = 1e-14 m/s^2: nu =   110.0
+      g_bar = 1e-15 m/s^2: nu =   346.9
+   Brouwer+2021 isolated-lens RAR tracks the MOND branch to g_bar ~ 1e-15 (their Fig. 3 / Sect. 5); lenses are M_* ~ 1e10-1e11.
+   ceiling deficit at 1e-14 for a 1e10 lens: 13x;  at 1e-15: 41x

@@ -1,0 +1,17 @@
+4-PARAM CLASS (eps0(M), rho_c(M)) vs 2-PARAM MOND (a0(M))
+   class: eps0 = 0.220 (M/1e10)^+0.000,  rho_c = 1.82e-03 (M/1e10)^-2.972   ->  chi2/N = 81.77
+   ladder: 2 params (eps0, rho_c universal) 126.53  ->  3 params (+eps0(M)) 93.60  ->  4 params (+rho_c(M)) 81.77
+   MOND: 0 params 52.20 (a0 = 1.194e-10 grid) / 52.56 (interp);  2 params a0(M) 52.09 (exact 51.81)
+   ratio class(4)/MOND(2) = 1.57x   (pre-registered R3 pass: <= 1.20)
+   galaxy-level vs MOND (0 params, fixed a0): class(4) median red. chi2 17.85 vs MOND 10.51; class wins 37%; Wilcoxon p = 3.1e-04
+   ceiling at the 4-param relation: B_max(1e9) = 4.5, B_max(1e10) = 4.5, B_max(1e11) = 4.5
+
+TREATMENT-B RESIDUAL: what (eps0_data | eps0_MOND) correlates with
+   log a0 per galaxy        rho_s = -0.267
+   log B_req,last           rho_s = -0.363
+   log M_bar                rho_s = +0.332
+   log rho_c,data           rho_s = +0.135
+   log rho_c,MOND           rho_s = -0.343
+   rho_c,data - rho_c,MOND  rho_s = +0.507
+   rho_c(M) in the co-fit: data k = -1.143 dex/dex (rho_s -0.446);  MOND-induced k = -1.755 (rho_s -0.710)
+   joint with per-galaxy a0:  c(log M) = +0.143 [+0.095,+0.193],  d(log a0) = -0.103 [-0.231,+0.027];  resid sigma 0.270

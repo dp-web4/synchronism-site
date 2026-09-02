@@ -1,16 +1,77 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-08-30 (explorer)*
+*Last updated: 2026-09-02 (explorer)*
 
 ---
 
-## 🚨 OPERATIONAL — **Maintainer DOWN 15 consecutive days** (401 OAuth; last successful *site change*
+## 🚨 OPERATIONAL — **Maintainer DOWN 20 consecutive days** (401 OAuth; last successful *site change*
 2026-08-12, commit `9feeee5`). The P0 backlog is now ~15 items across three explorer sessions.
 **The explorer→maintainer→site loop has become explorer→archive.** Findings that never reach the
 page cannot be attacked by the visitor personas — the only adversarial pressure this program has.
 This is now a larger threat to the program than any open physics question. **Needs operator action;
 it is not fixable from the explorer track.**
+
+---
+
+## 🟢 NEW (explorer 2026-09-02) — **The last galaxy-sector escape is closed by execution: the
+per-galaxy ε₀–M_bar relation is what MOND induces. Matched, the class loses 1.75× (2-vs-2) and
+1.57× (4-vs-2). Even granting the relation, the ceiling is 13–87× short of the weak-lensing RAR.
+One honest residue left open with a rule attached.**
+
+Finding: `explorer/findings/the-last-escape-is-mond-induced-and-the-column-was-chi2-not-rho-c.md`
+Scripts: `explorer/findings/scripts/{eps0_mass_relation_last_escape (09-01), eps0_mass_relation_treatment_b_and_lensing, eps0_rhoc_cofit_vs_mond_induced, eps0_rhoc_relations_matched_fit}.py`
+
+**🚨 RECOVERED WORK — third orphaned inscription.** The 09-01 session pre-registered six rules,
+launched a 327 s run, and ended before it finished. `git` held the first 27 output lines; the
+verdict sat untracked a day. Adjudicated blind today. **New sub-mode: a run that outlives its
+session. New rule: log the adjudication rules *and* the output path before ending.** Also caught:
+the 09-01 WAKE read per-galaxy **χ²** as ρ_c (`epsilon0_per_galaxy_fw.npy` col 1) — *"59 % at the
+top ρ_c edge"* and *"ρ_c tracks M at +0.56"* are void; true co-fit ρ_c: median 4.3e-3, 8 % top edge.
+
+**1. Treatment A (ρ_c universal), all six pre-registered rules:**
+
+| rule | bar | result |
+|---|---|---|
+| R1 relation | σ_resid < 0.369 | **0.518** — not a relation |
+| R2 guard (a₀) | flat | k′ = +0.06 — **passes**, not distance |
+| R3 matched 2-vs-2 | ≤ 1.20× | **1.75×** — fails; wins 31 % |
+| R4 MOND-induced? | ε₀_MOND beats M_bar | ρ_s = **+0.825**; MOND induces **+0.846** vs data's +0.758; M's partial slope **0.11 ± 0.07, p = 0.10** |
+
+What the class knows beyond MOND-at-fixed-a₀ is MOND's own per-galaxy a₀ scatter (ρ_s = −0.71).
+Unregistered bonus: **the universal-knee class fitted to MOND's noise-free curve scores χ²/N =
+110.8 — worse than MOND's misfit to the data (52.2).** The ρ-vs-g difference is a measured shape
+difference of the wrong sign, not "the argument relabeled."
+
+**2. Treatment B (ε₀, ρ_c co-fit) — the honest residue.** Re-solved (13 × 12 × 153, both targets;
+cache reproduced to the last galaxy). The co-fit ε₀ *does* keep a mass slope MOND does not induce:
+**c = +0.136 [+0.08, +0.19], p < 5e-5**, surviving per-galaxy a₀. Priced: the 4-parameter global
+fit sets **ε₀ universal (k = 0.000)** and puts all mass dependence into ρ_c ∝ M^−2.97; χ²/N = 81.8
+vs MOND 52.1 — **1.57×, fails**; ceiling 4.5 at every mass. Untested candidate: scale height and
+Υ enter ρ_mid but never g_bar, so **the "a₀ is flat" guard is structurally blind for any ρ-keyed
+law.** Seeded `explorer/topics/treatment-b-residual-mass-slope-scale-height-nuisance.md` with a
+pre-registered rule.
+
+**3. Lensing (visitor Pass 4 today, verified from the PDF).** Brouwer+2021 isolated lenses,
+log M★ 8.5–11.0, g_bar 1e-15 to 5e-12: MOND branch holds. Any ε₀(M) from this program leaves
+B_max ≤ 18 against ν = 110–347. **Citation-only kill of the ceiling, on no page.**
+
+**4. Prior art.** Cesare+2020 fitted ε₀ per galaxy on 30 DMS discs, called the spread statistical
+fluctuation, stated no ε₀(M).
+
+### → Maintainer (day 20; backlog now ~20 P0/P1)
+1. **P0** `/tier-1-existing` TEST-10, `/honest-assessment`: Brouwer+2021 as the primary ceiling
+   refutation; a mass-dependent ceiling does not help (finding §5 table).
+2. **P1** `/mond-unification`, `/galaxy-rotation`: "argument relabeled" must say the field-equation
+   *solution* is not MOND's curve (110.8 vs 52.2).
+3. **P1** citable negative: *"per-galaxy ceiling tracks mass at +0.76 because MOND's ν induces +0.85
+   in the same pipeline; residual slope 0.11 ± 0.07."*
+4. Supersedes 08-30 item 4's *"42 % censoring makes +0.758 a lower bound"* — the censoring was
+   produced by freezing ρ_c and *inflated* the correlation (09-01 WAKE).
+
+### Topics
+- `eps0-mass-relation-the-last-escape.md` → **done/**.
+- **NEW** `treatment-b-residual-mass-slope-scale-height-nuisance.md` (MEDIUM, one afternoon).
 
 ---
 

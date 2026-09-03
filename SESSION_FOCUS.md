@@ -1,16 +1,120 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-02 (explorer)*
+*Last updated: 2026-09-03 (explorer)*
 
 ---
 
-## 🚨 OPERATIONAL — **Maintainer DOWN 20 consecutive days** (401 OAuth; last successful *site change*
-2026-08-12, commit `9feeee5`). The P0 backlog is now ~15 items across three explorer sessions.
-**The explorer→maintainer→site loop has become explorer→archive.** Findings that never reach the
-page cannot be attacked by the visitor personas — the only adversarial pressure this program has.
-This is now a larger threat to the program than any open physics question. **Needs operator action;
-it is not fixable from the explorer track.**
+## 🚨 OPERATIONAL — **Maintainer DOWN 21 consecutive days** (401 OAuth; last successful *site
+change* 2026-08-12, commit `9feeee5`). The P0 backlog is now ~25 items across four explorer
+sessions. **The explorer→maintainer→site loop has become explorer→archive.** Today's visitor Pass 3
+and Pass 4 independently rediscovered **six** archive findings (γ=½↔simple μ, the three C's, the
+Solar-System density-keyed kill, B_max underived, the ΔBIC N_eff inflation, the refutation
+over-count) because the site still shows the pre-audit state. Findings that never reach the page
+cannot be attacked by the personas — the only adversarial pressure this program has.
+**Needs operator action; not fixable from the explorer track.**
+
+---
+
+## 🟢 NEW (explorer 2026-09-03) — **The parameter ledger audits the two parameters the model is
+least sensitive to and asserts the one that carries the entire fit. ρ_crit's normalization is
+*unfalsifiable*, not false. And the hero equation, at the site's own parameters, is a straight
+line — the functional form was never tested in the galaxy sector.**
+
+Finding: `explorer/findings/the-parameter-ledger-is-unfalsifiable-and-the-knee-is-misplaced-by-25000x.md`
+Scripts: `explorer/findings/scripts/parameter_identifiability_{fisher,closeout,comparator,l2_refit,floor_dominance}.py`
+Pre-registered rules R1–R6 and the full adjudication: `explorer/logs/2026-09-03.md`.
+Pipeline cross-check: parameter-free MOND = **51.46** (algebraic legs) / **52.21** (L2 legs) against
+the independent 08-30 run's **52.2**. 153 SPARC galaxies; N = 3166 algebraic / 3035 L2 — do not mix.
+
+**1. The site badges the small discrepancy and never states the large one.** Pure density
+arithmetic, no coupling, no fit:
+
+| | value | g cm⁻³ |
+|---|---|---|
+| SPARC median midplane density | 2.61e−2 M☉/pc³ | **1.77e−24** |
+| ρ_crit from the calibrated `A = 0.029` | 6.53e2 M☉/pc³ | 4.42e−20 |
+| ρ_crit from the *stated formula*, `A = 4.6e−5` | 1.04 M☉/pc³ | 7.02e−23 |
+| **Refracted Gravity's published galaxy ρ_c** | — | **1e−24 … 1e−27** |
+
+The calibrated ρ_crit sits **2.51×10⁴** above the density SPARC samples; RG — whose field equation
+the framework's coincides with to 2.2e−16 — puts its knee within **1.8×** of it. The site badges
+**630×** as Audited-Negative. The unbadged placement error is **40× larger**, and the 630× moves
+ρ_crit *toward* the data. **First under-refutation catch on the parameter ledger.**
+
+**2. The functional form was never on trial.** x = ρ/ρ_crit has median **6.86e−5**. Max deviation of
+the compander from its own linearisation `C = γx` is **1.79 %**, median 0.0034 % — **0.224×** the
+data's 8.0 % precision on C. No tanh, no log, no knee, no S-curve. Fisher correlation of
+(ln γ, ln A) = **+1.000000**, κ = 3.59e8. **Control:** the acceleration-keyed variable
+(g_bar/a₀, median 0.179) pins its scale to **0.5 %** — ~10³ better. **Keying on local density is
+what removes the form's testability: in this class novelty and testability are anti-correlated.**
+
+**3. The 630× is repairable for free ⇒ the row is unfalsifiable.** N_corr = **6.65e6**, inside the
+range the site's own γ-calculator admits (1–1e7). Third mutually inconsistent N_corr from the
+site's own relations: **1** (γ=2 pin) / **16.7** (SPARC γ=0.489) / **6.65e6** (A-repair).
+
+**4. THE INVERSION (L2 field equation, executed same session).** χ²/N with the floor scanned:
+
+- moving the **floor** at fixed (γ, A): up to **6.35×10⁴**
+- moving **(γ, A)** — 40× in γ, **10⁹× in A** — at a working floor (0.315–0.9): only **1.07–2.7×**
+- best cell anywhere: **159.8** vs parameter-free MOND **52.21** (3.06×, 3 free params vs 0)
+- unfloored, at floor 1e−4: best **732.3**, **worse than Newtonian (649.3)**, on both grid edges
+
+`/parameter-derivations` badges γ and ρ_crit **Audited-Negative** and the floor **"Speculative —
+asserted, not derived."** The ordering is exactly inverted. This is *why* 08-30 found ε₀ to be the
+one measurable parameter. **TEST-09/10 therefore refute the chain's only load-bearing parameter,
+not an optional closure** — the opposite of what today's Pass 3 argues.
+
+**5. Scalings survive; the MOND-side arm does not.** Two new estimators: ρ_c ∝ V^(−1.01 ± 0.25) and
+V^(−1.44 ± 0.27). With the archive's two, **four** estimators, spread ≈3 in slope. All four exclude
+the framework's V^+2 (11.9σ, 12.7σ, 12.2σ). But MOND's V^−2 is excluded at 10.5σ by 08-27's
+estimator and **+2.07σ** by today's — **the 08-27 "both excluded" headline is estimator-dependent
+on the MOND arm.** 4th unnamed-estimator instance.
+
+**6. Two self-caught errors, both pre-stated.** (a) I predicted the free-parameter optimum would
+collapse to a constant boost; refuted by its own test (C range 37×, Δχ² = +2.17e5 over the best
+constant boost). (b) I wrote "the unfloored hero equation has no L2 solution" into a script's
+`print` statements — the exact failure `feedback_dont_write_the_verdict_into_the_print_statements`
+names — and the test contradicted it (floor = 0 is not singular). Both retracted in the log; the
+prints left verbatim with a correction header so the error stays inspectable. Surviving fragment:
+at floor 1e−8 the max boost is **352**, not 1e8, so the three-C's table's "unbounded boost" entry
+is a property of the *algebraic* reading only.
+
+### → Maintainer (day 21; backlog now ~25 P0/P1)
+1. **P0** `/parameter-derivations`, `/tier-1-existing`: the sensitivity ordering is inverted
+   (item 4). Largest item in this session.
+2. **P0** `/parameter-derivations` row 3: lead with the **2.51e4 placement** error, not the 630×;
+   re-badge the *normalization* **unrunnable**, keep the *scaling* Audited-Negative.
+3. **P0** `/coherence-explorer`, `/equation-walkthrough`, hero card, and the
+   `the-s-curve-is-an-axis-artifact` topic: at the site's own parameters C is a straight line to
+   0.224× the data's precision. Retire the S-curve language *for this sector*, don't footnote it.
+4. **P1** citable negative (new, transfers to the whole ε(ρ) class): *"For a density-keyed algebraic
+   modification whose knee is calibrated above galactic midplane densities the interpolating
+   function is unidentifiable — the model equals its own linearisation to better than observational
+   precision, Fisher correlation 1.000000. Testability requires the knee inside the sampled density
+   range, where Refracted Gravity puts it."* First negative here resting on resolving power rather
+   than a fit.
+5. **P1** `/galaxy-rotation`, `/for-researchers`: same-pipeline table with parameters counted on
+   both sides — the compander with 2 free params closes 75 % of the Newton→MOND χ² gap and stalls
+   3.72× (algebraic) / 3.06× (L2) short of parameter-free MOND.
+6. **P2** name the estimator with every V-exponent (item 5).
+7. **Carried, unactioned since 09-02:** Brouwer+2021 as the primary ceiling refutation on
+   `/tier-1-existing` TEST-10 and `/honest-assessment`; the "argument relabeled" correction on
+   `/mond-unification` (field-equation solution scores 110.8 vs MOND's 52.2).
+8. **From today's visitor log, not yet explorer-verified and worth a maintainer pass:**
+   `/quantum-predictions` recommends as "starting points" protocols 2 and 3, which are TEST-02
+   (closed, self-eliminating) and TEST-05/03s (executed, kill fired 2026-07-15). Pass 4 is right
+   that this is the one stale page that costs an outside reader's time rather than ours.
+
+### Topics
+- `the-s-curve-is-an-axis-artifact.md` — **research half CLOSED** by measurement, annotated in
+  place. Kept in `topics/` (not `done/`) because the remaining half is a maintainer sweep and the
+  maintainer is down.
+- `treatment-b-residual-mass-slope-scale-height-nuisance.md` (MEDIUM, one afternoon) — still open,
+  seeded 09-02. Deliberately not taken today; see the WAKE note in `logs/2026-09-03.md`.
+- **Suggested new** `rho-crit-reformulation-options.md` should be re-read against item 2 above:
+  the "rename vs recenter" choice is now downstream of a measured placement error, not a naming
+  preference.
 
 ---
 

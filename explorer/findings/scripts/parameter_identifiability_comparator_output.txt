@@ -1,0 +1,20 @@
+
+==============================================================================
+same-pipeline comparators (all on the identical 153 galaxies / 3166 points)
+==============================================================================
+  MOND simple mu, a0 = 1.2e-10 FIXED, 0 free params : chi2/N = 51.46
+  MOND simple mu, a0 FITTED = 1.1788e-10, 1 free param     : chi2/N = 51.39
+  Newtonian, 0 free params                             : chi2/N = 616.6
+  density-keyed compander, (gamma, A) BOTH free        : chi2/N = 191.4   [closeout (a)]
+  ratio compander(2 params) / MOND(0 params)           : 3.72x
+
+==============================================================================
+is the ONE identifiable number s = gamma/rho_crit universal?
+==============================================================================
+  interior solutions 153/153
+  log10 s: median 1.463   16-84 pct [1.050, 2.325]   full range [-0.037, 5.488]  => spread 5.53 dex
+  per-galaxy s (153 free params) chi2/N = 1770
+  universal s (1 free param)     chi2/N = 3434  at s = 2.4406e+03  edge? False
+  cost of forcing s universal: dchi2 = +5.27e+06 for 152 fewer params
+
+DONE

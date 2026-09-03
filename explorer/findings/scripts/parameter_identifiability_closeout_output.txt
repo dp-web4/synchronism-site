@@ -1,0 +1,46 @@
+galaxies 153   points 3166
+
+==============================================================================
+(a) profile with a gamma grid wide enough that nothing sits on an edge
+==============================================================================
+  gamma grid [1.0e-06, 1.0e+06], A grid [1.0e-14, 1.0e+02]
+  global min chi2 = 605933  (chi2/N = 191.4)  at A = 2.5119e-11, gamma = 5.0119e-02
+  A on grid edge? False   gamma on grid edge? False
+  A_cal   = 0.029 : chi2 = 3.28139e+06  (chi2/N 1036.4)  at gamma_hat = 1.0000e+06   edge? True
+  A_stated= 4.6e-5: chi2 = 1.94199e+06  (chi2/N 613.39)  at gamma_hat = 6.3096e+04   edge? False
+
+==============================================================================
+(b) the honest distance statement -- the model is rejected everywhere, so quote FACTORS
+==============================================================================
+  data-preferred A          : 2.5119e-11
+  site's calibrated A       : 2.9000e-02   -> factor 1.155e+09x above data-preferred
+  site's stated-formula A   : 4.6000e-05   -> factor 1.831e+06x above data-preferred
+  the discrepancy the site BADGES (calibrated vs stated): factor 630.4x
+  ratio of the two discrepancies: 1.831e+06x
+  best-fit chi2/N = 191.4  -> the model is rejected at the optimum,
+  so no dchi2=1 interval on A is interpretable; the factor above is the statement.
+
+==============================================================================
+(c) at the optimum, how much does C actually vary?  vs a 1-parameter constant boost
+==============================================================================
+  x at optimum: median 7.916e+04  p1 22.15  p99 5.749e+06
+  C at optimum: min 0.0190  median 0.5119  max 0.7059   -> dynamic range 37.0875x
+  boost 1/C   : min 1.4166  median 1.9535  max 52.5369
+  1-parameter constant boost: best B = 2.0920  chi2 = 823171  (chi2/N 260)
+  2-parameter compander     : chi2 = 605933  (chi2/N 191.39)
+  dchi2 (constant - compander) = +2.172e+05 for 1 extra parameter;  dBIC = +2.172e+05 (N=3166)  /  dBIC_Neff = +2.172e+05 (N_eff=153)
+  0-parameter Newtonian (B=1): chi2 = 1.95225e+06  (chi2/N 616.63)
+
+==============================================================================
+(d) R6 robustness -- rho_crit V-exponent from a SECOND estimator
+==============================================================================
+  estimator 2: per-galaxy rho_c with the FULL tanh, gamma FIXED at 0.489, division coupling
+  interior solutions: 153/153
+  d log10 rho_crit / d log10 V_flat = -1.4404 +/- 0.2700   scatter 0.915 dex
+  framework's V^+2 : deviation -12.74 sigma
+  MOND-side  V^-2  : deviation +2.07 sigma
+  estimator 1 (parent script, linear-C slope s = gamma/rho_c):
+     d log10 s / d log10 V = +1.008 +/- 0.253  =>  rho_c ~ V^-1.008 at fixed gamma
+  archive estimators: 08-27 rho_c ~ V^(-0.15 +/- 0.18);  plotter profile V^(+1.52)
+
+DONE

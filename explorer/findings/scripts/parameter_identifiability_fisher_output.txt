@@ -1,0 +1,76 @@
+galaxies kept 153   points 3166
+
+==============================================================================
+FACT 1 -- the x = rho/rho_crit distribution under the framework's own prescription
+==============================================================================
+A_cal   = 0.029  (propagated):  x median 6.857e-05  p90 7.219e-04  p99 4.980e-03  max 3.587e-02
+                              C(gamma=0.489) median 3.353e-05  max 1.723e-02   =>  boost 1/C median 2.98e+04
+A_stated= 4.6e-5 (formula):  x median 4.323e-02  p90 4.551e-01  p99 3.140e+00  max 2.261e+01
+                              C(gamma=0.489) median 2.069e-02  max 9.131e-01   =>  boost 1/C median 48.3
+median fractional error on Vobs: 4.00 %
+
+==============================================================================
+R3 -- is the tanh-log FORM distinguishable from its own linearisation C = gamma*x?
+==============================================================================
+  registered rule: ratio (max relative deviation) / (observational precision on C) < 1
+  observational precision on C: C enters V as V ~ C^-1/2, so sigma(C)/C = 2*sigma(V)/V
+  A_cal    : max |C_exact - gamma x|/C_exact = 1.793e-02   median 3.428e-05   ratio to precision 0.224
+  A_stated : max |C_exact - gamma x|/C_exact = 1.111e+01   median 2.161e-02   ratio to precision 138.859
+  (precision on C = 0.080)
+
+==============================================================================
+R1 -- Fisher condition number in (ln gamma, ln A), pooled
+==============================================================================
+  V_pred^2 = R g_bar / C  =>  dlnV/dtheta = -0.5 dlnC/dtheta
+  weight w_i = (Vobs_i/eVobs_i)^2   (evaluated at Vpred ~ Vobs, standard)
+  A_cal   = 0.029: eig 1.7680e-02 6.3391e+06   kappa = 3.5855e+08
+                     marginal sigma(ln A) = 5.318  -> factor 204x ;  sigma(ln gamma) = 5.318 ;  corr = +1.000000
+  A_stated= 4.6e-5: eig 1.7715e+03 6.1984e+06   kappa = 3.4989e+03
+                     marginal sigma(ln A) = 0.01697  -> factor 1.017x ;  sigma(ln gamma) = 0.01663 ;  corr = +0.999428
+
+==============================================================================
+R2' -- DIRECT absorption test: is (gamma/630, A_stated) the same prediction as (gamma, A_cal)?
+==============================================================================
+  A_stated/A_cal = 1.5862e-03  ->  absorbing shift gamma -> gamma*1.5862e-03
+  max |dV|/V = 1.6506e+00   median 1.0656e-02   (observational precision 4.0000e-02)
+  points where |dV|/V exceeds that point's own eVobs/Vobs: 655 / 3166
+  chi^2 distance between the two parameter sets: 2.709e+07  over 3166 points
+
+==============================================================================
+R2 -- profile likelihood: 1-sigma factor range on A with gamma FREE
+==============================================================================
+  global min chi^2 = 606795  (chi2/N = 191.7)  at A = 1.9953e-11, gamma = 4.8697e-02
+  1-sigma (dchi2=1): A in [1.995e-11, 1.995e-11]  -> factor 1x
+  3-sigma (dchi2=9): A in [1.995e-11, 1.995e-11]  -> factor 1x
+  chi^2 at the two audited points, gamma profiled:
+    A_cal   = 0.029: chi^2 = 1.02066e+11  (dchi2 vs global +1.021e+11)  at gamma = 3.1623e+01
+    A_stated= 4.6e-5: chi^2 = 1.33744e+08  (dchi2 vs global +1.331e+08)  at gamma = 3.1623e+01
+
+==============================================================================
+R4 -- CONTROL: same audit for the ACCELERATION-keyed C(g_bar/a0)
+==============================================================================
+  C = tanh(gamma ln(1 + g_bar/(k a0))), same division coupling.
+  g_bar/a0: median 0.179  p10 0.031  p90 3.011   (compare x_rho median above)
+  k = 1.0: kappa = 1.8057e+02   sigma(ln k) = 0.004605 -> factor 1.005x  corr = +0.988735
+  k = 2.0: kappa = 2.9554e+02   sigma(ln k) = 0.005484 -> factor 1.005x  corr = +0.993184
+
+==============================================================================
+R5 -- the free-repair arithmetic: gamma = 2/sqrt(N_corr)
+==============================================================================
+  gamma = 0.489          -> N_corr = 16.73   (the SPARC fit)
+  gamma = 7.7566e-04  -> N_corr = 6.648e+06   (absorbing A -> 4.6e-5)
+  site's gamma-calculator admits N_corr in [1, 1e7]:  repair inside range? True
+  gamma = 2.0 (the framework's original pin) -> N_corr = 1
+
+==============================================================================
+R6 -- the identifiable combination gamma/rho_crit: what V-exponent does the data want?
+==============================================================================
+  per-galaxy fit of the single identifiable slope s = gamma/rho_crit (linear C = s*rho),
+  then regress ln s on ln V_flat.  Framework: gamma universal & rho_c ~ V^2 => s ~ V^-2.
+  N galaxies with an interior solution: 153
+  d log10 s / d log10 V_flat = +1.0079 +/- 0.2529
+  framework predicts -2 :  deviation +11.89 sigma
+  MOND-side  predicts +2 :  deviation -3.92 sigma
+  scatter of log10 s about the fit: 0.857 dex
+
+DONE

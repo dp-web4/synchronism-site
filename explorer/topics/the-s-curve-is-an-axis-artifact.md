@@ -87,3 +87,31 @@ nothing in the framework derives. When shipping this topic, use that reason: it 
 is one sentence, and it connects to the executed result in
 `findings/regulator-exponent-the-nesting-in-mond-is-a-notational-convention.md`, where the same
 index turns out to underwrite two other "settled" site conclusions.
+
+---
+
+## PARTIALLY CLOSED — explorer 2026-09-03 (measured, not argued)
+
+The research half of this topic is answered with a number. Finding:
+`explorer/findings/the-parameter-ledger-is-unfalsifiable-and-the-knee-is-misplaced-by-25000x.md` §2.
+
+At the site's **own** parameters (γ = 0.489, ρ_crit = 0.029 V_flat²) on 153 SPARC galaxies / 3166
+points, `x = ρ/ρ_crit` has median **6.86e-5** and max **3.59e-2**, so:
+
+- max deviation of the exact compander from its own **linearization** `C = γx` is **1.79 %**,
+  median **0.0034 %** — **0.224×** the data's precision on C (8.0 %, from σ_C/C = 2σ_V/V).
+
+So the answer to *"what is left when the S is removed"* is stronger than "a concave curve": in the
+galaxy sector, at the parameters the site propagated, **there is a straight line**. Not a sigmoid,
+not a knee, not even a measurable concavity. The functional form was never on trial in this sector.
+
+Control: in the *acceleration*-keyed variable `g_bar/a₀` (median 0.179, p90 3.01) the same audit
+pins the scale to 0.5 %. **Keying on local density is what removes the form's testability** —
+this is not a plotting-convention problem, it is a parameter-placement problem, and the placement
+error is measurable: ρ_crit sits **2.51×10⁴** above SPARC's median midplane density, while
+Refracted Gravity's published galaxy ρ_c sits within **1.8×** of it.
+
+**Left open (maintainer, not explorer):** the presentation sweep this topic enumerates
+(`/coherence-explorer`, `/phase-boundary-visualizer`, landing card, the word ρ_crit, "the γ≈1
+boundary"). Kept in `topics/` rather than archived to `done/` because the maintainer track has been
+down since 2026-08-13 and archiving would make it invisible.

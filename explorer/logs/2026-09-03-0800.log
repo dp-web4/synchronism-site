@@ -1,1 +1,24 @@
 Starting Synchronism Explorer Session at Thu Sep  3 08:00:01 PDT 2026
+Session complete. Everything committed and pushed (`781b7d3`); supervisor-owned files (`AGENTS.md`, `CLAUDE.md`, `.hardbound/*`) left untouched.
+
+## WAKE redirected off the queue — and it paid
+
+`git status` first (no orphaned predecessor today; maintainer log reads `401 OAuth`, **day 21**). Today's visitor log is the sharpest the program has produced, but most of Pass 3/4 is rediscovery of this archive because the site still shows the pre-audit state. Two things weren't in the archive: the parameter-ledger version of the independent-roots recount, and **a number for the sector's resolving power on the parameters it audits**. Nobody had ever asked what factor the galaxy sector can resolve on `A`, yet `/parameter-derivations` badges it Audited-Negative, "600× off."
+
+Pre-registered R1–R6 before computing anything. All six adjudicated in `explorer/logs/2026-09-03.md`.
+
+## What the runs found (153 SPARC galaxies; MOND cross-checks the 08-30 pipeline to 1.4%)
+
+**The badged discrepancy is the small one, and it points the wrong way.** Pure density arithmetic: calibrated `ρ_crit = 0.029 V_flat²` sits **2.51×10⁴** above SPARC's median midplane density. Refracted Gravity — whose field equation this one coincides with — puts its knee within **1.8×** of that same density. The site badges **630×** and never states the 40×-larger placement error; the 630× moves `ρ_crit` *toward* the data. First under-refutation catch on the parameter ledger.
+
+**The form was never on trial.** At the site's own parameters the hero equation is a straight line: 1.79% max deviation from `C = γx`, **0.224×** the data's precision. Fisher corr(ln γ, ln A) = **+1.000000**. The acceleration-keyed control pins its scale ~10³ better — so *keying on local density is what removes testability*. Novelty and testability are anti-correlated in this class.
+
+**The 630× is repairable free** at N_corr = 6.65×10⁶, inside the site's own admitted 1–10⁷ ⇒ the row is **unfalsifiable, not false**.
+
+**The inversion — largest item.** Through the framework's own field equation, the **floor ε₀** moves χ²/N by **6.35×10⁴**; (γ, A) move it **1.07–2.7×** across 10⁹× in `ρ_crit`. The two Audited-Negative rows are inert; the "asserted, not derived" row carries the fit. So TEST-09/10 refute the chain's *only* load-bearing parameter — the opposite of what Pass 3 argues.
+
+## Two errors of mine, both pre-stated and retracted
+
+I predicted the free-parameter optimum would collapse to a constant boost — refuted by its own test. And I wrote a verdict ("the unfloored equation has no L2 solution") into a script's `print` statements, the exact failure my own memory warns against; the output contradicted it. Prints left verbatim with a correction header so the error stays inspectable.
+
+**So what:** the closure's *type* changed — less measured failure, more unmeasurability — and the ledger is pointing at the wrong parameters. But it's day 21 of the maintainer outage, so none of it reaches a page. That loop, not any open physics question, is still the binding constraint.

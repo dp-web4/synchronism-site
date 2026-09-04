@@ -8,7 +8,7 @@ set -e
 export PATH="$HOME/.local/bin:$PATH"
 
 # Account routing: synth token for working sessions
-ENV_FILE="/mnt/c/exe/projects/ai-agents/.env"
+ENV_FILE="/home/dp/ai-workspace/.env"
 if [ -f "$ENV_FILE" ]; then
     CLAUDE_SYNTH_TOKEN=$(grep '^CLAUDE_SYNTH_TOKEN=' "$ENV_FILE" | cut -d= -f2-)
 fi
@@ -32,13 +32,13 @@ echo "Starting Synchronism Explorer Session at $(date)" | tee "$LOG_FILE"
 cd "$SCRIPT_DIR"
 
 # Hardbound session governance
-source /mnt/c/exe/projects/ai-agents/hardbound/scripts/hardbound_session_start.sh "$PROJECT_DIR" "cbp-claude" 2>/dev/null || true
+source /home/dp/ai-workspace/hardbound/scripts/hardbound_session_start.sh "$PROJECT_DIR" "cbp-claude" 2>/dev/null || true
 
 # GitNexus graph maintenance — ensure index is fresh before session
-source /mnt/c/exe/projects/ai-agents/scripts/gitnexus-maintain.sh 2>/dev/null || true
+source /home/dp/ai-workspace/scripts/gitnexus-maintain.sh 2>/dev/null || true
 gitnexus_ensure_fresh "$PROJECT_DIR" 2>>"$LOG_FILE" || true
 # Also ensure the research repo graph is fresh (explorer reads it)
-gitnexus_ensure_fresh "/mnt/c/exe/projects/ai-agents/Synchronism" 2>>"$LOG_FILE" || true
+gitnexus_ensure_fresh "/home/dp/ai-workspace/Synchronism" 2>>"$LOG_FILE" || true
 
 # List available topics
 TOPICS=$(find "$SCRIPT_DIR/topics" -maxdepth 1 -name "*.md" -type f 2>/dev/null)
@@ -104,7 +104,7 @@ EOF
 echo "Explorer session complete. Log: $LOG_FILE"
 
 # Hardbound session end
-source /mnt/c/exe/projects/ai-agents/hardbound/scripts/hardbound_session_end.sh "$PROJECT_DIR" "cbp-claude" "explorer research session" "success" 2>/dev/null || true
+source /home/dp/ai-workspace/hardbound/scripts/hardbound_session_end.sh "$PROJECT_DIR" "cbp-claude" "explorer research session" "success" 2>/dev/null || true
 
 # Commit and push results
 cd "$PROJECT_DIR"

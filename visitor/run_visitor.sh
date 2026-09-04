@@ -9,7 +9,7 @@ set -e
 export PATH="$HOME/.local/bin:$PATH"
 
 # Account routing: synth token for working sessions
-ENV_FILE="/mnt/c/exe/projects/ai-agents/.env"
+ENV_FILE="/home/dp/ai-workspace/.env"
 if [ -f "$ENV_FILE" ]; then
     CLAUDE_SYNTH_TOKEN=$(grep '^CLAUDE_SYNTH_TOKEN=' "$ENV_FILE" | cut -d= -f2-)
 fi
@@ -29,7 +29,7 @@ echo "Starting Synchronism Visitor Track for $DATE — 4 passes"
 cd "$SCRIPT_DIR"
 
 # Hardbound session governance
-source /mnt/c/exe/projects/ai-agents/hardbound/scripts/hardbound_session_start.sh "$PROJECT_DIR" "cbp-claude" 2>/dev/null || true
+source /home/dp/ai-workspace/hardbound/scripts/hardbound_session_start.sh "$PROJECT_DIR" "cbp-claude" 2>/dev/null || true
 
 # Write log header
 cat > "$LOG_FILE" << HEADER
@@ -184,7 +184,7 @@ PASS4_PROMPT
 echo "All 4 passes complete. Log: $LOG_FILE"
 
 # Hardbound session end
-source /mnt/c/exe/projects/ai-agents/hardbound/scripts/hardbound_session_end.sh "$PROJECT_DIR" "cbp-claude" "visitor 4-pass browse" "success" 2>/dev/null || true
+source /home/dp/ai-workspace/hardbound/scripts/hardbound_session_end.sh "$PROJECT_DIR" "cbp-claude" "visitor 4-pass browse" "success" 2>/dev/null || true
 
 # Commit and push results
 cd "$PROJECT_DIR"

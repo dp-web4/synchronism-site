@@ -8,7 +8,7 @@ set -e
 export PATH="$HOME/.local/bin:$PATH"
 
 # Account routing: admin token for maintainer sessions
-ENV_FILE="/mnt/c/exe/projects/ai-agents/.env"
+ENV_FILE="/home/dp/ai-workspace/.env"
 if [ -f "$ENV_FILE" ]; then
     CLAUDE_ADMIN_TOKEN=$(grep '^CLAUDE_ADMIN_TOKEN=' "$ENV_FILE" | cut -d= -f2-)
 fi
@@ -30,10 +30,10 @@ echo "Starting Synchronism Maintainer Session at $(date)" | tee "$LOG_FILE"
 cd "$SCRIPT_DIR"
 
 # Hardbound session governance
-source /mnt/c/exe/projects/ai-agents/hardbound/scripts/hardbound_session_start.sh "$PROJECT_DIR" "cbp-claude" 2>/dev/null || true
+source /home/dp/ai-workspace/hardbound/scripts/hardbound_session_start.sh "$PROJECT_DIR" "cbp-claude" 2>/dev/null || true
 
 # GitNexus graph maintenance — ensure index is fresh before session
-source /mnt/c/exe/projects/ai-agents/scripts/gitnexus-maintain.sh 2>/dev/null || true
+source /home/dp/ai-workspace/scripts/gitnexus-maintain.sh 2>/dev/null || true
 gitnexus_ensure_fresh "$PROJECT_DIR" 2>>"$LOG_FILE" || true
 
 # Check for fresh visitor feedback
@@ -82,7 +82,7 @@ EOF
 echo "Maintainer session complete. Log: $LOG_FILE"
 
 # Hardbound session end
-source /mnt/c/exe/projects/ai-agents/hardbound/scripts/hardbound_session_end.sh "$PROJECT_DIR" "cbp-claude" "maintainer session" "success" 2>/dev/null || true
+source /home/dp/ai-workspace/hardbound/scripts/hardbound_session_end.sh "$PROJECT_DIR" "cbp-claude" "maintainer session" "success" 2>/dev/null || true
 
 # Commit and push results (maintainer may have changed src/ files too)
 cd "$PROJECT_DIR"

@@ -1,1 +1,20 @@
 Starting Synchronism Maintainer Session at Sat Sep  5 06:00:01 PDT 2026
+Session complete. Site changes are built, committed, and pushed (commit `0b9cea1`); two research proposals are committed and pushed to the Synchronism repo (`30693c8f`).
+
+**WAKE outcome.** The researcher persona's feedback did reveal a research gap, not just a site gap. Putting three already-published numbers side by side shows the executed environment null (r² = 1×10⁻⁴) is consistent with C(ρ)'s own predicted lever. What died was S177's registered ">20 %" amplitude, which the equation never implied. That reclassification resolves the three-way root-count drift (2 / 3–4 / 6 across pages) by showing the pages were counting different things. Filed as a proposal because it bears on the count that gates on dp. A second proposal argues the A2ACW specificity arm is uninformative by construction and needs contemporaneous controls.
+
+**Verified before editing.** "Ciocan et al. 2026" exists and is fully cited on Parameter Derivations, which had already revised the verdict to non-discriminating on 08-04. The MOND Unification page was a month stale, not fabricating a reference. The A2ACW page's COBE calibration list appears nowhere in the archive. The "TEST-3" collision and the "6 independent roots" claim were static-fetch parsing artifacts, not source defects, though I reworded the footer so it cannot be misparsed.
+
+**Site changes, all building clean:**
+- New `src/lib/ledger.ts` as the single source for headline numbers. Landing, footer, and Honest Assessment now carry one split: 2 mechanism roots + 1 refuted registration + 1 MOND-inherited + 1 theorem.
+- Honest Assessment: environment row reclassified, "on external data" corrected in three places, TEST-09 gets its ±0.07, a₀(z) added as a not-counted row, "prospective" defined.
+- MOND Unification and Tier 1 now agree on the External Field Effect: the prediction has no live carrier that also fits galaxies.
+- Parameter Derivations: the explorer's 09-03 sensitivity inversion is shipped. The boost ceiling is re-badged Audited-Negative as the one load-bearing parameter. The ρ_crit row leads with the 2.5×10⁴ placement error, states units, and marks the normalization unrunnable.
+- Coherence Explorer default now discloses both deaths (MOND-degenerate and Cassini-excluded) and that the S-shape is a log-axis property.
+- Every badge site-wide is now a click-through to the definitions anchor. Galaxy count aligned to 14,610. Stale Quantum Predictions starting points rewritten. Path labels fixed.
+
+**Seeded for the explorer:** the constant a₀ ∝ c√Λ branch never got the four-anchor treatment branch (A) got, and whether the environment null is in tension with Chae's EFE detection through the Cosmicflows proxy. Both carry pre-registered rules.
+
+**Not done.** The remaining explorer backlog items (Brouwer+2021 as primary ceiling refutation, the same-pipeline χ² table, "argument relabeled" on MOND Unification) and the tech-writer hygiene batch are listed in the session log. The 06:00 runner will keep failing until the weekly cap resets on Sep 7. The fresh workspace root had no npm at all; I bootstrapped it from the registry tarball and saved the recipe to memory.
+
+**So what.** The frame question the outage raises is structural: the personas re-derived six archive findings from the page in 23 days, which proves they do real adversarial work and proves the loop's throughput is bounded by maintainer uptime, not explorer output. A 25-item backlog is a single-worker bottleneck symptom. The fix is a second seat or explorer findings that ship their own diffs, not another day of triage.

@@ -23,7 +23,10 @@ export default function ForResearchers() {
           2 executed tests that discriminated, both of which selected MOND, and 0 that could have
           selected Synchronism</strong> over MOND+EFE+&Lambda;CDM. Those are one sentence because they are
           one fact read two ways, and stating them apart has confused three expert readers: the framework&apos;s
-          galaxy sector is a strict submodel of MOND (see below), so a discriminating test can only tie or lose.
+          galaxy sector is a strict submodel of MOND <em>under the acceleration-keyed C(a) reading</em> (see below;
+          scope added 2026-09-05 &mdash; under the density-keyed C(&#x03C1;) reading that the local-density no-go, the
+          plotter, and the environment test were run against, it is not a submodel but a distinct theory, and that one
+          is refuted), so a discriminating test can only tie or lose.
           The two that discriminated are TEST-09 (3.3σ) and TEST-10 (boost ceiling). (This page said
           &ldquo;0 tests currently discriminating&rdquo; until 2026-07-27, which booked the framework&apos;s two
           strongest empirical results as zero; the bolded line was reunified 2026-08-08.)

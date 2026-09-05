@@ -50,7 +50,7 @@ export const learningPaths: LearningPath[] = [
       { title: 'The γ ≈ 1 Boundary', href: '/gamma-boundary' },
       { title: 'The Hard Problem: A Proposed Reframing', href: '/hard-problem' },
       { title: 'How We Handle Failure', href: '/handling-failure' },
-      { title: 'Top 5 Decisive Tests', href: '/top-5-tests' },
+      { title: 'Decisive Tests: Status (none active)', href: '/top-5-tests' },
     ],
   },
   {
@@ -67,7 +67,7 @@ export const learningPaths: LearningPath[] = [
       { title: 'Superconductivity (η)', href: '/superconductivity' },
       { title: 'Born Rule Derivation', href: '/born-rule' },
       { title: 'Falsifiability', href: '/falsifiability' },
-      { title: 'Test Roadmap (24 experiments)', href: '/test-catalog' },
+      { title: 'Test Roadmap (24 registered + 2 later)', href: '/test-catalog' },
     ],
   },
   {

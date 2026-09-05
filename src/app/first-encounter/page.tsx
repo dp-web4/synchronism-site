@@ -97,7 +97,8 @@ export default function FirstEncounter() {
       </div>
 
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
-        7 short pages &mdash; ~90 seconds each. Use the progress bar to jump to any step.
+        7 short sections on this one page &mdash; ~90 seconds each. (This page is Step 2 of the 6-step Beginner path;
+        the sections below are numbered separately. Use the progress bar to jump between sections.)
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '2rem' }}>
         <strong>New here?</strong> This 10-minute intro is the fastest path to understanding the framework.

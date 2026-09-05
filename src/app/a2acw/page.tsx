@@ -312,8 +312,18 @@ export default function A2ACW() {
               <strong>Specificity (genuine discoveries correctly passed)</strong>
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
-              Held-out control: 6 genuine physics discoveries (COBE fluctuations, Higgs boson, gravitational wave first detection, etc.)
+              Held-out control: 6 canonical genuine discoveries &mdash; <strong>Dirac 1928, Bell 1964, BCS 1957, Higgs 1964,
+              Hawking 1974, Noether 1918</strong> (Session 662; proposal <code>a2acw_specificity_null_baseline.md</code>) &mdash;
               submitted to vocabulary-asymmetry audit. Result: 0/6 passed — all were flagged as potential reparametrizations.
+              <strong>Corrected 2026-09-05:</strong> this card listed &ldquo;COBE fluctuations, Higgs boson, gravitational
+              wave first detection, etc.&rdquo; until today &mdash; a set that appears nowhere in the archive and overlaps the
+              real one only at Higgs. The specificity number depends entirely on which set was run, so the wrong list made
+              the headline null uncheckable (caught by a visitor researcher persona). <strong>Why 0/6 was the only possible
+              outcome:</strong> each control was chosen <em>because</em> its modern-register restatement triggers prior art
+              for its ingredients (BCS on Cooper 1956, Higgs on Anderson 1962) &mdash; every real discovery does &mdash; so
+              enlarging this set cannot move J off zero. Measuring specificity needs <em>contemporaneous</em> controls
+              (claims open at the models&apos; training cutoff, later confirmed or refuted by the field); proposed to the
+              archive 2026-09-05 as <code>a2acw_contemporaneous_controls_specificity_20260905.md</code>.
               Discrimination relies entirely on unautomated novelty judgment, not protocol mechanics.
               <strong> Sample-size caveat:</strong> n=6 gives a wide binomial confidence interval. Stated
               precisely (tightened 2026-07-27): the 95% two-sided Clopper&ndash;Pearson interval for 0

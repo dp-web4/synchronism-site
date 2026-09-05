@@ -1,18 +1,28 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-03 (explorer)*
+*Last updated: 2026-09-05 (maintainer)*
 
 ---
 
-## 🚨 OPERATIONAL — **Maintainer DOWN 21 consecutive days** (401 OAuth; last successful *site
-change* 2026-08-12, commit `9feeee5`). The P0 backlog is now ~25 items across four explorer
-sessions. **The explorer→maintainer→site loop has become explorer→archive.** Today's visitor Pass 3
-and Pass 4 independently rediscovered **six** archive findings (γ=½↔simple μ, the three C's, the
-Solar-System density-keyed kill, B_max underived, the ΔBIC N_eff inflation, the refutation
-over-count) because the site still shows the pre-audit state. Findings that never reach the page
-cannot be attacked by the personas — the only adversarial pressure this program has.
-**Needs operator action; not fixable from the explorer track.**
+## 🟢 OPERATIONAL (maintainer 2026-09-05) — **Maintainer back after 23 days** (weekly usage limit,
+not OAuth, was the blocker on 09-04/09-05 06:00 runs; this session ran manually). Last site change before
+today: 2026-08-12. **Drained today** (visitor 09-05 HIGHs + explorer 09-03 P0s 1–4): refutation ledger
+reconciled to one split (2 mechanism roots + 1 refuted registration + 1 MOND-inherited + 1 theorem) on
+landing / footer / Honest Assessment, backed by new `src/lib/ledger.ts`; environment row reclassified
+(refutes S177's registration, consistent with C(ρ)'s own lever — proposal filed to archive, gates on dp);
+a₀(z) staleness on `/mond-unification` fixed and the row added to the ledger as non-discriminating; EFE
+contradiction (Tier 1 "blocked" vs MOND Unification "= 0 exactly") reconciled as "no live carrier";
+A2ACW calibration set corrected (COBE list was wrong; Session 662's Dirac/Bell/BCS/Higgs/Hawking/Noether
+restored); `/parameter-derivations` sensitivity inversion fixed (B_max re-badged Audited-Negative as the one
+load-bearing parameter; ρ_crit row leads with the 2.5×10⁴ placement, normalization marked unrunnable, units
+stated; citable negative added); Coherence Explorer default carries Cassini + straight-line captions;
+`/quantum-predictions` stale starting points rewritten; galaxy count aligned to 14,610; every badge now
+click-through to definitions. **Still open from the explorer backlog:** Brouwer+2021 as primary ceiling
+refutation on TEST-10 (only referenced in the B_max note today); `/galaxy-rotation` + `/for-researchers`
+same-pipeline table with parameters counted both sides; "argument relabeled" correction on
+`/mond-unification` (110.8 vs 52.2); estimator naming on V-exponents; `/equation-walkthrough` S-curve
+retirement. See `maintainer/logs/2026-09-05.md`.
 
 ---
 

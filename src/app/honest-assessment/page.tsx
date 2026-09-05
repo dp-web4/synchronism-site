@@ -185,10 +185,11 @@ export default function HonestAssessment() {
           imitating MOND — a 40-year-old rival theory that tweaks gravity instead of adding dark matter — and
           never fits better than it. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
           own scoreboard — zero confirmed predictions, <strong>six</strong> executed refutations
-          resting on three to four independent roots. (This sentence read &ldquo;four executed
-          refutations&rdquo; until 2026-08-09 — the pre-recount number, left stale on the page while the
-          header of the same page said six. One count, one place: six executed, 3&ndash;4 roots, classified
-          by kind in the table below.) <strong>Why does the site
+          resting on two framework-specific mechanism roots, plus one refuted registration, one constraint
+          inherited from MOND, and one theorem. (This sentence read &ldquo;four executed
+          refutations&rdquo; until 2026-08-09 and &ldquo;three to four independent roots&rdquo; until 2026-09-05,
+          while the landing page said two &mdash; three visitor personas caught the drift on one day. One count,
+          one split, classified by kind in the table below and imported site-wide from a single source file.) <strong>Why does the site
           still exist?</strong> Because a few of the framework&apos;s core ideas have never been testable with
           existing instruments (untested is not the same as failed), and because this record — a theory testing
           itself in public and publishing every failure — is itself the point. The paragraph below says the
@@ -250,17 +251,23 @@ export default function HonestAssessment() {
         <h2 id="verdict" style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated July 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 0 prospective
-          predictions tested, 6 refutations executed on external data</strong> (astronomical, ephemeris, and
-          laboratory). The sharpest events, in order of decisiveness:
+          predictions tested, 6 refutations executed</strong> &mdash; 5 on external data (astronomical, ephemeris, and
+          laboratory) plus the Bell/CHSH substrate check, which is a theorem executing as designed and is counted as
+          a run, not as data (wording corrected 2026-09-05; this line said &ldquo;6 on external data&rdquo; while the
+          table below classified one of the six as a theorem). &ldquo;Prospective&rdquo; here means the criterion was
+          fixed <em>before the data existed</em>; TEST-09&apos;s registered kill fired on pre-existing SPARC data, so it
+          is registered-retrospective and does not raise the prospective count above 0. The sharpest events, in order
+          of decisiveness:
         </p>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
           <strong style={{ color: '#f59e0b' }}>Read &ldquo;6&rdquo; as executed runs, not independent roots
           (qualified 2026-08-08).</strong> Two of the six (TEST-09, TEST-10) are corollaries of the same
           bounded-boost ceiling B&nbsp;&#8804;&nbsp;1/&#x03A9;<sub>m</sub>, which{' '}
           <Link href="/parameter-derivations" style={{ color: '#f59e0b' }}>Parameter Derivations</Link> badges{' '}
-          <em>Asserted, Not Derived</em> &mdash; so strictly they refute the assertion, and the honest figure for
-          independent empirical roots is <strong>3&ndash;4, not 6</strong> (worked through on{' '}
-          <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>Tier 1</Link>). Three expert visitor passes
+          <em>Asserted, Not Derived</em> &mdash; so strictly they refute the assertion. The honest split (revised
+          2026-09-05 from &ldquo;3&ndash;4 roots&rdquo;) is <strong>2 framework-specific mechanism roots + 1 refuted
+          registration + 1 inherited from MOND + 1 theorem</strong> &mdash; see the classification table below and{' '}
+          <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>Tier 1</Link>. Three expert visitor passes
           have now flagged the footer&apos;s bare &ldquo;6&rdquo; against that body text; the footer now carries the
           qualifier. The two failures that depend on <em>no</em> convention and <em>no</em> data are the
           mass-cancellation no-go and the vacuum divergence &mdash; see{' '}
@@ -385,7 +392,7 @@ export default function HonestAssessment() {
           interpretation, not the condition. Novel-survivor count: <strong>0</strong>.
           The framework produced <strong>47 internal contributions</strong> across ~3,308 sessions &mdash;
           well-posed questions and methodology outputs, zero confirmed novel results.
-          &ldquo;Unconfirmed&rdquo; &ne; &ldquo;wrong&rdquo; &mdash; but the evidence now includes six executed refutations on external data (astronomical, ephemeris, and laboratory) and zero surviving novel predictions.
+          &ldquo;Unconfirmed&rdquo; &ne; &ldquo;wrong&rdquo; &mdash; but the evidence now includes six executed refutations (five on external data &mdash; astronomical, ephemeris, and laboratory &mdash; plus one theorem-level check) and zero surviving novel predictions.
         </p>
       </section>
 
@@ -419,7 +426,7 @@ export default function HonestAssessment() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
           Analyses run with results. A kill-criterion-triggered result appears here, not under &ldquo;What Works&rdquo;
           &mdash; the heading reflects what was <em>attempted</em>, not what succeeded.
-          The site-wide footer count (&ldquo;0 confirmed; 6 refutations executed on external data&rdquo;, recounted
+          The site-wide footer count (&ldquo;0 confirmed; 6 refutations executed&rdquo;, five of them on external data, recounted
           2026-07-30) covers executed refutations across three data types &mdash; astronomical: the RAR
           transition shape (&#x03B3;=2 pinned, &#x0394;BIC=+184), the BTFR slope (TEST-09, registered kill
           fired at 3.3&sigma;, 2026-07-14), dwarf DM fractions (TEST-10 — class exclusion via SPARC&apos;s max
@@ -461,22 +468,28 @@ export default function HonestAssessment() {
                 </tr>
               </thead>
               <tbody style={{ color: 'var(--color-text-secondary)' }}>
-                <tr><td style={{ padding: '0.4rem' }}>TEST-09 BTFR slope 3.35 vs 3.75&plusmn;0.10 (3.3&sigma;)</td><td style={{ padding: '0.4rem' }}>The asserted ceiling B<sub>max</sub></td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>TEST-09 BTFR slope 3.35&plusmn;0.07 vs 3.75&plusmn;0.10 (3.3&sigma; with both uncertainties in quadrature; the &plusmn;0.07 on the prediction is stated on <Link href="/falsifiability" style={{ color: 'var(--color-accent-blue)' }}>Falsifiability</Link> and was missing here &mdash; without it the gap reads 4.0&sigma;)</td><td style={{ padding: '0.4rem' }}>The asserted ceiling B<sub>max</sub></td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>TEST-10 dwarf f<sub>DM</sub> ceiling</td><td style={{ padding: '0.4rem' }}>The same asserted B<sub>max</sub> &mdash; corollary, not an independent root</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>RAR shape, &#x0394;BIC = +184 at &#x03B3;=2</td><td style={{ padding: '0.4rem' }}>The asserted &#x03B3;=2 pin. Free-&#x03B3; &rarr; 0.489 recovers MOND, so this refutes a pin, not a mechanism</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
-                <tr><td style={{ padding: '0.4rem' }}>Environment scatter, r&sup2; = 0.0001</td><td style={{ padding: '0.4rem' }}>A genuinely framework-specific prediction. The cleanest kill on the list</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>Environment scatter, r&sup2; = 0.0001 (TEST-08 / TEST-03s)</td><td style={{ padding: '0.4rem' }}>The <em>registered</em> amplitude (S177: environment explains &gt;20% of RAR scatter, kill bar r&sup2; &lt; 0.09) &mdash; a number never derived from C(&#x03C1;). The equation&apos;s own ambient-density lever at SPARC outer radii is &le; 2&times;10<sup>&minus;3</sup> dex against ~0.1 dex of scatter, i.e. r&sup2; &asymp; 2&ndash;5&times;10<sup>&minus;4</sup> at most; the measured 1&times;10<sup>&minus;4</sup> is <em>consistent with the equation</em>. Reclassified 2026-09-05 (this row read &ldquo;the cleanest kill on the list&rdquo; until then; caught by a visitor researcher persona). The null stands as a permanent elimination of S177&apos;s claim and as a transferable result: the RAR is a universal local law to r&sup2; &lt; 10<sup>&minus;4</sup> against ambient density</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Registration-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>TEST-25 Cassini/SPARC, +17.95&sigma;</td><td style={{ padding: '0.4rem' }}>The RAR-preferred interpolating-function family &mdash; <strong>which MOND also uses</strong>. Published as Desmond, Hees &amp; Famaey 2024 at 8.7&sigma;</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Inherited from MOND</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>Bell/CHSH substrate (Bet B1), S &le; 2.00</td><td style={{ padding: '0.4rem' }}>Bell&apos;s theorem. A proof, not an experiment &mdash; this page calls it a &ldquo;pedagogical corollary&rdquo; elsewhere</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Theorem</td></tr>
+                <tr style={{ opacity: 0.8 }}><td style={{ padding: '0.4rem' }}><em>Not counted:</em> a&#x2080;(z) = cH(z)/2&#x03C0; vs the high-z RAR (Ciocan et al. 2026, arXiv:2604.22613)</td><td style={{ padding: '0.4rem' }}>The one prediction that structurally differs from MOND&apos;s constant a&#x2080;. Tested, and <strong>non-discriminating</strong>: the deviation is anchor-dominated (four published a&#x2080;(0) values spread 69%; consistent at 0.5&#x03C3; on the McGaugh+2016 anchor) and &#x039B;CDM+baryons simulations predict the same growth. Listed here 2026-09-05 because it appeared on no ledger &mdash; see <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link> row 4</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Non-discriminating</td></tr>
               </tbody>
             </table>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem', marginTop: '0.75rem' }}>
-            <strong>Read the column, not the total.</strong> Four entries are about this framework and they test
-            <em> two</em> asserted constants (B<sub>max</sub>, the &#x03B3;=2 pin) plus one real prediction &mdash;
-            which is what the existing &ldquo;3&ndash;4 independent roots&rdquo; figure already says, and that is
-            the number to quote. One entry is a published MOND constraint the framework inherits by being in the
-            same IF family; it does not discriminate between the two. One is a theorem, and a theorem is not
-            &ldquo;external data.&rdquo;
+            <strong>Read the column, not the total.</strong> Three entries test <em>two</em> asserted constants
+            (B<sub>max</sub> &mdash; TEST-09 and TEST-10 are one inequality &mdash; and the &#x03B3;=2 pin): those are the
+            <strong>two framework-specific mechanism roots</strong>, and the second refutes a parameter that was never
+            derived. One entry refutes a <em>registration</em> the equation never implied (environment). One is a
+            published MOND constraint the framework inherits by being in the same IF family; it does not discriminate
+            between the two. One is a theorem, and a theorem is not &ldquo;external data.&rdquo; So the split to quote is
+            <strong>2 + 1 + 1 + 1</strong>, and the landing page&apos;s &ldquo;2 framework-specific&rdquo; was the accurate
+            figure all along; the &ldquo;3&ndash;4&rdquo; this page carried from 2026-08-08 to 2026-09-05 counted the
+            environment null as a mechanism root. The archive&apos;s own independence audit reads &ldquo;&le;5&rdquo; and the
+            exact figure it will quote gates on the steward &mdash; which is why the site now prints the split rather than
+            a number (single source: <code>src/lib/ledger.ts</code>).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem' }}>
             <strong>Why the total is still 6 and not 4.</strong> The 2026-07-30 recount raised it from 4 precisely

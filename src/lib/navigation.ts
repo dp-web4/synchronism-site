@@ -504,7 +504,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Test Roadmap',
       href: '/test-catalog',
-      desc: '24 specific experiments by tier',
+      desc: '24 registered experiments by tier (+2 post-registry)',
       keywords: ['test', 'catalog', 'experiment', 'tier', 'overview'],
       related: ['/tier-1-existing', '/tier-2-pilots', '/top-5-tests'],
     },
@@ -541,7 +541,7 @@ export const navigationTree: NavigationTree = {
       related: ['/tier-3-major', '/top-5-tests'],
     },
     {
-      title: 'Top 5 Decisive Tests',
+      title: 'Decisive Tests: Status',
       href: '/top-5-tests',
       desc: 'BAO, wide binary, anesthesia, GW-DM, cosmic interference',
       keywords: ['top', 'decisive', 'BAO', 'anesthesia', 'critical', 'key'],

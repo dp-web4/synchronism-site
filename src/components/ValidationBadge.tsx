@@ -44,8 +44,21 @@ export default function ValidationBadge({ status, label }: ValidationBadgeProps)
     : label.toLowerCase().includes(config.defaultLabel.toLowerCase())
       ? label
       : `${config.defaultLabel} — ${label}`;
+  // 2026-09-05: every badge instance now links to the canonical definitions anchor. Rendered as a
+  // span with a click handler (not <a>) because badges frequently sit inside card <Link>s, where a
+  // nested anchor is invalid HTML; stopPropagation keeps the card link from firing too.
+  const definitionsHref = '/honest-assessment#validation-badge-definitions';
   return (
-    <span className={config.className} title={`${config.defaultLabel}: ${config.definition}`}>
+    <span
+      className={config.className}
+      title={`${config.defaultLabel}: ${config.definition} — click for all badge definitions`}
+      role="link"
+      tabIndex={0}
+      aria-label={`${config.defaultLabel}: ${config.definition}. Opens badge definitions.`}
+      style={{ cursor: 'help' }}
+      onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.location.assign(definitionsHref); }}
+      onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); window.location.assign(definitionsHref); } }}
+    >
       {text}
     </span>
   );

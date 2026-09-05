@@ -219,18 +219,27 @@ export default function Tier1Existing() {
             count is <strong>3&ndash;4, not 6</strong>.
           </p>
           <p style={{ margin: 0 }}>
-            <strong>2. EFE = 0 is missing from this ledger, and that absence is not an oversight &mdash; it is
-            blocked.</strong> A vanishing{' '}
+            <strong>2. EFE = 0 is missing from this ledger, and that absence is not an oversight &mdash; it has
+            no live carrier (reworded 2026-09-05; this read &ldquo;blocked on a theory decision&rdquo; until then, while{' '}
+            <Link href="/mond-unification" style={{ color: '#ef4444' }}>MOND Unification</Link> said &ldquo;EFE = 0
+            exactly&rdquo; &mdash; both true of different C conventions, neither saying so).</strong> A vanishing{' '}
             <TermTooltip term="EFE">External Field Effect</TermTooltip> is the framework&apos;s only
             <em> structurally</em> discriminating prediction against MOND: it follows from
             &#x2207;&middot;[C(&#x03C1;)&#x2207;&#x03A6;] = 4&#x03C0;G&#x03C1; being linear in &#x03A6;, and it is
             testable on data that already exists. It has no TEST ID, appears in no ID-keyed inventory, and is
             therefore invisible to every audit that walks this ledger by ID &mdash; the same mechanism that dropped
-            the a&#x2080;(z) prediction. <strong>Why it is not simply registered:</strong> the two C conventions in
-            caveat 1 give EFE of <em>opposite sign</em>, so there is no single prediction to register until the
-            force law is fixed. Registration is blocked on a <em>theory</em> decision, not on data. Until then, the
-            &ldquo;0 of 24 tests could select Synchronism&rdquo; framing should be read with the knowledge that the
-            one test which structurally <em>could</em> is not in the denominator.
+            the a&#x2080;(z) prediction. <strong>Why it is not simply registered:</strong> the prediction is attached to
+            couplings that are already dead or already MOND. The strict density-keyed C(&#x03C1;<sub>local</sub>) reading
+            gives EFE = 0 exactly (it follows from C being independent of &Phi;) &mdash; but that reading is refuted
+            head-to-head on SPARC (archive 2026-08-24: &#x0394;BIC +2843 against the acceleration-keyed form; the{' '}
+            <Link href="/galaxy-plotter" style={{ color: '#ef4444' }}>plotter&apos;s</Link> quadrature and division
+            branches are killed by the same galaxy from opposite sides). The acceleration-keyed reading that <em>does</em>
+            fit galaxies collapses at &#x03B3; = &frac12; to MOND&apos;s simple &#x03BC;, whose EFE is MOND&apos;s identically. And
+            the boost ceiling screens EFE = 0 from a clean test where it would bite (sparse satellites: Crater II needs
+            B = 60 against a ceiling of 3.17). So there is no live model that both fits rotation curves and predicts
+            EFE = 0: the &ldquo;only structurally discriminating prediction&rdquo; is real, and it belongs to a model the
+            data already excluded. The &ldquo;0 of 24 tests could select Synchronism&rdquo; framing stands; the one test
+            which structurally <em>could</em> has nothing left to test.
           </p>
           <p style={{ margin: '0.75rem 0 0 0', paddingTop: '0.6rem', borderTop: '1px solid rgba(239,68,68,0.25)' }}>
             <strong>3. The high-z boost ceiling was proposed as a new discriminator on 2026-08-08, and it closes

@@ -45,13 +45,21 @@ export default function MondUnification() {
           relationship holds, but the result itself is shared with other approaches.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          <strong>Update 2026-08-01:</strong> treating a&#x2080; as emergent rather than fundamental is not
-          cost-free &mdash; it is a forced commitment to a&#x2080;(z) = cH(z)/2&#x03C0;, which is now measurable and
-          currently disfavored by 2&#x03C3;&ndash;6&#x03C3; against real high-z RAR data (Ciocan et al. 2026). See the
-          epoch-fork row on{' '}
+          <strong>Update 2026-08-01, revised 2026-08-04 (this page not updated until 2026-09-05):</strong> treating
+          a&#x2080; as emergent rather than fundamental is not cost-free &mdash; it is a forced commitment to
+          a&#x2080;(z) = cH(z)/2&#x03C0;, the one prediction here that structurally differs from MOND&apos;s constant
+          a&#x2080;. It has been tested: Ciocan et al. 2026 (MUSE-DARK III, A&amp;A 709, L16;{' '}
+          <a href="https://arxiv.org/abs/2604.22613" style={{ color: 'var(--color-accent-blue)' }}>arXiv:2604.22613</a>)
+          fit the RAR directly in 79 galaxies at 0.33 &lt; z &lt; 1.44 and find a&#x2080; growing <em>faster</em> than
+          H(z). This sentence read &ldquo;disfavored by 2&#x03C3;&ndash;6&#x03C3;&rdquo; for a month after{' '}
           <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
-          for the full account &mdash; disfavored, not refuted, and it does not move the site&apos;s refutation
-          count.
+          had already revised the verdict: the deviation is <strong>anchor-dominated</strong> (four published a&#x2080;(0)
+          values disagree by 69%; against the McGaugh+2016 anchor the site uses elsewhere, branch (A) is consistent at
+          0.5&#x03C3;), and &#x039B;CDM+baryons simulations predict the same growth (Mayer et al. 2023). Verdict:{' '}
+          <strong>non-discriminating</strong>, not disfavored, and not counted. The coincidence has a second face the
+          site long omitted &mdash; a&#x2080; &#x221D; c&#x221A;&#x039B;, which predicts <em>zero</em> evolution and fares worse
+          against Ciocan than the H(z) branch; a&#x2080; running faster than H(z) embarrasses both readings of the 1983
+          coincidence, not this framework specifically. Full four-anchor table on Parameter Derivations, row 4.
         </p>
 
         <h2>The Derivation Chain</h2>
@@ -107,7 +115,7 @@ export default function MondUnification() {
               <li>a&#x2080; is an <strong>emergent scale</strong></li>
               <li>Value from dimensional analysis of H&#x2080; and c (shared with other frameworks)</li>
               <li>Uses the standard McGaugh et al. (2016) RAR interpolating function</li>
-              <li>Predicts EFE = 0 structurally (C depends only on local ρ); real environmental coupling is an untested ambient-density effect, not an EFE &mdash; see correction below</li>
+              <li>Predicts EFE = 0 structurally <em>for the strict C(ρ<sub>local</sub>) reading</em> &mdash; the load-bearing premise is that C is independent of &Phi;, not locality per se (archive 2026-08-24: a fully non-local, &Phi;-independent C still gives EFE = 0 to 10<sup>&minus;13</sup>; a &nabla;&Phi;-keyed C gives 0.046). At the fitted &#x03B3; = &frac12; the compander that actually reproduces rotation curves is keyed on acceleration and its EFE is MOND&apos;s identically &mdash; so the EFE = 0 prediction has no live carrier that fits galaxies. See correction below and the reconciled caveat on <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link></li>
             </ul>
           </div>
         </div>

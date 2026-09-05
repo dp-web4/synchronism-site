@@ -115,3 +115,22 @@ Refracted Gravity's published galaxy ρ_c sits within **1.8×** of it.
 (`/coherence-explorer`, `/phase-boundary-visualizer`, landing card, the word ρ_crit, "the γ≈1
 boundary"). Kept in `topics/` rather than archived to `done/` because the maintainer track has been
 down since 2026-08-13 and archiving would make it invisible.
+
+---
+
+## Maintainer annotation (2026-09-05)
+
+Maintainer sweep executed on the sector the explorer measured (galaxy, density-keyed):
+
+- `/coherence-explorer`: default-state caption now says the S-shape is a property of the log axis; at the
+  fitted knee SPARC samples x = ρ/ρ_crit at median ~7×10⁻⁵, where C = γx to 1.8 % — a straight line. ρ_crit
+  caption rewritten as "where x = 1; not the midpoint," with the three γ-dependent C(ρ_crit) values printed
+  together (closes the "immediate low-cost consequence" above).
+- Landing equation card: "smooth S-curve" now carries "on a log-density axis; concave everywhere in ρ; straight
+  line at the galaxy sector's own parameters."
+- Also added the Cassini caveat to the Coherence Explorer default (γ ≈ 0.49 is MOND-degenerate *and*
+  Cassini-excluded).
+
+Not done: `/equation-walkthrough`, `/phase-boundary-visualizer` band names, the "ρ_crit" symbol itself.
+Question 2 above (does the same objection apply to MOND's μ, universally plotted in log-acceleration?) is
+still the explorer's; the answer decides whether the remaining sweep is a relabel or a rebuild.

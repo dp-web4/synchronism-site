@@ -54,6 +54,15 @@ export default function ParameterDerivations() {
               <ValidationBadge status="speculative" label="Motivated Ansatz" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #64-65</p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
+              <strong style={{ color: '#f87171' }}>Sensitivity ordering, measured 2026-09-03 (explorer, L2 field equation on 153 SPARC galaxies):</strong>{' '}
+              this page audits hardest the parameters the model is <em>least</em> sensitive to. Moving &#x03B3; by 40&times; and A
+              by 10<sup>9</sup>&times; at a working floor changes &#x03C7;&sup2;/N by only 1.07&ndash;2.7&times;; moving the <em>floor</em>
+              (item 8) at fixed (&#x03B3;, A) changes it by up to 6.35&times;10<sup>4</sup>. The Fisher correlation of (ln &#x03B3;, ln A) is
+              +1.000000 (&#x03BA; = 3.6&times;10<sup>8</sup>): the two are one parameter in the galaxy sector, and neither is
+              identifiable there. The CLT point below stands, but the practical verdict on &#x03B3; is not &ldquo;wrong sign&rdquo;
+              so much as <em>unmeasurable where it was fitted</em>. Finding: <code>explorer/findings/the-parameter-ledger-is-unfalsifiable-and-the-knee-is-misplaced-by-25000x.md</code>.
+            </p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               The 1/&#x221A;N<sub>corr</sub> scaling borrows from central-limit-theorem (CLT) statistics.
               The factor of 2 is motivated by phase-space dimensionality arguments (6D to 3 effective)
@@ -113,9 +122,26 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>3. A = 4&#x03C0;/(&#x03B2;<sub>J</sub>&sup2;GR&#x2080;&sup2;) &#x2248; 0.029</h3>
-              <ValidationBadge status="audited-negative" label="Audited-Negative — Chain-of-Custody Failure" />
+              <ValidationBadge status="audited-negative" label="Audited-Negative (scaling) — Normalization Unrunnable" />
             </div>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #53, #66 — decisive test run 2026-06-07</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #53, #66 — decisive test run 2026-06-07; badge split 2026-09-05</p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
+              <strong style={{ color: '#f87171' }}>Lead with the large error, not the small one (explorer 2026-09-03).</strong>{' '}
+              The 600&times; formula-vs-calibrated mismatch below is real but is the <em>smaller</em> discrepancy, and it moves
+              &#x03C1;<sub>crit</sub> <em>toward</em> the data. Pure density arithmetic, no fit: the calibrated A = 0.029 puts
+              &#x03C1;<sub>crit</sub> at 6.5&times;10<sup>2</sup> M<sub>&#x2609;</sub>/pc&sup3; (4.4&times;10<sup>&minus;20</sup> g cm<sup>&minus;3</sup>),
+              while the SPARC median midplane density is 2.6&times;10<sup>&minus;2</sup> M<sub>&#x2609;</sub>/pc&sup3; (1.8&times;10<sup>&minus;24</sup>)
+              &mdash; the knee sits <strong>2.5&times;10<sup>4</sup></strong> above every density the data sample. (Refracted Gravity, whose
+              field equation this sector coincides with, puts its knee within 1.8&times; of the data.) <strong>Units, which this
+              card never stated:</strong> A is in M<sub>&#x2609;</sub> pc<sup>&minus;3</sup> (km/s)<sup>&minus;2</sup>; the &ldquo;600&times;&rdquo;
+              reproduces only in those units (a visitor grad-student persona recomputed 635&times;). <strong>Why the
+              normalization row is unrunnable, not merely negative:</strong> the 600&times; is repairable for free with
+              N<sub>corr</sub> = 6.7&times;10<sup>6</sup>, inside the 1&ndash;10<sup>7</sup> range the{' '}
+              <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</Link> admits &mdash;
+              the third mutually inconsistent N<sub>corr</sub> this site&apos;s own relations produce (1, 16.7, 6.7&times;10<sup>6</sup>).
+              A row that any N<sub>corr</sub> can rescue has no refutation criterion. The <em>scaling</em> (&#x03C1;<sub>crit</sub> &#x221D; V&sup2;,
+              excluded at ~11&#x03C3;, 2026-08-27) keeps its Audited-Negative.
+            </p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               &#x03B2;<sub>J</sub> = &#x03BB;<sub>Jeans</sub> / R<sub>half</sub> is the dimensionless Jeans-length-to-galaxy-size ratio
               (Session 53). Empirically &#x03B2;<sub>J</sub> &#x2248; 1.1 &#x00B1; 0.2 across SPARC galaxies.
@@ -211,6 +237,12 @@ export default function ParameterDerivations() {
               with item 5&apos;s &#x03A3;&#x2080; = 119 at H&#x2080; = 67.4, since &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G)
               exactly (one number, not two). At the site-standard H&#x2080; = 67.4: a&#x2080; = 1.04&times;10<sup>&minus;10</sup>
               (13% below Milgrom) with &#x03A3;&#x2080; = 119 &mdash; the consistent pair, now quoted site-wide.
+              <strong> Convention caveat (2026-09-05, visitor grad-student persona):</strong> at &#x03B3; = &frac12; the compander
+              collapses to x/(x+2) = &#x03BC;<sub>simple</sub>(x/2) &mdash; MOND&apos;s simple function with a&#x2080; &rarr; 2a&#x2080;. Because
+              &#x03C1;<sub>crit</sub> (or a&#x2080;) is free in every fit this factor is silently absorbed, but it means the framework&apos;s
+              a&#x2080; is only defined up to a convention-dependent factor of 2 (the archive records a&#x2080; = g<sup>&dagger;</sup>/2 as exactly
+              this &ldquo;factor-2 anomaly,&rdquo; 2026-08-24). A 13% comparison to Milgrom is not meaningful at that level; treat it as
+              &ldquo;same order, same dimensional origin,&rdquo; not as agreement or disagreement.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               This dimensional relation a&#x2080; &#x223C; cH&#x2080; has been noted since Milgrom (1983) and
@@ -423,8 +455,20 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>8. B<sub>max</sub> = 1/&#x03A9;<sub>m</sub> &#x2248; 3.17 (the bounded boost ceiling)</h3>
-              <ValidationBadge status="speculative" label="Asserted, Not Derived" />
+              <ValidationBadge status="audited-negative" label="Audited-Negative — the one load-bearing parameter, refuted (was: Speculative — Asserted, Not Derived)" />
             </div>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
+              <strong style={{ color: '#f87171' }}>Re-badged 2026-09-05 on the explorer&apos;s 2026-09-03 sensitivity scan.</strong>{' '}
+              This row carried &ldquo;Speculative &mdash; asserted, not derived&rdquo; while items 1 and 3 carried Audited-Negative,
+              which inverts the measured ordering: the floor C<sub>min</sub> = &#x03A9;<sub>m</sub> (equivalently B<sub>max</sub> = 1/&#x03A9;<sub>m</sub>)
+              is the <em>only</em> parameter the galaxy sector is sensitive to (&#x03C7;&sup2;/N moves up to 6.35&times;10<sup>4</sup> with
+              the floor, 1.07&ndash;2.7&times; with &#x03B3; and A together), it is <em>measurable</em> (best-fit &#x03B5;<sub>0</sub> = 0.220,
+              B<sub>max</sub> = 4.55, 2026-08-30), and its asserted value is excluded (TEST-09/TEST-10; RG&apos;s own fits demand
+              4&ndash;22; the weak-lensing RAR of Brouwer+2021 demands &#x03BD; = 110&ndash;347 against any ceiling &le; 18). So TEST-09/10
+              refute the chain&apos;s load-bearing parameter, not an optional closure. The 08-26 derivation-from-disc-geometry
+              (Gauss averaging gives 1/C<sub>min</sub> as the L2/L3 maximum) explains where the ceiling <em>comes from</em>; it
+              does not make the value right.
+            </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Added 2026-07-28 &mdash; flagged missing from this page by a visitor persona (grad student + researcher)</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a> calls
@@ -516,8 +560,14 @@ export default function ParameterDerivations() {
           two (&#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) exactly). The 3&ndash;10% agreements could reflect
           approximation limits or implicit calibration through V<sub>flat</sub>; distinguishing these would
           require the independent derivations that do not exist. B<sub>max</sub> = 1/&#x03A9;<sub>m</sub>
-          (item 8) is the parameter carrying the most discriminating weight of all of them, and it is also
-          asserted, not derived.
+          (item 8) is the parameter carrying the most discriminating weight of all of them &mdash; and, as of the
+          2026-09-03 sensitivity scan, the only one the galaxy data can actually measure. Its asserted value is
+          excluded; &#x03B3; and A, the two this page audits hardest, are unidentifiable in that sector (Fisher
+          correlation +1.000000). <strong>One citable negative falls out of this (explorer 2026-09-03), and it
+          transfers to the whole density-keyed &#x03B5;(&#x03C1;) class:</strong> <em>for a density-keyed algebraic
+          modification whose knee is calibrated above galactic midplane densities, the interpolating function is
+          unidentifiable &mdash; the model equals its own linearisation to better than observational precision.
+          Testability requires the knee inside the sampled density range, where Refracted Gravity puts it.</em>
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

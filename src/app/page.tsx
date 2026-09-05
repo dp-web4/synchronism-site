@@ -16,6 +16,7 @@ export default function Home() {
           What if one equation described reality from quantum to cosmic?
         </h1>
         <p className="hero-subtitle">
+          <strong>We proposed this. We tested it. It did not hold as stated. What follows is what we learned.</strong>{' '}
           The bet: a single dial &mdash; how coherently a system&apos;s parts act together, computed from its
           density &mdash; might explain what currently needs a separate patch at every scale (dark matter for
           galaxies, wavefunction collapse for quantum measurement). That is what the equation tried to do.
@@ -27,7 +28,7 @@ export default function Home() {
 
         <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
           <Link href="/first-encounter" className="btn-primary">
-            Start Exploring
+            Jump to First Encounter (Step 2)
           </Link>
           <Link href="/honest-assessment" className="btn-secondary">
             See What Failed
@@ -76,7 +77,7 @@ export default function Home() {
             <strong style={{ color: 'var(--color-accent-violet)' }}>&#x03C1;<sub>crit</sub></strong> = saturation knee (reference density; not a critical point)
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>
-            <strong>tanh</strong> = S-shaped saturation function: maps any real number to (−1,+1) — C(ρ) stays in [0,1) because the input argument ≥ 0. You can just think &ldquo;smooth S-curve.&rdquo;{' '}
+            <strong>tanh</strong> = S-shaped saturation function: maps any real number to (−1,+1) — C(ρ) stays in [0,1) because the input argument ≥ 0. You can just think &ldquo;smooth S-curve&rdquo; <em>on a log-density axis</em>; in ρ itself the function is concave everywhere, with no inflection, and at the galaxy sector&apos;s own parameters it is a straight line to better than the data&apos;s precision (measured 2026-09-03 &mdash; see the <Link href="/coherence-explorer" style={{ color: 'var(--color-accent-violet)' }}>Coherence Explorer</Link> caption).{' '}
             <strong>ln</strong> = natural log: compression — 1,000× bigger becomes only ~7 units bigger on this axis.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
@@ -140,7 +141,7 @@ export default function Home() {
               <strong>1</strong> untested (a₀ ~ cH₀: dimensional rederivation, not independent convergence)
             </span>
             <span style={{ color: '#f59e0b' }}>
-              <strong>1</strong> galaxy rotation reparametrization (dark matter mechanism structurally failed)
+              <strong>1</strong> galaxy rotation reparametrization &mdash; i.e. known physics in new notation, this site&apos;s most common verdict (dark matter mechanism structurally failed)
             </span>
           </div>
           <span style={{ color: 'var(--color-accent-violet)', fontSize: '0.9rem', marginTop: '0.75rem', display: 'inline-block' }}>
@@ -246,9 +247,9 @@ export default function Home() {
               alignItems: 'center',
             }}>
               <span>Prospective predictions confirmed: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Refutations executed on external data: <strong style={{ color: '#ef4444' }}>6</strong>{' '}
-              <strong style={{ color: '#f59e0b' }}>— but only 2 are framework-specific independent roots</strong>{' '}
-              (added to this lead 2026-08-10; the subtraction was already published on{' '}
+              <span>Refutations executed: <strong style={{ color: '#ef4444' }}>6</strong> (5 on external data + 1 theorem-level check){' '}
+              <strong style={{ color: '#f59e0b' }}>— 2 framework-specific mechanism roots + 1 refuted registration + 1 inherited from MOND + 1 theorem</strong>{' '}
+              (roots added to this lead 2026-08-10, split made explicit 2026-09-05 when three personas found 2 / 3&ndash;4 / 6 on different pages; the subtraction was already published on{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
               and had never reached the scoreboard). TEST-09 and TEST-10 share one root (the boost
               ceiling); TEST-25 is inherited from Desmond, Hees &amp; Famaey 2024 and this site labels it

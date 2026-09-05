@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 
@@ -132,7 +133,7 @@ export default function CoherenceExplorer() {
             <li><strong>ln(x)</strong> — logarithm: it compresses huge ranges into small ones. A density 1,000× bigger becomes only ~7 units bigger. This is why the curve works across quantum to cosmic scales.</li>
             <li><strong>tanh(u)</strong> — the &ldquo;S-curve&rdquo; shape. For very negative u it returns ≈ 0; for large positive u it returns ≈ 1; near zero it rises steeply. Think of a dimmer switch that snaps rather than fading gradually.</li>
             <li><strong>&#x03B3;</strong> — controls how quickly the snap happens. Large &#x03B3; (γ = 2, free atoms) = a sharp cliff. Small &#x03B3; (γ ≈ 6×10⁻⁴, superconductors) = a long gentle ramp.</li>
-            <li><strong>&#x03C1;<sub>crit</sub></strong> — the density where the middle of the S-curve sits; a reference point set by fitting, not a physical critical point.</li>
+            <li><strong>&#x03C1;<sub>crit</sub></strong> — the density where the dimensionless argument x = &#x03C1;/&#x03C1;<sub>crit</sub> equals 1; a reference point set by fitting, not a physical critical point and <em>not</em> the curve&apos;s midpoint: C(&#x03C1;<sub>crit</sub>) = tanh(&#x03B3; ln 2) is &#x03B3;-dependent (0.327 at &#x03B3; = 0.49, 0.60 at &#x03B3; = 1, 0.88 at &#x03B3; = 2 &mdash; the three values printed on three pages of this site are all correct, at those three &#x03B3;).</li>
           </ul>
         </div>
         <p style={{ marginBottom: '1rem' }}>
@@ -192,6 +193,13 @@ export default function CoherenceExplorer() {
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               Opens at &#x03B3; &#x2248; 0.49, the value SPARC galaxy data actually prefers when fit freely.
               &#x03B3; = 2 was the framework&apos;s original galaxy guess &mdash; refuted (drag the slider up to see it).
+              <strong style={{ color: '#f87171' }}> The default is dead on two fronts, not one (added 2026-09-05):</strong>{' '}
+              &#x03B3; &#x2248; 0.49 reproduces MOND on SPARC <em>and</em> the same &#x03B3; fails the Cassini Solar-System
+              bound at ~18&#x03C3; (TEST-25 on <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>);
+              no &#x03B3; satisfies both. And the S-shape you see is a property of the log axis: with the density-keyed
+              knee where the galaxy fits put it, SPARC samples x = &#x03C1;/&#x03C1;<sub>crit</sub> at a median of ~7&times;10<sup>&minus;5</sup>,
+              where C = &#x03B3;x to 1.8% at worst (0.22&times; the data&apos;s precision on C) &mdash; a straight line. Toggle to
+              linear and zoom to x &lt; 10<sup>&minus;3</sup> to see the regime the data actually occupy (explorer measurement 2026-09-03).
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', marginTop: '0.35rem', borderLeft: '2px solid rgba(139,92,246,0.6)', paddingLeft: '0.5rem' }}>
               <strong style={{ color: '#a78bfa' }}>What the default view actually shows (added 2026-08-08):

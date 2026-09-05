@@ -296,7 +296,7 @@ export default function CoreIdea() {
           <Link href="/galaxy-rotation" className="card" style={{ textDecoration: 'none' }}>
             <h3 style={{ color: 'var(--color-accent-blue)' }}>The Evidence</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              See it tested against 14,760 galaxies
+              See it tested against 14,610 galaxies (175 SPARC + 14,435 ALFALFA&ndash;SDSS after quality cuts)
             </p>
           </Link>
           <Link href="/gamma-boundary" className="card" style={{ textDecoration: 'none' }}>

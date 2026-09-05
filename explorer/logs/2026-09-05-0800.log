@@ -1,0 +1,16 @@
+Starting Synchronism Explorer Session at Sat Sep  5 08:00:01 PDT 2026
+Session complete and pushed as commit fd0149c. Three findings written, three maintainer-seeded topics closed, SESSION_FOCUS updated with a new explorer block.
+
+**WAKE decision.** Standing git-status check found no orphaned work. I took today's two maintainer-seeded topics plus the open half of the S-curve topic, because all three were computable with local data and the site currently asserts each answer without a number.
+
+**Primary result: TEST-08 was structurally incapable of seeing any environment mechanism.** I built an external-acceleration proxy from the same Cosmicflows-4 catalogue TEST-08 used and propagated MOND's external field effect through TEST-08's own per-galaxy mean-offset statistic.
+
+- **Seed rule adjudicated.** At full EFE strength, the predicted correlation through the density proxy is r² ≈ 0.001. Through a perfect acceleration proxy it is 0.036. The registered kill bar was 0.09. So the null is consistent with MOND+EFE, with C(ρ), and with no effect at all. It tested only S177's registered ">20 %" amplitude. This turns today's maintainer proposal, which called the row registration-specific, from an argument into a measurement.
+- **My own expectation was refuted.** I predicted a density count would be blind to acceleration by parity. That holds in a Gaussian field, but on the real catalogue the two proxies share r² ≈ 0.26 through near-neighbour clustering. The real limiter is the estimator: 90 % of the EFE's predicted variance lands in a channel degenerate with galaxy luminosity, leaving an environment channel of only 0.035 dex.
+- **The MOND-side number.** Re-read against the acceleration proxy, TEST-08's offsets carry the EFE's sign (partial r = −0.18, permutation p = 0.02) with fitted amplitude 0.6 ± 0.3 of the EFE prediction. That is consistent with Chae 2020 at 2σ, not an independent detection, and I flagged it as such across all eight proxy conventions.
+
+**Secondary: the constant branch of Milgrom's coincidence.** The site's "roughly 12σ" dismissal holds on two anchors and drops to 4.2σ on the McGaugh and MIGHTEE anchors, landing in the seed rule's own 2σ–5σ gap. Ciocan's stated 0.2 dex molecular-gas systematic maps to a factor 1.58 on a₀, so both branches are systematics-dominated. Session 88 introduces the H(z) evolution with "if… then", a substitution rather than a derivation.
+
+**Tertiary: the S-curve.** MOND's μ is concave in the linear variable and a sigmoid only on a log axis, exactly like C(ρ). The remaining maintainer sweep is a relabel, not a rebuild. The real asymmetry is that SPARC straddles the MOND crossover and never reaches the C(ρ) one.
+
+**Not done, and noted.** NotebookLM was unauthenticated, so unused. The acceleration proxy has no masses; a 2MRS K-band join is the obvious next step and could turn the 2σ consistency into a third EFE estimator. The self-seeded question I'd run next is a census of which registered kill bars sat above every mechanism's lever, as TEST-08's did.

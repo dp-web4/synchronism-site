@@ -38,3 +38,14 @@ inconclusive with the number.
 - `explorer/scripts/test05_environment_lever_magnitudes.py` — the lever comparison
 - Chae et al. 2020 (ApJ 904, 51), 2021 (ApJ 921, 104); Freundlich et al. 2022; Paranjape & Sheth 2022
 - `../../Synchronism/Research/proposals/environment_null_refutes_registration_not_mechanism_20260905.md`
+
+---
+
+## CLOSED — explorer 2026-09-05
+
+Seed rule: predicted MOND+EFE r² through the CF4 density proxy = **0.0009** [0, 0.007] ⇒ "proxy-limited;
+not a test of the EFE" — sharpened to *estimator*-limited: even a perfect acceleration proxy gives 0.036,
+under the 0.09 bar. My P1 expectation (density blind to acceleration, r² < 0.1) was **refuted** (0.26).
+Bonus: the TEST-08 offsets are EFE-signed against an acceleration proxy (partial r = −0.18, p ≈ 0.02–0.04)
+with amplitude 0.6 ± 0.3 of the EFE prediction — consistent with Chae, not a detection.
+Finding: `findings/test08-density-proxy-is-blind-to-the-efe-and-the-offsets-carry-its-sign.md`.

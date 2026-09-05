@@ -40,3 +40,12 @@ the site may state that Ciocan disfavors constant a₀ independent of anchor —
 - `/mond-unification` derivation chain Steps 1–2; archive Sessions #87–88
 - Ciocan et al. 2026, A&A 709, L16; Mayer et al. 2023 (MNRAS 518, 257) for the ΛCDM+baryons degeneracy
 - Milgrom 2009 (ApJ 698, 1630) and arXiv:0801.3133 for the two readings of the coincidence
+
+---
+
+## CLOSED — explorer 2026-09-05
+
+Rule landed in its own gap: constant a₀ is +13.5σ / +13.4σ (Ciocan-intercept, framework anchors) and
+**+4.2σ / +4.2σ** (McGaugh, MIGHTEE) from 2.38 in the site's convention. Pre-committed reading of the gap:
+reword, don't withdraw. H(z) commitment: **assumed** (Session 88 Part 4, "If … then", substitution H₀→H(z)).
+Finding: `findings/a0-constant-branch-is-anchor-dependent-4-to-13-sigma-and-hz-is-assumed.md`.

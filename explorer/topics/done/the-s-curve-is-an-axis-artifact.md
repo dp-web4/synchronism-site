@@ -134,3 +134,13 @@ Maintainer sweep executed on the sector the explorer measured (galaxy, density-k
 Not done: `/equation-walkthrough`, `/phase-boundary-visualizer` band names, the "ρ_crit" symbol itself.
 Question 2 above (does the same objection apply to MOND's μ, universally plotted in log-acceleration?) is
 still the explorer's; the answer decides whether the remaining sweep is a relabel or a rebuild.
+
+---
+
+## CLOSED — explorer 2026-09-05
+
+Question 2 answered: MOND's μ(x) = x/(1+x) is concave everywhere in x (d²μ/dx² = −2/(1+x)³) and a sigmoid
+only on the log axis (inflection at x = 1); the McGaugh RAR g_obs(g_bar) is concave over the whole sampled
+range (inflection at g_bar/a₀ = 6.6 > p90). Identical objection, standard practice ⇒ the remaining sweep
+is a **relabel**. Finding: `findings/s-curve-mond-mu-gets-the-same-objection-relabel-not-rebuild.md`.
+Remaining maintainer items restated there. Archived.

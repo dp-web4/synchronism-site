@@ -1,0 +1,70 @@
+TEST-08 galaxy set: N = 141; offset std = 0.124 dex
+reproduce TEST-08 primary: r = +0.012, r^2 = 0.0001, p = 0.89  (published 0.0001, p=0.89)
+CF4: 55877 galaxies
+
+=== P1: does the TEST-08 density proxy track |g_ext| built from the same catalogue? ===
+positions   soft  rmax |  r(prim,log g) raw  r dist-corr  r^2 dc |       e_N 10/50/90 pct
+3D (DM)      0.5    30 |             +0.251       +0.504   0.254 | 0.004 / 0.033 / 0.087
+3D (DM)      1.0    30 |             +0.197       +0.395   0.156 | 0.004 / 0.033 / 0.064
+3D (DM)      0.5    10 |             +0.362       +0.626   0.392 | 0.003 / 0.033 / 0.129
+3D (DM)      2.0    50 |             +0.112       +0.199   0.040 | 0.006 / 0.033 / 0.056
+z-space      0.5    30 |             +0.297       +0.514   0.264 | 0.005 / 0.033 / 0.059
+z-space      1.0    30 |             +0.262       +0.428   0.183 | 0.005 / 0.033 / 0.048
+z-space      0.5    10 |             +0.420       +0.660   0.436 | 0.003 / 0.033 / 0.066
+z-space      2.0    50 |             +0.157       +0.230   0.053 | 0.007 / 0.033 / 0.041
+
+fiducial (z-space, s=0.5, R=30): log|g| spread (std) = 0.44 dex; Chae 2020 range 0.01-0.1 => ~0.5 dex half-range
+r between the two position conventions, dist-corr log|g|: +0.842
+
+=== P2/P3: MOND+EFE predicted per-galaxy offsets ===
+e_N from z-space proxy: pred offset std = 0.1273 dex (observed 0.124); P2 r^2(pred, log e_N) = 0.354 (r=-0.595); P3 r^2(pred, TEST-08 density proxy) = 0.0001 (r=-0.010)
+   mock data = EFE + noise to observed scatter: r^2 vs density proxy median 0.0001 [0.0001, 0.0001]; vs log e_N itself median 0.3544 [0.3544, 0.3544]
+e_N from 3D proxy: pred offset std = 0.1386 dex (observed 0.124); P2 r^2(pred, log e_N) = 0.433 (r=-0.658); P3 r^2(pred, TEST-08 density proxy) = 0.0000 (r=-0.002)
+   mock data = EFE + noise to observed scatter: r^2 vs density proxy median 0.0000 [0.0000, 0.0000]; vs log e_N itself median 0.4326 [0.4326, 0.4326]
+control: independent lognormal e_N (0.35 dex): pred offset std = 0.1121 dex; r^2(pred, log e_N) = 0.121
+
+=== DIAGNOSTIC: decompose the predicted offset into environment channel and structure channel ===
+pred offset std: full(dc e_N) 0.1082  structure-only 0.1061  environment-only 0.0345 dex
+  full (dc e_N)     : r vs density proxy -0.017 | vs log g_ext(dc) -0.217 | vs log L36 +0.766
+  structure-only    : r vs density proxy +0.166 | vs log g_ext(dc) +0.100 | vs log L36 +0.826
+  environment-only  : r vs density proxy -0.538 | vs log g_ext(dc) -0.990 | vs log L36 -0.098
+  density proxy vs log L36: r = +0.047;  log g_ext(dc) vs log L36: r = +0.054
+  partial r(full pred, density proxy | logL) = -0.082 (p=0.334)
+
+  mocks: data = alpha * EFE_pred(dc e_N) + noise, total scatter = observed 0.124 dex; 2000 draws each
+  alpha=1.00 (EFE signal std 0.108 dex): r^2 vs density proxy 0.0009 [0.0000,0.0072] | vs log g_ext 0.0359 [0.0151,0.0670] | vs EFE template 0.761
+  alpha=0.50 (EFE signal std 0.054 dex): r^2 vs density proxy 0.0025 [0.0000,0.0222] | vs log g_ext 0.0090 [0.0001,0.0459] | vs EFE template 0.193
+  alpha=0.25 (EFE signal std 0.027 dex): r^2 vs density proxy 0.0033 [0.0000,0.0242] | vs log g_ext 0.0045 [0.0000,0.0318] | vs EFE template 0.049
+  alpha=0.12 (EFE signal std 0.013 dex): r^2 vs density proxy 0.0031 [0.0000,0.0257] | vs log g_ext 0.0035 [0.0000,0.0285] | vs EFE template 0.011
+
+=== P4: observed TEST-08 offsets vs external-field proxy (EFE predicts NEGATIVE) ===
+z-space dist-corr log|g|: Pearson r = -0.158 (r^2=0.0250, p=0.0613); Spearman -0.159 (p=0.059)
+3D dist-corr log|g|: Pearson r = -0.175 (r^2=0.0305, p=0.0383); Spearman -0.208 (p=0.0133)
+observed offset vs EFE-predicted offset (z-space e_N): r = +0.120, p = 0.155  (EFE predicts POSITIVE here); slope = 0.12 (EFE = 1)
+  partial r(offset, z-space log g_ext | logL36, logD) = -0.160 (p=0.0578)
+  partial r(offset, 3D log g_ext | logL36, logD) = -0.177 (p=0.0361)
+  partial r(offset, density proxy | logL36, logD) = +0.011 (p=0.9)   [TEST-08 reported partial r with 3 controls]
+
+  EFE amplitude in the data (offset regressed on full template, dc e_N): alpha = 0.113 [-0.097, 0.318] 95% bootstrap; EFE at 1D-aligned strength = 1
+  environment-channel-only template: alpha = 0.580 [0.033, 1.115]
+  joint fit offset ~ a*env + b*struct: a = 0.612 +/- 0.306, b = 0.075 +/- 0.099
+  (alpha is attenuated by e_N-proxy noise: with true and noise log-spreads equal, attenuation = 0.5)
+
+=== P5: random-field control — is local density informative about |g| at the same point? ===
+sigma_delta = 0.3: Gaussian  r(delta, log|g|) = -0.009 (r^2 = 0.0001);  lognormal r(log(1+delta), log|g|) = +0.090 (r^2 = 0.008), Spearman +0.091
+sigma_delta = 1.0: Gaussian  r(delta, log|g|) = +0.018 (r^2 = 0.0003);  lognormal r(log(1+delta), log|g|) = +0.261 (r^2 = 0.068), Spearman +0.255
+point-process mock (479296 pts, 1.0 mean count/2Mpc): r(log count, log|g| point-sum) = +0.375 (r^2=0.140); r(log count, log|g| true) = +0.216; r(point-sum |g|, true |g|) = +0.591; r(log count, log(1+delta) true) = +0.607
+
+per-galaxy table written.
+
+=== ROBUSTNESS: environment-channel amplitude a (offset ~ a*env + b*struct) across g_ext conventions ===
+positions   soft  rmax | partial r(off, log g | L, D)       p |      a    +/- |      b    +/-
+3D (DM)      0.5    30 |                       -0.177   0.036 |   0.76   0.33 |  0.069  0.098
+3D (DM)      1.0    30 |                       -0.173   0.040 |   0.77   0.34 |  0.077  0.099
+3D (DM)      0.5    10 |                       -0.103   0.225 |   0.35   0.23 |  0.054  0.099
+3D (DM)      2.0    50 |                       -0.175   0.038 |   0.89   0.40 |  0.082  0.099
+z-space      0.5    30 |                       -0.160   0.058 |   0.61   0.31 |  0.075  0.099
+z-space      1.0    30 |                       -0.133   0.115 |   0.53   0.31 |  0.072  0.100
+z-space      0.5    10 |                       -0.094   0.269 |   0.33   0.23 |  0.065  0.100
+z-space      2.0    50 |                       -0.136   0.108 |   0.65   0.36 |  0.078  0.100
+permutation null (3D proxy): P(r <= -0.177) = 0.0192; two-sided P(|r| >= 0.177) = 0.0362

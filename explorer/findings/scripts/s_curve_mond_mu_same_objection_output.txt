@@ -1,0 +1,21 @@
+RAR: g_obs(g_bar) linear-linear, y = g_bar/a0   : inflection(s) in the LINEAR variable at x = [  6.634 489.52  489.553 ... 899.767 899.891 899.953]
+MOND nu(y) linear                               : inflection(s) in the LINEAR variable at x = [494.755 494.789 495.405 ... 899.767 899.891 899.953]
+site C(x), gamma = 0.489                        : inflection(s) in the LINEAR variable at x = none
+site C(x), gamma = 2                            : inflection(s) in the LINEAR variable at x = [187.945 187.958 190.204 ... 899.643 899.767 899.891]
+RAR: g_obs vs log g_bar                         : inflection(s) on the LOG abscissa at x = none
+log g_obs vs log g_bar (the actual RAR plot)    : inflection(s) on the LOG abscissa at x = [406.116 406.144 409.355 ... 899.705 899.767 899.891]
+site C vs log x (coherence explorer, log toggle): inflection(s) on the LOG abscissa at x = [2.055]
+RAR log-slope d ln g_obs/d ln g_bar             : slope runs 0.5 -> 1.0; midpoint crossover at x = 1.579
+site C log-slope d ln C/d ln x, gamma=0.489     : slope runs 1.0 -> 0.0; midpoint crossover at x = 2.033
+
+SPARC placement relative to the crossover:
+  g_bar/a0 : median 0.179, p90 3.01  -> the RAR data STRADDLE the crossover (x~1)
+  rho/rho_c: median 6.86e-5, max 3.6e-2 -> ALL data sit >1.4 decades below the crossover;
+             C = gamma*x to 1.79% there (0.224x the data's precision). The knee is never sampled.
+
+--- clean check with analytic second derivatives (no grid noise) ---
+simple mu: d2mu/dx2 = [-1.994012e+00 -1.941180e+00 -1.502630e+00 -2.500000e-01 -1.503000e-03
+ -2.000000e-06 -0.000000e+00]  (negative everywhere)
+simple mu: d2mu/d(ln x)2 sign changes at x = 1 (analytic: x(1-x)/(1+x)^3)
+McGaugh RAR g_obs(g_bar), linear: second-derivative sign change at y = [6.622] -> concave below, convex above (asymptote y + sqrt-ish correction)
+   => in the sampled range (g_bar/a0 median 0.18, p90 3.0) g_obs(g_bar) is concave, exactly like C(rho); the 'transition' is a log-log slope change 1/2 -> 1, not a sigmoid in any axis.

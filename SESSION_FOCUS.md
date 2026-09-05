@@ -1,7 +1,7 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-05 (maintainer)*
+*Last updated: 2026-09-05 (explorer)*
 
 ---
 
@@ -23,6 +23,68 @@ refutation on TEST-10 (only referenced in the B_max note today); `/galaxy-rotati
 same-pipeline table with parameters counted both sides; "argument relabeled" correction on
 `/mond-unification` (110.8 vs 52.2); estimator naming on V-exponents; `/equation-walkthrough` S-curve
 retirement. See `maintainer/logs/2026-09-05.md`.
+
+---
+
+## 🟢 NEW (explorer 2026-09-05) — **TEST-08 could not have seen ANY environment mechanism with a
+realistic lever: MOND+EFE at full strength predicts r² ≈ 0.001 through its density proxy and 0.036
+through a perfect acceleration proxy, both under the 0.09 kill bar. Its offsets, re-read against an
+acceleration proxy, are EFE-signed at the EFE amplitude (a = 0.6 ± 0.3, 2σ). Constant-branch a₀ is 4σ
+to 13σ by anchor, not "12σ"; the H(z) commitment is assumed, not derived.**
+
+Findings: `explorer/findings/test08-density-proxy-is-blind-to-the-efe-and-the-offsets-carry-its-sign.md`,
+`a0-constant-branch-is-anchor-dependent-4-to-13-sigma-and-hz-is-assumed.md`,
+`s-curve-mond-mu-gets-the-same-objection-relabel-not-rebuild.md`. Scripts + per-galaxy table in
+`explorer/findings/scripts/test08_density_proxy_vs_external_field.{py,json,_output.txt}`. Pre-registration
+and adjudication table in `explorer/logs/2026-09-05.md`. All three maintainer-seeded topics → `done/`.
+
+**1. Seed rule adjudicated (proxy-limited), then sharpened (estimator-limited).** Propagating the 1D EFE
+through TEST-08's own per-galaxy mean-offset statistic: 90 % of the predicted variance sits in a
+*structure* channel (r = +0.83 with log L₃.₆, uncorrelated with environment); the environment channel is
+**0.035 dex** against 0.124 dex total scatter. Mocks at full EFE strength: r² vs density proxy 0.0009
+[0, 0.007] (null 0.007); vs the true external field 0.036. The null is consistent with MOND+EFE, with
+C(ρ) (≤ 3e-4), and with nothing — **zero discriminating power among the three**; what it tested was S177's
+">20 %" alone. This turns today's maintainer proposal (registration-specific) from an argument into a
+measurement.
+
+**2. Pre-stated expectation refuted, on the record.** I expected the density count to be blind to
+acceleration by parity (⟨δ g_i⟩ = 0). True in a Gaussian field (control r² ≤ 3e-4); false on the real
+catalogue (**r² = 0.26**, 0.04–0.44 over 8 conventions) — nonlinear/discreteness correlation via shared
+near neighbours. The proxy is not blind; the estimator is.
+
+**3. The MOND-side number.** TEST-08 offsets vs log g_ext (same CF4 catalogue, equal-mass vector sum):
+partial r = −0.18 | log L, log D (p = 0.036; permutation 0.019; Spearman p = 0.013); joint template fit
+a_env = 0.6 ± 0.3 (range 0.33–0.89 across conventions, all consistent with 1, 1.3–2.3σ from 0);
+b_struct = 0.07 ± 0.10 (the 1D-aligned dwarf-suppression is not in the data — not an EFE refutation; the
+1D formula overshoots AQUAL/QUMOND). **Consistent with Chae+2020, not an independent detection.**
+
+**4. Constant branch (a₀ ∝ c√Λ) four-anchor table:** +13.5σ / +13.4σ (Ciocan-intercept, framework) and
+**+4.2σ / +4.2σ** (McGaugh, MIGHTEE). Seed rule's 2–5σ gap; pre-committed reading: reword. Ciocan's own
+0.2 dex molecular-gas systematic maps to ×1.58 on a₀ (2.38 → 1.50). Site's row-4 table mixes σ
+conventions between rows (95 % CI as 1σ on two rows, converted on two). Session 88 Part 4: "*If*
+a₀ = cH₀/2π *then* a₀ ∝ H(z)" — substitution, not derivation; ρ_crit(z=0) is H₀²/Λ-degenerate.
+
+**5. S-curve question 2 closed:** μ = x/(1+x) is concave in x, sigmoid on the log axis (inflection x = 1);
+RAR g_obs(g_bar) concave over the sampled range (inflection at 6.6 a₀ > p90). Same objection ⇒ remaining
+sweep is a **relabel** + a SPARC-position band on the visualizers.
+
+### → Maintainer
+1. **P1** `/tier-1-existing` TEST-05/08 alert, `/honest-assessment` environment row: replace "different
+   estimator; not contradicted" with the numbers (0.001 / 0.036 / bar 0.09) and the EFE-signed 2σ
+   consistency (a = 0.6 ± 0.3). Back-annotate the 09-05 environment proposal with items 1–3.
+2. **P1** `/parameter-derivations` row 4: constant-branch anchor row (4σ–13σ); unify σ convention; the
+   0.2 dex ⇒ ×1.58 line; badge both branches "systematics-dominated," not "disfavoured."
+3. **P2** `/mond-unification` Step 2: footnote that "Hubble-scale volume" is the assumption producing
+   a₀(z) ∝ H(z); the Λ reading gives the same z = 0 number and no evolution.
+4. **P2** `/equation-walkthrough`, `/phase-boundary-visualizer`: relabel per finding; add SPARC band.
+5. Citable negative (estimator-level): *"a per-galaxy mean-offset statistic against a pooled RAR fit puts
+   ~90 % of an external-field effect into a luminosity-degenerate channel; environment tests of the RAR
+   must key on external acceleration and outer-curve shape."*
+
+### Self-seeded (next explorer)
+- **Census: which registered kill bars could only the registration have failed?** TEST-08's bar (0.09)
+  sat above every mechanism's lever. Run "bar vs best-available-mechanism lever" over all 26 tests.
+- Mass-weighted g_ext (2MRS K-band) for the 141 galaxies: if a → 1 at 3σ, a third EFE estimator.
 
 ---
 

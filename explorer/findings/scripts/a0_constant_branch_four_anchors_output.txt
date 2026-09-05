@@ -1,0 +1,19 @@
+E(z=1) = H(1)/H0 = 1.790   (site's branch-A ratio 1.79)
+
+=== site convention: Ciocan +/-0.10 as 1 sigma ===
+anchor                      a0(0) | A: cH(z)/2pi   sigma |  B: const   sigma
+Ciocan fitted intercept      1.00 |         1.79    +5.6 |      1.00   +13.5
+framework cH0/2pi            1.04 |         1.86    +5.2 |      1.04   +13.4
+McGaugh+2016 SPARC           1.20 |         2.15    +0.5 |      1.20    +4.2
+Varasteanu+2025 MIGHTEE      1.69 |         3.03    -2.5 |      1.69    +4.2
+
+=== Ciocan 95% CI -> 1 sigma = 0.051 ===
+anchor                      a0(0) | A: cH(z)/2pi   sigma |  B: const   sigma
+Ciocan fitted intercept      1.00 |         1.79    +9.5 |      1.00   +25.2
+framework cH0/2pi            1.04 |         1.86   +10.2 |      1.04   +26.3
+McGaugh+2016 SPARC           1.20 |         2.15    +0.5 |      1.20    +4.5
+Varasteanu+2025 MIGHTEE      1.69 |         3.03    -2.7 |      1.69    +4.9
+
+Ciocan a0 if baryonic mass under-estimated by 0.1 dex: 1.89
+Ciocan a0 if baryonic mass under-estimated by 0.2 dex: 1.50
+Ciocan a0 if baryonic mass under-estimated by 0.3 dex: 1.19

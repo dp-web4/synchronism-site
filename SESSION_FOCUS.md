@@ -1,7 +1,35 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-05 (explorer)*
+*Last updated: 2026-09-06 (maintainer)*
+
+---
+
+## 🟢 MAINTAINER 2026-09-06 — **the site under-reported its own dark-energy deflation, and two public
+personas rediscovered the three-C split unaided.** WAKE: no new proposal — the research-direction signal
+(density-keyed vs acceleration-keyed C under one symbol) is the dp-gated 2026-08-24 three-C proposal; an
+addendum recording the independent public rediscovery was back-annotated (`e75b731a`). The other research
+signal cut the *opposite* way from the visitor's ask: Pass 4 wanted a seventh refutation row for the
+dark-energy sector at "3.4–5.4σ", but PREDICTIONS.md already records the 2026-08-12 direct DESI DR2 fit
+(substituted family ≡ ΛCDM, Δχ² = −0.3; covariant completions fail the fit) — the `/dark-energy` page
+still said that fit "has not been done." Fixed: new "direct fit" section, badge → reparametrization,
+ledger row "Not counted: dark-energy sector — Bucket 3" on Honest Assessment. **Drained (visitor 09-06
+HIGHs):** galaxy count on `/why-synchronism`, `/key-claims`, `/galaxy-rotation` rendered from `ledger.ts`
+(new `GALAXIES_MECHANISM = 175`); two-model naming at point of use (form-selection table states x =
+g_bar/a₀ + the ln N = 7.94 BIC-penalty check; Explorer "two models, one curve"; TEST-02 row states the
+branch and MOND+EFE 1.0–1.4× bracket — **unverified, seeded to explorer**); Tier-1 badge tally computed
+from a single `TALLY` object with TEST-01/03s/05 merged, caveat 1 "3–4 not 6" → ledger split;
+`/dark-matter` plain-words paragraph before the badge, μ_eff defined vs MOND's μ. **MEDIUMs:** H₀ = 77.6
+now carries ±15.5 (0.7σ from Planck) on three pages — an over-refutation in the framework's disfavour,
+flagged by the explorer 2026-07-26 and never absorbed; R₀ label loses "Validated"; 8.7σ cited (MNRAS 530,
+1781); badge definitions first in the HA jump list; `/for-researchers` artifact 5 = density-keyed
+unidentifiability no-go; `/start-here` and `/tools` redirects made permanent; melting-point and "Markov"
+glosses on the Beginner path. **Not done (reasoned):** equation-walkthrough warning placement (two personas
+object, but the note was placed first deliberately on 2026-07-10 — needs a design call, not a swap);
+galaxy-plotter SPARC component velocities (open topic); consciousness-demo banner collapse; quantum-
+predictions stale-protocol removal; breadcrumb middle-segment index pages. Four explorer topics seeded.
+Note: Pass 4's quoted "Executed: 6 / Kills: 5" tally does not exist in source — a WebFetch synthesis; the
+real defect was the badge's stale "4 executed". See `maintainer/logs/2026-09-06.md`.
 
 ---
 

@@ -10,7 +10,7 @@ export default function DarkEnergy() {
     <>
       <Breadcrumbs currentPath="/dark-energy" />
       <h1>Dark Energy &amp; DESI</h1>
-      <ValidationBadge status="untested" label="Kill-or-tie — proposed TEST-26 — currently disfavoured at quadrant level, adjudicable at DESI DR3 (~2027–28)" />
+      <ValidationBadge status="reparametrization" label="ΛCDM where it fits (direct DESI DR2 fit 2026-08-12: γ = 0.487, Δχ² = −0.3); covariant completions fail the fit — proposed TEST-26 is a consistency check at DESI DR3, not a discriminator" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -75,7 +75,10 @@ export default function DarkEnergy() {
           w&#x2090;&nbsp;&lt;&nbsp;0, a crossing of w&nbsp;=&nbsp;&minus;1 &mdash; in all four of its data
           combinations. Scanning &gamma;: zero values reach that quadrant; forcing w&#x2080; to match compels a
           wrong-sign w&#x2090; (offsets 3.4&ndash;5.4&sigma; across the combinations, sign-and-scale statement
-          only &mdash; no covariance is claimed).
+          only &mdash; no covariance is claimed).{' '}
+          <strong style={{ color: '#f59e0b' }}>Those &sigma; figures did not survive a direct fit</strong> &mdash; see
+          &ldquo;The direct fit&rdquo; below: forcing w&#x2080; to DESI&apos;s central value prices a point the
+          likelihood never visits. The sign lock is real; its cost is &Lambda;CDM&apos;s cost.
         </p>
         <div style={{
           background: 'rgba(139,92,246,0.07)',
@@ -129,7 +132,10 @@ export default function DarkEnergy() {
               <strong>0 of 192 &gamma; values reach the DESI quadrant, at every Brans-Dicke &omega; tested</strong>{' '}
               (0, 1, 5, 50): the completed family crosses the phantom divide in the <em>anti</em>-DESI direction.
               Forcing w&#x2080; to DESI&apos;s value forces w&#x2090;&nbsp;=&nbsp;+0.23&hellip;+0.60 &mdash; wrong
-              sign in all four combinations (3.4&ndash;6.3&sigma;, sign-and-scale only).
+              sign in all four combinations (3.4&ndash;6.3&sigma;, sign-and-scale only). Re-priced by the direct fit
+              below: B does not merely miss the quadrant, it <strong>fails the fit</strong> (&Delta;&chi;&sup2; &ge; +79
+              vs &Lambda;CDM at every &omega;), and at the Cassini-allowed &omega; &ge; 4&times;10&#x2074; the no-go
+              hardens (w&#x2080; = &minus;3.18).
             </p>
           </div>
         </div>
@@ -179,6 +185,53 @@ export default function DarkEnergy() {
       </section>
 
       <section className="section content-width">
+        <h2>The direct fit (2026-08-12): the quadrant rhetoric dissolves, the covariant no-go hardens</h2>
+        <p>
+          Every DESI statement above was made in CPL (w&#x2080;,&thinsp;w&#x2090;) space, a parameterization the
+          family does not live in. The family was then fit <em>directly</em> to DESI DR2 BAO (13 points, per-tracer
+          correlations) + Planck 2018 distance priors + the Dovekie SN recalibration (1,820 SNe, full covariance),
+          with the pipeline first reproducing DESI&apos;s published w&#x2080;w&#x2090;CDM posture. Three results:
+        </p>
+        <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', fontSize: '0.9rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <li>
+            <strong>The substituted family is not &ldquo;3.4&ndash;6.3&sigma; excluded&rdquo; &mdash; it is &Lambda;CDM.</strong>{' '}
+            Best &gamma; = 0.487 (&minus;0.021/+0.024), &Delta;&chi;&sup2; = &minus;0.3 vs &Lambda;CDM with one extra
+            parameter; its best member projects to (w&#x2080;, w&#x2090;) = (&minus;0.993, +0.023). It cannot reach the
+            crossing, and the data-level price of that is exactly &Lambda;CDM&apos;s own: +11.0 behind w&#x2080;w&#x2090;CDM
+            (~2.9&sigma; for two parameters), no more. The forced-w&#x2080; &sigma; figures were the fifth instance of an
+            exclusion-flavoured number that did not survive execution.
+          </li>
+          <li>
+            <strong>Both covariant completions fail the fit outright.</strong> Completion A is exact Einstein&ndash;de
+            Sitter: &chi;&sup2; &asymp; 9,900. Completion B is &Delta;&chi;&sup2; = +79 to +187 worse than &Lambda;CDM for
+            every &omega; tested &mdash; and (2026-08-19) the published &omega; grid topped out 800&times; inside the region
+            Cassini excludes for an unscreened scalar (&omega; &ge; 4&times;10&#x2074;); at the allowed &omega; the no-go
+            hardens to w&#x2080; = &minus;3.18. The sector survives current data only in its non-covariant form, and only
+            by being &Lambda;CDM.
+          </li>
+          <li>
+            <strong>The first executed cross-sector &gamma; test &mdash; and it has no power to fail.</strong>{' '}
+            &gamma;<sub>cosmo</sub> = 0.487 vs &gamma;<sub>galaxy</sub> = 0.489 &ldquo;agree at 0.1&sigma;&rdquo; &mdash;
+            but &gamma; = &frac12; is exactly &Lambda; and &gamma; = 0.489 is exactly MOND&apos;s simple &mu;, so the two
+            sectors&apos; <em>standard</em> models sit 0.011 apart in &gamma;-space by construction; separating them needs
+            &sigma;<sub>&gamma;</sub> &asymp; 0.004 and the SPARC side delivers 0.11 (galaxy-limited, 2026-08-14). Not a
+            concordance; inherited from &Lambda; + MOND.
+          </li>
+        </ul>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          Archive ledger status after this: <strong>Bucket 3 (reparametrization)</strong> &mdash; &Lambda;CDM where it
+          lives, excluded where it would differ; no novel dark-energy prediction; refutation count unchanged. A
+          researcher persona (2026-09-06) asked for a seventh refutation row on the strength of the &sigma; figures
+          above; the honest answer is the opposite &mdash; the sector is <em>less</em> refuted than this page said,
+          because it is not distinct. Script and inputs:{' '}
+          <code style={{ fontSize: '0.8rem' }}>explorer/findings/scripts/fit_gamma_family_to_desi_dr2.py</code>;
+          finding <code style={{ fontSize: '0.8rem' }}>gamma-family-direct-fit-desi-dr2-substituted-is-lcdm-covariant-excluded.md</code>.
+          (This section was missing from 2026-08-12 to 2026-09-06 while the archive ledger already carried the result;
+          the page under-reported its own deflation.)
+        </p>
+      </section>
+
+      <section className="section content-width">
         <h2>Honest bounds on the DESI comparison</h2>
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', fontSize: '0.9rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
           <li>
@@ -189,7 +242,9 @@ export default function DarkEnergy() {
             2024&ndash;25). That literature is the framework&apos;s <em>best available defense</em> and is cited
             here in both directions: it could rescue the framework from a premature kill, and it could equally let
             a real crossing be dismissed as artifact. The honest adjudication &mdash; fitting the actual
-            one-parameter w(z;&thinsp;&gamma;) family to the published DESI chains &mdash; has not been done.
+            one-parameter w(z;&thinsp;&gamma;) family to the data &mdash; <strong>was done on 2026-08-12</strong> (section
+            above); this bullet read &ldquo;has not been done&rdquo; until 2026-09-06. The CPL-projection debate is now
+            moot for the substituted family: it sits at &Lambda;CDM&apos;s corner regardless of parameterization.
           </li>
           <li>
             <strong>The sector is background-only.</strong> There is no perturbation sector, so the CMB-anchored

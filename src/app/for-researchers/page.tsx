@@ -6,7 +6,7 @@ import ValidationBadge from '@/components/ValidationBadge';
 
 export const metadata: Metadata = {
   title: 'For Researchers: What\'s Citable — Synchronism',
-  description: 'Four citable negative results extracted from the failure documentation: local-density locality no-go, A2ACW program-level null, dim-4 LIV exclusion of absolute-time substrates, and the B1 CHSH substrate null (S ≤ 2 without signaling).',
+  description: 'Five citable negative results extracted from the failure documentation: local-density locality no-go, A2ACW program-level null, dim-4 LIV exclusion of absolute-time substrates, the B1 CHSH substrate null (S ≤ 2 without signaling), and the density-keyed unidentifiability no-go (knee above the sampled density ⇒ interpolant unmeasurable).',
 };
 
 export default function ForResearchers() {
@@ -581,6 +581,47 @@ export default function ForResearchers() {
           <em>unrunnable as stated</em> rather than untested — a third category beyond
           refuted/untested. The only data contact is galaxy rotation, where C&apos;s parameters are fit
           to the prediction target.
+        </div>
+
+        {/* Artifact 5: density-keyed unidentifiability no-go (promoted 2026-09-06 from Parameter Derivations item 7) */}
+        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #8b5cf6' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>5. Density-keyed unidentifiability &mdash; when the knee sits above the sampled density, the interpolant is unmeasurable</h2>
+            <ValidationBadge status="audited-negative" label="Audited-Negative — Executed 2026-09-03, framework-independent" />
+          </div>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
+            <strong>Statement.</strong> For any algebraic modification of gravity keyed on local density,
+            g<sub>obs</sub> = g<sub>bar</sub>/&#x03B5;(&#x03C1;) with a saturating &#x03B5; whose knee &#x03C1;<sub>c</sub> is
+            calibrated above galactic midplane densities (here &#x03C1;<sub>crit</sub> &asymp; 10&sup3; M<sub>&#x2609;</sub>/pc&sup3;
+            at V = 200 km/s against ~0.1 M<sub>&#x2609;</sub>/pc&sup3; in the solar neighbourhood), rotation-curve data sample
+            only x = &#x03C1;/&#x03C1;<sub>c</sub> &#x226A; 1, where &#x03B5; equals its own linearisation to better than
+            observational precision. The shape parameter and the knee normalisation then enter only through their
+            product: the model has <em>one</em> measurable number, and it is the floor.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Numbers (SPARC, explorer 2026-09-03).</strong> SPARC samples x at a median of ~7&times;10<sup>&minus;5</sup>;
+            C = &#x03B3;x holds to 1.8% at worst, 0.22&times; the data&apos;s precision on C. Fisher correlation
+            &#x03C1;(ln&#x03B3;, ln A) = +1.000000. Moving &#x03B3; by 40&times; and A by 10&#x2079; changes &#x03C7;&sup2;/N by
+            1.07&ndash;2.7&times;; moving the boost floor changes it by 6.35&times;10&#x2074;. The galaxy data measure the
+            ceiling and nothing else.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Transferability and the counter-example.</strong> This applies to any &#x03B5;(&#x03C1;) model with a knee
+            above ~10<sup>&minus;2</sup> M<sub>&#x2609;</sub>/pc&sup3;. Refracted Gravity (Matsakos &amp; Diaferio 2016;
+            Cesare et al. 2020) is the contrast case: its permittivity &#x03B5;(&#x03C1;) is the <em>same object</em> as this
+            framework&apos;s C<sub>&#x03A9;</sub> (closed-form identity, 2026-08-26) but its knee is fitted <em>inside</em>
+            the sampled range, so its shape parameters are identifiable and were measured. Same equation, one identifiable
+            and one not, decided entirely by where the knee was placed &mdash; which is the citable point.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+            <strong>Honest novelty statement:</strong> the identifiability logic is standard (a linearised model cannot
+            constrain its nonlinearity); what is new is the executed Fisher analysis on the specific framework and the
+            placement of Refracted Gravity as the identifiable member of the same family. A researcher persona
+            (2026-09-06) called this &ldquo;a two-page note, not a subsection&rdquo;; it lived under item 7 of{' '}
+            <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
+            until today. The full Fisher matrix is not yet written up as a standalone artifact &mdash; seeded to the
+            explorer track.
+          </p>
         </div>
 
         <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>

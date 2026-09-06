@@ -37,8 +37,11 @@ export default function CoherenceFunction() {
         <div style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: 'var(--color-accent-violet)' }}>The most clarifying algebraic fact about this
           equation (moved here 2026-07-18 — it previously lived only on the walkthrough):</strong>{' '}
-          the tanh&#x2218;ln composition is <em>exactly</em> a two-parameter Hill function. With
-          x = &#x03C1;/&#x03C1;<sub>crit</sub>,
+          the tanh&#x2218;ln composition is <em>exactly</em> a Hill-type rational function of (1+x)<sup>2&#x03B3;</sup>
+          &mdash; a Hill function in x <em>itself</em> only at &#x03B3; = &frac12;, where it is x/(x+2). (That is why
+          the form-selection table below lists &ldquo;Hill n=1&rdquo; and &ldquo;tanh-log&rdquo; as separate rows;
+          wording corrected 2026-09-06 from &ldquo;a two-parameter Hill function,&rdquo; caught by a graduate-physics
+          persona.) With x = &#x03C1;/&#x03C1;<sub>crit</sub>,
           tanh(&#x03B3;&middot;ln(1+x)) = [(1+x)<sup>2&#x03B3;</sup> &minus; 1] / [(1+x)<sup>2&#x03B3;</sup> + 1]
           — an algebraic identity, verified numerically (the ln is cosmetic; nothing about the composition is
           load-bearing). Slope behavior follows directly: dC/dx = &#x03B3;(1&minus;C&sup2;)/(1+x) is maximal at
@@ -213,7 +216,13 @@ export default function CoherenceFunction() {
           <strong style={{ color: 'var(--color-accent-violet)' }}>Form selection, executed (2026-07-22).</strong>{' '}
           Ten compander forms fit to the real SPARC RAR (2,807 points, same pipeline that produced the
           &#x03B3;=2 kill, reproduced at +184.0 as a sanity check). Verdict rule pre-fixed before running
-          (&ldquo;privileged&rdquo; = beat every same-parameter-count member by &#x0394;BIC &gt; 10):
+          (&ldquo;privileged&rdquo; = beat every same-parameter-count member by &#x0394;BIC &gt; 10).{' '}
+          <strong style={{ color: '#f59e0b' }}>What x is in this table (added 2026-09-06):</strong> x = g<sub>bar</sub>/a<sub>0</sub> &mdash;
+          the fit is keyed on <em>acceleration</em>, MOND&apos;s own variable, not on &#x03C1;/&#x03C1;<sub>crit</sub>.
+          The density-keyed form never leaves its linear regime in any SPARC disk and loses head-to-head at
+          &#x0394;BIC +2843 (archive 2026-08-24). Every number below is a statement about the acceleration-keyed
+          branch; two visitor personas read this table as the density law and could not reconcile it with the
+          straight line the Coherence Explorer shows &mdash; they were reading two models under one symbol.
           <table style={{ width: '100%', marginTop: '0.6rem', marginBottom: '0.6rem', borderCollapse: 'collapse', fontSize: '0.84rem' }}>
             <thead>
               <tr style={{ borderBottom: '1px solid rgba(139,92,246,0.3)', textAlign: 'left' }}>
@@ -235,6 +244,10 @@ export default function CoherenceFunction() {
               <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>tanh-log, &#x03B3;=2 pinned (the framework&apos;s asserted value)</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>pinned</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1485</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#ef4444' }}>+184.0 (refuted)</strong></td></tr>
             </tbody>
           </table>
+          <strong>A consistency check the table passes without saying so (added 2026-09-06):</strong> free-&#x03B3;
+          tanh-log (+7.1) and Hill n=1 (&minus;0.7) are the same curve at &#x03B3; &asymp; &frac12;, so their BIC gap
+          should be exactly the one-parameter penalty ln&nbsp;N = ln&nbsp;2807 = 7.94. The gap is 7.8. That is the
+          cleanest single demonstration on this page that &#x03B3; adds nothing to MOND&apos;s &#x03BC;.{' '}
           What the data actually selects is the pair of <em>asymptotic rates</em> — deep-MOND slope
           &#x03BC; &#x221D; y, and a return to Newton at least power-law fast — not any particular sigmoid.
           The three refuted members fail at the edges (Gompertz vanishes too fast at low y; arctan-log and

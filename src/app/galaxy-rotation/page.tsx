@@ -6,6 +6,7 @@ import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
+import { GALAXIES_RUN, GALAXIES_RUN_BREAKDOWN, GALAXIES_MECHANISM } from '@/lib/ledger';
 
 export default function GalaxyRotation() {
   return (
@@ -163,9 +164,12 @@ export default function GalaxyRotation() {
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>14,760</div>
+            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>{GALAXIES_RUN}</div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              total galaxies tested
+              galaxies run ({GALAXIES_RUN_BREAKDOWN})
+            </div>
+            <div style={{ fontSize: '0.75rem', color: '#f59e0b', marginTop: '0.25rem' }}>
+              mechanism tested on {GALAXIES_MECHANISM} SPARC curves; the TFR scatter test never ran as registered
             </div>
           </div>
         </div>

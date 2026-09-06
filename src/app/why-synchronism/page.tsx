@@ -5,6 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import TermTooltip from '@/components/TermTooltip';
+import { GALAXIES_RUN, GALAXIES_RUN_BREAKDOWN, GALAXIES_MECHANISM } from '@/lib/ledger';
 
 export default function WhySynchronism() {
   return (
@@ -149,7 +150,12 @@ export default function WhySynchronism() {
           <div className="card">
             <h3>Galaxy Rotation Curves</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-              Tested against 14,760 galaxies (SPARC + ALFALFA-SDSS).
+              Tested against {GALAXIES_RUN} galaxies ({GALAXIES_RUN_BREAKDOWN}) &mdash; but the
+              mechanism itself was tested on the {GALAXIES_MECHANISM} resolved SPARC rotation curves; the
+              14,435-object Tully&ndash;Fisher scatter test was registered and never run as registered.
+              <em style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}> (This card said &ldquo;14,760&rdquo;
+              until 2026-09-06 while the landing page called that figure incorrect &mdash; Beginner step 1
+              contradicting the page it came from. Now rendered from one source.)</em>{' '}
               a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 13% &mdash; but this result is shared
               with <TermTooltip term="MOND">MOND</TermTooltip> and other frameworks.
               (<strong>MOND</strong>, in one line: a 1983 rival idea that explains fast-spinning galaxy
@@ -189,8 +195,9 @@ export default function WhySynchronism() {
           <div className="card">
             <h3>Melting Point Predictions</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-              Average error: 53%. The coherence function doesn&apos;t capture enough
-              crystal-specific physics for accurate melting points.
+              Why a galaxy equation cares about melting points: the bet was <em>one</em> density-to-coherence curve
+              for every scale, so the same curve was tried on chemistry too. Average error: 53%. The coherence
+              function doesn&apos;t capture enough crystal-specific physics for accurate melting points.
             </p>
             <span className="badge badge-failed" title="Prediction contradicted by data — kill criterion fired or claim demoted on audit">Failed</span>
           </div>

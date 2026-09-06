@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
+import { GALAXIES_RUN, GALAXIES_RUN_BREAKDOWN, GALAXIES_MECHANISM } from '@/lib/ledger';
 
 export default function KeyClaims() {
   return (
@@ -472,11 +473,17 @@ export default function KeyClaims() {
             says &ldquo;Synchronism makes no statement on H&#x2080;&rdquo; while this claim carries
             a&#x2080; = cH&#x2080;/(2&#x03C0;). Those cannot both hold: invert the relation with the measured
             a&#x2080; = 1.2 &#x00D7; 10&#x207B;&#x00B9;&#x2070; and you get
-            H&#x2080; = 2&#x03C0;a&#x2080;/c &#x2248; <strong>77.6 km/s/Mpc</strong> — above even SH0ES by
-            several &#x03C3;, and far above the CMB value. A refutable consequence was being booked as
-            silence. Read either as a soft constraint the framework fails, or as further evidence that
-            a&#x2080; &#x2248; cH&#x2080;/2&#x03C0; is numerology rather than a derivation — but not as
-            &ldquo;no statement.&rdquo;
+            H&#x2080; = 2&#x03C0;a&#x2080;/c &#x2248; <strong>77.6 &plusmn; 15.5 km/s/Mpc</strong> once
+            a&#x2080;&apos;s own systematic (1.20 &plusmn; 0.24 &times; 10&#x207B;&#xB9;&#x2070; m/s&sup2;, McGaugh et al. 2016)
+            is carried through &mdash; 0.7&#x03C3; from Planck&apos;s 67.4 and 0.3&#x03C3; from SH0ES&apos; 73.0,
+            consistent with both. A consequence was being booked as silence; it is <em>non-discriminating</em>,
+            not failing, and becomes a constraint only when a&#x2080;&apos;s systematic budget shrinks ~5&times;.
+            Read it as one more sign that a&#x2080; &#x2248; cH&#x2080;/2&#x03C0; is bookkeeping rather than a
+            derivation — but not as &ldquo;no statement.&rdquo;{' '}
+            <em style={{ color: 'var(--color-text-muted)' }}>(Softened 2026-09-06: from 2026-07-27 this box read
+            &ldquo;above even SH0ES by several &#x03C3;&rdquo; &mdash; an error-bar deflation the explorer had
+            flagged on 2026-07-26 and a researcher persona flagged again. An over-refutation, for once in the
+            framework&apos;s disfavour.)</em>
           </div>
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
@@ -570,7 +577,10 @@ export default function KeyClaims() {
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            Tested against 14,760 galaxies (SPARC + ALFALFA-SDSS). a&#x2080; derivation within 13%.
+            Tested against {GALAXIES_RUN} galaxies ({GALAXIES_RUN_BREAKDOWN}); the mechanism itself was
+            tested on the {GALAXIES_MECHANISM} resolved SPARC rotation curves (123 for TEST-09, 153 for TEST-10) &mdash;
+            the 14,435-object Tully&ndash;Fisher scatter test (TEST-03) was registered and never run as registered.
+            (&ldquo;14,760&rdquo; stood here until 2026-09-06; corrected to the ledger figure.) a&#x2080; derivation within 13%.
             Freeman&apos;s Law &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#8776; 119 M&#x2609;/pc&sup2; at the
             site-standard H&#x2080; = 67.4 km/s/Mpc &mdash; consistent with Freeman&apos;s observed normalization
             within the factor-of-~2 mass-to-light systematic, which is all the observable supports (sub-percent

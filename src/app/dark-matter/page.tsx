@@ -13,7 +13,19 @@ export default function DarkMatter() {
       <Breadcrumbs currentPath="/dark-matter" />
       <PathNav currentPath="/dark-matter" />
       <h1>Dark Matter Reframed</h1>
+      <p style={{ maxWidth: '65ch', color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>
+        <strong>The idea in plain words:</strong> the same density-to-togetherness curve used everywhere on this site
+        (a crowd acts independently; a marching band acts as one) was applied to galaxies. Where matter is sparse,
+        the curve says gravity&apos;s effective pull should get a <em>boost</em> &mdash; and that boost was meant to
+        replace the invisible extra mass called dark matter. Tested on real galaxies, the boost turned out to be capped
+        at about 3&times;, while galaxy edges need up to 14&times;. That is why the badge below reads Failed.
+      </p>
       <ValidationBadge status="failed" label="Failed — Mechanism Under Revision" />
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+        (Reordered 2026-09-06: the badge stood above the first sentence, so a casual reader met the verdict before the
+        idea. The jargon further down &mdash; MOND, BAO, CMB, SPARC &mdash; is defined in the{' '}
+        <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.)
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -89,7 +101,10 @@ export default function DarkMatter() {
         </p>
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', marginBottom: '1rem' }}>
           <li><strong>Viscosity sign error:</strong> The CFD reframing maps coherence C to inverse viscosity
-            (C = 1/&mu;<sub>eff</sub>). Dark matter should then be HIGH viscosity (less coherent). But the
+            (C = 1/&mu;<sub>eff</sub>, where &mu;<sub>eff</sub> is an <em>effective dynamic viscosity</em> of the
+            Intent fluid &mdash; not MOND&apos;s interpolating function &mu;, which shares the letter and nothing else;
+            two different &mu;&apos;s appear on this site and this is the fluid one). In plain terms: the theory says
+            galaxies should get <em>more</em> sticky where dark matter is, and they get <em>less</em>. Dark matter should then be HIGH viscosity (less coherent). But the
             Bullet Cluster shows dark matter passes through itself without drag &mdash; it is LESS sticky
             than baryons, not more. High viscosity predicts more interaction, which is the wrong direction.</li>
           <li><strong>Galaxy clusters:</strong> The Bullet Cluster shows a lensing-baryon offset that

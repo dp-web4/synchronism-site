@@ -233,6 +233,7 @@ export default function HonestAssessment() {
       {/* Table of contents */}
       <nav style={{ marginBottom: '2rem', maxWidth: '65ch', fontSize: '0.85rem' }} aria-label="Page contents">
         <strong style={{ color: 'var(--color-text-secondary)' }}>On this page:</strong>{' '}
+        <a href="#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Badge definitions (canonical)</a> &middot;{' '}
         <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>The Verdict</a> &middot;{' '}
         <a href="#coherence-meaning" style={{ color: 'var(--color-accent-blue)' }}>What &ldquo;Coherence&rdquo; Means Here</a> &middot;{' '}
         <a href="#what-was-tested" style={{ color: 'var(--color-accent-blue)' }}>What Was Tested</a> &middot;{' '}
@@ -472,9 +473,10 @@ export default function HonestAssessment() {
                 <tr><td style={{ padding: '0.4rem' }}>TEST-10 dwarf f<sub>DM</sub> ceiling</td><td style={{ padding: '0.4rem' }}>The same asserted B<sub>max</sub> &mdash; corollary, not an independent root</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>RAR shape, &#x0394;BIC = +184 at &#x03B3;=2</td><td style={{ padding: '0.4rem' }}>The asserted &#x03B3;=2 pin. Free-&#x03B3; &rarr; 0.489 recovers MOND, so this refutes a pin, not a mechanism</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>Environment scatter, r&sup2; = 0.0001 (TEST-08 / TEST-03s)</td><td style={{ padding: '0.4rem' }}>The <em>registered</em> amplitude (S177: environment explains &gt;20% of RAR scatter, kill bar r&sup2; &lt; 0.09) &mdash; a number never derived from C(&#x03C1;). The equation&apos;s own ambient-density lever at SPARC outer radii is &le; 2&times;10<sup>&minus;3</sup> dex against ~0.1 dex of scatter, i.e. r&sup2; &asymp; 2&ndash;5&times;10<sup>&minus;4</sup> at most; the measured 1&times;10<sup>&minus;4</sup> is <em>consistent with the equation</em>. Reclassified 2026-09-05 (this row read &ldquo;the cleanest kill on the list&rdquo; until then; caught by a visitor researcher persona). The null stands as a permanent elimination of S177&apos;s claim and as a transferable result: the RAR is a universal local law to r&sup2; &lt; 10<sup>&minus;4</sup> against ambient density</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Registration-specific</td></tr>
-                <tr><td style={{ padding: '0.4rem' }}>TEST-25 Cassini/SPARC, +17.95&sigma;</td><td style={{ padding: '0.4rem' }}>The RAR-preferred interpolating-function family &mdash; <strong>which MOND also uses</strong>. Published as Desmond, Hees &amp; Famaey 2024 at 8.7&sigma;</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Inherited from MOND</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>TEST-25 Cassini/SPARC, +17.95&sigma;</td><td style={{ padding: '0.4rem' }}>The RAR-preferred interpolating-function family &mdash; <strong>which MOND also uses</strong>. Published as Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781) at 8.7&sigma; &mdash; their figure marginalizes over a&#x2080;, M/L and RAR-fit uncertainty, which is why it is ~2&times; smaller than the +17.95&sigma; here (citation added 2026-09-06)</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Inherited from MOND</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>Bell/CHSH substrate (Bet B1), S &le; 2.00</td><td style={{ padding: '0.4rem' }}>Bell&apos;s theorem. A proof, not an experiment &mdash; this page calls it a &ldquo;pedagogical corollary&rdquo; elsewhere</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Theorem</td></tr>
                 <tr style={{ opacity: 0.8 }}><td style={{ padding: '0.4rem' }}><em>Not counted:</em> a&#x2080;(z) = cH(z)/2&#x03C0; vs the high-z RAR (Ciocan et al. 2026, arXiv:2604.22613)</td><td style={{ padding: '0.4rem' }}>The one prediction that structurally differs from MOND&apos;s constant a&#x2080;. Tested, and <strong>non-discriminating</strong>: the deviation is anchor-dominated (four published a&#x2080;(0) values spread 69%; consistent at 0.5&#x03C3; on the McGaugh+2016 anchor) and &#x039B;CDM+baryons simulations predict the same growth. Listed here 2026-09-05 because it appeared on no ledger &mdash; see <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link> row 4</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Non-discriminating</td></tr>
+                <tr style={{ opacity: 0.8 }}><td style={{ padding: '0.4rem' }}><em>Not counted:</em> Dark-energy sector (&rho;<sub>DE</sub> = &rho;<sub>m</sub>(1&minus;C)/C, Session 100) vs DESI DR2</td><td style={{ padding: '0.4rem' }}>A researcher persona (2026-09-06) asked why the sector&apos;s miss of DESI&apos;s w = &minus;1 crossing is not a seventh refutation. Because on <strong>direct likelihood fit</strong> (DR2 BAO + Planck priors + Dovekie SN, executed 2026-08-12) it is not a miss: the substituted family nests &Lambda;CDM at &gamma; = &frac12; and the data put it there (&gamma; = 0.487, &Delta;&chi;&sup2; = &minus;0.3 vs &Lambda;CDM), so it pays &Lambda;CDM&apos;s own ~2.9&sigma; crossing cost and no more. The quoted 3.4&ndash;5.4&sigma; came from forcing w&#x2080; to DESI&apos;s central value, a point the likelihood never visits. The two <em>covariant</em> completions do fail the fit outright (A: exact Einstein&ndash;de Sitter, &chi;&sup2; &asymp; 9,900; B: &Delta;&chi;&sup2; &ge; +79 at every &omega;, hardening to w&#x2080; = &minus;3.18 at the Cassini-allowed &omega; &ge; 4&times;10&#x2074;) &mdash; but those are completions the archive never committed to; refuting them bounds a class, it does not kill a registered prediction. Archive ledger: Bucket 3 &mdash; &Lambda;CDM where it lives, excluded where it would differ. See <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy &amp; DESI</Link></td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Reparametrization (&Lambda;CDM)</td></tr>
               </tbody>
             </table>
           </div>
@@ -1193,11 +1195,14 @@ export default function HonestAssessment() {
               this page was the one over-claiming its own silence.</strong> The framework carries
               a₀ = cH₀/(2π) as Claim 3&apos;s key equation. That relation is invertible: with the
               measured a₀ = 1.2 × 10⁻¹⁰ m/s² it returns
-              H₀ = 2πa₀/c ≈ <strong>77.6 km/s/Mpc</strong> — above SH0ES by several σ and far above the
-              CMB value. So there <em>is</em> an H₀ consequence; it is simply unflattering, and it was
-              being booked as no statement at all. What remains true is the substantive point above:
+              H₀ = 2πa₀/c ≈ <strong>77.6 ± 15.5 km/s/Mpc</strong> once a₀&apos;s ±0.24 systematic is carried
+              (0.7σ from Planck&apos;s 67.4, 0.3σ from SH0ES&apos; 73.0 &mdash; consistent with both). So there{' '}
+              <em>is</em> an H₀ consequence; it is currently <em>non-discriminating</em> rather than failing, and it
+              was being booked as no statement at all. <em>(Error bar added 2026-09-06: &ldquo;above SH0ES by several
+              σ&rdquo; was an error-bar deflation &mdash; the explorer&apos;s 2026-07-26 finding, which this page never
+              absorbed until a researcher persona re-derived it.)</em> What remains true is the substantive point above:
               no <em>mechanism</em> for the tension has been worked out, neither an early-time nor a
-              late-time fix. The correct badge is a failing soft constraint, not silence — and it is one
+              late-time fix. The correct badge is a non-discriminating soft constraint, not silence — and it is one
               more reading on which a₀ ≈ cH₀/2π looks like numerology rather than a derivation. Flagged
               by the graduate-physics visitor pass; the same inversion had been noted internally
               2026-07-26 without reaching this page, which is the propagation break rather than the
@@ -1330,7 +1335,7 @@ export default function HonestAssessment() {
           A framework claiming cosmological scope should say explicitly where it is silent. The following are open problems in cosmology (2024–2026) where Synchronism makes no prediction:
         </p>
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', fontSize: '0.9rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-          <li><strong>H₀ tension (~5σ):</strong> CMB vs. distance-ladder Hubble constant disagreement. Synchronism does not address the <em>tension</em> (no mechanism for why CMB and distance-ladder measurements disagree) &mdash; but it is not silent on H₀ itself: inverting a&#8320;&nbsp;=&nbsp;cH&#8320;/(2π) gives H&#8320;&nbsp;&#8776;&nbsp;77.6&nbsp;km/s/Mpc, above both the distance-ladder and CMB values. A failing prediction is not the same as no prediction. (See <Link href="/honest-assessment#h0-tension" style={{ color: 'var(--color-accent-blue)' }}>What&apos;s Untested</Link> above.)</li>
+          <li><strong>H₀ tension (~5σ):</strong> CMB vs. distance-ladder Hubble constant disagreement. Synchronism does not address the <em>tension</em> (no mechanism for why CMB and distance-ladder measurements disagree) &mdash; but it is not silent on H₀ itself: inverting a&#8320;&nbsp;=&nbsp;cH&#8320;/(2π) gives H&#8320;&nbsp;&#8776;&nbsp;77.6&nbsp;&plusmn;&nbsp;15.5&nbsp;km/s/Mpc with a&#8320;&apos;s systematic carried &mdash; consistent with both the distance-ladder and CMB values. A non-discriminating prediction is not the same as no prediction. (See <Link href="/honest-assessment#h0-tension" style={{ color: 'var(--color-accent-blue)' }}>What&apos;s Untested</Link> above.)</li>
           <li><strong>JWST early galaxies:</strong> JWST has found massive, evolved galaxies at z &gt; 10 that challenge standard structure formation. Several modified-gravity frameworks address this; Synchronism has no analysis.</li>
           <li><strong>S₈ tension (receding):</strong> KiDS/DES historically measured σ₈ lower than Planck CMB predicts. Synchronism&apos;s σ₈ prediction (0.76) was calibrated to this tension in Session 102. However, DES Y3 6×2pt and KiDS-Legacy (2024–2025) are pulling S₈ back toward Planck, weakening the tension. Synchronism&apos;s calibration anchor is a transient state, not a stable observational target — which makes TEST-04a post-hoc against a moving baseline.</li>
           <li><strong>Primordial non-Gaussianity (fNL):</strong> DESI and future surveys constrain non-Gaussianity from large-scale structure. No coherence-based prediction exists.</li>
@@ -1394,7 +1399,14 @@ export default function HonestAssessment() {
             2024; Cort&ecirc;s&nbsp;&amp;&nbsp;Liddle 2024; Wolf, Garc&iacute;a-Garc&iacute;a&nbsp;&amp;&nbsp;Ferreira
             2024&ndash;25) &mdash; a debate that currently cuts in the framework&apos;s <em>favor</em> and is cited
             here in both directions: the honest adjudication is a fit of the actual w(z;&thinsp;&gamma;) family to the
-            published chains, which has not been done. <strong>(3)</strong> Completion B pins C to its algebraic
+            data &mdash; <strong>which was done on 2026-08-12</strong> (DR2 BAO + Planck distance priors + Dovekie SN;
+            this sentence read &ldquo;has not been done&rdquo; until 2026-09-06). Result: the substituted family is
+            statistically identical to &Lambda;CDM (best &gamma; = 0.487, &Delta;&chi;&sup2; = &minus;0.3) and sits +11.0
+            behind w&#x2080;w&#x2090;CDM &mdash; exactly &Lambda;CDM&apos;s own ~2.9&sigma; cost, no more; the
+            3.4&ndash;5.4&sigma; offsets above came from forcing w&#x2080; to DESI&apos;s central value, a point the
+            likelihood never visits. Both covariant completions fail the fit outright (A: &chi;&sup2; &asymp; 9,900; B:
+            &Delta;&chi;&sup2; &ge; +79 at every &omega;). So the sector is &Lambda;CDM where it lives and excluded where
+            it would differ &mdash; a reparametrization (archive Bucket 3), not a live kill. <strong>(3)</strong> Completion B pins C to its algebraic
             trajectory (quasi-static ansatz); a dynamical enforcing sector with non-negligible stress is unconstrained
             by anything in the archive. The refutation count does <strong>not</strong> change: nothing here is a new
             executed kill. What stands is scope &mdash; the framework is not silent on the dominant live anomaly in

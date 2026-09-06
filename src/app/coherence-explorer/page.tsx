@@ -201,6 +201,16 @@ export default function CoherenceExplorer() {
               where C = &#x03B3;x to 1.8% at worst (0.22&times; the data&apos;s precision on C) &mdash; a straight line. Toggle to
               linear and zoom to x &lt; 10<sup>&minus;3</sup> to see the regime the data actually occupy (explorer measurement 2026-09-03).
             </p>
+            <p style={{ color: '#fbbf24', fontSize: '0.75rem', marginTop: '0.35rem', borderLeft: '2px solid rgba(245,158,11,0.6)', paddingLeft: '0.5rem' }}>
+              <strong>Two models, one curve (added 2026-09-06).</strong> &ldquo;&#x03B3; &#x2248; 0.49 fits SPARC and fails
+              Cassini&rdquo; is a fact about the <em>acceleration-keyed</em> branch, x = g<sub>bar</sub>/a<sub>0</sub>.
+              &ldquo;SPARC sits at x ~ 7&times;10<sup>&minus;5</sup> where C = &#x03B3;x&rdquo; is a fact about the{' '}
+              <em>density-keyed</em> branch, x = &#x03C1;/&#x03C1;<sub>crit</sub>. The slider draws one curve; the site&apos;s
+              galaxy numbers come from two different arguments of it, and no single model both fits the RAR and is linear
+              over all of SPARC. The two are compared head-to-head on{' '}
+              <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>The Coherence Function</Link>{' '}
+              (density-keyed loses at &#x0394;BIC +2843).
+            </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', marginTop: '0.35rem', borderLeft: '2px solid rgba(139,92,246,0.6)', paddingLeft: '0.5rem' }}>
               <strong style={{ color: '#a78bfa' }}>What the default view actually shows (added 2026-08-08):
               MOND.</strong> Set &#x03B3; = 1/2 exactly and the compander collapses algebraically to

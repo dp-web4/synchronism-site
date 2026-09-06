@@ -44,6 +44,16 @@ export const GALAXIES_RUN_BREAKDOWN = '175 SPARC + 14,435 ALFALFA–SDSS (qualit
 export const GALAXIES_FULL = '14,760';
 export const GALAXIES_FULL_BREAKDOWN = '175 SPARC + 14,585 ALFALFA–SDSS (full cross-match)';
 
+/** The number that actually tested the MECHANISM. Every executed kill (γ=2 pin, boost ceiling
+ *  via TEST-09/10, environment null, Cassini squeeze) ran on the 175 resolved SPARC rotation
+ *  curves (123 after TEST-09's quality cut, 153 for TEST-10). The ALFALFA–SDSS Tully–Fisher
+ *  scatter test (TEST-03) was registered and never run as registered; its 14,435 objects were
+ *  used for a morphology statistic, not a mechanism test. Added 2026-09-06 after three visitor
+ *  personas independently asked which number is honest. */
+export const GALAXIES_MECHANISM = '175';
+export const GALAXIES_SENTENCE =
+  '14,610 galaxies run (175 SPARC + 14,435 ALFALFA–SDSS after the quality cut); the mechanism itself was tested on the 175 resolved SPARC rotation curves — the 14,435-object Tully–Fisher scatter test (TEST-03) was registered and never run as registered';
+
 /** A2ACW session count. The archive's own tallies disagree by hundreds; 3,308 is the
  *  figure the site quotes when a point value is needed, "~3,300" in prose. */
 export const SESSIONS_POINT = '3,308';

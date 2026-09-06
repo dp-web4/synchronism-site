@@ -21,7 +21,7 @@ const nextConfig = {
       {
         source: '/tools',
         destination: '/interactive-tools',
-        permanent: false,
+        permanent: true, // 2026-09-06: canonical is /interactive-tools; visitor tech-writer persona read the 307 as a duplicate page
       },
       {
         source: '/tests',
@@ -293,7 +293,7 @@ const nextConfig = {
       {
         source: '/start-here',
         destination: '/why-synchronism',
-        permanent: false,
+        permanent: true, // 2026-09-06: canonical is /why-synchronism (same visitor finding as /tools)
       },
       // /test-04a — headline empirical result (DESI fσ₈ sign reversal); no per-test page exists
       {

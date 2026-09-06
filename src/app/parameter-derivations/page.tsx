@@ -413,11 +413,16 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>6. R&#x2080; = V&sup2;/(3a&#x2080;)</h3>
-              <ValidationBadge status="reparametrization" label="Dimensional Analysis — 3% Error (⚠ deprecated Validated label)" />
+              <ValidationBadge status="reparametrization" label="Fitted factor — 3% residual on an unstated comparison set" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #91</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Characteristic radius from velocity and acceleration. 97% accuracy against observed values.
+              Characteristic radius from velocity and acceleration. The natural MOND transition radius is V&sup2;/a&#x2080;;
+              the factor 3 is <em>fitted</em>, not derived, and the archive&apos;s &ldquo;97% accuracy&rdquo; was quoted against
+              a comparison set the session does not state &mdash; so the 3% is a one-parameter fit&apos;s residual, not a
+              validation of anything. <em style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>(Label
+              rewritten 2026-09-06: it still carried the word &ldquo;Validated&rdquo; inside a parenthetical, and a
+              graduate-physics persona read it as current.)</em>
             </p>
           </div>
 

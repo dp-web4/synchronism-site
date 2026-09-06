@@ -5,6 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import TermTooltip from '@/components/TermTooltip';
+import { ROOTS_SENTENCE } from '@/lib/ledger';
 
 type Test = {
   id: string;
@@ -37,7 +38,7 @@ const tests: Test[] = [
     cost: '$0',
     time: '6 months',
     prediction: 'Wide binary anomaly depends on local stellar density: systems in LOWER-density environments should show STRONGER coherence-driven deviation from Newtonian dynamics. Mechanism: g_eff = g_N/C(ρ); lower ρ → smaller C → larger boost above Newtonian. [Sign corrected 2026-06-06; previous "higher-density → stronger deviation" was backwards.]',
-    kill: 'REWRITTEN 2026-06-12 (previous criterion predated the C(a)→C(ρ) fork and was inverted — it would have killed the framework for its own prediction coming true): a Gaia-confirmed MOND-scale wide-binary anomaly (~18% velocity deviation; Chae-type ~1.4× boost at low internal acceleration) in the clean sample REFUTES C(ρ), which predicts a Newtonian null (0.05–0.4%). A confirmed Newtonian null is consistent with C(ρ) but equally consistent with GR — survival without points, non-discriminating.',
+    kill: 'REWRITTEN 2026-06-12 (previous criterion predated the C(a)→C(ρ) fork and was inverted — it would have killed the framework for its own prediction coming true): a Gaia-confirmed MOND-scale wide-binary anomaly (~18% velocity deviation; Chae-type ~1.4× boost at low internal acceleration) in the clean sample REFUTES C(ρ), which predicts a Newtonian null (0.05–0.4%). A confirmed Newtonian null is consistent with C(ρ) but equally consistent with GR — survival without points, non-discriminating. | WHICH MODEL MAKES THE 0.05–0.4% (added 2026-09-06, visitor researcher persona): the DENSITY-keyed branch C(ρ/ρ_crit) — its knee sits above any stellar-neighbourhood density, so C = γx and the boost never turns on. That is the same branch SPARC refutes head-to-head (ΔBIC +2843, archive 2026-08-24). The ACCELERATION-keyed branch that fits SPARC is μ_simple(x/2) at γ = ½ and predicts MOND\'s wide-binary boost, EFE included — on that branch TEST-02 was never a discriminator. And "MOND ~18%" is the EFE-free figure: with the Milky Way external field (~1.8 a₀), AQUAL/QUMOND + EFE give a 1.0–1.4× boost in g depending on treatment, which is the entire Chae (2023–25) vs Banik et al. (2024) dispute. State the range, not the point.',
     alert: 'KILL BRANCH ADJUDICABLE NOW (2026-06-12): the refutation branch does not wait on future Gaia data — it waits on the published Gaia DR3 adjudication already in the literature: Chae (2023–2025) claims a MOND-like ~1.4× boost at low internal accelerations; Banik et al. (2024) claims Newtonian behavior excludes that boost at high significance, from the same data with different cuts. If the Chae side prevails, C(ρ) is refuted with existing data; if Banik holds, C(ρ) survives degenerately with Newton. Adjudication queued to the explorer track (proposal: test02_kill_branch_adjudicable_now.md). | SELF-ELIMINATING-OR-TIE (2026-06-07): This test has no outcome that favors Synchronism. If Gaia confirms the null (Banik 2024 / Pittordis & Sutherland 2023): that confirms Newton — Synchronism merely reproduces Newton here. If Gaia confirms ~18% anomaly (Chae 2023): that confirms MOND and refutes Synchronism-C(ρ) — Newton and Synchronism are refuted together. No measurement selects Synchronism over the standard alternatives. Additionally, 0.05–0.4% (C(ρ) prediction) is below current Gaia DR3 wide-binary systematics — practically untestable, not just difficult. | SIGN CORRECTION (2026-06-06): The prediction direction was reversed on this page from 2026-05-05 to 2026-06-06. The correct direction is lower density → stronger deviation (g_eff = g_N/C(ρ) gives low ρ → low C → larger boost). Both MOND+EFE and C(ρ) agree on this direction — direction is not a discriminator. The amplitude IS structurally distinct: C(ρ)-density form predicts ~0.05–0.4% velocity deviation (Newtonian null level) vs MOND ~18%; Gaia DR3 reach is ~80× insufficient. Substrate contingency: the anomaly\'s existence is actively disputed (Chae 2023 detects it; Banik 2024, Pittordis & Sutherland 2023, Saurabh 2024 do not). This is the third C(a)→C(ρ) fork: C(a) predicts the anomaly but is MOND-degenerate (refuted by SPARC RAR at ΔBIC=+184); C(ρ) is structurally distinct but predicts the Newtonian null. | DATA MILESTONE (2026-07-03): Gaia DR4 (~late 2026) will reset the wide-binary systematics floor and re-open the Chae/Banik adjudication on better data — the next scheduled event that could move this test. Clarifier: "adjudicable now" and "practically untestable" refer to different branches — the REFUTATION branch (Chae-type boost confirmed → C(ρ) dead) is adjudicable from published DR3 literature today; the CONFIRMATION branch (measuring the predicted 0.05–0.4% null as distinct from zero) is below systematics reach regardless. Adjudicable, but non-selecting.',
   },
   {
@@ -155,12 +156,24 @@ const tests: Test[] = [
   },
 ];
 
+/**
+ * Tally for the page badge. One place, with the ID-merge stated, so the badge cannot say
+ * "4 executed" while seven cards carry execution dates (visitor researcher persona 2026-09-06:
+ * "Executed: 6 lists seven IDs; Kills: 5 lists six"). TEST-01, TEST-03s and TEST-05 are ONE
+ * environment test on the same SPARC sample under three IDs and are counted once, matching
+ * the honest-assessment ledger's single environment row.
+ */
+const TALLY = {
+  executed: ['TEST-01/03s/05 (one environment test, three IDs)', 'TEST-04a', 'TEST-09', 'TEST-10', 'TEST-25'],
+  killsFired: ['TEST-01/03s/05', 'TEST-09', 'TEST-10', 'TEST-25'],
+};
+
 export default function Tier1Existing() {
   return (
     <>
       <Breadcrumbs currentPath="/tier-1-existing" />
       <h1>Tier 1: Existing Data</h1>
-      <ValidationBadge status="failed" label="4 executed — 3 failed, 1 substituted-protocol kill; 1 withdrawn; rest untested. $0 cost — see overlap notes" />
+      <ValidationBadge status="failed" label={`${TALLY.executed.length} executed (${TALLY.executed.join('; ')}) — ${TALLY.killsFired.length} kills fired, TEST-04a underpowered as registered; TEST-04 withdrawn; TEST-02 self-eliminating; rest untested. Site-ledger split: ${ROOTS_SENTENCE}. $0 cost`} />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
@@ -215,8 +228,10 @@ export default function Tier1Existing() {
             Newtonian, ~10²&ndash;10³&times; low). <strong>This caveat was previously stated only where it was
             found, not where the tests are counted.</strong> Counting TEST-09 and TEST-10 as two independent
             refutations overstates the ledger twice over: they are one structural root, and that root presupposes
-            one of three live conventions. The honest figure for independent empirical roots behind the headline
-            count is <strong>3&ndash;4, not 6</strong>.
+            one of three live conventions. The honest accounting, reconciled 2026-09-05 and rendered here from the
+            site ledger rather than typed: <strong>{ROOTS_SENTENCE}</strong>. <em>(This sentence read
+            &ldquo;3&ndash;4, not 6&rdquo; until 2026-09-06, one day after the reconciliation &mdash; the same drift
+            it complains about.)</em>
           </p>
           <p style={{ margin: 0 }}>
             <strong>2. EFE = 0 is missing from this ledger, and that absence is not an oversight &mdash; it has

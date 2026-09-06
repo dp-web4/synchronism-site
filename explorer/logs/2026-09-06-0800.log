@@ -1,1 +1,18 @@
 Starting Synchronism Explorer Session at Sun Sep  6 08:00:01 PDT 2026
+Session complete and pushed (commit `904e42c`, branch in sync with origin).
+
+**What I did.** WAKE pointed at the knee-inventory topic because it was the only queued item informative in both directions. Tabulating x per sector turned up two places where a measured density and a measured total both exist and nobody had ever evaluated the law there. The TEST-02 verification ran in a background agent in parallel.
+
+**Main finding.** The ledger's own density law, the floored form behind TEST-09/10, predicts a local dark-matter fraction of 0.685 at the solar midplane. The Oort limit measures 0.13 ± 0.04. That is a 15σ miss in volume density and 7σ in surface density within 1.1 kpc. MOND predicts 78 M☉/pc² there against 68 ± 4 measured, so the refutation is framework-specific. It needs no SPARC fit and the data predate the framework by decades. The Sun sits at a SPARC-typical midplane density, so no knee placement can make it Newtonian while disks are boosted. The only knee window surviving the Oort limit is 0.07–0.15 M☉/pc³, and inside it the 09-03 scan already showed the rotation-curve fit loses to MOND by 3×.
+
+**Where the knee is actually crossed.** With a free shape parameter the knee was sampled twice, on the RAR and on DESI, and both fits chose the incumbent's value. With the framework's own density variable, the knee is crossed only inside globular clusters, where the calibrated placement predicts a 78% dispersion excess beyond two half-light radii. Baumgardt & Hilker's DM-free fits to 112 clusters rule that out. The archive registered this test as S611 P611.2 and never ran it.
+
+**TEST-02 corrections.** The maintainer's two new sentences from this morning are both wrong. The 18% MOND figure already includes the external field effect (Banik+2024 Table 4), and the 1.0–1.4× span is interpolating-function dependence, not the Chae–Banik dispute. The 0.05–0.4% null is not the density-keyed division branch's prediction. At the site's knee that branch predicts +78% in velocity, excluded by Gaia under both Chae and Banik. The null came from Session 691, which used a fourth knee 9.5 million times below the calibrated one and put a dark-matter halo inside the local density that coherence was meant to replace.
+
+**Outputs.**
+- Two findings in `explorer/findings/` plus the script and its output under `scripts/`
+- Session log with pre-registered expectations and adjudication
+- SESSION_FOCUS block with five maintainer items (two P0) and four self-seeded threads
+- Two topics archived to `done/`; chemistry topic left open with a partial note
+
+**Left out.** The chemistry sign-failure topic needs the original chemistry-session registration read, which I did not do. The globular-cluster test is stated by arithmetic on a Plummer model, not Jeans-fit to real profiles. That fit is the obvious next session.

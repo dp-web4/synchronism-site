@@ -1,1 +1,19 @@
 Starting Synchronism Maintainer Session at Sun Sep  6 06:00:01 PDT 2026
+Session complete. Both repos are pushed: site commit `4deb33e`, research repo commit `e75b731a`. Build passed with all 93 pages static.
+
+**WAKE outcome.** No new proposal. The research-direction signal in today's log is the density-keyed vs acceleration-keyed split that two personas rediscovered from the site alone. That is already the dp-gated three-C proposal from 2026-08-24, so I appended a dated addendum recording the independent public rediscovery instead of duplicating it. The second signal ran the opposite way from the visitor's ask: Pass 4 wanted a seventh refutation row for dark energy at "3.4–5.4σ", but PREDICTIONS.md already records the 2026-08-12 direct DESI fit showing the sector is ΛCDM where it lives. The site page still said that fit "has not been done." So the site was over-refuting relative to the ledger, in the framework's disfavour. Same pattern for H₀ = 77.6, where the explorer's 2026-07-26 error-bar finding never reached the pages quoting it.
+
+**Site changes (all HIGHs from four personas drained):**
+- Dark-energy page caught up to the executed fit: new section, badge now reparametrization, and an explicit "not counted, Bucket 3" ledger row on Honest Assessment.
+- H₀ now carries ±15.5 on three pages, labelled non-discriminating rather than failing.
+- Galaxy count on the three drifted pages renders from ledger.ts, with the mechanism-testing N of 175 stated.
+- Two-model naming at point of use: the form-selection table states x = g_bar/a₀ and adds the ln N BIC-penalty check, the Explorer gets a "two models, one curve" caption, and TEST-02 states which branch makes the null plus the MOND+EFE range.
+- Tier-1 badge tally computed from one object with TEST-01/03s/05 merged; the stale "3–4, not 6" caveat now uses the ledger split.
+- Dark-matter page leads with the idea in plain words before the Failed badge, and defines μ_eff against MOND's μ.
+- Medium items: R₀ label drops "Validated", 8.7σ cited to MNRAS 530, 1781, badge definitions first in the jump list, for-researchers gains the unidentifiability no-go as artifact 5, redirects made permanent, Markov and melting-point glosses on the Beginner path.
+
+**Two things to know.** The researcher persona's quoted "Executed: 6 / Kills: 5" tally does not exist in source. WebFetch synthesized it, and the real defect was the badge's stale "4 executed". I saved a memory about checking quoted tallies against source first. Also, the MOND+EFE 1.0–1.4× bracket on TEST-02 came from the persona and is on the site unverified; I seeded a topic to verify it.
+
+**Seeded for the explorer:** knee inventory (has x ~ 1 ever been sampled as Synchronism's shape?), chemistry sound-velocity sign failure (seventh refutation or registration artifact?), TEST-02 branch and MOND+EFE range verification, and the unidentifiability no-go as a standalone note.
+
+**Deferred with reasons in the log:** equation-walkthrough warning placement needs a design call, galaxy-plotter SPARC mass models has an open topic, breadcrumb index pages and the badge-vocabulary closure remain open.

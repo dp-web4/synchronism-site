@@ -1,0 +1,151 @@
+
+================================================================================================
+rho_crit placements at the solar circle (V = 220 km/s), M_sun/pc^3
+================================================================================================
+  calibrated A=0.029       rho_crit =   1.4036e+03 M_sun/pc^3 =  9.500e-17 kg/m^3
+  stated    A=4.6e-5       rho_crit =   2.2264e+00 M_sun/pc^3 =  1.507e-19 kg/m^3
+  S691 1e-23 kg/m^3        rho_crit =   1.4775e-04 M_sun/pc^3 =  1.000e-23 kg/m^3
+  spread calibrated / S691 = 9.500e+06
+
+================================================================================================
+Solar neighbourhood (rho_bar = 0.084 M_sun/pc^3 midplane): the density law's prediction
+================================================================================================
+  measured f_DM,local = 0.134 +/- 0.036  (McKee+2015);  0.082 +/- 0.03 (Bovy&Tremaine 2012)
+  measured Sigma_tot/Sigma_bar (1.1 kpc) = 1.44 +/- 0.13
+
+  placement                 gamma    x_local  C_floor   B=1/C f_DM pred sigma vs McKee sigma vs B&T      B_bare
+  calibrated A=0.029        2.000  5.985e-05   0.3151   3.174     0.685           15.4         20.1    8.36e+03
+  calibrated A=0.029        0.489  5.985e-05   0.3150   3.174     0.685           15.4         20.1    3.42e+04
+  stated    A=4.6e-5        2.000  3.773e-02   0.3656   2.735     0.634           14.0         18.4        13.5
+  stated    A=4.6e-5        0.489  3.773e-02   0.3274   3.054     0.673           15.1         19.7        55.2
+  S691 1e-23 kg/m^3         2.000  5.685e+02   1.0000   1.000     0.000           -3.7         -2.7           1
+  S691 1e-23 kg/m^3         0.489  5.685e+02   0.9972   1.003     0.003           -3.7         -2.6           1
+
+  surface-density cross-check (Sigma_dyn(1.1 kpc) = Sigma_bar / C, calibrated placement, gamma=2):
+    predicted 149.5 +/- 10.8 M_sun/pc^2 vs measured 68.0 +/- 4.0: 7.1 sigma
+
+  MOND scale at the solar circle: g_N ~ 1.17 a0 -> simple nu = 1.55 (radial).  Bienayme+2009 (arXiv:0904.3893):
+  MOND Newtonian-inferred Sigma(1.1 kpc) at R0 = 78 M_sun/pc^2 -> 78/47.1 = 1.66 vs measured 68 +/- 4 (1.44 +/- 0.13).
+
+================================================================================================
+E2: can any single rho_crit give a Newtonian null at the Sun AND a boost in SPARC disks?
+================================================================================================
+  Sun midplane baryon density 0.084 M_sun/pc^3 vs SPARC midplane: p50 0.0261, p99 (from x p99*653) 3.25, max (from x max*653) 23.4
+  -> the Sun is a SPARC-typical midplane density (3.2x the median, inside the p50-p99 range).
+
+  for a knee at rho_crit, C at the Sun and at the SPARC median (gamma = 2, floored):
+    rho_crit     x_sun   C_sun f_DM,sun  x_sparc50 C_sparc50 B_sparc50
+     1.0e-04  8.40e+02   1.000    0.000   2.61e+02     1.000      1.00
+     1.0e-03  8.40e+01   1.000    0.000   2.61e+01     1.000      1.00
+     1.0e-02  8.40e+00   1.000    0.000   2.61e+00     0.992      1.01
+     1.0e-01  8.40e-01   0.890    0.110   2.61e-01     0.612      1.63
+     1.0e+00  8.40e-02   0.425    0.575   2.61e-02     0.350      2.85
+     1.0e+01  8.40e-03   0.326    0.674   2.61e-03     0.319      3.14
+     1.0e+02  8.40e-04   0.316    0.684   2.61e-04     0.315      3.17
+     1.0e+03  8.40e-05   0.315    0.685   2.61e-05     0.315      3.17
+
+  Oort-limit window (gamma=2, floored, 2 sigma): 0.0738 <= rho_crit <= 0.154 M_sun/pc^3
+  boost at the SPARC median inside that window: B = 1.46 .. 1.91
+  boost at a dwarf outer disk (rho ~ 1e-3): B = 3.00 .. 3.09  (TEST-10 needs >= 13.7)
+  calibrated knee / window top = 9.1e+03;  S691 knee / window bottom = 0.002
+  same window at gamma = 0.489: 0.00393 .. 0.0171
+  same window at gamma = 0.1: none inside 1e-4..1e4 M_sun/pc^3 (window slides below 1e-4)
+
+================================================================================================
+E3: a globular cluster crosses the knee inside one object
+================================================================================================
+  Plummer M=3e5 M_sun, a=3 pc: rho_0 = 2653 M_sun/pc^3, r_h = 3.9 pc
+  (Harris-catalogue GC central densities: 1e-1 .. 1e5+ M_sun/pc^3; Baumgardt+2018 fit 112 GCs with DM-free N-body)
+
+  rho_crit = A V^2 with calibrated A, host V=220: rho_crit = 1.4e+03 M_sun/pc^3
+     r [pc]        rho          x  C_floor      B  sqrt(B) (sigma_los boost)
+        0.0  2.653e+03  1.890e+00    0.981   1.02                       1.01
+        1.0  2.038e+03  1.452e+00    0.963   1.04                       1.02
+        2.0  1.058e+03  7.537e-01    0.869   1.15                       1.07
+        3.9  2.235e+02  1.592e-01    0.512   1.95                       1.40
+        8.0  1.416e+01  1.009e-02    0.329   3.04                       1.74
+       15.0  7.695e-01  5.483e-04    0.316   3.17                       1.78
+       30.0  2.587e-02  1.843e-05    0.315   3.17                       1.78
+       60.0  8.238e-04  5.869e-07    0.315   3.17                       1.78
+
+  rho_crit = A V^2 with stated A, host V=220: rho_crit = 2.23 M_sun/pc^3
+     r [pc]        rho          x  C_floor      B  sqrt(B) (sigma_los boost)
+        0.0  2.653e+03  1.191e+03    1.000   1.00                       1.00
+        1.0  2.038e+03  9.155e+02    1.000   1.00                       1.00
+        2.0  1.058e+03  4.751e+02    1.000   1.00                       1.00
+        3.9  2.235e+02  1.004e+02    1.000   1.00                       1.00
+        8.0  1.416e+01  6.359e+00    1.000   1.00                       1.00
+       15.0  7.695e-01  3.456e-01    0.680   1.47                       1.21
+       30.0  2.587e-02  1.162e-02    0.331   3.02                       1.74
+       60.0  8.238e-04  3.700e-04    0.316   3.17                       1.78
+
+  rho_crit = A V^2 with calibrated A, internal sigma=10: rho_crit = 2.9 M_sun/pc^3
+     r [pc]        rho          x  C_floor      B  sqrt(B) (sigma_los boost)
+        0.0  2.653e+03  9.147e+02    1.000   1.00                       1.00
+        1.0  2.038e+03  7.029e+02    1.000   1.00                       1.00
+        2.0  1.058e+03  3.648e+02    1.000   1.00                       1.00
+        3.9  2.235e+02  7.707e+01    1.000   1.00                       1.00
+        8.0  1.416e+01  4.882e+00    0.999   1.00                       1.00
+       15.0  7.695e-01  2.654e-01    0.616   1.62                       1.27
+       30.0  2.587e-02  8.922e-03    0.327   3.06                       1.75
+       60.0  8.238e-04  2.841e-04    0.315   3.17                       1.78
+
+  rho_crit = A V^2 with stated A, internal sigma=10: rho_crit = 0.0046 M_sun/pc^3
+     r [pc]        rho          x  C_floor      B  sqrt(B) (sigma_los boost)
+        0.0  2.653e+03  5.766e+05    1.000   1.00                       1.00
+        1.0  2.038e+03  4.431e+05    1.000   1.00                       1.00
+        2.0  1.058e+03  2.300e+05    1.000   1.00                       1.00
+        3.9  2.235e+02  4.859e+04    1.000   1.00                       1.00
+        8.0  1.416e+01  3.078e+03    1.000   1.00                       1.00
+       15.0  7.695e-01  1.673e+02    1.000   1.00                       1.00
+       30.0  2.587e-02  5.625e+00    0.999   1.00                       1.00
+       60.0  8.238e-04  1.791e-01    0.533   1.88                       1.37
+
+  Observed: Baumgardt & Hilker 2018 -- DM-free N-body fits to dispersion + density profiles, M/L_V ~ 1.5-2.5;
+  Conroy, Loeb & Spergel 2011 -- M_DM/M_* < 1 for NGC 2419 and MGC1; Ibata+2011 -- Newtonian Michie model fits
+  NGC 2419, MOND 1e4x less likely.  A radial M/L rise by 1/Om = 3.17 from core to outskirts is not seen.
+
+================================================================================================
+E4: which coupling branch gives the 0.05-0.4 % wide-binary velocity null?
+================================================================================================
+  velocity deviation = sqrt(B) - 1 for the division branch; for quadrature (v^2 = v_b^2 + (V C)^2)
+  the coupling is defined for a disk V_flat, not a binary -- taking the binary's own v_orb as V gives
+  dv/v = sqrt(1 + C^2) - 1 ~ C^2/2.
+  calibrated A=0.029       g=2.0   x= 5.98e-05  division floored:    78.15 %   division bare:   9.04e+03 %   quadrature (C bare):  7.16e-07 %
+  calibrated A=0.029       g=0.489 x= 5.98e-05  division floored:    78.17 %   division bare:   1.84e+04 %   quadrature (C bare):  4.28e-08 %
+  stated    A=4.6e-5       g=2.0   x= 3.77e-02  division floored:    65.38 %   division bare:        268 %   quadrature (C bare):     0.273 %
+  stated    A=4.6e-5       g=0.489 x= 3.77e-02  division floored:    74.77 %   division bare:        643 %   quadrature (C bare):    0.0164 %
+  S691 1e-23 kg/m^3        g=2.0   x= 5.69e+02  division floored:     0.00 %   division bare:   9.51e-10 %   quadrature (C bare):      41.4 %
+  S691 1e-23 kg/m^3        g=0.489 x= 5.69e+02  division floored:     0.14 %   division bare:      0.202 %   quadrature (C bare):      41.1 %
+
+  S691's derivation evaluated rho_local INCLUDING a 0.4 GeV/cm^3 dark-matter halo term and used rho_crit = 1e-23 kg/m^3.
+  Gaia (Banik+2024): alpha_grav = -0.021 (+0.065/-0.045); gravity within ~8 % of Newton in g -> velocity within ~4 %.
+  Chae 2023-2025: gamma_g = 1.34-1.49 -> velocity +16-22 %.  Division-floored B = 3.17 -> velocity +78 %.
+
+================================================================================================
+KNEE INVENTORY: x ranges by sector
+================================================================================================
+  Galaxy disks, density-keyed (SPARC, calibrated A) | x = rho_mid/rho_crit(V)                          | 1e-6 .. 3.6e-2 (median 6.9e-5)                       | linear                       | no: C = gamma x to 0.22x precision (09-03)
+  Galaxy RAR, acceleration-keyed                   | x = g_bar/a0                                     | 0.01 .. 30 (median 0.18, p90 3.0)                    | KNEE                         | yes, free gamma -> 0.489 = MOND simple mu; dBIC gap = ln N
+  Cosmology, DE substitution                       | x = 2 rho_m/rho_Lambda (gamma=1/2 identity)      | 0.92 today .. 25 at z=2                              | KNEE                         | yes, free gamma -> 0.487 = LCDM (08-12 direct fit)
+  Solar neighbourhood / wide-binary environment    | x = rho_local/rho_crit(220)                      | 6e-5 (calibrated) / 3.8e-2 (stated) / 5.7e2 (S691)   | linear / linear / saturated  | NEVER REGISTERED; Oort limit available since 1932
+  Globular clusters (core -> tidal radius)         | x = rho(r)/rho_crit                              | calibrated, host V: 3e-3 .. 3 ; stated, internal V: 2e2 .. 2e5 | CROSSES THE KNEE / saturated | NEVER REGISTERED (S611 P611.2 predicted gamma=2 internal dynamics, never run)
+  Open clusters (cores 1-100 M_sun/pc^3)           | x = rho_core/rho_crit                            | 7e-4 .. 7e-2 (calibrated) / 0.5 .. 45 (stated)       | linear / KNEE                | never registered
+  Chemistry (22 elemental solids)                  | x = undefined: no rho_crit for materials; Spearman invariant | -                                                    | -                            | not a compander test (Spearman -0.32 for every gamma, rho_crit)
+  Superconductivity / phase-boundary visualizer    | x = gamma from N_corr; x never measured          | -                                                    | -                            | no
+  Consciousness                                    | x = C ~ 0.5 asserted, no x                       | -                                                    | knee by assertion            | no
+  Quantum (dephasing, cos^2)                       | x = C = correlation coefficient, no compander    | -                                                    | -                            | no
+
+ADJUDICATION (written after the numbers):
+  E1 as expected: calibrated and stated placements both give f_DM,local = 0.68 vs 0.13 +/- 0.04 (>10 sigma).
+  E2 as expected: the Sun sits inside SPARC's midplane-density range, so no knee makes it saturated while the
+     disks are boosted; the surviving 2-sigma Oort window is ~0.03-0.2 M_sun/pc^3 -- 3 to 4 decades from BOTH
+     the calibrated knee (above) and the S691 knee (below) -- and inside that window the SPARC-median boost is
+     < 1.6 and the dwarf-outer-disk boost < 3.2, still under TEST-10's 13.7. The window was inside the 09-03 L2
+     scan's A range (1e-11..1e-1), whose best cell anywhere was 3.06x worse than parameter-free MOND.
+  E3 as expected only for (calibrated A, host V); with internal V or stated A the cluster is saturated
+     throughout (Newtonian, B = 1) -- which passes the GC data and fails the galaxy sector by construction.
+  E4: the sub-percent null comes from the quadrature branch (or from S691's saturated placement, which also
+     kills the galaxy boost). The division branch -- the ledger's law behind TEST-09/10 -- predicts +78 % in
+     velocity for wide binaries, excluded by Gaia at every reading (Banik AND Chae).
+

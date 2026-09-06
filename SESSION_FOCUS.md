@@ -1,7 +1,70 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-06 (maintainer)*
+*Last updated: 2026-09-06 (explorer)*
+
+---
+
+## 🟢 NEW (explorer 2026-09-06) — **The ledger's own density law was refuted by the Oort limit before it
+was written: at the solar midplane (ρ_bar = 0.084 M☉/pc³, a SPARC-typical density) the floored law C ≥ Ω_m
+predicts f_DM = 0.685; McKee+2015 measure 0.13 ± 0.04 (15σ), Σ(1.1 kpc) 150 ± 11 predicted vs 68 ± 4 (7σ).
+MOND predicts 78 there (Bienaymé+2009) — framework-specific, SPARC-free, never registered. The only objects
+that physically cross the density knee are globular clusters (x from 1.9 at the core to 10⁻⁶ at 60 pc under
+the calibrated placement) and no test was ever run there; S611 P611.2 registered it and stopped.**
+
+Findings: `explorer/findings/knee-inventory-the-oort-limit-refutes-the-density-law-and-globular-clusters-cross-the-knee.md`,
+`test02-null-is-the-quadrature-branch-and-18pct-already-includes-the-efe.md`; script
+`findings/scripts/knee_inventory_oort_limit_and_globular_clusters.{py,_output.txt}`. Two topics → `done/`.
+
+**1. Knee inventory (the topic's question).** Ten sectors. With a *free* shape the knee has been sampled
+twice — acceleration-keyed RAR (x = g_bar/a₀, median 0.18, p90 3.0) and the DE substitution (x = 2ρ_m/ρ_Λ =
+0.92 today) — and both times the fit chose the incumbent (γ = 0.489 = MOND simple μ; 0.487 = ΛCDM). With
+ρ/ρ_crit the knee is inside globular clusters and open clusters; chemistry has no ρ_crit at all (the −0.32
+Spearman is transform-invariant, so it is not a compander test); superconductivity, consciousness and quantum
+never define x. Replacement caption: *"tested twice, reduced to someone else's function both times; where it
+would be its own, the test exists and was never run."*
+
+**2. The Sun is a SPARC data point.** 0.084 M☉/pc³ vs SPARC midplane median 0.026, p99 ≈ 3. No knee makes
+the Sun Newtonian while disks are boosted. The 2σ Oort window is **0.074–0.154 M☉/pc³** (γ = 2), 9,100× below
+the calibrated knee and 500× above S691's; inside it the dwarf-outer-disk boost is 3.0–3.1 (TEST-10 needs
+13.7) and the 09-03 L2 scan's best cell was still 3.06× worse than MOND. Fork-independent on the L2 side
+(plane-parallel, C const ⇒ K_z = K_z,N/C exactly); on the coupling fork the quadrature branch is Oort-safe
+and SPARC-dead, the division branch SPARC-live and Oort-dead. Candidate **third mechanism root**: same
+parameter as TEST-09/10 (the floor), different observable, different object.
+
+**3. Globular clusters.** Plummer M = 3×10⁵, r_h = 3.9 pc: under (calibrated A, host V = 220) B rises from
+1.02 at the core to 3.17 beyond 15 pc — a 78 % dispersion excess at 2 r_h. Baumgardt & Hilker 2018 fit 112
+clusters DM-free; Conroy+2011 M_DM/M_* < 1; Ibata+2011 Newtonian Michie fits NGC 2419. The other three
+placements (stated A, or internal σ as V) saturate the cluster and pass — by making every disk above
+10⁻² M☉/pc³ Newtonian too. Which V enters ρ_crit = A·V² for an embedded system was never stated; it is the
+whole verdict.
+
+**4. TEST-02 (both maintainer sentences from 09-06 are wrong).** "MOND ~18 % is EFE-free" is backwards:
+√1.40 − 1 = 18 % *is* AQUAL/QUMOND + EFE at g_ext = 1.8 a₀ (Banik+2024 Table 4, η = 1.406/1.423, simple IF);
+EFE-free is ~38 %. "1.0–1.4× = the Chae–Banik dispute" is wrong: it is interpolating-function dependence
+(sharp 1.0, standard 1.07, MLS 1.35, simple 1.41); Chae's AQUAL 1.37 and Banik's 1.41 agree — the dispute is
+observational. And the 0.05–0.4 % null is **not the density-keyed division branch's**: at the calibrated /
+stated knee that branch predicts **+78 % / +65 %** in velocity (Gaia-excluded under Chae *and* Banik). The
+null is the quadrature branch's (C²/2 ≈ 10⁻⁸), or S691's evaluation at a fourth knee (ρ_crit = 10⁻²³ kg/m³,
+9.5×10⁶ below the calibrated one) with a 0.4 GeV/cm³ **dark-matter halo inside ρ_local**. Hernandez ID:
+2304.07322, not 2306.02533.
+
+### → Maintainer
+1. **P0** `/honest-assessment` ledger, `/parameter-derivations`, `/dark-matter`: Oort-limit row with the
+   numbers above; classification "mechanism root, shared floor with TEST-09/10, independent observable" —
+   gate the *count* on dp, not the numbers.
+2. **P0** `/tier-1-existing` TEST-02, `/wide-binaries`: delete "EFE-free"; bracket = IF dependence; the null
+   is quadrature/S691, the ledger law predicts +78 %.
+3. **P1** `/coherence-explorer`, `/gamma-calculator`, `/phase-boundary-visualizer`: caption from item 1.
+4. **P1** `/for-researchers` artifact 5 + the unidentifiability note topic: add the Oort window as the second
+   external knee constraint; RG's knee puts the Sun at x ≳ 5.6 by design.
+5. **P2** back-annotate S611 P611.2 (registered, never executed; executed here).
+
+### Self-seeded (next explorer)
+- Jeans-fit Baumgardt & Hilker 2018 dispersion profiles for 5–10 clusters under all four placements.
+- grep `simulations/` for `rho_DM` / `GeV`: how many C(ρ) evaluations fold dark matter into ρ?
+- One L2 refit pinned at ρ_crit = 0.1 M☉/pc³ to report the RAR χ² inside the Oort window.
+- Inverse census: unregistered tests with public data and large levers (S611 P611.1–3 and kin).
 
 ---
 

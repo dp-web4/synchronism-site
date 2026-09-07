@@ -1,7 +1,82 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-06 (explorer)*
+*Last updated: 2026-09-07 (explorer)*
+
+---
+
+## 🟢 NEW (explorer 2026-09-07) — **S611 P611.2 executed on Baumgardt & Hilker's public globular-cluster
+database (167 clusters, 2,025 dispersion bins). It registers γ = 2, NOT a knee — and at γ = 2 the
+framework's measured knee survives, marginally, at MOND-with-EFE's level. At the galaxy sector's
+γ = 0.489 the clusters exclude ρ_c ∈ 0.1–300 M☉/pc³ and every placement in use is inside it. The
+registered prediction is the rescue; its price is that the coherence function is not one function.**
+
+Finding: `explorer/findings/globular-cluster-knee-test-executed-universal-gamma-excluded-registered-gamma2-survives.md`;
+scripts `findings/scripts/{parse_baumgardt,gc_knee_jeans_test,gc_efe_discriminator,gc_placement_adjudication,
+gc_slope_with_mond,gc_anisotropy_rescue,gc_knee_bound,gc_gamma2_p611}.py` (+ `_output.txt`). Topic → `done/`.
+
+**1. The fork.** Statistic: error-weighted outer `d log σ/d log r`, 42 clusters, isotropic Jeans on the
+catalogue mass model, measured vs predicted. Newtonian **−0.057** (the systematics budget); MOND simple μ
+**+ EFE −0.093**; MOND **EFE off −0.245**; density-keyed γ=0.489 @ knee 0.161 **−0.211 (excluded)**;
+density-keyed **γ=2 (registered) @ 0.161 −0.111 (marginal)**; γ=2 @ RG's knee −0.058. Exclusion window
+ρ_c ≈ 0.1–300 M☉/pc³ at γ=0.489, narrowing to ≈0.5–100 at γ=2. **Universal γ = 0.489 + any knee the
+framework uses is refuted; per-blanket γ is not.** My reading: this should NOT increment the count —
+a registered prediction survives it. Gates on dp.
+
+**2. Globular clusters DO discriminate, and the variable is the EFE.** MOND with its external field
+effect switched off (−0.245) is statistically indistinguishable from the density law. MOND survives
+globular clusters *because of* the EFE and for no other reason; a density-keyed law has no g_ext.
+The site's "0 currently discriminating tests" is now false in a specific, citable way.
+
+**3. `ρ_crit = A·V²` with the host's 220 km/s dies on a second observable.** Knee at ~1 pc ⇒ the whole
+cluster sits at the coherence floor ⇒ pure `G → G/Ω_m`, invisible to σ(r)'s shape (mismatch −0.073,
+and its Δχ² flips sign between mass models — the signature of a degeneracy) but it divides stellar
+M/L_V by 3.175: observed median 1.81 → required 0.57, and **96 % of 167 clusters below M/L_V = 1.2**,
+beneath any 12 Gyr metal-poor population.
+
+**4. The form is not what fails — the number is.** Refracted Gravity passes at its own fitted
+ρ_c = 10⁻²⁴·²⁵ g/cm³ = **0.0083 M☉/pc³** across its 1σ range, and passes with this framework's Ω_m
+floor substituted in. The framework's knee sits **13–500× above** RG's. Running the framework's own
+compander at RG's knee also passes. Repair direction: a SPARC refit *pinned* at 0.0083 has never been
+done; every fit on record used a knee 10³–10⁵× higher.
+
+**5. Near-miss recorded.** I ran the whole analysis at γ = 0.489 before reading S611's text and would
+have published the eighth over-refutation in a row. P611.2's actual words: *"Globular cluster internal
+dynamics should follow γ = 2 … tests whether γ resets at each Markov blanket boundary."* **Read the
+registration before executing it** — third instance of "which parameter does the criterion name?"
+(07-29 estimator, 08-08 coupling, 08-27 what R_half is a function of).
+
+**6. Adversarial pass survived:** mass model (King vs Plummer), radial window (×2/×3/×5), RV-only,
+jackknife (max 0.042), and **anisotropy — Newtonian crosses zero at β ≈ 0.75, MOND+EFE at 0.81, the
+density law at no β ≤ 0.8**, while tidally limited clusters go *tangentially* anisotropic (Vasiliev &
+Baumgardt 2021), which makes it worse. Tidal contamination flattens the observed slope ⇒ the exclusion
+is conservative. Prior-art screen: Cesare+2022 used GCs as *tracers of ellipticals*, not as
+self-gravitating systems crossing the knee — not prior art. Significance framing: the ± is statistical
+only; defend the **ratio to the Newtonian residual (3.7–4.4×)**, not "8σ".
+
+### → Maintainer
+1. **P0** `/honest-assessment`, `/dark-matter`, `/parameter-derivations`: GC row, stated **as a fork**,
+   not a kill. Count gates on dp; my recommendation is no increment.
+2. **P0** Delete/replace "0 currently discriminating tests" wherever it appears — name the EFE.
+3. **P0** `src/lib/equations.ts` `coherence()` is the **unfloored** form, the worst performer here
+   (−0.428, and −1.113 at the host-V knee) and divergent as ρ → 0. Floor it or caption it.
+4. **P0** S611/P611.2 (the Markov-blanket γ reset) is invisible on the site and is now the only branch
+   of this sector that survives a real dataset. It needs a section.
+5. **P1** `/mrh` internal-locality: for a cluster the choice of V moves the knee by 10⁴ in ρ_crit —
+   **under-determined, not undefined**. The topic's "unformulable" framing was wrong.
+6. **P1** `/for-researchers`: the exclusion window is a citable transferable null in the literature's
+   own units; put it beside the B_max ≤ 6.4 bound.
+7. **P2** Back-annotate P611.2 as executed (both γ branches).
+
+### Self-seeded (next explorer)
+- **The γ ladder**: P611.2 implies γ = 2 for any resolved-member system — open clusters, dwarf
+  spheroidals, Gaia streams, all public, all near the window's lower edge. If dwarfs demand 0.489 the
+  reset is ad hoc after all.
+- A SPARC refit pinned at RG's ρ_c = 0.0083 M☉/pc³.
+- Audit registration *texts* against execution scripts across the archive — which other criteria name
+  a parameter the program has not been executing against?
+- NGC 2419 and the outer-halo clusters (g_ext ≪ a₀) are where MOND and the density law stop being
+  collinear; 1–3 bins each is the only thing stopping the test.
 
 ---
 

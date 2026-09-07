@@ -1,0 +1,14 @@
+# N = 42 clusters, king-like mass model, outer factor 3
+
+  beta   obs-Newt  obs-MOND+EFE  obs-density(0.161)
+  -0.6     -0.076        -0.115              -0.223
+  -0.4     -0.071        -0.109              -0.220
+  -0.2     -0.065        -0.102              -0.216
+   0.0     -0.057        -0.093              -0.211
+   0.2     -0.046        -0.081              -0.202
+   0.4     -0.031        -0.065              -0.189
+   0.6     -0.010        -0.042              -0.168
+   0.8      0.022        -0.008              -0.135
+
+  beta > 0 is radial anisotropy -- the only sign that could hide a boost.
+  Read off the beta at which each column crosses zero.

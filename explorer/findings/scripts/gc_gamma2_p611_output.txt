@@ -1,0 +1,34 @@
+# N = 42 clusters, king-like mass model, outer factor 3
+# Newtonian -0.057 +- 0.027   MOND+EFE -0.093
+
+  gamma  N_corr   rho_crit  floor   obs-pred  x Newt     status
+  0.489    16.7     0.0083    yes     -0.088     1.6         ok
+  0.489    16.7     0.0083     no     -0.110     1.9   marginal
+  0.489    16.7      0.161    yes     -0.211     3.7   EXCLUDED
+  0.489    16.7      0.161     no     -0.428     7.6   EXCLUDED
+  0.489    16.7       1404    yes     -0.073     1.3         ok
+  0.489    16.7       1404     no     -1.113    19.7   EXCLUDED
+  2.000     1.0     0.0083    yes     -0.058     1.0         ok
+  2.000     1.0     0.0083     no     -0.059     1.0         ok
+  2.000     1.0      0.161    yes     -0.111     2.0   marginal
+  2.000     1.0      0.161     no     -0.178     3.1   marginal
+  2.000     1.0       1404    yes     -0.108     1.9   marginal
+  2.000     1.0       1404     no     -1.112    19.7   EXCLUDED
+
+# gamma = 2 (P611.2 as registered), floored -- scan of the knee:
+  rho_c [Msun/pc3]  log10 g/cm3   obs-pred     status
+            0.0001       -26.17     -0.057         ok
+             0.001       -25.17     -0.057         ok
+             0.003       -24.69     -0.057         ok
+            0.0083       -24.25     -0.058         ok
+              0.02       -23.87     -0.062         ok
+              0.05       -23.47     -0.075         ok
+             0.161       -22.96     -0.111   marginal
+                 1       -22.17     -0.219   EXCLUDED
+                10       -21.17     -0.298   EXCLUDED
+               100       -20.17     -0.217   EXCLUDED
+              1404       -19.02     -0.108   marginal
+
+# P611.2 verdict is read off the gamma=2 rows: the registered prediction is that
+# gamma RESETS to 2 at the cluster's Markov-blanket boundary.  Compare against the
+# gamma=0.489 rows (no reset) and against Newtonian / MOND+EFE.

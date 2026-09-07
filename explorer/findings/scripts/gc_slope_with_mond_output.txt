@@ -1,0 +1,105 @@
+######## king 3.0 all
+# mass model = king  outer factor = 3.0  tracer = all  N = 42 clusters
+# weighted mean measured outer slope = -0.371
+
+dynamics                            <obs-pred>      +-   sigma     rms   <pred>
+Newtonian                               -0.057   0.027     2.1   0.151   -0.311
+MOND simple mu + EFE                    -0.093   0.027     3.5   0.172   -0.277
+MOND simple mu, EFE off                 -0.245   0.027     9.2   0.310   -0.108
+density, A V^2 (V=220 host)             -0.073   0.027     2.8   0.152   -0.300
+density, knee 0.161 (measured)          -0.211   0.027     8.0   0.291   -0.149
+density, A V^2 (V=sigma_0)              -0.248   0.027     9.3   0.319   -0.109
+density, knee 0.161, unfloored          -0.428   0.027    16.2   0.585    0.100
+
+  Newtonian's own offset (0.057) is the systematics budget: anisotropy, mass
+  segregation and the mass model are all unmodelled here and all push this way.
+    MOND+EFE                 misses by 0.093 =  1.7x the Newtonian residual
+    density knee 0.161       misses by 0.211 =  3.7x the Newtonian residual
+    density A V^2 sigma_0    misses by 0.248 =  4.4x the Newtonian residual
+  jackknife MOND+EFE        : mean -0.093, max single-cluster shift 0.0164
+  jackknife density 0.161   : mean -0.211, max single-cluster shift 0.0222
+  jackknife density AV2sig  : mean -0.248, max single-cluster shift 0.0158
+######## plum 3.0 all
+# mass model = plum  outer factor = 3.0  tracer = all  N = 42 clusters
+# weighted mean measured outer slope = -0.371
+
+dynamics                            <obs-pred>      +-   sigma     rms   <pred>
+Newtonian                               +0.021   0.027     0.8   0.124   -0.401
+MOND simple mu + EFE                    -0.023   0.027     0.9   0.125   -0.357
+MOND simple mu, EFE off                 -0.144   0.027     5.4   0.220   -0.209
+density, A V^2 (V=220 host)             -0.006   0.027     0.2   0.124   -0.381
+density, knee 0.161 (measured)          -0.199   0.027     7.5   0.276   -0.173
+density, A V^2 (V=sigma_0)              -0.216   0.027     8.1   0.298   -0.139
+density, knee 0.161, unfloored          -0.735   0.027    27.7   1.018    0.422
+
+  Newtonian's own offset (0.021) is the systematics budget: anisotropy, mass
+  segregation and the mass model are all unmodelled here and all push this way.
+    MOND+EFE                 misses by 0.023 =  1.1x the Newtonian residual
+    density knee 0.161       misses by 0.199 =  9.5x the Newtonian residual
+    density A V^2 sigma_0    misses by 0.216 = 10.3x the Newtonian residual
+  jackknife MOND+EFE        : mean -0.023, max single-cluster shift 0.0115
+  jackknife density 0.161   : mean -0.199, max single-cluster shift 0.0279
+  jackknife density AV2sig  : mean -0.216, max single-cluster shift 0.0090
+######## king 2.0 all
+# mass model = king  outer factor = 2.0  tracer = all  N = 14 clusters
+# weighted mean measured outer slope = -0.447
+
+dynamics                            <obs-pred>      +-   sigma     rms   <pred>
+Newtonian                               -0.119   0.072     1.7   0.212   -0.312
+MOND simple mu + EFE                    -0.153   0.072     2.1   0.244   -0.277
+MOND simple mu, EFE off                 -0.310   0.072     4.3   0.390   -0.115
+density, A V^2 (V=220 host)             -0.135   0.072     1.9   0.216   -0.300
+density, knee 0.161 (measured)          -0.288   0.072     4.0   0.390   -0.132
+density, A V^2 (V=sigma_0)              -0.298   0.072     4.1   0.401   -0.113
+density, knee 0.161, unfloored          -0.517   0.072     7.2   0.664    0.110
+
+  Newtonian's own offset (0.119) is the systematics budget: anisotropy, mass
+  segregation and the mass model are all unmodelled here and all push this way.
+    MOND+EFE                 misses by 0.153 =  1.3x the Newtonian residual
+    density knee 0.161       misses by 0.288 =  2.4x the Newtonian residual
+    density A V^2 sigma_0    misses by 0.298 =  2.5x the Newtonian residual
+  jackknife MOND+EFE        : mean -0.153, max single-cluster shift 0.0247
+  jackknife density 0.161   : mean -0.289, max single-cluster shift 0.0412
+  jackknife density AV2sig  : mean -0.298, max single-cluster shift 0.0372
+######## king 5.0 all
+# mass model = king  outer factor = 5.0  tracer = all  N = 57 clusters
+# weighted mean measured outer slope = -0.305
+
+dynamics                            <obs-pred>      +-   sigma     rms   <pred>
+Newtonian                               -0.006   0.013     0.4   0.098   -0.297
+MOND simple mu + EFE                    -0.042   0.013     3.2   0.117   -0.256
+MOND simple mu, EFE off                 -0.172   0.013    13.1   0.232   -0.106
+density, A V^2 (V=220 host)             -0.034   0.013     2.6   0.096   -0.277
+density, knee 0.161 (measured)          -0.126   0.013     9.6   0.210   -0.154
+density, A V^2 (V=sigma_0)              -0.192   0.013    14.6   0.238   -0.109
+density, knee 0.161, unfloored          -0.295   0.013    22.4   0.496    0.077
+
+  Newtonian's own offset (0.006) is the systematics budget: anisotropy, mass
+  segregation and the mass model are all unmodelled here and all push this way.
+    MOND+EFE                 misses by 0.042 =  7.6x the Newtonian residual
+    density knee 0.161       misses by 0.126 = 22.7x the Newtonian residual
+    density A V^2 sigma_0    misses by 0.192 = 34.5x the Newtonian residual
+  jackknife MOND+EFE        : mean -0.042, max single-cluster shift 0.0184
+  jackknife density 0.161   : mean -0.126, max single-cluster shift 0.0198
+  jackknife density AV2sig  : mean -0.192, max single-cluster shift 0.0167
+######## king 3.0 RV
+# mass model = king  outer factor = 3.0  tracer = RV  N = 7 clusters
+# weighted mean measured outer slope = -0.442
+
+dynamics                            <obs-pred>      +-   sigma     rms   <pred>
+Newtonian                               -0.113   0.073     1.6   0.197   -0.339
+MOND simple mu + EFE                    -0.164   0.073     2.3   0.224   -0.289
+MOND simple mu, EFE off                 -0.330   0.073     4.5   0.360   -0.126
+density, A V^2 (V=220 host)             -0.118   0.073     1.6   0.217   -0.329
+density, knee 0.161 (measured)          -0.331   0.073     4.6   0.348   -0.137
+density, A V^2 (V=sigma_0)              -0.303   0.073     4.2   0.381   -0.125
+density, knee 0.161, unfloored          -0.652   0.073     9.0   0.642    0.156
+
+  Newtonian's own offset (0.113) is the systematics budget: anisotropy, mass
+  segregation and the mass model are all unmodelled here and all push this way.
+    MOND+EFE                 misses by 0.164 =  1.5x the Newtonian residual
+    density knee 0.161       misses by 0.331 =  2.9x the Newtonian residual
+    density A V^2 sigma_0    misses by 0.303 =  2.7x the Newtonian residual
+  jackknife MOND+EFE        : mean -0.164, max single-cluster shift 0.0215
+  jackknife density 0.161   : mean -0.331, max single-cluster shift 0.0305
+  jackknife density AV2sig  : mean -0.304, max single-cluster shift 0.0282

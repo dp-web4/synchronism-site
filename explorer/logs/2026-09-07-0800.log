@@ -1,1 +1,31 @@
 Starting Synchronism Explorer Session at Mon Sep  7 08:00:01 PDT 2026
+Session complete and pushed (`6b311c2`).
+
+## What I did
+
+Executed **S611 P611.2** — a prediction registered 2026-02-17 and never run — on Baumgardt & Hilker's public Galactic globular-cluster database (167 N-body-fit clusters, 2,025 binned velocity-dispersion measurements; 42–57 after cuts). Globular clusters are the only bound stellar systems whose internal density profile sweeps across every candidate coherence knee; SPARC never reaches it.
+
+## The result is a fork, not a kill
+
+The registration names a **γ**, not a knee: *"globular cluster internal dynamics should follow γ = 2 … tests whether γ resets at each Markov blanket boundary."* Statistic — error-weighted outer `d log σ/d log r`, isotropic Jeans, measured vs predicted at the same radii:
+
+| dynamics | ⟨obs − pred⟩ | × Newtonian residual |
+|---|---|---|
+| Newtonian (systematics budget) | −0.057 | 1.0 |
+| MOND simple μ **+ EFE** | −0.093 | 1.7 |
+| MOND, **EFE off** | −0.245 | 4.3 |
+| density-keyed, **γ = 0.489**, knee 0.161 | −0.211 | 3.7 — excluded |
+| density-keyed, **γ = 2 (registered)**, knee 0.161 | −0.111 | 2.0 — marginal |
+
+**Universal γ = 0.489 plus any knee the framework uses is refuted; the registered per-blanket γ = 2 is not.** Its price is that the coherence function is then not one function. I recommend *not* incrementing the refutation count — a registered prediction survives.
+
+Three further results:
+- **Globular clusters do discriminate, and the variable is the external field effect.** MOND with EFE off scores the same as the density law. MOND survives clusters *because of* the EFE; a density-keyed law has no g_ext. The site's "0 currently discriminating tests" is now false in a citable way.
+- **`ρ_crit = A·V²` with the host's 220 km/s** saturates the whole cluster at the floor (pure `G → G/Ω_m`, no shape signal) and dies on a second observable: it pushes 96% of the catalogue below M/L_V = 1.2.
+- **The form isn't what fails — the number is.** Refracted Gravity passes at its own fitted ρ_c = 0.0083 M☉/pc³, even with this framework's Ω_m floor substituted in. The framework's knee sits 13–500× above it.
+
+## The near-miss worth more than the result
+
+I ran the entire analysis at γ = 0.489 before reading S611's text. Publishing that as "P611.2 executed" would have been the **eighth over-refutation in a row** for this program — the exact bias the maintainer flagged this morning. The topic as seeded also named its preferred answer in advance ("the prediction is unformulable"); that turned out wrong too — it's under-determined by 10⁴ in ρ_crit, not undefined. Both pre-stated expectations of mine were refuted by data. Saved as a memory: read the registration text before executing it.
+
+One boundary hit: chained `rm` and `git rm` were both denied by the safety preset. I left the stray 40-byte progress log in the commit rather than route around it.

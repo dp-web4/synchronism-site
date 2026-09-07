@@ -316,6 +316,39 @@ export default function GalaxyRotation() {
             family&apos;s encoding of MOND&apos;s simple μ. The framework&apos;s asserted γ=2 means q=4 —
             re-Newtonianizing far too abruptly — which is the +184 kill restated mechanistically.
           </p>
+          <div style={{
+            background: 'rgba(139,92,246,0.07)',
+            border: '1px solid rgba(139,92,246,0.35)',
+            borderRadius: '0.375rem',
+            padding: '0.85rem 1.05rem',
+            margin: '0.9rem 0',
+            fontSize: '0.85rem',
+            color: 'var(--color-text-secondary)',
+          }}>
+            <strong style={{ color: 'var(--color-accent-violet)' }}>Stated exactly, not asymptotically
+            (added 2026-09-07, visitor graduate-physics persona).</strong> The paragraph above argues
+            MOND-equivalence through a <em>tail</em> exponent. It holds <em>identically</em>, and the exact
+            version is both shorter and more damning. Because e<sup>&#x03B3;ln(1+x)</sup> = (1+x)<sup>&#x03B3;</sup>,
+            <span style={{ display: 'block', textAlign: 'center', fontFamily: 'monospace', margin: '0.5rem 0', color: 'var(--color-text-primary)' }}>
+              tanh(&#x03B3;&thinsp;ln(1+x)) = [(1+x)<sup>2&#x03B3;</sup> &minus; 1] / [(1+x)<sup>2&#x03B3;</sup> + 1]
+            </span>
+            with no approximation. At <strong>&#x03B3; = &frac12;</strong> the exponent cancels and this
+            collapses to a Möbius transform of density:
+            <span style={{ display: 'block', textAlign: 'center', fontFamily: 'monospace', margin: '0.5rem 0', color: 'var(--color-text-primary)' }}>
+              C(x) = x/(x+2) = &#x03BC;<sub>simple</sub>(x/2)
+            </span>
+            &mdash; MOND&apos;s simple interpolating function <em>for all x</em>, not just in the tail, with
+            a&#x2080; &rarr; 2a&#x2080;. The free-&#x03B3; SPARC fit lands at <strong>0.489, which is 2% from the
+            unique &#x03B3; at which this model does not resemble MOND but <em>is</em> MOND.</strong> The same
+            cancellation runs the cosmology sector: at &#x03B3; = &frac12;, (1&minus;C)/C = 2/x, so the substituted
+            dark-energy density &#x03C1;<sub>DE</sub> = &#x03C1;<sub>m</sub>(1&minus;C)/C = 2&#x03C1;<sub>crit</sub>{' '}
+            &mdash; &#x03C1;<sub>m</sub> cancels identically and a cosmological constant falls out. <strong>One
+            algebraic fact with two faces:</strong> exactly MOND-simple in the galaxy sector, exactly &Lambda; in
+            the cosmological sector, and both galaxy data (&#x03B3; = 0.489) and DESI DR2 (&#x03B3; = 0.487)
+            select it. That collapses six ledger rows into one line of algebra. See{' '}
+            <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>{' '}
+            and <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>.
+          </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             <strong>The fitted γ has a consequence beyond MOND-equivalence: the Solar System (TEST-25, added
             2026-07-28).</strong> γ ≈ 0.49 landing on MOND&apos;s simple-μ family (q ≈ 1, above) is not merely a
@@ -334,7 +367,9 @@ export default function GalaxyRotation() {
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             <strong>Why the intersection is empty (added 2026-07-30, visitor persona pass): a tail-shape
             mismatch, not a tuning failure.</strong> The compander saturates as a <strong>power law</strong>,
-            1&minus;C = 2(1+x)<sup>&minus;2γ</sup>; McGaugh&apos;s simple-μ approaches Newtonian as an{' '}
+            1&minus;C = 2(1+x)<sup>&minus;2γ</sup>; <strong>McGaugh&apos;s RAR interpolating function</strong> &mdash;
+            ν(y) = [1&minus;e<sup>&minus;&radic;y</sup>]<sup>&minus;1</sup>, the one fitted to the observed
+            radial-acceleration relation &mdash; approaches Newtonian as an{' '}
             <strong>exponential</strong>, ν&minus;1 ~ e<sup>&minus;&radic;x</sup>. At Saturn, x = g<sub>Saturn</sub>/a₀
             &#8776; 6.5×10⁻⁵/1.2×10⁻¹⁰ &#8776; 5×10⁵. At the SPARC-preferred γ &#8776; 0.489 the compander&apos;s
             fractional anomaly is &#8776;2·(5×10⁵)<sup>&minus;0.978</sup> &#8776; 5×10⁻⁶; the exponential form gives
@@ -342,13 +377,27 @@ export default function GalaxyRotation() {
             The two tails are numerically identical over the SPARC range (10⁻² &lt; x &lt; 10²) — which is why
             &ldquo;curve-equivalent to MOND&rdquo; holds there — but a power-law tail decays far slower than an
             exponential one, so any sufficiently strong field separates them, and the Solar System is far enough
-            into that regime that the gap is five-plus orders of magnitude rather than a fitting margin. This is
-            the framework&apos;s one genuinely non-MOND-degenerate piece of physics, and it is a direct
-            consequence of choosing a power-law compander for the deep-field limit — the same choice that gives
+            into that regime that the gap is five-plus orders of magnitude rather than a fitting margin. It is a
+            direct consequence of choosing a power-law compander for the deep-field limit — the same choice that gives
             the bounded-C formulation its finite boost ceiling (B<sub>max</sub> = 1/Ω<sub>m</sub>, see{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
             Derivations</Link>). Full derivation back-annotated to the research archive alongside TEST-25&apos;s
             registered result.
+            <em style={{ display: 'block', marginTop: '0.6rem', color: 'var(--color-text-secondary)' }}>
+              <strong style={{ color: '#f59e0b' }}>Naming corrected, and an overclaim removed, 2026-09-07.</strong>{' '}
+              This paragraph previously called the exponential function &ldquo;McGaugh&apos;s simple-μ&rdquo; and
+              called the power-law tail &ldquo;the framework&apos;s one genuinely non-MOND-degenerate piece of
+              physics.&rdquo; Both were wrong, and they were wrong together. Milgrom&apos;s <em>simple μ</em> = x/(1+x)
+              returns to Newtonian as a <em>power law</em>; the exponential belongs to McGaugh&apos;s RAR ν. So the
+              page was simultaneously asserting that the compander is simple-μ identically at γ = ½ (correct, and
+              stated above and on{' '}
+              <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>)
+              and that its power-law tail distinguishes it from simple-μ (false). The tail does not separate this
+              framework from MOND — it separates <em>one branch of MOND from another</em>, and it lands on the
+              branch Hees et al. (2016) already report as disfavored by planetary ephemerides for exactly this
+              reason. Read correctly the empty intersection is <em>more</em> inherited, not less: the compander is
+              in the simple-μ branch and the Solar System had already closed that branch.
+            </em>
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
             Net discriminating galaxy tests vs MOND: <strong style={{ color: '#ef4444' }}>0, by execution</strong>.

@@ -125,9 +125,15 @@ export default function DarkMatter() {
           &#x0394;BIC=+184 (conservative &ge;+33 after intra-galaxy correlation), the BTFR slope kill fires at 3.3&#x03C3;, and 69% of galaxies exceed the framework&apos;s
           dark-matter-fraction ceiling &mdash; see{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>. The
-          &ldquo;14,760 galaxies&rdquo; figure pools two different measurements: 175 resolved SPARC rotation
-          curves (where the mechanism was actually tested and failed) and 14,585 ALFALFA&ndash;SDSS
-          Tully&ndash;Fisher objects from a registered test (TEST-03) that never ran as registered. This page
+          headline galaxy count pools two different measurements: 175 resolved SPARC rotation
+          curves (where the mechanism was actually tested and failed) and the ALFALFA&ndash;SDSS
+          Tully&ndash;Fisher objects from a registered test (TEST-03) that never ran as registered. The site
+          publishes <strong>14,610</strong> (175 + 14,435 after the quality cut); the pre-cut pooling is
+          14,760 (175 + 14,585). <em>(This caveat quoted the pre-cut 14,760 as though it were the published
+          figure until 2026-09-07; the pooling warning was right, its arithmetic was one revision behind.
+          Flagged by two independent visitor personas.)</em> The warning stands either way: the large number
+          is dominated by a test that never ran as registered, so it should not be read as the sample on
+          which the mechanism was evaluated. This page
           is not waiting on clusters, the CMB, or large-scale structure to reach a verdict at galaxy scale
           &mdash; that verdict is already in, and it is Failed. What remains open is whether anything about
           the coherence framing survives outside the galaxy sector.

@@ -76,6 +76,19 @@ export default function ForResearchers() {
             offset is ~1.7 dex; and clusters require a &#x03C1;<sub>crit</sub> 10<sup>4</sup>–10<sup>6</sup>&times;
             off the galaxy calibration (Coma, four ansätze, one structurally bounded at velocity ratio &le;2 vs observed 4.6).
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
+            <strong style={{ color: '#ef4444' }}>Companion result, no data required (added 2026-09-07,
+            visitor researcher persona):</strong> the framework&apos;s galaxy sector is not local either, so the
+            no-go above is not a contest between a local theory and a non-local phenomenon.
+            &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; keys the coherence threshold to an
+            r &rarr; &infin; quantity (BTFR-fixed by total baryonic mass), and B<sub>max</sub> = 1/&#x03A9;<sub>m</sub>{' '}
+            caps a per-galaxy boost with a cosmological parameter. Both are <em>Predictive Closure</em> violations
+            under the framework&apos;s own MRH definition. The sector needs the one non-local variable it lacks
+            (g<sub>bar</sub>) and uses two it should not have. This also supplies the mechanism behind artifact 5
+            below: at SPARC-sampled x, C &#x2248; &#x03B3;&#x03C1;/(A V<sub>flat</sub>&sup2;), so &#x03B3; and A enter
+            only as &#x03B3;/A — one number per galaxy, which is what &#x03C1;(ln&#x03B3;, lnA) = +1.000000 measures.
+            Full statement on <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>MRH</Link>.
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
             <strong style={{ color: '#38bdf8' }}>Why this is the whole difference, not one failure among six (added
             2026-08-02):</strong>{' '}

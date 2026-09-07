@@ -332,7 +332,15 @@ export default function GalaxyPlotter() {
             local-vs-non-local structural no-go
           </a>{' '}
           for why a pointwise density map cannot in general reproduce an acceleration-space relation without
-          per-galaxy calibration.
+          per-galaxy calibration.{' '}
+          <strong style={{ color: '#f59e0b' }}>And the &ldquo;local&rdquo; side of that contrast is not local
+          either (added 2026-09-07):</strong> &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2; keys
+          the threshold to the asymptotic rotation speed &mdash; an r &rarr; &infin; quantity fixed by the
+          galaxy&apos;s total baryonic mass &mdash; so what this curve evaluates is
+          C(&#x03C1;(r), M<sub>total</sub>), not C(&#x03C1;(r)). That is an MRH violation by the framework&apos;s
+          own definition and it needs no data at all; see{' '}
+          <a href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>MRH &rarr; Does the framework respect
+          its own horizon?</a>
           <p style={{ margin: '0.6rem 0 0' }}>
             <strong style={{ color: '#f59e0b' }}>Approximation note (added 2026-07-17, flagged by an
             expert reader):</strong> the gray Newtonian curve uses <em>spherical</em> enclosed mass for what is

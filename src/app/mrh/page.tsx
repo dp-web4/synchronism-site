@@ -29,10 +29,29 @@ export default function MRH() {
           floor?&rdquo; &mdash; making the boundary itself a function of scale, density, and context.
         </p>
 
+        <p style={{
+          fontSize: '1.05rem',
+          background: 'rgba(139,92,246,0.07)',
+          border: '1px solid rgba(139,92,246,0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.9rem 1.1rem',
+          margin: '1.5rem 0 0.75rem',
+        }}>
+          <strong style={{ color: 'var(--color-accent-violet)' }}>In one line:</strong>{' '}
+          the MRH is <strong>the bubble of neighbors that matter</strong>. A single atom does not
+          &ldquo;feel&rdquo; the Andromeda galaxy &mdash; it responds to what is immediately around it, and
+          the MRH is the name for how far &ldquo;immediately around it&rdquo; reaches. Everything past that
+          edge is supposed to be irrelevant to how the system evolves.
+        </p>
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', margin: '0 0 0.5rem' }}>
+          The formal version says the same thing with the load-bearing words made explicit
+          (<em>degrees of freedom</em> = the independent numbers you would need to write down to specify
+          the system&apos;s state):
+        </p>
         <blockquote style={{
           borderLeft: '3px solid var(--color-accent-violet)',
           paddingLeft: '1rem',
-          margin: '1.5rem 0',
+          margin: '0.5rem 0 1.5rem',
           color: 'var(--color-text-secondary)',
           fontStyle: 'italic',
         }}>
@@ -59,6 +78,69 @@ export default function MRH() {
               Everything outside is irrelevant. If it does improve prediction, the MRH was incorrectly specified.
             </p>
           </div>
+        </div>
+
+        <div style={{
+          background: 'rgba(239,68,68,0.07)',
+          border: '1px solid rgba(239,68,68,0.35)',
+          borderRadius: '0.375rem',
+          padding: '1rem 1.15rem',
+          margin: '1.5rem 0',
+          fontSize: '0.9rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <h3 style={{ margin: '0 0 0.6rem', color: '#ef4444', fontSize: '1.05rem' }}>
+            Does the framework respect its own horizon? Not in the galaxy sector.
+          </h3>
+          <p style={{ margin: '0 0 0.6rem' }}>
+            <strong>Added 2026-09-07</strong>, raised by a visitor researcher persona. This is a{' '}
+            <strong>data-free</strong> self-consistency failure: it needs no SPARC fit, no BTFR slope
+            and no &Delta;BIC, and it would stand even if every empirical test on the{' '}
+            <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>{' '}
+            ledger had passed.
+          </p>
+          <p style={{ margin: '0 0 0.6rem' }}>
+            The galaxy sector advertises C as a function of <em>local</em> density &mdash; that is the whole
+            reason it is claimed to be MRH-respecting, and the reason the{' '}
+            <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>local-density no-go</Link>{' '}
+            bites. But look at what the mechanism actually evaluates. Two of its three inputs are imported
+            from outside any local neighborhood:
+          </p>
+          <ul style={{ paddingLeft: '1.2rem', margin: '0 0 0.6rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+            <li>
+              <strong>&#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2;.</strong> V<sub>flat</sub> is the
+              asymptotic rotation speed &mdash; defined in the r &rarr; &infin; limit, and by the BTFR fixed by
+              the galaxy&apos;s <em>total</em> baryonic mass. So C at radius r is not C(&#x03C1;(r)); it is
+              C(&#x03C1;(r), M<sub>total</sub>). A threshold on a local field has been keyed to a global label,
+              which is exactly what <em>Predictive Closure</em> above forbids.
+            </li>
+            <li>
+              <strong>B<sub>max</sub> = 1/&#x03A9;<sub>m</sub> = 3.17.</strong> The per-galaxy boost ceiling
+              is set by a <em>cosmological</em> parameter. A galaxy&apos;s relevancy horizon does not contain
+              &#x03A9;<sub>m</sub>. (Flagged independently by a visitor graduate-physics persona the same day.)
+              Note this objection is stronger than the empirical one it accompanies, because it does not
+              depend on the value: TEST-10 needs B &#x2265; 13.7 and no cosmic ratio supplies it, but even a
+              ratio that <em>did</em> supply it would still be an import.
+            </li>
+          </ul>
+          <p style={{ margin: '0 0 0.6rem' }}>
+            <strong>The mechanical consequence.</strong> In the small-x regime SPARC actually samples
+            (median x &#x2248; 7&times;10<sup>&minus;5</sup>), C &#x2248; &#x03B3;&thinsp;x = &#x03B3;&#x03C1;/(A&thinsp;V<sub>flat</sub>&sup2;)
+            &mdash; &#x03B3; and A enter only as the ratio &#x03B3;/A. That is <em>one</em> free number per galaxy,
+            not two, which is what the Fisher correlation &#x03C1;(ln&#x03B3;, lnA) = +1.000000 on{' '}
+            <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>{' '}
+            is reporting. The unidentifiability artifact and this locality violation are the same defect seen
+            from two directions: the model is fit per-galaxy against a global label, so the local parameters
+            never get separately measured.
+          </p>
+          <p style={{ margin: 0 }}>
+            <strong>The shape of the whole problem.</strong> The galaxy sector needs one non-local variable it
+            does not have (g<sub>bar</sub>, the enclosed-mass acceleration the RAR is organized by &mdash; that
+            is the local-density no-go), and it silently uses two non-local variables it should not have
+            (V<sub>flat</sub>, &#x03A9;<sub>m</sub>). It is <em>non-local by construction in the sector where it
+            claims locality</em>, and non-local in the wrong variables. This is registered here rather than
+            hidden because it is cheap, structural, and cuts against the framework.
+          </p>
         </div>
 
         <h2>MRH and Presence</h2>

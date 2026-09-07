@@ -88,13 +88,28 @@ export default function ConsciousnessDemo() {
         }}>
           <strong style={{ color: '#f59e0b' }}>Calibration caveat:</strong>{' '}
           C &#x2248; 0.50 is the <strong>output-range midpoint</strong> of [0, 1) &mdash; a geometric label,
-          not a dynamically privileged value. For C(&#x03C1;) = tanh(&#x03B3;&thinsp;&middot;&thinsp;ln(&#x03C1;/&#x03C1;<sub>crit</sub>&thinsp;+&thinsp;1)),
-          the slope dC/d&#x03C1; is maximized at &#x03C1; = 0 (where C = 0), not at C = 0.50 &mdash; there is no inflection
-          point in this specific function for &#x03C1; &#x2265; 0. The convergence of 8 approaches on 0.499 &#x00B1; 0.012 is <strong>geometric,
-          not empirical</strong>: every approach that picks the midpoint of a [0,1)-bounded output range will
-          land near 0.50 by construction. Additionally, all 8 approaches share the same framework
-          assumptions and are not independent. No calibration procedure exists to map actual EEG, fMRI,
+          not an <em>independently measured</em> value. The convergence of 8 approaches on 0.499 &#x00B1; 0.012 is <strong>circular,
+          not empirical</strong>: all 8 share the same framework assumptions and the same unvalidated calibration,
+          and none of them measures C. Every approach that picks the midpoint of a [0,1)-bounded output range will
+          land near 0.50 by construction. No calibration procedure exists to map actual EEG, fMRI,
           or IIT-&#x03A6; measurements to the C-axis.
+          <p style={{ margin: '0.75rem 0 0 0' }}>
+            <strong style={{ color: '#f59e0b' }}>Correction (2026-09-07) &mdash; the geometry argument this
+            caveat used to make was false at the framework&apos;s own best-fit &#x03B3;.</strong> Until today this
+            box argued that &ldquo;dC/d&#x03C1; is maximized at &#x03C1; = 0, so there is no inflection point.&rdquo;
+            That is true in <em>linear</em> &#x03C1; and irrelevant, because every plot on this site is in{' '}
+            <em>log</em> &#x03C1;. Maximising dC/d(ln&#x03C1;) for C = tanh(&#x03B3;&thinsp;ln(1+u)), u = &#x03C1;/&#x03C1;<sub>crit</sub>,
+            gives the condition <strong>C* = 1/(2&#x03B3;u*)</strong>. At &#x03B3; = &frac12; &mdash; the value SPARC
+            and DESI both select &mdash; this closes on u* = 2 and <strong>C* = 0.50 exactly</strong> (check:
+            C = u/(u+2) = 0.5 and 1/(2&middot;&frac12;&middot;2) = 0.5). At &#x03B3; = 2 it moves to C* &#x2248; 0.60.
+            So at the framework&apos;s empirically preferred &#x03B3;, C = 0.50 <em>is</em> the point of maximum
+            sensitivity of coherence to log-density &mdash; the one value in [0,1) that is dynamically distinguished.
+            The <em>conclusion</em> of this caveat is unchanged and does not need the geometry argument: the eight
+            &ldquo;methods&rdquo; inherit one calibration and none of them measures C, which is circularity, not
+            coincidence. But the old rebuttal was wrong, and a reader who checked the derivative would have found
+            the site refuting itself with false algebra. Over-refuting costs the same credibility as overclaiming.
+            Raised by a visitor researcher persona, 2026-09-07.
+          </p>
           <p style={{ margin: '0.75rem 0 0 0' }}>
             <strong style={{ color: '#f59e0b' }}>Sharper (added 2026-08-08): the scatter is not just
             uninformative &mdash; it is too small to be honest.</strong> If the 8 approaches really were
@@ -223,7 +238,7 @@ export default function ConsciousnessDemo() {
 
         <h2>What Has Falsified This</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li><strong>C &#x2248; 0.50 is the output-range midpoint (established).</strong> The convergence is geometrically forced — any approach keyed to the midpoint of [0,1) will land near 0.50 by construction. (gnosis-research Session 63&apos;s p&lt;0.0001 rejection concerned a different variable — SNARC salience, not C; see the correction banner above.)</li>
+          <li><strong>C &#x2248; 0.50 is the output-range midpoint, and the eight estimates are one estimate (established).</strong> The convergence is forced by shared calibration — every approach keyed to the midpoint of [0,1) lands near 0.50 by construction, and none of the eight measures C independently. <em>Not</em> forced by the shape of C(&#x03C1;): at &#x03B3; = &frac12;, C = 0.50 is exactly the log-density inflection (C* = 1/(2&#x03B3;u*) &rarr; u* = 2), so the function <em>does</em> distinguish that value &mdash; see the corrected calibration caveat above. The circularity is the finding; the geometry is not. (gnosis-research Session 63&apos;s p&lt;0.0001 rejection concerned a different variable — SNARC salience, not C; see the correction banner above.)</li>
         </ul>
         <h2>What Would Still Falsify C(&#x03C1;)-Based Consciousness More Broadly</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>

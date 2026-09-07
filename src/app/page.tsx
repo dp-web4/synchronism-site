@@ -66,6 +66,16 @@ export default function Home() {
         <div className="equation" style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>
           C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </div>
+        <p style={{ textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
+          <strong>Never seen these symbols? Read it out loud like this:</strong> &ldquo;coherence, at a given
+          density, equals a squashing function of a compressing function of how dense things are.&rdquo;{' '}
+          <em>tanh</em> squashes any number into the range 0&ndash;1. <em>ln</em> compresses huge ranges into
+          small ones. <em>&#x03C1;</em> is &ldquo;rho&rdquo; = density; <em>&#x03B3;</em> is &ldquo;gamma&rdquo; =
+          how sudden the switch is. <strong>You do not need the equation to read this site</strong> &mdash; the
+          plain-English version below is the whole idea, and the{' '}
+          <Link href="/why-synchronism" style={{ color: 'var(--color-accent-blue)' }}>Beginner Path</Link>{' '}
+          never asks you to touch it.
+        </p>
         <p style={{ textAlign: 'center', color: 'var(--color-accent-warm)', fontSize: '0.9rem', fontStyle: 'italic', marginBottom: '1rem' }}>
           &ldquo;Coherence is a smooth S-curve from sparse/independent to dense/collective, shaped by how many
           particles act together and how dense the system is.&rdquo;

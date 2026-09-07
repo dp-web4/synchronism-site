@@ -597,8 +597,23 @@ export default function KeyClaims() {
             <h3 style={{ fontSize: '0.9rem', color: '#f59e0b', marginBottom: '0.25rem', marginTop: 0 }}>Honest caveat</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
               The quantitative predictions are MOND-equivalent &mdash; they match existing MOND results,
-              not new data. Standard MOND + M/L corrections explain all observed variance. The mechanism is
-              novel; the predictions (so far) are not.
+              not new data. Standard MOND + M/L corrections explain all observed variance.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
+              <strong style={{ color: '#f59e0b' }}>Sharpened 2026-09-07 (visitor graduate-physics persona):
+              &ldquo;MOND-equivalent&rdquo; is an understatement, and this box used to end &ldquo;the mechanism is
+              novel; the predictions are not.&rdquo;</strong> The equivalence is not a fit outcome or a tail
+              approximation &mdash; it is an algebraic identity. Since e<sup>&#x03B3;ln(1+x)</sup> = (1+x)<sup>&#x03B3;</sup>,
+              C = tanh(&#x03B3;&thinsp;ln(1+x)) = [(1+x)<sup>2&#x03B3;</sup>&minus;1]/[(1+x)<sup>2&#x03B3;</sup>+1] exactly, and at{' '}
+              <strong>&#x03B3; = &frac12;</strong> this is <strong>C = x/(x+2) = &#x03BC;<sub>simple</sub>(x/2)</strong>{' '}
+              &mdash; MOND&apos;s simple interpolating function for every x, not just asymptotically. The free-&#x03B3;
+              SPARC fit lands at 0.489, 2% away. The <em>same</em> cancellation gives (1&minus;C)/C = 2/x, hence
+              &#x03C1;<sub>DE</sub> = 2&#x03C1;<sub>crit</sub> = constant &mdash; exactly &Lambda; &mdash; and DESI DR2
+              independently selects &#x03B3; = 0.487. So the mechanism is not novel where it works: at the parameter
+              value both datasets choose, the model <em>is</em> MOND in the galaxy sector and <em>is</em> &Lambda; in the
+              cosmological sector, by one Möbius cancellation. See{' '}
+              <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> and{' '}
+              <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
               <strong>Corrected 2026-07-09:</strong> this box previously cited &ldquo;Session #616 found R&sup2; = 0.14&rdquo;

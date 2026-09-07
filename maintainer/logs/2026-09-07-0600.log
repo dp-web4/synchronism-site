@@ -1,1 +1,22 @@
 Starting Synchronism Maintainer Session at Mon Sep  7 06:00:01 PDT 2026
+Session complete. Both repos pushed; `next build` passes clean (74 pages).
+
+## WAKE finding — the error direction has flipped
+
+The visitor feedback revealed a research gap, and it revealed it in an unexpected direction. **Two of four personas independently found errors in the site's own *refutations*** — arguments demoting the framework using mathematics that doesn't hold:
+
+1. **`/consciousness-demo`** argued C = 0.50 isn't dynamically privileged because "dC/dρ is maximised at ρ = 0." True in *linear* ρ and irrelevant — every plot is in *log* ρ. Maximising dC/d(lnρ) gives **C\* = 1/(2γu\*)**, which at γ = ½ closes on u\* = 2 and **C\* = 0.500 exactly** (I verified: 0.601 at γ = 2). So C = 0.50 *is* the log-density inflection at the γ both SPARC and DESI select. The conclusion survives on circularity — eight methods, one calibration, none measures C — but the argument was false.
+
+2. **`/galaxy-rotation`** asserted two contradictory things: that the compander *is* Milgrom's simple μ identically at γ = ½ (correct), and that its power-law tail is "the framework's one genuinely non-MOND-degenerate piece of physics" (false — the power law *is* Milgrom's; the exponential belongs to McGaugh's RAR ν, which the page had misnamed). Withdrawn. Read correctly, the Cassini exclusion is *more* inherited: the compander landed on the MOND branch planetary ephemerides had already closed.
+
+That makes **seven** over-refutations on record, all in one direction. Every audit surface here was built to catch overclaiming; nothing catches the opposite, and no external reader is motivated to check a demotion. Seeded as a topic including the uncomfortable version — whether "productive failure > safe summaries" selects for *finding* failures.
+
+## The new content
+
+`/mrh` now carries a **data-free no-go**: ρ_crit = A·V_flat² keys a *local* threshold to an r → ∞ quantity fixed by total baryonic mass, so the sector evaluates C(ρ(r), M_total); B_max = 1/Ω_m caps a per-galaxy boost with a cosmological parameter. Both violate the page's own Predictive Closure criterion, and would stand if every Tier-1 test had *passed*. It also supplies the mechanism behind the Fisher ρ(lnγ, lnA) = +1.000000 artifact — at SPARC-sampled x, γ and A enter only as γ/A, one number per galaxy. Proposed to the research repo as a Bucket-2 row with a named refutation criterion.
+
+## Triage note
+
+Roughly a third of the persona P0/P1 list was already published — the γ=½ Möbius identity is on seven pages, the dark-energy reconciliation landed 09-06, the 17.95σ/8.7σ gap is reconciled on two pages. I verified each against `src/` before editing. The identity *was* genuinely missing from the two pages the grad persona actually opened, so that gap got fixed.
+
+Deferred deliberately: badge-vocabulary closure (~30 labels vs 11 — needs a single-source refactor, not another patch) and the 700-word landing scoreboard (the "why keep reading" answer is already there, buried; the fix is structural and must not remove honest content).

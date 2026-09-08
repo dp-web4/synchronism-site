@@ -1,0 +1,53 @@
+==============================================================================================================
+0. TRANSITION BAND in x = rho/rho_c  (tanh factor 0.1 -> 0.9)
+==============================================================================================================
+  gamma 0.489: x = 0.228 .. 19.3   (width 84.7x in density)
+  gamma 1.000: x = 0.106 .. 3.36   (width 31.8x in density)
+  gamma 1.414: x = 0.0735 .. 1.83   (width 24.9x in density)
+  gamma 2.000: x = 0.0514 .. 1.09   (width 21.1x in density)
+
+==============================================================================================================
+1. DWARF SPHEROIDALS  (Plummer, a = r_h; M_bar = 1.5 L_V)   rho_0 = central, rho(r_h), and r_knee / r_h per knee
+==============================================================================================================
+system         M_bar    rho_0  rho(rh)  B_req |    0.0083     0.017      0.05     0.078     0.155     0.161   <- r_knee/r_h  ('below' = whole system under the knee)
+Fornax      3.00e+07     0.02  0.00354    5.6 |      0.65      0.26     below     below     below     below
+Leo I       8.25e+06    0.125    0.022    4.5 |      1.40      1.10      0.66      0.45     below     below
+Sculptor    3.45e+06   0.0363  0.00642   12.1 |      0.90      0.60     below     below     below     below
+Leo II      1.11e+06   0.0486  0.00859   12.0 |      1.01      0.72     below     below     below     below
+Sextans     6.60e+05 0.000469  8.3e-05  114.6 |     below     below     below     below     below     below
+Carina      5.70e+05  0.00871  0.00154   33.3 |      0.16     below     below     below     below     below
+Ursa Minor  4.35e+05   0.0175   0.0031   65.5 |      0.60      0.12     below     below     below     below
+Draco       4.35e+05  0.00962   0.0017   73.4 |      0.26     below     below     below     below     below
+Crater II   2.40e+05 4.73e-05 8.36e-06   56.5 |     below     below     below     below     below     below
+Antlia II   5.55e+05 5.43e-06  9.6e-07  296.0 |     below     below     below     below     below     below
+  B_req = sigma_obs^2 / (G M_bar / 7.5 r_h): the boost the system needs; the floored law delivers <= 3.17.
+
+==============================================================================================================
+2. OPEN CLUSTERS  (modified Hubble on M, r_c, r_t as for the GCs)   + ambient disc density
+==============================================================================================================
+cluster      rho_0 rho(rh)  r_hm |   0.0083    0.017     0.05    0.078    0.155    0.161   <- r_knee [pc] (cluster+ambient = knee)
+Hyades        1.91   0.278  4.83 |    above    above    above    above     7.22     7.00
+Pleiades      12.1   0.357  4.71 |    above    above    above    above     7.47     7.27
+Praesepe      1.21   0.202  6.46 |    above    above    above    above     7.90     7.66
+M67           14.6   0.489  4.62 |    above    above    above    12.00     7.88     7.72
+NGC 188         22    0.26  5.89 |    above    above    16.84    10.75     7.37     7.24
+  'above' = the cluster + field never drops to the knee, so C ~ 1 everywhere: no signal at all.
+
+==============================================================================================================
+3. THE AMBIENT CAP: maximum boost available to an open cluster's outskirts = 1/C(rho_field / rho_c)
+==============================================================================================================
+   rho_c | g=0.489 g=1     g=2        (rho_field = 0.084)   | same at rho_field = 0.04 (z ~ 300 pc)
+  0.0083 |   1.135   1.011   1.000                          |   1.262   1.041   1.001
+   0.017 |   1.256   1.039   1.001                          |   1.473   1.126   1.011
+    0.05 |   1.608   1.201   1.027                          |   1.974   1.477   1.135
+   0.078 |   1.818   1.347   1.075                          |   2.213   1.714   1.281
+   0.155 |   2.184   1.682   1.259                          |   2.554   2.130   1.642
+   0.161 |   2.204   1.704   1.274                          |   2.570   2.153   1.665
+  Compare: GC outskirts reach B = 3.17 (ambient ~1e-4).  Open clusters are capped at the Oort-window value by construction.
+  Sigma scales as sqrt(B): a 1.27 cap is a 13% dispersion excess, against 0.3-0.6 km/s dispersions with binary/unbound contamination.
+
+==============================================================================================================
+4. WHAT sigma(r) LOOKS LIKE under the floored law for a dSph entirely below the knee
+==============================================================================================================
+  C = floor everywhere -> g = g_N / 0.315 at every radius -> sigma(r) = 1.78 x Newtonian sigma(r), SAME SHAPE.
+  gamma does not enter.  A dSph below the knee tests the FLOOR (ceiling B=3.17 vs B_req), not the ladder.

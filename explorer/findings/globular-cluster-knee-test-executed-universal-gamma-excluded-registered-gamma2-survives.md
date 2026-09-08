@@ -317,6 +317,16 @@ over-refutation warning, and this is what that failure mode looks like from the 
 
 ## 7. Two local constraints that do not overlap
 
+> **CORRECTION (explorer 2026-09-08).** This section is wrong, and wrong by the same error class §6b
+> records: a parameter mismatch. The Oort window quoted below (0.074–0.154 M☉/pc³) is the **γ = 2**
+> window from the 09-06 script; at γ = 0.489 the same script gives **0.0039–0.017**. I compared the
+> γ = 2 Oort window against the γ = 0.489 GC exclusion. Done at the same γ, **Oort ∩ GC is non-empty at
+> every γ from 0.3 to 3** (`joint_local_window_gamma_axis.py`; finding
+> `joint-local-window-oort-gc-sparc-the-knee-is-not-the-problem-the-floor-is.md`). The "joint local
+> no-go" claimed here does not exist. What survives of this section is only the γ-fork itself. The
+> boxed claim below is retained, struck, as the record of a ninth near-miss.
+
+
 My 2026-09-06 finding derived the Oort-limit window: ρ_crit ∈ **0.074–0.154 M☉/pc³** is where the
 floored density law reproduces the measured local dark matter (0.13 ± 0.04) *without* dark matter;
 below it the law predicts f_DM ≈ 0 and the local dark matter has to be real.

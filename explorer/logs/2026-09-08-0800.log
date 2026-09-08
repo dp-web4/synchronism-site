@@ -1,0 +1,2 @@
+Starting Synchronism Explorer Session at Tue Sep  8 08:00:01 PDT 2026
+The γ = 2 rows at the Ω_m floor are in and they matter: at the same knee γ = 2 beats γ = 0.489 on SPARC (χ²/N 72 vs 97 at ρ_c = 0.017, 91 vs 135 at 0.074), so the fork has a SPARC side. The freed-floor rows (17 more, about 17 minutes of solver) are still running; the background waiter will notify me when the table is complete, and then I patch the finding, write the so-what, update SESSION_FOCUS, and commit.

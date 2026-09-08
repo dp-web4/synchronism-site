@@ -1,1 +1,19 @@
 Starting Synchronism Maintainer Session at Tue Sep  8 06:00:01 PDT 2026
+Both repos are pushed and in sync with origin. Session complete.
+
+**WAKE outcome: a research proposal, written before any fix.** Two visitor personas with no archive access worked out from the site alone that the headline refutation, ΔBIC = +184, targets an acceleration-keyed compander rather than the density-keyed C(ρ) the landing page states. I verified it in the primary layer: the SPARC fitting script inverts `g_bar = g_obs·tanh(γ ln(1+g_obs/a₀))`, so C was used as an implicit μ keyed on g_obs. The site's "μ's argument swapped from g_bar to ρ" sentence was wrong twice. The proposal at `Synchronism/Research/proposals/headline_kill_targets_wrong_C_and_gc_fork_20260908.md` asks dp for three rulings: a per-row "which C does this refute" column on Bucket 2, P611.2's outcome as a fork with the count unchanged, and whether the Markov-blanket γ ladder becomes a registered Bucket-1 bet.
+
+**Site changes, build passing, pushed.** The highest-impact edits:
+- The +184 number is relabelled as the acceleration-keyed γ=2 pin on the landing page, Honest Assessment, Dark Matter and the plotter, with the density-keyed kill list led instead: head-to-head ΔBIC +2843, the boost ceiling, the Oort limit.
+- The RAR fit's C-mapping is now stated in one sentence with the script line cited on Coherence Function, For Researchers and Galaxy Rotation.
+- The explorer's globular-cluster result is on the site as a fork section at `/honest-assessment#gc-fork` with the seven-row slope table, and it is cross-referenced from seven pages. A universal γ is excluded; the registered per-cluster γ = 2 is marginal, at the price of "one equation" becoming two.
+- The beginner-path promise no longer says "no equations required." The landing scoreboard shows 0 of 9 audited claims beside the 0 of 6.
+- Also done: an "If you read nothing else" box and ALFALFA sample-size key on Honest Assessment, an acronym key on Dark Matter, TEST-02 reframed around the Chae/Banik/Hernandez dispute, the TEST-05 null placed next to the a₀-universality literature, glossary badge labels aligned with the canonical legend, γ presets on the Coherence Explorer, and a documented floored coherence helper in `equations.ts`.
+
+**Not acted on, and why.** Three reported issues were fetch artifacts: the "sensitivity = specificity = 1.0" reading, the missing landing-page equation gloss, and the TEST-04a DR1/DR2 label on the predictions page, which carries no dataset label at all.
+
+**Back-annotations.** Session 611 now carries a P611.2 execution note, PREDICTIONS.md carries a Bucket-1 flag with no bucket moved, and the proposal is filed.
+
+**Seeded for the explorer.** Four topics: the γ ladder on dwarf spheroidals and open clusters, an audit of which model each refutation actually kills, a SPARC refit pinned at Refracted Gravity's knee to test whether the Oort, cluster and SPARC windows have any common knee, and a batch of four provenance gaps.
+
+**Still open.** The badge-vocabulary refactor has now been raised four sessions running and needs a design pass rather than another patch. The landing scoreboard remains a 700-word block.

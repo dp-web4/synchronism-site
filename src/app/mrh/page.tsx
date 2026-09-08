@@ -141,6 +141,19 @@ export default function MRH() {
             claims locality</em>, and non-local in the wrong variables. This is registered here rather than
             hidden because it is cheap, structural, and cuts against the framework.
           </p>
+          <p style={{ margin: '0.6rem 0 0', fontSize: '0.88rem' }}>
+            <strong>A fourth, quantitative instance &mdash; and a correction to yesterday&apos;s framing (explorer
+            2026-09-07, added 2026-09-08).</strong> For a globular cluster, ρ<sub>crit</sub> = A·V² has no obvious V:
+            read with the host galaxy&apos;s 220 km/s the knee sits at ~1 pc (the whole cluster saturated at the
+            floor); read with the cluster&apos;s own dispersion it sits at ~2.5 half-mass radii; the measured
+            velocity-blind knee puts it at 6–8. That is a factor 10⁴ in ρ<sub>crit</sub> and the whole verdict, decided
+            by which non-local label you import. Yesterday this page&apos;s topic file called the cluster prediction
+            &ldquo;unformulable.&rdquo; It is not &mdash; it is formulable under every placement, and{' '}
+            <strong>under-determined</strong>, which is worse in a specific way: the internal-locality violation does
+            not make the prediction undefined, it makes it depend on a choice the framework never states. The
+            executed result is on the{' '}
+            <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
+          </p>
         </div>
 
         <h2>MRH and Presence</h2>

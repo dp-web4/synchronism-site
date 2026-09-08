@@ -27,6 +27,21 @@ export default function DarkMatter() {
         <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.)
       </p>
 
+      <div className="card" style={{ marginTop: '1rem', fontSize: '0.82rem' }}>
+        <p style={{ margin: '0 0 0.4rem', fontWeight: 600, color: 'var(--color-text-secondary)' }}>Acronym key for this page (added 2026-09-08; same pattern as <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>)</p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: '0.2rem 0.9rem', color: 'var(--color-text-secondary)' }}>
+          <strong>SPARC</strong><span>Spitzer Photometry and Accurate Rotation Curves &mdash; the 175-galaxy rotation-curve database the mechanism was tested on.</span>
+          <strong>ALFALFA&ndash;SDSS</strong><span>Two sky surveys (a radio hydrogen survey and an optical survey) cross-matched into a 14,435-galaxy sample; used for the Tully&ndash;Fisher statistics, not for resolved curves.</span>
+          <strong>BTFR</strong><span>Baryonic Tully&ndash;Fisher Relation &mdash; a galaxy&apos;s visible mass scales as a power of its flat rotation speed; the slope of that power law is a test.</span>
+          <strong>RAR</strong><span>Radial Acceleration Relation &mdash; observed gravity vs the gravity visible matter predicts, point by point in galaxies.</span>
+          <strong>&#x0394;BIC</strong><span>Difference in Bayesian Information Criterion &mdash; a fit-quality score that penalizes extra parameters; positive means the compared model fits worse. Above ~10 is decisive.</span>
+          <strong>&#x03C3;</strong><span>Standard deviations &mdash; &ldquo;3.3&#x03C3;&rdquo; means the measurement sits 3.3 error bars from the prediction.</span>
+          <strong>NFW</strong><span>Navarro&ndash;Frenk&ndash;White &mdash; the standard dark-matter halo density profile from simulations.</span>
+          <strong>EFE</strong><span>External Field Effect &mdash; in MOND, a system&apos;s internal gravity depends on the external field it sits in.</span>
+          <strong>MOND</strong><span>Modified Newtonian Dynamics &mdash; Milgrom&apos;s 1983 alternative to dark matter.</span>
+        </div>
+      </div>
+
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           &ldquo;Dark matter&rdquo; is one of the most loaded terms in physics. It conjures images of
@@ -109,7 +124,12 @@ export default function DarkMatter() {
             than baryons, not more. High viscosity predicts more interaction, which is the wrong direction.</li>
           <li><strong>Galaxy clusters:</strong> The Bullet Cluster shows a lensing-baryon offset that
             requires either dark matter or a gravity modification reproducing the same offset. MOND fails
-            here; Synchronism has no answer yet.</li>
+            here; Synchronism has no answer yet. <em>(Scale of the failure, added 2026-09-08 at a researcher
+            persona&apos;s request: these are MOND&apos;s failures too &mdash; MOND leaves a residual factor ~2 in cluster
+            masses and needs extra mass for the Bullet Cluster, Clowe et al. 2006 / Angus et al. 2007. The
+            density-keyed version fails by 10⁴–10⁶× on the cluster knee, so the finding is not &ldquo;Synchronism
+            fails where MOND works&rdquo; but &ldquo;density keying fails four to six orders of magnitude harder than
+            acceleration keying.&rdquo;)</em></li>
           <li><strong>CMB acoustic peaks:</strong> The relative heights of the CMB power spectrum peaks
             are precisely fit by CDM. Any dark-matter-free framework must reproduce these ratios.</li>
           <li><strong>Large-scale structure:</strong> The matter power spectrum and BAO measurements
@@ -121,10 +141,17 @@ export default function DarkMatter() {
           <strong>Update 2026-08-01 — the galaxy-scale mechanism itself is refuted, not just incomplete:</strong>{' '}
           the coherence function has no algebraic chain to the observed acceleration relation (see{' '}
           <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>{' '}
-          for the locality argument), and on real SPARC data the density-keyed compander is rejected at
-          &#x0394;BIC=+184 (conservative &ge;+33 after intra-galaxy correlation), the BTFR slope kill fires at 3.3&#x03C3;, and 69% of galaxies exceed the framework&apos;s
+          for the locality argument), and on real SPARC data the compander is rejected at
+          &#x0394;BIC=+184 with &#x03B3;=2 pinned (conservative &ge;+33 after intra-galaxy correlation) &mdash; <em>target
+          corrected 2026-09-08:</em> that number refutes the <strong>acceleration-keyed</strong> realization the fit actually
+          ran, not the density-keyed C(&#x03C1;) this page describes; the density-keyed law loses <em>harder</em>, head-to-head
+          on SPARC at &#x0394;BIC +2843 with &#x03B3; free, and its floored form is capped by the boost ceiling &mdash; the BTFR slope kill fires at 3.3&#x03C3;, and 69% of galaxies exceed the framework&apos;s
           dark-matter-fraction ceiling &mdash; see{' '}
-          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>. The
+          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>. The one registered
+          test of the density law on objects that actually cross its knee (Galactic globular clusters, executed
+          2026-09-07) came back a <strong>fork</strong>: a universal &#x03B3; is excluded, the registered per-cluster
+          &#x03B3;&nbsp;=&nbsp;2 is marginal &mdash; see{' '}
+          <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>. The
           headline galaxy count pools two different measurements: 175 resolved SPARC rotation
           curves (where the mechanism was actually tested and failed) and the ALFALFA&ndash;SDSS
           Tully&ndash;Fisher objects from a registered test (TEST-03) that never ran as registered. The site

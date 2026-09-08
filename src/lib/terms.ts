@@ -35,7 +35,7 @@ export const terms: Record<string, TermDefinition> = {
     term: '\u03C1_crit',
     fullName: 'Reference Density (Saturation Knee)',
     brief: 'Reference density \u2014 a saturation knee, not a critical point. C(\u03C1_crit, \u03B3=2) = 0.88; the midpoint C=0.5 sits at \u03C1 \u2248 0.32\u00D7\u03C1_crit. \u03C1_crit = A \u00D7 V_flat\u00B2 (astrophysical case).',
-    explanation: '\u03C1_crit sets the scale at which the coherence function enters saturation \u2014 NOT a phase-transition critical density. At \u03B3=2, C(\u03C1_crit) = tanh(2\u00B7ln 2) = 0.88; the actual C=0.5 midpoint is at \u03C1 \u2248 0.32\u00D7\u03C1_crit. The "+1" regulator in ln(\u03C1/\u03C1_crit + 1) makes the function asymmetric. "Critical density" or "transition density" are misleading terms for this parameter \u2014 the correct description is saturation knee or reference density.',
+    explanation: '\u03C1_crit sets the scale at which the coherence function enters saturation \u2014 NOT a phase-transition critical density. At \u03B3=2, C(\u03C1_crit) = tanh(2\u00B7ln 2) = 0.88; the actual C=0.5 midpoint is at \u03C1 \u2248 0.32\u00D7\u03C1_crit. The "+1" regulator in ln(\u03C1/\u03C1_crit + 1) makes the function asymmetric. "Critical density" or "transition density" are misleading terms for this parameter \u2014 the correct description is saturation knee or reference density. The symbol keeps the "crit" subscript for historical continuity only: it was named in Session 53 when it was believed to mark a phase transition, every script and ledger row since carries that name, and renaming it would break the audit trail (note added 2026-09-08).',
     learnMore: '/critical-density',
   },
   'MRH': {
@@ -197,10 +197,10 @@ export const terms: Record<string, TermDefinition> = {
     learnMore: '/falsifiability',
   },
   'badge-postdiction': {
-    term: 'Post-diction',
-    fullName: 'Validation Label: Post-diction',
-    brief: 'Formula or derivation produced after the confirming experiment was already published.',
-    explanation: 'A post-diction matches known data but was not a forward prediction — the experiment\'s result was already in the literature when the formula was derived. Epistemically weaker than "Validated" (genuine pre-registered prediction confirmed) but distinct from "Reparametrization" (notation change). Post-dictions can be valuable as consistency checks and can motivate forward predictions, but they do not independently confirm a framework.',
+    term: 'Post-diction (descriptor, not a badge)',
+    fullName: 'Post-diction — Free-Text Finding Descriptor (not in the canonical badge legend)',
+    brief: 'Formula or derivation produced after the confirming experiment was already published. Appears after the dash on a badge (e.g. "Reparametrization — Post-diction"); the formal status is always the badge word.',
+    explanation: 'Not one of the nine formal badges on the Honest Assessment legend (aligned 2026-09-08 after a visitor documentation persona found this entry labelled as a badge while the canonical legend has no such badge). It is a finding descriptor: the text after the dash. A post-diction matches known data but was not a forward prediction — the experiment\'s result was already in the literature when the formula was derived. Epistemically weaker than "Validated" (genuine pre-registered prediction confirmed) but distinct from "Reparametrization" (notation change). Post-dictions can be valuable as consistency checks and can motivate forward predictions, but they do not independently confirm a framework.',
     learnMore: '/research-philosophy',
   },
   'badge-active-mrh': {
@@ -413,8 +413,8 @@ export const terms: Record<string, TermDefinition> = {
     learnMore: '/coherence-function',
   },
   'kill-criterion-triggered': {
-    term: 'Kill Criterion Triggered (badge)',
-    fullName: 'Kill Criterion Triggered \u2014 Operational Badge',
+    term: 'Kill Criterion Triggered (operational state)',
+    fullName: 'Kill Criterion Triggered \u2014 Operational State (not a badge; relabelled 2026-09-08 to match the canonical legend)',
     brief: 'A pre-registered numerical threshold has been crossed; the test is treated as failed unless a revised pre-registration is made.',
     explanation: 'A Kill Criterion is a pre-registered falsification threshold: before the test is run, a specific numerical value is set such that if the result crosses it, the prediction is treated as failed. "Kill Criterion Triggered" means that threshold was crossed. It is a stronger statement than "Failed" alone because it means the failure was anticipated and quantified in advance. In Synchronism\'s test catalog, TEST-03 (RAR environment scatter) has kill criterion R\u00b2 < 0.20 \u2014 observed R\u00b2 = 0.14, criterion triggered. TEST-04a has kill criterion f\u03c3\u2088(z=0.5) > 0.46 \u2014 DESI DR1 measures \u2248 0.55, criterion triggered. Note: "Kill Criterion Triggered" and "Speculative" are mutually exclusive \u2014 Speculative means no quantitative test has been defined; Kill Triggered means one was defined and crossed.',
     learnMore: '/tier-1-existing',
@@ -427,8 +427,8 @@ export const terms: Record<string, TermDefinition> = {
     learnMore: '/tier-1-existing',
   },
   'withdrawn': {
-    term: 'Withdrawn (badge)',
-    fullName: 'Withdrawn \u2014 Prediction Retired',
+    term: 'Withdrawn (operational state)',
+    fullName: 'Withdrawn \u2014 Prediction Retired (an operational state, not a badge; relabelled 2026-09-08 to match the canonical legend)',
     brief: 'A prediction or test has been voluntarily retired because it was found to be contradicted by the framework itself, physically unmotivated, or replaced by a better formulation.',
     explanation: 'A Withdrawn prediction means the framework itself has disowned the test \u2014 not because external data refuted it, but because internal analysis showed it was either (a) contradicted by another part of the framework, (b) unmotivated (no derivation of the predicted amplitude), or (c) superseded by a more precise test. In Synchronism\'s test catalog: TEST-04 (BAO coherence modulation) was withdrawn because (1) Session 107 contradicts it internally, (2) the predicted effect (10\u207b\u2074) is 600\u00d7 below standard nonlinear BAO shifts and thus unmotivated, and (3) the kill criterion of 10\u207b\u2075 is smaller than current measurement precision. Withdrawn differs from Failed: failure comes from data; withdrawal comes from the framework itself.',
     learnMore: '/tier-1-existing',

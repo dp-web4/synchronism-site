@@ -1,7 +1,45 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-07 (explorer)*
+*Last updated: 2026-09-08 (maintainer)*
+
+---
+
+## 🟢 NEW (maintainer 2026-09-08) — **The headline kill (ΔBIC +184) was attached to the wrong coherence function on
+five pages, and two outside personas found it from the site alone. The RAR fit's C-mapping is now stated (implicit μ on
+g_obs, verified in `sparc_tanhlog_profile.py:85`). The 09-07 globular-cluster fork is on the site as a section
+(`/honest-assessment#gc-fork`) and cross-referenced from seven pages; P611.2 is back-annotated as executed.**
+
+Proposal (WAKE, written before any fix): `Synchronism/Research/proposals/headline_kill_targets_wrong_C_and_gc_fork_20260908.md`
+— asks dp for (A) a per-row "which C does this refute" column on Bucket 2, (B) a ruling on P611.2 = fork / count
+unchanged, (C) whether the Markov-blanket γ ladder becomes Bucket-1 row B8. PREDICTIONS.md Bucket 1 carries a flag;
+Session611 carries the execution note. No bucket moved.
+
+Site (build passes, 18 files): landing beginner-path promise no longer says "no equations"; landing scoreboard gives
+0 of 9 audited claims beside the 0 of 6; +184 relabelled as the acceleration-keyed γ=2 pin on landing / HA / dark-matter /
+plotter with the density-keyed kill list (head-to-head +2843, ceiling, Oort, GC fork) led instead; "μ's argument swapped
+from g_bar to ρ" corrected on /coherence-function and /for-researchers (μ's argument is g_obs; the fit swapped nothing);
+GC fork section on HA with the 7-row table, HA "If you read nothing else" box, ALFALFA sample-size key
+(14,585 / 14,435 / 14,437 / 677); /for-researchers item 6 = the GC exclusion window as a transferable null; plotter legend
+"REAL C(ρ)" → "quadrature branch"; /key-claims mass-cancellation scoped to the published calibration (radius does not
+cancel; GCs cross the measured knee); /mrh under-determined-not-unformulable correction; /top-5-tests "zero
+discriminating" precised to "zero that could select"; TEST-02 now names the Chae/Banik/Hernandez dispute and the
+EFE-inclusive 1.0–1.4× (explorer 09-06 correction applied); TEST-05 null situated in the Rodrigues 2018 / McGaugh 2018 /
+Kroupa 2018 a₀-universality exchange; /dark-matter acronym key + "MOND also fails clusters by ~2×" clause;
+`equations.ts` unfloored-form caution + `coherenceFloored()`; Coherence Explorer γ presets (0.49 / 2); glossary
+badge-vs-operational-state labels aligned with the canonical legend; Equation Anatomy "Step N of M" → "Term N of M";
+/a2acw acronym key + a link to a readable session (611).
+
+### → Explorer (topics seeded)
+- `gamma-ladder-dwarf-spheroidals-open-clusters.md` — P611.2's ladder on dSphs + open clusters; pre-check the knee window first.
+- `refutation-target-column-audit.md` — which model does each refutation actually kill; grep every page citing +184.
+- `joint-local-constraint-oort-gc-sparc-at-rg-knee.md` — SPARC refit pinned at RG's 0.0083; is Oort ∩ GC ∩ SPARC empty at every γ?
+- `provenance-gaps-batch-…md` — YBCO Δ, DESI growth 0.58 source, units of A, canonical field equation.
+
+### Deferred (still open)
+- Badge-vocabulary single-source-of-truth refactor (fourth session it has been raised; needs a design session, not a patch).
+- Landing scoreboard collapse-behind-disclosure (structural; do not remove honest content to make room).
+- Dual-path prev/next footers; "Tier 1" as a nav label; ρ gloss unification across /first-encounter, /glossary, /equation-walkthrough.
 
 ---
 

@@ -156,6 +156,17 @@ export default function A2ACW() {
 
         <h2>Health Metrics</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
+          <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+            <strong>Key:</strong> <strong>CCH</strong> = Collaboration Coherence Health, a 0–1 composite of four process
+            ratios &mdash; <strong>AFR</strong> (Ambiguity Fork Rate), <strong>CF</strong> (Challenge Frequency),{' '}
+            <strong>EVR</strong> (External Verification Rate), <strong>FDI</strong> (Fingerprint Divergence Index) &mdash;
+            each defined below. <em>Want to read an actual session?</em> Every one of the 3,308 is a markdown file in the
+            public archive; a representative one is{' '}
+            <a href="https://github.com/dp-web4/Synchronism/blob/main/Research/Session611_Stellar_Markov_Blankets.md" style={{ color: 'var(--color-accent-blue)' }}>Session 611 (Stellar Markov Blankets)</a>,
+            whose prediction P611.2 was executed seven months later &mdash; see the{' '}
+            <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>globular-cluster fork</Link>.
+            (Key + link added 2026-09-08: two visitor personas asked what the acronyms were and whether a session could be read.)
+          </p>
           <p style={{ fontFamily: 'monospace', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
             CCH = (AFR &times; 0.25) + (CF &times; 0.25) + (EVR &times; 0.30) + (FDI &times; 0.20)
           </p>

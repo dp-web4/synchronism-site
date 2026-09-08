@@ -2,10 +2,30 @@
  * Core Synchronism equations for interactive tools and page computations.
  */
 
-/** Coherence function: C(ρ) = tanh(γ · ln(ρ/ρ_crit + 1)) */
+/**
+ * Coherence function: C(ρ) = tanh(γ · ln(ρ/ρ_crit + 1))
+ *
+ * CAUTION (2026-09-08): this is the UNFLOORED form — C → 0 as ρ → 0, so any boost 1/C
+ * diverges at low density. The galaxy-sector law actually adjudicated on Tier 1 is the
+ * floored form C ≥ Ω_m (see coherenceFloored). On the 2026-09-07 globular-cluster test
+ * the unfloored form was the worst performer (outer-slope mismatch −0.428 vs −0.211 floored
+ * at γ = 0.489), and it diverges where the floored form saturates. Tools that plot this
+ * function at low density are plotting the variant the data exclude hardest; caption it.
+ */
 export function coherence(rho: number, gamma: number, rhoCrit: number): number {
   if (rho <= 0 || rhoCrit <= 0) return 0;
   return Math.tanh(gamma * Math.log(rho / rhoCrit + 1));
+}
+
+/**
+ * Floored coherence: C_floored = floor + (1 − floor) · tanh(γ · ln(ρ/ρ_crit + 1)).
+ * With floor = Ω_m ≈ 0.315 this is the bounded-boost law (B_max = 1/Ω_m ≈ 3.17) that
+ * TEST-09/TEST-10 refute and the globular-cluster test scores. Default floor is Ω_m.
+ */
+export function coherenceFloored(rho: number, gamma: number, rhoCrit: number, floor: number = 0.315): number {
+  if (rhoCrit <= 0) return floor;
+  const c = rho <= 0 ? 0 : Math.tanh(gamma * Math.log(rho / rhoCrit + 1));
+  return floor + (1 - floor) * c;
 }
 
 /** γ from N_corr: γ = 2/√N_corr */

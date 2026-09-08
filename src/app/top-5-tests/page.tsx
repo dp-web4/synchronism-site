@@ -101,7 +101,13 @@ export default function Top5Tests() {
         }}>
           <strong style={{ color: '#ef4444' }}>This page is now empty at the top, and that is the
           result (2026-08-10).</strong>{' '}
-          <strong>There are zero active discriminating tests.</strong> The two that stood here until today
+          <strong>There are zero active tests that could <em>select</em> the framework.</strong>{' '}
+          (Precision added 2026-09-08: a test that discriminates <em>between the framework&apos;s own branches</em> now
+          exists and has been run &mdash; Galactic globular clusters separate a density-keyed law from an
+          acceleration-keyed one, and the discriminating variable is MOND&apos;s external field effect; it excludes a
+          universal γ and leaves the registered per-cluster γ = 2 marginal. It still cannot select the framework over
+          MOND or ΛCDM, which is what &ldquo;discriminating&rdquo; means on this page. See the{' '}
+          <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>fork</Link>.) The two that stood here until today
           were demoted, both for reasons that had been documented elsewhere on this site and had never
           reached this page: TEST-02 is <em>self-eliminating-or-tie</em> — no Gaia outcome selects the
           framework, and the confirmation branch sits ~80× below the systematics floor — and the EEG test

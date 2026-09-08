@@ -202,7 +202,9 @@ export default function GalaxyPlotter() {
           <strong>Plain verdict for casual readers:</strong> these curves look great but don&apos;t prove the idea &mdash;
           all three models (Synchronism, MOND, and NFW dark-matter halo) fit galaxy rotation curves about equally well.
           What matters is whether any makes a <em>different, testable prediction</em>, and the ensemble test
-          (SPARC RAR, ΔBIC=+184) shows Synchronism collapses to MOND when γ is freed — curve-equivalence
+          (SPARC RAR, ΔBIC=+184 — a fit in <em>acceleration</em>, MOND&apos;s own variable, not in the density this
+          plotter uses; see <a href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a> for which
+          test kills which version) shows Synchronism collapses to MOND when γ is freed — curve-equivalence
           at fitted γ only, not theory-equivalence. (Corrected 2026-08-09: this read &ldquo;the framework has no
           action, no Lagrangian, and no dynamics.&rdquo; It has all three, postulated in Appendix D of the
           archive since 2025-12-01 — but the version stated there is eliminated a priori, and writing down the
@@ -442,7 +444,7 @@ export default function GalaxyPlotter() {
             <circle cx={pad.left + 20} cy={pad.top + 15} r="4" fill="#38bdf8" />
             <text x={pad.left + 30} y={pad.top + 19} fill="#38bdf8" fontSize="10">Observed</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 30} x2={pad.left + 20 + 8} y2={pad.top + 30} stroke="#8b5cf6" strokeWidth="2.5" />
-            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism &mdash; REAL C(&#x03C1;), &#x03B3;=2 (max C on this disk: {maxC.toFixed(3)} &mdash; boost never turns on)</text>
+            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism, quadrature branch: v&sup2; = v<tspan baselineShift="sub" fontSize="7">b</tspan>&sup2; + (V<tspan baselineShift="sub" fontSize="7">flat</tspan>&middot;C(&#x03C1;))&sup2;, &#x03B3;=2 (max C on this disk: {maxC.toFixed(3)} &mdash; inert by construction)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.75" />
             <text x={pad.left + 30} y={pad.top + 49} fill="#f59e0b" fontSize="10" opacity="0.9">Illustration only — hand-tuned to fit, NOT computed from the theory</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />

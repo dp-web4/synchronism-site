@@ -68,10 +68,24 @@ export default function CoherenceFunction() {
           again, MOND. Combined with f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C on{' '}
           <Link href="/tier-1-existing" style={{ color: '#38bdf8' }}>Tier 1</Link> (so C <em>is</em> the
           interpolating function μ by definition), the galaxy sector reduces to: <strong>MOND, with μ&apos;s
-          argument swapped from the enclosed-mass acceleration g<sub>bar</sub> to local density ρ.</strong> That
+          argument swapped from the acceleration it is keyed on in MOND to local density ρ.</strong> That
           single substitution is the entire difference from MOND &mdash; and it is the same substitution behind
           the local-density no-go on{' '}
           <Link href="/for-researchers" style={{ color: '#38bdf8' }}>For Researchers</Link>.
+          <span style={{ display: 'block', marginTop: '0.5rem', color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+            <strong style={{ color: '#38bdf8' }}>Which variable the fit actually used (verified in the script 2026-09-08,
+            after two visitor personas showed the two readings give different force laws):</strong> the SPARC fit
+            that returns γ = 0.489 and the form-selection table use C as an <em>implicit</em> μ keyed on{' '}
+            <strong>g<sub>obs</sub></strong> &mdash; it solves g<sub>bar</sub> = g<sub>obs</sub>·tanh(γ ln(1 + g<sub>obs</sub>/a₀′))
+            for g<sub>obs</sub> (<code style={{ fontSize: '0.8rem' }}>simulations/sparc_tanhlog_profile.py</code>, line 85, research repo), with
+            a₀′ profiled. At γ = ½ that is Milgrom&apos;s simple μ with a₀ = 2a₀′, which is why the profiled a₀′ = 5.33×10⁻¹¹
+            sits 2.1× below McGaugh&apos;s reference. The <em>explicit</em> reading &mdash; evaluating C on g<sub>bar</sub>/a₀′ and
+            dividing &mdash; gives g<sub>obs</sub> → g<sub>bar</sub> + 2a₀′ at γ = ½, a constant additive floor 0.8–1.8 dex above the
+            RAR below 10⁻¹¹ m/s², and could never reach 0.1437 dex RMS. It was never run. This sentence previously read
+            &ldquo;μ&apos;s argument swapped from g<sub>bar</sub> to ρ,&rdquo; which was wrong twice: μ&apos;s argument in MOND is
+            g<sub>obs</sub>, and the fit swapped nothing &mdash; the swap to ρ is the framework&apos;s <em>stated</em> law, tested
+            separately in the box below.
+          </span>
         </div>
 
         <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>

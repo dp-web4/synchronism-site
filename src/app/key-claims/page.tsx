@@ -510,9 +510,16 @@ export default function KeyClaims() {
             which fails structurally: with &#x03C1;<sub>crit</sub> &#x221D; V&sup2;, mass cancels out of a disk&apos;s
             &#x03C1;/&#x03C1;<sub>crit</sub> ratio entirely (see{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>)
-            &mdash; <strong>no galaxy, of any mass</strong>, crosses the coherence knee. This
+            &mdash; <strong>no galaxy disk, of any mass, crosses the coherence knee at the published calibration</strong>. This
             is a quantified instance of Milgrom&apos;s locality no-go (a local-density function cannot reproduce an
-            acceleration-space law), not a fitting problem.
+            acceleration-space law), not a fitting problem.{' '}
+            <em>Scope narrowed 2026-09-08 (visitor graduate persona):</em> mass cancels from ρ/ρ<sub>crit</sub>;
+            radius does not (ρ/ρ<sub>crit</sub> ∝ 1/(A·G·R²)), so &ldquo;no galaxy crosses&rdquo; is a statement about the
+            calibration A = 0.029 (which puts the knee 2.5×10⁴ above sampled disk densities), not about all calibrations.
+            Under the <em>measured</em> velocity-blind knee of 0.161 M<sub>☉</sub>/pc³ (2026-08-27) the densest 1% of SPARC
+            midplane points do cross it &mdash; and <strong>globular clusters cross it wholesale</strong>, which is why they are
+            the one place the density law has now been tested at its own knee: see the{' '}
+            <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>globular-cluster fork</Link>.
           </p>
           <div className="card" style={{ borderLeft: '3px solid #ef4444', margin: '0.75rem 0', padding: '0.75rem 1rem' }}>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>

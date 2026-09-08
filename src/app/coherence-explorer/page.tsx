@@ -186,6 +186,20 @@ export default function CoherenceExplorer() {
               onChange={e => setGamma(parseFloat(e.target.value))}
               style={{ width: '100%' }}
             />
+            <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
+              {[
+                { g: 0.49, label: 'γ = 0.49 — SPARC free fit (= MOND)' },
+                { g: 2.0, label: 'γ = 2 — framework value (refuted)' },
+              ].map(p => (
+                <button key={p.g} type="button" onClick={() => setGamma(p.g)}
+                  style={{ fontSize: '0.72rem', padding: '0.2rem 0.5rem', borderRadius: '0.3rem', cursor: 'pointer',
+                    border: `1px solid ${Math.abs(gamma - p.g) < 0.005 ? '#8b5cf6' : 'var(--color-border)'}`,
+                    background: Math.abs(gamma - p.g) < 0.005 ? 'rgba(139,92,246,0.18)' : 'transparent',
+                    color: 'var(--color-text-secondary)' }}>
+                  {p.label}
+                </button>
+              ))}
+            </div>
             <p style={{ color: regimeColor, fontSize: '0.8rem', marginTop: '0.25rem' }}>{regime}</p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               Higher &#x03B3; = sharper, more abrupt snap to coherent. Lower &#x03B3; = gentler slope. Depends on N<sub>corr</sub> (correlated particle count): &#x03B3; = 2/&#x221A;N<sub>corr</sub>.

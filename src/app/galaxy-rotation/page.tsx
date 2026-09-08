@@ -32,6 +32,18 @@ export default function GalaxyRotation() {
           below use McGaugh&apos;s standard RAR interpolating function (MOND phenomenology), with Synchronism
           contributing only a scatter hypothesis on top (since refuted; see TEST-08). The structural reason
           is in the next paragraph; the tested-and-killed compander variants are further down.
+          <span style={{ display: 'block', marginTop: '0.5rem', fontSize: '0.85rem' }}>
+            <strong>How C entered the RAR fit, in one sentence (added 2026-09-08; asked by two visitor personas who
+            showed the alternatives give different force laws):</strong> the compander was used as an <em>implicit</em>{' '}
+            interpolating function keyed on g<sub>obs</sub> &mdash; the script solves
+            g<sub>bar</sub> = g<sub>obs</sub>·tanh(γ ln(1 + g<sub>obs</sub>/a₀′)) for g<sub>obs</sub> with a₀′ profiled
+            (<code style={{ fontSize: '0.78rem' }}>simulations/sparc_tanhlog_profile.py</code>, research repo, line 85). At
+            γ = ½ that is Milgrom&apos;s simple μ with a₀ = 2a₀′. It was <em>not</em> evaluated explicitly on
+            g<sub>bar</sub> (which would give an additive floor g<sub>bar</sub> + 2a₀′, not MOND), and not on ρ.
+            So every quantitative galaxy fit on this page is a fit in MOND&apos;s own variable; the density-keyed law is
+            tested on the <Link href="/honest-assessment#gc-fork" style={{ color: '#ef4444' }}>Honest Assessment</Link>{' '}
+            (head-to-head ΔBIC +2843, the Oort limit, and the globular-cluster fork).
+          </span>
         </div>
 
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>

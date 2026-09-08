@@ -474,6 +474,19 @@ export default function ParameterDerivations() {
               (Gauss averaging gives 1/C<sub>min</sub> as the L2/L3 maximum) explains where the ceiling <em>comes from</em>; it
               does not make the value right.
             </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.35)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
+              <strong style={{ color: '#f59e0b' }}>The floor is not what fails in globular clusters; the knee is (explorer 2026-09-07,
+              added 2026-09-08).</strong> On 42 Galactic globular clusters (Baumgardt &amp; Hilker database) the outer
+              velocity-dispersion slope is insensitive to the floor value &mdash; substituting this framework&apos;s
+              &#x03A9;<sub>m</sub> = 0.315 into Refracted Gravity&apos;s permittivity at RG&apos;s own knee
+              (0.0083 M<sub>&#x2609;</sub>/pc&sup3;) changes nothing and passes &mdash; while every knee this framework uses
+              (0.11–1,400 M<sub>&#x2609;</sub>/pc&sup3;) is excluded or marginal. The one placement that escapes the shape test
+              (host V = 220 km/s ⇒ knee at ~1 pc, whole cluster at the floor) is a pure G → G/&#x03A9;<sub>m</sub> rescaling,
+              which divides every cluster&apos;s stellar M/L<sub>V</sub> by 3.175 and pushes 96% of 167 clusters below
+              M/L<sub>V</sub> = 1.2, beneath any 12 Gyr metal-poor population. So this row&apos;s parameter is refuted on
+              SPARC by its <em>value</em> and on clusters by its <em>mass budget</em>; item 3&apos;s A is refuted on clusters by
+              its <em>location</em>. Full result: <Link href="/honest-assessment#gc-fork" style={{ color: '#f59e0b' }}>Honest Assessment</Link>.
+            </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Added 2026-07-28 &mdash; flagged missing from this page by a visitor persona (grad student + researcher)</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a> calls

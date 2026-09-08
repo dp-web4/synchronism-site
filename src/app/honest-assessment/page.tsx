@@ -31,6 +31,20 @@ export default function HonestAssessment() {
         Updated as new results come in.
       </p>
 
+      <div className="card" style={{ maxWidth: '65ch', marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-warm)', fontSize: '0.9rem' }}>
+        <p style={{ margin: '0 0 0.5rem', color: 'var(--color-accent-warm)', fontWeight: 600 }}>
+          If you read nothing else (this page is ~18,000 words; added 2026-09-08 at a casual reader&apos;s request)
+        </p>
+        <ul style={{ margin: 0, paddingLeft: '1.2rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+          <li><strong>The one equation did not hold as stated.</strong> Every decisive test it ran on real data, it lost &mdash; 6 refutations executed, 0 predictions confirmed.</li>
+          <li><strong>Where it fits galaxies, it is MOND in different notation.</strong> Let its shape parameter float and it lands on Milgrom&apos;s interpolating function; pin it where the framework said (γ = 2) and it fails.</li>
+          <li><strong>Its two genuinely different claims both failed.</strong> A hard cap on the gravity boost (galaxy edges need 4× more than the cap allows) and a switch keyed on local density instead of acceleration (the data reject that at every knee tried).</li>
+          <li><strong>&ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence.</strong> It is a classical &ldquo;how much does the system act as one thing&rdquo; score. See{' '}
+            <a href="#coherence-meaning" style={{ color: 'var(--color-accent-blue)' }}>the section on what the word means</a>.</li>
+          <li><strong>What survives is the record, not the physics:</strong> a public, reproducible account of how a theory kills itself honestly, a few transferable negative results, and one live fork (globular clusters, <a href="#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>below</a>). &ldquo;Untested&rdquo; on this page means nobody has looked yet; &ldquo;Failed&rdquo; means someone looked.</li>
+        </ul>
+      </div>
+
       <details id="validation-badge-definitions" style={{ marginBottom: '2rem', maxWidth: '65ch' }}>
         <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.9rem' }}>
           Validation badge definitions (canonical reference)
@@ -471,7 +485,7 @@ export default function HonestAssessment() {
               <tbody style={{ color: 'var(--color-text-secondary)' }}>
                 <tr><td style={{ padding: '0.4rem' }}>TEST-09 BTFR slope 3.35&plusmn;0.07 vs 3.75&plusmn;0.10 (3.3&sigma; with both uncertainties in quadrature; the &plusmn;0.07 on the prediction is stated on <Link href="/falsifiability" style={{ color: 'var(--color-accent-blue)' }}>Falsifiability</Link> and was missing here &mdash; without it the gap reads 4.0&sigma;)</td><td style={{ padding: '0.4rem' }}>The asserted ceiling B<sub>max</sub></td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>TEST-10 dwarf f<sub>DM</sub> ceiling</td><td style={{ padding: '0.4rem' }}>The same asserted B<sub>max</sub> &mdash; corollary, not an independent root</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
-                <tr><td style={{ padding: '0.4rem' }}>RAR shape, &#x0394;BIC = +184 at &#x03B3;=2</td><td style={{ padding: '0.4rem' }}>The asserted &#x03B3;=2 pin. Free-&#x03B3; &rarr; 0.489 recovers MOND, so this refutes a pin, not a mechanism</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>RAR shape, &#x0394;BIC = +184 at &#x03B3;=2</td><td style={{ padding: '0.4rem' }}>The asserted &#x03B3;=2 pin <strong>in the acceleration-keyed realization</strong> (C as an implicit μ on g<sub>obs</sub> &mdash; target column added 2026-09-08). Free-&#x03B3; &rarr; 0.489 recovers MOND, so this refutes a pin, not a mechanism. The density-keyed C(&#x03C1;) is refuted by a different route: head-to-head &#x0394;BIC +2843 with &#x03B3; free, the boost ceiling, the Oort limit &mdash; and its registered globular-cluster test forked (<a href="#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>below</a>)</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>Environment scatter, r&sup2; = 0.0001 (TEST-08 / TEST-03s)</td><td style={{ padding: '0.4rem' }}>The <em>registered</em> amplitude (S177: environment explains &gt;20% of RAR scatter, kill bar r&sup2; &lt; 0.09) &mdash; a number never derived from C(&#x03C1;). The equation&apos;s own ambient-density lever at SPARC outer radii is &le; 2&times;10<sup>&minus;3</sup> dex against ~0.1 dex of scatter, i.e. r&sup2; &asymp; 2&ndash;5&times;10<sup>&minus;4</sup> at most; the measured 1&times;10<sup>&minus;4</sup> is <em>consistent with the equation</em>. Reclassified 2026-09-05 (this row read &ldquo;the cleanest kill on the list&rdquo; until then; caught by a visitor researcher persona). The null stands as a permanent elimination of S177&apos;s claim and as a transferable result: the RAR is a universal local law to r&sup2; &lt; 10<sup>&minus;4</sup> against ambient density</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Registration-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>TEST-25 Cassini/SPARC, +17.95&sigma;</td><td style={{ padding: '0.4rem' }}>The RAR-preferred interpolating-function family &mdash; <strong>which MOND also uses</strong>. Published as Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781) at 8.7&sigma; &mdash; their figure marginalizes over a&#x2080;, M/L and RAR-fit uncertainty, which is why it is ~2&times; smaller than the +17.95&sigma; here (citation added 2026-09-06)</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Inherited from MOND</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>Bell/CHSH substrate (Bet B1), S &le; 2.00</td><td style={{ padding: '0.4rem' }}>Bell&apos;s theorem. A proof, not an experiment &mdash; this page calls it a &ldquo;pedagogical corollary&rdquo; elsewhere</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Theorem</td></tr>
@@ -517,6 +531,16 @@ export default function HonestAssessment() {
               &#x03C3;<sub>int</sub>&nbsp;=&nbsp;0.118&nbsp;&plusmn;&nbsp;0.001. This card previously paired the headline N with the optimal-cut statistic
               &mdash; the same numerator/denominator splice class as the TEST-03 correction below, caught by walking the number to Session 610&apos;s own table.
             </p>
+            <div style={{ fontSize: '0.82rem', color: 'var(--color-text-secondary)', background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
+              <strong style={{ color: '#38bdf8' }}>Sample-size key (added 2026-09-08 &mdash; a documentation persona found four ALFALFA&ndash;SDSS
+              figures on this site with no reconciliation):</strong>
+              <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: '0.2rem 0.8rem', marginTop: '0.35rem' }}>
+                <span><strong>14,585</strong></span><span>the raw ALFALFA&ndash;SDSS cross-match, before any quality cut (TEST-03&apos;s registered sample).</span>
+                <span><strong>14,435</strong></span><span>after the quality cut, in the definitive session (Session 610) &mdash; this is the number in the landing headline: 175 SPARC + 14,435 = <strong>14,610</strong>.</span>
+                <span><strong>14,437</strong></span><span>the analysis subset in Session 593&apos;s TFR-residual test &mdash; two galaxies different from 14,435, two sessions apart; treated on this site as the same quality-cut sample at two pipeline versions. Not reconciled in the archive; it is a two-galaxy difference, not a typo, and not a different cut.</span>
+                <span><strong>677</strong></span><span>the optimal-quality cut (SNR &gt; 15 etc.) that the σ<sub>int</sub> = 0.086 figure belongs to.</span>
+              </div>
+            </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Correction (2026-07-09):</strong> this card previously reported &ldquo;environment-dependent RAR scatter at
               p = 5&times;10<sup>&minus;6</sup>, R&sup2; = 0.14&rdquo; as the ALFALFA-SDSS (N = 14,585) result and said its kill criterion
@@ -735,6 +759,24 @@ export default function HonestAssessment() {
               Actual result: <strong>ΔBIC&nbsp;=&nbsp;+184</strong> (conservative intra-galaxy correlation
               correction: ΔBIC&nbsp;≈&nbsp;33 — still decisive).
             </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
+              <strong style={{ color: '#f87171' }}>Which coherence function this kills (target corrected 2026-09-08).</strong>{' '}
+              This run used the compander as an <em>implicit</em> interpolating function keyed on g<sub>obs</sub>
+              (the script solves g<sub>bar</sub> = g<sub>obs</sub>·tanh(γ ln(1 + g<sub>obs</sub>/a₀′)); verified in
+              <code style={{ fontSize: '0.78rem' }}> sparc_tanhlog_profile.py</code>). So +184 refutes <strong>γ = 2 in the
+              acceleration-keyed realization</strong> &mdash; MOND&apos;s own variable with a pinned return exponent
+              q = 2γ = 4 &mdash; and not the density-keyed C(ρ) the headline equation states. Two visitor personas
+              (2026-09-08) caught that this page, <Link href="/dark-matter" style={{ color: '#f87171' }}>Dark Matter</Link>,
+              the <Link href="/galaxy-plotter" style={{ color: '#f87171' }}>plotter</Link> and the landing scoreboard were all
+              presenting +184 as the density-keyed kill while <Link href="/coherence-function" style={{ color: '#f87171' }}>Coherence
+              Function</Link> says every fit ran in acceleration. The density-keyed law has its own refutations, and they are
+              stronger: head-to-head on the same SPARC points with γ <em>free</em> it loses at <strong>ΔBIC +2843</strong>{' '}
+              (best-fit γ → 0.046, i.e. density-dependence switched off), its floored form is capped by the boost ceiling
+              (B<sub>max</sub> = 3.17 vs the 13.7 SPARC dwarfs require; lensing ν = 110–347), and at the solar Oort limit it
+              predicts f<sub>DM</sub> = 0.685 against 0.13 ± 0.04 for any knee above ~0.15 M<sub>☉</sub>/pc³. Its one
+              registered per-object test is the globular-cluster fork <a href="#gc-fork" style={{ color: '#f87171' }}>below</a>.
+              Lead with those; +184 is the right number attached to the wrong model.
+            </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               The residual is a coherent S-shaped ≈0.05–0.10 dex signature at the RAR transition
               (g<sub>bar</sub>&nbsp;≈&nbsp;a₀), significant at ~8σ per bin. Free-γ fit converges to γ≈0.49&nbsp;=&nbsp;MOND,
@@ -765,6 +807,100 @@ export default function HonestAssessment() {
               same fact as the criticality retraction on{' '}
               <Link href="/core-idea" style={{ color: '#a78bfa' }}>The Core Idea</Link>, arriving through the fit
               rather than through the math.
+            </p>
+          </div>
+
+          <div id="gc-fork" className="card" style={{ borderLeft: '3px solid #f59e0b' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <h3>Globular-Cluster Knee Test — S611 P611.2, registered 2026-02-17, executed 2026-09-07: a fork, not a kill</h3>
+              <ValidationBadge status="parallel-paths" label="Fork — universal γ excluded; registered per-cluster γ = 2 marginal; count unchanged (gates on operator)" />
+            </div>
+            <PlainTerms>
+              galaxies never get dense enough to reach the &ldquo;knee&rdquo; where this framework&apos;s density switch is
+              supposed to turn on &mdash; but globular clusters (tight balls of ~10⁵ stars orbiting our galaxy) do, from
+              their cores outward. So they are the one place the density idea can be tested on its own terms. Result: if
+              the switch has one sharpness everywhere, the clusters rule it out at every setting the framework has ever
+              used. If the sharpness resets inside each cluster &mdash; which the framework <em>had</em> predicted, seven
+              months earlier, and nobody had run &mdash; the clusters are marginally consistent. The price of that survival
+              is that &ldquo;one equation&rdquo; becomes two.
+            </PlainTerms>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              <strong>Data:</strong> Baumgardt &amp; Hilker (2018) Galactic globular-cluster database &mdash; 167 N-body-fitted
+              clusters, 2,025 binned velocity-dispersion measurements; 42 clusters pass the analysis cuts.{' '}
+              <strong>Statistic:</strong> error-weighted outer slope d log σ / d log r over the outer factor 3 in radius,
+              measured vs an isotropic Jeans solution on the catalogue mass model &mdash; a <em>shape</em> test, which a
+              radially varying boost cannot hide from and mass normalization cannot enter.{' '}
+              <strong>The registration text</strong> (Session 611): <em>&ldquo;Globular cluster internal dynamics should follow
+              γ = 2 (member stars are resolved individually), despite the cluster acting as N<sub>corr</sub> = 1 from the
+              galaxy&apos;s perspective. This tests whether γ resets at each Markov blanket boundary.&rdquo;</em> It registers a
+              γ, not a knee.
+            </p>
+            <div style={{ overflowX: 'auto', margin: '0.5rem 0 0.75rem' }}>
+              <table style={{ fontSize: '0.82rem', borderCollapse: 'collapse', width: '100%' }}>
+                <thead>
+                  <tr style={{ textAlign: 'left', color: 'var(--color-text-muted)' }}>
+                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>Dynamics (42 clusters)</th>
+                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>⟨obs − pred⟩ outer slope</th>
+                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>× Newtonian residual</th>
+                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>Verdict</th>
+                  </tr>
+                </thead>
+                <tbody style={{ color: 'var(--color-text-secondary)' }}>
+                  <tr><td style={{ padding: '0.35rem' }}>Newtonian (Baumgardt &amp; Hilker fit these DM-free)</td><td style={{ padding: '0.35rem' }}>−0.057</td><td style={{ padding: '0.35rem' }}>1.0</td><td style={{ padding: '0.35rem', color: '#94a3b8' }}>systematics budget</td></tr>
+                  <tr><td style={{ padding: '0.35rem' }}>MOND simple μ <strong>with</strong> external field effect</td><td style={{ padding: '0.35rem' }}>−0.093</td><td style={{ padding: '0.35rem' }}>1.7</td><td style={{ padding: '0.35rem', color: '#22c55e' }}>passes</td></tr>
+                  <tr><td style={{ padding: '0.35rem' }}>MOND simple μ, EFE <strong>off</strong></td><td style={{ padding: '0.35rem' }}>−0.245</td><td style={{ padding: '0.35rem' }}>4.3</td><td style={{ padding: '0.35rem', color: '#f87171' }}>excluded</td></tr>
+                  <tr><td style={{ padding: '0.35rem' }}>Density-keyed, <strong>γ = 0.489</strong> (galaxy sector&apos;s value), knee 0.161 M<sub>☉</sub>/pc³ (measured 2026-08-27), floored</td><td style={{ padding: '0.35rem' }}><strong>−0.211</strong></td><td style={{ padding: '0.35rem' }}>3.7</td><td style={{ padding: '0.35rem', color: '#f87171' }}><strong>excluded</strong></td></tr>
+                  <tr><td style={{ padding: '0.35rem' }}>Density-keyed, <strong>γ = 2 (as registered)</strong>, same knee, floored</td><td style={{ padding: '0.35rem' }}><strong>−0.111</strong></td><td style={{ padding: '0.35rem' }}>2.0</td><td style={{ padding: '0.35rem', color: '#fbbf24' }}><strong>marginal</strong> (MOND+EFE level)</td></tr>
+                  <tr><td style={{ padding: '0.35rem' }}>Density-keyed, γ = 2, knee at Refracted Gravity&apos;s fitted 0.0083 M<sub>☉</sub>/pc³</td><td style={{ padding: '0.35rem' }}>−0.058</td><td style={{ padding: '0.35rem' }}>1.0</td><td style={{ padding: '0.35rem', color: '#22c55e' }}>passes</td></tr>
+                  <tr><td style={{ padding: '0.35rem' }}>Density-keyed, <em>unfloored</em> (the form in this site&apos;s <code style={{ fontSize: '0.75rem' }}>equations.ts</code>), γ = 0.489</td><td style={{ padding: '0.35rem' }}>−0.428</td><td style={{ padding: '0.35rem' }}>7.5</td><td style={{ padding: '0.35rem', color: '#f87171' }}>excluded (diverges as ρ → 0)</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              <strong>Three results that do not depend on γ.</strong> (1) <strong>Globular clusters discriminate density-keyed from
+              acceleration-keyed gravity, and the discriminating variable is the external field effect:</strong> MOND with its
+              EFE switched off scores like the density law. MOND survives these clusters <em>because of</em> the EFE, and a
+              density-keyed law has no external field to appeal to. (This answers, by measurement, the question a visitor
+              researcher persona asked on 2026-09-07.) (2) <strong>The exclusion is a window on the knee, transferable to any
+              theory of the form g = g<sub>N</sub>/C(ρ):</strong> ρ<sub>c</sub> ∈ 0.1–300 M<sub>☉</sub>/pc³ is excluded at γ = 0.489,
+              narrowing to 0.5–100 at γ = 2 &mdash; and every knee this framework has used (the calibrated A·V² at 650, the
+              measured 0.161, the Oort-window 0.074–0.154) is inside or at the edge of it, while Refracted Gravity&apos;s
+              published knee (0.0083) passes across its whole 1σ range, even with this framework&apos;s Ω<sub>m</sub> floor
+              substituted in. <em>Form is not what fails; the number is</em> &mdash; the knee sits 13–500× above the published
+              value of the theory this sector rediscovered. (3) <strong>The one placement that escapes the shape test dies on
+              the mass budget:</strong> reading ρ<sub>crit</sub> = A·V² with the host galaxy&apos;s 220 km/s puts the knee at
+              ~1 pc, saturating the whole cluster at the floor &mdash; a pure G → G/Ω<sub>m</sub> rescaling, invisible to the
+              slope but dividing every cluster&apos;s stellar M/L<sub>V</sub> by 3.175, which pushes 96% of 167 clusters below
+              M/L<sub>V</sub> = 1.2, beneath any 12 Gyr metal-poor population.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              <strong>The fork.</strong> If γ is <em>universal</em> &mdash; the &ldquo;one equation&rdquo; reading, and the value
+              SPARC and DESI both select &mdash; the clusters exclude the density law at every placement the framework uses.
+              If γ <em>resets per Markov blanket</em> (P611.2: N<sub>corr</sub> = 1 inside a resolved-member system, so γ = 2),
+              the clusters are marginally consistent at MOND-with-EFE&apos;s level &mdash; and the coherence function is not
+              one function. This is not an ad-hoc rescue: it was registered seven months before the test, on independent
+              reasoning, and it makes a further cheap prediction &mdash; <strong>γ = 2 for every resolved-member system</strong>{' '}
+              (open clusters, dwarf spheroidals, stellar streams; all public) and γ ≈ ½ for unresolved ones. That ladder is
+              the first time the N<sub>corr</sub> machinery has done predictive rather than decorative work. It is also not a
+              win if it passes: the boost ceiling still kills the floored law on SPARC independent of γ, so a passing ladder
+              makes the framework two partial functions, not one function that works.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              <strong>Why this is not counted as a seventh refutation (recommendation; gates on the operator):</strong> a
+              registered prediction survives the test it was registered for. What is refuted is the conjunction
+              {'{universal γ = 0.489} ∧ {any framework knee}'}, which the ledger never registered as one row.{' '}
+              <strong>Near-miss recorded:</strong> the analysis was first run at γ = 0.489 &mdash; before the registration text
+              was read &mdash; and would have published a confident refutation of a prediction nobody made. Third instance in
+              six weeks of &ldquo;which parameter does the criterion name?&rdquo;{' '}
+              <strong>Robustness:</strong> ordering invariant across King vs Plummer mass models, three radial windows,
+              radial-velocity-only bins; jackknife moves no mean by more than 0.042; radial anisotropy rescues Newton at
+              β ≈ 0.75 and MOND+EFE at 0.81 but the density law at no β ≤ 0.8, and real tidally-limited clusters go{' '}
+              <em>tangentially</em> anisotropic, which makes it worse. Significance is quoted as the ratio to the
+              Newtonian residual (3.7–4.4×), not as sigmas &mdash; mass segregation, mass model and anisotropy are
+              unmodelled and all push the same way. Not tested here: the S691 placement at 10⁻²³ kg/m³ (below any cluster
+              density &mdash; out of scope, not exonerated); the sectors that never define ρ<sub>crit</sub> at all.
+              Finding: <code style={{ fontSize: '0.78rem' }}>explorer/findings/globular-cluster-knee-test-executed-universal-gamma-excluded-registered-gamma2-survives.md</code>{' '}
+              + eight scripts; execution note back-annotated to Session 611 in the research archive.
             </p>
           </div>
 

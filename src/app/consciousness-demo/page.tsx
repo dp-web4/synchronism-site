@@ -36,6 +36,11 @@ export default function ConsciousnessDemo() {
       <Breadcrumbs currentPath="/consciousness-demo" />
       <h1>Consciousness Threshold Demo</h1>
       <ValidationBadge status="speculative" label="Speculative — no calibration exists" />
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginTop: '0.35rem' }}>
+        Tools-index grouping: <strong>Artifact Lesson</strong> (a tool kept to demonstrate a failure mode). That is a content
+        grouping, not a verdict; the verdict is the Speculative badge above. (Both shown here since 2026-09-08 so the index and
+        this page cannot drift apart.)
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{

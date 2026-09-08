@@ -97,8 +97,13 @@ export default function ForResearchers() {
             definition. And at &#947;=1/2 &mdash; SPARC&apos;s free fit lands at 0.489, 2.2% away &mdash;
             C(&#961;)&nbsp;=&nbsp;x/(x+2)&nbsp;=&nbsp;&#956;<sub>simple</sub>(x/2) <em>identically</em> (see{' '}
             <Link href="/coherence-function" style={{ color: '#38bdf8' }}>Coherence Function</Link>). Put those
-            together: the galaxy sector is MOND, with &#956;&apos;s argument swapped from the enclosed-mass
-            acceleration g<sub>bar</sub> to local density &#961;. That single substitution &mdash; the one this
+            together: the galaxy sector is MOND, with &#956;&apos;s argument swapped from acceleration to local
+            density &#961;. (Precision, 2026-09-08: in MOND μ is keyed on g<sub>obs</sub>, and the SPARC fit that
+            produced γ = 0.489 used C exactly that way &mdash; as an implicit μ(g<sub>obs</sub>/a₀′), solved for
+            g<sub>obs</sub>; see <Link href="/coherence-function" style={{ color: '#38bdf8' }}>Coherence Function</Link>{' '}
+            for the script line. This sentence used to say &ldquo;from g<sub>bar</sub>,&rdquo; and the fit swapped
+            nothing; the swap to ρ is the framework&apos;s <em>stated</em> law, which is what the no-go tests.)
+            That single substitution &mdash; the one this
             no-go quantifies &mdash; is not one result among the site&apos;s six executed refutations. It is the
             entire content of what makes this framework different from MOND in the galaxy sector. Everything
             else downstream (BTFR slope, DM-fraction ceiling, RAR shape) is a consequence of that one swap
@@ -634,6 +639,36 @@ export default function ForResearchers() {
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
             until today. The full Fisher matrix is not yet written up as a standalone artifact &mdash; seeded to the
             explorer track.
+          </p>
+        </div>
+
+        <div className="card" style={{ marginBottom: '1.5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>6. Globular-cluster exclusion window on the knee of any density-keyed gravity law &mdash; a transferable null in the literature&apos;s own units</h2>
+            <ValidationBadge status="audited-negative" label="Executed 2026-09-07 on Baumgardt & Hilker 2018; framework-independent bound" />
+          </div>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
+            <strong>Citable form:</strong> for any theory of the form g = g<sub>N</sub>/C(ρ) with a floored tanh-in-log-density
+            switch (Refracted Gravity&apos;s permittivity class, which this framework&apos;s galaxy field equation coincides with),
+            the outer velocity-dispersion slopes of 42 Galactic globular clusters exclude a knee density
+            <strong> ρ<sub>c</sub> ∈ 0.1–300 M<sub>☉</sub>/pc³ (6.8×10⁻²⁴ – 2×10⁻²⁰ g/cm³)</strong> at a switch sharpness
+            γ = 0.489 (Hill index ≈ 1), narrowing to 0.5–100 M<sub>☉</sub>/pc³ at γ = 2. &ldquo;Excluded&rdquo; = slope mismatch
+            more than twice that of MOND with the external field effect, which these data admit (−0.093 vs Newtonian −0.057).
+            Refracted Gravity&apos;s own fitted ρ<sub>c</sub> = 10⁻²⁴·²⁵ g/cm³ (Cesare et al. 2020, 2022) passes across its 1σ range.
+            This sits beside the B<sub>max</sub> ≲ 14 bound from SPARC dwarfs as the second class-level constraint this
+            program has produced.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Why globular clusters, and why the EFE is the discriminating variable:</strong> a density-keyed law has no
+            external field to appeal to. MOND with its EFE switched off scores −0.245 on the same statistic, statistically
+            indistinguishable from the density law; MOND survives these clusters <em>because of</em> the EFE and for no other
+            reason. So the clusters separate density-keyed from acceleration-keyed gravity on the profile <em>shape</em> even
+            where the two predicted boost amplitudes are collinear (Pearson r = +0.87 across the population, because
+            outer-halo clusters are also the diffuse ones). Prior-art screen: Cesare et al. 2022 used globular clusters as
+            tracers of elliptical-galaxy potentials, not as self-gravitating systems crossing the knee. Honest scope: the ± is
+            statistical only; defend the ratio to the Newtonian residual (3.7–4.4×), not a sigma. Full result, robustness
+            table and the γ fork it opens for this framework specifically:{' '}
+            <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
           </p>
         </div>
 

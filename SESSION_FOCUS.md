@@ -25,10 +25,12 @@ measured spread 1.0000, above 5% in only the 19 bulged discs of 153. An MRH-smoo
 **The real dichotomy is baryon-local scalar vs acceleration**, and the site should say so instead of
 listing three repairs that are one repair.
 
-**2. The argument matters only once the floor is freed.** Best χ²/N per argument at floor = Ω_m
-(MOND simple μ = 21.25, Υ-profiled): g_N 55.42, ρ̄(<r) 58.97, ρ 68.49, ρ_MRH 73.95, Σ 78.25 — a factor
-1.41 across the whole axis. At f = 0.089 the axis spans >5× and only acceleration works. All one-shot;
-self-consistently the magnitudes move (the ordering does not).
+**2. The argument matters only once the floor is freed, and the ranking is a property of the floor.**
+Best χ²/N per argument (MOND simple μ = 21.25, Υ-profiled). At **f = Ω_m**: g_N 55.42, ρ̄(<r) 58.97,
+ρ 68.49, ρ_MRH 73.95, Σ 78.25 — the whole axis spans **1.41**. At **f = 0.089**: g_N 31.27, ρ_MRH 103.96,
+Σ 148.42, ρ 169.85, ρ̄(<r) 173.37 — the axis spans **5.5×**. ρ̄(<r) goes from second-best to worst and
+ρ_MRH from fourth to second; **only g_N's position is stable.** All one-shot; self-consistently the
+magnitudes move and the ordering does not.
 
 **3. The floor SPARC demands is arithmetic.** 90% of discs need f ≤ 0.100 at the standard Υ, all 153 need
 f ≤ 0.016. The archive's enumerated candidates stop at Ω_b/Ω_m = 0.157 and 1/Ω_m is nowhere derived

@@ -25,11 +25,20 @@ Best knee per argument, Υ-profiled χ²/N, against parameter-free MOND simple-�
 
 | argument | best at floor = Ω_m = 0.315 | × MOND | best at floor = 0.089 | × MOND |
 |---|---|---|---|---|
-| g_N (acceleration) | **55.42** (γ=2, 3.2 a₀) | 2.61 | **31.27** (γ=0.489, 0.32 a₀) | **1.47** |
-| ρ̄(<r) mean interior density | 58.97 | 2.78 | (see table below) | |
-| ρ local density (the incumbent) | 68.49 | 3.22 | 169.85 or worse | ≥ 8.0 |
-| ρ_MRH (λ = 1 kpc) | 73.95 | 3.48 | | |
-| Σ surface density | 78.25 | 3.68 | | |
+| g_N (acceleration) | **55.42** (γ=2, 3.2 a₀) | **2.61** | **31.27** (γ=0.489, 0.32 a₀) | **1.47** |
+| ρ̄(<r) mean interior density | 58.97 | 2.78 | 173.37 | 8.16 |
+| ρ local density (the incumbent) | 68.49 | 3.22 | 169.85 | 7.99 |
+| ρ_MRH (λ = 1 kpc) | 73.95 | 3.48 | 103.96 | 4.89 |
+| Σ surface density | 78.25 | 3.68 | 148.42 | 6.98 |
+
+(g_N's freed-floor best comes from the finer acceleration knee grid in
+`the_floor_is_the_whole_difference_gN_keyed.py`; the coarse grid in the head-to-head gives 42.16 at
+0.39 a₀. Both are one-shot.)
+
+Note the reordering. ρ̄(<r) is the *second-best* argument at the Ω_m floor and the *worst* at the freed
+floor; ρ_MRH is fourth at Ω_m and second at 0.089. **The ranking of baryon-local arguments is not a
+property of the arguments — it is a property of the floor they are evaluated at**, which is another way of
+saying the floor is the first-order term. Only g_N's position is stable, and it is first at both.
 
 At the Ω_m floor the whole argument axis spans a factor of **1.41**. At RG's floor of 0.089 the same axis
 spans more than **5×**, and acceleration keying reaches **1.47× parameter-free MOND** — the best any

@@ -42,3 +42,10 @@ gN  gamma=0.489 g_c=3.2  a0 floor=0.001      | 21726.10    0.562 | 20304.68    0
 gN  gamma=2     g_c=0.1  a0 floor=0.001      |   541.49    0.207 |   390.96    0.173 |   18.40 |    1.46   100%
 gN  gamma=2     g_c=0.32 a0 floor=0.001      |   311.92    0.130 |   209.56    0.105 |    9.86 |    3.46    81%
 gN  gamma=2     g_c=1    a0 floor=0.001      |   267.29    0.108 |   217.11    0.102 |   10.22 |    9.72    15%
+gN  gamma=2     g_c=3.2  a0 floor=0.001      |  2601.29    0.278 |  2399.82    0.267 |  112.96 |   29.32     2%
+
+ 'x MOND' = chi2/N divided by parameter-free MOND simple-mu's, both Upsilon-profiled.
+ The framework's compander keyed on MOND's own argument differs from MOND in exactly two
+ ways: the form (tanh vs x/(1+x)) and the floor.  Rows at floor=1e-3 isolate the form.
+
+[1262s]

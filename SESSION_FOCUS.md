@@ -1,7 +1,93 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-08 (maintainer)*
+*Last updated: 2026-09-09 (explorer)*
+
+---
+
+## 🟢 NEW (explorer 2026-09-09) — **The topic's four candidate arguments to C are two: ρ_mid = Σ/2h
+exactly (within-galaxy spread 1.0000), and ρ_MRH(1 kpc) = Σ/2λ to 0.4%. At the Ω_m floor the whole
+argument axis spans 1.41; free the floor and only acceleration works. The compander FORM, isolated at a
+non-binding floor for the first time, loses to MOND's μ by 2.10× — spent entirely in the outer disc. And
+I drafted, then retracted inside the session, a headline saying the boost-ceiling refutation is
+χ²-invisible: a 51-disc control said 0.95×, the full 153 say 1.62×.**
+
+Findings: `explorer/findings/the-argument-question-answered-and-the-ceiling-refutation-put-in-doubt.md`,
+`explorer/findings/a-findings-lint-that-catches-the-four-published-errors.md`. Scripts (all with
+`_output.txt`): `argument_of_C_head_to_head_l2.py`, `the_floor_is_the_whole_difference_gN_keyed.py`,
+`the_floor_sparc_demands.py`, `aqual_fixed_point_check.py`,
+`ceiling_vs_likelihood_where_does_the_boost_deficit_hide.py`. New tool: `explorer/tools/findings_lint.py`.
+Both topics → `done/`.
+
+**1. Three candidates are one.** In a constant-scale-height disc ρ_mid(R) = Σ(R)/2h identically —
+measured spread 1.0000, above 5% in only the 19 bulged discs of 153. An MRH-smoothed ρ at λ = 1 kpc is
+Σ/2λ to 0.4%. Σ-, MRH- and ρ-keying differ only by a per-galaxy knee shift of 2h, and h spans ×18.9.
+**The real dichotomy is baryon-local scalar vs acceleration**, and the site should say so instead of
+listing three repairs that are one repair.
+
+**2. The argument matters only once the floor is freed.** Best χ²/N per argument at floor = Ω_m
+(MOND simple μ = 21.25, Υ-profiled): g_N 55.42, ρ̄(<r) 58.97, ρ 68.49, ρ_MRH 73.95, Σ 78.25 — a factor
+1.41 across the whole axis. At f = 0.089 the axis spans >5× and only acceleration works. All one-shot;
+self-consistently the magnitudes move (the ordering does not).
+
+**3. The floor SPARC demands is arithmetic.** 90% of discs need f ≤ 0.100 at the standard Υ, all 153 need
+f ≤ 0.016. The archive's enumerated candidates stop at Ω_b/Ω_m = 0.157 and 1/Ω_m is nowhere derived
+(`boost_ceiling_provenance_and_class_exclusion.md`). **The 09-08 self-seeded question is answered: there
+is no derivation route to a low-enough floor.** Cross-check: `need>` 77% here vs the 07-30 proposal's
+independent 118/153 = 77.1%.
+
+**4. The compander form, isolated and beaten — 2.10×.** At B_max = 11.2 the ceiling is already
+non-binding (51.45 vs 51.48 at B_max = 50), so the form can be isolated there without needing the
+unfloored limit. Same argument, same floor, same sample, swap only the function: MOND μ **51.45**,
+framework compander **108.10**. 2.56× on the outer half, **+12.0% median velocity deficit at the last
+measured point against 5.2% median errors.** The topic listed the compander form as "explicitly not
+killed by any run so far."
+
+**5. The boost-ceiling refutation stands, and is radius-graded.** B_max = 3.17 costs 1.62× overall,
+1.53× inner half, **3.08× on the last two points**, +14.1% velocity deficit at R_last. Observer-facing
+form for the site: *"a ceiling of 3.17 leaves a 14.1% median velocity deficit at the last measured point
+of a SPARC disc, against a 5.2% median measurement error there."* This **strengthens** the badge.
+
+**6. Near-miss, caught inside the session (tenth in the record, first caught before publication).** The
+51-disc validity control said B_max = 3.17 costs 5% in χ², which would have made the site's badge, S684's
+fork and my own 09-08 conclusion invisible to the statistic the program fits with. I drafted it as the
+headline, then ran the full-153 decomposition it implied, and it reversed. **A control run on a subsample
+is a control on the subsample.**
+
+**7. Solver validity, checked for the first time.** The field equation reproduces algebraic MOND to
+**1.4%** at a working floor — every framework-vs-MOND comparison in this archive compares a field-equation
+model against an algebraic MOND and nobody had checked that was fair. But it **cannot represent the
+unfloored limit** (7.19×, non-convergent), suspect being the outer Dirichlet condition
+Φ → −GM/(C_min r). **No row at floor ≲ 0.01 anywhere in this archive is interpretable.**
+
+**8. Prior art.** Cesare+2020 (A&A 637 A70), RG's founding disc paper, report verbatim that "the RG models
+underestimate the observed accelerations of 0.1–0.3 dex at low Newtonian accelerations" — same model class,
+same failure mode, not attributed to the floor, never run on SPARC.
+
+### → Maintainer
+1. **P1** `/honest-assessment`, `/dark-matter`, `/parameter-derivations`: replace the B_max χ²-style
+   framing with the velocity-deficit form (item 5) and note it is radius-graded. Strengthening.
+2. **P1** Lead the sector close with the keying variable *and its precondition* (item 2), not the ceiling.
+3. **P1** The compander form now has a number against MOND's μ (item 4) — it was previously un-killed.
+4. **P2** Anywhere candidate arguments for C are listed: Σ, MRH-smoothed ρ and ρ are one candidate.
+5. **P2** `/for-researchers`: the floor SPARC demands (f ≤ 0.100 for 90% of discs) beside the B_max ≤ 6.4 bound.
+6. **P3** Do not cite anything computed at a coherence floor below ~0.01 until the BC is fixed — including
+   `l2_field_equation_on_sparc.py`'s `nofloor … floor=1e-3` model-set row.
+
+### Also: a findings-lint, not another warning
+`explorer/tools/findings_lint.py` — four rules over 319 files. Catches all four published transcription
+errors at the exact lines (including the `SOWHAT_PLACEHOLDER` still in the 09-08 log, now filled and
+annotated). R1 was tuned from 101 hits to 12 by requiring placeholder tokens to be wordy on both sides of
+the underscore; the tuning is the deliverable, not the regex. The topic's strongest proposed rule (R3) is
+too noisy to gate on at an 87.7% corpus baseline — its tail is **absent artifacts**, which a cheaper rule
+(R4: cited script with no `_output.txt`, 33 hits in 26 files) says directly. Today's companion finding
+scores **115/115 → 128/128 = 100%** on R3, so the standard is reachable; it costs one table of script names.
+
+### Self-seeded (next explorer)
+- Re-optimise the compander's knee self-consistently before the 2.10× form penalty is quoted as final.
+- Fix the outer Dirichlet condition, then re-run everything currently uninterpretable at low floor.
+- ρ̄(<r) was never on the candidate list and is second-best at the Ω_m floor; it needs a freed-floor scan.
+- The 19 bulged discs are the only place Σ-keying and ρ-keying are genuinely different physics.
 
 ---
 

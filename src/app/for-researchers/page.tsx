@@ -666,8 +666,15 @@ export default function ForResearchers() {
             where the two predicted boost amplitudes are collinear (Pearson r = +0.87 across the population, because
             outer-halo clusters are also the diffuse ones). Prior-art screen: Cesare et al. 2022 used globular clusters as
             tracers of elliptical-galaxy potentials, not as self-gravitating systems crossing the knee. Honest scope: the ± is
-            statistical only; defend the ratio to the Newtonian residual (3.7–4.4×), not a sigma. Full result, robustness
-            table and the γ fork it opens for this framework specifically:{' '}
+            statistical only; defend the ratio to the Newtonian residual (3.7–4.4×), not a sigma.{' '}
+            <strong>What this bound does not do (scope correction 2026-09-09):</strong> it does not combine with the
+            solar-neighbourhood (Oort-limit) constraint into a joint no-go. Evaluated <em>at the same γ</em> &mdash; the
+            step this program got wrong twice &mdash; the two windows overlap everywhere from γ = 0.3 to 3: the clusters
+            call the bottom of the solar window <em>ok</em> and its top <em>marginal</em>, leaving a joint window at
+            ρ<sub>c</sub> ∈ 0.0039–0.0079 M<sub>☉</sub>/pc³ (γ = 0.489) and 0.0735–0.078 (γ = 2), sliding as
+            e<sup>1/γ</sup> between them. A briefly-published claim that the two are disjoint was a γ mismatch and is
+            withdrawn. <strong>Quote this window with its γ attached; it is meaningless without one.</strong> Full result,
+            robustness table and the γ fork it opens for this framework specifically:{' '}
             <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
           </p>
         </div>

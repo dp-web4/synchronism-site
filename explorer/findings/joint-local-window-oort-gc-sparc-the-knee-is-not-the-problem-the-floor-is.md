@@ -1,5 +1,11 @@
 # Finding: Oort ∩ globular clusters ∩ SPARC, at the same γ — the knee is not the problem, the floor is
 
+> **⚠ Maintainer correction (2026-09-09).** The results table below contains two **unsubstituted template
+> placeholders** — the literal strings `GAMMA2_ROWS` and `FLOOR089_ROWS` — where the γ = 2 and freed-floor
+> rows belong. Those rows were computed and are in `scripts/sparc_pinned_at_rg_knee_l2_output.txt`; they
+> were not read. They falsify two of this finding's own conclusions. See **§7, appended below**, before
+> citing §4 or §5.
+
 ## Origin
 Topic `joint-local-constraint-oort-gc-sparc-at-rg-knee.md` (maintainer 2026-09-08), and a correction to
 my own 2026-09-07 finding §7. Scripts: `findings/scripts/joint_local_window_gamma_axis.py` (Oort window
@@ -196,3 +202,62 @@ one the data do *not* support. There are places for the knee. There is no place 
   1.66 vs 1.44 ± 0.13; GC via the EFE; SPARC by construction). The density-keyed law is now the
   only member of the family with a demonstrated three-way empty set, and the reason is the one
   derived number in the framework. Ω_m as the floor is the claim to attack next, not the knee.
+
+---
+
+## 7. Maintainer correction (2026-09-09) — read from `sparc_pinned_at_rg_knee_l2_output.txt`
+
+Two claims above are not what the run says. Both trace to the unrendered placeholders in §4.
+
+### 7.1 The fit is not monotone in ρ_c — that is a γ = 0.489 statement
+
+§4 reads "**The fit improves monotonically as the knee falls**, through the whole Oort∩GC band and out its
+bottom. The best knee for SPARC is below every window the local data allow." True at γ = 0.489. **False at
+γ = 2 with the Ω_m floor** — the framework's registered γ and its one derived number — which has an
+interior optimum:
+
+| ρ_c (M☉/pc³) | 3.16e-4 | 0.0039 | 0.0083 | 0.017 | 0.05 | 0.074 | 0.154 | 0.161 |
+|---|---|---|---|---|---|---|---|---|
+| χ²/N, γ=2, f=Ω_m, Υ prof | 80.5 | **68.9** | 68.9 | 72.5 | 83.5 | 90.6 | 106.7 | 107.9 |
+| χ²/N, γ=0.489, f=Ω_m, Υ prof | 69.7 | 77.7 | 85.2 | 97.4 | 123.4 | 135.1 | 158.8 | 160.3 |
+
+γ = 2 at ρ_c ≈ 0.004–0.008 is the **best density-keyed model anywhere in this run** (χ²/N 68.9 vs MOND's
+21.2), and at the Ω_m floor γ = 2 beats γ = 0.489 at every knee ≥ 0.0039. Still 3.2× MOND — a fork datum,
+not a rescue, and it belongs beside the globular-cluster fork rather than nowhere.
+
+### 7.2 "The floor is the only parameter SPARC is objecting to" — the freed-floor rows say no
+
+Open Thread #1 asks what happens at a non-Ω_m floor. The same run answered it:
+
+| model | χ²/N (prof) | rms g | med B_max | need> |
+|---|---|---|---|---|
+| γ=2, ρ_c=0.0039, f = Ω_m = 0.315 | 68.9 | 0.159 | 3.13 | 82 % |
+| γ=2, ρ_c=0.0039, **f = 0.089** | 452.8 | 0.197 | 8.68 | 23 % |
+| γ=0.489, ρ_c=0.0083, f = Ω_m | 85.2 | 0.146 | 3.27 | 79 % |
+| γ=0.489, ρ_c=0.0083, **f = 0.089** | 1207.1 | 0.252 | 12.00 | 10 % |
+
+Lowering the floor does exactly what the ceiling diagnosis predicts — `need>` collapses from ~80 % to
+10–23 %, the amplitude problem is solved — and **χ²/N gets 3–17× worse**. So the objection is not to `f`.
+The amplitude failure and the shape failure are one failure pointing two ways: at the Ω_m ceiling four
+discs in five cannot be lifted; above it the boost lands in the inner disc where SPARC wants none.
+
+### 7.3 The corrected one-line statement
+
+> At the Ω_m floor the Sun and the Galactic globular clusters jointly admit a knee at every γ (§5 stands).
+> SPARC admits none of them, and **freeing the floor does not help** — it improves the ceiling and worsens
+> the fit by 3–17×. **SPARC objects to where the transition sits, not how big it is.** A switch keyed to
+> local density turns on inside the baryonic disc by construction. The sector's remaining freedom is not a
+> number in this family; it is the *argument* of C.
+
+§5's closing "Ω_m as the floor is the claim to attack next, not the knee" is withdrawn: that scan is done
+and it loses. The live successor is `argument_of_C_three_functions_ledger_not_commensurable_20260824`.
+
+### 7.4 Process
+
+This is the third published instance of the same shape in three days: 09-07 compared a γ = 2 window with a
+γ = 0.489 exclusion (site published it; withdrawn 09-08); 09-08 wrote conclusions against a table
+containing two placeholder strings (site corrected 09-09). The common cause is not carelessness about γ —
+it is **conclusions written from a narrative rather than from the artifact the run produced**. Proposed
+mitigation is mechanical: a findings-lint that fails on unsubstituted `[A-Z0-9_]{6,}` tokens inside a
+results table, and a house rule that every quoted density window carries its γ in the same cell. Filed as
+`Research/proposals/sparc_objection_is_placement_not_the_ceiling_20260909.md`.

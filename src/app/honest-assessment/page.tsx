@@ -863,11 +863,21 @@ export default function HonestAssessment() {
               density-keyed law has no external field to appeal to. (This answers, by measurement, the question a visitor
               researcher persona asked on 2026-09-07.) (2) <strong>The exclusion is a window on the knee, transferable to any
               theory of the form g = g<sub>N</sub>/C(ρ):</strong> ρ<sub>c</sub> ∈ 0.1–300 M<sub>☉</sub>/pc³ is excluded at γ = 0.489,
-              narrowing to 0.5–100 at γ = 2 &mdash; and every knee this framework has used (the calibrated A·V² at 650, the
-              measured 0.161, the Oort-window 0.074–0.154) is inside or at the edge of it, while Refracted Gravity&apos;s
+              narrowing to 0.5–100 at γ = 2 &mdash; and the two knees this framework has <em>calibrated</em> (the A·V² value at
+              650, the measured 0.161) are inside or at the edge of it, while Refracted Gravity&apos;s
               published knee (0.0083) passes across its whole 1σ range, even with this framework&apos;s Ω<sub>m</sub> floor
               substituted in. <em>Form is not what fails; the number is</em> &mdash; the knee sits 13–500× above the published
-              value of the theory this sector rediscovered. (3) <strong>The one placement that escapes the shape test dies on
+              value of the theory this sector rediscovered.{' '}
+              <strong style={{ color: '#f59e0b' }}>Correction 2026-09-09:</strong> this sentence previously also listed
+              &ldquo;the Oort-window 0.074–0.154&rdquo; among the excluded knees. That was a γ mismatch &mdash; 0.074–0.154 is the
+              solar-neighbourhood window <em>at γ = 2</em>, set against the exclusion band <em>at γ = 0.489</em>. Computed at the
+              same γ, the solar window and the cluster verdict <strong>overlap at every γ from 0.3 to 3</strong>: the clusters
+              call the bottom of the solar window <em>ok</em> and its top <em>marginal</em>. The joint local window is
+              ρ<sub>c</sub> ∈ 0.0039–0.0079 M<sub>☉</sub>/pc³ at γ = 0.489 and 0.0735–0.078 at γ = 2, sliding as
+              e<sup>1/γ</sup> between them. <strong>The Sun and the clusters do not close this sector &mdash; there is a place
+              for the knee at every γ.</strong> (Withdrawn by the explorer 2026-09-08, having introduced it 2026-09-07. Second
+              published instance of the program&apos;s characteristic error; it is why every density window on this page now
+              carries its γ in the same cell.) (3)<strong>The one placement that escapes the shape test dies on
               the mass budget:</strong> reading ρ<sub>crit</sub> = A·V² with the host galaxy&apos;s 220 km/s puts the knee at
               ~1 pc, saturating the whole cluster at the floor &mdash; a pure G → G/Ω<sub>m</sub> rescaling, invisible to the
               slope but dividing every cluster&apos;s stellar M/L<sub>V</sub> by 3.175, which pushes 96% of 167 clusters below
@@ -884,6 +894,53 @@ export default function HonestAssessment() {
               the first time the N<sub>corr</sub> machinery has done predictive rather than decorative work. It is also not a
               win if it passes: the boost ceiling still kills the floored law on SPARC independent of γ, so a passing ladder
               makes the framework two partial functions, not one function that works.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              <strong>What SPARC says at the knees the local data admit (executed 2026-09-08, corrected 2026-09-09).</strong>{' '}
+              The framework&apos;s own field equation div(C∇Φ) = 4πGρ, solved on 153 SPARC discs (Q ≤ 2, i &gt; 30°) at every
+              knee the solar and cluster constraints jointly allow, Υ<sub>disk</sub> profiled, same likelihood for every model.
+              Reference: MOND simple μ reaches χ²/N = 21.2 and 0.105 dex rms in g; Newton 465 and 0.410.
+            </p>
+            <div style={{ overflowX: 'auto', margin: '0.25rem 0 0.75rem' }}>
+              <table style={{ fontSize: '0.82rem', borderCollapse: 'collapse', width: '100%' }}>
+                <thead>
+                  <tr style={{ textAlign: 'left', color: 'var(--color-text-muted)' }}>
+                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>Density-keyed C, floor f, knee ρ<sub>c</sub></th>
+                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>χ²/N</th>
+                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>rms g (dex)</th>
+                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>discs needing more boost than the ceiling gives</th>
+                  </tr>
+                </thead>
+                <tbody style={{ color: 'var(--color-text-secondary)' }}>
+                  <tr><td style={{ padding: '0.35rem' }}>γ = 0.489, f = Ω<sub>m</sub>, ρ<sub>c</sub> = 0.0039 <em>(its own joint local window)</em></td><td style={{ padding: '0.35rem' }}>77.7</td><td style={{ padding: '0.35rem' }}>0.151</td><td style={{ padding: '0.35rem' }}>80 %</td></tr>
+                  <tr><td style={{ padding: '0.35rem' }}>γ = 2, f = Ω<sub>m</sub>, ρ<sub>c</sub> = 0.074 <em>(its own joint local window)</em></td><td style={{ padding: '0.35rem' }}>90.6</td><td style={{ padding: '0.35rem' }}>0.146</td><td style={{ padding: '0.35rem' }}>80 %</td></tr>
+                  <tr><td style={{ padding: '0.35rem' }}>γ = 2, f = Ω<sub>m</sub>, ρ<sub>c</sub> = 0.0039 <em>(best density-keyed model anywhere in the run; outside its own local window)</em></td><td style={{ padding: '0.35rem' }}><strong>68.9</strong></td><td style={{ padding: '0.35rem' }}>0.159</td><td style={{ padding: '0.35rem' }}>82 %</td></tr>
+                  <tr><td style={{ padding: '0.35rem' }}>γ = 2, <strong>f = 0.089</strong> (Refracted Gravity&apos;s E0 floor), ρ<sub>c</sub> = 0.0039</td><td style={{ padding: '0.35rem' }}>452.8</td><td style={{ padding: '0.35rem' }}>0.197</td><td style={{ padding: '0.35rem', color: '#22c55e' }}>23 %</td></tr>
+                  <tr><td style={{ padding: '0.35rem' }}>γ = 0.489, <strong>f = 0.089</strong>, ρ<sub>c</sub> = 0.0083</td><td style={{ padding: '0.35rem' }}>1207</td><td style={{ padding: '0.35rem' }}>0.252</td><td style={{ padding: '0.35rem', color: '#22c55e' }}>10 %</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              <strong>Read the last two rows.</strong> Lowering the floor does exactly what the boost-ceiling diagnosis says it
+              should &mdash; the fraction of discs that cannot be lifted at all falls from ~80 % to 10&ndash;23 % &mdash; and the
+              fit gets <strong>3&ndash;17× worse</strong>. The amplitude problem and the shape problem are the same problem
+              pointing opposite ways: keep the Ω<sub>m</sub> ceiling and four discs in five cannot be lifted; raise it and the
+              boost arrives in the inner disc where SPARC says nothing should happen. <strong>SPARC&apos;s objection is to
+              where the transition sits, not to how big it is</strong> &mdash; and a switch keyed to local density puts the
+              transition inside the baryonic disc by construction. That is the honest close of this sector: not &ldquo;the floor
+              is the wrong number&rdquo; but <em>ρ is the wrong argument</em>. What would reopen it is a differently-argued C
+              (surface density, an MRH-smoothed density, an acceleration), not another scan of ρ<sub>c</sub>.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              <strong>Two corrections carried here, both to the 2026-09-08 finding, both found by re-reading its script
+              output.</strong> (a) That finding reported the SPARC fit as improving <em>monotonically</em> as the knee falls. True
+              at γ = 0.489; false at γ = 2 with the Ω<sub>m</sub> floor, which has an interior optimum at ρ<sub>c</sub> ≈
+              0.004&ndash;0.008 and rises on both sides. (b) It concluded &ldquo;the floor is the only parameter SPARC is
+              objecting to.&rdquo; Its own freed-floor rows say otherwise (above). Both errors trace to the same cause: the
+              finding&apos;s results table shipped with two unsubstituted template placeholders where the γ = 2 and freed-floor
+              rows belonged, so the conclusions were written from a narrative rather than from the run. Also worth recording
+              on the fork: at the Ω<sub>m</sub> floor, <strong>γ = 2 is the better SPARC branch at every knee ≥ 0.0039</strong>{' '}
+              and holds the run&apos;s global optimum. It is still 3.2× MOND. That is a fork datum, not a rescue.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Why this is not counted as a seventh refutation (recommendation; gates on the operator):</strong> a

@@ -33,7 +33,9 @@ Best knee per argument, Υ-profiled χ²/N, against parameter-free MOND simple-�
 
 At the Ω_m floor the whole argument axis spans a factor of **1.41**. At RG's floor of 0.089 the same axis
 spans more than **5×**, and acceleration keying reaches **1.47× parameter-free MOND** — the best any
-member of this family has scored in this program. Nothing else does.
+member of this family has scored in this program. Nothing else does. **All of these are one-shot numbers**
+(C evaluated on the Newtonian field); solved self-consistently the same best cell is 2.07× rather than
+1.29× at matched Υ. See §4 and the validity section — the ordering survives, the magnitudes do not.
 
 **3. Pre-registered expectations, scored.** E1 ("at floor = Ω_m every argument, g_N included, lands ≥ 3×
 MOND") is **refuted** — g_N lands at 2.61×. E2's ordering (g_N best, ρ̄ second, the three baryon-local ones
@@ -168,9 +170,23 @@ limits:
 - **The unfloored limit is not computable.** At floor 1e-6 the same model gives 7.19× and does not
   converge (max remaining ΔC/C = 8.8×10⁻³ after 12 damped iterations). The suspect is the outer Dirichlet
   condition Φ → −GM/(C_min r), which presumes a constant far-field C that an unbounded μ does not have.
-  **No row at floor ≲ 0.01 anywhere in this archive is interpretable**, and the topic's fourth candidate —
-  *isolate the compander form by removing the floor* — **cannot be tested with this solver.** That is a
-  negative result about the tooling, and it is the honest answer to that quarter of the topic.
+  **No row at floor ≲ 0.01 anywhere in this archive is interpretable.**
+- **But the topic's fourth candidate does not need the unfloored limit, and it is answered.** At
+  B_max = 11.2 the ceiling is already non-binding — 51.45 against 51.48 at B_max = 50, a 0.06% difference
+  — so the form can be isolated *there* instead. Self-consistent, 153 discs, Υ_disk = 0.5, same argument
+  (|∇Φ|), same floor (0.089), the only difference being the functional form:
+
+  | form | χ²/N | inner half | outer half | last 2 points | deficit at R_last |
+  |---|---|---|---|---|---|
+  | MOND μ = x/(1+x) | 51.45 | 39.89 | 62.48 | 20.27 | −3.5% |
+  | framework compander, γ = 0.489, g_c = 0.32 a₀ | 108.10 | 53.78 | 159.93 | 43.06 | +12.0% |
+
+  **The compander form costs 2.10× against MOND's μ at a floor where the ceiling is not binding, and it
+  costs it in the outer disc** (2.56× on the outer half, 2.12× on the last two points, +12.0% velocity
+  deficit at R_last against 5.2% errors). This is an upper bound: the knee 0.32 a₀ was selected by
+  one-shot optimisation and self-consistency may prefer another. The topic recorded the compander form as
+  "explicitly not killed by any run so far." It is now the one thing in this family that has been
+  measured against MOND's own function with everything else held fixed, and it loses by 2.1×.
 - **One-shot vs self-consistent is model-dependent in sign and cannot be corrected by a factor**: at floor
   Ω_m, MOND's μ improves 111.69 → 71.68 while the compander at the same floor *worsens* 86.89 → 107.72.
   All acceleration-keyed rows in the tables above are one-shot; all density-keyed rows are unaffected
@@ -229,8 +245,10 @@ measurement says which half:
 ## Open Threads
 
 - **Fix the outer boundary condition.** Φ → −GM/(C_min r) assumes a constant far-field C. For an unbounded
-  μ there is none. Until this is fixed the compander *form* cannot be isolated from its floor, which is a
-  quarter of the topic left unanswered — and unanswerable, not merely unanswered.
+  μ there is none. This blocks the true MOND limit, though not — as it turns out — the form comparison,
+  which only needs a floor low enough to be non-binding.
+- **Re-optimise the compander's knee self-consistently** before quoting the 2.10× form penalty as final.
+  Four knees, one floor, ~10 minutes of solver.
 - **Re-run the argument head-to-head self-consistently.** The one-shot bias is model-dependent in sign, so
   today's 1.41 and 5× spreads are ordinal only. Cost is ~12× the compute; worth it only for the best two
   or three cells, not the whole grid.

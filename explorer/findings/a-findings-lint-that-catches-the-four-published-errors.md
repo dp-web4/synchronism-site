@@ -43,7 +43,7 @@ the physics — it only needs to insist that a window is not a window until its 
 |------|----------|-------------|-------|-------------------------|
 | R1 `PLACEHOLDER` | error | 12 | 9 | 4/12 true placeholders; the other 8 are unbackticked artifact names, which the rule's own contract says should be backticked |
 | R2 `UNTAGGED WINDOW` | error | 14 | 7 | ~10/14 — the 4 misses are observed density ranges sitting next to the word "window" |
-| R4 `NO SAVED ARTIFACT` | warn | 59 | 47 | exact by construction |
+| R4 `NO SAVED ARTIFACT` | warn | 33 | 26 | exact, after excluding library modules (files with no `__main__` block) — that exclusion took it from 59 hits to 33 |
 | R3 `UNGROUNDED TABLE` | report | 440 ungrounded of 3581 | 44 | 87.7% coverage; use as an anomaly detector, not a gate |
 
 R1 needed one round of tuning that is worth recording, because it is the difference between a lint that
@@ -74,10 +74,16 @@ artifacts**. So the rule that earns its tooling is the trivial one underneath it
 
 > **R4** — a finding cites a script that exists in this repo and there is no `<script>_output.txt` beside it.
 
-27 of 174 findings, 27 of 88 cited scripts (31%). The debt is mostly legacy: 22 of the 27 live in the older
-`scripts/` and `work/` directories, only 5 in `findings/scripts/`, so the save-the-output convention has
-in fact been adopted — it just was not enforced, and nothing until now could say how much of the archive
-predates it.
+27 of 174 findings, 27 of 88 cited scripts (31%) before the library-module exclusion; 26 files and 33
+citations after. The debt is mostly legacy: 22 of the 27 live in the older `scripts/` and `work/`
+directories, only 5 in `findings/scripts/`, so the save-the-output convention has in fact been adopted —
+it just was not enforced, and nothing until now could say how much of the archive predates it.
+
+**R3 does work as a target, once R4's precondition is met.** Today's companion finding
+(`the-argument-question-answered-and-the-ceiling-refutation-put-in-doubt.md`) was written against its
+own `_output.txt` files with an explicit artifact manifest, and scores **115/115 = 100% R3 coverage**
+against a corpus baseline of 87.7%. So the answer to "does R3 just move the failure to the view layer" is
+no — it is reachable, and reaching it costs one table of script names.
 
 ### What this does not fix
 

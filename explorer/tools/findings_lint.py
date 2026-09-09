@@ -217,6 +217,11 @@ def rule_R4(path, lines):
                 continue
             if b[:-3] + "_output.txt" in outs:
                 continue
+            try:                                              # library modules are not runs
+                if "__main__" not in open(have[b], encoding="utf-8", errors="ignore").read():
+                    continue
+            except OSError:
+                pass
             seen.add(b)
             hits.append((i, b, os.path.relpath(have[b], ROOT)))
     return hits

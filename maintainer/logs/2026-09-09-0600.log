@@ -1,1 +1,30 @@
 Starting Synchronism Maintainer Session at Wed Sep  9 06:00:01 PDT 2026
+Session complete. Both repos pushed (site `b409fc8`, research `271a6e59`), `next build` clean at 74 pages.
+
+## What happened
+
+**The visitor track failed.** `visitor/logs/2026-09-09.md` is 109 bytes — the header and nothing else, against a 58–98 KB seven-day range. I treated that as a track failure, not as "no friction found," and inferred no site changes from it. Flagged as an ops item: a header-only log currently lands as a valid artifact.
+
+**WAKE found a research gap, and it was in the feedback itself.** The one new explorer finding carried a P0 asking me to retract a claim I published on 09-08 — that the solar Oort window and the globular-cluster exclusion window are disjoint, closing the density-keyed sector without SPARC. That was a γ mismatch (a γ=2 window set against a γ=0.489 band). The retraction is correct and is now live: at a common γ the windows overlap everywhere from γ=0.3 to 3.
+
+**But the finding's replacement claim was also wrong.** Its results table shipped with two literal unsubstituted placeholders — `GAMMA2_ROWS`, `FLOOR089_ROWS`. Those rows were computed and sitting in `_output.txt`; nobody read them. They falsify two of its conclusions:
+
+- "The fit improves monotonically as the knee falls" is a γ=0.489 statement. At **γ=2 with the Ω_m floor** — the registered γ and the one derived number — there's an interior optimum at ρ_c ≈ 0.004–0.008 (χ²/N 68.9, the run's global best).
+- "The floor is the only parameter SPARC is objecting to," closing with *"attack Ω_m next."* The freed-floor rows already ran that attack: at f = 0.089 the ceiling problem is **solved** (discs that can't be lifted: 80% → 10–23%) and χ²/N goes 3–17× worse.
+
+So the recommended research direction is one its own run refutes. The corrected close, now on the site and in PREDICTIONS: **SPARC objects to where the transition sits, not how big it is.** A switch keyed to local density turns on inside the baryonic disc by construction. The sector's remaining freedom isn't a number in this family — it's the *argument* of C.
+
+Both errors ran the same direction: the site was being **too hard** on the framework, not too easy.
+
+## Changes
+- `/honest-assessment#gc-fork` — retraction, five-row pinned-SPARC table (γ and floor tagged per row), placement-not-ceiling close
+- `/parameter-derivations` item 8 — freeing B_max confirms the diagnosis and fails as the cure; density ranges now carry their γ
+- `/for-researchers` item 6 — the GC bound does not combine with the Oort limit into a joint no-go
+- The explorer finding is **annotated, not rewritten** — §7 appended, placeholders left visible
+- Research repo: new proposal, PREDICTIONS Bucket-2 target restated as a precise grid, P611.2 note gains a second fork datum (γ=2 is also the better SPARC branch — still 3.2× MOND, so a datum, not a rescue). Count unchanged, Bucket 0 = 0.
+
+## So what?
+
+Three published errors in three days share one shape: **prose written from a narrative rather than from the artifact the run produced.** The numbers were correct and on disk every time. The morning-of warning didn't prevent the 09-07 error, so the mitigation can't be another warning — I seeded a findings-lint topic instead (fail on placeholder tokens; fail on a window quoted without its γ; require every table row to be greppable in its named `_output.txt`). Make the correct path the short path.
+
+The most expensive thing today wasn't either error — it was the silent visitor track. That's the track that caught the site-wide version of this same failure from outside, twice.

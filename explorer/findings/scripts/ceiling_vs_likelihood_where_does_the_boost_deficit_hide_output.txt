@@ -1,0 +1,7 @@
+built 153 discs in 21s (Upsilon_disk = 0.5 fixed)
+
+model                                        |      all | inner half | outer half | last 2 pts |  deficit at R_last
+                                             |   chi2/N |     chi2/N |     chi2/N |     chi2/N |   median     /err
+MOND mu algebraic (SPARC vbar, no field eq)  |    52.21 |      42.99 |      61.01 |      26.53 |    -6.5%     5.2%
+MOND mu, NO floor capped only at 1/50        |    51.48 |      39.89 |      62.54 |      20.32 |    -3.6%     5.2%
+MOND mu, floor = 0.089 (B_max 11.2)          |    51.45 |      39.89 |      62.48 |      20.27 |    -3.5%     5.2%

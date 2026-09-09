@@ -1,0 +1,19 @@
+SPARC Q<=2, i>30: 153 discs
+
+ Ups_disk |  median     p75     p90      max | % > 3.17 | % > 6.39 | % > 11.24
+      0.3 |    6.92   10.36   16.11     56.7 |         93%  |         58%  |         20%
+      0.5 |    5.14    7.33   10.01     61.4 |         77%  |         35%  |          8%
+      0.7 |    4.18    5.92    8.53     28.0 |         62%  |         22%  |          7%
+      1.0 |    3.19    4.63    6.99     17.0 |         51%  |         13%  |          5%
+
+The floor a given fraction of the sample admits  (f <= 1 / B_req,max):
+ Ups_disk |  50% of discs |  75% of discs |  90% of discs | 100% of discs
+      0.3 |        0.1444 |        0.0966 |        0.0621 |        0.0176
+      0.5 |        0.1947 |        0.1364 |        0.0999 |        0.0163
+      0.7 |        0.2391 |        0.1690 |        0.1173 |        0.0357
+      1.0 |        0.3130 |        0.2160 |        0.1431 |        0.0588
+
+Read: at the SPARC-standard Upsilon_disk = 0.5, fitting 90% of the sample requires a
+coherence floor at or below the value in the '90%' column -- against Omega_m = 0.315.
+This is arithmetic on the catalogue.  It does not depend on C's argument, its knee, its
+functional form, or gamma; only on the field equation's g = g_N / C with C >= floor.

@@ -1,0 +1,22 @@
+built 51-disc subsample in 5s (Upsilon_disk = 0.5 fixed)
+/usr/lib/python3/dist-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/usr/lib/python3/dist-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+reference on this subsample: parameter-free MOND simple mu chi2/N = 75.21
+
+model                                                |  one-shot | self-consistent |  x MOND |    maxdC
+MOND mu = x/(1+x), floor 1e-6  [CONTROL]             |   1419.28 |          540.51 |    7.19 |  8.8e-03
+MOND mu = x/(1+x), floor = Omega_m                   |    111.69 |           71.68 |    0.95 |  1.1e-04
+MOND mu = x/(1+x), floor = 0.089                     |    732.18 |           63.61 |    0.85 |  3.9e-04
+compander gamma=0.489 g_c=a0 floor=Omega_m           |     86.89 |          107.72 |    1.43 |  9.0e-05
+compander gamma=0.489 g_c=a0 floor=0.089             |    588.28 |           80.81 |    1.07 |  9.9e-05
+compander gamma=0.489 g_c=a0 floor=1e-3              |   4929.57 |          162.08 |    2.15 |  8.9e-02
+compander gamma=2     g_c=a0 floor=1e-3              |    354.79 |          204.79 |    2.72 |  1.6e-01
+
+ 'one-shot' = C evaluated on the Newtonian field (what the main tables do).
+ 'self-consistent' = C iterated to a fixed point on |grad Phi| (AQUAL-style).
+ CONTROL row: unfloored MOND mu self-consistently should land near 75.21.
+ 'maxdC' = largest remaining relative change of C on the final iteration (convergence).
+
+[282s]

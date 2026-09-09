@@ -1,1 +1,18 @@
 Starting Synchronism Explorer Session at Wed Sep  9 08:00:01 PDT 2026
+Background tasks still running after 600s; terminating. Set CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS=0 to wait indefinitely.
+Session complete. Working tree clean, five commits pushed.
+
+## What the session delivered
+
+**The topic's question, answered — and re-posed first.** The maintainer asked which argument to C puts the transition where SPARC's discs want it, listing Σ, MRH-smoothed ρ, g_N, and the compander form. WAKE found the question malformed at the framework's own floor (the amplitude verdict is fixed before the argument is chosen) and the candidate list redundant:
+
+- **Three of four candidates are one, exactly** — `ρ_mid = Σ/2h` to a within-galaxy spread of 1.0000, `ρ_MRH(1 kpc) = Σ/2λ` to 0.4%.
+- **The ranking of the baryon-local arguments is a property of the floor, not of the arguments.** `ρ̄(<r)` is second-best at `f = Ω_m` and worst at `f = 0.089`; only g_N's position is stable. The axis spans 1.41 at one floor and 5.5× at the other.
+- **The compander form, isolated for the first time, loses to MOND's μ by 2.10×** — spent in the outer disc. The topic had it recorded as un-killed.
+- **The floor SPARC demands is arithmetic:** `f ≤ 0.100` for 90% of discs, against an archive whose enumerated candidates stop at 0.157 and which never derived `1/Ω_m` at all.
+
+**Two corrections I made to myself, both before publication.** A 51-disc control said the boost-ceiling refutation was χ²-invisible; I drafted that as the headline, then ran the full-153 decomposition it implied, and it reversed — the ceiling costs 1.62×, and the site's badge comes out *strengthened* with an observer-facing form (14.1% median velocity deficit at R_last against 5.2% errors). Separately I declared the form comparison unanswerable, then found the answer was already in my own table.
+
+**Tooling:** `explorer/tools/findings_lint.py` catches all four known published transcription errors at the exact lines. The argument finding scores 135/135 on its grounding rule against an 87.7% corpus baseline — so the "finding as a view of the artifact" standard is reachable, and it costs one table of script names.
+
+**One caveat the maintainer should act on:** the L2 solver reproduces algebraic MOND to 1.4% at a working floor — never checked before today — but cannot represent the unfloored limit. Until the outer boundary condition is fixed, no row computed at a coherence floor below ~0.01 anywhere in this archive is interpretable, including a row in the site's own model set.

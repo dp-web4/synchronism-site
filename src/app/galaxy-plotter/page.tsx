@@ -176,6 +176,32 @@ export default function GalaxyPlotter() {
           look like to fit the data — drawn by hand, not computed. The solid one is what the equation
           actually produces. Showing both is the point: the gap between them <em>is</em> the failure.
         </div>
+        <div style={{ background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#f87171' }}>Read &ldquo;real&rdquo; on this page as &ldquo;as published&rdquo; &mdash;
+          the violet curve is the framework&apos;s equation at a calibration this site refutes three separate ways
+          (named here 2026-09-10, after three of four visitor personas flagged this one page).</strong>{' '}
+          The curve is honestly computed &mdash; nothing is fitted to the dots &mdash; but every parameter in it is
+          one the site elsewhere marks as failed:
+          <br />&bull; <strong>&gamma;&nbsp;=&nbsp;2</strong> &mdash; the pin refuted on the RAR at
+          &Delta;BIC&nbsp;=&nbsp;+184 (<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
+          <br />&bull; <strong>&rho;<sub>crit</sub>&nbsp;=&nbsp;0.029&middot;V<sub>flat</sub><sup>+2</sup></strong>
+          &mdash; the BTFR requires &rho;<sub>crit</sub>&nbsp;&propto;&nbsp;V<sup>&minus;2</sup>, so the
+          <em> sign of the exponent is inverted</em> against the framework&apos;s own audit, with magnitudes off by
+          240&ndash;300,000&times; (<Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link>).
+          <br />&bull; <strong>Per-system normalization</strong> &mdash; keying the knee to V<sub>flat</sub> makes it a
+          function of the very observable being predicted; the site names that move disqualifying, and MOND by contrast
+          uses one global a₀ for all galaxies.
+          <br />So the tool is best read not as &ldquo;the theory&apos;s prediction&rdquo; but as a
+          <strong> working demonstration that the equation is inert at its published calibration</strong> &mdash; which
+          is exactly what the DDO 154 annotation on this page says in one line (<em>max C on this disk: 0.001 &mdash;
+          inert by construction</em>). At V<sub>flat</sub>&nbsp;=&nbsp;47&nbsp;km/s that calibration puts the knee at
+          64&nbsp;M<sub>&#x2609;</sub>/pc&sup3; against disc densities of order 10<sup>&minus;2</sup>: no galaxy in the
+          dropdown can lift off the Newtonian baseline, for any of them.
+          <br /><strong>One more cross-link the plot owes you:</strong> the green MOND reference uses the simple-&nu;
+          function &mdash; the RAR-preferred choice, and <em>also</em> precisely the function TEST-25 reports Cassini
+          excluding at +17.95&sigma;. The benchmark drawn here is a function this site refutes in the Solar System;
+          that is a real tension in the comparison and not a drafting slip.
+        </div>
         <p>
           <strong>The dark matter puzzle in one picture:</strong> Physics predicts that galaxies
           should rotate more slowly at their outer edges (like planets in the solar system — the
@@ -193,7 +219,8 @@ export default function GalaxyPlotter() {
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '-0.5rem' }}>
           Select a SPARC galaxy. The plot shows five things: what visible matter predicts (dashed gray),
-          what we observe (dots), what Synchronism&apos;s real equation gives (violet solid — it fails),
+          what we observe (dots), what Synchronism&apos;s equation <em>as published</em> gives (violet solid — it
+          fails, at a calibration refuted three ways; see the red box above),
           the hand-tuned stand-in formerly shown (amber dotted — illustration only), and what MOND gives (green).
           Notice that the <em>stand-in</em> and MOND nearly overlap — the framework&apos;s own{' '}
           <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}

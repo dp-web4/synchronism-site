@@ -110,7 +110,7 @@ export default function RootLayout({
             <Link href="/test-catalog">Test Roadmap</Link>
           </p>
           <p style={{ marginTop: '0.25rem', lineHeight: 1.8 }}>
-            <Link href="/interactive-tools">Tools</Link>
+            <Link href="/interactive-tools">Interactive Tools</Link>
             {' \u00B7 '}
             <Link href="/glossary">Glossary</Link>
             {' \u00B7 '}

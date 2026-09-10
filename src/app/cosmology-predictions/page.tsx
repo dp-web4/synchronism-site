@@ -22,11 +22,29 @@ export default function CosmologyPredictions() {
           marginBottom: '2rem',
         }}>
           <h2 style={{ color: '#ef4444', marginTop: 0, marginBottom: '0.5rem' }}>
-            TEST-04a: DESI DR1 fσ₈ — Post-hoc Retrodiction, Disfavored 2.4σ on σ₈ Amplitude (Reframed 2026-07-02)
+            TEST-04a: DESI DR1 fσ₈ — Post-hoc Retrodiction, Disfavored 2.4σ on σ₈ Amplitude;
+            the Registered fσ₈ Kill Was NOT Met (corrected 2026-07-14)
           </h2>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>
             The framework&apos;s primary cosmological test compared against DESI DR1 full-shape (arXiv:2411.12021).
           </p>
+          <div style={{ background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '0.75rem', fontSize: '0.85rem' }}>
+            <strong style={{ color: '#fbbf24' }}>Which DESI data product — this is the whole of whether the registration is stale.</strong>{' '}
+            Three different DESI things get called &ldquo;DESI DR2&rdquo; on this site and they are not interchangeable:
+            <br />• <strong>DR1 full-shape</strong> (arXiv:2411.12021, published April 2024) — what this card is adjudicated against.
+            <br />• <strong>DR2 BAO</strong> (arXiv:2503.14738, published March 2025) — <em>published, and already used</em>
+            by this program: the 2026-08-12 dark-energy likelihood fit is DR2 BAO + Planck priors + Dovekie SN. It constrains
+            <em> expansion</em>, not growth, so it cannot adjudicate an fσ₈ criterion.
+            <br />• <strong>DR2 full-shape</strong> — the <em>registered</em> statistic (fσ₈ at z ≈ 0.51).
+            Formal parameter papers are <strong>not published</strong> (expected ~Spring 2027); preliminary results
+            were presented April 2026 (PIRSA:26040071). <strong>The registered trigger has not fired</strong>, so this
+            verdict is frozen at DR1 by data availability, not by neglect.
+            <br />• There is <strong>no DESI DR3</strong>. DR3 appears on this site only as the ~2027–2028 venue
+            <em> proposed</em> for TEST-26. <em>(Clarifier added 2026-09-10: a researcher-persona reader concluded
+            from this site in one pass that a registered criterion was two data releases overdue. It is not — but the
+            site gave them every reason to think so, which on a site whose method is pre-registration is the more
+            damaging error.)</em>
+          </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '0.75rem' }}>
             <div style={{ background: 'rgba(239, 68, 68, 0.05)', borderRadius: '0.375rem', padding: '0.75rem' }}>
               <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '0.25rem' }}>Synchronism predicted</div>
@@ -40,8 +58,12 @@ export default function CosmologyPredictions() {
             </div>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
-            Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) triggered — LRG1 actual fσ₈ ≫ 0.46.
-            Suppression not observed; data is ΛCDM-consistent. The LRG1 &ldquo;enhancement&rdquo; is a
+            <strong>The registered kill criterion (fσ₈(z=0.51)&nbsp;&gt;&nbsp;0.46 ruling out at &gt;3σ) was NOT met</strong>{' '}
+            (corrected 2026-07-14; this page said &ldquo;triggered&rdquo; until 2026-09-10). Computed directly:
+            LRG1 fσ₈ = 0.474&nbsp;×&nbsp;1.16&nbsp;±&nbsp;0.062 = 0.550&nbsp;±&nbsp;0.062 — above 0.46 by only
+            ~1.5σ, short of the &gt;3σ the criterion demands (it does clear the weaker &gt;2σ
+            &ldquo;disfavors&rdquo; clause at 0.45). What carries the 2.4σ is σ₈, a <em>different</em>,
+            GR-conditioned statistic. Suppression not observed; data is ΛCDM-consistent. The LRG1 &ldquo;enhancement&rdquo; is a
             single ~1.2σ bin — the ensemble growth index (γ_growth ≈ 0.58 ± 0.11) leans mildly toward
             suppression, so the load-bearing failure is the σ₈ amplitude, not direction.
             A 2026-05-25 &ldquo;correction&rdquo; claiming kill not triggered was itself an error:

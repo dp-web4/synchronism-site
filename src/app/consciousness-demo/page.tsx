@@ -44,6 +44,30 @@ export default function ConsciousnessDemo() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{
+          background: 'rgba(56,189,248,0.08)',
+          border: '1px solid rgba(56,189,248,0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          marginBottom: '0.75rem',
+          fontSize: '0.88rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: 'var(--color-accent-blue)' }}>Is this the same C as the rest of the site? Yes &mdash;
+          and that is exactly why the page reads strangely (stated 2026-09-10).</strong>{' '}
+          The <strong>C</strong> here is the same coherence value <strong>C(&rho;)</strong> used everywhere on this
+          site: the 0&nbsp;&rarr;&nbsp;1 output of C(&rho;)&nbsp;=&nbsp;tanh(&gamma;&nbsp;ln(&rho;/&rho;<sub>crit</sub>&nbsp;+&nbsp;1)),
+          the same axis the galaxy-rotation work puts at ~10<sup>&minus;5</sup> for a SPARC disc. This demo asks
+          <em> where on that one axis consciousness might sit</em>, and its honest answer is: nobody can currently
+          say, because <strong>no calibration procedure maps EEG, fMRI, or IIT-&Phi; onto the C axis at all.</strong>
+          Two separate readers (a casual reader and a technical writer, both 2026-09-10) reported that the unlabelled
+          reuse of &ldquo;C&rdquo; next to galaxy rotation is what triggers a crank-detector &mdash; so it is worth
+          being blunt about the structure: <em>the claim that one variable spans quantum coherence, galaxy dynamics and
+          consciousness is the framework&apos;s central ontological bet, and it is the single least supported thing
+          here.</em> If it is wrong, it is wrong in the most ordinary way &mdash; a number that happens to land in
+          [0,&nbsp;1) in three places is not evidence that it is the same number. The sections below argue that against
+          this page&apos;s own headline.
+        </div>
+        <div style={{
           background: 'rgba(239,68,68,0.07)',
           border: '1px solid rgba(239,68,68,0.3)',
           borderRadius: '0.375rem',

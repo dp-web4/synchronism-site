@@ -106,7 +106,7 @@ export default function EquationWalkthrough() {
 
         <div className="card card-highlight" style={{ marginBottom: '1.5rem', minHeight: '250px' }}>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem' }}>
-            Term {step + 1} of {steps.length} (this tool&apos;s own tour &mdash; not a learning-path step)
+            Step {step + 1} of {steps.length} (this tool&apos;s own tour &mdash; not a learning-path step)
           </p>
           <h2 style={{ marginBottom: '1rem' }}>{current.title}</h2>
 

@@ -83,7 +83,14 @@ export default function ParameterDerivations() {
               In any mean-field model (Ising, Curie–Weiss), increasing the number of correlated units
               makes the transition <em>sharper</em> — fluctuations stop self-averaging near criticality;
               cooperative effects build. Here, &#x03B3; = 2/&#x221A;N<sub>corr</sub> <em>decreases</em> with
-              N<sub>corr</sub>, giving the most-correlated systems (BCS, BEC, N<sub>corr</sub> ≈ 10⁶)
+              N<sub>corr</sub>, giving the most-correlated systems (BCS, BEC, N<sub>corr</sub> ≈ 10⁶&ndash;10⁷ &mdash;
+              <em>range widened 2026-09-10</em>: this read &ldquo;≈ 10⁶&rdquo; while the{' '}
+              <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&gamma; Calculator</Link>{' '}
+              uses 10⁷ for BCS in the same argument, a factor of 10 on the same named system, caught by a
+              graduate-physics reader. Both are defensible &mdash; a BCS pair&apos;s coherence volume holds ~10⁶&ndash;10⁷
+              electrons depending on whether you count &xi;³n or pairs &mdash; which is itself the point this page
+              makes: N<sub>corr</sub> is a <strong>counting convention</strong>, not a measured invariant, so a factor
+              of 10 in it is not an error so much as evidence the quantity is underdetermined)
               the <em>flattest</em> transitions. The γ-calculator (try γ = 10⁻³) shows this directly:
               the "sharpest" transition (γ = 2) belongs to the single uncorrelated particle, while
               BCS superconductors — among the most collectively ordered systems known — sit near C ≈ 0,
@@ -96,8 +103,8 @@ export default function ParameterDerivations() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>2. tanh form</h3>
-              <ValidationBadge status="speculative" label="Motivated Choice" />
+              <h3>2. tanh form (the compander)</h3>
+              <ValidationBadge status="reparametrization" label="Reparametrization — exactly MOND's &micro;_simple at &gamma; = &frac12;" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Session #66</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -117,6 +124,34 @@ export default function ParameterDerivations() {
               loop: it is evaluated directly at the input ρ with no fixed-point iteration. The Ising
               tanh is derived; this tanh is chosen. These are structurally different justifications.
             </p>
+            <div style={{ background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
+              <strong style={{ color: '#fbbf24' }}>Badge upgraded 2026-09-10 from &ldquo;Motivated Choice&rdquo; to
+              &ldquo;Reparametrization&rdquo; &mdash; this is the strongest reparametrization on the site and it was
+              the one badged most softly.</strong> Raised independently by a graduate-physics reader (2026-09-10)
+              and by the explorer track (2026-09-09), from opposite directions, converging on the same correction:
+              <br />• <strong>It is an exact algebraic identity, not a family resemblance.</strong> At
+              &gamma;&nbsp;=&nbsp;&frac12;, C(x)&nbsp;=&nbsp;tanh(&frac12;&nbsp;ln(1+x)) is <em>identically</em>
+              MOND&apos;s simple interpolating function &micro;<sub>simple</sub>, for <strong>every</strong>
+              &rho;<sub>crit</sub>, with no free content left over. Compare what the site <em>does</em> badge
+              &ldquo;Reparametrization&rdquo;: a₀&nbsp;&asymp;&nbsp;cH₀/2&pi; is a 13%-off coincidence among
+              constants, and &Sigma;₀ likewise &mdash; both dimensional numerology, both defensible as such, both
+              weaker claims than an exact functional identity. The severity ordering was inverted.
+              <br />• <strong>And when the form is isolated and freed, it LOSES.</strong> Previously the compander
+              form was &ldquo;explicitly not killed by any run.&rdquo; It now has a number (explorer 2026-09-09,
+              <code> the_floor_is_the_whole_difference_gN_keyed.py</code>): same argument, same floor, same 153-disc
+              sample, swapping <em>only</em> the function &mdash; MOND &micro; &chi;&sup2;/N = <strong>51.45</strong>,
+              framework compander <strong>108.10</strong>, a factor <strong>2.10&times;</strong>, rising to
+              2.56&times; on the outer half and leaving a <strong>+12.0% median velocity deficit at the last measured
+              point</strong> against 5.2% median measurement errors there. It was isolated at B<sub>max</sub> = 11.2,
+              where the boost ceiling is already non-binding (51.45 vs 51.48 at B<sub>max</sub> = 50), so this is the
+              form failing on its own and not the ceiling failing again.
+              <br />• <strong>Both at once is the honest reading:</strong> at &gamma;&nbsp;=&nbsp;&frac12; the
+              compander <em>is</em> the thing it would have to beat, and away from &gamma;&nbsp;=&nbsp;&frac12; it is
+              2.10&times; worse than the thing it reparametrizes. There is no &gamma; at which the form buys anything.
+              <em> Caveat carried from the explorer&apos;s own self-seeded list: the compander&apos;s knee has not yet
+              been re-optimised self-consistently, so treat 2.10&times; as an upper bound on its advantage, not a
+              final number.</em>
+            </div>
           </div>
 
           <div className="card">

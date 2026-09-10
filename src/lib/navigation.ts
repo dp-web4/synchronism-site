@@ -12,7 +12,10 @@ export interface NavigationTree {
 }
 
 export const navigationTree: NavigationTree = {
-  'Getting Started': [
+  // Renamed 'Getting Started' -> 'Start Here' on 2026-09-10: the top nav said one and the
+  // breadcrumb said the other, and a technical-writer persona read them as two sections.
+  // 'Start Here' wins because it is the label a reader meets first.
+  'Start Here': [
     {
       title: 'Why Synchronism?',
       href: '/why-synchronism',
@@ -619,7 +622,7 @@ export const navigationTree: NavigationTree = {
     {
       title: '\u03B3 Calculator',
       href: '/gamma-calculator',
-      desc: 'Input N_corr, get \u03B3, see what regime you\'re in',
+      desc: 'The formula that failed, and why we left it up \u2014 input N_corr, get \u03B3, watch it rank the most tightly correlated matter in nature as the flattest',
       keywords: ['gamma', 'calculator', 'N_corr', 'regime', 'compute'],
       related: ['/gamma-parameter', '/phase-transitions', '/coherence-function'],
     },

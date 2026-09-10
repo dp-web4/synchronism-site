@@ -57,7 +57,14 @@ function PathCard({ path }: { path: PathEntry }) {
               }}>
                 {i + 1}
               </span>
-              {step.title}
+              <span>
+                {step.title}
+                {step.time && (
+                  <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>
+                    &middot; {step.time}
+                  </span>
+                )}
+              </span>
             </Link>
           </li>
         ))}

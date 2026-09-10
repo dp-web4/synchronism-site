@@ -6,7 +6,7 @@ import ValidationBadge from '@/components/ValidationBadge';
 
 export const metadata: Metadata = {
   title: 'For Researchers: What\'s Citable — Synchronism',
-  description: 'Five citable negative results extracted from the failure documentation: local-density locality no-go, A2ACW program-level null, dim-4 LIV exclusion of absolute-time substrates, the B1 CHSH substrate null (S ≤ 2 without signaling), and the density-keyed unidentifiability no-go (knee above the sampled density ⇒ interpolant unmeasurable).',
+  description: 'Four citable negative results extracted from the failure documentation (plus one demoted 2026-09-10): local-density locality no-go, dim-4 LIV exclusion of absolute-time substrates, the B1 CHSH substrate null (S ≤ 2 without signaling), and the density-keyed unidentifiability no-go (knee above the sampled density ⇒ interpolant unmeasurable). The A2ACW program-level null is no longer listed as citable — it is an underpowered statistic (Youden J = 0) with no positive control.',
 };
 
 export default function ForResearchers() {
@@ -49,6 +49,27 @@ export default function ForResearchers() {
           <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
           for the ceiling&apos;s own provenance, which is itself asserted rather than derived.
         </p>
+        <div style={{ background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.85rem 1.1rem', marginBottom: '1.5rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#f87171' }}>The complement of that bound, and it is arithmetic rather than a fit
+          (explorer 2026-09-09, added here 2026-09-10).</strong>{' '}
+          The ceiling bound above says what the framework <em>supplies</em>. The dual question &mdash; what SPARC
+          <em> demands</em> &mdash; has a clean answer: at the standard &Upsilon;, <strong>90% of the 153 discs require a
+          coherence floor f&nbsp;&le;&nbsp;0.100, and all 153 require f&nbsp;&le;&nbsp;0.016.</strong> The framework&apos;s
+          own floor is f&nbsp;=&nbsp;&Omega;<sub>m</sub>&nbsp;=&nbsp;0.315, and its archive&apos;s enumerated candidate
+          ratios stop at &Omega;<sub>b</sub>/&Omega;<sub>m</sub>&nbsp;=&nbsp;0.157 &mdash; while 1/&Omega;<sub>m</sub>
+          itself is nowhere derived. <strong>There is no derivation route to a floor low enough</strong>, which closes a
+          question this program self-seeded on 2026-09-08. Independent cross-check: the 77% of discs that need more
+          boost than 1/&Omega;<sub>m</sub> supplies reproduces the 118/153 = 77.1% found by a separate 2026-07-30 route.
+          <br /><br />
+          And the trade is not escapable by lowering the floor, because the two failures are the same failure pointing
+          opposite ways: at Refracted Gravity&apos;s f&nbsp;=&nbsp;0.089 the ceiling problem <em>is</em> solved (the
+          can&apos;t-be-lifted fraction falls to 10&ndash;23%) and &chi;&sup2;/N rises to 195&ndash;2700 &mdash;
+          <strong> 3 to 17&times; worse</strong>, because the boost then arrives in the inner disc where SPARC says
+          nothing should happen. <em>Prior art worth knowing before anyone re-runs this:</em> Cesare et al. 2020
+          (A&amp;A 637, A70), Refracted Gravity&apos;s founding disc paper, reports verbatim that the models
+          &ldquo;underestimate the observed accelerations of 0.1&ndash;0.3 dex at low Newtonian accelerations&rdquo;
+          &mdash; same model class, same failure mode, not attributed to the floor there, and never run on SPARC.
+        </div>
 
         {/* Artifact 1: locality no-go */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #8b5cf6' }}>
@@ -281,8 +302,8 @@ export default function ForResearchers() {
         {/* Artifact 2: A2ACW null */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #38bdf8' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>2. The A2ACW program-level null (retrospective controls, N=6) — same-corpus adversarial AI pairs do not generate or detect novelty</h2>
-            <ValidationBadge status="audited-negative" label="Registered Null — Pending Cross-Vendor Control" />
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>2. The A2ACW detector is <em>underpowered</em> (Youden&apos;s J = 0, CI [&minus;0.46, +0.46], n = 6) — an open question, not a citable null</h2>
+            <ValidationBadge status="untested" label="Underpowered — No Positive Control Run" />
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             <strong>Honest novelty statement:</strong> the protocol is assembled prior art — adversarial
@@ -302,6 +323,31 @@ export default function ForResearchers() {
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
             Discrimination lives entirely in unautomated human novelty judgment.
           </p>
+          <div style={{ background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', margin: '0.75rem 0', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+            <strong style={{ color: '#fbbf24' }}>Demoted from &ldquo;citable null&rdquo; to open question, 2026-09-10 &mdash;
+            and the reason is that the positive control has never been run.</strong>{' '}
+            A researcher persona made the point that this page was already making about itself and then not acting on:
+            <strong> you cannot cite a finding from a statistic this same page certifies as carrying no information.</strong>{' '}
+            Concretely, there is a <em>negative</em> control here (can the protocol catch known demotions? 6/6 &mdash; yes)
+            and <strong>no positive control</strong>: nobody has fed the protocol a verified discovery published
+            <em> after</em> the models&apos; training cutoff, citation-stripped, and measured the demotion rate on
+            known-good physics. Without it, two hypotheses are observationally identical here:
+            <br />&bull; <strong>H1</strong> &mdash; the framework genuinely produced nothing novel (the reading this
+            site has been publishing);
+            <br />&bull; <strong>H2</strong> &mdash; an LLM challenger rewarded for finding prior art maps almost
+            anything onto a corpus, <em>including real discoveries</em>, in which case the 1.4% survival rate is a
+            property of the protocol and says nothing whatever about Synchronism.
+            <br />A 100% demotion rate is exactly as suspicious as a 100% confirmation rate. And note which way this
+            cuts: <strong>under H2 the result is more interesting, not less</strong> &mdash; a measured
+            prior-art-illusion rate for adversarial LLM audit would be a finding about AI-assisted research
+            methodology, independent of whether any physics here holds, and it is plausibly the last genuinely novel
+            result this project can produce. The badge above is changed from <em>audited-negative / Registered Null</em>
+            to <em>untested / Underpowered</em> because the honest state is &ldquo;we do not know what this protocol
+            measures,&rdquo; not &ldquo;we measured a null.&rdquo; The cross-vendor control that was listed as pending
+            does not address this; a positive control does. Routed to dp in{' '}
+            <code>Research/proposals/test02_amplitude_is_knee_conditional_and_a2acw_positive_control_20260910.md</code>{' '}
+            with a concrete protocol seeded for the explorer track.
+          </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Put the two rates together and the detector is uninformative:</strong> combined
             sensitivity (true-positive rate) is 6/6 = 1.0 (self-simulated upper bound, see above);

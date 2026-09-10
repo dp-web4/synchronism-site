@@ -7,6 +7,12 @@
 export interface PathStep {
   title: string;
   href: string;
+  /** Rough per-step reading time at ~200 wpm, measured from rendered prose
+   *  (added 2026-09-10). A casual-reader persona followed the Beginner path
+   *  believing "~30 min" and hit a ~16,300-word page at step 5 with no warning:
+   *  an honest-by-mission site publishing a time estimate that is off by 3x is
+   *  a credibility cost out of all proportion to the fix. */
+  time?: string;
 }
 
 export interface LearningPath {
@@ -23,17 +29,17 @@ export interface LearningPath {
 export const learningPaths: LearningPath[] = [
   {
     name: 'Beginner',
-    timeEstimate: '~30 min',
-    desc: 'No physics background needed. Plain language, core concepts only.',
+    timeEstimate: '~35 min on the short route; ~1 h 50 m if you read step 5 in full',
+    desc: 'No physics background needed. Plain language, core concepts only. Step 5 (Honest Assessment) is the site\'s long audit page — on this path, read its "If you read nothing else" box and move on; the full 80-minute read is for when you want the evidence rather than the verdict.',
     color: '#10b981',
     kind: 'difficulty',
     steps: [
-      { title: 'Why Synchronism?', href: '/why-synchronism' },
-      { title: 'First Encounter', href: '/first-encounter' },
-      { title: 'The Core Idea', href: '/core-idea' },
-      { title: 'What Synchronism Is Not', href: '/what-synchronism-is-not' },
-      { title: 'Honest Assessment', href: '/honest-assessment' },
-      { title: 'Glossary', href: '/glossary' },
+      { title: 'Why Synchronism?', href: '/why-synchronism', time: '~8 min' },
+      { title: 'First Encounter', href: '/first-encounter', time: '~5 min' },
+      { title: 'The Core Idea', href: '/core-idea', time: '~8 min' },
+      { title: 'What Synchronism Is Not', href: '/what-synchronism-is-not', time: '~5 min' },
+      { title: 'Honest Assessment', href: '/honest-assessment', time: '~80 min in full — or ~4 min for its "If you read nothing else" box at the top, which is the intended stop on this path' },
+      { title: 'Glossary', href: '/glossary', time: '~5 min (reference — skim, don\'t read)' },
     ],
   },
   {

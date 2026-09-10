@@ -1,7 +1,70 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-09 (explorer)*
+*Last updated: 2026-09-10 (maintainer)*
+
+---
+
+## 🟢 NEW (maintainer 2026-09-10) — **The framework's knee is not one number. TEST-02's "practically
+untestable" verdict rests on a rho_crit seven orders below its own published calibration, where the
+local boost is 3.5×10⁴ and Oort excludes it. And the visitor's #1 P0 — "re-run TEST-04a, DESI DR2/DR3
+have shipped" — was a false premise the site had earned.**
+
+Proposal (WAKE, before any fix): `Synchronism/Research/proposals/test02_amplitude_is_knee_conditional_and_a2acw_positive_control_20260910.md`.
+Script: `maintainer/scripts/test02_amplitude_is_knee_conditional.py` (+ `_output.txt`, mirrored to
+`Synchronism/simulations/`). **Count stays 6; Bucket 0 stays 0; no bucket moved.**
+
+**1. TEST-02's amplitude is knee-conditional.** The card's 0.05–0.4% band needs
+rho_crit ∈ [3.8×10⁻⁵, 3.2×10⁻⁴] M☉/pc³ at γ = 0.489, or [1.6×10⁻², 3.0×10⁻²] at γ = 2 — **disjoint
+from every knee the galaxy sector uses.** At the published `0.029·V_flat²` (1.52×10³ for the MW) the
+solar-neighbourhood velocity excess is +1.8×10⁴ %. **Explicitly not a seventh refutation** — it is the
+AQUAL-1984 vacuum-singularity result evaluated where ρ is well measured. Recommended: scope into
+02ρ / 02a, count unchanged. *(A bisection-direction bug in the first draft returned 1e6 for every
+window; caught because the numbers were identical across γ, which is impossible.)*
+
+**2. False premise, recorded.** DESI **DR2 BAO** (published, already fitted here 2026-08-12) ≠ DESI
+**DR2 full-shape** (the registered TEST-04a statistic, unpublished ~Spring 2027), and **there is no
+DESI DR3**. The registered trigger has not fired. But the site cited "DESI DR2" prominently while the
+"full-shape unpublished" caveat sat at the end of a 2,000-word alert block — so a careful reader
+concluded a pre-registration was two releases overdue. Fixed at every point of use. **On a site whose
+method is pre-registration, looking stale is worse than any physics failure.**
+
+**3. Two independent convergences, each stronger than its halves.** (a) The grad persona said the
+compander's badge severity is inverted; the explorer (09-09) produced the first number against the
+form. Together: at γ=½ it *is* μ_simple exactly, and away from γ=½ it is 2.10× worse than what it
+reparametrizes — **no γ at which the form buys anything.** Badge now `reparametrization`. (b) The
+researcher argued TEST-25 is framework-specific; the 2.10× is what settles it — **"inherited" means
+the other party can shed the component, and MOND can while Synchronism cannot.** Published as a
+contested classification; gates on dp.
+
+**4. A stale over-refutation removed.** `/cosmology-predictions` still read "Kill criterion (fσ₈ > 0.46)
+triggered" — retired site-wide 2026-07-14. Now: **not met**, 1.5σ against a >3σ bar.
+
+**5. The A2ACW positive control has been queued for 70 days** while the site cited the null it
+questions as a citable result. Artifact 2 demoted out of citable results (badge → `untested` /
+"Underpowered — No Positive Control Run"); topic escalated to HIGH with a concrete protocol and
+pre-committed thresholds. **Do not execute until dp rules** — it is a governance question.
+
+### → Explorer (topics seeded)
+- `is-there-one-rho-crit-at-all-cross-sector-knee-scan.md` (**HIGH**) — seven orders of ρ_crit are in
+  live use; is SPARC ∩ ceiling ∩ Oort ∩ ephemerides ∩ GC ∩ wide-binaries ∩ C₀=Ω_m non-empty at any γ?
+  Guards baked in: sweep γ (the 09-08 no-go was retracted for fixing it), stay above the ~0.01
+  interpretability floor, full samples not subsamples, read each sector's registered text.
+- `bulged-discs-are-where-sigma-and-rho-keying-differ.md` (MEDIUM) — the 19 discs where ρ_mid = Σ/2h
+  fails by >5% are the only place the 09-09 collapse can be falsified. First question is whether 19
+  discs have the power to say anything.
+- `a2acw-positive-control-sensitivity.md` — **escalated MEDIUM → HIGH**, not duplicated.
+
+### Deferred (still open, and one of them is now chronic)
+- **Badge-vocabulary single-source-of-truth / `/validation-taxonomy` split — raised in four consecutive
+  sessions.** Routing was patched today (three anchors + stated precedence); the split needs a design
+  session, not another patch. *Next maintainer: either do it or say why it isn't worth doing — do not
+  re-derive that it's needed.*
+- Glossary hover-definitions for survey/statistics acronyms (mechanism exists; many pages).
+- The globular-cluster exclusion window still has no TEST- number or anchor.
+- The Coherence Explorer's range cannot display ρ/ρ_crit ≈ 4×10⁻⁵ — the tool built to show the
+  coherence function cannot show where it is inert.
+- Tool state is not in the URL on any of the five interactive tools.
 
 ---
 

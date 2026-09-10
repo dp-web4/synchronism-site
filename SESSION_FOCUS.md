@@ -1,7 +1,7 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-10 (maintainer)*
+*Last updated: 2026-09-10 (explorer)*
 
 ---
 
@@ -65,6 +65,74 @@ pre-committed thresholds. **Do not execute until dp rules** — it is a governan
 - The Coherence Explorer's range cannot display ρ/ρ_crit ≈ 4×10⁻⁵ — the tool built to show the
   coherence function cannot show where it is inert.
 - Tool state is not in the URL on any of the five interactive tools.
+
+---
+
+## 🟢 NEW (explorer 2026-09-10) — **TEST-02 is not "80× below Gaia reach" — under the keying the
+galaxy runs use its prediction is identically 1, and today's amplitude table is the unfloored form
+`equations.ts` has warned against since 09-08. The 09-10 conclusion survives; the magnitude does not.**
+
+Finding: `explorer/findings/test02-is-not-below-reach-it-is-identically-null.md`.
+Script: `explorer/findings/scripts/test02_form_audit_and_separation_blindness.py` (+ `_output.txt`), §A–I.
+**Count stays 6. This adds no refutation** — it corrects a magnitude, a provenance and a reason.
+
+**1. The form.** `maintainer/scripts/test02_amplitude_is_knee_conditional.py` uses the **unfloored**
+`C = tanh(γ ln(1+ρ/ρ_c))`. Floored, `C ≥ Ω_m` ⇒ `B ≤ 3.17` ⇒ the local velocity excess is **≤ 78.2 %
+at every knee and every γ**. The `+1.8×10⁴ %` row is **+78.2 %**; "a factor ~3.5×10⁴ boost" is **3.17×**.
+The *conclusion* holds — the band-required window moves by ≤ 1.5× and is still disjoint from the galaxy
+sector's knees. The 09-06 explorer finding already published this floored row (`+78 %`) for the same
+knee; **its P1 never landed**, and on 09-10 a less correct number went into the same field. That is a
+concrete instance for the queued `epistemic-regression-architecture-fix` topic — four days, one field.
+
+**2. The registered knee is missing from the table, and the band is it read at the wrong γ.** TEST-02 is
+registered against S691's `ρ_crit = 10⁻²³ kg/m³ = 1.477×10⁻⁴ M☉/pc³` **at γ = 2**, where the excess is
+**9.5×10⁻¹⁰ %** — nine orders below the published band, in both forms. At **γ = 0.489** the same knee
+gives **0.202 %**, inside the band. Seventh instance of the read-the-registration error, and the first
+sitting underneath a Tier-1 published number rather than in a working note.
+
+**3. The statistic cancels the boost — exactly.** Chae's `γ_g` / Banik's `α_grav` are ratios between a
+wide (signal) and a close (mass-calibration) bin from the same volume. `C(ρ_ambient)` has no separation
+in it, so `γ_g,pred = C(ρ_close)/C(ρ_wide) = 1`. **Not 1.0005. 1.** At every knee, every γ, floored or
+bare. So "~80× below DR3 systematics" describes a quantitative gap that is actually infinite, and the
+card's **"Gaia DR4 will re-open this test" milestone cannot fire** — the mirror image of the stale
+"DESI DR2/DR3 have shipped" premise removed this morning, and the same cost to a pre-registration site.
+
+**4. Where wide binaries *do* bite.** Under enclosed/MRH keying `ρ̄(<s) ∝ s⁻³`, so it does not cancel:
+Banik+2024 bounds `ρ_crit ≤ 67.8 M☉/pc³` at γ = 0.489 (`≤ 1573` at γ = 2), and at the published knee the
+predicted `γ_g` **rises** to 2.6–41 by 30 kAU where both sides of the dispute measure a saturated 1.0–1.5.
+But at that keying's *own* galaxy knee (`ρ̄(<10 kpc) = 0.0291`) the sector is silent again. The single
+excluded object is the **pairing** of the published `0.029·V_flat²` calibration with a system-scale MRH.
+
+**5. Two of the seeded topic's sectors, closed cheaply.** **Ephemerides is EMPTY** for the density branch:
+ambient keying gives `Δρ/ρ = 1.6×10⁻⁶` across 100 AU, so C is constant and `g_eff = (1/C)GM/r²` is a pure
+rescaling of the mass ephemerides *fit* — no precession, no Cassini residual; enclosed keying gives
+`1 − C < 10⁻¹³`. TEST-25's Cassini squeeze is acceleration-keyed and does not transfer. **Oort constrains
+γ, not the floor**: across the whole floor axis at fixed γ the window moves **< 2×**, across γ ∈ [0.3, 3]
+it moves **three orders**. So the joint scan's real axis is **(f, ρ_crit)**, not ρ_crit alone.
+
+**6. A lead, flagged as a lead.** `ρ̄(<10 kpc)` for the MW is **0.0291 M☉/pc³**; the published dimensionless
+coefficient is **A = 0.029**; the stated Jeans formula gives 4.566×10⁻⁵; and `ρ̄/[4π/(GR₀²)]` = **637.7**
+against the archive's unexplained **635×** gap. One number, one free choice (R = 10.0 kpc). If it holds, a
+large part of the "seven orders of ρ_crit" is a density promoted to a coefficient. **Open Session 66.**
+
+### → Maintainer (P0/P1 in the finding)
+- **P0** Add the floored column to the 09-10 script and every number it fed; keep the conclusion, replace
+  the magnitude, tag the form on both.
+- **P0** Delete or re-scope the Gaia DR4 milestone on `/tier-1-existing` TEST-02 and `/wide-binaries`.
+- **P1** `/wide-binaries`' stated reason ("solar-neighborhood ρ sits *above* that ρ_crit") is false at the
+  published calibration, where ρ_local sits **18 000× below** it. Say which knee, at which γ.
+- **P1** Land the 09-06 P1 that never landed (`+78 %` floored row, quadrature-branch attribution).
+
+### New tool
+`explorer/tools/findings_lint.py` **R5 CEILING BREACH** — excess > 78.2 % or boost > 3.17× in a
+density-law context with no `unfloored`/`bare` tag. First rule anchored to a *physical* bound rather than
+a formatting habit. Measured at introduction: 3 hits in 3 files of 322 (down from 28/19 before guards).
+
+### Self-seeded, and the most transferable thing here
+**Which other test cards measure a ratio the law is blind to?** TEST-02's statistic is differential in
+separation and `C(ρ)` contains no separation, so the prediction cancels identically. That is a failure
+*class*, not an incident. A catalog sweep for "statistic differential in a variable absent from the law"
+is cheap and would find the rest of it.
 
 ---
 

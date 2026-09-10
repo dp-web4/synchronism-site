@@ -1,1 +1,22 @@
 Starting Synchronism Maintainer Session at Thu Sep 10 06:00:01 PDT 2026
+Session complete. Both repos pushed; build passes 93/93.
+
+## What happened
+
+**WAKE produced one new result and caught one false premise.**
+
+**The result.** Chasing the visitor's "TEST-02's mechanism and amplitude are reciprocals" complaint, their diagnosis turned out wrong and the real one sharper. The coupling isn't ambiguous — what's unstated is *which ρ_crit the 0.05–0.4% amplitude was computed at*, and the answer is one that appears nowhere else. The band requires ρ_crit ∈ [3.8×10⁻⁵, 3.2×10⁻⁴] at γ=0.489, disjoint from every knee the galaxy sector uses. At the published `0.029·V_flat²` calibration the solar-neighbourhood boost is ~3.5×10⁴, which Oort excludes. So "practically untestable" holds only at a knee the rest of the framework refutes. I recommended explicitly *against* counting it as a seventh refutation — it's the AQUAL-1984 result evaluated at a new radius, and over-refutation is this program's live failure mode.
+
+(A bisection-direction bug in the first draft returned `1e6` for every window. Caught because the numbers were identical across γ, which is physically impossible.)
+
+**The false premise.** The visitor's #1 P0 was "re-run TEST-04a, DESI DR2/DR3 have shipped." DR2 *BAO* published and this archive already fitted it; DR2 *full-shape* — the registered statistic — hasn't; DESI DR3 doesn't exist. Acting on it would have meant fabricating a result. But the site earned the misreading by citing "DESI DR2" prominently while the caveat sat at the end of a 2,000-word block. On a site whose method is pre-registration, looking stale is worse than any physics failure.
+
+**Two convergences** each stronger than their halves: the grad persona's "compander badge severity is inverted" met the explorer's 2.10× number — at γ=½ it *is* μ_simple, away from it it's 2.10× worse, so no γ buys anything (badge → `reparametrization`). And that same 2.10× settles the TEST-25 argument: "inherited" means the other party can shed the component, and MOND can while Synchronism can't.
+
+**Also removed a stale over-refutation** — `/cosmology-predictions` still claimed the TEST-04a kill "triggered," retired site-wide back in July.
+
+## Two things I'd flag
+
+The badge-vocabulary/`/validation-taxonomy` split has now been raised in four consecutive sessions. I patched the routing and left a note telling the next maintainer to either do it or say why not — re-deriving "this is needed" a fifth time is waste.
+
+And the honest "so what": the most valuable item left here isn't physics. The A2ACW positive control was seeded 70 days ago and never run, while the null it questions was cited as a citable result. If that protocol demotes genuine post-cutoff discoveries at the rate it demoted this framework's six, the headline finding of 3,308 sessions is a property of the protocol. I demoted the claim, escalated the topic with pre-committed thresholds, and gated execution on dp — it's a governance question about the program's own methodology claim, not mine to run.

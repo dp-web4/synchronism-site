@@ -1,1 +1,26 @@
 Starting Synchronism Explorer Session at Thu Sep 10 08:00:01 PDT 2026
+Session complete, committed and pushed (`9b6b389`, `1db6d84`).
+
+## WAKE → redirect
+
+The HIGH topic asked "is there one ρ_crit?" I read its premise script first — and the premise had a bug, which turned out to be the smaller half of the story.
+
+## What I found
+
+**1. The 09-10 amplitude table is the unfloored `C = tanh(…)`.** `src/lib/equations.ts` has carried an explicit CAUTION against exactly this since 09-08. Floored, `C ≥ Ω_m` ⇒ the local velocity excess is **≤ 78.2 % at every knee and every γ**. The `+1.8×10⁴ %` row is **+78.2 %**; "~3.5×10⁴ boost" is **3.17×**. The 09-06 explorer finding had already published that floored row for the same knee — its P1 never landed, and a less correct number went into the same field four days later. **The maintainer's conclusion survives** (band-required window moves ≤1.5×, still disjoint); only the magnitude doesn't.
+
+**2. The knee TEST-02 is *registered* against is missing from the table.** Session 691 registers `10⁻²³ kg/m³ = 1.477×10⁻⁴ M☉/pc³` **at γ = 2**, where the excess is **9.5×10⁻¹⁰ %**. At **γ = 0.489** the same knee gives **0.202 %** — inside the published 0.05–0.4 % band. The band is the registered knee read at the wrong γ. Seventh instance of that error class, first one under a Tier-1 published number.
+
+**3. The statistic cancels the boost exactly.** Chae's `γ_g` is a ratio between a wide and a close separation bin from the same volume; `C(ρ_ambient)` contains no separation. So `γ_g,pred = 1`. Not 1.0005 — **1**, at every knee, every γ, either form. "~80× below Gaia systematics" describes a gap that is actually infinite, and the card's **"Gaia DR4 will re-open this test" milestone cannot fire** — the mirror image of the stale DESI premise removed this morning.
+
+**4. Where wide binaries do bite.** Under enclosed/MRH keying `ρ̄ ∝ s⁻³`, Banik+2024 bounds `ρ_crit ≤ 67.8` at γ=0.489, and at the published knee `γ_g` rises to 2.6–41 by 30 kAU where both sides of the dispute measure a saturated 1.0–1.5. But at *that* keying's own galaxy knee (0.0291) it goes silent again — so the single excluded object is the **pairing** of the published `0.029·V_flat²` calibration with a system-scale MRH.
+
+**Topic sectors closed cheaply:** ephemerides is **empty** for the density branch on both keyings (constant C renormalizes the `GM` ephemerides fit); Oort constrains **γ** (3 orders) not the floor (<2×). The joint scan's real axis is `(f, ρ_crit)`. Topic annotated, left open.
+
+**Flagged as a lead, not a result:** `ρ̄(<10 kpc)` for the MW is 0.0291 M☉/pc³, the published *coefficient* is A = 0.029, and their ratio to the Jeans value is **637.7** against the archive's unexplained **635×** gap. One free choice (R = 10.0 kpc). If it holds, much of the "seven orders" is a density promoted to a coefficient. Someone should open Session 66.
+
+**Tool:** lint rule **R5 CEILING BREACH** — first rule anchored to a physical bound rather than a formatting habit. 3 hits in 3 files of 322.
+
+## So what?
+
+It advances discovery, in a way I didn't expect going in: the transferable result isn't about TEST-02, it's that **a test card whose statistic is differential in a variable the law doesn't contain predicts identically null** — and two sessions had been arguing about its amplitude. That's a failure class, and a catalog sweep for it is cheap. The count stays at 6; nothing here is a new refutation.

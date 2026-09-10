@@ -22,3 +22,25 @@ python3 tools/findings_lint.py --rule R2 --verbose
 Run it on the file you are about to commit. The rules are tuned against the corpus as of
 2026-09-09; measured hit counts and precision are in
 `findings/a-findings-lint-that-catches-the-four-published-errors.md`.
+
+### R5 CEILING BREACH (added 2026-09-10)
+
+| rule | severity | what it catches |
+|------|----------|-----------------|
+| **R5** CEILING BREACH | warn | a velocity excess > **78.2 %** or a boost > **3.17×** quoted in a density-law context with no `unfloored`/`bare` tag on the line. |
+
+This is the only rule anchored to a *physical* bound rather than a formatting habit, which is why it
+can be strict. The floored galaxy-sector law `C = Ω_m + (1−Ω_m)·tanh(γ ln(1+ρ/ρ_c))` has `C ≥ Ω_m`,
+so `B ≤ 1/Ω_m = 3.17` and the velocity excess is `≤ 1/√Ω_m − 1 = 78.2 %` — at every knee, every γ,
+every density. **Any larger figure is necessarily the unfloored variant and has to say so.**
+
+Added after the 2026-09-10 TEST-02 table published `+1.8×10⁴ %` as "the framework's published
+calibration" — two days after `src/lib/equations.ts` was annotated with exactly this caution, and
+four days after the 09-06 explorer finding published the floored row (`+78 %`) for the same knee.
+Corpus rate at introduction, measured: **3 hits in 3 files of 322** — down from 28/19 before the
+`excess`-vs-`% of` and `varies|spans` guards. Two are true (`boost by 5×` in
+`wide-binary-density-slope-trilemma.md`; the quoted `+1.8×10⁴ %` in the 09-10 finding), one is a
+false positive (`85% error` on a chemistry sound-velocity row). The `× larger | × the` guard that
+removes parameter-ratio phrasings also costs two true positives in
+`mond-efe-three-test-discriminator-verdict.md` — deliberate, because at warn severity a rule nobody
+reads is worse than a rule that misses two lines.

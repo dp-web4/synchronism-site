@@ -1,0 +1,292 @@
+UNIT CHECK
+  1 M_sun/pc^3 = 6.77e-20 kg/m^3
+  Session 691 registered knee 1e-23 kg/m^3 = 0.0001477 M_sun/pc^3
+  Session 691 rho_local 5.77e-21 kg/m^3   = 0.08523 M_sun/pc^3
+  S691 ratio rho_local/rho_c = 577.0   (S691 states 577)
+  Omega_b/Omega_m = 0.1565
+
+====================================================================================================
+A. LOCAL BOOST AT rho = 0.084 M_sun/pc^3 (solar midplane baryons) -- BOTH FORMS
+====================================================================================================
+rho_crit    gamma  | C bare     vel% bare    | C floored  vel% floored | knee
+1521        0.489  | 2.70e-5    1.91e+04     | 0.315      78.2         | PUBLISHED calibration 0.029*V_flat^2, MW V_flat=229 (/galaxy-plotter,/key-claims)
+1521        2.000  | 1.10e-4    9.41e+03     | 0.315      78.2         | PUBLISHED calibration 0.029*V_flat^2, MW V_flat=229 (/galaxy-plotter,/key-claims)
+64.06       0.489  | 6.41e-4    3.85e+03     | 0.315      78.1         | same calibration, DDO 154 V_flat=47
+64.06       2.000  | 2.62e-3    1.85e+03     | 0.317      77.7         | same calibration, DDO 154 V_flat=47
+2.412       0.489  | 0.0167     673          | 0.326      75           | STATED A=4.6e-5 calibration, MW (09-06 finding row 2)
+2.412       2.000  | 0.0684     282          | 0.362      66.2         | STATED A=4.6e-5 calibration, MW (09-06 finding row 2)
+0.161       0.489  | 0.202      122          | 0.454      48.5         | measured velocity-blind knee 2026-08-27 (GC fork)
+0.161       2.000  | 0.686      20.8         | 0.785      12.9         | measured velocity-blind knee 2026-08-27 (GC fork)
+0.0083      0.489  | 0.827      9.98         | 0.881      6.52         | Refracted Gravity E0 knee (explorer 2026-09-09)
+0.0083      2.000  | 1          6.54e-3      | 1          4.48e-3      | Refracted Gravity E0 knee (explorer 2026-09-09)
+0.0001477   0.489  | 0.996      0.202        | 0.997      0.138        | *** REGISTERED for TEST-02: Session 691 1e-23 kg/m^3, gamma=2 ***
+0.0001477   2.000  | 1          9.50e-10     | 1          6.51e-10     | *** REGISTERED for TEST-02: Session 691 1e-23 kg/m^3, gamma=2 ***
+0.00032     0.489  | 0.991      0.43         | 0.994      0.294        | low end of the refuted rho_c grid (PREDICTIONS.md 2026-09-09)
+0.00032     2.000  | 1          2.07e-8      | 1          1.42e-8      | low end of the refuted rho_c grid (PREDICTIONS.md 2026-09-09)
+
+  BOUND: under the floored form C >= Omega_m = 0.315, so the velocity excess at ANY
+  knee, any gamma, any density is at most 78.2% (B_max = 1/Omega_m = 3.17).
+  The 09-10 table's headline +1.8e4%% is therefore a property of the UNFLOORED form,
+  not of the published calibration. Floored, the same row is 78.2%.
+
+====================================================================================================
+B. WHICH (form, gamma) CAN PRODUCE THE PUBLISHED 0.05-0.4%% VELOCITY BAND?
+====================================================================================================
+  bare (unfloored)   gamma=0.489   rho_crit in [3.541e-05, 0.0002972] M_sun/pc^3
+  bare (unfloored)   gamma=2.000   rho_crit in [0.01477, 0.0282] M_sun/pc^3
+  floored f=Omega_m  gamma=0.489   rho_crit in [5.215e-05, 0.0004391] M_sun/pc^3
+  floored f=Omega_m  gamma=2.000   rho_crit in [0.01652, 0.03209] M_sun/pc^3
+
+  REGISTERED KNEE CHECK (S691: rho_c = 0.0001477 M_sun/pc^3, gamma = 2):
+    bare     C = 1.0000000000  ->  velocity excess 9.50e-10 %
+    floored  C = 1.0000000000  ->  velocity excess 6.51e-10 %
+    S691's own rho_local (0.08523, DM included): bare C = 1.0000000000 -> 8.96e-10 %
+  => the knee TEST-02 is registered against predicts a null ~1e-9 %, not 0.05-0.4%.
+     The published band is not produced by the registered knee in EITHER form.
+
+====================================================================================================
+C. THE GAIA WIDE-BINARY STATISTIC IS DIFFERENTIAL IN SEPARATION; C(rho) IS NOT.
+====================================================================================================
+  Chae's gamma_g (and Banik's alpha_grav) are defined as g_obs/g_N in the LOW-internal-
+  acceleration (wide) bin, with the HIGH-acceleration (close) bin used to calibrate the
+  mass-luminosity relation and the eccentricity/projection model.  The statistic is a RATIO
+  between two separation bins drawn from the same volume.
+
+  Under g_eff = g_N / C(rho_ambient) the boost is identical in both bins, so it cancels:
+
+        gamma_g,pred = C(rho_close) / C(rho_wide)  ->  1  exactly, when rho_close = rho_wide.
+
+  This holds at EVERY rho_crit, EVERY gamma, floored or bare.  The zeroth-order prediction
+  of the density-keyed law for the measured statistic is not 0.05-0.4%; it is 0.
+  The only first-order signal is a density CONTRAST between the two subsamples.
+
+  Density contrast rho_close/rho_wide required to reproduce the published band
+  (rho_close held at 0.084 M_sun/pc^3):
+  rho_crit    gamma  form      | for 0.05%      for 0.40%     
+  1521        0.489  bare      | 1              1.01          
+  1521        0.489  floored   | inf            inf           
+  1521        2.000  bare      | 1              1.01          
+  1521        2.000  floored   | inf            inf           
+  64.06       0.489  bare      | 1              1.01          
+  64.06       0.489  floored   | 3.55           inf           
+  64.06       2.000  bare      | 1              1.01          
+  64.06       2.000  floored   | 1.21           inf           
+  2.412       0.489  bare      | 1              1.01          
+  2.412       0.489  floored   | 1.03           1.3           
+  2.412       2.000  bare      | 1              1.01          
+  2.412       2.000  floored   | 1.01           1.07          
+  0.161       0.489  bare      | 1              1.01          
+  0.161       0.489  floored   | 1              1.03          
+  0.161       2.000  bare      | 1              1.02          
+  0.161       2.000  floored   | 1              1.03          
+  0.0083      0.489  bare      | 1.01           1.05          
+  0.0083      0.489  floored   | 1.01           1.07          
+  0.0083      2.000  bare      | 1.84           3.42          
+  0.0083      2.000  floored   | 2.04           3.88          
+  0.0001477   0.489  bare      | 1.25           3.06          
+  0.0001477   0.489  floored   | 1.37           4.04          
+  0.0001477   2.000  bare      | 100            191           
+  0.0001477   2.000  floored   | 112            217           
+  0.00032     0.489  bare      | 1.12           1.97          
+  0.00032     0.489  floored   | 1.18           2.42          
+  0.00032     2.000  bare      | 46.2           88.1          
+  0.00032     2.000  floored   | 51.6           100           
+
+  READ: a contrast of ~1.2-2 is the most the within-250-pc sample can plausibly supply
+  (the thin-disc vertical scale height is ~300 pc, and wide pairs are preferentially
+  disrupted in dense regions, so surviving wide pairs sample slightly LOWER rho).  Any row
+  above needing a contrast >> 2 cannot produce the published band by this mechanism at all;
+  any row needing 'inf' cannot produce it at any contrast, because C is already saturated.
+
+====================================================================================================
+D. DO SOLAR-SYSTEM EPHEMERIDES CONSTRAIN THE DENSITY-KEYED LAW? (they are cited as if they do)
+====================================================================================================
+  AMBIENT KEYING: rho varies on the disc scale height h ~ 300 pc.
+    Over the whole solar system (100 AU = 0.000485 pc) the fractional change in rho is
+    Delta rho / rho ~ 1.62e-06.
+    C is therefore constant across the Solar System to ~1 part in 1e6, and
+    g_eff = (1/C) GM/r^2 is a pure rescaling of GM_sun -- degenerate with the mass
+    that ephemerides FIT.  No anomalous perihelion precession, no Cassini range residual.
+    Ephemerides place NO constraint on rho_crit under ambient keying.
+
+  MRH KEYING at r =    1.0 AU: rho_MRH = M_sun/(4/3 pi r^3) = 2.095e+15 M_sun/pc^3
+      rho_c=1521        1 - C_bare = 0.00e+00   1 - C_floored = 0.00e+00
+      rho_c=0.161       1 - C_bare = 0.00e+00   1 - C_floored = 0.00e+00
+      rho_c=0.0001477   1 - C_bare = 0.00e+00   1 - C_floored = 0.00e+00
+  MRH KEYING at r =   10.0 AU: rho_MRH = M_sun/(4/3 pi r^3) = 2.095e+12 M_sun/pc^3
+      rho_c=1521        1 - C_bare = 0.00e+00   1 - C_floored = 0.00e+00
+      rho_c=0.161       1 - C_bare = 0.00e+00   1 - C_floored = 0.00e+00
+      rho_c=0.0001477   1 - C_bare = 0.00e+00   1 - C_floored = 0.00e+00
+  MRH KEYING at r =  100.0 AU: rho_MRH = M_sun/(4/3 pi r^3) = 2.095e+09 M_sun/pc^3
+      rho_c=1521        1 - C_bare = 0.00e+00   1 - C_floored = 0.00e+00
+      rho_c=0.161       1 - C_bare = 0.00e+00   1 - C_floored = 0.00e+00
+      rho_c=0.0001477   1 - C_bare = 0.00e+00   1 - C_floored = 0.00e+00
+    Under MRH keying rho is 10-20 orders above every knee: C = 1 to <1e-13. Also no constraint.
+  => On BOTH keyings the ephemerides sector is EMPTY for the density-keyed law.
+     TEST-25's +17.95-sigma Cassini result is an ACCELERATION-keyed (QUMOND IF) result
+     and does not transfer to the density branch.
+
+====================================================================================================
+E. WHAT EACH SECTOR CONSTRAINS: the floor, not the knee
+====================================================================================================
+  Oort / local dark fraction (McKee+2015 f_DM = 0.134 +/- 0.036, 2-sigma):
+    C(rho_local) must lie in [0.794, 0.938].
+    Bare form:    reachable (C spans 0..1).
+    Floored form: reachable (C spans 0.315..1).
+    Floor f alone is NOT excluded by Oort: at the saturated end C -> f = 0.315, which is
+    below 0.794, so f = Omega_m is excluded only if rho_crit >> rho_local. It is a JOINT
+    constraint on (f, rho_crit), never on rho_crit alone.
+
+  Oort-admitted rho_crit window vs floor and gamma [M_sun/pc^3]:
+  gamma    | f = 0 (bare)               f = Omega_b/Omega_m = 0.157 f = Omega_m = 0.315       
+  0.300    | 0.0002717 - 0.002342       0.0003648 - 0.003258       0.0005248 - 0.004963      
+  0.489    | 0.002563 - 0.01032         0.003087 - 0.01289         0.00389 - 0.01723         
+  0.700    | 0.007858 - 0.02275         0.009024 - 0.02717         0.01073 - 0.03435         
+  1.000    | 0.0183 - 0.04305           0.02039 - 0.04996          0.02338 - 0.061           
+  2.000    | 0.06156 - 0.117            0.06653 - 0.1318           0.07348 - 0.155           
+  3.000    | 0.1084 - 0.1934            0.1161 - 0.2158            0.1268 - 0.2511           
+
+  The window MOVES BY LESS THAN A FACTOR OF 2 across the whole floor axis at fixed gamma,
+  and by three orders across the gamma axis at fixed floor.  So the local sector's knee
+  window is a statement about gamma, not about the floor -- and the boost CEILING (1/f) is
+  a statement about the floor, not about the knee.  They are close to orthogonal.
+
+====================================================================================================
+SUMMARY LINES (for the finding; grep these against the table above)
+====================================================================================================
+  1. floored ceiling on local velocity excess, ANY knee/gamma: 78.2%
+  2. published calibration, gamma=0.489: bare 1.91e+04%  vs  floored 78.2%
+  3. registered TEST-02 knee at its registered gamma=2: 9.50e-10% (bare), 6.51e-10% (floored)
+  4. registered TEST-02 knee at the SPARC gamma=0.489: 0.202% (bare) -- inside the published band
+  5. band-required knee window, floored, gamma=0.489: [5.215e-05, 0.0004391]
+  6. band-required knee window, bare,    gamma=0.489: [3.541e-05, 0.0002972]
+
+====================================================================================================
+F. THE MRH SCALE, NOT THE KNEE, SETS THE WIDE-BINARY AMPLITUDE
+====================================================================================================
+  Which rho enters C for a wide binary is not fixed by any registered text.  Two keyings
+  are both in live use in this program:
+
+    (i)  AMBIENT / kpc-smoothed rho  -- what every SPARC run in the archive uses for a disc
+         star (rho_mid = Sigma/2h).  For a binary this is rho_local = 0.084, the SAME value
+         for the close calibration bin and the wide signal bin.
+    (ii) rho-bar(<r) = M/(4/3 pi r^3) -- the system's own mass over its own size.  This is
+         the 'MRH bubble' reading, and it is ALSO one of the five arguments run head-to-head
+         on SPARC on 2026-09-09, where it placed SECOND at the Omega_m floor (chi2/N 58.97
+         vs g_N's 55.42).  It is not a straw man.
+
+  Under (i) the boost is common-mode and cancels out of the measured statistic: prediction 0.
+  Under (ii) rho depends on SEPARATION, so it does NOT cancel, and the prediction is large.
+
+  rho-bar(<r) for a 1.0 M_sun pair:
+    close calib bin  s = 500      AU  rho = 1.676e+07 M_sun/pc^3
+    Chae wide bin    s = 10000    AU  rho = 2095 M_sun/pc^3
+    widest bin       s = 30000    AU  rho = 77.59 M_sun/pc^3
+    (note: the PUBLISHED knee 0.029*V_flat^2 = 1521 sits INSIDE this range --
+     the wide-binary separations straddle the framework's own calibrated knee.)
+
+  Predicted Gaia statistic under keying (ii):  gamma_g = C(rho_close)/C(rho_wide),
+  velocity deviation = sqrt(gamma_g) - 1.   Measured: Banik+2024 alpha_grav = -0.021
+  (+0.065/-0.045) i.e. gamma_g = 1.00 +0.07/-0.05; Chae 2024b gamma_g = 1.37 (+0.10/-0.09).
+
+  rho_crit    gamma  form      | gamma_g 1e4AU dv 1e4AU %  | gamma_g 3e4AU dv 3e4AU %  | verdict vs Banik / Chae
+  1521        0.489  bare      | 2.5         58.12       | 41.09       541         | EXCLUDED by Banik (>19 sigma bar)
+  1521        0.489  floored   | 1.698       30.3        | 3.015       73.63       | EXCLUDED by Banik (>19 sigma bar)
+  1521        2.000  bare      | 1.065       3.18        | 10.08       217.5       | consistent w/ Banik
+  1521        2.000  floored   | 1.043       2.146       | 2.611       61.6        | consistent w/ Banik
+  64.06       0.489  bare      | 1.066       3.258       | 2.705       64.47       | consistent w/ Banik
+  64.06       0.489  floored   | 1.044       2.198       | 1.76        32.66       | consistent w/ Banik
+  64.06       2.000  bare      | 1           7.75e-05    | 1.087       4.274       | consistent w/ Banik
+  64.06       2.000  floored   | 1           5.309e-05   | 1.058       2.869       | consistent w/ Banik
+  2.412       0.489  bare      | 1.003       0.1335      | 1.067       3.311       | consistent w/ Banik
+  2.412       0.489  floored   | 1.002       0.09142     | 1.045       2.233       | consistent w/ Banik
+  2.412       2.000  bare      | 1           1.75e-10    | 1           8.265e-05   | consistent w/ Banik
+  2.412       2.000  floored   | 1           1.198e-10   | 1           5.661e-05   | consistent w/ Banik
+  0.161       0.489  bare      | 1           0.009464    | 1.005       0.2375      | consistent w/ Banik
+  0.161       0.489  floored   | 1           0.006483    | 1.003       0.1625      | consistent w/ Banik
+  0.161       2.000  bare      | 1           0           | 1           1.838e-09   | consistent w/ Banik
+  0.161       2.000  floored   | 1           0           | 1           1.259e-09   | consistent w/ Banik
+  0.0083      0.489  bare      | 1           0.0005208   | 1           0.01308     | consistent w/ Banik
+  0.0083      0.489  floored   | 1           0.0003567   | 1           0.008959    | consistent w/ Banik
+  0.0083      2.000  bare      | 1           0           | 1           0           | consistent w/ Banik
+  0.0083      2.000  floored   | 1           0           | 1           0           | consistent w/ Banik
+  0.0001477   0.489  bare      | 1           1.013e-05   | 1           0.0002544   | consistent w/ Banik
+  0.0001477   0.489  floored   | 1           6.938e-06   | 1           0.0001742   | consistent w/ Banik
+  0.0001477   2.000  bare      | 1           0           | 1           0           | consistent w/ Banik
+  0.0001477   2.000  floored   | 1           0           | 1           0           | consistent w/ Banik
+  0.00032     0.489  bare      | 1           2.157e-05   | 1           0.0005417   | consistent w/ Banik
+  0.00032     0.489  floored   | 1           1.478e-05   | 1           0.0003711   | consistent w/ Banik
+  0.00032     2.000  bare      | 1           0           | 1           0           | consistent w/ Banik
+  0.00032     2.000  floored   | 1           0           | 1           0           | consistent w/ Banik
+
+  Knee window admitted by Banik+2024 (gamma_g <= 1.07 at s = 1e4 AU), keying (ii):
+    gamma=0.489  bare      : Banik admits rho_crit <= 67.78 M_sun/pc^3
+    gamma=0.489  floored   : Banik admits rho_crit <= 103.1 M_sun/pc^3
+    gamma=2.000  bare      : Banik admits rho_crit <= 1573 M_sun/pc^3
+    gamma=2.000  floored   : Banik admits rho_crit <= 1882 M_sun/pc^3
+
+  READ, stated as narrowly as the rows support.  Under keying (ii) the wide-binary sector
+  is neither non-discriminating nor 'practically untestable': it is a measured upper bound
+  on rho_crit.  The published calibration 1521 is NOT excluded at every gamma in the 1e4 AU
+  bin -- at gamma = 2 it gives gamma_g = 1.065/1.043, inside Banik's error bar.  It is
+  excluded at gamma = 0.489 in that bin (2.50 / 1.70), and at BOTH gammas in the 3e4 AU bin
+  (10.1 / 2.61 bare, 3.02 / 2.61 floored) which is inside Banik+2024's 2-30 kAU range.
+  Under keying (i) the sector says nothing at all, at any knee.  The published 0.05-0.4%
+  band is the prediction of NEITHER keying.
+
+====================================================================================================
+G. THE SHAPE ARGUMENT: keying (ii) predicts a RISING gamma_g; the data SATURATE
+====================================================================================================
+  Both sides of the Chae-Banik dispute agree on one thing: the measured gamma_g does not
+  grow without bound with separation.  Chae has it saturating near 1.37-1.49 above ~5 kAU
+  (the MOND/EFE plateau); Banik has it flat at 1.00.  Under keying (ii), rho-bar ~ s^-3, so
+  once s passes the knee C falls and gamma_g RISES monotonically -- without bound in the
+  bare form, and to the ceiling 1/f = 3.17 in the floored form.  That is a shape
+  discriminator that does not depend on where the knee is, only on it being inside the
+  measured separation range at all.
+
+  gamma_g vs separation at the published knee rho_crit = 1521:
+  s [AU]     rho-bar      | g=.489 bare g=.489 fl  g=2 bare   g=2 fl    
+  500        1.676e+07    | 1          1          1          1         
+  2000       2.619e+05    | 1.013      1.009      1          1         
+  5000       1.676e+04    | 1.192      1.124      1          1         
+  10000      2095         | 2.5        1.698      1.065      1.043     
+  20000      261.9        | 12.9       2.716      3.253      1.903     
+  30000      77.59        | 41.1       3.015      10.08      2.611     
+  measured  (Chae 2024b) : 1.37 +0.10/-0.09, flat above ~5 kAU
+  measured  (Banik+2024) : 1.00 +0.07/-0.05 over the whole 2-30 kAU range
+
+====================================================================================================
+H. SENSITIVITY: the bound scales with the assumed pair mass (rho-bar is linear in M)
+====================================================================================================
+  M_tot    | Banik-admitted rho_c, g=.489 g=2.0                       
+  0.5      | <= 33.89 (bare)              <= 786.4 (bare)             
+  1.0      | <= 67.78 (bare)              <= 1573 (bare)              
+  2.0      | <= 135.6 (bare)              <= 3146 (bare)              
+  A factor 4 in assumed mass moves the bound by a factor 4. The published knee 1521
+  is above the gamma=0.489 bound for every mass in 0.5-2 M_sun.
+
+====================================================================================================
+I. WHERE THE WIDE-BINARY SECTOR ACTUALLY BITES -- and where it does not
+====================================================================================================
+  Self-consistency check: what knee does each KEYING need for the GALAXY sector?
+    keying (ii) rho-bar(<R) at MW R = 10000 pc, V = 229 km/s : 0.02911 M_sun/pc^3
+    keying (i)  rho_mid = Sigma/2h at the solar radius        : 0.084 M_sun/pc^3
+    published calibration 0.029*V_flat^2 (MW)                 : 1521 M_sun/pc^3
+    stated calibration    4.6e-5*V_flat^2 (MW)                : 2.412 M_sun/pc^3
+
+  Banik+2024 upper bound on rho_crit under keying (ii), s = 1e4 AU, M = 1 M_sun:
+    gamma = 0.489: rho_crit <= 67.78     gamma = 2.0: rho_crit <= 1573
+
+  So:
+    - keying (ii) + a knee near the galaxy value 0.02911  -> gamma_g = 1.000036  : SILENT
+    - keying (ii) + the PUBLISHED knee 1521               -> gamma_g = 2.500  : EXCLUDED (gamma=0.489)
+    - keying (i)  + ANY knee                              -> gamma_g = 1 exactly : SILENT
+
+  The wide-binary sector excludes exactly one thing: the pairing of the PUBLISHED
+  0.029*V_flat^2 calibration with a system-scale MRH.  It does not exclude the
+  density-keyed law, and it does not exclude rho-bar(<r) keying at its own knee.
+  Its real content is a NEGATIVE one about the test card: under the keying every
+  SPARC run in this archive uses, the Gaia statistic is identically 1 -- so the
+  card's '~80x below Gaia DR3 systematics' and its 'Gaia DR4 will re-open this'
+  milestone both describe a gap that no amount of data closes.

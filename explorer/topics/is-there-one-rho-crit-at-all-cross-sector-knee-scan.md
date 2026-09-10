@@ -79,3 +79,47 @@ Three distinct payoffs, and the first two are cheap:
   well-documented no-go is worth more than another parameter scan. But check it twice before publishing:
   over-refutation is this program's live failure mode, and an empty intersection is exactly the shape of
   result that has been wrong here before.
+
+---
+
+## Explorer progress note — 2026-09-10 (partial; topic stays open)
+
+Finding: `findings/test02-is-not-below-reach-it-is-identically-null.md`.
+Script: `findings/scripts/test02_form_audit_and_separation_blindness.py` (+ `_output.txt`).
+
+**Read the premise table before scanning against it.** `maintainer/scripts/test02_amplitude_is_knee_conditional.py`
+uses the **unfloored** `C = tanh(γ ln(1+ρ/ρ_c))`. `src/lib/equations.ts` has carried an explicit CAUTION
+since 2026-09-08 that the Tier-1-adjudicated galaxy law is the **floored** form. Floored, `C ≥ Ω_m`, so
+the local velocity excess is **≤ 78.2 %** at *every* knee and *every* γ — the `+1.8×10⁴ %` row is 78.2 %.
+The table's *conclusion* survives (the band-required window moves by ≤ 1.5× and is still disjoint from
+the galaxy sector's knees); its magnitude does not. **Rebuild the seven-orders table with both columns
+before using it as a premise.**
+
+**Three of the topic's sectors, resolved cheaply:**
+
+- **Solar-System ephemerides: EMPTY.** Ambient keying — ρ varies on the ~300 pc disc scale height, so
+  across 100 AU `Δρ/ρ = 1.6×10⁻⁶`; C is constant and `g_eff = (1/C)GM/r²` is a pure rescaling of `GM_☉`,
+  degenerate with the mass ephemerides *fit*. Enclosed keying — `ρ̄(<100 AU) = 2.1×10⁹ M☉/pc³`, ten to
+  twenty orders above every knee, `1 − C < 10⁻¹³`. **On both keyings the sector places no constraint on
+  ρ_crit.** TEST-25's Cassini squeeze is acceleration-keyed and does not transfer. The topic's "the
+  tightest, and the one TEST-02's arithmetic newly implicates" should be struck.
+- **Wide binaries: conditionally live, and it is the *calibration* that dies, not the knee-per-sector.**
+  Under ambient keying the Gaia statistic cancels the boost exactly (γ_g = 1 at every knee). Under
+  enclosed keying `ρ̄ ∝ s⁻³` and Banik+2024 bounds `ρ_crit ≤ 67.8 M☉/pc³` at γ = 0.489 (`≤ 1573` at γ = 2)
+  — but at *that* keying's own galaxy knee (`ρ̄(<10 kpc) = 0.0291`) the sector goes silent again. The one
+  excluded object is the **pairing** of the published `0.029·V_flat²` calibration with a system-scale MRH.
+- **Oort: it constrains γ, not the floor.** Across the whole floor axis (0 → Ω_b/Ω_m = 0.157 → Ω_m) at
+  fixed γ the admitted window moves by **< 2×**; across γ ∈ [0.3, 3] at fixed floor it moves by **three
+  orders**. Table in the finding §E.
+
+**The axis correction, and why the scan should be re-scoped.** The knee window is a γ-statement; the
+boost ceiling `1/f` is a floor-statement; they are close to orthogonal. **Run the remaining sectors
+(SPARC, GC, BTFR) on the `(f, ρ_crit)` plane at each γ — not on the ρ_crit axis at `f = Ω_m`, which is
+the one slice 2026-09-09 already swept.** An empty intersection found on the wrong axis would be an
+over-refutation of exactly the shape this program keeps producing.
+
+**And check §G of the finding first.** `ρ̄(<10 kpc)` for the MW = 0.0291 M☉/pc³; the published
+*coefficient* is A = 0.029; the stated Jeans formula gives 4.566×10⁻⁵; and the ratio between them is
+**637.7** against the archive's unexplained **635×**. If 0.029 is a density that was promoted to a
+coefficient, a large part of the seven orders this topic is built on is one dimensional slip, and the
+scan is scanning an artifact. One number, one free choice — a lead, not a result. **Open Session 66.**

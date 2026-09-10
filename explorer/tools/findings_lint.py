@@ -227,10 +227,74 @@ def rule_R4(path, lines):
     return hits
 
 
+# ------------------------------------------------------------------ R5 ceiling breach
+# The floored galaxy-sector law C = Omega_m + (1-Omega_m)tanh(...) has C >= Omega_m = 0.315,
+# so it CANNOT produce a boost above 1/Omega_m = 3.17 in g, or a velocity excess above
+# 1/sqrt(Omega_m) - 1 = 78.2%.  Any larger figure is necessarily the UNFLOORED variant, and
+# must say so.  Added 2026-09-10 after the 09-10 TEST-02 table published +1.8e4% as "the
+# framework's published calibration" two days after src/lib/equations.ts was annotated with
+# exactly this caution.  This is the only rule here anchored to a physical bound rather than
+# to a formatting habit, which is why it can be strict.
+B_CEIL, V_CEIL = 3.17, 78.2
+FORM_TAG = re.compile(r"unfloor|bare|floorless|no[- ]floor|without the floor|C\s*→\s*0|"
+                      r"diverg|vacuum|AQUAL|tanh-only|unregulated|"
+                      r"no form tag|untagged|more likely|odds", re.I)
+DENS_CTX = re.compile(r"C\(.?rho|C\(ρ|rho_crit|ρ_crit|knee|coheren|boost|Omega_m|Ω_m", re.I)
+# a percentage only counts if the line says it is an EXCESS, not a share of a sample
+EXCESS_CTX = re.compile(r"excess|deviation|enhanc|boost|anomal|discrepan|velocity|accel", re.I)
+SHARE_CTX = re.compile(r"%\s*(?:of|des)\b|per ?cent of", re.I)
+SPREAD_CTX = re.compile(r"vari|span|range|scatter|spread|across the sample|×\s*1[0-9]", re.I)
+PCT_NUM = re.compile(r"([0-9][0-9,.]*)\s*(?:×|x)?\s*10\s*(?:\^|\*\*)?\s*([+-]?\d+)?\s*%")
+PLAIN_PCT = re.compile(r"([0-9][0-9,.]*)\s*%")
+SUPER = str.maketrans("⁰¹²³⁴⁵⁶⁷⁸⁹⁻", "0123456789-")
+EXP_PCT = re.compile(r"([0-9][0-9,.]*)\s*(?:×|x)\s*10([⁰¹²³⁴⁵⁶⁷⁸⁹⁻]+)\s*%")
+BOOST_X = re.compile(r"(?:boost|factor|B_max|B\s*=)\D{0,24}?([0-9][0-9,.]*)\s*(?:×|x)"
+                     r"(?!\s*(?:larger|smaller|the |greater|above|below|more))", re.I)
+
+
+def _val(mant, exp):
+    try:
+        v = float(mant.replace(",", ""))
+    except ValueError:
+        return None
+    if exp:
+        try:
+            v *= 10.0 ** int(str(exp).translate(SUPER))
+        except ValueError:
+            return None
+    return v
+
+
+def rule_R5(path, lines):
+    """A velocity excess > 78.2% or a boost > 3.17x quoted in a density-law context with no
+    'unfloored/bare' tag on the line.  Under the floored law those values are unreachable, so
+    the figure is either the unfloored variant (say so) or wrong."""
+    hits = []
+    for i, raw, _m in lines:
+        if not DENS_CTX.search(raw) or FORM_TAG.search(raw):
+            continue
+        pct_ok = EXCESS_CTX.search(raw) and not SHARE_CTX.search(raw)
+        for m in (EXP_PCT.finditer(raw) if pct_ok else ()):
+            v = _val(m.group(1), m.group(2))
+            if v and v > V_CEIL:
+                hits.append((i, m.group(0).strip(), raw.strip()[:110]))
+        stripped = EXP_PCT.sub(" ", raw)
+        for m in (PLAIN_PCT.finditer(stripped) if pct_ok else ()):
+            v = _val(m.group(1), None)
+            if v and v > V_CEIL:
+                hits.append((i, m.group(0).strip(), raw.strip()[:110]))
+        for m in (BOOST_X.finditer(raw) if not SPREAD_CTX.search(raw) else ()):
+            v = _val(m.group(1), None)
+            if v and v > B_CEIL:
+                hits.append((i, m.group(0).strip(), raw.strip()[:110]))
+    return hits
+
+
 # ------------------------------------------------------------------ driver
 RULES = {"R1": ("PLACEHOLDER", rule_R1, "error"),
          "R2": ("UNTAGGED WINDOW", rule_R2, "error"),
          "R4": ("NO SAVED ARTIFACT", rule_R4, "warn"),
+         "R5": ("CEILING BREACH", rule_R5, "warn"),
          "R3": ("UNGROUNDED TABLE", rule_R3, "report")}
 
 

@@ -1,1 +1,50 @@
 Starting Synchronism Maintainer Session at Fri Sep 11 06:00:01 PDT 2026
+# Maintainer session 2026-09-11
+
+The session is finished and both repos are pushed: site `ddd6285` (Vercel deploys from it) and research `5d8f455b`. The build passes. No bucket moved: still 6 refutations and 0 confirmed. I didn't edit SPINE or PREDICTIONS.
+
+## WAKE: three findings for the research core
+Proposal: `Synchronism/Research/proposals/instruments_sentence_floor_identity_and_refutation_scopes_20260911.md`, seven items, all for dp to decide. I checked the numbers in `maintainer/scripts/floor_is_cosmic_C_and_w_sign.py` before using any of them.
+
+1. **The galaxy floor is the dark-energy sector's C at today's mean density.** The dark-energy calibration forces C = Ω_m at every γ, the same number as the floor. So the floor is a hand-set constant, not a derived one, which settles a disagreement between PREDICTIONS and the site.
+   - Read literally, the boost ceiling shrinks with redshift: about 1.09 at z = 2 for any γ from 0.3 to 2.
+   - That is the first specific number for SPINE's secular/time-domain direction (door #3). It has two open problems: the two sectors' density thresholds differ by 3.9×10⁶, and nothing defines what "ambient" density means for a galaxy.
+   - I did not register it as a prediction. Published high-redshift dark-matter fractions can check it cheaply first.
+2. **TEST-26 is now exact:** sign(1+w) = sign(1−2γ) at every redshift. Numerically there were 0 violations across 11 γ × 51 redshifts, and flooring gives no escape.
+3. **SPINE's sentence "not refuted on the merits"** had become "lack of instruments, not refutation" on the landing page, directly above six refutations. The site now says both: refuted where tested, ontology untested. Rewording SPINE is for dp.
+
+## Site fixes, by severity
+- **Removed stale over-claims:**
+  - A meta description claiming "80 orders of magnitude", which PREDICTIONS lists as refuted.
+  - /scale-invariance, which labelled that refuted claim "speculative".
+  - The fσ₈ "kill criterion triggered" line on /galaxy-rotation. It was retired in July, and yesterday's "fixed at every point of use" missed it.
+- **Fixed a math error:** the Coherence Explorer said low γ gives high coherence. It gives low coherence (0.23 at γ = 0.01).
+- **Stated what was missing:**
+  - A new "How C enters dynamics" box: the floor, both couplings, and which refutation used which.
+  - Credit to Refracted Gravity where its field equation appears.
+  - The globular-cluster verdict cutoffs were set at execution, and cluster masses weren't refit per law.
+- **Narrowed over-refutations:**
+  - Bell: the test covers three constructions. Toner–Bacon-type substrates (one hidden bit per trial) are untested, not refuted.
+  - A2ACW's score of 0 is a design degeneracy, not "exactly at chance".
+  - TEST-10 now leads with the result that holds under both normalizations.
+- Also: the glossary's two "Tier" meanings are separated, and I added entries for dark matter, kpc and OOM.
+
+**Two visitor charges were wrong but still exposed defects:**
+- The "3–17× worse than Refracted Gravity" figure did come from a full disc-geometry solve. Refracted Gravity at its own published parameters was also run and fails SPARC. The site had never said either.
+- "Run as registered" versus "never run" refers to two different registrations. Chasing it turned up a test-ID collision: TEST-08 means the environment run in PREDICTIONS and the Freeman-law card on the site.
+
+## New tool
+`maintainer/tools/site_lint.py` checks the site for 14 retired wordings. As a check, I ran it on the pre-session code: 13 hits, the same defects fixed above. The edited site has 0.
+
+## Explorer topics
+- High-redshift check of the evolving floor (HIGH).
+- Refit Refracted Gravity on SPARC and add the missing striction force.
+- External field effect as a test for this whole class of theories.
+- Whether the one-grid substrate can produce a Toner–Bacon bit on its own.
+
+## Decision
+The `/validation-taxonomy` page split, raised five sessions running, is not being done. Visitors kept hitting wording that drifted between pages, not trouble finding the legend. The fix is one source for each claim plus the lint.
+
+**Deferred:** Chemistry Explorer statistics, the TEST-01 badge slot, the roadmap banner wording, Beginner-path density, and relabelling two of the "citable" results on /for-researchers as known obstructions.
+
+Gmail, Calendar and Drive need authorizing in claude.ai connector settings, and the playwright server failed to connect (npx not found). This session didn't need any of them.

@@ -48,3 +48,20 @@ Restricted to galaxies with z ≥ 1.5 (cap ≤ 0.122), using each paper's own qu
 - Survives → the framework has a door-#3 number that does not reduce to MOND (constant a₀), but it is
   already dead at z = 0 (TEST-10: SPARC max f_DM 0.927 > 0.685) unless the environment variant rescues
   the dwarfs, which then becomes the test that matters.
+
+## Addendum (written after the high-z table was parsed, BEFORE any z = 0 environment computation)
+
+The ambient-environment variant, C_floor = C_DE(ρ̄_m,0 (1+δ)), is tested on SPARC at z = 0.
+- Sample: SPARC Q ≤ 2, i > 30 discs ∩ TEST-08's 141 environment galaxies (exactly the proxy adjudicated).
+- Required boost: B_req = max_R V_obs²/V_bar² at Υ_disk = 0.5, Υ_bul = 0.7 (the 09-09 convention).
+- Environment: TEST-08's 5th-nearest-neighbour CF4 number density ρ5 and N(<5 Mpc). δ is estimated
+  **relative to the SPARC-sample median at matched distance** (log ρ5 regressed on log D). Galaxy-
+  weighted medians sit above the cosmic volume mean for a biased tracer, so this δ is biased *low*
+  (void-ward): the choice is generous to the reading.
+- γ_DE = 0.487 primary; the DESI-allowed γ band as robustness.
+- **REFUTED** if fewer than 50% of discs satisfy B_req ≤ B_max(δ), OR Spearman ρ(B_req, ρ5 | D) ≥ 0
+  (the reading needs the most boost-hungry discs in the emptiest places, so it predicts ρ < 0).
+- **SURVIVES** if ≥ 90% satisfy AND Spearman ρ < 0 at p < 0.05. **INCONCLUSIVE** otherwise.
+- Declared in advance: the 50% criterion is close to structural (a galaxy-median reference puts half
+  the sample at δ ≥ 0, where B_max ≤ 3.17 and 77% of discs need more). The correlation test is the
+  part that could have come out otherwise.

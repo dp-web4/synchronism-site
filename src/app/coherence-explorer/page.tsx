@@ -90,7 +90,7 @@ export default function CoherenceExplorer() {
             <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> controls the transition sharpness.
             High &#x03B3; (&gt; 1.4, small N<sub>corr</sub>) = <em>single-particle / uncorrelated</em> regime (ideal gases, free atoms);
             &#x03B3; &#x2248; 1 = the boundary where chemistry and biology happen;
-            low &#x03B3; (&lt; 0.6, large N<sub>corr</sub>) = <em>collective / correlated</em> regime (BEC, superconductors, superfluids).
+            low &#x03B3; (&lt; 0.6, large N<sub>corr</sub>) = <em>many particles moving together</em> (BEC, superconductors, superfluids) &mdash; which does <strong>not</strong> mean C near 1: low &#x03B3; gives <em>low</em> C at any plottable density (see &ldquo;What to notice&rdquo; below).
             Note: these labels describe the <em>number of correlated degrees of freedom</em>, not the standard quantum/classical distinction — BEC and BCS superconductors appear in the &ldquo;collective&rdquo; basin, which is correct (they have large N<sub>corr</sub>).
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(239,68,68,0.06)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(239,68,68,0.4)' }}>
@@ -114,8 +114,11 @@ export default function CoherenceExplorer() {
             superconductors near &#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>
             (N<sub>corr</sub> = 10<sup>7</sup>) &mdash; both below the slider&apos;s floor (use the{' '}
             <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
-            to reach those regimes). At very low &#x03B3; the curve is nearly flat &mdash; high coherence
-            at almost all densities, which is the strongly collective regime.
+            to reach those regimes). At very low &#x03B3; the curve is nearly flat <em>near C&nbsp;=&nbsp;0</em> &mdash; a very
+            long, gentle ramp. At &#x03B3; = 0.01, C is still only 0.23 at 10<sup>10</sup>&times;&#x03C1;<sub>crit</sub>,
+            and reaching C = 0.5 takes ~10<sup>24</sup>&times;. <strong>Turning &#x03B3; down lowers C</strong> over any
+            density range you can plot, even though the &ldquo;many correlated particles&rdquo; label above sounds like
+            the opposite.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             <strong>Why &#x03B3; is decoupled from N<sub>corr</sub> here:</strong> This tool sets &#x03B3;
@@ -188,7 +191,7 @@ export default function CoherenceExplorer() {
             />
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
               {[
-                { g: 0.49, label: 'γ = 0.49 — SPARC free fit (= MOND)' },
+                { g: 0.49, label: 'γ = 0.49 — SPARC fit on acceleration (= MOND there; illustrative on this density axis)' },
                 { g: 2.0, label: 'γ = 2 — framework value (refuted)' },
               ].map(p => (
                 <button key={p.g} type="button" onClick={() => setGamma(p.g)}

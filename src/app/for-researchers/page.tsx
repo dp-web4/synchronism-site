@@ -65,7 +65,19 @@ export default function ForResearchers() {
           opposite ways: at Refracted Gravity&apos;s f&nbsp;=&nbsp;0.089 the ceiling problem <em>is</em> solved (the
           can&apos;t-be-lifted fraction falls to 10&ndash;23%) and &chi;&sup2;/N rises to 195&ndash;2700 &mdash;
           <strong> 3 to 17&times; worse</strong>, because the boost then arrives in the inner disc where SPARC says
-          nothing should happen. <em>Prior art worth knowing before anyone re-runs this:</em> Cesare et al. 2020
+          nothing should happen. <strong>How those numbers were computed</strong> (stated 2026-09-11, after a researcher
+          reader reasonably assumed the algebraic shortcut): by solving the full field equation
+          &nabla;&middot;[C&nabla;&Phi;] = 4&pi;G&rho; for each disc on an axisymmetric (R, z) grid, refraction term
+          &nabla;C&middot;&nabla;&Phi; included and the solver validated against exact Hankel-transform discs &mdash;{' '}
+          <em>not</em> by g = g<sub>bar</sub>/C. The &ldquo;3 to 17&times;&rdquo; is relative to the same law at the
+          &Omega;<sub>m</sub> floor; against MOND simple-&mu;&apos;s &chi;&sup2;/N = 21.2 it is 9&ndash;130&times;. Those runs put{' '}
+          <em>this framework&apos;s</em> switch (&gamma; = 0.489 or 2) at RG&apos;s floor, so they are not a test of Refracted
+          Gravity. RG at its <em>own</em> published parameters was run with the same solver on 2026-08-28, without refitting:
+          &chi;&sup2;/N = 188 and 240 for the two DiskMass parameter sets (between MOND&apos;s 21 and Newton&apos;s 465) and
+          716&ndash;1,252 for the Cesare et al. 2020 E0-floor sets, beating MOND in 10&ndash;17% of galaxies. Still open: a
+          SPARC <em>refit</em> of RG&apos;s three parameters (its steepness exponent is written with ln in some papers and log
+          in others, a 2.3&times; ambiguity), and the striction force a variational completion of the field equation adds,
+          which neither RG as published nor these runs include. <em>Prior art worth knowing before anyone re-runs this:</em> Cesare et al. 2020
           (A&amp;A 637, A70), Refracted Gravity&apos;s founding disc paper, reports verbatim that the models
           &ldquo;underestimate the observed accelerations of 0.1&ndash;0.3 dex at low Newtonian accelerations&rdquo;
           &mdash; same model class, same failure mode, not attributed to the floor there, and never run on SPARC.
@@ -89,7 +101,14 @@ export default function ForResearchers() {
             What this project adds is the <strong>quantified local-density instance</strong>: any
             gravity modification keyed on the <em>local volumetric density</em> &#x03C1;(r){' '}
             <strong>via algebraic coupling</strong> (C(&#x03C1;)&middot;g as a multiplicative scalar on
-            the force — the class this framework belongs to; gradient-based schemes such as symmetron
+            the force — the class the framework&apos;s <em>algebraic</em> reading belongs to. <strong>Scope correction
+            2026-09-11 (visitor researcher persona):</strong> this page previously said &ldquo;the class this framework
+            belongs to,&rdquo; but the framework&apos;s field-equation form &nabla;&middot;[C&nabla;&Phi;] = 4&pi;G&rho;
+            (Refracted Gravity&apos;s) carries a gradient coupling &nabla;C&middot;&nabla;&Phi; in discs and is outside this
+            statement as written. For that form the SPARC evidence is the disc-geometry grid in the box above (floored
+            switch at &gamma; &isin; {'{'}0.489, 2{'}'}, f &isin; {'{'}0.089, 0.315{'}'}, knee 3&times;10&#x207B;&#x2074;&ndash;0.16
+            M<sub>&#x2609;</sub>/pc&sup3;, every point worse than MOND) plus RG at its published, unrefitted parameters: an
+            executed grid, not a class theorem; gradient-based schemes such as symmetron
             screening and non-local state variables such as enclosed mass are <em>not</em> covered and
             are not claimed to fail here) fails in
             three independently executed ways — the SPARC RAR ensemble rejects the density-compander

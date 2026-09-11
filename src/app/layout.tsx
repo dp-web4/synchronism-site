@@ -12,10 +12,10 @@ const GLOSSARY_TERM_COUNT = getAllTerms().length;
 export const metadata: Metadata = {
   title: {
     template: '%s | Synchronism',
-    default: 'Synchronism | One Equation, Every Scale',
+    default: 'Synchronism | What If One Equation Described Every Scale?',
   },
   description:
-    "Explore Synchronism: a framework that maps density to coherence across 80 orders of magnitude, from quantum to cosmic. Interactive tools, honest assessments, testable predictions.",
+    "Synchronism: a proposed one-equation framework, tested in public — what it claimed, where it failed, and what the failures rule out for any theory of its shape. Interactive tools, an honest assessment, and a prediction ledger.",
 };
 
 export default function RootLayout({

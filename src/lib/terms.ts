@@ -142,7 +142,7 @@ export const terms: Record<string, TermDefinition> = {
   'tanh': {
     term: 'tanh',
     fullName: 'Hyperbolic Tangent',
-    brief: 'A mathematical function that smoothly maps any input to a value between \u22121 and +1 (or 0 and 1 when shifted).',
+    brief: 'A mathematical function that smoothly maps any input to a value between \u22121 and +1. Synchronism only ever feeds it non-negative inputs (\u03b3\u00b7ln(1 + \u03c1/\u03c1_crit) \u2265 0), so C stays between 0 and 1 with no shifting.',
     explanation: 'Think of it as a dimmer switch: small inputs pass through almost unchanged, large inputs get squashed toward the ceiling. In plain words, Synchronism picked tanh because its S-shape matches the data, not because any deeper theory demands it \u2014 any similar S-curve (logistic, erf, arctan, Hill) would fit equally well. (For physicists: in Ising mean-field theory tanh arises from the self-consistency loop m = tanh(\u03b2Jz\u00b7m); Synchronism has no such loop \u2014 the choice is phenomenological, i.e. "picked because it matches the data." See /parameter-derivations.)',
     learnMore: '/coherence-function',
   },
@@ -512,10 +512,40 @@ export const terms: Record<string, TermDefinition> = {
   },
   'tier': {
     term: 'Tier (test classification)',
-    fullName: 'Tier 1 / Tier 2 \u2014 Test Tiers',
-    brief: 'Tier 1: falsification tests runnable against existing public data (Gaia, SPARC, DESI). Tier 2: exploratory hypotheses lacking a derived amplitude or mechanism \u2014 not yet falsifiable as stated.',
-    explanation: 'The tier system classifies proposed tests by readiness, not importance. Tier 1 means existing data could in principle decide the test now: a stated prediction, a stated kill criterion, and a public dataset. Tier 2 means the idea is exploratory \u2014 no derived amplitude, no specified mechanism, or no meaningful kill criterion yet (e.g. TEST-07 cosmic interference, recommended for demotion to Tier 2 by the site\'s own audit). There is no Tier 3. The only Tier-1 listing is on the Tier 1: Existing Data page.',
-    learnMore: '/tier-1-existing',
+    fullName: 'Tier 1\u20134 \u2014 Cost Tiers (readiness is labelled separately)',
+    brief: 'Tiers 1\u20134 sort proposed tests by what they cost to run: Tier 1 = reanalysis of existing public data at no cost; Tier 2 = modestly funded pilots (roughly $5K\u2013$200K); Tier 3 = major experiments; Tier 4 = frontier. Whether a test is falsifiable yet is a separate question, labelled "exploratory," not by a tier number.',
+    explanation: 'Two unrelated classifications used to share the word "Tier," and until 2026-09-11 this entry described the wrong one: it called tiers a readiness scale with no Tier 3, while the Test Roadmap has four cost tiers (flagged by a visitor technical-writer persona). The site now keeps them apart. (1) Cost tier, Tier 1 to Tier 4 on the Test Roadmap, by money, time and facilities. (2) Readiness: whether a test has a derived amplitude, a mechanism and a kill criterion. A test missing them is exploratory whatever it would cost. TEST-07 (cosmic interference) is a $0, Tier 1 cost item that is exploratory, not falsifiable as stated; that is what its "demoted" label on the Tier 1 page means, and why it does not appear on the Tier 2 pilots page: its cost tier never changed.',
+    learnMore: '/test-catalog',
+  },
+  'dark-matter': {
+    term: 'Dark matter',
+    fullName: 'Dark matter',
+    brief: 'Unseen mass proposed to explain why the outer parts of galaxies orbit faster than their visible stars and gas can account for, along with several cosmological observations.',
+    explanation: 'Measure how fast stars and gas orbit at different distances from a galaxy\'s centre and compare with what the visible matter should produce under Newtonian gravity: in the outer parts the measured speeds are too high. The standard explanation (\u039bCDM) is a halo of non-luminous matter; the main alternative (MOND) changes the law of gravity at low accelerations instead. This site assumes neither. Synchronism\'s galaxy sector tried to reproduce the effect with its coherence function; where it fits it turns out to be MOND in different notation, and where it differs it fails. The Galaxy Curve Plotter shows the gap itself.',
+    learnMore: '/dark-matter',
+  },
+  'kpc': {
+    term: 'kpc',
+    fullName: 'kiloparsec',
+    brief: 'A distance unit for galaxies: 1 kpc = 1,000 parsecs \u2248 3,260 light-years. The Sun is about 8 kpc from the centre of the Milky Way.',
+    explanation: 'A parsec (pc) is about 3.26 light-years. Rotation curves are plotted against radius in kpc. Densities on this site are often given in M\u2609/pc\u00b3, solar masses per cubic parsec; the stars and gas around the Sun amount to roughly 0.1 M\u2609/pc\u00b3.',
+  },
+  'oom': {
+    term: 'OOM',
+    fullName: 'Order(s) of magnitude',
+    brief: 'A factor of ten. "3 OOM" means about 1,000\u00d7.',
+  },
+  'model-explainer': {
+    term: 'Model Explainer',
+    fullName: 'Model Explainer (tool grouping)',
+    brief: 'A label on the Interactive Tools page for tools that show the model\'s own machinery (its equation and parameters) rather than present evidence for it. A content grouping, not a validation badge: it says nothing about whether the model is right.',
+    learnMore: '/interactive-tools',
+  },
+  'artifact-lesson': {
+    term: 'Artifact Lesson',
+    fullName: 'Artifact Lesson (tool label)',
+    brief: 'Marks an interactive tool, not a prediction: the tool animates a relation the site\'s own audit found wrong, kept up deliberately so a reader can watch it fail rather than read that it failed. A content label, not a validation badge.',
+    learnMore: '/honest-assessment#validation-badge-definitions',
   },
 };
 

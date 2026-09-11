@@ -23,7 +23,8 @@ export const REFUTATIONS_ON_EXTERNAL_DATA = 5;
  * 2026-09-05 (2 / 3–4 / 6). The reconciliation, derivable from published numbers:
  *   - 2 framework-specific mechanism roots: the boost ceiling B ≤ 1/Ω_m (TEST-09 ≡ TEST-10,
  *     one inequality) and the γ = 2 pin (ΔBIC +184);
- *   - 1 registration-specific: the environment null (TEST-08) refuted S177's registered
+ *   - 1 registration-specific: the environment null (S177's registration; site card TEST-03s —
+ *     the research ledger calls it "TEST-08", which collides with the site's Freeman-law TEST-08) refuted S177's registered
  *     >20 % amplitude, which C(ρ)'s own lever (≤2×10⁻³ dex ⇒ r² ~ 10⁻⁴) never predicted —
  *     the measured r² = 1×10⁻⁴ is consistent with the equation;
  *   - 1 inherited from MOND's interpolating-function family: TEST-25 Cassini/SPARC;

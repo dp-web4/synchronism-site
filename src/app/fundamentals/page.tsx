@@ -25,9 +25,11 @@ export default function Fundamentals() {
             The four foundations below cash out one move: Synchronism is a{' '}
             <strong>single-observer, CFD-like model</strong> &mdash; observers are recurring patterns
             <em> inside</em> the substrate, not a privileged frame outside it. As physics, the prediction
-            ledger reads zero confirmed novel results &mdash; but the honest reason is{' '}
-            <strong>lack of instruments, not refutation</strong> (every test is borrowed data aimed elsewhere).
-            <em> Untested is not refuted; this is an invitation.</em>
+            ledger reads zero confirmed novel results, for two reasons that are both true: the discriminating
+            tests borrowed data could run <strong>were run and lost</strong>, and confirming anything new{' '}
+            <strong>needs instruments the program does not have</strong> (every test is borrowed data aimed elsewhere).
+            <em> The quantitative probes are refuted where testable; the ontology is untested, not refuted &mdash;
+            that part is the invitation.</em>
           </p>
           <p style={{ color: 'var(--color-text-secondary)', margin: 0, fontSize: '0.9rem' }}>
             On a separate axis, the same foundations are already load-bearing in running code &mdash;{' '}

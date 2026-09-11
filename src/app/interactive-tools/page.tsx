@@ -28,9 +28,9 @@ const coreTools = [
   {
     title: 'Galaxy Curve Plotter',
     href: '/galaxy-plotter',
-    desc: 'Pick a SPARC galaxy. See four curves: Newtonian prediction (dashed), observed rotation (dots), Synchronism consistency check (violet, fitted to V_flat), and MOND (green). Synchronism and MOND nearly overlap — this is what a reparametrization looks like.',
+    desc: 'Pick a SPARC galaxy and see the dark-matter problem: the gray Newtonian line (visible matter) sags below the observed dots. Violet = the framework\'s equation as published, which hugs the Newtonian line and never fills the gap (inert by construction). Green = MOND\'s simple interpolating function. Dotted amber = a hand-tuned illustration, not computed from the theory.',
     tags: ['Beginner'],
-    epistemic: 'reparametrization' as EpistemicStatus,
+    epistemic: 'core' as EpistemicStatus,
   },
   {
     title: 'γ Calculator',

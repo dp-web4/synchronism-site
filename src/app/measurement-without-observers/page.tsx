@@ -13,7 +13,7 @@ export default function MeasurementWithoutObservers() {
       <Breadcrumbs currentPath="/measurement-without-observers" />
       <PathNav currentPath="/measurement-without-observers" />
       <h1>Measurement Without Observers</h1>
-      <ValidationBadge status="untested" label="6 Protocols — Runnability Under Audit" />
+      <ValidationBadge status="speculative" label="Interpretive Overlay on Decoherence — No Differing Prediction; 6 Protocols Under Runnability Audit" />
       <p style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
         <strong style={{ color: '#f59e0b' }}>Badge caveat (2026-07-24, from expert review):</strong> this page&apos;s
         badge previously read &ldquo;6 Testable Protocols&rdquo; unqualified — but the framework-wide finding on{' '}

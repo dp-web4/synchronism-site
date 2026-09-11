@@ -88,6 +88,37 @@ export default function CoherenceFunction() {
           </span>
         </div>
 
+        <div id="how-c-enters-dynamics" style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#38bdf8' }}>How C enters dynamics &mdash; in one place (added 2026-09-11).</strong>{' '}
+          C(&#x03C1;) on its own predicts nothing; it has to be coupled to gravity. A visitor graduate-physics persona
+          found that no equation page said how, so two of the six refutations could not be reconstructed from them.
+          Four things differ from the headline equation above:
+          <ol style={{ margin: '0.5rem 0 0', paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+            <li><strong>The floor.</strong> Galaxy tests use a <em>floored</em> form,
+              C<sub>&#x03A9;</sub>(&#x03C1;) = f + (1&minus;f)&middot;tanh(&#x03B3; ln(1 + &#x03C1;/&#x03C1;<sub>crit</sub>)) with
+              f = &#x03A9;<sub>m</sub> = 0.315. The unfloored headline form goes to 0 as &#x03C1; &rarr; 0, which makes any
+              1/C boost unbounded; the floor is what creates the boost ceiling B &le; 1/f = 3.17. It is asserted, not derived.</li>
+            <li><strong>The coupling: two live forms.</strong> (a) Algebraic g<sub>obs</sub> = g<sub>bar</sub>/C, the reading
+              behind f<sub>DM</sub> = 1 &minus; C and the ledger. (b) The field equation
+              &nabla;&middot;[C(&#x03C1;)&nabla;&Phi;] = 4&pi;G&#x03C1;, which reduces to (a) <em>only in spherical symmetry</em>.
+              In a thin disc the &nabla;C&middot;&nabla;&Phi; term refracts field lines and the two differ by up to 5.9&times;
+              (bounded by the ceiling) once the knee sits inside the disc; at this framework&apos;s own knee, which never enters
+              a disc, they coincide. Form (b) is <strong>Refracted Gravity&apos;s field equation</strong> (Matsakos &amp; Diaferio
+              2016), with a permittivity identical to C<sub>&#x03A9;</sub> in closed form. The Galaxy Curve Plotter&apos;s
+              v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C)&sup2; is a display branch with the opposite orientation
+              (small C = no boost) and says so on its page.</li>
+            <li><strong>The argument: two live forms.</strong> The stated law keys C on local density &#x03C1;. Several fits key
+              the same compander on acceleration g/a&#x2080;, which is MOND&apos;s variable.</li>
+            <li><strong>Which result used which.</strong> TEST-09 (BTFR slope) and TEST-10 (dark-matter fraction): floored,
+              acceleration-keyed C(a) = &#x03A9;<sub>m</sub> + (1&minus;&#x03A9;<sub>m</sub>)x/(1+x) under (a). Both keyings carry
+              the same ceiling, which is why the refutation transfers to C(&#x03C1;). &Delta;BIC +184: acceleration-keyed, &#x03B3; = 2.
+              &Delta;BIC +2843: density-keyed, &#x03B3; free. The 2026-09-08/09 SPARC knee grid: density-keyed, floored, form (b)
+              solved in disc geometry. Globular clusters: density-keyed under (a) on spherical Jeans models, where (a) and (b)
+              agree. Not in any of them: the striction force that a <em>variational</em> version of (b) adds (see{' '}
+              <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>).</li>
+          </ol>
+        </div>
+
         <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#ef4444' }}>The substitution above has never itself been evaluated
           (2026-08-04):</strong>{' '}
@@ -157,7 +188,7 @@ export default function CoherenceFunction() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontFamily: 'serif', fontStyle: 'italic', fontSize: '1.3rem', color: 'var(--color-accent-violet)' }}>&#x03B3;, &#x03C1;<sub>crit</sub></div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <strong>Parameters:</strong> transition sharpness (Hill coefficient — corrected 2026-07-27 from &ldquo;coupling strength,&rdquo; the wrong kind of quantity), saturation knee (reference density — not a critical point; C(&#x03C1;<sub>crit</sub>,&#x03B3;=2)&#x2248;0.88)
+              <strong>Parameters:</strong> transition sharpness (half the Hill exponent: n = 2&#x03B3;, since tanh(&#x03B3; ln u) = (u<sup>2&#x03B3;</sup>&minus;1)/(u<sup>2&#x03B3;</sup>+1); labelled &ldquo;Hill coefficient&rdquo; until 2026-09-11 and &ldquo;coupling strength&rdquo; before 2026-07-27), saturation knee (reference density — not a critical point; C(&#x03C1;<sub>crit</sub>,&#x03B3;=2)&#x2248;0.88)
             </div>
           </div>
         </div>

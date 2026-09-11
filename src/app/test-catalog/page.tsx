@@ -212,7 +212,18 @@ export default function TestCatalog() {
           &mdash; DESI DR3 dark-energy class no-go.</strong>{' '}
           The framework&apos;s dark-energy sector cannot produce the w&nbsp;=&nbsp;&minus;1 crossing DESI DR2
           prefers, at model-class level (every covariant completion misses the quadrant &mdash; hardened
-          2026-08-11). Kill fires if DR3 robustly requires that crossing; the confirming branch is a tie with
+          2026-08-11). <strong>Exact for the substituted sector (2026-09-11):</strong> with
+          &rho;<sub>DE</sub> = &rho;<sub>m</sub>(1&minus;C)/C, C = tanh(&gamma; ln u), u = 1 + &rho;<sub>m</sub>/&rho;<sub>crit</sub>,
+          continuity gives 1 + w = F(u)/(u<sup>2&gamma;</sup> &minus; 1) with F(1) = 0 and
+          F&prime;(u) = &minus;2&gamma;(2&gamma;&minus;1)(u&minus;1)u<sup>2&gamma;&minus;2</sup>, so{' '}
+          <strong>sign(1 + w) = sign(1 &minus; 2&gamma;) at every redshift</strong>: no member crosses w = &minus;1, and
+          &gamma; = &frac12; is exactly &Lambda;. At the DESI-fit &gamma; = 0.487, w&#x2080; = &minus;0.992 and
+          w<sub>a</sub> = +0.015 &mdash; the family moves along (1+w&#x2080;) &prop; +w<sub>a</sub>, across rather than
+          along DESI&apos;s preferred direction, which is why its &Delta;&chi;&sup2; sits near zero. The &Omega;<sub>m</sub>{' '}
+          floor never binds on the past light cone (C &ge; &Omega;<sub>m</sub> for every z &ge; 0), so flooring opens no
+          escape. Derived by a visitor researcher persona; verified against the continuity equation numerically
+          (<code>maintainer/scripts/floor_is_cosmic_C_and_w_sign.py</code>, 0 sign violations over 11 &gamma; &times; 51 z).
+          Kill fires if DR3 robustly requires that crossing; the confirming branch is a tie with
           &Lambda;CDM, so this test cannot select the framework and is listed outside the 24-test discrimination
           count. Adoption gates on the operator. Full statement:{' '}
           <Link href="/top-5-tests" style={{ color: 'var(--color-accent-violet)' }}>Top Decisive Tests</Link>{' '}

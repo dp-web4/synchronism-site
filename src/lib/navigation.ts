@@ -146,7 +146,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Scale Invariance',
       href: '/scale-invariance',
-      desc: 'From Planck to cosmic: 80 orders of magnitude',
+      desc: 'The Planck-to-cosmic claim, and why one tanh-of-log switch saturates within ~2 decades',
       keywords: ['scale', 'invariance', 'Planck', 'cosmic', 'orders of magnitude', 'universal'],
       prerequisites: ['/gamma-parameter'],
       related: ['/scale-navigator', '/one-equation'],

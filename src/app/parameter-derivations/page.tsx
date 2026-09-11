@@ -530,7 +530,9 @@ export default function ParameterDerivations() {
               demand a boost above 1/Ω<sub>m</sub> = 3.17, is to lower the floor and raise the ceiling. Run on 153 SPARC discs at
               Refracted Gravity&apos;s E0 floor f = 0.089 (ceiling 11.2), the diagnosis is confirmed and the cure fails: the
               fraction of discs that cannot be lifted falls from ~80 % to 10&ndash;23 %, and χ²/N rises from 69&ndash;85 to
-              195&ndash;2700 &mdash; <strong>3 to 17× worse</strong>. The extra boost arrives in the inner disc, where SPARC wants
+              195&ndash;2700 &mdash; <strong>3 to 17× worse</strong> (computed by solving the field equation in disc
+              geometry, not by the algebraic g<sub>bar</sub>/C shortcut, and with this framework&apos;s switch at RG&apos;s floor
+              &mdash; Refracted Gravity at its own published parameters was run separately and is reported on For Researchers). The extra boost arrives in the inner disc, where SPARC wants
               none. So this row&apos;s number is refuted, but replacing it with a better number does not rescue anything: the
               failure is that a switch keyed to <em>local density</em> turns on inside the baryonic disc. The ceiling is a symptom;
               the argument of C is the disease. See{' '}

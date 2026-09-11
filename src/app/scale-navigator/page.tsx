@@ -134,6 +134,10 @@ export default function ScaleNavigator() {
             applies at every one of these scales. One function, 80 orders of magnitude, from Planck
             to cosmic. Whether that claim survives testing is what the{' '}
             <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>top 5 tests</Link> are for.
+            One structural part is already answered, and the answer is no: a tanh of a log does its whole switch within
+            one to two decades of density (C from 0.1 to 0.9 spans 1.3 decades of &#x03C1;/&#x03C1;<sub>crit</sub> at
+            &#x03B3; = 2 and 1.9 at &#x03B3; = 0.49), so a single switch cannot be doing work across 80. Each scale needs
+            its own &#x03C1;<sub>crit</sub>, which is what the archive ledger records as refuted (S633).
           </p>
         </div>
 

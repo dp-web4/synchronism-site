@@ -23,13 +23,23 @@ export default function ScaleInvariance() {
     <>
       <Breadcrumbs currentPath="/scale-invariance" />
       <h1>Scale Invariance</h1>
-      <ValidationBadge status="speculative" label="Framework Claim" />
+      <ValidationBadge status="failed" label="Refuted as a Unification — One Switch Saturates Within ~2 Decades (archive S633)" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Synchronism claims that &#x03B3; = 2/&#x221A;N<sub>corr</sub> applies at every scale from
           Planck length (10<sup>&minus;35</sup> m) to the observable universe (10<sup>26</sup> m) &mdash;
           80 orders of magnitude.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
+          <strong style={{ color: '#ef4444' }}>What became of the claim (badge corrected 2026-09-11 from &ldquo;speculative&rdquo;
+          to match the research ledger).</strong> As a <em>unification</em> it is refuted, structurally: tanh(&#x03B3; ln(1 + x))
+          does its whole switch within one to two decades of x (C from 0.1 to 0.9 spans 1.3 decades at &#x03B3; = 2, 1.9 at
+          &#x03B3; = 0.49), so no single switch acts across 80 decades. Every scale needs its own &#x03C1;<sub>crit</sub>, and
+          then the equation is a template re-fitted per scale, not one law. Separately, &#x03B3; is not one number either:
+          galaxies select 0.49, the registration said 2, the BCS ladder puts superconductors near 6&times;10<sup>&minus;4</sup>,
+          each from an N<sub>corr</sub> defined a different way. What the page below still shows is the <em>notation</em>
+          written at each scale, which is real, and what it does not show is a result.
         </p>
 
         <h2>&#x03B3; Across Scales</h2>

@@ -1,7 +1,60 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-10 (explorer)*
+*Last updated: 2026-09-11 (maintainer)*
+
+---
+
+## 🟢 NEW (maintainer 2026-09-11) — **The galaxy floor is the dark-energy sector's C at today's mean
+density, identically, and read literally that gives door #3 its first number. TEST-26 is now a theorem.
+The site said "not refuted" above a scoreboard of six refutations; fixed. A retired-phrase lint with a
+positive control now guards against yesterday's failure mode.**
+
+Proposal (WAKE, before any fix): `Synchronism/Research/proposals/instruments_sentence_floor_identity_and_refutation_scopes_20260911.md`.
+Script: `maintainer/scripts/floor_is_cosmic_C_and_w_sign.py` (+ `_output.txt`, mirrored to `Synchronism/simulations/`).
+**Count stays 6; Bucket 0 stays 0; SPINE and PREDICTIONS not edited.**
+
+1. **Floor identity.** Session 100's closure forces C_DE(ρ̄_m,0) = Ω_m at every γ, which is the galaxy floor.
+   That reconciles PREDICTIONS ("floor derived from cosmology") with the site ("1/Ω_m nowhere derived"): the
+   floor is *identified with* a calibration constant. Read literally, B_max(z=2) ≈ 1.09 for every
+   γ ∈ [0.3, 2], checkable on published high-z f_DM(<R_e). Two gates: the DE and galaxy knees sit 3.9×10⁶
+   apart, and the floor's smoothing scale is undefined. **Not registered.**
+2. **sign(1+w) = sign(1−2γ)** at every z for ρ_DE = ρ_m(1−C)/C. Verified against the continuity equation:
+   0 violations, 11 γ × 51 z. The Ω_m floor never binds on the past light cone. On `/test-catalog` TEST-26.
+3. **SPINE's "untested for lack of means, not refuted on the merits"** was quoted on the landing page as
+   "lack of instruments, not refutation" above six refutations. Now two clauses. SPINE wording gates on dp.
+4. **Two persona charges were wrong and still found defects.** The RG 3–17× *was* a full disc-geometry L2
+   solve, and RG at its own published parameters was also run (χ²/N 188–1252 vs MOND 21), but the site said
+   neither. "Run as registered" vs "never run" are two registrations (S177 / ALFALFA TEST-03), and chasing
+   it found a **TEST-08 ID collision** (PREDICTIONS = environment run; site = Freeman law).
+5. **Over-demotions narrowed:** the Bell class claim is three constructions (Toner–Bacon 2003 untested);
+   A2ACW J = 0 is a design degeneracy, not "exactly at chance"; GC-fork cutoffs were set at execution with
+   Newtonian-fitted mass profiles. **Stale over-claims removed:** "80 orders of magnitude" in the site
+   meta description (Bucket 2, S633); `/scale-invariance` badged a refuted unification "speculative"; the
+   fσ₈ "kill criterion triggered" retired 07-14 was still live on `/galaxy-rotation` the morning after
+   yesterday's "every point of use" fix.
+6. **Coherence Explorer math error fixed** (low γ gives *low* C). **New "How C enters dynamics" box** on
+   `/coherence-function`: floor, both couplings, both keyings, RG credit, which refutation used which.
+
+### New tool
+`maintainer/tools/site_lint.py`: 14 retired wordings with dates and reasons. **Positive control:** 13 hits
+on pre-session HEAD, 0 on the working tree. **Add a rule whenever you retire a wording; run it before
+every push.**
+
+### → Explorer (topics seeded)
+- `floor-meaning-evolving-ceiling-high-z-dm-fraction-check.md` (**HIGH**): refute-or-survive on published
+  kinematics; read the primary layer for the floor's stated meaning first.
+- `refracted-gravity-sparc-refit-under-l2-plus-striction.md` (MEDIUM): the refit nobody has done; decides
+  whether the density-keyed no-go can be a class statement.
+- `efe-null-as-a-class-test-for-linear-permittivity-gravity.md` (MEDIUM): the baseline gate re-applied per
+  class member.
+- `toner-bacon-bit-on-the-one-grid.md` (LOW): can the grid *generate* the bit SPINE's gap needs?
+
+### Decision recorded (fifth session raising it)
+**The `/validation-taxonomy` page split is not being done.** Personas hit *drift*, not legend location.
+The fix is single-source plus check: counts already live in `lib/ledger.ts`, retired wordings now live
+in `site_lint.py`, and the next increment is rendering verdict *strings* from `ledger.ts`. Do not re-raise
+the split without new evidence that location, not drift, is the problem.
 
 ---
 

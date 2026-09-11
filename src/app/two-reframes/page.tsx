@@ -175,7 +175,14 @@ export default function TwoReframes() {
             stays local-realist and buys nothing.</li>
           <li>A third variant let the shared variable back-react on both probes (the &ldquo;global clock&rdquo;
             construction) and reached S&nbsp;up&nbsp;to&nbsp;2.67 &mdash; but only by also introducing
-            signaling. No construction has reached the Tsirelson bound (2.83) <em>without</em> signaling.</li>
+            signaling (Alice&apos;s outcome statistics came to depend on Bob&apos;s setting). None of the three
+            constructions reached the Tsirelson bound (2.83) without it. <strong>Scope (added 2026-09-11):</strong> that
+            covers the three constructions built, not every substrate. Toner &amp; Bacon (Phys. Rev. Lett. 91, 187904, 2003)
+            showed that local hidden variables plus <em>one hidden bit</em> of communication per trial reproduce the singlet
+            correlations exactly, with no signaling visible in anyone&apos;s statistics. A one-grid substrate passing such a
+            bit was never built here, so that class is <em>untested</em>, not refuted &mdash; and building one would be
+            exactly the &ldquo;conditional setting-dependence&rdquo; the verdict below says the ontology would have to supply.
+            It would be nonlocal the way Bohmian mechanics is: a choice about the ontology, not a loophole in Bell.</li>
           <li><strong>Substrate-independence check (run 2026-07-06):</strong> the earlier runs used a
             borrowed Kuramoto <em>phase</em> substrate, leaving one escape open &mdash; maybe the
             framework&apos;s own scalar Intent-<em>density</em> substrate behaves differently. It was

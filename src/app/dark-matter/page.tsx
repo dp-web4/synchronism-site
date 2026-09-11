@@ -145,8 +145,12 @@ export default function DarkMatter() {
           &#x0394;BIC=+184 with &#x03B3;=2 pinned (conservative &ge;+33 after intra-galaxy correlation) &mdash; <em>target
           corrected 2026-09-08:</em> that number refutes the <strong>acceleration-keyed</strong> realization the fit actually
           ran, not the density-keyed C(&#x03C1;) this page describes; the density-keyed law loses <em>harder</em>, head-to-head
-          on SPARC at &#x0394;BIC +2843 with &#x03B3; free, and its floored form is capped by the boost ceiling &mdash; the BTFR slope kill fires at 3.3&#x03C3;, and 69% of galaxies exceed the framework&apos;s
-          dark-matter-fraction ceiling &mdash; see{' '}
+          on SPARC at &#x0394;BIC +2843 with &#x03B3; free, and its floored form is capped by the boost ceiling &mdash; the BTFR slope kill fires at 3.3&#x03C3;, and SPARC&apos;s most
+          dark-matter-dominated disc needs a boost of 13.7 against a ceiling of 3.17 (the often-quoted &ldquo;69% of
+          galaxies exceed the ceiling&rdquo; holds only under the underived 1/&Omega;<sub>m</sub> normalization; under
+          &Omega;<sub>m</sub>/&Omega;<sub>b</sub> &asymp; 6.4 the median passes and the tail exceedance becomes
+          mass-to-light-conditional; the floored form itself is written out on{' '}
+          <Link href="/coherence-function#how-c-enters-dynamics" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>) &mdash; see{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>. The one registered
           test of the density law on objects that actually cross its knee (Galactic globular clusters, executed
           2026-09-07) came back a <strong>fork</strong>: a universal &#x03B3; is excluded, the registered per-cluster

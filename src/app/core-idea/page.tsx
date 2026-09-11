@@ -14,7 +14,8 @@ export default function CoreIdea() {
 
       <h1>The Core Idea</h1>
       <p className="hero-subtitle" style={{ marginBottom: '2rem' }}>
-        One function. Three parameters. Every scale from Planck to cosmic.
+        One function, proposed for every scale from Planck to cosmic &mdash; what it says, where it was
+        tested, and where it broke.
       </p>
 
       <section className="section content-width">

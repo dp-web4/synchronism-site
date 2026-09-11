@@ -13,7 +13,7 @@ export default function MondUnification() {
       <Breadcrumbs currentPath="/mond-unification" />
       <PathNav currentPath="/mond-unification" />
       <h1>MOND Unification</h1>
-      <ValidationBadge status="reparametrization" label="Dimensional Analysis — 13% Error" />
+      <ValidationBadge status="reparametrization" label="Dimensional Analysis — 6–13% Below Milgrom's a₀, H₀-Dependent" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <EquationDisplay size="lg" label="The MOND acceleration scale from cosmology">
@@ -134,8 +134,10 @@ export default function MondUnification() {
             ∇²Φ&nbsp;=&nbsp;4πGρ/C, §D.3 effective Einstein equations, §D.5 a worldline action. The reason the
             0.3&ndash;0.4&times; figure is not derivable is <em>not</em> that no field equation exists; it is that
             the one the archive states (L1) is eliminated a priori by a vacuum source floor, and the one the
-            site&apos;s tests actually use (∇·[C∇Φ]&nbsp;=&nbsp;4πGρ, equivalently
-            g&nbsp;=&nbsp;g<sub>bar</sub>/C) gives EFE&nbsp;=&nbsp;0, not 0.3&ndash;0.4&times;. The conclusion
+            site&apos;s tests actually use (∇·[C∇Φ]&nbsp;=&nbsp;4πGρ &mdash; <strong>which is Refracted Gravity&apos;s
+            field equation</strong>, Matsakos &amp; Diaferio 2016, published a decade before this sector rediscovered it,
+            with a permittivity identical to the floored C in closed form &mdash; reducing to
+            g&nbsp;=&nbsp;g<sub>bar</sub>/C only in spherical symmetry) gives EFE&nbsp;=&nbsp;0, not 0.3&ndash;0.4&times;. The conclusion
             below is unchanged; its stated reason is.
           </p>
         </div>
@@ -167,9 +169,15 @@ export default function MondUnification() {
           <strong style={{ color: '#38bdf8' }}>EFE = 0 survives the obvious momentum-conservation objection
           (2026-08-04):</strong> an algebraic g = g<sub>bar</sub>/C(ρ) modification looks like it violates
           momentum conservation, since it isn&apos;t obviously sourced by a field equation. It survives: the
-          one-line completion &nabla;&middot;[C(ρ)&nabla;Φ] = 4πGρ conserves momentum, reproduces g =
-          g<sub>N</sub>/C exactly in spherical symmetry, and its extra polarization force is
-          &#8804;2&times;10&#8315;&#8309; of gravity &mdash; negligible. Because this completion is
+          one-line completion &nabla;&middot;[C(ρ)&nabla;Φ] = 4πGρ (Refracted Gravity&apos;s equation) conserves
+          momentum, reproduces g = g<sub>N</sub>/C exactly in spherical symmetry, and its extra polarization force is
+          &#8804;2&times;10&#8315;&#8309; of gravity &mdash; negligible <em>at this framework&apos;s own knee</em>. Two scope
+          limits (added 2026-09-11): <strong>outside spherical symmetry the reduction to g<sub>N</sub>/C does not
+          hold</strong> &mdash; in a disc with the knee inside it, the &nabla;C&middot;&nabla;Φ refraction term makes the two
+          differ by up to 5.9&times; &mdash; and with the knee inside a disc, the striction force of the variational
+          completion reaches up to 164&times; the vertical restoring force (explorer 2026-08-26). Neither touches this
+          framework&apos;s own parameters, whose knee never enters a disc; both matter for any density-keyed theory whose
+          knee does. Because this completion is
           <em> linear in Φ</em>, EFE = 0 is preserved exactly, and the same linearity is why the exterior field
           of an isolated mass diverges as C&nbsp;&rarr;&nbsp;0 in vacuum: &ldquo;a uniform external field does
           not change ρ&rdquo; (&rArr; EFE = 0) and &ldquo;empty space has C = 0 however strong the field&rdquo;

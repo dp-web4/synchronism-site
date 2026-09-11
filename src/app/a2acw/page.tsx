@@ -302,9 +302,14 @@ export default function A2ACW() {
           labels do invert (sensitivity 0/6, specificity 6/6). Both conventions are defensible and both
           describe the same detector; the defect was leaving the convention unstated on a page whose
           subject is measurement discipline. <strong>Nothing about the verdict depends on the choice:</strong>{' '}
-          Youden&apos;s J = sensitivity + specificity &minus; 1 = 0 under either labeling, which is the
-          formal statement that this detector carries no information — it performs exactly at chance.
-          J = 0 here is a degeneracy of the design, not a measurement, and should be read as such.
+          Youden&apos;s J = sensitivity + specificity &minus; 1 = 0 under either labeling. <strong>On these
+          controls J = 0 is a degenerate operating point, not a measurement of chance performance:</strong> each
+          control was chosen <em>because</em> its modern-register restatement trips prior art, so specificity 0/6
+          was designed in. The detector&apos;s specificity is <em>unmeasured</em> until contemporaneous controls
+          (claims open at the models&apos; training cutoff, later settled by the field) are run. (Reworded
+          2026-09-11: this sentence previously read J = 0 as the detector carrying no information at all, one line
+          before calling it a design degeneracy &mdash; a researcher reader held the demotion to the standard the
+          claims were held to.)
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1rem' }}>
           <div className="card">

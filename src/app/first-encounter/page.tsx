@@ -209,7 +209,8 @@ export default function FirstEncounter() {
       <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
         <Link href="/two-reframes" style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
           Prefer pictures and stories? Try Two Reframes — two analogies that reframe quantum weirdness
-          (side trip, not part of this sequence; some math does appear, including a square root and a cosine) &rarr;
+          (side trip, not part of this sequence; a square root and a cosine appear, and a few quantum-foundations
+          results &mdash; Bell/CHSH, Kochen&ndash;Specker &mdash; are named in passing; you can skip those and keep the analogies) &rarr;
         </Link>
       </div>
 

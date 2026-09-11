@@ -166,7 +166,9 @@ export default function ResearchPhilosophy() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Session #615-616 revealed a recurring pattern across all tracks: take known physics,
           rename the key parameter, claim novelty. The valuable part isn&apos;t the novelty claim &mdash;
-          it&apos;s the unified notation (same &#x03B3; across 80 orders of magnitude), the honest
+          it&apos;s the shared notation (one functional form written at every scale &mdash; though &#x03B3; itself takes a
+          different value in every domain, from an N<sub>corr</sub> defined differently in each, and a single switch
+          saturates within about two decades of density, not eighty), the honest
           failure documentation, and the testable predictions that remain open.
         </p>
 

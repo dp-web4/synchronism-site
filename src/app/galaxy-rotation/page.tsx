@@ -30,7 +30,8 @@ export default function GalaxyRotation() {
           the headline equation never reaches this page&apos;s observable. <strong>No algebraic chain from
           C(&#x03C1;) to g<sub>obs</sub> exists anywhere in the framework</strong> — the galaxy fits shown
           below use McGaugh&apos;s standard RAR interpolating function (MOND phenomenology), with Synchronism
-          contributing only a scatter hypothesis on top (since refuted; see TEST-08). The structural reason
+          contributing only a scatter hypothesis on top (since refuted by the 2026-07-14 environment run, filed on
+          Tier 1 as TEST-03s &mdash; not the Freeman-law card TEST-08). The structural reason
           is in the next paragraph; the tested-and-killed compander variants are further down.
           <span style={{ display: 'block', marginTop: '0.5rem', fontSize: '0.85rem' }}>
             <strong>How C entered the RAR fit, in one sentence (added 2026-09-08; asked by two visitor personas who
@@ -60,14 +61,17 @@ export default function GalaxyRotation() {
         </p>
 
         <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
-          <strong style={{ color: '#ef4444' }}>C-convention note (2026-08-04):</strong> the site currently runs
-          three mutually exclusive readings of the substitution above, all live: this plotter codes
+          <strong style={{ color: '#ef4444' }}>C-convention note (2026-08-04):</strong> the site ran
+          three mutually exclusive readings of the substitution above: this plotter codes
           v² = v<sub>b</sub>² + (V<sub>flat</sub>·C)², i.e. g<sub>obs</sub> = C·g<sub>bar</sub> shifted into an
           amplitude term; the f<sub>DM</sub> = 1 − C identity on{' '}
           <Link href="/tier-1-existing" style={{ color: '#ef4444' }}>Tier 1</Link> implies
           g<sub>obs</sub> = g<sub>bar</sub>/C; and{' '}
-          <Link href="/mond-unification" style={{ color: '#ef4444' }}>MOND Unification</Link>&apos;s prose says
-          g<sub>obs</sub> = C·g<sub>bar</sub> directly. On the site&apos;s own five plotter galaxies these three
+          <Link href="/mond-unification" style={{ color: '#ef4444' }}>MOND Unification</Link>&apos;s prose then said
+          g<sub>obs</sub> = C·g<sub>bar</sub> directly &mdash; since corrected there to g<sub>bar</sub>/C, so{' '}
+          <strong>two readings are live today</strong>: the plotter&apos;s amplitude term and g<sub>bar</sub>/C, whose
+          field-equation form (and where the two part company in a disc) is written out on{' '}
+          <Link href="/coherence-function#how-c-enters-dynamics" style={{ color: '#ef4444' }}>Coherence Function</Link>. On the site&apos;s own five plotter galaxies these three
           laws miss the observed curve in three different directions &mdash; roughly 10²&ndash;10³× high,
           converging on Newtonian, and 10²&ndash;10³× low &mdash; and no calibration reconciles them, because the
           disagreement is a functional-form mismatch (delivered boost falls exponentially with radius under an
@@ -345,7 +349,7 @@ export default function GalaxyRotation() {
               tanh(&#x03B3;&thinsp;ln(1+x)) = [(1+x)<sup>2&#x03B3;</sup> &minus; 1] / [(1+x)<sup>2&#x03B3;</sup> + 1]
             </span>
             with no approximation. At <strong>&#x03B3; = &frac12;</strong> the exponent cancels and this
-            collapses to a Möbius transform of density:
+            collapses to a Möbius transform of its argument x (in this passage an acceleration ratio, not a density):
             <span style={{ display: 'block', textAlign: 'center', fontFamily: 'monospace', margin: '0.5rem 0', color: 'var(--color-text-primary)' }}>
               C(x) = x/(x+2) = &#x03BC;<sub>simple</sub>(x/2)
             </span>
@@ -420,7 +424,9 @@ export default function GalaxyRotation() {
 
         <h2>Wide Binaries</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          The RAR environmental scatter (TEST-03) tripped its kill criterion, and the RAR
+          The RAR environment test refuted its registered amplitude (Session 177&apos;s claim, r&sup2; = 0.0001 on
+          2026-07-14; this line previously credited TEST-03 with tripping a kill criterion, a metric conflation corrected on
+          Tier 1 in July), and the RAR
           transition-shape test (above) has now closed the main galaxy-scale question.
           The <Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>wide binary test (TEST-02)</Link>{' '}
           was previously identified as a discriminator, but with the compander collapsing to MOND
@@ -483,7 +489,10 @@ export default function GalaxyRotation() {
         <div style={{ background: 'rgba(239, 68, 68, 0.07)', border: '1px solid rgba(239, 68, 68, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', marginTop: '1.5rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#ef4444' }}>Cosmological extension — disfavored 2.4σ on σ₈ amplitude (reframed 2026-07-02):</strong>{' '}
           Session 107&apos;s prediction of suppressed growth (fσ₈&nbsp;≈&nbsp;0.418) was compared against DESI DR1.
-          Full-shape result (arXiv:2411.12021): combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 vs predicted 0.76 → 2.4σ tension. Kill criterion (fσ₈&nbsp;&gt;&nbsp;0.46) triggered.
+          Full-shape result (arXiv:2411.12021): combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 vs predicted 0.76 → 2.4σ tension on the σ₈ amplitude, a GR-conditioned statistic. The <em>registered</em> kill
+          criterion (fσ₈(z&nbsp;=&nbsp;0.51)&nbsp;&gt;&nbsp;0.46 at &gt;3σ) was <strong>not met</strong>: ~1.5σ, underpowered as
+          registered (this page kept the retired &ldquo;triggered&rdquo; wording until 2026-09-11, two months after Tier 1 and
+          Honest Assessment dropped it).
           The LRG1 fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 &ldquo;enhancement&rdquo; is a single ~1.2σ bin, not load-bearing.
           Verdict: post-hoc retrodiction, disfavored 2.4σ on amplitude. (Prior 2026-05-25 &ldquo;correction&rdquo; was itself an error — misattributed z≈0.07 PV value.){' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment: TEST-04a &rarr;</Link>

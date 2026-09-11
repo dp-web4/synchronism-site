@@ -1,0 +1,138 @@
+THE EVOLVING FLOOR, TESTED ON PUBLISHED KINEMATICS — AND ITS ENVIRONMENT TWIN ON SPARC
+
+A. C_DE at the mean matter density IS the model's own Omega_m(z) — every gamma, every z
+   gamma=0.3   z=0.0 C=0.3150 1/C=3.175 [LCDM 1/Om(z)=3.175] | z=1.0 C=0.6885 1/C=1.453 [LCDM 1/Om(z)=1.272] | z=2.0 C=0.8327 1/C=1.201 [LCDM 1/Om(z)=1.081] | z=4.2 C=0.9338 1/C=1.071 [LCDM 1/Om(z)=1.015]
+   gamma=0.487 z=0.0 C=0.3150 1/C=3.175 [LCDM 1/Om(z)=3.175] | z=1.0 C=0.7816 1/C=1.279 [LCDM 1/Om(z)=1.272] | z=2.0 C=0.9217 1/C=1.085 [LCDM 1/Om(z)=1.081] | z=4.2 C=0.9833 1/C=1.017 [LCDM 1/Om(z)=1.015]
+   gamma=0.5   z=0.0 C=0.3150 1/C=3.175 [LCDM 1/Om(z)=3.175] | z=1.0 C=0.7863 1/C=1.272 [LCDM 1/Om(z)=1.272] | z=2.0 C=0.9255 1/C=1.081 [LCDM 1/Om(z)=1.081] | z=4.2 C=0.9848 1/C=1.015 [LCDM 1/Om(z)=1.015]
+   gamma=1.0   z=0.0 C=0.3150 1/C=3.175 [LCDM 1/Om(z)=3.175] | z=1.0 C=0.8869 1/C=1.128 [LCDM 1/Om(z)=1.272] | z=2.0 C=0.9848 1/C=1.015 [LCDM 1/Om(z)=1.081] | z=4.2 C=0.9993 1/C=1.001 [LCDM 1/Om(z)=1.015]
+   gamma=2.0   z=0.0 C=0.3150 1/C=3.175 [LCDM 1/Om(z)=3.175] | z=1.0 C=0.9430 1/C=1.060 [LCDM 1/Om(z)=1.272] | z=2.0 C=0.9982 1/C=1.002 [LCDM 1/Om(z)=1.081] | z=4.2 C=1.0000 1/C=1.000 [LCDM 1/Om(z)=1.015]
+   max |C - Omega_m,model(z)| = 1.1e-16  (algebraic identity: rho_m/(rho_m+rho_DE) = C)
+   08-08 branch (ii) table (LCDM): 1/Om = 1.272 (z=1), 1.081 (z=2).  gamma = 0.5 row reproduces it
+   exactly; gamma = 0.487 (the 09-11 topic table) differs only because rho_DE(z) is not constant.
+
+B. gamma band allowed by DESI DR2 wCDM (arXiv:2503.14738 Table: DESI+CMB+{Pantheon+,Union3,DESY5})
+   2-sigma envelope over the three SN choices: w in [-1.051, -0.929]
+   pivot z = 0.3: w_model(z_p) inside envelope for gamma in [0.428, 0.560]
+   pivot z = 0.5: w_model(z_p) inside envelope for gamma in [0.438, 0.548]
+   pivot z = 1.0: w_model(z_p) inside envelope for gamma in [0.451, 0.536]
+   union over pivots (generous): gamma_DE in [0.428, 0.560].  Crude: a single-pivot
+   map from a constant-w posterior to a w(z) family, not a refit of the likelihood.
+
+C. Price+2021 Table 3 (1D MCMC) vs the cap  —  sigma = the quoted error toward the cap
+   gamma = 0.500
+     z >= 1.5 (VERDICT)          as published            N=21  median f=0.43  median cap=0.062  >2sig: 12 (need 5)  median excess =   7.1 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          Salpeter stress         N=21  median f=0.23  median cap=0.062  >2sig:  6 (need 5)  median excess =   2.7 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          least-sq shift (-0.12)  N=21  median f=0.31  median cap=0.062  >2sig:  6 (need 5)  median excess =   4.9 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          Salpeter + least-sq     N=21  median f=0.07  median cap=0.062  >2sig:  4 (need 5)  median excess =   0.1 s.e.  -> INCONCLUSIVE
+     0.9 <= z < 1.5 (secondary)  as published            N=11  median f=0.42  median cap=0.186  >2sig:  3 (need 5)  median excess =   2.7 s.e.  -> INCONCLUSIVE
+     0.9 <= z < 1.5 (secondary)  Salpeter stress         N=11  median f=0.08  median cap=0.186  >2sig:  2 (need 5)  median excess =  -1.2 s.e.  -> SURVIVES
+     0.9 <= z < 1.5 (secondary)  least-sq shift (-0.12)  N=11  median f=0.30  median cap=0.186  >2sig:  2 (need 5)  median excess =   1.4 s.e.  -> INCONCLUSIVE
+     0.9 <= z < 1.5 (secondary)  Salpeter + least-sq     N=11  median f=0.00  median cap=0.186  >2sig:  1 (need 5)  median excess =  -2.8 s.e.  -> SURVIVES
+   gamma = 0.428
+     z >= 1.5 (VERDICT)          as published            N=21  median f=0.43  median cap=0.085  >2sig: 10 (need 5)  median excess =   6.7 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          Salpeter stress         N=21  median f=0.23  median cap=0.085  >2sig:  5 (need 5)  median excess =   2.3 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          least-sq shift (-0.12)  N=21  median f=0.31  median cap=0.085  >2sig:  5 (need 5)  median excess =   4.5 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          Salpeter + least-sq     N=21  median f=0.07  median cap=0.085  >2sig:  4 (need 5)  median excess =  -0.4 s.e.  -> INCONCLUSIVE
+     0.9 <= z < 1.5 (secondary)  as published            N=11  median f=0.42  median cap=0.215  >2sig:  2 (need 5)  median excess =   2.4 s.e.  -> INCONCLUSIVE
+     0.9 <= z < 1.5 (secondary)  Salpeter stress         N=11  median f=0.08  median cap=0.215  >2sig:  2 (need 5)  median excess =  -1.5 s.e.  -> SURVIVES
+     0.9 <= z < 1.5 (secondary)  least-sq shift (-0.12)  N=11  median f=0.30  median cap=0.215  >2sig:  2 (need 5)  median excess =   1.1 s.e.  -> INCONCLUSIVE
+     0.9 <= z < 1.5 (secondary)  Salpeter + least-sq     N=11  median f=0.00  median cap=0.215  >2sig:  1 (need 5)  median excess =  -3.3 s.e.  -> SURVIVES
+   gamma = 0.560
+     z >= 1.5 (VERDICT)          as published            N=21  median f=0.43  median cap=0.049  >2sig: 13 (need 5)  median excess =   7.4 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          Salpeter stress         N=21  median f=0.23  median cap=0.049  >2sig:  6 (need 5)  median excess =   2.9 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          least-sq shift (-0.12)  N=21  median f=0.31  median cap=0.049  >2sig:  6 (need 5)  median excess =   5.2 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          Salpeter + least-sq     N=21  median f=0.07  median cap=0.049  >2sig:  4 (need 5)  median excess =   0.3 s.e.  -> INCONCLUSIVE
+     0.9 <= z < 1.5 (secondary)  as published            N=11  median f=0.42  median cap=0.166  >2sig:  4 (need 5)  median excess =   3.0 s.e.  -> INCONCLUSIVE
+     0.9 <= z < 1.5 (secondary)  Salpeter stress         N=11  median f=0.08  median cap=0.166  >2sig:  2 (need 5)  median excess =  -0.9 s.e.  -> SURVIVES
+     0.9 <= z < 1.5 (secondary)  least-sq shift (-0.12)  N=11  median f=0.30  median cap=0.166  >2sig:  2 (need 5)  median excess =   1.7 s.e.  -> INCONCLUSIVE
+     0.9 <= z < 1.5 (secondary)  Salpeter + least-sq     N=11  median f=0.00  median cap=0.166  >2sig:  1 (need 5)  median excess =  -2.5 s.e.  -> SURVIVES
+   gamma = 0.300
+     z >= 1.5 (VERDICT)          as published            N=21  median f=0.43  median cap=0.151  >2sig:  6 (need 5)  median excess =   5.4 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          Salpeter stress         N=21  median f=0.23  median cap=0.151  >2sig:  5 (need 5)  median excess =   1.2 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          least-sq shift (-0.12)  N=21  median f=0.31  median cap=0.151  >2sig:  5 (need 5)  median excess =   3.2 s.e.  -> REFUTED
+     z >= 1.5 (VERDICT)          Salpeter + least-sq     N=21  median f=0.07  median cap=0.151  >2sig:  3 (need 5)  median excess =  -1.7 s.e.  -> INCONCLUSIVE
+     0.9 <= z < 1.5 (secondary)  as published            N=11  median f=0.42  median cap=0.286  >2sig:  2 (need 5)  median excess =   1.6 s.e.  -> INCONCLUSIVE
+     0.9 <= z < 1.5 (secondary)  Salpeter stress         N=11  median f=0.08  median cap=0.286  >2sig:  1 (need 5)  median excess =  -2.3 s.e.  -> SURVIVES
+     0.9 <= z < 1.5 (secondary)  least-sq shift (-0.12)  N=11  median f=0.30  median cap=0.286  >2sig:  2 (need 5)  median excess =   0.2 s.e.  -> SURVIVES
+     0.9 <= z < 1.5 (secondary)  Salpeter + least-sq     N=11  median f=0.00  median cap=0.286  >2sig:  1 (need 5)  median excess =  -4.3 s.e.  -> SURVIVES
+
+   Does the Salpeter escape survive the same kinematics?  Galaxies pushed below f = 0 by more than
+   2 sigma (baryons alone exceed the measured circular velocity):
+     z >= 1.5 (VERDICT)          Salpeter stress         super-maximal at >2 sigma: 0 of 21;  at >1 sigma: 2
+     z >= 1.5 (VERDICT)          Salpeter + least-sq     super-maximal at >2 sigma: 2 of 21;  at >1 sigma: 6
+     0.9 <= z < 1.5 (secondary)  Salpeter stress         super-maximal at >2 sigma: 1 of 11;  at >1 sigma: 2
+     0.9 <= z < 1.5 (secondary)  Salpeter + least-sq     super-maximal at >2 sigma: 2 of 11;  at >1 sigma: 4
+
+C2. Genzel+2020 Table D1 (least-squares, constrained posterior; same galaxies, independent fit)
+   N = 40 (GS4_32976 has no D1 row);  Spearman(Price, Genzel) f_DM = +0.80
+     gamma=0.500 z >= 1.5 (VERDICT)          as published     N=21  median f=0.22  median cap=0.062  >2sig:  6 (need 5)  median excess =   2.7 s.e.  -> REFUTED
+     gamma=0.500 z >= 1.5 (VERDICT)          Salpeter stress  N=21  median f=0.00  median cap=0.062  >2sig:  3 (need 5)  median excess =  -1.0 s.e.  -> INCONCLUSIVE
+     gamma=0.500 0.9 <= z < 1.5 (secondary)  as published     N=11  median f=0.30  median cap=0.186  >2sig:  3 (need 5)  median excess =   1.2 s.e.  -> INCONCLUSIVE
+     gamma=0.500 0.9 <= z < 1.5 (secondary)  Salpeter stress  N=11  median f=0.00  median cap=0.186  >2sig:  3 (need 5)  median excess =  -1.9 s.e.  -> INCONCLUSIVE
+     gamma=0.428 z >= 1.5 (VERDICT)          as published     N=21  median f=0.22  median cap=0.085  >2sig:  6 (need 5)  median excess =   2.3 s.e.  -> REFUTED
+     gamma=0.428 z >= 1.5 (VERDICT)          Salpeter stress  N=21  median f=0.00  median cap=0.085  >2sig:  3 (need 5)  median excess =  -1.3 s.e.  -> INCONCLUSIVE
+     gamma=0.428 0.9 <= z < 1.5 (secondary)  as published     N=11  median f=0.30  median cap=0.215  >2sig:  3 (need 5)  median excess =   0.9 s.e.  -> INCONCLUSIVE
+     gamma=0.428 0.9 <= z < 1.5 (secondary)  Salpeter stress  N=11  median f=0.00  median cap=0.215  >2sig:  3 (need 5)  median excess =  -2.2 s.e.  -> INCONCLUSIVE
+     gamma=0.560 z >= 1.5 (VERDICT)          as published     N=21  median f=0.22  median cap=0.049  >2sig:  6 (need 5)  median excess =   2.9 s.e.  -> REFUTED
+     gamma=0.560 z >= 1.5 (VERDICT)          Salpeter stress  N=21  median f=0.00  median cap=0.049  >2sig:  3 (need 5)  median excess =  -0.8 s.e.  -> INCONCLUSIVE
+     gamma=0.560 0.9 <= z < 1.5 (secondary)  as published     N=11  median f=0.30  median cap=0.166  >2sig:  4 (need 5)  median excess =   1.4 s.e.  -> INCONCLUSIVE
+     gamma=0.560 0.9 <= z < 1.5 (secondary)  Salpeter stress  N=11  median f=0.00  median cap=0.166  >2sig:  3 (need 5)  median excess =  -1.7 s.e.  -> INCONCLUSIVE
+     gamma=0.300 z >= 1.5 (VERDICT)          as published     N=21  median f=0.22  median cap=0.151  >2sig:  3 (need 5)  median excess =   1.2 s.e.  -> INCONCLUSIVE
+     gamma=0.300 z >= 1.5 (VERDICT)          Salpeter stress  N=21  median f=0.00  median cap=0.151  >2sig:  3 (need 5)  median excess =  -2.4 s.e.  -> INCONCLUSIVE
+     gamma=0.300 0.9 <= z < 1.5 (secondary)  as published     N=11  median f=0.30  median cap=0.286  >2sig:  3 (need 5)  median excess =   0.1 s.e.  -> INCONCLUSIVE
+     gamma=0.300 0.9 <= z < 1.5 (secondary)  Salpeter stress  N=11  median f=0.00  median cap=0.286  >2sig:  2 (need 5)  median excess =  -2.9 s.e.  -> SURVIVES
+   Genzel + Salpeter, z >= 1.5 (VERDICT)         : super-maximal at >2 sigma 5 of 21, at >1 sigma 8, below f = 0 at all 13
+   Genzel + Salpeter, 0.9 <= z < 1.5 (secondary) : super-maximal at >2 sigma 3 of 11, at >1 sigma 5, below f = 0 at all 6
+
+   z >= 1.5 per galaxy at gamma = 0.487: f_DM, cap, and the ambient delta that would admit it
+     D3a_6397       z=1.500  f=0.38-0.17  cap=0.127  delta_req=-0.770  
+     EGS_13011166   z=1.530  f=0.34-0.10  cap=0.123  delta_req=-0.735  EXCEEDS >2sig
+     GS4_43501      z=1.614  f=0.38-0.10  cap=0.113  delta_req=-0.799  EXCEEDS >2sig
+     GS4_14152      z=1.615  f=0.30-0.15  cap=0.113  delta_req=-0.711  
+     K20_ID9        z=2.036  f=0.46-0.17  cap=0.076  delta_req=-0.908  EXCEEDS >2sig
+     zC_405501      z=2.154  f=0.52-0.21  cap=0.068  delta_req=-0.936  EXCEEDS >2sig
+     SSA22_MD41     z=2.172  f=0.71-0.14  cap=0.067  delta_req=-0.972  EXCEEDS >2sig
+     BX389          z=2.180  f=0.59-0.15  cap=0.067  delta_req=-0.953  EXCEEDS >2sig
+     zC_407302      z=2.182  f=0.61-0.09  cap=0.067  delta_req=-0.957  EXCEEDS >2sig
+     GS3_24273      z=2.187  f=0.25-0.10  cap=0.066  delta_req=-0.793  
+     zC_406690      z=2.196  f=0.06-0.06  cap=0.066  delta_req=+0.108  
+     BX610          z=2.210  f=0.45-0.13  cap=0.065  delta_req=-0.919  EXCEEDS >2sig
+     K20_ID7        z=2.225  f=0.76-0.10  cap=0.064  delta_req=-0.980  EXCEEDS >2sig
+     K20_ID6        z=2.236  f=0.13-0.13  cap=0.064  delta_req=-0.553  
+     zC_400569      z=2.242  f=0.29-0.18  cap=0.063  delta_req=-0.840  
+     BX482          z=2.258  f=0.61-0.16  cap=0.063  delta_req=-0.960  EXCEEDS >2sig
+     COS4_02672     z=2.308  f=0.43-0.21  cap=0.060  delta_req=-0.919  
+     D3a_15504      z=2.383  f=0.24-0.10  cap=0.056  delta_req=-0.818  
+     D3a_6004       z=2.387  f=0.12-0.12  cap=0.056  delta_req=-0.572  
+     GS4_37124      z=2.431  f=0.43-0.15  cap=0.054  delta_req=-0.928  EXCEEDS >2sig
+     GS4_42930      z=2.451  f=0.43-0.18  cap=0.053  delta_req=-0.929  EXCEEDS >2sig
+   median delta_req (z >= 1.5) = -0.908; massive SFGs at z ~ 2 are biased tracers (delta > 0).
+
+D. RC100 (arXiv:2209.12199 §4.1): binned medians (the +/- read as the population spread)
+   z = 0.6-1.2  N=33  median=0.38  s.e.=0.050  gamma=0.500: cap at bin's LOWEST z = 0.347 (excess  +0.7 s.e.), at bin centre = 0.241 ( +2.8 s.e.)
+   z = 0.6-1.2  N=33  median=0.38  s.e.=0.050  gamma=0.428: cap at bin's LOWEST z = 0.369 (excess  +0.2 s.e.), at bin centre = 0.268 ( +2.2 s.e.)
+   z = 1.2-2.5  N=67  median=0.27  s.e.=0.028  gamma=0.500: cap at bin's LOWEST z = 0.170 (excess  +3.6 s.e.), at bin centre = 0.086 ( +6.7 s.e.)
+   z = 1.2-2.5  N=67  median=0.27  s.e.=0.028  gamma=0.428: cap at bin's LOWEST z = 0.199 (excess  +2.6 s.e.), at bin centre = 0.111 ( +5.8 s.e.)
+   Shape, not level: RC100 fits <f_DM>(z) = a (1+z)^-b with b = 1.07 +/- 0.33 (a = 0.75 +/- 0.23).
+   gamma=0.500: cap falls 0.256 -> 0.051 over z = 0.85 -> 2.44, effective b = 2.61  (+4.7 sigma from RC100's b).  At z = 0: fit a = 0.75, cap = 0.685.
+   gamma=0.428: cap falls 0.283 -> 0.071 over z = 0.85 -> 2.44, effective b = 2.23  (+3.5 sigma from RC100's b).  At z = 0: fit a = 0.75, cap = 0.685.
+   gamma=0.560: cap falls 0.237 -> 0.039 over z = 0.85 -> 2.44, effective b = 2.91  (+5.6 sigma from RC100's b).  At z = 0: fit a = 0.75, cap = 0.685.
+   Can any power of the cosmic matter fraction fix the shape?  floor = Omega_m(z)^p (LCDM background):
+     p = 1.0  effective b = 2.61   cap at z = 0 = 0.685
+     p = 0.6  effective b = 2.68   cap at z = 0 = 0.500
+     p = 0.4  effective b = 2.72   cap at z = 0 = 0.370
+     p = 0.2  effective b = 2.76   cap at z = 0 = 0.206
+     p = 0.1  effective b = 2.78   cap at z = 0 = 0.109
+   b rises as p falls: the exponent is the (1+z)^3 dilution, not the floor's functional form.
+
+E. z = 0 ambient twin: SPARC (Q<=2, i>30) x TEST-08 CF4 environment, Upsilon_disk 0.5 / bulge 0.7
+   N = 141 discs with both a mass model and the adjudicated environment proxy
+   proxy rho_5NN   : log-proxy vs log D slope -1.92 (r=-0.75);  Spearman rho(B_req, proxy | D) = -0.307 (p=0.00);  rho(B_req, D) = -0.196
+      gamma=0.487:  36.2% satisfy B_req <= B_max(delta);  delta needed: median -0.494, p90 +0.522;  delta measured (generous): median -0.104, p10 -0.867  -> REFUTED
+      gamma=0.428:  36.9% satisfy B_req <= B_max(delta);  delta needed: median -0.505, p90 +0.552;  delta measured (generous): median -0.104, p10 -0.867  -> REFUTED
+      gamma=0.560:  35.5% satisfy B_req <= B_max(delta);  delta needed: median -0.483, p90 +0.494;  delta measured (generous): median -0.104, p10 -0.867  -> REFUTED
+   proxy N(<5 Mpc) : log-proxy vs log D slope -1.22 (r=-0.82);  Spearman rho(B_req, proxy | D) = -0.233 (p=0.01);  rho(B_req, D) = -0.196
+      gamma=0.487:  23.4% satisfy B_req <= B_max(delta);  delta needed: median -0.494, p90 +0.522;  delta measured (generous): median +0.010, p10 -0.661  -> REFUTED
+      gamma=0.428:  23.4% satisfy B_req <= B_max(delta);  delta needed: median -0.505, p90 +0.552;  delta measured (generous): median +0.010, p10 -0.661  -> REFUTED
+      gamma=0.560:  24.1% satisfy B_req <= B_max(delta);  delta needed: median -0.483, p90 +0.494;  delta measured (generous): median +0.010, p10 -0.661  -> REFUTED
+   cross-check: fixed floor Omega_m admits 23.4% (09-09 finding: 77% need more -> 23%)

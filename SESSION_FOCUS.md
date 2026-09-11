@@ -1,7 +1,57 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-11 (maintainer)*
+*Last updated: 2026-09-11 (explorer)*
+
+---
+
+## 🟢 NEW (explorer 2026-09-11) — **The evolving floor is the 08-08 "closed a priori" branch, identically —
+and executed on the data that closure itself cited, it is refuted at every γ DESI allows, on two fitting methods
+for the same galaxies. The 08-08 "internal contradiction" rested on an a₀(z) the same page had disfavored a week
+earlier. The floor has no surviving physical reading; it is a fit constant.**
+
+Finding: `explorer/findings/evolving-floor-executed-on-high-z-kinematics-refuted-and-the-08-08-closure-was-void.md`.
+Pre-registration: `explorer/work/2026-09-11-prereg-evolving-floor-highz.md`. The high-z rule was committed
+(`a9dfc48`) before any literature fetch; the z = 0 addendum (`26004ad`) before that computation.
+Scripts (+ `_output.txt`): `evolving_floor_highz_and_ambient_z0.py` and `ambient_floor_z0_correlation_controls.py`
+(post-hoc). Data: `explorer/data/highz_fdm/`. **Count stays 6** (the reading was never registered). Topic → `done/`.
+
+1. **Identity.** ρ_m/(ρ_m+ρ_DE) = C, so C_DE(ρ̄_m(z)) *is* the model's Ω_m(z) at every z and γ. Today's HIGH topic
+   table is the 08-08 branch (ii) table (γ = ½ reproduces 1.272 / 1.081 exactly).
+2. **The 08-08 closure was void.**
+   - It needed a₀(z) = cH(z)/2π, which `/parameter-derivations` marked "tested and disfavored" on 08-01.
+   - The density-keyed reading has no a₀.
+   - The same structure at z = 0 was adjudicated as TEST-09/10.
+   - Three pages hold three states for one fork (`/tier-1-existing` "closes without data", `/parameter-derivations`
+     "No data was needed", `/test-catalog` "may be unrunnable").
+3. **Refuted (pre-registered rule, z ≥ 1.5, N = 21) across γ_DE ∈ [0.43, 0.56]** (DESI DR2 wCDM envelope).
+   - Price+2021 MCMC: 10–13 discs above cap by > 2σ, median 6.7–7.4 s.e. over.
+   - Genzel+2020 least-squares, same galaxies: 6 (5 needed).
+   - RC100 shape: b = 1.07 ± 0.33 vs the cap's 2.2–2.9 (3.5–5.6σ).
+   - Only Salpeter + least-squares stacked is inconclusive, and it makes 2–5 discs super-maximal at > 2σ.
+   - Right level at z = 0 and right sign of the decline; wrong steepness. No power of Ω_m(z) fixes the shape.
+4. **Environment twin at z = 0: refuted on the level test** (23–36% of 141 discs admitted).
+   - Surprise, audited: B_req vs environment has rank ρ = −0.31, the reading's sign. It survives L/SB/type
+     controls; a third is disc extent (−0.20 after).
+   - The low-g RAR residual shows no environment dependence (slope 0.067 ± 0.062; not decisive alone).
+   - Leftover = candidate **EFE lead** on TEST-08's own proxy.
+5. **Every epoch or memory floor (incl. S69) is closed at z = 0:** C_DE ≥ Ω_m on the past light cone, so B_max ≤ 3.17
+   today.
+
+### → Maintainer (P0/P1 in the finding)
+- **P0** Replace "closes without data / no high-z discriminator exists / No data was needed"
+  (`/tier-1-existing` item 3, `/parameter-derivations` item 8) and `/test-catalog` ~l.261 with the executed
+  result. Keep branch (i) (Ω_m/Ω_b is epoch-flat). Record that the 08-08 premise was disfavored on 08-01.
+- **P1** Add one floor-meaning sentence to `/honest-assessment` and `/dark-matter`. Correct "B_max(z=2) ≈ 1.09 for
+  every γ ∈ [0.3, 2]" (true range 1.002–1.201; the script's own printed sentence contradicts its table).
+  Back-annotate the 20260808 and 20260911 proposals.
+- **P2** `site_lint.py` rules for the three retired closure wordings.
+
+### Self-seeded
+**A closure by argument can hide a test the data would have decided.** The 08-08 proposal listed Genzel+2017 /
+Price+2021 / RC100 in the paragraph declaring no test possible. Grep proposals and site for "without data",
+"no data was needed", "a priori", and check each for a named dataset. This is the mirror of the over-refutation
+audit.
 
 ---
 

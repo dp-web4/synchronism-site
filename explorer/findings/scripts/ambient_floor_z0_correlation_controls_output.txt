@@ -1,0 +1,28 @@
+POST-HOC CONTROLS FOR THE ONE z = 0 NUMBER THAT WENT THE READING'S WAY
+N = 141
+
+0. Added after the first run (still post-hoc): HI extent and proxy reliability
+   partial Spearman(B_req, rho5 | D + log g_bar,min               ) = -0.198  (p = 0.019)
+   partial Spearman(B_req, rho5 | D + log g_bar,min + L36 + SB + T) = -0.224  (p = 0.008)
+   Spearman(log g_bar,min, env residual) = +0.244 (p=0.004);  Spearman(log g_bar,min, B_req) = -0.770
+   two-estimator reliability: Pearson(rho5 residual, N(<5 Mpc) residual) = +0.619  (shared distance errors inflate it: an UPPER bound on the true-environment reliability)
+
+1. Is rho(B_req, environment) a galaxy-property correlation?
+   partial Spearman(B_req, rho5 | D only                ) = -0.312  (p = 0.000)
+   partial Spearman(B_req, rho5 | D + L36               ) = -0.334  (p = 0.000)
+   partial Spearman(B_req, rho5 | D + SB_disk           ) = -0.293  (p = 0.000)
+   partial Spearman(B_req, rho5 | D + T                 ) = -0.302  (p = 0.000)
+   partial Spearman(B_req, rho5 | D + L36 + SB_disk + T ) = -0.350  (p = 0.000)
+   Spearman(B_req, L36    ) = -0.492 (p=0.000);  Spearman(env residual, L36    ) = +0.074 (p=0.381)
+   Spearman(B_req, SB_disk) = -0.395 (p=0.000);  Spearman(env residual, SB_disk) = +0.057 (p=0.504)
+   Spearman(B_req, T      ) = +0.351 (p=0.000);  Spearman(env residual, T      ) = -0.091 (p=0.284)
+
+2. The discriminating form: low-g_bar RAR residual vs the residual the reading predicts
+   discs with >= 3 points below 0.1 a0: 98
+   predicted residual: median -0.089 dex, spread (SD) 0.227 dex, range [-0.83, +0.00]
+   observed  residual: median -0.025 dex, spread (SD) 0.140 dex
+   OLS obs = -0.007 + 0.067 x pred  (+/- 0.062);  Spearman = +0.110 (p = 0.280)
+   partial Spearman(obs, pred | L36, SB_disk) = +0.092 (p = 0.367)
+   the reading survives this form only if proxy reliability lambda < 0.19 (slope + 2 s.e.); the two CF4 estimators agree at r = 0.62 (upper bound: shared distance errors).
+   Not decisive on its own: lambda is unmeasured.  The level test (section E of the main script) is.
+   predicted-median offset alone: the reading puts the typical low-g disc -0.09 dex below the RAR; observed median -0.025

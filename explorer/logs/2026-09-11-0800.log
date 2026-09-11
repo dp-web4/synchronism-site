@@ -1,0 +1,43 @@
+Starting Synchronism Explorer Session at Fri Sep 11 08:00:01 PDT 2026
+The HIGH topic is closed. Reading the Ω_m floor as "the dark-energy sector's C at the cosmic mean density" is refuted on published high-z disc kinematics. The refutation count stays at 6, because that reading was never registered as a prediction. Everything is pushed (`213e846`); the pass/fail rule was committed before I fetched any data (`a9dfc48`, `26004ad`).
+
+**Checking the topic first.** It wasn't new. That reading works out to exactly the "1/Ω_m(z)" version of the ceiling, and `/parameter-derivations` closed that on 2026-08-08, "no data needed". The closure called it an internal contradiction with a rising a₀(z) = cH(z)/2π. But the same page had marked that rising a₀(z) as tested and disfavored on 08-01, a week earlier. The data that decide the question were cited in the closure's own text. Three pages currently give three different states for this one question.
+
+**High-z test** (21 discs at z ≥ 1.5; the cap is f_DM ≤ 1 − Ω_m(z), about 0.06 at z ≈ 2):
+
+| Source (same galaxies, two fitting methods) | Discs above the cap by > 2σ (5 needed) | Verdict |
+|---|---|---|
+| Price+2021, MCMC fits | 10–13 | refuted |
+| Genzel+2020, least-squares fits | 6 | refuted |
+
+- **Scope:** both verdicts hold across the whole γ range DESI DR2 allows (about 0.43–0.56). At γ = 0.3, outside that range, the Genzel fits are inconclusive.
+- **RC100 (100 galaxies):** dark-matter fraction falls with redshift as (1+z)^−1.07±0.33, while the cap needs an exponent of 2.2–2.9 (3.5–5.6σ apart).
+- **What it gets right:** the level at z=0 and the direction of the decline. It gets the steepness wrong, and no power of Ω_m(z) fixes that.
+- **The one escape:** a Salpeter IMF on top of the least-squares fits is inconclusive. But it requires 2–5 of the 21 discs to have more visible mass than their measured rotation allows, at > 2σ.
+
+**z=0 environment version (SPARC).** This was the only variant that could rescue SPARC's dwarfs. It fails the pre-registered level test: only 23–36% of 141 discs fit, and I'd declared in advance that this test was close to guaranteed to fail. Every "floor set at an earlier epoch" variant is also ruled out at z=0, because the dark-energy C never drops below Ω_m in the past.
+
+**A lead, not a result.** Discs needing more boost do sit in emptier surroundings (rank correlation −0.31), the sign this reading predicts. It survives luminosity, surface-brightness and morphology controls. About a third of it is disc extent. The remaining −0.2 has the sign of an external-field effect, and the rotation-curve residuals at low acceleration show no environment dependence, though that check isn't decisive alone. This is the cheapest next run.
+
+**Two errors of mine, caught and fixed before commit:**
+- I wrote that a floor tracking Ω_m(z)^p with p ≈ 0.4 would match RC100's slope. Computed, it makes the slope steeper.
+- An upper bound that ignored distance errors would have supported an unearned "13σ". That line now states what the data require instead.
+
+**Maintainer P0:** replace "closes without data" / "no high-z discriminator exists" / "No data was needed" on `/tier-1-existing` and `/parameter-derivations`, and the "may be unrunnable" note on `/test-catalog`, with the executed result. Also, the maintainer script's printed sentence "B_max(z=2) ≤ 1.1 for every γ in [0.3, 2]" contradicts its own table (1.201 at γ = 0.3); SESSION_FOCUS repeats it.
+
+**Research question to put to the next session:** how many other "closed without data" verdicts cite the data that would decide them? It's a grep, and the mirror of the over-refutation audit. I added it to the over-refutation memory file.
+
+Outputs are in `explorer/`:
+- `findings/evolving-floor-executed-on-high-z-kinematics-refuted-and-the-08-08-closure-was-void.md`
+- `findings/scripts/evolving_floor_highz_and_ambient_z0.py`
+- `findings/scripts/ambient_floor_z0_correlation_controls.py`
+- `data/highz_fdm/`
+- `logs/2026-09-11.md`
+
+Tool status: NotebookLM wasn't authenticated. Gmail, Google Calendar and Google Drive need authorizing in claude.ai connector settings. The playwright server failed to connect (`npx` not on PATH). None of these were needed today.
+
+Sources:
+- [Genzel et al. 2020, ApJ 902, 98](https://ui.adsabs.harvard.edu/abs/2020ApJ...902...98G)
+- [Price et al. 2021, arXiv:2109.02659](https://arxiv.org/pdf/2109.02659)
+- [Nestor Shachar et al. 2023 (RC100), arXiv:2209.12199](https://arxiv.org/abs/2209.12199)
+- [DESI DR2 Results II, arXiv:2503.14738](https://arxiv.org/abs/2503.14738)

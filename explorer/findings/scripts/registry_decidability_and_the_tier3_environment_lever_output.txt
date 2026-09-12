@@ -1,0 +1,118 @@
+==============================================================================
+A.  ATTENTION TOPOLOGY OF THE TEST REGISTRY
+==============================================================================
+id       tier              pages  mentions   other pages
+TEST-01  tier-1-existing       3        12   galaxy-rotation, test-catalog
+TEST-02  tier-1-existing      10        29   cosmology-predictions, falsifiability, galaxy-rotation, honest-assessment, mond-comparator, quantum-predictions, test-catalog, top-5-tests, what-synchronism-is-not
+TEST-03  tier-1-existing      14        60   ., cdm-discrimination, cosmology-predictions, dark-matter, falsifiability, galaxy-plotter, galaxy-rotation, honest-assessment, key-claims, rar-scatter, research-philosophy, test-catalog, why-synchronism
+TEST-03s (out-of-band)         5        11   galaxy-rotation, honest-assessment, quantum-predictions, test-catalog, tier-1-existing
+TEST-04  tier-1-existing       7        21   bao-coherence-modulation, cosmology-predictions, falsifiability, honest-assessment, research-philosophy, top-5-tests
+TEST-04a (out-of-band)        11        35   ., bao-coherence-modulation, cosmology-predictions, falsifiability, for-researchers, galaxy-rotation, honest-assessment, research-philosophy, test-catalog, tier-1-existing, top-5-tests
+TEST-05  tier-1-existing      14        47   cdm-discrimination, cosmology-predictions, dark-matter-failure, galaxy-plotter, galaxy-rotation, honest-assessment, key-claims, mond-unification, quantum-predictions, rar-scatter, research-philosophy, tier-3-major, why-synchronism
+TEST-06  tier-1-existing       2         3   honest-assessment
+TEST-07  tier-1-existing       5        11   bao-coherence-modulation, cosmic-interference, tier-3-major, top-5-tests
+TEST-08  tier-1-existing       3         5   galaxy-rotation, honest-assessment
+TEST-09  tier-1-existing      12        47   ., coherence-function, falsifiability, for-researchers, galaxy-plotter, honest-assessment, key-claims, mond-unification, parameter-derivations, prediction-tracker, test-catalog
+TEST-10  tier-1-existing      13        42   ., coherence-function, falsifiability, for-researchers, galaxy-plotter, honest-assessment, key-claims, mond-unification, mrh, parameter-derivations, prediction-tracker, test-catalog
+TEST-11  tier-2-pilots         4        11   test-catalog, tier-1-existing, top-5-tests
+TEST-12  tier-2-pilots         1         1   -- NONE --
+TEST-13  tier-2-pilots         1         1   -- NONE --
+TEST-14  tier-2-pilots         1         1   -- NONE --
+TEST-15  tier-3-major          3         5   falsifiability, top-5-tests
+TEST-16  tier-3-major          1         1   -- NONE --
+TEST-17  tier-3-major          1         1   -- NONE --
+TEST-18  tier-3-major          1         1   -- NONE --
+TEST-19  tier-3-major          1         1   -- NONE --
+TEST-20  tier-3-major          1         1   -- NONE --
+TEST-21  tier-3-major          1         1   -- NONE --
+TEST-22  tier-4-frontier       1         1   -- NONE --
+TEST-23  tier-4-frontier       1         1   -- NONE --
+TEST-24  tier-4-frontier       2         3   test-catalog
+TEST-25  (out-of-band)         8        32   ., coherence-explorer, galaxy-plotter, galaxy-rotation, honest-assessment, test-catalog, tier-1-existing, top-5-tests
+TEST-26  (out-of-band)         6        14   cosmology-predictions, dark-energy, honest-assessment, test-catalog, tier-1-existing, top-5-tests
+
+Tier 1: 10 cards | mean off-tier pages 7.30 | cards appearing NOWHERE but their own tier page: 0
+Tier 2: 4 cards | mean off-tier pages 0.75 | cards appearing NOWHERE but their own tier page: 3
+Tier 3: 7 cards | mean off-tier pages 0.29 | cards appearing NOWHERE but their own tier page: 6
+Tier 4: 3 cards | mean off-tier pages 0.33 | cards appearing NOWHERE but their own tier page: 2
+
+==============================================================================
+B.  THE ENVIRONMENT LEVER IN TEST-20's OWN STATISTIC  (f_DM at fixed baryons)
+==============================================================================
+SPARC galaxies after Q<=2, i>30 cut: 149 of 175
+points dropped for having no measured baryonic surface density (rho_bar <= 8.33e-04): 152
+measured points: 2985
+baryonic mid-plane rho  (Msun/pc^3): median 2.913e-02  10th pct 4.267e-03  min 8.522e-04
+mean cosmic matter density rho_amb(delta=0) = 4.284e-08 Msun/pc^3
+
+B1  framework, DENSITY-keyed, floored C = max(Om, tanh(g ln(1+rho/rho_c)))
+    Delta f_DM = C(rho+rho_amb^void) - C(rho+rho_amb^cluster), per point
+    knee                            gamma   max|df_DM|      median   90th pct
+    S691 registered 1e-23 kg/m3     0.489    9.357e-03   1.602e-05  6.321e-04
+    S691 registered 1e-23 kg/m3     2.000    1.470e-04   7.554e-12  9.499e-08
+    Refracted Gravity fitted        0.489    1.165e-03   8.713e-05  8.216e-04
+    Refracted Gravity fitted        2.000    7.858e-03   1.549e-05  2.969e-03
+    published A*Vflat^2 (MW)        0.489    0.000e+00   0.000e+00  0.000e+00
+    published A*Vflat^2 (MW)        2.000    0.000e+00   0.000e+00  0.000e+00
+    galaxy-sector working           0.489    3.328e-04   1.732e-07  2.351e-04
+    galaxy-sector working           2.000    2.248e-03   6.167e-05  1.629e-03
+    WORST CASE over all knees, all gamma, all retained points: |Delta f_DM| = 9.357e-03
+      sensitivity: outer-gas floor Sigma =  2.0 Msun/pc^2 (rho = 3.3e-03)  ->  worst |Delta f_DM| = 4.789e-03
+      sensitivity: outer-gas floor Sigma =  1.0 Msun/pc^2 (rho = 1.7e-03)  ->  worst |Delta f_DM| = 7.508e-03
+      sensitivity: outer-gas floor Sigma =  0.5 Msun/pc^2 (rho = 8.3e-04)  ->  worst |Delta f_DM| = 9.357e-03
+      sensitivity: outer-gas floor Sigma =  0.1 Msun/pc^2 (rho = 1.7e-04)  ->  worst |Delta f_DM| = 9.357e-03
+
+B2  MOND (mu_simple) + EFE, same galaxies, same points
+    e_N = g_ext/a0.  Anchored on Chae+2021's fitted-and-located SPARC sample.
+      median f_DM  Chae void (e_N=0)            0.6365
+      median f_DM  field (e_N=0.033)            0.6363
+      median f_DM  Chae overdense (e_N=0.066)   0.6355
+      median f_DM  rich cluster (e_N=0.30)      0.6173
+    Delta f_DM at the MEASURED SPARC contrast (e_N 0 -> 0.066): median 9.43e-04  90th 4.25e-03  max 6.19e-02
+    Delta f_DM at a rich-cluster contrast (e_N 0 -> 0.30):       median 1.92e-02  90th 8.25e-02  max 2.31e-01
+    restricted to g_bar < 0.1 a0 (N=1101): measured-contrast median 3.24e-03  max 6.19e-02
+
+
+    LIKE FOR LIKE, same galaxies, same environmental contrast SPARC spans:
+      framework, best case over knees x gamma (Refracted Gravity fitted @ gamma=0.489):
+        Delta f_DM  median 2.65e-06  low-g median 1.27e-05  max 3.59e-05
+      MOND + EFE (Chae measured contrast):
+        Delta f_DM  median 9.43e-04  low-g median 3.24e-03  max 6.19e-02
+      RATIO (low-g median, MOND/framework): 255.5x
+
+B3  framework, ACCELERATION-keyed C(a): the law's only argument is g_bar,
+    which is held fixed by TEST-20's 'at same M_bar' protocol.
+    Delta f_DM = 0 identically, at every gamma, every knee, every galaxy.
+
+B4  could the framework be AMBIENT-keyed instead (making TEST-20 live)?
+    Ambient density is constant to ~1e-6 across a galaxy, so C would be a
+    per-galaxy constant and g_eff = g_N/C is a pure rescaling of G.
+    Best per-galaxy CONSTANT boost vs MOND on the same curves:
+      constant-boost (ambient keying)  chi2/N = 99.82   (per-galaxy median 8.23)
+      MOND simple mu                   chi2/N = 51.84   (per-galaxy median 10.54)
+      aggregate ratio 1.93x worse, but the PER-GALAXY
+      MEDIAN goes the other way -- the aggregate is carried by the best-measured
+      discs.  chi2 alone does NOT settle this; the shape test below does.
+
+    Parameter-free version (no fitting at all): under ambient keying C is a
+    per-galaxy constant, so g_obs = g_bar / C and the RAR is a line of slope
+    EXACTLY 1 in log-log, for every galaxy, every gamma, every knee.
+      observed RAR log-slope, g_bar < 0.1 a0 (N=1101): 0.330 +/- 0.017   -> 40.3 sigma from 1
+      observed RAR log-slope, g_bar < 0.03 a0 (N= 258): 0.161 +/- 0.025   -> 32.9 sigma from 1
+      Ambient-only keying is excluded by the RAR slope alone, with no free
+      parameter.  The density-keyed branch is therefore forced to be
+      baryon-local, which is what makes B1's lever as small as it is.
+
+B5  detectability, at the environmental contrast SPARC actually spans
+    framework  Delta f_DM, low-g median : 1.27e-05  (absolute ceiling over any delta up to 1000: 9.36e-03)
+    MOND + EFE Delta f_DM, low-g median : 3.24e-03
+    per-galaxy f_DM precision on resolved HI curves: ~0.05 (Upsilon*-dominated),
+    so NEITHER is a single-galaxy measurement; both need a stacked estimator.
+    Stacked N needed to reach 3 sigma at sigma_gal = 0.05:
+      framework    N = 1.39e+08 galaxies
+      MOND+EFE     N = 2.14e+03 galaxies
+    Chae+2021 did not use Delta f_DM -- they fitted e_N per galaxy from the outer
+    RC shape, a sharper estimator, and got >4 sigma on ~150 SPARC galaxies.
+    The framework's signal is smaller by the ratio above in ANY estimator that is
+    linear in the environmental perturbation.
+

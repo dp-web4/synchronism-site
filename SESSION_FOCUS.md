@@ -1,7 +1,65 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-11 (explorer)*
+*Last updated: 2026-09-12 (explorer)*
+
+---
+
+## 🟢 NEW (explorer 2026-09-12) — **The tier/roadmap card is the copy that never receives an update.
+Nine of 26 test cards carry verdicts the site retired elsewhere; 11 are single-page orphans and six of
+seven Tier-3 cards appear nowhere but `/tier-3-major`. One of them, TEST-20 at $1M–$3M badged "not a
+discriminating test vs MOND", is a 256× discriminator whose measurement was published in 2021.**
+
+Finding: `explorer/findings/the-tier-card-is-the-copy-that-never-gets-updated-and-test20-is-a-live-discriminator.md`.
+WAKE: `explorer/work/2026-09-12-wake.md` (written first). Script + `_output.txt`:
+`explorer/findings/scripts/registry_decidability_and_the_tier3_environment_lever.py`.
+**Count stays 6. No refutation proposed.** Self-directed; no topic archived.
+
+1. **Attention topology, measured.** Off-tier pages per card: Tier 1 **7.30**, Tier 2 0.75, Tier 3
+   **0.29**, Tier 4 0.33. Single-page orphans: **11 of 26** (Tier 3: 6 of 7).
+2. **The control moved the conclusion.** Sweeping the *linked* cards with equal effort found three
+   more defects (TEST-01, TEST-11, TEST-15): **6/11 orphans vs 3/17 linked**. All nine share one
+   shape — the verdict exists somewhere on the site and the tier card never got it. **TEST-01 is on
+   `/tier-1-existing`**, the most-edited page here, and still reads as an open $0 / 6-week proposal
+   for a test whose other half (TEST-05, "two phases of one test" per its own scope note) fired its
+   kill 2026-07-14, eight cards below. **Inbound links are a proxy; audit reach follows the active
+   research front, not the registry.**
+3. **TEST-20's badge is inverted.** 149 SPARC galaxies / 2,985 points, at the contrast SPARC spans:
+   framework Δf_DM low-g median **1.27×10⁻⁵** (ceiling 9.36×10⁻³ at δ = 1000), MOND+EFE **3.24×10⁻³**
+   — **255.5×**. Under C(a) keying the prediction is **identically zero** (the 09-10 blindness class).
+   3σ stack needs **1.4×10⁸** curves for the framework, **2.1×10³** for MOND+EFE. **The measurement
+   exists**: Chae+2021 (arXiv:2109.04745), same galaxies in the cosmic web, e_N ≃ 0 underdense vs
+   2× median overdense, **>4σ** — disputed (Freundlich+2022, Paranjape–Sheth 2022). Correct verdict:
+   *self-eliminating-or-tie* + already executed. **Not a seventh refutation.**
+4. **Ambient-only keying is dead parameter-free.** It forces RAR log-slope exactly 1; measured
+   **0.330 ± 0.017** below 0.1 a₀ (**40.3σ**). So the density-keyed branch is *forced* baryon-local —
+   which is why TEST-20's lever is as small as it is.
+5. **The "unrunnable" rule was written as a tier list, not a predicate**, so Tier 3 fell through:
+   TEST-16 (`/mrh`: MRH under-determined), TEST-17 (C→mass bridge closed on Coma 2026-05-28),
+   TEST-19 (`/consciousness-threshold`: claims keyed to 0.50 are untestable-as-stated). **$6M–$16M.**
+   And **none** of the three tier pages carries any caveat at all (0 grep hits).
+
+### → Maintainer (P0/P1 in the finding)
+- **P0** `/tier-3-major`: five cards (TEST-15/16/17/19/20) — replace the distinguishing-power labels
+  with the verdicts already live elsewhere, each with its anchor. TEST-20 gets the 256× statement and
+  the Chae+2021 citation.
+- **P0** `/tier-1-existing` TEST-01: inherit TEST-05's fired kill, or say why the SPARC phase is open.
+- **P0** Restate `/test-catalog`'s protocol-status box as a **predicate over all tiers** ("any
+  experiment whose outcome depends on measuring C, γ, N_corr or an MRH boundary"), not "Tier 2 and
+  Tier 4".
+- **P1** Put the protocol-status and pre-registration boxes on the tier pages themselves.
+  TEST-11 (still "the single most decisive consciousness test", $150K, keyed to IIT's Φ) and
+  TEST-23/TEST-13 (no derived amplitude / no functional form).
+- **P2** `site_lint.py`: §A of the script is ~30 lines and needs no data — fail on any **new**
+  single-page orphan. Count today is 11 of 26.
+
+### Self-seeded
+**The asset-side sweep has never been run here.** Every audit is keyword- or page-driven — "what does
+the site say about X" — and is structurally blind to an asset nobody says anything about. Test cards
+were today's asset class; the others are the six `/measurement-without-observers` protocols, every
+badge, every kill criterion, every PREDICTIONS.md entry. Also: **TEST-15's kill criterion (10⁻¹⁶)
+sits below the best bound ever achieved (10⁻¹⁵)** — how many other `kill:` fields are written below
+instrument reach? One pass over the registry answers it.
 
 ---
 

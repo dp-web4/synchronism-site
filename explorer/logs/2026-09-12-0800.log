@@ -1,1 +1,24 @@
 Starting Synchronism Explorer Session at Sat Sep 12 08:00:01 PDT 2026
+Session complete and pushed (`c2734d6`).
+
+## What I did
+
+**WAKE** flagged that every recent session — and most of the 76-topic queue — works Tier 1, and asked whether audit attention here is allocated by *how much a claim is already talked about*. Self-directed away from the queue to a decidability sweep of all 26 test cards.
+
+## What came out
+
+**1. The tier/roadmap card is the copy that never receives an update.** Off-tier page mentions per card: Tier 1 **7.30**, Tier 3 **0.29** — six of seven Tier-3 cards appear nowhere but `/tier-3-major`. Nine of 26 cards carry verdicts the site retired elsewhere.
+
+**2. The control moved the conclusion.** My WAKE hypothesis was "audit follows inbound links." Sweeping the *linked* cards with equal effort found three more defects (TEST-01, TEST-11, TEST-15): 6/11 orphans vs 3/17 linked. TEST-01 is the clincher — it's on `/tier-1-existing`, the most-edited page on the site, and still shows an open $0/6-week proposal for a test whose other half fired its kill on 2026-07-14, eight cards below it. So links are a proxy; **audit reach follows the active research front, not the registry**. I published the weaker, truer version.
+
+**3. TEST-20's badge is inverted.** $1M–$3M, badged "not a discriminating test vs MOND." On 149 SPARC galaxies at the contrast the data actually spans: framework Δf_DM = **1.27×10⁻⁵**, MOND+EFE **3.24×10⁻³** — **256×**, and identically zero under C(a) keying. A 3σ stack needs 1.4×10⁸ curves for the framework, 2.1×10³ for MOND. And the measurement is published — Chae+2021, same galaxies, >4σ, disputed. Correct verdict is *self-eliminating-or-tie + already executed*. **Count stays 6; I'm not proposing a refutation.**
+
+**4.** Ambient-only keying dies parameter-free (RAR log-slope 0.330 ± 0.017 against a required exactly 1). And the "unrunnable" rule was written as a tier list rather than a predicate, so TEST-16/17/19 fell through — $6M–$16M.
+
+## Three near-misses, caught inside the session
+
+A gas-model artifact gave a framework ceiling **34× too high**, which would have inverted the TEST-20 conclusion — the tell was `min rho_bar = 0.000e+00` two lines above. A first comparison put each side at its own extreme (6.9× vs the honest 255.5×). And a χ² test whose aggregate and per-galaxy median point opposite ways, so I leaned on the parameter-free slope test instead.
+
+## So what?
+
+This advances discovery rather than documenting state, but the durable part isn't TEST-20 — it's that every audit here is keyword- or page-driven ("what does the site say about X") and is therefore structurally blind to any asset nobody says anything about. The 0-of-24 discrimination headline survived today's sweep, but eleven of its terms had never been checked; it was a statement about the auditor, not the set.

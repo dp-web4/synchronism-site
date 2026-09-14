@@ -1,0 +1,53 @@
+Starting Synchronism Maintainer Session at Mon Sep 14 06:00:01 PDT 2026
+I finished the session and pushed both repos (site `d214fb9`, research archive `24eebc5a`). `next build` passes. The retired-phrase lint finds 0 hits in the new source and 38 in the pre-session version.
+
+The maintainer runs on 09-12 and 09-13 never happened (09-13 ran out of usage credits). So this session also picked up the unhandled P0 fixes from the explorer's 09-11 and 09-12 findings.
+
+## WAKE: one real research gap
+The visitor researcher noticed that the dark-energy equation, H² = 8πGρ_m/(3C), is a **Cardassian model** (Freese & Lewis 2002). Searching every file in both repos for "cardassian" or "freese" finds nothing. I checked the match numerically:
+- At γ = ½ it is exactly ΛCDM.
+- At high density it becomes the modified-polytropic Cardassian form with n = 1 − 2γ.
+- At low density it behaves like a cosmological constant.
+
+A 2005 paper (Koivisto et al.) already rules out Cardassian models except close to ΛCDM, because they overproduce the late ISW signal. That covers most of what the archive worked out in August. I haven't applied that result to this exact equation, so that part is untested, not refuted.
+
+The proposal was written before any site fix. Its main point: the program misses prior art when nobody asks the question, which cuts against the A2ACW worry that LLM audits find too much of it. PREDICTIONS.md and Session 100 now cite the class, with no bucket changes: the count stays at 6 refutations and 0 confirmed.
+
+## The biggest site problem: saying "could not" where the truth is "did not"
+- **"0 executed tests could select Synchronism"** appeared on five pages. It is false. TEST-09 and TEST-10 would have picked the framework over MOND if its boost cap had held; they ran and lost. Related forms: "cannot win" (/for-researchers), "never won" (/dark-energy), TEST-26 "structurally unable to select", and "Can only tie or refute" on /mond-unification. The archive corrected this argument on 07-29, but the correction never reached the site. All now say "0 selected, and none still unrun can".
+- **Bell/CHSH** was called a "theorem" in six places. It is now a "construction check": the local arm just illustrates Bell's theorem, and the two nonlocal constructions simply failed. The refutation count stays 6.
+- The sentence breaking down the refutations now adds up: 6 refutations from 5 roots.
+
+## Other site fixes
+- **Which C:**
+  - The landing page now says which version of the equation the galaxy numbers used.
+  - The plain-language box on Honest Assessment no longer claims "the one equation fits galaxy rotation".
+  - /core-idea now says which way coherence changes gravity.
+- **Leftover over-claim:** the Coherence Explorer still said the curve "works across quantum to cosmic scales", which was refuted in Session 633. Removed.
+- **Explorer 09-12 fixes:**
+  - The Tier-3 cards now show their current verdicts. TEST-20's effect is about 255× smaller than MOND's, and Chae et al. already measured the MOND side in 2021.
+  - TEST-01 now shows the environment run's kill, and that one run has one primary card instead of three.
+  - The "unrunnable" rule now applies to every tier.
+- **Explorer 09-11 fixes:**
+  - The evolving-floor result (tested and refuted) replaces "No data was needed".
+  - The z = 2 values were wrong: the max boost ranges 1.002–1.201 across γ, not "1.09 for every γ", and the dark-matter-fraction cap is 0.075, not 0.05.
+- **/for-researchers:** the A2ACW card is rebuilt as a short current-state summary with the old revisions in a collapsed history. It includes the sample-size limits: a perfect 6/6 run only proves a Youden's J of at least 0.08.
+- **Glossary:** four new entries (refutation, with the counting rule; interpolating function; Milgrom; knee).
+
+I sent three pages to parallel subagents and checked their reports before accepting them. Two corrections came out of that:
+- **Wrong citation fixed:** Freundlich et al. 2022 found no External Field Effect in Coma cluster galaxies. The site had cited it as a ΛCDM explanation of Chae's result.
+- **Agent pushed back on my instructions:** I had asked one agent to cite the environment result (r² = 0.0001) as evidence against the density version. It declined, because Honest Assessment says that result is consistent with the equation's tiny predicted effect. It was right.
+
+**Explorer topics seeded:**
+- a prior-art check on every equation the program has tested;
+- whether dated in-place correction notes are now the main cause of pages contradicting themselves.
+
+**Needs your decision:**
+- how to word the TEST-26 registration: cite the Cardassian class and set a numeric kill threshold;
+- whether to send the globular-cluster result to the Refracted Gravity authors.
+
+**Deferred:**
+- limiting badge labels to the defined list;
+- one shared γ regime scheme across the tools;
+- the Galaxy Plotter's MOND curve, which may start about 7% low (I haven't verified this);
+- the consciousness demo's 0.50 threshold, which the visitor says only holds at γ = ½ (not re-derived).

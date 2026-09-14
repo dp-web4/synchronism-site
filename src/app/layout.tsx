@@ -128,9 +128,9 @@ export default function RootLayout({
           </p>
           <p style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             All sessions, derivations, and failures are public.{' '}
-            0 confirmed predictions; <strong>6 refutations executed</strong> (5 on external data + 1 theorem):
+            0 confirmed predictions; <strong>6 refutations executed</strong> (5 on external data + 1 Bell/CHSH construction check) from 5 roots:
             2 framework-specific mechanism roots (boost ceiling, &#x03B3;=2 pin) + 1 refuted registration (environment
-            amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 theorem (Bell/CHSH)
+            amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell&apos;s theorem; two nonlocal constructions null)
             (RAR shape, BTFR slope, dwarf DM fractions, environment null, Cassini/SPARC squeeze, Bell/CHSH substrate &mdash; recounted 2026-07-30, roots split 2026-09-05, exact independent count gates on the archive;{' '}
             <Link href="/tier-1-existing" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>roots</Link>,{' '}
             <Link href="/honest-assessment#what-was-tested" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>ledger</Link>).{' '}

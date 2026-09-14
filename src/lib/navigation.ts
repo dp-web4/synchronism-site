@@ -271,7 +271,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'RAR Scatter',
       href: '/rar-scatter',
-      desc: 'NP2 environment-dependent scatter (p = 5\u00D710\u207B\u2076)',
+      desc: 'Environment-dependent RAR scatter — registered >20% amplitude, refuted as registered (r² = 0.0001)',
       keywords: ['RAR', 'scatter', 'NP2', 'environment', 'radial', 'acceleration'],
       prerequisites: ['/galaxy-rotation'],
       related: ['/cdm-discrimination', '/cosmology-predictions'],

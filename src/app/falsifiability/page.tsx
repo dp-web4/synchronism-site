@@ -175,7 +175,7 @@ export default function Falsifiability() {
             <li><strong>2 criteria fired</strong> (TEST-09, TEST-10) — both against the framework.</li>
             <li>
               <strong>2 executed tests discriminated</strong> between Synchronism and MOND+EFE+ΛCDM,
-              and both selected MOND. <strong>0 executed tests could select Synchronism.</strong>{' '}
+              and both selected MOND. <strong>0 executed tests selected Synchronism.</strong> (&ldquo;could select&rdquo; until 2026-09-14 &mdash; false for TEST-09/10, which would have selected the framework had its boost ceiling held; they ran and selected MOND){' '}
               Those are different statements and the site conflated them until 2026-07-27.
             </li>
             <li>

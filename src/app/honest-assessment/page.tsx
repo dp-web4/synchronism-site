@@ -200,7 +200,7 @@ export default function HonestAssessment() {
           never fits better than it. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
           own scoreboard — zero confirmed predictions, <strong>six</strong> executed refutations
           resting on two framework-specific mechanism roots, plus one refuted registration, one constraint
-          inherited from MOND, and one theorem. (This sentence read &ldquo;four executed
+          inherited from MOND, and one Bell/CHSH construction check. (This sentence read &ldquo;four executed
           refutations&rdquo; until 2026-08-09 and &ldquo;three to four independent roots&rdquo; until 2026-09-05,
           while the landing page said two &mdash; three visitor personas caught the drift on one day. One count,
           one split, classified by kind in the table below and imported site-wide from a single source file.) <strong>Why does the site
@@ -226,8 +226,8 @@ export default function HonestAssessment() {
           free-γ = MOND). The predictions we thought were novel turned out to already exist in physics under
           different names. Zero predictions have been independently confirmed.
           Zero parameters have an independent first-principles derivation — the last surviving candidate (A-from-Jeans) was closed as audited-negative on 2026-06-07: the Session 66 script produces A ≈ 4.6×10⁻⁵ (600× off the stated 0.029) under the framework&apos;s own ρ<sub>crit</sub> ∝ V² scaling.
-          Scoreboard: <strong>0 confirmed, 0 prospective predictions tested, 6 refutations executed on external
-          data, 5 reparametrizations, 0 independently-derived parameters</strong> (recounted 2026-07-30; the BTFR
+          Scoreboard: <strong>0 confirmed, 0 prospective predictions tested, 6 refutations executed (5 on external
+          data), 5 reparametrizations, 0 independently-derived parameters</strong> (recounted 2026-07-30; the BTFR
           slope moved from the reparametrization list to an executed refutation on 2026-07-14, and the Cassini/SPARC
           squeeze and Bell/CHSH substrate test were added to the count on 2026-07-30 &mdash; both were already
           executed and badged Failed/Refuted elsewhere on the site).
@@ -235,8 +235,8 @@ export default function HonestAssessment() {
         <div style={{ marginTop: '0.75rem' }}>
           <strong style={{ color: 'var(--color-text-primary)', fontSize: '0.95rem' }}>What a non-physicist should take away:</strong>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0.5rem 0 0', paddingLeft: '1.25rem' }}>
-            <li>The one equation fits galaxy rotation — but only as well as MOND, an existing 40-year-old idea, and never better.</li>
-            <li>Its one genuinely distinguishing galaxy prediction (the mass&ndash;speed relation, TEST-09) was run against real data in July 2026 and failed its own pre-stated kill criterion at 3.3σ; its cosmology prediction (slower growth of cosmic structure) is disfavored but that test turned out to lack the power to decide.</li>
+            <li>The equation driven by <em>density</em> &mdash; the actual idea &mdash; does not fit galaxy rotation (the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link> shows it failing). A version with its input switched to <em>acceleration</em> and one dial fitted to the data does fit &mdash; but at that setting it becomes MOND, an existing 40-year-old idea, and never does better. (Reworded 2026-09-14: this line used to say &ldquo;the one equation fits galaxy rotation,&rdquo; which a reader fairly took as contradicting the plotter.)</li>
+            <li>Its one galaxy prediction that differed from MOND (how a galaxy&apos;s mass relates to its rotation speed) was checked against real data in July 2026 and failed the test it had set for itself &mdash; by far too much to be a fluke. Its cosmology prediction (slower growth of cosmic structure) is disfavored, but that test turned out too weak to decide.</li>
             <li>None of its numbers come from first principles — every parameter is fitted to data or simply asserted.</li>
             <li>No currently proposed experiment can tell it apart from existing physics.</li>
             <li>The real product is this audit itself: every failure documented, with the numbers, by the same project that made the claims.</li>
@@ -267,8 +267,8 @@ export default function HonestAssessment() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 0 prospective
           predictions tested, 6 refutations executed</strong> &mdash; 5 on external data (astronomical, ephemeris, and
-          laboratory) plus the Bell/CHSH substrate check, which is a theorem executing as designed and is counted as
-          a run, not as data (wording corrected 2026-09-05; this line said &ldquo;6 on external data&rdquo; while the
+          laboratory) plus the Bell/CHSH substrate check, counted as a run, not as data: its local arm illustrates Bell&apos;s theorem, its two
+          nonlocal arms are construction nulls (&ldquo;theorem&rdquo; relabelled 2026-09-14) (wording corrected 2026-09-05; this line said &ldquo;6 on external data&rdquo; while the
           table below classified one of the six as a theorem). &ldquo;Prospective&rdquo; here means the criterion was
           fixed <em>before the data existed</em>; TEST-09&apos;s registered kill fired on pre-existing SPARC data, so it
           is registered-retrospective and does not raise the prospective count above 0. The sharpest events, in order
@@ -281,7 +281,7 @@ export default function HonestAssessment() {
           <Link href="/parameter-derivations" style={{ color: '#f59e0b' }}>Parameter Derivations</Link> badges{' '}
           <em>Asserted, Not Derived</em> &mdash; so strictly they refute the assertion. The honest split (revised
           2026-09-05 from &ldquo;3&ndash;4 roots&rdquo;) is <strong>2 framework-specific mechanism roots + 1 refuted
-          registration + 1 inherited from MOND + 1 theorem</strong> &mdash; see the classification table below and{' '}
+          registration + 1 inherited from MOND + 1 Bell/CHSH construction check</strong> &mdash; see the classification table below and{' '}
           <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>Tier 1</Link>. Three expert visitor passes
           have now flagged the footer&apos;s bare &ldquo;6&rdquo; against that body text; the footer now carries the
           qualifier. The two failures that depend on <em>no</em> convention and <em>no</em> data are the
@@ -365,8 +365,8 @@ export default function HonestAssessment() {
         </p>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
           <li>
-            <strong>0 executed tests could select Synchronism over MOND+EFE+ΛCDM.</strong> This is the true
-            statement, and it is the one the site meant.
+            <strong>0 executed tests selected Synchronism over MOND+EFE+ΛCDM, and no unrun test can.</strong> This is the true
+            statement (&ldquo;could select&rdquo; until 2026-09-14 &mdash; false for TEST-09/10, which would have selected the framework had its boost ceiling held; they ran and selected MOND).
           </li>
           <li>
             <strong>2 executed tests discriminated between them, and both selected MOND</strong> — TEST-09
@@ -400,7 +400,7 @@ export default function HonestAssessment() {
             item 2). Leaving &gamma;&nbsp;=&nbsp;&frac12; is not an escape for this framework; it is a 2.10&times; penalty.
             <br /><strong>A refutation your own best fit drives you into, and that you cannot leave without paying
             2.10&times;, is framework-specific.</strong> If that reading is adopted the split becomes <strong>3
-            framework-specific mechanism roots + 1 refuted registration + 1 theorem</strong>, and the landing
+            framework-specific mechanism roots + 1 refuted registration + 1 Bell/CHSH construction check</strong>, and the landing
             scoreboard&apos;s &ldquo;2 framework-specific&rdquo; becomes 3.
             <br /><em>Not changed unilaterally.</em> Refutation classification is ledger governance and gates on dp
             &mdash; routed in <code>Research/proposals/test02_amplitude_is_knee_conditional_and_a2acw_positive_control_20260910.md</code>.
@@ -525,7 +525,7 @@ export default function HonestAssessment() {
                 <tr><td style={{ padding: '0.4rem' }}>RAR shape, &#x0394;BIC = +184 at &#x03B3;=2</td><td style={{ padding: '0.4rem' }}>The asserted &#x03B3;=2 pin <strong>in the acceleration-keyed realization</strong> (C as an implicit μ on g<sub>obs</sub> &mdash; target column added 2026-09-08). Free-&#x03B3; &rarr; 0.489 recovers MOND, so this refutes a pin, not a mechanism. The density-keyed C(&#x03C1;) is refuted by a different route: head-to-head &#x0394;BIC +2843 with &#x03B3; free, the boost ceiling, the Oort limit &mdash; and its registered globular-cluster test forked (<a href="#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>below</a>)</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>Environment scatter, r&sup2; = 0.0001 (Session 177&apos;s registration, run as registered; filed on <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> as TEST-03s, a substitute for the never-run ALFALFA TEST-03. The research ledger labels this run &ldquo;TEST-08&rdquo;, which on this site is the Freeman-law card &mdash; an ID collision, flagged 2026-09-11)</td><td style={{ padding: '0.4rem' }}>The <em>registered</em> amplitude (S177: environment explains &gt;20% of RAR scatter, kill bar r&sup2; &lt; 0.09 &mdash; the claim and the kill bar bracket an undecided band, 0.09 &le; r&sup2; &lt; 0.20, where neither verdict fires; the measured value sits below both) &mdash; a number never derived from C(&#x03C1;). The equation&apos;s own ambient-density lever at SPARC outer radii is &le; 2&times;10<sup>&minus;3</sup> dex against ~0.1 dex of scatter, i.e. r&sup2; &asymp; 2&ndash;5&times;10<sup>&minus;4</sup> at most; the measured 1&times;10<sup>&minus;4</sup> is <em>consistent with the equation</em>. Reclassified 2026-09-05 (this row read &ldquo;the cleanest kill on the list&rdquo; until then; caught by a visitor researcher persona). The null stands as a permanent elimination of S177&apos;s claim and as a transferable result: the RAR is a universal local law to r&sup2; &lt; 10<sup>&minus;4</sup> against ambient density</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Registration-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>TEST-25 Cassini/SPARC, +17.95&sigma;</td><td style={{ padding: '0.4rem' }}>The RAR-preferred interpolating-function family &mdash; <strong>which MOND also uses</strong>. Published as Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781) at 8.7&sigma; &mdash; their figure marginalizes over a&#x2080;, M/L and RAR-fit uncertainty, which is why it is ~2&times; smaller than the +17.95&sigma; here (citation added 2026-09-06)</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Inherited from MOND <strong style={{ color: '#f87171' }}>&mdash; contested 2026-09-10, see below</strong></td></tr>
-                <tr><td style={{ padding: '0.4rem' }}>Bell/CHSH substrate (Bet B1), S &le; 2.00</td><td style={{ padding: '0.4rem' }}>Bell&apos;s theorem. A proof, not an experiment &mdash; this page calls it a &ldquo;pedagogical corollary&rdquo; elsewhere</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Theorem</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>Bell/CHSH substrate (Bet B1), S &le; 2.00</td><td style={{ padding: '0.4rem' }}>Local arm: Bell&apos;s theorem, illustrated. Nonlocal arms: two construction nulls &mdash; not a theorem about nonlocal no-signaling substrates, which Bell does not bound (Toner &amp; Bacon 2003 type untested; relabelled 2026-09-14) &mdash; this page calls it a &ldquo;pedagogical corollary&rdquo; elsewhere</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Construction check</td></tr>
                 <tr style={{ opacity: 0.8 }}><td style={{ padding: '0.4rem' }}><em>Not counted:</em> a&#x2080;(z) = cH(z)/2&#x03C0; vs the high-z RAR (Ciocan et al. 2026, arXiv:2604.22613)</td><td style={{ padding: '0.4rem' }}>The one prediction that structurally differs from MOND&apos;s constant a&#x2080;. Tested, and <strong>non-discriminating</strong>: the deviation is anchor-dominated (four published a&#x2080;(0) values spread 69%; consistent at 0.5&#x03C3; on the McGaugh+2016 anchor) and &#x039B;CDM+baryons simulations predict the same growth. Listed here 2026-09-05 because it appeared on no ledger &mdash; see <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link> row 4</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Non-discriminating</td></tr>
                 <tr style={{ opacity: 0.8 }}><td style={{ padding: '0.4rem' }}><em>Not counted:</em> Dark-energy sector (&rho;<sub>DE</sub> = &rho;<sub>m</sub>(1&minus;C)/C, Session 100) vs DESI DR2</td><td style={{ padding: '0.4rem' }}>A researcher persona (2026-09-06) asked why the sector&apos;s miss of DESI&apos;s w = &minus;1 crossing is not a seventh refutation. Because on <strong>direct likelihood fit</strong> (DR2 BAO + Planck priors + Dovekie SN, executed 2026-08-12) it is not a miss: the substituted family nests &Lambda;CDM at &gamma; = &frac12; and the data put it there (&gamma; = 0.487, &Delta;&chi;&sup2; = &minus;0.3 vs &Lambda;CDM), so it pays &Lambda;CDM&apos;s own ~2.9&sigma; crossing cost and no more. The quoted 3.4&ndash;5.4&sigma; came from forcing w&#x2080; to DESI&apos;s central value, a point the likelihood never visits. The two <em>covariant</em> completions do fail the fit outright (A: exact Einstein&ndash;de Sitter, &chi;&sup2; &asymp; 9,900; B: &Delta;&chi;&sup2; &ge; +79 at every &omega;, hardening to w&#x2080; = &minus;3.18 at the Cassini-allowed &omega; &ge; 4&times;10&#x2074;) &mdash; but those are completions the archive never committed to; refuting them bounds a class, it does not kill a registered prediction. Archive ledger: Bucket 3 &mdash; &Lambda;CDM where it lives, excluded where it would differ. See <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy &amp; DESI</Link></td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Reparametrization (&Lambda;CDM)</td></tr>
               </tbody>
@@ -537,7 +537,7 @@ export default function HonestAssessment() {
             <strong>two framework-specific mechanism roots</strong>, and the second refutes a parameter that was never
             derived. One entry refutes a <em>registration</em> the equation never implied (environment). One is a
             published MOND constraint the framework inherits by being in the same IF family; it does not discriminate
-            between the two. One is a theorem, and a theorem is not &ldquo;external data.&rdquo; So the split to quote is
+            between the two. One is a Bell/CHSH construction check, which is not &ldquo;external data.&rdquo; So the split to quote is
             <strong>2 + 1 + 1 + 1</strong>, and the landing page&apos;s &ldquo;2 framework-specific&rdquo; was the accurate
             figure all along; the &ldquo;3&ndash;4&rdquo; this page carried from 2026-08-08 to 2026-09-05 counted the
             environment null as a mechanism root. The archive&apos;s own independence audit reads &ldquo;&le;5&rdquo; and the
@@ -902,8 +902,8 @@ export default function HonestAssessment() {
               theory of the form g = g<sub>N</sub>/C(ρ):</strong> ρ<sub>c</sub> ∈ 0.1–300 M<sub>☉</sub>/pc³ is excluded at γ = 0.489,
               narrowing to 0.5–100 at γ = 2 &mdash; and the two knees this framework has <em>calibrated</em> (the A·V² value at
               650, the measured 0.161) are inside or at the edge of it, while Refracted Gravity&apos;s
-              published knee (0.0083) passes across its whole 1σ range, even with this framework&apos;s Ω<sub>m</sub> floor
-              substituted in. <em>Form is not what fails; the number is</em> &mdash; the knee sits 13–500× above the published
+              published knee (0.0083) lies below the excluded window across its whole 1σ range &mdash; Refracted Gravity is <strong>not</strong> excluded, even with this framework&apos;s Ω<sub>m</sub> floor
+              substituted in (wording disambiguated 2026-09-14). <em>Form is not what fails; the number is</em> &mdash; the knee sits 13–500× above the published
               value of the theory this sector rediscovered.{' '}
               <strong style={{ color: '#f59e0b' }}>Correction 2026-09-09:</strong> this sentence previously also listed
               &ldquo;the Oort-window 0.074–0.154&rdquo; among the excluded knees. That was a γ mismatch &mdash; 0.074–0.154 is the
@@ -1225,7 +1225,7 @@ export default function HonestAssessment() {
               <em>hidden</em> bit of communication per trial and no observable signaling, and no such construction was built
               here. Stated accurately: purely local substrates are excluded by Bell&apos;s theorem (these runs illustrate it,
               they do not add to it); the two nonlocal constructions that were built failed; hidden-communication substrates
-              are untested. It stays in the ledger as a theorem-level check, not as an executed refutation of the class.
+              are untested. It stays in the ledger as a construction check, not as an executed refutation of the class.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Substrate-independence (run 2026-07-06):</strong> the same cap holds on the

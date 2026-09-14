@@ -6,7 +6,7 @@ import ValidationBadge from '@/components/ValidationBadge';
 
 export const metadata: Metadata = {
   title: 'For Researchers: What\'s Citable — Synchronism',
-  description: 'Four citable negative results extracted from the failure documentation (plus one demoted 2026-09-10): local-density locality no-go, dim-4 LIV exclusion of absolute-time substrates, the B1 CHSH substrate null (S ≤ 2 without signaling), and the density-keyed unidentifiability no-go (knee above the sampled density ⇒ interpolant unmeasurable). The A2ACW program-level null is no longer listed as citable — it is an underpowered statistic (Youden J = 0) with no positive control.',
+  description: 'Five citable negative results extracted from the failure documentation: the local-density locality no-go, dim-4 LIV naturalness gap for absolute-time substrates, the B1 CHSH check (Bell illustrated; two nonlocal construction nulls), density-keyed unidentifiability (knee above the sampled density ⇒ interpolant unmeasurable), and the globular-cluster exclusion window on density-keyed knees. Plus one secondary DESI mechanism-class negative and one open question about the audit instrument (A2ACW), which is not a citable null.',
 };
 
 export default function ForResearchers() {
@@ -20,32 +20,41 @@ export default function ForResearchers() {
           An arriving expert should not have to excavate the failure documentation to find what
           survives it. By the site&apos;s own scoreboard the framework has <strong>0 confirmed
           predictions, 0 independently-derived parameters, and &mdash; on the discrimination axis &mdash;
-          2 executed tests that discriminated, both of which selected MOND, and 0 that could have
+          2 executed tests that discriminated, both of which selected MOND, and 0 that
           selected Synchronism</strong> over MOND+EFE+&Lambda;CDM. Those are one sentence because they are
           one fact read two ways, and stating them apart has confused three expert readers: the framework&apos;s
           galaxy sector is a strict submodel of MOND <em>under the acceleration-keyed C(a) reading</em> (see below;
           scope added 2026-09-05 &mdash; under the density-keyed C(&#x03C1;) reading that the local-density no-go, the
           plotter, and the environment test were run against, it is not a submodel but a distinct theory, and that one
-          is refuted), so a discriminating test can only tie or lose.
+          is refuted), so a discriminating test could at best tie on fit, and could select it only if its restriction held.
           The two that discriminated are TEST-09 (3.3σ) and TEST-10 (boost ceiling). (This page said
           &ldquo;0 tests currently discriminating&rdquo; until 2026-07-27, which booked the framework&apos;s two
           strongest empirical results as zero; the bolded line was reunified 2026-08-08.)
           What remains citable are <strong>replications,
-          quantified instances of known results, and executed negative results</strong> — the four
-          artifacts below survive the framework being wrong, precisely because they do not depend
-          on it being right.
+          quantified instances of known results, and executed negative results</strong> — the five
+          numbered artifacts below survive the framework being wrong, precisely because they do not depend
+          on it being right. Below them sit one secondary, mechanism-class negative (DESI) and one{' '}
+          <a href="#a2acw-open-question" style={{ color: 'var(--color-accent-blue)' }}>open question</a> about the audit
+          instrument (A2ACW), which is not a citable null.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          <strong>Why &ldquo;0 tests could select it&rdquo; was never in doubt (added 2026-07-28,
-          visitor persona):</strong> <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest
+          <strong>What nesting settles and what it does not (corrected 2026-09-14):</strong>{' '}
+          <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest
           Assessment</a> names the bounded boost B &#8804; 1/&#x03A9;<sub>m</sub> &#8776; 3.17 as
           &ldquo;the framework&apos;s only structural difference from MOND.&rdquo; A ceiling is a
-          <em> restriction</em>, so the galaxy sector is literally <strong>MOND &cap; {'{'}B &#8804; 3.17{'}'}</strong>
-          &mdash; a strict submodel of a theory it does not otherwise modify. A nested submodel has exactly
-          two possible outcomes against its parent: statistically indistinguishable, or refuted (by the
-          ceiling firing where MOND has no ceiling to fire on). It cannot win. This follows from the model&apos;s
-          own stated structure, with no SPARC data required &mdash; the extensive rotation-curve program
-          reached the same place empirically, at far greater cost. See item 8 on{' '}
+          <em> restriction</em>, so the galaxy sector is <strong>MOND &cap; {'{'}B &#8804; 3.17{'}'}</strong>
+          &mdash; a nested submodel. A bounded-boost restriction of a MOND-class interpolating function cannot
+          improve on its parent&apos;s <em>fit</em>; it can only tie with fewer degrees of freedom, or fail where the
+          ceiling binds. The tie is not a consolation prize: B &#8804; 1/&#x03A9;<sub>m</sub> is fixed by cosmology, not
+          fitted, so a ceiling that held across the data would be <em>selected</em> over its parent under any
+          complexity-penalised comparison (as &Lambda;CDM is over wCDM). It was a risky restriction, and which branch
+          obtains is an empirical question that only the data could answer. SPARC answered it: the ceiling binds
+          (TEST-10: 69% of discs exceed the 1/&#x03A9;<sub>m</sub> cap; even the most permissive candidate normalisation,
+          &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> &#8776; 6.39, is exceeded by 28 of 153). Same verdict, reached through
+          data rather than a priori. One dependency: the nesting holds only if the acceleration form&apos;s exponent
+          &#966; is fixed; the archive&apos;s provenance audit found it fitted-then-named, and if it is free the law is not
+          a pure restriction at all. Source: <code>Research/proposals/nested_submodel_fit_versus_selection.md</code>{' '}
+          (2026-07-29); this paragraph said &ldquo;it cannot win&rdquo; until 2026-09-14. See item 8 on{' '}
           <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
           for the ceiling&apos;s own provenance, which is itself asserted rather than derived.
         </p>
@@ -84,11 +93,14 @@ export default function ForResearchers() {
         </div>
 
         {/* Artifact 1: locality no-go */}
-        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #8b5cf6' }}>
+        <div id="locality-no-go" className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #8b5cf6', scrollMarginTop: '5rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.1rem' }}>1. The local-density no-go — a quantified instance of Milgrom&apos;s non-locality obstruction</h2>
-            <ValidationBadge status="audited-negative" label="Audited-Negative — Executed Closure" />
+            <ValidationBadge status="audited-negative" />
           </div>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
+            Audited-Negative: closed by execution, for the algebraic-coupling class (scope below).
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             <strong>Honest novelty statement:</strong> the core obstruction is <em>not</em> ours.
             Milgrom proved MOND-as-modified-inertia must be non-local <em>in time</em> (astro-ph/0510117,
@@ -111,10 +123,19 @@ export default function ForResearchers() {
             executed grid, not a class theorem; gradient-based schemes such as symmetron
             screening and non-local state variables such as enclosed mass are <em>not</em> covered and
             are not claimed to fail here) fails in
-            three independently executed ways — the SPARC RAR ensemble rejects the density-compander
-            at &#x0394;BIC=+184 (conservative &ge;+33) (free fit collapses to MOND); the cross-system &#x03C1;&#x2194;g<sub>bar</sub>{' '}
-            offset is ~1.7 dex; and clusters require a &#x03C1;<sub>crit</sub> 10<sup>4</sup>–10<sup>6</sup>&times;
+            three independently executed ways — head-to-head on the same SPARC points against the acceleration-keyed
+            form, density keying loses at <strong>&#x0394;BIC +2843 with &#x03B3; free</strong> (best-fit &#x03B3; &rarr; 0.046,
+            i.e. the fit switches its own density dependence off; +142 after effective-N deflation; see{' '}
+            <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>); the
+            cross-system &#x03C1;&#x2194;g<sub>bar</sub> offset is ~1.7 dex; and clusters require a &#x03C1;<sub>crit</sub> 10<sup>4</sup>–10<sup>6</sup>&times;
             off the galaxy calibration (Coma, four ansätze, one structurally bounded at velocity ratio &le;2 vs observed 4.6).
+            The sign statement below (&#x03C1;<sub>t</sub> &prop; V<sup>&minus;2</sup> required by the BTFR, &#x03C1;<sub>crit</sub>{' '}
+            &prop; V<sup>+2</sup> asserted) is the data-free reason all three fail. <em>Not</em> a route against density
+            keying: the SPARC RAR &#x0394;BIC = +184, which this list cited until 2026-09-14. That fit keyed the compander on
+            acceleration (C as an implicit &mu; on g<sub>obs</sub>, &#x03B3; pinned at 2), so it refutes the &#x03B3; = 2 pin in the
+            acceleration-keyed realization, not density keying. Nor is the environment run (r&sup2; = 0.0001): Honest
+            Assessment reclassified it on 2026-09-05 as refuting a registered amplitude that is consistent with the
+            equation&apos;s own tiny ambient-density lever.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
             <strong style={{ color: '#ef4444' }}>Companion result, no data required (added 2026-09-07,
@@ -124,7 +145,7 @@ export default function ForResearchers() {
             r &rarr; &infin; quantity (BTFR-fixed by total baryonic mass), and B<sub>max</sub> = 1/&#x03A9;<sub>m</sub>{' '}
             caps a per-galaxy boost with a cosmological parameter. Both are <em>Predictive Closure</em> violations
             under the framework&apos;s own MRH definition. The sector needs the one non-local variable it lacks
-            (g<sub>bar</sub>) and uses two it should not have. This also supplies the mechanism behind artifact 5
+            (g<sub>bar</sub>) and uses two it should not have. This also supplies the mechanism behind artifact 4
             below: at SPARC-sampled x, C &#x2248; &#x03B3;&#x03C1;/(A V<sub>flat</sub>&sup2;), so &#x03B3; and A enter
             only as &#x03B3;/A — one number per galaxy, which is what &#x03C1;(ln&#x03B3;, lnA) = +1.000000 measures.
             Full statement on <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>MRH</Link>.
@@ -153,12 +174,13 @@ export default function ForResearchers() {
             <strong>Scope split — which half generalizes (2026-07-08):</strong> the three numbered
             results carry different generality. The <em>sign statement below</em> (&rho;<sub>crit</sub>{' '}
             must scale as V<sup>&minus;2</sup>) is BTFR-forced and profile-independent — it holds for any
-            local-&rho; MOND mimic. The <em>&#x0394;BIC=+184 (conservative &ge;+33) ensemble rejection</em> is specific to the
-            log-density compander family actually tested (&mu; = tanh(&#x03B3;&nbsp;ln(1+x))); other
-            local-density functional forms would need their own ensemble runs. The cluster/offset
+            local-&rho; MOND mimic. The <em>&#x0394;BIC +2843 ensemble rejection</em> is specific to the
+            log-density compander family actually tested (C = tanh(&#x03B3;&nbsp;ln(1+&#x03C1;/&#x03C1;<sub>crit</sub>)));
+            other local-density functional forms would need their own ensemble runs. The cluster/offset
             arguments sit in between: the ~1.7 dex &rho;&#x2194;g<sub>bar</sub> mismatch is a property of
             the data geometry, but its magnitude was computed for this framework&apos;s calibration.
-            Cite the sign statement for generality; cite the &#x0394;BIC for this family.
+            Cite the sign statement for generality; cite the &#x0394;BIC +2843 for this family (and +184 only for the
+            &#x03B3; = 2 pin in acceleration keying).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>One-line citable form — the sign statement (2026-07-02):</strong> a knee keyed on
@@ -248,8 +270,8 @@ export default function ForResearchers() {
             <strong>The live discriminator context — the External Field Effect (added 2026-07-24):</strong>{' '}
             the sharpest currently-contested MOND-vs-&Lambda;CDM discriminator is the claimed detection of
             MOND&apos;s External Field Effect in SPARC (Chae et al. 2020, ApJ 904, 51; 2021 — ~4&sigma;,
-            disputed: Freundlich et al. 2022 and Paranjape &amp; Sheth 2022 offer &Lambda;CDM-consistent
-            readings). It bears on this no-go from the positive side: the EFE keys on external{' '}
+            contested: Paranjape &amp; Sheth 2022 show an EFE-like signal is generically expected in &Lambda;CDM;
+            Freundlich et al. 2022 find no EFE in Coma-cluster ultra-diffuse galaxies, a different sample). It bears on this no-go from the positive side: the EFE keys on external{' '}
             <em>acceleration</em> — a strictly non-local variable — while the framework&apos;s registered
             ambient-<em>density</em> environment effect, run as registered (2026-07-14), shows no trace
             (r&sup2;&nbsp;=&nbsp;0.0001). If environment enters galaxy dynamics at all, it enters through
@@ -318,196 +340,19 @@ export default function ForResearchers() {
           <Link href="/honest-assessment" style={{ fontSize: '0.85rem' }}>Full closure documentation in Honest Assessment &rarr;</Link>
         </div>
 
-        {/* Artifact 2: A2ACW null */}
-        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #38bdf8' }}>
+        {/* Artifact 2 (numbered 3 until 2026-09-14): The dim-4 LIV exclusion — transferable result */}
+        <div id="dim4-liv" className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #f59e0b', scrollMarginTop: '5rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>2. The A2ACW detector is <em>underpowered</em> (Youden&apos;s J = 0, CI [&minus;0.46, +0.46], n = 6) — an open question, not a citable null</h2>
-            <ValidationBadge status="untested" label="Underpowered — No Positive Control Run" />
-          </div>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
-            <strong>Honest novelty statement:</strong> the protocol is assembled prior art — adversarial
-            pairs from AI Safety via Debate (Irving, Christiano &amp; Amodei 2018), role structure from
-            CAMEL/MetaGPT, failure modes from the multi-agent-systems literature. The citable artifact
-            is the <strong>program-level null result with retrospective controls</strong> (N=6 audits,
-            not preregistered held-out experiments; one corpus, one framework): <strong>3,308 sessions
-            produced ~47 internally-consistent candidate claims (1.4% survival rate); of those, 6 received
-            external expert audit, and 0 survived</strong>. The honest denominator is <strong>0 of 6
-            audited</strong> (0 of 47 pending audit) &mdash; not &ldquo;0 across 3,308 sessions,&rdquo; which
-            would overstate the number of adjudicated trials by two orders of magnitude (corrected 2026-07-09
-            after two visitor personas independently flagged the site quoting this null at three different,
-            mutually inconsistent denominators). Both error rates on the 6 are measured — temporal-asymmetry
-            control 0/6 (later-demoted claims caught; median prior-art year ~1996), vocabulary-asymmetry 4/4 on
-            the prior-art-rediscovery subclass, and <strong>specificity 0/6</strong> (every held-out genuine
-            discovery false-flagged — a measured false-positive rate of 6/6 = 1.0 on the control set — see{' '}
-            <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
-            Discrimination lives entirely in unautomated human novelty judgment.
-          </p>
-          <div style={{ background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', margin: '0.75rem 0', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
-            <strong style={{ color: '#fbbf24' }}>Demoted from &ldquo;citable null&rdquo; to open question, 2026-09-10 &mdash;
-            and the reason is that the positive control has never been run.</strong>{' '}
-            A researcher persona made the point that this page was already making about itself and then not acting on:
-            <strong> you cannot cite a finding from a statistic this same page certifies as carrying no information.</strong>{' '}
-            Concretely, there is a <em>negative</em> control here (can the protocol catch known demotions? 6/6 &mdash; yes)
-            and <strong>no positive control</strong>: nobody has fed the protocol a verified discovery published
-            <em> after</em> the models&apos; training cutoff, citation-stripped, and measured the demotion rate on
-            known-good physics. Without it, two hypotheses are observationally identical here:
-            <br />&bull; <strong>H1</strong> &mdash; the framework genuinely produced nothing novel (the reading this
-            site has been publishing);
-            <br />&bull; <strong>H2</strong> &mdash; an LLM challenger rewarded for finding prior art maps almost
-            anything onto a corpus, <em>including real discoveries</em>, in which case the 1.4% survival rate is a
-            property of the protocol and says nothing whatever about Synchronism.
-            <br />A 100% demotion rate is exactly as suspicious as a 100% confirmation rate. And note which way this
-            cuts: <strong>under H2 the result is more interesting, not less</strong> &mdash; a measured
-            prior-art-illusion rate for adversarial LLM audit would be a finding about AI-assisted research
-            methodology, independent of whether any physics here holds, and it is plausibly the last genuinely novel
-            result this project can produce. The badge above is changed from <em>audited-negative / Registered Null</em>
-            to <em>untested / Underpowered</em> because the honest state is &ldquo;we do not know what this protocol
-            measures,&rdquo; not &ldquo;we measured a null.&rdquo; The cross-vendor control that was listed as pending
-            does not address this; a positive control does. Routed to dp in{' '}
-            <code>Research/proposals/test02_amplitude_is_knee_conditional_and_a2acw_positive_control_20260910.md</code>{' '}
-            with a concrete protocol seeded for the explorer track.
-          </div>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            <strong>Put the two rates together and the detector is uninformative:</strong> combined
-            sensitivity (true-positive rate) is 6/6 = 1.0 (self-simulated upper bound, see above);
-            specificity is 0/6, i.e. the false-positive rate is also 6/6 = 1.0. Youden&apos;s
-            J = TPR − FPR = 1.0 − 1.0 = <strong>0</strong> (AUC ≈ 0.5). A classifier that
-            flags every demoted claim <em>and</em> every genuine discovery carries zero
-            discriminating information — both numbers were already published on this site, on
-            two different pages, and had never been combined until a 2026-07-14 visitor pass did the
-            subtraction. The 6/6 catch rate is not the methodology&apos;s best result; multiplied
-            against its own specificity, it is the demonstration that the detector cannot tell a
-            demotion from a discovery.
-          </p>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            <strong>Three precisions on the above (added 2026-07-27, from an external-reviewer pass).</strong>{' '}
-            (1) <em>The positive class is &ldquo;is a reparametrization.&rdquo;</em> Under the opposite
-            convention the sensitivity and specificity labels invert; both are defensible, and J = 0
-            either way, but the convention was never stated and two expert readers have now read the
-            numbers as swapped. (2) <em>6/6 = 1.0 is better described as a false <strong>discovery</strong>
-            rate</em> — a true false-positive rate needs a true-negative count this positive-only design
-            does not have, and J = 0 here is a degeneracy of the design rather than a measurement.
-            (3) <em>The program-level null is itself underpowered and now says so.</em> On n = 6 with 0
-            survivors, the Clopper&ndash;Pearson bound admits a true novelty-survival rate up to ~0.39
-            (one-sided) or ~0.46 (two-sided). The site badges its galaxy tests
-            &ldquo;underpowered as registered&rdquo; unflinchingly; holding the methodology verdict —
-            the sector nominated as the real contribution — to a lower evidentiary standard than the
-            physics was the asymmetry worth fixing. (4) <em>J = 0 is a point estimate on n = 6 and n = 6,
-            and should be quoted with its interval</em> (added 2026-08-08, from a visitor researcher pass
-            applying precision (3) to the detector itself). Clopper&ndash;Pearson at 95% gives sensitivity
-            &#8805; 0.541 and specificity &#8804; 0.459, hence <strong>J &#8712; [&minus;0.46, +0.46]</strong> —
-            an interval running from anti-informative to moderately informative. The point estimate is the right
-            sign and the design degeneracy in (2) is the deeper problem, but quoting <em>J = 0</em> bare on the
-            page labelled &ldquo;what&apos;s citable&rdquo; is the same sin this site correctly flags on{' '}
-            <Link href="/consciousness-demo" style={{ color: 'var(--color-accent-blue)' }}>the consciousness
-            demo</Link>.</p>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            Measured, not asserted: adversarial same-corpus AI pairs filter for internal consistency
-            but cannot substitute for out-of-distribution evaluation. Relevant to anyone building
-            AI-for-science generation pipelines on shared training corpora.
-          </p>
-          <div style={{ background: 'rgba(56, 189, 248, 0.07)', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '0.375rem', padding: '0.8rem 1rem', fontSize: '0.87rem', color: 'var(--color-text-secondary)', margin: '0.75rem 0' }}>
-            <strong style={{ color: '#38bdf8' }}>Correction 2026-08-10 — the confound below is CLOSED, by
-            this program&apos;s own controls, and closing it cuts <em>for</em> the framework.</strong>{' '}
-            The paragraph that follows calls the degeneracy unresolved pending a cross-vendor control arm.
-            But two control arms have already run and both returned null: the{' '}
-            <strong>canonical-discoveries arm</strong> false-flagged <strong>6 of 6</strong> genuine
-            discoveries as reparametrizations (specificity 0/6), and the{' '}
-            <strong>temporal-asymmetry arm</strong> (paired training cutoffs) caught{' '}
-            <strong>0 of 6</strong> demotions. An instrument that misclassifies every known positive is
-            not weakly informative about the seed framework &mdash; it is <em>uninformative by
-            construction</em>. Therefore: <strong>&ldquo;47 contributions, 0 survivors&rdquo; and any
-            &ldquo;0 confirmed predictions&rdquo; that rests on A2ACW audit rather than on external data
-            are instrument-limited, and carry no information about whether the seed framework contains
-            novelty.</strong> This does not touch the physics ledger that stands on external data &mdash;
-            the boost ceiling and the γ=2 pin are unaffected and stand. It does mean the headline null has
-            been quoted with more authority than the device that produced it can support. Note also that
-            the sensitivity arm has no independent gold standard: the claim that the framework&apos;s own
-            claims genuinely <em>are</em> reparametrizations comes from the same audit process under
-            evaluation, so &ldquo;sensitivity = 1.0&rdquo; is circular and only the 0/6 specificity arm has
-            ground truth. Both arms are n = 6 &mdash; Wilson 95% CIs are roughly [0.61, 1.00] and
-            [0.00, 0.39], so <strong>J = 0 should not be quoted without an interval</strong>, and the 1.4%
-            session yield divides by 3,308 context-chained sessions whose effective N is unknown and
-            certainly not thousands. (Flagged by visitor Pass 4, 2026-08-10; it is the rare audit finding
-            that points toward the framework rather than against it, which is why it went unnoticed.)
-          </div>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-            <strong>No control arm; a confound the null doesn&apos;t resolve
-            <em> (superseded by the correction above — retained for the record)</em>:</strong> the corpus audited
-            is Synchronism itself, which this site independently concludes is a MOND reparametrization.
-            &ldquo;Adversarial same-corpus AI pairs cannot generate out-of-distribution novelty&rdquo; and
-            &ldquo;this particular seed framework contained none to find&rdquo; are observationally
-            degenerate in a single-arm, single-corpus design — there is no measured human-pair survival
-            rate on the same corpus to compare against. The generalization to AI-for-science pipelines
-            generally is a hypothesis this design cannot license on its own.
-          </p>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-            <strong>Artifact status downgraded (2026-07-18, external researcher review):</strong> until the
-            cross-vendor corpus control runs — the one registered experiment that would break the
-            single-arm degeneracy above — this is a <em>registered null with a stated path to becoming a
-            citable artifact</em>, not yet the artifact. What is citable today is the measured
-            retrospective-control numbers (0/6, J = 0) and the confound analysis itself; the
-            program-level generalization gates on the unrun control arm.
-          </p>
-          <Link href="/a2acw" style={{ fontSize: '0.85rem' }}>Protocol, prior art, and audit details &rarr;</Link>
-        </div>
-
-        {/* Secondary: DESI mechanism-class */}
-        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #ef4444' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>Secondary: the DESI growth-suppression negative (mechanism-class)</h2>
-            <ValidationBadge status="failed" label="Disfavored 2.4σ on σ₈ — ~1.5σ on Registered fσ₈ — Post-hoc — Underpowered to Discriminate" />
-          </div>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
-            TEST-04a predicted &#x03C3;&#x2088;&nbsp;&#x2248;&nbsp;0.76 (calibrated to the then-live S8 lensing tension);
-            DESI DR1 full-shape combined &#x03C3;&#x2088;&nbsp;=&nbsp;0.841&plusmn;0.034 (Table 10) &mdash; a
-            <strong> 2.4&#x03C3;</strong> amplitude tension on &#x03C3;&#x2088;. <strong>Correction (2026-07-14):
-            the criterion was registered on a different statistic, fσ₈(z=0.51) &gt; 0.46 for &gt;3&#x03C3;.</strong>{' '}
-            On that statistic directly &mdash; LRG1 fσ₈&nbsp;=&nbsp;0.474&nbsp;&times;&nbsp;1.16&plusmn;0.062&nbsp;=
-            &nbsp;0.550&plusmn;0.062 &mdash; the threshold is exceeded by only <strong>~1.5&#x03C3;</strong>, short
-            of the registered &gt;3&#x03C3; bar. &#x03C3;&#x2088; is inferred assuming GR growth kernels, so using
-            it to falsify a modified-growth model risks circularity. DESI&apos;s own purpose-built
-            modified-gravity analysis, Ishak et al. arXiv:2411.12026 (JCAP 09 (2025) 053, previously uncited
-            here), gives &#x3bc;&#x2080;&nbsp;=&nbsp;0.11 (+0.45/&minus;0.54) from DESI alone &mdash; a 12%
-            fσ₈ suppression maps to a &#x3bc;&#x2080; inside that 1&#x03C3; band. Honest reading: <strong>the test
-            as registered lacked the power to discriminate this framework from GR</strong> &mdash; the
-            &#x03C3;&#x2088; comparison is real but is not the registered kill. A single bin
-            (LRG1, z=0.51) also shows fσ₈ growth above fiducial (ratio 1.16&plusmn;0.13, ~1.2&#x03C3;), and the
-            DESI DR1 full-shape RSD <em>ensemble</em> growth index &#x03B3;<sub>growth</sub>&nbsp;&#x2248;&nbsp;0.58,
-            above GR&apos;s 0.545, leans mildly toward suppression &mdash; the predicted direction. Caveats:
-            the prediction was <strong>post-hoc</strong> (&#x03C3;&#x2088; calibrated to the S8 lensing tension,
-            which has since receded), the &#x3bc;&#x2080; projection above has not been formally run (seeded as
-            an explorer topic), and the verdict is frozen at DR1. What transfers: any framework whose
-            mechanism damps late-time structure growth to match a receded S8 tension sits in the same
-            disfavored-on-&#x03C3;&#x2088; box, though this specific DESI test does not discriminate it from GR.
-          </p>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem', marginBottom: '0.25rem' }}>
-            Currency: verdict anchored to DESI DR1 (arXiv:2411.12021) as of 2026-07-02.
-            DESI DR2 full-shape parameter <em>papers</em> are not yet published (expected ~Spring 2027) &mdash;
-            note this is now a narrower claim than &ldquo;no DR2 full-shape results exist&rdquo;: preliminary
-            DR2 full-shape results were presented publicly in April 2026 (&ldquo;Cosmology with DESI DR2: From
-            BAO to Full-Shape Clustering,&rdquo; PIRSA:26040071) and DR2 Ly&#x03B1; full-shape validation posted
-            late July 2026 (arXiv:2607.27411). <strong>Integrity note (2026-08-01):</strong> this repository&apos;s
-            git history shows the fσ₈(z≈0.5) ≤ 0.46 threshold was committed <strong>2026-07-01, after</strong>{' '}
-            the April PIRSA talk &mdash; so this criterion cannot be verified as pre-registered relative to that
-            preliminary presentation, only relative to the still-unpublished formal DR2 full-shape paper. If DR2
-            full-shape reports fσ₈(z≈0.5) ≤ 0.46, the verdict unfreezes for re-adjudication; any DR2 value above
-            DR1&apos;s would deepen the disfavor, not relieve it. Whoever re-adjudicates this should check first
-            whether a threshold-relevant fσ₈(z≈0.5) figure was already circulating by 2026-07-01 &mdash; if so,
-            this criterion has the same post-hoc exposure already documented above for the σ₈ comparison.
-          </p>
-          <Link href="/tier-1-existing" style={{ fontSize: '0.85rem' }}>TEST-04a full accounting &rarr;</Link>
-        </div>
-
-        {/* Artifact 3: The dim-4 LIV exclusion — transferable result */}
-        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #f59e0b' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>3. Dim-4 radiative LIV exclusion of absolute-time discrete substrates — a citable no-go</h2>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>2. Dim-4 radiative LIV exclusion of absolute-time discrete substrates — a citable no-go</h2>
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
-              <ValidationBadge status="untested" label="Time-of-Flight: Structurally Unreachable" />
-              <ValidationBadge status="audited-negative" label="Preferred-Frame + Dim-4: Naturalness Gap (16–28 OOM; custodial escapes unexhibited)" />
+              <ValidationBadge status="untested" />
+              <ValidationBadge status="audited-negative" />
             </div>
           </div>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
+            Untested: the time-of-flight face (dim &ge; 5), which is structurally unreachable. Audited-Negative: the
+            preferred-frame / dim-4 face, a naturalness gap of 16&ndash;28 OOM with custodial escapes unexhibited.
+          </p>
 
           {/* Citable result framing — what transfers beyond Synchronism */}
           <div style={{
@@ -593,7 +438,7 @@ export default function ForResearchers() {
             </li>
             <li>
               <strong>Velocity-anisotropic phase-transition threshold (Phase-16, 2026-06-24).</strong>{' '}
-              If identity thresholds are fixed in the substrate/CMB frame, Earth's motion (v ≈ 370 km/s,
+              If identity thresholds are fixed in the substrate/CMB frame, Earth&apos;s motion (v ≈ 370 km/s,
               β ≈ 1.2×10<sup>&#x2212;3</sup>) produces a fractional-frequency anisotropy: dipole ∼β ≈ 1.2×10<sup>&#x2212;3</sup>,
               quadrupole ∼β² ≈ 1.5×10<sup>&#x2212;6</sup>. Cavity-MM and clock-comparison experiments bound
               this at 10<sup>&#x2212;18</sup>–10<sup>&#x2212;22</sup>. The prediction is <strong>11–19 orders of
@@ -617,12 +462,16 @@ export default function ForResearchers() {
           </p>
         </div>
 
-        {/* Artifact 4: B1 CHSH substrate null */}
-        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-violet)' }}>
+        {/* Artifact 3 (numbered 4 until 2026-09-14): B1 CHSH check */}
+        <div id="chsh" className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-violet)', scrollMarginTop: '5rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>4. CHSH substrate null — a worked corollary of Bell&apos;s theorem (Bet B1, executed)</h2>
-            <ValidationBadge status="failed" label="S ≤ 2 Both No-Signaling Arms — Executed 2026-06-21 / 2026-07-06" />
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>3. CHSH substrate check — Bell&apos;s theorem illustrated, plus two nonlocal construction nulls (Bet B1, executed)</h2>
+            <ValidationBadge status="failed" />
           </div>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
+            Failed: S &le; 2 in every no-signaling construction built (executed 2026-06-21 / 2026-07-06). It is counted among
+            the 6 as a theorem-level check, not as an executed refutation of the substrate class.
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             The framework&apos;s substrate ontology was tested against Bell by direct CHSH simulation
             (kuramoto-lattice-suite, research-ledger bet B1), with freely chosen settings and
@@ -632,9 +481,16 @@ export default function ForResearchers() {
             to relabeling the measurement angles — smooth single-grid mediation stays local-realist);
             a global-clock construction reaches S = 2.67 only by also signaling. The 2026-07-06 run
             extends the cap to the framework&apos;s <em>own</em> saturation-gated Intent-density
-            substrate (S = 1.85 &le; 2, no signaling): the cap is <strong>substrate-independent</strong> —
-            Bell&apos;s structure theorem for any real-valued local-realist model, not an artifact of
-            the phase substrate. The triptych A (real-local) = 2 &lt; B (Born-rule cos&sup2;
+            substrate (S = 1.85 &le; 2, no signaling). On the local constructions the cap is Bell&apos;s theorem for any
+            real-valued local-realist model, not an artifact of the phase substrate.{' '}
+            <strong>Scope, matching{' '}
+            <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
+            (2026-09-11):</strong> the local arm <em>illustrates</em> Bell&apos;s theorem and adds nothing to it. The two
+            nonlocal constructions built (the grid, whose setting dependence is a relabeling, and the clock, which exceeds 2
+            only by signaling) are <em>construction nulls</em>, facts about those constructions and not about the
+            substrate class. Hidden-communication substrates were not built and remain untested. Toner &amp; Bacon (PRL 91,
+            187904, 2003) reproduce singlet correlations from local variables plus one hidden bit per trial, with no
+            observable signaling. Nothing here is a theorem about nonlocal substrates. The triptych A (real-local) = 2 &lt; B (Born-rule cos&sup2;
             projection) = 2&radic;2 &lt; C (PR-box) = 4 localizes the Tsirelson value as the fixed
             point of the projection law — reachable only by importing Hilbert-space structure wholesale.
           </p>
@@ -647,7 +503,7 @@ export default function ForResearchers() {
             apply&rdquo; is a recurring move in emergent-QM proposals, and this is a minimal executed
             counterexample — declaring the substrate nonlocal does not evade Bell, it chooses the nonlocal
             horn, and the construction must then produce a non-relabelable, <em>conditional</em>
-            setting-dependence or stay at S &le; 2. Cite it for that lesson, not for the number. Full
+            setting-dependence (as Toner&ndash;Bacon&apos;s hidden bit does) or stay at S &le; 2. Cite it for that lesson, not for the number. Full
             construction detail and the open Born-rule problem on{' '}
             <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>.
           </p>
@@ -666,12 +522,15 @@ export default function ForResearchers() {
           to the prediction target.
         </div>
 
-        {/* Artifact 5: density-keyed unidentifiability no-go (promoted 2026-09-06 from Parameter Derivations item 7) */}
-        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #8b5cf6' }}>
+        {/* Artifact 4 (numbered 5 until 2026-09-14): density-keyed unidentifiability no-go (promoted 2026-09-06 from Parameter Derivations item 7) */}
+        <div id="unidentifiability" className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #8b5cf6', scrollMarginTop: '5rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>5. Density-keyed unidentifiability &mdash; when the knee sits above the sampled density, the interpolant is unmeasurable</h2>
-            <ValidationBadge status="audited-negative" label="Audited-Negative — Executed 2026-09-03, framework-independent" />
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>4. Density-keyed unidentifiability &mdash; when the knee sits above the sampled density, the interpolant is unmeasurable</h2>
+            <ValidationBadge status="audited-negative" />
           </div>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
+            Audited-Negative: executed 2026-09-03; the statement does not depend on the framework.
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             <strong>Statement.</strong> For any algebraic modification of gravity keyed on local density,
             g<sub>obs</sub> = g<sub>bar</sub>/&#x03B5;(&#x03C1;) with a saturating &#x03B5; whose knee &#x03C1;<sub>c</sub> is
@@ -707,11 +566,16 @@ export default function ForResearchers() {
           </p>
         </div>
 
-        <div className="card" style={{ marginBottom: '1.5rem' }}>
+        {/* Artifact 5 (numbered 6 until 2026-09-14): globular-cluster exclusion window */}
+        <div id="gc-window" className="card" style={{ marginBottom: '1.5rem', scrollMarginTop: '5rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>6. Globular-cluster exclusion window on the knee of any density-keyed gravity law &mdash; a transferable null in the literature&apos;s own units</h2>
-            <ValidationBadge status="audited-negative" label="Executed 2026-09-07 on Baumgardt & Hilker 2018; framework-independent bound" />
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>5. Globular-cluster exclusion window on the knee of any density-keyed gravity law &mdash; a transferable null in the literature&apos;s own units</h2>
+            <ValidationBadge status="audited-negative" />
           </div>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
+            Audited-Negative: executed 2026-09-07 on the Baumgardt &amp; Hilker 2018 catalogue. The bound does not depend on
+            the framework.
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             <strong>Citable form:</strong> for any theory of the form g = g<sub>N</sub>/C(ρ) with a floored tanh-in-log-density
             switch (Refracted Gravity&apos;s permittivity class, which this framework&apos;s galaxy field equation coincides with),
@@ -719,7 +583,9 @@ export default function ForResearchers() {
             <strong> ρ<sub>c</sub> ∈ 0.1–300 M<sub>☉</sub>/pc³ (6.8×10⁻²⁴ – 2×10⁻²⁰ g/cm³)</strong> at a switch sharpness
             γ = 0.489 (Hill index ≈ 1), narrowing to 0.5–100 M<sub>☉</sub>/pc³ at γ = 2. &ldquo;Excluded&rdquo; = slope mismatch
             more than twice that of MOND with the external field effect, which these data admit (−0.093 vs Newtonian −0.057).
-            Refracted Gravity&apos;s own fitted ρ<sub>c</sub> = 10⁻²⁴·²⁵ g/cm³ (Cesare et al. 2020, 2022) passes across its 1σ range.
+            <strong>Refracted Gravity is not excluded:</strong> its published ρ<sub>c</sub> = 10⁻²⁴·²⁵ g/cm³ = 0.0083
+            M<sub>☉</sub>/pc³ (Cesare et al. 2020, 2022) lies below the excluded window. Every value in its 1σ range
+            (0.0052–0.0158 M<sub>☉</sub>/pc³) scores within MOND+EFE&apos;s mismatch on the same statistic.
             This sits beside the B<sub>max</sub> ≲ 14 bound from SPARC dwarfs as the second class-level constraint this
             program has produced.
           </p>
@@ -732,6 +598,11 @@ export default function ForResearchers() {
             outer-halo clusters are also the diffuse ones). Prior-art screen: Cesare et al. 2022 used globular clusters as
             tracers of elliptical-galaxy potentials, not as self-gravitating systems crossing the knee. Honest scope: the ± is
             statistical only; defend the ratio to the Newtonian residual (3.7–4.4×), not a sigma.{' '}
+            <strong>Tides and the contested clusters:</strong> dispersion bins beyond 0.98 of the catalogue tidal radius were
+            cut, and constant anisotropy was scanned (β from −0.6 to +0.8). Tidal heating and unbound extra-tidal stars inside
+            r<sub>t</sub> were <em>not</em> modelled. The ≥ 10-bin cut leaves 42 clusters at R<sub>GC</sub> ≤ 22 kpc. That
+            removes the remote, isolated clusters where MOND is actually contested: NGC 2419 (Ibata et al. 2011; Sanders
+            2012), Pal 14 and Pal 4, with 1–3 dispersion bins each in the catalogue. The window rests on inner-halo clusters.{' '}
             <strong>What this bound does not do (scope correction 2026-09-09):</strong> it does not combine with the
             solar-neighbourhood (Oort-limit) constraint into a joint no-go. Evaluated <em>at the same γ</em> &mdash; the
             step this program got wrong twice &mdash; the two windows overlap everywhere from γ = 0.3 to 3: the clusters
@@ -742,6 +613,280 @@ export default function ForResearchers() {
             robustness table and the γ fork it opens for this framework specifically:{' '}
             <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
           </p>
+        </div>
+
+        {/* Secondary: DESI mechanism-class */}
+        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #ef4444' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>Secondary: the DESI growth-suppression negative (mechanism-class)</h2>
+            <ValidationBadge status="failed" />
+          </div>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
+            Failed: disfavoured at 2.4&sigma; on &sigma;&#x2088;, but only ~1.5&sigma; on the registered f&sigma;&#x2088;
+            statistic. The prediction was post-hoc, and the test was underpowered to discriminate. It is the Session 107
+            mechanism, not the current dark-energy sector (see below).
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
+            TEST-04a predicted &#x03C3;&#x2088;&nbsp;&#x2248;&nbsp;0.76 (calibrated to the then-live S8 lensing tension);
+            DESI DR1 full-shape combined &#x03C3;&#x2088;&nbsp;=&nbsp;0.841&plusmn;0.034 (Table 10) &mdash; a
+            <strong> 2.4&#x03C3;</strong> amplitude tension on &#x03C3;&#x2088;. <strong>Correction (2026-07-14):
+            the criterion was registered on a different statistic, fσ₈(z=0.51) &gt; 0.46 for &gt;3&#x03C3;.</strong>{' '}
+            On that statistic directly &mdash; LRG1 fσ₈&nbsp;=&nbsp;0.474&nbsp;&times;&nbsp;1.16&plusmn;0.062&nbsp;=
+            &nbsp;0.550&plusmn;0.062 &mdash; the threshold is exceeded by only <strong>~1.5&#x03C3;</strong>, short
+            of the registered &gt;3&#x03C3; bar. &#x03C3;&#x2088; is inferred assuming GR growth kernels, so using
+            it to falsify a modified-growth model risks circularity. DESI&apos;s own purpose-built
+            modified-gravity analysis, Ishak et al. arXiv:2411.12026 (JCAP 09 (2025) 053, previously uncited
+            here), gives &#x3bc;&#x2080;&nbsp;=&nbsp;0.11 (+0.45/&minus;0.54) from DESI alone &mdash; a 12%
+            fσ₈ suppression maps to a &#x3bc;&#x2080; inside that 1&#x03C3; band. Honest reading: <strong>the test
+            as registered lacked the power to discriminate this framework from GR</strong> &mdash; the
+            &#x03C3;&#x2088; comparison is real but is not the registered kill. A single bin
+            (LRG1, z=0.51) also shows fσ₈ growth above fiducial (ratio 1.16&plusmn;0.13, ~1.2&#x03C3;), and the
+            DESI DR1 full-shape RSD <em>ensemble</em> growth index &#x03B3;<sub>growth</sub>&nbsp;&#x2248;&nbsp;0.58,
+            above GR&apos;s 0.545, leans mildly toward suppression &mdash; the predicted direction. Caveats:
+            the prediction was <strong>post-hoc</strong> (&#x03C3;&#x2088; calibrated to the S8 lensing tension,
+            which has since receded), the &#x3bc;&#x2080; projection above has not been formally run (seeded as
+            an explorer topic), and the verdict is frozen at DR1. <strong>Provenance:</strong> the 0.418 came from Session
+            107&apos;s G<sub>local</sub>/G<sub>global</sub> mechanism, not from the framework&apos;s current dark-energy sector.
+            That sector is background-only, and its one derived perturbation channel shifts f&sigma;&#x2088; by about
+            &minus;0.22% (see <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>). So
+            this negative applies to that mechanism class, not to the current sector. What transfers: any framework whose
+            mechanism damps late-time structure growth to match a receded S8 tension sits in the same
+            disfavored-on-&#x03C3;&#x2088; box, though this specific DESI test does not discriminate it from GR.
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem', marginBottom: '0.25rem' }}>
+            Currency: verdict anchored to DESI DR1 (arXiv:2411.12021) as of 2026-07-02.
+            DESI DR2 full-shape parameter <em>papers</em> are not yet published (expected ~Spring 2027) &mdash;
+            note this is now a narrower claim than &ldquo;no DR2 full-shape results exist&rdquo;: preliminary
+            DR2 full-shape results were presented publicly in April 2026 (&ldquo;Cosmology with DESI DR2: From
+            BAO to Full-Shape Clustering,&rdquo; PIRSA:26040071) and DR2 Ly&#x03B1; full-shape validation posted
+            late July 2026 (arXiv:2607.27411). <strong>Integrity note (2026-08-01):</strong> this repository&apos;s
+            git history shows the fσ₈(z≈0.5) ≤ 0.46 threshold was committed <strong>2026-07-01, after</strong>{' '}
+            the April PIRSA talk &mdash; so this criterion cannot be verified as pre-registered relative to that
+            preliminary presentation, only relative to the still-unpublished formal DR2 full-shape paper. If DR2
+            full-shape reports fσ₈(z≈0.5) ≤ 0.46, the verdict unfreezes for re-adjudication; any DR2 value above
+            DR1&apos;s would deepen the disfavor, not relieve it. Whoever re-adjudicates this should check first
+            whether a threshold-relevant fσ₈(z≈0.5) figure was already circulating by 2026-07-01 &mdash; if so,
+            this criterion has the same post-hoc exposure already documented above for the σ₈ comparison.
+          </p>
+          <Link href="/tier-1-existing" style={{ fontSize: '0.85rem' }}>TEST-04a full accounting &rarr;</Link>
+        </div>
+
+        {/* Open question: A2ACW (was numbered artifact 2 until 2026-09-14; moved out of the citable list) */}
+        <h2 id="a2acw-open-question" style={{ fontSize: '1.2rem', marginTop: '2rem', scrollMarginTop: '5rem' }}>Open question (not citable as a null)</h2>
+        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #38bdf8' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>Does adversarial LLM audit mistake real novelty for prior art? The A2ACW instrument question</h2>
+            <ValidationBadge status="untested" />
+          </div>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
+            Untested: the experiment that would decide it has not been run. Both existing arms are n = 6, retrospective,
+            and scored by a single model that knew every answer.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
+            <strong>Honest novelty statement:</strong> the protocol is assembled prior art (AI Safety via Debate, Irving,
+            Christiano &amp; Amodei 2018; role structure from CAMEL/MetaGPT). What would be new is a measured answer to the
+            question in the heading.
+          </p>
+          <div style={{ background: 'rgba(56, 189, 248, 0.07)', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '0.375rem', padding: '0.8rem 1rem', fontSize: '0.87rem', color: 'var(--color-text-secondary)', margin: '0.75rem 0' }}>
+            <strong style={{ color: '#38bdf8' }}>Current state (2026-09-14)</strong>
+            <ul style={{ margin: '0.4rem 0 0', paddingLeft: '1.2rem', lineHeight: 1.6 }}>
+              <li>
+                <strong>Program-level count.</strong> 3,308 sessions &rarr; ~47 internally consistent candidates &rarr; 6 given
+                external audit &rarr; 0 survived. The adversarial loop itself passed all six; the demotions came from the later
+                audit. On n = 6 the true survival rate can be as high as 0.46 (Clopper&ndash;Pearson, two-sided 95%; 0.39 one-sided).
+              </li>
+              <li>
+                <strong>Detector arms, one convention: the positive class is &ldquo;the claim is a reparametrization.&rdquo;</strong>{' '}
+                Positive arm: the 6 demoted claims, flagged 6/6 by the combined three-axis protocol (sensitivity 1.0; vocabulary
+                translation alone, 4/6). Negative arm: 6 canonical discoveries (Dirac 1928, Bell 1964, BCS 1957, Higgs 1964,
+                Hawking 1974, Noether 1918), all 6 flagged by the literal translation rule, so FP = 6, TN = 0, specificity 0/6 and
+                false-positive rate 6/6. That rate is well-defined. Youden&apos;s J = 0, 95% CI [&minus;0.46, +0.46]. The
+                sensitivity and specificity were scored under different decision rules. Under the steelmanned rule (&ldquo;reduces
+                to prior art with nothing added&rdquo;) the same six pass, but then the scorer&apos;s own novelty judgment is doing
+                all the discriminating.
+              </li>
+              <li>
+                <strong>Temporal asymmetry, 0/6.</strong> This is neither a control arm nor a run. It was a desk counterfactual:
+                would a challenger with a training cutoff five years later have caught the six demotions? No, because their prior
+                art (median ~1996) predates any plausible cutoff. It measures a proposed design. The 6/6 above measures a different
+                instrument, so the two numbers do not conflict.
+              </li>
+              <li>
+                <strong>Why the canonical arm is not a clean known-good control.</strong> It is the right <em>kind</em> of arm, but
+                it cannot separate the two hypotheses below. (i) The six were chosen <em>because</em> their modern restatements
+                trigger prior art for their ingredients, so 0/6 was designed in. (ii) They sit in every training corpus together
+                with their antecedents (contamination). (iii) The &ldquo;blinding&rdquo; only omitted each result&apos;s name. The
+                restatements were written and scored by the same model that knew each answer. Nobody independent stripped the
+                citations, and nothing was scored blind.
+              </li>
+              <li>
+                <strong>The open question.</strong> <strong>H1</strong>: the framework contained nothing novel.{' '}
+                <strong>H2</strong>: an LLM rewarded for finding prior art maps almost anything onto its corpus, real discoveries
+                included. Nothing measured so far separates them, and under H2 the result is the more interesting one. Separating
+                them needs a known-good arm the models cannot have memorised, scored blind. The cross-vendor control as registered
+                (the six demoted claims) tests corpus monoculture, not H1 vs H2.
+              </li>
+              <li>
+                <strong>Power, before anyone runs it.</strong> Take the lower 95% Clopper&ndash;Pearson bound on each arm (two-sided)
+                and combine them: J &ge; sens<sub>lo</sub> + spec<sub>lo</sub> &minus; 1. A perfect 6/6 on both arms gives
+                J &ge; 0.08. Scoring 16/20 on both (80%/80%) gives J &ge; 0.13, and 12/15 on both gives J &ge; 0.04. At 80%/80%,
+                J &ge; 0.3 takes about 41 per arm. With joint (Bonferroni) coverage, the first two bounds fall to &minus;0.04 and
+                0.06. Register n and the decision rule first.
+              </li>
+            </ul>
+            <p style={{ margin: '0.5rem 0 0', fontSize: '0.82rem' }}>
+              Sources: <code>Research/proposals/a2acw_specificity_null_baseline.md</code>,{' '}
+              <code>a2acw_contemporaneous_controls_specificity_20260905.md</code>,{' '}
+              <code>a2acw_specificity_measures_framework_reuse.md</code>,{' '}
+              <code>test02_amplitude_is_knee_conditional_and_a2acw_positive_control_20260910.md</code>; explorer findings{' '}
+              <code>a2acw-detector-false-positive-rate-null-baseline.md</code> and{' '}
+              <code>a2acw-temporal-asymmetry-counterfactual-audit.md</code>.
+            </p>
+          </div>
+          <details style={{ margin: '0.75rem 0' }}>
+            <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.88rem' }}>
+              Revision history, 2026-07-09 to 2026-09-10 (verbatim; the current-state box above supersedes it where they differ)
+            </summary>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.6rem' }}>
+              <strong>Superseded on 2026-09-14:</strong> precision (2), which said 6/6 is &ldquo;better described as a false
+              discovery rate&rdquo; because the design has no true negatives. The canonical arm <em>is</em> the negative class, so
+              the false-positive rate is well-defined. A false discovery rate, FP/(FP+TP), depends on arm sizes chosen by design:
+              6/9 within the 2026-05-22 benchmark, 6/12 if the six demotions are pooled. The 08-10 correction, on two counts: its
+              &ldquo;every known positive&rdquo; inverts the 07-27 convention, and its &ldquo;temporal-asymmetry arm&rdquo; was a
+              desk counterfactual, not a control arm. The 07-18 &ldquo;the one registered experiment that would break the
+              single-arm degeneracy&rdquo;, because cross-vendor addresses corpus monoculture, not H1 vs H2. The 09-10 &ldquo;the
+              positive control has never been run&rdquo;, because the known-good arm exists (the canonical six) but cannot
+              separate H1 from H2. Page heading until 2026-09-14: &ldquo;2. The A2ACW detector is <em>underpowered</em>
+              (Youden&apos;s J = 0, CI [&minus;0.46, +0.46], n = 6) &mdash; an open question, not a citable null,&rdquo; badge
+              &ldquo;Untested &mdash; Underpowered &mdash; No Positive Control Run.&rdquo;
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
+              <strong>Honest novelty statement:</strong> the protocol is assembled prior art — adversarial
+              pairs from AI Safety via Debate (Irving, Christiano &amp; Amodei 2018), role structure from
+              CAMEL/MetaGPT, failure modes from the multi-agent-systems literature. The citable artifact
+              is the <strong>program-level null result with retrospective controls</strong> (N=6 audits,
+              not preregistered held-out experiments; one corpus, one framework): <strong>3,308 sessions
+              produced ~47 internally-consistent candidate claims (1.4% survival rate); of those, 6 received
+              external expert audit, and 0 survived</strong>. The honest denominator is <strong>0 of 6
+              audited</strong> (0 of 47 pending audit) &mdash; not &ldquo;0 across 3,308 sessions,&rdquo; which
+              would overstate the number of adjudicated trials by two orders of magnitude (corrected 2026-07-09
+              after two visitor personas independently flagged the site quoting this null at three different,
+              mutually inconsistent denominators). Both error rates on the 6 are measured — temporal-asymmetry
+              control 0/6 (later-demoted claims caught; median prior-art year ~1996), vocabulary-asymmetry 4/4 on
+              the prior-art-rediscovery subclass, and <strong>specificity 0/6</strong> (every held-out genuine
+              discovery false-flagged — a measured false-positive rate of 6/6 = 1.0 on the control set — see{' '}
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
+              Discrimination lives entirely in unautomated human novelty judgment.
+            </p>
+            <div style={{ background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', margin: '0.75rem 0', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+              <strong style={{ color: '#fbbf24' }}>Demoted from &ldquo;citable null&rdquo; to open question, 2026-09-10 &mdash;
+              and the reason is that the positive control has never been run.</strong>{' '}
+              A researcher persona made the point that this page was already making about itself and then not acting on:
+              <strong> you cannot cite a finding from a statistic this same page certifies as carrying no information.</strong>{' '}
+              Concretely, there is a <em>negative</em> control here (can the protocol catch known demotions? 6/6 &mdash; yes)
+              and <strong>no positive control</strong>: nobody has fed the protocol a verified discovery published
+              <em> after</em> the models&apos; training cutoff, citation-stripped, and measured the demotion rate on
+              known-good physics. Without it, two hypotheses are observationally identical here:
+              <br />&bull; <strong>H1</strong> &mdash; the framework genuinely produced nothing novel (the reading this
+              site has been publishing);
+              <br />&bull; <strong>H2</strong> &mdash; an LLM challenger rewarded for finding prior art maps almost
+              anything onto a corpus, <em>including real discoveries</em>, in which case the 1.4% survival rate is a
+              property of the protocol and says nothing whatever about Synchronism.
+              <br />A 100% demotion rate is exactly as suspicious as a 100% confirmation rate. And note which way this
+              cuts: <strong>under H2 the result is more interesting, not less</strong> &mdash; a measured
+              prior-art-illusion rate for adversarial LLM audit would be a finding about AI-assisted research
+              methodology, independent of whether any physics here holds, and it is plausibly the last genuinely novel
+              result this project can produce. The badge above is changed from <em>audited-negative / Registered Null</em>
+              to <em>untested / Underpowered</em> because the honest state is &ldquo;we do not know what this protocol
+              measures,&rdquo; not &ldquo;we measured a null.&rdquo; The cross-vendor control that was listed as pending
+              does not address this; a positive control does. Routed to dp in{' '}
+              <code>Research/proposals/test02_amplitude_is_knee_conditional_and_a2acw_positive_control_20260910.md</code>{' '}
+              with a concrete protocol seeded for the explorer track.
+            </div>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              <strong>Put the two rates together and the detector is uninformative:</strong> combined
+              sensitivity (true-positive rate) is 6/6 = 1.0 (self-simulated upper bound, see above);
+              specificity is 0/6, i.e. the false-positive rate is also 6/6 = 1.0. Youden&apos;s
+              J = TPR − FPR = 1.0 − 1.0 = <strong>0</strong> (AUC ≈ 0.5). A classifier that
+              flags every demoted claim <em>and</em> every genuine discovery carries zero
+              discriminating information — both numbers were already published on this site, on
+              two different pages, and had never been combined until a 2026-07-14 visitor pass did the
+              subtraction. The 6/6 catch rate is not the methodology&apos;s best result; multiplied
+              against its own specificity, it is the demonstration that the detector cannot tell a
+              demotion from a discovery.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              <strong>Three precisions on the above (added 2026-07-27, from an external-reviewer pass).</strong>{' '}
+              (1) <em>The positive class is &ldquo;is a reparametrization.&rdquo;</em> Under the opposite
+              convention the sensitivity and specificity labels invert; both are defensible, and J = 0
+              either way, but the convention was never stated and two expert readers have now read the
+              numbers as swapped. (2) <em>6/6 = 1.0 is better described as a false <strong>discovery</strong>
+              rate</em> — a true false-positive rate needs a true-negative count this positive-only design
+              does not have, and J = 0 here is a degeneracy of the design rather than a measurement.
+              (3) <em>The program-level null is itself underpowered and now says so.</em> On n = 6 with 0
+              survivors, the Clopper&ndash;Pearson bound admits a true novelty-survival rate up to ~0.39
+              (one-sided) or ~0.46 (two-sided). The site badges its galaxy tests
+              &ldquo;underpowered as registered&rdquo; unflinchingly; holding the methodology verdict —
+              the sector nominated as the real contribution — to a lower evidentiary standard than the
+              physics was the asymmetry worth fixing. (4) <em>J = 0 is a point estimate on n = 6 and n = 6,
+              and should be quoted with its interval</em> (added 2026-08-08, from a visitor researcher pass
+              applying precision (3) to the detector itself). Clopper&ndash;Pearson at 95% gives sensitivity
+              &#8805; 0.541 and specificity &#8804; 0.459, hence <strong>J &#8712; [&minus;0.46, +0.46]</strong> —
+              an interval running from anti-informative to moderately informative. The point estimate is the right
+              sign and the design degeneracy in (2) is the deeper problem, but quoting <em>J = 0</em> bare on the
+              page labelled &ldquo;what&apos;s citable&rdquo; is the same sin this site correctly flags on{' '}
+              <Link href="/consciousness-demo" style={{ color: 'var(--color-accent-blue)' }}>the consciousness
+              demo</Link>.</p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              Measured, not asserted: adversarial same-corpus AI pairs filter for internal consistency
+              but cannot substitute for out-of-distribution evaluation. Relevant to anyone building
+              AI-for-science generation pipelines on shared training corpora.
+            </p>
+            <div style={{ background: 'rgba(56, 189, 248, 0.07)', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '0.375rem', padding: '0.8rem 1rem', fontSize: '0.87rem', color: 'var(--color-text-secondary)', margin: '0.75rem 0' }}>
+              <strong style={{ color: '#38bdf8' }}>Correction 2026-08-10 — the confound below is CLOSED, by
+              this program&apos;s own controls, and closing it cuts <em>for</em> the framework.</strong>{' '}
+              The paragraph that follows calls the degeneracy unresolved pending a cross-vendor control arm.
+              But two control arms have already run and both returned null: the{' '}
+              <strong>canonical-discoveries arm</strong> false-flagged <strong>6 of 6</strong> genuine
+              discoveries as reparametrizations (specificity 0/6), and the{' '}
+              <strong>temporal-asymmetry arm</strong> (paired training cutoffs) caught{' '}
+              <strong>0 of 6</strong> demotions. An instrument that misclassifies every known positive is
+              not weakly informative about the seed framework &mdash; it is <em>uninformative by
+              construction</em>. Therefore: <strong>&ldquo;47 contributions, 0 survivors&rdquo; and any
+              &ldquo;0 confirmed predictions&rdquo; that rests on A2ACW audit rather than on external data
+              are instrument-limited, and carry no information about whether the seed framework contains
+              novelty.</strong> This does not touch the physics ledger that stands on external data &mdash;
+              the boost ceiling and the γ=2 pin are unaffected and stand. It does mean the headline null has
+              been quoted with more authority than the device that produced it can support. Note also that
+              the sensitivity arm has no independent gold standard: the claim that the framework&apos;s own
+              claims genuinely <em>are</em> reparametrizations comes from the same audit process under
+              evaluation, so &ldquo;sensitivity = 1.0&rdquo; is circular and only the 0/6 specificity arm has
+              ground truth. Both arms are n = 6 &mdash; Wilson 95% CIs are roughly [0.61, 1.00] and
+              [0.00, 0.39], so <strong>J = 0 should not be quoted without an interval</strong>, and the 1.4%
+              session yield divides by 3,308 context-chained sessions whose effective N is unknown and
+              certainly not thousands. (Flagged by visitor Pass 4, 2026-08-10; it is the rare audit finding
+              that points toward the framework rather than against it, which is why it went unnoticed.)
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              <strong>No control arm; a confound the null doesn&apos;t resolve
+              <em> (superseded by the correction above — retained for the record)</em>:</strong> the corpus audited
+              is Synchronism itself, which this site independently concludes is a MOND reparametrization.
+              &ldquo;Adversarial same-corpus AI pairs cannot generate out-of-distribution novelty&rdquo; and
+              &ldquo;this particular seed framework contained none to find&rdquo; are observationally
+              degenerate in a single-arm, single-corpus design — there is no measured human-pair survival
+              rate on the same corpus to compare against. The generalization to AI-for-science pipelines
+              generally is a hypothesis this design cannot license on its own.
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+              <strong>Artifact status downgraded (2026-07-18, external researcher review):</strong> until the
+              cross-vendor corpus control runs — the one registered experiment that would break the
+              single-arm degeneracy above — this is a <em>registered null with a stated path to becoming a
+              citable artifact</em>, not yet the artifact. What is citable today is the measured
+              retrospective-control numbers (0/6, J = 0) and the confound analysis itself; the
+              program-level generalization gates on the unrun control arm.
+            </p>
+          </details>
+          <Link href="/a2acw" style={{ fontSize: '0.85rem' }}>Protocol, prior art, and audit details &rarr;</Link>
         </div>
 
         <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>

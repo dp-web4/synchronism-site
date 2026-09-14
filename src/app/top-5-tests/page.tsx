@@ -82,8 +82,12 @@ export default function Top5Tests() {
     <>
       <Breadcrumbs currentPath="/top-5-tests" />
       <PathNav currentPath="/top-5-tests" />
-      <h1>Top Decisive Tests</h1>
-      <ValidationBadge status="untested" label="Most Discriminating — Updated 2026-05-13" />
+      <h1>Decisive Tests: Status</h1>
+      <ValidationBadge status="audited-negative" label="0 active discriminating tests (reviewed 2026-09-14)" />
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem' }}>
+        (This page was ranked &ldquo;Top 5&rdquo; in May 2026 &mdash; hence the URL. Every ranked test has since closed or
+        been shown unable to select the framework; the heading and badge were aligned with the navigation label 2026-09-14.)
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -118,12 +122,14 @@ export default function Top5Tests() {
           them. That propagation lag is the defect a visitor Pass 3 caught, not the emptiness.{' '}
           <strong>One candidate has appeared since (2026-08-11):</strong> a proposed kill-or-tie
           pre-registration against DESI DR3 (TEST-26, below) &mdash; falsifiable and currently disfavoured,
-          but structurally unable to <em>select</em> the framework over &Lambda;CDM, so it does not
+          and expected only to kill or tie: it would <em>select</em> the framework over &Lambda;CDM only if DR3 landed in the
+          quadrant it allows at a &gamma; measurably away from &frac12; (unlikely on current data, not impossible &mdash;
+          &ldquo;structurally unable&rdquo; until 2026-09-14; see <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>), so it does not
           repopulate this list either.{' '}
           <strong>The emptiness is corroborated independently:</strong>{' '}
           <Link href="/test-catalog" style={{ color: 'var(--color-accent-blue)' }}>the 24-test catalog</Link>{' '}
-          finds <strong>0 of 24 designed experiments could select Synchronism over MOND+EFE+ΛCDM</strong> —
-          a structural result about the theory that required no data at all. Two closed predictions remain
+          finds <strong>0 of 24 designed experiments selected Synchronism over MOND+EFE+ΛCDM, and none still unrun can</strong> —
+          structural for the unrun ones; the two that could have selected it (TEST-09, TEST-10) needed data, ran, and lost (&ldquo;could select&rdquo; until 2026-09-14 &mdash; false for TEST-09/10, which would have selected the framework had its boost ceiling held; they ran and selected MOND). Two closed predictions remain
           below: one disfavored 2.4σ on σ₈ while its registered fσ₈ criterion fell short of its own &gt;3σ
           bar (post-hoc either way; corrected 2026-07-14), one withdrawn on internal contradiction.
         </div>

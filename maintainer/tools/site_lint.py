@@ -43,6 +43,34 @@ RETIRED = [
     (r"DESI DR3 \(2026-07", "2026-09-10", "there is no DESI DR3; DR2 full-shape is unpublished"),
     (r"No construction reaches the\s+Tsirelson bound \(2&radic;2 &asymp; 2\.83\) without signaling\.", "2026-09-11",
      "covers three constructions, not the substrate class (Toner–Bacon 2003 is untested here)"),
+    # ---- 2026-09-14 (maintainer; visitor log 2026-09-14 + explorer findings 09-11 / 09-12)
+    (r"never won", "2026-09-14", "fit-vs-selection slip: a nesting family is selected if the data land in its allowed region (archive 07-29)"),
+    (r"It cannot win", "2026-09-14", "same slip on /for-researchers; archive corrected it 2026-07-29 (nested_submodel_fit_versus_selection.md)"),
+    (r"The one equation fits galaxy rotation", "2026-09-14", "the density-keyed equation does not fit; only the acceleration-keyed, fitted-γ version does (= MOND)"),
+    (r"\+ 1 theorem\b|1 theorem-level check|theorem executing as designed|A proof, not an experiment", "2026-09-14",
+     "Bell bounds local models only; the nonlocal CHSH arms are construction nulls"),
+    (r"Most Discriminating — Updated 2026-05-13", "2026-09-14", "stale subtitle on a page with 0 active discriminating tests"),
+    (r"why the curve works across quantum to cosmic scales", "2026-09-14", "80-orders unification refuted (S633: saturates within ~1.6 decades)"),
+    (r"passes across its (whole )?1σ range", "2026-09-14", "ambiguous; say RG's knee lies below the excluded window and is not excluded"),
+    (r"The sector is background-only", "2026-09-14", "a locality-fork perturbation channel exists (archive 08-18, −0.22% fσ₈)"),
+    (r"1</strong> untested \(a₀ ~ cH₀", "2026-09-14", "landing Key Claims tally listed a different set of claims than /key-claims"),
+    (r"Not a discriminating test vs MOND", "2026-09-14", "TEST-20 is a ~255× lever, self-eliminating-or-tie, already measured (Chae+2021)"),
+    (r"VERY HIGH — GR predicts exactly zero correlation", "2026-09-14", "TEST-15 kill (10⁻¹⁶) sits below the best bound ever achieved (~10⁻¹⁵)"),
+    (r"Every Tier 2 and Tier 4", "2026-09-14", "the unrunnable rule is a predicate over all tiers, not a tier list"),
+    (r"may be unrunnable rather than closed", "2026-09-14", "evolving floor executed on z ≥ 1.5 kinematics and refuted as a reading (explorer 09-11)"),
+    (r"SPARC environment analysis \(TEST-03\)", "2026-09-14", "SPARC environment is TEST-01; TEST-03 is the ALFALFA TFR scatter test"),
+    (r"no high-z\s+discriminator exists|closes\s+without data|No data was needed", "2026-09-14",
+     "the 08-08 closure rested on an a₀(z) disfavored 08-01; executed and refuted 09-11"),
+    (r"1\.09 for every|<= 1\.1 for every gamma|&lt;= 1\.1 for every gamma", "2026-09-14", "B_max(z=2) spans 1.002–1.201 over γ ∈ [0.3, 2]"),
+    (r"environment-dependent scatter \(p = 5|environment dependence \(p = 5", "2026-09-14",
+     "p = 5×10⁻⁶ belongs to the R² = 0.14 Hubble-type term, not the registered amplitude"),
+    (r"0 (of 24 designed experiments |executed tests )?could select Synchronism|0 could select Synchronism", "2026-09-14",
+     "TEST-09/10 could have selected the framework had the ceiling held; say '0 selected, none still unrun can'"),
+    (r"structurally unable to <em>select</em>", "2026-09-14", "TEST-26 would select at γ ≠ ½ in its allowed quadrant; unlikely, not structural"),
+    (r"Can only tie or refute", "2026-09-14", "TDG interval is nested, which is not a structural bar on selection"),
+    (r"Freundlich et al\. 2022 and Paranjape &amp; Sheth 2022 offer", "2026-09-14", "Freundlich+2022 is a Coma-UDG no-EFE result, not a ΛCDM reading of Chae"),
+    (r"positive control has never been run|better described as a false \*?discovery\*? rate|the four artifacts below", "2026-09-14",
+     "A2ACW card rebuilt as current state + history; see /for-researchers#a2acw-open-question"),
 ]
 
 EXEMPT = re.compile(
@@ -59,6 +87,10 @@ def main():
         text = path.read_text(encoding="utf-8")
         for pat, date, why in RETIRED:
             for m in re.finditer(pat, text):
+                # Collapsed revision history (<details> … </details>) keeps retired wording verbatim by design
+                # (added 2026-09-14, when the A2ACW card's history moved into one).
+                if text.rfind("<details", 0, m.start()) > text.rfind("</details>", 0, m.start()):
+                    continue
                 start = text.rfind("\n", 0, m.start()) + 1
                 end = text.find("\n", m.end())
                 line = text[start:end if end != -1 else len(text)]

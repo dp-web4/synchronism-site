@@ -1,7 +1,61 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-12 (explorer)*
+*Last updated: 2026-09-14 (maintainer)*
+
+---
+
+## 🟢 NEW (maintainer 2026-09-14) — **The dark-energy sector is a Cardassian model (Freese & Lewis 2002), and neither
+repo had ever said so. The site also carried the fit-vs-selection slip at headline altitude: "0 executed tests *could*
+select Synchronism" was false for TEST-09/10, which could have and lost. Both explorer P0 batches (09-11, 09-12) are now
+on the site.**
+
+The 09-12 and 09-13 maintainer runs did not happen (the 09-13 run hit its usage limit). Log: `maintainer/logs/2026-09-14.md`.
+Proposal (WAKE, before fixes): `Synchronism/Research/proposals/de_sector_is_cardassian_prior_art_20260914.md`.
+Script: `maintainer/scripts/de_sector_is_cardassian.py` (+ output, mirrored). **Count stays 6; Bucket 0 = 0.**
+
+1. **Cardassian.** H² = 8πGρ_m/(3C):
+   - exactly ΛCDM at γ = ½;
+   - MP-Cardassian with q = 1, n = 1 − 2γ at high density;
+   - Λ-like at low density (where it departs from MP-Cardassian).
+
+   0 grep hits for "cardassian|freese" in either repo. The class already has a late-ISW exclusion except near ΛCDM
+   (Koivisto+2005, PRD 71, 064027): imported, **not executed**. Back-annotated in PREDICTIONS.md and Session 100.
+   Frame point: when the prior-art question is never scheduled, the program under-finds prior art. That is a data point
+   against A2ACW's H2 direction.
+2. **Selection ≠ fit, six places.**
+   - "0 could select" appeared on /test-catalog, /top-5-tests, /falsifiability, /honest-assessment and /tier-1-existing.
+   - Other forms: "never won" (/dark-energy), "It cannot win" (/for-researchers), TEST-26 "structurally unable to
+     select", TDG "Can only tie or refute".
+   - The archive corrected the argument 2026-07-29; it never propagated. All six now say "0 selected, none still unrun can".
+3. **Bell/CHSH is a construction check, not a theorem.** `ledger.ts` + six surfaces. The roots sentence now sums: 6 from 5.
+4. **"Which C"**:
+   - One line under the landing equation.
+   - The HA non-physicist box no longer says "the one equation fits galaxy rotation".
+   - /core-idea now says which way coherence pushes gravity.
+   - TEST-09/10 key C on g_bar with a 1/φ exponent (read from the scripts).
+5. **Stale over-claim on a beginner tool:** /coherence-explorer said "why the curve works across quantum to cosmic
+   scales" (S633-refuted). Removed.
+6. **Explorer P0s done.**
+   - 09-12: tier-3 verdicts (TEST-20 ~255× lever, Chae+2021), TEST-01 inherits the executed kill, protocol box as a
+     predicate over all tiers.
+   - 09-11: evolving floor executed-and-refuted replaces "No data was needed / closes without data". **B_max(z=2) spans
+     1.002–1.201 over γ ∈ [0.3, 2]; the "≈1.09 for every γ" in the 09-11 entries below is wrong**, and the maintainer
+     script's sentence is corrected. f_DM,max(z=2) = 0.075, not 0.05.
+7. **A2ACW card** is now current state + collapsed history, and out of the citable list. Power: a perfect n = 6 gives
+   J ≥ 0.08; about 41/arm is needed for J ≥ 0.3 at 80/80.
+
+### Tool
+`site_lint.py` now has 36 rules and skips `<details>` history blocks. Positive control: 38 hits on HEAD, 0 on the tree.
+
+### → Explorer (topics seeded)
+- `prior-art-pass-on-every-defining-equation.md` — equation → nearest class → first-cited date. Also execute the
+  Koivisto ISW import onto n = 1 − 2γ.
+- `correction-palimpsest-rate.md` — are dated in-place corrections now the main source of self-contradiction?
+
+### → dp (gated)
+TEST-26 registration should cite the Cardassian class and a numeric kill threshold. Whether to send the GC window /
+unidentifiability note to the Refracted Gravity authors is outward-facing, so it is dp's call.
 
 ---
 

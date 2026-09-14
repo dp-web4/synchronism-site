@@ -32,7 +32,7 @@ const tiers = [
     time: '2–5 years',
     color: 'var(--color-accent-violet)',
     href: '/tier-3-major',
-    desc: 'Dedicated facilities: gravitational wave correlation, multi-messenger astronomy, controlled decoherence.',
+    desc: 'Dedicated facilities: gravitational wave correlation, multi-messenger astronomy, controlled decoherence. ⚠ TEST-16, TEST-17 and TEST-19 are unrunnable as stated (see the protocol-status box above); TEST-15 and TEST-20 cannot select the framework (verdicts on the tier page).',
   },
   {
     tier: 'Tier 4: Frontier',
@@ -106,7 +106,7 @@ export default function TestCatalog() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#f59e0b' }}>Discrimination status (restated 2026-07-27):</strong>{' '}
-          Of these 24 proposed tests, <strong>0 could select Synchronism over MOND+EFE+&Lambda;CDM</strong>.
+          Of these 24 proposed tests, <strong>0 selected Synchronism over MOND+EFE+&Lambda;CDM, and none still unrun can</strong> (&ldquo;could select&rdquo; until 2026-09-14 &mdash; false for TEST-09/10, which would have selected the framework had its boost ceiling held; they ran and selected MOND).
           That is the accurate claim. The blunter form this box used to carry — &ldquo;0 discriminate&rdquo; —
           was false, and contradicted Tier 1: <strong>2 executed tests did discriminate, and both selected
           MOND</strong> (TEST-09, BTFR slope, separating the models at 3.3σ; TEST-10, dwarf DM fractions).
@@ -133,14 +133,19 @@ export default function TestCatalog() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#ef4444' }}>Protocol status — the &ldquo;unrunnable&rdquo; verdict, propagated
-          (2026-07-18):</strong>{' '}
+          (2026-07-18; restated as a rule over all tiers 2026-09-14):</strong>{' '}
           No protocol maps any laboratory or astronomical observable to the coherence value C, in any domain
           (the site&apos;s own adjudication — see{' '}
           <Link href="/for-researchers" style={{ color: '#ef4444' }}>For Researchers</Link> and{' '}
-          <Link href="/key-claims" style={{ color: '#ef4444' }}>Key Claims</Link>). Every Tier 2 and Tier 4
-          experiment whose outcome depends on measuring C — the EEG, circadian, and QC-coherence pilots
-          included — is therefore <strong>unrunnable as stated</strong>: funding one at the listed $50K&ndash;$500K
-          would buy a measurement of a variable the framework has already ruled uninterpretable as C. These
+          <Link href="/key-claims" style={{ color: '#ef4444' }}>Key Claims</Link>). The rule is a property of
+          the observable, not of the tier: <strong>any experiment, in any tier, whose outcome depends on measuring
+          C, γ, N<sub>corr</sub> or an MRH boundary</strong> is therefore <strong>unrunnable as stated</strong>. That
+          covers the Tier 2 EEG, circadian and QC-coherence pilots, the C-dependent Tier 4 entries, and in Tier 3{' '}
+          <Link href="/tier-3-major" style={{ color: '#ef4444' }}>TEST-16 (MRH boundaries), TEST-17 (cluster γ
+          profile) and TEST-19 (C &asymp; 0.50)</Link>. Funding one would buy a measurement of a variable the
+          framework has not mapped to any of those quantities.{' '}
+          <em style={{ color: 'var(--color-text-muted)' }}>(Until 2026-09-14 this box named only Tiers 2 and 4,
+          so Tier 3 fell through; explorer finding 2026-09-12.)</em> These
           entries stay listed as what they are — proposals pending a calibration protocol that does not exist —
           not as fundable tests. An external review flagged this page as presenting them as fundable; this box
           is the correction.
@@ -260,13 +265,22 @@ export default function TestCatalog() {
             closed.</strong> (Scoped to this box&apos;s three recommendations — it does not mean no further
             $0 analysis exists; see the a&#x2080;(z) epoch fork on{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>,
-            added 2026-07-29, which remains unregistered and may be unrunnable rather than closed.)
+            added 2026-07-29. Its evolving-ceiling reading, f<sub>DM</sub> &le; 1 &minus; &Omega;<sub>m</sub>(z), has
+            since been executed on published z &ge; 1.5 disc kinematics (N = 21; Price+2021 and Genzel+2020) and
+            is refuted as a reading across &gamma;<sub>DE</sub> &isin; [0.43, 0.56]. The earlier closure by argument
+            (2026-08-08) rested on an evolving a&#x2080;(z) already disfavored on 2026-08-01. Branch (i), a ceiling set
+            by &Omega;<sub>m</sub>/&Omega;<sub>b</sub> and flat in epoch, still stands. The reading was never registered,
+            so the refutation count stays at 6.{' '}
+            <em style={{ color: 'var(--color-text-muted)' }}>(Updated 2026-09-14, explorer finding 2026-09-11.)</em>)
             An earlier version of this box recommended starting with three
             existing-data tests; all three have since been adjudicated. BAO coherence modulation:{' '}
             <em>Withdrawn 2026-05-04</em> (internal contradiction, never adjudicated). SPARC
-            environment analysis (TEST-03): <em>Never run as registered</em> (the old &ldquo;R&sup2; = 0.14
-            kill&rdquo; was a metric conflation, corrected 2026-07-09); the registered environment claim was
-            executed 2026-07-14 with r&sup2; = 0.0001 — refuted. Wide binaries (TEST-02): <em>Self-Eliminating-or-Tie</em> —
+            environment analysis (TEST-01; TEST-01, TEST-03s and TEST-05 are one environment test under three IDs):
+            the old &ldquo;R&sup2; = 0.14 kill&rdquo; was a metric conflation (corrected 2026-07-09); the SPARC
+            environment claim was executed 2026-07-14 with r&sup2; = 0.0001 — refuted. That run is TEST-03s, a
+            substitute; the ALFALFA-registered TEST-03 remains unrun.{' '}
+            <em style={{ color: 'var(--color-text-muted)' }}>(ID corrected 2026-09-14; this label previously
+            said TEST-03, the ALFALFA TFR-scatter card.)</em> Wide binaries (TEST-02): <em>Self-Eliminating-or-Tie</em> —
             the predicted 0.05–0.4% signal sits ~80&times; below Gaia DR3 systematics, and either
             outcome of the ongoing Chae-vs-Banik dispute is covered by Newton or MOND respectively,
             so no result selects this framework. See{' '}

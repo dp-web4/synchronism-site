@@ -22,7 +22,19 @@ export default function CoreIdea() {
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1.25rem', fontSize: '1.05rem' }}>
           Think of it as a <strong>dimmer switch</strong> from sparse/independent to dense/collective.
           Feed it the local density of a system, and it outputs a number between 0 (sparse/independent)
-          and 1 (dense/collective). The same switch, the same scale, works for a single atom and a galaxy cluster.
+          and 1 (dense/collective). The proposal was that the same switch, on the same scale, works for a single atom and
+          a galaxy cluster &mdash; that is what was tested, and where it broke is below.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1.25rem', fontSize: '0.95rem' }}>
+          <strong>What does coherence do to gravity?</strong> (added 2026-09-14 &mdash; a reader finished the beginner
+          path without learning this.) In galaxies, the proposal was that gravity <em>looks</em> stronger than the visible
+          matter explains by a factor set by C. Two wirings were tried, and they point opposite ways. In the one the
+          site&apos;s galaxy refutations used, the boost is 1/C: gravity looks strongest where coherence is <em>low</em>
+          (the sparse outskirts), capped at about 3.2&times;. In the other (&ldquo;quadrature&rdquo;), the extra
+          speed grows <em>with</em> C, so it switches on in dense centres &mdash; where it isn&apos;t needed &mdash; and fails
+          outright. The 1/C wiring fits only after its input is switched from density to acceleration and its dial is
+          fitted, at which point it is MOND; with the cap it fails the most dark-matter-dominated galaxies. Both are on the{' '}
+          <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link>.
         </p>
 
         <div className="equation" style={{ fontSize: '1.5rem' }}>
@@ -166,6 +178,12 @@ export default function CoreIdea() {
           review passes, 2026-07-09 and 2026-07-10 &mdash; the audit machinery caught it; the identity
           then took a day to reach this page. No external derivation is on record.)
         </p>
+        <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          <strong>Precision (2026-09-14):</strong> &ldquo;Hill-type&rdquo; is exact in the variable (1+x). In x = &rho;/&rho;<sub>crit</sub>
+          itself, C is exactly a Hill function only at &gamma;&nbsp;=&nbsp;&frac12;, where C&nbsp;=&nbsp;x/(x+2); at other &gamma;
+          the Hill index n&nbsp;=&nbsp;2&gamma; is the large-x slope, and near x&nbsp;=&nbsp;0 the curve is simply linear
+          (C&nbsp;&asymp;&nbsp;&gamma;x).
+        </p>
       </section>
 
       <section className="section content-width">
@@ -194,6 +212,10 @@ export default function CoreIdea() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
               <div>
+                <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', margin: '0 0 0.25rem' }}>
+                  Two dials, one vocabulary &mdash; don&apos;t mix them up: <strong>C</strong> near 1 means collective; <strong>&gamma;</strong> runs the other way
+                  (small &gamma; = many correlated particles = a gentle switch).
+                </p>
                 <h3>&#x03B3; &laquo; 1: Collective Regime</h3>
                 <p style={{ color: 'var(--color-text-secondary)' }}>
                   <strong>Many</strong> correlated particles (large N<sub>corr</sub> → small &#x03B3; = 2/&#x221A;N<sub>corr</sub>).

@@ -563,32 +563,55 @@ export default function ParameterDerivations() {
               see the proposal for the pre-fixed verdict rule.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
-              <strong style={{ color: '#38bdf8' }}>At which epoch? The fork is real, and closing it removes a
-              candidate test rather than adding one (executed 2026-08-08).</strong> An expert visitor pass noted a
-              genuine inconsistency: this page promotes a&#x2080; to <strong>a&#x2080;(z) = cH(z)/2&#x03C0;</strong>{' '}
-              but freezes &#x03A9;<sub>m</sub> at its present value, with no stated rule &mdash; and proposed that
-              an evolving ceiling gives <strong>f<sub>DM,max</sub>(z) = 1 &minus; &#x03A9;<sub>m</sub>(z)</strong>{' '}
-              &#8776; 0.21 at z = 1 and &#8776; 0.05 at z = 2, a sharp epoch dependence neither MOND nor &#x039B;CDM
-              predicts. Both branches were checked. <strong>Branch (i), the &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub>{' '}
-              reading:</strong> baryons and total matter are both dust, so
-              &#x03A9;<sub>b</sub>(z)/&#x03A9;<sub>m</sub>(z) = &#x03A9;<sub>b,0</sub>/&#x03A9;<sub>m,0</sub> = 0.1565{' '}
-              <em>identically at every z</em> &mdash; the ceiling is 6.39 at all epochs and there is nothing to
-              measure. <strong>Branch (ii), the 1/&#x03A9;<sub>m</sub>(z) reading:</strong> it self-destructs.
-              Writing B<sub>max</sub>(z) = E(z)&sup2;/[&#x03A9;<sub>m,0</sub>(1+z)&sup3;], the ceiling <em>falls</em>{' '}
-              (3.17 &rarr; 1.27 at z = 1 &rarr; 1.08 at z = 2) while the same E(z) makes a&#x2080;(z) <em>rise</em>{' '}
-              (1.79&times; at z = 1, 3.03&times; at z = 2). Since the galaxy sector <em>is</em> deep-MOND at
-              &#x03B3; = 1/2, the required boost is B = &radic;(a&#x2080;(z)/g<sub>bar</sub>), so the ceiling permits
-              MOND behaviour only where g<sub>bar</sub> &gt; &#x03A9;<sub>m</sub>(z)&sup2;&middot;a&#x2080;(z): that
-              is g<sub>bar</sub> &gt; 0.099 a&#x2080; today but g<sub>bar</sub> &gt; 0.86 a&#x2080; at z = 2.
-              <strong> By z &#8776; 1 the evolving ceiling forbids essentially the whole MOND regime that the
-              framework&apos;s own evolving a&#x2080; has just widened.</strong> The two cosmological inputs evolve in
-              opposite directions, so branch (ii) is not a prediction but an internal contradiction &mdash; which
-              means <em>the ceiling must be frozen at &#x03A9;<sub>m,0</sub></em>, and once frozen it carries no
-              epoch dependence. <strong>Either branch: no high-z discriminator exists. No data was needed, and the
-              refutation count is unchanged at 6.</strong> This is the third consecutive candidate discriminator to
-              die on an unmade definitional choice rather than on a measurement (after the EFE argument fork and the
-              ceiling&apos;s own 1/&#x03A9;<sub>m</sub> vs &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> ambiguity) &mdash;
-              the pattern is recorded in{' '}
+              <strong style={{ color: '#38bdf8' }}>At which epoch? The evolving ceiling was tested on published
+              high-z disc kinematics and failed as a reading (explorer 2026-09-11; corrected here 2026-09-14). Until
+              then this box said the fork closed without data.</strong> An expert visitor pass noticed that this page
+              evolves a&#x2080; to a&#x2080;(z) = cH(z)/2&#x03C0; but freezes &#x03A9;<sub>m</sub>. It proposed an
+              evolving ceiling, <strong>f<sub>DM,max</sub>(z) = 1 &minus; &#x03A9;<sub>m</sub>(z)</strong>, which is
+              &#8776; 0.21 at z = 1 and &#8776; 0.075 at z = 2. (This box said &ldquo;&#8776; 0.05&rdquo; for z = 2,
+              but that is the value at z &#8776; 2.4.) <strong>Branch (i), the
+              &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> reading, still stands.</strong> Baryons and total matter are
+              both dust, so &#x03A9;<sub>b</sub>(z)/&#x03A9;<sub>m</sub>(z) = 0.1565 at every z. The ceiling is 6.39 at
+              all epochs, and there is nothing to measure.{' '}
+              <strong>Branch (ii), the 1/&#x03A9;<sub>m</sub>(z) reading.</strong> Under &#x039B;CDM,
+              B<sub>max</sub>(z) = E(z)&sup2;/[&#x03A9;<sub>m,0</sub>(1+z)&sup3;] falls from 3.17 to 1.27 at z = 1 and
+              1.08 at z = 2. Under the framework&apos;s own dark-energy sector the z = 2 value depends on &#x03B3;: it
+              runs from 1.002 to 1.201 across &#x03B3; &isin; [0.3, 2], and is &#8776; 1.08 near &#x03B3; = &frac12;.
+              A single z = 2 value that holds at every &#x03B3; does not exist.{' '}
+              <strong>The 2026-08-08 closure was void.</strong> It called branch (ii) an internal contradiction, because
+              the ceiling falls while a&#x2080;(z) rises 3.03&times;, and it concluded that the fork could be settled without data. There are
+              three problems with that argument:
+              <br />&bull; It needs the evolving a&#x2080;(z) that this page&apos;s a&#x2080; item marked disfavored on 2026-08-01.
+              <br />&bull; A density-keyed floor has no a&#x2080; to collide with.
+              <br />&bull; The same ceiling at z = 0 is TEST-09/10, which the site treats as a test.
+              <br />
+              <strong>What was run instead.</strong> Session 100&apos;s closure,
+              &#x03C1;<sub>DE</sub> = &#x03C1;<sub>m</sub>(1&minus;C)/C, makes C at the mean matter density
+              <em> identically</em> the model&apos;s own &#x03A9;<sub>m</sub>(z) (maximum deviation 1.1&times;10<sup>&minus;16</sup>).
+              That is the literal reading of the floor as &ldquo;the cosmic average coherence&rdquo;. The rule was
+              pre-registered before any table was fetched. It covers z &ge; 1.5 and refutes if at least max(5, 10%) of
+              the discs sit more than 2&sigma; above the cap, or if the median exceeds the median cap by more than
+              3 s.e. It was run across &#x03B3;<sub>DE</sub> &isin; [0.428, 0.560], the DESI DR2 wCDM 2&sigma; envelope,
+              mapped crudely at single pivot redshifts. On the N = 21 published discs:
+              <br />&bull; <strong>Price+2021 MCMC:</strong> 10&ndash;13 discs above the cap at &gt; 2&sigma;, median excess
+              6.7&ndash;7.4 s.e. Refuted.
+              <br />&bull; <strong>Genzel+2020 least-squares, same galaxies:</strong> 6 above (5 needed), 2.3&ndash;2.9 s.e.
+              Refuted at every &#x03B3; in the band.
+              <br />&bull; <strong>RC100 shape</strong> (N = 67 at z = 1.2&ndash;2.5): the data give
+              f<sub>DM</sub> &prop; (1+z)<sup>&minus;b</sup> with b = 1.07 &plusmn; 0.33. The cap needs b = 2.23&ndash;2.91,
+              which is 3.5&ndash;5.6&sigma; away.
+              <br />
+              A Salpeter IMF stacked on the least-squares fits removes the refutation (4 of 21 above the cap for Price,
+              3 for Genzel). But it leaves 2 (Price) or 5 (Genzel) of the 21 discs super-maximal at &gt; 2&sigma;, with
+              baryons alone exceeding the measured rotation. The reading does get the sign and today&apos;s level right:
+              RC100&apos;s z = 0 normalization is 0.75, against a cap of 0.685. It fails on steepness. No epoch or memory
+              variant of the floor can loosen the z = 0 ceiling, because C<sub>DE</sub>(&#x03C1;&#x0304;<sub>m</sub>(z))
+              &ge; &#x03A9;<sub>m</sub> on the past light cone. <strong>Branch (ii) is eliminated as a reading, and the
+              floor is left as a fit constant set equal to &#x03A9;<sub>m</sub>. It was never a registered prediction,
+              so the refutation count stays 6.</strong> This candidate died on a measurement, not on a definitional
+              choice. Script:{' '}
+              <code style={{ fontSize: '0.78rem' }}>explorer/findings/scripts/evolving_floor_highz_and_ambient_z0.py</code>{' '}
+              (+ <code style={{ fontSize: '0.78rem' }}>_output.txt</code>). The void closure is in{' '}
               <code style={{ fontSize: '0.78rem' }}>Research/proposals/boost_ceiling_epoch_fork_closes_the_last_candidate_discriminator_20260808.md</code>.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>

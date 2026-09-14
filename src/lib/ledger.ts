@@ -15,7 +15,10 @@
 export const REFUTATIONS_EXECUTED = 6;
 
 /** Of the six, how many ran on external data (astronomical, ephemeris, laboratory). The
- *  sixth is the Bell/CHSH substrate check — a theorem executing as designed, not data. */
+ *  sixth is the Bell/CHSH substrate check — not data. Its local arm illustrates Bell's theorem; its two
+ *  nonlocal arms are construction nulls (three constructions built, the substrate class untested —
+ *  Toner & Bacon 2003 hidden-communication models never built). Relabelled from "theorem" 2026-09-14
+ *  after a researcher persona noted Bell's theorem says nothing about nonlocal no-signaling models. */
 export const REFUTATIONS_ON_EXTERNAL_DATA = 5;
 
 /**
@@ -28,13 +31,15 @@ export const REFUTATIONS_ON_EXTERNAL_DATA = 5;
  *     >20 % amplitude, which C(ρ)'s own lever (≤2×10⁻³ dex ⇒ r² ~ 10⁻⁴) never predicted —
  *     the measured r² = 1×10⁻⁴ is consistent with the equation;
  *   - 1 inherited from MOND's interpolating-function family: TEST-25 Cassini/SPARC;
- *   - 1 theorem: Bell/CHSH.
+ *   - 1 Bell/CHSH check: local arm = Bell's theorem illustrated; nonlocal arms = construction nulls.
  * The archive's own independence audit (2026-08-08) says "≤5" and the exact figure GATES
  * ON DP. Quote the split, not a single number.
  */
 export const ROOTS_FRAMEWORK_SPECIFIC = 2;
 export const ROOTS_SENTENCE =
-  '6 executed refutations; 2 framework-specific mechanism roots (boost ceiling, γ=2 pin) + 1 refuted registration (environment amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 theorem (Bell/CHSH)';
+  '6 executed refutations from 5 roots: 2 framework-specific (the boost ceiling, behind both TEST-09 and TEST-10; the γ=2 pin) + 1 refuted registration (environment amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell\'s theorem; two nonlocal constructions null; the substrate class untested)';
+/** Sentence rewritten 2026-09-14: the old form ("6 executed refutations; 2 … roots + 1 + 1 + 1") summed
+ *  to 5 and a graduate-physics persona read it as an arithmetic error. */
 
 /** Galaxy samples. 14,610 is the sample actually RUN (175 SPARC + 14,435 ALFALFA–SDSS after
  *  the optimal quality cut). 14,760 (175 + 14,585) is the full cross-match before cuts;

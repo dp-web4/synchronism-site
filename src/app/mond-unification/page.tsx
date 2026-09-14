@@ -156,8 +156,8 @@ export default function MondUnification() {
           <strong>refutation-only</strong>: a confirmed EFE detection wounds this framework and &Lambda;CDM alike
           while selecting MOND, and no EFE outcome can ever select this framework over &Lambda;CDM.{' '}
           <strong>(2)</strong> The reported ~4&sigma; detection (Chae, Lelli, Desmond, McGaugh, Li &amp;
-          Schombert 2020, ApJ 904, 51) is contested in the literature &mdash; environmental-systematics rebuttals
-          by Freundlich et al. and Paranjape &amp; Sheth &mdash; a debate cited here in both directions, noting it
+          Schombert 2020, ApJ 904, 51) is contested in the literature &mdash; a &Lambda;CDM-mimicry argument
+          (Paranjape &amp; Sheth 2022) and a no-EFE result in Coma ultra-diffuse galaxies (Freundlich et al. 2022) &mdash; a debate cited here in both directions, noting it
           currently cuts in this framework&apos;s <em>favor</em>. <strong>(3)</strong> Per the ledger&apos;s
           2026-08-05 execution, EFE&nbsp;=&nbsp;0 is <strong>not-evaluable</strong> against Chae&apos;s data
           anyway: at Chae&apos;s own measurement radii the framework&apos;s density law misses the rotation curves
@@ -212,7 +212,7 @@ export default function MondUnification() {
             Synchronism predicts &#x03C3; ~ 10.5&ndash;14.5 km/s while MOND predicts &#x03C3; ~
             10.9&ndash;40.9 km/s. Observable with the NGC 5291 system (Bournaud et al. 2007, Lelli et al. 2015).
           </p>
-          <ValidationBadge status="untested" label="Can only tie or refute — see caveat" />
+          <ValidationBadge status="untested" label="Nested inside MOND's interval — see caveat" />
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
             <strong>Correction (2026-08-01):</strong> this is not an independent novel prediction. Three
             problems, on the site&apos;s own numbers elsewhere: (1) <strong>the intervals are nested</strong> &mdash;

@@ -17,7 +17,7 @@ const steps = [
   {
     title: 'Step 2: Normalize by critical density',
     equation: 'ρ / ρ_crit — dimensionless ratio',
-    explanation: 'ρ_crit is a reference density — a saturation knee, not a phase-transition critical point. At γ=2: C(ρ_crit) = tanh(2·ln 2) = 0.88, not 0.5. The midpoint C=0.5 sits at ρ ≈ 0.32×ρ_crit. For galaxies: ρ_crit = A × V_flat² (calibrated per galaxy). The ratio ρ/ρ_crit tells you where you are relative to the saturation region.',
+    explanation: 'ρ_crit is a reference density — a saturation knee, not a phase-transition critical point. At γ=2: C(ρ_crit) = tanh(2·ln 2) = 0.88, not 0.5 — but at the galaxy-fitted γ ≈ 0.49 (the Coherence Explorer default) it is only 0.33, so whether ρ_crit sits above or below the halfway point depends on γ. The midpoint C=0.5 sits at ρ ≈ 0.32×ρ_crit. For galaxies: ρ_crit = A × V_flat² (calibrated per galaxy). The ratio ρ/ρ_crit tells you where you are relative to the saturation region.',
     key: 'ρ_crit is a saturation knee, not a critical density — calling it "transition density" is misleading (C(ρ_crit) = 0.88, not 0.5).',
   },
   {

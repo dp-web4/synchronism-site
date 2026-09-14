@@ -22,8 +22,12 @@ export default function DarkEnergy() {
           <strong>The answer, in one sentence:</strong> the framework has a dark-energy sector &mdash;
           derived in December 2025, arithmetically corrected in August 2026 &mdash; and{' '}
           <strong>every consistent version of it misses the specific behaviour DESI prefers</strong>,
-          which makes this the framework&apos;s one live falsifiable position: a bet that can be killed
-          or tied at DESI DR3, but never won. This page shows the construction, what it predicts, how
+          which makes this the framework&apos;s one live falsifiable position. At DESI DR3 it is killed if the
+          crossing holds, tied if the data sit at &Lambda;CDM (&gamma;&nbsp;=&nbsp;&frac12;), and it wins only if
+          the data move into the quadrant it allows (w&#x2080;&nbsp;&gt;&nbsp;&minus;1 with w&#x2090;&nbsp;&gt;&nbsp;0,
+          or the phantom mirror) at a &gamma; measurably away from &frac12; &mdash; unlikely on current data, but not
+          impossible by construction (corrected 2026-09-14 from &ldquo;never won&rdquo;, the same fit-versus-selection
+          slip the archive corrected for the galaxy sector on 2026-07-29). This page shows the construction, what it predicts, how
           the covariant check sharpened the verdict, and exactly what evidence would change it.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
@@ -52,6 +56,25 @@ export default function DarkEnergy() {
           galactically; C&#x2080;&nbsp;=&nbsp;&Omega;<sub>m</sub> cosmologically), and the two calibrations are
           unanchored against each other by ~10&sup1;&#x2070; &mdash; the &ldquo;one equation&rdquo; carries
           sector-dependent constants, stated here where the sector is introduced.
+        </p>
+        <p>
+          <strong>Two things the construction is, stated plainly (added 2026-09-14).</strong> First, inverting the
+          definition gives C&nbsp;=&nbsp;&rho;<sub>m</sub>/(&rho;<sub>m</sub>&nbsp;+&nbsp;&rho;<sub>DE</sub>):{' '}
+          <strong>cosmological &ldquo;coherence&rdquo; is the model&apos;s matter fraction &Omega;<sub>m</sub>(a)</strong>,
+          identically, at every epoch and every &gamma;. That is why C&#x2080;&nbsp;=&nbsp;&Omega;<sub>m</sub> is forced,
+          and it is the same number that sets the galaxy sector&apos;s boost cap 1/&Omega;<sub>m</sub>. Second,
+          H&sup2;&nbsp;&prop;&nbsp;&rho;<sub>m</sub>/C(&rho;<sub>m</sub>) is a modified Friedmann equation with no new
+          degree of freedom &mdash; the <strong>Cardassian</strong> class (Freese &amp; Lewis 2002, Phys. Lett. B 540, 1;
+          modified-polytropic form, Gondolo &amp; Freese 2002–03). Exactly: at &gamma;&nbsp;=&nbsp;&frac12; it is
+          1/C&nbsp;=&nbsp;1&nbsp;+&nbsp;2&rho;<sub>crit</sub>/&rho;<sub>m</sub>, i.e. &Lambda;CDM; at high density it
+          tends to the modified-polytropic Cardassian with q&nbsp;=&nbsp;1 and n&nbsp;=&nbsp;1&minus;2&gamma; at low
+          density it tends to a constant &rho;<sub>DE</sub>&nbsp;=&nbsp;&rho;<sub>crit</sub>/&gamma; (a &Lambda;-like
+          future, which the Cardassian family does not have unless n&nbsp;=&nbsp;0). Neither the archive nor this site
+          cited that literature before a visiting researcher pointed it out on 2026-09-14; it matters because
+          Cardassian models given fluctuations were already found to over-produce the late integrated Sachs&ndash;Wolfe
+          effect everywhere except a small neighbourhood of &Lambda;CDM (Koivisto, Kurki-Suonio &amp; Ravndal 2005,
+          PRD 71, 064027) &mdash; the same corner this sector&apos;s likelihood fit lands in. Checks:{' '}
+          <code>maintainer/scripts/de_sector_is_cardassian.py</code>.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           Arithmetic provenance: the archive&apos;s published w(z) table was wrong twice &mdash; a sign error in
@@ -247,8 +270,13 @@ export default function DarkEnergy() {
             moot for the substituted family: it sits at &Lambda;CDM&apos;s corner regardless of parameterization.
           </li>
           <li>
-            <strong>The sector is background-only.</strong> There is no perturbation sector, so the CMB-anchored
-            contours the &sigma; figures borrow assume a perturbation model the framework does not have. The
+            <strong>The sector has almost no perturbation theory.</strong> The one perturbation channel derived
+            (the locality fork, research repo 2026-08-18: &delta;<sub>DE</sub>/&delta;<sub>m</sub>&nbsp;=&nbsp;1&nbsp;+&nbsp;w<sub>DE</sub>)
+            forecasts an fσ₈ shift of about &minus;0.22% &mdash; &Lambda;CDM-like, 0.10&sigma;. It is <em>not</em> the
+            source of TEST-04a&apos;s fσ₈&nbsp;&asymp;&nbsp;0.418, which came from Session 107&apos;s separate
+            G<sub>local</sub>/G<sub>global</sub> mechanism (see{' '}
+            <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>). Beyond that channel,
+            the CMB-anchored contours the &sigma; figures borrow assume a perturbation model the framework does not have. The
             quadrant statement needs only the signs, which are DESI&apos;s headline result; the &sigma; numbers
             are sign-and-scale contexts, not likelihood statements.
           </li>

@@ -88,7 +88,16 @@ export default function Home() {
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>
             <strong>tanh</strong> = S-shaped saturation function: maps any real number to (−1,+1) — C(ρ) stays in [0,1) because the input argument ≥ 0. You can just think &ldquo;smooth S-curve&rdquo; <em>on a log-density axis</em>; in ρ itself the function is concave everywhere, with no inflection, and at the galaxy sector&apos;s own parameters it is a straight line to better than the data&apos;s precision (measured 2026-09-03 &mdash; see the <Link href="/coherence-explorer" style={{ color: 'var(--color-accent-violet)' }}>Coherence Explorer</Link> caption).{' '}
-            <strong>ln</strong> = natural log: compression — 1,000× bigger becomes only ~7 units bigger on this axis.
+            <strong>ln</strong> = natural log: compression — 1,000× bigger becomes only ~7 units bigger inside the equation (3 units on a base-10 axis like the Coherence Explorer&apos;s).
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>
+            <strong>Which C the galaxy numbers used (added 2026-09-14):</strong> the equation above is keyed on
+            <em> density</em>. Almost every galaxy statistic on this site used the same tanh-log shape keyed on
+            <em> acceleration</em> instead &mdash; the RAR fits (&gamma;&nbsp;=&nbsp;0.49, &Delta;BIC&nbsp;+184 at &gamma;&nbsp;=&nbsp;2),
+            and an &Omega;<sub>m</sub>-floored variant for the BTFR and dwarf tests. At &gamma;&nbsp;=&nbsp;&frac12; the acceleration
+            version <em>is</em> MOND&apos;s simple interpolating function. The density version above was tested
+            separately and fails on galaxy data. See{' '}
+            <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             The tanh shape is <em>motivated</em> by the sigmoid/compander family (&mu;-law, Hill, logistic) &mdash; a phenomenological choice, not derived. See /parameter-derivations for why &ldquo;mean-field theory&rdquo; is the wrong category: there is no self-consistency loop, no free energy, no critical exponents. The log-density argument is physically motivated. Three parameters are fitted to data.{' '}
@@ -140,20 +149,24 @@ export default function Home() {
           </h2>
           <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 1rem', fontSize: '0.95rem', maxWidth: '60ch' }}>
             Three claims where this framework proposes something new — and what the honest audit found. Quantum mysteries
-            reframed as synchronization physics. Consciousness given an equation. Dark matter
-            mechanism attempted twice; both attempts produced sign errors.
+            reframed as synchronization physics. Consciousness given an equation. Dark matter as a coherence effect
+            &mdash; tested on galaxy data and failed.
           </p>
           <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', fontSize: '0.85rem' }}>
             <span style={{ color: 'var(--color-accent-violet)' }}>
-              <strong>1</strong> new ontology with testable consequences
+              <strong>1.</strong> Quantum mechanics as synchronization &mdash; <em>Speculative</em> (untestable as stated)
             </span>
             <span style={{ color: '#f59e0b' }}>
-              <strong>1</strong> untested (a₀ ~ cH₀: dimensional rederivation, not independent convergence)
+              <strong>2.</strong> Consciousness equation &mdash; <em>Speculative</em> (C&nbsp;&asymp;&nbsp;0.50 threshold untestable as stated)
             </span>
-            <span style={{ color: '#f59e0b' }}>
-              <strong>1</strong> galaxy rotation reparametrization &mdash; i.e. known physics in new notation, this site&apos;s most common verdict (dark matter mechanism structurally failed)
+            <span style={{ color: '#ef4444' }}>
+              <strong>3.</strong> Dark matter as incomplete decoherence &mdash; <em>Failed</em> as a mechanism; the galaxy fits that work are MOND in new notation (a reparametrization)
             </span>
           </div>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', margin: '0.5rem 0 0' }}>
+            (One row per claim, same verdict as the Key Claims page &mdash; aligned 2026-09-14 after a visitor found this
+            teaser listing a different set of three.)
+          </p>
           <span style={{ color: 'var(--color-accent-violet)', fontSize: '0.9rem', marginTop: '0.75rem', display: 'inline-block' }}>
             See the key claims &rarr;
           </span>
@@ -260,14 +273,14 @@ export default function Home() {
               alignItems: 'center',
             }}>
               <span>Prospective predictions confirmed <em style={{ color: 'var(--color-text-muted)' }}>(predictions fixed before the data existed, then borne out)</em>: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
-              <span>Refutations executed <em style={{ color: 'var(--color-text-muted)' }}>(tests that could have killed the idea &mdash; and the idea failed them)</em>: <strong style={{ color: '#ef4444' }}>6</strong> (5 on external data + 1 theorem-level check){' '}
-              <strong style={{ color: '#f59e0b' }}>— 6 executed tests collapse to 5 independent roots: 2 framework-specific mechanism roots + 1 refuted registration + 1 inherited from MOND + 1 theorem</strong>{' '}
+              <span>Refutations executed <em style={{ color: 'var(--color-text-muted)' }}>(tests that could have killed the idea &mdash; and the idea failed them)</em>: <strong style={{ color: '#ef4444' }}>6</strong> (5 on external data + 1 Bell/CHSH construction check){' '}
+              <strong style={{ color: '#f59e0b' }}>— 6 executed tests collapse to 5 independent roots: 2 framework-specific mechanism roots + 1 refuted registration + 1 inherited from MOND + 1 Bell/CHSH construction check</strong>{' '}
               (<em>&ldquo;5 roots&rdquo; wording added 2026-09-10</em>: the four parts sum to five, not six, because TEST-09 and TEST-10 share the boost-ceiling root &mdash; stated below but not in the sum, and a graduate-physics reader took the mismatch as the headline over-advertising its own breadth. It does over-advertise breadth; the honest reading is <strong>six executed tests, five roots, two of them framework-specific</strong>. See also the open classification question on <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>: whether TEST-25 is really &ldquo;inherited,&rdquo; which if resolved against us makes it three framework-specific roots, not two.)&nbsp;
               (roots added to this lead 2026-08-10, split made explicit 2026-09-05 when three personas found 2 / 3&ndash;4 / 6 on different pages; the subtraction was already published on{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
               and had never reached the scoreboard). TEST-09 and TEST-10 share one root (the boost
               ceiling); TEST-25 is inherited from Desmond, Hees &amp; Famaey 2024 and this site labels it
-              non-discriminating; the CHSH null is Bell&apos;s theorem executing as designed; the
+              non-discriminating; the CHSH local arm illustrates Bell&apos;s theorem and its two nonlocal arms are construction nulls, not a theorem about the substrate class (relabelled 2026-09-14); the
               environment null refuted a registered amplitude the framework&apos;s own mechanism puts
               ~10<sup>&minus;3</sup> dex below the kill bar. What survives as framework-specific: the
               boost ceiling and the γ=2 pin &mdash; and the second refutes a parameter that was never

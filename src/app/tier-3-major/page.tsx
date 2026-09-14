@@ -4,8 +4,27 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
+import type { ReactNode } from 'react';
 
-const tests = [
+const linkStyle = { color: 'var(--color-accent-blue)' };
+const noteStyle = { color: 'var(--color-text-muted)' };
+const CORRECTED = <em style={noteStyle}> (corrected 2026-09-14, explorer finding 2026-09-12)</em>;
+
+type Tier3Test = {
+  id: string;
+  name: string;
+  cost: string;
+  time: string;
+  facility: string;
+  prediction: string;
+  kill: string;
+  /** Claimed distinguishing power, for cards that have no adjudication elsewhere on the site. */
+  power?: string;
+  /** Current verdict, inherited from the page that holds it. Replaces `power` once one exists. */
+  verdict?: ReactNode;
+};
+
+const tests: Tier3Test[] = [
   {
     id: 'TEST-15',
     name: 'GW Speed–DM Column Correlation',
@@ -14,7 +33,15 @@ const tests = [
     facility: 'LIGO O4/O5 + multi-messenger follow-up',
     prediction: 'Gravitational wave arrival time correlates with dark matter column density along line of sight',
     kill: 'No correlation at 10⁻¹⁶ level after 20+ multi-messenger events',
-    power: 'VERY HIGH — GR predicts exactly zero correlation',
+    verdict: (
+      <>
+        <strong>Unreachable / monitoring-only.</strong> The kill criterion (a null at 10⁻¹⁶) sits an order of
+        magnitude below the best bound ever achieved (GW170817, |Δv/v| ≲ 10⁻¹⁵), so it can never fire. The
+        framework predicts no positive signal, so GW170817 was passed vacuously. See{' '}
+        <Link href="/falsifiability" style={linkStyle}>Falsifiability</Link> and{' '}
+        <Link href="/top-5-tests" style={linkStyle}>Decisive Tests</Link>.{CORRECTED}
+      </>
+    ),
   },
   {
     id: 'TEST-16',
@@ -24,7 +51,13 @@ const tests = [
     facility: 'Quantum optics lab with precision environment control',
     prediction: 'Decoherence shows discrete steps at MRH boundaries, not continuous decay',
     kill: 'Decoherence is perfectly smooth at all measured timescales',
-    power: 'HIGH — standard decoherence theory predicts smooth decay',
+    verdict: (
+      <>
+        <strong>Unrunnable as stated.</strong> The MRH boundary is under-determined: where it falls depends on a
+        choice the framework never states, so there is no boundary to look for steps at. See{' '}
+        <Link href="/mrh" style={linkStyle}>MRH</Link>.{CORRECTED}
+      </>
+    ),
   },
   {
     id: 'TEST-17',
@@ -34,7 +67,14 @@ const tests = [
     facility: 'X-ray + optical survey telescopes',
     prediction: 'Cluster-scale γ shows characteristic profile: γ ≈ 2 at outskirts, γ < 1 in ICM cores',
     kill: 'No radial γ gradient in cluster profiles',
-    power: 'MODERATE — tests scale invariance of γ at cluster scales',
+    verdict: (
+      <>
+        <strong>Closed upstream.</strong> Reading a γ(r) profile off cluster data needs a bridge from C(ρ) to
+        apparent mass. All four bridges tried on Coma failed (2026-05-28): two overshoot by 10⁴, one collapses to
+        Newtonian, and one is capped at ≤2 against an observed 4.6. See{' '}
+        <Link href="/tier-1-existing#CLUSTER-SCALE" style={linkStyle}>Cluster Scale</Link>.{CORRECTED}
+      </>
+    ),
   },
   {
     id: 'TEST-18',
@@ -54,17 +94,41 @@ const tests = [
     facility: 'Neuropixels + high-density EEG + fMRI',
     prediction: 'Neural coherence shows scale-free structure with phase transition at C ≈ 0.50',
     kill: 'Neural coherence shows no scale-free structure; threshold varies >50% across subjects',
-    power: 'HIGH — tests consciousness framework directly',
+    verdict: (
+      <>
+        <strong>Unrunnable as stated.</strong> Predictions keyed to C ≈ 0.50 inherit the untestable-as-stated
+        verdict, because no measurement maps to C. See{' '}
+        <Link href="/consciousness-threshold" style={linkStyle}>Consciousness Threshold</Link>.{CORRECTED}
+      </>
+    ),
   },
   {
     id: 'TEST-20',
     name: 'Void Galaxy Rotation Curves',
-    cost: '$1M–$3M',
-    time: '2–3 years',
-    facility: 'Radio telescope time (resolved HI rotation curves in voids)',
+    cost: 'not fundable as proposed',
+    time: 'MOND+EFE branch measured 2021',
+    facility: 'Radio telescope time (resolved HI rotation curves in voids); proposed at $1M–$3M, 2–3 years',
     prediction: 'Void galaxies show higher DM fraction than cluster galaxies at same M_bar',
     kill: 'DM fraction independent of cosmic environment',
-    power: 'MEDIUM — environment-dependent DM fraction is also predicted by MOND\'s External Field Effect (Bekenstein-Milgrom 1984; EFE weakens in voids). A positive result confirms Synchronism and MOND+EFE equally. Not a discriminating test vs MOND. See TEST-05 (same EFE signature, lower cost).',
+    verdict: (
+      <>
+        <strong>Self-eliminating-or-tie, and already executed by others.</strong> The two frameworks do not
+        predict the same thing. On the SPARC mass models, at the environmental contrast SPARC actually spans, the
+        density-keyed framework predicts a void-to-overdense change in DM fraction of Δf<sub>DM</sub> ≈
+        1.3×10⁻⁵ (low-g median, best case over knees and γ). MOND+EFE predicts 3.2×10⁻³, about 255× larger.
+        Under the framework&apos;s acceleration keying C(a), the prediction is identically zero, since
+        g<sub>bar</sub> is held fixed. A 3σ stacked detection of the framework&apos;s signal would need
+        ~1.4×10⁸ resolved HI rotation curves, against ~2.1×10³ for MOND+EFE. No outcome selects the
+        framework, the same class as TEST-02. The measurement has also been made: Chae et al. 2021
+        (arXiv:2109.04745) located the SPARC galaxies in the cosmic web and found the EFE at &gt;4σ. That
+        detection is contested: Paranjape &amp; Sheth 2022 (MNRAS 517, 130) show an EFE-like signal is generically
+        expected in &Lambda;CDM; Freundlich et al. 2022 (A&amp;A 658, A26) find no EFE in Coma-cluster ultra-diffuse
+        galaxies, a different sample; a 2025 re-analysis (Sargent et al., arXiv:2511.03839) calls it inconclusive. This is{' '}
+        <strong>not</strong> a seventh refutation, and the count stays at 6. See{' '}
+        <Link href="/tier-1-existing#TEST-05" style={linkStyle}>TEST-05</Link> for the lever-magnitude
+        adjudication.{CORRECTED}
+      </>
+    ),
   },
   {
     id: 'TEST-21',
@@ -92,6 +156,23 @@ export default function Tier3Major() {
           represent genuinely new physics.
         </p>
 
+        <div style={{
+          background: 'rgba(239, 68, 68, 0.07)',
+          border: '1px solid rgba(239, 68, 68, 0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.7rem 1rem',
+          marginBottom: '1.25rem',
+          fontSize: '0.875rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#ef4444' }}>Protocol status (2026-09-14):</strong>{' '}
+          Any experiment, in any tier, whose outcome depends on measuring C, γ, N<sub>corr</sub> or an MRH
+          boundary has no operational measurement protocol yet. It is unrunnable as stated. On this page that
+          covers TEST-16, TEST-17 and TEST-19. The cards below carry the current verdict where one exists
+          elsewhere on the site.{' '}
+          <Link href="/test-catalog" style={{ color: '#ef4444' }}>See the Test Roadmap &rarr;</Link>
+        </div>
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginBottom: '1.5rem' }}>
           {tests.map(t => (
             <div key={t.id} className="card">
@@ -110,9 +191,15 @@ export default function Tier3Major() {
               <p style={{ color: '#ef4444', fontSize: '0.85rem', marginBottom: '0.25rem' }}>
                 <strong>Kill:</strong> {t.kill}
               </p>
-              <p style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>
-                Distinguishing power: {t.power}
-              </p>
+              {t.verdict ? (
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.8rem' }}>
+                  <strong style={{ color: 'var(--color-accent-blue)' }}>Current verdict:</strong> {t.verdict}
+                </p>
+              ) : (
+                <p style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>
+                  Distinguishing power: {t.power}
+                </p>
+              )}
             </div>
           ))}
         </div>

@@ -1,0 +1,40 @@
+Starting Synchronism Explorer Session at Mon Sep 14 08:00:01 PDT 2026
+The dark-energy sector is decided by data we already have, not "unpowered". This holds when it's read the way the framework intends, with coherence evaluated at the local density. The result came out opposite to what I expected.
+
+**What I ran.** The maintainer's topic asked me to apply the published Cardassian ISW exclusion (Koivisto+2005) to this model. The site had filed it as reassurance: the DESI fit (γ = 0.487 ± 0.02) sits in "the same corner" that survives. During the WAKE phase I noticed a problem with the 08-18 archive result, the source of "no instability" and "power, not data, is the blocker" for TEST-26. Its growth equation had no pressure-gradient (Jeans) term. I committed the exclusion rule first (`7d8efbf`), then added that single term.
+
+**Results** (all from the script outputs):
+- **The model is a fluid.** Read at local density, the sector behaves as one fluid whose sound speed squared is about 0.223·(2γ−1). The Jeans term multiplies that by (k/aH)², which is 10⁴–10⁵ on the scales where the matter power spectrum P(k) is measured.
+- **Pre-registered verdict:** the reading is excluded unless |2γ−1| < about 10⁻⁵, i.e. γ = ½ ± 5×10⁻⁶. That band is about 5000× narrower than the DESI fit's 1σ.
+  - At γ = 0.487 the matter power ratio R is 9.7 already at k = 0.01 h/Mpc, and 2.7×10²² at k = 0.1.
+  - The large-scale potentials grow instead of decaying, which flips the sign of the ISW signal.
+  - ISW alone limits |2γ−1| to about 2×10⁻³, so the Koivisto import is real but is the weaker of the two constraints.
+- **Attribution and controls.** At γ = 0.499, R−1 is −2.2×10⁻⁴ without the Jeans term and +4.3×10⁴ with it. The sound-speed formula matches the Chaplygin-gas closed form, the solver is converged, and γ = ½ gives R = 1 exactly. Letting baryons escape the pressure loosens the band only about 10×.
+- **This was already published.** Amarzguioui, Elgarøy & Multamäki (2005) showed that fluid Cardassian models fail the SDSS power spectrum because of their non-zero sound speed; Sandvik+2004 did the same for Chaplygin gas. The 08-18 result had been checked with SymPy and corrected by the publisher, and still reached the opposite conclusion. Checking the algebra that was written can't find a term that was never written.
+
+**Where that leaves the sector.** There are three ways to read it:
+1. Local density as a fluid: γ is fixed at ½, so the sector is just ΛCDM.
+2. Local density as modified gravity: there is no covariant theory for it, and Koivisto's version is also ISW-excessive (imported, not run here).
+3. Background only: γ stays free and the DESI fit is valid, but coherence is no longer evaluated locally, which was the framework's premise.
+
+The refutation count stays at 6. This rules out one way of completing the model, not a registered prediction.
+
+**Handed to the maintainer:**
+- **P0:** the new `/dark-energy` sentence "same corner the likelihood fit lands in" now understates the problem. Replace it with the executed band and the two citations.
+- **P0:** the "−0.22%, 0.10σ" bullet on the same page holds only for the background-only reading.
+- **P1:** back-annotate the 08-18 claims in PREDICTIONS.md.
+- **Your call (dp-gated):** the TEST-26 registration needs to say which reading DR3 tests.
+
+**Left open:** the topic stays in the queue. Of its other asks, the prior-art table is only a git-log timeline so far, and the automated prior-art pass hasn't been started.
+
+**Housekeeping:** I saved a memory on the method lesson (symbolic checks miss omitted terms). Everything is committed and pushed (`6f431ff`), and the findings lint is clean.
+
+**Not connected this session:** NotebookLM wasn't authenticated. The claude.ai Google Drive connector needs authorizing in your claude.ai connector settings. The playwright MCP server failed to connect because `npx` isn't on PATH.
+
+Files are in `explorer/`:
+- `findings/de-sector-local-horn-is-a-cardassian-fluid-and-pk-pins-gamma-to-half-within-1e-5.md`
+- `findings/scripts/de_horn_l_as_a_fluid_jeans_term.py`
+- `findings/scripts/de_horn_l_fluid_controls.py`
+- `logs/2026-09-14.md`
+
+Sources: [Koivisto+2005](https://arxiv.org/abs/astro-ph/0409163) · [Amarzguioui+2005](https://arxiv.org/abs/astro-ph/0410408) · [Sandvik+2004](https://arxiv.org/abs/astro-ph/0212114) · [Gondolo & Freese](https://arxiv.org/pdf/hep-ph/0209322) · [Fay & Amarzguioui 2006](https://inspirehep.net/literature/724849)

@@ -36,3 +36,11 @@ under-finding when nobody asks.
 - `Synchronism/Research/Session100_Modified_Friedmann.md`, `PREDICTIONS.md` Bucket-3 DE note (2026-09-14 prior-art block)
 - `explorer/findings/globular-cluster-knee-test-executed-...md` (the Refracted Gravity identification, for the timeline)
 - Freese & Lewis 2002; Gondolo & Freese 2003 (PRD 68, 063509); Koivisto, Kurki-Suonio & Ravndal 2005
+
+---
+## Status (explorer 2026-09-14) — ask 2 EXECUTED; asks 1 (partial) and 3 still open, so this topic stays in the queue
+Finding: `findings/de-sector-local-horn-is-a-cardassian-fluid-and-pk-pins-gamma-to-half-within-1e-5.md`.
+The ISW import holds, but it is the weaker constraint. Read as a local fluid (Gondolo–Freese), the sector has
+c_s² ≈ 0.223(2γ−1). The Jeans term that 08-18 omitted pins |2γ−1| ≲ 10⁻⁵ on existing P(k), where the ISW alone gives
+≲ 2×10⁻³. Ask 1 got a git-log timeline only (§8 of the finding). Ask 3, a pre-registered hit definition plus an
+automated pass, has not been started.

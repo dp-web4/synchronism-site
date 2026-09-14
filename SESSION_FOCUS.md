@@ -1,7 +1,41 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-14 (maintainer)*
+*Last updated: 2026-09-14 (explorer)*
+
+---
+
+## 🟢 NEW (explorer 2026-09-14) — **The Cardassian ISW import holds, and it is the weaker constraint. Read at local
+density (the framework's premise) as a fluid, the DE sector has c_s² ≈ 0.223(2γ−1). The Jeans term, which the 08-18
+locality fork omitted, pins |2γ−1| ≲ 10⁻⁵ on existing P(k). "Power, not data, is the blocker" is false on that reading.**
+
+Finding: `explorer/findings/de-sector-local-horn-is-a-cardassian-fluid-and-pk-pins-gamma-to-half-within-1e-5.md`.
+WAKE + pre-registration (committed `7d8efbf` before computing): `explorer/work/2026-09-14-wake-and-prereg.md`.
+Scripts (+ `_output.txt`): `de_horn_l_as_a_fluid_jeans_term.py`, `de_horn_l_fluid_controls.py` (post-hoc).
+**Count stays 6.** Topic `prior-art-pass-on-every-defining-equation.md`: ask 2 done, ask 1 partial, ask 3 open. Stays queued.
+
+1. **Pre-registered rule, executed.** Excluded unless |ε| < 9.1×10⁻⁶ (ε<0) / 9.9×10⁻⁶ (ε>0), where ε = 2γ−1. That is
+   ~5000× narrower than the DESI-fit 1σ. At γ = 0.487: R = 9.7 at k = 0.01 h/Mpc, 2.7×10²² at k = 0.1. The ISW
+   potential grows instead of decaying (ratio −7.0), and ISW alone gives |ε| ≲ 2×10⁻³.
+2. **Attribution.** At γ = 0.499, without the Jeans term R−1 = −2.2×10⁻⁴; with it, +4.3×10⁴. Controls pass: GCG
+   closed-form sound speed, convergence, γ = ½ ≡ 1. Letting baryons escape the pressure loosens the band ~10× (lensing
+   sees CDM).
+3. **Prior art.** The answer was published: Amarzguioui, Elgarøy & Multamäki 2005 (fluid Cardassian inconsistent with
+   SDSS P(k) because c_s ≠ 0); Sandvik+2004 (GCG). The archive's 08-18 execution, SymPy-verified and
+   publisher-corrected, concluded "no instability, no order-ε⁰ channel, no k-dependence". **Checking the algebra that
+   was written did not catch the term that wasn't.**
+4. **A locality trilemma.** Local + fluid: γ = ½ to 10⁻⁵. Local + modified gravity: no covariant theory, and
+   Koivisto's MG branch is also ISW-excessive (imported, untested). Non-local Horn N: γ free and the DESI fit valid,
+   but coherence is no longer evaluated locally.
+
+### → Maintainer
+- **P0** `/dark-energy` Cardassian paragraph: "the same corner this sector's likelihood fit lands in" is an
+  under-refutation. Replace it with the executed band and cite Amarzguioui+2005 and Sandvik+2004.
+- **P0** `/dark-energy` "Honest bounds" bullet 2: the −0.22% / 0.10σ channel is the pressure-free local horn and holds
+  for Horn N only.
+- **P1** Back-annotate PREDICTIONS.md's 08-18 block and the 20260818 proposal: those three claims need the pressure
+  term. Count stays 6.
+- **→ dp (gated)** The TEST-26 registration must name its horn. On the local fluid horn, P(k) already fixes the outcome.
 
 ---
 

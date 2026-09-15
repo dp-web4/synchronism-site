@@ -1,0 +1,22 @@
+Starting Synchronism Explorer Session at Tue Sep 15 08:00:02 PDT 2026
+I worked the maintainer's smoothing-length topic, which asks over what length D a density-keyed gravity law has to average density. The main result is that D can't be picked on its own: the answer depends on whether the law comes from an action. Under the version the site's solver and Refracted Gravity (RG) actually use, the published local window doesn't hold together. The refutation count stays at 6; nothing here is a new kill. Everything is committed and pushed, and the plan was committed (`ab620af`) before anything was computed.
+
+**The topic's own questions:**
+- **Globular clusters don't bound D from above.** Smoothing just makes their internal test go blind: every excluded knee drops to marginal by D = 30 pc (control 7/7). So the cluster window only means something at D ≲ 10 pc. The topic had the direction backwards.
+- **The Oort window hardly moves.** It shifts only at D ≈ 1 pc when the Sun is inside the averaging ball (3.8×). From 3 to 300 pc it moves less than 1.5×.
+- **My own prediction failed.** I expected the disc boost to disappear once D passed the disc thickness (~0.3 kpc). It survives smoothing out to 3 kpc; smoothing changes its shape, and D partly trades off against the knee density.
+- **RG's authors never fixed D.** Their 2022 paper only says it must be "sufficiently smaller than the size of a galaxy". Their covariant version, in the weak field, makes the permittivity follow the potential rather than local density. So no published action is density-keyed.
+
+**The new result: compact bodies get their own "bubble".**
+- **The two force laws.** "L2" means matter just follows −∇Φ. "L3" means the law comes from an action, which adds a striction force.
+- **The bubble.** Under L2, a star or cluster's own mass raises the density around it. It then feels only 3ε_out/(ε_in+2ε_out) of the field that diffuse gas at the same spot feels. The numerical solve matches that formula to 10⁻⁵.
+- **Under L3 it cancels.** With the striction force, the total comes out to exactly 1.0000, so every body falls the same way.
+- **How big D must be.** Under L2, in low-density surroundings (5% tolerance), stars need D ≳ 5–35 pc and typical clusters ≳ 270–900 pc. The site currently says stars need "≳ ~1 pc", about 10× too small.
+- **The conflict.** At D ≲ 10 pc, where the cluster window is valid, halo clusters would orbit at 0.63× the field acceleration under the framework's law, or 0.34× under RG's elliptical-galaxy parameters. Milky Way cluster and disc-star masses at 21 kpc agree to 1.00 (−0.17) (Watkins+2019 vs Eilers+2019). That puts the conflict at about 2.1σ and 3.9σ.
+- **Caveats.** That tolerance was chosen after the runs and doesn't model estimator systematics, so treat it as semi-binding. With RG's disc-galaxy parameters there is no tension.
+
+**Provenance error on the site.** "Refracted Gravity's knee 0.0083" (ε₀ 0.089, Q 0.47) is Cesare+2022's *elliptical-galaxy* average. The 08-26 finding and its solver credit it to the disc-galaxy paper. The disc values are ε₀ 0.56, Q 0.92, ρ_c 7.4×10⁻⁴ M☉/pc³. No verdict changes, but I flagged it P0 for the maintainer.
+
+**Frame point.** Density-keyed registrations need to declare D *and* whether they use L2 or L3. Under L2 the joint window can keep its cluster leg or have normal cluster orbits, not both. That decision is gated to dp.
+
+The finding is at `explorer/findings/compact-bodies-sit-in-their-own-permittivity-bubble-the-gc-window-and-gc-orbits-need-opposite-smoothing-lengths.md`. I archived the smoothing-length topic and added a status note to the related MRH topic, which stays queued for its galaxy-side question. I also saved one memory about tagging D and L2/L3 on every density-keyed result. NotebookLM wasn't authenticated, the Google Drive connector needs authorizing in claude.ai settings, and the Playwright server failed to connect; none of them were needed.

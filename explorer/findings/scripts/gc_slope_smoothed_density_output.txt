@@ -1,0 +1,39 @@
+# N = 42 clusters; Newtonian mismatch -0.057; MOND+EFE -0.093  (09-08: -0.057 / -0.093)
+# cluster r_t: median 53.8 pc (range 8.9-208.6); r_c median 0.72 pc
+
+====================================================================================================
+GC mismatch (suffix o/m/E) vs smoothing radius D [pc]
+====================================================================================================
+ gamma    rho_c      D=0.0      D=0.3      D=1.0      D=3.0     D=10.0     D=30.0
+ 0.489   0.0039    -0.074o    -0.074o    -0.074o    -0.074o    -0.074o    -0.070o
+ 0.489   0.0079    -0.087o    -0.087o    -0.087o    -0.087o    -0.086o    -0.080o
+ 0.489   0.1238    -0.197E    -0.197E    -0.197E    -0.197E    -0.191E    -0.148m
+ 0.489   0.4898    -0.259E    -0.259E    -0.259E    -0.259E    -0.248E    -0.170m
+ 0.489    1.225    -0.278E    -0.278E    -0.278E    -0.279E    -0.263E    -0.164m
+ 0.489    12.12    -0.227E    -0.227E    -0.229E    -0.234E    -0.193E    -0.100m
+ 2.000   0.0735    -0.084o    -0.084o    -0.084o    -0.084o    -0.084o    -0.080o
+ 2.000    0.078    -0.085o    -0.086o    -0.086o    -0.086o    -0.085o    -0.081o
+ 2.000   0.4898    -0.172m    -0.172m    -0.172m    -0.171m    -0.168m    -0.141m
+ 2.000    1.225    -0.232E    -0.232E    -0.232E    -0.232E    -0.224E    -0.174m
+ 2.000    12.12    -0.295E    -0.295E    -0.295E    -0.296E    -0.285E    -0.162m
+
+POSITIVE CONTROL (D = 0 vs 09-08 output, tolerance 0.002):
+  gamma 0.489 rho_c 0.1238: -0.197 vs -0.197  PASS
+  gamma 0.489 rho_c 0.4898: -0.259 vs -0.259  PASS
+  gamma 0.489 rho_c 1.225: -0.278 vs -0.278  PASS
+  gamma 0.489 rho_c 12.12: -0.227 vs -0.227  PASS
+  gamma 2.0 rho_c 0.4898: -0.172 vs -0.172  PASS
+  gamma 2.0 rho_c 1.225: -0.232 vs -0.232  PASS
+  gamma 2.0 rho_c 12.12: -0.295 vs -0.295  PASS
+
+RULE: does any joint-window-edge knee become EXCL at some D > 0?
+  NOT FIRED - GC internal dynamics give no D_max on this grid. 
+
+Smallest D at which each previously-EXCL cell is no longer EXCL:
+  gamma 0.489 rho_c 0.1238: 30.0  (statuses: ['EXCL', 'EXCL', 'EXCL', 'EXCL', 'EXCL', 'marg'])
+  gamma 0.489 rho_c 0.4898: 30.0  (statuses: ['EXCL', 'EXCL', 'EXCL', 'EXCL', 'EXCL', 'marg'])
+  gamma 0.489 rho_c 1.225: 30.0  (statuses: ['EXCL', 'EXCL', 'EXCL', 'EXCL', 'EXCL', 'marg'])
+  gamma 0.489 rho_c 12.12: 30.0  (statuses: ['EXCL', 'EXCL', 'EXCL', 'EXCL', 'EXCL', 'marg'])
+  gamma 2.0 rho_c 1.225: 30.0  (statuses: ['EXCL', 'EXCL', 'EXCL', 'EXCL', 'EXCL', 'marg'])
+  gamma 2.0 rho_c 12.12: 30.0  (statuses: ['EXCL', 'EXCL', 'EXCL', 'EXCL', 'EXCL', 'marg'])
+[17s]

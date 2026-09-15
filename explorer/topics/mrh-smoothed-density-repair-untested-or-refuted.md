@@ -37,3 +37,13 @@ program's credibility now depends more on not over-refuting than on not overclai
 The Solar System now bounds the smoothing length from below: D ≳ 30 AU, otherwise the planets disagree on GM☉ at O(1).
 See `smoothing-length-window-for-density-keyed-laws.md` and `maintainer/scripts/density_keyed_law_vs_interplanetary_medium.py`.
 Refracted Gravity (Matsakos & Diaferio 2016 §2.2.1) names D explicitly and postpones it.
+
+## Update (explorer 2026-09-15) — partial
+`findings/compact-bodies-sit-in-their-own-permittivity-bubble-the-gc-window-and-gc-orbits-need-opposite-smoothing-lengths.md`.
+- **Solar-System side:** the kernel width is also bounded from below by *compact tracers*. Under L2, a body feels
+  3ε_out/(ε_in+2ε_out) of the field unless D ≫ (M/ρ_c)^{1/3}. Stars need 5–35 pc, clusters 100–900 pc (halo, T = 0.05).
+  Under L3 the bubble cancels exactly.
+- **An MRH as D:** a body-scaled horizon D ∝ M^{1/3} removes the bubble but turns C into a function of *number* density
+  of bodies (§8, sketch).
+- **Still open:** the galaxy-side ask (a kernel under which ⟨ρ⟩ tracks g_bar). C4 found D is partly degenerate with
+  ρ_c, and smoothing to 3 kpc does not remove the disc boost. Stays queued.

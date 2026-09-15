@@ -1,7 +1,44 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-15 (maintainer)*
+*Last updated: 2026-09-15 (explorer)*
+
+---
+
+## 🟢 NEW (explorer 2026-09-15) — **Under L2, a compact body sits in a permittivity bubble made by its own mass and
+feels 3ε_out/(ε_in+2ε_out) of the field. The globular-cluster leg of the joint window needs D ≲ 10 pc. At that D, halo
+clusters orbit at 0.63× (framework) or 0.34× (RG E0) the field acceleration. Milky Way GC and red-giant masses agree to
+1.00 (−0.17). Under L2 there is no D with both. The action's striction force cancels the bubble exactly (F_L3 = 1.0000).
+Also a provenance error: "RG's knee 0.0083" is the elliptical calibration, not the discs'.**
+
+Finding: `explorer/findings/compact-bodies-sit-in-their-own-permittivity-bubble-the-gc-window-and-gc-orbits-need-opposite-smoothing-lengths.md`.
+WAKE + pre-registration (committed `ab620af` before computing): `explorer/work/2026-09-15-wake-and-prereg.md`.
+Scripts (+ `_output.txt`): `gc_slope_smoothed_density.py`, `oort_window_smoothed_with_sun.py`,
+`compact_tracer_bubble_factor.py`, `disc_boost_vs_smoothing_length.py`. Post-hoc:
+`bubble_posthoc_published_rg_sets_and_sgr.py`, `bubble_gc_tolerance_readout.py`.
+**Count stays 6.** Topic `smoothing-length-window-for-density-keyed-laws.md` archived.
+
+1. **Topic asks.**
+   - GCs give **no D_max**: every excluded knee is marginal by D = 30 pc (control 7/7).
+   - The Oort window moves only at D = 1 pc with the Sun in the ball.
+   - RG never fixed D. Covariant RG (Eqs. 26/29) is potential-keyed in the weak field.
+   - My pre-registered D_max ~ z₀ prediction failed: the disc boost survives smoothing to 3 kpc, and D is partly
+     degenerate with ρ_c.
+2. **The bubble.**
+   - L2 D_min (T = 0.05, halo): stars 5–35 pc, Pal 5-like 110–370 pc, typical GC 270–900 pc.
+   - The 09-15 scope note's "stars ≳ ~1 pc" is ~10× low. In the solar neighbourhood F ≥ 0.97 at any D.
+3. **Semi-binding, post-hoc tolerance.** Watkins+2019 against Eilers+2019 puts F_GC(10 pc) at 2.1–2.2σ for the
+   framework and 3.9σ for RG E0, with estimator systematics unmodelled. RG's DMS disc parameters show no tension.
+
+### → Maintainer
+- **P0 provenance.** "RG's (published) knee 0.0083" (ε₀ 0.089, Q 0.47) is Cesare+2022's **E0 elliptical mean**. DMS
+  discs: ε₀ 0.56, Q 0.92, ρ_c 7.4×10⁻⁴ (mean); joint fit 0.661 / 1.79 / 4.3×10⁻³. Fix it on /honest-assessment,
+  /tier-1-existing, /for-researchers and /parameter-derivations. Back-annotate the 08-26 finding and
+  `l2_vs_l3_and_the_missing_striction_force.py`, which say "Cesare+2020 DiskMass". No verdict changes.
+- **P1** /honest-assessment gc-fork scope note: replace "stars ≳ ~1 pc" with the bubble statement. Tag the GC exclusion
+  band "pointwise to D ≲ 10 pc, L2".
+- **P2** /for-researchers: the composite-body statement as a framework-independent note on ε(ρ) gravity.
+- **→ dp (gated)** Density-keyed registrations should declare D **and** L2/L3.
 
 ---
 

@@ -1,1 +1,52 @@
 Starting Synchronism Maintainer Session at Tue Sep 15 06:00:01 PDT 2026
+Today's maintainer session is finished. The site build passes, both repos are pushed (site `288aaf6`, research repo `b8bc75e4`), and the refutation count stays at 6, with Bucket 0 still at 0.
+
+## WAKE: the feedback exposed a research gap
+Two visitor personas asked whether any law keyed on density had ever been checked against the Solar System's own density.
+- **The check.** I wrote the pass/fail rule down and committed it (`0ad68f3`) before computing anything. Taken literally, "local density" near the Sun means the solar wind. Its density sweeps across every knee value the site publishes somewhere between Earth and Saturn.
+- **The result.** The Sun's mass as inferred from Earth's orbit and from Saturn's orbit then disagree by a factor of order one. That fails a deliberately loose 10⁻⁶ test on all 240 grid points: the framework's floored form, and Refracted Gravity (RG, the published theory the galaxy equation turned out to match).
+- **A bug I caught in my own script.** It gave a spurious value at 1 pc. I fixed and re-ran it before drawing any conclusion.
+- **Prior art.** RG's own paper (Matsakos & Diaferio 2016, §2.2.1) already says such a law "unavoidably" needs an averaging length D, guesses "tens of AU or larger", and postpones it.
+- **What that makes it.** This is not a new refutation. It is a lower bound on a parameter nobody in the archive declared: D must be at least ~30 AU, and smooth stellar profiles in galaxies imply at least ~1 pc. It also makes the 09-09 line "the Sun and the clusters do not close this sector" conditional.
+- **Framing point.** The Markov Relevancy Horizon (MRH) is the natural candidate for D. This would be the first time it has to carry an actual number.
+
+A second finding came out of the fix work. The claims behind "0 of 9 'Validated' claims survived audit" were demoted by AI agents, not outside experts. The phrase "external domain-expert audit" started as a guess in a visitor-persona log and made its way onto the site. The one calibration run was scored by the same model that wrote the test and knew every answer. The site now labels that count as coming from an uncalibrated instrument, kept separate from the physics refutations.
+
+## Site changes
+Four background agents worked on separate pages; I checked each report before accepting it.
+- **/dark-energy:** added both of yesterday's explorer fixes. Read at the mean density, γ is free and the DESI fit stands. Read at local density, as the framework's own postulate requires, the sector behaves as a fluid and existing galaxy-clustering data pin |2γ−1| to about 10⁻⁵. The visitor researcher predicted that number without seeing the explorer's result.
+- **/coherence-function:** the "what x is" box was wrong. I checked the fitting script: the fits use observed acceleration, not baryonic. On the baryonic reading the same function gives a constant added acceleration, not MOND.
+- **Landing scoreboard:**
+  - The current state is now separate from the correction history, which is kept word for word in collapsible blocks.
+  - A new table shows which of the three different C functions each refutation actually tested.
+  - "Kill fired at 3.3σ" is restated: 3.3σ is the gap between prediction and data, while the margin over the registered criterion is about 1σ.
+- **/tier-1-existing:** every kill now reports the prediction-to-data σ, the margin on the registered criterion, and the power shortfall. The visitor's numbers all checked out. A new card lists the failures inherited from MOND together: Cassini (counted) and wide binaries (pending).
+- **Smaller fixes:**
+  - The galaxy plotter's plain-language verdict now matches its chart.
+  - The Coherence Explorer's slope label was off by a factor of ln 10.
+  - /research-philosophy and /for-researchers no longer contradict each other on whether the A2ACW control was run.
+  - The beginner path is de-jargoned and nine glossary terms were added.
+  - The measurement page no longer says collapse is "derived from γ".
+- **Lint:** 8 new retired-phrase rules. They find 7 hits on the previous version of the site and 0 now.
+
+## Research repo updates
+- PREDICTIONS.md: a correction to the 08-18 dark-energy block (it left out the pressure term), and the averaging-length condition on the 09-09 note.
+- Notes appended to the 08-18 and 09-10 proposals, plus a new proposal on the averaging length.
+
+## Explorer topics seeded
+- `smoothing-length-window-for-density-keyed-laws.md`: is there any D consistent with the planets, globular clusters and galaxy profiles?
+- `fit-lands-on-the-nesting-point.md`: do mock data generated from MOND alone also give a fitted γ ≈ 0.489?
+- `test09-under-the-cosmic-baryon-ceiling.md`: TEST-09 was never re-run under the alternative Ω_m/Ω_b ceiling.
+
+## Deferred
+- Enforcing one status vocabulary with a lint.
+- Separating state from history on /key-claims and the rest of the honest-assessment page.
+- Breadcrumbs vs. nav, which needs a navigation decision.
+- Pages that still print 6.40 instead of ≈6.4.
+
+**Your decisions:**
+- Should TEST-26 name which reading (mean or local density) it tests?
+- Should density-keyed tests have to declare D?
+- Should the post-cutoff, citation-stripped A2ACW test be run? It is the cheapest high-information experiment on the project, and the only thing that would make "0 of 9" mean something.
+
+The Google Drive connector needs authorizing in your claude.ai connector settings, and the playwright server failed to start because `npx` isn't installed; neither was needed today.

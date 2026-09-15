@@ -262,8 +262,20 @@ export default function CoherenceFunction() {
           Ten compander forms fit to the real SPARC RAR (2,807 points, same pipeline that produced the
           &#x03B3;=2 kill, reproduced at +184.0 as a sanity check). Verdict rule pre-fixed before running
           (&ldquo;privileged&rdquo; = beat every same-parameter-count member by &#x0394;BIC &gt; 10).{' '}
-          <strong style={{ color: '#f59e0b' }}>What x is in this table (added 2026-09-06):</strong> x = g<sub>bar</sub>/a<sub>0</sub> &mdash;
-          the fit is keyed on <em>acceleration</em>, MOND&apos;s own variable, not on &#x03C1;/&#x03C1;<sub>crit</sub>.
+          <strong style={{ color: '#f59e0b' }}>What x is in this table:</strong> for every compander row (tanh-log,
+          erf-log, arctan-log, algebraic-log, Hill, Gompertz) x = g<sub>obs</sub>/a<sub>0</sub>&prime;, in &mu;-form:
+          the fit solves g<sub>bar</sub>&nbsp;=&nbsp;g<sub>obs</sub>&middot;&mu;(g<sub>obs</sub>/a<sub>0</sub>&prime;) for
+          g<sub>obs</sub> with a<sub>0</sub>&prime; profiled; only the McGaugh &nu; and &nu;-&delta; rows take
+          g<sub>bar</sub>/a<sub>0</sub> (&nu;-form, their native form). The fit is keyed on <em>acceleration</em>,
+          MOND&apos;s own variable, not on &#x03C1;/&#x03C1;<sub>crit</sub>. <em>The distinction is not cosmetic:</em> the same
+          function keyed on g<sub>bar</sub> in the division wiring g<sub>obs</sub>&nbsp;=&nbsp;g<sub>bar</sub>/C at
+          &gamma;&nbsp;=&nbsp;&frac12; gives g<sub>obs</sub>&nbsp;=&nbsp;g<sub>bar</sub>&nbsp;+&nbsp;2a<sub>0</sub> &mdash; a
+          constant added acceleration with rising rotation curves, not MOND. The MOND equivalence below holds only in the
+          g<sub>obs</sub> (&mu;-form) reading. (This box said x&nbsp;=&nbsp;g<sub>bar</sub>/a<sub>0</sub> from 2026-09-06 to
+          2026-09-15, contradicting the solver line on this page; a graduate-physics visitor caught it. Checked against{' '}
+          <code>explorer/scripts/compander_family_aic_bic_real_sparc.py</code>, which inverts g<sub>bar</sub>&nbsp;=&nbsp;g<sub>obs</sub>&middot;&mu;(g<sub>obs</sub>/a<sub>0</sub>).
+          The TEST-09/10 ceiling scripts are a different realization again: floored C keyed on g<sub>bar</sub>, with a
+          1/&phi; exponent.)
           The density-keyed form never leaves its linear regime in any SPARC disk and loses head-to-head at
           &#x0394;BIC +2843 (archive 2026-08-24). Every number below is a statement about the acceleration-keyed
           branch; two visitor personas read this table as the density law and could not reconcile it with the

@@ -71,6 +71,18 @@ RETIRED = [
     (r"Freundlich et al\. 2022 and Paranjape &amp; Sheth 2022 offer", "2026-09-14", "Freundlich+2022 is a Coma-UDG no-EFE result, not a ΛCDM reading of Chae"),
     (r"positive control has never been run|better described as a false \*?discovery\*? rate|the four artifacts below", "2026-09-14",
      "A2ACW card rebuilt as current state + history; see /for-researchers#a2acw-open-question"),
+    # ---- 2026-09-15 (maintainer; visitor log 2026-09-15 + explorer finding 09-14)
+    (r"the same corner this sector", "2026-09-15",
+     "under-refutation: on the local fluid reading P(k) pins |2γ−1| ≲ 1e-5; the DESI fit holds only for the mean-density reading"),
+    (r"almost no perturbation theory", "2026-09-15", "one perturbation theory exists (fluid local horn) and it pins γ"),
+    (r"derived from &#x03B3;</li>", "2026-09-15", "MRH-crossing-is-collapse is a restatement; the γ relation is audited-negative"),
+    (r"x = g<sub>bar</sub>/a<sub>0</sub> &mdash;\s*the fit is keyed", "2026-09-15",
+     "the compander rows solve g_bar = g_obs·μ(g_obs/a0′); keyed on g_bar the same function gives g_bar + 2a0, not MOND"),
+    (r"registered kill fired 3\.3σ", "2026-09-15", "3.3σ is prediction–data separation; the registered |Δn| > 0.3 margin is ~1σ under V_flat"),
+    (r"framework&apos;s (empirically )?preferred (&#x03B3;|γ)", "2026-09-15",
+     "the framework registered γ = 2; γ ≈ ½ is what the galaxy data selected (= MOND)"),
+    (r"fit galaxy rotation curves about equally well", "2026-09-15", "the plotter's own chart shows the framework curve failing"),
+    (r"the boost ceiling, the Oort limit", "2026-09-15", "the Oort window does not close the density sector on a smoothed reading (09-09)"),
 ]
 
 EXEMPT = re.compile(

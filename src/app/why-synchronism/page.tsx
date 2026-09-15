@@ -76,7 +76,7 @@ export default function WhySynchronism() {
         <p style={{ marginTop: '0.75rem' }}>
           Synchronism proposes a coherence function: <span className="equation-inline">C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))</span>.
           It takes one input (density) and returns one output (coherence: 0 = sparse/independent, 1 = dense/collective).{' '}
-          <span style={{ fontSize: '0.9em', color: 'var(--color-text-muted)' }}>⚠ &ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence — superconductors and BECs score <em>low</em> on this scale (large N<sub>corr</sub> → γ→0 → flat S-curve → C≈0).</span>
+          <span style={{ fontSize: '0.9em', color: 'var(--color-text-muted)' }}>⚠ &ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence — superconductors and ultra-cold atom clouds (Bose&ndash;Einstein condensates), the textbook quantum-coherent materials, score <em>low</em> on this scale (large N<sub>corr</sub> → γ→0 → flat S-curve → C≈0).</span>
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>tanh</strong> is the hyperbolic tangent &mdash; an S-shaped saturation function; over
@@ -181,7 +181,7 @@ export default function WhySynchronism() {
               evidence of known density-monotonic chemistry, not of this framework.
               <br /><small style={{ color: 'var(--color-text-muted)' }}>
                 Note: C here measures collective ordering, not quantum phase coherence —
-                quantum-coherent systems (BEC, BCS) sit at <em>low</em> C due to their tiny &#x03B3;.
+                quantum-coherent systems (superconductors, ultra-cold atom clouds) sit at <em>low</em> C due to their tiny &#x03B3;.
               </small>
             </p>
             <span className="badge badge-reparametrization" title="Descriptive rate, not a verdict — 89% reflects generic sigmoid behavior on density-monotonic properties; a polynomial null model matches it">89% Boundary-Consistent | Template Bias Caveat</span>
@@ -202,10 +202,16 @@ export default function WhySynchronism() {
             <span className="badge badge-failed" title="Prediction contradicted by data — kill criterion fired or claim demoted on audit">Failed</span>
           </div>
           <div className="card">
-            <h3>Superconductivity T<sub>c</sub></h3>
+            <h3>Superconductor Temperature</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-              Predicted 607K for YBCO, actual is 93K. The &#x03B7; (reachability factor) turned out
-              to be a reparametrization of Abrikosov-Gor&apos;kov pair-breaking (known since 1960).
+              Superconductors are materials with zero electrical resistance below a certain temperature.
+              For a well-studied one, the framework predicted that temperature at 607 K; the real value is
+              93 K &mdash; about 6.5&times; too high. And the extra factor the framework added for
+              superconductors turned out to be a textbook 1960 formula written in new notation, so that
+              part was not new physics either.{' '}
+              <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+                (For experts: YBCO; the &#x03B7; &ldquo;reachability&rdquo; factor restates Abrikosov&ndash;Gor&apos;kov pair-breaking.)
+              </span>
             </p>
             <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — same math, not new physics">Reparametrization</span>
           </div>

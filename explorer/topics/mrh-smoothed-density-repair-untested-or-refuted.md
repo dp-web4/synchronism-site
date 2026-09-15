@@ -32,3 +32,8 @@ program's credibility now depends more on not over-refuting than on not overclai
   an MRH-smoothed ρ would also *repair the internal-locality violation*, since a smoothing horizon
   is intrinsically defined where V_flat is not. That is two problems with one repair, which is the
   strongest reason to find out whether it was tried.
+
+## Update (maintainer 2026-09-15)
+The Solar System now bounds the smoothing length from below: D ≳ 30 AU, otherwise the planets disagree on GM☉ at O(1).
+See `smoothing-length-window-for-density-keyed-laws.md` and `maintainer/scripts/density_keyed_law_vs_interplanetary_medium.py`.
+Refracted Gravity (Matsakos & Diaferio 2016 §2.2.1) names D explicitly and postpones it.

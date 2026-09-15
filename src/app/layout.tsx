@@ -54,7 +54,7 @@ export default function RootLayout({
             <Link
               href="/test-catalog"
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
-              title="24 proposed experiments by tier"
+              title="26 tests by tier (24 registry + 2 added later)"
             >
               Test Roadmap
             </Link>

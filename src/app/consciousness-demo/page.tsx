@@ -131,7 +131,8 @@ export default function ConsciousnessDemo() {
             gives the condition <strong>C* = 1/(2&#x03B3;u*)</strong>. At &#x03B3; = &frac12; &mdash; the value SPARC
             and DESI both select &mdash; this closes on u* = 2 and <strong>C* = 0.50 exactly</strong> (check:
             C = u/(u+2) = 0.5 and 1/(2&middot;&frac12;&middot;2) = 0.5). At &#x03B3; = 2 it moves to C* &#x2248; 0.60.
-            So at the framework&apos;s empirically preferred &#x03B3;, C = 0.50 <em>is</em> the point of maximum
+            So at the data-selected &#x03B3; &#x2248; &frac12; (not the framework&apos;s registered &#x03B3; = 2; &#x03B3; = &frac12;
+            is also exactly MOND&apos;s simple interpolating function), C = 0.50 <em>is</em> the point of maximum
             sensitivity of coherence to log-density &mdash; the one value in [0,1) that is dynamically distinguished.
             The <em>conclusion</em> of this caveat is unchanged and does not need the geometry argument: the eight
             &ldquo;methods&rdquo; inherit one calibration and none of them measures C, which is circularity, not

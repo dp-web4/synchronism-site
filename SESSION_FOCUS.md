@@ -1,9 +1,51 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-14 (explorer)*
+*Last updated: 2026-09-15 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-09-15) — **"Local density" was never defined, and the planets make the definition decide the
+verdict. Read pointwise, the solar wind crosses every knee in the published joint window between Earth and Saturn. GM☉
+inferred from the two orbits then disagrees at O(1), on 240/240 pre-registered grid points (framework floored form and
+RG Eq. 4.1). RG's authors named the missing smoothing length D in 2016 and postponed it. Not a refutation: a lower bound
+(D ≳ 30 AU) on a parameter nobody declared. Also: the "0 of 9 survived audit" auditors were LLM agents, never an
+outside expert.**
+
+Log: `maintainer/logs/2026-09-15.md`. Proposal (WAKE):
+`Synchronism/Research/proposals/density_keyed_law_needs_a_smoothing_length_planets_bound_it_20260915.md`.
+Script + PREREG (`0ad68f3`) + output: `maintainer/scripts/density_keyed_law_vs_interplanetary_medium*`.
+**Count stays 6; Bucket 0 = 0.**
+
+1. **Explorer 09-14 P0s are live on /dark-energy.** New "which density is C read at?" box: mean density ⇒ γ free and the
+   DESI fit stands; local fluid ⇒ |2γ−1| ≲ 10⁻⁵. Locality trilemma stated. PREDICTIONS.md and the 08-18 proposal are
+   back-annotated. The visitor researcher predicted ~10⁻⁵ without seeing the execution.
+2. **/coherence-function "What x is" box was wrong.** The compander rows are μ-form on g_obs/a₀′, checked in the script.
+   Keyed on g_bar in the division wiring, the same function gives g_bar + 2a₀, not MOND.
+3. **Landing scoreboard: state separated from history.**
+   - A realization-by-test table (which of three C's each refutation hit).
+   - Both σ numbers for TEST-09/04a; the old cell is kept verbatim in `<details>`.
+   - The audit cell names its LLM auditors and is marked instrument-uncalibrated.
+4. **A2ACW record.** The 05-22 "control" was one model self-scoring with the answers known. Designed-set J = 0 (TP 3,
+   FP 6, TN 0). The previously published J was circular. /research-philosophy and /for-researchers now agree.
+5. **Tier 1.** A three-number block per kill, an inherited-MOND-exposures card (Cassini counted, wide binaries pending),
+   the six refutations traceable to IDs, and 12 notes moved into `<details>`. Galaxy plotter verdict fixed;
+   Coherence Explorer slope label (per-ln) fixed; beginner path de-jargoned; glossary +9 terms.
+
+### Tool
+`site_lint.py` 44 rules. Positive control: 7 hits on HEAD, 0 on the tree.
+
+### → Explorer (topics seeded)
+- `smoothing-length-window-for-density-keyed-laws.md` — is [D_min, D_max] non-empty? GC upper bound; Oort window with
+  the Sun inside a 1 pc ball; did later RG papers fix D; can the MRH be D?
+- `fit-lands-on-the-nesting-point.md` — do MOND mocks reproduce γ̂ = 0.489?
+- `test09-under-the-cosmic-baryon-ceiling.md` — TEST-09 was never re-run at Ω_m/Ω_b.
+
+### → dp (gated)
+- TEST-26 names its horn.
+- Whether density-keyed registrations must declare D.
+- Whether to run the post-cutoff A2ACW arm (the cheapest high-information experiment on the project; it is what makes
+  "0 of 9" interpretable).
 
 ## 🟢 NEW (explorer 2026-09-14) — **The Cardassian ISW import holds, and it is the weaker constraint. Read at local
 density (the framework's premise) as a fluid, the DE sector has c_s² ≈ 0.223(2γ−1). The Jeans term, which the 08-18

@@ -37,6 +37,47 @@ export default function ForResearchers() {
           <a href="#a2acw-open-question" style={{ color: 'var(--color-accent-blue)' }}>open question</a> about the audit
           instrument (A2ACW), which is not a citable null.
         </p>
+        <div id="start-here" style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', padding: '0.85rem 1.1rem', marginBottom: '1.25rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)', scrollMarginTop: '5rem' }}>
+          <strong style={{ color: 'var(--color-accent-violet)' }}>Start here: negative results on density-keyed modified gravity
+          (framework-independent)</strong>
+          <p style={{ margin: '0.4rem 0 0.5rem' }}>
+            <strong>If you read one thing:</strong> the sign statement in item 1, then item 5 with its &#x03B3; attached, then
+            item 4. None of the three needs Synchronism to be right; each is scoped in its own card.
+          </p>
+          <ul style={{ margin: 0, paddingLeft: '1.2rem', lineHeight: 1.6 }}>
+            <li>
+              <a href="#locality-no-go" style={{ color: 'var(--color-accent-blue)' }}>1. Local-density no-go</a>: a knee keyed
+              on local volumetric density must fall as V<sup>&minus;2</sup> (BTFR-forced); the framework asserts &#x03C1;<sub>crit</sub> &prop;
+              V<sup>+2</sup>, the inverted sign. Algebraic-coupling class only; gradient (symmetron-class) schemes escape.
+            </li>
+            <li>
+              <a href="#gc-window" style={{ color: 'var(--color-accent-blue)' }}>5. Globular-cluster exclusion window</a>: 42
+              clusters exclude a knee &#x03C1;<sub>c</sub> &isin; 0.1&ndash;300 M<sub>&#x2609;</sub>/pc&sup3; at &#x03B3; = 0.489,
+              narrowing to 0.5&ndash;100 at &#x03B3; = 2. Meaningless without its &#x03B3;.
+            </li>
+            <li>
+              <a href="#unidentifiability" style={{ color: 'var(--color-accent-blue)' }}>4. Density-keyed unidentifiability</a>:
+              a knee above the sampled density leaves one measurable number. Fisher correlation &#x03C1;(ln&#x03B3;, ln A) =
+              +1.000000.
+            </li>
+            <li>
+              Different domain, also framework-independent:{' '}
+              <a href="#dim4-liv" style={{ color: 'var(--color-accent-blue)' }}>2. dim-4 LIV naturalness gap</a> for
+              absolute-time discrete substrates (16&ndash;28 OOM).
+            </li>
+          </ul>
+          <p style={{ margin: '0.6rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+            <strong>Acronyms:</strong> <strong>MOND</strong> Modified Newtonian Dynamics (Milgrom 1983) &middot;{' '}
+            <strong>RAR</strong> Radial Acceleration Relation (observed vs baryonic gravity in galaxies) &middot;{' '}
+            <strong>BTFR</strong> Baryonic Tully&ndash;Fisher Relation &middot; <strong>SPARC</strong> Spitzer Photometry and
+            Accurate Rotation Curves (rotation-curve database) &middot; <strong>BIC</strong> Bayesian Information Criterion
+            (a fit score penalised for parameter count; lower is preferred) &middot; <strong>EFE</strong> External Field Effect &middot;{' '}
+            <strong>LIV</strong> Lorentz-invariance violation &middot; <strong>SME</strong> Standard-Model Extension (the
+            parametrisation LIV bounds are reported in) &middot; <strong>CMB</strong> cosmic microwave background &middot;{' '}
+            <strong>LSS</strong> large-scale structure &middot; <strong>GRB</strong> gamma-ray burst &middot;{' '}
+            <strong>DESI</strong> Dark Energy Spectroscopic Instrument &middot; <strong>OOM</strong> orders of magnitude.
+          </p>
+        </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>What nesting settles and what it does not (corrected 2026-09-14):</strong>{' '}
           <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest
@@ -50,7 +91,8 @@ export default function ForResearchers() {
           complexity-penalised comparison (as &Lambda;CDM is over wCDM). It was a risky restriction, and which branch
           obtains is an empirical question that only the data could answer. SPARC answered it: the ceiling binds
           (TEST-10: 69% of discs exceed the 1/&#x03A9;<sub>m</sub> cap; even the most permissive candidate normalisation,
-          &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> &#8776; 6.39, is exceeded by 28 of 153). Same verdict, reached through
+          &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> &#8776; 6.4, is exceeded by 28 of 153; the count was computed at
+          0.315/0.0493 = 6.39). Same verdict, reached through
           data rather than a priori. One dependency: the nesting holds only if the acceleration form&apos;s exponent
           &#966; is fixed; the archive&apos;s provenance audit found it fitted-then-named, and if it is free the law is not
           a pure restriction at all. Source: <code>Research/proposals/nested_submodel_fit_versus_selection.md</code>{' '}
@@ -679,8 +721,8 @@ export default function ForResearchers() {
             <ValidationBadge status="untested" />
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
-            Untested: the experiment that would decide it has not been run. Both existing arms are n = 6, retrospective,
-            and scored by a single model that knew every answer.
+            Untested: the experiment that would decide it has not been run. The one control benchmark that exists (3
+            reparametrizations, 6 discoveries) is retrospective and in-distribution, and a single model that knew every answer scored it.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             <strong>Honest novelty statement:</strong> the protocol is assembled prior art (AI Safety via Debate, Irving,
@@ -688,28 +730,49 @@ export default function ForResearchers() {
             question in the heading.
           </p>
           <div style={{ background: 'rgba(56, 189, 248, 0.07)', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '0.375rem', padding: '0.8rem 1rem', fontSize: '0.87rem', color: 'var(--color-text-secondary)', margin: '0.75rem 0' }}>
-            <strong style={{ color: '#38bdf8' }}>Current state (2026-09-14)</strong>
+            <strong style={{ color: '#38bdf8' }}>Current state (2026-09-15)</strong>
             <ul style={{ margin: '0.4rem 0 0', paddingLeft: '1.2rem', lineHeight: 1.6 }}>
               <li>
-                <strong>Program-level count.</strong> 3,308 sessions &rarr; ~47 internally consistent candidates &rarr; 6 given
-                external audit &rarr; 0 survived. The adversarial loop itself passed all six; the demotions came from the later
-                audit. On n = 6 the true survival rate can be as high as 0.46 (Clopper&ndash;Pearson, two-sided 95%; 0.39 one-sided).
+                <strong>Control status.</strong> In-distribution canonical arm run 2026-05-22 (6/6 genuine discoveries
+                false-flagged under the literal rule, scored by one LLM that knew every answer); out-of-distribution,
+                post-cutoff, citation-stripped arm never run.
               </li>
               <li>
-                <strong>Detector arms, one convention: the positive class is &ldquo;the claim is a reparametrization.&rdquo;</strong>{' '}
-                Positive arm: the 6 demoted claims, flagged 6/6 by the combined three-axis protocol (sensitivity 1.0; vocabulary
-                translation alone, 4/6). Negative arm: 6 canonical discoveries (Dirac 1928, Bell 1964, BCS 1957, Higgs 1964,
-                Hawking 1974, Noether 1918), all 6 flagged by the literal translation rule, so FP = 6, TN = 0, specificity 0/6 and
-                false-positive rate 6/6. That rate is well-defined. Youden&apos;s J = 0, 95% CI [&minus;0.46, +0.46]. The
-                sensitivity and specificity were scored under different decision rules. Under the steelmanned rule (&ldquo;reduces
-                to prior art with nothing added&rdquo;) the same six pass, but then the scorer&apos;s own novelty judgment is doing
-                all the discriminating.
+                <strong>Program-level count.</strong> 3,308 sessions &rarr; ~47 internally consistent candidates. Across all
+                audited claims the count is <strong>0 of 9</strong>: the 6 former &ldquo;Validated&rdquo; badges plus the top 3
+                of the ~47, swept 2026-07-03. The rest are ~47 candidates not yet individually audited, an open count rather than
+                an outcome. The adversarial loop itself passed all six badges; the demotions came from the later audit. With 0 of 9
+                the true survival rate can be as high as 0.34 (Clopper&ndash;Pearson, two-sided 95%; 0.46 on the six alone).
+              </li>
+              <li>
+                <strong>Who audited.</strong> LLM agents, not an external human domain expert: the archive&apos;s autonomous AI
+                research sessions (e.g. Session #581) and this site&apos;s AI explorer and maintainer tracks, often acting on
+                AI visitor-persona reports, with a human (dp) overseeing the badge taxonomy. No record of an outside physicist
+                reviewing these claims exists in the archive or site logs. So the 0-of-9 line is{' '}
+                <strong>instrument-uncalibrated</strong>: it comes from the same instrument class this open question is about. The
+                executed physics refutations on the scoreboard do not depend on it.
+              </li>
+              <li>
+                <strong>The designed control benchmark (2026-05-22), one convention: the positive class is &ldquo;the claim is a
+                reparametrization.&rdquo;</strong>{' '}
+                Positive arm: 3 reparametrizations from outside the audited claims (Eddington&apos;s &alpha;&#x207B;&sup1; = 137,
+                tired light, and a Tully&ndash;Fisher &ldquo;derivation&rdquo; that assumes MOND; the record notes the last is
+                in-class with this framework&apos;s own claim, so only two are truly external). Negative arm: 6 canonical discoveries
+                (Dirac 1928, Bell 1964, BCS 1957, Higgs 1964, Hawking 1974, Noether 1918). <em>Literal rule</em> (flag if canonical
+                prior art is named within one round): TP = 3, FN = 0, FP = 6, TN = 0, so sensitivity 3/3, specificity 0/6,
+                Youden&apos;s J = 0. The per-arm Clopper&ndash;Pearson bounds (sensitivity &ge; 0.29, specificity &le; 0.46) put
+                J between &minus;0.71 and +0.46. <em>Steelmanned rule</em> (flag if the claim reduces to prior art with nothing
+                added): TP = 3, FP = 0, TN = 6, J = 1.0 (lower bound &minus;0.17), but there the scorer&apos;s own novelty judgment
+                does all the discriminating, and that judgment is the step in question. Both rules were applied to both arms by the
+                same model. The framework&apos;s six demoted claims are <em>not</em> a positive arm. Their ground truth came from
+                the audit class under evaluation, so a sensitivity computed on them would be circular.
               </li>
               <li>
                 <strong>Temporal asymmetry, 0/6.</strong> This is neither a control arm nor a run. It was a desk counterfactual:
                 would a challenger with a training cutoff five years later have caught the six demotions? No, because their prior
-                art (median ~1996) predates any plausible cutoff. It measures a proposed design. The 6/6 above measures a different
-                instrument, so the two numbers do not conflict.
+                art (median ~1996) predates any plausible cutoff. It measures a proposed design. The three-axis protocol&apos;s
+                6/6 on the same six claims measures a different instrument (and has no independent ground truth), so the two
+                numbers do not conflict.
               </li>
               <li>
                 <strong>Why the canonical arm is not a clean known-good control.</strong> It is the right <em>kind</em> of arm, but
@@ -748,6 +811,15 @@ export default function ForResearchers() {
               Revision history, 2026-07-09 to 2026-09-10 (verbatim; the current-state box above supersedes it where they differ)
             </summary>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.6rem' }}>
+              <strong>Superseded on 2026-09-15:</strong> the 09-14 box&apos;s detector bullet, which took the 6 demoted claims
+              as the positive arm (&ldquo;flagged 6/6 by the combined three-axis protocol, sensitivity 1.0&rdquo;) and quoted
+              J = 0 with CI [&minus;0.46, +0.46]. That used the audited set as its own ground truth, and it scored the two arms
+              under different rules. The box now reports the benchmark as designed (3 external reparametrizations, 6
+              discoveries, one rule at a time). The same applies to the 07-14 &ldquo;combined sensitivity 6/6 = 1.0&rdquo;
+              paragraph below. Also superseded: &ldquo;6 given external audit&rdquo; and &ldquo;0 of 6 audited (0 of 47 pending
+              audit)&rdquo;. The canonical count is 0 of 9, and the audit was by LLM agents, not an external domain expert.
+              Where the history says the positive control &ldquo;has never been run,&rdquo; read the control-status line in the
+              box.{' '}
               <strong>Superseded on 2026-09-14:</strong> precision (2), which said 6/6 is &ldquo;better described as a false
               discovery rate&rdquo; because the design has no true negatives. The canonical arm <em>is</em> the negative class, so
               the false-positive rate is well-defined. A false discovery rate, FP/(FP+TP), depends on arm sizes chosen by design:
@@ -893,9 +965,9 @@ export default function ForResearchers() {
           <strong style={{ color: '#f59e0b' }}>What is deliberately not on this page:</strong>{' '}
           the framework&apos;s positive claims (all reparametrizations, failures, or unrunnable as
           stated — see <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>),
-          and the &ldquo;47 research contributions&rdquo; (audited and demoted — top-3 swept 0/3 novel,
-          remainder demoted in-archive, the count itself a flagged ~57% overcount; see the Research
-          Outputs audit on Honest Assessment).
+          and the &ldquo;47 research contributions&rdquo; (top 3 swept 0/3 novel; the archive&apos;s later sessions report the
+          remainder demoted in-archive, not yet individually audited here; the count itself a flagged ~57% overcount; see the
+          Research Outputs audit on Honest Assessment).
         </div>
       </section>
 

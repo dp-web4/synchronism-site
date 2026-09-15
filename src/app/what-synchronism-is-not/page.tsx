@@ -52,6 +52,28 @@ export default function WhatSynchronismIsNot() {
           Both distort what&apos;s actually here.
         </p>
 
+        {/* Plain summary added 2026-09-15: this page is Beginner Path step 4, and a first-time visitor
+            met QFT, GR, ΛCDM, EFE, A2ACW and Abrikosov-Gor'kov below with no explanation. The detail
+            cards are unchanged; this box restates their headings in plain words. */}
+        <div className="card" style={{ borderLeft: '3px solid var(--color-accent-warm)', marginBottom: '1.5rem', fontSize: '0.92rem' }}>
+          <p style={{ margin: '0 0 0.5rem', color: 'var(--color-accent-warm)', fontWeight: 600 }}>
+            In plain words, before the detail
+          </p>
+          <ul style={{ margin: 0, paddingLeft: '1.2rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+            <li><strong>Not proven.</strong> No prediction has been confirmed. Most have never been tested, and none of those checked came out as a win for this framework: they failed, could not decide anything, or turned out to be known physics written differently.</li>
+            <li><strong>Not checked by science journals.</strong> Nothing has been submitted. The checking so far was done by AI models reviewing each other&apos;s work, with human oversight &mdash; real, but not the usual route.</li>
+            <li><strong>Not a replacement for today&apos;s physics.</strong> It does not replace the standard theories of particles, gravity or the universe&apos;s history, nor the rival gravity idea MOND. Where it matches data, it mostly restates them.</li>
+            <li><strong>Not compatible, as it stands, with a basic rule of relativity</strong> (that the laws look the same at any steady speed). Its built-in universal clock would naturally break that rule by an amount existing experiments already rule out, and nothing in the framework explains why it doesn&apos;t (a serious warning sign, not a mathematical proof).</li>
+            <li><strong>Not just new labels, and not just philosophy.</strong> The claim is that quantum behaviour, consciousness and galaxy motion are one phenomenon at different scales, with concrete tests attached. That is either wrong or important &mdash; and it can fail.</li>
+          </ul>
+          <p style={{ margin: '0.6rem 0 0', color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+            The cards below give the detail and use technical terms (QFT, GR, ΛCDM, CMB, EFE, A2ACW, &ldquo;compander,&rdquo;
+            Lorentz invariance&hellip;). Each is defined in the{' '}
+            <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>; you can skip them and
+            keep the five points above.
+          </p>
+        </div>
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.5rem' }}>
           {notItems.map(item => (
             <div key={item.claim} className="card">

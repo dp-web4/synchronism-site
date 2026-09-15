@@ -29,13 +29,13 @@ export interface LearningPath {
 export const learningPaths: LearningPath[] = [
   {
     name: 'Beginner',
-    timeEstimate: '~35 min on the short route; ~1 h 50 m if you read step 5 in full',
+    timeEstimate: '~40 min on the short route; ~1 h 55 m if you read step 5 in full',
     desc: 'No physics background needed. Plain language, core concepts only. Step 5 (Honest Assessment) is the site\'s long audit page — on this path, read its "If you read nothing else" box and move on; the full 80-minute read is for when you want the evidence rather than the verdict.',
     color: '#10b981',
     kind: 'difficulty',
     steps: [
       { title: 'Why Synchronism?', href: '/why-synchronism', time: '~8 min' },
-      { title: 'First Encounter', href: '/first-encounter', time: '~5 min' },
+      { title: 'First Encounter', href: '/first-encounter', time: '~10 min' },
       { title: 'The Core Idea', href: '/core-idea', time: '~8 min' },
       { title: 'What Synchronism Is Not', href: '/what-synchronism-is-not', time: '~5 min' },
       { title: 'Honest Assessment', href: '/honest-assessment', time: '~80 min in full — or ~4 min for its "If you read nothing else" box at the top, which is the intended stop on this path' },
@@ -73,7 +73,7 @@ export const learningPaths: LearningPath[] = [
       { title: 'Superconductivity (η)', href: '/superconductivity' },
       { title: 'Born Rule Derivation', href: '/born-rule' },
       { title: 'Falsifiability', href: '/falsifiability' },
-      { title: 'Test Roadmap (24 registered + 2 later)', href: '/test-catalog' },
+      { title: 'Test Roadmap (26 tests: 24 in the original registry + 2 added later)', href: '/test-catalog' },
     ],
   },
   {

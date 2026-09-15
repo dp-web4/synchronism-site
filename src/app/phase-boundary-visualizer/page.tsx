@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
+import ValidationBadge from '@/components/ValidationBadge';
 
 const regions = [
   {
@@ -48,11 +49,20 @@ export default function PhaseBoundaryVisualizer() {
   return (
     <>
       <Breadcrumbs currentPath="/phase-boundary-visualizer" />
-      <h1>Phase Boundary Visualizer</h1>
+      {/* Visible title renamed 2026-09-15; route and navigation.ts title unchanged (URL stays /phase-boundary-visualizer) */}
+      <h1>Crossover Regime Visualizer</h1>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.35rem' }}>
+        <ValidationBadge status="audited-negative" label="γ = 2/√N_corr — sharpness sign inverted" />
+      </div>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginTop: '0.35rem' }}>
+        Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index grouping and level
+        tag &mdash; a tool kept to show a failure, not a verdict) &middot; Claim status: <strong>Audited-Negative</strong>, the
+        badge above.
+      </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
-        Despite the name: C(&#x03C1;) is analytic everywhere — a smooth <em>crossover</em>, not a
-        thermodynamic phase transition. &ldquo;Boundary&rdquo; here is a visual convenience (full
-        naming note below).
+        Formerly &ldquo;Phase Boundary Visualizer&rdquo; (the URL keeps that name). C(&#x03C1;) is analytic everywhere &mdash;
+        a smooth <em>crossover</em>, not a thermodynamic phase transition &mdash; so the regimes below are ranges of
+        &#x03B3;, not phases (full naming note below).
       </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
@@ -173,8 +183,13 @@ export default function PhaseBoundaryVisualizer() {
         <input
           type="range" min="0" max="4.0" step="0.01" value={gamma}
           onChange={e => setGamma(parseFloat(e.target.value))}
-          style={{ width: '100%', marginBottom: '1.5rem' }}
+          style={{ width: '100%', marginBottom: '0.4rem' }}
         />
+        <p style={{ color: '#f87171', fontSize: '0.82rem', marginBottom: '1.5rem' }}>
+          <strong>What to notice as you drag:</strong> BCS superconductors and BECs land at the far <em>flat</em> (left)
+          end &mdash; yet their real transitions are among the sharpest in nature &mdash; while an ideal gas, which has no
+          phase transition at all, lands at the sharp end (&#x03B3; = 2). That inversion is the lesson.
+        </p>
 
         <div className="card card-highlight" style={{ marginBottom: '1.5rem', borderLeft: `3px solid ${activeRegion.color}` }}>
           <h3 style={{ color: activeRegion.color }}>{activeRegion.label}</h3>

@@ -507,7 +507,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Test Roadmap',
       href: '/test-catalog',
-      desc: '24 registered experiments by tier (+2 post-registry)',
+      desc: '26 tests by tier (24 in the original registry + 2 added later)',
       keywords: ['test', 'catalog', 'experiment', 'tier', 'overview'],
       related: ['/tier-1-existing', '/tier-2-pilots', '/top-5-tests'],
     },
@@ -627,7 +627,7 @@ export const navigationTree: NavigationTree = {
       related: ['/gamma-parameter', '/phase-transitions', '/coherence-function'],
     },
     {
-      title: 'Phase Boundary Visualizer',
+      title: 'Crossover Regime Visualizer',
       href: '/phase-boundary-visualizer',
       desc: 'Interactive \u03B3 < 1 / \u03B3 \u2248 1 / \u03B3 > 1 diagram',
       keywords: ['phase', 'boundary', 'visualizer', 'diagram', 'interactive'],

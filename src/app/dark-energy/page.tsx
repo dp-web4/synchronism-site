@@ -10,7 +10,7 @@ export default function DarkEnergy() {
     <>
       <Breadcrumbs currentPath="/dark-energy" />
       <h1>Dark Energy &amp; DESI</h1>
-      <ValidationBadge status="reparametrization" label="ΛCDM where it fits (direct DESI DR2 fit 2026-08-12: γ = 0.487, Δχ² = −0.3); covariant completions fail the fit — proposed TEST-26 is a consistency check at DESI DR3, not a discriminator" />
+      <ValidationBadge status="reparametrization" label="ΛCDM where it fits (direct DESI DR2 fit 2026-08-12: γ = 0.487, Δχ² = −0.3, mean-density reading only; read at local density as a fluid, P(k) pins γ = ½ to 1e-5); covariant completions fail the fit — proposed TEST-26 is a consistency check at DESI DR3, not a discriminator" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -22,7 +22,9 @@ export default function DarkEnergy() {
           <strong>The answer, in one sentence:</strong> the framework has a dark-energy sector &mdash;
           derived in December 2025, arithmetically corrected in August 2026 &mdash; and{' '}
           <strong>every consistent version of it misses the specific behaviour DESI prefers</strong>,
-          which makes this the framework&apos;s one live falsifiable position. At DESI DR3 it is killed if the
+          which makes this the framework&apos;s one live falsifiable position &mdash; <em>if</em> C is read at the mean
+          density. Read at the local density (the framework&apos;s own postulate), existing galaxy clustering data already pin
+          &gamma; to &frac12; (box below), so there is nothing left for DR3 to decide. On the mean-density reading: at DESI DR3 it is killed if the
           crossing holds, tied if the data sit at &Lambda;CDM (&gamma;&nbsp;=&nbsp;&frac12;), and it wins only if
           the data move into the quadrant it allows (w&#x2080;&nbsp;&gt;&nbsp;&minus;1 with w&#x2090;&nbsp;&gt;&nbsp;0,
           or the phantom mirror) at a &gamma; measurably away from &frac12; &mdash; unlikely on current data, but not
@@ -61,8 +63,11 @@ export default function DarkEnergy() {
           <strong>Two things the construction is, stated plainly (added 2026-09-14).</strong> First, inverting the
           definition gives C&nbsp;=&nbsp;&rho;<sub>m</sub>/(&rho;<sub>m</sub>&nbsp;+&nbsp;&rho;<sub>DE</sub>):{' '}
           <strong>cosmological &ldquo;coherence&rdquo; is the model&apos;s matter fraction &Omega;<sub>m</sub>(a)</strong>,
-          identically, at every epoch and every &gamma;. That is why C&#x2080;&nbsp;=&nbsp;&Omega;<sub>m</sub> is forced,
-          and it is the same number that sets the galaxy sector&apos;s boost cap 1/&Omega;<sub>m</sub>. Second,
+          identically, at every epoch and every &gamma;. That is why C&#x2080;&nbsp;=&nbsp;&Omega;<sub>m</sub> is forced
+          &mdash; and the identity holds for <em>any</em> dark-energy model written this way, so it carries no content of
+          its own; the content is only the functional form C(&rho;<sub>m</sub>). Carrying that same &Omega;<sub>m</sub>{' '}
+          over to the galaxy sector&apos;s boost cap 1/&Omega;<sub>m</sub> is an <em>added identification</em>, not a
+          consequence of this one. Second,
           H&sup2;&nbsp;&prop;&nbsp;&rho;<sub>m</sub>/C(&rho;<sub>m</sub>) is a modified Friedmann equation with no new
           degree of freedom &mdash; the <strong>Cardassian</strong> class (Freese &amp; Lewis 2002, Phys. Lett. B 540, 1;
           modified-polytropic form, Gondolo &amp; Freese 2002–03). Exactly: at &gamma;&nbsp;=&nbsp;&frac12; it is
@@ -73,9 +78,36 @@ export default function DarkEnergy() {
           cited that literature before a visiting researcher pointed it out on 2026-09-14; it matters because
           Cardassian models given fluctuations were already found to over-produce the late integrated Sachs&ndash;Wolfe
           effect everywhere except a small neighbourhood of &Lambda;CDM (Koivisto, Kurki-Suonio &amp; Ravndal 2005,
-          PRD 71, 064027) &mdash; the same corner this sector&apos;s likelihood fit lands in. Checks:{' '}
+          PRD 71, 064027). Checks:{' '}
           <code>maintainer/scripts/de_sector_is_cardassian.py</code>.
         </p>
+        <div style={{ borderLeft: '3px solid #ef4444', background: 'rgba(239,68,68,0.06)', padding: '0.75rem 1rem', borderRadius: '0.375rem', margin: '0.75rem 0', fontSize: '0.92rem' }}>
+          <p style={{ margin: 0 }}>
+            <strong>Which density is C read at? The answer decides whether &gamma; is free.</strong>{' '}
+            The DESI fit below uses the <em>mean</em> matter density &rho;&#772;<sub>m</sub>(a) &mdash; a background-only
+            reading. The framework&apos;s own postulate is that C is read at the <em>local</em> density. Read locally, the
+            sector is a single fluid whose sound speed is c<sub>s</sub>&sup2;&nbsp;&asymp;&nbsp;0.22&thinsp;(2&gamma;&minus;1)
+            today (Gondolo &amp; Freese&apos;s fluid Cardassian): negative below &gamma;&nbsp;=&nbsp;&frac12; (clumps blow
+            up), positive above it (clumps are smoothed out). That pressure term enters growth multiplied by
+            (k/aH)&sup2;, which is 10&#x2074;&ndash;10&#x2075; on the scales where the matter power spectrum P(k) is
+            measured. <strong>Executed (explorer 2026-09-14, rule pre-registered before computing):</strong> existing P(k)
+            requires <strong>|2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10&#x207B;&#x2075;</strong>, i.e. &gamma;&nbsp;=&nbsp;&frac12;
+            to within ~5&times;10&#x207B;&#x2076; &mdash; about 5,000&times; narrower than the DESI fit&apos;s 1&sigma;. At the
+            DESI best fit &gamma;&nbsp;=&nbsp;0.487 the matter power is already ~10&times; &Lambda;CDM&apos;s at
+            k&nbsp;=&nbsp;0.01&nbsp;h/Mpc. This is the known result for the class: fluid Cardassian models are inconsistent
+            with galaxy P(k) (Amarzguioui, Elgar&oslash;y &amp; Multam&auml;ki 2005, JCAP 01, 008), as is generalized
+            Chaplygin gas away from &Lambda;CDM (Sandvik, Tegmark, Zaldarriaga &amp; Waga 2004, PRD 69, 123524).
+          </p>
+          <p style={{ margin: '0.5rem 0 0 0' }}>
+            So the sector has three readings, and none keeps everything: <strong>local + fluid</strong> &rArr; &gamma; is
+            &frac12; (&Lambda;CDM) to 10&#x207B;&#x2075;; <strong>local + modified gravity</strong> &rArr; no covariant theory
+            exists, and Koivisto+2005&apos;s modified-gravity branch also over-produces ISW (imported, not executed here);{' '}
+            <strong>mean density only</strong> &rArr; &gamma; is free and the DESI fit stands, but coherence is no longer
+            evaluated locally. Open question: which reading does the framework actually hold? Script:{' '}
+            <code>explorer/findings/scripts/de_horn_l_as_a_fluid_jeans_term.py</code>. No registered prediction is refuted;
+            the refutation count stays 6.
+          </p>
+        </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           Arithmetic provenance: the archive&apos;s published w(z) table was wrong twice &mdash; a sign error in
           the continuity relation and a dropped &minus;1 term (its formula returns w&nbsp;=&nbsp;&minus;2 for
@@ -270,9 +302,13 @@ export default function DarkEnergy() {
             moot for the substituted family: it sits at &Lambda;CDM&apos;s corner regardless of parameterization.
           </li>
           <li>
-            <strong>The sector has almost no perturbation theory.</strong> The one perturbation channel derived
-            (the locality fork, research repo 2026-08-18: &delta;<sub>DE</sub>/&delta;<sub>m</sub>&nbsp;=&nbsp;1&nbsp;+&nbsp;w<sub>DE</sub>)
-            forecasts an fσ₈ shift of about &minus;0.22% &mdash; &Lambda;CDM-like, 0.10&sigma;. It is <em>not</em> the
+            <strong>The sector has one perturbation theory, and it pins &gamma;.</strong> The locality fork (research
+            repo 2026-08-18: &delta;<sub>DE</sub>/&delta;<sub>m</sub>&nbsp;=&nbsp;1&nbsp;+&nbsp;w<sub>DE</sub>) forecast an
+            fσ₈ shift of about &minus;0.22% &mdash; &Lambda;CDM-like, 0.10&sigma; &mdash; but that is the{' '}
+            <em>pressure-free</em> local reading. Its growth equation omitted the fluid&apos;s pressure (Jeans) term, which
+            dominates by (k/aH)&sup2;; with it, P(k) forces |2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10&#x207B;&#x2075; (box
+            above). The &minus;0.22% / 0.10&sigma; figure and &ldquo;power, not data, is the blocker&rdquo; hold only for the
+            mean-density (background-only) reading. The &minus;0.22% channel is also <em>not</em> the
             source of TEST-04a&apos;s fσ₈&nbsp;&asymp;&nbsp;0.418, which came from Session 107&apos;s separate
             G<sub>local</sub>/G<sub>global</sub> mechanism (see{' '}
             <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>). Beyond that channel,

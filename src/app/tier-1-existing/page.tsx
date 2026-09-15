@@ -21,6 +21,12 @@ type Test = {
   /** One run, one primary card (2026-09-14): the 2026-07-14 environment run's Failed verdict is filed on
    * TEST-03 (as TEST-03s, matching /honest-assessment); cards killed by the same run point there. */
   sameRun?: { role: 'primary' | 'secondary'; text: string };
+  /** One kill-statistic convention (2026-09-15, visitor researcher persona): every executed card that
+   * quotes a σ states the same three numbers, in this order, so "3.3σ" (prediction vs data) is never
+   * read as the margin by which the registered criterion was met. */
+  scorecard?: { separation: string; criterion: string; power: string };
+  /** Dated correction meta-commentary, kept verbatim, rendered in a collapsed block after the state text. */
+  revisionNotes?: string[];
 };
 
 const tests: Test[] = [
@@ -81,8 +87,21 @@ const tests: Test[] = [
     time: 'ADJUDICATED (2026-05-05)',
     prediction: 'fσ₈(z=0.51) ≈ 0.418 — a ~12% suppression below ΛCDM (0.474). Mechanism: G_local/G_global = C_cosmic/C_galactic suppresses structure growth at late times. Session 107 forecasts 1.7σ–3.2σ discrimination per DESI LRG bin. [Provenance, added 2026-09-14: the 0.418 comes from Session 107\'s G_local/G_global = C_cosmic/C_galactic growth suppression, with σ₈(z=0) = 0.76 calibrated to S₈ in Session 102. The background-only dark-energy sector now on /dark-energy does not produce it. That sector\'s own growth forecast is ≈ −0.22% (0.10σ, ΛCDM-like), so this card tests a mechanism the current framework no longer contains.]',
     kill: 'fσ₈(z=0.51) > 0.46 (rules out Synchronism at >3σ); fσ₈(z=0.51) > 0.45 disfavors at >2σ',
-    preregistration: 'Post-hoc retrodiction — σ₈ calibrated to lensing S₈ tension in Session 102; propagated to DESI fσ₈ in Session 107 (committed 2025-12-10); DESI DR1 published April 2024. Status (corrected 2026-07-14): disfavored 2.4σ on σ₈ (a different, GR-conditioned statistic); on the REGISTERED fσ₈ statistic the disfavor is only ~1.5σ against the >3σ the kill criterion demands — the criterion was not met as registered.',
-    alert: 'CORRECTED 2026-07-14: the kill criterion below is registered on fσ₈(z=0.51) > 0.46 for a >3σ ruling-out. Computed directly: LRG1 fσ₈ = (fσ₈)_fid × 1.16 ± 0.13 = 0.474 × 1.16 ± 0.062 = 0.550 ± 0.062 — exceeds 0.46 by only ~1.5σ, well short of the >3σ the criterion demands (it does clear the weaker >2σ "disfavors" clause at 0.45). The "Kill Criterion Triggered" claim in the 2026-07-02 reframe below was delivered on σ₈ = 0.841 ± 0.034, a DIFFERENT statistic inferred from a full-shape fit that assumes GR growth kernels — using a GR-conditioned amplitude to falsify a modified-growth model risks circularity (the EFTofLSS citation below already half-concedes a 1-2σ theory systematic on this exact number). DESI\'s own purpose-built modified-gravity analysis — Ishak et al., arXiv:2411.12026 (JCAP 09 (2025) 053) — gives μ0 = 0.11 (+0.45/-0.54) from DESI alone, tightening to 0.05 ± 0.22 with CMB+SN; a ~12% fσ₈ suppression maps to a μ0 inside DESI-alone\'s 1σ band (exact mapping not yet run — seeded as explorer topic). Honest reading: the test as registered lacked the power to discriminate this framework from GR. This does not rescue the framework\'s cosmology sector (the growth suppression was calibrated, never derived — CORRECTED 2026-08-09 from "no field equation sources a growth suppression": Appendix D §D.3 states effective Einstein equations G_μν = 8πG T_μν/C(ρ), committed 2025-12-01, which are cosmology-capable and have simply never been solved for the growth history; the gap is an unrun calculation, not a missing object. The σ₈≈0.76 vs 0.841 gap remains a real 2.4σ miss on that GR-conditioned parameter) — it corrects which statistic carries the kill and how confidently. PRIOR REFRAME (2026-07-02, superseded by the statistic correction above but the amplitude-vs-direction point still stands): post-hoc retrodiction — disfavored 2.4σ on σ₈ AMPLITUDE. DESI DR1 full-shape (arXiv:2411.12021) combined σ₈ = 0.841 ± 0.034 (Table 10) vs Synchronism\'s predicted σ₈ ≈ 0.76: the predicted suppression is absent; data ΛCDM-consistent. The load-bearing statistic is the ensemble amplitude, NOT direction: the LRG1 (z=0.51) fσ₈/(fσ₈)_fid = 1.16 ± 0.13 "enhancement" is a single ~1.2σ bin the DESI collaboration does not treat as robust, and the DR1 ensemble growth index γ_growth ≈ 0.58 ± 0.11 (above GR\'s 0.545) leans mildly toward suppression — the framework\'s own predicted direction. A "wrong direction" framing would be fragile against DR2; the amplitude framing is the defensible one. (Independently converged: 2026-06-24 explorer, 2026-07-01 explorer re-execution, 2026-07-02 + 2026-07-03 visitor Pass 4 researcher reads.) DR2 full-shape growth constraints remain unpublished (~Spring 2027). PROSPECTIVE REGISTRATION ADOPTED (dp, 2026-07-17 — the program\'s first genuinely prospective test; the pre-registration audit had found 0/10): all three DR2 outcomes are pre-committed IN WRITING before publication, adjudicated within 7 days, on the REGISTERED statistic (DR2 full-shape fσ₈ at z≈0.51, not σ₈): (A) fσ₈ ≤ 0.46 → registered criterion met by suppression direction, but the prediction remains post-hoc — confirmed-count stays 0; (B) fσ₈ > 0.46 at ≥3σ → the kill fires as registered, at registered power — the clean prospective refutation DR1 could not deliver; (C) between → "underpowered to discriminate" survives its own test and the row retires. No branch can be chosen after the data. (Research repo: PREDICTIONS.md, Bucket 1 registration block. This supersedes the narrower 2026-06-12 re-open policy below.) HISTORY — CORRECTED 2026-05-26 (previous 2026-05-25 "correction" was itself an error): LIKE-FOR-LIKE single-bin fσ₈ comparison: predicted fσ₈ ≈ 0.418; LRG1 observed fσ₈ ≈ 1.16 × 0.474 ≈ 0.55 — gap ~2σ (single-bin, qualified — see current verdict). SEPARATE σ₈ comparison: 2.4σ (ensemble, robust). These are two different observables — do not compare the 0.418 fσ₈ prediction to the 0.841 σ₈ observation directly. The 0.4497 ± 0.0548 figure cited in the 2026-05-25 edit belongs to arXiv:2512.03230 (DESI Peculiar Velocity Survey, z≈0.07) — a different survey misattributed to the z=0.51 full-shape slot. Note: the "mechanism-class sign reversal / transferable contribution" characterization is NOT restored — that was an overstatement; this is a post-hoc test. CONTEXT (2026-05-23): EFTofLSS analyses (Cabass, Simonović, Zaldarriaga et al. 2024-2025) explain DESI DR1 fσ₈ within ΛCDM at 1-2σ. CURRENCY (2026-06-11): this verdict is frozen at DR1 — DR2 growth has not been re-run against the kill criterion. RE-OPEN POLICY (2026-06-12): the verdict would unfreeze only if DR2 full-shape reported fσ₈(z≈0.5) ≤ 0.46 (back under the kill threshold). A DR2 value at or above DR1\'s would not change the verdict, only deepen it; no DR2 outcome can convert a post-hoc retrodiction into a prospective success. FRAMING: predicting σ₈ ≈ 0.76 in late 2025 was a bet that the S8 lensing tension (KiDS/DES) was physical; KiDS-Legacy and DESI full-shape have since moved against that camp. The failure is a documented bet on a tension that dissolved — which is what makes the mechanism-class reading (any coherence-damped growth-suppression framework sits in the same disfavored box) a statement about a real corner of the literature, not just this framework.',
+    preregistration: 'Post-hoc retrodiction — σ₈ calibrated to lensing S₈ tension in Session 102; propagated to DESI fσ₈ in Session 107 (committed 2025-12-10); DESI DR1 published April 2024. Status: disfavored 2.4σ on σ₈ (a different, GR-conditioned statistic). On the REGISTERED fσ₈ statistic the prediction sits 2.1σ from the data and the data clear the 0.46 threshold by ~1.5σ, against the >3σ the kill criterion demands, so the threshold is crossed on the point estimate but not at the registered significance (see the three numbers above).',
+    alert: 'Current verdict: UNDERPOWERED AS REGISTERED on fσ₈; post-hoc retrodiction either way; disfavored 2.4σ on σ₈ AMPLITUDE. LRG1 fσ₈ = (fσ₈)_fid × 1.16 ± 0.13 = 0.474 × 1.16 ± 0.062 = 0.550 ± 0.062; the three numbers above are computed from this. The "Kill Criterion Triggered" claim of the 2026-07-02 reframe (revision notes) was delivered on σ₈ = 0.841 ± 0.034, a DIFFERENT statistic inferred from a full-shape fit that assumes GR growth kernels — using a GR-conditioned amplitude to falsify a modified-growth model risks circularity (the EFTofLSS citation below already half-concedes a 1-2σ theory systematic on this exact number). DESI\'s own purpose-built modified-gravity analysis — Ishak et al., arXiv:2411.12026 (JCAP 09 (2025) 053) — gives μ0 = 0.11 (+0.45/-0.54) from DESI alone, tightening to 0.05 ± 0.22 with CMB+SN; a ~12% fσ₈ suppression maps to a μ0 inside DESI-alone\'s 1σ band (exact mapping not yet run — seeded as explorer topic). Honest reading: the test as registered lacked the power to discriminate this framework from GR. This does not rescue the framework\'s cosmology sector (the growth suppression was calibrated, never derived: Appendix D §D.3 states effective Einstein equations G_μν = 8πG T_μν/C(ρ), committed 2025-12-01, which are cosmology-capable and have simply never been solved for the growth history; the gap is an unrun calculation, not a missing object. The σ₈≈0.76 vs 0.841 gap remains a real 2.4σ miss on that GR-conditioned parameter) — it corrects which statistic carries the kill and how confidently. DESI DR1 full-shape (arXiv:2411.12021) combined σ₈ = 0.841 ± 0.034 (Table 10) vs Synchronism\'s predicted σ₈ ≈ 0.76: the predicted suppression is absent; data ΛCDM-consistent. The load-bearing statistic is the ensemble amplitude, NOT direction: the LRG1 (z=0.51) fσ₈/(fσ₈)_fid = 1.16 ± 0.13 "enhancement" is a single ~1.2σ bin the DESI collaboration does not treat as robust, and the DR1 ensemble growth index γ_growth ≈ 0.58 ± 0.11 (above GR\'s 0.545) leans mildly toward suppression — the framework\'s own predicted direction. A "wrong direction" framing would be fragile against DR2; the amplitude framing is the defensible one. DR2 full-shape growth constraints remain unpublished (~Spring 2027). PROSPECTIVE REGISTRATION ADOPTED (dp, 2026-07-17 — the program\'s first genuinely prospective test; the pre-registration audit had found 0/10): all three DR2 outcomes are pre-committed IN WRITING before publication, adjudicated within 7 days, on the REGISTERED statistic (DR2 full-shape fσ₈ at z≈0.51, not σ₈): (A) fσ₈ ≤ 0.46 → registered criterion met by suppression direction, but the prediction remains post-hoc — confirmed-count stays 0; (B) fσ₈ > 0.46 at ≥3σ → the kill fires as registered, at registered power — the clean prospective refutation DR1 could not deliver; (C) between → "underpowered to discriminate" survives its own test and the row retires. No branch can be chosen after the data. (Research repo: PREDICTIONS.md, Bucket 1 registration block. This supersedes the narrower 2026-06-12 re-open policy below.) CONTEXT (2026-05-23): EFTofLSS analyses (Cabass, Simonović, Zaldarriaga et al. 2024-2025) explain DESI DR1 fσ₈ within ΛCDM at 1-2σ. CURRENCY (2026-06-11): this verdict is frozen at DR1 — DR2 growth has not been re-run against the kill criterion. FRAMING: predicting σ₈ ≈ 0.76 in late 2025 was a bet that the S8 lensing tension (KiDS/DES) was physical; KiDS-Legacy and DESI full-shape have since moved against that camp. The failure is a documented bet on a tension that dissolved — which is what makes the mechanism-class reading (any coherence-damped growth-suppression framework sits in the same disfavored box) a statement about a real corner of the literature, not just this framework.',
+    scorecard: {
+      separation: 'Predicted fσ₈(z=0.51) = 0.418 sits 2.1σ below LRG1 (0.550 ± 0.062). ΛCDM\'s 0.474 sits 1.2σ from the same point, so Δχ² ≈ 3.1 in ΛCDM\'s favour, one bin.',
+      criterion: 'fσ₈ > 0.46 "rules out at >3σ": the point estimate crosses 0.46 (met literally), but only by 1.5σ, so the >3σ it was registered to deliver is not met. The weaker "> 0.45 disfavors at >2σ" clause is met: the prediction sits 2.1σ from the data.',
+      power: 'Placing the 0.46 threshold at 3σ from 0.418 presumes σ ≈ (0.46 − 0.418)/3 = 0.014. DESI DR1 delivers σ = 0.062, 4.4× larger. This shortfall is why the verdict is underpowered, not failed.',
+    },
+    revisionNotes: [
+      'Pre-registration status line until 2026-09-15 read: Status (corrected 2026-07-14): disfavored 2.4σ on σ₈ (a different, GR-conditioned statistic); on the REGISTERED fσ₈ statistic the disfavor is only ~1.5σ against the >3σ the kill criterion demands — the criterion was not met as registered. (Changed because "disfavor is only ~1.5σ" named the margin over the 0.46 threshold, not the prediction-to-data separation, which is 2.1σ; visitor researcher persona 2026-09-15.)',
+      'Status note until 2026-09-15 opened: CORRECTED 2026-07-14: the kill criterion below is registered on fσ₈(z=0.51) > 0.46 for a >3σ ruling-out. Computed directly: LRG1 fσ₈ = (fσ₈)_fid × 1.16 ± 0.13 = 0.474 × 1.16 ± 0.062 = 0.550 ± 0.062 — exceeds 0.46 by only ~1.5σ, well short of the >3σ the criterion demands (it does clear the weaker >2σ "disfavors" clause at 0.45).',
+      'Cosmology-sector parenthesis in the status note: CORRECTED 2026-08-09 from "no field equation sources a growth suppression" (the parenthesis now states only the corrected reading).',
+      'PRIOR REFRAME (2026-07-02, superseded by the statistic correction above but the amplitude-vs-direction point still stands): post-hoc retrodiction — disfavored 2.4σ on σ₈ AMPLITUDE. [The amplitude-vs-direction detail that followed now sits in the status note.] (Independently converged: 2026-06-24 explorer, 2026-07-01 explorer re-execution, 2026-07-02 + 2026-07-03 visitor Pass 4 researcher reads.)',
+      'HISTORY — CORRECTED 2026-05-26 (previous 2026-05-25 "correction" was itself an error): LIKE-FOR-LIKE single-bin fσ₈ comparison: predicted fσ₈ ≈ 0.418; LRG1 observed fσ₈ ≈ 1.16 × 0.474 ≈ 0.55 — gap ~2σ (single-bin, qualified — see current verdict). SEPARATE σ₈ comparison: 2.4σ (ensemble, robust). These are two different observables — do not compare the 0.418 fσ₈ prediction to the 0.841 σ₈ observation directly. The 0.4497 ± 0.0548 figure cited in the 2026-05-25 edit belongs to arXiv:2512.03230 (DESI Peculiar Velocity Survey, z≈0.07) — a different survey misattributed to the z=0.51 full-shape slot. Note: the "mechanism-class sign reversal / transferable contribution" characterization is NOT restored — that was an overstatement; this is a post-hoc test.',
+      'RE-OPEN POLICY (2026-06-12): the verdict would unfreeze only if DR2 full-shape reported fσ₈(z≈0.5) ≤ 0.46 (back under the kill threshold). A DR2 value at or above DR1\'s would not change the verdict, only deepen it; no DR2 outcome can convert a post-hoc retrodiction into a prospective success.',
+    ],
   },
   {
     id: 'TEST-05',
@@ -137,7 +156,16 @@ const tests: Test[] = [
     time: 'EXECUTED (2026-07-14)',
     prediction: 'Computed from the framework\'s own formula (C(a) = Ω_m + (1−Ω_m)x/(1+x), boost capped at 1/Ω_m = 3.17): BTFR slope n = 3.35 ± 0.07. [Which acceleration, stated 2026-09-14: the TEST-09 and TEST-10 scripts evaluate C explicitly at the baryonic acceleration, with x = (g_bar/a₀)^(1/φ), a₀ = 1.05×10⁻¹⁰ m/s², and g_obs = g_bar/C(g_bar). There is no implicit solve in g_obs. The RAR-shape fits on /galaxy-rotation are the ones solved implicitly in g_obs. The 3.17 cap holds under either keying, because C ≥ Ω_m for every x ≥ 0.] The previously listed "deep-MOND sample → n ≈ 4" limb is retracted — a bounded boost has NO deep-MOND regime. As g_bar → 0 the boost saturates at 3.17, a constant rescaling of G, which is Newtonian: the framework\'s deep limit is n → 2 (verified numerically: 2.01), the OPPOSITE end of the ladder from MOND\'s n = 4. MOND\'s n = 4 comes precisely from the √(a₀/g_bar) divergence a bounded boost cannot follow.',
     kill: 'A single sample produces a BTFR slope inconsistent with its regime-mix prediction by > 0.3 — FIRED: deviation 0.41 (registered variable, same V_flat estimator applied to observation, MOND, and Synchronism alike). Threshold provenance: the >0.3 criterion in its operative wording was fixed 2026-04-24 (site commit 89825cf, restating the 2026-04-23 back-annotation) — eleven weeks before execution and before the bounded-boost analysis existed. Disclosed: that restatement changed the criterion\'s variable (band-universality → regime-mix deviation) while carrying the 0.3 magnitude over.',
-    alert: 'FAILED — KILL CRITERION FIRED (executed 2026-07-14 on real SPARC; MOND-shared flag RETRACTED). Observed n = 3.75 ± 0.10 (reproduces Lelli 2019\'s 3.85 ± 0.09); MOND n = 3.81 ± 0.04 (passes, 0.6σ); Synchronism n = 3.35 ± 0.07 (fails, 3.3σ; deviation 0.41 > 0.3). Precision on the MOND comparison (added 2026-07-23, expert-review point): the 3.81 is MOND run through the same regime-mix fit pipeline as the other two slopes — a like-for-like differential, which is what the criterion adjudicates. MOND\'s PARAMETER-FREE deep-limit prediction is exactly n = 4 (M ∝ V⁴/Ga₀), and the observed 3.75 ± 0.10 sits ~2.5σ below that — mild tension with canonical MOND worth naming, and it sharpens rather than softens this card\'s verdict: Synchronism\'s 3.35 fails against both the fitted and the canonical MOND comparison. No parameters rescue it: at the framework\'s own Ω_m = 0.315 the best over all (φ, a₀) is 3.45 — the kill fires for every exponent; reaching 3.75 requires Ω_m → 0.001 and φ → 2, at which point the law degenerates algebraically to MOND. The honest parameter accounting (φ provenance audit, 2026-07-17): ONE derived ingredient (Ω_m, from cosmology) plus ONE fitted exponent dressed as a constant — φ is fitted-then-named (archive S45 adjudicated the first φ-sighting "intriguing coincidence, not significant"; the later "derivations" restate φ\'s defining identity x+x²=1 rather than derive it; see /parameter-derivations). A free exponent that still cannot reach the data is a deeper failure than a derived one — the no-rescue scan already covers every exponent value. OPEN ROBUSTNESS ITEM (flagged by two independent expert reviews 2026-07-18): the observed BTFR slope is velocity-definition dependent (Lelli 2019: V_flat vs W_P20 vs V_max spans roughly 3.0–4.1 — the same systematic this page cites on TEST-06), and the kill margin (0.41 vs 0.3) sits inside that range. The execution\'s defense is that the SAME V_flat estimator was applied to observation, MOND, and Synchronism — the adjudicated quantity is a differential under one consistent definition — but whether the differential stays above 0.3 under W_P20 and V_max has NOT been executed. RESOLVED — DEFINITION-ROBUST BY EXECUTION (2026-07-18, same-day run of the registered protocol under its pre-fixed verdict rule): all 11 adjudicated runs exceed 0.3 (minimum 0.32) — V_flat 0.44 ± 0.12; W_P20 across 8 generator/sample variants 0.32–0.61; V_max 0.56–0.72 with paired-bootstrap P(dev ≤ 0.3) ≤ 0.001. The observed arm reproduces Lelli 2019\'s per-definition slopes (V_max 3.47 vs 3.52; V_2.2 3.08 vs 3.06). Two disclosed caveats: (1) the point estimate is definition-robust but the SIGNIFICANCE is uneven — it is carried by V_max (P ≤ 0.001); V_flat alone is only ~1.2σ above threshold (P(≤0.3) = 0.11) and the W_P20 margin is thin (0.34 ± 0.10, P = 0.36); (2) exploratory inner-disc/single-point measures outside the registered outer-velocity scope (V_2.2, V_last: 0.25–0.28) sit under threshold — the kill is a statement about outer/flat rotation velocities, where the bounded boost binds. When citing this kill\'s strength, prefer the V_max form (0.72 ± 0.09) or pair it with TEST-10\'s definition-free ceiling violation (69% of galaxies exceed 3.17). MOND passes the same differential under every definition (max 0.20). Robustness script: explorer/scripts/test09_velocity_definition_robustness.py. The old "MOND-shared / cannot discriminate" badge was wrong in structure, not just in outcome: the BTFR is an asymptotic-boost observable, and boundedness — the framework\'s only feature distinguishing it from MOND — forces disagreement exactly there (this is a corollary of the boost-ceiling refutation on /honest-assessment). Provenance: archive S58 recorded the discrepancy honestly ("predicted n=2.75, observed n≈4"); S193 overwrote it with a synthetic 9-galaxy rescue asserting a deep-MOND limb the bounded formula cannot produce. S58 was right. Scripts: explorer/scripts/test09_btfr_bounded_boost_real_sparc.py, test09_parameter_scan_no_rescue.py.',
+    alert: 'FAILED — KILL CRITERION FIRED (executed 2026-07-14 on real SPARC; MOND-shared flag RETRACTED). Observed n = 3.75 ± 0.10 (reproduces Lelli 2019\'s 3.85 ± 0.09); MOND n = 3.81 ± 0.04 (passes, 0.6σ); Synchronism n = 3.35 ± 0.07: the predicted slope is excluded at 3.3σ from the data; the registered criterion |Δn| > 0.3 is met on the point estimate (0.41), ~1σ above threshold under V_flat alone (P = 0.11), and robust under V_max (P ≤ 0.001). The three numbers above give the detail. Precision on the MOND comparison (added 2026-07-23, expert-review point): the 3.81 is MOND run through the same regime-mix fit pipeline as the other two slopes — a like-for-like differential, which is what the criterion adjudicates. MOND\'s PARAMETER-FREE deep-limit prediction is exactly n = 4 (M ∝ V⁴/Ga₀), and the observed 3.75 ± 0.10 sits ~2.5σ below that — mild tension with canonical MOND worth naming, and it sharpens rather than softens this card\'s verdict: Synchronism\'s 3.35 fails against both the fitted and the canonical MOND comparison. No parameters rescue it: at the framework\'s own Ω_m = 0.315 the best over all (φ, a₀) is 3.45 — the kill fires for every exponent; reaching 3.75 requires Ω_m → 0.001 and φ → 2, at which point the law degenerates algebraically to MOND. The honest parameter accounting (φ provenance audit, 2026-07-17): ONE derived ingredient (Ω_m, from cosmology) plus ONE fitted exponent dressed as a constant — φ is fitted-then-named (archive S45 adjudicated the first φ-sighting "intriguing coincidence, not significant"; the later "derivations" restate φ\'s defining identity x+x²=1 rather than derive it; see /parameter-derivations). A free exponent that still cannot reach the data is a deeper failure than a derived one — the no-rescue scan already covers every exponent value. RESOLVED — DEFINITION-ROBUST BY EXECUTION (2026-07-18, same-day run of the registered protocol under its pre-fixed verdict rule): all 11 adjudicated runs exceed 0.3 (minimum 0.32) — V_flat 0.44 ± 0.12; W_P20 across 8 generator/sample variants 0.32–0.61; V_max 0.56–0.72 with paired-bootstrap P(dev ≤ 0.3) ≤ 0.001. The observed arm reproduces Lelli 2019\'s per-definition slopes (V_max 3.47 vs 3.52; V_2.2 3.08 vs 3.06). Two disclosed caveats: (1) the point estimate is definition-robust but the SIGNIFICANCE is uneven — it is carried by V_max (P ≤ 0.001); V_flat alone is only ~1.2σ above threshold (P(≤0.3) = 0.11) and the W_P20 margin is thin (0.34 ± 0.10, P = 0.36); (2) exploratory inner-disc/single-point measures outside the registered outer-velocity scope (V_2.2, V_last: 0.25–0.28) sit under threshold — the kill is a statement about outer/flat rotation velocities, where the bounded boost binds. When citing this kill\'s strength, prefer the V_max form (0.72 ± 0.09) or pair it with TEST-10\'s definition-free ceiling violation (69% of galaxies exceed 3.17). MOND passes the same differential under every definition (max 0.20). Robustness script: explorer/scripts/test09_velocity_definition_robustness.py. The old "MOND-shared / cannot discriminate" badge was wrong in structure, not just in outcome: the BTFR is an asymptotic-boost observable, and boundedness — the framework\'s only feature distinguishing it from MOND — forces disagreement exactly there (this is a corollary of the boost-ceiling refutation on /honest-assessment). Provenance: archive S58 recorded the discrepancy honestly ("predicted n=2.75, observed n≈4"); S193 overwrote it with a synthetic 9-galaxy rescue asserting a deep-MOND limb the bounded formula cannot produce. S58 was right. Scripts: explorer/scripts/test09_btfr_bounded_boost_real_sparc.py, test09_parameter_scan_no_rescue.py.',
+    scorecard: {
+      separation: 'Predicted n = 3.35 ± 0.07 vs observed 3.75 ± 0.10 (catalogue V_flat, N = 123): excluded at 3.3σ (unrounded 3.7527 − 3.3465 = 0.406; combined σ = 0.124). MOND\'s 3.81 ± 0.04 sits 0.6σ from the same data.',
+      criterion: '|Δn| > 0.3 on the regime-mix slope: met on the point estimate, 0.41 (0.406 unrounded). The margin above 0.3 is about 1σ under V_flat alone: 1.2σ, P(dev ≤ 0.3) = 0.11, in the 2026-07-18 paired bootstrap (outer-3 V_flat estimator, 0.44 ± 0.12); 0.9σ from a plain Gaussian on the unpaired errors in the row above. Robust under V_max: 0.72 ± 0.09 (flat sample) and 0.56 ± 0.09 (full sample), P ≤ 0.001. Thin under W_P20: 0.34 ± 0.10, P = 0.36.',
+      power: 'The registration fixes a point threshold and no significance level, so there is no registered power to fall short of. A 3σ exceedance of 0.3 would need Δn ≳ 0.3 + 3σ_dev: 0.66 at V_flat\'s σ_dev = 0.12, 0.57 at V_max\'s 0.09. V_max on the flat sample (0.72) clears it; V_max on the full sample (0.56) sits at 2.9σ; V_flat (0.44) and W_P20 (0.34) do not.',
+    },
+    revisionNotes: [
+      'Status note until 2026-09-15 read "Synchronism n = 3.35 ± 0.07 (fails, 3.3σ; deviation 0.41 > 0.3)." (Changed because 3.3σ is the prediction-to-data separation, not the margin by which the registered |Δn| > 0.3 criterion is exceeded; visitor researcher persona 2026-09-15.)',
+      'OPEN ROBUSTNESS ITEM (flagged by two independent expert reviews 2026-07-18): the observed BTFR slope is velocity-definition dependent (Lelli 2019: V_flat vs W_P20 vs V_max spans roughly 3.0–4.1 — the same systematic this page cites on TEST-06), and the kill margin (0.41 vs 0.3) sits inside that range. The execution\'s defense is that the SAME V_flat estimator was applied to observation, MOND, and Synchronism — the adjudicated quantity is a differential under one consistent definition — but whether the differential stays above 0.3 under W_P20 and V_max has NOT been executed. [Superseded the same day by the definition-robustness run in the status note.]',
+    ],
   },
   {
     id: 'TEST-10',
@@ -146,8 +174,18 @@ const tests: Test[] = [
     cost: '$0',
     time: 'EXECUTED (2026-07-15)',
     prediction: 'CORRECTED: the registered "DM fraction → 100% for M_bar < 10⁸ M☉" was never the framework\'s prediction — it is MOND\'s (unbounded ν). The framework\'s own bounded boost (B ≤ 1/Ω_m = 3.17) caps the apparent DM fraction at f_DM = 1 − C(g_bar) ≤ 1 − Ω_m = 68.5% (C evaluated explicitly at g_bar; see TEST-09), for every galaxy, at every radius, for every parameter choice.',
-    kill: 'As registered: "baryon-dominated dwarfs below 10⁸ M☉ exist." The kill fires in REVERSE: the framework dies at the DM-dominated tail its own ceiling forbids. Threshold provenance (restated 2026-09-11): the 68.5% figure is fixed by Ω_m = 0.315 once the normalization B_max = 1/Ω_m is chosen — but that normalization is itself underived (Ω_m/Ω_b ≈ 6.4 is the other candidate), so it is a choice. This card previously argued the threshold needed no registration date because it was structural rather than tuned; a visitor graduate-physics persona pointed out that a choosable normalization is a tuning freedom, and it is. What does NOT depend on the choice: the most dark-matter-dominated SPARC disc (f_DM = 0.927) needs B = 1/(1 − 0.927) = 13.7, above both 3.17 and 6.4 — the refutation survives either convention. What does depend on it: under 6.4 the per-galaxy exceedance is mass-to-light-conditional for all but two gas-dominated dwarfs (NGC 3741, ESO 444-G084; research ledger 2026-07-30), so lead with the tail, not the percentage.',
-    alert: 'FAILED (executed 2026-07-15 on SPARC outer points; MOND-shared flag RETRACTED). LEAD REWRITTEN 2026-08-10 — this card previously led with the "69% exceed the ceiling" percentage while its own text, further down, said the surviving kill was "not the median-based percentage this card leads with." The page stated its lead was wrong and left the lead standing; a visitor Pass 4 then re-reported the convention-dependence as a new P0. The kill, stated in the form that survives every convention: SPARC\'s MAXIMUM observed outer f_DM = 0.927 requires a boost B ≥ 1/(1−0.927) = 13.7, and no candidate cosmic ratio supplies it — a class exclusion, B_max ≲ 14 is excluded by SPARC dwarfs. Everything below is the fuller accounting. Observed outer apparent DM fractions: median 0.755, max 0.927 — 106/153 = 69% of ALL SPARC galaxies exceed the framework\'s structural 68.5% ceiling ONLY under the underived convention B_max = 1/Ω_m (dwarfs below 10⁹ M☉: 67% exceed; the ten most DM-dominated galaxies are all impossible for the bounded boost while MOND matches them to a few percent — median residual f_obs − f_pred is +0.18 for Synchronism vs −0.03 for MOND). Beyond SPARC it is worse: pressure-supported dwarf spheroidals reach M_dyn/M_bar ~ 10²–10³ (Walker & Peñarrubia 2011 and subsequent dispersion-based mass modeling) against the framework\'s cap of 3.17. "A positive result confirms Synchronism and MOND equally" was wrong: MOND\'s boost is unbounded and accommodates near-100% fractions; the framework\'s cannot — this observable discriminates, and the framework loses it. Same structural root as TEST-09: both are corollaries of the boost ceiling. CEILING CONVENTION-DEPENDENCE (propagated from /parameter-derivations, flagged 2026-07-28 and independently re-confirmed by a 2026-07-29 visitor pass): B_max = 1/Ω_m has no derivation — no archive document connects it to the compander. A dynamical-to-baryonic boost more plausibly references the baryon budget Ω_m/Ω_b ≈ 6.40, giving f_DM,max ≈ 0.844, under which the reported MEDIAN (0.755) actually PASSES and the "69% of SPARC exceeds the ceiling" headline does not hold under this convention. The kill that survives regardless of convention is narrower and lives in the tail: SPARC\'s maximum observed f_DM = 0.927 requires B ≥ 13.7, which no candidate cosmic ratio supplies — a class exclusion (B_max ≲ 14 is excluded by SPARC dwarfs), not the median-based percentage this card leads with. Script: explorer/scripts/test10_dwarf_dm_fraction_ceiling.py.',
+    kill: 'As registered: "baryon-dominated dwarfs below 10⁸ M☉ exist." The kill fires in REVERSE: the framework dies at the DM-dominated tail its own ceiling forbids. Threshold provenance (restated 2026-09-11): the 68.5% figure is fixed by Ω_m = 0.315 once the normalization B_max = 1/Ω_m is chosen — but that normalization is itself underived (Ω_m/Ω_b ≈ 6.4 is the other candidate), so it is a choice. What does NOT depend on the choice: the most dark-matter-dominated SPARC disc (f_DM = 0.927) needs B = 1/(1 − 0.927) = 13.7, above both 3.17 and 6.4 — the refutation survives either convention. What does depend on it: under 6.4 the per-galaxy exceedance is mass-to-light-conditional for all but two gas-dominated dwarfs (NGC 3741, ESO 444-G084; research ledger 2026-07-30), so lead with the tail, not the percentage.',
+    alert: 'FAILED (executed 2026-07-15 on SPARC outer points; MOND-shared flag RETRACTED). The kill, stated in the form that survives every convention: SPARC\'s MAXIMUM observed outer f_DM = 0.927 requires a boost B ≥ 1/(1−0.927) = 13.7, and no candidate cosmic ratio supplies it — a class exclusion, B_max ≲ 14 is excluded by SPARC dwarfs. Everything below is the fuller accounting. Observed outer apparent DM fractions: median 0.755, max 0.927 — 106/153 = 69% of ALL SPARC galaxies exceed the framework\'s structural 68.5% ceiling ONLY under the underived convention B_max = 1/Ω_m (dwarfs below 10⁹ M☉: 67% exceed; the ten most DM-dominated galaxies are all impossible for the bounded boost while MOND matches them to a few percent — median residual f_obs − f_pred is +0.18 for Synchronism vs −0.03 for MOND). Beyond SPARC it is worse: pressure-supported dwarf spheroidals reach M_dyn/M_bar ~ 10²–10³ (Walker & Peñarrubia 2011 and subsequent dispersion-based mass modeling) against the framework\'s cap of 3.17. "A positive result confirms Synchronism and MOND equally" was wrong: MOND\'s boost is unbounded and accommodates near-100% fractions; the framework\'s cannot — this observable discriminates, and the framework loses it. Same structural root as TEST-09: both are corollaries of the boost ceiling. CEILING CONVENTION-DEPENDENCE (propagated from /parameter-derivations, flagged 2026-07-28 and independently re-confirmed by a 2026-07-29 visitor pass): B_max = 1/Ω_m has no derivation — no archive document connects it to the compander. A dynamical-to-baryonic boost more plausibly references the baryon budget Ω_m/Ω_b ≈ 6.40, giving f_DM,max ≈ 0.844, under which the reported MEDIAN (0.755) actually PASSES and the "69% of SPARC exceeds the ceiling" headline does not hold under this convention. Script: explorer/scripts/test10_dwarf_dm_fraction_ceiling.py.',
+    scorecard: {
+      separation: 'The framework caps f_DM ≤ 0.685 (B ≤ 3.17) at every radius. Tail: NGC 2915 (f_DM = 0.927) needs B = 13.7; NGC 3741 (f_DM = 0.924, gas-dominated) needs B = 13.1. Velocity errors alone give σ_B ≈ 1.0 and 0.8, i.e. ≈10σ and ≈12σ above 3.17, ≈7σ and ≈8σ above the 6.40 alternative (maintainer re-run 2026-09-15). Distance, inclination and M/L are not propagated, so these are upper bounds on significance, not the verdict; the 2026-07-15 execution propagated no per-galaxy errors. Under 6.40, NGC 2915\'s exceedance is M/L-conditional; NGC 3741\'s is not.',
+      criterion: 'As registered, "baryon-dominated dwarfs below 10⁸ M☉ exist" tested MOND\'s f_DM → 100%, not this framework\'s cap, so it does not carry the verdict. (Read literally it is met too: 2 of the 6 SPARC dwarfs in that range, CamB and UGC 7577, have outer f_DM ≈ 0.40.) The ceiling kill: 4 of those 6 exceed 0.685, but their maximum is f_DM = 0.851 (B = 6.7), barely above 6.40. The convention-free tail sits above the registered mass cut: NGC 3741 at 2.6×10⁸ M☉, NGC 2915 at 1.0×10⁹ M☉.',
+      power: 'No significance level was registered and no per-galaxy uncertainty was propagated, so no power figure exists. The velocity-only σ above is a floor on the error budget, not a power calculation.',
+    },
+    revisionNotes: [
+      'Kill line: This card previously argued the threshold needed no registration date because it was structural rather than tuned; a visitor graduate-physics persona pointed out that a choosable normalization is a tuning freedom, and it is.',
+      'LEAD REWRITTEN 2026-08-10 — this card previously led with the "69% exceed the ceiling" percentage while its own text, further down, said the surviving kill was "not the median-based percentage this card leads with." The page stated its lead was wrong and left the lead standing; a visitor Pass 4 then re-reported the convention-dependence as a new P0.',
+      'Last sentence of the ceiling-convention paragraph (stale since the 2026-08-10 lead rewrite: the card no longer leads with the percentage): The kill that survives regardless of convention is narrower and lives in the tail: SPARC\'s maximum observed f_DM = 0.927 requires B ≥ 13.7, which no candidate cosmic ratio supplies — a class exclusion (B_max ≲ 14 is excluded by SPARC dwarfs), not the median-based percentage this card leads with.',
+    ],
   },
   {
     id: 'TEST-25',
@@ -179,16 +217,26 @@ const tests: Test[] = [
  * the honest-assessment ledger's single environment row.
  */
 const TALLY = {
-  executed: ['TEST-01/03s/05 (one environment test, three IDs)', 'TEST-04a', 'TEST-09', 'TEST-10', 'TEST-25'],
-  killsFired: ['TEST-01/03s/05', 'TEST-09', 'TEST-10', 'TEST-25'],
+  killsFired: ['TEST-01/03s/05 (one environment test, three IDs)', 'TEST-09', 'TEST-10', 'TEST-25'],
+  underpowered: ['TEST-04a'],
 };
+const EXECUTED_COUNT = TALLY.killsFired.length + TALLY.underpowered.length;
+
+/**
+ * Traceability for the 6 (2026-09-15, visitor researcher persona): ROOTS_SENTENCE names "the γ=2 pin" and
+ * a "Bell/CHSH check", neither of which has a TEST ID, so a reader summing this page's cards gets 4.
+ * The 6 = the 4 fired kills above, with TEST-09 and TEST-10 counted separately (5 refutations on 4 cards
+ * minus the shared environment ID), + the RAR transition shape test + the Bell/CHSH check.
+ */
+const SIX_TRACE =
+  'Tracing the 6: TEST-01/03s/05 (environment), TEST-09, TEST-10, TEST-25, RAR shape (unnumbered, closed 2026-05-21; this is "the γ=2 pin", card under Recommended Start below), and the Bell/CHSH check (unnumbered; not a Tier 1 test)';
 
 export default function Tier1Existing() {
   return (
     <>
       <Breadcrumbs currentPath="/tier-1-existing" />
       <h1>Tier 1: Existing Data</h1>
-      <ValidationBadge status="failed" label={`${TALLY.executed.length} executed (${TALLY.executed.join('; ')}) — ${TALLY.killsFired.length} kills fired, TEST-04a underpowered as registered; TEST-04 withdrawn; TEST-02 self-eliminating; rest untested. Site-ledger split: ${ROOTS_SENTENCE}. $0 cost`} />
+      <ValidationBadge status="failed" label={`Executed — ${EXECUTED_COUNT}: ${TALLY.killsFired.length} Failed, kill fired (${TALLY.killsFired.join('; ')}) + ${TALLY.underpowered.length} underpowered as registered (${TALLY.underpowered.join('; ')}). Not executed: TEST-04 withdrawn; TEST-02 self-eliminating; rest untested. Site-ledger split: ${ROOTS_SENTENCE}. ${SIX_TRACE}. $0 cost`} />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
@@ -200,12 +248,15 @@ export default function Tier1Existing() {
           These <strong>11</strong> numbered tests (TEST-01 through TEST-10, plus TEST-25) use publicly
           available datasets — plus TEST-04a, a sub-test of TEST-04 added after TEST-04 was withdrawn, and
           TEST-03s, a substituted protocol. Effective independent tests after failures and withdrawals:
-          approximately 4. Just analysis. This is where Synchronism should be tested first.{' '}
+          approximately 4. Just analysis. This is where Synchronism should be tested first.
+        </p>
+        <details style={{ margin: '-0.5rem 0 1rem', fontSize: '0.78rem', color: 'var(--color-text-muted)' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision notes</summary>
           <em style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>(Count corrected from &ldquo;10&rdquo;
           2026-08-08 — a hand-maintained number that drifted when the Cassini squeeze was added. Flagged by a
           visitor documentation persona, along with the observation that every hand-typed count on this site has
           drifted at least once.)</em>
-        </p>
+        </details>
         <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.3)', borderRadius: '0.375rem', padding: '0.8rem 1rem', fontSize: '0.85rem', marginBottom: '1rem' }}>
           <strong style={{ color: '#ef4444' }}>TEST-ID collision resolved 2026-08-10 — the Cassini/SPARC squeeze
           was renumbered TEST-11 &rarr; TEST-25.</strong>{' '}
@@ -230,7 +281,7 @@ export default function Tier1Existing() {
 
         <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1.5rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
           <h3 style={{ fontSize: '0.9rem', marginBottom: '0.5rem', color: '#ef4444' }}>
-            Two caveats that belong here, not only on the pages that discovered them (added 2026-08-07)
+            Three caveats that belong here, not only on the pages that discovered them (added 2026-08-07)
           </h3>
           <p style={{ margin: '0 0 0.5rem 0' }}>
             <strong>1. TEST-09 and TEST-10 are convention-dependent, and they share one root.</strong> Both are
@@ -245,10 +296,14 @@ export default function Tier1Existing() {
             found, not where the tests are counted.</strong> Counting TEST-09 and TEST-10 as two independent
             refutations overstates the ledger twice over: they are one structural root, and that root presupposes
             one of three live conventions. The honest accounting, reconciled 2026-09-05 and rendered here from the
-            site ledger rather than typed: <strong>{ROOTS_SENTENCE}</strong>. <em>(This sentence read
+            site ledger rather than typed: <strong>{ROOTS_SENTENCE}</strong>. {SIX_TRACE}.
+          </p>
+          <details style={{ margin: '0 0 0.5rem 0', fontSize: '0.78rem', color: 'var(--color-text-muted)' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision notes</summary>
+            <em>(This sentence read
             &ldquo;3&ndash;4, not 6&rdquo; until 2026-09-06, one day after the reconciliation &mdash; the same drift
             it complains about.)</em>
-          </p>
+          </details>
           <p style={{ margin: 0 }}>
             <strong>2. EFE = 0 is missing from this ledger, and that absence is not an oversight &mdash; it has
             no live carrier (reworded 2026-09-05; this read &ldquo;blocked on a theory decision&rdquo; until then, while{' '}
@@ -292,6 +347,43 @@ export default function Tier1Existing() {
           </p>
         </div>
 
+        <div className="card" id="inherited-mond-exposures" style={{ borderLeft: '3px dashed #94a3b8', marginBottom: '1.5rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          <h3 style={{ fontSize: '0.9rem', marginBottom: '0.5rem', color: '#94a3b8' }}>
+            Inherited MOND exposures (acceleration-keyed branch), kept apart from framework-specific kills
+          </h3>
+          <p style={{ margin: '0 0 0.5rem 0' }}>
+            The acceleration-keyed galaxy law that fits SPARC sits at &#x03B3; &asymp; &frac12;, where the compander is
+            Milgrom&apos;s simple &#x03BC;. Whatever that interpolating function fails, this branch fails with it, and a
+            failure shared with MOND says nothing about Synchronism specifically. When the TEST-02 card says the test
+            &ldquo;was never a discriminator&rdquo; on this branch, it means the test cannot <em>separate</em> the
+            branch from MOND. It can still fail both together, and that is how Cassini entered the count.
+          </p>
+          <ul style={{ margin: '0 0 0.5rem 0', paddingLeft: '1.2rem' }}>
+            <li>
+              <strong>Cassini / Solar-System quadrupole, <Link href="#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>:
+              failed, and counted.</strong> It is the &ldquo;1 inherited from MOND&rdquo; root in the 6. Desmond, Hees
+              &amp; Famaey (2024) found the same tension for the RAR-preferred MOND interpolating functions.
+            </li>
+            <li>
+              <strong>Gaia DR3 wide binaries, <Link href="#TEST-02" style={{ color: 'var(--color-accent-blue)' }}>TEST-02</Link>:
+              pending, not counted.</strong> It waits on the Chae (boost) vs Banik et al. (Newtonian) adjudication, and
+              this branch inherits whichever outcome holds for MOND&apos;s simple &#x03BC; (&asymp;1.4&times; boost with the
+              Milky Way external field). A Chae-type boost leaves the branch standing with MOND. A confirmed Newtonian
+              null would be a second inherited failure, shared with that MOND interpolating function. Whether such a
+              failure would enter the count has not been registered.
+            </li>
+          </ul>
+          <p style={{ margin: 0, color: 'var(--color-text-muted)' }}>
+            <strong>The density-keyed branch is a separate case.</strong> There TEST-02 is identically null, not
+            &ldquo;below reach&rdquo;. The Gaia statistic &gamma;<sub>g</sub> is a ratio of wide to close binaries drawn
+            from the same volume. Under the ambient-density keying the galaxy runs use, the boost 1/C is common to both
+            bins and cancels, so &gamma;<sub>g,pred</sub> = 1 exactly, at every &#x03C1;<sub>crit</sub> and every
+            &#x03B3;, floored or bare. No Gaia release can move that. It turns into a live constraint only under
+            enclosed/MRH keying (explorer finding <code>test02-is-not-below-reach-it-is-identically-null.md</code>).
+            Neither branch changes the count, which stays at 6.
+          </p>
+        </div>
+
         <div className="card" style={{ marginBottom: '1.5rem', fontSize: '0.85rem' }}>
           <h3 style={{ fontSize: '0.9rem', marginBottom: '0.5rem' }}>Acronym key (used throughout the test cards below)</h3>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 5fr', gap: '0.25rem 1rem', color: 'var(--color-text-secondary)' }}>
@@ -321,10 +413,7 @@ export default function Tier1Existing() {
             <strong>Withdrawn</strong><span>Operational state: test retracted before execution due to derivation failure</span>
           </div>
           <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
-            Full canonical definitions, one link per label family (<em>the three-way split was added 2026-09-10:
-            this line pointed only at the badge anchor, so a reader looking up &ldquo;Underpowered as registered,&rdquo;
-            &ldquo;Demoted to Tier-2&rdquo; or &ldquo;Closed&rdquo; &mdash; all used on this page, none in the legend
-            above &mdash; landed on a section that provably does not contain them</em>):{' '}
+            Full canonical definitions, one link per label family:{' '}
             <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>validation badges</Link>{' '}
             &middot;{' '}
             <Link href="/honest-assessment#operational-states" style={{ color: 'var(--color-accent-blue)' }}>operational states</Link>{' '}
@@ -335,6 +424,13 @@ export default function Tier1Existing() {
             &ldquo;Failed, Kill Criterion Triggered.&rdquo; <strong>Read them in that order: badge (what the evidence
             says) &rarr; operational state (what happened to the test) &rarr; lifecycle verb (where the test now sits).</strong>
           </p>
+          <details style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', marginTop: '0.3rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision notes</summary>{' '}
+            (<em>the three-way split was added 2026-09-10:
+            this line pointed only at the badge anchor, so a reader looking up &ldquo;Underpowered as registered,&rdquo;
+            &ldquo;Demoted to Tier-2&rdquo; or &ldquo;Closed&rdquo; &mdash; all used on this page, none in the legend
+            above &mdash; landed on a section that provably does not contain them</em>)
+          </details>
         </details>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
@@ -367,6 +463,13 @@ export default function Tier1Existing() {
               <p style={{ color: '#ef4444', fontSize: '0.85rem' }}>
                 <strong>Kill:</strong> {t.kill}
               </p>
+              {t.scorecard && (
+                <div style={{ fontSize: '0.8rem', marginTop: '0.4rem', padding: '0.45rem 0.6rem', border: '1px solid var(--color-dark-border)', borderRadius: '4px', display: 'grid', gridTemplateColumns: 'minmax(8rem, 1fr) 4fr', gap: '0.2rem 0.75rem', color: 'var(--color-text-secondary)' }}>
+                  <strong>Prediction vs data</strong><span>{t.scorecard.separation}</span>
+                  <strong>Registered criterion</strong><span>{t.scorecard.criterion}</span>
+                  <strong>Power</strong><span>{t.scorecard.power}</span>
+                </div>
+              )}
               {t.sameRun && (
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.4rem', padding: '0.4rem 0.6rem', borderLeft: '3px solid #ef4444', background: 'rgba(239,68,68,0.05)', borderRadius: '4px' }}>
                   {t.sameRun.role === 'primary' ? (
@@ -386,6 +489,14 @@ export default function Tier1Existing() {
                 <p style={{ color: '#f59e0b', fontSize: '0.8rem', marginTop: '0.5rem', padding: '0.5rem', background: 'rgba(245,158,11,0.1)', borderRadius: '4px', borderLeft: '3px solid #f59e0b' }}>
                   <strong>⚠ Status note:</strong> {t.alert}
                 </p>
+              )}
+              {t.revisionNotes && t.revisionNotes.length > 0 && (
+                <details style={{ marginTop: '0.4rem', fontSize: '0.78rem', color: 'var(--color-text-muted)' }}>
+                  <summary style={{ cursor: 'pointer' }}>Revision notes ({t.revisionNotes.length})</summary>
+                  <ul style={{ margin: '0.4rem 0 0', paddingLeft: '1.1rem' }}>
+                    {t.revisionNotes.map((n, i) => <li key={i} style={{ marginBottom: '0.3rem' }}>{n}</li>)}
+                  </ul>
+                </details>
               )}
               {t.derivationHref && (
                 <p style={{ marginTop: '0.5rem', fontSize: '0.85rem' }}>
@@ -438,7 +549,7 @@ export default function Tier1Existing() {
             <strong>CORRECTED 2026-07-15 — the &ldquo;MOND-shared&rdquo; class is retired.</strong> Tests 09 and 10 were
             badged MOND-shared until executed (2026-07-14/15): both are discriminators the framework loses, and both
             lose to the same boost ceiling (B ≤ 3.17) quoted in the EFE-closure note above — TEST-09&apos;s kill fired at
-            slope deviation 0.41 &gt; 0.3, and 69% of SPARC galaxies exceed TEST-10&apos;s 68.5% DM-fraction ceiling.
+            slope deviation 0.41 &gt; 0.3 (on the point estimate: ~1σ above threshold under V_flat, robust under V_max; the three numbers are on its card), and 69% of SPARC galaxies exceed TEST-10&apos;s 68.5% DM-fraction ceiling.
             TEST-05&apos;s tie dissolved on adjudication (environment levers differ by ~50×–5,000×; see its row).
             The 2026-05-13 &ldquo;0 currently discriminating tests&rdquo; analysis is thereby inverted for these three:
             they discriminate <em>by structure</em> — the framework&apos;s bounded boost and local coupling variable, its only

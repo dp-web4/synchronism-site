@@ -97,11 +97,12 @@ export default function FirstEncounter() {
       </div>
 
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
-        7 short sections on this one page &mdash; ~90 seconds each. (This page is Step 2 of the 6-step Beginner path;
-        the sections below are numbered separately. Use the progress bar to jump between sections.)
+        7 short parts on this one page, lettered A&ndash;G &mdash; about 10 minutes in all. (The &ldquo;Step 2 of 6&rdquo;
+        above is this page&apos;s place in the Beginner path; the letters are only for the parts inside this page.
+        Use the progress bar to jump between parts.)
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '2rem' }}>
-        <strong>New here?</strong> This 10-minute intro is the fastest path to understanding the framework.
+        <strong>New here?</strong> This ~10-minute intro is the fastest path to understanding the framework.
         Want a more structured journey? <a href="/learning-paths" style={{ color: 'var(--color-accent-blue)' }}>Learning Paths</a> offers
         Beginner / Intermediate / Advanced routes with 6–8 steps each.
       </p>
@@ -112,9 +113,11 @@ export default function FirstEncounter() {
         gap: '0.25rem',
         marginBottom: '2rem',
       }}>
-        {steps.map((_, i) => (
+        {steps.map((part, i) => (
           <button
             key={i}
+            aria-label={`Part ${String.fromCharCode(65 + i)}: ${part.title}`}
+            title={`Part ${String.fromCharCode(65 + i)}: ${part.title}`}
             onClick={() => setStep(i)}
             style={{
               flex: 1,
@@ -138,7 +141,7 @@ export default function FirstEncounter() {
           marginBottom: '1rem',
         }}>
           <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            Section {step + 1} of {steps.length}
+            Part {String.fromCharCode(65 + step)} of A&ndash;{String.fromCharCode(64 + steps.length)}
           </span>
           <span style={{
             padding: '0.25rem 0.75rem',

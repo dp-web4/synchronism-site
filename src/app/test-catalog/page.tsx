@@ -51,7 +51,7 @@ export default function TestCatalog() {
       <Breadcrumbs currentPath="/test-catalog" />
       <PathNav currentPath="/test-catalog" />
       <h1>Test Roadmap</h1>
-      <ValidationBadge status="untested" label="24 Proposed Experiments" />
+      <ValidationBadge status="untested" label="26 tests (24 in the original registry + 2 added later)" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{
@@ -88,7 +88,7 @@ export default function TestCatalog() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#ef4444' }}>Pre-registration status:</strong>{' '}
-          None of these 24 experiments have been formally pre-registered before the data was available.
+          None of the 24 registry experiments (TEST-01 to TEST-24) was formally pre-registered before the data was available.
           This means results cannot be treated as prospective predictions &mdash; they are retrospective
           consistency checks until a kill criterion is publicly registered <em>before</em> the relevant
           dataset is analyzed.{' '}
@@ -186,7 +186,7 @@ export default function TestCatalog() {
             What&apos;s Already Been Analyzed
           </h2>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
-            The &ldquo;0 Completed&rdquo; count below refers to the 24 proposed experiments above — none have been
+            The &ldquo;0 Completed&rdquo; count below refers to the 24 registry experiments above — none have been
             run as formal pre-registered tests. Separately, the framework has been checked against existing
             datasets with these results:
           </p>
@@ -194,7 +194,7 @@ export default function TestCatalog() {
             <li><strong>RAR transition shape</strong> (2807 SPARC points, 2026-05-21): γ=2 compander refuted at ΔBIC=+184; free-γ=0.49=MOND — <span style={{ color: '#ef4444' }}>FAILED (γ=2); collapses to MOND at fitted γ (curve-equivalence only — the field equation is postulated in the archive, not derived, and the version stated there is eliminated a priori — corrected 2026-08-09 from &ldquo;no action, no Lagrangian, no dynamics&rdquo;). Net discriminating galaxy tests vs MOND: 0.</span></li>
             <li><strong>Galaxy rotation</strong> (14,610 galaxies run: 175 SPARC + 14,435 ALFALFA-SDSS after the quality cut; 14,760 before it &mdash; the site quotes the sample actually run): qualitative curve match — <span style={{ color: '#f59e0b' }}>MOND reparametrization</span>, not novel</li>
             <li><strong>TEST-03 TFR scatter</strong>: <span style={{ color: '#f59e0b' }}>NEVER RUN AS REGISTERED</span> — the R&sup2; = 0.14 figure previously reported here was a metric conflation (morphology statistic on N &asymp; 171, not the registered test on N = 14,585; corrected 2026-07-09). The environment claim was later executed 2026-07-14 (research repo): r&sup2; = 0.0001, ~900&times; under the framework&apos;s &gt;20% claim — <span style={{ color: '#ef4444' }}>environment prediction REFUTED by execution</span>. <strong>But not as registered</strong> (declared 2026-07-27): that run used N = 141 SPARC galaxies vs Cosmicflows-4 ambient density, not the registered N = 14,585 ALFALFA-SDSS cluster/field/void classification — different dataset, different proxy, ~100&times; smaller sample. It is designated <strong>TEST-03s</strong> and the registered TEST-03 remains unrun and runnable. Read the census as <strong>3 registered kills + 1 substituted-protocol kill</strong>, not 4 identical ones</li>
-            <li><strong>DESI fσ₈ (TEST-04a)</strong>: <span style={{ color: '#f59e0b' }}>UNDERPOWERED AS REGISTERED</span> <span style={{ color: 'var(--color-text-muted)' }}>(corrected 2026-07-14: the registered fσ₈(z=0.51) &gt; 0.46 criterion was met at only ~1.5σ, short of the demanded &gt;3σ; the widely-quoted 2.4σ disfavor is on σ₈, a GR-conditioned statistic that cannot falsify modified growth; DESI&apos;s own MG analysis gives μ₀ within 1σ of zero. Not counted in the refutation census. DR2 both-outcome pre-commitment registered 2026-07-17 — the program&apos;s first prospective registration)</span></li>
+            <li><strong>DESI fσ₈ (TEST-04a)</strong>: <span style={{ color: '#f59e0b' }}>UNDERPOWERED AS REGISTERED</span> <span style={{ color: 'var(--color-text-muted)' }}>(prediction 0.418 sits 2.1σ from the DESI DR1 LRG1 value 0.550 ± 0.062; the registered fσ₈(z=0.51) &gt; 0.46 threshold is crossed on the point estimate but only by 1.5σ, short of the &gt;3σ it was registered to deliver; that &gt;3σ presumed σ &asymp; 0.014, and DR1 delivers 0.062, 4.4&times; larger; corrected 2026-07-14, restated in this three-number form 2026-09-15; the widely-quoted 2.4σ disfavor is on σ₈, a GR-conditioned statistic that cannot falsify modified growth; DESI&apos;s own MG analysis gives μ₀ within 1σ of zero. Not counted in the refutation census. DR2 both-outcome pre-commitment registered 2026-07-17 — the program&apos;s first prospective registration)</span></li>
             <li><strong>Chemistry boundary consistency</strong> (1,703 phenomena): 89% consistent — <span style={{ color: '#f59e0b' }}>calibration set, not blind test</span></li>
             <li><strong>Superconductivity (η factor)</strong>: reproduces Abrikosov-Gor&apos;kov formula — <span style={{ color: '#f59e0b' }}>reparametrization</span></li>
             <li><strong>Born rule</strong>: reproduces |α|² via coherence conservation — <span style={{ color: '#f59e0b' }}>reparametrization</span> (no deviation predicted)</li>
@@ -292,8 +292,8 @@ export default function TestCatalog() {
         <h2>Status</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginBottom: '0.5rem' }}>
           <div className="card" style={{ textAlign: 'center' }}>
-            <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: '#f59e0b' }}>24</p>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Proposed</p>
+            <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: '#f59e0b' }}>26</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Tests (24 in the original registry + 2 added later)</p>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
             <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: '#ef4444' }}>0</p>
@@ -301,7 +301,7 @@ export default function TestCatalog() {
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
             <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: '#10b981' }}>10</p>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Zero Cost</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Zero Cost (Tier 1 of the registry)</p>
           </div>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1.5rem' }}>

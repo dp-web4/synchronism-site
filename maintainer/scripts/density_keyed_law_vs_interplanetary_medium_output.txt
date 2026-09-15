@@ -1,0 +1,74 @@
+rho_wind(1 AU) for n1 = 3/5/10 cm^-3: 0.086, 0.143, 0.287 Msun/pc^3
+rho_wind(9.54 AU), n1=5: 0.00158  rho_wind(30 AU): 0.000158
+Earth-to-Saturn density span: factor 91.0 ; Mercury-to-Neptune: 6037
+
+FRAMEWORK floored C = f + (1-f) tanh(gamma ln(1+rho/rho_c))
+     f  gamma     rho_c  n1   C(1AU)   C(Sat)         D verdict
+ 0.089  0.489   0.00032   5   0.9954   0.7279     0.367 EXCLUDED
+ 0.089  0.489    0.0039   5   0.9492   0.2388      2.97 EXCLUDED
+ 0.089  0.489    0.0079   5   0.9038   0.1698      4.32 EXCLUDED
+ 0.089  0.489    0.0735   5   0.5305   0.0984      4.39 EXCLUDED
+ 0.089  0.489     0.078   5   0.5171   0.0979      4.28 EXCLUDED
+ 0.089  0.489     0.161   5   0.3638   0.0933       2.9 EXCLUDED
+ 0.089  2.000   0.00032   5   1.0000   0.9985   0.00148 EXCLUDED
+ 0.089  2.000    0.0039   5   1.0000   0.6271     0.595 EXCLUDED
+ 0.089  2.000    0.0079   5   1.0000   0.4065      1.46 EXCLUDED
+ 0.089  2.000    0.0735   5   0.9762   0.1276      6.65 EXCLUDED
+ 0.089  2.000     0.078   5   0.9723   0.1254      6.75 EXCLUDED
+ 0.089  2.000     0.161   5   0.8676   0.1067      7.13 EXCLUDED
+ 0.315  0.489   0.00032   5   0.9965   0.7954     0.253 EXCLUDED
+ 0.315  0.489    0.0039   5   0.9618   0.4276      1.25 EXCLUDED
+ 0.315  0.489    0.0079   5   0.9277   0.3758      1.47 EXCLUDED
+ 0.315  0.489    0.0735   5   0.6469   0.3221      1.01 EXCLUDED
+ 0.315  0.489     0.078   5   0.6369   0.3217      0.98 EXCLUDED
+ 0.315  0.489     0.161   5   0.5216   0.3183     0.639 EXCLUDED
+ 0.315  2.000   0.00032   5   1.0000   0.9989   0.00111 EXCLUDED
+ 0.315  2.000    0.0039   5   1.0000   0.7196      0.39 EXCLUDED
+ 0.315  2.000    0.0079   5   1.0000   0.5537     0.806 EXCLUDED
+ 0.315  2.000    0.0735   5   0.9821   0.3440      1.85 EXCLUDED
+ 0.315  2.000     0.078   5   0.9792   0.3424      1.86 EXCLUDED
+ 0.315  2.000     0.161   5   0.9005   0.3283      1.74 EXCLUDED
+framework grid: 192/192 excluded (D > 1e-06); largest passing D: None
+
+REFRACTED GRAVITY eps = eps0 + (1-eps0)/2 [tanh(Q log(rho/rho_c)) + 1], rho_c = 0.0083
+ base  eps0     Q  n1  eps(1AU)  eps(Sat)         D verdict
+   ln  0.20  0.10   5    0.7110    0.5341     0.331 EXCLUDED
+   ln  0.20  0.50   5    0.9562    0.3276      1.92 EXCLUDED
+   ln  0.20  1.00   5    0.9973    0.2278      3.38 EXCLUDED
+   ln  0.20  2.00   5    1.0000    0.2010      3.97 EXCLUDED
+   ln  0.25  0.10   5    0.7290    0.5633     0.294 EXCLUDED
+   ln  0.25  0.50   5    0.9589    0.3697      1.59 EXCLUDED
+   ln  0.25  1.00   5    0.9975    0.2761      2.61 EXCLUDED
+   ln  0.25  2.00   5    1.0000    0.2510      2.98 EXCLUDED
+log10  0.20  0.10   5    0.6492    0.5712     0.137 EXCLUDED
+log10  0.20  0.50   5    0.8201    0.4616     0.776 EXCLUDED
+log10  0.20  1.00   5    0.9379    0.3528      1.66 EXCLUDED
+log10  0.20  2.00   5    0.9944    0.2423       3.1 EXCLUDED
+log10  0.25  0.10   5    0.6712    0.5980     0.122 EXCLUDED
+log10  0.25  0.50   5    0.8313    0.4953     0.678 EXCLUDED
+log10  0.25  1.00   5    0.9417    0.3933      1.39 EXCLUDED
+log10  0.25  2.00   5    0.9947    0.2896      2.43 EXCLUDED
+RG grid: 48/48 excluded
+
+RG eps0=0.2: largest Q passing D<=1e-6 at rho_c=0.0083: 3.32e-07
+RG eps0=0.25: largest Q passing D<=1e-6 at rho_c=0.0083: 3.68e-07
+
+Coarse-graining: ell must exceed each planet's heliocentric distance to swallow the Sun.
+Below that, the smoothed density is still the wind's (to within O(1) geometry), so D stays O(1).
+  rho_c=0.0079 gamma=0.489 ell=    0.5 AU: max over Mercury..Neptune of C_i/C_j - 1 = 2.11
+  rho_c=0.0079 gamma=0.489 ell=      5 AU: max over Mercury..Neptune of C_i/C_j - 1 = 2.11
+  rho_c=0.0079 gamma=0.489 ell=     10 AU: max over Mercury..Neptune of C_i/C_j - 1 = 2.11
+  rho_c=0.0079 gamma=0.489 ell=     31 AU: max over Mercury..Neptune of C_i/C_j - 1 = 0
+  rho_c=0.0079 gamma=0.489 ell=    100 AU: max over Mercury..Neptune of C_i/C_j - 1 = 0
+  rho_c=0.0079 gamma=0.489 ell=   1000 AU: max over Mercury..Neptune of C_i/C_j - 1 = 0
+  rho_c=0.0079 gamma=0.489 ell= 206265 AU: max over Mercury..Neptune of C_i/C_j - 1 = 0
+  rho_c=0.078  gamma=2.0   ell=    0.5 AU: max over Mercury..Neptune of C_i/C_j - 1 = 2.15
+  rho_c=0.078  gamma=2.0   ell=      5 AU: max over Mercury..Neptune of C_i/C_j - 1 = 2.15
+  rho_c=0.078  gamma=2.0   ell=     10 AU: max over Mercury..Neptune of C_i/C_j - 1 = 2.15
+  rho_c=0.078  gamma=2.0   ell=     31 AU: max over Mercury..Neptune of C_i/C_j - 1 = 0
+  rho_c=0.078  gamma=2.0   ell=    100 AU: max over Mercury..Neptune of C_i/C_j - 1 = 0
+  rho_c=0.078  gamma=2.0   ell=   1000 AU: max over Mercury..Neptune of C_i/C_j - 1 = 0
+  rho_c=0.078  gamma=2.0   ell= 206265 AU: max over Mercury..Neptune of C_i/C_j - 1 = 0
+
+Note: at ell > 30 AU every planet sees the same smoothed density (Sun-dominated), so C is uniform and absorbed
+into GM_sun. Lab G (Cavendish) with the same ell also sees the Sun. The pointwise reading is what fails.

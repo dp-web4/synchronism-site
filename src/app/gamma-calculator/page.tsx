@@ -30,6 +30,11 @@ export default function GammaCalculator() {
         <h1 style={{ margin: 0 }}>&#x03B3; Calculator</h1>
         <ValidationBadge status="audited-negative" label="Formula Audited-Negative — Sign Inverted for All Collective Systems" />
       </div>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginBottom: '0.5rem' }}>
+        Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index grouping and level
+        tag &mdash; a tool kept to show a failure, not a verdict) &middot; Claim status: <strong>Audited-Negative</strong>, the
+        badge above. (Added 2026-09-15: the index and this page showed different words with no key between them.)
+      </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
         <strong>In one sentence: &#x03B3; is the steepness of the coherence S-curve</strong> — how abruptly
         a system switches from &ldquo;independent individuals&rdquo; to &ldquo;acting as one&rdquo; as density
@@ -200,6 +205,11 @@ export default function GammaCalculator() {
           <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
             N<sub>corr</sub>: <span style={{ fontFamily: 'monospace' }}>{ncorr.toLocaleString()}</span>
           </label>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', margin: '0 0 0.5rem' }}>
+            Before you type a number: no protocol exists for getting N<sub>corr</sub> from a system&apos;s physics without
+            first fitting &#x03B3; to its observed behavior (Caveat 3), so a value entered here is a guess you supply, not a
+            measurement the tool can check. The presets are back-fits too.
+          </p>
           {logMode ? (
             <input
               type="range" min="0" max="7" step="0.01"
@@ -270,7 +280,7 @@ export default function GammaCalculator() {
         <div style={{ marginBottom: '1.5rem', padding: '0.75rem 1rem', background: 'rgba(245,158,11,0.07)', borderRadius: '6px', borderLeft: '3px solid #f59e0b' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
             <strong>⚠ Preset caveat:</strong> N<sub>corr</sub> values in the presets are approximate estimates, not measured physical pair counts. The BCS superconductor preset uses N<sub>corr</sub> = 10<sup>7</sup> (mid-range of physical Cooper-pair coherence volumes); physical estimates span 10<sup>6</sup>–10<sup>9</sup> pairs (Al vs. Nb vs. Pb differ significantly). The{' '}
-            <Link href="/phase-boundary-visualizer" style={{ color: '#f59e0b' }}>Phase Boundary Visualizer</Link>{' '}
+            <Link href="/phase-boundary-visualizer" style={{ color: '#f59e0b' }}>Crossover Regime Visualizer</Link>{' '}
             uses different Ncorr estimates for some systems. A scale-invariant counting recipe for operational N<sub>corr</sub> is an open research question — see <em>ncorr-operational-definition-recipe</em> in the explorer topic queue.
           </p>
         </div>

@@ -112,11 +112,19 @@ export default function MeasurementWithoutObservers() {
           <div className="card">
             <h3 style={{ color: 'var(--color-accent-violet)' }}>Synchronism</h3>
             <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              <li>MRH crossing <em>is</em> collapse &mdash; derived from &#x03B3;</li>
+              <li>MRH crossing <em>is</em> collapse &mdash; restated in MRH vocabulary, not derived (the &#x03B3; relation it would rest on is audited-negative)</li>
               <li>Observer is irrelevant; any macroscopic coupling suffices</li>
-              <li>Definite outcomes follow from irreversible MRH crossing</li>
-              <li>Measurement problem dissolves, not solved</li>
+              <li>Definite outcomes are <em>asserted</em> to follow from irreversible MRH crossing &mdash; irreversibility alone is decoherence, which (left) does not give definite outcomes</li>
+              <li>Measurement problem reframed, not solved</li>
             </ul>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.5rem 0 0' }}>
+              The page has to choose, and says so here: if the MRH boundary is <em>interpretive</em>, this column is a
+              vocabulary for decoherence with no differing prediction (the badge above). If it is a <em>physical</em>{' '}
+              boundary whose sharpness depends on N<sub>corr</sub>, it is a collapse-class hypothesis and must face existing
+              bounds on spontaneous-collapse models &mdash; underground X-ray limits on CSL/Di&oacute;si&ndash;Penrose
+              (Donadi et al. 2021) and large-molecule interferometry (Fein et al. 2019, ~25&nbsp;kDa). Neither confrontation
+              has been done. (Row wording corrected 2026-09-15 after a researcher visitor flagged &ldquo;derived from &#x03B3;&rdquo;.)
+            </p>
           </div>
         </div>
 

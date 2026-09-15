@@ -202,15 +202,14 @@ export default function ResearchPhilosophy() {
         <h2>How Research Is Conducted: A2ACW</h2>
         <div className="card" style={{ background: 'rgba(56,189,248,0.06)', border: '1px solid rgba(56,189,248,0.25)', marginBottom: '1rem', padding: '0.75rem 1rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
-            <strong>What A2ACW is:</strong> A falsifiability and self-consistency filter — not a discovery method.
-            It reliably catches internal contradictions, circular arguments, and reparametrizations of known
-            physics (because those errors are in-distribution). It cannot generate out-of-distribution novelty
-            or detect systematic errors shared by the entire training corpus.
-            The <strong>0 of 6 post-audit retention rate</strong> on &ldquo;Validated&rdquo; badges is exactly
-            what this methodology predicts: A2ACW cannot distinguish &ldquo;novel&rdquo; from &ldquo;rederived
-            from the same training corpus.&rdquo; The Challenger agent doesn&apos;t know the literature
-            well enough to recognize a rederivation. This is not a flaw to fix — it is a structural property
-            of the method. Design accordingly.
+            <strong>What A2ACW is:</strong> A self-consistency filter — not a discovery method, and not a calibrated
+            reparametrization detector. It catches internal contradictions and circular arguments. It passed all six
+            claims later demoted as reparametrizations of known physics, so it did <em>not</em> reliably catch those. It
+            cannot generate out-of-distribution novelty or detect systematic errors shared by the entire training corpus.
+            Across all audited claims the count is <strong>0 of 9</strong> (the 6 former &ldquo;Validated&rdquo; badges plus
+            3 swept later). That audit was performed by LLM agents, not an external domain expert (see below), so the line is
+            instrument-uncalibrated. The Challenger did not lack the literature: spot-checks show the load-bearing prior art
+            for all six was retrievable. It had the prior art and did not raise it.
           </p>
         </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -243,31 +242,58 @@ export default function ResearchPhilosophy() {
           <strong>Prior art:</strong> the protocol itself is assembled from existing work — adversarial
           AI pairs from AI Safety via Debate (Irving, Christiano &amp; Amodei 2018), multi-agent role
           structure from CAMEL/MetaGPT, failure modes from the multi-agent-systems literature. The
-          contribution is the controlled null result (how many framework claims survive the adversarial filter — n=6 demotions on one non-independent corpus at 0/6 detection; not sufficient to claim calibrated sensitivity), not
-          the protocol. <strong>Correction (2026-07-27):</strong> this paragraph used to end
-          &ldquo;specificity cannot be measured here — there is no labeled corpus of genuine
-          out-of-distribution discoveries to run through the filter.&rdquo; That was true when written and
-          stale by two months: the control <em>was</em> built and run on <strong>2026-05-22</strong>, using a
-          held-out set of six canonical genuine discoveries (Dirac, Bell, BCS, Higgs, Hawking, Noether)
-          plus three out-of-distribution reparametrizations. The result confirmed the concern in its
-          strongest form rather than leaving it hypothetical: <strong>every one of the six genuine
-          discoveries was false-flagged as a reparametrization</strong>, exactly because an adversarial
-          pair sharing one training distribution keys on &ldquo;has canonical prior art&rdquo; — which all
-          non-trivial physics does. Read the measured numbers on the{' '}
-          <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</a>, which also carries
-          the full prior-art accounting and the confidence interval on the null.
+          contribution would be a measured answer to whether the audit can tell a discovery from a reparametrization, not
+          the protocol. <strong>Control status:</strong> In-distribution canonical arm run 2026-05-22 (6/6 genuine discoveries
+          false-flagged under the literal rule, scored by one LLM that knew every answer); out-of-distribution,
+          post-cutoff, citation-stripped arm never run.
         </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          <strong>What the 2026-05-22 benchmark was:</strong> six canonical discoveries (Dirac, Bell, BCS, Higgs, Hawking,
+          Noether) against three reparametrizations from outside the audited claims (Eddington&apos;s &alpha;&#x207B;&sup1; = 137,
+          tired light, a Tully&ndash;Fisher &ldquo;derivation&rdquo; that assumes MOND). One model wrote the name-omitted
+          restatements and scored them. The literal rule (&ldquo;flag if canonical prior art is named&rdquo;) flagged all nine:
+          sensitivity 3/3, specificity 0/6, Youden&apos;s J = 0. It detects &ldquo;has antecedents&rdquo;, which all non-trivial
+          physics does. A steelmanned rule (&ldquo;reduces to prior art with nothing added&rdquo;) sorted all nine correctly,
+          but only because the scorer&apos;s own novelty judgment did the discriminating. The six discoveries were chosen to
+          trip prior art and sit in every training corpus, so this arm cannot separate &ldquo;the framework had nothing
+          novel&rdquo; from &ldquo;LLM audit maps real novelty onto prior art&rdquo;. Arm-by-arm numbers, the class convention and
+          the intervals are on{' '}
+          <a href="/for-researchers#a2acw-open-question" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</a>; the
+          protocol and prior art are on the <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</a>.
+        </p>
+        <details style={{ margin: '0 0 1rem' }}>
+          <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.85rem' }}>
+            Revision history of this paragraph (verbatim)
+          </summary>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.5rem' }}>
+            <strong>Until 2026-09-15</strong> the prior-art sentence ended: &ldquo;the controlled null result (how many framework
+            claims survive the adversarial filter — n=6 demotions on one non-independent corpus at 0/6 detection; not sufficient
+            to claim calibrated sensitivity)&rdquo;, followed by this correction: <strong>Correction (2026-07-27):</strong> this
+            paragraph used to end &ldquo;specificity cannot be measured here — there is no labeled corpus of genuine
+            out-of-distribution discoveries to run through the filter.&rdquo; That was true when written and stale by two months:
+            the control <em>was</em> built and run on 2026-05-22, using a held-out set of six canonical genuine discoveries
+            (Dirac, Bell, BCS, Higgs, Hawking, Noether) plus three out-of-distribution reparametrizations. [&hellip;] every one
+            of the six genuine discoveries was false-flagged as a reparametrization. <em>Why it was replaced (visitor researcher
+            persona, 2026-09-15):</em> For Researchers said at the same time that the positive control had never been run, and
+            both were half-true. The arm that ran is in-distribution and canonical, not post-cutoff. It was not a run of the
+            A2ACW pair either: one model applied the decision rule to restatements it wrote itself. The record also classes
+            one of the three reparametrizations as in-class with this framework, not out-of-distribution.
+          </p>
+        </details>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           3,308 A2ACW sessions have been run across the research archive. Of these, approximately
-          47 produced internal-consistency survivors &mdash; a 1.4% session yield. <strong>Of those 47,
-          6 have been through a full external domain-expert audit; all 6 resolved as
-          reparametrizations of known physics, internal consistency findings, or null results.
-          Novel-surviving yield on the audited subset: 0 of 6.</strong> The remaining 41 are
-          internally-consistent but have not yet been put in front of an outside physicist &mdash;
-          they are unaudited, not confirmed-negative; treating &ldquo;0 of 47&rdquo; as if all 47
-          were checked overstates what has actually been reviewed (see{' '}
-          <a href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</a>{' '}
-          for the audited-vs-pending breakdown). Human oversight reviews borderline cases and maintains the validation badge taxonomy.
+          47 produced internal-consistency survivors &mdash; a 1.4% session yield. <strong>Across all
+          audited claims, 0 of 9 survived</strong> (the 6 former &ldquo;Validated&rdquo; badges plus the top 3 of the ~47,
+          swept 2026-07-03); each resolved as a reparametrization of known physics, an internal-consistency finding, or a null
+          result. The rest are ~47 candidates not yet individually audited &mdash; an open count, not an outcome (see{' '}
+          <a href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</a>{' '}
+          for the audited-vs-pending breakdown). <strong>Who audited:</strong> LLM agents, not an external human domain
+          expert &mdash; the archive&apos;s autonomous AI research sessions (e.g. Session #581) and this site&apos;s AI explorer
+          and maintainer tracks, often acting on AI visitor-persona reports. No record of an outside physicist reviewing these
+          claims exists in the archive or site logs. So the 0-of-9 line is <strong>instrument-uncalibrated</strong>: it comes
+          from the same instrument class whose calibration is still open (control status above). The executed physics refutations stand
+          on external data and simulation, and do not depend on it. A human (dp) reviews borderline cases and maintains the
+          validation badge taxonomy.
           Every badge is the product of at least one full A2ACW challenge cycle &mdash; which, given the
           0% novel-survivor rate of that cycle on held-out claims, is provenance, not
           assurance: a badge means the claim was challenged, not that the challenge could have
@@ -297,11 +323,11 @@ export default function ResearchPhilosophy() {
             <strong>The symmetric lower-bound problem:</strong> A2ACW also systematically
             <em> over-credits</em> reformulations of known physics as &ldquo;Validated.&rdquo;
             Adversarial AIs in shared distribution badge the same patterns the training corpus rewards.
-            The track record: <strong>6 of 6 &ldquo;Validated&rdquo; badges audited to date have been demoted
-            to Reparametrization on closer review</strong> (galaxy rotation, chemistry r=0.982, Born rule,
-            a₀ = cH₀/2π, decoherence protection &#x0393; = &#x03B3;&sup2;(1&minus;c), Bell-freezing c(d)).
-            The effective novelty rate after expert audit is currently 0 of 6
-            retained. The 1.4% figure is therefore both an upper bound (on in-distribution detection)
+            The track record: <strong>all 6 &ldquo;Validated&rdquo; badges audited to date were demoted
+            on closer review</strong> (galaxy rotation, chemistry r=0.982, Born rule,
+            a₀ = cH₀/2π, decoherence protection &#x0393; = &#x03B3;&sup2;(1&minus;c), Bell-freezing c(d)), and
+            3 more claims swept later also failed: 0 of 9 retained. The reviewers were LLM agents
+            too, so this is one uncalibrated instrument overruling another, not an external expert verdict. The 1.4% figure is therefore both an upper bound (on in-distribution detection)
             and — by track record — an overestimate of actual novelty.
           </p>
         </div>

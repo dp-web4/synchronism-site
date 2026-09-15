@@ -107,8 +107,10 @@ export default function CoherenceExplorer() {
             &#x03B3; &#x2248; 1 is the <em>regime boundary</em> where chemistry and biology happen &mdash;
             not a steepness extremum. (The slope is actually largest at &#x03C1; = 0 on a linear
             &#x03C1; axis; on a log axis, the peak slope grows as &#x03B3; <em>increases</em> &mdash;
-            e.g. peak dC/d(log&#x2081;&#x2080;&#x03C1;) &#x2248; 0.375 at &#x03B3;=2 vs &#x2248; 0.25 at
-            &#x03B3;=0.5 &mdash; consistent with &#x03B3;=2 being the sharpest curve.)
+            e.g. peak dC/d(ln&#x03C1;) &#x2248; 0.375 at &#x03B3;=2 vs exactly 0.25 at &#x03B3;=0.5, i.e.
+            per decade on this chart&apos;s log&#x2081;&#x2080; axis &#x2248; 0.86 vs &#x2248; 0.58 (multiply by ln&nbsp;10
+            &#x2248; 2.303) &mdash; consistent with &#x03B3;=2 being the sharpest curve. Corrected 2026-09-15: these
+            were per-e-fold values labelled per decade.)
             The slider goes down to &#x03B3; = 0.01: on the canonical ladder BEC sits near
             &#x03B3; &#x2248; 2&#xD7;10<sup>&#x2212;3</sup> (N<sub>corr</sub> = 10<sup>6</sup>) and BCS
             superconductors near &#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>
@@ -192,7 +194,8 @@ export default function CoherenceExplorer() {
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
               {[
                 { g: 0.49, label: 'γ = 0.49 — SPARC fit on acceleration (= MOND there; illustrative on this density axis)' },
-                { g: 2.0, label: 'γ = 2 — framework value (refuted)' },
+                { g: 0.5, label: 'γ = ½ exactly — algebraically MOND’s simple μ (see note below)' },
+                { g: 2.0, label: 'γ = 2 — the framework’s registered value (refuted on SPARC)' },
               ].map(p => (
                 <button key={p.g} type="button" onClick={() => setGamma(p.g)}
                   style={{ fontSize: '0.72rem', padding: '0.2rem 0.5rem', borderRadius: '0.3rem', cursor: 'pointer',
@@ -203,6 +206,11 @@ export default function CoherenceExplorer() {
                 </button>
               ))}
             </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.72rem', marginTop: '0.3rem' }}>
+              Presets are values of &#x03B3; the site discusses, not physical systems: the density axis has no units, so no
+              preset puts you &ldquo;at&rdquo; a galaxy, a metal, or a brain. For named systems via N<sub>corr</sub>, use the{' '}
+              <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</Link>.
+            </p>
             <p style={{ color: regimeColor, fontSize: '0.8rem', marginTop: '0.25rem' }}>{regime}</p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               Higher &#x03B3; = sharper, more abrupt snap to coherent. Lower &#x03B3; = gentler slope. Depends on N<sub>corr</sub> (correlated particle count): &#x03B3; = 2/&#x221A;N<sub>corr</sub>.

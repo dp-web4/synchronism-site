@@ -94,7 +94,8 @@ export default function CoreIdea() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>&#x03B3;</div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-              2/&#x221A;N<sub>corr</sub>: <strong>transition sharpness</strong>
+              2/&#x221A;N<sub>corr</sub>: <strong>transition sharpness</strong>{' '}
+              <span style={{ display: 'block', fontSize: '0.95em' }}>(N<sub>corr</sub> = how many particles move together as one unit)</span>
               <span style={{ color: 'var(--color-text-muted)', display: 'block', marginTop: '0.35rem', fontSize: '0.95em' }}>
                 ⚠ This card used to read &ldquo;coupling strength&rdquo; (corrected 2026-07-27). That is
                 the wrong <em>kind</em> of quantity: the Hill identity proved below makes &#x03B3; a
@@ -152,9 +153,19 @@ export default function CoreIdea() {
         <p>
           The 1/&#x221A;N<sub>corr</sub> dependence resembles central-limit-theorem scaling
           (fluctuations ~ 1/&#x221A;N), which is generic statistics for correlated ensembles.
-          N<sub>corr</sub> (number of correlated particle units) is the physically measurable
-          quantity. The factor of 2 is motivated by phase-space arguments (6D contracted to 3
+          N<sub>corr</sub> (how many particles move together as one unit) was meant to be the
+          physically measurable input. The factor of 2 is motivated by phase-space arguments (6D contracted to 3
           effective) but should be understood as a motivated ansatz rather than a rigorous derivation.
+        </p>
+        <p>
+          <strong>So what sets &#x03B3; physically?</strong> Honestly: nothing yet. No protocol exists to
+          measure N<sub>corr</sub> in any system independently of fitting &#x03B3; to the same data &mdash;
+          N<sub>corr</sub> is back-solved from the fitted &#x03B3;, not counted &mdash; so the relation
+          predicts nothing on its own, and where it is applied it points the wrong way for collective
+          systems. It is badged <strong>audited-negative</strong>; see the{' '}
+          <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</Link>.
+          <em style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}> (Until 2026-09-15 this paragraph
+          called N<sub>corr</sub> &ldquo;the physically measurable quantity,&rdquo; contradicting the calculator.)</em>
         </p>
         <p><Link href="/gamma-parameter" style={{ color: 'var(--color-accent-blue)' }}>Why 2/&#x221A;N<sub>corr</sub>? (motivation, not derivation) &rarr;</Link></p>
 
@@ -237,11 +248,13 @@ export default function CoreIdea() {
                   1,703 phenomena cluster here at 89% boundary-consistency rate.
                 </p>
                 <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-                  Pending null model: density-monotonic targets produce r &gt; 0.95 from trivial polynomial fits.
-                  Chemistry correlations may reflect monotonic data structure, not framework specificity.
+                  Null model run (2026-05-10): a plain 2-parameter polynomial in atomic number matches these
+                  correlations (|&#x0394;r| &#x2264; 0.07) and sometimes beats them, so they reflect density-monotonic
+                  chemistry, not anything specific to this framework (null-class). (This card said &ldquo;pending
+                  null model&rdquo; until 2026-09-15 &mdash; stale; Honest Assessment has carried the result since May.)
                 </p>
               </div>
-              <ValidationBadge status="reparametrization" label="Reparametrization — null model pending" />
+              <ValidationBadge status="reparametrization" label="Reparametrization — Null-Class (null model run 2026-05-10)" />
             </div>
           </div>
 

@@ -37,7 +37,7 @@ export const REFUTATIONS_ON_EXTERNAL_DATA = 5;
  */
 export const ROOTS_FRAMEWORK_SPECIFIC = 2;
 export const ROOTS_SENTENCE =
-  '6 executed refutations from 5 roots: 2 framework-specific (the boost ceiling, behind both TEST-09 and TEST-10; the γ=2 pin) + 1 refuted registration (environment amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell\'s theorem; two nonlocal constructions null; the substrate class untested)';
+  '6 executed refutations from 5 roots: 2 framework-specific (the boost ceiling, behind both TEST-09 and TEST-10; the γ=2 pin — RAR transition shape, unnumbered, closed 2026-05-21) + 1 refuted registration (environment amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell\'s theorem; two nonlocal constructions null; the substrate class untested)';
 /** Sentence rewritten 2026-09-14: the old form ("6 executed refutations; 2 … roots + 1 + 1 + 1") summed
  *  to 5 and a graduate-physics persona read it as an arithmetic error. */
 

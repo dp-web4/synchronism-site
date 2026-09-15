@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
+import ValidationBadge from '@/components/ValidationBadge';
 
 const galaxies = [
   {
@@ -158,6 +159,16 @@ export default function GalaxyPlotter() {
     <>
       <Breadcrumbs currentPath="/galaxy-plotter" />
       <h1>Galaxy Curve Plotter</h1>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.35rem' }}>
+        <ValidationBadge status="failed" label="published equation, γ = 2 at ρ_crit = 0.029·V_flat²" />
+        <ValidationBadge status="reparametrization" label="the stand-in that matched MOND" />
+      </div>
+      {/* 2026-09-15: visitor saw "Reparametrization" here and "Model Explainer" on the tools index and could not tell which applied */}
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginTop: '0.35rem' }}>
+        Tool type: <strong>Model Explainer</strong> (the Interactive Tools index grouping &mdash; shows how the equation
+        works, not a verdict) &middot; Claim status: the two badges above. The label says what kind of tool this is;
+        the badges say how its claims stand.
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{ background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
@@ -211,11 +222,16 @@ export default function GalaxyPlotter() {
           from its gravitational pull (whether it&apos;s real stuff or a placeholder for missing
           physics is exactly what&apos;s being debated). MOND
           (Modified Newtonian Dynamics) explains the same curves by changing the gravity law.
-          Synchronism offers a third interpretation: the coherence function C(ρ) mimics the extra
-          gravity via density-dependent coupling. All three fit the observations; none is confirmed
-          over the others by rotation curve data alone &mdash; though the fits are not on equal
-          footing: MOND uses one global constant (a&#x2080;) for every galaxy, while the violet
-          Synchronism curve refits &#x03C1;<sub>crit</sub> per galaxy.
+          Synchronism proposed a third interpretation: the coherence function C(ρ) would mimic the extra
+          gravity via density-dependent coupling. Only the first two fit the observations: dark-matter
+          halos and MOND both reproduce these curves (MOND with one global constant, a&#x2080;, for every
+          galaxy). The framework&apos;s own equation, as published, does not &mdash; the violet curve below
+          stays on the visible-matter line. What matched MOND was either the hand-drawn amber stand-in or,
+          in the archive&apos;s SPARC work, a fit that re-tunes &#x03C1;<sub>crit</sub> for each galaxy
+          (one extra free parameter per galaxy). The violet curve is not a fit of any kind: nothing in it
+          is adjusted to the dots. (Corrected 2026-09-15: this paragraph said &ldquo;all three fit the
+          observations&rdquo; and described the violet curve as refitting &#x03C1;<sub>crit</sub>; the
+          chart beside it shows neither.)
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '-0.5rem' }}>
           Select a SPARC galaxy. The plot shows five things: what visible matter predicts (dashed gray),
@@ -226,9 +242,12 @@ export default function GalaxyPlotter() {
           <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}
           labels this a <em>reparametrization</em> &mdash; plain words: the same curve wearing a
           different costume; fitting a known curve isn&apos;t discovering anything new.{' '}
-          <strong>Plain verdict for casual readers:</strong> these curves look great but don&apos;t prove the idea &mdash;
-          all three models (Synchronism, MOND, and NFW dark-matter halo) fit galaxy rotation curves about equally well.
-          What matters is whether any makes a <em>different, testable prediction</em>, and the ensemble test
+          <strong>Plain verdict for casual readers:</strong> MOND and dark-matter (NFW) halos (not plotted here) both
+          fit these curves; the framework&apos;s own equation, as published, does not (solid violet); only the hand-tuned
+          stand-in (dotted amber) does, and it was drawn to. (Corrected 2026-09-15: this verdict used to say all
+          three models fit about equally well, which the chart beside it contradicts.) Fitting alone would
+          not settle much anyway &mdash; what matters is whether a model makes a <em>different, testable
+          prediction</em>, and the ensemble test
           (SPARC RAR, ΔBIC=+184 — a fit in <em>acceleration</em>, MOND&apos;s own variable, not in the density this
           plotter uses; see <a href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a> for which
           test kills which version) shows Synchronism collapses to MOND when γ is freed — curve-equivalence
@@ -277,7 +296,10 @@ export default function GalaxyPlotter() {
         </div>
 
         <div style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.35)', borderRadius: '0.375rem', padding: '0.75rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem' }}>
-          <strong style={{ color: '#ef4444' }}>Why the stand-in misled (kept for the record):</strong> The dotted violet stand-in uses the same parametrization (&#x03B3;=2) that the RAR ensemble test <strong>rejected at ΔBIC=+184</strong>. It still overlaps MOND per-galaxy because &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; is <em>refit to each galaxy&apos;s own flat velocity</em> — that degree of freedom absorbs the shape mismatch one galaxy at a time. The ensemble RAR (all 2,807 SPARC data points — 175 galaxies — plotted together in acceleration space) is where &#x03B3;=2 dies: free-&#x03B3; converges to &#x03B3;&#x2248;0.49 with RMS identical to McGaugh-MOND to four digits. Per-galaxy shape recovery is not the same test as ensemble shape rejection.{' '}
+          <strong style={{ color: '#ef4444' }}>Why the stand-in misled (kept for the record):</strong>{' '}
+          <em>(Precision 2026-09-15: the drawn stand-in, now dotted amber, contains no &#x03B3; and no &#x03C1;<sub>crit</sub> &mdash;
+          see the formula box. The argument below is about the per-galaxy SPARC fits that stand-in was imitating.)</em>{' '}
+          Those per-galaxy fits use the same parametrization (&#x03B3;=2) that the RAR ensemble test <strong>rejected at ΔBIC=+184</strong>. They still overlap MOND per-galaxy because &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; is <em>refit to each galaxy&apos;s own flat velocity</em> — that degree of freedom absorbs the shape mismatch one galaxy at a time. The ensemble RAR (all 2,807 SPARC data points — 175 galaxies — plotted together in acceleration space) is where &#x03B3;=2 dies: free-&#x03B3; converges to &#x03B3;&#x2248;0.49 with RMS identical to McGaugh-MOND to four digits. Per-galaxy shape recovery is not the same test as ensemble shape rejection.{' '}
           <strong>Cross-system failure (locality no-go):</strong> a single global ρ<sub>crit</sub>(V<sub>flat</sub>) — no per-galaxy refit — exposes a ~1.7 dex offset between the local volumetric density ρ(r) and the observed g<sub>bar</sub> that MOND tracks. That cross-system gap is the reason local-density frameworks fail where MOND succeeds; the per-galaxy overlap you see here hides it by refitting ρ<sub>crit</sub> independently for each galaxy.
         </div>
         <div style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem' }}>
@@ -412,13 +434,33 @@ export default function GalaxyPlotter() {
             </span>
           </div>
           <div style={{ background: 'rgba(245,158,11,0.08)', borderRadius: '4px', padding: '0.4rem 0.6rem', marginBottom: '0.75rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
-            <strong style={{ color: '#f59e0b' }}>V<sub>flat</sub> = {galaxy.vflat} km/s (calibrated input)</strong>
-            {' '}— taken from SPARC/MOND fits for this galaxy. The violet curve is fitted to this value,
-            not predicted from first principles. Any MOND-like shape that uses V<sub>flat</sub> as input
-            will recover the flat portion of the curve by construction. See{' '}
+            <strong style={{ color: '#f59e0b' }}>V<sub>flat</sub> = {galaxy.vflat} km/s (observed input)</strong>
+            {' '}&mdash; taken from SPARC for this galaxy and fed <em>into</em> the curves, not predicted by them.
+            It enters the violet curve twice: through &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;
+            (here {(0.029 * galaxy.vflat * galaxy.vflat).toFixed(0)} M<sub>&#x2609;</sub>/pc&sup3;) and through the
+            V<sub>flat</sub>&middot;C boost term. <strong>A curve built from V<sub>flat</sub> cannot be a prediction of
+            V<sub>flat</sub>.</strong> Units: the code compares &#x03C1;<sub>crit</sub> with a disk density in
+            M<sub>&#x2609;</sub>/pc&sup3; with V<sub>flat</sub> in km/s, so the 0.029 carries units of
+            M<sub>&#x2609;</sub>&nbsp;pc<sup>&minus;3</sup>&nbsp;(km/s)<sup>&minus;2</sup>; the archive ledger states units
+            only for the V<sup>0.5</sup> law that coefficient was originally derived under, not for the V&sup2; law drawn
+            here. The green MOND curve uses V<sub>flat</sub> too (BTFR mass 47&middot;V<sub>flat</sub><sup>4</sup>), so its
+            flat outer level is also largely set by construction: deep-MOND V<sup>4</sup> = G&middot;M<sub>b</sub>&middot;a&#x2080;
+            returns 0.93&middot;V<sub>flat</sub> for every galaxy here. What the green curve adds is the <em>shape</em> on
+            the way up, with no per-galaxy knob. See{' '}
             <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>.
           </div>
 
+          <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', margin: '0 0 0.6rem' }}>
+            <strong style={{ color: '#a78bfa' }}>Which wiring this chart draws (2026-09-15):</strong> the violet curve
+            couples C <em>in quadrature</em>, v&sup2; = v<sub>b</sub>&sup2; + [V<sub>flat</sub>&middot;C]&sup2;, so C &rarr; 0
+            means no boost. The ledger&apos;s kills (<Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>TEST-09/TEST-10</Link>)
+            use the <em>division</em> wiring g<sub>obs</sub> = g<sub>bar</sub>/C with C floored at &#x03A9;<sub>m</sub>, whose
+            boost can never exceed 1/&#x03A9;<sub>m</sub> &asymp; 3.17&times;; without the floor, this galaxy&apos;s max C would
+            give a boost of 1/C &asymp; {maxC > 0 ? (1 / maxC).toFixed(0) : '∞'}&times;. For DDO&nbsp;154 (needs &asymp; 10&times;)
+            that is quadrature &asymp; 1&times; (under), floored division &asymp; 3&times; (under), unfloored division &asymp; 1000&times;
+            (over) &mdash; every wiring fails; the fork box above has the detail. Radius is in kpc (kiloparsecs):
+            1 kpc = 1,000 parsecs &asymp; 3,260 light-years.
+          </p>
           <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', height: 'auto', display: 'block' }}>
             {/* Grid */}
             {[0, 0.25, 0.5, 0.75, 1.0].map(frac => {
@@ -435,7 +477,7 @@ export default function GalaxyPlotter() {
             {/* Axes */}
             <line x1={pad.left} y1={pad.top} x2={pad.left} y2={pad.top + plotH} stroke="#6b7280" />
             <line x1={pad.left} y1={pad.top + plotH} x2={pad.left + plotW} y2={pad.top + plotH} stroke="#6b7280" />
-            <text x={pad.left + plotW / 2} y={svgH - 8} textAnchor="middle" fill="#9ca3af" fontSize="11">Radius (kpc)</text>
+            <text x={pad.left + plotW / 2} y={svgH - 8} textAnchor="middle" fill="#9ca3af" fontSize="11">Radius (kpc; 1 kpc ≈ 3,260 light-years)</text>
             <text x={14} y={pad.top + plotH / 2} textAnchor="middle" fill="#9ca3af" fontSize="11" transform={`rotate(-90,14,${pad.top + plotH / 2})`}>V (km/s)</text>
 
             {/* Newtonian curve (dashed gray) */}

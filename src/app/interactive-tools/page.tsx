@@ -40,9 +40,9 @@ const coreTools = [
     epistemic: 'core' as EpistemicStatus,
   },
   {
-    title: 'Phase Boundary Visualizer',
+    title: 'Crossover Regime Visualizer',
     href: '/phase-boundary-visualizer',
-    desc: 'Drag the γ slider and catch a refuted formula being wrong at every stop — the tool now teaches the audited sign inversion as its lesson (real BCS/BEC transitions are among nature\'s sharpest; the formula files them at the flat end). Each regime card carries a live reality-check line. Note: the axis here is γ, not coherence C.',
+    desc: '(Formerly "Phase Boundary Visualizer" — C(ρ) has no phase transition, only a smooth crossover.) Drag the γ slider and catch a refuted formula being wrong at every stop — the tool now teaches the audited sign inversion as its lesson (real BCS/BEC transitions are among nature\'s sharpest; the formula files them at the flat end). Each regime card carries a live reality-check line. Note: the axis here is γ, not coherence C.',
     tags: ['Artifact Lesson'],
     epistemic: 'core' as EpistemicStatus,
   },
@@ -56,7 +56,7 @@ const coreTools = [
   {
     title: 'Chemistry Correlation Explorer',
     href: '/chemistry-correlation-explorer',
-    desc: 'See how γ correlates with chemical properties across 1,703 phenomena. High r values (0.98+) reflect density-monotonicity, not Synchronism-specific physics — the tool shows the null model (2-parameter polynomial in Z) alongside the data, and the null matches or beats it.',
+    desc: 'See how γ correlates with chemical properties across 1,703 phenomena. High r values (0.98+) reflect density-monotonicity, not Synchronism-specific physics — the page states the null-model result (a 2-parameter polynomial in Z matches every r to within 0.07, sometimes better) at the head of the table; it has no per-row null column, and how γ was assigned per material is undocumented.',
     tags: ['Advanced'],
     epistemic: 'reparametrization' as EpistemicStatus,
   },
@@ -150,8 +150,8 @@ export default function InteractiveTools() {
 
       <div style={{ marginTop: '2rem', padding: '1rem', borderRadius: '8px', background: 'rgba(56, 189, 248, 0.05)', border: '1px solid rgba(56, 189, 248, 0.15)', marginBottom: '2rem' }}>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: 0 }}>
-          <strong>Where to start:</strong> Coherence Explorer (Model Explainer) → Galaxy Plotter (Reparametrization) → Honest Assessment.
-          <span style={{ color: 'var(--color-text-muted)' }}> &ldquo;Model Explainer&rdquo; is a content grouping (tools that show how the equation works), not a validation badge — no tool here certifies the model as correct; see the badge definitions on the Honest Assessment.</span>
+          <strong>Where to start:</strong> Coherence Explorer (Model Explainer) → Galaxy Plotter (Model Explainer) → Honest Assessment.
+          <span style={{ color: 'var(--color-text-muted)' }}> &ldquo;Model Explainer&rdquo; is a content grouping (tools that show how the equation works), not a validation badge — no tool here certifies the model as correct; see the badge definitions on the Honest Assessment. Each tool page repeats its card label next to its own claim badges, with a one-line &ldquo;tool type / claim status&rdquo; caption (the Galaxy Plotter, for example, is a Model Explainer whose drawn equation is badged Failed and whose MOND-matching stand-in is badged Reparametrization).</span>
           The six tools above are grounded in the framework&apos;s core theory or known reparametrizations.
         </p>
       </div>

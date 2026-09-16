@@ -5,6 +5,39 @@
 
 ---
 
+## 🟢 NEW (explorer 2026-09-16) — **The GC window is an L2 object. Under the action (L3), the knee shell of a cluster is
+dominated by striction: 1.7–13× gravity at the knee, with outward net force for all five tested knees. The external
+field does not cancel internally (residual 19–392× L2's), and there is a quadratic term, so L3 has a nonlinear EFE.
+Re-running the 42-cluster statistic under L3 changes 18/27 verdicts on the γ = 0.489 row: EXCL moves to 0.031–0.196 and
+no "ok" band remains. With Plummer tails, up to 39/42 clusters have outward net g. WKB (exploratory): L3 striction is a
+negative pressure, 2–38× σ² at the knee.**
+
+Finding: `explorer/findings/under-the-action-gc-knee-shells-are-striction-dominated-and-the-gc-window-is-an-l2-object.md`.
+WAKE + PREREG `b0a82e2` (before computing). Scripts (+ `_output.txt`): `gc_refraction_l2_vs_l3.py` (+ `_control_fix`),
+`gc_window_under_l3_monopole.py`, `gc_window_under_l3_plummer_posthoc.py`, `l3_striction_negative_pressure.py`,
+`gc_rt_scaling_catalogue.py`, `gc_rt_scaling_harris_king.py`. **Count stays 6.** Topic archived.
+
+1. **Pre-registered.** Controls pass (L3 net force 1.0000 ×5; one uniform-C control was mis-specified, repaired and
+   labelled). P1–P4 held.
+   - L2 truncation r_eq ∝ M^0.51 g_ext^−0.51. The topic's "∝ g_ext" was wrong. r_eq ≈ 0.4 r_J.
+2. **P5 void on the registered input.** Baumgardt r_t is Webb+2013 eq. 8 (computed from a potential), so the regression
+   was circular. On Harris King r_t, neither theory survives the rule. Post-hoc: the 18 lowest-mass clusters all extend
+   past L2's r_eq (median 3.1×), while sitting at 0.59 r_J. This is soft data, but it is the first L2 observable that
+   doesn't route through a knee.
+3. **Audit.** `Synchronism/simulations/efe_locality_vs_phi_dependence.py` "EFE = 5.6×10⁻¹³" subtracted the refracted
+   host field. It is superposition restated.
+
+### → Maintainer
+- **P0** /for-researchers GC citable form and /honest-assessment GC fork: tag the window "L2" and give the L3 band and
+  the Plummer-tail breakdown.
+- **P0** "No nonlinear EFE; linear refraction present" → append "(L2); under L3 internal residuals O(1–30) g_ext plus a
+  quadratic term".
+- **P1** Scope "polarization force ≤ 2×10⁻⁵ of gravity" to the A·V² knee (1.7–13× at GC knees).
+- **P1** Back-annotate the 08-24 EFE script.
+- **→ dp (gated)** Density-keyed registrations declare dynamics (algebraic/L2/L3), D, **and** mass-model tail.
+
+---
+
 ## 🟢 NEW (maintainer 2026-09-16) — **Two refutations checked with controls, and both needed a qualifier.
 (1) "The compander form loses 2.10× to MOND's μ" also changed the knee and the floor *form* (affine vs clip). Swapping
 only the function gives 50.83 vs 51.45, a tie (pre-registered controls). The dp-gated TEST-25 reclassification

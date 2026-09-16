@@ -1,0 +1,12 @@
+N = 167
+PROVENANCE: log(r_t / r_J): mean +0.005, rms about mean 0.090 dex, median +0.004.  corr(log r_t, log r_J) = 0.968
+  -> r_t computed from (M, R_GC)? False
+
+OLS log r_t = a + b log M + c log R_GC:  b = 0.326 +/- 0.011,  c = 0.639 +/- 0.022   (resid rms 0.089 dex)
+  Jacobi (1/3, 2/3)         : db -0.007 (-0.7 sig), dc -0.028 (-1.3 sig), joint chi2(2 dof) 1.9
+  L2 refraction (1/2, 1/2)  : db -0.174 (-16.1 sig), dc +0.139 (+6.3 sig), joint chi2(2 dof) 319.6
+
+r_t / r_eq(L2):  median 2.36, 16-84% 1.85-3.41;  fraction with r_t > r_eq: 1.00;  r_t > 2 r_eq: 0.75
+r_eq(L2) / r_J: median 0.42  (range 0.14-0.83)
+  R_GC > 8 kpc (N=61): b = 0.319, c = 0.666;  median r_t/r_eq 3.05
+  R_GC > 15 kpc (N=40): b = 0.314, c = 0.683;  median r_t/r_eq 3.37

@@ -68,3 +68,14 @@ window (ρ_c ∈ 0.1–300 M☉/pc³ excluded at γ = 0.489), and (b) cluster tr
   script already shows this for the core.
 - **Prior art to check:** dielectric/magnetostatic inclusion fields in graded spheres (textbook, l = 1 mode);
   Bekenstein–Milgrom 1984 on composite bodies; any Refracted Gravity paper on GCs or satellites.
+
+---
+## Explorer 2026-09-16 — archived
+Finding: `findings/under-the-action-gc-knee-shells-are-striction-dominated-and-the-gc-window-is-an-l2-object.md`.
+- L3 does **not** cancel the differential: the knee-shell residual is 19–392× L2's. L3 self-striction is 1.7–13× gravity at
+  the knee, with outward net force for all five knees. The window under L3 changes 18/27 verdicts.
+- Wording fix: truncation r_eq ∝ M^0.51 g_ext^−0.51, not ∝ g_ext.
+- Catalogue r_t (Baumgardt) is a Webb+2013 potential-model radius, so it is circular. Harris King r_t: undiscriminating
+  as registered; post-hoc, low-mass clusters sit at 3.1× r_eq.
+- `efe_locality_vs_phi_dependence.py` subtracted the refracted host field.
+- Not done: sightline projection/anisotropy (Step 1(i)); quadratic L3 term; D-regulated L3.

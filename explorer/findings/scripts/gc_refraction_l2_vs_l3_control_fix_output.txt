@@ -1,0 +1,6 @@
+rho_c 1e-20: C range 1.000000..1.000000  max res L2 5.21e-09  L3 1.76e-02  max|gL3/gs-1| 1.12e-02  L3 mean 1.0000
+rho_c 1e-9: knee radius 846 pc -- inside the 3000 pc grid, so the registered control was mis-specified
+  rho_c 1e-20, r <=   100 pc: max res L3 7.80e-09  max|gL3/gs-1| 7.51e-13
+  rho_c 1e-20, r <=   300 pc: max res L3 7.80e-09  max|gL3/gs-1| 1.44e-09
+  rho_c 1e-20, r <=  1000 pc: max res L3 9.10e-06  max|gL3/gs-1| 5.79e-06
+  rho_c 1e-20, r <=  3000 pc: max res L3 1.76e-02  max|gL3/gs-1| 1.12e-02

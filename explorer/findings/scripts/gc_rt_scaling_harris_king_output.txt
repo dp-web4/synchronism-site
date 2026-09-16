@@ -1,0 +1,20 @@
+N = 109 (non-core-collapsed, matched to Baumgardt)
+King r_t vs Webb/Baumgardt r_t: median ratio 0.51, rms log 0.27 dex
+King r_t vs simple r_J: mean log -0.314, rms 0.266 dex
+
+OLS log r_t = a + b log M + c log R_GC: b = 0.160 +/- 0.038, c = 0.434 +/- 0.045  (resid rms 0.230 dex)
+  Jacobi (1/3, 2/3)         : db -0.173 (-4.5 sig), dc -0.232 (-5.2 sig), joint chi2(2) 41.0
+  L2 refraction (1/2, 1/2)  : db -0.340 (-8.9 sig), dc -0.066 (-1.5 sig), joint chi2(2) 78.6
+
+King r_t / r_eq(L2): median 1.24, 16-84% 0.60-2.84; r_t > r_eq: 0.62; r_t > 2 r_eq: 0.24
+King r_t / r_J(simple): median 0.50
+  R_GC > 8 kpc (N=49): b = 0.162, c = 0.551; median r_t/r_eq 1.34
+  R_GC > 15 kpc (N=32): b = 0.184, c = 0.560; median r_t/r_eq 1.69
+
+POST-HOC by mass bin:  median King r_t / r_J(simple)   and   r_t / r_eq(L2)
+  M    0e+00-   3e+04 (N= 18):  r_t/r_J 0.59   r_t/r_eq 3.12   frac r_t > r_eq 1.00
+  M    3e+04-   1e+05 (N= 29):  r_t/r_J 0.63   r_t/r_eq 1.63   frac r_t > r_eq 0.86
+  M    1e+05-   3e+05 (N= 37):  r_t/r_J 0.47   r_t/r_eq 1.00   frac r_t > r_eq 0.51
+  M    3e+05-   1e+07 (N= 25):  r_t/r_J 0.40   r_t/r_eq 0.75   frac r_t > r_eq 0.24
+  d log(r_t/r_J)/d log M = -0.124  (Jacobi-filling predicts 0; L2 truncation predicts +1/6)
+  d log(r_t/r_eq)/d log M = -0.326 (L2-filling predicts 0; Jacobi truncation predicts -1/6)

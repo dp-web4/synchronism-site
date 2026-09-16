@@ -125,7 +125,7 @@ export default function ForResearchers() {
           <em>this framework&apos;s</em> switch (&gamma; = 0.489 or 2) at RG&apos;s floor, so they are not a test of Refracted
           Gravity. RG at its <em>own</em> published parameters was run with the same solver on 2026-08-28, without refitting:
           &chi;&sup2;/N = 188 and 240 for the two DiskMass parameter sets (between MOND&apos;s 21 and Newton&apos;s 465) and
-          716&ndash;1,252 for the Cesare et al. 2020 E0-floor sets, beating MOND in 10&ndash;17% of galaxies. Still open: a
+          716&ndash;1,252 for the elliptical-galaxy (E0) sets of Cesare et al. 2022, beating MOND in 10&ndash;17% of galaxies. Still open: a
           SPARC <em>refit</em> of RG&apos;s three parameters (its steepness exponent is written with ln in some papers and log
           in others, a 2.3&times; ambiguity), and the striction force a variational completion of the field equation adds,
           which neither RG as published nor these runs include. <em>Prior art worth knowing before anyone re-runs this:</em> Cesare et al. 2020
@@ -369,7 +369,8 @@ export default function ForResearchers() {
               &#x2272; 0.019&nbsp;&#x03B2;<sub>J</sub>&sup2;
             </div>
             Since V<sub>c</sub> &#x2272; V<sub>flat</sub> for any bound system, x is bounded at ~0.02 in
-            <em> every</em> sector at <em>every</em> &#x2113; &mdash; the knee is out of reach by ~40&times; with no
+            <em> every</em> sector at <em>every</em> &#x2113; <em>for the knee keyed on the host&apos;s V<sub>flat</sub> (ρ<sub>crit</sub> = A·V²)</em>
+            &mdash; the knee is out of reach by ~40&times; with no
             fitted parameter. Verified on all five plotter disks (max over &#x2113;:
             1.7&times;10<sup>&minus;3</sup>&ndash;1.1&times;10<sup>&minus;2</sup>) and to four digits at Cassini and
             wide-binary scales; kernel-robust (Gaussian coefficient 0.00505, ceiling 3.8&times; lower still).
@@ -377,6 +378,10 @@ export default function ForResearchers() {
             velocity definition, and no contested external measurement</strong> &mdash; every other one does.
             Sole escape: &#x03B2;<sub>J</sub> = 4.5 lifts x to 0.385, at 17&#x03C3; from the framework&apos;s own
             calibration &#x03B2;<sub>J</sub> = 1.1 &plusmn; 0.2. Does <em>not</em> add to the refutation count.
+            <em>Scope (added 2026-09-16, visitor researcher persona):</em> the bound is about the A·V² knee only. The other knees
+            in use on this site are fixed densities and are not bounded by it: the globular-cluster-measured 0.161, the
+            solar/cluster joint window 0.0039&ndash;0.078 (γ-dependent), and Refracted Gravity&apos;s fitted knees. A knee keyed on
+            the host&apos;s V<sub>flat</sub> is also a global quantity, so this corollary is not an instance of the local-density no-go.
             Derivation: <code>explorer/scripts/coarse_graining_length_universality.py</code>.
           </div>
           <Link href="/honest-assessment" style={{ fontSize: '0.85rem' }}>Full closure documentation in Honest Assessment &rarr;</Link>
@@ -592,8 +597,9 @@ export default function ForResearchers() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Transferability and the counter-example.</strong> This applies to any &#x03B5;(&#x03C1;) model with a knee
             above ~10<sup>&minus;2</sup> M<sub>&#x2609;</sub>/pc&sup3;. Refracted Gravity (Matsakos &amp; Diaferio 2016;
-            Cesare et al. 2020) is the contrast case: its permittivity &#x03B5;(&#x03C1;) is the <em>same object</em> as this
-            framework&apos;s C<sub>&#x03A9;</sub> (closed-form identity, 2026-08-26) but its knee is fitted <em>inside</em>
+            Cesare et al. 2020) is the contrast case: its permittivity &#x03B5;(&#x03C1;) is the <em>same family</em> as this
+            framework&apos;s C<sub>&#x03A9;</sub> (the floored x/(1+x) form is RG at Q = ½ exactly; the tanh-log compander matches it
+            only at γ = Q = ½ with the knee rescaled 2×; qualifier added 2026-09-16) but its knee is fitted <em>inside</em>
             the sampled range, so its shape parameters are identifiable and were measured. Same equation, one identifiable
             and one not, decided entirely by where the knee was placed &mdash; which is the citable point.
           </p>
@@ -620,20 +626,35 @@ export default function ForResearchers() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             <strong>Citable form:</strong> for any theory of the form g = g<sub>N</sub>/C(ρ) with a floored tanh-in-log-density
-            switch (Refracted Gravity&apos;s permittivity class, which this framework&apos;s galaxy field equation coincides with),
+            switch (the same family as Refracted Gravity&apos;s permittivity, but <em>identical</em> to it only at γ = Q = ½ with the
+            knee rescaled 2×: below the knee the tanh-log form is linear in ρ at every γ, while RG goes as ρ<sup>2Q</sup>),
+            <em>evaluated on each cluster in isolation, with no smoothing (D ≲ 10 pc), and on a post-hoc ratio criterion with no σ</em>,
             the outer velocity-dispersion slopes of 42 Galactic globular clusters exclude a knee density
             <strong> ρ<sub>c</sub> ∈ 0.1–300 M<sub>☉</sub>/pc³ (6.8×10⁻²⁴ – 2×10⁻²⁰ g/cm³)</strong> at a switch sharpness
-            γ = 0.489 (Hill index ≈ 1), narrowing to 0.5–100 M<sub>☉</sub>/pc³ at γ = 2. &ldquo;Excluded&rdquo; = slope mismatch
+            γ = 0.489 (Hill index 2γ ≈ 1 in (1+ρ/ρ<sub>c</sub>), not in ρ/ρ<sub>c</sub>), narrowing to 0.5–100 M<sub>☉</sub>/pc³ at γ = 2. &ldquo;Excluded&rdquo; = slope mismatch
             more than twice that of MOND with the external field effect, which these data admit (−0.093 vs Newtonian −0.057).
             <strong>Refracted Gravity is not excluded:</strong> its published ρ<sub>c</sub> = 10⁻²⁴·²⁵ g/cm³ = 0.0083
-            M<sub>☉</sub>/pc³ (Cesare et al. 2020, 2022) lies below the excluded window. Every value in its 1σ range
-            (0.0052–0.0158 M<sub>☉</sub>/pc³) scores within MOND+EFE&apos;s mismatch on the same statistic.
+            M<sub>☉</sub>/pc³ lies below the excluded window, and every value in that set&apos;s 1σ range
+            (0.0052–0.0158 M<sub>☉</sub>/pc³) scores within MOND+EFE&apos;s mismatch on the same statistic. <em>Provenance
+            (corrected 2026-09-16, explorer 2026-09-15):</em> 0.0083 (with ε₀ = 0.089, Q = 0.47) is RG&apos;s <strong>elliptical-galaxy
+            (E0) calibration</strong>, Cesare et al. 2022 (arXiv:2102.12499), not the disc one. RG&apos;s DiskMass disc calibrations
+            are ρ<sub>c</sub> = 7.4×10⁻⁴ (mean; ε₀ = 0.56, Q = 0.92) and 4.3×10⁻³ M<sub>☉</sub>/pc³ (joint fit; ε₀ = 0.661, Q = 1.79).
+            Both also sit below the excluded window, so no verdict changes.
+            <em> Two open caveats on the window itself (added 2026-09-16):</em> (i) the clusters were treated as isolated. Under the
+            field equation ∇·[C∇Φ] = 4πGρ a cluster whose knee lies inside it refracts the Milky Way&apos;s field, a term these rows do
+            not contain (see the next paragraph); (ii) the window assumes density is read pointwise or smoothed over ≲ 10 pc, and
+            at that smoothing the same equation makes halo clusters orbit at ~0.6 of the field acceleration felt by diffuse tracers,
+            which Milky Way cluster and star kinematics disfavour at ~2σ (post-hoc).
             This sits beside the B<sub>max</sub> ≲ 14 bound from SPARC dwarfs as the second class-level constraint this
             program has produced.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            <strong>Why globular clusters, and why the EFE is the discriminating variable:</strong> a density-keyed law has no
-            external field to appeal to. MOND with its EFE switched off scores −0.245 on the same statistic, statistically
+            <strong>Why globular clusters, and why the EFE is the discriminating variable:</strong> read algebraically
+            (g = g<sub>N</sub>/C(ρ), exact for an isolated spherical cluster), a density-keyed law has no external field to appeal
+            to. <em>Scope (added 2026-09-16):</em> under the field equation that is no longer true. The law is linear in Φ, so the
+            Galactic field enters by superposition, refracted by the cluster&apos;s own C profile: a linear external-field
+            dependence, not MOND&apos;s nonlinear one. Its size inside real clusters has not been computed on this data (the
+            maintainer&apos;s order-of-magnitude check is in <code>maintainer/scripts/gc_external_field_refraction_estimate.py</code>). MOND with its EFE switched off scores −0.245 on the same statistic, statistically
             indistinguishable from the density law; MOND survives these clusters <em>because of</em> the EFE and for no other
             reason. So the clusters separate density-keyed from acceleration-keyed gravity on the profile <em>shape</em> even
             where the two predicted boost amplitudes are collinear (Pearson r = +0.87 across the population, because
@@ -838,9 +859,9 @@ export default function ForResearchers() {
               CAMEL/MetaGPT, failure modes from the multi-agent-systems literature. The citable artifact
               is the <strong>program-level null result with retrospective controls</strong> (N=6 audits,
               not preregistered held-out experiments; one corpus, one framework): <strong>3,308 sessions
-              produced ~47 internally-consistent candidate claims (1.4% survival rate); of those, 6 received
-              external expert audit, and 0 survived</strong>. The honest denominator is <strong>0 of 6
-              audited</strong> (0 of 47 pending audit) &mdash; not &ldquo;0 across 3,308 sessions,&rdquo; which
+              produced ~47 internally-consistent candidate claims (1.4% survival rate); 9 claims were audited
+              (by LLM agents, not an outside domain expert), and 0 survived</strong>. The honest denominator is <strong>0 of 9
+              audited</strong> &mdash; not &ldquo;0 across 3,308 sessions,&rdquo; which
               would overstate the number of adjudicated trials by two orders of magnitude (corrected 2026-07-09
               after two visitor personas independently flagged the site quoting this null at three different,
               mutually inconsistent denominators). Both error rates on the 6 are measured — temporal-asymmetry

@@ -65,17 +65,17 @@ export default function TestCatalog() {
         }}>
           <strong style={{ color: 'var(--color-text-secondary)' }}>Validation Badge Guide — MRH-relationship:</strong>{' '}
           <span style={{ color: '#8b5cf6' }}>■ Active-MRH</span> — under active investigation &nbsp;|&nbsp;
-          <span style={{ color: '#6366f1' }}>■ Parallel-Paths</span> — competing approaches &nbsp;|&nbsp;
-          <span style={{ color: '#94a3b8' }}>■ Sidelined</span> — deprioritised &nbsp;|&nbsp;
-          <span style={{ color: '#6b7280' }}>■ Superseded</span> — replaced by better framing &nbsp;|&nbsp;
-          <span style={{ color: '#ef4444' }}>■ Audited-Negative</span> — closed as wrong.{' '}
+          <span style={{ color: '#6366f1' }}>■ Parallel-Paths</span> — kept in the hypothesis space, not in active focus, not abandoned &nbsp;|&nbsp;
+          <span style={{ color: '#94a3b8' }}>■ Sidelined</span> — not currently pursued; reasons and reactivation condition documented &nbsp;|&nbsp;
+          <span style={{ color: '#6b7280' }}>■ Superseded</span> — replaced by a later formulation &nbsp;|&nbsp;
+          <span style={{ color: '#ef4444' }}>■ Audited-Negative</span> — closed audit finding on a historical track; durable record.{' '}
           <strong style={{ color: 'var(--color-text-secondary)' }}>Descriptive:</strong>{' '}
-          <span style={{ color: '#f59e0b' }}>■ Reparametrization</span> — known result in new notation &nbsp;|&nbsp;
-          <span style={{ color: '#f59e0b' }}>■ Untested</span> — no data yet &nbsp;|&nbsp;
-          <span style={{ color: '#94a3b8' }}>■ Speculative</span> — reasoning gap &nbsp;|&nbsp;
-          <span style={{ color: '#ef4444' }}>■ Failed</span> — falsified by data.{' '}
+          <span style={{ color: '#f59e0b' }}>■ Reparametrization</span> — equivalent to existing physics in different notation &nbsp;|&nbsp;
+          <span style={{ color: '#f59e0b' }}>■ Untested</span> — prediction exists, no data yet &nbsp;|&nbsp;
+          <span style={{ color: '#94a3b8' }}>■ Speculative</span> — conceptual proposal without a quantitative test &nbsp;|&nbsp;
+          <span style={{ color: '#ef4444' }}>■ Failed</span> — contradicted by data (with specific error).{' '}
           <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-text-muted)' }}>
-            Canonical definitions →
+            Canonical definitions (Honest Assessment) →
           </Link>
         </div>
         <div style={{

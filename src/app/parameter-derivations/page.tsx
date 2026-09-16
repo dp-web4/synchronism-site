@@ -136,21 +136,26 @@ export default function ParameterDerivations() {
               &ldquo;Reparametrization&rdquo;: a₀&nbsp;&asymp;&nbsp;cH₀/2&pi; is a 13%-off coincidence among
               constants, and &Sigma;₀ likewise &mdash; both dimensional numerology, both defensible as such, both
               weaker claims than an exact functional identity. The severity ordering was inverted.
-              <br />• <strong>And when the form is isolated and freed, it LOSES.</strong> Previously the compander
-              form was &ldquo;explicitly not killed by any run.&rdquo; It now has a number (explorer 2026-09-09,
-              <code> the_floor_is_the_whole_difference_gN_keyed.py</code>): same argument, same floor, same 153-disc
-              sample, swapping <em>only</em> the function &mdash; MOND &micro; &chi;&sup2;/N = <strong>51.45</strong>,
-              framework compander <strong>108.10</strong>, a factor <strong>2.10&times;</strong>, rising to
-              2.56&times; on the outer half and leaving a <strong>+12.0% median velocity deficit at the last measured
-              point</strong> against 5.2% median measurement errors there. It was isolated at B<sub>max</sub> = 11.2,
-              where the boost ceiling is already non-binding (51.45 vs 51.48 at B<sub>max</sub> = 50), so this is the
-              form failing on its own and not the ceiling failing again.
-              <br />• <strong>Both at once is the honest reading:</strong> at &gamma;&nbsp;=&nbsp;&frac12; the
-              compander <em>is</em> the thing it would have to beat, and away from &gamma;&nbsp;=&nbsp;&frac12; it is
-              2.10&times; worse than the thing it reparametrizes. There is no &gamma; at which the form buys anything.
-              <em> Caveat carried from the explorer&apos;s own self-seeded list: the compander&apos;s knee has not yet
-              been re-optimised self-consistently, so treat 2.10&times; as an upper bound on its advantage, not a
-              final number.</em>
+              <br />• <strong>Withdrawn 2026-09-16: &ldquo;when the form is isolated and freed, it loses 2.10×.&rdquo;</strong>{' '}
+              That comparison (explorer 2026-09-09: MOND &micro; &chi;&sup2;/N 51.45 vs compander 108.10, same 153 discs, same
+              field-equation solver) was described as swapping <em>only</em> the function. It changed three things at once: the
+              function, the knee (0.32 a₀, where the γ&nbsp;=&nbsp;&frac12; identity needs 0.5 a₀), and the <em>form</em> of the
+              floor (MOND&apos;s &micro; was clipped, max(&micro;, 0.089); the compander used 0.089 + 0.911·tanh(&hellip;), which
+              removes boost at every radius). Two visitor personas objected on 2026-09-16 that at γ&nbsp;=&nbsp;&frac12; the swap
+              is a factor-2 rescaling of a₀ and cannot lose 2×. The maintainer pre-registered controls (committed before running)
+              and re-ran the same solver:
+              <br />&nbsp;&nbsp;R0 MOND &micro;, clip floor: <strong>51.45</strong> (reproduces the source) &middot; R1 compander at
+              γ&nbsp;=&nbsp;&frac12;, knee a₀/2, clip floor: <strong>51.45</strong> (identity control, exact) &middot; <strong>R2
+              compander at γ&nbsp;=&nbsp;0.489, knee a₀/2, clip floor &mdash; the function-only swap: 50.83, i.e. 0.988× MOND</strong>{' '}
+              &middot; R3 knee 0.32 a₀ alone: 77.98 (1.52×) &middot; R4 affine floor alone: 67.69 (1.32×) &middot; R5 both, as in the
+              source: 108.10 (2.10×, reproduced).
+              <br />So the 2.10× was the knee and the floor form, not the function. <strong>Swapped honestly, the compander ties
+              MOND&apos;s &micro;</strong>, which is what an exact identity at γ&nbsp;=&nbsp;&frac12; predicts. That is an
+              over-refutation withdrawn, not a rescue: the badge stays Reparametrization, and it is now the <em>only</em> reading
+              &mdash; the form buys nothing and costs nothing. Script and output:{' '}
+              <code>maintainer/scripts/compander_form_isolation_controls*</code>. (The 51.45 baseline is MOND in this pipeline:
+              algebraic MOND scores 52.21 on the same discs. /for-researchers&apos; 21.2 comes from a different pipeline, so ratios
+              across the two are not meaningful.)
             </div>
           </div>
 
@@ -514,7 +519,7 @@ export default function ParameterDerivations() {
               added 2026-09-08).</strong> On 42 Galactic globular clusters (Baumgardt &amp; Hilker database) the outer
               velocity-dispersion slope is insensitive to the floor value &mdash; substituting this framework&apos;s
               &#x03A9;<sub>m</sub> = 0.315 into Refracted Gravity&apos;s permittivity at RG&apos;s own knee
-              (0.0083 M<sub>&#x2609;</sub>/pc&sup3;) changes nothing and passes &mdash; while every knee this framework uses
+              (0.0083 M<sub>&#x2609;</sub>/pc&sup3;, RG&apos;s elliptical-galaxy calibration from Cesare et al. 2022; its disc knees are lower) changes nothing and passes &mdash; while every knee this framework uses
               (0.11–1,400 M<sub>&#x2609;</sub>/pc&sup3;) is excluded or marginal <em>at &#x03B3; = 0.489</em>; at the registered
               &#x03B3; = 2 the excluded band narrows to 0.5–100 and the framework&apos;s measured 0.161 becomes marginal rather
               than excluded (the fork). The one placement that escapes the shape test

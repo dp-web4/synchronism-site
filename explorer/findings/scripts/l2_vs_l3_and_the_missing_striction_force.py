@@ -153,7 +153,11 @@ def framework(gamma=2.0, rho_crit_pc3=0.029 * 150.0**2, Cmin=0.315):
     return Model(f"framework(gamma={gamma}, rho_crit={rho_crit_pc3:.3g} Msun/pc^3)", C, dC, Cmin)
 
 def refracted(eps0=0.089, q=0.47, rho_c_pc3=8.3e-3):
-    """Cesare et al. 2020 (A&A 637, A70) best fit to 30 DiskMass galaxies.
+    """Refracted Gravity at (eps0, q, rho_c) = (0.089, 0.47, 8.3e-3 Msun/pc^3).
+    PROVENANCE CORRECTED 2026-09-16 (maintainer, per explorer 2026-09-15 §7): this triple is the ELLIPTICAL (E0) mean of
+    Cesare et al. 2022 (arXiv:2102.12499), NOT the Cesare et al. 2020 (A&A 637, A70) DiskMass disc fit, which this
+    docstring and the labels below originally claimed.  DMS disc values: mean eps0 0.56, Q 0.92, rho_c 7.4e-4;
+    joint 0.661 / 1.79 / 4.3e-3.  Labels in printed output were left as run, so _output.txt still matches.
     eps = eps0 + (1-eps0) * 0.5 * (tanh[q ln(rho/rho_c)] + 1)."""
     rc = rho_c_pc3 * KPC3_PER_PC3
     def C(r):

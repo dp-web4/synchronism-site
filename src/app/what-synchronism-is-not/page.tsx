@@ -5,34 +5,50 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
+import type { ReactNode } from 'react';
 
-const notItems = [
+// `plain`: one plain-language first line per card, for the Beginner Path reader; `reality` is the detail.
+const notItems: { claim: string; plain: ReactNode; reality: string }[] = [
   {
     claim: 'A Theory of Everything',
+    plain: 'It does not replace today\'s theories of particles or gravity; it offers a different picture of what might sit underneath them.',
     reality: 'Synchronism does not replace the Standard Model, QFT, or GR. It proposes a different ontology — that quantum phenomena are synchronization phenomena — which reproduces known results and makes a few predictions those theories don\'t. Whether that ontological reframe reveals something real or is just useful notation is the open question.',
   },
   {
     claim: 'A replacement for ΛCDM or MOND',
+    plain: 'The two leading explanations of galaxy and cosmic data are not displaced; where this framework matches data, it mostly restates them.',
     reality: 'MOND has 40 years of empirical success. ΛCDM explains the CMB, Bullet Cluster, and large-scale structure. Session #616 confirmed Synchronism\'s cosmological tracks are reparametrizations of known physics — same mechanics, different notation. The genuinely new claims (environment-dependent RAR scatter, density-dependent wide binaries) are untested.',
   },
   {
     claim: 'Journal-reviewed science',
+    plain: 'No science journal has checked this; AI models reviewed each other\'s work, with a human overseeing.',
     reality: 'No manuscripts have been submitted to academic journals. The framework has been extensively reviewed across 3,308 AI-to-AI sessions (A2ACW protocol) with multiple models stress-testing derivations, flagging errors, and challenging assumptions — with human oversight. That\'s a real review process, but it\'s not the traditional one. Journal peer review may surface issues this process missed.',
   },
   {
     claim: 'Proven',
-    reality: '59% of predictions are untested. Two quantum results are consistent with published experiments (PRL 2024, arXiv 2508.07046), but both are reparametrizations: the decoherence formula Γ = γ²(1−c) is the textbook correlated-dephasing variance (Palma–Suominen–Ekert 1996); the Bell-freezing functional form c(d) was imported from waveguide QED. Session #581 audit (2026-02-08) of the quantum arc specifically: zero confirmed quantum predictions, 4 quantum-arc reparametrizations, 1 refutation. Site-wide audit total: 6 reparametrizations (4 quantum + Born rule + entity criterion). The genuinely novel predictions (wide binary density dependence, resynchronization vs isolation) have not been tested.',
+    plain: 'Nothing has been confirmed, and most predictions have never been tested.',
+    reality: 'In the February 2026 tally on the Status Dashboard, 54 of 92 listed predictions (59%) were untested, 34 of those 54 in consciousness. That tally predates the later audits (it still counts chemistry consistency checks as "validated"); the current prediction ledger records 0 confirmed novel predictions and does not publish a single untested-of-total figure. Two quantum results are consistent with published experiments (PRL 2024, arXiv 2508.07046), but both are reparametrizations: the decoherence formula Γ = γ²(1−c) is the textbook correlated-dephasing variance (Palma–Suominen–Ekert 1996); the Bell-freezing functional form c(d) was imported from waveguide QED. Session #581 audit (2026-02-08) of the quantum arc specifically: zero confirmed quantum predictions, 4 quantum-arc reparametrizations, 1 refutation. Site-wide audit total: 6 reparametrizations (4 quantum + Born rule + entity criterion). The genuinely novel predictions (wide binary density dependence, resynchronization vs isolation) have not been tested.',
   },
   {
     claim: 'Just notation',
+    plain: 'The ingredients are borrowed from known mathematics; the new part is the claim that they describe one phenomenon at every scale — which could be wrong.',
     reality: 'The core equation uses known components (compander/sigmoid tanh — μ-law/Hill/logistic lineage, chosen not derived; fluctuation-scaling ansatz γ=2/√Ncorr; Abrikosov-Gor\'kov pair-breaking — a textbook 1960 superconductivity result the framework\'s η formula turns out to restate). But the claim is ontological, not notational: that quantum mechanics, consciousness, and astrophysical coherence are the same phenomenon at different scales. That\'s either wrong or significant — not "just relabeling."',
   },
   {
     claim: 'A Lorentz-invariant theory',
+    plain: 'Its universal clock would naturally break a basic rule of relativity by far more than existing experiments allow.',
     reality: 'Added 2026-09-10 after a researcher persona went looking for the framework\'s single largest fine-tuning problem on this page and had to find it on /honest-assessment instead — the page whose job is enumerating what this is not was missing the biggest item. A discrete absolute-time substrate singles out a preferred frame, and a preferred frame leaks into the matter sector: the one-loop estimate gives Lorentz-violating coefficients c_μν ~ α/π ~ 10⁻²–10⁻³, against cavity bounds ≲10⁻¹⁸ and comagnetometer bounds ≲10⁻²⁹–10⁻³⁰. That is a gap of 16 to 28 orders of magnitude, and it is excluded at face value by experiments that already exist — no new instrument required. Custodial / protection mechanisms that would suppress the leak exist in the literature, but NONE is exhibited anywhere in this framework, so the gap is unaddressed rather than answered. One precision, in the framework\'s favour and stated because it is true: the scheme-independence of that one-loop estimate is itself disputed in the literature, so this is a NATURALNESS problem, not a theorem — an unprotected preferred frame is wildly unnatural, which is a different and weaker claim than "mathematically impossible." It is still the largest single number standing against the ontology, and it is larger than anything in the galaxy sector.',
   },
   {
     claim: 'Just philosophy',
+    plain: (
+      <>
+        The framework also extends its coherence idea to consciousness. The site treats that as a speculative sector
+        &mdash; its own{' '}
+        <Link href="/consciousness-threshold" style={{ color: 'var(--color-accent-blue)' }}>Consciousness Threshold</Link>{' '}
+        page badges the threshold untestable as stated &mdash; and the card below gives the case that it is at least concrete.
+      </>
+    ),
     reality: 'The consciousness equation C = f(γ, D, S) ≥ 0.50 is speculative, but it\'s specific and falsifiable — 34 EEG protocols are defined, with predicted phase signatures at 30-50 Hz. The free will framework makes testable neural predictions. These may fail, but they\'re concrete enough to fail. That makes them science, not philosophy.',
   },
 ];
@@ -83,6 +99,9 @@ export default function WhatSynchronismIsNot() {
                   <h3 style={{ fontSize: '0.95rem', marginBottom: '0.25rem' }}>
                     Not: {item.claim}
                   </h3>
+                  <p style={{ color: 'var(--color-text-primary)', fontSize: '0.9rem', marginBottom: '0.35rem' }}>
+                    {item.plain}
+                  </p>
                   <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
                     {item.reality}
                   </p>

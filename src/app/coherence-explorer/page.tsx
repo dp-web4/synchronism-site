@@ -57,6 +57,10 @@ export default function CoherenceExplorer() {
     <>
       <Breadcrumbs currentPath="/coherence-explorer" />
       <h1>Coherence Explorer</h1>
+      <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem', maxWidth: '60ch' }}>
+        <strong>What this toy is for:</strong> seeing the shape of the S-curve and what &#x03B3; does to it. It does
+        not model any real material, and the density axis has no units.
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-violet)' }}>

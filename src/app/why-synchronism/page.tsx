@@ -213,7 +213,15 @@ export default function WhySynchronism() {
                 (For experts: YBCO; the &#x03B7; &ldquo;reachability&rdquo; factor restates Abrikosov&ndash;Gor&apos;kov pair-breaking.)
               </span>
             </p>
-            <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — same math, not new physics">Reparametrization</span>
+            <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
+              <strong>Why two badges:</strong> the specific temperature prediction failed (the prediction ledger files it
+              as refuted), while the extra factor behind it is a reparametrization &mdash; 22 of its 23 results restate
+              standard condensed-matter physics. One is a wrong number; the other is not new physics. Neither softens the other.
+            </p>
+            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+              <span className="badge badge-failed" title="Prediction contradicted by data — YBCO predicted 607 K vs 93 K observed">Failed &mdash; T<sub>c</sub> Prediction 6.5&times; Too High</span>
+              <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — the η factor restates Abrikosov–Gor'kov pair-breaking">Reparametrization &mdash; &#x03B7; Factor</span>
+            </div>
           </div>
         </div>
       </section>

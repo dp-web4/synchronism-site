@@ -10,8 +10,8 @@ import { GAMMA_PRESETS, gammaFromNcorr, GALAXY_PIN_GAMMA, GALAXY_SPARC_GAMMA } f
 function regimeInfo(g: number): { label: string; color: string; desc: string } {
   if (g > 1.4) return { label: 'Weakly Correlated (γ-sharp)', color: '#8b5cf6', desc: 'Few correlated particles; large γ → steepest C(ρ) sigmoid. C(ρ) near zero. Note: per Caveat 2, this is where γ assigns the sharpest transition — opposite to condensed-matter intuition (weakly correlated systems don\'t have sharp phase transitions in the real world).' };
   if (g > 0.6) return { label: 'Boundary (γ ≈ 1)', color: '#f59e0b', desc: 'Transition zone. Phase transitions, chemistry, consciousness threshold sit near this boundary.' };
-  if (g > 0.2) return { label: 'Strongly Correlated (γ-flat)', color: '#38bdf8', desc: 'Enzymes, magnets, large cooperative ensembles. C(ρ) is high. Note (Caveat 2): large N_corr → small γ → flattest sigmoid — γ assigns the flattest transition to strongly correlated systems, which is inverted relative to real condensed-matter physics where strong correlations produce sharp transitions.' };
-  return { label: 'Collective Regime (γ-flattest)', color: '#10b981', desc: 'Superconductors, BEC, superfluids (N_corr ≫ 1). C(ρ) saturates near 1. Note (Caveat 2): the smallest γ values (flattest C(ρ) curves) go to the most collective systems — BCS superconductors (N_corr~10⁷, γ~6×10⁻⁴) have the flattest transition in this formula, while real BCS has a very sharp Tc. See Caveat 2 for the sign-inversion explanation.' };
+  if (g >= 0.2) return { label: 'Strongly Correlated (0.2 ≤ γ ≤ 0.6)', color: '#38bdf8', desc: 'Enzymes, magnets, large cooperative ensembles. C(ρ) is high. Note (Caveat 2): large N_corr → small γ → flattest sigmoid — γ assigns the flattest transition to strongly correlated systems, which is inverted relative to real condensed-matter physics where strong correlations produce sharp transitions.' };
+  return { label: 'Collective (γ < 0.2, flattest)', color: '#10b981', desc: 'Superconductors, BEC, superfluids (N_corr ≫ 1). C(ρ) saturates near 1. Note (Caveat 2): the smallest γ values (flattest C(ρ) curves) go to the most collective systems — BCS superconductors (N_corr~10⁷, γ~6×10⁻⁴) have the flattest transition in this formula, while real BCS has a very sharp Tc. See Caveat 2 for the sign-inversion explanation.' };
 }
 
 const presets = GAMMA_PRESETS;
@@ -281,7 +281,7 @@ export default function GammaCalculator() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
             <strong>⚠ Preset caveat:</strong> N<sub>corr</sub> values in the presets are approximate estimates, not measured physical pair counts. The BCS superconductor preset uses N<sub>corr</sub> = 10<sup>7</sup> (mid-range of physical Cooper-pair coherence volumes); physical estimates span 10<sup>6</sup>–10<sup>9</sup> pairs (Al vs. Nb vs. Pb differ significantly). The{' '}
             <Link href="/phase-boundary-visualizer" style={{ color: '#f59e0b' }}>Crossover Regime Visualizer</Link>{' '}
-            uses different Ncorr estimates for some systems. A scale-invariant counting recipe for operational N<sub>corr</sub> is an open research question — see <em>ncorr-operational-definition-recipe</em> in the explorer topic queue.
+            uses different Ncorr estimates for some systems. How to count N<sub>corr</sub> for a real system is an open question: no operational, scale-invariant recipe for N<sub>corr</sub> exists yet.
           </p>
         </div>
 

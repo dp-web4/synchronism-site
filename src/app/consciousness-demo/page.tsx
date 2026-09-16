@@ -128,8 +128,8 @@ export default function ConsciousnessDemo() {
             box argued that &ldquo;dC/d&#x03C1; is maximized at &#x03C1; = 0, so there is no inflection point.&rdquo;
             That is true in <em>linear</em> &#x03C1; and irrelevant, because every plot on this site is in{' '}
             <em>log</em> &#x03C1;. Maximising dC/d(ln&#x03C1;) for C = tanh(&#x03B3;&thinsp;ln(1+u)), u = &#x03C1;/&#x03C1;<sub>crit</sub>,
-            gives the condition <strong>C* = 1/(2&#x03B3;u*)</strong>. At &#x03B3; = &frac12; &mdash; the value SPARC
-            and DESI both select &mdash; this closes on u* = 2 and <strong>C* = 0.50 exactly</strong> (check:
+            gives the condition <strong>C* = 1/(2&#x03B3;u*)</strong>. At &#x03B3; = &frac12; &mdash; near where the SPARC
+            and DESI fits land (the point where each sector reduces to MOND or &Lambda;) &mdash; this closes on u* = 2 and <strong>C* = 0.50 exactly</strong> (check:
             C = u/(u+2) = 0.5 and 1/(2&middot;&frac12;&middot;2) = 0.5). At &#x03B3; = 2 it moves to C* &#x2248; 0.60.
             So at the data-selected &#x03B3; &#x2248; &frac12; (not the framework&apos;s registered &#x03B3; = 2; &#x03B3; = &frac12;
             is also exactly MOND&apos;s simple interpolating function), C = 0.50 <em>is</em> the point of maximum
@@ -268,7 +268,7 @@ export default function ConsciousnessDemo() {
 
         <h2>What Has Falsified This</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li><strong>C &#x2248; 0.50 is the output-range midpoint, and the eight estimates are one estimate (established).</strong> The convergence is forced by shared calibration — every approach keyed to the midpoint of [0,1) lands near 0.50 by construction, and none of the eight measures C independently. <em>Not</em> forced by the shape of C(&#x03C1;): at &#x03B3; = &frac12;, C = 0.50 is exactly the log-density inflection (C* = 1/(2&#x03B3;u*) &rarr; u* = 2), so the function <em>does</em> distinguish that value &mdash; see the corrected calibration caveat above. The circularity is the finding; the geometry is not. (gnosis-research Session 63&apos;s p&lt;0.0001 rejection concerned a different variable — SNARC salience, not C; see the correction banner above.)</li>
+          <li><strong>C &#x2248; 0.50 is the output-range midpoint, and the eight estimates are one estimate.</strong> The convergence is forced by shared calibration — every approach keyed to the midpoint of [0,1) lands near 0.50 by construction, and none of the eight measures C independently. <em>Not</em> forced by the shape of C(&#x03C1;): at &#x03B3; = &frac12;, C = 0.50 is exactly the log-density inflection (C* = 1/(2&#x03B3;u*) &rarr; u* = 2), so the function <em>does</em> distinguish that value &mdash; see the corrected calibration caveat above. The circularity is the finding; the geometry is not. (gnosis-research Session 63&apos;s p&lt;0.0001 rejection concerned a different variable — SNARC salience, not C; see the correction banner above.)</li>
         </ul>
         <h2>What Would Still Falsify C(&#x03C1;)-Based Consciousness More Broadly</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>

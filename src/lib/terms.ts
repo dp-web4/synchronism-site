@@ -270,7 +270,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Validated',
     fullName: 'Validation Badge: Validated (Deprecated)',
     brief: '\u26a0 Deprecated \u2014 no claim currently holds this badge. See Honest Assessment for the current badge system (Reparametrization, Failed, Untested, Speculative).',
-    explanation: '\u26a0 This badge is deprecated. The 0 of 6 "Validated" claims that survived expert audit were all demoted to Reparametrization or Failed. "Validated" conflicts with the current stewardship discipline (nothing is honestly characterizable as established at this stage). In new content, use Active-MRH, Reparametrization, or the appropriate descriptive tag instead. Historical note: "Validated" meant the numbers agreed quantitatively with data \u2014 but agreement alone does not establish novelty; reparametrizations of known physics can "validate" without adding new physics.',
+    explanation: '\u26a0 This badge is deprecated. None of the 9 audited claims survived (all 6 former "Validated" badges plus 3 swept later were demoted to Reparametrization or Failed); the audit was done by LLM agents, not an outside domain expert. "Validated" conflicts with the current stewardship discipline (nothing is honestly characterizable as established at this stage). In new content, use Active-MRH, Reparametrization, or the appropriate descriptive tag instead. Historical note: "Validated" meant the numbers agreed quantitatively with data \u2014 but agreement alone does not establish novelty; reparametrizations of known physics can "validate" without adding new physics.',
     learnMore: '/honest-assessment#validation-badge-definitions',
   },
   'badge-untested': {

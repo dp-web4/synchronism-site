@@ -406,6 +406,26 @@ export default function GalaxyPlotter() {
           </p>
         </div>
 
+        <div style={{ background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', padding: '0.7rem 0.9rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#a78bfa' }}>What to notice in the chart below:</strong> the solid violet line is the
+          framework&apos;s density law with &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;. It barely moves
+          off the dashed gray Newtonian line. The green MOND line does follow the dots. That gap between violet and
+          green is the failure this tool shows.
+          <br /><strong>Two assumptions behind that picture:</strong>
+          <ul style={{ margin: '0.35rem 0 0', paddingLeft: '1.2rem' }}>
+            <li>&ldquo;Inert by construction&rdquo; is a property of the calibration <strong>A = 0.029</strong>, not of
+              the equation&apos;s form. <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
+              Derivations</Link> records that A = 0.029 does not follow from its own stated formula, which gives
+              A &asymp; 4.6&times;10<sup>&minus;5</sup>. At that value the knee sits inside dwarf-disc densities: a
+              visitor&apos;s estimate puts C &asymp; 0.5 near the DDO&nbsp;154 midplane (an estimate, not a
+              computation this page performs). The chart draws only A = 0.029.</li>
+            <li>The violet law, v&sup2; = v<sub>b</sub>&sup2; + [V<sub>flat</sub>&middot;C]&sup2;, takes the observed
+              V<sub>flat</sub> as an input, so even a match would not count as evidence. It is also a different law
+              from the g = g<sub>N</sub>/C used in the site&apos;s refutations (see the wiring note inside the chart card).
+              The failure verdicts rest on those refutations, not on this picture.</li>
+          </ul>
+        </div>
+
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
           {galaxies.map((g, i) => (
             <button

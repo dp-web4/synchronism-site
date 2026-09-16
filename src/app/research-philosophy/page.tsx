@@ -335,8 +335,8 @@ export default function ResearchPhilosophy() {
         <div className="card" style={{ background: 'rgba(56, 189, 248, 0.06)', border: '1px solid rgba(56, 189, 248, 0.2)', marginBottom: '1.5rem' }}>
           <h3 style={{ color: 'var(--color-accent-blue)', fontSize: '0.95rem', marginTop: 0 }}>The meta-finding: this pattern is the result</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
-            The combined pattern across the full research arc is itself a publishable finding about
-            AI-generated science: <strong>every structurally novel commitment (TEST-04a disfavored 2.4σ on σ₈ amplitude, post-hoc,
+            The combined pattern across the full research arc is a well-documented program-level null for this
+            AI-generated research program &mdash; not yet a measured finding about AI-generated science in general: <strong>every structurally novel commitment (TEST-04a disfavored 2.4σ on σ₈ amplitude, post-hoc,
             critical exponents category-error, Bullet Cluster viscosity sign-reversed) has either failed
             or collapsed to non-discriminating; every surviving prediction is degenerate with MOND or standard QM</strong>.
             This is exactly what you would predict from a training-distribution filter operating on a
@@ -348,8 +348,12 @@ export default function ResearchPhilosophy() {
             demotions cannot separate those readings (the confound is stated in full on{' '}
             <a href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</a>).
             The missing experiment is a control arm: the same protocol run on a corpus containing known
-            genuine discoveries post-dating the models&apos; training cutoffs. Until that runs, the honest
-            claim is a well-documented program-level null, not a measured ceiling.
+            genuine discoveries post-dating the models&apos; training cutoffs. <strong>A human base rate is missing
+            too:</strong> most human-proposed MOND alternatives also collapse to a MOND interpolating function or fail
+            on the RAR, so &ldquo;every surviving prediction is degenerate with MOND&rdquo; does not by itself
+            distinguish AI generation from heterodox-gravity programs in general (this site has not tallied that base
+            rate). Until those comparisons exist, the honest claim is a well-documented program-level null, not a
+            measured ceiling.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem', marginBottom: 0 }}>
             <strong>Temporal-asymmetry counterfactual (2026-05-18):</strong> A retrospective audit tested whether A2ACW

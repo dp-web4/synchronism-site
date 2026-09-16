@@ -111,7 +111,7 @@ export default function ChemistryCorrelationExplorer() {
           evidence of density-monotonicity (known chemistry), not of C(&#x03C1;)-specific physics.
           The &ldquo;47 research contributions&rdquo; cited elsewhere on the site are <strong>audited and
           demoted</strong>, not uncharacterized (corrected 2026-07-24; this caveat previously said
-          &ldquo;not audited&rdquo;): every contribution a domain expert examined resolved to a
+          &ldquo;not audited&rdquo;): every contribution the (LLM-agent) audit examined resolved to a
           reparametrization, an internal-consistency finding, or a null result (top-3 swept 2026-07-03,
           0/3 novel; the archive&apos;s later sessions demoted the remainder, and the count itself is a
           flagged ~57% overcount). What remains true is narrower: none was run against <em>this page&apos;s

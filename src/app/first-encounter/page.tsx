@@ -99,7 +99,7 @@ export default function FirstEncounter() {
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
         7 short parts on this one page, lettered A&ndash;G &mdash; about 10 minutes in all. (The &ldquo;Step 2 of 6&rdquo;
         above is this page&apos;s place in the Beginner path; the letters are only for the parts inside this page.
-        Use the progress bar to jump between parts.)
+        The parts appear one at a time: use the <strong>Next</strong> button below each part, or the progress bar, to move between them.)
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '2rem' }}>
         <strong>New here?</strong> This ~10-minute intro is the fastest path to understanding the framework.
@@ -141,7 +141,7 @@ export default function FirstEncounter() {
           marginBottom: '1rem',
         }}>
           <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            Part {String.fromCharCode(65 + step)} of A&ndash;{String.fromCharCode(64 + steps.length)}
+            Part {String.fromCharCode(65 + step)} of {steps.length} (A&ndash;{String.fromCharCode(64 + steps.length)})
           </span>
           <span style={{
             padding: '0.25rem 0.75rem',
@@ -191,7 +191,7 @@ export default function FirstEncounter() {
             className="btn-secondary"
             onClick={() => setStep(s => s - 1)}
           >
-            &larr; Previous
+            &larr; Previous: Part {String.fromCharCode(64 + step)}
           </button>
         ) : (
           <div />
@@ -201,7 +201,7 @@ export default function FirstEncounter() {
             className="btn-primary"
             onClick={() => setStep(s => s + 1)}
           >
-            Next &rarr;
+            Next: Part {String.fromCharCode(66 + step)} of {steps.length} &rarr;
           </button>
         ) : (
           <Link href="/core-idea" className="btn-primary">
@@ -211,9 +211,7 @@ export default function FirstEncounter() {
       </div>
       <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
         <Link href="/two-reframes" style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-          Prefer pictures and stories? Try Two Reframes — two analogies that reframe quantum weirdness
-          (side trip, not part of this sequence; a square root and a cosine appear, and a few quantum-foundations
-          results &mdash; Bell/CHSH, Kochen&ndash;Specker &mdash; are named in passing; you can skip those and keep the analogies) &rarr;
+          Prefer analogies? Try Two Reframes (side trip; some math and physics names you can skip) &rarr;
         </Link>
       </div>
 

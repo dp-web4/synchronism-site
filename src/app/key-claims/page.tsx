@@ -46,7 +46,7 @@ export default function KeyClaims() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.15rem' }}>
               <span style={{ color: 'var(--color-text-muted)', marginRight: '0.5rem' }}>1.</span>
-              Quantum Mechanics Is Synchronization Physics
+              Is Quantum Mechanics Synchronization Physics?
             </h2>
             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
               <ValidationBadge status="speculative" />
@@ -418,7 +418,7 @@ export default function KeyClaims() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.15rem' }}>
               <span style={{ color: 'var(--color-text-muted)', marginRight: '0.5rem' }}>3.</span>
-              Dark Matter Is Incomplete Decoherence
+              Is Dark Matter Incomplete Decoherence?
             </h2>
             <span style={{
               fontSize: '0.75rem',
@@ -432,6 +432,16 @@ export default function KeyClaims() {
               Failed
             </span>
           </div>
+
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
+            <strong>What failed:</strong> the interpretation &mdash; that a local-density coherence function marks
+            where &ldquo;dark matter&rdquo; effects switch on. With &#x03C1;<sub>crit</sub> &#x221D; V&sup2;, a
+            disc&apos;s mass cancels out of &#x03C1;/&#x03C1;<sub>crit</sub>, so at the published calibration no galaxy
+            disc reaches the coherence knee (details under &ldquo;What&apos;s new&rdquo; below). <strong>Why the
+            a&#x2080; relation still comes first:</strong> it is the scale any dark-matter reframe has to hit, and it
+            is <em>not</em> the failed part &mdash; it is Milgrom&apos;s own 1983 coincidence, consistent with data
+            and badged Reparametrization further down this page.
+          </p>
 
           <div className="equation" style={{ marginBottom: '0.25rem', fontSize: '1rem' }}>
             a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.04 &#x00D7; 10&#x207B;&#x00B9;&#x2070; m/s&#x00B2;
@@ -615,9 +625,10 @@ export default function KeyClaims() {
               <strong>&#x03B3; = &frac12;</strong> this is <strong>C = x/(x+2) = &#x03BC;<sub>simple</sub>(x/2)</strong>{' '}
               &mdash; MOND&apos;s simple interpolating function for every x, not just asymptotically. The free-&#x03B3;
               SPARC fit lands at 0.489, 2% away. The <em>same</em> cancellation gives (1&minus;C)/C = 2/x, hence
-              &#x03C1;<sub>DE</sub> = 2&#x03C1;<sub>crit</sub> = constant &mdash; exactly &Lambda; &mdash; and DESI DR2
-              independently selects &#x03B3; = 0.487. So the mechanism is not novel where it works: at the parameter
-              value both datasets choose, the model <em>is</em> MOND in the galaxy sector and <em>is</em> &Lambda; in the
+              &#x03C1;<sub>DE</sub> = 2&#x03C1;<sub>crit</sub> = constant &mdash; exactly &Lambda; &mdash; and a DESI DR2 fit lands at
+              &#x03B3; = 0.487 +0.024/&minus;0.021 (SPARC&apos;s own uncertainty is &plusmn;0.11). These are not two measurements agreeing
+              on a constant: γ = ½ is the one member of the family with no collective transition, and each dataset sends γ there.
+              So the mechanism is not novel where it works: at the parameter value both fits land near, the model <em>is</em> MOND in the galaxy sector and <em>is</em> &Lambda; in the
               cosmological sector, by one Möbius cancellation. See{' '}
               <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> and{' '}
               <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>.
@@ -662,7 +673,7 @@ export default function KeyClaims() {
             color: '#ef4444',
           }}>
             Status: <strong>Failed</strong> (unchanged) &mdash; not on the retracted R&sup2;=0.14/Session-616 claim, but
-            on the mass-cancellation locality no-go above (no galaxy crosses the coherence knee for any A) and the
+            on the mass-cancellation locality no-go above (no galaxy disc crosses the coherence knee at the published calibration A = 0.029; other calibrations are scoped above) and the
             Clowe 2006 Bullet Cluster argument.
             See <Link href="/honest-assessment" style={{ color: '#ef4444' }}>honest assessment</Link> for the full failure catalog.
           </div>

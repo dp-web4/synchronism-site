@@ -120,7 +120,8 @@ export default function GalaxyRotation() {
             <h3 style={{ color: 'var(--color-accent-violet)' }}>ALFALFA-SDSS Dataset</h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
               <strong>14,585 galaxies</strong> from the ALFALFA HI survey cross-matched with SDSS
-              photometry. Unresolved rotation curves but massive statistical power.
+              photometry &mdash; that is the <em>registered</em> cross-match; the definitive session actually
+              analysed <strong>14,435</strong> after a quality cut. Unresolved rotation curves but massive statistical power.
               {' '}<a href="http://egg.astro.cornell.edu/alfalfa/data/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>[ALFALFA data]</a>
               {' '}<a href="https://www.sdss.org/dr17/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>[SDSS DR17]</a>
             </p>

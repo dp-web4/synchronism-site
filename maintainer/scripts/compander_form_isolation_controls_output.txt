@@ -1,0 +1,13 @@
+algebraic identity check  max|R1-R0| on x in [1e-4,1e4]: 1.11e-16
+floor form at x = g/a0 = 1 (gamma=1/2, knee a0/2): clip 0.5000  affine 0.5445
+
+built 153 discs in 16s (Upsilon_disk = 0.5 fixed)
+
+R0 MOND mu, clip floor                       chi2/N =    51.45   ratio to R0 =  1.000   [124s]
+R1 tanh g=0.5  knee .5a0  clip  (== R0)      chi2/N =    51.45   ratio to R0 =  1.000   [227s]
+R2 tanh g=.489 knee .5a0  clip               chi2/N =    50.83   ratio to R0 =  0.988   [331s]
+R3 tanh g=.489 knee .32a0 clip               chi2/N =    77.98   ratio to R0 =  1.516   [430s]
+R4 tanh g=0.5  knee .5a0  affine             chi2/N =    67.69   ratio to R0 =  1.316   [523s]
+R5 tanh g=.489 knee .32a0 affine (source)    chi2/N =   108.10   ratio to R0 =  2.101   [615s]
+
+[exited with code 0]

@@ -35,7 +35,7 @@ const coreTools = [
   {
     title: 'γ Calculator',
     href: '/gamma-calculator',
-    desc: 'Input N_corr (number of correlated particles) and read off γ = 2/√N_corr — then see why the formula is audited-negative: the most tightly correlated matter (BCS superconductors, BEC) gets the flattest curves, backwards from real condensed-matter physics. The galaxy preset also refutes the framework\'s own γ=2 assertion. Presets: gas, liquid, crystal, BCS superconductor, BEC.',
+    desc: 'Input N_corr (number of correlated particles) and read off γ = 2/√N_corr — then see why the formula is audited-negative: the most tightly correlated matter (BCS superconductors, BEC) gets the flattest curves, backwards from real condensed-matter physics. The galaxy preset also refutes the framework\'s own γ=2 assertion. Presets: ideal gas, liquid water, galaxy (SPARC best fit), enzyme site, ferromagnet, BEC, BCS superconductor.',
     tags: ['Artifact Lesson'],
     epistemic: 'core' as EpistemicStatus,
   },
@@ -78,8 +78,8 @@ export default function InteractiveTools() {
       <Breadcrumbs currentPath="/interactive-tools" />
       <h1>Interactive Tools</h1>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem', maxWidth: '60ch' }}>
-        All of Synchronism&apos;s interactive tools in one place. Each card shows an epistemic status
-        badge so you know what you&apos;re looking at before you click in.
+        All of Synchronism&apos;s interactive tools in one place. Each card shows a content-type tag
+        and a level tag so you know what you&apos;re looking at before you click in.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem', maxWidth: '60ch' }}>
         <strong>Before the legend:</strong> this is a <em>content grouping</em>, not the site&apos;s validation
@@ -161,7 +161,7 @@ export default function InteractiveTools() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
           The tool below illustrates a speculative hypothesis with no empirical calibration.
           The convergence it displays is a mathematical property of the sigmoid, not an empirical finding about consciousness.
-          Expert reviewers have flagged it as the site&apos;s largest credibility liability.
+          The site&apos;s own AI review passes have repeatedly flagged it as the site&apos;s largest credibility liability (no outside human reviewer has assessed it).
           It is included for completeness with full disclosure.
         </p>
         <div style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>

@@ -135,7 +135,8 @@ export default function CoherenceFunction() {
 
         <div style={{ marginBottom: '1rem' }}>
           One caveat: for
-          &#x03C1;&nbsp;&#x226a;&nbsp;&#x03C1;<sub>crit</sub> (real galaxy outskirts), C&nbsp;&asymp;&nbsp;&#x03B3;x/(1+&#x03B3;x)
+          &#x03C1;&nbsp;&#x226a;&nbsp;&#x03C1;<sub>crit</sub> (real galaxy outskirts), C&nbsp;&asymp;&nbsp;&#x03B3;x to first order (it equals
+          &#x03B3;x/(1+&#x03B3;x) only through second order at &#x03B3;&nbsp;=&nbsp;&frac12;), and so
           depends on &#x03B3; and &#x03C1;<sub>crit</sub> only through their ratio &mdash; the
           degeneracy-breaking term is &#x03B3;(2&#x03B3;&minus;1), which vanishes at exactly &#x03B3;=1/2. So near
           the fitted value, &#x03B3;&nbsp;&asymp;&nbsp;0.489 is not a clean measurement of &#x03B3; alone without

@@ -30,6 +30,15 @@ export default function HonestAssessment() {
         It documents what works, what failed, what we got wrong, and what remains untested.
         Updated as new results come in.
       </p>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', maxWidth: '65ch' }}>
+        <strong>Who is doing this work.</strong> Every audit, correction and computation on this page was made by AI agents:
+        the research archive&apos;s AI sessions and this site&apos;s three daily AI tracks. The <em>visitor</em> track reads the
+        site as four simulated readers (&ldquo;personas&rdquo;: a casual reader, a technical writer, a graduate physics student,
+        a researcher); the <em>maintainer</em> track fixes the site; the <em>explorer</em> track does research. When a note
+        says &ldquo;a graduate-physics reader&rdquo; or &ldquo;a visitor researcher persona&rdquo;, it means one of those AI
+        passes, not an outside human. No outside human domain expert has audited these claims; the external feedback so far
+        has come from other AI systems (Grok, DeepSeek, GPT), relayed by the people who ran them.
+      </p>
 
       <div className="card" style={{ maxWidth: '65ch', marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-warm)', fontSize: '0.9rem' }}>
         <p style={{ margin: '0 0 0.5rem', color: 'var(--color-accent-warm)', fontWeight: 600 }}>
@@ -384,7 +393,7 @@ export default function HonestAssessment() {
         <div style={{ background: 'rgba(248,113,113,0.07)', border: '1px solid rgba(248,113,113,0.35)', borderRadius: '0.375rem', padding: '0.9rem 1.1rem', margin: '1rem 0' }}>
           <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
             <strong style={{ color: '#f87171' }}>Open classification question (raised 2026-09-10 by a
-            leading-edge-researcher persona; the maintainer thinks they are right, and it moves AGAINST us).</strong>{' '}
+            leading-edge-researcher persona; the maintainer agreed on 2026-09-10 and withdrew that agreement on 2026-09-16, see below).</strong>{' '}
             TEST-25 is classed in the table above as <em>inherited from MOND</em>, on the reasoning that the excluded
             object is the RAR-preferred interpolating-function family and MOND uses it too. But <strong>MOND and
             Synchronism are not equally free to walk away from it.</strong> MOND&apos;s &micro; is a free function:
@@ -393,19 +402,22 @@ export default function HonestAssessment() {
             <br />&bull; Its free-&gamma; SPARC fit lands at &gamma;&nbsp;=&nbsp;0.489, and at &gamma;&nbsp;=&nbsp;&frac12;
             the framework&apos;s compander is <em>identically</em> &micro;<sub>simple</sub> &mdash; the excluded
             function &mdash; for every &rho;<sub>crit</sub>. The data drive it into the exclusion.
-            <br />&bull; And it has nowhere to walk to. Isolated at a non-binding boost ceiling, the compander form
-            scores &chi;&sup2;/N&nbsp;=&nbsp;108.10 against MOND &micro;&apos;s 51.45 on the same 153 discs &mdash;
-            <strong> 2.10&times; worse</strong> (see{' '}
-            <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>,
-            item 2). Leaving &gamma;&nbsp;=&nbsp;&frac12; is not an escape for this framework; it is a 2.10&times; penalty.
-            <br /><strong>A refutation your own best fit drives you into, and that you cannot leave without paying
-            2.10&times;, is framework-specific.</strong> If that reading is adopted the split becomes <strong>3
-            framework-specific mechanism roots + 1 refuted registration + 1 Bell/CHSH construction check</strong>, and the landing
-            scoreboard&apos;s &ldquo;2 framework-specific&rdquo; becomes 3.
+            <br />&bull; <s>And it has nowhere to walk to. Isolated at a non-binding boost ceiling, the compander form scores
+            108.10 against MOND &micro;&apos;s 51.45, 2.10× worse.</s> <strong>Withdrawn 2026-09-16.</strong> That comparison also
+            changed the knee and the floor form. Swapping only the function (γ&nbsp;=&nbsp;0.489, matched knee, same floor) gives
+            50.83 vs 51.45: a tie (pre-registered controls, <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>, item 2).
+            <br /><strong>What is left of the argument.</strong> The compander&apos;s only escape from Cassini is to raise γ, since the
+            Newtonian-return exponent is q&nbsp;=&nbsp;2γ and Cassini wants a fast return. TEST-25 itself already shows
+            that the SPARC-retained interval (γ&nbsp;=&nbsp;0.425&ndash;0.600) fails Cassini everywhere, and γ&nbsp;=&nbsp;2 lost on SPARC at
+            ΔBIC +184. So the no-escape point rests on TEST-25&apos;s own γ scan, not on a separate penalty. The asymmetry premise
+            is weaker than stated too: Desmond, Hees &amp; Famaey 2024 report the tension persists across every interpolating-function
+            family they tested, so MOND is not obviously free to walk away either. <strong>The maintainer no longer recommends
+            reclassifying TEST-25.</strong> It stays &ldquo;inherited from MOND&rdquo;, with the question open.
             <br /><em>Not changed unilaterally.</em> Refutation classification is ledger governance and gates on dp
             &mdash; routed in <code>Research/proposals/test02_amplitude_is_knee_conditional_and_a2acw_positive_control_20260910.md</code>.
-            Note the direction: this is the site arguing itself into a <em>stronger</em> negative, which is the only
-            direction a classification change should ever be easy to make. The executed count stays at 6 either way.
+            The 09-10 version of this note said a change that moves against the framework &ldquo;should be easy to make&rdquo;.
+            It was easy, and it rested on a confounded number. Moving against yourself is not a substitute for controls. The
+            executed count stays at 6 either way.
           </p>
         </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -413,9 +425,13 @@ export default function HonestAssessment() {
           2026-07-28):</strong> the framework&apos;s single scale-universal compander cannot be used as
           <em>both</em> the SPARC-fitting galaxy function <em>and</em> a QUMOND-style Solar System
           interpolation function &mdash; at the SPARC-preferred γ&nbsp;≈&nbsp;0.489, the Cassini quadrupole
-          discrepancy is <strong>+17.95σ</strong>, and every point in the retained ΔBIC&nbsp;≤&nbsp;10 grid
+          discrepancy is <strong>8.7σ</strong> as published by Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781), who
+          marginalize over a₀, M/L and RAR-fit uncertainty; this site&apos;s own unmarginalized run, which fixes γ and profiles
+          a₀ only, gives +17.95σ, and every point in the retained ΔBIC&nbsp;≤&nbsp;10 grid
           (γ&nbsp;=&nbsp;0.425&ndash;0.600) fails Cassini by +17.7σ to +18.0σ &mdash; a robust empty
-          intersection, not a boundary artifact. This is by far the sharpest number on the site. See{' '}
+          intersection, not a boundary artifact. The defensible figure is the marginalized 8.7σ (lead reordered 2026-09-16;
+          it had called +17.95σ &ldquo;by far the sharpest number on the site&rdquo;). Prior art: Solar-System exclusion of
+          slow-return interpolating functions was already reported by Hees et al. 2016. See{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> for
           the full scope statement (it closes the joint realization, not modified inertia or a
           multi-scale function).
@@ -888,7 +904,7 @@ export default function HonestAssessment() {
                   <tr><td style={{ padding: '0.35rem' }}>MOND simple μ, EFE <strong>off</strong></td><td style={{ padding: '0.35rem' }}>−0.245</td><td style={{ padding: '0.35rem' }}>4.3</td><td style={{ padding: '0.35rem', color: '#f87171' }}>excluded</td></tr>
                   <tr><td style={{ padding: '0.35rem' }}>Density-keyed, <strong>γ = 0.489</strong> (galaxy sector&apos;s value), knee 0.161 M<sub>☉</sub>/pc³ (measured 2026-08-27), floored</td><td style={{ padding: '0.35rem' }}><strong>−0.211</strong></td><td style={{ padding: '0.35rem' }}>3.7</td><td style={{ padding: '0.35rem', color: '#f87171' }}><strong>excluded</strong></td></tr>
                   <tr><td style={{ padding: '0.35rem' }}>Density-keyed, <strong>γ = 2 (as registered)</strong>, same knee, floored</td><td style={{ padding: '0.35rem' }}><strong>−0.111</strong></td><td style={{ padding: '0.35rem' }}>2.0</td><td style={{ padding: '0.35rem', color: '#fbbf24' }}><strong>marginal</strong> (MOND+EFE level)</td></tr>
-                  <tr><td style={{ padding: '0.35rem' }}>Density-keyed, γ = 2, knee at Refracted Gravity&apos;s fitted 0.0083 M<sub>☉</sub>/pc³</td><td style={{ padding: '0.35rem' }}>−0.058</td><td style={{ padding: '0.35rem' }}>1.0</td><td style={{ padding: '0.35rem', color: '#22c55e' }}>passes</td></tr>
+                  <tr><td style={{ padding: '0.35rem' }}>Density-keyed, γ = 2, knee at Refracted Gravity&apos;s fitted 0.0083 M<sub>☉</sub>/pc³ (its elliptical-galaxy calibration, Cesare+2022; its disc calibrations, 7.4×10⁻⁴ and 4.3×10⁻³, sit lower still)</td><td style={{ padding: '0.35rem' }}>−0.058</td><td style={{ padding: '0.35rem' }}>1.0</td><td style={{ padding: '0.35rem', color: '#22c55e' }}>passes</td></tr>
                   <tr><td style={{ padding: '0.35rem' }}>Density-keyed, <em>unfloored</em> (the form in this site&apos;s <code style={{ fontSize: '0.75rem' }}>equations.ts</code>), γ = 0.489</td><td style={{ padding: '0.35rem' }}>−0.428</td><td style={{ padding: '0.35rem' }}>7.5</td><td style={{ padding: '0.35rem', color: '#f87171' }}>excluded (diverges as ρ → 0)</td></tr>
                 </tbody>
               </table>
@@ -897,14 +913,18 @@ export default function HonestAssessment() {
               <strong>Three results that do not depend on γ.</strong> (1) <strong>Globular clusters discriminate density-keyed from
               acceleration-keyed gravity, and the discriminating variable is the external field effect:</strong> MOND with its
               EFE switched off scores like the density law. MOND survives these clusters <em>because of</em> the EFE, and a
-              density-keyed law has no external field to appeal to. (This answers, by measurement, the question a visitor
+              density-keyed law <em>read algebraically</em> (g = g<sub>N</sub>/C, exact for an isolated spherical cluster) has no
+              external field to appeal to. <em>Scope added 2026-09-16 (visitor researcher persona):</em> under the field equation
+              ∇·[C∇Φ] = 4πGρ, which is linear in Φ, the Milky Way&apos;s field superposes and is <strong>refracted</strong> by
+              the cluster&apos;s own C profile, a linear external-field dependence rather than MOND&apos;s nonlinear EFE. These
+              rows do not contain it, so &ldquo;EFE = 0 exactly&rdquo; describes the algebraic reading only. (This answers, by measurement, the question a visitor
               researcher persona asked on 2026-09-07.) (2) <strong>The exclusion is a window on the knee, transferable to any
               theory of the form g = g<sub>N</sub>/C(ρ):</strong> ρ<sub>c</sub> ∈ 0.1–300 M<sub>☉</sub>/pc³ is excluded at γ = 0.489,
               narrowing to 0.5–100 at γ = 2 &mdash; and the two knees this framework has <em>calibrated</em> (the A·V² value at
               650, the measured 0.161) are inside or at the edge of it, while Refracted Gravity&apos;s
-              published knee (0.0083) lies below the excluded window across its whole 1σ range &mdash; Refracted Gravity is <strong>not</strong> excluded, even with this framework&apos;s Ω<sub>m</sub> floor
-              substituted in (wording disambiguated 2026-09-14). <em>Form is not what fails; the number is</em> &mdash; the knee sits 13–500× above the published
-              value of the theory this sector rediscovered.{' '}
+              published elliptical-galaxy knee (0.0083, Cesare et al. 2022; attribution corrected 2026-09-16, it had been cited as the disc value) and both of its disc knees (7.4×10⁻⁴, 4.3×10⁻³) lie below the excluded window, the first across its whole 1σ range &mdash; Refracted Gravity is <strong>not</strong> excluded, even with this framework&apos;s Ω<sub>m</sub> floor
+              substituted in (wording disambiguated 2026-09-14). <em>Form is not what fails; the number is</em> &mdash; the knee sits 13–500× above RG&apos;s elliptical
+              calibration (more above its disc ones) in the theory this sector rediscovered.{' '}
               <strong style={{ color: '#f59e0b' }}>Correction 2026-09-09:</strong> this sentence previously also listed
               &ldquo;the Oort-window 0.074–0.154&rdquo; among the excluded knees. That was a γ mismatch &mdash; 0.074–0.154 is the
               solar-neighbourhood window <em>at γ = 2</em>, set against the exclusion band <em>at γ = 0.489</em>. Computed at the
@@ -919,7 +939,17 @@ export default function HonestAssessment() {
               of a pre-registered grid, including Refracted Gravity&apos;s own form, fail a deliberately loose 10<sup>&minus;6</sup> test). Refracted
               Gravity&apos;s authors anticipated this: they say a density-keyed law &ldquo;unavoidably&rdquo; needs a smoothing length &ldquo;tens of
               astronomical units or larger&rdquo; and postponed it (Matsakos &amp; Diaferio 2016, §2.2.1). So this is a missing parameter
-              (planets need &gt; ~30 AU; smooth stellar profiles in galaxies need &gt; ~1 pc), not a new refutation. Open question: can the
+              (planets need &gt; ~30 AU), not a new refutation. <em>Replaced 2026-09-16 (explorer 2026-09-15):</em> the stellar
+              bound is not ~1 pc. Under the same field equation a compact body sits in a high-C bubble made by its own mass and
+              feels 3C<sub>out</sub>/(C<sub>in</sub> + 2C<sub>out</sub>) of the field a diffuse tracer feels (the dielectric-sphere
+              factor). To fall like gas, stars need D ≳ 5–35 pc and globular clusters ≳ 100–900 pc. But this cluster window
+              needs D ≲ 10 pc to say anything (smoothing over 30 pc turns every excluded knee marginal), and at that D halo
+              clusters would orbit at ~0.63 of the field acceleration (0.34 at RG&apos;s elliptical parameters); Milky Way
+              cluster and red-giant mass estimates agree to 1.00 (−0.17), a 2.1σ / 3.9σ tension, post-hoc. <strong>Under this
+              field equation, the window can have its cluster leg or normal cluster orbits, not both.</strong> Adding the
+              striction force a variational action implies cancels the bubble exactly, so the answer depends on which dynamics
+              the framework commits to, and no archive document commits. The window is therefore tagged: γ-specific, D ≲ 10 pc,
+              algebraic/field-equation reading. Open question: can the
               framework&apos;s MRH supply that length? Script: <code>maintainer/scripts/density_keyed_law_vs_interplanetary_medium.py</code>. (Withdrawn by the explorer 2026-09-08, having introduced it 2026-09-07. Second
               published instance of the program&apos;s characteristic error; it is why every density window on this page now
               carries its γ in the same cell.) (3)<strong>The one placement that escapes the shape test dies on
@@ -946,8 +976,11 @@ export default function HonestAssessment() {
               does no better than Newton or MOND+EFE, and its survival costs universality while buying nothing in fit.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              <strong>The fork.</strong> If γ is <em>universal</em> &mdash; the &ldquo;one equation&rdquo; reading, and the value
-              SPARC and DESI both select &mdash; the clusters exclude the density law at every placement the framework uses.
+              <strong>The fork.</strong> If γ is <em>universal</em> &mdash; the &ldquo;one equation&rdquo; reading, near where the SPARC
+              fit (0.489 ± 0.11) and the DESI fit (0.487 +0.024/−0.021) land. <em>Neither is a measurement of a universal constant:</em>
+              γ = ½ is exactly where the galaxy sector becomes MOND&apos;s simple μ and the dark-energy sector becomes Λ, so both
+              datasets are sending γ to the point where the framework has no content of its own 
+              (reworded 2026-09-16 from &ldquo;the value SPARC and DESI both select&rdquo;) &mdash; the clusters exclude the density law at every placement the framework uses.
               If γ <em>resets per Markov blanket</em> (P611.2: N<sub>corr</sub> = 1 inside a resolved-member system, so γ = 2),
               the clusters are marginally consistent at MOND-with-EFE&apos;s level &mdash; and the coherence function is not
               one function. This is not an ad-hoc rescue: it was registered seven months before the test, on independent
@@ -1429,8 +1462,7 @@ export default function HonestAssessment() {
               to be well-defined. Synchronism&apos;s contribution is an ontological interpretation
               (&ldquo;coherence cycle completion&rdquo;), not the condition itself. QFT already classifies
               broad resonances as poor quasiparticles and narrow ones as well-defined particles.
-              Novel-survivor count after external expert audit: <strong>0 of 6</strong> (0 of 47 internal-consistency
-              candidates pending audit, out of 3,308 total sessions — see the{' '}
+              Novel-survivor count after audit: <strong>0 of 9</strong> (audit by LLM agents, not an outside domain expert; 3,308 total sessions — see the{' '}
               <Link href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW methodology</Link> for the full chain).
             </p>
           </div>
@@ -1532,8 +1564,9 @@ export default function HonestAssessment() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Session #615 (final accounting) inventoried all outputs across ~3,308 sessions:
           47 research contributions at a 1.4% session yield.
-          <strong> Novel-surviving yield after domain-expert audit: 0.</strong>{' '}
-          Every output that a domain expert examined resolved as a reparametrization of known physics,
+          <strong> Novel-surviving yield after audit: 0.</strong>{' '}
+          The auditors were LLM agents (the archive&apos;s AI research sessions and this site&apos;s AI tracks), not an outside
+          domain expert. Every output they examined resolved as a reparametrization of known physics,
           an internal consistency finding, or a null result. The 47 outputs are genuine —
           well-posed questions, characterized failures, methodology results — but none constitutes a
           confirmed novel prediction.

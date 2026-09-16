@@ -1,0 +1,83 @@
+g_ext = 1.57e-10 m/s^2 (halo, R_GC = 10 kpc).  Plummer M = 2e+05 Msun, a = 3.0 pc; floor 0.315
+
+sharp-sphere check: 3 C_out/(C_in + 2 C_out) at C_in = 1, C_out = 0.315 -> 0.58
+
+gamma = 0.489, rho_c = 0.161 Msun/pc^3   knee radius 19.2 pc, C(0) = 1.000
+  reference = core    : E_z = 0.639 g_ext
+     r =   2 pc  C = 1.000  residual rms = 0.000 g_ext   residual / own gravity = 0.000
+     r =   5 pc  C = 0.996  residual rms = 0.001 g_ext   residual / own gravity = 0.000
+     r =  10 pc  C = 0.938  residual rms = 0.019 g_ext   residual / own gravity = 0.011
+     r =  20 pc  C = 0.505  residual rms = 0.229 g_ext   residual / own gravity = 0.268
+     r =  30 pc  C = 0.349  residual rms = 0.352 g_ext   residual / own gravity = 0.623
+     r =  50 pc  C = 0.318  residual rms = 0.362 g_ext   residual / own gravity = 1.612
+  reference = mass-wtd: E_z = 0.654 g_ext
+     r =   2 pc  C = 1.000  residual rms = 0.016 g_ext   residual / own gravity = 0.002
+     r =   5 pc  C = 0.996  residual rms = 0.015 g_ext   residual / own gravity = 0.003
+     r =  10 pc  C = 0.938  residual rms = 0.012 g_ext   residual / own gravity = 0.007
+     r =  20 pc  C = 0.505  residual rms = 0.216 g_ext   residual / own gravity = 0.254
+     r =  30 pc  C = 0.349  residual rms = 0.337 g_ext   residual / own gravity = 0.598
+     r =  50 pc  C = 0.318  residual rms = 0.346 g_ext   residual / own gravity = 1.542
+
+gamma = 2.0, rho_c = 0.161 Msun/pc^3   knee radius 19.2 pc, C(0) = 1.000
+  reference = core    : E_z = 0.630 g_ext
+     r =   2 pc  C = 1.000  residual rms = 0.000 g_ext   residual / own gravity = 0.000
+     r =   5 pc  C = 1.000  residual rms = 0.000 g_ext   residual / own gravity = 0.000
+     r =  10 pc  C = 1.000  residual rms = 0.000 g_ext   residual / own gravity = 0.000
+     r =  20 pc  C = 0.878  residual rms = 0.042 g_ext   residual / own gravity = 0.085
+     r =  30 pc  C = 0.453  residual rms = 0.289 g_ext   residual / own gravity = 0.670
+     r =  50 pc  C = 0.327  residual rms = 0.374 g_ext   residual / own gravity = 1.715
+  reference = mass-wtd: E_z = 0.636 g_ext
+     r =   2 pc  C = 1.000  residual rms = 0.007 g_ext   residual / own gravity = 0.001
+     r =   5 pc  C = 1.000  residual rms = 0.007 g_ext   residual / own gravity = 0.002
+     r =  10 pc  C = 1.000  residual rms = 0.007 g_ext   residual / own gravity = 0.004
+     r =  20 pc  C = 0.878  residual rms = 0.038 g_ext   residual / own gravity = 0.077
+     r =  30 pc  C = 0.453  residual rms = 0.284 g_ext   residual / own gravity = 0.658
+     r =  50 pc  C = 0.327  residual rms = 0.368 g_ext   residual / own gravity = 1.685
+
+gamma = 0.489, rho_c = 1.225 Msun/pc^3   knee radius 12.4 pc, C(0) = 0.999
+  reference = core    : E_z = 0.640 g_ext
+     r =   2 pc  C = 0.997  residual rms = 0.000 g_ext   residual / own gravity = 0.000
+     r =   5 pc  C = 0.972  residual rms = 0.007 g_ext   residual / own gravity = 0.002
+     r =  10 pc  C = 0.710  residual rms = 0.107 g_ext   residual / own gravity = 0.049
+     r =  20 pc  C = 0.348  residual rms = 0.350 g_ext   residual / own gravity = 0.283
+     r =  30 pc  C = 0.320  residual rms = 0.360 g_ext   residual / own gravity = 0.583
+     r =  50 pc  C = 0.315  residual rms = 0.360 g_ext   residual / own gravity = 1.592
+  reference = mass-wtd: E_z = 0.675 g_ext
+     r =   2 pc  C = 0.997  residual rms = 0.034 g_ext   residual / own gravity = 0.005
+     r =   5 pc  C = 0.972  residual rms = 0.029 g_ext   residual / own gravity = 0.006
+     r =  10 pc  C = 0.710  residual rms = 0.082 g_ext   residual / own gravity = 0.037
+     r =  20 pc  C = 0.348  residual rms = 0.319 g_ext   residual / own gravity = 0.257
+     r =  30 pc  C = 0.320  residual rms = 0.326 g_ext   residual / own gravity = 0.528
+     r =  50 pc  C = 0.315  residual rms = 0.325 g_ext   residual / own gravity = 1.438
+
+gamma = 2.0, rho_c = 12.12 Msun/pc^3   knee radius 7.6 pc, C(0) = 1.000
+  reference = core    : E_z = 0.631 g_ext
+     r =   2 pc  C = 1.000  residual rms = 0.000 g_ext   residual / own gravity = 0.000
+     r =   5 pc  C = 0.999  residual rms = 0.000 g_ext   residual / own gravity = 0.000
+     r =  10 pc  C = 0.633  residual rms = 0.163 g_ext   residual / own gravity = 0.066
+     r =  20 pc  C = 0.329  residual rms = 0.371 g_ext   residual / own gravity = 0.283
+     r =  30 pc  C = 0.317  residual rms = 0.369 g_ext   residual / own gravity = 0.592
+     r =  50 pc  C = 0.315  residual rms = 0.369 g_ext   residual / own gravity = 1.629
+  reference = mass-wtd: E_z = 0.669 g_ext
+     r =   2 pc  C = 1.000  residual rms = 0.038 g_ext   residual / own gravity = 0.005
+     r =   5 pc  C = 0.999  residual rms = 0.038 g_ext   residual / own gravity = 0.008
+     r =  10 pc  C = 0.633  residual rms = 0.137 g_ext   residual / own gravity = 0.056
+     r =  20 pc  C = 0.329  residual rms = 0.335 g_ext   residual / own gravity = 0.256
+     r =  30 pc  C = 0.317  residual rms = 0.331 g_ext   residual / own gravity = 0.532
+     r =  50 pc  C = 0.315  residual rms = 0.331 g_ext   residual / own gravity = 1.461
+
+gamma = 0.489, rho_c = 0.0079 Msun/pc^3   knee radius 35.3 pc, C(0) = 1.000
+  reference = core    : E_z = 0.638 g_ext
+     r =   2 pc  C = 1.000  residual rms = 0.000 g_ext   residual / own gravity = 0.000
+     r =   5 pc  C = 1.000  residual rms = 0.000 g_ext   residual / own gravity = 0.000
+     r =  10 pc  C = 0.996  residual rms = 0.001 g_ext   residual / own gravity = 0.001
+     r =  20 pc  C = 0.920  residual rms = 0.024 g_ext   residual / own gravity = 0.051
+     r =  30 pc  C = 0.666  residual rms = 0.126 g_ext   residual / own gravity = 0.428
+     r =  50 pc  C = 0.368  residual rms = 0.340 g_ext   residual / own gravity = 1.761
+  reference = mass-wtd: E_z = 0.643 g_ext
+     r =   2 pc  C = 1.000  residual rms = 0.005 g_ext   residual / own gravity = 0.001
+     r =   5 pc  C = 1.000  residual rms = 0.005 g_ext   residual / own gravity = 0.001
+     r =  10 pc  C = 0.996  residual rms = 0.004 g_ext   residual / own gravity = 0.003
+     r =  20 pc  C = 0.920  residual rms = 0.021 g_ext   residual / own gravity = 0.044
+     r =  30 pc  C = 0.666  residual rms = 0.122 g_ext   residual / own gravity = 0.416
+     r =  50 pc  C = 0.368  residual rms = 0.336 g_ext   residual / own gravity = 1.740

@@ -83,11 +83,20 @@ RETIRED = [
      "the framework registered γ = 2; γ ≈ ½ is what the galaxy data selected (= MOND)"),
     (r"fit galaxy rotation curves about equally well", "2026-09-15", "the plotter's own chart shows the framework curve failing"),
     (r"the boost ceiling, the Oort limit", "2026-09-15", "the Oort window does not close the density sector on a smoothed reading (09-09)"),
+    # ---- 2026-09-16 (maintainer; visitor log 2026-09-16 — the 09-15 auditor fix landed on one page only)
+    (r"(external |domain-)?expert\s+audit|a domain expert\s+examined|Expert reviewers have flagged", "2026-09-16",
+     "the audit was by LLM agents, not an outside domain expert; canonical count 0 of 9"),
+    (r"form failing on its own|the form fails on its own", "2026-09-16",
+     "the 2.10× swap changed floor form and knee too; see maintainer/scripts/compander_form_isolation_controls*"),
+    (r"SPARC and DESI both select|independently selects &#x03B3; = 0\.487|value both datasets choose", "2026-09-16",
+     "γ ≈ ½ is where each sector reduces to MOND/Λ; SPARC σ(γ) = 0.11 — not cross-sector agreement on a constant"),
+    (r"Refracted Gravity&apos;s (fitted|published) (knee )?\(?0\.0083\)?(?! M<sub>☉</sub>/pc³ \(its elliptical)", "2026-09-16",
+     "0.0083 is RG's elliptical (E0) calibration, Cesare+2022; disc knees 7.4e-4 / 4.3e-3"),
 ]
 
 EXEMPT = re.compile(
     r"previously|until 2026|read &ldquo;|this (line|sentence|card|page|row) (read|said)|corrected|withdrawn|retired|"
-    r"used to|was wrong|argued the threshold",
+    r"used to|was wrong|argued the threshold|reworded",
     re.IGNORECASE,
 )
 

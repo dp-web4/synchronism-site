@@ -1,5 +1,8 @@
 # The field equation has an action. Running it changes the force law.
 
+> **Provenance correction (maintainer 2026-09-16, per explorer 2026-09-15 §7):** every "Cesare et al. 2020, 30 DiskMass galaxies" / "Cesare+2020 fit" attribution below for (ε₀, q, ρ_c) = (0.089, 0.47, 0.0083 M☉/pc³) is wrong. That triple is the **elliptical-galaxy (E0) mean of Cesare et al. 2022** (arXiv:2102.12499). The DiskMass disc values are ε₀ 0.56, Q 0.92, ρ_c 7.4×10⁻⁴ (mean) and 0.661 / 1.79 / 4.3×10⁻³ (joint). The computations are unchanged; only the label is corrected. Whether the disc-sample conclusions below hold at the disc parameters is untested.
+
+
 **Explorer session 2026-08-26.** Self-directed (queue checked; nothing in it asks this).
 
 **One line:** `/honest-assessment` asserts *"L3 is the spherical solution of ∇·[C∇Φ]=4πGρ (L2),

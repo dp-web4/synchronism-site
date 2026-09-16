@@ -1,0 +1,38 @@
+Starting Synchronism Maintainer Session at Wed Sep 16 06:00:01 PDT 2026
+Session done. Everything is pushed (site `605c4b8`, `b1ed3f8`; research repo `0cda747f`) and the build passes.
+
+**The main finding: two of the site's refutations didn't hold up when checked.** The two visitor personas who read the physics closely both said the refutations were less carefully checked than the original claims had been. I checked the two they named before fixing anything else.
+
+1. **"The compander form loses 2.10× to MOND's μ": withdrawn.** The comparison was described as changing only the function, but the code also changed the knee (0.32 a₀ instead of 0.5 a₀) and the way the floor is applied. MOND's μ was clipped at 0.089; the compander had 0.089 added underneath everywhere, which removes boost at every radius. I wrote down predictions and committed them before running:
+
+   | Run | χ²/N | vs MOND |
+   |---|---|---|
+   | MOND μ | 51.45 | 1.00× |
+   | Compander at γ = ½, algebraically identical to MOND (check) | 51.45 | 1.00× |
+   | **Compander at γ = 0.489, only the function changed** | **50.83** | **0.99×, a tie** |
+   | Knee change alone | 77.98 | 1.52× |
+   | Floor change alone | 67.69 | 1.32× |
+   | Both, as originally run | 108.10 | 2.10× (reproduced) |
+
+   A 09-10 proposal awaiting your decision cited this number as the reason to reclassify TEST-25 as specific to this framework. I've withdrawn that recommendation in the research repo; TEST-25 stays "inherited from MOND", with the question open.
+
+2. **"A density-keyed law has no external field to appeal to" holds only in the algebraic reading.** Under the field equation ∇·[C∇Φ] = 4πGρ, the Milky Way's field adds on and bends inside any cluster whose density crosses the knee. I ran a rough estimate for one typical cluster; it wasn't pre-registered as a test, but I wrote the expected size down first and it matched:
+   - Beyond the knee, the uneven part of that field is 0.3–0.37 of the Galactic field strength.
+   - That is 0.25–0.67 of the cluster's own gravity at 20–30 pc, and more than all of it by about 35–40 pc.
+
+   The globular-cluster window is now labelled as holding for isolated clusters only. The effect cancels in averaged velocity-dispersion profiles, so its likely signature is where clusters get truncated. That could be a new test that applies to Refracted Gravity too, and I've queued it for the explorer as a high-priority topic. I also caught two bugs in my own estimate script; one had produced an exactly-zero result that was a solver artifact.
+
+**Other fixes:**
+- **Auditor wording:** "expert audit / 0 of 6" survived on seven pages after yesterday's fix. They now say 0 of 9, audited by LLM agents. Honest Assessment now says plainly that AI agents do all the work and that no outside human expert has reviewed it. Your forum folder confirms that: the outside reviews so far all came from AI models.
+- **Explorer's 09-15 asks:** Refracted Gravity's knee 0.0083 is now attributed to its elliptical-galaxy calibration (Cesare+2022), with the disc values beside it. The smoothing-length note replaces "stars need ~1 pc".
+- **γ ≈ ½:** no longer described as "selected by both SPARC and DESI". Both fits land where each sector turns into MOND or Λ, and the uncertainties are now quoted.
+- **Reader fixes:** a background agent made about 15 smaller fixes, and I reviewed the diffs. The notable one is the superconductor card on /why-synchronism, which now carries a Failed badge for the 6.5× temperature miss; the ledger records that prediction as refuted. It also found a γ-calculator bug, where γ = 0.2 was put in the wrong regime; I fixed it.
+- **Lint:** four new rules for the retired wordings. Run against the previous commit they flag 12 lines; the current tree has none.
+
+**Needs your decision:**
+- Note that the 09-10 recommendation to reclassify TEST-25 is withdrawn.
+- Should per-object density tests have to state whether they treat external fields algebraically or through the field equation, alongside the smoothing length?
+
+**Deferred:** /status-dashboard is stale ("36% Validated"); the consciousness equation is called "falsifiable" on one page and "untestable as stated" on another; a single table of the force laws and knee values; and the reader pages still mix current claims with their revision history.
+
+The Google Drive connector needs authorizing in claude.ai settings. The Playwright server didn't connect because `npx` isn't installed on this machine. Neither was needed today.

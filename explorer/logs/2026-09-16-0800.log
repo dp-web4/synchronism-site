@@ -1,1 +1,31 @@
 Starting Synchronism Explorer Session at Wed Sep 16 08:00:01 PDT 2026
+I worked the maintainer's high-priority globular-cluster (GC) topic and widened it. The site's GC window only holds for one version of the theory: the field equation without an action, used as the force law (L2). Under the version that has an action (L3), the window's premise fails. I wrote the predictions down and pushed them (`b0a82e2`) before computing. The count of refutations stays at 6.
+
+## What I found
+- **The action's extra force swamps gravity.** In a 2×10⁵ M☉ model cluster, the extra "striction" force the action adds is 1.7–13× gravity where the density crosses the knee. The net force points outward for all five knee values I tested. The site's line that this force is "≤ 2×10⁻⁵ of gravity" only holds at a knee no cluster reaches.
+- **L3 doesn't cancel the Galaxy's field inside the cluster.** The cluster as a whole feels exactly the Galaxy's field (a known theorem, reproduced to 1.0000 as a sign check). Inside, the core feels 0.64× that field and the knee shell 3–45×. There is also a second-order term, so L3 does have a nonlinear external-field effect. The maintainer's new "no nonlinear EFE" wording is true for L2 only.
+- **The window changes under L3.** Same 42 clusters, same statistic; only the force law changed. A control that switches the extra force off reproduces the published results exactly. With the force on, 18 of 27 verdicts change:
+  - the excluded band moves from 0.12–30 to 0.031–0.20 M☉/pc³;
+  - no "ok" knee value remains.
+
+  With steeper (Plummer) outer profiles, up to 39 of 42 clusters have outward net gravity, so there's no equilibrium model to test.
+- **L3 is probably unstable there (exploratory, not pre-registered).** A short-wavelength calculation says the extra force acts like a negative pressure, 2–38× the stars' velocity dispersion squared at the knee. Part of that term is negative for any density-keyed law, not just this one. The same structural problem is known for theories whose forces depend on derivatives of matter density ([Pani, Sotiriou & Vernieri 2013](https://arxiv.org/abs/1306.1835); [2306.12350](https://arxiv.org/abs/2306.12350)).
+- **Where L2 cuts clusters off.** Under L2, the refracted Galactic field unbinds stars beyond a radius that grows as M^0.51 and shrinks as g_ext^−0.51. That is about 0.4 of the usual tidal (Jacobi) radius. The topic's "scales linearly with g_ext" had the wrong exponent.
+
+## What failed
+- **The tidal-radius comparison was void.** Baumgardt's catalogue `r_t` is computed from a Galactic potential model (Webb+2013 eq. 8), so fitting a scaling law to it was circular. My pre-registered check only looked at scatter, and 0.09 dex slipped past it; the catalogue's column definition gave it away.
+- **The rerun on measured radii is undecided and post-hoc.** On Harris King-fit tidal radii, both scaling predictions miss by more than 4σ. The sharper cut came after seeing the data: the 18 lowest-mass clusters all extend past L2's cutoff radius (median 3.1×) while staying inside their Jacobi radii. That's the first L2 prediction to touch data without depending on a knee value, but it's weak evidence.
+- **One control was set up wrong.** It was meant to have no density transition, but at ρ_c = 10⁻⁹ the knee sat at 846 pc, inside the grid. I reran it at 10⁻²⁰ and labelled that post-hoc.
+- **A boundary artifact.** My first instability run reported "unstable out to 400 pc" because the dispersion goes to zero at the grid edge. Fixed.
+
+## Audit
+The archive's "EFE = 5.6×10⁻¹³" (`efe_locality_vs_phi_dependence.py`) subtracted the Galaxy's refracted field before measuring. That number only confirms superposition.
+
+## Handoff
+- **Maintainer:** label the GC window "L2" on /for-researchers and /honest-assessment, and add the L3 band. Scope the EFE and "2×10⁻⁵" wording, and back-annotate the 08-24 script.
+- **Decisions for dp:** tests keyed on local density should declare three things: the dynamics (algebraic, L2 or L3), the smoothing length, and the mass-model tail. Today each of those changed a GC conclusion.
+
+## So what?
+This moves discovery forward. The one per-object result the site calls citable depends on picking the dynamics that has no action. The version with an action shifts the band, loses the ok region, and may be unstable in exactly the shell being tested. That's a negative result for every density-keyed permittivity law, Refracted Gravity included.
+
+Everything is committed and pushed (`8b8327d`). The finding is `explorer/findings/under-the-action-gc-knee-shells-are-striction-dominated-and-the-gc-window-is-an-l2-object.md`, the session log is `explorer/logs/2026-09-16.md`, and the topic is archived. I also saved a memory: read a catalogue's column definition before fitting to it. NotebookLM wasn't authenticated this session, and the Google Drive connector still needs authorizing in claude.ai settings.

@@ -190,6 +190,8 @@ limits:
   | MOND μ = x/(1+x) | 51.45 | 39.89 | 62.48 | 20.27 | −3.5% |
   | framework compander, γ = 0.489, g_c = 0.32 a₀ | 108.10 | 53.78 | 159.93 | 43.06 | +12.0% |
 
+  > **⚠ Withdrawn 2026-09-16 (maintainer, pre-registered controls, `maintainer/scripts/compander_form_isolation_controls*`):** the two rows below also differ in knee (0.32 a₀ vs the γ = ½ identity's 0.5 a₀) and floor *form* (MOND clip max(μ, f) vs compander affine f + (1−f)·tanh). Function-only swap: 50.83 vs 51.45 (0.988×). Knee alone 1.52×, floor form alone 1.32×, both 2.10×. The text below is kept as run.
+
   **The compander form costs 2.10× against MOND's μ at a floor where the ceiling is not binding, and it
   costs it in the outer disc** (2.56× on the outer half, 2.12× on the last two points, +12.0% velocity
   deficit at R_last against 5.2% errors). This is an upper bound: the knee 0.32 a₀ was selected by

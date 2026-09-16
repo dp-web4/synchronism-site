@@ -1,7 +1,45 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-15 (explorer)*
+*Last updated: 2026-09-16 (maintainer)*
+
+---
+
+## 🟢 NEW (maintainer 2026-09-16) — **Two refutations checked with controls, and both needed a qualifier.
+(1) "The compander form loses 2.10× to MOND's μ" also changed the knee and the floor *form* (affine vs clip). Swapping
+only the function gives 50.83 vs 51.45, a tie (pre-registered controls). The dp-gated TEST-25 reclassification
+recommendation is withdrawn. (2) "A density-keyed law has no external field": true algebraically only. Under L2 the
+Galactic field is refracted inside a globular cluster, at 0.3–0.37 g_ext beyond the knee, which is 0.25–0.67 of the
+cluster's own gravity at 20–30 pc (order-of-magnitude). "EFE = 0" becomes "no nonlinear EFE, linear refraction present",
+and there may be a new class-level observable: truncation radii ∝ g_ext.**
+
+Log: `maintainer/logs/2026-09-16.md`. Proposal:
+`Synchronism/Research/proposals/refutations_need_controls_compander_tie_and_gc_refraction_20260916.md`.
+Scripts: `maintainer/scripts/compander_form_isolation_controls*` (PREREG `04c4037`),
+`maintainer/scripts/gc_external_field_refraction_estimate*`. **Count stays 6; Bucket 0 = 0.**
+
+- **Explorer 09-15 P0/P1 done.** RG 0.0083 is attributed to E0 (Cesare+2022), with disc knees, on HA, /for-researchers
+  and /parameter-derivations. The bubble statement replaces "stars ≳ ~1 pc". The GC window is tagged isolated,
+  D ≲ 10 pc, post-hoc.
+- **Auditor wording** ("expert audit", "0 of 6", "expert reviewers") is fixed on 7 surfaces. HA says plainly that AI
+  tracks do all the work.
+- **γ ≈ ½** is no longer "selected by SPARC and DESI". Both fits land where each sector reduces to MOND/Λ, with σ quoted.
+- Batch of about 15 reader fixes. /why-synchronism's superconductor card is now **Failed** on Tc (the ledger says
+  refuted).
+- `site_lint.py`: 48 rules. Positive control: 12 hits on HEAD, 0 on the tree.
+
+### → Explorer (topic seeded)
+- `refraction-efe-linear-permittivity-gravity-gc-truncation.md` (HIGH) — model the refracted field in the 42-cluster
+  run. Truncation radii vs g_ext. Does L3 cancel the differential part?
+
+### → Maintainer next
+- /status-dashboard is stale ("36% Validated", "1,703 phenomena validated").
+- Consciousness equation: "falsifiable" (/what-synchronism-is-not) vs "untestable as stated".
+- Knee/force-law bookkeeping table.
+
+### → dp (gated)
+- Note: 20260910 item 4 withdrawn.
+- Should per-object density tests declare algebraic vs L2/L3 external-field treatment?
 
 ---
 

@@ -44,3 +44,15 @@ false positive (`85% error` on a chemistry sound-velocity row). The `× larger |
 removes parameter-ratio phrasings also costs two true positives in
 `mond-efe-three-test-discriminator-verdict.md` — deliberate, because at warn severity a rule nobody
 reads is worse than a rule that misses two lines.
+
+### R6 DIRECTION LAW, NO DENOMINATOR (added 2026-09-17)
+
+| rule | severity | what it catches |
+|------|----------|-----------------|
+| **R6** DIRECTION LAW, NO DENOMINATOR | warn | "over-refutation is the live/characteristic failure", "error direction has flipped", "N/N … over-refute", "N-th over-refutation in a row", "risk is now entirely on the refutation side", with no denominator, base rate, cohort, or null on that line or the next. |
+
+This is the first rule for a retired *inference* rather than a retired phrasing. The 07-09 null on the directional law
+was stranded in the pre-09-04 memory store, and the law came back in a stronger form within 3 days. The 09-17 cohorts
+measured the actual trend: over-refutation's share of corrections was 1/20 in May and 9/24 in August. It is a rising
+minority, not "the characteristic error". Positive controls: 4/4, plus SESSION_FOCUS line 748 ("eighth over-refutation in a row"). Corpus rate at introduction:
+2 hits in 335 files. One is a true positive (explorer log 09-07); the other is a quotation, a false positive.

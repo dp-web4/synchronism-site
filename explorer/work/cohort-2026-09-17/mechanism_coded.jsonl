@@ -1,0 +1,28 @@
+{"id": "U036", "mechanism": "PROPAGATION", "confidence": "MED", "why": "Fix note: demotions documented elsewhere weeks earlier never reached this page; propagation lag named explicitly."}
+{"id": "U216", "mechanism": "ARGUMENT", "confidence": "MED", "why": "+184 retargeted: number refutes acceleration-keyed fit actually run, not density law; re-reading what fit did."}
+{"id": "U123", "mechanism": "PROPAGATION", "confidence": "HIGH", "why": "Stale pre-recount 'four' while same page header already said six."}
+{"id": "U015", "mechanism": "UNCLEAR", "confidence": "LOW", "why": "Sentence unchanged at HEAD; appended reconciliation scopes registrations, unclear whether sentence itself was wrong."}
+{"id": "U108", "mechanism": "PROPAGATION", "confidence": "MED", "why": "Count differed from Honest Assessment scoreboard; resync already badged Reparametrization on Key Claims."}
+{"id": "U092", "mechanism": "PROPAGATION", "confidence": "MED", "why": "Error-bar deflation flagged in explorer 07-26 finding that page never absorbed until persona re-derived."}
+{"id": "U226", "mechanism": "ARGUMENT", "confidence": "LOW", "why": "Sentence retained at HEAD; adjacent 'any calibration' claim narrowed by re-derivation (rho/rho_crit scales 1/A)."}
+{"id": "U221", "mechanism": "PROPAGATION", "confidence": "MED", "why": "Same H0 deflation; explorer had flagged it 07-26, a day before box was written."}
+{"id": "U119", "mechanism": "PROPAGATION", "confidence": "HIGH", "why": "Read 'disfavored 2-6 sigma' a month after verdict revised elsewhere; page not updated."}
+{"id": "U182", "mechanism": "ARGUMENT", "confidence": "MED", "why": "Superseded by visitor-flagged correction on circular sensitivity and missing intervals; reasoning objection."}
+{"id": "U223", "mechanism": "ARGUMENT", "confidence": "MED", "why": "'Confirms equally' wrong: computed amplitudes differ 255x; fix from new calculation plus literature."}
+{"id": "U068", "mechanism": "ARGUMENT", "confidence": "MED", "why": "Implied compander-specific Cassini failure; new preregistered computation showed MOND functions fail equally."}
+{"id": "U154", "mechanism": "ARGUMENT", "confidence": "MED", "why": "80x claim holds only at one knee; published calibration excluded; re-derivation of prediction scope."}
+{"id": "U184", "mechanism": "PROPAGATION", "confidence": "MED", "why": "Preset list omitted galaxy preset the same description cites; list lagged actual tool presets."}
+{"id": "U194", "mechanism": "PROPAGATION", "confidence": "MED", "why": "Galaxy count resynced to sample actually run; 'net discriminating 0' echoed an already retracted claim."}
+{"id": "U024", "mechanism": "PROPAGATION", "confidence": "HIGH", "why": "Revision note: count now matches Honest Assessment scoreboard; '0 discriminators' read as retracted claim."}
+{"id": "U043", "mechanism": "PROPAGATION", "confidence": "LOW", "why": "Replaced by pointer to For Researchers 'Current state'; bounds likely existed there, but new arguments added too."}
+{"id": "U009", "mechanism": "PROPAGATION", "confidence": "LOW", "why": "'Not yet a result' consolidation to self-audit section; unclear whether other page already held it."}
+{"id": "U084", "mechanism": "PROPAGATION", "confidence": "MED", "why": "Artifact count four became five as list grew; sentence count lagged the numbered list."}
+{"id": "U136", "mechanism": "ARGUMENT", "confidence": "MED", "why": "'External domain-expert audit' misattributed; auditors were LLM agents; provenance re-read, not a sync."}
+{"id": "U008", "mechanism": "ARGUMENT", "confidence": "LOW", "why": "Present at HEAD within paragraph superseded by visitor-flagged reasoning correction; sentence itself largely retained."}
+{"id": "U161", "mechanism": "ARGUMENT", "confidence": "MED", "why": "Plotter curve was hand-tuned; published equation is inert; re-reading what tool computes, badge changed."}
+{"id": "U192", "mechanism": "ARGUMENT", "confidence": "LOW", "why": "EFE-degeneracy and 80x reach wrong in scope; Tier 1 pointer hints possible lag, not stated."}
+{"id": "U196", "mechanism": "PROPAGATION", "confidence": "MED", "why": "'Requires quantifying EFE divergence first' while same page says divergence computed 06-03."}
+{"id": "U112", "mechanism": "ARGUMENT", "confidence": "MED", "why": "3.3 sigma is prediction-data separation, not kill margin; misread statistic."}
+{"id": "U205", "mechanism": "PROPAGATION", "confidence": "MED", "why": "TEST-11 ID relabelled to TEST-25 in ID-collision sweep; superseded label."}
+{"id": "U089", "mechanism": "ARGUMENT", "confidence": "MED", "why": "Amplitude claim re-derived: depends on unfixed knee, published calibration excluded; no lag indicated."}
+{"id": "U191", "mechanism": "ARGUMENT", "confidence": "LOW", "why": "Reclassified from citable null to underpowered detector with CI; package doesn't show prior source."}

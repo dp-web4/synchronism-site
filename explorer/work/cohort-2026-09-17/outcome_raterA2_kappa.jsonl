@@ -1,0 +1,60 @@
+{"id": "U002", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; nearby corrections concern sample attribution and EFE, not this definitional sentence."}
+{"id": "U005", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; adjacent quantification note predates T0 and refines rather than retracts."}
+{"id": "U012", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with no bearing correction."}
+{"id": "U013", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; revision note concerns the following BTFR sentence, not this one."}
+{"id": "U017", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; surrounding 07-09 correction predates T0 and is the sentence's own frame."}
+{"id": "U019", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; revision note concerns symbol gamma->kappa, not this citation claim."}
+{"id": "U022", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; attribution withdrawal concerns a different sentence and predates T0."}
+{"id": "U024", "outcome": "CORRECTED", "err_dir": "NONDIRECTIONAL", "confidence": "LOW", "why": "Revision note: reparametrization count 6->5 and '0 discriminators' relabelled to 2 discriminated, both selected MOND; mixed direction."}
+{"id": "U027", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U029", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; adjacent scoreboard changed but not this sentence."}
+{"id": "U045", "outcome": "CORRECTED", "err_dir": "NONDIRECTIONAL", "confidence": "LOW", "why": "Badge legend definitions replaced with canonical definitions (e.g. Speculative, Failed meanings changed); label fix."}
+{"id": "U047", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U052", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U056", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U059", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; nearby 'could select' note concerns a different sentence."}
+{"id": "U061", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U062", "outcome": "UPDATED", "err_dir": "NA", "confidence": "MED", "why": "Description changed from four to five citable negative results, adding a new unidentifiability no-go."}
+{"id": "U063", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; nearby corrections concern R2=0.14, not this sentence."}
+{"id": "U064", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U068", "outcome": "CORRECTED", "err_dir": "TOO_NEGATIVE", "confidence": "MED", "why": "Framed Cassini failure as compander-specific beyond MOND-equivalence; HEAD says MOND's own functions fail equally; ID also relabelled."}
+{"id": "U071", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim in terms.ts; no correction visible in package."}
+{"id": "U079", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U080", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U086", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U087", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U095", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; notes predate T0."}
+{"id": "U097", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U098", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; revision note concerns other sentences in the box."}
+{"id": "U099", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U103", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U109", "outcome": "REWORDED", "err_dir": "NA", "confidence": "MED", "why": "Split by an inserted Hill-type precision note; audit-note claim still present unchanged."}
+{"id": "U111", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U121", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim in code comment."}
+{"id": "U126", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U130", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U131", "outcome": "REWORDED", "err_dir": "NA", "confidence": "MED", "why": "Moved into revisionNotes as stale after lead rewrite; tail-kill claim itself not retracted."}
+{"id": "U133", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U137", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; itself a pre-T0 correction note."}
+{"id": "U143", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "LOW", "why": "Reported present (normalized match) in another file; no HEAD context to see notes."}
+{"id": "U146", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U152", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U154", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "'Survives, 80x below reach' replaced: published calibration already excluded; survives only in near-Newtonian knee window."}
+{"id": "U158", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; nearby correction concerns 'no field equation'."}
+{"id": "U166", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U175", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Reported present (normalized match); no HEAD context."}
+{"id": "U178", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; nearby H0 correction is a different sentence."}
+{"id": "U189", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U192", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "Revision note: ~80x below reach holds only at one knee; published calibration already excluded; EFE-degeneracy reframed."}
+{"id": "U195", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U196", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "'Pending' and discrimination-after-quantifying replaced: no outcome selects the framework; wording corrected 2026-09-08."}
+{"id": "U205", "outcome": "CORRECTED", "err_dir": "NONDIRECTIONAL", "confidence": "MED", "why": "TEST-11 renumbered TEST-25 to resolve ID collision."}
+{"id": "U207", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U213", "outcome": "REMOVED_UNCLEAR", "err_dir": "NA", "confidence": "LOW", "why": "Whole active-test ranking emptied in 'rewrite uncorrected leads'; reason for this sentence unclear."}
+{"id": "U214", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U217", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U219", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no correction."}
+{"id": "U230", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; no correction note bearing on this sentence in package."}
+{"id": "U232", "outcome": "REWORDED", "err_dir": "NA", "confidence": "LOW", "why": "A2ACW section rewritten; HEAD still says scorer's novelty judgment does all the work."}
+{"id": "U233", "outcome": "CORRECTED", "err_dir": "TOO_NEGATIVE", "confidence": "LOW", "why": "Paragraph now marked superseded by correction noting audit finding points toward the framework."}
+{"id": "U234", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; nearby precision note concerns stand-in paragraph."}

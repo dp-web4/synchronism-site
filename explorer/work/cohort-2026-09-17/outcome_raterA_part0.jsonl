@@ -1,0 +1,60 @@
+{"id": "U000", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; nearby attribution correction concerns badge prior art, not the H0 bookkeeping claim."}
+{"id": "U001", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with identical context; no correction note."}
+{"id": "U002", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Definitional sentence present; adjacent correction predates T0 and concerns sample attribution."}
+{"id": "U003", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; adjacent notes are pre-T0 and do not revise the 51% TFR result claim."}
+{"id": "U004", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Glossary definition present verbatim, no revision note."}
+{"id": "U005", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "LOW", "why": "Present; quantitative BIC note existed at T0; added delta-k bookkeeping aside not labelled a correction."}
+{"id": "U006", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; speculative status unchanged."}
+{"id": "U007", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Code comment present verbatim."}
+{"id": "U008", "outcome": "CORRECTED", "err_dir": "NONDIRECTIONAL", "confidence": "LOW", "why": "Paragraph now tagged 'superseded by the correction above'; the control-arm framing was replaced by interval-based correction."}
+{"id": "U009", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "Replaced: 'not yet a result'; audits were LLM agents, no outside review; 'externally-audited' null contribution overclaimed."}
+{"id": "U010", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; failure statement unchanged."}
+{"id": "U011", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; adjacent 09-06 note concerns galaxy count, not this environment verdict."}
+{"id": "U012", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no revision note."}
+{"id": "U013", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present; adjacent revision note concerns the TEST-09 paragraph, not this sentence."}
+{"id": "U014", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; no change."}
+{"id": "U015", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "LOW", "why": "09-11 reconciliation: the 'substituted' run is run-as-registered against S177 claim, so census understated registered kills."}
+{"id": "U016", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; nearby relabel concerns withdrawn entry."}
+{"id": "U017", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present; part of pre-T0 correction, unchanged."}
+{"id": "U018", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Glossary text present verbatim."}
+{"id": "U019", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present; revision note is a symbol rename gamma to kappa, not this claim."}
+{"id": "U020", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; nearby BIC figure updated but cluster/offset sentence unaffected."}
+{"id": "U021", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U022", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present; adjacent notes predate T0."}
+{"id": "U023", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; added TEST-09 sigma qualifier is on a different clause."}
+{"id": "U024", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "Revision note: '6 reparametrizations, 0 discriminators' wrong; 2 discriminated and selected MOND; count fixed to 5."}
+{"id": "U025", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, no revision."}
+{"id": "U026", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Glossary text present verbatim."}
+{"id": "U027", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U028", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U029", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; scoreboard tweak in following sentence does not bear on parameter claim."}
+{"id": "U030", "outcome": "REWORDED", "err_dir": "NA", "confidence": "LOW", "why": "A2ACW section restructured; over-determination idea survives as H2 (auditor maps anything onto prior art)."}
+{"id": "U031", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U032", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "HEAD adds that one structural part is already answered no (single switch cannot span 80 decades); T0 left it open."}
+{"id": "U033", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; nearby revision notes concern discrimination counts, not this sentence."}
+{"id": "U034", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present; corrections adjacent predate T0."}
+{"id": "U035", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; open question unchanged."}
+{"id": "U036", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "Page advertised discriminating tests already closed on Tier 1; rewritten to zero active discriminating tests (propagation lag)."}
+{"id": "U037", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Sentence present; the following audit-count line changed, not the 1.4% claim."}
+{"id": "U038", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with pre-T0 alert."}
+{"id": "U039", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; package shows no revision."}
+{"id": "U040", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U041", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; added convention qualifier and re-run concern other sentences."}
+{"id": "U042", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, identical context."}
+{"id": "U043", "outcome": "CORRECTED", "err_dir": "TOO_NEGATIVE", "confidence": "LOW", "why": "Replaced: specificity not measured cleanly (J=0 literal, 1.0 steelmanned); 'discriminates nothing' asserted as measured failure."}
+{"id": "U044", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; no adjacent revision."}
+{"id": "U045", "outcome": "REWORDED", "err_dir": "NA", "confidence": "MED", "why": "Badge legend reworded to canonical definitions; same categories."}
+{"id": "U046", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U047", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U048", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; added epoch discussion does not revise the convention-free tail statement."}
+{"id": "U049", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U050", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U051", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; convention qualifier added to preceding sentence only."}
+{"id": "U052", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U053", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U054", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; new factor-2 caveat concerns 13% comparison, not classification."}
+{"id": "U055", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim."}
+{"id": "U056", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U057", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present; nearby EFE citation change is a different sentence."}
+{"id": "U058", "outcome": "REWORDED", "err_dir": "NA", "confidence": "MED", "why": "Reunified into one sentence: 2 discriminated both MOND, 0 could select Synchronism; same claim."}
+{"id": "U059", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; adjacent notes concern 'could select' wording and TEST-25, not RAR-shape claim."}

@@ -1,0 +1,120 @@
+{"id": "U000", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; no adjacent revision note on the CFD viscosity incompatibility."}
+{"id": "U001", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "LOW", "why": "Present; added caveat that presence is operationalized as density qualifies scope but does not say definition wrong."}
+{"id": "U002", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; added cross-reference to deeper structural failure does not revise this claim."}
+{"id": "U003", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; added physicist note concerns C vs phase coherence, not this presence definition."}
+{"id": "U004", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "'Still meaningful' 89% reading replaced by null-model problem: correlations reflect density-monotonicity, not the framework."}
+{"id": "U005", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U006", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U007", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; post-diction and prior-art framing already present at T0."}
+{"id": "U008", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "HIGH", "why": "'Genuine new prediction' replaced: MOND+EFE predicts same direction; discrimination requires excluding EFE."}
+{"id": "U009", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; nearby Landau framing retired but fractal-bridge/generic-sigmoid claim unchanged."}
+{"id": "U010", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; session and arc counts unchanged."}
+{"id": "U011", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U012", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U013", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; failure taxonomy table unchanged."}
+{"id": "U014", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; MOND-shared flag unchanged."}
+{"id": "U015", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; no revision note in HEAD context."}
+{"id": "U016", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U017", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U018", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U019", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U020", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U021", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U022", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U023", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U024", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U025", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; surrounding confirm branch revised for EFE, refute branch unchanged."}
+{"id": "U026", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; no adjacent revision note."}
+{"id": "U027", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U028", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U029", "outcome": "REWORDED", "err_dir": "NA", "confidence": "MED", "why": "Moved/condensed; Lelli n=3.85 consistency still stated, with MOND-shared reclassification added."}
+{"id": "U030", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U031", "outcome": "UPDATED", "err_dir": "NA", "confidence": "MED", "why": "Badge list replaced after later taxonomy governance change (MRH-relationship family, deprecations)."}
+{"id": "U032", "outcome": "UPDATED", "err_dir": "NA", "confidence": "MED", "why": "Badge definitions replaced by new two-family taxonomy adopted after T0."}
+{"id": "U033", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; added pre-registration note does not contradict that each test has a kill criterion."}
+{"id": "U034", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; nearby N_corr caveat does not revise this structural interpretation."}
+{"id": "U035", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U036", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U037", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U038", "outcome": "REWORDED", "err_dir": "NA", "confidence": "MED", "why": "Critical-exponent failure restated more strongly as RG-primary failure; same claim retained."}
+{"id": "U039", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U040", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "HIGH", "why": "'Novel-claim survival rate' relabelled internal-consistency survival rate, explicitly not a discovery rate."}
+{"id": "U041", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U042", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U043", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U044", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U045", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U046", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U047", "outcome": "REWORDED", "err_dir": "NA", "confidence": "MED", "why": "Parenthetical dropped and neighbouring wording edited; Gnosis convergence claim still made."}
+{"id": "U048", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U049", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Same caveat present verbatim at HEAD (two-reframes page)."}
+{"id": "U050", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U051", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "HIGH", "why": "EEG kill test withdrawn: wrong observable, no C calibration; claim unfalsifiable, not merely untested."}
+{"id": "U052", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U053", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "Acid-test framing replaced by honest classification: interpretation+methodology, 0 discriminators; Tier 1 cannot settle it."}
+{"id": "U054", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "HIGH", "why": "Entity criterion 'not from QFT' wrong: it is the standard narrow-width condition; reclassified reparametrization."}
+{"id": "U055", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U056", "outcome": "CORRECTED", "err_dir": "NONDIRECTIONAL", "confidence": "MED", "why": "'Quantum-classical boundary' relabelled sparse/collective crossover; C is not quantum coherence."}
+{"id": "U057", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U058", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U059", "outcome": "REWORDED", "err_dir": "NA", "confidence": "HIGH", "why": "Glossary rewritten in plain language; MRH-relative presence definition retained."}
+{"id": "U060", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; TEST-03 section unchanged."}
+{"id": "U061", "outcome": "CORRECTED", "err_dir": "NONDIRECTIONAL", "confidence": "MED", "why": "'tanh inflection point' corrected to output-range midpoint (geometric, not dynamical)."}
+{"id": "U062", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; no adjacent revision note."}
+{"id": "U063", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U064", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U065", "outcome": "REWORDED", "err_dir": "NA", "confidence": "MED", "why": "ΔBIC-missing note condensed; N=14,585 significance remark dropped, claim still stands."}
+{"id": "U066", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; added note on what A2ACW is does not revise the role description."}
+{"id": "U067", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; adjacent provenance-not-assurance note targets following sentence, not this one."}
+{"id": "U068", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U069", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U070", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; no revision note in HEAD context."}
+{"id": "U071", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U072", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U073", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U074", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U075", "outcome": "REWORDED", "err_dir": "NA", "confidence": "LOW", "why": "Generic intro removed in restructure; page still lists predictions with status."}
+{"id": "U076", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; results table unchanged."}
+{"id": "U077", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U078", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "HIGH", "why": "Entity criterion demoted on prior-art review; 'the one prediction that survived' was overstated."}
+{"id": "U079", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U080", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U081", "outcome": "REWORDED", "err_dir": "NA", "confidence": "HIGH", "why": "Same ΔBIC-not-quantified statement retained as 'ΔBIC note'."}
+{"id": "U082", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "Adjacent specification-gap note: dynamical decoupling already beats isolation; criterion non-discriminating as stated."}
+{"id": "U083", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; only neighbouring count wording edited."}
+{"id": "U084", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U085", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "Presented as pending kill test; HEAD notes it was already run and kill criterion triggered."}
+{"id": "U086", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "LOW", "why": "Present verbatim; no revision note in this HEAD context about the candidate prediction."}
+{"id": "U087", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; page withdrawal note does not revise this precision statement."}
+{"id": "U088", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U089", "outcome": "REWORDED", "err_dir": "NA", "confidence": "MED", "why": "Kill criterion rephrased for consistency (threshold clustering near 0.50); same test logic."}
+{"id": "U090", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U091", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U092", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim with unchanged context."}
+{"id": "U093", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "HIGH", "why": "'Derived, not fitted' replaced: motivated ansatz, CLT argument self-contradictory and sign inverted."}
+{"id": "U094", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U095", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U096", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "LOW", "why": "Present; nearby null-model note concerns correlations, not this boundary/template caveat sentence."}
+{"id": "U097", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; no revision note in HEAD context."}
+{"id": "U098", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; terminology note added to different entry."}
+{"id": "U099", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "HIGH", "why": "'89% validation rate' relabelled boundary-consistency rate with null-model caveat."}
+{"id": "U100", "outcome": "UPDATED", "err_dir": "NA", "confidence": "MED", "why": "Verdict rewritten after DESI DR1 adjudication (dated after T0) recorded one external refutation."}
+{"id": "U101", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U102", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U103", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U104", "outcome": "REMOVED_UNCLEAR", "err_dir": "NA", "confidence": "MED", "why": "Absent with no commit trace; reason not visible."}
+{"id": "U105", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged TEST-03 alert."}
+{"id": "U106", "outcome": "REMOVED_UNCLEAR", "err_dir": "NA", "confidence": "MED", "why": "Absent with no commit trace; reason not visible."}
+{"id": "U107", "outcome": "UPDATED", "err_dir": "NA", "confidence": "MED", "why": "Validated badge deprecated under new governance after audit; historical note keeps the point."}
+{"id": "U108", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "HIGH", "why": "'1.4% discovery rate' relabelled internal-consistency-survival rate, explicitly not discovery."}
+{"id": "U109", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim with unchanged context."}
+{"id": "U110", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; Bullet Cluster statement unchanged."}
+{"id": "U111", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; no adjacent revision note."}
+{"id": "U112", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; nearby count changed 4/4 to 6/6, sentence unaffected."}
+{"id": "U113", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U114", "outcome": "REWORDED", "err_dir": "NA", "confidence": "MED", "why": "Log step rewritten in plain English; regularizer remark dropped, not contradicted."}
+{"id": "U115", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U116", "outcome": "REWORDED", "err_dir": "NA", "confidence": "MED", "why": "Footer expanded to name six reparametrizations; same 'not on this page' claim."}
+{"id": "U117", "outcome": "CORRECTED", "err_dir": "NONDIRECTIONAL", "confidence": "LOW", "why": "ρ_crit entry relabelled saturation knee, not critical threshold; 'derived' phrasing dropped in terminology fix."}
+{"id": "U118", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U119", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "HIGH", "why": "'Genuinely novel, can discriminate' replaced: EFE gap makes tests possibly MOND+EFE degenerate; 04 withdrawn."}

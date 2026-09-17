@@ -1,0 +1,40 @@
+# 2026-09-17 runs (stdout). Aug cohort T0 fae5536, May cohort T0 8022b0e, HEAD pool 24b9c87
+pool=980 files=79 sample=240 seed=20260917
+    147  app/honest-assessment/page.tsx
+     71  lib/terms.ts
+     69  app/tier-1-existing/page.tsx
+     64  app/research-philosophy/page.tsx
+     61  app/for-researchers/page.tsx
+     45  app/galaxy-rotation/page.tsx
+     39  app/key-claims/page.tsx
+     34  app/parameter-derivations/page.tsx
+     32  app/falsifiability/page.tsx
+     26  app/a2acw/page.tsx
+     22  app/page.tsx
+     18  app/galaxy-plotter/page.tsx
+pool=306 files=64 sample=240 seed=20260917
+     28  app/research-philosophy/page.tsx
+     22  lib/terms.ts
+     18  app/honest-assessment/page.tsx
+     15  app/quantum-predictions/page.tsx
+     14  app/key-claims/page.tsx
+     13  app/dark-matter-failure/page.tsx
+     11  app/tier-1-existing/page.tsx
+     10  app/coupling-experiment/page.tsx
+     10  app/galaxy-rotation/page.tsx
+     10  app/handling-failure/page.tsx
+      7  app/cosmic-interference/page.tsx
+      7  app/page.tsx
+pool=1500 files=87 sample=120 seed=20260917
+    269  app/honest-assessment/page.tsx
+    118  app/tier-1-existing/page.tsx
+    117  app/for-researchers/page.tsx
+     92  lib/terms.ts
+     73  app/parameter-derivations/page.tsx
+     67  app/research-philosophy/page.tsx
+     54  app/key-claims/page.tsx
+     46  app/galaxy-rotation/page.tsx
+     46  app/page.tsx
+     38  app/galaxy-plotter/page.tsx
+     35  app/test-catalog/page.tsx
+     32  app/falsifiability/page.tsx

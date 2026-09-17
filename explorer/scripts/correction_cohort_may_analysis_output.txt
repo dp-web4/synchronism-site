@@ -1,0 +1,60 @@
+D1 applied: rater A CORRECTED 29 -> 29
+T0 rater A 240, rater B 0; outcome A 240, A2 0, B 0
+kappa T0 valence A-vs-B: nan (n=0)
+kappa T0 reflex A-vs-B: nan (n=0)
+kappa T0 form A-vs-B: nan (n=0)
+kappa outcome A-vs-A2: nan (n=0)
+kappa CORRECTED-vs-not A-vs-A2: nan (n=0)
+kappa err_dir on both-CORRECTED: nan (n=0)
+
+=== PRIMARY (T0 A, outcome A): verdict units with outcome = 162 ===
+valence: {'ANTI': 93, 'PRO': 50, 'NEUTRAL': 19}
+outcome: {'UNCHANGED': 122, 'CORRECTED': 22, 'REWORDED': 14, 'UPDATED': 3, 'REMOVED_UNCLEAR': 1}
+CORRECTED err_dir: {'TOO_POSITIVE': 19, 'NONDIRECTIONAL': 2, 'TOO_NEGATIVE': 1}
+valence x err_dir among CORRECTED: {('ANTI', 'TOO_POSITIVE'): 8, ('PRO', 'TOO_POSITIVE'): 10, ('PRO', 'NONDIRECTIONAL'): 2, ('NEUTRAL', 'TOO_NEGATIVE'): 1, ('NEUTRAL', 'TOO_POSITIVE'): 1}
+H1 primary: TOO_NEG|ANTI 0/93 = 0.000; TOO_POS|PRO 10/50 = 0.200; RR 0.03 [0.00, 0.43] Fisher p = 0.000
+   any-correction: ANTI 8/93, PRO 12/50; RR 0.37 [0.17, 0.82] Fisher p = 0.021
+H1 secondary: TOO_NEGATIVE 1/20 directional corrections; base rate p_anti = 0.650; expected 13.0; one-sided P(>= k) = 1.000
+H2 reflexivity:
+   SELF 5/37 = 0.135 vs PHYSICS 17/117 = 0.145; RR 0.98 [0.40, 2.37] Fisher p = 1.000
+H3 form:
+   CLASS|MODAL 10/68 = 0.147 vs NUMERIC 8/30 = 0.267; RR 0.55 [0.25, 1.23] Fisher p = 0.169
+H4: UPDATED 3/25 of claim-changed units = 0.12 (prediction >= 0.25)
+
+=== SENSITIVITY (T0 A, outcome A2 where coded): verdict units with outcome = 162 ===
+valence: {'ANTI': 93, 'PRO': 50, 'NEUTRAL': 19}
+outcome: {'UNCHANGED': 122, 'CORRECTED': 22, 'REWORDED': 14, 'UPDATED': 3, 'REMOVED_UNCLEAR': 1}
+CORRECTED err_dir: {'TOO_POSITIVE': 19, 'NONDIRECTIONAL': 2, 'TOO_NEGATIVE': 1}
+valence x err_dir among CORRECTED: {('ANTI', 'TOO_POSITIVE'): 8, ('PRO', 'TOO_POSITIVE'): 10, ('PRO', 'NONDIRECTIONAL'): 2, ('NEUTRAL', 'TOO_NEGATIVE'): 1, ('NEUTRAL', 'TOO_POSITIVE'): 1}
+H1 primary: TOO_NEG|ANTI 0/93 = 0.000; TOO_POS|PRO 10/50 = 0.200; RR 0.03 [0.00, 0.43] Fisher p = 0.000
+   any-correction: ANTI 8/93, PRO 12/50; RR 0.37 [0.17, 0.82] Fisher p = 0.021
+H1 secondary: TOO_NEGATIVE 1/20 directional corrections; base rate p_anti = 0.650; expected 13.0; one-sided P(>= k) = 1.000
+H2 reflexivity:
+   SELF 5/37 = 0.135 vs PHYSICS 17/117 = 0.145; RR 0.98 [0.40, 2.37] Fisher p = 1.000
+H3 form:
+   CLASS|MODAL 10/68 = 0.147 vs NUMERIC 8/30 = 0.267; RR 0.55 [0.25, 1.23] Fisher p = 0.169
+H4: UPDATED 3/25 of claim-changed units = 0.12 (prediction >= 0.25)
+
+CORRECTED units (primary):
+  U004 ANTI    SELF    CLASS     TOO_POSITIVE   MED | 'Still meaningful' 89% reading replaced by null-model problem: correlations reflect density-monotonicity, not the framework.
+  U040 PRO     SELF    NUMERIC   TOO_POSITIVE   HIGH | 'Novel-claim survival rate' relabelled internal-consistency survival rate, explicitly not a discovery rate.
+  U054 PRO     PHYSICS NUMERIC   TOO_POSITIVE   HIGH | Entity criterion 'not from QFT' wrong: it is the standard narrow-width condition; reclassified reparametrization.
+  U056 PRO     PHYSICS CLASS     NONDIRECTIONAL MED | 'Quantum-classical boundary' relabelled sparse/collective crossover; C is not quantum coherence.
+  U078 PRO     PHYSICS NARRATIVE TOO_POSITIVE   HIGH | Entity criterion demoted on prior-art review; 'the one prediction that survived' was overstated.
+  U093 PRO     PHYSICS CLASS     TOO_POSITIVE   HIGH | 'Derived, not fitted' replaced: motivated ansatz, CLT argument self-contradictory and sign inverted.
+  U099 PRO     PHYSICS NUMERIC   TOO_POSITIVE   HIGH | '89% validation rate' relabelled boundary-consistency rate with null-model caveat.
+  U108 ANTI    SELF    NUMERIC   TOO_POSITIVE   HIGH | '1.4% discovery rate' relabelled internal-consistency-survival rate, explicitly not discovery.
+  U117 PRO     PHYSICS CLASS     NONDIRECTIONAL LOW | ρ_crit entry relabelled saturation knee, not critical threshold; 'derived' phrasing dropped in terminology fix.
+  U119 PRO     PHYSICS CLASS     TOO_POSITIVE   HIGH | 'Genuinely novel, can discriminate' replaced: EFE gap makes tests possibly MOND+EFE degenerate; 04 withdrawn.
+  U130 ANTI    PHYSICS CLASS     TOO_POSITIVE   LOW | 'Landau-universal sigmoid near criticality' replaced by 'generic sigmoid on density-monotonic properties'; criticality attribution dropped.
+  U134 PRO     PHYSICS NARRATIVE TOO_POSITIVE   HIGH | 'Derived from mean-field theory/dimensional analysis' replaced by 'motivated by compander family' and 'calibrated to observational anchors'.
+  U146 NEUTRAL PHYSICS NARRATIVE TOO_NEGATIVE   LOW | 'Notation exercise and nothing more' replaced by interpretation+methodology classification as legitimate contributions.
+  U159 ANTI    PHYSICS MODAL     TOO_POSITIVE   LOW | '34 predictions' relabelled 'candidate predictions' since untestable without D and S.
+  U160 ANTI    PHYSICS CLASS     TOO_POSITIVE   HIGH | a0 changed from 1.2e-10 'derived' to 1.08e-10 from dimensional analysis, ~10% miss.
+  U168 NEUTRAL PHYSICS NUMERIC   TOO_POSITIVE   LOW | Key results summary now adds 'R2=0.14 — kill criterion triggered', previously omitted.
+  U187 PRO     SELF    NUMERIC   TOO_POSITIVE   MED | '1.4% discovery rate is normal' replaced; HEAD says not a discovery rate, 0 novel survivors.
+  U206 ANTI    SELF    MODAL     TOO_POSITIVE   HIGH | '1.4% discovery rate' relabelled internal-consistency-survival rate, not a discovery rate.
+  U216 PRO     PHYSICS NARRATIVE TOO_POSITIVE   HIGH | 'Validated at 89%, correctly identifies where' replaced by density-monotonic-by-construction caveat and failures.
+  U231 ANTI    PHYSICS CLASS     TOO_POSITIVE   HIGH | 'Post-dictions' corrected to reparametrizations of textbook results; earlier audit already found zero confirmed.
+  U236 ANTI    PHYSICS NUMERIC   TOO_POSITIVE   MED | 'Mean-field-derived tanh' corrected: compander with no critical point, not derived.
+  U239 PRO     PHYSICS NUMERIC   TOO_POSITIVE   MED | RAR environment scatter 'tested and supported' now listed as refutation (TEST-03 kill triggered).

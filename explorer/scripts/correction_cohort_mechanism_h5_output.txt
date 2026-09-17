@@ -1,0 +1,11 @@
+('ARGUMENT', 'NONDIRECTIONAL') 2 ['U008', 'U216']
+('ARGUMENT', 'TOO_NEGATIVE') 5 ['U068', 'U112', 'U182', 'U191', 'U226']
+('ARGUMENT', 'TOO_POSITIVE') 6 ['U089', 'U136', 'U154', 'U161', 'U192', 'U223']
+('PROPAGATION', 'NONDIRECTIONAL') 2 ['U194', 'U205']
+('PROPAGATION', 'TOO_NEGATIVE') 4 ['U043', 'U092', 'U119', 'U221']
+('PROPAGATION', 'TOO_POSITIVE') 8 ['U009', 'U024', 'U036', 'U084', 'U108', 'U123', 'U184', 'U196']
+('UNCLEAR', 'TOO_POSITIVE') 1 ['U015']
+
+2x2 directional only: PROP (TOO_POS 8, TOO_NEG 4); ARG (TOO_POS 6, TOO_NEG 5)
+odds ratio (Haldane) = 1.60; one-sided Fisher p (PROP enriched for TOO_POSITIVE) = 0.433
+prediction: OR > 1, one-sided p < 0.10

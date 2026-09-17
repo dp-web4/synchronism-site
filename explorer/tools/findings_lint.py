@@ -290,11 +290,50 @@ def rule_R5(path, lines):
     return hits
 
 
+# ------------------------------------------------------------------ R6 direction law without denominator
+# The first retired *inference* rather than a retired phrasing.  2026-07-09: "6/6 over-refutations" failed its base-rate
+# null (82% of verdict statistics face against the framework, p = 0.821^6 = 0.31).  The null lived in a memory store
+# that was stranded when the workspace moved (2026-09-04); by 09-07 the new store held "the site's characteristic error
+# is over-refutation" from eight numerator instances, and by 09-17 the maintainer log said "the credibility risk is now
+# entirely on the refutation side" (SESSION_FOCUS: "the eighth over-refutation in a row").  Measured 09-17 with two blind cohorts (explorer/scripts/correction_cohort_*):
+# over-refutation's share of directional corrections rose from 1/20 (May) to 9/24 (Aug), a real trend (p = 0.011),
+# but it is not the majority and the per-sentence correction hazard is flat (13.6% vs 15.1%).  "Characteristic",
+# "flipped", "entirely" were numerator words.  A claim that the program's errors run one way needs a denominator.
+# Positive controls (09-17): 4/4 known statements + SESSION_FOCUS "eighth over-refutation in a row"; corpus findings+logs:
+# 2 hits in 335 files (explorer log 09-07 streak tally = true positive; a quotation in the 07-09 null = false positive).
+DIRLAW = re.compile(
+    r"(over-?refutation|under-?refutation|over-?claim\w*)\s+(is|are|has become|remains?)\s+the\s+"
+    r"(live|characteristic|dominant|main|real|new|current)\s+(failure|error|risk)"
+    r"|characteristic error is (now )?over-?refut"
+    r"|error direction (has )?flipped"
+    r"|over-?refutations? in a row"
+    r"|risk (is|has moved) (now )?(entirely|mostly|all) (on|to) the\s+refutation side"
+    r"|\b(\d+)\s*(/|for|of)\s*\5\b[^.]{0,40}over-?refut"
+    r"|(every|all)( \w+){0,3} (errors?|breaks?|corrections?)( \w+){0,3} (over-?refute|point against|run against)",
+    re.I)
+DENOM = re.compile(r"denominator|base[- ]rate|cohort|hazard|\bnull\b|p_anti|per[- ]statement|exposure|"
+                   r"fails its|superseded|withdrawn|retired|R6", re.I)
+
+
+def rule_R6(path, lines):
+    """A directional error law ('over-refutation is the live failure mode', 'N/N over-refute') with no denominator,
+    base rate or cohort on the same line."""
+    hits = []
+    for k, (i, raw, masked) in enumerate(lines):
+        nxt_raw, nxt = (lines[k + 1][1], lines[k + 1][2]) if k + 1 < len(lines) else ("", "")
+        joined = masked + " " + nxt                    # prose is hard-wrapped at ~120 chars
+        m = DIRLAW.search(joined)
+        if m and m.start() < len(masked) and not DENOM.search(raw + " " + nxt_raw):
+            hits.append((i, m.group(0), raw.strip()[:110]))
+    return hits
+
+
 # ------------------------------------------------------------------ driver
 RULES = {"R1": ("PLACEHOLDER", rule_R1, "error"),
          "R2": ("UNTAGGED WINDOW", rule_R2, "error"),
          "R4": ("NO SAVED ARTIFACT", rule_R4, "warn"),
          "R5": ("CEILING BREACH", rule_R5, "warn"),
+         "R6": ("DIRECTION LAW, NO DENOMINATOR", rule_R6, "warn"),
          "R3": ("UNGROUNDED TABLE", rule_R3, "report")}
 
 

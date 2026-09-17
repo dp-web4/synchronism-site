@@ -1,0 +1,60 @@
+{"id": "U060", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; no adjacent note revising the stress-test tally."}
+{"id": "U061", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged surrounding text."}
+{"id": "U062", "outcome": "UPDATED", "err_dir": "NA", "confidence": "MED", "why": "Description went from four to five citable negatives after a new density-keyed unidentifiability no-go was added."}
+{"id": "U063", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; benchmark disclosure already existed at T0, no correction to this claim."}
+{"id": "U064", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Legend definition present verbatim, no revision."}
+{"id": "U065", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "AeST row present verbatim with same context."}
+{"id": "U066", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; new provenance note scopes the negative to the mechanism class, consistent with this sentence."}
+{"id": "U067", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Attribution-withdrawal note present verbatim."}
+{"id": "U068", "outcome": "CORRECTED", "err_dir": "TOO_NEGATIVE", "confidence": "LOW", "why": "Test ID fixed (TEST-11 to TEST-25); Cassini exposure no longer pinned on simple-mu landing, failure shared with MOND's own functions."}
+{"id": "U069", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Wrong-variable statement present verbatim, unchanged context."}
+{"id": "U070", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; no note on the Delta-BIC statement."}
+{"id": "U071", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Glossary entry present verbatim; no adjacent revision in package."}
+{"id": "U072", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim with unchanged context."}
+{"id": "U073", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "LOW", "why": "Adjacent correction note says the TDG intervals are nested, not a discriminating novel prediction; note dated at T0."}
+{"id": "U074", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same context."}
+{"id": "U075", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same context."}
+{"id": "U076", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present; new nearby precision note concerns Hill form, not this caveat."}
+{"id": "U077", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; revision note concerns other labels (anti-correlated, quantum/classical), not this sentence."}
+{"id": "U078", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; new caveat concerns A-dependence of a different sentence, verdict retained."}
+{"id": "U079", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same context."}
+{"id": "U080", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Cross-reference sentence present verbatim."}
+{"id": "U081", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present; the adjacent correction concerns the Lagrangian sentence, not parsimony."}
+{"id": "U082", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same caveat context."}
+{"id": "U083", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; added dependency note strengthens rather than revises this caveat."}
+{"id": "U084", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "LOW", "why": "Four artifacts became five numbered, with A2ACW demoted to 'not a citable null' and DESI made secondary."}
+{"id": "U085", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "LOW", "why": "Present; new note reassigns +184 to acceleration-keyed model but residual description still stands."}
+{"id": "U086", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Scope-demotion note present verbatim."}
+{"id": "U087", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same results table."}
+{"id": "U088", "outcome": "REMOVED_UNCLEAR", "err_dir": "NA", "confidence": "LOW", "why": "Paragraph rewritten around A2ACW control status; replacement for the 0-of-6 yield sentence not shown."}
+{"id": "U089", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "MED", "why": "Fixed Newtonian-null amplitude replaced: amplitude depends on knee; published calibration already excluded."}
+{"id": "U090", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; preceding contribution text reworded but boundary claim stands."}
+{"id": "U091", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim with the same caveats as at T0."}
+{"id": "U092", "outcome": "CORRECTED", "err_dir": "TOO_NEGATIVE", "confidence": "HIGH", "why": "'Above SH0ES by several sigma' was error-bar deflation; H0 77.6 +/- 15.5 is consistent with both."}
+{"id": "U093", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Open question present verbatim."}
+{"id": "U094", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same CHSH results."}
+{"id": "U095", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same context."}
+{"id": "U096", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same context."}
+{"id": "U097", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Legend definition present verbatim."}
+{"id": "U098", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present; revision note concerns the following TEST-02 sentence, not this one."}
+{"id": "U099", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same context."}
+{"id": "U100", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same context."}
+{"id": "U101", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present verbatim; no adjacent revision in package."}
+{"id": "U102", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "TeVeS row present verbatim."}
+{"id": "U103", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same context."}
+{"id": "U104", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; added note clarifies x-keying of the table, not this sentence's claim."}
+{"id": "U105", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same rows."}
+{"id": "U106", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same context."}
+{"id": "U107", "outcome": "CORRECTED", "err_dir": "NONDIRECTIONAL", "confidence": "LOW", "why": "Adjacent correction notes (pre-T0) say the R2/p statistics came from a morphology regression, not this test."}
+{"id": "U108", "outcome": "CORRECTED", "err_dir": "TOO_POSITIVE", "confidence": "HIGH", "why": "Revision note: 'genuinely novel, not tested' dropped; wide-binary depends on unfixed knee, resynchronization is dynamical decoupling."}
+{"id": "U109", "outcome": "REWORDED", "err_dir": "NA", "confidence": "HIGH", "why": "Both parts still present; a new precision note was inserted between them."}
+{"id": "U110", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Present; nearby galaxy-count fix does not bear on this chemistry text or the badge."}
+{"id": "U111", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Legend entry present verbatim."}
+{"id": "U112", "outcome": "CORRECTED", "err_dir": "TOO_NEGATIVE", "confidence": "MED", "why": "Revision note: 3.3 sigma is prediction-data separation, not kill margin; also not the only discriminating test."}
+{"id": "U113", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; the added currency note concerns DR2 products."}
+{"id": "U114", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim, same context."}
+{"id": "U115", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "MED", "why": "Definition present verbatim; new keying note bears on other sentences."}
+{"id": "U116", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim."}
+{"id": "U117", "outcome": "REWORDED", "err_dir": "NA", "confidence": "HIGH", "why": "Category renamed 'Getting Started' to 'Start Here' in comment; same claim."}
+{"id": "U118", "outcome": "UNCHANGED", "err_dir": "NA", "confidence": "HIGH", "why": "Present verbatim; the revision note concerns the preceding sentence."}
+{"id": "U119", "outcome": "CORRECTED", "err_dir": "TOO_NEGATIVE", "confidence": "HIGH", "why": "'Disfavored 2-6 sigma' was anchor-dominated and stale; verdict revised to non-discriminating, not disfavored."}

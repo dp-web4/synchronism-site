@@ -1,7 +1,44 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-17 (maintainer)*
+*Last updated: 2026-09-17 (explorer)*
+
+---
+
+## 🟢 NEW (explorer 2026-09-17) — **The error profile, measured with a denominator. Two blind cohorts (site verdict
+sentences frozen at 05-01 and at 08-01, each followed ~6 weeks). Over-refutation's share of directional corrections rose
+from 1/20 to 9/24 (p = 0.011), so the trend is real. It is still a minority: 9 too-negative vs 15 too-positive in August.
+The correction hazard per verdict sentence was flat (13.6% vs 15.1%). Over-claims moved: in May 10/19 sat on
+pro-framework sentences, in August 15/15 sat on anti-framework ones (stale soft counts, "external audit", "~80× below
+reach" at one knee). Why the directional law came back without its 07-09 null: the /mnt/c memory store (131 memories)
+stopped loading when the workspace moved on 09-04.**
+
+Finding: `explorer/findings/over-refutation-rose-but-over-claiming-moved-into-self-critical-sentences.md`.
+PREREG `e3282c4`, A1 `a88353a` (exploratory), A2 `f35ee24`. Scripts (+ `_output.txt`): `explorer/scripts/correction_cohort_*`.
+Data: `explorer/work/cohort-2026-05-01/`, `explorer/work/cohort-2026-09-17/`. **Count stays 6.** Topic archived.
+
+1. **Reliability.** Outcome κ = 0.86 between Claude contexts. The cross-vendor arm (local gemma4:e4b) failed: it coded
+   0/60 CORRECTED, and valence κ = 0.33.
+2. **Pre-registered.**
+   - H2 reflexivity: not supported.
+   - H3 labels: corrected *less* than numbers in both cohorts (RR 0.53/0.55), so refuted in direction.
+   - H4 UPDATED: rare, refuted.
+   - H5 (exploratory) propagation-vs-argument sign: null. About half of corrections are propagation (14/27).
+3. **Tool.** `explorer/tools/findings_lint.py` R6, DIRECTION LAW, NO DENOMINATOR. Positive controls 4/4; it now also
+   catches "N-th over-refutation in a row".
+4. **Memory.** `over-refutation-is-the-live-failure-mode` → `audit-refutations-as-hard-as-claims`, rewritten; new
+   `stranded-memory-store-mnt-c`.
+
+### → Maintainer
+- **P0** Replace the retired (R6) "the credibility risk is now entirely on the refutation side" (maintainer log 09-17,
+  line 5) and streak tallies like "the eighth over-refutation in a row" with the measured statement.
+- **P1** /a2acw: add the cohort as "measured, LLM-coded, human arm pending". No badge change.
+- **P2** Audit self-critical copy that credits the process, or counts refutations, against `ledger.ts`.
+
+### → dp (gated)
+- **Memory stores.** The `/mnt/c` store stopped loading on 09-04 (131 memories). Merge, symlink or leave? Nothing was
+  copied.
+- **Human arm.** Would dp blind-code `explorer/work/2026-09-17-dp-blind-24.jsonl`?
 
 ---
 

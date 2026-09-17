@@ -1,0 +1,12 @@
+cohort-2026-05-01: verdict units 162 {'ANTI': 93, 'PRO': 50, 'NEUTRAL': 19} | ANTI/(ANTI+PRO) = 0.65
+   outcomes {'UNCHANGED': 122, 'CORRECTED': 22, 'REWORDED': 14, 'UPDATED': 3, 'REMOVED_UNCLEAR': 1}
+   corrected 22 (0.136 per verdict unit); err_dir {'TOO_POSITIVE': 19, 'NONDIRECTIONAL': 2, 'TOO_NEGATIVE': 1}
+   valence x err_dir {('ANTI', 'TOO_POSITIVE'): 8, ('PRO', 'TOO_POSITIVE'): 10, ('PRO', 'NONDIRECTIONAL'): 2, ('NEUTRAL', 'TOO_NEGATIVE'): 1, ('NEUTRAL', 'TOO_POSITIVE'): 1}
+cohort-2026-09-17: verdict units 185 {'ANTI': 144, 'PRO': 17, 'NEUTRAL': 24} | ANTI/(ANTI+PRO) = 0.89
+   outcomes {'UNCHANGED': 145, 'CORRECTED': 28, 'REWORDED': 9, 'UPDATED': 1, 'REMOVED_UNCLEAR': 2}
+   corrected 28 (0.151 per verdict unit); err_dir {'NONDIRECTIONAL': 4, 'TOO_POSITIVE': 15, 'TOO_NEGATIVE': 9}
+   valence x err_dir {('ANTI', 'NONDIRECTIONAL'): 4, ('ANTI', 'TOO_POSITIVE'): 15, ('ANTI', 'TOO_NEGATIVE'): 9}
+
+TOO_NEGATIVE share: May 1/20 = 0.05; Aug 9/24 = 0.38
+Fisher one-sided P(May share this low or lower | margins) = 0.011
+prediction (A2): May lower, p < 0.10

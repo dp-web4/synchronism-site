@@ -1,0 +1,25 @@
+Starting Synchronism Explorer Session at Thu Sep 17 08:00:01 PDT 2026
+I ran the queue's HIGH correction-trail topic, but as a cohort study rather than a tally of corrections. Everything is committed and pushed (`8ac0f40`), and each design step was registered before its data was built.
+
+**Why I changed the design.** The program already ran this study on 07-09: "6/6 over-refutations" failed a base-rate null (p = 0.31). By today the same directional claim was back, with no denominator, in three places: the maintainer's log ("the credibility risk is now entirely on the refutation side"), my shared memory ("the site's characteristic error is over-refutation"), and the topic's H-a. None of them cited the July result. Coding corrections only samples things that were already caught, so I followed sentences forward instead. I froze the site's verdict sentences at 05-01 and at 08-01, had fresh subagents code them without knowing what happened later, and had other blind raters code what happened over the next ~6 weeks.
+
+**Results**
+- **The trend is real.** Over-refutation's share of directional corrections rose from 1 of 20 (May) to 9 of 24 (August), p = 0.011, so H-a holds. It's still a minority, though: "characteristic" and "entirely" don't survive. My own opening framing, that the whole narrative was a numerator artifact, was half wrong.
+- **The error rate didn't change:** 13.6% vs 15.1% of verdict sentences corrected per window.
+- **Over-claims moved rather than went away.** In May, 10 of 19 sat on sentences favourable to the framework. In August, all 15 sat inside self-critical sentences: stale soft counts, "external expert audit" when the auditors were LLM agents, and "~80× below reach" when that holds at only one parameter value.
+- **About half of corrections were propagation lag:** the right answer already existed elsewhere in the program.
+- **Most of my other predictions failed.** Claims about the program itself were not corrected more often than physics claims. Category labels were corrected less often than numbers, not more. Almost no changes came from new work rather than error. A propagation-vs-argument sign split was null.
+- **Rater agreement.** Two independent Claude contexts agreed well on outcomes (κ = 0.86). The local gemma4 model, used as a rater from a different vendor, failed: it never coded a single correction (κ = 0), and agreed poorly on whether a sentence favours the framework (κ = 0.33). On a site that keeps demoting itself, that polarity depends on who reads the sentence.
+
+**Why the July null was forgotten.** When the workspace moved from `/mnt/c/...` to `/home/dp/ai-workspace/` on 09-04, the old memory store stopped loading. It holds 131 memories, including the July null, and nothing is deleted. The new store re-derived a stronger version of the directional law within 3 days.
+
+**What I changed**
+- **Lint rule R6** in `explorer/tools/findings_lint.py`: warns on "errors run one way" claims that carry no denominator. It caught all 4 known cases. Across the explorer's 335 files it flags one real instance (the 09-07 log) and one false positive (a quotation).
+- **Shared memory:** renamed the directional memory to `audit-refutations-as-hard-as-claims` and rewrote it from the measured results. I also added a pointer memory to the old store and copied nothing from it.
+- **Hand-off:** I added an explorer block to SESSION_FOCUS with the maintainer actions, and archived the topic.
+
+**Decisions for you**
+1. **Old memory store:** should the 131 memories be merged, symlinked, or left where they are?
+2. **Human coding:** would you blind-code the 24 units in `explorer/work/2026-09-17-dp-blind-24.jsonl`? Every coder so far is an LLM, so these are LLM-measured rates of LLM errors until you do.
+
+The other HIGH topic (the Cassini/QUMOND closure) is deferred and still in the queue. Two connectors were unavailable and nothing today needed them: the claude.ai Google Drive connector needs authorizing in claude.ai settings, and the playwright server failed to connect because `npx` isn't on PATH.

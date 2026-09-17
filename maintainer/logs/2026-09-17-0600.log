@@ -1,0 +1,46 @@
+Starting Synchronism Maintainer Session at Thu Sep 17 06:00:01 PDT 2026
+I pushed today's maintainer session to both repos. The site build passes with zero errors. The site lint has 61 rules; checked against HEAD, today's new rules catch 21 old wordings, and the working tree has none.
+
+**Should MOND's Cassini failure count against Synchronism?** Both of today's expert visitor personas made the same point: the weak spots are now in the site's explanations of *why* things fail, not in its claims. They gave three incompatible explanations for the Solar System (Cassini) failure. So I pre-registered a test (committed before running) and ran MOND's own functions through the same code that produced the 17.95σ result:
+- **MOND fails the same test.** McGaugh's RAR function fails Cassini by +15.9σ to +20.9σ and Milgrom's simple function by +15.3σ to +20.1σ. The framework's function at its galaxy fit fails by +17.95σ.
+- **In both families, only the sharper-transition members pass.** On MOND's side that is δ = 4, and only at 3 of 6 settings. On the framework's side it is γ ≳ 1.5–2 (a scan I added after seeing results, and labelled that way), and the galaxy data already reject those.
+- **Result:** the Galaxy Plotter's "Cassini-safe" note and Honest Assessment's "MOND picks a different μ and survives" are both withdrawn. TEST-25 stays booked "inherited from MOND", and that is now literally true.
+
+I also checked whether TEST-09's kill depends on the 1/φ exponent the site already disowns. I wrote down my expectation first but didn't commit it, so treat this as a quick check. At the registered a₀ it doesn't: the slope is 3.348 with exponent 1 and 3.346 with 1/φ. With a₀ free, though, exponent 1 reaches a slope of 3.50. That misses the observed slope by 0.25, under the 0.3 kill threshold, so the published "no rescue for any φ" claim is narrower than written. The boost-ceiling argument is unaffected.
+
+**Site fixes**
+- **/wide-binaries rewritten.** MOND's prediction depends on where the binary sits (the external field effect). The density version's prediction depends on the knee density ρ_crit: at the published value the local boost is about 3.5×10⁴, already ruled out.
+- **Field-equation claims corrected** on MOND Unification and For Researchers:
+  - ∇·[C∇Φ] = 4πGρ conserves momentum only with the striction force included.
+  - It bends an external field rather than ignoring it, so "EFE = 0 exactly" holds only for the algebraic version.
+- **Tier 1 TEST-02:** fixed the inverted "boost never turns on". I also stripped raw `<strong>` tags that had been showing as text in the TEST-25 note since August.
+- **/a2acw:** brought up to date with For Researchers (0 of 9 survived, audits by AI agents, not a citable null).
+- **Globular-cluster window:** done per the explorer's priority list on Honest Assessment and For Researchers. It is labelled as a result without the striction force, with the stricter band, the unmodelled escaping stars, and a note that it isn't a prospective test.
+- **Done by three helper agents working on separate files:**
+  - Every page now has its own browser-tab title, and First Encounter's parts B–G are in the page HTML.
+  - A "not the quantum coherence you've heard of" note and a "does this replace dark matter?" box.
+  - Honest reading times on the Beginner path.
+  - Counts and labels that had drifted between pages now agree.
+- **Convention:** today's corrections sit in collapsed "Revision note" boxes. The existing inline history (180 dates on Honest Assessment) is not converted yet.
+
+**Research repo:** I back-annotated PREDICTIONS.md and the 08-24 EFE script, whose "5.6×10⁻¹³" only shows superposition. I also wrote a proposal: the persona argued the site's own record of hundreds of dated corrections is a better A2ACW experiment than the planned benchmark of famous discoveries, and I agree.
+
+**New explorer topics:**
+- What the galaxy data charge for the Cassini-passing functions in both families.
+- Coding the correction record, with a human-coded 10% for comparison.
+- Whether the dark-energy fit (which assumes clustering matter) and the "no dark matter" galaxy sector can both hold.
+- A prior-art check on the lemma that matter-driven dark energy can only cross w = −1 if its density has a peak.
+
+**Decisions for dp:**
+- Confirm TEST-25 stays "inherited from MOND" now that the asymmetry argument is withdrawn.
+- Should TEST-26 be pre-booked "inherited from ΛCDM"?
+- Should the density law's local exclusion at the published knee become a booked result?
+- Would you hand-code the human 10% of the correction-record study?
+
+**Not done:**
+- The Measurement page's reasoning still points the wrong way (more correlation makes things less classical).
+- Galaxy Plotter caption and toggle for the hand-tuned curve.
+- Breadcrumb links.
+- The deprecated "Validated" badges on /phase-transitions and /status-dashboard.
+
+The Google Drive connector needs authorization in your claude.ai connector settings, and the playwright server failed to start (npx not found); neither was needed today.

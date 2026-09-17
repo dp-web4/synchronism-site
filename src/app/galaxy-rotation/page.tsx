@@ -25,6 +25,17 @@ export default function GalaxyRotation() {
           baryonic mass, but systematically exceeds it below a critical scale.
         </p>
 
+        <div style={{ background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.95rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: 'var(--color-accent-blue)' }}>Does Synchronism replace dark matter? No, not on current evidence.</strong>{' '}
+          The idea was that gravity&apos;s strength depends on how densely matter is packed, which would make the extra
+          pull without invisible matter. Written that way, keyed on density, the equation does not fit galaxies. In a
+          real disc it barely changes gravity at all, which you can see on the{' '}
+          <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link>.
+          A version keyed on acceleration, with one dial fitted, does fit, but at that setting it is exactly MOND&apos;s
+          formula. So it carries MOND&apos;s successes and MOND&apos;s problems, including the Solar System test below, and it
+          never does better. Everything after this box is the technical detail behind those three sentences.
+        </div>
+
         <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#ef4444' }}>Read this first (promoted to the top 2026-07-23):</strong>{' '}
           the headline equation never reaches this page&apos;s observable. <strong>No algebraic chain from
@@ -366,58 +377,45 @@ export default function GalaxyRotation() {
             <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>{' '}
             and <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>.
           </div>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-            <strong>The fitted γ has a consequence beyond MOND-equivalence: the Solar System (TEST-25, added
-            2026-07-28).</strong> γ ≈ 0.49 landing on MOND&apos;s simple-μ family (q ≈ 1, above) is not merely a
-            reparametrization finding — it exposes the compander to a constraint that has nothing to do with
-            SPARC. Simple-μ&apos;s slow high-acceleration return is disfavored by planetary ephemerides
-            (Blanchet &amp; Novak 2011; Hees et al. 2016), because a slow return produces an anomalous
-            perihelion precession under the same Galactic external field that shapes the RAR. A pre-registered
-            joint squeeze (Cassini quadrupole bound vs the full SPARC-retained γ interval, ΔBIC ≤ 10 ⇒
-            γ = 0.425&ndash;0.600) found a <strong>robust empty intersection</strong>: every retained γ value
-            fails Cassini by +17.7σ to +18.0σ. No γ satisfies both galaxy rotation and the Solar System under
-            one scale-universal tanh-log QUMOND realization — this needs no new γ preference from SPARC, only
-            the one already fitted. See <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>{' '}
-            for the full scope statement (it closes the realization, not modified inertia, dark-matter models, or
-            the umbrella ontology).
-          </p>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            <strong>Why the intersection is empty (added 2026-07-30, visitor persona pass): a tail-shape
-            mismatch, not a tuning failure.</strong> The compander saturates as a <strong>power law</strong>,
-            1&minus;C = 2(1+x)<sup>&minus;2γ</sup>; <strong>McGaugh&apos;s RAR interpolating function</strong> &mdash;
-            ν(y) = [1&minus;e<sup>&minus;&radic;y</sup>]<sup>&minus;1</sup>, the one fitted to the observed
-            radial-acceleration relation &mdash; approaches Newtonian as an{' '}
-            <strong>exponential</strong>, ν&minus;1 ~ e<sup>&minus;&radic;x</sup>. At Saturn, x = g<sub>Saturn</sub>/a₀
-            &#8776; 6.5×10⁻⁵/1.2×10⁻¹⁰ &#8776; 5×10⁵. At the SPARC-preferred γ &#8776; 0.489 the compander&apos;s
-            fractional anomaly is &#8776;2·(5×10⁵)<sup>&minus;0.978</sup> &#8776; 5×10⁻⁶; the exponential form gives
-            e<sup>&minus;&radic;(5×10⁵)</sup> = e<sup>&minus;707</sup>, indistinguishable from zero at any precision.
-            The two tails are numerically identical over the SPARC range (10⁻² &lt; x &lt; 10²) — which is why
-            &ldquo;curve-equivalent to MOND&rdquo; holds there — but a power-law tail decays far slower than an
-            exponential one, so any sufficiently strong field separates them, and the Solar System is far enough
-            into that regime that the gap is five-plus orders of magnitude rather than a fitting margin. It is a
-            direct consequence of choosing a power-law compander for the deep-field limit — the same choice that gives
-            the bounded-C formulation its finite boost ceiling (B<sub>max</sub> = 1/Ω<sub>m</sub>, see{' '}
-            <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
-            Derivations</Link>). Full derivation back-annotated to the research archive alongside TEST-25&apos;s
-            registered result.
-            <em style={{ display: 'block', marginTop: '0.6rem', color: 'var(--color-text-secondary)' }}>
-              <strong style={{ color: '#f59e0b' }}>Naming corrected, and an overclaim removed, 2026-09-07.</strong>{' '}
-              This paragraph previously called the exponential function &ldquo;McGaugh&apos;s simple-μ&rdquo; and
-              called the power-law tail &ldquo;the framework&apos;s one genuinely non-MOND-degenerate piece of
-              physics.&rdquo; Both were wrong, and they were wrong together. Milgrom&apos;s <em>simple μ</em> = x/(1+x)
-              returns to Newtonian as a <em>power law</em>; the exponential belongs to McGaugh&apos;s RAR ν. So the
-              page was simultaneously asserting that the compander is simple-μ identically at γ = ½ (correct, and
-              stated above and on{' '}
-              <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>)
-              and that its power-law tail distinguishes it from simple-μ (false). The tail does not separate this
-              framework from MOND — it separates <em>one branch of MOND from another</em>, and it lands on the
-              branch Hees et al. (2016) already report as disfavored by planetary ephemerides for exactly this
-              reason. Read correctly the empty intersection is <em>more</em> inherited, not less: the compander is
-              in the simple-μ branch and the Solar System had already closed that branch.
-            </em>
-          </p>
+          <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginBottom: '1rem' }}>
+            <strong>The fitted γ has a consequence beyond MOND-equivalence: the Solar System (TEST-25).</strong>{' '}
+            A QUMOND interpolating function used for galaxies also acts in the Solar System. There the Galactic field
+            induces a small quadrupole in the Sun&apos;s potential, and Cassini bounds it. That quadrupole is set near
+            the Sun&apos;s MOND radius, √(GM☉/a₀) ≈ 7,000&nbsp;AU, where the Sun&apos;s field is about a₀, so it tests
+            the interpolating function <em>in its transition</em>. A pre-registered joint squeeze checked the Cassini
+            bound against the full SPARC-retained γ interval (ΔBIC ≤ 10 ⇒ γ = 0.425&ndash;0.600). It found a{' '}
+            <strong>robust empty intersection</strong>: at the SPARC fit the compander fails Cassini by +17.95σ
+            (unmarginalized; +17.7σ to +18.0σ across the interval).
+            <br /><br />
+            <strong>This failure is shared with MOND&apos;s own functions.</strong> On the same instrument, McGaugh&apos;s
+            RAR function ν = 1/(1&minus;e<sup>&minus;√y</sup>), the one fitted on this page, fails by +15.9σ to +20.9σ.
+            Milgrom&apos;s simple function fails by +15.3σ to +20.1σ. The grid covers a₀ ∈ {'{'}1.128, 1.20{'}'}×10⁻¹⁰ and
+            TEST-25&apos;s three external-field values. Desmond, Hees &amp; Famaey (2024, MNRAS 530, 1781) report 8.7σ after
+            marginalizing. In the δ-family, which contains McGaugh&apos;s function at δ = 1, nothing enters the Cassini 95%
+            interval until δ = 4, and then only at 3 of 6 grid points. Whether δ ≈ 4 still fits SPARC was not computed.
+            So TEST-25 closes one scale-universal tanh-log QUMOND realization, and it closes the RAR-preferred MOND
+            functions just as hard. See{' '}
+            <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>{' '}
+            for the scope statement (it does not reach modified inertia, dark-matter models, or the umbrella ontology).
+            Script and pre-registration: <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/cassini_q2_mond_interpolating_functions.py</code>.
+            <br /><br />
+            <strong>A separate, smaller effect: the direct tail.</strong> The compander returns to Newton as a power law,
+            1&minus;C ≈ 2(1+x)<sup>&minus;2γ</sup>, while McGaugh&apos;s function returns exponentially. At Saturn
+            (x ≈ 5×10⁵) that is a fractional anomaly ≈ 5×10⁻⁶ against e<sup>&minus;707</sup>. The difference is real,
+            but it is not the quantity TEST-25 computes, and it does not decide the Cassini verdict.
+            <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+              <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+              This box used to explain the empty intersection as a tail-shape mismatch, with the exponential tail
+              &ldquo;indistinguishable from zero at any precision.&rdquo; It concluded that the compander sits in the simple-μ branch
+              the Solar System had closed while McGaugh&apos;s branch survives. That compared the direct anomaly at Saturn, but
+              Cassini bounds the external-field quadrupole set near 7,000&nbsp;AU, and there McGaugh&apos;s function fails too.
+              A visitor persona (graduate physics) raised it, and a pre-registered run on TEST-25&apos;s instrument confirmed it.
+              An earlier correction on this box had already fixed the naming (simple μ returns as a power law; the
+              exponential return belongs to McGaugh&apos;s RAR ν).
+            </details>
+          </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
-            Net discriminating galaxy tests vs MOND: <strong style={{ color: '#ef4444' }}>0, by execution</strong>.
+            Galaxy tests that selected Synchronism over MOND: <strong style={{ color: '#ef4444' }}>0, by execution</strong> (this RAR-shape test cannot separate them at free γ).
             Script + full analysis: <code style={{ fontSize: '0.78rem' }}>explorer/scripts/rar_transition_shape_real_sparc.py</code>,
             finding: <code style={{ fontSize: '0.78rem' }}>explorer/findings/rar-transition-shape-real-sparc-result.md</code>.
           </p>

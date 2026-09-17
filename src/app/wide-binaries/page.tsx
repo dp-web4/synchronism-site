@@ -17,8 +17,9 @@ export default function WideBinaries() {
         <p>
           Wide binary star systems &mdash; two stars orbiting each other at separations of thousands
           of AU &mdash; provide one of the cleanest tests of gravity in the low-acceleration regime.
-          Synchronism makes a specific, testable prediction about these systems that differs from
-          both Newtonian gravity and standard MOND.
+          Synchronism&apos;s prediction for them depends on which version of its coherence function you use, and for
+          the density-keyed version, on a number the framework never fixed. This page sets out the versions and what
+          each one predicts.
         </p>
 
         <h2>Why Wide Binaries?</h2>
@@ -35,32 +36,44 @@ export default function WideBinaries() {
           of modified gravity.
         </p>
 
-        <h2>Synchronism&apos;s Prediction</h2>
+        <h2>What MOND predicts</h2>
         <p>
-          Standard MOND predicts the same anomaly regardless of where the binary system is located.
-          Synchronism predicts something different:
+          MOND&apos;s wide-binary prediction depends on location. A binary in the Solar neighbourhood also sits in the
+          Milky Way&apos;s own field, about 1.8&nbsp;a&#x2080;. That external field partly suppresses the boost (the External Field
+          Effect, EFE). With it, AQUAL and QUMOND predict a 1.0&ndash;1.4&times; boost in gravity at low internal
+          acceleration, depending on the treatment. Without the EFE the figure would be ~18% in velocity. The Chae vs
+          Banik dispute below is about that EFE-suppressed signal.
         </p>
 
+        <h2>Synchronism&apos;s Prediction: Two Versions</h2>
+        <div className="card" style={{ margin: '1.5rem 0' }}>
+          <h3 style={{ color: 'var(--color-accent-violet)' }}>Acceleration-keyed version (the one that fits galaxies)</h3>
+          <p style={{ color: 'var(--color-text-secondary)' }}>
+            At its SPARC fit this version is Milgrom&apos;s simple MOND function, so it predicts MOND&apos;s wide-binary boost,
+            EFE included. Here the test cannot separate it from MOND. It can only fail both together.
+          </p>
+        </div>
         <div className="card card-highlight" style={{ margin: '1.5rem 0' }}>
-          <h3 style={{ color: 'var(--color-accent-violet)' }}>Density-Dependent Anomaly</h3>
+          <h3 style={{ color: 'var(--color-accent-violet)' }}>Density-keyed version (the headline equation)</h3>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            The wide binary anomaly should <strong>depend on local environment density</strong>.
-            Binaries in dense stellar neighborhoods (near the Galactic plane, in open clusters)
-            should show a <em>weaker</em> anomaly than binaries in low-density environments
-            (high Galactic latitude, far from molecular clouds).
+            Here gravity is boosted by 1/C(&#x03C1;), where &#x03C1; is the local density. The boost does not depend on the
+            binary&apos;s internal acceleration at all, so wide binaries are not special: whatever boost holds at the local
+            density applies to every orbit there. Its size depends on the knee &#x03C1;<sub>crit</sub>. At the solar-neighbourhood
+            density &#x03C1; &asymp; 0.09&nbsp;M&#x2609;/pc&sup3; the velocity excess over Newton is:
           </p>
-          <p style={{ color: 'var(--color-text-secondary)' }}>
-            This follows directly from the coherence function: higher ambient density shifts
-            &#x03C1;<sub>crit</sub>, altering the acceleration threshold at which modified dynamics
-            appear. In dense environments, the external coherence field &ldquo;masks&rdquo; the
-            low-acceleration effects.
+          <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <li><strong>Published calibration</strong> &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2; = 1.5&times;10&sup3; M&#x2609;/pc&sup3; (Milky Way, &#x03B3; = 0.489):
+              <strong> +1.8&times;10&#x2074;%</strong>. That is a factor ~3.5&times;10&#x2074; in g, excluded by the Oort limit and Solar-System
+              ephemerides by orders of magnitude.</li>
+            <li>Measured velocity-blind knee, 0.161&nbsp;M&#x2609;/pc&sup3;: <strong>+116%</strong> (&#x03B3; = 0.489) or +18.6% (&#x03B3; = 2).</li>
+            <li>Refracted Gravity&apos;s elliptical-galaxy knee, 0.0083&nbsp;M&#x2609;/pc&sup3;: <strong>+9.4%</strong> (&#x03B3; = 0.489) or +0.005% (&#x03B3; = 2).</li>
+            <li>A near-Newtonian 0.05&ndash;0.4% needs a knee between 3.8&times;10&#x207B;&#x2075; and 3.2&times;10&#x207B;&#x2074;&nbsp;M&#x2609;/pc&sup3; (&#x03B3; = 0.489).
+              No other page uses a knee in that window, and it starts where the knee range ruled out on SPARC ends.</li>
+          </ul>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
+            Arithmetic: <code>maintainer/scripts/test02_amplitude_is_knee_conditional.py</code> and its output file; details on{' '}
+            <Link href="/tier-1-existing#TEST-02" style={{ color: 'var(--color-accent-blue)' }}>Tier 1, TEST-02</Link>.
           </p>
-          <p style={{ color: 'var(--color-text-secondary)' }}>
-            <strong>Predicted amplitude:</strong> In the clean within-250-pc Gaia sample, C(ρ) predicts
-            only <strong>0.05–0.4% velocity deviation</strong> from Newtonian dynamics — because the
-            C(ρ) prediction for wide binaries is effectively the Newtonian null (g_eff ≈ g_N at the relevant
-            densities). This is ~80× below Gaia DR3 wide-binary systematics. Cf. MOND prediction: ~18%
-            velocity enhancement. The amplitude difference is fundamental, not instrumental.</p>
         </div>
 
         <h2>The Data</h2>
@@ -93,7 +106,7 @@ export default function WideBinaries() {
           </div>
         </div>
 
-        <h2>Feasibility Kill — Signal Below Gaia Systematics</h2>
+        <h2>What the Density-Keyed Version Leaves Testable</h2>
         <div style={{
           background: 'rgba(239,68,68,0.07)',
           border: '1px solid rgba(239,68,68,0.3)',
@@ -103,16 +116,28 @@ export default function WideBinaries() {
           fontSize: '0.85rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: '#ef4444' }}>Feasibility kill (independent of the Chae–Banik dispute):</strong>{' '}
-          C(ρ) predicts a Newtonian null — only <strong>0.05–0.4% velocity deviation</strong> from Newtonian
-          dynamics — because low-density wide-binary environments give C ≈ 1 (near-Newtonian).
-          (Note: &ldquo;low-density&rdquo; here is relative to the galaxy outskirts where ρ<sub>crit</sub> is calibrated &mdash;
-          solar-neighborhood ρ sits <em>above</em> that ρ<sub>crit</sub>, placing it in the C≈1 near-Newtonian regime.)
-          Gaia DR3 systematics on clean wide-binary velocity samples are ~3–5%, placing the predicted
-          signal <strong>~80× below reach</strong>. Even if Chae (2023–2026) wins the observational dispute,
-          C(ρ) is refuted — it predicts the Newtonian null, not the MOND-scale anomaly Chae reports.
-          Even if Banik wins (no anomaly), C(ρ) survives but degenerately with Newton. <strong>No measurement
-          outcome selects Synchronism over the standard alternatives.</strong>
+          <strong style={{ color: '#ef4444' }}>At the framework&apos;s published calibration, the density law is already excluded locally.</strong>{' '}
+          No wide-binary sample is needed for that. At the other knees the site uses, the predicted boost is
+          9&ndash;116%, and Gaia can see that; a confirmed Newtonian null would exclude those knees too. Only the
+          otherwise-unused knee window above gives a signal below Gaia DR3 systematics (~3&ndash;5%). So no outcome
+          selects Synchronism: a MOND-scale anomaly favours MOND and the acceleration-keyed version equally, and a
+          Newtonian null favours Newton.
+          <p style={{ margin: '0.6rem 0 0' }}>
+            <strong>Why isn&apos;t the local exclusion booked as a refutation?</strong> This is not because it is weak. It is
+            cleaner than TEST-09&apos;s 3.3&sigma;. It is a consequence of the knee calibration &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, and
+            that calibration is already recorded as failed in the research ledger (its velocity exponent is excluded at
+            ~11&sigma;). The site counts executed tests grouped by root. Whether this becomes its own booked result is
+            ledger governance and gates on dp.
+          </p>
+          <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+            This box was titled &ldquo;Feasibility Kill &mdash; Signal Below Gaia Systematics&rdquo;. It said solar-neighbourhood
+            density sits above &#x03C1;<sub>crit</sub>, giving C&nbsp;&asymp;&nbsp;1, a 0.05&ndash;0.4% Newtonian null, and a signal ~80&times;
+            below Gaia&apos;s reach. At the published calibration the density sits far below the knee, so C&nbsp;&asymp;&nbsp;3&times;10&#x207B;&#x2075;
+            and the boost is maximal. The page also said &ldquo;Standard MOND predicts the same anomaly regardless of where the
+            binary system is located&rdquo;, which ignores the External Field Effect. Tier 1 carried the knee-conditional
+            correction from 2026-09-10. It reached this page on 2026-09-17, after a researcher visitor persona found both errors.
+          </details>
         </div>
 
         <h2>Current Observational Status (updated 2026-06-23)</h2>
@@ -159,12 +184,11 @@ export default function WideBinaries() {
           fontSize: '0.85rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: 'var(--color-accent-blue)' }}>MOND+EFE degeneracy (Bekenstein &amp; Milgrom 1984):</strong>{' '}
-          MOND+EFE predicts environment-dependent orbital dynamics in the same direction as Synchronism (weaker
-          anomaly in denser environments). The C(ρ) and MOND+EFE functional forms have been computed and
-          compared (2026-06-05): they make <em>opposite amplitude</em> predictions — C(ρ) predicts the
-          Newtonian null (~0.05–0.4%); MOND predicts ~18% enhancement. These are not degenerate in amplitude,
-          but C(ρ)'s predicted amplitude is ~80× below Gaia reach. The test cannot discriminate.
+          <strong style={{ color: 'var(--color-accent-blue)' }}>MOND+EFE and the density law (Bekenstein &amp; Milgrom 1984):</strong>{' '}
+          both predict weaker anomalies in stronger environments, but through different variables. MOND+EFE responds to
+          the external <em>acceleration</em>, and the density law responds to the local <em>density</em>. Their amplitudes
+          are not degenerate: MOND+EFE gives 1.0&ndash;1.4&times; in g, while the density law gives anything from its excluded
+          published value down to a Newtonian null, depending on the knee. The test separates them only once the knee is fixed.
         </div>
 
         <h2>Why This Test Cannot Be Decisive (As Currently Formulated)</h2>
@@ -172,17 +196,15 @@ export default function WideBinaries() {
           <div className="card">
             <h3 style={{ color: '#ef4444' }}>If anomaly confirmed (Chae wins)</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              C(ρ) predicts the Newtonian null — so a confirmed MOND-scale anomaly would
-              <strong> refute C(ρ)</strong> (it predicts ~0.05–0.4%, not ~18%). The &ldquo;kill branch&rdquo;
-              fires with existing data if Chae&apos;s deprojection approach is vindicated.
+              A confirmed EFE-suppressed MOND anomaly would support MOND and the acceleration-keyed version equally. For the
+              density law it would rule out the near-Newtonian knee window. The published calibration is already excluded.
             </p>
           </div>
           <div className="card">
             <h3 style={{ color: 'var(--color-text-secondary)' }}>If null confirmed (Banik wins)</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              C(ρ) survives — but degenerately with Newton. The predicted signal (0.05–0.4%)
-              sits 80× below Gaia DR3 systematics, so there is no measurement that selects
-              Synchronism over Newton.
+              The acceleration-keyed version fails together with MOND&apos;s simple function. The density law survives only
+              in the near-Newtonian knee window, where it cannot be told apart from Newton.
             </p>
           </div>
         </div>

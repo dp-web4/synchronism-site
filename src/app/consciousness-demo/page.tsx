@@ -124,7 +124,7 @@ export default function ConsciousnessDemo() {
           or IIT-&#x03A6; measurements to the C-axis.
           <p style={{ margin: '0.75rem 0 0 0' }}>
             <strong style={{ color: '#f59e0b' }}>Correction (2026-09-07) &mdash; the geometry argument this
-            caveat used to make was false at the framework&apos;s own best-fit &#x03B3;.</strong> Until today this
+            caveat used to make was false at the framework&apos;s own best-fit &#x03B3;.</strong> Before that date this
             box argued that &ldquo;dC/d&#x03C1; is maximized at &#x03C1; = 0, so there is no inflection point.&rdquo;
             That is true in <em>linear</em> &#x03C1; and irrelevant, because every plot on this site is in{' '}
             <em>log</em> &#x03C1;. Maximising dC/d(ln&#x03C1;) for C = tanh(&#x03B3;&thinsp;ln(1+u)), u = &#x03C1;/&#x03C1;<sub>crit</sub>,
@@ -133,13 +133,23 @@ export default function ConsciousnessDemo() {
             C = u/(u+2) = 0.5 and 1/(2&middot;&frac12;&middot;2) = 0.5). At &#x03B3; = 2 it moves to C* &#x2248; 0.60.
             So at the data-selected &#x03B3; &#x2248; &frac12; (not the framework&apos;s registered &#x03B3; = 2; &#x03B3; = &frac12;
             is also exactly MOND&apos;s simple interpolating function), C = 0.50 <em>is</em> the point of maximum
-            sensitivity of coherence to log-density &mdash; the one value in [0,1) that is dynamically distinguished.
+            sensitivity of coherence to log-density. That makes it dynamically distinguished <em>under a log-density
+            measure</em> (C* &#x2248; 0.498 at &#x03B3; = 0.489). On linear &#x03C1; the maximum sensitivity is at
+            &#x03C1; = 0, where C = 0, so the distinction depends on choosing log &#x03C1; as the measure. Nothing
+            yet makes log &#x03C1; the natural measure for a consciousness threshold.
             The <em>conclusion</em> of this caveat is unchanged and does not need the geometry argument: the eight
             &ldquo;methods&rdquo; inherit one calibration and none of them measures C, which is circularity, not
             coincidence. But the old rebuttal was wrong, and a reader who checked the derivative would have found
             the site refuting itself with false algebra. Over-refuting costs the same credibility as overclaiming.
             Raised by a visitor researcher persona, 2026-09-07.
           </p>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+            This sentence used to call C = 0.50 &ldquo;the one value in [0,1) that is dynamically distinguished&rdquo;,
+            without naming the measure. That is true only for sensitivity to log-density. A researcher visitor
+            checked C* = 1/(2&#x03B3;u*) (0.500 at &#x03B3; = &frac12;, 0.498 at 0.489, 0.60 at 2) and noted the
+            linear-&#x03C1; maximum is at C = 0.
+          </details>
           <p style={{ margin: '0.75rem 0 0 0' }}>
             <strong style={{ color: '#f59e0b' }}>Sharper (added 2026-08-08): the scatter is not just
             uninformative &mdash; it is too small to be honest.</strong> If the 8 approaches really were

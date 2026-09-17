@@ -17,6 +17,8 @@ export default function Home() {
         </h1>
         <p className="hero-subtitle">
           <strong>We proposed this. We tested it. It did not hold as stated. What follows is what we learned.</strong>{' '}
+          (The research, audits and computations are done by AI agents, with a human, dp, setting direction and
+          overseeing.){' '}
           The bet: a single dial &mdash; how coherently a system&apos;s parts act together, computed from its
           density &mdash; might explain what currently needs a separate patch at every scale (dark matter for
           galaxies, wavefunction collapse for quantum measurement). That is what the equation tried to do.
@@ -57,7 +59,14 @@ export default function Home() {
           Sparse, independent systems (stars in a galaxy) land near 0.
           Dense, tightly-coupled systems (inside a neutron star) land near 1.
           The equation below is how that number is computed.
-          <em> Note: &ldquo;coherence&rdquo; here is not quantum phase coherence</em> — superconductors are low-C in this framework.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0.75rem 0 0', padding: '0.5rem 0.75rem', background: 'rgba(56,189,248,0.06)', borderLeft: '2px solid rgba(56,189,248,0.4)', borderRadius: '0.25rem' }}>
+          <strong>Not the quantum coherence you&apos;ve heard of.</strong> If you know &ldquo;coherence&rdquo; from
+          quantum physics (decoherence, Schr&ouml;dinger&apos;s cat), this C is a <em>different quantity</em>, not the
+          same one and not its opposite: it measures how collectively a system&apos;s parts behave as density rises,
+          while quantum coherence measures whether a system keeps a shared quantum phase. The two are separate
+          axes, so a superconductor can be as quantum-coherent as matter gets and still score low C here (
+          <Link href="/coherence-explorer" style={{ color: 'var(--color-accent-blue)' }}>terminology note</Link>).
         </p>
       </section>
 
@@ -276,10 +285,16 @@ export default function Home() {
               <div style={{ flexBasis: '100%' }}>
                 Refutations executed <em style={{ color: 'var(--color-text-muted)' }}>(tests that could have killed the idea &mdash; and the idea failed them)</em>: <strong style={{ color: '#ef4444' }}>6</strong>{' '}
                 &mdash; <strong>in plain words: we ran six tests that could have shown it wrong, and it lost all six.</strong>{' '}
+                <span style={{ display: 'block', margin: '0.35rem 0', padding: '0.35rem 0.6rem', background: 'rgba(167,139,250,0.08)', borderLeft: '2px solid var(--color-accent-violet)', borderRadius: '0.25rem' }}>
+                  <strong>Why keep reading a theory with zero confirmed predictions?</strong> Because the autopsy is the
+                  product: you watch an idea taken apart honestly, and learn what that rules out for any theory of the same
+                  shape.{' '}
+                  <a href="#why-keep-reading" style={{ color: 'var(--color-accent-blue)' }}>Full answer &darr;</a>
+                </span>
                 Several share one underlying reason, so they come from <strong>5 independent &ldquo;roots&rdquo;</strong> (a root is one underlying reason for failing), only{' '}
-                <strong>2</strong> of them specific to this framework (5 used external data; 1 is a Bell/CHSH construction check).{' '}
+                <strong>2</strong> of them specific to this framework (5 used external data; 1 is a Bell/<a href="/glossary#CHSH" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>CHSH</a> construction check).{' '}
                 <strong>The six did not all test the same equation.</strong> Only the environment test touches the headline density law C(&rho;), and it refuted a registered amplitude the law itself never predicted; the law as written
-                loses separately (head-to-head on SPARC at &Delta;BIC +2843 with &gamma; free, and by placement at every point of the published grid),
+                loses separately (head-to-head on <a href="/glossary#SPARC" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>SPARC</a> at <a href="/glossary#%CE%94BIC" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>&Delta;BIC</a> +2843 with &gamma; free, and by placement at every point of the published grid),
                 and its one registered per-object test, globular clusters at &gamma; = 2, came back a{' '}
                 <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>fork</Link>, not a kill.
                 <details style={{ marginTop: '0.4rem' }}>
@@ -287,11 +302,11 @@ export default function Home() {
                   <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem', marginTop: '0.4rem' }}>
                     <thead><tr><th style={{ padding: '0.2rem 0.6rem 0.2rem 0', textAlign: 'left' }}>Test</th><th style={{ padding: '0.2rem 0.6rem 0.2rem 0', textAlign: 'left' }}>Realization tested</th><th style={{ padding: '0.2rem 0.6rem 0.2rem 0', textAlign: 'left' }}>Result (both numbers where they differ)</th><th style={{ padding: '0.2rem 0.6rem 0.2rem 0', textAlign: 'left' }}>Root</th></tr></thead>
                     <tbody>
-                    <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>BTFR slope (TEST-09)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>floored C = Ω<sub>m</sub> + (1−Ω<sub>m</sub>)·x/(1+x), x = (g<sub>bar</sub>/a<sub>0</sub>)<sup>1/φ</sup>; g<sub>obs</sub> = g<sub>bar</sub>/C; boost capped at 3.17×</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>predicted slope 3.35 vs data 3.75 ± 0.10 (3.3σ apart); registered |Δn| &gt; 0.3 met on the point estimate, ~1σ margin under V<sub>flat</sub> alone, robust under V<sub>max</sub></td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>boost ceiling</td></tr>
+                    <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}><a href="/glossary#BTFR" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>BTFR</a> slope (TEST-09)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>floored C = Ω<sub>m</sub> + (1−Ω<sub>m</sub>)·x/(1+x), x = (g<sub>bar</sub>/a<sub>0</sub>)<sup>1/φ</sup>; g<sub>obs</sub> = g<sub>bar</sub>/C; boost capped at 3.17×</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>predicted slope 3.35 vs data 3.75 ± 0.10 (3.3σ apart); registered |Δn| &gt; 0.3 met on the point estimate, ~1σ margin under V<sub>flat</sub> alone, robust under V<sub>max</sub></td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>boost ceiling</td></tr>
                     <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>Dwarf dark-matter fractions (TEST-10)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>same as TEST-09</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>SPARC&apos;s max f<sub>DM</sub> = 0.927 needs a boost ≥ 13.7; fails under either floor (1/Ω<sub>m</sub> = 3.17 or Ω<sub>m</sub>/Ω<sub>b</sub> ≈ 6.4)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>boost ceiling (same root)</td></tr>
-                    <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>RAR shape, γ = 2 pin (no TEST ID; closed 2026-05-21)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>tanh-log compander in μ-form, keyed on g<sub>obs</sub>/a<sub>0</sub>′, no floor</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>ΔBIC +184 vs MOND; free γ lands at 0.489 &asymp; MOND (identical at γ = ½; the fit is 2% away)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>γ = 2 pin</td></tr>
+                    <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}><a href="/glossary#RAR" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>RAR</a> shape, γ = 2 pin (no TEST ID; closed 2026-05-21)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>tanh-log compander in μ-form, keyed on g<sub>obs</sub>/a<sub>0</sub>′, no floor</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>ΔBIC +184 vs MOND; free γ lands at 0.489 &asymp; MOND (identical at γ = ½; the fit is 2% away)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>γ = 2 pin</td></tr>
                     <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>Environment amplitude (TEST-03s)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>registered &gt;20% effect of ambient density (S177)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>r² = 0.0001 vs the &gt;20% claim; the equation itself never predicted &gt;10<sup>−3</sup> dex</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>refuted registration</td></tr>
-                    <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>Cassini / SPARC squeeze (TEST-25)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>tanh-log compander in μ-form (as TEST-09&apos;s RAR row), Solar System quadrupole</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>SPARC-allowed γ fails Cassini at +17.95σ; simple-μ MOND already fails it</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>inherited from MOND</td></tr>
+                    <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>Cassini / SPARC squeeze (TEST-25)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>tanh-log compander in μ-form (as the Galaxy Rotation RAR-shape test), Solar System quadrupole</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>SPARC-allowed γ fails Cassini: 8.7σ as published by Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781; marginalized over a₀, M/L and RAR-fit uncertainty); this site&apos;s unmarginalized run gives +17.95σ (+17.7–18.0σ across the retained γ interval); simple-μ MOND already fails it</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>inherited from MOND</td></tr>
                     <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>Bell/CHSH (bet B1)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>local substrate constructions (phase and saturation-density), not the gravity law</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>S ≤ 2 on every arm, no signaling</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>construction check</td></tr>
                     </tbody>
                   </table>
@@ -305,6 +320,12 @@ export default function Home() {
                 </details>
                 <details style={{ marginTop: '0.3rem' }}>
                   <summary style={{ cursor: 'pointer' }}>Revision notes for this cell (history kept verbatim)</summary>
+                  <p style={{ margin: '0.4rem 0 0' }}>
+                    2026-09-17: the TEST-25 row read &ldquo;tanh-log compander in μ-form (as TEST-09&apos;s RAR row)&rdquo; and &ldquo;SPARC-allowed γ
+                    fails Cassini at +17.95σ.&rdquo; TEST-09 keys C explicitly on g<sub>bar</sub> with no implicit solve, so the comparison now points at
+                    the Galaxy Rotation RAR-shape fit, which is the implicit μ-form one; and the row now leads with the marginalized, published 8.7σ, as
+                    Honest Assessment does, with this site&apos;s unmarginalized +17.95σ second.
+                  </p>
                   <p style={{ margin: '0.4rem 0 0' }}>
                     2026-09-15: state separated from history after a technical-writer visitor found the cell unscannable, and a realization
                     column added after a graduate-physics visitor could not tell which equation each refutation hit. &ldquo;Registered kill fired
@@ -334,7 +355,7 @@ export default function Home() {
                 <details><summary style={{ cursor: 'pointer' }}>Revision notes</summary>2026-09-15: auditor named and the calibration statement corrected after a researcher visitor found /research-philosophy saying &ldquo;external domain-expert audit&rdquo; and &ldquo;the control was run&rdquo; while /for-researchers said it never was; the archive record shows LLM auditors and one self-scored in-distribution arm. The cell as it read before: &ldquo;Validated&rdquo; claims surviving audit: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 6</strong> — all demoted (current ledger: 5 reparametrizations; the sixth, the BTFR slope, moved to the refutation column 2026-07-14). Across <em>all</em> audited claims the canonical count is <strong>0 of 9</strong> (the 6 &ldquo;Validated&rdquo; plus 3 swept later &mdash; see the <Link href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</Link> section; this cell quoted only the 6-claim subtotal until 2026-09-08). Instrument-limited: the same audit false-flags 6/6 genuine discoveries as reparametrizations — kept in a separate cell from the data-driven refutations for that reason</details></span>
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>Full ledger &rarr;</Link>
             </div>
-            <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.6rem 0 0' }}>
+            <p id="why-keep-reading" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.6rem 0 0', scrollMarginTop: '5rem' }}>
               <strong>So is the idea alive or dead?</strong> As tested physics: dead — every decisive
               test it ran, it lost, and this site says so. As a public record of how you find that out
               honestly — and as an untested ontology whose few genuinely novel bets no instrument has

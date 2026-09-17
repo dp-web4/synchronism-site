@@ -12,6 +12,10 @@ const difficultyPaths = learningPaths.filter(p => p.kind === 'difficulty');
 const domainPaths = learningPaths.filter(p => p.kind === 'domain');
 
 type PathEntry = (typeof learningPaths)[number];
+// A step may name an in-page anchor to land on (e.g. a long page's summary box). Kept separate
+// from href because PathNav matches steps to pages by exact href.
+type StepWithAnchor = PathEntry['steps'][number] & { anchor?: string };
+const stepLink = (step: StepWithAnchor) => (step.anchor ? `${step.href}#${step.anchor}` : step.href);
 
 function PathCard({ path }: { path: PathEntry }) {
   return (
@@ -31,7 +35,7 @@ function PathCard({ path }: { path: PathEntry }) {
         {path.steps.map((step, i) => (
           <li key={step.href} style={{ marginBottom: '0.5rem' }}>
             <Link
-              href={step.href}
+              href={stepLink(step)}
               style={{
                 display: 'flex',
                 alignItems: 'center',

@@ -12,7 +12,7 @@ const GLOSSARY_TERM_COUNT = getAllTerms().length;
 export const metadata: Metadata = {
   title: {
     template: '%s | Synchronism',
-    default: 'Synchronism | What If One Equation Described Every Scale?',
+    default: 'Synchronism | What if one equation described reality from quantum to cosmic?',
   },
   description:
     "Synchronism: a proposed one-equation framework, tested in public — what it claimed, where it failed, and what the failures rule out for any theory of its shape. Interactive tools, an honest assessment, and a prediction ledger.",

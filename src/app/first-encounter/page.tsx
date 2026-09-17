@@ -64,7 +64,6 @@ const steps = [
 
 export default function FirstEncounter() {
   const [step, setStep] = useState(0);
-  const current = steps[step];
 
   return (
     <>
@@ -107,8 +106,15 @@ export default function FirstEncounter() {
         Beginner / Intermediate / Advanced routes with 6–8 steps each.
       </p>
 
+      {/* All parts are in the server HTML (crawlers and no-JS readers get A–G); the stepper only
+          toggles which one is displayed. Without JS, the noscript rule shows every part and hides the
+          stepper controls, which would do nothing. */}
+      <noscript>
+        <style>{'.fe-part{display:block !important}.fe-stepper-nav{display:none !important}'}</style>
+      </noscript>
+
       {/* Progress */}
-      <div style={{
+      <div className="fe-stepper-nav" style={{
         display: 'flex',
         gap: '0.25rem',
         marginBottom: '2rem',
@@ -132,8 +138,15 @@ export default function FirstEncounter() {
         ))}
       </div>
 
-      {/* Current Step */}
-      <div className="card card-highlight" style={{ marginBottom: '2rem', minHeight: '200px' }}>
+      {/* Parts */}
+      {steps.map((part, i) => (
+      <section
+        key={part.title}
+        id={`part-${String.fromCharCode(97 + i)}`}
+        aria-label={`Part ${String.fromCharCode(65 + i)}: ${part.title}`}
+        className="card card-highlight fe-part"
+        style={{ marginBottom: '2rem', minHeight: '200px', display: i === step ? undefined : 'none' }}
+      >
         <div style={{
           display: 'flex',
           justifyContent: 'space-between',
@@ -141,7 +154,7 @@ export default function FirstEncounter() {
           marginBottom: '1rem',
         }}>
           <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            Part {String.fromCharCode(65 + step)} of {steps.length} (A&ndash;{String.fromCharCode(64 + steps.length)})
+            Part {String.fromCharCode(65 + i)} of {steps.length} (A&ndash;{String.fromCharCode(64 + steps.length)})
           </span>
           <span style={{
             padding: '0.25rem 0.75rem',
@@ -152,15 +165,15 @@ export default function FirstEncounter() {
             fontFamily: "'Times New Roman', serif",
             fontStyle: 'italic',
           }}>
-            {current.highlight}
+            {part.highlight}
           </span>
         </div>
 
-        <h2>{current.title}</h2>
+        <h2>{part.title}</h2>
         <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8, whiteSpace: 'pre-line' }}>
-          {current.content}
+          {part.content}
         </p>
-        {step === 1 && (
+        {i === 1 && (
           <>
             <div style={{ marginTop: '1rem', padding: '0.6rem 1rem', background: 'rgba(56,189,248,0.07)', borderRadius: '0.375rem', fontSize: '0.85rem' }}>
               <strong>Try it: </strong>
@@ -175,17 +188,18 @@ export default function FirstEncounter() {
             </details>
           </>
         )}
-        {step === 2 && (
+        {i === 2 && (
           <div style={{ marginTop: '1rem', padding: '0.6rem 1rem', background: 'rgba(56,189,248,0.07)', borderRadius: '0.375rem', fontSize: '0.85rem' }}>
             <strong>Try it: </strong>
             <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>γ Calculator</Link>
             {' '}— click any preset (Ideal Gas, Water, BEC) to see γ and its regime.
           </div>
         )}
-      </div>
+      </section>
+      ))}
 
       {/* Navigation */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
+      <div className="fe-stepper-nav" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
         {step > 0 ? (
           <button
             className="btn-secondary"

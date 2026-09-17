@@ -5,7 +5,7 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
 export const metadata: Metadata = {
-  title: 'For Researchers: What\'s Citable — Synchronism',
+  title: 'For Researchers: What\'s Citable',
   description: 'Five citable negative results extracted from the failure documentation: the local-density locality no-go, dim-4 LIV naturalness gap for absolute-time substrates, the B1 CHSH check (Bell illustrated; two nonlocal construction nulls), density-keyed unidentifiability (knee above the sampled density ⇒ interpolant unmeasurable), and the globular-cluster exclusion window on density-keyed knees. Plus one secondary DESI mechanism-class negative and one open question about the audit instrument (A2ACW), which is not a citable null.',
 };
 
@@ -323,12 +323,16 @@ export default function ForResearchers() {
             separate external-acceleration from ambient-density coupling is queued as a research check.)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            <strong>EFE = 0 survives the momentum-conservation objection (2026-08-04):</strong> the algebraic
-            g = g<sub>bar</sub>/C(ρ) modification above looks unsourced, but a field-equation completion exists
-            (&nabla;&middot;[C(ρ)&nabla;Φ] = 4πGρ) that conserves momentum and is linear in Φ &mdash; which
-            preserves EFE = 0 exactly while also being why the exterior field of an isolated mass diverges as
-            ρ&nbsp;&rarr;&nbsp;0. See the full derivation on{' '}
-            <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>MOND Unification</Link>.
+            <strong>The field-equation completion, stated carefully:</strong> the algebraic
+            g = g<sub>bar</sub>/C(ρ) has a field-equation completion, &nabla;&middot;[C(ρ)&nabla;Φ] = 4πGρ, which is linear in Φ.
+            It conserves momentum only in spherical symmetry or with the variational striction force included. The net
+            self-force is &minus;(1/8πG)&int;|&nabla;Φ|²&nabla;C d³x, and striction cancels it exactly. Linearity gives
+            superposition, not EFE&nbsp;=&nbsp;0: an external field is refracted wherever &nabla;C &ne; 0, giving a linear EFE of
+            order g<sub>ext</sub>&Delta;C/C without striction and a nonlinear one with it. EFE&nbsp;=&nbsp;0 exactly holds for the
+            algebraic reading only. Details and the floored/unfloored scope:{' '}
+            <Link href="/mond-unification#field-equation" style={{ color: 'var(--color-accent-blue)' }}>MOND Unification</Link>.
+            (This paragraph used to say the completion &ldquo;conserves momentum&rdquo; and &ldquo;preserves EFE = 0 exactly&rdquo;;
+            both were overstatements.)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Prior-art audited (2026-07-23):</strong> the Milgrom surface-density and modified-inertia
@@ -479,7 +483,7 @@ export default function ForResearchers() {
               <em>SME Data Tables</em> (Kostelecký &amp; Russell, <em>Rev. Mod. Phys.</em> 83, 11 (2011), updated 2024).
               The framework&apos;s absolute-time / universal-clock commitment gives up boost invariance —
               the minimal custodial protector against radiative generation of this coefficient
-              (Collins–Perez–Sudarsky–Gambini–Pullin, <em>PRL</em> 93, 191301 (2004)).
+              (Collins, Perez, Sudarsky, Urrutia &amp; Vucetich, <em>PRL</em> 93, 191301 (2004)).
               <strong> Verdict: severe naturalness/fine-tuning gap (CPSU 2004).</strong>{' '}
               Computation (2026-06-26 explorer): tree-level c<sub>&#x03BC;&#x03BD;</sub>=0 by single-substrate universality (no species-dependent k² coefficient at tree level). One-loop correction is UV-dominated and Planck-cutoff-independent: c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;&#x03B1;/&#x03C0;&nbsp;~&nbsp;10<sup>&#x2212;2</sup>–10<sup>&#x2212;3</sup>. Existing bounds: ≲10<sup>&#x2212;18</sup> (cavity MM), ≲10<sup>&#x2212;29</sup>–10<sup>&#x2212;30</sup> (nucleon comagnetometer). Fine-tuning gap: <strong>16–28 orders of magnitude</strong>. Two standard perturbative custodial escapes exist in the literature but are unexhibited in this framework: (1) <strong>SUSY</strong> (Groot Nibbelink &amp; Pospelov, <em>PRL</em> 94, 081601, 2005): forbids dim-3/4 LV operators entirely; (2) <strong>Anisotropic scale-hierarchy</strong> (Pospelov &amp; Shang, <em>PRD</em> 85, 105001, 2012): demonstrated for Hořava–Lifshitz gravity (the canonical absolute-time class) — separates the LV-generating scale from the electroweak scale via Λ_HL ≪ M_pl, suppressing SM-sector LV perturbatively without restoring boost invariance. The framework adopts neither: single-substrate universality is itself the obstacle to a Λ_HL ≪ M_pl scale separation. Status: <em>open custodial-mechanism gap, not a closed refutation.</em>
             </li>
@@ -628,11 +632,11 @@ export default function ForResearchers() {
             <strong>Citable form:</strong> for any theory of the form g = g<sub>N</sub>/C(ρ) with a floored tanh-in-log-density
             switch (the same family as Refracted Gravity&apos;s permittivity, but <em>identical</em> to it only at γ = Q = ½ with the
             knee rescaled 2×: below the knee the tanh-log form is linear in ρ at every γ, while RG goes as ρ<sup>2Q</sup>),
-            <em>evaluated on each cluster in isolation, with no smoothing (D ≲ 10 pc), and on a post-hoc ratio criterion with no σ</em>,
+            <em>evaluated under L2 dynamics (algebraic, or the field equation without striction), on each cluster in isolation, with no smoothing (D ≲ 10 pc), without potential escapers, and on a post-hoc ratio criterion with no σ</em>,
             the outer velocity-dispersion slopes of 42 Galactic globular clusters exclude a knee density
             <strong> ρ<sub>c</sub> ∈ 0.1–300 M<sub>☉</sub>/pc³ (6.8×10⁻²⁴ – 2×10⁻²⁰ g/cm³)</strong> at a switch sharpness
             γ = 0.489 (Hill index 2γ ≈ 1 in (1+ρ/ρ<sub>c</sub>), not in ρ/ρ<sub>c</sub>), narrowing to 0.5–100 M<sub>☉</sub>/pc³ at γ = 2. &ldquo;Excluded&rdquo; = slope mismatch
-            more than twice that of MOND with the external field effect, which these data admit (−0.093 vs Newtonian −0.057).
+            more than twice that of MOND with the external field effect, which these data admit (−0.093 vs Newtonian −0.057). <strong>Under L3 (striction included) this band does not hold:</strong> it becomes 0.031–0.196 M<sub>☉</sub>/pc³ at γ = 0.489, with no passing knee, and the outer shells stop being bound (caveat iii below).
             <strong>Refracted Gravity is not excluded:</strong> its published ρ<sub>c</sub> = 10⁻²⁴·²⁵ g/cm³ = 0.0083
             M<sub>☉</sub>/pc³ lies below the excluded window, and every value in that set&apos;s 1σ range
             (0.0052–0.0158 M<sub>☉</sub>/pc³) scores within MOND+EFE&apos;s mismatch on the same statistic. <em>Provenance
@@ -645,6 +649,13 @@ export default function ForResearchers() {
             not contain (see the next paragraph); (ii) the window assumes density is read pointwise or smoothed over ≲ 10 pc, and
             at that smoothing the same equation makes halo clusters orbit at ~0.6 of the field acceleration felt by diffuse tracers,
             which Milky Way cluster and star kinematics disfavour at ~2σ (post-hoc).
+            <strong> (iii) The window is an L2 object.</strong> Under the action, with striction included (L3), the knee shell is 1.7&ndash;13&times; gravity
+            in striction with net outward force. 18 of 27 verdicts on the γ&nbsp;=&nbsp;0.489 row change, the excluded band becomes 0.031&ndash;0.196&nbsp;M<sub>☉</sub>/pc³,
+            no knee passes, and with Plummer tails up to 39 of 42 clusters have outward net gravity (explorer, 2026-09-16).
+            <strong> (iv) Potential escapers</strong> (energetically unbound stars inside r<sub>t</sub>; Küpper et al. 2010; Claydon, Gieles &amp; Zocchi 2017)
+            are the known Newtonian flattening of outer σ(r). They are not in the mock. <strong>(v) Not prospective:</strong> Session 611 registered
+            γ only, and the knee, floor and dynamics were chosen after, and they span pass to excluded. The criterion is a post-hoc ratio with
+            no σ. Cite it as an L2 window, not as an exclusion.
             This sits beside the B<sub>max</sub> ≲ 14 bound from SPARC dwarfs as the second class-level constraint this
             program has produced.
           </p>

@@ -13,10 +13,22 @@ export default function CoreIdea() {
       <PathNav currentPath="/core-idea" />
 
       <h1>The Core Idea</h1>
-      <p className="hero-subtitle" style={{ marginBottom: '2rem' }}>
+      <p className="hero-subtitle" style={{ marginBottom: '1rem' }}>
         One function, proposed for every scale from Planck to cosmic &mdash; what it says, where it was
         tested, and where it broke.
       </p>
+
+      <div className="content-width" style={{ fontSize: '0.82rem', color: 'var(--color-text-secondary)', margin: '0 0 1.75rem', padding: '0.6rem 0.9rem', borderLeft: '2px solid var(--color-accent-blue)', background: 'rgba(56,189,248,0.05)', borderRadius: '0.25rem', lineHeight: 1.7 }}>
+        <strong>Badge key</strong> (you&apos;ll meet these below). The colored leading word is the verdict; any text after the dash just names the specific finding.
+        <br />
+        <span className="badge badge-failed">Failed</span> contradicted by data &middot;{' '}
+        <span className="badge badge-reparametrization">Reparametrization</span> existing physics in new notation (&ldquo;Null-Class&rdquo;: a simpler model without the framework does as well) &middot;{' '}
+        <span className="badge badge-audited-negative">Audited-Negative</span> an internal check found the claim wrong; kept on record &middot;{' '}
+        <span className="badge badge-speculative">Speculative</span> no test exists &middot;{' '}
+        <span className="badge badge-untested">Untested</span> a test exists but hasn&apos;t been run
+        <br />
+        Full definitions: <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>badge definitions</Link> on Honest Assessment; terms are defined in the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
+      </div>
 
       <section className="section content-width">
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1.25rem', fontSize: '1.05rem' }}>
@@ -303,20 +315,39 @@ export default function CoreIdea() {
           Landau machinery to borrow authority from. See{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</Link>.
           <p style={{ marginTop: '0.85rem', marginBottom: 0 }}>
-            <strong>The data say the same thing, independently (added 2026-08-08).</strong> Written as a Hill
-            function the exponent is the Hill index n&nbsp;=&nbsp;2&#x03B3;. Fit freely to SPARC, the galaxy
-            sector prefers &#x03B3;&nbsp;&#x2248;&nbsp;0.489, i.e.{' '}
-            <strong>n&nbsp;&#x2248;&nbsp;0.98&nbsp;&#x2248;&nbsp;1</strong> &mdash; and n&nbsp;=&nbsp;1 is the{' '}
-            <em>non-cooperative</em> limit of a Hill function, the value that means <em>no collective
-            effect</em>. The framework&apos;s whole distinctive claim is that density drives a{' '}
-            <em>collective</em> transition. Its own best fit sets cooperativity to zero. That is the criticality
-            retraction above arriving a second time, through the data rather than through the algebra. At exactly
+            <strong>The data say the same thing, independently.</strong> The framework&apos;s whole distinctive claim is
+            that <em>density</em> drives a <em>collective</em> transition. Tested in the density variable itself, the
+            data reject that: fit head-to-head on the same SPARC galaxy points with &#x03B3; free, the density-keyed law
+            loses to the acceleration-keyed one at <strong>&#x0394;BIC +2843</strong> (+142 after allowing for
+            neighbouring points on a rotation curve not being independent), and its best-fit &#x03B3; runs down
+            to <strong>0.046</strong> &mdash; the fit switches its own density dependence off.{' '}
+            <strong>In plain words: when the density version is allowed to choose, it chooses to barely respond to
+            density at all &mdash; the best fit says the parts don&apos;t switch to acting together, the opposite of the
+            idea.</strong> That is the criticality retraction above arriving a second time, through the data rather than
+            through the algebra.
+          </p>
+          <p style={{ marginTop: '0.6rem', marginBottom: 0 }}>
+            The better-known galaxy fit, &#x03B3;&nbsp;&#x2248;&nbsp;0.489, is a different law: there the same tanh-log
+            shape is keyed on <em>acceleration</em> and used as an implicit interpolating function (&#x03BC;-form) on the
+            observed acceleration &mdash; MOND&apos;s own variable, not &#x03C1;. Written as a Hill function its index is
+            n&nbsp;=&nbsp;2&#x03B3;&nbsp;&#x2248;&nbsp;0.98&nbsp;&#x2248;&nbsp;1, the <em>non-cooperative</em> limit, so that
+            switch is not a collective one either; but on its own it says nothing about density. At exactly
             &#x03B3;&nbsp;=&nbsp;1/2 the identity closes: C(x)&nbsp;=&nbsp;x/(x+2)&nbsp;=&nbsp;&#x03BC;<sub>simple</sub>(x/2),
-            MOND&apos;s simple interpolating function &mdash; so &ldquo;the fit converges to MOND&rdquo; is not an
-            empirical coincidence but algebra (see{' '}
-            <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>the RAR entry</Link> and{' '}
+            MOND&apos;s simple interpolating function &mdash; so &ldquo;the acceleration-keyed fit converges to MOND&rdquo;
+            is not an empirical coincidence but algebra (see{' '}
+            <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>the RAR entry</Link>,{' '}
+            <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> for how C
+            entered that fit, and{' '}
             <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>).
           </p>
+          <details style={{ marginTop: '0.5rem', fontSize: '0.78rem', color: 'var(--color-text-muted)' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+            This passage said the SPARC fit &#x03B3;&nbsp;&#x2248;&nbsp;0.489 (Hill index &#x2248;&nbsp;1) meant
+            &ldquo;its own best fit sets cooperativity to zero&rdquo; for the claim that <em>density</em> drives a collective
+            transition. That fit was run in the acceleration-keyed, implicit &#x03BC;-form law, so it cannot speak for the
+            density-keyed law; the density-keyed law&apos;s own head-to-head result (&#x0394;BIC +2843, best-fit
+            &#x03B3; &rarr; 0.046) now carries the conclusion.
+          </details>
         </div>
       </section>
 

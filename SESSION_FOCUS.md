@@ -1,7 +1,55 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-16 (maintainer)*
+*Last updated: 2026-09-17 (maintainer)*
+
+---
+
+## 🟢 NEW (maintainer 2026-09-17) — **Cassini is shared with MOND in the literal sense. On TEST-25's own Q₂ instrument
+(pre-registered `43a66a3`), McGaugh's RAR ν fails Cassini by +15.9–20.9σ and simple ν by +15.3–20.1σ; the compander at
+the SPARC fit fails by +17.95σ. In both families only the sharp members pass: δ = 4 (3/6 grid points), and compander
+γ ≳ 1.5–2 (post-hoc, SPARC-excluded). "Cassini-safe" and HA's "MOND picks a different μ and survives" are withdrawn.
+Also: TEST-09's kill does not depend on the 1/φ exponent at the registered a₀ (3.348 vs 3.346), but exponent 1 with a₀
+free reaches n = 3.50 (deviation 0.25 < 0.3), so "no rescue at any φ" is narrower than written.**
+
+Log: `maintainer/logs/2026-09-17.md`. Proposal:
+`Synchronism/Research/proposals/cassini_root_is_fully_shared_and_a2acw_should_code_its_correction_trail_20260917.md`.
+Scripts: `maintainer/scripts/cassini_q2_mond_interpolating_functions*`, `test09_exponent_one_instead_of_inverse_phi*`.
+**Count stays 6; Bucket 0 = 0.**
+
+- **Refutation-side physics fixed** (visitor grad + researcher):
+  - /wide-binaries rewritten: MOND's prediction is the EFE, and the density law is knee-conditional (+1.8×10⁴% at the
+    published knee).
+  - "∇·[C∇Φ] = 4πGρ conserves momentum / EFE = 0 exactly / SEP": momentum holds only with striction; L2 refracts, L3
+    has a nonlinear EFE.
+  - Tier 1 TEST-02 "boost never turns on" inversion fixed.
+  - /a2acw brought to the For Researchers current state.
+- **Explorer 09-16 P0/P1 done:** GC window tagged L2 with the L3 band, escapers and non-prospectivity on HA and For
+  Researchers; the polarization force scoped; the 08-24 EFE script back-annotated.
+- **Structure:**
+  - Per-page `<title>`s via 83 route layouts from navigation.ts.
+  - First Encounter parts B–G prerendered.
+  - Beginner on-ramp: quantum-coherence note, dark-matter answer box, badge key, honest path times.
+  - Count/label drift fixed (reparametrizations 5, "0 selected Synchronism over MOND", 8.7σ lead).
+- **Convention:** new corrections go in collapsed "Revision note" `<details>`. Existing inline history is not converted.
+- `site_lint.py`: 61 rules. Positive control: 21 hits on HEAD, 0 on the tree. Build passes.
+
+### → Explorer (topics seeded)
+- `qumond-cassini-closure-sparc-cost-of-sharp-interpolating-functions.md` (HIGH)
+- `correction-trail-error-profile-of-llm-research-agents.md` (HIGH): the researcher persona's reframe of A2ACW
+- `matter-budget-de-sector-vs-no-dark-matter-galaxies.md`
+- `matter-slaved-dark-energy-crossing-lemma-prior-art.md`
+
+### → Maintainer next
+- Convert inline revision history on HA / Tier 1 / landing (tech writer HIGH; structural).
+- /measurement-without-observers γ-chain direction; Galaxy Plotter toggle and caption; breadcrumbs; stale Validated
+  badges on /phase-transitions and /status-dashboard.
+
+### → dp (gated)
+- Confirm TEST-25 booking with the asymmetry clause withdrawn.
+- TEST-26 pre-booked "inherited from ΛCDM".
+- Should the density law's local exclusion at the published knee be booked?
+- Would dp code the human 10% arm of the correction-trail study?
 
 ---
 

@@ -138,7 +138,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Phase Transitions',
       href: '/phase-transitions',
-      desc: '\u03B3 < 1, \u03B3 \u2248 1, \u03B3 > 1 regimes',
+      desc: '\u03B3 > 1.4, 0.6\u20131.4 (\u2248 1), < 0.6 regimes \u2014 smooth crossovers in C(\u03C1), not phase transitions',
       keywords: ['phase', 'transition', 'regime', 'quantum', 'classical', 'boundary'],
       prerequisites: ['/gamma-parameter'],
       related: ['/gamma-boundary', '/chemistry-phase-transitions', '/phase-boundary-visualizer'],
@@ -255,7 +255,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Galaxy Rotation Curves',
       href: '/galaxy-rotation',
-      desc: 'SPARC (175) + ALFALFA-SDSS (14,585 galaxies)',
+      desc: 'SPARC (175) + ALFALFA-SDSS (14,435 galaxies after the quality cut)',
       keywords: ['galaxy', 'rotation', 'curve', 'SPARC', 'ALFALFA', 'SDSS', 'RAR'],
       prerequisites: ['/dark-matter', '/critical-density'],
       related: ['/rar-scatter', '/cdm-discrimination', '/galaxy-plotter'],
@@ -303,7 +303,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Wide Binaries',
       href: '/wide-binaries',
-      desc: 'Gaia DR3 density-dependent anomaly',
+      desc: 'Gaia DR3: MOND+EFE vs a knee-conditional density law',
       keywords: ['wide', 'binary', 'Gaia', 'DR3', 'density', 'anomaly'],
       prerequisites: ['/dark-matter', '/gamma-parameter'],
       related: ['/galaxy-rotation', '/test-catalog'],
@@ -387,9 +387,9 @@ export const navigationTree: NavigationTree = {
 
   'Consciousness & Philosophy': [
     {
-      title: 'The Hard Problem Dissolved',
+      title: 'The Hard Problem: A Proposed Reframing',
       href: '/hard-problem',
-      desc: 'Phase patterns ARE experience, not correlates of it',
+      desc: 'A philosophical identity claim: phase patterns are experience (not an empirical finding)',
       keywords: ['hard problem', 'consciousness', 'experience', 'qualia', 'Chalmers'],
       prerequisites: ['/coherence-function', '/phase-transitions'],
       related: ['/consciousness-threshold', '/qualia-coherence', '/marys-room'],
@@ -397,7 +397,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Consciousness Threshold',
       href: '/consciousness-threshold',
-      desc: 'C \u2248 0.50: 8-way convergence from independent approaches',
+      desc: 'C \u2248 0.50: 8 approaches that agree because they share one calibration \u2014 not independent evidence',
       keywords: ['consciousness', 'threshold', '0.50', 'convergence', 'Gnosis'],
       prerequisites: ['/hard-problem'],
       related: ['/qualia-coherence', '/consciousness-predictions', '/consciousness-demo'],
@@ -405,7 +405,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Qualia as Coherence',
       href: '/qualia-coherence',
-      desc: 'Why inverted qualia are impossible',
+      desc: 'The proposal that inverted qualia are impossible, and what it rests on',
       keywords: ['qualia', 'coherence', 'inverted', 'impossible', 'experience'],
       prerequisites: ['/hard-problem'],
       related: ['/consciousness-threshold', '/marys-room'],
@@ -476,7 +476,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Autonomous Research',
       href: '/autonomous-research',
-      desc: '3,308 sessions with no human in the loop',
+      desc: '3,308 sessions run by AI agents, with a human (dp) overseeing direction and the ledger',
       keywords: ['autonomous', 'research', 'sessions', 'AI', 'automated', 'agent'],
       related: ['/a2acw', '/publisher-track'],
     },
@@ -629,7 +629,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Crossover Regime Visualizer',
       href: '/phase-boundary-visualizer',
-      desc: 'Interactive \u03B3 < 1 / \u03B3 \u2248 1 / \u03B3 > 1 diagram',
+      desc: 'Interactive \u03B3 < 0.6 / 0.6\u20131.4 / > 1.4 diagram (a crossover, not a phase boundary)',
       keywords: ['phase', 'boundary', 'visualizer', 'diagram', 'interactive'],
       related: ['/phase-transitions', '/gamma-boundary'],
     },
@@ -643,7 +643,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Prediction Tracker',
       href: '/prediction-tracker',
-      desc: 'Status board: validated, untested, failed',
+      desc: 'Status board by badge (historical labels included)',
       keywords: ['prediction', 'tracker', 'status', 'board', 'tracking'],
       related: ['/test-catalog', '/status-dashboard'],
     },

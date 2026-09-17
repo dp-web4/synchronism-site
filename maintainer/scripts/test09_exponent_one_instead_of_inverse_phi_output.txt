@@ -1,0 +1,12 @@
+N gals: 123
+phi=1.000 (exponent 1.000): n at a0=1.05e-10 = 3.348; best over a0 = 3.502
+phi=1.618 (exponent 0.618): n at a0=1.05e-10 = 3.346; best over a0 = 3.385
+phi=1.000: 'derived' a0 = cH0*Om^phi = 2.063e-10; n = 3.285
+phi=1.618: 'derived' a0 = cH0*Om^phi = 1.010e-10; n = 3.348
+  phi=1 a0=7.00e-12 n=3.472
+  phi=1 a0=9.24e-12 n=3.491
+  phi=1 a0=1.22e-11 n=3.501
+  phi=1 a0=1.61e-11 n=3.502
+  phi=1 a0=2.13e-11 n=3.494
+  phi=1 a0=2.81e-11 n=3.478
+  phi=1 a0=3.71e-11 n=3.456

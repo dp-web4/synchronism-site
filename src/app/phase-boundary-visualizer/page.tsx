@@ -9,7 +9,7 @@ import ValidationBadge from '@/components/ValidationBadge';
 const regions = [
   {
     id: 'classical',
-    label: 'γ < 0.6 — High-N_corr (strongly correlated)',
+    label: 'γ < 0.6 — High-N_corr (strongly correlated) · N_corr ≥ 12',
     color: '#10b981',
     range: [0, 0.6],
     systems: ['Superconductors', 'BEC', 'Superfluids', 'Cooper pairs', 'Quantum computers'],
@@ -18,16 +18,16 @@ const regions = [
   },
   {
     id: 'boundary',
-    label: 'γ ≈ 1 — Boundary',
+    label: 'γ ≈ 1 (0.6–1.4) — Boundary · N_corr = 3–11',
     color: '#f59e0b',
     range: [0.6, 1.4],
-    systems: ['Liquid water', 'Enzymes', 'Phase transitions', 'Chemical bonds', 'Neural firing', 'Consciousness threshold'],
-    physics: 'The regime where collective and independent behavior balance. Systems whose estimated γ falls here include liquid water, enzymes, and neural dynamics. Note: C(ρ) itself is a smooth compander with no critical point — "boundary" here means a regime boundary in γ, not a mathematical phase boundary. The consciousness threshold conjecture (C ≈ 0.50) maps to this regime, though D and S remain undefined — see hard-problem page.',
+    systems: ['Liquid water', 'Enzymes', 'Chemical bonds', 'Neural firing'],
+    physics: 'The regime where collective and independent behavior balance. Systems whose estimated γ falls here include liquid water, enzymes, and neural dynamics. Note: C(ρ) itself is a smooth compander with no critical point — "boundary" here means a regime boundary in γ, not a mathematical phase boundary. The consciousness-threshold conjecture (C ≈ 0.50) was historically placed in this band; C is a different axis from γ, and D and S remain undefined, so that placement has no calculation behind it — see hard-problem page.',
     realityCheck: 'Reality check: no shared transition physics is known to connect the systems grouped here — water, enzymes, and neural firing land together because of how their N_corr was estimated, not because of any measured common behavior at γ ≈ 1. The grouping is the counting convention, visualized.',
   },
   {
     id: 'quantum',
-    label: 'γ > 1.4 — Single-particle',
+    label: 'γ > 1.4 — Single-particle · N_corr = 1 or 2',
     color: '#8b5cf6',
     range: [1.4, 4.0],
     systems: ['Ideal gases', 'Single atoms', 'Few-particle systems', 'Uncorrelated matter'],
@@ -118,7 +118,12 @@ export default function PhaseBoundaryVisualizer() {
           So a condensed-matter reading of this map is backwards: more correlation should not mean a
           smoother transition. This is the same audited-negative sign inversion documented on the{' '}
           <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
-          (1/&#x221A;N is a width, not a rate); it is stated here because this is the page where systems
+          (1/&#x221A;N is a width, not a rate). The condensed-matter anchor for &ldquo;more correlation &#x2192; sharper&rdquo;
+          is the <strong>Ginzburg criterion</strong>: the temperature window in which fluctuations visibly round a
+          transition shrinks as the correlation volume holds more particles, roughly as N<sub>&#x03BE;</sub><sup>&#x2212;2</sup> in
+          three dimensions. That is why BCS superconductors, with very many pairs per coherence volume, show
+          mean-field-sharp transitions. Against that anchor the formula has the wrong sign <em>and</em> the wrong
+          exponent. The inversion is stated here because this is the page where systems
           are visually placed. Also note the axis itself: the quoted BCS value
           (&#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>) sits three orders of magnitude off the left
           edge of the displayed 0&ndash;4 range — the marker below is a direction indicator, not a position.
@@ -134,6 +139,10 @@ export default function PhaseBoundaryVisualizer() {
             {/* Boundary lines */}
             <line x1={30 + (0.6 / 4.0) * 540} y1={barY - 5} x2={30 + (0.6 / 4.0) * 540} y2={barY + barH + 5} stroke="#f59e0b" strokeDasharray="3 3" />
             <line x1={30 + (1.4 / 4.0) * 540} y1={barY - 5} x2={30 + (1.4 / 4.0) * 540} y2={barY + barH + 5} stroke="#f59e0b" strokeDasharray="3 3" />
+
+            {/* N_corr at each band edge (N = 4/γ²) */}
+            <text x={30 + (0.6 / 4.0) * 540} y={barY - 26} textAnchor="middle" fill="#9ca3af" fontSize="9">N&#x2248;11.1</text>
+            <text x={30 + (1.4 / 4.0) * 540} y={barY - 26} textAnchor="middle" fill="#9ca3af" fontSize="9">N&#x2248;2.04</text>
 
             {/* Labels */}
             <text x={30 + (0.3 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#10b981" fontSize="11">Collective</text>
@@ -185,10 +194,19 @@ export default function PhaseBoundaryVisualizer() {
           onChange={e => setGamma(parseFloat(e.target.value))}
           style={{ width: '100%', marginBottom: '0.4rem' }}
         />
-        <p style={{ color: '#f87171', fontSize: '0.82rem', marginBottom: '1.5rem' }}>
+        <p style={{ color: '#f87171', fontSize: '0.82rem', marginBottom: '0.5rem' }}>
           <strong>What to notice as you drag:</strong> BCS superconductors and BECs land at the far <em>flat</em> (left)
           end &mdash; yet their real transitions are among the sharpest in nature &mdash; while an ideal gas, which has no
           phase transition at all, lands at the sharp end (&#x03B3; = 2). That inversion is the lesson.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '1.5rem' }}>
+          <strong>Band edges in N<sub>corr</sub>:</strong> inverting &#x03B3; = 2/&#x221A;N<sub>corr</sub> gives
+          N<sub>corr</sub> = 4/&#x03B3;&sup2;, so &#x03B3; = 1.4 &#x21D4; N<sub>corr</sub> &#x2248; 2.04 and
+          &#x03B3; = 0.6 &#x21D4; N<sub>corr</sub> &#x2248; 11.1. With whole-number counts, the single-particle band
+          holds only N<sub>corr</sub> = 1 and 2, the &#x03B3; &#x2248; 1 band holds 3&ndash;11, and everything with
+          12 or more correlated units lands in the bottom band. That includes the &#x03B3; Calculator&apos;s enzyme
+          preset (N<sub>corr</sub> = 30, &#x03B3; &#x2248; 0.37) and BCS (10<sup>7</sup>). This page&apos;s enzyme
+          placement near &#x03B3; &#x2248; 0.85 implies N<sub>corr</sub> &#x2248; 5.5, a different estimate.
         </p>
 
         <div className="card card-highlight" style={{ marginBottom: '1.5rem', borderLeft: `3px solid ${activeRegion.color}` }}>
@@ -232,6 +250,13 @@ export default function PhaseBoundaryVisualizer() {
           Summary index only &mdash; move the slider above to read each regime&apos;s full physics in the
           highlight card (duplicated text removed 2026-07-17).
         </p>
+        <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.75rem' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+          The &#x03B3; &#x2248; 1 band used to list &ldquo;Phase transitions&rdquo; and &ldquo;Consciousness threshold&rdquo;
+          among its systems. C(&#x03C1;) has no phase transition, and the consciousness threshold is a value of C, not a
+          system with an N<sub>corr</sub>, so both were removed from the list. The band labels now also show their
+          N<sub>corr</sub> ranges.
+        </details>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
           {regions.map(r => (
             <div key={r.id} className="card" style={{ borderLeft: `3px solid ${r.color}` }}>

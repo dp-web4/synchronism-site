@@ -100,13 +100,34 @@ export default function DarkMatter() {
 
         <h2>What This Means</h2>
         <p>
-          If Synchronism is correct, dark matter particles may not exist. The gravitational anomalies
+          If Synchronism were correct, dark matter particles might not exist. The gravitational anomalies
           attributed to dark matter would instead arise from the coherence structure of spacetime at
-          low accelerations. This is testable: Synchronism makes different predictions than particle
-          dark matter for <Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>wide binary stars</Link>,{' '}
-          <Link href="/rar-scatter" style={{ color: 'var(--color-accent-blue)' }}>RAR scatter</Link>, and{' '}
-          <Link href="/cosmology-predictions" style={{ color: 'var(--color-accent-blue)' }}>BAO modulation</Link>.
+          low accelerations. Three predictions were proposed to tell this apart from particle dark matter.
+          None of them currently does:
         </p>
+        <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', marginBottom: '1rem' }}>
+          <li><strong><Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>Wide binary stars</Link> &mdash;
+            depends on an unfixed knee.</strong> The predicted signal depends on where the density knee &rho;<sub>crit</sub> sits.
+            At the framework&apos;s published calibration, the density law predicts a boost of order 10<sup>4</sup> in the
+            solar neighbourhood, which the Oort limit and Solar-System ephemerides already rule out. The small
+            0.05&ndash;0.4% signal usually quoted needs a knee that nothing else in the framework uses. Whether to book this
+            as an executed exclusion is a ledger decision for the project steward; the refutation count is unchanged
+            (see <Link href="/tier-1-existing#TEST-02" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 TEST-02</Link>).</li>
+          <li><strong><Link href="/rar-scatter" style={{ color: 'var(--color-accent-blue)' }}>RAR scatter</Link> &mdash;
+            refuted.</strong> The registered claim was that environment explains more than 20% of the RAR scatter. When run
+            on 141 SPARC galaxies against Cosmicflows-4 density, it gave r&sup2; = 0.0001
+            (<Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>TEST-03s</Link>).</li>
+          <li><strong><Link href="/bao-coherence-modulation" style={{ color: 'var(--color-accent-blue)' }}>BAO modulation</Link> &mdash;
+            withdrawn (TEST-04).</strong> The framework&apos;s own DESI forecast has BAO matching &Lambda;CDM. No session
+            derives the proposed amplitude, and that amplitude is 600&times; smaller than the environment-dependent
+            BAO shifts standard cosmology already measures.</li>
+        </ul>
+        <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+          This paragraph used to say &ldquo;This is testable: Synchronism makes different predictions than particle dark
+          matter for wide binary stars, RAR scatter, and BAO modulation.&rdquo; That was stale: one of the three had been
+          refuted, one withdrawn, and the third depends on a knee the framework never fixed.
+        </details>
 
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>

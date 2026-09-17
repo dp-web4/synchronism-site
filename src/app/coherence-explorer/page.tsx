@@ -72,8 +72,8 @@ export default function CoherenceExplorer() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
             This tool plots the coherence function &mdash; the single equation at the heart of Synchronism.
-            It takes a density (&#x03C1;) and returns a coherence value between 0 (independent/quantum-like)
-            and 1 (collective/classical-like).
+            It takes a density (&#x03C1;) and returns a coherence value between 0 (sparse/independent)
+            and 1 (dense/collective).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(139,92,246,0.07)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(139,92,246,0.4)' }}>
             <strong>What this shows / what it gets wrong:</strong> the tool shows how the curve&apos;s
@@ -87,9 +87,13 @@ export default function CoherenceExplorer() {
             Both numbers are &#x03B3;-specific: the live readout by the &#x03C1;<sub>crit</sub> slider
             recomputes them as you drag &#x03B3;. Details in the caveats below.
           </p>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(239,68,68,0.06)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(239,68,68,0.4)' }}>
-            <strong>&#x26A0; Terminology note for physicists:</strong> &ldquo;Coherence&rdquo; here means <em>classical collective ordering</em> (C&nbsp;&#x2248;&nbsp;0 = independent/quantum-like; C&nbsp;&#x2248;&nbsp;1 = classically ordered). This is <em>anti-correlated</em> with <strong>quantum phase coherence</strong> as used in condensed-matter physics, where BEC/BCS condensates &mdash; the most quantum-coherent systems known &mdash; would sit at low C by this measure (due to their large N<sub>corr</sub>). The two axes are orthogonal: macroscopic quantum states are simultaneously quantum <em>and</em> collective. The site uses &ldquo;coherence&rdquo; in the ordering/classicality sense, not the off-diagonal-long-range-order sense.
-          </p>
+          <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(239,68,68,0.06)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(239,68,68,0.4)' }}>
+            <strong>&#x26A0; Terminology note for physicists:</strong> &ldquo;Coherence&rdquo; here means <em>density-driven collective ordering</em> (C&nbsp;&#x2248;&nbsp;0 = sparse/independent; C&nbsp;&#x2248;&nbsp;1 = dense/collective). It is a <em>different quantity</em> from <strong>quantum phase coherence</strong> as used in condensed-matter physics (off-diagonal long-range order), not its opposite: the two axes are orthogonal. Macroscopic quantum states show why &mdash; BEC/BCS condensates are simultaneously quantum-coherent <em>and</em> collective. That this equation nonetheless places them at low C (their large N<sub>corr</sub> flattens the curve through &#x03B3; = 2/&#x221A;N<sub>corr</sub>) is a property of that audited-negative, sign-inverted &#x03B3; map, not a sign that the two quantities run against each other.
+            <details style={{ marginTop: '0.35rem' }}>
+              <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+              This note previously called site coherence &ldquo;<em>anti-correlated</em> with quantum phase coherence&rdquo; and, two sentences later, &ldquo;orthogonal&rdquo;; this note and the paragraph above it also labelled C&nbsp;&#x2248;&nbsp;0 &ldquo;quantum-like&rdquo; and C&nbsp;&#x2248;&nbsp;1 &ldquo;classical-like.&rdquo; Only &ldquo;orthogonal&rdquo; is defensible (condensates are both quantum-coherent and collective), so the anti-correlation wording and the quantum/classical labels were removed.
+            </details>
+          </div>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
             <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> controls the transition sharpness.
             High &#x03B3; (&gt; 1.4, small N<sub>corr</sub>) = <em>single-particle / uncorrelated</em> regime (ideal gases, free atoms);
@@ -224,7 +228,9 @@ export default function CoherenceExplorer() {
               &#x03B3; = 2 was the framework&apos;s original galaxy guess &mdash; refuted (drag the slider up to see it).
               <strong style={{ color: '#f87171' }}> The default is dead on two fronts, not one (added 2026-09-05):</strong>{' '}
               &#x03B3; &#x2248; 0.49 reproduces MOND on SPARC <em>and</em> the same &#x03B3; fails the Cassini Solar-System
-              bound at ~18&#x03C3; (TEST-25 on <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>);
+              bound &mdash; at 8.7&#x03C3; as published by Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781; marginalized
+              over a&#x2080;, M/L and RAR-fit uncertainty), and at ~18&#x03C3; in this site&apos;s unmarginalized run
+              (TEST-25 on <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>);
               no &#x03B3; satisfies both. And the S-shape you see is a property of the log axis: with the density-keyed
               knee where the galaxy fits put it, SPARC samples x = &#x03C1;/&#x03C1;<sub>crit</sub> at a median of ~7&times;10<sup>&minus;5</sup>,
               where C = &#x03B3;x to 1.8% at worst (0.22&times; the data&apos;s precision on C) &mdash; a straight line. Toggle to
@@ -232,7 +238,9 @@ export default function CoherenceExplorer() {
             </p>
             <p style={{ color: '#fbbf24', fontSize: '0.75rem', marginTop: '0.35rem', borderLeft: '2px solid rgba(245,158,11,0.6)', paddingLeft: '0.5rem' }}>
               <strong>Two models, one curve (added 2026-09-06).</strong> &ldquo;&#x03B3; &#x2248; 0.49 fits SPARC and fails
-              Cassini&rdquo; is a fact about the <em>acceleration-keyed</em> branch, x = g<sub>bar</sub>/a<sub>0</sub>.
+              Cassini&rdquo; is a fact about the <em>acceleration-keyed</em> branch, x = g<sub>obs</sub>/a<sub>0</sub>&prime;
+              (the compander used as an implicit interpolating function and solved for g<sub>obs</sub>; see{' '}
+              <Link href="/galaxy-rotation" style={{ color: '#fbbf24' }}>Galaxy Rotation</Link>).
               &ldquo;SPARC sits at x ~ 7&times;10<sup>&minus;5</sup> where C = &#x03B3;x&rdquo; is a fact about the{' '}
               <em>density-keyed</em> branch, x = &#x03C1;/&#x03C1;<sub>crit</sub>. The slider draws one curve; the site&apos;s
               galaxy numbers come from two different arguments of it, and no single model both fits the RAR and is linear
@@ -240,6 +248,10 @@ export default function CoherenceExplorer() {
               <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>The Coherence Function</Link>{' '}
               (density-keyed loses at &#x0394;BIC +2843).
             </p>
+            <details style={{ color: 'var(--color-text-muted)', fontSize: '0.72rem', margin: '0.2rem 0 0 0.5rem' }}>
+              <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+              The caption above led with &ldquo;fails the Cassini Solar-System bound at ~18&#x03C3;&rdquo;; it now leads with the published, marginalized 8.7&#x03C3;, matching Honest Assessment. This box wrote the acceleration-keyed branch as x = g<sub>bar</sub>/a<sub>0</sub>; the SPARC fit that gives &#x03B3; &#x2248; 0.49 keys on g<sub>obs</sub> implicitly (explicit g<sub>bar</sub> keying is the floored TEST-09/10 form).
+            </details>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', marginTop: '0.35rem', borderLeft: '2px solid rgba(139,92,246,0.6)', paddingLeft: '0.5rem' }}>
               <strong style={{ color: '#a78bfa' }}>What the default view actually shows (added 2026-08-08):
               MOND.</strong> Set &#x03B3; = 1/2 exactly and the compander collapses algebraically to

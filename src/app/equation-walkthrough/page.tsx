@@ -78,13 +78,20 @@ export default function EquationWalkthrough() {
           <table style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', borderCollapse: 'collapse', width: '100%' }}>
             <tbody>
               <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>C(&#x03C1;)</td><td>Coherence — a number from 0 (sparse/independent) to 1 (dense/collective). The output we&apos;re computing. <span style={{ color: 'rgba(239,68,68,0.8)', fontSize: '0.8em' }}>⚠ Physicist note: C here measures collective ordering, not quantum phase coherence — BEC/BCS condensates have low C by this measure.</span></td></tr>
-              <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>&#x03C1;</td><td>Presence — the density of compatible elements within the system&apos;s relevancy boundary. The universal input.</td></tr>
-              <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>&#x03C1;<sub>crit</sub></td><td>A characteristic scale parameter for the system. <strong>Important:</strong> not the midpoint of C. At &#x03B3;=2, C(&#x03C1;<sub>crit</sub>)&nbsp;&#x2248;&nbsp;0.88 — &#x03C1;<sub>crit</sub> is near saturation, not the half-way point.</td></tr>
+              <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>&#x03C1;</td><td>The local mass/energy density, the same definition Step 1 and every executed test use. The universal input. (The ontology pages read &#x03C1; more broadly, as &ldquo;presence&rdquo; within a relevancy boundary; that broader reading has never been operationalized.)</td></tr>
+              <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>&#x03C1;<sub>crit</sub></td><td>Reference density &mdash; a saturation knee, not a critical point (the &ldquo;crit&rdquo; in the name is historical). <strong>Important:</strong> not the midpoint of C. At &#x03B3;=2, C(&#x03C1;<sub>crit</sub>)&nbsp;&#x2248;&nbsp;0.88 — &#x03C1;<sub>crit</sub> is near saturation, not the half-way point.</td></tr>
               <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>&#x03B3;</td><td>2/&#x221A;N<sub>corr</sub> — controls sigmoid sharpness. N<sub>corr</sub> = number of particles moving together. One particle: &#x03B3;=2 (sharp). A million: &#x03B3;=2&times;10&#x207B;&#x00B3; (flat). (Proposed relation — audited-negative: the sign is inverted vs. real collective physics; see the red box below.)</td></tr>
               <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>ln</td><td>Natural logarithm — grows slowly. Doubling x doesn&apos;t double ln(x). A number 1,000&times; bigger comes out only ~7 units bigger (ln(1000)&nbsp;&#x2248;&nbsp;6.9). Note: the ln is cosmetic here — tanh(&#x03B3;&middot;ln(1+x)) is <em>exactly</em> [(1+x)<sup>2&#x03B3;</sup>&minus;1]/[(1+x)<sup>2&#x03B3;</sup>+1], a Hill-type rational function (see Step 3).</td></tr>
               <tr><td style={{ padding: '0.2rem 0.5rem 0.2rem 0', fontFamily: 'monospace', color: 'var(--color-accent-violet)', whiteSpace: 'nowrap' }}>tanh</td><td>Hyperbolic tangent — an S-shaped saturation function mapping any real number to (−1, +1); with this equation&apos;s argument (always ≥ 0) the output C stays in [0, 1). Like a dimmer switch: input near 0 → output near 0; input very large → output near 1.</td></tr>
             </tbody>
           </table>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+            This legend used to define &#x03C1; as &ldquo;Presence &mdash; the density of compatible elements within the
+            system&apos;s relevancy boundary&rdquo;, which disagreed with Step 1 directly below it. It also called
+            &#x03C1;<sub>crit</sub> &ldquo;a characteristic scale parameter&rdquo;. Both rows now use the definitions from
+            Step 1 and the Glossary.
+          </details>
         </div>
 
         {/* Progress bar */}

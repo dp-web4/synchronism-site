@@ -17,7 +17,7 @@ export default function AutonomousResearch() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Synchronism was conducted almost entirely through autonomous AI research sessions &mdash;
-          no human in the loop for the vast majority of computation, derivation, and validation.
+          with the computation, derivation and auditing done by AI agents, not a human. No outside human expert has reviewed the claims.
           The human role was arbiter, direction-setter, and final decision-maker.
         </p>
 

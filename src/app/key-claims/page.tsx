@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
-import { GALAXIES_RUN, GALAXIES_RUN_BREAKDOWN, GALAXIES_MECHANISM } from '@/lib/ledger';
+import { GALAXIES_RUN, GALAXIES_RUN_BREAKDOWN, GALAXIES_MECHANISM, REFUTATIONS_EXECUTED, REFUTATIONS_ON_EXTERNAL_DATA } from '@/lib/ledger';
 
 export default function KeyClaims() {
   return (
@@ -141,20 +141,26 @@ export default function KeyClaims() {
                 <span style={{ fontSize: '0.7rem', padding: '0.1rem 0.4rem', borderRadius: '1rem', background: 'rgba(148, 163, 184, 0.15)', color: '#94a3b8' }}>Reparametrization — Post-hoc Fit to PRL 2024</span>
               </div>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
-                &#x0393; = &#x03B3;&sup2;(1 &minus; c). Entangled pairs in the same noise bath decohere slower.
+                &#x0393; = &#x03BA;&sup2;(1 &minus; c). Entangled pairs in the same noise bath decohere slower.
                 PRL 2024 (Salhov et al.): 10&times; T&#x2082; improvement at c &asymp; 0.90.
-                <strong>Audit verdict (Session #581, 2026-02-08):</strong> &#x0393; = &#x03B3;&sup2;(1 &minus; c) is the
-                special case (&#x03B3;<sub>A</sub> = &#x03B3;<sub>B</sub> = &#x03B3;) of the textbook
-                correlated-differential-dephasing variance &#x0393; = (&#x03B3;<sub>A</sub>&sup2; + &#x03B3;<sub>B</sub>&sup2;
-                &minus; 2c&#x03B3;<sub>A</sub>&#x03B3;<sub>B</sub>)/2 (Palma&ndash;Suominen&ndash;Ekert 1996,
+                <strong>Audit verdict (Session #581, 2026-02-08):</strong> &#x0393; = &#x03BA;&sup2;(1 &minus; c) is the
+                special case (&#x03BA;<sub>A</sub> = &#x03BA;<sub>B</sub> = &#x03BA;) of the textbook
+                correlated-differential-dephasing variance &#x0393; = (&#x03BA;<sub>A</sub>&sup2; + &#x03BA;<sub>B</sub>&sup2;
+                &minus; 2c&#x03BA;<sub>A</sub>&#x03BA;<sub>B</sub>)/2 (Palma&ndash;Suominen&ndash;Ekert 1996,
                 DFS literature 1998&ndash;2000). The &ldquo;10&times; T&#x2082;&rdquo; match is mechanical
                 single-parameter inversion: c = 1 &minus; 1/R for any reported improvement factor R.
-                This formula uses &#x03B3; as a <em>noise coupling rate</em> [units 1/&radic;time] &mdash;
-                distinct from the regime parameter &#x03B3; = 2/&radic;N<sub>corr</sub>.
+                Here &#x03BA; is a <em>noise coupling rate</em> [units 1/&radic;time], a different quantity from
+                the regime parameter &#x03B3; = 2/&radic;N<sub>corr</sub> used everywhere else on this site.
                 {' '}<strong>Citation discipline (2026-07-17):</strong> the PRL result is
                 <em> consistent with, not predicted by</em> this framework — no advance prediction about
                 that experiment was ever registered; the external citation lends no support to the reframe.
               </p>
+              <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0' }}>
+                <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+                This page used to write the formula as &#x0393; = &#x03B3;&sup2;(1 &minus; c), as the archive does, with a
+                note that this &#x03B3; is not the regime parameter. The coupling rate is now written &#x03BA; so that one
+                symbol does not name two quantities on the same page.
+              </details>
             </div>
             <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid #f59e0b' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -194,7 +200,7 @@ export default function KeyClaims() {
             <h3 style={{ fontSize: '0.9rem', color: '#f59e0b', marginBottom: '0.25rem', marginTop: 0 }}>Honest caveat</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0 0 0.5rem' }}>
               Both &ldquo;consistent with literature&rdquo; quantum results are post-hoc reparametrizations:
-              &#x0393; = &#x03B3;&sup2;(1 &minus; c) is a textbook open-quantum-systems result;
+              &#x0393; = &#x03BA;&sup2;(1 &minus; c) is a textbook open-quantum-systems result;
               c(d) = cos&sup2;(&pi;d/&lambda;&#x2080;) is imported from waveguide QED.
               Session #581 (2026-02-08) audited 8 quantum claims and concluded: &ldquo;zero confirmed
               predictions, 4 reparametrizations, 1 refutation (&#x03B3;<sub>max</sub> = 3.17 violated
@@ -207,13 +213,18 @@ export default function KeyClaims() {
               result is parameter-independent and stronger than it looks under either symbol: C &le; 1
               bounds the quadrature boost, so the framework cannot reach the observed deep-MOND mass
               discrepancies for any parameter choice. Count currency: the &ldquo;1 refutation&rdquo; is the
-              quoted 2026-02 audit&apos;s count for the quantum arc; the site-wide count as of 2026-07-17 is
-              4 executed refutations on external data &mdash; the boost ceiling quoted here was
+              quoted 2026-02 audit&apos;s count for the quantum arc; the site-wide count is{' '}
+              {REFUTATIONS_EXECUTED} executed refutations ({REFUTATIONS_ON_EXTERNAL_DATA} on external data) &mdash; the boost ceiling quoted here was
               subsequently cashed out as two of them, TEST-09 and TEST-10.)
               The CRT temporal-scanning model is not mathematically formalized to the level where
               it reproduces all of standard QM&apos;s quantitative predictions.
               What&apos;s needed: a prediction that differs from standard QM and hasn&apos;t been measured yet.
             </p>
+            <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0 0 0.5rem' }}>
+              <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+              The count sentence above used to read &ldquo;the site-wide count as of 2026-07-17 is 4 executed refutations on
+              external data&rdquo;. The count is now read from the site ledger.
+            </details>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
               <strong>Prior art:</strong> observer-free/no-special-frame interpretations of QM are an active
               literature. Cramer&apos;s <em>transactional interpretation</em> (1986) removes observer privilege via
@@ -711,7 +722,7 @@ export default function KeyClaims() {
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
               Five results appeared novel at first but turned out to be equivalent to existing physics in
               different notation: Born rule (Gleason/Zurek), a&#x2080; = cH&#x2080;/(2&#x03C0;) (dimensional coincidence),
-              Freeman&apos;s Law, &#x0393; = &#x03B3;&sup2;(1&minus;c) (Palma&ndash;Suominen&ndash;Ekert 1996),
+              Freeman&apos;s Law, &#x0393; = &#x03BA;&sup2;(1&minus;c) (Palma&ndash;Suominen&ndash;Ekert 1996),
               Bell-freezing c(d) (waveguide QED). These are documented on the{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link> page.
               Reparametrizations are not failures &mdash; they confirm the framework is internally consistent
@@ -720,11 +731,19 @@ export default function KeyClaims() {
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
               <strong>The BTFR slope left this list on 2026-07-14</strong> &mdash; executed on real SPARC, it is
               the opposite of a reparametrization: the framework&apos;s bounded boost predicts a slope
-              (n = 3.35) that genuinely <em>differs</em> from MOND&apos;s (3.81), and the observed 3.75 &plusmn; 0.10
-              fired the registered kill criterion at 3.3&sigma;. It is the framework&apos;s one genuinely
-              discriminating test &mdash; run, lost, and recorded as{' '}
-              <Link href="/tier-1-existing#TEST-09" style={{ color: 'var(--color-accent-blue)' }}>TEST-09</Link>.
+              (n = 3.35) that genuinely <em>differs</em> from MOND&apos;s (3.81). The observed 3.75 &plusmn; 0.10 sits
+              3.3&sigma; from the framework&apos;s slope, and the registered |&Delta;n| &gt; 0.3 criterion fired. It is one of
+              the framework&apos;s two discriminating tests, both run and both lost to MOND: 0 selected Synchronism over MOND
+              (2 discriminated, both selected MOND). It is recorded as{' '}
+              <Link href="/tier-1-existing#TEST-09" style={{ color: 'var(--color-accent-blue)' }}>TEST-09</Link>; the other,
+              TEST-10, tests the same boost ceiling.
             </p>
+            <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
+              <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+              This paragraph used to call TEST-09 &ldquo;the framework&apos;s one genuinely discriminating test&rdquo; and to say
+              the observed slope &ldquo;fired the registered kill criterion at 3.3&sigma;&rdquo;. TEST-10 also discriminated, and
+              3.3&sigma; is the separation between prediction and data, not the kill margin.
+            </details>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
             Also absent: the <Link href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW methodology</Link>,

@@ -4,11 +4,10 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
-import ValidationBadge from '@/components/ValidationBadge';
 import type { ReactNode } from 'react';
 
 // `plain`: one plain-language first line per card, for the Beginner Path reader; `reality` is the detail.
-const notItems: { claim: string; plain: ReactNode; reality: string }[] = [
+const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: ReactNode }[] = [
   {
     claim: 'A Theory of Everything',
     plain: 'It does not replace today\'s theories of particles or gravity; it offers a different picture of what might sit underneath them.',
@@ -17,7 +16,8 @@ const notItems: { claim: string; plain: ReactNode; reality: string }[] = [
   {
     claim: 'A replacement for ΛCDM or MOND',
     plain: 'The two leading explanations of galaxy and cosmic data are not displaced; where this framework matches data, it mostly restates them.',
-    reality: 'MOND has 40 years of empirical success. ΛCDM explains the CMB, Bullet Cluster, and large-scale structure. Session #616 confirmed Synchronism\'s cosmological tracks are reparametrizations of known physics — same mechanics, different notation. The genuinely new claims (environment-dependent RAR scatter, density-dependent wide binaries) are untested.',
+    reality: 'MOND has 40 years of empirical success. ΛCDM explains the CMB, Bullet Cluster, and large-scale structure. Session #616 (sessions are the numbered research sessions in the Synchronism research archive, github.com/dp-web4/Synchronism) confirmed Synchronism\'s cosmological tracks are reparametrizations of known physics — same mechanics, different notation. Of the claims meant to be new, environment-dependent RAR scatter has been run and refuted (r² = 0.0001 against a registered effect of more than 20%). Density-dependent wide binaries depend on a density knee the framework never fixed: at its published calibration the density law is already excluded in the solar neighbourhood.',
+    note: 'This card used to end: "The genuinely new claims (environment-dependent RAR scatter, density-dependent wide binaries) are untested." The 2026-07-14 environment run refuted the first. The second turned out to depend on the knee.',
   },
   {
     claim: 'Journal-reviewed science',
@@ -27,7 +27,29 @@ const notItems: { claim: string; plain: ReactNode; reality: string }[] = [
   {
     claim: 'Proven',
     plain: 'Nothing has been confirmed, and most predictions have never been tested.',
-    reality: 'In the February 2026 tally on the Status Dashboard, 54 of 92 listed predictions (59%) were untested, 34 of those 54 in consciousness. That tally predates the later audits (it still counts chemistry consistency checks as "validated"); the current prediction ledger records 0 confirmed novel predictions and does not publish a single untested-of-total figure. Two quantum results are consistent with published experiments (PRL 2024, arXiv 2508.07046), but both are reparametrizations: the decoherence formula Γ = γ²(1−c) is the textbook correlated-dephasing variance (Palma–Suominen–Ekert 1996); the Bell-freezing functional form c(d) was imported from waveguide QED. Session #581 audit (2026-02-08) of the quantum arc specifically: zero confirmed quantum predictions, 4 quantum-arc reparametrizations, 1 refutation. Site-wide audit total: 6 reparametrizations (4 quantum + Born rule + entity criterion). The genuinely novel predictions (wide binary density dependence, resynchronization vs isolation) have not been tested.',
+    reality: (
+      <>
+        In the February 2026 tally on the{' '}
+        <Link href="/status-dashboard" style={{ color: 'var(--color-accent-blue)' }}>Status Dashboard</Link> (a historical
+        page that records that month&apos;s tally), 54 of 92 listed predictions (59%) were untested, 34 of those 54 in
+        consciousness. That tally predates the later audits (it still counts chemistry consistency checks as
+        &ldquo;validated&rdquo;); the current prediction ledger records 0 confirmed novel predictions and does not publish a
+        single untested-of-total figure. Two quantum results are consistent with published experiments (PRL 2024,
+        arXiv 2508.07046), but both are reparametrizations: the decoherence formula &Gamma; = &gamma;&sup2;(1&minus;c) is the
+        textbook correlated-dephasing variance (Palma&ndash;Suominen&ndash;Ekert 1996); the Bell-freezing functional form
+        c(d) was imported from waveguide QED. Session #581 (2026-02-08) audited the quantum arc specifically: zero confirmed
+        quantum predictions, 4 quantum-arc reparametrizations, 1 refutation. The{' '}
+        <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link> scoreboard
+        counts <strong>5 reparametrizations</strong>: Born rule, a&#x2080; = cH&#x2080;/(2&pi;), Freeman&apos;s Law, the
+        decoherence formula and Bell-freezing c(d) (listed on{' '}
+        <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link>). The Session #581 figure is
+        that audit&apos;s own count for the quantum arc, not an addition to the five. The predictions once called genuinely
+        novel have not produced a confirmation: the wide-binary density prediction depends on an unfixed density knee, and
+        &ldquo;resynchronization beats isolation&rdquo; is, as stated, dynamical decoupling (badged Reparametrization on Key
+        Claims).
+      </>
+    ),
+    note: 'This card used to say "Site-wide audit total: 6 reparametrizations (4 quantum + Born rule + entity criterion)", a different list from the Honest Assessment scoreboard\'s 5, which does not include the entity criterion (Honest Assessment badges that criterion Reparametrization in its own card). It also said the wide-binary and resynchronization predictions "have not been tested", without noting that the first depends on an unfixed knee and the second is dynamical decoupling as stated.',
   },
   {
     claim: 'Just notation',
@@ -59,7 +81,16 @@ export default function WhatSynchronismIsNot() {
       <Breadcrumbs currentPath="/what-synchronism-is-not" />
       <PathNav currentPath="/what-synchronism-is-not" />
       <h1>What Synchronism Is Not</h1>
-      <ValidationBadge status="active-mrh" label="Scope Boundaries — Not a Claim (corrected 2026-07-09; was deprecated 'Validated')" />
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
+        A scope page: it states what the framework does not claim, so it carries no validation badge.
+      </p>
+      <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.25rem' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+        This page used to carry the badge &ldquo;Active-MRH &mdash; Scope Boundaries &mdash; Not a Claim&rdquo;. Before
+        2026-07-09 it carried the deprecated &ldquo;Validated&rdquo;. Active-MRH means a claim in active research focus,
+        which does not describe a scope page, and the badge text carried its own revision history. The verdict badge was
+        removed.
+      </details>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -105,6 +136,12 @@ export default function WhatSynchronismIsNot() {
                   <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
                     {item.reality}
                   </p>
+                  {item.note && (
+                    <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.35rem' }}>
+                      <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+                      {item.note}
+                    </details>
+                  )}
                 </div>
               </div>
             </div>
@@ -117,7 +154,8 @@ export default function WhatSynchronismIsNot() {
         <div style={{ background: 'rgba(59,130,246,0.07)', border: '1px solid rgba(59,130,246,0.25)', borderRadius: '0.5rem', padding: '1rem 1.25rem', marginBottom: '1.5rem' }}>
           <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.7 }}>
             <strong>Honest classification (2026):</strong> By the framework&apos;s own audit results — 0 prospective
-            predictions confirmed, 6 reparametrizations, 0 galaxy-scale discriminators vs MOND — Synchronism
+            predictions confirmed, 5 reparametrizations, 0 galaxy-scale tests that selected Synchronism over MOND
+            (2 discriminated; both selected MOND) — Synchronism
             currently occupies the <strong>interpretation + methodology</strong> category rather than the
             novel-physics category. An <em>interpretation</em> is evaluated by parsimony, explanatory elegance, and
             conceptual economy, not by novel empirical predictions (like Bohmian mechanics vs Copenhagen vs Many-Worlds —
@@ -125,10 +163,19 @@ export default function WhatSynchronismIsNot() {
             applicability as a research tool. Both are legitimate contributions; neither requires confirmed novel physics.
             If a future prospective test produces a discriminating result — one that MOND+EFE+ΛCDM cannot explain —
             this classification can be upgraded. TEST-02 (wide binary density dependence) is the candidate most often cited,
-            but is triple-conditional: the anomaly is disputed, the prediction is EFE-degenerate (EFE = MOND&apos;s
-            &ldquo;external field effect&rdquo; — MOND predicts the same signal, so even a detection would not
-            distinguish the two frameworks), and amplitude is ~80× below reach.
+            but is triple-conditional: the anomaly is disputed, a MOND-scale detection would favour MOND (whose
+            prediction is set by its &ldquo;external field effect&rdquo;) and the framework&apos;s acceleration-keyed version equally, so
+            it would not separate them, and the density-keyed version&apos;s amplitude depends on an unfixed density knee. It is ~80× below reach only
+            at a knee nothing else in the framework uses; at the published calibration the density law is already
+            excluded in the solar neighbourhood (<Link href="/tier-1-existing#TEST-02" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 TEST-02</Link>).
           </p>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+            This box used to read &ldquo;6 reparametrizations, 0 galaxy-scale discriminators vs MOND&rdquo; and
+            &ldquo;amplitude is ~80× below reach&rdquo;. The reparametrization count now matches the Honest Assessment
+            scoreboard. &ldquo;0 discriminators&rdquo; read as the retracted claim that no test separated the two models,
+            and the ~80× figure holds only at one choice of knee.
+          </details>
         </div>
 
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
@@ -140,7 +187,7 @@ export default function WhatSynchronismIsNot() {
               kill criteria, pre-registration discipline, mechanism-class failure taxonomy — a reproducible self-audit
               infrastructure for AI-collaborative science. This is the most distinctive and citable output.</li>
             <li>A <strong>source of open questions</strong>: TEST-02 wide-binary density dependence is triple-conditional —
-              (1) the wide-binary anomaly is itself disputed (Chae 2023 ~10σ detection vs Banik et al. 2024 / Pittordis &amp; Sutherland: Newtonian consistency); (2) even if real, it is MOND+EFE degenerate; (3) the predicted amplitude is ~80× below Gaia DR3 reach.
+              (1) the wide-binary anomaly is itself disputed (Chae 2023 ~10σ detection vs Banik et al. 2024 / Pittordis &amp; Sutherland: Newtonian consistency); (2) even if real, it is MOND+EFE degenerate; (3) the predicted amplitude depends on an unfixed density knee (~80× below Gaia DR3 reach at the knee that yields the quoted 0.05–0.4%; excluded locally at the published calibration).
               No component of this triple-conditional stack is currently resolved. The self-consistency loop gap (C(ρ) has no fixed-point equation) is the deepest structural question.</li>
             <li>A <strong>demonstration of radical honesty</strong>: failures documented, reparametrizations acknowledged,
               kill criteria defined, 0 unique confirmed predictions. The honest-assessment page is the most
@@ -156,7 +203,7 @@ export default function WhatSynchronismIsNot() {
           For a physics audience, the classification question is specific: <em>Is there one equation, regime, or
           measurement where Synchronism predicts something that MOND + ΛCDM + decoherence does not?</em> As of May 2026,
           the honest answer is: not yet confirmed, and TEST-02 is a triple-conditional placeholder
-          (disputed anomaly + EFE-degenerate + 80× sub-threshold amplitude) rather than a standing discriminator.
+          (disputed anomaly + EFE-degenerate + knee-conditional amplitude) rather than a standing discriminator.
           Until a condition of the triple stack resolves, the framework&apos;s contribution is interpretive and methodological,
           not empirically novel. That&apos;s a real contribution — just not the one the landing page implies.
         </p>

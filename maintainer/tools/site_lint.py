@@ -92,6 +92,20 @@ RETIRED = [
      "γ ≈ ½ is where each sector reduces to MOND/Λ; SPARC σ(γ) = 0.11 — not cross-sector agreement on a constant"),
     (r"Refracted Gravity&apos;s (fitted|published) (knee )?\(?0\.0083\)?(?! M<sub>☉</sub>/pc³ \(its elliptical)", "2026-09-16",
      "0.0083 is RG's elliptical (E0) calibration, Cesare+2022; disc knees 7.4e-4 / 4.3e-3"),
+    # ---- 2026-09-17 (maintainer; visitor log 2026-09-17: refutation-side physics + propagation)
+    (r"Cassini-safe", "2026-09-17", "McGaugh's RAR ν fails Cassini Q₂ at +15.9–20.9σ on TEST-25's instrument; Q₂ is set near 7000 AU, not by the tail"),
+    (r"picks a different (&micro;|µ|μ) and survives", "2026-09-17", "MOND's RAR-preferred IFs fail Cassini as hard as the compander; asymmetry withdrawn"),
+    (r"EFE\s*(=|&nbsp;=&nbsp;)\s*0 is preserved exactly|preserves EFE = 0 exactly", "2026-09-17", "linearity gives superposition, not EFE = 0: refraction wherever ∇C ≠ 0"),
+    (r"one-line completion[^.]{0,80}conserves\s+momentum|that conserves momentum and is linear", "2026-09-17", "∇·[C∇Φ] = 4πGρ conserves momentum only with striction (net self-force −∫|∇Φ|²∇C/8πG)"),
+    (r"boost never turns on", "2026-09-17", "with g = g_N/C, C = γx ≪ 1 is the MAXIMAL boost"),
+    (r"regardless of where the binary", "2026-09-17", "MOND's wide-binary prediction is the EFE, location-dependent"),
+    (r"placing it in the C≈1 near-Newtonian regime", "2026-09-17", "at the published knee solar-neighbourhood ρ sits far below ρ_crit (C ≈ 3×10⁻⁵)"),
+    (r"citable null result", "2026-09-17", "A2ACW is not citable as a null (J = 0 literal / 1.0 steelmanned; circular positive arm)"),
+    (r"externally-audited|demoted on human audit", "2026-09-17", "the audits were by LLM agents"),
+    (r"Gambini[–-]Pullin, <em>PRL</em>|Sudarsky[–-]Gambini", "2026-09-17", "CPSU = Collins, Perez, Sudarsky, Urrutia & Vucetich"),
+    (r"with no human in the loop", "2026-09-17", "a human (dp) oversees direction and the ledger; say AI agents did the work"),
+    (r"Net discriminating galaxy tests vs MOND|galaxy-scale discriminators vs MOND", "2026-09-17", "2 discriminated and both selected MOND; say '0 selected Synchronism over MOND'"),
+    (r"sets cooperativity to zero", "2026-09-17", "γ ≈ 0.489 is the acceleration-keyed fit; the density-keyed law has its own ΔBIC +2843 result"),
 ]
 
 EXEMPT = re.compile(

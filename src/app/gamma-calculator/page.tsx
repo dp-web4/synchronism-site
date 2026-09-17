@@ -9,7 +9,7 @@ import { GAMMA_PRESETS, gammaFromNcorr, GALAXY_PIN_GAMMA, GALAXY_SPARC_GAMMA } f
 
 function regimeInfo(g: number): { label: string; color: string; desc: string } {
   if (g > 1.4) return { label: 'Weakly Correlated (γ-sharp)', color: '#8b5cf6', desc: 'Few correlated particles; large γ → steepest C(ρ) sigmoid. C(ρ) near zero. Note: per Caveat 2, this is where γ assigns the sharpest transition — opposite to condensed-matter intuition (weakly correlated systems don\'t have sharp phase transitions in the real world).' };
-  if (g > 0.6) return { label: 'Boundary (γ ≈ 1)', color: '#f59e0b', desc: 'Transition zone. Phase transitions, chemistry, consciousness threshold sit near this boundary.' };
+  if (g > 0.6) return { label: 'Boundary (γ ≈ 1)', color: '#f59e0b', desc: 'Crossover zone (N_corr = 3–11). C(ρ) has no phase transition here: tanh is smooth, so this is a crossover in γ, not a critical point. Fitted chemistry γ values cluster near this band, and the consciousness-threshold conjecture was placed here historically; neither placement follows from the equation.' };
   if (g >= 0.2) return { label: 'Strongly Correlated (0.2 ≤ γ ≤ 0.6)', color: '#38bdf8', desc: 'Enzymes, magnets, large cooperative ensembles. C(ρ) is high. Note (Caveat 2): large N_corr → small γ → flattest sigmoid — γ assigns the flattest transition to strongly correlated systems, which is inverted relative to real condensed-matter physics where strong correlations produce sharp transitions.' };
   return { label: 'Collective (γ < 0.2, flattest)', color: '#10b981', desc: 'Superconductors, BEC, superfluids (N_corr ≫ 1). C(ρ) saturates near 1. Note (Caveat 2): the smallest γ values (flattest C(ρ) curves) go to the most collective systems — BCS superconductors (N_corr~10⁷, γ~6×10⁻⁴) have the flattest transition in this formula, while real BCS has a very sharp Tc. See Caveat 2 for the sign-inversion explanation.' };
 }
@@ -19,6 +19,8 @@ const presets = GAMMA_PRESETS;
 export default function GammaCalculator() {
   const [ncorr, setNcorr] = useState(4);
   const [logMode, setLogMode] = useState(false);
+  // The "What just changed" box narrates a preset; it stays hidden until the reader changes an input.
+  const [touched, setTouched] = useState(false);
 
   const gamma = gammaFromNcorr(ncorr);
   const regime = regimeInfo(gamma);
@@ -65,7 +67,7 @@ export default function GammaCalculator() {
         {/* Load-bearing caveats — promoted to top */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #f59e0b', background: 'rgba(245, 158, 11, 0.05)' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontWeight: 600, marginBottom: '0.25rem', fontSize: '0.9rem' }}>
-            Four caveats before using this tool:
+            Three caveats before using this tool:
           </p>
           <ol style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', paddingLeft: '1.25rem', margin: 0, lineHeight: 1.7 }}>
             <li>
@@ -73,15 +75,18 @@ export default function GammaCalculator() {
               {' '}<a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)', fontSize: '0.85rem' }}>See Parameter Derivations for what is and isn&apos;t derived &rarr;</a>
             </li>
             <li>
-              <strong>The direction of the N<sub>corr</sub>→sharpness mapping is inverted relative to the stated analogy (2026-06-06).</strong> In fluctuation theory, 1/&#x221A;N is a <em>width</em> — more correlation &#x2192; smaller width &#x2192; sharper transition. But in &#x03B3; = 2/&#x221A;N<sub>corr</sub>, more correlation &#x2192; larger N<sub>corr</sub> &#x2192; smaller &#x03B3; &#x2192; <em>flatter</em> tanh. This assigns the sharpest transition (&#x03B3;=2) to the least-correlated system (ideal gas, no real phase transition) and the flattest (&#x03B3;&#x2248;6&#xD7;10<sup>&#x2212;4</sup>) to the most-correlated (BCS superconductor, which has a real sharp T<sub>c</sub>). The sign of the analogy is inverted — a structural issue independent of the prefactor. See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</a> and research proposal <code>gamma_ncorr_sign_inversion_sharpness.md</code>.
+              <strong>The direction of the N<sub>corr</sub>→sharpness mapping is inverted relative to the stated analogy (2026-06-06).</strong> In fluctuation theory, 1/&#x221A;N is a <em>width</em> — more correlation &#x2192; smaller width &#x2192; sharper transition. But in &#x03B3; = 2/&#x221A;N<sub>corr</sub>, more correlation &#x2192; larger N<sub>corr</sub> &#x2192; smaller &#x03B3; &#x2192; <em>flatter</em> tanh. This assigns the sharpest transition (&#x03B3;=2) to the least-correlated system (ideal gas, no real phase transition) and the flattest (&#x03B3;&#x2248;6&#xD7;10<sup>&#x2212;4</sup>) to the most-correlated (BCS superconductor, which has a real sharp T<sub>c</sub>). The sign of the analogy is inverted — a structural issue independent of the prefactor. See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</a> and research proposal <a href="https://github.com/dp-web4/Synchronism/blob/main/Research/proposals/gamma_ncorr_sign_inversion_sharpness.md" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}><code>gamma_ncorr_sign_inversion_sharpness.md</code></a>.
             </li>
             <li>
               <strong>Preset N<sub>corr</sub> values are back-fits, not measurements.</strong> For BCS superconductors, the physical Cooper-pair coherence volume contains 10<sup>6</sup>–10<sup>9</sup> pairs; the preset uses N<sub>corr</sub> = 10<sup>7</sup> (mid-range of physical estimates) — fitted to produce a plausible γ (6.32×10<sup>−4</sup>), not derived from the Hamiltonian. No protocol exists for converting a system&apos;s Hamiltonian into N<sub>corr</sub> without first fitting γ to observed behavior. Every γ &ldquo;prediction&rdquo; is therefore a consistency check on a back-fitted parameter, not a first-principles result.
             </li>
-            <li>
-              <strong>Run the framework&apos;s own galaxy parameters through this tool and it refutes them (added 2026-07-27).</strong>{' '}
-              Until today this page never applied its map to the one sector where the framework
-              actually uses γ. Inverting the framework&apos;s own relation, N<sub>corr</sub> = (2/&#x03B3;)²:
+          </ol>
+        </div>
+
+        <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #ef4444', background: 'rgba(239, 68, 68, 0.05)' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0, lineHeight: 1.7 }}>
+              <strong>Run the framework&apos;s own galaxy parameters through this tool and it refutes them.</strong>{' '}
+              The galaxy sector is the one place where the framework actually uses γ. Inverting the framework&apos;s own relation, N<sub>corr</sub> = (2/&#x03B3;)²:
               the galaxy pin &#x03B3; = {GALAXY_PIN_GAMMA} quoted on <a href="/core-idea" style={{ color: 'var(--color-accent-blue)' }}>Core Idea</a> gives
               N<sub>corr</sub> = <strong>1</strong> — the <em>ideal gas</em> preset, exactly; and the SPARC best fit
               &#x03B3; &#x2248; {GALAXY_SPARC_GAMMA} quoted on <a href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</a> gives
@@ -93,12 +98,21 @@ export default function GammaCalculator() {
               pages that never cited each other. <strong>Either &#x03B3; = 2/&#x221A;N<sub>corr</sub> is void at
               galaxy scale — in which case it is not a framework-wide relation and should stop being
               presented as one — or the framework asserts the above.</strong> The SPARC row is now in the
-              preset table below so the arithmetic is one click away. (Note this also breaks the
-              2026-06-06 finding that flipping the sign to &#x03B3; &#x221D; &#x221A;N<sub>corr</sub> &ldquo;changes
-              nothing calibrated&rdquo;: that held only because &#x03B3; = 2 sits at the fixed point
-              N<sub>corr</sub> = 1. At N<sub>corr</sub> &#x2248; 17 the flip moves &#x03B3; by a factor ~8.)
-            </li>
-          </ol>
+              preset table below so the arithmetic is one click away.{' '}
+              <strong>Flipping the sign does not rescue it either.</strong> An earlier finding (2026-06-06) was that flipping to
+              &#x03B3; = 2&#x221A;N<sub>corr</sub> &ldquo;changes nothing calibrated&rdquo;. That held only because
+              &#x03B3; = 2 sits at the fixed point N<sub>corr</sub> = 1. At N<sub>corr</sub> = 17 the flip moves &#x03B3;
+              by a factor of 17, from 2/&#x221A;17 &#x2248; 0.485 to 2&#x221A;17 &#x2248; 8.25. Run the other way, the
+              flipped map needs N<sub>corr</sub> = (0.489/2)&sup2; &#x2248; 0.06 to give the SPARC &#x03B3; = 0.489. That is
+              less than one correlated unit, which no count of correlated units can reach.
+          </p>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+            This block was added 2026-07-27 as a fourth numbered caveat, headed &ldquo;Four caveats&rdquo;, and began
+            &ldquo;Until today this page never applied its map&hellip;&rdquo;. It is a finding about the framework&apos;s
+            parameters rather than a caveat on using the tool, so it now stands on its own. Its last sentence said the flip
+            &ldquo;moves &#x03B3; by a factor ~8&rdquo;. The factor is N<sub>corr</sub> = 17.
+          </details>
         </div>
 
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-blue)' }}>
@@ -133,7 +147,7 @@ export default function GammaCalculator() {
             </span>
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>{regime.desc}</p>
-          {presets.find(p => p.ncorr === ncorr) && (
+          {touched && presets.find(p => p.ncorr === ncorr) && (
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', textAlign: 'left', borderTop: '1px solid var(--color-border)', paddingTop: '0.75rem' }}>
               <strong style={{ color: 'var(--color-accent-violet)' }}>What just changed, and why it matters:</strong>{' '}
               {presets.find(p => p.ncorr === ncorr)!.story}
@@ -214,13 +228,13 @@ export default function GammaCalculator() {
             <input
               type="range" min="0" max="7" step="0.01"
               value={Math.log10(ncorr)}
-              onChange={e => setNcorr(Math.round(Math.pow(10, parseFloat(e.target.value))))}
+              onChange={e => { setTouched(true); setNcorr(Math.round(Math.pow(10, parseFloat(e.target.value)))); }}
               style={{ width: '100%' }}
             />
           ) : (
             <input
               type="range" min="1" max="1000" step="1" value={Math.min(ncorr, 1000)}
-              onChange={e => setNcorr(parseInt(e.target.value))}
+              onChange={e => { setTouched(true); setNcorr(parseInt(e.target.value)); }}
               style={{ width: '100%' }}
             />
           )}
@@ -261,7 +275,7 @@ export default function GammaCalculator() {
           {presets.map(p => (
             <button
               key={p.label}
-              onClick={() => { setNcorr(p.ncorr); setLogMode(p.ncorr > 1000); }}
+              onClick={() => { setTouched(true); setNcorr(p.ncorr); setLogMode(p.ncorr > 1000); }}
               style={{
                 background: ncorr === p.ncorr ? 'var(--color-accent-violet)' : 'var(--color-dark-surface)',
                 color: ncorr === p.ncorr ? '#fff' : 'var(--color-text-secondary)',

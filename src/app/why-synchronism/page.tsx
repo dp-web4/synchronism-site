@@ -230,7 +230,7 @@ export default function WhySynchronism() {
         <h2>The Research</h2>
         <p>
           3,308 autonomous research sessions. 42 complete research arcs.
-          All conducted by AI agents with no human in the loop.
+          Conducted by autonomous AI agents, with a human (dp) setting direction and overseeing the ledger.
           Every prediction has a falsification criterion.
           Every failure is documented.
         </p>

@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
-import ValidationBadge from '@/components/ValidationBadge';
 
 const tiers = [
   {
@@ -51,7 +50,18 @@ export default function TestCatalog() {
       <Breadcrumbs currentPath="/test-catalog" />
       <PathNav currentPath="/test-catalog" />
       <h1>Test Roadmap</h1>
-      <ValidationBadge status="untested" label="26 tests (24 in the original registry + 2 added later)" />
+      <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0.25rem 0 0', maxWidth: '65ch' }}>
+        <strong>26 tests</strong> (24 in the original registry + 2 added later). There is no single page-level status, so
+        each test carries its own badge on its tier page. <strong>Executed and Failed:</strong> TEST-09, TEST-10, TEST-25, and
+        one environment run filed on TEST-03s (which also answers TEST-01 and TEST-05). <strong>Run but underpowered as
+        registered:</strong> TEST-04a. <strong>Reparametrization:</strong> TEST-08. <strong>Withdrawn:</strong> TEST-04.
+        The rest have not been run, or cannot be run as stated (details on each tier page).
+      </p>
+      <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.35rem' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+        This page used to carry a page-level badge reading &ldquo;Untested &mdash; 26 tests&rdquo;. A single Untested verdict
+        misdescribed a page that reports executed Failed results, so it was replaced by the count summary above.
+      </details>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{
@@ -105,11 +115,11 @@ export default function TestCatalog() {
           fontSize: '0.875rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: '#f59e0b' }}>Discrimination status (restated 2026-07-27):</strong>{' '}
-          Of these 24 proposed tests, <strong>0 selected Synchronism over MOND+EFE+&Lambda;CDM, and none still unrun can</strong> (&ldquo;could select&rdquo; until 2026-09-14 &mdash; false for TEST-09/10, which would have selected the framework had its boost ceiling held; they ran and selected MOND).
-          That is the accurate claim. The blunter form this box used to carry — &ldquo;0 discriminate&rdquo; —
-          was false, and contradicted Tier 1: <strong>2 executed tests did discriminate, and both selected
-          MOND</strong> (TEST-09, BTFR slope, separating the models at 3.3σ; TEST-10, dwarf DM fractions).
+          <strong style={{ color: '#f59e0b' }}>Discrimination status:</strong>{' '}
+          Of these 24 proposed tests, <strong>0 selected Synchronism over MOND+EFE+&Lambda;CDM, and none still unrun can</strong>.{' '}
+          <strong>2 executed tests did discriminate, and both selected MOND</strong> (TEST-09, BTFR slope,
+          separating the models at 3.3σ; TEST-10, dwarf DM fractions). TEST-09 and TEST-10 would have selected
+          the framework had its boost ceiling held.
           A test that separates two models <em>is</em> discriminating regardless of which one wins. The
           remaining Tier-1 tests are self-eliminating (no outcome selects Synchronism), failed by sign, or
           genuinely non-discriminating (the RAR transition shape, where free-γ curves coincide). The roadmap
@@ -117,11 +127,19 @@ export default function TestCatalog() {
           <strong>A third executed result (TEST-25, added 2026-07-28) is a different kind of kill</strong> —
           not Synchronism-vs-MOND discrimination, but an internal-consistency squeeze: the SPARC-preferred
           γ interval and the Cassini Solar-System bound have a robust empty intersection under the
-          scale-universal tanh-log QUMOND realization (+17.7&ndash;18.0σ discrepancy across the retained
-          grid). Scoped narrowly to that realization; see Tier 1 for the full statement.{' '}
+          scale-universal tanh-log QUMOND realization (8.7σ for the RAR-preferred interpolating functions,
+          marginalized, Desmond, Hees &amp; Famaey 2024; this site&apos;s unmarginalized run gives +17.95σ for the compander).
+          It is booked as inherited from MOND: on the same instrument McGaugh&apos;s RAR function fails by +15.9&ndash;20.9σ.
+          See Tier 1 for the full statement.{' '}
           <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>
             See Tier 1 for per-test verdicts →
           </Link>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+            This box once said &ldquo;0 discriminate&rdquo;, which was false: TEST-09 and TEST-10 discriminated and
+            selected MOND. It later said &ldquo;0 could select Synchronism&rdquo;, which was also false for those two
+            tests. The current wording (&ldquo;0 selected; 2 discriminated, both selected MOND&rdquo;) replaced both.
+          </details>
         </div>
         <div style={{
           background: 'rgba(239, 68, 68, 0.07)',
@@ -159,7 +177,7 @@ export default function TestCatalog() {
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
           Tests use <strong>one flat namespace</strong>: TEST-01 &hellip; TEST-24 across the four tiers
-          (Tier 1 = 01&ndash;10, Tier 2 = 11&ndash;14, Tier 3+ = 15&ndash;24), plus <strong>TEST-25</strong>,
+          (Tier 1 = 01&ndash;10, Tier 2 = 11&ndash;14, Tier 3 = 15&ndash;21, Tier 4 = 22&ndash;24), plus <strong>TEST-25</strong>,
           the Cassini/SPARC squeeze added out-of-band 2026-07-28, and <strong>TEST-26</strong>, the DESI DR3
           dark-energy class no-go (proposed 2026-08-10, prospective, kill-or-tie; catalog-registered 2026-08-12
           after a visitor pass found it existing on one page and absent here). Suffixes: <code>a</code> = amended sub-test
@@ -186,12 +204,17 @@ export default function TestCatalog() {
             What&apos;s Already Been Analyzed
           </h2>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
-            The &ldquo;0 Completed&rdquo; count below refers to the 24 registry experiments above — none have been
+            The &ldquo;Pre-registered &amp; Completed: 0&rdquo; tile below refers to the 24 registry experiments above — none have been
             run as formal pre-registered tests. Separately, the framework has been checked against existing
             datasets with these results:
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem', paddingLeft: '1.25rem' }}>
-            <li><strong>RAR transition shape</strong> (2807 SPARC points, 2026-05-21): γ=2 compander refuted at ΔBIC=+184; free-γ=0.49=MOND — <span style={{ color: '#ef4444' }}>FAILED (γ=2); collapses to MOND at fitted γ (curve-equivalence only — the field equation is postulated in the archive, not derived, and the version stated there is eliminated a priori — corrected 2026-08-09 from &ldquo;no action, no Lagrangian, no dynamics&rdquo;). Net discriminating galaxy tests vs MOND: 0.</span></li>
+            <li><strong>RAR transition shape</strong> (2807 SPARC points, 2026-05-21): γ=2 compander refuted at ΔBIC=+184; free-γ=0.49=MOND — <span style={{ color: '#ef4444' }}>FAILED (γ=2); collapses to MOND at fitted γ (curve-equivalence only — the field equation is postulated in the archive, not derived, and the version stated there is eliminated a priori — corrected 2026-08-09 from &ldquo;no action, no Lagrangian, no dynamics&rdquo;). Galaxy tests that selected Synchronism over MOND: 0 (2 discriminated, TEST-09 and TEST-10, and both selected MOND).</span>{' '}
+              <details style={{ display: 'inline', color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
+                <summary style={{ cursor: 'pointer', display: 'inline' }}>Revision note</summary>{' '}
+                This line used to end &ldquo;Net discriminating galaxy tests vs MOND: 0&rdquo;, which read as the retracted
+                &ldquo;0 discriminate&rdquo; claim.
+              </details></li>
             <li><strong>Galaxy rotation</strong> (14,610 galaxies run: 175 SPARC + 14,435 ALFALFA-SDSS after the quality cut; 14,760 before it &mdash; the site quotes the sample actually run): qualitative curve match — <span style={{ color: '#f59e0b' }}>MOND reparametrization</span>, not novel</li>
             <li><strong>TEST-03 TFR scatter</strong>: <span style={{ color: '#f59e0b' }}>NEVER RUN AS REGISTERED</span> — the R&sup2; = 0.14 figure previously reported here was a metric conflation (morphology statistic on N &asymp; 171, not the registered test on N = 14,585; corrected 2026-07-09). The environment claim was later executed 2026-07-14 (research repo): r&sup2; = 0.0001, ~900&times; under the framework&apos;s &gt;20% claim — <span style={{ color: '#ef4444' }}>environment prediction REFUTED by execution</span>. <strong>But not as registered</strong> (declared 2026-07-27): that run used N = 141 SPARC galaxies vs Cosmicflows-4 ambient density, not the registered N = 14,585 ALFALFA-SDSS cluster/field/void classification — different dataset, different proxy, ~100&times; smaller sample. It is designated <strong>TEST-03s</strong> and the registered TEST-03 remains unrun and runnable. Read the census as <strong>3 registered kills + 1 substituted-protocol kill</strong>, not 4 identical ones</li>
             <li><strong>DESI fσ₈ (TEST-04a)</strong>: <span style={{ color: '#f59e0b' }}>UNDERPOWERED AS REGISTERED</span> <span style={{ color: 'var(--color-text-muted)' }}>(prediction 0.418 sits 2.1σ from the DESI DR1 LRG1 value 0.550 ± 0.062; the registered fσ₈(z=0.51) &gt; 0.46 threshold is crossed on the point estimate but only by 1.5σ, short of the &gt;3σ it was registered to deliver; that &gt;3σ presumed σ &asymp; 0.014, and DR1 delivers 0.062, 4.4&times; larger; corrected 2026-07-14, restated in this three-number form 2026-09-15; the widely-quoted 2.4σ disfavor is on σ₈, a GR-conditioned statistic that cannot falsify modified growth; DESI&apos;s own MG analysis gives μ₀ within 1σ of zero. Not counted in the refutation census. DR2 both-outcome pre-commitment registered 2026-07-17 — the program&apos;s first prospective registration)</span></li>
@@ -223,14 +246,22 @@ export default function TestCatalog() {
           F&prime;(u) = &minus;2&gamma;(2&gamma;&minus;1)(u&minus;1)u<sup>2&gamma;&minus;2</sup>, so{' '}
           <strong>sign(1 + w) = sign(1 &minus; 2&gamma;) at every redshift</strong>: no member crosses w = &minus;1, and
           &gamma; = &frac12; is exactly &Lambda;. At the DESI-fit &gamma; = 0.487, w&#x2080; = &minus;0.992 and
-          w<sub>a</sub> = +0.015 &mdash; the family moves along (1+w&#x2080;) &prop; +w<sub>a</sub>, across rather than
+          w<sub>a</sub> = +0.015, taking w<sub>a</sub> = &minus;dw/da at a = 1. (<Link href="/dark-energy" style={{ color: 'var(--color-accent-violet)' }}>Dark Energy &amp; DESI</Link>{' '}
+          quotes (&minus;0.993, +0.023), a least-squares CPL fit w = w&#x2080; + w<sub>a</sub>(1&minus;a) over
+          a &isin; [0.4, 1]. Both numbers come from the same w(a); only the projection differs.) The family moves along (1+w&#x2080;) &prop; +w<sub>a</sub>, across rather than
           along DESI&apos;s preferred direction, which is why its &Delta;&chi;&sup2; sits near zero. The &Omega;<sub>m</sub>{' '}
           floor never binds on the past light cone (C &ge; &Omega;<sub>m</sub> for every z &ge; 0), so flooring opens no
           escape. Derived by a visitor researcher persona; verified against the continuity equation numerically
           (<code>maintainer/scripts/floor_is_cosmic_C_and_w_sign.py</code>, 0 sign violations over 11 &gamma; &times; 51 z).
           Kill fires if DR3 robustly requires that crossing; the confirming branch is a tie with
           &Lambda;CDM, so this test cannot select the framework and is listed outside the 24-test discrimination
-          count. Adoption gates on the operator. Full statement:{' '}
+          count. Adoption gates on the operator. <strong>Booking if the kill fires (proposed):</strong> a DR3 result that robustly requires a
+          w = &minus;1 crossing kills &Lambda;CDM equally, because &Lambda;CDM is the &gamma; = &frac12; member of this
+          family and cannot cross either. It would therefore be booked as an <em>inherited root (inherited from
+          &Lambda;CDM)</em>, not as a framework-specific seventh refutation. This is the same rule that books
+          TEST-25 (Cassini/SPARC) as &ldquo;inherited from MOND&rdquo;. The booking is stated before DR3 so that it cannot
+          be chosen after the result. The booking also gates on the operator (ledger governance).
+          Full statement:{' '}
           <Link href="/top-5-tests" style={{ color: 'var(--color-accent-violet)' }}>Top Decisive Tests</Link>{' '}
           &middot; derivation:{' '}
           <Link href="/dark-energy" style={{ color: 'var(--color-accent-violet)' }}>Dark Energy &amp; DESI</Link>.

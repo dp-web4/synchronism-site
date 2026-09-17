@@ -27,7 +27,7 @@ const phenomena = [
   { name: 'Magnetic anisotropy (RE)', r: -0.434, category: 'Magnetic', regime: 2, session: '#130' },
   { name: 'SC penetration depth', r: 0.280, category: 'Superconductivity', regime: 1, session: '#105' },
   { name: 'Thermionic emission', r: 0.150, category: 'Barrier', regime: 3, session: '#115' },
-  { name: 'Coordination number Z', r: 0.116, category: 'Topology', regime: 0, session: '#123' },
+  { name: 'Coordination number CN', r: 0.116, category: 'Topology', regime: 0, session: '#123' },
   { name: 'Hall coefficient R_H', r: 0.001, category: 'Transport', regime: 0, session: '#102' },
   { name: 'Valence electron count', r: -0.161, category: 'Counting', regime: 0, session: '#125' },
   { name: 'Magnetic susceptibility', r: 0.000, category: 'Magnetic', regime: 0, session: '#82' },
@@ -103,6 +103,16 @@ export default function ChemistryCorrelationExplorer() {
           acknowledges this; the full null distribution and out-of-sample decomposition remain open
           research questions.
           <br /><br />
+          <strong style={{ color: '#f59e0b' }}>The 23 rows are not 23 independent tests.</strong>{' '}
+          Several rows are tied together by textbook relations, so a framework that matches one of them
+          largely matches the others for free. Sound velocity, Debye temperature, bulk modulus, Young&apos;s
+          modulus and shear modulus are linked by elasticity (v &#x221D; &#x221A;(modulus/density)) and by the
+          Debye model (&#x03B8;<sub>D</sub> &#x221D; v). Electrical and thermal conductivity are linked in metals by
+          the Wiedemann&ndash;Franz law. Those two groups alone reduce 7 rows to roughly 2 independent ones. Specific
+          heat per unit mass is close to 3R/M (Dulong&ndash;Petit), which falls steadily with atomic mass and so
+          roughly with atomic number Z. That is exactly the kind of trend the polynomial-in-Z null below reproduces.
+          The effective number of independent tests is therefore much smaller than 23.
+          <br /><br />
           <strong style={{ color: '#ef4444' }}>Null-model verdict (computed 2026-05-10):</strong>{' '}
           before reading any number in this table as evidence, know that a plain 2-parameter
           polynomial in atomic number Z, fit to the same targets, <strong>matches these correlations
@@ -147,6 +157,18 @@ export default function ChemistryCorrelationExplorer() {
           predicts. Which branch applies to this dataset is an open bookkeeping question, not yet resolved
           here.
         </div>
+
+        <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
+          <strong>What &ldquo;Regime&rdquo; means:</strong> the chemistry track&apos;s label for how each property was
+          modelled against &#x03B3; (defined on{' '}
+          <a href="/handling-failure" style={{ color: 'var(--color-accent-blue)' }}>Handling Failure</a>).{' '}
+          <em>Coherence helps</em>: property modelled as rising with 1/&#x03B3; (transport, stiffness).{' '}
+          <em>Incoherence helps</em>: property modelled as rising with &#x03B3; itself (soft-mode response such as
+          piezoelectricity), so a positive r in this regime is a positive correlation with &#x03B3;.{' '}
+          <em>Barrier-dominated</em>: thermally activated, &#x221D; exp(&minus;E/kT), where &#x03B3; is negligible.{' '}
+          <em>Neutral</em>: counting properties (coordination number CN, valence electrons) on which &#x03B3; has no
+          bearing. The labels were assigned after the fits, not predicted in advance.
+        </p>
 
         {/* Regime filter */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>

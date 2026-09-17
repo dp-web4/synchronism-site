@@ -40,9 +40,9 @@ export default function HonestAssessment() {
         has come from other AI systems (Grok, DeepSeek, GPT), relayed by the people who ran them.
       </p>
 
-      <div className="card" style={{ maxWidth: '65ch', marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-warm)', fontSize: '0.9rem' }}>
+      <div id="if-you-read-nothing-else" className="card" style={{ scrollMarginTop: '5rem', maxWidth: '65ch', marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-warm)', fontSize: '0.9rem' }}>
         <p style={{ margin: '0 0 0.5rem', color: 'var(--color-accent-warm)', fontWeight: 600 }}>
-          If you read nothing else (this page is ~18,000 words; added 2026-09-08 at a casual reader&apos;s request)
+          If you read nothing else (this page is ~18,000 words)
         </p>
         <ul style={{ margin: 0, paddingLeft: '1.2rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
           <li><strong>The one equation did not hold as stated.</strong> Every decisive test it ran on real data, it lost &mdash; 6 refutations executed, 0 predictions confirmed.</li>
@@ -391,46 +391,53 @@ export default function HonestAssessment() {
           the curves coincide. Discrimination is absent there, not across the executed ledger.
         </p>
         <div style={{ background: 'rgba(248,113,113,0.07)', border: '1px solid rgba(248,113,113,0.35)', borderRadius: '0.375rem', padding: '0.9rem 1.1rem', margin: '1rem 0' }}>
-          <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
-            <strong style={{ color: '#f87171' }}>Open classification question (raised 2026-09-10 by a
-            leading-edge-researcher persona; the maintainer agreed on 2026-09-10 and withdrew that agreement on 2026-09-16, see below).</strong>{' '}
-            TEST-25 is classed in the table above as <em>inherited from MOND</em>, on the reasoning that the excluded
-            object is the RAR-preferred interpolating-function family and MOND uses it too. But <strong>MOND and
-            Synchronism are not equally free to walk away from it.</strong> MOND&apos;s &micro; is a free function:
-            excluded at Cassini, MOND picks a different &micro; and survives. Synchronism cannot &mdash; and as of
-            2026-09-09 we can say why with a number:
-            <br />&bull; Its free-&gamma; SPARC fit lands at &gamma;&nbsp;=&nbsp;0.489, and at &gamma;&nbsp;=&nbsp;&frac12;
-            the framework&apos;s compander is <em>identically</em> &micro;<sub>simple</sub> &mdash; the excluded
-            function &mdash; for every &rho;<sub>crit</sub>. The data drive it into the exclusion.
-            <br />&bull; <s>And it has nowhere to walk to. Isolated at a non-binding boost ceiling, the compander form scores
-            108.10 against MOND &micro;&apos;s 51.45, 2.10× worse.</s> <strong>Withdrawn 2026-09-16.</strong> That comparison also
-            changed the knee and the floor form. Swapping only the function (γ&nbsp;=&nbsp;0.489, matched knee, same floor) gives
-            50.83 vs 51.45: a tie (pre-registered controls, <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>, item 2).
-            <br /><strong>What is left of the argument.</strong> The compander&apos;s only escape from Cassini is to raise γ, since the
-            Newtonian-return exponent is q&nbsp;=&nbsp;2γ and Cassini wants a fast return. TEST-25 itself already shows
-            that the SPARC-retained interval (γ&nbsp;=&nbsp;0.425&ndash;0.600) fails Cassini everywhere, and γ&nbsp;=&nbsp;2 lost on SPARC at
-            ΔBIC +184. So the no-escape point rests on TEST-25&apos;s own γ scan, not on a separate penalty. The asymmetry premise
-            is weaker than stated too: Desmond, Hees &amp; Famaey 2024 report the tension persists across every interpolating-function
-            family they tested, so MOND is not obviously free to walk away either. <strong>The maintainer no longer recommends
-            reclassifying TEST-25.</strong> It stays &ldquo;inherited from MOND&rdquo;, with the question open.
-            <br /><em>Not changed unilaterally.</em> Refutation classification is ledger governance and gates on dp
-            &mdash; routed in <code>Research/proposals/test02_amplitude_is_knee_conditional_and_a2acw_positive_control_20260910.md</code>.
-            The 09-10 version of this note said a change that moves against the framework &ldquo;should be easy to make&rdquo;.
-            It was easy, and it rested on a confounded number. Moving against yourself is not a substitute for controls. The
-            executed count stays at 6 either way.
-          </p>
+          <div style={{ margin: 0, fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+            <strong style={{ color: '#f87171' }}>Classification of TEST-25: inherited from MOND, and the asymmetry argument is withdrawn.</strong>{' '}
+            TEST-25 is booked in the table above as <em>inherited from MOND</em>. A 2026-09-10 argument said MOND and
+            Synchronism are not equally free to walk away, because MOND&apos;s &micro; is a free function. The argument does not
+            survive a direct check, and both families have the same structure:
+            <br />&bull; <strong>MOND&apos;s RAR-preferred functions fail Cassini as hard as the compander.</strong> Run through TEST-25&apos;s
+            own quadrupole instrument, McGaugh&apos;s RAR function fails by +15.9&sigma; to +20.9&sigma; and Milgrom&apos;s simple function by
+            +15.3&sigma; to +20.1&sigma;. The compander at the SPARC fit fails by +17.95&sigma; (all unmarginalized; Desmond, Hees &amp; Famaey
+            2024 give 8.7&sigma; after marginalizing).
+            <br />&bull; <strong>Both families contain sharper members that pass Cassini.</strong> In MOND&apos;s δ-family, nothing enters the
+            Cassini 95% interval below δ&nbsp;=&nbsp;4, and δ&nbsp;=&nbsp;4 enters at only 3 of 6 grid points. In the compander family, γ&nbsp;≳&nbsp;1.5&ndash;2
+            passes, depending on a₀ (a post-hoc scan).
+            <br />&bull; <strong>Whether a sharp member also fits SPARC decides it.</strong> For the compander, SPARC excludes γ&nbsp;=&nbsp;2 at
+            ΔBIC +184, and the retained interval ends at γ&nbsp;=&nbsp;0.600. For MOND, Desmond+ report that the RAR prefers δ&nbsp;≈&nbsp;1 while
+            Cassini needs δ&nbsp;≳&nbsp;2.5, with the tension persisting across the families they tested. The SPARC cost of δ&nbsp;=&nbsp;4 was not
+            computed here.
+            <br />So neither theory can simply pick another function: each would have to leave the function its galaxy fit
+            prefers. The failure is shared, which is what &ldquo;inherited&rdquo; means. Refutation classification is ledger governance
+            and gates on dp. The executed count stays at 6 either way. Script and pre-registration:{' '}
+            <code>maintainer/scripts/cassini_q2_mond_interpolating_functions.py</code>.
+            <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+              <summary style={{ cursor: 'pointer' }}>Revision notes</summary>
+              <ul style={{ margin: '0.3rem 0 0', paddingLeft: '1.1rem' }}>
+                <li>2026-09-10: a researcher persona argued TEST-25 should be reclassified as framework-specific, because &ldquo;MOND
+                picks a different &micro; and survives. Synchronism cannot.&rdquo; The maintainer agreed, citing a 2.10× compander-form
+                penalty.</li>
+                <li>2026-09-16: the 2.10× was withdrawn. It also changed the knee and the floor form, and the function-only swap ties at
+                50.83 vs 51.45. The recommendation was withdrawn, but the box still carried the asymmetry sentence.</li>
+                <li>2026-09-16: item (3) below led with the unmarginalized +17.95σ, calling it &ldquo;by far the sharpest number on the site&rdquo;; the lead moved to the marginalized 8.7σ.</li>
+                <li>2026-09-17: a graduate-physics persona pointed out that the site&apos;s own citation contradicts the asymmetry. A
+                pre-registered run found McGaugh&apos;s RAR function excluded on TEST-25&apos;s instrument. Lesson kept from 09-16: moving
+                against yourself is not a substitute for controls.</li>
+              </ul>
+            </details>
+          </div>
         </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>(3) Cassini/SPARC joint squeeze (TEST-25 — executed 2026-07-23, propagated to site
           2026-07-28):</strong> the framework&apos;s single scale-universal compander cannot be used as
           <em>both</em> the SPARC-fitting galaxy function <em>and</em> a QUMOND-style Solar System
-          interpolation function &mdash; at the SPARC-preferred γ&nbsp;≈&nbsp;0.489, the Cassini quadrupole
-          discrepancy is <strong>8.7σ</strong> as published by Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781), who
-          marginalize over a₀, M/L and RAR-fit uncertainty; this site&apos;s own unmarginalized run, which fixes γ and profiles
-          a₀ only, gives +17.95σ, and every point in the retained ΔBIC&nbsp;≤&nbsp;10 grid
+          interpolation function. Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781) put the RAR-preferred MOND interpolating
+          functions <strong>8.7σ</strong> from the Cassini quadrupole bound, marginalizing over a₀, M/L and RAR-fit uncertainty; the
+          compander was not in their set, but at γ&nbsp;=&nbsp;½ it is Milgrom&apos;s simple μ identically. This site&apos;s own unmarginalized
+          run, which fixes γ and profiles a₀ only, gives +17.95σ at the SPARC-preferred γ&nbsp;≈&nbsp;0.489 (McGaugh&apos;s RAR function
+          scores +15.9σ to +20.9σ on the same instrument), and every point in the retained ΔBIC&nbsp;≤&nbsp;10 grid
           (γ&nbsp;=&nbsp;0.425&ndash;0.600) fails Cassini by +17.7σ to +18.0σ &mdash; a robust empty
-          intersection, not a boundary artifact. The defensible figure is the marginalized 8.7σ (lead reordered 2026-09-16;
-          it had called +17.95σ &ldquo;by far the sharpest number on the site&rdquo;). Prior art: Solar-System exclusion of
+          intersection, not a boundary artifact. The defensible figure is the marginalized 8.7σ, and it belongs to the interpolating-function family, not to this framework alone. Prior art: Solar-System exclusion of
           slow-return interpolating functions was already reported by Hees et al. 2016. See{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> for
           the full scope statement (it closes the joint realization, not modified inertia or a
@@ -835,7 +842,7 @@ export default function HonestAssessment() {
               (g<sub>bar</sub>&nbsp;≈&nbsp;a₀), significant at ~8σ per bin. Free-γ fit converges to γ≈0.49&nbsp;=&nbsp;MOND,
               with RMS identical to McGaugh to four digits. ΔBIC&nbsp;=&nbsp;+7 for free-γ is entirely the BIC
               parameter penalty, not a fit difference — the compander at its best-fit γ is MOND.
-              <strong> Net discriminating galaxy tests vs MOND: 0, by execution.</strong>
+              <strong> Galaxy tests that selected Synchronism over MOND: 0, by execution (2 discriminated; both selected MOND).</strong>
               Script: <code style={{ fontSize: '0.78rem' }}>explorer/scripts/rar_transition_shape_real_sparc.py</code>.
               See also <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation: RAR Transition Shape</Link>.
             </p>
@@ -909,6 +916,29 @@ export default function HonestAssessment() {
                 </tbody>
               </table>
             </div>
+            <div style={{ background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.35)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem', margin: '0 0 0.75rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+              <strong style={{ color: '#f59e0b' }}>What kind of result this table is.</strong>{' '}
+              Every density-keyed row above uses the <strong>L2</strong> reading: g = g<sub>N</sub>/C, or the field equation
+              without striction, for an isolated cluster, with density read pointwise or smoothed over ≲&nbsp;10&nbsp;pc. The
+              verdicts are ratios to the Newtonian residual, set after the data, with no σ.
+              <br />&bull; <strong>Under the action (L3, striction included) the window does not survive in this form.</strong> In a
+              cluster&apos;s knee shell the striction force is 1.7&ndash;13&times; gravity and the net force points outward for all five knees
+              tested. Re-running the 42-cluster statistic under L3 changes 18 of the 27 verdicts on the γ&nbsp;=&nbsp;0.489 row. The
+              excluded band moves to ρ<sub>c</sub> = 0.031&ndash;0.196&nbsp;M<sub>☉</sub>/pc³, and no knee passes. With Plummer tails, up to 39 of the
+              42 clusters have outward net gravity, so the statistic stops describing a bound cluster. The external field does not
+              cancel inside the cluster either: residuals are 19&ndash;390&times; the L2 refraction term, plus a quadratic, nonlinear
+              EFE. An exploratory linearization gives striction a negative effective pressure in the knee shell, 2&ndash;38&times; σ²,
+              so pointwise-density L3 may not admit a smooth cluster across the knee at all (explorer, 2026-09-16).
+              <br />&bull; <strong>Not modelled in either reading:</strong> potential escapers. These are stars that are energetically
+              unbound but still inside the tidal radius, and they are the standard Newtonian explanation for flattened outer
+              dispersion profiles (Küpper et al. 2010; Claydon, Gieles &amp; Zocchi 2017). They mimic exactly the outer-slope signal
+              this statistic reads.
+              <br />&bull; <strong>Not a prospective test.</strong> The registration (Session 611, 2026-02-17) fixed γ only. The knee
+              (measured 2026-08-27), the floor, the dynamics (L2) and the smoothing length were all chosen afterwards, and those
+              choices move the verdict from &ldquo;passes&rdquo; to &ldquo;excluded&rdquo;. That is why the scoreboard still reads 0 prospective tests.
+              <br />So &ldquo;excluded&rdquo; in the table means excluded <em>under L2, pointwise, isolated, without escapers</em>. Finding:{' '}
+              <code>explorer/findings/under-the-action-gc-knee-shells-are-striction-dominated-and-the-gc-window-is-an-l2-object.md</code>.
+            </div>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               <strong>Three results that do not depend on γ.</strong> (1) <strong>Globular clusters discriminate density-keyed from
               acceleration-keyed gravity, and the discriminating variable is the external field effect:</strong> MOND with its
@@ -916,7 +946,7 @@ export default function HonestAssessment() {
               density-keyed law <em>read algebraically</em> (g = g<sub>N</sub>/C, exact for an isolated spherical cluster) has no
               external field to appeal to. <em>Scope added 2026-09-16 (visitor researcher persona):</em> under the field equation
               ∇·[C∇Φ] = 4πGρ, which is linear in Φ, the Milky Way&apos;s field superposes and is <strong>refracted</strong> by
-              the cluster&apos;s own C profile, a linear external-field dependence rather than MOND&apos;s nonlinear EFE. These
+              the cluster&apos;s own C profile, a linear external-field dependence rather than MOND&apos;s nonlinear EFE. That is the L2 statement. Under L3 the internal residuals are 1&ndash;30 g<sub>ext</sub>, plus a quadratic term. These
               rows do not contain it, so &ldquo;EFE = 0 exactly&rdquo; describes the algebraic reading only. (This answers, by measurement, the question a visitor
               researcher persona asked on 2026-09-07.) (2) <strong>The exclusion is a window on the knee, transferable to any
               theory of the form g = g<sub>N</sub>/C(ρ):</strong> ρ<sub>c</sub> ∈ 0.1–300 M<sub>☉</sub>/pc³ is excluded at γ = 0.489,

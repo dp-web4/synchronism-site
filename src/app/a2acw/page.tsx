@@ -121,17 +121,10 @@ export default function A2ACW() {
             External-verification grounding is standard practice in AI-for-science pipelines.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
-            <strong>What is the contribution, then?</strong> Not the protocol — the{' '}
-            <em>program-level null result with retrospective controls (N=6)</em>: 6 externally-audited
-            claims (of 47 internal-consistency candidates drawn from a 3,308-session corpus), with
-            measured sensitivity (4/4 prior-art rediscoveries caught after
-            vocabulary translation) <em>and</em> measured specificity (0/6 — every held-out genuine
-            discovery false-flagged), that same-corpus adversarial AI pairs filter for internal
-            consistency but cannot generate or detect novelty. The controls are the artifact; the
-            protocol is assembled prior art. <em>Evidence-class caveat: the controls are
-            retrospective audits on six items from one corpus and one framework — not preregistered
-            held-out experiments. &ldquo;Controlled&rdquo; in the experimental-design sense would
-            overstate it.</em>
+            <strong>What is the contribution, then?</strong> Not the protocol, and not yet a result. The open question is
+            whether an LLM auditor rewarded for finding prior art can tell a reparametrization from a real discovery. Nothing
+            measured so far answers it (see Self-Audit Results below). The audits of this framework&apos;s claims were done by
+            LLM agents, with a human (dp) overseeing the badge taxonomy, and no outside physicist has reviewed them.
           </p>
         </div>
 
@@ -198,182 +191,76 @@ export default function A2ACW() {
         </div>
 
         <h2>Self-Audit Results</h2>
-        <div style={{
-          background: 'rgba(245, 158, 11, 0.08)',
-          border: '1px solid rgba(245, 158, 11, 0.25)',
-          borderRadius: '0.5rem',
-          padding: '1rem 1.25rem',
-          marginBottom: '1rem',
-        }}>
-          <h3 style={{ color: '#f59e0b', marginTop: 0, fontSize: '0.95rem' }}>A2ACW is a reparametrization detector, not a discovery engine</h3>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            Two AI models trained on the same physics corpus share the same blind spots. A2ACW filters
-            for internal consistency — it <strong>cannot test for out-of-distribution novelty</strong>.
-            The 1.4% internal-consistency-survival rate is an upper bound on internal coherence, not a discovery rate.
-            Retrospective audits of 6 demoted claims confirmed this: the in-distribution self-play correctly
-            challenged each claim but stayed within the shared training distribution.
-          </p>
+        <div style={{ marginBottom: '0.5rem' }}>
+          <ValidationBadge status="untested" label="Detector discrimination unmeasured" />
+        </div>
+        <div style={{ background: 'rgba(56, 189, 248, 0.07)', border: '1px solid rgba(56, 189, 248, 0.3)', borderRadius: '0.5rem', padding: '1rem 1.25rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#38bdf8' }}>Current state.</strong> The full statement, with its bounds, is kept in one place:{' '}
+          <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers, &ldquo;Current state&rdquo;</Link>. In short:
+          <ul style={{ margin: '0.5rem 0 0', paddingLeft: '1.2rem', lineHeight: 1.6 }}>
+            <li><strong>Audited claims: 0 of 9 survived</strong> (the 6 former &ldquo;Validated&rdquo; badges plus the top 3 of ~47 candidates). The
+              auditors were LLM agents, not an external human expert, so this count is <em>instrument-uncalibrated</em>. The adversarial
+              loop itself had passed all six badges; the demotions came from a later audit. With 0 of 9 the true survival rate can be as
+              high as 0.34 (Clopper&ndash;Pearson, two-sided 95%).</li>
+            <li><strong>Designed benchmark</strong> (positive class = &ldquo;is a reparametrization&rdquo;): 3 external reparametrizations and 6
+              canonical discoveries, scored by one model that knew every answer. Under the literal rule J = 0; under the steelmanned rule
+              J = 1.0. The steelmanned rule lets the scorer&apos;s own novelty judgment do all the work, and that judgment is what is in question.
+              <strong> This is not a citable null.</strong></li>
+            <li><strong>The six demoted claims are not a positive arm.</strong> Their ground truth came from the audit class under
+              evaluation, so the earlier &ldquo;sensitivity 6/6&rdquo; is circular.</li>
+            <li><strong>The question it cannot yet answer.</strong> H1: the framework contained nothing novel. H2: an LLM rewarded for
+              finding prior art maps almost anything onto its corpus, real discoveries included. Nothing measured so far separates them.</li>
+          </ul>
         </div>
 
-        <h3>Retrospective Catch-Rate Tests</h3>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1rem' }}>
-          <div className="card">
-            <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#ef4444', marginBottom: '0.25rem' }}>0 / 6</div>
-            <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-              <strong>Temporal-asymmetry (2026-05-18)</strong>
-            </div>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
-              6 later-demoted claims tested against original A2ACW pressure. 0 caught.
-              Median prior-art year: ~1996. The protocol challenged the claims but within
-              the same corpus — shared blind spots are invisible to shared adversaries.
-            </p>
-          </div>
-          <div className="card">
-            <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#22c55e', marginBottom: '0.25rem' }}>4 / 6</div>
-            <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-              <strong>Vocabulary-asymmetry (2026-05-19)</strong>
-            </div>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
-              Claims pre-translated to modern register before adversarial review.
-              Catches 4/4 of the prior-art-rediscovery sub-class. The 2 misses are
-              different failure modes (not vocabulary failures).
-            </p>
-          </div>
+        <div style={{ background: 'rgba(245, 158, 11, 0.08)', border: '1px solid rgba(245, 158, 11, 0.25)', borderRadius: '0.5rem', padding: '1rem 1.25rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#f59e0b' }}>Design problems with the proposed control, and a dataset that already exists.</strong>
+          <ul style={{ margin: '0.5rem 0 0', paddingLeft: '1.2rem', lineHeight: 1.6 }}>
+            <li><strong>Both benchmark arms are famous.</strong> Eddington&apos;s 137 and tired light, Dirac, Bell and Higgs test recall
+              of famous cases, not novelty judgment. The claims actually audited here are incremental. A matched arm would use
+              modest-novelty results published after the models&apos; training cutoff.</li>
+            <li><strong>There is no human-referee arm.</strong> Human referees also map claims onto prior art. Without their rate on
+              the same items, &ldquo;LLM audit mistakes novelty for prior art&rdquo; has nothing to be compared against.</li>
+            <li><strong>The site&apos;s own correction trail is the better dataset.</strong> This project has hundreds of dated
+              corrections. Each has a direction (a claim that was too strong, or a refutation that was too strong), the track that
+              caught it, what caught it (running code or re-reading), and how long it stood. Coding that trail measures the
+              error profile of LLM research agents <em>that have an executable oracle</em>, with no post-cutoff control needed.
+              Proposed to the research archive; not yet run.</li>
+          </ul>
+          <p style={{ margin: '0.5rem 0 0', fontSize: '0.8rem' }}>Raised by a researcher visitor persona, 2026-09-17.</p>
         </div>
 
         <h3>Three-Axis Failure Taxonomy (A2ACW v2)</h3>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
-          The 6 demotions decompose into three distinct failure classes, each requiring a different detection axis:
+          The 6 demotions sort into three failure classes, and each needs a different check. This is a design lesson
+          for the protocol, not a measured detection rate.
         </p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
-          <div className="card" style={{ padding: '0.75rem 1rem' }}>
-            <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
-              <span style={{ fontFamily: 'monospace', color: '#8b5cf6', minWidth: '2.5rem' }}>Axis 1</span>
-              <div>
-                <strong>Vocabulary translation</strong>
-                <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>catches 4/4 prior-art rediscoveries</span>
-                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.25rem', marginBottom: 0 }}>
-                  Pre-translate claims to modern notation before adversarial review.
-                  Catches: Born rule/Zurek 2003, wide-binary EFE/Bekenstein-Milgrom 1984, galaxy rotation/MOND 1983,
-                  Γ=γ²(1−c)/Palma-Suominen-Ekert 1996.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="card" style={{ padding: '0.75rem 1rem' }}>
-            <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
-              <span style={{ fontFamily: 'monospace', color: '#38bdf8', minWidth: '2.5rem' }}>Axis 2</span>
-              <div>
-                <strong>Symbol audit</strong>
-                <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>catches notation collisions</span>
-                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.25rem', marginBottom: 0 }}>
-                  Check that each symbol has one meaning. Catches: dual-C tension (C(ρ) vs C(γ,D,S) — two
-                  incompatible coherence functions). The framework uses γ in three incompatible roles
-                  (regime constant γ=2, operational γ=2/√N_corr, noise coupling rate Γ=γ²(1-c)).
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="card" style={{ padding: '0.75rem 1rem' }}>
-            <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
-              <span style={{ fontFamily: 'monospace', color: '#10b981', minWidth: '2.5rem' }}>Axis 3</span>
-              <div>
-                <strong>Null-baseline computation</strong>
-                <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginLeft: '0.5rem' }}>catches absence-of-evidence claims</span>
-                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.25rem', marginBottom: 0 }}>
-                  Compute what the null model predicts before claiming evidence. Catches:
-                  chemistry r=0.98 (any monotone function of Z achieves r→1 on density-monotonic targets by construction;
-                  a polynomial null matches or exceeds Synchronism&apos;s r — verified 2026-05-10).
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem', marginBottom: '1.5rem' }}>
+          <li><strong>Vocabulary translation:</strong> restate claims in modern notation before review. It would have surfaced Born rule/Zurek 2003,
+            wide-binary EFE/Bekenstein&ndash;Milgrom 1984, galaxy rotation/MOND 1983, and Γ=γ²(1−c)/Palma&ndash;Suominen&ndash;Ekert 1996.</li>
+          <li><strong>Symbol audit:</strong> check that each symbol has one meaning. It surfaced the dual-C tension and γ used in three incompatible roles.</li>
+          <li><strong>Null-baseline computation:</strong> compute what a null model predicts before claiming evidence. It surfaced
+            chemistry r = 0.98, which any monotone function of Z reaches on density-monotonic targets.</li>
+        </ul>
 
-        <h3>Specificity Audit (2026-05-22)</h3>
-        <div style={{ background: 'rgba(139, 92, 246, 0.07)', border: '1px solid rgba(139, 92, 246, 0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
-          <strong>Positive class, stated explicitly (added 2026-07-27):</strong> throughout this section the
-          <strong> positive class is &ldquo;the claim IS a reparametrization&rdquo;</strong> — the thing the
-          detector is built to flag. So <em>sensitivity</em> is the catch rate on known-demoted claims, and
-          <em> specificity</em> is the rate at which genuine discoveries are correctly <em>passed</em>.
-          <br /><br />
-          This is spelled out because two independent expert readers have now read these numbers as
-          swapped — both assumed the positive class was &ldquo;genuinely novel,&rdquo; under which the
-          labels do invert (sensitivity 0/6, specificity 6/6). Both conventions are defensible and both
-          describe the same detector; the defect was leaving the convention unstated on a page whose
-          subject is measurement discipline. <strong>Nothing about the verdict depends on the choice:</strong>{' '}
-          Youden&apos;s J = sensitivity + specificity &minus; 1 = 0 under either labeling. <strong>On these
-          controls J = 0 is a degenerate operating point, not a measurement of chance performance:</strong> each
-          control was chosen <em>because</em> its modern-register restatement trips prior art, so specificity 0/6
-          was designed in. The detector&apos;s specificity is <em>unmeasured</em> until contemporaneous controls
-          (claims open at the models&apos; training cutoff, later settled by the field) are run. (Reworded
-          2026-09-11: this sentence previously read J = 0 as the detector carrying no information at all, one line
-          before calling it a design degeneracy &mdash; a researcher reader held the demotion to the standard the
-          claims were held to.)
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1rem' }}>
-          <div className="card">
-            <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#22c55e', marginBottom: '0.25rem' }}>6 / 6</div>
-            <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-              <strong>Sensitivity (catch rate on demotions)</strong>
-            </div>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
-              All 6 demoted claims caught by the combined three-axis protocol.
-              This number alone is uninterpretable without specificity.
-            </p>
-          </div>
-          <div className="card">
-            <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#ef4444', marginBottom: '0.25rem' }}>0 / 6</div>
-            <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-              <strong>Specificity (genuine discoveries correctly passed)</strong>
-            </div>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>
-              Held-out control: 6 canonical genuine discoveries &mdash; <strong>Dirac 1928, Bell 1964, BCS 1957, Higgs 1964,
-              Hawking 1974, Noether 1918</strong> (Session 662; proposal <code>a2acw_specificity_null_baseline.md</code>) &mdash;
-              submitted to vocabulary-asymmetry audit. Result: 0/6 passed — all were flagged as potential reparametrizations.
-              <strong>Corrected 2026-09-05:</strong> this card listed &ldquo;COBE fluctuations, Higgs boson, gravitational
-              wave first detection, etc.&rdquo; until today &mdash; a set that appears nowhere in the archive and overlaps the
-              real one only at Higgs. The specificity number depends entirely on which set was run, so the wrong list made
-              the headline null uncheckable (caught by a visitor researcher persona). <strong>Why 0/6 was the only possible
-              outcome:</strong> each control was chosen <em>because</em> its modern-register restatement triggers prior art
-              for its ingredients (BCS on Cooper 1956, Higgs on Anderson 1962) &mdash; every real discovery does &mdash; so
-              enlarging this set cannot move J off zero. Measuring specificity needs <em>contemporaneous</em> controls
-              (claims open at the models&apos; training cutoff, later confirmed or refuted by the field); proposed to the
-              archive 2026-09-05 as <code>a2acw_contemporaneous_controls_specificity_20260905.md</code>.
-              Discrimination relies entirely on unautomated novelty judgment, not protocol mechanics.
-              <strong> Sample-size caveat:</strong> n=6 gives a wide binomial confidence interval. Stated
-              precisely (tightened 2026-07-27): the 95% two-sided Clopper&ndash;Pearson interval for 0
-              successes in 6 puts the true <em>specificity</em> at ≤ ~0.46 — equivalently the true
-              false-positive rate at ≥ ~0.54, <em>not</em> ≤ 0.46, which is how this sentence previously read.
-              (A one-sided 95% bound gives 0.393 instead of 0.46; a reader who computes either number is
-              right, and the convention is now named so the two don&apos;t look like a discrepancy.)
-              So even &ldquo;flags everything&rdquo; is under-powered as stated; this is not a tight bound.
-              The same caveat applies to the program-level null this sector is built on — a novelty-survival
-              rate as high as ~39–46% is consistent with 0/6, and that null gets the
-              &ldquo;underpowered&rdquo; badge on the same terms the galaxy tests do. The test is also partly over-determined: every
-              real discovery sits atop decades of prior art, so &ldquo;flagged as reparametrization&rdquo; is
-              expected to some degree by construction, not purely a protocol failure. The qualitative conclusion
-              (retrieval aid, not detector) is likely right; the 0/6 precision is oversold relative to n=6.
-            </p>
-          </div>
-        </div>
-        <div style={{ background: 'rgba(239, 68, 68, 0.07)', border: '1px solid rgba(239, 68, 68, 0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1.5rem' }}>
-          <strong style={{ color: '#ef4444' }}>Implication:</strong>{' '}
-          A 6/6 sensitivity combined with 0/6 specificity means A2ACW as currently implemented
-          is a <em>retrieval aid</em>, not a detector. It surfaces prior-art candidates for human review;
-          it cannot distinguish genuine discoveries from reparametrizations without that human judgment step.
-          The methodology contribution claim requires this number to be reported alongside the catch rate.
-        </div>
-
-        <div style={{ background: 'rgba(139, 92, 246, 0.07)', border: '1px solid rgba(139, 92, 246, 0.25)', borderRadius: '0.375rem', padding: '0.75rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1.5rem' }}>
-          <strong style={{ color: '#8b5cf6' }}>Primary finding:</strong>{' '}
-          Adversarial AI self-play over a shared corpus is a <em>reparametrization detector, not a discovery engine</em>.
-          The 6-of-6 Validated→Reparametrization demotion rate (all 6 tested claims demoted on human audit) is the
-          empirical confirmation. The three-axis decomposition is the protocol-design lesson:
-          shared-distribution adversaries need external vocabulary, symbol, and null-model checks.
-          This is a citable null result about the limits of in-distribution AI self-play for science.
-          <strong> Caveat:</strong> specificity 0/6 means the protocol catches everything — and therefore discriminates nothing on its own.
-        </div>
+        <details style={{ marginBottom: '1.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision note: what this section said before 2026-09-17</summary>
+          <p>
+            Until 2026-09-17 this page gave an older version of the result. It said:
+          </p>
+          <ul>
+            <li>&ldquo;6 externally-audited claims&rdquo; and &ldquo;all 6 tested claims demoted on human audit&rdquo;. The audits were by LLM agents.</li>
+            <li>&ldquo;Sensitivity 6/6 … combined three-axis protocol&rdquo;. That figure is circular, because the ground truth came from the audit class being evaluated.</li>
+            <li>&ldquo;Specificity 0/6&rdquo;, with &ldquo;enlarging this set cannot move J off zero&rdquo;. Under the steelmanned rule J = 1.0.</li>
+            <li>&ldquo;This is a citable null result about the limits of in-distribution AI self-play for science.&rdquo; It is not citable as a null.</li>
+            <li>The 2026-05-18 temporal-asymmetry &ldquo;0/6&rdquo; card was shown as a run. It was a desk counterfactual.</li>
+          </ul>
+          <p>
+            The protocol-page header called the result a &ldquo;program-level null result with retrospective controls (N=6)&rdquo;.
+            For Researchers had carried the corrected state since 2026-09-15. A researcher visitor persona found this page still
+            stating the superseded version.
+          </p>
+        </details>
 
         <div style={{ marginTop: '2rem' }}>
           <Link href="/autonomous-research" className="btn-primary">

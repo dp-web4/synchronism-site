@@ -317,14 +317,26 @@ export default function GalaxyPlotter() {
             <li><strong>Amber dotted</strong> — the hand-tuned tanh(radius) stand-in previously displayed. It fits because it was drawn to fit; no &#x03C1;, &#x03C1;<sub>crit</sub>, or &#x03B3; enters it. (Recolored from violet 2026-07-23: it is an illustration, not the theory.)</li>
             <li><strong>Green dashed</strong> — MOND&apos;s real simple-&#x03BD; function on a BTFR-assigned mass (one global a&#x2080;, zero per-galaxy knobs). It lands close to the dots — expect ~10% mismatches from the toy mass model, not from tuning.</li>
           </ul>
-          <p style={{ margin: '0.6rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
-            <strong>Which MOND, and why it matters (added 2026-07-29):</strong> the green curve here uses the simple-&#x03BD; family
-            (&#x03BD; = &frac12; + &radic;(&frac14; + 1/y), power-law high-acceleration return) — the same family{' '}
-            <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>{' '}
-            excludes at +17.7&ndash;18.0&sigma; against Cassini planetary ephemerides. The <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> page&apos;s
-            RAR/&#x394;BIC test uses McGaugh&apos;s different exponential-return &#x03BD; = 1/(1&minus;e<sup>&minus;&radic;x</sup>), which is Cassini-safe. Both are called
-            &ldquo;MOND&rdquo; on this site; they are not the same function, and only one of them survives the solar system.
-          </p>
+          <div style={{ margin: '0.6rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+            <strong>Which MOND, and why it matters:</strong> the green curve here uses the simple-&#x03BD; function
+            (&#x03BD; = &frac12; + &radic;(&frac14; + 1/y)). The <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> page&apos;s
+            RAR/&#x394;BIC test uses McGaugh&apos;s RAR function &#x03BD; = 1/(1&minus;e<sup>&minus;&radic;y</sup>). Both are called
+            &ldquo;MOND&rdquo; on this site, and they are different functions. <strong>Neither survives the Solar System as a QUMOND
+            interpolating function.</strong> Cassini bounds the quadrupole the Galactic field induces around the Sun, and that
+            quadrupole is set near 7,000&nbsp;AU, where the Sun&apos;s own field is about a&#x2080;. There the two functions are close.
+            Run through{' '}
+            <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>&apos;s own instrument,
+            McGaugh&apos;s function fails Cassini by +15.9&sigma; to +20.9&sigma; and the simple function by +15.3&sigma; to +20.1&sigma;.
+            The framework&apos;s compander at the SPARC fit fails by +17.95&sigma; on the same instrument. Desmond, Hees &amp; Famaey
+            (2024) report 8.7&sigma; after marginalizing.
+            <details style={{ marginTop: '0.35rem' }}>
+              <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+              This note used to call McGaugh&apos;s exponential-return function &ldquo;Cassini-safe&rdquo; and say only the simple
+              function fails. That reasoning used the high-acceleration tail at Saturn, but Cassini constrains the quadrupole
+              set in the transition region. A visitor persona (graduate physics) caught it. The numbers above come from a
+              pre-registered run: <code>maintainer/scripts/cassini_q2_mond_interpolating_functions.py</code>.
+            </details>
+          </div>
         </div>
 
         <div style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.35)', borderRadius: '0.375rem', padding: '0.75rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>

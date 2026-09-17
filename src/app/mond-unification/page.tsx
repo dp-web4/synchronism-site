@@ -147,7 +147,8 @@ export default function MondUnification() {
           g<sub>obs</sub>&nbsp;=&nbsp;g<sub>bar</sub>/C(ρ) modification (the direction the site&apos;s own
           f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C identity implies &mdash; corrected 2026-08-04, this previously
           read &ldquo;C(ρ)&middot;g,&rdquo; the opposite direction) <strong>satisfies the Strong Equivalence
-          Principle by construction and predicts EFE&nbsp;=&nbsp;0 exactly</strong> &mdash; a sharper structural
+          Principle by construction and predicts EFE&nbsp;=&nbsp;0 exactly</strong>. That holds for the algebraic reading only.
+          The field-equation completion refracts an external field, as the next box shows. It is a sharper structural
           claim than &ldquo;0.3&ndash;0.4&times; MOND.&rdquo; Three qualifications an expert reader supplies
           immediately, stated here so they don&apos;t have to (rewritten 2026-08-12; this sentence previously
           ended &ldquo;already in tension with Chae et al. 2020&rdquo;, a claim the research ledger withdrew on
@@ -165,25 +166,46 @@ export default function MondUnification() {
           effect cannot refute (or support) a model whose baseline is off by 10&sup3;&ndash;10&#x2074; on the
           same points.
         </p>
-        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
-          <strong style={{ color: '#38bdf8' }}>EFE = 0 survives the obvious momentum-conservation objection
-          (2026-08-04):</strong> an algebraic g = g<sub>bar</sub>/C(ρ) modification looks like it violates
-          momentum conservation, since it isn&apos;t obviously sourced by a field equation. It survives: the
-          one-line completion &nabla;&middot;[C(ρ)&nabla;Φ] = 4πGρ (Refracted Gravity&apos;s equation) conserves
-          momentum, reproduces g = g<sub>N</sub>/C exactly in spherical symmetry, and its extra polarization force is
-          &#8804;2&times;10&#8315;&#8309; of gravity &mdash; negligible <em>at this framework&apos;s own knee</em>. Two scope
-          limits (added 2026-09-11): <strong>outside spherical symmetry the reduction to g<sub>N</sub>/C does not
-          hold</strong> &mdash; in a disc with the knee inside it, the &nabla;C&middot;&nabla;Φ refraction term makes the two
-          differ by up to 5.9&times; &mdash; and with the knee inside a disc, the striction force of the variational
-          completion reaches up to 164&times; the vertical restoring force (explorer 2026-08-26). Neither touches this
-          framework&apos;s own parameters, whose knee never enters a disc; both matter for any density-keyed theory whose
-          knee does. Because this completion is
-          <em> linear in Φ</em>, EFE = 0 is preserved exactly, and the same linearity is why the exterior field
-          of an isolated mass diverges as C&nbsp;&rarr;&nbsp;0 in vacuum: &ldquo;a uniform external field does
-          not change ρ&rdquo; (&rArr; EFE = 0) and &ldquo;empty space has C = 0 however strong the field&rdquo;
-          (&rArr; divergent exterior field) are the same statement, not two separate properties. Full
-          derivation: <code>explorer/findings/efe-zero-survives-momentum-objection-but-the-substitution-was-never-evaluated.md</code>.
-        </p>
+        <div id="field-equation" style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem', marginBottom: '1rem' }}>
+          <strong style={{ color: '#38bdf8' }}>The field-equation completion: momentum, striction and the external field.</strong>{' '}
+          An algebraic g = g<sub>bar</sub>/C(ρ) is not sourced by a field equation. The one-line completion
+          &nabla;&middot;[C(ρ)&nabla;Φ] = 4πGρ (Refracted Gravity&apos;s equation) reproduces g = g<sub>N</sub>/C exactly in
+          spherical symmetry. Three properties matter.
+          <br />&bull; <strong>On its own it does not conserve momentum.</strong> Integrating the force density &minus;ρ&nabla;Φ over an
+          isolated system leaves a net self-force F = &minus;(1/8πG)&int;|&nabla;Φ|²&nabla;C d³x. That vanishes for reflection-symmetric
+          C profiles (hence spherical symmetry), not in general: a lopsided system would push itself. The variational
+          form, with action term &minus;&int;C(ρ)|&nabla;Φ|²/8πG, adds a <em>striction</em> force density
+          &minus;ρ&nabla;(C&prime;(ρ)|&nabla;Φ|²/8πG), and that cancels the self-force exactly. Momentum conservation <em>is</em> the
+          striction term. The site&apos;s Refracted Gravity disc runs (<Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>)
+          and the globular-cluster window solve the field equation without it.
+          <br />&bull; <strong>Striction is not small wherever the knee is inside the object.</strong> At this framework&apos;s A&middot;V² knee
+          it is &le;2&times;10&#8315;&#8309; of gravity, because that knee never enters a disc. With the knee inside a disc it reaches 164&times;
+          the vertical restoring force. At globular-cluster knee shells it is 1.7&ndash;13&times; gravity and points outward
+          (explorer, 2026-09-16).
+          <br />&bull; <strong>The external field is refracted, not ignored.</strong> Linearity in Φ gives superposition, but an external
+          field is solved with the system&apos;s own C(x), so wherever &nabla;C &ne; 0 it bends, like a field in a dielectric.
+          Without striction (&ldquo;L2&rdquo;) that is a linear external-field effect of order g<sub>ext</sub>&middot;&Delta;C/C: about
+          0.3&ndash;0.37 g<sub>ext</sub> beyond the knee in a halo globular cluster. With striction (&ldquo;L3&rdquo;) the internal residuals
+          are 1&ndash;30 g<sub>ext</sub> and there is a quadratic term, a nonlinear EFE. EFE&nbsp;=&nbsp;0 holds exactly only for the
+          algebraic reading, or when C is uniform across the system. This linear refraction EFE is the one genuinely distinct
+          external-field prediction of this family, and it has not been confronted with data.
+          <br />&bull; <strong>Floored vs unfloored C.</strong> &ldquo;The knee never enters a disc, so none of this touches the framework&apos;s
+          parameters&rdquo; holds for the floored form, where C &asymp; Ω<sub>m</sub> below the knee. For the unfloored form
+          C = γρ/ρ<sub>c</sub> below the knee, &nabla;ln C = &nabla;ln ρ exactly, whatever the knee and γ. The equation then
+          becomes &nabla;²Φ + &nabla;ln ρ&middot;&nabla;Φ = 4πGρ<sub>c</sub>/γ, and refraction is order R/h in any thin disc.
+          <br />The vacuum problem remains in both forms: empty space has C&nbsp;&rarr;&nbsp;0 (or the floor), and that controls the
+          exterior field of an isolated mass. Full derivations: <code>explorer/findings/efe-zero-survives-momentum-objection-but-the-substitution-was-never-evaluated.md</code>,{' '}
+          <code>explorer/findings/l2-is-not-l3-for-a-disc-and-the-action-adds-a-force-the-tests-omit.md</code>,{' '}
+          <code>explorer/findings/under-the-action-gc-knee-shells-are-striction-dominated-and-the-gc-window-is-an-l2-object.md</code>.
+          <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+            From 2026-08-04 this box was titled &ldquo;EFE = 0 survives the obvious momentum-conservation objection&rdquo;. It said the
+            completion &ldquo;conserves momentum&rdquo; and that, being linear in Φ, &ldquo;EFE = 0 is preserved exactly.&rdquo; The first is true
+            only in spherical symmetry or with striction included. The second confuses superposition with the absence of
+            refraction. The research archive recorded the momentum point on 2026-08-26 and the refraction point on 2026-09-16;
+            a researcher visitor persona found the box still asserting both on 2026-09-17.
+          </details>
+        </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           There <em>is</em> a real environmental effect in this framework &mdash; it is just not the EFE. Ambient
           medium density adds to local ρ, raising C and suppressing the boost: an <strong>ambient-density

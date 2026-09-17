@@ -150,3 +150,22 @@ err_dir codes and no hypothesis. Fisher exact on mechanism × err_dir (rater A's
 stated direction, one-sided p < 0.10.
 
 **Belief ~50%.** Exploratory whatever the result.
+
+---
+
+## Addendum A2: second cohort for the maintainer's H-a (registered before building it)
+
+**Seen before writing this.** All Aug-cohort results: TOO_NEGATIVE 9/24 directional corrections (38%), any-correction
+hazard 28/185, H5 null.
+
+**Design.** Identical machinery and identical codebooks. T0 = `8022b0e7295df09f43e59747b59d55a14cdf8d9e` (last commit ≤ 2026-05-01), followed 47 days to
+`7d716ab1d1b975448efea306df0843e534bcdb3b` (last commit ≤ 2026-06-17), so the window matches 08-01 → 09-17. The pool is 306, so the sample is all verdict
+candidates up to 240 (seed 20260917). Raters are fresh Claude subagents: T0 codes, then outcome codes, as before.
+
+**H-a, operationalized.**
+- **Measure:** the TOO_NEGATIVE share of directional corrections, May cohort vs Aug cohort (38%).
+- **Prediction:** the May share is lower. The Feb–Jun period was the demotion campaign ("Validated → Reparametrization"),
+  so its corrections should be mostly over-claim fixes. Fisher one-sided p < 0.10. Belief ~70%.
+- **Secondary:** the any-correction hazard per verdict unit, May vs Aug. No directional prediction.
+
+**If the May share is not lower,** the "direction flipped after August" narrative has no support even as a trend.

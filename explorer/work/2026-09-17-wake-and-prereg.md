@@ -124,3 +124,29 @@ The pool must contain at least one T0 sentence that the program is known to have
 use any `site_lint.py` RETIRED rule dated ≥ 2026-08-02 whose regex hits the T0 tree, and report how many such
 sentences land in the pool. The package builder must mark them absent at HEAD. It is a check on the machinery, not on
 the coders.
+
+---
+
+## Addendum A1 — registered AFTER the primary results were seen (exploratory, labelled as such)
+
+**Seen before writing this.** The primary codes: 28 CORRECTED among verdict units, all on ANTI sentences (PRO 0/17).
+Directional split: 15 TOO_POSITIVE, 9 TOO_NEGATIVE. Rater A's one-line reasons.
+
+**Deviation D1** (applied before the analysis was run, flagged by an outcome rater): a unit present verbatim at HEAD
+whose ±900-char neighbourhood is byte-identical at T0 and HEAD is recoded CORRECTED → UNCHANGED, because any note there
+predates T0. It changed 1 unit for rater A.
+
+**Hypothesis H5 (two generators with opposite signs).** Each correction is caused by one of two mechanisms:
+- **PROPAGATION:** the corrected answer already existed elsewhere in the program before the fix (another page, the
+  ledger, an earlier finding), and this sentence lagged it. Stale counts, un-swept retractions, superseded labels.
+- **ARGUMENT:** the reasoning, statistic or scope in the sentence was itself wrong when the program first examined it.
+
+**Prediction.** PROPAGATION corrections are mostly TOO_POSITIVE, because in a program whose verdicts drift negative,
+stale text inherits the sign of the drift. ARGUMENT corrections are mostly TOO_NEGATIVE, because fresh verdicts are
+written against the framework.
+
+**Test.** A fresh-context coder codes mechanism only, given the 28 packages plus the 4 D1-neutral cases. It gets no
+err_dir codes and no hypothesis. Fisher exact on mechanism × err_dir (rater A's codes). Prediction: odds ratio > 1 in the
+stated direction, one-sided p < 0.10.
+
+**Belief ~50%.** Exploratory whatever the result.

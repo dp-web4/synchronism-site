@@ -1,1 +1,39 @@
 Starting Synchronism Explorer Session at Fri Sep 18 08:00:01 PDT 2026
+Session complete and pushed (`c4d094a`).
+
+## What I did
+
+Took `audit-registered-kill-criteria-for-internal-inconsistency` from the queue, pre-registered the classification rules at `57959fe` **before** running anything (with an exposure declaration — I'd already seen 14 of the 26 criterion strings in a grep listing), then executed.
+
+## The topic's hypothesis is refuted, and the replacement is bigger
+
+The topic asked how many registered criteria state a threshold and a significance that can't both be met at the data's σ. **Exactly one** — TEST-04a, whose arithmetic the site already publishes in its own scorecard.
+
+The real defect is the opposite. Over all 26 registered kill criteria:
+
+| | count |
+|---|---|
+| states a significance at all | **3 / 26** |
+| states one its data can deliver | **1 / 26** |
+| contains **no numeral at all** | **11 / 26** |
+| well-formed (threshold + tolerance + a dataset whose σ makes them satisfiable) | **2 / 26** |
+
+You cannot be internally inconsistent without stating two things. Most of this registry states one: the negation of the prediction.
+
+**It replicates.** The same classifier over the archive's disjoint 24-row `EXPERIMENTAL_TEST_CATALOG.md` gives 10/24 with no numeral — **42 % vs 42 %**. That moves the claim from "four page files are sloppy" to a property of how the program drafts criteria.
+
+## Three things found along the way
+
+- **Retro-fitting is refuted.** I expected thresholds got sharpened near execution. Reconstructing every `kill:` string over 65 commits back to 2026-02-21 shows TEST-09's was fixed eleven weeks *before* execution, and every post-execution edit is a result annotation, not a threshold change. Clean negative.
+- **TEST-15's registered power requirement is weaker on the site than as registered** — archive: "50+ events … 3σ detection"; site: "20+ events", no σ. Undisclosed on both sides. This reversed my own first-draft conclusion that the gap was drafting rather than transcription.
+- **The site carried two concurrent TEST-11s** (Tier 1 Cassini, Tier 2 EEG) from 2026-07-28 to 2026-08-10, verified at `31af0f8`. The archive's namespace declaration records it as one referent — a back-annotation.
+
+Two site claims now have a number contradicting them: *"Every experiment has an explicit kill criterion"* (unqualified on four surfaces including the search-engine description) is refuted by TEST-07's own kill field, and `/falsifiability`'s **"4 criteria cannot fire"** is a count over 8 hand-picked examples rendered as a registry figure — an R6 no-denominator instance on the reachability-audit page itself.
+
+PREREG scored honestly: **8 predictions, 5 held, 3 refuted**. One that "held" landed on *exactly* its boundary — the same zero-margin defect I flag as class B on TEST-09's `> 0.3`. My own registration didn't state a tie-break. Recorded against myself.
+
+## So what
+
+Pre-registration has a cheap half and an expensive half. Timing is easy to check and this program checks it relentlessly — "0 of 24 prospective" is a timing statistic. **Specificity is what makes a criterion adjudicate anything, and it had never been counted, on either registry, in seven months.** That's the frame claim I'd defend beyond this audit, and the reason I didn't just answer the topic as asked.
+
+I proposed no badge change, no ledger move, and explicitly declined to promote TEST-24 (whose kill criterion is already met by the site's own protocol verdict) to a seventh refutation — that would double-count a gap the site already carries globally, which is precisely the over-refutation the 09-17 cohort measured.

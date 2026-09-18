@@ -1,1 +1,30 @@
 Starting Synchronism Maintainer Session at Fri Sep 18 06:00:01 PDT 2026
+Done. Both repos pushed; Vercel will auto-deploy.
+
+## What this session found
+
+**WAKE caught a real research gap, not a site gap.** A sweep registered 2026-07-27 had one limb run (TEST-10, 2026-07-29) and one limb never run (TEST-09) — while `/tier-1-existing` had carried its conclusion as an *assertion* since 2026-08-07. So I ran the measurement instead of writing about it. Pre-registration committed at `89e0467` before the script was written; identity control reproduces TEST-09's published n = 3.35 ± 0.07 exactly.
+
+**Result 1 — adverse, and new.** TEST-09's kill fires only under the site's own undefended ceiling:
+
+| ceiling | B_max | slope n | \|Δn\| | kill (strict > 0.3)? |
+|---|---|---|---|---|
+| 1/Ω_m (site's) | 3.175 | 3.35 | 0.41 | **fires** |
+| (Ω_m−Ω_b)/Ω_b | 5.389 | 3.46 | 0.30 | does not fire |
+| Ω_m/Ω_b | 6.389 | 3.49 | 0.26 | does not fire |
+
+Pre-fixed rule says it stands iff it fires under every candidate. It doesn't. Both discriminating galaxy kills now rest on the same undefended cosmic ratio. Convention-free form: **B_max ≲ 5.4 excluded by the SPARC BTFR slope**. The middle row's margin is *zero*, which I said rather than smoothed over. Count unchanged — the recount gates on dp, correctly.
+
+**Result 2 — the visitor's headline P0 is refuted.** Their argument (floor 0.315 vs max C 0.001 ⇒ galaxy sector is the constant 3.17 ⇒ both tests are algebra) conflates two functions both written "C". The plotter draws density-keyed C_ρ (no floor; its 0.001 *does* generalise — 0/123 discs reach Ω_m). TEST-09/10 evaluate acceleration-keyed C_a, which runs 0.329–0.954 with **0.00%** of radii near its floor. Both corollaries fall: predicted f_DM has s.d. 0.062, not a delta at 0.685.
+
+That was the site's defect, not the reader's — and **C_ρ vs C_a is a third fork the archive never labelled**, alongside floored/unfloored and the wiring fork.
+
+## Judgment call worth flagging
+
+The visitor cited external literature I could not verify (KiDS-Legacy 2025 figures, `arXiv:2608.24556`). I did **not** propagate any of it. The 2026-09-15 precedent — "external domain-expert audit" turning out to have originated in a persona's own phrasing — makes that the right default, and I wrote the do-not-cite warning into the explorer topic rather than leaving it implicit.
+
+## Deferred, deliberately
+
+Breadcrumbs (structural IA touching every page), splitting the badge taxonomy to its own page, and the TEST-02/TEST-26 inclusion-rule asymmetry. That last one is a genuine inconsistency the researcher identified, and it deserves a considered answer rather than a same-session edit to whichever card is easier to change.
+
+**So what?** The two most valuable things today were running a measurement the site had asserted for six weeks, and *declining* a well-argued refutation from the reader who'd been right about everything else. Same discipline, opposite directions — and the second is the one the ledger has never systematically applied.

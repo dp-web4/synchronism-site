@@ -486,13 +486,55 @@ export default function GalaxyPlotter() {
             <strong style={{ color: '#a78bfa' }}>Which wiring this chart draws (2026-09-15):</strong> the violet curve
             couples C <em>in quadrature</em>, v&sup2; = v<sub>b</sub>&sup2; + [V<sub>flat</sub>&middot;C]&sup2;, so C &rarr; 0
             means no boost. The ledger&apos;s kills (<Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>TEST-09/TEST-10</Link>)
-            use the <em>division</em> wiring g<sub>obs</sub> = g<sub>bar</sub>/C with C floored at &#x03A9;<sub>m</sub>, whose
-            boost can never exceed 1/&#x03A9;<sub>m</sub> &asymp; 3.17&times;; without the floor, this galaxy&apos;s max C would
-            give a boost of 1/C &asymp; {maxC > 0 ? (1 / maxC).toFixed(0) : '∞'}&times;. For DDO&nbsp;154 (needs &asymp; 10&times;)
+            use the <em>division</em> wiring g<sub>obs</sub> = g<sub>bar</sub>/C &mdash; but with a{' '}
+            <strong>different C</strong> (see the box below), not this one clipped at a floor. Applying a floor to{' '}
+            <em>this</em> chart&apos;s C would give a boost of 1/C &asymp; {maxC > 0 ? (1 / maxC).toFixed(0) : '∞'}&times;
+            unfloored, or a flat 3.17&times; floored. For DDO&nbsp;154 (needs &asymp; 10&times;)
             that is quadrature &asymp; 1&times; (under), floored division &asymp; 3&times; (under), unfloored division &asymp; 1000&times;
             (over) &mdash; every wiring fails; the fork box above has the detail. Radius is in kpc (kiloparsecs):
             1 kpc = 1,000 parsecs &asymp; 3,260 light-years.
           </p>
+
+          <div style={{ margin: '0 0 0.9rem', padding: '0.7rem 0.9rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.35)', borderRadius: '0.375rem', fontSize: '0.82rem', color: 'var(--color-text-secondary)' }}>
+            <strong style={{ color: '#38bdf8' }}>&ldquo;max C = {maxC.toFixed(3)}&rdquo; and &ldquo;the floor at
+            &#x03A9;<sub>m</sub>&rdquo; are two different C&apos;s. Measured and corrected 2026-09-18.</strong>{' '}
+            A leading-edge visitor persona put the two numbers side by side on 2026-09-18 and concluded that the floor
+            (0.315) must bind everywhere, since the computed C never exceeds 0.001 &mdash; so that the galaxy sector
+            applies the <em>constant</em> 3.17, the tanh does no work, and TEST-09/TEST-10 are algebra rather than
+            data. The persona flagged the inference as unverified and asked for a source check before publishing. It
+            was run, on 123 real SPARC discs rather than this page&apos;s five-galaxy toy, and{' '}
+            <strong>the inference does not hold &mdash; because the two numbers describe different functions.</strong>
+            <br /><br />
+            &bull; <strong>C<sub>&#x03C1;</sub> = tanh(&#x03B3;&middot;ln(1+&#x03C1;/&#x03C1;<sub>crit</sub>))</strong>,
+            keyed on <em>density</em> &mdash; what this chart draws, and what &ldquo;max C = {maxC.toFixed(3)}&rdquo;
+            reports. It carries no floor. The 0.001 figure <em>does</em> generalise off the toy: over 123 SPARC discs
+            the per-disc maximum has median 1.2&times;10<sup>&minus;3</sup> at &#x03B3; = 2 (1.6&times;10<sup>&minus;4</sup>
+            to 4.9&times;10<sup>&minus;2</sup>), and <strong>0 of 123</strong> reach &#x03A9;<sub>m</sub> anywhere.
+            <br />
+            &bull; <strong>C<sub>a</sub> = &#x03A9;<sub>m</sub> + (1&minus;&#x03A9;<sub>m</sub>)&middot;x/(1+x)</strong>,
+            x = (g<sub>bar</sub>/a&#x2080;)<sup>1/&#x03C6;</sup>, keyed on <em>acceleration</em> &mdash; what the
+            TEST-09 and TEST-10 scripts evaluate. Its floor is part of the functional form, not a clip. On the same
+            123 discs it runs <strong>0.329 to 0.954</strong> (median 0.515, IQR 0.235), and{' '}
+            <strong>0.00%</strong> of the 2,856 radii sit within 1% of the floor. The applied boost spans
+            1.05&times;&ndash;3.04&times;, and never reaches the 3.17 ceiling.
+            <br /><br />
+            So the two corollaries the persona drew are refuted on the framework&apos;s own data: the predicted
+            f<sub>DM</sub> is <em>not</em> a delta function at 0.685 (median 0.585, s.d. 0.062, and <em>no</em> galaxy
+            within 0.01 of the cap), and TEST-09&apos;s slope is <em>not</em> ceiling-independent &mdash; it moves 0.62
+            across B<sub>max</sub> &isin; [2, 100]. <strong>What the sweep did find, and it is adverse:</strong>{' '}
+            TEST-09&apos;s kill is <Link href="/tier-1-existing" style={{ color: '#38bdf8' }}>convention-dependent</Link>,
+            firing only under the site&apos;s own undefended ceiling. Pre-registered at site commit{' '}
+            <code style={{ fontSize: '0.76rem' }}>89e0467</code>; script{' '}
+            <code style={{ fontSize: '0.76rem' }}>maintainer/scripts/which_C_carries_the_floor.py</code> (+{' '}
+            <code style={{ fontSize: '0.76rem' }}>_output.txt</code>), identity control reproduces TEST-09&apos;s
+            published n = 3.35 &plusmn; 0.07 exactly.
+            <br /><br />
+            <strong>The misreading is this page&apos;s defect, not the reader&apos;s.</strong> Both functions were
+            written &ldquo;C&rdquo; and the sentence above this box put one function&apos;s output range next to the
+            other function&apos;s floor. There are now <em>three</em> live objects behind the one symbol &mdash;
+            C<sub>&#x03C1;</sub>, C<sub>a</sub>, and the quadrature-vs-division wiring fork &mdash; and only the third
+            was labelled.
+          </div>
           <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', height: 'auto', display: 'block' }}>
             {/* Grid */}
             {[0, 0.25, 0.5, 0.75, 1.0].map(frac => {

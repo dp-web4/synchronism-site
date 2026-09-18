@@ -79,6 +79,17 @@ export default function RootLayout({
             >
               Research Philosophy
             </Link>
+            {/* Promoted from footer-only to the top nav 2026-09-18. Three of four visitor
+                personas on 2026-09-18 independently named this the site's actual product and
+                the clearest IA misalignment on the site: the landing page says the autopsy is
+                the product, and the page packaging the autopsy was reachable only by scrolling. */}
+            <Link
+              href="/for-researchers"
+              style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
+              title="The citable negative results — what this program produced that transfers"
+            >
+              For Researchers
+            </Link>
             <Link
               href="/honest-assessment"
               className="honest-link"

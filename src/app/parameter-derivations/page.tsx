@@ -564,8 +564,47 @@ export default function ParameterDerivations() {
               choice at the tail: SPARC&apos;s maximum observed f<sub>DM</sub> = 0.927 requires B &#8805; 13.7,
               which no candidate cosmic ratio supplies &mdash; so the robust, convention-free statement is a
               class exclusion (B<sub>max</sub> &#8818; 14 is excluded by SPARC dwarfs), not the median-based
-              percentage. This registered sweep has not yet been executed against the full per-galaxy dataset;
-              see the proposal for the pre-fixed verdict rule.
+              percentage.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.35)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
+              <strong style={{ color: '#f59e0b' }}>The sweep is now executed &mdash; TEST-09&apos;s half, run
+              2026-09-18, and it comes out the same way as TEST-10&apos;s.</strong> The paragraph above said this
+              sweep &ldquo;has not yet been executed against the full per-galaxy dataset.&rdquo; That was true from
+              2026-07-27 to today for the BTFR-slope limb (TEST-10&apos;s exceedance limb was run 2026-07-29). The
+              ceiling enters TEST-09 as the floor of C(a) = C<sub>min</sub> + (1&minus;C<sub>min</sub>)&middot;x/(1+x),
+              so the sweep is a one-parameter change with everything else &mdash; sample cuts, V<sub>flat</sub>
+              estimator, bootstrap &mdash; held at TEST-09&apos;s own values. The identity control reproduces the
+              published n = 3.35 &plusmn; 0.07 exactly before any new number is read.
+              <br />&bull; B<sub>max</sub> = 3.175 (1/&#x03A9;<sub>m</sub>): n = 3.35, |&#x0394;n| = 0.41 &mdash; <strong>fires</strong>
+              <br />&bull; B<sub>max</sub> = 5.389 ((&#x03A9;<sub>m</sub>&minus;&#x03A9;<sub>b</sub>)/&#x03A9;<sub>b</sub>): n = 3.46, |&#x0394;n| = 0.30 &mdash; <strong>does not fire</strong> (the registered threshold is a strict &gt; 0.3; this lands on it)
+              <br />&bull; B<sub>max</sub> = 6.389 (&#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub>): n = 3.49, |&#x0394;n| = 0.26 &mdash; <strong>does not fire</strong>
+              <br />
+              Pre-fixed rule: the kill stands iff it fires under every candidate. It does not. <strong>Both
+              discriminating galaxy-sector kills now rest on the same undefended choice of cosmic ratio</strong>, and
+              the convention-free form of TEST-09 is the class exclusion <em>B<sub>max</sub> &#8818; 5.4 is excluded
+              by the SPARC BTFR slope</em> &mdash; the slope analogue of TEST-10&apos;s B<sub>max</sub> &#8818; 14.
+              A free scan shows why the sweep bites at all: the predicted slope moves monotonically from 3.26 at
+              B<sub>max</sub> = 2 to 3.89 at B<sub>max</sub> = 100, a range of 0.62, so the ceiling is a real lever on
+              this observable rather than a labelling choice. Count unchanged; the recount gates on dp (proposal open
+              question 4). Pre-registered at site commit <code style={{ fontSize: '0.78rem' }}>89e0467</code>;{' '}
+              <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/which_C_carries_the_floor.py</code> (+{' '}
+              <code style={{ fontSize: '0.78rem' }}>_PREREG.md</code>, <code style={{ fontSize: '0.78rem' }}>_output.txt</code>).
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
+              <strong style={{ color: '#38bdf8' }}>And the floor is not pinned: the C this parameter floors is not the
+              C the plotter draws (measured 2026-09-18).</strong> A visitor researcher pass read
+              <Link href="/galaxy-plotter" style={{ color: '#38bdf8' }}> the plotter</Link>&apos;s &ldquo;max C on
+              this disk: 0.001&rdquo; against this floor of 0.315 and concluded the floor binds at every radius, so
+              the galaxy sector applies the constant 3.17 and TEST-09/TEST-10 are algebra. The premise conflates two
+              functions. The plotter draws the <em>density</em>-keyed C<sub>&#x03C1;</sub> (unfloored; its per-disc
+              maximum over 123 real SPARC discs has median 1.2&times;10<sup>&minus;3</sup> at &#x03B3; = 2, and 0 of
+              123 reach &#x03A9;<sub>m</sub> &mdash; so the plotter&apos;s number does generalise). TEST-09/TEST-10
+              evaluate the <em>acceleration</em>-keyed C<sub>a</sub>, whose floor is built into the functional form:
+              over the same 2,856 radii it runs 0.329&ndash;0.954 (median 0.515), with <strong>0.00%</strong> within
+              1% of the floor and a boost of 1.05&ndash;3.04&times; that never reaches the ceiling. The reading is
+              refuted, and so are its two corollaries (predicted f<sub>DM</sub> has s.d. 0.062 about a median of
+              0.585, not a delta at 0.685; the slope is not ceiling-independent). Recorded here at the same
+              prominence a confirmed finding would get.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
               <strong style={{ color: '#38bdf8' }}>At which epoch? The evolving ceiling was tested on published

@@ -1,0 +1,72 @@
+================================================================================================
+PART A — in the C that TEST-09/TEST-10 actually evaluate, does the floor bind?
+================================================================================================
+  radii in TEST-09's sample: 2856 over 123 galaxies
+  C_a floor = Omega_m = 0.315;  boost = 1/C_a, ceiling 3.175
+  C_a  min 0.3293  p25 0.4281  median 0.5145  p75 0.6634  max 0.9537
+  IQR = 0.2353
+  fraction of radii with C_a < 1.01*Omega_m (i.e. 'pinned at the floor'): 0.0000
+  implied boost 1/C_a:  min 1.049  median 1.944  max 3.036
+
+  >>> VERDICT A (pre-fixed rule): REFUTED — C_a spans a wide range; the floor does NOT bind at every radius
+
+================================================================================================
+PART A2 — the plotter's density-keyed C_rho ('max C on this disk: 0.001'), on real SPARC
+================================================================================================
+  Sigma(R) from the SPARC mass model by inverting the enclosed baryonic mass;
+  rho = Sigma/(2h), h = 0.3 kpc (the plotter's assumption); rho_crit = 0.029*Vflat^2.
+
+  gamma = 2.0:  per-disc max C_rho over 123 discs
+    min 1.60e-04  p25 6.36e-04  median 1.20e-03  p75 2.91e-03  max 4.90e-02
+    discs whose max C_rho exceeds the floor Omega_m = 0.315: 0/123 = 0.0%
+    discs with max C_rho < 0.01: 91.9%
+
+  >>> VERDICT A2 (pre-fixed rule, gamma = 2): the plotter number GENERALISES
+
+  gamma = 0.489:  per-disc max C_rho over 123 discs
+    min 3.92e-05  p25 1.56e-04  median 2.93e-04  p75 7.12e-04  max 1.20e-02
+    discs whose max C_rho exceeds the floor Omega_m = 0.315: 0/123 = 0.0%
+    discs with max C_rho < 0.01: 99.2%
+
+================================================================================================
+PART B — TEST-09's BTFR slope under each candidate ceiling (registered, previously unrun)
+================================================================================================
+  OBSERVED (SPARC catalogue Vflat):  n = 3.75 +/- 0.10   [Lelli+2019 report 3.85 +/- 0.09]
+
+  IDENTITY CONTROL at C_min = Omega_m = 0.315:  n = 3.35 +/- 0.07   [TEST-09 published 3.35 +/- 0.07]
+  control PASSES — proceed
+
+  ceiling reading                            B_max   C_min   slope n    +/-  |n-n_obs|  kill fires (>0.3)?
+  ----------------------------------------------------------------------------------------------
+  1/Omega_m            (site's choice)       3.175  0.3150      3.35   0.07       0.41  FIRES
+  (Omega_m-Omega_b)/Omega_b                  5.389  0.1855      3.46   0.06       0.30  does NOT fire
+  Omega_m/Omega_b      (baryon budget)       6.389  0.1565      3.49   0.06       0.26  does NOT fire
+
+  Free scan over B_max (rule B2: is the slope independent of the ceiling?):
+     B_max    C_min   slope n    +/-
+      2.00   0.5000      3.26   0.08
+      3.17   0.3150      3.35   0.07
+      5.00   0.2000      3.44   0.06
+      6.39   0.1565      3.49   0.06
+     10.00   0.1000      3.59   0.05
+     20.00   0.0500      3.72   0.04
+     50.00   0.0200      3.84   0.03
+    100.00   0.0100      3.89   0.03
+
+  slope spread across B_max in [2, 100]: 0.62
+  >>> VERDICT B2 (pre-fixed rule): REFUTED — the slope moves with the ceiling by more than the kill threshold
+  >>> VERDICT B  (pre-fixed rule): the TEST-09 kill is CONVENTION-DEPENDENT — it fails to fire under at least one candidate
+
+================================================================================================
+PART C — is the predicted f_DM a delta function at 0.685?  (visitor's TEST-10 claim)
+================================================================================================
+  f_DM,pred = 1 - C_a(g_bar) at the outermost measured radius, N = 123
+  min 0.3269  p25 0.5503  median 0.5852  p75 0.6073  max 0.6515
+  std = 0.0620   (cap 1 - Omega_m = 0.6850)
+  galaxies within 0.01 of the cap: 0.0%
+
+  >>> VERDICT C (pre-fixed rule): REFUTED — the predicted f_DM has real scatter; it is not a delta function
+
+================================================================================================
+Data: Lelli, McGaugh & Schombert (2016) SPARC. Constants and cuts: TEST-09's own.
+================================================================================================

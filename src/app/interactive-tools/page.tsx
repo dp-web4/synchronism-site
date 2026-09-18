@@ -22,42 +22,44 @@ const coreTools = [
     title: 'Coherence Explorer',
     href: '/coherence-explorer',
     desc: 'Drag γ and ρ_crit sliders and watch the C(ρ) curve update live. See how the sparse/independent → dense/collective transition sharpens or flattens. Best first tool.',
-    tags: ['Beginner'],
+    level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
   },
   {
     title: 'Galaxy Curve Plotter',
     href: '/galaxy-plotter',
     desc: 'Pick a SPARC galaxy and see the dark-matter problem: the gray Newtonian line (visible matter) sags below the observed dots. Violet = the framework\'s equation as published, which hugs the Newtonian line and never fills the gap (inert by construction). Green = MOND\'s simple interpolating function. Dotted amber = a hand-tuned illustration, not computed from the theory.',
-    tags: ['Beginner'],
+    level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
   },
   {
     title: 'γ Calculator',
     href: '/gamma-calculator',
     desc: 'Input N_corr (number of correlated particles) and read off γ = 2/√N_corr — then see why the formula is audited-negative: the most tightly correlated matter (BCS superconductors, BEC) gets the flattest curves, backwards from real condensed-matter physics. The galaxy preset also refutes the framework\'s own γ=2 assertion. Presets: ideal gas, liquid water, galaxy (SPARC best fit), enzyme site, ferromagnet, BEC, BCS superconductor.',
-    tags: ['Artifact Lesson'],
+    level: 'Beginner',
+    state: 'Artifact Lesson',
     epistemic: 'core' as EpistemicStatus,
   },
   {
     title: 'Crossover Regime Visualizer',
     href: '/phase-boundary-visualizer',
     desc: '(Formerly "Phase Boundary Visualizer" — C(ρ) has no phase transition, only a smooth crossover.) Drag the γ slider and catch a refuted formula being wrong at every stop — the tool now teaches the audited sign inversion as its lesson (real BCS/BEC transitions are among nature\'s sharpest; the formula files them at the flat end). Each regime card carries a live reality-check line. Note: the axis here is γ, not coherence C.',
-    tags: ['Artifact Lesson'],
+    level: 'Intermediate',
+    state: 'Artifact Lesson',
     epistemic: 'core' as EpistemicStatus,
   },
   {
     title: 'Equation Anatomy',
     href: '/equation-walkthrough',
     desc: 'Step-by-step breakdown of C(ρ) = tanh(γ·ln(ρ/ρcrit + 1)). Each step shows one equation component, its physical motivation, and why the specific functional form was chosen (not derived).',
-    tags: ['Beginner'],
+    level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
   },
   {
     title: 'Chemistry Correlation Explorer',
     href: '/chemistry-correlation-explorer',
     desc: 'See how γ correlates with chemical properties across 1,703 phenomena. High r values (0.98+) reflect density-monotonicity, not Synchronism-specific physics — the page states the null-model result (a 2-parameter polynomial in Z matches every r to within 0.07, sometimes better) at the head of the table; it has no per-row null column, and how γ was assigned per material is undocumented.',
-    tags: ['Advanced'],
+    level: 'Advanced',
     epistemic: 'reparametrization' as EpistemicStatus,
   },
 ];
@@ -67,7 +69,8 @@ const speculativeTools = [
     title: 'Consciousness Threshold Demo',
     href: '/consciousness-demo',
     desc: 'Watch 8 "independent" approaches converge on C ≈ 0.50 — because they share one assumption. The convergence is geometric, not empirical: any approach keyed to the midpoint of a [0,1)-bounded range lands near 0.50 by construction. The threshold is untestable as stated (no calibration to EEG/fMRI/IIT/PCI* exists; the one cited test measured a different variable). An artifact lesson, not a finding about consciousness.',
-    tags: ['Artifact Lesson'],
+    level: 'Beginner',
+    state: 'Artifact Lesson',
     epistemic: 'speculative' as EpistemicStatus,
   },
 ];
@@ -78,8 +81,12 @@ export default function InteractiveTools() {
       <Breadcrumbs currentPath="/interactive-tools" />
       <h1>Interactive Tools</h1>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem', maxWidth: '60ch' }}>
-        All of Synchronism&apos;s interactive tools in one place. Each card shows a content-type tag
-        and a level tag so you know what you&apos;re looking at before you click in.
+        All of Synchronism&apos;s interactive tools in one place. Each card carries <strong>three
+        separately-labelled slots</strong>, so you know what you&apos;re looking at before you click in:
+        a <strong>Kind</strong> (top right &mdash; what sort of thing the tool is),
+        a <strong>Level</strong> (the difficulty scale: Beginner / Intermediate / Advanced), and,
+        where it applies, a <strong>Status</strong> (an operational state, square-cornered and amber,
+        deliberately styled so it cannot be mistaken for a difficulty).
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem', maxWidth: '60ch' }}>
         <strong>Before the legend:</strong> this is a <em>content grouping</em>, not the site&apos;s validation
@@ -89,10 +96,17 @@ export default function InteractiveTools() {
         <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
           documented descriptive badges
         </Link>{' '}
-        — no tool here is certified correct. Level tags use one scale — Beginner / Intermediate /
-        Advanced — plus <strong>Artifact Lesson</strong> for tools kept deliberately to demonstrate a
-        documented failure (a sign inversion, a geometric convergence) rather than to teach a working
-        relation. (Scale unified 2026-07-23; a &ldquo;Conceptual&rdquo; tag previously mixed levels.)
+        — no tool here is certified correct. Level uses one scale and one scale only: Beginner /
+        Intermediate / Advanced. <strong>Artifact Lesson</strong> is <em>not</em> a level — it is an
+        operational state (the site&apos;s own term, per{' '}
+        <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>) marking a tool kept
+        deliberately to demonstrate a documented failure (a sign inversion, a geometric convergence)
+        rather than to teach a working relation. It now sits in its own Status slot.
+        (Scale unified 2026-07-23; a &ldquo;Conceptual&rdquo; tag previously mixed levels.{' '}
+        <strong>Fixed 2026-09-18:</strong> until today &ldquo;Artifact Lesson&rdquo; was rendered in the Level slot
+        next to &ldquo;Beginner&rdquo; and &ldquo;Advanced&rdquo;, and two visitor personas misread it from opposite
+        directions on the same day &mdash; one as a difficulty, one as a vocabulary collision. Three tools that had
+        no level at all now carry one.)
       </p>
       <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2rem', fontSize: '0.8rem' }}>
         {Object.entries(statusStyle).map(([key, s]) => (
@@ -129,18 +143,28 @@ export default function InteractiveTools() {
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '0.75rem' }}>
                   {tool.desc}
                 </p>
-                <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
-                  {tool.tags.map(tag => (
-                    <span key={tag} style={{
+                <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', alignItems: 'center' }}>
+                  <span style={{
+                    fontSize: '0.75rem',
+                    padding: '0.1rem 0.5rem',
+                    borderRadius: '9999px',
+                    background: 'rgba(139, 92, 246, 0.12)',
+                    color: 'var(--color-accent-violet)',
+                  }}>
+                    Level: {tool.level}
+                  </span>
+                  {'state' in tool && tool.state ? (
+                    <span style={{
                       fontSize: '0.75rem',
                       padding: '0.1rem 0.5rem',
-                      borderRadius: '9999px',
-                      background: 'rgba(139, 92, 246, 0.12)',
-                      color: 'var(--color-accent-violet)',
+                      borderRadius: '2px',
+                      border: '1px solid rgba(245, 158, 11, 0.5)',
+                      background: 'rgba(245, 158, 11, 0.10)',
+                      color: '#f59e0b',
                     }}>
-                      {tag}
+                      Status: {tool.state}
                     </span>
-                  ))}
+                  ) : null}
                 </div>
               </div>
             </Link>
@@ -192,18 +216,28 @@ export default function InteractiveTools() {
                   <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '0.75rem' }}>
                     {tool.desc}
                   </p>
-                  <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
-                    {tool.tags.map(tag => (
-                      <span key={tag} style={{
+                  <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', alignItems: 'center' }}>
+                    <span style={{
+                      fontSize: '0.75rem',
+                      padding: '0.1rem 0.5rem',
+                      borderRadius: '9999px',
+                      background: 'rgba(139, 92, 246, 0.12)',
+                      color: 'var(--color-accent-violet)',
+                    }}>
+                      Level: {tool.level}
+                    </span>
+                    {tool.state ? (
+                      <span style={{
                         fontSize: '0.75rem',
                         padding: '0.1rem 0.5rem',
-                        borderRadius: '9999px',
-                        background: 'rgba(139, 92, 246, 0.12)',
-                        color: 'var(--color-accent-violet)',
+                        borderRadius: '2px',
+                        border: '1px solid rgba(245, 158, 11, 0.5)',
+                        background: 'rgba(245, 158, 11, 0.10)',
+                        color: '#f59e0b',
                       }}>
-                        {tag}
+                        Status: {tool.state}
                       </span>
-                    ))}
+                    ) : null}
                   </div>
                 </div>
               </Link>

@@ -70,7 +70,7 @@ export default function CoreIdea() {
             <text x="290" y="228" fill="#9ca3af" fontSize="12" textAnchor="middle">density &#x03C1; (log scale &#x2192;)</text>
             {/* rho_crit marker */}
             <line x1="336" y1="30" x2="336" y2="200" stroke="#9ca3af" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" />
-            <text x="341" y="192" fill="#9ca3af" fontSize="10">&#x03C1;<tspan baselineShift="sub" fontSize="8">crit</tspan> &mdash; C &#x2248; 0.88 here: a saturation knee, not a midpoint</text>
+            <text x="341" y="192" fill="#9ca3af" fontSize="10">&#x03C1;<tspan baselineShift="sub" fontSize="8">crit</tspan> &mdash; C &#x2248; 0.88 here at &#x03B3; = 2: a saturation knee, not a midpoint</text>
             {/* the curve: C = tanh(2·ln(1+rho/rho_crit)) on a log-density axis */}
             <polyline points="60,200 106,199 152,197 198,189 244,168 267,146 290,115 313,79 336,50 359,36 382,31 428,30 520,30" fill="none" stroke="#8b5cf6" strokeWidth="2.5" strokeLinejoin="round" />
             {/* midpoint dot */}
@@ -86,6 +86,11 @@ export default function CoreIdea() {
             below) on a logarithmic density axis. Note the two honest markers: the curve&apos;s true
             midpoint (C = 0.5) sits near 0.32&#x00B7;&#x03C1;<sub>crit</sub>, and at &#x03C1;<sub>crit</sub> itself
             C &#x2248; 0.88 &mdash; &#x03C1;<sub>crit</sub> is a saturation knee, not a critical point.
+            <strong> Both markers move with &#x03B3;</strong>, so neither number means anything without it:
+            C(&#x03C1;<sub>crit</sub>) = tanh(&#x03B3;&middot;ln&nbsp;2), which is 0.88 at &#x03B3; = 2 but only 0.33 at the
+            SPARC-fitted &#x03B3; &#x2248; 0.49 &mdash; below the halfway point rather than near saturation. The
+            Coherence Explorer defaults to &#x03B3; = 0.49 and reads 0.327; this figure is drawn at the refuted pin.
+            (Flagged 2026-09-18 by a visitor who found the two figures 2.7&times; apart with neither stating its &#x03B3;.)
           </p>
         </div>
 

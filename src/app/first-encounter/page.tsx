@@ -39,7 +39,7 @@ const steps = [
     title: 'Scale Up: Galaxies',
     content: `Apply the same equation to galaxies. Stars in a galaxy are individual uncorrelated
     classical particles (N_corr = 1, γ = 2). The critical density ρ_crit = A × V_flat² connects
-    to rotation velocity. MOND's acceleration constant a₀ = cH₀/(2π) falls out of the same constants —
+    to rotation velocity. MOND — Modified Newtonian Dynamics, the long-standing rival proposal that gravity itself changes below a threshold acceleration, rather than invoking dark matter — has an acceleration constant a₀, and a₀ = cH₀/(2π) falls out of the same constants —
     but this is a dimensional coincidence (the only scale buildable from c and H₀), not a first-principles
     derivation; the 2π is unexplained and the match is off by ~13%. See Honest Assessment.`,
     highlight: 'a₀ ≈ cH₀/(2π): a coincidence, not a derivation',

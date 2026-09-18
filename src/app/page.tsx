@@ -75,6 +75,10 @@ export default function Home() {
         <div className="equation" style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>
           C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </div>
+        <p style={{ textAlign: 'center', color: 'var(--color-accent-blue)', fontSize: '1rem', marginBottom: '0.6rem', fontWeight: 600 }}>
+          Read it as: <em>crowd a system enough and its parts start acting as one &mdash; this says how fast that
+          switch flips.</em>
+        </p>
         <p style={{ textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
           <strong>Never seen these symbols? Read it out loud like this:</strong> &ldquo;coherence, at a given
           density, equals a squashing function of a compressing function of how dense things are.&rdquo;{' '}
@@ -206,6 +210,23 @@ export default function Home() {
               <strong>Orientation:</strong> this site tracks an idea being tested in public &mdash;
               including every failure. The zeros and &ldquo;failed&rdquo; badges below are the scoreboard
               of that process, kept honestly; they are the point, not the fine print.
+            </p>
+            <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', margin: '0 0 0.6rem', maxWidth: '65ch' }}>
+              <strong style={{ color: 'var(--color-accent-blue)' }}>Two things to know before the numbers, because
+              they make the numbers legible</strong> (moved up here 2026-09-18 &mdash; a first-time visitor reached
+              both only on their eleventh page, and said they changed the meaning of everything before them):
+              <br />&bull; <strong>Why keep reading a theory that lost?</strong> Because the map of <em>where</em> it
+              fails is the deliverable. Most of what this program produced that another researcher can use is
+              negative results that constrain a whole class of proposals, not just this one &mdash;{' '}
+              <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>packaged here</Link>.
+              A theory that publishes its losses in a form you can cite has given you something; one that publishes
+              only wins has given you a press release.
+              <br />&bull; <strong>Who did this work.</strong> The research was carried out by AI agents arguing with
+              each other &mdash; ~3,300 sessions &mdash; with one human (dp) overseeing the badge taxonomy.{' '}
+              <strong>No outside physicist has reviewed these claims.</strong> The agents share a training
+              distribution, so where the literature is wrong they are likely wrong together; that is a limit no
+              amount of internal argument removes. Details in the methodology note below and on{' '}
+              <Link href="/research-philosophy" style={{ color: 'var(--color-accent-blue)' }}>Research Philosophy</Link>.
             </p>
             <div style={{
               background: 'rgba(245,158,11,0.07)',

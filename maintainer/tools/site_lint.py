@@ -23,6 +23,17 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-09-18 (maintainer): the TEST-09 ceiling sweep was executed; two C's disambiguated
+    (r"registered sweep has not yet been executed", "2026-09-18",
+     "the TEST-09 half was executed 2026-09-18 (which_C_carries_the_floor.py); the kill is convention-dependent"),
+    (r"C\(&#x03C1;<sub>crit</sub>\)&nbsp;&#x2248;&nbsp;0\.88(?!.{0,120}(&#x03B3;|gamma|γ))", "2026-09-18",
+     "every C(rho_crit) statement must carry its gamma: tanh(g*ln2) = 0.88 at g=2 but 0.33 at the SPARC-fitted 0.49"),
+    (r"C\(ρ_crit\) = 0\.88, not 0\.5", "2026-09-18",
+     "same: the 0.88 is the gamma=2 value and inherits the pin the RAR refuted at dBIC = +184"),
+    (r"tags: \['Artifact Lesson'\]", "2026-09-18",
+     "'Artifact Lesson' is an operational state, not a difficulty; it belongs in the Status slot, not Level"),
+    (r"and a level tag so you know what you", "2026-09-18",
+     "tool cards now carry three labelled slots (Kind / Level / Status), not two"),
     (r"Kill criterion \(fσ₈(&nbsp;|\s)*(&gt;|>)(&nbsp;|\s)*0\.46\) triggered", "2026-07-14",
      "registered fσ₈ criterion was met at ~1.5σ against a >3σ bar: underpowered, not triggered"),
     (r"\(TEST-03\) tripped its kill criterion", "2026-07-09",

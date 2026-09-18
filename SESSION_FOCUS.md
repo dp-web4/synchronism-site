@@ -1,7 +1,71 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-17 (explorer)*
+*Last updated: 2026-09-18 (explorer)*
+
+---
+
+## 🟢 NEW (explorer 2026-09-18) — **The registry's kill criteria have never been audited for FORM, and on
+that axis it is 2 of 26. Only 3 of 26 state a significance; 1 states one its data can deliver; 11 contain
+no numeral at all. The no-numeral rate REPLICATES at 42 % on the archive's disjoint 24-row registry
+(10/24 vs 11/26), so this is how the program drafts criteria, not a property of four page files. The
+topic's own hypothesis — unsatisfiable threshold/significance pairs as a class — is REFUTED: there is
+exactly one (TEST-04a, both limbs), already published in the site's scorecard. You cannot be inconsistent
+without stating two things.**
+
+Finding: `explorer/findings/most-kill-criteria-are-not-specific-enough-to-be-inconsistent.md`.
+PREREG `57959fe` (before execution, with an exposure declaration): **8 predictions, 5 held, 3 refuted.**
+Scripts (+ `_output.txt`): `explorer/scripts/kill_criterion_*`. Data: `explorer/work/2026-09-18-kill-criteria/`.
+`findings_lint.py`: 0 errors, 0 R6, R3 coverage 54/54. **Count stays 6. No badge or ledger change proposed.**
+Topic archived.
+
+1. **Transcription, not just drafting.** Where a site row has an archive counterpart, the site's is the
+   *less* specific. TEST-15 registers "No correlation at 10⁻¹⁶ across **50+** events" upstream, plus
+   "Sample size needed: 20–50 events for **3σ**"; the site carries "**20+** events", no σ. The criterion on
+   the cited registry is weaker than the one registered, undisclosed on both sides.
+2. **Retro-fitting REFUTED.** 65 commits of `kill:` history back to 2026-02-21: TEST-09's threshold was
+   fixed eleven weeks *before* execution, TEST-04a's ten weeks before, and every post-execution edit is a
+   result annotation, not a threshold change. 15 of 19 never-run criteria are untouched since the first
+   commit — which is *correct* pre-registration behaviour, so the defect is at drafting time, not
+   maintenance.
+3. **Two site claims contradicted by the count.** (a) "Every experiment has an explicit kill criterion" is
+   refuted by TEST-07's own kill field ("not falsifiable as stated"), unqualified on four surfaces
+   including the `/falsifiability` meta description. (b) `/falsifiability`'s "**4 criteria cannot fire**"
+   is a count over 8 hand-picked examples rendered as a registry figure — an R6 instance on the
+   reachability-audit page, and it counts only instrument-unreachability, never the by-construction class.
+4. **Frame.** Pre-registration has a cheap half (timing) and an expensive half (specificity). The program
+   measures only timing — "0 of 24 prospective" is a timing statistic. Specificity had never been counted,
+   on either registry, in seven months.
+
+### → Maintainer
+- **P0** Replace the unqualified falsifiability sentence on `test-catalog:174`, `research-philosophy:38`,
+  `quantum-predictions:32`, `falsifiability/layout.tsx:5` (meta description) with the measured form.
+- **P0** `/falsifiability` "4 criteria cannot fire" — give it its denominator; add the by-construction class.
+- **P0** TEST-15: restore the registered `50+` and `3σ`, or state why `20+` supersedes them.
+- **P1** Specificity bullet on the `/falsifiability` scoreboard beside the timing bullet. Propagate the
+  2026-07-27 reachability rule to the tier pages (Tier 2 and Tier 4 carry zero tags).
+- **P1** TEST-05 and TEST-11: mirror the numeric bar / sample size back into the `kill` field (both are
+  already on the page, in the wrong field).
+- **P1** TEST-24: state the scope of "or C cannot be meaningfully measured for AI" — ever, or not yet? As
+  written the site's own protocol verdict meets it. **Do not promote to a seventh refutation** — reason in
+  the finding; that would double-count a gap the site already carries globally.
+- **P2** TEST-04a's "> 0.45 at > 2σ" limb; TEST-01's power statement (N = 141 is ~284× short);
+  TEST-21's missing amplitude vs TEST-04's withdrawal and TEST-07's not-falsifiable — three rows, one
+  defect, three treatments.
+
+### → Back-annotation (research repo)
+- The archive's 2026-08-22 namespace declaration reads site TEST-11 as one referent. The site carried
+  **two** TEST-11s concurrently, 2026-07-28 → 2026-08-10 (verified `31af0f8`). One table row to amend.
+- Session 674's derived-amplitude census is the **prediction-side twin** of this finding. A test needs a
+  derived amplitude *and* a specific kill threshold; only the first had been counted, and in the other
+  namespace.
+
+### → dp (gated)
+- **What is the registry for?** 15 rows untouched for seven months, several depending on quantities the
+  site has globally adjudicated as unmeasurable, while "24 registered experiments" is quoted as evidence
+  of falsifiability. Sharpen them, or move them out of the count? Not the explorer's call; not made.
+- **The alias table** the archive records as "the artifact worth producing" (REC-2026-036) has never been
+  built. Three content-paired rows lost a number each. Worth a session?
 
 ---
 

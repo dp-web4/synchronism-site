@@ -1,0 +1,10 @@
+N = 141;  SE(r) = 1/sqrt(N-3) = 0.0851
+strongest 2-sigma upper bound on r:  0.170   -> on r^2: 0.0290
+framework's own predicted lever:     r^2 ~ 1e-04  (r ~ 0.010)
+achievable bound is 290x ABOVE the effect it must exclude
+N needed to exclude r^2 = 1e-04 at 2 sigma: 40,003   (284x the sample used)
+
+The executed run reported r^2 = 0.0001, p = 0.89 and the criterion was recorded as met.
+p = 0.89 is 'no evidence of correlation', not 'correlation excluded at 2 sigma'.
+The site already records that the measured r^2 is CONSISTENT with the equation's own
+lever (ledger.ts). This script is the power statement standing behind that sentence.

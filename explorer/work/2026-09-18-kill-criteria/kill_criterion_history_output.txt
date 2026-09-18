@@ -1,0 +1,133 @@
+==============================================================================
+KILL-CRITERION REVISION HISTORY  (one line per CHANGE to the kill string)
+==============================================================================
+
+### TEST-01   revisions: 2   EXECUTED 2026-07-14
+  2026-02-21  1e805d5  prec=2  No correlation between residuals and environment at 2σ
+  2026-09-14  d214fb9  prec=3  No correlation between residuals and environment at 2σ — met by the 2026-07-14 run (per-galaxy SPARC RAR offsets vs Cosmicflows-4 density: r² = 0.0001 <-- AFTER EXECUTION
+
+### TEST-02   revisions: 5   (never executed)
+  2026-02-21  1e805d5  prec=0  Anomaly independent of local density
+  2026-05-17  eebf2de  prec=0  Anomaly independent of local density; or underlying wide-binary anomaly fails to exist under improved quality cuts
+  2026-06-12  9a721b5  prec=2  REWRITTEN 2026-06-12 (previous criterion predated the C(a)→C(ρ) fork and was inverted — it would have killed the framework for its own prediction comi
+  2026-09-06  4deb33e  prec=2  REWRITTEN 2026-06-12 (previous criterion predated the C(a)→C(ρ) fork and was inverted — it would have killed the framework for its own prediction comi
+  2026-09-17  5e98560  prec=2  REWRITTEN 2026-06-12 (previous criterion predated the C(a)→C(ρ) fork and was inverted — it would have killed the framework for its own prediction comi
+
+### TEST-03   revisions: 1   EXECUTED 2026-07-14
+  2026-02-21  1e805d5  prec=1  TFR residual explains <20% of scatter
+
+### TEST-04   revisions: 2   (never executed)
+  2026-02-21  1e805d5  prec=1  BAO identical everywhere to 10⁻⁵ precision
+  2026-05-05  6a68cb4  prec=1  [Withdrawn] BAO identical everywhere to 10⁻⁵ precision
+
+### TEST-05   revisions: 1   EXECUTED 2026-07-14
+  2026-02-21  1e805d5  prec=0  RAR scatter independent of Hubble type / environment
+
+### TEST-06   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=1  σ_int > 0.12 dex with N > 1000
+
+### TEST-07   revisions: 2   (never executed)
+  2026-02-21  1e805d5  prec=2  No oscillations above 3σ out to 2000 Mpc
+  2026-05-17  eebf2de  prec=0  N/A — no amplitude derivation exists; no mechanism is specified; not falsifiable as stated
+
+### TEST-08   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=1  Derived Σ₀ differs from observed by >15%
+
+### TEST-09   revisions: 4   EXECUTED 2026-07-14
+  2026-02-21  1e805d5  prec=1  Exponent varies by >0.3 across bands
+  2026-04-24  89825cf  prec=1  A single sample produces a BTFR slope inconsistent with its regime-mix prediction by > 0.3
+  2026-07-15  8e86ed7  prec=1  A single sample produces a BTFR slope inconsistent with its regime-mix prediction by > 0.3 — FIRED: deviation 0.41 (registered variable, same V_flat e <-- AFTER EXECUTION
+  2026-07-18  dcf18dd  prec=2  A single sample produces a BTFR slope inconsistent with its regime-mix prediction by > 0.3 — FIRED: deviation 0.41 (registered variable, same V_flat e <-- AFTER EXECUTION
+
+### TEST-10   revisions: 5   EXECUTED 2026-07-14
+  2026-02-21  1e805d5  prec=1  Baryon-dominated dwarfs below 10⁸ M☉ exist
+  2026-07-15  8e86ed7  prec=1  As registered: "baryon-dominated dwarfs below 10⁸ M☉ exist." The kill fires in REVERSE: the framework dies at the DM-dominated tail its own ceiling fo <-- AFTER EXECUTION
+  2026-07-18  dcf18dd  prec=1  As registered: "baryon-dominated dwarfs below 10⁸ M☉ exist." The kill fires in REVERSE: the framework dies at the DM-dominated tail its own ceiling fo <-- AFTER EXECUTION
+  2026-09-11  ddd6285  prec=2  As registered: "baryon-dominated dwarfs below 10⁸ M☉ exist." The kill fires in REVERSE: the framework dies at the DM-dominated tail its own ceiling fo <-- AFTER EXECUTION
+  2026-09-15  288aaf6  prec=2  As registered: "baryon-dominated dwarfs below 10⁸ M☉ exist." The kill fires in REVERSE: the framework dies at the DM-dominated tail its own ceiling fo <-- AFTER EXECUTION
+
+### TEST-04a   revisions: 1   EXECUTED 2026-07-14
+  2026-05-05  6a68cb4  prec=2  fσ₈(z=0.51) > 0.46 (rules out Synchronism at >3σ); fσ₈(z=0.51) > 0.45 disfavors at >2σ
+
+### TEST-25   revisions: 1   EXECUTED 2026-07-28
+  2026-08-10  0b40feb  prec=3  Pre-registered (commit 9c77e7be): the SPARC-retained ΔBIC ≤ 10 grid interval (γ = 0.425–0.600) is incompatible with the signed, two-sided 95% Cassini  <-- AFTER EXECUTION
+
+### TEST-11   revisions: 2   (never executed)
+  2026-07-28  31af0f8  prec=3  Pre-registered (commit 9c77e7be): the SPARC-retained ΔBIC ≤ 10 grid interval (γ = 0.425–0.600) is incompatible with the signed, two-sided 95% Cassini 
+  2026-02-21  1e805d5  prec=1  Φ at loss of consciousness ranges from 1.0 to 6.0 with no clustering
+
+### TEST-12   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=0  No systematic γ variation over circadian cycle above noise floor
+
+### TEST-13   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=1  T2 uncorrelated with environmental coupling metric
+
+### TEST-14   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=0  No difference in phase coherence between experts and novices
+
+### TEST-15   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=1  No correlation at 10⁻¹⁶ level after 20+ multi-messenger events
+
+### TEST-16   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=0  Decoherence is perfectly smooth at all measured timescales
+
+### TEST-17   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=0  No radial γ gradient in cluster profiles
+
+### TEST-18   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=0  η optimization produces no T_c improvement over random search
+
+### TEST-19   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=1  Neural coherence shows no scale-free structure; threshold varies >50% across subjects
+
+### TEST-20   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=0  DM fraction independent of cosmic environment
+
+### TEST-21   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=1  BAO peak is smooth Gaussian to 10⁻⁵ level in Euclid data
+
+### TEST-22   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=0  γ distribution identical in living and dead minimal cells
+
+### TEST-23   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=0  Noise floor is perfectly thermal/quantum at all measured frequencies
+
+### TEST-24   revisions: 1   (never executed)
+  2026-02-21  1e805d5  prec=0  No behavioral discontinuity at any C threshold, or C cannot be meaningfully measured for AI
+
+==============================================================================
+SUMMARY
+==============================================================================
+test       revs       first        last  prec0  precN  executed
+TEST-01       2  2026-02-21  2026-09-14      2      3  2026-07-14
+TEST-02       5  2026-02-21  2026-09-17      0      2  -
+TEST-03       1  2026-02-21  2026-02-21      1      1  2026-07-14
+TEST-04       2  2026-02-21  2026-05-05      1      1  -
+TEST-05       1  2026-02-21  2026-02-21      0      0  2026-07-14
+TEST-06       1  2026-02-21  2026-02-21      1      1  -
+TEST-07       2  2026-02-21  2026-05-17      2      0  -
+TEST-08       1  2026-02-21  2026-02-21      1      1  -
+TEST-09       4  2026-02-21  2026-07-18      1      2  2026-07-14
+TEST-10       5  2026-02-21  2026-09-15      1      2  2026-07-14
+TEST-04a      1  2026-05-05  2026-05-05      2      2  2026-07-14
+TEST-25       1  2026-08-10  2026-08-10      3      3  2026-07-28
+TEST-11       2  2026-07-28  2026-02-21      3      1  -
+TEST-12       1  2026-02-21  2026-02-21      0      0  -
+TEST-13       1  2026-02-21  2026-02-21      1      1  -
+TEST-14       1  2026-02-21  2026-02-21      0      0  -
+TEST-15       1  2026-02-21  2026-02-21      1      1  -
+TEST-16       1  2026-02-21  2026-02-21      0      0  -
+TEST-17       1  2026-02-21  2026-02-21      0      0  -
+TEST-18       1  2026-02-21  2026-02-21      0      0  -
+TEST-19       1  2026-02-21  2026-02-21      1      1  -
+TEST-20       1  2026-02-21  2026-02-21      0      0  -
+TEST-21       1  2026-02-21  2026-02-21      1      1  -
+TEST-22       1  2026-02-21  2026-02-21      0      0  -
+TEST-23       1  2026-02-21  2026-02-21      0      0  -
+TEST-24       1  2026-02-21  2026-02-21      0      0  -
+
+EXECUTED rows  (n=7): mean revisions 2.1, mean precision 1.43 -> 1.86
+NEVER-RUN rows (n=19): mean revisions 1.4, mean precision 0.63 -> 0.53
+
+Never-run criteria NEVER revised since first commit: 15/19
+  TEST-06, TEST-08, TEST-12, TEST-13, TEST-14, TEST-15, TEST-16, TEST-17, TEST-18, TEST-19, TEST-20, TEST-21, TEST-22, TEST-23, TEST-24

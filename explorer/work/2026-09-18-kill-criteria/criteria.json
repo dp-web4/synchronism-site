@@ -1,0 +1,231 @@
+[
+ {
+  "id": "TEST-01",
+  "name": "SPARC Environment Dependence \u2014 Killed by the 2026-07-14 Environment Run (Filed Once, on TEST-03s)",
+  "data": "SPARC (175 galaxies; 141 with Cosmicflows-4 environment in the executed run)",
+  "prediction": "Rotation curve residuals correlate with local galaxy density",
+  "kill": "No correlation between residuals and environment at 2\u03c3 \u2014 met by the 2026-07-14 run (per-galaxy SPARC RAR offsets vs Cosmicflows-4 density: r\u00b2 = 0.0001, p = 0.89, N = 141)",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-02",
+  "name": "Wide Binary Density Dependence",
+  "data": "Gaia DR3",
+  "prediction": "Wide binary anomaly depends on local stellar density: systems in LOWER-density environments should show STRONGER coherence-driven deviation from Newtonian dynamics. Mechanism: g_eff = g_N/C(\u03c1); lower \u03c1 \u2192 smaller C \u2192 larger boost above Newtonian. [Sign corrected 2026-06-06; previous \"higher-density \u2192 stronger deviation\" was backwards.]",
+  "kill": "REWRITTEN 2026-06-12 (previous criterion predated the C(a)\u2192C(\u03c1) fork and was inverted \u2014 it would have killed the framework for its own prediction coming true): a Gaia-confirmed MOND-scale wide-binary anomaly (~18% velocity deviation; Chae-type ~1.4\u00d7 boost at low internal acceleration) in the clean sample REFUTES C(\u03c1), which predicts a Newtonian null (0.05\u20130.4%). A confirmed Newtonian null is consistent with C(\u03c1) but equally consistent with GR \u2014 survival without points, non-discriminating. | WHICH MODEL MAKES THE 0.05\u20130.4% (added 2026-09-06, visitor researcher persona): the DENSITY-keyed branch C(\u03c1/\u03c1_crit), but only at a knee between 3.8\u00d710\u207b\u2075 and 3.2\u00d710\u207b\u2074 M\u2609/pc\u00b3 (\u03b3 = 0.489), a window no other page uses. At the published knee \u03c1_crit = 0.029\u00b7V\u00b2 the solar-neighbourhood density sits far below the knee, so C \u2248 \u03b3x \u226a 1 and, with g_eff = g_N/C, the boost is maximal: about 3.5\u00d710\u2074 in g, excluded by the Oort limit (arithmetic in the 2026-09-10 note under the alert). That is the same branch SPARC refutes head-to-head (\u0394BIC +2843, archive 2026-08-24). The ACCELERATION-keyed branch that fits SPARC is \u03bc_simple(x/2) at \u03b3 = \u00bd and predicts MOND's wide-binary boost, EFE included \u2014 on that branch TEST-02 was never a discriminator. And \"MOND ~18%\" is the EFE-free figure: with the Milky Way external field (~1.8 a\u2080), AQUAL/QUMOND + EFE give a 1.0\u20131.4\u00d7 boost in g depending on treatment, which is the entire Chae (2023\u201325) vs Banik et al. (2024) dispute. State the range, not the point.",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-03",
+  "name": "ALFALFA-SDSS TFR Scatter \u2014 Registered Test Never Run; Substitute TEST-03s FAILED (the One Environment Run)",
+  "data": "ALFALFA + SDSS (14,585 galaxies)",
+  "prediction": "TFR residual captures all intrinsic scatter (51% improvement)",
+  "kill": "TFR residual explains <20% of scatter",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-04",
+  "name": "BAO Coherence Modulation \u2014 WITHDRAWN",
+  "data": "DESI, SDSS DR17, Euclid",
+  "prediction": "[Withdrawn] BAO peak shifts ~10\u207b\u2074 between high/low-density regions",
+  "kill": "[Withdrawn] BAO identical everywhere to 10\u207b\u2075 precision",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-04a",
+  "name": "DESI RSD f\u03c3\u2088 \u2014 Disfavored on \u03c3\u2088, Underpowered on the Registered f\u03c3\u2088 Statistic (Corrected 2026-07-14)",
+  "data": "DESI DR1 (arXiv:2411.12021, Table 9 & 10)",
+  "prediction": "f\u03c3\u2088(z=0.51) \u2248 0.418 \u2014 a ~12% suppression below \u039bCDM (0.474). Mechanism: G_local/G_global = C_cosmic/C_galactic suppresses structure growth at late times. Session 107 forecasts 1.7\u03c3\u20133.2\u03c3 discrimination per DESI LRG bin. [Provenance, added 2026-09-14: the 0.418 comes from Session 107's G_local/G_global = C_cosmic/C_galactic growth suppression, with \u03c3\u2088(z=0) = 0.76 calibrated to S\u2088 in Session 102. The background-only dark-energy sector now on /dark-energy does not produce it. That sector's own growth forecast is \u2248 \u22120.22% (0.10\u03c3, \u039bCDM-like), so this card tests a mechanism the current framework no longer contains.]",
+  "kill": "f\u03c3\u2088(z=0.51) > 0.46 (rules out Synchronism at >3\u03c3); f\u03c3\u2088(z=0.51) > 0.45 disfavors at >2\u03c3",
+  "preregistration": "Post-hoc retrodiction \u2014 \u03c3\u2088 calibrated to lensing S\u2088 tension in Session 102; propagated to DESI f\u03c3\u2088 in Session 107 (committed 2025-12-10); DESI DR1 published April 2024. Status: disfavored 2.4\u03c3 on \u03c3\u2088 (a different, GR-conditioned statistic). On the REGISTERED f\u03c3\u2088 statistic the prediction sits 2.1\u03c3 from the data and the data clear the 0.46 threshold by ~1.5\u03c3, against the >3\u03c3 the kill criterion demands, so the threshold is crossed on the point estimate but not at the registered significance (see the three numbers above).",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-05",
+  "name": "RAR Environment Partition",
+  "data": "SPARC + density catalogs",
+  "prediction": "RAR scatter shows NP2 environment dependence at the registered amplitude: Session 177 says environment explains > 20% of RAR scatter, with a kill bar of r\u00b2 < 0.09. [Corrected 2026-09-14: this field read \"(p = 5\u00d710\u207b\u2076)\". That is a result, not a prediction, and it belongs to the Hubble-type R\u00b2 = 0.14 term, not to environment.]",
+  "kill": "RAR scatter independent of Hubble type / environment",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-06",
+  "name": "CDM \u03c3_int with BIG-SPARC",
+  "data": "Future resolved rotation curves",
+  "prediction": "\u03c3_int remains at 0.086 dex with larger sample",
+  "kill": "\u03c3_int > 0.12 dex with N > 1000",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-07",
+  "name": "Cosmic Interference Patterns \u2014 Exploratory Hypothesis (Not a Tier 1 Test)",
+  "data": "SDSS, DES, DESI surveys",
+  "prediction": "[Exploratory] Galaxy cluster separations may show oscillatory modulation at \u03bb ~ 500 Mpc",
+  "kill": "N/A \u2014 no amplitude derivation exists; no mechanism is specified; not falsifiable as stated",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-08",
+  "name": "Freeman Law Derivation Test",
+  "data": "SPARC surface brightness data",
+  "prediction": "\u03a3\u2080 emerges from first principles with <5% error",
+  "kill": "Derived \u03a3\u2080 differs from observed by >15%",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-09",
+  "name": "BTFR Slope \u2014 FAILED, Kill Criterion Triggered (Executed 2026-07-14)",
+  "data": "SPARC (Lelli 2016 mass models, 123 galaxies after quality cuts)",
+  "prediction": "Computed from the framework's own formula (C(a) = \u03a9_m + (1\u2212\u03a9_m)x/(1+x), boost capped at 1/\u03a9_m = 3.17): BTFR slope n = 3.35 \u00b1 0.07. [Which acceleration, stated 2026-09-14: the TEST-09 and TEST-10 scripts evaluate C explicitly at the baryonic acceleration, with x = (g_bar/a\u2080)^(1/\u03c6), a\u2080 = 1.05\u00d710\u207b\u00b9\u2070 m/s\u00b2, and g_obs = g_bar/C(g_bar). There is no implicit solve in g_obs. The RAR-shape fits on /galaxy-rotation are the ones solved implicitly in g_obs. The 3.17 cap holds under either keying, because C \u2265 \u03a9_m for every x \u2265 0.] The previously listed \"deep-MOND sample \u2192 n \u2248 4\" limb is retracted \u2014 a bounded boost has NO deep-MOND regime. As g_bar \u2192 0 the boost saturates at 3.17, a constant rescaling of G, which is Newtonian: the framework's deep limit is n \u2192 2 (verified numerically: 2.01), the OPPOSITE end of the ladder from MOND's n = 4. MOND's n = 4 comes precisely from the \u221a(a\u2080/g_bar) divergence a bounded boost cannot follow.",
+  "kill": "A single sample produces a BTFR slope inconsistent with its regime-mix prediction by > 0.3 \u2014 FIRED: deviation 0.41 (registered variable, same V_flat estimator applied to observation, MOND, and Synchronism alike). Threshold provenance: the >0.3 criterion in its operative wording was fixed 2026-04-24 (site commit 89825cf, restating the 2026-04-23 back-annotation) \u2014 eleven weeks before execution and before the bounded-boost analysis existed. Disclosed: that restatement changed the criterion's variable (band-universality \u2192 regime-mix deviation) while carrying the 0.3 magnitude over.",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-10",
+  "name": "Dwarf Galaxy DM Dominance \u2014 FAILED, Ceiling Exceeded (Executed 2026-07-15)",
+  "data": "SPARC outer rotation-curve points (Q \u2264 2, i > 30\u00b0, N = 153)",
+  "prediction": "CORRECTED: the registered \"DM fraction \u2192 100% for M_bar < 10\u2078 M\u2609\" was never the framework's prediction \u2014 it is MOND's (unbounded \u03bd). The framework's own bounded boost (B \u2264 1/\u03a9_m = 3.17) caps the apparent DM fraction at f_DM = 1 \u2212 C(g_bar) \u2264 1 \u2212 \u03a9_m = 68.5% (C evaluated explicitly at g_bar; see TEST-09), for every galaxy, at every radius, for every parameter choice.",
+  "kill": "As registered: \"baryon-dominated dwarfs below 10\u2078 M\u2609 exist.\" The kill fires in REVERSE: the framework dies at the DM-dominated tail its own ceiling forbids. Threshold provenance (restated 2026-09-11): the 68.5% figure is fixed by \u03a9_m = 0.315 once the normalization B_max = 1/\u03a9_m is chosen \u2014 but that normalization is itself underived (\u03a9_m/\u03a9_b \u2248 6.4 is the other candidate), so it is a choice. What does NOT depend on the choice: the most dark-matter-dominated SPARC disc (f_DM = 0.927) needs B = 1/(1 \u2212 0.927) = 13.7, above both 3.17 and 6.4 \u2014 the refutation survives either convention. What does depend on it: under 6.4 the per-galaxy exceedance is mass-to-light-conditional for all but two gas-dominated dwarfs (NGC 3741, ESO 444-G084; research ledger 2026-07-30), so lead with the tail, not the percentage.",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-25",
+  "name": "Solar System / SPARC Joint Squeeze \u2014 FAILED, Empty Intersection (Executed 2026-07-23, propagated to site 2026-07-28)",
+  "data": "SPARC (2,807-point RAR, McGaugh 2016 pipeline) + Cassini spacecraft quadrupole bound on the Solar System",
+  "prediction": "The free-\u03b3 fit to SPARC converges to \u03b3 \u2248 0.489 (\u0394BIC = +7.1 vs McGaugh, \u0394BIC = +184.0 at the framework's fixed \u03b3 = 2). Applying the site's own Hill identity, tanh(\u03b3\u00b7ln(1+x)) = [(1+x)^2\u03b3 \u2212 1]/[(1+x)^2\u03b3 + 1], the fitted \u03b3 sets the compander's high-acceleration return exponent q = 2\u03b3 \u2248 0.98 \u2014 indistinguishable from MOND's SIMPLE interpolating function \u03bd \u2212 1 \u221d 1/y (q = 1). If the SAME scale-universal tanh-log compander is used as a QUMOND interpolation function for the Solar System, it makes a parameter-free prediction for the Cassini-bound post-Newtonian quadrupole.",
+  "kill": "Pre-registered (commit 9c77e7be): the SPARC-retained \u0394BIC \u2264 10 grid interval (\u03b3 = 0.425\u20130.600) is incompatible with the signed, two-sided 95% Cassini quadrupole bound under every recorded BIC convention and external-field sensitivity \u2014 a robust empty intersection, not a boundary artifact.",
+  "tier": "Tier 1",
+  "source": "src/app/tier-1-existing/page.tsx"
+ },
+ {
+  "id": "TEST-11",
+  "name": "EEG Anesthesia Phase Transition",
+  "protocol": "20 subjects, gradual propofol infusion, 256-channel EEG + fMRI",
+  "prediction": "Sharp phase transition in coherence at universal threshold \u03a6_crit = 3.5 \u00b1 0.2",
+  "kill": "\u03a6 at loss of consciousness ranges from 1.0 to 6.0 with no clustering",
+  "notes": "The single most decisive consciousness test. If the threshold is universal, Synchronism's consciousness framework has legs. If \u03a6_LOC varies widely, it doesn't.",
+  "tier": "Tier 2",
+  "source": "src/app/tier-2-pilots/page.tsx"
+ },
+ {
+  "id": "TEST-12",
+  "name": "Circadian \u03b3 Monitoring",
+  "protocol": "10 subjects, continuous EEG over 24-hour cycle, track coherence metrics",
+  "prediction": "\u03b3_neural shows systematic variation correlated with circadian phase",
+  "kill": "No systematic \u03b3 variation over circadian cycle above noise floor",
+  "notes": "Low-cost, fast. If circadian rhythms don't modulate neural coherence, the mapping from abstract C to measurable EEG is wrong.",
+  "tier": "Tier 2",
+  "source": "src/app/tier-2-pilots/page.tsx"
+ },
+ {
+  "id": "TEST-13",
+  "name": "QC Coherence Time Scaling",
+  "protocol": "Partner with quantum computing lab, measure T2 vs. \u03b3_env across platforms",
+  "prediction": "Quantum computer coherence time T2 scales predictably with environmental \u03b3",
+  "kill": "T2 uncorrelated with environmental coupling metric",
+  "notes": "Cheap. Uses existing QC hardware. Tests whether Synchronism's \u03b3 adds predictive value over standard decoherence models.",
+  "tier": "Tier 2",
+  "source": "src/app/tier-2-pilots/page.tsx"
+ },
+ {
+  "id": "TEST-14",
+  "name": "EEG Phase Locking in Meditation",
+  "protocol": "10 expert meditators + 10 controls, 256-channel EEG, multiple meditation types",
+  "prediction": "Expert meditators show higher baseline C and distinct \u03b3 ranges for different meditation types",
+  "kill": "No difference in phase coherence between experts and novices",
+  "notes": "Tests the prediction that meditation systematically modulates coherence. Pairs with TEST-11.",
+  "tier": "Tier 2",
+  "source": "src/app/tier-2-pilots/page.tsx"
+ },
+ {
+  "id": "TEST-15",
+  "name": "GW Speed\u2013DM Column Correlation",
+  "prediction": "Gravitational wave arrival time correlates with dark matter column density along line of sight",
+  "kill": "No correlation at 10\u207b\u00b9\u2076 level after 20+ multi-messenger events",
+  "tier": "Tier 3",
+  "source": "src/app/tier-3-major/page.tsx"
+ },
+ {
+  "id": "TEST-16",
+  "name": "Controlled Decoherence Cascade",
+  "prediction": "Decoherence shows discrete steps at MRH boundaries, not continuous decay",
+  "kill": "Decoherence is perfectly smooth at all measured timescales",
+  "tier": "Tier 3",
+  "source": "src/app/tier-3-major/page.tsx"
+ },
+ {
+  "id": "TEST-17",
+  "name": "Galaxy Cluster \u03b3 Mapping",
+  "prediction": "Cluster-scale \u03b3 shows characteristic profile: \u03b3 \u2248 2 at outskirts, \u03b3 < 1 in ICM cores",
+  "kill": "No radial \u03b3 gradient in cluster profiles",
+  "tier": "Tier 3",
+  "source": "src/app/tier-3-major/page.tsx"
+ },
+ {
+  "id": "TEST-18",
+  "name": "Superconductor \u03b7 Optimization",
+  "prediction": "New materials with optimized \u03b7 (pair-breaking efficiency) show enhanced T_c",
+  "kill": "\u03b7 optimization produces no T_c improvement over random search",
+  "tier": "Tier 3",
+  "source": "src/app/tier-3-major/page.tsx"
+ },
+ {
+  "id": "TEST-19",
+  "name": "Multi-Scale Neural Coherence",
+  "prediction": "Neural coherence shows scale-free structure with phase transition at C \u2248 0.50",
+  "kill": "Neural coherence shows no scale-free structure; threshold varies >50% across subjects",
+  "tier": "Tier 3",
+  "source": "src/app/tier-3-major/page.tsx"
+ },
+ {
+  "id": "TEST-20",
+  "name": "Void Galaxy Rotation Curves",
+  "prediction": "Void galaxies show higher DM fraction than cluster galaxies at same M_bar",
+  "kill": "DM fraction independent of cosmic environment",
+  "tier": "Tier 3",
+  "source": "src/app/tier-3-major/page.tsx"
+ },
+ {
+  "id": "TEST-21",
+  "name": "BAO Fine Structure with Euclid",
+  "prediction": "BAO peak shows fine structure (sub-peaks) from coherence interference",
+  "kill": "BAO peak is smooth Gaussian to 10\u207b\u2075 level in Euclid data",
+  "tier": "Tier 3",
+  "source": "src/app/tier-3-major/page.tsx"
+ },
+ {
+  "id": "TEST-22",
+  "name": "Minimal Cell \u03b3 Mapping",
+  "prediction": "Living minimal cells maintain \u03b3 in a narrow range (0.3\u20130.7); dead cells have \u03b3 > 1.5",
+  "kill": "\u03b3 distribution identical in living and dead minimal cells",
+  "tier": "Tier 4",
+  "source": "src/app/tier-4-frontier/page.tsx"
+ },
+ {
+  "id": "TEST-23",
+  "name": "Planck-Scale Coherence Signature",
+  "prediction": "Detector noise floor shows non-random structure at frequencies corresponding to Planck-scale coherence transitions",
+  "kill": "Noise floor is perfectly thermal/quantum at all measured frequencies",
+  "tier": "Tier 4",
+  "source": "src/app/tier-4-frontier/page.tsx"
+ },
+ {
+  "id": "TEST-24",
+  "name": "AI Consciousness Threshold",
+  "prediction": "AI systems crossing C \u2248 0.50 show discontinuous behavioral changes",
+  "kill": "No behavioral discontinuity at any C threshold, or C cannot be meaningfully measured for AI",
+  "tier": "Tier 4",
+  "source": "src/app/tier-4-frontier/page.tsx"
+ }
+]

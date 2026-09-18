@@ -1,0 +1,71 @@
+==============================================================================
+PART 1 -- MECHANICAL PASS OVER ALL 26 REGISTERED KILL CRITERIA
+==============================================================================
+TEST-01   Tier 1  EXACT-NULL(no correlation); STATES-SIGNIFICANCE
+TEST-02   Tier 1  E:UNMAPPED-QUANTITY
+TEST-03   Tier 1  none
+TEST-04   Tier 1  EXACT-NULL(identical)
+TEST-04a  Tier 1  STATES-SIGNIFICANCE
+TEST-05   Tier 1  NO-NUMERAL; EXACT-NULL(independent of)
+TEST-06   Tier 1  none
+TEST-07   Tier 1  NO-NUMERAL; NO-CRITERION
+TEST-08   Tier 1  none
+TEST-09   Tier 1  E:UNMAPPED-QUANTITY
+TEST-10   Tier 1  E:UNMAPPED-QUANTITY
+TEST-25   Tier 1  STATES-SIGNIFICANCE; E:UNMAPPED-QUANTITY
+TEST-11   Tier 2  EXACT-NULL(no clustering); E:UNMAPPED-QUANTITY
+TEST-12   Tier 2  NO-NUMERAL; EXACT-NULL(no systematic); E:UNMAPPED-QUANTITY
+TEST-13   Tier 2  EXACT-NULL(uncorrelated); E:UNMAPPED-QUANTITY
+TEST-14   Tier 2  NO-NUMERAL; EXACT-NULL(no difference); E:UNMAPPED-QUANTITY
+TEST-15   Tier 3  EXACT-NULL(no correlation)
+TEST-16   Tier 3  NO-NUMERAL; EXACT-NULL(perfectly;at all measured); E:UNMAPPED-QUANTITY
+TEST-17   Tier 3  NO-NUMERAL; EXACT-NULL(no radial); E:UNMAPPED-QUANTITY
+TEST-18   Tier 3  NO-NUMERAL
+TEST-19   Tier 3  EXACT-NULL(no scale-free); E:UNMAPPED-QUANTITY
+TEST-20   Tier 3  NO-NUMERAL; EXACT-NULL(independent of)
+TEST-21   Tier 3  none
+TEST-22   Tier 4  NO-NUMERAL; EXACT-NULL(identical); E:UNMAPPED-QUANTITY
+TEST-23   Tier 4  NO-NUMERAL; EXACT-NULL(perfectly;at all measured)
+TEST-24   Tier 4  NO-NUMERAL; EXACT-NULL(no behavioral discontinuity); E:UNMAPPED-QUANTITY
+
+  E:UNMAPPED-QUANTITY    13 / 26   (50 %)
+  EXACT-NULL             15 / 26   (58 %)
+  NO-CRITERION            1 / 26   (4 %)
+  NO-NUMERAL             11 / 26   (42 %)
+  STATES-SIGNIFICANCE     3 / 26   (12 %)
+
+Kill criteria containing NO numeral at all: 11/26
+  TEST-05, TEST-07, TEST-12, TEST-14, TEST-16, TEST-17, TEST-18, TEST-20, TEST-22, TEST-23, TEST-24
+
+==============================================================================
+PART 2 -- A-CLASS ARITHMETIC (threshold vs stated significance vs real sigma)
+==============================================================================
+
+TEST-04a  [rules out at >3σ]
+  prediction 0.418, threshold 0.46, stated significance 3.0sigma
+  the threshold PRESUMES sigma = (0.46 - 0.418)/3.0 = 0.0140
+  the data DELIVER      sigma = 0.062   (4.4x larger)
+  the threshold actually sits 0.68 sigma from the prediction
+  -> UNSATISFIABLE AS REGISTERED (class A)
+  a threshold honestly placed at 3.0sigma would be 0.604, not 0.46 (short by 0.144)
+  sigma source: DESI DR1 LRG1 fsigma8 = 0.550 +/- 0.062 (site, tier-1 scorecard)
+
+TEST-04a  [disfavors at >2σ]
+  prediction 0.418, threshold 0.45, stated significance 2.0sigma
+  the threshold PRESUMES sigma = (0.45 - 0.418)/2.0 = 0.0160
+  the data DELIVER      sigma = 0.062   (3.9x larger)
+  the threshold actually sits 0.52 sigma from the prediction
+  -> UNSATISFIABLE AS REGISTERED (class A)
+  a threshold honestly placed at 2.0sigma would be 0.542, not 0.45 (short by 0.092)
+  sigma source: same
+
+TEST-06  [sigma_int > 0.12 dex at N > 1000]
+  prediction 0.086 dex, threshold 0.12 dex, stated power N > 1000
+  SE of a dispersion estimate at N=1000: 0.086/sqrt(2N) = 0.0019 dex
+  threshold sits 17.7 sigma from the prediction  -> SATISFIABLE
+  source: sigma of a dispersion estimate = s/sqrt(2N); N>1000 is stated IN the criterion
+
+==============================================================================
+PART 3 -- ROWS WITH NO ADJUDICATING DATASET NAMED
+==============================================================================
+10/26  (38 %): TEST-15, TEST-16, TEST-17, TEST-18, TEST-19, TEST-20, TEST-21, TEST-22, TEST-23, TEST-24

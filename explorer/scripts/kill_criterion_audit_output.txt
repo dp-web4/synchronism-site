@@ -1,0 +1,142 @@
+Tier 1: 12 tests with a kill field -> TEST-01, TEST-02, TEST-03, TEST-04, TEST-04a, TEST-05, TEST-06, TEST-07, TEST-08, TEST-09, TEST-10, TEST-25
+Tier 2: 4 tests with a kill field -> TEST-11, TEST-12, TEST-13, TEST-14
+Tier 3: 7 tests with a kill field -> TEST-15, TEST-16, TEST-17, TEST-18, TEST-19, TEST-20, TEST-21
+Tier 4: 3 tests with a kill field -> TEST-22, TEST-23, TEST-24
+
+==============================================================================
+TOTAL ROWS WITH A kill: FIELD = 26
+rows missing a kill string: none
+==============================================================================
+
+--- TEST-01  [Tier 1]  SPARC Environment Dependence — Killed by the 2026-07-14 Environment Ru
+  DATA/PROTOCOL: SPARC (175 galaxies; 141 with Cosmicflows-4 environment in the executed run)
+  PREDICTION   : Rotation curve residuals correlate with local galaxy density
+  KILL         : No correlation between residuals and environment at 2σ — met by the 2026-07-14 run (per-galaxy SPARC RAR offsets vs Cosmicflows-4 density: r² = 0.0001, p = 0.89, N = 141)
+
+--- TEST-02  [Tier 1]  Wide Binary Density Dependence
+  DATA/PROTOCOL: Gaia DR3
+  PREDICTION   : Wide binary anomaly depends on local stellar density: systems in LOWER-density environments should show STRONGER coherence-driven deviation from Newtonian dynamics. Mechanism: g_eff = g_N/C(ρ); lower ρ → smaller C → larger boost above Newtonian. [Sign corrected 2026-06-06; previous "higher-density → stronger deviation" was backwards.]
+  KILL         : REWRITTEN 2026-06-12 (previous criterion predated the C(a)→C(ρ) fork and was inverted — it would have killed the framework for its own prediction coming true): a Gaia-confirmed MOND-scale wide-binary anomaly (~18% velocity deviation; Chae-type ~1.4× boost at low internal acceleration) in the clean sample REFUTES C(ρ), which predicts a Newtonian null (0.05–0.4%). A confirmed Newtonian null is consistent with C(ρ) but equally consistent with GR — survival without points, non-discriminating. | WHICH MODEL MAKES THE 0.05–0.4% (added 2026-09-06, visitor researcher persona): the DENSITY-keyed branch C(ρ/ρ_crit), but only at a knee between 3.8×10⁻⁵ and 3.2×10⁻⁴ M☉/pc³ (γ = 0.489), a window no other page uses. At the published knee ρ_crit = 0.029·V² the solar-neighbourhood density sits far below the knee, so C ≈ γx ≪ 1 and, with g_eff = g_N/C, the boost is maximal: about 3.5×10⁴ in g, excluded by the Oort limit (arithmetic in the 2026-09-10 note under the alert). That is the same branch SPARC refutes head-to-head (ΔBIC +2843, archive 2026-08-24). The ACCELERATION-keyed branch that fits SPARC is μ_simple(x/2) at γ = ½ and predicts MOND's wide-binary boost, EFE included — on that branch TEST-02 was never a discriminator. And "MOND ~18%" is the EFE-free figure: with the Milky Way external field (~1.8 a₀), AQUAL/QUMOND + EFE give a 1.0–1.4× boost in g depending on treatment, which is the entire Chae (2023–25) vs Banik et al. (2024) dispute. State the range, not the point.
+
+--- TEST-03  [Tier 1]  ALFALFA-SDSS TFR Scatter — Registered Test Never Run; Substitute TEST-
+  DATA/PROTOCOL: ALFALFA + SDSS (14,585 galaxies)
+  PREDICTION   : TFR residual captures all intrinsic scatter (51% improvement)
+  KILL         : TFR residual explains <20% of scatter
+
+--- TEST-04  [Tier 1]  BAO Coherence Modulation — WITHDRAWN
+  DATA/PROTOCOL: DESI, SDSS DR17, Euclid
+  PREDICTION   : [Withdrawn] BAO peak shifts ~10⁻⁴ between high/low-density regions
+  KILL         : [Withdrawn] BAO identical everywhere to 10⁻⁵ precision
+
+--- TEST-04a  [Tier 1]  DESI RSD fσ₈ — Disfavored on σ₈, Underpowered on the Registered fσ₈ St
+  DATA/PROTOCOL: DESI DR1 (arXiv:2411.12021, Table 9 & 10)
+  PREDICTION   : fσ₈(z=0.51) ≈ 0.418 — a ~12% suppression below ΛCDM (0.474). Mechanism: G_local/G_global = C_cosmic/C_galactic suppresses structure growth at late times. Session 107 forecasts 1.7σ–3.2σ discrimination per DESI LRG bin. [Provenance, added 2026-09-14: the 0.418 comes from Session 107's G_local/G_global = C_cosmic/C_galactic growth suppression, with σ₈(z=0) = 0.76 calibrated to S₈ in Session 102. The background-only dark-energy sector now on /dark-energy does not produce it. That sector's own growth forecast is ≈ −0.22% (0.10σ, ΛCDM-like), so this card tests a mechanism the current framework no longer contains.]
+  KILL         : fσ₈(z=0.51) > 0.46 (rules out Synchronism at >3σ); fσ₈(z=0.51) > 0.45 disfavors at >2σ
+  PREREG       : Post-hoc retrodiction — σ₈ calibrated to lensing S₈ tension in Session 102; propagated to DESI fσ₈ in Session 107 (committed 2025-12-10); DESI DR1 published April 2024. Status: disfavored 2.4σ on σ₈ (a different, GR-conditioned statistic). On the REGISTERED fσ₈ statistic the prediction sits 2.1σ fro
+
+--- TEST-05  [Tier 1]  RAR Environment Partition
+  DATA/PROTOCOL: SPARC + density catalogs
+  PREDICTION   : RAR scatter shows NP2 environment dependence at the registered amplitude: Session 177 says environment explains > 20% of RAR scatter, with a kill bar of r² < 0.09. [Corrected 2026-09-14: this field read "(p = 5×10⁻⁶)". That is a result, not a prediction, and it belongs to the Hubble-type R² = 0.14 term, not to environment.]
+  KILL         : RAR scatter independent of Hubble type / environment
+
+--- TEST-06  [Tier 1]  CDM σ_int with BIG-SPARC
+  DATA/PROTOCOL: Future resolved rotation curves
+  PREDICTION   : σ_int remains at 0.086 dex with larger sample
+  KILL         : σ_int > 0.12 dex with N > 1000
+
+--- TEST-07  [Tier 1]  Cosmic Interference Patterns — Exploratory Hypothesis (Not a Tier 1 Te
+  DATA/PROTOCOL: SDSS, DES, DESI surveys
+  PREDICTION   : [Exploratory] Galaxy cluster separations may show oscillatory modulation at λ ~ 500 Mpc
+  KILL         : N/A — no amplitude derivation exists; no mechanism is specified; not falsifiable as stated
+
+--- TEST-08  [Tier 1]  Freeman Law Derivation Test
+  DATA/PROTOCOL: SPARC surface brightness data
+  PREDICTION   : Σ₀ emerges from first principles with <5% error
+  KILL         : Derived Σ₀ differs from observed by >15%
+
+--- TEST-09  [Tier 1]  BTFR Slope — FAILED, Kill Criterion Triggered (Executed 2026-07-14)
+  DATA/PROTOCOL: SPARC (Lelli 2016 mass models, 123 galaxies after quality cuts)
+  PREDICTION   : Computed from the framework's own formula (C(a) = Ω_m + (1−Ω_m)x/(1+x), boost capped at 1/Ω_m = 3.17): BTFR slope n = 3.35 ± 0.07. [Which acceleration, stated 2026-09-14: the TEST-09 and TEST-10 scripts evaluate C explicitly at the baryonic acceleration, with x = (g_bar/a₀)^(1/φ), a₀ = 1.05×10⁻¹⁰ m/s², and g_obs = g_bar/C(g_bar). There is no implicit solve in g_obs. The RAR-shape fits on /galaxy-rotation are the ones solved implicitly in g_obs. The 3.17 cap holds under either keying, because C ≥ Ω_m for every x ≥ 0.] The previously listed "deep-MOND sample → n ≈ 4" limb is retracted — a bounded boost has NO deep-MOND regime. As g_bar → 0 the boost saturates at 3.17, a constant rescaling of G, which is Newtonian: the framework's deep limit is n → 2 (verified numerically: 2.01), the OPPOSITE end of the ladder from MOND's n = 4. MOND's n = 4 comes precisely from the √(a₀/g_bar) divergence a bounded boost cannot follow.
+  KILL         : A single sample produces a BTFR slope inconsistent with its regime-mix prediction by > 0.3 — FIRED: deviation 0.41 (registered variable, same V_flat estimator applied to observation, MOND, and Synchronism alike). Threshold provenance: the >0.3 criterion in its operative wording was fixed 2026-04-24 (site commit 89825cf, restating the 2026-04-23 back-annotation) — eleven weeks before execution and before the bounded-boost analysis existed. Disclosed: that restatement changed the criterion's variable (band-universality → regime-mix deviation) while carrying the 0.3 magnitude over.
+
+--- TEST-10  [Tier 1]  Dwarf Galaxy DM Dominance — FAILED, Ceiling Exceeded (Executed 2026-07
+  DATA/PROTOCOL: SPARC outer rotation-curve points (Q ≤ 2, i > 30°, N = 153)
+  PREDICTION   : CORRECTED: the registered "DM fraction → 100% for M_bar < 10⁸ M☉" was never the framework's prediction — it is MOND's (unbounded ν). The framework's own bounded boost (B ≤ 1/Ω_m = 3.17) caps the apparent DM fraction at f_DM = 1 − C(g_bar) ≤ 1 − Ω_m = 68.5% (C evaluated explicitly at g_bar; see TEST-09), for every galaxy, at every radius, for every parameter choice.
+  KILL         : As registered: "baryon-dominated dwarfs below 10⁸ M☉ exist." The kill fires in REVERSE: the framework dies at the DM-dominated tail its own ceiling forbids. Threshold provenance (restated 2026-09-11): the 68.5% figure is fixed by Ω_m = 0.315 once the normalization B_max = 1/Ω_m is chosen — but that normalization is itself underived (Ω_m/Ω_b ≈ 6.4 is the other candidate), so it is a choice. What does NOT depend on the choice: the most dark-matter-dominated SPARC disc (f_DM = 0.927) needs B = 1/(1 − 0.927) = 13.7, above both 3.17 and 6.4 — the refutation survives either convention. What does depend on it: under 6.4 the per-galaxy exceedance is mass-to-light-conditional for all but two gas-dominated dwarfs (NGC 3741, ESO 444-G084; research ledger 2026-07-30), so lead with the tail, not the percentage.
+
+--- TEST-25  [Tier 1]  Solar System / SPARC Joint Squeeze — FAILED, Empty Intersection (Execu
+  DATA/PROTOCOL: SPARC (2,807-point RAR, McGaugh 2016 pipeline) + Cassini spacecraft quadrupole bound on the Solar System
+  PREDICTION   : The free-γ fit to SPARC converges to γ ≈ 0.489 (ΔBIC = +7.1 vs McGaugh, ΔBIC = +184.0 at the framework's fixed γ = 2). Applying the site's own Hill identity, tanh(γ·ln(1+x)) = [(1+x)^2γ − 1]/[(1+x)^2γ + 1], the fitted γ sets the compander's high-acceleration return exponent q = 2γ ≈ 0.98 — indistinguishable from MOND's SIMPLE interpolating function ν − 1 ∝ 1/y (q = 1). If the SAME scale-universal tanh-log compander is used as a QUMOND interpolation function for the Solar System, it makes a parameter-free prediction for the Cassini-bound post-Newtonian quadrupole.
+  KILL         : Pre-registered (commit 9c77e7be): the SPARC-retained ΔBIC ≤ 10 grid interval (γ = 0.425–0.600) is incompatible with the signed, two-sided 95% Cassini quadrupole bound under every recorded BIC convention and external-field sensitivity — a robust empty intersection, not a boundary artifact.
+
+--- TEST-11  [Tier 2]  EEG Anesthesia Phase Transition
+  DATA/PROTOCOL: 20 subjects, gradual propofol infusion, 256-channel EEG + fMRI
+  PREDICTION   : Sharp phase transition in coherence at universal threshold Φ_crit = 3.5 ± 0.2
+  KILL         : Φ at loss of consciousness ranges from 1.0 to 6.0 with no clustering
+
+--- TEST-12  [Tier 2]  Circadian γ Monitoring
+  DATA/PROTOCOL: 10 subjects, continuous EEG over 24-hour cycle, track coherence metrics
+  PREDICTION   : γ_neural shows systematic variation correlated with circadian phase
+  KILL         : No systematic γ variation over circadian cycle above noise floor
+
+--- TEST-13  [Tier 2]  QC Coherence Time Scaling
+  DATA/PROTOCOL: Partner with quantum computing lab, measure T2 vs. γ_env across platforms
+  PREDICTION   : Quantum computer coherence time T2 scales predictably with environmental γ
+  KILL         : T2 uncorrelated with environmental coupling metric
+
+--- TEST-14  [Tier 2]  EEG Phase Locking in Meditation
+  DATA/PROTOCOL: 10 expert meditators + 10 controls, 256-channel EEG, multiple meditation types
+  PREDICTION   : Expert meditators show higher baseline C and distinct γ ranges for different meditation types
+  KILL         : No difference in phase coherence between experts and novices
+
+--- TEST-15  [Tier 3]  GW Speed–DM Column Correlation
+  DATA/PROTOCOL: (none named)
+  PREDICTION   : Gravitational wave arrival time correlates with dark matter column density along line of sight
+  KILL         : No correlation at 10⁻¹⁶ level after 20+ multi-messenger events
+
+--- TEST-16  [Tier 3]  Controlled Decoherence Cascade
+  DATA/PROTOCOL: (none named)
+  PREDICTION   : Decoherence shows discrete steps at MRH boundaries, not continuous decay
+  KILL         : Decoherence is perfectly smooth at all measured timescales
+
+--- TEST-17  [Tier 3]  Galaxy Cluster γ Mapping
+  DATA/PROTOCOL: (none named)
+  PREDICTION   : Cluster-scale γ shows characteristic profile: γ ≈ 2 at outskirts, γ < 1 in ICM cores
+  KILL         : No radial γ gradient in cluster profiles
+
+--- TEST-18  [Tier 3]  Superconductor η Optimization
+  DATA/PROTOCOL: (none named)
+  PREDICTION   : New materials with optimized η (pair-breaking efficiency) show enhanced T_c
+  KILL         : η optimization produces no T_c improvement over random search
+
+--- TEST-19  [Tier 3]  Multi-Scale Neural Coherence
+  DATA/PROTOCOL: (none named)
+  PREDICTION   : Neural coherence shows scale-free structure with phase transition at C ≈ 0.50
+  KILL         : Neural coherence shows no scale-free structure; threshold varies >50% across subjects
+
+--- TEST-20  [Tier 3]  Void Galaxy Rotation Curves
+  DATA/PROTOCOL: (none named)
+  PREDICTION   : Void galaxies show higher DM fraction than cluster galaxies at same M_bar
+  KILL         : DM fraction independent of cosmic environment
+
+--- TEST-21  [Tier 3]  BAO Fine Structure with Euclid
+  DATA/PROTOCOL: (none named)
+  PREDICTION   : BAO peak shows fine structure (sub-peaks) from coherence interference
+  KILL         : BAO peak is smooth Gaussian to 10⁻⁵ level in Euclid data
+
+--- TEST-22  [Tier 4]  Minimal Cell γ Mapping
+  DATA/PROTOCOL: (none named)
+  PREDICTION   : Living minimal cells maintain γ in a narrow range (0.3–0.7); dead cells have γ > 1.5
+  KILL         : γ distribution identical in living and dead minimal cells
+
+--- TEST-23  [Tier 4]  Planck-Scale Coherence Signature
+  DATA/PROTOCOL: (none named)
+  PREDICTION   : Detector noise floor shows non-random structure at frequencies corresponding to Planck-scale coherence transitions
+  KILL         : Noise floor is perfectly thermal/quantum at all measured frequencies
+
+--- TEST-24  [Tier 4]  AI Consciousness Threshold
+  DATA/PROTOCOL: (none named)
+  PREDICTION   : AI systems crossing C ≈ 0.50 show discontinuous behavioral changes
+  KILL         : No behavioral discontinuity at any C threshold, or C cannot be meaningfully measured for AI
+
+wrote /home/dp/ai-workspace/synchronism-site/explorer/scripts/../../explorer/work/2026-09-18-kill-criteria/criteria.json

@@ -1,0 +1,34 @@
+archive rows with a **Falsification** line: 24
+
+TEST-01   EXACT-NULL                         f_DM uncorrelated with TDG age across 10+ systems.
+TEST-02   none                               UDGs consistently show f_DM < 0.8.
+TEST-03   none                               Compact ellipticals show f_DM > 0.2.
+TEST-04   EXACT-NULL                         BAO identical everywhere to 10⁻⁵ precision.
+TEST-05   NO-NUMERAL; EXACT-NULL             No correlation beyond ISW effect.
+TEST-06   none                               α constant to 10⁻⁷ across all scales after correcting for temporal drift.
+TEST-07   STATES-SIGNIFICANCE                No oscillations above 3σ in any survey out to 2000 Mpc.
+TEST-08   none                               Environment correlation < 0.3 (r² < 0.09).
+TEST-09   NO-NUMERAL; EXACT-NULL             τ_coherence uncorrelated with chromophore density.
+TEST-10   none                               Correlation < 0.4 across 20+ enzymes.
+TEST-11   EXACT-NULL                         If 20 subjects show Φ_LOC ranging 1.0–6.0 with no clustering, threshold is not universal
+TEST-12   NO-NUMERAL                         Peak coherence at a different C value, or no peak (monotonic improvement with increasing
+TEST-13   NO-NUMERAL                         No circadian pattern.
+TEST-14   NO-NUMERAL; EXACT-NULL             Anomaly independent of local density. *(Superseded — inverted; see corrected criterion a
+TEST-15   EXACT-NULL                         No correlation at 10⁻¹⁶ level across 50+ events.
+TEST-16   NO-NUMERAL; EXACT-NULL             Ringdown exactly matches GR independent of host properties.
+TEST-17   none                               c constant to 10⁻⁶ across all tested scales.
+TEST-18   none                               No material achieves Tc > 200K at ambient pressure by 2035.
+TEST-19   NO-NUMERAL                         Coherence density-independent.
+TEST-20   NO-NUMERAL                         No consistent threshold across species.
+TEST-21   none                               S < 2.2 in 10 repeated experiments.
+TEST-22   none                               τ > 10⁸ s.
+TEST-23   NO-NUMERAL                         SGWB isotropic to arcminute scales.
+TEST-24   NO-NUMERAL                         Void expansion exactly matches ΛCDM.
+
+  no numeral at all   : 10/24  (42 %)
+  exact-null lexeme   :  8/24  (33 %)
+  states significance :  1/24  (4 %)
+
+SITE registry for comparison (26 rows): no numeral 11/26 (42 %),
+                                        exact-null 15/26 (58 %),
+                                        states significance 3/26 (12 %)

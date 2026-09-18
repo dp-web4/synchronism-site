@@ -260,6 +260,32 @@ export default function ParameterDerivations() {
               yields A &#x2248; 550 (km/s)<sup>&minus;2</sup> — 20,000&#x00D7; too large. The formula only closes
               at 5% with &#x03B2;<sub>J</sub> = O(1). No electromagnetic coupling is implied.
             </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
+              <strong style={{ color: '#f87171' }}>The tightest constraint on this knee is the solar
+              neighbourhood, and until 2026-09-18 this page did not mention it.</strong> A researcher visitor
+              persona noted that the canonical &#x03C1;<sub>crit</sub> page &mdash; the one that tabulates every
+              sector&apos;s knee &mdash; named neither the Oort limit nor the local stellar density, while the
+              single sharpest zero-cost exclusion on the site sat inside a card marked &ldquo;unrun&rdquo;. The
+              exclusion, propagated here from{' '}
+              <Link href="/tier-1-existing" style={{ color: '#f87171' }}>TEST-02</Link>: at <em>this row&apos;s
+              published calibration</em> &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;
+              (= 1.52&times;10&sup3; M<sub>&#x2609;</sub>/pc&sup3; for the Milky Way at V<sub>flat</sub> = 229 km/s),
+              the local density sits ~10<sup>4</sup> below the knee, so C &#x2248; &#x03B3;x &#x226A; 1 and the
+              division wiring gives a boost of about <strong>3.5&times;10<sup>4</sup> in g</strong> in the solar
+              neighbourhood &mdash; excluded by the Oort limit and planetary ephemerides by orders of magnitude.
+              The knee window that would instead reproduce the 0.05&ndash;0.4% wide-binary signal is
+              &#x03C1;<sub>crit</sub> &isin; [3.8&times;10<sup>&minus;5</sup>, 3.2&times;10<sup>&minus;4</sup>]
+              M<sub>&#x2609;</sub>/pc&sup3; at &#x03B3; = 0.489 &mdash; seven orders below this row&apos;s value and
+              disjoint from every knee the galaxy sector uses.
+              <br /><strong>Scope, unchanged: this is not a seventh refutation and the count stays 6.</strong> It is
+              the same statement{' '}
+              <Link href="/key-claims" style={{ color: '#f87171' }}>Key Claims</Link> already publishes as
+              &ldquo;rotation curves under this reading do not fail to flatten &mdash; they blow up&rdquo;,
+              evaluated where &#x03C1; is well measured. What was missing was not the result but its presence on
+              the page a reader consults about this parameter. The visitor&apos;s recommendation to promote it to
+              an executed refutation is declined for that reason, and the reason is recorded here rather than
+              left implicit.
+            </p>
           </div>
 
           <div className="card">

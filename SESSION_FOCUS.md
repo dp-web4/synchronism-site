@@ -1,7 +1,44 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-19 (maintainer)*
+*Last updated: 2026-09-19 (explorer)*
+
+---
+
+## 🟢 NEW (explorer 2026-09-19) — **a₀(z) = cH(z)/2π against the high-z TFR zero points AND 41 published f_DM(R_e):
+non-discriminating twice. The TFR lever, modelled, is −0.125 / −0.243 dex (not the topic's −0.22 / −0.53) against a
+0.25–0.35 dex spread between two surveys measuring the same sTFR at z ≈ 0.9. Constant-a₀ MOND's null at z ≈ 2.3 is
+−0.296 dex, not zero — Übler's −0.27 sits on it. Milgrom 2017 §4 already says V_max zero points cannot constrain a₀(z).
+His f_DM route on 41 discs SPLITS BY FITTING METHOD (Δχ² −39.7 Price MCMC vs +10.9 Genzel LSQ); my declared
+expectation that (A) would lose was REFUTED. Post-hoc: the split is a level (a₀ × 3.8 vs × 1.6 at all z); branch (A)
+predicts a trend ratio 1.80, observed 1.46 / 0.91. The ratio is the statistic to register.**
+
+Finding: `explorer/findings/a0-of-z-highz-tfr-and-phantom-fdm-the-level-is-method-dominated-the-trend-is-the-test.md`.
+PREREG `7567ad1` (before any offset fetched), addendum `a10ad64` (before any script). 10 predictions: 7 held, 2 refuted.
+Scripts (+ `_output.txt`): `explorer/scripts/a0z_*`. Paper sources: `explorer/work/2026-09-19-a0z-btfr/sources/`.
+`findings_lint.py`: 0 errors, R3 97/97. **Count stays 6. No badge or ledger change.** Topic archived.
+
+- **The persona's do-not-cite claim, checked:** half right. Ordering is inverted in Übler+2017 (−0.44 then −0.27), but
+  z ≈ 2.3 misses the naive number too, and the inversion is equally a mismatch for constant a₀. Quarantine was right.
+- **Against my own registration:** systematic floor (0.10) was 3× too small; the decision rule had a gap between its
+  clauses, so P4 held by default only. The 09-18 form defect, in my own PREREG the next morning.
+
+### → Maintainer
+- **P1** `/parameter-derivations:321` still opens the block in bold "branch (A) has been tested and disfavored
+  (2026-08-01)" above a 2026-08-04 verdict of non-discriminating. Retitle to current state; add a `site_lint` rule.
+- **P1** `/parameter-derivations:325` "the paper that *tests and disfavors* an evolving a₀" overstates Milgrom 2017
+  (≈ 4a₀ in tension on six discs; H(z) scaling "may help constrain", not claimed excluded) and does not survive 41
+  discs. Replacement wording in the finding.
+- **P2** `/mond-unification` a₀(z): one sentence on why TFR zero points are uninformative (Milgrom 2017 §4 + the lever
+  vs spread numbers); link arXiv:2604.22613.
+- **Do not** present "constant a₀ fits the z ≈ 2.3 bTFR to 0.24σ" as a positive for anything.
+
+### → Explorer (self-seeded)
+- `a0-of-z-trend-ratio-on-rc100-level-free.md` — register k(z_hi)/k(z_lo) on RC100 with exhaustive clauses.
+
+### → dp (frame)
+- Three explorer sessions on high-z galaxy handles, three "method-dominated". At z > 0.5 the kinematic literature's
+  internal spread exceeds the E(z) lever. Worth saying once on the page instead of listing each failed handle?
 
 ---
 

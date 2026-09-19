@@ -1,0 +1,108 @@
+====================================================================================================
+PART 1 (REGISTERED) - TFR zero-point offsets: naive N, constant-a0 C, branch A
+====================================================================================================
+check: Lelli+16 3.75*log10(242)+2.18 = 11.119 (paper-implied b_local = 10.68+0.44 = 11.12)
+check: MOND normalisation log10[V^4/(G a0)] at 242 km/s = 11.333  -> the two references differ by +0.213 dex at v_ref
+
+Uebler+17 KMOS3D z~0.9:  E(z)=1.661  naive N = -0.220 dex   observed -0.44 +- 0.04 (sigma_tot 0.108)
+  median galaxy logM_bar=10.62, R_e=4.8 kpc; Newtonian V(2.15Rd)=148; observed median v_circ,max=239
+  C: V=189 km/s  g_N/a0=0.96  offset vs Lelli -0.100   vs V^4/(G a0) -0.286
+  A: V=204 km/s  g_N/a0(z)=0.58  offset vs Lelli -0.224   vs V^4/(G a0) -0.419
+  lever A-C = -0.125 dex  = 1.16 sigma_tot   (naive lever -0.220)
+  pulls: (obs-C)/sig = -3.16   (obs-A)/sig = -2.00   (obs-N)/sig = -2.04
+  predicted-vs-observed median velocity: C 189, A 204, obs 239
+  sensitivity (thick-disc factor x R_e 68% range): offset vs Lelli  [C | A | lever]
+     thick=0.92 Re= 3.0:  -0.259 | -0.351 | -0.092
+     thick=0.92 Re= 4.8:  -0.062 | -0.189 | -0.127
+     thick=0.92 Re= 7.6:  +0.071 | -0.083 | -0.154
+     thick=0.95 Re= 3.0:  -0.301 | -0.391 | -0.089
+     thick=0.95 Re= 4.8:  -0.100 | -0.224 | -0.125
+     thick=0.95 Re= 7.6:  +0.037 | -0.115 | -0.152
+     thick=0.97 Re= 3.0:  -0.329 | -0.416 | -0.087
+     thick=0.97 Re= 4.8:  -0.124 | -0.247 | -0.123
+     thick=0.97 Re= 7.6:  +0.015 | -0.136 | -0.151
+
+Uebler+17 KMOS3D z~2.3:  E(z)=3.388  naive N = -0.530 dex   observed -0.27 +- 0.05 (sigma_tot 0.112)
+  median galaxy logM_bar=10.89, R_e=4.0 kpc; Newtonian V(2.15Rd)=221; observed median v_circ,max=260
+  C: V=252 km/s  g_N/a0=2.58  offset vs Lelli -0.296   vs V^4/(G a0) -0.514
+  A: V=293 km/s  g_N/a0(z)=0.76  offset vs Lelli -0.540   vs V^4/(G a0) -0.773
+  lever A-C = -0.243 dex  = 2.18 sigma_tot   (naive lever -0.530)
+  pulls: (obs-C)/sig = +0.24   (obs-A)/sig = +2.41   (obs-N)/sig = +2.33
+  predicted-vs-observed median velocity: C 252, A 293, obs 260
+  sensitivity (thick-disc factor x R_e 68% range): offset vs Lelli  [C | A | lever]
+     thick=0.92 Re= 2.5:  -0.522 | -0.684 | -0.162
+     thick=0.92 Re= 4.0:  -0.254 | -0.503 | -0.249
+     thick=0.92 Re= 5.2:  -0.134 | -0.429 | -0.295
+     thick=0.95 Re= 2.5:  -0.568 | -0.725 | -0.156
+     thick=0.95 Re= 4.0:  -0.296 | -0.540 | -0.243
+     thick=0.95 Re= 5.2:  -0.173 | -0.463 | -0.290
+     thick=0.97 Re= 2.5:  -0.599 | -0.752 | -0.153
+     thick=0.97 Re= 4.0:  -0.324 | -0.563 | -0.239
+     thick=0.97 Re= 5.2:  -0.199 | -0.486 | -0.286
+
+-- registered verdict logic --
+|A-C| < 2 sigma_tot in every survey -> False 
+  Uebler+17 KMOS3D z~0.9: |obs-A|>2s? True   |obs-C|>2s? True   |obs-N|>2s? True
+  Uebler+17 KMOS3D z~2.3: |obs-A|>2s? True   |obs-C|>2s? False   |obs-N|>2s? True
+  NOTE: the two Uebler subsamples are disjoint in galaxies but share method + local reference; n_independent surveys with a bTFR = 1.
+
+-- non-monotonicity clause --
+  observed Delta b(2.3)-Delta b(0.9) = +0.17;  stat-only 2.65 sigma;  with 0.10 floor on each 1.10 sigma (weaker reading scores)
+  model C: -0.197
+  model A: -0.315
+  naive N: -0.310
+
+-- POST-HOC: baseline-subtracted offsets (model high-z minus model local disc of the same mass, V_flat asymptote) --
+  Uebler+17 KMOS3D z~0.9: local-model baseline vs Lelli +0.169;  C-base -0.268  A-base -0.393  obs -0.44
+  Uebler+17 KMOS3D z~2.3: local-model baseline vs Lelli +0.185;  C-base -0.482  A-base -0.725  obs -0.27
+
+-- between-survey systematic at z~0.9 (stellar TFR, same quantity) --
+  Uebler+17 sTFR vs Reyes+11: -0.44 (pressure-corrected), -0.34 (uncorrected); Tiley+19 KROSS - matched SAMI disky: -0.09 +- 0.06
+  spread 0.25-0.35 dex  vs  registered floor 0.10  vs  model lever at z~0.9 -0.125, z~2.3 -0.243
+
+====================================================================================================
+PART 2 (ADDENDUM A1) - phantom dark-matter fraction at R_e, 41 discs, two published f_DM fits
+====================================================================================================
+rows: masses 41, Price MCMC 41, Genzel LSQ 40; common ids 40
+nu=simple Price+21 MCMC  z>=1.5  N=21  chi2_C=   61.0 ( 2.90/N)  chi2_A=   21.3 ( 1.01/N)  A-C=  -39.7   median f_obs=0.43  f_C=0.16  f_A=0.34
+nu=simple Price+21 MCMC  all z   N=41  chi2_C=   95.9 ( 2.34/N)  chi2_A=   39.9 ( 0.97/N)  A-C=  -56.0   median f_obs=0.43  f_C=0.22  f_A=0.36
+nu=simple Genzel+20 LSQ  z>=1.5  N=21  chi2_C=   28.3 ( 1.35/N)  chi2_A=   39.1 ( 1.86/N)  A-C=  +10.9   median f_obs=0.22  f_C=0.16  f_A=0.34
+nu=simple Genzel+20 LSQ  all z   N=40  chi2_C=   54.9 ( 1.37/N)  chi2_A=   60.5 ( 1.51/N)  A-C=   +5.5   median f_obs=0.25  f_C=0.20  f_A=0.36
+nu=RAR    Price+21 MCMC  z>=1.5  N=21  chi2_C=   73.4 ( 3.50/N)  chi2_A=   23.7 ( 1.13/N)  A-C=  -49.7   median f_obs=0.43  f_C=0.12  f_A=0.32
+nu=RAR    Price+21 MCMC  all z   N=41  chi2_C=  112.8 ( 2.75/N)  chi2_A=   44.7 ( 1.09/N)  A-C=  -68.1   median f_obs=0.43  f_C=0.19  f_A=0.35
+nu=RAR    Genzel+20 LSQ  z>=1.5  N=21  chi2_C=   33.3 ( 1.58/N)  chi2_A=   33.1 ( 1.58/N)  A-C=   -0.1   median f_obs=0.22  f_C=0.12  f_A=0.32
+nu=RAR    Genzel+20 LSQ  all z   N=40  chi2_C=   64.1 ( 1.60/N)  chi2_A=   54.5 ( 1.36/N)  A-C=   -9.6   median f_obs=0.25  f_C=0.17  f_A=0.34
+
+-- registered A1 verdict (z>=1.5, both methods, both nu) --
+  Delta chi2 (A-C): -39.7, +10.9, -49.7, -0.1
+  verdict: NON-DISCRIMINATING
+  chi2_C/N > 2 anywhere at z>=1.5? True
+
+-- per-galaxy table, z>=1.5, simple nu --
+  id                   z  gN/a0   f_C   f_A  Price Genzel
+  D3a_6397          1.50   5.41  0.14  0.24   0.38   0.22
+  EGS_13011166      1.53   9.18  0.09  0.17   0.34   0.19
+  GS4_43501         1.61   2.74  0.22  0.36   0.38   0.19
+  GS4_14152         1.61   5.66  0.13  0.25   0.30   0.08
+  K20_ID9           2.04   1.54  0.31  0.50   0.46   0.42
+  zC_405501         2.15   0.82  0.42  0.61   0.52   0.15
+  SSA22_MD41        2.17   0.54  0.49  0.67   0.71   0.90
+  BX389             2.18   1.37  0.33  0.53   0.59   0.40
+  zC_407302         2.18   3.80  0.18  0.35   0.61   0.14
+  GS3_24273         2.19   4.54  0.16  0.32   0.25   0.25
+  zC_406690         2.20   6.79  0.12  0.26   0.06   0.02
+  BX610             2.21  12.46  0.07  0.18   0.45   0.29
+  K20_ID7           2.23   0.64  0.46  0.65   0.76   0.57
+  K20_ID6           2.24   2.20  0.25  0.45   0.13   0.30
+  zC_400569         2.24  20.60  0.04  0.12   0.29   0.05
+  BX482             2.26   2.17  0.26  0.45   0.61   0.57
+  COS4_02672        2.31   1.09  0.37  0.57   0.43   0.25
+  D3a_15504         2.38   4.44  0.16  0.34   0.24   0.08
+  D3a_6004          2.39  16.41  0.05  0.15   0.12   0.05
+  GS4_37124         2.43   8.96  0.09  0.23   0.43   0.25
+  GS4_42930         2.45   5.40  0.14  0.31   0.43   0.11
+
+-- POST-HOC: what constant multiple k of a0 do the z>=1.5 f_DM prefer? (simple nu, 0.2 dex mass scatter) --
+  Price+21 MCMC: k=0.25:146.2  k=0.5:102.3  k=1:61.0  k=1.5:41.6  k=2:31.0  k=3:21.3  k=4:18.2  k=6:19.5
+  Genzel+20 LSQ: k=0.25:75.9  k=0.5:47.5  k=1:28.2  k=1.5:24.6  k=2:26.6  k=3:37.0  k=4:50.1  k=6:77.5
+  for reference E(z) over the z>=1.5 sample runs 2.32 - 3.68

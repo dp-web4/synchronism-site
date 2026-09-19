@@ -1,0 +1,18 @@
+
+=== mass scatter 0.1 dex ===
+simple Price MCMC: k_lo=3.34 [2.76,4.04] (N=20)  k_hi=4.55 [3.76,5.64] (N=21)  ratio=1.36  (A predicts 1.80, C predicts 1)   | all-z: best const k=3.95 chi2=36.5; C(k=1)=119.3; A=50.9
+simple Genzel LSQ: k_lo=1.75 [1.48,2.02] (N=19)  k_hi=1.38 [1.17,1.67] (N=21)  ratio=0.79  (A predicts 1.79, C predicts 1)   | all-z: best const k=1.56 chi2=59.1; C(k=1)=70.9; A=82.4
+RAR    Price MCMC: k_lo=3.59 [2.96,4.34] (N=20)  k_hi=5.01 [4.24,6.06] (N=21)  ratio=1.40  (A predicts 1.80, C predicts 1)   | all-z: best const k=4.34 chi2=37.7; C(k=1)=141.8; A=58.1
+RAR    Genzel LSQ: k_lo=1.97 [1.67,2.28] (N=19)  k_hi=1.71 [1.45,1.97] (N=21)  ratio=0.87  (A predicts 1.79, C predicts 1)   | all-z: best const k=1.84 chi2=59.5; C(k=1)=83.4; A=75.8
+
+=== mass scatter 0.2 dex ===
+simple Price MCMC: k_lo=3.11 [2.51,3.85] (N=20)  k_hi=4.55 [3.67,5.64] (N=21)  ratio=1.46  (A predicts 1.80, C predicts 1)   | all-z: best const k=3.76 chi2=30.5; C(k=1)=96.5; A=39.9
+simple Genzel LSQ: k_lo=1.63 [1.35,1.97] (N=19)  k_hi=1.48 [1.23,1.80] (N=21)  ratio=0.91  (A predicts 1.79, C predicts 1)   | all-z: best const k=1.56 chi2=45.8; C(k=1)=55.0; A=60.6
+RAR    Price MCMC: k_lo=3.42 [2.76,4.24] (N=20)  k_hi=4.89 [4.04,6.06] (N=21)  ratio=1.43  (A predicts 1.80, C predicts 1)   | all-z: best const k=4.14 chi2=31.2; C(k=1)=113.7; A=44.9
+RAR    Genzel LSQ: k_lo=1.84 [1.52,2.23] (N=19)  k_hi=1.84 [1.52,2.17] (N=21)  ratio=1.00  (A predicts 1.79, C predicts 1)   | all-z: best const k=1.84 chi2=45.5; C(k=1)=64.4; A=54.9
+
+=== mass scatter 0.3 dex ===
+simple Price MCMC: k_lo=2.96 [2.33,3.85] (N=20)  k_hi=4.45 [3.50,5.64] (N=21)  ratio=1.50  (A predicts 1.80, C predicts 1)   | all-z: best const k=3.67 chi2=24.6; C(k=1)=76.7; A=30.7
+simple Genzel LSQ: k_lo=1.56 [1.25,1.97] (N=19)  k_hi=1.56 [1.25,1.93] (N=21)  ratio=1.00  (A predicts 1.79, C predicts 1)   | all-z: best const k=1.56 chi2=34.6; C(k=1)=41.8; A=44.8
+RAR    Price MCMC: k_lo=3.26 [2.57,4.24] (N=20)  k_hi=4.89 [3.95,6.06] (N=21)  ratio=1.50  (A predicts 1.80, C predicts 1)   | all-z: best const k=4.04 chi2=25.0; C(k=1)=90.3; A=34.3
+RAR    Genzel LSQ: k_lo=1.80 [1.45,2.23] (N=19)  k_hi=1.88 [1.52,2.28] (N=21)  ratio=1.05  (A predicts 1.79, C predicts 1)   | all-z: best const k=1.84 chi2=34.1; C(k=1)=48.9; A=40.3

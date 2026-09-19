@@ -1,0 +1,51 @@
+Starting Synchronism Maintainer Session at Sat Sep 19 06:00:01 PDT 2026
+Both repos are pushed and in sync with origin: site `ddd02b6` (pre-registration `d9d7beb` committed first) and the research-repo back-annotation. `next build` passes with 93/93 pages, and the site lint shows 0 hits on the working tree. The Beginner Path rebuild, the enthusiast's top complaint, was not done; only the Step 2 formula card was fixed.
+
+## WAKE: did the feedback reveal a research gap?
+
+Yes. I wrote the proposal before fixing friction, and one item was runnable, so I ran it.
+
+**The globular-cluster control.** The researcher persona argued that the globular-cluster window is graded against catalogue masses that were themselves fitted to the same velocity profiles under Newton. The mechanism is real in form. The outer slope is independent of mass only under Newton, and the 09-07 run used the catalogue mass with no free scale. I pre-registered the control, reproduced the published numbers as an identity check first, then refit one mass scale per cluster under each law.
+
+- **Verdict:** the density-law ratio moved from 3.73× to 3.45× (−7%). Under the pre-fixed rule (ratio ≥ 3 means refuted), the critique is refuted at the mass-scale level. The inner bins, where every law is Newtonian, pin the mass.
+- **Predictions:** 3 of my 5 registered predictions held. I expected the fitted mass scale below 1 and got 1.28, and I expected the ratio under the second mass model (a Plummer profile) to move by less than 20%.
+- **The useful miss:** under the Plummer profile the Newtonian residual is +0.021 ± 0.027, consistent with zero. The ratio swings between 5× and 9× while the density-law residual barely moves (−0.199 → −0.196). So the "3.7–4.4× the Newtonian residual" wording on the site and in the ledger is the weak part, not the window. It should be quoted as residuals ± 0.027 (statistical only).
+- **Not addressed by this control:** the King-like profile's core radius is also taken from the N-body fits, and potential escapers, anisotropy and the striction reading are untouched.
+
+**The frame point in the proposal.** The flagship galaxy pages survived a hostile re-derivation; everything wrong today was on a short page nobody had rechecked since May. How much of the archive the audit has actually covered, claim by claim, has never been counted.
+
+## Site fixes
+
+- **/mond-unification:** the a₀ "derivation" box now carries out the calculation it described. The result is cH₀/2, not cH₀/2π, which I verified by hand.
+- **/born-rule:** the body now matches its badge. Gleason's theorem does not rest on the page's premises, the only example is a qubit where the theorem fails, and Step 2 assumes the conclusion.
+- **/compression-action:** rebadged from Speculative to Audited-Negative, matching /parameter-derivations for the same 1/φ exponent.
+- **/galaxy-rotation:** rebadged from Untested to Failed plus Reparametrization, the pair the Galaxy Plotter already carried.
+- **Modified-gravity landscape table on /honest-assessment:**
+  - The MOND row no longer says "no governing equation".
+  - Refracted Gravity is added as the first row.
+  - Superfluid dark matter is added.
+  - The Verlinde row now cites the 2021 KiDS-1000 result.
+- **Landing, /for-researchers, /first-encounter:**
+  - The landing's "no instrument has yet been pointed at" sentence is reconciled with the Lorentz-violation artifact.
+  - The γ = ½ double degeneracy now sits at the top of /for-researchers, framed as a deflation with the ledger's no-power caveat.
+  - Beginner Step 2 presents γ = 2/√N_corr as "the original idea, and what happened to it".
+- **Explorer's 09-18 P0s:** all three done (the unqualified kill-criterion sentence, the denominator for "4 criteria cannot fire" on /falsifiability, and TEST-15 restored to the registered 50+ events and 3σ). The new lint rule found two surfaces the explorer's list missed, so the kill-criterion sentence is fixed on six surfaces instead of four.
+- **Glossary:**
+  - Three new entries: Prospective, Retrodiction, and one mapping the outcome words (refuted, killed, Failed, withdrawn and the rest) onto each other.
+  - The existing Kill criterion entry is corrected; it called the criteria "a numerical threshold" when 11 of 26 contain no number.
+- **Lint:** 9 new rules in `maintainer/tools/site_lint.py`, positive-controlled with 14 hits on the old HEAD and 0 now.
+
+## Deferred
+
+- **Beginner Path rebuild** (three high-severity items; the visitor quit at step 3). It is a content rewrite of three pages and is next session's first item.
+- **Second-tier deferrals:**
+  - Separating current-state text from change-log text site-wide, and splitting /honest-assessment.
+  - Breadcrumb section links, deferred for a second day.
+  - The /a2acw page, where models and dates are still unnamed.
+- **Gated on dp:**
+  - TEST-26 still has no number in its kill criterion; the minimum content is listed in the proposal.
+  - The refutation recount.
+
+One process note: the Hestia law blocked a chained `rm`. I used a fresh `mktemp` directory instead of deleting anything, so no appeal was needed.
+
+I seeded three explorer topics: which demotions survive a worthless auditor, where the 607 K superconductor figure comes from, and a₀(z) against high-redshift Tully–Fisher data. The last carries a do-not-cite warning on the persona's from-memory numbers.

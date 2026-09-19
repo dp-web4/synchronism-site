@@ -1,0 +1,31 @@
+Starting Synchronism Explorer Session at Sat Sep 19 08:00:01 PDT 2026
+I took the a₀(z) topic because it is a physics test on existing data and my last two sessions were both meta-audits. The a₀(z) row stays non-discriminating on both tests I ran, but the work turned up two corrections for the site and a better statistic to register next. Count stays 6, with no badge or ledger change.
+
+The test was pre-registered before any measured offset was fetched (`7567ad1`). An addendum was committed before any script existed (`a10ad64`). All numbers were read from the arXiv LaTeX sources, not from summaries.
+
+**Tully–Fisher zero points (the registered test)**
+- **The topic's formula overstates the lever.** The −log E(z) offset (−0.22 / −0.53 dex) is the asymptotic deep-MOND number. Modelled at the radius the survey actually measures, the gap between evolving and constant a₀ is only −0.125 dex at z≈0.9 and −0.243 dex at z≈2.3.
+- **Survey scatter is larger than that gap.** Two surveys measuring the same stellar Tully–Fisher relation at z≈0.9 disagree by 0.25–0.35 dex.
+- **Constant a₀ does not predict zero offset.** For a compact disc, constant-a₀ MOND predicts −0.296 dex at z≈2.3, and Übler+2017's measured −0.27 sits on that. Read against zero, the same datum looks like 2.4σ evidence for evolution.
+- **This is prior art.** Milgrom 2017 §4 already says peak-velocity zero points cannot constrain a₀(z). The finding quotes the sentence.
+- **The visitor persona's from-memory claim was half right.** Übler's offsets do run opposite to H(z) scaling (−0.44 at z≈0.9, then −0.27 at z≈2.3). But that ordering is equally a mismatch for constant a₀, so it discriminates nothing, and quarantining the claim was the right call.
+
+**Dark-matter fraction at R_e (the addendum test)**
+- **The verdict depends on the fitting method.** I ran Milgrom's dark-matter-fraction route on the 41 discs already in the repo. The Price+2021 MCMC fits prefer evolving a₀ by Δχ² = −39.7; the Genzel+2020 least-squares fits of the same galaxies prefer constant a₀ by +10.9.
+- **My registered expectation was refuted.** I had declared in advance that I expected evolving a₀ to lose.
+- **The split is a level, not a trend (post-hoc, labelled as such).** The two methods want a₀ × 3.8 and a₀ × 1.6 at all redshifts. Evolving a₀ instead predicts a ratio of 1.80 between the high-z and low-z bins; observed is 1.46 (Price) and 0.91 (Genzel).
+- **That ratio is the statistic to register.** It cancels the level disagreement between methods. I seeded `a0-of-z-trend-ratio-on-rc100-level-free.md` to run it on RC100 (100 discs, one fitting method).
+
+**Against my own registration**
+- My systematic floor of 0.10 dex was about 3× too small.
+- My decision rule had a gap between its clauses, so the overall verdict held only by default. This is the same defect I counted in the site's registry yesterday.
+- The score was 7 of 10 predictions held and 2 refuted.
+
+**For the maintainer**
+- `/parameter-derivations:321` still opens the block in bold with "tested and disfavored (2026-08-01)" above a later verdict of non-discriminating.
+- `/parameter-derivations:325` says Milgrom 2017 "tests and disfavors an evolving a₀". That overstates the paper, which does not claim to exclude H(z) scaling, and it does not survive the 41-disc test. Replacement wording is in the finding.
+
+**For dp**
+- Three of my sessions on high-z galaxy handles have now ended "method-dominated". At z > 0.5 the spread within the kinematic literature is larger than the E(z) lever. It may be worth saying that once on the page rather than listing each failed handle.
+
+Everything is committed and pushed (`ccfe981`); `findings_lint` passes with 0 errors (R3 97/97). The finding is `explorer/findings/a0-of-z-highz-tfr-and-phantom-fdm-the-level-is-method-dominated-the-trend-is-the-test.md`. The original topic is archived, and the session log, SESSION_FOCUS block and one new memory are written.

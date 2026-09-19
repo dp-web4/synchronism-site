@@ -51,3 +51,36 @@ P6. At least one of the three cited papers already states the dilution argument 
 
 Count on the ledger is not touched by any outcome: branch (A) is "not counted" today and an explorer session does
 not change that.
+
+---
+# ADDENDUM A1 — filed after reading the three papers' text, before any script exists
+
+## What has now been seen (exposure)
+- Übler+2017 Table: bTFR Δb = −0.44 (z≈0.9), −0.27 (z≈2.3) vs Lelli+2016; sTFR −0.44, −0.42 vs Reyes+2011.
+  Stat errors 0.04 / 0.05. Medians: log M_bar 10.62 / 10.89, R_e 4.8 / 4.0 kpc, v_circ,max 239 / 260 km/s. Ω_m = 0.3.
+- Tiley+2019: **stellar** TFR only; KROSS − matched SAMI, disky: −0.09 ± 0.06 dex. Same z as Übler's −0.44 sTFR.
+  So two surveys at one redshift differ by 0.35 dex in the same quantity. **My 0.10 dex systematic floor was too
+  small, and I registered it before looking. It stays at 0.10 for scoring; the miss is recorded, not repaired.**
+- Milgrom 2017 (1703.06110) §4 says in words that V_max-based bTFR zero points "cannot be used to constrain
+  cosmological variations of the MOND constant", and constrains a₀(z) through the phantom-matter fraction at
+  R_1/2 of six Genzel+2017 discs instead ("4a₀ … uncomfortably in tension"). P6 is therefore already held.
+- The registered non-monotonicity clause is ambiguous about whether the 0.10 floor applies to a *difference* of two
+  subsamples sharing one method and one local reference. Both readings will be reported; the weaker one scores.
+
+## A1 test — Milgrom's route on 41 discs instead of 6 (NOT in the original registration; labelled as such)
+Data already in the repo since 2026-09-11 (`explorer/data/highz_fdm/`): Price+2021 Table 1 (M*, M_gas, B/T, R_e,disk)
+and two published f_DM(R_e) fits for the same 41 galaxies (Price+2021 MCMC; Genzel+2020 least squares).
+**Exposure: I handled these f_DM values on 09-11 and know they are low at z ≥ 1.5. I expect (A) to be disfavoured.
+This is a confirmation-shaped test and is declared as one.**
+
+Model: g_N(R_e) from a Freeman disc of mass (1−B/T)(M*+M_gas), R_d = R_e,disk/1.678, plus a point-mass bulge;
+f_pred = 1 − 1/ν(g_N/a₀(z)); (C) a₀ = 1.2e-10, (A) a₀·E(z), flat ΛCDM Ω_m = 0.3. Masses carry 0.2 dex (1σ,
+log-normal, Monte-Carlo'd into σ_pred). χ² = Σ (f_obs − f_pred)² / (σ_obs² + σ_pred²); for asymmetric errors the
+side facing the prediction is used.
+Rule, z ≥ 1.5 subsample (the 09-11 cut), strict inequalities, tie → weaker verdict:
+- **(A) DISFAVOURED** if χ²_A − χ²_C > 9 on **both** f_DM methods **and** under **both** ν (simple; McGaugh+2016 RAR).
+- **(C) DISFAVOURED** on the mirror. Otherwise **NON-DISCRIMINATING**.
+- Independently report χ²/N of each; if χ²_C/N > 2 the statement is "A worse than C", not "C fits".
+Predictions: PA1 (A) disfavoured by the rule. PA2 median f_pred at z ≥ 1.5: C in [0.10, 0.30], A in [0.30, 0.55].
+PA3 χ²_C/N > 2 on at least one method. PA4 the full-sample (all z) Δχ² has the same sign as the z ≥ 1.5 one.
+Known circularity, stated now: the published f_DM come from NFW+baryon fits with priors on the same masses.

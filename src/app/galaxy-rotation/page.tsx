@@ -14,7 +14,15 @@ export default function GalaxyRotation() {
       <Breadcrumbs currentPath="/galaxy-rotation" />
       <PathNav currentPath="/galaxy-rotation" />
       <h1>Galaxy Rotation Curves</h1>
-      <ValidationBadge status="untested" label="TEST-03 Never Run As Registered — see correction below" />
+      <ValidationBadge status="failed" label="Density-keyed equation does not fit galaxies (γ = 2: ΔBIC = +184)" />{' '}
+      <ValidationBadge status="reparametrization" label="Acceleration-keyed fit is exactly MOND's simple μ" />
+      <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
+        Sub-note: the registered ALFALFA test, TEST-03, was never run as registered (see correction below), so that one
+        test is <em>untested</em>. Until 2026-09-19 that was this page&apos;s only badge, which undersold the page&apos;s own
+        opening verdict; the two badges above are the ones the{' '}
+        <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Plotter</Link> already carried
+        for the same content.
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

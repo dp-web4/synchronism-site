@@ -20,7 +20,7 @@ interface ValidationBadgeProps {
 const statusConfig: Record<ValidationStatus, { className: string; defaultLabel: string; definition: string }> = {
   // MRH-relationship tags (preferred)
   'active-mrh':       { className: 'badge badge-active-mrh',       defaultLabel: 'Active-MRH',        definition: 'Currently in active research focus; being extended or revised' },
-  'parallel-paths':   { className: 'badge badge-parallel-paths',   defaultLabel: 'Parallel-Paths',    definition: 'In the framework’s parallel hypothesis space; not in active focus but not abandoned' },
+  'parallel-paths':   { className: 'badge badge-parallel-paths',   defaultLabel: 'Parallel-Paths',    definition: 'Kept in the hypothesis space: not in active focus, not abandoned' },
   'sidelined':        { className: 'badge badge-sidelined',        defaultLabel: 'Sidelined',         definition: 'Was in active focus, currently not pursued; reasons documented' },
   'superseded':       { className: 'badge badge-superseded',       defaultLabel: 'Superseded',        definition: 'Replaced by a later formulation' },
   'audited-negative': { className: 'badge badge-audited-negative', defaultLabel: 'Audited-Negative',  definition: 'Closed audit finding on a historical track; durable record' },

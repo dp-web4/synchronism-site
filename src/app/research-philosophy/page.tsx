@@ -35,8 +35,10 @@ export default function ResearchPhilosophy() {
           <div className="card">
             <h3>1. Falsifiability First</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Every prediction has an explicit kill criterion. If a prediction can&apos;t be falsified,
-              it&apos;s philosophy, not science. We label it accordingly.
+              The rule: every prediction gets an explicit kill criterion, and a prediction that can&apos;t be falsified
+              is philosophy, not science, and gets labelled so. The practice, measured 2026-09-18: of 26 registered
+              criteria, 2 are well-formed, 11 contain no number, and one says &ldquo;not falsifiable as stated&rdquo;.
+              The rule is the aspiration; <Link href="/falsifiability" style={{ color: 'var(--color-accent-blue)' }}>Falsifiability</Link> carries the count.
             </p>
           </div>
           <div className="card">

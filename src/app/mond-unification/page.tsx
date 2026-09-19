@@ -62,7 +62,7 @@ export default function MondUnification() {
           coincidence, not this framework specifically. Full four-anchor table on Parameter Derivations, row 4.
         </p>
 
-        <h2>The Derivation Chain</h2>
+        <h2>The Dimensional-Analysis Chain (not a derivation)</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', margin: '1.5rem 0' }}>
           <div className="card">
             <h3>Step 1: Critical Density of the Universe</h3>
@@ -75,12 +75,33 @@ export default function MondUnification() {
           </div>
 
           <div className="card">
-            <h3>Step 2: Coherence Transition</h3>
+            <h3>Step 2: The Literal Computation Gives cH&#x2080;/2, Not cH&#x2080;/2&#x03C0;</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              At the coherence transition (C &#x2248; 0.5), the gravitational acceleration from
-              &#x03C1;<sub>crit</sub> over a Hubble-scale volume defines the threshold where dynamics
-              change. The 2&#x03C0; factor arises from the spherical geometry of the causal horizon.
+              This step used to say the threshold is &ldquo;the gravitational acceleration from
+              &#x03C1;<sub>crit</sub> over a Hubble-scale volume&rdquo; and that &ldquo;the 2&#x03C0; factor arises from the
+              spherical geometry of the causal horizon.&rdquo; Do that calculation: a sphere of radius R = c/H&#x2080; filled
+              at &#x03C1;<sub>crit</sub> has M = (4&#x03C0;/3)&#x03C1;<sub>crit</sub>R&sup3;, so
             </p>
+            <EquationDisplay size="sm">
+              g = GM/R&sup2; = (4&#x03C0;/3) G &#x03C1;<sub>crit</sub> R = (4&#x03C0;/3) &middot; (3H&#x2080;&sup2;/8&#x03C0;) &middot; (c/H&#x2080;) = cH&#x2080;/2
+            </EquationDisplay>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              That is 3.27 &times; 10<sup>&minus;10</sup> m/s&sup2; &mdash; a factor &#x03C0; above the value in Step 3 and
+              2.7&times; Milgrom&apos;s. Spherical geometry supplies 4&#x03C0;/3 against 8&#x03C0;/3, which cancels to &frac12;;
+              no 2&#x03C0; appears anywhere in it. <strong>Step 2 does not produce Step 3.</strong> The 2&#x03C0; is a choice
+              that lands near 1.2 &times; 10<sup>&minus;10</sup>; no argument on this site or in the archive derives it. What is
+              left is the dimensional statement a&#x2080; ~ cH&#x2080; &times; (a number of order 0.1&ndash;1), which is
+              Milgrom&apos;s 1983 coincidence (he wrote cH&#x2080;/6) and is badged accordingly on{' '}
+              <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>.
+              The open question this leaves: is there <em>any</em> construction in the framework that fixes the prefactor
+              before looking at Milgrom&apos;s number? None is known.
+            </p>
+            <details style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+              <summary style={{ cursor: 'pointer' }}>Revision notes</summary>
+              2026-09-19: a graduate-student reader carried out the computation the old Step 2 described and got
+              cH&#x2080;/2. Checked by hand and confirmed. The three cards had been formatted as a derivation since the page
+              was written, while the page badge and Parameter Derivations already said &ldquo;dimensional analysis&rdquo;.
+            </details>
           </div>
 
           <div className="card">
@@ -114,7 +135,7 @@ export default function MondUnification() {
             <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               <li>a&#x2080; is an <strong>emergent scale</strong></li>
               <li>Value from dimensional analysis of H&#x2080; and c (shared with other frameworks)</li>
-              <li>Uses the standard McGaugh et al. (2016) RAR interpolating function</li>
+              <li>Two interpolating functions have been used, in different fits: early RAR comparisons used the standard McGaugh et al. (2016) &#x03BD;; the framework&apos;s own tanh-log compander, when its &#x03B3; is left free, lands on &#x03B3; &#x2248; &frac12;, which is <em>Milgrom&apos;s simple &#x03BC;</em> exactly (C = x/(x+2)). These are different functions (&#x0394;BIC between them is quoted on <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>); <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> says which fit used which</li>
               <li>Predicts EFE = 0 structurally <em>for the strict C(ρ<sub>local</sub>) reading</em> &mdash; the load-bearing premise is that C is independent of &Phi;, not locality per se (archive 2026-08-24: a fully non-local, &Phi;-independent C still gives EFE = 0 to 10<sup>&minus;13</sup>; a &nabla;&Phi;-keyed C gives 0.046). At the fitted &#x03B3; = &frac12; the compander that actually reproduces rotation curves is keyed on acceleration and its EFE is MOND&apos;s identically &mdash; so the EFE = 0 prediction has no live carrier that fits galaxies. See correction below and the reconciled caveat on <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link></li>
             </ul>
           </div>

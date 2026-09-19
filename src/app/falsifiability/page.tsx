@@ -118,7 +118,7 @@ export default function Falsifiability() {
           color: 'var(--color-text-secondary)',
           fontStyle: 'italic',
         }}>
-          Every prediction has a kill criterion. If you can&apos;t state what would
+          Every prediction should carry a kill criterion. If you can&apos;t state what would
           falsify your claim, it&apos;s not science.
         </blockquote>
         <p>
@@ -179,10 +179,21 @@ export default function Falsifiability() {
               Those are different statements and the site conflated them until 2026-07-27.
             </li>
             <li>
-              <strong>4 criteria cannot fire</strong> on any existing or scheduled instrument
+              <strong>4 of the 8 criteria examined on this page cannot fire</strong> on any existing or scheduled instrument
               (wide binaries at 80× below Gaia reach; GW timing at 10⁻¹⁶ against a 10⁻¹⁵ best bound;
               BAO nulls at 10⁻⁵; cluster oscillation nulls to 2000 Mpc), and one more is
-              unrunnable because no protocol maps a measurement onto C.
+              unrunnable because no protocol maps a measurement onto C. That 4 is a count over this page&apos;s eight
+              hand-picked examples, not over the registry; until 2026-09-19 it was printed here without its denominator.
+              Over all 26 registered rows the instrument-unreachable count has not been made. A second, larger class has:
+              criteria that cannot fire <em>by construction</em> (no number, no statistic, or a quantity the site has
+              already ruled unmeasurable) &mdash; 11 to 15 of 26, depending on coding.
+            </li>
+            <li>
+              <strong>Specificity: 2 of 26 criteria are well-formed</strong> (statistic + threshold + a significance the
+              data can deliver). 3 of 26 state any significance; 11 of 26 contain no numeral. The no-numeral rate
+              replicates on the archive&apos;s separate 24-row registry (10 of 24), so it is a drafting habit, not four
+              bad pages. Pre-registration has a cheap half (timing, the bullet below) and an expensive half
+              (specificity, this one). Only timing had been counted before 2026-09-18.
             </li>
             <li>
               <strong>0 of 24 tests have been completed prospectively</strong> — i.e. with the kill

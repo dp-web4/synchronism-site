@@ -13,7 +13,7 @@ export default function CompressionAction() {
       <Breadcrumbs currentPath="/compression-action" />
       <PathNav currentPath="/compression-action" />
       <h1>Compression Action</h1>
-      <ValidationBadge status="speculative" label="Theoretical Extension" />
+      <ValidationBadge status="audited-negative" label="1/&#x03C6; Exponent Fitted-Then-Named; Equivalence Holds for Any Exponent" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <EquationDisplay size="lg" label="The ξ formulation">
@@ -21,9 +21,9 @@ export default function CompressionAction() {
         </EquationDisplay>
 
         <p>
-          The compression action &#x03BE; is an alternative parameterization of the coherence function
-          that makes the physical structure more transparent. Instead of density and coupling, it
-          unifies three aspects of physics:
+          The compression action &#x03BE; was proposed as an alternative parameterization of the coherence
+          function. The archive presents it as unifying three aspects of physics. No equation on this page or in
+          the archive connects the three labels below to the formula above; they are a reading, not a result:
         </p>
 
         <div className="grid-3" style={{ margin: '1.5rem 0' }}>
@@ -62,16 +62,35 @@ export default function CompressionAction() {
 
         <h2>Relationship to Standard Form</h2>
         <p>
-          The two formulations are equivalent. The standard C(&#x03C1;) is more practical for
-          computation (plug in density, get coherence). The &#x03BE; formulation is more revealing
-          about the theoretical structure (three aspects of physics unified into one action).
+          This section used to say &ldquo;the two formulations are equivalent.&rdquo; That cannot be checked as
+          stated, because <strong>&#x03BE; is never defined as a function of &#x03C1;</strong>. Forcing the match
+          shows what the claim amounts to. C(&#x03C1;) = tanh(&#x03B3; ln(1+x)) is exactly w/(w+2) with
+          w = (1+x)<sup>2&#x03B3;</sup> &minus; 1, and &#x03BE;<sup>1/&#x03C6;</sup>/(1+&#x03BE;<sup>1/&#x03C6;</sup>) equals
+          that if and only if
+        </p>
+        <EquationDisplay size="sm">
+          &#x03BE;<sup>1/&#x03C6;</sup> = [(1+x)<sup>2&#x03B3;</sup> &minus; 1] / 2
+        </EquationDisplay>
+        <p>
+          So the equivalence holds <em>by defining &#x03BE; to make it hold</em>, and it holds for every exponent:
+          replace 1/&#x03C6; with any p and &#x03BE; = (w/2)<sup>1/p</sup> does the same job. An equivalence that
+          survives any exponent gives the exponent no content. Two further mismatches: this form carries a floor
+          &#x03BE;&#x2080;, so it can only match the <em>floored</em> variant of C(&#x03C1;), not the unfloored one the{' '}
+          <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Plotter</Link> draws;
+          and it is called an &ldquo;action&rdquo; with no functional, Lagrangian or variation behind the name.
+          The same 1/&#x03C6; exponent is badged Audited-Negative (Fitted-Then-Named; 0 of 8 comparator scalings
+          have &#x03C6; exponents) on{' '}
+          <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>;
+          until 2026-09-19 this page carried &ldquo;Speculative&rdquo; for the same object.
         </p>
 
         <h2>Status</h2>
         <p>
-          This remains theoretical. The standard C(&#x03C1;) form is what was tested against
-          galaxies and chemistry. The &#x03BE; form provides a different lens on the same mathematics
-          but has not produced independently testable predictions beyond what C(&#x03C1;) already provides.
+          The standard C(&#x03C1;) form is what was tested against galaxies and chemistry. The &#x03BE; form has
+          produced no testable prediction beyond what C(&#x03C1;) provides, and with &#x03BE;(&#x03C1;) undefined it
+          cannot. <strong>What would change this:</strong> an independent definition of &#x03BE; (from the
+          substrate, not from C) under which a specific exponent is forced. Then 1/&#x03C6; versus any other value
+          becomes a measurable question.
         </p>
 
         <div style={{ marginTop: '2rem' }}>

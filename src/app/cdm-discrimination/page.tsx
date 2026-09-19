@@ -90,7 +90,7 @@ export default function CdmDiscrimination() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           This page (and, until 2026-07-04, <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest
           Assessment</Link> and <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy
-          Rotation</Link>) kept quoting the retracted &minus;6.2&sigma; framing years after the source
+          Rotation</Link>) kept quoting the retracted &minus;6.2&sigma; framing for months after the source
           program itself reversed it &mdash; a compilation surface citing a root claim the archive had
           already retracted. <Link href="/mond-comparator" style={{ color: 'var(--color-accent-blue)' }}>MOND
           Comparator</Link> had the correct framing (&ldquo;Matches, z&nbsp;=&nbsp;+0.5&rdquo;) the whole time;

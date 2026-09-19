@@ -171,8 +171,10 @@ export default function TestCatalog() {
         <p>
           Synchronism has defined 24 specific, falsifiable experiments (TEST-01 through TEST-24; TEST-25 and TEST-26
           below were added after the registry closed and are listed but not in this count) organized into four tiers
-          by cost and feasibility. Every experiment has an explicit kill criterion &mdash; a result
-          that would falsify the prediction. This page covers <em>proposed</em> tests; for results
+          by cost and feasibility. Every experiment has a kill-criterion <em>field</em>; most of those fields are not yet
+          specific enough to fire. Counted 2026-09-18 across all 26 rows: 2 are well-formed (a statistic, a threshold and a
+          significance the data can deliver), 3 state a significance at all, 11 contain no number, and TEST-07&apos;s reads
+          &ldquo;not falsifiable as stated&rdquo;. See <Link href="/falsifiability" style={{ color: 'var(--color-accent-blue)' }}>Falsifiability</Link> for the count. This page covers <em>proposed</em> tests; for results
           on what has actually been analyzed, see below.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>

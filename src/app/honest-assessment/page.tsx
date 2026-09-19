@@ -88,7 +88,7 @@ export default function HonestAssessment() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
           <strong>Active-MRH</strong><span>Currently in active research focus; being extended or revised</span>
-          <strong>Parallel-Paths</strong><span>In the framework&apos;s parallel hypothesis space; not currently in active focus but not abandoned</span>
+          <strong>Parallel-Paths</strong><span>Kept in the hypothesis space: not in active focus, not abandoned</span>
           <strong>Sidelined</strong><span>Was in active focus, currently not pursued; reasons documented; reactivation condition specified</span>
           <strong>Superseded</strong><span>Replaced by a later formulation; pointer to successor</span>
           <strong>Audited-Negative</strong><span>Closed audit finding on a historical track; durable record; does not move</span>
@@ -933,6 +933,16 @@ export default function HonestAssessment() {
               unbound but still inside the tidal radius, and they are the standard Newtonian explanation for flattened outer
               dispersion profiles (Küpper et al. 2010; Claydon, Gieles &amp; Zocchi 2017). They mimic exactly the outer-slope signal
               this statistic reads.
+              <br />&bull; <strong>Newton-conditioning through the catalogue mass (control executed 2026-09-19).</strong> The
+              catalogue masses are Newtonian N-body fits to these same dispersion profiles, and the outer slope is
+              mass-independent under Newton only, so the alternatives were graded on a Newton-tuned mass. Refitting one mass
+              scale per cluster under each law (pre-registered, site <code>d9d7beb</code>; identity control passed) moves the
+              density-law ratio 3.73&times; &rarr; 3.45&times; and leaves the ordering unchanged: the inner bins, where every law is
+              Newtonian, pin the mass. The objection is refuted at this level. The same run shows the ratio statistic itself is
+              fragile: under the Plummer model the Newtonian residual is +0.021&nbsp;&plusmn;&nbsp;0.027, consistent with zero, and
+              ratios to it swing between 5&times; and 9&times; while the density-law residual stays at &minus;0.196 to &minus;0.199. Read the
+              residuals (each &plusmn;0.027, statistical only), not the ratios. Details on{' '}
+              <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>, artifact 5 (vi).
               <br />&bull; <strong>Not a prospective test.</strong> The registration (Session 611, 2026-02-17) fixed γ only. The knee
               (measured 2026-08-27), the floor, the dynamics (L2) and the smoothing length were all chosen afterwards, and those
               choices move the verdict from &ldquo;passes&rdquo; to &ldquo;excluded&rdquo;. That is why the scoreboard still reads 0 prospective tests.
@@ -1660,13 +1670,15 @@ export default function HonestAssessment() {
       <section className="section content-width">
         <h2 id="landscape">Where This Sits in the Modified-Gravity Landscape</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
-          Several frameworks occupy the same phenomenological territory as Synchronism in the low-acceleration galaxy regime. All share the observation that a₀ ≈ cH₀/(2π) emerges from cosmological constants.
-          <em> Rival lineup last refreshed: 2026-07-23 — this table is date-stamped the same way refutations are, because a &ldquo;0 discriminating tests&rdquo; verdict is only as current as the rivals it is scored against.</em>
+          Several frameworks occupy the same phenomenological territory as Synchronism in the low-acceleration galaxy regime. Several of them (MOND, Verlinde, this framework) note the coincidence a₀ ~ cH₀; MOG and Refracted Gravity are not built on it.
+          <em> Rival lineup last refreshed: 2026-09-19 (previous: 2026-07-23) — this table is date-stamped the same way refutations are, because a &ldquo;0 discriminating tests&rdquo; verdict is only as current as the rivals it is scored against.</em>
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem', fontSize: '0.88rem' }}>
           {[
-            { name: 'MOND (Milgrom 1983)', desc: 'Empirical μ-function. No dynamics, no governing equation. Synchronism\'s compander collapses onto MOND at free-γ (SPARC RAR, ΔBIC=+7 vs ΔBIC=+184 for γ=2).' },
-            { name: 'Verlinde Emergent Gravity (2016)', desc: 'Derives MOND-like rotation curves from entropy gradients in the Hubble volume. Tested by Brouwer et al. (2017) KiDS lensing — consistent at ~1σ. Key question: does C(ρ) reduce to Verlinde in the low-acceleration limit? Not yet shown.' },
+            { name: 'Refracted Gravity (Matsakos & Diaferio 2016)', desc: 'The nearest neighbour, listed first for that reason. Its field equation ∇·[ε(ρ)∇Φ] = 4πGρ, with a density-keyed permittivity, IS the L2 equation this site\'s galaxy tests use — published a decade before this sector rediscovered it. Calibrated on DiskMass discs (Cesare et al. 2020) and on ellipticals (Cesare et al. 2022); a covariant scalar-tensor completion exists (Sanna, Matsakos & Diaferio 2023), which is exactly what this framework\'s "postulated, not derived" field equation lacks. RG\'s elliptical-calibrated knee (0.0083 M☉/pc³) passes the globular-cluster slope test that this framework\'s knees fail. It shares the smoothing-length problem: Matsakos & Diaferio themselves say a density-keyed ε needs a smoothing scale D and postpone it. (Row added 2026-09-19; the table had omitted the one theory the site elsewhere says it rediscovered.)' },
+            { name: 'MOND (Milgrom 1983)', desc: 'Began as an empirical μ-function; has had governing equations since AQUAL (Bekenstein & Milgrom 1984, a Lagrangian modified-Poisson theory) and QUMOND (Milgrom 2010). Synchronism\'s compander collapses onto MOND\'s simple μ at free-γ (SPARC RAR, ΔBIC=+7 vs ΔBIC=+184 for γ=2). (Corrected 2026-09-19: this row said "No dynamics, no governing equation" — false for forty years, and contradicted by the correction paragraph directly beneath this table, which cites AQUAL and QUMOND.)' },
+            { name: 'Verlinde Emergent Gravity (2016)', desc: 'Derives MOND-like rotation curves from entropy gradients in the Hubble volume. First lensing test: Brouwer et al. (2017), KiDS+GAMA — consistent. Superseded by Brouwer et al. (2021, KiDS-1000 lensing RAR, A&A 650, A113), which extends the RAR to much lower accelerations and finds a dependence on galaxy type that neither EG nor MOND predicts as formulated. Key question: does C(ρ) reduce to Verlinde in the low-acceleration limit? Not yet shown.' },
+            { name: 'Superfluid dark matter (Berezhiani & Khoury 2015)', desc: 'The other major program that reproduces MOND phenomenology: dark matter that condenses into a superfluid inside galaxies, whose phonons mediate a MOND-like force, while behaving as ordinary CDM on cluster and cosmological scales. A hybrid, not a modified-gravity theory — and so an existence proof that "MOND in galaxies, ΛCDM in cosmology" (which is where this framework\'s fitted γ = ½ lands in both sectors) can come from one physical mechanism. No comparison with the compander exists. (Added 2026-09-19.)' },
             { name: 'TeVeS (Bekenstein 2004)', desc: 'Lorentz-covariant scalar-vector-tensor extension of MOND. Has galaxy-rotation and lensing predictions. Failed: requires dark matter for the Bullet Cluster; GW170817 constrains the tensor sector. No longer the benchmark relativistic completion — see AeST below.' },
             { name: 'AeST (Skordis & Złośnik 2021)', desc: 'Aether-scalar-tensor theory — the current benchmark relativistic MOND completion. Reproduces galaxy phenomenology, passes CMB power-spectrum tests where TeVeS failed, and GW speed equals c. Keyed on |∇Φ| — i.e. NON-local in density — which is exactly the escape class the locality no-go on this page identifies: the surviving relativistic MOND theory avoids the local-density trap that kills C(ρ). Caveat: post-2021 stability concerns are under active discussion; cite as "AeST-class," not AeST-final. (Added 2026-07-23 — an expert review correctly flagged that this table was frozen at TeVeS-2006 while the verdict "0 discriminating tests vs MOND+ΛCDM" was being scored against it.)' },
             { name: 'MOG / STVG (Moffat 2006)', desc: 'Running gravitational coupling with massive vector field. Makes post-Newtonian predictions beyond rotation curves. No direct comparison with Synchronism compander exists.' },

@@ -1,7 +1,42 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-18 (explorer)*
+*Last updated: 2026-09-19 (maintainer)*
+
+---
+
+## 🟢 NEW (maintainer 2026-09-19) — **GC-window Newton-conditioning control executed: the critique is REFUTED at the
+mass-scale level (ratio 3.73× → 3.45×), and the ratio statistic itself is the weak part (Plummer's Newtonian residual
+is +0.021 ± 0.027, so ratios to it swing 5×–9× while the numerator sits still). Read residuals ± 0.027, not "3.7–4.4×".
+Count stays 6. Bucket 0 = 0.**
+
+Log: `maintainer/logs/2026-09-19.md`. PREREG `d9d7beb` (before the script), 3 of 5 predictions held.
+Script: `maintainer/scripts/gc_window_newton_conditioning_control.py` (+ `_output.txt`).
+
+- **Fixed (pre-audit holdouts):** /mond-unification box (literal computation = cH₀/2, not cH₀/2π); /born-rule (Gleason
+  misuse, qubit, circular Step 2); /compression-action → Audited-Negative; /galaxy-rotation → Failed +
+  Reparametrization; landscape table (MOND row, Refracted Gravity added first, superfluid DM, Verlinde → KiDS-1000).
+- **Explorer 09-18 P0s: done**, on 6 surfaces not 4 — the new lint rule found `navigation.ts:500` and the
+  /falsifiability blockquote. `site_lint.py` now 75 rules.
+- **Glossary:** Prospective, Retrodiction, Outcome words; stale Kill criterion entry corrected.
+
+### → Explorer (new topics)
+- `which-demotions-survive-a-worthless-auditor.md` · `eta-superconductivity-607K-provenance-and-is-eta-really-AG.md` ·
+  `a0-of-z-against-high-z-btfr-zero-points.md` (**do-not-cite** the persona's from-memory result)
+- Open from the control: the King-like model's `r_c` is also N-body-derived; only the mass-scale route is closed.
+
+### → Next maintainer session, in order
+1. **Beginner Path steps 1–3: one job per step** (enthusiast high ×3; they quit at step 3). Suspect before autopsy.
+2. Current-state vs change-log separation on /tier-1-existing, /galaxy-plotter, /for-researchers; split /honest-assessment.
+3. Breadcrumb section crumbs (second day deferred). 4. /a2acw models + dates; J = 0 into HA's A2ACW section.
+- **Still open from explorer 09-18 (P1/P2):** reachability tags on Tier 2/4; TEST-05/TEST-11 numbers into the kill
+  field; TEST-24 scope; TEST-04a second limb / TEST-01 power / TEST-21 amplitude.
+
+### → dp (gated)
+- **TEST-26 has no numeral in its kill criterion** — independent reader, same conclusion as the explorer's 09-18
+  count. Minimum content listed in the 09-19 proposal (SN compilation named, Δχ² threshold, non-CPL reconstruction,
+  DR3 error model, locality horn).
+- Refutation recount / bare "6" in footers (unchanged). Audit **coverage by claim** has no denominator (proposal §2).
 
 ---
 

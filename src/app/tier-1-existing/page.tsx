@@ -245,7 +245,7 @@ export default function Tier1Existing() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
           <strong>Tier 1</strong> = zero-cost reanalysis of existing public datasets — no new hardware, no new
           observations, no telescope time required. The testing hierarchy (Tiers 1–4) is defined on the{' '}
-          <Link href="/test-roadmap" style={{ color: 'var(--color-accent-blue)' }}>Test Roadmap</Link>.
+          <Link href="/test-catalog" style={{ color: 'var(--color-accent-blue)' }}>Test Roadmap</Link>.
         </p>
         <p>
           These <strong>11</strong> numbered tests (TEST-01 through TEST-10, plus TEST-25) use publicly

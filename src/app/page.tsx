@@ -302,7 +302,7 @@ export default function Home() {
               flexWrap: 'wrap',
               alignItems: 'center',
             }}>
-              <span>Prospective predictions confirmed <em style={{ color: 'var(--color-text-muted)' }}>(predictions fixed before the data existed, then borne out)</em>: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong></span>
+              <span>Prospective predictions confirmed <em style={{ color: 'var(--color-text-muted)' }}>(predictions fixed before the data existed, then borne out)</em>: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong> <em style={{ color: 'var(--color-text-muted)' }}>&mdash; and 0 prospective tests completed at all. That does not contradict the 6 below: all six refutations ran on data that already existed, which can sink an idea but cannot confirm one (<Link href="/glossary#Prospective" style={{ color: 'var(--color-accent-blue)' }}>prospective</Link> vs <Link href="/glossary#Retrodiction" style={{ color: 'var(--color-accent-blue)' }}>retrodiction</Link>).</em></span>
               <div style={{ flexBasis: '100%' }}>
                 Refutations executed <em style={{ color: 'var(--color-text-muted)' }}>(tests that could have killed the idea &mdash; and the idea failed them)</em>: <strong style={{ color: '#ef4444' }}>6</strong>{' '}
                 &mdash; <strong>in plain words: we ran six tests that could have shown it wrong, and it lost all six.</strong>{' '}
@@ -379,8 +379,11 @@ export default function Home() {
             <p id="why-keep-reading" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.6rem 0 0', scrollMarginTop: '5rem' }}>
               <strong>So is the idea alive or dead?</strong> As tested physics: dead — every decisive
               test it ran, it lost, and this site says so. As a public record of how you find that out
-              honestly — and as an untested ontology whose few genuinely novel bets no instrument has
-              yet been pointed at — it is alive and still being worked.{' '}
+              honestly — and as an ontology that is mostly untested — it is alive and still being worked. Mostly,
+              not wholly: its one sharp commitment, a single absolute clock, is something instruments <em>have</em>
+              looked at for twenty years (Lorentz-violation searches), and the framework owes an answer to a known
+              naturalness problem there (<Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>,
+              artifact 2). Its other novel bets are untested, several because they are not yet sharp enough to test.{' '}
               <strong>Why keep reading a theory with zero confirmed predictions?</strong>{' '}
               Because this is what testing an idea in public looks like &mdash; you get to watch a
               theory be taken apart honestly: which claims collapsed into known physics, which died

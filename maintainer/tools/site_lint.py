@@ -23,6 +23,25 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-09-19 (maintainer): pre-audit holdouts one click off the main path
+    (r"2&#x03C0; factor arises from the spherical geometry", "2026-09-19",
+     "the literal Hubble-sphere computation gives cH0/2, not cH0/2pi; no argument derives the 2pi"),
+    (r"makes the Born rule necessary rather than", "2026-09-19",
+     "Gleason's premises are non-contextuality + additivity, not coherence conservation; the page is a reparametrization"),
+    (r"Quantum speedup = coherent parallelism", "2026-09-19",
+     "the resource is interference, not parallel evaluation"),
+    (r"The two formulations are equivalent\.", "2026-09-19",
+     "xi(rho) is undefined; the forced equivalence holds for any exponent, so 1/phi carries no content"),
+    (r"No dynamics, no governing equation", "2026-09-19",
+     "false of MOND since AQUAL (1984) / QUMOND (2010)"),
+    (r"Every (experiment|prediction) has an? (explicit )?kill criterion(?! field)", "2026-09-19",
+     "measured 2026-09-18: 2 of 26 well-formed, 11 with no numeral, TEST-07 'not falsifiable as stated'"),
+    (r"<strong>4 criteria cannot fire</strong>", "2026-09-19",
+     "a count over 8 hand-picked examples; must carry its denominator"),
+    (r"after 20\+ multi-messenger events", "2026-09-19",
+     "the archive registration says 50+ events and states a 3-sigma sample size"),
+    (r"no instrument has\s+yet been pointed at", "2026-09-19",
+     "LIV searches have looked at absolute time for 20 years; artifact 2 is Audited-Negative"),
     # --- retired 2026-09-18 (maintainer): the TEST-09 ceiling sweep was executed; two C's disambiguated
     (r"registered sweep has not yet been executed", "2026-09-18",
      "the TEST-09 half was executed 2026-09-18 (which_C_carries_the_floor.py); the kill is convention-dependent"),

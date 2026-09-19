@@ -28,9 +28,10 @@ export default function BornRule() {
           P(outcome) = |&#x03B1;|&sup2;
         </EquationDisplay>
 
-        <h2>The Derivation Argument</h2>
+        <h2>The Argument as the Archive States It</h2>
         <p>
-          Developed across Sessions #266-270, the argument proceeds in three steps:
+          Developed across Sessions #266-270, the argument proceeds in three steps. They are reproduced as
+          written; what is wrong with them follows directly below, and the page badge is the verdict.
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.5rem' }}>
@@ -64,44 +65,78 @@ export default function BornRule() {
           </div>
         </div>
 
+        <h2>Where the Three Steps Fail</h2>
+        <div className="card" style={{ borderLeft: '3px solid #f87171', marginBottom: '1.5rem' }}>
+          <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.92rem', paddingLeft: '1.2rem' }}>
+            <li>
+              <strong>Gleason does all the work; coherence conservation does none.</strong> Gleason&apos;s theorem
+              (1957) takes a non-contextual, countably additive probability measure on the projections of a Hilbert
+              space and returns tr(&#x03C1;P). Its hypotheses are non-contextuality and additivity. It needs no
+              conservation law and no unitarity, so Step 3 cites a theorem whose premises are not Steps 1 and 2.
+            </li>
+            <li>
+              <strong>Gleason fails in dimension 2, and the only example here is a qubit.</strong> The theorem
+              requires dim &#x2265; 3. &#x03B1;|0&#x27E9; + &#x03B2;|1&#x27E9; is exactly the case it does not cover.
+            </li>
+            <li>
+              <strong>Step 2 assumes the conclusion.</strong> &ldquo;Probability is proportional to the coherence in
+              the branch&rdquo;, with branch coherence identified as |&#x03B1;|&sup2;, <em>is</em> the Born rule.
+            </li>
+            <li>
+              <strong>The conserved quantity is normalization.</strong> &#x03A3;|&#x03B1;<sub>i</sub>|&sup2; = 1 is
+              preserved by unitary evolution in standard quantum mechanics. Calling it &ldquo;coherence
+              conservation&rdquo; relabels it. It is also <em>not</em> the C(&#x03C1;) of the rest of this site, which
+              is an explicit function of density with no conservation law attached; no map between the two has been
+              written down.
+            </li>
+          </ul>
+        </div>
+
         <h2>What This Adds</h2>
         <p>
-          The Born rule has been derived before &mdash; by Gleason (1957), by Zurek (2005, envariance),
-          by Carroll and Sebens (2014, self-locating uncertainty). Synchronism&apos;s contribution is
-          not the derivation itself but the <em>physical interpretation</em>: coherence conservation
-          provides the missing physical principle that makes the Born rule necessary rather than
-          postulated.
+          Vocabulary, not a premise. The Born rule has real derivation programs &mdash; Gleason (1957), Zurek
+          (2005, envariance), Carroll and Sebens (2014, self-locating uncertainty) &mdash; each with stated
+          assumptions and a literature of objections. The Sessions #266-270 argument restates the rule in
+          coherence language and borrows Gleason for the mathematics. It does not make the rule &ldquo;necessary
+          rather than postulated&rdquo;, as this section used to say: the postulate has been moved into Step 2.
         </p>
-
-        <div className="card card-highlight" style={{ margin: '1.5rem 0' }}>
-          <p style={{ fontSize: '1.05rem', color: 'var(--color-text-primary)' }}>
-            <strong>If coherence is conserved, Born&apos;s rule follows.</strong>
-          </p>
-          <p style={{ color: 'var(--color-text-secondary)' }}>
-            This is the same logical structure as &ldquo;if energy is conserved, Noether&apos;s
-            theorem gives conservation laws.&rdquo; The postulate becomes a consequence.
-          </p>
-        </div>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>The open question that would make this more than a relabel:</strong> does the single-observer
+          picture (measurement as phase-lock between two patterns) supply a reason for <em>non-contextuality</em>?
+          That is Gleason&apos;s actual premise, and it is the one the framework&apos;s own CRT scanning model
+          runs into from the other side: a non-contextual value-assignment is what Kochen&ndash;Specker excludes
+          in dim &#x2265; 3 (0 of 512 assignments satisfy the Peres&ndash;Mermin square in the archive&apos;s own
+          construction). An argument for non-contextual <em>probabilities</em> without non-contextual
+          <em>values</em> would be a contribution. None exists here yet.
+        </p>
+        <details style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginBottom: '1.5rem' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision notes</summary>
+          2026-09-19: until today this section claimed coherence conservation &ldquo;provides the missing physical
+          principle that makes the Born rule necessary rather than postulated&rdquo; and compared it to Noether&apos;s
+          theorem (stated backwards: Noether runs from symmetry to conservation law). Two paragraphs later the same
+          page called the argument a reparametrization, and the badge agreed with the second. A graduate-student
+          reader listed the four failures above; each was checked against the theorem&apos;s statement. Also removed:
+          &ldquo;quantum speedup = coherent parallelism&rdquo;.
+        </details>
 
         <h2>Connection to Quantum Computing</h2>
         <p>
           The Born rule is what makes quantum computing work. When a quantum algorithm manipulates
           amplitudes to concentrate |&#x03B1;|&sup2; on the correct answer, it is (in Synchronism&apos;s
           framing) redistributing coherence so that the desired branch carries maximum physical weight.
-          Quantum speedup = coherent parallelism, and the Born rule tells you how to extract the answer.
+          The resource is <em>interference</em> between amplitudes, not parallel evaluation of branches; the
+          relabel adds no prediction about which algorithms speed up.
         </p>
 
         <h2>Honest Assessment</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          This derivation relies on &ldquo;coherence conservation&rdquo; as an axiom. Whether this
-          is truly more fundamental than the Born rule itself, or just a reformulation at the same
-          level, is debatable &mdash; and the argument does not predict any deviation from |&alpha;|&sup2;
+          This argument relies on &ldquo;coherence conservation&rdquo; as an axiom, which on inspection is
+          state normalization (see above), and it does not predict any deviation from |&alpha;|&sup2;
           in any regime. A &ldquo;derivation&rdquo; that produces no testable difference from the
           thing it derives is, by this framework&apos;s own taxonomy, a{' '}
-          <strong>reparametrization</strong>: the same physics in different language. This is no
-          worse than Zurek&apos;s envariance or Carroll-Sebens self-locating uncertainty (both also
-          criticized for circularity) &mdash; but no better. The Sessions #266-270 treatment is the
-          most rigorous version available. The argument has not been subjected to peer review.
+          <strong>reparametrization</strong>: the same physics in different language. Zurek&apos;s envariance and Carroll&ndash;Sebens self-locating uncertainty are also
+          criticized for circularity, but each states assumptions weaker than the rule it derives; this argument
+          does not. The Sessions #266-270 treatment is the most developed version in the archive. The argument has not been subjected to peer review.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

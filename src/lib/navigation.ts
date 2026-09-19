@@ -497,7 +497,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Falsifiability',
       href: '/falsifiability',
-      desc: 'Every prediction has a kill criterion',
+      desc: 'Kill criteria, and how many are specific enough to fire (2 of 26)',
       keywords: ['falsifiable', 'kill', 'criterion', 'Popper', 'testable', 'science'],
       related: ['/test-catalog', '/research-philosophy'],
     },

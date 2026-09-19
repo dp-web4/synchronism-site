@@ -1,0 +1,56 @@
+IDENTITY CONTROL (King, catalogue M): expect -0.057 / -0.093 / -0.245 / -0.211, N = 42
+
+=== King, f = 1 (published configuration)   N = 42 ===
+dynamics                            <obs-pred>      +-   ratio     <f>   med f  f@edge
+Newtonian                               -0.057   0.027    1.00    1.00    1.00       0
+MOND simple mu + EFE                    -0.093   0.027    1.65    1.00    1.00       0
+MOND simple mu, EFE off                 -0.245   0.027    4.33    1.00    1.00       0
+density, knee 0.161 (floored)           -0.211   0.027    3.73    1.00    1.00       0
+IDENTITY: PASS
+
+=== ARM A: King, mass scale refit under each law   N = 42 ===
+dynamics                            <obs-pred>      +-   ratio     <f>   med f  f@edge
+Newtonian                               -0.057   0.027    1.00    1.36    1.34       0
+MOND simple mu + EFE                    -0.094   0.027    1.67    1.18    1.11       0
+MOND simple mu, EFE off                 -0.241   0.027    4.26    1.00    0.91       0
+density, knee 0.161 (floored)           -0.195   0.027    3.45    1.28    1.19       0
+  Newtonian-row internal control (slope is f-independent): -0.0565 -> -0.0565
+
+=== Plummer baseline (a = r_hm/1.30477), f = 1   N = 42 ===
+dynamics                            <obs-pred>      +-   ratio     <f>   med f  f@edge
+Newtonian                               +0.021   0.027    1.00    1.00    1.00       0
+MOND simple mu + EFE                    -0.023   0.027    1.08    1.00    1.00       0
+MOND simple mu, EFE off                 -0.144   0.027    6.84    1.00    1.00       0
+density, knee 0.161 (floored)           -0.199   0.027    9.45    1.00    1.00       0
+
+=== ARM B: Plummer photometric (a = r_hl), f = 1   N = 42 ===
+dynamics                            <obs-pred>      +-   ratio     <f>   med f  f@edge
+Newtonian                               +0.038   0.027    1.00    1.00    1.00       0
+MOND simple mu + EFE                    -0.008   0.027    0.22    1.00    1.00       0
+MOND simple mu, EFE off                 -0.132   0.027    3.45    1.00    1.00       0
+density, knee 0.161 (floored)           -0.196   0.027    5.13    1.00    1.00       0
+
+=== ARM AxB: Plummer photometric + mass refit   N = 42 ===
+dynamics                            <obs-pred>      +-   ratio     <f>   med f  f@edge
+Newtonian                               +0.038   0.027    1.00    1.07    0.95       1
+MOND simple mu + EFE                    -0.007   0.027    0.19    0.95    0.88       1
+MOND simple mu, EFE off                 -0.139   0.027    3.65    0.85    0.81       1
+density, knee 0.161 (floored)           -0.193   0.027    5.06    1.01    0.95       1
+
+=== Plummer (r_hm) + mass refit  [reported, not registered]   N = 42 ===
+dynamics                            <obs-pred>      +-   ratio     <f>   med f  f@edge
+Newtonian                               +0.021   0.027    1.00    1.16    1.11       1
+MOND simple mu + EFE                    -0.022   0.027    1.07    1.02    0.95       1
+MOND simple mu, EFE off                 -0.146   0.027    6.95    0.91    0.88       1
+density, knee 0.161 (floored)           -0.193   0.027    9.15    1.10    1.02       1
+
+=== PRE-FIXED VERDICT (King, Arm A) ===
+  density, knee 0.161 (floored)      R: 3.73 -> 3.45  (-7%)   critique REFUTED
+  MOND simple mu, EFE off            R: 4.33 -> 4.26  (-2%)
+  MOND simple mu + EFE               R: 1.65 -> 1.67  (+1%)
+  Arm B (Plummer): density-law R 9.45 -> 5.13; residual -0.199 -> -0.196; Newtonian residual +0.021 -> +0.038
+  (Plummer ratios are fragile when the Newtonian residual is near zero; read residuals.)
+
+real	0m55.197s
+user	0m55.466s
+sys	0m0.023s

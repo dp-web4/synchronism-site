@@ -16,6 +16,18 @@ export default function ForResearchers() {
       <h1>For Researchers: What&apos;s Citable</h1>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
+          <strong>The program in one sentence.</strong> &#x03B3; = &frac12; is the one value at which (1+x)<sup>2&#x03B3;</sup> is
+          linear, so it is where the ansatz stops being itself in <em>both</em> sectors at once: C = x/(x+2), Milgrom&apos;s
+          simple &#x03BC;, for galaxies, and &#x03C1;<sub>DE</sub> = 2&#x03C1;<sub>crit</sub>, exactly &#x039B;, for cosmology.
+          Left free, the single parameter goes there: 0.489 on SPARC, 0.487 (+0.024/&minus;0.021) on DESI DR2+CMB+SN.{' '}
+          <strong>This is a deflation, not a concordance.</strong> The two sectors&apos; standard models sit 0.011 apart in
+          &#x03B3; by construction; the SPARC value carries &plusmn;0.11 statistical and a 0.27&ndash;0.96 band from
+          mass-to-light alone, so the agreement had no power to fail. What it says is that wherever this equation has been
+          fitted, the data asked for the point where it is somebody else&apos;s. (Moved here 2026-09-19 from a parenthetical
+          on <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link> after a researcher
+          reader called it more informative than the scoreboard.)
+        </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           An arriving expert should not have to excavate the failure documentation to find what
           survives it. By the site&apos;s own scoreboard the framework has <strong>0 confirmed
@@ -655,7 +667,23 @@ export default function ForResearchers() {
             <strong> (iv) Potential escapers</strong> (energetically unbound stars inside r<sub>t</sub>; Küpper et al. 2010; Claydon, Gieles &amp; Zocchi 2017)
             are the known Newtonian flattening of outer σ(r). They are not in the mock. <strong>(v) Not prospective:</strong> Session 611 registered
             γ only, and the knee, floor and dynamics were chosen after, and they span pass to excluded. The criterion is a post-hoc ratio with
-            no σ. Cite it as an L2 window, not as an exclusion.
+            no σ. <strong>(vi) Newton-conditioning through the catalogue mass: checked 2026-09-19, small.</strong> A researcher
+            reader objected that the Baumgardt &amp; Hilker masses are N-body fits to these same σ(r) profiles under Newton, so
+            every alternative is graded against a Newton-tuned model. The mechanism is real: the outer slope is mass-independent
+            under Newton only, and the published run used catalogue M with no free scale. Pre-registered control (site{' '}
+            <code>d9d7beb</code>, identity reproduces &minus;0.057 / &minus;0.093 / &minus;0.245 / &minus;0.211 first): refitting
+            one mass scale per cluster <em>under each law</em> moves the density-law residual &minus;0.211 &rarr; &minus;0.195 and its
+            ratio 3.73&times; &rarr; 3.45&times; (&minus;7%); MOND without EFE 4.33&times; &rarr; 4.26&times;; MOND+EFE 1.65&times; &rarr; 1.67&times;.
+            The reason is visible in the fitted scales: the inner bins sit far above the knee where every law is Newtonian, and
+            they pin the mass (density-law &lang;f&rang; = 1.28 against Newton&apos;s own 1.36). Swapping the N-body half-mass radius
+            for the photometric half-light radius moves the density residual &minus;0.199 &rarr; &minus;0.196. Pre-fixed verdict:
+            the &ldquo;manufactured exclusion&rdquo; reading is <strong>refuted at this level</strong>. Two of the maintainer&apos;s
+            five registered predictions failed (the fitted scale is above 1, not 0.35&ndash;0.8; and under Plummer the{' '}
+            <em>ratio</em> moved 46% because its Newtonian denominator, +0.021&nbsp;&plusmn;&nbsp;0.027, is consistent with zero).
+            That second miss is the useful one: <strong>the ratio-to-Newton statistic is unstable wherever Newton fits well</strong>.
+            The residuals carry a statistical error (&plusmn;0.027 on each mean; the density law is 7.8 stat-σ from zero, Newton 2.1);
+            what has no number is the systematic budget. Still unaddressed by this control: escapers, anisotropy, L3, and the
+            N-body-derived r<sub>c</sub> of the King-like model. Cite it as an L2 window, not as an exclusion.
             This sits beside the B<sub>max</sub> ≲ 14 bound from SPARC dwarfs as the second class-level constraint this
             program has produced.
           </p>

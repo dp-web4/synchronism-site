@@ -21,12 +21,14 @@ const steps = [
     highlight: 'C = 0 (sparse) → C = 1 (collective)',
   },
   {
-    title: 'The γ Parameter',
-    content: `γ = 2/√N_corr, where N_corr is how many particles move together as a unit.
-    One electron? N_corr = 1, so γ = 2. That's quantum territory.
-    A crystal of 10²⁴ atoms? γ ≈ 10⁻¹², deeply classical.
-    The transition happens around γ ≈ 1.`,
-    highlight: 'γ = 2/√N_corr',
+    title: 'The γ Parameter — the original idea, and what happened to it',
+    content: `γ sets how sharply the dial turns. The original idea was γ = 2/√N_corr, where N_corr is how many
+    particles move together as a unit: one electron alone gives γ = 2, a crystal of 10²⁴ atoms gives γ ≈ 10⁻¹².
+    That formula did not survive testing. Where it made a checkable prediction, the sign came out backwards
+    (predicted correlation +0.55, measured −0.55), and N_corr had to be defined differently in every field to make
+    it work. When γ is simply fitted to galaxy data it comes out near 0.5 — the value at which the equation turns
+    into MOND's. So read γ = 2/√N_corr as the starting hypothesis, not as how things work.`,
+    highlight: 'Original idea: γ = 2/√N_corr — failed where tested',
   },
   {
     title: 'Where γ ≈ 1',

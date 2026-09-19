@@ -150,7 +150,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Kill criterion',
     fullName: 'Falsification Threshold',
     brief: 'A specific, pre-registered outcome that would falsify a prediction if observed.',
-    explanation: 'Each Tier-1 test has a kill criterion: a numerical threshold that, if crossed, means the framework\'s prediction is wrong. Example: TEST-02 kill is "wide-binary anomaly is independent of local stellar density." Kill criteria are stated before the data is analyzed, not after \u2014 this is what makes them falsifying rather than rationalizing. The set of kill criteria is the framework\'s most important methodological contribution.',
+    explanation: 'Each registered test has a kill-criterion field: the result that, if observed, means the prediction is wrong. A well-formed one names a statistic, a threshold and a significance the data can deliver. Measured 2026-09-18, 2 of the 26 registered criteria meet that; 3 state any significance; 11 contain no number at all (this entry\u2019s former example, TEST-02\u2019s \u201cwide-binary anomaly is independent of local stellar density\u201d, is one of the 11). The criteria were fixed before the data were analysed \u2014 commit history shows no threshold was moved after a result \u2014 so timing is sound and specificity is the open defect. This entry used to call a kill criterion \u201ca numerical threshold\u201d and the set of them \u201cthe framework\u2019s most important methodological contribution\u201d; the count does not support either. See also Prospective and Outcome words.',
     learnMore: '/test-catalog',
   },
   'mean-field theory': {
@@ -180,6 +180,27 @@ export const terms: Record<string, TermDefinition> = {
     brief: 'A test that was actually run and that the idea failed. The site counts 6, from 5 independent roots.',
     explanation: 'Counting rule: a claim counts as an executed refutation when (1) a test with a stated failure condition was actually run, on data or as a simulation, and (2) the claim failed it. Arguments that a test could never succeed, untested predictions and underpowered tests (like the DESI growth-rate check) do not count. The count is 6 (BTFR slope TEST-09, dwarf dark-matter fractions TEST-10, RAR shape at \u03b3 = 2, the environment run, the Cassini/SPARC squeeze TEST-25, and the Bell/CHSH substrate check), but these come from 5 independent roots, because TEST-09 and TEST-10 fail on the same boost cap. Only two roots are specific to this framework. The upstream ledger is PREDICTIONS.md in the research repo. (Entry added 2026-09-14, after a visitor noticed the site\u2019s headline number had no definition.)',
     learnMore: '/honest-assessment',
+  },
+  'prospective': {
+    term: 'Prospective',
+    fullName: 'Prospective test \u2014 criterion fixed before the data existed',
+    brief: 'A test whose pass/fail rule was written down before the data it is scored on existed. The site has completed 0.',
+    explanation: 'This is why the scoreboard can say \u201c0 prospective predictions tested\u201d and \u201c6 refutations executed\u201d at once: all six refutations were run on data that already existed (SPARC, Cassini, Cosmicflows) or as a simulation. A refutation on existing data still counts, because the idea could have passed and did not. What existing data cannot do is confirm a novel prediction, since the prediction could have been shaped by it. Timing is the cheap half of pre-registration; the expensive half is specificity (see Kill criterion).',
+    learnMore: '/falsifiability',
+  },
+  'retrodiction': {
+    term: 'Retrodiction',
+    fullName: 'Post-hoc retrodiction \u2014 checking an idea against data that already existed',
+    brief: 'Agreement with data that were already known when the idea was written. Counts as consistency, never as confirmation.',
+    explanation: 'The opposite of a prospective test. A retrodiction that fails is informative (it is how all six refutations happened). A retrodiction that succeeds is weak evidence, because the idea may have been tuned, knowingly or not, to data its authors had seen.',
+    learnMore: '/honest-assessment',
+  },
+  'outcome words': {
+    term: 'Outcome words (failed / refuted / killed / withdrawn\u2026)',
+    fullName: 'How the site\u2019s outcome vocabulary maps onto itself',
+    brief: 'Refuted, killed and Failed describe one event from three angles; withdrawn, unrunnable and underpowered are not outcomes of a test.',
+    explanation: 'Every registered test has a kill-criterion field (see Kill criterion). Measured 2026-09-18, 2 of 26 are well-formed (a statistic, a threshold and a significance the data can deliver); 11 contain no number. \u201cKill criterion triggered\u201d is an operational state of a test. How the outcome words map: a test is executed; if its kill criterion triggers, that is a refutation (scoreboard word); the claim then carries the Failed badge (descriptive) or Audited-Negative (when the failure came from an audit of a historical track rather than a registered test). \u201cKilled\u201d is the lifecycle verb for the same event. Withdrawn means the claim was retracted before any test. Unrunnable and \u201cuntestable as stated\u201d mean no test can currently be built; they are not outcomes. Underpowered means a test ran and could not discriminate; it does not count as a refutation.',
+    learnMore: '/falsifiability',
   },
   'interpolating function': {
     term: 'Interpolating Function',
@@ -241,7 +262,7 @@ export const terms: Record<string, TermDefinition> = {
   'badge-parallel-paths': {
     term: 'Parallel-Paths (badge)',
     fullName: 'MRH-Relationship Badge: Parallel-Paths',
-    brief: 'In the framework\'s parallel hypothesis space; not currently in active focus but not abandoned.',
+    brief: 'Kept in the hypothesis space: not in active focus, not abandoned.',
     explanation: 'Parallel-Paths means the claim is on the shelf — not being actively investigated but not disowned. The framework maintains multiple parallel research tracks simultaneously; Parallel-Paths marks a track that is not the current priority.',
     learnMore: '/honest-assessment#validation-badge-definitions',
   },

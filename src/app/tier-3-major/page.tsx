@@ -32,7 +32,7 @@ const tests: Tier3Test[] = [
     time: '3–5 years',
     facility: 'LIGO O4/O5 + multi-messenger follow-up',
     prediction: 'Gravitational wave arrival time correlates with dark matter column density along line of sight',
-    kill: 'No correlation at 10⁻¹⁶ level after 20+ multi-messenger events',
+    kill: 'No correlation at 10⁻¹⁶ level across 50+ multi-messenger events (archive registration; sample needed for a 3σ detection stated there as 20–50 events). This card read "20+" with no σ until 2026-09-19 — a weaker criterion than the one registered, undisclosed. Reachability: the best existing bound is 10⁻¹⁵, so the criterion cannot fire on any current instrument',
     verdict: (
       <>
         <strong>Unreachable / monitoring-only.</strong> The kill criterion (a null at 10⁻¹⁶) sits an order of

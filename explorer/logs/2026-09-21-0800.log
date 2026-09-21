@@ -1,0 +1,38 @@
+Starting Synchronism Explorer Session at Mon Sep 21 08:00:01 PDT 2026
+The "temporal scanning" picture of quantum mechanics has a split verdict. Read literally, it is already refuted by existing data, and the refuting experiment is the quantum Zeno effect, not Leggett–Garg. Read the other way, it reproduces standard quantum mechanics exactly and predicts nothing new. Everything is committed and pushed (`ee7f509` for the pre-registration, filed before any script; `adf9706` for the session).
+
+**WAKE.** TEST-04a already has 12+ findings, and the mechanism behind it was retired in August, so more power analysis on it tells us almost nothing. The quantum side had never been checked against real temporal experiments. So Leggett–Garg was the main topic, with TEST-04a as a short, time-sensitive side check.
+
+**Main result: the CRT scanning picture vs Leggett–Garg and Zeno.** SPINE's CRT analogy contains two sentences that contradict each other:
+- **"Nothing about the screen changed"** says measurement doesn't disturb the system. `/two-reframes` states this as "not metaphorical". It is refuted by the quantum Zeno effect: Itano et al. 1990 measured a transition probability of 0.194 ± 0.02 at 8 pulses, where this reading predicts 1.0 (40σ off). I transcribed their Table I from the scanned paper.
+- **"Measurement is synchronization"** says measurement disturbs the system, so it survives Leggett–Garg by construction. Even a weak disturbance (reset strength s ≥ 0.15) is enough to violate the inequality.
+- **Zeno is the sharper test.** It forces s ≥ 0.975, and a full reset (s = 1) is exactly QM's standard projection rule. What's left of "the system is in one mode at each instant" does no work: no measurable statistic depends on it.
+- **An extra commitment the model needs.** A detector that did *not* click must still count as having synchronized with the system. Otherwise the model contradicts Robens et al. 2015 (single atoms, 6σ violation).
+- **Only way to a prediction:** state a finite scan period. The archive doesn't state one.
+- **Counting:** I don't propose this as a 7th refutation. The refuted reading lives in an analogy sentence and a site paragraph, not a ledger row.
+
+**Side result: TEST-04a on DESI DR1.** The four-bin comparison gives Δχ² = +5.89, favouring ΛCDM. DR2 contains DR1, so given the DR1 values, a "Δχ² > 9" kill at DR2 would fire 36–57% of the time if ΛCDM is true. The branch B currently adopted fires under 1%. The DR1 numbers come from the archive's May transcription and weren't re-checked against the paper today.
+
+**Mistake on my part:** my pre-registration used the wrong formula for the quantum Zeno effect. That briefly made a correct model look wrong; the first run's output is kept on disk. One prediction was refuted: my guess for the reset threshold (actual 0.15, guessed 0.3–0.7).
+
+**For the maintainer:**
+- **P0:** rewrite the refuted paragraph on `/two-reframes`.
+- **P1:** `/key-claims:223` says nobody has checked the claim against Kochen–Specker, but the Peres–Mermin run did on 2026-07-08. It also calls Leggett–Garg "the kill test", which is the wrong instrument.
+
+**Questions for dp:**
+- Which of the two CRT sentences does SPINE keep?
+- Does the framework have any live growth prediction that DESI could tell apart from ΛCDM? If not, the site should say so once.
+
+**Connections:** Gmail, Google Calendar and Google Drive need authorizing in your claude.ai connector settings. The playwright server failed to connect because `npx` isn't on PATH. Nothing this session depended on them.
+
+Findings are in `explorer/findings/`:
+- `crt-scanning-vs-leggett-garg-zeno-forces-the-phase-lock-and-the-phase-lock-is-lueders.md`
+- `test04a-four-bin-dr1-delta-chi2-and-dr2-conditional-power.md`
+
+The session log is `explorer/logs/2026-09-21.md`.
+
+Sources:
+- [Itano et al. 1990, quantum Zeno effect (NIST PDF)](https://tf.nist.gov/general/pdf/858.pdf)
+- [Robens et al. 2015, arXiv:1404.3912](https://arxiv.org/abs/1404.3912)
+- [Knee et al. 2016, Nat. Commun. 7, 13253](https://www.nature.com/articles/ncomms13253)
+- [Reply to Comment on "Quantum Zeno effect", PRA 43, 5168](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.43.5168)

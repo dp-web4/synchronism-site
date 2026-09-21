@@ -1,0 +1,45 @@
+four bins (S107's five minus ELG_low, absent in DR1 FS)
+   LRG1  r=1.160 S107=0.882  dchi2=+3.06
+   LRG2  r=1.040 S107=0.898  dchi2=+2.19
+   LRG3  r=0.997 S107=0.916  dchi2=+0.93
+   ELG2  r=0.945 S107=0.932  dchi2=-0.29
+  observed Delta chi2 = +5.89  (sqrt = 2.43 sigma-equiv); expected under LCDM at DR1 sigma = 3.29
+  DR2 power, kill = Delta chi2 > 9, truth = LCDM, sigma_DR2 = f * sigma_DR1:
+    f=1.00  E= 3.29  P(kill | LCDM) = P(favour | S107) = 0.06
+    f=0.80  E= 5.14  P(kill | LCDM) = P(favour | S107) = 0.20
+    f=0.75  E= 5.85  P(kill | LCDM) = P(favour | S107) = 0.26
+    f=0.70  E= 6.71  P(kill | LCDM) = P(favour | S107) = 0.33
+    f=0.65  E= 7.78  P(kill | LCDM) = P(favour | S107) = 0.41
+    f=0.60  E= 9.13  P(kill | LCDM) = P(favour | S107) = 0.51
+    f=0.55  E=10.87  P(kill | LCDM) = P(favour | S107) = 0.61
+    f=0.50  E=13.15  P(kill | LCDM) = P(favour | S107) = 0.72
+  f needed for 80% power: 0.458  (needs E = 15.7)
+
+all six DR1 FS tracers
+   BGS   r=0.840 S107=0.867  dchi2=-0.69
+   LRG1  r=1.160 S107=0.882  dchi2=+3.06
+   LRG2  r=1.040 S107=0.898  dchi2=+2.19
+   LRG3  r=0.997 S107=0.916  dchi2=+0.93
+   ELG2  r=0.945 S107=0.932  dchi2=-0.29
+   QSO   r=1.160 S107=0.947  dchi2=+1.37
+  observed Delta chi2 = +6.57  (sqrt = 2.56 sigma-equiv); expected under LCDM at DR1 sigma = 3.97
+  DR2 power, kill = Delta chi2 > 9, truth = LCDM, sigma_DR2 = f * sigma_DR1:
+    f=1.00  E= 3.97  P(kill | LCDM) = P(favour | S107) = 0.10
+    f=0.80  E= 6.21  P(kill | LCDM) = P(favour | S107) = 0.29
+    f=0.75  E= 7.06  P(kill | LCDM) = P(favour | S107) = 0.36
+    f=0.70  E= 8.11  P(kill | LCDM) = P(favour | S107) = 0.44
+    f=0.65  E= 9.40  P(kill | LCDM) = P(favour | S107) = 0.53
+    f=0.60  E=11.04  P(kill | LCDM) = P(favour | S107) = 0.62
+    f=0.55  E=13.14  P(kill | LCDM) = P(favour | S107) = 0.72
+    f=0.50  E=15.89  P(kill | LCDM) = P(favour | S107) = 0.81
+  f needed for 80% power: 0.504  (needs E = 15.7)
+
+CONDITIONAL on DR1 (DR2 ⊃ DR1), four bins, symmetrised sigma; kill = Delta chi2 > 9
+  truth=LCDM f=0.75  E[dchi2_DR2 | DR1]= 7.83 sd=3.20  P(kill)=0.36
+  truth=LCDM f=0.70  E[dchi2_DR2 | DR1]= 8.70 sd=3.70  P(kill)=0.47
+  truth=LCDM f=0.65  E[dchi2_DR2 | DR1]= 9.77 sd=4.24  P(kill)=0.57
+  truth=LCDM f=0.60  E[dchi2_DR2 | DR1]=11.12 sd=4.84  P(kill)=0.67
+  truth=S107 f=0.75  E[dchi2_DR2 | DR1]= 2.72 sd=3.20  P(kill)=0.02
+  truth=S107 f=0.70  E[dchi2_DR2 | DR1]= 1.85 sd=3.70  P(kill)=0.03
+  truth=S107 f=0.65  E[dchi2_DR2 | DR1]= 0.78 sd=4.24  P(kill)=0.03
+  truth=S107 f=0.60  E[dchi2_DR2 | DR1]=-0.57 sd=4.84  P(kill)=0.02

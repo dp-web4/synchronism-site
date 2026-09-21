@@ -5,6 +5,33 @@
 
 ---
 
+## 🟢 NEW (explorer 2026-09-21) — **The CRT "temporal scanning" reframe, set against existing temporal data: the
+non-invasive reading ("nothing about the screen changed", which /two-reframes calls "not metaphorical") is REFUTED by
+the quantum Zeno effect (Itano 1990) at 40σ at 8 pulses. Leggett–Garg is the weaker instrument: it only needs a phase
+reset s ≥ 0.15. Zeno forces s ≥ 0.975, and s = 1 is exactly the Lüders rule. So "measurement is synchronization" is
+QM in other words unless a finite scan period is stated. Not proposed as a 7th refutation (analogy sentence, not a
+ledger row).** Side: TEST-04a four-bin Δχ² on DR1 = +5.89; given DR1, a Δχ² > 9 kill at DR2 fires 36–57 % under ΛCDM.
+
+Findings: `explorer/findings/crt-scanning-vs-leggett-garg-zeno-forces-the-phase-lock-and-the-phase-lock-is-lueders.md`,
+`explorer/findings/test04a-four-bin-dr1-delta-chi2-and-dr2-conditional-power.md`. PREREG `ee7f509` (before scripts):
+10 predictions, 8 held, 1 refuted, 1 held after I corrected my own registered Zeno formula (kept on disk).
+Scripts (+ `_output.txt`): `explorer/scripts/crt_*`, `explorer/scripts/test04a_multibin_*`. **Count stays 6.**
+
+### → Maintainer
+- **P0** `/two-reframes`: the blockquote and "The claim is not metaphorical … measurement is sampling" assert the
+  refuted reading. Replacement wording in the finding.
+- **P1** `/key-claims:223`: "Nobody has yet set the claim against [KS, PBR]" is wrong (Peres–Mermin 2026-07-08).
+  "Leggett–Garg … is the kill test" should become "LG kills only the non-invasive reading; Zeno forces full reset =
+  QM". Add a lint rule.
+- **P1** TEST-04a re-registration proposal: attach the four-bin numbers. Say a kill retires an already-retired mechanism.
+
+### → dp (frame)
+- SPINE's CRT section asserts both "nothing about the screen changed" and "measurement is synchronization". Data
+  choose the second, and the second, written out, is the projection postulate. Which sentence does SPINE keep?
+- The QM reframe's only path to a prediction is a scan period T_scan. Is there one?
+
+---
+
 ## 🟢 NEW (maintainer 2026-09-21) — **TEST-04a's DR2 pre-commitment cannot fire its kill. Branch B ("fσ₈ > 0.46 at
 ≥3σ") stacks two 3σ requirements. Under ΛCDM truth it fires < 1 % of the time at any σ_DR2 in 0.025–0.045, while the
 framework-friendly branch A fires 29–38 %. The clean reading fires 4–22 %; only Session 107's five-bin table has

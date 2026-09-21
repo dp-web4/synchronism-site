@@ -1,0 +1,55 @@
+=== P1/P2: K(theta) = C12 + C23 - C13; QM = 2cos(theta) - cos(2 theta) ===
+theta=0.100  QM=+1.0099  I(1)=+1.0092+-0.0004  N(best phi0)=+0.9907  N(mixed)=+0.5016
+theta=0.377  QM=+1.1303  I(1)=+1.1275+-0.0014  N(best phi0)=+0.9789  N(mixed)=+0.5646
+theta=0.653  QM=+1.3268  I(1)=+1.3290+-0.0020  N(best phi0)=+0.9480  N(mixed)=+0.6651
+theta=0.930  QM=+1.4807  I(1)=+1.4825+-0.0023  N(best phi0)=+0.8401  N(mixed)=+0.7406
+theta=1.206  QM=+1.4589  I(1)=+1.4593+-0.0023  N(best phi0)=+0.8659  N(mixed)=+0.7318
+theta=1.483  QM=+1.1607  I(1)=+1.1560+-0.0022  N(best phi0)=+0.9855  N(mixed)=+0.5814
+theta=1.759  QM=+0.5557  I(1)=+0.5561+-0.0023  N(best phi0)=+0.9187  N(mixed)=+0.2747
+theta=2.036  QM=-0.2982  I(1)=-0.2985+-0.0024  N(best phi0)=+0.7911  N(mixed)=-0.1492
+theta=2.312  QM=-1.2623  I(1)=-1.2591+-0.0023  N(best phi0)=+0.4346  N(mixed)=-0.6329
+theta=2.589  QM=-2.1501  I(1)=-2.1514+-0.0018  N(best phi0)=+0.2732  N(mixed)=-1.0750
+theta=2.865  QM=-2.7750  I(1)=-2.7740+-0.0010  N(best phi0)=-0.0977  N(mixed)=-1.3886
+theta=3.142  QM=-3.0000  I(1)=-3.0000+-0.0000  N(best phi0)=+0.0055  N(mixed)=-1.5029
+max K over grid, model N (13 initial phases): 0.9907   worst |I(1)-QM|/sigma: 2.10
+K(pi/3) model I(1) = 1.5035 +- 0.0024   (QM 1.5)
+
+=== P4: ideal negative measurement at t2 (detector coupled to - only) ===
+  I(1), no-click runs sync  : K(pi/3) = 1.5020 +- 0.0024
+  I(1), no-click runs nosync: K(pi/3) = 0.7533 +- 0.0025
+  no-click-only subset (sync  ): <Q2Q3 | Q2=+ inferred> = +0.4998  (QM, i.e. sync: cos(pi/3) = +0.5)
+  no-click-only subset (nosync): <Q2Q3 | Q2=+ inferred> = -0.4992  (QM, i.e. sync: cos(pi/3) = +0.5)
+
+=== P3: quantum Zeno, pi rotation, N measurements; P(transition to -) ===
+N=  1  model N=1.0000  model I(1)=1.0000  QM=1.0000
+N=  2  model N=1.0000  model I(1)=0.4998  QM=0.5000
+N=  4  model N=1.0000  model I(1)=0.3759  QM=0.3750
+N=  8  model N=1.0000  model I(1)=0.2332  QM=0.2346
+N= 16  model N=1.0000  model I(1)=0.1333  QM=0.1334
+N= 32  model N=1.0000  model I(1)=0.0720  QM=0.0716
+N= 64  model N=1.0000  model I(1)=0.0372  QM=0.0371
+NB model N's *last* sample is at phi=pi exactly, so P=1 for all N; the pre-final samples are irrelevant.
+
+=== P5: partial reset I(s), K(pi/3) and Zeno N=64 ===
+s=0.00  K(pi/3)=+0.7485+-0.0025  max_theta K=+0.9612  Zeno(N=64)=1.0000
+s=0.05  K(pi/3)=+0.8076+-0.0025  max_theta K=+0.9751  Zeno(N=64)=0.8989
+s=0.10  K(pi/3)=+0.8646+-0.0025  max_theta K=+1.0031  Zeno(N=64)=0.5085
+s=0.15  K(pi/3)=+0.9220+-0.0025  max_theta K=+1.0315  Zeno(N=64)=0.2720
+s=0.20  K(pi/3)=+0.9736+-0.0025  max_theta K=+1.0537  Zeno(N=64)=0.1783
+s=0.25  K(pi/3)=+1.0260+-0.0025  max_theta K=+1.0756  Zeno(N=64)=0.1394
+s=0.30  K(pi/3)=+1.0690+-0.0025  max_theta K=+1.1094  Zeno(N=64)=0.1168
+s=0.35  K(pi/3)=+1.1174+-0.0025  max_theta K=+1.1492  Zeno(N=64)=0.1057
+s=0.40  K(pi/3)=+1.1702+-0.0025  max_theta K=+1.1830  Zeno(N=64)=0.0969
+s=0.45  K(pi/3)=+1.2108+-0.0025  max_theta K=+1.2238  Zeno(N=64)=0.0885
+s=0.50  K(pi/3)=+1.2480+-0.0025  max_theta K=+1.2567  Zeno(N=64)=0.0805
+s=0.55  K(pi/3)=+1.2876+-0.0025  max_theta K=+1.2865  Zeno(N=64)=0.0763
+s=0.60  K(pi/3)=+1.3261+-0.0024  max_theta K=+1.3162  Zeno(N=64)=0.0697
+s=0.65  K(pi/3)=+1.3586+-0.0024  max_theta K=+1.3420  Zeno(N=64)=0.0646
+s=0.70  K(pi/3)=+1.3889+-0.0024  max_theta K=+1.3785  Zeno(N=64)=0.0624
+s=0.75  K(pi/3)=+1.4070+-0.0024  max_theta K=+1.4020  Zeno(N=64)=0.0569
+s=0.80  K(pi/3)=+1.4327+-0.0024  max_theta K=+1.4290  Zeno(N=64)=0.0527
+s=0.85  K(pi/3)=+1.4509+-0.0024  max_theta K=+1.4524  Zeno(N=64)=0.0480
+s=0.90  K(pi/3)=+1.4676+-0.0024  max_theta K=+1.4682  Zeno(N=64)=0.0449
+s=0.95  K(pi/3)=+1.4871+-0.0024  max_theta K=+1.4825  Zeno(N=64)=0.0397
+s=1.00  K(pi/3)=+1.4964+-0.0024  max_theta K=+1.4996  Zeno(N=64)=0.0378
+smallest s with max_theta K > 1.01: 0.15000000000000002

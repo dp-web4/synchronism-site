@@ -539,8 +539,9 @@ export default function ForResearchers() {
             The framework&apos;s substrate ontology was tested against Bell by direct CHSH simulation
             (kuramoto-lattice-suite, research-ledger bet B1), with freely chosen settings and
             measurement only through observer-pattern phase-lock. Results:{' '}
-            <strong>local construction S = 1.98; nonlocal-grid construction S &equiv; 2.00 at every
-            coupling strength with zero signaling</strong> (a uniform shared phase is gauge-equivalent
+            <strong>no construction exceeded the local bound S = 2 without signaling</strong> (quantum mechanics
+            reaches 2&radic;2 &asymp; 2.83): local construction S = 1.98; nonlocal-grid construction stuck at the
+            bound, S &equiv; 2.00, at every coupling strength with zero signaling (a uniform shared phase is gauge-equivalent
             to relabeling the measurement angles — smooth single-grid mediation stays local-realist);
             a global-clock construction reaches S = 2.67 only by also signaling. The 2026-07-06 run
             extends the cap to the framework&apos;s <em>own</em> saturation-gated Intent-density
@@ -820,11 +821,12 @@ export default function ForResearchers() {
                 in-class with this framework&apos;s own claim, so only two are truly external). Negative arm: 6 canonical discoveries
                 (Dirac 1928, Bell 1964, BCS 1957, Higgs 1964, Hawking 1974, Noether 1918). <em>Literal rule</em> (flag if canonical
                 prior art is named within one round): TP = 3, FN = 0, FP = 6, TN = 0, so sensitivity 3/3, specificity 0/6,
-                Youden&apos;s J = 0. The per-arm Clopper&ndash;Pearson bounds (sensitivity &ge; 0.29, specificity &le; 0.46) put
-                J between &minus;0.71 and +0.46. <em>Steelmanned rule</em> (flag if the claim reduces to prior art with nothing
+                Youden&apos;s J = 0. The per-arm Clopper&ndash;Pearson bounds (sensitivity &ge; 0.292 from 3/3, specificity
+                &le; 0.459 from 0/6; J = sens + spec &minus; 1) put J in [&minus;0.71, +0.46]. <em>Steelmanned rule</em> (flag if the claim reduces to prior art with nothing
                 added): TP = 3, FP = 0, TN = 6, J = 1.0 (lower bound &minus;0.17), but there the scorer&apos;s own novelty judgment
                 does all the discriminating, and that judgment is the step in question. Both rules were applied to both arms by the
-                same model. The framework&apos;s six demoted claims are <em>not</em> a positive arm. Their ground truth came from
+                same model. Sensitivity is 3/3 <em>per rule</em>. Pooling the two rules into &ldquo;6/6&rdquo; would count the same
+                three items twice under two non-independent rules, so it is not six independent trials. The framework&apos;s six demoted claims are <em>not</em> a positive arm. Their ground truth came from
                 the audit class under evaluation, so a sensitivity computed on them would be circular.
               </li>
               <li>
@@ -873,7 +875,8 @@ export default function ForResearchers() {
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.6rem' }}>
               <strong>Superseded on 2026-09-15:</strong> the 09-14 box&apos;s detector bullet, which took the 6 demoted claims
               as the positive arm (&ldquo;flagged 6/6 by the combined three-axis protocol, sensitivity 1.0&rdquo;) and quoted
-              J = 0 with CI [&minus;0.46, +0.46]. That used the audited set as its own ground truth, and it scored the two arms
+              J = 0 with CI [&minus;0.46, +0.46] (that interval is also wrong for the designed benchmark: 3/3 and 0/6 give
+              [&minus;0.71, +0.46]). That used the audited set as its own ground truth, and it scored the two arms
               under different rules. The box now reports the benchmark as designed (3 external reparametrizations, 6
               discoveries, one rule at a time). The same applies to the 07-14 &ldquo;combined sensitivity 6/6 = 1.0&rdquo;
               paragraph below. Also superseded: &ldquo;6 given external audit&rdquo; and &ldquo;0 of 6 audited (0 of 47 pending
@@ -890,7 +893,8 @@ export default function ForResearchers() {
               positive control has never been run&rdquo;, because the known-good arm exists (the canonical six) but cannot
               separate H1 from H2. Page heading until 2026-09-14: &ldquo;2. The A2ACW detector is <em>underpowered</em>
               (Youden&apos;s J = 0, CI [&minus;0.46, +0.46], n = 6) &mdash; an open question, not a citable null,&rdquo; badge
-              &ldquo;Untested &mdash; Underpowered &mdash; No Positive Control Run.&rdquo;
+              &ldquo;Untested &mdash; Underpowered &mdash; No Positive Control Run.&rdquo; (Its interval has since been corrected
+              to [&minus;0.71, +0.46].)
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
               <strong>Honest novelty statement:</strong> the protocol is assembled prior art — adversarial
@@ -937,7 +941,10 @@ export default function ForResearchers() {
             </div>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               <strong>Put the two rates together and the detector is uninformative:</strong> combined
-              sensitivity (true-positive rate) is 6/6 = 1.0 (self-simulated upper bound, see above);
+              sensitivity (true-positive rate) is 6/6 = 1.0 (self-simulated upper bound, see above)
+              [2026-09-21 note: this 6/6 is on the six demoted claims, whose ground truth is circular. On the designed
+              benchmark sensitivity is 3/3 per rule; a pooled 6/6 across the literal and steelmanned rules is the same three
+              items counted twice, not six independent trials];
               specificity is 0/6, i.e. the false-positive rate is also 6/6 = 1.0. Youden&apos;s
               J = TPR − FPR = 1.0 − 1.0 = <strong>0</strong> (AUC ≈ 0.5). A classifier that
               flags every demoted claim <em>and</em> every genuine discovery carries zero
@@ -963,7 +970,9 @@ export default function ForResearchers() {
               physics was the asymmetry worth fixing. (4) <em>J = 0 is a point estimate on n = 6 and n = 6,
               and should be quoted with its interval</em> (added 2026-08-08, from a visitor researcher pass
               applying precision (3) to the detector itself). Clopper&ndash;Pearson at 95% gives sensitivity
-              &#8805; 0.541 and specificity &#8804; 0.459, hence <strong>J &#8712; [&minus;0.46, +0.46]</strong> —
+              &#8805; 0.541 and specificity &#8804; 0.459, hence <strong>J &#8712; [&minus;0.46, +0.46]</strong>{' '}
+              [superseded: the designed positive arm is 3/3, so sensitivity &#8805; 0.292 and the interval is
+              J &#8712; [&minus;0.71, +0.46]; see the current-state box] —
               an interval running from anti-informative to moderately informative. The point estimate is the right
               sign and the design degeneracy in (2) is the deeper problem, but quoting <em>J = 0</em> bare on the
               page labelled &ldquo;what&apos;s citable&rdquo; is the same sin this site correctly flags on{' '}
@@ -982,7 +991,9 @@ export default function ForResearchers() {
               <strong>canonical-discoveries arm</strong> false-flagged <strong>6 of 6</strong> genuine
               discoveries as reparametrizations (specificity 0/6), and the{' '}
               <strong>temporal-asymmetry arm</strong> (paired training cutoffs) caught{' '}
-              <strong>0 of 6</strong> demotions. An instrument that misclassifies every known positive is
+              <strong>0 of 6</strong> demotions. An instrument that misclassifies every known <em>negative</em>{' '}
+              [corrected 2026-09-21; originally &ldquo;positive&rdquo;. The 3 reparametrizations, the positive class, were
+              all caught, sensitivity 3/3; what it misclassified was all 6 genuine discoveries] is
               not weakly informative about the seed framework &mdash; it is <em>uninformative by
               construction</em>. Therefore: <strong>&ldquo;47 contributions, 0 survivors&rdquo; and any
               &ldquo;0 confirmed predictions&rdquo; that rests on A2ACW audit rather than on external data

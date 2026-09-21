@@ -241,8 +241,8 @@ export default function Home() {
               <strong>cannot substitute for out-of-distribution evaluation by domain experts.</strong>{' '}
               The <strong>1.4% internal-consistency survival rate</strong> (&#x2248;47 candidate claims out of ~3,300 sessions survived the protocol&apos;s own consistency checks &mdash; not a discovery rate; denominator and breakdown on{' '}
               <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>) and public failure log are the protocol&apos;s honest outputs.
-              The audit number: <strong>0 of 9 audited claims survived</strong> (the 6 former &ldquo;Validated&rdquo; badges plus 3 swept later; all demoted to Reparametrization or Failed). <strong>The auditors were LLM agents, not an outside domain expert.</strong>{' '}
-              Volume (~3,300 sessions) is not evidence, and neither is this count on its own: the demotions that hold rest on written identities and executed scripts, not on the audit verdict.{' '}
+              The audit number: <strong>0 of 9 audited claims survived</strong> (the 6 former &ldquo;Validated&rdquo; badges plus 3 swept later; demoted to Reparametrization, Failed, Audited-Negative or Speculative). <strong>The auditors were LLM agents, not an outside domain expert.</strong>{' '}
+              Volume (~3,300 sessions) is not evidence, and neither is this count on its own: the demotions that hold rest on written identities and executed scripts, not on the audit verdict. Which of the 9 rest on an identity or script, and which only on the AI prior-art mapping, has not yet been tabulated claim by claim.{' '}
               <em>Caveat carried at point of headline: the audit instrument, calibrated against six canonical
               genuine discoveries (Dirac, Bell, BCS, Higgs, Hawking, Noether), false-flagged all six as
               reparametrizations &mdash; so the audit count is instrument-limited and says little about novelty.

@@ -40,7 +40,7 @@ export default function ObserverProblem() {
             <p style={{ color: 'var(--color-text-secondary)' }}>
               The observer is at the center. Wave functions collapse when &ldquo;measured.&rdquo;
               Interpretations multiply &mdash; Copenhagen, Many-Worlds, QBism, relational &mdash;
-              each an epicycle patching the same privileged-frame error. The math works, but
+              each, on this wager, an epicycle patching the same observer-privilege error. The math works, but
               the framework is needlessly complicated because it privileges the wrong entity.
             </p>
           </div>

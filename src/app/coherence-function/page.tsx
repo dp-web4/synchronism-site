@@ -79,7 +79,7 @@ export default function CoherenceFunction() {
             <strong>g<sub>obs</sub></strong> &mdash; it solves g<sub>bar</sub> = g<sub>obs</sub>·tanh(γ ln(1 + g<sub>obs</sub>/a₀′))
             for g<sub>obs</sub> (<code style={{ fontSize: '0.8rem' }}>simulations/sparc_tanhlog_profile.py</code>, line 85, research repo), with
             a₀′ profiled. At γ = ½ that is Milgrom&apos;s simple μ with a₀ = 2a₀′, which is why the profiled a₀′ = 5.33×10⁻¹¹
-            sits 2.1× below McGaugh&apos;s reference. The <em>explicit</em> reading &mdash; evaluating C on g<sub>bar</sub>/a₀′ and
+            sits 2.25× below McGaugh&apos;s reference 1.20×10⁻¹⁰; converted, a₀ = 2a₀′ = 1.066×10⁻¹⁰ is 11% below it. The <em>explicit</em> reading &mdash; evaluating C on g<sub>bar</sub>/a₀′ and
             dividing &mdash; gives g<sub>obs</sub> → g<sub>bar</sub> + 2a₀′ at γ = ½, a constant additive floor 0.8–1.8 dex above the
             RAR below 10⁻¹¹ m/s², and could never reach 0.1437 dex RMS. It was never run. This sentence previously read
             &ldquo;μ&apos;s argument swapped from g<sub>bar</sub> to ρ,&rdquo; which was wrong twice: μ&apos;s argument in MOND is
@@ -123,7 +123,9 @@ export default function CoherenceFunction() {
           <strong style={{ color: '#ef4444' }}>The substitution above has never itself been evaluated
           (2026-08-04):</strong>{' '}
           every quantitative galaxy result on this site &mdash; γ = 0.489, the ΔBIC form-selection table, the
-          Cassini/SPARC squeeze &mdash; was computed with the argument g<sub>bar</sub>, not ρ. Running the
+          Cassini/SPARC squeeze &mdash; was computed on acceleration (g<sub>obs</sub>, μ-form), not ρ (see the
+          2026-09-08 &ldquo;Which variable the fit actually used&rdquo; note above; this sentence previously said
+          &ldquo;g<sub>bar</sub>,&rdquo; which the fit did not use). Running the
           framework&apos;s own numbers (γ = 2, ρ<sub>crit</sub> = 0.029 V<sub>flat</sub>²) with ρ actually
           substituted in moves the predicted rotation velocity by <strong>2&ndash;5 orders of magnitude</strong> on
           the site&apos;s own five plotter galaxies, and three mutually exclusive galaxy force laws are live on

@@ -60,6 +60,11 @@ export default function MondUnification() {
           site long omitted &mdash; a&#x2080; &#x221D; c&#x221A;&#x039B;, which predicts <em>zero</em> evolution and fares worse
           against Ciocan than the H(z) branch; a&#x2080; running faster than H(z) embarrasses both readings of the 1983
           coincidence, not this framework specifically. Full four-anchor table on Parameter Derivations, row 4.
+          Why not use high-z Tully&ndash;Fisher zero points instead? They cannot decide this: Milgrom (2017, &sect;4)
+          already notes that V<sub>max</sub> zero points do not constrain a&#x2080;(z), and modelled, the lever is
+          0.12&ndash;0.24 dex against a 0.25&ndash;0.35 dex spread between two surveys measuring the same relation at
+          z &asymp; 0.9 (explorer 2026-09-19). The level-free test, the <em>ratio</em> of the needed boost between two
+          redshifts, has not been run.
         </p>
 
         <h2>The Dimensional-Analysis Chain (not a derivation)</h2>

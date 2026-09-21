@@ -7,6 +7,10 @@ import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import { getAllTerms } from '@/lib/terms';
 
+function glossarySlug(t: string): string {
+  return t.replace(/Δ/g, 'delta ').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
 export default function Glossary() {
   const allTerms = useMemo(() => getAllTerms()
     .slice()
@@ -79,6 +83,8 @@ export default function Glossary() {
         )}
         {terms.map(term => (
           <div key={term.term} className="card" id={term.term}>
+            {/* lowercase-slug alias so /glossary#kill-criterion works as well as the raw-term id */}
+            {glossarySlug(term.term) && glossarySlug(term.term) !== term.term && <span id={glossarySlug(term.term)} aria-hidden="true" />}
             <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', marginBottom: '0.5rem' }}>
               <span style={{
                 fontWeight: 700,

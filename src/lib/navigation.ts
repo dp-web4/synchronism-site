@@ -330,7 +330,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'The \u03B3 \u2248 1 Boundary',
       href: '/gamma-boundary',
-      desc: '1,703 phenomena at the quantum-classical edge',
+      desc: 'Where 1,703 fitted γ values cluster; fitted, not predicted',
       keywords: ['gamma', 'boundary', 'quantum', 'classical', 'phenomena', 'chemistry'],
       prerequisites: ['/gamma-parameter', '/phase-transitions'],
       related: ['/sound-velocity', '/electronegativity', '/chemistry-correlation-explorer'],
@@ -338,7 +338,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Sound Velocity',
       href: '/sound-velocity',
-      desc: 'r = 0.982 correlation with coherence',
+      desc: 'r = 0.982 with fitted γ; matched by a Z-polynomial null',
       keywords: ['sound', 'velocity', 'correlation', 'phonon', 'acoustic'],
       prerequisites: ['/gamma-boundary'],
       related: ['/electronegativity', '/chemistry-phase-transitions'],

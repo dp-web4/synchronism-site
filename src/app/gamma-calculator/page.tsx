@@ -33,8 +33,8 @@ export default function GammaCalculator() {
         <ValidationBadge status="audited-negative" label="Formula Audited-Negative — Sign Inverted for All Collective Systems" />
       </div>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginBottom: '0.5rem' }}>
-        Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index grouping and level
-        tag &mdash; a tool kept to show a failure, not a verdict) &middot; Claim status: <strong>Audited-Negative</strong>, the
+        Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index Kind and Status
+        tags &mdash; Artifact Lesson is an operational state, not a level: a tool kept to show a failure, not a verdict) &middot; Claim status: <strong>Audited-Negative</strong>, the
         badge above. (Added 2026-09-15: the index and this page showed different words with no key between them.)
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.95rem', marginBottom: '0.5rem' }}>

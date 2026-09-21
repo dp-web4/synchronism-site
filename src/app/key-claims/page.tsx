@@ -121,7 +121,7 @@ export default function KeyClaims() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             This is the same move Copernicus made: not new data, but removing a wrong assumption.
             Every QM interpretation &mdash; Copenhagen, Many-Worlds, QBism, relational &mdash; is an epicycle
-            patching the same privileged-frame error. Remove the observer from the center and
+            patching the same observer-privilege error. Remove the observer from the center and
             the interpretive machinery becomes unnecessary.
           </p>
 
@@ -131,7 +131,7 @@ export default function KeyClaims() {
             different ones because the ontology is different. If decoherence is desynchronization
             (not information loss), then the remedy is resynchronization (not isolation).
             If entanglement is one pattern (not two correlated objects), then shared environments
-            protect it. These are testable engineering claims, not philosophy:
+            protect it. Proposed engineering consequences (current status per badge):
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', margin: '1rem 0' }}>
@@ -218,7 +218,13 @@ export default function KeyClaims() {
               subsequently cashed out as two of them, TEST-09 and TEST-10.)
               The CRT temporal-scanning model is not mathematically formalized to the level where
               it reproduces all of standard QM&apos;s quantitative predictions.
-              What&apos;s needed: a prediction that differs from standard QM and hasn&apos;t been measured yet.
+              What&apos;s needed: a prediction that differs from standard QM and hasn&apos;t been measured yet.{' '}
+              <strong>Open question &mdash; has the scanning picture already been tested without anyone noticing?</strong>{' '}
+              &ldquo;At each instant the system is in one mode&rdquo; is a macrorealist claim, so Leggett&ndash;Garg
+              inequality violations (observed in superconducting qubits, NMR, and neutron interferometry) are the kill test
+              it must pass; Kochen&ndash;Specker contextuality and the PBR theorem (Pusey, Barrett &amp; Rudolph 2012) constrain
+              it too. Nobody has yet set the claim against them, which is why it is &ldquo;untestable as stated&rdquo; rather
+              than tested. Either it evades them by a stated mechanism, or those experiments already refute it.
             </p>
             <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0 0 0.5rem' }}>
               <summary style={{ cursor: 'pointer' }}>Revision note</summary>
@@ -309,7 +315,7 @@ export default function KeyClaims() {
             Note: &ldquo;coherence&rdquo; here means density-driven collective ordering (0=sparse/independent,
             1=dense/collective) &mdash; <em>not</em> quantum phase coherence or neural phase synchrony.
             BEC/BCS, which are maximally phase-coherent, sit at <em>low</em> C.
-            See <a href="/glossary#coherence" style={{ color: 'var(--color-accent-blue)' }}>Glossary</a>.
+            See <a href="/glossary#Coherence" style={{ color: 'var(--color-accent-blue)' }}>Glossary</a>.
           </p>
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
@@ -515,7 +521,7 @@ export default function KeyClaims() {
             <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em', display: 'block', marginTop: '0.25rem' }}>
               Note: &ldquo;coherence&rdquo; here means density-driven collective ordering (0=sparse/independent,
               1=dense/collective) &mdash; not quantum phase coherence. BEC/BCS, which are maximally quantum-coherent,
-              sit at <em>low</em> C. See <a href="/glossary#coherence" style={{ color: 'var(--color-accent-blue)' }}>Glossary</a>.
+              sit at <em>low</em> C. See <a href="/glossary#Coherence" style={{ color: 'var(--color-accent-blue)' }}>Glossary</a>.
             </span>
           </p>
 

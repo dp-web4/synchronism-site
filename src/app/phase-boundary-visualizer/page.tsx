@@ -55,8 +55,8 @@ export default function PhaseBoundaryVisualizer() {
         <ValidationBadge status="audited-negative" label="γ = 2/√N_corr — sharpness sign inverted" />
       </div>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginTop: '0.35rem' }}>
-        Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index grouping and level
-        tag &mdash; a tool kept to show a failure, not a verdict) &middot; Claim status: <strong>Audited-Negative</strong>, the
+        Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index Kind and Status
+        tags &mdash; Artifact Lesson is an operational state, not a level: a tool kept to show a failure, not a verdict) &middot; Claim status: <strong>Audited-Negative</strong>, the
         badge above.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
@@ -118,15 +118,18 @@ export default function PhaseBoundaryVisualizer() {
           So a condensed-matter reading of this map is backwards: more correlation should not mean a
           smoother transition. This is the same audited-negative sign inversion documented on the{' '}
           <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
-          (1/&#x221A;N is a width, not a rate). The condensed-matter anchor for &ldquo;more correlation &#x2192; sharper&rdquo;
-          is the <strong>Ginzburg criterion</strong>: the temperature window in which fluctuations visibly round a
-          transition shrinks as the correlation volume holds more particles, roughly as N<sub>&#x03BE;</sub><sup>&#x2212;2</sup> in
-          three dimensions. That is why BCS superconductors, with very many pairs per coherence volume, show
+          (1/&#x221A;N is a width, not a rate). The condensed-matter anchor is the <strong>Ginzburg
+          criterion</strong>, which bounds the width of the critical-fluctuation region &mdash; the temperature window in
+          which fluctuations visibly round a transition. In three dimensions that width scales roughly as
+          N<sub>&#x03BE;</sub><sup>&#x2212;2</sup> &#x221D; &#x03BE;<sub>0</sub><sup>&#x2212;6</sup> (N<sub>&#x03BE;</sub> = particles per
+          coherence volume): large &#x03BE;<sub>0</sub> &#x2192; a vanishingly narrow critical-fluctuation region. That is why BCS superconductors, with very many pairs per coherence volume, show
           mean-field-sharp transitions. Against that anchor the formula has the wrong sign <em>and</em> the wrong
           exponent. The inversion is stated here because this is the page where systems
           are visually placed. Also note the axis itself: the quoted BCS value
-          (&#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>) sits three orders of magnitude off the left
-          edge of the displayed 0&ndash;4 range — the marker below is a direction indicator, not a position.
+          (&#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>) is on-scale, at the left edge of the linear 0&ndash;4 range, but
+          indistinguishable from 0 there (it is ~3 orders of magnitude smaller than the axis&apos;s first band edge, 0.6).
+          (Corrected 2026-09-21: this previously said &ldquo;three orders of magnitude off the left edge&rdquo;; a
+          linear axis starting at 0 cannot place a positive value beyond its left edge.)
         </div>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
@@ -151,7 +154,7 @@ export default function PhaseBoundaryVisualizer() {
 
             {/* Anchored example markers */}
             <line x1={32} y1={barY + barH + 5} x2={32} y2={barY + barH + 25} stroke="#10b981" strokeWidth="1" />
-            <text x={36} y={barY + barH + 36} textAnchor="start" fill="#10b981" fontSize="8">&#x2190; BEC/SC (γ≈6×10⁻⁴, ~3 OOM off-scale left)</text>
+            <text x={36} y={barY + barH + 36} textAnchor="start" fill="#10b981" fontSize="8">BEC/SC (γ≈6×10⁻⁴, at the left edge, indistinguishable from 0)</text>
             <line x1={30 + (0.85 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.85 / 4.0) * 540} y2={barY + barH + 25} stroke="#f59e0b" strokeWidth="1" />
             <text x={30 + (0.85 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#f59e0b" fontSize="8">water/enzymes</text>
             <line x1={30 + (0.49 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.49 / 4.0) * 540} y2={barY + barH + 25} stroke="#ef4444" strokeWidth="1" />

@@ -1,7 +1,32 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-19 (explorer)*
+*Last updated: 2026-09-21 (maintainer)*
+
+---
+
+## 🟢 NEW (maintainer 2026-09-21) — **TEST-04a's DR2 pre-commitment cannot fire its kill. Branch B ("fσ₈ > 0.46 at
+≥3σ") stacks two 3σ requirements. Under ΛCDM truth it fires < 1 % of the time at any σ_DR2 in 0.025–0.045, while the
+framework-friendly branch A fires 29–38 %. The clean reading fires 4–22 %; only Session 107's five-bin table has
+plausible power. DR2 galaxy full-shape is still unpublished, so re-registration is still prospective. GATES ON DP.**
+Count stays 6. Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-09-21.md`. Script: `maintainer/scripts/test04a_dr2_branch_power.py` (+ `_output.txt`).
+Proposal: `Synchronism/Research/proposals/test04a_dr2_branch_b_cannot_fire_reregister_before_data_20260921.md`.
+Ledger flag added under the registration block (registration text unchanged).
+
+- **Fixed:** First Encounter Part D (crossover + fitted-not-predicted), related-link blurbs, /why-synchronism folded
+  for beginners behind a three-line "what happened" box, A2ACW label swap + J interval + 3/3 per rule, key-claims claim 1
+  (observer-privilege, Leggett–Garg open question), explorer 09-19 P1/P2 (a₀(z) wording), glossary slug anchors.
+- **The 09-20 maintainer run did not happen** (usage credits). Nothing was lost; 09-19 P1s were done today.
+
+### → dp (gated)
+- **Re-register TEST-04a before DR2 publishes**: clean branch B, co-registered five-bin χ², each branch's null rate
+  stated. If declined, the site says plainly that branch B fires < 1 % under ΛCDM (it now does).
+- Registration template: add a mandatory "probability each branch fires under the null" line.
+
+### → Explorer (new topics)
+- `test04a-five-bin-growth-statistic-on-dr1-before-dr2.md` (time-sensitive) · `temporal-scanning-vs-leggett-garg.md`
 
 ---
 

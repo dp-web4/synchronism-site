@@ -32,10 +32,13 @@ const steps = [
   },
   {
     title: 'Where γ ≈ 1',
-    content: `The quantum-classical boundary. This is where phase transitions happen,
-    where chemistry gets interesting, where molecules become biology.
-    1,703 chemical phenomena cluster here. Not by design — by observation.`,
-    highlight: 'γ ≈ 1: the boundary',
+    content: `Roughly the quantum-classical boundary: a crossover zone where the dial turns
+    gradually, not a phase transition (tanh is smooth, so nothing snaps here). When γ was fitted
+    phenomenon by phenomenon across 1,703 chemical phenomena, most fitted values landed near this band.
+    Those γ values were fitted, not predicted — the formula above failed — so the clustering is an
+    observation about where fits landed, with a template-bias caveat and no mechanism. Neither this
+    placement nor the old consciousness-threshold placement follows from the equation.`,
+    highlight: 'γ ≈ 1: a crossover band where fitted values cluster (Reparametrization)',
   },
   {
     title: 'Scale Up: Galaxies',

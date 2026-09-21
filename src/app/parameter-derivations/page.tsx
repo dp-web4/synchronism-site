@@ -39,9 +39,9 @@ export default function ParameterDerivations() {
           sub-types of <em>Speculative</em> &mdash; physically motivated but not uniquely derived.{' '}
           <strong>Freeman&apos;s Law Re-expressed</strong> and <strong>Dimensional Analysis</strong> are
           sub-types of <em>Reparametrization</em> &mdash; reproducing known observational laws in different notation.{' '}
-          <strong>3% Error</strong> below uses the deprecated <em>Validated</em> label
-          (pre-2026-05 convention — do not interpret as passing any current audit criterion;
-          the underlying R₀ derivation is a dimensional analysis, not an independent first-principles result).
+          Item 6 (R₀) was labelled <em>Validated</em> (&ldquo;3% Error&rdquo;) until 2026-09-06, a
+          deprecated pre-2026-05 label; it now carries a <em>Reparametrization</em> badge (fitted factor)
+          &mdash; the underlying R₀ derivation is a dimensional analysis, not an independent first-principles result.
           See <a href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>badge taxonomy</a> for the current two-family system.
         </p>
 
@@ -132,7 +132,10 @@ export default function ParameterDerivations() {
               <br />• <strong>It is an exact algebraic identity, not a family resemblance.</strong> At
               &gamma;&nbsp;=&nbsp;&frac12;, C(x)&nbsp;=&nbsp;tanh(&frac12;&nbsp;ln(1+x)) is <em>identically</em>
               MOND&apos;s simple interpolating function &micro;<sub>simple</sub>, for <strong>every</strong>
-              &rho;<sub>crit</sub>, with no free content left over. Compare what the site <em>does</em> badge
+              &rho;<sub>crit</sub>, with no free content left over. That is an identity of <em>functional form</em>:
+              it is physically MOND only when the argument x is g<sub>obs</sub>/a₀&prime;. Keyed on &rho;, the same
+              function is a different force law (see{' '}
+              <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>). Compare what the site <em>does</em> badge
               &ldquo;Reparametrization&rdquo;: a₀&nbsp;&asymp;&nbsp;cH₀/2&pi; is a 13%-off coincidence among
               constants, and &Sigma;₀ likewise &mdash; both dimensional numerology, both defensible as such, both
               weaker claims than an exact functional identity. The severity ordering was inverted.
@@ -318,12 +321,24 @@ export default function ParameterDerivations() {
               Classified as dimensional analysis / reparametrization on the honest assessment page.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              <strong>The epoch fork is closed, and branch (A) has been tested and disfavored
-              (updated 2026-08-01, after a 2026-07-30 explorer execution).</strong>{' '}
-              this relation is written in H&#x2080; (today&apos;s expansion rate); the site previously said
+              <strong>The epoch fork is closed; branch (A) is forced, and every high-z test of it so far is
+              non-discriminating (current state 2026-09-19).</strong>{' '}
+              a&#x2080;(z) = cH(z)/2&#x03C0; has been checked against direct RAR intercepts (anchor-dominated, below),
+              high-z TFR zero points, and 41 published f<sub>DM</sub>(R<sub>e</sub>) values; the f<sub>DM</sub> route
+              splits by fitting method (Price MCMC vs Genzel least squares), so the <em>level</em> is
+              method-dominated. The level-free test is the trend ratio k(z<sub>hi</sub>)/k(z<sub>lo</sub>) &mdash;
+              not yet run. TFR zero points cannot constrain a&#x2080;(z) at all (Milgrom 2017 &sect;4): the
+              modelled branch-(A) lever is &minus;0.125 dex at z &#8776; 0.9 and &minus;0.243 dex at z &#8776; 2.3,
+              against a 0.25&ndash;0.35 dex spread between two surveys measuring the same relation at z &#8776; 0.9.
+              <em> Revision trail:</em> this block opened 2026-08-01 as &ldquo;tested and disfavored&rdquo; after a
+              2026-07-30 explorer execution; revised to non-discriminating 2026-08-04 (anchor dependence, below)
+              and re-confirmed 2026-09-19 on the TFR and f<sub>DM</sub> handles.{' '}
+              This relation is written in H&#x2080; (today&apos;s expansion rate); the site previously said
               nothing about H(z), and two prior citations were doing the wrong job. <strong>Citation
               correction:</strong> arXiv:1703.06110 is not Milgrom proposing a&#x2080; ~ cH/2&#x03C0; &mdash; it is
-              the paper that <em>tests and disfavors</em> an evolving a&#x2080; against six high-z discs.
+              the paper that constrains a&#x2080;(z) from six high-z discs (&#8776; 4a&#x2080; at z ~ 2 is in tension;
+              H(z) scaling, 3.0&ndash;3.5&times;, is said to be something the data &ldquo;may help constrain,&rdquo; not
+              claimed excluded); on 41 discs the same test splits by fitting method (explorer 2026-09-19).
               Milgrom&apos;s actual proposals are arXiv:0801.3133 and ApJ 698, 1630 (2009), both cited
               <em>inside</em> 1703.06110 as references. <strong>Branch (B) (&ldquo;present-epoch
               coincidence, no H(z) statement&rdquo;) is not actually available:</strong> it requires a&#x2080; to

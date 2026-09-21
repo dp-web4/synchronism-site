@@ -115,7 +115,7 @@ export default function HandlingFailure() {
           Terms used below:{' '}
           <Link href="/glossary#kill-criterion" style={{ color: 'var(--color-text-muted)' }}>kill criterion</Link>
           {' · '}
-          <Link href="/glossary#post-diction" style={{ color: 'var(--color-text-muted)' }}>post-diction</Link>
+          <Link href="/glossary#post-diction-descriptor-not-a-badge" style={{ color: 'var(--color-text-muted)' }}>post-diction</Link>
           {' · '}
           <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-text-muted)' }}>reparametrization</Link>
           {' · '}

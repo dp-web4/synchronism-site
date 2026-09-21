@@ -275,8 +275,7 @@ export default function HonestAssessment() {
         <h2 id="verdict" style={{ color: 'var(--color-accent-warm)' }}>The Verdict (Updated July 2026)</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           After 3,308 sessions + 13 adversarial stress tests: <strong>0 confirmed predictions, 0 prospective
-          predictions tested, 6 refutations executed</strong> &mdash; 5 on external data (astronomical, ephemeris, and
-          laboratory) plus the Bell/CHSH substrate check, counted as a run, not as data: its local arm illustrates Bell&apos;s theorem, its two
+          predictions tested, 6 refutations executed</strong> &mdash; 5 on external data (astronomical and ephemeris; none is laboratory data) plus the Bell/CHSH substrate check, counted as a run, not as data: its local arm illustrates Bell&apos;s theorem, its two
           nonlocal arms are construction nulls (&ldquo;theorem&rdquo; relabelled 2026-09-14) (wording corrected 2026-09-05; this line said &ldquo;6 on external data&rdquo; while the
           table below classified one of the six as a theorem). &ldquo;Prospective&rdquo; here means the criterion was
           fixed <em>before the data existed</em>; TEST-09&apos;s registered kill fired on pre-existing SPARC data, so it
@@ -467,7 +466,7 @@ export default function HonestAssessment() {
           interpretation, not the condition. Novel-survivor count: <strong>0</strong>.
           The framework produced <strong>47 internal contributions</strong> across ~3,308 sessions &mdash;
           well-posed questions and methodology outputs, zero confirmed novel results.
-          &ldquo;Unconfirmed&rdquo; &ne; &ldquo;wrong&rdquo; &mdash; but the evidence now includes six executed refutations (five on external data &mdash; astronomical, ephemeris, and laboratory &mdash; plus one theorem-level check) and zero surviving novel predictions.
+          &ldquo;Unconfirmed&rdquo; &ne; &ldquo;wrong&rdquo; &mdash; but the evidence now includes six executed refutations (five on external data &mdash; astronomical and ephemeris &mdash; plus one theorem-level check) and zero surviving novel predictions.
         </p>
       </section>
 
@@ -502,13 +501,13 @@ export default function HonestAssessment() {
           Analyses run with results. A kill-criterion-triggered result appears here, not under &ldquo;What Works&rdquo;
           &mdash; the heading reflects what was <em>attempted</em>, not what succeeded.
           The site-wide footer count (&ldquo;0 confirmed; 6 refutations executed&rdquo;, five of them on external data, recounted
-          2026-07-30) covers executed refutations across three data types &mdash; astronomical: the RAR
+          2026-07-30) covers executed refutations on two data types plus one simulation &mdash; astronomical: the RAR
           transition shape (&#x03B3;=2 pinned, &#x0394;BIC=+184), the BTFR slope (TEST-09, registered kill
           fired at 3.3&sigma;, 2026-07-14), dwarf DM fractions (TEST-10 — class exclusion via SPARC&apos;s max
           observed DM fraction, 2026-07-15; the &ldquo;69% exceeds ceiling&rdquo; headline is convention-dependent,
           see the Verdict section above), and the registered environment run (r&sup2; = 0.0001 vs the
           registered &gt;20% claim, 2026-07-14); ephemeris: the Cassini/SPARC joint squeeze (TEST-25, +17.95&sigma;,
-          2026-07-23); and laboratory: the Bell/CHSH substrate test (Bet B1, refuted on both no-signaling arms).
+          2026-07-23); and a simulation run, not laboratory data: the Bell/CHSH substrate test (Bet B1, refuted on both no-signaling arms).
           Through 2026-07-29 the count and its stated scope (&ldquo;external astronomical data&rdquo;) silently
           excluded the last two, both of which were already executed and badged Failed/Refuted elsewhere on the
           site &mdash; a scope word that happens to filter out only failures understates the audit rather than
@@ -1254,7 +1253,7 @@ export default function HonestAssessment() {
               maximum gravitational boost ratio B = g<sub>obs</sub>/g<sub>bar</sub> of
               B<sub>max</sub> &#x2248; 3.17 (from SPARC — Spitzer Photometry &amp; Accurate Rotation Curves — calibration).
               The deepest SPARC bin shows &#x27E8;B&#x27E9; = 10.82, with 579 individual SPARC
-              <strong> data points</strong> exceeding B<sub>max</sub> (corrected 2026-08-07: this page previously
+              <strong> data points</strong> exceeding B<sub>max</sub> (106/153 discs) (corrected 2026-08-07: this page previously
               read &ldquo;579 galaxies,&rdquo; but SPARC contains 175 galaxies &mdash; the 579 counts
               rotation-curve points, as{' '}
               <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>key claims</Link> states

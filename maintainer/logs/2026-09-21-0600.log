@@ -1,0 +1,44 @@
+Starting Synchronism Maintainer Session at Mon Sep 21 06:00:01 PDT 2026
+Both repos are pushed: site `fa82df0`, research `c523048a`. `next build` passes (93 pages) and the site lint is clean.
+
+## WAKE: the feedback exposed a research problem, not just site problems
+
+**The program's one "genuinely prospective" test can't fire its kill.** A visitor persona pointed out that the DESI DR2 pre-commitment for TEST-04a stacks two 3σ requirements. Its kill branch reads "fσ₈ > 0.46 at ≥3σ", but 0.46 is already the prediction plus 3σ. I computed the odds (`maintainer/scripts/test04a_dr2_branch_power.py`). Assuming ΛCDM is true and DR2's error is anywhere from 0.025 to 0.045:
+
+| Branch | Chance it fires |
+|---|---|
+| Kill, as adopted | **under 1%** |
+| Kill, read cleanly: (obs − 0.418)/σ > 3 | 4–22% |
+| Framework-friendly branch A ("criterion met by suppression") | **29–38%** |
+
+Three more things came out of it:
+- **The source forecast doesn't match the threshold.** Session 107's own forecast σ at this bin is 0.018; the 0.46 threshold implies 0.014.
+- **Even a clean single bin is underpowered.** Only Session 107's five-bin table has a chance of reaching 3σ.
+- **The row tests a retired mechanism.** The 0.418 prediction comes from a growth-suppression mechanism the current framework no longer contains.
+
+DESI's DR2 galaxy growth results aren't published yet (I checked), so re-registering still counts as prospective. dp adopted the registration, so changing it is dp's call. I wrote a proposal and added a flag to PREDICTIONS.md without changing the registration text. Until dp decides, the site's TEST-04a card says branch B fires under 1% of the time if ΛCDM holds.
+
+**Frame point:** this registration got a timing check (filed before the data) but no power check. A required line on every registration, "chance each branch fires if the standard model is true", would have caught this on 2026-07-17.
+
+## Site fixes
+- **First Encounter Part D (HIGH):** now says "crossover", and that the 1,703 γ values were fitted, not predicted. Linked blurbs and a sibling page (`/gamma-parameter`) had the same wording; fixed too.
+- **/why-synchronism, Beginner step 1 (HIGH):** added a three-line "what happened" box with "you can stop here". The ~4,000-word technical part is folded below it. The verdict (0 confirmed, 6 refutations) stays above the fold.
+- **/for-researchers:** the AI-audit control-arm passage had "positive" and "negative" swapped; fixed. It now gives one J interval, [−0.71, +0.46], and sensitivity as 3/3 per rule. The Bell item no longer reads like a positive result.
+- **/key-claims:** "privileged-frame" became "observer-privilege" (also on `/observer-problem`), plus a new Leggett–Garg open question.
+- **Explorer 09-19 items**, carried over because the 09-20 maintainer run failed on usage credits: the a₀(z) wording on /parameter-derivations (×2) and on /mond-unification.
+- **Other fixes:**
+  - "Withdrawn" now has one definition across the site.
+  - Glossary terms now also answer to lowercase links like `/glossary#kill-criterion`.
+  - Several number and wording corrections on /coherence-function, /honest-assessment and the tool pages.
+- **Lint:** 14 new retired-phrase rules. They caught two more copies on sibling pages, which fits the visitor's summary: corrections aren't propagating.
+
+## Explorer topics
+- `test04a-five-bin-growth-statistic-on-dr1-before-dr2.md`: time-sensitive, only counts if done before DR2 publishes.
+- `temporal-scanning-vs-leggett-garg.md`: could move claim 1 from "untestable as stated" to tested against existing experiments.
+
+## Open
+- **Explorer topic backlog:** 91 open topics against about one explorer session a day. It needs a triage pass.
+- **Deferred:** Beginner path steps 2–3, a "which function each refutation tested" column (waiting on dp), and breadcrumbs, now deferred three days running.
+- **Your setup:** Gmail, Google Calendar and Google Drive need authorizing in claude.ai connector settings. The playwright MCP server failed to connect because `npx` isn't on PATH.
+
+Sources: [DESI DR1 bispectrum + DR2 BAO](https://arxiv.org/pdf/2606.23936), [DESI DR2 Lyα full-shape validation](https://arxiv.org/abs/2607.27411), [DESI DR1 full-shape (2411.12022)](https://arxiv.org/pdf/2411.12022)

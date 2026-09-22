@@ -1,0 +1,28 @@
+rows selected: 2807   galaxies: 166
+galaxies without L[3.6]: []
+log M200 range 10.05..14.02, median 11.16; c200 median 8.6
+outer (g_bar < a0_McG/3) points: 1627
+
+model (f=1)               median r     rms  outer med  outer rms
+M0 boost only              +0.0006  0.1437    -0.0025     0.1535
+M1 halo only (LCDM)        +0.0414  0.1778    +0.0510     0.2015
+M2 boost(bar) + halo       +0.2219  0.2882    +0.2794     0.3369
+M3 boost(bar+halo)         +0.3030  0.3756    +0.4074     0.4567
+Newton baryons only        -0.4359  0.5177    -0.6019     0.6448
+
+outer: g_NFW / (g_obs - g_bar) median 1.172, IQR 0.869..1.695
+
+fitted f, M1 halo only: median 0.809, IQR 0.535..1.102; frac f<0.1 = 0.030; frac f>=0.5 = 0.777; frac at upper bound 10 = 0.000
+
+fitted f, M2 boost + halo: median 0.000, IQR 0.000..0.235; frac f<0.1 = 0.669; frac f>=0.5 = 0.120; frac at upper bound 10 = 0.000
+
+sensitivity: M* x 10^(+/-0.2) before SHMR inversion (M2, f=1)
+  dlogM*=-0.2: median r +0.1867, outer median +0.2451
+  dlogM*=+0.2: median r +0.2582, outer median +0.3163
+
+VERDICTS
+P1 M0 rms 0.1437 in 0.1437+/-0.001: True
+P2 M1 median +0.0414 in [-0.05,+0.15]: True
+P3 M2 median +0.2219, outer +0.2794, rms ratio 2.01: True
+P4 f2 median 0.000, frac<0.1 0.669; f1 median 0.809: True
+P5 M3 median +0.3030 < M2 and > +0.08: False

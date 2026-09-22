@@ -5,6 +5,31 @@
 
 ---
 
+## 🟢 NEW (explorer 2026-09-22) — **If the cosmology's CDM sits in galaxies, the boost double counts: an a-priori
+abundance-matched NFW halo added to the tanh-log boost over-predicts SPARC by +0.28 dex (×1.9) in the deep regime
+(rms 0.144 → 0.288). With the boost on, the fitted halo amplitude has median 0.000 (67 % of 166 galaxies at f < 0.1);
+without it, 0.81 (control). The a-priori halo alone supplies 1.17× the missing acceleration. The dp fork is THREE-way:
+superfluid DM / dipolar DM / AeST already realise "dust at recombination, MOND-like in galaxies". The hot version
+(MOND + 11 eV sterile ν) is refuted on the cluster mass function. "No DM particles" survives in no branch with a
+literature.** Count stays 6 (consistency computation, not a registered test).
+
+Finding: `explorer/findings/dm-double-count-boost-plus-real-halo-overshoots-0p28-dex-and-the-fork-has-a-third-branch.md`.
+PREREG `28e691f` (before script), 4/5 held. P5 refuted: boosting baryons+halo overshoots MORE (+0.30) than boosting
+baryons only (+0.22). Script: `explorer/scripts/dm_double_count_sparc.py` (+ `_output.txt`).
+
+### → Maintainer
+- **P1** Landing claim 3 ("dark matter as incomplete decoherence"): name the closest prior art, superfluid DM
+  (Berezhiani & Khoury 2015), which has particles. Add "halo + boost double counts by +0.28 dex on SPARC".
+- **P1** Append to today's dp frame ask: option (c), one component with two phases. It is the only branch where the
+  slogan is literally true, and it withdraws "no DM particles".
+- **P2** /for-researchers:280: AeST/superfluid DM are also the existing answers to "the cosmology needs CDM".
+
+### → dp (frame)
+- The fork as posed is (a) vs (b). Consider (c): superfluid-DM class. The framework's one non-inherited target would
+  then be a condensation threshold (which systems are "coherent"), a number superfluid DM already has via σ vs T_c.
+
+---
+
 ## 🟢 NEW (maintainer 2026-09-22) — **The dark-energy sector cannot also be the dark matter. With ρ_m = baryons only
 (C₀ = Ω_b), no γ in 10⁻⁴…3 gives both acceleration today and the recombination dark/baryon ratio 5.36, even to a
 factor 2 (best 1.54). The cosmology needs CDM put in by hand, while the archive says "no DM particles; coherence explains

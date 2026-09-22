@@ -1,1 +1,30 @@
 Starting Synchronism Explorer Session at Tue Sep 22 08:00:01 PDT 2026
+I worked the new dark-matter double-count topic. The main result: dp is being asked to choose between two dark-matter stories, and a third already exists in the published literature. I also pre-registered and ran a test on real rotation-curve data (SPARC) of what happens if both the coherence boost and ordinary dark-matter halos are present. Everything is committed and pushed (`28e691f` registration, `8d1b3a8` session).
+
+**Why this topic:** the maintainer already says more auditing has reached bookkeeping returns. The only question that changes the research direction is the one waiting on dp: which dark-matter story does the framework keep? I put the planetary-ephemerides topic on hold. My rough estimate is that the whole range of γ the SPARC fit allows is ruled out there by a factor of 10³–10⁴. But at γ = ½ this reading is simply MOND, so that failure is already known from MOND and says nothing specific to Synchronism.
+
+**Test result** (2807 points, 166 galaxies; boost at γ = 0.489; halo masses set by standard ΛCDM matching of galaxy mass to halo mass, no per-galaxy tuning):
+- **Boost plus a real halo overshoots.** It over-predicts the observed acceleration by +0.22 dex overall and +0.28 dex (×1.9) in the low-acceleration outer parts. The rms error doubles, from 0.144 to 0.288.
+- **With the boost on, the data want no halo.** When I let each galaxy's halo strength float, the median fitted value is 0.000, and 67% of galaxies prefer less than 0.1. The check without the boost finds halos normally (median 0.81), so the method can see a halo when there's room for one.
+- **The halo and the boost do the same job.** On its own, the standard halo supplies 1.17× the missing acceleration. Plain ΛCDM with no tuning is off by only +0.04 dex in the median. The boost's only edge is lower scatter (0.144 vs 0.178), which is the usual MOND-vs-ΛCDM argument, not anything specific to Synchronism.
+- **4 of 5 predictions held.** The one that failed: I predicted that applying the boost to baryons plus halo would overshoot less than applying it to baryons only. It overshoots more (+0.30 vs +0.22). My reasoning looked at the boost factor, which does fall, instead of the boosted total, which rises. I saved this as a memory.
+
+**The third branch:** some published theories already do what the framework needs from dark matter. They have one component that acts like ordinary dark matter in the early universe and gives a MOND-like force inside galaxies:
+- **Superfluid dark matter** (Berezhiani & Khoury 2015): condensed inside galaxies, partly uncondensed in clusters. The framework's slogan "dark matter as incomplete decoherence" describes this almost word for word, but this theory has dark-matter particles.
+- **Dipolar dark matter** (Blanchet & Le Tiec 2008–09) and **AeST** (Skordis & Złośnik 2021) are the other working versions.
+- **MOND plus light sterile neutrinos** has been ruled out: simulations always produce too many massive clusters (Katz et al. 2013).
+
+So none of the surviving options keeps "no dark-matter particles, just baryons plus a modification".
+
+**For the maintainer:**
+- **P1:** the landing page's claim 3 should name superfluid dark matter as the closest prior art and cite the +0.28 dex overshoot.
+- **P1:** add option (c), one component with two phases, to today's question for dp. It is the only branch where the slogan is literally true.
+- If dp picks (c), the framework needs one new number: which systems are condensed, a threshold like superfluid dark matter's velocity-dispersion cutoff. That would be the first prediction in this sector not borrowed from existing theories.
+
+The ledger count stays at 6, because this is a consistency check, not a registered-prediction test.
+
+**Setup notes:** NotebookLM wasn't authenticated, so I used web search. The playwright server failed to connect (`npx` isn't on PATH). The Gmail, Calendar and Drive connectors need authorizing in claude.ai's connector settings before they can be used.
+
+Finding: `explorer/findings/dm-double-count-boost-plus-real-halo-overshoots-0p28-dex-and-the-fork-has-a-third-branch.md`
+
+Sources: [Katz+2013, arXiv:1309.6094](https://arxiv.org/abs/1309.6094) · [Angus & Diaferio 2011](https://academic.oup.com/mnras/article/417/2/941/983667) · [Blanchet & Le Tiec 2009](https://arxiv.org/abs/0901.3114) · [Berezhiani & Khoury 2015](https://link.aps.org/accepted/10.1103/PhysRevD.92.103510) · [Mistele, McGaugh & Hossenfelder 2022](https://arxiv.org/abs/2201.07282)

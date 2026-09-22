@@ -1,1 +1,49 @@
 Starting Synchronism Maintainer Session at Tue Sep 22 06:00:02 PDT 2026
+Both repos are pushed: the site at `1fa7a0f` (Vercel deploys on push) and the research repo at `88b0f5db`. The final build passed with zero errors, and the phrase checker `site_lint.py` reports 0 hits across 102 rules.
+
+## WAKE: one research gap
+The researcher persona noticed that the cosmology sector is calibrated on a matter density that includes cold dark matter (C₀ = Ω_m, Session 100). Meanwhile Sessions 241 and 277 say there are no dark-matter particles and that coherence explains both dark sectors. Nothing in the archive had run the sector with baryons only, so the claim was untested, not refuted.
+
+I pre-registered the check (`71ba3e0`) before writing the script, then ran it:
+- **Result:** with baryons only, no γ gives both accelerating expansion today and enough dark matter at recombination, even allowing a factor of 2. The best any accelerating γ reaches is 1.54× the baryons; 5.36× is needed. The γ values that do reach 5.36 are decelerating today.
+- **Control:** with dark matter included, the setup reproduces ΛCDM to 2×10⁻¹⁶.
+- **Predictions:** all 5 registered predictions held.
+- **Ledger:** no change. The refutation count stays at 6 and confirmed predictions stay at 0. This is an internal inconsistency, not a failed registered prediction.
+- **Back-annotated:** a block in PREDICTIONS, notes in Sessions 100, 241 and 277 (original text kept), and a proposal.
+
+**For you to decide:** which dark-matter story the framework keeps.
+- **Keep SPINE's version:** dark matter as "patterns that interact only gravitationally" fits a cosmology that needs cold dark matter. The "no dark-matter particles" claims in Sessions 241 and 277 would then be withdrawn.
+- **Keep the coherence-boost version:** there is then no working dark-energy calibration in the current equation family.
+- **Keep both:** galaxies get a real dark-matter halo plus a boost on top of it, which double counts.
+
+## Site fixes
+- **One status per test.** TEST-09 now says the same thing everywhere: the kill fired only under one ceiling convention, and whether it counts in the 6 is pending your review. TEST-04a now has one badge and description on all four pages. TEST-26 now uses the corrected wording from /dark-energy everywhere.
+- **Beginner path:**
+  - a "you can stop here" box on Honest Assessment;
+  - a plain-language gloss on the Lorentz-invariance gap;
+  - a one-line explanation of tanh on First Encounter;
+  - a "the data point the other way" callout on /core-idea;
+  - a landing sentence saying "tested" means against existing data.
+- **Physics pages:**
+  - /galaxy-rotation: the Solar-System tail is now described as the larger effect (about 10⁵× the Cassini one). The "SPARC pins q" claim is withdrawn, and the open BIC-bookkeeping question is resolved from the code.
+  - /two-reframes and /key-claims: the explorer's corrections from 09-21 are in.
+  - /a2acw: now says the health-score normalisation is not documented anywhere, so the reported scores can't be interpreted.
+
+## Found by me, not by the visitor
+The worst overclaims were on pages no persona visits:
+- /mond-comparator said a₀ = cH₀/2π was "derived from first principles".
+- /publication-roadmap said "MOND rejected at 32σ" and gave a 0.88 readiness score to a claim marked Failed.
+- Ten pages still had live "Validated"/"Supported" badges, which you retired on 2026-05-28.
+
+I found them by listing pages never edited since the February initial commit, and by adding a lint rule that catches any deprecated badge. All of them are now corrected against the ledger, and I saved the technique as a memory.
+
+## Next
+- **Explorer topics:**
+  - compute the planetary-ephemeris bound on the tail;
+  - build a table of which reading of the coherence function each refutation actually hits;
+  - the dark-matter double count.
+- **Deferred:** splitting the badge legend into separate label types, and reading the 9 remaining never-edited content pages against the ledger.
+
+My view: the researcher persona is right that auditing the framework now mostly turns up bookkeeping. The one place a positive finding is still possible is the A2ACW experiment on post-cutoff material, with citations stripped and blind scoring. Whether to switch effort there is your call.
+
+The Gmail, Google Calendar and Google Drive connectors need authorising in your claude.ai connector settings, and the playwright server failed to start because `npx` isn't on the PATH. Nothing today depended on them.

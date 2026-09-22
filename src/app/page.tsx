@@ -24,7 +24,9 @@ export default function Home() {
           galaxies, wavefunction collapse for quantum measurement). That is what the equation tried to do.
           Tested against real data, it has not won: the one non-degenerate galaxy test collapsed it onto MOND
           (Modified Newtonian Dynamics &mdash; the 40-year-old rival gravity theory it keeps losing to), and the
-          cluster scale requires a second density parameter the framework doesn&apos;t have. Every failure is
+          cluster scale requires a second density parameter the framework doesn&apos;t have. &ldquo;Tested&rdquo; here
+          means checked against data that already existed (retrodiction); no prediction has yet been made first
+          and then checked against new data. Every failure is
           documented honestly &mdash; the honest map of where it fails is the product.
         </p>
 
@@ -173,7 +175,7 @@ export default function Home() {
               <strong>2.</strong> Consciousness equation &mdash; <em>Speculative</em> (C&nbsp;&asymp;&nbsp;0.50 threshold untestable as stated)
             </span>
             <span style={{ color: '#ef4444' }}>
-              <strong>3.</strong> Dark matter as incomplete decoherence &mdash; <em>Failed</em> as a mechanism; the galaxy fits that work are MOND in new notation (a reparametrization)
+              <strong>3.</strong> Dark matter as incomplete decoherence &mdash; <em>Failed</em> as a mechanism; the galaxy fits that work are MOND in new notation (a reparametrization), and the framework&apos;s own cosmology needs ordinary cold dark matter put in by hand (<Link href="/dark-energy" style={{ color: 'inherit', textDecoration: 'underline' }}>details</Link>)
             </span>
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', margin: '0.5rem 0 0' }}>

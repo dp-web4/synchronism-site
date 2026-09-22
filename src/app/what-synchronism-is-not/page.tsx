@@ -22,7 +22,17 @@ const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: Re
   {
     claim: 'Journal-reviewed science',
     plain: 'No science journal has checked this; AI models reviewed each other\'s work, with a human overseeing.',
-    reality: 'No manuscripts have been submitted to academic journals. The framework has been extensively reviewed across 3,308 AI-to-AI sessions (A2ACW protocol) with multiple models stress-testing derivations, flagging errors, and challenging assumptions — with human oversight. That\'s a real review process, but it\'s not the traditional one. Journal peer review may surface issues this process missed.',
+    reality: (
+      <>
+        No manuscripts have been submitted to academic journals. The framework has been extensively reviewed across
+        3,308 AI-to-AI sessions under the A2ACW protocol (AI-to-AI Adversarial Collaboration Workshop), with multiple models
+        stress-testing derivations, flagging errors, and challenging assumptions &mdash; with human oversight. This is
+        internal adversarial review by AI models, not peer review: no independent human expert has checked the work, and
+        the reviewers share the project&apos;s context. It has caught real errors, but it is not the traditional process,
+        and journal peer review may surface issues it missed. How the protocol works and what it has and hasn&apos;t
+        shown: <Link href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW</Link>.
+      </>
+    ),
   },
   {
     claim: 'Proven',
@@ -32,7 +42,7 @@ const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: Re
         In the February 2026 tally on the{' '}
         <Link href="/status-dashboard" style={{ color: 'var(--color-accent-blue)' }}>Status Dashboard</Link> (a historical
         page that records that month&apos;s tally), 54 of 92 listed predictions (59%) were untested, 34 of those 54 in
-        consciousness. That tally predates the later audits (it still counts chemistry consistency checks as
+        consciousness. That figure is a February 2026 snapshot and has not been recomputed since. It also predates the later audits (it still counts chemistry consistency checks as
         &ldquo;validated&rdquo;); the current prediction ledger records 0 confirmed novel predictions and does not publish a
         single untested-of-total figure. Two quantum results are consistent with published experiments (PRL 2024,
         arXiv 2508.07046), but both are reparametrizations: the decoherence formula &Gamma; = &gamma;&sup2;(1&minus;c) is the
@@ -58,8 +68,9 @@ const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: Re
   },
   {
     claim: 'A Lorentz-invariant theory',
-    plain: 'Its universal clock would naturally break a basic rule of relativity by far more than existing experiments allow.',
-    reality: 'Added 2026-09-10 after a researcher persona went looking for the framework\'s single largest fine-tuning problem on this page and had to find it on /honest-assessment instead — the page whose job is enumerating what this is not was missing the biggest item. A discrete absolute-time substrate singles out a preferred frame, and a preferred frame leaks into the matter sector: the one-loop estimate gives Lorentz-violating coefficients c_μν ~ α/π ~ 10⁻²–10⁻³, against cavity bounds ≲10⁻¹⁸ and comagnetometer bounds ≲10⁻²⁹–10⁻³⁰. That is a gap of 16 to 28 orders of magnitude, and it is excluded at face value by experiments that already exist — no new instrument required. Custodial / protection mechanisms that would suppress the leak exist in the literature, but NONE is exhibited anywhere in this framework, so the gap is unaddressed rather than answered. One precision, in the framework\'s favour and stated because it is true: the scheme-independence of that one-loop estimate is itself disputed in the literature, so this is a NATURALNESS problem, not a theorem — an unprotected preferred frame is wildly unnatural, which is a different and weaker claim than "mathematically impossible." It is still the largest single number standing against the ontology, and it is larger than anything in the galaxy sector.',
+    plain: 'Its universal clock would naturally break a basic rule of relativity by far more than existing experiments allow. In plain words: Lorentz invariance is the rule that the laws of physics look the same to every observer moving at a steady speed. A single universal clock ("absolute time") picks out one special observer, which breaks that rule, and the simplest version of the framework breaks it by an amount existing experiments already rule out. That applies to the minimal framework at its natural value: it is a gap the framework would need a mechanism to close (other absolute-time theories have proposed such mechanisms; this one has none yet), not a refutation of the whole idea.',
+    reality: 'A discrete absolute-time substrate singles out a preferred frame, and a preferred frame leaks into the matter sector: the one-loop estimate gives Lorentz-violating coefficients c_μν ~ α/π ~ 10⁻²–10⁻³, against cavity bounds ≲10⁻¹⁸ and comagnetometer bounds ≲10⁻²⁹–10⁻³⁰. That is a gap of 16 to 28 orders of magnitude, and it is excluded at face value by experiments that already exist — no new instrument required. Custodial / protection mechanisms that would suppress the leak exist in the literature, but NONE is exhibited anywhere in this framework, so the gap is unaddressed rather than answered. One precision, in the framework\'s favour and stated because it is true: the scheme-independence of that one-loop estimate is itself disputed in the literature, so this is a NATURALNESS problem, not a theorem — an unprotected preferred frame is wildly unnatural, which is a different and weaker claim than "mathematically impossible." It is still the largest single number standing against the ontology, and it is larger than anything in the galaxy sector. Status in the prediction ledger: the minimal framework is refuted at its natural value (conditional on its unspecified interactions); for Synchronism specifically this is an open custodial-mechanism gap, not a decisive refutation. The escape that works for other absolute-time theories (a hierarchy of scales, shown for Hořava–Lifshitz gravity) is obstructed here by the framework\'s single-substrate assumption, so the mechanism is owed, not supplied.',
+    note: 'Card added 2026-09-10: this page, whose job is listing what the framework is not, was missing its single largest fine-tuning problem, which a reader had to find on /honest-assessment instead.',
   },
   {
     claim: 'Just philosophy',
@@ -110,7 +121,7 @@ export default function WhatSynchronismIsNot() {
             <li><strong>Not proven.</strong> No prediction has been confirmed. Most have never been tested, and none of those checked came out as a win for this framework: they failed, could not decide anything, or turned out to be known physics written differently.</li>
             <li><strong>Not checked by science journals.</strong> Nothing has been submitted. The checking so far was done by AI models reviewing each other&apos;s work, with human oversight &mdash; real, but not the usual route.</li>
             <li><strong>Not a replacement for today&apos;s physics.</strong> It does not replace the standard theories of particles, gravity or the universe&apos;s history, nor the rival gravity idea MOND. Where it matches data, it mostly restates them.</li>
-            <li><strong>Not compatible, as it stands, with a basic rule of relativity</strong> (that the laws look the same at any steady speed). Its built-in universal clock would naturally break that rule by an amount existing experiments already rule out, and nothing in the framework explains why it doesn&apos;t (a serious warning sign, not a mathematical proof).</li>
+            <li><strong>Not compatible, as it stands, with a basic rule of relativity</strong> (that the laws look the same at any steady speed). Its built-in universal clock would naturally break that rule by an amount existing experiments already rule out, and nothing in the framework explains why it doesn&apos;t. That is a serious warning sign for the simplest version, not a refutation of the whole idea: closing the gap would take a protective mechanism, which other absolute-time theories have proposed and this one has not.</li>
             <li><strong>Not just new labels, and not just philosophy.</strong> The claim is that quantum behaviour, consciousness and galaxy motion are one phenomenon at different scales, with concrete tests attached. That is either wrong or important &mdash; and it can fail.</li>
           </ul>
           <p style={{ margin: '0.6rem 0 0', color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>

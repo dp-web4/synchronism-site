@@ -30,7 +30,17 @@ export default function StatusDashboard() {
     <>
       <Breadcrumbs currentPath="/status-dashboard" />
       <h1>Status Dashboard</h1>
-      <ValidationBadge status="validated" label="Current as of Feb 2026" />
+      <ValidationBadge status="superseded" label="February 2026 snapshot" />
+
+      <div className="card" style={{ marginTop: '1rem', borderLeft: '3px solid #f59e0b' }}>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+          <strong>This page is a February 2026 snapshot, kept as history.</strong> Its counts use the
+          &ldquo;Validated&rdquo; and &ldquo;Supported&rdquo; labels, which were deprecated on 2026-05-28. Every
+          &ldquo;Validated&rdquo; claim audited since then was demoted (0 of 9 survived), and the canonical ledger
+          now counts <strong>0 confirmed novel predictions</strong>. For current status see the{' '}
+          <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
+        </p>
+      </div>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <h2>Prediction Outcomes by Domain</h2>
@@ -39,8 +49,8 @@ export default function StatusDashboard() {
             <thead>
               <tr style={{ borderBottom: '2px solid var(--color-dark-border)' }}>
                 <th style={{ textAlign: 'left', padding: '0.5rem' }}>Domain</th>
-                <th style={{ textAlign: 'center', padding: '0.5rem', color: '#10b981' }}>Validated</th>
-                <th style={{ textAlign: 'center', padding: '0.5rem', color: 'var(--color-accent-blue)' }}>Supported</th>
+                <th style={{ textAlign: 'center', padding: '0.5rem', color: '#10b981' }}>&ldquo;Validated&rdquo; (Feb 2026 label, deprecated)</th>
+                <th style={{ textAlign: 'center', padding: '0.5rem', color: 'var(--color-accent-blue)' }}>&ldquo;Supported&rdquo; (Feb 2026 label, deprecated)</th>
                 <th style={{ textAlign: 'center', padding: '0.5rem', color: '#f59e0b' }}>Untested</th>
                 <th style={{ textAlign: 'center', padding: '0.5rem', color: '#ef4444' }}>Failed</th>
               </tr>
@@ -74,7 +84,7 @@ export default function StatusDashboard() {
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
             <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: '#10b981' }}>36%</p>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem' }}>Validated/Supported</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem' }}>&ldquo;Validated/Supported&rdquo; in Feb 2026 (deprecated labels)</p>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
             <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: '#f59e0b' }}>59%</p>
@@ -117,7 +127,7 @@ export default function StatusDashboard() {
           ))}
         </div>
 
-        <h2>The Honest Verdict</h2>
+        <h2>The Honest Verdict (February 2026)</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)' }}>
             59% of predictions are untested. The &ldquo;validated&rdquo; chemistry predictions are

@@ -32,6 +32,12 @@ export default function GammaCalculator() {
         <h1 style={{ margin: 0 }}>&#x03B3; Calculator</h1>
         <ValidationBadge status="audited-negative" label="Formula Audited-Negative — Sign Inverted for All Collective Systems" />
       </div>
+      <p style={{ color: 'var(--color-text-primary)', fontSize: '1rem', marginBottom: '0.5rem' }}>
+        <strong>This tool lets you explore how a failed formula fails.</strong> It computes
+        &#x03B3; = 2/&#x221A;N<sub>corr</sub>, the framework&apos;s original guess for &#x03B3;, which an internal audit
+        found gets the direction backwards for collective systems. It is kept so you can watch that happen, not as a
+        way to estimate &#x03B3;.
+      </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginBottom: '0.5rem' }}>
         Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index Kind and Status
         tags &mdash; Artifact Lesson is an operational state, not a level: a tool kept to show a failure, not a verdict) &middot; Claim status: <strong>Audited-Negative</strong>, the
@@ -205,8 +211,10 @@ export default function GammaCalculator() {
             <strong>Where &#x03B3; lands when data chooses (2026-07-22 mechanism):</strong> fit free on SPARC
             galaxy data, &#x03B3; converges to 0.49 — and that number now has an identified meaning. &#x03B3; sets
             the curve&apos;s <em>Newtonian-return exponent</em> q = 2&#x03B3; (C approaches 1 like
-            (1+&#x03C1;/&#x03C1;<sub>crit</sub>)<sup>&minus;2&#x03B3;</sup>), and the fit pins q &asymp; 0.98 —
-            cross-validated by an independent free-Hill fit (n = 0.975). q = 1 is the value hard-coded in
+            (1+&#x03C1;/&#x03C1;<sub>crit</sub>)<sup>&minus;2&#x03B3;</sup>). Within this one-parameter family the
+            SPARC transition shape maps onto q &asymp; 0.98 (a free-Hill fit to the same data gives n = 0.975); the
+            asymptotic return itself is not constrained by SPARC, which reaches only moderate accelerations (an
+            exponential return fits equally well). q = 1 is the value hard-coded in
             MOND&apos;s &ldquo;simple&rdquo; &#x03BC;-function, so &#x03B3; = 0.49 is not a constant awaiting
             derivation: it is the tanh family&apos;s encoding of MOND. The framework&apos;s asserted &#x03B3; = 2
             means q = 4 — returning to Newton far too abruptly, which is the &#x0394;BIC = +184 refutation

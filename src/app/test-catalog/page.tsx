@@ -53,8 +53,10 @@ export default function TestCatalog() {
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0.25rem 0 0', maxWidth: '65ch' }}>
         <strong>26 tests</strong> (24 in the original registry + 2 added later). There is no single page-level status, so
         each test carries its own badge on its tier page. <strong>Executed and Failed:</strong> TEST-09, TEST-10, TEST-25, and
-        one environment run filed on TEST-03s (which also answers TEST-01 and TEST-05). <strong>Run but underpowered as
-        registered:</strong> TEST-04a. <strong>Reparametrization:</strong> TEST-08. <strong>Withdrawn:</strong> TEST-04.
+        one environment run filed on TEST-03s (which also answers TEST-01 and TEST-05); the TEST-09 and TEST-10 kills
+        fire at the site&apos;s ceiling B<sub>max</sub> = 1/&Omega;<sub>m</sub> but are convention-dependent, and whether
+        they stay in the count of 6 is pending dp. <strong>Failed &mdash; underpowered as registered (not counted as a
+        refutation):</strong> TEST-04a. <strong>Reparametrization:</strong> TEST-08. <strong>Withdrawn:</strong> TEST-04.
         The rest have not been run, or cannot be run as stated (details on each tier page).
       </p>
       <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.35rem' }}>
@@ -116,9 +118,15 @@ export default function TestCatalog() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#f59e0b' }}>Discrimination status:</strong>{' '}
-          Of these 24 proposed tests, <strong>0 selected Synchronism over MOND+EFE+&Lambda;CDM, and none still unrun can</strong>.{' '}
+          Of these 24 proposed tests, <strong>0 selected Synchronism over MOND+EFE+&Lambda;CDM, and none still unrun can
+          select the framework as postulated</strong>.{' '}
           <strong>2 executed tests did discriminate, and both selected MOND</strong> (TEST-09, BTFR slope,
-          separating the models at 3.3σ; TEST-10, dwarf DM fractions). TEST-09 and TEST-10 would have selected
+          separating the models at 3.3σ; TEST-10, dwarf DM fractions). Both kills are convention-dependent: TEST-09 fired at
+          B<sub>max</sub> = 1/&Omega;<sub>m</sub> (n = 3.35, |&Delta;n| = 0.41 &gt; 0.3) but the 2026-09-18 ceiling sweep finds
+          it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub> (|&Delta;n| = 0.30, strict
+          &gt; 0.3) or &Omega;<sub>m</sub>/&Omega;<sub>b</sub> (0.26), so it does not survive its own pre-fixed rule; the
+          convention-free results are class exclusions, B<sub>max</sub> &#8818; 5.4 by the BTFR slope and
+          B<sub>max</sub> &#8818; 14 by SPARC dwarfs. Whether they stay in the count of 6 is pending dp. TEST-09 and TEST-10 would have selected
           the framework had its boost ceiling held.
           A test that separates two models <em>is</em> discriminating regardless of which one wins. The
           remaining Tier-1 tests are self-eliminating (no outcome selects Synchronism), failed by sign, or
@@ -139,6 +147,8 @@ export default function TestCatalog() {
             This box once said &ldquo;0 discriminate&rdquo;, which was false: TEST-09 and TEST-10 discriminated and
             selected MOND. It later said &ldquo;0 could select Synchronism&rdquo;, which was also false for those two
             tests. The current wording (&ldquo;0 selected; 2 discriminated, both selected MOND&rdquo;) replaced both.
+            Until 2026-09-22 it also said &ldquo;none still unrun can&rdquo; without the qualifier &ldquo;select the
+            framework as postulated&rdquo;; TEST-26 (outside the 24) can select the mean-density dark-energy reading.
           </details>
         </div>
         <div style={{
@@ -181,7 +191,8 @@ export default function TestCatalog() {
           Tests use <strong>one flat namespace</strong>: TEST-01 &hellip; TEST-24 across the four tiers
           (Tier 1 = 01&ndash;10, Tier 2 = 11&ndash;14, Tier 3 = 15&ndash;21, Tier 4 = 22&ndash;24), plus <strong>TEST-25</strong>,
           the Cassini/SPARC squeeze added out-of-band 2026-07-28, and <strong>TEST-26</strong>, the DESI DR3
-          dark-energy class no-go (proposed 2026-08-10, prospective, kill-or-tie; catalog-registered 2026-08-12
+          dark-energy class no-go (proposed 2026-08-10, prospective; kill or tie for the framework as postulated, select only
+          on the mean-density reading; catalog-registered 2026-08-12
           after a visitor pass found it existing on one page and absent here). Suffixes: <code>a</code> = amended sub-test
           registered after the parent was withdrawn (TEST-04a); <code>s</code> = substituted protocol, run on a
           different sample than the one registered (TEST-03s). Both suffixes mark a test that is{' '}
@@ -219,7 +230,7 @@ export default function TestCatalog() {
               </details></li>
             <li><strong>Galaxy rotation</strong> (14,610 galaxies run: 175 SPARC + 14,435 ALFALFA-SDSS after the quality cut; 14,760 before it &mdash; the site quotes the sample actually run): qualitative curve match — <span style={{ color: '#f59e0b' }}>MOND reparametrization</span>, not novel</li>
             <li><strong>TEST-03 TFR scatter</strong>: <span style={{ color: '#f59e0b' }}>NEVER RUN AS REGISTERED</span> — the R&sup2; = 0.14 figure previously reported here was a metric conflation (morphology statistic on N &asymp; 171, not the registered test on N = 14,585; corrected 2026-07-09). The environment claim was later executed 2026-07-14 (research repo): r&sup2; = 0.0001, ~900&times; under the framework&apos;s &gt;20% claim — <span style={{ color: '#ef4444' }}>environment prediction REFUTED by execution</span>. <strong>But not as registered</strong> (declared 2026-07-27): that run used N = 141 SPARC galaxies vs Cosmicflows-4 ambient density, not the registered N = 14,585 ALFALFA-SDSS cluster/field/void classification — different dataset, different proxy, ~100&times; smaller sample. It is designated <strong>TEST-03s</strong> and the registered TEST-03 remains unrun and runnable. Read the census as <strong>3 registered kills + 1 substituted-protocol kill</strong>, not 4 identical ones</li>
-            <li><strong>DESI fσ₈ (TEST-04a)</strong>: <span style={{ color: '#f59e0b' }}>UNDERPOWERED AS REGISTERED</span> <span style={{ color: 'var(--color-text-muted)' }}>(prediction 0.418 sits 2.1σ from the DESI DR1 LRG1 value 0.550 ± 0.062; the registered fσ₈(z=0.51) &gt; 0.46 threshold is crossed on the point estimate but only by 1.5σ, short of the &gt;3σ it was registered to deliver; that &gt;3σ presumed σ &asymp; 0.014, and DR1 delivers 0.062, 4.4&times; larger; corrected 2026-07-14, restated in this three-number form 2026-09-15; the widely-quoted 2.4σ disfavor is on σ₈, a GR-conditioned statistic that cannot falsify modified growth; DESI&apos;s own MG analysis gives μ₀ within 1σ of zero. Not counted in the refutation census. DR2 both-outcome pre-commitment registered 2026-07-17 — the program&apos;s first prospective registration)</span></li>
+            <li><strong>DESI fσ₈ (TEST-04a)</strong>: <span style={{ color: '#ef4444' }}>FAILED &mdash; disfavored 2.4σ on σ₈ (a GR-conditioned statistic); ~1.5σ on the registered fσ₈(z=0.51); UNDERPOWERED AS REGISTERED; post-hoc, not counted as a refutation</span> <span style={{ color: 'var(--color-text-muted)' }}>(prediction 0.418 sits 2.1σ from the DESI DR1 LRG1 value 0.550 ± 0.062; the registered fσ₈(z=0.51) &gt; 0.46 threshold is crossed on the point estimate but only by 1.5σ, short of the &gt;3σ it was registered to deliver; that &gt;3σ presumed σ &asymp; 0.014, and DR1 delivers 0.062, 4.4&times; larger; corrected 2026-07-14, restated in this three-number form 2026-09-15; the widely-quoted 2.4σ disfavor is on σ₈, a GR-conditioned statistic that cannot falsify modified growth; DESI&apos;s own MG analysis gives μ₀ within 1σ of zero. Not counted in the refutation census. DR2 both-outcome pre-commitment registered 2026-07-17 — the program&apos;s first prospective registration; as adopted, its kill branch fires with under 1% probability if &Lambda;CDM is true, found 2026-09-21, and re-registering gates on dp)</span></li>
             <li><strong>Chemistry boundary consistency</strong> (1,703 phenomena): 89% consistent — <span style={{ color: '#f59e0b' }}>calibration set, not blind test</span></li>
             <li><strong>Superconductivity (η factor)</strong>: reproduces Abrikosov-Gor&apos;kov formula — <span style={{ color: '#f59e0b' }}>reparametrization</span></li>
             <li><strong>Born rule</strong>: reproduces |α|² via coherence conservation — <span style={{ color: '#f59e0b' }}>reparametrization</span> (no deviation predicted)</li>
@@ -238,7 +249,7 @@ export default function TestCatalog() {
           fontSize: '0.875rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: 'var(--color-accent-violet)' }}>TEST-26 (proposed, prospective, kill-or-tie)
+          <strong style={{ color: 'var(--color-accent-violet)' }}>TEST-26 (proposed, prospective; kill or tie for the framework as postulated)
           &mdash; DESI DR3 dark-energy class no-go.</strong>{' '}
           The framework&apos;s dark-energy sector cannot produce the w&nbsp;=&nbsp;&minus;1 crossing DESI DR2
           prefers, at model-class level (every covariant completion misses the quadrant &mdash; hardened
@@ -255,9 +266,14 @@ export default function TestCatalog() {
           floor never binds on the past light cone (C &ge; &Omega;<sub>m</sub> for every z &ge; 0), so flooring opens no
           escape. Derived by a visitor researcher persona; verified against the continuity equation numerically
           (<code>maintainer/scripts/floor_is_cosmic_C_and_w_sign.py</code>, 0 sign violations over 11 &gamma; &times; 51 z).
-          Kill fires if DR3 robustly requires that crossing; the confirming branch is a tie with
-          &Lambda;CDM, so this test cannot select the framework and is listed outside the 24-test discrimination
-          count. Adoption gates on the operator. <strong>Booking if the kill fires (proposed):</strong> a DR3 result that robustly requires a
+          Kill fires if DR3 robustly requires that crossing; if the data sit at &Lambda;CDM it is a tie. <strong>TEST-26
+          can select the mean-density (Cardassian) reading, which the framework&apos;s local-density postulate forbids</strong>{' '}
+          (it wins only if the data move into the quadrant the family allows, w&#x2080; &gt; &minus;1 with w<sub>a</sub> &gt; 0 or
+          the phantom mirror, at a &gamma; measurably away from &frac12;: unlikely on current data, not impossible by
+          construction; on the local fluid reading P(k) pins &gamma; = &frac12; to ~10&#x207B;&#x2075;). <strong>It cannot select
+          the framework as postulated.</strong> It is listed outside the 24-test discrimination count. (This line said
+          &ldquo;cannot select the framework&rdquo;, unqualified, until 2026-09-22, after{' '}
+          <Link href="/dark-energy" style={{ color: 'var(--color-accent-violet)' }}>Dark Energy</Link> was corrected on 2026-09-14.) Adoption gates on the operator. <strong>Booking if the kill fires (proposed):</strong> a DR3 result that robustly requires a
           w = &minus;1 crossing kills &Lambda;CDM equally, because &Lambda;CDM is the &gamma; = &frac12; member of this
           family and cannot cross either. It would therefore be booked as an <em>inherited root (inherited from
           &Lambda;CDM)</em>, not as a framework-specific seventh refutation. This is the same rule that books

@@ -336,18 +336,20 @@ export default function GalaxyRotation() {
             compander fits the data <em>marginally better</em> than McGaugh&apos;s ν and loses purely
             on the complexity charge for a knob MOND does not need. That is a sharper statement than
             &ldquo;collapses to MOND equivalence&rdquo;: the compander is a strictly worse-parameterized
-            reparametrization of the RAR, buying Δχ² &lt; 1 for one degree of freedom. (Bookkeeping the
-            fit record should state: whether a₀ was floated in both arms, i.e. Δk = 1 or 2. At Δk = 2
-            the penalty is 15.9 and the compander fits better by Δχ² ≈ 8.8 — different number, same
-            conclusion.) Note the contrast with the γ=2 row: ΔBIC = +184 there is <em>pure likelihood</em>{' '}
+            reparametrization of the RAR, buying Δχ² &lt; 1 for one degree of freedom. (Bookkeeping:
+            a₀ is floated in both arms, so Δk = 1 — McGaugh&apos;s ν is fitted with k = 1 (a₀), the free-γ
+            compander with k = 2 (a₀, γ); see <code style={{ fontSize: '0.78rem' }}>explorer/scripts/rar_transition_shape_real_sparc.py</code>,
+            where the BIC is computed as <code style={{ fontSize: '0.78rem' }}>bic(ssr_F,2) &minus; bic(ssr_M,1)</code>.) Note the contrast with the γ=2 row: ΔBIC = +184 there is <em>pure likelihood</em>{' '}
             (Δk = 0). The two numbers do different work and are not one ladder. There is no γ for which the compander is
             both (a) distinct from MOND and (b) consistent with SPARC. Pin γ=2 → refuted. Fit γ → MOND.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             <strong>Why 0.49? Mechanism identified (2026-07-22 form-selection run):</strong> γ controls the
             Newtonian-return exponent — algebraically, tanh(γ·ln(1+y)) approaches 1 like (1+y)<sup>−2γ</sup>,
-            so the return exponent is q = 2γ. The fit pins q ≈ 0.98, cross-validated by an independent free-Hill
-            fit landing n = 0.975 — two parametrizations converging on q ≈ 1, the value hard-coded in MOND&apos;s
+            so the return exponent is q = 2γ. Within a one-parameter family, the SPARC transition shape maps
+            onto q ≈ 1 (a free Hill fit on the same data gives n = 0.975); the asymptotic return itself is not
+            constrained by SPARC &mdash; the data reach only x ≲ 10, and McGaugh&apos;s exponential-return function
+            fits the same 2,807 points with the same RMS. q = 1 is the value hard-coded in MOND&apos;s
             &ldquo;simple&rdquo; μ-function. γ = 0.49 was never a constant awaiting derivation; it is the tanh
             family&apos;s encoding of MOND&apos;s simple μ. The framework&apos;s asserted γ=2 means q=4 —
             re-Newtonianizing far too abruptly — which is the +184 kill restated mechanistically.
@@ -407,10 +409,19 @@ export default function GalaxyRotation() {
             for the scope statement (it does not reach modified inertia, dark-matter models, or the umbrella ontology).
             Script and pre-registration: <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/cassini_q2_mond_interpolating_functions.py</code>.
             <br /><br />
-            <strong>A separate, smaller effect: the direct tail.</strong> The compander returns to Newton as a power law,
+            <strong>A separate, larger effect: the direct tail.</strong> The compander returns to Newton as a power law,
             1&minus;C ≈ 2(1+x)<sup>&minus;2γ</sup>, while McGaugh&apos;s function returns exponentially. At Saturn
-            (x ≈ 5×10⁵) that is a fractional anomaly ≈ 5×10⁻⁶ against e<sup>&minus;707</sup>. The difference is real,
-            but it is not the quantity TEST-25 computes, and it does not decide the Cassini verdict.
+            (x ≈ 5×10⁵) the fractional anomaly is ≈ 5×10⁻⁶ against e<sup>&minus;707</sup>. Small as a fraction, it is
+            not small as an acceleration: with g ≈ 6.5×10⁻⁵&nbsp;m/s² it is δg ≈ 3×10⁻¹⁰&nbsp;m/s², an a₀-sized extra
+            pull (for any simple-μ-class return, ν&minus;1 ≈ a₀/g, so δg ≈ a₀). The Cassini-bound external-field
+            quadrupole gives δg ~ Q₂·r ≈ 3×10⁻²⁷&nbsp;s⁻² × 1.43×10¹²&nbsp;m ≈ 4×10⁻¹⁵&nbsp;m/s² at the same place &mdash;
+            about 10⁵ times smaller. Nor can the tail hide in GM☉: a near-constant δg makes δg/g grow as ~r² from
+            planet to planet. The literature finds this branch (simple μ, slow power-law return) already disfavoured by
+            planetary ephemerides, independently of the external-field effect (Hees et&nbsp;al. 2016; Blanchet &amp; Novak
+            2011). That is a <em>literature</em> result: it has not been re-executed on this site, and the size of the
+            exclusion for the compander specifically is not yet computed. It is also inherited, not framework-specific
+            &mdash; at γ = &frac12; the compander <em>is</em> simple μ. The executed test on this page remains TEST-25&apos;s
+            Q₂ computation above.
             <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
               <summary style={{ cursor: 'pointer' }}>Revision note</summary>
               This box used to explain the empty intersection as a tail-shape mismatch, with the exponential tail
@@ -419,7 +430,11 @@ export default function GalaxyRotation() {
               Cassini bounds the external-field quadrupole set near 7,000&nbsp;AU, and there McGaugh&apos;s function fails too.
               A visitor persona (graduate physics) raised it, and a pre-registered run on TEST-25&apos;s instrument confirmed it.
               An earlier correction on this box had already fixed the naming (simple μ returns as a power law; the
-              exponential return belongs to McGaugh&apos;s RAR ν).
+              exponential return belongs to McGaugh&apos;s RAR ν). Until 2026-09-22 the box then called the direct tail
+              &ldquo;a separate, smaller effect&rdquo; that did not bear on the Solar System verdict. That compared fractions, not
+              accelerations; in acceleration it is about 10⁵ times the Cassini Q₂ effect at Saturn (visitor graduate-physics and
+              researcher personas, 2026-09-22). The Hill-fit sentence above also previously called the n = 0.975 fit an
+              independent cross-validation; it uses the same SPARC data.
             </details>
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: 0 }}>

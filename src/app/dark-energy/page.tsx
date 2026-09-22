@@ -81,6 +81,27 @@ export default function DarkEnergy() {
           PRD 71, 064027). Checks:{' '}
           <code>maintainer/scripts/de_sector_is_cardassian.py</code>.
         </p>
+        <div style={{ borderLeft: '3px solid #f59e0b', background: 'rgba(245,158,11,0.06)', padding: '0.75rem 1rem', borderRadius: '0.375rem', margin: '0.75rem 0', fontSize: '0.92rem' }}>
+          <p style={{ margin: 0 }}>
+            <strong>Does &rho;<sub>m</sub> include dark matter? Yes, and the sector can&apos;t work without it.</strong>{' '}
+            The &Omega;<sub>m</sub>&nbsp;=&nbsp;0.315 in C&#x2080;&nbsp;=&nbsp;&Omega;<sub>m</sub> is Planck&apos;s, and about
+            0.27 of it is cold dark matter. The DESI fit&apos;s CMB distance priors carry it too. Yet the archive also says
+            &ldquo;no dark matter particles; coherence explains both dark sectors&rdquo; (Sessions 241 and 277). So we
+            asked whether the construction could be the dark matter <em>and</em> the dark energy, with &rho;<sub>m</sub>{' '}
+            = baryons only (C&#x2080;&nbsp;=&nbsp;&Omega;<sub>b</sub>&nbsp;=&nbsp;0.049). It can&apos;t. Recombination needs
+            about 5.4 times as much dark matter as baryons, and today needs accelerating expansion. The best any
+            &gamma; manages while still accelerating today is 1.5 (0.8 if C is keyed on the total density). The
+            &gamma; values that do give 5.4 at recombination decelerate today (q&#x2080;&nbsp;&asymp;&nbsp;+0.33). The
+            log-argument tanh changes too slowly to do both jobs. This result uses only the expansion history; no
+            perturbations, CMB peaks or fluid reading are needed. The check was pre-registered before the script
+            existed: <code>maintainer/scripts/de_sector_without_cdm.py</code>.{' '}
+            <strong>So this is a dark-energy sector that needs cold dark matter put in by hand.</strong> That fits the
+            SPINE reading of dark matter as real patterns that interact only gravitationally, and it doesn&apos;t fit
+            the reading where a coherence boost replaces dark matter. <em>Open question:</em> which dark-matter story does
+            the framework keep? If both, galaxies get a real halo <em>and</em> a boost on top of it, which double counts.
+            (This is an internal inconsistency on standard numbers, not a new refutation; the count stays at 6.)
+          </p>
+        </div>
         <div style={{ borderLeft: '3px solid #ef4444', background: 'rgba(239,68,68,0.06)', padding: '0.75rem 1rem', borderRadius: '0.375rem', margin: '0.75rem 0', fontSize: '0.92rem' }}>
           <p style={{ margin: 0 }}>
             <strong>Which density is C read at? The answer decides whether &gamma; is free.</strong>{' '}

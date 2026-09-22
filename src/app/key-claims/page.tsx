@@ -51,7 +51,7 @@ export default function KeyClaims() {
             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
               <ValidationBadge status="speculative" />
               <span style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
-                untestable as stated &mdash; ontological reframe
+                untestable as stated without a scan period &mdash; ontological reframe
               </span>
               <span style={{
                 fontSize: '0.75rem',
@@ -220,11 +220,17 @@ export default function KeyClaims() {
               it reproduces all of standard QM&apos;s quantitative predictions.
               What&apos;s needed: a prediction that differs from standard QM and hasn&apos;t been measured yet.{' '}
               <strong>Open question &mdash; has the scanning picture already been tested without anyone noticing?</strong>{' '}
-              &ldquo;At each instant the system is in one mode&rdquo; is a macrorealist claim, so Leggett&ndash;Garg
-              inequality violations (observed in superconducting qubits, NMR, and neutron interferometry) are the kill test
-              it must pass; Kochen&ndash;Specker contextuality and the PBR theorem (Pusey, Barrett &amp; Rudolph 2012) constrain
-              it too. Nobody has yet set the claim against them, which is why it is &ldquo;untestable as stated&rdquo; rather
-              than tested. Either it evades them by a stated mechanism, or those experiments already refute it.
+              Partly, yes. Kochen&ndash;Specker has been set against it: on the framework&apos;s own construction, 0 of 512
+              non-contextual value assignments satisfy the Peres&ndash;Mermin square (ledger row B1; see{' '}
+              <Link href="/born-rule" style={{ color: 'var(--color-accent-blue)' }}>Born Rule</Link>), so a scan with
+              definite, context-free values is excluded. Leggett&ndash;Garg violations (observed in superconducting qubits,
+              NMR, and neutron interferometry) rule out only the <em>non-invasive</em> reading of the scan. They cannot rule
+              out &ldquo;measurement is synchronization&rdquo;, which is invasive by definition. The quantum Zeno effect is the
+              sharper instrument: Itano et&nbsp;al. (1990) force the synchronization to be a full phase reset (reset strength
+              s &ge; 0.975), and a full reset reproduces standard QM exactly &mdash; it is the Lüders projection rule. So the
+              claim is &ldquo;untestable as stated&rdquo; <em>without a scan period</em>: it stays an interpretation until it
+              names a finite scan period T<sub>scan</sub> whose effects could be looked for. See{' '}
+              <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>.
             </p>
             <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0 0 0.5rem' }}>
               <summary style={{ cursor: 'pointer' }}>Revision note</summary>
@@ -454,7 +460,12 @@ export default function KeyClaims() {
             <strong>What failed:</strong> the interpretation &mdash; that a local-density coherence function marks
             where &ldquo;dark matter&rdquo; effects switch on. With &#x03C1;<sub>crit</sub> &#x221D; V&sup2;, a
             disc&apos;s mass cancels out of &#x03C1;/&#x03C1;<sub>crit</sub>, so at the published calibration no galaxy
-            disc reaches the coherence knee (details under &ldquo;What&apos;s new&rdquo; below). <strong>Why the
+            disc reaches the coherence knee (details under &ldquo;What&apos;s new&rdquo; below). <strong>And at
+            cosmological scale (checked 2026-09-22):</strong> the framework&apos;s own dark-energy sector is calibrated on
+            an &Omega;<sub>m</sub> that includes cold dark matter. Run with baryons only, no &gamma; gives both
+            accelerating expansion today and enough dark matter at recombination (the best reaches 1.5&times; the
+            baryons, and 5.4&times; is needed). So the cosmology needs ordinary dark matter put in by hand (see{' '}
+            <Link href="/dark-energy">/dark-energy</Link>). <strong>Why the
             a&#x2080; relation still comes first:</strong> it is the scale any dark-matter reframe has to hit, and it
             is <em>not</em> the failed part &mdash; it is Milgrom&apos;s own 1983 coincidence, consistent with data
             and badged Reparametrization further down this page.

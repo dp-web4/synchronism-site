@@ -12,7 +12,7 @@ export default function PhaseTransitions() {
       <Breadcrumbs currentPath="/phase-transitions" />
       <PathNav currentPath="/phase-transitions" />
       <h1>Phase Transitions</h1>
-      <ValidationBadge status="validated" label="Core Prediction" />
+      <ValidationBadge status="reparametrization" label="γ ≈ 1 clustering restates the Debye θ_D (ledger Bucket 3)" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -79,16 +79,21 @@ export default function PhaseTransitions() {
           <li>Biology emerges (molecular recognition requires quantum-classical interface)</li>
         </ul>
         <p>
-          1,703 chemical phenomena were tested. 89% show &#x03B3; values within the predicted
-          boundary region.{' '}
+          1,703 chemical phenomena were fitted, and 89% gave &#x03B3; values within the boundary region.
+          The audit found that about 86% of that 89% restates the Debye model (&#x03B8;<sub>D</sub>, 1912),
+          so the figure is a reparametrization, not a confirmed prediction.{' '}
           <Link href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>See the full chemistry analysis &rarr;</Link>
         </p>
 
         <h2>Transitions in Cosmology</h2>
         <p>
-          The same framework applies to larger scales. Galaxy rotation curves show a transition
-          at &#x03C1; &#x2248; &#x03C1;<sub>crit</sub> from Newtonian (high density inner region)
-          to MOND-like (low density outer region). This is the astrophysical phase transition.
+          The framework proposed the same picture at galaxy scale: a transition at
+          &#x03C1; &#x2248; &#x03C1;<sub>crit</sub> from Newtonian (high-density inner region) to MOND-like
+          (low-density outer region). <strong>This did not hold as a density law.</strong> Keyed on density,
+          the threshold has the wrong velocity scaling (the data need &#x03C1;<sub>crit</sub> &#x221D; V<sup>&minus;2</sup>),
+          and the version that fits galaxy rotation is keyed on acceleration with &#x03B3; fitted, where it
+          becomes MOND. The tanh is also smooth, so the change is a crossover rather than a phase transition.
+          See <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>.
         </p>
 
         <h2>What Doesn&apos;t Work</h2>

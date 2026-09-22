@@ -11,17 +11,23 @@ export default function ChemistryPhaseTransitions() {
       <Breadcrumbs currentPath="/chemistry-phase-transitions" />
       <h1>Phase Transitions in Chemistry</h1>
       <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
-        <ValidationBadge status="validated" label="Transition Location" />
+        <ValidationBadge status="reparametrization" label="Transition Location (mostly Debye θ_D restated)" />
         <ValidationBadge status="failed" label="Critical Exponents" />
       </div>
 
       <section className="section content-width">
         <p>
-          Synchronism correctly predicts WHERE phase transitions occur (at the &#x03B3; &#x2248; 1
-          boundary) but fails to predict HOW they unfold (critical exponents are 2&times; off).
+          Does coherence tell you <em>where</em> a material changes phase? The archive&apos;s answer was yes, at the
+          &#x03B3;&nbsp;&#x2248;&nbsp;1 boundary. The audit found that about 86% of that &ldquo;89% validation&rdquo; restates the
+          Debye temperature &theta;<sub>D</sub> (1912) in new notation. That makes it a reparametrization, not a
+          prediction. The framework also fails to predict <em>how</em> transitions unfold (critical exponents about
+          2&times; off), and melting points are 53% off on average. The per-material &#x03B3; values below come from
+          &#x03B3;&nbsp;=&nbsp;2/&#x221A;N<sub>corr</sub>, a formula that is{' '}
+          <Link href="/gamma-calculator">audited-negative</Link> (its sign is inverted for collective systems). Read
+          them as the archive&apos;s original picture, not current results.
         </p>
 
-        <h2>What the Coherence Function Gets Right</h2>
+        <h2>What the Archive Claimed (February 2026)</h2>
         <div className="grid-2" style={{ marginBottom: '1.5rem' }}>
           <div className="card">
             <h3>Melting/Boiling</h3>
@@ -62,7 +68,9 @@ export default function ChemistryPhaseTransitions() {
             (&#x03B2;, &#x03B3;, &#x03B4;, etc.). The tanh form gives mean-field exponents, which
             differ from observed values by ~2&times;. This is a known limitation of any mean-field
             theory &mdash; fluctuations near the critical point matter, and C(&#x03C1;) doesn&apos;t
-            account for them.
+            account for them. Strictly, C(&#x03C1;) has no critical point at all (it is not a self-consistent
+            mean-field equation; see <Link href="/coherence-function">Coherence Function</Link>), so it produces no
+            exponents of its own. The 2&times; figure compares observed exponents with mean-field ones.
           </p>
           <ValidationBadge status="failed" label="Mean-Field Limitation" />
         </div>

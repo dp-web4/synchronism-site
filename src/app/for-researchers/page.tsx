@@ -20,7 +20,8 @@ export default function ForResearchers() {
           <strong>The program in one sentence.</strong> &#x03B3; = &frac12; is the one value at which (1+x)<sup>2&#x03B3;</sup> is
           linear, so it is where the ansatz stops being itself in <em>both</em> sectors at once: C = x/(x+2), Milgrom&apos;s
           simple &#x03BC;, for galaxies, and &#x03C1;<sub>DE</sub> = 2&#x03C1;<sub>crit</sub>, exactly &#x039B;, for cosmology.
-          Left free, the single parameter goes there: 0.489 on SPARC, 0.487 (+0.024/&minus;0.021) on DESI DR2+CMB+SN.{' '}
+          Left free, the single parameter goes there: 0.489 on SPARC, 0.487 (+0.024/&minus;0.021) on DESI DR2+CMB+SN
+          (mean-density reading; on the local-density fluid reading, P(k) pins &#x03B3; to &frac12; within ~10&#x207B;&#x2075;).{' '}
           <strong>This is a deflation, not a concordance.</strong> The two sectors&apos; standard models sit 0.011 apart in
           &#x03B3; by construction; the SPARC value carries &plusmn;0.11 statistical and a 0.27&ndash;0.96 band from
           mass-to-light alone, so the agreement had no power to fail. What it says is that wherever this equation has been
@@ -39,7 +40,12 @@ export default function ForResearchers() {
           scope added 2026-09-05 &mdash; under the density-keyed C(&#x03C1;) reading that the local-density no-go, the
           plotter, and the environment test were run against, it is not a submodel but a distinct theory, and that one
           is refuted), so a discriminating test could at best tie on fit, and could select it only if its restriction held.
-          The two that discriminated are TEST-09 (3.3σ) and TEST-10 (boost ceiling). (This page said
+          The two that discriminated are TEST-09 (BTFR slope, 3.3σ) and TEST-10 (dwarf DM fractions), both at the
+          boost ceiling B<sub>max</sub>&nbsp;=&nbsp;1/&Omega;<sub>m</sub>, and both kills are convention-dependent: TEST-09 does
+          not fire at the baryon-budget ceilings in the 2026-09-18 sweep (|&Delta;n| = 0.30 and 0.26 against a strict
+          &gt;&nbsp;0.3), so its convention-free content is that a bounded boost with B<sub>max</sub>&nbsp;&#8818;&nbsp;5.4 is
+          excluded; TEST-10&apos;s is B<sub>max</sub>&nbsp;&#8818;&nbsp;14. Whether they stay in the count of 6 is pending
+          dp. (This page said
           &ldquo;0 tests currently discriminating&rdquo; until 2026-07-27, which booked the framework&apos;s two
           strongest empirical results as zero; the bolded line was reunified 2026-08-08.)
           What remains citable are <strong>replications,
@@ -722,12 +728,15 @@ export default function ForResearchers() {
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #ef4444' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.1rem' }}>Secondary: the DESI growth-suppression negative (mechanism-class)</h2>
-            <ValidationBadge status="failed" />
+            <ValidationBadge status="failed" label="Disfavored 2.4σ on σ₈ (a GR-conditioned statistic); ~1.5σ on the registered fσ₈(z=0.51); underpowered as registered; post-hoc, not counted as a refutation" />
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
-            Failed: disfavoured at 2.4&sigma; on &sigma;&#x2088;, but only ~1.5&sigma; on the registered f&sigma;&#x2088;
-            statistic. The prediction was post-hoc, and the test was underpowered to discriminate. It is the Session 107
-            mechanism, not the current dark-energy sector (see below).
+            Same badge and descriptor as on 
+            <Link href="/tier-1-existing#TEST-04a" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> and 
+            <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>. The
+            DR2 registration as adopted is no fix: its kill branch fires with under 1% probability if &Lambda;CDM is true
+            (2026-09-21), so the likely DR2 outcome is &ldquo;underpowered&rdquo; again unless it is re-registered before the
+            data. It is the Session 107 mechanism, not the current dark-energy sector (see below).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             TEST-04a predicted &#x03C3;&#x2088;&nbsp;&#x2248;&nbsp;0.76 (calibrated to the then-live S8 lensing tension);

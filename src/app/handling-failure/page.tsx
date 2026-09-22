@@ -21,7 +21,7 @@ export default function HandlingFailure() {
       <Breadcrumbs currentPath="/handling-failure" />
       <PathNav currentPath="/handling-failure" />
       <h1>How We Handle Failure</h1>
-      <ValidationBadge status="validated" label="Methodology" />
+      <ValidationBadge status="active-mrh" label="Methodology in use" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <blockquote style={{

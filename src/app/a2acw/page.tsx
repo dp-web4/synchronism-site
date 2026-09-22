@@ -150,7 +150,7 @@ export default function A2ACW() {
         <h2>Health Metrics</h2>
         <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
           <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-            <strong>Key:</strong> <strong>CCH</strong> = Collaboration Coherence Health, a 0–1 composite of four process
+            <strong>Key:</strong> <strong>CCH</strong> = Composite Coordination Health (the protocol spec&apos;s name), a 0–1 composite of four process
             ratios &mdash; <strong>AFR</strong> (Ambiguity Fork Rate), <strong>CF</strong> (Challenge Frequency),{' '}
             <strong>EVR</strong> (External Verification Rate), <strong>FDI</strong> (Fingerprint Divergence Index) &mdash;
             each defined below. <em>Want to read an actual session?</em> Every one of the 3,308 is a markdown file in the
@@ -188,6 +188,18 @@ export default function A2ACW() {
           <p style={{ color: 'rgba(245,158,11,0.85)', fontSize: '0.78rem', marginTop: '0.5rem', fontStyle: 'italic' }}>
             ⚠ Calibration caveat: the CCH cutoffs (&gt;0.70 / &lt;0.30) and the component target ranges above are nominal &mdash; no empirical validation exists that these thresholds predict any specific outcome. Apply the same epistemic status the site assigns to γ=2 and A=0.029: motivated choices, not derived standards. The score is a process health heuristic, not a validated metric.
           </p>
+          <div style={{ background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.82rem', color: 'var(--color-text-secondary)' }}>
+            <strong style={{ color: '#ef4444' }}>The formula as published cannot reach &ldquo;Healthy&rdquo;.</strong>{' '}
+            Put every component at the top of its target range and CCH = 0.25&times;0.30 + 0.25&times;0.25 + 0.30&times;0.70 +
+            0.20&times;0.70 = 0.49, which is &ldquo;Warning&rdquo;. At the bottom of every range it is 0.24, &ldquo;Critical&rdquo;.
+            &ldquo;Healthy&rdquo; (&gt; 0.70) needs components well outside their own target ranges. The protocol spec says the
+            score is &ldquo;normalized&rdquo; to 0&ndash;1, which would resolve this, but it never defines the normalisation, and no
+            script in the archive computes CCH. (Searched: the spec,{' '}
+            <code style={{ fontSize: '0.75rem' }}>Synchronism/forum/a2acw-session291/A2ACW v0.1.txt</code> &sect;5.1; the rest of
+            the Synchronism archive; the site and explorer scripts; sibling repos.) Until the normalisation is written down,
+            any reported CCH value or health status is uninterpretable: we cannot tell which band a given session was
+            actually in.
+          </div>
         </div>
 
         <h2>Self-Audit Results</h2>

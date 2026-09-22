@@ -1,7 +1,47 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-21 (maintainer)*
+*Last updated: 2026-09-22 (maintainer)*
+
+---
+
+## 🟢 NEW (maintainer 2026-09-22) — **The dark-energy sector cannot also be the dark matter. With ρ_m = baryons only
+(C₀ = Ω_b), no γ in 10⁻⁴…3 gives both acceleration today and the recombination dark/baryon ratio 5.36, even to a
+factor 2 (best 1.54). The cosmology needs CDM put in by hand, while the archive says "no DM particles; coherence explains
+both dark sectors". Pre-registered `71ba3e0`, 5/5 held. No count change (6); Bucket 0 = 0. FRAME QUESTION GATES ON DP.**
+Second finding, methodological: the worst live overclaims were on pages no persona visits ("a₀ … derived from first
+principles" on /mond-comparator; 10 pages with live `validated`/`supported` badges). A new lint rule catches any
+deprecated badge.
+
+Log: `maintainer/logs/2026-09-22.md`. Script: `maintainer/scripts/de_sector_without_cdm.py` (+ `_PREREG.md`, `_output.txt`).
+Proposal: `Synchronism/Research/proposals/de_sector_cannot_carry_the_dark_matter_cosmology_needs_cdm_20260922.md`.
+
+- **Fixed:**
+  - TEST-09 / TEST-04a / TEST-26 now carry one status on every page (TEST-09: convention-dependent, count pending dp).
+  - Beginner cliff: an HA exit box and a Lorentz lay gloss.
+  - /galaxy-rotation: tail box inverted to "larger"; "pins q" withdrawn; Δk = 1 resolved.
+  - Explorer 09-21 P0/P1: /two-reframes and /key-claims.
+  - /a2acw: CCH is uninterpretable (the normalisation is undocumented anywhere).
+  - Glossary: N_corr, ρ, A–Z jump bar.
+  - /mond-comparator, /publication-roadmap, /publisher-track and /chemistry-phase-transitions rewritten against the ledger.
+- **site_lint.py:** 11 new rules, including a deprecated-badge rule.
+
+### → dp (frame)
+- **Which dark-matter story does the framework keep?** (a) SPINE's "indifferent patterns" (CDM-like): the cosmology is
+  consistent, the galaxy boost sits on a real halo and needs re-deriving, and "no DM particles" (S241, S277) is withdrawn.
+  (b) The coherence boost: then the DE sector has no working calibration in the tanh-log family.
+- The researcher persona's suggestion: stop auditing the framework, since the returns are now bookkeeping. Write the
+  density-slaved-modifications note (the unidentifiability, RG, and the w = −1 crossing lemma) and run the blind
+  post-cutoff A2ACW arm, the only place a positive finding is still possible. The maintainer agrees.
+
+### → Next maintainer session, in order
+1. Read the 9 never-edited content pages against the ledger (list in today's log). Run the git-log-per-page check weekly.
+2. Badge-legend taxonomy split (formal / lifecycle / descriptor / tool label), one design pass.
+3. Tier 1 status fields → 2-sentence status + audit trail; page-level "last updated" dates.
+
+### → Explorer (new topics)
+- `planetary-ephemerides-vs-compander-tail-and-floored-rho-knee-crossings.md` · `reading-by-test-matrix-which-C-carries-which-kill.md` ·
+  `dark-matter-double-count-if-the-cosmology-needs-cdm.md`
 
 ---
 

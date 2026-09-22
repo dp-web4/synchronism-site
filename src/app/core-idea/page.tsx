@@ -94,6 +94,24 @@ export default function CoreIdea() {
           </p>
         </div>
 
+        <div style={{
+          background: 'rgba(239, 68, 68, 0.07)',
+          border: '1px solid rgba(239, 68, 68, 0.3)',
+          borderRadius: '0.375rem',
+          padding: '0.75rem 1rem',
+          marginTop: '1.5rem',
+          fontSize: '0.9rem',
+          color: 'var(--color-text-secondary)',
+        }}>
+          <strong style={{ color: '#ef4444' }}>The data point the other way.</strong>{' '}
+          The idea is that more density makes the parts <em>switch to acting together</em>. When real galaxy data
+          (SPARC) were fitted with the density version of this equation and &#x03B3; left free, the best fit pushed
+          &#x03B3; down to <strong>0.046</strong> &mdash; so low that the curve barely responds to density at all. Given the
+          choice, the data say the parts <em>don&apos;t</em> switch to acting together: the opposite of the idea. The same
+          density version also loses head-to-head to an acceleration-keyed version of the same curve (which is essentially MOND).{' '}
+          <a href="#density-fit" style={{ color: 'var(--color-accent-blue)' }}>Details below &darr;</a>
+        </div>
+
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem', marginTop: '1.5rem' }}>
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>&#x03C1;</div>
@@ -150,15 +168,17 @@ export default function CoreIdea() {
         <p>
           tanh is an S-shaped curve that smoothly transitions from 0 to 1 &mdash; think of it as a
           dimmer switch from sparse/independent to dense/collective. The function
-          must be bounded [0, 1], monotonic, and smooth. tanh&apos;s form recalls the Ising model
-          self-consistency equation m = tanh(&beta;Jzm), but the resemblance is only visual: C(&#x03C1;) has no
+          must be bounded [0, 1], monotonic, and smooth. tanh&apos;s form recalls the{' '}
+          <Link href="/glossary#mean-field-theory" style={{ color: 'var(--color-accent-blue)' }}>Ising model</Link>{' '}
+          (the textbook model of a magnet, where each spin lines up with its neighbours) self-consistency equation m = tanh(&beta;Jzm), but the resemblance is only visual: C(&#x03C1;) has no
           feedback loop (&#x03C1; goes in, C comes out), so the Ising analogy carries no motivating force.
           Other sigmoids (logistic, error function, Hill) satisfy the same four constraints.
           tanh is a phenomenological choice, not a derived result.
           Note: C(&#x03C1;) is real-analytic everywhere on its domain &mdash; no singularity, no free-energy
           functional, and no length scale anywhere in the equation &mdash; so it has no critical point and
           therefore no critical exponents (&#x03B2;, &#x03BD;) to compare. Asking for them is a category error,
-          not a near-miss with Landau theory; the analogy is motivational only.
+          not a near-miss with Landau theory (the standard theory of how phase transitions behave near their
+          critical point); the analogy is motivational only.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Need an analogy first?</Link>
@@ -200,7 +220,9 @@ export default function CoreIdea() {
           The equation is an ordinary rational (Hill-type) saturation function of (1+x)<sup>2&#x03B3;</sup>;
           the tanh&#x2218;ln decomposition is notation, not mechanism. Any saturating rational function
           &ldquo;spans 80 orders of magnitude&rdquo; for free &mdash; the ln does no work that the exponent
-          2&#x03B3; doesn&apos;t undo. So the Hill functions and Naka&ndash;Rushton curves named below are not
+          2&#x03B3; doesn&apos;t undo. So the Hill functions and Naka&ndash;Rushton curves named below (standard
+          saturation curves from biochemistry and vision science; see{' '}
+          <Link href="/glossary#compander" style={{ color: 'var(--color-accent-blue)' }}>compander</Link>) are not
           merely <em>similar</em> alternatives; the flagship equation <em>is</em> one of them, exactly.
           (Identity stated 2026-07-10. Provenance: derived independently by two successive internal
           review passes, 2026-07-09 and 2026-07-10 &mdash; the audit machinery caught it; the identity
@@ -319,7 +341,7 @@ export default function CoreIdea() {
           honestly, but the trade should be visible: no critical point &rArr; no universality &rArr; no
           Landau machinery to borrow authority from. See{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</Link>.
-          <p style={{ marginTop: '0.85rem', marginBottom: 0 }}>
+          <p id="density-fit" style={{ marginTop: '0.85rem', marginBottom: 0 }}>
             <strong>The data say the same thing, independently.</strong> The framework&apos;s whole distinctive claim is
             that <em>density</em> drives a <em>collective</em> transition. Tested in the density variable itself, the
             data reject that: fit head-to-head on the same SPARC galaxy points with &#x03B3; free, the density-keyed law

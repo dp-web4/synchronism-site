@@ -20,7 +20,7 @@ export const terms: Record<string, TermDefinition> = {
   '\u03B3': {
     term: '\u03B3',
     fullName: 'Gamma Parameter',
-    brief: 'Transition-sharpness coefficient (dial): \u03B3 = 2/\u221AN_corr. A motivated ansatz, not a derivation. (\u03B3 multiplies the log; it is not an exponent.)',
+    brief: 'Transition-sharpness coefficient (dial): \u03B3 = 2/\u221AN_corr. A motivated ansatz (an educated guess), not a derivation. (\u03B3 multiplies the log; it is not an exponent.)',
     explanation: 'Intuition first: \u03B3 sets how abruptly a system switches from "individuals" to "a crowd" as it gets denser \u2014 big \u03B3 means a sharp snap, small \u03B3 means a slow fade (try the presets in the \u03B3 Calculator to feel this). Large \u03B3 (few correlated units \u2014 a single electron: N_corr = 1, \u03B3 = 2) gives a sharp C(\u03C1) transition; small \u03B3 (many correlated units \u2014 a crystal: \u03B3 \u2248 10\u207B\u00B9\u00B2) gives a flat one. \u03B3 \u2248 1 marks the sparse/collective boundary where chemistry clusters. Why 2/\u221AN_corr? No independent derivation exists \u2014 the formula is audited-negative: 1/\u221AN is a fluctuation width, and placing it in the sharpness slot inverts mean-field physics (the most collective systems get the FLATTEST curves \u2014 BCS superconductors land at C \u2248 0, backwards from observation). (This entry previously stated the regimes backwards \u2014 corrected 2026-06-12.) Structurally, \u03B3 is claimed to encode MRH coupling density (\u03B3 \u221D \u03BB\u00B7K/D), but no protocol independently measures N_corr in any system.',
     learnMore: '/gamma-parameter',
   },
@@ -29,6 +29,7 @@ export const terms: Record<string, TermDefinition> = {
     fullName: 'Correlation Number',
     brief: 'Number of particles moving as a correlated unit.',
     explanation: 'The fundamental input to \u03B3 = 2/\u221AN_corr. A single electron has N_corr = 1 (\u03B3 = 2, quantum). A crystal lattice might have N_corr = 10\u00B2\u2074 (\u03B3 \u2248 10\u207B\u00B9\u00B2, classical).',
+    educationalNote: '\u26A0 The map \u03B3 = 2/\u221AN_corr is audited-negative: for collective systems its sign comes out inverted (the most collective systems get the flattest curves, backwards from observation), and no protocol measures N_corr independently of fitting \u03B3 \u2014 N_corr is back-solved, not counted. Read the numbers above as the original hypothesis, not current physics. See the \u03B3 entry and the \u03B3 Calculator.',
     learnMore: '/gamma-parameter',
   },
   '\u03C1_crit': {
@@ -49,7 +50,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Presence (\u03C1)',
     fullName: 'Compatible Structural Elements within MRH',
     brief: 'How much compatible stuff is nearby \u2014 "density" but generalized. A single word for "the right kind of neighbors within your MRH."',
-    explanation: 'Why not just call it density? Physical density (g/cm\u00B3) is one form of presence, but the framework applies the same equation to chemistry (presence = compatible molecular configurations), neural tissue (presence = coupled neurons), and galaxies (presence = baryonic density). A single word covers all these cases. Presence is not merely quantity \u2014 it encodes compatibility, configuration, and environmental suitability: \u03C1 = f(compatibility vector), the scalar projection of a multidimensional compatibility space onto a single number. Must be quantifiable, domain-transparent, MRH-dependent, and falsifiable.',
+    explanation: 'Why not just call it density? Physical density (g/cm\u00B3) is one form of presence, but the framework applies the same equation to chemistry (presence = compatible molecular configurations), neural tissue (presence = coupled neurons), and galaxies (presence = baryonic density). A single word covers all these cases. Presence is not merely quantity \u2014 it encodes compatibility, configuration, and environmental suitability: \u03C1 = f(compatibility vector), the scalar projection of a multidimensional compatibility space onto a single number. Must be quantifiable, domain-transparent, MRH-dependent, and falsifiable. In practice: every executed test uses \u03C1 = the local mass/energy density; the broader \u201Ccompatibility\u201D reading has never been operationalized (see /equation-walkthrough).',
     learnMore: '/coherence-function',
   },
   'a\u2080': {
@@ -135,7 +136,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Reparametrization',
     fullName: 'Known Physics in New Notation',
     brief: 'When a result turns out to be equivalent to existing physics expressed in different variables.',
-    explanation: 'Several Synchronism results (e.g., the \u03B7 reachability factor = Abrikosov-Gor\u2019kov pair-breaking) are reparametrizations. The site marks these honestly with orange badges. The novelty is in unification, not in each individual result.',
+    explanation: 'Several Synchronism results (e.g., the \u03B7 reachability factor = Abrikosov-Gor\u2019kov pair-breaking) are reparametrizations. The site marks these honestly with orange badges. The novelty is in unification, not in each individual result. For the formal validation badge, see Reparametrization (badge).',
     learnMore: '/honest-assessment',
     educationalNote: 'Not a failure \u2014 reparametrizations confirm the framework is consistent with known physics, but they don\u2019t count as new predictions.',
   },
@@ -295,21 +296,21 @@ export const terms: Record<string, TermDefinition> = {
     learnMore: '/honest-assessment#validation-badge-definitions',
   },
   'badge-untested': {
-    term: 'Untested',
+    term: 'Untested (badge)',
     fullName: 'Validation Badge: Untested',
     brief: 'A specific prediction exists, but the relevant data or experiment has not been run.',
     explanation: '"Untested" is not a failure \u2014 it means nobody has looked yet. Many Synchronism predictions in astrophysics and quantum measurement are Untested because this lab cannot run experiments and the specific test has not been done by others.',
     learnMore: '/honest-assessment',
   },
   'badge-failed': {
-    term: 'Failed',
+    term: 'Failed (badge)',
     fullName: 'Validation Badge: Failed',
     brief: 'Prediction was tested and contradicted by data, with a specific error documented.',
     explanation: 'Failed predictions are not removed \u2014 they are documented with the exact error. Examples: YBCO T_c predicted 607K (observed 93K, 6.5\u00d7 error); Bullet Cluster dark matter viscosity sign wrong. Failures stay visible.',
     learnMore: '/honest-assessment',
   },
   'badge-speculative': {
-    term: 'Speculative',
+    term: 'Speculative (badge)',
     fullName: 'Validation Badge: Speculative',
     brief: 'A conceptual proposal without a specific quantitative test defined.',
     explanation: 'Speculative claims are ideas the framework motivates but has not turned into falsifiable predictions. They may become testable with more development. Higher epistemic risk than Untested, which has a defined test.',
@@ -319,7 +320,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Reparametrization (badge)',
     fullName: 'Validation Badge: Reparametrization',
     brief: 'The result is mathematically equivalent to existing physics expressed in different variables.',
-    explanation: 'A reparametrization is not a failure \u2014 it shows the framework is consistent with known physics. But it is not a new prediction. Example: the \u03b7 reachability factor = Abrikosov-Gor\u2019kov pair-breaking (1960). The honest assessment tracks reparametrizations separately from genuinely novel predictions.',
+    explanation: 'A reparametrization is not a failure \u2014 it shows the framework is consistent with known physics. But it is not a new prediction. Example: the \u03b7 reachability factor = Abrikosov-Gor\u2019kov pair-breaking (1960). The honest assessment tracks reparametrizations separately from genuinely novel predictions. For the general concept, see the plain Reparametrization entry.',
     learnMore: '/honest-assessment',
   },
   'badge-strongly-supported': {
@@ -472,7 +473,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'MOND-shared (retired marker)',
     fullName: 'MOND-shared \u2014 Retired Tie Marker (Class Audited 2026-07-14/15)',
     brief: 'A retired label that asserted Synchronism and MOND make identical predictions for a test. All three tests that carried it turned out to be discriminators \u2014 the framework loses each one.',
-    explanation: 'Until July 2026 the site labeled tests "MOND-shared" when both frameworks were believed to make the same prediction, so the outcome could not discriminate between them. A class audit (2026-07-14/15) dissolved every instance: TEST-09 (BTFR slope) \u2014 the framework\'s bounded boost has no deep-MOND regime, its computed slope fails the observed 3.75\u00b10.10 at 3.3\u03c3 and its registered kill criterion fired; TEST-10 (dwarf DM dominance) \u2014 the bounded boost caps apparent DM fraction at 68.5%, which 69% of SPARC galaxies exceed; TEST-05 (environment-dependent RAR scatter) \u2014 MOND+EFE\'s external-acceleration lever is ~50\u20135,000\u00d7 larger than C(\u03c1)\'s ambient-density lever, so a detected dependence is specific to MOND. The structural lesson: the framework differs from MOND in exactly two features (bounded boost; local coupling variable), and each "shared" test sat on an observable controlled by one of them \u2014 a tie was only possible where the framework IS MOND. Methodological lesson: a tie badge was the site\'s only unfalsifiable label (no execution, no number, sounds modest); the site now requires a claimed tie to carry the same execution burden as a claimed kill.',
+    explanation: 'Until July 2026 the site labeled tests "MOND-shared" when both frameworks were believed to make the same prediction, so the outcome could not discriminate between them. A class audit (2026-07-14/15) dissolved every instance: TEST-09 (BTFR slope) \u2014 the framework\'s bounded boost has no deep-MOND regime, its computed slope fails the observed 3.75\u00b10.10 at 3.3\u03c3 and its registered kill criterion fired at B_max = 1/\u03a9_m (the 2026-09-18 ceiling sweep found it convention-dependent \u2014 it does not fire at \u03a9_m/\u03a9_b \u2014 so whether it counts is pending review); TEST-10 (dwarf DM dominance) \u2014 the bounded boost caps apparent DM fraction at 68.5%, which 69% of SPARC galaxies exceed; TEST-05 (environment-dependent RAR scatter) \u2014 MOND+EFE\'s external-acceleration lever is ~50\u20135,000\u00d7 larger than C(\u03c1)\'s ambient-density lever, so a detected dependence is specific to MOND. The structural lesson: the framework differs from MOND in exactly two features (bounded boost; local coupling variable), and each "shared" test sat on an observable controlled by one of them \u2014 a tie was only possible where the framework IS MOND. Methodological lesson: a tie badge was the site\'s only unfalsifiable label (no execution, no number, sounds modest); the site now requires a claimed tie to carry the same execution burden as a claimed kill.',
     learnMore: '/tier-1-existing',
   },
   'withdrawn': {

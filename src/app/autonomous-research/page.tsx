@@ -12,7 +12,7 @@ export default function AutonomousResearch() {
       <Breadcrumbs currentPath="/autonomous-research" />
       <PathNav currentPath="/autonomous-research" />
       <h1>Autonomous Research</h1>
-      <ValidationBadge status="validated" label="3,308 Sessions" />
+      <ValidationBadge status="active-mrh" label="Methodology in use — 3,308 sessions" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -98,7 +98,7 @@ export default function AutonomousResearch() {
             </div>
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '1rem' }}>
-            Audit track record: 6 of 6 &ldquo;Validated&rdquo; badges demoted to Reparametrization on expert review
+            Audit track record: 6 of 6 &ldquo;Validated&rdquo; badges demoted to Reparametrization on audit by LLM agents (not an outside domain expert)
             (galaxy rotation, chemistry, Born rule, a₀, decoherence formula, Bell-freezing functional form).
             The 2,045 passing tests are mathematical consistency checks, not novel predictions.
           </p>

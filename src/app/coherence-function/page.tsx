@@ -111,7 +111,11 @@ export default function CoherenceFunction() {
               the same compander on acceleration g/a&#x2080;, which is MOND&apos;s variable.</li>
             <li><strong>Which result used which.</strong> TEST-09 (BTFR slope) and TEST-10 (dark-matter fraction): floored,
               acceleration-keyed C(a) = &#x03A9;<sub>m</sub> + (1&minus;&#x03A9;<sub>m</sub>)x/(1+x) under (a). Both keyings carry
-              the same ceiling, which is why the refutation transfers to C(&#x03C1;). &Delta;BIC +184: acceleration-keyed, &#x03B3; = 2.
+              the same ceiling, which is why the refutation transfers to C(&#x03C1;). That transfer is a galaxy-scale
+              statement. In the Solar System the floored density-keyed form is a separate problem: read pointwise, the
+              interplanetary medium (solar wind) makes GM&#x2609; inferred from different planets differ at O(1), so the law needs a
+              declared smoothing length before it says anything there (PREDICTIONS.md, &ldquo;SCOPE CONDITION&rdquo; block;
+              script <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/density_keyed_law_vs_interplanetary_medium.py</code>). &Delta;BIC +184: acceleration-keyed, &#x03B3; = 2.
               &Delta;BIC +2843: density-keyed, &#x03B3; free. The 2026-09-08/09 SPARC knee grid: density-keyed, floored, form (b)
               solved in disc geometry. Globular clusters: density-keyed under (a) on spherical Jeans models, where (a) and (b)
               agree. Not in any of them: the striction force that a <em>variational</em> version of (b) adds (see{' '}

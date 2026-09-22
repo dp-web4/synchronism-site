@@ -11,6 +11,14 @@ function glossarySlug(t: string): string {
   return t.replace(/Δ/g, 'delta ').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
+// Jump-bar group for a term: its first Latin letter, or "Greek" for symbol-led terms
+// (γ, η, ξ, ρ_crit, ΔBIC, ΛCDM, σ…), which sort after Z.
+function letterGroup(t: string): string {
+  const c = t.charAt(0).toUpperCase();
+  return /[A-Z]/.test(c) ? c : 'Greek';
+}
+const JUMP_GROUPS = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''), 'Greek'];
+
 export default function Glossary() {
   const allTerms = useMemo(() => getAllTerms()
     .slice()
@@ -25,6 +33,7 @@ export default function Glossary() {
     ? allTerms.filter(t => [t.term, t.fullName, t.brief, t.explanation]
         .some(field => typeof field === 'string' && field.toLowerCase().includes(needle)))
     : allTerms;
+  const presentGroups = new Set(allTerms.map(t => letterGroup(t.term)));
 
   return (
     <>
@@ -34,7 +43,7 @@ export default function Glossary() {
       <h1>Glossary</h1>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
         Key terms used throughout Synchronism, listed alphabetically (Greek-symbol terms sort
-        after the Latin alphabet, and validation-badge terms cluster as a group). Hover over
+        after the Latin alphabet; the nine formal validation badges are marked &ldquo;(badge)&rdquo;). Hover over
         highlighted terms on any page to see these definitions inline.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '2rem' }}>
@@ -74,6 +83,18 @@ export default function Glossary() {
         </p>
       </div>
 
+      {!needle && (
+        <nav aria-label="Jump to letter" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem 0.6rem', marginBottom: '1.5rem', fontSize: '0.9rem' }}>
+          {JUMP_GROUPS.map(g => presentGroups.has(g) ? (
+            <a key={g} href={`#letter-${g}`} style={{ color: 'var(--color-accent-blue)' }}>
+              {g === 'Greek' ? 'Greek (γ, ρ, σ…)' : g}
+            </a>
+          ) : (
+            <span key={g} style={{ color: 'var(--color-text-muted)', opacity: 0.5 }} aria-hidden="true">{g}</span>
+          ))}
+        </nav>
+      )}
+
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         {terms.length === 0 && (
           <p style={{ color: 'var(--color-text-muted)' }}>
@@ -81,8 +102,12 @@ export default function Glossary() {
             survey names and statistics are in it too (try <em>SPARC</em>, <em>BTFR</em>, <em>sigma</em>).
           </p>
         )}
-        {terms.map(term => (
+        {terms.map((term, i) => (
           <div key={term.term} className="card" id={term.term}>
+            {/* letter anchor for the A–Z jump bar, on the first card of each group */}
+            {!needle && (i === 0 || letterGroup(terms[i - 1].term) !== letterGroup(term.term)) && (
+              <span id={`letter-${letterGroup(term.term)}`} aria-hidden="true" />
+            )}
             {/* lowercase-slug alias so /glossary#kill-criterion works as well as the raw-term id */}
             {glossarySlug(term.term) && glossarySlug(term.term) !== term.term && <span id={glossarySlug(term.term)} aria-hidden="true" />}
             <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', marginBottom: '0.5rem' }}>

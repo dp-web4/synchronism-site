@@ -48,8 +48,12 @@ export default function TwoReframes() {
           fontStyle: 'italic',
           fontSize: '1.05rem',
         }}>
-          Nothing about the screen changed. Only your synchronization timing with the ongoing process changed.
+          Measurement is synchronization &mdash; and synchronizing with the process resets its phase.
         </blockquote>
+        <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '-0.75rem' }}>
+          The CRT picture is an intuition pump, not a mechanism. Read literally, it suggests that nothing about the
+          screen changes and only your timing does. That reading is tested below, and it fails.
+        </p>
 
         <h3>The Mapping</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
@@ -79,11 +83,31 @@ export default function TwoReframes() {
         </div>
 
         <p>
-          The claim is not metaphorical. In Synchronism, superposition IS temporal scanning &mdash; a
-          system cycling through states so fast that any observation slower than the cycle rate sees all
-          states &ldquo;at once.&rdquo; What we call measurement is sampling. What we call collapse is
-          catching the dot.
+          The proposed picture: superposition is temporal scanning &mdash; a system cycling through states
+          so fast that any observation slower than the cycle rate sees all states &ldquo;at once.&rdquo; Can
+          that be read literally? It depends on what measurement does to the scan.
         </p>
+        <div className="card" style={{ padding: '0.85rem 1rem', margin: '0 0 1.5rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          <p style={{ margin: '0 0 0.6rem' }}>
+            <ValidationBadge status="failed" label="non-invasive reading (measurement is sampling)" />{' '}
+            Read literally (&ldquo;nothing about the screen changed&rdquo;), the analogy is refuted. Sampling that
+            doesn&apos;t disturb the system predicts no quantum Zeno effect, and Itano et&nbsp;al. (1990) observed one:
+            transition probability 0.194 &plusmn; 0.02 at 8 measurement pulses, where non-invasive sampling predicts 1.
+          </p>
+          <p style={{ margin: '0 0 0.6rem' }}>
+            <ValidationBadge status="reparametrization" label="phase-lock reading (measurement is synchronization)" />{' '}
+            The version that survives is &ldquo;measurement is synchronization&rdquo;: syncing resets the system&apos;s
+            phase. Itano&apos;s data force that reset to be essentially complete (reset strength s &ge; 0.975). Written out,
+            a full reset is QM&apos;s projection (Lüders) rule, so this reading reproduces standard quantum mechanics and
+            adds nothing it lacks.
+          </p>
+          <p style={{ margin: 0 }}>
+            <strong>What would make it a prediction?</strong> A finite scan period T<sub>scan</sub>. With one, measurement
+            windows shorter than T<sub>scan</sub> could show Born-rule deviations that QM does not. No such period is
+            stated anywhere in the framework yet. Until one is, the phase-lock reading is an interpretation, not a test.
+            Source: <code style={{ fontSize: '0.78rem' }}>explorer/findings/crt-scanning-vs-leggett-garg-zeno-forces-the-phase-lock-and-the-phase-lock-is-lueders.md</code>.
+          </p>
+        </div>
 
         <h3>Wave-Particle Duality</h3>
         <p>

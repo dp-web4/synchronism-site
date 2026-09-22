@@ -152,7 +152,7 @@ export default function ResearchPhilosophy() {
 
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
           <strong>Deprecated</strong> (kept for back-compat with existing usages; do not appear in new content):{' '}
-          <ValidationBadge status="validated" />{' '}and{' '}<ValidationBadge status="supported" />{' '}
+          &ldquo;Validated&rdquo; and &ldquo;Strongly Supported&rdquo;{' '}
           &mdash; verdict-shaped; conflicts with the stewardship discipline (nothing is honestly characterizable as &ldquo;established&rdquo; at the current stage).
           Existing usages being migrated incrementally by the daily maintainer track.
         </p>

@@ -19,7 +19,20 @@ export default function PublisherTrack() {
     <>
       <Breadcrumbs currentPath="/publisher-track" />
       <h1>The Publisher Track</h1>
-      <ValidationBadge status="validated" label="Active System" />
+      <ValidationBadge status="superseded" label="Manuscript scores: February 2026 snapshot" />
+      <div style={{ borderLeft: '3px solid #ef4444', background: 'rgba(239,68,68,0.06)', padding: '0.75rem 1rem', borderRadius: '0.375rem', margin: '1rem 0', fontSize: '0.92rem' }}>
+        <strong>The manuscript scores on this page are a February 2026 snapshot, written before the audit, and have not been
+        updated.</strong> Several of the listed papers&apos; central claims have since failed or been identified as known
+        physics. &ldquo;Dark Matter as Incomplete Decoherence&rdquo; is badged Failed as a mechanism, and the
+        framework&apos;s own cosmology needs cold dark matter. The SPARC galaxy fits that work are MOND&apos;s simple
+        &mu; (Reparametrization), and the framework&apos;s own &gamma;&nbsp;=&nbsp;2 loses. The ALFALFA-SDSS scatter test was
+        never run as registered. The &sigma;<sub>int</sub> test is underpowered as registered. The chemistry
+        &ldquo;&gamma; framework&rdquo; mostly restates the Debye model. The consciousness threshold is unsupported
+        and untested. A score of 0.88 or 0.95 here is not a current assessment. For that, see{' '}
+        <Link href="/honest-assessment">Honest Assessment</Link> and{' '}
+        <Link href="/for-researchers">For Researchers</Link>, which lists the results a referee might still find worth
+        reading. No manuscript has been submitted.
+      </div>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

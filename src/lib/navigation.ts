@@ -636,7 +636,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'MOND-Synchronism Comparator',
       href: '/mond-comparator',
-      desc: 'Side-by-side a\u2080 derivation vs empirical MOND',
+      desc: 'Side-by-side status: where the framework equals MOND and where it lost',
       keywords: ['MOND', 'comparator', 'derivation', 'comparison', 'a0'],
       related: ['/mond-unification', '/galaxy-rotation'],
     },

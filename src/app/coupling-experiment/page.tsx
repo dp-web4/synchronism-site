@@ -166,7 +166,7 @@ export default function CouplingExperiment() {
     <>
       <Breadcrumbs currentPath="/coupling-experiment" />
       <h1>Compression Trust Phase Transition</h1>
-      <ValidationBadge status="supported" label="Executed" />
+      <ValidationBadge status="failed" label="Executed — p_crit derivation kill triggered (R² = −662); Hill beats tanh (ΔAIC 4); 2 of 4 criteria cleared" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -479,7 +479,7 @@ export default function CouplingExperiment() {
         <h2 style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--color-border)' }}>
           Phase 2: Compatibility &amp; Synthon Formation
         </h2>
-        <ValidationBadge status="supported" label="Executed — March 2026" />
+        <ValidationBadge status="untested" label="Executed March 2026 — homogeneous case fits (r = 0.994); the heterogeneous p_crit ∝ 1/⟨compat⟩ law is untested (ledger B4)" />
 
         <p style={{ marginTop: '1rem' }}>
           Phase 1 fixed compatibility at 1.0 (identical agents). Phase 2 asks: what happens when agents

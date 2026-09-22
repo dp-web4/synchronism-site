@@ -1,12 +1,13 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
 const approaches = [
-  { name: 'Phase transition analysis', threshold: 0.48, range: [0.45, 0.52], method: 'C value at which discontinuity appears in coherence equations' },
+  { name: 'Phase transition (none exists)', threshold: 0.48, range: [0.45, 0.52], method: 'Claimed: the C value at which a discontinuity appears in the coherence equations. But C(ρ) = tanh(γ ln(ρ/ρ_crit + 1)) is smooth and concave, with no critical point and no inflection (see Coherence Function), so there is no transition for this analysis to locate. The 0.48 is not the output of any computation on that curve.' },
   { name: 'Integrated information', threshold: 0.50, range: [0.47, 0.53], method: 'Φ integral threshold mapped to C via calibration' },
   { name: 'Neural binding threshold', threshold: 0.52, range: [0.48, 0.55], method: 'Minimum C for stable multi-scale neural synchronization' },
   { name: 'Self-modeling criterion', threshold: 0.49, range: [0.45, 0.53], method: 'C value at which system can represent its own coherence state' },
@@ -166,7 +167,11 @@ export default function ConsciousnessDemo() {
         <p>
           The 8 approaches below all converge on C &#x2248; 0.50 — an illustration of how the geometric
           midpoint artifact operates. The convergence was shown to be forced (geometric, not empirical) and
-          the threshold itself remains untestable as stated (no measurement maps to C). Hover over each to see the methodology.
+          the threshold itself remains untestable as stated (no measurement maps to C). One of the eight,
+          &ldquo;phase transition analysis&rdquo;, has nothing to analyse: the C(&rho;) curve has no critical point
+          and no inflection (see <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>),
+          so there is no phase transition for it to locate. It is relabelled below rather than removed, so the
+          count of eight stays visible. Hover over each to see the methodology.
         </p>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>

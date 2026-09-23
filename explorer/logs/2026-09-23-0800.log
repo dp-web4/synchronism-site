@@ -1,1 +1,32 @@
 Starting Synchronism Explorer Session at Wed Sep 23 08:00:01 PDT 2026
+Today's result: the density-keyed version of C(ρ) is already excluded by an existing measurement, lunar laser ranging (LLR). This covers TEST-02's "practically untestable" density branch and the original Refracted Gravity (Matsakos & Diaferio's published theory).
+
+**Why it works.** In the density-keyed reading, the boost 1/C(ρ_ambient) is the same for everything in one region. That's why it cancels in wide-binary ratios (TEST-02's γ_g ≡ 1 argument). It doesn't cancel over time, though, because the Sun moves: past α Cen, which is closing at 22 km/s, and through the Galactic disc's density gradient. So the law predicts G drifting today, and LLR measures that drift, Ġ/G, at (7.1 ± 7.6)×10⁻¹⁴ per year ([Hofmann & Müller 2018](https://ui.adsabs.harvard.edu/abs/2018CQGra..35c5015H)).
+
+**Results.** The pre-registration was committed as `80b8c9c` before the script existed; 4 of 5 predictions held.
+- **Where it applies.** The result is computed for density averaged over a smoothing length ℓ. The galaxy fits need ℓ ≥ 1 pc, and the globular-cluster window needs ℓ ≤ 10 pc, so the relevant range is 1–10 pc.
+- **At ℓ = 1 pc, 68 of 74 laws are excluded.** I tested against a bound 13× looser than LLR's. Every law with local C < 0.999 misses by at least 5×10⁴. The weakest exclusions are γ = 2 laws with ρ_c from 1.75×10⁻³ to 10⁻², which miss by only 1.7× to 1,500×.
+- **Also excluded:**
+  - all 8 of TEST-02's "Newtonian-null" windows: predicted Ġ/G of 7×10⁻⁹ to 6×10⁻⁸ per year, about 10⁵× above LLR;
+  - both published Refracted Gravity calibrations.
+- **The 6 survivors** are all γ = 2 with ρ_c ≤ 10⁻³ M☉/pc³. They behave exactly like Newton near the Sun (deviation ≤ 10⁻⁸), so they predict nothing there.
+- **The smoothing length is squeezed from both sides.** Unless C is saturated near the Sun, LLR allows ℓ only up to about 0.3 pc, while the galaxy fits need at least 1 pc. So those laws have no allowed ℓ.
+- **This is independent of SPARC.** It doesn't touch the acceleration-keyed C_a that TEST-09/10 use. It is not a seventh refutation, but a second, separate reason the already-refuted density branch fails.
+
+**The P3 miss.** At ℓ = 100 pc, 5 of the 8 TEST-02 windows slip through. That comes from my conservative scoring rule, not from a physical escape, and it is outside the 1–10 pc range.
+
+**Caveats and corrections:**
+- I fixed two bugs before writing any verdict: an under-resolved convolution grid, and a pre-registered rule I had initially failed to apply. The upshot is that every exclusion rests on the nearby-star term alone.
+- After publishing, I caught and corrected an overclaim in my own summary about the size of the margins (commit `be21c10`).
+- The nearby-star list is hand-entered from approximate values. The margins are large enough that this doesn't change the verdicts.
+- Earlier explorer work had dismissed LLR in one line ("LLR probes local C ≈ 1, Ċ ≈ 0"). That line was wrong for any smoothing length the galaxy fits need.
+
+**So what.** This is a new external data source, not bookkeeping. It also bears on the maintainer's H-oracle question (do verdicts only change when something is run against data?): today's verdict change came from running a computation, and what it overturned was a dismissal made by reading alone. A question to take forward: which other tests that cancel to zero have a rate-of-change version that doesn't?
+
+**Files and actions:**
+- Finding: `explorer/findings/density-keyed-C-is-a-moving-G-lunar-laser-ranging-excludes-it-at-pc-smoothing.md`
+- Script: `explorer/scripts/density_keyed_gdot_solar_motion.py` (with `_PREREG.md` and `_output.txt`)
+- Session log: `explorer/logs/2026-09-23.md`
+- Topic archived to `topics/done/`, a new memory saved, and everything pushed.
+
+The Gmail, Google Calendar and Google Drive connectors need authorization in your claude.ai connector settings; they weren't needed today. The playwright server also failed to connect because `npx` isn't on PATH.

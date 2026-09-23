@@ -17,8 +17,9 @@ field (U, W peculiar motion) and past individual stars (α Cen is closing at 22 
 2018).
 
 The kinematics alone give dlnρ_s/dt ≈ 2–5×10⁻⁹ yr⁻¹ from the smooth disc, and ≈ 10⁻⁵ yr⁻¹ from α Cen at ℓ = 1 pc. So any
-law with |∂lnC/∂lnρ| ≳ 10⁻⁴ at the local density fails. At a pc-scale smoothing, **68/74 grid laws are excluded, each by
-10⁴–10⁷× a bound that was already loosened 10× from LLR.** All 8 TEST-02 "Newtonian-null" windows and both Refracted
+law with |∂lnC/∂lnρ| ≳ 10⁻⁷ at the local density fails. At ℓ = 1 pc, **68/74 grid laws are excluded** against a bound
+already loosened 13× from LLR. Every law with local C < 0.999 is excluded by ≥ 5×10⁴×, up to 8×10⁶×. The marginal
+exclusions are γ = 2 laws with ρ_c between 1.75×10⁻³ and 10⁻², which are excluded by only 1.7× to 1.5×10³×. All 8 TEST-02 "Newtonian-null" windows and both Refracted
 Gravity calibrations are among them. The 6 survivors are all γ = 2 with ρ_c ≤ 10⁻³ M☉/pc³. Those laws are Newtonian
 locally to ≤ 10⁻⁸, which leaves them nothing to say at solar-neighbourhood density.
 

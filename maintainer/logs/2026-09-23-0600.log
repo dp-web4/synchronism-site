@@ -1,0 +1,35 @@
+Starting Synchronism Maintainer Session at Wed Sep 23 06:00:01 PDT 2026
+The session is done and pushed. The build passes, and the site lint shows 0 live retired phrases across 106 rules. The count stays at 6 refutations and 0 confirmed predictions.
+
+**WAKE: yes, the feedback points at the research method.** For the second day running, the researcher persona says the most citable thing on the site is the /a2acw claim about methods ("self-play without an outside oracle converges on consistency, not discovery"), not any physics. The program did have an outside oracle: the tests it ran against real data. All six refutations came from those. All six of today's high-severity items were consistency errors found by reading, and none changed a verdict. That is a checkable prediction about the program's own record. I wrote it up as a proposal and an explorer topic. One possible counterexample is already on record: TEST-04a moved from "refuted" to "underpowered" after someone read the papers, with no new run.
+
+**Two errors were in the research ledger, not only the site.** Both are corrected in PREDICTIONS.md (Synchronism `a88b4636`):
+- **γ = ½, not 0.489, is exactly MOND's simple μ.** /dark-energy and PREDICTIONS.md said the two sectors' standard models sit "0.011 apart by construction". Both sit at the same point, γ = ½, which the ledger's own B2 row already says. So the "cross-sector agreement" has zero power to fail, a stronger deflation than the site stated.
+- **The dark-energy sign lock rules out more than crossing.** The region DESI prefers is mostly thawing dark energy, which never crosses w = −1. The lock allows only evolution toward −1, so it rules out thawing as well. That is a sharper kill condition for any TEST-26 registration.
+
+**Site fixes:**
+- **/coherence-function:** now has a three-row "which C" table. It no longer says the ceiling kills tested the density-keyed form.
+- **/galaxy-rotation:** the badge now separates the density-keyed result (ΔBIC +2843) from the acceleration-keyed γ = 2 result (+184).
+- **/galaxy-plotter:** answers the researcher's "untested branch" question. The existing fit had A free and lost by +3309, and any fixed A falls inside that search.
+- **/cdm-discrimination:** the 0.086 dex scatter is from the baryonic Tully–Fisher relation (one point per galaxy), not the resolved RAR. The source session says so itself.
+- **Landing page:**
+  - The two different "5"s are now named as two groupings of the same six tests.
+  - "0 of 9 audited" now says it is not evidence against the claims.
+  - The badge legend now includes Audited-Negative.
+- **/honest-assessment:** the TEST-10 dwarf-galaxy result is stated as a class-wide exclusion, with the note that the TEST-09 slope result does not generalise.
+- **/dark-energy:** now states which sound speed the P(k) constraint on γ assumes.
+- **Glossary:** explains that the MRH badge family borrows the name for the research inventory, not the physics concept.
+- **Two background agents:**
+  - One made the beginner-path fixes: a plain-words box on /core-idea, relabelled presets, non-badge group names on /interactive-tools, and muted breadcrumbs.
+  - The other collapsed inline revision history into expandable blocks on /for-researchers and /tier-1-existing. It flagged a stale claim ("holds for any local-ρ MOND mimic") and an outdated "inverted sign" statement, both of which I fixed.
+- **Lint:** 4 new rules for today's retired wordings. Each one catches the old text in the committed version.
+
+**Mistake:** I used `git stash` for the lint check while the agents were editing files. That made the first check useless and briefly pulled files out from under them. The restore went through cleanly, the check was redone properly, and the lesson is saved in memory.
+
+**Decisions for you:**
+- **Cadence:** three researcher passes in a row find only bookkeeping left in the physics. Should maintainer effort shift toward the correction-trail test, the TEST-04a re-registration, the dark-matter fork, and the blind A2ACW arm?
+- **TEST-26:** if you register it, word the kill as "thawing preferred over freezing", and state which density reading and which sound speed it assumes.
+
+**Deferred to next session:** the explorer's 09-22 superfluid-DM prior-art items, collapsing revision history on the other long pages, and renaming the badge family.
+
+**Not connected this session:** the Gmail, Calendar and Drive connectors need authorizing in claude.ai settings. The playwright MCP server failed to start because `npx` isn't on PATH. None of these were needed today.

@@ -22,12 +22,20 @@ export default function ForResearchers() {
           simple &#x03BC;, for galaxies, and &#x03C1;<sub>DE</sub> = 2&#x03C1;<sub>crit</sub>, exactly &#x039B;, for cosmology.
           Left free, the single parameter goes there: 0.489 on SPARC, 0.487 (+0.024/&minus;0.021) on DESI DR2+CMB+SN
           (mean-density reading; on the local-density fluid reading, P(k) pins &#x03B3; to &frac12; within ~10&#x207B;&#x2075;).{' '}
-          <strong>This is a deflation, not a concordance.</strong> The two sectors&apos; standard models sit 0.011 apart in
-          &#x03B3; by construction; the SPARC value carries &plusmn;0.11 statistical and a 0.27&ndash;0.96 band from
+          <strong>This is a deflation, not a concordance.</strong> The two sectors&apos; standard models sit at the <em>same</em>
+          point, &#x03B3; = &frac12;, by construction (the 0.011 is SPARC&apos;s fitted offset from &frac12;, not a gap between
+          the models; corrected 2026-09-23, see revision notes); the SPARC value carries &plusmn;0.11 statistical and a 0.27&ndash;0.96 band from
           mass-to-light alone, so the agreement had no power to fail. What it says is that wherever this equation has been
-          fitted, the data asked for the point where it is somebody else&apos;s. (Moved here 2026-09-19 from a parenthetical
-          on <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link> after a researcher
-          reader called it more informative than the scoreboard.)
+          fitted, the data asked for the point where it is somebody else&apos;s.
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+            <ul style={{ margin: '0.3rem 0 0', paddingLeft: '1.1rem' }}>
+              <li>Until 2026-09-23 the deflation sentence said the two sectors&apos; standard models sit &ldquo;0.011 apart by construction&rdquo;.</li>
+              <li>This box was moved here 2026-09-19 from a parenthetical on{' '}
+              <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link> after a researcher
+              reader called it more informative than the scoreboard.</li>
+            </ul>
+          </details>
         </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           An arriving expert should not have to excavate the failure documentation to find what
@@ -45,9 +53,7 @@ export default function ForResearchers() {
           not fire at the baryon-budget ceilings in the 2026-09-18 sweep (|&Delta;n| = 0.30 and 0.26 against a strict
           &gt;&nbsp;0.3), so its convention-free content is that a bounded boost with B<sub>max</sub>&nbsp;&#8818;&nbsp;5.4 is
           excluded; TEST-10&apos;s is B<sub>max</sub>&nbsp;&#8818;&nbsp;14. Whether they stay in the count of 6 is pending
-          dp. (This page said
-          &ldquo;0 tests currently discriminating&rdquo; until 2026-07-27, which booked the framework&apos;s two
-          strongest empirical results as zero; the bolded line was reunified 2026-08-08.)
+          dp. (Corrected 2026-07-27 and 2026-08-08; see revision notes.)
           What remains citable are <strong>replications,
           quantified instances of known results, and executed negative results</strong> — the five
           numbered artifacts below survive the framework being wrong, precisely because they do not depend
@@ -55,6 +61,11 @@ export default function ForResearchers() {
           <a href="#a2acw-open-question" style={{ color: 'var(--color-accent-blue)' }}>open question</a> about the audit
           instrument (A2ACW), which is not a citable null.
         </p>
+        <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '-0.5rem 0 1rem' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+          This page said &ldquo;0 tests currently discriminating&rdquo; until 2026-07-27, which booked the framework&apos;s two
+          strongest empirical results as zero; the bolded line was reunified 2026-08-08.
+        </details>
         <div id="start-here" style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', padding: '0.85rem 1.1rem', marginBottom: '1.25rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)', scrollMarginTop: '5rem' }}>
           <strong style={{ color: 'var(--color-accent-violet)' }}>Start here: negative results on density-keyed modified gravity
           (framework-independent)</strong>
@@ -114,10 +125,14 @@ export default function ForResearchers() {
           data rather than a priori. One dependency: the nesting holds only if the acceleration form&apos;s exponent
           &#966; is fixed; the archive&apos;s provenance audit found it fitted-then-named, and if it is free the law is not
           a pure restriction at all. Source: <code>Research/proposals/nested_submodel_fit_versus_selection.md</code>{' '}
-          (2026-07-29); this paragraph said &ldquo;it cannot win&rdquo; until 2026-09-14. See item 8 on{' '}
+          (2026-07-29). See item 8 on{' '}
           <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
           for the ceiling&apos;s own provenance, which is itself asserted rather than derived.
         </p>
+        <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '-0.5rem 0 1rem' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+          This paragraph said &ldquo;it cannot win&rdquo; until 2026-09-14.
+        </details>
         <div style={{ background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.85rem 1.1rem', marginBottom: '1.5rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#f87171' }}>The complement of that bound, and it is arithmetic rather than a fit
           (explorer 2026-09-09, added here 2026-09-10).</strong>{' '}
@@ -173,9 +188,8 @@ export default function ForResearchers() {
             What this project adds is the <strong>quantified local-density instance</strong>: any
             gravity modification keyed on the <em>local volumetric density</em> &#x03C1;(r){' '}
             <strong>via algebraic coupling</strong> (C(&#x03C1;)&middot;g as a multiplicative scalar on
-            the force — the class the framework&apos;s <em>algebraic</em> reading belongs to. <strong>Scope correction
-            2026-09-11 (visitor researcher persona):</strong> this page previously said &ldquo;the class this framework
-            belongs to,&rdquo; but the framework&apos;s field-equation form &nabla;&middot;[C&nabla;&Phi;] = 4&pi;G&rho;
+            the force — the class the framework&apos;s <em>algebraic</em> reading belongs to. <strong>Scope (corrected
+            2026-09-11, visitor researcher persona; see revision notes):</strong> the framework&apos;s field-equation form &nabla;&middot;[C&nabla;&Phi;] = 4&pi;G&rho;
             (Refracted Gravity&apos;s) carries a gradient coupling &nabla;C&middot;&nabla;&Phi; in discs and is outside this
             statement as written. For that form the SPARC evidence is the disc-geometry grid in the box above (floored
             switch at &gamma; &isin; {'{'}0.489, 2{'}'}, f &isin; {'{'}0.089, 0.315{'}'}, knee 3&times;10&#x207B;&#x2074;&ndash;0.16
@@ -191,7 +205,7 @@ export default function ForResearchers() {
             off the galaxy calibration (Coma, four ansätze, one structurally bounded at velocity ratio &le;2 vs observed 4.6).
             The sign statement below (&#x03C1;<sub>t</sub> &prop; V<sup>&minus;2</sup> required by the BTFR, &#x03C1;<sub>crit</sub>{' '}
             &prop; V<sup>+2</sup> asserted) is the data-free reason all three fail. <em>Not</em> a route against density
-            keying: the SPARC RAR &#x0394;BIC = +184, which this list cited until 2026-09-14. That fit keyed the compander on
+            keying: the SPARC RAR &#x0394;BIC = +184 (removed from this list 2026-09-14; see revision notes). That fit keyed the compander on
             acceleration (C as an implicit &mu; on g<sub>obs</sub>, &#x03B3; pinned at 2), so it refutes the &#x03B3; = 2 pin in the
             acceleration-keyed realization, not density keying. Nor is the environment run (r&sup2; = 0.0001): Honest
             Assessment reclassified it on 2026-09-05 as refuting a registered amplitude that is consistent with the
@@ -219,10 +233,10 @@ export default function ForResearchers() {
             C(&#961;)&nbsp;=&nbsp;x/(x+2)&nbsp;=&nbsp;&#956;<sub>simple</sub>(x/2) <em>identically</em> (see{' '}
             <Link href="/coherence-function" style={{ color: '#38bdf8' }}>Coherence Function</Link>). Put those
             together: the galaxy sector is MOND, with &#956;&apos;s argument swapped from acceleration to local
-            density &#961;. (Precision, 2026-09-08: in MOND μ is keyed on g<sub>obs</sub>, and the SPARC fit that
+            density &#961;. (Precision, 2026-09-08, see revision notes: in MOND μ is keyed on g<sub>obs</sub>, and the SPARC fit that
             produced γ = 0.489 used C exactly that way &mdash; as an implicit μ(g<sub>obs</sub>/a₀′), solved for
             g<sub>obs</sub>; see <Link href="/coherence-function" style={{ color: '#38bdf8' }}>Coherence Function</Link>{' '}
-            for the script line. This sentence used to say &ldquo;from g<sub>bar</sub>,&rdquo; and the fit swapped
+            for the script line. The fit swapped
             nothing; the swap to ρ is the framework&apos;s <em>stated</em> law, which is what the no-go tests.)
             That single substitution &mdash; the one this
             no-go quantifies &mdash; is not one result among the site&apos;s six executed refutations. It is the
@@ -233,8 +247,9 @@ export default function ForResearchers() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Scope split — which half generalizes (2026-07-08):</strong> the three numbered
             results carry different generality. The <em>sign statement below</em> (&rho;<sub>crit</sub>{' '}
-            must scale as V<sup>&minus;2</sup>) is BTFR-forced and profile-independent — it holds for any
-            local-&rho; MOND mimic. The <em>&#x0394;BIC +2843 ensemble rejection</em> is specific to the
+            must scale as V<sup>&minus;2</sup>) is BTFR-forced and profile-independent. It holds for local-&rho;
+            schemes that modulate the force algebraically (C(&#x03C1;)&middot;g), not for every local-&rho; MOND mimic;
+            see the counterexample paragraph below (scope corrected 2026-07-27, applied to this paragraph 2026-09-23). The <em>&#x0394;BIC +2843 ensemble rejection</em> is specific to the
             log-density compander family actually tested (C = tanh(&#x03B3;&nbsp;ln(1+&#x03C1;/&#x03C1;<sub>crit</sub>)));
             other local-density functional forms would need their own ensemble runs. The cluster/offset
             arguments sit in between: the ~1.7 dex &rho;&#x2194;g<sub>bar</sub> mismatch is a property of
@@ -249,8 +264,12 @@ export default function ForResearchers() {
             so &rho;<sub>t</sub> &prop; a&#x2080;&sup2;/GV&sup2;); the framework asserts
             &rho;<sub>crit</sub> &prop; V<sup>+2</sup> — inverted sign, 240&times;&ndash;300,000&times;
             magnitude error growing with V. This is profile-independent within the family it covers.{' '}
-            <strong>Scope corrected 2026-07-27:</strong> an earlier version of this line claimed the
-            result holds for <em>any</em> local-&rho; MOND mimic. It does not — see the counterexample
+            <strong>Measured since (2026-08-27; archive ledger row restated 2026-08-28):</strong> on SPARC the knee
+            carries no velocity exponent at all; V<sup>+2</sup> is excluded at about 11&sigma;. The refutation stands as
+            a <em>wrong exponent</em>. &ldquo;Inverted sign&rdquo; and the 240&times;&ndash;300,000&times; figures are the
+            pre-measurement statement, kept here because this is its citable form.{' '}
+            <strong>Scope (corrected 2026-07-27; see revision notes):</strong> the result does not hold for{' '}
+            <em>any</em> local-&rho; MOND mimic — see the counterexample
             paragraph below. It holds for local-&rho; schemes that modulate the force{' '}
             <em>algebraically</em> (C(&#x03C1;)&middot;g), which is the class C(&#x03C1;) belongs to.
             Detail on <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>.
@@ -291,16 +310,8 @@ export default function ForResearchers() {
             Escape taxonomy: non-local theory (AeST-class), local-criterion-<em>gated medium</em>{' '}
             (superfluid-DM-class), or <em>differential</em> local-density coupling (symmetron-class,
             added 2026-07-27 — see below); <em>algebraic</em> local-density modulation, the class
-            C(&#x03C1;) belongs to, remains excluded. <strong>Attribution withdrawn 2026-07-27:</strong>{' '}
-            this paragraph previously stated that &ldquo;the &#x03C1;-vs-g<sub>bar</sub> mismatch is the
-            standard reason screened scalars don&apos;t reproduce MOND.&rdquo; That attribution was never
-            sourced, and the screening literature does not make it. Hinterbichler &amp; Khoury, PRL 104,
-            231301 (2010) do not mention MOND, rotation curves, or dark matter anywhere; Joyce, Jain,
-            Khoury &amp; Trodden, Phys. Rep. 568, 1 (2015) mention MOND once, attached to the{' '}
-            <em>acceleration</em>-keyed (k-mouflage) screening class as a construction tool — the
-            opposite valence; and the published reasons chameleon f(R) fails on SPARC are the
-            f<sub>R0</sub> spread and core/cusp degeneracy (Naik, Puchwein, Davis &amp; Arnold, MNRAS
-            480, 5211 (2018); MNRAS 489, 771 (2019)), not a variable mismatch.
+            C(&#x03C1;) belongs to, remains excluded. (An unsourced attribution to the screening literature was
+            withdrawn from this paragraph 2026-07-27; see revision notes.)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Counterexample found — the generality claim is withdrawn (2026-07-27):</strong>{' '}
@@ -349,8 +360,7 @@ export default function ForResearchers() {
             order g<sub>ext</sub>&Delta;C/C without striction and a nonlinear one with it. EFE&nbsp;=&nbsp;0 exactly holds for the
             algebraic reading only. Details and the floored/unfloored scope:{' '}
             <Link href="/mond-unification#field-equation" style={{ color: 'var(--color-accent-blue)' }}>MOND Unification</Link>.
-            (This paragraph used to say the completion &ldquo;conserves momentum&rdquo; and &ldquo;preserves EFE = 0 exactly&rdquo;;
-            both were overstatements.)
+            (Two overstatements corrected; see revision notes.)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Prior-art audited (2026-07-23):</strong> the Milgrom surface-density and modified-inertia
@@ -359,9 +369,7 @@ export default function ForResearchers() {
             2012; Banik &amp; Zhao 2022) and the modern variable-comparison literature (McGaugh 2004; Lelli et
             al. 2017; Stiskalek &amp; Desmond 2023) were searched for a prior quantified instance of local
             volumetric density failing as the organizing variable. <strong>None exists in that corpus</strong>{' '}
-            (scope added 2026-07-27 — the original wording said &ldquo;none exists,&rdquo; unqualified, which
-            was false: the screening corpus, named as unwalked in this very paragraph, contains a
-            counterexample. A prior-art null is bounded by its corpus and must be stated that way):
+            (scope added 2026-07-27; see revision notes. A prior-art null is bounded by its corpus and must be stated that way):
             every published discrimination <em>in the MOND variable-comparison literature</em> tests
             acceleration against radius, orbital frequency, size, or surface density —
             &#x03C1;(r) was never in any tested variable set (Stiskalek &amp; Desmond&apos;s 2023 feature sweep
@@ -406,6 +414,32 @@ export default function ForResearchers() {
             the host&apos;s V<sub>flat</sub> is also a global quantity, so this corollary is not an instance of the local-density no-go.
             Derivation: <code>explorer/scripts/coarse_graining_length_universality.py</code>.
           </div>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0 0 0.75rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+            <ul style={{ margin: '0.3rem 0 0', paddingLeft: '1.1rem' }}>
+              <li>Scope correction 2026-09-11 (visitor researcher persona): this page previously said the algebraic-coupling
+              class is &ldquo;the class this framework belongs to,&rdquo; but the framework&apos;s field-equation form is outside
+              the statement as written.</li>
+              <li>The SPARC RAR &#x0394;BIC = +184 was cited in the list of routes against density keying until 2026-09-14.</li>
+              <li>Precision 2026-09-08: the MOND-mapping sentence used to say the fit swapped &mu;&apos;s argument
+              &ldquo;from g<sub>bar</sub>.&rdquo;</li>
+              <li>Scope corrected 2026-07-27: an earlier version of the one-line sign statement claimed the result holds for{' '}
+              <em>any</em> local-&rho; MOND mimic.</li>
+              <li><strong>Attribution withdrawn 2026-07-27:</strong> the escapes paragraph previously stated that &ldquo;the
+              &#x03C1;-vs-g<sub>bar</sub> mismatch is the standard reason screened scalars don&apos;t reproduce MOND.&rdquo; That
+              attribution was never sourced, and the screening literature does not make it. Hinterbichler &amp; Khoury, PRL 104,
+              231301 (2010) do not mention MOND, rotation curves, or dark matter anywhere; Joyce, Jain,
+              Khoury &amp; Trodden, Phys. Rep. 568, 1 (2015) mention MOND once, attached to the{' '}
+              <em>acceleration</em>-keyed (k-mouflage) screening class as a construction tool — the
+              opposite valence; and the published reasons chameleon f(R) fails on SPARC are the
+              f<sub>R0</sub> spread and core/cusp degeneracy (Naik, Puchwein, Davis &amp; Arnold, MNRAS
+              480, 5211 (2018); MNRAS 489, 771 (2019)), not a variable mismatch.</li>
+              <li>The field-equation paragraph used to say the completion &ldquo;conserves momentum&rdquo; and &ldquo;preserves
+              EFE = 0 exactly&rdquo;; both were overstatements.</li>
+              <li>Prior-art scope added 2026-07-27: the original wording said &ldquo;none exists,&rdquo; unqualified, which
+              was false: the screening corpus, named as unwalked in that very paragraph, contains a counterexample.</li>
+            </ul>
+          </details>
           <Link href="/honest-assessment" style={{ fontSize: '0.85rem' }}>Full closure documentation in Honest Assessment &rarr;</Link>
         </div>
 
@@ -438,8 +472,7 @@ export default function ForResearchers() {
             Any discrete absolute-time substrate without an added custodial boost-symmetry generates
             dimension-4 Lorentz-violating SME coefficients c<sub>μν</sub>&nbsp;~&nbsp;α/π&nbsp;~&nbsp;10<sup>&#x2212;2</sup>
             at one loop (Collins, Perez, Sudarsky, Urrutia &amp; Vucetich, <em>PRL</em> 93, 191301, 2004 &mdash;
-            author list corrected 2026-07-09; previously misattributed to Gambini &amp; Pullin, who are not
-            authors on this paper).
+            author list corrected 2026-07-09; see revision notes).
             Existing bounds reach 10<sup>&#x2212;18</sup>–10<sup>&#x2212;30</sup> — a 16–28 OOM fine-tuning gap.
             The exclusion applies to any model whose defining commitment is an absolute preferred frame,
             regardless of the other details. A LIV/quantum-foundations referee can cite this as a
@@ -527,8 +560,17 @@ export default function ForResearchers() {
             <a href="https://github.com/dp-web4/Synchronism" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}>
               Synchronism research archive
             </a>.{' '}
-            Dim-4 c<sub>μν</sub> coefficient computed (2026-06-26): radiative value ~10<sup>&#x2212;2</sup>, 16–28 OOM above existing bounds (CPSU 2004 naturalness problem, not a data-driven refutation). For the framework to survive this channel, an unexhibited custodial mechanism must be specified — known candidates are SUSY (Groot Nibbelink &amp; Pospelov 2005) and anisotropic scale-hierarchy (Pospelov &amp; Shang 2012, demonstrated for Hořava–Lifshitz). This is the framework&apos;s most severe naturalness constraint. Corrected framing per 2026-06-30 explorer audit: earlier versions mislabeled this &ldquo;refuted&rdquo; and &ldquo;doubly-obstructed&rdquo; — both overstatements corrected here.
+            Dim-4 c<sub>μν</sub> coefficient computed (2026-06-26): radiative value ~10<sup>&#x2212;2</sup>, 16–28 OOM above existing bounds (CPSU 2004 naturalness problem, not a data-driven refutation). For the framework to survive this channel, an unexhibited custodial mechanism must be specified — known candidates are SUSY (Groot Nibbelink &amp; Pospelov 2005) and anisotropic scale-hierarchy (Pospelov &amp; Shang 2012, demonstrated for Hořava–Lifshitz). This is the framework&apos;s most severe naturalness constraint (framing corrected per 2026-06-30 explorer audit; see revision notes).
           </p>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.35rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+            <ul style={{ margin: '0.3rem 0 0', paddingLeft: '1.1rem' }}>
+              <li>Author list corrected 2026-07-09: CPSU 2004 was previously misattributed to Gambini &amp; Pullin, who are not
+              authors on this paper.</li>
+              <li>Corrected framing per 2026-06-30 explorer audit: earlier versions mislabeled this &ldquo;refuted&rdquo; and
+              &ldquo;doubly-obstructed&rdquo; — both overstatements.</li>
+            </ul>
+          </details>
         </div>
 
         {/* Artifact 3 (numbered 4 until 2026-09-14): B1 CHSH check */}
@@ -630,11 +672,15 @@ export default function ForResearchers() {
             <strong>Honest novelty statement:</strong> the identifiability logic is standard (a linearised model cannot
             constrain its nonlinearity); what is new is the executed Fisher analysis on the specific framework and the
             placement of Refracted Gravity as the identifiable member of the same family. A researcher persona
-            (2026-09-06) called this &ldquo;a two-page note, not a subsection&rdquo;; it lived under item 7 of{' '}
-            <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
-            until today. The full Fisher matrix is not yet written up as a standalone artifact &mdash; seeded to the
+            (2026-09-06) called this &ldquo;a two-page note, not a subsection&rdquo; (promoted 2026-09-06; see revision notes).
+            The full Fisher matrix is not yet written up as a standalone artifact &mdash; seeded to the
             explorer track.
           </p>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.35rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+            Until its promotion on 2026-09-06 this result lived under item 7 of{' '}
+            <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>.
+          </details>
         </div>
 
         {/* Artifact 5 (numbered 6 until 2026-09-14): globular-cluster exclusion window */}
@@ -713,15 +759,19 @@ export default function ForResearchers() {
             removes the remote, isolated clusters where MOND is actually contested: NGC 2419 (Ibata et al. 2011; Sanders
             2012), Pal 14 and Pal 4, with 1–3 dispersion bins each in the catalogue. The window rests on inner-halo clusters.{' '}
             <strong>What this bound does not do (scope correction 2026-09-09):</strong> it does not combine with the
-            solar-neighbourhood (Oort-limit) constraint into a joint no-go. Evaluated <em>at the same γ</em> &mdash; the
-            step this program got wrong twice &mdash; the two windows overlap everywhere from γ = 0.3 to 3: the clusters
+            solar-neighbourhood (Oort-limit) constraint into a joint no-go. Evaluated <em>at the same γ</em>, the two windows overlap everywhere from γ = 0.3 to 3: the clusters
             call the bottom of the solar window <em>ok</em> and its top <em>marginal</em>, leaving a joint window at
             ρ<sub>c</sub> ∈ 0.0039–0.0079 M<sub>☉</sub>/pc³ (γ = 0.489) and 0.0735–0.078 (γ = 2), sliding as
-            e<sup>1/γ</sup> between them. A briefly-published claim that the two are disjoint was a γ mismatch and is
-            withdrawn. <strong>Quote this window with its γ attached; it is meaningless without one.</strong> Full result,
+            e<sup>1/γ</sup> between them (corrected 2026-09-09; see revision notes). <strong>Quote this window with its γ attached; it is meaningless without one.</strong> Full result,
             robustness table and the γ fork it opens for this framework specifically:{' '}
             <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
           </p>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.35rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+            Scope correction 2026-09-09: evaluating the two windows at the same γ is the step this program got wrong twice.
+            A briefly-published claim that the globular-cluster and solar-neighbourhood windows are disjoint was a γ mismatch
+            and is withdrawn.
+          </details>
         </div>
 
         {/* Secondary: DESI mechanism-class */}
@@ -877,9 +927,10 @@ export default function ForResearchers() {
               <code>a2acw-temporal-asymmetry-counterfactual-audit.md</code>.
             </p>
           </div>
-          <details style={{ margin: '0.75rem 0' }}>
-            <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.88rem' }}>
-              Revision history, 2026-07-09 to 2026-09-10 (verbatim; the current-state box above supersedes it where they differ)
+          <details style={{ margin: '0.75rem 0', color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
+            <summary style={{ cursor: 'pointer' }}>
+              Revision notes (history; not the current claim): verbatim text from 2026-07-09 to 2026-09-10. The current-state
+              box above supersedes it wherever they differ.
             </summary>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.6rem' }}>
               <strong>Superseded on 2026-09-15:</strong> the 09-14 box&apos;s detector bullet, which took the 6 demoted claims
@@ -924,6 +975,8 @@ export default function ForResearchers() {
               Discrimination lives entirely in unautomated human novelty judgment.
             </p>
             <div style={{ background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', margin: '0.75rem 0', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+              <em>[Historical text of 2026-09-10, superseded 2026-09-14/15; the current control status is in the
+              Current state box above.]</em>{' '}
               <strong style={{ color: '#fbbf24' }}>Demoted from &ldquo;citable null&rdquo; to open question, 2026-09-10 &mdash;
               and the reason is that the positive control has never been run.</strong>{' '}
               A researcher persona made the point that this page was already making about itself and then not acting on:

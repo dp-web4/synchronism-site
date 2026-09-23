@@ -271,7 +271,16 @@ export default function GalaxyPlotter() {
         }}>
           <strong style={{ color: '#f59e0b' }}>Parsimony note:</strong> MOND fits all 175 SPARC galaxies with a <em>single global</em> constant (a&#x2080;). Synchronism refits one free &#x03C1;<sub>crit</sub> <em>per galaxy</em> — an extra free parameter for each galaxy. By parsimony (BIC), the Synchronism per-galaxy fit is strictly dominated, not equivalent. Additionally, the scale A in &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; is itself{' '}
           <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Audited-Negative</a>{' '}
-          (chain-of-custody failure: stated derivation gives A ≈ 4.6×10⁻⁵, 600× off the claimed 0.029 &mdash; the number outlived its computation). V<sub>flat</sub> is taken from existing SPARC/MOND fits, not independently predicted. See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</a> for full accounting.
+          (chain-of-custody failure: stated derivation gives A ≈ 4.6×10⁻⁵, 600× off the claimed 0.029 &mdash; the number outlived its computation). <strong>Is the formula-consistent A ≈ 4.6×10⁻⁵ an untested branch?</strong>{' '}
+          No, not on SPARC (answered 2026-09-23 for a researcher persona who asked). The explorer&apos;s head-to-head fit left A{' '}
+          <em>and</em> &gamma; free in &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; (division wiring
+          g<sub>obs</sub> = g<sub>bar</sub>/C, no floor) on 2,438 points in 122 galaxies,
+          and still lost to the acceleration-keyed compander by &Delta;BIC +3309 (+2843 with one global &#x03C1;<sub>crit</sub>).
+          Any fixed A, including 4.6×10⁻⁵ at &gamma; = 2, is a point inside that search, so its likelihood can only be worse.
+          The two fixed parameters save about 16 BIC units, which does not change the verdict. What the fit did not cover is the
+          field-equation wiring with a floor; that is the separate knee-grid result on{' '}
+          <a href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>. Source:{' '}
+          <code style={{ fontSize: '0.78rem' }}>explorer/findings/the-argument-of-C-three-functions-each-killed-by-its-own-distinguishing-feature.md</code>, Result 3. V<sub>flat</sub> is taken from existing SPARC/MOND fits, not independently predicted. See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</a> for full accounting.
           <br /><br />
           <strong style={{ color: '#f59e0b' }}>γ note:</strong> the violet curve pins γ=2, which via γ=2/√N<sub>corr</sub> implies N<sub>corr</sub>=1 — stars treated as uncorrelated. No galaxy satisfies that; the data-preferred fit (γ≈0.49, ΔBIC=+7 vs +184 for γ=2) implies N<sub>corr</sub>≈17, still not a physical correlated-star count. See <a href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</a> for the full both-directions contradiction.
         </div>
@@ -345,7 +354,7 @@ export default function GalaxyPlotter() {
           <div style={{ fontFamily: 'monospace', fontSize: '0.8rem', margin: '0.5rem 0', padding: '0.5rem 0.75rem', background: 'rgba(0,0,0,0.25)', borderRadius: '4px', overflowX: 'auto' }}>
             Toy mass model: M_b = 47&middot;V_flat&#x2074; M&#x2609; (empirical BTFR, McGaugh 2011), exponential disk with each galaxy&apos;s observed scale length R_d, h = 0.3 kpc<br />
             Gray &ldquo;Newtonian&rdquo;: v_b(r) = &radic;(G&middot;M(&lt;r)/r), M(&lt;r) = M_disk&middot;[1 &minus; e^(&minus;r/R_d)(1+r/R_d)]<br />
-            Violet SOLID &ldquo;Synchronism (real)&rdquo;: v(r) = &radic;(v_b&sup2; + [V_flat&middot;C(&#x03C1;(r))]&sup2;), C(&#x03C1;) = tanh(2&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub>+1)), &#x03C1;(r) = &#x03A3;(r)/2h, &#x03C1;<sub>crit</sub> = 0.029&middot;V_flat&sup2;<br />
+            Violet SOLID &ldquo;C(&#x03C1;), quadrature wiring (a display branch, not the ledger&apos;s g<sub>bar</sub>/C law)&rdquo;: v(r) = &radic;(v_b&sup2; + [V_flat&middot;C(&#x03C1;(r))]&sup2;), C(&#x03C1;) = tanh(2&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub>+1)), &#x03C1;(r) = &#x03A3;(r)/2h, &#x03C1;<sub>crit</sub> = 0.029&middot;V_flat&sup2;<br />
             Amber DOTTED (old illustrative stand-in &mdash; what this page showed before 2026-07-08, kept for comparison): v(r) = &radic;(v_toy&sup2; + [V_flat&middot;tanh(0.4&middot;r/2.5)]&sup2;), v_toy = 0.6&middot;V_flat&middot;&radic;(1&minus;e^(&minus;r/2.5))<br />
             Green &ldquo;MOND&rdquo;: v(r) = v_b&middot;&radic;&#x03BD;(y), &#x03BD;(y) = &frac12; + &radic;(&frac14; + 1/y), y = g_N/a&#x2080;, g_N = v_b&sup2;/r (real simple-&#x03BD;)
           </div>

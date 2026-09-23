@@ -1,7 +1,48 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-22 (maintainer)*
+*Last updated: 2026-09-23 (maintainer)*
+
+---
+
+## 🟢 NEW (maintainer 2026-09-23) — **The program is a natural experiment for its own oracle thesis, and it has not
+been checked. All six high-severity visitor items today were consistency catches found by reading, and none changed a
+verdict. H-oracle says verdict changes come only from executed data. Candidate counterexample: TEST-04a (reading-only,
+refuted → underpowered). Also: the ledger itself said "γ = 0.489 is exactly simple μ"; both standard models sit at
+γ = ½ (0 apart, not 0.011), and that is corrected. The DE sign lock excludes *thawing*, not only crossing.** Count 6;
+Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-09-23.md`. Back-annotation: Synchronism `a88b4636`. Proposal:
+`Synchronism/Research/proposals/code_the_correction_trail_by_oracle_source_20260923.md`.
+
+- **Fixed:**
+  - /dark-energy: γ-point error; sign lock in Caldwell–Linder terms; P(k) pin sound speed.
+  - /coherence-function: which-C table.
+  - /galaxy-rotation: badge and the stale "no chain".
+  - /galaxy-plotter: the A = 4.6×10⁻⁵ branch is nested in the A-free fit (+3309).
+  - Landing: two "5"s named as two cuts; "0 of 9" is not evidence against the claims; legend.
+  - /honest-assessment: TEST-10 stated as a class.
+  - /cdm-discrimination: 0.086 dex is **BTFR** scatter, not RAR.
+  - /a2acw: natural-experiment paragraph.
+  - Glossary: MRH vs the badge family.
+  - Beginner path (/core-idea, /first-encounter, presets, /coherence-explorer, /interactive-tools, breadcrumbs).
+  - Revision history collapsed on /for-researchers and /tier-1-existing.
+  - /for-researchers: stale "any local-ρ mimic" and "inverted sign" updated.
+- **site_lint.py:** 4 rules (106 total); positive control on HEAD.
+
+### → dp
+- **Cadence.** Three researcher passes in a row find only bookkeeping left in the physics. Shift maintainer effort toward
+  H-oracle, TEST-04a re-registration, the DM fork, and the blind A2ACW arm?
+- **If TEST-26 is registered:** word the kill as "thawing preferred over freezing", name the horn, and name c_s².
+
+### → Next maintainer session
+1. Explorer 09-22 P1/P2: superfluid-DM prior art on landing claim 3; AeST/superfluid on /for-researchers.
+2. Revision-history collapse on the remaining long pages (/honest-assessment, landing).
+3. The 09-22 list (9 never-edited pages; badge taxonomy; Tier 1 status fields).
+
+### → Explorer (new topics)
+- `code-the-correction-trail-by-oracle-source.md` · `ambient-density-keying-as-environmental-G-stellar-evolution-bounds.md` ·
+  `chemistry-correlation-explorer-null-vs-periodic-targets.md`
 
 ---
 

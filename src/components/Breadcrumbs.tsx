@@ -54,7 +54,15 @@ export default function Breadcrumbs({ currentPath }: BreadcrumbsProps) {
               {categoryHubs[category] ? (
                 <Link href={categoryHubs[category]} style={{ color: 'var(--color-text-secondary)' }}>{category}</Link>
               ) : (
-                <span style={{ color: 'var(--color-text-secondary)' }}>{category}</span>
+                // No index page exists for this section (e.g. /core-theory is a 404), so the crumb is
+                // plain text. Visitor 2026-09-23: in text-secondary it was brighter than the linked
+                // "Home" and read as a broken link. Muted + italic + default cursor marks it as a label.
+                <span
+                  title={`Site section: "${category}" (no index page; see Learning Paths)`}
+                  style={{ color: 'var(--color-text-muted)', fontStyle: 'italic', cursor: 'default' }}
+                >
+                  {category}
+                </span>
               )}
             </li>
           </>

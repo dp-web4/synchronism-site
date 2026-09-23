@@ -94,10 +94,13 @@ export default function CoherenceFunction() {
           found that no equation page said how, so two of the six refutations could not be reconstructed from them.
           Four things differ from the headline equation above:
           <ol style={{ margin: '0.5rem 0 0', paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-            <li><strong>The floor.</strong> Galaxy tests use a <em>floored</em> form,
-              C<sub>&#x03A9;</sub>(&#x03C1;) = f + (1&minus;f)&middot;tanh(&#x03B3; ln(1 + &#x03C1;/&#x03C1;<sub>crit</sub>)) with
+            <li><strong>The floor.</strong> Some galaxy tests use a <em>floored</em> C, with a minimum value
               f = &#x03A9;<sub>m</sub> = 0.315. The unfloored headline form goes to 0 as &#x03C1; &rarr; 0, which makes any
-              1/C boost unbounded; the floor is what creates the boost ceiling B &le; 1/f = 3.17. It is asserted, not derived.</li>
+              1/C boost unbounded; the floor is what creates the boost ceiling B &le; 1/f = 3.17. It is asserted, not derived.
+              Which tests use which floored function is in the table below this list. (Until 2026-09-23 this item said
+              &ldquo;galaxy tests use&rdquo; the floored <em>density</em>-keyed form. The two ceiling kills did not: they
+              evaluated an acceleration-keyed C with no tanh and no &#x03C1;. A visitor graduate-physics persona caught the
+              contradiction with item 4.)</li>
             <li><strong>The coupling: two live forms.</strong> (a) Algebraic g<sub>obs</sub> = g<sub>bar</sub>/C, the reading
               behind f<sub>DM</sub> = 1 &minus; C and the ledger. (b) The field equation
               &nabla;&middot;[C(&#x03C1;)&nabla;&Phi;] = 4&pi;G&#x03C1;, which reduces to (a) <em>only in spherical symmetry</em>.
@@ -121,6 +124,44 @@ export default function CoherenceFunction() {
               agree. Not in any of them: the striction force that a <em>variational</em> version of (b) adds (see{' '}
               <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>).</li>
           </ol>
+          <p style={{ margin: '0.75rem 0 0.35rem', fontWeight: 600 }}>Which C, in one table (added 2026-09-23)</p>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ borderCollapse: 'collapse', fontSize: '0.82rem', width: '100%' }}>
+              <thead>
+                <tr style={{ borderBottom: '1px solid rgba(56,189,248,0.3)', textAlign: 'left' }}>
+                  <th style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>Name</th>
+                  <th style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>Formula</th>
+                  <th style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>Keyed on</th>
+                  <th style={{ padding: '0.25rem 0' }}>Results that used it</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', verticalAlign: 'top' }}>
+                  <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}><strong>C<sub>&#x03C1;</sub></strong> (the headline)</td>
+                  <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>tanh(&#x03B3; ln(1 + &#x03C1;/&#x03C1;<sub>crit</sub>)), optionally floored at f</td>
+                  <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>local density &#x03C1;</td>
+                  <td style={{ padding: '0.25rem 0' }}>&Delta;BIC +2843 (&#x03C1;<sub>crit</sub> free) and +3309 (&#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2;, A free) head-to-head on SPARC; TEST-08 environment null; SPARC knee grid (floored); globular clusters</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', verticalAlign: 'top' }}>
+                  <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}><strong>C<sub>g</sub></strong></td>
+                  <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>tanh(&#x03B3; ln(1 + g<sub>obs</sub>/a&#x2080;&prime;)), solved implicitly</td>
+                  <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>observed acceleration (MOND&apos;s variable)</td>
+                  <td style={{ padding: '0.25rem 0' }}>&#x03B3; = 0.489 fit; &Delta;BIC +184 at &#x03B3; = 2 (RAR shape); form-selection table; Cassini (TEST-25)</td>
+                </tr>
+                <tr style={{ verticalAlign: 'top' }}>
+                  <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}><strong>C<sub>a</sub></strong> (the ceiling)</td>
+                  <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>&#x03A9;<sub>m</sub> + (1&minus;&#x03A9;<sub>m</sub>)&middot;x/(1+x), x = (g<sub>bar</sub>/a&#x2080;)<sup>1/&phi;</sup>; no tanh, no &#x03B3;</td>
+                  <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>baryonic acceleration</td>
+                  <td style={{ padding: '0.25rem 0' }}>TEST-09 (BTFR slope) and TEST-10 (dark-matter fraction), the boost-ceiling kills</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style={{ margin: '0.4rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+            The wiring (how C enters gravity: division g<sub>bar</sub>/C, the field equation, or the plotter&apos;s quadrature
+            display) is a separate choice on top of each row; see item 2. The headline equation at the top of this page is
+            C<sub>&#x03C1;</sub>. Its own head-to-head result is the +2843 / +3309 pair, not the +184.
+          </p>
         </div>
 
         <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>

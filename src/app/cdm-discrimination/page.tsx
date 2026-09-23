@@ -40,15 +40,25 @@ export default function CdmDiscrimination() {
         </EquationDisplay>
 
         <p>
-          Cold Dark Matter (CDM) models predict a range of intrinsic scatter in the Radial
-          Acceleration Relation (RAR) from halo-to-halo assembly diversity. The measured value,
+          <strong>Which relation this is (corrected 2026-09-23):</strong> the 0.086 dex is the intrinsic scatter of the{' '}
+          <em>baryonic Tully&ndash;Fisher relation</em> (BTFR), one point per galaxy, built from ALFALFA&apos;s global HI
+          line width W50 and SDSS stellar masses (Session 610 calls it &ldquo;BTFR scatter&rdquo;). It is <em>not</em> the
+          scatter of the resolved Radial Acceleration Relation (RAR), which uses many radii per galaxy; the observed SPARC RAR
+          scatter is about 0.057 dex (Li et al. 2018) with intrinsic scatter consistent with zero. This page compared it to RAR
+          literature until a researcher visitor persona asked which relation it was. The two are not interchangeable, so the
+          comparison below is BTFR-to-BTFR where it can be.{' '}
+          Cold Dark Matter (CDM) models predict a range of intrinsic scatter in these relations from halo-to-halo assembly
+          diversity. The measured value,
           0.086 &plusmn; 0.003 dex, sits <strong>inside</strong> that predicted range once the
           measurement&apos;s own noise budget is modeled correctly &mdash; it does not beat CDM.
           <strong> Benchmark disclosure (2026-07-10):</strong> the &ldquo;CDM prediction&rdquo; used here is the
           source session&apos;s own internal figure (&#x2248;0.085 dex from halo-concentration scatter, Session 610)
           &mdash; no external published CDM scatter estimate (semi-analytic or hydrodynamic-simulation) has been
           cited or checked against, so the CDM-consistency verdict is internally coherent but not yet anchored
-          to the literature&apos;s range. An external-benchmark check is queued.
+          to the literature&apos;s range. An external-benchmark check has been queued since 2026-07-10 and is still not done.
+          The papers it should take its CDM numbers from: Ludlow et al. 2017 (PRL 118, 161103; EAGLE/APOSTLE), Keller &amp;
+          Wadsley 2017, Desmond 2017 (abundance matching), Dutton et al. 2019 (NIHAO). Most of them report RAR, not BTFR,
+          scatter, which is the relation mismatch above.
           The number comes from an optimal N&nbsp;=&nbsp;677 subsample (Mendel stellar masses) drawn
           from the larger 14,585-galaxy ALFALFA-SDSS cross-match used elsewhere on this site &mdash;
           not from &ldquo;14,760 galaxies,&rdquo; a figure that matched no accounting in the underlying

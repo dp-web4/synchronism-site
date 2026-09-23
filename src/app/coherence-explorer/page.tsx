@@ -189,6 +189,13 @@ export default function CoherenceExplorer() {
           </svg>
         </div>
 
+        {/* Orientation line above the sliders (visitor 2026-09-23: beginners met the γ default with no frame). */}
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
+          <strong>Before you drag:</strong> the default &#x03B3; = 0.49 is what galaxy data prefer when &#x03B3; is left free.
+          &#x03B3; = 2 is what the framework originally said. The gap between them is part of why the framework failed its
+          galaxy test.
+        </p>
+
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
           <div className="card">
             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>

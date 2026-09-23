@@ -48,7 +48,9 @@ const steps = [
     classical particles (N_corr = 1, γ = 2). The critical density ρ_crit = A × V_flat² connects
     to rotation velocity. MOND — Modified Newtonian Dynamics, the long-standing rival proposal that gravity itself changes below a threshold acceleration, rather than invoking dark matter — has an acceleration constant a₀, and a₀ = cH₀/(2π) falls out of the same constants —
     but this is a dimensional coincidence (the only scale buildable from c and H₀), not a first-principles
-    derivation; the 2π is unexplained and the match is off by ~13%. See Honest Assessment.`,
+    derivation; the 2π is unexplained and the match is off by ~13%. See Honest Assessment.
+    In plain words: the number happens to match a combination of the speed of light (c) and the universe's
+    expansion rate (H₀, the Hubble constant). That may be luck; nobody has derived it.`,
     highlight: 'a₀ ≈ cH₀/(2π): a coincidence, not a derivation',
   },
   {
@@ -56,6 +58,9 @@ const steps = [
     content: `What if "wave function collapse" isn't a special event? What if it's just a system
     crossing the MRH — the Markov Relevancy Horizon — where correlations decay below the noise floor?
     No observer needed. No consciousness required. Just a boundary crossing.
+    ("Noise floor", in everyday terms: a whisper in a loud room is still there, but nobody can pick it out
+    from the background. The proposal is that a quantum correlation fades the same way — it is not destroyed,
+    it just drops below what the surroundings can tell apart from noise.)
     (See "Two Reframes" for the CRT analogy that makes this intuitive.)`,
     highlight: 'Measurement = MRH crossing',
   },
@@ -103,9 +108,9 @@ export default function FirstEncounter() {
       </div>
 
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
-        7 short parts on this one page, lettered A&ndash;G &mdash; about 10 minutes in all. (The &ldquo;Step 2 of 6&rdquo;
-        above is this page&apos;s place in the Beginner path; the letters are only for the parts inside this page.
-        The parts appear one at a time: use the <strong>Next</strong> button below each part, or the progress bar, to move between them.)
+        7 short sections on this one page, lettered A&ndash;G &mdash; about 10 minutes in all. (The &ldquo;Step 2 of 6&rdquo;
+        above is this page&apos;s place in the Beginner path; the letters are only for the sections inside this page.
+        The sections appear one at a time: use the <strong>Next</strong> button below each section, or the progress bar, to move between them.)
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '2rem' }}>
         <strong>New here?</strong> This ~10-minute intro is the fastest path to understanding the framework.
@@ -129,8 +134,8 @@ export default function FirstEncounter() {
         {steps.map((part, i) => (
           <button
             key={i}
-            aria-label={`Part ${String.fromCharCode(65 + i)}: ${part.title}`}
-            title={`Part ${String.fromCharCode(65 + i)}: ${part.title}`}
+            aria-label={`Section ${String.fromCharCode(65 + i)}: ${part.title}`}
+            title={`Section ${String.fromCharCode(65 + i)}: ${part.title}`}
             onClick={() => setStep(i)}
             style={{
               flex: 1,
@@ -150,7 +155,7 @@ export default function FirstEncounter() {
       <section
         key={part.title}
         id={`part-${String.fromCharCode(97 + i)}`}
-        aria-label={`Part ${String.fromCharCode(65 + i)}: ${part.title}`}
+        aria-label={`Section ${String.fromCharCode(65 + i)}: ${part.title}`}
         className="card card-highlight fe-part"
         style={{ marginBottom: '2rem', minHeight: '200px', display: i === step ? undefined : 'none' }}
       >
@@ -161,7 +166,7 @@ export default function FirstEncounter() {
           marginBottom: '1rem',
         }}>
           <span style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-            Part {String.fromCharCode(65 + i)} of {steps.length} (A&ndash;{String.fromCharCode(64 + steps.length)})
+            Section {String.fromCharCode(65 + i)}
           </span>
           <span style={{
             padding: '0.25rem 0.75rem',
@@ -212,7 +217,7 @@ export default function FirstEncounter() {
             className="btn-secondary"
             onClick={() => setStep(s => s - 1)}
           >
-            &larr; Previous: Part {String.fromCharCode(64 + step)}
+            &larr; Previous: Section {String.fromCharCode(64 + step)}
           </button>
         ) : (
           <div />
@@ -222,7 +227,7 @@ export default function FirstEncounter() {
             className="btn-primary"
             onClick={() => setStep(s => s + 1)}
           >
-            Next: Part {String.fromCharCode(66 + step)} of {steps.length} &rarr;
+            Next: Section {String.fromCharCode(66 + step)} &rarr;
           </button>
         ) : (
           <Link href="/core-idea" className="btn-primary">

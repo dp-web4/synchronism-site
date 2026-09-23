@@ -145,6 +145,21 @@ export default function A2ACW() {
             self-play without an external oracle converges on internal consistency, not
             discovery</strong>. The boundary is the oracle, not the ambition.
           </p>
+          <p style={{ marginTop: '0.6rem' }}>
+            <strong>This program is a natural experiment for that thesis (added 2026-09-23, from a researcher visitor
+            persona).</strong> It <em>did</em> have a non-corpus oracle: the tests it executed against SPARC, DESI,
+            Cassini and the globular-cluster catalogue. All six refutations on the scoreboard came from that oracle. The
+            reading-and-arguing loops, including this site&apos;s own AI visitor personas, produced many corrections too, but
+            the ones we recall were consistency corrections: a page contradicting another page, a number mis-copied, a
+            parameter attached to the wrong function. That is what the thesis predicts self-play converges on. It is a
+            prediction about our own record, and it has <em>not</em> been checked: nobody has coded each correction by what
+            caught it (executed data vs reading). If a reading-only correction ever changed a physics verdict with no data
+            behind it, the thesis would need narrowing. One candidate is already on the record: TEST-04a (DESI growth) moved
+            from &ldquo;refuted&rdquo; to &ldquo;underpowered&rdquo; after a 2026-07-14 citation check, by reading what the
+            registered criterion said and what DESI&apos;s own papers reported, with no new execution. Whether reading a
+            published measurement counts as an external oracle is exactly the boundary the coding would have to draw. That
+            coding is queued for the explorer track.
+          </p>
         </div>
 
         <h2>Health Metrics</h2>

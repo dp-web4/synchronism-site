@@ -191,6 +191,14 @@ RETIRED = [
      "unaudited Feb-2026 claim; the sigma_int test is underpowered as registered (~3x pipeline dependence)"),
     (r"empirical results stand\s+regardless", "2026-09-22",
      "the ALFALFA-SDSS test was never run as registered; sigma_int is pipeline-dependent"),
+    (r"(0\.489|0&#x2080;?\.489) is exactly MOND|&gamma; = 0\.489 is exactly", "2026-09-23",
+     "gamma = 1/2, not 0.489, is exactly the simple mu; 0.489 is SPARC's fitted offset from 1/2"),
+    (r"0\.011 apart in", "2026-09-23",
+     "both standard models sit at gamma = 1/2 (zero apart); 0.011 is a fit offset, not a model gap"),
+    (r"a crossing of w(&nbsp;| )=(&nbsp;| )&minus;1 &mdash; in all four", "2026-09-23",
+     "w0 > -1, wa < 0 is mostly thawing; a crossing needs w0 + wa < -1; the lock excludes thawing too"),
+    (r"No algebraic chain from\s+C\(", "2026-09-23",
+     "two couplings (division, RG field equation) now exist; the density law was fitted through them"),
 ]
 
 EXEMPT = re.compile(

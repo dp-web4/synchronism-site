@@ -18,6 +18,17 @@ export default function CoreIdea() {
         tested, and where it broke.
       </p>
 
+      {/* Plain-words summary for first-time readers (visitor 2026-09-23 bailed at the jargon below). */}
+      <div className="content-width" style={{ fontSize: '0.92rem', color: 'var(--color-text-secondary)', margin: '0 0 1.25rem', padding: '0.75rem 1rem', borderLeft: '2px solid var(--color-accent-violet)', background: 'rgba(139,92,246,0.06)', borderRadius: '0.25rem', lineHeight: 1.7 }}>
+        <strong>In plain words.</strong> This page is about one equation, C(&#x03C1;). You give it how densely packed
+        a system is, and it gives back a number from 0 (the parts act on their own) to 1 (the parts act together).
+        The proposal was that this one S-shaped curve works at every scale, from atoms to galaxies. When it was
+        tested on real galaxy data, the density version lost: left free, the data make the curve barely respond to
+        density at all, the opposite of the idea. The version that does fit galaxies runs on acceleration instead of
+        density, and at that point it is MOND, an existing theory. The page also shows that the equation is a
+        standard saturation curve already used in other fields, not new physics.
+      </div>
+
       <div className="content-width" style={{ fontSize: '0.82rem', color: 'var(--color-text-secondary)', margin: '0 0 1.75rem', padding: '0.6rem 0.9rem', borderLeft: '2px solid var(--color-accent-blue)', background: 'rgba(56,189,248,0.05)', borderRadius: '0.25rem', lineHeight: 1.7 }}>
         <strong>Badge key</strong> (you&apos;ll meet these below). The colored leading word is the verdict; any text after the dash just names the specific finding.
         <br />
@@ -82,7 +93,7 @@ export default function CoreIdea() {
             <text x="262" y="95" fill="#c4b5fd" fontSize="11" transform="rotate(-52 262 95)">the switch</text>
           </svg>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.5rem 0 0' }}>
-            Drawn with &#x03B3; = 2 (the galaxy-scale pin &mdash; refuted on SPARC data, see the caveat
+            Drawn with &#x03B3; = 2 (the galaxy-scale pin &mdash; refuted on SPARC data &mdash; <Link href="/glossary#SPARC" style={{ color: 'var(--color-accent-blue)' }}>SPARC</Link> is a set of 175 galaxies with carefully measured rotation speeds; see the caveat
             below) on a logarithmic density axis. Note the two honest markers: the curve&apos;s true
             midpoint (C = 0.5) sits near 0.32&#x00B7;&#x03C1;<sub>crit</sub>, and at &#x03C1;<sub>crit</sub> itself
             C &#x2248; 0.88 &mdash; &#x03C1;<sub>crit</sub> is a saturation knee, not a critical point.
@@ -134,7 +145,8 @@ export default function CoreIdea() {
               <span style={{ color: 'var(--color-text-muted)', display: 'block', marginTop: '0.35rem', fontSize: '0.95em' }}>
                 ⚠ This card used to read &ldquo;coupling strength&rdquo; (corrected 2026-07-27). That is
                 the wrong <em>kind</em> of quantity: the Hill identity proved below makes &#x03B3; a
-                <strong> Hill coefficient</strong> — a log-log slope, with Hill index n&nbsp;=&nbsp;2&#x03B3; —
+                <strong> Hill coefficient</strong> (a biochemistry term: one number for how steep a
+                switch-like response is) — a log-log slope, with Hill index n&nbsp;=&nbsp;2&#x03B3; —
                 not a coupling. Also note the map 2/&#x221A;N<sub>corr</sub> is audited{' '}
                 <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>sign-inverted</a>,
                 and the galaxy pin &#x03B3;&nbsp;=&nbsp;2 inverts to N<sub>corr</sub>&nbsp;=&nbsp;1 — the
@@ -148,7 +160,9 @@ export default function CoreIdea() {
               A &times; V<sub>flat</sub>&sup2;: saturation knee (not a critical point)
               <span style={{ color: '#ef4444', display: 'block', marginTop: '0.35rem', fontSize: '0.95em' }}>
                 ⚠ <strong>This scaling is refuted, and had been sitting here uncaveated
-                (added 2026-07-27).</strong> The BTFR forces &#x03C1;<sub>crit</sub> &#x221D; V<sup>&minus;2</sup>,
+                (added 2026-07-27).</strong> The{' '}
+                <Link href="/glossary#BTFR" style={{ color: 'var(--color-accent-blue)' }}>BTFR</Link> (Baryonic Tully&ndash;Fisher Relation: a
+                galaxy&apos;s visible mass grows roughly as its rotation speed to the fourth power) forces &#x03C1;<sub>crit</sub> &#x221D; V<sup>&minus;2</sup>,
                 the opposite sign to the V<sup>+2</sup> written above: at the knee GM/r² = a₀ gives
                 r = &#x221A;(GM/a₀), so &#x03C1; ~ M/r³ &#x221D; M<sup>&minus;1/2</sup> &#x221D; V<sup>&minus;2</sup>{' '}
                 using M &#x221D; V⁴. See the{' '}
@@ -222,7 +236,8 @@ export default function CoreIdea() {
           &ldquo;spans 80 orders of magnitude&rdquo; for free &mdash; the ln does no work that the exponent
           2&#x03B3; doesn&apos;t undo. So the Hill functions and Naka&ndash;Rushton curves named below (standard
           saturation curves from biochemistry and vision science; see{' '}
-          <Link href="/glossary#compander" style={{ color: 'var(--color-accent-blue)' }}>compander</Link>) are not
+          <Link href="/glossary#compander" style={{ color: 'var(--color-accent-blue)' }}>compander</Link>, a curve
+          that squeezes a huge input range into a fixed output range) are not
           merely <em>similar</em> alternatives; the flagship equation <em>is</em> one of them, exactly.
           (Identity stated 2026-07-10. Provenance: derived independently by two successive internal
           review passes, 2026-07-09 and 2026-07-10 &mdash; the audit machinery caught it; the identity
@@ -322,7 +337,8 @@ export default function CoreIdea() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: 'var(--color-accent-violet)' }}>What C(&#x03C1;) actually is:</strong>{' '}
-          A logarithmic compander &mdash; not merely <em>in the family of</em> &#x03BC;-law encoders, Hill functions,
+          A logarithmic compander &mdash; not merely <em>in the family of</em> &#x03BC;-law encoders (the volume-squashing curve telephone networks use
+          for voice), Hill functions,
           and Naka&ndash;Rushton curves, but algebraically <em>identical</em> to a Hill-type rational
           saturation function: tanh(&#x03B3;&middot;ln(1+x)) &equiv; [(1+x)<sup>2&#x03B3;</sup>&minus;1]/[(1+x)<sup>2&#x03B3;</sup>+1]
           exactly (see &ldquo;Why log?&rdquo; above).
@@ -390,7 +406,7 @@ export default function CoreIdea() {
           <Link href="/galaxy-rotation" className="card" style={{ textDecoration: 'none' }}>
             <h3 style={{ color: 'var(--color-accent-blue)' }}>The Evidence</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              See it tested against 14,610 galaxies (175 SPARC + 14,435 ALFALFA&ndash;SDSS after quality cuts)
+              See it tested against 14,610 galaxies (175 SPARC + 14,435 ALFALFA&ndash;SDSS, a large radio-plus-optical galaxy survey, after quality cuts)
             </p>
           </Link>
           <Link href="/gamma-boundary" className="card" style={{ textDecoration: 'none' }}>

@@ -347,7 +347,12 @@ export default function HonestAssessment() {
           giving f<sub>DM,max</sub>&nbsp;≈&nbsp;0.844) the reported <em>median</em> (0.755) actually passes, and
           the 69% figure does not hold. What survives under <em>either</em> convention is the tail: SPARC&apos;s
           maximum observed DM fraction is 0.927, which requires a boost of at least 13.7 — no candidate cosmic
-          ratio supplies that, a class exclusion regardless of which convention sets the ceiling. The
+          ratio supplies that, a class exclusion regardless of which convention sets the ceiling. Stated as a class
+          (added 2026-09-23 at a researcher persona&apos;s suggestion): <strong>no boost ceiling tied to a cosmic
+          abundance ratio survives SPARC&apos;s most dark-dominated dwarfs</strong>, because those dwarfs are baryon-poor
+          relative to the cosmic mean and the largest such ratio, &Omega;<sub>m</sub>/&Omega;<sub>b</sub> &asymp; 6.4, is half the
+          13.7 they need. The class statement belongs to TEST-10 only; the BTFR-slope limb (TEST-09) does <em>not</em>
+          generalise this way, since it stops firing at ceilings of 5.4 and above. The
           framework&apos;s registered environment effect (&gt;20% of RAR scatter) was also run as
           registered: r²&nbsp;=&nbsp;0.0001 — refuted by execution. These, plus the RAR shape test and the
           Cassini/SPARC squeeze and Bell/CHSH substrate test below, are the six executed refutations in the

@@ -117,7 +117,16 @@ export default function DarkEnergy() {
             DESI best fit &gamma;&nbsp;=&nbsp;0.487 the matter power is already ~10&times; &Lambda;CDM&apos;s at
             k&nbsp;=&nbsp;0.01&nbsp;h/Mpc. This is the known result for the class: fluid Cardassian models are inconsistent
             with galaxy P(k) (Amarzguioui, Elgar&oslash;y &amp; Multam&auml;ki 2005, JCAP 01, 008), as is generalized
-            Chaplygin gas away from &Lambda;CDM (Sandvik, Tegmark, Zaldarriaga &amp; Waga 2004, PRD 69, 123524).
+            Chaplygin gas away from &Lambda;CDM (Sandvik, Tegmark, Zaldarriaga &amp; Waga 2004, PRD 69, 123524).{' '}
+            <strong>Which sound speed (added 2026-09-23):</strong> the pin uses the <em>adiabatic</em> c<sub>s</sub>&sup2; =
+            dP/d&rho; that a barotropic &rho;<sub>DE</sub> = f(&rho;<sub>m</sub>) forces. It does not hold under the other two
+            conventions an EFT-of-dark-energy reader will ask about. With c<sub>s</sub>&sup2; = 0 there is no pressure term and
+            the pin disappears (the 2026-08-18 no-Jeans analysis is that case). With a rest-frame c<sub>s</sub>&sup2; = 1 the
+            dark energy stops clustering below the horizon and the pin also disappears; for the Chaplygin class this is the
+            known &ldquo;silent quartessence&rdquo; escape via entropy perturbations (Reis, Waga, Calv&atilde;o &amp;
+            Jor&aacute;s 2003, PRD 68, 061302). Both escapes need something the postulate does not supply: dropping the
+            pressure, or a second degree of freedom that carries entropy. So the pin binds the local reading <em>as
+            stated</em>, not every completion of it.
           </p>
           <p style={{ margin: '0.5rem 0 0 0' }}>
             So the sector has three readings, and none keeps everything: <strong>local + fluid</strong> &rArr; &gamma; is
@@ -148,8 +157,19 @@ export default function DarkEnergy() {
           language cosmologists use, that forces{' '}
           <strong>sign(w&#x2080;&nbsp;+&nbsp;1)&nbsp;=&nbsp;sign(w&#x2090;)</strong>. DESI DR2 (arXiv:2503.14738)
           prefers precisely the forbidden combination &mdash; w&#x2080;&nbsp;&gt;&nbsp;&minus;1 <em>with</em>{' '}
-          w&#x2090;&nbsp;&lt;&nbsp;0, a crossing of w&nbsp;=&nbsp;&minus;1 &mdash; in all four of its data
-          combinations. Scanning &gamma;: zero values reach that quadrant; forcing w&#x2080; to match compels a
+          w&#x2090;&nbsp;&lt;&nbsp;0 &mdash; in all four of its data combinations. That quadrant is wider than
+          &ldquo;crossing&rdquo;: in CPL the early-time value is w&#x2080;&nbsp;+&nbsp;w&#x2090;, so a crossing of
+          w&nbsp;=&nbsp;&minus;1 needs w&#x2080;&nbsp;+&nbsp;w&#x2090;&nbsp;&lt;&nbsp;&minus;1 (DESI&apos;s central values do
+          cross). The rest of the quadrant is ordinary <strong>thawing</strong> dark energy (w starts near &minus;1 and rises),
+          which never crosses. In Caldwell &amp; Linder&apos;s (2005) classification the lock allows only evolution <em>toward</em> &minus;1:{' '}
+          <strong>freezing</strong> from above for &gamma;&nbsp;&lt;&nbsp;&frac12; (w&#x2080;&nbsp;&gt;&nbsp;&minus;1,
+          w&#x2090;&nbsp;&gt;&nbsp;0), or its phantom mirror from below for &gamma;&nbsp;&gt;&nbsp;&frac12;
+          (w&#x2080;&nbsp;&lt;&nbsp;&minus;1, w&#x2090;&nbsp;&lt;&nbsp;0). It excludes thawing <em>and</em> crossing in either
+          direction. That is a stronger statement than
+          &ldquo;forbids crossing&rdquo;, and a cleaner kill: it fails as soon as the data prefer thawing over freezing,
+          whether or not a crossing is ever confirmed. (Restated 2026-09-23 from &ldquo;a crossing of w = &minus;1&rdquo;, after a
+          visitor researcher persona pointed out the thawing sub-quadrant. The kill condition is not a registered test; the
+          TEST-26 registration gates on dp.) Scanning &gamma;: zero values reach that quadrant; forcing w&#x2080; to match compels a
           wrong-sign w&#x2090; (offsets 3.4&ndash;5.4&sigma; across the combinations, sign-and-scale statement
           only &mdash; no covariance is claimed).{' '}
           <strong style={{ color: '#f59e0b' }}>Those &sigma; figures did not survive a direct fit</strong> &mdash; see
@@ -288,10 +308,16 @@ export default function DarkEnergy() {
           <li>
             <strong>The first executed cross-sector &gamma; test &mdash; and it has no power to fail.</strong>{' '}
             &gamma;<sub>cosmo</sub> = 0.487 vs &gamma;<sub>galaxy</sub> = 0.489 &ldquo;agree at 0.1&sigma;&rdquo; &mdash;
-            but &gamma; = &frac12; is exactly &Lambda; and &gamma; = 0.489 is exactly MOND&apos;s simple &mu;, so the two
-            sectors&apos; <em>standard</em> models sit 0.011 apart in &gamma;-space by construction; separating them needs
-            &sigma;<sub>&gamma;</sub> &asymp; 0.004 and the SPARC side delivers 0.11 (galaxy-limited, 2026-08-14). Not a
-            concordance; inherited from &Lambda; + MOND.
+            but &gamma; = &frac12; is exactly &Lambda; <em>and</em> exactly MOND&apos;s simple &mu;, so the two sectors&apos;{' '}
+            <em>standard</em> models sit at the same point by construction. Agreement between the two fits is the agreement of
+            &Lambda; with the simple &mu;, inherited, with no power to fail. The 0.011 is SPARC&apos;s fitted offset from &frac12;
+            (a slightly McGaugh-like RAR shape), consistent with zero at &sigma;<sub>&gamma;</sub> = 0.11 (galaxy-limited,
+            2026-08-14). Telling that offset from zero would need &sigma;<sub>&gamma;</sub> &asymp; 0.004, and it would answer a
+            different question (does SPARC prefer the simple &mu; exactly?), not a cross-sector one.{' '}
+            <span style={{ color: 'var(--color-text-muted)' }}>(Until 2026-09-23 this item said &ldquo;&gamma; = 0.489 is exactly
+            MOND&apos;s simple &mu; &hellip; 0.011 apart by construction&rdquo;. That was wrong: the simple-&mu; point is
+            &gamma; = &frac12;, as the box above says. A visitor researcher persona caught it; the archive ledger carried the
+            same sentence and is corrected too.)</span>
           </li>
         </ul>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>

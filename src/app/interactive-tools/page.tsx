@@ -2,8 +2,14 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import ValidationBadge from '@/components/ValidationBadge';
+import type { ValidationStatus } from '@/lib/types';
 
-type EpistemicStatus = 'core' | 'reparametrization' | 'speculative';
+// Kind = content grouping only. Renamed 2026-09-23 (visitor tech-writer pass): two of the
+// three Kind names were badge names ("Reparametrization", "Speculative"), so a disclaimer had
+// to say they were not badges. Kinds now use non-badge names, and each card shows the actual
+// ValidationBadge(s) its own tool page carries (pageBadges), so the index and the page agree.
+type EpistemicStatus = 'core' | 'chemistry' | 'consciousness';
 
 const statusStyle: Record<EpistemicStatus, { bg: string; color: string; label: string }> = {
   // Descriptive content grouping, NOT a validation verdict: marks tools that explain the
@@ -11,8 +17,8 @@ const statusStyle: Record<EpistemicStatus, { bg: string; color: string; label: s
   // Renamed from "Core Theory" 2026-06-12 — that label read as certification on a site
   // whose own audit counts 0 independently-derived parameters.
   core: { bg: 'rgba(56, 189, 248, 0.12)', color: '#38bdf8', label: 'Model Explainer' },
-  reparametrization: { bg: 'rgba(245, 158, 11, 0.12)', color: '#f59e0b', label: 'Reparametrization' },
-  speculative: { bg: 'rgba(239, 68, 68, 0.10)', color: '#f87171', label: 'Speculative' },
+  chemistry: { bg: 'rgba(245, 158, 11, 0.12)', color: '#f59e0b', label: 'Chemistry Data' },
+  consciousness: { bg: 'rgba(239, 68, 68, 0.10)', color: '#f87171', label: 'Consciousness' },
   // 'failed' ("Kill Criterion Triggered") removed from this legend 2026-07-17: no tool card uses it,
   // and the canonical taxonomy classifies it as an operational state, not a badge.
 };
@@ -31,6 +37,7 @@ const coreTools = [
     desc: 'Pick a SPARC galaxy and see the dark-matter problem: the gray Newtonian line (visible matter) sags below the observed dots. Violet = the framework\'s equation as published, which hugs the Newtonian line and never fills the gap (inert by construction). Green = MOND\'s simple interpolating function. Dotted amber = a hand-tuned illustration, not computed from the theory.',
     level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
+    pageBadges: ['failed', 'reparametrization'] as ValidationStatus[],
   },
   {
     title: 'γ Calculator',
@@ -39,6 +46,7 @@ const coreTools = [
     level: 'Beginner',
     state: 'Artifact Lesson',
     epistemic: 'core' as EpistemicStatus,
+    pageBadges: ['audited-negative'] as ValidationStatus[],
   },
   {
     title: 'Crossover Regime Visualizer',
@@ -47,6 +55,7 @@ const coreTools = [
     level: 'Intermediate',
     state: 'Artifact Lesson',
     epistemic: 'core' as EpistemicStatus,
+    pageBadges: ['audited-negative'] as ValidationStatus[],
   },
   {
     title: 'Equation Anatomy',
@@ -54,13 +63,14 @@ const coreTools = [
     desc: 'Step-by-step breakdown of C(ρ) = tanh(γ·ln(ρ/ρcrit + 1)). Each step shows one equation component, its physical motivation, and why the specific functional form was chosen (not derived).',
     level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
+    pageBadges: ['audited-negative'] as ValidationStatus[],
   },
   {
     title: 'Chemistry Correlation Explorer',
     href: '/chemistry-correlation-explorer',
     desc: 'See how γ correlates with chemical properties across 1,703 phenomena. High r values (0.98+) reflect density-monotonicity, not Synchronism-specific physics — the page states the null-model result (a 2-parameter polynomial in Z matches every r to within 0.07, sometimes better) at the head of the table; it has no per-row null column, and how γ was assigned per material is undocumented.',
     level: 'Advanced',
-    epistemic: 'reparametrization' as EpistemicStatus,
+    epistemic: 'chemistry' as EpistemicStatus,
   },
 ];
 
@@ -71,7 +81,8 @@ const speculativeTools = [
     desc: 'Watch 8 "independent" approaches converge on C ≈ 0.50 — because they share one assumption. The convergence is geometric, not empirical: any approach keyed to the midpoint of a [0,1)-bounded range lands near 0.50 by construction. The threshold is untestable as stated (no calibration to EEG/fMRI/IIT/PCI* exists; the one cited test measured a different variable). An artifact lesson, not a finding about consciousness.',
     level: 'Beginner',
     state: 'Artifact Lesson',
-    epistemic: 'speculative' as EpistemicStatus,
+    epistemic: 'consciousness' as EpistemicStatus,
+    pageBadges: ['speculative'] as ValidationStatus[],
   },
 ];
 
@@ -91,12 +102,14 @@ export default function InteractiveTools() {
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem', maxWidth: '60ch' }}>
         <strong>Before the legend:</strong> this is a <em>content grouping</em>, not the site&apos;s validation
         badge taxonomy. &ldquo;Model Explainer&rdquo; means &ldquo;shows how the equation works,&rdquo; not a
-        verdict on whether the equation is correct. &ldquo;Reparametrization&rdquo; and &ldquo;Speculative&rdquo;
-        here match those two{' '}
+        verdict on whether the equation is correct. &ldquo;Chemistry Data&rdquo; and &ldquo;Consciousness&rdquo;
+        name the topic, nothing more. The verdict lives in a separate slot: where a tool&apos;s own page
+        carries a{' '}
         <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
-          documented descriptive badges
-        </Link>{' '}
-        — no tool here is certified correct. Level uses one scale and one scale only: Beginner /
+          validation badge
+        </Link>, its card shows that same badge under &ldquo;Badge on its page&rdquo;
+        — no tool here is certified correct. (Until 2026-09-23 two Kind names were badge names,
+        &ldquo;Reparametrization&rdquo; and &ldquo;Speculative&rdquo;.) Level uses one scale and one scale only: Beginner /
         Intermediate / Advanced. <strong>Artifact Lesson</strong> is <em>not</em> a level — it is an
         operational state (the site&apos;s own term, per{' '}
         <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>) marking a tool kept
@@ -166,6 +179,12 @@ export default function InteractiveTools() {
                     </span>
                   ) : null}
                 </div>
+                {'pageBadges' in tool && tool.pageBadges ? (
+                  <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', alignItems: 'center', marginTop: '0.5rem', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
+                    Badge on its page:
+                    {tool.pageBadges.map(b => <ValidationBadge key={b} status={b} />)}
+                  </div>
+                ) : null}
               </div>
             </Link>
           );
@@ -181,7 +200,7 @@ export default function InteractiveTools() {
       </div>
 
       <div style={{ borderTop: '2px solid rgba(239, 68, 68, 0.3)', paddingTop: '1.5rem', marginBottom: '1rem' }}>
-        <h2 style={{ fontSize: '1rem', color: '#f87171', marginBottom: '0.25rem' }}>Speculative — Read Before Using</h2>
+        <h2 style={{ fontSize: '1rem', color: '#f87171', marginBottom: '0.25rem' }}>Consciousness — Read Before Using</h2>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
           The tool below illustrates a speculative hypothesis with no empirical calibration.
           The convergence it displays is a mathematical property of the sigmoid, not an empirical finding about consciousness.
@@ -239,6 +258,12 @@ export default function InteractiveTools() {
                       </span>
                     ) : null}
                   </div>
+                  {tool.pageBadges ? (
+                    <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', alignItems: 'center', marginTop: '0.5rem', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
+                      Badge on its page:
+                      {tool.pageBadges.map(b => <ValidationBadge key={b} status={b} />)}
+                    </div>
+                  ) : null}
                 </div>
               </Link>
             );

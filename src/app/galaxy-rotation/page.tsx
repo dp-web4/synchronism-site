@@ -14,7 +14,7 @@ export default function GalaxyRotation() {
       <Breadcrumbs currentPath="/galaxy-rotation" />
       <PathNav currentPath="/galaxy-rotation" />
       <h1>Galaxy Rotation Curves</h1>
-      <ValidationBadge status="failed" label="Density-keyed equation does not fit galaxies (γ = 2: ΔBIC = +184)" />{' '}
+      <ValidationBadge status="failed" label="Failed — density-keyed form ΔBIC +2843; γ = 2 compander in acceleration ΔBIC +184" />{' '}
       <ValidationBadge status="reparametrization" label="Acceleration-keyed fit is exactly MOND's simple μ" />
       <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
         Sub-note: the registered ALFALFA test, TEST-03, was never run as registered (see correction below), so that one
@@ -46,9 +46,12 @@ export default function GalaxyRotation() {
 
         <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#ef4444' }}>Read this first (promoted to the top 2026-07-23):</strong>{' '}
-          the headline equation never reaches this page&apos;s observable. <strong>No algebraic chain from
-          C(&#x03C1;) to g<sub>obs</sub> exists anywhere in the framework</strong> — the galaxy fits shown
-          below use McGaugh&apos;s standard RAR interpolating function (MOND phenomenology), with Synchronism
+          the headline equation never reaches this page&apos;s fits. When this box was written no chain from
+          C(&#x03C1;) to g<sub>obs</sub> was stated anywhere in the framework. Two have since been written down (division
+          g<sub>obs</sub> = g<sub>bar</sub>/C, and a field equation that turned out to be Refracted Gravity&apos;s; see{' '}
+          <Link href="/coherence-function#how-c-enters-dynamics" style={{ color: '#ef4444' }}>how C enters dynamics</Link>),
+          and the density-keyed law has been fitted through them and lost. <strong>But none of the fits on this page use
+          it</strong> — the galaxy fits shown below use McGaugh&apos;s standard RAR interpolating function (MOND phenomenology), with Synchronism
           contributing only a scatter hypothesis on top (since refuted by the 2026-07-14 environment run, filed on
           Tier 1 as TEST-03s &mdash; not the Freeman-law card TEST-08). The structural reason
           is in the next paragraph; the tested-and-killed compander variants are further down.

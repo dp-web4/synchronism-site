@@ -43,7 +43,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'MRH',
     fullName: 'Markov Relevancy Horizon',
     brief: 'An "event horizon for influence" \u2014 the bubble of nearest neighbors that matter. Everything outside it can be ignored without losing predictive accuracy.',
-    explanation: 'Think of an atom: Andromeda exists, but its gravitational and electromagnetic influence on a single atom is below the noise floor. The MRH is the minimal neighborhood such that removing anything inside degrades prediction, and adding anything outside does not improve it. Formally: the minimal set of interacting degrees of freedom whose state transitions materially influence coherence evolution. In quantum mechanics, crossing the MRH IS measurement/decoherence. Presence (\u03C1) is defined relative to an MRH: change the MRH, presence changes.',
+    explanation: 'Think of an atom: Andromeda exists, but its gravitational and electromagnetic influence on a single atom is below the noise floor. The MRH is the minimal neighborhood such that removing anything inside degrades prediction, and adding anything outside does not improve it. Formally: the minimal set of interacting degrees of freedom whose state transitions materially influence coherence evolution. In quantum mechanics, crossing the MRH IS measurement/decoherence. Presence (\u03C1) is defined relative to an MRH: change the MRH, presence changes. Not to be confused with the MRH-relationship badges (Active-MRH, Parallel-Paths, Sidelined, Superseded, Audited-Negative): those borrow the name for the research inventory, not for physics. See "Active-MRH (badge)".',
     learnMore: '/mrh',
   },
   'presence': {
@@ -257,7 +257,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Active-MRH (badge)',
     fullName: 'MRH-Relationship Badge: Active-MRH',
     brief: 'Currently in active research focus; being extended or revised.',
-    explanation: 'MRH-relationship badges describe how a claim sits in the current research inventory, preferred for in-flight work. Active-MRH means the claim is under live investigation. At the current stewardship stage nothing is honestly characterizable as "established," so verdict-shaped tags like Validated are avoided.',
+    explanation: 'MRH-relationship badges describe how a claim sits in the current research inventory, preferred for in-flight work. Active-MRH means the claim is under live investigation. Why the physics word: the archive treats its own research inventory as an MRH, the set of claims currently relevant to the work (the research repo\'s STATUS.md is its "live MRH-state inventory"). Active-MRH means inside that horizon now; Sidelined means outside it for now. The borrowing is a metaphor. These badges say nothing about the Markov Relevancy Horizon as a physics concept. At the current stewardship stage nothing is honestly characterizable as "established," so verdict-shaped tags like Validated are avoided.',
     learnMore: '/honest-assessment#validation-badge-definitions',
   },
   'badge-parallel-paths': {

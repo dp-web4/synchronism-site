@@ -32,7 +32,9 @@ export interface GammaPreset {
 
 export const GAMMA_PRESETS: GammaPreset[] = [
   {
-    label: 'Ideal gas',
+    // The framework's stated galaxy value (γ = 2) inverts to this same row, N_corr = 1. It is
+    // named in the label rather than added as a second N_corr = 1 button (see GALAXY_PIN_GAMMA).
+    label: 'Ideal gas (N_corr = 1, γ = 2; also the framework’s stated galaxy value)',
     ncorr: 1,
     story:
       'Nothing moves together in an ideal gas — every particle is its own unit (N_corr = 1) — so γ hits its maximum of 2. In this framework that means the sharpest possible switch from "individuals" to "crowd" as density rises.',
@@ -44,7 +46,9 @@ export const GAMMA_PRESETS: GammaPreset[] = [
       'Water molecules hydrogen-bond into small transient clusters (~4 moving together), which drops γ from 2 toward 1 — the boundary zone where the framework says chemistry lives. Compare: one preset click took you from "lone particles" to "small teams."',
   },
   {
-    label: 'Galaxy — SPARC best fit (γ ≈ 0.49)',
+    // Label says 'back-fitted' up front (visitor 2026-09-23): a reader arriving from
+    // /first-encounter (galaxy stars 'uncorrelated, N_corr = 1') took N_corr = 17 as a claim.
+    label: 'Galaxy (back-fitted from SPARC γ ≈ 0.49, N_corr ≈ 17)',
     ncorr: 17,
     galaxySector: true,
     story:

@@ -129,13 +129,13 @@ export default function ConsciousnessDemo() {
             box argued that &ldquo;dC/d&#x03C1; is maximized at &#x03C1; = 0, so there is no inflection point.&rdquo;
             That is true in <em>linear</em> &#x03C1; and irrelevant, because every plot on this site is in{' '}
             <em>log</em> &#x03C1;. Maximising dC/d(ln&#x03C1;) for C = tanh(&#x03B3;&thinsp;ln(1+u)), u = &#x03C1;/&#x03C1;<sub>crit</sub>,
-            gives the condition <strong>C* = 1/(2&#x03B3;u*)</strong>. At &#x03B3; = &frac12; &mdash; near where the SPARC
-            and DESI fits land (the point where each sector reduces to MOND or &Lambda;) &mdash; this closes on u* = 2 and <strong>C* = 0.50 exactly</strong> (check:
+            gives the condition <strong>C* = 1/(2&#x03B3;u*)</strong>. At &#x03B3; = &frac12; &mdash; where the DESI fit on the mean matter density lands (the point where the cosmology
+            reduces to &Lambda;; the SPARC &#x03B3; &asymp; 0.49 is a fit in acceleration, a different variable, so it says nothing
+            about a density axis) &mdash; this closes on u* = 2 and <strong>C* = 0.50 exactly</strong> (check:
             C = u/(u+2) = 0.5 and 1/(2&middot;&frac12;&middot;2) = 0.5). At &#x03B3; = 2 it moves to C* &#x2248; 0.60.
-            So at the data-selected &#x03B3; &#x2248; &frac12; (not the framework&apos;s registered &#x03B3; = 2; &#x03B3; = &frac12;
-            is also exactly MOND&apos;s simple interpolating function), C = 0.50 <em>is</em> the point of maximum
+            So at &#x03B3; &#x2248; &frac12; (not the framework&apos;s registered &#x03B3; = 2), C = 0.50 <em>is</em> the point of maximum
             sensitivity of coherence to log-density. That makes it dynamically distinguished <em>under a log-density
-            measure</em> (C* &#x2248; 0.498 at &#x03B3; = 0.489). On linear &#x03C1; the maximum sensitivity is at
+            measure</em> (C* &#x2248; 0.497 at &#x03B3; = 0.487, the DESI value). On linear &#x03C1; the maximum sensitivity is at
             &#x03C1; = 0, where C = 0, so the distinction depends on choosing log &#x03C1; as the measure. Nothing
             yet makes log &#x03C1; the natural measure for a consciousness threshold.
             The <em>conclusion</em> of this caveat is unchanged and does not need the geometry argument: the eight

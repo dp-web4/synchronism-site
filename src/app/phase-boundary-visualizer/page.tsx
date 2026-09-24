@@ -158,9 +158,9 @@ export default function PhaseBoundaryVisualizer() {
             <line x1={30 + (0.85 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.85 / 4.0) * 540} y2={barY + barH + 25} stroke="#f59e0b" strokeWidth="1" />
             <text x={30 + (0.85 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#f59e0b" fontSize="8">water/enzymes</text>
             <line x1={30 + (0.49 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (0.49 / 4.0) * 540} y2={barY + barH + 25} stroke="#ef4444" strokeWidth="1" />
-            <text x={30 + (0.49 / 4.0) * 540} y={barY + barH + 46} textAnchor="middle" fill="#ef4444" fontSize="8">γ=0.49 (galaxies, SPARC fit — N_corr≈17 back-solved from this fit, not counted)</text>
+            <text x={30 + (0.49 / 4.0) * 540} y={barY + barH + 46} textAnchor="middle" fill="#ef4444" fontSize="8">γ=0.49 (SPARC fit of the acceleration-keyed law, a different variable; density-keyed fit: γ→0.046)</text>
             <line x1={30 + (2.0 / 4.0) * 540} y1={barY + barH + 5} x2={30 + (2.0 / 4.0) * 540} y2={barY + barH + 25} stroke="#38bdf8" strokeWidth="1" />
-            <text x={30 + (2.0 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#38bdf8" fontSize="8">γ=2 (ideal gas; galaxies asserted — refuted ΔBIC=+184)</text>
+            <text x={30 + (2.0 / 4.0) * 540} y={barY + barH + 36} textAnchor="middle" fill="#38bdf8" fontSize="8">γ=2 (ideal gas; registered galaxy value — refuted)</text>
 
             {/* Current position marker */}
             <circle
@@ -244,6 +244,10 @@ export default function PhaseBoundaryVisualizer() {
             Until a scale-invariant N<sub>corr</sub> recipe is established, every cross-scale &#x03B3; comparison is method-dependent.
             BCS superconductor placement uses N<sub>corr</sub> = 10<sup>7</sup> (&#x03B3; = 2/&#x221A;10<sup>7</sup> &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>, matching the &#x03B3; Calculator preset); physical Cooper-pair volumes contain ~10<sup>6</sup>–10<sup>9</sup> pairs depending on material.
             <strong>Galaxy placement (2026-06-11):</strong> the asserted &#x03B3; = 2 (N<sub>corr</sub> = 1) was rejected on the SPARC RAR ensemble at &#x394;BIC = +184; the free fit gives &#x03B3; &#x2248; 0.49 &#x2192; N<sub>corr</sub> &#x2248; 17, contradicting the independent-stars premise. Both markers are shown so the refutation is visible, not hidden.
+            <strong> Which law (added 2026-09-24):</strong> the +184 and the 0.49 both come from the formula keyed on
+            <em> acceleration</em> (MOND&apos;s variable), while this axis is the density-keyed law&apos;s &#x03B3; = 2/&radic;N<sub>corr</sub>.
+            Fitted in density, the galaxy law goes to &#x03B3; &rarr; 0.046 (N<sub>corr</sub> &asymp; 1.9&times;10&sup3;) and is refuted at
+            &Delta;BIC +2843. So the 0.49 marker is placed on an axis it was not measured on.
             The &#x03B3; values shown here are illustrative, not measured.
           </p>
         </div>

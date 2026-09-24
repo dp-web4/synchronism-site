@@ -187,12 +187,18 @@ export default function DarkEnergy() {
         }}>
           <strong style={{ color: 'var(--color-accent-violet)' }}>The single most informative structural fact:</strong>{' '}
           at &gamma;&nbsp;=&nbsp;1/2 the substituted background is <em>algebraically identical to &Lambda;CDM</em>{' '}
-          (C&nbsp;&equiv;&nbsp;&Omega;<sub>m</sub>(z)). The same &gamma;&nbsp;=&nbsp;1/2 is the exact MOND
-          simple-&mu; point in the galaxy sector &mdash; one algebraic fact (the M&ouml;bius member of the
-          tanh-log family, C&nbsp;=&nbsp;x/(x+2)) with two faces &mdash; and the galaxy data&apos;s own free fit
-          returns &gamma;&nbsp;=&nbsp;0.489, within 2.2% of it. Both sectors independently pin the framework to
-          the point where it becomes indistinguishable from the incumbent it was meant to replace. A theory whose
-          best fit is its own disappearance.
+          (C&nbsp;&equiv;&nbsp;&Omega;<sub>m</sub>(z)). The same function at &gamma;&nbsp;=&nbsp;1/2 (the M&ouml;bius member of the
+          tanh-log family, C&nbsp;=&nbsp;x/(x+2)) is MOND&apos;s simple-&mu; interpolating function, but only when x is an{' '}
+          <em>acceleration</em>, g<sub>obs</sub>/a&#x2080;&prime;, which is the variable the galaxy fit that returns
+          &gamma;&nbsp;=&nbsp;0.489 used. Here x is the mean matter <em>density</em>. So the two sectors do not pin one
+          parameter twice. Each sector&apos;s incumbent fits its own data (&Lambda; fits DESI, simple-&mu; MOND fits SPARC), and
+          both sit at the same special point of one function family, in two different variables. The galaxy law that does share
+          cosmology&apos;s variable, density-keyed C(&rho;), fits SPARC best at &gamma;&nbsp;&rarr;&nbsp;0.046 and is refuted
+          there (&Delta;BIC&nbsp;+2843). Read with density in both sectors, the framework&apos;s cosmology is &Lambda; and its galaxy
+          law fails. Read with each sector&apos;s fitted variable, it is &Lambda; plus MOND. Either way, where it fits it is the
+          incumbent it was meant to replace. (Corrected 2026-09-24: this box used to say &ldquo;one algebraic fact with two
+          faces&rdquo; and &ldquo;both sectors independently pin the framework&rdquo; (retired wording). That contradicted the notation-not-derivation
+          paragraph further down this page.)
         </div>
       </section>
 

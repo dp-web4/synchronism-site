@@ -34,7 +34,7 @@ const coreTools = [
   {
     title: 'Galaxy Curve Plotter',
     href: '/galaxy-plotter',
-    desc: 'Pick a SPARC galaxy and see the dark-matter problem: the gray Newtonian line (visible matter) sags below the observed dots. Violet = the framework\'s equation as published, which hugs the Newtonian line and never fills the gap (inert by construction). Green = MOND\'s simple interpolating function. Dotted amber = a hand-tuned illustration, not computed from the theory.',
+    desc: 'Pick a SPARC galaxy and see the dark-matter problem: the gray Newtonian line (visible matter) sags below the observed dots. Violet = the framework\'s equation as published, which hugs the Newtonian line and never fills the gap (inert in the display\'s quadrature wiring; the ledger\'s division wiring, g_bar/C, fails the other way by over-boosting, ~10³× in g for a dwarf like DDO 154). Green = MOND\'s simple interpolating function. Dotted amber = a hand-tuned illustration, not computed from the theory.',
     level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
     pageBadges: ['failed', 'reparametrization'] as ValidationStatus[],
@@ -108,19 +108,23 @@ export default function InteractiveTools() {
         <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
           validation badge
         </Link>, its card shows that same badge under &ldquo;Badge on its page&rdquo;
-        — no tool here is certified correct. (Until 2026-09-23 two Kind names were badge names,
-        &ldquo;Reparametrization&rdquo; and &ldquo;Speculative&rdquo;.) Level uses one scale and one scale only: Beginner /
+        — no tool here is certified correct. Level uses one scale and one scale only: Beginner /
         Intermediate / Advanced. <strong>Artifact Lesson</strong> is <em>not</em> a level — it is an
         operational state (the site&apos;s own term, per{' '}
         <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>) marking a tool kept
         deliberately to demonstrate a documented failure (a sign inversion, a geometric convergence)
         rather than to teach a working relation. It now sits in its own Status slot.
-        (Scale unified 2026-07-23; a &ldquo;Conceptual&rdquo; tag previously mixed levels.{' '}
-        <strong>Fixed 2026-09-18:</strong> until today &ldquo;Artifact Lesson&rdquo; was rendered in the Level slot
+      </p>
+      <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem', maxWidth: '60ch' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+        Until 2026-09-23 two Kind names were badge names,
+        &ldquo;Reparametrization&rdquo; and &ldquo;Speculative&rdquo;.{' '}
+        Scale unified 2026-07-23; a &ldquo;Conceptual&rdquo; tag previously mixed levels.{' '}
+        <strong>Fixed 2026-09-18:</strong> until that day &ldquo;Artifact Lesson&rdquo; was rendered in the Level slot
         next to &ldquo;Beginner&rdquo; and &ldquo;Advanced&rdquo;, and two visitor personas misread it from opposite
         directions on the same day &mdash; one as a difficulty, one as a vocabulary collision. Three tools that had
-        no level at all now carry one.)
-      </p>
+        no level at all now carry one.
+      </details>
       <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2rem', fontSize: '0.8rem' }}>
         {Object.entries(statusStyle).map(([key, s]) => (
           <span key={key} style={{ padding: '0.15rem 0.6rem', borderRadius: '9999px', background: s.bg, color: s.color }}>
@@ -195,7 +199,7 @@ export default function InteractiveTools() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: 0 }}>
           <strong>Where to start:</strong> Coherence Explorer (Model Explainer) → Galaxy Plotter (Model Explainer) → Honest Assessment.
           <span style={{ color: 'var(--color-text-muted)' }}> &ldquo;Model Explainer&rdquo; is a content grouping (tools that show how the equation works), not a validation badge — no tool here certifies the model as correct; see the badge definitions on the Honest Assessment. Each tool page repeats its card label next to its own claim badges, with a one-line &ldquo;tool type / claim status&rdquo; caption (the Galaxy Plotter, for example, is a Model Explainer whose drawn equation is badged Failed and whose MOND-matching stand-in is badged Reparametrization).</span>
-          The six tools above are grounded in the framework&apos;s core theory or known reparametrizations.
+          The six tools above illustrate the framework&apos;s core equation and its known reparametrizations, including the parts that failed.
         </p>
       </div>
 

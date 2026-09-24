@@ -45,10 +45,14 @@ export default function Home() {
           </Link>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem' }}>
-          <strong>No physics background?</strong> Use the <Link href="/why-synchronism" style={{ color: 'var(--color-accent-green, #10b981)' }}>Beginner Path</Link> (6 steps, ~40 min on the short route &mdash; the one equation does appear, but every step explains it in plain words and you can skip every &ldquo;for physicists&rdquo; box. <em>Corrected 2026-09-10:</em> this read &ldquo;~30 min&rdquo; while step 5 is a ~18,000-word page &mdash; well over an hour on its own. Step 5&apos;s intended stop on this path is the <strong>&ldquo;If you read nothing else&rdquo;</strong> box at the top of it; per-step times are now on the <Link href="/learning-paths" style={{ color: 'var(--color-accent-green, #10b981)' }}>paths page</Link>, so the cliff is visible before you walk off it) or jump to the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-green, #10b981)' }}>Galaxy Curve Plotter</Link>.{' '}
+          <strong>No physics background?</strong> Use the <Link href="/why-synchronism" style={{ color: 'var(--color-accent-green, #10b981)' }}>Beginner Path</Link> (6 steps, ~45 min on the short route &mdash; the equation appears, always explained in plain words; you never have to compute with it, and you can skip every &ldquo;for physicists&rdquo; box. Step 5 is a ~18,000-word page; its intended stop on this path is the <strong>&ldquo;If you read nothing else&rdquo;</strong> box at the top of it; per-step times are on the <Link href="/learning-paths" style={{ color: 'var(--color-accent-green, #10b981)' }}>paths page</Link>, so the cliff is visible before you walk off it) or jump to the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-green, #10b981)' }}>Galaxy Curve Plotter</Link>.{' '}
           <strong>Physicist?</strong> Jump to <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link> or <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.{' '}
           <strong>Researcher?</strong> <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 tests</Link> or <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>.
         </p>
+        <details style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.35rem' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+          <em>Corrected 2026-09-10:</em> the Beginner Path time read &ldquo;~30 min&rdquo; while step 5 is a ~18,000-word page &mdash; well over an hour on its own.
+        </details>
       </section>
 
       {/* Plain-language framing first */}
@@ -89,7 +93,7 @@ export default function Home() {
           how sudden the switch is. <strong>You do not need the equation to read this site</strong> &mdash; the
           plain-English version below is the whole idea, and the{' '}
           <Link href="/why-synchronism" style={{ color: 'var(--color-accent-blue)' }}>Beginner Path</Link>{' '}
-          never asks you to touch it.
+          shows the equation, always explained in plain words; you never have to compute with it.
         </p>
         <p style={{ textAlign: 'center', color: 'var(--color-accent-warm)', fontSize: '0.9rem', fontStyle: 'italic', marginBottom: '1rem' }}>
           &ldquo;Coherence is a smooth S-curve from sparse/independent to dense/collective, shaped by how many
@@ -106,7 +110,7 @@ export default function Home() {
             <strong>ln</strong> = natural log: compression — 1,000× bigger becomes only ~7 units bigger inside the equation (3 units on a base-10 axis like the Coherence Explorer&apos;s).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>
-            <strong>Which C the galaxy numbers used (added 2026-09-14):</strong> the equation above is keyed on
+            <strong>Which C the galaxy numbers used:</strong> the equation above is keyed on
             <em> density</em>. Almost every galaxy statistic on this site used the same tanh-log shape keyed on
             <em> acceleration</em> instead &mdash; the RAR fits (&gamma;&nbsp;=&nbsp;0.49, &Delta;BIC&nbsp;+184 at &gamma;&nbsp;=&nbsp;2),
             and an &Omega;<sub>m</sub>-floored variant for the BTFR and dwarf tests. At &gamma;&nbsp;=&nbsp;&frac12; the acceleration
@@ -114,6 +118,10 @@ export default function Home() {
             separately and fails on galaxy data. See{' '}
             <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>.
           </p>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginBottom: '0.25rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+            The &ldquo;Which C the galaxy numbers used&rdquo; paragraph was added 2026-09-14.
+          </details>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             The tanh shape is <em>motivated</em> by the sigmoid/compander family (&mu;-law, Hill, logistic) &mdash; a phenomenological choice, not derived. See /parameter-derivations for why &ldquo;mean-field theory&rdquo; is the wrong category: there is no self-consistency loop, no free energy, no critical exponents. The log-density argument is physically motivated. Three parameters are fitted to data.{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>See derivations &rarr;</Link>
@@ -178,15 +186,16 @@ export default function Home() {
               <strong>3.</strong> Dark matter as incomplete decoherence &mdash; <em>Failed</em> as a mechanism; the galaxy fits that work are MOND in new notation (a reparametrization), and the framework&apos;s own cosmology needs ordinary cold dark matter put in by hand (<Link href="/dark-energy" style={{ color: 'inherit', textDecoration: 'underline' }}>details</Link>)
             </span>
           </div>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', margin: '0.5rem 0 0' }}>
-            (One row per claim, same verdict as the Key Claims page &mdash; aligned 2026-09-14 after a visitor found this
-            teaser listing a different set of three.)
-          </p>
           <span style={{ color: 'var(--color-accent-violet)', fontSize: '0.9rem', marginTop: '0.75rem', display: 'inline-block' }}>
             See the key claims &rarr;
           </span>
         </section>
       </Link>
+      <details style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', margin: '-2.5rem 0 3rem' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+        One row per claim, same verdict as the Key Claims page &mdash; aligned 2026-09-14 after a visitor found this
+        teaser listing a different set of three.
+      </details>
 
       {/* Tabs */}
       <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '2rem' }}>
@@ -215,8 +224,7 @@ export default function Home() {
             </p>
             <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', margin: '0 0 0.6rem', maxWidth: '65ch' }}>
               <strong style={{ color: 'var(--color-accent-blue)' }}>Two things to know before the numbers, because
-              they make the numbers legible</strong> (moved up here 2026-09-18 &mdash; a first-time visitor reached
-              both only on their eleventh page, and said they changed the meaning of everything before them):
+              they make the numbers legible:</strong>
               <br />&bull; <strong>Why keep reading a theory that lost?</strong> Because the map of <em>where</em> it
               fails is the deliverable. Most of what this program produced that another researcher can use is
               negative results that constrain a whole class of proposals, not just this one &mdash;{' '}
@@ -230,6 +238,11 @@ export default function Home() {
               amount of internal argument removes. Details in the methodology note below and on{' '}
               <Link href="/research-philosophy" style={{ color: 'var(--color-accent-blue)' }}>Research Philosophy</Link>.
             </p>
+            <details style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', margin: '0 0 0.6rem' }}>
+              <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+              These two points were moved up here 2026-09-18 &mdash; a first-time visitor reached
+              both only on their eleventh page, and said they changed the meaning of everything before them.
+            </details>
             <div style={{
               background: 'rgba(245,158,11,0.07)',
               border: '1px solid rgba(245,158,11,0.25)',
@@ -314,10 +327,13 @@ export default function Home() {
                   shape.{' '}
                   <a href="#why-keep-reading" style={{ color: 'var(--color-accent-blue)' }}>Full answer &darr;</a>
                 </span>
-                Several share one underlying reason, so they come from <strong>5 independent &ldquo;roots&rdquo;</strong> (a root is one underlying reason for failing), only{' '}
-                <strong>2</strong> of them specific to this framework. (A different cut of the same six, used on Honest Assessment: 5 ran on
-                external data and 1 is a Bell/<a href="/glossary#CHSH" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>CHSH</a> construction check.
-                The two &ldquo;5&rdquo;s are different groupings of the same tests, not two counts that disagree.){' '}
+                <details style={{ marginTop: '0.3rem' }}>
+                  <summary style={{ cursor: 'pointer' }}>How the six are grouped (roots vs data sources)</summary>
+                  Several share one underlying reason, so they come from <strong>5 independent &ldquo;roots&rdquo;</strong> (a root is one underlying reason for failing), only{' '}
+                  <strong>2</strong> of them specific to this framework. (A different cut of the same six, used on Honest Assessment: 5 ran on
+                  external data and 1 is a Bell/<a href="/glossary#CHSH" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>CHSH</a> construction check.
+                  The two &ldquo;5&rdquo;s are different groupings of the same tests, not two counts that disagree.)
+                </details>
                 <strong>The six did not all test the same equation.</strong> Only the environment test touches the headline density law C(&rho;), and it refuted a registered amplitude the law itself never predicted; the law as written
                 loses separately (head-to-head on <a href="/glossary#SPARC" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>SPARC</a> at <a href="/glossary#%CE%94BIC" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>&Delta;BIC</a> +2843 with &gamma; free, and by placement at every point of the published grid),
                 and its one registered per-object test, globular clusters at &gamma; = 2, came back a{' '}
@@ -381,11 +397,27 @@ export default function Home() {
                 J = 0 under the literal rule (it flags everything) and J = 1 under the steelmanned one, where the scorer&apos;s own
                 novelty judgment, the step being calibrated, does all the discriminating. Under the first rule the audit has no
                 power; under the second its power is assumed, not shown. The six executed refutations carry the
-                verdict; this line does not add to it. (Clause added 2026-09-23 after graduate-physics and researcher visitor
-                personas both made the point.)
-                <details><summary style={{ cursor: 'pointer' }}>Revision notes</summary>2026-09-15: auditor named and the calibration statement corrected after a researcher visitor found /research-philosophy saying &ldquo;external domain-expert audit&rdquo; and &ldquo;the control was run&rdquo; while /for-researchers said it never was; the archive record shows LLM auditors and one self-scored in-distribution arm. The cell as it read before: &ldquo;Validated&rdquo; claims surviving audit: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 6</strong> — all demoted (current ledger: 5 reparametrizations; the sixth, the BTFR slope, moved to the refutation column 2026-07-14). Across <em>all</em> audited claims the canonical count is <strong>0 of 9</strong> (the 6 &ldquo;Validated&rdquo; plus 3 swept later &mdash; see the <Link href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</Link> section; this cell quoted only the 6-claim subtotal until 2026-09-08). Instrument-limited: the same audit false-flags 6/6 genuine discoveries as reparametrizations — kept in a separate cell from the data-driven refutations for that reason</details></span>
+                verdict; this line does not add to it.
+                <details><summary style={{ cursor: 'pointer' }}>Revision notes</summary>2026-09-23: the &ldquo;So this count is not evidence against the claims&rdquo; clause added after graduate-physics and researcher visitor
+                personas both made the point. 2026-09-15: auditor named and the calibration statement corrected after a researcher visitor found /research-philosophy saying &ldquo;external domain-expert audit&rdquo; and &ldquo;the control was run&rdquo; while /for-researchers said it never was; the archive record shows LLM auditors and one self-scored in-distribution arm. The cell as it read before: &ldquo;Validated&rdquo; claims surviving audit: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 6</strong> — all demoted (current ledger: 5 reparametrizations; the sixth, the BTFR slope, moved to the refutation column 2026-07-14). Across <em>all</em> audited claims the canonical count is <strong>0 of 9</strong> (the 6 &ldquo;Validated&rdquo; plus 3 swept later &mdash; see the <Link href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</Link> section; this cell quoted only the 6-claim subtotal until 2026-09-08). Instrument-limited: the same audit false-flags 6/6 genuine discoveries as reparametrizations — kept in a separate cell from the data-driven refutations for that reason</details></span>
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>Full ledger &rarr;</Link>
             </div>
+            <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0.5rem 0 0', lineHeight: 1.55 }}>
+              <strong>Abbreviations in this table:</strong>{' '}
+              <strong>SPARC</strong> = a catalogue of 175 disc-galaxy rotation curves (Lelli+2016);{' '}
+              <strong>BTFR</strong> = baryonic Tully&ndash;Fisher relation (galaxy mass vs rotation speed);{' '}
+              <strong>RAR</strong> = radial acceleration relation (observed vs visible-matter acceleration);{' '}
+              <strong>&Delta;BIC</strong> = a model-comparison score (positive = the framework fits worse; &gt;10 is decisive);{' '}
+              <strong>r&sup2;</strong> = fraction of variance explained;{' '}
+              <strong>&sigma;</strong> = standard deviations of significance;{' '}
+              <strong>CHSH</strong> = the measurable form of Bell&apos;s theorem;{' '}
+              <strong>&Lambda;CDM</strong> = the standard cosmological model;{' '}
+              <strong>f&sigma;₈</strong> = growth rate of cosmic structure;{' '}
+              <strong>g<sub>bar</sub> / g<sub>obs</sub> / a<sub>0</sub></strong> = acceleration from visible matter / observed acceleration / MOND&apos;s acceleration scale;{' '}
+              <strong>&Omega;<sub>m</sub> / &Omega;<sub>b</sub></strong> = matter / baryon fraction of the universe;{' '}
+              <strong>LLM</strong> = large language model.{' '}
+              More in the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
+            </p>
             <p id="why-keep-reading" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.6rem 0 0', scrollMarginTop: '5rem' }}>
               <strong>So is the idea alive or dead?</strong> As tested physics: dead — every decisive
               test it ran, it lost, and this site says so. As a public record of how you find that out
@@ -408,17 +440,20 @@ export default function Home() {
             </p>
             <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', margin: '0.5rem 0 0' }}>
               <strong>One count the scoreboard doesn&apos;t capture:</strong> the &ldquo;6 refutations&rdquo; counts
-              only tests <em>executed</em> against registered criteria (this read &ldquo;4&rdquo; until 2026-08-09 —
-              the pre-recount number, stale here while the footer said 6). Separately, the framework&apos;s
+              only tests <em>executed</em> against registered criteria. Separately, the framework&apos;s
               preferred-frame (absolute-time) sector is excluded at face value by <em>existing</em> precision
               measurements — by 16 to 28 orders of magnitude — unless a protection mechanism nobody has
-              exhibited exists. (Corrected 2026-08-09 from &ldquo;11 to 28&rdquo;: 16&ndash;28 is the range the
+              exhibited exists. 16&ndash;28 is the range the
               computation on <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link> actually
               yields — one-loop c<sub>μν</sub>&nbsp;~&nbsp;10<sup>&minus;2</sup>&ndash;10<sup>&minus;3</sup> against
-              cavity bounds ≲10<sup>&minus;18</sup> and comagnetometer bounds ≲10<sup>&minus;29</sup>&ndash;10<sup>&minus;30</sup>.
-              The &ldquo;11&rdquo; had no derivation behind it.) See{' '}
+              cavity bounds ≲10<sup>&minus;18</sup> and comagnetometer bounds ≲10<sup>&minus;29</sup>&ndash;10<sup>&minus;30</sup>. See{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
             </p>
+            <details style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0.3rem 0 0' }}>
+              <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+              The &ldquo;6 refutations&rdquo; count read &ldquo;4&rdquo; until 2026-08-09 &mdash; the pre-recount number, stale here while the footer said 6.{' '}
+              The preferred-frame range was corrected 2026-08-09 from &ldquo;11 to 28&rdquo; to 16&ndash;28; the &ldquo;11&rdquo; had no derivation behind it.
+            </details>
             <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
               Badges used below:{' '}
               <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization · Speculative · Untested · Failed · Audited-Negative</Link>
@@ -451,7 +486,8 @@ export default function Home() {
                 <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>
                   175 SPARC + 14,435 ALFALFA&ndash;SDSS (the sample actually <em>run</em>)
                 </div>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.7rem', marginTop: '0.3rem', lineHeight: 1.5 }}>
+                <details style={{ color: 'var(--color-text-muted)', fontSize: '0.7rem', marginTop: '0.3rem', lineHeight: 1.5, textAlign: 'left' }}>
+                  <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
                   Corrected 2026-08-10 from &ldquo;14,760 (175 + 14,585).&rdquo; 14,585 is the{' '}
                   <em>registered</em> cross-match for TEST-03 &mdash; a test this site&apos;s own ledger
                   marks <strong>never run as registered</strong>. The definitive session analysed
@@ -460,7 +496,7 @@ export default function Home() {
                   <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link>{' '}
                   and <Link href="/dark-matter" style={{ color: 'var(--color-accent-blue)' }}>Dark Matter</Link>;
                   the correction had not reached this tile.
-                </div>
+                </details>
               </div>
             </div>
           </section>

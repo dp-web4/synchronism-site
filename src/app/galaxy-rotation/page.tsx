@@ -384,9 +384,12 @@ export default function GalaxyRotation() {
             cancellation runs the cosmology sector: at &#x03B3; = &frac12;, (1&minus;C)/C = 2/x, so the substituted
             dark-energy density &#x03C1;<sub>DE</sub> = &#x03C1;<sub>m</sub>(1&minus;C)/C = 2&#x03C1;<sub>crit</sub>{' '}
             &mdash; &#x03C1;<sub>m</sub> cancels identically and a cosmological constant falls out. <strong>One
-            algebraic fact with two faces:</strong> exactly MOND-simple in the galaxy sector, exactly &Lambda; in
-            the cosmological sector, and both galaxy data (&#x03B3; = 0.489) and DESI DR2 (&#x03B3; = 0.487)
-            select it. That collapses six ledger rows into one line of algebra. See{' '}
+            special point, two variables:</strong> exactly MOND-simple when x is an acceleration (the galaxy fit&apos;s
+            variable), exactly &Lambda; when x is the mean matter density (the cosmology&apos;s). The galaxy fit (&#x03B3; = 0.489) and
+            DESI DR2 (&#x03B3; = 0.487) both land there, but they are fits of the same function in <em>different</em> variables, so
+            this is each sector&apos;s incumbent fitting its own data, not one parameter measured twice. The density-keyed galaxy
+            law, which shares cosmology&apos;s variable, fits SPARC best at &#x03B3; &rarr; 0.046 and is refuted (corrected
+            2026-09-24; this used to read &ldquo;one algebraic fact with two faces&rdquo;). See{' '}
             <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>{' '}
             and <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>.
           </div>

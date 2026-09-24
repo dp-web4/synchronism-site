@@ -13,7 +13,19 @@ export default function GammaParameter() {
       <Breadcrumbs currentPath="/gamma-parameter" />
       <PathNav currentPath="/gamma-parameter" />
       <h1>The &#x03B3; Parameter</h1>
-      <ValidationBadge status="speculative" label="Motivated Ansatz — Not Derived" />
+      <ValidationBadge status="audited-negative" label="γ = 2/√N_corr refuted (wrong-sign correlation); N_corr as a variable survives" />
+      <div className="card" style={{ borderLeft: '3px solid #ef4444', marginTop: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+        <strong>Status first (added 2026-09-24).</strong> This page describes the proposed law and the arguments offered for it.
+        The law did not survive testing. Applied to galaxies, it predicted a correlation of r = +0.55 between the γ it assigns
+        and each galaxy&apos;s offset from the radial-acceleration relation. The measured correlation was r = &minus;0.55, the
+        opposite sign (Sessions 430/437; research ledger, Bucket 2). The &ldquo;why 2&rdquo; and &ldquo;why &radic;N&rdquo; arguments below are
+        audited on{' '}
+        <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>: the
+        &radic;N step assumes independent parts while N<sub>corr</sub> counts correlated ones, and the law gives the most
+        correlated systems the flattest curves. Idea that survives: N<sub>corr</sub> as a variable. The number &#x03B3; that the galaxy
+        fits return (&asymp; 0.49) comes from a different, acceleration-keyed use of the formula; see &ldquo;Which C? Which
+        &#x03B3;?&rdquo; in the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
+      </div>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <EquationDisplay size="lg" label="Transition sharpness (Hill coefficient)">
@@ -27,8 +39,8 @@ export default function GammaParameter() {
         </p>
 
         <p>
-          &#x03B3; (gamma) is the single parameter that determines which regime a system is in.
-          It depends on only one thing: <strong>N<sub>corr</sub></strong>, the number of particles
+          In the proposal, &#x03B3; (gamma) was the single parameter that determines which regime a system is in,
+          and it depended on only one thing: <strong>N<sub>corr</sub></strong>, the number of particles
           moving as a correlated unit.
         </p>
 

@@ -193,7 +193,9 @@ export default function TestCatalog() {
           the Cassini/SPARC squeeze added out-of-band 2026-07-28, and <strong>TEST-26</strong>, the DESI DR3
           dark-energy class no-go (proposed 2026-08-10, prospective; kill or tie for the framework as postulated, select only
           on the mean-density reading; catalog-registered 2026-08-12
-          after a visitor pass found it existing on one page and absent here). Suffixes: <code>a</code> = amended sub-test
+          after a visitor pass found it existing on one page and absent here). Both use existing data or scheduled survey data,
+          so both are listed with Tier 1 (<Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: Existing Data</Link>),
+          even though the ID-range rule above does not cover them. Suffixes: <code>a</code> = amended sub-test
           registered after the parent was withdrawn (TEST-04a); <code>s</code> = substituted protocol, run on a
           different sample than the one registered (TEST-03s). Both suffixes mark a test that is{' '}
           <em>not</em> the registered one and must not be read as the parent&apos;s result.{' '}
@@ -368,6 +370,28 @@ export default function TestCatalog() {
             Decisive Tests: Status
           </Link>
         </div>
+      </section>
+
+      <section id="bets" style={{ marginTop: '2rem', scrollMarginTop: '5rem' }}>
+        <h2>Bets (B1&ndash;B7): a second ID scheme</h2>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          The TEST-01&ndash;26 registry above covers data tests. The research repo&apos;s prediction ledger
+          (<a href="https://github.com/dp-web4/Synchronism/blob/main/PREDICTIONS.md" style={{ color: 'var(--color-accent-blue)' }}>PREDICTIONS.md</a>)
+          keeps a separate list of <em>theory-level</em> claims it calls &ldquo;bets&rdquo;: things that could distinguish
+          the framework from standard physics if tested. They are not in the 24 or the 26. One of them appears in the
+          site&apos;s six-refutation headline:
+        </p>
+        <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <li><strong>B1: observer-relative Bell/CHSH.</strong> Can a local substrate, measured only through an observer&apos;s
+            phase-lock, beat the classical CHSH limit S = 2 without signalling? Simulated 2026-06-21 to 07-06: local arm
+            S = 1.98, nonlocal-grid arm S = 2.0, the framework&apos;s own density substrate S = 1.85. <strong>Refuted</strong> (a
+            construction check, not data; see{' '}
+            <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).</li>
+          <li>B2 RAR transition shape at &#x03B3; = 2 (refuted, &Delta;BIC +184) &middot; B3 consciousness threshold C &asymp; 0.50
+            (untested; the one test ran on a different variable) &middot; B4 compatibility scaling (untested in the heterogeneous
+            case) &middot; B5 f(N) reconstruction rate (not yet derived) &middot; B6 non-monogamous entanglement (gated on B1,
+            which failed) &middot; B7 vacuum Umklapp (Planck-suppressed).</li>
+        </ul>
       </section>
 
       <RelatedConcepts currentPath="/test-catalog" />

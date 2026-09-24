@@ -154,6 +154,7 @@ export default function HonestAssessment() {
           <strong>NEVER RUN AS REGISTERED</strong><span>A different dataset, sample, or statistic was substituted and adjudicated in the registered test&apos;s place — the substitute has its own verdict, but the test as originally pre-registered remains unrun and still runnable. Distinct from WITHDRAWN (which is retracted, not substituted). E.g. TEST-03 (the ALFALFA-SDSS run was executed as TEST-03s instead).</span>
           <strong>UNDERPOWERED AS REGISTERED</strong><span>The registered kill threshold sits inside the measurement&apos;s own known systematics or pipeline-dependence range, so neither outcome (threshold crossed or not) can adjudicate anything until the registration is tightened. Marked before the data arrives where possible, not as a post-hoc excuse. E.g. TEST-06 (BTFR σ_int threshold vs. ~3× velocity-definition-dependent scatter), TEST-04a (fσ₈ criterion met at ~1.5σ against a &gt;3σ demand).</span>
           <strong>Ceiling Exceeded</strong><span>A structural failure mode specific to this framework: the data demands more than the framework&apos;s built-in maximum (the bounded boost 1/&Omega;_m = 3.17), so no parameter choice can rescue the fit. Needs no threshold registration — the ceiling is algebraic.</span>
+          <strong>Empty Intersection</strong><span>A joint test fails because the parameter ranges two datasets each allow do not overlap: no single value satisfies both. E.g. TEST-25: the γ interval SPARC retains (0.425&ndash;0.600) and the interval the Cassini Solar-System bound allows share no point. Each dataset alone may be fit; the <em>conjunction</em> is what is refuted, and only for the realization that uses one function at both scales.</span>
           <strong>[Brackets]</strong><span>Text in brackets inside a quoted prediction (e.g. &ldquo;[Withdrawn]&rdquo;) marks that the surrounding wording is preserved verbatim for the record but is no longer asserted.</span>
         </div>
 
@@ -567,11 +568,10 @@ export default function HonestAssessment() {
             written down.</strong> It is: a row counts if it was <em>executed against a registered criterion on
             data the framework did not fit</em>, and carries one of the operational labels
             <em> Kill Criterion Triggered</em>, <em>Failed</em>, <em>Ceiling Exceeded</em>, or <em>Empty
-            Intersection</em>. Three of those four labels are absent from the{' '}
+            Intersection</em>. All four are now defined in the{' '}
             <a href="#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>badge legend</a>
-            {' '}readers are pointed to &mdash; so the number could not be reconstructed from the site&apos;s own
-            vocabulary. That vocabulary gap is real and is not fixed by this table (it is queued as its own
-            sweep). <strong>(b) The six are not six of a kind.</strong>
+            {' '}readers are pointed to (Empty Intersection was the last one missing, added 2026-09-24), so the count can be
+            reconstructed from the site&apos;s own vocabulary. <strong>(b) The six are not six of a kind.</strong>
           </p>
           <div style={{ overflowX: 'auto' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem' }}>
@@ -1478,10 +1478,16 @@ export default function HonestAssessment() {
               sign statement — for the density knee to track MOND&apos;s acceleration threshold, the BTFR
               forces &rho;<sub>crit</sub> &prop; a&#x2080;&sup2;/(GV&sup2;) &prop; <strong>V<sup>&minus;2</sup></strong>{' '}
               (profile-independent); the framework asserts &rho;<sub>crit</sub> = A&middot;V<sup>+2</sup>.
-              The exponent is inverted, the magnitude is 240&times;&ndash;300,000&times; too high, and with the
+              As first stated (restated below), the exponent is inverted, the magnitude 240&times;&ndash;300,000&times; too high, and with the
               framework&apos;s own values the entire luminous disk sits at C &#x2272; 0.28 — the knee is never
               crossed inside a galaxy. No recalibration of A repairs a sign. Full derivation on{' '}
-              <a href="/parameter-derivations">Parameter Derivations</a>.
+              <a href="/parameter-derivations">Parameter Derivations</a>.<strong> Restated 2026-08-28 (propagated here 2026-09-24):</strong> measured on SPARC (N = 129), the Jeans knee
+              carries no velocity exponent at all, &#x03C1;<sub>crit</sub> &prop; V<sup>&minus;0.16 &plusmn; 0.19</sup> (median 0.161
+              M&#x2299;/pc&sup3;). The framework&apos;s V<sup>+2</sup> is excluded at ~11&sigma;, and MOND&apos;s required V<sup>&minus;2</sup> at ~10&sigma;
+              too, so the refutation stands as a <em>wrong exponent</em>, not a sign inversion. The 240&times;&ndash;300,000&times;
+              magnitude is withdrawn: it used &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, but A = 0.028 was derived (Session 53)
+              for &#x03C1;<sub>crit</sub> = A&middot;V<sup>0.5</sup>. Whether a disc crosses the knee is therefore reopened and
+              estimator-dependent.
             </p>
           </div>
 

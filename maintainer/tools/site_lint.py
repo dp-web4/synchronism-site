@@ -23,6 +23,27 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-09-24 (maintainer): meta-statements that drifted; cross-sector gamma; EFE direction; rho_crit restatement
+    (r"independently pin the framework", "2026-09-24",
+     "galaxy gamma=0.489 is acceleration-keyed, cosmology gamma is mean-density-keyed: two variables, not one parameter pinned twice"),
+    (r"algebraic fact (with|&mdash;) two faces|algebraic fact with two faces", "2026-09-24",
+     "same: one special point of the function family in two different variables"),
+    (r"defend the ratio to the Newtonian residual", "2026-09-24",
+     "Newton's residual is +0.021 +/- 0.027 under Plummer; quote residuals, not ratios"),
+    (r"a transferable null in the literature&apos;s own units", "2026-09-24",
+     "the GC window is L2-conditional (under L3 18/27 verdicts flip, no knee passes)"),
+    (r"Three of those four labels are absent", "2026-09-24",
+     "Kill Criterion Triggered / Failed / Ceiling Exceeded / Empty Intersection are all in the legend now"),
+    (r"(on|over) highlighted\s+terms on any page", "2026-09-24",
+     "hover terms are deployed on 2 pages, not all"),
+    (r"Without the EFE the figure would be ~18%|is the EFE-free figure", "2026-09-24",
+     "~18% in v = sqrt(1.4) is the EFE-INCLUDED QUMOND number; without the EFE the boost is several times larger"),
+    (r"sign of the exponent is inverted|The exponent is inverted, the magnitude", "2026-09-24",
+     "restated 2026-08-28: measured knee is velocity-independent; V^+2 is a wrong exponent (~11 sigma), 240-300,000x withdrawn"),
+    (r"&#x03B3; \(gamma\) is the single parameter that determines", "2026-09-24",
+     "gamma = 2/sqrt(N_corr) is refuted (wrong-sign correlation); state it as the proposal"),
+    (r"The six tools above are grounded in", "2026-09-24",
+     "three of the six are Audited-Negative on their own pages"),
     # --- retired 2026-09-19 (maintainer): pre-audit holdouts one click off the main path
     (r"2&#x03C0; factor arises from the spherical geometry", "2026-09-19",
      "the literal Hubble-sphere computation gives cH0/2, not cH0/2pi; no argument derives the 2pi"),

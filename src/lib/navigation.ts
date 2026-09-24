@@ -106,7 +106,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'The \u03B3 Parameter',
       href: '/gamma-parameter',
-      desc: '\u03B3 = 2/\u221AN_corr: why 2, why \u221AN',
+      desc: '\u03B3 = 2/\u221AN_corr \u2014 the proposed derivation and why it did not survive testing',
       keywords: ['gamma', 'parameter', 'correlation', 'N_corr', 'derivation'],
       prerequisites: ['/coherence-function'],
       related: ['/critical-density', '/scale-invariance', '/phase-transitions'],

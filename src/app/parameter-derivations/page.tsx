@@ -205,7 +205,13 @@ export default function ParameterDerivations() {
               exponent. With the framework&apos;s own values (&rho;<sub>crit</sub> = 652 M&#x2299;/pc&sup3; at
               V=150), the entire luminous disk sits at C &#x2272; 0.28 and never crosses the knee. The V&sup2;
               exponent now has three mutually incompatible provenances — stated-Jeans &rarr; +0.5, code/usage
-              &rarr; +2, MOND-requirement &rarr; &minus;2 — and no derived one. This is the{' '}
+              &rarr; +2, MOND-requirement &rarr; &minus;2 — and no derived one.<strong> Restated 2026-08-28 (propagated here 2026-09-24):</strong> measured on SPARC (N = 129), the Jeans knee
+              carries no velocity exponent at all, &#x03C1;<sub>crit</sub> &prop; V<sup>&minus;0.16 &plusmn; 0.19</sup> (median 0.161
+              M&#x2299;/pc&sup3;). The framework&apos;s V<sup>+2</sup> is excluded at ~11&sigma;, and MOND&apos;s required V<sup>&minus;2</sup> at ~10&sigma;
+              too, so the refutation stands as a <em>wrong exponent</em>, not a sign inversion. The 240&times;&ndash;300,000&times;
+              magnitude is withdrawn: it used &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, but A = 0.028 was derived (Session 53)
+              for &#x03C1;<sub>crit</sub> = A&middot;V<sup>0.5</sup>. Whether a disc crosses the knee is therefore reopened and
+              estimator-dependent. This is the{' '}
               <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>locality no-go</a>{' '}
               (Milgrom instance) seen on the velocity axis: <em>a knee keyed on local volumetric density must
               fall as V<sup>&minus;2</sup> to track an a&#x2080; acceleration threshold; the framework makes it

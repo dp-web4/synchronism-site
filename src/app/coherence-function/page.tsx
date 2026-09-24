@@ -140,7 +140,7 @@ export default function CoherenceFunction() {
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}><strong>C<sub>&#x03C1;</sub></strong> (the headline)</td>
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>tanh(&#x03B3; ln(1 + &#x03C1;/&#x03C1;<sub>crit</sub>)), optionally floored at f</td>
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>local density &#x03C1;</td>
-                  <td style={{ padding: '0.25rem 0' }}>&Delta;BIC +2843 (&#x03C1;<sub>crit</sub> free) and +3309 (&#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2;, A free) head-to-head on SPARC; TEST-08 environment null; SPARC knee grid (floored); globular clusters</td>
+                  <td style={{ padding: '0.25rem 0' }}>&Delta;BIC +2843 (&#x03C1;<sub>crit</sub> free) and +3309 (&#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2;, A free) head-to-head on SPARC; TEST-08 environment null; SPARC knee grid (floored); globular clusters; Ġ/G from the Sun&apos;s motion vs lunar laser ranging (explorer 2026-09-23: at 1&ndash;10 pc smoothing, 68 of 74 grid laws excluded; survivors are locally Newtonian). In cosmology the same formula is read on the <em>mean</em> matter density: &#x03B3; = 0.487 &plusmn; 0.02 on DESI (that is &Lambda;); read on the local density as a fluid, P(k) pins &#x03B3; = &frac12; to 5&times;10<sup>&minus;6</sup></td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', verticalAlign: 'top' }}>
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}><strong>C<sub>g</sub></strong></td>
@@ -157,6 +157,16 @@ export default function CoherenceFunction() {
               </tbody>
             </table>
           </div>
+          <p style={{ fontSize: '0.82rem', color: 'var(--color-text-secondary)', margin: '0.5rem 0 0' }}>
+            <strong>Which &#x03B3;.</strong> The symbol carries different numbers in different rows, and they are not one
+            parameter measured several times. &#x03B3; &asymp; 0.489 is the <strong>C<sub>g</sub></strong> fit (acceleration-keyed, and only
+            &#x03B3;/a&#x2080;&prime; is identified). The density-keyed <strong>C<sub>&#x03C1;</sub></strong> fitted on SPARC goes to
+            &#x03B3; &rarr; 0.046, and &#x03B3; = 2 is its registered value. The cosmology&apos;s &#x03B3; &asymp; &frac12; is C<sub>&#x03C1;</sub> on the mean density.
+            &#x03B3; = 2/&radic;N<sub>corr</sub> is the proposed derivation that failed (wrong-sign correlation), and &ldquo;&#x03B3; &asymp; 1&rdquo;
+            is a regime name from the chemistry track. &#x03B3; = &frac12; turns up in both the galaxy and cosmology fits because it is
+            the special point of the function family (MOND&apos;s simple &mu; in one variable, &Lambda; in the other). The variables differ, so
+            that is a coincidence of notation, not a cross-sector measurement.
+          </p>
           <p style={{ margin: '0.4rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             The wiring (how C enters gravity: division g<sub>bar</sub>/C, the field equation, or the plotter&apos;s quadrature
             display) is a separate choice on top of each row; see item 2. The headline equation at the top of this page is
@@ -279,7 +289,14 @@ export default function CoherenceFunction() {
           that pass all four qualitative constraints</strong> — arctan-log (&#x0394;BIC +46.7), algebraic-log
           (+23.8), Gompertz (+58.0) — on <em>asymptotic-rate</em> grounds the qualitative list never
           mentions. Among the survivors (tanh, erf-log, Hill, exponential-&#x03BD;) the data cannot
-          distinguish (mutual &#x0394;BIC &le; 8.9), and tanh finishes <em>last</em> of the four.
+          distinguish (mutual &#x0394;BIC &le; 8.9). tanh with &#x03B3; free finishes last of the four, but the same curve at
+          &#x03B3; = &frac12; <em>is</em> the table&apos;s &ldquo;Hill n = 1 pinned&rdquo; row, second best: the shape is not disfavoured, and
+          freeing &#x03B3; adds a parameter the data do not use. <strong>Effective-N caveat (added 2026-09-24):</strong> every
+          &#x0394;BIC in this table treats the 2,807 points as independent. Elsewhere the site discounts the same SPARC points for
+          correlation along each curve, by about 5.6&times; (/galaxy-rotation, +184 &rarr; 33) or 20&times; (/core-idea,
+          +2843 &rarr; +142). Divided by either factor, all three &ldquo;refuted&rdquo; forms (+23.8, +46.7, +58.0) fall near or below
+          the decisive line of 10, and the survivors&apos; ranking is noise. So the claim that asymptotic rate selects among
+          forms is conditional on point independence. No single effective N has been estimated from the data; this is open.
           (&ldquo;Logistic&rdquo; is not a distinct member: the logistic sigmoid applied to the log-argument
           is identically tanh.) See the executed selection table below.
           tanh is the chosen form, motivated historically by its appearance in the Ising mean-field

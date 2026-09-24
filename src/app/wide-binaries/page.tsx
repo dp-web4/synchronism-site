@@ -41,8 +41,10 @@ export default function WideBinaries() {
           MOND&apos;s wide-binary prediction depends on location. A binary in the Solar neighbourhood also sits in the
           Milky Way&apos;s own field, about 1.8&nbsp;a&#x2080;. That external field partly suppresses the boost (the External Field
           Effect, EFE). With it, AQUAL and QUMOND predict a 1.0&ndash;1.4&times; boost in gravity at low internal
-          acceleration, depending on the treatment. Without the EFE the figure would be ~18% in velocity. The Chae vs
-          Banik dispute below is about that EFE-suppressed signal.
+          acceleration, depending on the treatment. That is up to about +18% in velocity (&radic;1.4 &asymp; 1.18), the ~20%
+          signal the Chae vs Banik dispute below is about. Without the EFE the boost would be several times larger: with the
+          simple interpolating function at an internal acceleration of 0.1&nbsp;a&#x2080;, about 3.7&times; in gravity, or roughly
+          +90% in velocity. (Corrected 2026-09-24: this paragraph used to call the ~18% the no-EFE figure. It is the EFE-included one.)
         </p>
 
         <h2>Synchronism&apos;s Prediction: Two Versions</h2>
@@ -63,13 +65,29 @@ export default function WideBinaries() {
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <li><strong>Published calibration</strong> &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2; = 1.5&times;10&sup3; M&#x2609;/pc&sup3; (Milky Way, &#x03B3; = 0.489):
-              <strong> +1.8&times;10&#x2074;%</strong>. That is a factor ~3.5&times;10&#x2074; in g, excluded by the Oort limit and Solar-System
-              ephemerides by orders of magnitude.</li>
+              <strong> +1.8&times;10&#x2074;%</strong>. That is a factor ~3.5&times;10&#x2074; in g, excluded by the Oort limit by orders of magnitude. (Planetary
+              ephemerides cannot see a boost that is uniform across the Solar System, because it is degenerate with the Sun&apos;s
+              GM. They constrain only its variation, so they bite only if density is read pointwise, not smoothed over
+              &ge; 30 AU.)</li>
             <li>Measured velocity-blind knee, 0.161&nbsp;M&#x2609;/pc&sup3;: <strong>+116%</strong> (&#x03B3; = 0.489) or +18.6% (&#x03B3; = 2).</li>
             <li>Refracted Gravity&apos;s elliptical-galaxy knee, 0.0083&nbsp;M&#x2609;/pc&sup3;: <strong>+9.4%</strong> (&#x03B3; = 0.489) or +0.005% (&#x03B3; = 2).</li>
             <li>A near-Newtonian 0.05&ndash;0.4% needs a knee between 3.8&times;10&#x207B;&#x2075; and 3.2&times;10&#x207B;&#x2074;&nbsp;M&#x2609;/pc&sup3; (&#x03B3; = 0.489).
               No other page uses a knee in that window, and it starts where the knee range ruled out on SPARC ends.</li>
           </ul>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>The static amplitude is not the only handle: a density-keyed boost changes with time (explorer, 2026-09-23).</strong>{' '}
+            Everything in one neighbourhood shares the same boost, so a ratio taken at one instant cancels it. That is why
+            TEST-02 reads &ldquo;&#x03B3;<sub>g</sub> &equiv; 1&rdquo; for this version. But the Sun moves through the Galactic
+            disc and past nearby stars (&alpha; Cen is closing at 22&nbsp;km/s), so the local density, and with it
+            G<sub>eff</sub> = G/C(&#x03C1;), changes <em>now</em>. Lunar laser ranging measures &#x0120;/G = (7.1 &plusmn; 7.6)&times;10&#x207B;&sup1;&#x2074;
+            per year (Hofmann &amp; M&uuml;ller 2018). With density smoothed over 1&ndash;10&nbsp;pc, the scale the galaxy fits need,
+            the knee grid used on this site predicts 10&#x207B;&#x2078;&ndash;10&#x207B;&#x2075; per year. <strong>68 of 74 laws are
+            excluded</strong> against a bound loosened 13&times;, including all eight near-Newtonian windows of the kind in the last bullet above that the TEST-02 card lists.
+            The survivors are laws that are Newtonian to 10&#x207B;&#x2078; at the Sun, so they predict nothing here. Pre-registered
+            (site commit <code>80b8c9c</code>) before the script existed. This is a second, SPARC-independent root for the
+            density-keyed kill, not a new refutation, and it does not touch the acceleration-keyed version. Finding:{' '}
+            <code>explorer/findings/density-keyed-C-is-a-moving-G-lunar-laser-ranging-excludes-it-at-pc-smoothing.md</code>.
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             Arithmetic: <code>maintainer/scripts/test02_amplitude_is_knee_conditional.py</code> and its output file; details on{' '}
             <Link href="/tier-1-existing#TEST-02" style={{ color: 'var(--color-accent-blue)' }}>Tier 1, TEST-02</Link>.
@@ -140,14 +158,15 @@ export default function WideBinaries() {
           </details>
         </div>
 
-        <h2>Current Observational Status (updated 2026-06-23)</h2>
+        <h2>Current Observational Status (last surveyed 2026-06-23; not re-surveyed since)</h2>
         <p>
           The wide-binary debate escalated in 2026. The earlier dispute (sample selection,
           contamination, statistical cuts) has been superseded by a sharper disagreement:
         </p>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
           <li><strong>Chae et al. 2026 (arXiv:2601.21728)</strong>: Enlarged RV+speckle-vetted sample
-            of 36 binaries → 4.9σ boost with γ_boost ≈ 1.6 — consistent with MOND.</li>
+            of 36 binaries → 4.9σ boost with γ_boost ≈ 1.6 — consistent with MOND. (As summarised in June; the sample cut
+            and significance have not been re-checked against the paper since.)</li>
           <li><strong>Saad &amp; Ting 2026 (arXiv:2603.11015)</strong>: Reanalyzed the <em>same</em> 36 binaries
             from Chae et al. 2026 using a hierarchical semi-major-axis fit (replacing geometric deprojection)
             → <strong>γ = 1.12 ± 0.25, Newton-consistent at 0.4σ</strong>. The entire anomaly lives in one

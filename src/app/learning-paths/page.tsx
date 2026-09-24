@@ -73,6 +73,13 @@ function PathCard({ path }: { path: PathEntry }) {
           </li>
         ))}
       </ol>
+      {path.name === 'Beginner' && (
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.75rem 0 0' }}>
+          <strong>Try it hands-on (optional, not a path step):</strong>{' '}
+          <Link href="/coherence-explorer" style={{ color: path.color }}>Coherence Explorer</Link> (drag the sliders, watch C change) and{' '}
+          <Link href="/galaxy-plotter" style={{ color: path.color }}>Galaxy Curve Plotter</Link> (see the dark-matter problem on real galaxies).
+        </p>
+      )}
       <div style={{ marginTop: '1rem' }}>
         <Link
           href={path.steps[0].href}

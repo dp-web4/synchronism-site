@@ -196,12 +196,19 @@ export default function GalaxyPlotter() {
           <br />&bull; <strong>&gamma;&nbsp;=&nbsp;2</strong> &mdash; the pin refuted on the RAR at
           &Delta;BIC&nbsp;=&nbsp;+184 (<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
           <br />&bull; <strong>&rho;<sub>crit</sub>&nbsp;=&nbsp;0.029&middot;V<sub>flat</sub><sup>+2</sup></strong>
-          &mdash; the BTFR requires &rho;<sub>crit</sub>&nbsp;&propto;&nbsp;V<sup>&minus;2</sup>, so the
-          <em> sign of the exponent is inverted</em> against the framework&apos;s own audit, with magnitudes off by
-          240&ndash;300,000&times; (<Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link>).
+          &mdash; an a&#x2080;-tracking knee would need &rho;<sub>crit</sub>&nbsp;&propto;&nbsp;V<sup>&minus;2</sup>, and the knee
+          measured on SPARC has no velocity dependence at all (V<sup>&minus;0.16 &plusmn; 0.19</sup>, median 0.161&nbsp;M<sub>&#x2609;</sub>/pc&sup3;), so
+          V<sup>+2</sup> is a <em>wrong exponent</em>, excluded at ~11&sigma; (<Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>).
+          The &ldquo;240&ndash;300,000&times;&rdquo; magnitude this line used to quote was withdrawn 2026-08-28: it applied the V&sup2; law to
+          a coefficient derived for V<sup>0.5</sup>.
           <br />&bull; <strong>Per-system normalization</strong> &mdash; keying the knee to V<sub>flat</sub> makes it a
           function of the very observable being predicted; the site names that move disqualifying, and MOND by contrast
           uses one global a₀ for all galaxies.
+          <br /><strong>Which wiring (added 2026-09-24):</strong> the violet curve adds the coherence term in quadrature,
+          v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C)&sup2;. That display wiring takes the observed V<sub>flat</sub> as an
+          input, and with C &asymp; 0.001 it does nothing. The ledger&apos;s tests use the division wiring, g = g<sub>bar</sub>/C, which
+          at the same C fails the <em>other</em> way: about 10&sup3;&times; too much gravity, roughly 30&times; in velocity, far off the
+          top of this plot. So the tool shows one failure mode (inertness), and the tested law has the opposite one (over-boost).
           <br />So the tool is best read not as &ldquo;the theory&apos;s prediction&rdquo; but as a
           <strong> working demonstration that the equation is inert at its published calibration</strong> &mdash; which
           is exactly what the DDO 154 annotation on this page says in one line (<em>max C on this disk: 0.001 &mdash;

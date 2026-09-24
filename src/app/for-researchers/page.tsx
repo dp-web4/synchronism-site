@@ -6,7 +6,7 @@ import ValidationBadge from '@/components/ValidationBadge';
 
 export const metadata: Metadata = {
   title: 'For Researchers: What\'s Citable',
-  description: 'Five citable negative results extracted from the failure documentation: the local-density locality no-go, dim-4 LIV naturalness gap for absolute-time substrates, the B1 CHSH check (Bell illustrated; two nonlocal construction nulls), density-keyed unidentifiability (knee above the sampled density ⇒ interpolant unmeasurable), and the globular-cluster exclusion window on density-keyed knees. Plus one secondary DESI mechanism-class negative and one open question about the audit instrument (A2ACW), which is not a citable null.',
+  description: 'Five citable negative results extracted from the failure documentation: the local-density locality no-go, dim-4 LIV naturalness gap for absolute-time substrates, the B1 CHSH check (Bell illustrated; two nonlocal construction nulls), density-keyed unidentifiability (knee above the sampled density ⇒ interpolant unmeasurable), and the globular-cluster exclusion window on density-keyed knees (L2-conditional, quoted as residuals). Plus one secondary DESI mechanism-class negative and one open question about the audit instrument (A2ACW), which is not a citable null.',
 };
 
 export default function ForResearchers() {
@@ -77,12 +77,13 @@ export default function ForResearchers() {
             <li>
               <a href="#locality-no-go" style={{ color: 'var(--color-accent-blue)' }}>1. Local-density no-go</a>: a knee keyed
               on local volumetric density must fall as V<sup>&minus;2</sup> (BTFR-forced); the framework asserts &#x03C1;<sub>crit</sub> &prop;
-              V<sup>+2</sup>, the inverted sign. Algebraic-coupling class only; gradient (symmetron-class) schemes escape.
+              V<sup>+2</sup>, and the measured knee has no velocity exponent (V<sup>+2</sup> excluded at ~11&sigma;). Algebraic-coupling class only; gradient (symmetron-class) schemes escape.
             </li>
             <li>
               <a href="#gc-window" style={{ color: 'var(--color-accent-blue)' }}>5. Globular-cluster exclusion window</a>: 42
               clusters exclude a knee &#x03C1;<sub>c</sub> &isin; 0.1&ndash;300 M<sub>&#x2609;</sub>/pc&sup3; at &#x03B3; = 0.489,
-              narrowing to 0.5&ndash;100 at &#x03B3; = 2. Meaningless without its &#x03B3;.
+              narrowing to 0.5&ndash;100 at &#x03B3; = 2. Meaningless without its &#x03B3;, and conditional on L2 dynamics (under L3 no knee passes).
+              Quote residuals (density law &minus;0.196 to &minus;0.199 &plusmn; 0.027 vs MOND+EFE &minus;0.093), not ratios.
             </li>
             <li>
               <a href="#unidentifiability" style={{ color: 'var(--color-accent-blue)' }}>4. Density-keyed unidentifiability</a>:
@@ -686,7 +687,7 @@ export default function ForResearchers() {
         {/* Artifact 5 (numbered 6 until 2026-09-14): globular-cluster exclusion window */}
         <div id="gc-window" className="card" style={{ marginBottom: '1.5rem', scrollMarginTop: '5rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>5. Globular-cluster exclusion window on the knee of any density-keyed gravity law &mdash; a transferable null in the literature&apos;s own units</h2>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>5. Globular-cluster exclusion window on the knee of any density-keyed gravity law &mdash; a conditional (L2) null, quoted as residuals</h2>
             <ValidationBadge status="audited-negative" />
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
@@ -701,7 +702,11 @@ export default function ForResearchers() {
             the outer velocity-dispersion slopes of 42 Galactic globular clusters exclude a knee density
             <strong> ρ<sub>c</sub> ∈ 0.1–300 M<sub>☉</sub>/pc³ (6.8×10⁻²⁴ – 2×10⁻²⁰ g/cm³)</strong> at a switch sharpness
             γ = 0.489 (Hill index 2γ ≈ 1 in (1+ρ/ρ<sub>c</sub>), not in ρ/ρ<sub>c</sub>), narrowing to 0.5–100 M<sub>☉</sub>/pc³ at γ = 2. &ldquo;Excluded&rdquo; = slope mismatch
-            more than twice that of MOND with the external field effect, which these data admit (−0.093 vs Newtonian −0.057). <strong>Under L3 (striction included) this band does not hold:</strong> it becomes 0.031–0.196 M<sub>☉</sub>/pc³ at γ = 0.489, with no passing knee, and the outer shells stop being bound (caveat iii below).
+            more than twice that of MOND with the external field effect, which these data admit (−0.093 vs Newtonian −0.057). Stated without a
+            ratio, that is a mean outer-slope residual beyond ≈ 0.19 in magnitude; each mean carries ±0.027 (statistical only).
+            <strong> Citable numbers, residual form (2026-09-24):</strong> density law −0.196 to −0.199 ± 0.027 after refitting the mass
+            scale under the law itself (−0.211 on catalogue masses); MOND+EFE −0.093; MOND without EFE −0.245; Newton −0.057 (King-like) or
+            +0.021 ± 0.027 (Plummer). There is no systematic budget. <strong>Under L3 (striction included) this band does not hold:</strong> it becomes 0.031–0.196 M<sub>☉</sub>/pc³ at γ = 0.489, with no passing knee, and the outer shells stop being bound (caveat iii below).
             <strong>Refracted Gravity is not excluded:</strong> its published ρ<sub>c</sub> = 10⁻²⁴·²⁵ g/cm³ = 0.0083
             M<sub>☉</sub>/pc³ lies below the excluded window, and every value in that set&apos;s 1σ range
             (0.0052–0.0158 M<sub>☉</sub>/pc³) scores within MOND+EFE&apos;s mismatch on the same statistic. <em>Provenance
@@ -752,7 +757,10 @@ export default function ForResearchers() {
             where the two predicted boost amplitudes are collinear (Pearson r = +0.87 across the population, because
             outer-halo clusters are also the diffuse ones). Prior-art screen: Cesare et al. 2022 used globular clusters as
             tracers of elliptical-galaxy potentials, not as self-gravitating systems crossing the knee. Honest scope: the ± is
-            statistical only; defend the ratio to the Newtonian residual (3.7–4.4×), not a sigma.{' '}
+            statistical only. Quote the residuals, not ratios to the Newtonian residual: under a Plummer profile Newton&apos;s own
+            residual is +0.021 ± 0.027, consistent with zero, so ratios to it swing from 3.7× to 9× while the density residual stays
+            put (corrected 2026-09-24; this line previously said the opposite, and{' '}
+            <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link> had the right form).{' '}
             <strong>Tides and the contested clusters:</strong> dispersion bins beyond 0.98 of the catalogue tidal radius were
             cut, and constant anisotropy was scanned (β from −0.6 to +0.8). Tidal heating and unbound extra-tidal stars inside
             r<sub>t</sub> were <em>not</em> modelled. The ≥ 10-bin cut leaves 42 clusters at R<sub>GC</sub> ≤ 22 kpc. That

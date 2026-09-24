@@ -31,15 +31,15 @@ export interface LearningPath {
 export const learningPaths: LearningPath[] = [
   {
     name: 'Beginner',
-    timeEstimate: '~40 min on the short route (step 5\'s summary box, glossary as reference); ~2 h 40 m reading every page in full',
+    timeEstimate: '~45 min on the short route (step 5\'s summary box, glossary as reference); ~2 h 40 m reading every page in full',
     desc: 'No physics background needed. Plain language, core concepts only. Step 5 (Honest Assessment) is the site\'s long audit page — on this path, read its "If you read nothing else" box and move on; the full 80-minute read is for when you want the evidence rather than the verdict.',
     color: '#10b981',
     kind: 'difficulty',
     steps: [
       { title: 'Why Synchronism?', href: '/why-synchronism', time: '~8 min' },
       { title: 'First Encounter', href: '/first-encounter', time: '~10 min' },
-      { title: 'The Core Idea', href: '/core-idea', time: '~8 min' },
-      { title: 'What Synchronism Is Not', href: '/what-synchronism-is-not', time: '~5 min' },
+      { title: 'The Core Idea', href: '/core-idea', time: '~12 min' },
+      { title: 'What Synchronism Is Not', href: '/what-synchronism-is-not', time: '~9 min' },
       { title: 'Honest Assessment', href: '/honest-assessment', anchor: 'if-you-read-nothing-else', time: '~4 min: the "If you read nothing else" box (the stop on this path); full page ~18,000 words, ~80 min, optional' },
       { title: 'Glossary', href: '/glossary', time: 'reference: look terms up as needed (~50 min to read in full)' },
     ],

@@ -1,1 +1,42 @@
 Starting Synchronism Explorer Session at Thu Sep 24 08:00:01 PDT 2026
+The session is done and pushed (`bb4f6f1`). The main result is that the program's own claim, that reading its own documents never changes a verdict, is false in its own record. Only verdicts about the record changed, though, not verdicts about the world.
+
+**What I worked on.** The maintainer's 06:00 session had registered a pilot test of that claim (the H-oracle pilot). The session was cut off at the 600-second background limit, halfway through. Rater A's codes were on disk but untracked, and rater B had produced nothing. I judged finishing that run to be worth more than any new topic in the queue.
+
+**Method.**
+- **Before rater B ran:** I committed two addenda. The first freezes rater A's file with a hash and states the deviations. The second registers an extra check, S2: coding each row of the ledger's "refuted" bucket (Bucket 2) by what created it.
+- **Rater B:** four Sonnet agents coded 23 units each. They saw only the codebook and their units. One context would have been the plan, but that is what hit the time limit.
+- **Analysis:** the maintainer's analysis script ran as written; only the file paths changed.
+
+**Results**
+
+| Prediction | Result |
+|---|---|
+| P1: no verdict change comes from reading or argument | **Refuted.** Both raters agree on two units: U047 (a prediction went from "refuted" to "untested" because the source had tested a different variable) and U091 (a₀ left the refuted bucket because its "wrong sign" belonged to another row). |
+| P2: at least one verdict change not from executed data | Held (5 units). |
+| P3: at least one verdict change from an internal computation | Failed. The raters split on whether the decisive step was *finding* a problem or *confirming* it. |
+| P4: rater agreement on channel, κ ≥ 0.40 | Held (0.58). |
+| P5: at least 25% of corrections soften a refutation | Held (41%). |
+
+- **S2:** all 13 empirical eliminations in Bucket 2 came from an external measurement: 5 executed, 6 read from published numbers, 2 unclear. That prediction held. The second one failed: 23–32% of eliminations came from reading or argument, under the registered one-third.
+- **A consistency slip:** the TEST-04a row still sits in the refuted table even though its own text now says "underpowered".
+
+**The pattern.** Every verdict change caught by reading or argument concerned the *record* or the model's *logic*:
+- **Record:** what was tested, on which variable, which row a result belongs to.
+- **Logic:** what the model implies.
+
+None concerned the *world*. The one refutation made by reading a published measurement (EFE = 0 vs Chae) was later retracted after an executed check showed the result could not be evaluated. So the narrowed thesis I'm proposing for the /a2acw page is: a loop with no external check can correct record- and logic-facing verdicts, and world-facing verdicts need an external measurement. This sorting was done by me alone, after seeing the data. It is a hypothesis for the full run, not a tested result.
+
+**Limits**
+- It covers one file, and the counts are small.
+- Rater B was four agents rather than one.
+- It is unknown which model rater A was and what it saw.
+- Agreement on the "effect" field was only borderline (κ 0.40).
+
+**For the maintainer** (actions in the finding):
+- Rewrite the /a2acw "natural experiment" paragraph, which still says the check hasn't been run; wording is suggested.
+- Commit rater A's file, which is still untracked; its hash is frozen in my addendum.
+- Move or annotate the TEST-04a row out of the refuted table.
+- Add two codebook rules for the full run: "caught by" means the channel that first surfaced the problem, and a new record/logic/world field.
+
+The finding is `explorer/findings/h-oracle-pilot-reading-changed-two-verdicts-both-about-the-record-not-the-world.md`. I didn't touch the maintainer's files, and I saved two memory notes: this result, and splitting long rater runs to stay under the 600-second limit. NotebookLM wasn't authenticated and wasn't needed. Playwright failed to connect, and the Gmail, Calendar and Drive connectors need authorizing in claude.ai settings; none of these were used this session.

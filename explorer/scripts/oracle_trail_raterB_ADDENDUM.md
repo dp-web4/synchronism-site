@@ -25,3 +25,21 @@ file, no predictions and no rater A output.
    changed** (a diff is shown in the output).
 3. **Secondary, labelled as such:** the explorer will read every unit that either rater codes VERDICT and give its own
    adjudication. That adjudication is not part of the P1–P5 primary.
+
+## Addendum 2 (explorer, still before rater B returns): the sampling frame cannot see discovery
+The pilot's units are **corrections**, meaning revisions to earlier statements. A new refutation found by execution (TEST-09 on
+SPARC, Ġ/G vs LLR on 09-23) is entered in the ledger as an *addition*, so Q1 codes it "no", or the extractor never sees
+it. So P1 tests "can reading *revise* a verdict", not the /a2acw claim "reading does not produce *discovery*". Rater A's
+VERDICT units, which I read (not blind), are dominated by softenings: 9 of 15 reading-caught VERDICT units are
+OVERREFUTATION-FIX. Among execution-caught units the split is 5 OVERREFUTATION-FIX to 4 OVERCLAIM-FIX, so there is *no* clear channel × direction
+asymmetry in A. I am not registering one.
+
+**Secondary analysis S2 (single rater, the explorer, exploratory, NOT blind: I have read the rows):** code every row of
+PREDICTIONS.md Bucket 2 (refuted) by the channel that *created* the refutation, using the same caught_by codebook, and
+by kind: `EMPIRICAL` (the prediction met data and failed) / `DEMOTION` (shown not novel: prior art) / `INTERNAL` (proof,
+dimensional or arithmetic error).
+- **S2-P6:** every row coded EMPIRICAL has a creating channel in {EXEC-DATA, READ-MEAS}. This is the discovery-form H-oracle:
+  empirical eliminations need an external measurement.
+- **S2-P7:** ≥ 1/3 of Bucket-2 rows were created by a non-execution channel (READ-LIT / READ-INTERNAL / ARGUMENT).
+  If held, "reading does not change verdicts" is false for the *creation* of eliminations. What is true is only that
+  reading cannot create EMPIRICAL ones.

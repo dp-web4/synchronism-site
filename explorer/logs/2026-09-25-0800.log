@@ -1,0 +1,27 @@
+Starting Synchronism Explorer Session at Fri Sep 25 08:00:01 PDT 2026
+I ran B4, the one registered bet that can still produce a positive result. It does fit, but only because the simulator was built so that it has to, so it can't move Bucket 0.
+
+**Why this topic:** the maintainer's audit this morning found no test in TEST-01…26 that could move Bucket 0, with B4 the one exception. That made B4 the only item in the queue whose outcome could go either way, and running it cost nothing. I pre-registered it before writing the script (`76f15e8`), then registered a follow-up knock-out after the main run and before running it (`e6c4666`). In total that was 19,200 simulations, using the research repo's simulator unchanged.
+
+**Results:**
+1. **Wrong prior-art candidate.** The agents' belief-averaging is consensus dynamics, and the λ_max criterion (Restrepo–Ott–Hunt) doesn't apply to those. The natural candidate is λ₂, the network's algebraic connectivity. That lost badly: 0.20–0.39 dex error when predicting the structures it wasn't fitted on. Separately, with 6 agents λ_max can never differ from the mean compatibility by more than 1.34×, so the topic's 2× test was never reachable.
+2. **Registered verdict: B4 refuted as stated.** Across 10 structures, the mean compatibility plus the fraction of agent pairs that can couple at all won (0.072 dex), ahead of 1/⟨C⟩ (0.111). Four of five predictions held. The one that failed was mine: 1/⟨C⟩ did better than I predicted.
+3. **The knock-out shows why that factor won.** An edge an agent hasn't observed starts at exactly 0.5, and beliefs are scored against 0.5. So one coupling event, however weak, flips it. When I started agents at the realistic edge prior (5.7%) instead:
+   - the 82% intercept in the maintainer's corrected (affine) form dropped to 32%;
+   - the extra factor's advantage vanished;
+   - 1/⟨C⟩ fit all 10 structures to 0.062 dex (about 15%).
+
+   So today's PREDICTIONS.md correction is right about the data but blames the wrong variable: the intercept comes from the 0.5 starting point, not from compatibility.
+4. **Why it can't count.** The simulator defines compatibility as a multiplier on the averaging weight. At first order, coupling rate and compatibility only ever appear as their product, so 1/⟨C⟩ comes out by construction. It belongs under the reparametrization badge, not Bucket 0. That supports the maintainer's suggested sentence, "no registered test can move Bucket 0", from the applied side as well as the physics side.
+5. **"p_crit" isn't a critical point.** The fitted Hill exponents are 0.28–0.48 and coherence starts at 0.20 with no coupling, so it marks the middle of a gradual rise, not a phase transition.
+
+**Action for the maintainer:** the live `/coupling-experiment` page still marks "p_crit ∝ 1/⟨compat⟩" as CONFIRMED and shows "p_crit ≈ 0.0185/⟨compat⟩" as "The Compatibility Formula". That formula is 2.9× off at C = 0.2. The finding lists this as P1 along with the PREDICTIONS.md and `/test-catalog` updates.
+
+**Open threads:**
+- The only version of B4 that could make a real claim treats compatibility as a filter on which beliefs transfer, not as a weight.
+- The "replacement improves coherence" result from the same experiment series may come from the same 0.5-prior effect. The same knock-out would test it cheaply.
+- How high coherence climbs tracks λ₂. That was found after the fact, so it needs registering, and the prior art should be checked first.
+
+Everything is committed and pushed (`771caed`): the finding, scripts and outputs, the session log, and the topic moved to `done/`. I also saved one memory: write out how a variable enters the update rule before running a claimed scaling law.
+
+Several services need authorizing in their claude.ai connector settings before they can be used: Gmail, Google Calendar and Google Drive. The playwright server also failed to connect because `npx` isn't on the PATH.

@@ -73,3 +73,22 @@ Score: out-of-structure RMS of log10(pred/obs) over the 10 test structures.
   model.
 - **Undecided** otherwise, including a mean-vs-λ_max tie, which is expected from the power check.
 - In any case: if no model gets under 0.15 dex, the finding is "no single scalar of C sets p_crit at this horizon".
+
+---
+
+## Addendum A (2026-09-25, after the main run, before the knock-out run): the mechanism knock-out
+
+Main run result at the time of writing: M7 won (RMS 0.072 vs M1 0.111). The secondary estimator (the original Hill p_half)
+favours M6 narrowly, and C(p = 1) tracks λ₂ (post hoc). H-thr is a claim about a *mechanism*, so it has to be knocked out
+directly. Set every agent's initial belief to the calibrated edge prior π = 30/(12·11·4) = 0.0568 (log-odds −2.81), not
+0.5. Then one weak coupling event can no longer carry an unobserved edge across 0.5 (0.0568 + 0.3·c·0.84 < 0.5 for all
+c ≤ 1), so compatibility weight has to matter again. Same grid, reps, seeds, structures, estimator and models.
+Script flag `--prior calibrated`.
+
+- **A1.** The uniform intercept share a/(a+b) at c = 1 falls below 0.5 (it was 0.71).
+- **A2.** The M7 advantage mostly disappears: RMS(M7) / min(RMS(M1), RMS(M4)) > 0.8 (it was 0.65).
+- **A3 (direction only).** At p = 0.02, the spread of mean C across the five uniform c values exceeds the 0.5-prior
+  spread.
+
+If A1–A2 fail, the support effect is not the threshold artefact, and H-thr's *mechanism* is refuted even though its
+*predictor* won.

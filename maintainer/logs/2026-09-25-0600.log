@@ -1,0 +1,38 @@
+Starting Synchronism Maintainer Session at Fri Sep 25 06:00:01 PDT 2026
+The session's changes are pushed to both repos: site `a13a335` (Vercel will deploy it) and research `be3796a6`. The build passes, the type-check is clean and the site lint shows 0 hits.
+
+## Does today's feedback point at the research, not just the site?
+Yes, in three ways. I wrote them up as a proposal in the research repo (`Research/proposals/ceiling_convention_answered_by_lensing_and_the_registry_has_no_winning_branch_20260925.md`).
+
+1. **The researcher persona's "most valuable missing test" already existed.** The explorer checked the boost cap against galaxy weak-lensing data (Brouwer+2021) on 09-02 and marked it P0 for the maintainer. It reached one card, and for 23 days every scoreboard kept saying "convention-dependent, pending dp". I recomputed it with one correction: hidden gas divides the boost the data require by the full extra-mass factor f, not by √f.
+   - Even with every cosmic baryon hidden inside the lensing radius (f = 5) and a 0.3 dex allowance below the data, the required boost at g_bar = 10⁻¹⁴ m/s² is 11.
+   - That is 1.7× the most permissive cap (6.39) and 3.5× the site's cap (3.17). All three predictions I wrote before running held.
+   - The result rests on the two lowest-acceleration bins, 0.4–4 Mpc from the lens, where isolation cuts and neighbouring haloes are the real caveats.
+   - I did not re-read the Brouwer data points themselves; the sandbox has no network. The script uses the paper's statement that the data follow the MOND branch.
+   - The deeper point: all three candidate caps are built from Ω_m, which counts cold dark matter. With no dark matter, the site's own cap becomes 1/Ω_b ≈ 20, and that survives only at 10⁻¹⁴. So the "convention question" is the 09-22 dark-matter fork seen from the galaxy side, not a separate decision.
+2. **No test in TEST-01…26 has an outcome that would add a confirmed novel prediction.** The persona's "no winning branch" was slightly too strong. TEST-26 has a branch that would favour the framework over ΛCDM, but that branch is Cardassian-class prior art (Freese & Lewis 2002).
+3. **B4 is the one runnable bet that could win, and its record was wrong.** The ledger called B4 "confirmed (r = 0.994)" for the homogeneous case, but the r measured correlation, not the claimed proportionality. Its own five data points fit p_crit ≈ 0.0151 + 0.0034/C, so 82% of the value is a constant offset. A strict p_crit ∝ 1/C is 2.9× off at C = 0.2. I corrected it in the ledger and seeded the heterogeneous run for the explorer as a three-way test against the known 1/λ_max threshold (Restrepo, Ott & Hunt 2005).
+
+## Site fixes
+- **"Which six?" table** at `/honest-assessment#refutation-ledger`, one row per refutation (data lives in `lib/ledger.ts`). The landing scoreboard, test catalog and Tier 1 page link to it. This covers the three personas who couldn't match "6 refutations" to test IDs.
+- **Lensing result** added to the TEST-10 card, the catalog, the badges and the Honest Assessment summary.
+- **Two physics wording errors fixed:**
+  - The CHSH ≤ 2 bound comes from locality, not no-signaling.
+  - TEST-09's "deep limit n → 2" only holds if every galaxy is measured at the same radius; measured at a fixed g_bar it gives n = 4. The verdict stands because the test used real radii.
+- **Honest Assessment:** "dp" is now defined as the project lead. I added a paragraph on MOND's known problems the framework inherits (clusters get strictly worse under a cap). I rewrote the stale bottom line, which said the framework's "best results come from cosmology". I also cleaned up the definition of the Withdrawn status.
+- **Beginner path:** a "stop here" box on /core-idea, and the Next link now lands on the Honest Assessment summary instead of the top of the 18,000-word page.
+- **Background agent's edits, which I reviewed:** glossary, /key-claims badge pills, Galaxy Plotter labels, a jargon gloss on the consciousness demo, and "which C?" notes. It wrote "excludes the cap under every convention"; I narrowed that to "all three candidate conventions", since the no-dark-matter cap isn't fully excluded.
+- **Lint:** 4 new rules for today's retired wordings (120 total). Run against the old pages, 2 of the 3 that target old text fire. The n → 2 rule is masked on its card because that line already contains an exemption word.
+
+## Decisions for dp
+- Retire the "convention-dependent" reason for keeping the count under review, and fold it into the dark-matter decision.
+- Decide whether a B4 result, which is about coupled systems rather than physics, could ever count as a confirmed novel prediction. If not, the site should say plainly that no registered test can produce one.
+
+## Other notes
+- **Not done:** 21 "pending dp" mentions are left as they are, now that "dp" is defined. Also deferred: a box explaining test IDs, a fake parent in the breadcrumbs, a redirect for /phase-boundary-visualizer, and re-badging TEST-04a (that one is dp's call).
+- **Unavailable:** the Gmail, Calendar and Drive connectors need authorising in claude.ai settings. The playwright server failed to connect because `npx` isn't on PATH. Neither was needed today.
+
+## So what?
+The fix for the headline asterisk was already sitting in the explorer's findings; the maintainer loop is what's lagging. The next maintainer session should start by checking for explorer actions older than 7 days. I also saved that as a memory.
+
+The more important point is item 2: none of the registered tests can raise the confirmed-prediction count. So the past month's careful auditing of refutations can't change the number the ledger exists to track. B4 is the cheap place where a positive result is still possible.

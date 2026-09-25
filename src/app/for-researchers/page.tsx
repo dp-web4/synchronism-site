@@ -581,7 +581,7 @@ export default function ForResearchers() {
             <ValidationBadge status="failed" />
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
-            Failed: S &le; 2 in every no-signaling construction built (executed 2026-06-21 / 2026-07-06). It is counted among
+            Failed: S &le; 2 in every construction built (executed 2026-06-21 / 2026-07-06). The local arm stays at 2 because it is local (factorisable): that is Bell&apos;s theorem. No-signaling alone would allow up to 2&radic;2 (quantum) or 4 (a PR box). The two nonlocal arms stay at 2 for a construction reason: their grid mixing turned out to be equivalent to relabelling the measurement angles. (Wording corrected 2026-09-25; it previously read &ldquo;every no-signaling construction&rdquo;, which a graduate-physics reader correctly flagged as wrong: the bound comes from locality, not from no-signaling.) It is counted among
             the 6 as a theorem-level check, not as an executed refutation of the substrate class.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>

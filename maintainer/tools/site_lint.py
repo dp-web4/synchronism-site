@@ -23,6 +23,15 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-09-25 (maintainer): CHSH bound attributed to no-signaling; fixed-radius n -> 2 as universal; stale bottom line
+    (r"every no-signaling construction built", "2026-09-25",
+     "the CHSH S <= 2 bound comes from locality (factorisability), not no-signaling; quantum and PR boxes are no-signaling above 2"),
+    (r"deep limit is n \u2192 2 \(verified numerically", "2026-09-25",
+     "n -> 2 holds only at a common measurement radius; a Keplerian law gives n = 2/(1-alpha), 4 at fixed g_bar"),
+    (r"best results come from\s+cosmology", "2026-09-25",
+     "the ledger has the cosmology sector as LCDM where it lives and excluded where it differs"),
+    (r"exclude[sd]? the (ceiling|cap) under every (convention|choice)\b", "2026-09-25",
+     "lensing excludes all three Omega_m-based caps; the no-CDM 1/Omega_b = 20.3 cap passes at 1e-14 with allowances"),
     # --- retired 2026-09-24 (maintainer): meta-statements that drifted; cross-sector gamma; EFE direction; rho_crit restatement
     (r"independently pin the framework", "2026-09-24",
      "galaxy gamma=0.489 is acceleration-keyed, cosmology gamma is mean-density-keyed: two variables, not one parameter pinned twice"),

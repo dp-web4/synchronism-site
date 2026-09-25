@@ -76,3 +76,78 @@ export const A2ACW_CALIBRATION_SET = 'Dirac 1928, Bell 1964, BCS 1957, Higgs 196
  *  not counted. */
 export const REGISTERED_TESTS = 24;
 export const POST_REGISTRY_TESTS = ['TEST-25', 'TEST-26'];
+
+/**
+ * The six executed refutations, one row each, in one place (2026-09-25). Three visitor personas
+ * on 2026-09-25 could not map "6 refutations" to a list of IDs on any single page: the catalog
+ * named 4 items, the 5th was unnumbered elsewhere, roots were named by mechanism, and "5 executed"
+ * on Tier 1 meant a different set. Rendered by <RefutationLedger /> on /honest-assessment#refutation-ledger;
+ * every scoreboard links there. `whichC` follows the archive's 2026-08-24 three-C mapping
+ * (#1,#2 → C_a floored; #3,#5 → C_g; #4 → C_ρ; #6 → no C).
+ */
+export interface RefutationRow {
+  n: number;
+  what: string;
+  ids: string;
+  root: string;
+  whichC: string;
+  data: string;
+  convention: string;
+}
+
+export const REFUTATION_ROWS: RefutationRow[] = [
+  {
+    n: 1,
+    what: 'BTFR slope: a capped boost cannot give the observed mass–velocity slope',
+    ids: 'TEST-09',
+    root: 'Boost ceiling (same inequality as #2)',
+    whichC: 'C_a, acceleration-keyed, floored at Ω_m',
+    data: '123 SPARC rotation curves',
+    convention: 'Registered kill fires only at B_max = 1/Ω_m (not at the two baryon-budget ceilings). The ceiling itself is excluded at every Ω_m-based convention by the weak-lensing RAR (#1–#2 note below).',
+  },
+  {
+    n: 2,
+    what: 'Dwarf dark-matter fractions: 69% of galaxies exceed the 68.5% cap',
+    ids: 'TEST-10',
+    root: 'Boost ceiling (same inequality as #1)',
+    whichC: 'C_a, acceleration-keyed, floored at Ω_m',
+    data: '153 SPARC rotation curves',
+    convention: 'Headline figure is for 1/Ω_m; convention-free on SPARC, B_max ≲ 14 is excluded. Lensing: as #1.',
+  },
+  {
+    n: 3,
+    what: 'RAR transition shape at the framework\'s own γ = 2 (ΔBIC = +184)',
+    ids: 'unnumbered (closed 2026-05-21)',
+    root: 'The γ = 2 pin',
+    whichC: 'C_g, keyed on observed acceleration',
+    data: 'SPARC radial acceleration relation (2,807 points)',
+    convention: 'None. With γ free the fit lands on MOND\'s simple μ (a reparametrization, not a refutation).',
+  },
+  {
+    n: 4,
+    what: 'Environment: void galaxies do not sit high on the RAR (r² = 0.0001 vs a registered > 20%)',
+    ids: 'TEST-01 / TEST-03s / TEST-05 (one run; the archive calls it TEST-08)',
+    root: 'A refuted registration (S177\'s > 20% amplitude, which C(ρ)\'s own lever never predicted)',
+    whichC: 'C_ρ, density-keyed',
+    data: 'SPARC + Cosmicflows-4 density field',
+    convention: 'None.',
+  },
+  {
+    n: 5,
+    what: 'Cassini/SPARC squeeze: no γ fits galaxies and the Solar System together (+17.95σ)',
+    ids: 'TEST-25',
+    root: 'Inherited from MOND (McGaugh\'s own RAR function fails the same instrument by +15.9 to +20.9σ)',
+    whichC: 'C_g, keyed on observed acceleration',
+    data: 'Cassini quadrupole bound + SPARC',
+    convention: 'None.',
+  },
+  {
+    n: 6,
+    what: 'Bell/CHSH: the substrate constructions stay at S ≤ 2 (quantum needs 2√2)',
+    ids: 'Bet B1 (not a TEST ID)',
+    root: 'Bell\'s theorem (local arm); two nonlocal constructions null',
+    whichC: 'none (no C function involved)',
+    data: 'Construction check, not external data',
+    convention: 'None.',
+  },
+];

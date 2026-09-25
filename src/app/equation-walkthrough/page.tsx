@@ -128,6 +128,16 @@ export default function EquationWalkthrough() {
           <p style={{ color: 'var(--color-accent-violet)', fontSize: '0.85rem', marginTop: '1rem', fontWeight: 500 }}>
             {current.key}
           </p>
+
+          {/* "Which C?" note at every step that quotes the SPARC γ ≈ 0.49 (visitor 2026-09-25). */}
+          {/0\.49/.test(current.explanation + current.key) && (
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.75rem', borderLeft: '2px solid #f59e0b', paddingLeft: '0.6rem' }}>
+              <strong style={{ color: '#f59e0b' }}>Which C?</strong> The SPARC-fitted &#x03B3; &#x2248; 0.49 came from the
+              acceleration-keyed form (C keyed on g/a&#x2080;), not the density-keyed C(&#x03C1;) this tool teaches; on density
+              the SPARC fit drives &#x03B3; toward 0.05. See{' '}
+              <Link href="/glossary#which-c-which" style={{ color: 'var(--color-accent-blue)' }}>Which C? Which &#x03B3;?</Link>
+            </p>
+          )}
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>

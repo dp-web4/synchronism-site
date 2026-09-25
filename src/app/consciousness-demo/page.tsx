@@ -80,8 +80,10 @@ export default function ConsciousnessDemo() {
           <strong style={{ color: '#ef4444' }}>What the one cited test actually measured (correction 2026-07-08):</strong>{' '}
           <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
           Session 63 — the only empirical test ever cited for this threshold — did not
-          measure Synchronism&apos;s C. It measured SNARC <code>salience_total</code>: a weighted mean of
-          five hand-coded salience heuristics, computed by <em>one shared scoring function</em> across
+          measure Synchronism&apos;s C. It measured SNARC <code>salience_total</code> &mdash; in plain words, a
+          hand-coded salience score from the lab&apos;s own agent-memory tool, built from five components (surprise,
+          novelty, arousal, conflict, reward). It is not a measure of neural or physical coherence. Technically, a weighted mean of
+          those five hand-coded salience heuristics, computed by <em>one shared scoring function</em> across
           8 agent instances (so the instances are not independent). That variable&apos;s operating mean
           was 0.640 &plusmn; 0.0196 (SD; corrected 2026-07-30 &mdash; the ±0.018 previously printed here was
           inconsistent with its own t-statistic, caught by a visitor persona backing SD out of t = &Delta;/SEM),
@@ -122,7 +124,8 @@ export default function ConsciousnessDemo() {
           not empirical</strong>: all 8 share the same framework assumptions and the same unvalidated calibration,
           and none of them measures C. Every approach that picks the midpoint of a [0,1)-bounded output range will
           land near 0.50 by construction. No calibration procedure exists to map actual EEG, fMRI,
-          or IIT-&#x03A6; measurements to the C-axis.
+          or IIT-&#x03A6; measurements to the C-axis &mdash; and IIT&apos;s &#x03A6; is not bounded on [0,&nbsp;1) in
+          the first place, so placing it at a &ldquo;midpoint&rdquo; needs a normalisation this page does not supply.
           <p style={{ margin: '0.75rem 0 0 0' }}>
             <strong style={{ color: '#f59e0b' }}>Correction (2026-09-07) &mdash; the geometry argument this
             caveat used to make was false at the framework&apos;s own best-fit &#x03B3;.</strong> Before that date this

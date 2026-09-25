@@ -5,6 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
+import RefutationLedger from '@/components/RefutationLedger';
 
 // One-sentence translation for readers without the statistics vocabulary (added 2026-07-08
 // after a visitor log showed casual readers skim the second half of this page entirely).
@@ -37,7 +38,9 @@ export default function HonestAssessment() {
         a researcher); the <em>maintainer</em> track fixes the site; the <em>explorer</em> track does research. When a note
         says &ldquo;a graduate-physics reader&rdquo; or &ldquo;a visitor researcher persona&rdquo;, it means one of those AI
         passes, not an outside human. No outside human domain expert has audited these claims; the external feedback so far
-        has come from other AI systems (Grok, DeepSeek, GPT), relayed by the people who ran them.
+        has come from other AI systems (Grok, DeepSeek, GPT), relayed by the people who ran them. The one human decision-maker is
+        the project lead, written <strong>&ldquo;dp&rdquo;</strong> on this site (github.com/dp-web4): &ldquo;pending dp&rdquo; or &ldquo;gates on dp&rdquo; means a
+        governance decision, such as whether the headline count changes, that the AI tracks may recommend but do not make.
       </p>
 
       <div id="if-you-read-nothing-else" className="card" style={{ scrollMarginTop: '5rem', maxWidth: '65ch', marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-warm)', fontSize: '0.9rem' }}>
@@ -45,7 +48,7 @@ export default function HonestAssessment() {
           If you read nothing else (this page is ~18,000 words)
         </p>
         <ul style={{ margin: 0, paddingLeft: '1.2rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-          <li><strong>The one equation did not hold as stated.</strong> Every decisive test it ran on real data, it lost &mdash; 6 refutations executed (a count under review: two of the six are convention-dependent, and not all six are independent), 0 predictions confirmed.</li>
+          <li><strong>The one equation did not hold as stated.</strong> Every decisive test it ran on real data, it lost &mdash; 6 refutations executed, 0 predictions confirmed. <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six?</a> Two of them (TEST-09, TEST-10) fired on galaxy rotation data only under the site&apos;s choice of cap; galaxy weak-lensing data exclude the cap under all three candidate choices. Rows #1 and #2 share one cause, so no more than five are independent. The count itself is under review.</li>
           <li><strong>Where it fits galaxies, it is MOND in different notation</strong> (MOND = the 40-year-old rival theory that tweaks gravity instead of adding dark matter). Let the dial that sets how sharp its S-curve is be fitted freely, and the equation lands on MOND&apos;s own formula; set that dial to the value the framework itself chose (γ = 2) and it fails.</li>
           <li><strong>Its two genuinely different claims both failed.</strong> A hard cap on the gravity boost (galaxy edges need 4× more than the cap allows) and a switch that turns on with local density instead of acceleration (the data reject that at every turn-on point tried).</li>
           <li><strong>&ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence.</strong> It is a classical &ldquo;how much does the system act as one thing&rdquo; score. See{' '}
@@ -61,6 +64,8 @@ export default function HonestAssessment() {
         <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary &rarr;</Link>{' '}
         (a reference: look terms up as you need them).
       </div>
+
+      <RefutationLedger />
 
       <details id="validation-badge-definitions" style={{ marginBottom: '2rem', maxWidth: '65ch' }}>
         <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.9rem' }}>
@@ -129,7 +134,7 @@ export default function HonestAssessment() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
           <strong>Kill Criterion Triggered</strong><span>A pre-registered falsification threshold was crossed. Carries Failed badge. Stronger than &ldquo;Failed&rdquo; alone because failure was quantified in advance.</span>
           <strong>MOND-shared</strong><span>RETIRED (class audited 2026-07-14/15). Asserted &ldquo;a positive result confirms Synchronism AND MOND equally.&rdquo; All three carriers dissolved when executed or adjudicated: TEST-09 (BTFR — Failed; kill fired at B<sub>max</sub> = 1/&Omega;<sub>m</sub>, |&Delta;n| = 0.41 &gt; 0.3, but convention-dependent: the 2026-09-18 ceiling sweep finds it does not fire at the two baryon-budget ceilings, so it does not survive its own pre-fixed rule; convention-free, B<sub>max</sub> &#8818; 5.4 is excluded; whether it stays in the count of 6 is pending dp), TEST-10 (dwarf DM fractions — 69% of SPARC exceeds the framework&apos;s 68.5% ceiling), TEST-05 (environment levers differ by ~50–5,000×). A tie badge was the site&apos;s only unfalsifiable label — it carried no execution burden and sounded modest. New rule: a claimed tie carries the same execution burden as a claimed kill (both predictions computed, agreement shown within the data&apos;s discriminating power).</span>
-          <strong>Withdrawn</strong><span>Framework disowned the test — not from data refutation, but from internal contradiction, unmotivated amplitude, or supersession. Carries no badge (never adjudicated). TEST-04 (BAO).</span>
+          <strong>Withdrawn</strong><span>Framework disowned the test — not from data refutation, but from internal contradiction or an unmotivated amplitude. A test replaced by a later formulation is Superseded, not Withdrawn (overlap removed 2026-09-25). Carries no badge (never adjudicated). TEST-04 (BAO).</span>
           <strong>Self-Eliminating-or-Tie</strong><span>No measurement outcome selects Synchronism over the standard alternatives — either the signal is below systematics reach, or both outcomes (null and confirmed anomaly) are covered by Newton or MOND respectively. TEST-02 (wide binaries).</span>
           <strong>Sign Correction</strong><span>Annotation marking that the prediction direction on this page was corrected after initial publication. Not a verdict badge — a correction provenance marker. TEST-02 (2026-06-06).</span>
           <strong>Null-Class</strong><span>The result achieves the same or better fit using a structurally simpler null model (e.g., polynomial in atomic number Z). The match is evidence of monotonicity in the target variable, not framework-specific physics. Chemistry correlation explorer.</span>
@@ -1609,7 +1614,7 @@ export default function HonestAssessment() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>BAO (Baryon Acoustic Oscillation) Modulation — Withdrawn</h3>
-              <ValidationBadge status="superseded" label="Withdrawn 2026-05-04 (TEST-04)" />
+              <span style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', border: '1px dashed var(--color-dark-border)', borderRadius: '0.25rem', padding: '0.1rem 0.45rem' }}>Withdrawn 2026-05-04 (TEST-04), an operational state, not a badge</span>
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               Formerly listed here as &ldquo;testable with existing survey data.&rdquo; That was stale:
@@ -1789,6 +1794,17 @@ export default function HonestAssessment() {
           <li><strong>S₈ tension (receding):</strong> KiDS/DES historically measured σ₈ lower than Planck CMB predicts. Synchronism&apos;s σ₈ prediction (0.76) was calibrated to this tension in Session 102. However, DES Y3 6×2pt and KiDS-Legacy (2024–2025) are pulling S₈ back toward Planck, weakening the tension. Synchronism&apos;s calibration anchor is a transient state, not a stable observational target — which makes TEST-04a post-hoc against a moving baseline.</li>
           <li><strong>Primordial non-Gaussianity (fNL):</strong> DESI and future surveys constrain non-Gaussianity from large-scale structure. No coherence-based prediction exists.</li>
         </ul>
+        <p id="inherited-mond-problems" style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', scrollMarginTop: '5rem' }}>
+          <strong>MOND&apos;s known problems, inherited and made no better (added 2026-09-25, visitor researcher persona).</strong>{' '}
+          In galaxies the framework is MOND&apos;s interpolating function with a cap on the boost. A capped boost is never larger than
+          MOND&apos;s anywhere, so the framework inherits MOND&apos;s standing problem in galaxy clusters (MOND still needs roughly twice the
+          observed baryons there; Sanders 2003, Pointecouteau &amp; Silk 2005) and can only make it worse. The Bullet Cluster&apos;s
+          lensing&ndash;gas offset and the CMB peak heights need something that behaves like cold dark matter. The framework&apos;s own
+          dark-energy sector already needs cold dark matter put in by hand (2026-09-22), and adding a real halo on top of the galaxy
+          boost counts it twice (+0.28 dex on SPARC, explorer 2026-09-22). Which dark-matter story the framework keeps is an open
+          decision (see <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>the Verdict</a>). Until it is made, none of
+          these three problems has an answer here.
+        </p>
         <div id="dark-energy" style={{
           background: 'rgba(139,92,246,0.07)',
           border: '1px solid rgba(139,92,246,0.3)',
@@ -1935,11 +1951,21 @@ export default function HonestAssessment() {
       <section className="section content-width">
         <h2 id="bottom-line">Bottom Line</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Synchronism is not a theory of everything. It&apos;s a research tool that maps density
-          to coherence and sometimes produces useful insights. The coherence function works well
-          as a classification tool (what regime is a system in?) but poorly as a predictive tool
-          (what exactly will happen?). Its best results come from cosmology; its worst from
-          condensed matter.
+          Synchronism is not a theory of everything, and as physics it has no confirmed novel prediction.
+          Where its equation fits data, it is an existing theory in new notation: MOND&apos;s interpolating
+          function for galaxies, and a modified Friedmann equation of a published class (Cardassian, Freese &amp;
+          Lewis 2002) that is &Lambda;CDM wherever it fits. Where it differs from those theories, the data rejected it.
+        </p>
+        <PlainTerms>
+          It is basically an existing rival theory of gravity plus one number the framework chose (a cap on how much
+          gravity can be boosted), and the tests of that number failed.
+        </PlainTerms>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          What remains is a frame-level wager (a single-observer model of the universe in which measurement is
+          synchronization; see <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>),
+          a short list of untested bets, and a public record of how the quantitative claims were tested and lost.
+          (This paragraph previously read, until 2026-09-25, as an older one saying the framework&apos;s &ldquo;best results come from
+          cosmology&rdquo;; the ledger now has the cosmology sector as &Lambda;CDM where it lives and excluded where it differs.)
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
           &ldquo;All models are wrong; some are useful.&rdquo; &mdash;{' '}

@@ -34,7 +34,12 @@ export default function KeyClaims() {
             <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
               validation badge taxonomy
             </Link>
-            {' '}&mdash; canonical reference on the Honest Assessment page.
+            {' '}&mdash; canonical reference on the Honest Assessment page. Text after a dash inside a badge is a
+            finding descriptor, not a separate badge; descriptors without a badge of their own appear in italics under
+            it. Definitions:{' '}
+            <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
+              /honest-assessment#validation-badge-definitions
+            </Link>.
           </p>
         </div>
 
@@ -48,22 +53,17 @@ export default function KeyClaims() {
               <span style={{ color: 'var(--color-text-muted)', marginRight: '0.5rem' }}>1.</span>
               Is Quantum Mechanics Synchronization Physics?
             </h2>
-            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
-              <ValidationBadge status="speculative" />
-              <span style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
-                untestable as stated without a scan period &mdash; ontological reframe
-              </span>
-              <span style={{
-                fontSize: '0.75rem',
-                padding: '0.2rem 0.6rem',
-                borderRadius: '1rem',
-                background: 'rgba(167, 139, 250, 0.15)',
-                color: 'var(--color-accent-violet)',
-                fontWeight: 500,
-                whiteSpace: 'nowrap',
-              }}>
-                New Ontology
-              </span>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.25rem' }}>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                {/* Category tag, not a badge (restyled 2026-09-25: it was a badge-shaped pill outside the taxonomy). */}
+                <span style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-text-muted)' }}>
+                  Category: new ontology
+                </span>
+                <ValidationBadge status="speculative" />
+              </div>
+              <em style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
+                untestable as stated without a scan period; an ontological reframe
+              </em>
             </div>
           </div>
 
@@ -292,18 +292,23 @@ export default function KeyClaims() {
               <span style={{ color: 'var(--color-text-muted)', marginRight: '0.5rem' }}>2.</span>
               Could Consciousness Have an Equation?
             </h2>
-            <span style={{
-              fontSize: '0.75rem',
-              padding: '0.2rem 0.6rem',
-              borderRadius: '1rem',
-              background: 'rgba(245, 158, 11, 0.15)',
-              color: '#f59e0b',
-              fontWeight: 500,
-              whiteSpace: 'nowrap',
-            }}>
-              Speculative (parent claim, unfalsifiable as stated) &mdash; threshold untestable as stated
-              (the one cited test measured a different variable; corrected 2026-07-17)
-            </span>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.25rem', maxWidth: '26rem' }}>
+              <span style={{
+                fontSize: '0.75rem',
+                padding: '0.2rem 0.6rem',
+                borderRadius: '1rem',
+                background: 'rgba(245, 158, 11, 0.15)',
+                color: '#f59e0b',
+                fontWeight: 500,
+                whiteSpace: 'nowrap',
+              }}>
+                Speculative
+              </span>
+              <em style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', textAlign: 'right' }}>
+                parent claim unfalsifiable as stated; threshold untestable as stated (the one cited test measured a
+                different variable; corrected 2026-07-17)
+              </em>
+            </div>
           </div>
 
           <div className="equation" style={{ marginBottom: '0.25rem', fontSize: '1rem' }}>

@@ -125,7 +125,8 @@ export default function WhatSynchronismIsNot() {
             <li><strong>Not just new labels, and not just philosophy.</strong> The claim is that quantum behaviour, consciousness and galaxy motion are one phenomenon at different scales, with concrete tests attached. That is either wrong or important &mdash; and it can fail.</li>
           </ul>
           <p style={{ margin: '0.6rem 0 0', color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-            The cards below give the detail and use technical terms (QFT, GR, ΛCDM, CMB, EFE, A2ACW, &ldquo;compander,&rdquo;
+            The cards below give the detail and use technical terms (<Link href="/glossary#QFT" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>QFT</Link>, <Link href="/glossary#GR" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>GR</Link>,{' '}
+            <Link href="/glossary#%CE%9BCDM" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>ΛCDM</Link>, <Link href="/glossary#CMB" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>CMB</Link>, <Link href="/glossary#EFE" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>EFE</Link>, A2ACW, &ldquo;compander,&rdquo;
             Lorentz invariance&hellip;). Each is defined in the{' '}
             <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>; you can skip them and
             keep the five points above.
@@ -220,9 +221,14 @@ export default function WhatSynchronismIsNot() {
           not empirically novel. That&apos;s a real contribution — just not the one the landing page implies.
         </p>
 
-        <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <Link href="/honest-assessment" className="btn-primary">
-            Honest Assessment
+        <p style={{ marginTop: '2rem', marginBottom: 0, color: 'var(--color-text-secondary)', fontSize: '0.92rem' }}>
+          <strong>Beginner path, next step:</strong> read only the{' '}
+          <Link href="/honest-assessment#if-you-read-nothing-else" style={{ color: 'var(--color-accent-blue)' }}>&ldquo;If you read nothing else&rdquo; box on Honest Assessment</Link>{' '}
+          (~4 min). The rest of that page is a long audit, there for when you want the evidence behind the verdict.
+        </p>
+        <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+          <Link href="/honest-assessment#if-you-read-nothing-else" className="btn-primary">
+            Honest Assessment: the short version
           </Link>
           <Link href="/research-philosophy" className="btn-secondary">
             Research Philosophy

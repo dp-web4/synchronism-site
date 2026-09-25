@@ -167,6 +167,17 @@ export default function CoherenceFunction() {
             the special point of the function family (MOND&apos;s simple &mu; in one variable, &Lambda; in the other). The variables differ, so
             that is a coincidence of notation, not a cross-sector measurement.
           </p>
+          <p style={{ fontSize: '0.82rem', color: 'var(--color-text-secondary)', margin: '0.5rem 0 0' }}>
+            <strong>The knees do not match either.</strong> At &#x03B3; = &frac12; the cosmology sector fixes
+            &#x03C1;<sub>crit</sub> = &#x03C1;<sub>&Lambda;</sub>/2 &asymp; 4&times;10<sup>&minus;8</sup> M<sub>&#x2609;</sub>/pc&sup3;
+            (&#x03C1;<sub>&Lambda;</sub> = 0.685 &times; 1.26&times;10<sup>&minus;7</sup> M<sub>&#x2609;</sub>/pc&sup3;), while the
+            Galaxy Plotter&apos;s DDO&nbsp;154 uses &#x03C1;<sub>crit</sub> = 0.029 &times; 47&sup2; &asymp; 64 M<sub>&#x2609;</sub>/pc&sup3;
+            &mdash; about 10<sup>9</sup> apart. With the cosmic knee, every galaxy disc (&#x03C1; ~ 10<sup>&minus;2</sup>&ndash;1
+            M<sub>&#x2609;</sub>/pc&sup3;) sits at x = &#x03C1;/&#x03C1;<sub>crit</sub> ~ 10<sup>5</sup>&ndash;10<sup>7</sup>, where
+            C &asymp; 1: under the division wiring (g<sub>bar</sub>/C, the one the cosmology uses) that is plain Newtonian gravity, no missing mass explained. So the two sectors share the function&apos;s form
+            only, not its knee. Can one &#x03C1;<sub>crit</sub> serve both? On these numbers, no.
+            (Credit: a graduate-physics visitor persona, 2026-09-25.)
+          </p>
           <p style={{ margin: '0.4rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             The wiring (how C enters gravity: division g<sub>bar</sub>/C, the field equation, or the plotter&apos;s quadrature
             display) is a separate choice on top of each row; see item 2. The headline equation at the top of this page is

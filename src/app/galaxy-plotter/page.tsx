@@ -206,13 +206,16 @@ export default function GalaxyPlotter() {
           uses one global a₀ for all galaxies.
           <br /><strong>Which wiring (added 2026-09-24):</strong> the violet curve adds the coherence term in quadrature,
           v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C)&sup2;. That display wiring takes the observed V<sub>flat</sub> as an
-          input, and with C &asymp; 0.001 it does nothing. The ledger&apos;s tests use the division wiring, g = g<sub>bar</sub>/C, which
+          input, and with C &asymp; 0.001 it does nothing. It is also circular by construction: if C ever approached 1,
+          the &ldquo;prediction&rdquo; would simply hand back the observed V<sub>flat</sub> (extended 2026-09-25 after a
+          graduate-physics visitor flagged it). The ledger&apos;s tests use the division wiring, g = g<sub>bar</sub>/C, which
           at the same C fails the <em>other</em> way: about 10&sup3;&times; too much gravity, roughly 30&times; in velocity, far off the
           top of this plot. So the tool shows one failure mode (inertness), and the tested law has the opposite one (over-boost).
           <br />So the tool is best read not as &ldquo;the theory&apos;s prediction&rdquo; but as a
           <strong> working demonstration that the equation is inert at its published calibration</strong> &mdash; which
           is exactly what the DDO 154 annotation on this page says in one line (<em>max C on this disk: 0.001 &mdash;
-          inert by construction</em>). At V<sub>flat</sub>&nbsp;=&nbsp;47&nbsp;km/s that calibration puts the knee at
+          the equation never switches on here: this galaxy is too spread out</em>; this read &ldquo;inert by
+          construction&rdquo; until 2026-09-25). At V<sub>flat</sub>&nbsp;=&nbsp;47&nbsp;km/s that calibration puts the knee at
           64&nbsp;M<sub>&#x2609;</sub>/pc&sup3; against disc densities of order 10<sup>&minus;2</sup>: no galaxy in the
           dropdown can lift off the Newtonian baseline, for any of them.
           <br /><strong>One more cross-link the plot owes you:</strong> the green MOND reference uses the simple-&nu;
@@ -441,7 +444,7 @@ export default function GalaxyPlotter() {
           green is the failure this tool shows.
           <br /><strong>Two assumptions behind that picture:</strong>
           <ul style={{ margin: '0.35rem 0 0', paddingLeft: '1.2rem' }}>
-            <li>&ldquo;Inert by construction&rdquo; is a property of the calibration <strong>A = 0.029</strong>, not of
+            <li>&ldquo;The equation never switches on here&rdquo; is a property of the calibration <strong>A = 0.029</strong>, not of
               the equation&apos;s form. <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
               Derivations</Link> records that A = 0.029 does not follow from its own stated formula, which gives
               A &asymp; 4.6&times;10<sup>&minus;5</sup>. At that value the knee sits inside dwarf-disc densities: a
@@ -493,7 +496,13 @@ export default function GalaxyPlotter() {
             only for the V<sup>0.5</sup> law that coefficient was originally derived under, not for the V&sup2; law drawn
             here. The green MOND curve uses V<sub>flat</sub> too (BTFR mass 47&middot;V<sub>flat</sub><sup>4</sup>), so its
             flat outer level is also largely set by construction: deep-MOND V<sup>4</sup> = G&middot;M<sub>b</sub>&middot;a&#x2080;
-            returns 0.93&middot;V<sub>flat</sub> for every galaxy here. What the green curve adds is the <em>shape</em> on
+            returns 0.93&middot;V<sub>flat</sub> for every galaxy here. Why 0.93 and not 1: the BTFR normalization
+            A&nbsp;=&nbsp;47&nbsp;M<sub>&#x2609;</sub>&nbsp;km<sup>&minus;4</sup>&nbsp;s<sup>4</sup> is empirical, and in the flat deep-MOND
+            limit it corresponds to a&#x2080; &asymp; 1.6&times;10<sup>&minus;10</sup> m/s&sup2;, while the curve uses
+            a&#x2080; = 1.2&times;10<sup>&minus;10</sup> (where 1/(G&middot;a&#x2080;) &asymp; 63 M<sub>&#x2609;</sub>&nbsp;km<sup>&minus;4</sup>&nbsp;s<sup>4</sup>;
+            (47/63)<sup>1/4</sup> &asymp; 0.93). Because the mass is set from V<sub>flat</sub>, MOND&apos;s agreement at large
+            radius is partly circular too; the non-circular version would use SPARC&apos;s per-galaxy mass models
+            (public) instead of a BTFR mass. What the green curve adds is the <em>shape</em> on
             the way up, with no per-galaxy knob. See{' '}
             <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>.
           </div>
@@ -603,9 +612,9 @@ export default function GalaxyPlotter() {
             <circle cx={pad.left + 20} cy={pad.top + 15} r="4" fill="#38bdf8" />
             <text x={pad.left + 30} y={pad.top + 19} fill="#38bdf8" fontSize="10">Observed</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 30} x2={pad.left + 20 + 8} y2={pad.top + 30} stroke="#8b5cf6" strokeWidth="2.5" />
-            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism, quadrature branch: v&sup2; = v<tspan baselineShift="sub" fontSize="7">b</tspan>&sup2; + (V<tspan baselineShift="sub" fontSize="7">flat</tspan>&middot;C(&#x03C1;))&sup2;, &#x03B3;=2 (max C on this disk: {maxC.toFixed(3)} &mdash; inert by construction)</text>
+            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism, quadrature branch: v&sup2; = v<tspan baselineShift="sub" fontSize="7">b</tspan>&sup2; + (V<tspan baselineShift="sub" fontSize="7">flat</tspan>&middot;C(&#x03C1;))&sup2;, &#x03B3;=2 (max C on this disk: {maxC.toFixed(3)} &mdash; the equation never switches on here: this galaxy is too spread out)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.75" />
-            <text x={pad.left + 30} y={pad.top + 49} fill="#f59e0b" fontSize="10" opacity="0.9">Illustration only — what a working boost would look like; not a prediction of any theory</text>
+            <text x={pad.left + 30} y={pad.top + 49} fill="#f59e0b" fontSize="10" opacity="0.9">NOT the theory — illustration stand-in: hand-drawn to show what a working boost would look like</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />
             <text x={pad.left + 30} y={pad.top + 64} fill="#22c55e" fontSize="10">MOND (real simple-&#x03BD;, BTFR mass, no per-galaxy tuning)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 75} x2={pad.left + 20 + 8} y2={pad.top + 75} stroke="#6b7280" strokeWidth="1.5" strokeDasharray="3 2" />

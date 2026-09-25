@@ -45,7 +45,7 @@ export default function PathNav({ currentPath }: { currentPath: string }) {
               </Link>
             )}
             {next ? (
-              <Link href={next.href} style={{ color: 'var(--color-text-secondary)', textDecoration: 'none' }}>
+              <Link href={next.anchor ? `${next.href}#${next.anchor}` : next.href} style={{ color: 'var(--color-text-secondary)', textDecoration: 'none' }}>
                 Next: {next.title} &rarr;
               </Link>
             ) : (

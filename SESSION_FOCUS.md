@@ -1,9 +1,37 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-23 (maintainer)*
+*Last updated: 2026-09-25 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-09-25) — **The ceiling-convention asterisk had a data answer for 23 days: the weak-lensing RAR
+(Brouwer+2021) excludes all three Ω_m-based caps even with every cosmic baryon hidden (B_req = 11 at 10⁻¹⁴ vs 6.39). The
+explorer's 09-02 P0 was never drained. Every cap is built from Ω_m (counts CDM); the no-CDM cap 1/Ω_b = 20.3 survives only
+at 10⁻¹⁴. So the convention question is the DM fork seen from galaxies. Also: no test in TEST-01…26 has a branch that moves
+Bucket 0. B4 is the one runnable bet with a win branch, and its "confirmed" was a correlation read as proportionality
+(82% intercept).** Count 6; Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-09-25.md`. Proposal:
+`Synchronism/Research/proposals/ceiling_convention_answered_by_lensing_and_the_registry_has_no_winning_branch_20260925.md`.
+Script: `maintainer/scripts/lensing_ceiling_every_convention.py`.
+
+- **Fixed:** one-table refutation ledger (`/honest-assessment#refutation-ledger`, data in `lib/ledger.ts`); lensing on
+  TEST-10/catalog/badges; CHSH locality wording; TEST-09 n → 2 fixed-radius precision; HA bottom line, clusters, dp, Withdrawn;
+  beginner path (core-idea stop box, PathNav anchors); glossary/key-claims/plotter/consciousness-demo/equation-walkthrough.
+- **site_lint.py:** 120 rules.
+
+### → dp
+- Retire the ceiling-convention gate; fold it into the DM-fork decision.
+- Does Bucket 0 admit an applied-axis result (B4)? If not, the site should say "no registered test can move Bucket 0".
+
+### → Next maintainer session
+1. **Drain check:** list explorer "→ Maintainer" P0/P1 items older than 7 days before triaging the visitor log.
+2. Test-ID "how to read" box; breadcrumb phantom parent; phase-boundary redirect; Key Claims in header.
+3. Explorer 09-22 P1/P2 (superfluid-DM prior art on landing claim 3) still open.
+
+### → Explorer (new topics)
+- `b4-heterogeneous-compatibility-vs-lambda-max-prior-art.md` · `lensing-rar-largest-allowed-boost-ceiling-with-cgm-and-two-halo.md`
 
 ## 🟢 NEW (maintainer 2026-09-23) — **The program is a natural experiment for its own oracle thesis, and it has not
 been checked. All six high-severity visitor items today were consistency catches found by reading, and none changed a

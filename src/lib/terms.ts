@@ -319,7 +319,7 @@ export const terms: Record<string, TermDefinition> = {
   'badge-validated': {
     term: 'Validated',
     fullName: 'Validation Badge: Validated (Deprecated)',
-    brief: '\u26a0 Deprecated \u2014 no claim currently holds this badge. See Honest Assessment for the current badge system (Reparametrization, Failed, Untested, Speculative).',
+    brief: '\u26a0 Retired badge \u2014 no longer used; kept so old links resolve; nothing on the site currently earns it. See Honest Assessment for the current badge system (Reparametrization, Failed, Untested, Speculative).',
     explanation: '\u26a0 This badge is deprecated. None of the 9 audited claims survived (all 6 former "Validated" badges plus 3 swept later were demoted to Reparametrization or Failed); the audit was done by LLM agents, not an outside domain expert. "Validated" conflicts with the current stewardship discipline (nothing is honestly characterizable as established at this stage). In new content, use Active-MRH, Reparametrization, or the appropriate descriptive tag instead. Historical note: "Validated" meant the numbers agreed quantitatively with data \u2014 but agreement alone does not establish novelty; reparametrizations of known physics can "validate" without adding new physics.',
     learnMore: '/honest-assessment#validation-badge-definitions',
   },
@@ -354,7 +354,7 @@ export const terms: Record<string, TermDefinition> = {
   'badge-strongly-supported': {
     term: 'Strongly Supported',
     fullName: 'Validation Badge: Strongly Supported (Deprecated)',
-    brief: '\u26a0 Deprecated \u2014 conflicts with current stewardship discipline. Use Reparametrization, Untested, or Active-MRH instead.',
+    brief: '\u26a0 Retired badge \u2014 no longer used; kept so old links resolve; nothing on the site currently earns it. It conflicted with the stewardship discipline (nothing is characterized as established at this stage).',
     explanation: '\u26a0 This badge is deprecated. It conflicts with the stewardship principle that nothing is honestly characterizable as "established" at the current stage. Historical meaning: the data supported the claim with high significance but with caveats (prior art, limited R\u00b2, non-independent explanation). Existing usages are being migrated to the current badge system (Reparametrization, Failed, Untested, Speculative, Active-MRH). See Honest Assessment for the canonical badge definitions.',
     learnMore: '/honest-assessment#validation-badge-definitions',
   },
@@ -507,9 +507,15 @@ export const terms: Record<string, TermDefinition> = {
   'withdrawn': {
     term: 'Withdrawn (operational state)',
     fullName: 'Withdrawn \u2014 Prediction Retired (an operational state, not a badge; relabelled 2026-09-08 to match the canonical legend)',
-    brief: 'A prediction or test has been voluntarily retired because it was found to be contradicted by the framework itself, physically unmotivated, or replaced by a better formulation.',
-    explanation: 'A Withdrawn prediction means the framework itself has disowned the test \u2014 not because external data refuted it, but because internal analysis showed it was either (a) contradicted by another part of the framework, (b) unmotivated (no derivation of the predicted amplitude), or (c) superseded by a more precise test. In Synchronism\'s test catalog: TEST-04 (BAO coherence modulation) was withdrawn because (1) Session 107 contradicts it internally, (2) the predicted effect (10\u207b\u2074) is 600\u00d7 below standard nonlinear BAO shifts and thus unmotivated, and (3) the kill criterion of 10\u207b\u2075 is smaller than current measurement precision. Withdrawn differs from Failed: failure comes from data; withdrawal comes from the framework itself.',
+    brief: 'The framework disowned the test: not because data refuted it, but because internal analysis found it contradicted by another part of the framework or its predicted amplitude unmotivated. Carries no badge (never adjudicated).',
+    explanation: 'A Withdrawn test is one the framework itself has disowned \u2014 not because external data refuted it, but because internal analysis showed it was either (a) contradicted by another part of the framework or (b) unmotivated (no derivation of the predicted amplitude). A claim replaced by a better formulation is a different thing: that is the Superseded badge (this entry used to fold that case in; removed 2026-09-25 so the two terms no longer overlap). In Synchronism\'s test catalog: TEST-04 (BAO coherence modulation) was withdrawn because (1) Session 107 contradicts it internally, (2) the predicted effect (10\u207b\u2074) is 600\u00d7 below standard nonlinear BAO shifts and thus unmotivated, and (3) the kill criterion of 10\u207b\u2075 is smaller than current measurement precision. Withdrawn differs from Failed: failure comes from data; withdrawal comes from the framework itself.',
     learnMore: '/tier-1-existing',
+  },
+  'dp': {
+    term: 'dp',
+    fullName: 'The project lead (github.com/dp-web4)',
+    brief: 'The project lead and operator of Synchronism and this site. Governance decisions, such as changing the headline refutation count, are theirs to make.',
+    explanation: '\u201CPending dp\u201D or \u201Cgates on dp\u201D on this site means a question is awaiting the project lead\u2019s decision. Those decisions are recorded in the research repo\u2019s proposals (github.com/dp-web4/Synchronism, Research/proposals/). The AI tracks that maintain the site can flag and argue a change, but they do not make these calls. (Entry added 2026-09-25 after a visitor found \u201Cpending dp\u201D deciding a public headline number with dp never introduced.)',
   },
   'DD': {
     term: 'DD',

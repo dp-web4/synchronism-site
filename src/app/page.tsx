@@ -175,6 +175,10 @@ export default function Home() {
             reframed as synchronization physics. Consciousness given an equation. Dark matter as a coherence effect
             &mdash; tested on galaxy data and failed.
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 1rem', fontSize: '0.9rem', maxWidth: '60ch' }}>
+            <strong>Read the list bottom-up:</strong> the most exciting-sounding claims (consciousness, quantum mechanics as
+            synchronization) are the least tested; the one that was tested on data (dark matter in galaxies) failed.
+          </p>
           <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', fontSize: '0.85rem' }}>
             <span style={{ color: 'var(--color-accent-violet)' }}>
               <strong>1.</strong> Quantum mechanics as synchronization &mdash; <em>Speculative</em> (untestable as stated)
@@ -321,6 +325,11 @@ export default function Home() {
               <div style={{ flexBasis: '100%' }}>
                 Refutations executed <em style={{ color: 'var(--color-text-muted)' }}>(tests that could have killed the idea &mdash; and the idea failed them)</em>: <strong style={{ color: '#ef4444' }}>6</strong>{' '}
                 &mdash; <strong>in plain words: we ran six tests that could have shown it wrong, and it lost all six.</strong>{' '}
+                <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six? &rarr;</Link>{' '}
+                <span style={{ display: 'block', margin: '0.3rem 0', fontSize: '0.85em', color: 'var(--color-text-muted)' }}>
+                  Two of the six (TEST-09, TEST-10) were convention-dependent on SPARC; the weak-lensing RAR (Brouwer+2021) excludes the
+                  ceiling under every candidate convention (all three are built from &Omega;<sub>m</sub>) &mdash; see the <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>ledger</Link>.
+                </span>
                 <span style={{ display: 'block', margin: '0.35rem 0', padding: '0.35rem 0.6rem', background: 'rgba(167,139,250,0.08)', borderLeft: '2px solid var(--color-accent-violet)', borderRadius: '0.25rem' }}>
                   <strong>Why keep reading a theory with zero confirmed predictions?</strong> Because the autopsy is the
                   product: you watch an idea taken apart honestly, and learn what that rules out for any theory of the same
@@ -474,6 +483,7 @@ export default function Home() {
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>3,308</div>
                 <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>A2ACW research sessions</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>A session is one AI-to-AI adversarial-collaboration research run (AI agents challenging each other&apos;s claims). More sessions means more work done, not more evidence.</div>
               </div>
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>1,703</div>

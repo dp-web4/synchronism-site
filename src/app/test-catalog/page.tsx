@@ -54,8 +54,10 @@ export default function TestCatalog() {
         <strong>26 tests</strong> (24 in the original registry + 2 added later). There is no single page-level status, so
         each test carries its own badge on its tier page. <strong>Executed and Failed:</strong> TEST-09, TEST-10, TEST-25, and
         one environment run filed on TEST-03s (which also answers TEST-01 and TEST-05); the TEST-09 and TEST-10 kills
-        fire at the site&apos;s ceiling B<sub>max</sub> = 1/&Omega;<sub>m</sub> but are convention-dependent, and whether
-        they stay in the count of 6 is pending dp. <strong>Failed &mdash; underpowered as registered (not counted as a
+        fire at the site&apos;s ceiling B<sub>max</sub> = 1/&Omega;<sub>m</sub> but are convention-dependent on galaxy rotation
+        data. Galaxy weak lensing excludes the ceiling itself under all three candidate conventions. Whether they stay in the count of 6 is
+        pending the project lead (&ldquo;dp&rdquo;).{' '}
+        <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>All six in one table &rarr;</Link> <strong>Failed &mdash; underpowered as registered (not counted as a
         refutation):</strong> TEST-04a. <strong>Reparametrization:</strong> TEST-08. <strong>Withdrawn:</strong> TEST-04.
         The rest have not been run, or cannot be run as stated (details on each tier page).
       </p>
@@ -126,7 +128,7 @@ export default function TestCatalog() {
           it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub> (|&Delta;n| = 0.30, strict
           &gt; 0.3) or &Omega;<sub>m</sub>/&Omega;<sub>b</sub> (0.26), so it does not survive its own pre-fixed rule; the
           convention-free results are class exclusions, B<sub>max</sub> &#8818; 5.4 by the BTFR slope and
-          B<sub>max</sub> &#8818; 14 by SPARC dwarfs. Whether they stay in the count of 6 is pending dp. TEST-09 and TEST-10 would have selected
+          B<sub>max</sub> &#8818; 14 by SPARC dwarfs; the weak-lensing RAR (Brouwer+2021) excludes every candidate ceiling, 6.39 included, even with all cosmic baryons counted (<Link href="/honest-assessment#lensing-ceiling" style={{ color: '#f59e0b' }}>details</Link>). Whether they stay in the count of 6 is pending the project lead (dp). TEST-09 and TEST-10 would have selected
           the framework had its boost ceiling held.
           A test that separates two models <em>is</em> discriminating regardless of which one wins. The
           remaining Tier-1 tests are self-eliminating (no outcome selects Synchronism), failed by sign, or
@@ -272,7 +274,7 @@ export default function TestCatalog() {
           can select the mean-density (Cardassian) reading, which the framework&apos;s local-density postulate forbids</strong>{' '}
           (it wins only if the data move into the quadrant the family allows, w&#x2080; &gt; &minus;1 with w<sub>a</sub> &gt; 0 or
           the phantom mirror, at a &gamma; measurably away from &frac12;: unlikely on current data, not impossible by
-          construction; on the local fluid reading P(k) pins &gamma; = &frac12; to ~10&#x207B;&#x2075;). <strong>It cannot select
+          construction; on the local fluid reading P(k) pins &gamma; = &frac12; to ~10&#x207B;&#x2075;). Even that win is a Cardassian-class result (Freese &amp; Lewis 2002), so no branch of TEST-26 would move the confirmed-novel count off zero. <strong>It cannot select
           the framework as postulated.</strong> It is listed outside the 24-test discrimination count. (This line said
           &ldquo;cannot select the framework&rdquo;, unqualified, until 2026-09-22, after{' '}
           <Link href="/dark-energy" style={{ color: 'var(--color-accent-violet)' }}>Dark Energy</Link> was corrected on 2026-09-14.) Adoption gates on the operator. <strong>Booking if the kill fires (proposed):</strong> a DR3 result that robustly requires a

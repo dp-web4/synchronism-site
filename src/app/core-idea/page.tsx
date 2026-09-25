@@ -29,6 +29,15 @@ export default function CoreIdea() {
         standard saturation curve already used in other fields, not new physics.
       </div>
 
+      {/* Beginner exit added 2026-09-25: a casual visitor on the Beginner path skimmed past this point without a takeaway. */}
+      <div className="content-width" style={{ fontSize: '0.92rem', color: 'var(--color-text-secondary)', margin: '0 0 1.25rem', padding: '0.75rem 1rem', border: '1px solid rgba(16,185,129,0.45)', background: 'rgba(16,185,129,0.07)', borderRadius: '0.5rem', lineHeight: 1.7 }}>
+        <strong style={{ color: '#10b981' }}>Beginner? You can stop here.</strong> The takeaway: the equation turns
+        density into a coherence number between 0 and 1. Tested on galaxies, density barely mattered, and the version
+        that fits turned out to be MOND&apos;s interpolating function in other clothes. The rest of this page is the
+        deeper math and is optional &mdash; next on the Beginner path:{' '}
+        <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not &rarr;</Link>
+      </div>
+
       <div className="content-width" style={{ fontSize: '0.82rem', color: 'var(--color-text-secondary)', margin: '0 0 1.75rem', padding: '0.6rem 0.9rem', borderLeft: '2px solid var(--color-accent-blue)', background: 'rgba(56,189,248,0.05)', borderRadius: '0.25rem', lineHeight: 1.7 }}>
         <strong>Badge key</strong> (you&apos;ll meet these below). The colored leading word is the verdict; any text after the dash just names the specific finding.
         <br />

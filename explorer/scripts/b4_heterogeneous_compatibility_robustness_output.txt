@@ -1,0 +1,24 @@
+(a) bootstrap winner counts (500): {'M7': 500}
+    M7 / best-mean-model RMS ratio: median 0.67, 95% [0.56, 0.78]; frac < 0.8 = 0.98
+(b) secondary estimator (orig. Hill p_half) RMS: {'M1': 0.215, 'M2': 0.247, 'M3': 0.3, 'M4': 0.316, 'M5': 0.328, 'M6': 0.129, 'M7': 0.144}
+(c) POST-HOC: what sets the ceiling C(p=1) across all 15 structures? Spearman rho
+   C(1) vs mean    : rho = +0.80
+   C(1) vs lmax    : rho = +0.70
+   C(1) vs fiedler : rho = +0.96
+   C(1) vs d       : rho = +0.66
+   C(1) vs log fiedler: linear r = 0.92
+   U0.2         C(1)=0.841 fied=1.200 d=1.00 mean=0.200
+   U0.4         C(1)=0.871 fied=2.400 d=1.00 mean=0.400
+   U0.6         C(1)=0.889 fied=3.600 d=1.00 mean=0.600
+   U0.8         C(1)=0.882 fied=4.800 d=1.00 mean=0.800
+   U1.0         C(1)=0.873 fied=6.000 d=1.00 mean=1.000
+   block2_b0.1  C(1)=0.824 fied=0.600 d=1.00 mean=0.460
+   block2_b0.3  C(1)=0.868 fied=1.800 d=1.00 mean=0.580
+   block3_b0.1  C(1)=0.807 fied=0.600 d=1.00 mean=0.280
+   ring         C(1)=0.828 fied=1.000 d=0.40 mean=0.400
+   ring0.5      C(1)=0.773 fied=0.500 d=0.40 mean=0.200
+   path         C(1)=0.762 fied=0.268 d=0.33 mean=0.333
+   star         C(1)=0.818 fied=1.000 d=0.33 mean=0.333
+   coreper      C(1)=0.828 fied=1.000 d=0.60 mean=0.333
+   lognorm      C(1)=0.857 fied=1.406 d=1.00 mean=0.406
+   er0.4        C(1)=0.853 fied=1.109 d=0.53 mean=0.533

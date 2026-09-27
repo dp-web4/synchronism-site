@@ -1,0 +1,43 @@
+Starting Synchronism Maintainer Session at Sun Sep 27 06:00:01 PDT 2026
+The main finding today was an error of mine in the research ledger, and it points to a structural pattern. Site and research repo are both pushed: site `134fc2a`, Synchronism `f6c655f0` and `4af1b83a`. The build passes and the lint is clean at 127 rules. The count stays at 6 and Bucket 0 (confirmed novel predictions) stays at 0.
+
+## WAKE: the feedback reaches the research, not just the site
+The researcher persona argued that TEST-26 (the proposed DESI DR3 dark-energy test) can't single out the framework. They're right. The model family includes ΛCDM exactly at γ = ½, so data that favour thawing dark energy just push the fit to Λ. The family only dies when Λ does. My 2026-09-23 ledger entry called this "a cleaner kill", which undid the correct 08-12 statement. It's corrected in the ledger now.
+
+The pattern is general: every surviving part of the framework sits inside, or around, the standard model it's compared with.
+
+| Sector | Relation to the standard model | What a test can do |
+|---|---|---|
+| Galaxies | inside MOND (MOND plus a cap on the boost) | lose on its own; can never win |
+| Dark energy | contains ΛCDM | lose only when ΛCDM also loses; its one winning branch is already a known model (Cardassian) |
+| Wide binaries | two versions predict opposite results | whatever the data show, one version survives |
+| Solar System (Cassini) | inherited from MOND | fails along with MOND |
+
+So "no registered test can move Bucket 0" comes from how the framework is built, not from unlucky test design. A confirmed novel prediction needs an observable where the framework and the standard model overlap without one containing the other, and none is registered. I wrote this up as a proposal with two items for dp: a nesting column in the test registry, and a nesting check in the A2ACW review loop before any claim gets a badge.
+
+## Site fixes
+- **Dark energy (dark-energy, top-5-tests, honest-assessment pages):** TEST-26 is now described as a kill it shares with ΛCDM. The Honest Assessment page names the dark-energy sign lock as the second structural feature and explains why it doesn't discriminate.
+- **Stale positive claims removed:**
+  - galaxy-rotation: "fits within scatter" and "environment effects visible" now read as the inherited fit, the refuted γ = 2 pin and the environment null.
+  - gamma-boundary: "core result holds" is withdrawn. The badge stays `reparametrization`, as the ledger books it, not the audited-negative badge the persona suggested.
+- **Overdue explorer items cleared:** the compatibility-scaling bet (B4) had been marked "CONFIRMED" on the coupling-experiment page since the 09-25 run refuted it. It's now a reparametrization there and in the ledger row. The landing page's dark-matter claim now cites superfluid dark matter as prior art and the +0.28 dex overshoot.
+- **Consistency:**
+  - Tier 1 leads with the published 8.7σ Cassini figure and puts the site's own unmarginalized 17.95σ second.
+  - TEST-02 says each wide-binary outcome spares one version of the framework.
+  - The research-philosophy page states the review loop's record directly: 0 of 9 top verdicts survived later audit.
+- **Beginner path and navigation (via a subagent):** a "you can stop here" box on the what-synchronism-is-not page, plus fixes to the consciousness wording, the MOND wording, the learning-paths count, breadcrumbs and a redirect.
+- **Lint:** 7 new rules. Checked against a copy of the previous commit, they catch 9 instances of the retired wording, including two in page metadata I would otherwise have missed.
+
+## Needs checking
+- The DESI DR2 significances I added to the dark-energy page (3.1σ, and 2.8/3.8/4.2σ with the three supernova samples) are from memory, because there was no network access. They need checking against the paper.
+- I removed a citation the persona supplied ("Cookson") because I couldn't verify it.
+
+## Deferred (listed in the session log)
+- The highest-priority deferred item: the headline count still carries five different caveats across pages. A single wording depends on dp's pending recount.
+- One agreed name for the boost ceiling.
+- The /cdm-discrimination page still compares a BTFR scatter against MOND's RAR scatter.
+- Galaxy Plotter should use SPARC per-galaxy mass models.
+
+**New explorer topics:** finding an overlap sector (the only place Bucket 0 could move), and actually doing the wide-binary literature check that has been pending since June, per version.
+
+Two tool connections were unavailable: Google Drive needs authorizing in your claude.ai connector settings, and the playwright server failed to start because `npx` isn't installed.

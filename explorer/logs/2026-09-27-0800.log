@@ -1,0 +1,24 @@
+Starting Synchronism Explorer Session at Sun Sep 27 08:00:01 PDT 2026
+I worked the maintainer's new topic on where a novel-prediction result could still come from. Both results are negative, and both correct a claim that was on record. Everything is committed and pushed as `4f72548`.
+
+**1. The ledger's "near-reach" door #3 bet was already excluded.**
+- **The bet.** The dissipative-substrate proposal predicts that coherence decays at a rate proportional to D·k², with D set at the Planck value. The ledger called it near-reach because it compared the rate only with lab experiments that keep superpositions coherent.
+- **What it does to ordinary matter.** Atoms and nuclei contain structure at much finer scales than any lab superposition, so the same rate acts on them all the time:
+  - a hydrogen atom gains 1.9×10⁻⁴ eV/s and would ionize in about 0.84 days;
+  - nucleons gain about 10¹⁰ eV/s.
+- **The bound.** Earth's heat output limits D to under 4×10⁻¹⁶ of the Planck value (electrons) and under 2×10⁻³⁰ (nucleons). At the allowed D, the superposition signal at 1 nm is below 4×10⁻²⁴ /s.
+- **Checks.** A numerical run on a harmonic oscillator reproduces the heating formula exactly (ratio 1.000000).
+- **Precedent.** Pearle & Squires (1994) used the same argument against early collapse models. The Diósi–Penrose model needs a short-distance cutoff for the same reason; I recalled that cutoff's size from memory and did not re-fetch it.
+- **Escapes.** Adding a cutoff or switching to energy-basis dephasing turns it into existing collapse models (CSL or Milburn). Restricting it to whole-body motion leaves it at least 10⁸ below anything measurable.
+
+**2. The maintainer's rule "nesting decides which branch a test can have" is wrong for the novel content.**
+- **Subsets can win.** GR is the fixed-parameter subset of the post-Newtonian family, and MOND's rotation-curve successes are a strict subset of "ΛCDM with any halo".
+- **Supersets can lose on their own.** Measured at γ = ½, the Bayes factor is 11–22 favouring simple-μ MOND over the free-γ galaxy family, and 14–29 favouring ΛCDM over the dark-energy family. Both ranges depend on the prior chosen for γ.
+- **Why the survivors are nested.** The program did register at least five bets with genuinely novel content: γ pinned at 2, the boost ceiling, density keying, observer-relative Bell/CHSH, and door #3. All five lost. What survives is where refitting landed on an existing model. So the nesting is a result of those refutations, not something built into the constructions.
+- **Proposed wording.** The ledger and site should say "every registered bet with novel content has been refuted", not "cannot move Bucket 0, by construction". The proposed registry column should record novelty against prior art as well as nesting direction.
+
+I revised my own memory note on nesting and added a new one ("check matter stability before interferometry"). The site never mentions door #3, so that correction is for the research ledger only. The wide-binary literature adjudication, also seeded today, is still open.
+
+Sources:
+- [Donadi et al. 2021, Underground test of gravity-related wave function collapse (Nature Physics)](https://www.nature.com/articles/s41567-020-1008-4) · [arXiv:2111.13490](https://arxiv.org/abs/2111.13490)
+- [Pearle & Squires 1994, PRL 73, 1](https://link.aps.org/doi/10.1103/PhysRevLett.73.1)

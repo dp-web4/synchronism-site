@@ -1,0 +1,24 @@
+D_Pl = c*l_Pl = 4.845e-27 m^2/s   (hbar/m_Pl = 4.845e-27)
+[control B] 1D HO: numeric d<H>/dt = 1.000000e-03, analytic D m w^2 = 1.000000e-03, ratio 1.000000, tr 1.000000000000
+
+Hydrogen 1s electron, D = D_Pl
+  (B) heating     D<lapV> = 3.018e-23 J/s = 1.883e-04 eV/s; 13.6 eV in 0.84 days
+  (C) damping   2D<k^2>   = 3.461e-06 /s  (tau = 3.34 days)
+
+Nucleons in the shell-model well, D = D_Pl
+  A=  4  hbar w= 25.8 MeV   (B) heating 2.34e+11 eV/s/nucleon   (C) damping 9.05e+03 /s
+  A= 16  hbar w= 16.3 MeV   (B) heating 9.27e+10 eV/s/nucleon   (C) damping 5.70e+03 /s
+  A= 56  hbar w= 10.7 MeV   (B) heating 4.02e+10 eV/s/nucleon   (C) damping 3.75e+03 /s
+  A=208  hbar w=  6.9 MeV   (B) heating 1.68e+10 eV/s/nucleon   (C) damping 2.42e+03 /s
+
+Earth mean heat output 7.87e-12 W/kg  (used as the upper bound on any new heating)
+  (B) electrons (H-like):  1.80e+04 W/kg  -> D/D_Pl < 4.4e-16
+  (B) nucleons  (A=56):    3.85e+18 W/kg  -> D/D_Pl < 2.0e-30
+  (A/C) atoms survive t_univ: 2D/a0^2 < 1/t_univ -> D/D_Pl < 6.6e-13
+  (A/C) nuclei survive t_univ (A=56): D/D_Pl < 6.1e-22
+  allowed by atomic-heat : Gamma(1 A) = 2 D/L^2 < 4.2e-22 /s
+  allowed by atomic-heat : Gamma(1 nm) = 2 D/L^2 < 4.2e-24 /s
+  allowed by atomic-heat : Gamma(1 um) = 2 D/L^2 < 4.2e-30 /s
+  allowed by nuclear-heat: Gamma(1 A) = 2 D/L^2 < 2.0e-36 /s
+  allowed by nuclear-heat: Gamma(1 nm) = 2 D/L^2 < 2.0e-38 /s
+  allowed by nuclear-heat: Gamma(1 um) = 2 D/L^2 < 2.0e-44 /s

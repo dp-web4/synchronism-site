@@ -22,8 +22,9 @@ export default function DarkEnergy() {
           <strong>The answer, in one sentence:</strong> the framework has a dark-energy sector &mdash;
           derived in December 2025, arithmetically corrected in August 2026 &mdash; and{' '}
           <strong>every consistent version of it misses the specific behaviour DESI prefers</strong>,
-          which makes this the framework&apos;s one live falsifiable position &mdash; <em>if</em> C is read at the mean
-          density. Read at the local density (the framework&apos;s own postulate), existing galaxy clustering data already pin
+          but the family contains &Lambda;CDM at &gamma;&nbsp;=&nbsp;&frac12;, so it can only be killed by data that kill
+          &Lambda;CDM too. It is a live position that no data can refute without refuting &Lambda;CDM; it is not a
+          discriminating one (corrected 2026-09-27 from &ldquo;the framework&apos;s one live falsifiable position&rdquo;). Read at the local density (the framework&apos;s own postulate), existing galaxy clustering data already pin
           &gamma; to &frac12; (box below), so there is nothing left for DR3 to decide. On the mean-density reading: at DESI DR3 it is killed if the
           crossing holds, tied if the data sit at &Lambda;CDM (&gamma;&nbsp;=&nbsp;&frac12;), and it wins only if
           the data move into the quadrant it allows (w&#x2080;&nbsp;&gt;&nbsp;&minus;1 with w&#x2090;&nbsp;&gt;&nbsp;0,
@@ -157,7 +158,9 @@ export default function DarkEnergy() {
           language cosmologists use, that forces{' '}
           <strong>sign(w&#x2080;&nbsp;+&nbsp;1)&nbsp;=&nbsp;sign(w&#x2090;)</strong>. DESI DR2 (arXiv:2503.14738)
           prefers precisely the forbidden combination &mdash; w&#x2080;&nbsp;&gt;&nbsp;&minus;1 <em>with</em>{' '}
-          w&#x2090;&nbsp;&lt;&nbsp;0 &mdash; in all four of its data combinations. That quadrant is wider than
+          w&#x2090;&nbsp;&lt;&nbsp;0 &mdash; in all four of its data combinations (DESI&apos;s own reported preference for
+          w&#x2080;w&#x2090;CDM over &Lambda;CDM: 3.1&sigma; for DESI BAO + CMB, and 2.8&sigma;, 3.8&sigma; and 4.2&sigma; adding
+          Pantheon+, Union3 and DESY5 supernovae respectively). That quadrant is wider than
           &ldquo;crossing&rdquo;: in CPL the early-time value is w&#x2080;&nbsp;+&nbsp;w&#x2090;, so a crossing of
           w&nbsp;=&nbsp;&minus;1 needs w&#x2080;&nbsp;+&nbsp;w&#x2090;&nbsp;&lt;&nbsp;&minus;1 (DESI&apos;s central values do
           cross). The rest of the quadrant is ordinary <strong>thawing</strong> dark energy (w starts near &minus;1 and rises),
@@ -165,11 +168,18 @@ export default function DarkEnergy() {
           <strong>freezing</strong> from above for &gamma;&nbsp;&lt;&nbsp;&frac12; (w&#x2080;&nbsp;&gt;&nbsp;&minus;1,
           w&#x2090;&nbsp;&gt;&nbsp;0), or its phantom mirror from below for &gamma;&nbsp;&gt;&nbsp;&frac12;
           (w&#x2080;&nbsp;&lt;&nbsp;&minus;1, w&#x2090;&nbsp;&lt;&nbsp;0). It excludes thawing <em>and</em> crossing in either
-          direction. That is a stronger statement than
-          &ldquo;forbids crossing&rdquo;, and a cleaner kill: it fails as soon as the data prefer thawing over freezing,
-          whether or not a crossing is ever confirmed. (Restated 2026-09-23 from &ldquo;a crossing of w = &minus;1&rdquo;, after a
-          visitor researcher persona pointed out the thawing sub-quadrant. The kill condition is not a registered test; the
-          TEST-26 registration gates on dp.) Scanning &gamma;: zero values reach that quadrant; forcing w&#x2080; to match compels a
+          direction. That is a wider forbidden region than &ldquo;forbids crossing&rdquo;. <strong>It is not a
+          discriminating kill, because the family contains &Lambda;.</strong> At &gamma;&nbsp;=&nbsp;&frac12; the model
+          <em>is</em> &Lambda;CDM, so data that prefer thawing over freezing only push the fit to &gamma;&nbsp;=&nbsp;&frac12;.
+          The family dies only when &Lambda; itself is excluded in the thawing or crossing direction, and then &Lambda;CDM dies
+          with it. The framework&apos;s dark-energy sector is a <em>superset</em> of &Lambda;CDM, so it cannot lose a test
+          that &Lambda;CDM passes. Its only branch that differs from &Lambda;CDM is a win branch (freezing away from
+          &Lambda; at significance), and that branch is Cardassian-class prior art (Freese &amp; Lewis 2002).
+          (Restated 2026-09-23 from &ldquo;a crossing of w = &minus;1&rdquo;, after a visitor researcher persona pointed out
+          the thawing sub-quadrant. <strong style={{ color: '#f59e0b' }}>Corrected 2026-09-27:</strong> the 09-23 wording
+          called this &ldquo;a cleaner kill: it fails as soon as the data prefer thawing over freezing&rdquo;. That was wrong
+          for the reason above, and a later visitor researcher persona caught it. The 2026-08-12 direct fit had already
+          said TEST-26 is &Lambda;CDM-degenerate on every surviving branch. The TEST-26 registration gates on dp.) Scanning &gamma;: zero values reach that quadrant; forcing w&#x2080; to match compels a
           wrong-sign w&#x2090; (offsets 3.4&ndash;5.4&sigma; across the combinations, sign-and-scale statement
           only &mdash; no covariance is claimed).{' '}
           <strong style={{ color: '#f59e0b' }}>Those &sigma; figures did not survive a direct fit</strong> &mdash; see
@@ -391,6 +401,15 @@ export default function DarkEnergy() {
 
       <section className="section content-width">
         <h2>The test: TEST-26 (proposed, kill-or-tie)</h2>
+        <p style={{ padding: '0.75rem 1rem', borderLeft: '3px solid #f59e0b', background: 'rgba(245,158,11,0.06)' }}>
+          <strong>Read this first (2026-09-27):</strong> TEST-26 cannot single out the framework. Its kill fires only
+          when DR3 excludes &Lambda; in the thawing or crossing direction, and that outcome refutes &Lambda;CDM equally. On
+          the local-fluid reading, existing P(k) already pins |2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10<sup>&minus;5</sup>, so the
+          sector <em>is</em> &Lambda; there. On the mean-density reading &gamma; is free, and the only non-&Lambda; outcome is
+          freezing, which is a win branch for a known model class. So TEST-26 is a test of &Lambda;CDM with the framework
+          attached. It is kept on record so that a tie cannot later be read as a success. It is not a decisive test of
+          Synchronism.
+        </p>
         <p>
           A prospective registration against DESI DR3 (~2027&ndash;28) is drafted on{' '}
           <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>Top Decisive Tests</Link>:

@@ -390,8 +390,8 @@ export default function TestCatalog() {
             construction check, not data; see{' '}
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).</li>
           <li>B2 RAR transition shape at &#x03B3; = 2 (refuted, &Delta;BIC +184) &middot; B3 consciousness threshold C &asymp; 0.50
-            (untested; the one test ran on a different variable) &middot; B4 compatibility scaling (untested in the heterogeneous
-            case) &middot; B5 f(N) reconstruction rate (not yet derived) &middot; B6 non-monogamous entanglement (gated on B1,
+            (untested; the one test ran on a different variable) &middot; B4 compatibility scaling (heterogeneous case run 2026-09-25: refuted as stated;
+            the surviving 1/&lang;C&rang; holds by construction, so reparametrization) &middot; B5 f(N) reconstruction rate (not yet derived) &middot; B6 non-monogamous entanglement (gated on B1,
             which failed) &middot; B7 vacuum Umklapp (Planck-suppressed).</li>
         </ul>
       </section>

@@ -327,9 +327,13 @@ export default function HonestAssessment() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>(0) The boost-ceiling pair (TEST-09/TEST-10 — executed 2026-07-14/15):</strong> The bounded
           boost C(a) caps gravitational amplification at 1/Ω<sub>m</sub>&nbsp;=&nbsp;3.17 — the framework&apos;s
-          only structural difference from MOND. That ceiling forces a BTFR slope prediction (n&nbsp;=&nbsp;3.35)
+          only structural difference from MOND in the galaxy sector. (The one other structural feature anywhere is the
+          dark-energy sign lock: the sector is freezing-class. DESI DR2 leans against freezing, but the family contains
+          &Lambda;CDM at &gamma;&nbsp;=&nbsp;&frac12;, so its kill fires only when &Lambda;CDM&apos;s does, and on the local-density
+          reading P(k) already pins it to &Lambda;. See{' '}
+          <Link href="/dark-energy" style={{ color: '#f59e0b' }}>Dark Energy</Link>.) That ceiling forces a BTFR slope prediction (n&nbsp;=&nbsp;3.35)
           that genuinely differs from MOND&apos;s (3.81); observed n&nbsp;=&nbsp;3.75&nbsp;±&nbsp;0.10 sits
-          3.3σ from the prediction and fired the registered kill (|&Delta;n|&nbsp;=&nbsp;0.41&nbsp;&gt;&nbsp;0.3), and
+          3.3σ from the prediction and fired the registered kill (|&Delta;n|&nbsp;=&nbsp;0.41&nbsp;&gt;&nbsp;0.3, from unrounded slopes; the rounded 3.75&nbsp;&minus;&nbsp;3.35 reads 0.40), and
           no choice of the other parameters rescues it. <strong>But the kill is convention-dependent, like
           TEST-10&apos;s:</strong> it fires at B<sub>max</sub>&nbsp;=&nbsp;1/&Omega;<sub>m</sub>, and the 2026-09-18
           ceiling sweep finds it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub>{' '}

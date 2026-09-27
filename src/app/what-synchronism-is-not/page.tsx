@@ -69,7 +69,7 @@ const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: Re
   {
     claim: 'A Lorentz-invariant theory',
     plain: 'Its universal clock would naturally break a basic rule of relativity by far more than existing experiments allow. In plain words: Lorentz invariance is the rule that the laws of physics look the same to every observer moving at a steady speed. A single universal clock ("absolute time") picks out one special observer, which breaks that rule, and the simplest version of the framework breaks it by an amount existing experiments already rule out. That applies to the minimal framework at its natural value: it is a gap the framework would need a mechanism to close (other absolute-time theories have proposed such mechanisms; this one has none yet), not a refutation of the whole idea.',
-    reality: 'A discrete absolute-time substrate singles out a preferred frame, and a preferred frame leaks into the matter sector: the one-loop estimate gives Lorentz-violating coefficients c_μν ~ α/π ~ 10⁻²–10⁻³, against cavity bounds ≲10⁻¹⁸ and comagnetometer bounds ≲10⁻²⁹–10⁻³⁰. That is a gap of 16 to 28 orders of magnitude, and it is excluded at face value by experiments that already exist — no new instrument required. Custodial / protection mechanisms that would suppress the leak exist in the literature, but NONE is exhibited anywhere in this framework, so the gap is unaddressed rather than answered. One precision, in the framework\'s favour and stated because it is true: the scheme-independence of that one-loop estimate is itself disputed in the literature, so this is a NATURALNESS problem, not a theorem — an unprotected preferred frame is wildly unnatural, which is a different and weaker claim than "mathematically impossible." It is still the largest single number standing against the ontology, and it is larger than anything in the galaxy sector. Status in the prediction ledger: the minimal framework is refuted at its natural value (conditional on its unspecified interactions); for Synchronism specifically this is an open custodial-mechanism gap, not a decisive refutation. The escape that works for other absolute-time theories (a hierarchy of scales, shown for Hořava–Lifshitz gravity) is obstructed here by the framework\'s single-substrate assumption, so the mechanism is owed, not supplied.',
+    reality: 'A discrete absolute-time substrate singles out a preferred frame, and a preferred frame leaks into the matter sector: the one-loop estimate gives Lorentz-violating coefficients c_μν ~ α/π ~ 10⁻²–10⁻³, against cavity bounds ≲10⁻¹⁸ and comagnetometer bounds ≲10⁻²⁹–10⁻³⁰. That is a gap of 16 to 28 orders of magnitude. In other words: the absolute-time reading, as written, is already excluded by existing precision experiments unless something suppresses the effect, and nothing in the framework does yet. It is excluded at face value by experiments that already exist — no new instrument required. Custodial / protection mechanisms that would suppress the leak exist in the literature, but NONE is exhibited anywhere in this framework, so the gap is unaddressed rather than answered. One precision, in the framework\'s favour and stated because it is true: the scheme-independence of that one-loop estimate is itself disputed in the literature, so this is a NATURALNESS problem, not a theorem — an unprotected preferred frame is wildly unnatural, which is a different and weaker claim than "mathematically impossible." It is still the largest single number standing against the ontology, and it is larger than anything in the galaxy sector. Status in the prediction ledger: the minimal framework is refuted at its natural value (conditional on its unspecified interactions); for Synchronism specifically this is an open custodial-mechanism gap, not a decisive refutation. The escape that works for other absolute-time theories (a hierarchy of scales, shown for Hořava–Lifshitz gravity) is obstructed here by the framework\'s single-substrate assumption, so the mechanism is owed, not supplied.',
     note: 'Card added 2026-09-10: this page, whose job is listing what the framework is not, was missing its single largest fine-tuning problem, which a reader had to find on /honest-assessment instead.',
   },
   {
@@ -79,10 +79,14 @@ const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: Re
         The framework also extends its coherence idea to consciousness. The site treats that as a speculative sector
         &mdash; its own{' '}
         <Link href="/consciousness-threshold" style={{ color: 'var(--color-accent-blue)' }}>Consciousness Threshold</Link>{' '}
-        page badges the threshold untestable as stated &mdash; and the card below gives the case that it is at least concrete.
+        page badges the threshold untestable as stated. The two statements below are not in conflict: the threshold
+        <em>value</em> (C &asymp; 0.50) has never been tested &mdash; the one empirical test cited for it measured a
+        different variable (a coherence score for AI agents in a companion program), and rejected the threshold for
+        that variable. It would become falsifiable only once a measurement protocol maps C onto something measurable in
+        a brain (EEG phase-locking, for example). Until then: falsifiable in principle, untested in practice.
       </>
     ),
-    reality: 'The consciousness equation C = f(γ, D, S) ≥ 0.50 is speculative, but it\'s specific and falsifiable — 34 EEG protocols are defined, with predicted phase signatures at 30-50 Hz. The free will framework makes testable neural predictions. These may fail, but they\'re concrete enough to fail. That makes them science, not philosophy.',
+    reality: 'The consciousness equation C = f(γ, D, S) ≥ 0.50 is speculative. It is specific enough that it could be made falsifiable — 34 EEG protocols are defined, with predicted phase signatures at 30-50 Hz, and the free will framework names neural predictions — but no protocol yet maps an EEG measurement onto C, so none of these can currently fail against the 0.50 value. That puts the sector between philosophy and science: concrete candidates for tests, not yet tests.',
   },
 ];
 
@@ -103,6 +107,18 @@ export default function WhatSynchronismIsNot() {
         removed.
       </details>
 
+      {/* Beginner exit added 2026-09-27 (visitor: densest jargon on the Beginner path, and unlike
+          /core-idea and /honest-assessment it had no stop-here box). Markup copied from /core-idea. */}
+      <div className="content-width" style={{ fontSize: '0.92rem', color: 'var(--color-text-secondary)', margin: '1.25rem 0 1.25rem', padding: '0.75rem 1rem', border: '1px solid rgba(16,185,129,0.45)', background: 'rgba(16,185,129,0.07)', borderRadius: '0.5rem', lineHeight: 1.7 }}>
+        <strong style={{ color: '#10b981' }}>In plain words &mdash; beginner? You can stop here.</strong> Synchronism is
+        not a theory of everything. It does not replace relativity or quantum mechanics, and it is not established. Its
+        galaxy formula turned out to be an existing idea (MOND) in disguise, and the specific things it added on top failed
+        where they were tested (most have not been tested yet). What remains is an interpretation &mdash; a way of reading known physics &mdash; plus an openly
+        kept record of what failed. The cards below give the technical detail and are optional &mdash; next on the
+        Beginner path:{' '}
+        <Link href="/honest-assessment#if-you-read-nothing-else" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment (the &ldquo;If you read nothing else&rdquo; box) &rarr;</Link>
+      </div>
+
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Setting clear boundaries on what this framework claims &mdash; and doesn&apos;t claim &mdash;
@@ -122,7 +138,7 @@ export default function WhatSynchronismIsNot() {
             <li><strong>Not checked by science journals.</strong> Nothing has been submitted. The checking so far was done by AI models reviewing each other&apos;s work, with human oversight &mdash; real, but not the usual route.</li>
             <li><strong>Not a replacement for today&apos;s physics.</strong> It does not replace the standard theories of particles, gravity or the universe&apos;s history, nor the rival gravity idea MOND. Where it matches data, it mostly restates them.</li>
             <li><strong>Not compatible, as it stands, with a basic rule of relativity</strong> (that the laws look the same at any steady speed). Its built-in universal clock would naturally break that rule by an amount existing experiments already rule out, and nothing in the framework explains why it doesn&apos;t. That is a serious warning sign for the simplest version, not a refutation of the whole idea: closing the gap would take a protective mechanism, which other absolute-time theories have proposed and this one has not.</li>
-            <li><strong>Not just new labels, and not just philosophy.</strong> The claim is that quantum behaviour, consciousness and galaxy motion are one phenomenon at different scales, with concrete tests attached. That is either wrong or important &mdash; and it can fail.</li>
+            <li><strong>Not just new labels, and not just philosophy.</strong> The claim is that quantum behaviour, consciousness and galaxy motion are one phenomenon at different scales. That is either wrong or important. The physics parts have concrete tests (several already failed); the consciousness part does not yet &mdash; its tests are proposed but cannot run until someone says how to measure C in a brain.</li>
           </ul>
           <p style={{ margin: '0.6rem 0 0', color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
             The cards below give the detail and use technical terms (<Link href="/glossary#QFT" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>QFT</Link>, <Link href="/glossary#GR" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>GR</Link>,{' '}

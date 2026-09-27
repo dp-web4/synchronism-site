@@ -229,6 +229,20 @@ RETIRED = [
      "w0 > -1, wa < 0 is mostly thawing; a crossing needs w0 + wa < -1; the lock excludes thawing too"),
     (r"No algebraic chain from\s+C\(", "2026-09-23",
      "two couplings (division, RG field equation) now exist; the density law was fitted through them"),
+    (r"cleaner kill: it fails as soon as the data prefer thawing", "2026-09-27",
+     "the DE family contains Lambda at gamma = 1/2; its kill fires only when LCDM's does"),
+    (r"one live falsifiable position", "2026-09-27",
+     "the DE sign lock cannot be refuted without refuting LCDM; live but not discriminating"),
+    (r"Coherence function fits within observational scatter", "2026-09-27",
+     "fits only at free gamma ~ 0.49 (MOND simple mu); gamma = 2 refuted (dBIC +184)"),
+    (r"Environment-dependent effects visible", "2026-09-27",
+     "TEST-08 environment null: r^2 = 0.0001, N = 141"),
+    (r"core result \((&#x03B3;|γ) (&#x2248;|≈) 1 clustering\) holds", "2026-09-27",
+     "gamma ~ 1 is a Debye theta_D reparametrization; no N_corr procedure; Z-polynomial null matches"),
+    (r"0\.0185 / &lang;compat", "2026-09-27",
+     "B4 1/<C> holds only by construction (weight multiplier); reparametrization"),
+    (r"color: '#2ecc71' }}>CONFIRMED</td>", "2026-09-27",
+     "no CONFIRMED status cells on the coupling experiment; B4 is a reparametrization"),
 ]
 
 EXEMPT = re.compile(

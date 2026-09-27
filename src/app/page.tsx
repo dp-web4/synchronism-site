@@ -23,7 +23,8 @@ export default function Home() {
           density &mdash; might explain what currently needs a separate patch at every scale (dark matter for
           galaxies, wavefunction collapse for quantum measurement). That is what the equation tried to do.
           Tested against real data, it has not won: the one non-degenerate galaxy test collapsed it onto MOND
-          (Modified Newtonian Dynamics &mdash; the 40-year-old rival gravity theory it keeps losing to), and the
+          (Modified Newtonian Dynamics &mdash; a 40-year-old idea that gravity itself gets stronger than Newton&apos;s law at
+          extremely weak accelerations, used instead of dark matter; the framework&apos;s galaxy formula turned out to be MOND&apos;s), and the
           cluster scale requires a second density parameter the framework doesn&apos;t have. &ldquo;Tested&rdquo; here
           means checked against data that already existed (retrodiction); no prediction has yet been made first
           and then checked against new data. Every failure is
@@ -187,7 +188,7 @@ export default function Home() {
               <strong>2.</strong> Consciousness equation &mdash; <em>Speculative</em> (C&nbsp;&asymp;&nbsp;0.50 threshold untestable as stated)
             </span>
             <span style={{ color: '#ef4444' }}>
-              <strong>3.</strong> Dark matter as incomplete decoherence &mdash; <em>Failed</em> as a mechanism; the galaxy fits that work are MOND in new notation (a reparametrization), and the framework&apos;s own cosmology needs ordinary cold dark matter put in by hand (<Link href="/dark-energy" style={{ color: 'inherit', textDecoration: 'underline' }}>details</Link>)
+              <strong>3.</strong> Dark matter as incomplete decoherence &mdash; <em>Failed</em> as a mechanism; the galaxy fits that work are MOND in new notation (a reparametrization), and the framework&apos;s own cosmology needs ordinary cold dark matter put in by hand (<Link href="/dark-energy" style={{ color: 'inherit', textDecoration: 'underline' }}>details</Link>); adding a real halo on top of the boost overshoots SPARC by +0.28&nbsp;dex (explorer 2026-09-22). Closest prior art for &ldquo;dark matter that behaves like MOND inside galaxies&rdquo;: superfluid dark matter (Berezhiani &amp; Khoury 2015), which has particles
             </span>
           </div>
           <span style={{ color: 'var(--color-accent-violet)', fontSize: '0.9rem', marginTop: '0.75rem', display: 'inline-block' }}>

@@ -202,7 +202,8 @@ export default function GammaCalculator() {
             Try it: click &ldquo;Ideal gas&rdquo; (&#x03B3;=2, the steep violet S) then
             &ldquo;BCS superconductor&rdquo; (&#x03B3;&asymp;6&times;10<sup>&minus;4</sup>) and watch the curve
             collapse to nearly flat — the inversion in Caveat 2, drawn live: the <em>most</em> collective
-            system gets the <em>flattest</em> curve.
+            system gets the <em>flattest</em> curve. A superconductor is one of the most collective states known,
+            so it should get the sharpest switch. The formula gives it the flattest.
           </p>
         </div>
 

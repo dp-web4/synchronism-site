@@ -319,7 +319,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Dark Energy & DESI',
       href: '/dark-energy',
-      desc: 'The one live falsifiable position: every completion misses the DESI quadrant',
+      desc: 'Freezing-class sector that contains ΛCDM: it misses the DESI quadrant, but can only be refuted together with ΛCDM',
       keywords: ['dark energy', 'DESI', 'w0wa', 'equation of state', 'sign lock', 'TEST-26', 'Friedmann', 'covariant'],
       prerequisites: ['/coherence-function'],
       related: ['/honest-assessment', '/top-5-tests', '/cosmology-predictions', '/mond-unification'],

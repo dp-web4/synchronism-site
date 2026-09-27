@@ -27,7 +27,7 @@ export default function GammaBoundary() {
       <Breadcrumbs currentPath="/gamma-boundary" />
       <PathNav currentPath="/gamma-boundary" />
       <h1>The &#x03B3; &#x2248; 1 Boundary</h1>
-      <ValidationBadge status="reparametrization" label="1,703 Phenomena / 89% Boundary-Consistent | Template Bias Caveat" />
+      <ValidationBadge status="reparametrization" label="Reparametrizes the Debye θ_D (≈86% of the 89% are θ_D restatements) | Z-polynomial null matches | No N_corr procedure" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -148,8 +148,14 @@ export default function GammaBoundary() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Sessions 134-2660 were identified as &ldquo;template-based&rdquo; &mdash; the AI used
           similar analysis patterns across phenomena, which may inflate the validation rate.
-          The core result (&#x03B3; &#x2248; 1 clustering) holds, but the 89% figure should be
-          treated with caution.
+          This page used to say &ldquo;the core result (&#x03B3; &#x2248; 1 clustering) holds&rdquo;. It does not stand as a
+          result (withdrawn 2026-09-27 after a visitor graduate-student persona flagged it). The research ledger books
+          &#x03B3;&nbsp;&#x2248;&nbsp;1 as a reparametrization of the Debye model (1912): about 86% of the &ldquo;89%
+          boundary-consistent&rdquo; are restatements of &#x03B8;<sub>D</sub>. The rationale for &#x03B3;&nbsp;&#x2248;&nbsp;1 was
+          retracted. No documented procedure assigns N<sub>corr</sub> to a phenomenon before the fit. A degree-2
+          polynomial in Z matches the correlations to within &Delta;r&nbsp;&le;&nbsp;0.07. So the clustering cannot be
+          evaluated as evidence either way. The open question is whether an N<sub>corr</sub> rule can be written down
+          <em>before</em> looking at the data. If it can, the clustering becomes testable.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

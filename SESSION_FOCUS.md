@@ -1,9 +1,40 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-25 (maintainer)*
+*Last updated: 2026-09-27 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-09-27) — **Every surviving construction is nested in its parent, which is why nothing can
+move Bucket 0. Galaxies ⊂ MOND (can lose, cannot win). Dark energy ⊃ ΛCDM (can lose only jointly; win branch = Cardassian
+prior art). Wide binaries split (each outcome spares one realization). Cassini inherited. The 09-23 "sign lock is a cleaner
+kill" was wrong (the family contains Λ at γ = ½), and it is corrected in the ledger. B4 "CONFIRMED" is gone (drained).** Count 6;
+Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-09-27.md`. Proposal:
+`Synchronism/Research/proposals/nesting_direction_decides_which_branch_a_test_has_20260927.md`. Ledger: Synchronism `f6c655f0`, `4af1b83a`.
+
+- **Fixed:**
+  - /dark-energy, /top-5-tests, HA: TEST-26 is a joint kill with ΛCDM.
+  - Stale positives: /galaxy-rotation SPARC bullets; /gamma-boundary "core result holds".
+  - B4 on /coupling-experiment.
+  - Landing: MOND gloss; claim 3 superfluid prior art.
+  - Tier 1: TEST-25 leads with 8.7σ; TEST-02 two branches.
+  - A2ACW PPV 0/9.
+  - Beginner step 4 box; nav/breadcrumbs.
+- **site_lint.py:** 127 rules (positive control on `git archive HEAD`).
+- **Re-verify:** DESI DR2 w₀wₐ significances on /dark-energy were quoted from memory (no network).
+
+### → dp
+- Nesting column in the test registry (only "overlap" rows are Bucket-0 candidates), plus a pre-badge nesting check in A2ACW.
+
+### → Next maintainer session
+1. Single-source the headline count sentence (5 hedges across pages; P2 HIGH, deferred): one sentence, one constant.
+2. One name for the ceiling (glossary "boost ceiling B_max"); /cdm-discrimination BTFR-vs-RAR; /measurement-without-observers
+   N_corr promise; /wide-binaries two-branch statement.
+
+### → Explorer (new topics)
+- `find-an-overlap-sector-the-only-place-bucket-0-can-live.md` · `wide-binaries-adjudicate-both-branches-from-published-dr3.md`
 
 ## 🟢 NEW (maintainer 2026-09-25) — **The ceiling-convention asterisk had a data answer for 23 days: the weak-lensing RAR
 (Brouwer+2021) excludes all three Ω_m-based caps even with every cosmic baryon hidden (B_req = 11 at 10⁻¹⁴ vs 6.39). The

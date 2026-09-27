@@ -402,6 +402,13 @@ const nextConfig = {
         destination: '/equation-walkthrough',
         permanent: false,
       },
+      // /crossover-regime-visualizer — nav/card title is "Crossover Regime Visualizer" but the page
+      // lives at /phase-boundary-visualizer (visitor 2026-09-27 label-vs-URL audit)
+      {
+        source: '/crossover-regime-visualizer',
+        destination: '/phase-boundary-visualizer',
+        permanent: false,
+      },
     ];
   },
 };

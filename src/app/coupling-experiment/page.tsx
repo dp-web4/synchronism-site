@@ -531,9 +531,14 @@ export default function CouplingExperiment() {
             <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
               <td style={{ padding: '0.5rem' }}>p<sub>crit</sub> &prop; 1/&lang;compatibility&rang;</td>
               <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>
-                r = 0.994, p = 0.0006. Low-compat agents need ~73% more coupling events.
+                r = 0.994, p = 0.0006 shows a <em>monotone</em> dependence, not proportionality: the affine fit
+                p<sub>crit</sub> &asymp; 0.0151 + 0.0034/C has an intercept that is 82% of p<sub>crit</sub> at C&nbsp;=&nbsp;1, and
+                &prop;&nbsp;1/C misses C&nbsp;=&nbsp;0.2 by 2.9&times;. The heterogeneous run (explorer 2026-09-25, pre-registered)
+                refuted the law as stated (support density fits better, 0.072 vs 0.111 dex). With a 0.5-prior threshold
+                artefact removed, 1/&lang;C&rang; holds to 0.062 dex, but by construction: compatibility enters the update
+                rule as a weight multiplier.
               </td>
-              <td style={{ padding: '0.5rem', textAlign: 'center', color: '#2ecc71' }}>CONFIRMED</td>
+              <td style={{ padding: '0.5rem', textAlign: 'center', color: '#f59e0b' }}>REPARAMETRIZATION (was CONFIRMED until 2026-09-27)</td>
             </tr>
             <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
               <td style={{ padding: '0.5rem' }}>Block structure amplifies cooperation</td>
@@ -560,15 +565,18 @@ export default function CouplingExperiment() {
         </table>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1.5rem' }}>
-          <div className="card" style={{ borderLeft: '3px solid #2ecc71' }}>
-            <h3>The Compatibility Formula</h3>
-            <p style={{ fontFamily: 'monospace', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
-              p<sub>crit</sub> &asymp; 0.0185 / &lang;compatibility&rang;
-            </p>
+          <div className="card" style={{ borderLeft: '3px solid #f59e0b' }}>
+            <h3>The Compatibility Formula (withdrawn as a law)</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
-              The critical trust frequency scales inversely with compatibility. Measure compatibility,
-              predict the threshold. This closes the loop from Phase 1&apos;s failed derivation &mdash;
-              p<sub>crit</sub> is relational, but now it has a structural handle.
+              This card presented a one-parameter inverse law, p<sub>crit</sub> &asymp; 0.0185 divided by the mean
+              compatibility, as a structural handle: measure compatibility, predict the threshold. The data support
+              less than that. In the homogeneous case the dependence is monotone and affine in 1/C, with a large
+              intercept. In the heterogeneous case (explorer 2026-09-25) the inverse law fits only once a threshold
+              artefact is removed, and then it holds because compatibility multiplies the coupling weight in the
+              model&apos;s own update rule. So it restates the rule and predicts nothing new: research-ledger bet B4 is
+              a reparametrization, not a Bucket-0 candidate. <strong>Open question:</strong> if compatibility acted as a
+              <em>filter</em> (agent i accepts only the belief types that j&apos;s compatibility unlocks), p and C would stop
+              entering as a product, and 1/&lang;C&rang; would become a falsifiable prediction. Nobody has run that version.
             </p>
           </div>
 

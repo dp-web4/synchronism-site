@@ -18,6 +18,12 @@ const categoryHubs: Record<string, string> = {
   'Interactive Tools': '/interactive-tools',
 };
 
+// Visitor 2026-09-27: the main nav's "Start Here" links to /why-synchronism, so a
+// "Home / Start Here / X" crumb read as "X is a child of Why Synchronism". Pointing it at
+// /learning-paths would repeat the sibling-as-parent problem above (/learning-paths is itself
+// in this category). The crumb is dropped instead: these pages sit directly under Home.
+const hiddenCategoryCrumbs = new Set(['Start Here']);
+
 export default function Breadcrumbs({ currentPath }: BreadcrumbsProps) {
   const category = getCategory(currentPath);
   const pageInfo = getPageInfo(currentPath);
@@ -26,7 +32,7 @@ export default function Breadcrumbs({ currentPath }: BreadcrumbsProps) {
     return null;
   }
 
-  const showCategory = category !== pageInfo.title;
+  const showCategory = category !== pageInfo.title && !hiddenCategoryCrumbs.has(category);
 
   return (
     <nav

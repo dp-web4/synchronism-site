@@ -134,8 +134,8 @@ export default function GalaxyRotation() {
             </p>
             <ul style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
               <li>Tight RAR confirmed (&#x03C3;<sub>int</sub> &#x2248; 0.057 dex) — <em>McGaugh et al. 2016 measured value, restated</em></li>
-              <li>Coherence function fits within observational scatter</li>
-              <li>Environment-dependent effects visible but sample too small for strong statistics</li>
+              <li>The coherence function fits within the scatter only at free &#x03B3;&nbsp;&#x2248;&nbsp;0.49, where it is MOND&apos;s simple &#x03BC; (inherited, not a Synchronism result). The framework&apos;s pinned &#x03B3;&nbsp;=&nbsp;2 is refuted (&Delta;BIC&nbsp;+184).</li>
+              <li>Environment dependence: <strong>null</strong>. The registered TEST-08 gives r&sup2;&nbsp;=&nbsp;0.0001 (N&nbsp;=&nbsp;141, p&nbsp;=&nbsp;0.89) against a registered prediction of &gt;&nbsp;20% of the scatter and a kill bar of r&sup2;&nbsp;&lt;&nbsp;0.09, so the kill fired (see <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>). These two bullets read &ldquo;fits within observational scatter&rdquo; and &ldquo;environment effects visible&rdquo; until 2026-09-27.</li>
             </ul>
           </div>
           <div className="card card-highlight">

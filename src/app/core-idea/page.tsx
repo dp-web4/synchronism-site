@@ -33,7 +33,7 @@ export default function CoreIdea() {
       <div className="content-width" style={{ fontSize: '0.92rem', color: 'var(--color-text-secondary)', margin: '0 0 1.25rem', padding: '0.75rem 1rem', border: '1px solid rgba(16,185,129,0.45)', background: 'rgba(16,185,129,0.07)', borderRadius: '0.5rem', lineHeight: 1.7 }}>
         <strong style={{ color: '#10b981' }}>Beginner? You can stop here.</strong> The takeaway: the equation turns
         density into a coherence number between 0 and 1. Tested on galaxies, density barely mattered, and the version
-        that fits turned out to be MOND&apos;s interpolating function in other clothes. The rest of this page is the
+        that fits turned out to be MOND&apos;s formula in other clothes. The rest of this page is the
         deeper math and is optional &mdash; next on the Beginner path:{' '}
         <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not &rarr;</Link>
       </div>

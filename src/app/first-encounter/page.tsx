@@ -46,11 +46,13 @@ const steps = [
     title: 'Scale Up: Galaxies',
     content: `Apply the same equation to galaxies. Stars in a galaxy are individual uncorrelated
     classical particles (N_corr = 1, γ = 2). The critical density ρ_crit = A × V_flat² connects
-    to rotation velocity. MOND — Modified Newtonian Dynamics, the long-standing rival proposal that gravity itself changes below a threshold acceleration, rather than invoking dark matter — has an acceleration constant a₀, and a₀ = cH₀/(2π) falls out of the same constants —
-    but this is a dimensional coincidence (the only scale buildable from c and H₀), not a first-principles
-    derivation; the 2π is unexplained and the match is off by ~13%. See Honest Assessment.
-    In plain words: the number happens to match a combination of the speed of light (c) and the universe's
-    expansion rate (H₀, the Hubble constant). That may be luck; nobody has derived it.`,
+    to rotation velocity. MOND — Modified Newtonian Dynamics, the long-standing rival proposal that gravity itself changes below a threshold acceleration, rather than invoking dark matter — has an acceleration constant a₀. Its value happens to match a combination
+    of the speed of light and the universe's expansion rate. That may be luck; nobody has derived it.`,
+    // Visitor 2026-09-27: the dimensional-analysis detail was pitched above the rest of the page;
+    // it now sits behind a "For the curious" fold rendered below the section text.
+    curious: `a₀ = cH₀/(2π) falls out of the same constants, but this is a dimensional coincidence (the only
+    acceleration scale buildable from c and H₀, the Hubble constant), not a first-principles derivation; the 2π is
+    unexplained and the match is off by ~13%. See Honest Assessment.`,
     highlight: 'a₀ ≈ cH₀/(2π): a coincidence, not a derivation',
   },
   {
@@ -110,7 +112,7 @@ export default function FirstEncounter() {
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
         7 short sections on this one page, lettered A&ndash;G &mdash; about 10 minutes in all. (The &ldquo;Step 2 of 6&rdquo;
         above is this page&apos;s place in the Beginner path; the letters are only for the sections inside this page.
-        The sections appear one at a time: use the <strong>Next</strong> button below each section, or the progress bar, to move between them.)
+        The sections appear one at a time: use the <strong>Continue</strong> button below each section, or the progress bar, to move between them.)
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '2rem' }}>
         <strong>New here?</strong> This ~10-minute intro is the fastest path to understanding the framework.
@@ -185,6 +187,14 @@ export default function FirstEncounter() {
         <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8, whiteSpace: 'pre-line' }}>
           {part.content}
         </p>
+        {'curious' in part && part.curious && (
+          <details style={{ marginTop: '0.75rem' }}>
+            <summary style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', cursor: 'pointer' }}>For the curious: where a₀ &asymp; cH₀/(2&pi;) comes from</summary>
+            <span style={{ display: 'block', marginTop: '0.35rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', lineHeight: 1.7, whiteSpace: 'pre-line' }}>
+              {part.curious}
+            </span>
+          </details>
+        )}
         {i === 1 && (
           <>
             <div style={{ marginTop: '1rem', padding: '0.6rem 1rem', background: 'rgba(56,189,248,0.07)', borderRadius: '0.375rem', fontSize: '0.85rem' }}>
@@ -227,7 +237,7 @@ export default function FirstEncounter() {
             className="btn-primary"
             onClick={() => setStep(s => s + 1)}
           >
-            Next: Section {String.fromCharCode(66 + step)} &rarr;
+            Continue &darr; Section {String.fromCharCode(66 + step)}
           </button>
         ) : (
           <Link href="/core-idea" className="btn-primary">

@@ -1,1 +1,12 @@
 Starting Synchronism Maintainer Session at Tue Sep 29 06:00:01 PDT 2026
+Both repos are pushed (site `c92da3d`, research `d58b643d`); lint 0 live hits, build exit 0. Session complete.
+
+**So what:** the day's research output is a refutation of one of the site's own refutations. The 09-28 grad-student persona spotted that the γ=2 kill was scored under two effective-N conventions. A pre-registered galaxy-level rerun (identity controls reproduced +184.0 / 0.489 / +7.1 exactly) showed the +184 is a point-independence number: with galaxies as the unit it is ΔBIC ≈ 11, 1.6σ out-of-sample, 2.2σ on a galaxy-block bootstrap, and the bootstrap spread measures N_eff ≈ 150 directly, so the "20×" convention was the empirical one, not the conservative one. Seven galaxies carry 98% of the net excess. That withdraws the ledger's 09-24 "survives any convention" sentence and makes TEST-25's in-house "empty intersection" convention-dependent too (retained γ widens to 0.3–1.7 at N_gal), though TEST-25's published 8.7σ content stands. It is not a rescue of γ=2. Root 2 of 5 is now "at the threshold"; whether it stays a root gates on dp.
+
+**Site changes (pushed):** every +184 passage on 7 pages and ledger row 3 qualified; x defined once around the MOND identity; TEST-02 carries one status string on four surfaces; 1/Ω_b and the classical-dSph kill added to the dwarf cap; GC residuals quoted ± error; landing legend moved above the coverage table plus a hero purpose line; Research Philosophy double "Next" fixed; step-1 badge strip and two glossary entries; Core Idea beginner stop box; Coherence Explorer presets and the wrong "γ↔ρcrit degeneracy" paragraph corrected; MWO/MRH "six protocols" relabelled as rate-less classes with the explorer's door-3 heating bound; Collins 2004 cited; Σ₀ leads with 4%. Lint: 8 new rules (135), positive control fired 16 on HEAD.
+
+**Research repo:** PREDICTIONS.md block + proposal `gamma2_pin_is_n_eff_dependent_galaxy_level_test_20260929.md`.
+
+**Seeded:** two explorer topics (per-galaxy nuisance refit with covariance; re-score every SPARC verdict at galaxy level).
+
+**Deferred:** explorer 09-27 nesting P1/P2 ledger wording; A2ACW positive control (needs a post-cutoff discovery, not runnable offline); S₈ confrontation; Galaxy Plotter defaults; tech-writer label/acronym backlog. Session log at `maintainer/logs/2026-09-29.md`, SESSION_FOCUS updated, one memory saved.

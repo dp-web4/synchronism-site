@@ -1,1 +1,19 @@
 Starting Synchronism Explorer Session at Tue Sep 29 08:00:01 PDT 2026
+Pushed as `32aa793` on top of the pre-registration `187d495`. Session complete.
+
+**What I did.** I took the maintainer's open question on the γ = 2 pin and ran the published SPARC method in-house: Υ_disk, Υ_bulge, distance and inclination profiled per galaxy under Li+2018 priors, velocity-space χ² with the real errors, pre-registered before the script existed. The frozen pipeline was kept as the identity control and reproduced +184.0 / 0.489 / +7.1. Everything downstream runs off a stored per-galaxy χ² table, so the galaxy-block bootstrap re-profiles a₀′ and γ̂ exactly instead of using a discount factor.
+
+**What came out.**
+- **The pin is "disfavoured", not refuted, under the published method.** Galaxy-level z for γ = 2 against free γ is 1.9 without Desmond's intrinsic scatter and 2.2–2.3 with it. Only 52–56% of galaxies prefer the free fit. NGC 5055 rejects γ = 2 outright while NGC 2403 rejects γ = ½ by a similar margin, so the raw Δχ² of +1114 is a difference of two large sums.
+- **Marginalizing nuisances does not fix N_eff.** The point-level 95% width on γ is 0.06; the galaxy-level width is 0.47, a ratio of 7.6. Adding σ_int = 0.034 dex brings χ²_red from 4.8 to 1.5 and the ratio to 3.2, not to 1. N_eff stays at the galaxy count. This is the transferable result, and it applies to any pooled-point shape error on SPARC.
+- **The free fit moves.** With real errors, marginalized nuisances and σ_int, γ̂ = 0.58–0.62 with galaxy-level 95% [0.43, 0.95]. "Exactly MOND simple μ to four digits" is a frozen-Υ, unweighted-SSR statement.
+- **TEST-25's in-house half sits at the 2σ edge.** The compander's galaxy-level SPARC interval reaches γ = 1.5 at z < 2, and Cassini passes at γ ≳ 1.5–2. Desmond+2024's 8.7σ is a Cassini-σ statement and very likely survives, and the finding says so.
+- Per-galaxy χ²_ν matches Li+2018's Table 2 galaxy by galaxy where their posterior lies inside my Υ box, which validates the pipeline against the published fits.
+
+**Files.** Finding: `explorer/findings/gamma2-pin-under-the-published-method-galaxies-disagree-about-the-shape-more-than-their-errors.md`. Script and three outputs under `explorer/findings/scripts/`. Session log with WAKE answers, SESSION_FOCUS block with maintainer and dp items. The three 5 MB table files are left untracked and regenerate in about six minutes each.
+
+**Two things flagged for the operator.**
+- The Hestia Bash hook denied four legitimate commands today: three because the Python environment-variable accessor contains the substring `.env`, one because `git rm --cached` matched the `rm` rule. The denied commands silently never ran. No appeal tool was exposed to this session, so both are reported in the session log and one is saved as a memory.
+- Root 2 of 5 now has the answer the site said it lacked. The recommendation in SESSION_FOCUS is "disfavoured" plus a root recount, and a rule that every SPARC shape σ carries its galaxy-bootstrap width and the ratio to the point-level width.
+
+**So what?** The pin was the occasion; the error-bar result is the discovery. The site has been treating "marginalized" as a synonym for "the correlations are handled". The tables say the galaxy-level width stays three to seven times the pooled-point width after marginalization, because the disagreement between galaxies about the transition shape is a curve-level property that neither per-galaxy slides nor per-point scatter can express.

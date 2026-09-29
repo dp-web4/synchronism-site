@@ -1,0 +1,58 @@
+rows 2807, galaxies 166; with bulge 32; i<30: 9; Q=3: 9
+A   frozen log-SSR: dBIC(gamma=2 vs McG) = +184.0; free gamma-hat = 0.489, dBIC vs McG = +7.1; dchi2(gamma=2 vs free) = +184.9
+    C1 PASS
+C3  synthetic NGC3198 from gamma=2 (truth: dlogUd=+0.079, dr=1.10, i=77.0; a0'=1e-9.55): recovered dlogUd=+0.096, dr=1.05, i=73.5 at a0'=1e-9.49; gamma-hat=0.61; dchi2(gamma=2 vs free)=+1.99
+    C3 PASS
+    arm B tables done (5s)
+    arm C tables done (380s)
+C2  nuisance plumbing at prior means reproduces arm B: max |diff| = 0.00e+00  PASS
+    optimizer sanity: cells where chi2_C > chi2_B (should be 0): 0 of 104414
+B   frozen nuisances, velocity chi2: chi2(gamma=2)=193316.6 @a0'=1e-9.49; chi2(free)=162480.3 @gamma=0.432, a0'=1e-10.30; chi2(McG)=163548.2 @a0=1e-9.92; chi2_red(free)=57.93
+    dchi2: gamma=2 vs free +30836.4; gamma=2 vs McG +29768.4; free vs McG -1068.0  (per chi2_red: +532.3)
+    profile: 0.3:+6520.3  0.35:+1814.6  0.4:+246.3  0.45:+65.0  0.489:+616.1  0.5:+882.6  0.55:+1964.0  0.6:+3429.1  0.7:+6750.3  0.8:+9772.6  0.9:+12737.9  1:+15390.5  1.2:+19845.3  1.5:+25029.9  2:+30836.4  2.5:+34703.9  3:+37347.7
+C   nuisances profiled (Li+2018 priors): chi2(gamma=2)=14568.7 @a0'=1e-9.64; chi2(free)=13455.0 @gamma=0.488, a0'=1e-10.24; chi2(McG)=13383.8 @a0=1e-9.96; chi2_red(free)=4.80
+    dchi2: gamma=2 vs free +1113.7; gamma=2 vs McG +1184.8; free vs McG +71.1  (per chi2_red: +232.2)
+    profile: 0.3:+192.1  0.35:+82.1  0.4:+26.9  0.45:+4.3  0.489:+0.0  0.5:+0.4  0.55:+10.7  0.6:+30.8  0.7:+94.9  0.8:+177.4  0.9:+268.2  1:+361.4  1.2:+543.4  1.5:+787.7  2:+1113.7  2.5:+1359.4  3:+1548.1
+P1  arm C: dchi2(gamma=2 vs free) = +1113.7; galaxy-block bootstrap sd = 581.0, 95% [226.3, 2439.0], median 1080.0; z = 1.92   (arm B for contrast: z = 1.39, 95% [2820, 85920])
+    P1 REFUTED
+P2  gamma=2 worse in 87/166 = 52.4% of galaxies (free fit taken at grid gamma=0.489); sign p = 2.94e-01; Wilcoxon p = 6.23e-02
+    P2 REFUTED
+    top 10 galaxies by dchi2 excess (share of net):
+      NGC5055        +409.1 ( 36.7%)  n= 27  i0=55 Q=1
+      UGC09133       +272.0 ( 24.4%)  n= 67  i0=53 Q=1
+      UGC00128       +130.4 ( 11.7%)  n= 21  i0=57 Q=1
+      UGC02953       +117.4 ( 10.5%)  n=113  i0=50 Q=2
+      NGC5033         +95.2 (  8.5%)  n= 22  i0=66 Q=1
+      UGC06787        +95.1 (  8.5%)  n= 68  i0=66 Q=2
+      NGC5985         +94.3 (  8.5%)  n= 33  i0=60 Q=1
+      UGC02487        +59.6 (  5.3%)  n= 17  i0=36 Q=1
+      NGC2903         +59.0 (  5.3%)  n= 32  i0=66 Q=1
+      NGC0891         +52.8 (  4.7%)  n= 18  i0=90 Q=1
+    bottom 5 (free worse):
+      NGC6015         -45.1  n= 44
+      F571-8          -47.6  n= 11
+      NGC5371         -84.3  n= 19
+      NGC2403         -88.4  n= 72
+      UGC03580        -99.6  n= 39
+    sum positive 1782.8, sum negative -667.7; share of net from top 7: 109%
+P3  summed prior penalty: gamma=2 1617.5  vs free 1476.5; ratio 1.10
+    P3 REFUTED
+    mean dlogUd: gamma=2 +0.091 dex, free +0.036 dex; mean D/D0: 1.021 vs 0.979; mean (i-i0): -0.23 vs -1.07 deg
+    galaxies at a Upsilon bound (|dlogUd|=0.5): gamma=2 11, free 7
+P4  arm C gamma-hat = 0.488; galaxy-bootstrap 95% [0.338, 0.807]  (arm B gamma-hat = 0.432)
+    P4 REFUTED
+P5  retained gamma (dchi2/chi2_red <= 10): 0.4 .. 0.6  (chi2_red = 4.80); raw dchi2 <= 10: [0.45, 0.489, 0.5]
+    P5 HELD
+LAP -2 ln marginal-likelihood ratio (gamma=2 vs free), Laplace: +1217.5  (profile +1113.7; Occam term +103.8)
+SENS drop i<30 & Q=3 (149 galaxies): dchi2(gamma=2 vs free) = +1100.9, gamma-hat = 0.484
+SENS drop top-7 excess galaxies: dchi2(gamma=2 vs free) = +66.0, gamma-hat = 1.052
+    per-galaxy preferred gamma (own a0'): median 0.70; >=1.5 in 67, <=0.5 in 75 of 166
+
+VERDICT (registered): NOT DISTINGUISHABLE    P1 REFUTED  P2 REFUTED  P3 REFUTED  P4 REFUTED  P5 HELD   [381s]
+
+POST galaxy-level retained interval under the published method (arm C): z = dchi2(gamma vs free)/sd_boot per gamma
+  gamma:  0.3  0.35  0.4  0.45  0.489  0.5  0.55  0.6  0.7  0.8  0.9  1  1.2  1.5  2  2.5  3
+  dchi2:  192  82  27  4  0  0  11  31  95  177  268  361  543  788  1114  1359  1548
+  z:      1.1  0.6  0.3  0.1  0.0  0.0  0.2  0.3  0.7  1.0  1.2  1.3  1.6  1.8  2.0  2.1  2.1
+  retained at z<2: 0.3..2.0;  at z<3: 0.3..3.0
+  McGaugh vs free (arm C): dchi2 -71.1, galaxy-bootstrap z = -1.06

@@ -1,0 +1,52 @@
+SIGINT_DEX = 0.034 dex (per-point intrinsic scatter added in quadrature), Upsilon bound = ±1.0 dex; (0, 0.5) = arm C as registered
+rows 2807, galaxies 166; with bulge 32; i<30: 9; Q=3: 9
+A   frozen log-SSR: dBIC(gamma=2 vs McG) = +184.0; free gamma-hat = 0.489, dBIC vs McG = +7.1; dchi2(gamma=2 vs free) = +184.9
+    C1 PASS
+C3  synthetic NGC3198 from gamma=2 (truth: dlogUd=+0.079, dr=1.10, i=77.0; a0'=1e-9.55): recovered dlogUd=+0.076, dr=1.02, i=73.1 at a0'=1e-9.44; gamma-hat=0.68; dchi2(gamma=2 vs free)=+0.75
+    C3 PASS
+    arm B tables done (7s)
+    arm C tables done (372s)
+C2  nuisance plumbing at prior means reproduces arm B: max |diff| = 0.00e+00  PASS
+    optimizer sanity: cells where chi2_C > chi2_B (should be 0): 0 of 104414
+B   frozen nuisances, velocity chi2: chi2(gamma=2)=24995.9 @a0'=1e-9.58; chi2(free)=22810.7 @gamma=0.501, a0'=1e-10.32; chi2(McG)=22807.6 @a0=1e-10.00; chi2_red(free)=8.13
+    dchi2: gamma=2 vs free +2185.3; gamma=2 vs McG +2188.3; free vs McG +3.1  (per chi2_red: +268.7)
+    profile: 0.3:+904.2  0.35:+350.3  0.4:+90.9  0.45:+7.0  0.489:+3.8  0.5:+0.0  0.55:+57.8  0.6:+144.2  0.7:+352.3  0.8:+583.2  0.9:+800.8  1:+984.5  1.2:+1338.4  1.5:+1720.7  2:+2185.3  2.5:+2468.1  3:+2690.3
+C   nuisances profiled (Li+2018 priors): chi2(gamma=2)=4364.7 @a0'=1e-9.62; chi2(free)=4199.7 @gamma=0.584, a0'=1e-10.16; chi2(McG)=4186.6 @a0=1e-9.96; chi2_red(free)=1.50
+    dchi2: gamma=2 vs free +165.0; gamma=2 vs McG +178.0; free vs McG +13.0  (per chi2_red: +110.2)
+    profile: 0.3:+127.6  0.35:+70.8  0.4:+36.5  0.45:+16.4  0.489:+7.3  0.5:+5.5  0.55:+0.7  0.6:+0.1  0.7:+6.3  0.8:+17.9  0.9:+31.9  1:+46.8  1.2:+76.1  1.5:+114.8  2:+165.0  2.5:+201.2  3:+227.8
+P1  arm C: dchi2(gamma=2 vs free) = +165.0; galaxy-block bootstrap sd = 71.1, 95% [50.1, 318.6], median 163.7; z = 2.32   (arm B for contrast: z = 1.92, 95% [532, 4840])
+    P1 NEITHER
+P2  gamma=2 worse in 91/166 = 54.8% of galaxies (free fit taken at grid gamma=0.6); sign p = 1.22e-01; Wilcoxon p = 6.47e-03
+    P2 REFUTED
+    top 10 galaxies by dchi2 excess (share of net):
+      UGC09133        +25.3 ( 15.2%)  n= 67  i0=53 Q=1
+      NGC5985         +17.8 ( 10.7%)  n= 33  i0=60 Q=1
+      UGC02916        +14.7 (  8.8%)  n= 41  i0=50 Q=2
+      UGC02953        +12.8 (  7.7%)  n=113  i0=50 Q=2
+      NGC5033         +12.8 (  7.7%)  n= 22  i0=66 Q=1
+      NGC7814         +11.8 (  7.1%)  n= 18  i0=90 Q=1
+      UGC12506        +11.4 (  6.8%)  n= 28  i0=86 Q=2
+      NGC0891         +11.2 (  6.7%)  n= 18  i0=90 Q=1
+      NGC6674         +10.5 (  6.3%)  n= 14  i0=54 Q=1
+      UGC03205         +9.8 (  5.9%)  n= 46  i0=67 Q=1
+    bottom 5 (free worse):
+      D631-7           -8.3  n= 14
+      NGC5371         -15.8  n= 19
+      UGC06787        -16.5  n= 68
+      UGC03580        -19.3  n= 39
+      F571-8          -25.8  n= 11
+    sum positive 345.6, sum negative -179.0; share of net from top 7: 64%
+P3  summed prior penalty: gamma=2 1048.3  vs free 966.8; ratio 1.08
+    P3 REFUTED
+    mean dlogUd: gamma=2 +0.064 dex, free +0.030 dex; mean D/D0: 0.998 vs 0.982; mean (i-i0): -0.69 vs -0.98 deg
+    galaxies at a Upsilon bound (|dlogUd|=1.0): gamma=2 0, free 0
+P4  arm C gamma-hat = 0.584; galaxy-bootstrap 95% [0.422, 0.887]  (arm B gamma-hat = 0.501)
+    P4 REFUTED
+P5  retained gamma (dchi2/chi2_red <= 10): 0.489 .. 0.7  (chi2_red = 1.50); raw dchi2 <= 10: [0.489, 0.5, 0.55, 0.6, 0.7]
+    P5 HELD
+LAP -2 ln marginal-likelihood ratio (gamma=2 vs free), Laplace: +174.8  (profile +165.0; Occam term +9.8)
+SENS drop i<30 & Q=3 (149 galaxies): dchi2(gamma=2 vs free) = +158.1, gamma-hat = 0.581
+SENS drop top-7 excess galaxies: dchi2(gamma=2 vs free) = +65.4, gamma-hat = 0.752
+    per-galaxy preferred gamma (own a0'): median 0.70; >=1.5 in 65, <=0.5 in 77 of 166
+
+VERDICT (registered): DISFAVOURED    P1 NEITHER  P2 REFUTED  P3 REFUTED  P4 REFUTED  P5 HELD   [373s]

@@ -1,9 +1,32 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-29 (maintainer)*
+*Last updated: 2026-09-29 (explorer)*
 
 ---
+
+## 🟢 NEW (explorer 2026-09-29) — **The γ = 2 pin under the published method (Υ, D, i profiled per galaxy, Li+2018
+priors, velocity χ²; pre-registered `187d495`): z = 1.9 galaxy-level without Desmond's σ_int, 2.2–2.3 with it; 52–56 %
+of galaxies; "disfavoured", not refuted. The transferable result: marginalizing the nuisances does NOT narrow the
+galaxy-level interval — point-level width 0.06 vs galaxy-level 0.47 on γ (ratio 7.6); σ_int = 0.034 dex brings the ratio
+to 3.2, not 1, and N_eff stays ≈ N_gal. The free fit moves to γ̂ = 0.6 [0.43, 0.95]; "exactly MOND simple μ to four digits"
+is a frozen-Υ statement. TEST-25's in-house SPARC × Cassini intersection sits at the 2σ edge under the published
+treatment.** Count 6; Bucket 0 = 0.
+
+Finding: `explorer/findings/gamma2-pin-under-the-published-method-galaxies-disagree-about-the-shape-more-than-their-errors.md`.
+Script: `explorer/findings/scripts/gamma2_pin_nuisance_refit.py` (+ PREREG, three outputs; tables regenerable in ~6 min each).
+
+### → Maintainer
+- /galaxy-rotation +184 paragraph: append the marginalized-nuisance sentence and replace "Not done: refitting per-galaxy
+  nuisances" with the script path. Every "converges to γ = 0.489" / "MOND simple μ to four digits" sentence gets the
+  qualifier "frozen Υ = 0.5, unweighted".
+- /tier-1-existing TEST-25 convention note: marginalizing Υ, D, i does not narrow the galaxy-level interval; z < 2 retains
+  γ = 0.3–1.5 (with σ_int), overlapping the Cassini-passing γ ≳ 1.5–2 at the edge. Say what Desmond's 8.7σ is (Cassini's σ).
+- Ledger row 3 convention column: "1.6σ (frozen) / 1.9–2.3σ (marginalized) galaxy-level".
+
+### → dp
+- Root 2 of 5: the published method is now run in-house and lands at 2σ. Recommend "disfavoured" and a root recount.
+- Rule extension: any SPARC shape σ on the site carries the galaxy-bootstrap width and the ratio to the point-level width.
 
 ## 🟢 NEW (maintainer 2026-09-29) — **The γ = 2 pin, root 2 of 5, is N_eff-dependent. Scored with the galaxy as the
 unit (pre-registered `976e3f9`): worse than free γ in 94/166 galaxies (p = 0.05), 1.6σ on 10-fold galaxy CV, block-bootstrap

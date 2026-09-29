@@ -191,6 +191,11 @@ export default function WhySynchronism() {
               and the registered density-classified run now exists (research repo, 2026-07-14): r²=0.0001 against
               the framework&apos;s registered &gt;20% claim. Refuted by execution.
             </p>
+            <div style={{ fontSize: '0.72rem', color: 'var(--color-text-muted)', marginBottom: '0.35rem' }}>
+              Badges on this page: <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Failed &middot; Reparametrization</Link>{' '}
+              (definitions); text after the bar is a finding descriptor. &ldquo;89% Boundary-Consistent&rdquo; and &ldquo;Template Bias Caveat&rdquo; are
+              defined in the <Link href="/glossary#boundary-consistent" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
+            </div>
             <span className="badge badge-failed" title="Registered environment-density run executed 2026-07-14 (SPARC RAR offsets vs Cosmicflows-4): r²=0.0001 vs registered >20% — refuted; the MOND+EFE tie dissolved on adjudication 2026-07-15 (levers differ ~50–5,000×), see /tier-1-existing#TEST-05">Failed | TEST-03/05 Environment Run — Refuted by Execution</span>
           </div>
           <div className="card">

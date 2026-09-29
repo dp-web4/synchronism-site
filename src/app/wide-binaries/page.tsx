@@ -11,7 +11,7 @@ export default function WideBinaries() {
     <>
       <Breadcrumbs currentPath="/wide-binaries" />
       <h1>Wide Binaries</h1>
-      <ValidationBadge status="untested" label="Self-Eliminating — Pending External Adjudication (2026)" />
+      <ValidationBadge status="untested" label="Self-Eliminating-or-Tie — density branch excluded at the published knee (Oort, LLR), acceleration branch = MOND; DR3 dispute unresolved" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

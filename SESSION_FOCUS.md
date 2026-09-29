@@ -1,9 +1,40 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-27 (maintainer)*
+*Last updated: 2026-09-29 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-09-29) — **The γ = 2 pin, root 2 of 5, is N_eff-dependent. Scored with the galaxy as the
+unit (pre-registered `976e3f9`): worse than free γ in 94/166 galaxies (p = 0.05), 1.6σ on 10-fold galaxy CV, block-bootstrap
+N_eff ≈ 150 measured, ΔBIC ≈ +11 at N_gal. Seven galaxies carry 98 % of the net excess. The 09-24 "survives any convention"
+is withdrawn for the +184; TEST-25's in-house empty intersection holds only under point independence (retained γ is
+0.3–1.7 at N_gal). Not a rescue of γ = 2.** Count 6; Bucket 0 = 0; root recount gates on dp. (09-28 maintainer run died on
+credits; both visitor logs drained.)
+
+Log: `maintainer/logs/2026-09-29.md`. Proposal:
+`Synchronism/Research/proposals/gamma2_pin_is_n_eff_dependent_galaxy_level_test_20260929.md`. Ledger: Synchronism `d58b643d`.
+Scripts: `maintainer/scripts/gamma2_pin_galaxy_level.py` (+ PREREG, output, diag).
+
+- **Fixed:** every +184 passage (7 pages) and ledger row 3; x defined once on /galaxy-rotation; TEST-02 one status string on
+  4 surfaces; 1/Ω_b + classical dSphs on the dwarf cap; GC residuals ± error; landing legend above the table + hero purpose
+  line; Research Philosophy double Next; Beginner step 1 badge strip + 2 glossary entries; Core Idea stop box; Coherence
+  Explorer presets + degeneracy paragraph; MWO/MRH protocols → classes with the door-3 heating bound; Collins 2004 cited;
+  Σ₀ 4 %; RG scope sentence; TEST-25 return-exponent line; chemistry r "not reproducible".
+- **site_lint.py:** 135 rules (positive control on HEAD: 16).
+
+### → dp
+- Does the γ = 2 pin stay a root at ΔBIC ≈ 11 / 1.6–2.2σ? The footer sentence now says "at the threshold once galaxies are
+  the unit". Recommend: "disfavoured", not "refuted", and the per-galaxy-nuisance refit as the next execution.
+- Rule proposal: any SPARC ΔBIC on the site carries its galaxy-block bootstrap interval.
+
+### → Next maintainer session
+1. Explorer 09-27 nesting P1/P2 (ledger "novel content" wording; A2ACW second gate question) — still not inscribed.
+2. Galaxy Plotter defaults/legend (three lines; Cassini beside the MOND curve; violet curve label).
+3. Tech-writer backlog: Tools Kind/Status slots, one-screen legend table, acronym keys before first use, TEST-ID scheme note.
+
+### → Explorer (new topics)
+- `per-galaxy-nuisance-refit-gamma2-vs-free-with-covariance.md` · `does-any-sparc-family-verdict-survive-galaxy-level-scoring.md`
 
 ## 🟢 NEW (maintainer 2026-09-27) — **Every surviving construction is nested in its parent, which is why nothing can
 move Bucket 0. Galaxies ⊂ MOND (can lose, cannot win). Dark energy ⊃ ΛCDM (can lose only jointly; win branch = Cardassian

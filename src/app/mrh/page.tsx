@@ -256,7 +256,7 @@ export default function MRH() {
         <h2>What&apos;s Untested</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           The MRH as a replacement for &ldquo;wave function collapse&rdquo; is the central untested
-          prediction. Six experimental protocols have been designed (Sessions #368-370) but none
+          prediction. Six experiment classes were sketched (Sessions #368-370; none carries a predicted rate, so none is a runnable protocol) but none
           have been run. The theory predicts specific decoherence patterns at the MRH boundary
           that should be measurable.
         </p>

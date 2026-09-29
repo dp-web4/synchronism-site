@@ -127,10 +127,10 @@ export default function Top5Tests() {
           &ldquo;structurally unable&rdquo; until 2026-09-14; see <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>), so it does not
           repopulate this list either.{' '}
           <strong>The emptiness is corroborated independently:</strong>{' '}
-          <Link href="/test-catalog" style={{ color: 'var(--color-accent-blue)' }}>the 24-test catalog</Link>{' '}
+          <Link href="/test-catalog" style={{ color: 'var(--color-accent-blue)' }}>the Test Roadmap (26 tests)</Link>{' '}
           finds <strong>0 of 24 designed experiments selected Synchronism over MOND+EFE+ΛCDM, and none still unrun can</strong> —
-          structural for the unrun ones; the two that could have selected it (TEST-09, TEST-10) needed data, ran, and lost (&ldquo;could select&rdquo; until 2026-09-14 &mdash; false for TEST-09/10, which would have selected the framework had its boost ceiling held; they ran and selected MOND). Two closed predictions remain
-          below: one disfavored 2.4σ on σ₈ while its registered fσ₈ criterion fell short of its own &gt;3σ
+          structural for the unrun ones; the two that could have selected it (TEST-09, TEST-10) needed data, ran, and lost (&ldquo;could select&rdquo; until 2026-09-14 &mdash; false for TEST-09/10, which would have selected the framework had its boost ceiling held; they ran and selected MOND). The closed predictions listed
+          below include two worth naming here: one disfavored 2.4σ on σ₈ while its registered fσ₈ criterion fell short of its own &gt;3σ
           bar (post-hoc either way; corrected 2026-07-14), one withdrawn on internal contradiction.
         </div>
 

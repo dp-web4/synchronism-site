@@ -77,7 +77,7 @@ export default function ForResearchers() {
             <li>
               <a href="#locality-no-go" style={{ color: 'var(--color-accent-blue)' }}>1. Local-density no-go</a>: a knee keyed
               on local volumetric density must fall as V<sup>&minus;2</sup> (BTFR-forced); the framework asserts &#x03C1;<sub>crit</sub> &prop;
-              V<sup>+2</sup>, and the measured knee has no velocity exponent (V<sup>+2</sup> excluded at ~11&sigma;). Algebraic-coupling class only; gradient (symmetron-class) schemes escape.
+              V<sup>+2</sup>, and the measured knee has no velocity exponent (V<sup>+2</sup> excluded at ~11&sigma;). Algebraic-coupling class only; gradient (symmetron-class) schemes escape. Refracted Gravity (item 5&apos;s comparison, not excluded) is outside this class for the same reason: its permittivity &epsilon;(&rho;) enters the Poisson equation under the divergence, &nabla;&middot;(&epsilon;&nabla;&Phi;) = 4&pi;G&rho;, not as a multiplier on g, so its knee is identifiable where an algebraic one is not (added 2026-09-29).
             </li>
             <li>
               <a href="#gc-window" style={{ color: 'var(--color-accent-blue)' }}>5. Globular-cluster exclusion window</a>: 42

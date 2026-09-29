@@ -307,7 +307,7 @@ export default function CoherenceFunction() {
           correlation along each curve, by about 5.6&times; (/galaxy-rotation, +184 &rarr; 33) or 20&times; (/core-idea,
           +2843 &rarr; +142). Divided by either factor, all three &ldquo;refuted&rdquo; forms (+23.8, +46.7, +58.0) fall near or below
           the decisive line of 10, and the survivors&apos; ranking is noise. So the claim that asymptotic rate selects among
-          forms is conditional on point independence. No single effective N has been estimated from the data; this is open.
+          forms is conditional on point independence. <strong>Measured 2026-09-29:</strong> a galaxy-block bootstrap of the +184 comparison has a spread 4.3&times; the point-independent expectation, i.e. an effective N of about 150, one per galaxy; at that N the +184 becomes +10.9 and this table&apos;s three &ldquo;refuted&rdquo; forms fall to +1.4, +2.8 and +3.4. The form-selection verdict does not survive the measured N_eff; only the +2843 density-vs-acceleration comparison does (+168).
           (&ldquo;Logistic&rdquo; is not a distinct member: the logistic sigmoid applied to the log-argument
           is identically tanh.) See the executed selection table below.
           tanh is the chosen form, motivated historically by its appearance in the Ising mean-field

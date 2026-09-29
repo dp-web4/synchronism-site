@@ -449,7 +449,7 @@ export default function ParameterDerivations() {
               personas the same day): using the a&#x2080; &#x2248; 1.08&times;10<sup>&minus;10</sup> m/s&sup2; item 4
               quoted at the time (the H&#x2080; = 70 value; corrected to 1.04 at H&#x2080; = 67.4 on 2026-07-22,
               since &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) algebraically), &#x03A3;&#x2080; &#x2248; 123.3 M&#x2609;/pc&sup2;
-              &mdash; a <strong>0.5% match</strong> to Freeman&apos;s observed 124 M&#x2609;/pc&sup2; (Freeman 1970),
+              &mdash; a 4% miss at the site-standard H&#x2080; = 67.4 (119.0 vs Freeman&apos;s observed 124 M&#x2609;/pc&sup2;, Freeman 1970; the often-quoted &ldquo;0.5% match&rdquo; needs H&#x2080; &asymp; 70, and the target itself is uncertain by ~2&times; through M/L, so no percentage is meaningful),
               not the previously stated &ldquo;&#x2248;110, 12% error&rdquo; (that 110 required H&#x2080; &#x2248; 62 km/s/Mpc,
               inconsistent with the a&#x2080; row directly above it). At the site-standard
               H&#x2080; = 67.4 km/s/Mpc (adopted 2026-07-17, resolution note below) the same formula gives
@@ -609,7 +609,7 @@ export default function ParameterDerivations() {
               <em> median</em> f<sub>DM</sub> = 0.755 passes (ceiling 0.844) and the &ldquo;69% of SPARC exceeds
               the ceiling&rdquo; headline is convention-dependent. The kill does not depend on the convention
               choice at the tail: SPARC&apos;s maximum observed f<sub>DM</sub> = 0.927 requires B &#8805; 13.7,
-              which no candidate cosmic ratio supplies &mdash; so the robust, convention-free statement is a
+              which no ratio built from &Omega;<sub>m</sub> supplies (1/&Omega;<sub>b</sub> = 20.3 does, and is excluded by the weak-lensing RAR one decade lower, 2026-09-25) &mdash; so the robust, convention-free statement is a
               class exclusion (B<sub>max</sub> &#8818; 14 is excluded by SPARC dwarfs), not the median-based
               percentage.
             </p>

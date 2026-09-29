@@ -208,9 +208,9 @@ export default function CoherenceExplorer() {
             />
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
               {[
-                { g: 0.49, label: 'γ = 0.49 — SPARC fit on acceleration (= MOND there; illustrative on this density axis)' },
+                { g: 0.49, label: 'γ = 0.49 — gentle slope: what SPARC galaxies picked (= MOND there; killed by Cassini at 8.7σ; illustrative on this density axis)' },
                 { g: 0.5, label: 'γ = ½ exactly — algebraically MOND’s simple μ (see note below)' },
-                { g: 2.0, label: 'γ = 2 — the framework’s registered value (refuted on SPARC)' },
+                { g: 2.0, label: 'γ = 2 — steep: the framework’s original guess (disfavoured on SPARC; at the threshold once galaxies are the unit)' },
               ].map(p => (
                 <button key={p.g} type="button" onClick={() => setGamma(p.g)}
                   style={{ fontSize: '0.72rem', padding: '0.2rem 0.5rem', borderRadius: '0.3rem', cursor: 'pointer',
@@ -292,11 +292,13 @@ export default function CoherenceExplorer() {
               log axis this slider therefore performs a rigid horizontal translation by
               &minus;log<sub>10</sub>&#x03C1;<sub>crit</sub> and changes nothing about the curve&apos;s shape:
               the tool is a <strong>one-parameter family plus a pan control</strong>, presented as two parameters.
-              That is not a UI nit &mdash; it is the &#x03B3;&#x2194;&#x03C1;<sub>crit</sub> degeneracy that makes
-              SPARC&apos;s &#x03B3; = 0.489 non-identifiable against a rescaled critical density, which is the crux
-              of the whole galaxy sector, made visible. Read the abscissa as
-              log<sub>10</sub>(&#x03C1;/&#x03C1;<sub>crit</sub>) &mdash; dimensionless &mdash; and the degeneracy is
-              the only thing the slider can express. Raised by a visitor researcher pass.
+              That is not a UI nit, but it is not a &#x03B3;&#x2194;&#x03C1;<sub>crit</sub> degeneracy either (corrected 2026-09-29,
+              graduate-physics visitor persona): a pan and a shape parameter are separately identifiable once data cross the knee, and
+              SPARC does identify the shape (&#x03B3; = 2 and &#x03B3; = 0.489 differ by ΔBIC 184 with a&#x2080;&prime; profiled in both).
+              What the galaxy fit cannot do is tell its shape from MOND&apos;s: the identified shape near &#x03B3; = &frac12; <em>is</em> the
+              simple &#x03BC;, and in the deep regime only the combination &#x03B3;/a&#x2080;&prime; is measured. Read the abscissa as
+              log<sub>10</sub>(&#x03C1;/&#x03C1;<sub>crit</sub>) &mdash; dimensionless &mdash; and the pan is
+              the only thing this slider can express. Raised by a visitor researcher pass.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               <strong>Note:</strong> &#x03C1;<sub>crit</sub> is a <em>saturation knee</em>, not a critical density

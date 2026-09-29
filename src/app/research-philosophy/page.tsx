@@ -527,8 +527,11 @@ export default function ResearchPhilosophy() {
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <Link href="/handling-failure" className="btn-primary">
-            Next: How We Handle Failure &rarr;
+          <Link href="/a2acw" className="btn-primary">
+            Next: A2ACW Protocol (Methodology step 2) &rarr;
+          </Link>
+          <Link href="/handling-failure" className="btn-secondary">
+            Skip ahead: How We Handle Failure (step 4)
           </Link>
           <Link href="/honest-assessment" className="btn-secondary">
             Honest Assessment

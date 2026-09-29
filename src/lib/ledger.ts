@@ -37,7 +37,7 @@ export const REFUTATIONS_ON_EXTERNAL_DATA = 5;
  */
 export const ROOTS_FRAMEWORK_SPECIFIC = 2;
 export const ROOTS_SENTENCE =
-  '6 executed refutations from 5 roots: 2 framework-specific (the boost ceiling, behind both TEST-09 and TEST-10; the γ=2 pin — RAR transition shape, unnumbered, closed 2026-05-21) + 1 refuted registration (environment amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell\'s theorem; two nonlocal constructions null; the substrate class untested)';
+  '6 executed refutations from 5 roots: 2 framework-specific (the boost ceiling, behind both TEST-09 and TEST-10; the γ=2 pin — RAR transition shape, unnumbered, closed 2026-05-21; at the threshold once galaxies, not points, are the unit — 2026-09-29) + 1 refuted registration (environment amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell\'s theorem; two nonlocal constructions null; the substrate class untested)';
 /** Sentence rewritten 2026-09-14: the old form ("6 executed refutations; 2 … roots + 1 + 1 + 1") summed
  *  to 5 and a graduate-physics persona read it as an arithmetic error. */
 
@@ -121,7 +121,7 @@ export const REFUTATION_ROWS: RefutationRow[] = [
     root: 'The γ = 2 pin',
     whichC: 'C_g, keyed on observed acceleration',
     data: 'SPARC radial acceleration relation (2,807 points)',
-    convention: 'None. With γ free the fit lands on MOND\'s simple μ (a reparametrization, not a refutation).',
+    convention: 'Effective-N. The +184 treats 2,807 points as independent; with the galaxy as the unit (measured N_eff ≈ 150, 2026-09-29) it is ΔBIC ≈ +11, 1.6–2.2σ: disfavoured at the threshold, not decisive. With γ free the fit lands on MOND\'s simple μ (a reparametrization, not a refutation).',
   },
   {
     n: 4,

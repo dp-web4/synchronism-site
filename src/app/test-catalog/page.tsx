@@ -13,7 +13,7 @@ const tiers = [
     time: '1–6 months',
     color: '#10b981',
     href: '/tier-1-existing',
-    desc: 'Reanalysis of public datasets (Gaia DR3, SPARC, SDSS, DESI). No new hardware needed.',
+    desc: 'Reanalysis of public datasets (Gaia DR3, SPARC, SDSS, DESI). No new hardware needed. The four tier counts sum to the original 24; TEST-25 and TEST-26 (added after the registry closed) are listed on the Tier 1 page but sit outside these totals.',
   },
   {
     tier: 'Tier 2: Pilot Experiments',
@@ -333,8 +333,8 @@ export default function TestCatalog() {
             environment claim was executed 2026-07-14 with r&sup2; = 0.0001 — refuted. That run is TEST-03s, a
             substitute; the ALFALFA-registered TEST-03 remains unrun.{' '}
             <em style={{ color: 'var(--color-text-muted)' }}>(ID corrected 2026-09-14; this label previously
-            said TEST-03, the ALFALFA TFR-scatter card.)</em> Wide binaries (TEST-02): <em>Self-Eliminating-or-Tie</em> —
-            the predicted 0.05–0.4% signal sits ~80&times; below Gaia DR3 systematics, and either
+            said TEST-03, the ALFALFA TFR-scatter card.)</em> Wide binaries (TEST-02): <em>Self-Eliminating-or-Tie; density branch excluded at the published knee (Oort, LLR), acceleration branch = MOND; DR3 dispute unresolved</em> —
+            the 0.05–0.4% signal belongs to a knee no other page uses (at the published calibration the boost is ~3.5&times;10⁴ in g, excluded by the Oort limit and by lunar laser ranging); on the acceleration branch the prediction is MOND&apos;s, and either
             outcome of the ongoing Chae-vs-Banik dispute is covered by Newton or MOND respectively,
             so no result selects this framework. See{' '}
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}

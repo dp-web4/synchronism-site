@@ -179,7 +179,7 @@ export default function GammaParameter() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           The galaxy rung &mdash; the only one tested quantitatively &mdash; refutes the premise from both
           directions: pinning &#x03B3; = 2 (from N<sub>corr</sub> = 1) is rejected on the SPARC RAR at
-          &#x0394;BIC = +184 (conservative &ge;+33 after intra-galaxy correlation), and the data-preferred &#x03B3; &#x2248; 0.49 back-implies
+          &#x0394;BIC = +184 (with the 2,807 points treated as independent; scored by galaxy, 2026-09-29, the margin is ΔBIC ≈ +11, 1.6–2.2σ: disfavoured at the threshold, not decisive), and the data-preferred &#x03B3; &#x2248; 0.49 back-implies
           N<sub>corr</sub> &#x2248; 17, contradicting the independent-stars premise that licensed
           N<sub>corr</sub> = 1 in the first place. On the chemistry rung, N<sub>corr</sub> is read backward
           from &#x03B3;. Across all 17 scales, the formula has never <em>predicted</em> an

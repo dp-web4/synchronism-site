@@ -185,6 +185,12 @@ export default function CoreIdea() {
       </section>
 
       <section className="section content-width">
+        <div style={{ background: 'rgba(16,185,129,0.07)', border: '1px solid rgba(16,185,129,0.35)', borderRadius: '0.375rem', padding: '0.7rem 1rem', marginBottom: '1.25rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#10b981' }}>Beginner path: you can stop here.</strong> Everything above is the plain-words version. From this
+          heading down the page compares the curve with Hill functions, Naka&ndash;Rushton curves and Landau theory for readers with a physics
+          background. The one sentence to take away: when the data are allowed to pick the curve, it barely responds to density at all, the
+          opposite of the idea. Next: <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not (Step 4)</Link>.
+        </div>
         <h2>Why These Specific Choices?</h2>
 
         <h3>Why tanh?</h3>

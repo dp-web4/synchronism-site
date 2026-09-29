@@ -79,7 +79,7 @@ export default function DarkMatterFailure() {
           executed and failed on their own terms: TEST-05 was retired with the rest of the &ldquo;MOND-shared&rdquo;
           badge class (all three tests in that class dissolved on execution — see{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>), and the
-          density-keyed RAR fit itself is rejected on real SPARC data at &#x0394;BIC=+184 (conservative &ge;+33 after intra-galaxy correlation) (see{' '}
+          density-keyed RAR fit itself is rejected on real SPARC data at &#x0394;BIC=+184 with the 2,807 points treated as independent (with the galaxy as the unit, 2026-09-29: ΔBIC ≈ +11, 1.6–2.2σ, disfavoured at the threshold rather than decisive; see Galaxy Rotation) (see{' '}
           <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>).
           The viscosity sign error documented above was never the framework&apos;s only galaxy-scale problem
           &mdash; it was the first one found.

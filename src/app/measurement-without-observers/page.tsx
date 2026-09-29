@@ -152,10 +152,16 @@ export default function MeasurementWithoutObservers() {
 
         <h2>What&apos;s Untested</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Six experimental protocols have been designed (Sessions #368-370) to test whether
-          decoherence patterns at the MRH boundary match Synchronism&apos;s predictions. None have
-          been run. The theory predicts specific scaling relationships between N<sub>corr</sub>,
-          decoherence timescales, and the sharpness of the quantum-classical transition.
+          Six experiment classes were sketched (Sessions #368-370) to test whether
+          decoherence patterns at the MRH boundary match Synchronism&apos;s predictions. None has
+          been run, and none can be as written: a protocol needs a predicted <em>rate</em>, and the MRH-crossing
+          mechanism has no rate parameter, so they are experiment classes, not protocols (relabelled 2026-09-29, researcher
+          visitor persona). The theory asserts scaling relationships between N<sub>corr</sub>,
+          decoherence timescales, and the sharpness of the quantum-classical transition, with no rung of the N<sub>corr</sub> ladder anchored to
+          an apparatus. The one rate the framework&apos;s own substrate suggests, intrinsic decoherence from Planck-scale diffusion, was checked
+          against the heat budget of ordinary matter (explorer, 2026-09-27): at that diffusion constant a hydrogen atom would be heated at
+          2&times;10⁻⁴ eV/s, so the bound-state limit is 15&ndash;30 orders of magnitude below the natural value (prior art: Pearle &amp; Squires 1994;
+          Donadi et al. 2021), which is where CSL and Di&oacute;si&ndash;Penrose bounds bite. Any rate assigned here inherits those bounds.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

@@ -659,6 +659,20 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'Canonical definition (Honest Assessment badge reference): the result achieves the same or better fit using a structurally simpler null model (e.g., a polynomial in atomic number Z). The match is evidence of monotonicity in the target variable, not framework-specific physics. Plain version: if a property just rises steadily along the periodic table, almost any smooth curve will correlate with it strongly. Example: the chemistry correlations (sound velocity r = 0.982) — a 2-parameter polynomial in Z, run 2026-05-10, matches them within |Δr| ≤ 0.07 and sometimes beats them. Appears with a Reparametrization badge. (Entry added 2026-09-15.)',
     learnMore: '/honest-assessment#validation-badge-definitions',
   },
+  'template-bias-caveat': {
+    term: 'Template Bias Caveat',
+    fullName: 'Template Bias Caveat (badge qualifier on the chemistry rate)',
+    brief: 'A warning attached to the chemistry \u201c89% boundary-consistent\u201d rate: the rate was scored against a template that any smooth S-shaped trend in atomic number would also satisfy, so it measures the template, not the framework.',
+    explanation: 'Appears on Why Synchronism (Beginner step 1) next to the chemistry result. The 89% counts how many of 1,703 catalogued phenomena sit where a sigmoid in density says they should. A two-parameter polynomial in atomic number matches the same correlations within |\u0394r| \u2264 0.07 (null model run 2026-05-10), so the template, not the coherence equation, explains the rate. It is a qualifier on a descriptive number, not one of the nine validation badges. (Entry added 2026-09-29 after a technical-writer visitor persona found the label undefined.)',
+    learnMore: '/chemistry-correlation-explorer',
+  },
+  'boundary-consistent': {
+    term: 'Boundary-Consistent (89%)',
+    fullName: '89% Boundary-Consistent \u2014 the chemistry consistency rate',
+    brief: 'The share of catalogued chemical phenomena (about 89% of 1,703) whose behaviour is consistent with the \u03b3 \u2248 1 sparse/collective boundary. A descriptive rate, not a verdict; it carries the Template Bias Caveat.',
+    explanation: 'Consistency is not prediction: the rate was computed after the phenomena were catalogued, and about 86% of the consistent cases restate the Debye model (1912) in new notation (research ledger, Bucket 3). The label is rendered in the Reparametrization badge colour on Why Synchronism because that is the verdict the audit reached for the chemistry sector. (Entry added 2026-09-29.)',
+    learnMore: '/gamma-boundary',
+  },
   'underpowered-as-registered': {
     term: 'Underpowered (as registered)',
     fullName: 'Underpowered as Registered (status note, not a badge)',

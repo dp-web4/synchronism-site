@@ -213,7 +213,7 @@ export default function ChemistryCorrelationExplorer() {
         <p style={{ fontSize: '0.85rem', color: '#f87171', border: '1px solid rgba(239,68,68,0.4)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem', marginBottom: '0.5rem' }}>
           <strong>Read before sorting: the r column is not evidence.</strong> A 2-parameter polynomial in atomic number Z
           matches these correlations to within |&#x0394;r| &#x2264; 0.07 (null-model verdict above), and how &#x03B3; was assigned to each material is
-          undocumented. Per-row null values are not in this page&apos;s data, so they are not shown beside each r.
+          undocumented, so the r values are <strong>not reproducible from this site</strong>: the per-material N<sub>corr</sub> (or &#x03B3;) assignment table has not been published, and the full 1,703-row file is not linked. Per-row null values are not in this page&apos;s data, so they are not shown beside each r.
         </p>
         <div style={{ overflowX: 'auto', marginBottom: '1.5rem' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>

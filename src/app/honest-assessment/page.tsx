@@ -248,8 +248,9 @@ export default function HonestAssessment() {
           does not survive its own pre-fixed rule; whether it stays in the count of 6 is pending dp. The same ceiling caps how
           dark-matter-dominated a galaxy can appear at 68.5% — a convention-dependent figure (see the Verdict
           section below); the number that survives regardless of convention is the tail: SPARC&apos;s maximum
-          observed DM fraction (0.927) requires a boost of at least 13.7, which no candidate cosmic ratio
-          supplies (TEST-10, 2026-07-15). The framework&apos;s registered environment effect was also run (2026-07-14): no trace
+          observed DM fraction (0.927) requires a boost of at least 13.7, which no ratio built from Ω<sub>m</sub>
+          supplies (TEST-10, 2026-07-15); the one cosmic ratio that clears it, 1/Ω<sub>b</sub> = 20.3, counts no dark matter and is
+          excluded by the weak-lensing RAR at 10⁻¹⁵ m/s² (1.71×, 2026-09-25), so it survives on SPARC only to die one decade lower. The framework&apos;s registered environment effect was also run (2026-07-14): no trace
           (r² = 0.0001 against a &gt;20% claim). The earlier cosmology test (DESI growth suppression) is
           <em>disfavored but not counted as a refutation</em> — the test as registered lacked the power to
           discriminate (corrected 2026-07-14). The galaxy transition-shape
@@ -356,8 +357,12 @@ export default function HonestAssessment() {
           convention-dependent: under the alternative baryon-budget convention (Ω<sub>m</sub>/Ω<sub>b</sub>&nbsp;≈&nbsp;6.40,
           giving f<sub>DM,max</sub>&nbsp;≈&nbsp;0.844) the reported <em>median</em> (0.755) actually passes, and
           the 69% figure does not hold. What survives under <em>either</em> convention is the tail: SPARC&apos;s
-          maximum observed DM fraction is 0.927, which requires a boost of at least 13.7 — no candidate cosmic
-          ratio supplies that, a class exclusion regardless of which convention sets the ceiling. Stated as a class
+          maximum observed DM fraction is 0.927, which requires a boost of at least 13.7 — no ratio built from Ω<sub>m</sub>
+          supplies that (the swept set: 1/Ω<sub>m</sub> = 3.17, (Ω<sub>m</sub>−Ω<sub>b</sub>)/Ω<sub>b</sub> = 5.4, Ω<sub>m</sub>/Ω<sub>b</sub> = 6.4); the no-CDM ratio
+          1/Ω<sub>b</sub> = 20.3 does clear 13.7 on SPARC and is excluded instead by the weak-lensing RAR (1.71× short at 10⁻¹⁵ m/s²,
+          2026-09-25). A cheaper kill predates SPARC by two decades: the classical dwarf spheroidals (Draco, Ursa Minor, Sextans) have dynamical
+          M/L<sub>V</sub> ≈ 100–300 (Mateo 1998; Walker et al. 2009), boosts of 30–100 under any stellar M/L, above every cap; MOND has its own
+          dSph problems (external field, tides), so cite this against the ceiling, not as a discriminator against MOND (added 2026-09-29). Stated as a class
           (added 2026-09-23 at a researcher persona&apos;s suggestion): <strong>no boost ceiling tied to a cosmic
           abundance ratio survives SPARC&apos;s most dark-dominated dwarfs</strong>, because those dwarfs are baryon-poor
           relative to the cosmic mean and the largest such ratio, &Omega;<sub>m</sub>/&Omega;<sub>b</sub> &asymp; 6.4, is half the
@@ -388,13 +393,15 @@ export default function HonestAssessment() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>(2) RAR Transition Shape (2026-05-21):</strong> The one non-degenerate galaxy-scale
           discriminating test — whether the compander&apos;s transition curve (γ=2) differs from McGaugh&apos;s MOND
-          interpolating function — was run on 2807 real SPARC points. γ=2 is refuted at ΔBIC=+184
-          (conservative: ≈33). Free-γ converges to γ≈0.49&nbsp;=&nbsp;MOND, with RMS identical to McGaugh.
+          interpolating function — was run on 2807 real SPARC points. γ=2 is refuted at ΔBIC=+184 with the points treated as independent;
+          with the galaxy as the replication unit (166 curves; measured N<sub>eff</sub> ≈ 150, 2026-09-29) the same comparison is
+          ΔBIC ≈ +11, 1.6σ out-of-sample and 2.2σ in-sample &mdash; disfavoured at the threshold, not decisive (the previously quoted
+          &ldquo;conservative ≈33&rdquo; was a guessed discount, retired 2026-09-29). Free-γ converges to γ≈0.49&nbsp;=&nbsp;MOND, with RMS identical to McGaugh.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>How to read the ΔBIC ladder (sharpened 2026-07-27, external-reviewer point).</strong>{' '}
           The two numbers do different work and should not be read as one scale. The γ=2 result is a
-          pure likelihood verdict (Δk&nbsp;=&nbsp;0): ΔBIC&nbsp;=&nbsp;+184 is decisive misfit. The free-γ
+          pure likelihood verdict (Δk&nbsp;=&nbsp;0): ΔBIC&nbsp;=&nbsp;+184 is decisive misfit <em>if the points are independent</em> (they are not; see the galaxy-level numbers above). The free-γ
           result is almost pure parameter charge: with N&nbsp;=&nbsp;2807, ln&nbsp;N&nbsp;=&nbsp;7.94, so one
           added free parameter costs +7.94 in BIC <em>before any likelihood is considered</em>. The observed
           ΔBIC&nbsp;=&nbsp;+7.1 therefore implies Δχ²&nbsp;≈&nbsp;&minus;0.84 — the free-γ compander fits the
@@ -856,8 +863,8 @@ export default function HonestAssessment() {
             </div>
             <PlainTerms>
               across 175 galaxies analyzed together, the framework&apos;s preferred curve-shape fits
-              measurably worse than MOND&apos;s (ΔBIC is a fit-quality penalty; +184 is decisive, and even
-              the conservative estimate ≥ +33 is). If you let the framework&apos;s shape parameter float
+              measurably worse than MOND&apos;s (ΔBIC is a fit-quality penalty; +184 counts every point as an
+              independent measurement, and they are not &mdash; scored by galaxy the margin is about +11, at the threshold, 2026-09-29). If you let the framework&apos;s shape parameter float
               freely, it simply turns into MOND&apos;s curve — so it is either worse than MOND or identical
               to it, never better.
             </PlainTerms>
@@ -866,7 +873,7 @@ export default function HonestAssessment() {
               (μ<sub>Syn</sub>&nbsp;=&nbsp;tanh(γ&nbsp;ln(1+x)), γ=2) and MOND&apos;s RAR interpolating function
               was executed on 2807 real SPARC points. Kill criterion: ΔBIC &gt; 10 favoring McGaugh refutes γ=2.
               Actual result: <strong>ΔBIC&nbsp;=&nbsp;+184</strong> (conservative intra-galaxy correlation
-              correction: ΔBIC&nbsp;≈&nbsp;33 — still decisive).
+              correction: ΔBIC&nbsp;≈&nbsp;33 — a guessed discount; the measured galaxy-level margin is ≈ +11, at the threshold, 2026-09-29).
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
               <strong style={{ color: '#f87171' }}>Which coherence function this kills (target corrected 2026-09-08).</strong>{' '}
@@ -949,8 +956,8 @@ export default function HonestAssessment() {
                 <thead>
                   <tr style={{ textAlign: 'left', color: 'var(--color-text-muted)' }}>
                     <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>Dynamics (42 clusters)</th>
-                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>⟨obs − pred⟩ outer slope</th>
-                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>× Newtonian residual</th>
+                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>⟨obs − pred⟩ outer slope (± 0.027 stat, each row)</th>
+                    <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>× Newtonian residual (unstable: the baseline is consistent with zero under Plummer, +0.021 ± 0.027; read the residuals, not this column)</th>
                     <th style={{ padding: '0.35rem', borderBottom: '1px solid rgba(255,255,255,0.15)' }}>Verdict</th>
                   </tr>
                 </thead>
@@ -1163,8 +1170,10 @@ export default function HonestAssessment() {
               <strong>Robustness:</strong> ordering invariant across King vs Plummer mass models, three radial windows,
               radial-velocity-only bins; jackknife moves no mean by more than 0.042; radial anisotropy rescues Newton at
               β ≈ 0.75 and MOND+EFE at 0.81 but the density law at no β ≤ 0.8, and real tidally-limited clusters go{' '}
-              <em>tangentially</em> anisotropic, which makes it worse. Significance is quoted as the ratio to the
-              Newtonian residual (3.7–4.4×), not as sigmas &mdash; mass segregation, mass model and anisotropy are
+              <em>tangentially</em> anisotropic, which makes it worse. Significance was quoted as the ratio to the
+              Newtonian residual (3.7–4.4×); that ratio is not a statistic when the baseline is consistent with zero (under Plummer the
+              Newtonian residual is +0.021 ± 0.027 and the ratio swings 5–9×, 2026-09-19), so read the density-law residual as
+              −0.211 ± 0.027 against Newton&apos;s −0.057 ± 0.027, a 4σ-scale gap on the statistical error alone, not as sigmas &mdash; mass segregation, mass model and anisotropy are
               unmodelled and all push the same way. Not tested here: the S691 placement at 10⁻²³ kg/m³ (below any cluster
               density &mdash; out of scope, not exonerated); the sectors that never define ρ<sub>crit</sub> at all.
               Finding: <code style={{ fontSize: '0.78rem' }}>explorer/findings/globular-cluster-knee-test-executed-universal-gamma-excluded-registered-gamma2-survives.md</code>{' '}

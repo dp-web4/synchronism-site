@@ -163,7 +163,7 @@ export default function DarkMatter() {
           the coherence function has no algebraic chain to the observed acceleration relation (see{' '}
           <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>{' '}
           for the locality argument), and on real SPARC data the compander is rejected at
-          &#x0394;BIC=+184 with &#x03B3;=2 pinned (conservative &ge;+33 after intra-galaxy correlation) &mdash; <em>target
+          &#x0394;BIC=+184 with &#x03B3;=2 pinned (with the 2,807 points treated as independent; scored by galaxy, 2026-09-29, the margin is ΔBIC ≈ +11, 1.6–2.2σ: disfavoured at the threshold, not decisive) &mdash; <em>target
           corrected 2026-09-08:</em> that number refutes the <strong>acceleration-keyed</strong> realization the fit actually
           ran, not the density-keyed C(&#x03C1;) this page describes; the density-keyed law loses <em>harder</em>, head-to-head
           on SPARC at &#x0394;BIC +2843 with &#x03B3; free, and its floored form is capped by the boost ceiling &mdash; the BTFR slope kill fires at 3.3&#x03C3;, and SPARC&apos;s most

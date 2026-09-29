@@ -318,10 +318,18 @@ export default function GalaxyRotation() {
             </table>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-            <strong>Kill criterion triggered.</strong> ΔBIC = +184 ≫ 10 refutes the γ=2 compander
-            as the galaxy mechanism. Conservative correction for intra-galaxy point correlation
-            (effective N≈500–1000): ΔBIC ≈ 33 — still decisive. The residual is a coherent
-            S-shaped ≈0.05–0.10 dex signature at the transition, significant at ~8σ per bin.
+            <strong>Kill criterion triggered &mdash; under point independence.</strong> ΔBIC = +184 ≫ 10 refutes the γ=2 compander
+            as the galaxy mechanism if the 2,807 points are independent. They are not: they come from 166 rotation curves, and
+            the mass-to-light, distance and inclination errors move a whole curve together. <strong>With the galaxy as the
+            replication unit (run 2026-09-29, pre-registered):</strong> γ = 2 is worse than the free fit in 94 of 166 galaxies
+            (57%; sign-test p = 0.05); a 10-fold galaxy-level cross-validation prefers free γ by 1.6σ; a galaxy-block bootstrap
+            puts the full-N ΔBIC at 179 with 95% interval [23, 351], a spread that implies an effective N of about 150; and
+            ΔBIC recomputed with N = 166 is +10.9, at the threshold. Seven galaxies carry 98% of the net excess, five pull the
+            other way. So the pin is <em>disfavoured at the threshold</em>, not decisively refuted; the previously quoted
+            &ldquo;effective N ≈ 500–1000, ΔBIC ≈ 33, still decisivestill decisive&rdquo; was a guessed discount, and therdquo; was a guessed discount (retired 2026-09-29), and the
+            &ldquo;~8σ per bin&rdquo; also assumed independent points. Script:{' '}
+            <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/gamma2_pin_galaxy_level.py</code> (+ PREREG, output). Not done: refitting
+            per-galaxy nuisances under each law, which is the published method (Desmond, Hees &amp; Famaey 2024) and the one to cite.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', fontStyle: 'italic' }}>
             <strong>Note on γ=2:</strong> γ=2 follows from N<sub>corr</sub>=1 (individual stars taken as uncorrelated),
@@ -379,7 +387,13 @@ export default function GalaxyRotation() {
               C(x) = x/(x+2) = &#x03BC;<sub>simple</sub>(x/2)
             </span>
             &mdash; MOND&apos;s simple interpolating function <em>for all x</em>, not just in the tail, with
-            a&#x2080; &rarr; 2a&#x2080;. The free-&#x03B3; SPARC fit lands at <strong>0.489, which is 2% from the
+            a&#x2080; &rarr; 2a&#x2080;. <strong>x is defined once, and it matters which:</strong> here x = g<sub>obs</sub>/a&#x2080;&prime;, and
+            the fit solves g<sub>bar</sub> = g<sub>obs</sub>&middot;C(g<sub>obs</sub>/a&#x2080;&prime;) implicitly for g<sub>obs</sub>, the
+            &#x03BC;-form. The identity does <em>not</em> survive keying on g<sub>bar</sub>: with g<sub>obs</sub> = g<sub>bar</sub>/C(g<sub>bar</sub>/a&#x2080;&prime;)
+            at &#x03B3; = &frac12; one gets g<sub>obs</sub> = g<sub>bar</sub> + 2a&#x2080;&prime;, a constant acceleration offset (v&sup2; rising linearly
+            with r), not a flat curve and not MOND: at g<sub>bar</sub>/a&#x2080; = 0.01 the &#x03BC;-form gives g<sub>obs</sub>/a&#x2080; = 0.147
+            (deep-MOND &radic;(2x) = 0.141) while the g<sub>bar</sub>-keyed division gives 2.01. The &ldquo;g<sub>obs</sub> = g<sub>bar</sub>/C&rdquo;
+            written elsewhere on this page is the floored TEST-09/10 form, a different function (added 2026-09-29, graduate-physics visitor persona). The free-&#x03B3; SPARC fit lands at <strong>0.489, which is 2% from the
             unique &#x03B3; at which this model does not resemble MOND but <em>is</em> MOND.</strong> The same
             cancellation runs the cosmology sector: at &#x03B3; = &frac12;, (1&minus;C)/C = 2/x, so the substituted
             dark-energy density &#x03C1;<sub>DE</sub> = &#x03C1;<sub>m</sub>(1&minus;C)/C = 2&#x03C1;<sub>crit</sub>{' '}

@@ -1,0 +1,28 @@
+rows 2807, galaxies 166
+C1  gamma=2 vs McGaugh: dBIC = +184.0  (rms 0.1485 vs 0.1437; a0'=2.967e-10, a0_McG=1.128e-10)
+C2  free gamma: gamma_hat = 0.489, a0' = 5.333e-11, dBIC vs McGaugh = +7.1
+    C1 PASS   C2 PASS  (C2 tolerance widened to the 0.025 grid step)
+P1  gamma=2 worse in 94/166 = 56.6% of galaxies; sign-test p = 5.14e-02; Wilcoxon p = 6.82e-02
+    P1 REFUTED
+P4' median per-galaxy rms excess of gamma=2 over free: +0.0061 dex
+P3  dBIC(gamma=2 vs McGaugh) with N_eff = N_gal = 166: +10.9   (5.6x convention: +32.9)
+    P3 HELD
+P5  share of total paired excess from galaxies with median g_bar/a0 < 1: 51.0%  (151 galaxies)
+    P5 REFUTED
+    fold 0: train gamma_hat=0.600  test gal=17
+    fold 1: train gamma_hat=0.489  test gal=17
+    fold 2: train gamma_hat=0.489  test gal=17
+    fold 3: train gamma_hat=0.425  test gal=17
+    fold 4: train gamma_hat=0.450  test gal=17
+    fold 5: train gamma_hat=0.450  test gal=17
+    fold 6: train gamma_hat=0.525  test gal=16
+    fold 7: train gamma_hat=0.525  test gal=16
+    fold 8: train gamma_hat=0.425  test gal=16
+    fold 9: train gamma_hat=0.550  test gal=16
+P2  held-out lnL/pt: free 1.42129  pin 1.39391  diff +0.02738/pt;  total +76.9 ± 48.9 (galaxy-level) => 1.6 sigma
+    P2 REFUTED
+P4  galaxy-block bootstrap (B=2000) of dBIC(gamma=2 vs McGaugh) at full N: median 179, 95% [23, 351]
+    P4 NEITHER
+    implied N_eff from bootstrap spread (N * (var_iid_est / var_boot)): sigma_boot = 82.1; a plain point-iid chi2-difference sd would be ~19.2
+
+VERDICT (registered rule: pin stays refuted convention-free iff P1 and P2 HELD): CONVENTION-DEPENDENT

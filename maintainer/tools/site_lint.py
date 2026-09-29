@@ -241,6 +241,17 @@ RETIRED = [
      "gamma ~ 1 is a Debye theta_D reparametrization; no N_corr procedure; Z-polynomial null matches"),
     (r"0\.0185 / &lang;compat", "2026-09-27",
      "B4 1/<C> holds only by construction (weight multiplier); reparametrization"),
+    # --- retired 2026-09-29 (maintainer): gamma=2 pin scored at galaxy level (N_eff ~ 150 measured); TEST-02 status unified;
+    #     1/Omega_b clears the dwarf cap on SPARC; Coherence Explorer "degeneracy" was a pan; protocols without a rate; Sigma_0 0.5%
+    (r"conservative(:)?\s*(&ge;|≥|≈)\s*\+?33", "2026-09-29",
+     "the 5.6x discount was a guess; galaxy-block bootstrap gives N_eff ~ 150 and dBIC ~ +11 for the gamma=2 pin"),
+    (r"effective N\s*≈\s*500", "2026-09-29", "same: N_eff measured ~150, not assumed 500-1000"),
+    (r"\+184 is decisive[^<]*\.", "2026-09-29", "decisive only under point independence; scored by galaxy it is at the threshold"),
+    (r"no candidate cosmic ratio", "2026-09-29", "1/Omega_b = 20.3 clears the 13.7 dwarf cap on SPARC; it dies on lensing, one decade lower"),
+    (r"degeneracy that makes\s+SPARC", "2026-09-29", "rho_crit is a pan, gamma a shape; both identified through the knee; the degeneracy is with MOND's mu"),
+    (r"Six experimental protocols have been designed", "2026-09-29", "no rate parameter: experiment classes, not protocols"),
+    (r"0\.5% match</strong>", "2026-09-29", "0.5% needs H0 ~ 70; the site-standard 67.4 gives 4%, and the target is uncertain 2x"),
+    (r"Pending External Adjudication \(2026\)", "2026-09-29", "TEST-02 carries one status string on every surface (see the Tier 1 card name)"),
     (r"color: '#2ecc71' }}>CONFIRMED</td>", "2026-09-27",
      "no CONFIRMED status cells on the coupling experiment; B4 is a reparametrization"),
 ]

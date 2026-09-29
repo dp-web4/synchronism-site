@@ -17,6 +17,8 @@ export default function Home() {
         </h1>
         <p className="hero-subtitle">
           <strong>We proposed this. We tested it. It did not hold as stated. What follows is what we learned.</strong>{' '}
+          Read on to watch a big idea get tested in public and lose honestly: which parts turned out to be
+          known physics renamed, which parts the data killed, and what that rules out for any theory of the same shape.{' '}
           (The research, audits and computations are done by AI agents, with a human, dp, setting direction and
           overseeing.){' '}
           The bet: a single dial &mdash; how coherently a system&apos;s parts act together, computed from its
@@ -464,15 +466,6 @@ export default function Home() {
               The &ldquo;6 refutations&rdquo; count read &ldquo;4&rdquo; until 2026-08-09 &mdash; the pre-recount number, stale here while the footer said 6.{' '}
               The preferred-frame range was corrected 2026-08-09 from &ldquo;11 to 28&rdquo; to 16&ndash;28; the &ldquo;11&rdquo; had no derivation behind it.
             </details>
-            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
-              Badges used below:{' '}
-              <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization · Speculative · Untested · Failed · Audited-Negative</Link>
-              {' '}— text after a dash inside a badge (e.g. &ldquo;Speculative — Untestable as Stated&rdquo;) is a finding descriptor, not a separate badge — definitions on the <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment page</Link>.
-              {' '}<span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em' }}>("Validated" is deprecated; "Withdrawn" is an operational state, not a badge.)</span>
-              <br />
-              <strong>Reparametrization</strong>, this site&apos;s most common verdict, means:{' '}
-              <em>equivalent to existing physics in different notation — the same math wearing a new costume, not new physics.</em>
-            </div>
           </section>
 
           {/* Research Activity — clearly labeled, secondary */}
@@ -515,6 +508,15 @@ export default function Home() {
           {/* What It Covers */}
           <section style={{ marginBottom: '3rem' }}>
             <h2>What Synchronism Covers</h2>
+            <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0 0 0.75rem' }}>
+              Badges used in the table below:{' '}
+              <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization · Speculative · Untested · Failed · Audited-Negative</Link>
+              {' '}— text after a dash inside a badge (e.g. &ldquo;Speculative — Untestable as Stated&rdquo;) is a finding descriptor, not a separate badge — definitions on the <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment page</Link>.
+              {' '}<span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em' }}>("Validated" is deprecated; "Withdrawn" is an operational state, not a badge.)</span>
+              <br />
+              <strong>Reparametrization</strong>, this site&apos;s most common verdict, means:{' '}
+              <em>equivalent to existing physics in different notation — the same math wearing a new costume, not new physics.</em>
+            </div>
             <div className="grid-2">
               <Link href="/measurement-without-observers" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Quantum Physics</h3>

@@ -1,0 +1,27 @@
+Starting Synchronism Maintainer Session at Sun Oct  4 06:00:01 PDT 2026
+Session is done and pushed: site commit `2d1c22e` and Synchronism commit `da502b37`. `next build` passes, and the site lint shows 0 live hits under 138 rules (14 when run against the previous commit as a control).
+
+**WAKE: yes, today's feedback points at the research direction.** The researcher persona asked whether any reading of the framework predicts a different number from MOND or ΛCDM anywhere in data we can reach. The archive has been circling that question since 09-25: no test can move Bucket 0, every surviving version is nested inside its parent theory, and door #3 is excluded by the heat budget of ordinary matter. So I wrote a proposal before fixing anything. It argues the registered physics program may have reached a stopping point, and that its deliverable is a short note collecting the negative results others could cite. It's dp's call. The proposal also recommends:
+- updating SPINE's door-#3 sentence;
+- showing what the "6 refutations" count is made of: 4 data refutations, 1 at the threshold, 1 construction check.
+
+**Two small pieces of research (no bucket moves; count stays 6):**
+- **Which a₀ the fit actually measures.** The scale the SPARC fit pins down is a₀′/γ, not a₀′. It moves only 1.6% across the Υ range while a₀′ moves 3.6×. Different fitting methods give 1.07–1.18×10⁻¹⁰, and cH₀/2π sits 3–12% below that. So the fit doesn't sharpen the coincidence beyond the site's existing "13%". It also shows the ledger's 08-14 "factor-2 a₀ tension that dissolves at Υ = 0.6" was a bookkeeping error both ways. I corrected that in PREDICTIONS.md.
+- **Galaxy clusters.** This is a rough estimate from round literature numbers, not a run on data. At a Coma-like cluster's r500, the registered law falls short of the needed boost by 1.7–3.5× under every floor, against MOND's 1.8–2.0×. That's MOND's known cluster problem inherited, not a third kill. My first pass seemed to show the no-dark-matter floor passing. Checking the TEST-09 script showed the registered law includes a 1/φ power I had left out, and with it that floor fails too.
+
+**Site fixes:**
+- **"+184" qualified:** the 09-29 sweep had missed 12 lines where ΔBIC +184 appeared without its galaxy-level qualifier, including Test Roadmap B2 and the glossary. A new lint rule now flags that number when the qualifier isn't within 3 lines.
+- **TEST-25:** now leads with the published 8.7σ and says the squeeze applies only to the acceleration-keyed law.
+- **σ₈ "2.4σ tension":** marked as built on a value calibrated to lensing data. /cosmology-predictions still said "kill triggered", and that is fixed.
+- **Learning-path navigation:** pages on two learning paths now get one Next button per path, on all 8 affected pages.
+- **Definitions:** Tier 1 has a "how to read a test card" key above the cards. Honest Assessment's page index now links to the status-verb definitions and the inherited-MOND problems (clusters, CMB, GW170817).
+- **γ explanation:** a three-line γ status on First Encounter, and the glossary entry now leads with its status.
+- **Smaller corrections:** Equation Anatomy no longer says every test is density-keyed, and Measurement Without Observers no longer contradicts its own matter-stability bound.
+- **Explorer 09-29 items applied.**
+- **Repaired text:** garbled text left on /galaxy-rotation by a 09-29 edit.
+
+Two visitor complaints were fetch artifacts: the glossary does define dp and Withdrawn, and the A2ACW status box was already consistent. Visitor logs 09-30 to 10-03 were empty, because those maintainer runs ran out of credits.
+
+I seeded two explorer topics: running the cluster check on real cluster data, and one complete table of any reachable observable where some reading differs from MOND or ΛCDM. Deferred items are listed in `maintainer/logs/2026-10-04.md`.
+
+Gmail, Calendar and Drive need authorizing in claude.ai connector settings, and the playwright server couldn't start because `npx` isn't installed. Neither was needed today.

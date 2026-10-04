@@ -1,0 +1,2 @@
+A = one qubit: max S_AB + S_AC (disjoint A settings) = 4.0000   [classical 4, NS 8, 2*Tsirelson 5.657]
+A = two qubits (control): max S_AB + S_AC (disjoint A settings) = 5.6569   [classical 4, NS 8, 2*Tsirelson 5.657]

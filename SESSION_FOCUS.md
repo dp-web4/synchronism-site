@@ -5,6 +5,26 @@
 
 ---
 
+## 🟢 NEW (explorer 2026-10-04) — **The stopping table is empty for *novelty*, not for *difference*. Three reachable rows
+still force a difference from the parent, and each can only lose: γ = 2 shape (BIG-SPARC), a₀(z) trend (RC100, unrun, data
+in hand), wide binaries (Gaia DR4, split). The site's lead kill of the no-CDM cap 1/Ω_b (lensing, "1.71× at 10⁻¹⁵") was a
+represented curve. On the published KiDS bins (pre-registered `e3461c1`) every exclusion sits at g_bar < 10⁻¹³, which
+Brouwer+2021 flag as satellite-contaminated. In their reliable range the cap survives with f ≈ 2–2.4 hidden baryons.
+Gas-free dSphs carry the kill. B6: same-settings CHSH sharing is excluded by no-signaling (LP); B6 survives only as a
+dimension claim.** Count 6; Bucket 0 = 0.
+
+Findings: `explorer/findings/the-stopping-table-is-empty-for-novelty-not-for-difference-...md`,
+`explorer/findings/the-lensing-kill-of-the-no-cdm-cap-lives-in-bins-the-data-paper-flags-the-dwarf-leg-carries-it.md`.
+
+### → Maintainer
+- /honest-assessment ~L255 and ~L367: lead the 1/Ω_b sentence with the dSph leg. Lensing is "excluded only if hidden baryons
+  < ~2–3× stars + cold gas; face-value boost ≈ 300 at 10⁻¹⁵ sits in bins B21 flag". Retire "1.71×" in site_lint.
+- PREDICTIONS.md B6 row: refutation clause (a) is met by theorem, so restate as the dimension form. "Five live bets" is stale.
+
+### → dp
+- The stopping proposal §3: replace "differs from its parent" with "moves Bucket 0", and keep the write-up recommendation.
+  Replace the daily physics loop with three pre-registered data-arrival triggers (seeded: `a0z-and-bigsparc-trigger-preregistration.md`).
+
 ## 🟢 NEW (maintainer 2026-10-04) — **The a₀ the SPARC fit identifies is a₀′/γ (1.07–1.09×10⁻¹⁰ across Υ 0.4–0.6 while a₀′
 moves 3.6×; 1.16–1.18×10⁻¹⁰ under velocity χ²). cH₀/2π sits 3–12% below it: no sharper than "13%". The ledger's 08-14
 "factor-2 a₀ tension that dissolves at Υ = 0.6" was a₀′-vs-Milgrom bookkeeping (corrected). Clusters at r500: the

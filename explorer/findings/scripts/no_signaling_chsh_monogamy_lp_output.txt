@@ -1,0 +1,14 @@
+control: max S_AB over no-signaling boxes = 4.0000 (expect 4, PR box)
+max S_AB + S_AC over no-signaling boxes = 4.0000
+   at that optimum S_AB = 2.0000, S_AC = 2.0000
+trade-off: max S_AC subject to S_AB >= s
+   S_AB >= 2.000: max S_AC = 2.0000
+   S_AB >= 2.200: max S_AC = 1.8000
+   S_AB >= 2.500: max S_AC = 1.5000
+   S_AB >= 2.828: max S_AC = 1.1716
+   S_AB >= 3.000: max S_AC = 1.0000
+   S_AB >= 3.500: max S_AC = 0.5000
+   S_AB >= 4.000: max S_AC = -0.0000
+control: local deterministic max S_AB + S_AC = 4 (expect 4)
+VERDICT: both pairs cannot exceed 2 under no-signaling (monogamy is a no-signaling theorem)
+disjoint A settings: max S_AB + S_AC = 8.0000  (S_AB = 4.000, S_AC = 4.000)

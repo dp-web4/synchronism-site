@@ -1,1 +1,32 @@
 Starting Synchronism Explorer Session at Sun Oct  4 08:00:01 PDT 2026
+I picked the stopping question, because a decision to end the physics program was about to be made on it. Pre-registration was pushed first (`e3461c1`) and the session is pushed as `a9ff283`.
+
+**1. The no-CDM boost cap (1/Ω_b = 20.3) against the real KiDS lensing data.** This is the first time it has been checked on the published Brouwer+2021 bins rather than a MOND curve.
+- **Registered outcome:** P1 and P2 held; P3 failed. The cap is excluded with observed baryons, with the paper's hot-gas baryons, and with 5× hidden baryons. The Ω_m-based caps (3.17, 5.39, 6.39) are excluded under every baryon assumption.
+- **The site's figure is wrong in both directions.**
+  - At face value the bins need a boost of about 300 at 10⁻¹⁵ m/s², far above the "1.71× short" the site quotes.
+  - But every exclusion of 20.3 comes from bins below 10⁻¹³ m/s². Brouwer et al. say KiDS isolation is unreliable there, because nearby satellites inflate the signal.
+  - In the paper's reliable range, the cap only needs about 2–2.4× hidden baryons. That is ordinary halo-gas territory.
+- **So the dwarf galaxies close the cap, not lensing.** Gas-free dwarf spheroidals need boosts of 30–100 and have no hidden-baryon escape.
+- **My own mistake:** my pre-registration didn't fix the data range, and the paper defines one. I have not applied the registered "class dead from lensing alone" consequence, and the finding says so openly.
+
+**2. The stopping table is empty for novelty, not for difference.** The maintainer's proposal says no reachable observable differs from MOND or ΛCDM. Its supporting evidence actually shows something narrower: no result could earn new-prediction credit (Bucket 0). Under the literal criterion, three reachable rows remain, and each can only lose:
+- the γ = 2 rotation-curve shape: BIG-SPARC, about 4,000 galaxies, would decide it.
+- the a₀(z) trend: RC100 data already exist and the test hasn't been run.
+- wide binaries: Gaia DR4, planned for December 2026; whichever way it lands, one version of the theory survives.
+
+My recommendation: still write up the negative results, but replace the daily physics loop with three pre-registered triggers that run when the data arrive.
+
+**3. B6 (entanglement is not monogamous) is narrowed, not refuted.**
+- A linear program shows that any no-signaling theory forbids two pairs both violating CHSH when A uses the same settings with both partners. B6's own refutation clause is therefore already met.
+- If A uses different settings for each partner, no-signaling allows sharing, but quantum mechanics forbids it when A is a single qubit (checked numerically: max 4.0).
+- So B6 survives only as a claim about A's dimension. I nearly wrote "refuted by theorem"; the different-settings check stopped me.
+
+**Files** (in `explorer/`):
+- Findings: `findings/the-lensing-kill-of-the-no-cdm-cap-lives-in-bins-the-data-paper-flags-the-dwarf-leg-carries-it.md` and `findings/the-stopping-table-is-empty-for-novelty-not-for-difference-three-reachable-rows-remain-and-all-can-only-lose.md`
+- Scripts, with outputs, in `findings/scripts/`: `lensing_cap_on_kids_bins.py`, `no_signaling_chsh_monogamy_lp.py`, `three_qubit_disjoint_chsh_horodecki.py`
+- Log: `logs/2026-10-04.md`
+- Topics: the two I worked on are archived to `topics/done/`, and a new triggers topic is at `topics/a0z-and-bigsparc-trigger-preregistration.md`
+- `SESSION_FOCUS.md` now has a block with the maintainer actions (fix /honest-assessment, retire "1.71×") and the stopping-question wording for you to decide.
+
+**Not available this session:** Gmail, Google Calendar and Google Drive need authorizing in claude.ai's connector settings, and the playwright server failed to start (`npx` not on PATH). Neither was needed today.

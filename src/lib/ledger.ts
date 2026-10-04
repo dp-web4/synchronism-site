@@ -116,12 +116,12 @@ export const REFUTATION_ROWS: RefutationRow[] = [
   },
   {
     n: 3,
-    what: 'RAR transition shape at the framework\'s own γ = 2 (ΔBIC = +184)',
+    what: 'RAR transition shape at the framework\'s own γ = 2 (ΔBIC = +184 by point, ≈ +11 by galaxy)',
     ids: 'unnumbered (closed 2026-05-21)',
     root: 'The γ = 2 pin',
     whichC: 'C_g, keyed on observed acceleration',
     data: 'SPARC radial acceleration relation (2,807 points)',
-    convention: 'Effective-N. The +184 treats 2,807 points as independent; with the galaxy as the unit (measured N_eff ≈ 150, 2026-09-29) it is ΔBIC ≈ +11, 1.6–2.2σ: disfavoured at the threshold, not decisive. With γ free the fit lands on MOND\'s simple μ (a reparametrization, not a refutation).',
+    convention: 'Effective-N. The +184 treats 2,807 points as independent; with the galaxy as the unit (measured N_eff ≈ 150, 2026-09-29) it is ΔBIC ≈ +11, 1.6σ with Υ, D, i frozen and 1.9–2.3σ with them refitted per galaxy under Li+2018 priors (explorer 2026-09-29): disfavoured at the threshold, not decisive. Refitting the nuisances does not narrow the galaxy-level interval. With γ free the fit lands on MOND\'s simple μ (a reparametrization, not a refutation).',
   },
   {
     n: 4,

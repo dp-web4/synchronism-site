@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import PathNextButtons from '@/components/PathNextButtons';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -284,7 +285,7 @@ export default function MondUnification() {
             on (the &ldquo;nonlinear Poisson equation&rdquo;) has been retracted above &mdash; the structural
             prediction is EFE&nbsp;=&nbsp;0, not a weakened MOND EFE, so the quoted 10.5&ndash;14.5 km/s interval
             does not follow from anything currently on the site. Independently, an isolated-deep-MOND check for a
-            10<sup>7</sup>&nbsp;M&#x2609; system gives &#x03C3;&nbsp;=&nbsp;(4GMa&#x2080;/81)<sup>1/4</sup>&nbsp;&approx;&nbsp;9.4&nbsp;km/s,
+            10<sup>7</sup>&nbsp;M&#x2609; system gives &#x03C3;&nbsp;=&nbsp;(4GMa&#x2080;/81)<sup>1/4</sup>&nbsp;&approx;&nbsp;9.4&nbsp;km/s (with the observed a&#x2080; = 1.2&times;10⁻¹⁰; the framework&apos;s cH&#x2080;/2&pi; gives 9.1&nbsp;km/s),
             radius-independent &mdash; below both quoted intervals, which the EFE (in MOND) can only lower further, not
             raise. No radius is stated for either interval and MOND&apos;s 40.9&nbsp;km/s upper bound does not
             reconstruct from the stated mass. The nested-interval, non-discriminating conclusion above still
@@ -303,9 +304,7 @@ export default function MondUnification() {
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <Link href="/freemans-law" className="btn-primary">
-            Next: Freeman&apos;s Law &rarr;
-          </Link>
+          <PathNextButtons currentPath="/mond-unification" />
           <Link href="/mond-comparator" className="btn-secondary">
             Try It: MOND Comparator
           </Link>

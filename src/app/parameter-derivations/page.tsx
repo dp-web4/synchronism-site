@@ -136,7 +136,7 @@ export default function ParameterDerivations() {
               it is physically MOND only when the argument x is g<sub>obs</sub>/a₀&prime;. Keyed on &rho;, the same
               function is a different force law (see{' '}
               <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>). Compare what the site <em>does</em> badge
-              &ldquo;Reparametrization&rdquo;: a₀&nbsp;&asymp;&nbsp;cH₀/2&pi; is a 13%-off coincidence among
+              &ldquo;Reparametrization&rdquo;: a₀&nbsp;&asymp;&nbsp;cH₀/2&pi; is a 13%-off coincidence (3&ndash;12% against the framework&apos;s own fitted scale a₀′/&#x03B3;, which is no sharper; see Galaxy Rotation) among
               constants, and &Sigma;₀ likewise &mdash; both dimensional numerology, both defensible as such, both
               weaker claims than an exact functional identity. The severity ordering was inverted.
               <br />• <strong>Withdrawn 2026-09-16: &ldquo;when the form is isolated and freed, it loses 2.10×.&rdquo;</strong>{' '}

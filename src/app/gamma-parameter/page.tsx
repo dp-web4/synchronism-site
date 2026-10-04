@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import PathNextButtons from '@/components/PathNextButtons';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -192,9 +193,7 @@ export default function GammaParameter() {
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <Link href="/critical-density" className="btn-primary">
-            Next: Critical Density &rarr;
-          </Link>
+          <PathNextButtons currentPath="/gamma-parameter" />
           <Link href="/gamma-calculator" className="btn-secondary">
             Try It: &#x03B3; Calculator
           </Link>

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import PathNextButtons from '@/components/PathNextButtons';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -147,9 +148,7 @@ export default function HardProblem() {
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <Link href="/consciousness-threshold" className="btn-primary">
-            Next: Consciousness Threshold &rarr;
-          </Link>
+          <PathNextButtons currentPath="/hard-problem" />
           <Link href="/consciousness-predictions" className="btn-secondary">
             See candidate predictions
           </Link>

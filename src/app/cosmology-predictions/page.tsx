@@ -54,7 +54,7 @@ export default function CosmologyPredictions() {
             <div style={{ background: 'rgba(239, 68, 68, 0.08)', borderRadius: '0.375rem', padding: '0.75rem' }}>
               <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '0.25rem' }}>DESI DR1 full-shape (arXiv:2411.12021)</div>
               <div style={{ fontWeight: 700, color: '#ef4444' }}>LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13</div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Above ΛCDM fiducial; σ₈ = 0.841 ± 0.034 — tension 2.4σ</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Above ΛCDM fiducial; σ₈ = 0.841 ± 0.034 — 2.4σ from the predicted 0.76, which was calibrated to lensing S8, so it does not test the framework</div>
             </div>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
@@ -171,7 +171,7 @@ export default function CosmologyPredictions() {
                 <td style={{ padding: '0.75rem' }}>DESI RSD fσ₈ (TEST-04a)</td>
                 <td style={{ padding: '0.75rem' }}><ValidationBadge status="failed" label="Disfavored 2.4σ — σ₈ Amplitude" /></td>
                 <td style={{ padding: '0.75rem', color: 'var(--color-text-secondary)' }}>DESI DR1</td>
-                <td style={{ padding: '0.75rem', color: '#ef4444', fontSize: '0.85rem' }}>Post-hoc; kill triggered; σ₈=0.841 vs predicted 0.76 (2.4σ) — corrected 2026-05-26</td>
+                <td style={{ padding: '0.75rem', color: '#ef4444', fontSize: '0.85rem' }}>Post-hoc; registered kill not met (~1.5σ on fσ₈, underpowered as registered); σ₈=0.841 vs a lensing-calibrated 0.76 (2.4σ). This cell read &ldquo;kill triggered&rdquo; until 2026-10-04</td>
               </tr>
               <tr style={{ borderBottom: '1px solid var(--color-dark-border)', background: 'rgba(239,68,68,0.04)' }}>
                 <td style={{ padding: '0.75rem' }}>RAR env. scatter (TEST-03/05)</td>

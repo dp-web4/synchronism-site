@@ -1,0 +1,18 @@
+control gamma=0.5: numeric deep scale 1.0705e-10  a0'/gamma 1.0672e-10  ratio 1.00307
+control gamma=0.4892: numeric deep scale 1.0941e-10  a0'/gamma 1.0908e-10  ratio 1.00310
+control gamma=2.0: numeric deep scale 1.6010e-10  a0'/gamma 1.6000e-10  ratio 1.00063
+
+Ud    gamma   a0'          a0_M=a0'/gamma
+0.40  0.2723  2.925e-11   1.0742e-10
+0.50  0.4892  5.336e-11   1.0908e-10
+0.55  0.6779  7.401e-11   1.0918e-10
+0.60  0.9625  1.043e-10   1.0836e-10
+a0' spans 3.57x; a0_M spans 1.0164x (1.074e-10-1.092e-10)
+H0=67.4: cH0/2pi = 1.0422e-10; vs a0_M band: -4.5% to -3.0%; vs 1.20e-10: -13.2%
+H0=70.0: cH0/2pi = 1.0824e-10; vs a0_M band: -0.9% to +0.8%; vs 1.20e-10: -9.8%
+H0=73.0: cH0/2pi = 1.1288e-10; vs a0_M band: +3.4% to +5.1%; vs 1.20e-10: -5.9%
+fit scale vs 1.20e-10: -10.5% to -9.0%
+
+method check (explorer 09-29 velocity chi2):
+  B frozen nuisances, velocity chi2: gamma=0.432, a0'=5.012e-11, a0_M=1.1602e-10; cH0/2pi(67.4) is -10.2%
+  C Upsilon/D/i profiled, Li+2018 priors: gamma=0.488, a0'=5.754e-11, a0_M=1.1792e-10; cH0/2pi(67.4) is -11.6%

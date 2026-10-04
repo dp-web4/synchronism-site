@@ -258,7 +258,7 @@ export default function GalaxyPlotter() {
           three models fit about equally well, which the chart beside it contradicts.) Fitting alone would
           not settle much anyway &mdash; what matters is whether a model makes a <em>different, testable
           prediction</em>, and the ensemble test
-          (SPARC RAR, ΔBIC=+184 — a fit in <em>acceleration</em>, MOND&apos;s own variable, not in the density this
+          (SPARC RAR, ΔBIC=+184 with points as independent, ≈ +11 with the galaxy as the unit — a fit in <em>acceleration</em>, MOND&apos;s own variable, not in the density this
           plotter uses; see <a href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a> for which
           test kills which version) shows Synchronism collapses to MOND when γ is freed — curve-equivalence
           at fitted γ only, not theory-equivalence. (Corrected 2026-08-09: this read &ldquo;the framework has no
@@ -318,7 +318,7 @@ export default function GalaxyPlotter() {
           <strong style={{ color: '#ef4444' }}>Why the stand-in misled (kept for the record):</strong>{' '}
           <em>(Precision 2026-09-15: the drawn stand-in, now dotted amber, contains no &#x03B3; and no &#x03C1;<sub>crit</sub> &mdash;
           see the formula box. The argument below is about the per-galaxy SPARC fits that stand-in was imitating.)</em>{' '}
-          Those per-galaxy fits use the same parametrization (&#x03B3;=2) that the RAR ensemble test <strong>rejected at ΔBIC=+184</strong>. They still overlap MOND per-galaxy because &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; is <em>refit to each galaxy&apos;s own flat velocity</em> — that degree of freedom absorbs the shape mismatch one galaxy at a time. The ensemble RAR (all 2,807 SPARC data points — 175 galaxies — plotted together in acceleration space) is where &#x03B3;=2 dies: free-&#x03B3; converges to &#x03B3;&#x2248;0.49 with RMS identical to McGaugh-MOND to four digits. Per-galaxy shape recovery is not the same test as ensemble shape rejection.{' '}
+          Those per-galaxy fits use the same parametrization (&#x03B3;=2) that the RAR ensemble test <strong>rejected at ΔBIC=+184</strong> (points as independent; &asymp;&nbsp;+11, disfavoured at the threshold, with the galaxy as the unit). They still overlap MOND per-galaxy because &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; is <em>refit to each galaxy&apos;s own flat velocity</em> — that degree of freedom absorbs the shape mismatch one galaxy at a time. The ensemble RAR (all 2,807 SPARC data points — 175 galaxies — plotted together in acceleration space) is where &#x03B3;=2 dies: free-&#x03B3; converges to &#x03B3;&#x2248;0.49 with RMS identical to McGaugh-MOND to four digits. Per-galaxy shape recovery is not the same test as ensemble shape rejection.{' '}
           <strong>Cross-system failure (locality no-go):</strong> a single global ρ<sub>crit</sub>(V<sub>flat</sub>) — no per-galaxy refit — exposes a ~1.7 dex offset between the local volumetric density ρ(r) and the observed g<sub>bar</sub> that MOND tracks. That cross-system gap is the reason local-density frameworks fail where MOND succeeds; the per-galaxy overlap you see here hides it by refitting ρ<sub>crit</sub> independently for each galaxy.
         </div>
         <div style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem' }}>

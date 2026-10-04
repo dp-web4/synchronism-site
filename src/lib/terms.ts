@@ -12,15 +12,15 @@ export const terms: Record<string, TermDefinition> = {
   'C(rho)': {
     term: 'C(\u03C1)',
     fullName: 'Coherence Function',
-    brief: 'Maps presence to coherence: C(\u03C1) = tanh(\u03B3 ln(\u03C1/\u03C1_crit + 1)). A sigmoid/compander function, not an order parameter.',
-    explanation: 'The central equation of Synchronism. Takes a density (\u03C1) and returns a coherence value between 0 and 1. Every executed test uses \u03C1 = physical mass/energy density. The ontology pages read \u03C1 more broadly as \u201Cpresence\u201D (compatible structural elements within a Markov Relevancy Horizon, including temperature, catalytic surfaces and so on), but that reading has never been operationalized. The same formula is also used keyed on acceleration instead of density; see \u201CWhich C? Which \u03B3?\u201D.',
-    educationalNote: '\u26A0 Physicist note: C is NOT quantum phase coherence. Quantum-coherent systems (BEC, BCS, superconductors) sit at LOW C because they have large N_corr \u2192 small \u03B3. C measures density-driven collective ordering, the opposite of the standard CM usage.',
+    brief: 'Maps presence to coherence: C(\u03C1) = tanh(\u03B3 ln(\u03C1/\u03C1_crit + 1)). A compander function, not an order parameter; S-shaped on a logarithmic density axis (on a linear axis it has no inflection).',
+    explanation: 'The central equation of Synchronism. Takes a density (\u03C1) and returns a coherence value between 0 and 1. Every density-keyed test uses \u03C1 = physical mass/energy density (the galaxy RAR fits and the Cassini squeeze key the same formula on acceleration instead). The ontology pages read \u03C1 more broadly as \u201Cpresence\u201D (compatible structural elements within a Markov Relevancy Horizon, including temperature, catalytic surfaces and so on), but that reading has never been operationalized. The same formula is also used keyed on acceleration instead of density; see \u201CWhich C? Which \u03B3?\u201D.',
+    educationalNote: '\u26A0 Physicist note: C is NOT quantum phase coherence. Quantum-coherent systems (BEC, BCS, superconductors) sit at LOW C because they have large N_corr \u2192 small \u03B3. C measures density-driven collective ordering, the opposite of the standard CM usage. Read beside the Coherence entry (low C = elements act independently), this looks like a contradiction, and it is the formula\u2019s audited defect, not a terminology slip: through \u03B3 = 2/\u221AN_corr it ranks the most collective systems lowest.',
     learnMore: '/coherence-function',
   },
   '\u03B3': {
     term: '\u03B3',
     fullName: 'Gamma Parameter',
-    brief: 'Transition-sharpness coefficient (dial): \u03B3 = 2/\u221AN_corr. A motivated ansatz (an educated guess), not a derivation. (\u03B3 multiplies the log; it is not an exponent.)',
+    brief: 'The steepness of the S-curve. Status first: the original formula \u03B3 = 2/\u221AN_corr is audited-negative (wrong-sign correlation; it ranks the most collective systems flattest). The framework\u2019s pinned galaxy value \u03B3 = 2 is disfavoured on SPARC; the fitted value \u03B3 \u2248 0.49 sits on the exact MOND point (\u03B3 = \u00BD), so nothing new survives. (\u03B3 multiplies the log; it is not an exponent.)',
     explanation: 'Intuition first: \u03B3 sets how abruptly a system switches from "individuals" to "a crowd" as it gets denser \u2014 big \u03B3 means a sharp snap, small \u03B3 means a slow fade (try the presets in the \u03B3 Calculator to feel this). Large \u03B3 (few correlated units \u2014 a single electron: N_corr = 1, \u03B3 = 2) gives a sharp C(\u03C1) transition; small \u03B3 (many correlated units \u2014 a crystal: \u03B3 \u2248 10\u207B\u00B9\u00B2) gives a flat one. \u03B3 \u2248 1 marks the sparse/collective boundary where chemistry clusters. Why 2/\u221AN_corr? No independent derivation exists \u2014 the formula is audited-negative: 1/\u221AN is a fluctuation width, and placing it in the sharpness slot inverts mean-field physics (the most collective systems get the FLATTEST curves \u2014 BCS superconductors land at C \u2248 0, backwards from observation). (This entry previously stated the regimes backwards \u2014 corrected 2026-06-12.) Structurally, \u03B3 is claimed to encode MRH coupling density (\u03B3 \u221D \u03BB\u00B7K/D), but no protocol independently measures N_corr in any system.',
     learnMore: '/gamma-parameter',
   },
@@ -313,7 +313,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Audited-Negative (badge)',
     fullName: 'MRH-Relationship Badge: Audited-Negative',
     brief: 'Closed audit finding on a historical track; durable negative result; does not move.',
-    explanation: 'Audited-Negative is the strongest closure badge. It means an explicit audit found the claim false, contradicted by data, or internally inconsistent — and this finding is a permanent part of the record. Examples: A-from-Jeans (closed 2026-06-07: Session 66 script gives A≈4.6×10⁻⁵, 600× off under the framework\'s own scaling); RAR γ=2 (ΔBIC=+184, rejected).',
+    explanation: 'Audited-Negative is the strongest closure badge. It means an explicit audit found the claim false, contradicted by data, or internally inconsistent — and this finding is a permanent part of the record. Examples: A-from-Jeans (closed 2026-06-07: Session 66 script gives A≈4.6×10⁻⁵, 600× off under the framework\'s own scaling); RAR γ=2 (ΔBIC=+184 with points as independent; ≈ +11, 1.6–2.2σ, with the galaxy as the unit: disfavoured at the threshold).',
     learnMore: '/honest-assessment#validation-badge-definitions',
   },
   'badge-validated': {
@@ -424,7 +424,7 @@ export const terms: Record<string, TermDefinition> = {
   'delta-BIC': {
     term: 'ΔBIC',
     fullName: 'Delta Bayesian Information Criterion (BIC difference)',
-    brief: 'The BIC difference between two models. ΔBIC > 10 = very strong evidence against the worse model; ΔBIC=+184 (point estimate) or ≥+33 (conservative) both far exceed this threshold.',
+    brief: 'The BIC difference between two models. ΔBIC > 10 = very strong evidence against the worse model; The γ = 2 pin gives ΔBIC = +184 with the 2,807 SPARC points treated as independent, but ≈ +11 with the galaxy as the unit (measured N_eff ≈ 150): just past the threshold, not far past it. The older \'≥ +33 conservative\' figure was a guessed discount and is withdrawn.',
     explanation: 'ΔBIC = BIC_model1 − BIC_model2. Positive ΔBIC means model 2 is better. Convention: ΔBIC > 10 is "very strong evidence." In the Synchronism RAR shape test (2026-05-21): γ=2 compander vs free-γ on 2807 SPARC points gave ΔBIC=+184 (point estimate) or ≥+33 under conservative intra-galaxy correlation correction. Both values far exceed the >10 threshold — the γ=2 form is categorically rejected regardless of which figure is used. The free-γ form collapses to MOND (γ≈0.49), so either result closes the discriminating test.',
     learnMore: '/honest-assessment',
   },
@@ -439,7 +439,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'BIC',
     fullName: 'Bayesian Information Criterion',
     brief: 'A model-selection score that penalizes free parameters. Lower BIC = better model given data. \u0394BIC > 10 is strong evidence against the weaker model.',
-    explanation: 'BIC = k\u00b7ln(n) \u2212 2\u00b7ln(L), where k is the number of free parameters, n is the number of data points, and L is the maximum likelihood. The \u0394BIC between two models quantifies the evidence in favor of the model with lower BIC. By convention: |\u0394BIC| < 2 = negligible evidence, 2\u20136 = positive evidence, 6\u201310 = strong evidence, >10 = very strong evidence. In the Synchronism context this comparison has now been run twice: against the MOND RAR interpolating function (2026-05-21: \u0394BIC = +184 at \u03b3=2), and across the full compander family (2026-07-22 form selection on 2,807 SPARC points: tanh indistinguishable from erf-log/Hill/generalized-\u03bd and last of the four viable members; arctan-log, algebraic-log, and Gompertz refuted at \u0394BIC +24 to +58 \u2014 the data selects asymptotic rates, not a sigmoid). (Entry updated 2026-07-23; an earlier version said this comparison \u201chas not yet been run.\u201d)',
+    explanation: 'BIC = k\u00b7ln(n) \u2212 2\u00b7ln(L), where k is the number of free parameters, n is the number of data points, and L is the maximum likelihood. The \u0394BIC between two models quantifies the evidence in favor of the model with lower BIC. By convention: |\u0394BIC| < 2 = negligible evidence, 2\u20136 = positive evidence, 6\u201310 = strong evidence, >10 = very strong evidence. In the Synchronism context this comparison has now been run twice: against the MOND RAR interpolating function (2026-05-21: \u0394BIC = +184 at \u03b3=2 with points as independent, \u2248 +11 with the galaxy as the unit), and across the full compander family (2026-07-22 form selection on 2,807 SPARC points: tanh indistinguishable from erf-log/Hill/generalized-\u03bd and last of the four viable members; arctan-log, algebraic-log, and Gompertz refuted at \u0394BIC +24 to +58 \u2014 the data selects asymptotic rates, not a sigmoid). (Entry updated 2026-07-23; an earlier version said this comparison \u201chas not yet been run.\u201d)',
     learnMore: '/honest-assessment',
   },
   'born-rule': {

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import PathNextButtons from '@/components/PathNextButtons';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -177,7 +178,7 @@ export default function GalaxyRotation() {
           under different theoretical umbrellas. The 2&#x03C0; prefactor is chosen to match the
           observed value; cH&#x2080;/(2&#x03C0;) &#x2248; 1.04&#x00D7;10&#x207B;&#xB9;&#x2070; m/s&#x00B2; at the
           site-standard H&#x2080; = 67.4
-          undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;13%.
+          undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;13%. Against this framework&apos;s own SPARC fit the comparison changes but gets no sharper (added 2026-10-04, from a graduate-physics visitor): the scale the fit identifies is a₀′/&#x03B3; (the compander&apos;s deep-regime limit; 2a₀′ at &#x03B3; = ½). It stays at 1.07&ndash;1.09&times;10⁻¹⁰ across the whole &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 band while a₀′ itself moves 3.6&times;, and reads 1.16&ndash;1.18&times;10⁻¹⁰ under the velocity-&chi;² fits. cH₀/2&pi; sits 3&ndash;12% below it at H₀ = 67.4, inside the &plusmn;5% the H₀ tension allows. Still Milgrom&apos;s 1983 coincidence, still a reparametrization (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>).
           Synchronism&apos;s contribution is the coherence-function mechanism that provides a
           <em>reason</em> for this scale &mdash; not the identification itself.
           See{' '}<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
@@ -326,10 +327,15 @@ export default function GalaxyRotation() {
             puts the full-N ΔBIC at 179 with 95% interval [23, 351], a spread that implies an effective N of about 150; and
             ΔBIC recomputed with N = 166 is +10.9, at the threshold. Seven galaxies carry 98% of the net excess, five pull the
             other way. So the pin is <em>disfavoured at the threshold</em>, not decisively refuted; the previously quoted
-            &ldquo;effective N ≈ 500–1000, ΔBIC ≈ 33, still decisivestill decisive&rdquo; was a guessed discount, and therdquo; was a guessed discount (retired 2026-09-29), and the
+            &ldquo;effective N ≈ 500–1000, ΔBIC ≈ 33, still decisive&rdquo; was a guessed discount (retired 2026-09-29), and the
             &ldquo;~8σ per bin&rdquo; also assumed independent points. Script:{' '}
-            <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/gamma2_pin_galaxy_level.py</code> (+ PREREG, output). Not done: refitting
-            per-galaxy nuisances under each law, which is the published method (Desmond, Hees &amp; Famaey 2024) and the one to cite.
+            <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/gamma2_pin_galaxy_level.py</code> (+ PREREG, output). <strong>Refit with the published method (explorer 2026-09-29, pre-registered):</strong> with &Upsilon;, D and i
+            profiled per galaxy under Li+2018 priors and a velocity &chi;² (Desmond, Hees &amp; Famaey 2024&apos;s treatment), the pin sits at
+            z = 1.9 galaxy-level, 2.2&ndash;2.3 with their intrinsic scatter, worse than free &#x03B3; in 52&ndash;56% of galaxies:
+            disfavoured, not refuted. Marginalizing the nuisances does not narrow the galaxy-level interval (its width stays 3&ndash;8&times;
+            the point-level width), and the free fit moves to &#x03B3;&#x0302; &asymp; 0.6 [0.43, 0.95]. Script:{' '}
+            <code style={{ fontSize: '0.78rem' }}>explorer/findings/scripts/gamma2_pin_nuisance_refit.py</code>. (This sentence read
+            &ldquo;Not done: refitting per-galaxy nuisances&rdquo; until 2026-10-04.)
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', fontStyle: 'italic' }}>
             <strong>Note on γ=2:</strong> γ=2 follows from N<sub>corr</sub>=1 (individual stars taken as uncorrelated),
@@ -339,7 +345,8 @@ export default function GalaxyRotation() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             <strong>The fork that closes the question:</strong> free-γ converges to γ≈0.49 with
-            RMS identical to McGaugh to four digits. ΔBIC=+7 is entirely the BIC penalty for the
+            RMS identical to McGaugh to four digits (with &Upsilon; frozen at 0.5 and points unweighted; with per-galaxy nuisances
+            refitted the free fit moves to &#x03B3;&#x0302; &asymp; 0.6 [0.43, 0.95]). ΔBIC=+7 is entirely the BIC penalty for the
             extra parameter — the fit improvement is zero.{' '}
             <strong>Made quantitative (2026-07-27, external-reviewer point):</strong> with N = 2807,
             ln&nbsp;N = 7.94, so one added free parameter costs +7.94 in BIC <em>before any likelihood
@@ -350,7 +357,7 @@ export default function GalaxyRotation() {
             reparametrization of the RAR, buying Δχ² &lt; 1 for one degree of freedom. (Bookkeeping:
             a₀ is floated in both arms, so Δk = 1 — McGaugh&apos;s ν is fitted with k = 1 (a₀), the free-γ
             compander with k = 2 (a₀, γ); see <code style={{ fontSize: '0.78rem' }}>explorer/scripts/rar_transition_shape_real_sparc.py</code>,
-            where the BIC is computed as <code style={{ fontSize: '0.78rem' }}>bic(ssr_F,2) &minus; bic(ssr_M,1)</code>.) Note the contrast with the γ=2 row: ΔBIC = +184 there is <em>pure likelihood</em>{' '}
+            where the BIC is computed as <code style={{ fontSize: '0.78rem' }}>bic(ssr_F,2) &minus; bic(ssr_M,1)</code>.) Note the contrast with the γ=2 row: ΔBIC = +184 there (points as independent; &asymp;&nbsp;+11 with the galaxy as the unit) is <em>pure likelihood</em>{' '}
             (Δk = 0). The two numbers do different work and are not one ladder. There is no γ for which the compander is
             both (a) distinct from MOND and (b) consistent with SPARC. Pin γ=2 → refuted. Fit γ → MOND.
           </p>
@@ -531,7 +538,7 @@ export default function GalaxyRotation() {
         <div style={{ background: 'rgba(239, 68, 68, 0.07)', border: '1px solid rgba(239, 68, 68, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', marginTop: '1.5rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#ef4444' }}>Cosmological extension — disfavored 2.4σ on σ₈ amplitude (reframed 2026-07-02):</strong>{' '}
           Session 107&apos;s prediction of suppressed growth (fσ₈&nbsp;≈&nbsp;0.418) was compared against DESI DR1.
-          Full-shape result (arXiv:2411.12021): combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 vs predicted 0.76 → 2.4σ tension on the σ₈ amplitude, a GR-conditioned statistic. The <em>registered</em> kill
+          Full-shape result (arXiv:2411.12021): combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 vs predicted 0.76 → 2.4σ tension on the σ₈ amplitude, a GR-conditioned statistic. The 0.76 was calibrated to the weak-lensing S8 value, so this 2.4σ restates the known lensing-vs-clustering S8 difference; a calibrated number cannot test the framework (note added 2026-10-04). The <em>registered</em> kill
           criterion (fσ₈(z&nbsp;=&nbsp;0.51)&nbsp;&gt;&nbsp;0.46 at &gt;3σ) was <strong>not met</strong>: ~1.5σ, underpowered as
           registered (this page kept the retired &ldquo;triggered&rdquo; wording until 2026-09-11, two months after Tier 1 and
           Honest Assessment dropped it).
@@ -541,9 +548,7 @@ export default function GalaxyRotation() {
         </div>
 
         <div style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <Link href="/rar-scatter" className="btn-primary">
-            Next: RAR Scatter &rarr;
-          </Link>
+          <PathNextButtons currentPath="/galaxy-rotation" />
           <Link href="/cdm-discrimination" className="btn-secondary">
             CDM Discrimination &rarr;
           </Link>

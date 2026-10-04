@@ -252,8 +252,22 @@ RETIRED = [
     (r"Six experimental protocols have been designed", "2026-09-29", "no rate parameter: experiment classes, not protocols"),
     (r"0\.5% match</strong>", "2026-09-29", "0.5% needs H0 ~ 70; the site-standard 67.4 gives 4%, and the target is uncertain 2x"),
     (r"Pending External Adjudication \(2026\)", "2026-09-29", "TEST-02 carries one status string on every surface (see the Tier 1 card name)"),
+    # --- retired 2026-10-04 (maintainer): variants the 09-29 "conservative 33" rule missed by word order; cosmology table
+    (r"(&#x2265;|≥)\s*\+?33\s*\(conservative|conservative threshold\s*(&#x2265;|≥)\s*33", "2026-10-04",
+     "the 33 was a guessed discount; galaxy-block bootstrap gives ~+11"),
+    (r"Post-hoc; kill triggered;", "2026-10-04", "TEST-04a's registered kill was not met (~1.5 sigma on f sigma_8, underpowered as registered)"),
     (r"color: '#2ecc71' }}>CONFIRMED</td>", "2026-09-27",
      "no CONFIRMED status cells on the coupling experiment; B4 is a reparametrization"),
+]
+
+# Numbers that may appear only with their qualifier nearby (within CONTEXT_LINES lines either side).
+# Added 2026-10-04: the 09-29 "every +184 passage" sweep missed 15+ lines (Test Roadmap B2, glossary, tracker);
+# a retired-phrase list cannot catch an unqualified number, only a context requirement can.
+CONTEXT_LINES = 3
+REQUIRES = [
+    (r"(BIC|&#x0394;BIC|&#x394;BIC|&Delta;BIC)\W{0,30}\+184(?!\d)",
+     r"galaxy|N_eff|N<sub>eff|\+11|\+10\.9|independen|history|revision|sanity check|reproduced",
+     "2026-10-04", "+184 treats 2,807 points as independent; with the galaxy as the unit it is ~+11 (1.6-2.2 sigma)"),
 ]
 
 EXEMPT = re.compile(
@@ -282,7 +296,18 @@ def main():
                 lineno = text.count("\n", 0, m.start()) + 1
                 print(f"{path.relative_to(ROOT.parent)}:{lineno}: retired {date}: {m.group(0)!r}\n    -> {why}")
                 hits += 1
-    print(f"\n{hits} live retired phrase(s) across {len(files)} files, {len(RETIRED)} rules.")
+        lines = text.split("\n")
+        for pat, ctx, date, why in REQUIRES:
+            for m in re.finditer(pat, text):
+                if text.rfind("<details", 0, m.start()) > text.rfind("</details>", 0, m.start()):
+                    continue
+                lineno = text.count("\n", 0, m.start()) + 1
+                window = "\n".join(lines[max(0, lineno - 1 - CONTEXT_LINES):lineno + CONTEXT_LINES])
+                if re.search(ctx, window, re.IGNORECASE) or EXEMPT.search(lines[lineno - 1]):
+                    continue
+                print(f"{path.relative_to(ROOT.parent)}:{lineno}: unqualified ({date}): {m.group(0)!r}\n    -> {why}")
+                hits += 1
+    print(f"\n{hits} live retired phrase(s) across {len(files)} files, {len(RETIRED) + len(REQUIRES)} rules.")
     return 1 if hits else 0
 
 

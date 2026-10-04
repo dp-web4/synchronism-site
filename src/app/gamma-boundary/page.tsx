@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import PathNextButtons from '@/components/PathNextButtons';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -159,9 +160,7 @@ export default function GammaBoundary() {
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <Link href="/sound-velocity" className="btn-primary">
-            Next: Sound Velocity &rarr;
-          </Link>
+          <PathNextButtons currentPath="/gamma-boundary" />
           <Link href="/chemistry-correlation-explorer" className="btn-secondary">
             Explore All Correlations
           </Link>

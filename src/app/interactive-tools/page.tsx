@@ -42,7 +42,7 @@ const coreTools = [
   {
     title: 'γ Calculator',
     href: '/gamma-calculator',
-    desc: 'Input N_corr (number of correlated particles) and read off γ = 2/√N_corr — then see why the formula is audited-negative: the most tightly correlated matter (BCS superconductors, BEC) gets the flattest curves, backwards from real condensed-matter physics. The galaxy preset also refutes the framework\'s own γ=2 assertion. Presets: ideal gas, liquid water, galaxy (SPARC best fit), enzyme site, ferromagnet, BEC, BCS superconductor.',
+    desc: 'This formula failed; the calculator shows why. Input N_corr (number of correlated particles) and read off γ = 2/√N_corr — then see why the formula is audited-negative: the most tightly correlated matter (BCS superconductors, BEC) gets the flattest curves, backwards from real condensed-matter physics. The galaxy preset also refutes the framework\'s own γ=2 assertion. Presets: ideal gas, liquid water, galaxy (SPARC best fit), enzyme site, ferromagnet, BEC, BCS superconductor.',
     level: 'Beginner',
     state: 'Artifact Lesson',
     epistemic: 'core' as EpistemicStatus,

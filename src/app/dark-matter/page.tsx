@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import PathNextButtons from '@/components/PathNextButtons';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -192,9 +193,7 @@ export default function DarkMatter() {
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <Link href="/galaxy-rotation" className="btn-primary">
-            Next: Galaxy Rotation Curves &rarr;
-          </Link>
+          <PathNextButtons currentPath="/dark-matter" />
           <Link href="/mond-unification" className="btn-secondary">
             MOND Unification &rarr;
           </Link>

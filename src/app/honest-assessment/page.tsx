@@ -159,7 +159,10 @@ export default function HonestAssessment() {
           <strong>NEVER RUN AS REGISTERED</strong><span>A different dataset, sample, or statistic was substituted and adjudicated in the registered test&apos;s place — the substitute has its own verdict, but the test as originally pre-registered remains unrun and still runnable. Distinct from WITHDRAWN (which is retracted, not substituted). E.g. TEST-03 (the ALFALFA-SDSS run was executed as TEST-03s instead).</span>
           <strong>UNDERPOWERED AS REGISTERED</strong><span>The registered kill threshold sits inside the measurement&apos;s own known systematics or pipeline-dependence range, so neither outcome (threshold crossed or not) can adjudicate anything until the registration is tightened. Marked before the data arrives where possible, not as a post-hoc excuse. E.g. TEST-06 (BTFR σ_int threshold vs. ~3× velocity-definition-dependent scatter), TEST-04a (fσ₈ criterion met at ~1.5σ against a &gt;3σ demand).</span>
           <strong>Ceiling Exceeded</strong><span>A structural failure mode specific to this framework: the data demands more than the framework&apos;s built-in maximum (the bounded boost 1/&Omega;_m = 3.17), so no parameter choice can rescue the fit. Needs no threshold registration — the ceiling is algebraic.</span>
-          <strong>Empty Intersection</strong><span>A joint test fails because the parameter ranges two datasets each allow do not overlap: no single value satisfies both. E.g. TEST-25: the γ interval SPARC retains (0.425&ndash;0.600) and the interval the Cassini Solar-System bound allows share no point. Each dataset alone may be fit; the <em>conjunction</em> is what is refuted, and only for the realization that uses one function at both scales.</span>
+          <strong>Empty Intersection</strong><span>A joint test fails because the parameter ranges two datasets each allow do not overlap: no single value satisfies both. E.g. TEST-25: the γ interval SPARC retains (0.425&ndash;0.600) and the interval the Cassini Solar-System bound allows share no point. Each dataset alone may be fit; the <em>conjunction</em> is what is refuted, and only for the realization that uses one function at both scales. (The 0.425&ndash;0.600 interval treats SPARC points as independent; with the galaxy as the unit it widens to 0.3&ndash;1.7 and the in-house intersection sits at the 2&sigma; edge, so TEST-25 rests on the published, marginalized 8.7&sigma;. Qualifier added 2026-10-04.)</span>
+          <strong>Kill Criterion Triggered</strong><span>A registered test was executed and its pre-stated kill threshold was crossed. That is a refutation on the scoreboard, and the claim then carries the Failed badge. (Added 2026-10-04: Tier 1 used this label without a definition here.)</span>
+          <strong>Demoted &mdash; Exploratory</strong><span>A RECLASSIFIED test whose registration never met the entry bar for a prediction (no derivation of the amplitude, or no threshold). It stays visible as an exploratory hypothesis and counts neither for nor against. (Added 2026-10-04.)</span>
+          <strong>Closed by Execution</strong><span>CLOSED reached by running the computation rather than by argument: the question was answered on data, often as a null. (Added 2026-10-04.)</span>
           <strong>[Brackets]</strong><span>Text in brackets inside a quoted prediction (e.g. &ldquo;[Withdrawn]&rdquo;) marks that the surrounding wording is preserved verbatim for the record but is no longer asserted.</span>
         </div>
 
@@ -281,6 +284,7 @@ export default function HonestAssessment() {
       <nav style={{ marginBottom: '2rem', maxWidth: '65ch', fontSize: '0.85rem' }} aria-label="Page contents">
         <strong style={{ color: 'var(--color-text-secondary)' }}>On this page:</strong>{' '}
         <a href="#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Badge definitions (canonical)</a> &middot;{' '}
+        <a href="#status-lifecycle-verbs" style={{ color: 'var(--color-accent-blue)' }}>Status lifecycle verbs</a> &middot;{' '}
         <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>The Verdict</a> &middot;{' '}
         <a href="#coherence-meaning" style={{ color: 'var(--color-accent-blue)' }}>What &ldquo;Coherence&rdquo; Means Here</a> &middot;{' '}
         <a href="#what-was-tested" style={{ color: 'var(--color-accent-blue)' }}>What Was Tested</a> &middot;{' '}
@@ -290,6 +294,7 @@ export default function HonestAssessment() {
         <a href="#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</a> &middot;{' '}
         <a href="#landscape" style={{ color: 'var(--color-accent-blue)' }}>Modified-Gravity Landscape</a> &middot;{' '}
         <a href="#cosmological-tensions" style={{ color: 'var(--color-accent-blue)' }}>Cosmological Tensions</a> &middot;{' '}
+        <a href="#inherited-mond-problems" style={{ color: 'var(--color-accent-blue)' }}>Inherited MOND Problems (clusters, CMB, GW speed)</a> &middot;{' '}
         <a href="#a2acw-self-audit" style={{ color: 'var(--color-accent-blue)' }}>A2ACW Self-Audit</a> &middot;{' '}
         <a href="#bottom-line" style={{ color: 'var(--color-accent-blue)' }}>Bottom Line</a>
       </nav>
@@ -377,7 +382,7 @@ export default function HonestAssessment() {
           <strong>(1) DESI fσ₈ (TEST-04a — corrected 2026-07-14):</strong> The framework predicted
           suppressed growth: σ₈&nbsp;≈&nbsp;0.76 (fσ₈(z=0.51)&nbsp;≈&nbsp;0.418, 12% below ΛCDM&apos;s 0.474).
           <strong>What DESI DR1 full-shape actually shows (arXiv:2411.12021):</strong> combined
-          σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10) → <strong>2.4σ tension — the predicted suppression is absent.</strong>{' '}
+          σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10) → <strong>2.4σ tension — the predicted suppression is absent.</strong> The 0.76 was calibrated to the weak-lensing S8 value, so this 2.4σ restates the known lensing-vs-clustering S8 difference; a calibrated number cannot test the framework (note added 2026-10-04).{' '}
           But that amplitude is a GR-conditioned statistic; the <em>registered</em> criterion
           (fσ₈(z=0.51)&nbsp;&gt;&nbsp;0.46 at &gt;3σ) was met at only ~1.5σ — <strong>the test as registered
           lacked the power to discriminate, and is not counted as a refutation.</strong>{' '}
@@ -396,7 +401,7 @@ export default function HonestAssessment() {
           interpolating function — was run on 2807 real SPARC points. γ=2 is refuted at ΔBIC=+184 with the points treated as independent;
           with the galaxy as the replication unit (166 curves; measured N<sub>eff</sub> ≈ 150, 2026-09-29) the same comparison is
           ΔBIC ≈ +11, 1.6σ out-of-sample and 2.2σ in-sample &mdash; disfavoured at the threshold, not decisive (the previously quoted
-          &ldquo;conservative ≈33&rdquo; was a guessed discount, retired 2026-09-29). Free-γ converges to γ≈0.49&nbsp;=&nbsp;MOND, with RMS identical to McGaugh.
+          &ldquo;conservative ≈33&rdquo; was a guessed discount, retired 2026-09-29). Free-γ converges to γ≈0.49&nbsp;=&nbsp;MOND, with RMS identical to McGaugh (&Upsilon; frozen at 0.5, unweighted; with per-galaxy nuisances refitted, &#x03B3;&#x0302; &asymp; 0.6 [0.43, 0.95]; the pin then sits at z = 1.9&ndash;2.3 galaxy-level).
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>How to read the ΔBIC ladder (sharpened 2026-07-27, external-reviewer point).</strong>{' '}
@@ -558,7 +563,7 @@ export default function HonestAssessment() {
           &mdash; the heading reflects what was <em>attempted</em>, not what succeeded.
           The site-wide footer count (&ldquo;0 confirmed; 6 refutations executed&rdquo;, five of them on external data, recounted
           2026-07-30) covers executed refutations on two data types plus one simulation &mdash; astronomical: the RAR
-          transition shape (&#x03B3;=2 pinned, &#x0394;BIC=+184), the BTFR slope (TEST-09, 2026-07-14: registered kill
+          transition shape (&#x03B3;=2 pinned, &#x0394;BIC=+184 with points as independent, &asymp;&nbsp;+11 with the galaxy as the unit), the BTFR slope (TEST-09, 2026-07-14: registered kill
           fired at B<sub>max</sub> = 1/&Omega;<sub>m</sub>, prediction 3.3&sigma; from the data; convention-dependent &mdash;
           the 2026-09-18 ceiling sweep finds it does not fire at the two baryon-budget ceilings, so its place in the
           count is pending dp; convention-free, B<sub>max</sub> &#8818; 5.4 is excluded), dwarf DM fractions (TEST-10 — class exclusion via SPARC&apos;s max
@@ -684,7 +689,7 @@ export default function HonestAssessment() {
               <ValidationBadge status="reparametrization" label="Dimensional Analysis" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              MOND&apos;s acceleration constant a&#x2080; related to cosmological parameters via a&#x2080; = cH&#x2080;/(2&#x03C0;). 13% error at H&#x2080; = 67.4 vs observed value.
+              MOND&apos;s acceleration constant a&#x2080; related to cosmological parameters via a&#x2080; = cH&#x2080;/(2&#x03C0;). 13% error at H&#x2080; = 67.4 vs observed value. Against this framework&apos;s own SPARC fit the comparison changes but gets no sharper (added 2026-10-04, from a graduate-physics visitor): the scale the fit identifies is a₀′/&#x03B3; (the compander&apos;s deep-regime limit; 2a₀′ at &#x03B3; = ½). It stays at 1.07&ndash;1.09&times;10⁻¹⁰ across the whole &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 band while a₀′ itself moves 3.6&times;, and reads 1.16&ndash;1.18&times;10⁻¹⁰ under the velocity-&chi;² fits. cH₀/2&pi; sits 3&ndash;12% below it at H₀ = 67.4, inside the &plusmn;5% the H₀ tension allows. Still Milgrom&apos;s 1983 coincidence, still a reparametrization (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>).
               This numerical coincidence has been noted since Milgrom (1983), and other frameworks (McCulloch 2007, Verlinde 2017,
               Smolin 2017) derive the same relation with the same geometric factor. The quantities c, H&#x2080;, and G are the only
               dimensionally relevant cosmological constants, and cH&#x2080; naturally has units of acceleration. Best classified as
@@ -858,7 +863,7 @@ export default function HonestAssessment() {
 
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>RAR Transition Shape — SPARC ΔBIC=+184, γ=2 Refuted, γ<sub>free</sub>=MOND (2026-05-21)</h3>
+              <h3>RAR Transition Shape — SPARC ΔBIC=+184 (points as independent; ≈ +11 by galaxy), γ=2 Disfavoured, γ<sub>free</sub>=MOND (2026-05-21)</h3>
               <ValidationBadge status="failed" label="Kill Criterion Triggered — CLOSED" />
             </div>
             <PlainTerms>
@@ -896,7 +901,7 @@ export default function HonestAssessment() {
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               The residual is a coherent S-shaped ≈0.05–0.10 dex signature at the RAR transition
               (g<sub>bar</sub>&nbsp;≈&nbsp;a₀), significant at ~8σ per bin. Free-γ fit converges to γ≈0.49&nbsp;=&nbsp;MOND,
-              with RMS identical to McGaugh to four digits. ΔBIC&nbsp;=&nbsp;+7 for free-γ is entirely the BIC
+              with RMS identical to McGaugh to four digits (&Upsilon; frozen at 0.5, unweighted). ΔBIC&nbsp;=&nbsp;+7 for free-γ is entirely the BIC
               parameter penalty, not a fit difference — the compander at its best-fit γ is MOND.
               <strong> Galaxy tests that selected Synchronism over MOND: 0, by execution (2 discriminated; both selected MOND).</strong>
               Script: <code style={{ fontSize: '0.78rem' }}>explorer/scripts/rar_transition_shape_real_sparc.py</code>.
@@ -1331,7 +1336,7 @@ export default function HonestAssessment() {
               <em> (Notation note 2026-06-12: the source audit called this quantity &ldquo;&#x03B3;&rdquo;,
               colliding with the transition-sharpness parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> used
               everywhere else on this page — including the separate &ldquo;&#x03B3; = 2 refuted at
-              &#x0394;BIC = +184&rdquo; result. They are different quantities; we use B here to keep
+              &#x0394;BIC = +184&rdquo; result (points as independent; &asymp;&nbsp;+11 with the galaxy as the unit). They are different quantities; we use B here to keep
               them apart.)</em>
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
@@ -1816,7 +1821,17 @@ export default function HonestAssessment() {
           dark-energy sector already needs cold dark matter put in by hand (2026-09-22), and adding a real halo on top of the galaxy
           boost counts it twice (+0.28 dex on SPARC, explorer 2026-09-22). Which dark-matter story the framework keeps is an open
           decision (see <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>the Verdict</a>). Until it is made, none of
-          these three problems has an answer here.
+          these three problems has an answer here.{' '}
+          <strong>The cluster shortfall in numbers (estimate added 2026-10-04, not an execution; round literature inputs, not re-read):</strong>{' '}
+          at r<sub>500</sub> of a Coma-class cluster g<sub>bar</sub> &asymp; 1.1&ndash;1.2&times;10⁻¹¹ m/s² and the needed boost is
+          1/f<sub>b</sub> &asymp; 6.7&ndash;7.7. The registered C<sub>a</sub> (TEST-09/10 form) delivers 2.2 at the 1/&Omega;<sub>m</sub> floor and
+          4.0&ndash;4.2 even at the no-CDM floor 1/&Omega;<sub>b</sub>: short by 1.7&ndash;3.5&times;, against MOND&apos;s 1.8&ndash;2.0&times;
+          (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/cluster_r500_boost_vs_ceiling_estimate.py</code>). Inherited, not a new root.
+          A g<sub>bar</sub>/a&#x2080; variant without the 1/&phi; power would meet the cluster at the no-CDM floor, but that is the explicit
+          wiring that sits 0.8&ndash;1.8 dex above the galaxy RAR (Coherence Function). <strong>Gravitational-wave speed:</strong>{' '}
+          GW170817 bounds |c<sub>T</sub>/c &minus; 1| below ~10⁻¹⁵. The framework has no specified relativistic completion, and its one
+          radiative model (scalar inflow) is already refuted for having no spin-2 waves, so c<sub>T</sub> = c is an unaddressed constraint,
+          not a passed one.
         </p>
         <div id="dark-energy" style={{
           background: 'rgba(139,92,246,0.07)',

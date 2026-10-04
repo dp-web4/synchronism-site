@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import PathNextButtons from '@/components/PathNextButtons';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -79,7 +80,7 @@ export default function CoherenceFunction() {
             <strong>g<sub>obs</sub></strong> &mdash; it solves g<sub>bar</sub> = g<sub>obs</sub>·tanh(γ ln(1 + g<sub>obs</sub>/a₀′))
             for g<sub>obs</sub> (<code style={{ fontSize: '0.8rem' }}>simulations/sparc_tanhlog_profile.py</code>, line 85, research repo), with
             a₀′ profiled. At γ = ½ that is Milgrom&apos;s simple μ with a₀ = 2a₀′, which is why the profiled a₀′ = 5.33×10⁻¹¹
-            sits 2.25× below McGaugh&apos;s reference 1.20×10⁻¹⁰; converted, a₀ = 2a₀′ = 1.066×10⁻¹⁰ is 11% below it. The <em>explicit</em> reading &mdash; evaluating C on g<sub>bar</sub>/a₀′ and
+            sits 2.25× below McGaugh&apos;s reference 1.20×10⁻¹⁰; converted, a₀ = 2a₀′ = 1.066×10⁻¹⁰ is 11% below it. At the fitted &#x03B3; = 0.489 the exact deep-regime conversion is a₀′/&#x03B3; = 1.091×10⁻¹⁰. That combination stays within 1.6% across &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 while a₀′ moves 3.6×, so it, not a₀′, is what the fit measures (added 2026-10-04; <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>). The 2026-08-14 &ldquo;factor-2 a₀ tension that dissolves at &Upsilon; = 0.6&rdquo; compared a₀′ with Milgrom&apos;s a₀; it dissolved there only because &#x03B3;&#x0302; &asymp; 0.96 &asymp; 1. The <em>explicit</em> reading &mdash; evaluating C on g<sub>bar</sub>/a₀′ and
             dividing &mdash; gives g<sub>obs</sub> → g<sub>bar</sub> + 2a₀′ at γ = ½, a constant additive floor 0.8–1.8 dex above the
             RAR below 10⁻¹¹ m/s², and could never reach 0.1437 dex RMS. It was never run. This sentence previously read
             &ldquo;μ&apos;s argument swapped from g<sub>bar</sub> to ρ,&rdquo; which was wrong twice: μ&apos;s argument in MOND is
@@ -118,7 +119,7 @@ export default function CoherenceFunction() {
               statement. In the Solar System the floored density-keyed form is a separate problem: read pointwise, the
               interplanetary medium (solar wind) makes GM&#x2609; inferred from different planets differ at O(1), so the law needs a
               declared smoothing length before it says anything there (PREDICTIONS.md, &ldquo;SCOPE CONDITION&rdquo; block;
-              script <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/density_keyed_law_vs_interplanetary_medium.py</code>). &Delta;BIC +184: acceleration-keyed, &#x03B3; = 2.
+              script <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/density_keyed_law_vs_interplanetary_medium.py</code>). &Delta;BIC +184: acceleration-keyed, &#x03B3; = 2 (2,807 points treated as independent; &asymp;&nbsp;+11 with the galaxy as the unit, 1.6&ndash;2.2&sigma;).
               &Delta;BIC +2843: density-keyed, &#x03B3; free. The 2026-09-08/09 SPARC knee grid: density-keyed, floored, form (b)
               solved in disc geometry. Globular clusters: density-keyed under (a) on spherical Jeans models, where (a) and (b)
               agree. Not in any of them: the striction force that a <em>variational</em> version of (b) adds (see{' '}
@@ -146,7 +147,7 @@ export default function CoherenceFunction() {
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}><strong>C<sub>g</sub></strong></td>
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>tanh(&#x03B3; ln(1 + g<sub>obs</sub>/a&#x2080;&prime;)), solved implicitly</td>
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>observed acceleration (MOND&apos;s variable)</td>
-                  <td style={{ padding: '0.25rem 0' }}>&#x03B3; = 0.489 fit; &Delta;BIC +184 at &#x03B3; = 2 (RAR shape); form-selection table; Cassini (TEST-25)</td>
+                  <td style={{ padding: '0.25rem 0' }}>&#x03B3; = 0.489 fit; &Delta;BIC +184 at &#x03B3; = 2 (RAR shape; &asymp;&nbsp;+11 with the galaxy as the unit); form-selection table; Cassini (TEST-25)</td>
                 </tr>
                 <tr style={{ verticalAlign: 'top' }}>
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}><strong>C<sub>a</sub></strong> (the ceiling)</td>
@@ -496,9 +497,7 @@ export default function CoherenceFunction() {
         </ul>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <Link href="/gamma-parameter" className="btn-primary">
-            Next: The &#x03B3; Parameter &rarr;
-          </Link>
+          <PathNextButtons currentPath="/coherence-function" />
           <Link href="/coherence-explorer" className="btn-secondary">
             Try It: Coherence Explorer
           </Link>

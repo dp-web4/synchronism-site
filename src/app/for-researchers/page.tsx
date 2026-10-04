@@ -144,7 +144,7 @@ export default function ForResearchers() {
           ratios stop at &Omega;<sub>b</sub>/&Omega;<sub>m</sub>&nbsp;=&nbsp;0.157 &mdash; while 1/&Omega;<sub>m</sub>
           itself is nowhere derived. <strong>There is no derivation route to a floor low enough</strong>, which closes a
           question this program self-seeded on 2026-09-08. Independent cross-check: the 77% of discs that need more
-          boost than 1/&Omega;<sub>m</sub> supplies reproduces the 118/153 = 77.1% found by a separate 2026-07-30 route.
+          boost than 1/&Omega;<sub>m</sub> supplies at some radius (field-equation route; TEST-10&apos;s 69% is a different measure, the outer-point dark-matter fraction, and Galaxy Rotation&apos;s ~42% counts RAR points, not discs) reproduces the 118/153 = 77.1% found by a separate 2026-07-30 route.
           <br /><br />
           And the trade is not escapable by lowering the floor, because the two failures are the same failure pointing
           opposite ways: at Refracted Gravity&apos;s f&nbsp;=&nbsp;0.089 the ceiling problem <em>is</em> solved (the
@@ -799,7 +799,7 @@ export default function ForResearchers() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             TEST-04a predicted &#x03C3;&#x2088;&nbsp;&#x2248;&nbsp;0.76 (calibrated to the then-live S8 lensing tension);
             DESI DR1 full-shape combined &#x03C3;&#x2088;&nbsp;=&nbsp;0.841&plusmn;0.034 (Table 10) &mdash; a
-            <strong> 2.4&#x03C3;</strong> amplitude tension on &#x03C3;&#x2088;. <strong>Correction (2026-07-14):
+            <strong> 2.4&#x03C3;</strong> amplitude tension on &#x03C3;&#x2088;. The 0.76 was calibrated to the weak-lensing S8 value, so this 2.4σ restates the known lensing-vs-clustering S8 difference; a calibrated number cannot test the framework (note added 2026-10-04). <strong>Correction (2026-07-14):
             the criterion was registered on a different statistic, fσ₈(z=0.51) &gt; 0.46 for &gt;3&#x03C3;.</strong>{' '}
             On that statistic directly &mdash; LRG1 fσ₈&nbsp;=&nbsp;0.474&nbsp;&times;&nbsp;1.16&plusmn;0.062&nbsp;=
             &nbsp;0.550&plusmn;0.062 &mdash; the threshold is exceeded by only <strong>~1.5&#x03C3;</strong>, short

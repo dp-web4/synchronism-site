@@ -122,8 +122,11 @@ export default function MeasurementWithoutObservers() {
               vocabulary for decoherence with no differing prediction (the badge above). If it is a <em>physical</em>{' '}
               boundary whose sharpness depends on N<sub>corr</sub>, it is a collapse-class hypothesis and must face existing
               bounds on spontaneous-collapse models &mdash; underground X-ray limits on CSL/Di&oacute;si&ndash;Penrose
-              (Donadi et al. 2021) and large-molecule interferometry (Fein et al. 2019, ~25&nbsp;kDa). Neither confrontation
-              has been done. (Row wording corrected 2026-09-15 after a researcher visitor flagged &ldquo;derived from &#x03B3;&rdquo;.)
+              (Donadi et al. 2021) and large-molecule interferometry (Fein et al. 2019, ~25&nbsp;kDa). For a Planck-scale diffusion rate neither is the binding bound: the matter-stability
+              limit further down this page (heating of bound hydrogen) already puts the allowed rate 15&ndash;30 orders below the natural
+              value, and it supersedes both. The X-ray and
+              interferometry comparisons would matter only for a rate that survives it, and no such rate has been specified. (Until
+              2026-10-04 this sentence read &ldquo;Neither confrontation has been done&rdquo;, beside that bound.) (Row wording corrected 2026-09-15 after a researcher visitor flagged &ldquo;derived from &#x03B3;&rdquo;.)
             </p>
           </div>
         </div>

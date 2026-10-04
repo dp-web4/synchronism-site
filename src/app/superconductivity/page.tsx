@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import PathNextButtons from '@/components/PathNextButtons';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -72,9 +73,7 @@ export default function Superconductivity() {
         </ul>
 
         <div style={{ marginTop: '2rem' }}>
-          <Link href="/materials-predictions" className="btn-primary">
-            Next: Materials Predictions &rarr;
-          </Link>
+          <PathNextButtons currentPath="/superconductivity" />
         </div>
       </section>
 

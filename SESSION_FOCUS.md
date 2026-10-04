@@ -1,9 +1,38 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-09-29 (explorer)*
+*Last updated: 2026-10-04 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-04) — **The a₀ the SPARC fit identifies is a₀′/γ (1.07–1.09×10⁻¹⁰ across Υ 0.4–0.6 while a₀′
+moves 3.6×; 1.16–1.18×10⁻¹⁰ under velocity χ²). cH₀/2π sits 3–12% below it: no sharper than "13%". The ledger's 08-14
+"factor-2 a₀ tension that dissolves at Υ = 0.6" was a₀′-vs-Milgrom bookkeeping (corrected). Clusters at r500: the
+registered C_a falls short ×1.7–3.5 under every floor vs MOND ×1.8–2.0, so the failure is inherited (estimate). WAKE proposal: the
+registered physics program may have met its stopping condition.** Count 6; Bucket 0 = 0. (09-30 → 10-03 maintainer
+runs died on credits; those visitor logs were empty.)
+
+Log: `maintainer/logs/2026-10-04.md`. Proposal:
+`Synchronism/Research/proposals/a0_identified_scale_clusters_inherited_and_the_stopping_question_20261004.md`. Ledger: Synchronism `da502b37`.
+Scripts: `maintainer/scripts/a0_identified_scale_across_upsilon.py`, `cluster_r500_boost_vs_ceiling_estimate.py`.
+
+- **Fixed:** 12 unqualified "+184" lines (Test Roadmap B2, glossary, tracker, HA h3 …); TEST-25 leads with 8.7σ + keying;
+  σ₈ 2.4σ marked calibrated (cosmology-predictions still said "kill triggered"); a₀′/γ on 4 pages; dual-path Next on 8 pages
+  (`PathNextButtons`); Tier 1 how-to-read key; HA jump list + lifecycle verbs + clusters/GW170817; γ status on First Encounter
+  + glossary; walkthrough "every executed test"; MWO contradiction; explorer 09-29 drain; corrupted galaxy-rotation text.
+- **site_lint.py:** 138 rules, new REQUIRES type (number must carry its qualifier within ±3 lines). HEAD control: 14.
+
+### → dp
+- Stopping question: does the physics axis write up the transferable negatives and pivot (applied axis, A2ACW post-cutoff)?
+- Count texture: "4 data refutations + 1 at threshold + 1 construction check" (two personas asked today).
+- SPINE door-#3 sentence vs the explorer's 09-27 heat-budget exclusion.
+
+### → Next maintainer session
+1. Galaxy Plotter defaults/legend (carried twice); Test Roadmap headline-number order + TEST-26 "ΛCDM test" tag.
+2. Badge definitions single-sourced from terms.ts (three wordings); enthusiast onboarding items (log, Open Items).
+
+### → Explorer (new topics)
+- `cluster-rar-vs-every-acceleration-keyed-c.md` · `is-there-any-reachable-observable-where-any-reading-differs-from-its-parent.md`
 
 ## 🟢 NEW (explorer 2026-09-29) — **The γ = 2 pin under the published method (Υ, D, i profiled per galaxy, Li+2018
 priors, velocity χ²; pre-registered `187d495`): z = 1.9 galaxy-level without Desmond's σ_int, 2.2–2.3 with it; 52–56 %

@@ -1,0 +1,12 @@
+f_b=0.13: g_bar(r500)=1.07e-11 m/s^2, x=0.089, B_req=7.69
+   cap 1/Om           B_max= 3.17  registered form B=2.23 (short x3.46)   | x=g/a0 variant B=2.69 (short x2.86)
+   cap (Om-Ob)/Ob     B_max= 5.39  registered form B=2.90 (short x2.66)   | x=g/a0 variant B=3.96 (short x1.94)
+   cap Om/Ob          B_max= 6.39  registered form B=3.11 (short x2.48)   | x=g/a0 variant B=4.43 (short x1.74)
+   cap 1/Ob (no CDM)  B_max=20.28  registered form B=4.24 (short x1.81)   | x=g/a0 variant B=7.86 (short x0.98)
+   MOND simple nu: B=3.88  shortfall x1.98
+f_b=0.15: g_bar(r500)=1.24e-11 m/s^2, x=0.103, B_req=6.67
+   cap 1/Om           B_max= 3.17  registered form B=2.18 (short x3.06)   | x=g/a0 variant B=2.64 (short x2.53)
+   cap (Om-Ob)/Ob     B_max= 5.39  registered form B=2.80 (short x2.38)   | x=g/a0 variant B=3.82 (short x1.74)
+   cap Om/Ob          B_max= 6.39  registered form B=2.99 (short x2.23)   | x=g/a0 variant B=4.25 (short x1.57)
+   cap 1/Ob (no CDM)  B_max=20.28  registered form B=4.01 (short x1.66)   | x=g/a0 variant B=7.24 (short x0.92)
+   MOND simple nu: B=3.65  shortfall x1.82

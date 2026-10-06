@@ -252,8 +252,8 @@ export default function GalaxyPlotter() {
           <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}
           labels this a <em>reparametrization</em> &mdash; plain words: the same curve wearing a
           different costume; fitting a known curve isn&apos;t discovering anything new.{' '}
-          <strong>Plain verdict for casual readers:</strong> MOND and dark-matter (NFW) halos (not plotted here) both
-          fit these curves; the framework&apos;s own equation, as published, does not (solid violet); only the hand-tuned
+          <strong>Plain verdict for casual readers:</strong> two existing explanations both fit these curves:
+          MOND (the green line) and dark-matter halos (the standard &ldquo;NFW&rdquo; halo shape; not plotted here); the framework&apos;s own equation, as published, does not (solid violet); only the hand-tuned
           stand-in (dotted amber) does, and it was drawn to. (Corrected 2026-09-15: this verdict used to say all
           three models fit about equally well, which the chart beside it contradicts.) Fitting alone would
           not settle much anyway &mdash; what matters is whether a model makes a <em>different, testable
@@ -559,6 +559,19 @@ export default function GalaxyPlotter() {
             other function&apos;s floor. There are now <em>three</em> live objects behind the one symbol &mdash;
             C<sub>&#x03C1;</sub>, C<sub>a</sub>, and the quadrature-vs-division wiring fork &mdash; and only the third
             was labelled.
+          </div>
+          {/* 2026-10-06: visitor found five overlaid curves with no step-by-step reading guide */}
+          <div style={{ margin: '0 0 0.75rem', padding: '0.6rem 0.9rem', background: 'rgba(56,189,248,0.06)', border: '1px solid var(--color-border)', borderRadius: '0.375rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+            <strong>How to read this chart, in three steps</strong>
+            <ol style={{ margin: '0.35rem 0 0', paddingLeft: '1.3rem' }}>
+              <li><strong style={{ color: '#38bdf8' }}>Blue dots</strong> are what telescopes measure: how fast stars and gas orbit at each distance from the centre.
+                The <strong style={{ color: '#9ca3af' }}>dashed gray line</strong> is what the visible matter alone should produce under ordinary (Newtonian) gravity.</li>
+              <li><strong>The gap</strong> between the gray line and the blue dots, growing toward the edge, is the missing gravity &mdash; the
+                dark-matter puzzle. The <strong style={{ color: '#22c55e' }}>green dashed line</strong> (MOND) closes it with no per-galaxy tuning.</li>
+              <li>The <strong style={{ color: '#8b5cf6' }}>solid violet line</strong> is Synchronism&apos;s equation as published: it stays on
+                the gray line and does not close the gap &mdash; that is the failure. The <strong style={{ color: '#f59e0b' }}>dotted amber
+                line</strong> is a hand-drawn stand-in, not the theory.</li>
+            </ol>
           </div>
           <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', height: 'auto', display: 'block' }}>
             {/* Grid */}

@@ -28,6 +28,9 @@ export default function GammaCalculator() {
   return (
     <>
       <Breadcrumbs currentPath="/gamma-calculator" />
+      <p style={{ fontSize: '0.85rem', margin: '0 0 0.5rem' }}>
+        <Link href="/interactive-tools" style={{ color: 'var(--color-accent-blue)' }}>&larr; Interactive Tools</Link>
+      </p>
       <div style={{ display: 'flex', alignItems: 'baseline', gap: '1rem', flexWrap: 'wrap', marginBottom: '0.5rem' }}>
         <h1 style={{ margin: 0 }}>&#x03B3; Calculator</h1>
         <ValidationBadge status="audited-negative" label="Formula Audited-Negative — Sign Inverted for All Collective Systems" />
@@ -225,6 +228,10 @@ export default function GammaCalculator() {
         </div>
 
         <div className="card" style={{ marginBottom: '1rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0 0 0.5rem' }}>
+            <strong>N<sub>corr</sub></strong> = how many particles move together as one correlated unit (1 for a single
+            atom; millions for a crystal oscillating in phase). Dimensionless.
+          </p>
           <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
             N<sub>corr</sub>: <span style={{ fontFamily: 'monospace' }}>{ncorr.toLocaleString()}</span>
           </label>

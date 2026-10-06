@@ -88,6 +88,10 @@ export default function TestCatalog() {
           <span style={{ color: '#f59e0b' }}>■ Untested</span> — prediction exists, no data yet &nbsp;|&nbsp;
           <span style={{ color: '#94a3b8' }}>■ Speculative</span> — conceptual proposal without a quantitative test &nbsp;|&nbsp;
           <span style={{ color: '#ef4444' }}>■ Failed</span> — contradicted by data (with specific error).{' '}
+          <strong style={{ color: 'var(--color-text-secondary)' }}>Operational states (not badges):</strong>{' '}
+          Self-Eliminating-or-Tie &nbsp;|&nbsp; Unrunnable as stated &nbsp;|&nbsp; Withdrawn &nbsp;|&nbsp; Underpowered as registered
+          &mdash; these describe what a test <em>can</em> do or what happened to it, not a verdict on the claim.{' '}
+          <Link href="/glossary" style={{ color: 'var(--color-text-muted)' }}>Definitions (Glossary) →</Link>{' '}
           <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-text-muted)' }}>
             Canonical definitions (Honest Assessment) →
           </Link>
@@ -120,7 +124,7 @@ export default function TestCatalog() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#f59e0b' }}>Discrimination status:</strong>{' '}
-          Of these 24 proposed tests, <strong>0 selected Synchronism over MOND+EFE+&Lambda;CDM, and none still unrun can
+          Of these 24 proposed tests, <strong>0 selected Synchronism over MOND+EFE+&Lambda;CDM (MOND with its external field effect, plus the standard &Lambda;-cold-dark-matter cosmology), and none still unrun can
           select the framework as postulated</strong>.{' '}
           <strong>2 executed tests did discriminate, and both selected MOND</strong> (TEST-09, BTFR slope,
           separating the models at 3.3σ; TEST-10, dwarf DM fractions). Both kills are convention-dependent: TEST-09 fired at
@@ -192,7 +196,7 @@ export default function TestCatalog() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
           Tests use <strong>one flat namespace</strong>: TEST-01 &hellip; TEST-24 across the four tiers
           (Tier 1 = 01&ndash;10, Tier 2 = 11&ndash;14, Tier 3 = 15&ndash;21, Tier 4 = 22&ndash;24), plus <strong>TEST-25</strong>,
-          the Cassini/SPARC squeeze added out-of-band 2026-07-28, and <strong>TEST-26</strong>, the DESI DR3
+          the Cassini/SPARC squeeze added out-of-band 2026-07-28, and <strong>TEST-26</strong>, the DESI (Dark Energy Spectroscopic Instrument) DR3
           dark-energy class no-go (proposed 2026-08-10, prospective; kill or tie for the framework as postulated, select only
           on the mean-density reading; catalog-registered 2026-08-12
           after a visitor pass found it existing on one page and absent here). Both use existing data or scheduled survey data,
@@ -226,7 +230,7 @@ export default function TestCatalog() {
             datasets with these results:
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem', paddingLeft: '1.25rem' }}>
-            <li><strong>RAR transition shape</strong> (2807 SPARC points, 2026-05-21): γ=2 compander refuted at ΔBIC=+184; free-γ=0.49=MOND — <span style={{ color: '#ef4444' }}>FAILED (γ=2); collapses to MOND at fitted γ (curve-equivalence only — the field equation is postulated in the archive, not derived, and the version stated there is eliminated a priori — corrected 2026-08-09 from &ldquo;no action, no Lagrangian, no dynamics&rdquo;). Galaxy tests that selected Synchronism over MOND: 0 (2 discriminated, TEST-09 and TEST-10, and both selected MOND).</span>{' '}
+            <li><strong>RAR transition shape</strong> (2807 SPARC points, 2026-05-21): γ=2 compander refuted at ΔBIC=+184 (ΔBIC: difference in Bayesian Information Criterion; positive disfavours the first model); free-γ=0.49=MOND — <span style={{ color: '#ef4444' }}>FAILED (γ=2); collapses to MOND at fitted γ (curve-equivalence only — the field equation is postulated in the archive, not derived, and the version stated there is eliminated a priori — corrected 2026-08-09 from &ldquo;no action, no Lagrangian, no dynamics&rdquo;). Galaxy tests that selected Synchronism over MOND: 0 (2 discriminated, TEST-09 and TEST-10, and both selected MOND).</span>{' '}
               <details style={{ display: 'inline', color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
                 <summary style={{ cursor: 'pointer', display: 'inline' }}>Revision note</summary>{' '}
                 This line used to end &ldquo;Net discriminating galaxy tests vs MOND: 0&rdquo;, which read as the retracted
@@ -326,17 +330,27 @@ export default function TestCatalog() {
             so the refutation count stays at 6.{' '}
             <em style={{ color: 'var(--color-text-muted)' }}>(Updated 2026-09-14, explorer finding 2026-09-11.)</em>)
             An earlier version of this box recommended starting with three
-            existing-data tests; all three have since been adjudicated. BAO coherence modulation:{' '}
+            existing-data tests; all three have since been adjudicated. BAO (baryon acoustic oscillations) coherence modulation:{' '}
             <em>Withdrawn 2026-05-04</em> (internal contradiction, never adjudicated). SPARC
             environment analysis (TEST-01; TEST-01, TEST-03s and TEST-05 are one environment test under three IDs):
             the old &ldquo;R&sup2; = 0.14 kill&rdquo; was a metric conflation (corrected 2026-07-09); the SPARC
             environment claim was executed 2026-07-14 with r&sup2; = 0.0001 — refuted. That run is TEST-03s, a
             substitute; the ALFALFA-registered TEST-03 remains unrun.{' '}
             <em style={{ color: 'var(--color-text-muted)' }}>(ID corrected 2026-09-14; this label previously
-            said TEST-03, the ALFALFA TFR-scatter card.)</em> Wide binaries (TEST-02): <em>Self-Eliminating-or-Tie; density branch excluded at the published knee (Oort, LLR), acceleration branch = MOND; DR3 dispute unresolved</em> —
-            the 0.05–0.4% signal belongs to a knee no other page uses (at the published calibration the boost is ~3.5&times;10⁴ in g, excluded by the Oort limit and by lunar laser ranging); on the acceleration branch the prediction is MOND&apos;s, and either
-            outcome of the ongoing Chae-vs-Banik dispute is covered by Newton or MOND respectively,
-            so no result selects this framework. See{' '}
+            said TEST-03, the ALFALFA TFR-scatter card.)</em> Wide binaries (TEST-02): <em>Self-Eliminating-or-Tie; density branch identically null in the wide/close ratio and excluded by SPARC and LLR; acceleration branch already failed via TEST-25; DR3 dispute unresolved</em> —
+            on the density-keyed branch the boost cancels in the wide/close ratio the test measures, so it predicts no signal
+            at all; the branch is excluded independently by SPARC and by LLR (lunar laser ranging): as the Sun moves through
+            the Galaxy the density-keyed law makes G vary at Ġ/G &asymp; 10⁻⁸&ndash;10⁻⁵ yr⁻¹, against LLR&apos;s (7.1 &plusmn; 7.6)&times;10⁻¹⁴
+            (explorer, 2026-09-23). (The 0.05–0.4% signal belongs to a knee no other page uses.) On the acceleration branch the
+            prediction is MOND&apos;s, and at the SPARC γ that branch is already failed via TEST-25, through the same QUMOND +
+            Galactic external-field physics that would produce a wide-binary boost &mdash; so a Chae-type boost would rescue
+            nothing and add no second failure, while a Newtonian null would be a second failure shared with MOND. Either
+            outcome of the ongoing Chae-vs-Banik dispute is covered by Newton or MOND respectively, so no result selects this
+            framework.{' '}
+            <em style={{ color: 'var(--color-text-muted)' }}>(Revised 2026-10-06: this line used to say the density branch
+            was &ldquo;excluded at the published knee (Oort, LLR)&rdquo; and that the boost was &ldquo;excluded by the Oort
+            limit&rdquo;. The Oort exclusion was retired site-wide on 2026-09-09 &mdash; the Sun and globular clusters do not
+            close the density sector on a smoothed-density reading &mdash; and survived here; LLR stands.)</em> See{' '}
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
             and <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: Existing Data</Link>.
           </p>
@@ -384,7 +398,7 @@ export default function TestCatalog() {
           site&apos;s six-refutation headline:
         </p>
         <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-          <li><strong>B1: observer-relative Bell/CHSH.</strong> Can a local substrate, measured only through an observer&apos;s
+          <li><strong>B1: observer-relative Bell/CHSH (Clauser&ndash;Horne&ndash;Shimony&ndash;Holt).</strong> Can a local substrate, measured only through an observer&apos;s
             phase-lock, beat the classical CHSH limit S = 2 without signalling? Simulated 2026-06-21 to 07-06: local arm
             S = 1.98, nonlocal-grid arm S = 2.0, the framework&apos;s own density substrate S = 1.85. <strong>Refuted</strong> (a
             construction check, not data; see{' '}

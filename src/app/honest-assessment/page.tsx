@@ -48,7 +48,7 @@ export default function HonestAssessment() {
           If you read nothing else (this page is ~18,000 words)
         </p>
         <ul style={{ margin: 0, paddingLeft: '1.2rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-          <li><strong>The one equation did not hold as stated.</strong> Every decisive test it ran on real data, it lost &mdash; 6 refutations executed, 0 predictions confirmed. <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six?</a> Two of them (TEST-09, TEST-10) fired on galaxy rotation data only under the site&apos;s choice of cap; galaxy weak-lensing data exclude the cap under all three candidate choices. Rows #1 and #2 share one cause, so no more than five are independent. The count itself is under review.</li>
+          <li><strong>The one equation did not hold as stated.</strong> It lost every test it executed &mdash; 6 refutations, 0 predictions confirmed. <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six?</a> Not all six are decisive tests on outside data: the &gamma;&nbsp;=&nbsp;2 pin (row #3) sits at the threshold once each galaxy counts once, and row #6 is a construction check, not data. (Until 2026-10-06 this sentence said &ldquo;every decisive test it ran on real data&rdquo;, which its own table contradicted; a researcher visitor persona caught it.) Two of them (TEST-09, TEST-10) fired on galaxy rotation data only under the site&apos;s choice of cap; galaxy weak-lensing data exclude the cap under all three candidate choices. Rows #1 and #2 share one cause, so no more than five are independent. The count itself is under review.</li>
           <li><strong>Where it fits galaxies, it is MOND in different notation</strong> (MOND = the 40-year-old rival theory that tweaks gravity instead of adding dark matter). Let the dial that sets how sharp its S-curve is be fitted freely, and the equation lands on MOND&apos;s own formula; set that dial to the value the framework itself chose (γ = 2) and it fails.</li>
           <li><strong>Its two genuinely different claims both failed.</strong> A hard cap on the gravity boost (galaxy edges need 4× more than the cap allows) and a switch that turns on with local density instead of acceleration (the data reject that at every turn-on point tried).</li>
           <li><strong>&ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence.</strong> It is a classical &ldquo;how much does the system act as one thing&rdquo; score. See{' '}
@@ -253,7 +253,10 @@ export default function HonestAssessment() {
           section below); the number that survives regardless of convention is the tail: SPARC&apos;s maximum
           observed DM fraction (0.927) requires a boost of at least 13.7, which no ratio built from Ω<sub>m</sub>
           supplies (TEST-10, 2026-07-15); the one cosmic ratio that clears it, 1/Ω<sub>b</sub> = 20.3, counts no dark matter and is
-          excluded by the weak-lensing RAR at 10⁻¹⁵ m/s² (1.71×, 2026-09-25), so it survives on SPARC only to die one decade lower. The framework&apos;s registered environment effect was also run (2026-07-14): no trace
+          excluded by the classical dwarf spheroidals (gas-free, boosts of 30&ndash;100; Mateo 1998, Walker et al. 2009). Weak lensing
+          corroborates only conditionally: on the published KiDS-1000 bins (Brouwer et al. 2021, read 2026-10-04) it excludes
+          1/Ω<sub>b</sub> only if galaxies carry less than ~2&ndash;3× their stars plus cold gas out to ~0.3&ndash;1 Mpc, and the
+          face-value exclusion sits in the lowest-acceleration bins the data paper flags for satellite contamination. The framework&apos;s registered environment effect was also run (2026-07-14): no trace
           (r² = 0.0001 against a &gt;20% claim). The earlier cosmology test (DESI growth suppression) is
           <em>disfavored but not counted as a refutation</em> — the test as registered lacked the power to
           discriminate (corrected 2026-07-14). The galaxy transition-shape
@@ -364,8 +367,12 @@ export default function HonestAssessment() {
           the 69% figure does not hold. What survives under <em>either</em> convention is the tail: SPARC&apos;s
           maximum observed DM fraction is 0.927, which requires a boost of at least 13.7 — no ratio built from Ω<sub>m</sub>
           supplies that (the swept set: 1/Ω<sub>m</sub> = 3.17, (Ω<sub>m</sub>−Ω<sub>b</sub>)/Ω<sub>b</sub> = 5.4, Ω<sub>m</sub>/Ω<sub>b</sub> = 6.4); the no-CDM ratio
-          1/Ω<sub>b</sub> = 20.3 does clear 13.7 on SPARC and is excluded instead by the weak-lensing RAR (1.71× short at 10⁻¹⁵ m/s²,
-          2026-09-25). A cheaper kill predates SPARC by two decades: the classical dwarf spheroidals (Draco, Ursa Minor, Sextans) have dynamical
+          1/Ω<sub>b</sub> = 20.3 does clear 13.7 on SPARC. Weak lensing excludes it only conditionally: on the published KiDS-1000
+          bins (Brouwer et al. 2021; explorer 2026-10-04, pre-registered, script{' '}
+          <code style={{ fontSize: '0.78rem' }}>explorer/findings/scripts/lensing_cap_on_kids_bins.py</code>) it is excluded only if
+          galaxies carry less than ~2&ndash;3× their stars plus cold gas out to ~0.3&ndash;1 Mpc, and the face-value exclusion
+          (boost ≈ 300 at 10⁻¹⁵ m/s²) sits in bins the data paper flags for satellite contamination. (Until 2026-10-06 this sentence led with a lensing kill &ldquo;1.71× short at 10⁻¹⁵&rdquo;,
+          read off a represented curve rather than the published bins.) The kill that carries it predates SPARC by two decades: the classical dwarf spheroidals (Draco, Ursa Minor, Sextans) have dynamical
           M/L<sub>V</sub> ≈ 100–300 (Mateo 1998; Walker et al. 2009), boosts of 30–100 under any stellar M/L, above every cap; MOND has its own
           dSph problems (external field, tides), so cite this against the ceiling, not as a discriminator against MOND (added 2026-09-29). Stated as a class
           (added 2026-09-23 at a researcher persona&apos;s suggestion): <strong>no boost ceiling tied to a cosmic
@@ -894,7 +901,16 @@ export default function HonestAssessment() {
               stronger: head-to-head on the same SPARC points with γ <em>free</em> it loses at <strong>ΔBIC +2843</strong>{' '}
               (best-fit γ → 0.046, i.e. density-dependence switched off), its floored form is capped by the boost ceiling
               (B<sub>max</sub> = 3.17 vs the 13.7 SPARC dwarfs require; lensing ν = 110–347), and at the solar Oort limit it
-              predicts f<sub>DM</sub> = 0.685 against 0.13 ± 0.04 for any knee above ~0.15 M<sub>☉</sub>/pc³. Its one
+              predicts f<sub>DM</sub> = 0.685 against 0.13 ± 0.04 for any knee above ~0.15 M<sub>☉</sub>/pc³. The strongest
+              real-data constraint on it is not on SPARC at all: <strong>lunar laser ranging</strong>. A boost shared by a whole
+              neighbourhood cancels in any same-instant ratio, but not in time. The Sun moves through the disc and past nearby
+              stars, so G<sub>eff</sub> = G/C(ρ) drifts. At the 1&ndash;10 pc density smoothing the galaxy fits need, the knee grid
+              predicts Ġ/G ≈ 10⁻⁸ to 10⁻⁵ per year, against LLR&apos;s (7.1 ± 7.6)×10⁻¹⁴ (Hofmann &amp; Müller 2018). That
+              excludes 68 of 74 laws, and the survivors are Newtonian to 10⁻⁸ at the Sun (explorer 2026-09-23, pre-registered;
+              details on the <Link href="/tier-1-existing#TEST-02" style={{ color: '#f87171' }}>TEST-02 card</Link>). This is a
+              second, SPARC-independent root for the same density-keyed kill, <em>not a seventh refutation</em>. Whether it becomes
+              its own ledger row, or replaces the weaker environment registration (row #4) as the density-keyed entry, is
+              dp&apos;s call (added 2026-10-06; a researcher visitor persona found it missing from this page). Its one
               registered per-object test is the globular-cluster fork <a href="#gc-fork" style={{ color: '#f87171' }}>below</a>.
               Lead with those; +184 is the right number attached to the wrong model.
             </p>

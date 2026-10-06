@@ -17,19 +17,27 @@ export default function ForResearchers() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
-          <strong>The program in one sentence.</strong> &#x03B3; = &frac12; is the one value at which (1+x)<sup>2&#x03B3;</sup> is
-          linear, so it is where the ansatz stops being itself in <em>both</em> sectors at once: C = x/(x+2), Milgrom&apos;s
-          simple &#x03BC;, for galaxies, and &#x03C1;<sub>DE</sub> = 2&#x03C1;<sub>crit</sub>, exactly &#x039B;, for cosmology.
-          Left free, the single parameter goes there: 0.489 on SPARC, 0.487 (+0.024/&minus;0.021) on DESI DR2+CMB+SN
-          (mean-density reading; on the local-density fluid reading, P(k) pins &#x03B3; to &frac12; within ~10&#x207B;&#x2075;).{' '}
-          <strong>This is a deflation, not a concordance.</strong> The two sectors&apos; standard models sit at the <em>same</em>
-          point, &#x03B3; = &frac12;, by construction (the 0.011 is SPARC&apos;s fitted offset from &frac12;, not a gap between
-          the models; corrected 2026-09-23, see revision notes); the SPARC value carries &plusmn;0.11 statistical and a 0.27&ndash;0.96 band from
-          mass-to-light alone, so the agreement had no power to fail. What it says is that wherever this equation has been
-          fitted, the data asked for the point where it is somebody else&apos;s.
+          <strong>The program in three sentences.</strong> (1) <em>Claim:</em> the framework&apos;s tanh-log equation, fitted
+          freely, goes to the one dial setting (&#x03B3; = &frac12;) where it turns into somebody else&apos;s formula: Milgrom&apos;s
+          simple MOND interpolating function for galaxies, and a cosmological constant (&#x039B;) for dark energy.
+          (2) <em>Numbers:</em> &#x03B3; = 0.489 on SPARC rotation curves (acceleration-keyed; &Upsilon; frozen at 0.5,
+          points unweighted &mdash; with mass-to-light, distance and inclination marginalized per galaxy the fit moves to
+          0.6 [0.43, 0.95]), and 0.487 (+0.024/&minus;0.021) on DESI DR2 + CMB + supernovae (density-keyed, mean density).
+          (3) <em>Caveat:</em> <strong>this is a deflation, not a concordance.</strong> The two numbers are the same point of
+          one function family in different variables, not one parameter measured twice; both standard models sit at
+          &#x03B3; = &frac12; by construction, so the agreement had no power to fail.
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+            <summary style={{ cursor: 'pointer' }}>The algebra and the error bars</summary>
+            &#x03B3; = &frac12; is the one value at which (1+x)<sup>2&#x03B3;</sup> is linear, so C = x/(x+2) (Milgrom&apos;s simple
+            &#x03BC; at x/2) and &#x03C1;<sub>DE</sub> = 2&#x03C1;<sub>crit</sub> (exactly &#x039B;). On the local-density fluid reading
+            of the cosmology, P(k) pins &#x03B3; to &frac12; within ~10&#x207B;&#x2075;. The SPARC value carries &plusmn;0.11
+            statistical and a 0.27&ndash;0.96 band from mass-to-light alone; the 0.011 is SPARC&apos;s fitted offset from &frac12;,
+            not a gap between the models (corrected 2026-09-23).
+          </details>
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.4rem' }}>
             <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
             <ul style={{ margin: '0.3rem 0 0', paddingLeft: '1.1rem' }}>
+              <li>Until 2026-10-06 this box was one ~150-word sentence that called 0.489 and 0.487 &ldquo;the single parameter&rdquo; and quoted 0.489 without its frozen-&Upsilon; qualifier; split into claim, numbers and caveat after a technical-writer visitor persona called it the least parseable sentence on the site.</li>
               <li>Until 2026-09-23 the deflation sentence said the two sectors&apos; standard models sit &ldquo;0.011 apart by construction&rdquo;.</li>
               <li>This box was moved here 2026-09-19 from a parenthetical on{' '}
               <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link> after a researcher
@@ -66,6 +74,22 @@ export default function ForResearchers() {
           This page said &ldquo;0 tests currently discriminating&rdquo; until 2026-07-27, which booked the framework&apos;s two
           strongest empirical results as zero; the bolded line was reunified 2026-08-08.
         </details>
+        <div id="forward-data" style={{ marginBottom: '1.25rem', fontSize: '0.85rem' }}>
+          <strong>What upcoming data can still move</strong> (added 2026-10-06 at a researcher visitor persona&apos;s request;
+          from the explorer&apos;s 2026-10-04 stopping table). None of these can confirm a novel prediction. Each can only
+          refute a reading or leave it standing.
+          <div style={{ overflowX: 'auto' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '0.4rem', color: 'var(--color-text-secondary)' }}>
+            <thead><tr><th style={{ textAlign: 'left', padding: '0.35rem 0.5rem' }}>Data</th><th style={{ textAlign: 'left', padding: '0.35rem 0.5rem' }}>Test</th><th style={{ textAlign: 'left', padding: '0.35rem 0.5rem' }}>Can confirm novelty?</th><th style={{ textAlign: 'left', padding: '0.35rem 0.5rem' }}>Can kill?</th><th style={{ textAlign: 'left', padding: '0.35rem 0.5rem' }}>Note</th></tr></thead>
+            <tbody>
+              <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Gaia DR4 wide binaries (planned Dec 2026)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>TEST-02</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>No</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Yes: a Newtonian null fails the acceleration-keyed compander at every γ ≲ 3, shared with MOND&apos;s simple μ. A Chae-type ≈1.4× boost rescues nothing: it needs γ ≲ 1, where Cassini (TEST-25) already fails.</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Only a precise ≈1.1–1.2× boost lands on the Cassini-passing γ ≈ 1.5–2, and that member is still MOND-class. Density branch: identically null in this ratio. Rough bracket, not pre-registered.</td></tr>
+              <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>BIG-SPARC (~4,000 rotation curves; release pending)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>γ = 2 pin (ledger row #3)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>No: free γ is MOND</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Yes: 1.9–2.3σ on 166 galaxies could sharpen to a refutation, or relax</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Also tests the Cassini-passing γ ≳ 1.5–2 that TEST-25 leaves open</td></tr>
+              <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>RC100 high-redshift rotation curves (published; unrun)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>a₀(z) = cH(z)/2π trend</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>No: a₀ ∝ H is prior art</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Yes: the ratio between redshift bins is 1 for MOND and 1.80 for this branch</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Data are in hand; the run is not done (explorer topic queued)</td></tr>
+              <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>DESI DR3</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Dark energy w(z) (TEST-26); growth fσ₈ (TEST-04a)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>No: the family contains Λ at γ = ½</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Only jointly with ΛCDM; TEST-04a&apos;s kill fires &lt;1% even under ΛCDM</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Not a discriminator at current power</td></tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
         <div id="start-here" style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', padding: '0.85rem 1.1rem', marginBottom: '1.25rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)', scrollMarginTop: '5rem' }}>
           <strong style={{ color: 'var(--color-accent-violet)' }}>Start here: negative results on density-keyed modified gravity
           (framework-independent)</strong>

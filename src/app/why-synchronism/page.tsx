@@ -47,7 +47,7 @@ export default function WhySynchronism() {
 
       <details className="content-width" style={{ margin: '0 auto 1.5rem auto', border: '1px solid var(--color-border)', borderRadius: '0.5rem', padding: '0.75rem 1rem' }}>
         <summary style={{ cursor: 'pointer', fontWeight: 600 }}>
-          Details for the curious: the problem, the approach, what was tested, what failed (long; some physics)
+          For physicists: the technical details &mdash; the problem, the approach, what was tested, what failed (long; jargon is glossed in plain words where it first appears)
         </summary>
 
       <section className="section content-width">
@@ -173,7 +173,11 @@ export default function WhySynchronism() {
             <h3>Galaxy Rotation Curves</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
               Tested against {GALAXIES_RUN} galaxies ({GALAXIES_RUN_BREAKDOWN}) &mdash; but the
-              mechanism itself was tested on the {GALAXIES_MECHANISM} resolved SPARC rotation curves; the
+              mechanism itself was tested on the {GALAXIES_MECHANISM} resolved SPARC rotation curves
+              (plain words: <strong>SPARC</strong> is a standard public catalogue of nearby galaxies whose
+              spin speeds have been measured carefully at many distances from their centres;{' '}
+              <strong>ALFALFA&ndash;SDSS</strong> is a much larger sky survey with one rough spin speed per
+              galaxy); the
               14,435-object Tully&ndash;Fisher scatter test was registered and never run as registered.
               <em style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}> (This card said &ldquo;14,760&rdquo;
               until 2026-09-06 while the landing page called that figure incorrect &mdash; Beginner step 1
@@ -237,7 +241,7 @@ export default function WhySynchronism() {
               superconductors turned out to be a textbook 1960 formula written in new notation, so that
               part was not new physics either.{' '}
               <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-                (For experts: YBCO; the &#x03B7; &ldquo;reachability&rdquo; factor restates Abrikosov&ndash;Gor&apos;kov pair-breaking.)
+                (For experts: YBCO; the &#x03B7; &ldquo;reachability&rdquo; factor restates Abrikosov&ndash;Gor&apos;kov pair-breaking &mdash; in plain words, the standard 1960 theory of how impurities break up the electron pairs that carry a supercurrent.)
               </span>
             </p>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem', fontSize: '0.9rem' }}>

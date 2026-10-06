@@ -118,7 +118,13 @@ export default function Home() {
             <em> acceleration</em> instead &mdash; the RAR fits (&gamma;&nbsp;=&nbsp;0.49, &Delta;BIC&nbsp;+184 at &gamma;&nbsp;=&nbsp;2),
             and an &Omega;<sub>m</sub>-floored variant for the BTFR and dwarf tests. At &gamma;&nbsp;=&nbsp;&frac12; the acceleration
             version <em>is</em> MOND&apos;s simple interpolating function. The density version above was tested
-            separately and fails on galaxy data. See{' '}
+            separately and fails on galaxy data. So &ldquo;the equation failed&rdquo; means a family failed, three
+            functions sharing one shape: <strong>C<sub>&rho;</sub></strong> (the one above, keyed on density),{' '}
+            <strong>C<sub>g</sub></strong> = tanh(&gamma; ln(1 + g<sub>obs</sub>/a<sub>0</sub>&prime;)) (keyed on observed acceleration;
+            RAR shape and Cassini), and <strong>C<sub>a</sub></strong> = &Omega;<sub>m</sub> + (1 &minus; &Omega;<sub>m</sub>)&middot;x/(1+x)
+            (keyed on acceleration and floored at &Omega;<sub>m</sub>; BTFR slope and dwarf dark-matter fractions). Each refutation
+            names its function in the{' '}
+            <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>&ldquo;Which C&rdquo; column</Link>. See{' '}
             <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>.
           </p>
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginBottom: '0.25rem' }}>
@@ -402,7 +408,7 @@ export default function Home() {
                   </div>
                 </details>
               </div>
-              <span>Post-hoc retrodictions attempted <em style={{ color: 'var(--color-text-muted)' }}>(checking the idea against data that already existed)</em>: <strong style={{ color: '#f59e0b' }}>1 — underpowered</strong> (DESI fσ₈ — disfavored 2.4σ on σ₈, but the registered fσ₈ criterion fell short of its own &gt;3σ bar and is not counted as a refutation; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
+              <span>Post-hoc retrodictions attempted <em style={{ color: 'var(--color-text-muted)' }}>(checking the idea against data that already existed)</em>: <strong style={{ color: '#f59e0b' }}>1 — underpowered</strong> (DESI (Dark Energy Spectroscopic Instrument) fσ₈ — disfavored 2.4σ on σ₈, but the registered fσ₈ criterion fell short of its own &gt;3σ bar and is not counted as a refutation; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
               <span>&ldquo;Validated&rdquo; claims surviving audit: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 9</strong> — the 6 former &ldquo;Validated&rdquo; badges (5 now reparametrizations; the BTFR slope moved to the refutation column 2026-07-14) plus 3 swept later (<Link href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</Link>). <strong>Who audited:</strong> LLM agents (the archive&apos;s AI research sessions and this site&apos;s AI tracks), not an outside domain expert &mdash; so this line is <em>instrument-uncalibrated</em>. The one calibration attempt (2026-05-22) was an in-distribution arm self-scored by one model that knew every answer, and it false-flagged 6/6 genuine discoveries under the literal rule; the out-of-distribution, post-cutoff, citation-stripped arm has never been run (<Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>details</Link>). Kept in a separate cell because the data-driven refutations above do not depend on it.{' '}
                 <strong>So this count is not evidence against the claims.</strong> On the same scored items the audit gives
@@ -471,8 +477,16 @@ export default function Home() {
           {/* Research Activity — clearly labeled, secondary */}
           <section style={{ marginBottom: '3rem' }}>
             <div style={{ fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
-              Research Activity
+              Research Activity <span style={{ textTransform: 'none', letterSpacing: 0, fontWeight: 400 }}>&mdash; process volume, not evidence</span>
             </div>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0 0 0.75rem' }}>
+              The work that carries weight here is the tests coded against outside data with an outside answer key: SPARC
+              rotation curves, KiDS-1000 weak lensing, DESI DR2 + CMB + supernovae, the Cassini Solar-System bound, and lunar laser
+              ranging. Every verdict in the scoreboard above comes from those. The counts below measure how much work was done;
+              the AI-to-AI session method that produced most of it is uncalibrated as a discovery method (on its one benchmark it flagged all six real discoveries along
+              with the three reparametrizations: Youden&apos;s J = 0;{' '}
+              <Link href="/research-philosophy" style={{ color: 'var(--color-accent-blue)' }}>Research Philosophy</Link>).
+            </p>
             <div className="grid-3">
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>3,308</div>
@@ -482,7 +496,7 @@ export default function Home() {
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>1,703</div>
                 <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Chemical phenomena analyzed</div>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>23 curated on-site; a 2-parameter null model matches or beats every correlation</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>23 curated on-site; a 2-parameter null model matches or beats every correlation. The per-material γ table behind the 1,703 is unpublished, so the count is not reproducible.</div>
               </div>
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>14,610</div>

@@ -14,8 +14,13 @@ interface BreadcrumbsProps {
 // wrong (a sibling masquerading as a parent) on every other page in the category. Visitor
 // 2026-07-30 (tech writer persona) caught the circular case on /why-synchronism. Left
 // unlinked here rather than pointed at any one sibling.
+// Visitor 2026-10-06 (tech writer): "Methodology" was plain text although /methodology already
+// redirects to /research-philosophy, so that page is the de-facto hub. Research Philosophy is
+// itself in the Methodology category, so on that page the crumb stays a label (no self-link).
+// "Core Theory" and "Predictions & Experiments" have no hub page and stay unlinked.
 const categoryHubs: Record<string, string> = {
   'Interactive Tools': '/interactive-tools',
+  'Methodology': '/research-philosophy',
 };
 
 // Visitor 2026-09-27: the main nav's "Start Here" links to /why-synchronism, so a
@@ -57,7 +62,7 @@ export default function Breadcrumbs({ currentPath }: BreadcrumbsProps) {
           <>
             <li style={{ color: 'var(--color-text-muted)' }} aria-hidden="true">/</li>
             <li>
-              {categoryHubs[category] ? (
+              {categoryHubs[category] && categoryHubs[category] !== currentPath ? (
                 <Link href={categoryHubs[category]} style={{ color: 'var(--color-text-secondary)' }}>{category}</Link>
               ) : (
                 // No index page exists for this section (e.g. /core-theory is a 404), so the crumb is

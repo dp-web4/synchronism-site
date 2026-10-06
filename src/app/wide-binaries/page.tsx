@@ -11,7 +11,7 @@ export default function WideBinaries() {
     <>
       <Breadcrumbs currentPath="/wide-binaries" />
       <h1>Wide Binaries</h1>
-      <ValidationBadge status="untested" label="Self-Eliminating-or-Tie — density branch excluded at the published knee (Oort, LLR), acceleration branch = MOND; DR3 dispute unresolved" />
+      <ValidationBadge status="untested" label="Self-Eliminating-or-Tie — density branch identically null in the ratio (excluded by SPARC and LLR), acceleration branch already failed at the SPARC γ via TEST-25; DR3 dispute unresolved" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -52,7 +52,12 @@ export default function WideBinaries() {
           <h3 style={{ color: 'var(--color-accent-violet)' }}>Acceleration-keyed version (the one that fits galaxies)</h3>
           <p style={{ color: 'var(--color-text-secondary)' }}>
             At its SPARC fit this version is Milgrom&apos;s simple MOND function, so it predicts MOND&apos;s wide-binary boost,
-            EFE included. Here the test cannot separate it from MOND. It can only fail both together.
+            EFE included. Here the test cannot separate it from MOND. It can only fail both together. And at that fit it has
+            already failed: the Cassini Solar-System bound (<Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>)
+            tests the same &#x03BD;, the same QUMOND field equation and the same Milky Way external field that make the
+            wide-binary boost. Across the compander family the dial &#x03B3; sets both: a &asymp;1.4&times; boost needs
+            &#x03B3; &#x2272; 1, where Cassini fails, and the Cassini-passing &#x03B3; &asymp; 1.5&ndash;2 predicts only
+            &asymp;1.1&ndash;1.2&times; (rough bracket, not pre-registered; added 2026-10-06).
           </p>
         </div>
         <div className="card card-highlight" style={{ margin: '1.5rem 0' }}>
@@ -215,8 +220,12 @@ export default function WideBinaries() {
           <div className="card">
             <h3 style={{ color: '#ef4444' }}>If anomaly confirmed (Chae wins)</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              A confirmed EFE-suppressed MOND anomaly would support MOND and the acceleration-keyed version equally. For the
-              density law it would rule out the near-Newtonian knee window. The published calibration is already excluded.
+              A confirmed EFE-suppressed MOND anomaly of &asymp;1.4&times; would rescue nothing: it needs the acceleration-keyed
+              version at &#x03B3; &#x2272; 1, where Cassini already fails it, so it adds no second failure but no support either.
+              Only a precise &asymp;1.1&ndash;1.2&times; boost would land on the Cassini-passing &#x03B3; &asymp; 1.5&ndash;2, which
+              SPARC disfavours at ~2&sigma;. For the density law it would rule out the near-Newtonian knee window. The
+              published calibration is already excluded. (Until 2026-10-06 this card said a confirmed anomaly would
+              &ldquo;support MOND and the acceleration-keyed version equally&rdquo;.)
             </p>
           </div>
           <div className="card">

@@ -460,9 +460,16 @@ export default function ParameterDerivations() {
               bookkeeping &mdash; expressing Freeman&apos;s empirical value via cosmological constants, not
               deriving it from physics. <strong>&#x03A3;&#x2080; is not independent evidence from a&#x2080;:</strong> since
               &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) exactly, this is the a&#x2080; row propagated through a linear relation, not
-              a second derivation. Milgrom&apos;s own &#x03A3;<sub>M</sub> = a&#x2080;<sub>,obs</sub>/(2&#x03C0;G) &#x2248; 137 M&#x2609;/pc&sup2;
+              a second derivation. Which &#x03A3;<sub>M</sub>: Milgrom&apos;s critical surface density is often defined as
+              a&#x2080;/G, which is &#x2248; 861 M&#x2609;/pc&sup2; for a&#x2080; = 1.2&times;10<sup>&minus;10</sup> m/s&sup2;; this page
+              uses the a&#x2080;/(2&#x03C0;G) normalization throughout, which is 2&#x03C0; smaller. Under that convention
+              Milgrom&apos;s &#x03A3;<sub>M</sub> = a&#x2080;<sub>,obs</sub>/(2&#x03C0;G) &#x2248; 137 M&#x2609;/pc&sup2;
               sits 10% above Freeman&apos;s 124, and this page&apos;s a&#x2080; (1.04 at H&#x2080; = 67.4) sits 13% below Milgrom&apos;s observed
               a&#x2080; &mdash; equivalently, &#x03A3;&#x2080; = 119 sits the same 13% below Milgrom&apos;s &#x03A3;<sub>M</sub> = 137: one gap, one number, not two rows of independent support.
+              The comparison to Freeman&apos;s 124 is itself convention-laden: that figure is a B-band central surface
+              brightness converted with an assumed mass-to-light ratio &Upsilon;, so a different band or &Upsilon; moves it (see
+              the caveat below). With the a&#x2080;/G normalization the same comparison would be off by 2&#x03C0;.
+              (Definition note added 2026-10-06, graduate-physics visitor persona.)
               Re-badged from &ldquo;Validated&rdquo; (2026-04-28): a tight numeric match is not sufficient to claim
               derivation of what is, in origin, an observational law.
             </p>
@@ -605,9 +612,11 @@ export default function ParameterDerivations() {
               (<code>Research/proposals/boost_ceiling_provenance_and_class_exclusion.md</code>) flags that the
               cosmic ratio a <em>dynamical-to-baryonic</em> boost should reference is arguably
               &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> &#8776; 6.40 (the baryon budget), not 1/&#x03A9;<sub>m</sub>
-              (a matter-to-critical-density ratio). Under that convention TEST-10&apos;s reported
-              <em> median</em> f<sub>DM</sub> = 0.755 passes (ceiling 0.844) and the &ldquo;69% of SPARC exceeds
-              the ceiling&rdquo; headline is convention-dependent. The kill does not depend on the convention
+              (a matter-to-critical-density ratio). Under that convention the f<sub>DM</sub> ceiling is 0.844, against
+              0.685 under 1/&Omega;<sub>m</sub>. TEST-10&apos;s reported <em>median</em> f<sub>DM</sub> is 0.755, so the
+              median passes the 0.844 ceiling. Separately, the &ldquo;69% of SPARC exceeds the ceiling&rdquo; headline
+              counts all 153 galaxies against the 0.685 ceiling (106/153), so it holds only under the 1/&Omega;<sub>m</sub>{' '}
+              convention. The kill does not depend on the convention
               choice at the tail: SPARC&apos;s maximum observed f<sub>DM</sub> = 0.927 requires B &#8805; 13.7,
               which no ratio built from &Omega;<sub>m</sub> supplies (1/&Omega;<sub>b</sub> = 20.3 does, and is excluded by the weak-lensing RAR one decade lower, 2026-09-25) &mdash; so the robust, convention-free statement is a
               class exclusion (B<sub>max</sub> &#8818; 14 is excluded by SPARC dwarfs), not the median-based

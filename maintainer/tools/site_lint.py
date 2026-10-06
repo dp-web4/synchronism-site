@@ -23,6 +23,17 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-06 (maintainer): wide-binary "split"; lensing 1.71x; summary-box "decisive on real data"; QM-interpretation overreach
+    (r"(each|whichever) outcome spares one (branch|realization)|leaves the (acceleration )?branch standing", "2026-10-06",
+     "at the SPARC gamma the acceleration branch is already failed via TEST-25 (same QUMOND+EFE physics); DR4 is a one-parameter squeeze, not a split"),
+    (r"1\.71\s*(×|&times;|x)", "2026-10-06",
+     "the lensing kill of 1/Omega_b was read off a represented curve; on the published KiDS bins it is census-conditional; the dSphs carry the kill"),
+    (r"Every decisive test it ran on real data", "2026-10-06",
+     "row #3 (gamma=2 pin) is at threshold galaxy-level and row #6 is a construction check; say 'every test it executed'"),
+    (r"\(Oort, LLR\)", "2026-10-06",
+     "Oort is a knee-specific statement (published knee only); the TEST-02 density branch leads with 'identically null in the ratio; excluded by SPARC and LLR'"),
+    (r"Every QM interpretation", "2026-10-06",
+     "false of Many-Worlds, relational QM, Bohm, GRW/CSL, decoherence; state it as the framework's motivating wager"),
     # --- retired 2026-09-25 (maintainer): CHSH bound attributed to no-signaling; fixed-radius n -> 2 as universal; stale bottom line
     (r"every no-signaling construction built", "2026-09-25",
      "the CHSH S <= 2 bound comes from locality (factorisability), not no-signaling; quantum and PR boxes are no-signaling above 2"),
@@ -272,7 +283,7 @@ REQUIRES = [
 
 EXEMPT = re.compile(
     r"previously|until 2026|read &ldquo;|this (line|sentence|card|page|row) (read|said)|corrected|withdrawn|retired|"
-    r"used to|was wrong|argued the threshold|reworded",
+    r"used to|was wrong|argued the threshold|reworded|corrects the|older notes that said|moved from the status note|was &ldquo;",
     re.IGNORECASE,
 )
 

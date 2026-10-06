@@ -38,6 +38,10 @@ export default function CoreIdea() {
         <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not &rarr;</Link>
       </div>
 
+      <div className="content-width" style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--color-text-muted)', margin: '0 0 0.75rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '0.25rem' }}>
+        Intermediate &mdash; you have left the Beginner path from here down
+      </div>
+
       <div className="content-width" style={{ fontSize: '0.82rem', color: 'var(--color-text-secondary)', margin: '0 0 1.75rem', padding: '0.6rem 0.9rem', borderLeft: '2px solid var(--color-accent-blue)', background: 'rgba(56,189,248,0.05)', borderRadius: '0.25rem', lineHeight: 1.7 }}>
         <strong>Badge key</strong> (you&apos;ll meet these below). The colored leading word is the verdict; any text after the dash just names the specific finding.
         <br />
@@ -136,14 +140,22 @@ export default function CoreIdea() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>&#x03C1;</div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-              <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>Presence</Link>: local density — how many relevant elements are packed in a given region (e.g. stars per cubic light-year, atoms per unit volume)
+              Presence: local density — how many relevant elements are packed in a given region (e.g. stars per cubic light-year, atoms per unit volume). &ldquo;Relevant&rdquo; means inside the system&apos;s{' '}
+              <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>MRH (Markov Relevancy Horizon)</Link>: the bubble of neighbours close enough to actually influence it.
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>C</div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
               Coherence: 0 = sparse/independent, 1 = dense/collective.{' '}
-              <span style={{ color: 'var(--color-text-muted)' }}>⚠ Not quantum coherence — superconductors score <em>low</em> here.</span>
+              <span style={{ color: 'var(--color-text-muted)' }}>⚠ Not quantum coherence — superconductors score <em>low</em> here.</span>{' '}
+              <span style={{ color: 'var(--color-text-muted)', display: 'block', marginTop: '0.35rem', fontSize: '0.95em' }}>
+                Why: here C depends only on density (relative to &#x03C1;<sub>crit</sub>) and the &#x03B3; dial, and
+                &#x03B3; = 2/&#x221A;N<sub>corr</sub> <em>shrinks</em> as the correlated group N<sub>corr</sub> grows.
+                A superconductor&apos;s huge correlated group gives a tiny &#x03B3;, a nearly flat curve, and a low
+                score &mdash; the opposite of quantum lockstep. That backwards ranking is a known flaw, badged
+                audited-negative (see the &#x03B3; card).
+              </span>
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
@@ -190,6 +202,9 @@ export default function CoreIdea() {
           heading down the page compares the curve with Hill functions, Naka&ndash;Rushton curves and Landau theory for readers with a physics
           background. The one sentence to take away: when the data are allowed to pick the curve, it barely responds to density at all, the
           opposite of the idea. Next: <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not (Step 4)</Link>.
+        </div>
+        <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--color-text-muted)', margin: '0 0 0.75rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '0.25rem' }}>
+          Intermediate &mdash; physics background helpful from here down
         </div>
         <h2>Why These Specific Choices?</h2>
 

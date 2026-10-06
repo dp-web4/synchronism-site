@@ -120,16 +120,32 @@ export default function PhaseBoundaryVisualizer() {
           <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
           (1/&#x221A;N is a width, not a rate). The condensed-matter anchor is the <strong>Ginzburg
           criterion</strong>, which bounds the width of the critical-fluctuation region &mdash; the temperature window in
-          which fluctuations visibly round a transition. In three dimensions that width scales roughly as
-          N<sub>&#x03BE;</sub><sup>&#x2212;2</sup> &#x221D; &#x03BE;<sub>0</sub><sup>&#x2212;6</sup> (N<sub>&#x03BE;</sub> = particles per
-          coherence volume): large &#x03BE;<sub>0</sub> &#x2192; a vanishingly narrow critical-fluctuation region. That is why BCS superconductors, with very many pairs per coherence volume, show
-          mean-field-sharp transitions. Against that anchor the formula has the wrong sign <em>and</em> the wrong
-          exponent. The inversion is stated here because this is the page where systems
+          which fluctuations visibly round a transition. In three dimensions the Ginzburg number is
+          Gi &#x221D; (k<sub>B</sub>/(&#x0394;C&nbsp;&#x03BE;<sub>0</sub><sup>3</sup>))<sup>2</sup> (&#x0394;C = specific-heat jump per
+          volume). Only at fixed &#x0394;C does that reduce to &#x03BE;<sub>0</sub><sup>&#x2212;6</sup> &#x221D;
+          N<sub>&#x03BE;</sub><sup>&#x2212;2</sup> (N<sub>&#x03BE;</sub> = particles per coherence volume). For BCS
+          superconductors &#x0394;C itself scales with T<sub>c</sub>/E<sub>F</sub>, and the textbook result is
+          Gi ~ (T<sub>c</sub>/E<sub>F</sub>)<sup>4</sup> ~ (k<sub>F</sub>&#x03BE;<sub>0</sub>)<sup>&#x2212;4</sup> &#x221D;
+          N<sub>&#x03BE;</sub><sup>&#x2212;4/3</sup>. Either way, large &#x03BE;<sub>0</sub> &#x2192; a vanishingly narrow
+          critical-fluctuation region. That is why BCS superconductors, with very many pairs per coherence volume, show
+          mean-field-sharp transitions. Against that anchor the formula has the wrong sign: the real width falls steeply
+          with N<sub>&#x03BE;</sub> (as N<sub>&#x03BE;</sub><sup>&#x2212;4/3</sup> for BCS), while &#x03B3; = 2/&#x221A;N
+          makes high-N curves flatter. The exponent does not match either (1/2 against 4/3 for BCS), but the sign is the
+          decisive point and holds for any exponent. The inversion is stated here because this is the page where systems
           are visually placed. Also note the axis itself: the quoted BCS value
           (&#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>) is on-scale, at the left edge of the linear 0&ndash;4 range, but
           indistinguishable from 0 there (it is ~3 orders of magnitude smaller than the axis&apos;s first band edge, 0.6).
           (Corrected 2026-09-21: this previously said &ldquo;three orders of magnitude off the left edge&rdquo;; a
           linear axis starting at 0 cannot place a positive value beyond its left edge.)
+          <details style={{ marginTop: '0.35rem', fontSize: '0.8rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note (2026-10-06)</summary>
+            The Ginzburg benchmark used to say the critical-region width &ldquo;scales roughly as
+            N<sub>&#x03BE;</sub><sup>&#x2212;2</sup> &#x221D; &#x03BE;<sub>0</sub><sup>&#x2212;6</sup>&rdquo; and that the formula had
+            &ldquo;the wrong sign <em>and</em> the wrong exponent&rdquo;. That scaling holds only at fixed &#x0394;C; for BCS,
+            the system the page names, Gi ~ (T<sub>c</sub>/E<sub>F</sub>)<sup>4</sup> &#x221D; N<sub>&#x03BE;</sub><sup>&#x2212;4/3</sup>.
+            The exponent comparison now uses the BCS value; the sign argument is unchanged. Caught by the graduate-physics
+            visitor persona, 2026-10-06.
+          </details>
         </div>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>

@@ -11,7 +11,7 @@ function coherence(rho: number, gamma: number, rhoCrit: number): number {
 }
 
 export default function CoherenceExplorer() {
-  // Default is the SPARC free-γ fit (≈0.49), not the original γ=2 galaxy guess that
+  // Default is the SPARC free-γ fit of the ACCELERATION-keyed law (≈0.49; the density-keyed free fit is 0.046), not the original γ=2 galaxy guess that
   // the site's own tests refuted — visitor 2026-07-30 (casual persona) found γ=2 as the
   // opening default confusing next to /core-idea's own "refuted" label for that value.
   const [gamma, setGamma] = useState(0.49);
@@ -191,15 +191,17 @@ export default function CoherenceExplorer() {
 
         {/* Orientation line above the sliders (visitor 2026-09-23: beginners met the γ default with no frame). */}
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
-          <strong>Before you drag:</strong> the default &#x03B3; = 0.49 is what galaxy data prefer when &#x03B3; is left free.
-          &#x03B3; = 2 is what the framework originally said. The gap between them is part of why the framework failed its
-          galaxy test.
+          <strong>Before you drag:</strong> the default &#x03B3; = 0.49 is what galaxy data prefer when &#x03B3; is left free
+          in the <em>acceleration</em> version of this curve (the one that turns out to be MOND). This tool&apos;s x-axis is
+          <em> density</em>, and the density version fitted freely to the same galaxies runs to &#x03B3; = 0.046 &mdash; a
+          nearly flat curve (try that preset). &#x03B3; = 2 is what the framework originally said. The gaps between these
+          numbers are part of why the framework failed its galaxy test.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
           <div className="card">
             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
-              <strong>Transition sharpness</strong> (&#x03B3;) = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{gamma.toFixed(2)}</span>
+              <strong>Transition sharpness</strong> (&#x03B3;) = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{gamma < 0.1 ? gamma.toFixed(3) : gamma.toFixed(2)}</span>
             </label>
             <input
               type="range" min="0.01" max="4.0" step="0.01" value={gamma}
@@ -208,8 +210,9 @@ export default function CoherenceExplorer() {
             />
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
               {[
-                { g: 0.49, label: 'γ = 0.49 — gentle slope: what SPARC galaxies picked (= MOND there; killed by Cassini at 8.7σ; illustrative on this density axis)' },
-                { g: 0.5, label: 'γ = ½ exactly — algebraically MOND’s simple μ (see note below)' },
+                { g: 0.046, label: 'γ = 0.046 — density version fit to real galaxies: nearly flat (SPARC, density-keyed free fit; loses at ΔBIC +2843)' },
+                { g: 0.49, label: 'γ = 0.49 — what real galaxies prefer, acceleration version (SPARC acceleration-keyed fit; = MOND there; killed by Cassini at 8.7σ; illustrative on this density axis)' },
+                { g: 0.5, label: 'γ = ½ exactly — the same curve as MOND’s formula (MOND’s simple μ function; see note below)' },
                 { g: 2.0, label: 'γ = 2 — steep: the framework’s original guess (disfavoured on SPARC; at the threshold once galaxies are the unit)' },
               ].map(p => (
                 <button key={p.g} type="button" onClick={() => setGamma(p.g)}
@@ -231,7 +234,10 @@ export default function CoherenceExplorer() {
               Higher &#x03B3; = sharper, more abrupt snap to coherent. Lower &#x03B3; = gentler slope. Depends on N<sub>corr</sub> (correlated particle count): &#x03B3; = 2/&#x221A;N<sub>corr</sub>.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
-              Opens at &#x03B3; &#x2248; 0.49, the value SPARC galaxy data actually prefers when fit freely.
+              Opens at &#x03B3; &#x2248; 0.49, the value SPARC galaxy data prefer when the <em>acceleration-keyed</em> version
+              is fit freely (0.489). The <em>density-keyed</em> version &mdash; the one this tool&apos;s &#x03C1;/&#x03C1;<sub>crit</sub> axis
+              draws &mdash; fit freely to SPARC runs to &#x03B3; = 0.046 instead: the fit switches its own density dependence off
+              (see <Link href="/core-idea#density-fit" style={{ color: 'var(--color-accent-blue)' }}>Core Idea</Link>).
               &#x03B3; = 2 was the framework&apos;s original galaxy guess &mdash; refuted (drag the slider up to see it).
               <strong style={{ color: '#f87171' }}> The default is dead on two fronts, not one (added 2026-09-05):</strong>{' '}
               &#x03B3; &#x2248; 0.49 reproduces MOND on SPARC <em>and</em> the same &#x03B3; fails the Cassini Solar-System
@@ -303,7 +309,7 @@ export default function CoherenceExplorer() {
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               <strong>Note:</strong> &#x03C1;<sub>crit</sub> is a <em>saturation knee</em>, not a critical density
               in the phase-transition sense. At &#x03C1; = &#x03C1;<sub>crit</sub> and the current
-              &#x03B3; = {gamma.toFixed(2)}, C = tanh({gamma.toFixed(2)}&middot;ln2) &#x2248;{' '}
+              &#x03B3; = {gamma < 0.1 ? gamma.toFixed(3) : gamma.toFixed(2)}, C = tanh({gamma < 0.1 ? gamma.toFixed(3) : gamma.toFixed(2)}&middot;ln2) &#x2248;{' '}
               {Math.tanh(gamma * Math.LN2).toFixed(3)} — the &ldquo;+1&rdquo; regulator inside the ln breaks
               sigmoid symmetry, so &#x03C1;<sub>crit</sub> is not the curve&apos;s midpoint.
               The C = 0.50 midpoint sits at &#x03C1; &#x2248;{' '}

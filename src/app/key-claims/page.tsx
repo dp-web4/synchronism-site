@@ -83,7 +83,7 @@ export default function KeyClaims() {
               </div>
               <div className="card" style={{ padding: '0.75rem', margin: 0, borderLeft: '2px solid var(--color-accent-violet)' }}>
                 <div style={{ fontSize: '0.75rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>Synchronism</div>
-                <div style={{ fontSize: '0.9rem' }}>Superposition = rapid temporal scanning through phase modes (<Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>CRT analogy</Link>)</div>
+                <div style={{ fontSize: '0.9rem' }}>Superposition = rapid temporal scanning through phase modes (<Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>CRT (cathode-ray tube) analogy</Link>: one beam sweeping fast enough to look like a whole picture)</div>
               </div>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
@@ -93,7 +93,7 @@ export default function KeyClaims() {
               </div>
               <div className="card" style={{ padding: '0.75rem', margin: 0, borderLeft: '2px solid var(--color-accent-violet)' }}>
                 <div style={{ fontSize: '0.75rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>Synchronism</div>
-                <div style={{ fontSize: '0.9rem' }}>Collapse = resonant selection at an MRH (Markov Relevancy Horizon) crossing (no observer needed)</div>
+                <div style={{ fontSize: '0.9rem' }}>Collapse = resonant selection at an <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>MRH (Markov Relevancy Horizon)</Link> crossing (no observer needed)</div>
               </div>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
@@ -119,11 +119,29 @@ export default function KeyClaims() {
           </div>
 
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            This is the same move Copernicus made: not new data, but removing a wrong assumption.
-            Every QM interpretation &mdash; Copenhagen, Many-Worlds, QBism, relational &mdash; is an epicycle
-            patching the same observer-privilege error. Remove the observer from the center and
-            the interpretive machinery becomes unnecessary.
+            <strong>The motivating wager, not a proof:</strong> what if the quantum paradoxes are epicycles &mdash;
+            artifacts of putting the observer at the center, the way Ptolemy put the Earth there &mdash; and
+            removing that assumption makes them simpler? That is the bet the framework was built on (see{' '}
+            <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>), and it
+            earns its keep only if the observer-free frame eventually predicts something standard QM does not.
+            It is <em>not</em> a description of the interpretations literature: observer-free interpretations
+            already exist &mdash; Many-Worlds, Rovelli&apos;s relational QM, Bohmian mechanics, GRW/CSL
+            objective-collapse models, and Zurek&apos;s decoherence program, which was built precisely to remove
+            the observer &mdash; and the no-collapse ones make the same predictions as standard QM. (GRW/CSL differ
+            only in tiny, still-unobserved collapse-noise effects.) Removing the observer is therefore not by
+            itself new; what Synchronism would have to add is a prediction those interpretations do not make.
           </p>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0 0 0.75rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note (2026-10-06)</summary>
+            This paragraph used to read: &ldquo;Every QM interpretation &mdash; Copenhagen, Many-Worlds, QBism,
+            relational &mdash; is an epicycle patching the same observer-privilege error. Remove the observer from the
+            center and the interpretive machinery becomes unnecessary.&rdquo; As a description of the literature that
+            was false: Many-Worlds, relational QM, Bohmian mechanics, GRW/CSL and the decoherence program do not
+            privilege observers. It is now stated as what it is &mdash; the framework&apos;s motivating wager. In the same
+            pass, the Kochen&ndash;Specker &ldquo;0 of 512&rdquo; line in the caveat below now says that 512 is every
+            assignment (so the result is the theorem itself), and acronyms (MRH, CRT, PRL, CHSH, ALFALFA&ndash;SDSS,
+            EEG/fMRI, AQUAL) are expanded at first use. Flagged by visitor personas, 2026-10-06.
+          </details>
 
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem', marginTop: '1rem' }}>Why this isn&apos;t &ldquo;just an interpretation&rdquo;</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
@@ -142,7 +160,7 @@ export default function KeyClaims() {
               </div>
               <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
                 &#x0393; = &#x03BA;&sup2;(1 &minus; c). Entangled pairs in the same noise bath decohere slower.
-                PRL 2024 (Salhov et al.): 10&times; T&#x2082; improvement at c &asymp; 0.90.
+                PRL (Physical Review Letters) 2024 (Salhov et al.): 10&times; T&#x2082; improvement at c &asymp; 0.90.
                 <strong>Audit verdict (Session #581, 2026-02-08):</strong> &#x0393; = &#x03BA;&sup2;(1 &minus; c) is the
                 special case (&#x03BA;<sub>A</sub> = &#x03BA;<sub>B</sub> = &#x03BA;) of the textbook
                 correlated-differential-dephasing variance &#x0393; = (&#x03BA;<sub>A</sub>&sup2; + &#x03BA;<sub>B</sub>&sup2;
@@ -223,7 +241,11 @@ export default function KeyClaims() {
               Partly, yes. Kochen&ndash;Specker has been set against it: on the framework&apos;s own construction, 0 of 512
               non-contextual value assignments satisfy the Peres&ndash;Mermin square (ledger row B1; see{' '}
               <Link href="/born-rule" style={{ color: 'var(--color-accent-blue)' }}>Born Rule</Link>), so a scan with
-              definite, context-free values is excluded. Leggett&ndash;Garg violations (observed in superconducting qubits,
+              definite, context-free values is excluded. Note what that number is: 512&nbsp;=&nbsp;2<sup>9</sup> is
+              <em> every</em> &plusmn;1 assignment to the square&apos;s nine observables, so &ldquo;0 of 512&rdquo; is the
+              Kochen&ndash;Specker / Peres&ndash;Mermin theorem itself, not a test of the construction &mdash; just as the
+              local arm of the CHSH (Clauser&ndash;Horne&ndash;Shimony&ndash;Holt) Bell check is Bell&apos;s theorem. It
+              excludes any context-free-value scan, ours included; it does not test anything specific to Synchronism. Leggett&ndash;Garg violations (observed in superconducting qubits,
               NMR, and neutron interferometry) rule out only the <em>non-invasive</em> reading of the scan. They cannot rule
               out &ldquo;measurement is synchronization&rdquo;, which is invasive by definition. The quantum Zeno effect is the
               sharper instrument: Itano et&nbsp;al. (1990) force the synchronization to be a full phase reset (reset strength
@@ -413,7 +435,7 @@ export default function KeyClaims() {
             phase-coherent, sits at C&nbsp;&#x2248;&nbsp;0) &mdash; so EEG phase synchrony can neither kill nor
             confirm this claim. Deeper: as the{' '}
             <Link href="/consciousness-demo" style={{ color: 'var(--color-accent-blue)' }}>threshold demo</Link>{' '}
-            states, <strong>no calibration procedure exists to map any measurement (EEG, fMRI, IIT-&#x03A6;) to the
+            states, <strong>no calibration procedure exists to map any measurement (EEG/fMRI &mdash; electroencephalography / functional MRI brain imaging &mdash; or IIT-&#x03A6;) to the
             C-axis</strong>. Until such a protocol is defined, this claim is{' '}
             <strong>unfalsifiable as stated</strong> &mdash; not &ldquo;untested&rdquo; but unrunnable.
             For contrast, the anesthesia literature has an empirically calibrated threshold candidate
@@ -599,7 +621,7 @@ export default function KeyClaims() {
           <div className="card" style={{ borderLeft: '3px solid #8b5cf6', margin: '0.75rem 0', padding: '0.75rem 1rem' }}>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
               <strong style={{ color: '#a78bfa' }}>Sharper than (b): under the ledger&apos;s coupling the theory is
-              singular in vacuum &mdash; and that is why AQUAL rejected this substitution in 1984
+              singular in vacuum &mdash; and that is why AQUAL (Bekenstein &amp; Milgrom&apos;s &ldquo;aquadratic Lagrangian&rdquo; formulation of MOND) rejected this substitution in 1984
               (stated here 2026-08-08).</strong>{' '}
               <Link href="/tier-1-existing" style={{ color: '#a78bfa' }}>Tier 1</Link> reads the coupling as
               g<sub>obs</sub>&nbsp;=&nbsp;g<sub>bar</sub>/C(&#x03C1;) with f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C.
@@ -694,7 +716,7 @@ export default function KeyClaims() {
             <strong> Corrected 2026-07-09:</strong> the claim that this was &ldquo;run (Session #616), R&sup2; = 0.14,
             kill criterion triggered&rdquo; conflated two different tests on two different samples (verified
             independently by the explorer track 2026-07-08 and two visitor personas 2026-07-09). The registered
-            TEST-03 environment-density test on the 14,585-galaxy ALFALFA-SDSS sample has never actually been run.
+            TEST-03 environment-density test on the 14,585-galaxy ALFALFA&ndash;SDSS (Arecibo Legacy Fast ALFA HI survey &times; Sloan Digital Sky Survey) sample has never actually been run.
           </p>
           <div style={{
             background: 'rgba(239, 68, 68, 0.08)',

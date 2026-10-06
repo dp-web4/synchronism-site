@@ -94,8 +94,9 @@ export default function MRH() {
           </h3>
           <p style={{ margin: '0 0 0.6rem' }}>
             <strong>Added 2026-09-07</strong>, raised by a visitor researcher persona. This is a{' '}
-            <strong>data-free</strong> self-consistency failure: it needs no SPARC fit, no BTFR slope
-            and no &Delta;BIC, and it would stand even if every empirical test on the{' '}
+            <strong>data-free</strong> self-consistency failure: it needs no SPARC (Spitzer Photometry &amp; Accurate Rotation Curves, 175 disc galaxies) fit, no BTFR
+            (baryonic Tully&ndash;Fisher relation: baryonic mass vs. rotation speed) slope and no &Delta;BIC (Bayesian
+            Information Criterion difference), and it would stand even if every empirical test on the{' '}
             <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>{' '}
             ledger had passed.
           </p>
@@ -115,7 +116,8 @@ export default function MRH() {
               which is exactly what <em>Predictive Closure</em> above forbids.
             </li>
             <li>
-              <strong>B<sub>max</sub> = 1/&#x03A9;<sub>m</sub> = 3.17.</strong> The per-galaxy boost ceiling
+              <strong>B<sub>max</sub> = 1/&#x03A9;<sub>m</sub> = 3.17</strong> (&#x03A9;<sub>m</sub> = the cosmic matter density as a
+              fraction of the critical density, &#x2248; 0.315). The per-galaxy boost ceiling
               is set by a <em>cosmological</em> parameter. A galaxy&apos;s relevancy horizon does not contain
               &#x03A9;<sub>m</sub>. (Flagged independently by a visitor graduate-physics persona the same day.)
               Note this objection is stronger than the empirical one it accompanies, because it does not

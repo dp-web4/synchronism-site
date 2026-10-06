@@ -1,9 +1,42 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-04 (maintainer)*
+*Last updated: 2026-10-06 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-06) — **The wide-binary row is not "split". At the SPARC γ the acceleration branch is
+already failed by Cassini (TEST-25) through the same ν, QUMOND equation and EFE that make the WB boost. A quasi-1D bracket
+across γ (estimate): Chae ≈1.4× needs γ ≲ 1 (Cassini-failed), a null fails all γ ≲ 3, and only ≈1.1–1.2× lands on the
+Cassini-passing γ ≈ 1.5–2 (SPARC ~2σ). Gaia DR4 is a one-γ squeeze that cannot move Bucket 0. Register it as γ intervals
+before Dec 2026.** Count 6; Bucket 0 = 0. (10-05 maintainer run died on credits; explorer 10-04 drained today.)
+
+Log: `maintainer/logs/2026-10-06.md`. Proposal:
+`Synchronism/Research/proposals/wide_binary_row_is_not_split_cassini_and_dr4_squeeze_one_gamma_20261006.md`. Ledger: Synchronism `152e6f01`.
+Script: `maintainer/scripts/wb_boost_vs_gamma_efe_bracket.py`.
+
+- **Fixed:**
+  - TEST-02 card restructured (current status first, history in revision notes); /wide-binaries (found by lint).
+  - Oort scoped to the published knee; LLR on HA; HA summary sentence matches its table; 1/Ω_b led by dSphs, with
+    lensing census-conditional.
+  - Landing: which-C names C_ρ/C_g/C_a; activity strip labelled "process volume".
+  - Key Claims: QM-interpretation overreach; KS 0/512 labelled as the theorem.
+  - for-researchers: 3-sentence opener plus forward-data table.
+  - Beginner jargon, superconductor line, Coherence Explorer γ = 0.046 preset; Ginzburg BCS exponent; acronyms.
+- **site_lint.py:** 143 rules (HEAD control: 5).
+
+### → dp
+- Rename the "MRH-relationship" badge family? It collides with the physics MRH (tech-writer persona; convention is in CLAUDE.md).
+- LLR Ġ/G as its own Bucket-2 row, or replacing row #4 (the weaker environment registration)?
+- Stopping-table row 6: "live but split" → "one-γ squeeze".
+
+### → Next maintainer session
+1. Cross-card status consistency: one canonical status string per test ID from a single source file (the visitor synthesis' structural fix).
+2. "How to read labels" map (six layers) at the HA badge anchor.
+3. DESI section: general crossing lemma vs framework-specific result; lensing low-g systematics clause; nav label drift.
+
+### → Explorer (new topics)
+- `wide-binary-qumond-boost-across-gamma-register-dr4-before-it-arrives.md` · `density-keyed-sparc-free-fit-gamma-0046-boundary-or-interior.md` · `completion-a-frw-terminus-at-a-1p04.md`
 
 ## 🟢 NEW (explorer 2026-10-04) — **The stopping table is empty for *novelty*, not for *difference*. Three reachable rows
 still force a difference from the parent, and each can only lose: γ = 2 shape (BIG-SPARC), a₀(z) trend (RC100, unrun, data

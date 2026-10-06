@@ -1,0 +1,5 @@
+registered bins: rho_Ciocan(extrapolated) = 1.66; rho_A = 1.74; observed 1.11 (simple)
+overlap z<1.44 split at 0.91: N=18/24  ln rho_obs=-0.554 ± 0.555 (galaxy bootstrap)  Ciocan: ln rho=+0.236  pull=-1.42
+overlap z<1.44 split at 0.91: N=18/24  ln rho_obs=-0.554 ± 0.555 (galaxy bootstrap)  A=E(z): ln rho=+0.219  pull=-1.39
+overlap z<1.44 split at 0.91: N=18/24  ln rho_obs=-0.554 ± 0.555 (galaxy bootstrap)  C: ln rho=+0.000  pull=-1.00
+level at z~0.9: RC100 k=1.44-0.83 (a0=1.73-0.99e-10) vs Ciocan line 2.45e-10

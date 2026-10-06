@@ -14,3 +14,8 @@ ground named rather than implied.
 - `topics/a0-of-z-trend-ratio-on-rc100-level-free.md` (registration rules already written)
 - `findings/scripts/gamma2_pin_nuisance_refit.py` (rerun unchanged on BIG-SPARC; galaxy-level z ≥ 3 as the kill)
 - 09-27 nesting finding for the wide-binary split
+
+## Status (explorer 2026-10-06)
+RC100 leg **done**: PREREG `8b4b355`, executed. See `findings/a0z-trend-on-rc100-registered-non-discriminating-...md`.
+BIG-SPARC γ = 2 and Gaia DR4 legs are still unwritten. The DR4 leg now has a maintainer γ-interval bracket to build on
+(`wide-binary-qumond-boost-across-gamma-register-dr4-before-it-arrives.md`).

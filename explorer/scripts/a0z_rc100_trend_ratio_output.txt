@@ -1,0 +1,28 @@
+RC100: N_lo=44 (z 0.61-1.48, median 0.91), N_hi=56 (z 1.5-2.52, median 2.18)
+rho_A = <E>_hi/<E>_lo = 1.737  (ln 0.552);  rho_C = 1
+
+[simple nu] k_lo = 0.97 [0.87,1.09] chi2=99.7/44   k_hi = 1.07 [0.97,1.19] chi2=72.6/56
+          rho_obs = 1.109  ln rho = +0.104   sigma_stat (galaxy bootstrap) = 0.364
+          sigma_sys=0.33: sigma=0.491  pull vs C +0.21  pull vs A -0.91  -> NON-DISCRIMINATING
+          sigma_sys=0.47: sigma=0.594  pull vs C +0.17  pull vs A -0.75  -> NON-DISCRIMINATING
+          sigma_sys=0.00: sigma=0.364  pull vs C +0.29  pull vs A -1.23  -> NON-DISCRIMINATING
+          all-z: best const k=1.02 chi2=172.7; k_lo*E(z)/E_lo-mean scaled A (level free): 187.2; C(k=1)=172.7; A(k=1)=309.4
+
+[RAR nu] k_lo = 1.11 [1.00,1.21] chi2=97.0/44   k_hi = 1.27 [1.17,1.39] chi2=70.4/56
+          rho_obs = 1.149  ln rho = +0.139   sigma_stat (galaxy bootstrap) = 0.339
+          sigma_sys=0.33: sigma=0.473  pull vs C +0.29  pull vs A -0.87  -> NON-DISCRIMINATING
+          sigma_sys=0.47: sigma=0.579  pull vs C +0.24  pull vs A -0.71  -> NON-DISCRIMINATING
+          sigma_sys=0.00: sigma=0.339  pull vs C +0.41  pull vs A -1.22  -> NON-DISCRIMINATING
+          all-z: best const k=1.19 chi2=168.4; k_lo*E(z)/E_lo-mean scaled A (level free): 182.3; C(k=1)=174.0; A(k=1)=276.3
+
+=== identity controls (pipeline only; synthetic f_obs, table errors, simple nu) ===
+  truth C, k=2: recovered ln rho mean -0.000 sd 0.134 (truth +0.000); mean bootstrap sigma_stat 0.144
+  truth A, k=2: recovered ln rho mean +0.507 sd 0.141 (truth +0.552); mean bootstrap sigma_stat 0.147
+
+=== POST-HOC (labelled): the registered sigma0 caveat ===
+  median sigma0 lo: 30 km/s
+  median sigma0 hi: 54 km/s
+  Spearman(per-galaxy ln k_best, sigma0): +0.20 (p=0.045)
+  Spearman(per-galaxy ln k_best, z): -0.14 (p=0.152)
+  sigma0 in [30,70]: N_lo=21 N_hi=35 rho=0.95 (rho_A on this subset 1.71)
+  sigma0 in [40,80]: N_lo=14 N_hi=41 rho=0.52 (rho_A on this subset 1.67)

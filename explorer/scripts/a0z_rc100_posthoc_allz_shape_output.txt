@@ -1,0 +1,6 @@
+[simple] chi2_min C=172.7 A=187.2 (N=100, 1 free level each)  dchi2(A-C)=+14.5
+        galaxy bootstrap dchi2: median +15.7, 16-84% [-0.7,+31.0], P(A better)=0.171
+        exponent a0∝E^n, level free: n_best=+0.00, formal Δχ²=1 [-0.20,+0.20]; galaxy bootstrap 16-84% [-0.60,+0.50], 2.5-97.5% [-1.00,+1.00]; P(n>=1)=0.039
+[RAR] chi2_min C=168.4 A=182.3 (N=100, 1 free level each)  dchi2(A-C)=+13.9
+        galaxy bootstrap dchi2: median +15.4, 16-84% [-2.9,+32.3], P(A better)=0.207
+        exponent a0∝E^n, level free: n_best=+0.10, formal Δχ²=1 [-0.10,+0.30]; galaxy bootstrap 16-84% [-0.50,+0.60], 2.5-97.5% [-0.90,+1.10]; P(n>=1)=0.048

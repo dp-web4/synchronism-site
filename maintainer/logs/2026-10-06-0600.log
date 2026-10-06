@@ -1,0 +1,38 @@
+Starting Synchronism Maintainer Session at Tue Oct  6 06:00:01 PDT 2026
+I fixed the site, back-annotated the research ledger and pushed both. The count is unchanged at 6 refutations, with 0 confirmed predictions. `next build` passes, and the retired-phrase lint (`site_lint.py`) reports 0 hits across 143 rules.
+
+**The main finding.** The visitor's researcher persona caught a logic error in the research record itself, not just in the site's wording. Since 09-27 the wide-binary test (TEST-02) has been described as "split": whichever way Gaia's data fall, one version of the framework survives. The explorer's 10-04 stopping table repeated that. It's wrong. At the γ value SPARC prefers, the acceleration-keyed version already failed the Cassini test (TEST-25), and Cassini runs on the same physics that produces the wide-binary boost.
+
+I ran a rough estimate across γ (quasi-1D, not pre-registered) in `maintainer/scripts/wb_boost_vs_gamma_efe_bracket.py`:
+- A Chae-type ≈1.4× boost needs γ ≲ 1, where Cassini already fails.
+- A Newtonian null fails every γ ≲ 3.
+- Only a precise ≈1.1–1.2× boost lands on the γ ≈ 1.5–2 that passes Cassini, and SPARC disfavours that value at about 2σ.
+
+So Gaia DR4 (planned December 2026) squeezes a single γ rather than splitting the framework. It can't produce a confirmed prediction; it can only show whether any member of this MOND-like family survives. The work most worth doing before December is to register what each DR4 outcome would mean, as a γ range, before the data arrive. The proposal is in `Research/proposals/wide_binary_row_is_not_split_cassini_and_dr4_squeeze_one_gamma_20261006.md`.
+
+**Site changes** (commit `64719b5`):
+- **Wide binaries:** the TEST-02 card now leads with the corrected status, and older notes moved to revision history. The Oort-limit exclusion is now stated only for the published calibration. The new lint rule found a stale `/wide-binaries` page that wasn't in the visitor log, and I fixed that too.
+- **Honest Assessment:**
+  - The summary's first sentence no longer contradicts its own table.
+  - The lunar-laser-ranging constraint on the density-keyed law is now on the page, as a second route to an existing refutation, not a new one.
+  - The no-dark-matter boost cap (1/Ω_b) is now ruled out by the dwarf galaxies first; lensing excludes it only conditionally. This clears the explorer's 10-04 action items, which had been waiting because the 10-05 maintainer run ran out of credits.
+- **Landing page:** names the three versions of C that the refutations actually used, and labels the session counts as "process volume, not evidence".
+- **Key Claims:** removed the false "every QM interpretation is an epicycle" line and restated it as the framework's founding bet. It also notes that "0 of 512" is the Kochen–Specker theorem itself.
+- **For Researchers:** the 150-word opening sentence is now three sentences, and there's a new table of what upcoming data sets can and can't change.
+- **Beginner and precision fixes:** jargon, the "why superconductors score low" explanation, the Coherence Explorer's default γ, the Ginzburg exponent for BCS superconductors, and acronym expansions. Two subagents did these on separate files; I checked the physics wording on three of their pages before committing.
+
+**Research repo** (`152e6f01`): `PREDICTIONS.md` gets the wide-binary correction, the conditional status of the lensing kill, and B6 restated in its narrower form. I also fixed the stale "Five live bets" line; there are seven rows (B1–B7).
+
+**Three new explorer topics:**
+- Compute the wide-binary boost properly across γ and pre-register the DR4 reading.
+- Check whether the density fit's γ = 0.046, now quoted on three pages, is just the edge of the search range.
+- Check the unsupported "no solution past a ≈ 1.04" claim in the dark-energy section.
+
+**Decisions for you:**
+- Should the "MRH-relationship" badge family be renamed? The visitor flagged that it collides with the physics term MRH, and the convention is in CLAUDE.md, so I didn't change it.
+- Should lunar laser ranging get its own ledger row, or replace row #4?
+- Should the stopping-table row change from "split" to "one-γ squeeze"?
+
+The next structural fix is a single source for each test's status string, so cards updated on different dates stop drifting apart. The log is at `maintainer/logs/2026-10-06.md`.
+
+The Playwright browser server failed to connect, and Google Calendar and Drive need authorizing in claude.ai connector settings; nothing today depended on them.

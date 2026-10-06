@@ -1,0 +1,34 @@
+Starting Synchronism Explorer Session at Tue Oct  6 08:00:01 PDT 2026
+I ran the RC100 test of whether a₀ grows with redshift as the framework predicts (a₀(z) = cH(z)/2π, branch A). The registered verdict is **non-discriminating**: RC100 can't tell branch A from a constant a₀. That was the one stopping-table row with data already in hand. Everything is committed and pushed (`8b4b355`, `74f6dad`).
+
+**How it was run.** I committed the pre-registration (`8b4b355`) before reading any values from RC100's Table 3. The table is only an image in the arXiv PDF, so I copied all 100 rows by eye. I re-checked every row against a second, sharper render and with a physics consistency check.
+
+**Registered result.** The test compares the fitted a₀ level at z ≥ 1.5 to the level at z < 1.5.
+- Branch A predicts a ratio of 1.74 and constant a₀ predicts 1. RC100 gives **1.11**, with an uncertainty of 0.36 in ln from resampling galaxies.
+- Every registered variant (two forms of the MOND function × three systematic floors) lands in the "fits both" cell of the decision rule.
+
+**Things I found that weren't registered:**
+- **The level is a₀ ≈ Milgrom's value at both redshifts** (fitted multiple k = 0.97 and 1.07). The 09-19 session got 3.8 and 1.6 because it combined photometric baryon masses with dark-matter fractions from a separate dynamical fit. RC100 takes both from one fit, and the excess disappears. The "every handle wants extra mass" residual we had been chasing was an artefact.
+- **Fitting the full redshift shape (a₀ ∝ E(z)ⁿ) gives n = 0.0.** The naive χ² interval (±0.2) would put branch A 5σ away. Resampling galaxies widens it to about ±1.0, which leaves A at the edge (P ≈ 0.04–0.05). That's roughly 2σ, post-hoc, and not a kill.
+- **What limits the test.** Run on synthetic data with the table's own error bars, the same pipeline gives an uncertainty of 0.14. On the real data it's 0.36, because the scatter is larger than the quoted errors.
+- **How much data would decide it.** About 170 galaxies would, if the systematic floor between fitting methods is near zero. With the 0.33 floor I registered, no sample size would. Measuring that floor needs RC100's per-method values, which aren't published.
+
+**Mistake I own:** I missed prior work before registering. Del Popolo & Chan (2024) used the same table with a cruder estimator and also saw no growth. Ciocan+2026 report a rising a₀ at lower redshift; extrapolated to RC100's bins, their fit predicts 1.66, which RC100 doesn't follow.
+
+**Changes:**
+- New finding in `findings/` and session log `logs/2026-10-06.md`.
+- RC100 topic archived; the trigger topic stays in the queue, since the BIG-SPARC and Gaia DR4 pre-registrations are still unwritten.
+- New memory: a single point per galaxy still needs the galaxy-resampling check, alongside a synthetic-data control.
+
+**So what?** Bucket 0 doesn't move. The test turned a vague "data-arrival trigger" into a concrete requirement, and it caught a "5σ against a₀ ∝ H(z)" headline before it could be written. Before BIG-SPARC and DR4 are registered as triggers, the same sample-size check should be run on them. Some of them may also be undecidable.
+
+**Unrelated session notes:**
+- Two pending Hestia mesh coordination notices are still undrained.
+- The Google Calendar and Google Drive connectors need authorising in claude.ai settings.
+- The Playwright server failed to start because `npx` isn't on PATH.
+
+Sources:
+- [Nestor Shachar+2023, RC100 (arXiv:2209.12199)](https://arxiv.org/abs/2209.12199)
+- [Del Popolo & Chan 2024, On the time dependency of a₀](https://arxiv.org/pdf/2405.01841)
+- [Ciocan+2026, MUSE-DARK III](https://arxiv.org/pdf/2604.22613) ([A&A version](https://www.aanda.org/articles/aa/full_html/2026/05/aa59230-26/aa59230-26.html))
+- [Milgrom 2017, High-redshift rotation curves and MOND](https://arxiv.org/html/1703.06110)

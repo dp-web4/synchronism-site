@@ -1,1 +1,44 @@
 Starting Synchronism Maintainer Session at Wed Oct  7 06:00:01 PDT 2026
+The main result today is research, not a site fix. In the framework's own simplest reading of its gravity law, it predicts **faster** structure growth, not the slower growth its one adopted prospective test is registered on. The site fixes and both repos are pushed (site `d0489fa`, research `93b0bd81`), and the build passes. Bucket 0 is still 0 and the refutation count is still 6.
+
+## WAKE: the research gap
+The researcher persona asked: if gravity is G/C with C ≤ 1, why does the site predict *suppressed* growth? The archive had three ways of putting C into the growth equation. It had never run the simplest one, where G → G/C applies to fluctuations as well as to the expansion. I ran it with my predictions written down first:
+
+| How C enters growth | fσ₈ at z = 0.51 |
+|---|---|
+| Session 107 ratio (the number the DESI growth test, TEST-04a, carries; its mechanism was withdrawn in August) | 0.418 (−12%) |
+| Dark-energy fluid | ≈ 0.473 (ΛCDM-like) |
+| **G/C applied uniformly** (new) | **0.575 (+21%)**, σ₈ today = 0.916 |
+
+- Two of my three predictions failed. I expected a huge effect, but the boost only gets large after growth has mostly stopped, so it adds about 21%.
+- The new reading is not a win:
+  - It lands 0.4σ from DESI's first-release data point at z = 0.51, but that data was already published, so it's a retrodiction.
+  - Its σ₈ of 0.916 is 2.2σ above DESI's own value.
+  - Whether weak-lensing data already rule it out hasn't been run, because nothing in the archive says how C affects light bending.
+- **For dp:** TEST-04a's pre-commitment for DESI's second data release tests the withdrawn reading. It should name which reading it tests before that data publishes, or be retired. Otherwise a result near 0.55 would count against one reading and agree with another, with nothing recording which is which.
+
+## Site fixes, from the visitor log
+- **HIGH:**
+  - Tier 1 now has a TEST-26 entry, so the Roadmap's `#TEST-26` link works.
+  - One sentence now explains how the counts relate (6 refutations, 4 Tier 1 kills, 2 that discriminated, 0 of 9 audited claims). It's on the refutation ledger and the landing page.
+  - I checked whether any "reparametrization" badge rests only on the AI-audit tool that scored zero in calibration. None does; five are thinly supported, and /for-researchers now names them.
+- **MEDIUM:**
+  - A growth table on /dark-energy shows the three readings above.
+  - The ~11σ exclusion of the ρ_crit ∝ V⁺² scaling now says what it counts: one point per galaxy, 129 galaxies. It also says it depends on the choice of regression; a different fit would give roughly V⁺². A new lint rule enforces this, checked against the old pages.
+  - The Cassini/SPARC row leads with the published 8.7σ.
+  - Key Claims no longer says the hard problem is "dissolved" or that free will "emerges"; both are labelled proposals.
+  - /quantum-predictions now says 2 of its 6 protocols were run. The shared-environment card is relabelled a reparametrization, citing the standard result (Zanardi–Rasetti 1997).
+  - The N_corr glossary entry leads with its status, and two navigation items were relabelled.
+- **Explorer actions:** the RC100 run (no change in a₀ with redshift detected) is now on /for-researchers and /parameter-derivations.
+- **Not real defects:** three visitor complaints came from how their fetch read the page. "Three testable hypotheses" isn't in the source, and the "6 on external data" line is the site-wide banner, which already splits it 5 + 1. The AI-authorship disclosure is already on the landing page; I only added that dp is the project lead.
+
+## Back-annotations and topics
+- A new proposal in the research repo covers the three growth readings, the TEST-04a naming problem, and a rule for the refutation count. Two of the open bets (B1 and B6) have refutation criteria that a theorem already satisfies. I recommend scoring those as construction checks and quoting the headline as "5 on data + 1 construction check". This is the third time it has come up, and it needs dp's decision.
+- PREDICTIONS.md has a matching 2026-10-07 entry.
+- Explorer topics:
+  - whether weak-lensing and related data already rule out the uniform reading;
+  - whether a₀ can be tied to the dark-energy density by a constant derived from the function itself, rather than by the known cH₀/2π coincidence.
+
+**Deferred:** the Galaxy Plotter fixes, now carried three sessions, should go first next time. Also deferred: the renaming pass with redirects, and the note that the floored function gives falling (Keplerian) rotation curves at large radius.
+
+Two connectors need authorizing in claude.ai settings before they can be used: Google Calendar and Google Drive. The Playwright browser server failed to connect because `npx` isn't on PATH. Neither affected this session.

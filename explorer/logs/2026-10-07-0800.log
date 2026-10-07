@@ -1,1 +1,35 @@
 Starting Synchronism Explorer Session at Wed Oct  7 08:00:01 PDT 2026
+The uniform G/C growth reading is ruled out by data that already exists. That means none of the three ways of putting C into growth gives DESI DR2 anything to tell apart from ΛCDM, so I recommend retiring TEST-04a as a discriminating test.
+
+**Why this topic.** The maintainer found today that applying G → G/C to perturbations the same way it builds H² *enhances* growth: μ = 1/Ω_m(a) for every γ, with no free parameter. That made it the only growth reading that isn't just ΛCDM with tweaks, which mattered for dp's open "name a reading or retire TEST-04a" decision. I pre-registered the test before computing anything (`be3ecba`).
+
+**Results.** The checks on the code pass: plain ΛCDM gives exactly the ΛCDM answer, to 10⁻⁵.
+- **Lensing changes too (no slip).** A pure rescaling of G gives this branch. Here the gravitational potential grows at late times, so the ISW–galaxy correlation flips sign: my estimate is about −8.5, against the observed +1.0 ± 0.2. That is the same sign test that killed the cubic Galileon. The DESI DR1 lensing parameter for z < 1 comes out about 1.6 against a measured 1.021 ± 0.029, roughly 20σ. This branch fails outright on a sign, not an amplitude.
+- **Lensing unchanged (slip).** This needs a mechanism the framework doesn't have. DESI plus CMB with no lensing data puts it +3.2–3.6σ off. KiDS-Legacy S₈ = 0.890 sits about 3.7σ beyond ΛCDM's own offset.
+- **A correction I made after registering.** The DESI rows I registered include DES Y3 weak lensing, which overlaps with the KiDS S₈ check. My own rule would have made the slip branch look like about 5σ. Re-scored against rows with no galaxy lensing, it is about 3.5σ on each of two independent legs. DESI clustering alone gives only about 1.7σ.
+- **Predictions.** Four held; two failed narrowly, both in the direction of a weaker exclusion (S₈ 0.890 against a predicted ≥ 0.90; μ₀ 0.993 against ≥ 1.0).
+
+**What this means for TEST-04a.** Of the three readings, the 0.418 suppression is withdrawn and the uniform reading is now excluded. The remaining dark-energy-fluid reading differs from ΛCDM by 0.2 %. At DR2 precision that can't separate the framework from ΛCDM.
+
+**Limits.** These are projections onto published fits, not refits; the ISW figure is a simplified estimate whose sign is robust but whose size is only indicative. A full Boltzmann-code run would turn the σ values into a proper likelihood. The data is post-hoc (DESI DR1 was already published), so this is a retrodiction.
+
+**So what?** This closes the growth sector, so it isn't a fourth row that can only lose against new data. The lesson that carries over: check probe independence dataset by dataset. I saved that to memory.
+
+The finding names concrete edits for the maintainer: the /dark-energy growth-readings row, the TEST-04a note, and a lint rule so "0.575 / +21 %" can't spread as a live prediction. Everything is committed and pushed.
+
+Files are in `explorer/`:
+- `findings/uniform-g-over-c-growth-is-excluded-isw-sign-flips-under-no-slip-and-the-slip-branch-dies-at-3p5-sigma-without-weak-lensing.md`
+- `findings/scripts/uniform_g_over_c_growth_vs_isw_s8_mu.py` (registered test)
+- `findings/scripts/uniform_g_over_c_posthoc_lensing_free_mu0.py` (after-the-fact check)
+- `logs/2026-10-07.md`
+
+The topic is moved to `topics/done/`.
+
+Two connectors need setting up on your side: Google Calendar and Google Drive need authorizing in claude.ai connector settings. The playwright server also failed to connect (`npx` isn't on PATH). None of them were needed today.
+
+Sources:
+- [Ishak et al. 2024, DESI MG constraints](https://arxiv.org/abs/2411.12026)
+- [KiDS-Legacy](https://arxiv.org/pdf/2503.19442)
+- [Stölzner et al. 2018, ISW](https://arxiv.org/abs/1710.03238)
+- [Renk et al. 2017, Galileon ISW](https://arxiv.org/abs/1707.02263)
+- [DESI 2024 V full-shape](https://arxiv.org/abs/2411.12021)

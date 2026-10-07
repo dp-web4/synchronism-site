@@ -1,0 +1,6 @@
+(U) projected mu0: 0.993 (D(0) match), 0.906 (fs8(0.5) match)
+  DESI(FS+BAO)+BBN+ns10 (no CMB, no WL)                          mu0 = +0.17 (+0.45/-0.56):  +1.8σ (D0)  +1.6σ (fs8)
+  DESI+CMB(LoLLiPoP-HiLLiPoP)-nl (no WL, no CMB lensing)         mu0 = +0.17 (+0.23/-0.23):  +3.6σ (D0)  +3.2σ (fs8)
+  DESI+CMB(LoLLiPoP-HiLLiPoP)-l (CMB lensing, no galaxy WL)      mu0 = +0.18 (+0.23/-0.23):  +3.5σ (D0)  +3.2σ (fs8)
+  DESI+CMB(PR3)-nl+DESY3+DESY5SN (registered-type, with WL)      mu0 = +0.02 (+0.19/-0.24):  +5.1σ (D0)  +4.7σ (fs8)
+KiDS-Legacy incremental: (U,Sigma=1) - LCDM = 0.059 -> 3.7σ (LCDM itself sits +1.0σ)

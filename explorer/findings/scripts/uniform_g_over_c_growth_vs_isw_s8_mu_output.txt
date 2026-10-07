@@ -1,0 +1,45 @@
+=== Identity controls ===
+ISW A (mu=1, Sigma=1, z=0.5 kernel) = 1.00000  (want 1)
+mu_eff bin1 on LCDM = 1.00000  bin2 = 1.00000  (want 1)
+mu0_eff(D0) on LCDM = +0.00000  (want 0)
+mu0_eff(D0) on template(0.05) = +0.05000  (want +0.05)
+
+=== (U) growth ===
+D_U/D_L at z=0: 1.1293  sigma8(0) = 0.916;  mu(z=0) = 3.175
+  z=0.3: D ratio 1.0708  mu=1.990  fs8_U=0.627 fs8_L=0.474
+  z=0.5: D ratio 1.0495  mu=1.644  fs8_U=0.578 fs8_L=0.475
+  z=1.0: D ratio 1.0228  mu=1.272  fs8_U=0.473 fs8_L=0.431
+  z=1.5: D ratio 1.0121  mu=1.139  fs8_U=0.393 fs8_L=0.374
+  z=2.0: D ratio 1.0071  mu=1.081  fs8_U=0.334 fs8_L=0.324
+
+=== ISW proxy amplitude A (LCDM = 1; data ≈ 1.0 ± 0.2 derived from 4.7-5σ detection) ===
+  kernel z=0.3: Sigma=mu A=-9.720 (-53.6σ)   Sigma=1 A=+0.526 (-2.4σ)
+  kernel z=0.5: Sigma=mu A=-8.500 (-47.5σ)   Sigma=1 A=+0.520 (-2.4σ)
+  kernel z=1.0: Sigma=mu A=-7.467 (-42.3σ)   Sigma=1 A=+0.515 (-2.4σ)
+  Sigma=mu: Phi(z=0)/Phi(z=3) = 2.740;  dPhi/dz sign at z=0,0.5,1,2: [-1.0, -1.0, -1.0, -1.0]
+  Sigma=1: Phi(z=0)/Phi(z=3) = 0.892;  dPhi/dz sign at z=0,0.5,1,2: [1.0, 1.0, 1.0, 1.0]
+  LCDM: Phi(z=0)/Phi(z=3) = 0.793
+
+=== DESI DR1 binned mu (Ishak+2024: mu1 = 1.02 ± 0.13 [0,1), mu2 = 1.04 ± 0.11 [1,2)) ===
+  mu1_eff = 1.615  (+4.6σ)   mu2_eff = 1.129  (+0.8σ)
+  Sigma=mu branch: Sigma1_eff ≈ mu1_eff = 1.615 vs 1.021 ± 0.029 (+20σ)
+
+=== Template mu0 (Ishak+2024: mu0 = 0.05 ± 0.22, Sigma0 = 0.008 ± 0.045) ===
+  mu0_eff matching D(0) = 0.993 (+4.3σ);  matching fs8(0.5) = 0.906 (+3.9σ)
+  pointwise mu-1 at z=0: U 2.175 vs template needs mu0 = that
+
+=== S8 (KiDS-Legacy 0.815 +0.016-0.021; DES Y3 0.776 ± 0.017) ===
+  LCDM         S8_eff = 0.831  KiDS +1.0σ   DES +3.2σ
+  U, Sigma=1   S8_eff = 0.890  KiDS +4.7σ   DES +6.7σ
+  U, Sigma=mu  S8_eff = 1.771  KiDS +59.7σ   DES +58.5σ
+
+Probes excluding at ≥3σ: Sigma=1 -> 2/3 (ISW False, growth True, S8 True); Sigma=mu -> 3/3 (ISW True, growth True, S8 True)
+VERDICT: EXCLUDED-BY-EXISTING-DATA
+
+Predictions:
+P1 (Sigma=mu A<0 for z=0.3,0.5): HELD
+P2 (Sigma=1 0<A<0.6): HELD
+P3 (mu1_eff >= 1.5): HELD
+P4 (mu2_eff <= 1.26): HELD
+P5 (S8_eff Sigma=1 >= 0.90): FAILED
+P6 (mu0_eff >= 1.0): FAILED

@@ -1,9 +1,45 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-06 (maintainer)*
+*Last updated: 2026-10-07 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-07) — **The growth sign is a modelling choice. Applied uniformly (G → G/C in perturbations,
+the same substitution that builds H²), the framework *enhances* growth: fσ₈(0.51) = 0.575 (+21 %), σ₈(0) = 0.916, μ =
+1/Ω_m(a) for every γ. TEST-04a's 0.418 suppression comes from Session 107's withdrawn C_cosmic/C_galactic ratio; the DE
+fluid gives ≈ 0.473. So the adopted DR2 registration tests a withdrawn reading.** Two of three pre-written predictions
+failed (the enhancement is late-time-limited). Count 6; Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-10-07.md`. Proposal:
+`Synchronism/Research/proposals/growth_sign_is_an_operationalization_choice_and_theorem_met_criteria_20261007.md`.
+Script: `maintainer/scripts/growth_under_uniform_G_over_C.py`.
+
+- **Fixed:**
+  - TEST-26 anchor on Tier 1.
+  - One count-map sentence (6 ↔ 4 ↔ 2 ↔ 0 of 9) in `ledger.ts`, shown on the ledger and the landing page.
+  - TEST-25 row leads with 8.7σ.
+  - /dark-energy `#growth-readings` table.
+  - 11σ V⁺² exclusion: unit and estimator stated.
+  - "No badge rests on A2ACW alone" (audited).
+  - RC100 executed on /for-researchers and /parameter-derivations.
+  - Key Claims hedged; /quantum-predictions protocol count and DFS prior art; N_corr status; demo label;
+    breadcrumb hub.
+- **site_lint.py:** 144 rules (HEAD control: 3).
+
+### → dp
+- TEST-04a DR2: name the growth reading (S / F / U) before DR2 full-shape publishes, or retire the registration.
+- Rule: a refutation criterion met by theorem is a construction check (B1, B6). Headline "5 on data + 1 construction
+  check". Third time raised.
+- (carried) MRH badge-family rename; LLR row; stopping-table row 6.
+
+### → Next maintainer session
+1. Galaxy Plotter (carried 3×): stand-in off by default, BTFR-synthetic label, A ⇒ L ≈ 90 pc.
+2. Floored C_a Keplerian asymptote on TEST-09/10 cards; /core-idea "exactly Hill" wording.
+3. Renaming pass with redirects (ρ_crit → ρ_knee, crossover visualizer, /decisive-tests).
+
+### → Explorer (new topics)
+- `uniform-g-over-c-growth-vs-s8-isw-and-mu0.md` · `a0-from-rho-lambda-with-a-derived-constant.md`
 
 ## 🟢 NEW (maintainer 2026-10-06) — **The wide-binary row is not "split". At the SPARC γ the acceleration branch is
 already failed by Cassini (TEST-25) through the same ν, QUMOND equation and EFE that make the WB boost. A quasi-1D bracket

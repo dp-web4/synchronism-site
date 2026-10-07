@@ -17,10 +17,13 @@ interface BreadcrumbsProps {
 // Visitor 2026-10-06 (tech writer): "Methodology" was plain text although /methodology already
 // redirects to /research-philosophy, so that page is the de-facto hub. Research Philosophy is
 // itself in the Methodology category, so on that page the crumb stays a label (no self-link).
-// "Core Theory" and "Predictions & Experiments" have no hub page and stay unlinked.
+// Visitor 2026-10-07 (tech writer): "Predictions & Experiments" was unlinked on Test Roadmap / Tier 1.
+// The Test Roadmap is the first page of that category and lists every test, so it is the de-facto hub
+// (on the Roadmap itself the crumb stays a label). "Core Theory" has no hub page and stays unlinked.
 const categoryHubs: Record<string, string> = {
   'Interactive Tools': '/interactive-tools',
   'Methodology': '/research-philosophy',
+  'Predictions & Experiments': '/test-catalog',
 };
 
 // Visitor 2026-09-27: the main nav's "Start Here" links to /why-synchronism, so a

@@ -149,7 +149,7 @@ export default function WideBinaries() {
             <strong>Why isn&apos;t the local exclusion booked as a refutation?</strong> This is not because it is weak. It is
             cleaner than TEST-09&apos;s 3.3&sigma;. It is a consequence of the knee calibration &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, and
             that calibration is already recorded as failed in the research ledger (its velocity exponent is excluded at
-            ~11&sigma;). The site counts executed tests grouped by root. Whether this becomes its own booked result is
+            ~11&sigma;, galaxy level). The site counts executed tests grouped by root. Whether this becomes its own booked result is
             ledger governance and gates on dp.
           </p>
           <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>

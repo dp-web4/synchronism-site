@@ -1,0 +1,21 @@
+Identity control (mu = 1, ΛCDM):
+  f(0.51) = 0.7643  vs Om^0.55 = 0.7639  (diff 3.3e-04)
+  fσ8(0.51) = 0.4742  (target 0.474)
+
+Uniform G/C reading (mu = 1/Ω_m(a); γ-independent through C ≡ Ω_m(a)):
+  mu(z=0) = 3.175, mu(z=0.51) = 1.632
+  D(0)/D_ΛCDM(0) at equal z=1000 amplitude = 1.129
+  σ8(0) = 0.916
+  f(0.51) = 0.8840   σ8(0.51) = 0.6506
+  fσ8(0.51) = 0.5752  = 1.21× ΛCDM
+
+Comparison at z = 0.51:
+  (F) fluid / background-only : ≈ 0.473  (-0.22 %, archive 08-18)
+  (U) uniform G/C             : 0.575
+  (S) Session 107 ratio       : 0.418  (withdrawn C_cosmic/C_galactic construction)
+  DESI DR1 LRG1               : 0.550 ± 0.062
+  (U) vs DR1: +0.4 σ
+
+P1 FAILED
+P2 FAILED
+P3 HELD

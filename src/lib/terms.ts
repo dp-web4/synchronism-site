@@ -27,8 +27,8 @@ export const terms: Record<string, TermDefinition> = {
   'N_corr': {
     term: 'N_corr',
     fullName: 'Correlation Number',
-    brief: 'Number of particles moving as a correlated unit.',
-    explanation: 'The fundamental input to \u03B3 = 2/\u221AN_corr. A single electron has N_corr = 1 (\u03B3 = 2, quantum). A crystal lattice might have N_corr = 10\u00B2\u2074 (\u03B3 \u2248 10\u207B\u00B9\u00B2, classical).',
+    brief: 'Status first: the formula it feeds, \u03B3 = 2/\u221AN_corr, is audited-negative (see \u03B3). N_corr is the number of units moving as one correlated unit; N_corr = 1 means \u201Cuncorrelated units, whatever they are\u201D.',
+    explanation: 'The original input to \u03B3 = 2/\u221AN_corr. N_corr = 1 means each unit acts on its own, whatever the unit is: pages on this site have used a single electron, a star in a galaxy, and an ideal-gas molecule as examples of N_corr = 1, and all three are the same statement (\u03B3 = 2). A crystal lattice might have N_corr = 10\u00B2\u2074 (\u03B3 \u2248 10\u207B\u00B9\u00B2). (Status line and the \u201Cwhatever the unit is\u201D gloss added 2026-10-07; a technical-writer visitor found three different N_corr = 1 examples across pages and no status at the top of this entry.)',
     educationalNote: '\u26A0 The map \u03B3 = 2/\u221AN_corr is audited-negative: for collective systems its sign comes out inverted (the most collective systems get the flattest curves, backwards from observation), and no protocol measures N_corr independently of fitting \u03B3 \u2014 N_corr is back-solved, not counted. Read the numbers above as the original hypothesis, not current physics. See the \u03B3 entry and the \u03B3 Calculator.',
     learnMore: '/gamma-parameter',
   },

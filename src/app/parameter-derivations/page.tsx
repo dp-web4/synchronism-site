@@ -207,7 +207,7 @@ export default function ParameterDerivations() {
               exponent now has three mutually incompatible provenances — stated-Jeans &rarr; +0.5, code/usage
               &rarr; +2, MOND-requirement &rarr; &minus;2 — and no derived one.<strong> Restated 2026-08-28 (propagated here 2026-09-24):</strong> measured on SPARC (N = 129), the Jeans knee
               carries no velocity exponent at all, &#x03C1;<sub>crit</sub> &prop; V<sup>&minus;0.16 &plusmn; 0.19</sup> (median 0.161
-              M&#x2299;/pc&sup3;). The framework&apos;s V<sup>+2</sup> is excluded at ~11&sigma;, and MOND&apos;s required V<sup>&minus;2</sup> at ~10&sigma;
+              M&#x2299;/pc&sup3;). The framework&apos;s V<sup>+2</sup> is excluded at ~11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap), and MOND&apos;s required V<sup>&minus;2</sup> at ~10&sigma;
               too, so the refutation stands as a <em>wrong exponent</em>, not a sign inversion. The 240&times;&ndash;300,000&times;
               magnitude is withdrawn: it used &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, but A = 0.028 was derived (Session 53)
               for &#x03C1;<sub>crit</sub> = A&middot;V<sup>0.5</sup>. Whether a disc crosses the knee is therefore reopened and
@@ -332,8 +332,14 @@ export default function ParameterDerivations() {
               a&#x2080;(z) = cH(z)/2&#x03C0; has been checked against direct RAR intercepts (anchor-dominated, below),
               high-z TFR zero points, and 41 published f<sub>DM</sub>(R<sub>e</sub>) values; the f<sub>DM</sub> route
               splits by fitting method (Price MCMC vs Genzel least squares), so the <em>level</em> is
-              method-dominated. The level-free test is the trend ratio k(z<sub>hi</sub>)/k(z<sub>lo</sub>) &mdash;
-              not yet run. TFR zero points cannot constrain a&#x2080;(z) at all (Milgrom 2017 &sect;4): the
+              method-dominated. The level-free test is the trend ratio k(z<sub>hi</sub>)/k(z<sub>lo</sub>). <strong>Run
+              2026-10-06 on RC100 (z 0.6&ndash;2.5, pre-registered before the table was read): non-discriminating</strong>,
+              with ln-ratio 1.11 &plusmn; 0.36 (galaxy bootstrap) against branch (A)&apos;s 1.74 and MOND&apos;s ~1. Post-hoc
+              only: fitting a&#x2080; &prop; E(z)<sup>n</sup> gives n = 0.0, with branch (A) at the ~2&sigma; edge of the
+              galaxy-bootstrap 95% interval (&plusmn;1.0; the formal &plusmn;0.2 understates it). Deciding the row needs
+              N &#8819; 170 galaxies and a measured method floor. Del Popolo &amp; Chan 2024 (arXiv:2405.01841) used the
+              same table, with a cruder estimator, and also saw no growth. So the three direct datasets now read three ways:
+              Ciocan rising, Del Popolo flat-to-falling, RC100 flat (explorer finding 2026-10-06). TFR zero points cannot constrain a&#x2080;(z) at all (Milgrom 2017 &sect;4): the
               modelled branch-(A) lever is &minus;0.125 dex at z &#8776; 0.9 and &minus;0.243 dex at z &#8776; 2.3,
               against a 0.25&ndash;0.35 dex spread between two surveys measuring the same relation at z &#8776; 0.9.
               <em> Revision trail:</em> this block opened 2026-08-01 as &ldquo;tested and disfavored&rdquo; after a

@@ -374,11 +374,17 @@ export default function KeyClaims() {
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>What&apos;s new</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             IIT (Integrated Information Theory) proposes &#x03A6; but predicts no specific threshold. Global workspace theory has no
-            quantitative threshold. No other framework predicts a specific number from 8 self-consistent
-            approaches (note: these share the same underlying framework, so convergence is expected but still constraining). The three-parameter formula also dissolves the hard problem: phase patterns
-            at &#x03B3; &laquo; 0.001 ARE experience, not correlates of it. Free will emerges at the &#x03B3; &#x2248; 1
-            boundary as constrained indeterminacy &mdash; multiple futures genuinely accessible, with the
-            agent&apos;s coherence pattern shaping which is taken.
+            quantitative threshold. This framework proposes a specific number, C&nbsp;&asymp;&nbsp;0.50, from 8 approaches
+            (note: these share the same underlying framework, and 0.50 is the midpoint of a bounded output range, so the
+            convergence is largely by construction; the empirical threshold that already exists is the perturbational
+            complexity index cut-off PCI* = 0.31, Casali et&nbsp;al. 2013, and no mapping from C to PCI has been written).
+            The framework also <em>proposes</em> a reframing of the hard problem: that phase patterns at
+            &#x03B3; &laquo; 0.001 are experience, not correlates of it. That is a philosophical identity claim, not a
+            finding. It likewise <em>proposes</em> that free will sits at the &#x03B3; &#x2248; 1 boundary as constrained
+            indeterminacy, with the agent&apos;s coherence pattern shaping which of several possible futures is taken.
+            Neither proposal has a test yet. (Until 2026-10-07 this paragraph said the formula &ldquo;dissolves the hard
+            problem&rdquo; and that free will &ldquo;emerges&rdquo;, unhedged; the target pages already called that an
+            overclaim.)
           </p>
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>
@@ -445,7 +451,7 @@ export default function KeyClaims() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>
             <div style={{ display: 'flex', gap: '1rem' }}>
               <Link href="/hard-problem" style={{ fontSize: '0.85rem' }}>
-                Hard problem dissolved &rarr;
+                Hard problem: a proposed reframing &rarr;
               </Link>
               <Link href="/free-will" style={{ fontSize: '0.85rem' }}>
                 Free will &rarr;

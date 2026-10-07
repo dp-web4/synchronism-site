@@ -38,6 +38,14 @@ export const REFUTATIONS_ON_EXTERNAL_DATA = 5;
 export const ROOTS_FRAMEWORK_SPECIFIC = 2;
 export const ROOTS_SENTENCE =
   '6 executed refutations from 5 roots: 2 framework-specific (the boost ceiling, behind both TEST-09 and TEST-10; the γ=2 pin — RAR transition shape, unnumbered, closed 2026-05-21; at the threshold once galaxies, not points, are the unit — 2026-09-29) + 1 refuted registration (environment amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell\'s theorem; two nonlocal constructions null; the substrate class untested)';
+/**
+ * How the four headline counts relate (2026-10-07). A technical-writer persona found one count stated four
+ * ways (6 refutations / 4 Tier 1 kills fired / 2 discriminated / 0 of 9) with no stated relationship. They are
+ * nested subsets of one table plus one separate audit.
+ */
+export const COUNT_MAP_SENTENCE =
+  'How the counts relate: the 6 refutations are the six rows of this table. 4 of them are the Tier 1 kills fired (#1 TEST-09, #2 TEST-10, #4 the environment run, #5 TEST-25); #3 has no TEST number and #6 is a bet, not a test. 2 of those 4 discriminated between Synchronism and MOND (#1 and #2), and both selected the MOND class. "0 of 9" is a different thing: an audit of the site\'s former "Validated" badges, not a test count. "0 prospective predictions tested" means none of the six was predicted before its data existed; all six used data already published.';
+
 /** Sentence rewritten 2026-09-14: the old form ("6 executed refutations; 2 … roots + 1 + 1 + 1") summed
  *  to 5 and a graduate-physics persona read it as an arithmetic error. */
 
@@ -134,7 +142,7 @@ export const REFUTATION_ROWS: RefutationRow[] = [
   },
   {
     n: 5,
-    what: 'Cassini/SPARC squeeze: no γ fits galaxies and the Solar System together (+17.95σ)',
+    what: 'Cassini/SPARC squeeze: no γ fits galaxies and the Solar System together (published, marginalized: 8.7σ, Desmond, Hees & Famaey 2024; in-house at fixed Υ: +17.95σ)',
     ids: 'TEST-25',
     root: 'Inherited from MOND (McGaugh\'s own RAR function fails the same instrument by +15.9 to +20.9σ)',
     whichC: 'C_g, keyed on observed acceleration',

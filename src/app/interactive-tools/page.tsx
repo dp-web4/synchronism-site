@@ -79,7 +79,7 @@ const speculativeTools = [
     title: 'Consciousness Threshold Demo',
     href: '/consciousness-demo',
     desc: 'Watch 8 "independent" approaches converge on C ≈ 0.50 — because they share one assumption. The convergence is geometric, not empirical: any approach keyed to the midpoint of a [0,1)-bounded range lands near 0.50 by construction. The threshold is untestable as stated (no calibration to EEG/fMRI/IIT/PCI* exists; the one cited test measured a different variable). An artifact lesson, not a finding about consciousness.',
-    level: 'Beginner',
+    level: 'Intermediate',
     state: 'Artifact Lesson',
     epistemic: 'consciousness' as EpistemicStatus,
     pageBadges: ['speculative'] as ValidationStatus[],

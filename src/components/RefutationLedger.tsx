@@ -1,4 +1,4 @@
-import { REFUTATION_ROWS, REFUTATIONS_EXECUTED, ROOTS_SENTENCE } from '@/lib/ledger';
+import { COUNT_MAP_SENTENCE, REFUTATION_ROWS, REFUTATIONS_EXECUTED, ROOTS_SENTENCE } from '@/lib/ledger';
 
 /**
  * One table for "which six?" (2026-09-25). Data lives in src/lib/ledger.ts; change it there.
@@ -12,6 +12,9 @@ export default function RefutationLedger() {
       <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch' }}>
         Every &ldquo;{REFUTATIONS_EXECUTED} refutations&rdquo; on this site means these rows. {ROOTS_SENTENCE}.
         Rows #1 and #2 test one inequality (the boost cap) on two observables, so the independent count is at most 5.
+      </p>
+      <p id="count-map" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch', scrollMarginTop: '5rem' }}>
+        {COUNT_MAP_SENTENCE}
       </p>
       <div style={{ overflowX: 'auto' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem' }}>
@@ -54,7 +57,7 @@ export default function RefutationLedger() {
         lets the two baryon-budget caps through, so the kill rests on the two lowest bins, which sit 0.4&ndash;4 Mpc from the lens, where
         isolation cuts and neighbouring haloes matter. So the <em>registered</em> TEST-09 kill is convention-dependent, and the
         <em> ceiling it tests</em> is not. The one cap that nearly survives is a floor at &Omega;<sub>b</sub> (cap 1/&Omega;<sub>b</sub> = 20.3, what the floor becomes if there is
-        no cold dark matter). It passes only at 10<sup>&minus;14</sup> with every allowance granted and fails at 10<sup>&minus;15</sup>.
+        no cold dark matter). On the published KiDS bins that cap is excluded only if hidden baryons are less than about 2&ndash;3&times; stars plus cold gas, and its face-value exclusion sits in the lowest bins, which Brouwer et al. flag for satellite contamination (explorer 2026-10-04); the gas-free classical dwarf spheroidals, which need boosts of 30&ndash;100, carry that kill instead.
         Each cap is a ratio built from &Omega;<sub>m</sub>, and &Omega;<sub>m</sub> counts cold dark matter, so which cap is right depends on the
         open dark-matter question (see <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>the Verdict</a>) as much as on convention.
         Whether this changes the headline count is the project lead&apos;s decision (&ldquo;dp&rdquo; on this site); the count stays at {REFUTATIONS_EXECUTED}.

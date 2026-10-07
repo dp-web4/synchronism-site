@@ -48,13 +48,15 @@ export default function QuantumPredictions() {
           <div className="card" style={{ borderLeft: '3px solid #f59e0b' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3 style={{ color: '#f59e0b', margin: 0 }}>Shared-Environment Decoherence Protection</h3>
-              <span style={{ fontSize: '0.75rem', padding: '0.15rem 0.5rem', borderRadius: '1rem', background: 'rgba(245, 158, 11, 0.15)', color: '#f59e0b' }}>Post-diction</span>
+              <span style={{ fontSize: '0.75rem', padding: '0.15rem 0.5rem', borderRadius: '1rem', background: 'rgba(245, 158, 11, 0.15)', color: '#f59e0b' }}>Reparametrization (standard open-systems result)</span>
             </div>
             <div className="equation" style={{ margin: '0.75rem 0 0.25rem', fontSize: '0.95rem' }}>
               &#x0393; = &#x03B3;&sup2;(1 &minus; c)
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', textAlign: 'center', marginBottom: '0.75rem' }}>
-              Decoherence rate, where c = environmental noise correlation
+              Decoherence rate, where c = environmental noise correlation. Here &#x03B3; is a system&ndash;bath coupling
+              strength, <em>not</em> the framework&apos;s coherence exponent &gamma; used elsewhere on this site; the shared
+              letter is a notation collision.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem' }}>
               Entangled pairs in the same noise environment decohere slower than pairs in independent
@@ -67,7 +69,10 @@ export default function QuantumPredictions() {
               open quantum systems theory (Viola, Knill &amp; Lloyd 1999; Breuer &amp; Petruccione 2002).
               The 1/(1&minus;c) scaling is a natural consequence of correlated dephasing models.
               The match confirms Synchronism is consistent with standard physics here, but does not demonstrate
-              novel predictive power.
+              novel predictive power. Collective dephasing and decoherence-free subspaces are the standard theory of
+              exactly this effect (Zanardi &amp; Rasetti 1997, PRL 79, 3306; Lidar, Chuang &amp; Whaley 1998, PRL 81,
+              2594), so this card is a reparametrization of that result, not a post-diction the framework earned.
+              (Badge read &ldquo;Post-diction&rdquo; until 2026-10-07; a researcher visitor persona supplied the prior art.)
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Kill criterion:</strong> If T&#x2082; does not scale as 1/(1&minus;c) across controlled
@@ -96,7 +101,10 @@ export default function QuantumPredictions() {
               <strong>Prior art:</strong> Non-monotonic Bell violation behavior in structured environments
               is predicted by standard quantum optics. The cos&sup2;(&pi;d/&lambda;&#x2080;) form is a
               standard standing-wave correlation function. Whether &lambda;&#x2080; is predicted from first
-              principles or fitted post-hoc is the key question for evaluating novelty.
+              principles or fitted post-hoc is the key question for evaluating novelty. Session #235 answers it: &lambda;&#x2080;
+              is &ldquo;the characteristic wavelength of the environmental bath (phonons, photons, etc.)&rdquo;, an input
+              taken from each platform, not a number the framework derives. So read this card as a standard-optics
+              pattern with a platform input, not a prediction.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Kill criterion:</strong> If Bell violation decay is monotonic (no revival at distance
@@ -105,9 +113,13 @@ export default function QuantumPredictions() {
           </div>
         </div>
 
-        <h2>The 6 Untested Protocols</h2>
+        <h2>The 6 Protocols: 2 Run, 4 Never Run</h2>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
-          Designed in Sessions #368-370. Each has a specific falsification criterion. None have been run.
+          Designed in Sessions #368-370. Each has a specific falsification criterion. Two have since been run, both on
+          existing data: Protocol 2 (wide binaries, TEST-02) closed as a tie that cannot select this framework, and
+          Protocol 3 (SPARC environment) fired its registered kill. The other four have never been run. Details under
+          &ldquo;Where to Start&rdquo; below. (Until 2026-10-07 this heading read &ldquo;The 6 Untested Protocols&rdquo;
+          and said none had been run.)
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.5rem' }}>

@@ -397,6 +397,37 @@ export default function DarkEnergy() {
             new statistics.
           </li>
         </ul>
+
+        <div id="growth-readings" className="card" style={{ marginTop: '1.25rem', scrollMarginTop: '5rem', borderLeft: '3px solid #f59e0b' }}>
+          <h3 style={{ marginTop: 0 }}>One observable, three readings: growth fσ₈ at z = 0.51</h3>
+          <p style={{ fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+            A researcher visitor (2026-10-07) found two incompatible growth numbers on this site, &minus;0.22% here and
+            0.418 (12% suppression) on TEST-04a, and asked the obvious question: if gravity is G/C with C &le; 1, why
+            would growth ever be <em>suppressed</em>? The answer is that the archive contains three different ways of
+            putting C into the growth equation, and they disagree on the sign.
+          </p>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem', color: 'var(--color-text-secondary)' }}>
+              <thead>
+                <tr><th style={{ padding: '0.35rem 0.5rem', textAlign: 'left', verticalAlign: 'bottom' }}>Reading</th><th style={{ padding: '0.35rem 0.5rem', textAlign: 'left', verticalAlign: 'bottom' }}>How C enters the growth source</th><th style={{ padding: '0.35rem 0.5rem', textAlign: 'left', verticalAlign: 'bottom' }}>fσ₈(0.51)</th><th style={{ padding: '0.35rem 0.5rem', textAlign: 'left', verticalAlign: 'bottom' }}>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Session 107 ratio</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>G<sub>local</sub>/G<sub>global</sub> = C<sub>cosmic</sub>/C<sub>galactic</sub> &lt; 1</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>0.418 (&minus;12%)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>The number TEST-04a carries. Rests on a C<sub>cosmic</sub> &ne; C<sub>galactic</sub> distinction withdrawn in the archive 2026-08-11; the current framework does not contain it.</td></tr>
+                <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Dark-energy fluid (background-only)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>&delta;<sub>DE</sub>/&delta;<sub>m</sub> = 1 + w<sub>DE</sub>; gravity unmodified</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>&asymp; 0.473 (&minus;0.22%)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>&Lambda;CDM-like. With the fluid&apos;s pressure term, P(k) pins &gamma; = &frac12; to ~10<sup>&minus;5</sup> (box above).</td></tr>
+                <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Uniform G/C</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>The same G &rarr; G/C that builds H&sup2; = 8&pi;G&rho;<sub>m</sub>/(3C) also sources perturbations. Since C &equiv; &Omega;<sub>m</sub>(a) on this background, the boost is 1/&Omega;<sub>m</sub>(a): 1.6 at z = 0.51, 3.2 today, for any &gamma;</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>0.575 (+21%); &sigma;₈(0) = 0.916</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Computed 2026-10-07 (estimate; ΛCDM background, CMB-era amplitude held fixed). Enhances growth. Sits +0.4&sigma; from DESI DR1&apos;s LRG1 bin (0.550 &plusmn; 0.062), but that bin was already published, so this is a retrodiction. Its &sigma;₈ is 2.2&sigma; above DESI&apos;s 0.841 &plusmn; 0.034 (a GR-conditioned number). No covariant theory exists for it, and Cardassian modified-gravity branches over-produce the ISW effect (Koivisto et al. 2005, imported, not executed). Not a prediction.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.6rem' }}>
+            <strong>So the sign is a modelling choice, not a prediction.</strong> The framework&apos;s own G/C, applied
+            uniformly, <em>enhances</em> growth; the suppression came from a ratio of two C&apos;s that the framework no longer
+            has. Any DESI DR2/DR3 growth registration has to say which row it tests before the data arrive. As adopted,
+            TEST-04a tests the first row. Open question: does the uniform reading survive weak-lensing S8 and the standard
+            &mu;<sub>0</sub> fits? That depends on how C enters light deflection, which nothing in the archive specifies.
+            Script: <code>maintainer/scripts/growth_under_uniform_G_over_C.py</code> (+ <code>_output.txt</code>; two of its
+            three written predictions failed: the enhancement is late-time-limited, so smaller than expected).
+          </p>
+        </div>
       </section>
 
       <section className="section content-width">

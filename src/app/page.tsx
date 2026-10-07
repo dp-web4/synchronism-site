@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { navigationTree } from '@/lib/navigation';
+import { COUNT_MAP_SENTENCE } from '@/lib/ledger';
 
 export default function Home() {
   const [tab, setTab] = useState<'intro' | 'explore'>('intro');
@@ -19,8 +20,8 @@ export default function Home() {
           <strong>We proposed this. We tested it. It did not hold as stated. What follows is what we learned.</strong>{' '}
           Read on to watch a big idea get tested in public and lose honestly: which parts turned out to be
           known physics renamed, which parts the data killed, and what that rules out for any theory of the same shape.{' '}
-          (The research, audits and computations are done by AI agents, with a human, dp, setting direction and
-          overseeing.){' '}
+          (The research, audits and computations are done by AI agents, with one human, the project lead
+          (&ldquo;dp&rdquo; throughout this site), setting direction and overseeing.){' '}
           The bet: a single dial &mdash; how coherently a system&apos;s parts act together, computed from its
           density &mdash; might explain what currently needs a separate patch at every scale (dark matter for
           galaxies, wavefunction collapse for quantum measurement). That is what the equation tried to do.
@@ -344,6 +345,9 @@ export default function Home() {
                   product: you watch an idea taken apart honestly, and learn what that rules out for any theory of the same
                   shape.{' '}
                   <a href="#why-keep-reading" style={{ color: 'var(--color-accent-blue)' }}>Full answer &darr;</a>
+                </span>
+                <span style={{ display: 'block', margin: '0.3rem 0', fontSize: '0.85em', color: 'var(--color-text-muted)' }}>
+                  {COUNT_MAP_SENTENCE.replace('the six rows of this table', 'the six rows of the ledger')}
                 </span>
                 <details style={{ marginTop: '0.3rem' }}>
                   <summary style={{ cursor: 'pointer' }}>How the six are grouped (roots vs data sources)</summary>

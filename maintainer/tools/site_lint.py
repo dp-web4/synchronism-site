@@ -279,6 +279,9 @@ REQUIRES = [
     (r"(BIC|&#x0394;BIC|&#x394;BIC|&Delta;BIC)\W{0,30}\+184(?!\d)",
      r"galaxy|N_eff|N<sub>eff|\+11|\+10\.9|independen|history|revision|sanity check|reproduced",
      "2026-10-04", "+184 treats 2,807 points as independent; with the galaxy as the unit it is ~+11 (1.6-2.2 sigma)"),
+    (r"(V<sup>\+2</sup>|V\^\+2|V\u207A\u00B2)[^\n]{0,60}(excluded at|excluded)[^\n]{0,12}(~|about )?1[0-2](\.\d)?(&sigma;|&#x03C3;|\u03C3|σ)",
+     r"galaxy|N&nbsp;=&nbsp;129|N = 129|bootstrap",
+     "2026-10-07", "V^+2 exclusion: state the unit (one point per galaxy, N = 129, galaxy bootstrap) — researcher persona asked"),
 ]
 
 EXEMPT = re.compile(

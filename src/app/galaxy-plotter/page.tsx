@@ -198,7 +198,7 @@ export default function GalaxyPlotter() {
           <br />&bull; <strong>&rho;<sub>crit</sub>&nbsp;=&nbsp;0.029&middot;V<sub>flat</sub><sup>+2</sup></strong>
           &mdash; an a&#x2080;-tracking knee would need &rho;<sub>crit</sub>&nbsp;&propto;&nbsp;V<sup>&minus;2</sup>, and the knee
           measured on SPARC has no velocity dependence at all (V<sup>&minus;0.16 &plusmn; 0.19</sup>, median 0.161&nbsp;M<sub>&#x2609;</sub>/pc&sup3;), so
-          V<sup>+2</sup> is a <em>wrong exponent</em>, excluded at ~11&sigma; (<Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>).
+          V<sup>+2</sup> is a <em>wrong exponent</em>, excluded at ~11&sigma; at galaxy level (<Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>).
           The &ldquo;240&ndash;300,000&times;&rdquo; magnitude this line used to quote was withdrawn 2026-08-28: it applied the V&sup2; law to
           a coefficient derived for V<sup>0.5</sup>.
           <br />&bull; <strong>Per-system normalization</strong> &mdash; keying the knee to V<sub>flat</sub> makes it a

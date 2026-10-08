@@ -1,0 +1,14 @@
+  sBAO=0.60: Asimov sigma_gamma(DR3) = 0.0195 (DR2 0.0224); [lo,hi]=[0.4681,0.5071]; win needs gamma_hat < 0.4282 (thr 13.5) / 0.4421 (thr 8.8); predictive spread 0.0109; P(win) = 0.0000 / 0.0000
+  sBAO=1.00: Asimov sigma_gamma(DR3) = 0.0239 (DR2 0.0224); [lo,hi]=[0.4640,0.5119]; win needs gamma_hat < 0.4121 (thr 13.5) / 0.4292 (thr 8.8); predictive spread nan; P(win) = nan / nan
+  sBAO=0.75: Asimov sigma_gamma(DR3) = 0.0216 (DR2 0.0224); [lo,hi]=[0.4661,0.5094]; win needs gamma_hat < 0.4204 (thr 13.5) / 0.4359 (thr 8.8); predictive spread 0.0056; P(win) = 0.0000 / 0.0000
+  sSN=1.0 sBAO=0.75 g_t=0.466 | locus 0.0000 | dLCDM +2.550 | dwCDM +0.1194 | dMP0 +0.0272 | dCPL +0.0002 | w=-0.9670 q=0.9527 g_fit=0.4660 cpl=(-0.982,+0.059)
+  sSN=1.0 sBAO=1.00 g_t=0.466 | locus 0.0000 | dLCDM +2.095 | dwCDM +0.0981 | dMP0 +0.0227 | dCPL +0.0002 | w=-0.9676 q=0.9531 g_fit=0.4660 cpl=(-0.982,+0.059)
+  sSN=1.0 sBAO=0.60 g_t=0.445 | locus 0.0000 | dLCDM +8.802 | dwCDM +0.3846 | dMP0 +0.0878 | dCPL +0.0007 | w=-0.9440 q=0.9217 g_fit=0.4450 cpl=(-0.969,+0.095)
+  sSN=1.0 sBAO=0.75 g_t=0.445 | locus 0.0000 | dLCDM +7.194 | dwCDM +0.3338 | dMP0 +0.0770 | dCPL +0.0005 | w=-0.9449 q=0.9221 g_fit=0.4450 cpl=(-0.969,+0.095)
+  sSN=1.0 sBAO=0.75 g_t=0.487 | locus 0.0000 | dLCDM +0.347 | dwCDM +0.0164 | dMP0 +0.0037 | dCPL +0.0000 | w=-0.9877 q=0.9822 g_fit=0.4870 cpl=(-0.993,+0.023)
+  sSN=1.0 sBAO=0.60 g_t=0.466 | locus 0.0000 | dLCDM +3.126 | dwCDM +0.1384 | dMP0 +0.0311 | dCPL +0.0003 | w=-0.9664 q=0.9524 g_fit=0.4660 cpl=(-0.982,+0.060)
+  sSN=1.0 sBAO=1.00 g_t=0.487 | locus 0.0000 | dLCDM +0.284 | dwCDM +0.0134 | dMP0 +0.0031 | dCPL +0.0000 | w=-0.9880 q=0.9824 g_fit=0.4870 cpl=(-0.993,+0.023)
+  sSN=1.0 sBAO=0.60 g_t=0.487 | locus 0.0000 | dLCDM +0.426 | dwCDM +0.0191 | dMP0 +0.0042 | dCPL +0.0001 | w=-0.9875 q=0.9821 g_fit=0.4870 cpl=(-0.993,+0.023)
+  sSN=0.7 sBAO=0.75 g_t=0.445 | locus 0.0000 | dLCDM +9.682 | dwCDM +0.4197 | dMP0 +0.0994 | dCPL +0.0008 | w=-0.9481 q=0.9242 g_fit=0.4450 cpl=(-0.969,+0.094)
+  sSN=0.7 sBAO=0.75 g_t=0.487 | locus 0.0000 | dLCDM +0.470 | dwCDM +0.0205 | dMP0 +0.0047 | dCPL +0.0001 | w=-0.9884 q=0.9827 g_fit=0.4870 cpl=(-0.993,+0.023)
+  sSN=0.7 sBAO=0.75 g_t=0.466 | locus 0.0000 | dLCDM +3.445 | dwCDM +0.1497 | dMP0 +0.0350 | dCPL +0.0004 | w=-0.9688 q=0.9540 g_fit=0.4660 cpl=(-0.982,+0.059)

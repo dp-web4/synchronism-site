@@ -1,0 +1,23 @@
+===============================================================================
+DE FREEZING LOCUS — DR3 SHAPE RESOLVABILITY (Asimov forecast)
+===============================================================================
+
+[1] CPL projection (w0, wa) of the locus at DR2 best-fit (om, h):
+    gamma=0.300: w0=-0.8386 wa=+0.2853 (1+w0=+0.1614, slope wa/(1+w0)=+1.77, rms 0.007%)
+    gamma=0.400: w0=-0.9378 wa=+0.1665 (1+w0=+0.0622, slope wa/(1+w0)=+2.68, rms 0.008%)
+    gamma=0.445: w0=-0.9693 wa=+0.0956 (1+w0=+0.0307, slope wa/(1+w0)=+3.11, rms 0.006%)
+    gamma=0.466: w0=-0.9819 wa=+0.0601 (1+w0=+0.0181, slope wa/(1+w0)=+3.32, rms 0.004%)
+    gamma=0.487: w0=-0.9934 wa=+0.0233 (1+w0=+0.0066, slope wa/(1+w0)=+3.54, rms 0.002%)
+    gamma=0.500: w0=-1.0000 wa=+0.0000 (1+w0=+0.0000, slope wa/(1+w0)=+nan, rms 0.000%)
+    gamma=0.520: w0=-1.0094 wa=-0.0365 (1+w0=-0.0094, slope wa/(1+w0)=+3.88, rms 0.003%)
+    gamma=0.600: w0=-1.0398 wa=-0.1875 (1+w0=-0.0398, slope wa/(1+w0)=+4.71, rms 0.017%)
+    gamma=0.700: w0=-1.0660 wa=-0.3789 (1+w0=-0.0660, slope wa/(1+w0)=+5.74, rms 0.039%)
+    P1 (|1+w0|<=0.04, 0<=wa<=0.15 on [0.445,0.5]): HELD
+
+[0] Controls: mp0 at q=1 and wcdm at w=-1 must equal LCDM E2; subst at gamma=1/2 too
+    mp0   : max |E2/E2_LCDM - 1| = 1.11e-16
+    wcdm  : max |E2/E2_LCDM - 1| = 0.00e+00
+    subst : max |E2/E2_LCDM - 1| = 2.22e-16
+
+[2] Asimov fits (Delta chi2 vs locus; locus chi2 should be ~0)
+  sSN=1.0 sBAO=1.00 g_t=0.445 | locus 0.0000 | dLCDM +5.921 | dwCDM +0.2758 | dMP0 +0.0646 | dCPL +0.0004 | w=-0.9460 q=0.9226 g_fit=0.4450 cpl=(-0.969,+0.094)

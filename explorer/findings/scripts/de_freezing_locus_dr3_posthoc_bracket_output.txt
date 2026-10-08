@@ -1,0 +1,18 @@
+ratio dwCDM/dLCDM and dMP/dLCDM per arm:
+   sSN=1.0 sBAO=0.75 g_t=0.466  wCDM/LCDM=0.0468  MP0/LCDM=0.0107
+   sSN=1.0 sBAO=1.00 g_t=0.466  wCDM/LCDM=0.0468  MP0/LCDM=0.0108
+   sSN=1.0 sBAO=0.60 g_t=0.445  wCDM/LCDM=0.0437  MP0/LCDM=0.0100
+   sSN=1.0 sBAO=0.75 g_t=0.445  wCDM/LCDM=0.0464  MP0/LCDM=0.0107
+   sSN=1.0 sBAO=0.75 g_t=0.487  wCDM/LCDM=0.0473  MP0/LCDM=0.0107
+   sSN=1.0 sBAO=0.60 g_t=0.466  wCDM/LCDM=0.0443  MP0/LCDM=0.0099
+   sSN=1.0 sBAO=1.00 g_t=0.487  wCDM/LCDM=0.0472  MP0/LCDM=0.0109
+   sSN=1.0 sBAO=0.60 g_t=0.487  wCDM/LCDM=0.0448  MP0/LCDM=0.0099
+   sSN=0.7 sBAO=0.75 g_t=0.445  wCDM/LCDM=0.0433  MP0/LCDM=0.0103
+   sSN=0.7 sBAO=0.75 g_t=0.487  wCDM/LCDM=0.0436  MP0/LCDM=0.0100
+   sSN=0.7 sBAO=0.75 g_t=0.466  wCDM/LCDM=0.0435  MP0/LCDM=0.0102
+s=0.75 sigma3_cal=0.0202 thr=13.5 gamma_hat<0.4257  P(nested,calibrated)=7.61e-11  P(independent,generous)=0.021
+s=0.75 sigma3_cal=0.0202 thr=8.8 gamma_hat<0.4402  P(nested,calibrated)=4.92e-07  P(independent,generous)=0.060
+s=0.60 sigma3_cal=0.0182 thr=13.5 gamma_hat<0.4330  P(nested,calibrated)=1.45e-05  P(independent,generous)=0.031
+s=0.60 sigma3_cal=0.0182 thr=8.8 gamma_hat<0.4460  P(nested,calibrated)=7.53e-04  P(independent,generous)=0.078
+LCDM-detection needed for 2-sigma shape vs wCDM: dchi2=87 (9.3 sigma); vs MP0 (ratio 0.010): 400 (20 sigma)
+gamma needed at s=0.75 for that: 0.299

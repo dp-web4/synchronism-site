@@ -13,8 +13,21 @@ export default function MondUnification() {
     <>
       <Breadcrumbs currentPath="/mond-unification" />
       <PathNav currentPath="/mond-unification" />
-      <h1>MOND Unification</h1>
+      <h1>Relation to MOND</h1>
       <ValidationBadge status="reparametrization" label="Dimensional Analysis — 6–13% Below Milgrom's a₀, H₀-Dependent" />
+      {/* 2026-10-08: retitled from "MOND Unification" (URL kept) after a graduate-physics visitor showed the page's field equation cannot produce MOND */}
+      <div style={{ background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.7rem 1rem', margin: '1rem 0 0', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+        <strong style={{ color: '#f87171' }}>Read this first: the density-keyed field equation on this page contains no acceleration scale, so it cannot produce MOND.</strong>{' '}
+        The working equation below, &nabla;&middot;[C(&rho;)&nabla;&Phi;] = 4&pi;G&rho;, makes C a function of local density alone. Then
+        a&#x2080; = cH&#x2080;/2&pi; appears only in the prose; nothing in the operator connects it to MOND&apos;s deep limit g = &radic;(g<sub>N</sub>a&#x2080;) or
+        to V&#x2074; &prop; M. A coefficient keyed on &rho; acts as a position-dependent G. MOND phenomenology needs |&nabla;&Phi;|/a&#x2080; inside the
+        coefficient, as in AQUAL and QUMOND. That is the acceleration-keyed branch the site&apos;s galaxy fits actually use. The density-keyed
+        version is excluded separately: a knee that tracks a&#x2080; would have to scale as V<sup>&minus;2</sup>, the framework asserts V<sup>+2</sup>, and
+        SPARC shows no velocity exponent (V<sup>+2</sup> excluded at ~11&sigma;, one point per galaxy, N = 129, galaxy bootstrap; see{' '}
+        <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>). It also loses to the
+        acceleration-keyed form on SPARC by &Delta;BIC +2843 with &gamma; free. So this page is about how the framework <em>relates</em> to MOND
+        (the a&#x2080; coincidence and the acceleration-keyed reparametrization), not a unification. Until 2026-10-08 it was titled &ldquo;MOND Unification&rdquo;.
+      </div>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <EquationDisplay size="lg" label="The MOND acceleration scale from cosmology">

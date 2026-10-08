@@ -40,7 +40,7 @@ export default function RootLayout({
             <Link
               href="/learning-paths"
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
-              title="Choose your journey: Physics, Chemistry, Philosophy, or All"
+              title="Choose by level (Beginner → Advanced) or by topic (Physics, Chemistry, Philosophy, Methodology)"
             >
               Learning Paths
             </Link>

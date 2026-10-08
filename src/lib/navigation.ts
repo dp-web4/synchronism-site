@@ -47,7 +47,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Learning Paths',
       href: '/learning-paths',
-      desc: 'Choose your journey: Physics, Chemistry, Philosophy, or All',
+      desc: 'Choose by level (Beginner → Advanced) or by topic (Physics, Chemistry, Philosophy, Methodology)',
       keywords: ['guide', 'pathway', 'curriculum', 'track'],
       related: ['/first-encounter', '/glossary'],
     },
@@ -261,9 +261,9 @@ export const navigationTree: NavigationTree = {
       related: ['/rar-scatter', '/cdm-discrimination', '/galaxy-plotter'],
     },
     {
-      title: 'MOND Unification',
+      title: 'Relation to MOND',
       href: '/mond-unification',
-      desc: 'a\u2080 = cH\u2080/(2\u03C0) is emergent, not fundamental',
+      desc: 'The a\u2080 \u2248 cH\u2080/2\u03C0 coincidence (known since 1983) and the acceleration-keyed reparametrization; the density equation has no a\u2080',
       keywords: ['MOND', 'unification', 'a0', 'acceleration', 'emergent', 'Milgrom'],
       prerequisites: ['/parameter-derivations', '/dark-matter'],
       related: ['/galaxy-rotation', '/freemans-law', '/mond-comparator'],

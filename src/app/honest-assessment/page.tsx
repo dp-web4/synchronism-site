@@ -341,7 +341,7 @@ export default function HonestAssessment() {
           &Lambda;CDM at &gamma;&nbsp;=&nbsp;&frac12;, so its kill fires only when &Lambda;CDM&apos;s does, and on the local-density
           reading P(k) already pins it to &Lambda;. See{' '}
           <Link href="/dark-energy" style={{ color: '#f59e0b' }}>Dark Energy</Link>.) That ceiling forces a BTFR slope prediction (n&nbsp;=&nbsp;3.35)
-          that genuinely differs from MOND&apos;s (3.81); observed n&nbsp;=&nbsp;3.75&nbsp;±&nbsp;0.10 sits
+          that genuinely differs from MOND&apos;s 3.81 (fitted over the SPARC range with the same pipeline; asymptotically 4); observed n&nbsp;=&nbsp;3.75&nbsp;±&nbsp;0.10 sits
           3.3σ from the prediction and fired the registered kill (|&Delta;n|&nbsp;=&nbsp;0.41&nbsp;&gt;&nbsp;0.3, from unrounded slopes; the rounded 3.75&nbsp;&minus;&nbsp;3.35 reads 0.40), and
           no choice of the other parameters rescues it. <strong>But the kill is convention-dependent, like
           TEST-10&apos;s:</strong> it fires at B<sub>max</sub>&nbsp;=&nbsp;1/&Omega;<sub>m</sub>, and the 2026-09-18
@@ -950,7 +950,7 @@ export default function HonestAssessment() {
           <div id="gc-fork" className="card" style={{ borderLeft: '3px solid #f59e0b' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>Globular-Cluster Knee Test — S611 P611.2, registered 2026-02-17, executed 2026-09-07: a fork, not a kill</h3>
-              <ValidationBadge status="parallel-paths" label="Fork — universal γ excluded; registered per-cluster γ = 2 marginal; count unchanged (gates on operator)" />
+              <ValidationBadge status="parallel-paths" label="Fork — universal γ excluded; registered γ = 2 marginal under L2, excluded under the action at the measured knee; count unchanged (gates on operator)" />
             </div>
             <PlainTerms>
               galaxies never get dense enough to reach the &ldquo;knee&rdquo; where this framework&apos;s density switch is
@@ -958,7 +958,9 @@ export default function HonestAssessment() {
               their cores outward. So they are the one place the density idea can be tested on its own terms. Result: if
               the switch has one sharpness everywhere, the clusters rule it out at every setting the framework has ever
               used. If the sharpness resets inside each cluster &mdash; which the framework <em>had</em> predicted, seven
-              months earlier, and nobody had run &mdash; the clusters are marginally consistent. The price of that survival
+              months earlier, and nobody had run &mdash; the clusters are marginally consistent, but only if the density switch
+              acts in the simple algebraic way (L2). Under the framework&apos;s own action (L3), which adds a force the simple
+              version leaves out, the registered setting is excluded too, narrowly (2026-10-08). The price of the L2 survival
               is that &ldquo;one equation&rdquo; becomes two.
             </PlainTerms>
             <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -997,7 +999,13 @@ export default function HonestAssessment() {
               <strong style={{ color: '#f59e0b' }}>What kind of result this table is.</strong>{' '}
               Every density-keyed row above uses the <strong>L2</strong> reading: g = g<sub>N</sub>/C, or the field equation
               without striction, for an isolated cluster, with density read pointwise or smoothed over ≲&nbsp;10&nbsp;pc. The
-              verdicts are ratios to the Newtonian residual, set after the data, with no σ.
+              verdicts were set after the data, with no σ. <strong>The decision rule</strong> (as coded in the 2026-09-07 script,
+              stated here 2026-10-08 after a researcher visitor found no rule beside the table): the reference is MOND+EFE&apos;s
+              residual, |−0.093|. A row <em>passes</em> if |residual| ≤ 0.093, is <em>marginal</em> if it is below 2 × 0.093 = 0.186, and is
+              <em> excluded</em> otherwise. The ±0.027 is shared across rows (same clusters, same mass models), so differences between rows
+              are better determined than ±0.027 each would suggest, but no covariance was computed. The Newtonian row is not zero
+              (−0.057): that is the systematics floor every law sits on, and it is why the rule is relative to MOND+EFE rather than to zero.
+              The &ldquo;× Newtonian&rdquo; column is a display, not the rule.
               <br />&bull; <strong>Under the action (L3, striction included) the window does not survive in this form.</strong> In a
               cluster&apos;s knee shell the striction force is 1.7&ndash;13&times; gravity and the net force points outward for all five knees
               tested. Re-running the 42-cluster statistic under L3 changes 18 of the 27 verdicts on the γ&nbsp;=&nbsp;0.489 row. The
@@ -1006,6 +1014,22 @@ export default function HonestAssessment() {
               cancel inside the cluster either: residuals are 19&ndash;390&times; the L2 refraction term, plus a quadratic, nonlinear
               EFE. An exploratory linearization gives striction a negative effective pressure in the knee shell, 2&ndash;38&times; σ²,
               so pointwise-density L3 may not admit a smooth cluster across the knee at all (explorer, 2026-09-16).
+              <br />&bull; <strong>The registered row under the action (2026-10-08, pre-registered at site <code style={{ fontSize: '0.75rem' }}>5ca3fac</code>
+              before the script).</strong> The 09-16 run covered only γ&nbsp;=&nbsp;0.489. Re-run at γ&nbsp;=&nbsp;2 with the same machinery (identity
+              controls: L2 reproduces the published γ&nbsp;=&nbsp;2 row on all 27 grid points; L3 with C′ forced to 0 equals L2): at the
+              measured knee 0.161&nbsp;M<sub>☉</sub>/pc³ the residual moves from −0.111 (<em>marginal</em>) to <strong>−0.203 (<em>excluded</em>,
+              bar 0.186)</strong>, and 5 of the 42 clusters have outward net gravity somewhere on their profile. The margin over the bar is
+              0.017, less than the ±0.027 statistical error, so this is excluded by the rule, not by a wide margin. Under the
+              pre-fixed decision rule the registered prediction <strong>survives under L2 only</strong>. One of the four registered predictions failed:
+              L3 opens two &ldquo;ok&rdquo; knee bands at γ&nbsp;=&nbsp;2, ρ<sub>c</sub> ≤ 0.0125 and 4.8&ndash;7.7&nbsp;M<sub>☉</sub>/pc³. Neither is a knee any archive
+              document names (post-hoc; the measured galaxy knee is 0.161).
+              Script: <code style={{ fontSize: '0.75rem' }}>maintainer/scripts/gc_registered_gamma2_under_l3.py</code> (+ <code style={{ fontSize: '0.75rem' }}>_PREREG.md</code>, <code style={{ fontSize: '0.75rem' }}>_output.txt</code>).
+              <br />&bull; <strong>So the fork is open only under L2, and L2 has costs of its own.</strong> L2 has no action, and it violates the
+              third law for composite bodies. A compact body sits in its own high-C bubble, so under L2 a halo cluster feels about
+              0.63&ndash;0.64 of the Galactic field a diffuse tracer feels at the window&apos;s edges. Halo-cluster and disc-giant
+              kinematics agree on M(&lt;21&nbsp;kpc) to about 2.1σ against that (explorer 2026-09-15; estimator systematics unmodelled).
+              Low-mass clusters also extend about 3× past L2&apos;s unbinding radius (post-hoc, soft data). Which dynamics the framework
+              means, L2 or L3, is not stated anywhere in the archive. That choice decides this fork, and it gates on dp.
               <br />&bull; <strong>Not modelled in either reading:</strong> potential escapers. These are stars that are energetically
               unbound but still inside the tidal radius, and they are the standard Newtonian explanation for flattened outer
               dispersion profiles (Küpper et al. 2010; Claydon, Gieles &amp; Zocchi 2017). They mimic exactly the outer-slope signal
@@ -1099,7 +1123,7 @@ export default function HonestAssessment() {
               datasets are sending γ to the point where the framework has no content of its own 
               (reworded 2026-09-16 from &ldquo;the value SPARC and DESI both select&rdquo;) &mdash; the clusters exclude the density law at every placement the framework uses.
               If γ <em>resets per Markov blanket</em> (P611.2: N<sub>corr</sub> = 1 inside a resolved-member system, so γ = 2),
-              the clusters are marginally consistent at MOND-with-EFE&apos;s level &mdash; and the coherence function is not
+              the clusters are marginally consistent at MOND-with-EFE&apos;s level under L2 (under the action, L3, excluded narrowly at the measured knee, 2026-10-08; see <a href="#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>the fork card</a>) &mdash; and the coherence function is not
               one function. This is not an ad-hoc rescue: it was registered seven months before the test, on independent
               reasoning, and it makes a further cheap prediction &mdash; <strong>γ = 2 for every resolved-member system</strong>{' '}
               (open clusters, dwarf spheroidals, stellar streams; all public) and γ ≈ ½ for unresolved ones. That ladder is

@@ -1,0 +1,43 @@
+C3  N = 42  Newtonian -0.057  MOND+EFE -0.093   (published -0.057, -0.093)
+
+    rho_c   pub L2       L2  L3 C->0       L3  #g<0  min g/gs  nan  change
+    0.002   -0.057   -0.057   -0.057   -0.059     0      1.00    0  ok->ok
+ 0.003163   -0.057   -0.057   -0.057   -0.061     0      0.38    0  ok->ok
+ 0.005003   -0.057   -0.057   -0.057   -0.067     1     -0.12    0  ok->ok
+ 0.007912   -0.058   -0.058   -0.058   -0.076     1     -0.20    0  ok->ok
+  0.01251   -0.059   -0.059   -0.059   -0.090     1     -0.15    0  ok->ok
+  0.01979   -0.062   -0.062   -0.062   -0.108     1     -0.11    0  ok->marg  *
+   0.0313   -0.067   -0.067   -0.067   -0.128     3     -0.07    0  ok->marg  *
+   0.0495   -0.075   -0.075   -0.075   -0.149     3     -0.43    0  ok->marg  *
+  0.07828   -0.086   -0.086   -0.086   -0.171     4     -0.41    0  ok->marg  *
+   0.1238   -0.101   -0.101   -0.101   -0.192     5     -0.37    0  marg->EXCL  *
+    0.161       --   -0.111   -0.111   -0.203     5     -0.35    0  marg->EXCL  *   <== registered knee
+   0.1958   -0.120   -0.120   -0.120   -0.211     5     -0.33    0  marg->EXCL  *
+   0.3097   -0.144   -0.144   -0.144   -0.224     3     -0.29    0  marg->EXCL  *
+   0.4898   -0.172   -0.172   -0.172   -0.224     3     -0.25    0  marg->EXCL  *
+   0.7746   -0.202   -0.202   -0.202   -0.211     6     -0.22    0  EXCL->EXCL
+    1.225   -0.232   -0.232   -0.232   -0.183     7     -0.25    0  EXCL->marg  *
+    1.937   -0.260   -0.260   -0.260   -0.146     6     -0.20    0  EXCL->marg  *
+    3.064   -0.281   -0.281   -0.281   -0.112     6     -0.16    0  EXCL->marg  *
+    4.846   -0.295   -0.295   -0.295   -0.089     5     -0.12    0  EXCL->ok  *
+    7.664   -0.299   -0.299   -0.299   -0.086     4     -0.08    0  EXCL->ok  *
+    12.12   -0.295   -0.295   -0.295   -0.108     3     -0.05    0  EXCL->marg  *
+    19.17   -0.284   -0.284   -0.284   -0.148     2     -0.01    0  EXCL->marg  *
+    30.32   -0.268   -0.268   -0.268   -0.182     0      0.03    0  EXCL->marg  *
+    47.95   -0.249   -0.249   -0.249   -0.198     0      0.07    0  EXCL->EXCL
+    75.84   -0.229   -0.229   -0.229   -0.196     0      0.11    0  EXCL->EXCL
+    119.9   -0.209   -0.209   -0.209   -0.180     0      0.15    0  EXCL->marg  *
+    189.7   -0.189   -0.189   -0.189   -0.158     0      0.19    0  EXCL->marg  *
+      300   -0.169   -0.169   -0.169   -0.137     0      0.23    0  marg->marg
+
+C1 (L2 reproduces published gamma=2 row): PASS
+C2 (L3 with C'=0 equals L2):               PASS
+
+Predictions:
+P1 L3 verdict differs from L2 at registered knee: marg -> EXCL  HELD
+P2 >=1 cluster with outward net g at registered knee: 5  HELD
+P3 no 'ok' L3 point at rho_c >= 0.03: ok points = ['4.8462', '7.6644']  FAILED
+P4 |L3-L2| >= 0.03 at registered knee: 0.092  HELD
+
+DECISION (pre-fixed rule): the registered prediction survives under L2 only; excluded under the action.
+[5s]

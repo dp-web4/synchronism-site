@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
+import ValidationBadge from '@/components/ValidationBadge';
 
 function coherence(rho: number, gamma: number, rhoCrit: number): number {
   if (rho <= 0 || rhoCrit <= 0) return 0;
@@ -57,6 +58,8 @@ export default function CoherenceExplorer() {
     <>
       <Breadcrumbs currentPath="/coherence-explorer" />
       <h1>Coherence Explorer</h1>
+      {/* Badge added 2026-10-08 (graduate-physics visitor): the default γ = 0.49 preset is the MOND-analogue point */}
+      <ValidationBadge status="reparametrization" label="At γ = ½ this curve is MOND's simple μ (acceleration-keyed) and Λ (cosmology)" />
       <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem', maxWidth: '60ch' }}>
         <strong>What this toy is for:</strong> seeing the shape of the S-curve and what &#x03B3; does to it. It does
         not model any real material, and the density axis has no units.
@@ -231,7 +234,7 @@ export default function CoherenceExplorer() {
             </p>
             <p style={{ color: regimeColor, fontSize: '0.8rem', marginTop: '0.25rem' }}>{regime}</p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
-              Higher &#x03B3; = sharper, more abrupt snap to coherent. Lower &#x03B3; = gentler slope. Depends on N<sub>corr</sub> (correlated particle count): &#x03B3; = 2/&#x221A;N<sub>corr</sub>.
+              Higher &#x03B3; = sharper, more abrupt snap to coherent. Lower &#x03B3; = gentler slope. (The framework also wrote &#x03B3; = 2/&#x221A;N<sub>corr</sub>, which would make <em>more</em> correlated systems <em>gentler</em>. That runs backwards against real condensed-matter physics and is audited-negative; see the <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>. Treat &#x03B3; here as a shape dial only.)
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               Opens at &#x03B3; &#x2248; 0.49, the value SPARC galaxy data prefer when the <em>acceleration-keyed</em> version

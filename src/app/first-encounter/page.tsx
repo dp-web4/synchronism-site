@@ -244,9 +244,14 @@ export default function FirstEncounter() {
             Continue &darr; Section {String.fromCharCode(66 + step)}
           </button>
         ) : (
-          <Link href="/core-idea" className="btn-primary">
-            Go Deeper &rarr;
-          </Link>
+          <span style={{ display: 'inline-flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <Link href="/galaxy-plotter" className="btn-primary">
+              Beginner path, step 3: see it fail on a real galaxy &rarr;
+            </Link>
+            <Link href="/core-idea" className="btn-secondary">
+              Go deeper (Intermediate): The Core Idea &rarr;
+            </Link>
+          </span>
         )}
       </div>
       <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>

@@ -641,7 +641,7 @@ export default function KeyClaims() {
               This is not a new refutation and the count stays at 6: it is the same statement as (b) and as
               EFE&nbsp;=&nbsp;0, taken to its limit (&ldquo;a uniform external field does not change &#x03C1;&rdquo; and
               &ldquo;empty space has C&nbsp;=&nbsp;0 however strong the field&rdquo; are one property, not two &mdash;
-              derived on <Link href="/mond-unification" style={{ color: '#a78bfa' }}>MOND Unification</Link>). What it
+              derived on <Link href="/mond-unification" style={{ color: '#a78bfa' }}>Relation to MOND</Link>). What it
               adds is the <em>attribution</em>: Bekenstein &amp; Milgrom&apos;s AQUAL (1984, ApJ 286, 7) keys its
               interpolating function on |&nabla;&#x03A6;|, which never vanishes near mass, rather than on &#x03C1;,
               which vanishes everywhere outside matter &mdash; for exactly this reason. The substitution{' '}
@@ -781,7 +781,7 @@ export default function KeyClaims() {
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
               <strong>The BTFR slope left this list on 2026-07-14</strong> &mdash; executed on real SPARC, it is
               the opposite of a reparametrization: the framework&apos;s bounded boost predicts a slope
-              (n = 3.35) that genuinely <em>differs</em> from MOND&apos;s (3.81). The observed 3.75 &plusmn; 0.10 sits
+              (n = 3.35) that genuinely <em>differs</em> from MOND&apos;s 3.81 (MOND run through the same finite-range pipeline; its asymptotic slope is exactly 4). The observed 3.75 &plusmn; 0.10 sits
               3.3&sigma; from the framework&apos;s slope, and the registered |&Delta;n| &gt; 0.3 criterion fired. It is one of
               the framework&apos;s two discriminating tests, both run and both lost to MOND: 0 selected Synchronism over MOND
               (2 discriminated, both selected MOND). It is recorded as{' '}

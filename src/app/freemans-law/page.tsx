@@ -115,7 +115,7 @@ export default function FreemansLaw() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           A &#8776;4% match is not independent confirmation: &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) is an exact algebraic
           identity, so this number is the a&#x2080;-vs-Milgrom gap (&#8776;13%, see{' '}
-          <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>MOND Unification</Link>)
+          <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>Relation to MOND</Link>)
           propagated through a fixed linear relation, not a second derivation. Freeman&apos;s Law itself has
           been refined over the decades &mdash; there is a population of low surface brightness (LSB)
           galaxies that violate it, though the <em>high</em> surface brightness cutoff remains robust.
@@ -128,7 +128,7 @@ export default function FreemansLaw() {
             Next: Cosmic Horizons &rarr;
           </Link>
           <Link href="/mond-unification" className="btn-secondary">
-            &larr; MOND Unification
+            &larr; Relation to MOND
           </Link>
         </div>
       </section>

@@ -72,7 +72,7 @@ export default function DarkEnergy() {
           H&sup2;&nbsp;&prop;&nbsp;&rho;<sub>m</sub>/C(&rho;<sub>m</sub>) is a modified Friedmann equation with no new
           degree of freedom &mdash; the <strong>Cardassian</strong> class (Freese &amp; Lewis 2002, Phys. Lett. B 540, 1;
           modified-polytropic form, Gondolo &amp; Freese 2002–03). Exactly: at &gamma;&nbsp;=&nbsp;&frac12; it is
-          1/C&nbsp;=&nbsp;1&nbsp;+&nbsp;2&rho;<sub>crit</sub>/&rho;<sub>m</sub>, i.e. &Lambda;CDM; at high density it
+          1/C&nbsp;=&nbsp;1&nbsp;+&nbsp;2&rho;<sub>crit</sub>/&rho;<sub>m</sub>, i.e. &Lambda;CDM <em>(notation warning, added 2026-10-08 for cosmologists: on this page &rho;<sub>crit</sub> is the framework&apos;s coherence <strong>knee</strong>, a free parameter, not the critical density 3H&sup2;/8&pi;G. Calibrated so that C<sub>0</sub> = &Omega;<sub>m</sub>, it equals &rho;<sub>&Lambda;</sub>/2, so &ldquo;&rho;<sub>DE</sub> = 2&rho;<sub>crit</sub>&rdquo; means &rho;<sub>DE</sub> = &rho;<sub>&Lambda;</sub>, not &Omega;<sub>DE</sub> = 2)</em>; at high density it
           tends to the modified-polytropic Cardassian with q&nbsp;=&nbsp;1 and n&nbsp;=&nbsp;1&minus;2&gamma; at low
           density it tends to a constant &rho;<sub>DE</sub>&nbsp;=&nbsp;&rho;<sub>crit</sub>/&gamma; (a &Lambda;-like
           future, which the Cardassian family does not have unless n&nbsp;=&nbsp;0). Neither the archive nor this site
@@ -291,7 +291,7 @@ export default function DarkEnergy() {
           is only trustworthy as the far-past limit of completion B. The fork-amplitude diagnostic the site applies
           to the galaxy sector applies here with the same verdict: the sectors are connected by notation, not by a
           single derivation. (See{' '}
-          <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>MOND Unification</Link>{' '}
+          <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>Relation to MOND</Link>{' '}
           for the galaxy-sector fork.)
         </p>
       </section>
@@ -414,7 +414,7 @@ export default function DarkEnergy() {
               <tbody>
                 <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Session 107 ratio</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>G<sub>local</sub>/G<sub>global</sub> = C<sub>cosmic</sub>/C<sub>galactic</sub> &lt; 1</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>0.418 (&minus;12%)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>The number TEST-04a carries. Rests on a C<sub>cosmic</sub> &ne; C<sub>galactic</sub> distinction withdrawn in the archive 2026-08-11; the current framework does not contain it.</td></tr>
                 <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Dark-energy fluid (background-only)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>&delta;<sub>DE</sub>/&delta;<sub>m</sub> = 1 + w<sub>DE</sub>; gravity unmodified</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>&asymp; 0.473 (&minus;0.22%)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>&Lambda;CDM-like. With the fluid&apos;s pressure term, P(k) pins &gamma; = &frac12; to ~10<sup>&minus;5</sup> (box above).</td></tr>
-                <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Uniform G/C</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>The same G &rarr; G/C that builds H&sup2; = 8&pi;G&rho;<sub>m</sub>/(3C) also sources perturbations. Since C &equiv; &Omega;<sub>m</sub>(a) on this background, the boost is 1/&Omega;<sub>m</sub>(a): 1.6 at z = 0.51, 3.2 today, for any &gamma;</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>0.575 (+21%); &sigma;₈(0) = 0.916</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Computed 2026-10-07 (estimate; ΛCDM background, CMB-era amplitude held fixed). Enhances growth. Sits +0.4&sigma; from DESI DR1&apos;s LRG1 bin (0.550 &plusmn; 0.062), but that bin was already published, so this is a retrodiction. Its &sigma;₈ is 2.2&sigma; above DESI&apos;s 0.841 &plusmn; 0.034 (a GR-conditioned number). No covariant theory exists for it, and Cardassian modified-gravity branches over-produce the ISW effect (Koivisto et al. 2005, imported, not executed). Not a prediction.</td></tr>
+                <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Uniform G/C</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>The same G &rarr; G/C that builds H&sup2; = 8&pi;G&rho;<sub>m</sub>/(3C) also sources perturbations. Since C &equiv; &Omega;<sub>m</sub>(a) on this background, the boost is 1/&Omega;<sub>m</sub>(a): 1.6 at z = 0.51, 3.2 today, for any &gamma;</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>0.575 (+21%); &sigma;₈(0) = 0.916</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Computed 2026-10-07 (estimate; ΛCDM background, CMB-era amplitude held fixed). Enhances growth. Sits +0.4&sigma; from DESI DR1&apos;s LRG1 bin (0.550 &plusmn; 0.062), but that bin was already published, so this is a retrodiction. Its &sigma;₈ is 2.2&sigma; above DESI&apos;s 0.841 &plusmn; 0.034 (a GR-conditioned number). No covariant theory exists for it, and Cardassian modified-gravity branches over-produce the ISW effect (Koivisto et al. 2005). <strong>Excluded by existing data (explorer 2026-10-07):</strong> ISW sign flip and &Sigma;<sub>1</sub> &asymp; 1.6 without slip; S<sub>8</sub> +4.7&sigma; with lensing unmodified (see below). Not a prediction.</td></tr>
               </tbody>
             </table>
           </div>
@@ -422,8 +422,18 @@ export default function DarkEnergy() {
             <strong>So the sign is a modelling choice, not a prediction.</strong> The framework&apos;s own G/C, applied
             uniformly, <em>enhances</em> growth; the suppression came from a ratio of two C&apos;s that the framework no longer
             has. Any DESI DR2/DR3 growth registration has to say which row it tests before the data arrive. As adopted,
-            TEST-04a tests the first row. Open question: does the uniform reading survive weak-lensing S8 and the standard
-            &mu;<sub>0</sub> fits? That depends on how C enters light deflection, which nothing in the archive specifies.
+            TEST-04a tests the first row. <strong>The uniform reading has since been checked against existing data, and it is
+            excluded</strong> (explorer 2026-10-07, pre-registered at site <code>be3ecba</code>). How C enters light deflection is not
+            specified anywhere in the archive, so both options were run. If lensing feels the same G/C (no slip, the plain reading),
+            the lensing potential grows 2.7&times; from z = 3 to today. The ISW&ndash;galaxy cross-correlation then flips sign (proxy
+            A &asymp; &minus;8.5 against the observed &asymp; +1.0 &plusmn; 0.2), which is the same categorical test that ruled out the cubic Galileon.
+            &Sigma;<sub>1</sub> &asymp; 1.6 sits about 20&sigma; from DESI DR1&apos;s 1.021 &plusmn; 0.029. If lensing is left unmodified, which needs a slip
+            mechanism the framework does not supply, S<sub>8</sub> = 0.890 is +4.7&sigma; from KiDS-Legacy, and the lensing-free DESI+CMB
+            &mu;<sub>0</sub> sits about 3.5&sigma; off. The ISW proxy is a Limber kernel ratio, not a Boltzmann-code C<sub>&#x2113;</sub>; the
+            sign is robust, the size indicative. With row 1 withdrawn, row 3 excluded and row 2 equal to &Lambda;CDM to 0.2%, <strong>no live
+            growth reading differs from &Lambda;CDM at DESI DR2 precision</strong>. The explorer recommends retiring TEST-04a as a discriminating
+            test; that decision gates on dp. Finding: <code>explorer/findings/uniform-g-over-c-growth-is-excluded-isw-sign-flips-...md</code>.
+            The researcher visitor who expected the +21% reading to be in trouble with ISW and S<sub>8</sub> (2026-10-08) was right.
             Script: <code>maintainer/scripts/growth_under_uniform_G_over_C.py</code> (+ <code>_output.txt</code>; two of its
             three written predictions failed: the enhancement is late-time-limited, so smaller than expected).
           </p>

@@ -30,11 +30,12 @@ const coreTools = [
     desc: 'Drag γ and ρ_crit sliders and watch the C(ρ) curve update live. See how the sparse/independent → dense/collective transition sharpens or flattens. Best first tool.',
     level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
+    pageBadges: ['reparametrization'] as ValidationStatus[],
   },
   {
     title: 'Galaxy Curve Plotter',
     href: '/galaxy-plotter',
-    desc: 'Pick a SPARC galaxy and see the dark-matter problem: the gray Newtonian line (visible matter) sags below the observed dots. Violet = the framework\'s equation as published, which hugs the Newtonian line and never fills the gap (inert in the display\'s quadrature wiring; the ledger\'s division wiring, g_bar/C, fails the other way by over-boosting, ~10³× in g for a dwarf like DDO 154). Green = MOND\'s simple interpolating function. Dotted amber = a hand-tuned illustration, not computed from the theory.',
+    desc: 'Pick a SPARC galaxy and see the dark-matter problem: the gray Newtonian line (visible matter) sags below the observed dots. Solid violet = the framework\'s equation as published, wired as its tests wire it (g_bar/C, floored at Ω_m): C never leaves the floor, so it is a flat 3.17× boost with the Newtonian shape, falling where the dots stay flat. Dashed light violet = the same C added in quadrature, which does nothing. Unfloored, the division wiring would over-boost by ~10³× in g. Green = MOND\'s simple interpolating function. The old hand-tuned amber stand-in is hidden behind a checkbox.',
     level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
     pageBadges: ['failed', 'reparametrization'] as ValidationStatus[],
@@ -71,6 +72,7 @@ const coreTools = [
     desc: 'See how γ correlates with chemical properties across 1,703 phenomena. High r values (0.98+) reflect density-monotonicity, not Synchronism-specific physics — the page states the null-model result (a 2-parameter polynomial in Z matches every r to within 0.07, sometimes better) at the head of the table; it has no per-row null column, and how γ was assigned per material is undocumented.',
     level: 'Advanced',
     epistemic: 'chemistry' as EpistemicStatus,
+    pageBadges: ['reparametrization'] as ValidationStatus[],
   },
 ];
 

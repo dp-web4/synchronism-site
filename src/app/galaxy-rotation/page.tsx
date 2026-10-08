@@ -90,7 +90,7 @@ export default function GalaxyRotation() {
           amplitude term; the f<sub>DM</sub> = 1 − C identity on{' '}
           <Link href="/tier-1-existing" style={{ color: '#ef4444' }}>Tier 1</Link> implies
           g<sub>obs</sub> = g<sub>bar</sub>/C; and{' '}
-          <Link href="/mond-unification" style={{ color: '#ef4444' }}>MOND Unification</Link>&apos;s prose then said
+          <Link href="/mond-unification" style={{ color: '#ef4444' }}>Relation to MOND</Link>&apos;s prose then said
           g<sub>obs</sub> = C·g<sub>bar</sub> directly &mdash; since corrected there to g<sub>bar</sub>/C, so{' '}
           <strong>two readings are live today</strong>: the plotter&apos;s amplitude term and g<sub>bar</sub>/C, whose
           field-equation form (and where the two part company in a disc) is written out on{' '}

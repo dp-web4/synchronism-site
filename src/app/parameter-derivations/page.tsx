@@ -334,7 +334,7 @@ export default function ParameterDerivations() {
               splits by fitting method (Price MCMC vs Genzel least squares), so the <em>level</em> is
               method-dominated. The level-free test is the trend ratio k(z<sub>hi</sub>)/k(z<sub>lo</sub>). <strong>Run
               2026-10-06 on RC100 (z 0.6&ndash;2.5, pre-registered before the table was read): non-discriminating</strong>,
-              with ln-ratio 1.11 &plusmn; 0.36 (galaxy bootstrap) against branch (A)&apos;s 1.74 and MOND&apos;s ~1. Post-hoc
+              with ratio 1.11 (galaxy-bootstrap error &plusmn;0.36 on ln of the ratio) against branch (A)&apos;s 1.74 and constant-a&#x2080; MOND&apos;s 1; all three are plain ratios. Post-hoc
               only: fitting a&#x2080; &prop; E(z)<sup>n</sup> gives n = 0.0, with branch (A) at the ~2&sigma; edge of the
               galaxy-bootstrap 95% interval (&plusmn;1.0; the formal &plusmn;0.2 understates it). Deciding the row needs
               N &#8819; 170 galaxies and a measured method floor. Del Popolo &amp; Chan 2024 (arXiv:2405.01841) used the
@@ -356,7 +356,7 @@ export default function ParameterDerivations() {
               coincidence, no H(z) statement&rdquo;) is not actually available:</strong> it requires a&#x2080; to
               be fundamental, which is the MOND position this framework explicitly rejects elsewhere
               (a&#x2080; is described as an <em>emergent</em> scale on this page and on{' '}
-              <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>MOND Unification</Link>).
+              <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>Relation to MOND</Link>).
               An emergent a&#x2080; tied to the coherence transition forces branch (A): a&#x2080;(z) = cH(z)/2&#x03C0;.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>

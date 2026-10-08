@@ -31,17 +31,16 @@ export interface LearningPath {
 export const learningPaths: LearningPath[] = [
   {
     name: 'Beginner',
-    timeEstimate: '~45 min on the short route (step 5\'s summary box, glossary as reference); ~2 h 40 m reading every page in full',
-    desc: 'No physics background needed. Plain language, core concepts only. Step 5 (Honest Assessment) is the site\'s long audit page — on this path, read its "If you read nothing else" box and move on; the full 80-minute read is for when you want the evidence rather than the verdict.',
+    timeEstimate: '~35 min on the short route (step 5\'s summary box); ~2 h reading every page in full',
+    desc: 'No physics background needed. Plain language, core concepts only. Keep the Glossary open alongside for any word you trip on. Step 5 (Honest Assessment) is the site\'s long audit page — on this path, read its "If you read nothing else" box and stop there; the full 80-minute read is for when you want the evidence rather than the verdict. (2026-10-08: The Core Idea moved to Intermediate, where its Ising/Hill-function material belongs, and the Galaxy Curve Plotter took its place; the Glossary is now a companion, not the last step.)',
     color: '#10b981',
     kind: 'difficulty',
     steps: [
       { title: 'Why Synchronism?', href: '/why-synchronism', time: '~8 min' },
       { title: 'First Encounter', href: '/first-encounter', time: '~10 min' },
-      { title: 'The Core Idea', href: '/core-idea', time: '~12 min' },
+      { title: 'Galaxy Curve Plotter', href: '/galaxy-plotter', time: '~6 min: pick a galaxy, follow the three-step guide above the chart' },
       { title: 'What Synchronism Is Not', href: '/what-synchronism-is-not', time: '~9 min' },
       { title: 'Honest Assessment', href: '/honest-assessment', anchor: 'if-you-read-nothing-else', time: '~4 min: the "If you read nothing else" box (the stop on this path); full page ~18,000 words, ~80 min, optional' },
-      { title: 'Glossary', href: '/glossary', time: 'reference: look terms up as needed (~50 min to read in full)' },
     ],
   },
   {
@@ -51,6 +50,7 @@ export const learningPaths: LearningPath[] = [
     color: 'var(--color-accent-blue)',
     kind: 'difficulty',
     steps: [
+      { title: 'The Core Idea', href: '/core-idea' },
       { title: 'The Coherence Function', href: '/coherence-function' },
       { title: 'The γ Parameter', href: '/gamma-parameter' },
       { title: 'Dark Matter Reframed', href: '/dark-matter' },
@@ -70,7 +70,7 @@ export const learningPaths: LearningPath[] = [
     steps: [
       { title: 'Parameter Derivations', href: '/parameter-derivations' },
       { title: 'Compression Action', href: '/compression-action' },
-      { title: 'MOND Unification', href: '/mond-unification' },
+      { title: 'Relation to MOND', href: '/mond-unification' },
       { title: 'CDM Discrimination', href: '/cdm-discrimination' },
       { title: 'Superconductivity (η)', href: '/superconductivity' },
       { title: 'Born Rule Derivation', href: '/born-rule' },
@@ -90,7 +90,7 @@ export const learningPaths: LearningPath[] = [
       { title: 'Measurement Without Observers', href: '/measurement-without-observers' },
       { title: 'Dark Matter Reframed', href: '/dark-matter' },
       { title: 'Galaxy Rotation Curves', href: '/galaxy-rotation' },
-      { title: 'MOND Unification', href: '/mond-unification' },
+      { title: 'Relation to MOND', href: '/mond-unification' },
       { title: 'Quantum Predictions', href: '/quantum-predictions' },
     ],
   },

@@ -114,3 +114,27 @@ scoped instance of that broader need.
 
 Add a one-line sensitivity caveat to `/research-philosophy`'s A2ACW section, parallel to the
 existing specificity caveat, regardless of whether a positive control can actually be built.
+
+---
+
+## THIRD RAISE — 2026-10-08 (maintainer)
+
+A third independent researcher persona (visitor log 2026-10-08, Pass 4) named this the one experiment the site's
+"closest thing to a discovery" (the oracle observation, now the /a2acw lead) needs before it is citable. In 98 days in the
+queue it has been out-competed every time by physics topics with data in hand. That is the efficiency attractor at work,
+not a judgment that the topic matters less. To make the cheap path and the right path the same, here is a **minimal
+design that fits in one session**:
+
+1. **Planted items (positive class = "genuinely novel, not a reparametrization").** Pick 3 results published after the
+   scorer model's training cutoff. Check the cutoff in the model card. Each must be a quantitative claim its own field
+   treats as new, not a re-derivation. Record the arXiv IDs and dates *before* scoring.
+2. **Negatives.** 3 known reparametrizations from this ledger's Bucket 3 (e.g. the compander ≡ MOND ν, Hückel 4n+2,
+   a₀ ≈ cH₀/2π), restated in the same neutral template as the plants.
+3. **Blind template.** Strip author names and venue; same length and register for all 6.
+4. **Scorer.** The same A2ACW audit prompt the program used, run once per item, temperature 0. Record the verdict and the
+   prior art it cites.
+5. **Pre-register** the pass rule before scoring. Suggested: sensitivity ≥ 2/3 on plants and specificity ≥ 2/3 on
+   negatives, or the protocol "calls everything a reparametrization".
+
+n = 6 is underpowered, and the write-up should say so. The point is to get a first measured sensitivity at all; the
+current value is undefined. Stay under the 600 s ceiling: one scorer call per item, in batches.

@@ -267,6 +267,8 @@ RETIRED = [
     (r"(&#x2265;|≥)\s*\+?33\s*\(conservative|conservative threshold\s*(&#x2265;|≥)\s*33", "2026-10-04",
      "the 33 was a guessed discount; galaxy-block bootstrap gives ~+11"),
     (r"Post-hoc; kill triggered;", "2026-10-04", "TEST-04a's registered kill was not met (~1.5 sigma on f sigma_8, underpowered as registered)"),
+    (r"is emergent, not fundamental", "2026-10-08",
+     "a0 = cH0/2pi is a known numerical coincidence (Bucket 3), not shown to be emergent; the density equation has no a0"),
     (r"color: '#2ecc71' }}>CONFIRMED</td>", "2026-09-27",
      "no CONFIRMED status cells on the coupling experiment; B4 is a reparametrization"),
 ]
@@ -282,6 +284,18 @@ REQUIRES = [
     (r"(V<sup>\+2</sup>|V\^\+2|V\u207A\u00B2)[^\n]{0,60}(excluded at|excluded)[^\n]{0,12}(~|about )?1[0-2](\.\d)?(&sigma;|&#x03C3;|\u03C3|σ)",
      r"galaxy|N&nbsp;=&nbsp;129|N = 129|bootstrap",
      "2026-10-07", "V^+2 exclusion: state the unit (one point per galaxy, N = 129, galaxy bootstrap) — researcher persona asked"),
+    # Added 2026-10-08: the landing's refutation table showed TEST-09 "3.3σ" with no convention qualifier (researcher persona).
+    (r"3\.35[^\n]{0,40}3\.75[^\n]{0,40}3\.3(σ|&sigma;|\u03C3)",
+     r"convention|underived|derives|derived",
+     "2026-10-08", "TEST-09 3.3σ holds at B_max = 1/Ω_m only (underived); does not fire at (Ω_m−Ω_b)/Ω_b or Ω_m/Ω_b", 0),
+    # Same-line twin of the +184 rule for table rows (2026-10-08; the 3-line rule passed the landing row on a neighbour's word).
+    (r"(BIC|&#x0394;BIC|&#x394;BIC|&Delta;BIC)\W{0,30}\+184 vs MOND",
+     r"galaxy|N_eff|N<sub>eff|\+11|independen",
+     "2026-10-08", "+184 in a table row: carry 'by point / ~+11 by galaxy' in the same row", 0),
+    # Added 2026-10-08: the GC fork is open only under L2; under the action (L3) the registered point is excluded.
+    (r"fork</Link>, not a kill|came back a fork|clusters are marginally consistent",
+     r"L2|L3|algebraic|action",
+     "2026-10-08", "GC fork is open only under L2; under L3 the registered γ = 2 point at the measured knee is excluded (2026-10-08)"),
 ]
 
 EXEMPT = re.compile(
@@ -289,6 +303,20 @@ EXEMPT = re.compile(
     r"used to|was wrong|argued the threshold|reworded|corrects the|older notes that said|moved from the status note|was &ldquo;",
     re.IGNORECASE,
 )
+
+
+HISTORY_SUMMARY = re.compile(r"revision|history|verbatim|as it read|previous|before today|earlier wording", re.IGNORECASE)
+
+
+def in_history_details(text, pos):
+    """True if pos sits inside an open <details> whose <summary> marks it as revision history.
+    Narrowed 2026-10-08: every <details> was exempt, so live content in collapsible tables (the landing's
+    'Which object each refutation tested') carried an unqualified +184 and 3.3σ past the lint."""
+    open_at = text.rfind("<details", 0, pos)
+    if open_at <= text.rfind("</details>", 0, pos):
+        return False
+    m = re.search(r"<summary[^>]*>(.*?)</summary>", text[open_at:open_at + 600], re.DOTALL)
+    return bool(m and HISTORY_SUMMARY.search(m.group(1)))
 
 
 def main():
@@ -300,7 +328,7 @@ def main():
             for m in re.finditer(pat, text):
                 # Collapsed revision history (<details> … </details>) keeps retired wording verbatim by design
                 # (added 2026-09-14, when the A2ACW card's history moved into one).
-                if text.rfind("<details", 0, m.start()) > text.rfind("</details>", 0, m.start()):
+                if in_history_details(text, m.start()):
                     continue
                 start = text.rfind("\n", 0, m.start()) + 1
                 end = text.find("\n", m.end())
@@ -311,12 +339,17 @@ def main():
                 print(f"{path.relative_to(ROOT.parent)}:{lineno}: retired {date}: {m.group(0)!r}\n    -> {why}")
                 hits += 1
         lines = text.split("\n")
-        for pat, ctx, date, why in REQUIRES:
+        for rule in REQUIRES:
+            # Optional 5th field: context window in lines (added 2026-10-08). One-row-per-line tables let a
+            # qualifier word in a NEIGHBOURING row satisfy the rule ("Galaxy Rotation" two rows down passed an
+            # unqualified +184), so table-row rules use 0 = same line only.
+            pat, ctx, date, why = rule[:4]
+            nctx = rule[4] if len(rule) > 4 else CONTEXT_LINES
             for m in re.finditer(pat, text):
-                if text.rfind("<details", 0, m.start()) > text.rfind("</details>", 0, m.start()):
+                if in_history_details(text, m.start()):
                     continue
                 lineno = text.count("\n", 0, m.start()) + 1
-                window = "\n".join(lines[max(0, lineno - 1 - CONTEXT_LINES):lineno + CONTEXT_LINES])
+                window = "\n".join(lines[max(0, lineno - 1 - nctx):lineno + nctx])
                 if re.search(ctx, window, re.IGNORECASE) or EXEMPT.search(lines[lineno - 1]):
                     continue
                 print(f"{path.relative_to(ROOT.parent)}:{lineno}: unqualified ({date}): {m.group(0)!r}\n    -> {why}")

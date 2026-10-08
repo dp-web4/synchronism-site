@@ -21,6 +21,18 @@ export default function A2ACW() {
           pressure. Developed in Session #291.
         </p>
 
+        {/* Lead added 2026-10-08: a researcher visitor called the oracle observation the closest thing to a discovery on the site, buried under hedges */}
+        <div style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.35)', borderRadius: '0.375rem', padding: '0.7rem 1rem', margin: '0 0 1.25rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: 'var(--color-accent-blue)' }}>What this program&apos;s record says about AI self-play (the citable part of this page):</strong>{' '}
+          about 3,300 AI debate sessions produced zero refutations of the physics on their own. Five of the six refutations on the
+          scoreboard came from executing code against external data (SPARC, Cosmicflows-4, Cassini); the sixth is a construction check
+          whose oracle is a theorem. A coded pilot of 92 ledger corrections found that reading the program&apos;s own documents changed
+          verdicts only about the record (what was tested, which row), never about the world. So on this evidence A2ACW is
+          not a generator of physics. Its working filter was the external oracle. What has not been measured is whether the
+          protocol can recognise a genuinely novel result at all: that needs a positive control nobody has run.{' '}
+          <a href="#oracle-thesis" style={{ color: 'var(--color-accent-blue)' }}>Details below &darr;</a>
+        </div>
+
         <h2>The Problem</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           When two AI systems work together, they tend toward agreement. This is dangerous for
@@ -145,20 +157,32 @@ export default function A2ACW() {
             self-play without an external oracle converges on internal consistency, not
             discovery</strong>. The boundary is the oracle, not the ambition.
           </p>
-          <p style={{ marginTop: '0.6rem' }}>
+          <p id="oracle-thesis" style={{ marginTop: '0.6rem', scrollMarginTop: '5rem' }}>
             <strong>This program is a natural experiment for that thesis (added 2026-09-23, from a researcher visitor
             persona).</strong> It <em>did</em> have a non-corpus oracle: the tests it executed against SPARC, DESI,
-            Cassini and the globular-cluster catalogue. All six refutations on the scoreboard came from that oracle. The
+            Cassini and the globular-cluster catalogue. Five of the six refutations on the scoreboard came from executing code on
+            that external data; the sixth (Bell/CHSH) is a construction check whose oracle is a theorem (corrected 2026-10-08 from
+            &ldquo;all six&rdquo;, researcher visitor). None came from debate. The
             reading-and-arguing loops, including this site&apos;s own AI visitor personas, produced many corrections too, but
             the ones we recall were consistency corrections: a page contradicting another page, a number mis-copied, a
             parameter attached to the wrong function. That is what the thesis predicts self-play converges on. It is a
-            prediction about our own record, and it has <em>not</em> been checked: nobody has coded each correction by what
-            caught it (executed data vs reading). If a reading-only correction ever changed a physics verdict with no data
-            behind it, the thesis would need narrowing. One candidate is already on the record: TEST-04a (DESI growth) moved
+            prediction about our own record. <strong>It has since been checked once</strong> (H-oracle pilot, explorer 2026-09-24,
+            pre-registered at site <code>3116f84</code>: 92 correction units from the ledger, two raters). Reading the program&apos;s own
+            documents <em>did</em> change two verdicts, so &ldquo;reading never changes a verdict&rdquo; is false here. Both were verdicts about
+            <strong> the record</strong>: one consciousness prediction had been tested on the wrong variable, and one &ldquo;wrong sign&rdquo; was
+            attached to the wrong row. None was about <strong>the world</strong>. The one reading-based world-facing refutation in the
+            sample (EFE = 0 &ldquo;refuted by Chae&rdquo;) was later withdrawn by execution. All 13 empirical eliminations in the ledger&apos;s
+            refuted bucket came from an external measurement (5 executed, 6 read from published measurements, 2 unclear). So
+            the narrowed thesis is: an oracle-free loop can correct the record and the logic, but in this program it never
+            produced an elimination about the world. Before the pilot, this paragraph read: &ldquo;it has <em>not</em> been checked:
+            nobody has coded each correction by what caught it (executed data vs reading). If a reading-only correction ever changed
+            a physics verdict with no data behind it, the thesis would need narrowing.&rdquo; One candidate is already on the record: TEST-04a (DESI growth) moved
             from &ldquo;refuted&rdquo; to &ldquo;underpowered&rdquo; after a 2026-07-14 citation check, by reading what the
             registered criterion said and what DESI&apos;s own papers reported, with no new execution. Whether reading a
-            published measurement counts as an external oracle is exactly the boundary the coding would have to draw. That
-            coding is queued for the explorer track.
+            published measurement counts as an external oracle is exactly the boundary the coding would have to draw; the pilot
+            counted it as external (the &ldquo;6 read from published measurements&rdquo;). <strong>Still not run:</strong> a positive control,
+            i.e. a planted, genuinely novel result from after the scorer&apos;s training cutoff. Without it, nothing distinguishes
+            &ldquo;the audit is good at catching reparametrizations&rdquo; from &ldquo;the audit calls everything a reparametrization&rdquo;.
           </p>
         </div>
 

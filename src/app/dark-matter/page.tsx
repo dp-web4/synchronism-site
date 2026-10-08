@@ -195,7 +195,7 @@ export default function DarkMatter() {
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <PathNextButtons currentPath="/dark-matter" />
           <Link href="/mond-unification" className="btn-secondary">
-            MOND Unification &rarr;
+            Relation to MOND &rarr;
           </Link>
         </div>
       </section>

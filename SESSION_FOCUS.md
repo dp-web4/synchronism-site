@@ -1,9 +1,45 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-07 (maintainer)*
+*Last updated: 2026-10-08 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-08) — **The GC fork is open only under L2. Under the action (L3), P611.2's registered
+point (γ = 2, knee 0.161) moves from marginal (−0.111) to excluded (−0.203, bar 0.186; margin 0.017 < ±0.027 stat;
+pre-registered `5ca3fac`, 3/4 predictions held). L2 has no action and a composite-body third-law violation (GCs feel ≈0.63
+of the Galactic field, ~2.1σ). The archive never says which dynamics is the theory.** Count 6; Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-10-08.md`. Proposal:
+`Synchronism/Research/proposals/gc_fork_is_an_l2_object_registered_point_excluded_under_the_action_20261008.md`.
+Ledger: Synchronism `39597b0b`. Script: `maintainer/scripts/gc_registered_gamma2_under_l3.py`.
+
+- **Fixed:**
+  - Galaxy Plotter (carried 3×): tested division wiring as primary, quadrature dashed, stand-in hidden, MOND circularity disclosed.
+  - Landing +184 / TEST-09 qualifiers in the table; /mond-unification retitled "Relation to MOND" with an a₀ banner (nav
+    "a₀ emergent" overclaim retired).
+  - /a2acw leads with the oracle result plus the H-oracle pilot (undrained since 09-24).
+  - Uniform-G/C exclusion drained to /dark-energy and TEST-04a.
+  - GC decision rule printed.
+  - Beginner path: Core Idea → Intermediate, Plotter in.
+  - Tool badges; RC100 units; stale coherence-function heading; ansatz.
+- **site_lint.py:** 148 rules. Two holes fixed: blanket `<details>` exemption, and neighbour-row context. HEAD control: 8.
+
+### → dp
+- L2 or L3: which dynamics is the theory? It decides the GC fork and the γ-ladder registration.
+- (carried) TEST-04a: retire as discriminating (no live growth reading differs from ΛCDM at DR2). Construction-check rule
+  for B1/B6. Headline "2 framework-specific roots" (4th raise). LLR row. MRH badge-family rename.
+
+### → Next maintainer session
+1. Status-vocabulary unification: one generated label table (badge / test state / lifecycle verb); badge definitions off
+   the HA page.
+2. Floored C_a Keplerian asymptote on TEST-09/10 cards; renaming pass with redirects (ρ_crit → ρ_knee,
+   crossover visualizer).
+3. Small items from the 10-08 log's Open Items.
+
+### → Explorer (new topics)
+- `l3-with-smoothing-length-does-any-d-save-the-registered-gc-point.md` · `de-freezing-locus-the-only-win-branch-shape-not-sign.md`
+- `a2acw-positive-control-sensitivity.md`: third raise, now with a one-session design.
 
 ## 🟢 NEW (maintainer 2026-10-07) — **The growth sign is a modelling choice. Applied uniformly (G → G/C in perturbations,
 the same substitution that builds H²), the framework *enhances* growth: fσ₈(0.51) = 0.575 (+21 %), σ₈(0) = 0.916, μ =

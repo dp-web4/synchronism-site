@@ -102,6 +102,13 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'ALFALFA (Arecibo Legacy Fast ALFA) mapped HI 21-cm radio emission from nearby galaxies, providing gas masses and rotation widths. Cross-matching with SDSS gives stellar masses, star formation rates, and large-scale environment metrics. The catalog was the registered dataset for Synchronism’s environment-dependent RAR scatter prediction (TEST-03) — but that test was never run as registered: the R² = 0.14 figure long shown as its result is a Hubble-type/morphology term from a ~171-galaxy SPARC-scale sample, misattributed to this catalog (the (R², p, N) triple quoted was internally impossible; corrected 2026-07-09). The registered environment test was finally executed 2026-07-14 on SPARC offsets vs Cosmicflows-4 densities: r² = 0.0001 — the environment prediction is refuted by execution. (Entry synced 2026-07-17.)',
     learnMore: '/galaxy-rotation',
   },
+  'Ansatz': {
+    term: 'Ansatz',
+    fullName: 'Ansatz (German: "starting point", "approach")',
+    brief: 'An educated guess at the form of an answer, written down first and justified (or not) by whether it works.',
+    explanation: 'Physicists say "ansatz" when they pick a mathematical form because it looks plausible, not because they derived it, and then test it. Synchronism\u2019s tanh(\u03B3\u00B7ln(1+\u03C1/\u03C1_crit)) is an ansatz in this sense: the site calls it "motivated, not derived" on The Coherence Function. Calling something an ansatz is an honest label, not a criticism; the question is always whether the guessed form survives the data. (Entry added 2026-10-08: a beginner visitor met the word on Why Synchronism and the glossary did not have it.)',
+    learnMore: '/coherence-function',
+  },
   'NP2': {
     term: 'NP2',
     fullName: 'New Prediction #2',
@@ -649,7 +656,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Fork',
     fullName: 'Fork — an open question whose answer depends on a choice not yet made',
     brief: 'A result that neither kills nor saves the idea by itself: the outcome depends on a choice the framework has not made yet, and each choice has a price.',
-    explanation: 'The main example is the globular-cluster fork. Globular clusters (tight balls of ~10⁵ stars) are dense enough to test the density switch directly. If the switch has one sharpness everywhere, the clusters rule it out. If the sharpness resets inside each cluster, which the framework had registered as a prediction months earlier, the clusters are marginally consistent, but then “one equation” becomes two. Its badge is Parallel-Paths, not Failed, and the refutation count does not change until the choice is made. The word is used for other open choices too: the force-law fork on the Galaxy Curve Plotter (two ways of wiring coherence into gravity that point opposite ways; the site has not picked one), and the epoch fork on Parameter Derivations (now closed). Not to be confused with the A2ACW “Ambiguity Fork Rate,” a review-process metric. (Entry added 2026-09-15.)',
+    explanation: 'The main example is the globular-cluster fork. Globular clusters (tight balls of ~10⁵ stars) are dense enough to test the density switch directly. If the switch has one sharpness everywhere, the clusters rule it out. If the sharpness resets inside each cluster, which the framework had registered as a prediction months earlier, the clusters are marginally consistent under the algebraic reading (L2), but then “one equation” becomes two; under the framework’s action (L3) the registered setting is excluded too, narrowly (2026-10-08), and which reading is the theory has not been decided. Its badge is Parallel-Paths, not Failed, and the refutation count does not change until the choice is made. The word is used for other open choices too: the force-law fork on the Galaxy Curve Plotter (two ways of wiring coherence into gravity that point opposite ways; the site has not picked one), and the epoch fork on Parameter Derivations (now closed). Not to be confused with the A2ACW “Ambiguity Fork Rate,” a review-process metric. (Entry added 2026-09-15.)',
     learnMore: '/honest-assessment#gc-fork',
   },
   'null-class': {

@@ -164,7 +164,7 @@ export default function CriticalDensity() {
             Next: All Parameter Derivations &rarr;
           </Link>
           <Link href="/mond-unification" className="btn-secondary">
-            MOND Unification &rarr;
+            Relation to MOND &rarr;
           </Link>
         </div>
       </section>

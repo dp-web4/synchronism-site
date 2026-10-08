@@ -187,8 +187,10 @@ export default function CoherenceFunction() {
         </div>
 
         <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
-          <strong style={{ color: '#ef4444' }}>The substitution above has never itself been evaluated
-          (2026-08-04):</strong>{' '}
+          <strong style={{ color: '#ef4444' }}>Most galaxy numbers on this site do not use the substitution above.</strong>{' '}
+          <em>(This heading read &ldquo;has never itself been evaluated (2026-08-04)&rdquo; until 2026-10-08, when a graduate-physics
+          visitor noticed the page itself reports the result. The density-keyed form has since been run head-to-head on SPARC:
+          free γ goes to 0.046 and it loses to the acceleration-keyed form by ΔBIC +2843.)</em>{' '}
           every quantitative galaxy result on this site &mdash; γ = 0.489, the ΔBIC form-selection table, the
           Cassini/SPARC squeeze &mdash; was computed on acceleration (g<sub>obs</sub>, μ-form), not ρ (see the
           2026-09-08 &ldquo;Which variable the fit actually used&rdquo; note above; this sentence previously said

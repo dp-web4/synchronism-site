@@ -46,7 +46,7 @@ export default function MondComparator() {
               <strong>Status: Reparametrization.</strong> This is the same numerical coincidence Milgrom noted
               (1/2&#x03C0; = 0.159 vs 1/6 = 0.167), not a derivation. The Hubble-sphere calculation the archive
               describes gives cH&#x2080;/2, not cH&#x2080;/2&#x03C0;. It is 13% below the observed 1.2.
-              See <Link href="/mond-unification">MOND Unification</Link>.
+              See <Link href="/mond-unification">Relation to MOND</Link>.
             </p>
           </div>
         </div>

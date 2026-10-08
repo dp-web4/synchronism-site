@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
+import ValidationBadge from '@/components/ValidationBadge';
 
 type SortKey = 'name' | 'r' | 'category';
 type SortDir = 'asc' | 'desc';
@@ -77,6 +78,13 @@ export default function ChemistryCorrelationExplorer() {
     <>
       <Breadcrumbs currentPath="/chemistry-correlation-explorer" />
       <h1>Chemistry Correlation Explorer</h1>
+      {/* Badge added 2026-10-08: graduate-physics visitor found this tool unbadged on page and index */}
+      <ValidationBadge status="reparametrization" label="r values reflect density-monotonicity (a 2-parameter polynomial in Z matches); γ assignments unpublished, so r may be circular" />
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.4rem' }}>
+        <strong>Read the r values with this caveat first:</strong> the per-material γ (or N<sub>corr</sub>) assignment table has not been
+        published. If γ was set per material with the property in view, a high r between γ and that property carries no
+        information. Until the assignments are published, treat every r on this page as unverified.
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

@@ -34,8 +34,9 @@ export default function CoreIdea() {
         <strong style={{ color: '#10b981' }}>Beginner? You can stop here.</strong> The takeaway: the equation turns
         density into a coherence number between 0 and 1. Tested on galaxies, density barely mattered, and the version
         that fits turned out to be MOND&apos;s formula in other clothes. The rest of this page is the
-        deeper math and is optional &mdash; next on the Beginner path:{' '}
-        <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not &rarr;</Link>
+        deeper math and is optional. (Since 2026-10-08 this page is the first step of the Intermediate path; the Beginner path
+        goes from First Encounter to the{' '}
+        <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter &rarr;</Link>)
       </div>
 
       <div className="content-width" style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--color-text-muted)', margin: '0 0 0.75rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '0.25rem' }}>
@@ -201,7 +202,7 @@ export default function CoreIdea() {
           <strong style={{ color: '#10b981' }}>Beginner path: you can stop here.</strong> Everything above is the plain-words version. From this
           heading down the page compares the curve with Hill functions, Naka&ndash;Rushton curves and Landau theory for readers with a physics
           background. The one sentence to take away: when the data are allowed to pick the curve, it barely responds to density at all, the
-          opposite of the idea. Next: <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not (Step 4)</Link>.
+          opposite of the idea. Beginner path: <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter (step 3)</Link>.
         </div>
         <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--color-text-muted)', margin: '0 0 0.75rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '0.25rem' }}>
           Intermediate &mdash; physics background helpful from here down

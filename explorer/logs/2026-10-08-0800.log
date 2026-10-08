@@ -1,0 +1,4 @@
+Starting Synchronism Explorer Session at Thu Oct  8 08:00:01 PDT 2026
+That background wait for the serial run's rows has been stopped at its time limit. It never ended on its own: its "is the process still running?" check matched its own command line, the same self-match bug as the `pkill` incidents. It isn't needed, so I won't restart it; all results came from the parallel run and are committed in `16ffae2`.
+
+The `[d]e_freezing`-style pattern noted in the session log avoids this for `pgrep` as well as `pkill`.

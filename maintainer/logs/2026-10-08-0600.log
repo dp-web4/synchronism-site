@@ -1,0 +1,45 @@
+Starting Synchronism Maintainer Session at Thu Oct  8 06:00:01 PDT 2026
+I made one research-level finding today and pushed the site fixes. Site repo: `5ca3fac` (pre-registration), then `c6ecffd`. Research repo: `39597b0b`. The build passes and the site lint shows 0 hits across 148 rules.
+
+**WAKE: yes, one research gap.** The landing page advertises the globular-cluster test as the site's "one unresolved question", and it isn't open under the theory's own action.
+- **The gap:** the earlier rerun under the action (L3) covered only γ = 0.489. Nobody had run the registered γ = 2 point there.
+- **What I ran:** that point, pre-registered before writing the script. All controls passed: the simpler L2 reading reproduced the published row on all 27 grid points.
+- **Result:** at the measured knee the residual moves from −0.111 (marginal) to **−0.203 (excluded)**. That is only 0.017 past the 0.186 bar, less than the ±0.027 stat error, so it is a narrow exclusion. 5 of the 42 clusters show net outward gravity.
+- **Predictions:** one of my four failed. L3 opens two "ok" knee ranges that no document names.
+- **What it means:** the registered prediction survives only under L2. L2 has no action and breaks Newton's third law for clusters, which then feel about 0.63 of the galaxy's pull (a ~2σ tension). The archive has never said whether L2 or L3 is the theory.
+- **Count:** unchanged at 6; Bucket 0 = 0.
+- **Proposal and ledger note:** `Research/proposals/gc_fork_is_an_l2_object_…_20261008.md`, plus a back-annotation block in PREDICTIONS.md.
+
+**Site fixes.** All four visitors rated the site honest. Their complaints were qualifiers that got dropped on the way from the deep pages to the landing page and the tools.
+- **Galaxy Plotter** (carried three sessions): the main curve now uses the gravity-divided-by-C wiring the tests use, which gives a flat 3.17× boost with the wrong shape. The other wiring is shown dashed, and the hand-drawn stand-in is hidden behind a checkbox. I also disclosed that the MOND curve partly builds in its own fit and levels off at 0.93 V_flat.
+- **Landing page:** the table now gives "+184 by point / ≈ +11 by galaxy" and says TEST-09's 3.3σ holds only under a ceiling no document derives. The cluster sentence now says the question is open only under L2.
+- **/mond-unification** is retitled "Relation to MOND", with a banner saying the density equation contains no a₀. The navigation description "a₀ is emergent, not fundamental" was an overclaim, and that phrase is now blocked by the lint.
+- **/a2acw** now leads with the result that 5 of the 6 refutations came from running code on outside data and none from debate. The explorer's 09-24 pilot (the 92-correction coding check) had never reached this page, so it still said the claim was unchecked. It now carries that result.
+- **Explorer results added to the site:** the uniform-G/C growth reading is excluded by existing data, now stated on /dark-energy and the TEST-04a card.
+- **Smaller fixes:**
+  - Honest Assessment now prints the pass/marginal/excluded rule beside the cluster table.
+  - The beginner path drops Core Idea (moved to Intermediate) for the Galaxy Plotter.
+  - Two tools are badged.
+  - The redshift-test numbers now use one set of units.
+  - A stale "never evaluated" heading is fixed.
+  - The Glossary has an "ansatz" entry.
+
+**The lint had two holes, which is how the landing table slipped through:**
+- It skipped every `<details>` block, a rule meant for revision history, and the live landing table is one.
+- It accepted a qualifying word from a neighbouring table row.
+
+Both are fixed. The new rules flag 8 problems on the old commit and 0 now.
+
+**Not changed:** the "Home / / Page" breadcrumb renders correctly on the live site, so it was an artifact of how the visitor fetched the page. The Audited-Negative wording the visitor quoted doesn't appear anywhere in the source.
+
+**New explorer topics:**
+- Can a density smoothing length rescue the registered cluster point under L3?
+- Can the dark-energy sector's one-parameter freezing curve be told apart from other freezing models before DESI DR3?
+- I also re-raised the A2ACW positive control, queued 98 days, this time with a one-session minimal design.
+
+**Decisions for dp:**
+- Is the theory L2 or L3? That decides the cluster question.
+- Should TEST-04a be retired? No live growth reading now differs from ΛCDM at DR2 precision.
+- The headline split "2 framework-specific roots + 4 others" has now been asked for four times.
+
+The playwright MCP server failed to connect (npx not found), and Google Calendar and Google Drive need authorization in claude.ai connector settings. Nothing today needed them.

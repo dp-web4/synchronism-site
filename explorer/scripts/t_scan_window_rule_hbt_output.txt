@@ -1,0 +1,34 @@
+== MC check of f = 2w and g2(0) per rule ==
+w=0.0001   R0: f=0.0002025 g2=0  R1: f=0.000175 g2=0.0006998  R2: f=0.0002125 g2=0.0001435  R3: f=0.000205 g2=0 | analytic f(w<=1/2)=2w=0.0002
+w=0.001    R0: f=0.00199 g2=0  R1: f=0.00201 g2=0.008008  R2: f=0.002022 g2=0.001347  R3: f=0.001992 g2=0 | analytic f(w<=1/2)=2w=0.002
+w=0.01     R0: f=0.02022 g2=0  R1: f=0.02031 g2=0.07802  R2: f=0.02016 g2=0.01353  R3: f=0.0205 g2=0 | analytic f(w<=1/2)=2w=0.02
+w=0.1      R0: f=0.2003 g2=0  R1: f=0.2011 g2=0.5575  R2: f=0.2012 g2=0.1346  R3: f=0.2 g2=0 | analytic f(w<=1/2)=2w=0.2
+w=0.5      R0: f=1 g2=0  R1: f=1 g2=1  R2: f=1 g2=0.6674  R3: f=1 g2=nan | analytic f(w<=1/2)=2w=1
+w=3        R0: f=1 g2=0  R1: f=1 g2=1  R2: f=1 g2=1  R3: f=1 g2=nan | analytic f(w<=1/2)=2w=6
+w=1000     R0: f=1 g2=0  R1: f=1 g2=1  R2: f=1 g2=1  R3: f=1 g2=nan | analytic f(w<=1/2)=2w=2000
+
+== Data: Schweickert+2018 raw g2(0) = 7.50e-05 +- 1.6e-05; 2-sigma ceiling 1.07e-04 ==
+R2 numeric g2/f at w=0.01: 0.666 (analytic 0.667)
+R1 numeric g2/f at w=0.01: 3.844 (analytic 4)
+  tau_w = photon duration 125 ps   R1: f <= 2.67e-05 -> T_scan >= 9.35e-06 s (7.5e+04 x tau_w)
+  tau_w = photon duration 125 ps   R2: f <= 1.60e-04 -> T_scan >= 1.56e-06 s (1.2e+04 x tau_w)
+  tau_w = coincidence window 5 ns  R1: f <= 2.67e-05 -> T_scan >= 3.74e-04 s (7.5e+04 x tau_w)
+  tau_w = coincidence window 5 ns  R2: f <= 1.60e-04 -> T_scan >= 6.23e-05 s (1.2e+04 x tau_w)
+
+== Archive candidate clocks under R1/R2 (tau_w = 125 ps) ==
+  Planck tick                        T=5.39e-44s w=2.3e+33: f=1.000, g2(R1)=1.00, g2(R2)=1.00  vs data 7.5e-05
+  electron Compton h/mc^2            T=8.09e-21s w=1.5e+10: f=1.000, g2(R1)=1.00, g2(R2)=1.00  vs data 7.5e-05
+  optical Bohr period (~500 THz)     T=2.00e-15s w=6.2e+04: f=1.000, g2(R1)=1.00, g2(R2)=1.00  vs data 7.5e-05
+  hyperfine Bohr period (9.2 GHz)    T=1.09e-10s w=1.1e+00: f=1.000, g2(R1)=1.00, g2(R2)=0.99  vs data 7.5e-05
+
+== Global persistent clock: pulses every 12.5 ns, emission jitter exp(125 ps) ==
+  T=1e-09s  g2(0)=0.213  side peaks k=1,2,5,10,20 (norm. to independent): 1.141, 0.860, 1.137, 0.859, 0.859
+  T=1e-07s  g2(0)=2.04e-14  side peaks k=1,2,5,10,20 (norm. to independent): 0.500, 1.000, 1.500, 1.000, 2.000
+  T=1e-06s  g2(0)=1.65e-13  side peaks k=1,2,5,10,20 (norm. to independent): 0.050, 0.100, 0.250, 0.500, 1.000
+  T=1e-05s  g2(0)=-2.01e-12  side peaks k=1,2,5,10,20 (norm. to independent): 0.005, 0.010, 0.025, 0.050, 0.100
+  T=1e-04s  g2(0)=-8.87e-12  side peaks k=1,2,5,10,20 (norm. to independent): 0.001, 0.001, 0.003, 0.005, 0.010
+
+== Post-hoc (not in PREREG): long photons, Farrera+2016 Nat. Commun. 7, 13556 ==
+  R1: tau_w = 1 us, f <= 0.053 -> T_scan >= 3.81e-05 s
+  R2: tau_w = 1 us, f <= 0.315 -> T_scan >= 6.35e-06 s
+  If the whole rise dg2 = 0.07 were the R2 mixed-window term (slope 4/(3T) per unit tau): T ~ 1.9e-05 s -- not excluded by Schweickert R2 bound (>= 1.56e-6 s); dark counts are the stated cause

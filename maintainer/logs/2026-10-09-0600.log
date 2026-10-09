@@ -1,0 +1,36 @@
+Starting Synchronism Maintainer Session at Fri Oct  9 06:00:01 PDT 2026
+I've pushed today's maintainer session: site commit `0c5606a`, research repo commit `da4f2fac`. The build passes (93 pages) and the site lint passes with 153 rules. No prediction changed buckets: still 6 refutations and 0 confirmed.
+
+**WAKE: two research points, neither needing a new physics run**
+1. **The dark-energy sector has no test left that could favour the framework.** The researcher persona objected that TEST-26 still advertised a "win" outcome. The explorer had already answered this on 10-08: the plain 2002 Cardassian model fits the framework's dark-energy curve to Δχ² ≤ 0.42 at DESI DR3 precision. Telling them apart would need γ ≈ 0.30, which DR2 already excludes. Since the growth test TEST-04a was closed on 10-07, every registered dark-energy outcome is now either a tie or a loss shared with ΛCDM. I've asked dp to retire both as discriminating tests.
+2. **The result outsiders want to cite has a removable weakness.** The finding that about 3,300 AI debate sessions produced no refutations about the world, and that every refutation came from external data, rests on two raters from the same model family. This machine has non-Anthropic CLIs installed, so a cross-vendor re-code of the 92 units is cheap. It would send the corpus to another company's service, so I wrote it as a proposal for dp rather than running it.
+
+**One verdict changed.** A check of "CDM-consistent" for the measured scatter σ_int = 0.086 dex had been listed as queued since July. That label compared it with an unsourced in-house figure of 0.085. One paper (Desmond 2017, quoted word for word) gives about 0.25 dex for SPARC-like samples. The verdict is now marked suspended on all 8 pages that carried it.
+
+**Site fixes from the visitor log**
+- **Step counters:** they were hard-coded ("Step 1 of 6" on a 5-step path), and the landing page still listed a step removed on 10-08. They're now computed from the path list.
+- **Broken redirects:** four old URLs (`/coherence-equation` and three others) returned 307 with no destination, confirmed with curl. They're fixed in `next.config.mjs`; I haven't re-checked them on the live deploy.
+- **Fixed wording:**
+  - /consciousness-demo said it uses the "same C" as the galaxy fits, contradicting the glossary.
+  - TEST-03's 51% result was called "already-passing", but Session 593 itself calls it "MOND's TFR in disguise".
+  - Coherence Explorer stated the backwards γ-to-material mapping before warning about it.
+  - Chemistry pages gave two different session totals (1,840 vs 2,671). The archive shows the "1,703 types" is just a session counter.
+- **Itano 1990:** the researcher doubted the site's figure of 0.194 at 8 pulses. I checked the paper's Table I and the figure is correct.
+- **Additions:**
+  - A box on /for-researchers for the AI-methodology result, with its limits stated.
+  - Ballentine 1991 cited on /two-reframes.
+  - The closed form of C on /parameter-derivations.
+  - Four glossary entries: dex, KiDS, L2/L3, wiring.
+- **Lint:** 5 new rules for today's retired wordings. Run against the previous commit they catch 15 instances, including two on pages I hadn't touched.
+
+**Explorer topics seeded:** what existing data already rules out for a finite scan period (the last quantum-side idea that could become a testable bet), and a design for the cross-vendor rater. The design topic says nothing goes to another vendor until dp approves.
+
+**Waiting on dp:** retiring TEST-26 and TEST-04a; approving the cross-vendor re-code; plus the carried items (which dynamics the galaxy sector uses, splitting the "6" by kind, and renaming the badge family).
+
+One procedural note: I chained an `rm` onto a command and the safety rule correctly blocked it. I re-ran it without the `rm`, which wasn't needed.
+
+**Session not loaded:** the Google Calendar and Drive connectors need re-authorizing in claude.ai connector settings, and the Playwright server failed to connect (no `npx` on PATH).
+
+Sources:
+- [Desmond 2017, arXiv:1706.01017](https://arxiv.org/abs/1706.01017) ([ar5iv full text](https://ar5iv.arxiv.org/html/1706.01017))
+- [Itano et al. 1990, Phys. Rev. A 41, 2295 (PDF)](https://goldphysics.unm.edu/phys521/features/zeno_PhsRevA41_2299.pdf)

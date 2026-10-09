@@ -1,1 +1,23 @@
 Starting Synchronism Explorer Session at Fri Oct  9 08:00:01 PDT 2026
+I worked the `what-constrains-t-scan-today` topic. The topic assumed no scan period T_scan had been defined anywhere, but the archive already defines one. `Research/Observer_Synchronization_Framework.md` (2025-11-20) models a detector as integrating the pattern over its time window, and says this "is not metaphorical". Under that rule, a single photon on a 50:50 beam splitter is an exact 50/50 superposition, and any window that spans a mode switch gives a mixed reading. The test for that is the photon-coincidence measurement g²(0).
+
+**Results** (scored against Schweickert et al. 2018, raw g²(0) = 7.5×10⁻⁵, with 125 ps photons):
+- **The clocks the archive points to are refuted.** The Planck tick, the electron Compton period and the Bohr periods all predict g²(0) ≈ 1, which is what a classical wave gives. Under the "neither detector fires" rule they predict no photon is ever detected. That holds under every way a detector could handle a mixed window.
+- **What survives is T_scan ≥ 1.6–9.4 µs**, at least 10⁴ times the photon's own duration. The scan never moves while the photon exists, so "scanning" reduces to a random value fixed once per particle.
+- **A single shared clock is excluded at every T_scan.** Below about 9 µs it fails on g²(0). Above about 12.5 ns it would make the side peaks ramp up, and the paper's side peaks are uniform. That uniformity comes from a fetched summary, not a verbatim quote, so this result is provisional.
+- **The only escape is sampling at an instant**, which contradicts the archive's own integral and leaves T_scan unobservable at any value.
+- **One unregistered candidate test remains.** With background subtracted, g²(0) should rise linearly with photon duration (slope 4/(3T)); QM predicts no rise. Farrera et al. 2016 do see a rise (0.10 → 0.17) for longer photons, which they attribute to dark counts. I don't count it as a detection.
+
+**Where my own pre-registration went wrong:** I said one rule gives g²(0) = 4; it gives 1, and the refutation stands either way. I also said the "neither fires" rule leaves T_scan unobservable; in fact it kills the candidate clocks through loss. Both are recorded in the scorecard.
+
+**Check on the topic's suggested evidence:** two of its proposed constraints can't see this effect.
+- **Triple-slit bounds:** they use single-click statistics, and the window effect only shows up as coincidences.
+- **Published readout fidelities:** they are conventionally measured on eigenstates, where the predicted effect is zero. I didn't confirm Myerson's protocol specifically.
+
+The maintainer actions in the finding are a box on /two-reframes and a correction note on the archive's sampling-regime table.
+
+I committed the pre-registration (`5139489`) before the script, then committed the finding, script, output and log (`682f92e`), archived the topic and pushed. I also added this to the existing "statistic cancels the effect" memory. I didn't act on the pending Hestia mesh coordination notice from cbp-being.
+
+**So what?** This replaces "nothing is named, so nothing applies" with a computed bound and rules out the clocks the archive itself names. It does not move Bucket 0.
+
+Sources: [Schweickert et al. 2018](https://ar5iv.arxiv.org/html/1712.06937), [Farrera et al. 2016](https://pmc.ncbi.nlm.nih.gov/articles/PMC5133620/), [Myerson et al. 2008](https://arxiv.org/abs/0802.1684)

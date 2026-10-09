@@ -79,7 +79,7 @@ export default function ChemistryCorrelationExplorer() {
       <Breadcrumbs currentPath="/chemistry-correlation-explorer" />
       <h1>Chemistry Correlation Explorer</h1>
       {/* Badge added 2026-10-08: graduate-physics visitor found this tool unbadged on page and index */}
-      <ValidationBadge status="reparametrization" label="r values reflect density-monotonicity (a 2-parameter polynomial in Z matches); γ assignments unpublished, so r may be circular" />
+      <ValidationBadge status="reparametrization" label="r values reflect density-monotonicity (a 2-parameter polynomial in Z matches); γ assignments unpublished, so r carries no evidence either way until the procedure is published" />
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.4rem' }}>
         <strong>Read the r values with this caveat first:</strong> the per-material γ (or N<sub>corr</sub>) assignment table has not been
         published. If γ was set per material with the property in view, a high r between γ and that property carries no
@@ -257,8 +257,12 @@ export default function ChemistryCorrelationExplorer() {
         </div>
 
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-          Showing {sorted.length} of 23 curated phenomena. Full dataset covers 1,703 phenomenon
-          types across 2,671 chemistry sessions.
+          Showing {sorted.length} of 23 curated phenomena. The archive&apos;s &ldquo;1,703 phenomenon
+          types&rdquo; is not a count of distinct phenomena: from session #138 on, every chemistry session was logged as
+          exactly one new type, so the type number equals the session number minus 137 with zero exceptions over 824
+          checked pairs. 1,703 is that counter at session #1,840; the corpus ran to 2,671 sessions, and pairing 1,703 with
+          2,671 was a partial-update error in the archive (found 2026-10-09 when a visitor saw 1,840 here and 2,671 on
+          another page; source: whitepaper chemistry section, &ldquo;phenomenon_type = session &minus; 137&rdquo;).
         </p>
       </section>
 

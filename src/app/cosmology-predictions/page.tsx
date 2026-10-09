@@ -139,7 +139,7 @@ export default function CosmologyPredictions() {
             <ValidationBadge status="untested" label="TEST-03 Never Run — TEST-05 Tie Dissolved 2026-07-15 (discriminator, never run as registered)" />
           </div>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            On the ALFALFA-SDSS cross-match: σ<sub>int</sub> = 0.086 dex (CDM-consistent) — a figure that
+            On the ALFALFA-SDSS cross-match: σ<sub>int</sub> = 0.086 dex (equal to the source session&apos;s own CDM figure; the first external ΛCDM benchmark, ~0.25 dex, disagrees, so the CDM-consistency verdict is suspended) — a figure that
             belongs to the <em>optimal quality cut, N = 677</em>, not the full sample (N = 14,435 full-sample
             value is 0.118 dex; sample splice corrected 2026-07-10). The
             p = 5×10<sup>−6</sup>, R² = 0.14 environment-detection figure previously shown here is not a

@@ -690,7 +690,9 @@ export default function GalaxyPlotter() {
             The <span style={{ color: '#6b7280' }}>dashed line</span> is what rotation curves
             should look like with only visible matter (stars + gas). The
             <span style={{ color: '#38bdf8' }}> blue dots</span> are what we actually observe.
-            The gap is the &ldquo;dark matter problem.&rdquo;
+            The gap is the &ldquo;dark matter problem.&rdquo; (The dashed curve treats the disk&apos;s mass as if it were
+            spherical, which runs roughly 15&nbsp;% low near the peak compared with a true thin disk; the gap at large radius,
+            which is the argument, survives that.)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
             The <span style={{ color: '#8b5cf6' }}>solid violet curve</span> is Synchronism&apos;s real
@@ -706,7 +708,7 @@ export default function GalaxyPlotter() {
             The <span style={{ color: '#22c55e' }}>green dashed curve</span> is MOND (Modified
             Newtonian Dynamics) using its real simple-&#x03BD; interpolating function and the acceleration
             scale a&#x2080; &#x2248; 1.2&times;10&#x207B;&#xB9;&#x2070; m/s&sup2;, on a mass fixed by the baryonic
-            Tully&ndash;Fisher relation &mdash; no per-galaxy tuning at all. <strong>The MOND curve has a circularity of its
+            Tully&ndash;Fisher relation &mdash; no fitted parameters, though the mass itself is read off each galaxy&apos;s plateau. <strong>The MOND curve has a circularity of its
             own</strong> (disclosed 2026-10-08 after a researcher visitor checked it): its baryonic mass comes from the empirical BTFR,
             M<sub>b</sub> = 47&middot;V<sub>flat</sub>&#x2074;, so part of its agreement with V<sub>flat</sub> is built in. The 47 is also not exactly
             consistent with the a&#x2080; used: 1/(G a&#x2080;) = 62.8 M<sub>&#x2609;</sub>/(km/s)&#x2074;, so the green curve levels off at

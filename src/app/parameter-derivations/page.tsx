@@ -124,6 +124,13 @@ export default function ParameterDerivations() {
               loop: it is evaluated directly at the input ρ with no fixed-point iteration. The Ising
               tanh is derived; this tanh is chosen. These are structurally different justifications.
             </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem', marginTop: '0.5rem' }}>
+              <strong>Closed form (added 2026-10-09, graduate-physics visitor):</strong> with x = &rho;/&rho;<sub>crit</sub>,
+              tanh(&gamma; ln(1+x)) = [(1+x)<sup>2&gamma;</sup> &minus; 1] / [(1+x)<sup>2&gamma;</sup> + 1] exactly (checked to
+              10<sup>&minus;12</sup>). Limits: C &asymp; &gamma;x for small x, and 1 &minus; C &asymp; 2x<sup>&minus;2&gamma;</sup> for large x.
+              At &gamma; = &frac12; it is x/(x+2), MOND&apos;s simple &mu; with the scale doubled. It is a smooth sigmoid in (1+x)<sup>2&gamma;</sup>,
+              analytic for every x &gt; &minus;1: a crossover (a compander), with no critical point anywhere.
+            </p>
             <div style={{ background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
               <strong style={{ color: '#fbbf24' }}>Badge upgraded 2026-09-10 from &ldquo;Motivated Choice&rdquo; to
               &ldquo;Reparametrization&rdquo; &mdash; this is the strongest reparametrization on the site and it was

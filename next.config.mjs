@@ -3,6 +3,13 @@ const nextConfig = {
   reactStrictMode: true,
   async redirects() {
     return [
+      // 2026-10-09: page-level redirect() in a statically rendered page ships a 307 with NO
+      // Location header on Vercel (curl-verified on all four below; only /failures, which also
+      // has a config rule, worked). Config rules are resolved before app routes, so these fix it.
+      { source: '/coherence-equation', destination: '/equation-walkthrough', permanent: false },
+      { source: '/bullet-cluster', destination: '/dark-matter-failure', permanent: false },
+      { source: '/getting-started', destination: '/first-encounter', permanent: false },
+      { source: '/test-02-wide-binaries', destination: '/wide-binaries', permanent: false },
       // /getting-started has its own page (src/app/getting-started/page.tsx, redirects to
       // /first-encounter) which this config-level rule was silently shadowing — Next.js
       // resolves next.config.js redirects before app routes, so the page.tsx never fired.

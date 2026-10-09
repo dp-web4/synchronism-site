@@ -269,6 +269,16 @@ RETIRED = [
     (r"Post-hoc; kill triggered;", "2026-10-04", "TEST-04a's registered kill was not met (~1.5 sigma on f sigma_8, underpowered as registered)"),
     (r"is emergent, not fundamental", "2026-10-08",
      "a0 = cH0/2pi is a known numerical coincidence (Bucket 3), not shown to be emergent; the density equation has no a0"),
+    # --- retired 2026-10-09 (maintainer): hard-coded path totals; TEST-26 win branch; TEST-03 "passing"; same-C; CDM-consistent
+    (r"Beginner Path[^<\n]{0,20}Step \d of \d", "2026-10-09",
+     "step totals are computed from lib/paths.ts (PathNav / beginnerLabel); hard-coded '1 of 6' sat on a 5-step path"),
+    (r"not impossible by construction|wins only if\s+the data move", "2026-10-09",
+     "TEST-26 has no framework-specific win branch: wCDM fits the locus to dchi2 <= 0.42 at DR3 (explorer 10-08)"),
+    (r"already-passing result", "2026-10-09", "the 51% TFR result is an in-sample MOND-TFR fit (S593), not a framework prediction"),
+    (r"same coherence value <strong>C\(&rho;\)</strong> used everywhere", "2026-10-09",
+     "three C's: the galaxy fits use C_g/C_a, not C_rho; see Which C?"),
+    (r"<strong>CDM-consistent</strong>|\(CDM-consistent[,)]|dex: CDM-consistent", "2026-10-09",
+     "0.086 matches only the source session's own 0.085; Desmond 2017 abundance matching gives ~0.25 dex; verdict suspended"),
     (r"color: '#2ecc71' }}>CONFIRMED</td>", "2026-09-27",
      "no CONFIRMED status cells on the coupling experiment; B4 is a reparametrization"),
 ]

@@ -26,11 +26,15 @@ export default function DarkEnergy() {
           &Lambda;CDM too. It is a live position that no data can refute without refuting &Lambda;CDM; it is not a
           discriminating one (corrected 2026-09-27 from &ldquo;the framework&apos;s one live falsifiable position&rdquo;). Read at the local density (the framework&apos;s own postulate), existing galaxy clustering data already pin
           &gamma; to &frac12; (box below), so there is nothing left for DR3 to decide. On the mean-density reading: at DESI DR3 it is killed if the
-          crossing holds, tied if the data sit at &Lambda;CDM (&gamma;&nbsp;=&nbsp;&frac12;), and it wins only if
-          the data move into the quadrant it allows (w&#x2080;&nbsp;&gt;&nbsp;&minus;1 with w&#x2090;&nbsp;&gt;&nbsp;0,
-          or the phantom mirror) at a &gamma; measurably away from &frac12; &mdash; unlikely on current data, but not
-          impossible by construction (corrected 2026-09-14 from &ldquo;never won&rdquo;, the same fit-versus-selection
-          slip the archive corrected for the galaxy sector on 2026-07-29). This page shows the construction, what it predicts, how
+          crossing holds and tied if the data sit at &Lambda;CDM (&gamma;&nbsp;=&nbsp;&frac12;). <strong>It has no
+          win branch at DR3 either</strong> (executed 2026-10-08, pre-registered <code>f3e045e</code>): if the data move into the
+          freezing quadrant it allows, the 2002 constant-w Cardassian (wCDM, same parameter count) fits the framework&apos;s
+          curve to &Delta;&chi;&sup2;&nbsp;&le;&nbsp;0.42 at every DR2-allowed &gamma;. Telling the two apart at 2&sigma; would need
+          a 9.3&sigma; departure from &Lambda;, i.e. &gamma;&nbsp;&asymp;&nbsp;0.30, which DR2 already excludes at
+          &Delta;&chi;&sup2;&nbsp;=&nbsp;137. A freezing detection would select &ldquo;freezing dark energy&rdquo;, not this
+          family. (Corrected 2026-10-09; this sentence previously read &ldquo;wins only if the data move into the quadrant it allows&hellip; not impossible by
+          construction&rdquo;, 2026-09-14. That sentence was right that a tie-on-fit can win on selection in principle, and
+          wrong that the shape could be resolved: it is a level difference, not a shape difference, at DR3 precision.) This page shows the construction, what it predicts, how
           the covariant check sharpened the verdict, and exactly what evidence would change it.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
@@ -75,7 +79,9 @@ export default function DarkEnergy() {
           1/C&nbsp;=&nbsp;1&nbsp;+&nbsp;2&rho;<sub>crit</sub>/&rho;<sub>m</sub>, i.e. &Lambda;CDM <em>(notation warning, added 2026-10-08 for cosmologists: on this page &rho;<sub>crit</sub> is the framework&apos;s coherence <strong>knee</strong>, a free parameter, not the critical density 3H&sup2;/8&pi;G. Calibrated so that C<sub>0</sub> = &Omega;<sub>m</sub>, it equals &rho;<sub>&Lambda;</sub>/2, so &ldquo;&rho;<sub>DE</sub> = 2&rho;<sub>crit</sub>&rdquo; means &rho;<sub>DE</sub> = &rho;<sub>&Lambda;</sub>, not &Omega;<sub>DE</sub> = 2)</em>; at high density it
           tends to the modified-polytropic Cardassian with q&nbsp;=&nbsp;1 and n&nbsp;=&nbsp;1&minus;2&gamma; at low
           density it tends to a constant &rho;<sub>DE</sub>&nbsp;=&nbsp;&rho;<sub>crit</sub>/&gamma; (a &Lambda;-like
-          future, which the Cardassian family does not have unless n&nbsp;=&nbsp;0). Neither the archive nor this site
+          future, which the Cardassian family does not have unless n&nbsp;=&nbsp;0). At DR3 precision it is
+          observationally indistinguishable from the original constant-w Cardassian (&Delta;&chi;&sup2;&nbsp;&le;&nbsp;0.42,
+          explorer 2026-10-08), which makes the prior-art claim stronger than &ldquo;same class&rdquo;. Neither the archive nor this site
           cited that literature before a visiting researcher pointed it out on 2026-09-14; it matters because
           Cardassian models given fluctuations were already found to over-produce the late integrated Sachs&ndash;Wolfe
           effect everywhere except a small neighbourhood of &Lambda;CDM (Koivisto, Kurki-Suonio &amp; Ravndal 2005,
@@ -447,8 +453,12 @@ export default function DarkEnergy() {
           when DR3 excludes &Lambda; in the thawing or crossing direction, and that outcome refutes &Lambda;CDM equally. On
           the local-fluid reading, existing P(k) already pins |2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10<sup>&minus;5</sup>, so the
           sector <em>is</em> &Lambda; there. On the mean-density reading &gamma; is free, and the only non-&Lambda; outcome is
-          freezing, which is a win branch for a known model class. So TEST-26 is a test of &Lambda;CDM with the framework
-          attached. It is kept on record so that a tie cannot later be read as a success. It is not a decisive test of
+          freezing, which is a win branch for a known model class. <strong>The win side is shared too (explorer
+          2026-10-08, pre-registered <code>f3e045e</code>):</strong> on DR3-like Asimov data the 2002 constant-w Cardassian
+          fits any DR2-allowed point on the framework&apos;s curve to &Delta;&chi;&sup2;&nbsp;&le;&nbsp;0.42, in all 11 precision
+          arms. Resolving the curve&apos;s shape at 2&sigma; needs a &ge;&nbsp;9.3&sigma; departure from &Lambda;, which needs
+          &gamma;&nbsp;&asymp;&nbsp;0.30, and DR2 excludes that at &Delta;&chi;&sup2;&nbsp;=&nbsp;137. No TEST-26 outcome singles
+          out the framework: it is a test of &Lambda;CDM with the framework attached. It is kept on record so that a tie cannot later be read as a success. It is not a decisive test of
           Synchronism.
         </p>
         <p>

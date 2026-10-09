@@ -148,7 +148,7 @@ export default function CoherenceExplorer() {
           <ul style={{ marginTop: '0.5rem', marginBottom: 0, color: 'var(--color-text-secondary)' }}>
             <li><strong>ln(x)</strong> — logarithm: it compresses huge ranges into small ones. A density 1,000× bigger becomes only ~7 units bigger inside the equation (natural log); on this chart&apos;s base-10 axis the same jump is 3 gridlines. The compression does <em>not</em> let one curve span quantum to cosmic scales: at any sharp γ the tanh saturates within ~1.6 decades of the knee, which is why the &ldquo;80 orders of magnitude&rdquo; unification was refuted (Session 633; corrected here 2026-09-14).</li>
             <li><strong>tanh(u)</strong> — the &ldquo;S-curve&rdquo; shape. For very negative u it returns ≈ 0; for large positive u it returns ≈ 1; near zero it rises steeply. Think of a dimmer switch that snaps rather than fading gradually.</li>
-            <li><strong>&#x03B3;</strong> — controls how quickly the snap happens. Large &#x03B3; (γ = 2, free atoms) = a sharp cliff. Small &#x03B3; (γ ≈ 6×10⁻⁴, superconductors) = a long gentle ramp.</li>
+            <li><strong>&#x03B3;</strong> — controls how quickly the snap happens: large &#x03B3; = a sharp cliff, small &#x03B3; = a long gentle ramp. <strong>Warning first:</strong> the framework&apos;s rule for <em>which</em> material gets which &#x03B3; (&#x03B3; = 2/&radic;N<sub>corr</sub>: free atoms &rarr; 2, superconductors &rarr; ~6×10⁻⁴) runs backwards against real condensed-matter physics, where superconductors switch on abruptly. So treat this tool as a shape toy for learning the curve, not a map of real materials (details further down).</li>
             <li><strong>&#x03C1;<sub>crit</sub></strong> — the density where the dimensionless argument x = &#x03C1;/&#x03C1;<sub>crit</sub> equals 1; a reference point set by fitting, not a physical critical point and <em>not</em> the curve&apos;s midpoint: C(&#x03C1;<sub>crit</sub>) = tanh(&#x03B3; ln 2) is &#x03B3;-dependent (0.327 at &#x03B3; = 0.49, 0.60 at &#x03B3; = 1, 0.88 at &#x03B3; = 2 &mdash; the three values printed on three pages of this site are all correct, at those three &#x03B3;).</li>
           </ul>
         </div>
@@ -214,7 +214,7 @@ export default function CoherenceExplorer() {
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
               {[
                 { g: 0.046, label: 'γ = 0.046 — density version fit to real galaxies: nearly flat (SPARC, density-keyed free fit; loses at ΔBIC +2843)' },
-                { g: 0.49, label: 'γ = 0.49 — what real galaxies prefer, acceleration version (SPARC acceleration-keyed fit; = MOND there; killed by Cassini at 8.7σ; illustrative on this density axis)' },
+                { g: 0.49, label: 'γ = 0.49 — what real galaxies prefer, acceleration version (SPARC acceleration-keyed fit; = MOND there; killed by Cassini: 8.7σ published for the RAR-preferred MOND functions (Desmond+2024, marginalized), +17.95σ in this site\'s own unmarginalized run; illustrative on this density axis)' },
                 { g: 0.5, label: 'γ = ½ exactly — the same curve as MOND’s formula (MOND’s simple μ function; see note below)' },
                 { g: 2.0, label: 'γ = 2 — steep: the framework’s original guess (disfavoured on SPARC; at the threshold once galaxies are the unit)' },
               ].map(p => (

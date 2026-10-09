@@ -15,7 +15,7 @@ export default function WhySynchronism() {
 
       <h1>Start Here: Why Synchronism?</h1>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
-        Beginner Path — Step 1 of 6 &middot; This is the page the nav&apos;s &ldquo;Start Here&rdquo; points to.
+        Beginner Path, first step. This is the page the nav&apos;s &ldquo;Start Here&rdquo; points to.
       </p>
       <p className="hero-subtitle" style={{ marginBottom: '2rem' }}>
         Physics has a fragmentation problem. Synchronism asks whether one principle

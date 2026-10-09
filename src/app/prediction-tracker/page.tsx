@@ -11,7 +11,7 @@ const predictions = [
   { domain: 'Cosmology', name: 'SPARC rotation curves (175 galaxies) — fit only with γ free and keyed on acceleration, where C(ρ) becomes MOND\'s interpolating function (ledger Bucket 3)', status: 'reparametrization' as const },
   { domain: 'Cosmology', name: 'RAR transition shape with γ pinned at 2 (the framework\'s registered value) — lost to MOND on SPARC, ΔBIC = +184 with points as independent, ≈ +11 (1.6–2.2σ) with the galaxy as the unit: disfavoured at the threshold; recount pending dp (ledger Bucket 2)', status: 'failed' as const },
   { domain: 'Cosmology', name: 'ALFALFA-SDSS TFR scatter (14,585 galaxies) — registered test (TEST-03) never run; the substitute SPARC environment run (TEST-03s) failed', status: 'untested' as const },
-  { domain: 'Cosmology', name: 'CDM σ_int = 0.086 dex (CDM-consistent, z=+0.5 — not a beat-CDM result)', status: 'reparametrization' as const },
+  { domain: 'Cosmology', name: 'CDM σ_int = 0.086 dex (not a beat-CDM result; matches only the source session\'s own 0.085 — external ΛCDM benchmark disagrees, verdict suspended 2026-10-09)', status: 'reparametrization' as const },
   { domain: 'Cosmology', name: 'a₀ = cH₀/(2π) — restates Milgrom\'s 1983 a₀ ≈ cH₀/6 coincidence; the named calculation gives cH₀/2 (ledger Bucket 3)', status: 'reparametrization' as const },
   { domain: 'Cosmology', name: 'Freeman\'s Law from ρ_crit — Σ₀ = a₀/(2πG) is Milgrom\'s MOND surface density re-derived', status: 'reparametrization' as const },
   { domain: 'Cosmology', name: 'Dwarf galaxy DM dominance (TEST-10 — executed 2026-07-15: 69% of SPARC exceeds the framework\'s 68.5% DM-fraction ceiling)', status: 'failed' as const },

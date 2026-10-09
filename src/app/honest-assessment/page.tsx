@@ -652,7 +652,7 @@ export default function HonestAssessment() {
               <ValidationBadge status="untested" label="TEST-03 Never Run As Registered" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>CDM-consistent</strong> (z&nbsp;=&nbsp;+0.5 in the definitive run), not below CDM.
+              &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>equal to the source session&apos;s own CDM figure</strong> (0.085; z&nbsp;=&nbsp;+0.5 in the definitive run), not below CDM. Whether it is consistent with <em>published</em> &Lambda;CDM predictions is unsettled: the first external benchmark checked (Desmond 2017, abundance matching, ~0.25 dex in baryonic mass for SPARC-like samples) is about 3&times; larger, so the CDM-consistency verdict is suspended (2026-10-09; see <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link>).
               <strong> Sample correction (2026-07-10):</strong> the 0.086 figure belongs to the source session&apos;s{' '}
               <em>optimal quality cut, N&nbsp;=&nbsp;677</em> (SNR&nbsp;&gt;&nbsp;15, e<sub>W50</sub>&nbsp;&lt;&nbsp;10, b/a&nbsp;&lt;&nbsp;0.65, V&nbsp;&gt;&nbsp;80&nbsp;km/s),
               not to the full ALFALFA&ndash;SDSS cross-match &mdash; the full sample (N&nbsp;=&nbsp;14,435 in the definitive session) gives

@@ -4,6 +4,14 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { navigationTree } from '@/lib/navigation';
 import { COUNT_MAP_SENTENCE } from '@/lib/ledger';
+import { learningPaths } from '@/lib/paths';
+
+// Landing step labels are computed from the path list (2026-10-09: two visitor personas
+// found hard-coded "Step 1 of 6" labels on a 5-step path, and a card still pointing at a
+// page that left the path on 10-08).
+const BEGINNER_STEPS = learningPaths.find(p => p.name === 'Beginner')!.steps;
+const beginnerLabel = (href: string) =>
+  `Beginner Path · Step ${BEGINNER_STEPS.findIndex(s => s.href === href) + 1} of ${BEGINNER_STEPS.length}`;
 
 export default function Home() {
   const [tab, setTab] = useState<'intro' | 'explore'>('intro');
@@ -611,19 +619,19 @@ export default function Home() {
             <h2>Where to Start</h2>
             <div className="grid-3">
               <Link href="/why-synchronism" className="card" style={{ textDecoration: 'none' }}>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Beginner Path &middot; Step 1 of 6</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{beginnerLabel('/why-synchronism')}</div>
                 <h3>Why Synchronism?</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>The question that started it all</p>
               </Link>
               <Link href="/first-encounter" className="card" style={{ textDecoration: 'none' }}>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Beginner Path &middot; Step 2 of 6</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{beginnerLabel('/first-encounter')}</div>
                 <h3>First Encounter</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>10-minute guided introduction</p>
               </Link>
-              <Link href="/core-idea" className="card" style={{ textDecoration: 'none' }}>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Beginner Path &middot; Step 3 of 6</div>
-                <h3>The Core Idea</h3>
-                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>One equation, every scale</p>
+              <Link href="/galaxy-plotter" className="card" style={{ textDecoration: 'none' }}>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{beginnerLabel('/galaxy-plotter')}</div>
+                <h3>Galaxy Curve Plotter</h3>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>See the dark-matter problem in real data, and watch the formula lose to MOND</p>
               </Link>
               <Link href="/test-catalog" className="card" style={{ textDecoration: 'none' }}>
                 <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Deep dive &middot; Advanced Path step 8 of 8</div>

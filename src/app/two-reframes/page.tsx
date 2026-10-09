@@ -92,14 +92,19 @@ export default function TwoReframes() {
             <ValidationBadge status="failed" label="non-invasive reading (measurement is sampling)" />{' '}
             Read literally (&ldquo;nothing about the screen changed&rdquo;), the analogy is refuted. Sampling that
             doesn&apos;t disturb the system predicts no quantum Zeno effect, and Itano et&nbsp;al. (1990) observed one:
-            transition probability 0.194 &plusmn; 0.02 at 8 measurement pulses, where non-invasive sampling predicts 1.
+            transition probability 0.194 &plusmn; 0.02 at 8 measurement pulses, where non-invasive sampling predicts 1
+            (Phys. Rev. A 41, 2295, Table I, 1&rarr;2 transition; their full-model prediction is 0.201 and the idealised
+            &frac12;[1&minus;cos<sup>8</sup>(&pi;/8)] is 0.235. Checked against the table 2026-10-09 after a researcher visitor
+            remembered a different value; the quoted number stands).
           </p>
           <p style={{ margin: '0 0 0.6rem' }}>
             <ValidationBadge status="reparametrization" label="phase-lock reading (measurement is synchronization)" />{' '}
             The version that survives is &ldquo;measurement is synchronization&rdquo;: syncing resets the system&apos;s
             phase. Itano&apos;s data force that reset to be essentially complete (reset strength s &ge; 0.975). Written out,
             a full reset is QM&apos;s projection (Lüders) rule, so this reading reproduces standard quantum mechanics and
-            adds nothing it lacks.
+            adds nothing it lacks. It is also not new as a reading of this experiment: Ballentine (Phys. Rev. A 43, 5165, 1991)
+            argued that Itano&apos;s result is explained by the probe pulses&apos; dynamical effect on the ion, without collapse,
+            which is the decoherence-literature view of the same data.
           </p>
           <p style={{ margin: 0 }}>
             <strong>What would make it a prediction?</strong> A finite scan period T<sub>scan</sub>. With one, measurement

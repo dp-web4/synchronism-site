@@ -32,9 +32,11 @@ export default function GammaBoundary() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
-          Across 1,840 chemistry sessions, Synchronism tested the prediction that chemical phenomena
-          cluster at &#x03B3; &#x2248; 1 &mdash; the quantum-classical boundary. The result: 1,703
-          distinct phenomena types, with 89% boundary-consistent and 11% failures.
+          Across its first 1,840 chemistry sessions (of 2,671 in all), the archive tested the prediction that chemical phenomena
+          cluster at &#x03B3; &#x2248; 1 &mdash; the quantum-classical boundary. It recorded 1,703 &ldquo;phenomenon types&rdquo;,
+          89% boundary-consistent and 11% failures. Read the 1,703 with care: from session #138 on, each session was logged
+          as exactly one new type (type = session &minus; 137, no exceptions), so it is a session counter, not a census of
+          independent phenomena (reconciled 2026-10-09).
         </p>
 
         <div style={{

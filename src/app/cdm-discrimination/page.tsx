@@ -49,13 +49,25 @@ export default function CdmDiscrimination() {
           comparison below is BTFR-to-BTFR where it can be.{' '}
           Cold Dark Matter (CDM) models predict a range of intrinsic scatter in these relations from halo-to-halo assembly
           diversity. The measured value,
-          0.086 &plusmn; 0.003 dex, sits <strong>inside</strong> that predicted range once the
-          measurement&apos;s own noise budget is modeled correctly &mdash; it does not beat CDM.
+          0.086 &plusmn; 0.003 dex, sits at the source session&apos;s own CDM figure (0.085) once the
+          measurement&apos;s own noise budget is modeled correctly &mdash; it does not beat <em>that</em> figure; whether
+          it matches published &Lambda;CDM predictions is a separate question, and the first external number checked says it
+          does not (benchmark below).
           <strong> Benchmark disclosure (2026-07-10):</strong> the &ldquo;CDM prediction&rdquo; used here is the
           source session&apos;s own internal figure (&#x2248;0.085 dex from halo-concentration scatter, Session 610)
           &mdash; no external published CDM scatter estimate (semi-analytic or hydrodynamic-simulation) has been
           cited or checked against, so the CDM-consistency verdict is internally coherent but not yet anchored
-          to the literature&apos;s range. An external-benchmark check has been queued since 2026-07-10 and is still not done.
+          to the literature&apos;s range. <strong>External benchmark, first look (2026-10-09, after a researcher visitor
+          noted it had been queued for three months):</strong> Desmond 2017 (MNRAS 472, L35; arXiv:1706.01017) is a BTFR-to-BTFR
+          comparison in baryonic mass. Halo abundance matching gives SPARC-like mock samples with a typical BTFR scatter of
+          &ldquo;&sim;0.25 dex&rdquo;, &ldquo;3.6&sigma; discrepant with the SPARC value of &sim;0.11 dex&rdquo; (quoted verbatim);
+          with zero abundance-matching scatter the mean falls to 0.061. So the one external &Lambda;CDM figure checked is about
+          3&times; the internal 0.085, and the &ldquo;sits inside the CDM range&rdquo; verdict above is <strong>not supported by the
+          literature as it stands</strong>. It is suspended rather than reversed: the 0.086 is on ALFALFA W50 widths after an
+          in-sample TFR-residual mass-to-light correction, not on SPARC V<sub>flat</sub>, and Desmond&apos;s 0.061 shows the
+          prediction depends strongly on the assumed galaxy&ndash;halo scatter. A like-for-like comparison (same velocity
+          definition, same mass estimator) has not been run. This is a CDM-versus-MOND question; neither reading moves this
+          framework&apos;s ledger.
           The papers it should take its CDM numbers from: Ludlow et al. 2017 (PRL 118, 161103; EAGLE/APOSTLE), Keller &amp;
           Wadsley 2017, Desmond 2017 (abundance matching), Dutton et al. 2019 (NIHAO). Most of them report RAR, not BTFR,
           scatter, which is the relation mismatch above.
@@ -153,11 +165,11 @@ export default function CdmDiscrimination() {
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <Link href="/freemans-law" className="btn-primary">
-            Next: Freeman&apos;s Law &rarr;
+          <Link href="/freemans-law" className="btn-secondary">
+            Related: Freeman&apos;s Law &rarr;
           </Link>
           <Link href="/rar-scatter" className="btn-secondary">
-            &larr; RAR Scatter
+            Related: &larr; RAR Scatter
           </Link>
         </div>
       </section>

@@ -67,8 +67,12 @@ const steps = [
     ("Noise floor", in everyday terms: a whisper in a loud room is still there, but nobody can pick it out
     from the background. The proposal is that a quantum correlation fades the same way — it is not destroyed,
     it just drops below what the surroundings can tell apart from noise.)
-    (See "Two Reframes" for the CRT analogy that makes this intuitive.)`,
-    highlight: 'Measurement = MRH crossing',
+    (See "Two Reframes" for the CRT analogy that makes this intuitive.)
+    Status, in one line: an interpretation, not a failed or a winning prediction. Read as "looking doesn't disturb
+    anything", it is contradicted by experiment (the quantum Zeno effect); read as "measuring resets the system", it
+    gives exactly standard quantum mechanics. It would become testable only if the framework named a scan period, and
+    it hasn't.`,
+    highlight: 'Measurement = MRH crossing (an interpretation; same predictions as standard QM)',
   },
   {
     title: 'Where It Fails',
@@ -90,7 +94,7 @@ export default function FirstEncounter() {
 
       <h1>First Encounter</h1>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
-        Beginner Path — Step 2 of 6 &nbsp;(&larr;{' '}
+        Beginner Path &nbsp;(&larr;{' '}
         <Link href="/why-synchronism" style={{ color: 'var(--color-accent-blue)' }}>Prev: Why Synchronism?</Link>)
       </p>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
@@ -114,14 +118,14 @@ export default function FirstEncounter() {
       </div>
 
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.75rem' }}>
-        7 short sections on this one page, lettered A&ndash;G &mdash; about 10 minutes in all. (The &ldquo;Step 2 of 6&rdquo;
+        7 short sections on this one page, lettered A&ndash;G &mdash; about 10 minutes in all. (The step counter
         above is this page&apos;s place in the Beginner path; the letters are only for the sections inside this page.
         The sections appear one at a time: use the <strong>Continue</strong> button below each section, or the progress bar, to move between them.)
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '2rem' }}>
         <strong>New here?</strong> This ~10-minute intro is the fastest path to understanding the framework.
         Want a more structured journey? <a href="/learning-paths" style={{ color: 'var(--color-accent-blue)' }}>Learning Paths</a> offers
-        Beginner / Intermediate / Advanced routes with 6–8 steps each.
+        Beginner / Intermediate / Advanced routes with 5–9 steps each.
       </p>
 
       {/* All parts are in the server HTML (crawlers and no-JS readers get A–G); the stepper only

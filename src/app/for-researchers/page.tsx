@@ -90,6 +90,24 @@ export default function ForResearchers() {
           </table>
           </div>
         </div>
+        {/* Added 2026-10-09: a researcher visitor called the oracle observation the most transferable result here and found no mention of it on this page */}
+        <div id="oracle-result" style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.35)', borderRadius: '0.375rem', padding: '0.85rem 1.1rem', marginBottom: '1.25rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: 'var(--color-accent-blue)' }}>For an AI-for-science reader: the methodological observation (not physics)</strong>
+          <p style={{ margin: '0.4rem 0 0' }}>
+            About 3,300 adversarial AI debate sessions produced <strong>zero</strong> refutations of the physics on their own. Five of
+            the six scoreboard refutations came from executing code against external data; the sixth is a construction check whose
+            oracle is Bell&apos;s theorem. In a pre-registered pilot (site <code>3116f84</code>), 92 ledger corrections were coded by what
+            caught them: reading the program&apos;s own documents changed two verdicts, both about <em>the record</em> (wrong variable,
+            wrong row), none about the world; all 13 empirical eliminations in the refuted bucket trace to an external measurement.
+          </p>
+          <p style={{ margin: '0.4rem 0 0' }}>
+            <strong>What limits it, stated before you cite it:</strong> n = 92 units from one program; two AI raters with
+            &kappa;(caught-by) = 0.58, one of unknown model provenance; <strong>no human or different-model-family rater</strong>, which is
+            the same-corpus problem the pilot itself names; and no positive control, so whether the protocol could recognise a
+            genuinely novel result is unmeasured. It is an observation about one record, with its denominator, not a general law.{' '}
+            <a href="/a2acw#oracle-thesis" style={{ color: 'var(--color-accent-blue)' }}>Full account on the A2ACW page</a>.
+          </p>
+        </div>
         <div id="start-here" style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', padding: '0.85rem 1.1rem', marginBottom: '1.25rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)', scrollMarginTop: '5rem' }}>
           <strong style={{ color: 'var(--color-accent-violet)' }}>Start here: negative results on density-keyed modified gravity
           (framework-independent)</strong>
@@ -107,14 +125,18 @@ export default function ForResearchers() {
               <a href="#gc-window" style={{ color: 'var(--color-accent-blue)' }}>5. Globular-cluster exclusion window</a>: 42
               clusters exclude a knee &#x03C1;<sub>c</sub> &isin; 0.1&ndash;300 M<sub>&#x2609;</sub>/pc&sup3; at &#x03B3; = 0.489,
               narrowing to 0.5&ndash;100 at &#x03B3; = 2. Meaningless without its &#x03B3;, and conditional on L2 dynamics (under L3 no knee passes).
-              Quote residuals (density law at &#x03B3; = 0.489, knee 0.161: &minus;0.196 to &minus;0.199 &plusmn; 0.027 with the mass scale refitted under the law itself,
+              The residual is the inverse-variance-weighted mean over clusters of (observed &minus; predicted) outer
+              log-slope d&nbsp;log&nbsp;&sigma;<sub>los</sub>/d&nbsp;log&nbsp;R of the velocity-dispersion profile, each law run through the
+              same isotropic Jeans solver and mass model (definition added 2026-10-09; code
+              <code>explorer/findings/scripts/gc_slope_with_mond.py</code>). Quote residuals (density law at &#x03B3; = 0.489, knee 0.161: &minus;0.196 to &minus;0.199 &plusmn; 0.027 with the mass scale refitted under the law itself,
               &minus;0.211 on catalogue masses as in the Honest Assessment table; MOND+EFE &minus;0.093), not ratios. The registered &#x03B3; = 2 point is
               &minus;0.111 (marginal) under L2 and &minus;0.203 (excluded, narrowly) under L3 (2026-10-08, pre-registered).
             </li>
             <li>
               <a href="#unidentifiability" style={{ color: 'var(--color-accent-blue)' }}>4. Density-keyed unidentifiability</a>:
-              a knee above the sampled density leaves one measurable number. Fisher correlation &#x03C1;(ln&#x03B3;, ln A) =
-              +1.000000.
+              a methodological warning more than a finding: when the knee sits above the sampled density, C &asymp; &#x03B3;x and
+              only &#x03B3;/&#x03C1;<sub>crit</sub> is identified. Fisher correlation &#x03C1;(ln&#x03B3;, ln A) = +1.000000 is that
+              one-line Taylor limit made numerical; useful to anyone fitting a density-keyed law, not an empirical result.
             </li>
             <li>
               Different domain, also framework-independent:{' '}
@@ -1042,9 +1064,10 @@ export default function ForResearchers() {
               benchmark sensitivity is 3/3 per rule; a pooled 6/6 across the literal and steelmanned rules is the same three
               items counted twice, not six independent trials];
               specificity is 0/6, i.e. the false-positive rate is also 6/6 = 1.0. Youden&apos;s
-              J = TPR − FPR = 1.0 − 1.0 = <strong>0</strong> (AUC ≈ 0.5). A classifier that
+              J = TPR − FPR = 1.0 − 1.0 = <strong>0</strong> (AUC ≈ 0.5). Under the literal rule, a classifier that
               flags every demoted claim <em>and</em> every genuine discovery carries zero
-              discriminating information — both numbers were already published on this site, on
+              discriminating information (under the steelmanned rule J = 1.0, but there the scorer&apos;s own novelty judgment
+              does the discriminating; see <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW</a>) — both numbers were already published on this site, on
               two different pages, and had never been combined until a 2026-07-14 visitor pass did the
               subtraction. The 6/6 catch rate is not the methodology&apos;s best result; multiplied
               against its own specificity, it is the demonstration that the detector cannot tell a

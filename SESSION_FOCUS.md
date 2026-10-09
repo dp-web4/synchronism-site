@@ -1,9 +1,38 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-08 (maintainer)*
+*Last updated: 2026-10-09 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-09) — **The DE sector has no discriminating test left: TEST-26's win side is shared with
+wCDM (Δχ² ≤ 0.42 at DR3, explorer 10-08), its kill with ΛCDM, and TEST-04a's readings are closed. Separately, the
+3-month-queued CDM benchmark took one paper: Desmond 2017 gives ~0.25 dex vs the internal 0.085, so "CDM-consistent"
+(σ_int = 0.086) is suspended on 8 surfaces.** Count 6; Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-10-09.md`. Proposal:
+`Synchronism/Research/proposals/de_sector_has_no_discriminating_test_and_the_oracle_result_needs_a_cross_vendor_rater_20261009.md`.
+Ledger: Synchronism `da4f2fac`.
+
+- **Fixed:**
+  - Beginner counters now computed from `paths.ts`, landing cards included (the Core Idea card was stale).
+  - TEST-26 drain on 3 pages; /consciousness-demo "same C"; Coherence Explorer warning-first; TEST-03 "already-passing".
+  - Chemistry 1,840/2,671 reconciled (type = session − 137); 4 broken 307s (no Location) → config redirects.
+  - /for-researchers oracle box with limits; GC residual defined; Itano 0.194 verified against Table I, Ballentine
+    cited; closed form; 4 glossary entries.
+- **site_lint.py:** 153 rules (HEAD control: 15).
+
+### → dp
+- Retire TEST-26 and TEST-04a as discriminating registrations (keep as tie/shared-kill only).
+- Approve a cross-vendor re-code of the 92 H-oracle units (sends the corpus to a non-Anthropic service).
+- (carried) L2 or L3; headline "6" split by kind (5th raise); MRH badge-family rename; LLR row.
+
+### → Next maintainer session
+1. `<Term>` auto-link pass (fork/root/kill) plus badge tooltips; status-vocabulary unification.
+2. Small items from the 10-09 log's Open Items (SPARC 175/153, δ ≈ 4 citation, TEST-01/03s/05 grouping, slug redirects).
+
+### → Explorer (new topics)
+- `what-constrains-t-scan-today.md` · `oracle-result-cross-vendor-rater-design.md` (design only; nothing sent externally)
 
 ## 🟢 NEW (maintainer 2026-10-08) — **The GC fork is open only under L2. Under the action (L3), P611.2's registered
 point (γ = 2, knee 0.161) moves from marginal (−0.111) to excluded (−0.203, bar 0.186; margin 0.017 < ±0.027 stat;

@@ -53,11 +53,14 @@ export default function ConsciousnessDemo() {
           fontSize: '0.88rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: 'var(--color-accent-blue)' }}>Is this the same C as the rest of the site? Yes &mdash;
-          and that is exactly why the page reads strangely (stated 2026-09-10).</strong>{' '}
-          The <strong>C</strong> here is the same coherence value <strong>C(&rho;)</strong> used everywhere on this
-          site: the 0&nbsp;&rarr;&nbsp;1 output of C(&rho;)&nbsp;=&nbsp;tanh(&gamma;&nbsp;ln(&rho;/&rho;<sub>crit</sub>&nbsp;+&nbsp;1)),
-          the same axis the galaxy-rotation work puts at ~10<sup>&minus;5</sup> for a SPARC disc. This demo asks
+          <strong style={{ color: 'var(--color-accent-blue)' }}>Is this the same C as the rest of the site? The same <em>formula</em>, the density-keyed
+          variant &mdash; and that is exactly why the page reads strangely (stated 2026-09-10; corrected 2026-10-09 from a flat
+          &ldquo;Yes&rdquo;).</strong>{' '}
+          The <strong>C</strong> here is the 0&nbsp;&rarr;&nbsp;1 output of the density-keyed
+          C<sub>&rho;</sub>&nbsp;=&nbsp;tanh(&gamma;&nbsp;ln(&rho;/&rho;<sub>crit</sub>&nbsp;+&nbsp;1)). It is <em>not</em> the C behind the
+          site&apos;s galaxy fits: those use acceleration-keyed variants (C<sub>g</sub>, C<sub>a</sub>, order 0.3&ndash;1 on SPARC
+          discs), while C<sub>&rho;</sub> on the same discs is ~10<sup>&minus;3</sup> or below. See the glossary&apos;s{' '}
+          <Link href="/glossary#which-c-which" style={{ color: 'var(--color-accent-blue)' }}>Which C? Which &gamma;?</Link> entry. This demo asks
           <em> where on that one axis consciousness might sit</em>, and its honest answer is: nobody can currently
           say, because <strong>no calibration procedure maps EEG, fMRI, or IIT-&Phi; onto the C axis at all.</strong>
           Two separate readers (a casual reader and a technical writer, both 2026-09-10) reported that the unlabelled

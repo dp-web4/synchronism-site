@@ -3,7 +3,7 @@ import { getPathMemberships } from '@/lib/paths';
 
 // Shared step-navigation chrome for learning-path pages.
 // Renders one compact line per path containing the current page:
-// "Beginner Path · Step 2 of 6 · ← Prev · Next: The Core Idea →".
+// "Beginner Path · Step N of M · ← Prev · Next: The Core Idea →".
 // Requested 2026-07-18 after two visitor personas independently found no path
 // was followable end-to-end from its own chrome.
 export default function PathNav({ currentPath }: { currentPath: string }) {

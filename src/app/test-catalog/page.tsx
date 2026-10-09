@@ -13,7 +13,7 @@ const tiers = [
     time: '1–6 months',
     color: '#10b981',
     href: '/tier-1-existing',
-    desc: 'Reanalysis of public datasets (Gaia DR3, SPARC, SDSS, DESI). No new hardware needed. The four tier counts sum to the original 24; TEST-25 and TEST-26 (added after the registry closed) are listed on the Tier 1 page but sit outside these totals.',
+    desc: 'Reanalysis of public datasets (Gaia DR3, SPARC, SDSS, DESI). No new hardware needed. The four tier counts sum to the original 24; TEST-25 and TEST-26 (added after the registry closed) are listed on the Tier 1 page but sit outside these totals. Tally of the Tier 1 page: 10 registry cards (TEST-01–10) + 1 lettered variant card (04a; 03s is discussed inside the TEST-03 card) + 2 post-registry additions (25, 26) = 13 cards.',
   },
   {
     tier: 'Tier 2: Pilot Experiments',
@@ -276,9 +276,9 @@ export default function TestCatalog() {
           (<code>maintainer/scripts/floor_is_cosmic_C_and_w_sign.py</code>, 0 sign violations over 11 &gamma; &times; 51 z).
           Kill fires if DR3 robustly requires that crossing; if the data sit at &Lambda;CDM it is a tie. <strong>TEST-26
           can select the mean-density (Cardassian) reading, which the framework&apos;s local-density postulate forbids</strong>{' '}
-          (it wins only if the data move into the quadrant the family allows, w&#x2080; &gt; &minus;1 with w<sub>a</sub> &gt; 0 or
-          the phantom mirror, at a &gamma; measurably away from &frac12;: unlikely on current data, not impossible by
-          construction; on the local fluid reading P(k) pins &gamma; = &frac12; to ~10&#x207B;&#x2075;). Even that win is a Cardassian-class result (Freese &amp; Lewis 2002), so no branch of TEST-26 would move the confirmed-novel count off zero. <strong>It cannot select
+          (but not as a win: if the data move into the freezing quadrant the family allows, the 2002 constant-w Cardassian fits the
+          framework&apos;s curve to &Delta;&chi;&sup2;&nbsp;&le;&nbsp;0.42 at DR3 precision, and resolving the shape would need
+          &gamma;&nbsp;&asymp;&nbsp;0.30, excluded by DR2, explorer 2026-10-08; on the local fluid reading P(k) pins &gamma; = &frac12; to ~10&#x207B;&#x2075;). So no branch of TEST-26 singles out the framework or moves the confirmed-novel count off zero. <strong>It cannot select
           the framework as postulated.</strong> It is listed outside the 24-test discrimination count. (This line said
           &ldquo;cannot select the framework&rdquo;, unqualified, until 2026-09-22, after{' '}
           <Link href="/dark-energy" style={{ color: 'var(--color-accent-violet)' }}>Dark Energy</Link> was corrected on 2026-09-14.) Adoption gates on the operator. <strong>Booking if the kill fires (proposed):</strong> a DR3 result that robustly requires a

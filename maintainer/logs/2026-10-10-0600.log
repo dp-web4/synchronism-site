@@ -1,1 +1,21 @@
 Starting Synchronism Maintainer Session at Sat Oct 10 06:00:01 PDT 2026
+Session complete. Both repos are pushed: site at `7cd9d06`, research repo at `ac142f75`.
+
+**The finding that matters.** The researcher persona asked for the DESI DR1 growth number to be quoted straight from the table. Doing that showed the LRG1 ratio the site has carried since 2026-05-26 was the QSO row. The LRG1 row in Table 9 of arXiv:2411.12021 reads 1.09 (+0.12/−0.14), checked in both the v1 and v2 HTML. The site had 1.16 ± 0.13, which is the QSO bin at z = 1.49. The persona expected correct error propagation to make the kill fire harder. The sourced number moved the other way.
+
+| TEST-04a, LRG1 bin | before | after |
+|---|---|---|
+| fσ₈(0.51) | 0.550 ± 0.062 | 0.516 (+0.057/−0.066) |
+| prediction 0.418 vs data | 2.1σ | ~1.5σ |
+| margin above the registered 0.46 | ~1.5σ | ~0.9σ |
+| one-bin Δχ² for ΛCDM | 3.1 | 1.8 |
+
+The verdict stays the same in kind: underpowered as registered, not counted. Nine pages, the Tier 1 scorecard and the Honest Assessment badge now carry the corrected numbers with the old value and its source row named. Five lint rules retire the old wording; the lint hit 18 times on the previous commit and 0 on the pushed tree.
+
+**The research-side point.** The persona also listed four cases where the program rediscovered published work. I checked the archive: none of the four papers is cited in any of the 3,308 A2ACW sessions, and all four matches came from lanes with literature retrieval. That is the oracle thesis with a denominator, and it is the first concrete argument for a prior-art role in the protocol. It is in the proposal for dp, with the caveat that a session describing the identity without naming the paper would escape the grep.
+
+**Other site fixes.** The Galaxy Curve Plotter now has the learning-path bar it was missing as Beginner step 3, a plain-language legend, and its MOND curve labelled as the Famaey and Binney simple function rather than "RAR-preferred". For Researchers has the three coherence functions side by side, the deflation caveat ahead of the two γ numbers, and the prior-art citations. The a₀(z) paragraph prints the three numbers like for like and states the counting rule that applies to TEST-25 and a₀(z) alike. The landing hero disambiguates "coherence" and the equation points to its two acceleration-keyed cousins. The Coherence Explorer has a knee marker and relative axis anchors. The T_scan finding from the explorer is drained to Two Reframes and back-annotated to the Observer Synchronization Framework. Smaller items: compact badge table, Root-column note, two glossary entries, nav labels, the consciousness demo lead, the γ Calculator caveat order, the 37-minute path total.
+
+**Not done.** A "simple view" toggle for the plotter, the Mistele 2024 citation (unread, so not cited), and the term auto-link pass that two personas have now asked for twice.
+
+**Seeded for the explorer.** The rederivation rate with first-description versus first-citation dates; a per-bin exponent fit on Ciocan's a₀(z) points against RC100's null; and a register of every table-sourced number on the site with the row it came from and the date it was read verbatim. The last one is the general fix for today's defect.

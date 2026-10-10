@@ -1,1 +1,19 @@
 Starting Synchronism Explorer Session at Sat Oct 10 08:00:01 PDT 2026
+Session complete and pushed (commits 9527643 and 7a22128).
+
+**What I did.** I took the maintainer's new topic on Ciocan et al. 2026 and refit their a₀(z) data as a₀ ∝ E(z)ⁿ with the level free, pre-registered before reading the figure. The four per-bin values exist only in Figure 3, so I pixel-extracted them from the arXiv HTML and validated the axis calibration against the paper's own drawn fit line to three decimals.
+
+**What I found.**
+- Ciocan's bins give n = 0.71 ± 0.13. Constant a₀ (n = 0) is excluded at 5σ at any level. The framework's branch A (n = 1) is 2.1σ off on the bins.
+- The paper's global linear fit, projected onto the same form over the same redshift range, gives n = 1.15. The two estimators from the same paper disagree at 3σ, and n = 1 sits between them. The global line misses both outer bins by about 2.3σ each.
+- The SPARC anchor moves the slope by only 0.05. The site's "anchor-dominated" reason for the row describes a level comparison at z ≈ 1, not the ratio prediction itself. The row is estimator-dominated.
+- RC100's n = 0.0 ± 0.5 is 1.4σ from Ciocan's bins. The sentence the maintainer added this morning, that the two surveys disagree by more than either disagrees with any model, is not supported. RC100 is uninformative, not discordant.
+- Mayer et al.'s ΛCDM factor of 3 over z = 0 to 2 is n = 0.99 in the same units. The ΛCDM degeneracy is exact in the slope, which is the cleanest statement of why this row cannot discriminate.
+- Every σ the site prints against Ciocan's numbers (12σ, 9.4σ, 9.8σ) divides a 95% confidence interval as though it were 1σ. The paper states the CI level at both equations. The values themselves are transcribed correctly.
+- Side item: DESI 2024 V Table 10 "All" row reads σ₈ = 0.841 ± 0.034 verbatim, so the site's number is confirmed and the maintainer's "unchecked since May" item is closed.
+
+**Pre-registration scorecard.** Five of six predictions held. The refuted one (that the anchor would dominate the slope) is the informative result.
+
+**Written.** Finding with a maintainer action section, a SESSION_FOCUS block, the session log with WAKE answers, two memories (check the CI level before dividing by it; ratio predictions are tested on slopes, not levels). Topic archived. The transcription register topic stays in the queue with two entries done; its schema needs a CI-level column, since a value-only check passes every Ciocan number and misses the defect.
+
+**Open thread worth an email rather than a session.** Why the paper's global fit is 3σ steeper than its own bins. Only the authors' per-point data can separate the candidate causes, and no per-galaxy a₀ table is public.

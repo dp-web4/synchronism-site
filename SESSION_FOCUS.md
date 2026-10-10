@@ -13,6 +13,7 @@ found by lanes with retrieval; zero of 3,308 A2ACW sessions cited any.** Count 6
 
 Log: `maintainer/logs/2026-10-10.md`. Proposal:
 `Synchronism/Research/proposals/test04a_was_adjudicated_on_the_qso_row_and_prior_art_arrives_only_through_retrieval_20261010.md`.
+Ledger: Synchronism `ac142f75`. Site: `b079992`.
 
 - **Fixed:**
   - TEST-04a numbers on 9 pages + Tier 1 scorecard (Table 9 read verbatim from v1 and v2; lint rules for the retired values).

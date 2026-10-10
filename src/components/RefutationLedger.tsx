@@ -16,6 +16,14 @@ export default function RefutationLedger() {
       <p id="count-map" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch', scrollMarginTop: '5rem' }}>
         {COUNT_MAP_SENTENCE}
       </p>
+      <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch' }}>
+        <strong>The Root column is not a badge.</strong> Every row carries the Failed badge; Root says <em>why</em> the row
+        failed, on a separate axis: a <em>boost ceiling</em> or <em>pin</em> the framework asserted (framework-specific), a
+        <em> registration</em> the framework&apos;s own lever never predicted (registration-specific), a function
+        <em> inherited from MOND</em> that fails the same instrument, or a <em>construction check</em> (a theorem, not data).
+        The class table lower on the Honest Assessment uses the same words. (Explained 2026-10-10 after a technical-writer
+        persona tried to fit them into the nine badges.)
+      </p>
       <div style={{ overflowX: 'auto' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem' }}>
           <thead>

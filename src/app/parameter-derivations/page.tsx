@@ -421,7 +421,7 @@ export default function ParameterDerivations() {
               cH&#x2080; &#8776; c&sup2;(&#x039B;/3)<sup>1/2</sup> &mdash; the site has cited only the H&#x2080; half. The
               &#x039B; half predicts <em>zero</em> epoch evolution, since &#x039B; is constant, and fares worse
               against Ciocan than branch (A): at the Milgrom-local normalization, a constant a&#x2080; = 1.20
-              against the observed 2.38 &plusmn; 0.10 is roughly <strong>12&#x03C3;</strong> away. An a&#x2080; evolving
+              against the observed 2.38 &plusmn; 0.10 is roughly <strong>12&#x03C3;</strong> away (on the measurement error alone; carrying the anchor&apos;s &plusmn;0.26 as the table above does for branch (A), it is 4.2&#x03C3;, against branch (A)&apos;s 2.3&#x03C3; and 0.5&#x03C3; under the same two conventions. Like for like, the evolving a&#x2080; is the closer of the two on this sample; stated plainly 2026-10-10, with the RC100 counter-sample on Relation to MOND). An a&#x2080; evolving
               faster than H(z) embarrasses both halves of the 1983 coincidence, not this framework specifically.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>

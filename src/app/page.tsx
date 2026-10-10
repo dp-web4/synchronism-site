@@ -29,7 +29,7 @@ export default function Home() {
           Read on to watch a big idea get tested in public and lose honestly: which parts turned out to be
           known physics renamed, which parts the data killed, and what that rules out for any theory of the same shape.{' '}
           (The research, audits and computations are done by AI agents, with one human, the project lead
-          (&ldquo;dp&rdquo; throughout this site), setting direction and overseeing.){' '}
+          (&ldquo;dp&rdquo; throughout this site), setting direction and overseeing.){' '}<strong>&ldquo;Coherence&rdquo; here is a score for how collectively a system&apos;s parts act, computed from its density; it is not quantum coherence, and a superconductor scores low on it.</strong>{' '}
           The bet: a single dial &mdash; how coherently a system&apos;s parts act together, computed from its
           density &mdash; might explain what currently needs a separate patch at every scale (dark matter for
           galaxies, wavefunction collapse for quantum measurement). That is what the equation tried to do.
@@ -57,7 +57,7 @@ export default function Home() {
           </Link>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem' }}>
-          <strong>No physics background?</strong> Use the <Link href="/why-synchronism" style={{ color: 'var(--color-accent-green, #10b981)' }}>Beginner Path</Link> (5 steps, ~35 min on the short route &mdash; the equation appears, always explained in plain words; you never have to compute with it, and you can skip every &ldquo;for physicists&rdquo; box. Step 5 is a ~18,000-word page; its intended stop on this path is the <strong>&ldquo;If you read nothing else&rdquo;</strong> box at the top of it; per-step times are on the <Link href="/learning-paths" style={{ color: 'var(--color-accent-green, #10b981)' }}>paths page</Link>, so the cliff is visible before you walk off it) or jump to the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-green, #10b981)' }}>Galaxy Curve Plotter</Link>.{' '}
+          <strong>No physics background?</strong> Use the <Link href="/why-synchronism" style={{ color: 'var(--color-accent-green, #10b981)' }}>Beginner Path</Link> (5 steps, ~37 min on the short route &mdash; the equation appears, always explained in plain words; you never have to compute with it, and you can skip every &ldquo;for physicists&rdquo; box. Step 5 is a ~18,000-word page; its intended stop on this path is the <strong>&ldquo;If you read nothing else&rdquo;</strong> box at the top of it; per-step times are on the <Link href="/learning-paths" style={{ color: 'var(--color-accent-green, #10b981)' }}>paths page</Link>, so the cliff is visible before you walk off it) or jump to the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-green, #10b981)' }}>Galaxy Curve Plotter</Link>.{' '}
           <strong>Physicist?</strong> Jump to <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link> or <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.{' '}
           <strong>Researcher?</strong> <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 tests</Link> or <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>.
         </p>
@@ -96,6 +96,11 @@ export default function Home() {
         <p style={{ textAlign: 'center', color: 'var(--color-accent-blue)', fontSize: '1rem', marginBottom: '0.6rem', fontWeight: 600 }}>
           Read it as: <em>crowd a system enough and its parts start acting as one &mdash; this says how fast that
           switch flips.</em>
+        </p>
+        <p style={{ textAlign: 'center', color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.6rem' }}>
+          This is the density-keyed form, C<sub>&rho;</sub>. The two galaxy tests that refuted the framework on its own terms ran on
+          an acceleration-keyed cousin with a floor, C<sub>a</sub>, and the RAR fit on a third, C<sub>g</sub>; all three are written
+          out under &ldquo;Which C the galaxy numbers used&rdquo; below (pointer added 2026-10-10).
         </p>
         <p style={{ textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
           <strong>Never seen these symbols? Read it out loud like this:</strong> &ldquo;coherence, at a given
@@ -447,7 +452,12 @@ export default function Home() {
               <strong>f&sigma;₈</strong> = growth rate of cosmic structure;{' '}
               <strong>g<sub>bar</sub> / g<sub>obs</sub> / a<sub>0</sub></strong> = acceleration from visible matter / observed acceleration / MOND&apos;s acceleration scale;{' '}
               <strong>&Omega;<sub>m</sub> / &Omega;<sub>b</sub></strong> = matter / baryon fraction of the universe;{' '}
-              <strong>LLM</strong> = large language model.{' '}
+              <strong>LLM</strong> = large language model;{' '}
+              <strong>BAO</strong> = baryon acoustic oscillations (a standard ruler in galaxy clustering);{' '}
+              <strong>DESI</strong> = Dark Energy Spectroscopic Instrument (the survey behind the BAO and growth tests);{' '}
+              <strong>KiDS-1000</strong> = a weak-lensing survey (Kilo-Degree Survey, 1000 deg&sup2;);{' '}
+              <strong>Youden&apos;s J</strong> = a 0-to-1 score for how well a classifier separates two classes (0 = coin flip);{' '}
+              <strong>CFD</strong> = computational fluid dynamics.{' '}
               More in the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
             </p>
             <p id="why-keep-reading" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.6rem 0 0', scrollMarginTop: '5rem' }}>

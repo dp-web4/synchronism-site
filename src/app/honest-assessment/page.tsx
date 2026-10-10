@@ -72,6 +72,24 @@ export default function HonestAssessment() {
           Validation badge definitions (canonical reference)
         </summary>
 
+        <div id="badge-table" style={{ marginTop: '0.75rem', scrollMarginTop: '5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          <strong>The nine badges in one table</strong> (added 2026-10-10; a technical-writer persona clicked a badge wanting one
+          sentence and got a taxonomy. Everything below this table is the long form. Operational states and lifecycle verbs
+          are <em>not</em> badges; the refutation table&apos;s Root column is a third axis and is explained at the table.)
+          <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: '0.2rem 0.75rem', marginTop: '0.4rem' }}>
+            <strong>Active-MRH</strong><span>in active research focus (MRH-relationship family)</span>
+            <strong>Parallel-Paths</strong><span>kept in the hypothesis space, not in focus, not abandoned</span>
+            <strong>Sidelined</strong><span>was in focus, now parked; reactivation condition stated</span>
+            <strong>Superseded</strong><span>replaced by a later formulation</span>
+            <strong>Audited-Negative</strong><span>closed audit finding; durable; does not move</span>
+            <strong>Untested</strong><span>prediction exists, no data yet (descriptive family)</span>
+            <strong>Speculative</strong><span>conceptual proposal, no quantitative test</span>
+            <strong>Reparametrization</strong><span>equivalent to existing physics in different notation</span>
+            <strong>Failed</strong><span>contradicted by data, with the specific error</span>
+          </div>
+          <span style={{ color: 'var(--color-text-muted)' }}>Retired, still met on a few older pages: Validated, Strongly Supported.</span>
+        </div>
+
         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
           <strong>How to read a badge (contract, 2026-07-08):</strong> every badge has two parts. The color
           and leading word(s) are the <em>formal status</em>, drawn only from the two families below (plus
@@ -394,8 +412,8 @@ export default function HonestAssessment() {
           (fσ₈(z=0.51)&nbsp;&gt;&nbsp;0.46 at &gt;3σ) was met at only ~1.5σ — <strong>the test as registered
           lacked the power to discriminate, and is not counted as a refutation.</strong>{' '}
           Verdict: <strong>post-hoc retrodiction — disfavored on σ₈ amplitude; underpowered on the registered statistic.</strong>{' '}
-          The LRG1 (z=0.51) bin at fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 (&ldquo;enhancement&rdquo;) is a single
-          ~1.2σ fluctuation, not the ensemble signal — the DR1 ensemble growth index γ_growth&nbsp;≈&nbsp;0.58&nbsp;±&nbsp;0.11
+          The LRG1 (z=0.51) bin at fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.09 (+0.12/&minus;0.14) (&ldquo;enhancement&rdquo;; read 1.16&nbsp;±&nbsp;0.13, the QSO row, until 2026-10-10) is a single
+          ~0.6σ fluctuation, not the ensemble signal — the DR1 ensemble growth index γ_growth&nbsp;≈&nbsp;0.58&nbsp;±&nbsp;0.11
           actually leans mildly toward suppression, the framework&apos;s own direction. Pinning the kill on
           &ldquo;wrong direction&rdquo; would be fragile against DR2 (growth results unpublished, ~Spring 2027); the amplitude statistic is the defensible one.
           Note: a 2026-05-25 &ldquo;correction&rdquo; that claimed fσ₈&nbsp;≈&nbsp;0.45 was itself an error — that value belongs to arXiv:2512.03230
@@ -617,7 +635,7 @@ export default function HonestAssessment() {
                 <tr><td style={{ padding: '0.4rem' }}>Environment scatter, r&sup2; = 0.0001 (Session 177&apos;s registration, run as registered; filed on <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> as TEST-03s, a substitute for the never-run ALFALFA TEST-03. The research ledger labels this run &ldquo;TEST-08&rdquo;, which on this site is the Freeman-law card &mdash; an ID collision, flagged 2026-09-11)</td><td style={{ padding: '0.4rem' }}>The <em>registered</em> amplitude (S177: environment explains &gt;20% of RAR scatter, kill bar r&sup2; &lt; 0.09 &mdash; the claim and the kill bar bracket an undecided band, 0.09 &le; r&sup2; &lt; 0.20, where neither verdict fires; the measured value sits below both) &mdash; a number never derived from C(&#x03C1;). The equation&apos;s own ambient-density lever at SPARC outer radii is &le; 2&times;10<sup>&minus;3</sup> dex against ~0.1 dex of scatter, i.e. r&sup2; &asymp; 2&ndash;5&times;10<sup>&minus;4</sup> at most; the measured 1&times;10<sup>&minus;4</sup> is <em>consistent with the equation</em>. Reclassified 2026-09-05 (this row read &ldquo;the cleanest kill on the list&rdquo; until then; caught by a visitor researcher persona). The null stands as a permanent elimination of S177&apos;s claim and as a transferable result: the RAR is a universal local law to r&sup2; &lt; 10<sup>&minus;4</sup> against ambient density</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Registration-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>TEST-25 Cassini/SPARC, +17.95&sigma;</td><td style={{ padding: '0.4rem' }}>The RAR-preferred interpolating-function family &mdash; <strong>which MOND also uses</strong>. Published as Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781) at 8.7&sigma; &mdash; their figure marginalizes over a&#x2080;, M/L and RAR-fit uncertainty, which is why it is ~2&times; smaller than the +17.95&sigma; here (citation added 2026-09-06)</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Inherited from MOND <strong style={{ color: '#f87171' }}>&mdash; contested 2026-09-10, see below</strong></td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>Bell/CHSH substrate (Bet B1), S &le; 2.00</td><td style={{ padding: '0.4rem' }}>Local arm: Bell&apos;s theorem, illustrated. Nonlocal arms: two construction nulls &mdash; not a theorem about nonlocal no-signaling substrates, which Bell does not bound (Toner &amp; Bacon 2003 type untested; relabelled 2026-09-14) &mdash; this page calls it a &ldquo;pedagogical corollary&rdquo; elsewhere</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Construction check</td></tr>
-                <tr style={{ opacity: 0.8 }}><td style={{ padding: '0.4rem' }}><em>Not counted:</em> a&#x2080;(z) = cH(z)/2&#x03C0; vs the high-z RAR (Ciocan et al. 2026, arXiv:2604.22613)</td><td style={{ padding: '0.4rem' }}>The one prediction that structurally differs from MOND&apos;s constant a&#x2080;. Tested, and <strong>non-discriminating</strong>: the deviation is anchor-dominated (four published a&#x2080;(0) values spread 69%; consistent at 0.5&#x03C3; on the McGaugh+2016 anchor) and &#x039B;CDM+baryons simulations predict the same growth. Listed here 2026-09-05 because it appeared on no ledger &mdash; see <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link> row 4</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Non-discriminating</td></tr>
+                <tr style={{ opacity: 0.8 }}><td style={{ padding: '0.4rem' }}><em>Not counted:</em> a&#x2080;(z) = cH(z)/2&#x03C0; vs the high-z RAR (Ciocan et al. 2026, arXiv:2604.22613)</td><td style={{ padding: '0.4rem' }}>The one prediction that structurally differs from MOND&apos;s constant a&#x2080;. Tested, and <strong>non-discriminating</strong>: the deviation is anchor-dominated (four published a&#x2080;(0) values spread 69%; consistent at 0.5&#x03C3; on the McGaugh+2016 anchor) and &#x039B;CDM+baryons simulations predict the same growth. Not counted by the rule that counts TEST-25: a refutation needs a failure condition stated before the comparison (TEST-25&apos;s was pre-registered); a&#x2080;(z) had none and no anchor-independent number, so neither its miss on three anchors nor its hit on one (like for like it beats a constant a&#x2080; on Ciocan; RC100 says the opposite) enters the tally (rule stated here 2026-10-10). Listed here 2026-09-05 because it appeared on no ledger &mdash; see <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link> row 4</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Non-discriminating</td></tr>
                 <tr style={{ opacity: 0.8 }}><td style={{ padding: '0.4rem' }}><em>Not counted:</em> Dark-energy sector (&rho;<sub>DE</sub> = &rho;<sub>m</sub>(1&minus;C)/C, Session 100) vs DESI DR2</td><td style={{ padding: '0.4rem' }}>A researcher persona (2026-09-06) asked why the sector&apos;s miss of DESI&apos;s w = &minus;1 crossing is not a seventh refutation. Because on <strong>direct likelihood fit</strong> (DR2 BAO + Planck priors + Dovekie SN, executed 2026-08-12) it is not a miss: the substituted family nests &Lambda;CDM at &gamma; = &frac12; and the data put it there (&gamma; = 0.487, &Delta;&chi;&sup2; = &minus;0.3 vs &Lambda;CDM), so it pays &Lambda;CDM&apos;s own ~2.9&sigma; crossing cost and no more. The quoted 3.4&ndash;5.4&sigma; came from forcing w&#x2080; to DESI&apos;s central value, a point the likelihood never visits. The two <em>covariant</em> completions do fail the fit outright (A: exact Einstein&ndash;de Sitter, &chi;&sup2; &asymp; 9,900; B: &Delta;&chi;&sup2; &ge; +79 at every &omega;, hardening to w&#x2080; = &minus;3.18 at the Cassini-allowed &omega; &ge; 4&times;10&#x2074;) &mdash; but those are completions the archive never committed to; refuting them bounds a class, it does not kill a registered prediction. Archive ledger: Bucket 3 &mdash; &Lambda;CDM where it lives, excluded where it would differ. See <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy &amp; DESI</Link></td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Reparametrization (&Lambda;CDM)</td></tr>
               </tbody>
             </table>
@@ -1229,7 +1247,7 @@ export default function HonestAssessment() {
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>TEST-04a: DESI RSD fσ₈ — Post-hoc Retrodiction, Disfavored on σ₈ but Underpowered on the Registered Statistic (Corrected 2026-07-14)</h3>
-              <ValidationBadge status="failed" label="Disfavored 2.4σ on σ₈ (a GR-conditioned statistic); ~1.5σ on the registered fσ₈(z=0.51); underpowered as registered; post-hoc, not counted as a refutation" />
+              <ValidationBadge status="failed" label="Disfavored 2.4σ on σ₈ (a GR-conditioned statistic); ~0.9σ on the registered fσ₈(z=0.51); underpowered as registered; post-hoc, not counted as a refutation (numbers corrected 2026-10-10)" />
             </div>
             <PlainTerms>
               the framework predicted the universe&apos;s large-scale structure should be about 10%
@@ -1246,11 +1264,11 @@ export default function HonestAssessment() {
             </p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               <strong>The single-bin &ldquo;enhancement&rdquo; reading is a qualified, not load-bearing, finding.</strong>{' '}
-              LRG1 (z_eff=0.51) fσ₈/(fσ₈)<sub>fid</sub>&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 — growth above the ΛCDM fiducial
-              in that one bin (~1.2σ). But the DESI DR1 full-shape RSD <em>ensemble</em> growth index
+              LRG1 (z_eff=0.51) fσ₈/(fσ₈)<sub>fid</sub>&nbsp;=&nbsp;1.09 (+0.12/&minus;0.14) — above the ΛCDM fiducial
+              in that one bin (~0.6σ; this read 1.16&nbsp;±&nbsp;0.13, Table 9&apos;s QSO row, until 2026-10-10). But the DESI DR1 full-shape RSD <em>ensemble</em> growth index
               γ<sub>growth</sub>&nbsp;≈&nbsp;0.58&nbsp;±&nbsp;0.11, <strong>above</strong> GR&apos;s 0.545 — which leans mildly
               toward <em>suppression</em>, the framework&apos;s own predicted direction. Reading LRG1 alone as
-              &ldquo;sign-wrong regardless of which bin&rdquo; over-reads a single ~1.2σ bin against an ensemble that
+              &ldquo;sign-wrong regardless of which bin&rdquo; over-reads a single ~0.6σ bin against an ensemble that
               trends the other way. (Corrected 2026-07-02: a 2026-07-01 explorer re-execution and an independent
               2026-07-02 visitor Pass&nbsp;4 researcher read both flagged the same overclaim.)
             </p>
@@ -1258,10 +1276,13 @@ export default function HonestAssessment() {
               <strong>Correction (2026-07-14): the registered kill criterion and the delivered verdict use
               different statistics, and the substitution is not innocent.</strong> The kill criterion below
               is registered on fσ₈(z=0.51) &gt; 0.46 for a &gt;3σ ruling-out. Computed directly from this
-              page&apos;s own numbers — LRG1 fσ₈&nbsp;=&nbsp;(fσ₈)<sub>fid</sub>&nbsp;×&nbsp;1.16&nbsp;±&nbsp;0.13
-              &nbsp;=&nbsp;0.474&nbsp;×&nbsp;1.16&nbsp;±&nbsp;0.062&nbsp;=&nbsp;0.550&nbsp;±&nbsp;0.062 — the 0.46
-              threshold is exceeded by only <strong>~1.5σ</strong>, well short of the &gt;3σ the criterion
-              demands for a ruling-out (it does clear the weaker &gt;2σ &ldquo;disfavors&rdquo; clause at 0.45).
+              page&apos;s own numbers — LRG1 fσ₈&nbsp;=&nbsp;(fσ₈)<sub>fid</sub>&nbsp;×&nbsp;(1.09 +0.12/&minus;0.14)
+              &nbsp;=&nbsp;0.4733&nbsp;×&nbsp;1.09&nbsp;=&nbsp;0.516 (+0.057/&minus;0.066) — the 0.46
+              threshold is exceeded by only <strong>~0.9σ</strong>, well short of the &gt;3σ the criterion
+              demands for a ruling-out (the weaker &gt;2σ &ldquo;disfavors&rdquo; clause at 0.45 is not met either: the
+              prediction sits ~1.5σ from the data).{' '}
+              <em>Corrected 2026-10-10:</em> until 2026-10-10 this read 0.474 × 1.16 ± 0.062 = 0.550 ± 0.062 and ~1.5σ; the 1.16 ± 0.13 was Table 9&apos;s QSO row (z = 1.49), not LRG1, on nine pages since 2026-05-26. A researcher persona asked for the table value to be quoted directly; it was, and the number moved
+              the other way from the seventh refutation the persona thought it might become.
               The 2.4σ figure that formerly carried a &ldquo;Kill Criterion Triggered&rdquo; label on this
               page (last instance removed from the Verdict section 2026-07-17) is instead a
               comparison on <strong>σ₈</strong>, a different parameter inferred from a full-shape EFTofLSS fit
@@ -1325,7 +1346,7 @@ export default function HonestAssessment() {
             </p>
             <div style={{ background: 'rgba(56,189,248,0.06)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginTop: '0.75rem', fontSize: '0.85rem' }}>
               <strong style={{ color: 'var(--color-accent-blue)' }}>What this rules out beyond Synchronism:</strong>{' '}
-              DESI DR1 full-shape (arXiv:2411.12021) finds LRG1 fσ₈/(fσ₈)<sub>fid</sub>&nbsp;=&nbsp;1.16&plusmn;0.13 — growth <em>above</em> ΛCDM, opposite the predicted suppression.
+              DESI DR1 full-shape (arXiv:2411.12021) finds LRG1 fσ₈/(fσ₈)<sub>fid</sub>&nbsp;=&nbsp;1.09 (+0.12/&minus;0.14) — ~0.6σ <em>above</em> ΛCDM, opposite the predicted suppression but consistent with it at ~1.5σ (corrected 2026-10-10 from 1.16&plusmn;0.13, the QSO row). At ~1.5σ in one bin this is a direction, not an exclusion.
               This constrains <strong>Synchronism-form uniform, scale-independent late-time growth suppression</strong>: any framework that predicts a uniform coherence-damping of structure growth across all scales sits in the same disfavored direction.
               <em>Scope note:</em> this does <strong>not</strong> exclude massive neutrinos, warm dark matter, or f(R) gravity &mdash; those mechanisms are k-dependent and scale-localized, fundamentally distinct from a uniform coherence suppression; DESI+CMB joint analyses treat them as fully live. The constraint applies specifically to the uniform scale-independent class, not to suppression mechanisms in general.
             </div>

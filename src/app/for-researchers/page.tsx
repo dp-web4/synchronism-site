@@ -20,12 +20,13 @@ export default function ForResearchers() {
           <strong>The program in three sentences.</strong> (1) <em>Claim:</em> the framework&apos;s tanh-log equation, fitted
           freely, goes to the one dial setting (&#x03B3; = &frac12;) where it turns into somebody else&apos;s formula: Milgrom&apos;s
           simple MOND interpolating function for galaxies, and a cosmological constant (&#x039B;) for dark energy.
-          (2) <em>Numbers:</em> &#x03B3; = 0.489 on SPARC rotation curves (acceleration-keyed; &Upsilon; frozen at 0.5,
+          (2) <em>Caveat, before the numbers:</em> <strong>what follows is a deflation, not a concordance.</strong> The two
+          numbers below are the same point of one function family in different variables, not one parameter measured twice;
+          both standard models sit at &#x03B3; = &frac12; by construction, so the agreement had no power to fail (order
+          swapped 2026-10-10: a graduate-physics persona skimming the numbers read concordance before reaching this sentence).
+          (3) <em>Numbers:</em> &#x03B3; = 0.489 on SPARC rotation curves (acceleration-keyed; &Upsilon; frozen at 0.5,
           points unweighted &mdash; with mass-to-light, distance and inclination marginalized per galaxy the fit moves to
           0.6 [0.43, 0.95]), and 0.487 (+0.024/&minus;0.021) on DESI DR2 + CMB + supernovae (density-keyed, mean density).
-          (3) <em>Caveat:</em> <strong>this is a deflation, not a concordance.</strong> The two numbers are the same point of
-          one function family in different variables, not one parameter measured twice; both standard models sit at
-          &#x03B3; = &frac12; by construction, so the agreement had no power to fail.
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.4rem' }}>
             <summary style={{ cursor: 'pointer' }}>The algebra and the error bars</summary>
             &#x03B3; = &frac12; is the one value at which (1+x)<sup>2&#x03B3;</sup> is linear, so C = x/(x+2) (Milgrom&apos;s simple
@@ -44,6 +45,24 @@ export default function ForResearchers() {
               reader called it more informative than the scoreboard.</li>
             </ul>
           </details>
+        </div>
+        <div style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: 'var(--color-accent-violet)' }}>Which C? Three functions share the letter.</strong> (Written out
+          here 2026-10-10; a graduate-physics persona found all three only on the Galaxy Curve Plotter.){' '}
+          <strong>C<sub>&rho;</sub></strong> = tanh(&gamma;&nbsp;ln(1 + &rho;/&rho;<sub>crit</sub>)), keyed on local density:
+          the landing-page equation, tested by the local-density no-go (item 1), the globular-cluster window (item 5) and the
+          planets.{' '}
+          <strong>C<sub>g</sub></strong> = tanh(&gamma;&nbsp;ln(1 + g<sub>obs</sub>/a&#x2080;&prime;)), the same shape keyed on
+          observed acceleration as an implicit &mu;: the RAR shape fit (&gamma; = 0.489; &Delta;BIC +184 by point at
+          &gamma; = 2, &asymp; +11 by galaxy) and the Cassini squeeze (TEST-25).{' '}
+          <strong>C<sub>a</sub></strong> = &Omega;<sub>m</sub> + (1 &minus; &Omega;<sub>m</sub>)&middot;x/(1+x),
+          x = (g<sub>bar</sub>/a&#x2080;)<sup>1/&phi;</sup>, evaluated explicitly at g<sub>bar</sub>: a floored simple-&mu;
+          with an asserted exponent that no archive document derives (the 2026-09-17 check found the TEST-09 kill does not
+          depend on it). <em>This</em>, not the headline equation, is what the two framework-specific refutations (TEST-09,
+          TEST-10) ran on, and its floor 1/&Omega;<sub>m</sub> = 3.17 is the one structural difference from MOND. A reader
+          who takes the landing equation and tries to reproduce TEST-10 will compute the wrong function. The refutation
+          ledger&apos;s &ldquo;Which C&rdquo; column names the function for every row; glossary entry:{' '}
+          <Link href="/glossary#which-c-which" style={{ color: 'var(--color-accent-violet)' }}>Which C? Which &gamma;?</Link>.
         </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           An arriving expert should not have to excavate the failure documentation to find what
@@ -119,7 +138,7 @@ export default function ForResearchers() {
             <li>
               <a href="#locality-no-go" style={{ color: 'var(--color-accent-blue)' }}>1. Local-density no-go</a>: a knee keyed
               on local volumetric density must fall as V<sup>&minus;2</sup> (BTFR-forced); the framework asserts &#x03C1;<sub>crit</sub> &prop;
-              V<sup>+2</sup>, and the measured knee has no velocity exponent (V<sup>+2</sup> excluded at ~11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap)). Algebraic-coupling class only; gradient (symmetron-class) schemes escape. Refracted Gravity (item 5&apos;s comparison, not excluded) is outside this class for the same reason: its permittivity &epsilon;(&rho;) enters the Poisson equation under the divergence, &nabla;&middot;(&epsilon;&nabla;&Phi;) = 4&pi;G&rho;, not as a multiplier on g, so its knee is identifiable where an algebraic one is not (added 2026-09-29).
+              V<sup>+2</sup>, and the measured knee has no velocity exponent (V<sup>+2</sup> excluded at ~11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap); the BTFR-forced V<sup>&minus;2</sup> is excluded at ~10&sigma; by the same measurement, exponent &minus;0.16 &plusmn; 0.19, so no velocity scaling of a density knee reproduces both the fitted knee and the BTFR &mdash; quantified 2026-10-10). Algebraic-coupling class only; gradient (symmetron-class) schemes escape. Refracted Gravity (item 5&apos;s comparison, not excluded) is outside this class for the same reason: its permittivity &epsilon;(&rho;) enters the Poisson equation under the divergence, &nabla;&middot;(&epsilon;&nabla;&Phi;) = 4&pi;G&rho;, not as a multiplier on g, so its knee is identifiable where an algebraic one is not (added 2026-09-29).
             </li>
             <li>
               <a href="#gc-window" style={{ color: 'var(--color-accent-blue)' }}>5. Globular-cluster exclusion window</a>: 42
@@ -280,7 +299,7 @@ export default function ForResearchers() {
             f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C, so C <em>is</em> the interpolating function &#956; by
             definition. And at &#947;=1/2 &mdash; SPARC&apos;s free fit lands at 0.489, 2.2% away &mdash;
             C(&#961;)&nbsp;=&nbsp;x/(x+2)&nbsp;=&nbsp;&#956;<sub>simple</sub>(x/2) <em>identically</em> (see{' '}
-            <Link href="/coherence-function" style={{ color: '#38bdf8' }}>Coherence Function</Link>). Put those
+            <Link href="/coherence-function" style={{ color: '#38bdf8' }}>Coherence Function</Link>). <em>Prior art, cited 2026-10-10:</em> the simple &mu; is Famaey &amp; Binney 2005 (MNRAS 363, 603), who found that it fits rotation curves; its Solar-System trouble is Hees et al. 2016 (PRD 93, 064028) and Desmond, Hees &amp; Famaey 2024. &ldquo;SPARC prefers &gamma; = &frac12; and Cassini kills it&rdquo; is a rediscovery of that twenty-year-old pair, which is the &ldquo;inherited from MOND&rdquo; root stated with its citation. Put those
             together: the galaxy sector is MOND, with &#956;&apos;s argument swapped from acceleration to local
             density &#961;. (Precision, 2026-09-08, see revision notes: in MOND μ is keyed on g<sub>obs</sub>, and the SPARC fit that
             produced γ = 0.489 used C exactly that way &mdash; as an implicit μ(g<sub>obs</sub>/a₀′), solved for
@@ -314,7 +333,7 @@ export default function ForResearchers() {
             &rho;<sub>crit</sub> &prop; V<sup>+2</sup> — inverted sign, 240&times;&ndash;300,000&times;
             magnitude error growing with V. This is profile-independent within the family it covers.{' '}
             <strong>Measured since (2026-08-27; archive ledger row restated 2026-08-28):</strong> on SPARC the knee
-            carries no velocity exponent at all; V<sup>+2</sup> is excluded at about 11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap). That figure is for the forward regression of disc surface density on V, which is the question a law &#x03C1;<sub>crit</sub>(V) poses; the inverse and orthogonal fits answer different questions and would give about V<sup>+2</sup>, and the gap between them is the intrinsic scatter of real galaxies (r = 0.64; explorer finding 2026-08-27). The refutation stands as
+            carries no velocity exponent at all; V<sup>+2</sup> is excluded at about 11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap), and the BTFR-forced V<sup>&minus;2</sup> at about 10&sigma; by the same measured exponent (&minus;0.16 &plusmn; 0.19): no velocity scaling of a density knee reproduces the BTFR. That figure is for the forward regression of disc surface density on V, which is the question a law &#x03C1;<sub>crit</sub>(V) poses; the inverse and orthogonal fits answer different questions and would give about V<sup>+2</sup>, and the gap between them is the intrinsic scatter of real galaxies (r = 0.64; explorer finding 2026-08-27). The refutation stands as
             a <em>wrong exponent</em>. &ldquo;Inverted sign&rdquo; and the 240&times;&ndash;300,000&times; figures are the
             pre-measurement statement, kept here because this is its citable form.{' '}
             <strong>Scope (corrected 2026-07-27; see revision notes):</strong> the result does not hold for{' '}
@@ -809,7 +828,7 @@ export default function ForResearchers() {
             residual is +0.021 ± 0.027, consistent with zero, so ratios to it swing from 3.7× to 9× while the density residual stays
             put (corrected 2026-09-24; this line previously said the opposite, and{' '}
             <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link> had the right form).{' '}
-            <strong>Tides and the contested clusters:</strong> dispersion bins beyond 0.98 of the catalogue tidal radius were
+            <strong>Tides and the contested clusters:</strong> dispersion bins beyond 0.98 of the catalogue tidal radius (a model-computed column: Baumgardt &amp; Hilker tabulate Jacobi radii from Webb et al. 2013 eq. 8 using the N-body mass and a Newtonian Galactic potential, so the cut inherits Newtonian tides; source stated 2026-10-10) were
             cut, and constant anisotropy was scanned (β from −0.6 to +0.8). Tidal heating and unbound extra-tidal stars inside
             r<sub>t</sub> were <em>not</em> modelled. The ≥ 10-bin cut leaves 42 clusters at R<sub>GC</sub> ≤ 22 kpc. That
             removes the remote, isolated clusters where MOND is actually contested: NGC 2419 (Ibata et al. 2011; Sanders
@@ -849,16 +868,16 @@ export default function ForResearchers() {
             DESI DR1 full-shape combined &#x03C3;&#x2088;&nbsp;=&nbsp;0.841&plusmn;0.034 (Table 10) &mdash; a
             <strong> 2.4&#x03C3;</strong> amplitude tension on &#x03C3;&#x2088;. The 0.76 was calibrated to the weak-lensing S8 value, so this 2.4σ restates the known lensing-vs-clustering S8 difference; a calibrated number cannot test the framework (note added 2026-10-04). <strong>Correction (2026-07-14):
             the criterion was registered on a different statistic, fσ₈(z=0.51) &gt; 0.46 for &gt;3&#x03C3;.</strong>{' '}
-            On that statistic directly &mdash; LRG1 fσ₈&nbsp;=&nbsp;0.474&nbsp;&times;&nbsp;1.16&plusmn;0.062&nbsp;=
-            &nbsp;0.550&plusmn;0.062 &mdash; the threshold is exceeded by only <strong>~1.5&#x03C3;</strong>, short
-            of the registered &gt;3&#x03C3; bar. &#x03C3;&#x2088; is inferred assuming GR growth kernels, so using
+            On that statistic directly &mdash; LRG1 fσ₈&nbsp;=&nbsp;0.4733&nbsp;&times;&nbsp;(1.09&nbsp;+0.12/&minus;0.14)&nbsp;=
+            0.516&nbsp;(+0.057/&minus;0.066), DESI DR1 Table 9 (ShapeFit+BAO) and Table 11, read verbatim 2026-10-10 &mdash; the threshold is exceeded by only <strong>~0.9&#x03C3;</strong>, short
+            of the registered &gt;3&#x03C3; bar, and the prediction sits ~1.5&#x03C3; from the data. <em>Corrected 2026-10-10:</em> this sentence read &ldquo;0.474 &times; 1.16&plusmn;0.062 = 0.550&plusmn;0.062, ~1.5&#x03C3;&rdquo; from 2026-07-14; the 1.16 was Table 9&apos;s QSO row (z = 1.49), carried on nine pages since 2026-05-26, and a researcher persona&apos;s request to see the table value quoted directly exposed it. &#x03C3;&#x2088; is inferred assuming GR growth kernels, so using
             it to falsify a modified-growth model risks circularity. DESI&apos;s own purpose-built
             modified-gravity analysis, Ishak et al. arXiv:2411.12026 (JCAP 09 (2025) 053, previously uncited
             here), gives &#x3bc;&#x2080;&nbsp;=&nbsp;0.11 (+0.45/&minus;0.54) from DESI alone &mdash; a 12%
             fσ₈ suppression maps to a &#x3bc;&#x2080; inside that 1&#x03C3; band. Honest reading: <strong>the test
             as registered lacked the power to discriminate this framework from GR</strong> &mdash; the
             &#x03C3;&#x2088; comparison is real but is not the registered kill. A single bin
-            (LRG1, z=0.51) also shows fσ₈ growth above fiducial (ratio 1.16&plusmn;0.13, ~1.2&#x03C3;), and the
+            (LRG1, z=0.51) also sits above fiducial (ratio 1.09 +0.12/&minus;0.14, ~0.6&#x03C3;; quoted as 1.16&plusmn;0.13, the QSO row, until 2026-10-10), and the
             DESI DR1 full-shape RSD <em>ensemble</em> growth index &#x03B3;<sub>growth</sub>&nbsp;&#x2248;&nbsp;0.58,
             above GR&apos;s 0.545, leans mildly toward suppression &mdash; the predicted direction. Caveats:
             the prediction was <strong>post-hoc</strong> (&#x03C3;&#x2088; calibrated to the S8 lensing tension,

@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -179,6 +180,7 @@ export default function GalaxyPlotter() {
   return (
     <>
       <Breadcrumbs currentPath="/galaxy-plotter" />
+      <PathNav currentPath="/galaxy-plotter" />
       <h1>Galaxy Curve Plotter</h1>
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.35rem' }}>
         <ValidationBadge status="failed" label="published equation, γ = 2 at ρ_crit = 0.029·V_flat²" />
@@ -246,7 +248,7 @@ export default function GalaxyPlotter() {
           64&nbsp;M<sub>&#x2609;</sub>/pc&sup3; against disc densities of order 10<sup>&minus;2</sup>: no galaxy in the
           dropdown can lift off the Newtonian baseline, for any of them.
           <br /><strong>One more cross-link the plot owes you:</strong> the green MOND reference uses the simple-&nu;
-          function &mdash; the RAR-preferred choice, and <em>also</em> precisely the function TEST-25 reports Cassini
+          function of Famaey &amp; Binney (2005) &mdash; not the RAR fit function the &Delta;BIC table on Galaxy Rotation uses (McGaugh&apos;s &nu;); the two are different functions and are not interchangeable toward the Solar System (corrected 2026-10-10; this note previously called the simple function &ldquo;the RAR-preferred choice&rdquo;) &mdash; and <em>also</em> precisely the function TEST-25 reports Cassini
           excluding at +17.95&sigma;. The benchmark drawn here is a function this site refutes in the Solar System;
           that is a real tension in the comparison and not a drafting slip.
         </div>
@@ -361,7 +363,7 @@ export default function GalaxyPlotter() {
             <li><strong>Violet solid</strong> — Synchronism&apos;s real C(&#x03C1;) at &#x03B3;=2 with the framework&apos;s asserted &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;. The disk&apos;s density is thousands of times below &#x03C1;<sub>crit</sub>, so C stays near zero and the curve sits on the baryon line. <strong>This is the 2026-07-02 audit result, rendered.</strong> <em>Caveat (2026-08-05, revised same day):</em> that &ldquo;thousands of times below&rdquo; is <strong>conditional on A = 0.029</strong>, since &#x03C1;/&#x03C1;<sub>crit</sub> &#x221D; 1/A &mdash; at A = 4.6&times;10<sup>&minus;5</sup> the ratio for NGC 3198 is 0.60 and the curve would lift off the baryon line. But the 635&times; between them is a <strong>law swap, not a scale choice</strong>: universal A with &#x03C1;<sub>crit</sub> &#x221D; V&sup2; versus per-galaxy A &#x221D; R<sub>half</sub><sup>&minus;2</sup> with &#x03C1;<sub>crit</sub> &#x221D; V<sup>0.5</sup> &mdash; the two-law fork{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</Link> item 1 has documented since 2026-06-07. An earlier version of this caveat attributed the gap to an unstated coarse-graining length &#x2113;; <strong>that is withdrawn</strong> &mdash; a self-consistent &#x2113; smooths &#x03C1; and &#x03C1;<sub>crit</sub> alike and <em>cancels</em>, leaving &#x03C1;/&#x03C1;<sub>crit</sub> &#x2272; 0.019&#x03B2;<sub>J</sub>&sup2; in every sector at every &#x2113;. This plot shows the framework under its own stated law.</li>
             <li><strong>Amber dotted</strong> — shown only to illustrate what a working boost would look like; <strong>not a prediction of any theory</strong>. It is the hand-tuned tanh(radius) stand-in previously displayed, and it fits because it was drawn to fit; no &#x03C1;, &#x03C1;<sub>crit</sub>, or &#x03B3; enters it. (Recolored from violet 2026-07-23: it is an illustration, not the theory.)</li>
-            <li><strong>Green dashed</strong> — MOND&apos;s real simple-&#x03BD; function on a BTFR-assigned mass (one global a&#x2080;, zero per-galaxy knobs). It lands close to the dots — expect ~10% mismatches from the toy mass model, not from tuning.</li>
+            <li><strong>Green dashed</strong> — MOND&apos;s simple-&#x03BD; function (Famaey &amp; Binney 2005) on a BTFR-assigned mass (one global a&#x2080;, zero per-galaxy knobs). It lands close to the dots — expect ~10% mismatches from the toy mass model, not from tuning.</li>
           </ul>
           <div style={{ margin: '0.6rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             <strong>Which MOND, and why it matters:</strong> the green curve here uses the simple-&#x03BD; function
@@ -565,13 +567,13 @@ export default function GalaxyPlotter() {
             <br />
             &bull; <strong>C<sub>a</sub> = &#x03A9;<sub>m</sub> + (1&minus;&#x03A9;<sub>m</sub>)&middot;x/(1+x)</strong>,
             x = (g<sub>bar</sub>/a&#x2080;)<sup>1/&#x03C6;</sup>, keyed on <em>acceleration</em> &mdash; what the
-            TEST-09 and TEST-10 scripts evaluate. Its floor is part of the functional form, not a clip. On the same
-            123 discs it runs <strong>0.329 to 0.954</strong> (median 0.515, IQR 0.235), and{' '}
+            TEST-09 and TEST-10 scripts evaluate. Its floor is part of the functional form, not a clip. Over the 2,856 measured radii of the same
+            123 discs, C<sub>a</sub> itself runs <strong>0.329 to 0.954</strong> (per-radius median 0.515, IQR 0.235), and{' '}
             <strong>0.00%</strong> of the 2,856 radii sit within 1% of the floor. The applied boost spans
             1.05&times;&ndash;3.04&times;, and never reaches the 3.17 ceiling.
             <br /><br />
             So the two corollaries the persona drew are refuted on the framework&apos;s own data: the predicted
-            f<sub>DM</sub> is <em>not</em> a delta function at 0.685 (median 0.585, s.d. 0.062, and <em>no</em> galaxy
+            f<sub>DM</sub> is <em>not</em> a delta function at 0.685 (one value per disc at its outermost radius, N = 123: median 0.585, s.d. 0.062 &mdash; a different sample from the per-radius C<sub>a</sub> median above, which is why 1 &minus; 0.515 &ne; 0.585; stated 2026-10-10 &mdash; and <em>no</em> galaxy
             within 0.01 of the cap), and TEST-09&apos;s slope is <em>not</em> ceiling-independent &mdash; it moves 0.62
             across B<sub>max</sub> &isin; [2, 100]. <strong>What the sweep did find, and it is adverse:</strong>{' '}
             TEST-09&apos;s kill is <Link href="/tier-1-existing" style={{ color: '#38bdf8' }}>convention-dependent</Link>,
@@ -670,13 +672,13 @@ export default function GalaxyPlotter() {
             <circle cx={pad.left + 20} cy={pad.top + 15} r="4" fill="#38bdf8" />
             <text x={pad.left + 30} y={pad.top + 19} fill="#38bdf8" fontSize="10">Observed</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 30} x2={pad.left + 20 + 8} y2={pad.top + 30} stroke="#8b5cf6" strokeWidth="2.5" />
-            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism C(&#x03C1;), as tested: g = g<tspan baselineShift="sub" fontSize="7">bar</tspan>/C, C floored at &#x03A9;<tspan baselineShift="sub" fontSize="7">m</tspan>, &#x03B3;=2 (max C(&#x03C1;) here: {maxC.toFixed(3)}, so C sits on the floor: a flat 3.17&times; boost, Newtonian shape)</text>
+            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism, as tested (gravity &divide; C): g = g<tspan baselineShift="sub" fontSize="7">bar</tspan>/C, C floored at &#x03A9;<tspan baselineShift="sub" fontSize="7">m</tspan>, &#x03B3;=2 (max C(&#x03C1;) here: {maxC.toFixed(3)}, so C sits on the floor: a flat 3.17&times; boost, Newtonian shape)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#c4b5fd" strokeWidth="1.5" strokeDasharray="3 3" />
-            <text x={pad.left + 30} y={pad.top + 49} fill="#c4b5fd" fontSize="10">Same C(&#x03C1;), quadrature display wiring: v&sup2; = v<tspan baselineShift="sub" fontSize="7">b</tspan>&sup2; + (V<tspan baselineShift="sub" fontSize="7">flat</tspan>&middot;C)&sup2; (inert: C &asymp; 0 adds nothing)</text>
+            <text x={pad.left + 30} y={pad.top + 49} fill="#c4b5fd" fontSize="10">Same equation, other wiring, adds nothing (quadrature): v&sup2; = v<tspan baselineShift="sub" fontSize="7">b</tspan>&sup2; + (V<tspan baselineShift="sub" fontSize="7">flat</tspan>&middot;C)&sup2; (inert: C &asymp; 0 adds nothing)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />
-            <text x={pad.left + 30} y={pad.top + 64} fill="#22c55e" fontSize="10">MOND (real simple-&#x03BD;, BTFR mass, no per-galaxy tuning)</text>
+            <text x={pad.left + 30} y={pad.top + 64} fill="#22c55e" fontSize="10">MOND, the rival theory (simple-&#x03BD; of Famaey &amp; Binney 2005; BTFR mass; levels off near 0.93 V_flat)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 75} x2={pad.left + 20 + 8} y2={pad.top + 75} stroke="#6b7280" strokeWidth="1.5" strokeDasharray="3 2" />
-            <text x={pad.left + 30} y={pad.top + 79} fill="#6b7280" fontSize="10">Newtonian (baryons only, toy disk)</text>
+            <text x={pad.left + 30} y={pad.top + 79} fill="#6b7280" fontSize="10">Newton, visible matter only (toy disk)</text>
             {showStandIn && <>
               <line x1={pad.left + 20 - 8} y1={pad.top + 90} x2={pad.left + 20 + 8} y2={pad.top + 90} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.75" />
               <text x={pad.left + 30} y={pad.top + 94} fill="#f59e0b" fontSize="10" opacity="0.9">NOT the theory — illustration stand-in: hand-drawn to show what a working boost would look like</text>
@@ -696,7 +698,7 @@ export default function GalaxyPlotter() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
             The <span style={{ color: '#8b5cf6' }}>solid violet curve</span> is Synchronism&apos;s real
-            C(&#x03C1;) evaluated on the disk&apos;s density profile, with gravity divided by C as the tests do &mdash; and it
+            C(&#x03C1;) evaluated on the disk&apos;s density profile, with gravity divided by C as the tests do (in plain words: wherever C is small the theory multiplies gravity up, because dividing by a number below 1 makes it bigger; the floor caps that at 3.17&times;) &mdash; and it
             <strong> gets the shape wrong</strong>: the disk never gets dense enough for C to move off its floor
             (this galaxy&apos;s maximum C(&#x03C1;) is {maxC.toFixed(3)}; the knee needs it to approach 1), so the boost is the
             same everywhere and the curve still falls where the dots stay flat. The{' '}

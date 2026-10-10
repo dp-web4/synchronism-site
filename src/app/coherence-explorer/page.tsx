@@ -183,6 +183,23 @@ export default function CoherenceExplorer() {
             <text x={pad.left + plotW / 2} y={svgH - 4} textAnchor="middle" fill="#9ca3af" fontSize="11">
               {logScale ? 'log₁₀(ρ)' : 'ρ'}
             </text>
+            {/* Axis anchors (visitor 2026-10-10, casual persona: "I can't tell where a galaxy, a gas or a solid would sit").
+                The axis has no units, so the honest anchors are relative to the knee. */}
+            {logScale && (() => {
+              const kneeX = pad.left + ((Math.log10(rhoCrit) - xMin) / (xMax - xMin)) * plotW;
+              return (
+                <>
+                  <text x={pad.left + 4} y={pad.top + plotH - 6} fill="#9ca3af" fontSize="8.5">&larr; sparse: far below the knee (a galaxy disc sits ~10&sup3; below the knee the framework asserts for it)</text>
+                  <text x={pad.left + plotW - 4} y={pad.top + 12} textAnchor="end" fill="#9ca3af" fontSize="8.5">far above the knee: dense, parts act together &rarr;</text>
+                  {kneeX > pad.left && kneeX < pad.left + plotW && (
+                    <>
+                      <line x1={kneeX} y1={pad.top} x2={kneeX} y2={pad.top + plotH} stroke="#9ca3af" strokeDasharray="2 3" strokeWidth="1" />
+                      <text x={kneeX + 3} y={pad.top + plotH - 18} fill="#9ca3af" fontSize="8.5">knee: &rho; = &rho;<tspan baselineShift="sub" fontSize="6.5">crit</tspan></text>
+                    </>
+                  )}
+                </>
+              );
+            })()}
             {/* Y axis label */}
             <text x={12} y={pad.top + plotH / 2} textAnchor="middle" fill="#9ca3af" fontSize="11" transform={`rotate(-90,12,${pad.top + plotH / 2})`}>
               C(ρ)

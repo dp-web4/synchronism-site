@@ -182,6 +182,20 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'In plain words: instead of adding invisible matter to explain why galaxies spin too fast at their edges, MOND (Milgrom, 1983) changes the law of gravity itself \u2014 wherever gravitational acceleration drops below a tiny threshold a\u2080 (about one hundred-billionth of Earth surface gravity), gravity falls off more gently than Newton says. One new constant, and galaxy rotation curves come out right with no dark matter, including relations discovered after MOND predicted them (like the baryonic Tully\u2013Fisher relation). Its weaknesses are at larger scales: galaxy clusters and the CMB still need extra matter or a relativistic extension (the current benchmark is AeST, Skordis\u2013Z\u0142o\u015Bnik 2021, which passes CMB tests). MOND is the rival that matters on this site because every galaxy-scale test here ends the same way: where Synchronism\u2019s equation differs from MOND, data refutes Synchronism; where it doesn\u2019t differ, it IS MOND re-parametrized. (An earlier version of this entry said Synchronism \u201Cderives\u201D a\u2080 \u2014 the audit demoted that to a rederivation of a numerical coincidence Milgrom noted in 1983; see the a\u2080 entry.)',
     learnMore: '/mond-unification',
   },
+  'QUMOND': {
+    term: 'QUMOND',
+    fullName: 'Quasi-linear MOND (Milgrom 2010)',
+    brief: 'A version of MOND written as a modified Poisson equation that is linear in the potential, so it can be solved for real galaxies and for the Solar System. The Cassini test (TEST-25) is run in this formulation.',
+    explanation: 'MOND\u2019s original rule g = \u03BD(g_N/a\u2080)\u00B7g_N is an algebraic relation that only holds exactly for spherical systems. QUMOND (Milgrom 2010) turns it into a field equation: solve Newton\u2019s Poisson equation once, apply \u03BD to the result, then solve Poisson again. The Galaxy Curve Plotter and the site\u2019s Cassini instrument use the simple-\u03BD function inside this equation; the external field effect follows from it automatically.',
+    learnMore: '/tier-1-existing#TEST-25',
+  },
+  'phenomenological': {
+    term: 'phenomenological',
+    fullName: 'Phenomenological (of a formula or curve)',
+    brief: 'Chosen because it matches the data, not derived from a deeper theory. A phenomenological curve can fit perfectly and still explain nothing.',
+    explanation: 'When the site calls the tanh-log equation "phenomenological", it means the S-shape was picked for its behaviour (smooth, bounded, saturating) and then fitted, rather than obtained from a mechanism. That is not a flaw by itself (MOND\u2019s interpolating functions are phenomenological too), but it means the equation cannot be wrong in the way a derivation can: only its fitted values and its predictions can be.',
+    learnMore: '/why-synchronism',
+  },
   'refutation': {
     term: 'Refutation (executed)',
     fullName: 'Executed Refutation \u2014 the site\u2019s counting rule',

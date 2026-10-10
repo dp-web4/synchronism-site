@@ -1,9 +1,44 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-09 (maintainer)*
+*Last updated: 2026-10-10 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-10) — **TEST-04a was adjudicated on the QSO row for 4.5 months. DESI DR1 Table 9's LRG1
+ratio is 1.09 +0.12/−0.14 (fσ₈ = 0.516 +0.057/−0.066), not the 1.16 ± 0.13 the site has carried since 2026-05-26 (that is
+the QSO row, z = 1.49). Prediction ~1.5σ from data (was 2.1σ), threshold cleared by ~0.9σ (was 1.5σ); still underpowered,
+still not counted. Separately: all four prior-art identities (simple μ, Cardassian, Refracted Gravity, Collins LIV) were
+found by lanes with retrieval; zero of 3,308 A2ACW sessions cited any.** Count 6; Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-10-10.md`. Proposal:
+`Synchronism/Research/proposals/test04a_was_adjudicated_on_the_qso_row_and_prior_art_arrives_only_through_retrieval_20261010.md`.
+
+- **Fixed:**
+  - TEST-04a numbers on 9 pages + Tier 1 scorecard (Table 9 read verbatim from v1 and v2; lint rules for the retired values).
+  - PathNav on the Galaxy Curve Plotter (Beginner step 3 had no path bar); plotter legend in plain words; MOND curve
+    labelled simple-ν (Famaey & Binney 2005), not "RAR-preferred"; C_a vs f_DM samples stated.
+  - /for-researchers: three C's side by side; deflation sentence before the numbers; V⁻² excluded at ~10σ; F&B 2005 and
+    Hees 2016 cited; GC r_t is model-computed (Webb+2013 eq. 8).
+  - a₀(z) like for like on /mond-unification and /parameter-derivations; counting rule printed next to the not-counted row.
+  - Landing: coherence disambiguation in the hero; C_ρ/C_a/C_g pointer under the equation; abbreviations; 37 min.
+  - Coherence Explorer: knee marker and relative axis anchors. T_scan box on /two-reframes (explorer 10-09 drained).
+  - Badge table (9 badges, compact); Root-column sentence; glossary QUMOND + phenomenological; nav/footer labels;
+    consciousness demo lead + "static"; γ Calculator caveat above input; MWO status line; A2ACW rederivation record.
+- **site_lint.py:** 158 rules. HEAD control: see log.
+
+### → dp
+- Nothing new gates. (carried) Retire TEST-26/TEST-04a as discriminating; cross-vendor rater; L2 or L3; headline "6" by kind;
+  MRH badge-family rename; LLR row. New question: a prior-art retrieval role in the A2ACW protocol for any future archive run.
+
+### → Next maintainer session
+1. `<Term>` auto-link pass + badge tooltips (carried; two personas again).
+2. Plotter: a "simple view" toggle (dots, Newton, theory) was not done; the legend was reworded instead.
+3. Verify DESI Table 10 σ₈ = 0.841 ± 0.034 verbatim (unchecked since May) — the table register topic covers it.
+
+### → Explorer (new topics)
+- `prior-art-rederivation-rate-before-and-after-retrieval.md` · `a0z-ciocan-per-bin-exponent-vs-rc100.md` ·
+  `table-transcribed-numbers-register.md`
 
 ## 🟢 NEW (maintainer 2026-10-09) — **The DE sector has no discriminating test left: TEST-26's win side is shared with
 wCDM (Δχ² ≤ 0.42 at DR3, explorer 10-08), its kill with ΛCDM, and TEST-04a's readings are closed. Separately, the

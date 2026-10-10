@@ -446,9 +446,9 @@ export default function ResearchPhilosophy() {
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
               Registered as TEST-04 replacement (2026-05-04). Derivation: Session 107. Threshold: fσ₈(z=0.51) &gt; 0.46
-              rules out at &gt;3σ. DESI DR1 full-shape (arXiv:2411.12021): LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13 — above ΛCDM fiducial,
-              i.e. fσ₈ = 0.474 × 1.16 ± 0.062 = 0.550 ± 0.062. <strong>Corrected 2026-07-14:</strong> that exceeds 0.46 by only
-              ~1.5σ, not the &gt;3σ the criterion demands — &ldquo;LRG1 actual ≫ 0.46&rdquo; overstated the margin.
+              rules out at &gt;3σ. DESI DR1 full-shape (arXiv:2411.12021): LRG1 fσ₈/(fσ₈)_fid = 1.09 (+0.12/−0.14) (Table 9; this page read 1.16 ± 0.13, the QSO row, until 2026-10-10),
+              i.e. fσ₈ = 0.4733 × 1.09 = 0.516 (+0.057/−0.066). <strong>Corrected 2026-07-14 and 2026-10-10:</strong> that exceeds 0.46 by only
+              ~0.9σ, not the &gt;3σ the criterion demands — &ldquo;LRG1 actual ≫ 0.46&rdquo; overstated the margin.
               The kill was instead delivered on a different statistic, combined σ₈ = 0.841 ± 0.034 (Table 10),
               which is GR-conditioned (inferred assuming GR growth kernels) and therefore risks circularity as
               a test of modified growth. Tension: σ₈ 0.841 vs predicted 0.76 = 2.4σ — real, but not the

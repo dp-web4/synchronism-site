@@ -42,6 +42,11 @@ export default function ConsciousnessDemo() {
         grouping, not a verdict; the verdict is the Speculative badge above. (Both shown here since 2026-09-08 so the index and
         this page cannot drift apart.)
       </p>
+      <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.95rem', marginTop: '0.75rem', maxWidth: '65ch' }}>
+        <strong>What this shows, in one sentence:</strong> eight Synchronism-internal estimates of a consciousness threshold all
+        land near C &asymp; 0.50, and the chart below is why that is expected (they share one midpoint assumption) rather than
+        evidence. It is a static chart with hover tooltips; there are no controls. (Lead sentence added 2026-10-10.)
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{

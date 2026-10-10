@@ -113,6 +113,25 @@ export default function TwoReframes() {
             Source: <code style={{ fontSize: '0.78rem' }}>explorer/findings/crt-scanning-vs-leggett-garg-zeno-forces-the-phase-lock-and-the-phase-lock-is-lueders.md</code>.
           </p>
         </div>
+        <div style={{ margin: '0.75rem 0 1.25rem', padding: '0.75rem 1rem', background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.25)', borderRadius: '0.375rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <ValidationBadge status="audited-negative" label="T_scan under the archive's own window rule: the Planck, Compton and Bohr clocks all predict classical splitting of single photons" />
+          <p style={{ margin: '0.5rem 0 0' }}>
+            <strong>The archive does name an observable (explorer 2026-10-09, pre-registered before the script).</strong> The
+            Observer Synchronization Framework writes the detector as a window integral over the pattern and says long windows show
+            &ldquo;multiple states&rdquo; and short ones a single state. Taken literally, a window that straddles a mode boundary reads
+            mixed. The cleanest test is one photon on a 50:50 beam splitter, an exact p = &frac12; superposition. Every clock the
+            archive names (the Planck tick, the electron Compton period, the optical and hyperfine Bohr periods) is shorter than a
+            125 ps photon, so under any reading of a mixed window they predict g&sup2;(0) &asymp; 1, classical-wave splitting;
+            Schweickert et al. 2018 measure 7.5 &times; 10<sup>&minus;5</sup>. That is Grangier, Roger &amp; Aspect 1986 turned
+            against the framework&apos;s own detector rule. What survives is a scan period T<sub>scan</sub> &ge; 1.6&ndash;9.4 &micro;s
+            (window = the photon&apos;s 125 ps lifetime), 10<sup>4</sup> times longer than the photon exists, which turns
+            &ldquo;scanning&rdquo; into a random variable drawn once per particle. A global persistent clock fails at every T. The one
+            escape, sampling instantaneously (R0), keeps T<sub>scan</sub> idle at every value and contradicts the archive&apos;s own
+            integral; it stays <em>untested</em>, not refuted. One cheap discriminating measurement remains (g&sup2;(0) against photon
+            duration at fixed window); the framework has not committed to it, so it is a candidate bet, not a registered one.
+            Source: <code style={{ fontSize: '0.78rem' }}>explorer/findings/t-scan-under-the-archives-own-window-rule-every-candidate-clock-predicts-g2-of-one-and-the-survivor-is-slower-than-the-photon.md</code>.
+          </p>
+        </div>
 
         <h3>Wave-Particle Duality</h3>
         <p>

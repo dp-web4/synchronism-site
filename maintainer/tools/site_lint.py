@@ -23,6 +23,17 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-10 (maintainer): TEST-04a LRG1 ratio was DESI Table 9's QSO row; plotter "RAR-preferred" simple-nu; 35-min path total
+    (r"1\.16\s*(±|&plusmn;|\\u00B1)\s*0\.13", "2026-10-10",
+     "DESI DR1 Table 9 LRG1 ratio is 1.09 +0.12/-0.14; 1.16 +/- 0.12 is the QSO row (z = 1.49), carried as LRG1 since 2026-05-26"),
+    (r"0\.550\s*(±|&plusmn;)\s*0\.062", "2026-10-10",
+     "LRG1 fsigma8 is 0.4733 x 1.09 = 0.516 +0.057/-0.066, not 0.550 +/- 0.062"),
+    (r"sits 2\.1(σ|&sigma;) (below|from) (LRG1|the data|the DESI)", "2026-10-10",
+     "on the LRG1 row the prediction sits ~1.5 sigma from the data, not 2.1"),
+    (r"the RAR-preferred choice", "2026-10-10",
+     "the plotter's green curve is the simple-nu of Famaey & Binney 2005, not the RAR fit function (McGaugh's nu)"),
+    (r"~35 min", "2026-10-10",
+     "the five Beginner step times sum to 37 min"),
     # --- retired 2026-10-06 (maintainer): wide-binary "split"; lensing 1.71x; summary-box "decisive on real data"; QM-interpretation overreach
     (r"(each|whichever) outcome spares one (branch|realization)|leaves the (acceleration )?branch standing", "2026-10-06",
      "at the SPARC gamma the acceleration branch is already failed via TEST-25 (same QUMOND+EFE physics); DR4 is a one-parameter squeeze, not a split"),

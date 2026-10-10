@@ -232,14 +232,14 @@ export default function GammaCalculator() {
             <strong>N<sub>corr</sub></strong> = how many particles move together as one correlated unit (1 for a single
             atom; millions for a crystal oscillating in phase). Dimensionless.
           </p>
-          <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
-            N<sub>corr</sub>: <span style={{ fontFamily: 'monospace' }}>{ncorr.toLocaleString()}</span>
-          </label>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', margin: '0 0 0.5rem' }}>
             Before you type a number: no protocol exists for getting N<sub>corr</sub> from a system&apos;s physics without
             first fitting &#x03B3; to its observed behavior (Caveat 3), so a value entered here is a guess you supply, not a
-            measurement the tool can check. The presets are back-fits too.
+            measurement the tool can check. The presets are back-fits too. (Moved above the input 2026-10-10.)
           </p>
+          <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
+            N<sub>corr</sub>: <span style={{ fontFamily: 'monospace' }}>{ncorr.toLocaleString()}</span>
+          </label>
           {logMode ? (
             <input
               type="range" min="0" max="7" step="0.01"

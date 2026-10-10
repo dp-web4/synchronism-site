@@ -53,18 +53,18 @@ export default function CosmologyPredictions() {
             </div>
             <div style={{ background: 'rgba(239, 68, 68, 0.08)', borderRadius: '0.375rem', padding: '0.75rem' }}>
               <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '0.25rem' }}>DESI DR1 full-shape (arXiv:2411.12021)</div>
-              <div style={{ fontWeight: 700, color: '#ef4444' }}>LRG1 fσ₈/(fσ₈)_fid = 1.16 ± 0.13</div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Above ΛCDM fiducial; σ₈ = 0.841 ± 0.034 — 2.4σ from the predicted 0.76, which was calibrated to lensing S8, so it does not test the framework</div>
+              <div style={{ fontWeight: 700, color: '#ef4444' }}>LRG1 fσ₈/(fσ₈)_fid = 1.09 (+0.12/−0.14)</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Above the fiducial by ~0.6σ (Table 9, ShapeFit+BAO; this box read 1.16 ± 0.13, the QSO row, until 2026-10-10); σ₈ = 0.841 ± 0.034 — 2.4σ from the predicted 0.76, which was calibrated to lensing S8, so it does not test the framework</div>
             </div>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
             <strong>The registered kill criterion (fσ₈(z=0.51)&nbsp;&gt;&nbsp;0.46 ruling out at &gt;3σ) was NOT met</strong>{' '}
             (corrected 2026-07-14; this page said &ldquo;triggered&rdquo; until 2026-09-10). Computed directly:
-            LRG1 fσ₈ = 0.474&nbsp;×&nbsp;1.16&nbsp;±&nbsp;0.062 = 0.550&nbsp;±&nbsp;0.062 — above 0.46 by only
-            ~1.5σ, short of the &gt;3σ the criterion demands (it does clear the weaker &gt;2σ
+            LRG1 fσ₈ = 0.4733&nbsp;×&nbsp;(1.09 +0.12/−0.14) = 0.516 (+0.057/−0.066) — above 0.46 by only
+            ~0.9σ (corrected 2026-10-10 from 0.550 ± 0.062 and ~1.5σ, which used the QSO row&apos;s ratio), short of the &gt;3σ the criterion demands (it does clear the weaker &gt;2σ
             &ldquo;disfavors&rdquo; clause at 0.45). What carries the 2.4σ is σ₈, a <em>different</em>,
             GR-conditioned statistic. Suppression not observed; data is ΛCDM-consistent. The LRG1 &ldquo;enhancement&rdquo; is a
-            single ~1.2σ bin — the ensemble growth index (γ_growth ≈ 0.58 ± 0.11) leans mildly toward
+            single ~0.6σ bin — the ensemble growth index (γ_growth ≈ 0.58 ± 0.11) leans mildly toward
             suppression, so the load-bearing failure is the σ₈ amplitude, not direction.
             A 2026-05-25 &ldquo;correction&rdquo; claiming kill not triggered was itself an error:
             0.4497&nbsp;±&nbsp;0.0548 belongs to arXiv:2512.03230 (DESI Peculiar Velocity Survey, z≈0.07),

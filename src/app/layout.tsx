@@ -63,7 +63,7 @@ export default function RootLayout({
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
               title="Interactive tools"
             >
-              Tools
+              Interactive Tools
             </Link>
             <Link
               href="/glossary"
@@ -106,7 +106,7 @@ export default function RootLayout({
             <Link href="/honest-assessment">See what works and what doesn&apos;t.</Link>
           </p>
           <p style={{ marginTop: '0.5rem', lineHeight: 1.8 }}>
-            <Link href="/why-synchronism">Why Synchronism?</Link>
+            <Link href="/why-synchronism">Start Here: Why Synchronism?</Link>
             {' \u00B7 '}
             <Link href="/first-encounter">First Encounter</Link>
             {' \u00B7 '}

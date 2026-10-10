@@ -542,7 +542,7 @@ export default function GalaxyRotation() {
           criterion (fσ₈(z&nbsp;=&nbsp;0.51)&nbsp;&gt;&nbsp;0.46 at &gt;3σ) was <strong>not met</strong>: ~1.5σ, underpowered as
           registered (this page kept the retired &ldquo;triggered&rdquo; wording until 2026-09-11, two months after Tier 1 and
           Honest Assessment dropped it).
-          The LRG1 fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.16&nbsp;±&nbsp;0.13 &ldquo;enhancement&rdquo; is a single ~1.2σ bin, not load-bearing.
+          The LRG1 fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.09 (+0.12/&minus;0.14) &ldquo;enhancement&rdquo; is a single ~0.6σ bin, not load-bearing (read 1.16&nbsp;±&nbsp;0.13, the QSO row, until 2026-10-10).
           Verdict: post-hoc retrodiction, disfavored 2.4σ on amplitude. (Prior 2026-05-25 &ldquo;correction&rdquo; was itself an error — misattributed z≈0.07 PV value.){' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment: TEST-04a &rarr;</Link>
         </div>

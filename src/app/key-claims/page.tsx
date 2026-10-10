@@ -782,7 +782,7 @@ export default function KeyClaims() {
               <strong>The BTFR slope left this list on 2026-07-14</strong> &mdash; executed on real SPARC, it is
               the opposite of a reparametrization: the framework&apos;s bounded boost predicts a slope
               (n = 3.35) that genuinely <em>differs</em> from MOND&apos;s 3.81 (MOND run through the same finite-range pipeline; its asymptotic slope is exactly 4). The observed 3.75 &plusmn; 0.10 sits
-              3.3&sigma; from the framework&apos;s slope, and the registered |&Delta;n| &gt; 0.3 criterion fired. It is one of
+              3.3&sigma; from the framework&apos;s slope (both uncertainties combined in quadrature, &sigma; = 0.124), and the registered |&Delta;n| &gt; 0.3 criterion fired. It is one of
               the framework&apos;s two discriminating tests, both run and both lost to MOND: 0 selected Synchronism over MOND
               (2 discriminated, both selected MOND). It is recorded as{' '}
               <Link href="/tier-1-existing#TEST-09" style={{ color: 'var(--color-accent-blue)' }}>TEST-09</Link>; the other,

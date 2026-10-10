@@ -138,6 +138,23 @@ export default function A2ACW() {
             measured so far answers it (see Self-Audit Results below). The audits of this framework&apos;s claims were done by
             LLM agents, with a human (dp) overseeing the badge taxonomy, and no outside physicist has reviewed them.
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', marginBottom: 0 }}>
+            <strong>What the archive is evidence for (added 2026-10-10, from a researcher visitor persona).</strong> It is a clean
+            dataset for one question of independent interest: how often do same-corpus adversarial pairs converge on published
+            prior art and label it novel? Four instances are documented, and in none of the 3,308 sessions was the prior art
+            cited: the galaxy formula at &gamma; = &frac12; is Milgrom&apos;s simple &mu; (Famaey &amp; Binney 2005; matched
+            2026-10-10, by a visitor persona); the dark-energy sector is a Cardassian model (Freese &amp; Lewis 2002; matched
+            2026-09-14, site maintainer); the galaxy field equation is Refracted Gravity (Matsakos &amp; Diaferio 2016; matched
+            2026-08-25, site explorer); the absolute-time substrate falls in the Collins et al. 2004 LIV class (matched
+            2026-06-23, an archive exploration arc with retrieval). Every match came from a lane with literature access; none came
+            from the protocol. That is the protocol&apos;s identified design gap: its roles reward disagreement (challenge
+            frequency &ge; 1 per 10 exchanges, escalation after 15 challenge-free exchanges) and nothing rewards finding a
+            citation. A prior-art retrieval role would have found Famaey &amp; Binney 2005 before 1,800 sessions did. Caveat:
+            &ldquo;never cited&rdquo; was checked by searching the archive for author and theory names; a session that described
+            the identity without naming the paper would be missed, and that is the behaviour under test. Measuring the
+            rederivation rate against session index, with the retrieval-enabled site tracks as the &ldquo;after&rdquo; arm, is
+            seeded as an explorer topic.
+          </p>
         </div>
 
         <div className="card" style={{ background: 'rgba(56,189,248,0.06)', border: '1px solid rgba(56,189,248,0.25)', marginBottom: '1.5rem' }}>

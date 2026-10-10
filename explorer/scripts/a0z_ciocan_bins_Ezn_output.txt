@@ -1,0 +1,36 @@
+=== Binned estimator ===
+bars = 1σ
+  [M: no anchor] n = +0.714 ± 0.135 (formal, Δχ²=1); level k = 1.616; χ²_min = 0.99 / dof 2; χ²(n=0) = 28.93, χ²(n=1) = 5.49; pull vs 0: +5.3σ, vs 1: -2.1σ
+  [A: SPARC anchor 1.2±0.26 at z=0] n = +0.767 ± 0.129 (formal, Δχ²=1); level k = 1.568; χ²_min = 2.69 / dof 3; χ²(n=0) = 38.24, χ²(n=1) = 5.97; pull vs 0: +6.0σ, vs 1: -1.8σ
+  [M] leave-one-bin-out n: [0.8  0.7  0.67 0.76]; jackknife σ_n = 0.087
+bars = 95% CI (halved)
+  [M: no anchor] n = +0.714 ± 0.067 (formal, Δχ²=1); level k = 1.616; χ²_min = 3.96 / dof 2; χ²(n=0) = 115.74, χ²(n=1) = 21.96; pull vs 0: +10.6σ, vs 1: -4.2σ
+  [A: SPARC anchor 1.2±0.26 at z=0] n = +0.728 ± 0.067 (formal, Δχ²=1); level k = 1.603; χ²_min = 5.80 / dof 3; χ²(n=0) = 125.12, χ²(n=1) = 22.45; pull vs 0: +10.9σ, vs 1: -4.1σ
+  [M] leave-one-bin-out n: [0.8  0.7  0.67 0.76]; jackknife σ_n = 0.087
+Bins fitted linearly: a1 = 0.98 ± 0.19, a0(0) = 1.48 (bars=1σ), χ² = 1.10/2  vs global Eq.4: a1 = 1.59 ± 0.05, a0(0) = 1.00 ± 0.02
+
+=== Global-line estimator: a0(z) = a0(0) + a1 z projected onto k E(z)^n over 0.33–1.44 ===
+  central: n = 1.149
+  MC (corner 1σ, corr +0.0): n = 1.148 ± 0.019
+  MC (corner 1σ, corr -0.5): n = 1.149 ± 0.023
+  Appendix E MOND-track line (1.03 + 1.20 z): n = 0.990
+  Appendix E per-galaxy regression (1.11 + 1.42 z): n = 1.038
+  ratio to own intercept at z=1.0: (1+1.59z)/1 = 2.59 vs E(z) = 1.79;  with SPARC level: 2.38/1.2 = 1.98 vs E(z_eff≈0.9) = 1.69
+  ratio to own intercept at z=1.44: (1+1.59z)/1 = 3.29 vs E(z) = 2.29;  with SPARC level: 2.38/1.2 = 1.98 vs E(z_eff≈0.9) = 1.69
+
+=== Against RC100 (post-hoc n = 0.0, galaxy-bootstrap 95% ≈ [−1, +1] → σ ≈ 0.5) ===
+  Ciocan bins (bars = 1σ): n = +0.71 ± 0.13; vs RC100 0.0 ± 0.5: +1.38σ
+  Ciocan bins (bars = 95% CI (halved)): n = +0.71 ± 0.07; vs RC100 0.0 ± 0.5: +1.41σ
+  Ciocan global line: n = +1.15 ± 0.03; vs RC100: +2.29σ
+
+=== P6: 2.38 (+0.12/−0.10, 95% CI) vs anchors ===
+  1σ ≈ 0.056; vs SPARC 1.2: 21.0σ (measurement only; paper says ~19σ), 4.4σ (anchor carried)
+  vs cH(z)/2π on the SPARC anchor, 2.15: 4.1σ measurement only; 0.5σ anchor carried
+  branch A level-free prediction over bins (n=1): a0(z) = k E(z) with k fitted; see χ²(n=1) above
+
+=== Addenda (post-registration, labelled) ===
+  global line vs bins, bars=1σ: residuals/σ = [ 2.21 -1.06 -0.84 -2.34]; χ² = 12.2 / 4 (no free params)
+  global line projection: k = 1.308, n = 1.149; at z=0.5 line 1.795 vs kE^n 1.802
+  E(2) = 3.032; Mayer factor 3 → n = 0.99; paper factor ~4 (line to z=2: 4.18) → n = 1.29
+  n=1 level-free on bins: k = 1.395 (SPARC 1.2); residuals/σ = [ 1.65 -0.47  0.03 -1.59]
+  n=0 level-free on bins: k = 2.333; residuals/σ = [-3.98 -1.26  2.13  2.77]

@@ -5,6 +5,17 @@
 
 ---
 
+## 🔵 EXPLORER (2026-10-10) — **a₀(z) row: the slope is anchor-free and the row is estimator-dominated, not
+anchor-dominated. Ciocan's four bins give n = 0.71 ± 0.13 in a₀ ∝ E(z)ⁿ (level free; adding the SPARC anchor moves
+n by +0.05); the paper's own global line is n = 1.15 over the same range; the two disagree at 3σ and branch A's
+n = 1 sits between them. Constant a₀ is excluded by the bins at any level (5σ). RC100 (0.0 ± 0.5) is 1.4σ from the
+bins, so today's "the surveys disagree" sentence is not supported. Every site σ against Ciocan (12σ, 9.4σ, 9.8σ)
+divides a 95% CI as 1σ. DESI Table 10 σ₈ = 0.841 ± 0.034 verified verbatim (closes the May item).** Count 6; Bucket 0 = 0.
+
+Finding: `explorer/findings/ciocan-a0z-refit-the-slope-is-anchor-free-and-the-papers-two-estimators-straddle-n-equals-1.md`
+(PREREG `9527643`, 5/6 held). Action: Maintainer section lists the wording and lint rules for /mond-unification,
+/parameter-derivations, /honest-assessment.
+
 ## 🟢 NEW (maintainer 2026-10-10) — **TEST-04a was adjudicated on the QSO row for 4.5 months. DESI DR1 Table 9's LRG1
 ratio is 1.09 +0.12/−0.14 (fσ₈ = 0.516 +0.057/−0.066), not the 1.16 ± 0.13 the site has carried since 2026-05-26 (that is
 the QSO row, z = 1.49). Prediction ~1.5σ from data (was 2.1σ), threshold cleared by ~0.9σ (was 1.5σ); still underpowered,

@@ -336,7 +336,7 @@ export default function ParameterDerivations() {
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               <strong>The epoch fork is closed; branch (A) is forced, and every high-z test of it so far is
               non-discriminating (current state 2026-09-19).</strong>{' '}
-              a&#x2080;(z) = cH(z)/2&#x03C0; has been checked against direct RAR intercepts (anchor-dominated, below),
+              a&#x2080;(z) = cH(z)/2&#x03C0; has been checked against direct RAR intercepts (estimator-dominated; the anchor does not enter the slope; below),
               high-z TFR zero points, and 41 published f<sub>DM</sub>(R<sub>e</sub>) values; the f<sub>DM</sub> route
               splits by fitting method (Price MCMC vs Genzel least squares), so the <em>level</em> is
               method-dominated. The level-free test is the trend ratio k(z<sub>hi</sub>)/k(z<sub>lo</sub>). <strong>Run
@@ -370,14 +370,18 @@ export default function ParameterDerivations() {
               <strong>Branch (A), tested against direct RAR data:</strong> Ciocan et al. 2026
               (MUSE-DARK III, A&amp;A 709, L16; arXiv:2604.22613) fit the RAR directly in 79
               star-forming galaxies, 0.33 &lt; z &lt; 1.44, and report a&#x2080;(z) = a&#x2080;(0) + a&#8321;z with
-              a&#8321; = 1.59 (+0.11/&minus;0.10) &times;10<sup>&minus;10</sup>, stating plainly:
+              a&#8321; = 1.59 (+0.11/&minus;0.10, a 95% CI; 1&#x03C3; &plusmn;0.05) &times;10<sup>&minus;10</sup>, stating plainly:
               <em>&ldquo;our measured a&#x2080;(z) is faster than that of H(z).&rdquo;</em> Branch (A) is a
               zero-parameter prediction, a&#x2080;(z)/a&#x2080;(0) = E(z).
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              <strong>Correction (2026-08-04): the deviation is anchor-dominated, and the sign flips
+              <strong>Correction (2026-08-04): the <em>level</em> deviation depends on the anchor, and the sign flips
               with the anchor.</strong> Branch (A) is a <em>ratio</em> prediction &mdash; converting it to a
-              number at z~1 requires picking a₀(0), and four published values disagree by 69%:
+              number at z~1 requires picking a₀(0), and four published values disagree by 69%.
+              <em> Revised 2026-10-12: the 2026-08-04 wording named the anchor as the row&apos;s limiting
+              systematic. That is true of this level table only; the prediction&apos;s own statistic is the
+              slope (table after this one), and the anchor does not enter the slope.</em> Ciocan&apos;s z~1 value is
+              2.38 (+0.12/&minus;0.10), a 95% CI (1&#x03C3; &asymp; 0.06):
             </p>
             <div style={{ overflowX: 'auto', margin: '0.5rem 0' }}>
               <table style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)', borderCollapse: 'collapse' }}>
@@ -390,8 +394,8 @@ export default function ParameterDerivations() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan&apos;s own fitted intercept</td><td style={{ padding: '0.25rem 0.75rem' }}>1.00 &plusmn; 0.02</td><td style={{ padding: '0.25rem 0.75rem' }}>1.79</td><td style={{ padding: '0.25rem 0' }}>+9.4&#x03C3; low</td></tr>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>framework&apos;s own, cH&#x2080;/2&#x03C0;</td><td style={{ padding: '0.25rem 0.75rem' }}>1.04</td><td style={{ padding: '0.25rem 0.75rem' }}>1.86</td><td style={{ padding: '0.25rem 0' }}>+9.8&#x03C3; low</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan&apos;s own fitted intercept</td><td style={{ padding: '0.25rem 0.75rem' }}>1.00 &plusmn; 0.02 (1&#x03C3;) = &plusmn; 0.04 (95%)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.79</td><td style={{ padding: '0.25rem 0' }}>~19&#x03C3; low</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>framework&apos;s own, cH&#x2080;/2&#x03C0;</td><td style={{ padding: '0.25rem 0.75rem' }}>1.04</td><td style={{ padding: '0.25rem 0.75rem' }}>1.86</td><td style={{ padding: '0.25rem 0' }}>~18&#x03C3; low</td></tr>
                   <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>McGaugh+2016 SPARC (canonical)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.20 &plusmn; 0.26</td><td style={{ padding: '0.25rem 0.75rem' }}>2.15</td><td style={{ padding: '0.25rem 0', color: '#38bdf8' }}>+0.5&#x03C3; &mdash; CONSISTENT</td></tr>
                   <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>V&#x103;r&#x103;&#x15F;teanu+2025 MIGHTEE-HI</td><td style={{ padding: '0.25rem 0.75rem' }}>1.69 &plusmn; 0.13</td><td style={{ padding: '0.25rem 0.75rem' }}>2.91</td><td style={{ padding: '0.25rem 0', color: '#38bdf8' }}>&minus;2.3&#x03C3; &mdash; branch (A) HIGH</td></tr>
                 </tbody>
@@ -402,14 +406,57 @@ export default function ParameterDerivations() {
               the fourth &mdash; the same McGaugh+2016 value the site uses as canonical a&#x2080; elsewhere
               &mdash; is one sentence away in Ciocan&apos;s own paper and reverses the verdict to consistent.
               Signal (79% predicted growth to z~1) vs. systematic (69% spread among a&#x2080;(0)
-              determinations) is signal/systematic &#8776; 1.15 &mdash; this places the row in the
-              &ldquo;untestable with foreseeable data&rdquo; category, not &ldquo;disfavoured.&rdquo;
+              determinations) is signal/systematic &#8776; 1.15 &mdash; this places the <em>level</em> comparison
+              in the &ldquo;untestable with foreseeable data&rdquo; category, not &ldquo;disfavoured.&rdquo;{' '}
+              <em>(Corrected 2026-10-12: Ciocan&apos;s errors are 95% CIs; earlier &#x03C3;&apos;s divided them as
+              1&#x03C3;. The first two rows read &ldquo;+9.4&#x03C3;&rdquo; and &ldquo;+9.8&#x03C3;&rdquo; until today; on the
+              measurement error alone they are about twice that. The anchor-carried rows (+0.5&#x03C3;, &minus;2.3&#x03C3;)
+              barely move. The signal/systematic sentence is a level statement; on the slope, below, the limit is
+              the paper&apos;s own estimator spread, a methods question per-galaxy data would settle.)</em>
+            </p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              <strong>The slope, level-free (added 2026-10-12; explorer 2026-10-10, pre-registered):</strong>{' '}
+              fit a&#x2080; &prop; E(z)<sup>n</sup> with the level free. Branch (A) is n = 1; constant a&#x2080; is
+              n = 0. The anchor does not enter this statistic (adding the SPARC anchor moves n by 0.05).
+            </p>
+            <div style={{ overflowX: 'auto', margin: '0.5rem 0' }}>
+              <table style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)', borderCollapse: 'collapse' }}>
+                <thead>
+                  <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
+                    <th style={{ textAlign: 'left', padding: '0.25rem 0.75rem 0.25rem 0' }}>estimator / model</th>
+                    <th style={{ textAlign: 'left', padding: '0.25rem 0' }}>n in a&#x2080; &prop; E(z)<sup>n</sup></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan, four quantile bins (Fig. 3, pixel-read; bars as 1&#x03C3;)</td><td style={{ padding: '0.25rem 0' }}>0.71 &plusmn; 0.13</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan, global linear fit (Eq. 4) over 0.33&ndash;1.44</td><td style={{ padding: '0.25rem 0' }}>1.15</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan, MOND-track refit (App. E)</td><td style={{ padding: '0.25rem 0' }}>0.99</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan, per-galaxy regression (App. E)</td><td style={{ padding: '0.25rem 0' }}>1.04 &plusmn; 0.6</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>RC100 (explorer 2026-10-06, post-hoc)</td><td style={{ padding: '0.25rem 0' }}>0.0 &plusmn; 0.5</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Mayer+2023 &Lambda;CDM+baryons (factor &asymp;3 over z = 0&ndash;2)</td><td style={{ padding: '0.25rem 0' }}>0.99</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Branch (A), cH(z)/2&#x03C0;</td><td style={{ padding: '0.25rem 0' }}>1</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>constant a&#x2080; (MOND; the &#x039B; face)</td><td style={{ padding: '0.25rem 0' }}>0</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+              Constant a&#x2080; is excluded by Ciocan&apos;s bins at any level (5&#x03C3;). n = 1 lies between the
+              paper&apos;s two estimators, which disagree with each other at 3&#x03C3; (the bins exclude n = 1 at
+              2.1&#x03C3;; the global line sits above it). &Lambda;CDM+baryons sits at n &asymp; 1 too, so nothing here
+              selects the framework. The row is <strong>estimator-dominated; the anchor does not enter the
+              slope</strong>. RC100&apos;s slope error (&plusmn;0.5) is too wide to test either; it is 1.4&#x03C3; from
+              Ciocan&apos;s bins. One degeneracy sits under every number on this row: at high z, &ldquo;a&#x2080;(z)
+              rises&rdquo; and &ldquo;the stellar M/L (&Upsilon;), gas fraction or pressure-support correction drifts with
+              z&rdquo; predict the same shift in the RAR intercept. &ldquo;Faster than H(z)&rdquo; is a statement
+              about the global line&apos;s extrapolated z=0 intercept; within the data the line is n = 1.15, and the
+              bins are slower than H(z).
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               <strong>ΛCDM predicts the same evolution, and the functional form is prior art.</strong>{' '}
               Mayer, Teklu, Dolag &amp; Remus 2023 (Magneticum simulations, ΛCDM+baryons, no MOND, no
               fundamental a&#x2080;; MNRAS 518, 257, arXiv:2206.04333) fit a&#x2080; growing by a factor
-              &#8776;3 from z=0 to z=2 &mdash; branch (A) predicts E(2) = 3.03. Their eq. (13) <em>is</em>{' '}
+              &#8776;3 from z=0 to z=2 &mdash; branch (A) predicts E(2) = 3.03; in the slope convention above that
+              factor is n &asymp; 0.99, so on the slope the degeneracy is exact, not approximate. Their eq. (13) <em>is</em>{' '}
               branch (A), written down and tested inside a ΛCDM paper in 2022, where it is reported to
               fail to describe the simulated trend precisely. No outcome of the Ciocan measurement
               selects Synchronism over ΛCDM+baryons: both predict the RAR-fitted a&#x2080; grows with
@@ -421,7 +468,14 @@ export default function ParameterDerivations() {
               cH&#x2080; &#8776; c&sup2;(&#x039B;/3)<sup>1/2</sup> &mdash; the site has cited only the H&#x2080; half. The
               &#x039B; half predicts <em>zero</em> epoch evolution, since &#x039B; is constant, and fares worse
               against Ciocan than branch (A): at the Milgrom-local normalization, a constant a&#x2080; = 1.20
-              against the observed 2.38 &plusmn; 0.10 is roughly <strong>12&#x03C3;</strong> away (on the measurement error alone; carrying the anchor&apos;s &plusmn;0.26 as the table above does for branch (A), it is 4.2&#x03C3;, against branch (A)&apos;s 2.3&#x03C3; and 0.5&#x03C3; under the same two conventions. Like for like, the evolving a&#x2080; is the closer of the two on this sample; stated plainly 2026-10-10, with the RC100 counter-sample on Relation to MOND). An a&#x2080; evolving
+              against the observed 2.38 (+0.12/&minus;0.10, 95% CI) is roughly <strong>21&#x03C3;</strong> away on the
+              measurement error alone (1&#x03C3; &asymp; 0.06; the paper&apos;s own figure is 19&#x03C3;), and <strong>4.4&#x03C3;</strong>{' '}
+              carrying the anchor&apos;s &plusmn;0.26 as the table above does for branch (A), against branch (A)&apos;s ~4&#x03C3;
+              and 0.5&#x03C3; under the same two conventions. Like for like, the evolving a&#x2080; is the closer of the
+              two on this sample (stated plainly 2026-10-10, with the RC100 counter-sample on Relation to MOND), and the
+              level-free slope says the same thing without an anchor: constant a&#x2080; is n = 0, excluded by
+              Ciocan&apos;s bins at 5&#x03C3;. <em>(Corrected 2026-10-12: Ciocan&apos;s errors are 95% CIs; earlier
+              &#x03C3;&apos;s divided them as 1&#x03C3;. This sentence read 12&#x03C3; / 4.2&#x03C3; and 2.3&#x03C3; / 0.5&#x03C3;.)</em> An a&#x2080; evolving
               faster than H(z) embarrasses both halves of the 1983 coincidence, not this framework specifically.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
@@ -430,14 +484,17 @@ export default function ParameterDerivations() {
               already-published numbers, with no new data or computation. It is not a live tension with a
               date on it; it is a forced, outstanding, <em>prospective</em> commitment (a rival with a
               fundamental a&#x2080; only makes this bet optionally) whose power to discriminate was removed
-              by the anchor dependence and the ΛCDM+baryons degeneracy above &mdash; not evidence against
+              by the ΛCDM+baryons degeneracy above (exact on the slope, n &asymp; 0.99) &mdash; the anchor dependence
+              cited here since 2026-08-04 limits only the level comparison, and the slope does not see it (revised
+              2026-10-12) &mdash; not evidence against
               Synchronism specifically, and not evidence for it either. Consistency with a
               non-discriminating prediction (the McGaugh-anchor 0.5&sigma; row) is not evidence for the
               framework. This does not join the refutation tally on{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
               One further note on the 13% figure two cards
-              above: Ciocan&apos;s fitted z=0 intercept is 1.00 &plusmn; 0.04, only 1.0&#x03C3; from this framework&apos;s
-              1.04 &mdash; but that intercept is the extrapolated endpoint of a linear fit over 0.33 &lt; z &lt; 1.44
+              above: Ciocan&apos;s fitted z=0 intercept is 1.00 &plusmn; 0.02 (1&#x03C3;) = &plusmn; 0.04 (95% CI), about
+              2&#x03C3; from this framework&apos;s 1.04 <em>(corrected 2026-10-12: read as 1.0&#x03C3; until today, dividing
+              the 95% CI as 1&#x03C3;)</em> &mdash; but that intercept is the extrapolated endpoint of a linear fit over 0.33 &lt; z &lt; 1.44
               that the authors themselves call &ldquo;phenomenological&hellip;rather than physically motivated,&rdquo;
               not a local measurement, so this is a reason to stop treating the 13% gap as settled, not a claim
               of agreement.

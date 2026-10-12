@@ -9,6 +9,9 @@ import { learningPaths } from '@/lib/paths';
 // topic tracks from no-JS readers and crawlers, breaking the nav's promise of
 // Physics/Chemistry/Philosophy journeys).
 const difficultyPaths = learningPaths.filter(p => p.kind === 'difficulty');
+// Computed, not hand-written: a 2026-10-12 visitor found "none of the paths include a tool" while Beginner step 3 was the Plotter.
+const TOOL_HREFS = new Set(['/chemistry-correlation-explorer', '/coherence-explorer', '/consciousness-demo', '/equation-walkthrough', '/galaxy-plotter', '/gamma-calculator', '/phase-boundary-visualizer']);
+const pathsWithTools = learningPaths.filter(p => p.steps.some(s => TOOL_HREFS.has(s.href)));
 const domainPaths = learningPaths.filter(p => p.kind === 'domain');
 
 type PathEntry = (typeof learningPaths)[number];
@@ -76,8 +79,8 @@ function PathCard({ path }: { path: PathEntry }) {
       {path.name === 'Beginner' && (
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.75rem 0 0' }}>
           <strong>Try it hands-on (optional, not a path step):</strong>{' '}
-          <Link href="/coherence-explorer" style={{ color: path.color }}>Coherence Explorer</Link> (drag the sliders, watch C change) and{' '}
-          <Link href="/galaxy-plotter" style={{ color: path.color }}>Galaxy Curve Plotter</Link> (see the dark-matter problem on real galaxies).
+          <Link href="/coherence-explorer" style={{ color: path.color }}>Coherence Explorer</Link> (drag the sliders, watch C change). The{' '}
+          <Link href="/galaxy-plotter" style={{ color: path.color }}>Galaxy Curve Plotter</Link> is already step 3 above.
         </p>
       )}
       <div style={{ marginTop: '1rem' }}>
@@ -115,8 +118,9 @@ export default function LearningPaths() {
         <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link> &mdash;
         and the topic tracks reach 14 the difficulty paths don&apos;t. <strong>Advanced is the only path that
         covers the derivation chain</strong>; topic tracks are entry points, not complete coverage. Separately,
-        none of the {learningPaths.length} paths currently include an{' '}
-        <Link href="/interactive-tools" style={{ color: 'var(--color-accent-blue)' }}>interactive tool</Link> &mdash;
+        {pathsWithTools.length === 0 ? `none of the ${learningPaths.length} paths` : `${pathsWithTools.length} of the ${learningPaths.length} paths (${pathsWithTools.map(p => p.name).join(', ')})`}{' '}
+        include an{' '}
+        <Link href="/interactive-tools" style={{ color: 'var(--color-accent-blue)' }}>interactive tool</Link> as a step &mdash;
         if you want the equation explained rather than stated, start at{' '}
         <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Anatomy</Link>.
       </p>

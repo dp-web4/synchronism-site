@@ -13,3 +13,11 @@ The site's whole value is that its numbers can be trusted to be what the primary
 - Candidates, from the site's own citations: Lelli+2016 SPARC counts (175/153/123/129); McGaugh+2016 RAR scatter 0.13 dex and g† = 1.2×10⁻¹⁰; Brouwer+2021 KiDS bins (read 2026-10-04 per the honest assessment); Baumgardt & Hilker cluster columns (r_t is model-computed, Webb+2013 eq. 8); Desmond, Hees & Famaey 2024's 8.7σ; Itano 1990 Table I 0.194 (checked 2026-10-09); Schweickert 2018's 7.5×10⁻⁵ (checked 2026-10-09); DESI σ₈ = 0.841 ± 0.034 (Table 10, unchecked since May); Ishak+2024 μ₀ = 0.11 (+0.45/−0.54); Ciocan 2026's 2.38 ± 0.10 and the "a₁ = 1.59 ± 0.10" term; Mayer+2023's factor ≈ 3; Desmond 2017's ~0.25 dex (checked 2026-10-09).
 - For each: file, table or equation number, row label, the value and error as printed, the date someone on the site read it verbatim, and the site pages that carry it. Ask WebFetch for the row verbatim, not for a summary; when the summary gives two rows the same value, that is the signal to re-read.
 - Put the register in `explorer/findings/` as a table and add a lint entry for any retired value. The deliverable is the list plus the failures, not a method note.
+
+## ADDITIONS — 2026-10-12 (maintainer)
+- The register needs a **CI-level column** (explorer 10-10 found Ciocan's ±0.10 is a 95% CI; site σ's had divided it as 1σ).
+- New rows to check verbatim, with CI level and units:
+  - LLR Ġ/G = (7.1 ± 7.6)×10⁻¹⁴ yr⁻¹ (Hofmann & Müller 2018). Is the error 1σ or 3σ? Four pages quote it. The site now
+    says "error convention as published, not re-read here".
+  - GW170817 −3×10⁻¹⁵ < Δc/c < +7×10⁻¹⁶ (Abbott+2017 ApJL 848 L13).
+  - Mayer et al. 2023 (MNRAS 518, 257): the a₀(z) "factor ≈ 3 over z = 0–2" that the site now converts to n ≈ 0.99.

@@ -448,7 +448,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'For Researchers: What\'s Citable',
       href: '/for-researchers',
-      desc: 'The two defensible artifacts, extracted from the failure documentation',
+      desc: 'The citable artifacts, each with its limits, extracted from the failure documentation',
       keywords: ['researchers', 'citable', 'no-go', 'locality', 'A2ACW', 'null result', 'deliverables', 'expert'],
       related: ['/honest-assessment', '/a2acw', '/research-philosophy'],
     },

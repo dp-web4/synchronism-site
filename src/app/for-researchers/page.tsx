@@ -954,9 +954,10 @@ export default function ForResearchers() {
                 tired light, and a Tully&ndash;Fisher &ldquo;derivation&rdquo; that assumes MOND; the record notes the last is
                 in-class with this framework&apos;s own claim, so only two are truly external). Negative arm: 6 canonical discoveries
                 (Dirac 1928, Bell 1964, BCS 1957, Higgs 1964, Hawking 1974, Noether 1918). <em>Literal rule</em> (flag if canonical
-                prior art is named within one round): TP = 3, FN = 0, FP = 6, TN = 0, so sensitivity 3/3, specificity 0/6,
-                Youden&apos;s J = 0. The per-arm Clopper&ndash;Pearson bounds (sensitivity &ge; 0.292 from 3/3, specificity
-                &le; 0.459 from 0/6; J = sens + spec &minus; 1) put J in [&minus;0.71, +0.46]. <em>Steelmanned rule</em> (flag if the claim reduces to prior art with nothing
+                prior art is named within one round): TP = 3, FN = 0, FP = 6, TN = 0, so sensitivity 3/3, specificity 0/6
+                (point value J = 0, not quotable bare). The per-arm Clopper&ndash;Pearson bounds (sensitivity &ge; 0.292 from 3/3, specificity
+                &le; 0.459 from 0/6; J = sens + spec &minus; 1) put J in [&minus;0.71, +0.46]. Combining two marginal 95% intervals
+                gives roughly 90% joint coverage, not 95%. <em>Steelmanned rule</em> (flag if the claim reduces to prior art with nothing
                 added): TP = 3, FP = 0, TN = 6, J = 1.0 (lower bound &minus;0.17), but there the scorer&apos;s own novelty judgment
                 does all the discriminating, and that judgment is the step in question. Both rules were applied to both arms by the
                 same model. Sensitivity is 3/3 <em>per rule</em>. Pooling the two rules into &ldquo;6/6&rdquo; would count the same
@@ -974,7 +975,8 @@ export default function ForResearchers() {
                 <strong>Why the canonical arm is not a clean known-good control.</strong> It is the right <em>kind</em> of arm, but
                 it cannot separate the two hypotheses below. (i) The six were chosen <em>because</em> their modern restatements
                 trigger prior art for their ingredients, so 0/6 was designed in. (ii) They sit in every training corpus together
-                with their antecedents (contamination). (iii) The &ldquo;blinding&rdquo; only omitted each result&apos;s name. The
+                with their antecedents (contamination), so a challenger flagging them as prior art is correct, not non-specific,
+                and specificity 0/6 on this arm says little about novelty detection. (iii) The &ldquo;blinding&rdquo; only omitted each result&apos;s name. The
                 restatements were written and scored by the same model that knew each answer. Nobody independent stripped the
                 citations, and nothing was scored blind.
               </li>
@@ -982,7 +984,8 @@ export default function ForResearchers() {
                 <strong>The open question.</strong> <strong>H1</strong>: the framework contained nothing novel.{' '}
                 <strong>H2</strong>: an LLM rewarded for finding prior art maps almost anything onto its corpus, real discoveries
                 included. Nothing measured so far separates them, and under H2 the result is the more interesting one. Separating
-                them needs a known-good arm the models cannot have memorised, scored blind. The cross-vendor control as registered
+                them needs a known-good arm the models cannot have memorised, scored blind: a post-training-cutoff arm of
+                modest-novelty results published after the models&apos; cutoff. It is unrun (routed to dp since 2026-09-10). The cross-vendor control as registered
                 (the six demoted claims) tests corpus monoculture, not H1 vs H2.
               </li>
               <li>
@@ -1043,7 +1046,8 @@ export default function ForResearchers() {
               would overstate the number of adjudicated trials by two orders of magnitude (corrected 2026-07-09
               after two visitor personas independently flagged the site quoting this null at three different,
               mutually inconsistent denominators). Both error rates on the 6 are measured — temporal-asymmetry
-              control 0/6 (later-demoted claims caught; median prior-art year ~1996), vocabulary-asymmetry 4/4 on
+              control 0/6 (later-demoted claims caught; median prior-art year ~1996) [corrected 2026-10-12: this 0/6 was a desk
+              counterfactual, not a run, and &ldquo;measured&rdquo; does not apply to it], vocabulary-asymmetry 4/4 on
               the prior-art-rediscovery subclass, and <strong>specificity 0/6</strong> (every held-out genuine
               discovery false-flagged — a measured false-positive rate of 6/6 = 1.0 on the control set — see{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
@@ -1083,7 +1087,8 @@ export default function ForResearchers() {
               benchmark sensitivity is 3/3 per rule; a pooled 6/6 across the literal and steelmanned rules is the same three
               items counted twice, not six independent trials];
               specificity is 0/6, i.e. the false-positive rate is also 6/6 = 1.0. Youden&apos;s
-              J = TPR − FPR = 1.0 − 1.0 = <strong>0</strong> (AUC ≈ 0.5). Under the literal rule, a classifier that
+              J = TPR − FPR = 1.0 − 1.0 = <strong>0</strong> (AUC ≈ 0.5) [corrected 2026-10-12: this subtraction used the circular 6/6; on the designed
+              benchmark, literal rule, it is 3/3 and 0/6, J &isin; [&minus;0.71, +0.46], see the current-state box]. Under the literal rule, a classifier that
               flags every demoted claim <em>and</em> every genuine discovery carries zero
               discriminating information (under the steelmanned rule J = 1.0, but there the scorer&apos;s own novelty judgment
               does the discriminating; see <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW</a>) — both numbers were already published on this site, on
@@ -1129,7 +1134,8 @@ export default function ForResearchers() {
               <strong>canonical-discoveries arm</strong> false-flagged <strong>6 of 6</strong> genuine
               discoveries as reparametrizations (specificity 0/6), and the{' '}
               <strong>temporal-asymmetry arm</strong> (paired training cutoffs) caught{' '}
-              <strong>0 of 6</strong> demotions. An instrument that misclassifies every known <em>negative</em>{' '}
+              <strong>0 of 6</strong> demotions [corrected 2026-10-12: the temporal-asymmetry &ldquo;arm&rdquo; was not run; it was a
+              desk counterfactual, so only the canonical arm ran]. An instrument that misclassifies every known <em>negative</em>{' '}
               [corrected 2026-09-21; originally &ldquo;positive&rdquo;. The 3 reparametrizations, the positive class, were
               all caught, sensitivity 3/3; what it misclassified was all 6 genuine discoveries] is
               not weakly informative about the seed framework &mdash; it is <em>uninformative by
@@ -1172,7 +1178,8 @@ export default function ForResearchers() {
               cross-vendor corpus control runs — the one registered experiment that would break the
               single-arm degeneracy above — this is a <em>registered null with a stated path to becoming a
               citable artifact</em>, not yet the artifact. What is citable today is the measured
-              retrospective-control numbers (0/6, J = 0) and the confound analysis itself; the
+              retrospective-control numbers (0/6, J = 0) [corrected 2026-10-12: the temporal-asymmetry 0/6 was a desk counterfactual,
+              and J is an interval, [&minus;0.71, +0.46]; neither is citable as stated here] and the confound analysis itself; the
               program-level generalization gates on the unrun control arm.
             </p>
           </details>

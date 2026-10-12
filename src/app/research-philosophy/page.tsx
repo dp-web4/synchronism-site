@@ -254,11 +254,15 @@ export default function ResearchPhilosophy() {
           Noether) against three reparametrizations from outside the audited claims (Eddington&apos;s &alpha;&#x207B;&sup1; = 137,
           tired light, a Tully&ndash;Fisher &ldquo;derivation&rdquo; that assumes MOND). One model wrote the name-omitted
           restatements and scored them. The literal rule (&ldquo;flag if canonical prior art is named&rdquo;) flagged all nine:
-          sensitivity 3/3, specificity 0/6, Youden&apos;s J = 0. It detects &ldquo;has antecedents&rdquo;, which all non-trivial
+          sensitivity 3/3, specificity 0/6, so Youden&apos;s J &isin; [&minus;0.71, +0.46] (two marginal Clopper&ndash;Pearson 95%
+          intervals, roughly 90% joint coverage). It detects &ldquo;has antecedents&rdquo;, which all non-trivial
           physics does. A steelmanned rule (&ldquo;reduces to prior art with nothing added&rdquo;) sorted all nine correctly,
           but only because the scorer&apos;s own novelty judgment did the discriminating. The six discoveries were chosen to
           trip prior art and sit in every training corpus, so this arm cannot separate &ldquo;the framework had nothing
-          novel&rdquo; from &ldquo;LLM audit maps real novelty onto prior art&rdquo;. Arm-by-arm numbers, the class convention and
+          novel&rdquo; from &ldquo;LLM audit maps real novelty onto prior art&rdquo;: flagging Dirac or Bell as prior art is
+          correct, so specificity 0/6 there says little about novelty detection. The arm that could separate them uses
+          modest-novelty results published after the models&apos; training cutoff; it is unrun (routed to dp since 2026-09-10).
+          Arm-by-arm numbers, the class convention and
           the intervals are on{' '}
           <a href="/for-researchers#a2acw-open-question" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</a>; the
           protocol and prior art are on the <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</a>.
@@ -362,10 +366,11 @@ export default function ResearchPhilosophy() {
             measured ceiling.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem', marginBottom: 0 }}>
-            <strong>Temporal-asymmetry counterfactual (2026-05-18):</strong> A retrospective audit tested whether A2ACW
-            would have caught 6 subsequently-demoted claims by pairing models with different training cutoffs.
-            Result: 0 of 6 demotions caught; median prior-art year ~1996. The protocol challenges
-            within-distribution but cannot detect priority-rediscovery. Successor experiment: vocabulary-asymmetry
+            <strong>Temporal-asymmetry counterfactual (2026-05-18) &mdash; a desk exercise, not a run:</strong> nobody
+            paired models with different training cutoffs. The exercise asked on paper whether a challenger with a later cutoff
+            would have caught the 6 subsequently-demoted claims, and answered no, because their prior art (median year ~1996)
+            predates any plausible cutoff. That &ldquo;0 of 6&rdquo; describes a proposed design, not a measurement of the protocol.
+            It suggests the protocol challenges within-distribution but cannot detect priority-rediscovery. Successor experiment: vocabulary-asymmetry
             test (submit pre-Planck-era results in post-2015 vocabulary; measure true-positive rate). Full
             result on the <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</a>.
           </p>
@@ -376,7 +381,7 @@ export default function ResearchPhilosophy() {
             models come from vendors with maximally disjoint training pipelines, run against the 6
             demoted claims plus a small OOD positive-control set. If the cross-vendor challenger
             catches demotions the same-corpus pair missed, the null scopes to <em>corpus
-            monoculture</em>; if 0/6 again, it strengthens toward a ceiling on AI-adversarial
+            monoculture</em>; if it catches none of the 6, it strengthens toward a ceiling on AI-adversarial
             collaboration as such. Registered as a research proposal
             (<code>a2acw_cross_vendor_corpus_control</code>); execution gates on access to a
             genuinely different-corpus model pair.
@@ -514,10 +519,17 @@ export default function ResearchPhilosophy() {
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem' }}>
           <strong>Diagnosis:</strong> The out-of-distribution problem is solved for AI systems with <em>external formal oracles</em>
           (FunSearch, AlphaProof). It is not solved for <em>natural-language theory generation</em>, where no formal verifier
-          exists outside the training distribution. A2ACW makes this specific structural point with a documented empirical
-          result: 6/6 retrospective demotions, 0/6 caught by temporal-asymmetry, 4/6 caught by vocabulary-asymmetry (prior-art subclass only).
-          The methodology finding is: AI-AI adversarial collaboration without an external oracle has a shared-blind-spot ceiling
-          that cannot be removed by choosing more capable or more adversarial agents.
+          exists outside the training distribution. A2ACW illustrates this structural point with a retrospective record rather
+          than a run experiment: 6/6 retrospective demotions (by a later LLM audit, so instrument-uncalibrated); a desk
+          counterfactual, not a run, in which a later-cutoff challenger would catch 0/6; and a post-hoc sort in which vocabulary
+          translation would have surfaced 4 of the 6 (prior-art subclass only).
+          The methodology hypothesis is: AI-AI adversarial collaboration without an external oracle has a shared-blind-spot ceiling
+          that cannot be removed by choosing more capable or more adversarial agents. What supports it is observational: five of
+          the six refutations came from code run against external data, none from self-play, and all four documented prior-art
+          identities arrived through lanes with literature retrieval (0 of 3,308 A2ACW sessions cited any). The &ldquo;cannot be
+          removed by more capable agents&rdquo; half has not been tested; the unrun post-cutoff arm is the experiment that would
+          test it (wording changed 2026-10-12 from &ldquo;the methodology finding is&rdquo;, once the 0/6 above was relabelled
+          a desk counterfactual).
         </p>
 
         <h2>Full Research Archive</h2>

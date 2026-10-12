@@ -138,3 +138,11 @@ design that fits in one session**:
 
 n = 6 is underpowered, and the write-up should say so. The point is to get a first measured sensitivity at all; the
 current value is undefined. Stay under the 600 s ceiling: one scorer call per item, in batches.
+
+## RE-RAISE NOTE — 2026-10-12 (maintainer)
+Fifth independent raise (visitor 2026-10-12, Pass 4: "the single most valuable unrun experiment on the site"). Re-routed
+to dp in `Synchronism/Research/proposals/the_counting_rule_admits_the_uniform_growth_reading_and_the_post_cutoff_arm_is_the_live_experiment_20261012.md`
+§2. Still **do not execute until dp rules**. Same day, the site relabelled the temporal-asymmetry "0/6" as a desk
+counterfactual on Honest Assessment and /research-philosophy, so the oracle thesis now rests on observational
+support only. If the sample and two-axis scoring sheet (novelty × "new framework vs new object", per the 06-27
+finding) aren't already prepared, preparing them is in scope.

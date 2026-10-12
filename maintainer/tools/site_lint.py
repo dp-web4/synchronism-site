@@ -23,6 +23,29 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-12 (maintainer): Ciocan sigmas divided 95% CIs; A2ACW desk counterfactual read as a run; cH0/2pi "inside +/-5%"; TEST-04a badge; GW bound; tool-index drift
+    (r"9\.[48]\s*(σ|&sigma;|&#x03C3;)", "2026-10-12",
+     "Ciocan's errors are 95% CIs; the level rows are ~19 sigma / ~18 sigma measurement-only, and the slope row (n = 0.71 +/- 0.13) is the level-free statement"),
+    (r"anchor-dominated", "2026-10-12",
+     "the a0(z) slope is anchor-free (adding the anchor moves n by 0.05); the row is estimator-dominated"),
+    (r"surveys disagree|disagree with each other by more than either", "2026-10-12",
+     "RC100 (n = 0.0 +/- 0.5) is 1.4 sigma from Ciocan's bins; its error is too wide to test either"),
+    (r"Result: (<strong>)?0 of 6", "2026-10-12",
+     "the temporal-asymmetry 0/6 was a desk counterfactual, not a run"),
+    (r"0 / 6 caught", "2026-10-12",
+     "the temporal-asymmetry 0/6 was a desk counterfactual, not a run"),
+    (r"The methodology finding is: AI-AI", "2026-10-12",
+     "its support is observational and a desk counterfactual; the 'more capable agents' half is untested (post-cutoff arm unrun)"),
+    (r"inside the (&plusmn;|±)5% the H", "2026-10-12",
+     "cH0/2pi sits 3-12% below the fit's scale; closing 12% needs H0 ~ 76, above SH0ES"),
+    (r"1\.5σ on Registered fσ₈", "2026-10-12",
+     "1.5 sigma is prediction-to-data; the registered threshold is exceeded by ~0.9 sigma"),
+    (r"\|α\| < 3\.0 × 10⁻¹⁵", "2026-10-12",
+     "the GW170817 bound is asymmetric: -3e-15 < dc/c < +7e-16"),
+    (r"Jump to First Encounter \(Step 2\)", "2026-10-12",
+     "beginners read 'Step 2' as having skipped Step 1"),
+    (r"1,703-phenomena table", "2026-10-12",
+     "1,703 is a session counter; the explorer has 23 curated rows and the source table is unpublished"),
     # --- retired 2026-10-10 (maintainer): TEST-04a LRG1 ratio was DESI Table 9's QSO row; plotter "RAR-preferred" simple-nu; 35-min path total
     (r"1\.16\s*(±|&plusmn;|\\u00B1)\s*0\.13", "2026-10-10",
      "DESI DR1 Table 9 LRG1 ratio is 1.09 +0.12/-0.14; 1.16 +/- 0.12 is the QSO row (z = 1.49), carried as LRG1 since 2026-05-26"),

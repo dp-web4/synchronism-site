@@ -44,7 +44,7 @@ export default function Home() {
 
         <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
           <Link href="/first-encounter" className="btn-primary">
-            Jump to First Encounter (Step 2)
+            Start the 10-minute intro
           </Link>
           <Link href="/honest-assessment" className="btn-secondary">
             See What Failed

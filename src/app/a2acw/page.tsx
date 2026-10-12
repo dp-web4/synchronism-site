@@ -271,13 +271,21 @@ export default function A2ACW() {
               loop itself had passed all six badges; the demotions came from a later audit. With 0 of 9 the true survival rate can be as
               high as 0.34 (Clopper&ndash;Pearson, two-sided 95%).</li>
             <li><strong>Designed benchmark</strong> (positive class = &ldquo;is a reparametrization&rdquo;): 3 external reparametrizations and 6
-              canonical discoveries, scored by one model that knew every answer. Under the literal rule J = 0; under the steelmanned rule
+              canonical discoveries, scored by one model that knew every answer. Under the literal rule sensitivity is 3/3 and specificity
+              0/6, so J &isin; [&minus;0.71, +0.46] (two marginal Clopper&ndash;Pearson 95% intervals, 3/3 &ge; 0.292 and 0/6 &le; 0.459;
+              combining two marginal 95% intervals gives roughly 90% joint coverage, not 95%). Under the steelmanned rule
               J = 1.0. The steelmanned rule lets the scorer&apos;s own novelty judgment do all the work, and that judgment is what is in question.
               <strong> This is not a citable null.</strong></li>
+            <li><strong>The canonical arm is in the training data.</strong> A challenger that flags Dirac, Bell or Higgs as prior art is
+              correct, not non-specific, so specificity 0/6 on that arm says little about novelty detection.</li>
             <li><strong>The six demoted claims are not a positive arm.</strong> Their ground truth came from the audit class under
               evaluation, so the earlier &ldquo;sensitivity 6/6&rdquo; is circular.</li>
             <li><strong>The question it cannot yet answer.</strong> H1: the framework contained nothing novel. H2: an LLM rewarded for
-              finding prior art maps almost anything onto its corpus, real discoveries included. Nothing measured so far separates them.</li>
+              finding prior art maps almost anything onto its corpus, real discoveries included. Nothing measured so far separates them.
+              The design that would is a post-training-cutoff arm: modest-novelty results published after the models&apos; cutoff, scored
+              blind. It has not been run (routed to dp since 2026-09-10).</li>
+            <li><strong>The temporal-asymmetry &ldquo;0/6&rdquo; (2026-05-18) was a desk counterfactual, not a run.</strong> It asks whether a
+              later-cutoff challenger would have caught the six demotions; it measures a proposed design, not the protocol.</li>
           </ul>
         </div>
 

@@ -183,8 +183,8 @@ export default function GalaxyPlotter() {
       <PathNav currentPath="/galaxy-plotter" />
       <h1>Galaxy Curve Plotter</h1>
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.35rem' }}>
-        <ValidationBadge status="failed" label="published equation, γ = 2 at ρ_crit = 0.029·V_flat²" />
-        <ValidationBadge status="reparametrization" label="the stand-in that matched MOND" />
+        <ValidationBadge status="failed" label="published density law C_ρ (γ = 2, ρ_crit = 0.029·V_flat²) in the division wiring g = g_bar/C, floored at Ω_m (solid violet); the quadrature wiring (dashed) is inert" />
+        <ValidationBadge status="reparametrization" label="what matched MOND: the hand-drawn stand-in, and the fitted γ ≈ 0.49 law" />
       </div>
       {/* 2026-09-15: visitor saw "Reparametrization" here and "Model Explainer" on the tools index and could not tell which applied */}
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginTop: '0.35rem' }}>
@@ -199,9 +199,10 @@ export default function GalaxyPlotter() {
           seeing the dark-matter problem itself — pick a real galaxy and watch the gray line (what
           visible matter predicts) sag below the dots (what telescopes measure). That gap is the
           puzzle. As of 2026-07-08 this page also renders the framework&apos;s <em>actual</em> failure
-          instead of narrating it: the solid violet curve is the real C(&#x03C1;) evaluated on a disk
-          density profile and wired the way the ledger&apos;s tests wire it (g = g<sub>bar</sub>/C, floored at
-          &Omega;<sub>m</sub>). C never gets anywhere near its knee, so the curve is a flat 3.17&times; boost of the
+          instead of narrating it: the solid violet curve is the density-keyed C<sub>&#x03C1;</sub> evaluated on a disk
+          density profile and wired by <em>division</em>, the way the ledger&apos;s tests wire their C (g = g<sub>bar</sub>/C, with C floored at
+          &Omega;<sub>m</sub>; TEST-09/TEST-10 themselves divide by a different, acceleration-keyed C<sub>a</sub> &mdash; see the
+          two-C&apos;s box by the chart). C never gets anywhere near its knee, so the curve is a flat 3.17&times; boost of the
           baryon line: wrong shape, Newtonian decline at the edge. The light-violet dashed curve is the same C added
           in quadrature, which hugs the baryon line (until 2026-10-08 that inert wiring was the only one drawn; a
           graduate-physics visitor pointed out it shows the milder of two opposite failures). The old hand-tuned
@@ -219,7 +220,8 @@ export default function GalaxyPlotter() {
           The curve is honestly computed &mdash; nothing is fitted to the dots &mdash; but every parameter in it is
           one the site elsewhere marks as failed:
           <br />&bull; <strong>&gamma;&nbsp;=&nbsp;2</strong> &mdash; the pin refuted on the RAR at
-          &Delta;BIC&nbsp;=&nbsp;+184 (<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
+          &Delta;BIC&nbsp;=&nbsp;+184 &mdash; strictly, that fit used the acceleration-keyed C<sub>g</sub> (keyed on g<sub>obs</sub>, no floor; not the floored C<sub>a</sub> of TEST-09/10); the density-keyed
+          C<sub>&#x03C1;</sub> drawn here lost its own head-to-head by &Delta;BIC&nbsp;+2843 even with &gamma; free (<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
           <br />&bull; <strong>&rho;<sub>crit</sub>&nbsp;=&nbsp;0.029&middot;V<sub>flat</sub><sup>+2</sup></strong>
           &mdash; an a&#x2080;-tracking knee would need &rho;<sub>crit</sub>&nbsp;&propto;&nbsp;V<sup>&minus;2</sup>, and the knee
           measured on SPARC has no velocity dependence at all (V<sup>&minus;0.16 &plusmn; 0.19</sup>, median 0.161&nbsp;M<sub>&#x2609;</sub>/pc&sup3;), so
@@ -264,8 +266,9 @@ export default function GalaxyPlotter() {
           Synchronism proposed a third interpretation: the coherence function C(ρ) would mimic the extra
           gravity via density-dependent coupling. Only the first two fit the observations: dark-matter
           halos and MOND both reproduce these curves (MOND with one global constant, a&#x2080;, for every
-          galaxy). The framework&apos;s own equation, as published, does not &mdash; the violet curve below
-          stays on the visible-matter line. What matched MOND was either the hand-drawn amber stand-in or,
+          galaxy). The framework&apos;s own equation, as published, does not &mdash; wired by division (solid violet below) it is
+          the visible-matter line scaled up by a constant, still falling where the dots stay flat; wired in quadrature (dashed light
+          violet) it stays on the visible-matter line. What matched MOND was either the hand-drawn amber stand-in or,
           in the archive&apos;s SPARC work, a fit that re-tunes &#x03C1;<sub>crit</sub> for each galaxy
           (one extra free parameter per galaxy). The violet curve is not a fit of any kind: nothing in it
           is adjusted to the dots. (Corrected 2026-09-15: this paragraph said &ldquo;all three fit the
@@ -295,8 +298,8 @@ export default function GalaxyPlotter() {
           archive since 2025-12-01 — but the version stated there is eliminated a priori, and writing down the
           surviving one changes none of the refutations. See{' '}
           <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>.)
-          The curve on this plotter is built from a quadrature stand-in, not from any field equation — see the
-          formula box below. See{' '}
+          The violet curves on this plotter are two display wirings of C<sub>&#x03C1;</sub> (division and quadrature), not
+          solutions of any field equation — see the formula box below. See{' '}
           <a href="/honest-assessment#test-04a" style={{ color: 'var(--color-accent-blue)' }}>what the tests actually say →</a>
         </p>
         <div style={{
@@ -360,7 +363,7 @@ export default function GalaxyPlotter() {
           <ul style={{ margin: '0.4rem 0 0', color: 'var(--color-text-secondary)', paddingLeft: '1.2rem' }}>
             <li><strong>Dashed gray</strong> — Newtonian prediction using visible matter only (toy exponential disk). Drops off at the edges; this is the puzzle.</li>
             <li><strong>Dots</strong> — observed rotation velocities. Flat at large radius; doesn&apos;t drop like Newtonian says it should.</li>
-            <li><strong>Violet solid</strong> — Synchronism&apos;s real C(&#x03C1;) at &#x03B3;=2 with the framework&apos;s asserted &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;. The disk&apos;s density is thousands of times below &#x03C1;<sub>crit</sub>, so C stays near zero and the curve sits on the baryon line. <strong>This is the 2026-07-02 audit result, rendered.</strong> <em>Caveat (2026-08-05, revised same day):</em> that &ldquo;thousands of times below&rdquo; is <strong>conditional on A = 0.029</strong>, since &#x03C1;/&#x03C1;<sub>crit</sub> &#x221D; 1/A &mdash; at A = 4.6&times;10<sup>&minus;5</sup> the ratio for NGC 3198 is 0.60 and the curve would lift off the baryon line. But the 635&times; between them is a <strong>law swap, not a scale choice</strong>: universal A with &#x03C1;<sub>crit</sub> &#x221D; V&sup2; versus per-galaxy A &#x221D; R<sub>half</sub><sup>&minus;2</sup> with &#x03C1;<sub>crit</sub> &#x221D; V<sup>0.5</sup> &mdash; the two-law fork{' '}
+            <li><strong>Violet solid (division reading)</strong> — Synchronism&apos;s real C<sub>&#x03C1;</sub> at &#x03B3;=2 with the framework&apos;s asserted &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, wired as g = g<sub>bar</sub>/C<sub>f</sub> with C<sub>f</sub> = &Omega;<sub>m</sub> + (1&minus;&Omega;<sub>m</sub>)&middot;C<sub>&#x03C1;</sub>. The disk&apos;s density is thousands of times below &#x03C1;<sub>crit</sub>, so C<sub>&#x03C1;</sub> stays near zero, C<sub>f</sub> sits on the floor, and the curve is the baryon line times &radic;3.17 &asymp; 1.78 at every radius: wrong shape. <strong>Light-violet dashed (quadrature reading)</strong> &mdash; the same C<sub>&#x03C1;</sub> added in quadrature, v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C<sub>&#x03C1;</sub>)&sup2;; with C<sub>&#x03C1;</sub> &asymp; 0.001 it sits on the baryon line. <strong>This is the 2026-07-02 audit result, rendered.</strong> <em>Caveat (2026-08-05, revised same day):</em> that &ldquo;thousands of times below&rdquo; is <strong>conditional on A = 0.029</strong>, since &#x03C1;/&#x03C1;<sub>crit</sub> &#x221D; 1/A &mdash; at A = 4.6&times;10<sup>&minus;5</sup> the ratio for NGC 3198 is 0.60 and the curve would lift off the baryon line. But the 635&times; between them is a <strong>law swap, not a scale choice</strong>: universal A with &#x03C1;<sub>crit</sub> &#x221D; V&sup2; versus per-galaxy A &#x221D; R<sub>half</sub><sup>&minus;2</sup> with &#x03C1;<sub>crit</sub> &#x221D; V<sup>0.5</sup> &mdash; the two-law fork{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</Link> item 1 has documented since 2026-06-07. An earlier version of this caveat attributed the gap to an unstated coarse-graining length &#x2113;; <strong>that is withdrawn</strong> &mdash; a self-consistent &#x2113; smooths &#x03C1; and &#x03C1;<sub>crit</sub> alike and <em>cancels</em>, leaving &#x03C1;/&#x03C1;<sub>crit</sub> &#x2272; 0.019&#x03B2;<sub>J</sub>&sup2; in every sector at every &#x2113;. This plot shows the framework under its own stated law.</li>
             <li><strong>Amber dotted</strong> — shown only to illustrate what a working boost would look like; <strong>not a prediction of any theory</strong>. It is the hand-tuned tanh(radius) stand-in previously displayed, and it fits because it was drawn to fit; no &#x03C1;, &#x03C1;<sub>crit</sub>, or &#x03B3; enters it. (Recolored from violet 2026-07-23: it is an illustration, not the theory.)</li>
             <li><strong>Green dashed</strong> — MOND&apos;s simple-&#x03BD; function (Famaey &amp; Binney 2005) on a BTFR-assigned mass (one global a&#x2080;, zero per-galaxy knobs). It lands close to the dots — expect ~10% mismatches from the toy mass model, not from tuning.</li>
@@ -388,24 +391,26 @@ export default function GalaxyPlotter() {
         </div>
 
         <div style={{ background: 'rgba(239, 68, 68, 0.08)', border: '1px solid rgba(239, 68, 68, 0.35)', borderRadius: '0.375rem', padding: '0.75rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-          <strong style={{ color: '#ef4444' }}>The actual formulas plotted (disclosure, updated 2026-07-08):</strong>{' '}
+          <strong style={{ color: '#ef4444' }}>The actual formulas plotted (disclosure, updated 2026-07-08; violet lines corrected 2026-10-12 &mdash; this box still described only the quadrature curve, as &ldquo;Violet SOLID&rdquo;, after the solid line was switched to division on 2026-10-08):</strong>{' '}
           for a page badged Reparametrization, the formulas are the argument — so here they are, exactly as coded:
           <div style={{ fontFamily: 'monospace', fontSize: '0.8rem', margin: '0.5rem 0', padding: '0.5rem 0.75rem', background: 'rgba(0,0,0,0.25)', borderRadius: '4px', overflowX: 'auto' }}>
             Toy mass model: M_b = 47&middot;V_flat&#x2074; M&#x2609; (empirical BTFR, McGaugh 2011), exponential disk with each galaxy&apos;s observed scale length R_d, h = 0.3 kpc<br />
             Gray &ldquo;Newtonian&rdquo;: v_b(r) = &radic;(G&middot;M(&lt;r)/r), M(&lt;r) = M_disk&middot;[1 &minus; e^(&minus;r/R_d)(1+r/R_d)]<br />
-            Violet SOLID &ldquo;C(&#x03C1;), quadrature wiring (a display branch, not the ledger&apos;s g<sub>bar</sub>/C law)&rdquo;: v(r) = &radic;(v_b&sup2; + [V_flat&middot;C(&#x03C1;(r))]&sup2;), C(&#x03C1;) = tanh(2&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub>+1)), &#x03C1;(r) = &#x03A3;(r)/2h, &#x03C1;<sub>crit</sub> = 0.029&middot;V_flat&sup2;<br />
+            Density-keyed coherence (both violet lines): C<sub>&#x03C1;</sub>(r) = tanh(2&middot;ln(&#x03C1;(r)/&#x03C1;<sub>crit</sub>+1)), &#x03C1;(r) = &#x03A3;(r)/2h, &#x03C1;<sub>crit</sub> = 0.029&middot;V_flat&sup2;<br />
+            Violet SOLID, division reading (the wiring the ledger&apos;s tests use; failed): g = g_bar/C<sub>f</sub>, i.e. v(r) = v_b/&radic;C<sub>f</sub>, C<sub>f</sub> = &Omega;<sub>m</sub> + (1&minus;&Omega;<sub>m</sub>)&middot;C<sub>&#x03C1;</sub>, &Omega;<sub>m</sub> = 0.315 (boost &le; 1/&Omega;<sub>m</sub> = 3.17 in g)<br />
+            Light-violet DASHED, quadrature reading (display branch, not a tested law; inert at C<sub>&#x03C1;</sub> &asymp; 0.001): v(r) = &radic;(v_b&sup2; + [V_flat&middot;C<sub>&#x03C1;</sub>]&sup2;)<br />
             Amber DOTTED (old illustrative stand-in &mdash; what this page showed before 2026-07-08, kept for comparison): v(r) = &radic;(v_toy&sup2; + [V_flat&middot;tanh(0.4&middot;r/2.5)]&sup2;), v_toy = 0.6&middot;V_flat&middot;&radic;(1&minus;e^(&minus;r/2.5))<br />
             Green &ldquo;MOND&rdquo;: v(r) = v_b&middot;&radic;&#x03BD;(y), &#x03BD;(y) = &frac12; + &radic;(&frac14; + 1/y), y = g_N/a&#x2080;, g_N = v_b&sup2;/r (real simple-&#x03BD;)
           </div>
           <div style={{ margin: '0.75rem 0', padding: '0.7rem 0.9rem', background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', fontSize: '0.85rem' }}>
             <strong style={{ color: '#f87171' }}>This figure and the ledger run different force laws &mdash; the fork,
-            stated (2026-08-08).</strong> The violet curve above couples C <em>in quadrature</em>:
+            stated (2026-08-08; when this was written the chart drew only the quadrature curve, now the light-violet dashed one).</strong> The quadrature curve couples C <em>in quadrature</em>:
             v&sup2;&nbsp;=&nbsp;v_b&sup2;&nbsp;+&nbsp;[V_flat&middot;C]&sup2;, so C&nbsp;&rarr;&nbsp;0 means{' '}
             <em>no boost</em>. But{' '}
             <a href="/tier-1-existing" style={{ color: '#f87171' }}>Tier 1</a> derives the boost ceiling behind
             TEST-09/TEST-10 from f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C, i.e. from reading the coupling as{' '}
             <strong>g<sub>obs</sub>&nbsp;=&nbsp;g<sub>bar</sub>/C</strong>, where C&nbsp;&rarr;&nbsp;0 means an{' '}
-            <em>infinite</em> boost. Same symbol, opposite orientation. The legend&apos;s &ldquo;max C on this disk:
+            <em>infinite</em> boost. Same symbol, opposite orientation. The old legend&apos;s &ldquo;max C on this disk:
             0.001 &mdash; boost never turns on&rdquo; would read &ldquo;f<sub>DM</sub>&nbsp;=&nbsp;0.999, a 1000&times;
             acceleration boost&rdquo; under the ledger&apos;s law. Every &#x03C3; on{' '}
             <a href="/honest-assessment" style={{ color: '#f87171' }}>Honest Assessment</a> is conditional on this
@@ -424,12 +429,12 @@ export default function GalaxyPlotter() {
             required for the EFE and cluster sectors; it is not required to conclude that the galaxy sector fails.
             (Raised independently by two expert visitor passes, 2026-08-08.)
           </div>
-          The solid violet curve and the dotted one differ in exactly one ingredient: the coherence factor.
+          The light-violet dashed (quadrature) curve and the amber dotted one differ in exactly one ingredient: the coherence factor.
           The stand-in used tanh(<em>radius</em>) with hand-tuned constants; the real curve uses
-          C(&#x03C1;) on the disk&apos;s density profile. With the framework&apos;s asserted
+          C<sub>&#x03C1;</sub> on the disk&apos;s density profile. With the framework&apos;s asserted
           &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, the disk midplane density sits orders of magnitude below
-          &#x03C1;<sub>crit</sub> everywhere (the legend shows this galaxy&apos;s maximum C), so the boost never
-          turns on and the real curve stays on the baryon line — the knee is never crossed, exactly as the
+          &#x03C1;<sub>crit</sub> everywhere (the legend shows this galaxy&apos;s maximum C<sub>&#x03C1;</sub>), so the quadrature
+          curve stays on the baryon line and the division curve sits on its floor (a flat 3.17&times; in g) — the knee is never crossed, exactly as the
           2026-07-02 audit found by computation (its more charitable density estimates reach at most C &#x2248; 0.28;
           no estimate reaches the knee). What you see is the difference between a mechanism and a costume.
           The 2026-07-02 audit also showed the &#x03C1;<sub>crit</sub> = A&middot;V&sup2; scaling itself is
@@ -467,9 +472,10 @@ export default function GalaxyPlotter() {
         </div>
 
         <div style={{ background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', padding: '0.7rem 0.9rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
-          <strong style={{ color: '#a78bfa' }}>What to notice in the chart below:</strong> the solid violet line is the
-          framework&apos;s density law with &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;. It barely moves
-          off the dashed gray Newtonian line. The green MOND line does follow the dots. That gap between violet and
+          <strong style={{ color: '#a78bfa' }}>What to notice in the chart below:</strong> both violet lines are the
+          framework&apos;s density law with &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;, wired two ways. The solid
+          (division) line is the dashed gray Newtonian line scaled up by a constant, so it keeps the Newtonian fall-off; the dashed
+          (quadrature) line barely moves off the gray line. The green MOND line does follow the dots. That gap between violet and
           green is the failure this tool shows.
           <br /><strong>Two assumptions behind that picture:</strong>
           <ul style={{ margin: '0.35rem 0 0', paddingLeft: '1.2rem' }}>
@@ -479,9 +485,10 @@ export default function GalaxyPlotter() {
               A &asymp; 4.6&times;10<sup>&minus;5</sup>. At that value the knee sits inside dwarf-disc densities: a
               visitor&apos;s estimate puts C &asymp; 0.5 near the DDO&nbsp;154 midplane (an estimate, not a
               computation this page performs). The chart draws only A = 0.029.</li>
-            <li>The violet law, v&sup2; = v<sub>b</sub>&sup2; + [V<sub>flat</sub>&middot;C]&sup2;, takes the observed
-              V<sub>flat</sub> as an input, so even a match would not count as evidence. It is also a different law
-              from the g = g<sub>N</sub>/C used in the site&apos;s refutations (see the wiring note inside the chart card).
+            <li>The dashed quadrature law, v&sup2; = v<sub>b</sub>&sup2; + [V<sub>flat</sub>&middot;C<sub>&#x03C1;</sub>]&sup2;, takes the observed
+              V<sub>flat</sub> as an input, so even a match would not count as evidence. The solid division curve uses the
+              site&apos;s tested wiring, g = g<sub>bar</sub>/C, but with the density-keyed C<sub>&#x03C1;</sub>; TEST-09/TEST-10 divide by
+              the acceleration-keyed C<sub>a</sub> (see the two-C&apos;s box inside the chart card).
               The failure verdicts rest on those refutations, not on this picture.</li>
           </ul>
         </div>
@@ -516,9 +523,9 @@ export default function GalaxyPlotter() {
           <div style={{ background: 'rgba(245,158,11,0.08)', borderRadius: '4px', padding: '0.4rem 0.6rem', marginBottom: '0.75rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             <strong style={{ color: '#f59e0b' }}>V<sub>flat</sub> = {galaxy.vflat} km/s (observed input)</strong>
             {' '}&mdash; taken from SPARC for this galaxy and fed <em>into</em> the curves, not predicted by them.
-            It enters the violet curve twice: through &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;
-            (here {(0.029 * galaxy.vflat * galaxy.vflat).toFixed(0)} M<sub>&#x2609;</sub>/pc&sup3;) and through the
-            V<sub>flat</sub>&middot;C boost term. <strong>A curve built from V<sub>flat</sub> cannot be a prediction of
+            It enters both violet curves through &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;
+            (here {(0.029 * galaxy.vflat * galaxy.vflat).toFixed(0)} M<sub>&#x2609;</sub>/pc&sup3;) and through the BTFR baryon mass,
+            and the dashed quadrature curve a third time through its V<sub>flat</sub>&middot;C boost term. <strong>A curve built from V<sub>flat</sub> cannot be a prediction of
             V<sub>flat</sub>.</strong> Units: the code compares &#x03C1;<sub>crit</sub> with a disk density in
             M<sub>&#x2609;</sub>/pc&sup3; with V<sub>flat</sub> in km/s, so the 0.029 carries units of
             M<sub>&#x2609;</sub>&nbsp;pc<sup>&minus;3</sup>&nbsp;(km/s)<sup>&minus;2</sup>; the archive ledger states units
@@ -537,13 +544,16 @@ export default function GalaxyPlotter() {
           </div>
 
           <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', margin: '0 0 0.6rem' }}>
-            <strong style={{ color: '#a78bfa' }}>Which wiring this chart draws (2026-09-15):</strong> the violet curve
-            couples C <em>in quadrature</em>, v&sup2; = v<sub>b</sub>&sup2; + [V<sub>flat</sub>&middot;C]&sup2;, so C &rarr; 0
-            means no boost. The ledger&apos;s kills (<Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>TEST-09/TEST-10</Link>)
-            use the <em>division</em> wiring g<sub>obs</sub> = g<sub>bar</sub>/C &mdash; but with a{' '}
-            <strong>different C</strong> (see the box below), not this one clipped at a floor. Applying a floor to{' '}
-            <em>this</em> chart&apos;s C would give a boost of 1/C &asymp; {maxC > 0 ? (1 / maxC).toFixed(0) : '∞'}&times;
-            unfloored, or a flat 3.17&times; floored. For DDO&nbsp;154 (needs &asymp; 10&times;)
+            <strong style={{ color: '#a78bfa' }}>Which wiring each violet line draws (2026-09-15; rewritten 2026-10-12, it still described the
+            pre-10-08 chart):</strong> the <strong>solid</strong> line is the <em>division</em> reading, g = g<sub>bar</sub>/C<sub>f</sub> with
+            C<sub>f</sub> = &Omega;<sub>m</sub> + (1&minus;&Omega;<sub>m</sub>)&middot;C<sub>&#x03C1;</sub>, so C<sub>&#x03C1;</sub> &rarr; 0 means the
+            maximal boost 1/&Omega;<sub>m</sub> = 3.17&times;. The <strong>dashed</strong> line is the <em>quadrature</em> reading,
+            v&sup2; = v<sub>b</sub>&sup2; + [V<sub>flat</sub>&middot;C<sub>&#x03C1;</sub>]&sup2;, so C<sub>&#x03C1;</sub> &rarr; 0 means no boost.
+            The ledger&apos;s kills (<Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>TEST-09/TEST-10</Link>)
+            use the division wiring too &mdash; but with a{' '}
+            <strong>different C</strong>, the acceleration-keyed C<sub>a</sub> (see the box below), not this chart&apos;s C<sub>&#x03C1;</sub> held at a floor.
+            On <em>this</em> chart&apos;s C<sub>&#x03C1;</sub> the division boost is 1/C &asymp; {maxC > 0 ? (1 / maxC).toFixed(0) : '∞'}&times;
+            unfloored, or the flat 3.17&times; drawn, floored. For DDO&nbsp;154 (needs &asymp; 10&times;)
             that is quadrature &asymp; 1&times; (under), floored division &asymp; 3&times; (under), unfloored division &asymp; 1000&times;
             (over) &mdash; every wiring fails; the fork box above has the detail. Radius is in kpc (kiloparsecs):
             1 kpc = 1,000 parsecs &asymp; 3,260 light-years.
@@ -591,6 +601,9 @@ export default function GalaxyPlotter() {
           </div>
           {/* 2026-10-06: visitor found five overlaid curves with no step-by-step reading guide */}
           <div style={{ margin: '0 0 0.75rem', padding: '0.6rem 0.9rem', background: 'rgba(56,189,248,0.06)', border: '1px solid var(--color-border)', borderRadius: '0.375rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+            <p style={{ margin: '0 0 0.4rem' }}>
+              <strong>Start here:</strong> compare the gray line (Newton, visible matter only) with the dots (observed), then the green (MOND) line.
+            </p>
             <strong>How to read this chart, in three steps</strong>
             <ol style={{ margin: '0.35rem 0 0', paddingLeft: '1.3rem' }}>
               <li><strong style={{ color: '#38bdf8' }}>Blue dots</strong> are what telescopes measure: how fast stars and gas orbit at each distance from the centre.
@@ -672,9 +685,9 @@ export default function GalaxyPlotter() {
             <circle cx={pad.left + 20} cy={pad.top + 15} r="4" fill="#38bdf8" />
             <text x={pad.left + 30} y={pad.top + 19} fill="#38bdf8" fontSize="10">Observed</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 30} x2={pad.left + 20 + 8} y2={pad.top + 30} stroke="#8b5cf6" strokeWidth="2.5" />
-            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism, as tested (gravity &divide; C): g = g<tspan baselineShift="sub" fontSize="7">bar</tspan>/C, C floored at &#x03A9;<tspan baselineShift="sub" fontSize="7">m</tspan>, &#x03B3;=2 (max C(&#x03C1;) here: {maxC.toFixed(3)}, so C sits on the floor: a flat 3.17&times; boost, Newtonian shape)</text>
+            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism, division reading (failed): g = g<tspan baselineShift="sub" fontSize="7">bar</tspan>/C, C = &#x03A9;<tspan baselineShift="sub" fontSize="7">m</tspan> + (1&minus;&#x03A9;<tspan baselineShift="sub" fontSize="7">m</tspan>)C<tspan baselineShift="sub" fontSize="7">&#x03C1;</tspan>, &#x03B3;=2 (max C<tspan baselineShift="sub" fontSize="7">&#x03C1;</tspan> here: {maxC.toFixed(3)}, so a flat 3.17&times; boost, Newtonian shape)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#c4b5fd" strokeWidth="1.5" strokeDasharray="3 3" />
-            <text x={pad.left + 30} y={pad.top + 49} fill="#c4b5fd" fontSize="10">Same equation, other wiring, adds nothing (quadrature): v&sup2; = v<tspan baselineShift="sub" fontSize="7">b</tspan>&sup2; + (V<tspan baselineShift="sub" fontSize="7">flat</tspan>&middot;C)&sup2; (inert: C &asymp; 0 adds nothing)</text>
+            <text x={pad.left + 30} y={pad.top + 49} fill="#c4b5fd" fontSize="10">Same C<tspan baselineShift="sub" fontSize="7">&#x03C1;</tspan>, quadrature reading (untested display): v&sup2; = v<tspan baselineShift="sub" fontSize="7">b</tspan>&sup2; + (V<tspan baselineShift="sub" fontSize="7">flat</tspan>&middot;C<tspan baselineShift="sub" fontSize="7">&#x03C1;</tspan>)&sup2;, inert at C<tspan baselineShift="sub" fontSize="7">&#x03C1;</tspan> &asymp; {maxC.toFixed(3)}</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />
             <text x={pad.left + 30} y={pad.top + 64} fill="#22c55e" fontSize="10">MOND, the rival theory (simple-&#x03BD; of Famaey &amp; Binney 2005; BTFR mass; levels off near 0.93 V_flat)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 75} x2={pad.left + 20 + 8} y2={pad.top + 75} stroke="#6b7280" strokeWidth="1.5" strokeDasharray="3 2" />

@@ -35,10 +35,15 @@ const coreTools = [
   {
     title: 'Galaxy Curve Plotter',
     href: '/galaxy-plotter',
-    desc: 'Pick a SPARC galaxy and see the dark-matter problem: the gray Newtonian line (visible matter) sags below the observed dots. Solid violet = the framework\'s equation as published, wired as its tests wire it (g_bar/C, floored at Ω_m): C never leaves the floor, so it is a flat 3.17× boost with the Newtonian shape, falling where the dots stay flat. Dashed light violet = the same C added in quadrature, which does nothing. Unfloored, the division wiring would over-boost by ~10³× in g. Green = MOND\'s simple interpolating function. The old hand-tuned amber stand-in is hidden behind a checkbox.',
+    desc: 'Pick a SPARC galaxy and see the dark-matter problem: the gray Newtonian line (visible matter) sags below the observed dots. Solid violet = the framework\'s density law C_ρ as published, wired by division as its tests wire their C (g = g_bar/C, floored at Ω_m; TEST-09/10 divide by the acceleration-keyed C_a instead): C never leaves the floor, so it is a flat 3.17× boost with the Newtonian shape, falling where the dots stay flat. Dashed light violet = the same C added in quadrature, which does nothing. Unfloored, the division wiring would over-boost by ~10³× in g. Green = MOND\'s simple interpolating function. The old hand-tuned amber stand-in is hidden behind a checkbox.',
     level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
     pageBadges: ['failed', 'reparametrization'] as ValidationStatus[],
+    // 2026-10-12: two bare badges ran together on this card with no indication which applied to what
+    pageBadgeLabels: {
+      failed: 'published density law (γ = 2, ρ_crit = 0.029·V_flat²), division wiring g = g_bar/C',
+      reparametrization: 'hand-drawn stand-in / fitted γ ≈ 0.49 = MOND',
+    } as Partial<Record<ValidationStatus, string>>,
   },
   {
     title: 'γ Calculator',
@@ -69,7 +74,7 @@ const coreTools = [
   {
     title: 'Chemistry Correlation Explorer',
     href: '/chemistry-correlation-explorer',
-    desc: 'See how γ correlates with chemical properties across 1,703 phenomena. High r values (0.98+) reflect density-monotonicity, not Synchronism-specific physics — the page states the null-model result (a 2-parameter polynomial in Z matches every r to within 0.07, sometimes better) at the head of the table; it has no per-row null column, and how γ was assigned per material is undocumented.',
+    desc: 'See how γ correlates with chemical properties on 23 curated rows; the source table and the γ assignments are unpublished (the archive\'s "1,703 phenomena" is a session counter, not a table). High r values (0.98+) reflect density-monotonicity, not Synchronism-specific physics — the page states the null-model result (a 2-parameter polynomial in Z matches every r to within 0.07, sometimes better) at the head of the table; it has no per-row null column, and how γ was assigned per material is undocumented.',
     level: 'Advanced',
     epistemic: 'chemistry' as EpistemicStatus,
     pageBadges: ['reparametrization'] as ValidationStatus[],
@@ -188,7 +193,7 @@ export default function InteractiveTools() {
                 {'pageBadges' in tool && tool.pageBadges ? (
                   <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', alignItems: 'center', marginTop: '0.5rem', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
                     Badge on its page:
-                    {tool.pageBadges.map(b => <ValidationBadge key={b} status={b} />)}
+                    {tool.pageBadges.map(b => <ValidationBadge key={b} status={b} label={'pageBadgeLabels' in tool ? tool.pageBadgeLabels?.[b] : undefined} />)}
                   </div>
                 ) : null}
               </div>

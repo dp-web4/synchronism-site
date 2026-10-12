@@ -29,7 +29,8 @@ const steps = [
     That formula did not survive testing. Where it made a checkable prediction, the sign came out backwards
     (predicted correlation +0.55, measured −0.55), and N_corr had to be defined differently in every field to make
     it work. When γ is simply fitted to galaxy data it comes out near 0.5 — the value at which the equation turns
-    into MOND's. So read γ = 2/√N_corr as the starting hypothesis, not as how things work.
+    into MOND's (MOND: a 40-year-old rival idea that says gravity itself gets stronger than Newton predicts in very weak
+    fields, instead of adding dark matter; section E says more). So read γ = 2/√N_corr as the starting hypothesis, not as how things work.
     γ in three lines, since the page meets it three times: (1) proposed γ = 2/√N_corr: failed. (2) Galaxies, with stars
     as uncorrelated units, γ = 2: loses to MOND on real rotation curves (only just, once whole galaxies rather than
     individual data points are counted). (3) γ fitted freely ≈ 0.5: this is exactly MOND's own formula, so it matches MOND
@@ -49,7 +50,8 @@ const steps = [
   {
     title: 'Scale Up: Galaxies',
     content: `Apply the same equation to galaxies. Stars in a galaxy are individual uncorrelated
-    classical particles (N_corr = 1, γ = 2, the pinned value that loses to MOND; see the γ status above). The critical density ρ_crit = A × V_flat² connects
+    classical particles (N_corr = 1, γ = 2, the pinned value that loses to MOND; see the γ status above). The critical density ρ_crit = A × V_flat² (V_flat is the steady top speed of stars far from a galaxy's centre; A is a
+    fitted constant, about 0.029 in these units, not derived from anything) connects
     to rotation velocity. MOND — Modified Newtonian Dynamics, the long-standing rival proposal that gravity itself changes below a threshold acceleration, rather than invoking dark matter — has an acceleration constant a₀. Its value happens to match a combination
     of the speed of light and the universe's expansion rate. That may be luck; nobody has derived it.`,
     // Visitor 2026-09-27: the dimensional-analysis detail was pitched above the rest of the page;

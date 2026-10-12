@@ -1,9 +1,46 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-10 (maintainer)*
+*Last updated: 2026-10-12 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-12) — **The printed counting rule admits a seventh refutation. The uniform G/C growth reading
+was pre-registered (`be3ecba`), executed and excluded, and it is off the ledger only because no archive document asserted
+it. An "asserted by the archive" clause applied uniformly would instead question TEST-25, so "6" sits between 5 and 7
+and matches neither rule. Also: the A2ACW temporal "0/6" was a desk counterfactual shown as a run on two pages, and
+TEST-04a's 0.418 rests on a mechanism withdrawn 2026-08-11 that the card never mentioned.** Count 6 (pending dp); Bucket 0 = 0.
+(10-11 maintainer and visitor sessions died on usage credits; nothing was lost except the day.)
+
+Log: `maintainer/logs/2026-10-12.md`. Proposal:
+`Synchronism/Research/proposals/the_counting_rule_admits_the_uniform_growth_reading_and_the_post_cutoff_arm_is_the_live_experiment_20261012.md`.
+
+- **Fixed:**
+  - Galaxy Plotter wiring: solid = C_ρ floored, by division (not C_a); dashed = quadrature. Box, legend, badge and body
+    now agree.
+  - TEST-04a withdrawn-premise lead line; 1.5σ vs 0.9σ on Tier 1 and Top-5.
+  - Honest Assessment §1b (uniform growth reading plus the counting rule); A2ACW desk counterfactual relabelled on 3
+    pages.
+  - Ciocan explorer drain: 95% CI σ's, slope table, "estimator-dominated", RC100 "too wide".
+  - TEST-25 conditional on modified-Poisson; cH₀/2π ±5% sentence.
+  - Forced-wₐ conditioning; γ = ½ "no evidential weight"; GW bound asymmetric.
+  - Onboarding: MOND/V_flat/A glosses, CTA, computed tools-in-paths sentence.
+- **site_lint.py:** 169 rules (HEAD control: 15 → 0).
+
+### → dp
+- **Counting rule:** count the uniform growth reading (7 from 6 roots), or add "asserted by the archive" and apply it
+  to every row (TEST-25 at risk; 5). The maintainer recommends counting it.
+- **Post-cutoff A2ACW arm:** fifth raise; authorise or rule out. Nothing leaves the machine.
+- (carried) Retire TEST-26/TEST-04a as discriminating; cross-vendor rater; L2 or L3; MRH badge-family rename; LLR row.
+
+### → Next maintainer session
+1. Shared status legend + lint for unlisted labels; kill-criterion tally table that sums to 26.
+2. γ regime thresholds into equations.ts (three schemes live); Coherence Explorer low-γ label; rename /parameter-derivations.
+3. Render the wiring × keying matrix when the explorer delivers it; then decide whether the plotter's solid line becomes C_a.
+
+### → Explorer (new topics)
+- `wiring-by-keying-matrix.md` · `solar-system-rho-crit-near-earth-boundary-and-stellar-striction.md` · notes appended to
+  `a2acw-positive-control-sensitivity.md` and `table-transcribed-numbers-register.md`
 
 ## 🔵 EXPLORER (2026-10-10) — **a₀(z) row: the slope is anchor-free and the row is estimator-dominated, not
 anchor-dominated. Ciocan's four bins give n = 0.71 ± 0.13 in a₀ ∝ E(z)ⁿ (level free; adding the SPARC anchor moves

@@ -185,7 +185,7 @@ export default function TestCatalog() {
           is the correction.
         </div>
         <p>
-          Synchronism has defined 24 specific, falsifiable experiments (TEST-01 through TEST-24; TEST-25 and TEST-26
+          Synchronism has defined 24 experiments, each registered with a kill-criterion field (how many of those criteria could actually fire is tallied below) (TEST-01 through TEST-24; TEST-25 and TEST-26
           below were added after the registry closed and are listed but not in this count) organized into four tiers
           by cost and feasibility. Every experiment has a kill-criterion <em>field</em>; most of those fields are not yet
           specific enough to fire. Counted 2026-09-18 across all 26 rows: 2 are well-formed (a statistic, a threshold and a

@@ -1,0 +1,36 @@
+Starting Synchronism Maintainer Session at Mon Oct 12 06:00:01 PDT 2026
+Session done. Both repos are pushed: site `10a2ca9`, research `29dc0864`. The build passes and the lint now has 169 rules; checked against the pre-session code, the 11 new rules catch 15 old wordings, and none remain.
+
+Yesterday's maintainer and visitor runs both stopped when usage credits ran out, so nothing from 10-11 was processed. Today I worked through the explorer's 10-10 Ciocan finding (high-redshift galaxies and MOND's a₀ constant) first, then today's visitor log.
+
+**Research problem (WAKE).** The site's printed rule for counting a refutation is: a test with a stated failure condition was run, and the claim failed it. One case meets that rule but isn't counted. Applying the framework's own G → G/C substitution to structure growth gives 0.575. That reading was pre-registered (commit `be3ecba`), run, and ruled out by existing data. It's left out of the "6" only because no archive document ever claimed it, and that exemption favours the framework. If the exemption were made an explicit rule and applied to every row, TEST-25 might fail it too. So "6" matches neither consistent rule: it would be 7 one way and possibly 5 the other. I've written this up as a proposal for you, with two other items:
+- The A2ACW post-cutoff arm has now been raised five times. It's the only experiment left that can be run in-house and whose outcome is unknown.
+- Seven of today's corrections fixed stale text, and five of those seven had leaned in the program's favour. One persona looking for that pattern picked the sample, so I recorded it without claiming a direction.
+
+**Site fixes, highest priority first:**
+- **Galaxy Plotter:** the formula box described the "Failed" curve with one formula and the legend with the opposite one. In the code, the solid line divides by the density-based C, floored at Ω_m. That is not the C used in TEST-09/10. The box, legend, badge and body text now all match the code.
+- **TEST-04a:** the card now opens by saying its 0.418 prediction rests on a mechanism withdrawn on 2026-08-11. It also now keeps two numbers apart: the prediction is 1.5σ below the data, and the data exceed the registered threshold by only 0.9σ.
+- **A2ACW "0 of 6":** this was a thought exercise, never run, but two pages presented it as a result. It's now labelled as not run. "The methodology finding is" now reads "hypothesis".
+- **Ciocan a₀(z):** the paper's error bars are 95% intervals, and the site had treated them as 1σ. The σ values are corrected and a slope table was added. Constant a₀ is ruled out at 5σ, but a₀ rising with the expansion rate (n = 1) can't be told apart from ΛCDM.
+- **Other corrections:**
+  - TEST-25 is now marked as depending on a modified-Poisson field equation.
+  - The cH₀/2π "inside ±5%" sentence is fixed; a 12% gap isn't inside 5%.
+  - The two wₐ numbers on Dark Energy and Top Decisive Tests now say which model each comes from.
+  - The GW170817 bound is now quoted as asymmetric.
+  - First Encounter defines MOND, V_flat and A where they first appear.
+  - The landing button now reads "Start the 10-minute intro".
+  - The Learning Paths sentence that said no path includes a tool is now computed from the path list.
+
+I didn't check the lunar laser ranging error bar against the paper. The site now says its convention wasn't re-read; the exclusion used a bound loosened 13×, so it doesn't change.
+
+**Decisions for you:**
+1. **Counting rule:** count the growth reading (7 refutations) or add the "claimed by the archive" clause to every row (possibly 5). I recommend counting it.
+2. **Post-cutoff A2ACW arm:** authorise it or rule it out. Nothing would be sent to an outside service.
+3. **Galaxy Plotter's solid curve:** keep it on the density-based C, or switch it to the C that TEST-09/10 actually failed. That changes the physics shown, so I left it.
+
+**Explorer topics:**
+- A table of every galaxy force law (wiring × keying), showing which were tested, with what result, and which were never run.
+- Which density threshold applies in the Solar System, including the Earth's atmosphere boundary and the solar-structure effect of the extra force term in the variational (action-based) version of the theory.
+- Notes added to two existing topics: a fifth-raise note on the A2ACW positive-control topic, and an error-convention column for the transcribed-numbers register.
+
+The full log is at `maintainer/logs/2026-10-12.md`, and the deferred items are in its Open Items section and in SESSION_FOCUS.

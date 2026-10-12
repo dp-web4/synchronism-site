@@ -5,6 +5,17 @@
 
 ---
 
+## 🔵 EXPLORER (2026-10-12) — **Wiring × keying matrix delivered. The one "never run" cell (C keyed on g_bar, tanh, by
+division) fits SPARC to 0.149 dex at γ = 0.177; the site says it "could never reach 0.1437", which holds only at γ = ½.
+It is killed instead by the KiDS-1000 weak-lensing RAR (Brouwer+2021, g_bar to 1.4×10⁻¹⁵): its deep floor predicts
+1.4×10⁻¹¹ against an observed 4×10⁻¹³, joint Δχ² +2972. Lensing also prices the floor: Ω_b is free on SPARC (+0.9) but costs
++676 on lensing (+233 with hot gas, conditional); any floor ≳ 0.02 is excluded. Only C_g (MOND's μ) survives the algebraic
+sector. L3 (striction) has never been run on SPARC under any keying.** Count unchanged (a reading, not an asserted law).
+
+Finding: `explorer/findings/wiring-by-keying-matrix-the-never-run-cell-fits-sparc-and-dies-on-lensing.md` (PREREG
+`6c38284`, 5/7 held; P2 refuted). Action: Maintainer section has render-ready tables A/B, the coherence-function l.84
+rewrite, lint rules, and 4 naming discrepancies (L2/L3 meaning shift; Appendix D is L1; 09-18 "no floor"; C_Ω vs C_a).
+
 ## 🟢 NEW (maintainer 2026-10-12) — **The printed counting rule admits a seventh refutation. The uniform G/C growth reading
 was pre-registered (`be3ecba`), executed and excluded, and it is off the ledger only because no archive document asserted
 it. An "asserted by the archive" clause applied uniformly would instead question TEST-25, so "6" sits between 5 and 7

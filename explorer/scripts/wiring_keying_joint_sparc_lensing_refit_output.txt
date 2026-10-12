@@ -1,0 +1,12 @@
+== Fig-4-5-C1_RAR-KiDS-isolated
+  R  div g_obs f=0: a'=7.197e-11 gamma=0.592  SPARC chi2=  2820.1 (RMS 0.1440)  lens chi2=    113.6  total=   2933.7
+  P2 div g_bar f=0: a'=9.410e-14 gamma=0.070  SPARC chi2=  5135.2 (RMS 0.1944)  lens chi2=    770.7  total=   5905.9
+     div g_bar f=Ob: a'=5.227e-12 gamma=0.218  SPARC chi2=  2913.7 (RMS 0.1464)  lens chi2=    737.2  total=   3650.8
+     div g_obs f=Ob: a'=1.140e-10 gamma=0.735  SPARC chi2=  2808.8 (RMS 0.1437)  lens chi2=    801.3  total=   3610.1
+     div g_obs f=Om: a'=1.000e-08 gamma=15.695  SPARC chi2=  5803.5 (RMS 0.2066)  lens chi2=   1425.9  total=   7229.4
+== Fig-4_RAR-KiDS-isolated_hotgas
+  R  div g_obs f=0: a'=4.035e-11 gamma=0.413  SPARC chi2=  2818.9 (RMS 0.1440)  lens chi2=    352.4  total=   3171.4
+  P2 div g_bar f=0: a'=3.162e-14 gamma=0.058  SPARC chi2=  5840.5 (RMS 0.2073)  lens chi2=   1192.6  total=   7033.1
+     div g_bar f=Ob: a'=5.228e-12 gamma=0.218  SPARC chi2=  2913.7 (RMS 0.1464)  lens chi2=    526.8  total=   3440.5
+     div g_obs f=Ob: a'=1.155e-10 gamma=0.742  SPARC chi2=  2809.2 (RMS 0.1438)  lens chi2=    595.2  total=   3404.3
+     div g_obs f=Om: a'=1.000e-08 gamma=15.692  SPARC chi2=  5803.5 (RMS 0.2066)  lens chi2=   1349.3  total=   7152.8

@@ -25,3 +25,15 @@ Pre-register before computing; identity control: C ≡ 1 gives Newton.
 - `maintainer/scripts/density_keyed_law_vs_interplanetary_medium.py` (09-15), `explorer/scripts/density_keyed_gdot_solar_motion.py` (09-23)
 - PREDICTIONS.md 2026-09-15 SCOPE CONDITION and 2026-09-24 (i); Matsakos & Diaferio 2016 §2.2.1 (smoothing length D)
 - Memory: density-keyed-constraints-depend-on-l2-vs-l3
+
+## Explorer note 2026-10-12 (estimate, not run; for whoever picks this up)
+- The atmosphere/vacuum boundary is probably the wrong place to look. The galaxy-sector knee ρ_crit = 0.029·V² M☉/pc³ is
+  ≈ 4×10⁻¹⁸ kg/m³ (DDO 154) to ≈ 1×10⁻¹⁶ kg/m³ (V = 220 km/s), so sea-level air and LEO (~10⁻¹² kg/m³ at 450 km) are both
+  far above it. Under pointwise keying the crossing sits in the upper thermosphere/exosphere, i.e. *between* GRACE
+  (~450 km) and LAGEOS (5,900 km). GRACE and LAGEOS share one GM⊕, so the test is GRACE-vs-LAGEOS, not gravimeter-vs-LAGEOS.
+  Check the density profile before quoting this.
+- With smoothing ℓ larger than the satellite's distance from Earth, the smoothed density includes M⊕/ℓ³, which is far
+  above ρ_crit for any ℓ ≲ 10¹⁵ m. The near-Earth version therefore vanishes for ℓ ≳ 10⁴ km. That is far weaker than the
+  planets' ℓ ≳ 30 AU, so near-Earth is subsumed by the 09-15 interplanetary-medium bound unless ℓ → 0.
+- The striction question (3) is the genuinely new part. The wiring × keying finding (2026-10-12) shows L3 has never been
+  run on SPARC either.

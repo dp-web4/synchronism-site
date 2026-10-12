@@ -1,0 +1,30 @@
+Starting Synchronism Explorer Session at Mon Oct 12 08:00:01 PDT 2026
+I worked the wiring × keying matrix: the visitor rated it high and the maintainer was waiting on it. The useful part wasn't the table; it was running the cells nobody had run. Everything is committed and pushed (`6c38284` is the pre-registration, `489a375` the session).
+
+**What I did**
+- A search agent built a census of 30 galaxy-sector force-law tests, each placed by how C enters gravity (wiring: division, multiplication, quadrature, field equation without striction L2, with striction L3), what C is keyed on (ρ, g_bar, g_obs, Σ) and its floor (none, Ω_b, Ω_m, free).
+- I wrote predictions down first, then fit every algebraic cell nobody had run on SPARC (2807 points, 166 galaxies) with γ and a′ free. A galaxy-level bootstrap goes with each.
+- I added a dataset the program had never used: the KiDS-1000 weak-lensing RAR (Brouwer+2021, public release). It reaches 2–3 decades below SPARC in baryonic acceleration.
+
+**Results (5 of 7 predictions held)**
+- **The "never run" cell is not obviously dead, and my prediction was wrong.** This is C keyed on g_bar, used by division. The site says it "could never reach 0.1437 dex RMS". Refit with γ = 0.177 it reaches **0.149 dex**, only about 2.8σ behind the reference fit at galaxy level. The site's sentence holds only at γ = ½.
+- **Lensing kills it.** Its deep limit is a constant acceleration of about 1.4×10⁻¹¹ m/s². At g_bar = 1.4×10⁻¹⁵ lensing measures 4×10⁻¹³, 1.5 decades lower. A joint SPARC + lensing refit gives **Δχ² = +2972** (+3862 with hot gas in the baryon budget). The kill holds after discounting both datasets for their own systematics.
+- **Lensing also prices the floor.** An Ω_b floor costs nothing on SPARC (+0.9) but +676 on lensing. That falls to +233 with hot gas, so this kill is conditional. Any floor above about 0.02 is excluded.
+- **Only one algebraic cell survives:** C keyed on g_obs, i.e. MOND's simple μ. ρ keying, g_bar keying and the Ω_m floor each have their own kill, and the Ω_b floor has a conditional one.
+- **The largest untested block is L3 (with the striction term),** which has never been run on SPARC under any keying.
+
+**For the maintainer:** the finding has render-ready tables, a rewrite for the wrong sentence on `/coherence-function` (~line 84), lint rules, and four naming inconsistencies the census found:
+- "L2"/"L3" changed meaning around 09-15.
+- Appendix D §D.2 is L1, not L2.
+- The 09-18 PREDICTIONS block says the plotter's C_ρ has no floor; since 10-08 it does.
+- C_Ω and C_a are two names for the same function.
+
+The refutation count doesn't change, because no archive document asserts this cell as the theory. It belongs with today's open counting-rule question.
+
+**Side item:** I added an estimate, not a run, to the Solar-System topic. The near-Earth boundary check is really GRACE vs LAGEOS, not surface gravimetry vs LAGEOS. It is subsumed by the existing planetary smoothing-length bound unless the smoothing length goes to zero.
+
+**So what?** This is the third time a "this reading can't work" argument was computed at another reading's parameters. It also shows SPARC can't see asymptotic floors. I saved that as a memory, and weak lensing is now a candidate probe for other ledger rows.
+
+Files:
+- `explorer/findings/wiring-by-keying-matrix-the-never-run-cell-fits-sparc-and-dies-on-lensing.md`
+- `explorer/logs/2026-10-12.md`

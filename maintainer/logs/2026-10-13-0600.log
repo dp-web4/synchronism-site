@@ -1,1 +1,37 @@
 Starting Synchronism Maintainer Session at Tue Oct 13 06:00:00 PDT 2026
+I fixed the visitor log's high-severity items and pushed both repos: site `1abaec4`, research ledger `8e53fba4`. The build passes (93/93 pages) and the lint is clean.
+
+**What the feedback showed about the research (WAKE):** the headline "6 refutations" mixes two rules for when a kill has "fired".
+- TEST-09's registered rule was a point estimate past a threshold. TEST-04a's required the threshold to be cleared at 3σ. Both clear their thresholds by about 0.9σ, yet one is counted and the other isn't.
+- Any single rule would change the count. "Threshold excluded at 2σ" drops TEST-09. "Point estimate past the threshold" adds TEST-04a, whose mechanism was already withdrawn. That decision belongs to dp, so I wrote it up as a proposal and added it to the PREDICTIONS ledger.
+- Second ledger item: the ledger already implies that no prediction differing from MOND or ΛCDM survives among the tests run. The site now says this in one sentence, with its scope stated. Without the scope it would overstate the refutation.
+
+**Fixes on the site:**
+- **Reviews that read as external:** two attributions, "external-reviewer pass" (07-27) and "external researcher review" (07-18), were AI visitor personas, not outside reviewers. The maintainer logs for both dates confirm it. All persona credits now say "simulated-visitor", and a new glossary entry says no outside physicist has reviewed the site.
+- **"dp":** the unexplained "dp" in reader-facing text now reads "the project lead", across 12 files.
+- **TEST-25 (Cassini):** the card blamed the wrong mechanism. The in-house script computes the external-field quadrupole as Desmond, Hees & Famaey (2024) do, so the persona's correction holds.
+- **Bell/CHSH:** the registered bet is now quoted word for word, with run sizes and an error of about ±0.005 on S. That error is my estimate; the scripts don't report one. The 2.67 arm is labelled "not a Bell test" because it only exceeds 2 by signalling.
+- **Lookups and wording:**
+  - The DESI DR2 (w₀, wₐ) values are now read from Table 5 of the paper, replacing a "should be re-verified" hedge.
+  - The sign test is now stated as one-sided p = 0.051, the direction that was registered.
+- **Beginner path:** the landing page has one start button, taken from the learning-path list.
+- **Smaller fixes:**
+  - /first-encounter has a plain-language "fitted vs predicted" sentence.
+  - The consciousness demo no longer counts its "none exists" approach in the average.
+  - The glossary BAO and ΔBIC entries are fixed.
+- **Lint:** six new rules. Run against the old source they catch 89 instances; the current site has 0.
+
+**Persona claims that turned out wrong:**
+- The β_J = 4.5 arithmetic was correct on the site. The value depends on β_J × R₀, and the persona held R₀ at 8 kpc. I added a sentence making that explicit.
+- A persona read the audit result "specificity 0/6" backwards. It means the audit flagged all six genuine discoveries as prior art. I copied the persona's reading onto the landing page, then caught and fixed it in the same session.
+- My first draft of the proposal also said a point-estimate rule "changes nothing". That was wrong, and I corrected it before committing.
+
+**New explorer topic:** re-run the existing environment test using external acceleration instead of local density. It would decide which of two readings of the surviving galaxy formula is right. It cannot add a confirmed prediction, and the topic says so up front.
+
+**Deferred:**
+- The status-vocabulary legend overhaul, carried over twice now.
+- The explorer's 10-12 wiring × keying tables. The next session should start with these.
+- One standard refutation sentence used on every page.
+- The Galaxy Plotter's legend and layout.
+
+**So what:** most of today was cleaning up who-said-what. Two things change the research record: the count has no single rule for "fired", and a persona's misreading reached the live page within minutes. The lint can't catch a reversed meaning; only re-reading the original sentence does.

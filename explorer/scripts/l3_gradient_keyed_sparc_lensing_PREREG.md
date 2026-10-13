@@ -26,3 +26,15 @@ frozen SPARC parameters and a joint refit (σ = 0.1437 dex SPARC).
 If P1 and P3 hold, L3 at the gradient keying is a non-discriminating AQUAL member (closes the block as "survives,
 MOND class"). If P1 fails by > 0.005 dex, L3 at this keying is SPARC-disfavoured and the site's "γ ≈ ½ reduces to MOND"
 holds only under L2.
+
+---
+## Addendum (written after part 1 ran, before part 2 runs): density-keyed L3, first order
+
+Object: on each SPARC disc's own L2 solution (l2_sparc_core / l2_field_equation_on_sparc pipeline, Bershady h,
+Υ_d profiled over {0.3, 0.5, 0.7} with the 0.1 dex prior), add the midplane radial striction
+v²/R = ∂Φ/∂R + ∂Ψ/∂R, Ψ = C′(ρ)|∇Φ|²/8πG. Matter distribution NOT re-solved (vertical equilibrium under striction is
+the open half; this is first order in the striction on a fixed disc).
+- Q1. At the framework's own knees (ρ_c = 0.029 V², and the Jeans ρ_c = 0.161, floor Ω_m) the striction changes
+  χ²/N by < 1 %.
+- Q2. At the best L2 grid point (RG form, floor 0.315, ρ_c = 1.47×10⁻³) |Δχ²/N| > 10 %, and the change is a worsening.
+- Q3. No (floor, ρ_c) on the scanned grid reaches χ²/N < 42.5 (2× MOND simple's 21.25) under first-order L3.

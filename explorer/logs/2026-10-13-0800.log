@@ -1,0 +1,52 @@
+Starting Synchronism Explorer Session at Tue Oct 13 08:00:01 PDT 2026
+The grid monitor is running. I'll fill in the grid section when rows arrive.
+
+Row 1 of 8 is in. Waiting for the rest.
+
+Row 2 of 8 is in. Waiting for the rest.
+
+Row 3 of 8 is in. Waiting for the rest.
+
+Framework form is done (4 rows); the RG-form rows are next.
+
+The framework-form grid is complete. Its best first-order L3 cell is χ²/N = 91.0 (floor 0.315, ρ_c = 0.01 M☉/pc³), above the 42.5 threshold, so Q3 is holding so far. The monitor is re-armed for the four RG-form rows.
+
+RG-form row 1 of 4 is in. Waiting for the other three.
+
+RG-form row 2 of 4 is in. Waiting for the last two.
+
+RG-form row 3 of 4 is in. One row left.
+
+## Explorer session 2026-10-13: L3 run on SPARC
+
+**WAKE.** This morning the maintainer added a sentence to `/for-researchers` saying no prediction that differs from MOND or ΛCDM survives. It explicitly leaves out "the never-run L3 (striction) dynamics on SPARC" (L3 is the version of the field equation derived from an action, which adds a striction force). That exclusion was the one remaining place a differing prediction could hide, so I ran it instead of working the queue. Both parts were pre-registered and committed before running (`8618d5d`, `4bd8d4f`).
+
+**Gradient-keyed L3 (C depends on |∇Φ|):**
+- It is the standard modified-gravity form AQUAL with interpolating function μ_eff = C + ½xC′.
+- The tanh-ln family maps almost onto itself under that change. For every γ from 0.2 to 2, an L2 curve with a different γ reproduces the L3 curve to within 0.005 dex across SPARC's range.
+- **SPARC:** L3 fits at γ = 0.4435 (scatter 0.14371 dex) against L2's γ = 0.489 (0.14368 dex). The galaxy-level comparison (ΔBIC, 95% interval) is [−1.1, +3.5], so neither is preferred.
+- **KiDS-1000 lensing:** the joint fits come out the same.
+- **What this changes:** "γ ≈ ½ is exactly MOND's formula" only holds under L2. Under L3 the same curve sits at γ ≈ 0.44, and the data cannot tell the two apart. The one place they differ is the Solar System, where L3's deviation from Newton is 2–4× larger.
+
+**Density-keyed L3 (C depends on ρ), first order on a fixed disc:**
+- **At the framework's own knee density:** the striction is about 10⁻⁵ of gravity, so L3 = L2 and every existing L2 refutation still applies.
+- **At the Jeans knee:** χ² improves by 8%, almost all from five bulge-dominated galaxies. The fit is still 147 against MOND's 21.
+- **Where the knee sits inside discs** (Refracted Gravity's regime): the striction reaches 7–14× gravity, and at 50 points it pushes outward harder than gravity pulls in. A rotation-curve fit on a fixed disc is not valid there.
+- **What this changes:** this cell needs a disc-equilibrium calculation, not a fit. The best cell on the grid is χ²/N = 86.1 against MOND's 21.25.
+
+**Scorecard:** 8 of 9 predictions held as worded and one was half-refuted (the Jeans knee). One of the "held" results is hollow: Q2's +92% worsening comes entirely from points where the first-order approximation has broken down. In the valid subset the change is −2%, so that registered criterion measured the approximation, not the theory.
+
+**Infrastructure:** the SPARC loader still pointed at the old pre-September `/mnt/c` path, so every solver-based SPARC script had been failing. I added a fallback to the current path.
+
+**So what?** The excluded case shrinks from "never run" to one specific open problem: can a disc be in equilibrium when striction exceeds gravity? If it can't, that rules out Refracted Gravity's knee placements under L3 without fitting any rotation curve. More generally, "untested" sometimes means the test as worded is the wrong kind of calculation, and the site's scoreboard has no slot for that.
+
+**Housekeeping:**
+- The finding's Action section asks the maintainer to rewrite the `/for-researchers` exclusion sentence, add "under L2" to the "γ ≈ ½ = MOND" wording, and fill in the L3 row of the wiring × keying table.
+- I added a note to the Refracted Gravity topic. It stays in the queue because its refit half is still open.
+- I saved a memory about splitting Δχ² by validity domain.
+- Everything is committed (`1637a74`) and pushed.
+- One untracked partial output file (`l3_density_keyed_first_order_sparc_output_fixed.txt`) is still in `explorer/scripts/`. The safety rules correctly blocked my chained `rm` on it; it's harmless to delete by hand.
+
+Finding: `explorer/findings/l3-on-sparc-the-gradient-cell-is-a-gamma-relabel-the-density-cell-is-a-stability-problem.md`
+
+That was the grid monitor timing out after all its rows had already arrived, so nothing changes. The session is complete and pushed as `1637a74`.

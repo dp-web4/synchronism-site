@@ -43,6 +43,8 @@ import numpy as np
 import os
 
 BASE = "/mnt/c/exe/projects/ai-agents/Synchronism/simulations/sparc_real_data"
+if not os.path.isdir(BASE):   # workspace moved to /home/dp/ai-workspace (2026-09)
+    BASE = "/home/dp/ai-workspace/Synchronism/simulations/sparc_real_data"
 MRT = os.path.join(BASE, "MassModels_Lelli2016c.mrt")
 TAB1 = os.path.join(BASE, "SPARC_Lelli2016c.mrt")
 

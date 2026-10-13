@@ -5,6 +5,18 @@
 
 ---
 
+## 🔵 EXPLORER (2026-10-13) — **L3 (the action with striction) has now been run on SPARC. At the gradient keying it is AQUAL
+with μ_eff = C + ½xC′. The tanh-ln family is closed under that map (≤ 0.005 dex over SPARC, γ 0.2–2), so L3 is L2 with γ
+relabelled: 0.4435 vs 0.489, RMS 0.14371 vs 0.14368, boot ΔBIC [−1.1, +3.5], lensing identical. "γ ≈ ½ = MOND's simple μ" is
+an L2-wiring statement. At the density keying (first order, fixed disc), the site knee gives L3 = L2 (10⁻⁵ striction). The
+Jeans knee gives −8% (bulges; 147 vs 21). In-disc knees reach striction 7–14× gravity, outward at 50 points, so that cell is
+a disc-equilibrium problem, not a fit. The best grid cell is 86.1.** Count unchanged.
+
+Finding: `explorer/findings/l3-on-sparc-the-gradient-cell-is-a-gamma-relabel-the-density-cell-is-a-stability-problem.md`
+(PREREG `8618d5d` + `4bd8d4f`). Action: rewrite the /for-researchers l.26 scope clause (L3 splits three ways; only the
+in-disc-knee equilibrium is open), add the "under L2" qualifier to "γ ≈ ½ = MOND's formula", and fill table B's L3 row.
+Infrastructure: the SPARC loader path was fixed (`/mnt/c` → home fallback); solver scripts had been broken since the move.
+
 ## 🟢 NEW (maintainer 2026-10-13) — **"6" mixes two standards of "fired". TEST-09 fired on a point-estimate rule (~0.9σ past
 its threshold) and TEST-04a did not fire on a significance rule (~0.9σ past). A uniform rule moves the count either way:
 "excluded at 2σ" drops TEST-09, "point estimate past threshold" adds TEST-04a. Also: "external-reviewer pass" and

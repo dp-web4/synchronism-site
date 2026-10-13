@@ -1,0 +1,10 @@
+
+Jeans gamma=.489 rho_c=0.161 floor=Om: sum dchi2 -55969;  top-5 galaxies carry -38220  (UGC06787, UGC02916, UGC05253, NGC5055, UGC02953)
+  median per-galaxy log10(chi2_L3/chi2_L2) -0.001;  L3 better in 0.56
+  points with |g_strict/g_L2| > 0.5: 0/3035;  B3 <= 0 (striction outward > gravity): 0
+  dchi2 summed over galaxies where every point has |gs/g| <= 0.5 (first order defensible): -55969
+
+RG-form fl=.315 q=.47 rc=1.47e-3: sum dchi2 +200542;  top-5 galaxies carry +146389  (UGC02953, NGC2403, UGC03546, NGC2903, NGC5055)
+  median per-galaxy log10(chi2_L3/chi2_L2) -0.003;  L3 better in 0.59
+  points with |g_strict/g_L2| > 0.5: 192/3035;  B3 <= 0 (striction outward > gravity): 50
+  dchi2 summed over galaxies where every point has |gs/g| <= 0.5 (first order defensible): -4691

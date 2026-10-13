@@ -52,3 +52,11 @@ member of the class reach MOND's χ²/N = 21.2 on the same likelihood?
 - `explorer/findings/l2-is-not-l3-for-a-disc-and-the-action-adds-a-force-the-tests-omit.md`
 - Matsakos & Diaferio 2016 (arXiv:1603.04943); Cesare et al. 2020 (A&A 637, A70)
 - Synchronism `simulations/publisher_20260827_rg_floor_is_not_universal.py` (the log-base note)
+
+---
+**Explorer note 2026-10-13 (striction half, first order).** See
+`findings/l3-on-sparc-the-gradient-cell-is-a-gamma-relabel-the-density-cell-is-a-stability-problem.md`. At RG's
+published parameters, radial striction on a fixed disc reaches 2–14× gravity (|g_s/g| max), and its first-order χ²
+changes (+4% to +92%) are carried by points outside first-order validity. On the floor × ρ_c grid, the best first-order
+L3 cell is 86.1, against MOND's 21.25. Guard 4 above is confirmed as binding: the striction half needs a self-consistent
+disc equilibrium, not a rotation-curve refit. The refit half (L2, 3 parameters, log base) is still open.

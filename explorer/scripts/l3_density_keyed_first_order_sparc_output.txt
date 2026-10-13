@@ -1,0 +1,26 @@
+built 153 galaxies x 3 Upsilon in 26s
+MOND simple mu chi2/N = 21.25
+
+FIXED MODELS  (chi2/N profiled over Upsilon; |g_strict/g_L2| at Ups 0.5 over scored points)
+  site  gamma=.489 rho_c=0.029V^2 floor=Om (Q1)        L2   249.64  L3   249.54  d    -0.0%   |gs/g| med 6.53e-06 90% 2.51e-04 max 9.56e-02   L3 better in 0.50 gal
+  Jeans gamma=.489 rho_c=0.161   floor=Om (Q1)         L2   160.27  L3   146.83  d    -8.4%   |gs/g| med 8.33e-03 90% 4.41e-02 max 3.60e-01   L3 better in 0.50 gal
+  site  gamma=2   rho_c=0.029V^2 floor=Om              L2   248.85  L3   248.51  d    -0.1%   |gs/g| med 2.67e-05 90% 9.77e-04 max 1.44e-01   L3 better in 0.50 gal
+  RG-form best L2 grid fl=.315 q=.47 rc=1.47e-3 (Q2)   L2    68.44  L3   131.56  d   +92.2%   |gs/g| med 5.05e-03 90% 2.29e-01 max 7.14e+00   L3 better in 0.57 gal
+  fw-form fl=.315 rc=3.16e-4                           L2    69.67  L3   162.91  d  +133.8%   |gs/g| med 2.22e-03 90% 2.86e-01 max 9.86e+00   L3 better in 0.59 gal
+  RG Cesare22-E0 e0=.089 q=.47 rc=8.3e-3               L2   911.46  L3  1599.18  d   +75.5%   |gs/g| med 4.86e-02 90% 6.58e-01 max 1.39e+01   L3 better in 0.19 gal
+  RG DMS-mean e0=.56 Q=.92 rc=7.4e-4                   L2   188.43  L3   206.12  d    +9.4%   |gs/g| med 1.43e-04 90% 9.91e-02 max 4.06e+00   L3 better in 0.71 gal
+  RG DMS-unique e0=.661 Q=1.79 rc=4.3e-3               L2   239.92  L3   249.91  d    +4.2%   |gs/g| med 2.06e-04 90% 7.05e-02 max 2.29e+00   L3 better in 0.57 gal
+
+GRID under first-order L3 (chi2/N; L2 in brackets)
+  --- framework form ---
+  fl 0.089   4542.1 [ 368.9]   2268.3 [ 687.4]   1394.4 [1287.6]   1908.6 [2152.8]   2736.9 [3033.0]
+  fl 0.150   1071.6 [ 106.2]    501.2 [ 195.1]    384.1 [ 381.4]    594.5 [ 679.4]    900.4 [1004.7]
+  fl 0.315    162.9 [  69.7]    100.5 [  71.1]     91.0 [  88.0]    118.6 [ 126.8]    166.9 [ 181.3]
+  fl 0.661    251.4 [ 252.3]    242.7 [ 242.2]    238.7 [ 236.3]    239.4 [ 237.6]    243.4 [ 244.0]
+  --- RG form ---
+  fl 0.089   5810.8 [ 284.3]   3188.0 [ 519.6]   1515.6 [ 974.9]   1586.9 [1721.0]   2332.6 [2607.3]
+  fl 0.150   1431.9 [  84.0]    701.4 [ 147.8]    380.5 [ 282.3]    474.5 [ 530.6]    750.8 [ 849.7]
+  fl 0.315    211.3 [  72.9]    125.2 [  68.6]     86.1 [  79.1]    102.8 [ 106.1]    143.2 [ 155.5]
+  fl 0.661    253.4 [ 256.6]    245.7 [ 246.3]    239.7 [ 238.3]    238.7 [ 236.4]    241.3 [ 241.0]
+  rho_c columns (Msun/pc^3): 0.000316 0.00178 0.01 0.0562 0.316
+elapsed 1281s

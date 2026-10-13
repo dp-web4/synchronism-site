@@ -128,7 +128,7 @@ export default function InteractiveTools() {
         &ldquo;Reparametrization&rdquo; and &ldquo;Speculative&rdquo;.{' '}
         Scale unified 2026-07-23; a &ldquo;Conceptual&rdquo; tag previously mixed levels.{' '}
         <strong>Fixed 2026-09-18:</strong> until that day &ldquo;Artifact Lesson&rdquo; was rendered in the Level slot
-        next to &ldquo;Beginner&rdquo; and &ldquo;Advanced&rdquo;, and two visitor personas misread it from opposite
+        next to &ldquo;Beginner&rdquo; and &ldquo;Advanced&rdquo;, and two simulated-visitor personas misread it from opposite
         directions on the same day &mdash; one as a difficulty, one as a vocabulary collision. Three tools that had
         no level at all now carry one.
       </details>

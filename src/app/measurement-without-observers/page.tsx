@@ -165,7 +165,7 @@ export default function MeasurementWithoutObservers() {
           decoherence patterns at the MRH boundary match Synchronism&apos;s predictions. None has
           been run, and none can be as written: a protocol needs a predicted <em>rate</em>, and the MRH-crossing
           mechanism has no rate parameter, so they are experiment classes, not protocols (relabelled 2026-09-29, researcher
-          visitor persona). The theory asserts scaling relationships between N<sub>corr</sub>,
+          simulated-visitor persona). The theory asserts scaling relationships between N<sub>corr</sub>,
           decoherence timescales, and the sharpness of the quantum-classical transition, with no rung of the N<sub>corr</sub> ladder anchored to
           an apparatus. The one rate the framework&apos;s own substrate suggests, intrinsic decoherence from Planck-scale diffusion, was checked
           against the heat budget of ordinary matter (explorer, 2026-09-27): at that diffusion constant a hydrogen atom would be heated at

@@ -16,6 +16,17 @@ export default function ForResearchers() {
       <h1>For Researchers: What&apos;s Citable</h1>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        <p style={{ fontSize: '0.92rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #ef4444', paddingLeft: '0.75rem', margin: '0 0 1rem' }}>
+          <strong>Is any prediction that differs from MOND or &Lambda;CDM still alive?</strong> No, within the registered
+          tests and the readings run so far. Every prediction that differed sits in a branch already excluded (the
+          density-keyed C<sub>&rho;</sub>: environment null, &Delta;BIC +2843 on SPARC, lunar laser ranging), and every surviving
+          branch is nested in its parent: the galaxy fit is MOND&apos;s simple interpolating function, the dark-energy sector is
+          &Lambda;CDM at &gamma; = &frac12; (or Cardassian/wCDM-degenerate off it). Scope: this covers the 26 registered tests and the
+          keyings and wirings executed; it does not cover the unbuilt hidden-communication substrates (Bell), door #3
+          (secular / time-domain observables, a direction with no registered bet), or the never-run L3 (striction) dynamics
+          on SPARC. (Sentence added 2026-10-13; the ledger states the same as &ldquo;no registered test has a branch that moves
+          the confirmed-novel count&rdquo;.)
+        </p>
         <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
           <strong>The program in three sentences.</strong> (1) <em>Claim:</em> the framework&apos;s tanh-log equation, fitted
           freely, goes to the one dial setting (&#x03B3; = &frac12;) where it turns into somebody else&apos;s formula: Milgrom&apos;s
@@ -38,7 +49,7 @@ export default function ForResearchers() {
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.4rem' }}>
             <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
             <ul style={{ margin: '0.3rem 0 0', paddingLeft: '1.1rem' }}>
-              <li>Until 2026-10-06 this box was one ~150-word sentence that called 0.489 and 0.487 &ldquo;the single parameter&rdquo; and quoted 0.489 without its frozen-&Upsilon; qualifier; split into claim, numbers and caveat after a technical-writer visitor persona called it the least parseable sentence on the site.</li>
+              <li>Until 2026-10-06 this box was one ~150-word sentence that called 0.489 and 0.487 &ldquo;the single parameter&rdquo; and quoted 0.489 without its frozen-&Upsilon; qualifier; split into claim, numbers and caveat after a technical-writer simulated-visitor persona called it the least parseable sentence on the site.</li>
               <li>Until 2026-09-23 the deflation sentence said the two sectors&apos; standard models sit &ldquo;0.011 apart by construction&rdquo;.</li>
               <li>This box was moved here 2026-09-19 from a parenthetical on{' '}
               <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link> after a researcher
@@ -80,7 +91,7 @@ export default function ForResearchers() {
           not fire at the baryon-budget ceilings in the 2026-09-18 sweep (|&Delta;n| = 0.30 and 0.26 against a strict
           &gt;&nbsp;0.3), so its convention-free content is that a bounded boost with B<sub>max</sub>&nbsp;&#8818;&nbsp;5.4 is
           excluded; TEST-10&apos;s is B<sub>max</sub>&nbsp;&#8818;&nbsp;14. Whether they stay in the count of 6 is pending
-          dp. (Corrected 2026-07-27 and 2026-08-08; see revision notes.)
+          the project lead. (Corrected 2026-07-27 and 2026-08-08; see revision notes.)
           What remains citable are <strong>replications,
           quantified instances of known results, and executed negative results</strong> — the five
           numbered artifacts below survive the framework being wrong, precisely because they do not depend
@@ -94,7 +105,7 @@ export default function ForResearchers() {
           strongest empirical results as zero; the bolded line was reunified 2026-08-08.
         </details>
         <div id="forward-data" style={{ marginBottom: '1.25rem', fontSize: '0.85rem' }}>
-          <strong>What upcoming data can still move</strong> (added 2026-10-06 at a researcher visitor persona&apos;s request;
+          <strong>What upcoming data can still move</strong> (added 2026-10-06 at a researcher simulated-visitor persona&apos;s request;
           from the explorer&apos;s 2026-10-04 stopping table). None of these can confirm a novel prediction. Each can only
           refute a reading or leave it standing.
           <div style={{ overflowX: 'auto' }}>
@@ -257,7 +268,7 @@ export default function ForResearchers() {
             gravity modification keyed on the <em>local volumetric density</em> &#x03C1;(r){' '}
             <strong>via algebraic coupling</strong> (C(&#x03C1;)&middot;g as a multiplicative scalar on
             the force — the class the framework&apos;s <em>algebraic</em> reading belongs to. <strong>Scope (corrected
-            2026-09-11, visitor researcher persona; see revision notes):</strong> the framework&apos;s field-equation form &nabla;&middot;[C&nabla;&Phi;] = 4&pi;G&rho;
+            2026-09-11, simulated-visitor researcher persona; see revision notes):</strong> the framework&apos;s field-equation form &nabla;&middot;[C&nabla;&Phi;] = 4&pi;G&rho;
             (Refracted Gravity&apos;s) carries a gradient coupling &nabla;C&middot;&nabla;&Phi; in discs and is outside this
             statement as written. For that form the SPARC evidence is the disc-geometry grid in the box above (floored
             switch at &gamma; &isin; {'{'}0.489, 2{'}'}, f &isin; {'{'}0.089, 0.315{'}'}, knee 3&times;10&#x207B;&#x2074;&ndash;0.16
@@ -281,7 +292,7 @@ export default function ForResearchers() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
             <strong style={{ color: '#ef4444' }}>Companion result, no data required (added 2026-09-07,
-            visitor researcher persona):</strong> the framework&apos;s galaxy sector is not local either, so the
+            simulated-visitor researcher persona):</strong> the framework&apos;s galaxy sector is not local either, so the
             no-go above is not a contest between a local theory and a non-local phenomenon.
             &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; keys the coherence threshold to an
             r &rarr; &infin; quantity (BTFR-fixed by total baryonic mass), and B<sub>max</sub> = 1/&#x03A9;<sub>m</sub>{' '}
@@ -476,7 +487,7 @@ export default function ForResearchers() {
             velocity definition, and no contested external measurement</strong> &mdash; every other one does.
             Sole escape: &#x03B2;<sub>J</sub> = 4.5 lifts x to 0.385, at 17&#x03C3; from the framework&apos;s own
             calibration &#x03B2;<sub>J</sub> = 1.1 &plusmn; 0.2. Does <em>not</em> add to the refutation count.
-            <em>Scope (added 2026-09-16, visitor researcher persona):</em> the bound is about the A·V² knee only. The other knees
+            <em>Scope (added 2026-09-16, simulated-visitor researcher persona):</em> the bound is about the A·V² knee only. The other knees
             in use on this site are fixed densities and are not bounded by it: the globular-cluster-measured 0.161, the
             solar/cluster joint window 0.0039&ndash;0.078 (γ-dependent), and Refracted Gravity&apos;s fitted knees. A knee keyed on
             the host&apos;s V<sub>flat</sub> is also a global quantity, so this corollary is not an instance of the local-density no-go.
@@ -485,7 +496,7 @@ export default function ForResearchers() {
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0 0 0.75rem' }}>
             <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
             <ul style={{ margin: '0.3rem 0 0', paddingLeft: '1.1rem' }}>
-              <li>Scope correction 2026-09-11 (visitor researcher persona): this page previously said the algebraic-coupling
+              <li>Scope correction 2026-09-11 (simulated-visitor researcher persona): this page previously said the algebraic-coupling
               class is &ldquo;the class this framework belongs to,&rdquo; but the framework&apos;s field-equation form is outside
               the statement as written.</li>
               <li>The SPARC RAR &#x0394;BIC = +184 was cited in the list of routes against density keying until 2026-09-14.</li>
@@ -662,7 +673,7 @@ export default function ForResearchers() {
             a global-clock construction reaches S = 2.67 only by also signaling. The 2026-07-06 run
             extends the cap to the framework&apos;s <em>own</em> saturation-gated Intent-density
             substrate (S = 1.85 &le; 2, no signaling). On the local constructions the cap is Bell&apos;s theorem for any
-            real-valued local-realist model, not an artifact of the phase substrate.{' '}
+            real-valued local-realist model, not an artifact of the phase substrate.{' '}<strong>The registered bet (research ledger B1, verbatim):</strong> &ldquo;a substrate measured only via an observer-pattern&apos;s phase-lock to a target (free CHSH setting choice) reproduces quantum correlations without superluminal signaling&rdquo;; &ldquo;refuted if observer-relative statistics obey CHSH S &le; 2 OR if violation only appears with signaling / superdeterminism.&rdquo; <strong>Run sizes:</strong> 400,000 trials per setting pair (local, nonlocal-grid and density-substrate scripts), 200,000 (global clock); the statistical error on S is about &plusmn;0.005 (binomial error on each correlator; the scripts do not report it, this is our estimate). The nonlocal-grid sweep reads 2.000&ndash;2.004 over ten couplings, i.e. 2 within error: a deterministic local strategy at the standard angles reaches exactly 2, which is what an angle relabelling leaves you with. The global-clock 2.67 is <em>not a Bell test</em>: once a model signals, any S up to 4 is available, so that arm shows only that this construction signals (setting-dependence of the far marginal 0.43). (Added 2026-10-13, from a simulated-visitor researcher persona who asked for the bet and the error bars.){' '}
             <strong>Scope, matching{' '}
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
             (2026-09-11):</strong> the local arm <em>illustrates</em> Bell&apos;s theorem and adds nothing to it. The two
@@ -675,7 +686,7 @@ export default function ForResearchers() {
             point of the projection law — reachable only by importing Hilbert-space structure wholesale.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-            <strong>Honest classification (sharpened 2026-07-18, external researcher review): the number is a
+            <strong>Honest classification (sharpened 2026-07-18, simulated-reader review (researcher persona)): the number is a
             corollary, the lesson is what transfers.</strong> S &le; 2 was the <em>guaranteed</em> outcome for
             any no-signaling local-realist construction — Bell&apos;s theorem functioning as designed — so the
             simulations are pedagogy plus a registered bet honestly lost, not a new result. What transfers is
@@ -942,7 +953,7 @@ export default function ForResearchers() {
               <li>
                 <strong>Who audited.</strong> LLM agents, not an external human domain expert: the archive&apos;s autonomous AI
                 research sessions (e.g. Session #581) and this site&apos;s AI explorer and maintainer tracks, often acting on
-                AI visitor-persona reports, with a human (dp) overseeing the badge taxonomy. No record of an outside physicist
+                AI simulated-visitor-persona reports, with a human (dp) overseeing the badge taxonomy. No record of an outside physicist
                 reviewing these claims exists in the archive or site logs. So the 0-of-9 line is{' '}
                 <strong>instrument-uncalibrated</strong>: it comes from the same instrument class this open question is about. The
                 executed physics refutations on the scoreboard do not depend on it.
@@ -985,7 +996,7 @@ export default function ForResearchers() {
                 <strong>H2</strong>: an LLM rewarded for finding prior art maps almost anything onto its corpus, real discoveries
                 included. Nothing measured so far separates them, and under H2 the result is the more interesting one. Separating
                 them needs a known-good arm the models cannot have memorised, scored blind: a post-training-cutoff arm of
-                modest-novelty results published after the models&apos; cutoff. It is unrun (routed to dp since 2026-09-10). The cross-vendor control as registered
+                modest-novelty results published after the models&apos; cutoff. It is unrun (routed to the project lead since 2026-09-10). The cross-vendor control as registered
                 (the six demoted claims) tests corpus monoculture, not H1 vs H2.
               </li>
               <li>
@@ -1044,7 +1055,7 @@ export default function ForResearchers() {
               (by LLM agents, not an outside domain expert), and 0 survived</strong>. The honest denominator is <strong>0 of 9
               audited</strong> &mdash; not &ldquo;0 across 3,308 sessions,&rdquo; which
               would overstate the number of adjudicated trials by two orders of magnitude (corrected 2026-07-09
-              after two visitor personas independently flagged the site quoting this null at three different,
+              after two simulated-visitor personas independently flagged the site quoting this null at three different,
               mutually inconsistent denominators). Both error rates on the 6 are measured — temporal-asymmetry
               control 0/6 (later-demoted claims caught; median prior-art year ~1996) [corrected 2026-10-12: this 0/6 was a desk
               counterfactual, not a run, and &ldquo;measured&rdquo; does not apply to it], vocabulary-asymmetry 4/4 on
@@ -1076,7 +1087,7 @@ export default function ForResearchers() {
               result this project can produce. The badge above is changed from <em>audited-negative / Registered Null</em>
               to <em>untested / Underpowered</em> because the honest state is &ldquo;we do not know what this protocol
               measures,&rdquo; not &ldquo;we measured a null.&rdquo; The cross-vendor control that was listed as pending
-              does not address this; a positive control does. Routed to dp in{' '}
+              does not address this; a positive control does. Routed to the project lead in{' '}
               <code>Research/proposals/test02_amplitude_is_knee_conditional_and_a2acw_positive_control_20260910.md</code>{' '}
               with a concrete protocol seeded for the explorer track.
             </div>
@@ -1092,13 +1103,13 @@ export default function ForResearchers() {
               flags every demoted claim <em>and</em> every genuine discovery carries zero
               discriminating information (under the steelmanned rule J = 1.0, but there the scorer&apos;s own novelty judgment
               does the discriminating; see <a href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW</a>) — both numbers were already published on this site, on
-              two different pages, and had never been combined until a 2026-07-14 visitor pass did the
+              two different pages, and had never been combined until a 2026-07-14 simulated-visitor pass did the
               subtraction. The 6/6 catch rate is not the methodology&apos;s best result; multiplied
               against its own specificity, it is the demonstration that the detector cannot tell a
               demotion from a discovery.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              <strong>Three precisions on the above (added 2026-07-27, from an external-reviewer pass).</strong>{' '}
+              <strong>Three precisions on the above (added 2026-07-27, from an simulated-reader review pass).</strong>{' '}
               (1) <em>The positive class is &ldquo;is a reparametrization.&rdquo;</em> Under the opposite
               convention the sensitivity and specificity labels invert; both are defensible, and J = 0
               either way, but the convention was never stated and two expert readers have now read the
@@ -1111,7 +1122,7 @@ export default function ForResearchers() {
               &ldquo;underpowered as registered&rdquo; unflinchingly; holding the methodology verdict —
               the sector nominated as the real contribution — to a lower evidentiary standard than the
               physics was the asymmetry worth fixing. (4) <em>J = 0 is a point estimate on n = 6 and n = 6,
-              and should be quoted with its interval</em> (added 2026-08-08, from a visitor researcher pass
+              and should be quoted with its interval</em> (added 2026-08-08, from a simulated-visitor researcher pass
               applying precision (3) to the detector itself). Clopper&ndash;Pearson at 95% gives sensitivity
               &#8805; 0.541 and specificity &#8804; 0.459, hence <strong>J &#8712; [&minus;0.46, +0.46]</strong>{' '}
               [superseded: the designed positive arm is 3/3, so sensitivity &#8805; 0.292 and the interval is
@@ -1160,7 +1171,7 @@ export default function ForResearchers() {
               ground truth. Both arms are n = 6 &mdash; Wilson 95% CIs are roughly [0.61, 1.00] and
               [0.00, 0.39], so <strong>J = 0 should not be quoted without an interval</strong>, and the 1.4%
               session yield divides by 3,308 context-chained sessions whose effective N is unknown and
-              certainly not thousands. (Flagged by visitor Pass 4, 2026-08-10; it is the rare audit finding
+              certainly not thousands. (Flagged by simulated-visitor Pass 4, 2026-08-10; it is the rare audit finding
               that points toward the framework rather than against it, which is why it went unnoticed.)
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
@@ -1174,7 +1185,7 @@ export default function ForResearchers() {
               generally is a hypothesis this design cannot license on its own.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              <strong>Artifact status downgraded (2026-07-18, external researcher review):</strong> until the
+              <strong>Artifact status downgraded (2026-07-18, simulated-reader review (researcher persona)):</strong> until the
               cross-vendor corpus control runs — the one registered experiment that would break the
               single-arm degeneracy above — this is a <em>registered null with a stated path to becoming a
               citable artifact</em>, not yet the artifact. What is citable today is the measured

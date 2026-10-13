@@ -148,7 +148,7 @@ export default function ChemistryCorrelationExplorer() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#ef4444' }}>What &#x03B3; means here, and why the flagship row is
-          suspect (added 2026-07-30, two visitor personas independently flagged this):</strong>{' '}
+          suspect (added 2026-07-30, two simulated-visitor personas independently flagged this):</strong>{' '}
           &#x03B3; = 2/&#x221A;N<sub>corr</sub> is <strong>audited-negative and sign-inverted for every
           collective system</strong> &mdash; see the{' '}
           <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>:

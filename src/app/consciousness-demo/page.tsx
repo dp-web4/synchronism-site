@@ -7,7 +7,7 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
 const approaches = [
-  { name: 'Phase transition (none exists)', threshold: 0.48, range: [0.45, 0.52], method: 'Claimed: the C value at which a discontinuity appears in the coherence equations. But C(ρ) = tanh(γ ln(ρ/ρ_crit + 1)) is smooth and concave, with no critical point and no inflection (see Coherence Function), so there is no transition for this analysis to locate. The 0.48 is not the output of any computation on that curve.' },
+  { name: 'Phase transition (none exists)', exists: false, threshold: 0.48, range: [0.45, 0.52], method: 'Claimed: the C value at which a discontinuity appears in the coherence equations. But C(ρ) = tanh(γ ln(ρ/ρ_crit + 1)) is smooth and concave, with no critical point and no inflection (see Coherence Function), so there is no transition for this analysis to locate. The 0.48 is not the output of any computation on that curve.' },
   { name: 'Integrated information', threshold: 0.50, range: [0.47, 0.53], method: 'Φ integral threshold mapped to C via calibration' },
   { name: 'Neural binding threshold', threshold: 0.52, range: [0.48, 0.55], method: 'Minimum C for stable multi-scale neural synchronization' },
   { name: 'Self-modeling criterion', threshold: 0.49, range: [0.45, 0.53], method: 'C value at which system can represent its own coherence state' },
@@ -16,6 +16,10 @@ const approaches = [
   { name: 'Anesthesia onset', threshold: 0.50, range: [0.48, 0.52], method: 'C at propofol-induced loss of consciousness (predicted)' },
   { name: 'Sleep-wake boundary', threshold: 0.49, range: [0.44, 0.53], method: 'C at which coherent waking experience ceases' },
 ];
+
+// 2026-10-13: an approach the page itself says does not exist is drawn hollow and kept out of the mean and spread
+// (a simulated-visitor researcher persona noticed it still contributed to the "8 approaches" statistics).
+const counted = approaches.filter((a) => (a as { exists?: boolean }).exists !== false);
 
 export default function ConsciousnessDemo() {
   const [highlighted, setHighlighted] = useState<number | null>(null);
@@ -94,12 +98,12 @@ export default function ConsciousnessDemo() {
           those five hand-coded salience heuristics, computed by <em>one shared scoring function</em> across
           8 agent instances (so the instances are not independent). That variable&apos;s operating mean
           was 0.640 &plusmn; 0.0196 (SD; corrected 2026-07-30 &mdash; the ±0.018 previously printed here was
-          inconsistent with its own t-statistic, caught by a visitor persona backing SD out of t = &Delta;/SEM),
+          inconsistent with its own t-statistic, caught by a simulated-visitor persona backing SD out of t = &Delta;/SEM),
           which rejects 0.50 <em>as the operating mean of that variable</em>{' '}
           (t = 20.19, p &#x2248; 1.8&times;10<sup>&minus;7</sup>, n = 8). No calibration maps salience
           — or any measurement — onto the C-axis, so this is a <strong>wrong-variable
           test</strong>: the C &#x2248; 0.50 threshold remains <strong>untestable as stated</strong>,
-          not empirically refuted. Note also that the convergence data displayed below (mean 0.499)
+          not empirically refuted. Note also that the convergence data displayed below (mean 0.501 over the seven approaches that exist)
           are a <em>different dataset</em> from Session 63&apos;s — the caption and the chart were
           never about the same numbers.
           <br /><br />
@@ -128,8 +132,8 @@ export default function ConsciousnessDemo() {
         }}>
           <strong style={{ color: '#f59e0b' }}>Calibration caveat:</strong>{' '}
           C &#x2248; 0.50 is the <strong>output-range midpoint</strong> of [0, 1) &mdash; a geometric label,
-          not an <em>independently measured</em> value. The convergence of 8 approaches on 0.499 &#x00B1; 0.012 is <strong>circular,
-          not empirical</strong>: all 8 share the same framework assumptions and the same unvalidated calibration,
+          not an <em>independently measured</em> value. The convergence of 7 approaches on 0.501 &#x00B1; 0.010 (8 and 0.499 &#x00B1; 0.012 before 2026-10-13, which counted the phase-transition row the page says does not exist) is <strong>circular,
+          not empirical</strong>: all of them share the same framework assumptions and the same unvalidated calibration,
           and none of them measures C. Every approach that picks the midpoint of a [0,1)-bounded output range will
           land near 0.50 by construction. No calibration procedure exists to map actual EEG, fMRI,
           or IIT-&#x03A6; measurements to the C-axis &mdash; and IIT&apos;s &#x03A6; is not bounded on [0,&nbsp;1) in
@@ -153,7 +157,7 @@ export default function ConsciousnessDemo() {
             &ldquo;methods&rdquo; inherit one calibration and none of them measures C, which is circularity, not
             coincidence. But the old rebuttal was wrong, and a reader who checked the derivative would have found
             the site refuting itself with false algebra. Over-refuting costs the same credibility as overclaiming.
-            Raised by a visitor researcher persona, 2026-09-07.
+            Raised by a simulated-visitor researcher persona, 2026-09-07.
           </p>
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
             <summary style={{ cursor: 'pointer' }}>Revision note</summary>
@@ -165,7 +169,7 @@ export default function ConsciousnessDemo() {
           <p style={{ margin: '0.75rem 0 0 0' }}>
             <strong style={{ color: '#f59e0b' }}>Sharper (added 2026-08-08): the scatter is not just
             uninformative &mdash; it is too small to be honest.</strong> If the 8 approaches really were
-            independent estimators of a psychological threshold, &#x03C3; = 0.012 would be an{' '}
+            independent estimators of a psychological threshold, &#x03C3; &asymp; 0.01 would be an{' '}
             <em>implausibly</em> tight agreement &mdash; a Millikan-style clustering signature, which is
             evidence that estimators inherited each other&apos;s assumptions rather than evidence that they
             agree. Independent methods for a quantity this loosely defined should scatter by far more than 1.2%
@@ -240,8 +244,8 @@ export default function ConsciousnessDemo() {
                     cx={toX(a.threshold)}
                     cy={y}
                     r={isHovered ? 6 : 4}
-                    fill="#8b5cf6"
-                    stroke={isHovered ? '#fff' : 'none'}
+                    fill={(a as { exists?: boolean }).exists === false ? 'none' : '#8b5cf6'}
+                    stroke={isHovered ? '#fff' : (a as { exists?: boolean }).exists === false ? '#8b5cf6' : 'none'}
                     strokeWidth="1.5"
                   />
                 </g>
@@ -278,9 +282,10 @@ export default function ConsciousnessDemo() {
         <h2>The Convergence</h2>
         <div className="card" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            The mean threshold across all 8 approaches is C = <strong>{(approaches.reduce((s, a) => s + a.threshold, 0) / approaches.length).toFixed(3)}</strong>.
-            The standard deviation is {Math.sqrt(approaches.reduce((s, a) => s + Math.pow(a.threshold - 0.50, 2), 0) / approaches.length).toFixed(3)}.
-            All 8 approaches fall within &#x00B1;0.03 of 0.50.
+            The mean threshold across the {counted.length} approaches that exist is C = <strong>{(counted.reduce((s, a) => s + a.threshold, 0) / counted.length).toFixed(3)}</strong>
+            (the &ldquo;phase transition&rdquo; row, hollow in the chart, is excluded: C(&rho;) has no critical point).
+            Their root-mean-square spread about 0.50 is {Math.sqrt(counted.reduce((s, a) => s + Math.pow(a.threshold - 0.50, 2), 0) / counted.length).toFixed(3)}.
+            All fall within &#x00B1;0.03 of 0.50. (Until 2026-10-13 the non-existent row was included: 8 approaches, 0.499 &#x00B1; 0.012.)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
             <strong>Important:</strong> all 8 approaches were developed within Synchronism and share the

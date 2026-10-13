@@ -45,7 +45,7 @@ export default function CdmDiscrimination() {
           line width W50 and SDSS stellar masses (Session 610 calls it &ldquo;BTFR scatter&rdquo;). It is <em>not</em> the
           scatter of the resolved Radial Acceleration Relation (RAR), which uses many radii per galaxy; the observed SPARC RAR
           scatter is about 0.057 dex (Li et al. 2018) with intrinsic scatter consistent with zero. This page compared it to RAR
-          literature until a researcher visitor persona asked which relation it was. The two are not interchangeable, so the
+          literature until a researcher simulated-visitor persona asked which relation it was. The two are not interchangeable, so the
           comparison below is BTFR-to-BTFR where it can be.{' '}
           Cold Dark Matter (CDM) models predict a range of intrinsic scatter in these relations from halo-to-halo assembly
           diversity. The measured value,

@@ -245,7 +245,7 @@ export default function MondUnification() {
             completion &ldquo;conserves momentum&rdquo; and that, being linear in Φ, &ldquo;EFE = 0 is preserved exactly.&rdquo; The first is true
             only in spherical symmetry or with striction included. The second confuses superposition with the absence of
             refraction. The research archive recorded the momentum point on 2026-08-26 and the refraction point on 2026-09-16;
-            a researcher visitor persona found the box still asserting both on 2026-09-17.
+            a researcher simulated-visitor persona found the box still asserting both on 2026-09-17.
           </details>
         </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -263,7 +263,7 @@ export default function MondUnification() {
           computes exactly this lever comparison (MOND+EFE&apos;s external-acceleration coupling vs. this
           framework&apos;s ambient-density coupling), cites Chae et al. 2020/2021&apos;s ~4σ EFE detection, and
           the registered run (SPARC RAR offsets vs. Cosmicflows-4 ambient density, N&nbsp;=&nbsp;141) gives
-          r²&nbsp;=&nbsp;0.0001 &mdash; the kill bar fires. Two independent expert visitor passes (2026-08-03)
+          r²&nbsp;=&nbsp;0.0001 &mdash; the kill bar fires. Two independent expert simulated-visitor passes (2026-08-03)
           flagged this page and <Link href="/for-researchers" style={{ color: '#38bdf8' }}>For Researchers</Link>{' '}
           as stating incompatible things (&ldquo;0 tests that could select it&rdquo; vs. an uncatalogued live
           discriminator); the resolution is that it was never uncatalogued, the cross-reference from this page

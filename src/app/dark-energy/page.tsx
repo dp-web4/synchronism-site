@@ -40,7 +40,7 @@ export default function DarkEnergy() {
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           (This URL returned 404 until 2026-08-12, while the sector lived in prose inside the{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
-          &mdash; two expert visitor passes independently hit the gap. The fragmentation was the friction;
+          &mdash; two expert simulated-visitor passes independently hit the gap. The fragmentation was the friction;
           this page is the fix.)
         </p>
       </section>
@@ -82,7 +82,7 @@ export default function DarkEnergy() {
           future, which the Cardassian family does not have unless n&nbsp;=&nbsp;0). At DR3 precision it is
           observationally indistinguishable from the original constant-w Cardassian (&Delta;&chi;&sup2;&nbsp;&le;&nbsp;0.42,
           explorer 2026-10-08), which makes the prior-art claim stronger than &ldquo;same class&rdquo;. Neither the archive nor this site
-          cited that literature before a visiting researcher pointed it out on 2026-09-14; it matters because
+          cited that literature before a simulated-reader review pass (researcher persona) pointed it out on 2026-09-14; it matters because
           Cardassian models given fluctuations were already found to over-produce the late integrated Sachs&ndash;Wolfe
           effect everywhere except a small neighbourhood of &Lambda;CDM (Koivisto, Kurki-Suonio &amp; Ravndal 2005,
           PRD 71, 064027). Checks:{' '}
@@ -181,11 +181,11 @@ export default function DarkEnergy() {
           with it. The framework&apos;s dark-energy sector is a <em>superset</em> of &Lambda;CDM, so it cannot lose a test
           that &Lambda;CDM passes. Its only branch that differs from &Lambda;CDM is a win branch (freezing away from
           &Lambda; at significance), and that branch is Cardassian-class prior art (Freese &amp; Lewis 2002).
-          (Restated 2026-09-23 from &ldquo;a crossing of w = &minus;1&rdquo;, after a visitor researcher persona pointed out
+          (Restated 2026-09-23 from &ldquo;a crossing of w = &minus;1&rdquo;, after a simulated-visitor researcher persona pointed out
           the thawing sub-quadrant. <strong style={{ color: '#f59e0b' }}>Corrected 2026-09-27:</strong> the 09-23 wording
           called this &ldquo;a cleaner kill: it fails as soon as the data prefer thawing over freezing&rdquo;. That was wrong
-          for the reason above, and a later visitor researcher persona caught it. The 2026-08-12 direct fit had already
-          said TEST-26 is &Lambda;CDM-degenerate on every surviving branch. The TEST-26 registration gates on dp.) Scanning &gamma;: zero values reach that quadrant; forcing w&#x2080; to match compels a
+          for the reason above, and a later simulated-visitor researcher persona caught it. The 2026-08-12 direct fit had already
+          said TEST-26 is &Lambda;CDM-degenerate on every surviving branch. The TEST-26 registration gates on the project lead.) Scanning &gamma;: zero values reach that quadrant; forcing w&#x2080; to match compels a
           wrong-sign w&#x2090; (offsets 3.4&ndash;5.4&sigma; across the combinations, sign-and-scale statement
           only &mdash; no covariance is claimed).{' '}
           <strong style={{ color: '#f59e0b' }}>Those &sigma; figures did not survive a direct fit</strong> &mdash; see
@@ -332,13 +332,13 @@ export default function DarkEnergy() {
             &gamma;<sub>cosmo</sub> = 0.487 vs &gamma;<sub>galaxy</sub> = 0.489 &ldquo;agree at 0.1&sigma;&rdquo; &mdash;
             but &gamma; = &frac12; is exactly &Lambda; <em>and</em> exactly MOND&apos;s simple &mu;, so the two sectors&apos;{' '}
             <em>standard</em> models sit at the same point by construction. Agreement between the two fits is the agreement of
-            &Lambda; with the simple &mu;, inherited, with no power to fail. Both reductions are one line of algebra (at &gamma; = &frac12;, &rho;<sub>m</sub>/C = &rho;<sub>m</sub> + 2&rho;<sub>crit</sub>), and the scale is fitted separately in each sector, in different variables (mean density here, g<sub>obs</sub> in galaxies), so both datasets landing on the &gamma; where tanh(&gamma; ln(1+x)) becomes a known function carries no evidential weight (sentence added 2026-10-12, researcher visitor persona). The 0.011 is SPARC&apos;s fitted offset from &frac12;
+            &Lambda; with the simple &mu;, inherited, with no power to fail. Both reductions are one line of algebra (at &gamma; = &frac12;, &rho;<sub>m</sub>/C = &rho;<sub>m</sub> + 2&rho;<sub>crit</sub>), and the scale is fitted separately in each sector, in different variables (mean density here, g<sub>obs</sub> in galaxies), so both datasets landing on the &gamma; where tanh(&gamma; ln(1+x)) becomes a known function carries no evidential weight (sentence added 2026-10-12, researcher simulated-visitor persona). The 0.011 is SPARC&apos;s fitted offset from &frac12;
             (a slightly McGaugh-like RAR shape), consistent with zero at &sigma;<sub>&gamma;</sub> = 0.11 (galaxy-limited,
             2026-08-14). Telling that offset from zero would need &sigma;<sub>&gamma;</sub> &asymp; 0.004, and it would answer a
             different question (does SPARC prefer the simple &mu; exactly?), not a cross-sector one.{' '}
             <span style={{ color: 'var(--color-text-muted)' }}>(Until 2026-09-23 this item said &ldquo;&gamma; = 0.489 is exactly
             MOND&apos;s simple &mu; &hellip; 0.011 apart by construction&rdquo;. That was wrong: the simple-&mu; point is
-            &gamma; = &frac12;, as the box above says. A visitor researcher persona caught it; the archive ledger carried the
+            &gamma; = &frac12;, as the box above says. A simulated-visitor researcher persona caught it; the archive ledger carried the
             same sentence and is corrected too.)</span>
           </li>
         </ul>
@@ -392,9 +392,15 @@ export default function DarkEnergy() {
             the archive&apos;s own structure implies, not every conceivable dynamical extension.
           </li>
           <li>
-            <strong>DESI DR2 central values are carried from the paper&apos;s abstract-level results.</strong>{' '}
-            The (w&#x2080;,&thinsp;w&#x2090;) centrals and &sigma;&apos;s should be re-verified against the
-            paper&apos;s tables before any external use.
+            <strong>DESI DR2 (w&#x2080;,&thinsp;w&#x2090;), read from the paper&apos;s Table 5</strong> (DESI DR2 Results II,
+            arXiv:2503.14738 v3, w&#x2080;w&#x2090;CDM rows; read 2026-10-13): DESI+CMB w&#x2080;&nbsp;=&nbsp;&minus;0.42&nbsp;&plusmn;&nbsp;0.21,
+            w&#x2090;&nbsp;=&nbsp;&minus;1.75&nbsp;&plusmn;&nbsp;0.58; +Pantheon+ &minus;0.838&nbsp;&plusmn;&nbsp;0.055, &minus;0.62<sup>+0.22</sup><sub>&minus;0.19</sub>;
+            +Union3 &minus;0.667&nbsp;&plusmn;&nbsp;0.088, &minus;1.09<sup>+0.31</sup><sub>&minus;0.27</sub>; +DESY5
+            &minus;0.752&nbsp;&plusmn;&nbsp;0.057, &minus;0.86<sup>+0.23</sup><sub>&minus;0.20</sub>. Every combination has
+            w&#x2080;&nbsp;&gt;&nbsp;&minus;1 and w&#x2090;&nbsp;&lt;&nbsp;0, the quadrant the sign lock forbids. The preference over
+            &Lambda;CDM is 3.1&sigma; (DESI+CMB) and 2.8&ndash;4.2&sigma; with supernovae (abstract). (Until 2026-10-13 this item
+            said the centrals were carried from the abstract and &ldquo;should be re-verified&rdquo;; a simulated-visitor
+            researcher persona noted it was one lookup.)
           </li>
           <li>
             <strong>Nothing on this page is a new counted refutation.</strong> The refutation count stays at its
@@ -438,7 +444,7 @@ export default function DarkEnergy() {
             &mu;<sub>0</sub> sits about 3.5&sigma; off. The ISW proxy is a Limber kernel ratio, not a Boltzmann-code C<sub>&#x2113;</sub>; the
             sign is robust, the size indicative. With row 1 withdrawn, row 3 excluded and row 2 equal to &Lambda;CDM to 0.2%, <strong>no live
             growth reading differs from &Lambda;CDM at DESI DR2 precision</strong>. The explorer recommends retiring TEST-04a as a discriminating
-            test; that decision gates on dp. Finding: <code>explorer/findings/uniform-g-over-c-growth-is-excluded-isw-sign-flips-...md</code>.
+            test; that decision gates on the project lead. Finding: <code>explorer/findings/uniform-g-over-c-growth-is-excluded-isw-sign-flips-...md</code>.
             The researcher visitor who expected the +21% reading to be in trouble with ISW and S<sub>8</sub> (2026-10-08) was right.
             Script: <code>maintainer/scripts/growth_under_uniform_G_over_C.py</code> (+ <code>_output.txt</code>; two of its
             three written predictions failed: the enhancement is late-time-limited, so smaller than expected).

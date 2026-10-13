@@ -130,7 +130,7 @@ export default function Falsifiability() {
 
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #f59e0b', background: 'rgba(245, 158, 11, 0.05)' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
-            <strong>This page was rewritten 2026-07-27</strong> after an external-reviewer pass found
+            <strong>This page was rewritten 2026-07-27</strong> after an simulated-reader review pass found
             it was the most out-of-date page on the site. It had been advertising two <em>retracted</em>{' '}
             results as &ldquo;genuinely novel predictions,&rdquo; displaying a <em>withdrawn</em> test&apos;s
             criterion as exemplary practice, and listing kill criteria that no instrument can satisfy —

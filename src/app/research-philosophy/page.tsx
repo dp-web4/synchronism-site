@@ -261,7 +261,7 @@ export default function ResearchPhilosophy() {
           trip prior art and sit in every training corpus, so this arm cannot separate &ldquo;the framework had nothing
           novel&rdquo; from &ldquo;LLM audit maps real novelty onto prior art&rdquo;: flagging Dirac or Bell as prior art is
           correct, so specificity 0/6 there says little about novelty detection. The arm that could separate them uses
-          modest-novelty results published after the models&apos; training cutoff; it is unrun (routed to dp since 2026-09-10).
+          modest-novelty results published after the models&apos; training cutoff; it is unrun (routed to the project lead since 2026-09-10).
           Arm-by-arm numbers, the class convention and
           the intervals are on{' '}
           <a href="/for-researchers#a2acw-open-question" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</a>; the
@@ -295,7 +295,7 @@ export default function ResearchPhilosophy() {
           <a href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</a>{' '}
           for the audited-vs-pending breakdown). <strong>Who audited:</strong> LLM agents, not an external human domain
           expert &mdash; the archive&apos;s autonomous AI research sessions (e.g. Session #581) and this site&apos;s AI explorer
-          and maintainer tracks, often acting on AI visitor-persona reports. No record of an outside physicist reviewing these
+          and maintainer tracks, often acting on AI simulated-visitor-persona reports. No record of an outside physicist reviewing these
           claims exists in the archive or site logs. So the 0-of-9 line is <strong>instrument-uncalibrated</strong>: it comes
           from the same instrument class whose calibration is still open (control status above). The executed physics refutations stand
           on external data and simulation, and do not depend on it. A human (dp) reviews borderline cases and maintains the

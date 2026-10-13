@@ -151,7 +151,7 @@ export default function ParameterDerivations() {
               field-equation solver) was described as swapping <em>only</em> the function. It changed three things at once: the
               function, the knee (0.32 a₀, where the γ&nbsp;=&nbsp;&frac12; identity needs 0.5 a₀), and the <em>form</em> of the
               floor (MOND&apos;s &micro; was clipped, max(&micro;, 0.089); the compander used 0.089 + 0.911·tanh(&hellip;), which
-              removes boost at every radius). Two visitor personas objected on 2026-09-16 that at γ&nbsp;=&nbsp;&frac12; the swap
+              removes boost at every radius). Two simulated-visitor personas objected on 2026-09-16 that at γ&nbsp;=&nbsp;&frac12; the swap
               is a factor-2 rescaling of a₀ and cannot lose 2×. The maintainer pre-registered controls (committed before running)
               and re-ran the same solver:
               <br />&nbsp;&nbsp;R0 MOND &micro;, clip floor: <strong>51.45</strong> (reproduces the source) &middot; R1 compander at
@@ -184,7 +184,7 @@ export default function ParameterDerivations() {
               &mdash; the knee sits <strong>2.5&times;10<sup>4</sup></strong> above every density the data sample. (Refracted Gravity, whose
               field equation this sector coincides with, puts its knee within 1.8&times; of the data.) <strong>Units, which this
               card never stated:</strong> A is in M<sub>&#x2609;</sub> pc<sup>&minus;3</sup> (km/s)<sup>&minus;2</sup>; the &ldquo;600&times;&rdquo;
-              reproduces only in those units (a visitor grad-student persona recomputed 635&times;). <strong>Why the
+              reproduces only in those units (a simulated-visitor grad-student persona recomputed 635&times;). <strong>Why the
               normalization row is unrunnable, not merely negative:</strong> the 600&times; is repairable for free with
               N<sub>corr</sub> = 6.7&times;10<sup>6</sup>, inside the 1&ndash;10<sup>7</sup> range the{' '}
               <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</Link> admits &mdash;
@@ -238,10 +238,10 @@ export default function ParameterDerivations() {
                 <strong> The 644× is not a unit conversion — and it was already decomposed, on 2026-06-07.</strong>{' '}
                 A depends only on the <em>product</em> β<sub>J</sub>·R₀, and <code>Session687</code> §1.2 records
                 Session 66&apos;s own factorization β<sub>J</sub> = 4.5, R₀ = 0.07 kpc — product 0.315 kpc, within
-                0.8% of the &ldquo;317 pc&rdquo; that setting β<sub>J</sub> = 1 produces. The R₀ = 0.07 half of that
+                0.8% of the &ldquo;317 pc&rdquo; that setting β<sub>J</sub> = 1 produces. (Holding R₀ = 8 kpc fixed, A &prop; β<sub>J</sub><sup>&minus;2</sup> would need β<sub>J</sub> &asymp; 0.04 to reach 0.029; Session 66 moved R₀ instead, and only the product enters A. Added 2026-10-13 after a simulated-visitor graduate persona, reading the formula with R₀ = 8 kpc, could not reproduce 4.5.) The R₀ = 0.07 half of that
                 decomposition is stated in item 1 <em>directly above</em>. The residual questions are therefore
                 (a) why β<sub>J</sub> = 4.5 when <Link href="/critical-density" style={{ color: 'var(--color-accent-blue)' }}>Critical Density</Link>&apos;s
-                own calibration gives 1.1 ± 0.2 — a <strong>17σ</strong> gap — and (b) why this site&apos;s rendering
+                own calibration gives 1.1 ± 0.2 — a <strong>17σ</strong> gap, conditional on accepting Session 66&apos;s R₀ = 0.07 kpc — and (b) why this site&apos;s rendering
                 carries a 4π that Session 53&apos;s does not (12.57 of the 635).
                 <br /><br />
                 <strong>Retracted same day (2026-08-05): &ldquo;A is a proxy for a coarse-graining length ℓ, and the
@@ -319,7 +319,7 @@ export default function ParameterDerivations() {
               with item 5&apos;s &#x03A3;&#x2080; = 119 at H&#x2080; = 67.4, since &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G)
               exactly (one number, not two). At the site-standard H&#x2080; = 67.4: a&#x2080; = 1.04&times;10<sup>&minus;10</sup>
               (13% below Milgrom) with &#x03A3;&#x2080; = 119 &mdash; the consistent pair, now quoted site-wide.
-              <strong> Convention caveat (2026-09-05, visitor grad-student persona):</strong> at &#x03B3; = &frac12; the compander
+              <strong> Convention caveat (2026-09-05, simulated-visitor grad-student persona):</strong> at &#x03B3; = &frac12; the compander
               collapses to x/(x+2) = &#x03BC;<sub>simple</sub>(x/2) &mdash; MOND&apos;s simple function with a&#x2080; &rarr; 2a&#x2080;. Because
               &#x03C1;<sub>crit</sub> (or a&#x2080;) is free in every fit this factor is silently absorbed, but it means the framework&apos;s
               a&#x2080; is only defined up to a convention-dependent factor of 2 (the archive records a&#x2080; = g<sup>&dagger;</sup>/2 as exactly
@@ -503,7 +503,7 @@ export default function ParameterDerivations() {
               Source: Ciocan et al. 2026, MUSE-DARK III, A&amp;A 709, L16 (arXiv:2604.22613). See also{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
               for the general pattern this row is an instance of: stated conclusions get read, buried ones get
-              re-derived wrong &mdash; two prior visitor personas (2026-07-29, 2026-07-30) independently re-derived
+              re-derived wrong &mdash; two prior simulated-visitor personas (2026-07-29, 2026-07-30) independently re-derived
               the pre-Ciocan version of this fork before it was closed.
             </p>
           </div>
@@ -539,7 +539,7 @@ export default function ParameterDerivations() {
               The comparison to Freeman&apos;s 124 is itself convention-laden: that figure is a B-band central surface
               brightness converted with an assumed mass-to-light ratio &Upsilon;, so a different band or &Upsilon; moves it (see
               the caveat below). With the a&#x2080;/G normalization the same comparison would be off by 2&#x03C0;.
-              (Definition note added 2026-10-06, graduate-physics visitor persona.)
+              (Definition note added 2026-10-06, graduate-physics simulated-visitor persona.)
               Re-badged from &ldquo;Validated&rdquo; (2026-04-28): a tight numeric match is not sufficient to claim
               derivation of what is, in origin, an observational law.
             </p>
@@ -667,7 +667,7 @@ export default function ParameterDerivations() {
               the argument of C is the disease. See{' '}
               <Link href="/honest-assessment#gc-fork" style={{ color: '#f59e0b' }}>Honest Assessment</Link> for the table.
             </p>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Added 2026-07-28 &mdash; flagged missing from this page by a visitor persona (grad student + researcher)</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Added 2026-07-28 &mdash; flagged missing from this page by a simulated-visitor persona (grad student + researcher)</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a> calls
               the bounded acceleration boost B &#8804; 1/&#x03A9;<sub>m</sub> &#8776; 3.17 &ldquo;the framework&apos;s
@@ -711,14 +711,14 @@ export default function ParameterDerivations() {
               by the SPARC BTFR slope</em> &mdash; the slope analogue of TEST-10&apos;s B<sub>max</sub> &#8818; 14.
               A free scan shows why the sweep bites at all: the predicted slope moves monotonically from 3.26 at
               B<sub>max</sub> = 2 to 3.89 at B<sub>max</sub> = 100, a range of 0.62, so the ceiling is a real lever on
-              this observable rather than a labelling choice. Count unchanged; the recount gates on dp (proposal open
+              this observable rather than a labelling choice. Count unchanged; the recount gates on the project lead (proposal open
               question 4). Pre-registered at site commit <code style={{ fontSize: '0.78rem' }}>89e0467</code>;{' '}
               <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/which_C_carries_the_floor.py</code> (+{' '}
               <code style={{ fontSize: '0.78rem' }}>_PREREG.md</code>, <code style={{ fontSize: '0.78rem' }}>_output.txt</code>).
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
               <strong style={{ color: '#38bdf8' }}>And the floor is not pinned: the C this parameter floors is not the
-              C the plotter draws (measured 2026-09-18).</strong> A visitor researcher pass read
+              C the plotter draws (measured 2026-09-18).</strong> A simulated-visitor researcher pass read
               <Link href="/galaxy-plotter" style={{ color: '#38bdf8' }}> the plotter</Link>&apos;s &ldquo;max C on
               this disk: 0.001&rdquo; against this floor of 0.315 and concluded the floor binds at every radius, so
               the galaxy sector applies the constant 3.17 and TEST-09/TEST-10 are algebra. The premise conflates two
@@ -735,7 +735,7 @@ export default function ParameterDerivations() {
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
               <strong style={{ color: '#38bdf8' }}>At which epoch? The evolving ceiling was tested on published
               high-z disc kinematics and failed as a reading (explorer 2026-09-11; corrected here 2026-09-14). Until
-              then this box said the fork closed without data.</strong> An expert visitor pass noticed that this page
+              then this box said the fork closed without data.</strong> An expert simulated-visitor pass noticed that this page
               evolves a&#x2080; to a&#x2080;(z) = cH(z)/2&#x03C0; but freezes &#x03A9;<sub>m</sub>. It proposed an
               evolving ceiling, <strong>f<sub>DM,max</sub>(z) = 1 &minus; &#x03A9;<sub>m</sub>(z)</strong>, which is
               &#8776; 0.21 at z = 1 and &#8776; 0.075 at z = 2. (This box said &ldquo;&#8776; 0.05&rdquo; for z = 2,

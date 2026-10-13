@@ -144,7 +144,7 @@ export default function PhaseBoundaryVisualizer() {
             &ldquo;the wrong sign <em>and</em> the wrong exponent&rdquo;. That scaling holds only at fixed &#x0394;C; for BCS,
             the system the page names, Gi ~ (T<sub>c</sub>/E<sub>F</sub>)<sup>4</sup> &#x221D; N<sub>&#x03BE;</sub><sup>&#x2212;4/3</sup>.
             The exponent comparison now uses the BCS value; the sign argument is unchanged. Caught by the graduate-physics
-            visitor persona, 2026-10-06.
+            simulated-visitor persona, 2026-10-06.
           </details>
         </div>
 

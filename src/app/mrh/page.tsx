@@ -93,7 +93,7 @@ export default function MRH() {
             Does the framework respect its own horizon? Not in the galaxy sector.
           </h3>
           <p style={{ margin: '0 0 0.6rem' }}>
-            <strong>Added 2026-09-07</strong>, raised by a visitor researcher persona. This is a{' '}
+            <strong>Added 2026-09-07</strong>, raised by a simulated-visitor researcher persona. This is a{' '}
             <strong>data-free</strong> self-consistency failure: it needs no SPARC (Spitzer Photometry &amp; Accurate Rotation Curves, 175 disc galaxies) fit, no BTFR
             (baryonic Tully&ndash;Fisher relation: baryonic mass vs. rotation speed) slope and no &Delta;BIC (Bayesian
             Information Criterion difference), and it would stand even if every empirical test on the{' '}
@@ -119,7 +119,7 @@ export default function MRH() {
               <strong>B<sub>max</sub> = 1/&#x03A9;<sub>m</sub> = 3.17</strong> (&#x03A9;<sub>m</sub> = the cosmic matter density as a
               fraction of the critical density, &#x2248; 0.315). The per-galaxy boost ceiling
               is set by a <em>cosmological</em> parameter. A galaxy&apos;s relevancy horizon does not contain
-              &#x03A9;<sub>m</sub>. (Flagged independently by a visitor graduate-physics persona the same day.)
+              &#x03A9;<sub>m</sub>. (Flagged independently by a simulated-visitor graduate-physics persona the same day.)
               Note this objection is stronger than the empirical one it accompanies, because it does not
               depend on the value: TEST-10 needs B &#x2265; 13.7 and no cosmic ratio supplies it, but even a
               ratio that <em>did</em> supply it would still be an import.
@@ -144,12 +144,12 @@ export default function MRH() {
             hidden because it is cheap, structural, and cuts against the framework.
           </p>
           <p style={{ margin: '0.6rem 0 0', fontSize: '0.88rem' }}>
-            <strong>A fourth, quantitative instance &mdash; and a correction to yesterday&apos;s framing (explorer
+            <strong>A fourth, quantitative instance &mdash; and a correction to the 2026-09-07 framing (explorer
             2026-09-07, added 2026-09-08).</strong> For a globular cluster, ρ<sub>crit</sub> = A·V² has no obvious V:
             read with the host galaxy&apos;s 220 km/s the knee sits at ~1 pc (the whole cluster saturated at the
             floor); read with the cluster&apos;s own dispersion it sits at ~2.5 half-mass radii; the measured
             velocity-blind knee puts it at 6–8. That is a factor 10⁴ in ρ<sub>crit</sub> and the whole verdict, decided
-            by which non-local label you import. Yesterday this page&apos;s topic file called the cluster prediction
+            by which non-local label you import. On 2026-09-07 the research notes behind this page called the cluster prediction
             &ldquo;unformulable.&rdquo; It is not &mdash; it is formulable under every placement, and{' '}
             <strong>under-determined</strong>, which is worse in a specific way: the internal-locality violation does
             not make the prediction undefined, it makes it depend on a choice the framework never states. The

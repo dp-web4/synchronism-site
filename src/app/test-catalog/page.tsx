@@ -57,7 +57,7 @@ export default function TestCatalog() {
         fire at the site&apos;s ceiling B<sub>max</sub> = 1/&Omega;<sub>m</sub> but are convention-dependent on galaxy rotation
         data. Galaxy weak lensing excludes the ceiling itself under all three candidate conventions. Whether they stay in the count of 6 is
         pending the project lead (&ldquo;dp&rdquo;).{' '}
-        <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>All six in one table &rarr;</Link> <strong>Failed &mdash; underpowered as registered (not counted as a
+        <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>All six in one table &rarr;</Link> <strong>Underpowered as Registered (not Failed, not counted as a
         refutation):</strong> TEST-04a. <strong>Reparametrization:</strong> TEST-08. <strong>Withdrawn:</strong> TEST-04.
         The rest have not been run, or cannot be run as stated (details on each tier page).
       </p>
@@ -199,14 +199,14 @@ export default function TestCatalog() {
           the Cassini/SPARC squeeze added out-of-band 2026-07-28, and <strong>TEST-26</strong>, the DESI (Dark Energy Spectroscopic Instrument) DR3
           dark-energy class no-go (proposed 2026-08-10, prospective; kill or tie for the framework as postulated, select only
           on the mean-density reading; catalog-registered 2026-08-12
-          after a visitor pass found it existing on one page and absent here). Both use existing data or scheduled survey data,
+          after a simulated-visitor pass found it existing on one page and absent here). Both use existing data or scheduled survey data,
           so both are listed with Tier 1 (<Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: Existing Data</Link>),
           even though the ID-range rule above does not cover them. Suffixes: <code>a</code> = amended sub-test
           registered after the parent was withdrawn (TEST-04a); <code>s</code> = substituted protocol, run on a
           different sample than the one registered (TEST-03s). Both suffixes mark a test that is{' '}
           <em>not</em> the registered one and must not be read as the parent&apos;s result.{' '}
           <em style={{ color: 'var(--color-text-muted)' }}>(Namespace and suffix grammar stated here
-          2026-08-10, after a visitor Pass 3 found TEST-11 denoting two unrelated experiments and Pass 2 found
+          2026-08-10, after a simulated-visitor Pass 3 found TEST-11 denoting two unrelated experiments and Pass 2 found
           the suffix convention undocumented. The Cassini squeeze was renumbered 11 &rarr; 25 to clear the
           collision.)</em> Tier 1 cards live on the{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 page</Link>{' '}
@@ -238,7 +238,7 @@ export default function TestCatalog() {
               </details></li>
             <li><strong>Galaxy rotation</strong> (14,610 galaxies run: 175 SPARC + 14,435 ALFALFA-SDSS after the quality cut; 14,760 before it &mdash; the site quotes the sample actually run): qualitative curve match — <span style={{ color: '#f59e0b' }}>MOND reparametrization</span>, not novel</li>
             <li><strong>TEST-03 TFR scatter</strong>: <span style={{ color: '#f59e0b' }}>NEVER RUN AS REGISTERED</span> — the R&sup2; = 0.14 figure previously reported here was a metric conflation (morphology statistic on N &asymp; 171, not the registered test on N = 14,585; corrected 2026-07-09). The environment claim was later executed 2026-07-14 (research repo): r&sup2; = 0.0001, ~900&times; under the framework&apos;s &gt;20% claim — <span style={{ color: '#ef4444' }}>environment prediction REFUTED by execution</span>. <strong>But not as registered</strong> (declared 2026-07-27): that run used N = 141 SPARC galaxies vs Cosmicflows-4 ambient density, not the registered N = 14,585 ALFALFA-SDSS cluster/field/void classification — different dataset, different proxy, ~100&times; smaller sample. It is designated <strong>TEST-03s</strong> and the registered TEST-03 remains unrun and runnable. Read the census as <strong>3 registered kills + 1 substituted-protocol kill</strong>, not 4 identical ones</li>
-            <li><strong>DESI fσ₈ (TEST-04a)</strong>: <span style={{ color: '#ef4444' }}>FAILED &mdash; disfavored 2.4σ on σ₈ (a GR-conditioned statistic); ~0.9σ on the registered fσ₈(z=0.51); UNDERPOWERED AS REGISTERED; post-hoc, not counted as a refutation</span> <span style={{ color: 'var(--color-text-muted)' }}>(prediction 0.418 sits ~1.5σ from the DESI DR1 LRG1 value 0.516 +0.057/−0.066; the registered fσ₈(z=0.51) &gt; 0.46 threshold is crossed on the point estimate but only by ~0.9σ, short of the &gt;3σ it was registered to deliver; that &gt;3σ presumed σ &asymp; 0.014, and DR1 delivers ~0.066, 4.7&times; larger; corrected 2026-07-14, restated in this three-number form 2026-09-15, numbers corrected 2026-10-10 when the 1.16 ± 0.13 ratio used since May turned out to be Table 9&apos;s QSO row; the widely-quoted 2.4σ disfavor is on σ₈, a GR-conditioned statistic that cannot falsify modified growth; DESI&apos;s own MG analysis gives μ₀ within 1σ of zero. Not counted in the refutation census. DR2 both-outcome pre-commitment registered 2026-07-17 — the program&apos;s first prospective registration; as adopted, its kill branch fires with under 1% probability if &Lambda;CDM is true, found 2026-09-21, and re-registering gates on dp)</span></li>
+            <li><strong>DESI fσ₈ (TEST-04a)</strong>: <span style={{ color: '#ef4444' }}>FAILED &mdash; disfavored 2.4σ on σ₈ (a GR-conditioned statistic); ~0.9σ on the registered fσ₈(z=0.51); UNDERPOWERED AS REGISTERED; post-hoc, not counted as a refutation</span> <span style={{ color: 'var(--color-text-muted)' }}>(prediction 0.418 sits ~1.5σ from the DESI DR1 LRG1 value 0.516 +0.057/−0.066; the registered fσ₈(z=0.51) &gt; 0.46 threshold is crossed on the point estimate but only by ~0.9σ, short of the &gt;3σ it was registered to deliver; that &gt;3σ presumed σ &asymp; 0.014, and DR1 delivers ~0.066, 4.7&times; larger; corrected 2026-07-14, restated in this three-number form 2026-09-15, numbers corrected 2026-10-10 when the 1.16 ± 0.13 ratio used since May turned out to be Table 9&apos;s QSO row; the widely-quoted 2.4σ disfavor is on σ₈, a GR-conditioned statistic that cannot falsify modified growth; DESI&apos;s own MG analysis gives μ₀ within 1σ of zero. Not counted in the refutation census. DR2 both-outcome pre-commitment registered 2026-07-17 — the program&apos;s first prospective registration; as adopted, its kill branch fires with under 1% probability if &Lambda;CDM is true, found 2026-09-21, and re-registering gates on the project lead)</span></li>
             <li><strong>Chemistry boundary consistency</strong> (1,703 phenomena): 89% consistent — <span style={{ color: '#f59e0b' }}>calibration set, not blind test</span></li>
             <li><strong>Superconductivity (η factor)</strong>: reproduces Abrikosov-Gor&apos;kov formula — <span style={{ color: '#f59e0b' }}>reparametrization</span></li>
             <li><strong>Born rule</strong>: reproduces |α|² via coherence conservation — <span style={{ color: '#f59e0b' }}>reparametrization</span> (no deviation predicted)</li>
@@ -272,7 +272,7 @@ export default function TestCatalog() {
           a &isin; [0.4, 1]. Both numbers come from the same w(a); only the projection differs.) The family moves along (1+w&#x2080;) &prop; +w<sub>a</sub>, across rather than
           along DESI&apos;s preferred direction, which is why its &Delta;&chi;&sup2; sits near zero. The &Omega;<sub>m</sub>{' '}
           floor never binds on the past light cone (C &ge; &Omega;<sub>m</sub> for every z &ge; 0), so flooring opens no
-          escape. Derived by a visitor researcher persona; verified against the continuity equation numerically
+          escape. Derived by a simulated-visitor researcher persona; verified against the continuity equation numerically
           (<code>maintainer/scripts/floor_is_cosmic_C_and_w_sign.py</code>, 0 sign violations over 11 &gamma; &times; 51 z).
           Kill fires if DR3 robustly requires that crossing; if the data sit at &Lambda;CDM it is a tie. <strong>TEST-26
           can select the mean-density (Cardassian) reading, which the framework&apos;s local-density postulate forbids</strong>{' '}
@@ -403,7 +403,7 @@ export default function TestCatalog() {
             S = 1.98, nonlocal-grid arm S = 2.0, the framework&apos;s own density substrate S = 1.85. <strong>Refuted</strong> (a
             construction check, not data; see{' '}
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).</li>
-          <li>B2 RAR transition shape at &#x03B3; = 2 (refuted under the registered point-level criterion, &Delta;BIC +184; &asymp;&nbsp;+11, 1.6&ndash;2.2&sigma;, with the galaxy as the unit: disfavoured at the threshold, recount pending dp) &middot; B3 consciousness threshold C &asymp; 0.50
+          <li>B2 RAR transition shape at &#x03B3; = 2 (refuted under the registered point-level criterion, &Delta;BIC +184; &asymp;&nbsp;+11, 1.6&ndash;2.2&sigma;, with the galaxy as the unit: disfavoured at the threshold, recount pending the project lead) &middot; B3 consciousness threshold C &asymp; 0.50
             (untested; the one test ran on a different variable) &middot; B4 compatibility scaling (heterogeneous case run 2026-09-25: refuted as stated;
             the surviving 1/&lang;C&rang; holds by construction, so reparametrization) &middot; B5 f(N) reconstruction rate (not yet derived) &middot; B6 non-monogamous entanglement (gated on B1,
             which failed) &middot; B7 vacuum Umklapp (Planck-suppressed).</li>

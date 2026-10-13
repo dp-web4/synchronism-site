@@ -57,7 +57,7 @@ export default function GalaxyRotation() {
           Tier 1 as TEST-03s &mdash; not the Freeman-law card TEST-08). The structural reason
           is in the next paragraph; the tested-and-killed compander variants are further down.
           <span style={{ display: 'block', marginTop: '0.5rem', fontSize: '0.85rem' }}>
-            <strong>How C entered the RAR fit, in one sentence (added 2026-09-08; asked by two visitor personas who
+            <strong>How C entered the RAR fit, in one sentence (added 2026-09-08; asked by two simulated-visitor personas who
             showed the alternatives give different force laws):</strong> the compander was used as an <em>implicit</em>{' '}
             interpolating function keyed on g<sub>obs</sub> &mdash; the script solves
             g<sub>bar</sub> = g<sub>obs</sub>·tanh(γ ln(1 + g<sub>obs</sub>/a₀′)) for g<sub>obs</sub> with a₀′ profiled
@@ -178,7 +178,7 @@ export default function GalaxyRotation() {
           under different theoretical umbrellas. The 2&#x03C0; prefactor is chosen to match the
           observed value; cH&#x2080;/(2&#x03C0;) &#x2248; 1.04&#x00D7;10&#x207B;&#xB9;&#x2070; m/s&#x00B2; at the
           site-standard H&#x2080; = 67.4
-          undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;13%. Against this framework&apos;s own SPARC fit the comparison changes but gets no sharper (added 2026-10-04, from a graduate-physics visitor): the scale the fit identifies is a₀′/&#x03B3; (the compander&apos;s deep-regime limit; 2a₀′ at &#x03B3; = ½). It stays at 1.07&ndash;1.09&times;10⁻¹⁰ across the whole &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 band while a₀′ itself moves 3.6&times;, and reads 1.16&ndash;1.18&times;10⁻¹⁰ under the velocity-&chi;² fits. cH₀/2&pi; sits 3&ndash;12% below it at H₀ = 67.4. Closing the gap needs H₀ &asymp; 69&ndash;70.5 for the &Upsilon;-sweep values (inside the Planck&ndash;SH0ES range) and &asymp; 75&ndash;76 for the velocity-&chi;² values (above SH0ES&apos;s 73), so only the low end is absorbed by the H₀ tension (corrected 2026-10-12: read &ldquo;inside the &plusmn;5% the H₀ tension allows&rdquo;, which a 12% gap is not; graduate visitor persona). Still Milgrom&apos;s 1983 coincidence, still a reparametrization (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>).
+          undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;13%. Against this framework&apos;s own SPARC fit the comparison changes but gets no sharper (added 2026-10-04, from a graduate-physics visitor): the scale the fit identifies is a₀′/&#x03B3; (the compander&apos;s deep-regime limit; 2a₀′ at &#x03B3; = ½). It stays at 1.07&ndash;1.09&times;10⁻¹⁰ across the whole &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 band while a₀′ itself moves 3.6&times;, and reads 1.16&ndash;1.18&times;10⁻¹⁰ under the velocity-&chi;² fits. cH₀/2&pi; sits 3&ndash;12% below it at H₀ = 67.4. Closing the gap needs H₀ &asymp; 69&ndash;70.5 for the &Upsilon;-sweep values (inside the Planck&ndash;SH0ES range) and &asymp; 75&ndash;76 for the velocity-&chi;² values (above SH0ES&apos;s 73), so only the low end is absorbed by the H₀ tension (corrected 2026-10-12: read &ldquo;inside the &plusmn;5% the H₀ tension allows&rdquo;, which a 12% gap is not; graduate simulated-visitor persona). Still Milgrom&apos;s 1983 coincidence, still a reparametrization (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>).
           Synchronism&apos;s contribution is the coherence-function mechanism that provides a
           <em>reason</em> for this scale &mdash; not the identification itself.
           See{' '}<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
@@ -323,7 +323,7 @@ export default function GalaxyRotation() {
             as the galaxy mechanism if the 2,807 points are independent. They are not: they come from 166 rotation curves, and
             the mass-to-light, distance and inclination errors move a whole curve together. <strong>With the galaxy as the
             replication unit (run 2026-09-29, pre-registered):</strong> γ = 2 is worse than the free fit in 94 of 166 galaxies
-            (57%; sign-test p = 0.05); a 10-fold galaxy-level cross-validation prefers free γ by 1.6σ; a galaxy-block bootstrap
+            (57%; exact sign test p = 0.051 one-sided, 0.10 two-sided; the one-sided test asks whether γ = 2 is worse, which is the registered direction); a 10-fold galaxy-level cross-validation prefers free γ by 1.6σ; a galaxy-block bootstrap
             puts the full-N ΔBIC at 179 with 95% interval [23, 351], a spread that implies an effective N of about 150; and
             ΔBIC recomputed with N = 166 is +10.9, at the threshold. Seven galaxies carry 98% of the net excess, five pull the
             other way. So the pin is <em>disfavoured at the threshold</em>, not decisively refuted; the previously quoted
@@ -348,7 +348,7 @@ export default function GalaxyRotation() {
             RMS identical to McGaugh to four digits (with &Upsilon; frozen at 0.5 and points unweighted; with per-galaxy nuisances
             refitted the free fit moves to &#x03B3;&#x0302; &asymp; 0.6 [0.43, 0.95]). ΔBIC=+7 is entirely the BIC penalty for the
             extra parameter — the fit improvement is zero.{' '}
-            <strong>Made quantitative (2026-07-27, external-reviewer point):</strong> with N = 2807,
+            <strong>Made quantitative (2026-07-27, simulated-reader review point):</strong> with N = 2807,
             ln&nbsp;N = 7.94, so one added free parameter costs +7.94 in BIC <em>before any likelihood
             is considered</em>. The observed +7.1 therefore implies Δχ² ≈ &minus;0.84 — the free-γ
             compander fits the data <em>marginally better</em> than McGaugh&apos;s ν and loses purely
@@ -382,7 +382,7 @@ export default function GalaxyRotation() {
             color: 'var(--color-text-secondary)',
           }}>
             <strong style={{ color: 'var(--color-accent-violet)' }}>Stated exactly, not asymptotically
-            (added 2026-09-07, visitor graduate-physics persona).</strong> The paragraph above argues
+            (added 2026-09-07, simulated-visitor graduate-physics persona).</strong> The paragraph above argues
             MOND-equivalence through a <em>tail</em> exponent. It holds <em>identically</em>, and the exact
             version is both shorter and more damning. Because e<sup>&#x03B3;ln(1+x)</sup> = (1+x)<sup>&#x03B3;</sup>,
             <span style={{ display: 'block', textAlign: 'center', fontFamily: 'monospace', margin: '0.5rem 0', color: 'var(--color-text-primary)' }}>
@@ -400,7 +400,7 @@ export default function GalaxyRotation() {
             at &#x03B3; = &frac12; one gets g<sub>obs</sub> = g<sub>bar</sub> + 2a&#x2080;&prime;, a constant acceleration offset (v&sup2; rising linearly
             with r), not a flat curve and not MOND: at g<sub>bar</sub>/a&#x2080; = 0.01 the &#x03BC;-form gives g<sub>obs</sub>/a&#x2080; = 0.147
             (deep-MOND &radic;(2x) = 0.141) while the g<sub>bar</sub>-keyed division gives 2.01. The &ldquo;g<sub>obs</sub> = g<sub>bar</sub>/C&rdquo;
-            written elsewhere on this page is the floored TEST-09/10 form, a different function (added 2026-09-29, graduate-physics visitor persona). The free-&#x03B3; SPARC fit lands at <strong>0.489, which is 2% from the
+            written elsewhere on this page is the floored TEST-09/10 form, a different function (added 2026-09-29, graduate-physics simulated-visitor persona). The free-&#x03B3; SPARC fit lands at <strong>0.489, which is 2% from the
             unique &#x03B3; at which this model does not resemble MOND but <em>is</em> MOND.</strong> The same
             cancellation runs the cosmology sector: at &#x03B3; = &frac12;, (1&minus;C)/C = 2/x, so the substituted
             dark-energy density &#x03C1;<sub>DE</sub> = &#x03C1;<sub>m</sub>(1&minus;C)/C = 2&#x03C1;<sub>crit</sub>{' '}
@@ -455,7 +455,7 @@ export default function GalaxyRotation() {
               &ldquo;indistinguishable from zero at any precision.&rdquo; It concluded that the compander sits in the simple-μ branch
               the Solar System had closed while McGaugh&apos;s branch survives. That compared the direct anomaly at Saturn, but
               Cassini bounds the external-field quadrupole set near 7,000&nbsp;AU, and there McGaugh&apos;s function fails too.
-              A visitor persona (graduate physics) raised it, and a pre-registered run on TEST-25&apos;s instrument confirmed it.
+              A simulated-visitor persona (graduate physics) raised it, and a pre-registered run on TEST-25&apos;s instrument confirmed it.
               An earlier correction on this box had already fixed the naming (simple μ returns as a power law; the
               exponential return belongs to McGaugh&apos;s RAR ν). Until 2026-09-22 the box then called the direct tail
               &ldquo;a separate, smaller effect&rdquo; that did not bear on the Solar System verdict. That compared fractions, not

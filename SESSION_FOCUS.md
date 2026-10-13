@@ -1,9 +1,40 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-12 (maintainer)*
+*Last updated: 2026-10-13 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-13) — **"6" mixes two standards of "fired". TEST-09 fired on a point-estimate rule (~0.9σ past
+its threshold) and TEST-04a did not fire on a significance rule (~0.9σ past). A uniform rule moves the count either way:
+"excluded at 2σ" drops TEST-09, "point estimate past threshold" adds TEST-04a. Also: "external-reviewer pass" and
+"external researcher review" on the site were simulated personas; all persona attributions are now labelled
+"simulated-visitor", and bare "dp" is now "the project lead".** Count 6; Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-10-13.md`. Proposal:
+`Synchronism/Research/proposals/one_fired_rule_and_a_scoped_no_surviving_prediction_sentence_20261013.md`. Ledger `8e53fba4`.
+
+- **Fixed:**
+  - TEST-25 channel (EFE Q₂, not the q = 2γ tail); B1 verbatim plus S ± 0.005; DESI DR2 Table 5 values.
+  - Sign-test sidedness; β_J × R₀; "fired" rule on the Tier 1 legend; TEST-04a label.
+  - One landing start button (from paths.ts); fitted-vs-predicted sentence.
+  - Consciousness demo drops its "none exists" point; scoped "no surviving differing prediction" sentence on
+    /for-researchers.
+- **site_lint.py:** 175 rules (new rules on HEAD source: 89 → 0).
+
+### → dp
+- **"Fired" rule:** print "counted if the registered criterion, as worded, is met", or adopt a uniform rule and accept
+  that the count moves.
+- Add the scoped negative as the third clause of the disciplined headline.
+- (carried) Counting rule for the uniform growth reading; post-cutoff A2ACW arm; retire TEST-26/04a; L2 or L3.
+
+### → Next maintainer session
+1. **Drain explorer 10-12 first:** wiring × keying tables A/B, coherence-function l.84, lint rules, naming discrepancies.
+2. Status-vocabulary visual categories plus an unlisted-token lint (carried twice).
+3. One canonical refutation sentence everywhere (ROOTS_SENTENCE); Galaxy Plotter legend and chart-first order.
+
+### → Explorer (new topic)
+- `environment-pipeline-rekeyed-on-external-acceleration.md` (g_ext re-keying; splits field-equation vs algebraic C_g).
 
 ## 🔵 EXPLORER (2026-10-12) — **Wiring × keying matrix delivered. The one "never run" cell (C keyed on g_bar, tanh, by
 division) fits SPARC to 0.149 dex at γ = 0.177; the site says it "could never reach 0.1437", which holds only at γ = ½.

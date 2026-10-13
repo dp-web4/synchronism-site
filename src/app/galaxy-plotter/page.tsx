@@ -216,7 +216,7 @@ export default function GalaxyPlotter() {
         <div style={{ background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#f87171' }}>Read &ldquo;real&rdquo; on this page as &ldquo;as published&rdquo; &mdash;
           the violet curve is the framework&apos;s equation at a calibration this site refutes three separate ways
-          (named here 2026-09-10, after three of four visitor personas flagged this one page).</strong>{' '}
+          (named here 2026-09-10, after three of four simulated-visitor personas flagged this one page).</strong>{' '}
           The curve is honestly computed &mdash; nothing is fitted to the dots &mdash; but every parameter in it is
           one the site elsewhere marks as failed:
           <br />&bull; <strong>&gamma;&nbsp;=&nbsp;2</strong> &mdash; the pin refuted on the RAR at
@@ -384,7 +384,7 @@ export default function GalaxyPlotter() {
               <summary style={{ cursor: 'pointer' }}>Revision note</summary>
               This note used to call McGaugh&apos;s exponential-return function &ldquo;Cassini-safe&rdquo; and say only the simple
               function fails. That reasoning used the high-acceleration tail at Saturn, but Cassini constrains the quadrupole
-              set in the transition region. A visitor persona (graduate physics) caught it. The numbers above come from a
+              set in the transition region. A simulated-visitor persona (graduate physics) caught it. The numbers above come from a
               pre-registered run: <code>maintainer/scripts/cassini_q2_mond_interpolating_functions.py</code>.
             </details>
           </div>
@@ -427,7 +427,7 @@ export default function GalaxyPlotter() {
             B&nbsp;=&nbsp;1/C&nbsp;&#8776;&nbsp;1000 &mdash; a factor ~100 <em>over</em>. <strong>Both branches are
             refuted by the same galaxy, from opposite sides.</strong> Registering a canonical coupling is still
             required for the EFE and cluster sectors; it is not required to conclude that the galaxy sector fails.
-            (Raised independently by two expert visitor passes, 2026-08-08.)
+            (Raised independently by two expert simulated-visitor passes, 2026-08-08.)
           </div>
           The light-violet dashed (quadrature) curve and the amber dotted one differ in exactly one ingredient: the coherence factor.
           The stand-in used tanh(<em>radius</em>) with hand-tuned constants; the real curve uses
@@ -562,7 +562,7 @@ export default function GalaxyPlotter() {
           <div style={{ margin: '0 0 0.9rem', padding: '0.7rem 0.9rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.35)', borderRadius: '0.375rem', fontSize: '0.82rem', color: 'var(--color-text-secondary)' }}>
             <strong style={{ color: '#38bdf8' }}>&ldquo;max C = {maxC.toFixed(3)}&rdquo; and &ldquo;the floor at
             &#x03A9;<sub>m</sub>&rdquo; are two different C&apos;s. Measured and corrected 2026-09-18.</strong>{' '}
-            A leading-edge visitor persona put the two numbers side by side on 2026-09-18 and concluded that the floor
+            A leading-edge simulated-visitor persona put the two numbers side by side on 2026-09-18 and concluded that the floor
             (0.315) must bind everywhere, since the computed C never exceeds 0.001 &mdash; so that the galaxy sector
             applies the <em>constant</em> 3.17, the tanh does no work, and TEST-09/TEST-10 are algebra rather than
             data. The persona flagged the inference as unverified and asked for a source check before publishing. It

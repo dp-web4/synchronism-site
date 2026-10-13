@@ -140,7 +140,7 @@ export default function KeyClaims() {
             privilege observers. It is now stated as what it is &mdash; the framework&apos;s motivating wager. In the same
             pass, the Kochen&ndash;Specker &ldquo;0 of 512&rdquo; line in the caveat below now says that 512 is every
             assignment (so the result is the theorem itself), and acronyms (MRH, CRT, PRL, CHSH, ALFALFA&ndash;SDSS,
-            EEG/fMRI, AQUAL) are expanded at first use. Flagged by visitor personas, 2026-10-06.
+            EEG/fMRI, AQUAL) are expanded at first use. Flagged by simulated-visitor personas, 2026-10-06.
           </details>
 
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem', marginTop: '1rem' }}>Why this isn&apos;t &ldquo;just an interpretation&rdquo;</h3>
@@ -529,7 +529,7 @@ export default function KeyClaims() {
             very differently against three different denominators:
             <ul style={{ marginTop: '0.4rem', marginBottom: '0.4rem', paddingLeft: '1.1rem', lineHeight: 1.7 }}>
               <li>Against SPARC&apos;s <em>random</em> error alone (&plusmn;0.02), the 0.158 offset is <strong>~7.9&#x03C3;</strong> &mdash; this is the number that used to be quoted bare, and it is the wrong denominator.</li>
-              <li>Against the <em>systematic</em> McGaugh, Lelli &amp; Schombert quote in the same sentence of the same paper (&plusmn;0.24), it is <strong>0.158/0.24 = 0.66&#x03C3; — consistent</strong>. (Sharpened 2026-08-10 from &ldquo;McGaugh&apos;s ~20% budget, under 1&#x03C3;&rdquo;; independently re-derived by a visitor Pass 4 that named the dropped term.)</li>
+              <li>Against the <em>systematic</em> McGaugh, Lelli &amp; Schombert quote in the same sentence of the same paper (&plusmn;0.24), it is <strong>0.158/0.24 = 0.66&#x03C3; — consistent</strong>. (Sharpened 2026-08-10 from &ldquo;McGaugh&apos;s ~20% budget, under 1&#x03C3;&rdquo;; independently re-derived by a simulated-visitor Pass 4 that named the dropped term.)</li>
               <li>It is H&#x2080;-dependent: at the SH0ES H&#x2080; = 73 the relation gives 1.13 &#x00D7; 10&#x207B;&#x00B9;&#x2070;, only <strong>6% low</strong>.</li>
             </ul>
             The honest statement is therefore <strong>&ldquo;consistent within systematics; the residual is
@@ -678,7 +678,7 @@ export default function KeyClaims() {
               not new data. Standard MOND + M/L corrections explain all observed variance.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
-              <strong style={{ color: '#f59e0b' }}>Sharpened 2026-09-07 (visitor graduate-physics persona):
+              <strong style={{ color: '#f59e0b' }}>Sharpened 2026-09-07 (simulated-visitor graduate-physics persona):
               &ldquo;MOND-equivalent&rdquo; is an understatement, and this box used to end &ldquo;the mechanism is
               novel; the predictions are not.&rdquo;</strong> The equivalence is not a fit outcome or a tail
               approximation &mdash; it is an algebraic identity. Since e<sup>&#x03B3;ln(1+x)</sup> = (1+x)<sup>&#x03B3;</sup>,
@@ -721,7 +721,7 @@ export default function KeyClaims() {
             External Field Effect (Chae et al. 2020/2021) &mdash; so a detection would not discriminate the two.
             <strong> Corrected 2026-07-09:</strong> the claim that this was &ldquo;run (Session #616), R&sup2; = 0.14,
             kill criterion triggered&rdquo; conflated two different tests on two different samples (verified
-            independently by the explorer track 2026-07-08 and two visitor personas 2026-07-09). The registered
+            independently by the explorer track 2026-07-08 and two simulated-visitor personas 2026-07-09). The registered
             TEST-03 environment-density test on the 14,585-galaxy ALFALFA&ndash;SDSS (Arecibo Legacy Fast ALFA HI survey &times; Sloan Digital Sky Survey) sample has never actually been run.
           </p>
           <div style={{

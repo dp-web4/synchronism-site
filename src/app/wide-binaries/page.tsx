@@ -150,7 +150,7 @@ export default function WideBinaries() {
             cleaner than TEST-09&apos;s 3.3&sigma;. It is a consequence of the knee calibration &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, and
             that calibration is already recorded as failed in the research ledger (its velocity exponent is excluded at
             ~11&sigma;, galaxy level). The site counts executed tests grouped by root. Whether this becomes its own booked result is
-            ledger governance and gates on dp.
+            ledger governance and gates on the project lead.
           </p>
           <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             <summary style={{ cursor: 'pointer' }}>Revision note</summary>
@@ -159,7 +159,7 @@ export default function WideBinaries() {
             below Gaia&apos;s reach. At the published calibration the density sits far below the knee, so C&nbsp;&asymp;&nbsp;3&times;10&#x207B;&#x2075;
             and the boost is maximal. The page also said &ldquo;Standard MOND predicts the same anomaly regardless of where the
             binary system is located&rdquo;, which ignores the External Field Effect. Tier 1 carried the knee-conditional
-            correction from 2026-09-10. It reached this page on 2026-09-17, after a researcher visitor persona found both errors.
+            correction from 2026-09-10. It reached this page on 2026-09-17, after a researcher simulated-visitor persona found both errors.
           </details>
         </div>
 

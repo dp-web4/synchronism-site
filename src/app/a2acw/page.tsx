@@ -139,11 +139,11 @@ export default function A2ACW() {
             LLM agents, with a human (dp) overseeing the badge taxonomy, and no outside physicist has reviewed them.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', marginBottom: 0 }}>
-            <strong>What the archive is evidence for (added 2026-10-10, from a researcher visitor persona).</strong> It is a clean
+            <strong>What the archive is evidence for (added 2026-10-10, from a researcher simulated-visitor persona).</strong> It is a clean
             dataset for one question of independent interest: how often do same-corpus adversarial pairs converge on published
             prior art and label it novel? Four instances are documented, and in none of the 3,308 sessions was the prior art
             cited: the galaxy formula at &gamma; = &frac12; is Milgrom&apos;s simple &mu; (Famaey &amp; Binney 2005; matched
-            2026-10-10, by a visitor persona); the dark-energy sector is a Cardassian model (Freese &amp; Lewis 2002; matched
+            2026-10-10, by a simulated-visitor persona); the dark-energy sector is a Cardassian model (Freese &amp; Lewis 2002; matched
             2026-09-14, site maintainer); the galaxy field equation is Refracted Gravity (Matsakos &amp; Diaferio 2016; matched
             2026-08-25, site explorer); the absolute-time substrate falls in the Collins et al. 2004 LIV class (matched
             2026-06-23, an archive exploration arc with retrieval). Every match came from a lane with literature access; none came
@@ -180,7 +180,7 @@ export default function A2ACW() {
             Cassini and the globular-cluster catalogue. Five of the six refutations on the scoreboard came from executing code on
             that external data; the sixth (Bell/CHSH) is a construction check whose oracle is a theorem (corrected 2026-10-08 from
             &ldquo;all six&rdquo;, researcher visitor). None came from debate. The
-            reading-and-arguing loops, including this site&apos;s own AI visitor personas, produced many corrections too, but
+            reading-and-arguing loops, including this site&apos;s own AI simulated-visitor personas, produced many corrections too, but
             the ones we recall were consistency corrections: a page contradicting another page, a number mis-copied, a
             parameter attached to the wrong function. That is what the thesis predicts self-play converges on. It is a
             prediction about our own record. <strong>It has since been checked once</strong> (H-oracle pilot, explorer 2026-09-24,
@@ -214,7 +214,7 @@ export default function A2ACW() {
             <a href="https://github.com/dp-web4/Synchronism/blob/main/Research/Session611_Stellar_Markov_Blankets.md" style={{ color: 'var(--color-accent-blue)' }}>Session 611 (Stellar Markov Blankets)</a>,
             whose prediction P611.2 was executed seven months later &mdash; see the{' '}
             <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>globular-cluster fork</Link>.
-            (Key + link added 2026-09-08: two visitor personas asked what the acronyms were and whether a session could be read.)
+            (Key + link added 2026-09-08: two simulated-visitor personas asked what the acronyms were and whether a session could be read.)
           </p>
           <p style={{ fontFamily: 'monospace', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
             CCH = (AFR &times; 0.25) + (CF &times; 0.25) + (EVR &times; 0.30) + (FDI &times; 0.20)
@@ -283,7 +283,7 @@ export default function A2ACW() {
             <li><strong>The question it cannot yet answer.</strong> H1: the framework contained nothing novel. H2: an LLM rewarded for
               finding prior art maps almost anything onto its corpus, real discoveries included. Nothing measured so far separates them.
               The design that would is a post-training-cutoff arm: modest-novelty results published after the models&apos; cutoff, scored
-              blind. It has not been run (routed to dp since 2026-09-10).</li>
+              blind. It has not been run (routed to the project lead since 2026-09-10).</li>
             <li><strong>The temporal-asymmetry &ldquo;0/6&rdquo; (2026-05-18) was a desk counterfactual, not a run.</strong> It asks whether a
               later-cutoff challenger would have caught the six demotions; it measures a proposed design, not the protocol.</li>
           </ul>
@@ -303,7 +303,7 @@ export default function A2ACW() {
               error profile of LLM research agents <em>that have an executable oracle</em>, with no post-cutoff control needed.
               Proposed to the research archive; not yet run.</li>
           </ul>
-          <p style={{ margin: '0.5rem 0 0', fontSize: '0.8rem' }}>Raised by a researcher visitor persona, 2026-09-17.</p>
+          <p style={{ margin: '0.5rem 0 0', fontSize: '0.8rem' }}>Raised by a researcher simulated-visitor persona, 2026-09-17.</p>
         </div>
 
         <h3>Three-Axis Failure Taxonomy (A2ACW v2)</h3>
@@ -333,7 +333,7 @@ export default function A2ACW() {
           </ul>
           <p>
             The protocol-page header called the result a &ldquo;program-level null result with retrospective controls (N=6)&rdquo;.
-            For Researchers had carried the corrected state since 2026-09-15. A researcher visitor persona found this page still
+            For Researchers had carried the corrected state since 2026-09-15. A researcher simulated-visitor persona found this page still
             stating the superseded version.
           </p>
         </details>

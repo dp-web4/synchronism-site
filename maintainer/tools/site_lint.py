@@ -23,6 +23,19 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-13 (maintainer): internal-process language read as outside authority; TEST-25 channel; DESI hedge; demo stats
+    (r"(pending|gates on|gated on|routed to|GATES ON)\s+(dp|DP)\b|\bdp(\\'|&apos;|')s call|dp-gated|dp-adopted", "2026-10-13",
+     "bare 'dp' is never introduced on most pages; write 'the project lead' (glossary #dp keeps the handle)"),
+    (r"visiting researcher|external-reviewer (pass|point)|external researcher review", "2026-10-13",
+     "these were simulated visitor personas, not outside reviewers; say 'simulated-visitor ... persona' or 'simulated-reader review pass'"),
+    (r"(?<![-\w])[Vv]isitor (researcher |graduate-physics |grad-student )?(persona|pass)\b", "2026-10-13",
+     "persona attributions must say 'simulated-visitor' so they cannot read as external review"),
+    (r"slow simple-μ return that Cassini excludes", "2026-10-13",
+     "Cassini constrains the EFE-induced Q2, set near the Sun's MOND radius (~7,000 AU), not the high-g return tail (McGaugh's nu fails too)"),
+    (r"should be re-verified against the\s+paper", "2026-10-13",
+     "DESI DR2 (w0, wa) read from Table 5 of arXiv:2503.14738 v3 on 2026-10-13"),
+    (r"8 approaches on 0\.499", "2026-10-13",
+     "the 'phase transition (none exists)' row is excluded: 7 approaches, 0.501 +/- 0.010"),
     # --- retired 2026-10-12 (maintainer): Ciocan sigmas divided 95% CIs; A2ACW desk counterfactual read as a run; cH0/2pi "inside +/-5%"; TEST-04a badge; GW bound; tool-index drift
     (r"9\.[48]\s*(σ|&sigma;|&#x03C3;)", "2026-10-12",
      "Ciocan's errors are 95% CIs; the level rows are ~19 sigma / ~18 sigma measurement-only, and the slope row (n = 0.71 +/- 0.13) is the level-free statement"),
@@ -344,7 +357,7 @@ REQUIRES = [
 
 EXEMPT = re.compile(
     r"previously|until 2026|read &ldquo;|this (line|sentence|card|page|row) (read|said)|corrected|withdrawn|retired|"
-    r"used to|was wrong|argued the threshold|reworded|corrects the|older notes that said|moved from the status note|was &ldquo;",
+    r"used to|was wrong|argued the threshold|reworded|corrects the|older notes that said|older wording|older text|moved from the status note|was &ldquo;",
     re.IGNORECASE,
 )
 

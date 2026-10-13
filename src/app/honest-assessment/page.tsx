@@ -36,10 +36,10 @@ export default function HonestAssessment() {
         the research archive&apos;s AI sessions and this site&apos;s three daily AI tracks. The <em>visitor</em> track reads the
         site as four simulated readers (&ldquo;personas&rdquo;: a casual reader, a technical writer, a graduate physics student,
         a researcher); the <em>maintainer</em> track fixes the site; the <em>explorer</em> track does research. When a note
-        says &ldquo;a graduate-physics reader&rdquo; or &ldquo;a visitor researcher persona&rdquo;, it means one of those AI
+        says &ldquo;a graduate-physics reader&rdquo; or &ldquo;a simulated-visitor researcher persona&rdquo;, it means one of those AI
         passes, not an outside human. No outside human domain expert has audited these claims; the external feedback so far
         has come from other AI systems (Grok, DeepSeek, GPT), relayed by the people who ran them. The one human decision-maker is
-        the project lead, written <strong>&ldquo;dp&rdquo;</strong> on this site (github.com/dp-web4): &ldquo;pending dp&rdquo; or &ldquo;gates on dp&rdquo; means a
+        the project lead, written <strong>&ldquo;dp&rdquo;</strong> on this site (github.com/dp-web4): &ldquo;pending the project lead&rdquo; or &ldquo;gates on the project lead&rdquo; means a
         governance decision, such as whether the headline count changes, that the AI tracks may recommend but do not make.
       </p>
 
@@ -48,7 +48,7 @@ export default function HonestAssessment() {
           If you read nothing else (this page is ~18,000 words)
         </p>
         <ul style={{ margin: 0, paddingLeft: '1.2rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-          <li><strong>The one equation did not hold as stated.</strong> It lost every test it executed &mdash; 6 refutations, 0 predictions confirmed. <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six?</a> Not all six are decisive tests on outside data: the &gamma;&nbsp;=&nbsp;2 pin (row #3) sits at the threshold once each galaxy counts once, and row #6 is a construction check, not data. (Until 2026-10-06 this sentence said &ldquo;every decisive test it ran on real data&rdquo;, which its own table contradicted; a researcher visitor persona caught it.) Two of them (TEST-09, TEST-10) fired on galaxy rotation data only under the site&apos;s choice of cap; galaxy weak-lensing data exclude the cap under all three candidate choices. Rows #1 and #2 share one cause, so no more than five are independent. The count itself is under review.</li>
+          <li><strong>The one equation did not hold as stated.</strong> It lost every test it executed &mdash; 6 refutations, 0 predictions confirmed. <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six?</a> Not all six are decisive tests on outside data: the &gamma;&nbsp;=&nbsp;2 pin (row #3) sits at the threshold once each galaxy counts once, and row #6 is a construction check, not data. (Until 2026-10-06 this sentence said &ldquo;every decisive test it ran on real data&rdquo;, which its own table contradicted; a researcher simulated-visitor persona caught it.) Two of them (TEST-09, TEST-10) fired on galaxy rotation data only under the site&apos;s choice of cap; galaxy weak-lensing data exclude the cap under all three candidate choices. Rows #1 and #2 share one cause, so no more than five are independent. The count itself is under review.</li>
           <li><strong>Where it fits galaxies, it is MOND in different notation</strong> (MOND = the 40-year-old rival theory that tweaks gravity instead of adding dark matter). Let the dial that sets how sharp its S-curve is be fitted freely, and the equation lands on MOND&apos;s own formula; set that dial to the value the framework itself chose (γ = 2) and it fails.</li>
           <li><strong>Its two genuinely different claims both failed.</strong> A hard cap on the gravity boost (galaxy edges need 4× more than the cap allows) and a switch that turns on with local density instead of acceleration (the data reject that at every turn-on point tried).</li>
           <li><strong>&ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence.</strong> It is a classical &ldquo;how much does the system act as one thing&rdquo; score. See{' '}
@@ -151,7 +151,7 @@ export default function HonestAssessment() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
           <strong>Kill Criterion Triggered</strong><span>A pre-registered falsification threshold was crossed. Carries Failed badge. Stronger than &ldquo;Failed&rdquo; alone because failure was quantified in advance.</span>
-          <strong>MOND-shared</strong><span>RETIRED (class audited 2026-07-14/15). Asserted &ldquo;a positive result confirms Synchronism AND MOND equally.&rdquo; All three carriers dissolved when executed or adjudicated: TEST-09 (BTFR — Failed; kill fired at B<sub>max</sub> = 1/&Omega;<sub>m</sub>, |&Delta;n| = 0.41 &gt; 0.3, but convention-dependent: the 2026-09-18 ceiling sweep finds it does not fire at the two baryon-budget ceilings, so it does not survive its own pre-fixed rule; convention-free, B<sub>max</sub> &#8818; 5.4 is excluded; whether it stays in the count of 6 is pending dp), TEST-10 (dwarf DM fractions — 69% of SPARC exceeds the framework&apos;s 68.5% ceiling), TEST-05 (environment levers differ by ~50–5,000×). A tie badge was the site&apos;s only unfalsifiable label — it carried no execution burden and sounded modest. New rule: a claimed tie carries the same execution burden as a claimed kill (both predictions computed, agreement shown within the data&apos;s discriminating power).</span>
+          <strong>MOND-shared</strong><span>RETIRED (class audited 2026-07-14/15). Asserted &ldquo;a positive result confirms Synchronism AND MOND equally.&rdquo; All three carriers dissolved when executed or adjudicated: TEST-09 (BTFR — Failed; kill fired at B<sub>max</sub> = 1/&Omega;<sub>m</sub>, |&Delta;n| = 0.41 &gt; 0.3, but convention-dependent: the 2026-09-18 ceiling sweep finds it does not fire at the two baryon-budget ceilings, so it does not survive its own pre-fixed rule; convention-free, B<sub>max</sub> &#8818; 5.4 is excluded; whether it stays in the count of 6 is pending the project lead), TEST-10 (dwarf DM fractions — 69% of SPARC exceeds the framework&apos;s 68.5% ceiling), TEST-05 (environment levers differ by ~50–5,000×). A tie badge was the site&apos;s only unfalsifiable label — it carried no execution burden and sounded modest. New rule: a claimed tie carries the same execution burden as a claimed kill (both predictions computed, agreement shown within the data&apos;s discriminating power).</span>
           <strong>Withdrawn</strong><span>Framework disowned the test — not from data refutation, but from internal contradiction or an unmotivated amplitude. A test replaced by a later formulation is Superseded, not Withdrawn (overlap removed 2026-09-25). Carries no badge (never adjudicated). TEST-04 (BAO).</span>
           <strong>Self-Eliminating-or-Tie</strong><span>No measurement outcome selects Synchronism over the standard alternatives — either the signal is below systematics reach, or both outcomes (null and confirmed anomaly) are covered by Newton or MOND respectively. TEST-02 (wide binaries).</span>
           <strong>Sign Correction</strong><span>Annotation marking that the prediction direction on this page was corrected after initial publication. Not a verdict badge — a correction provenance marker. TEST-02 (2026-06-06).</span>
@@ -249,7 +249,7 @@ export default function HonestAssessment() {
           resting on two framework-specific mechanism roots, plus one refuted registration, one constraint
           inherited from MOND, and one Bell/CHSH construction check. (This sentence read &ldquo;four executed
           refutations&rdquo; until 2026-08-09 and &ldquo;three to four independent roots&rdquo; until 2026-09-05,
-          while the landing page said two &mdash; three visitor personas caught the drift on one day. One count,
+          while the landing page said two &mdash; three simulated-visitor personas caught the drift on one day. One count,
           one split, classified by kind in the table below and imported site-wide from a single source file.) <strong>Why does the site
           still exist?</strong> Because a few of the framework&apos;s core ideas have never been testable with
           existing instruments (untested is not the same as failed), and because this record — a theory testing
@@ -266,7 +266,7 @@ export default function HonestAssessment() {
           n&nbsp;=&nbsp;3.35, |&Delta;n|&nbsp;=&nbsp;0.41&nbsp;&gt;&nbsp;0.3; the prediction sits 3.3σ from the
           data), but the 2026-09-18 ceiling sweep finds it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub>{' '}
           (|&Delta;n|&nbsp;=&nbsp;0.30 against a strict &gt;&nbsp;0.3) or at &Omega;<sub>m</sub>/&Omega;<sub>b</sub> (0.26), so it
-          does not survive its own pre-fixed rule; whether it stays in the count of 6 is pending dp. The same ceiling caps how
+          does not survive its own pre-fixed rule; whether it stays in the count of 6 is pending the project lead. The same ceiling caps how
           dark-matter-dominated a galaxy can appear at 68.5% — a convention-dependent figure (see the Verdict
           section below); the number that survives regardless of convention is the tail: SPARC&apos;s maximum
           observed DM fraction (0.927) requires a boost of at least 13.7, which no ratio built from Ω<sub>m</sub>
@@ -329,7 +329,7 @@ export default function HonestAssessment() {
           nonlocal arms are construction nulls. &ldquo;Prospective&rdquo; here means the criterion was
           fixed <em>before the data existed</em>; TEST-09&apos;s registered kill fired on pre-existing SPARC data, so it
           is registered-retrospective and does not raise the prospective count above 0. (TEST-09 is also
-          convention-dependent and its place in the 6 is pending dp; see (0) below.) The sharpest events, in order
+          convention-dependent and its place in the 6 is pending the project lead; see (0) below.) The sharpest events, in order
           of decisiveness:
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '-0.5rem' }}>
@@ -345,7 +345,7 @@ export default function HonestAssessment() {
           <em>Asserted, Not Derived</em> &mdash; so strictly they refute the assertion. The honest split (revised
           2026-09-05 from &ldquo;3&ndash;4 roots&rdquo;) is <strong>2 framework-specific mechanism roots + 1 refuted
           registration + 1 inherited from MOND + 1 Bell/CHSH construction check</strong> &mdash; see the classification table below and{' '}
-          <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>Tier 1</Link>. Three expert visitor passes
+          <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>Tier 1</Link>. Three expert simulated-visitor passes
           have now flagged the footer&apos;s bare &ldquo;6&rdquo; against that body text; the footer now carries the
           qualifier. The two failures that depend on <em>no</em> convention and <em>no</em> data are the
           mass-cancellation no-go and the vacuum divergence &mdash; see{' '}
@@ -367,7 +367,7 @@ export default function HonestAssessment() {
           (|&Delta;n|&nbsp;=&nbsp;0.30, strict &gt;&nbsp;0.3) or &Omega;<sub>m</sub>/&Omega;<sub>b</sub> (0.26), so it does
           not survive its own pre-fixed rule. The convention-free result: <strong>a bounded-boost law with
           B<sub>max</sub>&nbsp;&#8818;&nbsp;5.4 is excluded by the SPARC BTFR slope.</strong> Whether TEST-09 stays in the
-          count of 6 is pending dp.
+          count of 6 is pending the project lead.
           <em> Symmetry note added 2026-09-10 (graduate-physics reader): MOND&apos;s 3.81&nbsp;±&nbsp;0.04 is a
           fit, not a prediction</em> &mdash; it is MOND run through the same regime-mix pipeline as the other two
           slopes, which is the right like-for-like comparison but should not be printed bare beside Synchronism&apos;s
@@ -422,7 +422,7 @@ export default function HonestAssessment() {
         </p>
         <p style={{ color: 'var(--color-text-secondary)', borderLeft: '3px solid #ef4444', paddingLeft: '0.75rem' }}>
           <strong>(1b) The plainest growth reading is excluded, and it is not on the count (added 2026-10-12, from a
-          researcher visitor persona).</strong> The 0.418 above comes from Session 107&apos;s C<sub>cosmic</sub>/C<sub>galactic</sub>
+          researcher simulated-visitor persona).</strong> The 0.418 above comes from Session 107&apos;s C<sub>cosmic</sub>/C<sub>galactic</sub>
           mechanism, which the archive withdrew on 2026-08-11. Applying the framework&apos;s own substitution G&nbsp;&rarr;&nbsp;G/C
           uniformly to perturbations, the same move that builds its Friedmann equation, gives the opposite sign:
           f&sigma;&#x2088;(0.51)&nbsp;=&nbsp;0.575, growth <em>enhanced</em> by ~21% (maintainer 2026-10-07). That reading was
@@ -435,7 +435,7 @@ export default function HonestAssessment() {
           site in October as the plainest operationalization. That is a reason, not yet a rule, and it runs in the
           framework&apos;s favour, because a framework that never commits to how C enters perturbations can never lose a
           growth test. Whether it becomes refutation #7 (a new root: how C couples to perturbations), or the rule gains
-          an &ldquo;asserted by the archive&rdquo; clause that is then applied to every row, gates on dp (routed 2026-10-12).
+          an &ldquo;asserted by the archive&rdquo; clause that is then applied to every row, gates on the project lead (routed 2026-10-12).
           Until then, read the headline as &ldquo;6, plus one excluded reading pending a counting decision&rdquo;.
           Details: <a href="/dark-energy#growth-readings" style={{ color: 'var(--color-accent-blue)' }}>/dark-energy, growth readings</a>.
         </p>
@@ -448,7 +448,7 @@ export default function HonestAssessment() {
           &ldquo;conservative ≈33&rdquo; was a guessed discount, retired 2026-09-29). Free-γ converges to γ≈0.49&nbsp;=&nbsp;MOND, with RMS identical to McGaugh (&Upsilon; frozen at 0.5, unweighted; with per-galaxy nuisances refitted, &#x03B3;&#x0302; &asymp; 0.6 [0.43, 0.95]; the pin then sits at z = 1.9&ndash;2.3 galaxy-level).
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          <strong>How to read the ΔBIC ladder (sharpened 2026-07-27, external-reviewer point).</strong>{' '}
+          <strong>How to read the ΔBIC ladder (sharpened 2026-07-27, simulated-reader review point).</strong>{' '}
           The two numbers do different work and should not be read as one scale. The γ=2 result is a
           pure likelihood verdict (Δk&nbsp;=&nbsp;0): ΔBIC&nbsp;=&nbsp;+184 is decisive misfit <em>if the points are independent</em> (they are not; see the galaxy-level numbers above). The free-γ
           result is almost pure parameter charge: with N&nbsp;=&nbsp;2807, ln&nbsp;N&nbsp;=&nbsp;7.94, so one
@@ -513,7 +513,7 @@ export default function HonestAssessment() {
             computed here.
             <br />So neither theory can simply pick another function: each would have to leave the function its galaxy fit
             prefers. The failure is shared, which is what &ldquo;inherited&rdquo; means. Refutation classification is ledger governance
-            and gates on dp. The executed count stays at 6 either way. Script and pre-registration:{' '}
+            and gates on the project lead. The executed count stays at 6 either way. Script and pre-registration:{' '}
             <code>maintainer/scripts/cassini_q2_mond_interpolating_functions.py</code>.
             <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
               <summary style={{ cursor: 'pointer' }}>Revision notes</summary>
@@ -560,7 +560,7 @@ export default function HonestAssessment() {
           footer&apos;s &ldquo;4 refutations&rdquo; count and from this page&apos;s &ldquo;sharpest events&rdquo;
           list &mdash; the count&apos;s scope word (&ldquo;astronomical&rdquo;) filtered out the one
           ephemeris result and the one laboratory result without saying so, and both happen to be
-          failures. Two visitor personas independently caught this the same day. The footer count is now
+          failures. Two simulated-visitor personas independently caught this the same day. The footer count is now
           <strong> 6</strong>, spanning astronomical, ephemeris, and laboratory data.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
@@ -610,7 +610,7 @@ export default function HonestAssessment() {
           transition shape (&#x03B3;=2 pinned, &#x0394;BIC=+184 with points as independent, &asymp;&nbsp;+11 with the galaxy as the unit), the BTFR slope (TEST-09, 2026-07-14: registered kill
           fired at B<sub>max</sub> = 1/&Omega;<sub>m</sub>, prediction 3.3&sigma; from the data; convention-dependent &mdash;
           the 2026-09-18 ceiling sweep finds it does not fire at the two baryon-budget ceilings, so its place in the
-          count is pending dp; convention-free, B<sub>max</sub> &#8818; 5.4 is excluded), dwarf DM fractions (TEST-10 — class exclusion via SPARC&apos;s max
+          count is pending the project lead; convention-free, B<sub>max</sub> &#8818; 5.4 is excluded), dwarf DM fractions (TEST-10 — class exclusion via SPARC&apos;s max
           observed DM fraction, 2026-07-15; the &ldquo;69% exceeds ceiling&rdquo; headline is convention-dependent,
           see the Verdict section above), and the registered environment run (r&sup2; = 0.0001 vs the
           registered &gt;20% claim, 2026-07-14); ephemeris: the Cassini/SPARC joint squeeze (TEST-25, +17.95&sigma;,
@@ -628,7 +628,7 @@ export default function HonestAssessment() {
         <div className="card" style={{ borderLeft: '3px solid rgba(59,130,246,0.5)', marginBottom: '1rem' }} id="ledger-classification">
           <h3 style={{ marginTop: 0, fontSize: '1rem' }}>What the six actually refute &mdash; classification added 2026-08-09</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem' }}>
-            Every visitor persona in the 2026-08-09 pass independently hit the same defect: the count is quoted
+            Every simulated-visitor persona in the 2026-08-09 pass independently hit the same defect: the count is quoted
             everywhere and auditable nowhere. Two separate problems. <strong>(a) The inclusion rule was never
             written down.</strong> It is: a row counts if it was <em>executed against a registered criterion on
             data the framework did not fit</em>, and carries one of the operational labels
@@ -648,10 +648,10 @@ export default function HonestAssessment() {
                 </tr>
               </thead>
               <tbody style={{ color: 'var(--color-text-secondary)' }}>
-                <tr><td style={{ padding: '0.4rem' }}>TEST-09 BTFR slope 3.35&plusmn;0.07 vs 3.75&plusmn;0.10 (3.3&sigma; with both uncertainties in quadrature; the &plusmn;0.07 on the prediction is stated on <Link href="/falsifiability" style={{ color: 'var(--color-accent-blue)' }}>Falsifiability</Link> and was missing here &mdash; without it the gap reads 4.0&sigma;). Kill fired at B<sub>max</sub> = 1/&Omega;<sub>m</sub> (|&Delta;n| = 0.41 &gt; 0.3); convention-dependent: the 2026-09-18 sweep finds it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub> (0.30, strict &gt; 0.3) or &Omega;<sub>m</sub>/&Omega;<sub>b</sub> (0.26); whether it stays in this count is pending dp</td><td style={{ padding: '0.4rem' }}>The asserted ceiling B<sub>max</sub>; convention-free, any bounded boost with B<sub>max</sub> &#8818; 5.4</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>TEST-09 BTFR slope 3.35&plusmn;0.07 vs 3.75&plusmn;0.10 (3.3&sigma; with both uncertainties in quadrature; the &plusmn;0.07 on the prediction is stated on <Link href="/falsifiability" style={{ color: 'var(--color-accent-blue)' }}>Falsifiability</Link> and was missing here &mdash; without it the gap reads 4.0&sigma;). Kill fired at B<sub>max</sub> = 1/&Omega;<sub>m</sub> (|&Delta;n| = 0.41 &gt; 0.3); convention-dependent: the 2026-09-18 sweep finds it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub> (0.30, strict &gt; 0.3) or &Omega;<sub>m</sub>/&Omega;<sub>b</sub> (0.26); whether it stays in this count is pending the project lead</td><td style={{ padding: '0.4rem' }}>The asserted ceiling B<sub>max</sub>; convention-free, any bounded boost with B<sub>max</sub> &#8818; 5.4</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>TEST-10 dwarf f<sub>DM</sub> ceiling</td><td style={{ padding: '0.4rem' }}>The same asserted B<sub>max</sub> &mdash; corollary, not an independent root</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>RAR shape, &#x0394;BIC = +184 at &#x03B3;=2</td><td style={{ padding: '0.4rem' }}>The asserted &#x03B3;=2 pin <strong>in the acceleration-keyed realization</strong> (C as an implicit μ on g<sub>obs</sub> &mdash; target column added 2026-09-08). Free-&#x03B3; &rarr; 0.489 recovers MOND, so this refutes a pin, not a mechanism. The density-keyed C(&#x03C1;) is refuted by a different route: head-to-head &#x0394;BIC +2843 with &#x03B3; free, and on SPARC by placement at every point of the published grid (the Oort limit does <em>not</em> close it on a smoothed-density reading, 2026-09-09; read pointwise, the planets do &mdash; see the smoothing-length note under the fork) &mdash; and its registered globular-cluster test forked (<a href="#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>below</a>)</td><td style={{ padding: '0.4rem', color: '#f87171' }}>Framework-specific</td></tr>
-                <tr><td style={{ padding: '0.4rem' }}>Environment scatter, r&sup2; = 0.0001 (Session 177&apos;s registration, run as registered; filed on <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> as TEST-03s, a substitute for the never-run ALFALFA TEST-03. The research ledger labels this run &ldquo;TEST-08&rdquo;, which on this site is the Freeman-law card &mdash; an ID collision, flagged 2026-09-11)</td><td style={{ padding: '0.4rem' }}>The <em>registered</em> amplitude (S177: environment explains &gt;20% of RAR scatter, kill bar r&sup2; &lt; 0.09 &mdash; the claim and the kill bar bracket an undecided band, 0.09 &le; r&sup2; &lt; 0.20, where neither verdict fires; the measured value sits below both) &mdash; a number never derived from C(&#x03C1;). The equation&apos;s own ambient-density lever at SPARC outer radii is &le; 2&times;10<sup>&minus;3</sup> dex against ~0.1 dex of scatter, i.e. r&sup2; &asymp; 2&ndash;5&times;10<sup>&minus;4</sup> at most; the measured 1&times;10<sup>&minus;4</sup> is <em>consistent with the equation</em>. Reclassified 2026-09-05 (this row read &ldquo;the cleanest kill on the list&rdquo; until then; caught by a visitor researcher persona). The null stands as a permanent elimination of S177&apos;s claim and as a transferable result: the RAR is a universal local law to r&sup2; &lt; 10<sup>&minus;4</sup> against ambient density</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Registration-specific</td></tr>
+                <tr><td style={{ padding: '0.4rem' }}>Environment scatter, r&sup2; = 0.0001 (Session 177&apos;s registration, run as registered; filed on <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> as TEST-03s, a substitute for the never-run ALFALFA TEST-03. The research ledger labels this run &ldquo;TEST-08&rdquo;, which on this site is the Freeman-law card &mdash; an ID collision, flagged 2026-09-11)</td><td style={{ padding: '0.4rem' }}>The <em>registered</em> amplitude (S177: environment explains &gt;20% of RAR scatter, kill bar r&sup2; &lt; 0.09 &mdash; the claim and the kill bar bracket an undecided band, 0.09 &le; r&sup2; &lt; 0.20, where neither verdict fires; the measured value sits below both) &mdash; a number never derived from C(&#x03C1;). The equation&apos;s own ambient-density lever at SPARC outer radii is &le; 2&times;10<sup>&minus;3</sup> dex against ~0.1 dex of scatter, i.e. r&sup2; &asymp; 2&ndash;5&times;10<sup>&minus;4</sup> at most; the measured 1&times;10<sup>&minus;4</sup> is <em>consistent with the equation</em>. Reclassified 2026-09-05 (this row read &ldquo;the cleanest kill on the list&rdquo; until then; caught by a simulated-visitor researcher persona). The null stands as a permanent elimination of S177&apos;s claim and as a transferable result: the RAR is a universal local law to r&sup2; &lt; 10<sup>&minus;4</sup> against ambient density</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Registration-specific</td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>TEST-25 Cassini/SPARC, +17.95&sigma;</td><td style={{ padding: '0.4rem' }}>The RAR-preferred interpolating-function family &mdash; <strong>which MOND also uses</strong>. Published as Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781) at 8.7&sigma; &mdash; their figure marginalizes over a&#x2080;, M/L and RAR-fit uncertainty, which is why it is ~2&times; smaller than the +17.95&sigma; here (citation added 2026-09-06)</td><td style={{ padding: '0.4rem', color: '#fbbf24' }}>Inherited from MOND <strong style={{ color: '#f87171' }}>&mdash; contested 2026-09-10, see below</strong></td></tr>
                 <tr><td style={{ padding: '0.4rem' }}>Bell/CHSH substrate (Bet B1), S &le; 2.00</td><td style={{ padding: '0.4rem' }}>Local arm: Bell&apos;s theorem, illustrated. Nonlocal arms: two construction nulls &mdash; not a theorem about nonlocal no-signaling substrates, which Bell does not bound (Toner &amp; Bacon 2003 type untested; relabelled 2026-09-14) &mdash; this page calls it a &ldquo;pedagogical corollary&rdquo; elsewhere</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Construction check</td></tr>
                 <tr style={{ opacity: 0.8 }}><td style={{ padding: '0.4rem' }}><em>Not counted:</em> a&#x2080;(z) = cH(z)/2&#x03C0; vs the high-z RAR (Ciocan et al. 2026, arXiv:2604.22613)</td><td style={{ padding: '0.4rem' }}>The one prediction that structurally differs from MOND&apos;s constant a&#x2080;. Tested, and <strong>non-discriminating</strong>. On the anchor-free slope (a&#x2080; &prop; E(z)<sup>n</sup>; explorer 2026-10-10) Ciocan&apos;s bins give n = 0.71 &plusmn; 0.13 and the paper&apos;s own global line 1.15, so n = 1 (this prediction) sits between the paper&apos;s two estimators, and &#x039B;CDM+baryons simulations sit at n &asymp; 0.99 too (Mayer et al. 2023, MNRAS 518, 257): estimator-dominated and degenerate with &#x039B;CDM. Constant a&#x2080; (n = 0) is excluded by the bins at any level (5&#x03C3;). RC100 (n = 0.0 &plusmn; 0.5) is 1.4&#x03C3; from the bins; its error is too wide to test either. The level comparison depends on the anchor (four published a&#x2080;(0) values spread 69%; 0.5&#x03C3; on the McGaugh+2016 anchor). Ciocan&apos;s quoted errors are 95% CIs. Not counted by the rule that counts TEST-25: a refutation needs a failure condition stated before the comparison (TEST-25&apos;s was pre-registered); a&#x2080;(z) had none, so neither its level misses nor its slope position enters the tally (rule stated here 2026-10-10; slope and CI level added 2026-10-12; previously read &ldquo;anchor-dominated&rdquo;, &ldquo;no anchor-independent number&rdquo; and &ldquo;RC100 says the opposite&rdquo;). Listed here 2026-09-05 because it appeared on no ledger &mdash; see <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link> row 4</td><td style={{ padding: '0.4rem', color: '#94a3b8' }}>Non-discriminating</td></tr>
@@ -733,7 +733,7 @@ export default function HonestAssessment() {
               <ValidationBadge status="reparametrization" label="Dimensional Analysis" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              MOND&apos;s acceleration constant a&#x2080; related to cosmological parameters via a&#x2080; = cH&#x2080;/(2&#x03C0;). 13% error at H&#x2080; = 67.4 vs observed value. Against this framework&apos;s own SPARC fit the comparison changes but gets no sharper (added 2026-10-04, from a graduate-physics visitor): the scale the fit identifies is a₀′/&#x03B3; (the compander&apos;s deep-regime limit; 2a₀′ at &#x03B3; = ½). It stays at 1.07&ndash;1.09&times;10⁻¹⁰ across the whole &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 band while a₀′ itself moves 3.6&times;, and reads 1.16&ndash;1.18&times;10⁻¹⁰ under the velocity-&chi;² fits. cH₀/2&pi; sits 3&ndash;12% below it at H₀ = 67.4. Closing the gap needs H₀ &asymp; 69&ndash;70.5 for the &Upsilon;-sweep values (inside the Planck&ndash;SH0ES range) and &asymp; 75&ndash;76 for the velocity-&chi;² values (above SH0ES&apos;s 73), so only the low end is absorbed by the H₀ tension (corrected 2026-10-12: read &ldquo;inside the &plusmn;5% the H₀ tension allows&rdquo;, which a 12% gap is not; graduate visitor persona). Still Milgrom&apos;s 1983 coincidence, still a reparametrization (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>).
+              MOND&apos;s acceleration constant a&#x2080; related to cosmological parameters via a&#x2080; = cH&#x2080;/(2&#x03C0;). 13% error at H&#x2080; = 67.4 vs observed value. Against this framework&apos;s own SPARC fit the comparison changes but gets no sharper (added 2026-10-04, from a graduate-physics visitor): the scale the fit identifies is a₀′/&#x03B3; (the compander&apos;s deep-regime limit; 2a₀′ at &#x03B3; = ½). It stays at 1.07&ndash;1.09&times;10⁻¹⁰ across the whole &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 band while a₀′ itself moves 3.6&times;, and reads 1.16&ndash;1.18&times;10⁻¹⁰ under the velocity-&chi;² fits. cH₀/2&pi; sits 3&ndash;12% below it at H₀ = 67.4. Closing the gap needs H₀ &asymp; 69&ndash;70.5 for the &Upsilon;-sweep values (inside the Planck&ndash;SH0ES range) and &asymp; 75&ndash;76 for the velocity-&chi;² values (above SH0ES&apos;s 73), so only the low end is absorbed by the H₀ tension (corrected 2026-10-12: read &ldquo;inside the &plusmn;5% the H₀ tension allows&rdquo;, which a 12% gap is not; graduate simulated-visitor persona). Still Milgrom&apos;s 1983 coincidence, still a reparametrization (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>).
               This numerical coincidence has been noted since Milgrom (1983), and other frameworks (McCulloch 2007, Verlinde 2017,
               Smolin 2017) derive the same relation with the same geometric factor. The quantities c, H&#x2080;, and G are the only
               dimensionally relevant cosmological constants, and cH&#x2080; naturally has units of acceleration. Best classified as
@@ -778,7 +778,7 @@ export default function HonestAssessment() {
             <p style={{ color: 'var(--color-text-secondary)' }}>
               Surface density &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#8776; 119 M&#x2609;/pc&sup2;. &#8776;4% error vs
               Freeman&apos;s observed value (124 M&#x2609;/pc&sup2;) &mdash; corrected 2026-07-09 from a previously
-              stated 110 / 12% arithmetic error (two visitor personas independently caught it the same day).
+              stated 110 / 12% arithmetic error (two simulated-visitor personas independently caught it the same day).
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               Like a&#x2080; ~ cH&#x2080;, this is the only surface-density scale buildable from the available cosmological
@@ -892,7 +892,7 @@ export default function HonestAssessment() {
               Independently found three ways: archive Session 639 (2026-04-30) first traced the metric conflation;
               the explorer track&apos;s 2026-07-08 citation-walk closed the provenance chain (registered threshold was
               r&sup2; &lt; 0.09, which R&sup2; = 0.138 passes, and the catalog postdates the measurement by 15 days);
-              two visitor personas independently re-derived the (N, p) inconsistency on 2026-07-09. See the corrected{' '}
+              two simulated-visitor personas independently re-derived the (N, p) inconsistency on 2026-07-09. See the corrected{' '}
               <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>TEST-03</Link>{' '}
               and <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>TEST-05</Link>{' '}
               cards for the full trace. TEST-05, which does own the (R&sup2;=0.14, p=5&times;10<sup>&minus;6</sup>) result on
@@ -930,7 +930,7 @@ export default function HonestAssessment() {
               (the script solves g<sub>bar</sub> = g<sub>obs</sub>·tanh(γ ln(1 + g<sub>obs</sub>/a₀′)); verified in
               <code style={{ fontSize: '0.78rem' }}> sparc_tanhlog_profile.py</code>). So +184 refutes <strong>γ = 2 in the
               acceleration-keyed realization</strong> &mdash; MOND&apos;s own variable with a pinned return exponent
-              q = 2γ = 4 &mdash; and not the density-keyed C(ρ) the headline equation states. Two visitor personas
+              q = 2γ = 4 &mdash; and not the density-keyed C(ρ) the headline equation states. Two simulated-visitor personas
               (2026-09-08) caught that this page, <Link href="/dark-matter" style={{ color: '#f87171' }}>Dark Matter</Link>,
               the <Link href="/galaxy-plotter" style={{ color: '#f87171' }}>plotter</Link> and the landing scoreboard were all
               presenting +184 as the density-keyed kill while <Link href="/coherence-function" style={{ color: '#f87171' }}>Coherence
@@ -947,7 +947,7 @@ export default function HonestAssessment() {
               details on the <Link href="/tier-1-existing#TEST-02" style={{ color: '#f87171' }}>TEST-02 card</Link>). This is a
               second, SPARC-independent root for the same density-keyed kill, <em>not a seventh refutation</em>. Whether it becomes
               its own ledger row, or replaces the weaker environment registration (row #4) as the density-keyed entry, is
-              dp&apos;s call (added 2026-10-06; a researcher visitor persona found it missing from this page). Its one
+              the project lead&apos;s call (added 2026-10-06; a researcher simulated-visitor persona found it missing from this page). Its one
               registered per-object test is the globular-cluster fork <a href="#gc-fork" style={{ color: '#f87171' }}>below</a>.
               Lead with those; +184 is the right number attached to the wrong model.
             </p>
@@ -1066,7 +1066,7 @@ export default function HonestAssessment() {
               0.63&ndash;0.64 of the Galactic field a diffuse tracer feels at the window&apos;s edges. Halo-cluster and disc-giant
               kinematics agree on M(&lt;21&nbsp;kpc) to about 2.1σ against that (explorer 2026-09-15; estimator systematics unmodelled).
               Low-mass clusters also extend about 3× past L2&apos;s unbinding radius (post-hoc, soft data). Which dynamics the framework
-              means, L2 or L3, is not stated anywhere in the archive. That choice decides this fork, and it gates on dp.
+              means, L2 or L3, is not stated anywhere in the archive. That choice decides this fork, and it gates on the project lead.
               <br />&bull; <strong>Not modelled in either reading:</strong> potential escapers. These are stars that are energetically
               unbound but still inside the tidal radius, and they are the standard Newtonian explanation for flattened outer
               dispersion profiles (Küpper et al. 2010; Claydon, Gieles &amp; Zocchi 2017). They mimic exactly the outer-slope signal
@@ -1092,7 +1092,7 @@ export default function HonestAssessment() {
               acceleration-keyed gravity, and the discriminating variable is the external field effect:</strong> MOND with its
               EFE switched off scores like the density law. MOND survives these clusters <em>because of</em> the EFE, and a
               density-keyed law <em>read algebraically</em> (g = g<sub>N</sub>/C, exact for an isolated spherical cluster) has no
-              external field to appeal to. <em>Scope added 2026-09-16 (visitor researcher persona):</em> under the field equation
+              external field to appeal to. <em>Scope added 2026-09-16 (simulated-visitor researcher persona):</em> under the field equation
               ∇·[C∇Φ] = 4πGρ, which is linear in Φ, the Milky Way&apos;s field superposes and is <strong>refracted</strong> by
               the cluster&apos;s own C profile, a linear external-field dependence rather than MOND&apos;s nonlinear EFE. That is the L2 statement. Under L3 the internal residuals are 1&ndash;30 g<sub>ext</sub>, plus a quadratic term. These
               rows do not contain it, so &ldquo;EFE = 0 exactly&rdquo; describes the algebraic reading only. (This answers, by measurement, the question a visitor
@@ -1137,7 +1137,7 @@ export default function HonestAssessment() {
               M/L<sub>V</sub> = 1.2, beneath any 12 Gyr metal-poor population.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              <strong>What the verdict column rests on (stated 2026-09-11, visitor researcher persona).</strong>{' '}
+              <strong>What the verdict column rests on (stated 2026-09-11, simulated-visitor researcher persona).</strong>{' '}
               <strong>(i) The cutoffs were set at execution, not at registration.</strong> Session 611 registers a γ and no
               quantitative criterion. &ldquo;Passes&rdquo; = outer-slope mismatch no larger than MOND+EFE&apos;s;
               &ldquo;marginal&rdquo; = under twice it; &ldquo;excluded&rdquo; = more. That benchmark was chosen on 2026-09-07
@@ -1289,7 +1289,7 @@ export default function HonestAssessment() {
               toward <em>suppression</em>, the framework&apos;s own predicted direction. Reading LRG1 alone as
               &ldquo;sign-wrong regardless of which bin&rdquo; over-reads a single ~0.6σ bin against an ensemble that
               trends the other way. (Corrected 2026-07-02: a 2026-07-01 explorer re-execution and an independent
-              2026-07-02 visitor Pass&nbsp;4 researcher read both flagged the same overclaim.)
+              2026-07-02 simulated-visitor Pass&nbsp;4 researcher read both flagged the same overclaim.)
             </p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               <strong>Correction (2026-07-14): the registered kill criterion and the delivered verdict use
@@ -1325,7 +1325,7 @@ export default function HonestAssessment() {
               nobody has ever solved them for the growth history and compared. The gap is an unrun calculation,
               not a missing object &mdash; which makes it a task rather than an excuse.) The σ₈ discrepancy on its own predicted value
               (0.76 vs. 0.841) remains a real, if GR-conditioned, 2.4σ miss. (Found and verified: 2026-07-14
-              visitor Pass 3 and Pass 4, cross-checked against this page&apos;s own cited numbers before
+              simulated-visitor Pass 3 and Pass 4, cross-checked against this page&apos;s own cited numbers before
               editing.)
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
@@ -1352,7 +1352,7 @@ export default function HonestAssessment() {
               re-open policy below is unaffected — no DR2 growth datum exists yet to trigger it.
               <strong> DR2 power (2026-09-21):</strong> as adopted, the DR2 kill (branch B) fires with under 1%
               probability if &Lambda;CDM is true, so the near-certain DR2 outcome is &ldquo;underpowered&rdquo; again;
-              re-registering before the data gates on dp (arithmetic on{' '}
+              re-registering before the data gates on the project lead (arithmetic on{' '}
               <Link href="/tier-1-existing#TEST-04a" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 — TEST-04a</Link>).
               <strong> Do not confuse three DESI products:</strong> DR2 <em>BAO</em> (arXiv:2503.14738) published
               March 2025 and this program has already fitted it (the 2026-08-12 dark-energy likelihood: DR2 BAO +
@@ -1447,13 +1447,13 @@ export default function HonestAssessment() {
               S &equiv; 2.00 at every coupling strength (gauge-equivalent to relabeling the
               measurement angles &mdash; a local model in disguise). Global-clock construction:
               S up to 2.67, but only by introducing signaling.</strong> None of the three reaches the
-              Tsirelson bound (2&radic;2 &asymp; 2.83) without signaling. <strong>Scope (2026-09-11, visitor researcher
+              Tsirelson bound (2&radic;2 &asymp; 2.83) without signaling. <strong>Scope (2026-09-11, simulated-visitor researcher
               persona):</strong> that is a statement about three constructions, not about the substrate class. Toner &amp;
               Bacon (PRL 91, 187904, 2003) reproduce the singlet correlations exactly with local hidden variables plus one{' '}
               <em>hidden</em> bit of communication per trial and no observable signaling, and no such construction was built
               here. Stated accurately: purely local substrates are excluded by Bell&apos;s theorem (these runs illustrate it,
               they do not add to it); the two nonlocal constructions that were built failed; hidden-communication substrates
-              are untested. It stays in the ledger as a construction check, not as an executed refutation of the class.
+              are untested. It stays in the ledger as a construction check, not as an executed refutation of the class.{' '}<strong>The registered bet (research ledger B1, verbatim):</strong> &ldquo;a substrate measured only via an observer-pattern&apos;s phase-lock to a target (free CHSH setting choice) reproduces quantum correlations without superluminal signaling&rdquo;; &ldquo;refuted if observer-relative statistics obey CHSH S &le; 2 OR if violation only appears with signaling / superdeterminism.&rdquo; <strong>Run sizes:</strong> 400,000 trials per setting pair (local, nonlocal-grid and density-substrate scripts), 200,000 (global clock); the statistical error on S is about &plusmn;0.005 (binomial error on each correlator; the scripts do not report it, this is our estimate). The nonlocal-grid sweep reads 2.000&ndash;2.004 over ten couplings, i.e. 2 within error: a deterministic local strategy at the standard angles reaches exactly 2, which is what an angle relabelling leaves you with. The global-clock 2.67 is <em>not a Bell test</em>: once a model signals, any S up to 4 is available, so that arm shows only that this construction signals (setting-dependence of the far marginal 0.43). (Added 2026-10-13, from a simulated-visitor researcher persona who asked for the bet and the error bars.)
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Substrate-independence (run 2026-07-06):</strong> the same cap holds on the
@@ -1471,7 +1471,7 @@ export default function HonestAssessment() {
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>BTFR Slope (TEST-09) — FAILED, Kill Fired at B<sub>max</sub> = 1/&Omega;<sub>m</sub>; Convention-Dependent (Executed 2026-07-14, Ceiling Sweep 2026-09-18)</h3>
-              <ValidationBadge status="failed" label="Kill fired at B_max = 1/Ω_m (n = 3.35, |Δn| = 0.41 > 0.3); convention-dependent — does not fire at (Ω_m−Ω_b)/Ω_b (0.30) or Ω_m/Ω_b (0.26); convention-free: B_max ≲ 5.4 excluded; count pending dp" />
+              <ValidationBadge status="failed" label="Kill fired at B_max = 1/Ω_m (n = 3.35, |Δn| = 0.41 > 0.3); convention-dependent — does not fire at (Ω_m−Ω_b)/Ω_b (0.30) or Ω_m/Ω_b (0.26); convention-free: B_max ≲ 5.4 excluded; count pending the project lead" />
             </div>
             <PlainTerms>
               the heavier a galaxy, the faster its outer edge spins — and the exact mathematical relationship
@@ -1499,7 +1499,7 @@ export default function HonestAssessment() {
               the kill does not survive its own sweep. <strong>Convention-free result: a bounded-boost law with
               B<sub>max</sub> &#8818; 5.4 is excluded by the SPARC BTFR slope</strong> &mdash; the slope analogue of TEST-10&apos;s
               &ldquo;B<sub>max</sub> &#8818; 14 excluded by SPARC dwarfs&rdquo;. The Failed badge stands; whether TEST-09 stays in
-              the count of 6 is pending dp.
+              the count of 6 is pending the project lead.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Why the old &ldquo;MOND-shared / cannot discriminate&rdquo; badge was wrong in structure:</strong>{' '}
@@ -1753,7 +1753,7 @@ export default function HonestAssessment() {
               no <em>mechanism</em> for the tension has been worked out, neither an early-time nor a
               late-time fix. The correct badge is a non-discriminating soft constraint, not silence — and it is one
               more reading on which a₀ ≈ cH₀/2π looks like numerology rather than a derivation. Flagged
-              by the graduate-physics visitor pass; the same inversion had been noted internally
+              by the graduate-physics simulated-visitor pass; the same inversion had been noted internally
               2026-07-26 without reaching this page, which is the propagation break rather than the
               physics.
             </p>
@@ -1876,8 +1876,8 @@ export default function HonestAssessment() {
           wrong. The plotter&apos;s quadrature form
           v(r)&nbsp;=&nbsp;&radic;(v<sub>b</sub>&sup2;&nbsp;+&nbsp;[V<sub>flat</sub>&middot;C(&#x03C1;(r))]&sup2;)
           remains a plotting stand-in with no field equation behind it, and is labelled as such there.
-          (Original note 2026-07-14, visitor Pass 3 + Pass 4; corrected 2026-08-09 after explorer 2026-08-08
-          found Appendix D and visitor Pass 3 + Pass 4 independently flagged the AQUAL/TEST-25 contradiction.)
+          (Original note 2026-07-14, simulated-visitor Pass 3 + Pass 4; corrected 2026-08-09 after explorer 2026-08-08
+          found Appendix D and simulated-visitor Pass 3 + Pass 4 independently flagged the AQUAL/TEST-25 contradiction.)
         </p>
       </section>
 
@@ -1893,7 +1893,7 @@ export default function HonestAssessment() {
           <li><strong>Primordial non-Gaussianity (fNL):</strong> DESI and future surveys constrain non-Gaussianity from large-scale structure. No coherence-based prediction exists.</li>
         </ul>
         <p id="inherited-mond-problems" style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', scrollMarginTop: '5rem' }}>
-          <strong>MOND&apos;s known problems, inherited and made no better (added 2026-09-25, visitor researcher persona).</strong>{' '}
+          <strong>MOND&apos;s known problems, inherited and made no better (added 2026-09-25, simulated-visitor researcher persona).</strong>{' '}
           In galaxies the framework is MOND&apos;s interpolating function with a cap on the boost. A capped boost is never larger than
           MOND&apos;s anywhere, so the framework inherits MOND&apos;s standing problem in galaxy clusters (MOND still needs roughly twice the
           observed baryons there; Sanders 2003, Pointecouteau &amp; Silk 2005) and can only make it worse. The Bullet Cluster&apos;s

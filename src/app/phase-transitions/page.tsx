@@ -65,7 +65,7 @@ export default function PhaseTransitions() {
             clustering is an empirical fit result with no derivation behind it. Full retraction and the
             derivative on{' '}
             <Link href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>the γ boundary page</Link>.
-            (Visitor Pass 3 found the /gamma-boundary instance; this second one was found by sweeping.)
+            (Simulated-visitor Pass 3 found the /gamma-boundary instance; this second one was found by sweeping.)
           </p>
         </div>
         <p>

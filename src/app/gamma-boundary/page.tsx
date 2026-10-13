@@ -137,7 +137,7 @@ export default function GammaBoundary() {
             {' '}(a plain 2-parameter polynomial in Z matches C(ρ) to |Δr|&nbsp;≤&nbsp;0.07 &mdash; the high
             correlations track density-monotonicity, known chemistry, not C(ρ)-specific physics), the chemistry
             sector now has a fitted parameter, an unexplained clustering, and no mechanism.
-            (Visitor Pass 3, 2026-08-09; verified independently before the edit.)
+            (Simulated-visitor Pass 3, 2026-08-09; verified independently before the edit.)
           </p>
         </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>

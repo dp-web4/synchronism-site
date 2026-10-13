@@ -72,7 +72,7 @@ export default function QuantumPredictions() {
               novel predictive power. Collective dephasing and decoherence-free subspaces are the standard theory of
               exactly this effect (Zanardi &amp; Rasetti 1997, PRL 79, 3306; Lidar, Chuang &amp; Whaley 1998, PRL 81,
               2594), so this card is a reparametrization of that result, not a post-diction the framework earned.
-              (Badge read &ldquo;Post-diction&rdquo; until 2026-10-07; a researcher visitor persona supplied the prior art.)
+              (Badge read &ldquo;Post-diction&rdquo; until 2026-10-07; a researcher simulated-visitor persona supplied the prior art.)
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Kill criterion:</strong> If T&#x2082; does not scale as 1/(1&minus;c) across controlled

@@ -262,9 +262,10 @@ export default function CoherenceExplorer() {
               <strong style={{ color: '#f87171' }}> The default is dead on two fronts, not one (added 2026-09-05):</strong>{' '}
               &#x03B3; &#x2248; 0.49 reproduces MOND on SPARC <em>and</em> the same &#x03B3; fails the Cassini Solar-System
               bound &mdash; at 8.7&#x03C3; as published by Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781; marginalized
-              over a&#x2080;, M/L and RAR-fit uncertainty), and at ~18&#x03C3; in this site&apos;s unmarginalized run
-              (TEST-25 on <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>);
-              no &#x03B3; satisfies both. And the S-shape you see is a property of the log axis: with the density-keyed
+              over a&#x2080;, M/L and RAR-fit uncertainty), (TEST-25 on <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>). This site&apos;s
+              own unmarginalized run gives a larger number, but only by treating 2,807 rotation-curve points as independent; with
+              the galaxy as the unit its retained &#x03B3; range widens to 0.3&ndash;1.7, so the published 8.7&#x03C3; is the figure to quote.
+              At the &#x03B3; galaxies prefer the bound fails; the &#x03B3; values that pass Cassini (&#x2273; 1.5) are disfavoured by SPARC at ~2&#x03C3; per galaxy, not excluded. And the S-shape you see is a property of the log axis: with the density-keyed
               knee where the galaxy fits put it, SPARC samples x = &#x03C1;/&#x03C1;<sub>crit</sub> at a median of ~7&times;10<sup>&minus;5</sup>,
               where C = &#x03B3;x to 1.8% at worst (0.22&times; the data&apos;s precision on C) &mdash; a straight line. Toggle to
               linear and zoom to x &lt; 10<sup>&minus;3</sup> to see the regime the data actually occupy (explorer measurement 2026-09-03).
@@ -319,12 +320,12 @@ export default function CoherenceExplorer() {
               &minus;log<sub>10</sub>&#x03C1;<sub>crit</sub> and changes nothing about the curve&apos;s shape:
               the tool is a <strong>one-parameter family plus a pan control</strong>, presented as two parameters.
               That is not a UI nit, but it is not a &#x03B3;&#x2194;&#x03C1;<sub>crit</sub> degeneracy either (corrected 2026-09-29,
-              graduate-physics visitor persona): a pan and a shape parameter are separately identifiable once data cross the knee, and
+              graduate-physics simulated-visitor persona): a pan and a shape parameter are separately identifiable once data cross the knee, and
               SPARC does identify the shape (&#x03B3; = 2 and &#x03B3; = 0.489 differ by ΔBIC 184 with a&#x2080;&prime; profiled in both).
               What the galaxy fit cannot do is tell its shape from MOND&apos;s: the identified shape near &#x03B3; = &frac12; <em>is</em> the
               simple &#x03BC;, and in the deep regime only the combination &#x03B3;/a&#x2080;&prime; is measured. Read the abscissa as
               log<sub>10</sub>(&#x03C1;/&#x03C1;<sub>crit</sub>) &mdash; dimensionless &mdash; and the pan is
-              the only thing this slider can express. Raised by a visitor researcher pass.
+              the only thing this slider can express. Raised by a simulated-visitor researcher pass.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               <strong>Note:</strong> &#x03C1;<sub>crit</sub> is a <em>saturation knee</em>, not a critical density

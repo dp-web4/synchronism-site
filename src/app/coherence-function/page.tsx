@@ -75,7 +75,7 @@ export default function CoherenceFunction() {
           <Link href="/for-researchers" style={{ color: '#38bdf8' }}>For Researchers</Link>.
           <span style={{ display: 'block', marginTop: '0.5rem', color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
             <strong style={{ color: '#38bdf8' }}>Which variable the fit actually used (verified in the script 2026-09-08,
-            after two visitor personas showed the two readings give different force laws):</strong> the SPARC fit
+            after two simulated-visitor personas showed the two readings give different force laws):</strong> the SPARC fit
             that returns γ = 0.489 and the form-selection table use C as an <em>implicit</em> μ keyed on{' '}
             <strong>g<sub>obs</sub></strong> &mdash; it solves g<sub>bar</sub> = g<sub>obs</sub>·tanh(γ ln(1 + g<sub>obs</sub>/a₀′))
             for g<sub>obs</sub> (<code style={{ fontSize: '0.8rem' }}>simulations/sparc_tanhlog_profile.py</code>, line 85, research repo), with
@@ -91,7 +91,7 @@ export default function CoherenceFunction() {
 
         <div id="how-c-enters-dynamics" style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#38bdf8' }}>How C enters dynamics &mdash; in one place (added 2026-09-11).</strong>{' '}
-          C(&#x03C1;) on its own predicts nothing; it has to be coupled to gravity. A visitor graduate-physics persona
+          C(&#x03C1;) on its own predicts nothing; it has to be coupled to gravity. A simulated-visitor graduate-physics persona
           found that no equation page said how, so two of the six refutations could not be reconstructed from them.
           Four things differ from the headline equation above:
           <ol style={{ margin: '0.5rem 0 0', paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
@@ -100,7 +100,7 @@ export default function CoherenceFunction() {
               1/C boost unbounded; the floor is what creates the boost ceiling B &le; 1/f = 3.17. It is asserted, not derived.
               Which tests use which floored function is in the table below this list. (Until 2026-09-23 this item said
               &ldquo;galaxy tests use&rdquo; the floored <em>density</em>-keyed form. The two ceiling kills did not: they
-              evaluated an acceleration-keyed C with no tanh and no &#x03C1;. A visitor graduate-physics persona caught the
+              evaluated an acceleration-keyed C with no tanh and no &#x03C1;. A simulated-visitor graduate-physics persona caught the
               contradiction with item 4.)</li>
             <li><strong>The coupling: two live forms.</strong> (a) Algebraic g<sub>obs</sub> = g<sub>bar</sub>/C, the reading
               behind f<sub>DM</sub> = 1 &minus; C and the ledger. (b) The field equation
@@ -177,7 +177,7 @@ export default function CoherenceFunction() {
             M<sub>&#x2609;</sub>/pc&sup3;) sits at x = &#x03C1;/&#x03C1;<sub>crit</sub> ~ 10<sup>5</sup>&ndash;10<sup>7</sup>, where
             C &asymp; 1: under the division wiring (g<sub>bar</sub>/C, the one the cosmology uses) that is plain Newtonian gravity, no missing mass explained. So the two sectors share the function&apos;s form
             only, not its knee. Can one &#x03C1;<sub>crit</sub> serve both? On these numbers, no.
-            (Credit: a graduate-physics visitor persona, 2026-09-25.)
+            (Credit: a graduate-physics simulated-visitor persona, 2026-09-25.)
           </p>
           <p style={{ margin: '0.4rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             The wiring (how C enters gravity: division g<sub>bar</sub>/C, the field equation, or the plotter&apos;s quadrature
@@ -357,7 +357,7 @@ export default function CoherenceFunction() {
           1/&phi; exponent.)
           The density-keyed form never leaves its linear regime in any SPARC disk and loses head-to-head at
           &#x0394;BIC +2843 (archive 2026-08-24). Every number below is a statement about the acceleration-keyed
-          branch; two visitor personas read this table as the density law and could not reconcile it with the
+          branch; two simulated-visitor personas read this table as the density law and could not reconcile it with the
           straight line the Coherence Explorer shows &mdash; they were reading two models under one symbol.
           <table style={{ width: '100%', marginTop: '0.6rem', marginBottom: '0.6rem', borderCollapse: 'collapse', fontSize: '0.84rem' }}>
             <thead>

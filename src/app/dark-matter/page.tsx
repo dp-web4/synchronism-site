@@ -167,7 +167,7 @@ export default function DarkMatter() {
           &#x0394;BIC=+184 with &#x03B3;=2 pinned (with the 2,807 points treated as independent; scored by galaxy, 2026-09-29, the margin is ΔBIC ≈ +11, 1.6–2.2σ: disfavoured at the threshold, not decisive) &mdash; <em>target
           corrected 2026-09-08:</em> that number refutes the <strong>acceleration-keyed</strong> realization the fit actually
           ran, not the density-keyed C(&#x03C1;) this page describes; the density-keyed law loses <em>harder</em>, head-to-head
-          on SPARC at &#x0394;BIC +2843 with &#x03B3; free, and its floored form is capped by the boost ceiling &mdash; the BTFR slope kill fires at 3.3&#x03C3;, and SPARC&apos;s most
+          on SPARC at &#x0394;BIC +2843 with &#x03B3; free (a point-count figure; discounted ~20× for correlated points within a galaxy it is still ≈ +142, decisive under any convention), and its floored form is capped by the boost ceiling &mdash; the BTFR slope kill fires at 3.3&#x03C3;, and SPARC&apos;s most
           dark-matter-dominated disc needs a boost of 13.7 against a ceiling of 3.17 (the often-quoted &ldquo;69% of
           galaxies exceed the ceiling&rdquo; holds only under the underived 1/&Omega;<sub>m</sub> normalization; under
           &Omega;<sub>m</sub>/&Omega;<sub>b</sub> &asymp; 6.4 the median passes and the tail exceedance becomes
@@ -184,7 +184,7 @@ export default function DarkMatter() {
           publishes <strong>14,610</strong> (175 + 14,435 after the quality cut); the pre-cut pooling is
           14,760 (175 + 14,585). <em>(This caveat quoted the pre-cut 14,760 as though it were the published
           figure until 2026-09-07; the pooling warning was right, its arithmetic was one revision behind.
-          Flagged by two independent visitor personas.)</em> The warning stands either way: the large number
+          Flagged by two independent simulated-visitor personas.)</em> The warning stands either way: the large number
           is dominated by a test that never ran as registered, so it should not be read as the sample on
           which the mechanism was evaluated. This page
           is not waiting on clusters, the CMB, or large-scale structure to reach a verdict at galaxy scale

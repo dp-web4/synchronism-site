@@ -34,8 +34,11 @@ const steps = [
     γ in three lines, since the page meets it three times: (1) proposed γ = 2/√N_corr: failed. (2) Galaxies, with stars
     as uncorrelated units, γ = 2: loses to MOND on real rotation curves (only just, once whole galaxies rather than
     individual data points are counted). (3) γ fitted freely ≈ 0.5: this is exactly MOND's own formula, so it matches MOND
-    by construction. That is neither a win nor a loss; it means nothing new survives.`,
-    highlight: 'γ status: formula failed · γ = 2 loses to MOND · fitted γ ≈ 0.5 is MOND itself',
+    by construction. That is neither a win nor a loss; it means nothing new survives.
+    In everyday terms: "predicted" means the number was fixed before looking at the data; "fitted" means a knob was
+    turned until the curve matched. A fitted match is not evidence, and here the tuned knob simply lands on an older,
+    already-known theory (MOND). Matching MOND tells you the idea can reproduce MOND, not that it adds anything.`,
+    highlight: 'In short: the γ formula failed; γ = 2 loses to MOND; the fitted γ ≈ 0.5 is MOND itself.',
   },
   {
     title: 'Where γ ≈ 1',

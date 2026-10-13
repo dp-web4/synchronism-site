@@ -43,17 +43,19 @@ export default function Home() {
         </p>
 
         <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
-          <Link href="/first-encounter" className="btn-primary">
-            Start the 10-minute intro
+          {/* One primary start (2026-10-13): the hero button went to /first-encounter while the nav's Start Here and the
+              Beginner Path both start at step 1; two personas could not tell which was the real start. Labels come from paths.ts. */}
+          <Link href={learningPaths[0].steps[0].href} className="btn-primary">
+            Start here: {learningPaths[0].steps[0].title} ({learningPaths[0].steps[0].time})
           </Link>
-          <Link href="/honest-assessment" className="btn-secondary">
-            See What Failed
-          </Link>
-          <Link href="/why-synchronism"
+          <Link href={learningPaths[0].steps[1].href}
             style={{ display: 'inline-flex', alignItems: 'center', padding: '0.5rem 1rem', borderRadius: '0.375rem',
               background: 'rgba(16,185,129,0.12)', color: '#10b981', border: '1px solid rgba(16,185,129,0.35)',
               fontSize: '0.9rem', fontWeight: 500, textDecoration: 'none', transition: 'background 0.15s' }}>
-            Beginner Path &rarr;
+            Or skip to step 2: {learningPaths[0].steps[1].title} &rarr;
+          </Link>
+          <Link href="/honest-assessment" className="btn-secondary">
+            See What Failed
           </Link>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '0.75rem' }}>
@@ -281,7 +283,7 @@ export default function Home() {
               <strong style={{ color: '#f59e0b' }}>Methodology note:</strong>{' '}
               This site was developed via ~3,300 A2ACW (AI-to-AI Adversarial Collaboration Workshop) sessions (self-reported count; not independently regenerable &mdash; the archive&apos;s own tallies disagree by hundreds) &mdash; AI agents stress-testing each other&apos;s claims. The adversarial agents share the same training distribution and{' '}
               <strong>cannot substitute for out-of-distribution evaluation by domain experts.</strong>{' '}
-              The <strong>1.4% internal-consistency survival rate</strong> (&#x2248;47 candidate claims out of ~3,300 sessions survived the protocol&apos;s own consistency checks &mdash; not a discovery rate; denominator and breakdown on{' '}
+              The <strong>1.4% internal-consistency survival rate</strong> (&#x2248;47 candidate claims out of ~3,300 sessions survived the protocol&apos;s own consistency checks &mdash; not a discovery rate, and not a novelty measure: the protocol has never been calibrated on genuinely new results (its one benchmark flagged all six canonical discoveries as prior art, specificity 0/6, and the post-cutoff arm that could calibrate it is unrun); denominator and breakdown on{' '}
               <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>) and public failure log are the protocol&apos;s honest outputs.
               The audit number: <strong>0 of 9 audited claims survived</strong> (the 6 former &ldquo;Validated&rdquo; badges plus 3 swept later; demoted to Reparametrization, Failed, Audited-Negative or Speculative). <strong>The auditors were LLM agents, not an outside domain expert.</strong>{' '}
               Volume (~3,300 sessions) is not evidence, and neither is this count on its own: the demotions that hold rest on written identities and executed scripts, not on the audit verdict. Which of the 9 rest on an identity or script, and which only on the AI prior-art mapping, has not yet been tabulated claim by claim.{' '}
@@ -392,7 +394,7 @@ export default function Home() {
                     Three different coherence functions sit behind these rows: C keyed on g<sub>bar</sub> with a floor (TEST-09/10), C keyed on
                     g<sub>obs</sub> with no floor (RAR shape, TEST-25), and the density law C(&rho;) (only the environment row, through its registration). Whether TEST-25 is really
                     &ldquo;inherited&rdquo; is an open classification question on <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>; if it is
-                    resolved against the framework, three roots are framework-specific, not two. The exact independent count gates on dp (the
+                    resolved against the framework, three roots are framework-specific, not two. The exact independent count gates on the project lead (the
                     archive&apos;s own audit says &le;5).
                   </p>
                 </details>
@@ -423,7 +425,7 @@ export default function Home() {
               environment null refuted a registered amplitude the framework&apos;s own mechanism puts
               ~10<sup>&minus;3</sup> dex below the kill bar. What survives as framework-specific: the
               boost ceiling and the γ=2 pin &mdash; and the second refutes a parameter that was never
-              derived. Full list — BTFR slope (TEST-09, registered kill fired 3.3σ, 2026-07-14), dwarf DM fractions (TEST-10, SPARC&apos;s maximum observed f<sub>DM</sub> = 0.927 demands a boost B ≥ 13.7 that no candidate cosmic ratio supplies, 2026-07-15 &mdash; lead corrected 2026-08-10 from &ldquo;69% of SPARC above the 68.5% ceiling,&rdquo; which holds only under the underived convention B<sub>max</sub> = 1/Ω<sub>m</sub>; under Ω<sub>m</sub>/Ω<sub>b</sub> ≈ 6.40 the SPARC median passes), environment null (registered run r²=0.0001 vs &gt;20% claim), RAR shape (γ=2, ΔBIC=+184; conservative ≥+33; free-γ→MOND (Modified Newtonian Dynamics) &mdash; <em>target corrected 2026-09-08</em>: this kills the γ=2 pin in the <strong>acceleration-keyed</strong> realization the fit actually ran (C used as an implicit μ on g<sub>obs</sub>); the framework&apos;s stated <strong>density-keyed</strong> law C(ρ) is refuted separately &mdash; head-to-head on SPARC at ΔBIC +2843 with free γ, by the boost ceiling, and at the solar Oort limit &mdash; and its one registered per-object test (globular clusters, γ=2) came back a <em>fork</em>, not a kill; see <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>), Cassini/SPARC joint squeeze (TEST-25, +17.95σ, empty intersection between the SPARC-preferred γ and the Solar System bound), Bell/CHSH substrate test (Bet B1, refuted on both no-signaling arms) &mdash; the last two added 2026-07-30 after two visitor personas independently found them executed and badged Failed elsewhere on the site but missing from this count, with no stated reason</span>
+              derived. Full list — BTFR slope (TEST-09, registered kill fired 3.3σ, 2026-07-14), dwarf DM fractions (TEST-10, SPARC&apos;s maximum observed f<sub>DM</sub> = 0.927 demands a boost B ≥ 13.7 that no candidate cosmic ratio supplies, 2026-07-15 &mdash; lead corrected 2026-08-10 from &ldquo;69% of SPARC above the 68.5% ceiling,&rdquo; which holds only under the underived convention B<sub>max</sub> = 1/Ω<sub>m</sub>; under Ω<sub>m</sub>/Ω<sub>b</sub> ≈ 6.40 the SPARC median passes), environment null (registered run r²=0.0001 vs &gt;20% claim), RAR shape (γ=2, ΔBIC=+184; conservative ≥+33; free-γ→MOND (Modified Newtonian Dynamics) &mdash; <em>target corrected 2026-09-08</em>: this kills the γ=2 pin in the <strong>acceleration-keyed</strong> realization the fit actually ran (C used as an implicit μ on g<sub>obs</sub>); the framework&apos;s stated <strong>density-keyed</strong> law C(ρ) is refuted separately &mdash; head-to-head on SPARC at ΔBIC +2843 with free γ, by the boost ceiling, and at the solar Oort limit &mdash; and its one registered per-object test (globular clusters, γ=2) came back a <em>fork</em>, not a kill; see <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>), Cassini/SPARC joint squeeze (TEST-25, +17.95σ, empty intersection between the SPARC-preferred γ and the Solar System bound), Bell/CHSH substrate test (Bet B1, refuted on both no-signaling arms) &mdash; the last two added 2026-07-30 after two simulated-visitor personas independently found them executed and badged Failed elsewhere on the site but missing from this count, with no stated reason</span>
                   </div>
                 </details>
               </div>

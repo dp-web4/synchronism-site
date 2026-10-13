@@ -5,7 +5,7 @@ import { getAllTerms } from "@/lib/terms";
 import "./globals.css";
 
 // Derived, not hand-written: the nav tooltip read "30+ terms defined" while the glossary held
-// 72, which a docs-audit visitor pass (2026-07-27) caught as stale metadata under-selling the
+// 72, which a docs-audit simulated-visitor pass (2026-07-27) caught as stale metadata under-selling the
 // site's strongest reference page. Computing it removes the class of defect, not just the instance.
 const GLOSSARY_TERM_COUNT = getAllTerms().length;
 

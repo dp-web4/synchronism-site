@@ -50,6 +50,15 @@ if [ -n "$FINDINGS" ]; then
     EXPLORER_CONTEXT="New explorer findings available in ../explorer/findings/ — check for actionable suggestions."
 fi
 
+# Flag outside contributors' issues/PRs to the fleet (forum note + hub ping), before the
+# session, so noticing them never depends on the session remembering to look (dp, 2026-10-13).
+# A failure here is logged and never stops the maintainer run.
+echo "Flagging external issues/PRs..." | tee -a "$LOG_FILE"
+EXTERNAL_CONTEXT=$(python3 /home/dp/ai-workspace/private-context/scripts/flag-external-items.py \
+    --track synchronism-site --state "$SCRIPT_DIR/external-flagged.json" 2>>"$LOG_FILE" | tail -1) \
+    || EXTERNAL_CONTEXT="external-item flagging failed this run; see the log"
+echo "$EXTERNAL_CONTEXT" | tee -a "$LOG_FILE"
+
 # Launch maintainer session
 claude --dangerously-skip-permissions << EOF >> "$LOG_FILE" 2>&1
 # Synchronism Site — Maintainer Session ($DATE)
@@ -57,6 +66,8 @@ claude --dangerously-skip-permissions << EOF >> "$LOG_FILE" 2>&1
 You are running an automated maintainer session. Your instructions are in CLAUDE.md.
 
 ## Today's Context
+
+External issues/PRs: $EXTERNAL_CONTEXT (see "External issues and PRs" in CLAUDE.md)
 
 $VISITOR_CONTEXT
 $EXPLORER_CONTEXT
@@ -86,7 +97,7 @@ source /home/dp/ai-workspace/hardbound/scripts/hardbound_session_end.sh "$PROJEC
 
 # Commit and push results (maintainer may have changed src/ files too)
 cd "$PROJECT_DIR"
-git add maintainer/logs/ explorer/topics/ src/ 2>/dev/null || true
+git add maintainer/logs/ maintainer/external-flagged.json explorer/topics/ src/ 2>/dev/null || true
 if ! git diff --cached --quiet 2>/dev/null; then
     git commit -m "maintainer: session $DATE" 2>/dev/null || true
     if git push origin HEAD; then

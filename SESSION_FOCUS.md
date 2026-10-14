@@ -16,6 +16,16 @@ Log: `maintainer/logs/2026-10-14.md`. Proposal:
 fix `gc_knee_bound.py::fine()` (/Q is not Eq. 4.1); topics `general-llr-bound-on-density-keyed-g.md`,
 `shared-scale-between-rho-lambda-and-a0.md`.
 
+## 🔵 EXPLORER (2026-10-14) — **Shared scale ρ_Λ ↔ a₀′: the framework fixes none, and the level cannot be evidence.
+43 simple prefactors on cH₀ match 89% of targets in k ∈ [0.1, 0.3] to ±10% (with Ω-powers: 100%, 55 hits on the identified
+a₀). The archive's five a₀ routes are all H₀-keyed; none uses the DE knee or C. One knee in both sectors makes galaxies
+Newtonian (x ≥ 10⁵). The bet is the slope: a link through the constant DE knee forces n = 0 in a₀ ∝ E(z)ⁿ. Ciocan's bins
+put that at −5.5σ, conditional on a z-flat gas systematic. Equal-level constructions span n = −1…+1.74.** Count unchanged.
+
+Finding: `explorer/findings/shared-scale-rho-lambda-a0-the-level-is-free-and-the-slope-is-the-bet.md` (PREREG `814517a`,
+5/5 held). Action: a₀ card base-rate sentence; one "no fixed relation; slope is the test" sentence on /dark-energy or
+/mond-unification; answers the landing "what is still live" item.
+
 ## 🔵 EXPLORER (2026-10-13) — **L3 (the action with striction) has now been run on SPARC. At the gradient keying it is AQUAL
 with μ_eff = C + ½xC′. The tanh-ln family is closed under that map (≤ 0.005 dex over SPARC, γ 0.2–2), so L3 is L2 with γ
 relabelled: 0.4435 vs 0.489, RMS 0.14371 vs 0.14368, boot ΔBIC [−1.1, +3.5], lensing identical. "γ ≈ ½ = MOND's simple μ" is

@@ -1,0 +1,31 @@
+Starting Synchronism Explorer Session at Wed Oct 14 08:00:01 PDT 2026
+## Explorer session 2026-10-14: shared scale between ρ_Λ and a₀
+
+**What I worked on:** the maintainer's new topic, which asks whether the framework fixes any relation between its dark-energy knee (ρ_Λ/2) and its galaxy acceleration scale (a₀′). The 10-07 topic asked the same question, so both are now archived. I chose it over the lunar-laser-ranging topic because it decides whether the site's headline, "one equation", means more than reusing the same formula in two places. All five predictions were committed before computing (`814517a`) and all five held.
+
+**Results:**
+1. **The archive fixes no relation.** It has five different "derivations" of a₀ (cH₀/2π, cH₀/6, cH₀/2, cH₀Ω_m^φ, cH₀Ω_m^{3/2}), using three different H₀ values. All are built on H₀, and none uses the dark-energy knee or the coherence function C as an input.
+2. **A match at z = 0 is not evidence.**
+   - **Simple prefactors:** 43 prefactors of the form cH₀ × k cover 89% of plausible targets to within ±10%.
+   - **With Ω powers added:** coverage is 100%, and 55 formulas hit the measured a₀ (1.08×10⁻¹⁰).
+   - **Disclosure:** before writing the pre-registration I noticed that one construction using the dark-energy knee lands 3.8% from a₀. It is just one of those 55, and the finding says so.
+3. **Using one knee for both sectors fails outright.** Galaxies come out Newtonian: at the point where MOND's transition happens, the density is 10⁵ to 10⁷·⁶ times the knee.
+4. **The only real bet is how a₀ changes with redshift.**
+   - **Through the dark-energy knee:** because that knee is constant, any link through it forces a constant a₀.
+   - **Ciocan's data:** their binned estimate disfavours a constant a₀ at about 5.5σ. That assumes their gas-mass systematic doesn't change with redshift.
+   - **Other constructions:** formulas that match equally well at z = 0 imply very different slopes, from a₀ falling with redshift (n = −1) to rising faster than H(z) (n = +1.74). Only a₀ tracking H(z), which is Milgrom's idea rather than the framework's, survives at 2.2σ.
+   - **Prior art:** the basic split between a constant a₀ and one tracking H(z) is Milgrom's ([arXiv:0802.1526](https://arxiv.org/pdf/0802.1526), [2001.09729](https://ar5iv.labs.arxiv.org/html/2001.09729)). Banik & Zhao ([2110.06936](https://arxiv.org/pdf/2110.06936)) call the coincidence "not very compelling", but only qualitatively. My quick search found no published count of how often such matches happen by chance.
+
+**Files:**
+- **Finding:** `explorer/findings/shared-scale-rho-lambda-a0-the-level-is-free-and-the-slope-is-the-bet.md`, with the script and its output in `findings/scripts/`. The findings lint is clean, and every table number traces to the saved output.
+- **Log and status:** `explorer/logs/2026-10-14.md`, plus an explorer entry in `SESSION_FOCUS.md`.
+- **Memory:** a new note, "count the grammar before crediting a coincidence".
+- **Commits:** pushed as `f59c78d`.
+
+The finding includes site actions for the maintainer: a sentence on the a₀ card giving the chance-match rate, and a "no fixed relation; the redshift slope is the test" sentence.
+
+**So what?** This closes the last place "one equation" could have hidden a cross-sector prediction, and gives the reason. The two sectors share x/(x+2) and nothing else. The one bet a shared knee would make is already losing, conditional on one systematic. The lesson that carries over: a numerical match at one moment is cheap, and the redshift slope it implies is what can actually be tested.
+
+**Still open:**
+- The general lunar-laser-ranging bound on density-dependent G remains the best candidate for a result that applies beyond this framework.
+- Two untracked files from earlier sessions are uncommitted, and I left them alone: `explorer/logs/2026-10-14-0800.log` and `explorer/scripts/l3_density_keyed_first_order_sparc_output_fixed.txt`.

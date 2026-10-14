@@ -1,0 +1,41 @@
+Starting Synchronism Maintainer Session at Wed Oct 14 06:00:01 PDT 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+Session finished. Both repos are pushed (site `1ab8a7c`, research repo `05ffd4b1`), the build passes and the site lint is clean. The count stays at 6 and Bucket 0 at 0; no verdict changed.
+
+**WAKE.** Today's personas found no new physics. The algebra they rechecked by hand all held. Two items do reach the research record, and both are correct verdicts pinned to the wrong thing, so I wrote a proposal before fixing the site:
+- **"MOND's V⁻² excluded at ~10σ"** (on three pages and in the PREDICTIONS ρ_crit row). That 10σ is about the framework's own Jeans-construction knee, not MOND. MOND's transition density falls as V⁻² by construction on any sample obeying the BTFR, and this regression doesn't test it. As written, the sentence read as a 10σ result against MOND.
+- **"RG's permittivity is identical in closed form"** is true for the archive's floored Hill form C_Ω. It is not true for the headline tanh(γ ln(1+x)): the two agree only at γ = ½ with the knee doubled.
+
+**Something new I ran.** Checking the RG point showed that the globular-cluster "RG knee passes" row actually used the framework's function, not RG's. It also showed the repo has two different versions of RG's own Eq. 4.1: the explorer's code divides by Q, while the verbatim reading multiplies by Q, with the log base unstated. I wrote predictions into the script header first, and all three held.
+
+| RG reading | Result vs MOND+EFE (−0.093) | Verdict |
+|---|---|---|
+| ÷Q (explorer's code) | −0.070 | ok |
+| Q·ln | −0.083 | ok |
+| Q·log₁₀ | −0.114 | marginal |
+
+RG is never excluded, so the site's "RG is not excluded" stands. Whether it "passes" depends on the log base.
+
+**Site fixes:**
+- The 10σ sentence and RG sentence are rewritten. The "citable form" on /for-researchers is now the measured exponent instead of the withdrawn 240×–300,000×.
+- The globular-cluster table relabels the RG-knee row and adds a row for RG with its own permittivity.
+- The γ = 2 pin's "+184" is no longer called "excluded" or "categorically rejected" on the TEST-25 card or in the glossary. Scored by galaxy it is ≈ +11, at the threshold. The glossary's withdrawn ≥+33 is gone.
+- Explorer 10-13 actions 1–3 are applied (L3 scope clause, striction note, and "γ ≈ ½ is an L2 statement").
+- The Galaxy Plotter legend is in plain words.
+- /where-its-useful now carries SPINE's own note that the applied value is generative, not confirmatory. Without that note the page claimed more than SPINE does.
+- I added four lint rules. One gap: the positive control against the old version caught 5 of the 6 retired instances. The miss is the TEST-25 sentence, because that long line also contains correction notes that exempt it.
+
+**Back-annotation:** a dated block in PREDICTIONS.md, an inline correction on the ρ_crit row, and the proposal.
+
+**Explorer topics seeded:**
+- A general lunar-laser-ranging bound on any density-keyed G. This is the persona's estimate and still needs checking, but it may be the most reusable result in the record.
+- A shared scale linking ρ_Λ and a₀′. Both technical personas named this as the only place the equation could still make a distinct bet.
+
+**Needs your decision:**
+- Whether to send the RG material to the RG authors. That's outward-facing, so I haven't.
+- The post-cutoff A2ACW test, now requested for the sixth time.
+
+**Deferred:** the explorer's ÷Q code needs fixing in their lane. The first-use term auto-linker, the status-vocabulary work and the wiring × keying table are carried over.
+
+**So what?** Every catch today was one phrase or symbol standing for several things. The habit worth keeping: before saying anything about someone else's theory, read their equation verbatim and diff it against every version in the repo. I saved that as a memory.

@@ -394,7 +394,9 @@ export default function GalaxyRotation() {
               C(x) = x/(x+2) = &#x03BC;<sub>simple</sub>(x/2)
             </span>
             &mdash; MOND&apos;s simple interpolating function <em>for all x</em>, not just in the tail, with
-            a&#x2080; &rarr; 2a&#x2080;. <strong>x is defined once, and it matters which:</strong> here x = g<sub>obs</sub>/a&#x2080;&prime;, and
+            a&#x2080; &rarr; 2a&#x2080;. (&ldquo;&#x03B3; = &frac12;&rdquo; is an L2 statement, the algebraic or plain field-equation wiring. Under the
+            action-derived L3 wiring the effective μ is C + &frac12;xC&prime;, the tanh-log family maps onto itself, and the same
+            fitted curve sits at &#x03B3; &asymp; 0.44 with identical RMS; explorer 2026-10-13.) <strong>x is defined once, and it matters which:</strong> here x = g<sub>obs</sub>/a&#x2080;&prime;, and
             the fit solves g<sub>bar</sub> = g<sub>obs</sub>&middot;C(g<sub>obs</sub>/a&#x2080;&prime;) implicitly for g<sub>obs</sub>, the
             &#x03BC;-form. The identity does <em>not</em> survive keying on g<sub>bar</sub>: with g<sub>obs</sub> = g<sub>bar</sub>/C(g<sub>bar</sub>/a&#x2080;&prime;)
             at &#x03B3; = &frac12; one gets g<sub>obs</sub> = g<sub>bar</sub> + 2a&#x2080;&prime;, a constant acceleration offset (v&sup2; rising linearly

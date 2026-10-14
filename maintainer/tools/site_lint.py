@@ -23,6 +23,15 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-14 (maintainer): effective-N not propagated; Jeans-knee 10σ read as anti-MOND; RG identity scope
+    (r"MOND(&apos;|\\'|')s required V<sup>&minus;2</sup> at ~10", "2026-10-14",
+     "the 10σ excludes a V⁻² law for the Jeans-construction knee, not MOND's transition density (V⁻² by construction under the BTFR)"),
+    (r"separately excluded by SPARC alone|categorically rejected regardless", "2026-10-14",
+     "γ = 2 is ΔBIC +184 with points independent, ≈ +11 by galaxy (1.6–2.2σ): disfavoured at the threshold, not excluded"),
+    (r"permittivity identical to C<sub>&#x03A9;</sub> in closed form\. The Galaxy", "2026-10-14",
+     "RG's ε equals the floored Hill C_Ω, not the headline tanh(γ ln(1+x)); they coincide only at γ = ½ with the knee doubled"),
+    (r"kept here because this is its citable form", "2026-10-14",
+     "a withdrawn magnitude (240×–300,000×) cannot be the citable form; cite the measured exponent −0.16 ± 0.19"),
     # --- retired 2026-10-13 (maintainer): internal-process language read as outside authority; TEST-25 channel; DESI hedge; demo stats
     (r"(pending|gates on|gated on|routed to|GATES ON)\s+(dp|DP)\b|\bdp(\\'|&apos;|')s call|dp-gated|dp-adopted", "2026-10-13",
      "bare 'dp' is never introduced on most pages; write 'the project lead' (glossary #dp keeps the handle)"),

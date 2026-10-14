@@ -1,0 +1,22 @@
+N clusters 42; Newton -0.057; MOND+EFE -0.093
+
+## /Q (explorer, control)
+  E0 mean          rho_c =   0.0083  obs-pred -0.070  ok
+  E0 +1sig rho_c   rho_c =   0.0158  obs-pred -0.088  ok
+  E0 -1sig rho_c   rho_c =   0.0052  obs-pred -0.063  ok
+  eps0 0.20        rho_c =   0.0083  obs-pred -0.067  ok
+  eps0 = Omega_m   rho_c =   0.0083  obs-pred -0.065  ok
+
+## Q*ln (verbatim, ln)
+  E0 mean          rho_c =   0.0083  obs-pred -0.083  ok
+  E0 +1sig rho_c   rho_c =   0.0158  obs-pred -0.101  marginal
+  E0 -1sig rho_c   rho_c =   0.0052  obs-pred -0.075  ok
+  eps0 0.20        rho_c =   0.0083  obs-pred -0.079  ok
+  eps0 = Omega_m   rho_c =   0.0083  obs-pred -0.075  ok
+
+## Q*log10 (verbatim, log10)
+  E0 mean          rho_c =   0.0083  obs-pred -0.114  marginal
+  E0 +1sig rho_c   rho_c =   0.0158  obs-pred -0.127  marginal
+  E0 -1sig rho_c   rho_c =   0.0052  obs-pred -0.105  marginal
+  eps0 0.20        rho_c =   0.0083  obs-pred -0.105  marginal
+  eps0 = Omega_m   rho_c =   0.0083  obs-pred -0.097  marginal

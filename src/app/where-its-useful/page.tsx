@@ -65,6 +65,21 @@ export default function WhereItsUseful() {
           </p>
         </div>
 
+        <div style={{ padding: '0.85rem 1.1rem', background: 'rgba(245,158,11,0.07)', borderRadius: '6px', borderLeft: '3px solid #f59e0b', marginBottom: '1.75rem' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.92rem', margin: 0 }}>
+            <strong>What kind of value this is: generative, not confirmatory.</strong> The research archive&apos;s own
+            canonical page (SPINE.md, precision note of 2026-06-24) applies the framework&apos;s productive-vs-degenerate test
+            to this section. MRH is, per its own foundation document, an extension of the Markov blanket: a weighted, typed,
+            hierarchical relevance graph. It is a productive synthesis and is genuinely used, but it is not a novel primitive,
+            and it works <em>whether or not</em> the physics is true (it fits the Free Energy Principle just as well). So the
+            code below shows that the vocabulary is usable for design. It is not evidence for the physics, and &ldquo;not an
+            analogy&rdquo; below means the software uses the same word and structure, not that the decoherence-interpretation
+            MRH of the physics pages and the RDF context-scope have been shown to be one thing. No test distinguishing those
+            two readings has been proposed. (Box added 2026-10-14. The page had carried SPINE&apos;s main text without its
+            precision note, and a simulated-visitor researcher persona read it as the one promotional page on the site.)
+          </p>
+        </div>
+
         <h2>What it&apos;s already good for</h2>
         <p>
           The proof here isn&apos;t a paper; it&apos;s running code. Each row below is a Synchronism concept
@@ -115,7 +130,7 @@ export default function WhereItsUseful() {
         </div>
 
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-          This is delivered, demonstrable value on the <strong>applied</strong> axis (design ontology),
+          This is delivered value on the <strong>applied</strong> axis (design ontology; generative, see the box above),
           explicitly distinct from the <strong>physics</strong> axis (which reads zero-confirmed). For the
           physics side, see the honest ledger; for the foundations these applications draw on, see the
           fundamentals.

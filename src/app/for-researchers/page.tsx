@@ -20,11 +20,15 @@ export default function ForResearchers() {
           <strong>Is any prediction that differs from MOND or &Lambda;CDM still alive?</strong> No, within the registered
           tests and the readings run so far. Every prediction that differed sits in a branch already excluded (the
           density-keyed C<sub>&rho;</sub>: environment null, &Delta;BIC +2843 on SPARC, lunar laser ranging), and every surviving
-          branch is nested in its parent: the galaxy fit is MOND&apos;s simple interpolating function, the dark-energy sector is
+          branch is nested in its parent: the galaxy fit is MOND&apos;s simple interpolating function (at &#x03B3; &asymp; &frac12; under the L2 field equation; the action-derived L3 draws the same curve at &#x03B3; &asymp; 0.44), the dark-energy sector is
           &Lambda;CDM at &gamma; = &frac12; (or Cardassian/wCDM-degenerate off it). Scope: this covers the 26 registered tests and the
           keyings and wirings executed; it does not cover the unbuilt hidden-communication substrates (Bell), door #3
-          (secular / time-domain observables, a direction with no registered bet), or the never-run L3 (striction) dynamics
-          on SPARC. (Sentence added 2026-10-13; the ledger states the same as &ldquo;no registered test has a branch that moves
+          (secular / time-domain observables, a direction with no registered bet), or density-keyed L3 (striction) dynamics
+          where the knee sits inside discs. There the striction exceeds gravity (7&ndash;14&times; at first order), so the
+          disc&apos;s equilibrium has to be re-solved before any rotation curve can be scored. The rest of L3 has now been run
+          (explorer 2026-10-13): at the gradient keying L3 is AQUAL with &#x03B3; relabelled to 0.44, indistinguishable from L2
+          on SPARC and lensing, and at the framework&apos;s own density knee (0.029&nbsp;V&sup2;) it equals L2 to &lt;&nbsp;0.1%.
+          (Scope clause updated 2026-10-14; it used to say L3 had never been run on SPARC.) (Sentence added 2026-10-13; the ledger states the same as &ldquo;no registered test has a branch that moves
           the confirmed-novel count&rdquo;.)
         </p>
         <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
@@ -341,12 +345,14 @@ export default function ForResearchers() {
             local volumetric density must <em>fall</em> as V<sup>&minus;2</sup> to track an a&#x2080;
             acceleration threshold (forced by the BTFR: r<sub>t</sub> &prop; V&sup2;, M &prop; V&#x2074;,
             so &rho;<sub>t</sub> &prop; a&#x2080;&sup2;/GV&sup2;); the framework asserts
-            &rho;<sub>crit</sub> &prop; V<sup>+2</sup> — inverted sign, 240&times;&ndash;300,000&times;
-            magnitude error growing with V. This is profile-independent within the family it covers.{' '}
+            &rho;<sub>crit</sub> &prop; V<sup>+2</sup>; the Jeans-construction knee measured on SPARC carries exponent
+            &minus;0.16 &plusmn; 0.19, so V<sup>+2</sup> is excluded at ~11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap). This is profile-independent within the family it covers.
+            (Citable form restated 2026-10-14. The 2026-07-02 form read &ldquo;inverted sign, 240&times;&ndash;300,000&times; magnitude
+            error&rdquo;; that magnitude is withdrawn, see below, and a withdrawn figure cannot be the citable form.){' '}
             <strong>Measured since (2026-08-27; archive ledger row restated 2026-08-28):</strong> on SPARC the knee
-            carries no velocity exponent at all; V<sup>+2</sup> is excluded at about 11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap), and the BTFR-forced V<sup>&minus;2</sup> at about 10&sigma; by the same measured exponent (&minus;0.16 &plusmn; 0.19): no velocity scaling of a density knee reproduces the BTFR. That figure is for the forward regression of disc surface density on V, which is the question a law &#x03C1;<sub>crit</sub>(V) poses; the inverse and orthogonal fits answer different questions and would give about V<sup>+2</sup>, and the gap between them is the intrinsic scatter of real galaxies (r = 0.64; explorer finding 2026-08-27). The refutation stands as
+            carries no velocity exponent at all; V<sup>+2</sup> is excluded at about 11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap), and a V<sup>&minus;2</sup> law <em>for this knee estimator</em> at about 10&sigma; by the same measured exponent (&minus;0.16 &plusmn; 0.19): the Jeans construction cannot be the a&#x2080; knee. This does not test MOND. MOND&apos;s transition density (mean enclosed density where g<sub>bar</sub> = a&#x2080;) is a different object and scales as V<sup>&minus;2</sup> by construction under the BTFR. That figure is for the forward regression of disc surface density on V, which is the question a law &#x03C1;<sub>crit</sub>(V) poses; the inverse and orthogonal fits answer different questions and would give about V<sup>+2</sup>, and the gap between them is the intrinsic scatter of real galaxies (r = 0.64; explorer finding 2026-08-27). The refutation stands as
             a <em>wrong exponent</em>. &ldquo;Inverted sign&rdquo; and the 240&times;&ndash;300,000&times; figures are the
-            pre-measurement statement, kept here because this is its citable form.{' '}
+            pre-measurement statement, kept in the parenthesis above as history only.{' '}
             <strong>Scope (corrected 2026-07-27; see revision notes):</strong> the result does not hold for{' '}
             <em>any</em> local-&rho; MOND mimic — see the counterexample
             paragraph below. It holds for local-&rho; schemes that modulate the force{' '}

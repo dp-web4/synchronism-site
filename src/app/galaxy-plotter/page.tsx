@@ -683,20 +683,25 @@ export default function GalaxyPlotter() {
 
             {/* Legend */}
             <circle cx={pad.left + 20} cy={pad.top + 15} r="4" fill="#38bdf8" />
-            <text x={pad.left + 30} y={pad.top + 19} fill="#38bdf8" fontSize="10">Observed</text>
+            <text x={pad.left + 30} y={pad.top + 19} fill="#38bdf8" fontSize="10">Observed (what telescopes measure)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 30} x2={pad.left + 20 + 8} y2={pad.top + 30} stroke="#8b5cf6" strokeWidth="2.5" />
-            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">Synchronism, division reading (failed): g = g<tspan baselineShift="sub" fontSize="7">bar</tspan>/C, C = &#x03A9;<tspan baselineShift="sub" fontSize="7">m</tspan> + (1&minus;&#x03A9;<tspan baselineShift="sub" fontSize="7">m</tspan>)C<tspan baselineShift="sub" fontSize="7">&#x03C1;</tspan>, &#x03B3;=2 (max C<tspan baselineShift="sub" fontSize="7">&#x03C1;</tspan> here: {maxC.toFixed(3)}, so a flat 3.17&times; boost, Newtonian shape)</text>
+            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">This framework&apos;s equation, the tested reading (failed): Newton&apos;s shape scaled up {(1/0.315).toFixed(2)}&times;</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#c4b5fd" strokeWidth="1.5" strokeDasharray="3 3" />
-            <text x={pad.left + 30} y={pad.top + 49} fill="#c4b5fd" fontSize="10">Same C<tspan baselineShift="sub" fontSize="7">&#x03C1;</tspan>, quadrature reading (untested display): v&sup2; = v<tspan baselineShift="sub" fontSize="7">b</tspan>&sup2; + (V<tspan baselineShift="sub" fontSize="7">flat</tspan>&middot;C<tspan baselineShift="sub" fontSize="7">&#x03C1;</tspan>)&sup2;, inert at C<tspan baselineShift="sub" fontSize="7">&#x03C1;</tspan> &asymp; {maxC.toFixed(3)}</text>
+            <text x={pad.left + 30} y={pad.top + 49} fill="#c4b5fd" fontSize="10">Same equation, an untested display reading: no visible effect here</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />
-            <text x={pad.left + 30} y={pad.top + 64} fill="#22c55e" fontSize="10">MOND, the rival theory (simple-&#x03BD; of Famaey &amp; Binney 2005; BTFR mass; levels off near 0.93 V_flat)</text>
+            <text x={pad.left + 30} y={pad.top + 64} fill="#22c55e" fontSize="10">MOND, the rival theory (gravity changes in weak fields)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 75} x2={pad.left + 20 + 8} y2={pad.top + 75} stroke="#6b7280" strokeWidth="1.5" strokeDasharray="3 2" />
-            <text x={pad.left + 30} y={pad.top + 79} fill="#6b7280" fontSize="10">Newton, visible matter only (toy disk)</text>
+            <text x={pad.left + 30} y={pad.top + 79} fill="#6b7280" fontSize="10">Newton, visible matter only (no dark matter, no change to gravity)</text>
             {showStandIn && <>
               <line x1={pad.left + 20 - 8} y1={pad.top + 90} x2={pad.left + 20 + 8} y2={pad.top + 90} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.75" />
               <text x={pad.left + 30} y={pad.top + 94} fill="#f59e0b" fontSize="10" opacity="0.9">NOT the theory — illustration stand-in: hand-drawn to show what a working boost would look like</text>
             </>}
           </svg>
+          <p style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', margin: '0.4rem 0 0' }}>
+            Legend in plain words (shortened 2026-10-14 after a beginner simulated-visitor pass could not tell which line was the theory).
+            The technical definition of each curve (division vs quadrature reading, the &#x03A9;<sub>m</sub> floor, max C<sub>&#x03C1;</sub> on this disk = {maxC.toFixed(3)},
+            the simple-&#x03BD; MOND function and its BTFR mass) is in the &ldquo;Reading this plot&rdquo; list and the formula box on this page.
+          </p>
         </div>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>

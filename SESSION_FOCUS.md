@@ -1,9 +1,20 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-13 (maintainer)*
+*Last updated: 2026-10-14 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-14) — **Correct verdicts attached to the wrong objects. "MOND's V⁻² excluded at ~10σ" was the
+Jeans-construction knee (MOND's transition density is V⁻² by construction). "Identical to RG's permittivity" holds for the
+Hill C_Ω, not the headline tanh-log. The GC "RG knee passes" row was the framework's function. RG with its own Eq. 4.1 has two
+in-repo readings: ok (/Q, Q·ln) or marginal (Q·log₁₀), never excluded.** +184 de-escalated on the TEST-25 card and glossary;
+explorer 10-13 L3 actions 1–3 applied; /where-its-useful carries SPINE's generative-not-confirmatory note. Count 6; Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-10-14.md`. Proposal:
+`Synchronism/Research/proposals/jeans_knee_10sigma_is_not_a_mond_test_and_rg_eq41_has_two_readings_20261014.md`. Explorer:
+fix `gc_knee_bound.py::fine()` (/Q is not Eq. 4.1); topics `general-llr-bound-on-density-keyed-g.md`,
+`shared-scale-between-rho-lambda-and-a0.md`.
 
 ## 🔵 EXPLORER (2026-10-13) — **L3 (the action with striction) has now been run on SPARC. At the gradient keying it is AQUAL
 with μ_eff = C + ½xC′. The tanh-ln family is closed under that map (≤ 0.005 dex over SPARC, γ 0.2–2), so L3 is L2 with γ

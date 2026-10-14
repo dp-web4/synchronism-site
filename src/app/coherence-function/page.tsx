@@ -108,7 +108,14 @@ export default function CoherenceFunction() {
               In a thin disc the &nabla;C&middot;&nabla;&Phi; term refracts field lines and the two differ by up to 5.9&times;
               (bounded by the ceiling) once the knee sits inside the disc; at this framework&apos;s own knee, which never enters
               a disc, they coincide. Form (b) is <strong>Refracted Gravity&apos;s field equation</strong> (Matsakos &amp; Diaferio
-              2016), with a permittivity identical to C<sub>&#x03A9;</sub> in closed form. The Galaxy Curve Plotter&apos;s
+              2016). RG&apos;s permittivity is a floored Hill switch, &#x03B5; = &#x03B5;<sub>0</sub> + (1&minus;&#x03B5;<sub>0</sub>)&middot;y<sup>p</sup>/(1+y<sup>p</sup>)
+              with y = &#x03C1;/&#x03C1;<sub>c</sub>. That is identical in closed form to the archive&apos;s floored Hill form C<sub>&#x03A9;</sub>, but
+              <em>not</em> to the headline tanh(&#x03B3;&middot;ln(1+x)) on this page. The two coincide only at &#x03B3; = &frac12; (Hill p = 1,
+              knee doubled, &#x03C1;<sub>c</sub> = 2&#x03C1;<sub>crit</sub>). At &#x03B3; = 2 and x = 1 the headline form gives 0.88 and RG&apos;s
+              shape gives 0.06 (p = 4) or 0.5 (knee not doubled); at small x one is linear and the other goes as x<sup>p</sup>.
+              So &ldquo;same field equation&rdquo; holds, and &ldquo;same permittivity&rdquo; holds only at &#x03B3; = &frac12;. (Corrected 2026-10-14.
+              The sentence said &ldquo;identical to C<sub>&#x03A9;</sub> in closed form&rdquo; without saying C<sub>&#x03A9;</sub> is not the
+              headline form, and a simulated-visitor graduate persona checked it against the headline form.) The Galaxy Curve Plotter&apos;s
               v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C)&sup2; is a display branch with the opposite orientation
               (small C = no boost) and says so on its page.</li>
             <li><strong>The argument: two live forms.</strong> The stated law keys C on local density &#x03C1;. Several fits key
@@ -123,7 +130,10 @@ export default function CoherenceFunction() {
               &Delta;BIC +2843: density-keyed, &#x03B3; free. The 2026-09-08/09 SPARC knee grid: density-keyed, floored, form (b)
               solved in disc geometry. Globular clusters: density-keyed under (a) on spherical Jeans models, where (a) and (b)
               agree. Not in any of them: the striction force that a <em>variational</em> version of (b) adds (see{' '}
-              <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>).</li>
+              <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>). At the framework&apos;s
+              own knee (0.029&nbsp;V&sup2;) the radial striction is ~10<sup>&minus;5</sup> of gravity, so these verdicts stand under that
+              variational version too (first order, fixed disc; explorer 2026-10-13). Knees placed inside discs are a different case: there
+              the striction exceeds gravity and the disc&apos;s equilibrium is not yet solved.</li>
           </ol>
           <p style={{ margin: '0.75rem 0 0.35rem', fontWeight: 600 }}>Which C, in one table (added 2026-09-23)</p>
           <div style={{ overflowX: 'auto' }}>

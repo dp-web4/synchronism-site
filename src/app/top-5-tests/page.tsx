@@ -25,7 +25,7 @@ const pendingTests = [
     id: 'TEST-15',
     tier: 'Tier 3',
     cost: '$1M–$5M',
-    why: 'GW170817 already constrains Synchronism to GR-equivalent at −3×10⁻¹⁵ < Δc/c < +7×10⁻¹⁶ (LIGO/Virgo/Fermi/INTEGRAL 2017; Baker et al. 2017; the bound is asymmetric). Synchronism is consistent with GR\'s exact-zero prediction — meaning this constraint was passed vacuously. This test discriminates only if Synchronism predicts a positive signal above zero, which it does not currently. Listed to track if a positive-signal prediction is added.',
+    why: 'GW170817 already constrains Synchronism to GR-equivalent at −3×10⁻¹⁵ < Δc/c < +7×10⁻¹⁶ (bound: Abbott et al. 2017, ApJL 848, L13 (LIGO/Virgo/Fermi/INTEGRAL); dark-energy implications: Baker et al. 2017; the bound is asymmetric). Synchronism is consistent with GR\'s exact-zero prediction — meaning this constraint was passed vacuously. This test discriminates only if Synchronism predicts a positive signal above zero, which it does not currently. Listed to track if a positive-signal prediction is added.',
     kill: 'No correlation at 10⁻¹⁶ level after 20+ events (assumes ~20 neutron-star mergers with electromagnetic counterparts; one has been seen since 2017, so this criterion has no realistic rate to be tested at)',
     color: 'var(--color-accent-violet)',
   },
@@ -35,7 +35,8 @@ const pendingTests = [
     id: 'TEST-07',
     tier: 'Tier 1*',
     cost: '$0',
-    why: 'Candidate only — derivation pending. The ~500 Mpc scale has not been derived from the framework\'s parameters. The /cosmic-interference page explicitly states "this is not a prediction in the scientific sense." Listed here to track progress; if the scale is derived from first principles, it would be unique to Synchronism. Until then, not yet a decisive test.',
+    speculative: true,
+    why: 'Speculative — the scale is underived, and an underived scale is not a prediction. The ~500 Mpc scale has not been derived from the framework\'s parameters; the earlier λ ~ 500 Mpc derivation was refuted (a dimensional error; PREDICTIONS Bucket 2, Session 632). The /cosmic-interference page explicitly states "this is not a prediction in the scientific sense." Any such feature would also have to be separated from the BAO scale (~150 Mpc), which standard cosmology already puts in the galaxy distribution. Listed here to track progress; if the scale is derived from first principles, it would be unique to Synchronism. Until then, not a decisive test.',
     kill: 'No oscillations above 3σ out to 2000 Mpc',
     color: '#f59e0b',
   },
@@ -239,7 +240,9 @@ export default function Top5Tests() {
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
                     <h3 style={{ fontSize: '1rem' }}>{t.name}</h3>
                     <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                      <span style={{ color: '#f59e0b', fontFamily: 'monospace', fontSize: '0.8rem' }}>Candidate</span>
+                      {'speculative' in t && t.speculative
+                        ? <ValidationBadge status="speculative" label="Speculative — scale underived" />
+                        : <span style={{ color: '#f59e0b', fontFamily: 'monospace', fontSize: '0.8rem' }}>Candidate</span>}
                       <span style={{ color: 'var(--color-text-muted)', fontFamily: 'monospace', fontSize: '0.8rem' }}>{t.tier}</span>
                     </div>
                   </div>
@@ -315,7 +318,7 @@ export default function Top5Tests() {
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
             (This card said until 2026-08-11 that &ldquo;the immediate discriminating work shifts to
             TEST-02&rdquo; — a test closed as self-eliminating higher on this same page. * TEST-15 remains
-            monitoring-only; TEST-07 has no derivation — candidate only.
+            monitoring-only; TEST-07 has no derivation — speculative, not a prediction.
             <Link href="/cosmic-interference" style={{ color: 'var(--color-accent-blue)', marginLeft: '0.25rem' }}>See derivation status &rarr;</Link>)
           </p>
         </div>

@@ -107,8 +107,10 @@ export default function FreemansLaw() {
         <p>
           In Synchronism, both a&#x2080; and &#x03A3;&#x2080; emerge from the same cosmological
           parameters (c, H&#x2080;, G). They are two faces of the same coherence threshold.
-          Session #89 derived &#x03A3;&#x2080; independently; Session #91 showed it is consistent
-          with the a&#x2080; derivation from Sessions #87&ndash;88.
+          Session #89 wrote &#x03A3;&#x2080; down from those constants, and Session #91 found it consistent with the
+          a&#x2080; relation of Sessions #87&ndash;88. That consistency is guaranteed, not tested: &#x03A3;&#x2080; =
+          a&#x2080;/(2&#x03C0;G) is the same number rewritten (wording corrected 2026-10-15; it used to say Session #89
+          &ldquo;derived &#x03A3;&#x2080; independently&rdquo;).
         </p>
 
         <h2>Honest Caveat</h2>

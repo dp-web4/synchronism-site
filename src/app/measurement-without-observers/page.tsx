@@ -13,7 +13,7 @@ export default function MeasurementWithoutObservers() {
       <Breadcrumbs currentPath="/measurement-without-observers" />
       <PathNav currentPath="/measurement-without-observers" />
       <h1>Measurement Without Observers</h1>
-      <ValidationBadge status="speculative" label="Interpretive Overlay on Decoherence — No Differing Prediction; 6 Protocols Under Runnability Audit" />
+      <ValidationBadge status="speculative" label="Interpretive Overlay on Decoherence — No Differing Prediction; 6 Experiment Classes (not protocols)" />
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
         <strong>Status in one line (added 2026-10-10):</strong> an interpretation with no rate equation. There is no decoherence
         rate, no Lindblad form, and no apparatus calibrated to N<sub>corr</sub>; the one quantitative item on the site&apos;s quantum
@@ -170,7 +170,7 @@ export default function MeasurementWithoutObservers() {
           an apparatus. The one rate the framework&apos;s own substrate suggests, intrinsic decoherence from Planck-scale diffusion, was checked
           against the heat budget of ordinary matter (explorer, 2026-09-27): at that diffusion constant a hydrogen atom would be heated at
           2&times;10⁻⁴ eV/s, so the bound-state limit is 15&ndash;30 orders of magnitude below the natural value (prior art: Pearle &amp; Squires 1994;
-          Donadi et al. 2021), which is where CSL and Di&oacute;si&ndash;Penrose bounds bite. Any rate assigned here inherits those bounds.
+          Donadi et al. 2021), which is where CSL and Di&oacute;si&ndash;Penrose bounds bite. This is the same logic used to bound collapse models: GRW/CSL predict spontaneous heating of matter, and the absence of that heating limits their rates (see Bassi et al. 2013, Rev. Mod. Phys. 85, 471). Any rate assigned here inherits those bounds.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

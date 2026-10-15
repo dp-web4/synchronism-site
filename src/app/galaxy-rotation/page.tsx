@@ -15,7 +15,7 @@ export default function GalaxyRotation() {
       <Breadcrumbs currentPath="/galaxy-rotation" />
       <PathNav currentPath="/galaxy-rotation" />
       <h1>Galaxy Rotation Curves</h1>
-      <ValidationBadge status="failed" label="Failed — density-keyed form ΔBIC +2843; γ = 2 compander in acceleration ΔBIC +184" />{' '}
+      <ValidationBadge status="failed" label="Failed — density-keyed form ΔBIC +2843; γ = 2 compander disfavoured: ΔBIC ≈ +11 at galaxy level (1.6–2.3σ by estimator; +184 if points were independent)" />{' '}
       <ValidationBadge status="reparametrization" label="Acceleration-keyed fit is exactly MOND's simple μ" />
       <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
         Sub-note: the registered ALFALFA test, TEST-03, was never run as registered (see correction below), so that one
@@ -135,7 +135,7 @@ export default function GalaxyRotation() {
             </p>
             <ul style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
               <li>Tight RAR confirmed (&#x03C3;<sub>int</sub> &#x2248; 0.057 dex) — <em>McGaugh et al. 2016 measured value, restated</em></li>
-              <li>The coherence function fits within the scatter only at free &#x03B3;&nbsp;&#x2248;&nbsp;0.49, where it is MOND&apos;s simple &#x03BC; (inherited, not a Synchronism result). The framework&apos;s pinned &#x03B3;&nbsp;=&nbsp;2 is refuted (&Delta;BIC&nbsp;+184).</li>
+              <li>The coherence function fits within the scatter only at free &#x03B3;&nbsp;&#x2248;&nbsp;0.49, where it is MOND&apos;s simple &#x03BC; (inherited, not a Synchronism result). The framework&apos;s pinned &#x03B3;&nbsp;=&nbsp;2 is disfavoured: &Delta;BIC&nbsp;&#x2248;&nbsp;+11 with the galaxy as the unit (1.6σ by galaxy-level cross-validation with Υ, D, i frozen; 1.9&ndash;2.3σ with them refitted per galaxy), at the threshold, not decisive. Read as points treated independently, it is +184.</li>
               <li>Environment dependence: <strong>null</strong>. The registered TEST-08 gives r&sup2;&nbsp;=&nbsp;0.0001 (N&nbsp;=&nbsp;141, p&nbsp;=&nbsp;0.89) against a registered prediction of &gt;&nbsp;20% of the scatter and a kill bar of r&sup2;&nbsp;&lt;&nbsp;0.09, so the kill fired (see <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>). These two bullets read &ldquo;fits within observational scatter&rdquo; and &ldquo;environment effects visible&rdquo; until 2026-09-27.</li>
             </ul>
           </div>
@@ -325,7 +325,7 @@ export default function GalaxyRotation() {
             replication unit (run 2026-09-29, pre-registered):</strong> γ = 2 is worse than the free fit in 94 of 166 galaxies
             (57%; exact sign test p = 0.051 one-sided, 0.10 two-sided; the one-sided test asks whether γ = 2 is worse, which is the registered direction); a 10-fold galaxy-level cross-validation prefers free γ by 1.6σ; a galaxy-block bootstrap
             puts the full-N ΔBIC at 179 with 95% interval [23, 351], a spread that implies an effective N of about 150; and
-            ΔBIC recomputed with N = 166 is +10.9, at the threshold. Seven galaxies carry 98% of the net excess, five pull the
+            ΔBIC recomputed with N = 166 is +10.9, at the threshold. (On the Kass&ndash;Raftery scale +11 would read &ldquo;very strong&rdquo;; that scale assumes the BIC approximation holds, and the bootstrap spread of &plusmn;82 on the full-N value is why this page reads it as 1.6&ndash;2.2σ instead.) Seven galaxies carry 98% of the net excess, five pull the
             other way. So the pin is <em>disfavoured at the threshold</em>, not decisively refuted; the previously quoted
             &ldquo;effective N ≈ 500–1000, ΔBIC ≈ 33, still decisive&rdquo; was a guessed discount (retired 2026-09-29), and the
             &ldquo;~8σ per bin&rdquo; also assumed independent points. Script:{' '}
@@ -421,10 +421,16 @@ export default function GalaxyRotation() {
             A QUMOND interpolating function used for galaxies also acts in the Solar System. There the Galactic field
             induces a small quadrupole in the Sun&apos;s potential, and Cassini bounds it. That quadrupole is set near
             the Sun&apos;s MOND radius, √(GM☉/a₀) ≈ 7,000&nbsp;AU, where the Sun&apos;s field is about a₀, so it tests
-            the interpolating function <em>in its transition</em>. A pre-registered joint squeeze checked the Cassini
-            bound against the full SPARC-retained γ interval (ΔBIC ≤ 10 ⇒ γ = 0.425&ndash;0.600). It found a{' '}
-            <strong>robust empty intersection</strong>: at the SPARC fit the compander fails Cassini by +17.95σ
-            (unmarginalized; +17.7σ to +18.0σ across the interval).
+            the interpolating function <em>in its transition</em>. <strong>The number to quote is the published,
+            marginalized 8.7σ</strong> (Desmond, Hees &amp; Famaey 2024) for the MOND family near γ ≈ ½. The measured bound is
+            Q₂ = (3 ± 3)×10⁻²⁷&nbsp;s⁻² (Hees, Folkner, Jacobson &amp; Park 2014, PRD 89, 102002); an updated DE440 analysis gives
+            (1.6 ± 1.8)×10⁻²⁷&nbsp;s⁻² and puts the galaxy tension at 3&ndash;15σ depending on mass modelling (Park et&nbsp;al. 2026,
+            PRD 114, 024066). The in-house numbers below already use the 2026 value; the 3&ndash;15σ range is theirs. Our own pre-registered squeeze used the point-count SPARC interval
+            (ΔBIC ≤ 10 ⇒ γ = 0.425&ndash;0.600) and found an empty intersection there: +17.95σ at the SPARC fit, unmarginalized.
+            <strong> That emptiness holds only under point independence.</strong> With the galaxy as the unit, the retained
+            interval widens to roughly γ ≈ 0.3&ndash;1.7, which reaches the Cassini-passing γ ≳ 1.5 at a cost of about 2σ per
+            galaxy. So at galaxy level the intersection is narrow, not empty, and the surviving member is a steep-return
+            MOND-class function.
             <br /><br />
             <strong>This failure is shared with MOND&apos;s own functions.</strong> On the same instrument, McGaugh&apos;s
             RAR function ν = 1/(1&minus;e<sup>&minus;√y</sup>), the one fitted on this page, fails by +15.9σ to +20.9σ.

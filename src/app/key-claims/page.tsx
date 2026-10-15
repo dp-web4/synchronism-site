@@ -390,8 +390,9 @@ export default function KeyClaims() {
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Theoretical: 8 Synchronism-based approaches converge on C &#x2248; 0.50 (range 0.48&ndash;0.52).
-            Cross-domain: the Gnosis AI architecture independently
-            converged on C &#x2248; 0.50 as its operating threshold through 4 different mathematical frameworks.
+            <em>Not evidence (listed for completeness):</em> the Gnosis AI architecture also
+            arrived at C &#x2248; 0.50 as its operating threshold through 4 different mathematical frameworks, but it was
+            built with Synchronism access, so this is not an independent convergence.
             <Link href="/consciousness-predictions">34 candidate predictions</Link> enumerated, none tested
             (most bottleneck on the missing C-calibration protocol below).
           </p>
@@ -572,8 +573,8 @@ export default function KeyClaims() {
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>What&apos;s new</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             MOND treats a&#x2080; as an empirical constant. &#x039B;CDM (Lambda Cold Dark Matter) adds a new particle.
-            Synchronism reproduces the <em>same</em> a&#x2080;&#x2248;cH&#x2080;/6 dimensional coincidence as
-            McCulloch (2007), Verlinde (2017), and Smolin (2017) &mdash; it does not derive a&#x2080; from first
+            Synchronism reproduces a cH&#x2080;/(2&#x03C0;) version of Milgrom&apos;s a&#x2080;&#x2248;cH&#x2080;/6 coincidence (cf.
+            McCulloch (2007), Verlinde (2017), and Smolin (2017)) &mdash; it does not derive a&#x2080; from first
             principles any more than they do; see <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter
             derivations</a>, which calls this &ldquo;dimensional bookkeeping, not a Synchronism-specific derivation.&rdquo;
             <strong> a&#x2080; itself is badged Reparametrization, not Failed</strong> &mdash; the Failed badge above is on
@@ -782,7 +783,7 @@ export default function KeyClaims() {
               <strong>The BTFR slope left this list on 2026-07-14</strong> &mdash; executed on real SPARC, it is
               the opposite of a reparametrization: the framework&apos;s bounded boost predicts a slope
               (n = 3.35) that genuinely <em>differs</em> from MOND&apos;s 3.81 (MOND run through the same finite-range pipeline; its asymptotic slope is exactly 4). The observed 3.75 &plusmn; 0.10 sits
-              3.3&sigma; from the framework&apos;s slope (both uncertainties combined in quadrature, &sigma; = 0.124), and the registered |&Delta;n| &gt; 0.3 criterion fired. It is one of
+              3.3&sigma; from the framework&apos;s 3.35 &plusmn; 0.07 (both uncertainties combined in quadrature from the unrounded values: 3.7527 &minus; 3.3465 = 0.406, &sigma; = 0.124, 3.27&sigma;; the rounded inputs give 0.40/0.122 = 3.28&sigma;, so both round to 3.3), and the registered |&Delta;n| &gt; 0.3 criterion fired. It is one of
               the framework&apos;s two discriminating tests, both run and both lost to MOND: 0 selected Synchronism over MOND
               (2 discriminated, both selected MOND). It is recorded as{' '}
               <Link href="/tier-1-existing#TEST-09" style={{ color: 'var(--color-accent-blue)' }}>TEST-09</Link>; the other,

@@ -311,12 +311,25 @@ export default function MondUnification() {
 
         <h2>Sessions and History</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Derived in Sessions #87&ndash;88 of the autonomous research program. The derivation was
-          independently stress-tested in Session #91, where the same result was obtained from
-          a different starting point (via{' '}
-          <Link href="/freemans-law" style={{ color: 'var(--color-accent-blue)' }}>Freeman&apos;s Law</Link>).
-          Both derivations agree, providing internal consistency.
+          The dimensional relation a₀ ≈ cH₀/(2π) was proposed in Sessions #87&ndash;88 of the autonomous research
+          program. Session #91 reached it again via{' '}
+          <Link href="/freemans-law" style={{ color: 'var(--color-accent-blue)' }}>Freeman&apos;s Law</Link>, but that is
+          the same relation read backwards: Σ₀ = a₀/(2πG) is an exact rewriting of a₀, so the two routes are one
+          number, not two derivations, and their agreement is not a consistency check. As Step 2 says, no calculation
+          on this site or in the archive yields the 2π (the literal Hubble-sphere computation gives cH₀/2). The match
+          is also weak evidence on its own: a grammar of 43 simple prefactors on cH₀ hits 89% of targets in the
+          range 0.1&ndash;0.3 cH₀ to within ±10%, and the archive has used five such routes. <strong>The framework fixes
+          no relation between the dark-energy knee and a₀′.</strong> A link through the constant knee would force a
+          constant a₀ (n = 0 in a₀ ∝ E(z)ⁿ), which Ciocan&apos;s redshift bins disfavour at about 5σ, conditional on a
+          redshift-flat gas systematic. Different z = 0 matches imply n anywhere from −1 to +1.7, so the slope, not
+          the level, is the test (explorer finding <code style={{ fontSize: '0.78rem' }}>shared-scale-rho-lambda-a0-the-level-is-free-and-the-slope-is-the-bet.md</code>).
         </p>
+          <details style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+            Until 2026-10-15 this paragraph read &ldquo;Derived in Sessions #87&ndash;88 &hellip; independently stress-tested
+            in Session #91 &hellip; Both derivations agree, providing internal consistency.&rdquo; A simulated-visitor
+            graduate-physics persona pointed out that it contradicted Step 2 and /parameter-derivations.
+          </details>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <PathNextButtons currentPath="/mond-unification" />

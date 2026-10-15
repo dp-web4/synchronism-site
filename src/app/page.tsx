@@ -102,7 +102,8 @@ export default function Home() {
         <p style={{ textAlign: 'center', color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.6rem' }}>
           This is the density-keyed form, C<sub>&rho;</sub>. The two galaxy tests that refuted the framework on its own terms ran on
           an acceleration-keyed cousin with a floor, C<sub>a</sub>, and the RAR fit on a third, C<sub>g</sub>; all three are written
-          out under &ldquo;Which C the galaxy numbers used&rdquo; below (pointer added 2026-10-10).
+          out under &ldquo;Which C the galaxy numbers used&rdquo; below (pointer added 2026-10-10). &ldquo;One equation&rdquo; means one curve
+          shape with separately fitted dials in each sector, not one universal γ (<Link href="/honest-assessment#is-gamma-universal" style={{ color: 'var(--color-accent-blue)' }}>why</Link>).
         </p>
         <p style={{ textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
           <strong>Never seen these symbols? Read it out loud like this:</strong> &ldquo;coherence, at a given
@@ -350,6 +351,7 @@ export default function Home() {
               <div style={{ flexBasis: '100%' }}>
                 Refutations executed <em style={{ color: 'var(--color-text-muted)' }}>(tests that could have killed the idea &mdash; and the idea failed them)</em>: <strong style={{ color: '#ef4444' }}>6</strong>{' '}
                 &mdash; <strong>in plain words: we ran six tests that could have shown it wrong, and it lost all six.</strong>{' '}
+                <em style={{ color: 'var(--color-text-muted)' }}>(Five ran on outside data; the sixth, Bell/CHSH, is a construction check, not a data test. Whether TEST-09 and TEST-10 count as one refutation or two is pending the project lead.)</em>{' '}
                 <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six? &rarr;</Link>{' '}
                 <span style={{ display: 'block', margin: '0.3rem 0', fontSize: '0.85em', color: 'var(--color-text-muted)' }}>
                   Two of the six (TEST-09, TEST-10) were convention-dependent on SPARC; the weak-lensing RAR (Brouwer+2021) excludes the

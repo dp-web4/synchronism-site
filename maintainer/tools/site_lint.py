@@ -23,6 +23,19 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-15 (maintainer): stale fragments next to their own corrections
+    (r"Both derivations agree", "2026-10-15",
+     "Session #91's Freeman route is the same relation (Σ₀ = a₀/2πG), not an independent derivation"),
+    (r"underivable amplitude, or supersession|unmotivated amplitude, or supersession", "2026-10-15",
+     "a replaced test is Superseded, not Withdrawn (one definition)"),
+    (r"Blanchet (&amp;|&) Novak \(2011\) supplies", "2026-10-15",
+     "B&N 2011 computed the prediction; the measured Q₂ = (3±3)e-27 is Hees, Folkner, Jacobson & Park 2014"),
+    (r"robust empty intersection(?! \[empty only)", "2026-10-15",
+     "empty only with SPARC points independent; at galaxy level the interval reaches γ ≈ 1.7 and the intersection is narrow"),
+    (r"snaps rather than fading", "2026-10-15",
+     "contradicts /first-encounter; tanh is gradual at γ ≈ ½"),
+    (r"Session #89 derived &#x03A3;&#x2080; independently", "2026-10-15",
+     "Σ₀ = a₀/(2πG) is the same number rewritten"),
     # --- retired 2026-10-14 (maintainer): effective-N not propagated; Jeans-knee 10σ read as anti-MOND; RG identity scope
     (r"MOND(&apos;|\\'|')s required V<sup>&minus;2</sup> at ~10", "2026-10-14",
      "the 10σ excludes a V⁻² law for the Jeans-construction knee, not MOND's transition density (V⁻² by construction under the BTFR)"),

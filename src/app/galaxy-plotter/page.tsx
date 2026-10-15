@@ -359,6 +359,9 @@ export default function GalaxyPlotter() {
             In plain terms: the gray line sagging below the dots is the dark matter puzzle. The solid
             violet line — the framework&apos;s real equation — fails to fix it. The dotted amber line that
             used to be shown here was drawn to fit, not computed from the theory.
+            There are two ways to plug the coherence number into gravity (dividing by it, or adding a term in
+            quadrature); we draw both, and neither closes the gap. (Glossary:{' '}
+            <Link href="/glossary#wiring-quadrature-vs-division" style={{ color: 'var(--color-accent-blue)' }}>wiring</Link>.)
           </span>
           <ul style={{ margin: '0.4rem 0 0', color: 'var(--color-text-secondary)', paddingLeft: '1.2rem' }}>
             <li><strong>Dashed gray</strong> — Newtonian prediction using visible matter only (toy exponential disk). Drops off at the edges; this is the puzzle.</li>

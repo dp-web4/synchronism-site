@@ -6,6 +6,7 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import TermTooltip from '@/components/TermTooltip';
 import { ROOTS_SENTENCE } from '@/lib/ledger';
+import type { ValidationStatus } from '@/lib/types';
 
 type Test = {
   id: string;
@@ -29,12 +30,21 @@ type Test = {
   revisionNotes?: string[];
   /** Stub cards whose full card lives on another page (2026-10-07: the Roadmap promised #TEST-26 here). */
   fullCard?: { href: string; label: string };
+  /** One canonical badge plus one canonical operational state per card (2026-10-15, simulated-visitor technical-writer
+   * persona: card headers spelled one state 3–5 ways and five cards had no badge). Labels must come from the
+   * /honest-assessment legend. badge null = Withdrawn (never adjudicated, carries no badge by definition). */
+  badge: ValidationStatus | null;
+  badgeLabel?: string;
+  state: string;
 };
 
 const tests: Test[] = [
   {
     id: 'TEST-01',
-    name: 'SPARC Environment Dependence — Killed by the 2026-07-14 Environment Run (Filed Once, on TEST-03s)',
+    name: 'SPARC Environment Dependence',
+    badge: 'failed',
+    badgeLabel: 'Failed — answered by the TEST-03s run, counted once',
+    state: 'Kill Criterion Triggered (TEST-03s run)',
     data: 'SPARC (175 galaxies; 141 with Cosmicflows-4 environment in the executed run)',
     cost: '$0',
     time: 'EXECUTED (2026-07-14)',
@@ -52,7 +62,10 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-02',
-    name: 'Wide Binary Density Dependence — Self-Eliminating-or-Tie; density branch identically null in the ratio (excluded by SPARC and LLR), acceleration branch already failed at the SPARC γ via TEST-25; DR3 dispute unresolved',
+    name: 'Wide Binary Density Dependence',
+    badge: 'untested',
+    badgeLabel: 'Untested — Gaia DR4 pending; no outcome can select the framework',
+    state: 'Self-Eliminating-or-Tie',
     data: 'Gaia DR3',
     cost: '$0',
     time: '6 months',
@@ -72,7 +85,10 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-03',
-    name: 'ALFALFA-SDSS TFR Scatter — Registered Test Never Run; Substitute TEST-03s FAILED (the One Environment Run)',
+    name: 'ALFALFA-SDSS TFR Scatter',
+    badge: 'failed',
+    badgeLabel: 'Failed — substitute TEST-03s',
+    state: 'Never Run as Registered (substitute TEST-03s: Kill Criterion Triggered)',
     data: 'ALFALFA + SDSS (14,585 galaxies)',
     cost: '$0',
     time: '3 months',
@@ -92,7 +108,9 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-04',
-    name: 'BAO Coherence Modulation — WITHDRAWN',
+    name: 'BAO Coherence Modulation',
+    badge: null,
+    state: 'Withdrawn',
     data: 'DESI, SDSS DR17, Euclid',
     cost: '$0',
     time: 'N/A',
@@ -103,7 +121,10 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-04a',
-    name: 'DESI RSD fσ₈ — FAILED: Disfavored 2.4σ on σ₈ (a GR-Conditioned Statistic); Prediction ~1.5σ Below the Data, Registered Threshold Exceeded by ~0.9σ (Bar: 3σ); Underpowered as Registered; Post-hoc, Not Counted as a Refutation; the 0.418 Rests on a Mechanism Withdrawn 2026-08-11 (Corrected 2026-07-14, 2026-10-10, 2026-10-12)',
+    name: 'DESI RSD fσ₈',
+    badge: 'failed',
+    badgeLabel: 'Failed — on σ₈ only (GR-conditioned); registered criterion not met; not counted',
+    state: 'Underpowered as Registered',
     data: 'DESI DR1 (arXiv:2411.12021): Table 9 ShapeFit+BAO, LRG1 row (ratio 1.09 +0.12/−0.14); Table 11 fiducial (0.4733); Table 10 σ₈',
     cost: '$0',
     time: 'ADJUDICATED (2026-05-05)',
@@ -129,6 +150,9 @@ const tests: Test[] = [
   {
     id: 'TEST-05',
     name: 'RAR Environment Partition',
+    badge: 'failed',
+    badgeLabel: 'Failed — answered by the TEST-03s run, counted once',
+    state: 'Kill Criterion Triggered (TEST-03s run)',
     data: 'SPARC + density catalogs',
     cost: '$0',
     time: '2 months',
@@ -147,6 +171,8 @@ const tests: Test[] = [
   {
     id: 'TEST-06',
     name: 'CDM σ_int with BIG-SPARC',
+    badge: 'untested',
+    state: 'Underpowered as Registered',
     data: 'Future resolved rotation curves',
     cost: '$0 (data)',
     time: '1–2 years (data availability)',
@@ -156,7 +182,10 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-07',
-    name: 'Cosmic Interference Patterns — Exploratory Hypothesis (Not a Tier 1 Test)',
+    name: 'Cosmic Interference Patterns (Not a Tier 1 Test)',
+    badge: 'speculative',
+    badgeLabel: 'Speculative — scale underived',
+    state: 'Demoted — Exploratory',
     data: 'SDSS, DES, DESI surveys',
     cost: '$0',
     time: 'N/A — no prediction yet',
@@ -171,6 +200,9 @@ const tests: Test[] = [
   {
     id: 'TEST-08',
     name: 'Freeman Law Derivation Test',
+    badge: 'reparametrization',
+    badgeLabel: 'Reparametrization — Σ₀ is a₀/(2πG), one number',
+    state: 'Reclassified',
     data: 'SPARC surface brightness data',
     cost: '$0',
     time: '1 month',
@@ -183,7 +215,10 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-09',
-    name: 'BTFR Slope — FAILED, Kill Fired at B_max = 1/Ω_m; Convention-Dependent (Executed 2026-07-14, Ceiling Sweep 2026-09-18)',
+    name: 'BTFR Slope',
+    badge: 'failed',
+    badgeLabel: 'Failed — at B_max = 1/Ω_m; convention-dependent',
+    state: 'Kill Criterion Triggered',
     data: 'SPARC (Lelli 2016 mass models, 123 galaxies after quality cuts)',
     cost: '$0',
     time: 'EXECUTED (2026-07-14)',
@@ -202,7 +237,10 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-10',
-    name: 'Dwarf Galaxy DM Dominance — FAILED, Ceiling Exceeded; Headline Convention-Dependent, B_max ≲ 14 Excluded at Every Convention (Executed 2026-07-15)',
+    name: 'Dwarf Galaxy DM Dominance',
+    badge: 'failed',
+    badgeLabel: 'Failed — ceiling exceeded; B_max ≲ 14 excluded at every convention',
+    state: 'Kill Criterion Triggered',
     data: 'SPARC outer rotation-curve points (Q ≤ 2, i > 30°, N = 153)',
     cost: '$0',
     time: 'EXECUTED (2026-07-15)',
@@ -222,13 +260,16 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-25',
-    name: 'Solar System / SPARC Joint Squeeze — FAILED as Inherited from MOND (published 8.7σ; Executed in-house 2026-07-23)',
+    name: 'Solar System / SPARC Joint Squeeze',
+    badge: 'failed',
+    badgeLabel: 'Failed — inherited: MOND\'s own functions fail it too (published 8.7σ)',
+    state: 'Kill Criterion Triggered',
     data: 'SPARC (2,807-point RAR, McGaugh 2016 pipeline) + Cassini spacecraft quadrupole bound on the Solar System',
     cost: '$0',
     time: 'EXECUTED (2026-07-23; re-verified 2026-07-24)',
     prediction: 'The free-γ fit to SPARC (Υ frozen at 0.5, points unweighted) converges to γ ≈ 0.489 (ΔBIC = +7.1 vs McGaugh, ΔBIC = +184.0 at the framework\'s fixed γ = 2). Applying the site\'s own Hill identity, tanh(γ·ln(1+x)) = [(1+x)^2γ − 1]/[(1+x)^2γ + 1], the fitted γ sets the compander\'s high-acceleration return exponent q = 2γ ≈ 0.98 — indistinguishable from MOND\'s SIMPLE interpolating function ν − 1 ∝ 1/y (q = 1). If the SAME scale-universal tanh-log compander is used as a QUMOND interpolation function for the Solar System, it makes a parameter-free prediction for the Cassini-bound post-Newtonian quadrupole.',
-    kill: 'Pre-registered (commit 9c77e7be): the SPARC-retained ΔBIC ≤ 10 grid interval (γ = 0.425–0.600) is incompatible with the signed, two-sided 95% Cassini quadrupole bound under every recorded BIC convention and external-field sensitivity — a robust empty intersection, not a boundary artifact. | CONVENTION NOTE (2026-09-29): every recorded BIC convention treated the 2,807 points as independent; with the galaxy as the replication unit (measured N_eff ≈ 150) the ΔBIC ≤ 10 retained interval is γ = 0.3–1.7, and the compander passes Cassini post-hoc at γ ≳ 1.5–2, so the in-house intersection is empty only under point independence. The defensible content is the published, marginalized 8.7σ (Desmond, Hees & Famaey 2024), which marginalizes the per-galaxy nuisances this pipeline holds fixed.',
-    alert: 'FAILED, INHERITED FROM MOND, CONDITIONAL ON A MODIFIED-POISSON COMPLETION. The number this site stands behind is the published, marginalized 8.7σ (Desmond, Hees & Famaey 2024). That bound is computed for QUMOND/AQUAL-type modified-Poisson theories; modified-inertia MOND evades it, and the framework has not fixed its own force law (see the wiring note on /coherence-function). The framework\'s only written field equation, ∇·[C∇Φ] = 4πGρ, is of the modified-Poisson type, so the inheritance holds for it; it would not bind a modified-inertia reading nobody has written. WHICH γ (2026-10-12, graduate simulated-visitor persona): the published 8.7σ is for the RAR-preferred interpolating functions, i.e. this family near γ ≈ ½. The family\'s fast-return tail (q = 2γ > 1) passes Cassini post-hoc at γ ≳ 1.5–2, which SPARC disfavours at ~2σ at galaxy level (not excluded). So TEST-25 is a kill at the γ SPARC prefers plus a squeeze on the rest, not a family-wide exclusion. The in-house +17.95σ below is unmarginalized and holds its empty intersection only with points as independent; with Υ, D, i refitted per galaxy the in-house intersection sits at the 2σ edge (explorer 2026-09-29). WHICH KEYING (added 2026-10-04, researcher simulated-visitor persona): the squeeze applies to the acceleration-keyed C_g only. The density-keyed C_ρ has no Cassini quadrupole of this kind; it meets its own Solar-System problem in the interplanetary-medium test (GM☉ from Earth and Saturn differ at O(1), 2026-09-15). (Executed 2026-07-23, re-verified 2026-07-24; propagated to this site 2026-07-28, see revision notes.) WHICH CHANNEL (rewritten 2026-10-13; graduate and researcher simulated-visitor personas): the Cassini quantity is the external-field-induced quadrupole Q₂ of QUMOND (Blanchet & Novak 2011; Hees et al. 2016). The in-house instrument computes it as Desmond, Hees & Famaey 2024 do (their Eq. 12, the phantom-density integral with the Galactic external field), not from the function\'s asymptotics. Q₂ is set by the interpolating function\'s shape through the transition region, near the Sun\'s MOND radius (~7,000 AU, where g ~ a₀ ~ g_ext), not by its far tail at Saturn\'s orbit. McGaugh\'s ν, whose far tail is exponentially Newtonian, fails the same pipeline by +15.9 to +20.9σ, which shows the far tail is not the channel. Why the inheritance is a family property: in this compander one γ fixes the shape everywhere, so the γ SPARC prefers (≈ ½, the simple μ) also fixes the transition-region shape Cassini measures, and any one-parameter family with that tie is squeezed. Families with a separate transition-sharpness parameter (Hees et al. 2016) can escape. q = 2γ is the asymptotic label of that same γ, not the mechanism. (Until 2026-10-13 this paragraph credited the high-acceleration return exponent q = 2γ as the channel.) | INHERITED FROM MOND: the defensible headline is the published, marginalized 8.7σ for the RAR-preferred interpolating functions (Desmond, Hees & Famaey 2024), which belongs to the function family MOND also uses, not to this framework alone; McGaugh\'s ν fails this site\'s pipeline by +15.9 to +20.9σ. This site\'s own run is unmarginalized: at the SPARC optimum (γ = 0.489, profiled a₀ = 5.33×10⁻¹¹ m/s²) the Cassini discrepancy is +17.95σ; across the full ΔBIC ≤ 10 retained interval it spans +17.71σ to +18.00σ — the result is not an artifact of the best-fit point or a boundary. Zero survivors at every tested external-field strength (g_ext = 2.00×10⁻¹⁰ and 2.48×10⁻¹⁰ m/s², plus the legacy 2014 Cassini interval) and at every SPARC ΔBIC threshold (6, 10, 14), all scored with points as independent. The framework\'s own fixed γ = 2 is separately disfavoured by SPARC (ΔBIC = +184 with the 2,807 points as independent; ≈ +11 scored by galaxy, 1.6–2.2σ, 2026-09-29: at the threshold, not decisive). So "γ = 2 cannot rescue the joint fit" holds only under point independence; at galaxy level the γ ≳ 1.5–2 tail is the squeeze described under WHICH γ above. (Sentence corrected 2026-10-14; until then it read "separately excluded by SPARC alone", which the 2026-09-29 galaxy-level run had already withdrawn. Simulated-visitor researcher persona.) Instrument self-validated: RAR checkpoints (γ = 0.489, ΔBIC values) reproduce the 2026-07-22 compander form-selection run exactly; mu-to-nu mapping error ≤1.4×10⁻¹⁰; quadrature convergence <0.22% radial / <0.006% angular on every accepted row. Scope, stated as narrowly as the result supports: this closes the realization "universal tanh-log interpolation used as a QUMOND modified-gravity function for both galaxies and the Solar System" — the SAME γ that fits SPARC cannot also satisfy planetary ephemerides. It does NOT directly test modified inertia, a non-gravitational engineering compander, system-dependent or multi-scale functions, dark-matter/hybrid models, or the Synchronism umbrella ontology — escaping requires changing the realization, not retuning γ inside it. PRIOR ART AND DISCRIMINATING POWER — ADDED 2026-08-09 (simulated-visitor Pass 4; see revision notes): this result is, to within the choice of interpolating-function family, Desmond, Hees & Famaey (2024), MNRAS 530, 1781, who found the RAR&ndash;Cassini quadrupole tension at 8.7σ for AQUAL and QUMOND with RAR-preferred interpolating functions (shape parameter δ ≈ 1; Cassini demands δ ≳ 2.5), and reported that the tension persists across all IF families they tested. Executed here 2026-07-23, two years later, without citing it. Three consequences the row must carry. (1) It is not a Synchronism-specific refutation. It excludes the RAR-preferred IF family in modified-gravity MOND; this framework inherits it by sitting in that family — at γ = 1/2 the compander is Milgrom\'s simple μ identically. (2) It is therefore non-discriminating between MOND and Synchronism, which is applied asymmetrically elsewhere on this site: TEST-09 and TEST-10 declare MOND the winner, while /galaxy-plotter draws its MOND reference curve with ν(y) = ½ + √(¼ + 1/y) — the simple-ν function, the exact object this test excludes. The squeeze applies to both or to neither. (2b) MOND\'s own functions fail on this same instrument (pre-registered maintainer run, maintainer/scripts/cassini_q2_mond_interpolating_functions.py): McGaugh\'s RAR ν = 1/(1−e^−√y), the δ = 1 member of the δ-family, fails by +15.9σ to +20.9σ; Milgrom\'s simple ν by +15.3σ to +20.1σ; the compander at the SPARC fit, +17.95σ. The grid is a₀ ∈ {1.128, 1.20}×10⁻¹⁰ with the three registered external fields. No δ-family member enters the Cassini 95% interval below δ = 4, and δ = 4 enters at only 3 of 6 grid points; its SPARC cost was not computed. So the inheritance is literal: the function MOND fits the RAR with is excluded as hard as the compander. (3) The magnitude is ~2× the published figure (+17.95σ here vs 8.7σ there) because Desmond et al. marginalize over a₀, mass-to-light, and RAR-fit uncertainty while this computation fixes γ and profiles a₀ only — the same over-refutation signature as the ΔBIC = +184 effective-N inflation and the standalone a₀ &ldquo;8σ&rdquo;. Note the same paper also pre-empts TEST-02 (wide binaries). Related literature this squeeze operationalizes: Blanchet & Novak (2011) supplies the quadrupole channel (Q₂ = (3±3)×10⁻²⁷ s⁻²) and Hees et al. (2016) previously showed MOND\'s simple-μ family is disfavored by planetary ephemerides for the same reason (slow high-acceleration return). Artifacts: Research/preregistrations/sparc_cassini_tanhlog/ (PREREGISTRATION.md, RESULT.md, joint_result.json), simulations/sparc_cassini_joint.py (Synchronism research repo).',
+    kill: 'Pre-registered (commit 9c77e7be): the SPARC-retained ΔBIC ≤ 10 grid interval (γ = 0.425–0.600) is incompatible with the signed, two-sided 95% Cassini quadrupole bound under every recorded BIC convention and external-field sensitivity — a robust empty intersection [empty only with the points treated as independent; see the convention note], not a boundary artifact. | CONVENTION NOTE (2026-09-29): every recorded BIC convention treated the 2,807 points as independent; with the galaxy as the replication unit (measured N_eff ≈ 150) the ΔBIC ≤ 10 retained interval is γ = 0.3–1.7, and the compander passes Cassini post-hoc at γ ≳ 1.5–2, so the in-house intersection is empty only under point independence. The defensible content is the published, marginalized 8.7σ (Desmond, Hees & Famaey 2024), which marginalizes the per-galaxy nuisances this pipeline holds fixed.',
+    alert: 'FAILED, INHERITED FROM MOND, CONDITIONAL ON A MODIFIED-POISSON COMPLETION. The number this site stands behind is the published, marginalized 8.7σ (Desmond, Hees & Famaey 2024). That bound is computed for QUMOND/AQUAL-type modified-Poisson theories; modified-inertia MOND evades it, and the framework has not fixed its own force law (see the wiring note on /coherence-function). The framework\'s only written field equation, ∇·[C∇Φ] = 4πGρ, is of the modified-Poisson type, so the inheritance holds for it; it would not bind a modified-inertia reading nobody has written. WHICH γ (2026-10-12, graduate simulated-visitor persona): the published 8.7σ is for the RAR-preferred interpolating functions, i.e. this family near γ ≈ ½. The family\'s fast-return tail (q = 2γ > 1) passes Cassini post-hoc at γ ≳ 1.5–2, which SPARC disfavours at ~2σ at galaxy level (not excluded). So TEST-25 is a kill at the γ SPARC prefers plus a squeeze on the rest, not a family-wide exclusion. The in-house +17.95σ below is unmarginalized and holds its empty intersection only with points as independent; with Υ, D, i refitted per galaxy the in-house intersection sits at the 2σ edge (explorer 2026-09-29). WHICH KEYING (added 2026-10-04, researcher simulated-visitor persona): the squeeze applies to the acceleration-keyed C_g only. The density-keyed C_ρ has no Cassini quadrupole of this kind; it meets its own Solar-System problem in the interplanetary-medium test (GM☉ from Earth and Saturn differ at O(1), 2026-09-15). (Executed 2026-07-23, re-verified 2026-07-24; propagated to this site 2026-07-28, see revision notes.) WHICH CHANNEL (rewritten 2026-10-13; graduate and researcher simulated-visitor personas): the Cassini quantity is the external-field-induced quadrupole Q₂ of QUMOND (predicted: Blanchet & Novak 2011; measured: Hees et al. 2014, updated Park et al. 2026). The in-house instrument computes it as Desmond, Hees & Famaey 2024 do (their Eq. 12, the phantom-density integral with the Galactic external field), not from the function\'s asymptotics. Q₂ is set by the interpolating function\'s shape through the transition region, near the Sun\'s MOND radius (~7,000 AU, where g ~ a₀ ~ g_ext), not by its far tail at Saturn\'s orbit. McGaugh\'s ν, whose far tail is exponentially Newtonian, fails the same pipeline by +15.9 to +20.9σ, which shows the far tail is not the channel. Why the inheritance is a family property: in this compander one γ fixes the shape everywhere, so the γ SPARC prefers (≈ ½, the simple μ) also fixes the transition-region shape Cassini measures, and any one-parameter family with that tie is squeezed. Families with a separate transition-sharpness parameter (Hees et al. 2016) can escape. q = 2γ is the asymptotic label of that same γ, not the mechanism. (Until 2026-10-13 this paragraph credited the high-acceleration return exponent q = 2γ as the channel.) | INHERITED FROM MOND: the defensible headline is the published, marginalized 8.7σ for the RAR-preferred interpolating functions (Desmond, Hees & Famaey 2024), which belongs to the function family MOND also uses, not to this framework alone; McGaugh\'s ν fails this site\'s pipeline by +15.9 to +20.9σ. This site\'s own run is unmarginalized: at the SPARC optimum (γ = 0.489, profiled a₀ = 5.33×10⁻¹¹ m/s²) the Cassini discrepancy is +17.95σ; across the full ΔBIC ≤ 10 retained interval it spans +17.71σ to +18.00σ — the result is not an artifact of the best-fit point or a boundary. Zero survivors at every tested external-field strength (g_ext = 2.00×10⁻¹⁰ and 2.48×10⁻¹⁰ m/s², plus the legacy 2014 Cassini interval) and at every SPARC ΔBIC threshold (6, 10, 14), all scored with points as independent. The framework\'s own fixed γ = 2 is separately disfavoured by SPARC (ΔBIC = +184 with the 2,807 points as independent; ≈ +11 scored by galaxy, 1.6–2.2σ, 2026-09-29: at the threshold, not decisive). So "γ = 2 cannot rescue the joint fit" holds only under point independence; at galaxy level the γ ≳ 1.5–2 tail is the squeeze described under WHICH γ above. (Sentence corrected 2026-10-14; until then it read "separately excluded by SPARC alone", which the 2026-09-29 galaxy-level run had already withdrawn. Simulated-visitor researcher persona.) Instrument self-validated: RAR checkpoints (γ = 0.489, ΔBIC values) reproduce the 2026-07-22 compander form-selection run exactly; mu-to-nu mapping error ≤1.4×10⁻¹⁰; quadrature convergence <0.22% radial / <0.006% angular on every accepted row. Scope, stated as narrowly as the result supports: this closes the realization "universal tanh-log interpolation used as a QUMOND modified-gravity function for both galaxies and the Solar System" — the SAME γ that fits SPARC cannot also satisfy planetary ephemerides. It does NOT directly test modified inertia, a non-gravitational engineering compander, system-dependent or multi-scale functions, dark-matter/hybrid models, or the Synchronism umbrella ontology — escaping requires changing the realization, not retuning γ inside it. PRIOR ART AND DISCRIMINATING POWER — ADDED 2026-08-09 (simulated-visitor Pass 4; see revision notes): this result is, to within the choice of interpolating-function family, Desmond, Hees & Famaey (2024), MNRAS 530, 1781, who found the RAR&ndash;Cassini quadrupole tension at 8.7σ for AQUAL and QUMOND with RAR-preferred interpolating functions (shape parameter δ ≈ 1; Cassini demands δ ≳ 2.5), and reported that the tension persists across all IF families they tested. Executed here 2026-07-23, two years later, without citing it. Three consequences the row must carry. (1) It is not a Synchronism-specific refutation. It excludes the RAR-preferred IF family in modified-gravity MOND; this framework inherits it by sitting in that family — at γ = 1/2 the compander is Milgrom\'s simple μ identically. (2) It is therefore non-discriminating between MOND and Synchronism, which is applied asymmetrically elsewhere on this site: TEST-09 and TEST-10 declare MOND the winner, while /galaxy-plotter draws its MOND reference curve with ν(y) = ½ + √(¼ + 1/y) — the simple-ν function, the exact object this test excludes. The squeeze applies to both or to neither. (2b) MOND\'s own functions fail on this same instrument (pre-registered maintainer run, maintainer/scripts/cassini_q2_mond_interpolating_functions.py): McGaugh\'s RAR ν = 1/(1−e^−√y), the δ = 1 member of the δ-family, fails by +15.9σ to +20.9σ; Milgrom\'s simple ν by +15.3σ to +20.1σ; the compander at the SPARC fit, +17.95σ. The grid is a₀ ∈ {1.128, 1.20}×10⁻¹⁰ with the three registered external fields. No δ-family member enters the Cassini 95% interval below δ = 4, and δ = 4 enters at only 3 of 6 grid points; its SPARC cost was not computed. So the inheritance is literal: the function MOND fits the RAR with is excluded as hard as the compander. (3) The magnitude is ~2× the published figure (+17.95σ here vs 8.7σ there) because Desmond et al. marginalize over a₀, mass-to-light, and RAR-fit uncertainty while this computation fixes γ and profiles a₀ only — the same over-refutation signature as the ΔBIC = +184 effective-N inflation and the standalone a₀ &ldquo;8σ&rdquo;. Note the same paper also pre-empts TEST-02 (wide binaries). Related literature this squeeze operationalizes: Blanchet & Novak (2011) computed the QUMOND prediction for the quadrupole channel; the measured bound Q₂ = (3 ± 3)×10⁻²⁷ s⁻² is from Cassini radio tracking (Hees, Folkner, Jacobson & Park 2014, PRD 89, 102002; citation corrected 2026-10-15 after a simulated-visitor researcher persona flagged it), updated to (1.6 ± 1.8)×10⁻²⁷ s⁻² with DE440 by Park, Hees, Famaey, Desmond & Durakovic (2026, PRD 114, 024066), who put the rotation-curve tension at 3–15σ depending on mass modelling; the in-house squeeze already scores against the 2026 value (sparc_cassini_joint.py carries both); Hees et al. (2016) previously showed MOND\'s simple-μ family is disfavored by planetary ephemerides for the same reason (slow high-acceleration return). Artifacts: Research/preregistrations/sparc_cassini_tanhlog/ (PREREGISTRATION.md, RESULT.md, joint_result.json), simulations/sparc_cassini_joint.py (Synchronism research repo).',
     revisionNotes: [
       'When propagated on 2026-07-28 the status note read "not yet on this site until today, though flagged independently by a 2026-07-28 simulated-visitor persona who thought it unregistered".',
       'Before 2026-08-09 this row cited only the two older papers (Blanchet & Novak 2011; Hees et al. 2016) and never stated the consequence of the Desmond, Hees & Famaey (2024) prior art.',
@@ -237,7 +278,10 @@ const tests: Test[] = [
   },
   {
     id: 'TEST-26',
-    name: 'DESI DR3 Dark-Energy Sign Lock — PROPOSED, Kill-or-Tie (stub; full card on Top Decisive Tests)',
+    name: 'DESI DR3 Dark-Energy Sign Lock (stub; full card on Top Decisive Tests)',
+    badge: 'untested',
+    badgeLabel: 'Untested — proposed, not registered',
+    state: 'Self-Eliminating-or-Tie (its kill is shared with ΛCDM)',
     data: 'DESI DR3 BAO + CMB distance priors + supernovae (not yet released)',
     cost: '$0',
     time: 'NOT RUN — proposed 2026-08-10; adoption gates on the operator (dp)',
@@ -248,7 +292,10 @@ const tests: Test[] = [
   },
   {
     id: 'CLUSTER-SCALE',
-    name: 'Cluster Scale — Bridge Tested on Coma, Closed 2026-05-28 (Not a Tier 1 Test)',
+    name: 'Cluster Scale (Not a Tier 1 Test)',
+    badge: 'failed',
+    badgeLabel: 'Failed — bridge tested on Coma, all four forms',
+    state: 'Closed by Execution',
     data: 'Coma cluster (X-ray gas + galaxy velocity dispersion mass estimates)',
     cost: '$0',
     time: 'Closed',
@@ -536,7 +583,7 @@ export default function Tier1Existing() {
             <strong>Failed</strong><span>Prediction contradicted by data (specific error documented)</span>
             <strong>MOND-shared</strong><span>RETIRED (class audited 2026-07-14/15): all three tests carrying this marker (TEST-05, TEST-09, TEST-10) dissolved on execution or adjudication — each sat on an observable controlled by one of the framework&apos;s two structural differences from MOND (bounded boost; local coupling variable), so none could actually tie. A tie badge now carries the same execution burden as a kill.</span>
             <strong>Kill Criterion Triggered</strong><span>Operational state: measured value crossed the pre-registered kill criterion threshold</span>
-            <strong>Withdrawn</strong><span>Operational state: the framework disowned the test (internal contradiction, unmotivated amplitude, or supersession), not a data refutation; no badge</span>
+            <strong>Withdrawn</strong><span>Operational state: the framework disowned the test (internal contradiction or unmotivated amplitude; a replaced test is Superseded), not a data refutation; no badge</span>
           </div>
           <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
             Full canonical definitions, one link per label family:{' '}
@@ -576,7 +623,15 @@ export default function Tier1Existing() {
           {tests.map(t => (
             <div key={t.id} id={t.id} className="card">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
-                <h3 style={{ fontSize: '0.95rem' }}>{t.id}: {t.name}</h3>
+                <div>
+                  <h3 style={{ fontSize: '0.95rem', marginBottom: '0.3rem' }}>{t.id}: {t.name}</h3>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', alignItems: 'center', fontSize: '0.78rem' }}>
+                    {t.badge ? <ValidationBadge status={t.badge} label={t.badgeLabel} /> : <span style={{ color: 'var(--color-text-muted)' }}>No badge (withdrawn tests are never adjudicated)</span>}
+                    <span style={{ color: 'var(--color-text-secondary)' }}>
+                      <Link href="/honest-assessment#operational-states" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>State</Link>: {t.state}
+                    </span>
+                  </div>
+                </div>
                 <span style={{ color: '#10b981', fontFamily: 'monospace', fontSize: '0.8rem', whiteSpace: 'nowrap' }}>
                   {t.cost} / {t.time}
                 </span>

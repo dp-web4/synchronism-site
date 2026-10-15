@@ -85,6 +85,11 @@ export default function ChemistryCorrelationExplorer() {
         published. If γ was set per material with the property in view, a high r between γ and that property carries no
         information. Until the assignments are published, treat every r on this page as unverified.
       </p>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginTop: '0.4rem' }}>
+        Status on the Interactive Tools index: <strong>Artifact Lesson</strong> (an operational state, not a level: a tool kept to
+        show how a high r can come from monotonicity alone, not a verdict) &middot; Claim status: <strong>Reparametrization</strong>, the
+        badge above. (Added 2026-10-15, to match the index.)
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

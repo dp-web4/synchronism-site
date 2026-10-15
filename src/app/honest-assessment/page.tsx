@@ -43,6 +43,13 @@ export default function HonestAssessment() {
         governance decision, such as whether the headline count changes, that the AI tracks may recommend but do not make.
       </p>
 
+      <p style={{ maxWidth: '65ch', fontSize: '0.9rem', margin: '0 0 1rem', color: 'var(--color-text-secondary)' }}>
+        <strong>Not a physicist?</strong> Read the box below, then jump to the{' '}
+        <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>one-paragraph plain summary</a> and{' '}
+        <a href="#non-physicist-takeaway" style={{ color: 'var(--color-accent-blue)' }}>what a non-physicist should take away</a>.
+        Everything after that is the detailed record.
+      </p>
+
       <div id="if-you-read-nothing-else" className="card" style={{ scrollMarginTop: '5rem', maxWidth: '65ch', marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-warm)', fontSize: '0.9rem' }}>
         <p style={{ margin: '0 0 0.5rem', color: 'var(--color-accent-warm)', fontWeight: 600 }}>
           If you read nothing else (this page is ~18,000 words)
@@ -171,14 +178,14 @@ export default function HonestAssessment() {
           <strong>EXECUTED</strong><span>The registered computation was actually run on real data, with scripts cited — as opposed to asserted, estimated, or argued. Always date-stamped. The strongest provenance word on the site.</span>
           <strong>ADJUDICATED</strong><span>A verdict was rendered by structural argument or by analysis of already-published results, without a new run (e.g. TEST-05&apos;s lever-magnitude comparison). Weaker provenance than EXECUTED; the distinction is preserved so readers can tell which verdicts rest on runs.</span>
           <strong>CLOSED</strong><span>Applies to a research <em>question</em>, not a prediction: the question is resolved (sometimes as a null) and no further work is planned. E.g. &ldquo;EFE gap — CLOSED,&rdquo; &ldquo;form selection closed as a null.&rdquo;</span>
-          <strong>WITHDRAWN</strong><span>Applies to a <em>test</em>: retracted by the framework before execution because of internal contradiction, underivable amplitude, or supersession. Never adjudicated, carries no verdict badge. E.g. TEST-04 (BAO).</span>
+          <strong>WITHDRAWN</strong><span>Applies to a <em>test</em>: retracted by the framework before execution because of internal contradiction or underivable amplitude. A test replaced by a later formulation is Superseded, not Withdrawn. Never adjudicated, carries no verdict badge. E.g. TEST-04 (BAO). Same term as the operational state Withdrawn above; one definition, two places it can appear (the stray &ldquo;or supersession&rdquo; here was removed 2026-10-15).</span>
           <strong>RETIRED</strong><span>Applies to <em>vocabulary or framing</em>, not to data verdicts: a label or badge class removed from service after audit showed it defective. E.g. the &ldquo;MOND-shared&rdquo; tie-badge class (retired 2026-07-15 when all three carriers dissolved on execution). &ldquo;MOND-shared / RETIRED&rdquo; therefore means: this label used to sit here, and the label itself — not the test — was withdrawn from the site&apos;s vocabulary.</span>
           <strong>RECLASSIFIED</strong><span>Moved between categories (e.g. Tier 1 → Tier 2, prediction → exploratory hypothesis) after audit showed the original category&apos;s entry requirements were never met. The row is kept in place, demoted visibly, so the demotion is not silent.</span>
           <strong>NEVER RUN AS REGISTERED</strong><span>A different dataset, sample, or statistic was substituted and adjudicated in the registered test&apos;s place — the substitute has its own verdict, but the test as originally pre-registered remains unrun and still runnable. Distinct from WITHDRAWN (which is retracted, not substituted). E.g. TEST-03 (the ALFALFA-SDSS run was executed as TEST-03s instead).</span>
           <strong>UNDERPOWERED AS REGISTERED</strong><span>The registered kill threshold sits inside the measurement&apos;s own known systematics or pipeline-dependence range, so neither outcome (threshold crossed or not) can adjudicate anything until the registration is tightened. Marked before the data arrives where possible, not as a post-hoc excuse. E.g. TEST-06 (BTFR σ_int threshold vs. ~3× velocity-definition-dependent scatter), TEST-04a (fσ₈ criterion met at ~1.5σ against a &gt;3σ demand).</span>
           <strong>Ceiling Exceeded</strong><span>A structural failure mode specific to this framework: the data demands more than the framework&apos;s built-in maximum (the bounded boost 1/&Omega;_m = 3.17), so no parameter choice can rescue the fit. Needs no threshold registration — the ceiling is algebraic.</span>
-          <strong>Empty Intersection</strong><span>A joint test fails because the parameter ranges two datasets each allow do not overlap: no single value satisfies both. E.g. TEST-25: the γ interval SPARC retains (0.425&ndash;0.600) and the interval the Cassini Solar-System bound allows share no point. Each dataset alone may be fit; the <em>conjunction</em> is what is refuted, and only for the realization that uses one function at both scales. (The 0.425&ndash;0.600 interval treats SPARC points as independent; with the galaxy as the unit it widens to 0.3&ndash;1.7 and the in-house intersection sits at the 2&sigma; edge, so TEST-25 rests on the published, marginalized 8.7&sigma;. Qualifier added 2026-10-04.)</span>
-          <strong>Kill Criterion Triggered</strong><span>A registered test was executed and its pre-stated kill threshold was crossed. That is a refutation on the scoreboard, and the claim then carries the Failed badge. (Added 2026-10-04: Tier 1 used this label without a definition here.)</span>
+          <strong>Empty Intersection</strong><span>A joint test fails because the parameter ranges two datasets each allow do not overlap: no single value satisfies both. E.g. TEST-25: the γ interval SPARC retains with points treated as independent (0.425&ndash;0.600) and the interval the Cassini Solar-System bound allows share no point. With the galaxy as the unit the SPARC interval reaches γ ≈ 1.7 and the intersection is narrow, not empty (2026-10-15). Each dataset alone may be fit; the <em>conjunction</em> is what is refuted, and only for the realization that uses one function at both scales. (The 0.425&ndash;0.600 interval treats SPARC points as independent; with the galaxy as the unit it widens to 0.3&ndash;1.7 and the in-house intersection sits at the 2&sigma; edge, so TEST-25 rests on the published, marginalized 8.7&sigma;. Qualifier added 2026-10-04.)</span>
+          <strong>Kill Criterion Triggered</strong><span>Defined once, under operational states above (a pre-registered threshold was crossed; the claim carries the Failed badge). Listed here only so a reader scanning the verbs finds it.</span>
           <strong>Demoted &mdash; Exploratory</strong><span>A RECLASSIFIED test whose registration never met the entry bar for a prediction (no derivation of the amplitude, or no threshold). It stays visible as an exploratory hypothesis and counts neither for nor against. (Added 2026-10-04.)</span>
           <strong>Closed by Execution</strong><span>CLOSED reached by running the computation rather than by argument: the question was answered on data, often as a null. (Added 2026-10-04.)</span>
           <strong>[Brackets]</strong><span>Text in brackets inside a quoted prediction (e.g. &ldquo;[Withdrawn]&rdquo;) marks that the surrounding wording is preserved verbatim for the record but is no longer asserted.</span>
@@ -230,16 +237,14 @@ export default function HonestAssessment() {
           B&nbsp;≤&nbsp;3.17 ceiling, not by the presence or absence of a Lagrangian.
           (<a href="#landscape" style={{ color: 'var(--color-accent-blue)' }}>Full statement &darr;</a>)
         </p>
-        <p style={{ margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, background: 'rgba(59,130,246,0.07)', borderLeft: '3px solid rgba(59,130,246,0.5)', borderRadius: '4px', padding: '0.75rem 1rem' }}>
-          <strong>What failed, in one paragraph — no jargon (added 2026-07-24 for readers on the beginner
-          path):</strong> This project proposed one equation meant to describe how things hold together at
+        <p id="plain-summary" style={{ scrollMarginTop: '5rem', margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, background: 'rgba(59,130,246,0.07)', borderLeft: '3px solid rgba(59,130,246,0.5)', borderRadius: '4px', padding: '0.75rem 1rem' }}>
+          <strong>What failed, in one paragraph — no jargon:</strong> This project proposed one equation meant to describe how things hold together at
           every scale, from atoms to galaxies. When its galaxy predictions were tested against real telescope
           measurements, it failed every decisive test. It predicted a specific relationship between a
           galaxy&apos;s mass and its rotation speed — the measured relationship landed far enough away to cross
           the line the project itself had drawn in advance as &ldquo;this would kill the theory&rdquo; (with one
-          catch: that depends on exactly where the project sets its cap on extra gravity, and at two other
-          reasonable settings it lands on or just inside the line; what holds at every setting is that caps below about
-          5.4 are ruled out). It puts
+          catch: that verdict depends on where the project sets its cap on extra gravity; what holds at every
+          reasonable setting is that small caps are ruled out). It puts
           a hard cap on how much &ldquo;missing gravity&rdquo; a galaxy can display — and about two-thirds of
           real galaxies display more than that cap allows. And an environmental effect it predicted turned out,
           when measured, not to exist at all. Where the equation <em>does</em> fit galaxies, it fits only by
@@ -247,10 +252,7 @@ export default function HonestAssessment() {
           never fits better than it. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
           own scoreboard — zero confirmed predictions, <strong>six</strong> executed refutations
           resting on two framework-specific mechanism roots, plus one refuted registration, one constraint
-          inherited from MOND, and one Bell/CHSH construction check. (This sentence read &ldquo;four executed
-          refutations&rdquo; until 2026-08-09 and &ldquo;three to four independent roots&rdquo; until 2026-09-05,
-          while the landing page said two &mdash; three simulated-visitor personas caught the drift on one day. One count,
-          one split, classified by kind in the table below and imported site-wide from a single source file.) <strong>Why does the site
+          inherited from MOND, and one Bell/CHSH construction check. <strong>Why does the site
           still exist?</strong> Because a few of the framework&apos;s core ideas have never been testable with
           existing instruments (untested is not the same as failed), and because this record — a theory testing
           itself in public and publishing every failure — is itself the point. The paragraph below says the
@@ -289,7 +291,15 @@ export default function HonestAssessment() {
           squeeze and Bell/CHSH substrate test were added to the count on 2026-07-30 &mdash; both were already
           executed and badged Failed/Refuted elsewhere on the site).
         </p>
-        <div style={{ marginTop: '0.75rem' }}>
+        <details style={{ margin: '0 0 0.75rem', fontSize: '0.78rem', color: 'var(--color-text-muted)' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision notes for the plain summary</summary>
+          Added 2026-07-24 for readers on the beginner path. It read &ldquo;four executed refutations&rdquo; until
+          2026-08-09 and &ldquo;three to four independent roots&rdquo; until 2026-09-05, while the landing page said two;
+          three simulated-visitor personas caught the drift on one day. The count is now imported site-wide from one
+          source file. On 2026-10-15 the cap parenthetical was shortened and this history moved out of the paragraph
+          (simulated-visitor casual persona: &ldquo;the no-jargon paragraph isn&apos;t jargon-free&rdquo;).
+        </details>
+        <div id="non-physicist-takeaway" style={{ marginTop: '0.75rem', scrollMarginTop: '5rem' }}>
           <strong style={{ color: 'var(--color-text-primary)', fontSize: '0.95rem' }}>What a non-physicist should take away:</strong>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0.5rem 0 0', paddingLeft: '1.25rem' }}>
             <li>The equation driven by <em>density</em> &mdash; the actual idea &mdash; does not fit galaxy rotation (the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link> shows it failing). A version with its input switched to <em>acceleration</em> and one dial fitted to the data does fit &mdash; but at that setting it becomes MOND, an existing 40-year-old idea, and never does better. (Reworded 2026-09-14: this line used to say &ldquo;the one equation fits galaxy rotation,&rdquo; which a reader fairly took as contradicting the plotter.)</li>
@@ -304,12 +314,15 @@ export default function HonestAssessment() {
       {/* Table of contents */}
       <nav style={{ marginBottom: '2rem', maxWidth: '65ch', fontSize: '0.85rem' }} aria-label="Page contents">
         <strong style={{ color: 'var(--color-text-secondary)' }}>On this page:</strong>{' '}
+        <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>Plain summary</a> &middot;{' '}
+        <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six refutations?</a> &middot;{' '}
         <a href="#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Badge definitions (canonical)</a> &middot;{' '}
         <a href="#status-lifecycle-verbs" style={{ color: 'var(--color-accent-blue)' }}>Status lifecycle verbs</a> &middot;{' '}
         <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>The Verdict</a> &middot;{' '}
         <a href="#coherence-meaning" style={{ color: 'var(--color-accent-blue)' }}>What &ldquo;Coherence&rdquo; Means Here</a> &middot;{' '}
         <a href="#what-was-tested" style={{ color: 'var(--color-accent-blue)' }}>What Was Tested</a> &middot;{' '}
         <a href="#what-failed" style={{ color: 'var(--color-accent-blue)' }}>What Failed</a> &middot;{' '}
+        <a href="#is-gamma-universal" style={{ color: 'var(--color-accent-blue)' }}>Is γ universal?</a> &middot;{' '}
         <a href="#structural-tensions" style={{ color: 'var(--color-accent-blue)' }}>Structural Tensions</a> &middot;{' '}
         <a href="#whats-untested" style={{ color: 'var(--color-accent-blue)' }}>What&apos;s Untested</a> &middot;{' '}
         <a href="#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</a> &middot;{' '}
@@ -631,9 +644,10 @@ export default function HonestAssessment() {
             Every simulated-visitor persona in the 2026-08-09 pass independently hit the same defect: the count is quoted
             everywhere and auditable nowhere. Two separate problems. <strong>(a) The inclusion rule was never
             written down.</strong> It is: a row counts if it was <em>executed against a registered criterion on
-            data the framework did not fit</em>, and carries one of the operational labels
-            <em> Kill Criterion Triggered</em>, <em>Failed</em>, <em>Ceiling Exceeded</em>, or <em>Empty
-            Intersection</em>. All four are now defined in the{' '}
+            data the framework did not fit</em>, and carries the <em>Failed</em> badge together with
+            one of three failure descriptors: the operational state <em>Kill Criterion Triggered</em>, or the structural
+            descriptors <em>Ceiling Exceeded</em> or <em>Empty Intersection</em> (Failed is a badge, not one of these; the
+            earlier wording listed it as a fourth &ldquo;operational label&rdquo;, corrected 2026-10-15). All are defined in the{' '}
             <a href="#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>badge legend</a>
             {' '}readers are pointed to (Empty Intersection was the last one missing, added 2026-09-24), so the count can be
             reconstructed from the site&apos;s own vocabulary. <strong>(b) The six are not six of a kind.</strong>
@@ -1521,6 +1535,42 @@ export default function HonestAssessment() {
 
       {/* Structural Tensions (Stress Tests) */}
       <section className="section">
+        <div id="is-gamma-universal" className="card" style={{ scrollMarginTop: '5rem', marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-violet)', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <h2 style={{ fontSize: '1.1rem', marginTop: 0 }}>Is γ one universal number?</h2>
+          <p style={{ margin: '0 0 0.5rem' }}>
+            <strong>No, and the framework never said it was.</strong> Its own formula, γ = 2/√N<sub>corr</sub>, makes γ depend on
+            how many parts of a system move together, so it changes from system to system by construction (galaxies are given
+            N<sub>corr</sub> = 1, hence the registered γ = 2). What the site&apos;s numbers actually use is one curve shape,
+            tanh(γ ln(1+x)), applied to three different inputs, each fitted separately:
+          </p>
+          <ul style={{ margin: '0 0 0.5rem', paddingLeft: '1.2rem' }}>
+            <li><strong>Cosmology</strong>: x = mean matter density / ρ<sub>crit</sub> (C<sub>ρ</sub>). DESI DR2 fits γ = 0.487 (−0.021/+0.024)
+              on the mean-density reading; read at local density as a fluid, matter clustering pins γ = ½ to about 5×10⁻⁶.</li>
+            <li><strong>Galaxies, the fit that works</strong>: x = observed acceleration / a₀′ (C<sub>g</sub>). SPARC fits γ = 0.489 ± 0.11
+              (statistical; the stellar mass-to-light choice moves it from 0.27 to 0.96). At γ = ½ this is MOND&apos;s simple μ exactly.</li>
+            <li><strong>Galaxies, the framework&apos;s own variable</strong>: x = local density (C<sub>ρ</sub> again). SPARC drives γ to 0.046
+              and rejects the law (ΔBIC +2843).</li>
+          </ul>
+          <p style={{ margin: '0 0 0.5rem' }}>
+            <strong>Why this matters (a simulated-visitor researcher persona asked, 2026-10-15):</strong> if one γ ran every sector,
+            cosmology (γ = ½ to 5×10⁻⁶) and the Cassini Solar-System bound (which, for the acceleration-keyed curve, passes only at
+            γ ≳ 1.5) would kill the framework without touching SPARC. That kill does not go through, for a reason that is itself
+            informative: the cosmology pin is on the density-keyed curve and the Cassini bound is on the acceleration-keyed one. They
+            are different functions that share a symbol. Put density into both sectors and the galaxy law is already refuted by
+            SPARC and by lunar laser ranging, so the joint test adds nothing. Put each sector&apos;s fitted variable in, and
+            &ldquo;shared γ&rdquo; compares two different parameters.
+          </p>
+          <p style={{ margin: 0 }}>
+            <strong>So what does &ldquo;one equation&rdquo; amount to?</strong> One functional form, not one parameter set. Counted
+            honestly, each sector in use carries at least two fitted numbers (γ and a scale: ρ<sub>crit</sub> or a₀′), and the
+            acceleration-keyed galaxy tests add a floor (Ω<sub>m</sub>) and a choice of how C enters gravity (dividing, or in
+            quadrature). The landing question &ldquo;What if one equation described it all?&rdquo; should be read with that count in
+            mind. <em>Open question:</em> is there any observable where the density keying, not the acceleration keying, is the claim
+            and is not already excluded? The site has not found one (see{' '}
+            <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>, &ldquo;three C&apos;s&rdquo;).
+          </p>
+        </div>
+
         <h2 id="structural-tensions">Structural Tensions (March 2026 Stress Tests)</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
           Eight adversarial stress-test sessions probed the CFD reframing for genuine novel predictions.

@@ -147,7 +147,7 @@ export default function CoherenceExplorer() {
           <strong>What the symbols do, in plain language:</strong>
           <ul style={{ marginTop: '0.5rem', marginBottom: 0, color: 'var(--color-text-secondary)' }}>
             <li><strong>ln(x)</strong> — logarithm: it compresses huge ranges into small ones. A density 1,000× bigger becomes only ~7 units bigger inside the equation (natural log); on this chart&apos;s base-10 axis the same jump is 3 gridlines. The compression does <em>not</em> let one curve span quantum to cosmic scales: at any sharp γ the tanh saturates within ~1.6 decades of the knee, which is why the &ldquo;80 orders of magnitude&rdquo; unification was refuted (Session 633; corrected here 2026-09-14).</li>
-            <li><strong>tanh(u)</strong> — the &ldquo;S-curve&rdquo; shape. For very negative u it returns ≈ 0; for large positive u it returns ≈ 1; near zero it rises steeply. Think of a dimmer switch that snaps rather than fading gradually.</li>
+            <li><strong>tanh(u)</strong> — the &ldquo;S-curve&rdquo; shape. For very negative u it returns ≈ 0; for large positive u it returns ≈ 1; near zero it rises steeply. Think of a dimmer whose sharpness &#x03B3; sets: gradual at &#x03B3; &#x2248; &frac12;, steeper at large &#x03B3;.</li>
             <li><strong>&#x03B3;</strong> — controls how quickly the snap happens: large &#x03B3; = a sharp cliff, small &#x03B3; = a long gentle ramp. <strong>Warning first:</strong> the framework&apos;s rule for <em>which</em> material gets which &#x03B3; (&#x03B3; = 2/&radic;N<sub>corr</sub>: free atoms &rarr; 2, superconductors &rarr; ~6×10⁻⁴) runs backwards against real condensed-matter physics, where superconductors switch on abruptly. So treat this tool as a shape toy for learning the curve, not a map of real materials (details further down).</li>
             <li><strong>&#x03C1;<sub>crit</sub></strong> — the density where the dimensionless argument x = &#x03C1;/&#x03C1;<sub>crit</sub> equals 1; a reference point set by fitting, not a physical critical point and <em>not</em> the curve&apos;s midpoint: C(&#x03C1;<sub>crit</sub>) = tanh(&#x03B3; ln 2) is &#x03B3;-dependent (0.327 at &#x03B3; = 0.49, 0.60 at &#x03B3; = 1, 0.88 at &#x03B3; = 2 &mdash; the three values printed on three pages of this site are all correct, at those three &#x03B3;).</li>
           </ul>
@@ -155,6 +155,7 @@ export default function CoherenceExplorer() {
         <p style={{ marginBottom: '1rem' }}>
           Adjust &#x03B3; and &#x03C1;<sub>crit</sub> to see how the coherence function
           C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1)) responds.
+          The dashed amber line marks C = 0.50; the dotted knee marker (&#x03C1; = &#x03C1;<sub>crit</sub>) is <em>not</em> where C = 0.5 &mdash; the curve&apos;s value there depends on &#x03B3; (its label shows it).
         </p>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
@@ -194,7 +195,7 @@ export default function CoherenceExplorer() {
                   {kneeX > pad.left && kneeX < pad.left + plotW && (
                     <>
                       <line x1={kneeX} y1={pad.top} x2={kneeX} y2={pad.top + plotH} stroke="#9ca3af" strokeDasharray="2 3" strokeWidth="1" />
-                      <text x={kneeX + 3} y={pad.top + plotH - 18} fill="#9ca3af" fontSize="8.5">knee: &rho; = &rho;<tspan baselineShift="sub" fontSize="6.5">crit</tspan></text>
+                      <text x={kneeX + 3} y={pad.top + plotH - 18} fill="#9ca3af" fontSize="8.5">knee: &rho; = &rho;<tspan baselineShift="sub" fontSize="6.5">crit</tspan>; C = {Math.tanh(gamma * Math.LN2).toFixed(2)} at this &#x03B3;</text>
                     </>
                   )}
                 </>
@@ -216,6 +217,9 @@ export default function CoherenceExplorer() {
           <em> density</em>, and the density version fitted freely to the same galaxies runs to &#x03B3; = 0.046 &mdash; a
           nearly flat curve (try that preset). &#x03B3; = 2 is what the framework originally said. The gaps between these
           numbers are part of why the framework failed its galaxy test.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '-0.5rem', marginBottom: '1rem' }}>
+          Default &#x03B3; = 0.49 is the galaxy-fit value, fitted with acceleration (g/a&#x2080;&prime;) as the argument, not density; the same curve shape, a different variable. See the caveats below for why it fails in the Solar System.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>

@@ -140,7 +140,7 @@ export default function TestCatalog() {
           represents proposed tests, not tests that are ready to run or are expected to discriminate.{' '}
           <strong>A third executed result (TEST-25, added 2026-07-28) is a different kind of kill</strong> —
           not Synchronism-vs-MOND discrimination, but an internal-consistency squeeze: the SPARC-preferred
-          γ interval and the Cassini Solar-System bound have a robust empty intersection under the
+          γ interval and the Cassini Solar-System bound have an empty intersection with SPARC points treated as independent (narrow, not empty, with the galaxy as the unit) under the
           scale-universal tanh-log QUMOND realization (8.7σ for the RAR-preferred interpolating functions,
           marginalized, Desmond, Hees &amp; Famaey 2024; this site&apos;s unmarginalized run gives +17.95σ for the compander).
           It is booked as inherited from MOND: on the same instrument McGaugh&apos;s RAR function fails by +15.9&ndash;20.9σ.

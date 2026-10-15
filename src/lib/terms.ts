@@ -71,7 +71,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'BTFR',
     fullName: 'Baryonic Tully-Fisher Relation',
     brief: 'Empirical power-law between a galaxy\'s total baryonic mass and its flat rotation velocity: M_bar ∝ V_flat^n.',
-    explanation: 'The BTFR is one of the tightest empirical relations in galaxy dynamics: baryonic mass (stars + gas) scales as a power law of the asymptotic flat rotation velocity. It is now the framework’s sharpest executed refutation (TEST-09, run 2026-07-14 on 123 SPARC galaxies): the bounded boost caps gravitational amplification at 1/Ω_m = 3.17, forcing a Newtonian deep limit and a predicted slope n = 3.35 ± 0.07 — genuinely different from MOND’s 3.81 ± 0.04. Observed: n = 3.75 ± 0.10 (reproducing Lelli et al. 2019’s 3.85 ± 0.09). The registered kill criterion fired at 3.3σ and no parameter choice rescues it. (Entry rewritten 2026-07-17: an earlier version repeated Session 193’s “regime-dependent slope” rescue — built on a synthetic 9-galaxy ladder asserting a deep-MOND limb the bounded formula cannot produce — which the executed run invalidated.)',
+    explanation: 'The BTFR is one of the tightest empirical relations in galaxy dynamics: baryonic mass (stars + gas) scales as a power law of the asymptotic flat rotation velocity. It is now the framework’s sharpest executed refutation (TEST-09, run 2026-07-14 on 123 SPARC galaxies): the bounded boost caps gravitational amplification at 1/Ω_m = 3.17, forcing a Newtonian deep limit and a predicted slope n = 3.35 ± 0.07 — genuinely different from MOND’s 3.81 ± 0.04. Observed: n = 3.75 ± 0.10 (reproducing Lelli et al. 2019’s 3.85 ± 0.09). The registered kill criterion fired at 3.3σ on the registered point-estimate rule, and no parameter choice rescues it. Two qualifiers: whether TEST-09 counts separately from TEST-10 (both fail on the same boost cap) is pending the project lead, and the significance is definition-dependent (≈1.2σ under V_flat alone; robust under V_max). (Entry rewritten 2026-07-17: an earlier version repeated Session 193’s “regime-dependent slope” rescue — built on a synthetic 9-galaxy ladder asserting a deep-MOND limb the bounded formula cannot produce — which the executed run invalidated.)',
     learnMore: '/tier-1-existing',
   },
   'A2ACW': {
@@ -200,7 +200,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Refutation (executed)',
     fullName: 'Executed Refutation \u2014 the site\u2019s counting rule',
     brief: 'A test that was actually run and that the idea failed. The site counts 6, from 5 independent roots.',
-    explanation: 'Counting rule: a claim counts as an executed refutation when (1) a test with a stated failure condition was actually run, on data or as a simulation, and (2) the claim failed it. Arguments that a test could never succeed, untested predictions and underpowered tests (like the DESI growth-rate check) do not count. The count is 6 (BTFR slope TEST-09, dwarf dark-matter fractions TEST-10, RAR shape at \u03b3 = 2, the environment run, the Cassini/SPARC squeeze TEST-25, and the Bell/CHSH substrate check), but these come from 5 independent roots, because TEST-09 and TEST-10 fail on the same boost cap. Only two roots are specific to this framework. The upstream ledger is PREDICTIONS.md in the research repo. Pending (2026-10-12): the uniform G/C growth reading was pre-registered, executed and excluded (ISW sign, lensing, S\u2088), which meets this rule as written; it is left out of the 6 only because no archive document asserted that reading, and whether that exclusion becomes part of the rule gates on the project lead. (Entry added 2026-09-14, after a visitor noticed the site\u2019s headline number had no definition.)',
+    explanation: 'Counting rule: a claim counts as an executed refutation when (1) a test with a stated failure condition was actually run, on data or as a simulation, and (2) the claim failed it. Arguments that a test could never succeed, untested predictions and underpowered tests (like the DESI growth-rate check) do not count. The count is 6 (BTFR slope TEST-09, dwarf dark-matter fractions TEST-10, RAR shape at \u03b3 = 2, the environment run, the Cassini/SPARC squeeze TEST-25, and the Bell/CHSH substrate check), but these come from 5 independent roots, because TEST-09 and TEST-10 fail on the same boost cap. Only two roots are specific to this framework. The upstream ledger is PREDICTIONS.md in the research repo. Pending (2026-10-12): the uniform G/C growth reading was pre-registered, executed and excluded (ISW sign, lensing, S\u2088), which meets this rule as written; it is left out of the 6 only because no archive document asserted that reading, and whether that exclusion becomes part of the rule gates on the project lead. What the landing-page \u201c6\u201d includes: one construction check (Bell/CHSH, run on the framework’s own substrate construction rather than on observational data) and two pending-review entries (TEST-09 and TEST-10, whose independence awaits the project lead). Claims refuted this way carry the Failed badge. (Entry added 2026-09-14, after a visitor noticed the site\u2019s headline number had no definition; composition note added 2026-10-15.)',
     learnMore: '/honest-assessment',
   },
   'prospective': {
@@ -263,7 +263,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Milgrom',
     fullName: 'Mordehai Milgrom',
     brief: 'The physicist who proposed MOND in 1983.',
-    explanation: 'Milgrom introduced Modified Newtonian Dynamics and its acceleration constant a\u2080, and noted that a\u2080 is numerically close to cH\u2080/2\u03c0 (a coincidence this framework later rederived). See MOND.',
+    explanation: 'Milgrom introduced Modified Newtonian Dynamics and its acceleration constant a\u2080, and in 1983 observed that a\u2080 is numerically close to cH\u2080/6; this framework later rewrote it as cH\u2080/(2\u03c0) (a rederivation of the coincidence, not an independent result). See MOND.',
     learnMore: '/mond-unification',
   },
   'knee': {
@@ -760,6 +760,34 @@ export const terms: Record<string, TermDefinition> = {
     fullName: 'Cosmic Microwave Background',
     brief: 'Faint microwave light left over from about 380,000 years after the Big Bang, reaching us from every direction.',
     explanation: 'Its tiny temperature ripples (about 1 part in 100,000) are one of the strongest tests of cosmology, and ΛCDM fits them in detail. Pure MOND has trouble with them without extra ingredients. (Entry added 2026-09-15 for What Synchronism Is Not.)',
+  },
+  'Omega_m': {
+    term: 'Ω_m / Ω_b',
+    fullName: 'Ω_m and Ω_b — matter and baryon density fractions',
+    brief: 'The share of the universe’s total energy density in all matter (Ω_m ≈ 0.315) and in ordinary, baryonic matter alone (Ω_b ≈ 0.049), from Planck 2018.',
+    explanation: 'Ω_m counts dark plus ordinary matter; Ω_b counts only atoms. On this site they matter because the floored, acceleration-keyed law caps the gravity boost at 1/Ω_m ≈ 3.17 (the boost cap behind TEST-09 and TEST-10); the alternative convention Ω_m/Ω_b ≈ 6.4 gives a different cap, and the site flags which one a result used. (Entry added 2026-10-15.)',
+    learnMore: '/honest-assessment',
+  },
+  'Cassini': {
+    term: 'Cassini',
+    fullName: 'Cassini spacecraft (Solar-System quadrupole bound)',
+    brief: 'NASA/ESA Saturn mission whose radio tracking bounds any anomalous tidal (quadrupole, Q₂) field in the Solar System. That bound is what kills MOND-like laws at γ ≈ 0.49 (TEST-25).',
+    explanation: 'Modified-gravity laws that act at galaxy-scale accelerations leave a small external-field quadrupole in the Solar System, which would perturb planetary orbits. Ranging to Cassini at Saturn measures Saturn’s orbit precisely enough to bound it. Measured bound: Hees, Folkner, Jacobson & Park 2014, Phys. Rev. D 89, 102002; updated by Park et al. 2026, Phys. Rev. D 114, 024066. The site’s Cassini/SPARC squeeze (TEST-25) compares the γ range SPARC galaxies allow with the range this bound allows. (Entry added 2026-10-15.)',
+    learnMore: '/honest-assessment',
+  },
+  'Hill function': {
+    term: 'Hill function',
+    fullName: 'Hill function (rational switch)',
+    brief: 'A switch-shaped curve of the form xⁿ/(1+xⁿ): near 0 for small x, near 1 for large x, with n setting how sharp the turn is. From biochemistry (oxygen binding to hemoglobin).',
+    explanation: 'The coherence equation is one of these in disguise: tanh(γ·ln(1+x)) equals exactly ((1+x)^{2γ} − 1)/((1+x)^{2γ} + 1), a Hill-type rational function of (1+x). So the tanh-log form is not a special shape; it belongs to the compander family (see Compander). (Entry added 2026-10-15.)',
+    learnMore: '/equation-walkthrough',
+  },
+  'Stewardship': {
+    term: 'Stewardship',
+    fullName: 'Stewardship (the project’s current stage)',
+    brief: 'The current stage of the project, in which no claim is labelled “established.”',
+    explanation: 'During stewardship the research is being audited and re-framed rather than built on, and nothing in it is honestly characterizable as established. That is why the Validated and Supported badges are deprecated: new content uses relationship badges (Active-MRH, Parallel-Paths, Sidelined, Superseded, Audited-Negative) or descriptive ones (Untested, Failed, Speculative, Reparametrization), and older Validated/Supported labels are being migrated. (Entry added 2026-10-15.)',
+    learnMore: '/honest-assessment#validation-badge-definitions',
   },
 };
 

@@ -23,7 +23,7 @@ const regions = [
     range: [0.6, 1.4],
     systems: ['Liquid water', 'Enzymes', 'Chemical bonds', 'Neural firing'],
     physics: 'The regime where collective and independent behavior balance. Systems whose estimated γ falls here include liquid water, enzymes, and neural dynamics. Note: C(ρ) itself is a smooth compander with no critical point — "boundary" here means a regime boundary in γ, not a mathematical phase boundary. The consciousness-threshold conjecture (C ≈ 0.50) was historically placed in this band; C is a different axis from γ, and D and S remain undefined, so that placement has no calculation behind it — see hard-problem page.',
-    realityCheck: 'Reality check: no shared transition physics is known to connect the systems grouped here — water, enzymes, and neural firing land together because of how their N_corr was estimated, not because of any measured common behavior at γ ≈ 1. The grouping is the counting convention, visualized.',
+    realityCheck: 'Reality check: no shared transition physics is known to connect the systems grouped here — water, enzymes, and neural firing land together because of how their N_corr was asserted (not counted), not because of any measured common behavior at γ ≈ 1. The grouping is the counting convention, visualized.',
   },
   {
     id: 'quantum',
@@ -91,9 +91,9 @@ export default function PhaseBoundaryVisualizer() {
         </p>
         <p>
           The three regimes of &#x03B3; map qualitatively different correlation structures.
-          Drag the slider to explore where different systems are <em>estimated</em> to fall.
+          Drag the slider to explore where different systems are <em>asserted</em> to fall.
           Labeled positions are approximate (&#x03B3; = 2/&#x221A;N<sub>corr</sub>;
-          N<sub>corr</sub> values are estimated, not precisely measured for most systems).
+          N<sub>corr</sub> values are asserted, not counted).
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           <strong>Naming note:</strong> despite the historical name, C(&#x03C1;) is a smooth compander

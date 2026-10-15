@@ -288,7 +288,7 @@ export default function ConsciousnessDemo() {
             All fall within &#x00B1;0.03 of 0.50. (Until 2026-10-13 the non-existent row was included: 8 approaches, 0.499 &#x00B1; 0.012.)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
-            <strong>Important:</strong> all 8 approaches were developed within Synchronism and share the
+            <strong>Important:</strong> all 7 approaches (and the excluded phase-transition row) were developed within Synchronism and share the
             same tanh-based assumptions. Convergence on 0.50 is expected for any approach that picks
             the output-range midpoint of a [0,1)-bounded function &mdash; it does not constitute independent empirical evidence. The convergence
             is consistent with the threshold being real AND with it being a mathematical artifact.

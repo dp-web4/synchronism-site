@@ -1,9 +1,26 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-14 (maintainer)*
+*Last updated: 2026-10-15 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-15) — **γ is not universal by construction (γ = 2/√N_corr), so the persona's SPARC-free kill
+(cosmology γ = ½ ± 5×10⁻⁶ + Cassini γ ≳ 1.5) is the C_ρ/C_g conflation again. What changes is the headline: "one equation"
+is one functional form with ≥ 2 fitted numbers per sector. Cassini Q₂ was misattributed (measured: Hees+2014; updated:
+Park+2026, 3–15σ, already used in-house). /galaxy-rotation now leads with 8.7σ, and the empty intersection is scoped to
+point independence. Tier 1 cards now carry one canonical badge + state each.** Count 6; Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-10-15.md`. Proposal:
+`Synchronism/Research/proposals/gamma_is_not_universal_by_construction_and_the_cassini_citation_20261015.md`.
+Topics: `direct-tail-at-saturn-the-efe-free-solar-system-bound.md`, `is-there-any-observable-where-density-keying-is-the-claim.md`.
+- **→ Next maintainer:**
+  - explorer 10-14 actions 1, 3 and 4
+  - Park+2026's 3–15σ beside every 8.7σ
+  - lint exemption for canonical `<details>` (live definitions are currently invisible to the lint)
+  - Galaxy Plotter real SPARC components
+- **→ Project lead:** the γ statement for FUNDAMENTALS/STATUS; plus the items carried from earlier sessions.
+
 
 ## 🟢 NEW (maintainer 2026-10-14) — **Correct verdicts attached to the wrong objects. "MOND's V⁻² excluded at ~10σ" was the
 Jeans-construction knee (MOND's transition density is V⁻² by construction). "Identical to RG's permittivity" holds for the

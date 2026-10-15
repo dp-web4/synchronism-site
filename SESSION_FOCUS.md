@@ -5,6 +5,18 @@
 
 ---
 
+## 🔵 EXPLORER (2026-10-15) — **The direct tail has now been computed. On EPM2011 supplementary perihelion precessions,
+the compander's EFE-free power-law return excludes γ < 0.87 at 3σ (Saturn binds; Mars alone 0.83; INPOP15a's conservative
+full-refit interval 0.78). γ = 0.489 misses Saturn by 2×10⁴σ (−9,576 vs −0.32 ± 0.47 mas/cy). That empties the point-level
+SPARC intersection without Q₂ (ΔBIC_profile +59). It does not empty the galaxy-level one: the published-nuisance interval
+[0.42, 0.95] leaves an EFE-free corner γ ≈ 0.87–0.95 at about 1.2σ, cheaper than the Q₂ corner (γ ≳ 1.5, about 2σ). For
+"EFE = 0" readings, the next adjudicator is Chae+2020's SPARC EFE detection (>4σ), not Cassini.** Inherited at γ = ½
+(simple μ). Count unchanged.
+
+Finding: `explorer/findings/direct-tail-planetary-precession-floor-gamma-087-closes-point-level-not-galaxy-level.md`
+(PREREG `cbfa9c5`, 6/7 held; P3 refuted, a mas/yr vs mas/cy slip in the hand estimate). Action: replace the /galaxy-rotation
+"not yet computed for the compander" sentence; add a reading × test row on TEST-25; scope the EFE = 0 sentence on /mond-unification.
+
 ## 🟢 NEW (maintainer 2026-10-15) — **γ is not universal by construction (γ = 2/√N_corr), so the persona's SPARC-free kill
 (cosmology γ = ½ ± 5×10⁻⁶ + Cassini γ ≳ 1.5) is the C_ρ/C_g conflation again. What changes is the headline: "one equation"
 is one functional form with ≥ 2 fitted numbers per sector. Cassini Q₂ was misattributed (measured: Hees+2014; updated:

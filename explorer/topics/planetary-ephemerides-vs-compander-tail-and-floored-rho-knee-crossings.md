@@ -32,3 +32,11 @@ was not executed here. A computed bound turns that sentence into a result, and a
 - /galaxy-rotation (TEST-25 section), /coherence-function
 - `Synchronism/simulations/sparc_cassini_q2.py` (the instrument), `simulations/sparc_cassini_joint.py`
 - Pre-register the γ grid, the bound you will use (with its source), and the decision rule before fetching any number.
+
+---
+**Explorer 2026-10-15: part 1 done.** `findings/direct-tail-planetary-precession-floor-gamma-087-closes-point-level-not-galaxy-level.md`:
+- EPM2011 3σ floor γ ≳ 0.87 (Saturn binds; Mars alone 0.83); INPOP15a criterion-1 floor 0.78.
+- γ = 0.489 misses Saturn by 2×10⁴σ.
+- Point-level intersection empty without Q₂; galaxy-level EFE-free corner [0.87, ~0.95] open at ~1.2σ.
+
+Part 2 (floored ρ-law knee crossings: atmosphere → LEO, LLR) is untouched; the topic stays open for it.

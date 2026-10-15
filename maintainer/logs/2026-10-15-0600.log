@@ -1,3 +1,35 @@
 Starting Synchronism Maintainer Session at Thu Oct 15 06:00:01 PDT 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+Both repos are pushed: the site in `e99c75f` and `b7c6f63`, the research repo in `fc88855d` and `3302348b`. The build passes and the lint reports 0 retired phrases. No bucket moved: the count is still 6, and the number of confirmed novel predictions (Bucket 0) is still 0.
+
+**WAKE (the research question).** The researcher persona asked whether γ is one universal number. If it were, cosmology (γ = ½) plus the Cassini Solar-System bound (γ ≳ 1.5) would kill the framework without using SPARC.
+- **The framework's own answer is no.** γ = 2/√N_corr changes from system to system by construction.
+- **So the kill doesn't go through.** The cosmology pin and the Cassini bound apply to two different functions that share the symbol γ (one takes density as input, the other acceleration).
+- **The headline does change.** "One equation" really means one curve shape with at least two fitted numbers per sector, not one parameter set.
+
+I wrote a proposal and a PREDICTIONS block for this. Stating it in FUNDAMENTALS/STATUS needs your decision.
+
+**Site fixes:**
+- **/galaxy-rotation:** the Cassini paragraph now leads with the published 8.7σ. The "empty intersection" is now limited to the case where SPARC's data points are treated as independent. The +184 badge now shows the galaxy-level ≈ +11.
+- **Cassini citation:** the measured Q₂ is from Hees+2014; Blanchet & Novak 2011 only computed the prediction. A 2026 update (Park et al.) gives 3–15σ against galaxy data, and the in-house script already uses its tighter bound.
+- **Tier 1 cards:** each card now shows one badge and one state, taken from the site's own label list. This had been carried over for two sessions.
+- **/honest-assessment:** a "Not a physicist?" jump line at the top, the no-jargon paragraph cleaned up, the double definitions of Withdrawn and Kill Criterion Triggered removed, and a new "Is γ universal?" box.
+- **/mond-unification:** the "both derivations agree" history is rewritten. The two routes are one number rewritten, not two derivations.
+- **Other pages:** a helper agent fixed wording drift on the glossary, /key-claims, /top-5-tests, /coherence-explorer and about eight other pages. I undid one of its edits that broke the tools page's own labelling rule.
+
+**Mistakes I caught in my own work:**
+- I "corrected" two of the persona's arithmetic complaints, but the site text was right in both cases. One used unrounded inputs; the other was a second estimator. My new lint rules flagged the correct lines, I reverted, and the pages now show the arithmetic.
+- I wrote that the 2026 Cassini bound was "not yet re-run here". The script already used it, and I fixed the wording.
+- **The lint has a blind spot.** Definitions inside collapsed sections are exempt, so live definitions in those sections are never checked.
+
+**Explorer topics seeded:**
+- The Cassini check that doesn't depend on the external-field effect: a γ floor from a real planetary-ephemeris bound at Saturn.
+- Whether any observable exists where keying on density, rather than acceleration, is the claim and isn't already ruled out.
+
+**External item:** the open issue is Synchronism#4, a holdout-test proposal. You commented on 2026-10-13, so nothing is owed from this track.
+
+Sources:
+- [Hees et al. 2014, arXiv:1402.6950](https://www.arxiv.org/abs/1402.6950)
+- [Park et al. 2026, arXiv:2602.17884](https://arxiv.org/abs/2602.17884)
+- [Desmond, Hees & Famaey 2024](https://arxiv.org/html/2401.04796v1)

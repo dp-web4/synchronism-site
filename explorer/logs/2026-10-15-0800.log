@@ -1,0 +1,39 @@
+Starting Synchronism Explorer Session at Thu Oct 15 08:00:01 PDT 2026
+## Explorer session 2026-10-15: the direct tail is now a computed number
+
+**Topic choice.** I took the new maintainer topic (the Saturn direct tail) together with the planetary-ephemerides topic that had been queued for 23 days. The site's /galaxy-rotation box said the size of this exclusion was "not yet computed for the compander", and one calculation could replace that sentence. The topic expected the tail to close the "no external field" (EFE = 0) escape; the result is more mixed.
+
+**Result** (pre-registered as `cbfa9c5` before I fetched any data; 6 of 7 predictions held):
+- **Bounds, read verbatim:**
+  - EPM2011 (Pitjeva & Pitjev 2013, Table 4): Saturn −0.32 ± 0.47 mas/cy.
+  - INPOP15a full refit (Fienga et al. 2016): Saturn 1.2 ± 5.0 mas/cy.
+- **The miss at the galaxy-fit value:**
+  - At γ = 0.489 the tail predicts −9,576 mas/cy at Saturn.
+  - That is about 2×10⁴σ from the EPM2011 value.
+  - This failure is inherited from MOND: at γ = ½ the compander is exactly MOND's "simple μ" function.
+- **Floor.** On EPM2011 the planets rule out γ < 0.87 at 3σ:
+  - Saturn sets the limit; Mars alone would give 0.83.
+  - The more conservative INPOP15a interval gives 0.78.
+- **Point-level SPARC fit:** reaching γ = 0.87 costs ΔBIC +59. So when each data point is treated as independent, there is no γ that fits both the galaxies and the planets, even before the Cassini quadrupole test.
+- **Galaxy-level SPARC fit (the unexpected part):**
+  - When each galaxy is treated as one unit, with its nuisance parameters fitted (an earlier finding, not re-run today), SPARC allows γ up to 0.95 (95% interval).
+  - That leaves γ ≈ 0.87–0.95 open for "no external field" readings, at about 1.2σ cost.
+  - The corner that passes Cassini (γ ≳ 1.5) costs about 2σ, so this one is cheaper.
+  - For those readings, the deciding test shifts from Cassini to Chae et al. 2020, which reports the external-field effect in SPARC at more than 4σ. We haven't run that comparison yet.
+- **Checks on the calculation:**
+  - A constant extra acceleration matches its analytic formula to 10⁻¹⁵.
+  - General relativity for Mercury reproduces 42.9807″/cy.
+  - The simple-μ cross-check gives −7.42 against the expected −7.40″/cy.
+
+**The prediction that failed.** My pre-registered hand estimate of the floor was 0.60–0.80; the measured value is 0.87. I read EPM2011's errors as mas/yr when I had used mas/cy, which made my estimate 100× too loose. I saved that units trap as a memory.
+
+**Committed and pushed** (`f4a7af8`):
+- the finding, with render-ready site wording for the maintainer;
+- the script and its output;
+- the session log and a SESSION_FOCUS entry;
+- the direct-tail topic, archived;
+- the ephemerides topic, annotated with part 2 still open.
+
+**So what?** This narrows what is still open. For readings with no external field, the Solar System constraint drops from γ ≳ 1.5 to γ ≳ 0.87. The question that remains is a specific galaxy-side test (Chae et al. 2020), and it runs on data we already load. I did not get to the other new topic, whether any observable depends on the density keying itself. Nothing in today's result bears on it.
+
+Sources: [Pitjeva & Pitjev 2013 (arXiv:1306.3043)](https://ar5iv.labs.arxiv.org/html/1306.3043) · [Fienga et al. 2016 INPOP15a (arXiv:1601.00947)](https://arxiv.org/pdf/1601.00947) · [Chae et al. 2020 (arXiv:2009.11525)](https://arxiv.org/abs/2009.11525) · [Iorio comment (arXiv:1907.01100)](https://arxiv.org/pdf/1907.01100)

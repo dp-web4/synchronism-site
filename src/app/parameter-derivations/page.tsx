@@ -81,13 +81,14 @@ export default function ParameterDerivations() {
               <strong>Sign inversion (2026-06-06 / 2026-06-29):</strong> Beyond being underived, the
               N<sub>corr</sub>-dependence is <em>sign-inverted relative to the mean-field physics it borrows</em>.
               In any mean-field model (Ising, Curie–Weiss), increasing the number of correlated units
-              makes the transition <em>sharper</em> — fluctuations stop self-averaging near criticality;
-              cooperative effects build. Here, &#x03B3; = 2/&#x221A;N<sub>corr</sub> <em>decreases</em> with
-              N<sub>corr</sub>, giving the most-correlated systems (BCS, BEC, N<sub>corr</sub> ≈ 10⁶&ndash;10⁷ &mdash;
-              <em>range widened 2026-09-10</em>: this read &ldquo;≈ 10⁶&rdquo; while the{' '}
+              makes the transition <em>sharper</em>: in Curie–Weiss the finite-size rounding width shrinks as N<sup>&minus;1/2</sup>,
+              so a mean-field sharpness parameter would grow as &#x221A;N, the exact reciprocal of the ansatz (mechanism restated
+              2026-10-16; this used to say &ldquo;fluctuations stop self-averaging near criticality&rdquo;, which is a different phenomenon). Here, &#x03B3; = 2/&#x221A;N<sub>corr</sub> <em>decreases</em> with
+              N<sub>corr</sub>, giving the most-correlated systems (BCS, BEC, N<sub>corr</sub> ≈ 10⁶&ndash;10⁹, depending on material and on what is counted &mdash;
+              <em>range widened 2026-09-10 and again 2026-10-16 to match the calculator</em>: this read &ldquo;≈ 10⁶&rdquo; while the{' '}
               <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&gamma; Calculator</Link>{' '}
               uses 10⁷ for BCS in the same argument, a factor of 10 on the same named system, caught by a
-              graduate-physics reader. Both are defensible &mdash; a BCS pair&apos;s coherence volume holds ~10⁶&ndash;10⁷
+              graduate-physics reader. Both are defensible &mdash; a BCS pair&apos;s coherence volume holds ~10⁶&ndash;10⁹
               electrons depending on whether you count &xi;³n or pairs &mdash; which is itself the point this page
               makes: N<sub>corr</sub> is a <strong>counting convention</strong>, not a measured invariant, so a factor
               of 10 in it is not an error so much as evidence the quantity is underdetermined)
@@ -310,7 +311,14 @@ export default function ParameterDerivations() {
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #87-88</p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              The MOND acceleration scale a&#x2080; = cH&#x2080;/(2&#x03C0;) follows from Synchronism&apos;s coherence function.
+              The MOND acceleration scale is <em>posited</em> as a&#x2080; = cH&#x2080;/(2&#x03C0;) by dimensional analysis: cH&#x2080; is
+              the only acceleration cosmology supplies. It does not follow from the coherence function, which contains no
+              a&#x2080; (until 2026-10-16 this sentence said it did; flagged by a simulated-visitor graduate persona).
+              <strong> Base rate:</strong> a 43-member grammar of simple prefactors on cH&#x2080; matches 89% of targets in
+              [0.1, 0.3]&times;cH&#x2080; to &plusmn;10%, and the archive itself used five such routes (cH&#x2080;/2&#x03C0;, /6, /2,
+              &#x03A9;<sub>m</sub>-power forms) and three H&#x2080; values, so a match at this level cannot be evidence
+              (<a href="https://github.com/dp-web4/synchronism-site/blob/main/explorer/findings/shared-scale-rho-lambda-a0-the-level-is-free-and-the-slope-is-the-bet.md" style={{ color: 'var(--color-accent-blue)' }}>explorer, 2026-10-14</a>).
+              The testable part is the slope of a&#x2080;(z), not the level.
               Milgrom&apos;s observed: 1.20&times;10<sup>&minus;10</sup> m/s&sup2; &mdash; the formula sits
               13% below it. <strong>H&#x2080; bookkeeping corrected 2026-07-22</strong> (caught by a visitor
               physics persona): this card previously quoted a&#x2080; &#x2248; 1.08&times;10<sup>&minus;10</sup>

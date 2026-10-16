@@ -105,7 +105,8 @@ export default function InteractiveTools() {
         a <strong>Kind</strong> (top right &mdash; what sort of thing the tool is),
         a <strong>Level</strong> (the difficulty scale: Beginner / Intermediate / Advanced), and,
         where it applies, a <strong>Status</strong> (an operational state, square-cornered and amber,
-        deliberately styled so it cannot be mistaken for a difficulty).
+        deliberately styled so it cannot be mistaken for a difficulty). Each card also repeats the verdict badge from the
+        tool&apos;s own page (&ldquo;Badge on its page&rdquo;), which is a claim status, not a fourth label about the tool.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem', maxWidth: '60ch' }}>
         <strong>Before the legend:</strong> this is a <em>content grouping</em>, not the site&apos;s validation

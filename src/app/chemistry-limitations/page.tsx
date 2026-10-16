@@ -23,7 +23,7 @@ export default function ChemistryLimitations() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
-          Of 1,703 chemical phenomena tested, ~11% failed outright and many more showed only
+          Of 1,703 logged chemistry sessions (a session counter, not a census of distinct phenomena), ~11% failed outright and many more showed only
           weak correlations. This page documents what doesn&apos;t work and why.
         </p>
 

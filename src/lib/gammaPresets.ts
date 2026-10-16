@@ -34,7 +34,7 @@ export const GAMMA_PRESETS: GammaPreset[] = [
   {
     // The framework's stated galaxy value (γ = 2) inverts to this same row, N_corr = 1. It is
     // named in the label rather than added as a second N_corr = 1 button (see GALAXY_PIN_GAMMA).
-    label: 'Ideal gas (N_corr = 1, γ = 2; also the framework’s stated galaxy value)',
+    label: 'Ideal gas (N_corr = 1, γ = 2; also the framework’s original galaxy guess, now disfavoured)',
     ncorr: 1,
     story:
       'Nothing moves together in an ideal gas — every particle is its own unit (N_corr = 1) — so γ hits its maximum of 2. In this framework that means the sharpest possible switch from "individuals" to "crowd" as density rises.',

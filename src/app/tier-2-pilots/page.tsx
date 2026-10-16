@@ -53,7 +53,7 @@ export default function Tier2Pilots() {
     <>
       <Breadcrumbs currentPath="/tier-2-pilots" />
       <h1>Tier 2: Pilot Experiments</h1>
-      <ValidationBadge status="untested" label="4 Tests, $50K–$200K" />
+      <ValidationBadge status="untested" label="4 Tests, $5K–$150K each" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

@@ -213,7 +213,7 @@ export default function Home() {
               <strong>2.</strong> Consciousness equation &mdash; <em>Speculative</em> (C&nbsp;&asymp;&nbsp;0.50 threshold untestable as stated)
             </span>
             <span style={{ color: '#ef4444' }}>
-              <strong>3.</strong> Dark matter as incomplete decoherence &mdash; <em>Failed</em> as a mechanism; the galaxy fits that work are MOND in new notation (a reparametrization), and the framework&apos;s own cosmology needs ordinary cold dark matter put in by hand (<Link href="/dark-energy" style={{ color: 'inherit', textDecoration: 'underline' }}>details</Link>); adding a real halo on top of the boost overshoots SPARC by +0.28&nbsp;dex (explorer 2026-09-22). Closest prior art for &ldquo;dark matter that behaves like MOND inside galaxies&rdquo;: superfluid dark matter (Berezhiani &amp; Khoury 2015), which has particles
+              <strong>3.</strong> Dark matter as incomplete decoherence &mdash; <em>Failed</em> as a mechanism; the galaxy fits that work are MOND in new notation (a reparametrization), and the framework&apos;s own cosmology needs ordinary cold dark matter put in by hand (<Link href="/dark-energy" style={{ color: 'inherit', textDecoration: 'underline' }}>details</Link>); adding a real halo on top of the boost overshoots SPARC by +0.28&nbsp;dex (explorer 2026-09-22). Closest prior art for &ldquo;dark matter that behaves like MOND inside galaxies&rdquo;: superfluid dark matter (Berezhiani &amp; Khoury 2015), which has real dark-matter particles whose superfluid phase produces the MOND-like force inside galaxies; this framework proposes no such particle.
             </span>
           </div>
           <span style={{ color: 'var(--color-accent-violet)', fontSize: '0.9rem', marginTop: '0.75rem', display: 'inline-block' }}>
@@ -523,7 +523,7 @@ export default function Home() {
               </div>
               <div className="card" style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '1.8rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>1,703</div>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Chemical phenomena analyzed</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>Chemistry sessions logged (a session counter, not a census of phenomena)</div>
                 <div style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.2rem' }}>23 curated on-site; a 2-parameter null model matches or beats every correlation. The per-material γ table behind the 1,703 is unpublished, so the count is not reproducible.</div>
               </div>
               <div className="card" style={{ textAlign: 'center' }}>
@@ -582,7 +582,7 @@ export default function Home() {
               <Link href="/gamma-boundary" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Chemistry</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  1,703 phenomena at the &#x03B3; &#x2248; 1 boundary. Sound velocity r = 0.982.
+                  1,703 logged chemistry sessions (one &ldquo;phenomenon type&rdquo; per session, so a counter, not a census) near the &#x03B3; &#x2248; 1 boundary. Sound velocity r = 0.982.
                   Melting point prediction: 53% error. The 89% consistency rate reflects
                   generic sigmoid behavior on density-monotonic properties — not a Synchronism-unique prediction.
                 </p>
@@ -658,7 +658,7 @@ export default function Home() {
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>How we work, why we document failures</p>
               </Link>
               <Link href="/honest-assessment" className="card" style={{ textDecoration: 'none' }}>
-                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Shortcut &middot; also Beginner Path step 5 of 6</div>
+                <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>Shortcut &middot; also Beginner Path step 5 of 5</div>
                 <h3>Honest Assessment</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>What works, what failed, what&apos;s unknown</p>
               </Link>

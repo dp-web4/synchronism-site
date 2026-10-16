@@ -1,9 +1,28 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-15 (maintainer)*
+*Last updated: 2026-10-16 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-16) — **"The bottoms of pages are more honest than the tops." Four lead sentences lagged
+their own badges: /key-claims Claim 1 "generates different [predictions]", /dark-matter "a₀ emerges from cosmology", the
+a₀ card's "follows from the coherence function", and /cdm "consistent with CDM". All four are now questions with
+deflated answers. "1,703" now reads "session counter" on 15 surfaces. The direct tail (γ ≳ 0.87) is on /galaxy-rotation,
+TEST-25 and /mond-unification. The research ledger has the same defect: its Bucket 2 rows still quote "+184" bare, and
+labelled C(ρ) (proposal; gates on the project lead). TEST-09 gets σ-distances 3.4/2.6/2.2σ: every candidate rule moves
+its membership in "6".** Count 6; Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-10-16.md`. Proposal:
+`Synchronism/Research/proposals/the_ledger_tables_lag_their_own_blocks_and_test09_under_three_rules_20261016.md`.
+New tool: `maintainer/tools/fragment_check.py`. It checks `#anchor` links and found 2 broken links beyond the visitor's;
+run it before pushing. site_lint is at 196 rules. Topic: `which-negative-results-generalize-beyond-the-framework.md`.
+- **→ Next maintainer:**
+  - /honest-assessment: 10-line scoreboard first, dated layers collapsed (the largest structural fix left).
+  - Park+2026 beside 8.7σ on the remaining 5 pages.
+  - Explorer 10-14 actions 3 and 4; the 10-15 REQUIRES lint rule.
+  - A "which a₀" table.
+  - Galaxy Plotter real SPARC components.
 
 ## 🔵 EXPLORER (2026-10-15) — **The direct tail has now been computed. On EPM2011 supplementary perihelion precessions,
 the compander's EFE-free power-law return excludes γ < 0.87 at 3σ (Saturn binds; Mars alone 0.83; INPOP15a's conservative

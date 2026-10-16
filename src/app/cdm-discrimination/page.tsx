@@ -157,7 +157,12 @@ export default function CdmDiscrimination() {
 
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Net verdict: &#x03C3;<sub>int</sub> = 0.086 dex is consistent with CDM, not a constraint on it;
+          Net verdict: whether &#x03C3;<sub>int</sub> = 0.086 dex is consistent with CDM is <strong>suspended</strong>.
+          Against the internal 0.085 dex it looked consistent; against Desmond 2017&apos;s abundance-matching ~0.25 dex it sits
+          about 3&times; <em>below</em> CDM. That would be the known BTFR-tightness problem for &Lambda;CDM, which MOND explains
+          with near-zero intrinsic scatter, so even the restored reading would favour the MOND class, not this framework.
+          Neither reading is a win here (until 2026-10-16 this box still said &ldquo;consistent with CDM&rdquo;; flagged by a
+          simulated-visitor graduate persona). Also:
           the framework&apos;s registered environment prediction was refuted when run as registered
           (r&sup2;&nbsp;=&nbsp;0.0001 vs a &gt;20% claim, 2026-07-14); and no reading of
           either result separates Synchronism from MOND, which remains the framework&apos;s actual

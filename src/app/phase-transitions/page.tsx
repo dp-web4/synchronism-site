@@ -79,7 +79,7 @@ export default function PhaseTransitions() {
           <li>Biology emerges (molecular recognition requires quantum-classical interface)</li>
         </ul>
         <p>
-          1,703 chemical phenomena were fitted, and 89% gave &#x03B3; values within the boundary region.
+          1,703 chemistry sessions were logged (one &ldquo;phenomenon type&rdquo; per session, a counter rather than a census), and 89% gave &#x03B3; values within the boundary region.
           The audit found that about 86% of that 89% restates the Debye model (&#x03B8;<sub>D</sub>, 1912),
           so the figure is a reparametrization, not a confirmed prediction.{' '}
           <Link href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>See the full chemistry analysis &rarr;</Link>

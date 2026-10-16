@@ -167,7 +167,15 @@ export default function GammaCalculator() {
         <div className="card" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
             <strong>The curve this &#x03B3; produces</strong> — C(&#x03C1;) = tanh(&#x03B3;&middot;ln(1+&#x03C1;/&#x03C1;<sub>crit</sub>))
-            at your current &#x03B3; (violet), with the &#x03B3;=2 galaxy pin ghosted for comparison (gray).
+            at your current &#x03B3; (violet), with &#x03B3; = 2 ghosted for comparison (gray).
+          </p>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem' }}>
+            <strong>Two different &ldquo;galaxy&rdquo; &#x03B3;&apos;s, on purpose.</strong> The gray &#x03B3; = 2 is the
+            framework&apos;s <em>original guess</em> for galaxies (it is also the ideal-gas preset, N<sub>corr</sub> = 1);
+            SPARC rotation curves disfavour it. The &ldquo;Galaxy&rdquo; preset&apos;s &#x03B3; &#x2248; 0.49 is the
+            <em> best fit</em> to those curves, read back into N<sub>corr</sub> &#x2248; 17; that fit is MOND&apos;s
+            formula and fails a Solar System test. Neither is a value the framework predicts. The full list of &#x03B3;
+            values in use is in the <a href="/glossary#which-c-which" style={{ color: 'var(--color-accent-blue)' }}>Glossary: Which C? Which &#x03B3;?</a>
           </p>
           <svg viewBox="0 0 560 240" role="img" aria-label={`The coherence S-curve at gamma = ${gamma < 0.001 ? gamma.toExponential(2) : gamma.toFixed(3)}: larger gamma means a steeper switch, smaller gamma a flatter curve`} style={{ width: '100%', height: 'auto' }}>
             <line x1="50" y1="200" x2="530" y2="200" stroke="var(--color-dark-border, #374151)" strokeWidth="1" />

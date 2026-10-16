@@ -16,7 +16,7 @@ const predictions = [
 const milestones = [
   { date: 'Nov 2025', event: 'Session #1 — Coherence function first derived', status: 'complete' },
   { date: 'Dec 2025', event: 'SPARC capstone — 175 galaxies analyzed', status: 'complete' },
-  { date: 'Jan 2026', event: 'Chemistry track — 1,703 phenomena validated', status: 'complete' },
+  { date: 'Jan 2026', event: 'Chemistry track — 1,703 sessions logged (counter, not a census; nothing validated)', status: 'complete' },
   { date: 'Jan 2026', event: 'ALFALFA-SDSS — 14,585 galaxy external validation', status: 'complete' },
   { date: 'Feb 2026', event: 'Session #616 — Full audit, all tracks reparametrized', status: 'complete' },
   { date: 'Feb 2026', event: 'Test catalog — 24 experiments defined', status: 'complete' },

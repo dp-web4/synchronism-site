@@ -350,6 +350,28 @@ RETIRED = [
      "0.086 matches only the source session's own 0.085; Desmond 2017 abundance matching gives ~0.25 dex; verdict suspended"),
     (r"color: '#2ecc71' }}>CONFIRMED</td>", "2026-09-27",
      "no CONFIRMED status cells on the coupling experiment; B4 is a reparametrization"),
+    # --- retired 2026-10-16 (maintainer): lead sentences that lagged their own badges; drifting referents
+    (r"reframe generates\s+different ones", "2026-10-16",
+     "no quantum-sector candidate differs from standard physics; /measurement-without-observers says No Differing Prediction"),
+    (r"coherence function predicts where and why", "2026-10-16",
+     "the galaxy transition scale is fitted (C_g = MOND's mu), not predicted"),
+    (r"follows from Synchronism(&apos;|')s coherence function", "2026-10-16",
+     "a0 = cH0/2pi is posited by dimensional analysis; C(rho) contains no a0"),
+    (r"1,703 fitted (γ|&#x03B3;) values|1,703 phenomena validated|Chemical phenomena analyzed", "2026-10-16",
+     "1,703 is a session counter (type = session - 137), not a census of phenomena or of fitted gamma values"),
+    (r"14,435-object", "2026-10-16",
+     "TEST-03 registered on the 14,585-galaxy cross-match; 14,435 is the post-cut sample that was run (for a morphology statistic)"),
+    (r"step 5 of 6", "2026-10-16", "the Beginner Path has 5 steps"),
+    (r"lab-data refutation|ephemeris, and laboratory data", "2026-10-16",
+     "none of the six refutations is laboratory data; B1 is a simulation run"),
+    (r"is consistent with CDM, not a constraint", "2026-10-16",
+     "CDM verdict on sigma_int = 0.086 is suspended (Desmond 2017 ~0.25 dex)"),
+    (r"specifically is not yet computed", "2026-10-16",
+     "direct tail computed 2026-10-15: gamma >= 0.87 at 3 sigma on EPM2011"),
+    (r"PCI\* = 0\.31,? Casali|\(PCI\* = 0\.31, Casali", "2026-10-16",
+     "the PCI* = 0.31 cut-off is Casarotto et al. 2016; Casali et al. 2013 introduced PCI"),
+    (r"Synchronism makes no statement on H₀\. If", "2026-10-16",
+     "a0 = cH0/2pi ties a0 to H0; say it offers no resolution of the tension"),
 ]
 
 # Numbers that may appear only with their qualifier nearby (within CONTEXT_LINES lines either side).

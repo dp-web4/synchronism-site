@@ -33,7 +33,7 @@ export default function AutonomousResearch() {
           <div className="card">
             <h3 style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>2,671</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Chemistry track sessions. 1,703 phenomena validated, 1,873 phenomenon types documented.
+              Chemistry track sessions. 1,703 sessions logged as &ldquo;phenomenon types&rdquo; (a session counter, not a census; no validation).
             </p>
           </div>
           <div className="card">

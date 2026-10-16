@@ -301,7 +301,7 @@ export default function ResearchPhilosophy() {
           on external data and simulation, and do not depend on it. A human (dp) reviews borderline cases and maintains the
           validation badge taxonomy.
           <strong>A2ACW&apos;s calibration, stated as a calibration:</strong> of the 9 claims its top verdict passed, 0
-          survived later audit (positive predictive value 0/9; the 95% upper bound is about 28%). Every demotion came from a
+          survived later audit (positive predictive value 0/9; the one-sided 95% upper bound is about 28%, or 34% two-sided). Every demotion came from a
           <em>later</em> audit pass, not from the challenge cycle itself. So A2ACW works as a search heuristic and as an
           after-the-fact filter for reparametrizations; its approval step is uncalibrated. Every badge is the product of at
           least one full A2ACW challenge cycle &mdash; which, given that record and the

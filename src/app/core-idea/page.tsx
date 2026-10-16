@@ -330,7 +330,7 @@ export default function CoreIdea() {
                 <h3>&#x03B3; &#x2248; 1: The Boundary</h3>
                 <p style={{ color: 'var(--color-text-secondary)' }}>
                   Phase transitions, chemistry, catalysis, biology. Where the S-curve has intermediate steepness.
-                  1,703 phenomena cluster here at 89% boundary-consistency rate.
+                  89% of 1,703 logged chemistry sessions (a session counter, not a census of phenomena) landed here.
                 </p>
                 <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
                   Null model run (2026-05-10): a plain 2-parameter polynomial in atomic number matches these

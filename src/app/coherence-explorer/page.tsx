@@ -219,7 +219,7 @@ export default function CoherenceExplorer() {
           numbers are part of why the framework failed its galaxy test.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '-0.5rem', marginBottom: '1rem' }}>
-          Default &#x03B3; = 0.49 is the galaxy-fit value, fitted with acceleration (g/a&#x2080;&prime;) as the argument, not density; the same curve shape, a different variable. See the caveats below for why it fails in the Solar System.
+          Default &#x03B3; = 0.49 is the galaxy-fit value, fitted with acceleration (g/a&#x2080;&prime;) as the argument, not density; the same curve shape, a different variable. See the caveats below for why it fails in the Solar System (the presets quote that miss in &sigma;, standard deviations: 8.7&sigma; means the mismatch is 8.7 times the measurement uncertainty, far beyond chance). The tool opens on this value because it is the one galaxy data pick, not because the framework stands behind it; no &#x03B3; here is one the framework predicts. All the &#x03B3; values in use, with their variables: <Link href="/glossary#which-c-which" style={{ color: 'var(--color-accent-blue)' }}>Which C? Which &#x03B3;?</Link>
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>

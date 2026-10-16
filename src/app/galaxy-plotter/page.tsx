@@ -300,7 +300,7 @@ export default function GalaxyPlotter() {
           <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>.)
           The violet curves on this plotter are two display wirings of C<sub>&#x03C1;</sub> (division and quadrature), not
           solutions of any field equation — see the formula box below. See{' '}
-          <a href="/honest-assessment#test-04a" style={{ color: 'var(--color-accent-blue)' }}>what the tests actually say →</a>
+          <a href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>what the tests actually say →</a>
         </p>
         <div style={{
           background: 'rgba(245, 158, 11, 0.08)',

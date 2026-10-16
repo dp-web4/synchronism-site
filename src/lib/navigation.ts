@@ -330,7 +330,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'The \u03B3 \u2248 1 Boundary',
       href: '/gamma-boundary',
-      desc: 'Where 1,703 fitted γ values cluster; fitted, not predicted',
+      desc: 'Where the chemistry track\'s fitted γ values cluster (1,703 is a session counter); fitted, not predicted',
       keywords: ['gamma', 'boundary', 'quantum', 'classical', 'phenomena', 'chemistry'],
       prerequisites: ['/gamma-parameter', '/phase-transitions'],
       related: ['/sound-velocity', '/electronegativity', '/chemistry-correlation-explorer'],
@@ -522,7 +522,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Tier 2: Pilot Experiments',
       href: '/tier-2-pilots',
-      desc: '4 tests, $50K\u2013$200K each',
+      desc: '4 tests, $5K\u2013$150K each',
       keywords: ['tier 2', 'pilot', 'experiment', 'EEG', 'circadian'],
       prerequisites: ['/test-catalog'],
       related: ['/tier-1-existing', '/tier-3-major'],
@@ -657,7 +657,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Chemistry Correlation Explorer',
       href: '/chemistry-correlation-explorer',
-      desc: 'Browse the 1,703 phenomena, sort by correlation',
+      desc: '23 curated chemistry rows, sort by correlation',
       keywords: ['chemistry', 'correlation', 'explorer', 'phenomena', 'browse'],
       related: ['/gamma-boundary', '/sound-velocity'],
     },

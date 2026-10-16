@@ -412,6 +412,12 @@ export default function DarkEnergy() {
 
         <div id="growth-readings" className="card" style={{ marginTop: '1.25rem', scrollMarginTop: '5rem', borderLeft: '3px solid #f59e0b' }}>
           <h3 style={{ marginTop: 0 }}>One observable, three readings: growth fσ₈ at z = 0.51</h3>
+          <p style={{ fontSize: '0.92rem', color: 'var(--color-text-primary, inherit)' }}>
+            <strong>The root cause first: the background is defined, the perturbations are not.</strong> The substitution
+            G &rarr; G/C fixes the expansion history, but without an action there is no unique rule for how C enters the
+            growth of structure, so there is no unique growth prediction. The three numbers below are three choices of that
+            rule, not three measurements of one prediction.
+          </p>
           <p style={{ fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
             A researcher visitor (2026-10-07) found two incompatible growth numbers on this site, &minus;0.22% here and
             0.418 (12% suppression) on TEST-04a, and asked the obvious question: if gravity is G/C with C &le; 1, why

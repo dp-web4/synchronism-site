@@ -91,13 +91,28 @@ export default function DarkMatter() {
           At the low accelerations found in galactic outskirts (below ~10<sup>&minus;10</sup> m/s&sup2;),
           gravity itself may work differently. This is not a new idea &mdash; Milgrom proposed it in 1983
           as <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>MOND</Link>.
-          What Synchronism adds is a mechanism: the coherence function predicts where and why the
-          transition occurs.
+          Could Synchronism add a mechanism, something that says <em>where and why</em> the transition
+          happens? That was the proposal. The answer so far is no. The galaxy fits that work use a coherence
+          function keyed on acceleration, which is MOND&apos;s own interpolating function in new notation, and the
+          transition scale is fitted, not predicted.
         </p>
 
-        <EquationDisplay size="sm" label="The MOND acceleration scale emerges from cosmology">
-          a&#x2080; = cH&#x2080;/(2&#x03C0;) &#x2248; 1.04 &times; 10<sup>&minus;10</sup> m/s&sup2;
+        <EquationDisplay size="sm" label="Could the transition scale come from cosmology? A known coincidence, not a prediction">
+          a&#x2080; &#x2248; cH&#x2080;/(2&#x03C0;) &#x2248; 1.04 &times; 10<sup>&minus;10</sup> m/s&sup2;
         </EquationDisplay>
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          cH&#x2080; is the only acceleration cosmology offers, and a&#x2080; &#x2248; cH&#x2080;/2&#x03C0; has been
+          noticed since 1983 (Milgrom). It sits 13% below the conventional 1.2&times;10<sup>&minus;10</sup> m/s&sup2;.
+          The density-keyed coherence function C(&#x03C1;) contains no a&#x2080; at all, so this number is
+          dimensional bookkeeping, not something the framework derives.
+        </p>
+        <details style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0.25rem 0 1rem' }}>
+          <summary>Revision notes (history; not the current claim)</summary>
+          Until 2026-10-16 this section said &ldquo;the coherence function predicts where and why the transition
+          occurs&rdquo; and labelled the equation &ldquo;The MOND acceleration scale emerges from cosmology&rdquo;, while the
+          page&apos;s own Related Concepts box called a&#x2080; &#x2248; cH&#x2080;/2&#x03C0; a 1983 coincidence. Flagged by a
+          simulated-visitor graduate-physics persona, 2026-10-16.
+        </details>
 
         <h2>What This Means</h2>
         <p>

@@ -178,7 +178,7 @@ export default function WhySynchronism() {
               spin speeds have been measured carefully at many distances from their centres;{' '}
               <strong>ALFALFA&ndash;SDSS</strong> is a much larger sky survey with one rough spin speed per
               galaxy); the
-              14,435-object Tully&ndash;Fisher scatter test was registered and never run as registered.
+              registered Tully&ndash;Fisher environment test (TEST-03, on the 14,585-galaxy cross-match) was never run as registered.
               <em style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}> (This card said &ldquo;14,760&rdquo;
               until 2026-09-06 while the landing page called that figure incorrect &mdash; Beginner step 1
               contradicting the page it came from. Now rendered from one source.)</em>{' '}
@@ -205,7 +205,7 @@ export default function WhySynchronism() {
           <div className="card">
             <h3>Chemistry: &#x03B3; &#x2248; 1 Boundary</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-              1,703 chemical phenomena cluster near the &#x03B3;&#x2248;1 boundary
+              Most of 1,703 logged chemistry sessions (one &ldquo;phenomenon type&rdquo; each, a counter rather than a census) fitted near the &#x03B3;&#x2248;1 boundary
               (sparse/independent &#x2194; dense/collective crossover).
               Sound velocity correlation: r = 0.982 &mdash; but the null model (run 2026-05-10) shows a
               plain polynomial in atomic number matches or beats these correlations, so they are

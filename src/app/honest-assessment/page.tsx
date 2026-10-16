@@ -565,7 +565,7 @@ export default function HonestAssessment() {
           substrate was tested directly against Bell&apos;s inequality and refuted on both no-signaling
           arms &mdash; see{' '}
           <Link href="#a2acw-self-audit" style={{ color: 'var(--color-accent-blue)' }}>below</Link> for
-          detail. The only executed lab-data refutation on the site.
+          detail. A simulation run (a construction check), not laboratory data; none of the six refutations uses laboratory data (corrected 2026-10-16).
         </p>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
           <strong>Added 2026-07-30:</strong> (3) and (4) were both executed and badged Failed/Refuted
@@ -574,7 +574,8 @@ export default function HonestAssessment() {
           list &mdash; the count&apos;s scope word (&ldquo;astronomical&rdquo;) filtered out the one
           ephemeris result and the one laboratory result without saying so, and both happen to be
           failures. Two simulated-visitor personas independently caught this the same day. The footer count is now
-          <strong> 6</strong>, spanning astronomical, ephemeris, and laboratory data.
+          <strong> 6</strong>: five on astronomical and ephemeris data plus the Bell/CHSH simulation run (until 2026-10-16 this
+          sentence said &ldquo;laboratory data&rdquo;; the B1 run is a simulation).
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>The entity criterion Γ&nbsp;&lt;&nbsp;m</strong>, previously labeled the sole surviving novel
@@ -761,7 +762,7 @@ export default function HonestAssessment() {
               <ValidationBadge status="reparametrization" label="Null Model RUN (2026-05-10) — Null-Class" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              1,703 chemical phenomena. Sound velocity r = 0.982, electronegativity r = 0.979.
+              1,703 logged chemistry sessions (a counter, not a census). Sound velocity r = 0.982, electronegativity r = 0.979.
               Top correlations are strong — and the relevant null <strong>has been computed</strong>: it
               matches them.
             </p>
@@ -1278,7 +1279,7 @@ export default function HonestAssessment() {
             </p>
           </div>
 
-          <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
+          <div className="card" id="test04a" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>TEST-04a: DESI RSD fσ₈ — Post-hoc Retrodiction, Disfavored on σ₈ but Underpowered on the Registered Statistic (Corrected 2026-07-14)</h3>
               <ValidationBadge status="failed" label="Disfavored 2.4σ on σ₈ (a GR-conditioned statistic); ~0.9σ on the registered fσ₈(z=0.51); underpowered as registered; post-hoc, not counted as a refutation (numbers corrected 2026-10-10)" />
@@ -1775,7 +1776,7 @@ export default function HonestAssessment() {
             </p>
           </div>
 
-          <div className="card" style={{ borderLeft: '3px solid #ef4444' }}>
+          <div className="card" id="h0-tension" style={{ borderLeft: '3px solid #ef4444' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>H₀ Tension — Not Addressed</h3>
               <ValidationBadge status="speculative" label="No prediction" />
@@ -1783,7 +1784,8 @@ export default function HonestAssessment() {
             <p style={{ color: 'var(--color-text-secondary)' }}>
               The Hubble tension — a ~5σ discrepancy between early-universe (CMB) and late-universe
               (distance-ladder) measurements of H₀ — is the dominant open problem in cosmology (2018–2026).
-              Synchronism makes no statement on H₀. If C(ρ) couples to expansion-rate physics via
+              Synchronism&apos;s a₀ = cH₀/(2π) ties a₀ to H₀ (see the correction below), but the framework offers no
+              resolution of the tension. If C(ρ) couples to expansion-rate physics via
               ρ_crit ↔ Λ, there should be a prediction about how coherence modifies recombination
               (early-time fix) or late-time acceleration (late-time fix). Neither has been worked out.
               A framework claiming cosmological scope that does not address H₀ tension is leaving

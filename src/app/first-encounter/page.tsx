@@ -30,7 +30,7 @@ const steps = [
     (predicted correlation +0.55, measured −0.55), and N_corr had to be defined differently in every field to make
     it work. When γ is simply fitted to galaxy data it comes out near 0.5 — the value at which the equation turns
     into MOND's (MOND: a 40-year-old rival idea that says gravity itself gets stronger than Newton predicts in very weak
-    fields, instead of adding dark matter; section E says more). So read γ = 2/√N_corr as the starting hypothesis, not as how things work.
+    fields, instead of adding dark matter, a proposed invisible substance that has never been directly detected and is inferred only from its gravitational pull; section E says more). So read γ = 2/√N_corr as the starting hypothesis, not as how things work.
     γ in three lines, since the page meets it three times: (1) proposed γ = 2/√N_corr: failed. (2) Galaxies, with stars
     as uncorrelated units, γ = 2: loses to MOND on real rotation curves (only just, once whole galaxies rather than
     individual data points are counted). (3) γ fitted freely ≈ 0.5: this is exactly MOND's own formula, so it matches MOND

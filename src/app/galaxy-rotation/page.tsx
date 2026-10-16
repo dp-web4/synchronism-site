@@ -453,12 +453,20 @@ export default function GalaxyRotation() {
             about 10⁵ times smaller. Nor can the tail hide in GM☉: a near-constant δg makes δg/g grow as ~r² from
             planet to planet. The literature finds this branch (simple μ, slow power-law return) already disfavoured by
             planetary ephemerides, independently of the external-field effect (Hees et&nbsp;al. 2016; Blanchet &amp; Novak
-            2011). That is a <em>literature</em> result: it has not been re-executed on this site, and the size of the
-            exclusion for the compander specifically is not yet computed. It is also inherited, not framework-specific
-            &mdash; at γ = &frac12; the compander <em>is</em> simple μ. The executed test on this page remains TEST-25&apos;s
-            Q₂ computation above.
+            2011). <strong>Computed for the compander (explorer 2026-10-15):</strong> on EPM2011 supplementary perihelion
+            precessions (Pitjeva &amp; Pitjev 2013; mas/cy) the direct tail excludes γ &lt; 0.87 at 3σ (Saturn binds; INPOP15a&apos;s
+            conservative full-refit interval gives 0.78), and the SPARC-preferred γ = 0.489 misses Saturn by about 2×10⁴σ
+            (−9,576 vs −0.32 ± 0.47 mas/cy). That empties the point-level SPARC intersection without the quadrupole
+            (ΔBIC +59 to reach 0.87). At galaxy level it does not: the published-nuisance interval reaches 0.95, so a reading
+            with no external-field effect survives at γ ≈ 0.87–0.95 for about 1.2σ of SPARC cost, less than the ~2σ the
+            Q₂-passing γ ≳ 1.5 needs. For readings with no external field, the binding Solar-System number is 0.87, not 1.5.
+            It is also inherited, not framework-specific &mdash; at γ = &frac12; the compander <em>is</em> simple μ. (
+            <a href="https://github.com/dp-web4/synchronism-site/blob/main/explorer/findings/direct-tail-planetary-precession-floor-gamma-087-closes-point-level-not-galaxy-level.md" style={{ color: 'var(--color-accent-blue)' }}>finding</a>;
+            supplementary precessions fitted without the tail in the dynamical model, the standard Iorio-style test.)
             <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
               <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+              Until 2026-10-16 this box said the literature result &ldquo;has not been re-executed on this site, and the size of the
+              exclusion for the compander specifically is not yet computed.&rdquo; The explorer computed it on 2026-10-15.{' '}
               This box used to explain the empty intersection as a tail-shape mismatch, with the exponential tail
               &ldquo;indistinguishable from zero at any precision.&rdquo; It concluded that the compander sits in the simple-μ branch
               the Solar System had closed while McGaugh&apos;s branch survives. That compared the direct anomaly at Saturn, but

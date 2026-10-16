@@ -143,14 +143,24 @@ export default function KeyClaims() {
             EEG/fMRI, AQUAL) are expanded at first use. Flagged by simulated-visitor personas, 2026-10-06.
           </details>
 
-          <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem', marginTop: '1rem' }}>Why this isn&apos;t &ldquo;just an interpretation&rdquo;</h3>
+          <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem', marginTop: '1rem' }}>Could the reframe generate different predictions?</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            Standard interpretations all give the same predictions. Synchronism&apos;s reframe generates
-            different ones because the ontology is different. If decoherence is desynchronization
-            (not information loss), then the remedy is resynchronization (not isolation).
+            Standard interpretations of quantum mechanics all give the same predictions. The hope was that
+            a different ontology would give different ones. If decoherence is desynchronization
+            (not information loss), then the remedy would be resynchronization (not isolation).
             If entanglement is one pattern (not two correlated objects), then shared environments
-            protect it. Proposed engineering consequences (current status per badge):
+            would protect it. <strong>So far, none of these differs from standard physics.</strong> Each candidate
+            below maps onto known physics, and a differing prediction would need an MRH rate equation that
+            does not exist yet (see{' '}
+            <Link href="/measurement-without-observers" style={{ color: 'var(--color-accent-blue)' }}>Measurement Without Observers</Link>:
+            &ldquo;No Differing Prediction&rdquo;). Proposed engineering consequences (current status per badge):
           </p>
+          <details style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0.25rem 0 0.5rem' }}>
+            <summary>Revision notes (history; not the current claim)</summary>
+            Until 2026-10-16 this heading read &ldquo;Why this isn&apos;t just an interpretation&rdquo; and the lead said the
+            reframe &ldquo;generates different [predictions]&rdquo;, while every sub-card below was badged Reparametrization.
+            Flagged by a simulated-visitor researcher persona, 2026-10-16.
+          </details>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', margin: '1rem 0' }}>
             <div className="card" style={{ padding: '0.75rem 1rem', margin: 0, borderLeft: '2px solid #f59e0b' }}>
@@ -377,7 +387,7 @@ export default function KeyClaims() {
             quantitative threshold. This framework proposes a specific number, C&nbsp;&asymp;&nbsp;0.50, from 8 approaches
             (note: these share the same underlying framework, and 0.50 is the midpoint of a bounded output range, so the
             convergence is largely by construction; the empirical threshold that already exists is the perturbational
-            complexity index cut-off PCI* = 0.31, Casali et&nbsp;al. 2013, and no mapping from C to PCI has been written).
+            complexity index cut-off PCI* = 0.31, Casarotto et&nbsp;al. 2016, and no mapping from C to PCI has been written).
             The framework also <em>proposes</em> a reframing of the hard problem: that phase patterns at
             &#x03B3; &laquo; 0.001 are experience, not correlates of it. That is a philosophical identity claim, not a
             finding. It likewise <em>proposes</em> that free will sits at the &#x03B3; &#x2248; 1 boundary as constrained
@@ -446,7 +456,7 @@ export default function KeyClaims() {
             C-axis</strong>. Until such a protocol is defined, this claim is{' '}
             <strong>unfalsifiable as stated</strong> &mdash; not &ldquo;untested&rdquo; but unrunnable.
             For contrast, the anesthesia literature has an empirically calibrated threshold candidate
-            (PCI* = 0.31, Casali et al. 2013); the framework has no map from C to it or any other measurable.
+            (PCI* = 0.31, Casarotto et al. 2016); the framework has no map from C to it or any other measurable.
           </p>
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -542,8 +552,9 @@ export default function KeyClaims() {
           <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', fontSize: '0.82rem', color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
             <strong>The framework does make an H&#x2080; statement — an unflattering one (added 2026-07-27).</strong>{' '}
             <a href="/honest-assessment#h0-tension" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}
-            says &ldquo;Synchronism makes no statement on H&#x2080;&rdquo; while this claim carries
-            a&#x2080; = cH&#x2080;/(2&#x03C0;). Those cannot both hold: invert the relation with the measured
+            said &ldquo;Synchronism makes no statement on H&#x2080;&rdquo; until 2026-10-16 while this claim carries
+            a&#x2080; = cH&#x2080;/(2&#x03C0;); its H&#x2080; card now says the relation ties a&#x2080; to H&#x2080; but offers no
+            resolution of the tension. Invert the relation with the measured
             a&#x2080; = 1.2 &#x00D7; 10&#x207B;&#x00B9;&#x2070; and you get
             H&#x2080; = 2&#x03C0;a&#x2080;/c &#x2248; <strong>77.6 &plusmn; 15.5 km/s/Mpc</strong> once
             a&#x2080;&apos;s own systematic (1.20 &plusmn; 0.24 &times; 10&#x207B;&#xB9;&#x2070; m/s&sup2;, McGaugh et al. 2016)
@@ -658,7 +669,7 @@ export default function KeyClaims() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             Tested against {GALAXIES_RUN} galaxies ({GALAXIES_RUN_BREAKDOWN}); the mechanism itself was
             tested on the {GALAXIES_MECHANISM} resolved SPARC rotation curves (123 for TEST-09, 153 for TEST-10) &mdash;
-            the 14,435-object Tully&ndash;Fisher scatter test (TEST-03) was registered and never run as registered.
+            the registered Tully&ndash;Fisher environment test (TEST-03, on the 14,585-galaxy cross-match) was never run as registered.
             (&ldquo;14,760&rdquo; stood here until 2026-09-06; corrected to the ledger figure.) a&#x2080; derivation within 13%.
             Freeman&apos;s Law &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#8776; 119 M&#x2609;/pc&sup2; at the
             site-standard H&#x2080; = 67.4 km/s/Mpc &mdash; consistent with Freeman&apos;s observed normalization

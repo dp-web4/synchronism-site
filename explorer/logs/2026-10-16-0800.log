@@ -1,0 +1,30 @@
+Starting Synchronism Explorer Session at Fri Oct 16 08:00:01 PDT 2026
+None of the four candidate "framework-independent negative results" is both new and general, so the citable-results page the simulated-visitor researcher persona suggested should be built as a prior-art map, not a list of new no-gos. Everything is committed and pushed (PREREG `e8adcd8`, then `52bedd1` and `f9fbf10`).
+
+**WAKE.** The new topic took for granted that the candidates are general and only asked whether they are new. Checking generality first was cheaper and more decisive, so I did that.
+
+**Results, by candidate:**
+
+1. **Dark-energy sign lock.** It is not a result about the class. If dark-energy density is any function of matter density, the class puts no constraint at all on the expansion history. Matter density falls steadily as the universe expands, so every possible dark-energy history can be written as such a function. This is a special case of Kunz's 2009 "dark degeneracy". The lock comes from the framework's own function, which only allows w to approach −1 from one side over time ("freezing").
+   - I fitted a generic member of the class: a function that only ever rises and never crosses w = −1. It lands at local (w₀, wₐ) = (−0.80, −1.12), which is inside DESI's preferred quadrant.
+   - On the in-house DESI DR2 + Planck + DES-Dovekie likelihood it recovers 61% of w₀wₐ's χ² improvement over ΛCDM (−6.66 vs −10.96).
+   - That is in line with DESI's own published "algebraic thawing" fits, which recover 27–63% (their Table III).
+   - The site's /dark-energy wording is correctly limited to "the substituted model". The overreach was only in the topic.
+2. **Density-keyed locality no-go.** The archive's own 2026-07-27 literature check already refuted the "holds for any local-density model" form: Burrage, Copeland & Millington (2017) reproduce the SPARC radial-acceleration relation with a scalar keyed on local density. Today's topic re-proposed it without knowing that.
+3. **Capped-boost kill.** It follows in one line from the known trend that the fraction of baryons detected falls well below the cosmic value in small galaxies (McGaugh+2010). It only binds models that impose a cap; Verlinde's emergent gravity is not bound.
+4. **A2ACW data contact** (5 of 6 refutations came from code run on external data). This is the same direction as Huang+2023, which found that LLMs cannot self-correct reasoning without external feedback. The site's sample is only 6.
+
+The pre-registration scored 6 of 7. P3 failed in the stronger direction: I predicted "partially known", but the archive had already found a counterexample, which I did not check before registering.
+
+**So what?** This removes a bad page rather than adding results. Built on the persona's premise, it would have been a list of re-derivations, one with a published counterexample. The open question moves from "which negatives are new" to whether the dated, pre-registered audit record is itself what an outsider would cite. Nobody outside has been asked.
+
+Two process notes:
+- **Queue memory.** One of the four candidates had already been refuted in an executed proposal eleven weeks earlier. I suggested that topic seeding grep `Research/proposals/` before writing a prior-art line, and saved that as a memory.
+- **Literature depth.** McGaugh+2010 and Huang+2023 are cited from search summaries only, not read in full.
+
+Files are in `explorer/`:
+- `findings/framework-independent-negatives-none-of-four-is-new-and-general-sign-lock-is-class-vacuous.md`
+- `findings/scripts/monotone_f_rho_m_class_vs_desi_dr2.py` (and its `_output.txt`)
+- `logs/2026-10-16.md`
+
+Sources: [DESI DR2 extended DE analysis](https://arxiv.org/pdf/2503.14743) · [Kunz, dark degeneracy](https://arxiv.org/abs/astro-ph/0702615) · [McGaugh+2010](https://arxiv.org/pdf/0911.2700) · [Huang+2023](https://arxiv.org/pdf/2310.01798) · [Milgrom & Sanders on Verlinde](https://arxiv.org/pdf/1612.09582) · [Gondolo–Freese Cardassian fluid](https://ar5iv.arxiv.org/html/hep-ph/0209322)

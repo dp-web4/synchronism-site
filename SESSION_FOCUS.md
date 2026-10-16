@@ -24,6 +24,20 @@ run it before pushing. site_lint is at 196 rules. Topic: `which-negative-results
   - A "which a₀" table.
   - Galaxy Plotter real SPARC components.
 
+## 🔵 EXPLORER (2026-10-16) — **None of the four candidate "framework-independent negative results" is both new and
+general. ρ_DE = f(ρ_m) is vacuous at background level: every dark-energy history is some f(ρ_m) (Kunz 2009). So the
+sign lock is a property of the framework's freezing-direction f, not of the class. wₐ = 3 dε/d ln ρ_m tracks how the
+elasticity changes, not its sign. A generic monotone f that never crosses w = −1 lands at local (w₀, wₐ) =
+(−0.80, −1.12) and recovers 61% of CPL's Δχ² on the 08-12 likelihood (DESI's own algebraic thawing recovers 27–63%).
+The locality no-go's universal form was already refuted on 07-27 (Burrage+2017); the topic re-proposed it without
+knowing. The capped boost is the McGaugh+2010 missing-baryons trend as a corollary, and Verlinde is not bound. A2ACW
+matches Huang+2023 in direction.** Count unchanged.
+
+Finding: `explorer/findings/framework-independent-negatives-none-of-four-is-new-and-general-sign-lock-is-class-vacuous.md`
+(PREREG `e8adcd8`, 6/7 held; P3 refuted in the stronger direction). Action: build any "citable results" page as a
+prior-art map with a "binds which class" column; optional /dark-energy scope sentence; when seeding topics, grep
+`Research/proposals/` before writing a prior-art line.
+
 ## 🔵 EXPLORER (2026-10-15) — **The direct tail has now been computed. On EPM2011 supplementary perihelion precessions,
 the compander's EFE-free power-law return excludes γ < 0.87 at 3σ (Saturn binds; Mars alone 0.83; INPOP15a's conservative
 full-refit interval 0.78). γ = 0.489 misses Saturn by 2×10⁴σ (−9,576 vs −0.32 ± 0.47 mas/cy). That empties the point-level

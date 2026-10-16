@@ -1,0 +1,43 @@
+===============================================================================
+1. LOCAL (w0, wa) AND CROSSING FOR MONOTONE f(rho_m); rho_m0 = 0.3, f(rho_m0) = 0.7
+===============================================================================
+  model                                    w0       wa  sign lock?   f' sign change (crossing)?
+  framework tanh-log gamma=0.3         -0.837   +0.236         yes                        False
+  framework tanh-log gamma=0.5         -1.000   -0.000         yes                        False
+  framework tanh-log gamma=0.8         -1.112   -0.268         yes                        False
+  sat x0=0.5                           -0.229   -0.626          NO                        False
+  sat x0=2.0                           -0.687   -1.233          NO                        False
+  sat x0=2.9                           -0.831   -1.048          NO                        False
+  pow n=0.5 q=0.2                      -0.900   +0.120         yes                        False
+  pow n=-0.5 q=0.2                     -1.100   +0.120          NO                        False
+  pow n=0.5 q=-0.2                     -1.100   -0.180         yes             False (f=0 pole)
+  inverse L - b/rho                    -0.857   -0.490          NO             False (f=0 pole)
+  Expectation: framework rows obey the lock (control); 'sat' and 'inverse' rows break it
+  with w0 > -1, wa < 0 and no crossing.
+
+===============================================================================
+2. DIRECT FIT: DESI DR2 BAO + Planck18 distance priors + DES-Dovekie (same likelihood as 08-12)
+===============================================================================
+  LCDM                               chi2 =  1650.608  (BAO  12.606 | CMB  3.113 | SN 1634.889)  Om=0.3023 h=0.6840 ob=0.02252 
+  w0waCDM                            chi2 =  1639.648  (BAO   9.558 | CMB  0.602 | SN 1629.488)  Om=0.3132 h=0.6749 ob=0.02243 w0=-0.8194 wa=-0.6503
+  sat (monotone, thawing, no cross)  chi2 =  1643.949  (BAO  10.760 | CMB  4.368 | SN 1628.821)  Om=0.3129 h=0.6714 ob=0.02256 x0=2.6569
+  pow L + K rho^n (monotone)         chi2 =  1643.081  (BAO  11.068 | CMB  4.142 | SN 1627.870)  Om=0.3181 h=0.6660 ob=0.02255 n=-8.0000 q=-0.0949
+
+  sat profile over x0 (w0_local = -1 + x0/(e^x0 - 1)):
+    x0=  0.3  w0_local=-0.143  chi2= 2399.071  Δ vs LCDM=+748.462
+    x0=  1.0  w0_local=-0.418  chi2= 1768.229  Δ vs LCDM=+117.621
+    x0=  2.0  w0_local=-0.687  chi2= 1649.728  Δ vs LCDM= -0.880
+    x0=  3.0  w0_local=-0.843  chi2= 1644.514  Δ vs LCDM= -6.094
+    x0=  5.0  w0_local=-0.966  chi2= 1649.420  Δ vs LCDM= -1.188
+    x0= 10.0  w0_local=-1.000  chi2= 1650.601  Δ vs LCDM= -0.007
+
+  Delta chi2 vs LCDM / vs CPL, and CPL projection of each best fit:
+    cpl   Δχ²(LCDM) =  -10.960   Δχ²(CPL) =   +0.000
+    sat   Δχ²(LCDM) =   -6.659   Δχ²(CPL) =   +4.301   CPL projection w0=-0.895 wa=-0.230 (rms 0.17%)
+    pow   Δχ²(LCDM) =   -7.528   Δχ²(CPL) =   +3.432   CPL projection w0=-0.856 wa=-0.330 (rms 0.37%)
+    pow best fit: f' sign changes over e^-6..e^10 x rho_m0? False (sign changes of 1+w there come only from f=0 poles: True)
+    lcdm  k=3  AIC-AIC_LCDM =   +0.00   BIC-BIC_LCDM =   +0.00  (N=1836, SN-dominated)
+    cpl   k=5  AIC-AIC_LCDM =   -6.96   BIC-BIC_LCDM =   +4.07  (N=1836, SN-dominated)
+    sat   k=4  AIC-AIC_LCDM =   -4.66   BIC-BIC_LCDM =   +0.86  (N=1836, SN-dominated)
+    pow   k=5  AIC-AIC_LCDM =   -3.53   BIC-BIC_LCDM =   +7.50  (N=1836, SN-dominated)
+    sat best fit x0=2.657: local w0=-0.800, local wa=-1.117

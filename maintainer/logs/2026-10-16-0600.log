@@ -1,0 +1,32 @@
+Starting Synchronism Maintainer Session at Fri Oct 16 06:00:01 PDT 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+Today's session is finished, and both repos are pushed: site commit `3b3c5c8` (Vercel deploys it) and research commit `505fd0fd`. The build passes and the retired-phrase lint is clean. No prediction changed bucket, the refutation count stays at 6, and the confirmed-prediction count stays at 0.
+
+**Wake check.** The visitor's main finding was that "the bottoms of pages are more honest than the tops": badges and fine print had caught up with corrections, but headline sentences had not. The research prediction ledger (`PREDICTIONS.md`) has the same problem. Its summary tables still quote the γ = 2 pin's "+184" as if it were settled. They also label it with the wrong function (C(ρ) instead of C_g). Two later correction notes in the same file changed both points. I wrote this up as a proposal before fixing anything. I did not edit the tables myself, because how they get edited is the project lead's call.
+
+**Site fixes:**
+- **Overclaiming openings, all four rewritten as questions with honest answers:**
+  - /key-claims Claim 1 ("the reframe generates different predictions")
+  - /dark-matter ("a₀ emerges from cosmology")
+  - the a₀ card on /parameter-derivations ("follows from the coherence function"), which now also carries the explorer's 10-14 base-rate sentence
+  - /cdm-discrimination's "consistent with CDM", now marked suspended
+- **Numbers that meant different things on different pages:**
+  - "1,703" is now described as a count of chemistry sessions, not of phenomena, on 15 places across the site.
+  - The galaxy-sample sentence wrongly said TEST-03 was registered on 14,435 galaxies (it was 14,585); fixed at its shared source.
+  - The γ Calculator now explains why "galaxy" shows up as both 0.49 and 2.
+- **Explorer's 10-15 result applied:** the planetary-precession bound (γ ≳ 0.87) is now on /galaxy-rotation, the TEST-25 card and /mond-unification. TEST-25 also cites the newer 3–15σ range next to 8.7σ.
+- **TEST-09:** I recomputed the visitor's σ-distances from the script output. They are 3.4σ, 2.6σ and 2.2σ, not the visitor's 3.4/2.4/2.1. Every candidate counting rule changes whether TEST-09 is in the count of 6, in one direction or the other, so this goes into the open counting-rule question for the project lead.
+- **Smaller fixes:** the H₀ statement, the two "laboratory data" sentences, the PCI\* citation (Casarotto 2016), the Tier 2 cost range (actually $5K–$150K, not either quoted range), "step 5 of 6", the cut-off Berezhiani & Khoury sentence, the σ explanation, the dark-matter definition on First Encounter, and the growth section now opening with its root cause.
+
+**Tools:**
+- 11 new lint rules. They catch 19 instances on the previous version and 0 now.
+- A new `maintainer/tools/fragment_check.py` checks in-page `#anchor` links. Besides the visitor's broken links, it found two more, and all are fixed.
+
+One process slip: my first check of the new lint rules used `git stash`, which my own notes say not to do because it also hides the lint changes. I redid the check properly on a clean copy of the old version.
+
+**Research repo:** a new note in `PREDICTIONS.md` and the proposal `the_ledger_tables_lag_their_own_blocks_and_test09_under_three_rules_20261016.md`.
+
+**For the explorer:** a new topic, `which-negative-results-generalize-beyond-the-framework.md`. It asks which of the site's negative results hold beyond this framework and whether the literature already has them.
+
+**Next session:** the largest fix left is restructuring /honest-assessment: a 10-line scoreboard first, with the dated correction layers collapsed below it. The rest of the deferred list is in `maintainer/logs/2026-10-16.md`. There were no new external issues or PRs.

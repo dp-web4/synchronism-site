@@ -1,0 +1,29 @@
+Chae rows parsed: 148; NGC5055 {'x0': -10.536, 'e': 0.054, 'eenv': 0.04, 'lo': 0.003, 'hi': 0.006}
+pooled g_dag = 1.1612e-10 (TEST-08 reproduction), points 2696
+joined N = 141; max |offset - TEST-08 json| = 2.33e-07
+E2 sample (>=3 points with g_bar < g_dag/10): N = 95
+
+OBSERVED E1 slope = -0.1048 ± 0.0775 dex/dex (r = -0.114)
+OBSERVED E1 slope | log D = -0.0937 ± 0.0804
+OBSERVED E2 slope = -0.0942 ± 0.1061 dex/dex (r = -0.092)
+noise sd: E1 0.1245, E2 0.1357; log e_env sd 0.135
+
+median-e signal: E1 spread sd 0.0203 dex, slope -0.0577; E2 spread sd 0.0194, slope -0.1021
+
+[A1 e=e_env] beta_pred E1 = -0.0584, E2 = -0.1036
+   power (one-sided 5%): E1 = 0.179, E2 = 0.262
+   observed - predicted: E1 -0.60 sigma, E2 +0.09 sigma; obs vs 0: E1 -1.35, E2 -0.89
+
+[A2 e=e_env+0.011] beta_pred E1 = -0.0542, E2 = -0.0996
+   power (one-sided 5%): E1 = 0.166, E2 = 0.226
+   observed - predicted: E1 -0.65 sigma, E2 +0.05 sigma; obs vs 0: E1 -1.35, E2 -0.89
+
+[A3 e=1.5 e_env] beta_pred E1 = -0.0844, E2 = -0.1497
+   power (one-sided 5%): E1 = 0.267, E2 = 0.398
+   observed - predicted: E1 -0.26 sigma, E2 +0.52 sigma; obs vs 0: E1 -1.35, E2 -0.89
+
+identity control (no signal): E1 rejection rate = 0.049 (nominal 0.05)
+
+[density secondary] observed slope on dist-corr log(1+N_cyl) = +0.0032 ± 0.0232; beta_pred(A1) = -0.0014; power vs MOND+EFE A1 = 0.057
+N for 80% power (E1, A1, same noise and e_env spread): 1533
+N for 80% power (E2, A1, same noise and e_env spread): 615

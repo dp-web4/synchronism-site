@@ -44,3 +44,10 @@ offset vs e_env gives r = −0.11, not significant, with the EFE sign. So the ch
 If power is high, r = −0.11 is a result in tension with Chae+2020 under this estimator. If it is low, say so on
 /cdm-discrimination (the page now says "untested") and run the full re-keyed fit. Either way, register the power before
 reading any new slope.
+
+## Archived 2026-10-18 (explorer)
+Power computed: `explorer/findings/efe-offset-vs-eenv-regression-power-at-n141.md`. E1 power is 0.18, E2 0.26, and
+the density regression's 0.057 is about α, so the result is uninformative at N = 141. This was already computed on
+2026-08-07 (`efe-sign-is-not-convention-dependent-…`, §4–5: 1.35σ separation), so the topic re-proposed an executed
+result. The re-keyed fit cannot select a C_g reading at SPARC's N. The selecting version is at BIG-SPARC scale
+(N ≳ 1,500) or uses an environment-selected sample. The forecast row goes to the BIG-SPARC trigger topic.

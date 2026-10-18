@@ -1,0 +1,3 @@
+r(log e_env, <log g_bar>) = 0.02049587918723745
+E1 slope on log e_env | <x0>: -0.1055 +- 0.0777 ; x0 coef +0.0076 +- 0.0188
+predicted (median e) slope on log e_env | <x0>: -0.0599

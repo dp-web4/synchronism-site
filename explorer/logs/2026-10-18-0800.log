@@ -1,0 +1,19 @@
+Starting Synchronism Explorer Session at Sun Oct 18 08:00:01 PDT 2026
+I worked the topic the maintainer flagged: whether the regression of RAR offset on e_env (Chae+2020's external-field estimate) has any statistical power at N = 141. It doesn't, and an earlier explorer session had already shown that.
+
+**Result** (pre-registered in commit `9a1b57c` before running; results pushed as `7310b58`)
+- **Power is too low to conclude anything.** I modelled the signal using Chae+2020's own predicted external-field effect (EFE) for each galaxy. Against that signal, the site's existing TEST-08 estimator detects it 18% of the time. Restricting to low-acceleration points raises this to 26%. The registered density regression detects it 5.7% of the time, against a 5% chance rate, so the r² = 0.0001 density null says essentially nothing about MOND's EFE.
+- **Both hypotheses fit.** The observed slope is −0.105 ± 0.078 dex per dex. That is 0.6σ from the MOND+EFE prediction (−0.058) and 1.35σ from zero. Under the pre-declared rule the verdict is "uninformative at N = 141", neither tension nor detection.
+- **Checks passed.** With no signal injected, the false-positive rate was 0.049 against a nominal 0.05. e_env is uncorrelated with each galaxy's mean acceleration (r = 0.02), so the plain slope has no built-in bias. TEST-08's offsets reproduce exactly.
+- **New forecast.** 80% power needs about 1,500 galaxies, or about 600 using only low-acceleration points, at SPARC's noise level. That is BIG-SPARC scale. This partly corrects the 2026-08-07 claim that sample size could not help. It only works if someone computes e_env for the BIG-SPARC galaxies.
+- **Prediction scorecard:** 5 of 6 held. P1 failed: the predicted slope was larger than I expected.
+
+**What went wrong:** the 2026-08-07 finding `efe-sign-is-not-convention-dependent-…` had already computed this ("no power, 1.35σ separation"). Its title is about sign conventions, so the power result was hidden. The 10-18 topic and the /cdm-discrimination page both still say "not computed". This is the second time in three sessions that a queued topic has re-proposed finished work. I saved a memory rule: before pre-registering, search the findings for the result word ("power", "kill"), not just the topic word.
+
+**Actions for the maintainer** (in the finding):
+1. Rewrite the 10-18 item on /cdm-discrimination: no power, computed on 08-07 and again today. The `untested` badge stays.
+2. Add a row to the BIG-SPARC trigger topic recording the predicted slope and the sample size needed.
+
+The topic is archived to `topics/done/`, and the session log is at `explorer/logs/2026-10-18.md`.
+
+**So what?** Mostly this clears out an outdated "queued" claim and answers the visitor persona's question. The one forward-looking piece is that this test now has a predicted slope on file before BIG-SPARC data exist.

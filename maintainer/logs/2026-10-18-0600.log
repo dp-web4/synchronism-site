@@ -1,0 +1,51 @@
+Starting Synchronism Maintainer Session at Sun Oct 18 06:00:01 PDT 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+Everything else for the session is done and pushed. The +2843 galaxy-block bootstrap is still running in the background; its PREREG was written before it ran. I'll fold its result into the log, and into /dark-matter if it changes anything, when it reports.
+
+Session complete. Everything is pushed: site `116c0a1`, `767ae16`, `6b0a00a`, `a050def`; research repo `b81e010e`, `fada3e79`. The build passes, the lint is clean (200 rules) and no anchors are broken. Count is still 6; Bucket 0 = 0.
+
+**WAKE:** the research-level signal today was about the self-critical bookkeeping, not the physics. Three of four simulated personas hit the same thing: the tally that summed to 17 of 26, "6 refutations" given as a single number, and "failed every decisive test". The graduate persona recomputed every physics number and all of them checked out. The decisions that would settle the count have been waiting on the project lead since 08-08 and 10-12. So the proposal asks dp to either rule on the counting rule or delegate it.
+
+**HIGH fixes**
+- **γ≈1 boundary:** the retracted "γ ≈ 1 is where chemistry and biology happen" is gone from the Coherence Explorer and the γ Calculator. The calculator now gives the user a task: press the BEC and BCS presets and see the mismatch with reality.
+- **Test Roadmap tally:** it is now four separate groups that add up on the page, 2 + 2 + 11 + 11 = 26, with test IDs and the 26 tests named.
+- **The "6":** it now says it is a range: 4 to 8 under counting rules already recorded in the ledger, at most 5 independent. "Every decisive test" is replaced with "no prediction that differs from MOND or ΛCDM survived the tests run".
+- **TEST-02:** the card now opens by saying the density-keyed branch already fails existing data at every calibration on file. All Gaia can still give is a range for γ.
+- **Superconductors:** the landing page and glossary now say in plain words why they score low. It is the sign-inversion failure showing through, not a subtle definition.
+- **Screened modified gravity:** new glossary entry and a /dark-matter box with the vacuum-chamber estimate:
+  - If density is read point by point, even ultra-high vacuum is 10⁶–10⁷ times denser than any galaxy knee on file.
+  - At γ = 0.489 the law then predicts g about 10⁻⁷ to 4×10⁻⁶ higher in an atom gravimeter's chamber than in a corner-cube gravimeter's. The two kinds of instrument are compared at about 10⁻⁹ (I didn't re-read a source for that level).
+  - The planets already force an averaging length of at least about 30 AU, so they settle the question before any tabletop test can.
+  - Three of my four predictions held; I'd predicted about 10⁻⁵ for the vacuum effect and got about 10× less.
+
+**+2843 bootstrap (run by a background agent; I checked its output file)**
+- It reproduced +2843 exactly. With each galaxy counted once instead of each data point, the 95% interval is [2178, 3590]. The density-keyed law is worse in 105 of 122 galaxies.
+- The page's "~20× discount" turned out to be just points per galaxy; the measured factor is about 17×. Unlike the +184, this verdict holds comfortably at galaxy level.
+- All 6 of its pre-registered predictions held. /dark-matter and the ledger now carry the measured numbers.
+- Four regenerable `.npy` files from that run are left untracked, since rm is only permitted under /tmp.
+
+**Smaller fixes**
+- **/dark-energy:** names the data behind "+11.0", and notes that any C = ρ/(ρ+K) gives exactly Λ.
+- **/gamma-boundary:** names the curvature peak at γ = 1/√2 (it depends on units, so it isn't physical).
+- **/cdm-discrimination:** the density null barely constrains MOND's external-field effect. It is labelled untested.
+- **/a2acw:** all nine benchmark items are now listed with their arms.
+- **/measurement-without-observers:** the measurement story's direction doesn't hold up on its own once the sign error is corrected.
+- **Other cleanups:** the crystal N_corr example, the landing badge legend, the MRH acronym overlap, and expanding QM.
+
+**Back-annotations:**
+- A new 10-18 block in PREDICTIONS.
+- Proposal `the_count_is_rule_dependent_and_the_tabletop_is_dominated_by_the_planets_20261018.md`. It lists two more table rows that lag their own blocks: "floor genuinely derived" and "N_corr survives".
+
+**Topics:** I seeded no new ones, because every persona question is already queued. I added a power-calculation deliverable to the existing EFE re-key topic.
+
+**For dp:**
+- Rule on the counting rule, or delegate it.
+- The table-row edits.
+- Retire or normalise the CCH score, whose "Healthy" band can't be reached.
+
+**External items:** nothing new was flagged. Synchronism#4 re-flags on 10-20 if it is still uncommented.
+
+**Deferred:** a single labels table, the /why-synchronism disclosure, and the marching-band analogy.
+
+**So what?** The vacuum-chamber estimate and the bootstrap each replaced an asserted sentence with a computed number. The count range is the first time the site holds its own self-critical number to the standard it applies to claims.

@@ -1,0 +1,27 @@
+BASE /home/dp/ai-workspace/Synchronism/simulations/sparc_real_data
+rows 2438, galaxies 122  (N/N_gal = 19.98)
+C_g  (accel-keyed, implicit, unfloored): -2lnL -7564.2  gamma 0.5093  a0 6.061e-11  sigma_int 0.1215
+C_rho(density-keyed, global rho_c)     : -2lnL -4721.7  gamma 0.0462  rho_c 2.979e-25  sigma_int 0.2261
+IDENTITY  dBIC(C_rho - C_g) = +2842.6  (target +2842.6 +/- 1%)  PASS
+    sum of per-point contributions = +2842.6 (must equal dBIC)
+P5  C_rho worse in 105/122 = 86.1% of galaxies (sign-test p = 5.7e-17)  HELD
+    top  1 galaxies carry   5.1% of the total
+    top  5 galaxies carry  20.6% of the total
+    top 10 galaxies carry  34.7% of the total
+    top 20 galaxies carry  54.9% of the total
+    top 10: UGC02953 +146 (108 pts), UGC05253 +142 (72 pts), UGC09133 +108 (67 pts), NGC2403 +100 (67 pts), NGC3741 +88 (19 pts), NGC2915 +84 (21 pts), NGC6946 +83 (54 pts), NGC3109 +80 (21 pts), UGC06787 +79 (67 pts), UGC02916 +75 (41 pts)
+    most C_rho-favoured 3: IC2574 -57, DDO161 -66, NGC5985 -77
+P6  top-10 share 34.7%  HELD
+    dBIC with the top 10 galaxies removed (params held): +1856.7
+    dBIC with the top 20 galaxies removed (params held): +1282.9
+    point-iid sd: sqrt(N var(per-point delta)) = 88.8;  crude sqrt(2|dBIC|) = 75.4
+    galaxy-iid analytic sd: sqrt(N_gal var(Delta_i)) = 371.5
+BOOT (refit, B=2000): median 2854, mean 2864, sd 371.2, 95% [2178, 3590], min 1689
+BOOT (params-fixed, B=2000): median 2849, mean 2849, sd 369.2, 95% [2141, 3556], min 1531
+    refit gamma: C_g median 0.512 [0.362, 0.894];  C_rho median 0.0464 [0.0391, 0.0556]
+P1  refit 95% lower edge 2178: > 10 HELD;  strong (> 1000) HELD
+P2  bootstrap sd (refit) 371.2: in [150, 600] HELD
+P3  N_eff = N var_iid/var_boot: params-fixed (like-for-like) 141;  refit 140  (N/N_eff = 17.3 / 17.5)  HELD
+P4  dBIC x N_eff/N: +164.5 (fixed)  +162.7 (refit)  HELD
+    dBIC with N -> N_gal (x N_gal/N): +142.2
+    z = dBIC / sd_boot(refit) = 7.7

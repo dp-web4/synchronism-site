@@ -78,7 +78,7 @@ export default function KeyClaims() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
               <div className="card" style={{ padding: '0.75rem', margin: 0 }}>
-                <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '0.25rem' }}>Standard QM</div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '0.25rem' }}>Standard QM (quantum mechanics)</div>
                 <div style={{ fontSize: '0.9rem' }}>Superposition = being in many states at once</div>
               </div>
               <div className="card" style={{ padding: '0.75rem', margin: 0, borderLeft: '2px solid var(--color-accent-violet)' }}>

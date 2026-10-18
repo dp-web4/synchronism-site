@@ -86,7 +86,12 @@ export default function Home() {
           same one and not its opposite: it measures how collectively a system&apos;s parts behave as density rises,
           while quantum coherence measures whether a system keeps a shared quantum phase. The two are separate
           axes, so a superconductor can be as quantum-coherent as matter gets and still score low C here (
-          <Link href="/coherence-explorer" style={{ color: 'var(--color-accent-blue)' }}>terminology note</Link>).
+          <Link href="/coherence-explorer" style={{ color: 'var(--color-accent-blue)' }}>terminology note</Link>).{' '}
+          <strong>Why it scores low, in plain words:</strong> the formula γ&nbsp;=&nbsp;2/√N<sub>corr</sub> gives a system
+          with <em>more</em> parts moving together a <em>flatter</em> curve, so at any ordinary density it scores low. Real
+          superconductors do the opposite: they switch on sharply. So the low score is not a subtle definition. It is the
+          framework&apos;s audited sign-inversion failure showing through (
+          <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>γ Calculator</Link>).
         </p>
       </section>
 
@@ -465,8 +470,8 @@ export default function Home() {
               More in the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
             </p>
             <p id="why-keep-reading" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.6rem 0 0', scrollMarginTop: '5rem' }}>
-              <strong>So is the idea alive or dead?</strong> As tested physics: dead — every decisive
-              test it ran, it lost, and this site says so. As a public record of how you find that out
+              <strong>So is the idea alive or dead?</strong> As tested physics: dead as far as it has been tested — no prediction
+              that differs from MOND or ΛCDM survived the tests run so far, and this site says so. As a public record of how you find that out
               honestly — and as an ontology that is mostly untested — it is alive and still being worked. Mostly,
               not wholly: its one sharp commitment, a single absolute clock, is something instruments <em>have</em>
               looked at for twenty years (Lorentz-violation searches), and the framework owes an answer to a known
@@ -552,7 +557,8 @@ export default function Home() {
             <h2>What Synchronism Covers</h2>
             <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0 0 0.75rem' }}>
               Badges used in the table below:{' '}
-              <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization · Speculative · Untested · Failed · Audited-Negative</Link>
+              <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization · Speculative · Failed</Link>
+              {' '}(the three that appear on the cards below; the full set of nine is at the link)
               {' '}— text after a dash inside a badge (e.g. &ldquo;Speculative — Untestable as Stated&rdquo;) is a finding descriptor, not a separate badge — definitions on the <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment page</Link>.
               {' '}<span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em' }}>("Validated" is deprecated; "Withdrawn" is an operational state, not a badge.)</span>
               <br />

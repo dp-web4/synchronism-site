@@ -185,12 +185,18 @@ export default function TestCatalog() {
           is the correction.
         </div>
         <p>
-          Synchronism has defined 24 experiments, each registered with a kill-criterion field (how many of those criteria could actually fire is tallied below) (TEST-01 through TEST-24; TEST-25 and TEST-26
-          below were added after the registry closed and are listed but not in this count) organized into four tiers
+          Synchronism has defined 24 experiments in its original registry (TEST-01 through TEST-24; TEST-25 and TEST-26
+          below were added after the registry closed), each with a kill-criterion field organized into four tiers
           by cost and feasibility. Every experiment has a kill-criterion <em>field</em>; most of those fields are not yet
-          specific enough to fire. Counted 2026-09-18 across all 26 rows: 2 are well-formed (a statistic, a threshold and a
-          significance the data can deliver), 3 state a significance at all, 11 contain no number, and TEST-07&apos;s reads
-          &ldquo;not falsifiable as stated&rdquo;. See <Link href="/falsifiability" style={{ color: 'var(--color-accent-blue)' }}>Falsifiability</Link> for the count. This page covers <em>proposed</em> tests; for results
+          specific enough to fire. Counted 2026-09-18 over the 26 kill fields then on the tier pages (TEST-01&ndash;24, TEST-04a
+          and TEST-25; TEST-26 had no tier-page card yet). Four disjoint groups, summing to 26:
+          {' '}<strong>2</strong> well-formed (a statistic, a threshold and a significance the data can deliver: TEST-06, TEST-25);
+          {' '}<strong>2</strong> state a significance their data cannot deliver (TEST-01, TEST-04a);
+          {' '}<strong>11</strong> contain a number but no significance (TEST-02, 03, 04, 08, 09, 10, 11, 13, 15, 19, 21);
+          {' '}<strong>11</strong> contain no number at all, one of which (TEST-07) reads &ldquo;not falsifiable as stated&rdquo;.
+          2 + 2 + 11 + 11 = 26.{' '}
+          <em style={{ color: 'var(--color-text-muted)' }}>(Until 2026-10-18 this sentence listed overlapping flags (&ldquo;2 well-formed, 3 state a
+          significance, 11 no number, TEST-07&rdquo;) that summed to 17 with no remainder named; flagged by a simulated-visitor persona.)</em> See <Link href="/falsifiability" style={{ color: 'var(--color-accent-blue)' }}>Falsifiability</Link> for the count. This page covers <em>proposed</em> tests; for results
           on what has actually been analyzed, see below.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>

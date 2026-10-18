@@ -82,7 +82,7 @@ export default function GammaParameter() {
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
           What survives: dimensional bookkeeping. N<sub>corr</sub> = 1 gives &#x03B3; = 2,
-          N<sub>corr</sub> = 10<sup>24</sup> gives &#x03B3; = 2&times;10<sup>&minus;12</sup> &mdash; the
+          N<sub>corr</sub> = 10²⁴ gives &#x03B3; = 2&times;10<sup>&minus;12</sup> &mdash; the
           arithmetic is right; the claim that physics <em>requires</em> this mapping is not established.
           There is also no protocol for independently measuring N<sub>corr</sub> in any system &mdash; every
           published value is asserted or back-fit from &#x03B3; (see the{' '}
@@ -120,7 +120,7 @@ export default function GammaParameter() {
               galaxies. Classical mechanics, thermodynamics, general relativity.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              Example: Crystal lattice (N<sub>corr</sub> = 10<sup>24</sup>, &#x03B3; &#x2248; 10<sup>&minus;12</sup>)
+              Example: Crystal lattice (N<sub>corr</sub> = 10²⁴, &#x03B3; &#x2248; 10<sup>&minus;12</sup>)
             </p>
           </div>
         </div>

@@ -370,6 +370,15 @@ RETIRED = [
      "direct tail computed 2026-10-15: gamma >= 0.87 at 3 sigma on EPM2011"),
     (r"PCI\* = 0\.31,? Casali|\(PCI\* = 0\.31, Casali", "2026-10-16",
      "the PCI* = 0.31 cut-off is Casarotto et al. 2016; Casali et al. 2013 introduced PCI"),
+    # --- retired 2026-10-18 (maintainer): retracted gamma ~ 1 boundary; self-critical headline overreach; overlapping tally
+    (r"(boundary|regime boundary)(</em>)? where chemistry and (biology|collective)", "2026-10-18",
+     "gamma ~ 1 boundary retracted on /gamma-boundary 2026-08-09; chemistry gammas were fitted near 1, nothing in C singles it out"),
+    (r"every decisive\s+test it ran|failed every decisive test|lost every test it executed", "2026-10-18",
+     "row #3 is at threshold at galaxy level and row #6 is a construction check; use the scoped 'no prediction that differs from MOND or LCDM survived'"),
+    (r"3 state a significance at all", "2026-10-18",
+     "overlapping flags summed to 17 of 26; use the disjoint 2 + 2 + 11 + 11 = 26"),
+    (r"N<sub>corr</sub> can reach millions", "2026-10-18",
+     "crystal example is N_corr = 10^24 on /gamma-parameter; no N_corr protocol exists"),
     (r"Synchronism makes no statement on H₀\. If", "2026-10-16",
      "a0 = cH0/2pi ties a0 to H0; say it offers no resolution of the tension"),
 ]

@@ -22,6 +22,11 @@ export default function MRH() {
           conditionally independent of everything else. The blanket is the boundary: everything
           inside it is relevant to the node, everything outside is statistically screened off.
         </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          Not to be confused with the <em>MRH-relationship</em> badges (Active-MRH, Parallel-Paths, Sidelined, Superseded,
+          Audited-Negative) used to label research status elsewhere on the site. They are named by analogy to this concept
+          (where a claim sits relative to the current research horizon) and say nothing about physics.
+        </p>
         <p>
           MRH extends this idea from a static graph property to a dynamical, scale-dependent
           boundary. Where a Markov blanket asks &ldquo;what nodes shield this node?&rdquo;, the MRH

@@ -190,7 +190,9 @@ export default function Falsifiability() {
             </li>
             <li>
               <strong>Specificity: 2 of 26 criteria are well-formed</strong> (statistic + threshold + a significance the
-              data can deliver). 3 of 26 state any significance; 11 of 26 contain no numeral. The no-numeral rate
+              data can deliver: TEST-06, TEST-25). As disjoint groups over the same 26: 2 well-formed, 2 more state a
+              significance their data cannot deliver (TEST-01, TEST-04a), 11 contain a number but no significance, and 11
+              contain no numeral (TEST-07 among them); 2 + 2 + 11 + 11 = 26. The 26 are TEST-01&ndash;24, TEST-04a and TEST-25. The no-numeral rate
               replicates on the archive&apos;s separate 24-row registry (10 of 24), so it is a drafting habit, not four
               bad pages. Pre-registration has a cheap half (timing, the bullet below) and an expensive half
               (specificity, this one). Only timing had been counted before 2026-09-18.

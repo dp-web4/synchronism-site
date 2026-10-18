@@ -127,12 +127,18 @@ export default function GammaCalculator() {
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-blue)' }}>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
             <strong>What this tool does:</strong> N<sub>corr</sub> is the count of particles that move as a correlated unit &mdash; dimensionless, no units.
-            For a single atom, N<sub>corr</sub> = 1. For a crystal oscillating in phase, N<sub>corr</sub> can reach millions.
+            For a single atom, N<sub>corr</sub> = 1. For a crystal oscillating in phase, the illustrative value used on{' '}
+            <a href="/gamma-parameter" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Parameter</a> is N<sub>corr</sub> = 10&#x00B2;&#x2074; (every
+            atom). No protocol exists for measuring N<sub>corr</sub>, so any value is illustrative.
             This tool maps that count to &#x03B3; = 2/&#x221A;N<sub>corr</sub> and shows which physical regime results.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginBottom: 0 }}>
-            &#x03B3; &#x2248; 1 marks the regime boundary where chemistry and collective/correlated behavior happen &mdash;
-            C(&#x03C1;) itself is a smooth crossover here, not a phase transition (tanh has no non-analyticity).
+            <strong>What to do with it:</strong> press the BEC and BCS presets. The formula gives them the <em>flattest</em>
+            curves on the site; in reality they switch on <em>sharply</em> at a critical temperature. That mismatch is the
+            audited failure this tool exists to show. (An earlier version of this line placed a chemistry regime boundary at &#x03B3; &#x2248; 1;
+            that was retracted on{' '}
+            <a href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Boundary</a>: chemistry &#x03B3; values
+            were fitted near 1, and nothing in C(&#x03C1;) singles it out.) C(&#x03C1;) itself is a smooth crossover here, not a phase transition (tanh has no non-analyticity).
             The presets below cover common systems:
             {' '}<strong>BCS</strong> = Bardeen-Cooper-Schrieffer superconductors (electrons paired by phonons, conventional: Al, Nb, Pb);
             {' '}<strong>BEC</strong> = Bose-Einstein Condensate (ultra-cold atoms collapsed into a single quantum state).

@@ -1,0 +1,16 @@
+1 Msun/pc^3 = 6.768e-20 kg/m^3
+FG5-class dropping chamber, 1e-4 Pa, N2    rho = 1.14e-09 kg/m^3 = 1.69e+10 Msun/pc^3
+atom gravimeter UHV, 1e-8 Pa, H2           rho = 8.15e-15 kg/m^3 = 1.20e+05 Msun/pc^3
+best UHV, 1e-10 Pa, H2                     rho = 8.15e-17 kg/m^3 = 1.20e+03 Msun/pc^3
+laboratory air                             rho = 1.18e+00 kg/m^3 = 1.75e+19 Msun/pc^3
+
+excess 1/C - 1 (fractional increase of g over Newton), pointwise reading
+gamma=0.489 rho_c=0.0039   FG5 8.77e-13  atomUHV 9.46e-08  1e-10Pa 8.55e-06   atom-FG5 9.46e-08
+gamma=0.489 rho_c=0.0079   FG5 1.75e-12  atomUHV 1.89e-07  1e-10Pa 1.71e-05   atom-FG5 1.89e-07
+gamma=0.489 rho_c=0.161    FG5 3.34e-11  atomUHV 3.60e-06  1e-10Pa 3.25e-04   atom-FG5 3.60e-06
+gamma=2.0   rho_c=0.0735   FG5 0.00e+00  atomUHV 0.00e+00  1e-10Pa 0.00e+00   atom-FG5 0.00e+00
+gamma=2.0   rho_c=0.078    FG5 0.00e+00  atomUHV 0.00e+00  1e-10Pa 0.00e+00   atom-FG5 0.00e+00
+gamma=2.0   rho_c=0.161    FG5 0.00e+00  atomUHV 0.00e+00  1e-10Pa 6.66e-16   atom-FG5 0.00e+00
+
+control, air, gamma=0.489: 1/C - 1 = 0.0e+00
+control, air, gamma=2.0: 1/C - 1 = 0.0e+00

@@ -117,7 +117,13 @@ export default function GammaBoundary() {
             rises monotonically with γ and <em>saturates</em> at ≈&nbsp;0.446 (verified numerically: 0.250 at
             γ=0.5, 0.322 at γ=1, 0.375 at γ=2, 0.408 at γ=4, 0.446 as γ→∞). And C is <strong>concave on the
             whole domain</strong> &mdash; d²C/dx²&nbsp;&lt;&nbsp;0 for every x&nbsp;≥&nbsp;0 &mdash; so there is
-            no inflection point to sit at. <strong>No feature of C(ρ) singles out γ&nbsp;≈&nbsp;1.</strong>
+            no inflection point to sit at. <strong>No feature of C(ρ) singles out γ&nbsp;≈&nbsp;1.</strong>{' '}
+            One quantity does peak near it: the geometric curvature of the graph at the origin,
+            κ(0)&nbsp;=&nbsp;|C″(0)|/(1+C′(0)²)<sup>3/2</sup>&nbsp;=&nbsp;γ/(1+γ²)<sup>3/2</sup> (C′(0)&nbsp;=&nbsp;γ, C″(0)&nbsp;=&nbsp;−γ),
+            which is largest at γ&nbsp;=&nbsp;1/√2&nbsp;≈&nbsp;0.71 (verified numerically, κ<sub>max</sub>&nbsp;≈&nbsp;0.385). That
+            may be where &ldquo;maximum curvature near γ&nbsp;≈&nbsp;1&rdquo; came from. It depends on the units chosen for
+            x (rescale x and the peak moves), so it carries no physical meaning.{' '}
+            <em style={{ color: 'var(--color-text-muted)' }}>(Named 2026-10-18 at a simulated-visitor graduate persona&apos;s suggestion.)</em>
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             The correct derivative fact was already stated on{' '}

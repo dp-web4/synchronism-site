@@ -145,6 +145,48 @@ export default function DarkMatter() {
           refuted, one withdrawn, and the third depends on a knee the framework never fixed.
         </details>
 
+        <div id="screening" className="card" style={{ scrollMarginTop: '5rem', borderLeft: '3px solid var(--color-accent-blue)', marginBottom: '1.5rem' }}>
+          <h3 style={{ marginTop: 0 }}>Relation to screened modified gravity, and the vacuum-chamber question</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            The density-keyed law g = g<sub>N</sub>/C(&#x03C1;) (Newtonian where matter is dense, enhanced where it is sparse) has the
+            phenomenology of <strong>screened modified gravity</strong>: chameleons, symmetrons, Vainshtein
+            (<Link href="/glossary#screened-modified-gravity" style={{ color: 'var(--color-accent-blue)' }}>glossary</Link>). The
+            detailed comparison is on{' '}
+            <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>: a symmetron does
+            reproduce the rotation-curve relation (Burrage, Copeland &amp; Millington 2017), because its field solves a non-local
+            equation; C(&#x03C1;), keyed on the local density, does not.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Q: What does C(&#x03C1;) predict for an atom in a laboratory vacuum chamber?</strong> Screening models are
+            tested there (atom interferometry in ultra-high vacuum), so it is a fair question. <strong>Proposed answer:</strong> it
+            depends on the length over which &#x03C1; is averaged, which the framework never declared.
+          </p>
+          <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <li><strong>Read pointwise</strong>, even ultra-high vacuum is dense on this scale. Residual gas at 10<sup>&minus;8</sup> Pa is
+              about 10<sup>&minus;14</sup> kg/m&sup3;, ~10<sup>5</sup> M&#x2609;/pc&sup3;, which is 10<sup>6</sup>&ndash;10<sup>7</sup> times the galaxy knees on file
+              (0.004&ndash;0.16 M&#x2609;/pc&sup3;). So there is no huge boost, only a small excess: at &#x03B3; = 0.489, g in an
+              atom gravimeter&apos;s chamber exceeds g in a corner-cube gravimeter&apos;s 10<sup>&minus;4</sup> Pa chamber by
+              10<sup>&minus;7</sup> to 4&times;10<sup>&minus;6</sup> depending on the knee. Such instruments are compared at about
+              10<sup>&minus;9</sup> g (not re-read here), so that reading fails. At &#x03B3; = 2 the excess is below 10<sup>&minus;15</sup>, invisible.</li>
+            <li><strong>But the pointwise reading is already excluded at Solar-System scale.</strong> Read pointwise, the
+              Sun&apos;s mass inferred from Earth and from Saturn would differ by order unity, so the averaging length must be at
+              least ~30&nbsp;AU (outermost ranged orbit). At that length no laboratory chamber is resolved, and the tabletop test
+              says nothing.</li>
+            <li><strong>From the other side</strong>, lunar laser ranging (G changing as the Sun moves through the disc) forces the
+              length below ~0.1&ndash;0.3&nbsp;pc for every unsaturated knee, while the smooth stellar profiles in the galaxy fits need
+              at least ~1&nbsp;pc. So the averaging length has no allowed value.</li>
+          </ul>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: 0 }}>
+            So the question does force the averaging scale to be specified, as the persona who asked it expected, but the
+            Solar System gets there before the tabletop does. A thin-shell (chameleon-like) escape would need C to be a field with
+            its own equation, which the framework does not have. <ValidationBadge status="audited-negative" label="Audited-Negative — estimate, round inputs" />{' '}
+            Script: <code>maintainer/scripts/density_keyed_law_in_a_vacuum_chamber.py</code> (predictions in the header before
+            running: 3 of 4 held; the UHV excess at 10<sup>&minus;8</sup> Pa came out ~10&times; below the predicted 10<sup>&minus;5</sup>).
+            Planetary and lunar-ranging bounds: research ledger blocks of 2026-09-15 and 2026-09-24. Asked 2026-10-18 by a
+            simulated-visitor researcher persona.
+          </p>
+        </div>
+
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           This is speculative. Particle dark matter (CDM) explains a vast range of cosmological

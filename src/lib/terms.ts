@@ -129,7 +129,7 @@ export const terms: Record<string, TermDefinition> = {
     fullName: 'Collective Behavior Measure',
     brief: 'How collectively a group of elements behaves, from sparse/independent (0) to dense/collective (1).',
     explanation: 'Picture a crowd leaving a stadium (everyone moving independently) versus a marching band (everyone moving as one): coherence is where a system sits on that spectrum. Low coherence (C\u21920): elements act independently \u2014 sparse matter, individual particles. High coherence (C\u21921): extremely dense, tightly packed systems \u2014 neutron stars, not superconductors. The physicist terminology warning below matters \u2014 this is NOT the "quantum coherence" you may have heard of.',
-    educationalNote: '\u26A0 Physicist terminology note: Synchronism "coherence" is NOT quantum phase coherence. In condensed matter, quantum-coherent systems (BEC, BCS superconductors) are maximally quantum-coherent \u2014 but they have large N_corr \u2192 small \u03B3 \u2192 LOW C in this framework. C=0 does not mean "incoherent" in the CM sense; it means sparsely interacting. C measures density-driven collective behavior, the opposite of the standard quantum-coherence usage. See also: C(\u03C1) entry, Mean-Field Theory entry.',
+    educationalNote: '\u26A0 Physicist terminology note: Synchronism "coherence" is NOT quantum phase coherence. In condensed matter, quantum-coherent systems (BEC, BCS superconductors) are maximally quantum-coherent \u2014 but they have large N_corr \u2192 small \u03B3 \u2192 LOW C in this framework. C=0 does not mean "incoherent" in the CM sense; it means sparsely interacting. C measures density-driven collective behavior, a different axis from quantum coherence (not its opposite). In plain words: the formula gives systems with more parts moving together a flatter curve, which is the audited sign inversion (see \u03B3 Calculator), not a subtle definitional point. See also: C(\u03C1) entry, Mean-Field Theory entry.',
     learnMore: '/coherence-function',
   },
   'phase transition': {
@@ -188,6 +188,13 @@ export const terms: Record<string, TermDefinition> = {
     brief: 'A version of MOND written as a modified Poisson equation that is linear in the potential, so it can be solved for real galaxies and for the Solar System. The Cassini test (TEST-25) is run in this formulation.',
     explanation: 'MOND\u2019s original rule g = \u03BD(g_N/a\u2080)\u00B7g_N is an algebraic relation that only holds exactly for spherical systems. QUMOND (Milgrom 2010) turns it into a field equation: solve Newton\u2019s Poisson equation once, apply \u03BD to the result, then solve Poisson again. The Galaxy Curve Plotter and the site\u2019s Cassini instrument use the simple-\u03BD function inside this equation; the external field effect follows from it automatically.',
     learnMore: '/tier-1-existing#TEST-25',
+  },
+  'screened-modified-gravity': {
+    term: 'Screened modified gravity',
+    fullName: 'Screened modified gravity (chameleon, symmetron, Vainshtein)',
+    brief: 'Theories in which gravity is ordinary where matter is dense and modified where it is sparse, because a field is "screened" in dense regions. The density-keyed C(\u03C1) law has the same phenomenology but no field with its own dynamics.',
+    explanation: 'Chameleon and symmetron models (Khoury & Weltman 2004; Hinterbichler & Khoury 2010) add a scalar field whose behaviour depends on the local density: dense environments switch the extra force off, sparse ones switch it on. Vainshtein screening (Galileons) does the same through derivatives of the field. The screening literature classifies these by which derivative of the potential \u03A6 keys the modification (Joyce, Jain, Khoury & Trodden 2015). The density-keyed g = g_N/C(\u03C1) is that phenomenology written as an algebraic rule, keyed on \u2207\u00B2\u03A6 \u221D \u03C1, a rung that fails the radial acceleration relation; a symmetron does reproduce it (Burrage, Copeland & Millington 2017) because its field solves a non-local equation. Screening models are tested at tabletop scale (torsion balances, atom interferometry in vacuum chambers). For C(\u03C1) the tabletop answer depends on an averaging length the framework never declared; see Dark Matter \u2192 "Relation to screened modified gravity".',
+    learnMore: '/dark-matter#screening',
   },
   'phenomenological': {
     term: 'phenomenological',

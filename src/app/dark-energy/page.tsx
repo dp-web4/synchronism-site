@@ -316,7 +316,10 @@ export default function DarkEnergy() {
             Best &gamma; = 0.487 (&minus;0.021/+0.024), &Delta;&chi;&sup2; = &minus;0.3 vs &Lambda;CDM with one extra
             parameter; its best member projects to (w&#x2080;, w&#x2090;) = (&minus;0.993, +0.023). (Not the same object as the +0.23&hellip;+0.60 above: that is completion B with w&#x2080; forced to DESI&apos;s value; this is the free best fit of the non-covariant substituted family.) It cannot reach the
             crossing, and the data-level price of that is exactly &Lambda;CDM&apos;s own: +11.0 behind w&#x2080;w&#x2090;CDM
-            (~2.9&sigma; for two parameters), no more. The forced-w&#x2080; &sigma; figures were the fifth instance of an
+            (~2.9&sigma; for two parameters), no more. <em>(Data combination: DESI DR2 BAO + compressed CMB + one SN sample, DES
+            Dovekie. On BAO + compressed CMB alone the in-house gap is 8.3, against DESI&apos;s ~12.5 from the full CMB likelihood:
+            compression recovers about two-thirds of it. Named 2026-10-18 after a simulated-visitor researcher persona
+            could not reconcile 11.0 with DESI+CMB&apos;s 3.1&sigma;.)</em> The forced-w&#x2080; &sigma; figures were the fifth instance of an
             exclusion-flavoured number that did not survive execution.
           </li>
           <li>
@@ -332,7 +335,9 @@ export default function DarkEnergy() {
             &gamma;<sub>cosmo</sub> = 0.487 vs &gamma;<sub>galaxy</sub> = 0.489 &ldquo;agree at 0.1&sigma;&rdquo; &mdash;
             but &gamma; = &frac12; is exactly &Lambda; <em>and</em> exactly MOND&apos;s simple &mu;, so the two sectors&apos;{' '}
             <em>standard</em> models sit at the same point by construction. Agreement between the two fits is the agreement of
-            &Lambda; with the simple &mu;, inherited, with no power to fail. Both reductions are one line of algebra (at &gamma; = &frac12;, &rho;<sub>m</sub>/C = &rho;<sub>m</sub> + 2&rho;<sub>crit</sub>), and the scale is fitted separately in each sector, in different variables (mean density here, g<sub>obs</sub> in galaxies), so both datasets landing on the &gamma; where tanh(&gamma; ln(1+x)) becomes a known function carries no evidential weight (sentence added 2026-10-12, researcher simulated-visitor persona). The 0.011 is SPARC&apos;s fitted offset from &frac12;
+            &Lambda; with the simple &mu;, inherited, with no power to fail. Both reductions are one line of algebra (at &gamma; = &frac12;, &rho;<sub>m</sub>/C = &rho;<sub>m</sub> + 2&rho;<sub>crit</sub>; and <em>any</em> C = &rho;/(&rho;+K) gives
+            &rho;<sub>m</sub>/C = &rho;<sub>m</sub> + K, exact &Lambda;, so landing on &Lambda; is a property of the simplest saturating rational function, which
+            tanh-log becomes at &gamma; = &frac12;, not of tanh-log), and the scale is fitted separately in each sector, in different variables (mean density here, g<sub>obs</sub> in galaxies), so both datasets landing on the &gamma; where tanh(&gamma; ln(1+x)) becomes a known function carries no evidential weight (sentence added 2026-10-12, researcher simulated-visitor persona). The 0.011 is SPARC&apos;s fitted offset from &frac12;
             (a slightly McGaugh-like RAR shape), consistent with zero at &sigma;<sub>&gamma;</sub> = 0.11 (galaxy-limited,
             2026-08-14). Telling that offset from zero would need &sigma;<sub>&gamma;</sub> &asymp; 0.004, and it would answer a
             different question (does SPARC prefer the simple &mu; exactly?), not a cross-sector one.{' '}

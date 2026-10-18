@@ -15,6 +15,8 @@ export default function MeasurementWithoutObservers() {
       <h1>Measurement Without Observers</h1>
       <ValidationBadge status="speculative" label="Interpretive Overlay on Decoherence — No Differing Prediction; 6 Experiment Classes (not protocols)" />
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+        <strong>In plain words:</strong> this page is a way of <em>describing</em> decoherence, not a new test. Standard
+        quantum mechanics already says no conscious observer is needed: contact with a large environment is enough.{' '}
         <strong>Status in one line (added 2026-10-10):</strong> an interpretation with no rate equation. There is no decoherence
         rate, no Lindblad form, and no apparatus calibrated to N<sub>corr</sub>; the one quantitative item on the site&apos;s quantum
         side is a Planck-scale diffusion heating bound that kills the one rate considered. The title promises a measurement
@@ -84,6 +86,15 @@ export default function MeasurementWithoutObservers() {
           N<sub>corr</sub> explodes. &#x03B3; plummets. The MRH contracts to effectively zero.
           Correlations that were &ldquo;inside&rdquo; the horizon are now &ldquo;outside&rdquo; it.
           The system has crossed the MRH boundary. That crossing is what we call measurement.
+        </p>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          <strong>Does the direction survive the sign correction? (added 2026-10-18, simulated-visitor researcher persona)</strong>{' '}
+          No, not on its own. The chain has two steps, and neither is derived: N<sub>corr</sub>&nbsp;&rarr;&nbsp;&#x03B3; (audited as
+          sign-inverted: real correlated systems get <em>sharper</em> transitions as N<sub>corr</sub> grows) and
+          &#x03B3;&nbsp;&rarr;&nbsp;MRH size (asserted here, written nowhere as an equation). Correct the first step and keep the
+          second, and the story runs backwards: a bigger apparatus gives a larger &#x03B3;, a larger MRH, and no crossing.
+          Flip the second step too and the story survives, but only because two unanchored steps were both reversed. Either
+          way the direction of the measurement story comes from the inverted relation, not from anything independent of it.
         </p>
 
         <h2>The Geocentrism Analogy</h2>

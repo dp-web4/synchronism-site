@@ -1,4 +1,4 @@
-import { COUNT_MAP_SENTENCE, REFUTATION_ROWS, REFUTATIONS_EXECUTED, ROOTS_SENTENCE } from '@/lib/ledger';
+import { COUNT_MAP_SENTENCE, COUNT_RULE_SENTENCE, REFUTATION_ROWS, REFUTATIONS_EXECUTED, ROOTS_SENTENCE } from '@/lib/ledger';
 
 /**
  * One table for "which six?" (2026-09-25). Data lives in src/lib/ledger.ts; change it there.
@@ -15,6 +15,9 @@ export default function RefutationLedger() {
       </p>
       <p id="count-map" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch', scrollMarginTop: '5rem' }}>
         {COUNT_MAP_SENTENCE}
+      </p>
+      <p id="count-rule" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch', scrollMarginTop: '5rem' }}>
+        <strong>How firm is the 6?</strong> {COUNT_RULE_SENTENCE}
       </p>
       <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch' }}>
         <strong>The Root column is not a badge.</strong> Every row carries the Failed badge; Root says <em>why</em> the row

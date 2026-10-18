@@ -46,6 +46,14 @@ export const ROOTS_SENTENCE =
 export const COUNT_MAP_SENTENCE =
   'How the counts relate: the 6 refutations are the six rows of this table. 4 of them are the Tier 1 kills fired (#1 TEST-09, #2 TEST-10, #4 the environment run, #5 TEST-25); #3 has no TEST number and #6 is a bet, not a test. 2 of those 4 discriminated between Synchronism and MOND (#1 and #2), and both selected the MOND class. "0 of 9" is a different thing: an audit of the site\'s former "Validated" badges, not a test count. "0 prospective predictions tested" means none of the six was predicted before its data existed; all six used data already published.';
 
+/**
+ * The count is rule-dependent (2026-10-18). Three simulated-visitor personas in one pass asked for the self-critical
+ * number to meet the standard applied to claims. Every delta below is on file in PREDICTIONS.md (10-12, 10-13, 10-16
+ * blocks, 09-29 for the γ=2 pin); the rule choice gates on the project lead. Do not change REFUTATIONS_EXECUTED here.
+ */
+export const COUNT_RULE_SENTENCE =
+  'The 6 is not rule-free. It is the count under the rule the site uses today (a stated failure condition, actually executed, fired as registered). Rules already on file move it: a 2σ significance rule drops TEST-09 (−1); with each galaxy counted once the γ = 2 pin sits at the threshold (−1 if "at the threshold" does not count); the executed-and-excluded uniform growth reading meets the current rule but is not counted because no archive document asserted it (+1); a point-estimate rule adds TEST-04a, on a withdrawn mechanism (+1). So 4 to 8, depending on rules the project lead has not yet chosen, with at most 5 independent. Routes that re-kill a branch already refuted (lunar laser ranging, the Oort limit at the published knee) are second roots for an existing row, not new rows.';
+
 /** Sentence rewritten 2026-09-14: the old form ("6 executed refutations; 2 … roots + 1 + 1 + 1") summed
  *  to 5 and a graduate-physics persona read it as an arithmetic error. */
 

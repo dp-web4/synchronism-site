@@ -100,7 +100,7 @@ export default function CoherenceExplorer() {
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
             <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> controls the transition sharpness.
             High &#x03B3; (&gt; 1.4, small N<sub>corr</sub>) = <em>single-particle / uncorrelated</em> regime (ideal gases, free atoms);
-            &#x03B3; &#x2248; 1 = the boundary where chemistry and biology happen;
+            &#x03B3; &#x2248; 1 = where the archive&apos;s fitted chemistry &#x03B3; values cluster &mdash; nothing in C(&#x03C1;) singles it out (<a href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Boundary</a>, retracted 2026-08-09);
             low &#x03B3; (&lt; 0.6, large N<sub>corr</sub>) = <em>many particles moving together</em> (BEC, superconductors, superfluids) &mdash; which does <strong>not</strong> mean C near 1: low &#x03B3; gives <em>low</em> C at any plottable density (see &ldquo;What to notice&rdquo; below).
             Note: these labels describe the <em>number of correlated degrees of freedom</em>, not the standard quantum/classical distinction — BEC and BCS superconductors appear in the &ldquo;collective&rdquo; basin, which is correct (they have large N<sub>corr</sub>).
           </p>
@@ -115,8 +115,12 @@ export default function CoherenceExplorer() {
           </p>
           <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem' }}>
             <strong>What to notice:</strong> Move &#x03B3; from 2.0 downward and watch the curve flatten.
-            &#x03B3; &#x2248; 1 is the <em>regime boundary</em> where chemistry and biology happen &mdash;
-            not a steepness extremum. (The slope is actually largest at &#x03C1; = 0 on a linear
+            Nothing special happens to the curve at &#x03B3; &#x2248; 1: it is
+            not a steepness extremum, and the old label placing chemistry and biology at a &#x03B3; &#x2248; 1 boundary was
+            retracted on <a href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Boundary</a> (chemistry
+            &#x03B3; values were fitted there; no biology placement follows from C). Notice also the two presets
+            &#x03B3; = 0.49 (&ldquo;galaxy fit&rdquo;) and &#x03B3; = &frac12; (&ldquo;same curve as MOND&rdquo;): they are almost the same
+            number because the free galaxy fit lands on MOND&apos;s curve. That is why the fit is not a new prediction. (The slope is actually largest at &#x03C1; = 0 on a linear
             &#x03C1; axis; on a log axis, the peak slope grows as &#x03B3; <em>increases</em> &mdash;
             e.g. peak dC/d(ln&#x03C1;) &#x2248; 0.375 at &#x03B3;=2 vs exactly 0.25 at &#x03B3;=0.5, i.e.
             per decade on this chart&apos;s log&#x2081;&#x2080; axis &#x2248; 0.86 vs &#x2248; 0.58 (multiply by ln&nbsp;10

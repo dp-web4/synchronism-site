@@ -275,7 +275,14 @@ export default function A2ACW() {
               0/6, so J &isin; [&minus;0.71, +0.46] (two marginal Clopper&ndash;Pearson 95% intervals, 3/3 &ge; 0.292 and 0/6 &le; 0.459;
               combining two marginal 95% intervals gives roughly 90% joint coverage, not 95%). Under the steelmanned rule
               J = 1.0. The steelmanned rule lets the scorer&apos;s own novelty judgment do all the work, and that judgment is what is in question.
-              <strong> This is not a citable null.</strong></li>
+              <strong> This is not a citable null.</strong>{' '}
+              <em>The nine items (listed 2026-10-18 at a simulated-visitor researcher persona&apos;s request; source: explorer finding{' '}
+              <code>a2acw-detector-false-positive-rate-null-baseline.md</code>):</em> reparametrization arm (should be flagged)
+              &mdash; P1 Eddington&apos;s &alpha;<sup>&minus;1</sup>&nbsp;=&nbsp;137 &ldquo;derivation&rdquo;, P2 tired light, P3 a
+              Tully&ndash;Fisher &ldquo;derivation&rdquo; that assumes MOND (P3 is in-class: it is this framework&apos;s own galaxy claim, so
+              only P1 and P2 are from outside the project); discovery arm (should not be flagged) &mdash; N1 Dirac 1928, N2 Bell 1964,
+              N3 BCS 1957, N4 Higgs 1964, N5 Hawking 1974, N6 Noether 1918. Each item was written as a one-sentence modern-register
+              statement in that finding; the scorer saw those sentences.</li>
             <li><strong>The canonical arm is in the training data.</strong> A challenger that flags Dirac, Bell or Higgs as prior art is
               correct, not non-specific, so specificity 0/6 on that arm says little about novelty detection.</li>
             <li><strong>The six demoted claims are not a positive arm.</strong> Their ground truth came from the audit class under

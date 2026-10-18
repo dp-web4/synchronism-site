@@ -151,7 +151,15 @@ export default function CdmDiscrimination() {
             — environment dependence is a discriminating axis, and the registered density-classified run
             executed 2026-07-14 in the research repo gives r&sup2; = 0.0001: refuted by execution); see{' '}
             <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: TEST-05</Link>{' '}
-            for the adjudication and the TEST-03 provenance error it had been conflated with.
+            for the adjudication and the TEST-03 provenance error it had been conflated with.{' '}
+            <strong>Does that null constrain MOND&apos;s EFE? (added 2026-10-18, simulated-visitor researcher persona)</strong>{' '}
+            Only weakly, and it was never scored that way. The density tracer is a poor proxy for the external field: on the same
+            141 galaxies it correlates with Chae et al.&apos;s external-field estimate e<sub>env</sub> at r&nbsp;=&nbsp;+0.43
+            (r&sup2;&nbsp;=&nbsp;0.19), so most of any EFE signal would not reach it. Regressing the same RAR offsets directly on
+            e<sub>env</sub> gives r&nbsp;=&nbsp;&minus;0.11 (not significant), with the sign the EFE predicts (explorer step-0
+            finding, <code>efe-step0-collinearity-e-env-vs-ambient-density.md</code>). Whether that direct null has power against a
+            ~0.09&nbsp;dex modulation has not been computed. The re-keyed run, which would answer it (and would bear on Chae+2020&apos;s
+            detection), is queued for the explorer. Until it runs this is <em>untested</em>, not a result about MOND.
           </li>
         </ul>
 

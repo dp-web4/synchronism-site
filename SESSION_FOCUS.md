@@ -1,9 +1,31 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-16 (maintainer)*
+*Last updated: 2026-10-18 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-18) — **The self-critical numbers are now the credibility bottleneck (3 of 4 personas).
+The kill tally now reads 2 + 2 + 11 + 11 = 26 (was overlapping flags summing to 17). "6" now carries its range: 4–8 under
+rules already on file, ≤ 5 independent (`ledger.ts` COUNT_RULE_SENTENCE, /honest-assessment#count-rule). "Every decisive
+test" is replaced by the ledger's scoped sentence. The retracted γ ≈ 1 "chemistry/biology boundary" is off both tools.
+TEST-02 leads with "fails at every density calibration on file". New /dark-matter#screening box with a
+vacuum-chamber estimate: pointwise C(ρ) at γ = 0.489 gives 10⁻⁷–4×10⁻⁶ g excess in UHV, but the planetary ℓ ≳ 30 AU
+bound dominates the tabletop.** Count 6; Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-10-18.md`. Proposal:
+`Synchronism/Research/proposals/the_count_is_rule_dependent_and_the_tabletop_is_dominated_by_the_planets_20261018.md`.
+site_lint is at 200 rules. Script: `maintainer/scripts/density_keyed_law_in_a_vacuum_chamber.py`.
+- **→ Explorer:** the existing topic `environment-pipeline-rekeyed-on-external-acceleration.md` has a 10-18 update. The
+  first deliverable is the power of the direct offset-vs-e_env regression (r = −0.11, N = 141).
+- **→ Next maintainer:**
+  - a labels table (or fewer labels);
+  - /why-synchronism disclosure;
+  - marching-band analogy;
+  - DHF 2024 relief channels on TEST-25;
+  - carried items from 10-16.
+- **→ Project lead:** rule on the counting rule or delegate it (gated since 08-08 / 10-12); table-row edits (10-16 (i)
+  plus two more); retire or normalise CCH.
 
 ## 🟢 NEW (maintainer 2026-10-16) — **"The bottoms of pages are more honest than the tops." Four lead sentences lagged
 their own badges: /key-claims Claim 1 "generates different [predictions]", /dark-matter "a₀ emerges from cosmology", the

@@ -30,3 +30,17 @@ field-equation C_g under the same pressure MOND+EFE faces. Either outcome is abo
 - Desmond et al. (the "Exploring the environment" papers) for g_ext maps if Chae's are not reproducible
 - Pre-register the predicted sign and amplitude per reading before running (L2 C_g vs algebraic internal-only C_g)
 - /cdm-discrimination (lever sizes: MOND+EFE ~0.09 dex vs C_ρ ≤ 2×10⁻³ dex)
+
+## Update 2026-10-18 (maintainer): the first deliverable is a power number
+
+A researcher simulated-visitor persona asked again, from a different angle, whether the r² = 0.0001 density null
+"has power against MOND's 0.09 dex". It does not, by much: your own step-0 finding gives r = +0.43 (r² = 0.19)
+between the density tracer and Chae's e_env on the same 141 galaxies. The direct regression is already in that finding:
+offset vs e_env gives r = −0.11, not significant, with the EFE sign. So the cheapest useful number is:
+
+- **the power of the direct offset-vs-e_env regression at N = 141 against Chae+2020's predicted modulation** (use
+  the per-galaxy predicted EFE offsets, not a flat 0.09 dex, because the spread in e_env is what sets the slope).
+
+If power is high, r = −0.11 is a result in tension with Chae+2020 under this estimator. If it is low, say so on
+/cdm-discrimination (the page now says "untested") and run the full re-keyed fit. Either way, register the power before
+reading any new slope.

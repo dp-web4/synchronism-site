@@ -1,0 +1,21 @@
+Starting Synchronism Explorer Session at Mon Oct 19 08:00:01 PDT 2026
+Lunar laser ranging does close the "density-keyed L3" door, and this time I computed it rather than argued it. The result is pre-registered (`edb0108`) and the session is pushed (`7256d2d`).
+
+**Choice of topic.** At the WAKE step I took `does-llr-close-density-keyed-l3`. It was one of the few topics in the queue that asks about the world rather than about the project's own record. I deferred the RECALL re-coding topic.
+
+**What I found**
+- **The door is closed.** When a smoothing kernel is put inside the action, varying Φ gives exactly the L2 field equation. So the 09-23 Ġ/G = −Ċ/C argument carries over unchanged: 68/74 laws are excluded at ℓ = 1 pc, and the same 6 survive (γ = 2 laws that are Newtonian locally to 10⁻⁸). The in-disc-knee laws named on /for-researchers are all among the 68. The 10-13 "disc-equilibrium" caveat doesn't apply, because the local density and stellar motions that drive Ġ are measured, not modelled.
+- **The topic's proposed mechanism was wrong by 10⁻⁹.** The action puts the kernel on the striction potential itself: Ψ_s = K∗[C′|∇Φ|²]/8πG. Its source is therefore the Sun's own gravitational binding energy, not Earth's local field. Relative to the Sun, the planets feel a repulsive force proportional to distance, a = +k·r. That is the same form as a positive cosmological-constant (Λ-like) force.
+- **The first observable difference between L2 and L3 in the Solar System.** At parsec smoothing this new force adds nothing Ġ hasn't already excluded. It is the only constraint in the small-ℓ range (30 AU to about 0.3 pc), where the Sun saturates C and Ġ sees nothing. There it closes that range completely for 21/32 γ = 0.489 grid laws. The rest keep only ℓ ≤ 300–1000 AU, which can't support smooth galaxy profiles. The γ = 2 laws are untouched.
+- **LLR's other channels are too weak to matter.** The predicted lunar perigee drift and equivalence-principle signal both sit about 5×10³ below LLR sensitivity. LLR binds only through Ġ, and the planets beat LLR on the striction term. The bounds are verbatim from the Williams, Turyshev & Boggs paper; I computed the de Sitter rate because the paper doesn't print it.
+- **Predictions: 4/5 held.** P3 was refuted on its first clause. I had predicted the striction would close the small-ℓ range for every γ = 0.489 law; 11 of 32 escape at the smallest smoothing lengths.
+
+**Suggested site change (for the maintainer):** close door 3 in the /for-researchers scope clause and retire "probably closed, not shown closed". The refutation count is unchanged; this is a second, independent reason for an exclusion that already exists.
+
+**Open thread.** In a galactic disc, the same striction term is driven mostly by white dwarfs, whose binding energy per unit mass is far above ordinary stars'. That may be the real reason in-disc L3 knees look unstable. It would also make the law depend on the stellar-remnant population, which is probably fatal for it.
+
+**Method note.** The 09-23 finite-difference slope (dlnC) returns zero below about 10⁻¹⁰, which covers the entire small-ℓ regime, so I used the analytic form. I saved this as a memory.
+
+Sources:
+- [Williams, Turyshev & Boggs 2004, gr-qc/0411113](https://arxiv.org/abs/gr-qc/0411113)
+- [Murphy 2013, LLR review](https://arxiv.org/pdf/1309.6294)

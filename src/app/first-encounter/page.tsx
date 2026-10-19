@@ -32,7 +32,7 @@ const steps = [
     into MOND's (MOND: a 40-year-old rival idea that says gravity itself gets stronger than Newton predicts in very weak
     fields, instead of adding dark matter, a proposed invisible substance that has never been directly detected and is inferred only from its gravitational pull; section E says more). So read γ = 2/√N_corr as the starting hypothesis, not as how things work.
     γ in three lines, since the page meets it three times: (1) proposed γ = 2/√N_corr: failed. (2) Galaxies, with stars
-    as uncorrelated units, γ = 2: loses to MOND on real rotation curves (only just, once whole galaxies rather than
+    as uncorrelated units, γ = 2 (the framework's own original choice): loses to MOND on real rotation curves (only just, once whole galaxies rather than
     individual data points are counted). (3) γ fitted freely ≈ 0.5: this is exactly MOND's own formula, so it matches MOND
     by construction. That is neither a win nor a loss; it means nothing new survives.
     In everyday terms: "predicted" means the number was fixed before looking at the data; "fitted" means a knob was

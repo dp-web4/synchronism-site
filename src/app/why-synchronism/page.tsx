@@ -163,38 +163,42 @@ export default function WhySynchronism() {
 
       <section className="section content-width">
         <h2>What We Tested &mdash; and How It Went</h2>
-        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
-          (This section was titled &ldquo;What Worked&rdquo; until 2026-07-17 &mdash; the verdicts below were
-          updated in place as tests were executed, and several are now Failed. The heading caught up with its
-          own cards.)
-        </p>
+        <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem' }}>
+          <summary style={{ cursor: 'pointer' }}>Edit history</summary>
+          This section was titled &ldquo;What Worked&rdquo; until 2026-07-17. The verdicts below were updated in place as
+          tests were executed, and several are now Failed; the heading caught up with its own cards.
+        </details>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div className="card">
             <h3>Galaxy Rotation Curves</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+              <strong>In plain words:</strong> the idea predicted that a galaxy&apos;s surroundings (crowded or empty space)
+              would change how its outer stars move. It was checked on a public catalogue of 175 nearby galaxies whose spin
+              speeds are measured carefully. The surroundings made no difference: the predicted effect was more than 20% of
+              the scatter; the measured one was about 0.01%. One number did come out close, the acceleration scale where
+              galaxies stop behaving like Newton&apos;s law (within 13%), but a 1983 rival idea,{' '}
+              <TermTooltip term="MOND">MOND</TermTooltip>, already explains that number. (MOND tweaks gravity itself instead
+              of adding invisible dark matter; it is the benchmark this framework keeps being compared to, and losing to.)
+            </p>
+            <details style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer' }}>The detail, with survey names and statistics</summary>
               Tested against {GALAXIES_RUN} galaxies ({GALAXIES_RUN_BREAKDOWN}) &mdash; but the
               mechanism itself was tested on the {GALAXIES_MECHANISM} resolved SPARC rotation curves
-              (plain words: <strong>SPARC</strong> is a standard public catalogue of nearby galaxies whose
-              spin speeds have been measured carefully at many distances from their centres;{' '}
+              (<strong>SPARC</strong> is the catalogue above;{' '}
               <strong>ALFALFA&ndash;SDSS</strong> is a much larger sky survey with one rough spin speed per
-              galaxy); the
-              registered Tully&ndash;Fisher environment test (TEST-03, on the 14,585-galaxy cross-match) was never run as registered.
-              <em style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}> (This card said &ldquo;14,760&rdquo;
-              until 2026-09-06 while the landing page called that figure incorrect &mdash; Beginner step 1
-              contradicting the page it came from. Now rendered from one source.)</em>{' '}
-              a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 13% &mdash; but this result is shared
-              with <TermTooltip term="MOND">MOND</TermTooltip> and other frameworks.
-              (<strong>MOND</strong>, in one line: a 1983 rival idea that explains fast-spinning galaxy
-              edges by tweaking gravity itself instead of adding invisible dark matter — it is the
-              benchmark Synchronism keeps being compared to, and losing to, throughout this site.)
-              The environment-dependent scatter prediction (TEST-03/05) has a corrected verdict as of 2026-07-15:
-              R²=0.14 is a real, significant effect (p=5&times;10⁻⁶) but on the SPARC-scale sample, not the
-              14,585-galaxy ALFALFA-SDSS one this page previously attributed it to — and it is morphology, not
-              cleanly environment. The brief &ldquo;MOND-shared&rdquo; verdict (07-09) dissolved on adjudication:
-              the frameworks&apos; environment levers differ by orders of magnitude, so the axis discriminates —
-              and the registered density-classified run now exists (research repo, 2026-07-14): r²=0.0001 against
-              the framework&apos;s registered &gt;20% claim. Refuted by execution.
-            </p>
+              galaxy); the registered Tully&ndash;Fisher environment test (TEST-03, on the 14,585-galaxy cross-match) was
+              never run as registered. a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 13%, shared with MOND and other
+              frameworks. The environment-dependent scatter prediction (TEST-03/05) has a corrected verdict as of 2026-07-15:
+              R²=0.14 is a real, significant effect (p=5&times;10⁻⁶, i.e. very unlikely to be chance) but on the SPARC-scale
+              sample, not the 14,585-galaxy ALFALFA-SDSS one this page previously attributed it to, and it is morphology,
+              not cleanly environment. The brief &ldquo;MOND-shared&rdquo; verdict (07-09) dissolved on adjudication: the
+              frameworks&apos; environment levers differ by orders of magnitude, so the axis discriminates, and the
+              registered density-classified run now exists (research repo, 2026-07-14): r²=0.0001 against the
+              framework&apos;s registered &gt;20% claim. Refuted by execution.
+              <em style={{ color: 'var(--color-text-muted)' }}> (This card said &ldquo;14,760&rdquo; until 2026-09-06 while
+              the landing page called that figure incorrect; now rendered from one source. Rewritten in plain words
+              2026-10-19 after a simulated-visitor beginner persona met this run of survey names on Beginner step 1.)</em>
+            </details>
             <div style={{ fontSize: '0.72rem', color: 'var(--color-text-muted)', marginBottom: '0.35rem' }}>
               Badges on this page: <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Failed &middot; Reparametrization</Link>{' '}
               (definitions); text after the bar is a finding descriptor. &ldquo;89% Boundary-Consistent&rdquo; and &ldquo;Template Bias Caveat&rdquo; are

@@ -119,10 +119,11 @@ export default function LearningPaths() {
         and the topic tracks reach 14 the difficulty paths don&apos;t. <strong>Advanced is the only path that
         covers the derivation chain</strong>; topic tracks are entry points, not complete coverage. Separately,
         {pathsWithTools.length === 0 ? `none of the ${learningPaths.length} paths` : `${pathsWithTools.length} of the ${learningPaths.length} paths (${pathsWithTools.map(p => p.name).join(', ')})`}{' '}
-        include an{' '}
+        {pathsWithTools.length === 1 ? 'includes' : 'include'} an{' '}
         <Link href="/interactive-tools" style={{ color: 'var(--color-accent-blue)' }}>interactive tool</Link> as a step &mdash;
-        if you want the equation explained rather than stated, start at{' '}
-        <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Anatomy</Link>.
+        if you want the equation explained rather than stated, try{' '}
+        <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Anatomy</Link>{' '}
+        (a tool with its own six-step tour, not a step on any path).
       </p>
 
       <h2 style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>By Difficulty</h2>

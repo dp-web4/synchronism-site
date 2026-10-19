@@ -33,7 +33,7 @@ export default function GammaBoundary() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Across its first 1,840 chemistry sessions (of 2,671 in all), the archive tested the prediction that chemical phenomena
-          cluster at &#x03B3; &#x2248; 1 &mdash; the quantum-classical boundary. It recorded 1,703 &ldquo;phenomenon types&rdquo;,
+          cluster at &#x03B3; &#x2248; 1 (the archive&apos;s label was &ldquo;the quantum-classical boundary&rdquo;; no such boundary follows from C(&#x03C1;), and the Coherence Explorer retired the label). It recorded 1,703 &ldquo;phenomenon types&rdquo;,
           89% boundary-consistent and 11% failures. Read the 1,703 with care: from session #138 on, each session was logged
           as exactly one new type (type = session &minus; 137, no exceptions), so it is a session counter, not a census of
           independent phenomena (reconciled 2026-10-09).

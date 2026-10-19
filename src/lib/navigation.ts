@@ -437,7 +437,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Consciousness Predictions',
       href: '/consciousness-predictions',
-      desc: '34 falsifiable predictions with EEG protocols',
+      desc: '34 predictions with EEG protocols (untestable as stated: no EEG → C calibration)',
       keywords: ['predictions', 'consciousness', 'EEG', 'falsifiable', 'neural'],
       prerequisites: ['/consciousness-threshold'],
       related: ['/test-catalog', '/tier-2-pilots'],

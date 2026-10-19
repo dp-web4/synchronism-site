@@ -85,8 +85,9 @@ export default function GalaxyRotation() {
 
         <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#ef4444' }}>C-convention note (2026-08-04):</strong> the site ran
-          three mutually exclusive readings of the substitution above: this plotter codes
-          v² = v<sub>b</sub>² + (V<sub>flat</sub>·C)², i.e. g<sub>obs</sub> = C·g<sub>bar</sub> shifted into an
+          three mutually exclusive readings of the substitution above: the Galaxy Curve Plotter originally coded
+          v² = v<sub>b</sub>² + (V<sub>flat</sub>·C)² (since its 2026-10-08 rewire that is the dashed curve; the solid
+          curve is floored division, below), i.e. g<sub>obs</sub> = C·g<sub>bar</sub> shifted into an
           amplitude term; the f<sub>DM</sub> = 1 − C identity on{' '}
           <Link href="/tier-1-existing" style={{ color: '#ef4444' }}>Tier 1</Link> implies
           g<sub>obs</sub> = g<sub>bar</sub>/C; and{' '}

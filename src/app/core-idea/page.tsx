@@ -392,7 +392,7 @@ export default function CoreIdea() {
             <strong>The data say the same thing, independently.</strong> The framework&apos;s whole distinctive claim is
             that <em>density</em> drives a <em>collective</em> transition. Tested in the density variable itself, the
             data reject that: fit head-to-head on the same SPARC galaxy points with &#x03B3; free, the density-keyed law
-            loses to the acceleration-keyed one at <strong>&#x0394;BIC +2843</strong> (+142 after allowing for
+            loses to the acceleration-keyed one at <strong>&#x0394;BIC +2843</strong> (about +163 after allowing for
             neighbouring points on a rotation curve not being independent), and its best-fit &#x03B3; runs down
             to <strong>0.046</strong> &mdash; the fit switches its own density dependence off.{' '}
             <strong>In plain words: when the density version is allowed to choose, it chooses to barely respond to

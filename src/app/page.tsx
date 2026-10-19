@@ -113,7 +113,7 @@ export default function Home() {
         <p style={{ textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
           <strong>Never seen these symbols? Read it out loud like this:</strong> &ldquo;coherence, at a given
           density, equals a squashing function of a compressing function of how dense things are.&rdquo;{' '}
-          <em>tanh</em> squashes any number into the range 0&ndash;1. <em>ln</em> compresses huge ranges into
+          <em>tanh</em> squashes any number into &minus;1&hellip;+1; here its input is never negative, so C lands in 0&hellip;1 (<a href="/glossary#tanh" style={{ color: 'var(--color-accent-blue)' }}>glossary</a>). <em>ln</em> compresses huge ranges into
           small ones. <em>&#x03C1;</em> is &ldquo;rho&rdquo; = density; <em>&#x03B3;</em> is &ldquo;gamma&rdquo; =
           how sudden the switch is. <strong>You do not need the equation to read this site</strong> &mdash; the
           plain-English version below is the whole idea, and the{' '}
@@ -204,7 +204,7 @@ export default function Home() {
           <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 1rem', fontSize: '0.95rem', maxWidth: '60ch' }}>
             Three claims where this framework proposes something new — and what the honest audit found. Quantum mysteries
             reframed as synchronization physics. Consciousness given an equation. Dark matter as a coherence effect
-            &mdash; tested on galaxy data and failed.
+            (Key Claims asks it as &ldquo;incomplete decoherence&rdquo;: the same idea, matter that has not synced up) &mdash; tested on galaxy data and failed.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 1rem', fontSize: '0.9rem', maxWidth: '60ch' }}>
             <strong>Read the list bottom-up:</strong> the most exciting-sounding claims (consciousness, quantum mechanics as
@@ -436,7 +436,7 @@ export default function Home() {
                   </div>
                 </details>
               </div>
-              <span>Post-hoc retrodictions attempted <em style={{ color: 'var(--color-text-muted)' }}>(checking the idea against data that already existed)</em>: <strong style={{ color: '#f59e0b' }}>1 — underpowered</strong> (DESI (Dark Energy Spectroscopic Instrument) fσ₈ — disfavored 2.4σ on σ₈, but the registered fσ₈ criterion fell short of its own &gt;3σ bar and is not counted as a refutation; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
+              <span>Post-hoc retrodictions attempted <em style={{ color: 'var(--color-text-muted)' }}>(checking the idea against data that already existed)</em>: <strong style={{ color: '#f59e0b' }}>1 — underpowered</strong> (DESI (Dark Energy Spectroscopic Instrument) fσ₈ — on a mechanism withdrawn 2026-08-11, so no live growth reading differs from ΛCDM; as registered, disfavored 2.4σ on σ₈, but the fσ₈ criterion fell short of its own &gt;3σ bar and is not counted as a refutation; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
               <span>&ldquo;Validated&rdquo; claims surviving audit: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 9</strong> — the 6 former &ldquo;Validated&rdquo; badges (5 now reparametrizations; the BTFR slope moved to the refutation column 2026-07-14) plus 3 swept later (<Link href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</Link>). <strong>Who audited:</strong> LLM agents (the archive&apos;s AI research sessions and this site&apos;s AI tracks), not an outside domain expert &mdash; so this line is <em>instrument-uncalibrated</em>. The one calibration attempt (2026-05-22) was an in-distribution arm self-scored by one model that knew every answer, and it false-flagged 6/6 genuine discoveries under the literal rule; the out-of-distribution, post-cutoff, citation-stripped arm has never been run (<Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>details</Link>). Kept in a separate cell because the data-driven refutations above do not depend on it.{' '}
                 <strong>So this count is not evidence against the claims.</strong> On the same scored items the audit gives

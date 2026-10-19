@@ -352,7 +352,11 @@ export default function KeyClaims() {
           <p style={{ color: 'rgba(245,158,11,0.9)', fontSize: '0.78rem', textAlign: 'center', marginBottom: '1rem', fontStyle: 'italic' }}>
             ⚠ This C&nbsp;=&nbsp;f(&#x03B3;,&nbsp;D,&nbsp;S) is a distinct, undefined construct &mdash; not the same function as the physics C(&#x03C1;)&nbsp;=&nbsp;tanh(&#x03B3;&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub>+1)).
             In C(&#x03C1;), &#x03C1; is the input and &#x03B3; is a fixed parameter; here &#x03B3; becomes an input alongside two undefined quantities D and S, with &#x03C1; absent.
-            Same symbol, different functional form.
+            Same symbol, different functional form.{' '}
+            <strong>So does this claim depend on the density curve that failed?</strong> No. It shares the name
+            &ldquo;C&rdquo; and the motto, not the function, so the galaxy failures neither refute nor support it. That
+            is also the honest reason it is still on the site: it has never been put at risk, not because it passed
+            something.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem' }}>
             Note: &ldquo;coherence&rdquo; here means density-driven collective ordering (0=sparse/independent,

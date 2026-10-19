@@ -59,7 +59,8 @@ export default function GammaCalculator() {
         physical estimate, but a live demonstration of the formula&apos;s central defect &mdash; watch
         the most-correlated systems get the <em>flattest</em> curves, which is backwards.{' '}
         <strong>Why is a formula we know is wrong still interactive?</strong> So you can see the flaw
-        yourself: click the &ldquo;Ideal gas&rdquo; preset, then &ldquo;BCS superconductor,&rdquo; and
+        yourself: click the &ldquo;Ideal gas&rdquo; preset, then &ldquo;BCS superconductor&rdquo; (a metal whose electrons pair up and move in lockstep, so it
+        conducts with zero resistance below a critical temperature: the <em>most</em> collective system here), and
         notice the far more collective system gets the far <em>flatter</em> curve. Real superconductors
         have among the sharpest transitions in nature — you just watched the formula get that backwards.
       </p>

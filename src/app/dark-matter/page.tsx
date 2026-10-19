@@ -18,8 +18,10 @@ export default function DarkMatter() {
         <strong>The idea in plain words:</strong> the same density-to-togetherness curve used everywhere on this site
         (a crowd acts independently; a marching band acts as one) was applied to galaxies. Where matter is sparse,
         the curve says gravity&apos;s effective pull should get a <em>boost</em> &mdash; and that boost was meant to
-        replace the invisible extra mass called dark matter. Tested on real galaxies, the boost turned out to be capped
-        at about 3&times;, while galaxy edges need up to 14&times;. That is why the badge below reads Failed.
+        replace the invisible extra mass called dark matter. Tested on real galaxies, it failed both ways it was written. In the version the
+        registered tests used (floored at the cosmic matter fraction), the boost is capped at about 3&times;, while galaxy
+        edges need up to 14&times;. Without the floor, the density curve&apos;s boost has no cap and lands in the wrong
+        places (it loses to the acceleration-keyed version by &#x0394;BIC +2843). That is why the badge below reads Failed.
       </p>
       <ValidationBadge status="failed" label="Failed — Mechanism Under Revision" />
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.4rem' }}>
@@ -47,8 +49,9 @@ export default function DarkMatter() {
         <p>
           &ldquo;Dark matter&rdquo; is one of the most loaded terms in physics. It conjures images of
           invisible particles drifting through galaxies, unseen but gravitationally felt. Synchronism
-          offers a different framing: what if there is no missing matter &mdash; only matter that
-          doesn&apos;t participate in electromagnetic interactions?
+          offers two different framings, and they are not compatible. Story 1: dark matter is real matter
+          (patterns) that couples to ours through gravity only. Story 2: there is no missing matter, and gravity&apos;s
+          strength depends on coherence. This page tests story 2. Which one the framework keeps is an open decision.
         </p>
 
         <h2>The Reframing</h2>
@@ -65,21 +68,33 @@ export default function DarkMatter() {
 
         <div className="grid-2" style={{ margin: '1.5rem 0' }}>
           <div className="card">
-            <h3 style={{ color: '#38bdf8' }}>Standard View</h3>
+            <h3 style={{ color: '#38bdf8' }}>Standard View (particle dark matter)</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               Unknown particles with mass but no electromagnetic charge. We detect them only through
               gravitational effects on visible matter. The particle identity is the central mystery.
             </p>
           </div>
           <div className="card">
-            <h3 style={{ color: 'var(--color-accent-violet)' }}>Synchronism View</h3>
+            <h3 style={{ color: 'var(--color-accent-violet)' }}>Synchronism, two stories</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Patterns interacting <strong>indifferently</strong> &mdash; gravity only, no EM coupling.
-              The coherence function determines which interaction channels are active at a given density.
-              Not missing matter, but matter in a different coherence regime.
+              <strong>Story 1 (the research summary&apos;s):</strong> patterns interacting <strong>indifferently</strong>
+              &mdash; gravity only, no EM coupling. That is the standard view in different words: it renames what dark matter
+              is, not whether it is there, and it predicts what cold dark matter predicts.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+              <strong>Story 2 (this page&apos;s test):</strong> no unseen mass; the coherence curve boosts gravity where
+              matter is sparse. That is modified gravity, MOND&apos;s class. It failed on galaxies (below).
             </p>
           </div>
         </div>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
+          <em>(Revised 2026-10-19. The card used to call story 1 &ldquo;not missing matter, but matter in a different
+          coherence regime&rdquo; and set it against the standard view; a simulated-visitor graduate persona pointed out
+          that matter with gravity and no EM coupling <strong>is</strong> the standard view. The research ledger records
+          the same fork from the cosmology side: the framework&apos;s dark-energy sector only works with cold dark matter
+          put in by hand (2026-09-22), which suits story 1 and not story 2. Choosing between them is gated on the project
+          lead.)</em>
+        </p>
 
         <h2>The Galaxy Rotation Anomaly</h2>
         <p>
@@ -224,7 +239,7 @@ export default function DarkMatter() {
           &#x0394;BIC=+184 with &#x03B3;=2 pinned (with the 2,807 points treated as independent; scored by galaxy, 2026-09-29, the margin is ΔBIC ≈ +11, 1.6–2.2σ: disfavoured at the threshold, not decisive) &mdash; <em>target
           corrected 2026-09-08:</em> that number refutes the <strong>acceleration-keyed</strong> realization the fit actually
           ran, not the density-keyed C(&#x03C1;) this page describes; the density-keyed law loses <em>harder</em>, head-to-head
-          on SPARC at &#x0394;BIC +2843 with &#x03B3; free (a point-count figure; with each galaxy as the unit it holds: galaxy-block bootstrap 95% [2178, 3590] with both laws refit, N<sub>eff</sub> ≈ 140, C(&#x03C1;) worse in 105 of 122 galaxies; ΔBIC scaled to the galaxy count is +142. Until 2026-10-18 this read &ldquo;discounted ~20×&rdquo; with no measurement behind it; the 20× turned out to be N/N<sub>gal</sub>, and the measured inflation is 17×. Script: <code>maintainer/scripts/dbic2843_galaxy_level.py</code>, pre-registered, 6/6 predictions held), and its floored form is capped by the boost ceiling &mdash; the BTFR slope kill fires at 3.3&#x03C3;, and SPARC&apos;s most
+          on SPARC at &#x0394;BIC +2843 with &#x03B3; free (a point-count figure; with each galaxy as the unit it holds: galaxy-block bootstrap 95% [2178, 3590] with both laws refit, N<sub>eff</sub> ≈ 140, C(&#x03C1;) worse in 105 of 122 galaxies; ΔBIC scaled by the measured N<sub>eff</sub>/N is about +163 (scaled by the galaxy count instead, +142). Until 2026-10-18 this read &ldquo;discounted ~20×&rdquo; with no measurement behind it; the 20× turned out to be N/N<sub>gal</sub>, and the measured variance inflation N/N<sub>eff</sub> is 17×, so the +142 is the cruder of the two. Script: <code>maintainer/scripts/dbic2843_galaxy_level.py</code>, pre-registered, 6/6 predictions held), and its floored form is capped by the boost ceiling &mdash; the BTFR slope kill fires at 3.3&#x03C3;, and SPARC&apos;s most
           dark-matter-dominated disc needs a boost of 13.7 against a ceiling of 3.17 (the often-quoted &ldquo;69% of
           galaxies exceed the ceiling&rdquo; holds only under the underived 1/&Omega;<sub>m</sub> normalization; under
           &Omega;<sub>m</sub>/&Omega;<sub>b</sub> &asymp; 6.4 the median passes and the tail exceedance becomes

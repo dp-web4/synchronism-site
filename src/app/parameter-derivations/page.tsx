@@ -401,10 +401,10 @@ export default function ParameterDerivations() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan&apos;s own fitted intercept</td><td style={{ padding: '0.25rem 0.75rem' }}>1.00 &plusmn; 0.02 (1&#x03C3;) = &plusmn; 0.04 (95%)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.79</td><td style={{ padding: '0.25rem 0' }}>~19&#x03C3; low</td></tr>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>framework&apos;s own, cH&#x2080;/2&#x03C0;</td><td style={{ padding: '0.25rem 0.75rem' }}>1.04</td><td style={{ padding: '0.25rem 0.75rem' }}>1.86</td><td style={{ padding: '0.25rem 0' }}>~18&#x03C3; low</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan&apos;s own fitted intercept</td><td style={{ padding: '0.25rem 0.75rem' }}>1.00 &plusmn; 0.02 (1&#x03C3;) = &plusmn; 0.04 (95%)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.79</td><td style={{ padding: '0.25rem 0' }}>~9.4&#x03C3; low</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>framework&apos;s own, cH&#x2080;/2&#x03C0;</td><td style={{ padding: '0.25rem 0.75rem' }}>1.04</td><td style={{ padding: '0.25rem 0.75rem' }}>1.86</td><td style={{ padding: '0.25rem 0' }}>~9.8&#x03C3; low</td></tr>
                   <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>McGaugh+2016 SPARC (canonical)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.20 &plusmn; 0.26</td><td style={{ padding: '0.25rem 0.75rem' }}>2.15</td><td style={{ padding: '0.25rem 0', color: '#38bdf8' }}>+0.5&#x03C3; &mdash; CONSISTENT</td></tr>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>V&#x103;r&#x103;&#x15F;teanu+2025 MIGHTEE-HI</td><td style={{ padding: '0.25rem 0.75rem' }}>1.69 &plusmn; 0.13</td><td style={{ padding: '0.25rem 0.75rem' }}>2.91</td><td style={{ padding: '0.25rem 0', color: '#38bdf8' }}>&minus;2.3&#x03C3; &mdash; branch (A) HIGH</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>V&#x103;r&#x103;&#x15F;teanu+2025 MIGHTEE-HI</td><td style={{ padding: '0.25rem 0.75rem' }}>1.69 &plusmn; 0.13 (at z &asymp; 0.08)</td><td style={{ padding: '0.25rem 0.75rem' }}>2.91 (= 1.69 &times; E(1)/E(0.08))</td><td style={{ padding: '0.25rem 0', color: '#38bdf8' }}>&minus;2.3&#x03C3; &mdash; branch (A) HIGH</td></tr>
                 </tbody>
               </table>
             </div>
@@ -416,8 +416,12 @@ export default function ParameterDerivations() {
               determinations) is signal/systematic &#8776; 1.15 &mdash; this places the <em>level</em> comparison
               in the &ldquo;untestable with foreseeable data&rdquo; category, not &ldquo;disfavoured.&rdquo;{' '}
               <em>(Corrected 2026-10-12: Ciocan&apos;s errors are 95% CIs; earlier &#x03C3;&apos;s divided them as
-              1&#x03C3;. The first two rows read &ldquo;+9.4&#x03C3;&rdquo; and &ldquo;+9.8&#x03C3;&rdquo; until today; on the
-              measurement error alone they are about twice that. The anchor-carried rows (+0.5&#x03C3;, &minus;2.3&#x03C3;)
+              1&#x03C3;. That was true of the sentences below; it was not true of this table, which the explorer&apos;s script had
+              already computed with 1&#x03C3; = 0.051 (low side) / 0.061 (high side). The 10-12 edit doubled the first two rows to
+              &ldquo;~19&#x03C3;&rdquo; and &ldquo;~18&#x03C3;&rdquo;, converting twice; restored 2026-10-19 to 9.4&#x03C3; (anchor &plusmn;0.02
+              carried) and 9.8&#x03C3;, after a simulated-visitor graduate persona recomputed them. The rows&apos; branch (A) column
+              de-evolves each anchor from its own sample redshift before multiplying by E(1) = 1.79, which is why the
+              MIGHTEE-HI row reads 2.91, not 1.69 &times; 1.79 = 3.03. The anchor-carried rows (+0.5&#x03C3;, &minus;2.3&#x03C3;)
               barely move. The signal/systematic sentence is a level statement; on the slope, below, the limit is
               the paper&apos;s own estimator spread, a methods question per-galaxy data would settle.)</em>
             </p>
@@ -729,7 +733,7 @@ export default function ParameterDerivations() {
               <Link href="/galaxy-plotter" style={{ color: '#38bdf8' }}> the plotter</Link>&apos;s &ldquo;max C on
               this disk: 0.001&rdquo; against this floor of 0.315 and concluded the floor binds at every radius, so
               the galaxy sector applies the constant 3.17 and TEST-09/TEST-10 are algebra. The premise conflates two
-              functions. The plotter draws the <em>density</em>-keyed C<sub>&#x03C1;</sub> (unfloored; its per-disc
+              functions. The plotter&apos;s &ldquo;max C&rdquo; readout reports the <em>density</em>-keyed C<sub>&#x03C1;</sub> (unfloored; since 2026-10-08 its solid curve then applies the &#x03A9;<sub>m</sub> floor by division, its dashed curve adds C<sub>&#x03C1;</sub> in quadrature; its per-disc
               maximum over 123 real SPARC discs has median 1.2&times;10<sup>&minus;3</sup> at &#x03B3; = 2, and 0 of
               123 reach &#x03A9;<sub>m</sub> &mdash; so the plotter&apos;s number does generalise). TEST-09/TEST-10
               evaluate the <em>acceleration</em>-keyed C<sub>a</sub>, whose floor is built into the functional form:
@@ -797,9 +801,9 @@ export default function ParameterDerivations() {
               g<sub>obs</sub> = g<sub>bar</sub>/C(ρ) &mdash; the reading the f<sub>DM</sub> = 1&minus;C identity
               implies &mdash; the boost B = 1/C is unbounded by construction and exceeds 3.17 by 2&ndash;5 orders
               of magnitude at <em>every</em> radius, including the disk centre, on the site&apos;s own five
-              plotter galaxies. The ceiling is consistent only with the{' '}
+              plotter galaxies. The ceiling is consistent only with the quadrature amplitude law (the{' '}
               <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve
-              Plotter</Link>&apos;s amplitude law v² = v<sub>b</sub>² + (V<sub>flat</sub>·C)², where the extra
+              Plotter</Link>&apos;s dashed curve since 2026-10-08; its solid curve is floored division) v² = v<sub>b</sub>² + (V<sub>flat</sub>·C)², where the extra
               term is bounded by V<sub>flat</sub> irrespective of C. No physical density floor rescues the other
               reading: capping B at 3.17 there requires ρ &#8805; 0.177 ρ<sub>crit</sub>, a floor
               10²&ndash;10⁴× the densest point of the model disk. See the C-convention note on{' '}

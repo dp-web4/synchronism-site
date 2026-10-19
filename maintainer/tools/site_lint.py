@@ -23,6 +23,19 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-19 (maintainer): taxonomy and badge drift; consciousness body vs header; measurement page
+    (r"Failed — all \$\{EXECUTED_COUNT\}", "2026-10-19",
+     "the Tier 1 badge covers only the tests whose kill fired; TEST-04a is underpowered as registered, not Failed"),
+    (r"found to operate at exactly C", "2026-10-19",
+     "Gnosis measured SNARC salience (0.640), not C; three numbers for one system, none of them C"),
+    (r"<strong>Feasibility:</strong> High", "2026-10-19",
+     "the EEG test needs an EEG-to-C calibration first; none exists"),
+    (r"34 falsifiable predictions", "2026-10-19",
+     "the 34 consciousness predictions inherit untestable-as-stated"),
+    (r"is why measurements produce\s+definite outcomes", "2026-10-19",
+     "irreversibility is decoherence; it does not select an outcome"),
+    (r"squashes any number into the range 0", "2026-10-19",
+     "tanh maps to (-1, +1); C lands in [0, 1) only because its input is non-negative"),
     # --- retired 2026-10-15 (maintainer): stale fragments next to their own corrections
     (r"Both derivations agree", "2026-10-15",
      "Session #91's Freeman route is the same relation (Σ₀ = a₀/2πG), not an independent derivation"),
@@ -59,8 +72,10 @@ RETIRED = [
     (r"8 approaches on 0\.499", "2026-10-13",
      "the 'phase transition (none exists)' row is excluded: 7 approaches, 0.501 +/- 0.010"),
     # --- retired 2026-10-12 (maintainer): Ciocan sigmas divided 95% CIs; A2ACW desk counterfactual read as a run; cH0/2pi "inside +/-5%"; TEST-04a badge; GW bound; tool-index drift
-    (r"9\.[48]\s*(σ|&sigma;|&#x03C3;)", "2026-10-12",
-     "Ciocan's errors are 95% CIs; the level rows are ~19 sigma / ~18 sigma measurement-only, and the slope row (n = 0.71 +/- 0.13) is the level-free statement"),
+    # 2026-10-19: the 10-12 rule here retired "9.4σ/9.8σ" and so enforced a double conversion (the explorer's script
+    # already used 1σ = 0.051/0.061). Inverted: the doubled values are now the retired ones. A lint can lock in an error.
+    (r"~1[89]\s*(σ|&sigma;|&#x03C3;) low", "2026-10-19",
+     "Ciocan level rows are 9.4σ / 9.8σ (1σ = 0.051 low side, anchor carried); ~19σ/~18σ converted the 95% CI twice"),
     (r"anchor-dominated", "2026-10-12",
      "the a0(z) slope is anchor-free (adding the anchor moves n by 0.05); the row is estimator-dominated"),
     (r"surveys disagree|disagree with each other by more than either", "2026-10-12",
@@ -415,6 +430,8 @@ EXEMPT = re.compile(
 )
 
 
+EXEMPT_REACH = 250
+
 HISTORY_SUMMARY = re.compile(r"revision|history|verbatim|as it read|previous|before today|earlier wording", re.IGNORECASE)
 
 
@@ -443,7 +460,12 @@ def main():
                 start = text.rfind("\n", 0, m.start()) + 1
                 end = text.find("\n", m.end())
                 line = text[start:end if end != -1 else len(text)]
-                if EXEMPT.search(line):
+                # Narrowed 2026-10-19: the whole line was the exemption scope, so a 900-character JSX badge line
+                # containing "TEST-04 withdrawn" exempted a retired phrase 600 characters away. Long lines now use a
+                # ±EXEMPT_REACH window around the match; short lines behave as before.
+                lo = max(start, m.start() - EXEMPT_REACH)
+                hi = min(len(text) if end == -1 else end, m.end() + EXEMPT_REACH)
+                if EXEMPT.search(text[lo:hi]):
                     continue
                 lineno = text.count("\n", 0, m.start()) + 1
                 print(f"{path.relative_to(ROOT.parent)}:{lineno}: retired {date}: {m.group(0)!r}\n    -> {why}")

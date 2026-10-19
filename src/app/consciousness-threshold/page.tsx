@@ -132,56 +132,56 @@ export default function ConsciousnessThreshold() {
           <li><strong>C &#x2248; 0.70</strong> (consciousness): Self-similar turbulent cascade &mdash; nested recursive structure. Each level of the system models the level below, generating the recursive self-modeling that constitutes consciousness.</li>
         </ul>
         <p>
-          The 8-way convergence at C&nbsp;&#x2248;&nbsp;0.50 (awareness threshold) and the theoretical
-          C&nbsp;&#x2248;&nbsp;0.70 (consciousness threshold) are now interpretable as critical Reynolds
-          numbers for specific flow regime transitions &mdash; values with independent physical meaning that
-          can be compared to empirical data, rather than stipulations of the framework.
+          <strong>What this mapping does and does not give you:</strong> it is a vocabulary, not a
+          measurement. To make the thresholds &ldquo;critical Reynolds numbers&rdquo; with independent physical
+          meaning, a neural Re would need ρ, v, L and μ in SI units. None is defined, and the three thresholds
+          (0.30, 0.50, 0.70) would need Re<sub>max</sub> values 440&times; apart (see Honest Caveats). So the
+          thresholds remain stipulations of the framework; the CFD reading renames them.{' '}
+          <em>(Revised 2026-10-19: this paragraph said the thresholds were &ldquo;now interpretable as critical
+          Reynolds numbers &hellip; with independent physical meaning that can be compared to empirical data,
+          rather than stipulations of the framework.&rdquo; The caveat at the bottom of the page already said that
+          was aspirational; a simulated-visitor researcher persona found the two contradicting each other.)</em>
         </p>
 
-        <h2>How It Could Be Tested</h2>
-        <div className="card card-highlight" style={{ marginBottom: '1.5rem' }}>
-          <h3>EEG Phase Coherence Measurement</h3>
+        <h2>What a Test Would Need</h2>
+        <div className="card" style={{ marginBottom: '1.5rem' }}>
+          <h3>EEG Phase Coherence Measurement &mdash; not runnable until a calibration exists</h3>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            <strong>Cost:</strong> ~$150,000 &nbsp; <strong>Duration:</strong> 12 months &nbsp;
-            <strong>Feasibility:</strong> High
+            <strong>The missing piece:</strong> a rule that turns an EEG phase-coherence measurement into a value
+            of C. None exists. Without it, &ldquo;a transition at C &#x2248; 0.50&rdquo; has no number to compare
+            to, and any observed transition could be mapped onto 0.50 after the fact.
           </p>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            Measure neural phase coherence during transitions between consciousness and
-            unconsciousness (anesthesia induction, sleep onset, meditation states).
-            The prediction: a sharp transition should occur at a measurable coherence value
-            corresponding to C &#x2248; 0.50.
+            <strong>What the test would be, once a calibration is fixed in advance:</strong> measure neural phase
+            coherence across transitions into and out of consciousness (anesthesia induction, sleep onset). The
+            prediction would fail if the transition is gradual, or if it sits far from the C value the
+            pre-registered calibration assigns to 0.50.
           </p>
-          <p style={{ color: 'var(--color-text-secondary)' }}>
-            <strong>Falsification:</strong> If the transition is gradual (no threshold) or occurs
-            at a coherence value far from 0.50, the prediction fails.
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+            <em>(Revised 2026-10-19: this card read &ldquo;Feasibility: High&rdquo; with a ~$150k / 12-month
+            estimate. The EEG recording is feasible; the test is not, because its falsification clause needs the
+            calibration first.)</em>
           </p>
         </div>
 
-        <h2>Cross-Domain Convergence: Gnosis AI</h2>
+        <h2>The Gnosis Numbers (Not Independent Evidence)</h2>
+        <details style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '0.5rem' }}>
+          <summary style={{ cursor: 'pointer' }}>What this section used to say (until 2026-10-19)</summary>
+          It called the Gnosis architecture &ldquo;an independent line of evidence&rdquo; that &ldquo;was found to operate
+          at exactly C &#x2248; 0.50.&rdquo; A simulated-visitor researcher persona found that it contradicted the header
+          and the correction box on the same page.
+        </details>
         <p>
-          An independent line of evidence comes from an unexpected source. The Gnosis architecture &mdash;
-          a 3-stream correctness-detection system for LLMs, designed for AI self-monitoring with
-          no consciousness research objective &mdash; was found to operate at exactly C &#x2248; 0.50.
+          The Gnosis architecture is neither independent nor a measurement of C. Gnosis was designed by
+          AI agents with access to the Synchronism framework. Its one cited test (Session 63) measured SNARC
+          salience, mean 0.640, a different variable with no mapping to C (correction box above). Three internal
+          analyses report peaks near 38&ndash;40% (information-theoretic SNR ~40%, decoherence window ~38%,
+          pre-transition critical dynamics ~40%), again in Gnosis&apos;s own variables. That is three numbers
+          (0.38&ndash;0.40, 0.50, 0.64) for one system, none of them a measurement of C.
         </p>
-        <p>
-          Three mathematical frameworks within Gnosis converge near 38–40%:
-        </p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem' }}>
-          <div className="card" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.75rem 1rem' }}>
-            <span style={{ fontWeight: 500, fontSize: '0.9rem' }}>Information-Theoretic SNR</span>
-            <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>Peak at ~40%</span>
-          </div>
-          <div className="card" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.75rem 1rem' }}>
-            <span style={{ fontWeight: 500, fontSize: '0.9rem' }}>Coherence Decoherence Window</span>
-            <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>Peak at ~38%</span>
-          </div>
-          <div className="card" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.75rem 1rem' }}>
-            <span style={{ fontWeight: 500, fontSize: '0.9rem' }}>Critical Dynamics Pre-Transition</span>
-            <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>Peak at ~40%</span>
-          </div>
-        </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-          Source: Gnosis Research Sessions #1-3. Full analysis in Research/Gnosis/EXECUTIVE_SUMMARY.md.
+          Source: Gnosis Research Sessions #1-3 and #63. Full analysis in Research/Gnosis/EXECUTIVE_SUMMARY.md.
+          <em> (Revised 2026-10-19 to match the header and correction box.)</em>
         </p>
 
         <h2>Honest Caveats</h2>

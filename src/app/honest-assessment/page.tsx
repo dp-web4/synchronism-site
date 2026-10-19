@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { Fragment } from 'react';
+import { BADGES } from '@/lib/statusLabels';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -65,7 +67,7 @@ export default function HonestAssessment() {
       </div>
 
       <div style={{ maxWidth: '65ch', marginBottom: '1.5rem', padding: '0.7rem 1rem', background: 'rgba(16,185,129,0.07)', border: '1px solid rgba(16,185,129,0.35)', borderRadius: '0.375rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
-        <strong style={{ color: '#10b981' }}>On the Beginner Path?</strong> You can stop here &mdash; the rest of this
+        <strong style={{ color: '#10b981' }}>New here, or on the Beginner Path?</strong> You can stop here &mdash; the rest of this
         page is the detailed audit, kept for readers who want the evidence behind the verdict above. Your next step
         is the{' '}
         <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary &rarr;</Link>{' '}
@@ -84,15 +86,9 @@ export default function HonestAssessment() {
           sentence and got a taxonomy. Everything below this table is the long form. Operational states and lifecycle verbs
           are <em>not</em> badges; the refutation table&apos;s Root column is a third axis and is explained at the table.)
           <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: '0.2rem 0.75rem', marginTop: '0.4rem' }}>
-            <strong>Active-MRH</strong><span>in active research focus (MRH-relationship family)</span>
-            <strong>Parallel-Paths</strong><span>kept in the hypothesis space, not in focus, not abandoned</span>
-            <strong>Sidelined</strong><span>was in focus, now parked; reactivation condition stated</span>
-            <strong>Superseded</strong><span>replaced by a later formulation</span>
-            <strong>Audited-Negative</strong><span>closed audit finding; durable; does not move</span>
-            <strong>Untested</strong><span>prediction exists, no data yet (descriptive family)</span>
-            <strong>Speculative</strong><span>conceptual proposal, no quantitative test</span>
-            <strong>Reparametrization</strong><span>equivalent to existing physics in different notation</span>
-            <strong>Failed</strong><span>contradicted by data, with the specific error</span>
+            {BADGES.map((b) => (
+              <Fragment key={b.name}><strong>{b.name}</strong><span>{b.oneLiner}{b.name === 'Active-MRH' ? ' (MRH-relationship family)' : b.name === 'Untested' ? ' (descriptive family)' : ''}</span></Fragment>
+            ))}
           </div>
           <span style={{ color: 'var(--color-text-muted)' }}>Retired, still met on a few older pages: Validated, Strongly Supported.</span>
         </div>
@@ -161,6 +157,7 @@ export default function HonestAssessment() {
           <strong>MOND-shared</strong><span>RETIRED (class audited 2026-07-14/15). Asserted &ldquo;a positive result confirms Synchronism AND MOND equally.&rdquo; All three carriers dissolved when executed or adjudicated: TEST-09 (BTFR — Failed; kill fired at B<sub>max</sub> = 1/&Omega;<sub>m</sub>, |&Delta;n| = 0.41 &gt; 0.3, but convention-dependent: the 2026-09-18 ceiling sweep finds it does not fire at the two baryon-budget ceilings, so it does not survive its own pre-fixed rule; convention-free, B<sub>max</sub> &#8818; 5.4 is excluded; whether it stays in the count of 6 is pending the project lead), TEST-10 (dwarf DM fractions — 69% of SPARC exceeds the framework&apos;s 68.5% ceiling), TEST-05 (environment levers differ by ~50–5,000×). A tie badge was the site&apos;s only unfalsifiable label — it carried no execution burden and sounded modest. New rule: a claimed tie carries the same execution burden as a claimed kill (both predictions computed, agreement shown within the data&apos;s discriminating power).</span>
           <strong>Withdrawn</strong><span>Framework disowned the test — not from data refutation, but from internal contradiction or an unmotivated amplitude. A test replaced by a later formulation is Superseded, not Withdrawn (overlap removed 2026-09-25). Carries no badge (never adjudicated). TEST-04 (BAO).</span>
           <strong>Self-Eliminating-or-Tie</strong><span>No measurement outcome selects Synchronism over the standard alternatives — either the signal is below systematics reach, or both outcomes (null and confirmed anomaly) are covered by Newton or MOND respectively. TEST-02 (wide binaries).</span>
+          <strong>Unrunnable as stated</strong><span>The test as written cannot be executed: a mapping, calibration or amplitude it needs is undefined, so no observation can be compared to it (e.g. every C-keyed consciousness prediction: no EEG &rarr; C calibration exists). Distinct from Untested, which has a runnable protocol and no data yet. Added to this legend 2026-10-19 (it was in use on six pages and the Test Roadmap&apos;s list).</span>
           <strong>Sign Correction</strong><span>Annotation marking that the prediction direction on this page was corrected after initial publication. Not a verdict badge — a correction provenance marker. TEST-02 (2026-06-06).</span>
           <strong>Null-Class</strong><span>The result achieves the same or better fit using a structurally simpler null model (e.g., polynomial in atomic number Z). The match is evidence of monotonicity in the target variable, not framework-specific physics. Chemistry correlation explorer.</span>
           <strong>Artifact Lesson</strong><span>Added to this legend 2026-08-05 (it was in use on three tool cards and defined in no legend). Marks an <em>interactive tool</em>, not a prediction: the tool animates a relation the audit found wrong, kept deliberately so a reader can watch it fail rather than read that it failed. Currently on three tools: the Crossover Regime Visualizer (formerly &ldquo;Phase Boundary Visualizer&rdquo;) and the γ Calculator (both animate γ = 2/√N_corr, audited-negative), and the Consciousness Demo (eight &ldquo;independent&rdquo; approaches converging on C ≈ 0.50 by construction); it also applies to any tool whose displayed law is superseded. Companion label &ldquo;Model Explainer&rdquo; means the tool shows how the equation works and is not itself a verdict on whether the equation is correct. Both are tool-card labels; neither is a validation badge.</span>

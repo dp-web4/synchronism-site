@@ -13,7 +13,7 @@ export default function MeasurementWithoutObservers() {
       <Breadcrumbs currentPath="/measurement-without-observers" />
       <PathNav currentPath="/measurement-without-observers" />
       <h1>Measurement Without Observers</h1>
-      <ValidationBadge status="speculative" label="Interpretive Overlay on Decoherence — No Differing Prediction; 6 Experiment Classes (not protocols)" />
+      <ValidationBadge status="reparametrization" label="Reparametrization — MRH crossing restates decoherence; no differing prediction; 6 experiment classes (not protocols)" />
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
         <strong>In plain words:</strong> this page is a way of <em>describing</em> decoherence, not a new test. Standard
         quantum mechanics already says no conscious observer is needed: contact with a large environment is enough.{' '}
@@ -39,8 +39,10 @@ export default function MeasurementWithoutObservers() {
         N<sub>corr</sub>&nbsp;&rarr;&nbsp;&#x03B3; ladder has <em>zero anchored rungs</em> (it absorbs values, it
         has never predicted one), and the relation <em>inverts the sign</em> of the correlation-to-sharpness
         mapping &mdash; the galaxy-sector pin requires N<sub>corr</sub>&nbsp;=&nbsp;1 while the SPARC fit requires
-        N<sub>corr</sub>&nbsp;&#x2248;&nbsp;17. A page badged &ldquo;Untested&rdquo; whose mechanism is
-        audited-negative is not untested; it is <strong>downstream of a negative audit</strong>. Read the protocols
+        N<sub>corr</sub>&nbsp;&#x2248;&nbsp;17. A page whose mechanism is audited-negative is not
+        &ldquo;untested&rdquo; (this page once carried that badge; it read Speculative until 2026-10-19, and
+        now reads Reparametrization, because by its own description it adds no differing prediction to decoherence);
+        it is <strong>downstream of a negative audit</strong>. Read the protocols
         below as illustrating what the framework would predict <em>if</em> the ladder were anchored. See{' '}
         <Link href="/parameter-derivations" style={{ color: '#ef4444' }}>Parameter Derivations</Link>.
       </p>
@@ -152,10 +154,16 @@ export default function MeasurementWithoutObservers() {
         <p>
           MRH crossing is thermodynamically irreversible for macroscopic apparatuses. Once
           N<sub>corr</sub> reaches ~10<sup>23</sup>, the probability of spontaneously returning
-          to the pre-measurement state is effectively zero. This is why measurements produce
-          definite outcomes: the MRH boundary crossing is a one-way gate when the environment
-          is large enough.
+          to the pre-measurement state is effectively zero. That explains why interference cannot
+          be recovered after a measurement: the MRH boundary crossing is a one-way gate when the environment is large
+          enough. It does <em>not</em> by itself select which outcome occurs; irreversibility is decoherence, and
+          (table above) decoherence does not give definite outcomes.
         </p>
+        <details style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision note (2026-10-19)</summary>
+          This paragraph said irreversibility &ldquo;is why measurements produce definite outcomes&rdquo;, contradicting
+          the comparison table two sections up.
+        </details>
 
         <div style={{ marginTop: '1.5rem', padding: '0.75rem 1rem', background: 'rgba(239,68,68,0.07)', borderRadius: '6px', borderLeft: '3px solid #ef4444' }}>
           <h3 style={{ color: '#ef4444', marginTop: 0, fontSize: '0.95rem' }}>Open Gap: The Born Rule</h3>

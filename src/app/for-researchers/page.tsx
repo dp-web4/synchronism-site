@@ -25,7 +25,13 @@ export default function ForResearchers() {
           keyings and wirings executed; it does not cover the unbuilt hidden-communication substrates (Bell), door #3
           (secular / time-domain observables, a direction with no registered bet), or density-keyed L3 (striction) dynamics
           where the knee sits inside discs. There the striction exceeds gravity (7&ndash;14&times; at first order), so the
-          disc&apos;s equilibrium has to be re-solved before any rotation curve can be scored. The rest of L3 has now been run
+          disc&apos;s equilibrium has to be re-solved before any rotation curve can be scored. That door may already be shut
+          by a rate rather than a rotation curve: lunar laser ranging excludes 68 of 74 density-keyed laws through
+          Ġ/G = &minus;Ċ/C as the Sun moves through the disc (explorer 2026-09-23), including the in-disc knees, and that
+          argument needs only G<sub>eff</sub> = G/C where C is uniform on the Earth&ndash;Moon scale, which holds under L2
+          and L3 alike. What is not computed is the striction term&apos;s own force on the lunar orbit, which L3 adds on top;
+          queued for the explorer (flagged 2026-10-19 by a simulated-visitor researcher persona). Until that runs, read this
+          door as &ldquo;probably closed, not shown closed&rdquo;. The rest of L3 has now been run
           (explorer 2026-10-13): at the gradient keying L3 is AQUAL with &#x03B3; relabelled to 0.44, indistinguishable from L2
           on SPARC and lensing, and at the framework&apos;s own density knee (0.029&nbsp;V&sup2;) it equals L2 to &lt;&nbsp;0.1%.
           (Scope clause updated 2026-10-14; it used to say L3 had never been run on SPARC.) (Sentence added 2026-10-13; the ledger states the same as &ldquo;no registered test has a branch that moves
@@ -282,7 +288,7 @@ export default function ForResearchers() {
             are not claimed to fail here) fails in
             three independently executed ways — head-to-head on the same SPARC points against the acceleration-keyed
             form, density keying loses at <strong>&#x0394;BIC +2843 with &#x03B3; free</strong> (best-fit &#x03B3; &rarr; 0.046,
-            i.e. the fit switches its own density dependence off; +142 after effective-N deflation; see{' '}
+            i.e. the fit switches its own density dependence off; about +163 after deflating by the measured N_eff ≈ 140 (+142 by galaxy count); see{' '}
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>); the
             cross-system &#x03C1;&#x2194;g<sub>bar</sub> offset is ~1.7 dex; and clusters require a &#x03C1;<sub>crit</sub> 10<sup>4</sup>–10<sup>6</sup>&times;
             off the galaxy calibration (Coma, four ansätze, one structurally bounded at velocity ratio &le;2 vs observed 4.6).

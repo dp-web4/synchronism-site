@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { Fragment } from 'react';
+import { BADGES, OPERATIONAL_STATES, LIFECYCLE_VERBS } from '@/lib/statusLabels';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -78,19 +80,18 @@ export default function TestCatalog() {
           color: 'var(--color-text-muted)',
         }}>
           <strong style={{ color: 'var(--color-text-secondary)' }}>Validation Badge Guide — MRH-relationship:</strong>{' '}
-          <span style={{ color: '#8b5cf6' }}>■ Active-MRH</span> — under active investigation &nbsp;|&nbsp;
-          <span style={{ color: '#6366f1' }}>■ Parallel-Paths</span> — kept in the hypothesis space, not in active focus, not abandoned &nbsp;|&nbsp;
-          <span style={{ color: '#94a3b8' }}>■ Sidelined</span> — not currently pursued; reasons and reactivation condition documented &nbsp;|&nbsp;
-          <span style={{ color: '#6b7280' }}>■ Superseded</span> — replaced by a later formulation &nbsp;|&nbsp;
-          <span style={{ color: '#ef4444' }}>■ Audited-Negative</span> — closed audit finding on a historical track; durable record.{' '}
+          {BADGES.filter((x) => x.family === 'mrh').map((x, i, arr) => (
+            <Fragment key={x.name}><span style={{ color: x.color }}>■ {x.name}</span> — {x.oneLiner}{i < arr.length - 1 ? ' | ' : '. '}</Fragment>
+          ))}
           <strong style={{ color: 'var(--color-text-secondary)' }}>Descriptive:</strong>{' '}
-          <span style={{ color: '#f59e0b' }}>■ Reparametrization</span> — equivalent to existing physics in different notation &nbsp;|&nbsp;
-          <span style={{ color: '#f59e0b' }}>■ Untested</span> — prediction exists, no data yet &nbsp;|&nbsp;
-          <span style={{ color: '#94a3b8' }}>■ Speculative</span> — conceptual proposal without a quantitative test &nbsp;|&nbsp;
-          <span style={{ color: '#ef4444' }}>■ Failed</span> — contradicted by data (with specific error).{' '}
+          {BADGES.filter((x) => x.family === 'descriptive').map((x, i, arr) => (
+            <Fragment key={x.name}><span style={{ color: x.color }}>■ {x.name}</span> — {x.oneLiner}{i < arr.length - 1 ? ' | ' : '. '}</Fragment>
+          ))}
           <strong style={{ color: 'var(--color-text-secondary)' }}>Operational states (not badges):</strong>{' '}
-          Self-Eliminating-or-Tie &nbsp;|&nbsp; Unrunnable as stated &nbsp;|&nbsp; Withdrawn &nbsp;|&nbsp; Underpowered as registered
-          &mdash; these describe what a test <em>can</em> do or what happened to it, not a verdict on the claim.{' '}
+          {OPERATIONAL_STATES.join(' | ')} &mdash; what a test <em>can</em> do or what happened to it.{' '}
+          <strong style={{ color: 'var(--color-text-secondary)' }}>Lifecycle verbs (not badges):</strong>{' '}
+          {LIFECYCLE_VERBS.join(' | ')} &mdash; the provenance of a row.
+          Both lists are complete and rendered from one source; neither is a verdict on the claim.{' '}
           <Link href="/glossary" style={{ color: 'var(--color-text-muted)' }}>Definitions (Glossary) →</Link>{' '}
           <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-text-muted)' }}>
             Canonical definitions (Honest Assessment) →
@@ -124,8 +125,8 @@ export default function TestCatalog() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#f59e0b' }}>Discrimination status:</strong>{' '}
-          Of these 24 proposed tests, <strong>0 selected Synchronism over MOND+EFE+&Lambda;CDM (MOND with its external field effect, plus the standard &Lambda;-cold-dark-matter cosmology), and none still unrun can
-          select the framework as postulated</strong>.{' '}
+          Of the 24 registry tests (TEST-01 to TEST-24), <strong>0 selected Synchronism over MOND+EFE+&Lambda;CDM (MOND with its external field effect, plus the standard &Lambda;-cold-dark-matter cosmology), and none still unrun can
+          select the framework as postulated</strong>. The 2 added later do not change that: TEST-25&apos;s Cassini failure is shared with MOND&apos;s simple &mu;, and TEST-26 has no framework-specific outcome (its kill is shared with &Lambda;CDM, its win with wCDM).{' '}
           <strong>2 executed tests did discriminate, and both selected MOND</strong> (TEST-09, BTFR slope,
           separating the models at 3.3σ; TEST-10, dwarf DM fractions). &ldquo;Selected MOND&rdquo; means the MOND class with an unbounded boost; the particular simple &mu; that the free-&gamma; fit lands on is itself excluded by Cassini (TEST-25), so only MOND with a sharper return survives both. Both kills are convention-dependent: TEST-09 fired at
           B<sub>max</sub> = 1/&Omega;<sub>m</sub> (n = 3.35, |&Delta;n| = 0.41 &gt; 0.3) but the 2026-09-18 ceiling sweep finds

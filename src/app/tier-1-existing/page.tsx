@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { OPERATIONAL_STATES, LIFECYCLE_VERBS } from '@/lib/statusLabels';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
@@ -338,7 +339,11 @@ export default function Tier1Existing() {
     <>
       <Breadcrumbs currentPath="/tier-1-existing" />
       <h1>Tier 1: Existing Data</h1>
-      <ValidationBadge status="failed" label={`Failed — all ${EXECUTED_COUNT} numbered executed tests (+ the unnumbered RAR-shape test, card under Recommended Start): ${TALLY.killsFired.length} with the kill fired (${TALLY.killsFired.join('; ')}) + ${TALLY.underpowered.length} disfavored but underpowered as registered, not counted as a refutation (${TALLY.underpowered.join('; ')}). Convention-dependent: ${TALLY.conventionDependent.join(' and ')} fire at B_max = 1/Ω_m but not at every candidate ceiling (TEST-09 does not survive the 2026-09-18 sweep; convention-free, B_max ≲ 5.4 is excluded by the BTFR slope and B_max ≲ 14 by SPARC dwarfs); the ceiling both tests share is excluded at every Ω_m-based convention by the weak-lensing RAR (Brouwer+2021; see /honest-assessment#refutation-ledger); whether they stay in the count of 6 is pending the project lead (dp). Not executed: TEST-04 withdrawn; TEST-02 self-eliminating; rest untested. Site-ledger split: ${ROOTS_SENTENCE}. ${SIX_TRACE}. $0 cost`} />
+      <ValidationBadge status="failed" label={`Failed — ${TALLY.killsFired.length} numbered tests with the kill fired (${TALLY.killsFired.join('; ')})`} />
+      <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
+        {`Of ${EXECUTED_COUNT} numbered executed tests (+ the unnumbered RAR-shape test, card under Recommended Start), the badge covers only the ${TALLY.killsFired.length} whose kill fired. ${TALLY.underpowered.length} more (${TALLY.underpowered.join('; ')}) is not Failed: it is underpowered as registered (a lifecycle verb, not a badge) and not counted as a refutation. Convention-dependent: ${TALLY.conventionDependent.join(' and ')} fire at B_max = 1/Ω_m but not at every candidate ceiling (TEST-09 does not survive the 2026-09-18 sweep; convention-free, B_max ≲ 5.4 is excluded by the BTFR slope and B_max ≲ 14 by SPARC dwarfs); the ceiling both tests share is excluded at every Ω_m-based convention by the weak-lensing RAR (Brouwer+2021; see /honest-assessment#refutation-ledger); whether they stay in the count of 6 is pending the project lead (dp). Not executed: TEST-04 withdrawn; TEST-02 self-eliminating; rest untested. Site-ledger split: ${ROOTS_SENTENCE}. ${SIX_TRACE}. $0 cost.`}{' '}
+        <em>(Revised 2026-10-19: the badge used to read &ldquo;Failed — all {EXECUTED_COUNT} numbered executed tests&rdquo;, which put TEST-04a under Failed while the Test Roadmap says it is not; a simulated-visitor technical-writer persona caught the contradiction.)</em>
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -590,9 +595,9 @@ export default function Tier1Existing() {
             <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>validation badges</Link>{' '}
             &middot;{' '}
             <Link href="/honest-assessment#operational-states" style={{ color: 'var(--color-accent-blue)' }}>operational states</Link>{' '}
-            (Kill Criterion Triggered, Withdrawn, Self-Eliminating-or-Tie, Artifact Lesson &hellip;) &middot;{' '}
+            ({OPERATIONAL_STATES.join(', ')}) &middot;{' '}
             <Link href="/honest-assessment#status-lifecycle-verbs" style={{ color: 'var(--color-accent-blue)' }}>status lifecycle verbs</Link>{' '}
-            (Underpowered as registered, Demoted to Tier-2, Closed &hellip;).
+            ({LIFECYCLE_VERBS.join(', ')}).
             <br />A test can carry one of each simultaneously &mdash; e.g. TEST-09 reads
             &ldquo;Failed, Kill Criterion Triggered&rdquo; (at B<sub>max</sub> = 1/&Omega;<sub>m</sub>; convention-dependent, see its card), and TEST-04a
             reads &ldquo;Failed &mdash; Underpowered as Registered&rdquo;. <strong>Read them in that order: badge (what the evidence

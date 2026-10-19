@@ -157,9 +157,13 @@ export default function CdmDiscrimination() {
             141 galaxies it correlates with Chae et al.&apos;s external-field estimate e<sub>env</sub> at r&nbsp;=&nbsp;+0.43
             (r&sup2;&nbsp;=&nbsp;0.19), so most of any EFE signal would not reach it. Regressing the same RAR offsets directly on
             e<sub>env</sub> gives r&nbsp;=&nbsp;&minus;0.11 (not significant), with the sign the EFE predicts (explorer step-0
-            finding, <code>efe-step0-collinearity-e-env-vs-ambient-density.md</code>). Whether that direct null has power against a
-            ~0.09&nbsp;dex modulation has not been computed. The re-keyed run, which would answer it (and would bear on Chae+2020&apos;s
-            detection), is queued for the explorer. Until it runs this is <em>untested</em>, not a result about MOND.
+            finding, <code>efe-step0-collinearity-e-env-vs-ambient-density.md</code>). <strong>Neither null has power.</strong>{' '}
+            Against Chae et al.&apos;s own predicted EFE, the density regression has 5.7% power (5% would be chance), and the
+            direct regression on e<sub>env</sub> has 18% (26% using low-acceleration points only). The observed slope sits
+            0.6&#x03C3; from the MOND+EFE prediction and 1.35&#x03C3; from zero, so both fit. 80% power needs ~1,500 galaxies at
+            SPARC&apos;s noise (BIG-SPARC scale), or a sample selected for strong external fields. First computed 2026-08-07,
+            recomputed 2026-10-18 (explorer, <code>efe-offset-vs-eenv-regression-power-at-n141.md</code>, pre-registered). So
+            this stays <em>untested</em>: no power is not a result about MOND either way.
           </li>
         </ul>
 

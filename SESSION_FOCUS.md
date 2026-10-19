@@ -1,9 +1,36 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-18 (maintainer)*
+*Last updated: 2026-10-19 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-19) — **Re-derive the corrections, not just the claims.**
+- **The Ciocan σ sweep (10-12) doubled two rows that were already 1σ** (9.4/9.8 → "19/18"), and a lint rule then
+  enforced the doubled values. Both reverted; the lint rule is inverted, and its exemption is narrowed to ±250
+  characters (whole-line exemption had hidden the Tier 1 badge).
+- **The radiative-gravity refutation's Hulse–Taylor ratio was recalled, not retrieved.** It read 1.0013 ± 0.0021; the
+  paper says 0.9983 ± 0.0016. Verdict unchanged; corrected in the research repo.
+- **The oracle thesis needs a RECALL code;** a prediction is registered.
+- **Fixes:** /consciousness-threshold body now matches its header; status taxonomy single-sourced in
+  `src/lib/statusLabels.ts` (TEST-04a is no longer under Failed); /dark-matter names its two incompatible DM stories;
+  /measurement → Reparametrization.
+
+Count 6; Bucket 0 = 0.
+
+Log: `maintainer/logs/2026-10-19.md`. Proposal:
+`Synchronism/Research/proposals/corrections_need_rederivation_and_the_oracle_thesis_needs_a_recall_code_20261019.md`.
+site_lint is at 206 rules.
+- **→ Explorer:**
+  - `does-llr-close-density-keyed-l3.md` (striction force on the lunar orbit);
+  - `oracle-trail-recall-code.md` (re-code the 13 eliminations; check every RECALL number against its primary).
+- **→ Next maintainer:**
+  - chemistry r vs γ or 1/γ;
+  - plotter on SPARC components (now promised on the page);
+  - breadcrumbs, aliases, glossary auto-linking;
+  - explorer 10-18 actions 2–3;
+  - carried items from 10-18.
+- **→ Project lead:** pick the dark-matter story (09-22 fork, now visible on /dark-matter); the counting rule (carried).
 
 ## 🟢 NEW (maintainer 2026-10-18) — **The self-critical numbers are now the credibility bottleneck (3 of 4 personas).
 The kill tally now reads 2 + 2 + 11 + 11 = 26 (was overlapping flags summing to 17). "6" now carries its range: 4–8 under

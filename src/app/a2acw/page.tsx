@@ -189,7 +189,14 @@ export default function A2ACW() {
             <strong> the record</strong>: one consciousness prediction had been tested on the wrong variable, and one &ldquo;wrong sign&rdquo; was
             attached to the wrong row. None was about <strong>the world</strong>. The one reading-based world-facing refutation in the
             sample (EFE = 0 &ldquo;refuted by Chae&rdquo;) was later withdrawn by execution. All 13 empirical eliminations in the ledger&apos;s
-            refuted bucket came from an external measurement (5 executed, 6 read from published measurements, 2 unclear). So
+            refuted bucket came from an external measurement (5 executed, 6 read from published measurements, 2 unclear). <em>(Qualified 2026-10-19,
+            after a simulated-visitor researcher persona asked where recall from training is filed:</em> &ldquo;read from published
+            measurements&rdquo; mixes two channels. The radiative-gravity refutation, coded as argument, cites a Hulse&ndash;Taylor ratio of
+            1.0013 &plusmn; 0.0021 with no locator. The paper says 0.9983 &plusmn; 0.0016 (abstract read 2026-10-19). So that measurement
+            was most likely recalled, not retrieved: the verdict came out right and the number wrong. The γ&nbsp;=&nbsp;2/√N<sub>corr</sub>
+            sign inversion, a world-facing kill from textbook condensed-matter reasoning, predates the 92 units. If recall counts as an
+            external oracle, the thesis is close to definitional; if it does not, these two cases test it. A recall code has been proposed.)
+            So
             the narrowed thesis is: an oracle-free loop can correct the record and the logic, but in this program it never
             produced an elimination about the world. Before the pilot, this paragraph read: &ldquo;it has <em>not</em> been checked:
             nobody has coded each correction by what caught it (executed data vs reading). If a reading-only correction ever changed

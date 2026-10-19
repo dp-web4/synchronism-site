@@ -1,0 +1,40 @@
+Starting Synchronism Maintainer Session at Mon Oct 19 06:00:01 PDT 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+Today's visitor finding was that the worst errors on the site now sit in the corrections themselves, not in the original claims. I checked whether that reaches the research core, and in two places it does. Everything is pushed (site `3bca3e3`, `b721c28`; research repo `53a3f936`). The build passes, the lint shows 0 hits across 206 rules, and the anchor-link check shows 0 broken. The count stays at 6 (4–8 depending on the counting rule) and Bucket 0 stays at 0.
+
+**What changes for the research**
+- **A correction doubled two numbers, and the lint locked it in.** The 2026-10-12 fix for Ciocan's 95% error bars was mostly right. But two table rows had already been converted to 1σ by the explorer's script, so the fix doubled 9.4σ/9.8σ to "~19σ/~18σ". The same session then added a lint rule that rejected the correct values. Both are reverted and the rule is inverted.
+- **A Bucket 2 refutation rests on a misquoted number.** The radiative-gravity kill quotes a Hulse–Taylor ratio of 1.0013 ± 0.0021 with no source link. The paper's abstract, which I fetched, says 0.9983 ± 0.0016. The verdict is unchanged: either value matches GR's tensor prediction to about 0.2%. I corrected the exploration file and its script.
+- **The oracle thesis is missing a channel.** The thesis says world-facing verdicts need an external measurement. That misquoted refutation was coded as "argument" and used a number recalled from training rather than looked up. The researcher persona's objection holds: if recall counts as external, the thesis is close to true by definition. I proposed a separate RECALL code and registered a prediction before anyone re-codes: recall gets verdicts right and numbers wrong.
+- **The lint had a hole.** It skipped any line containing a history word, so the old 900-character Tier 1 badge line was exempt as a whole. The check now looks only at ±250 characters around a match. Run against the last commit, all 8 new or inverted rules fire.
+
+**Site fixes**
+- /consciousness-threshold: the body now matches its "untestable as stated" header. That covers the Gnosis evidence, the Reynolds-number section, the EEG test card and the "34 falsifiable predictions" link.
+- **Status labels:** badges, operational states and lifecycle verbs now come from one file, `src/lib/statusLabels.ts`. TEST-04a is no longer under Tier 1's Failed badge.
+- /dark-matter:
+  - The page now says openly that it carries two incompatible stories: one is particle dark matter in other words, the other is modified gravity.
+  - The ~3× cap is scoped to the floored version.
+  - The ΔBIC is scaled by the measured effective sample size (about +163).
+- /measurement-without-observers: badge changed to Reparametrization, and its claim about definite outcomes is removed.
+- Smaller fixes:
+  - Pages still describing the plotter before its rewire are updated.
+  - The plotter's MOND curve is disclosed as taking its flat level from the data.
+  - The beginner-path galaxy card is rewritten in plain words.
+  - The tanh range wording and the 24-vs-26 test count are fixed.
+  - The explorer's EFE power numbers are on /cdm-discrimination.
+  - The lunar-laser-ranging scope note is on /for-researchers.
+
+Two visitor requests (a "beginners can stop here" line, a "watch the formula go backwards" sentence) already existed. I fixed what made them easy to miss instead of adding duplicates.
+
+**Explorer topics seeded**
+- Does lunar laser ranging close the density-keyed L3 door once the striction force is included?
+- Re-code the 13 recorded eliminations with the RECALL code and check every recalled number against its source.
+
+**Not done**
+- Whether the chemistry explorer's correlations are computed against γ or 1/γ. That needs γ assignments that aren't published.
+- Rebuilding the plotter on SPARC's own mass components. Carried for weeks, now promised on the page itself.
+- Breadcrumbs, URL aliases and linking glossary terms where they first appear.
+- I left three untracked bootstrap `.npy` files from 10-18 in `maintainer/scripts/`. They can be regenerated.
+
+**Needs the project lead:** which dark-matter story to keep (now visible on /dark-matter), and the counting rule (still pending).

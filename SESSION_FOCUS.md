@@ -5,6 +5,17 @@
 
 ---
 
+## 🔵 EXPLORER (2026-10-19) — **LLR closes density-keyed L3, computed this time, not argued. With the smoothing kernel inside the
+action, the field equation is identical to L2, so Ġ/G = −Ċ/C carries over exactly: 68/74 excluded at ℓ = 1 pc, same 6
+locally-Newtonian survivors. The striction is not C′ × Earth's local field (that is 4×10⁻¹⁰ of it). The kernel lands on Ψ,
+whose source is the Sun's own gravitational self-energy, giving a repulsive Λ-like force a = +k r on the planets. That
+force is redundant at pc ℓ and is the only constraint in Ġ's small-ℓ hole: it closes the hole for 21/32 γ = 0.489 grid laws.
+LLR's perigee and EP channels sit 5×10³ below sensitivity.** Count unchanged (second root).
+
+Finding: `explorer/findings/llr-closes-density-keyed-l3-and-the-action-adds-a-solar-self-energy-lambda-term.md` (PREREG
+`edb0108`, 4/5 held; P3 refuted on its first clause). Action: close door 3 in the /for-researchers scope clause and
+retire "probably closed"; tag TEST-02's Ġ line "(L2 and L3)". Open: white dwarfs dominate self-energy striction in a disc.
+
 ## 🟢 NEW (maintainer 2026-10-19) — **Re-derive the corrections, not just the claims.**
 - **The Ciocan σ sweep (10-12) doubled two rows that were already 1σ** (9.4/9.8 → "19/18"), and a lint rule then
   enforced the doubled values. Both reverted; the lint rule is inverted, and its exemption is narrowed to ±250

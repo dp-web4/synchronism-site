@@ -1,0 +1,256 @@
+== controls ==
+  max |s_fd/s_analytic - 1| over laws with s > 1e-6 at ell = 1, 10 pc: 3.93e-05
+  harmonic k r, Saturn: numeric/analytic(1.5 k sqrt(1-e^2)/n) = 1.000000
+  (E/M)_sun = 2.861e+11 m^2/s^2
+
+== f_sun and rho_s by ell ==
+  ell= 0.000145 pc  rho_s= 2.06e+10  f_sun=1
+  ell= 0.000485 pc  rho_s= 5.57e+08  f_sun=1
+  ell=  0.00145 pc  rho_s= 2.06e+07  f_sun=1
+  ell=  0.00485 pc  rho_s= 5.57e+05  f_sun=1
+  ell=     0.01 pc  rho_s= 6.35e+04  f_sun=1
+  ell=     0.03 pc  rho_s= 2.35e+03  f_sun=1
+  ell=      0.1 pc  rho_s=     63.6  f_sun=0.999
+  ell=      0.3 pc  rho_s=     2.44  f_sun=0.966
+  ell=        1 pc  rho_s=    0.147  f_sun=0.432
+  ell=        2 pc  rho_s=   0.0914  f_sun=0.0868
+  ell=        3 pc  rho_s=   0.0859  f_sun=0.0274
+  ell=        5 pc  rho_s=    0.084  f_sun=0.00605
+  ell=       10 pc  rho_s=   0.0835  f_sun=0.000761
+
+== counts (of 74 laws) ==
+   ell pc  Gdot strict L3 union strict-only
+ 0.000145     0     22       22          22
+ 0.000485     0     27       27          27
+  0.00145     0     31       31          31
+  0.00485     0     35       35          35
+     0.01     0     36       36          36
+     0.03     0     37       37          37
+      0.1     0     37       37          37
+      0.3    38     45       45           7
+        1    68     57       68           0
+        2    68     54       68           0
+        3    66     45       66           0
+        5    66     27       66           0
+       10    62      0       62           0
+
+Survivors at ell = 1 pc under L3 (Gdot U striction): 6
+    FW f=0.089 g=2.0 rc=0.00032
+    FW f=0.089 g=2.0 rc=0.000563
+    FW f=0.089 g=2.0 rc=0.000992
+    FW f=0.315 g=2.0 rc=0.00032
+    FW f=0.315 g=2.0 rc=0.000563
+    FW f=0.315 g=2.0 rc=0.000992
+
+== the small-ell hole: per-law pass map (G = Gdot-excluded, S = striction-only excluded, . = passes) ==
+   ell grid: 0.00015 0.00048 0.0015 0.0048 0.01 0.03 0.1 0.3 1 2 3 5 10
+           FW f=0.089 g=0.489 rc=0.00032 L2 .......xxxxxx  L3 ...SSSSGGGGGG
+          FW f=0.089 g=0.489 rc=0.000563 L2 .......xxxxxx  L3 ..SSSSSGGGGGG
+          FW f=0.089 g=0.489 rc=0.000992 L2 .......xxxxxx  L3 ..SSSSSGGGGGG
+           FW f=0.089 g=0.489 rc=0.00175 L2 .......xxxxxx  L3 .SSSSSSGGGGGG
+           FW f=0.089 g=0.489 rc=0.00307 L2 .......xxxxxx  L3 .SSSSSSGGGGGG
+            FW f=0.089 g=0.489 rc=0.0039 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+           FW f=0.089 g=0.489 rc=0.00541 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+            FW f=0.089 g=0.489 rc=0.0079 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+           FW f=0.089 g=0.489 rc=0.00952 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+            FW f=0.089 g=0.489 rc=0.0168 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+            FW f=0.089 g=0.489 rc=0.0295 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+             FW f=0.089 g=0.489 rc=0.052 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+            FW f=0.089 g=0.489 rc=0.0735 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+             FW f=0.089 g=0.489 rc=0.078 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+            FW f=0.089 g=0.489 rc=0.0915 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+             FW f=0.089 g=0.489 rc=0.161 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+             FW f=0.089 g=2.0 rc=0.00032 L2 .............  L3 .............
+            FW f=0.089 g=2.0 rc=0.000563 L2 .............  L3 .............
+            FW f=0.089 g=2.0 rc=0.000992 L2 .............  L3 .............
+             FW f=0.089 g=2.0 rc=0.00175 L2 ........xx...  L3 ........GG...
+             FW f=0.089 g=2.0 rc=0.00307 L2 ........xxxx.  L3 ........GGGG.
+              FW f=0.089 g=2.0 rc=0.0039 L2 ........xxxx.  L3 ........GGGG.
+             FW f=0.089 g=2.0 rc=0.00541 L2 ........xxxxx  L3 ........GGGGG
+              FW f=0.089 g=2.0 rc=0.0079 L2 ........xxxxx  L3 ........GGGGG
+             FW f=0.089 g=2.0 rc=0.00952 L2 ........xxxxx  L3 ........GGGGG
+              FW f=0.089 g=2.0 rc=0.0168 L2 ........xxxxx  L3 ........GGGGG
+              FW f=0.089 g=2.0 rc=0.0295 L2 ........xxxxx  L3 ........GGGGG
+               FW f=0.089 g=2.0 rc=0.052 L2 ........xxxxx  L3 ........GGGGG
+              FW f=0.089 g=2.0 rc=0.0735 L2 ........xxxxx  L3 .......SGGGGG
+               FW f=0.089 g=2.0 rc=0.078 L2 ........xxxxx  L3 .......SGGGGG
+              FW f=0.089 g=2.0 rc=0.0915 L2 ........xxxxx  L3 .......SGGGGG
+               FW f=0.089 g=2.0 rc=0.161 L2 .......xxxxxx  L3 .......GGGGGG
+           FW f=0.315 g=0.489 rc=0.00032 L2 .......xxxxxx  L3 ...SSSSGGGGGG
+          FW f=0.315 g=0.489 rc=0.000563 L2 .......xxxxxx  L3 ..SSSSSGGGGGG
+          FW f=0.315 g=0.489 rc=0.000992 L2 .......xxxxxx  L3 ..SSSSSGGGGGG
+           FW f=0.315 g=0.489 rc=0.00175 L2 .......xxxxxx  L3 .SSSSSSGGGGGG
+           FW f=0.315 g=0.489 rc=0.00307 L2 .......xxxxxx  L3 .SSSSSSGGGGGG
+            FW f=0.315 g=0.489 rc=0.0039 L2 .......xxxxxx  L3 .SSSSSSGGGGGG
+           FW f=0.315 g=0.489 rc=0.00541 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+            FW f=0.315 g=0.489 rc=0.0079 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+           FW f=0.315 g=0.489 rc=0.00952 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+            FW f=0.315 g=0.489 rc=0.0168 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+            FW f=0.315 g=0.489 rc=0.0295 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+             FW f=0.315 g=0.489 rc=0.052 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+            FW f=0.315 g=0.489 rc=0.0735 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+             FW f=0.315 g=0.489 rc=0.078 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+            FW f=0.315 g=0.489 rc=0.0915 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+             FW f=0.315 g=0.489 rc=0.161 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+             FW f=0.315 g=2.0 rc=0.00032 L2 .............  L3 .............
+            FW f=0.315 g=2.0 rc=0.000563 L2 .............  L3 .............
+            FW f=0.315 g=2.0 rc=0.000992 L2 .............  L3 .............
+             FW f=0.315 g=2.0 rc=0.00175 L2 ........xx...  L3 ........GG...
+             FW f=0.315 g=2.0 rc=0.00307 L2 ........xxxx.  L3 ........GGGG.
+              FW f=0.315 g=2.0 rc=0.0039 L2 ........xxxx.  L3 ........GGGG.
+             FW f=0.315 g=2.0 rc=0.00541 L2 ........xxxxx  L3 ........GGGGG
+              FW f=0.315 g=2.0 rc=0.0079 L2 ........xxxxx  L3 ........GGGGG
+             FW f=0.315 g=2.0 rc=0.00952 L2 ........xxxxx  L3 ........GGGGG
+              FW f=0.315 g=2.0 rc=0.0168 L2 ........xxxxx  L3 ........GGGGG
+              FW f=0.315 g=2.0 rc=0.0295 L2 ........xxxxx  L3 ........GGGGG
+               FW f=0.315 g=2.0 rc=0.052 L2 ........xxxxx  L3 ........GGGGG
+              FW f=0.315 g=2.0 rc=0.0735 L2 ........xxxxx  L3 .......SGGGGG
+               FW f=0.315 g=2.0 rc=0.078 L2 ........xxxxx  L3 .......SGGGGG
+              FW f=0.315 g=2.0 rc=0.0915 L2 ........xxxxx  L3 .......SGGGGG
+               FW f=0.315 g=2.0 rc=0.161 L2 .......xxxxxx  L3 .......GGGGGG
+   FW-T02null f=0.315 g=0.489 rc=3.8e-05 L2 ........xxxxx  L3 .....SSSGGGGG
+  FW-T02null f=0.315 g=0.489 rc=7.73e-05 L2 .......xxxxxx  L3 ....SSSGGGGGG
+  FW-T02null f=0.315 g=0.489 rc=0.000157 L2 .......xxxxxx  L3 ...SSSSGGGGGG
+   FW-T02null f=0.315 g=0.489 rc=0.00032 L2 .......xxxxxx  L3 ...SSSSGGGGGG
+       FW-T02null f=0.315 g=2.0 rc=0.016 L2 ........xxxxx  L3 ........GGGGG
+      FW-T02null f=0.315 g=2.0 rc=0.0207 L2 ........xxxxx  L3 ........GGGGG
+      FW-T02null f=0.315 g=2.0 rc=0.0253 L2 ........xxxxx  L3 ........GGGGG
+        FW-T02null f=0.315 g=2.0 rc=0.03 L2 ........xxxxx  L3 ........GGGGG
+         RG ellip e0=.089 Q=.47 rc=.0083 L2 .......xxxxxx  L3 SSSSSSSGGGGGG
+         RG disc  e0=.56 Q=.92 rc=7.4e-4 L2 ........xxxxx  L3 ........GGGGG
+  family 0.489: 15 laws keep a passing ell < 1 pc under L3
+  family 2.0: 36 laws keep a passing ell < 1 pc under L3
+  family rg: 1 laws keep a passing ell < 1 pc under L3
+
+== magnitudes for representative laws ==
+  FW f=0.089 g=0.489 rc=0.0079
+     ell= 0.000145 s= 1.28e-12 C=1.0000 Gdot= 0.00e+00 k= 1.82e-26 s^-2  worst planet  Saturn z=      5.82
+     ell= 0.000485 s= 4.38e-11 C=1.0000 Gdot= 0.00e+00 k= 5.60e-26 s^-2  worst planet  Saturn z=      17.8
+     ell=  0.00145 s= 1.10e-09 C=1.0000 Gdot= 0.00e+00 k= 1.56e-25 s^-2  worst planet  Saturn z=      48.7
+     ell=  0.00485 s= 3.76e-08 C=1.0000 Gdot= 0.00e+00 k= 4.81e-25 s^-2  worst planet  Saturn z=       149
+     ell=     0.01 s= 3.15e-07 C=1.0000 Gdot= 0.00e+00 k= 9.45e-25 s^-2  worst planet  Saturn z=       292
+     ell=     0.03 s= 7.90e-06 C=1.0000 Gdot= 0.00e+00 k= 2.64e-24 s^-2  worst planet  Saturn z=       812
+     ell=      0.1 s= 2.70e-04 C=0.9997 Gdot= 2.08e-44 k= 8.10e-24 s^-2  worst planet  Saturn z=  2.49e+03
+     ell=      0.3 s= 6.51e-03 C=0.9933 Gdot= 2.21e-10 k= 2.11e-23 s^-2  worst planet  Saturn z=   6.5e+03
+     ell=        1 s= 9.14e-02 C=0.9059 Gdot= 1.48e-06 k= 1.31e-23 s^-2  worst planet  Saturn z=  4.03e+03
+     ell=        2 s= 1.37e-01 C=0.8587 Gdot= 6.38e-07 k= 1.04e-24 s^-2  worst planet  Saturn z=       320
+     ell=        3 s= 1.44e-01 C=0.8511 Gdot= 8.87e-08 k= 1.55e-25 s^-2  worst planet  Saturn z=      48.2
+     ell=        5 s= 1.46e-01 C=0.8484 Gdot= 2.57e-08 k= 1.25e-26 s^-2  worst planet  Saturn z=      4.54
+     ell=       10 s= 1.47e-01 C=0.8476 Gdot= 4.60e-09 k= 3.97e-28 s^-2  worst planet Jupiter z=     -2.07
+  FW f=0.089 g=2.0 rc=0.000992
+     ell= 0.000145 s= 3.89e-53 C=1.0000 Gdot= 0.00e+00 k= 5.52e-67 s^-2  worst planet Jupiter z=     -2.07
+     ell= 0.000485 s= 7.31e-47 C=1.0000 Gdot= 0.00e+00 k= 9.35e-62 s^-2  worst planet Jupiter z=     -2.07
+     ell=  0.00145 s= 3.89e-41 C=1.0000 Gdot= 0.00e+00 k= 5.52e-57 s^-2  worst planet Jupiter z=     -2.07
+     ell=  0.00485 s= 7.31e-35 C=1.0000 Gdot= 0.00e+00 k= 9.35e-52 s^-2  worst planet Jupiter z=     -2.07
+     ell=     0.01 s= 4.34e-31 C=1.0000 Gdot= 0.00e+00 k= 1.30e-48 s^-2  worst planet Jupiter z=     -2.07
+     ell=     0.03 s= 2.30e-25 C=1.0000 Gdot= 0.00e+00 k= 7.69e-44 s^-2  worst planet Jupiter z=     -2.07
+     ell=      0.1 s= 4.31e-19 C=1.0000 Gdot= 3.33e-59 k= 1.29e-38 s^-2  worst planet Jupiter z=     -2.07
+     ell=      0.3 s= 2.00e-13 C=1.0000 Gdot= 6.80e-21 k= 6.45e-34 s^-2  worst planet Jupiter z=     -2.07
+     ell=        1 s= 1.46e-08 C=1.0000 Gdot= 2.37e-13 k= 1.89e-30 s^-2  worst planet Jupiter z=     -2.07
+     ell=        2 s= 9.55e-08 C=1.0000 Gdot= 4.46e-13 k= 6.23e-31 s^-2  worst planet Jupiter z=     -2.07
+     ell=        3 s= 1.22e-07 C=1.0000 Gdot= 7.55e-14 k= 1.12e-31 s^-2  worst planet Jupiter z=     -2.07
+     ell=        5 s= 1.34e-07 C=1.0000 Gdot= 2.35e-14 k= 9.71e-33 s^-2  worst planet Jupiter z=     -2.07
+     ell=       10 s= 1.37e-07 C=1.0000 Gdot= 4.28e-15 k= 3.13e-34 s^-2  worst planet Jupiter z=     -2.07
+  FW f=0.089 g=2.0 rc=0.0295
+     ell= 0.000145 s= 3.05e-47 C=1.0000 Gdot= 0.00e+00 k= 4.33e-61 s^-2  worst planet Jupiter z=     -2.07
+     ell= 0.000485 s= 5.74e-41 C=1.0000 Gdot= 0.00e+00 k= 7.33e-56 s^-2  worst planet Jupiter z=     -2.07
+     ell=  0.00145 s= 3.05e-35 C=1.0000 Gdot= 0.00e+00 k= 4.33e-51 s^-2  worst planet Jupiter z=     -2.07
+     ell=  0.00485 s= 5.74e-29 C=1.0000 Gdot= 0.00e+00 k= 7.33e-46 s^-2  worst planet Jupiter z=     -2.07
+     ell=     0.01 s= 3.40e-25 C=1.0000 Gdot= 0.00e+00 k= 1.02e-42 s^-2  worst planet Jupiter z=     -2.07
+     ell=     0.03 s= 1.81e-19 C=1.0000 Gdot= 0.00e+00 k= 6.04e-38 s^-2  worst planet Jupiter z=     -2.07
+     ell=      0.1 s= 3.38e-13 C=1.0000 Gdot= 2.61e-53 k= 1.01e-32 s^-2  worst planet Jupiter z=     -2.07
+     ell=      0.3 s= 1.48e-07 C=1.0000 Gdot= 5.03e-15 k= 4.77e-28 s^-2  worst planet Jupiter z=     -2.07
+     ell=        1 s= 4.74e-03 C=0.9986 Gdot= 7.70e-08 k= 6.16e-25 s^-2  worst planet  Saturn z=       190
+     ell=        2 s= 1.95e-02 C=0.9936 Gdot= 9.11e-08 k= 1.28e-25 s^-2  worst planet  Saturn z=      40.1
+     ell=        3 s= 2.32e-02 C=0.9922 Gdot= 1.43e-08 k= 2.14e-26 s^-2  worst planet  Saturn z=      7.26
+     ell=        5 s= 2.46e-02 C=0.9917 Gdot= 4.33e-09 k= 1.81e-27 s^-2  worst planet Jupiter z=     -2.07
+     ell=       10 s= 2.51e-02 C=0.9916 Gdot= 7.84e-10 k= 5.78e-29 s^-2  worst planet Jupiter z=     -2.07
+  FW f=0.315 g=0.489 rc=0.0079
+     ell= 0.000145 s= 9.62e-13 C=1.0000 Gdot= 0.00e+00 k= 1.37e-26 s^-2  worst planet  Saturn z=      4.54
+     ell= 0.000485 s= 3.29e-11 C=1.0000 Gdot= 0.00e+00 k= 4.21e-26 s^-2  worst planet  Saturn z=      13.5
+     ell=  0.00145 s= 8.26e-10 C=1.0000 Gdot= 0.00e+00 k= 1.17e-25 s^-2  worst planet  Saturn z=      36.8
+     ell=  0.00485 s= 2.83e-08 C=1.0000 Gdot= 0.00e+00 k= 3.61e-25 s^-2  worst planet  Saturn z=       112
+     ell=     0.01 s= 2.37e-07 C=1.0000 Gdot= 0.00e+00 k= 7.11e-25 s^-2  worst planet  Saturn z=       219
+     ell=     0.03 s= 5.94e-06 C=1.0000 Gdot= 0.00e+00 k= 1.98e-24 s^-2  worst planet  Saturn z=       611
+     ell=      0.1 s= 2.03e-04 C=0.9998 Gdot= 1.57e-44 k= 6.09e-24 s^-2  worst planet  Saturn z=  1.87e+03
+     ell=      0.3 s= 4.89e-03 C=0.9950 Gdot= 1.66e-10 k= 1.58e-23 s^-2  worst planet  Saturn z=  4.88e+03
+     ell=        1 s= 6.70e-02 C=0.9293 Gdot= 1.09e-06 k= 9.36e-24 s^-2  worst planet  Saturn z=  2.88e+03
+     ell=        2 s= 9.87e-02 C=0.8937 Gdot= 4.61e-07 k= 7.20e-25 s^-2  worst planet  Saturn z=       222
+     ell=        3 s= 1.04e-01 C=0.8881 Gdot= 6.39e-08 k= 1.07e-25 s^-2  worst planet  Saturn z=      33.5
+     ell=        5 s= 1.05e-01 C=0.8860 Gdot= 1.85e-08 k= 8.65e-27 s^-2  worst planet  Saturn z=      3.34
+     ell=       10 s= 1.06e-01 C=0.8854 Gdot= 3.31e-09 k= 2.74e-28 s^-2  worst planet Jupiter z=     -2.07
+  FW f=0.315 g=2.0 rc=0.000992
+     ell= 0.000145 s= 2.92e-53 C=1.0000 Gdot= 0.00e+00 k= 4.15e-67 s^-2  worst planet Jupiter z=     -2.07
+     ell= 0.000485 s= 5.50e-47 C=1.0000 Gdot= 0.00e+00 k= 7.03e-62 s^-2  worst planet Jupiter z=     -2.07
+     ell=  0.00145 s= 2.92e-41 C=1.0000 Gdot= 0.00e+00 k= 4.15e-57 s^-2  worst planet Jupiter z=     -2.07
+     ell=  0.00485 s= 5.50e-35 C=1.0000 Gdot= 0.00e+00 k= 7.03e-52 s^-2  worst planet Jupiter z=     -2.07
+     ell=     0.01 s= 3.26e-31 C=1.0000 Gdot= 0.00e+00 k= 9.80e-49 s^-2  worst planet Jupiter z=     -2.07
+     ell=     0.03 s= 1.73e-25 C=1.0000 Gdot= 0.00e+00 k= 5.79e-44 s^-2  worst planet Jupiter z=     -2.07
+     ell=      0.1 s= 3.24e-19 C=1.0000 Gdot= 2.50e-59 k= 9.73e-39 s^-2  worst planet Jupiter z=     -2.07
+     ell=      0.3 s= 1.50e-13 C=1.0000 Gdot= 5.11e-21 k= 4.85e-34 s^-2  worst planet Jupiter z=     -2.07
+     ell=        1 s= 1.10e-08 C=1.0000 Gdot= 1.78e-13 k= 1.42e-30 s^-2  worst planet Jupiter z=     -2.07
+     ell=        2 s= 7.18e-08 C=1.0000 Gdot= 3.35e-13 k= 4.68e-31 s^-2  worst planet Jupiter z=     -2.07
+     ell=        3 s= 9.21e-08 C=1.0000 Gdot= 5.68e-14 k= 8.42e-32 s^-2  worst planet Jupiter z=     -2.07
+     ell=        5 s= 1.00e-07 C=1.0000 Gdot= 1.77e-14 k= 7.30e-33 s^-2  worst planet Jupiter z=     -2.07
+     ell=       10 s= 1.03e-07 C=1.0000 Gdot= 3.22e-15 k= 2.35e-34 s^-2  worst planet Jupiter z=     -2.07
+  FW f=0.315 g=2.0 rc=0.0295
+     ell= 0.000145 s= 2.29e-47 C=1.0000 Gdot= 0.00e+00 k= 3.26e-61 s^-2  worst planet Jupiter z=     -2.07
+     ell= 0.000485 s= 4.31e-41 C=1.0000 Gdot= 0.00e+00 k= 5.51e-56 s^-2  worst planet Jupiter z=     -2.07
+     ell=  0.00145 s= 2.29e-35 C=1.0000 Gdot= 0.00e+00 k= 3.26e-51 s^-2  worst planet Jupiter z=     -2.07
+     ell=  0.00485 s= 4.31e-29 C=1.0000 Gdot= 0.00e+00 k= 5.51e-46 s^-2  worst planet Jupiter z=     -2.07
+     ell=     0.01 s= 2.56e-25 C=1.0000 Gdot= 0.00e+00 k= 7.69e-43 s^-2  worst planet Jupiter z=     -2.07
+     ell=     0.03 s= 1.36e-19 C=1.0000 Gdot= 0.00e+00 k= 4.54e-38 s^-2  worst planet Jupiter z=     -2.07
+     ell=      0.1 s= 2.54e-13 C=1.0000 Gdot= 1.96e-53 k= 7.62e-33 s^-2  worst planet Jupiter z=     -2.07
+     ell=      0.3 s= 1.11e-07 C=1.0000 Gdot= 3.78e-15 k= 3.59e-28 s^-2  worst planet Jupiter z=     -2.07
+     ell=        1 s= 3.56e-03 C=0.9989 Gdot= 5.79e-08 k= 4.63e-25 s^-2  worst planet  Saturn z=       143
+     ell=        2 s= 1.46e-02 C=0.9952 Gdot= 6.84e-08 k= 9.60e-26 s^-2  worst planet  Saturn z=      30.2
+     ell=        3 s= 1.74e-02 C=0.9942 Gdot= 1.07e-08 k= 1.60e-26 s^-2  worst planet  Saturn z=      5.61
+     ell=        5 s= 1.85e-02 C=0.9938 Gdot= 3.25e-09 k= 1.35e-27 s^-2  worst planet Jupiter z=     -2.07
+     ell=       10 s= 1.88e-02 C=0.9936 Gdot= 5.88e-10 k= 4.33e-29 s^-2  worst planet Jupiter z=     -2.07
+  RG ellip e0=.089 Q=.47 rc=.0083
+     ell= 0.000145 s= 1.91e-12 C=1.0000 Gdot= 0.00e+00 k= 2.71e-26 s^-2  worst planet  Saturn z=      8.34
+     ell= 0.000485 s= 5.69e-11 C=1.0000 Gdot= 0.00e+00 k= 7.28e-26 s^-2  worst planet  Saturn z=      22.9
+     ell=  0.00145 s= 1.26e-09 C=1.0000 Gdot= 0.00e+00 k= 1.79e-25 s^-2  worst planet  Saturn z=      55.8
+     ell=  0.00485 s= 3.76e-08 C=1.0000 Gdot= 0.00e+00 k= 4.81e-25 s^-2  worst planet  Saturn z=       149
+     ell=     0.01 s= 2.90e-07 C=1.0000 Gdot= 0.00e+00 k= 8.71e-25 s^-2  worst planet  Saturn z=       269
+     ell=     0.03 s= 6.42e-06 C=1.0000 Gdot= 0.00e+00 k= 2.14e-24 s^-2  worst planet  Saturn z=       660
+     ell=      0.1 s= 1.91e-04 C=0.9998 Gdot= 1.48e-44 k= 5.74e-24 s^-2  worst planet  Saturn z=  1.77e+03
+     ell=      0.3 s= 4.08e-03 C=0.9957 Gdot= 1.39e-10 k= 1.32e-23 s^-2  worst planet  Saturn z=  4.07e+03
+     ell=        1 s= 5.35e-02 C=0.9427 Gdot= 8.69e-07 k= 7.37e-24 s^-2  worst planet  Saturn z=  2.27e+03
+     ell=        2 s= 8.05e-02 C=0.9136 Gdot= 3.76e-07 k= 5.75e-25 s^-2  worst planet  Saturn z=       177
+     ell=        3 s= 8.49e-02 C=0.9088 Gdot= 5.23e-08 k= 8.54e-26 s^-2  worst planet  Saturn z=        27
+     ell=        5 s= 8.64e-02 C=0.9071 Gdot= 1.52e-08 k= 6.93e-27 s^-2  worst planet  Saturn z=      2.81
+     ell=       10 s= 8.69e-02 C=0.9066 Gdot= 2.72e-09 k= 2.19e-28 s^-2  worst planet Jupiter z=     -2.07
+  RG disc  e0=.56 Q=.92 rc=7.4e-4
+     ell= 0.000145 s= 1.47e-25 C=1.0000 Gdot= 0.00e+00 k= 2.10e-39 s^-2  worst planet Jupiter z=     -2.07
+     ell= 0.000485 s= 1.14e-22 C=1.0000 Gdot= 0.00e+00 k= 1.45e-37 s^-2  worst planet Jupiter z=     -2.07
+     ell=  0.00145 s= 4.88e-20 C=1.0000 Gdot= 0.00e+00 k= 6.94e-36 s^-2  worst planet Jupiter z=     -2.07
+     ell=  0.00485 s= 3.76e-17 C=1.0000 Gdot= 0.00e+00 k= 4.81e-34 s^-2  worst planet Jupiter z=     -2.07
+     ell=     0.01 s= 2.04e-15 C=1.0000 Gdot= 0.00e+00 k= 6.14e-33 s^-2  worst planet Jupiter z=     -2.07
+     ell=     0.03 s= 8.80e-13 C=1.0000 Gdot= 0.00e+00 k= 2.94e-31 s^-2  worst planet Jupiter z=     -2.07
+     ell=      0.1 s= 6.75e-10 C=1.0000 Gdot= 5.22e-50 k= 2.03e-29 s^-2  worst planet Jupiter z=     -2.07
+     ell=      0.3 s= 2.73e-07 C=1.0000 Gdot= 9.28e-15 k= 8.81e-28 s^-2  worst planet Jupiter z=     -2.07
+     ell=        1 s= 4.78e-05 C=1.0000 Gdot= 7.77e-10 k= 6.21e-27 s^-2  worst planet  Saturn z=      2.59
+     ell=        2 s= 1.15e-04 C=0.9999 Gdot= 5.35e-10 k= 7.47e-28 s^-2  worst planet Jupiter z=     -2.07
+     ell=        3 s= 1.29e-04 C=0.9999 Gdot= 7.93e-11 k= 1.18e-28 s^-2  worst planet Jupiter z=     -2.07
+     ell=        5 s= 1.34e-04 C=0.9999 Gdot= 2.36e-11 k= 9.74e-30 s^-2  worst planet Jupiter z=     -2.07
+     ell=       10 s= 1.36e-04 C=0.9999 Gdot= 4.24e-12 k= 3.10e-31 s^-2  worst planet Jupiter z=     -2.07
+
+== Earth-Moon (P4) ==
+  max k passing planets, ell>=1pc: k=7.23e-27 s^-2 -> lunar perigee 1.29e-13 rad/yr; k d^3/GM_E = 1.03e-15; Nordtvedt-type Delta a = 1.51e-19 m/s^2 (= 2.55e-17 of solar g)
+  max k passing planets, any ell: k=7.35e-27 s^-2 -> lunar perigee 1.31e-13 rad/yr; k d^3/GM_E = 1.05e-15; Nordtvedt-type Delta a = 1.54e-19 m/s^2 (= 2.59e-17 of solar g)
+  Earth-centred / Sun-centred striction on the Moon (ratio of k): 4.38e-10
+
+== neighbour white dwarfs, tidal striction at the Sun relative to the Sun's own k (P5) ==
+  FW f=0.089 g=0.489 rc=0.0079
+     ell= 1.0: Sirius B 13, Procyon B 0.57, van Maanen 2 0.052, 40 Eri B 0.0018  | sum 13
+     ell= 2.0: Sirius B 29, Procyon B 7.8, van Maanen 2 9.1, 40 Eri B 3.4  | sum 50
+     ell= 3.0: Sirius B 48, Procyon B 8.4, van Maanen 2 9.3, 40 Eri B 6.3  | sum 72
+     ell= 5.0: Sirius B 61, Procyon B 13, van Maanen 2 17, 40 Eri B 8.4  | sum 99
+     ell=10.0: Sirius B 68, Procyon B 15, van Maanen 2 22, 40 Eri B 12  | sum 1.2e+02
+  FW f=0.089 g=2.0 rc=0.000992
+     ell= 1.0: Sirius B 12, Procyon B 1, van Maanen 2 0.082, 40 Eri B 0.0032  | sum 14
+     ell= 2.0: Sirius B 29, Procyon B 8.7, van Maanen 2 9.9, 40 Eri B 3.8  | sum 52
+     ell= 3.0: Sirius B 48, Procyon B 8.7, van Maanen 2 9.5, 40 Eri B 6.5  | sum 72
+     ell= 5.0: Sirius B 61, Procyon B 13, van Maanen 2 17, 40 Eri B 8.5  | sum 99
+     ell=10.0: Sirius B 68, Procyon B 15, van Maanen 2 22, 40 Eri B 12  | sum 1.2e+02

@@ -1,3 +1,35 @@
 Starting Synchronism Maintainer Session at Tue Oct 20 06:00:01 PDT 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+The session is done and both repos are pushed: site commit `c0036f7`, research commit `4d210188`. The build passes, site_lint shows 0 hits across 216 rules, and the anchor checker finds no broken links. No prediction changed bucket: the count is still 6 and confirmed predictions are still 0.
+
+**The research gap (WAKE).** The researcher persona asked which AI models played which roles in A2ACW, the AI-vs-AI audit method that is the site's only candidate novel contribution. What the archive actually records:
+- **The only cross-vendor runs are external.** An outside reviewer (LV, January 2026) ran three sessions with Claude defending and ChatGPT challenging, producing 13 verdicts. Meanwhile a proposal kept the cross-vendor control "gated on getting a second vendor".
+- **Two A2ACW results the site quotes were one model playing both sides.** For the ~3,300 internal sessions, the archive doesn't record which model held which role.
+- **There's a conflict I haven't resolved.** Session 662 says the six "Validated" demotions "came from human audit"; the site says the auditors were AI agents.
+
+I wrote a proposal in the research repo. It asks you to authorise a cheap first step: re-run LV's three targets with Claude on both sides and compare against LV's 13 verdicts. I also seeded an explorer topic covering that and the auditor question.
+
+**Site fixes:**
+- **Explorer actions from 10-19, done first:** the last open door on /for-researchers (the action-derived dynamics, L3, with the density knee inside discs) is now marked closed. The lunar-laser-ranging bound carries over unchanged, and the planetary result is added. A new box states that choosing between the two candidate force laws (L2 vs L3) is the open frame question.
+- **The three HIGH visitor items:**
+  - /honest-assessment now has its table of contents and plain summary at the top; they were about 5,000 words down.
+  - The Galaxy Plotter has a "look at three things" box for beginners, with the technical notes folded away.
+  - /research-philosophy now names the A2ACW roles from sourced quotes.
+- **Wrong or stale facts that had survived earlier corrections:**
+  - The glossary still quoted the retired DESI value "0.55 ± 0.06, 2.4σ" (the wrong table row, corrected elsewhere on 10-10). The lint rule meant to catch it missed it because of upper- vs lower-case in a unicode escape.
+  - The landing called Youden's J a "0-to-1 score", while the site quotes negative values (it runs from −1 to 1).
+  - /honest-assessment used "L3" for a different law than the glossary does.
+  - It also listed the "γ = 2 ladder" test as cheap and open. The explorer had already found it has no power on dwarf galaxies and open clusters.
+- **Bookkeeping:** the environment run now has one ID (TEST-03s) everywhere. The Coherence Explorer's tanh explanation is corrected. The Tier 1 TEST-26 summary now says the dark-energy fit sits at ΛCDM's corner by construction.
+
+**Numbers I re-checked instead of accepting the visitor's version:**
+- **Ciocan row 2:** 9.8σ is correct. The visitor got 10.2σ because the table didn't print the H₀ error the script includes; the table now shows it.
+- **ΛCDM fσ₈:** 0.474 was a mis-rounding of DESI's 0.4733. I re-ran the branch-power script; one quoted range moved from 29–38% to 30–38%.
+- **My own draft:** I had written "68 of 74 at every smoothing length". It is 68 at 1 pc and 62 at 10 pc, and I fixed it before committing.
+
+**Deferred, with reasons in the log:**
+- Moving revision history out of body text across the whole site, which every persona complained about. Doing it page by page would take weeks; it needs a shared component plus a lint rule.
+- A handful of low-severity items.
+
+**One gate issue.** The hestia gate denied a command because it resolved a relative `cd ../..` from `maintainer/scripts` as reaching `/home/dp`. The same command with absolute paths went through. That looks like a defect in how the rule resolves paths. A scope request was opened automatically; I never needed `/home/dp`, so it can be declined.

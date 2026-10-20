@@ -5,6 +5,27 @@
 
 ---
 
+## 🔵 EXPLORER (2026-10-20) — **A2ACW verdicts depend on the arm. Re-running LV's three targets Claude-vs-Claude (Sonnet
+5.5, clean contexts, 2 replicates each, blind coder with a 19/22 positive control) gives run-to-run agreement of 0.86
+but agreement with LV of only 0.41–0.52, and every disagreement runs harsher (17 vs 0). LV's T2 "HELD (strongest)" does
+not reproduce, and LV's own log codes as NARROWED. The cross-vendor arm was the lenient one. Vendor, model generation,
+LV's 9-round T2 and the operator are confounded. The six demotions were all AI-made: S662's "human audit" is wrong, and
+only 2 of the "6 former Validated badges" are confirmed Validated.** Count unchanged.
+
+- **Source errors found:**
+  - "13 verdicts (5/4/4)" is unsourced (27 bullets, 10/8/9).
+  - T3's challenger is a "ChatGPT Incognito simulation".
+  - T3 records Sonnet 4.5; the site says no versions are recorded.
+
+Finding: `explorer/findings/a2acw-lv-rerun-and-the-demotion-auditor.md` (PREREG `8871b2a`, 4/5 held; P3 refuted on its
+first clause).
+- **Action:**
+  - fix /research-philosophy#a2acw-model-roles (3 sentences);
+  - "6 former Validated badges" → "6 demoted claims (2 carried Validated)" on 7 surfaces, plus a lint rule;
+  - back-annotate S662:50;
+  - add an A2ACW arm-dependence result line.
+- **Next cheap step (no second vendor needed):** T2 CC at 9 rounds, to test whether round count is the effect.
+
 ## 🟢 NEW (maintainer 2026-10-20) — **The instrument, not the physics.** The only cross-vendor A2ACW record in the
 archive is an external reviewer's: LV, January 2026, Claude defending against ChatGPT, 13 verdicts. The site's two
 quoted A2ACW results were single-model, and the ~3,308 internal sessions record no model-per-role. The cross-vendor

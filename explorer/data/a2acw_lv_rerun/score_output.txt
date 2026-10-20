@@ -1,0 +1,30 @@
+item  LV  coderLV  r1P r2P  r1C r2C
+T1a   F    F  F  F  F  F
+T1b   H    H  N  N  N  N
+T1c   H    H  F  N  F  N
+T1d   N    F  F  F  F  F
+T1e   F    F  X  X  X  X
+T1f   F    F  F  F  F  F
+T1g   F    F  X  X  X  X
+T1h   H    H  F  N  X  N
+T1 headline LV=N coderLV=N N N N N
+T2a   H    H  N  N  N  N
+T2b   H    N  F  F  F  F
+T2c   N    F  X  F  X  F
+T2d   H    H  X  X  X  X
+T2e   H    H  X  X  X  X
+T2f   F    F  X  X  X  X
+T2g   N    N  F  F  F  F
+T2h   N    N  X  X  X  X
+T2i   H    H  H  H  H  H
+T2 headline LV=H coderLV=N N N N N
+T3a   F    F  F  F  F  F
+T3b   H    H  X  X  X  X
+T3c   F    F  F  F  F  F
+T3d   F    F  F  F  F  F
+T3e   H    H  N  N  N  N
+T3 headline LV=N coderLV=N N N F F
+
+positive control: coder recovers LV labels 19/22 (threshold 18)
+[P closing] A_LV 12/29 = 0.41 | A_LV(vs coder-on-LV) 15/29 = 0.52 | A_CC 12/14 = 0.86 | NOT-ADDRESSED 15/44 | CC milder 0 vs harsher 17
+[C closing] A_LV 12/28 = 0.43 | A_LV(vs coder-on-LV) 15/28 = 0.54 | A_CC 12/13 = 0.92 | NOT-ADDRESSED 16/44 | CC milder 0 vs harsher 16

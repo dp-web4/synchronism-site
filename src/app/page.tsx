@@ -340,6 +340,27 @@ export default function Home() {
             <div style={{ fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
               Scientific Outcomes
             </div>
+            <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0 0 0.5rem', lineHeight: 1.55 }}>
+              <strong>Abbreviations used in the table below:</strong>{' '}
+              <strong>SPARC</strong> = a catalogue of 175 disc-galaxy rotation curves (Lelli+2016);{' '}
+              <strong>BTFR</strong> = baryonic Tully&ndash;Fisher relation (galaxy mass vs rotation speed);{' '}
+              <strong>RAR</strong> = radial acceleration relation (observed vs visible-matter acceleration);{' '}
+              <strong>&Delta;BIC</strong> = a model-comparison score (positive = the framework fits worse; &gt;10 is decisive);{' '}
+              <strong>r&sup2;</strong> = fraction of variance explained;{' '}
+              <strong>&sigma;</strong> = standard deviations of significance;{' '}
+              <strong>CHSH</strong> = the measurable form of Bell&apos;s theorem;{' '}
+              <strong>&Lambda;CDM</strong> = the standard cosmological model;{' '}
+              <strong>f&sigma;₈</strong> = growth rate of cosmic structure;{' '}
+              <strong>g<sub>bar</sub> / g<sub>obs</sub> / a<sub>0</sub></strong> = acceleration from visible matter / observed acceleration / MOND&apos;s acceleration scale;{' '}
+              <strong>&Omega;<sub>m</sub> / &Omega;<sub>b</sub></strong> = matter / baryon fraction of the universe;{' '}
+              <strong>LLM</strong> = large language model;{' '}
+              <strong>BAO</strong> = baryon acoustic oscillations (a standard ruler in galaxy clustering);{' '}
+              <strong>DESI</strong> = Dark Energy Spectroscopic Instrument (the survey behind the BAO and growth tests);{' '}
+              <strong>KiDS-1000</strong> = a weak-lensing survey (Kilo-Degree Survey, 1000 deg&sup2;);{' '}
+              <strong>Youden&apos;s J</strong> = a score from &minus;1 to 1 for how well a classifier separates two classes (0 = no better than chance, 1 = perfect);{' '}
+              <strong>CFD</strong> = computational fluid dynamics.{' '}
+              More in the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
+            </p>
             <div style={{
               background: 'rgba(239,68,68,0.05)',
               border: '1px solid rgba(239,68,68,0.2)',
@@ -448,27 +469,6 @@ export default function Home() {
                 personas both made the point. 2026-09-15: auditor named and the calibration statement corrected after a researcher visitor found /research-philosophy saying &ldquo;external domain-expert audit&rdquo; and &ldquo;the control was run&rdquo; while /for-researchers said it never was; the archive record shows LLM auditors and one self-scored in-distribution arm. The cell as it read before: &ldquo;Validated&rdquo; claims surviving audit: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 6</strong> — all demoted (current ledger: 5 reparametrizations; the sixth, the BTFR slope, moved to the refutation column 2026-07-14). Across <em>all</em> audited claims the canonical count is <strong>0 of 9</strong> (the 6 &ldquo;Validated&rdquo; plus 3 swept later &mdash; see the <Link href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</Link> section; this cell quoted only the 6-claim subtotal until 2026-09-08). Instrument-limited: the same audit false-flags 6/6 genuine discoveries as reparametrizations — kept in a separate cell from the data-driven refutations for that reason</details></span>
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)', marginLeft: 'auto', whiteSpace: 'nowrap' }}>Full ledger &rarr;</Link>
             </div>
-            <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0.5rem 0 0', lineHeight: 1.55 }}>
-              <strong>Abbreviations in this table:</strong>{' '}
-              <strong>SPARC</strong> = a catalogue of 175 disc-galaxy rotation curves (Lelli+2016);{' '}
-              <strong>BTFR</strong> = baryonic Tully&ndash;Fisher relation (galaxy mass vs rotation speed);{' '}
-              <strong>RAR</strong> = radial acceleration relation (observed vs visible-matter acceleration);{' '}
-              <strong>&Delta;BIC</strong> = a model-comparison score (positive = the framework fits worse; &gt;10 is decisive);{' '}
-              <strong>r&sup2;</strong> = fraction of variance explained;{' '}
-              <strong>&sigma;</strong> = standard deviations of significance;{' '}
-              <strong>CHSH</strong> = the measurable form of Bell&apos;s theorem;{' '}
-              <strong>&Lambda;CDM</strong> = the standard cosmological model;{' '}
-              <strong>f&sigma;₈</strong> = growth rate of cosmic structure;{' '}
-              <strong>g<sub>bar</sub> / g<sub>obs</sub> / a<sub>0</sub></strong> = acceleration from visible matter / observed acceleration / MOND&apos;s acceleration scale;{' '}
-              <strong>&Omega;<sub>m</sub> / &Omega;<sub>b</sub></strong> = matter / baryon fraction of the universe;{' '}
-              <strong>LLM</strong> = large language model;{' '}
-              <strong>BAO</strong> = baryon acoustic oscillations (a standard ruler in galaxy clustering);{' '}
-              <strong>DESI</strong> = Dark Energy Spectroscopic Instrument (the survey behind the BAO and growth tests);{' '}
-              <strong>KiDS-1000</strong> = a weak-lensing survey (Kilo-Degree Survey, 1000 deg&sup2;);{' '}
-              <strong>Youden&apos;s J</strong> = a 0-to-1 score for how well a classifier separates two classes (0 = coin flip);{' '}
-              <strong>CFD</strong> = computational fluid dynamics.{' '}
-              More in the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
-            </p>
             <p id="why-keep-reading" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.6rem 0 0', scrollMarginTop: '5rem' }}>
               <strong>So is the idea alive or dead?</strong> As tested physics: dead as far as it has been tested — no prediction
               that differs from MOND or ΛCDM survived the tests run so far, and this site says so. As a public record of how you find that out
@@ -672,8 +672,8 @@ export default function Home() {
             <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.75rem' }}>
               The Beginner Path continues past step 3 with{' '}
               <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not</Link> (step 4),{' '}
-              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link> (step 5), and{' '}
-              <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link> (step 6) —{' '}
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link> (step 5), with the{' '}
+              <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link> as a companion to look terms up in along the way —{' '}
               <Link href="/learning-paths" style={{ color: 'var(--color-accent-blue)' }}>Learning Paths &rarr; Beginner</Link> is the canonical route.
             </p>
           </section>

@@ -12,8 +12,8 @@ from math import erf, sqrt
 def Phi(z):
     return 0.5 * (1 + erf(z / sqrt(2)))
 
-PRED, LCDM = 0.418, 0.474
-print("Single bin z=0.51.  pred 0.418, ΛCDM 0.474, separation 0.056")
+PRED, LCDM = 0.418, 0.4733  # DESI DR1 Table 11 fiducial at z=0.51 (was 0.474 until 2026-10-20, a mis-rounding)
+print("Single bin z=0.51.  pred 0.418, ΛCDM 0.4733, separation 0.0553")
 print(f"{'σ_DR2':>6} {'sep/σ':>6} | {'compound thr':>12} {'P|ΛCDM':>7} | {'clean thr':>9} {'P|ΛCDM':>7} | {'P(A: obs<=0.46)|ΛCDM':>20}")
 for s in (0.020, 0.025, 0.030, 0.036, 0.045, 0.062):
     tc = 0.46 + 3 * s          # compound: 0.46 is already pred + 3σ_forecast

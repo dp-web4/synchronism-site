@@ -16,27 +16,48 @@ export default function ForResearchers() {
       <h1>For Researchers: What&apos;s Citable</h1>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
-        <p style={{ fontSize: '0.92rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #ef4444', paddingLeft: '0.75rem', margin: '0 0 1rem' }}>
+        <div style={{ fontSize: '0.92rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #ef4444', paddingLeft: '0.75rem', margin: '0 0 1rem' }}>
           <strong>Is any prediction that differs from MOND or &Lambda;CDM still alive?</strong> No, within the registered
           tests and the readings run so far. Every prediction that differed sits in a branch already excluded (the
           density-keyed C<sub>&rho;</sub>: environment null, &Delta;BIC +2843 on SPARC, lunar laser ranging), and every surviving
           branch is nested in its parent: the galaxy fit is MOND&apos;s simple interpolating function (at &#x03B3; &asymp; &frac12; under the L2 field equation; the action-derived L3 draws the same curve at &#x03B3; &asymp; 0.44), the dark-energy sector is
           &Lambda;CDM at &gamma; = &frac12; (or Cardassian/wCDM-degenerate off it). Scope: this covers the 26 registered tests and the
-          keyings and wirings executed; it does not cover the unbuilt hidden-communication substrates (Bell), door #3
-          (secular / time-domain observables, a direction with no registered bet), or density-keyed L3 (striction) dynamics
-          where the knee sits inside discs. There the striction exceeds gravity (7&ndash;14&times; at first order), so the
-          disc&apos;s equilibrium has to be re-solved before any rotation curve can be scored. That door may already be shut
-          by a rate rather than a rotation curve: lunar laser ranging excludes 68 of 74 density-keyed laws through
-          Ġ/G = &minus;Ċ/C as the Sun moves through the disc (explorer 2026-09-23), including the in-disc knees, and that
-          argument needs only G<sub>eff</sub> = G/C where C is uniform on the Earth&ndash;Moon scale, which holds under L2
-          and L3 alike. What is not computed is the striction term&apos;s own force on the lunar orbit, which L3 adds on top;
-          queued for the explorer (flagged 2026-10-19 by a simulated-visitor researcher persona). Until that runs, read this
-          door as &ldquo;probably closed, not shown closed&rdquo;. The rest of L3 has now been run
-          (explorer 2026-10-13): at the gradient keying L3 is AQUAL with &#x03B3; relabelled to 0.44, indistinguishable from L2
-          on SPARC and lensing, and at the framework&apos;s own density knee (0.029&nbsp;V&sup2;) it equals L2 to &lt;&nbsp;0.1%.
-          (Scope clause updated 2026-10-14; it used to say L3 had never been run on SPARC.) (Sentence added 2026-10-13; the ledger states the same as &ldquo;no registered test has a branch that moves
-          the confirmed-novel count&rdquo;.)
-        </p>
+          keyings and wirings executed; it does not cover the unbuilt hidden-communication substrates (Bell) or door #3
+          (secular / time-domain observables, a direction with no registered bet). The third door, density-keyed L3
+          (striction) dynamics with the knee inside discs, is now closed by a rate rather than a rotation curve. Under
+          the action the field equation is unchanged, so lunar laser ranging&apos;s Ġ/G = &minus;Ċ/C bound carries over
+          exactly: 68 of 74 density-keyed laws are excluded at a 1 pc smoothing length (62 at 10 pc), the in-disc knees
+          among them, and the survivors are &#x03B3; = 2 laws that are Newtonian to 10&#x207B;&#x2078; at the Sun. What L3 adds on top is a striction force sourced by the Sun&apos;s own gravitational
+          self-energy, a repulsive &Lambda;-like term on the planets; it is redundant at pc smoothing and closes the
+          small-smoothing hole for 21 of 32 &gamma; = 0.489 laws (explorer 2026-10-19, pre-registered{' '}
+          <code>edb0108</code>). Elsewhere, L3 at the gradient keying is AQUAL with &#x03B3; relabelled to 0.44,
+          indistinguishable from L2 on SPARC and lensing, and at the framework&apos;s own density knee (0.029&nbsp;V&sup2;) it
+          equals L2 to &lt;&nbsp;0.1% (explorer 2026-10-13). The ledger states the same as &ldquo;no registered test has a
+          branch that moves the confirmed-novel count&rdquo;.
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+            <ul style={{ margin: '0.3rem 0 0', paddingLeft: '1.1rem' }}>
+              <li>2026-10-20: the in-disc L3 door moved from &ldquo;probably closed, not shown closed&rdquo; (10-19, while the
+              striction force on the lunar orbit was uncomputed) to closed, after the explorer computed it. The striction
+              term turned out to be sourced by the Sun&apos;s self-energy, not by Earth&apos;s field (4&times;10&#x207B;&sup1;&#x2070; of it).</li>
+              <li>Until 2026-10-14 this clause said L3 had never been run on SPARC. The sentence was added 2026-10-13.</li>
+            </ul>
+          </details>
+        </div>
+        <div id="which-dynamics" style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid var(--color-accent-violet)', paddingLeft: '0.75rem', margin: '0 0 1rem' }}>
+          <strong>The open frame question: which dynamics?</strong> The archive writes a field equation,
+          &nabla;&middot;[C&nabla;&Phi;] = 4&pi;G&rho;, but never says which force law goes with it. <strong>L2</strong> takes
+          g = &minus;&nabla;&Phi; and has no action; composite bodies then violate Newton&apos;s third law (globular clusters
+          feel &asymp;&nbsp;0.63 of the Galactic field). <strong>L3</strong> derives the force from the action and adds a
+          striction term; with a smoothing length, that term is sourced by every star&apos;s binding energy. Where the two have
+          both been run they mostly agree; they disagree on the globular-cluster window, on the planets (the striction term)
+          and wherever a density knee sits inside a disc. Choosing one is a project-lead decision, not a computation. Until it is made,
+          &ldquo;C(&rho;)&rdquo; names a family of interpolating functions with two candidate dynamics, not a theory with one
+          set of predictions. Which one, if either, the framework means is the next research question, ahead of any new
+          test. (Box added 2026-10-20 at a researcher simulated-visitor persona&apos;s request; the statement was previously
+          only in an open-items list on{' '}
+          <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.)
+        </div>
         <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
           <strong>The program in three sentences.</strong> (1) <em>Claim:</em> the framework&apos;s tanh-log equation, fitted
           freely, goes to the one dial setting (&#x03B3; = &frac12;) where it turns into somebody else&apos;s formula: Milgrom&apos;s

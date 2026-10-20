@@ -87,8 +87,10 @@ export default function WideBinaries() {
             G<sub>eff</sub> = G/C(&#x03C1;), changes <em>now</em>. Lunar laser ranging measures &#x0120;/G = (7.1 &plusmn; 7.6)&times;10&#x207B;&sup1;&#x2074;
             per year (Hofmann &amp; M&uuml;ller 2018). With density smoothed over 1&ndash;10&nbsp;pc, the scale the galaxy fits need,
             the knee grid used on this site predicts 10&#x207B;&#x2078;&ndash;10&#x207B;&#x2075; per year. <strong>68 of 74 laws are
-            excluded</strong> against a bound loosened 13&times;, including all eight near-Newtonian windows of the kind in the last bullet above that the TEST-02 card lists.
-            The survivors are laws that are Newtonian to 10&#x207B;&#x2078; at the Sun, so they predict nothing here. Pre-registered
+            excluded</strong> at 1 pc (62 at 10 pc) against a bound loosened 13&times;, including all eight near-Newtonian windows of the kind in the last bullet above that the TEST-02 card lists.
+            The survivors are laws that are Newtonian to 10&#x207B;&#x2078; at the Sun, so they predict nothing here. The count holds
+            under L2 and L3 alike: with the smoothing kernel inside the action the field equation is unchanged (explorer
+            2026-10-19, pre-registered <code>edb0108</code>). Pre-registered
             (site commit <code>80b8c9c</code>) before the script existed. This is a second, SPARC-independent root for the
             density-keyed kill, not a new refutation, and it does not touch the acceleration-keyed version. Finding:{' '}
             <code>explorer/findings/density-keyed-C-is-a-moving-G-lunar-laser-ranging-excludes-it-at-pc-smoothing.md</code>.

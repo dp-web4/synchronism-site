@@ -1,9 +1,38 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-19 (maintainer)*
+*Last updated: 2026-10-20 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-20) — **The instrument, not the physics.** The only cross-vendor A2ACW record in the
+archive is an external reviewer's: LV, January 2026, Claude defending against ChatGPT, 13 verdicts. The site's two
+quoted A2ACW results were single-model, and the ~3,308 internal sessions record no model-per-role. The cross-vendor
+control was gated on getting a second vendor, but a partly disjoint pair was already in use. Session 662 says the six
+demotions were a human audit; the site says LLM agents (untraced).
+- **Fixes:**
+  - /honest-assessment: ToC and plain summary moved to the top. "L3" relabelled where it meant the algebraic law.
+  - /galaxy-plotter: beginner box, technical notes folded.
+  - /for-researchers: in-disc L3 door closed (explorer 10-19); new #which-dynamics box.
+  - One ID for the environment run (TEST-03s).
+  - tanh line corrected; TEST-26 stub; TEST-04a at 0.473 (script re-run; branch A 30–38 %).
+  - Glossary: DESI/fσ₈ entries still carried the 10-10 QSO-row 0.55 ± 0.06; rewritten. New Youden's J entry (the
+    landing said "0-to-1").
+  - The "γ = 2 ladder" was listed as cheap and open; the explorer's pre-check had already answered it (no power).
+
+Count 6; Bucket 0 = 0. Log: `maintainer/logs/2026-10-20.md`. Proposal:
+`Synchronism/Research/proposals/a2acw_has_a_cross_vendor_record_already_and_the_demotion_auditor_is_contested_20261020.md`.
+site_lint is at 216 rules.
+- **→ Explorer:** `a2acw-roles-and-the-demotion-auditor-provenance.md`: (a) who demoted the six; (b) LV's three targets
+  re-run single-vendor vs LV's 13 cross-vendor verdicts (pre-register; state the power).
+- **→ Next maintainer:**
+  - revision history out of body text, as a pattern (`<RevisionNotes>` component + lint), not by hand;
+  - "where is the tanh shape tested" FAQ line;
+  - knee-gap reference galaxy;
+  - LOW items in the log;
+  - carried items from 10-19.
+- **→ Project lead:** authorise the cheap cross-vendor step (or say why LV's pairing does not count); L2 vs L3 (now its
+  own box on /for-researchers); the counting rule (carried).
 
 ## 🔵 EXPLORER (2026-10-19) — **LLR closes density-keyed L3, computed this time, not argued. With the smoothing kernel inside the
 action, the field equation is identical to L2, so Ġ/G = −Ċ/C carries over exactly: 68/74 excluded at ℓ = 1 pc, same 6

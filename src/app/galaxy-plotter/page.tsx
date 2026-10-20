@@ -193,6 +193,20 @@ export default function GalaxyPlotter() {
         the badges say how its claims stand.
       </p>
 
+      <div style={{ maxWidth: '65ch', margin: '1rem 0 0', padding: '0.7rem 1rem', background: 'rgba(16,185,129,0.07)', border: '1px solid rgba(16,185,129,0.35)', borderRadius: '0.375rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
+        <strong style={{ color: '#10b981' }}>New here? Look at three things on the chart below.</strong>
+        <ul style={{ margin: '0.4rem 0 0', paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+          <li><strong>The dots</strong> are what telescopes measure: stars keep orbiting fast far from the centre.</li>
+          <li><strong>The dashed gray line</strong> is what the visible matter alone would give. It sags below the dots. That gap is the dark-matter puzzle.</li>
+          <li><strong>Green</strong> (MOND, an existing theory) follows the dots. <strong>Solid violet</strong> (this framework&apos;s equation as written) does not: it is the gray line scaled up, still falling where the dots stay flat.</li>
+        </ul>
+        <p style={{ margin: '0.4rem 0 0' }}>
+          That is the whole lesson. You can ignore the other lines (an old hand-drawn stand-in and a second violet variant) and
+          the &ldquo;For physicists&rdquo; block. Your next step is{' '}
+          <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not &rarr;</Link>
+        </p>
+      </div>
+
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{ background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: 'var(--color-accent-blue)' }}>What this tool is for:</strong>{' '}
@@ -213,6 +227,35 @@ export default function GalaxyPlotter() {
           look like to fit the data — drawn by hand, not computed. The solid one is what the equation
           actually produces. Showing both is the point: the gap between them <em>is</em> the failure.
         </div>
+        <p>
+          <strong>The dark matter puzzle in one picture:</strong> Physics predicts that galaxies
+          should rotate more slowly at their outer edges (like planets in the solar system — the
+          further out, the slower). They don&apos;t. The outer stars rotate just as fast as the inner
+          ones. Something invisible is adding gravity. Most physicists call it dark matter &mdash;
+          a proposed invisible substance that has never been directly detected; we infer it only
+          from its gravitational pull (whether it&apos;s real stuff or a placeholder for missing
+          physics is exactly what&apos;s being debated). MOND
+          (Modified Newtonian Dynamics) explains the same curves by changing the gravity law.
+          Synchronism proposed a third interpretation: the coherence function C(ρ) would mimic the extra
+          gravity via density-dependent coupling. Only the first two fit the observations: dark-matter
+          halos and MOND both reproduce these curves (MOND with one global constant, a&#x2080;, for every
+          galaxy). The framework&apos;s own equation, as written (with the registered tests&apos; &#x03A9;<sub>m</sub> floor), does not &mdash; wired by division (solid violet below) it is
+          the visible-matter line scaled up by a constant, still falling where the dots stay flat; wired in quadrature (dashed light
+          violet) it stays on the visible-matter line. What matched MOND was either the hand-drawn amber stand-in or,
+          in the archive&apos;s SPARC work, a fit that re-tunes &#x03C1;<sub>crit</sub> for each galaxy
+          (one extra free parameter per galaxy). The violet curve is not a fit of any kind: nothing in it
+          is adjusted to the dots.
+        </p>
+        <details style={{ marginBottom: '1rem' }}>
+          <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
+            For physicists: the calibration, the two wirings, parsimony and the full audit trail (beginners can skip this)
+          </summary>
+          <p style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)' }}>
+            Revision note: until 2026-09-15 the paragraph above said &ldquo;all three fit the observations&rdquo; and described
+            the violet curve as refitting &#x03C1;<sub>crit</sub>; the chart shows neither. On 2026-10-20 the technical notes
+            below were folded into this block after a casual simulated-visitor persona found Beginner Path step 3 showed
+            &ldquo;the expert&apos;s notebook&rdquo;.
+          </p>
         <div style={{ background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#f87171' }}>Read &ldquo;real&rdquo; on this page as &ldquo;as published&rdquo; &mdash;
           the violet curve is the framework&apos;s equation at a calibration this site refutes three separate ways
@@ -254,27 +297,6 @@ export default function GalaxyPlotter() {
           excluding at +17.95&sigma;. The benchmark drawn here is a function this site refutes in the Solar System;
           that is a real tension in the comparison and not a drafting slip.
         </div>
-        <p>
-          <strong>The dark matter puzzle in one picture:</strong> Physics predicts that galaxies
-          should rotate more slowly at their outer edges (like planets in the solar system — the
-          further out, the slower). They don&apos;t. The outer stars rotate just as fast as the inner
-          ones. Something invisible is adding gravity. Most physicists call it dark matter &mdash;
-          a proposed invisible substance that has never been directly detected; we infer it only
-          from its gravitational pull (whether it&apos;s real stuff or a placeholder for missing
-          physics is exactly what&apos;s being debated). MOND
-          (Modified Newtonian Dynamics) explains the same curves by changing the gravity law.
-          Synchronism proposed a third interpretation: the coherence function C(ρ) would mimic the extra
-          gravity via density-dependent coupling. Only the first two fit the observations: dark-matter
-          halos and MOND both reproduce these curves (MOND with one global constant, a&#x2080;, for every
-          galaxy). The framework&apos;s own equation, as written (with the registered tests&apos; &#x03A9;<sub>m</sub> floor), does not &mdash; wired by division (solid violet below) it is
-          the visible-matter line scaled up by a constant, still falling where the dots stay flat; wired in quadrature (dashed light
-          violet) it stays on the visible-matter line. What matched MOND was either the hand-drawn amber stand-in or,
-          in the archive&apos;s SPARC work, a fit that re-tunes &#x03C1;<sub>crit</sub> for each galaxy
-          (one extra free parameter per galaxy). The violet curve is not a fit of any kind: nothing in it
-          is adjusted to the dots. (Corrected 2026-09-15: this paragraph said &ldquo;all three fit the
-          observations&rdquo; and described the violet curve as refitting &#x03C1;<sub>crit</sub>; the
-          chart beside it shows neither.)
-        </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '-0.5rem' }}>
           Select a SPARC galaxy. The plot shows five things: what visible matter predicts (dashed gray),
           what we observe (dots), what Synchronism&apos;s equation <em>as written</em>, with the registered tests&apos; &#x03A9;<sub>m</sub> floor, gives (violet solid — it
@@ -353,6 +375,7 @@ export default function GalaxyPlotter() {
           Those per-galaxy fits use the same parametrization (&#x03B3;=2) that the RAR ensemble test <strong>rejected at ΔBIC=+184</strong> (points as independent; &asymp;&nbsp;+11, disfavoured at the threshold, with the galaxy as the unit). They still overlap MOND per-galaxy because &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; is <em>refit to each galaxy&apos;s own flat velocity</em> — that degree of freedom absorbs the shape mismatch one galaxy at a time. The ensemble RAR (all 2,807 SPARC data points — 175 galaxies — plotted together in acceleration space) is where &#x03B3;=2 dies: free-&#x03B3; converges to &#x03B3;&#x2248;0.49 with RMS identical to McGaugh-MOND to four digits. Per-galaxy shape recovery is not the same test as ensemble shape rejection.{' '}
           <strong>Cross-system failure (locality no-go):</strong> a single global ρ<sub>crit</sub>(V<sub>flat</sub>) — no per-galaxy refit — exposes a ~1.7 dex offset between the local volumetric density ρ(r) and the observed g<sub>bar</sub> that MOND tracks. That cross-system gap is the reason local-density frameworks fail where MOND succeeds; the per-galaxy overlap you see here hides it by refitting ρ<sub>crit</sub> independently for each galaxy.
         </div>
+        </details>
         <div style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', marginBottom: '1rem', fontSize: '0.85rem' }}>
           <strong>Reading this plot:</strong>{' '}
           <span style={{ color: 'var(--color-text-secondary)' }}>

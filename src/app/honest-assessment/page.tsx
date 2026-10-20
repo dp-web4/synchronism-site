@@ -45,11 +45,34 @@ export default function HonestAssessment() {
         governance decision, such as whether the headline count changes, that the AI tracks may recommend but do not make.
       </p>
 
+      {/* Table of contents */}
+      <nav style={{ marginBottom: '2rem', maxWidth: '65ch', fontSize: '0.85rem' }} aria-label="Page contents">
+        <strong style={{ color: 'var(--color-text-secondary)' }}>On this page:</strong>{' '}
+        <a href="#if-you-read-nothing-else" style={{ color: 'var(--color-accent-blue)' }}>If you read nothing else</a> &middot;{' '}
+        <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>Plain summary</a> &middot;{' '}
+        <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six refutations?</a> &middot;{' '}
+        <a href="#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Badge definitions (canonical)</a> &middot;{' '}
+        <a href="#status-lifecycle-verbs" style={{ color: 'var(--color-accent-blue)' }}>Status lifecycle verbs</a> &middot;{' '}
+        <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>The Verdict</a> &middot;{' '}
+        <a href="#coherence-meaning" style={{ color: 'var(--color-accent-blue)' }}>What &ldquo;Coherence&rdquo; Means Here</a> &middot;{' '}
+        <a href="#what-was-tested" style={{ color: 'var(--color-accent-blue)' }}>What Was Tested</a> &middot;{' '}
+        <a href="#what-failed" style={{ color: 'var(--color-accent-blue)' }}>What Failed</a> &middot;{' '}
+        <a href="#is-gamma-universal" style={{ color: 'var(--color-accent-blue)' }}>Is γ universal?</a> &middot;{' '}
+        <a href="#structural-tensions" style={{ color: 'var(--color-accent-blue)' }}>Structural Tensions</a> &middot;{' '}
+        <a href="#whats-untested" style={{ color: 'var(--color-accent-blue)' }}>What&apos;s Untested</a> &middot;{' '}
+        <a href="#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</a> &middot;{' '}
+        <a href="#landscape" style={{ color: 'var(--color-accent-blue)' }}>Modified-Gravity Landscape</a> &middot;{' '}
+        <a href="#cosmological-tensions" style={{ color: 'var(--color-accent-blue)' }}>Cosmological Tensions</a> &middot;{' '}
+        <a href="#inherited-mond-problems" style={{ color: 'var(--color-accent-blue)' }}>Inherited MOND Problems (clusters, CMB, GW speed)</a> &middot;{' '}
+        <a href="#a2acw-self-audit" style={{ color: 'var(--color-accent-blue)' }}>A2ACW Self-Audit</a> &middot;{' '}
+        <a href="#bottom-line" style={{ color: 'var(--color-accent-blue)' }}>Bottom Line</a>
+      </nav>
+
       <p style={{ maxWidth: '65ch', fontSize: '0.9rem', margin: '0 0 1rem', color: 'var(--color-text-secondary)' }}>
-        <strong>Not a physicist?</strong> Read the box below, then jump to the{' '}
-        <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>one-paragraph plain summary</a> and{' '}
+        <strong>Not a physicist?</strong> Read the box below and the{' '}
+        <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>one-paragraph plain summary</a> under it, then{' '}
         <a href="#non-physicist-takeaway" style={{ color: 'var(--color-accent-blue)' }}>what a non-physicist should take away</a>.
-        Everything after that is the detailed record.
+        Everything after the green &ldquo;you can stop here&rdquo; box is the detailed record.
       </p>
 
       <div id="if-you-read-nothing-else" className="card" style={{ scrollMarginTop: '5rem', maxWidth: '65ch', marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-warm)', fontSize: '0.9rem' }}>
@@ -57,13 +80,55 @@ export default function HonestAssessment() {
           If you read nothing else (this page is ~18,000 words)
         </p>
         <ul style={{ margin: 0, paddingLeft: '1.2rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-          <li><strong>The one equation did not hold as stated.</strong> No prediction that differs from MOND or &Lambda;CDM survived the tests it executed &mdash; 6 refutations as currently counted (4 to 8 under counting rules not yet chosen, <a href="#count-rule" style={{ color: 'var(--color-accent-blue)' }}>how firm is the 6?</a>; at most 5 independent), 0 predictions confirmed. <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six?</a> Not all six are decisive tests on outside data: the &gamma;&nbsp;=&nbsp;2 pin (row #3) sits at the threshold once each galaxy counts once, and row #6 is a construction check, not data. (Until 2026-10-06 this sentence said &ldquo;every decisive test it ran on real data&rdquo;, which its own table contradicted; a researcher simulated-visitor persona caught it.) Two of them (TEST-09, TEST-10) fired on galaxy rotation data only under the site&apos;s choice of cap; galaxy weak-lensing data exclude the cap under all three candidate choices. Rows #1 and #2 share one cause, so no more than five are independent. The count itself is under review.</li>
+          <li><strong>The one equation did not hold as stated.</strong> No prediction that differs from MOND or &Lambda;CDM (the standard cosmology: dark matter plus a cosmological constant) survived the tests it executed &mdash; 6 refutations as currently counted (4 to 8 under counting rules not yet chosen, <a href="#count-rule" style={{ color: 'var(--color-accent-blue)' }}>how firm is the 6?</a>; at most 5 independent), 0 predictions confirmed. <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six?</a> Not all six are decisive tests on outside data: the &gamma;&nbsp;=&nbsp;2 pin (row #3) sits at the threshold once each galaxy counts once, and row #6 is a construction check, not data. Two of them (TEST-09, TEST-10) fired on galaxy rotation data only under the site&apos;s choice of cap (a ceiling on how much extra gravity the formula can add); galaxy weak-lensing data exclude that ceiling under all three candidate choices. Those two share one cause, so no more than five are independent. The count itself is under review.</li>
           <li><strong>Where it fits galaxies, it is MOND in different notation</strong> (MOND = the 40-year-old rival theory that tweaks gravity instead of adding dark matter). Let the dial that sets how sharp its S-curve is be fitted freely, and the equation lands on MOND&apos;s own formula; set that dial to the value the framework itself chose (γ = 2) and it fails.</li>
-          <li><strong>Its two genuinely different claims both failed.</strong> A hard cap on the gravity boost (galaxy edges need 4× more than the cap allows) and a switch that turns on with local density instead of acceleration (the data reject that at every turn-on point tried).</li>
+          <li><strong>Its two genuinely different claims both failed.</strong> That ceiling on extra gravity (galaxy edges need 4× more than it allows) and a switch that turns on with local density instead of acceleration (the data reject that at every turn-on point tried).</li>
           <li><strong>&ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence.</strong> It is a classical &ldquo;how much does the system act as one thing&rdquo; score. See{' '}
             <a href="#coherence-meaning" style={{ color: 'var(--color-accent-blue)' }}>the section on what the word means</a>.</li>
           <li><strong>What survives is the record, not the physics:</strong> a public, reproducible account of how a theory kills itself honestly, a few negative results other theories can reuse, and one question still open: star clusters (globular clusters, dense balls of stars, rule out one dial setting everywhere but are marginally consistent if the dial resets inside each cluster &mdash; a choice not yet made; <a href="#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>below</a>). &ldquo;Untested&rdquo; on this page means nobody has looked yet; &ldquo;Failed&rdquo; means someone looked.</li>
         </ul>
+        <details style={{ marginTop: '0.5rem', fontSize: '0.78rem', color: 'var(--color-text-muted)' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+          Until 2026-10-06 the first bullet said &ldquo;every decisive test it ran on real data&rdquo;, which its own table
+          contradicted (researcher simulated-visitor persona). On 2026-10-20 &Lambda;CDM and &ldquo;cap&rdquo; were defined in
+          place, &ldquo;rows #1 and #2&rdquo; became &ldquo;those two&rdquo;, and the table of contents and plain summary were moved
+          above the refutation table (technical-writer and casual simulated-visitor personas: this is the Beginner Path&apos;s last
+          step, and the plain content sat ~5,000 words down).
+        </details>
+      </div>
+
+      <div style={{ maxWidth: '65ch', marginBottom: '1.5rem' }}>
+        <p id="plain-summary" style={{ scrollMarginTop: '5rem', margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, background: 'rgba(59,130,246,0.07)', borderLeft: '3px solid rgba(59,130,246,0.5)', borderRadius: '4px', padding: '0.75rem 1rem' }}>
+          <strong>What failed, in one paragraph — no jargon:</strong> This project proposed one equation meant to describe how things hold together at
+          every scale, from atoms to galaxies. When its galaxy predictions were tested against real telescope
+          measurements, the predictions that differed from its rival theory failed. It predicted a specific relationship between a
+          galaxy&apos;s mass and its rotation speed — the measured relationship landed far enough away to cross
+          the line the project itself had drawn in advance as &ldquo;this would kill the theory&rdquo; (with one
+          catch: that verdict depends on where the project sets its cap on extra gravity; what holds at every
+          reasonable setting is that small caps are ruled out). It puts
+          a hard cap on how much &ldquo;missing gravity&rdquo; a galaxy can display — and about two-thirds of
+          real galaxies display more than that cap allows. And an environmental effect it predicted turned out,
+          when measured, not to exist at all. Where the equation <em>does</em> fit galaxies, it fits only by
+          imitating MOND — a 40-year-old rival theory that tweaks gravity instead of adding dark matter — and
+          never fits better than it. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
+          own scoreboard — zero confirmed predictions, <strong>six</strong> executed refutations
+          resting on two framework-specific mechanism roots, plus one refuted registration, one constraint
+          inherited from MOND, and one Bell/CHSH construction check. <strong>Why does the site
+          still exist?</strong> Because a few of the framework&apos;s core ideas have never been testable with
+          existing instruments (untested is not the same as failed), and because this record — a theory testing
+          itself in public and publishing every failure — is itself the point. The paragraph &ldquo;the same, with the
+          numbers&rdquo;, after the refutation table, says it with the actual figures.
+        </p>
+        <div id="non-physicist-takeaway" style={{ marginTop: '0.75rem', scrollMarginTop: '5rem' }}>
+          <strong style={{ color: 'var(--color-text-primary)', fontSize: '0.95rem' }}>What a non-physicist should take away:</strong>
+          <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0.5rem 0 0', paddingLeft: '1.25rem' }}>
+            <li>The equation driven by <em>density</em> &mdash; the actual idea &mdash; does not fit galaxy rotation (the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link> shows it failing). A version with its input switched to <em>acceleration</em> and one dial fitted to the data does fit &mdash; but at that setting it becomes MOND, an existing 40-year-old idea, and never does better. (Reworded 2026-09-14: this line used to say &ldquo;the one equation fits galaxy rotation,&rdquo; which a reader fairly took as contradicting the plotter.)</li>
+            <li>Its one galaxy prediction that differed from MOND (how a galaxy&apos;s mass relates to its rotation speed) was checked against real data in July 2026 and failed the test it had set for itself &mdash; by far too much to be a fluke &mdash; at the cap the site uses; at two other candidate caps it lands on or just inside the line, so the firm result is that small caps are ruled out. Its cosmology prediction (slower growth of cosmic structure) is disfavored, but that test turned out too weak to decide.</li>
+            <li>None of its numbers come from first principles — every parameter is fitted to data or simply asserted.</li>
+            <li>No currently proposed experiment can tell the framework, as it defines itself, apart from existing physics. (One future dark-energy test could favour a variant reading of it &mdash; one the framework&apos;s own starting assumption rules out.)</li>
+            <li>The real product is this audit itself: every failure documented, with the numbers, by the same project that made the claims.</li>
+          </ul>
+        </div>
       </div>
 
       <div style={{ maxWidth: '65ch', marginBottom: '1.5rem', padding: '0.7rem 1rem', background: 'rgba(16,185,129,0.07)', border: '1px solid rgba(16,185,129,0.35)', borderRadius: '0.375rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
@@ -214,47 +279,32 @@ export default function HonestAssessment() {
           is the contribution; the physics just provided the test case.
         </p>
         <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-          <strong>CORRECTED 2026-08-09 — the sentence that stood here from 2026-07-23 was false.</strong> It
-          read: &ldquo;there is no field equation anywhere in this framework&apos;s galaxy sector — no action,
-          no Lagrangian, no covariant formulation, no dynamics.&rdquo; The archive has had one since
-          <strong> 2025-12-01</strong>: <code>manuscripts/Appendix_D_Synchronism_in_General_Relativistic_Form.md</code>
-          §D.2 states a modified Poisson equation, §D.3 effective Einstein equations, §D.5 a worldline action.
-          The site asserted their non-existence for seven months without grepping for them.
-          <strong> The accurate statement is narrower and still damaging: the field equation is postulated,
-          not derived — and the one the archive actually states is eliminated.</strong> Appendix D writes
-          ∇²Φ&nbsp;=&nbsp;4πGρ/C (call it <strong>L1</strong>) and g&nbsp;=&nbsp;g<sub>bar</sub>/C
-          (<strong>L3</strong>) as if they were one law. They are not: L3 is the spherical solution of
-          ∇·[C∇Φ]&nbsp;=&nbsp;4πGρ (<strong>L2</strong>), so L2&nbsp;≡&nbsp;L3, while L1 is a different theory —
+          <strong>Is there a field equation?</strong> Yes, since 2025-12-01:{' '}
+          <code>manuscripts/Appendix_D_Synchronism_in_General_Relativistic_Form.md</code> §D.2 states a modified Poisson
+          equation, §D.3 effective Einstein equations, §D.5 a worldline action.
+          <strong> But the field equation is postulated, not derived, and the one the archive actually writes first is
+          eliminated.</strong> Appendix D writes
+          ∇²Φ&nbsp;=&nbsp;4πGρ/C (call it <strong>L1</strong>) and the algebraic law g&nbsp;=&nbsp;g<sub>bar</sub>/C
+          as if they were one law. They are not: the algebraic law is the spherical solution of
+          ∇·[C∇Φ]&nbsp;=&nbsp;4πGρ (<strong>L2</strong>), so the two agree for spherical systems, while L1 is a different theory —
           0.57&ndash;1.42 dex away in g on the site&apos;s own five galaxies, and <em>γ-invariant</em>, so no
           choice of the framework&apos;s one free parameter closes the gap. L1 dies with no data at all: as
           ρ→0, C→γρ/ρ<sub>crit</sub>, so the source ρ/C→ρ<sub>crit</sub>/γ, a uniform density floor filling
           all space ⇒ every isolated galaxy gets 10¹⁷&ndash;10¹⁸&nbsp;M<sub>☉</sub> inside 100 kpc and a curve
-          rising forever, for every γ and every ρ<sub>crit</sub>. Every test on this page uses L2&nbsp;≡&nbsp;L3.
+          rising forever, for every γ and every ρ<sub>crit</sub>. Every test on this page uses L2 or its algebraic form;
+          where the action-derived force law (<strong>L3</strong>, which adds a striction term) was also run, the result says so.
           <strong> None of the refutations below change</strong> — they are driven by the shape of C and the
           B&nbsp;≤&nbsp;3.17 ceiling, not by the presence or absence of a Lagrangian.
           (<a href="#landscape" style={{ color: 'var(--color-accent-blue)' }}>Full statement &darr;</a>)
         </p>
-        <p id="plain-summary" style={{ scrollMarginTop: '5rem', margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, background: 'rgba(59,130,246,0.07)', borderLeft: '3px solid rgba(59,130,246,0.5)', borderRadius: '4px', padding: '0.75rem 1rem' }}>
-          <strong>What failed, in one paragraph — no jargon:</strong> This project proposed one equation meant to describe how things hold together at
-          every scale, from atoms to galaxies. When its galaxy predictions were tested against real telescope
-          measurements, the predictions that differed from its rival theory failed. It predicted a specific relationship between a
-          galaxy&apos;s mass and its rotation speed — the measured relationship landed far enough away to cross
-          the line the project itself had drawn in advance as &ldquo;this would kill the theory&rdquo; (with one
-          catch: that verdict depends on where the project sets its cap on extra gravity; what holds at every
-          reasonable setting is that small caps are ruled out). It puts
-          a hard cap on how much &ldquo;missing gravity&rdquo; a galaxy can display — and about two-thirds of
-          real galaxies display more than that cap allows. And an environmental effect it predicted turned out,
-          when measured, not to exist at all. Where the equation <em>does</em> fit galaxies, it fits only by
-          imitating MOND — a 40-year-old rival theory that tweaks gravity instead of adding dark matter — and
-          never fits better than it. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
-          own scoreboard — zero confirmed predictions, <strong>six</strong> executed refutations
-          resting on two framework-specific mechanism roots, plus one refuted registration, one constraint
-          inherited from MOND, and one Bell/CHSH construction check. <strong>Why does the site
-          still exist?</strong> Because a few of the framework&apos;s core ideas have never been testable with
-          existing instruments (untested is not the same as failed), and because this record — a theory testing
-          itself in public and publishing every failure — is itself the point. The paragraph below says the
-          same thing with the actual numbers.
-        </p>
+        <details style={{ margin: '0 0 0.75rem', fontSize: '0.78rem', color: 'var(--color-text-muted)' }}>
+          <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
+          From 2026-07-23 to 2026-08-09 this paragraph said &ldquo;there is no field equation anywhere in this
+          framework&apos;s galaxy sector &mdash; no action, no Lagrangian, no covariant formulation, no dynamics.&rdquo; That was
+          false: Appendix D had existed since 2025-12-01, and the site asserted its non-existence for seven months without
+          grepping for it. Which force law goes with the field equation (L2 or L3) is still unstated; see{' '}
+          <Link href="/for-researchers#which-dynamics" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>.
+        </details>
         <p style={{ margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
           <strong>The same, with the numbers:</strong> The framework&apos;s built-in ceiling on how much it can
           boost gravity (B<sub>max</sub>) forces a galaxy mass&ndash;speed relation (the BTFR, TEST-09, run
@@ -296,39 +346,8 @@ export default function HonestAssessment() {
           source file. On 2026-10-15 the cap parenthetical was shortened and this history moved out of the paragraph
           (simulated-visitor casual persona: &ldquo;the no-jargon paragraph isn&apos;t jargon-free&rdquo;).
         </details>
-        <div id="non-physicist-takeaway" style={{ marginTop: '0.75rem', scrollMarginTop: '5rem' }}>
-          <strong style={{ color: 'var(--color-text-primary)', fontSize: '0.95rem' }}>What a non-physicist should take away:</strong>
-          <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0.5rem 0 0', paddingLeft: '1.25rem' }}>
-            <li>The equation driven by <em>density</em> &mdash; the actual idea &mdash; does not fit galaxy rotation (the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link> shows it failing). A version with its input switched to <em>acceleration</em> and one dial fitted to the data does fit &mdash; but at that setting it becomes MOND, an existing 40-year-old idea, and never does better. (Reworded 2026-09-14: this line used to say &ldquo;the one equation fits galaxy rotation,&rdquo; which a reader fairly took as contradicting the plotter.)</li>
-            <li>Its one galaxy prediction that differed from MOND (how a galaxy&apos;s mass relates to its rotation speed) was checked against real data in July 2026 and failed the test it had set for itself &mdash; by far too much to be a fluke &mdash; at the cap the site uses; at two other candidate caps it lands on or just inside the line, so the firm result is that small caps are ruled out. Its cosmology prediction (slower growth of cosmic structure) is disfavored, but that test turned out too weak to decide.</li>
-            <li>None of its numbers come from first principles — every parameter is fitted to data or simply asserted.</li>
-            <li>No currently proposed experiment can tell the framework, as it defines itself, apart from existing physics. (One future dark-energy test could favour a variant reading of it &mdash; one the framework&apos;s own starting assumption rules out.)</li>
-            <li>The real product is this audit itself: every failure documented, with the numbers, by the same project that made the claims.</li>
-          </ul>
-        </div>
       </div>
 
-      {/* Table of contents */}
-      <nav style={{ marginBottom: '2rem', maxWidth: '65ch', fontSize: '0.85rem' }} aria-label="Page contents">
-        <strong style={{ color: 'var(--color-text-secondary)' }}>On this page:</strong>{' '}
-        <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>Plain summary</a> &middot;{' '}
-        <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six refutations?</a> &middot;{' '}
-        <a href="#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Badge definitions (canonical)</a> &middot;{' '}
-        <a href="#status-lifecycle-verbs" style={{ color: 'var(--color-accent-blue)' }}>Status lifecycle verbs</a> &middot;{' '}
-        <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>The Verdict</a> &middot;{' '}
-        <a href="#coherence-meaning" style={{ color: 'var(--color-accent-blue)' }}>What &ldquo;Coherence&rdquo; Means Here</a> &middot;{' '}
-        <a href="#what-was-tested" style={{ color: 'var(--color-accent-blue)' }}>What Was Tested</a> &middot;{' '}
-        <a href="#what-failed" style={{ color: 'var(--color-accent-blue)' }}>What Failed</a> &middot;{' '}
-        <a href="#is-gamma-universal" style={{ color: 'var(--color-accent-blue)' }}>Is γ universal?</a> &middot;{' '}
-        <a href="#structural-tensions" style={{ color: 'var(--color-accent-blue)' }}>Structural Tensions</a> &middot;{' '}
-        <a href="#whats-untested" style={{ color: 'var(--color-accent-blue)' }}>What&apos;s Untested</a> &middot;{' '}
-        <a href="#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</a> &middot;{' '}
-        <a href="#landscape" style={{ color: 'var(--color-accent-blue)' }}>Modified-Gravity Landscape</a> &middot;{' '}
-        <a href="#cosmological-tensions" style={{ color: 'var(--color-accent-blue)' }}>Cosmological Tensions</a> &middot;{' '}
-        <a href="#inherited-mond-problems" style={{ color: 'var(--color-accent-blue)' }}>Inherited MOND Problems (clusters, CMB, GW speed)</a> &middot;{' '}
-        <a href="#a2acw-self-audit" style={{ color: 'var(--color-accent-blue)' }}>A2ACW Self-Audit</a> &middot;{' '}
-        <a href="#bottom-line" style={{ color: 'var(--color-accent-blue)' }}>Bottom Line</a>
-      </nav>
 
       {/* Overall Verdict */}
       <section className="card card-highlight section">
@@ -415,7 +434,7 @@ export default function HonestAssessment() {
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>(1) DESI fσ₈ (TEST-04a — corrected 2026-07-14):</strong> The framework predicted
-          suppressed growth: σ₈&nbsp;≈&nbsp;0.76 (fσ₈(z=0.51)&nbsp;≈&nbsp;0.418, 12% below ΛCDM&apos;s 0.474).
+          suppressed growth: σ₈&nbsp;≈&nbsp;0.76 (fσ₈(z=0.51)&nbsp;≈&nbsp;0.418, 12% below ΛCDM&apos;s 0.473).
           <strong>What DESI DR1 full-shape actually shows (arXiv:2411.12021):</strong> combined
           σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 (Table 10) → <strong>2.4σ tension — the predicted suppression is absent.</strong> The 0.76 was calibrated to the weak-lensing S8 value, so this 2.4σ restates the known lensing-vs-clustering S8 difference; a calibrated number cannot test the framework (note added 2026-10-04).{' '}
           But that amplitude is a GR-conditioned statistic; the <em>registered</em> criterion
@@ -955,7 +974,7 @@ export default function HonestAssessment() {
               neighbourhood cancels in any same-instant ratio, but not in time. The Sun moves through the disc and past nearby
               stars, so G<sub>eff</sub> = G/C(ρ) drifts. At the 1&ndash;10 pc density smoothing the galaxy fits need, the knee grid
               predicts Ġ/G ≈ 10⁻⁸ to 10⁻⁵ per year, against LLR&apos;s (7.1 ± 7.6)×10⁻¹⁴ (Hofmann &amp; Müller 2018). That
-              excludes 68 of 74 laws, and the survivors are Newtonian to 10⁻⁸ at the Sun (explorer 2026-09-23, pre-registered;
+              excludes 68 of 74 laws at 1 pc (62 at 10 pc), and the survivors are Newtonian to 10⁻⁸ at the Sun. The count holds under L2 and L3 alike (explorer 2026-09-23, pre-registered; L3 check 2026-10-19;
               details on the <Link href="/tier-1-existing#TEST-02" style={{ color: '#f87171' }}>TEST-02 card</Link>). This is a
               second, SPARC-independent root for the same density-keyed kill, <em>not a seventh refutation</em>. Whether it becomes
               its own ledger row, or replaces the weaker environment registration (row #4) as the density-keyed entry, is
@@ -1175,9 +1194,15 @@ export default function HonestAssessment() {
               If γ <em>resets per Markov blanket</em> (P611.2: N<sub>corr</sub> = 1 inside a resolved-member system, so γ = 2),
               the clusters are marginally consistent at MOND-with-EFE&apos;s level under L2 (under the action, L3, excluded narrowly at the measured knee, 2026-10-08; see <a href="#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>the fork card</a>) &mdash; and the coherence function is not
               one function. This is not an ad-hoc rescue: it was registered seven months before the test, on independent
-              reasoning, and it makes a further cheap prediction &mdash; <strong>γ = 2 for every resolved-member system</strong>{' '}
-              (open clusters, dwarf spheroidals, stellar streams; all public) and γ ≈ ½ for unresolved ones. That ladder is
-              the first time the N<sub>corr</sub> machinery has done predictive rather than decorative work. It is also not a
+              reasoning, and it makes a further prediction &mdash; <strong>γ = 2 for every resolved-member system</strong>{' '}
+              and γ ≈ ½ for unresolved ones. That ladder is the first time the N<sub>corr</sub> machinery has done predictive
+              rather than decorative work. It is <em>not</em> cheaply testable beyond the globular clusters: the explorer&apos;s
+              pre-check found that every classical dwarf spheroidal except Leo I sits entirely below every knee the γ = 2
+              branch admits (so γ never enters; the dwarfs test only the boost floor, which they already fail, needing
+              boosts of 4.5&ndash;300 against 3.17), and open clusters sit in a disc whose own density caps their boost at
+              1.0&ndash;1.27, inside binary-star noise. Stellar streams have not been checked. So the ladder is decidable only
+              where it has been run (finding:{' '}
+              <code>explorer/findings/gamma-ladder-precheck-dsphs-cannot-see-the-knee-open-clusters-are-ambient-capped.md</code>). It is also not a
               win if it passes: the boost ceiling still kills the floored law on SPARC independent of γ, so a passing ladder
               makes the framework two partial functions, not one function that works.
             </p>
@@ -1873,7 +1898,7 @@ export default function HonestAssessment() {
 
         <h3>What the Program Demonstrates</h3>
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem' }}>
-          <li><strong>Wrong theories motivate right questions</strong> &mdash; 0 predictions confirmed, yet 47 genuine contributions</li>
+          <li><strong>Wrong theories motivate right questions</strong> &mdash; 0 predictions confirmed, yet 47 internal-consistency survivors (results that held up inside the framework; none is a confirmed discovery)</li>
           <li><strong>Self-correction accelerates with experience</strong> &mdash; error recognition delay: 373 sessions (early) &rarr; 1 session (late)</li>
           <li><strong>Discovery rate increases with focus</strong> &mdash; chemistry 0.52% &rarr; ALFALFA/CDM 71.4%</li>
           <li><strong>Honest negative results are valuable</strong> &mdash; OQ007 fractal bridge: 36/36 tests, clean definitive closure</li>

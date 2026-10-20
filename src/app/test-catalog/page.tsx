@@ -110,7 +110,11 @@ export default function TestCatalog() {
           None of the 24 registry experiments (TEST-01 to TEST-24) was formally pre-registered before the data was available.
           This means results cannot be treated as prospective predictions &mdash; they are retrospective
           consistency checks until a kill criterion is publicly registered <em>before</em> the relevant
-          dataset is analyzed.{' '}
+          dataset is analyzed. <strong>Two words, kept apart:</strong> <em>registered</em> means the kill criterion was
+          written down before the test was <em>run</em>; <em>pre-registered</em> means before the <em>data existed</em>.
+          TEST-09&apos;s BTFR kill is registered, not pre-registered: its &gt;&nbsp;0.3 threshold was fixed on 2026-04-24, eleven
+          weeks before the 2026-07-14 run, but SPARC had been public since 2016. So when Honest Assessment calls it a
+          &ldquo;registered kill&rdquo;, that and this box agree.{' '}
           <Link href="/research-philosophy#kill-criterion-audit-trail" style={{ color: '#ef4444' }}>
             See the prediction audit trail →
           </Link>

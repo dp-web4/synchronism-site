@@ -72,7 +72,7 @@ export default function ResearchPhilosophy() {
           <li>Session #616 audited all 4 research tracks and found all are reparametrizations of known physics</li>
           <li>We published that finding prominently, not buried it</li>
           <li>The 89% chemistry validation rate sounds impressive until you learn it&apos;s mathematical consistency, not novel prediction</li>
-          <li>47 genuine contributions out of ~3,308 sessions = 1.4% internal-consistency-survival rate (see below for why this is not a discovery rate).</li>
+          <li>47 internal-consistency survivors out of ~3,308 sessions = 1.4% internal-consistency-survival rate (see below for why this is not a discovery rate).</li>
         </ul>
 
         <h2 id="validation-badge-taxonomy">Validation Badge Taxonomy</h2>
@@ -92,7 +92,7 @@ export default function ResearchPhilosophy() {
           contradicted by data (with specific error)&rdquo; there &mdash; one badge, two definitions, two pages.
           The definitions now live in exactly one place; this page keeps only the <em>rationale</em> for having two
           families, which is what it is for. A visitor documentation persona found the drift as part of a larger
-          finding: the site&apos;s status vocabulary has grown from the documented 10 badges to <strong>40+ ad-hoc
+          finding: the site&apos;s status vocabulary has grown from the 10 badges documented at the time (nine today) to <strong>40+ ad-hoc
           strings</strong> across five pages, several of them (&ldquo;Empty Intersection,&rdquo; &ldquo;Adjudicable
           Now,&rdquo; &ldquo;Untestable&rdquo; &mdash; one keystroke from <em>Untested</em>, which means something
           else) used but nowhere defined. Freezing that vocabulary to a machine-readable list is queued as a
@@ -319,6 +319,21 @@ export default function ResearchPhilosophy() {
             trained on the same physics corpus will share the same blind spots — they jointly miss what
             the literature missed, and jointly converge on what the literature over-represents. The
             protocol cannot detect errors that are systematic across the entire training corpus.
+          </p>
+          <p id="a2acw-model-roles" style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.75rem 0 0', scrollMarginTop: '5rem' }}>
+            <strong>Who played which role (what the archive records; added 2026-10-20 at a researcher simulated-visitor persona&apos;s
+            request).</strong> The protocol came from an external reviewer, LV, whose three run logs (19&ndash;20 January 2026,{' '}
+            <code>forum/lv/</code>) pair two vendors: the defender (&ldquo;PRIMARY&rdquo;) was Claude and the challenger was
+            ChatGPT, run in an incognito session. Model versions are not recorded. Those three runs are the only cross-vendor
+            A2ACW record in the archive. Two of the results quoted on this site were single-model, not pairs: the 4/6 vocabulary-asymmetry
+            catch rate (Session 659: &ldquo;one Claude agent playing both roles&rdquo;) and the 2026-05-22 calibration arm, which
+            Claude Opus 4.7 both wrote and scored. For the ~3,300 archive sessions as a whole, the archive does not record which
+            model held which role. So &ldquo;same training distribution&rdquo; above means overlapping training corpora across
+            vendors, not one model talking to itself, except in those two single-model results. It also means a partly disjoint
+            pair has been used since January 2026. A cross-vendor control could be run with such a pair now, as a lower bound on
+            independence, instead of waiting for a fully disjoint corpus. One conflict is unresolved: Session 662 says the six &ldquo;Validated&rdquo;
+            demotions &ldquo;came from human audit, not the AI loop&rdquo;, while this site describes the auditors as LLM agents.
+            Which one is right has not been traced.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', marginBottom: 0 }}>
             This is why the 1.4% figure is an internal-consistency-survival rate, not a discovery rate: it is an upper bound on what

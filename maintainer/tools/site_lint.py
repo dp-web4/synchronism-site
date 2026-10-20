@@ -23,6 +23,28 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-20 (maintainer): stale glossary fsigma8 (missed by the 10-10 sweep: lowercase \u00b1, rounded value);
+    #     LambdaCDM fsigma8 mis-rounding; tanh(negative u); door-3 wording; environment-run IDs; landing step 6; Youden range
+    (r"0\.55\d?\s*(±|&plusmn;|\\u00[bB]1)\s*0\.06", "2026-10-20",
+     "LRG1 fsigma8 is 0.516 +0.057/-0.066 (QSO-row value retired 2026-10-10; the glossary kept it until 2026-10-20)"),
+    (r"(ΛCDM|&Lambda;CDM|\\u039bCDM)[^.]{0,20}0\.474", "2026-10-20",
+     "DESI DR1 Table 11 fiducial is 0.4733, i.e. 0.473"),
+    (r"very negative u it returns", "2026-10-20",
+     "tanh -> -1 as u -> -inf, and u = gamma ln(1+x) is never negative here"),
+    (r"probably closed, not shown closed", "2026-10-20",
+     "explorer 2026-10-19 computed the L3 striction term; the in-disc L3 door is closed by LLR"),
+    (r"carried on\s+this site as", "2026-10-20",
+     "the environment run is TEST-03s on this site (archive: S177 / TEST-08)"),
+    (r"The registered TEST-08 gives", "2026-10-20",
+     "site TEST-08 is the Freeman-law card; the environment run is TEST-03s"),
+    (r"Glossary</Link> \(step 6\)", "2026-10-20",
+     "the Glossary has been a companion, not a path step, since 2026-10-08"),
+    (r"0-to-1 score", "2026-10-20",
+     "Youden's J runs from -1 to 1; the site quotes negative J"),
+    (r"47 genuine contributions", "2026-10-20",
+     "the 47 are internal-consistency survivors, not discoveries"),
+    (r"cheap prediction &mdash; <strong>γ = 2 for every resolved-member", "2026-10-20",
+     "the ladder pre-check (explorer) found dSphs below every admissible knee and open clusters ambient-capped"),
     # --- retired 2026-10-19 (maintainer): taxonomy and badge drift; consciousness body vs header; measurement page
     (r"Failed — all \$\{EXECUTED_COUNT\}", "2026-10-19",
      "the Tier 1 badge covers only the tests whose kill fired; TEST-04a is underpowered as registered, not Failed"),

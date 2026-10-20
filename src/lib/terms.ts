@@ -347,9 +347,16 @@ export const terms: Record<string, TermDefinition> = {
   'badge-validated': {
     term: 'Validated',
     fullName: 'Validation Badge: Validated (Deprecated)',
-    brief: '\u26a0 Retired badge \u2014 no longer used; kept so old links resolve; nothing on the site currently earns it. See Honest Assessment for the current badge system (Reparametrization, Failed, Untested, Speculative).',
-    explanation: '\u26a0 This badge is deprecated. None of the 9 audited claims survived (all 6 former "Validated" badges plus 3 swept later were demoted to Reparametrization or Failed); the audit was done by LLM agents, not an outside domain expert. "Validated" conflicts with the current stewardship discipline (nothing is honestly characterizable as established at this stage). In new content, use Active-MRH, Reparametrization, or the appropriate descriptive tag instead. Historical note: "Validated" meant the numbers agreed quantitatively with data \u2014 but agreement alone does not establish novelty; reparametrizations of known physics can "validate" without adding new physics.',
+    brief: '\u26a0 Retired badge \u2014 no longer used; kept so old links resolve; nothing on the site currently earns it. Current badges: nine, in two families (5 MRH-relationship: Active-MRH, Parallel-Paths, Sidelined, Superseded, Audited-Negative; 4 descriptive: Untested, Speculative, Reparametrization, Failed), defined on Honest Assessment.',
+    explanation: '\u26a0 This badge is deprecated. None of the 9 audited claims survived (all 6 former "Validated" badges plus 3 swept later were demoted to Reparametrization, Failed, Audited-Negative or Speculative); the audit was done by LLM agents, not an outside domain expert. "Validated" conflicts with the current stewardship discipline (nothing is honestly characterizable as established at this stage). In new content, use Active-MRH, Reparametrization, or the appropriate descriptive tag instead. Historical note: "Validated" meant the numbers agreed quantitatively with data \u2014 but agreement alone does not establish novelty; reparametrizations of known physics can "validate" without adding new physics.',
     learnMore: '/honest-assessment#validation-badge-definitions',
+  },
+  'youden-j': {
+    term: "Youden's J",
+    fullName: "Youden's J statistic",
+    brief: 'A score for how well a yes/no test separates two classes: J = sensitivity + specificity \u2212 1. It runs from \u22121 to 1; 0 means no better than chance, 1 means perfect.',
+    explanation: 'Used on this site for the A2ACW audit protocol: how well its "is this novel?" verdicts separate genuine discoveries from reparametrizations. On the one calibration set (six canonical discoveries) the literal rule flagged every discovery as prior art (specificity 0/6), and the interval quoted for J spans zero, so the protocol has shown it can demote claims but not that it can detect novel ones.',
+    learnMore: '/for-researchers#a2acw-open-question',
   },
   'badge-untested': {
     term: 'Untested (badge)',
@@ -432,7 +439,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'DESI',
     fullName: 'Dark Energy Spectroscopic Instrument',
     brief: 'A large-scale sky survey at Kitt Peak Observatory measuring galaxy spectra to map cosmic expansion.',
-    explanation: 'DESI (Dark Energy Spectroscopic Instrument) is a spectroscopic survey that measures the redshifts of ~40 million galaxies and quasars to map the universe\'s large-scale structure. DESI Data Release 1 (DR1, 2024) provided the most precise measurements to date of f\u03c3\u2088 (the combined growth-rate parameter) across multiple redshift bins. Synchronism\'s TEST-04a predicted f\u03c3\u2088(z=0.51) \u2248 0.418, below \u039bCDM; DESI DR1 observed \u2248 0.55 \u00b1 0.06, above \u039bCDM. This 2.4\u03c3 disagreement is the framework\'s first adjudication by external data.',
+    explanation: 'DESI (Dark Energy Spectroscopic Instrument) is a spectroscopic survey that measures the redshifts of ~40 million galaxies and quasars to map the universe\'s large-scale structure. DESI Data Release 1 (DR1, 2024) provided the most precise measurements to date of f\u03c3\u2088 (the combined growth-rate parameter) across multiple redshift bins. Synchronism\'s TEST-04a predicted f\u03c3\u2088(z=0.51) \u2248 0.418, below \u039bCDM (0.473). DESI DR1\'s LRG1 bin gives 0.516 (+0.057/\u22120.066): the prediction sits ~1.5\u03c3 below it, short of the registered >3\u03c3 bar, so the test is underpowered as registered and is not counted as a refutation. The mechanism behind 0.418 was withdrawn on 2026-08-11. The 2.4\u03c3 figure sometimes quoted is a GR-conditioned \u03c3\u2088 statistic, not the registered one.',
     learnMore: '/honest-assessment',
   },
   'sigma8': {
@@ -446,7 +453,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'f\u03c3\u2088',
     fullName: 'Growth-Rate \u00d7 Amplitude Parameter',
     brief: 'The product of the growth rate f(z) and the matter fluctuation amplitude \u03c3\u2088 \u2014 a key observable for structure growth.',
-    explanation: 'f\u03c3\u2088(z) combines two cosmological measurements: f(z) = d(ln D)/d(ln a), the logarithmic growth rate of structure (how fast overdensities grow), and \u03c3\u2088(z), the amplitude of matter fluctuations at redshift z. Together they quantify how rapidly large-scale structure is building up. Higher f\u03c3\u2088 = faster growth = more clustering. Synchronism Session 107 predicted f\u03c3\u2088(z=0.51) \u2248 0.418, below \u039bCDM (\u22480.474). DESI DR1 measured \u22480.55 \u00b1 0.06, above \u039bCDM \u2014 a 2.4\u03c3 disagreement with Synchronism, and a sign reversal relative to the prediction.',
+    explanation: 'f\u03c3\u2088(z) combines two cosmological measurements: f(z) = d(ln D)/d(ln a), the logarithmic growth rate of structure (how fast overdensities grow), and \u03c3\u2088(z), the amplitude of matter fluctuations at redshift z. Together they quantify how rapidly large-scale structure is building up. Higher f\u03c3\u2088 = faster growth = more clustering. Synchronism Session 107 predicted f\u03c3\u2088(z=0.51) \u2248 0.418, below \u039bCDM (\u22480.473). DESI DR1\'s LRG1 bin measured 0.516 (+0.057/\u22120.066), above \u039bCDM but within 1\u03c3 of it; the prediction sits ~1.5\u03c3 below the data, short of its registered >3\u03c3 bar (TEST-04a: underpowered as registered, not counted). The suppression mechanism was withdrawn on 2026-08-11, and the framework\'s own G/C readings give 0.418, \u2248 0.473 or 0.575 depending on how C enters growth.',
     learnMore: '/honest-assessment',
   },
   'delta-BIC': {

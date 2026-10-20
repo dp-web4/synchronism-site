@@ -142,7 +142,7 @@ export const REFUTATION_ROWS: RefutationRow[] = [
   {
     n: 4,
     what: 'Environment: void galaxies do not sit high on the RAR (r² = 0.0001 vs a registered > 20%)',
-    ids: 'TEST-01 / TEST-03s / TEST-05 (one run; the archive calls it TEST-08)',
+    ids: 'TEST-03s (archive: S177 / TEST-08); the TEST-01 and TEST-05 cards point to this one run',
     root: 'A refuted registration (S177\'s > 20% amplitude, which C(ρ)\'s own lever never predicted)',
     whichC: 'C_ρ, density-keyed',
     data: 'SPARC + Cosmicflows-4 density field',

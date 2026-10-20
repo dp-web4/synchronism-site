@@ -28,8 +28,8 @@ export default function CdmDiscrimination() {
           term at SPARC scale, not an environment measurement. The registered environment test, run as registered
           on 2026-07-14 (SPARC RAR offsets vs Cosmicflows-4 densities), gives <strong>r&sup2;&nbsp;=&nbsp;0.0001</strong> against
           the &gt;20% claim (N = 141 SPARC galaxies; per-galaxy RAR offset vs Cosmicflows-4 cylinder density, distance-corrected,
-          55,877 tracers; r = +0.012, p = 0.89; registered kill bar r&sup2; &lt; 0.09; TEST-08 in the research ledger, carried on
-          this site as <Link href="/tier-1-existing#TEST-05" style={{ color: '#ef4444' }}>TEST-05</Link>, executed 2026-07-14) &mdash; the environment prediction is refuted by execution. See{' '}
+          55,877 tracers; r = +0.012, p = 0.89; registered kill bar r&sup2; &lt; 0.09; filed on this site as{' '}
+          <Link href="/tier-1-existing#TEST-03" style={{ color: '#ef4444' }}>TEST-03s</Link> (archive: S177 / TEST-08), executed 2026-07-14) &mdash; the environment prediction is refuted by execution. See{' '}
           <Link href="/honest-assessment" style={{ color: '#ef4444' }}>Honest Assessment</Link> for the
           current ledger. This page is rewritten below to tell the more interesting story: why the CDM
           verdict flipped once distance-noise modeling was added.

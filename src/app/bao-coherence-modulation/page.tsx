@@ -49,7 +49,7 @@ export default function BaoCoherenceModulation() {
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.75rem', marginBottom: 0 }}>
             Replacement: <strong>TEST-04a (DESI RSD f&#x03C3;&#x2088; Suppression)</strong> &mdash; the test Session 107
             actually predicts: f&#x03C3;&#x2088;(z=0.51)&nbsp;&#x2248;&nbsp;0.418, a 12% deviation from &Lambda;CDM
-            (0.474), testable with already-published DESI DR1 LRG data.
+            (0.473), testable with already-published DESI DR1 LRG data.
             See <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 catalog</Link>.
           </p>
         </div>

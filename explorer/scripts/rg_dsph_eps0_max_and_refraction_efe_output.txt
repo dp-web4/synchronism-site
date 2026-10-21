@@ -1,0 +1,63 @@
+
+(1) Largest universal e0 each dwarf allows (obs sigma - 2 err <= predicted), E0's Q and rho_c, both readings, Upsilon_V 3.
+(2) Refraction EFE amplitude.  Uniform external field g_e z^ far away, radial eps(r) = eps(rho_dwarf(r) + rho_amb):
+    div(eps grad phi) = 0 for the external part, phi = -g_e u(r) cos(theta),  (eps r^2 u')' = 2 eps u.
+    Uniform medium -> u = r exactly (interior field uniform, no internal effect).  The NON-uniform interior part
+    is |u' - u/r| (radial vs tangential components differ), in units of g_e after normalising u -> r at infinity.
+    It is an l=1 (lopsided) perturbation: odd in g_e, so it cannot change the isotropic virial sigma at first order;
+    it shifts/lopsides the dwarf.  We report D(r_h) g_e / g_int(r_h).  Self-gravity boost is g_e-independent (linear).
+Laws: RG E0 mean, RG DMS mean (Qln reading), framework floored (Omega_m) and UNFLOORED C, gamma 0.489, rho_c 0.0079.
+Ambient: MW hot halo ~3e-6 Msun/pc3 (100 kpc/D)^1.5 [recall-level; irrelevant below every knee].
+g_e = (200 km/s)^2 / D  [flat MW, recall-level].
+
+=== (1) max universal e0 allowed at 2 sigma (Q, rho_c of E0 mean), Upsilon_V = 3 ===
+-- reading Qln
+   Fornax          e0 <= 0.1955   (src M12)
+   Leo I           e0 <= 0.0762   (src M12)
+   Sculptor        e0 <= 0.0440   (src M12)
+   Leo II          e0 <= 0.0291   (src M12)
+   Sextans         e0 <= 0.0177   (src M12)
+   Carina          e0 <= 0.0339   (src M12)
+   Ursa Minor      e0 <= 0.0020   (src M12)
+   Draco           e0 <= 0.0033   (src M12)
+   Crater II       e0 <= 0.0411   (src C17)
+   Antlia II       e0 <= 0.0129   (src T19)
+   Bootes I*       e0 <= 0.0062   (src recall)
+   Ursa Major II*  e0 <= 0.0002   (src recall)
+   Coma Ber*       e0 <= 0.0003   (src recall)
+   Segue 1*        e0 <= 0.0003   (src recall)
+   Reticulum II*   e0 <= 0.0004   (src recall)
+-- reading /Q
+   Fornax          e0 <= 0.2483   (src M12)
+   Leo I           e0 <= 0.1221   (src M12)
+   Sculptor        e0 <= 0.0865   (src M12)
+   Leo II          e0 <= 0.0665   (src M12)
+   Sextans         e0 <= 0.0277   (src M12)
+   Carina          e0 <= 0.0692   (src M12)
+   Ursa Minor      e0 <= 0.0128   (src M12)
+   Draco           e0 <= 0.0163   (src M12)
+   Crater II       e0 <= 0.0431   (src C17)
+   Antlia II       e0 <= 0.0132   (src T19)
+   Bootes I*       e0 <= 0.0148   (src recall)
+   Ursa Major II*  e0 <= 0.0019   (src recall)
+   Coma Ber*       e0 <= 0.0034   (src recall)
+   Segue 1*        e0 <= 0.0035   (src recall)
+   Reticulum II*   e0 <= 0.0054   (src recall)
+
+=== (2) refraction-EFE: non-uniform interior part D(R_h) g_e vs internal g(R_h); Upsilon_V 1.5 ===
+system          g_e/g_N(Rh) |                  RG E0 |                 RG DMS |             fw floored |           fw UNfloored
+Fornax                  3.0 | D=1.52e-01 ratio=1.69e-01 | D=1.08e-02 ratio=3.17e-02 | D=1.41e-01 ratio=1.85e-01 | D=5.69e-03 ratio=3.06e-03
+Leo I                   0.8 | D=4.29e-02 ratio=2.51e-02 | D=3.89e-04 ratio=3.08e-04 | D=8.49e-02 ratio=4.75e-02 | D=6.75e-04 ratio=3.06e-04
+Sculptor                7.1 | D=1.08e-01 ratio=3.75e-01 | D=3.70e-03 ratio=2.61e-02 | D=1.39e-01 ratio=5.04e-01 | D=6.06e-03 ratio=1.22e-02
+Leo II                  3.2 | D=8.84e-02 ratio=1.54e-01 | D=2.18e-03 ratio=6.85e-03 | D=1.31e-01 ratio=2.27e-01 | D=1.71e-03 ratio=1.86e-03
+Sextans               223.9 | D=9.21e-02 ratio=2.09e+00 | D=3.70e-02 ratio=4.70e+00 | D=1.07e-02 ratio=7.63e-01 | D=1.22e-01 ratio=1.45e-01
+Carina                 27.5 | D=2.08e-01 ratio=1.39e+00 | D=4.27e-02 ratio=1.07e+00 | D=1.09e-01 ratio=1.12e+00 | D=1.50e-02 ratio=3.58e-02
+Ursa Minor             26.1 | D=1.62e-01 ratio=1.47e+00 | D=1.36e-02 ratio=3.44e-01 | D=1.38e-01 ratio=1.53e+00 | D=1.23e-02 ratio=5.14e-02
+Draco                  38.9 | D=2.02e-01 ratio=2.02e+00 | D=3.66e-02 ratio=1.31e+00 | D=1.14e-01 ratio=1.69e+00 | D=1.92e-02 ratio=7.12e-02
+Crater II            1064.5 | D=1.35e-02 ratio=1.30e+00 | D=7.39e-04 ratio=4.41e-01 | D=1.12e-03 ratio=3.76e-01 | D=2.72e-01 ratio=1.92e-01
+Antlia II            3019.8 | D=1.75e-03 ratio=4.73e-01 | D=2.27e-05 ratio=3.83e-02 | D=1.29e-04 ratio=1.23e-01 | D=2.36e-01 ratio=1.29e-01
+Bootes I*             555.8 | D=1.21e-01 ratio=7.18e+00 | D=6.47e-02 ratio=2.08e+01 | D=1.58e-02 ratio=2.81e+00 | D=1.20e-01 ratio=5.36e-01
+Ursa Major II*       2967.5 | D=8.65e-02 ratio=2.63e+01 | D=3.56e-02 ratio=6.03e+01 | D=1.01e-02 ratio=9.57e+00 | D=2.48e-01 ratio=4.30e+00
+Coma Ber*             638.7 | D=2.16e-01 ratio=2.10e+01 | D=1.30e-01 ratio=5.90e+01 | D=5.40e-02 ratio=1.16e+01 | D=7.36e-02 ratio=1.47e+00
+Segue 1*             1886.0 | D=2.24e-01 ratio=8.03e+01 | D=8.46e-02 ratio=1.31e+02 | D=7.94e-02 ratio=5.26e+01 | D=9.35e-02 ratio=9.39e+00
+Reticulum II*         233.8 | D=1.32e-01 ratio=1.31e+01 | D=6.63e-03 ratio=1.53e+00 | D=1.43e-01 ratio=1.56e+01 | D=2.12e-02 ratio=1.10e+00

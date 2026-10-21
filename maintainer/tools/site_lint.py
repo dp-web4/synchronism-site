@@ -23,6 +23,24 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-21 (maintainer): demoted-claims tally; A2ACW roles; Hubble-type p mislabelled as environment;
+    #     unscoped "one distinct prediction"; 1,703 phrasings the 10-16 rule missed; forced-convergence RMS; w(0) at Omega_m 0.30
+    (r"6 former (&ldquo;|\"|“|‘|&apos;)Validated", "2026-10-21",
+     "only 2 of the 6 demoted claims are confirmed to have carried Validated (explorer 2026-10-20); say '6 demoted claims'"),
+    (r"Model versions are not recorded|Which one is right has not been traced", "2026-10-21",
+     "LV T3 records Sonnet 4.5; S662's 'human audit' traced and wrong (explorer 2026-10-20)"),
+    (r"p-value for environment effect|significance of environment effect|environment-dependent scatter is real and statistically significant|The effect is real and statistically significant", "2026-10-21",
+     "p = 5e-6 / R^2 = 0.14 is Hubble type vs RAR scatter (S376-378), structural per S381; environment run gives r^2 = 0.0001"),
+    (r"in fact met its own registered criterion", "2026-10-21",
+     "TEST-05's type leg was rejected by a morphology effect; its environment leg (the framework's prediction) is null"),
+    (r"one genuinely distinct\s+external-field prediction|is the genuine discriminator", "2026-10-21",
+     "refraction / ambient-density predictions live on the density-keyed branch already excluded by SPARC and LLR; untested, cannot move Bucket 0"),
+    (r"1,703 chemical phenomena|across 1,703|from 1,703 phenomena|Explore 1,703 phenomena|1,703 phenomena include", "2026-10-21",
+     "1,703 is a session counter; say ~1,700 chemistry sessions"),
+    (r"root-mean-square spread about 0\.50 is|All fall within &#x00B1;0\.03 of 0\.50", "2026-10-21",
+     "a spread around a midpoint fixed by definition is not agreement; dropped from /consciousness-demo"),
+    (r"&minus;1\.24, not the", "2026-10-21",
+     "w(0) at gamma = 2 is -1.256 at Omega_m = 0.315; -1.24 is the Omega_m = 0.30 value", True),
     # --- retired 2026-10-20 (maintainer): stale glossary fsigma8 (missed by the 10-10 sweep: lowercase \u00b1, rounded value);
     #     LambdaCDM fsigma8 mis-rounding; tanh(negative u); door-3 wording; environment-run IDs; landing step 6; Youden range
     (r"0\.55\d?\s*(±|&plusmn;|\\u00[bB]1)\s*0\.06", "2026-10-20",
@@ -473,7 +491,11 @@ def main():
     files = sorted(p for p in ROOT.rglob("*") if p.suffix in (".ts", ".tsx"))
     for path in files:
         text = path.read_text(encoding="utf-8")
-        for pat, date, why in RETIRED:
+        for rule in RETIRED:
+            # Optional 4th field `strict` (added 2026-10-21): skip the EXEMPT words. The w(0) = -1.24 sentence sat
+            # beside "Corrected 2026-08-10", an older correction about something else, and that exempted it.
+            pat, date, why = rule[:3]
+            strict = len(rule) > 3 and rule[3]
             for m in re.finditer(pat, text):
                 # Collapsed revision history (<details> … </details>) keeps retired wording verbatim by design
                 # (added 2026-09-14, when the A2ACW card's history moved into one).
@@ -487,7 +509,7 @@ def main():
                 # ±EXEMPT_REACH window around the match; short lines behave as before.
                 lo = max(start, m.start() - EXEMPT_REACH)
                 hi = min(len(text) if end == -1 else end, m.end() + EXEMPT_REACH)
-                if EXEMPT.search(text[lo:hi]):
+                if not strict and EXEMPT.search(text[lo:hi]):
                     continue
                 lineno = text.count("\n", 0, m.start()) + 1
                 print(f"{path.relative_to(ROOT.parent)}:{lineno}: retired {date}: {m.group(0)!r}\n    -> {why}")

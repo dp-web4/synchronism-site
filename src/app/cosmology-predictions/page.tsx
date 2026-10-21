@@ -148,9 +148,10 @@ export default function CosmologyPredictions() {
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
             <strong>Corrected:</strong> at N = 14,585, R² = 0.14 implies p of order 10<sup>−500</sup>, not
             5×10<sup>−6</sup> — the two numbers cannot describe the same measurement. TEST-03&apos;s registered
-            environment-density test on this sample was never run. TEST-05 does own the (R²=0.14, p=5×10⁻⁶)
-            result on its own registered criterion (reject independence) — met, but non-discriminating
-            against MOND&apos;s External Field Effect. Full trace:{' '}
+            environment-density test on this sample was never run. The (R²=0.14, p=5×10⁻⁶) result is a SPARC
+            Hubble-type (morphology) effect, not an environment measurement; the environment run on SPARC gives
+            r² = 0.0001 (N = 141), a null. (Until 2026-10-21 this note called the pair TEST-05&apos;s met criterion,
+            &ldquo;non-discriminating against MOND&apos;s External Field Effect&rdquo;.) Full trace:{' '}
             <Link href="/tier-1-existing#TEST-03" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: TEST-03/TEST-05 →</Link>
           </p>
         </div>

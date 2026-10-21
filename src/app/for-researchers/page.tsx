@@ -58,6 +58,25 @@ export default function ForResearchers() {
           only in an open-items list on{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.)
         </div>
+        <div id="relativistic-gaps" style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #ef4444', paddingLeft: '0.75rem', margin: '0 0 1rem' }}>
+          <strong>What a gravity referee asks first, and what is missing.</strong> (Added 2026-10-21 at a researcher
+          simulated-visitor persona&apos;s request; each item was already stated somewhere on the site, never in one place.)
+          <ul style={{ margin: '0.35rem 0 0', paddingLeft: '1.2rem' }}>
+            <li><strong>Covariant action:</strong> none for the galaxy sector. L3&apos;s action is non-relativistic. The two minimal covariant
+              completions of the dark-energy equation fail the DESI + CMB + supernova fit (one gives exactly Einstein&ndash;de Sitter, the
+              Brans&ndash;Dicke-pinned one gives &Delta;&chi;&sup2; &ge; +79). The dark-energy sector fits only in its non-covariant form, where it is
+              &Lambda;CDM.</li>
+            <li><strong>Speed of gravitational waves:</strong> not derived. GW170817 bounds |c<sub>T</sub>/c &minus; 1| below ~10&#x207B;&sup1;&#x2075;.
+              The one radiative model on file (scalar inflow) is refuted for having no spin-2 waves. Whether a Brans&ndash;Dicke-type completion
+              stays luminal, as conformally coupled scalar&ndash;tensor theories do, has not been checked here.</li>
+            <li><strong>CMB:</strong> not computed. The dark-energy equation belongs to the Cardassian class, whose perturbed versions over-produce
+              the late ISW effect except near &Lambda;CDM (Koivisto, Kurki-Suonio &amp; Ravndal 2005; imported, not re-run).</li>
+            <li><strong>Lensing:</strong> no light-deflection rule exists. The only lensing data used is the KiDS weak-lensing RAR (Brouwer et
+              al. 2021) as a boost-ceiling test. No cluster strong-lensing comparison has been made.</li>
+          </ul>
+          Without an action, &ldquo;does it pass GW170817 or the CMB?&rdquo; is not yet a well-posed question for this framework, and the
+          site counts none of these as passed.
+        </div>
         <div style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.35)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
           <strong>The program in three sentences.</strong> (1) <em>Claim:</em> the framework&apos;s tanh-log equation, fitted
           freely, goes to the one dial setting (&#x03B3; = &frac12;) where it turns into somebody else&apos;s formula: Milgrom&apos;s
@@ -978,7 +997,7 @@ export default function ForResearchers() {
               </li>
               <li>
                 <strong>Program-level count.</strong> 3,308 sessions &rarr; ~47 internally consistent candidates. Across all
-                audited claims the count is <strong>0 of 9</strong>: the 6 former &ldquo;Validated&rdquo; badges plus the top 3
+                audited claims the count is <strong>0 of 9</strong>: the 6 demoted claims (only 2 confirmed to have carried a &ldquo;Validated&rdquo; badge) plus the top 3
                 of the ~47, swept 2026-07-03. The rest are ~47 candidates not yet individually audited, an open count rather than
                 an outcome. The adversarial loop itself passed all six badges; the demotions came from the later audit. With 0 of 9
                 the true survival rate can be as high as 0.34 (Clopper&ndash;Pearson, two-sided 95%; 0.46 on the six alone).

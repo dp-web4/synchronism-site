@@ -795,7 +795,7 @@ export default function HonestAssessment() {
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               Additional caveats: ~11% failure rate. Era 2 chemistry (sessions 134-2660) identified as
-              template-based. 1,703 phenomena include statistically dependent samples (sound velocity,
+              template-based. The ~1,700 chemistry sessions include statistically dependent samples (sound velocity,
               electronegativity, and atomic volume co-vary for well-known bonding reasons).
               See <a href="/chemistry-limitations" style={{ color: 'var(--color-accent-blue)' }}>Chemistry Limitations</a>.
             </p>
@@ -2003,7 +2003,7 @@ export default function HonestAssessment() {
             The research archive derived the sector on 2025-12-08 (<em>Session 100, Modified Friedmann</em>):
             H&sup2;&nbsp;=&nbsp;8&pi;G&rho;<sub>m</sub>/(3C) with &rho;<sub>DE</sub>&nbsp;=&nbsp;&rho;<sub>m</sub>(1&minus;C)/C.
             With the archive&apos;s arithmetic corrected (its published w(z) table carried a sign error and a
-            dropped &minus;1 term; the corrected w<sub>eff</sub>(z=0) for &gamma;=2 is &minus;1.24, not the
+            dropped &minus;1 term; the corrected w<sub>eff</sub>(z=0) for &gamma;=2 is &minus;1.26 at &Omega;<sub>m</sub>&nbsp;=&nbsp;0.315 (&minus;1.24 at 0.30, quoted here until 2026-10-21), not the
             &ldquo;&gt;&nbsp;0&rdquo; the archive reported), the sector is a strict one-parameter family:
             C&#x2080;&nbsp;=&nbsp;&Omega;<sub>m</sub> is forced, &gamma; is the only knob, and{' '}
             <strong>w(z) runs monotonically from &minus;2&gamma; in the far past to exactly &minus;1 in the far

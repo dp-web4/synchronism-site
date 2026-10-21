@@ -44,7 +44,7 @@ const steps = [
     title: 'Where γ ≈ 1',
     content: `Roughly the quantum-classical boundary: a crossover zone where the dial turns
     gradually, not a phase transition (tanh is smooth, so nothing snaps here). When γ was fitted
-    phenomenon by phenomenon across 1,703 chemical phenomena, most fitted values landed near this band.
+    material by material in ~1,700 chemistry sessions (a session counter, not a count of distinct phenomena), most fitted values landed near this band.
     Those γ values were fitted, not predicted — the formula above failed — so the clustering is an
     observation about where fits landed, with a template-bias caveat and no mechanism. Neither this
     placement nor the old consciousness-threshold placement follows from the equation.`,
@@ -53,7 +53,7 @@ const steps = [
   {
     title: 'Scale Up: Galaxies',
     content: `Apply the same equation to galaxies. Stars in a galaxy are individual uncorrelated
-    classical particles (N_corr = 1, γ = 2, the pinned value that loses to MOND; see the γ status above). The critical density ρ_crit = A × V_flat² (V_flat is the steady top speed of stars far from a galaxy's centre; A is a
+    classical particles (N_corr = 1, γ = 2: the framework's original guess, which loses to MOND, not the fitted γ ≈ 0.5; see the γ status above). The critical density ρ_crit = A × V_flat² (V_flat is the steady top speed of stars far from a galaxy's centre; A is a
     fitted constant, about 0.029 in these units, not derived from anything) connects
     to rotation velocity. MOND — Modified Newtonian Dynamics, the long-standing rival proposal that gravity itself changes below a threshold acceleration, rather than invoking dark matter — has an acceleration constant a₀. Its value happens to match a combination
     of the speed of light and the universe's expansion rate. That may be luck; nobody has derived it.`,

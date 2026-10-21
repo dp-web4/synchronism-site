@@ -16,11 +16,12 @@ export default function RarScatter() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           <strong>New Prediction #2 (NP2)</strong>: The scatter in the Radial Acceleration Relation
-          depends on environment. The effect is real and statistically significant (p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>,
-          R&sup2;=0.14) — but on the SPARC-scale sample (N&asymp;130&ndash;175), not the 14,585-galaxy
-          ALFALFA-SDSS sample this page originally attributed it to (see correction below;
-          TEST-03/TEST-05 on{' '}
+          depends on environment. <strong>Does it? On the one run that measured environment, no.</strong> SPARC galaxies
+          placed in the Cosmicflows-4 density field give r&sup2;&nbsp;=&nbsp;0.0001 (N&nbsp;=&nbsp;141, p&nbsp;=&nbsp;0.89), against a
+          registered prediction of more than 20% of the scatter, so the kill fired (TEST-03s on{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: Existing Data</Link>).
+          Until 2026-10-21 this paragraph called the effect &ldquo;real and statistically significant (p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>,
+          R&sup2;=0.14)&rdquo;. That number is real, but it measures RAR scatter against <em>Hubble type</em>, not environment (below).
           <strong> Correction (2026-07-04):</strong> this is <em>not</em> a prediction standard models
           avoid &mdash; MOND&apos;s External Field Effect (EFE) also predicts environment-dependent RAR
           scatter, so a detection here does not by itself discriminate Synchronism from MOND.
@@ -86,30 +87,38 @@ export default function RarScatter() {
 
         <div className="grid-3" style={{ margin: '1.5rem 0' }}>
           <div className="card" style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#22c55e' }}>p = 5 &times; 10<sup>&minus;6</sup></div>
+            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#ef4444' }}>r&sup2; = 0.0001</div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              Statistical significance of environment effect
+              Environment (Cosmicflows-4 density) vs RAR offset, N&nbsp;=&nbsp;141: null, kill fired
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>R&sup2; = 0.14</div>
+            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>p = 5 &times; 10<sup>&minus;6</sup></div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              Fraction of scatter explained
+              Hubble type vs RAR scatter (SPARC, R&sup2;&nbsp;=&nbsp;0.14): real, but morphology, not environment
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#f59e0b' }}>86%</div>
+            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#f59e0b' }}>r = +0.003</div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              Scatter remains unexplained
+              Isolation proxy vs scatter within each Hubble type (p&nbsp;=&nbsp;0.97, Session 381)
             </div>
           </div>
         </div>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
+          Until 2026-10-21 these tiles read &ldquo;p = 5 &times; 10<sup>&minus;6</sup>: statistical significance of environment effect&rdquo;,
+          &ldquo;R&sup2; = 0.14: fraction of scatter explained&rdquo; and &ldquo;86%: scatter remains unexplained&rdquo;.
+        </p>
 
         <h2>What This Means</h2>
         <p>
-          The environment effect is <em>real</em> &mdash; statistically significant at better than
-          4.5&#x03C3; &mdash; but small, and it fails the test&apos;s own pre-registered kill criterion
-          (R&sup2; &gt; 0.20 required; R&sup2; = 0.14 measured). <strong>Basic MOND (no EFE) does not
+          There are two results here, and only one is about environment. <strong>Hubble type</strong> does predict RAR scatter on
+          SPARC (p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>, R&sup2;&nbsp;=&nbsp;0.14, surviving five confound controls; Sessions 376&ndash;378).
+          Session 381 asked whether type was standing in for environment, and found it was not. Within each type an isolation proxy
+          predicts nothing (r&nbsp;=&nbsp;+0.003, p&nbsp;=&nbsp;0.97), and rotation-curve roughness absorbs the type signal (type is
+          non-significant once roughness is controlled, p&nbsp;=&nbsp;0.61): late-type galaxies have rougher curves. <strong>Environment</strong>,
+          measured directly with an external density catalogue, explains none of the scatter (r&sup2;&nbsp;=&nbsp;0.0001). This page
+          previously read the type result as an environment effect that was &ldquo;real&rdquo; but short of the R&sup2;&nbsp;&gt;&nbsp;0.20 bar. <strong>Basic MOND (no EFE) does not
           predict environment dependence, but MOND with the External Field Effect does</strong> &mdash;
           EFE is a standard part of MOND phenomenology, not an ad-hoc addition, so this result does not
           separate Synchronism from the MOND family. CDM simulations with baryonic feedback can also
@@ -118,9 +127,8 @@ export default function RarScatter() {
 
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          86% of the RAR scatter remains unexplained by Synchronism&apos;s coherence model (R&sup2; = 0.14),
-          below the 20% the pre-registered kill criterion required &mdash; by that standard this test has
-          <strong> failed</strong>, not merely under-delivered. Most of the scatter likely comes from
+          The coherence model&apos;s environment prediction explains none of the RAR scatter (r&sup2;&nbsp;=&nbsp;0.0001 against a
+          registered &gt;&nbsp;20%). By its own standard this test has <strong>failed</strong>, not merely under-delivered. Most of the scatter likely comes from
           observational systematics (distance errors, inclination corrections, mass-to-light ratio
           assumptions) rather than any physical model. MOND plus standard M/L corrections already
           accounts for essentially all of the variance. See{' '}

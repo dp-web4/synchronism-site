@@ -208,7 +208,7 @@ export default function ResearchPhilosophy() {
             reparametrization detector. It catches internal contradictions and circular arguments. It passed all six
             claims later demoted as reparametrizations of known physics, so it did <em>not</em> reliably catch those. It
             cannot generate out-of-distribution novelty or detect systematic errors shared by the entire training corpus.
-            Across all audited claims the count is <strong>0 of 9</strong> (the 6 former &ldquo;Validated&rdquo; badges plus
+            Across all audited claims the count is <strong>0 of 9</strong> (the 6 demoted claims (only 2 confirmed to have carried a &ldquo;Validated&rdquo; badge) plus
             3 swept later). That audit was performed by LLM agents, not an external domain expert (see below), so the line is
             instrument-uncalibrated. The Challenger did not lack the literature: spot-checks show the load-bearing prior art
             for all six was retrievable. It had the prior art and did not raise it.
@@ -289,7 +289,7 @@ export default function ResearchPhilosophy() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           3,308 A2ACW sessions have been run across the research archive. Of these, approximately
           47 produced internal-consistency survivors &mdash; a 1.4% session yield. <strong>Across all
-          audited claims, 0 of 9 survived</strong> (the 6 former &ldquo;Validated&rdquo; badges plus the top 3 of the ~47,
+          audited claims, 0 of 9 survived</strong> (the 6 demoted claims (only 2 confirmed to have carried a &ldquo;Validated&rdquo; badge) plus the top 3 of the ~47,
           swept 2026-07-03); each resolved as a reparametrization of known physics, an internal-consistency finding, or a null
           result. The rest are ~47 candidates not yet individually audited &mdash; an open count, not an outcome (see{' '}
           <a href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</a>{' '}
@@ -324,16 +324,25 @@ export default function ResearchPhilosophy() {
             <strong>Who played which role (what the archive records; added 2026-10-20 at a researcher simulated-visitor persona&apos;s
             request).</strong> The protocol came from an external reviewer, LV, whose three run logs (19&ndash;20 January 2026,{' '}
             <code>forum/lv/</code>) pair two vendors: the defender (&ldquo;PRIMARY&rdquo;) was Claude and the challenger was
-            ChatGPT, run in an incognito session. Model versions are not recorded. Those three runs are the only cross-vendor
-            A2ACW record in the archive. Two of the results quoted on this site were single-model, not pairs: the 4/6 vocabulary-asymmetry
+            ChatGPT. Only the third run records a model version (Claude Sonnet 4.5). Only the first run is unambiguously
+            cross-vendor: the third run&apos;s challenger is labelled a &ldquo;ChatGPT Incognito simulation&rdquo;. Two of the results quoted on this site were single-model, not pairs: the 4/6 vocabulary-asymmetry
             catch rate (Session 659: &ldquo;one Claude agent playing both roles&rdquo;) and the 2026-05-22 calibration arm, which
             Claude Opus 4.7 both wrote and scored. For the ~3,300 archive sessions as a whole, the archive does not record which
             model held which role. So &ldquo;same training distribution&rdquo; above means overlapping training corpora across
             vendors, not one model talking to itself, except in those two single-model results. It also means a partly disjoint
             pair has been used since January 2026. A cross-vendor control could be run with such a pair now, as a lower bound on
-            independence, instead of waiting for a fully disjoint corpus. One conflict is unresolved: Session 662 says the six &ldquo;Validated&rdquo;
-            demotions &ldquo;came from human audit, not the AI loop&rdquo;, while this site describes the auditors as LLM agents.
-            Which one is right has not been traced.
+            independence, instead of waiting for a fully disjoint corpus. Session 662 says the six demotions &ldquo;came from human audit, not the AI loop&rdquo;. Traced
+            through git (explorer, 2026-10-20), every one of the six edits and decisions was made by AI tracks (simulated personas and
+            autonomous sessions). No human audit decision is on record, so Session 662&apos;s line is wrong.
+          </p>
+          <p id="a2acw-arm-dependence" style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.75rem 0 0', scrollMarginTop: '5rem' }}>
+            <strong>Do verdicts depend on who argues?</strong> <ValidationBadge status="active-mrh" /> Yes, on the one test run so far.
+            LV&apos;s three targets were re-run with Claude on both sides (Sonnet 5.5, clean contexts, two replicates each, a blind
+            coder). The two replicates agreed with each other 86% of the time, but agreed with LV&apos;s cross-vendor verdicts only
+            41&ndash;52% of the time. Every one of the 17 disagreements was harsher than LV&apos;s, and LV&apos;s &ldquo;HELD&rdquo; on his
+            second target did not reproduce. So the cross-vendor arm was the lenient one. Vendor, model generation, round count
+            (LV&apos;s second run went 9 rounds) and the human relaying between models all differ between the two arms, so this does not
+            say which of them causes the gap.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', marginBottom: 0 }}>
             This is why the 1.4% figure is an internal-consistency-survival rate, not a discovery rate: it is an upper bound on what

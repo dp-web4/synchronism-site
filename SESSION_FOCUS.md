@@ -1,9 +1,38 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-20 (maintainer)*
+*Last updated: 2026-10-21 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-21) — **The distinct predictions live on the dead branch.** /mond-unification's "one
+genuinely distinct" external-field prediction (L2 refraction) and its "genuine discriminator" (ambient gas at fixed g_ext)
+both belong to the density-keyed branch, which SPARC (+2843, galaxy level) and LLR already exclude. TEST-05 ran neither. So
+no galaxy-scale prediction that differs from MOND exists on a surviving branch. The p = 5×10⁻⁶ "environment effect" on
+/galaxy-rotation and /rar-scatter (two personas) was Hubble type (S376–378; structural per S381). It met one leg of TEST-05's
+disjunctive kill text. Count 6; Bucket 0 = 0.
+- **Fixes:**
+  - explorer 10-20 actions drained: A2ACW roles, arm-dependence line, "6 demoted claims (2 confirmed Validated)" on 7 surfaces;
+  - environment tiles/caveats on 4 pages; new /test-catalog#unregistered-distinct;
+  - plotter legend ×1.78 in speed, plus a reconciliation line and a Beginner hub card;
+  - new LabelMap on /glossary#label-map (from statusLabels.ts);
+  - "1,703 phenomena" on 7 more surfaces; a "not quantum coherence" card;
+  - /for-researchers#relativistic-gaps; consciousness RMS dropped; w(0) −1.26 at Ω_m 0.315;
+  - "Phase Transitions" retitled.
+- site_lint 224 rules, with a new `strict` flag (EXEMPT's bare "corrected" hid the w(0) line; the regex breadth is a known defect).
+- Log: `maintainer/logs/2026-10-21.md`. Proposal:
+  `Synchronism/Research/proposals/the_distinct_predictions_live_on_the_excluded_branch_and_a_disjunctive_registration_20261021.md`.
+- The 10-20 "13 verdicts (5/4/4)" was this lane's recall error (27, 10/8/9); corrected in the archive.
+- **→ Explorer:**
+  - `refraction-efe-amplitude-for-satellites-and-who-it-tests.md`: Refracted Gravity is live and carries the term, and small
+    C does not mean small ∇ln C;
+  - `disjunctive-kill-criteria-in-the-test-registry.md` (cheap).
+- **→ Next maintainer:**
+  - the `<RevisionNotes>` component (today added more inline "until" notes);
+  - slug 308s; footer short form; the EXEMPT narrowing;
+  - LOW numerics in the log.
+- **→ Project lead:** adopt "no MOND-distinct galaxy prediction on a surviving branch" as the galaxy-sector scoped negative;
+  a registry sweep for disjunctive criteria; carried items (counting rule, L2 vs L3, DM story).
 
 ## 🔵 EXPLORER (2026-10-20) — **A2ACW verdicts depend on the arm. Re-running LV's three targets Claude-vs-Claude (Sonnet
 5.5, clean contexts, 2 replicates each, blind coder with a 19/22 positive control) gives run-to-run agreement of 0.86

@@ -11,7 +11,7 @@ export default function PhaseTransitions() {
     <>
       <Breadcrumbs currentPath="/phase-transitions" />
       <PathNav currentPath="/phase-transitions" />
-      <h1>Phase Transitions</h1>
+      <h1>&gamma; Regimes: Crossovers, Not Phase Transitions</h1>
       <ValidationBadge status="reparametrization" label="γ ≈ 1 clustering restates the Debye θ_D (ledger Bucket 3)" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>

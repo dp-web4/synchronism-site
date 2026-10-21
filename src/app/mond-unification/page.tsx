@@ -229,8 +229,11 @@ export default function MondUnification() {
           Without striction (&ldquo;L2&rdquo;) that is a linear external-field effect of order g<sub>ext</sub>&middot;&Delta;C/C: about
           0.3&ndash;0.37 g<sub>ext</sub> beyond the knee in a halo globular cluster. With striction (&ldquo;L3&rdquo;) the internal residuals
           are 1&ndash;30 g<sub>ext</sub> and there is a quadratic term, a nonlinear EFE. EFE&nbsp;=&nbsp;0 holds exactly only for the
-          algebraic reading, or when C is uniform across the system. This linear refraction EFE is the one genuinely distinct
-          external-field prediction of this family, and it has not been confronted with data.
+          algebraic reading, or when C is uniform across the system. This linear refraction EFE is distinct from MOND&apos;s and has not been confronted with data. It is a prediction of the
+          density-keyed branch, which SPARC (&Delta;BIC +2843) and lunar laser ranging already exclude, so testing it could add a
+          second root to that refutation but could not move the confirmed count (<Link href="/test-catalog#unregistered-distinct" style={{ color: 'var(--color-accent-blue)' }}>Test Catalog</Link>).
+          (Until 2026-10-21 this sentence called it &ldquo;the one genuinely distinct external-field prediction of this family&rdquo;
+          with no scope.)
           <br />&bull; <strong>Floored vs unfloored C.</strong> &ldquo;The knee never enters a disc, so none of this touches the framework&apos;s
           parameters&rdquo; holds for the floored form, where C &asymp; Ω<sub>m</sub> below the knee. For the unfloored form
           C = γρ/ρ<sub>c</sub> below the knee, &nabla;ln C = &nabla;ln ρ exactly, whatever the knee and γ. The equation then
@@ -253,17 +256,20 @@ export default function MondUnification() {
           medium density adds to local ρ, raising C and suppressing the boost: an <strong>ambient-density
           effect</strong>, keyed on ρ<sub>ambient</sub> rather than MOND&apos;s g<sub>ext</sub>&nbsp;∝&nbsp;M/r².
           Two satellites at the same external acceleration but different host gas content would behave
-          identically under MOND and differently here &mdash; that variable difference, not a scalar EFE ratio,
-          is the genuine discriminator.
+          identically under MOND and differently here. That is a second distinct prediction, separate from the refraction
+          above, and like it, untested and on the excluded density-keyed branch. A tidal argument (archive, 2026-08-21)
+          estimates it is systematics-limited at signal/systematics &asymp; 4&times;10<sup>&minus;3</sup>.
         </p>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
           <strong style={{ color: '#38bdf8' }}>Correction (2026-08-03):</strong> the paragraph above previously
           called this &ldquo;an open, unclaimed test&rdquo; that had not been checked against SPARC or Chae et al.
           (2020). That was stale &mdash; it already has an ID and a verdict. <Link href="/tier-1-existing" style={{ color: '#38bdf8' }}>TEST-05</Link>{' '}
-          computes exactly this lever comparison (MOND+EFE&apos;s external-acceleration coupling vs. this
+          computes the lever comparison (MOND+EFE&apos;s external-acceleration coupling vs. this
           framework&apos;s ambient-density coupling), cites Chae et al. 2020/2021&apos;s ~4σ EFE detection, and
           the registered run (SPARC RAR offsets vs. Cosmicflows-4 ambient density, N&nbsp;=&nbsp;141) gives
-          r²&nbsp;=&nbsp;0.0001 &mdash; the kill bar fires. Two independent expert simulated-visitor passes (2026-08-03)
+          r²&nbsp;=&nbsp;0.0001 &mdash; the kill bar fires. <strong>Scope (added 2026-10-21, researcher simulated-visitor persona):</strong>{' '}
+          that run refuted the registered amplitude (&gt;&nbsp;20% of the scatter from Mpc-scale density). It did not hold
+          g<sub>ext</sub> fixed or measure gas density at a satellite, so it did not run the two-satellite discriminator above. Two independent expert simulated-visitor passes (2026-08-03)
           flagged this page and <Link href="/for-researchers" style={{ color: '#38bdf8' }}>For Researchers</Link>{' '}
           as stating incompatible things (&ldquo;0 tests that could select it&rdquo; vs. an uncatalogued live
           discriminator); the resolution is that it was never uncatalogued, the cross-reference from this page

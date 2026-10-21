@@ -94,7 +94,7 @@ export default function ChemistryCorrelationExplorer() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Browse the chemistry phenomena tested against &#x03B3;. Sort by correlation strength,
-          filter by regime. This is a curated sample from 1,703 phenomena.
+          filter by regime. These 23 rows were curated from a corpus of ~1,700 chemistry sessions (1,703 is a session counter, not a count of distinct phenomena).
         </p>
 
         <div style={{
@@ -107,9 +107,9 @@ export default function ChemistryCorrelationExplorer() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#f59e0b' }}>Methodological caveat:</strong>{' '}
-          This display shows 23 hand-curated rows from 1,703 phenomena. Selecting the highest-correlation
+          This display shows 23 hand-curated rows from ~1,700 chemistry sessions. Selecting the highest-correlation
           rows from a large pool inflates apparent effect sizes by construction (multiple-comparison
-          artifact). The 1,703 phenomena are also not statistically independent &mdash; many share
+          artifact). The sessions&apos; results are also not statistically independent &mdash; many share
           underlying physical mechanisms. The r-values shown are Pearson correlations from exploratory
           curve-fitting, not held-out prediction accuracy. The{' '}
           <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</a>{' '}

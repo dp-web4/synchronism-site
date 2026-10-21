@@ -102,7 +102,7 @@ export const learningPaths: LearningPath[] = [
     kind: 'domain',
     steps: [
       { title: 'The γ Parameter', href: '/gamma-parameter' },
-      { title: 'Phase Transitions', href: '/phase-transitions' },
+      { title: 'γ Regimes: Crossovers, Not Phase Transitions', href: '/phase-transitions' },
       { title: 'The γ ≈ 1 Boundary', href: '/gamma-boundary' },
       { title: 'Sound Velocity', href: '/sound-velocity' },
       { title: 'Superconductivity', href: '/superconductivity' },

@@ -136,7 +136,7 @@ export const navigationTree: NavigationTree = {
       related: ['/parameter-derivations', '/scale-invariance'],
     },
     {
-      title: 'Phase Transitions',
+      title: 'γ Regimes: Crossovers, Not Phase Transitions',
       href: '/phase-transitions',
       desc: '\u03B3 > 1.4, 0.6\u20131.4 (\u2248 1), < 0.6 regimes \u2014 smooth crossovers in C(\u03C1), not phase transitions',
       keywords: ['phase', 'transition', 'regime', 'quantum', 'classical', 'boundary'],

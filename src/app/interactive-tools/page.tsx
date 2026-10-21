@@ -35,7 +35,7 @@ const coreTools = [
   {
     title: 'Galaxy Curve Plotter',
     href: '/galaxy-plotter',
-    desc: 'Pick a SPARC galaxy and see the dark-matter problem: the gray Newtonian line (visible matter) sags below the observed dots. Solid violet = the framework\'s density law C_ρ as published, wired by division as its tests wire their C (g = g_bar/C, floored at Ω_m; TEST-09/10 divide by the acceleration-keyed C_a instead): C never leaves the floor, so it is a flat 3.17× boost with the Newtonian shape, falling where the dots stay flat. Dashed light violet = the same C added in quadrature, which does nothing. Unfloored, the division wiring would over-boost by ~10³× in g. Green = MOND\'s simple interpolating function. The old hand-tuned amber stand-in is hidden behind a checkbox.',
+    desc: 'Pick a real galaxy and see the dark-matter problem: the gray line (what visible matter alone predicts) sags below the measured dots. The green line (MOND, an existing theory) follows the dots. The violet line (this framework\'s equation as written) does not: it sags like the gray one. The page explains why, and the wiring details sit on the tool page.',
     level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
     pageBadges: ['failed', 'reparametrization'] as ValidationStatus[],
@@ -66,7 +66,7 @@ const coreTools = [
   {
     title: 'Equation Anatomy',
     href: '/equation-walkthrough',
-    desc: 'Step-by-step breakdown of C(ρ) = tanh(γ·ln(ρ/ρcrit + 1)). Each step shows one equation component, its physical motivation, and why the specific functional form was chosen (not derived).',
+    desc: 'Step-by-step breakdown of C(ρ) = tanh(γ·ln(ρ/ρcrit + 1)). Each step shows one piece of the equation, why it was chosen (nothing here is derived), and which choices are known to be broken.',
     level: 'Intermediate',
     epistemic: 'core' as EpistemicStatus,
     pageBadges: ['audited-negative'] as ValidationStatus[],
@@ -106,7 +106,8 @@ export default function InteractiveTools() {
         a <strong>Level</strong> (the difficulty scale: Beginner / Intermediate / Advanced), and,
         where it applies, a <strong>Status</strong> (an operational state, square-cornered and amber,
         deliberately styled so it cannot be mistaken for a difficulty). Each card also repeats the verdict badge from the
-        tool&apos;s own page (&ldquo;Badge on its page&rdquo;), which is a claim status, not a fourth label about the tool.
+        tool&apos;s own page (&ldquo;Badge on its page&rdquo;), which is a claim status, not a fourth label about the tool. Every label system on the site is mapped side by side in{' '}
+        <Link href="/glossary#label-map" style={{ color: 'var(--color-accent-blue)' }}>one table on the Glossary</Link>.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem', maxWidth: '60ch' }}>
         <strong>Before the legend:</strong> this is a <em>content grouping</em>, not the site&apos;s validation

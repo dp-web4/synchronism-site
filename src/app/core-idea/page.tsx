@@ -443,7 +443,7 @@ export default function CoreIdea() {
           <Link href="/gamma-boundary" className="card" style={{ textDecoration: 'none' }}>
             <h3 style={{ color: 'var(--color-accent-blue)' }}>The Chemistry</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              Explore 1,703 phenomena at the &#x03B3; &#x2248; 1 boundary
+              Explore 23 curated chemistry rows near &#x03B3; &#x2248; 1 (fitted, not predicted)
             </p>
           </Link>
           <Link href="/honest-assessment" className="card" style={{ textDecoration: 'none' }}>

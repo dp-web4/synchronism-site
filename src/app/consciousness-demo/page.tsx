@@ -284,14 +284,17 @@ export default function ConsciousnessDemo() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             The mean threshold across the {counted.length} approaches that exist is C = <strong>{(counted.reduce((s, a) => s + a.threshold, 0) / counted.length).toFixed(3)}</strong>
             (the &ldquo;phase transition&rdquo; row, hollow in the chart, is excluded: C(&rho;) has no critical point).
-            Their root-mean-square spread about 0.50 is {Math.sqrt(counted.reduce((s, a) => s + Math.pow(a.threshold - 0.50, 2), 0) / counted.length).toFixed(3)}.
-            All fall within &#x00B1;0.03 of 0.50. (Until 2026-10-13 the non-existent row was included: 8 approaches, 0.499 &#x00B1; 0.012.)
+            In plain terms: every approach picks the midpoint of the output range. How tightly they cluster says nothing more, because
+            the midpoint was the shared starting assumption, so this page no longer quotes a spread. (Until 2026-10-21 this line gave a
+            root-mean-square spread about 0.50 of 0.010 and &ldquo;all within &#x00B1;0.03&rdquo;; a researcher simulated-visitor persona
+            pointed out that a spread around a value fixed by definition reads like independent agreement. Until 2026-10-13 the
+            non-existent row was also included: 8 approaches, 0.499 &#x00B1; 0.012.)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
             <strong>Important:</strong> all 7 approaches (and the excluded phase-transition row) were developed within Synchronism and share the
             same tanh-based assumptions. Convergence on 0.50 is expected for any approach that picks
-            the output-range midpoint of a [0,1)-bounded function &mdash; it does not constitute independent empirical evidence. The convergence
-            is consistent with the threshold being real AND with it being a mathematical artifact.
+            the output-range midpoint of a [0,1)-bounded function &mdash; it does not constitute independent empirical evidence. Because the agreement
+            is built in, it cannot tell a real threshold from a mathematical artifact.
             External calibration (e.g., mapping propofol-stage EEG power spectra to a computed C value)
             is required to distinguish these.
           </p>

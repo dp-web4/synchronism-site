@@ -14,6 +14,21 @@ const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: Re
     reality: 'Synchronism does not replace the Standard Model, QFT, or GR. It proposes a different ontology — that quantum phenomena are synchronization phenomena — which reproduces known results and makes a few predictions those theories don\'t. Whether that ontological reframe reveals something real or is just useful notation is the open question.',
   },
   {
+    claim: 'About quantum coherence',
+    plain: 'The word "coherence" here does not mean the quantum coherence of superconductors, lasers or qubits. It is a different number, and a superconductor scores low on it.',
+    reality: (
+      <>
+        Synchronism&apos;s coherence C is a score from 0 to 1 computed from density: how collectively a system&apos;s parts act as
+        it gets denser. Quantum coherence is whether a system keeps a shared quantum phase. They are separate quantities, not
+        opposites. The framework&apos;s original formula, &gamma; = 2/&radic;N<sub>corr</sub>, gives systems with <em>more</em> parts moving
+        together a <em>flatter</em> curve, so a superconductor, as quantum-coherent as matter gets, scores low C. Real superconductors
+        switch on sharply, so that low score is the formula&apos;s audited sign error showing through, not a subtle definition (see the{' '}
+        <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&gamma; Calculator</Link> and the{' '}
+        <Link href="/glossary#coherence" style={{ color: 'var(--color-accent-blue)' }}>glossary entry</Link>).
+      </>
+    ),
+  },
+  {
     claim: 'A replacement for ΛCDM or MOND',
     plain: 'The two leading explanations of galaxy and cosmic data are not displaced; where this framework matches data, it mostly restates them.',
     reality: 'MOND has 40 years of empirical success. ΛCDM explains the CMB, Bullet Cluster, and large-scale structure. Session #616 (sessions are the numbered research sessions in the Synchronism research archive, github.com/dp-web4/Synchronism) confirmed Synchronism\'s cosmological tracks are reparametrizations of known physics — same mechanics, different notation. Of the claims meant to be new, environment-dependent RAR scatter has been run and refuted (r² = 0.0001 against a registered effect of more than 20%). Density-dependent wide binaries depend on a density knee the framework never fixed: at its published calibration the density law is already excluded in the solar neighbourhood.',

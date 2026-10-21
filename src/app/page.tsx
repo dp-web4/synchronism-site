@@ -161,7 +161,7 @@ export default function Home() {
             &#x03C1; is <em>presence</em> &mdash; the compatible structural elements available within a system&apos;s
             relevancy boundary. Physical density is one form of presence, but it also encompasses
             temperature, energy levels, catalytic surfaces, and other factors that support emergence.
-            In every <em>quantitative</em> test the framework has run (SPARC galaxies, chemistry),
+            In every <em>quantitative</em> test the framework has run (SPARC galaxies, i.e. a catalogue of 175 measured rotation curves; chemistry),
             &#x03C1; reduces to the ordinary local mass/energy or number density &mdash; the broader
             &ldquo;presence&rdquo; reading has never been operationalized, so treat the physics
             definition as the one under test.{' '}
@@ -291,7 +291,7 @@ export default function Home() {
               <strong>cannot substitute for out-of-distribution evaluation by domain experts.</strong>{' '}
               The <strong>1.4% internal-consistency survival rate</strong> (&#x2248;47 candidate claims out of ~3,300 sessions survived the protocol&apos;s own consistency checks &mdash; not a discovery rate, and not a novelty measure: the protocol has never been calibrated on genuinely new results (its one benchmark flagged all six canonical discoveries as prior art, specificity 0/6, and the post-cutoff arm that could calibrate it is unrun); denominator and breakdown on{' '}
               <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>) and public failure log are the protocol&apos;s honest outputs.
-              The audit number: <strong>0 of 9 audited claims survived</strong> (the 6 former &ldquo;Validated&rdquo; badges plus 3 swept later; demoted to Reparametrization, Failed, Audited-Negative or Speculative). <strong>The auditors were LLM agents, not an outside domain expert.</strong>{' '}
+              The audit number: <strong>0 of 9 audited claims survived</strong> (the 6 demoted claims (only 2 confirmed to have carried a &ldquo;Validated&rdquo; badge) plus 3 swept later; demoted to Reparametrization, Failed, Audited-Negative or Speculative). <strong>The auditors were LLM agents, not an outside domain expert.</strong>{' '}
               Volume (~3,300 sessions) is not evidence, and neither is this count on its own: the demotions that hold rest on written identities and executed scripts, not on the audit verdict. Which of the 9 rest on an identity or script, and which only on the AI prior-art mapping, has not yet been tabulated claim by claim.{' '}
               <em>Caveat carried at point of headline: the audit instrument, calibrated against six canonical
               genuine discoveries (Dirac, Bell, BCS, Higgs, Hawking, Noether), false-flagged all six as
@@ -347,6 +347,7 @@ export default function Home() {
               <strong>RAR</strong> = radial acceleration relation (observed vs visible-matter acceleration);{' '}
               <strong>&Delta;BIC</strong> = a model-comparison score (positive = the framework fits worse; &gt;10 is decisive);{' '}
               <strong>r&sup2;</strong> = fraction of variance explained;{' '}
+              <strong>dex</strong> = a factor of 10 on a log scale (0.3 dex &asymp; a factor of 2);{' '}
               <strong>&sigma;</strong> = standard deviations of significance;{' '}
               <strong>CHSH</strong> = the measurable form of Bell&apos;s theorem;{' '}
               <strong>&Lambda;CDM</strong> = the standard cosmological model;{' '}
@@ -459,7 +460,7 @@ export default function Home() {
               </div>
               <span>Post-hoc retrodictions attempted <em style={{ color: 'var(--color-text-muted)' }}>(checking the idea against data that already existed)</em>: <strong style={{ color: '#f59e0b' }}>1 — underpowered</strong> (DESI (Dark Energy Spectroscopic Instrument) fσ₈ — on a mechanism withdrawn 2026-08-11, so no live growth reading differs from ΛCDM; as registered, disfavored 2.4σ on σ₈, but the fσ₈ criterion fell short of its own &gt;3σ bar and is not counted as a refutation; see <Link href="/honest-assessment#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a</Link>)</span>
               <span>Withdrawn: <strong style={{ color: '#f59e0b' }}>1</strong> (BAO (Baryon Acoustic Oscillation) modulation)</span>
-              <span>&ldquo;Validated&rdquo; claims surviving audit: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 9</strong> — the 6 former &ldquo;Validated&rdquo; badges (5 now reparametrizations; the BTFR slope moved to the refutation column 2026-07-14) plus 3 swept later (<Link href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</Link>). <strong>Who audited:</strong> LLM agents (the archive&apos;s AI research sessions and this site&apos;s AI tracks), not an outside domain expert &mdash; so this line is <em>instrument-uncalibrated</em>. The one calibration attempt (2026-05-22) was an in-distribution arm self-scored by one model that knew every answer, and it false-flagged 6/6 genuine discoveries under the literal rule; the out-of-distribution, post-cutoff, citation-stripped arm has never been run (<Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>details</Link>). Kept in a separate cell because the data-driven refutations above do not depend on it.{' '}
+              <span>Audited claims surviving: <strong style={{ color: 'var(--color-text-secondary)' }}>0 of 9</strong> — the 6 demoted claims (only 2 confirmed to have carried a &ldquo;Validated&rdquo; badge; 5 now reparametrizations; the BTFR slope moved to the refutation column 2026-07-14) plus 3 swept later (<Link href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>Research Outputs</Link>). <strong>Who audited:</strong> LLM agents (the archive&apos;s AI research sessions and this site&apos;s AI tracks), not an outside domain expert &mdash; so this line is <em>instrument-uncalibrated</em>. The one calibration attempt (2026-05-22) was an in-distribution arm self-scored by one model that knew every answer, and it false-flagged 6/6 genuine discoveries under the literal rule; the out-of-distribution, post-cutoff, citation-stripped arm has never been run (<Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>details</Link>). Kept in a separate cell because the data-driven refutations above do not depend on it.{' '}
                 <strong>So this count is not evidence against the claims.</strong> On the same scored items the audit gives
                 J = 0 under the literal rule (it flags everything) and J = 1 under the steelmanned one, where the scorer&apos;s own
                 novelty judgment, the step being calibrated, does all the discriminating. Under the first rule the audit has no

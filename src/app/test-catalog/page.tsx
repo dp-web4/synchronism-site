@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import ValidationBadge from '@/components/ValidationBadge';
 import { Fragment } from 'react';
 import { BADGES, OPERATIONAL_STATES, LIFECYCLE_VERBS } from '@/lib/statusLabels';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -419,6 +420,38 @@ export default function TestCatalog() {
             the surviving 1/&lang;C&rang; holds by construction, so reparametrization) &middot; B5 f(N) reconstruction rate (not yet derived) &middot; B6 non-monogamous entanglement (gated on B1,
             which failed) &middot; B7 vacuum Umklapp (Planck-suppressed).</li>
         </ul>
+      </section>
+
+      <section id="unregistered-distinct" style={{ marginTop: '2rem', scrollMarginTop: '5rem' }}>
+        <h2>Distinct predictions with no test ID</h2>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          Two external-field predictions differ from MOND and appear on{' '}
+          <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>Relation to MOND</Link>, but neither has a
+          test ID. Listed here (added 2026-10-21, at a researcher simulated-visitor persona&apos;s request) so they are not
+          described as tested elsewhere. <ValidationBadge status="untested" />
+        </p>
+        <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <li><strong>Refraction of an external field.</strong> If the density-keyed law is solved as a field equation,
+            &nabla;&middot;[C(&rho;)&nabla;&Phi;] = 4&pi;G&rho;, an external field bends wherever C varies across a system, as a field does in a
+            dielectric. MOND&apos;s external-field effect has a different form. Rough sizes on file: about 0.3&ndash;0.37 g<sub>ext</sub> beyond
+            the knee in a halo globular cluster. In a disc it depends on the form of C: negligible for the floored form (C &asymp; &Omega;<sub>m</sub>
+            below the knee, so &nabla;C &asymp; 0), but of order R/h for the unfloored form, because there &nabla;ln&nbsp;C = &nabla;ln&nbsp;&rho;
+            however small C is. <em>Not computed for satellites; not confronted with data.</em></li>
+          <li><strong>Ambient density at fixed external acceleration.</strong> Two satellites at the same g<sub>ext</sub> but in hosts with
+            different gas density would differ here and not under MOND. TEST-05 did <em>not</em> run this: it used Mpc-scale
+            Cosmicflows-4 density and controlled for neither g<sub>ext</sub> nor the gas density at the satellite. A structural estimate
+            (research archive, 2026-08-21) caps the lever: a satellite that survives its host&apos;s tides has ambient-to-internal density
+            ratio at most about 0.1&ndash;0.2, and the framework&apos;s own baseline offset correlates with local density at r&nbsp;=&nbsp;&minus;0.36,
+            giving signal/systematics &asymp; 4&times;10<sup>&minus;3</sup>. That does not average down with sample size. <em>Not run; estimated
+            to be systematics-limited.</em></li>
+        </ul>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <strong>Why neither can move the confirmed count.</strong> Both are predictions of the density-keyed branch, which is
+          already excluded twice: on SPARC (&Delta;BIC +2843 against the acceleration-keyed law, surviving galaxy-level scoring) and by
+          lunar laser ranging (68 of 74 laws). A positive result would contradict those exclusions rather than confirm the branch; a
+          null would add a further root to an existing refutation. The acceleration-keyed branch the galaxy fits use has MOND&apos;s
+          own external-field effect, so it has nothing distinct here.
+        </p>
       </section>
 
       <RelatedConcepts currentPath="/test-catalog" />

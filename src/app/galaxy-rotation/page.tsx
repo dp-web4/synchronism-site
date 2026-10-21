@@ -150,10 +150,10 @@ export default function GalaxyRotation() {
               {' '}<a href="https://www.sdss.org/dr17/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>[SDSS DR17]</a>
             </p>
             <ul style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <li>Environment-dependent RAR scatter detected at p = 5 &times; 10<sup>&minus;6</sup>, R&sup2; = 0.14 &mdash; <strong>but this statistic is SPARC-scale (N &asymp; 130&ndash;175), not a valid measurement of this 14,585-galaxy sample</strong> (see correction below). The registered TEST-03 environment-density test on this sample was never run.</li>
+              <li>No environment result exists for this sample: the registered TEST-03 environment-density test on it was never run. The p&nbsp;=&nbsp;5&nbsp;&times;&nbsp;10<sup>&minus;6</sup>, R&sup2;&nbsp;=&nbsp;0.14 figure this bullet used to show is a different measurement on a different sample (SPARC, N&nbsp;&asymp;&nbsp;130&ndash;175) of a different predictor: <strong>Hubble type</strong>, not environment (see the Honest Caveat below).</li>
               <li>&#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>equal to the source session&apos;s own CDM figure</strong>, not to published &Lambda;CDM predictions (Desmond 2017 abundance matching gives ~0.25 dex; verdict suspended 2026-10-09; z&nbsp;=&nbsp;+0.5 in the source session&apos;s definitive run), not below CDM. An earlier &minus;6.2&sigma; &ldquo;below CDM&rdquo; reading from an intermediate session was retracted in-archive as premature once distance-noise modeling was added; the verdict is also modeling-choice-dependent (z ranges +0.5 to +64). See{' '}
                 <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link> for the full history.</li>
-              <li>Cluster vs. field galaxies show different scatter &mdash; the effect is real but sub-threshold, not a confirmed prediction</li>
+              <li>Cluster vs. field scatter: no executed comparison on this sample. (This bullet said &ldquo;cluster vs. field galaxies show different scatter &mdash; the effect is real but sub-threshold&rdquo; until 2026-10-21; no run behind it was found.)</li>
             </ul>
           </div>
         </div>
@@ -165,8 +165,8 @@ export default function GalaxyRotation() {
             from McGaugh, Lelli &amp; Schombert (2016) &mdash; already in the literature for a decade
             and widely used to fit SPARC. <strong>Synchronism&apos;s specific contribution is not the
             function itself, but the environmental scatter ansatz on top of it</strong> (the claim
-            that σ<sub>int</sub> depends on local density). All fit-quality claims refer to that
-            ansatz and to the McGaugh-2016 baseline together.
+            that σ<sub>int</sub> depends on local density). That ansatz was tested on SPARC with an external density catalogue and
+            killed (r&sup2;&nbsp;=&nbsp;0.0001, N&nbsp;=&nbsp;141; see the Honest Caveat below). What remains is the McGaugh-2016 function.
           </p>
         </div>
         <EquationDisplay size="md" label="RAR interpolating function (McGaugh et al. 2016)">
@@ -196,12 +196,12 @@ export default function GalaxyRotation() {
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#ef4444' }}>5 &times; 10<sup>&minus;6</sup></div>
+            <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#ef4444' }}>r&sup2; = 0.0001</div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              p-value for environment effect
+              environment effect on RAR scatter (null; kill fired)
             </div>
             <div style={{ fontSize: '0.75rem', color: '#f59e0b', marginTop: '0.25rem' }}>
-              R² = 0.14 belongs to SPARC (N≈171), not this sample — see correction
+              SPARC &times; Cosmicflows-4, N&nbsp;=&nbsp;141, p&nbsp;=&nbsp;0.89 (TEST-03s). This tile showed &ldquo;5&nbsp;&times;&nbsp;10<sup>&minus;6</sup>: p-value for environment effect&rdquo; until 2026-10-21; that p belongs to Hubble type, not environment
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
@@ -240,19 +240,24 @@ export default function GalaxyRotation() {
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: 0 }}>
             The galaxy rotation fit results on this page are independent of the CFD interpretation and stand
-            as-is (reparametrization of MOND with an environmental scatter term).
+            as-is: a reparametrization of MOND. The environmental scatter term proposed on top of it was killed on SPARC (Honest Caveat below).
           </p>
         </div>
 
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          The environment-dependent scatter is real and statistically significant (p = 5&times;10<sup>&minus;6</sup>),
-          but the R&sup2; = 0.14 / p = 5&times;10<sup>&minus;6</sup> pair is only mutually consistent at SPARC scale
-          (N &asymp; 130&ndash;175) — see correction below. Furthermore, standard MOND plus mass-to-light ratio
-          corrections already explains essentially all of the RAR variance. Synchronism adds at most a
-          small, detectable effect on top of what MOND already provides &mdash; it does not replace
-          MOND&apos;s success, and MOND&apos;s own External Field Effect predicts the same qualitative
-          environment dependence (Chae et al. 2020/2021), so the effect does not discriminate the two.
+          <strong>Is there an environment effect in the RAR scatter? On the one run that measured environment, no.</strong>{' '}
+          SPARC galaxies placed in the Cosmicflows-4 density field give r&sup2;&nbsp;=&nbsp;0.0001 (N&nbsp;=&nbsp;141, p&nbsp;=&nbsp;0.89),
+          against a registered prediction of more than 20% of the scatter, so the kill fired. The p&nbsp;=&nbsp;5&times;10<sup>&minus;6</sup>,
+          R&sup2;&nbsp;=&nbsp;0.14 result that this paragraph called &ldquo;real and statistically significant&rdquo; environment dependence until
+          2026-10-21 measures something else: <strong>RAR scatter against Hubble type</strong> on SPARC (Sessions 376&ndash;378). Session 381
+          then tested whether type stands in for environment. It does not: within each morphological type an isolation proxy predicts
+          nothing (r&nbsp;=&nbsp;+0.003, p&nbsp;=&nbsp;0.97), and rotation-curve roughness accounts for the type signal (type becomes
+          non-significant once roughness is controlled, p&nbsp;=&nbsp;0.61). So the significant number is a real morphology effect with a
+          structural cause (late types have rougher curves), and it carries no environment content. Standard MOND plus
+          mass-to-light corrections already explains essentially all of the RAR variance. MOND&apos;s External Field Effect predicts an
+          environment dependence of its own; Chae et al. (2020/2021) report it at ~4&sigma;, but Paranjape &amp; Sheth (2022) and
+          Freundlich et al. (2022) show that ΛCDM produces similar correlations, so that detection is not yet a clean MOND signature.
         </p>
         <div className="card" style={{ borderLeft: '3px solid #f59e0b', marginBottom: '1rem', padding: '0.75rem 1rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem 0' }}>
@@ -271,8 +276,8 @@ export default function GalaxyRotation() {
           </p>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-          <strong>ΔBIC note:</strong> The incremental value of the environmental scatter term above
-          baseline MOND has not been quantified via ΔBIC on the ALFALFA-SDSS dataset. A separate
+          <strong>ΔBIC note:</strong> No ΔBIC for the environmental scatter term has been computed on the ALFALFA-SDSS dataset;
+          on SPARC the term has no signal to score (r&sup2;&nbsp;=&nbsp;0.0001). A separate
           ΔBIC analysis was run for the RAR transition-shape question (see below) — which is the
           more fundamental discriminating question.
         </p>

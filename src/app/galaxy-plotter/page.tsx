@@ -199,6 +199,7 @@ export default function GalaxyPlotter() {
           <li><strong>The dots</strong> are what telescopes measure: stars keep orbiting fast far from the centre.</li>
           <li><strong>The dashed gray line</strong> is what the visible matter alone would give. It sags below the dots. That gap is the dark-matter puzzle.</li>
           <li><strong>Green</strong> (MOND, an existing theory) follows the dots. <strong>Solid violet</strong> (this framework&apos;s equation as written) does not: it is the gray line scaled up, still falling where the dots stay flat.</li>
+          <li><strong>&ldquo;But First Encounter says the fitted &gamma; &asymp; 0.5 reproduces MOND?&rdquo;</strong> It does, and that is not a win. The fit that gives &gamma; &asymp; 0.5 feeds the equation acceleration, which is MOND&apos;s own input, instead of the density the framework names; with that swap the equation becomes MOND&apos;s formula and you get the green line back. That is why the site calls it a reparametrization. The violet line is the equation as written, keyed on density, and it fails.</li>
         </ul>
         <p style={{ margin: '0.4rem 0 0' }}>
           That is the whole lesson. You can ignore the other lines (an old hand-drawn stand-in and a second violet variant) and
@@ -216,7 +217,7 @@ export default function GalaxyPlotter() {
           instead of narrating it: the solid violet curve is the density-keyed C<sub>&#x03C1;</sub> evaluated on a disk
           density profile and wired by <em>division</em>, the way the ledger&apos;s tests wire their C (g = g<sub>bar</sub>/C, with C floored at
           &Omega;<sub>m</sub>; TEST-09/TEST-10 themselves divide by a different, acceleration-keyed C<sub>a</sub> &mdash; see the
-          two-C&apos;s box by the chart). C never gets anywhere near its knee, so the curve is a flat 3.17&times; boost of the
+          two-C&apos;s box by the chart). C never gets anywhere near its knee, so the curve is a flat 3.17&times; boost in gravity (1.78&times; in speed) of the
           baryon line: wrong shape, Newtonian decline at the edge. The light-violet dashed curve is the same C added
           in quadrature, which hugs the baryon line (until 2026-10-08 that inert wiring was the only one drawn; a
           graduate-physics visitor pointed out it shows the milder of two opposite failures). The old hand-tuned
@@ -638,7 +639,7 @@ export default function GalaxyPlotter() {
                 dark-matter puzzle. The <strong style={{ color: '#22c55e' }}>green dashed line</strong> (MOND) closes it with no per-galaxy tuning.</li>
               <li>The <strong style={{ color: '#8b5cf6' }}>solid violet line</strong> is Synchronism&apos;s density equation wired the way its
                 tests wire it (gravity divided by C). The disk is far too thin to reach the equation&apos;s switch, so C sits on its floor and
-                the boost is the same 3.17&times; at every radius: the curve is the gray line scaled up. It overshoots the inner points and
+                the boost in gravity is the same 3.17&times; at every radius, so in speed the curve is the gray line scaled up by &radic;3.17 &asymp; 1.78&times;. It overshoots the inner points and
                 still falls at the edge, where the dots stay flat &mdash; that is the failure. The <strong style={{ color: '#c4b5fd' }}>light violet
                 dashed line</strong> is the same C wired the other way (added on top), which does nothing at all. The two wirings fail in
                 opposite directions; without the floor, the division wiring would run up to {maxRawRatio.toFixed(0)}&times; above the gray line, far off the chart.</li>
@@ -711,7 +712,7 @@ export default function GalaxyPlotter() {
             <circle cx={pad.left + 20} cy={pad.top + 15} r="4" fill="#38bdf8" />
             <text x={pad.left + 30} y={pad.top + 19} fill="#38bdf8" fontSize="10">Observed (what telescopes measure)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 30} x2={pad.left + 20 + 8} y2={pad.top + 30} stroke="#8b5cf6" strokeWidth="2.5" />
-            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">This framework&apos;s equation, the tested reading (failed): Newton&apos;s shape scaled up {(1/0.315).toFixed(2)}&times;</text>
+            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">This framework&apos;s equation, the tested reading (failed): Newton&apos;s shape &times;{Math.sqrt(1/0.315).toFixed(2)} in speed (= &radic;{(1/0.315).toFixed(2)}, the boost in gravity)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#c4b5fd" strokeWidth="1.5" strokeDasharray="3 3" />
             <text x={pad.left + 30} y={pad.top + 49} fill="#c4b5fd" fontSize="10">Same equation, an untested display reading: no visible effect here</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />

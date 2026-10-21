@@ -149,7 +149,7 @@ export default function DarkEnergy() {
           Arithmetic provenance: the archive&apos;s published w(z) table was wrong twice &mdash; a sign error in
           the continuity relation and a dropped &minus;1 term (its formula returns w&nbsp;=&nbsp;&minus;2 for
           ordinary matter, where the correct answer is 0). Corrected 2026-08-10; dated errata are in the research
-          repo (Sessions 100/101). The corrected w(0) at &gamma;&nbsp;=&nbsp;2 is &minus;1.24, not the
+          repo (Sessions 100/101). The corrected w(0) at &gamma;&nbsp;=&nbsp;2 is &minus;1.26 at the site-standard &Omega;<sub>m</sub>&nbsp;=&nbsp;0.315 (&minus;1.24 at &Omega;<sub>m</sub>&nbsp;=&nbsp;0.30, the value this sentence quoted until 2026-10-21 without naming its &Omega;<sub>m</sub>), not the
           &ldquo;&gt;&nbsp;0&rdquo; the archive reported &mdash; eight months of downstream reasoning had followed
           the uncorrected branch.
         </p>

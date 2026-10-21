@@ -713,8 +713,10 @@ export default function KeyClaims() {
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
               <strong>Corrected 2026-07-09:</strong> this box previously cited &ldquo;Session #616 found R&sup2; = 0.14&rdquo;
               as the environment-scatter refutation. Session 616 is the unrelated η/superconductivity audit and never
-              measured RAR scatter; the R&sup2; = 0.14 figure belongs to a different, SPARC-scale test (TEST-05) which
-              in fact met its own registered criterion — see{' '}
+              measured RAR scatter; the R&sup2; = 0.14 figure is a SPARC-scale Hubble-type (morphology) effect, not an environment measurement.
+              TEST-05&apos;s kill text reads &ldquo;independent of Hubble type / environment&rdquo;, so the type result rejects its type
+              leg; the environment leg is null (r&sup2;&nbsp;=&nbsp;0.0001), and only the environment leg is a framework prediction. (Until
+              2026-10-21 this sentence said TEST-05 &ldquo;in fact met its own registered criterion&rdquo;, without the split.) See{' '}
               <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: TEST-05</Link>.
               It also previously cited a CFD-viscosity sign error (dark matter predicted &ldquo;stickier&rdquo; than
               baryons, contradicted by the Bullet Cluster) as evidence against this claim&apos;s headline. That

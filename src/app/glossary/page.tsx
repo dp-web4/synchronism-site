@@ -6,6 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import { getAllTerms } from '@/lib/terms';
+import LabelMap from '@/components/LabelMap';
 
 function glossarySlug(t: string): string {
   return t.replace(/Δ/g, 'delta ').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -56,7 +57,17 @@ export default function Glossary() {
           canonical reference in Honest Assessment
         </Link>.
         Deprecated badges (Validated, Strongly Supported) are kept for back-compat but no longer used in new content.
+        All eight label systems are mapped side by side in the table below.
       </p>
+
+      <div style={{ marginBottom: '1.5rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+        <strong>New here? Start with these ten:</strong>{' '}
+        {['Coherence', 'Presence (\u03C1)', '\u03B3', 'tanh', 'MOND', 'Dark matter', 'Reparametrization', 'Refutation (executed)', '\u03c3 (statistical)', 'MRH'].map((t, i) => (
+          <span key={t}>{i > 0 && ' \u00b7 '}<a href={`#${encodeURIComponent(t)}`} style={{ color: 'var(--color-accent-blue)' }}>{t}</a></span>
+        ))}
+      </div>
+
+      <LabelMap />
 
       <div style={{ marginBottom: '1.5rem' }}>
         <input

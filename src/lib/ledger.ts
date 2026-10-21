@@ -152,7 +152,7 @@ export const REFUTATION_ROWS: RefutationRow[] = [
     n: 5,
     what: 'Cassini/SPARC squeeze: no γ fits galaxies and the Solar System together (published, marginalized: 8.7σ, Desmond, Hees & Famaey 2024; in-house at fixed Υ: +17.95σ)',
     ids: 'TEST-25',
-    root: 'Inherited from MOND (McGaugh\'s own RAR function fails the same instrument by +15.9 to +20.9σ)',
+    root: 'Inherited from MOND\'s slowly-transitioning interpolating functions under a modified-Poisson completion (Desmond, Hees & Famaey 2024; McGaugh\'s own RAR function fails the same instrument by +15.9 to +20.9σ). Not a refutation of MOND as a whole.',
     whichC: 'C_g, keyed on observed acceleration',
     data: 'Cassini quadrupole bound + SPARC',
     convention: 'None.',

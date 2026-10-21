@@ -1,0 +1,39 @@
+Starting Synchronism Maintainer Session at Wed Oct 21 06:00:01 PDT 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+Today's maintainer session is done and both repos are pushed (site `7290ea6`, research `c5364f9`). The build passes (93/93 pages), the lint passes with 224 rules, and no anchor links are broken.
+
+**WAKE: what the feedback says about the research, not just the site**
+- **The "distinct" predictions are on a branch that is already excluded.** /mond-unification listed two predictions that differ from MOND: refraction of an external field, and gas density around a satellite at fixed external field. TEST-05 tested neither. Both belong to the density-keyed branch, which SPARC (+2843) and lunar laser ranging already rule out. So no galaxy-scale prediction that differs from MOND remains on a live branch. The proposal recommends the project lead adopt that as the galaxy-sector form of the "nothing distinct survives" sentence.
+- **A registration defect let a morphology result pass as support.** The p = 5×10⁻⁶ "environment effect" on /galaxy-rotation and /rar-scatter is Hubble type versus RAR scatter (Sessions 376–378). Session 381 had already shown it has no environment content. It was treated as support because TEST-05's kill text reads "independent of Hubble type / environment", and the framework only predicts the environment part. A correction in July fixed the sample but kept the wrong label.
+
+**Site fixes**
+- **Yesterday's explorer actions are cleared:**
+  - the A2ACW model-role facts are corrected;
+  - a new paragraph says verdicts depend on which models argue (Claude-vs-Claude agreed with LV's cross-vendor verdicts only 41–52% of the time);
+  - "6 former Validated badges" now reads "6 demoted claims (only 2 confirmed Validated)" on 7 surfaces.
+- **Environment claim:** rewritten on 4 pages to lead with the actual result (r² = 0.0001, no effect). The Chae citation now carries the Paranjape & Sheth caveat.
+- **The two predictions:** /test-catalog has a new "Distinct predictions with no test ID" section marked Untested, explaining why neither can change the confirmed count.
+- **Galaxy Plotter:** the legend now says ×1.78 in speed (3.17 is the boost in gravity). A new line explains why "the fitted γ ≈ 0.5 reproduces MOND" and "the violet line loses" are both true. The hub card is rewritten for beginners.
+- **Label map:** one table on /glossary covering all eight label systems, generated from `statusLabels.ts` so it can't drift.
+- **Smaller fixes:**
+  - "1,703 phenomena" found on 7 more pages, including Beginner path step 2;
+  - a "not quantum coherence" card;
+  - a box listing what the relativistic sector lacks;
+  - the circular RMS statistic dropped from /consciousness-demo;
+  - w(0) now −1.26 at Ω_m = 0.315 (the archive's −1.24 is right for its Ω_m = 0.30);
+  - the "Phase Transitions" page retitled.
+
+**Lint:** rule 225 initially missed one hit. The bare word "corrected" in the exemption list hid a line because an unrelated older correction sat nearby. I added a `strict` flag for such rules. Narrowing the exemption list itself is still open. Tested against the previous commit, the new rules flag 25 old passages; against today's files, none.
+
+**My own errors**
+- Yesterday's "13 verdicts (5/4/4)" tally for LV's runs was recalled, not counted. The logs give 27 (10/8/9), and it's now corrected in the archive.
+- This session, I chained an `rm` with other commands, which the safety law denies. I used a fresh /tmp directory instead and did not appeal, since the denial was correct.
+
+**Explorer topics seeded**
+- How big the refraction effect is for satellites. Refracted Gravity is a live published theory that has the same term, so this may be the one place the site's tools can test someone else's theory.
+- A cheap audit of the test registry for kill criteria that name a variable the framework doesn't predict.
+
+There were no new external issues or PRs to review.
+
+**Deferred:** a `<RevisionNotes>` component (today's fixes added more inline "until 2026-10-21" notes, which the tech-writer persona flagged as clutter), redirects so old URLs match current page titles, a shorter footer, and the low-severity numeric items. All are listed in `maintainer/logs/2026-10-21.md`.

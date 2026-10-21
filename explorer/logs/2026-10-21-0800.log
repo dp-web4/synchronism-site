@@ -1,0 +1,30 @@
+Starting Synchronism Explorer Session at Wed Oct 21 08:00:01 PDT 2026
+I worked the maintainer's topic on how large Refracted Gravity's (RG's) refraction external-field effect (EFE) is for dwarf satellites. I changed the order: I first checked whether RG's own gravity survives dwarf spheroidals at all, because the EFE size only matters if it does. Nobody had checked.
+
+**1. RG has a hard ceiling, and the dwarfs exceed it.** RG's field equation is linear, with a permittivity ε between ε₀ and 1. For a spherical system, Gauss's law makes the boost over Newtonian gravity exactly 1/ε(r), so it can never exceed 1/ε₀. Where ε is uniform, as in a dwarf whose density is entirely below the knee, the boost equals 1/ε₀ whatever the shape. That rules out RG's own explanation that dwarfs look dark because they are flatter: flattening only helps where ε varies. The Jeans fits used 10 classical dwarfs plus 5 ultra-faints, a range of stellar mass-to-light ratios, and both readings of RG's permittivity equation.
+- **Disc calibration** (ε₀ = 0.56 or 0.661): all 15 dwarfs sit above RG's prediction by at least 3σ. That includes Leo I at 9–15σ, a dwarf that RG's own equations keep in equilibrium. This is an exclusion.
+- **Elliptical calibration** (ε₀ = 0.089): 10–15 of the 15 fail.
+- **No universal ε₀ fits.** The classical dwarfs each allow ε₀ between 0.002 and 0.2. Together with discs (~0.6), ellipticals (0.089) and clusters (0.045), ε₀ tracks the type of system, though RG says it should be universal.
+- **Prior art:** RG's 2024 review lists dwarf spheroidals as future work, and I found no published RG test on them.
+
+**2. The refraction EFE is order unity, not negligible.** I pre-registered that it would be "identically zero below the knee", and that was refuted. Its size is (Δε/ε across the dwarf) × (external field / internal field). The second factor is 10²–3×10³ for low-density satellites, so even a 7% gradient in ε matters. Under the elliptical calibration it exceeds the dwarf's own gravity in 10 of 15 systems, and in 8 of 15 under the disc calibration. The solver was checked against the analytic dielectric sphere (0.254 against 0.250).
+- **What it does:** the response is one-sided (dipolar), so it doesn't change the velocity dispersion at first order. Instead it pushes the dwarf lopsided along the direction to its host galaxy. Newtonian tides stretch symmetrically, so this is a distinct and testable RG prediction that nobody has run.
+- **Where it leaves the elliptical calibration:** dwarfs RG keeps in equilibrium show 2–4σ tension. For the rest, RG's own field breaks the equilibrium the Jeans test assumes, so for them the lopsidedness is the test.
+
+**Caveats.** The 5 ultra-faint rows use values from memory, not retrieved this session, and are good to order of magnitude only. The Milky Way's external field is a flat-rotation-curve approximation. None of this changes the framework's count ("6", Bucket 0 = 0). It is a result about someone else's published theory.
+
+**Suggested site change:** stop calling the refraction EFE "untested, maybe negligible". Scope "RG is live" to "at globular-cluster densities, not dwarf-spheroidal densities". It is also a candidate for the citable negative-results index. Contacting the RG authors is the project lead's call.
+
+The pre-registration (`71c6253`) and the session commit (`a232210`) are pushed. The disjunctive-criteria topic is still in the queue, and I saved a memory note on the refuted prediction.
+
+Files are in `explorer/`:
+- `findings/refracted-gravity-vs-dwarf-spheroidals-the-ceiling-fails-and-the-refraction-efe-is-order-unity.md`
+- `scripts/rg_spherical_ceiling_dsph.py`, `scripts/rg_dsph_eps0_max_and_refraction_efe.py` (with outputs) and `scripts/refraction_solver_check.py`
+- `logs/2026-10-21.md`
+
+Sources:
+- [Cesare 2024 RG review, arXiv:2404.06538](https://arxiv.org/html/2404.06538)
+- [RG with galaxy cluster kinematics, arXiv:2410.19698](https://arxiv.org/abs/2410.19698)
+- [RG E0 ellipticals, arXiv:2102.12499](https://arxiv.org/abs/2102.12499)
+- [RG DiskMass galaxies, A&A 2020](https://www.aanda.org/articles/aa/full_html/2020/05/aa35950-19/aa35950-19.html)
+- [Matsakos & Diaferio 2016, arXiv:1603.04943](https://arxiv.org/pdf/1603.04943)

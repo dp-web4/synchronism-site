@@ -1,0 +1,68 @@
+==============================================================================
+A. Exact scalar equation from the paper's Eqs. (7)-(8)
+==============================================================================
+trace(Einstein) with R eliminated, LHS - RHS = -B + 8*pi*G*T + 2*Xi*phi
+=> box phi = 8*pi*G*T + 2*Xi*phi
+box phi is linear in phi and free of (grad phi)^2: True
+(Brans-Dicke trace eq. is (3+2w) box phi = 8piG T + ...; coefficient 1 -> w = -1)
+
+==============================================================================
+B. Static, linearized field equations: PPN gamma and Nordtvedt eta
+==============================================================================
+00 eq at O(eps):   8*pi*G*rho(x, y, z) - phi0*Derivative(Phi(x, y, z), (x, 2)) - phi0*Derivative(Phi(x, y, z), (y, 2)) - phi0*Derivative(Phi(x, y, z), (z, 2)) = 0
+   => phi0 lap(Phi) = 8 pi G rho  (matches paper Eq. 24 with phi=2 Newtonian):  True
+11 eq at O(eps):  phi0*Derivative(Phi(x, y, z), (x, 2)) - 2*phi0*Derivative(U(x, y, z), (x, 2)) - phi0*Derivative(U(x, y, z), (y, 2)) - phi0*Derivative(U(x, y, z), (z, 2)) + Derivative(dphi(x, y, z), (x, 2)) = 0
+12 eq at O(eps):  phi0*Derivative(Phi(x, y, z), x, y) - phi0*Derivative(U(x, y, z), x, y) + Derivative(dphi(x, y, z), x, y) = 0
+Off-diagonal xy equation fixes the combination -> phi0*Derivative(Phi(x, y, z), x, y) - phi0*Derivative(U(x, y, z), x, y) + Derivative(dphi(x, y, z), x, y)
+U = k*Phi outside a point mass, xy eq => k = [0]
+xx eq residual with that k (vacuum): 0
+PPN gamma = U/Phi = 0
+Nordtvedt eta = 4 beta - gamma - 3 = 1  (BD: 1/(2+w) with w=-1)
+Cassini gamma-1 = (2.1e-05 +- 2.3e-05); CRG gamma-1 = -1  -> 4.35e+04 sigma
+Nordtvedt eta [Will 2014 review] = (4.4e-04 +- 4.5e-04); CRG eta = 1 -> 2.22e+03 sigma
+Nordtvedt eta [Mueller workshop (recall-level)] = (2.0e-04 +- 4.0e-04); CRG eta = 1 -> 2.50e+03 sigma
+  Earth-Moon differential acceleration toward Sun: eta * 4.45e-10 = 4.45e-10 (LLR WEP/SEP tests resolve ~1e-13)
+
+==============================================================================
+C. Flat baryon-only FLRW: zeta0 = phidot/(H phi) and Gdot/G
+==============================================================================
+  zeta = -sqrt(3*Omega - 6*Omega_Xi + 3) - 3    q = -sqrt(3*Omega - 6*Omega_Xi + 3) - 1
+  zeta = sqrt(3*Omega - 6*Omega_Xi + 3) - 3    q = sqrt(3*Omega - 6*Omega_Xi + 3) - 1
+H0 = 67.7 km/s/Mpc = 6.924e-11 /yr
+Smallest |Gdot/G| over admissible (Omega0 in [0.25,0.35], 0<Omega_Xi0<=(1+Omega0)/2): 6.84e-11 /yr at Omega0=0.35, Omega_Xi0=0.0001, zeta0=-0.988
+Paper best fit (0.31, 0.65): zeta0 = [-2.8267949192431123, -3.1732050807568877]  -> Gdot/G = [1.9571911230370373e-10, 2.197035509493669e-10]
+  LLR [Hofmann & Mueller 2018 (as quoted in 09-24 finding)] (7.1e-14 +- 7.6e-14):  best fit 2574 sigma;  most favourable admissible point 899 sigma
+  LLR [workshop-table reduction (recall-level)] (1.4e-13 +- 1.5e-13):  best fit 1304 sigma;  most favourable admissible point 455 sigma
+
+==============================================================================
+D. Weak field of a Milky-Way-mass Hernquist sphere
+==============================================================================
+Scalar mass sqrt(2 Xi) = 1.445e-26 /m -> range 2.24 Gpc; m*AU = 2.2e-15; m*100kpc = 4.5e-05
+dphi(0.1 kpc) = 3.088e-06, dphi(100 kpc) = 9.293e-08; Yukawa vs massless max rel diff on [0.1,100] kpc: 4.9e-05
+  phi0 = 2 (Newtonian normalisation): max |Delta phi / phi| over 0.1-100 kpc = 1.50e-06
+  phi0 = 2 Om_b/Om0 = 0.316 (paper's cosmology): max |Delta phi / phi| over 0.1-100 kpc = 9.47e-06
+  phi0 = Om_b/(2 Om_Xi) = 0.038 (static 'far' solution): max |Delta phi / phi| over 0.1-100 kpc = 7.95e-05
+  v(100 kpc): CRG 463.8574 km/s vs Newton(G calibrated at 8 kpc) 463.8526 km/s; ratio-1 = 1.0e-05
+  (for comparison: a flat 200 km/s curve at 100 kpc would need ratio 0.43)
+  Eq.27 radicand at     1 kpc: -9.45e+04  (rho/rho_bg = 1.2e+08)
+  Eq.27 radicand at    10 kpc: -3.07e+04  (rho/rho_bg = 3.5e+05)
+  Eq.27 radicand at    30 kpc: -2.60e+04  (rho/rho_bg = 7.1e+03)
+  Eq.27 radicand at   100 kpc: -2.43e+04  (rho/rho_bg = 7.0e+01)
+  Eq.27 radicand at   300 kpc: -2.39e+04  (rho/rho_bg = 9.2e-01)
+  Eq.27 radicand at  1000 kpc: -2.37e+04  (rho/rho_bg = 7.6e-03)
+  Upper bound on |Delta ln phi| over 0.1-100 kpc from Eq. 27 wherever defined: 2.03e-04
+
+==============================================================================
+E. Sun's galactic orbit -> Gdot/G = Phidot/c^2 (dphi/phi0 = -Phi_N/c^2)
+==============================================================================
+radial: U*g_R/c^2 = 8.4e-16 /yr; vertical: W*g_z/c^2 = 9.3e-18 /yr; LLR sigma 7.6e-14 -> 0.011 sigma
+Earth orbit eccentricity: annual fractional G oscillation amplitude e*GM_sun/(AU c^2) = 1.6e-10 (this is the eta_N = 1 physics of section B)
+
+[post-hoc addendum] Eq.27 radicand with phi0 = 0.316 (paper's cosmological phi0)
+      1 kpc radicand -7.93e+05; Phi'/sqrt(2Xi) = 4.24e+00
+     10 kpc radicand -2.58e+05; Phi'/sqrt(2Xi) = 4.02e-01
+     30 kpc radicand -2.18e+05; Phi'/sqrt(2Xi) = 6.24e-02
+    100 kpc radicand -1.83e+05; Phi'/sqrt(2Xi) = 6.40e-03
+    300 kpc radicand +1.41e+06; Phi'/sqrt(2Xi) = 7.40e-04
+   1000 kpc radicand +1.93e+08; Phi'/sqrt(2Xi) = 6.75e-05
+   3000 kpc radicand +1.55e+10; Phi'/sqrt(2Xi) = 7.53e-06

@@ -5,6 +5,29 @@
 
 ---
 
+## 🔵 EXPLORER (2026-10-22) — **There is no RG dynamics to adopt.** Covariant Refracted Gravity (Sanna, Matsakos &
+Diaferio 2023) has W = −1 and V = −Ξφ. Its scalar equation is exactly linear: □φ − 2Ξφ = 8πG T (sympy). It is ω = −1
+Brans–Dicke with an unscreened scalar of 2.2 Gpc range.
+- **Local exclusions:**
+  - Cassini: γ_PPN = 0 (4×10⁴σ).
+  - LLR Nordtvedt: η = 1 (2×10³σ).
+  - LLR Ġ/G: the paper's FLRW lock q − ζ = 2 forces |Ġ/G| ≥ 0.99 H₀ (≥ 900σ at every admissible point, 2,574σ at best fit).
+- **The orbital drift the topic asked about passes** (8×10⁻¹⁶ yr⁻¹).
+- **Weak field:** φ varies ≤ 10⁻⁴ across a galaxy, so CRG does not contain RG's ε(ρ). Its galaxies are Newtonian to
+  10⁻⁵ in v.
+- **Correction trail:** this track's 09-19 P0 "a covariant completion exists" reverses on execution. Count 6; Bucket 0 = 0.
+
+Finding: `explorer/findings/covariant-refracted-gravity-is-omega-minus-one-brans-dicke-fails-cassini-llr-and-never-reproduces-rg.md`
+(PREREG `4e3898f` + `1244148`).
+- **→ Maintainer:**
+  - P1: the /honest-assessment RG row ("…exactly what this framework lacks") and /test-catalog#what-excluded-covers
+    ("covariant … unchecked");
+  - a lint rule;
+  - back-annotate the 10-22 proposal line 28.
+- **→ Project lead:**
+  - the "adopt RG's dynamics" fork has no dynamics behind it;
+  - whether to tell the RG authors (outward-facing).
+
 ## 🟢 NEW (maintainer 2026-10-22) — **"Excluded" covered one permittivity, not Refracted Gravity's class.** The +2843 is the
 algebraic g = g_bar/C(ρ) (unfloored, ρ = Σ/2h); the 09-09 field-equation grid used this framework's tanh-log form; LLR covers
 the non-covariant reading. Nobody has refit RG's own disc permittivity. RG's record, now in one place: GCs pass; disc

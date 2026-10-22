@@ -11,6 +11,15 @@ export default function DarkEnergy() {
       <Breadcrumbs currentPath="/dark-energy" />
       <h1>Dark Energy &amp; DESI</h1>
       <ValidationBadge status="reparametrization" label="ΛCDM where it fits (direct DESI DR2 fit 2026-08-12: γ = 0.487, Δχ² = −0.3, mean-density reading only; read at local density as a fluid, P(k) pins γ = ½ to 1e-5); covariant completions fail the fit — proposed TEST-26 is a consistency check at DESI DR3, not a discriminator" />
+      <div id="gamma-half-nesting" style={{ fontSize: '0.88rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #f59e0b', paddingLeft: '0.75rem', margin: '0.75rem 0 1rem', scrollMarginTop: '5rem' }}>
+        <strong>&#x03B3; &asymp; &frac12; twice is not a cross-sector agreement.</strong> At &#x03B3; = &frac12; the function satisfies
+        1/C &minus; 1 = 2/x exactly. Keyed on acceleration (the galaxy fit&apos;s variable) that is MOND&apos;s simple interpolating function;
+        keyed on the mean matter density (the cosmology&apos;s) it adds a constant to the Friedmann equation, which is &Lambda;. So the galaxy
+        fit (&#x03B3; = 0.489) and the DESI fit (&#x03B3; = 0.487) are each dataset choosing its own standard model, in different variables,
+        at the one point where this family contains both. The match has no power to fail and is not evidence for the framework.
+        Details: <Link href="/galaxy-rotation#gamma-half-nesting" style={{ color: 'var(--color-accent-blue)' }}>the galaxy side</Link>. (Box added 2026-10-22 at a
+        graduate-physics simulated-visitor persona&apos;s request; the statement was already on this page, lower down.)
+      </div>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -348,7 +357,9 @@ export default function DarkEnergy() {
           </li>
         </ul>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-          Archive ledger status after this: <strong>Bucket 3 (reparametrization)</strong> &mdash; &Lambda;CDM where it
+          Status after this: <strong>Reparametrization</strong>{' '}
+          (<Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>badge definitions</Link>;
+          the research archive&apos;s ledger files it in its &ldquo;reparametrizations&rdquo; bucket) &mdash; &Lambda;CDM where it
           lives, excluded where it would differ; no novel dark-energy prediction; refutation count unchanged. A
           researcher persona (2026-09-06) asked for a seventh refutation row on the strength of the &sigma; figures
           above; the honest answer is the opposite &mdash; the sector is <em>less</em> refuted than this page said,
@@ -464,7 +475,12 @@ export default function DarkEnergy() {
       </section>
 
       <section className="section content-width">
-        <h2>The test: TEST-26 (proposed, kill-or-tie)</h2>
+        <h2>The test: TEST-26 (proposed; State: Self-Eliminating-or-Tie)</h2>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          &ldquo;Self-Eliminating-or-Tie&rdquo; is an{' '}
+          <Link href="/glossary#test-card-states" style={{ color: 'var(--color-accent-blue)' }}>operational state</Link>, not a badge:
+          no outcome selects the framework. Here the kill is shared with &Lambda;CDM and the win with constant-w Cardassian.
+        </p>
         <p style={{ padding: '0.75rem 1rem', borderLeft: '3px solid #f59e0b', background: 'rgba(245,158,11,0.06)' }}>
           <strong>Read this first (2026-09-27):</strong> TEST-26 cannot single out the framework. Its kill fires only
           when DR3 excludes &Lambda; in the thawing or crossing direction, and that outcome refutes &Lambda;CDM equally. On

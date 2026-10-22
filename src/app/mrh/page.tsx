@@ -200,7 +200,7 @@ export default function MRH() {
             &ldquo;measurement&rdquo; is this boundary crossing. No observer needed. No consciousness
             required. Just decoherence at the relevancy horizon.
           </p>
-          <ValidationBadge status="untested" label="6 Testable Protocols" />
+          <ValidationBadge status="speculative" label="Speculative — 6 experiment classes, none run; no rate parameter" />
         </div>
         <p>
           <Link href="/measurement-without-observers" style={{ color: 'var(--color-accent-blue)' }}>

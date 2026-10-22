@@ -201,7 +201,7 @@ export default function ResearchPhilosophy() {
           That&apos;s the research program.
         </p>
 
-        <h2>How Research Is Conducted: A2ACW</h2>
+        <h2>How Research Is Conducted: A2ACW (AI-to-AI Adversarial Collaboration Workshop)</h2>
         <div className="card" style={{ background: 'rgba(56,189,248,0.06)', border: '1px solid rgba(56,189,248,0.25)', marginBottom: '1rem', padding: '0.75rem 1rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
             <strong>What A2ACW is:</strong> A self-consistency filter — not a discovery method, and not a calibrated
@@ -209,7 +209,7 @@ export default function ResearchPhilosophy() {
             claims later demoted as reparametrizations of known physics, so it did <em>not</em> reliably catch those. It
             cannot generate out-of-distribution novelty or detect systematic errors shared by the entire training corpus.
             Across all audited claims the count is <strong>0 of 9</strong> (the 6 demoted claims (only 2 confirmed to have carried a &ldquo;Validated&rdquo; badge) plus
-            3 swept later). That audit was performed by LLM agents, not an external domain expert (see below), so the line is
+            3 swept later). That audit was performed by LLM (large language model) agents, not an external domain expert (see below), so the line is
             instrument-uncalibrated. The Challenger did not lack the literature: spot-checks show the load-bearing prior art
             for all six was retrievable. It had the prior art and did not raise it.
           </p>
@@ -403,7 +403,7 @@ export default function ResearchPhilosophy() {
             the null&apos;s own diagnosis (shared-corpus vocabulary lock-in, not training-cutoff leakage)
             points at one decisive control this program has not yet run: an adversarial pair whose
             models come from vendors with maximally disjoint training pipelines, run against the 6
-            demoted claims plus a small OOD positive-control set. If the cross-vendor challenger
+            demoted claims plus a small OOD (out-of-distribution: results the models could not have seen in training) positive-control set. If the cross-vendor challenger
             catches demotions the same-corpus pair missed, the null scopes to <em>corpus
             monoculture</em>; if it catches none of the 6, it strengthens toward a ceiling on AI-adversarial
             collaboration as such. Registered as a research proposal

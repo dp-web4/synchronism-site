@@ -19,7 +19,9 @@ export default function ForResearchers() {
         <div style={{ fontSize: '0.92rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #ef4444', paddingLeft: '0.75rem', margin: '0 0 1rem' }}>
           <strong>Is any prediction that differs from MOND or &Lambda;CDM still alive?</strong> No, within the registered
           tests and the readings run so far. Every prediction that differed sits in a branch already excluded (the
-          density-keyed C<sub>&rho;</sub>: environment null, &Delta;BIC +2843 on SPARC, lunar laser ranging), and every surviving
+          framework&apos;s density-keyed C<sub>&rho;</sub>: environment null, &Delta;BIC +2843 on SPARC read algebraically, lunar laser ranging;
+          the Refracted Gravity class it belongs to is scoped separately, <Link href="/test-catalog#what-excluded-covers" style={{ color: 'var(--color-accent-blue)' }}>here</Link>;
+          all distinct items in <a href="#distinct-content" style={{ color: 'var(--color-accent-blue)' }}>one register</a>), and every surviving
           branch is nested in its parent: the galaxy fit is MOND&apos;s simple interpolating function (at &#x03B3; &asymp; &frac12; under the L2 field equation; the action-derived L3 draws the same curve at &#x03B3; &asymp; 0.44), the dark-energy sector is
           &Lambda;CDM at &gamma; = &frac12; (or Cardassian/wCDM-degenerate off it). Scope: this covers the 26 registered tests and the
           keyings and wirings executed; it does not cover the unbuilt hidden-communication substrates (Bell) or door #3
@@ -57,6 +59,32 @@ export default function ForResearchers() {
           test. (Box added 2026-10-20 at a researcher simulated-visitor persona&apos;s request; the statement was previously
           only in an open-items list on{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.)
+        </div>
+        <div id="distinct-content" style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #f59e0b', paddingLeft: '0.75rem', margin: '0 0 1rem', scrollMarginTop: '5rem' }}>
+          <strong>Distinct-content register: everything on this site that differs from MOND, &Lambda;CDM or standard QM, in one place.</strong>{' '}
+          Until 2026-10-22 these items sat on four pages under four framings, and this page named only one of them (a researcher
+          simulated-visitor persona). None is a confirmed prediction; most are already excluded or are someone else&apos;s.
+          <div style={{ overflowX: 'auto', marginTop: '0.5rem' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem' }}>
+              <thead>
+                <tr style={{ borderBottom: '1px solid var(--color-border)', textAlign: 'left' }}>
+                  <th style={{ padding: '0.3rem' }}>Item</th><th style={{ padding: '0.3rem' }}>Branch</th><th style={{ padding: '0.3rem' }}>Status</th><th style={{ padding: '0.3rem' }}>Prior art</th><th style={{ padding: '0.3rem' }}>Cheapest test</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td style={{ padding: '0.3rem' }}>Dim-4 Lorentz violation (species-dependent limiting speed)</td><td style={{ padding: '0.3rem' }}>Absolute-time substrate</td><td style={{ padding: '0.3rem' }}>Audited-Negative: one-loop natural value ~10&#x207B;&sup2;, 16&ndash;28 orders above bounds; custodial mechanism owed (<a href="#dim4-liv" style={{ color: 'var(--color-accent-blue)' }}>&sect;2</a>)</td><td style={{ padding: '0.3rem' }}>Collins et al. 2004</td><td style={{ padding: '0.3rem' }}>Already bounded (clock comparisons, cavities); time-of-flight cannot see it</td></tr>
+                <tr><td style={{ padding: '0.3rem' }}>Dim &ge; 5 dispersion (quadratic only)</td><td style={{ padding: '0.3rem' }}>Discrete grid</td><td style={{ padding: '0.3rem' }}>Untested; ~10&#x2077; below reach</td><td style={{ padding: '0.3rem' }}>Not unique (loop quantum gravity, causal sets)</td><td style={{ padding: '0.3rem' }}>None reachable</td></tr>
+                <tr><td style={{ padding: '0.3rem' }}>External-field refraction (&nabla;ln C)</td><td style={{ padding: '0.3rem' }}>Density-keyed field equation</td><td style={{ padding: '0.3rem' }}>Framework&apos;s permittivity excluded; for RG it is order unity and dipolar in satellites (<Link href="/test-catalog#what-excluded-covers" style={{ color: 'var(--color-accent-blue)' }}>scope</Link>)</td><td style={{ padding: '0.3rem' }}>Refracted Gravity (Matsakos &amp; Diaferio 2016)</td><td style={{ padding: '0.3rem' }}>Host-aligned m&nbsp;=&nbsp;1 lopsidedness of Milky Way satellites (unrun; would score for RG)</td></tr>
+                <tr><td style={{ padding: '0.3rem' }}>Ambient density at fixed g<sub>ext</sub></td><td style={{ padding: '0.3rem' }}>Density-keyed</td><td style={{ padding: '0.3rem' }}>Branch excluded; lever capped by a tidal identity, signal/systematics &asymp; 4&times;10&#x207B;&sup3;</td><td style={{ padding: '0.3rem' }}>&mdash;</td><td style={{ padding: '0.3rem' }}>None useful (systematics-limited)</td></tr>
+                <tr><td style={{ padding: '0.3rem' }}>Scan period T<sub>scan</sub> &ge; 1.6&ndash;9.4 &micro;s, drawn per particle</td><td style={{ padding: '0.3rem' }}>Measurement as synchronization</td><td style={{ padding: '0.3rem' }}>Speculative, not committed to; every clock the archive names is already excluded (<Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>)</td><td style={{ padding: '0.3rem' }}>Grangier, Roger &amp; Aspect 1986 (the setup)</td><td style={{ padding: '0.3rem' }}>g&sup2;(0) against photon duration at fixed window. Clock or ion-trap sidebands would test a <em>global periodic</em> clock, which already fails at every T, not the survivor</td></tr>
+                <tr><td style={{ padding: '0.3rem' }}>Dark-energy sign lock, sign(w&#x2080;+1) = sign(w<sub>a</sub>)</td><td style={{ padding: '0.3rem' }}>Substituted Friedmann (superset of &Lambda;CDM)</td><td style={{ padding: '0.3rem' }}>Reparametrization: its kill is &Lambda;CDM&apos;s and its win is wCDM&apos;s (<Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>)</td><td style={{ padding: '0.3rem' }}>Cardassian (Freese &amp; Lewis 2002); freezing class (Caldwell &amp; Linder 2005)</td><td style={{ padding: '0.3rem' }}>DESI DR3; cannot single out the framework</td></tr>
+                <tr><td style={{ padding: '0.3rem' }}>Non-monogamous entanglement (dimension form)</td><td style={{ padding: '0.3rem' }}>Bell sector</td><td style={{ padding: '0.3rem' }}>Gated: needs a construction that exceeds S&nbsp;=&nbsp;2 first, and none exists (<a href="#chsh" style={{ color: 'var(--color-accent-blue)' }}>&sect;CHSH</a>)</td><td style={{ padding: '0.3rem' }}>&mdash;</td><td style={{ padding: '0.3rem' }}>None until the construction exists</td></tr>
+                <tr><td style={{ padding: '0.3rem' }}>Intrinsic decoherence &prop; Dk&sup2; (door #3)</td><td style={{ padding: '0.3rem' }}>Dissipative substrate</td><td style={{ padding: '0.3rem' }}>A direction, not a registered bet; gated because the dissipative substrate cannot host matter</td><td style={{ padding: '0.3rem' }}>Collapse-model class</td><td style={{ padding: '0.3rem' }}>None registered</td></tr>
+              </tbody>
+            </table>
+          </div>
+          The galaxy-sector form of this is stated above: no galaxy-scale prediction that differs from MOND exists on a surviving
+          branch of <em>this framework</em>. The one live distinct thread nearby, refraction, belongs to Refracted Gravity.
         </div>
         <div id="relativistic-gaps" style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #ef4444', paddingLeft: '0.75rem', margin: '0 0 1rem' }}>
           <strong>What a gravity referee asks first, and what is missing.</strong> (Added 2026-10-21 at a researcher
@@ -584,7 +612,7 @@ export default function ForResearchers() {
             </div>
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
-            Untested: the time-of-flight face (dim &ge; 5), which is structurally unreachable. Audited-Negative: the
+            Untested: the time-of-flight face (dim &ge; 5, energy-dependent dispersion; this is <em>not</em> the dim-4 face, which time-of-flight cannot see), which is structurally unreachable. Audited-Negative: the
             preferred-frame / dim-4 face, a naturalness gap of 16&ndash;28 OOM with custodial escapes unexhibited.
           </p>
 
@@ -837,7 +865,9 @@ export default function ForResearchers() {
             <strong> Citable numbers, residual form (2026-09-24):</strong> density law −0.196 to −0.199 ± 0.027 after refitting the mass
             scale under the law itself (−0.211 on catalogue masses); MOND+EFE −0.093; MOND without EFE −0.245; Newton −0.057 (King-like) or
             +0.021 ± 0.027 (Plummer). There is no systematic budget. <strong>Under L3 (striction included) this band does not hold:</strong> it becomes 0.031–0.196 M<sub>☉</sub>/pc³ at γ = 0.489, with no passing knee, and the outer shells stop being bound (caveat iii below).
-            <strong>Refracted Gravity is not excluded:</strong> its published ρ<sub>c</sub> = 10⁻²⁴·²⁵ g/cm³ = 0.0083
+            <strong>Refracted Gravity is not excluded by this window</strong> (at globular-cluster densities only: its disc calibrations fail all 15
+            Milky Way dwarf spheroidals by &ge; 3&sigma; and its elliptical calibration is in 2&ndash;4&sigma; tension on the equilibrium dwarfs,
+            explorer 2026-10-21; see <Link href="/test-catalog#what-excluded-covers" style={{ color: 'var(--color-accent-blue)' }}>what &ldquo;excluded&rdquo; covers</Link>): its published ρ<sub>c</sub> = 10⁻²⁴·²⁵ g/cm³ = 0.0083
             M<sub>☉</sub>/pc³ lies below the excluded window, and every value in that set&apos;s 1σ range
             (0.0052–0.0158 M<sub>☉</sub>/pc³) scores within MOND+EFE&apos;s mismatch on the same statistic. <em>Provenance
             (corrected 2026-09-16, explorer 2026-09-15):</em> 0.0083 (with ε₀ = 0.089, Q = 0.47) is RG&apos;s <strong>elliptical-galaxy

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import ValidationBadge from '@/components/ValidationBadge';
 import { Fragment } from 'react';
-import { BADGES, OPERATIONAL_STATES, LIFECYCLE_VERBS } from '@/lib/statusLabels';
+import { BADGES, BADGE_FAMILIES, OPERATIONAL_STATES, LIFECYCLE_VERBS, RETIRED_LABELS } from '@/lib/statusLabels';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -80,7 +80,7 @@ export default function TestCatalog() {
           fontSize: '0.8rem',
           color: 'var(--color-text-muted)',
         }}>
-          <strong style={{ color: 'var(--color-text-secondary)' }}>Validation Badge Guide — MRH-relationship:</strong>{' '}
+          <strong style={{ color: 'var(--color-text-secondary)' }}>Validation Badge Guide — MRH-relationship</strong>{' '}({BADGE_FAMILIES.mrh.gloss}):{' '}
           {BADGES.filter((x) => x.family === 'mrh').map((x, i, arr) => (
             <Fragment key={x.name}><span style={{ color: x.color }}>■ {x.name}</span> — {x.oneLiner}{i < arr.length - 1 ? ' | ' : '. '}</Fragment>
           ))}
@@ -92,7 +92,9 @@ export default function TestCatalog() {
           {OPERATIONAL_STATES.join(' | ')} &mdash; what a test <em>can</em> do or what happened to it.{' '}
           <strong style={{ color: 'var(--color-text-secondary)' }}>Lifecycle verbs (not badges):</strong>{' '}
           {LIFECYCLE_VERBS.join(' | ')} &mdash; the provenance of a row.
-          Both lists are complete and rendered from one source; neither is a verdict on the claim.{' '}
+          Both lists are complete and rendered from one source; neither is a verdict on the claim. Retired, no longer
+          assigned: {RETIRED_LABELS.map(r => r.name).join(', ')}.{' '}
+          <Link href="/glossary#test-card-states" style={{ color: 'var(--color-text-muted)' }}>States used on test cards, one line each →</Link>{' '}
           <Link href="/glossary" style={{ color: 'var(--color-text-muted)' }}>Definitions (Glossary) →</Link>{' '}
           <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-text-muted)' }}>
             Canonical definitions (Honest Assessment) →
@@ -380,10 +382,13 @@ export default function TestCatalog() {
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
             <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', color: '#10b981' }}>10</p>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Zero Cost (Tier 1 of the registry)</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Zero Cost (Tier 1 of the original registry)</p>
           </div>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1.5rem' }}>
+          <strong>10 vs 11:</strong> the 10 are the registry&apos;s Tier-1 tests (TEST-01 to TEST-10). The{' '}
+          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 page</Link> lists 11 because it also
+          carries TEST-25, one of the 2 tests added later, which also runs on existing data. 10 + 1 = 11.{' '}
           The &ldquo;Pre-registered &amp; Completed: 0&rdquo; counts only tests whose kill criterion was registered
           <em> before</em> the relevant dataset was analyzed. This is distinct from the retrospective analyses
           in the &ldquo;What&apos;s Already Been Analyzed&rdquo; box above (galaxy rotation, chemistry, TEST-03/04a).
@@ -436,7 +441,11 @@ export default function TestCatalog() {
             dielectric. MOND&apos;s external-field effect has a different form. Rough sizes on file: about 0.3&ndash;0.37 g<sub>ext</sub> beyond
             the knee in a halo globular cluster. In a disc it depends on the form of C: negligible for the floored form (C &asymp; &Omega;<sub>m</sub>
             below the knee, so &nabla;C &asymp; 0), but of order R/h for the unfloored form, because there &nabla;ln&nbsp;C = &nabla;ln&nbsp;&rho;
-            however small C is. <em>Not computed for satellites; not confronted with data.</em></li>
+            however small C is. <strong>For satellites (explorer, 2026-10-21, Refracted Gravity&apos;s published parameters):</strong> the
+            response is about (&Delta;&epsilon;/&epsilon; across the dwarf) &times; (g<sub>ext</sub>/g<sub>int</sub>), and the second factor is
+            10&sup2;&ndash;3&times;10&sup3; for Milky Way dwarfs, so even a 7% gradient gives an order-unity effect. It is dipolar (m&nbsp;=&nbsp;1,
+            lopsided toward or away from the host), unlike Newtonian tides, which are quadrupolar. Being odd in g<sub>ext</sub>, it does not
+            shift &sigma; at first order. <em>Not confronted with data</em>; the test is host-aligned lopsidedness in satellite member maps.</li>
           <li><strong>Ambient density at fixed external acceleration.</strong> Two satellites at the same g<sub>ext</sub> but in hosts with
             different gas density would differ here and not under MOND. TEST-05 did <em>not</em> run this: it used Mpc-scale
             Cosmicflows-4 density and controlled for neither g<sub>ext</sub> nor the gas density at the satellite. A structural estimate
@@ -446,11 +455,33 @@ export default function TestCatalog() {
             to be systematics-limited.</em></li>
         </ul>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-          <strong>Why neither can move the confirmed count.</strong> Both are predictions of the density-keyed branch, which is
-          already excluded twice: on SPARC (&Delta;BIC +2843 against the acceleration-keyed law, surviving galaxy-level scoring) and by
-          lunar laser ranging (68 of 74 laws). A positive result would contradict those exclusions rather than confirm the branch; a
-          null would add a further root to an existing refutation. The acceleration-keyed branch the galaxy fits use has MOND&apos;s
-          own external-field effect, so it has nothing distinct here.
+          <strong>Why neither can move the confirmed count.</strong> Both are predictions of the density-keyed field equation
+          &nabla;&middot;[C(&rho;)&nabla;&Phi;] = 4&pi;G&rho;, which is Refracted Gravity&apos;s (Matsakos &amp; Diaferio 2016). The acceleration-keyed
+          branch the galaxy fits use has MOND&apos;s own external-field effect, so it has nothing distinct here.
+        </p>
+        <p id="what-excluded-covers" style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <strong>What &ldquo;the density-keyed branch is excluded&rdquo; covers, and what it does not.</strong> Excluded is <em>this
+          framework&apos;s</em> permittivity, three ways:
+        </p>
+        <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', paddingLeft: '1.25rem', lineHeight: 1.6 }}>
+          <li>the tanh-log C(&rho;) read <em>algebraically</em> (g = g<sub>bar</sub>/C, unfloored, &rho; = &Sigma;/2h), which loses to the
+            acceleration-keyed law on SPARC by &Delta;BIC +2843, surviving galaxy-level scoring;</li>
+          <li>the same family under the <em>solved</em> field equation, at the framework&apos;s floor and at RG&apos;s elliptical floor, on a grid of
+            knees: &chi;&sup2;/N 69&ndash;2700 against MOND&apos;s 21.2 (2026-09-09);</li>
+          <li>any pointwise density-keyed G smoothed over &ge; 1 pc, by lunar laser ranging: 68 of 74 laws, including both of RG&apos;s
+            published calibrations, on the non-covariant reading.</li>
+        </ul>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          Not excluded by any of these: <strong>the RG class with its own fitted permittivity on discs</strong>, which nobody here has
+          refit (Cesare et al. fit it to 30 DiskMass discs). RG&apos;s own record in this archive is mixed. Globular clusters pass. Its disc
+          calibrations fail all 15 Milky Way dwarf spheroidals by &ge; 3&sigma;, because in spherical symmetry Gauss&apos;s law caps the boost at
+          1/&epsilon;<sub>0</sub> exactly (Leo I, which RG keeps in equilibrium, is off by 9&ndash;15&sigma;). Its elliptical calibration is in
+          2&ndash;4&sigma; tension on the dwarfs that are in equilibrium under RG (explorer, 2026-10-21). Its covariant completion&apos;s
+          lunar-ranging status is unchecked. So the refraction effect above is RG&apos;s prediction, and prior art. If the framework adopted
+          RG&apos;s permittivity it would inherit that test, and RG&apos;s dependence on flattening, but a result would score for RG, not for
+          anything this framework adds. A positive result on the framework&apos;s own permittivity would contradict the exclusions above,
+          and a null would add a further root to an existing refutation. (Until 2026-10-22 this paragraph said only &ldquo;already excluded
+          twice&rdquo;, without saying which reading or which permittivity; researcher simulated-visitor persona.)
         </p>
       </section>
 

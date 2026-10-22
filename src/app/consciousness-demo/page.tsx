@@ -132,7 +132,7 @@ export default function ConsciousnessDemo() {
         }}>
           <strong style={{ color: '#f59e0b' }}>Calibration caveat:</strong>{' '}
           C &#x2248; 0.50 is the <strong>output-range midpoint</strong> of [0, 1) &mdash; a geometric label,
-          not an <em>independently measured</em> value. The convergence of 7 approaches on 0.501 &#x00B1; 0.010 (8 and 0.499 &#x00B1; 0.012 before 2026-10-13, which counted the phase-transition row the page says does not exist) is <strong>circular,
+          not an <em>independently measured</em> value. The convergence of 7 approaches on a mean of 0.501 (no spread is quoted, see the note under the chart; 8 and 0.499 &#x00B1; 0.012 before 2026-10-13, which counted the phase-transition row the page says does not exist) is <strong>circular,
           not empirical</strong>: all of them share the same framework assumptions and the same unvalidated calibration,
           and none of them measures C. Every approach that picks the midpoint of a [0,1)-bounded output range will
           land near 0.50 by construction. No calibration procedure exists to map actual EEG, fMRI,
@@ -168,19 +168,19 @@ export default function ConsciousnessDemo() {
           </details>
           <p style={{ margin: '0.75rem 0 0 0' }}>
             <strong style={{ color: '#f59e0b' }}>Sharper (added 2026-08-08): the scatter is not just
-            uninformative &mdash; it is too small to be honest.</strong> If the 8 approaches really were
+            uninformative &mdash; it is too small to be honest.</strong> If the 7 approaches really were
             independent estimators of a psychological threshold, &#x03C3; &asymp; 0.01 would be an{' '}
             <em>implausibly</em> tight agreement &mdash; a Millikan-style clustering signature, which is
             evidence that estimators inherited each other&apos;s assumptions rather than evidence that they
             agree. Independent methods for a quantity this loosely defined should scatter by far more than 1.2%
             of the range. So the low scatter is a <em>diagnostic of shared derivation</em>, not weak support:
             it points the same direction as the geometric-midpoint argument above, and it does so from the
-            statistics alone, without needing to know how the eight approaches were built. Raised by a visitor
+            statistics alone, without needing to know how the seven approaches were built. Raised by a visitor
             physics persona, 2026-08-08.
           </p>
         </div>
         <p>
-          The 8 approaches below all converge on C &#x2248; 0.50 — an illustration of how the geometric
+          The 8 rows below (7 approaches, plus one drawn hollow because it does not exist) converge on C &#x2248; 0.50 — an illustration of how the geometric
           midpoint artifact operates. The convergence was shown to be forced (geometric, not empirical) and
           the threshold itself remains untestable as stated (no measurement maps to C). One of the eight,
           &ldquo;phase transition analysis&rdquo;, has nothing to analyse: the C(&rho;) curve has no critical point
@@ -306,7 +306,7 @@ export default function ConsciousnessDemo() {
         </ul>
         <h2>What Would Still Falsify C(&#x03C1;)-Based Consciousness More Broadly</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li>EEG/fMRI mapping establishing a C threshold at a different value than any of the 8 approaches predict</li>
+          <li>EEG/fMRI mapping establishing a C threshold at a different value than any of the 7 approaches predict</li>
           <li>Species with demonstrably different C thresholds at the same density</li>
           <li>A calibration protocol mapping IIT-Φ or EEG phase to the C-axis (does not exist yet)</li>
         </ul>

@@ -182,6 +182,18 @@ export default function ChemistryCorrelationExplorer() {
           <em>Neutral</em>: counting properties (coordination number CN, valence electrons) on which &#x03B3; has no
           bearing. The labels were assigned after the fits, not predicted in advance.
         </p>
+        <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
+          <strong>What r is computed against (added 2026-10-22, researcher simulated-visitor persona):</strong> not C, and not
+          one shared &#x03B3;. Each r is the Pearson correlation between the property and that session&apos;s best-fitting
+          expression in a <em>domain-specific</em> &#x03B3; proxy (for phonon properties &#x03B3;<sub>phonon</sub> = 2T/&#x03B8;<sub>D</sub>, a
+          Debye-temperature ratio), chosen after looking at the data. So the sign of r says whether the property rises with
+          that expression, and the regime label says whether the expression rises with &#x03B3; or with 1/&#x03B3;. For example,
+          d&#x2083;&#x2083; = +0.940 is the fit d&#x2083;&#x2083; &#x221D; &#x03B3;&nbsp;&times;&nbsp;&#x03B5; (permittivity), whence &ldquo;incoherence helps&rdquo;
+          (Synchronism research archive, <code>Research/Chemistry/Phase2_Synthesis.md</code> and <code>Framework_Summary.md</code>,
+          where the piezoelectric result is filed under chemistry session #93). For the specific-heat row (+0.756) the
+          expression and sign convention are <strong>not recorded</strong> in the source table: the archive&apos;s heat-capacity
+          entry quotes a different fit (r = &minus;0.988 against the Debye form). Read that row&apos;s sign as unverified.
+        </p>
 
         {/* Regime filter */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>

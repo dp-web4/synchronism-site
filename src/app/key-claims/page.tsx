@@ -367,7 +367,7 @@ export default function KeyClaims() {
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
             Consciousness crosses a threshold near C &#x2248; 0.50 &mdash; the output-range midpoint of
-            the coherence function, chosen by the framework&apos;s internal convergence across 8
+            the coherence function, chosen by the framework&apos;s internal convergence across 7
             Synchronism-based approaches &mdash; rather than fading smoothly across all coherence values.{' '}
             <span style={{ color: '#ef4444' }}>
               The one empirical test ever cited for this value measured a different variable: the companion program{' '}
@@ -388,7 +388,7 @@ export default function KeyClaims() {
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>What&apos;s new</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             IIT (Integrated Information Theory) proposes &#x03A6; but predicts no specific threshold. Global workspace theory has no
-            quantitative threshold. This framework proposes a specific number, C&nbsp;&asymp;&nbsp;0.50, from 8 approaches
+            quantitative threshold. This framework proposes a specific number, C&nbsp;&asymp;&nbsp;0.50, from 7 approaches
             (note: these share the same underlying framework, and 0.50 is the midpoint of a bounded output range, so the
             convergence is largely by construction; the empirical threshold that already exists is the perturbational
             complexity index cut-off PCI* = 0.31, Casarotto et&nbsp;al. 2016, and no mapping from C to PCI has been written).
@@ -403,8 +403,12 @@ export default function KeyClaims() {
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            Theoretical: 8 Synchronism-based approaches converge on C &#x2248; 0.50 (range 0.48&ndash;0.52).
-            <em>Not evidence (listed for completeness):</em> the Gnosis AI architecture also
+            <strong>None yet.</strong> The framework&apos;s internal approaches (7 that exist; an eighth, &ldquo;phase transition
+            analysis&rdquo;, has no critical point to analyse) land on C &#x2248; 0.50, but that is expected, not discovered:
+            0.50 is the midpoint of the function&apos;s [0,1) output range, so any approach that picks the midpoint lands there (see the
+            caveat below). It is a normalization artefact, listed here so it is not mistaken for support. (Until 2026-10-22 this line
+            read &ldquo;Theoretical: 8 approaches converge on 0.50&rdquo; under this heading, with the caveat only below it.)
+            <em> Also not evidence:</em> the Gnosis AI architecture also
             arrived at C &#x2248; 0.50 as its operating threshold through 4 different mathematical frameworks, but it was
             built with Synchronism access, so this is not an independent convergence.
             <Link href="/consciousness-predictions">34 candidate predictions</Link> enumerated, none tested
@@ -422,7 +426,7 @@ export default function KeyClaims() {
               <strong>Convergence on 0.50 is expected, not discovered:</strong> C&nbsp;=&nbsp;0.50 is the
               arithmetic midpoint of tanh&apos;s output range [0,1). Any approach that picks the
               output-range midpoint of a [0,1)-bounded function will converge on 0.50 — it is a
-              normalization artifact, not independent empirical evidence. The 8 approaches share
+              normalization artifact, not independent empirical evidence. The approaches share
               the same underlying framework and the same [0,1) normalization, making convergence
               geometrically forced. Gnosis was designed with Synchronism access, so its convergence
               is not independent. Converting real neural measurements to the C scale requires a
@@ -435,7 +439,7 @@ export default function KeyClaims() {
               (Session 63) did not measure C. It measured SNARC <code>salience_total</code> &mdash; a weighted
               mean of five hand-coded heuristics, one shared scoring function across 8 agent instances &mdash;
               whose operating mean of 0.640&nbsp;&plusmn;&nbsp;0.0196&nbsp;(SD) rejects 0.50 <em>for that variable</em>{' '}
-              (t&nbsp;=&nbsp;20.19, p&nbsp;&#x2248;&nbsp;1.8&times;10<sup>&minus;7</sup>, n&nbsp;=&nbsp;8). With no
+              (one-sample t against a null mean of 0.500: t&nbsp;=&nbsp;(0.640&nbsp;&minus;&nbsp;0.500)/(0.0196/&radic;8)&nbsp;&asymp;&nbsp;20.2, p&nbsp;&#x2248;&nbsp;1.8&times;10<sup>&minus;7</sup>, n&nbsp;=&nbsp;8). With no
               mapping from salience to C, this is a wrong-variable test: it neither refutes nor confirms a
               C-threshold, which is consistent with the unrunnable verdict below (no contradiction &mdash; the
               claim was never actually run). An earlier version of this page also said C&nbsp;&#x2248;&nbsp;0.64
@@ -674,7 +678,9 @@ export default function KeyClaims() {
             Tested against {GALAXIES_RUN} galaxies ({GALAXIES_RUN_BREAKDOWN}); the mechanism itself was
             tested on the {GALAXIES_MECHANISM} resolved SPARC rotation curves (123 for TEST-09, 153 for TEST-10) &mdash;
             the registered Tully&ndash;Fisher environment test (TEST-03, on the 14,585-galaxy cross-match) was never run as registered.
-            (&ldquo;14,760&rdquo; stood here until 2026-09-06; corrected to the ledger figure.) a&#x2080; derivation within 13%.
+            (&ldquo;14,760&rdquo; stood here until 2026-09-06; corrected to the ledger figure.) Three counts, one sample: 14,585 is the
+            ALFALFA&ndash;SDSS cross-match as registered, 14,435 is what remains after the quality cut and was actually run, and
+            the homepage&apos;s 14,610 is those 14,435 plus the 175 SPARC galaxies. a&#x2080; derivation within 13%.
             Freeman&apos;s Law &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#8776; 119 M&#x2609;/pc&sup2; at the
             site-standard H&#x2080; = 67.4 km/s/Mpc &mdash; consistent with Freeman&apos;s observed normalization
             within the factor-of-~2 mass-to-light systematic, which is all the observable supports (sub-percent

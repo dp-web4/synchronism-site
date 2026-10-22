@@ -114,13 +114,6 @@ export default function WhatSynchronismIsNot() {
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
         A scope page: it states what the framework does not claim, so it carries no validation badge.
       </p>
-      <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.25rem' }}>
-        <summary style={{ cursor: 'pointer' }}>Revision note</summary>
-        This page used to carry the badge &ldquo;Active-MRH &mdash; Scope Boundaries &mdash; Not a Claim&rdquo;. Before
-        2026-07-09 it carried the deprecated &ldquo;Validated&rdquo;. Active-MRH means a claim in active research focus,
-        which does not describe a scope page, and the badge text carried its own revision history. The verdict badge was
-        removed.
-      </details>
 
       {/* Beginner exit added 2026-09-27 (visitor: densest jargon on the Beginner path, and unlike
           /core-idea and /honest-assessment it had no stop-here box). Markup copied from /core-idea. */}
@@ -151,13 +144,14 @@ export default function WhatSynchronismIsNot() {
           <ul style={{ margin: 0, paddingLeft: '1.2rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
             <li><strong>Not proven.</strong> No prediction has been confirmed. Most have never been tested, and none of those checked came out as a win for this framework: they failed, could not decide anything, or turned out to be known physics written differently.</li>
             <li><strong>Not checked by science journals.</strong> Nothing has been submitted. The checking so far was done by AI models reviewing each other&apos;s work, with human oversight &mdash; real, but not the usual route.</li>
-            <li><strong>Not a replacement for today&apos;s physics.</strong> It does not replace the standard theories of particles, gravity or the universe&apos;s history, nor the rival gravity idea MOND. Where it matches data, it mostly restates them.</li>
+            <li><strong>Not a replacement for today&apos;s physics.</strong> It does not replace the standard theories of particles, gravity or the universe&apos;s history, nor the rival gravity idea <Link href="/glossary#MOND" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>MOND</Link>. Where it matches data, it mostly restates them.</li>
             <li><strong>Not compatible, as it stands, with a basic rule of relativity</strong> (that the laws look the same at any steady speed). Its built-in universal clock would naturally break that rule by an amount existing experiments already rule out, and nothing in the framework explains why it doesn&apos;t. That is a serious warning sign for the simplest version, not a refutation of the whole idea: closing the gap would take a protective mechanism, which other absolute-time theories have proposed and this one has not.</li>
             <li><strong>Not just new labels, and not just philosophy.</strong> The claim is that quantum behaviour, consciousness and galaxy motion are one phenomenon at different scales. That is either wrong or important. The physics parts have concrete tests (several already failed); the consciousness part does not yet &mdash; its tests are proposed but cannot run until someone says how to measure C in a brain.</li>
           </ul>
           <p style={{ margin: '0.6rem 0 0', color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
             The cards below give the detail and use technical terms (<Link href="/glossary#QFT" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>QFT</Link>, <Link href="/glossary#GR" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>GR</Link>,{' '}
-            <Link href="/glossary#%CE%9BCDM" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>ΛCDM</Link>, <Link href="/glossary#CMB" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>CMB</Link>, <Link href="/glossary#EFE" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>EFE</Link>, A2ACW, &ldquo;compander,&rdquo;
+            <Link href="/glossary#%CE%9BCDM" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>ΛCDM</Link>, <Link href="/glossary#CMB" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>CMB</Link>, <Link href="/glossary#EFE" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>EFE</Link>, <Link href="/glossary#MOND" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>MOND</Link>, <Link href="/glossary#RAR" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>RAR</Link>, <Link href="/glossary#SPARC" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>SPARC</Link>,{' '}
+            <Link href="/glossary#Decoherence" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>decoherence</Link>, <Link href="/glossary#CHSH" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>CHSH</Link>, A2ACW, &ldquo;compander,&rdquo;
             Lorentz invariance&hellip;). Each is defined in the{' '}
             <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>; you can skip them and
             keep the five points above.
@@ -267,6 +261,13 @@ export default function WhatSynchronismIsNot() {
         </div>
       </section>
 
+      <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '1.5rem' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+        This page used to carry the badge &ldquo;Active-MRH &mdash; Scope Boundaries &mdash; Not a Claim&rdquo;. Before
+        2026-07-09 it carried the deprecated &ldquo;Validated&rdquo;. Active-MRH means a claim in active research focus,
+        which does not describe a scope page, and the badge text carried its own revision history. The verdict badge was
+        removed.
+      </details>
       <RelatedConcepts currentPath="/what-synchronism-is-not" />
     </>
   );

@@ -25,7 +25,9 @@ export default function MondUnification() {
         version is excluded separately: a knee that tracks a&#x2080; would have to scale as V<sup>&minus;2</sup>, the framework asserts V<sup>+2</sup>, and
         SPARC shows no velocity exponent (V<sup>+2</sup> excluded at ~11&sigma;, one point per galaxy, N = 129, galaxy bootstrap; see{' '}
         <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>). It also loses to the
-        acceleration-keyed form on SPARC by &Delta;BIC +2843 with &gamma; free. So this page is about how the framework <em>relates</em> to MOND
+        acceleration-keyed form on SPARC by &Delta;BIC +2843 with &gamma; free (read algebraically, g = g<sub>bar</sub>/C; the field-equation
+        class it belongs to, Refracted Gravity, is not excluded by that number, see{' '}
+        <Link href="/test-catalog#what-excluded-covers" style={{ color: 'var(--color-accent-blue)' }}>what &ldquo;excluded&rdquo; covers</Link>). So this page is about how the framework <em>relates</em> to MOND
         (the a&#x2080; coincidence and the acceleration-keyed reparametrization), not a unification. Until 2026-10-08 it was titled &ldquo;MOND Unification&rdquo;.
       </div>
 
@@ -229,9 +231,13 @@ export default function MondUnification() {
           Without striction (&ldquo;L2&rdquo;) that is a linear external-field effect of order g<sub>ext</sub>&middot;&Delta;C/C: about
           0.3&ndash;0.37 g<sub>ext</sub> beyond the knee in a halo globular cluster. With striction (&ldquo;L3&rdquo;) the internal residuals
           are 1&ndash;30 g<sub>ext</sub> and there is a quadratic term, a nonlinear EFE. EFE&nbsp;=&nbsp;0 holds exactly only for the
-          algebraic reading, or when C is uniform across the system. This linear refraction EFE is distinct from MOND&apos;s and has not been confronted with data. It is a prediction of the
-          density-keyed branch, which SPARC (&Delta;BIC +2843) and lunar laser ranging already exclude, so testing it could add a
-          second root to that refutation but could not move the confirmed count (<Link href="/test-catalog#unregistered-distinct" style={{ color: 'var(--color-accent-blue)' }}>Test Catalog</Link>).
+          algebraic reading, or when C is uniform across the system. This linear refraction EFE is distinct from MOND&apos;s and has not been confronted with data.
+          For Refracted Gravity it is order unity for low-density satellites, about (&Delta;&epsilon;/&epsilon;) &times; (g<sub>ext</sub>/g<sub>int</sub>),
+          and dipolar (m&nbsp;=&nbsp;1, aligned with the host), unlike Newtonian tides, which are quadrupolar. Separately, RG&apos;s spherical ceiling
+          1/&epsilon;<sub>0</sub> (exact by Gauss&apos;s law) is below the boost every classical dwarf spheroidal needs under RG&apos;s disc calibration
+          (&ge; 4&sigma;, including Leo I at 9&ndash;15&sigma;, which RG keeps in equilibrium; explorer 2026-10-21). The effect belongs to the
+          field-equation class, so it is RG&apos;s prediction (prior art). This framework&apos;s own permittivity is already excluded on SPARC and by lunar
+          laser ranging, so testing it here could add a second root to that refutation but could not move the confirmed count (<Link href="/test-catalog#what-excluded-covers" style={{ color: 'var(--color-accent-blue)' }}>what &ldquo;excluded&rdquo; covers</Link>).
           (Until 2026-10-21 this sentence called it &ldquo;the one genuinely distinct external-field prediction of this family&rdquo;
           with no scope.)
           <br />&bull; <strong>Floored vs unfloored C.</strong> &ldquo;The knee never enters a disc, so none of this touches the framework&apos;s

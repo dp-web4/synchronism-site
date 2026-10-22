@@ -23,6 +23,11 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-22 (maintainer): unscoped density-keyed exclusion; unscoped "RG is not excluded"; "6 Testable Protocols"
+    (r"already excluded twice|<strong>Refracted Gravity is not excluded:</strong>", "2026-10-22",
+     "scope it: +2843 is the algebraic g = g_bar/C on this framework's permittivity; RG passes GCs but its disc calibrations fail dSphs (explorer 2026-10-21); see /test-catalog#what-excluded-covers"),
+    (r"6 Testable Protocols", "2026-10-22",
+     "the body calls them experiment classes, and the mechanism has no rate parameter (Speculative)"),
     # --- retired 2026-10-21 (maintainer): demoted-claims tally; A2ACW roles; Hubble-type p mislabelled as environment;
     #     unscoped "one distinct prediction"; 1,703 phrasings the 10-16 rule missed; forced-convergence RMS; w(0) at Omega_m 0.30
     (r"6 former (&ldquo;|\"|“|‘|&apos;)Validated", "2026-10-21",

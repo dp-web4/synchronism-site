@@ -17,6 +17,15 @@ export default function GalaxyRotation() {
       <h1>Galaxy Rotation Curves</h1>
       <ValidationBadge status="failed" label="Failed — density-keyed form ΔBIC +2843; γ = 2 compander disfavoured: ΔBIC ≈ +11 at galaxy level (1.6–2.3σ by estimator; +184 if points were independent)" />{' '}
       <ValidationBadge status="reparametrization" label="Acceleration-keyed fit is exactly MOND's simple μ" />
+      <div id="gamma-half-nesting" style={{ fontSize: '0.88rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #f59e0b', paddingLeft: '0.75rem', margin: '0.75rem 0 1rem', scrollMarginTop: '5rem' }}>
+        <strong>&#x03B3; &asymp; &frac12; twice is not a cross-sector agreement.</strong> At &#x03B3; = &frac12; the function satisfies
+        1/C &minus; 1 = 2/x exactly. Keyed on acceleration (the galaxy fit&apos;s variable) that is MOND&apos;s simple interpolating function;
+        keyed on the mean matter density (the cosmology&apos;s) it adds a constant to the Friedmann equation, which is &Lambda;. So the galaxy
+        fit (&#x03B3; = 0.489) and the DESI fit (&#x03B3; = 0.487) are each dataset choosing its own standard model, in different variables,
+        at the one point where this family contains both. The match has no power to fail and is not evidence for the framework.
+        Details: <Link href="/dark-energy#gamma-half-nesting" style={{ color: 'var(--color-accent-blue)' }}>the cosmology side</Link>. (Box added 2026-10-22 at a
+        graduate-physics simulated-visitor persona&apos;s request; the statement was already on this page, lower down.)
+      </div>
       <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
         Sub-note: the registered ALFALFA test, TEST-03, was never run as registered (see correction below), so that one
         test is <em>untested</em>. Until 2026-09-19 that was this page&apos;s only badge, which undersold the page&apos;s own
@@ -302,7 +311,7 @@ export default function GalaxyRotation() {
                 <tr style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
                   <th style={{ textAlign: 'left', padding: '0.3rem 0.75rem 0.3rem 0' }}>Model</th>
                   <th style={{ textAlign: 'right', padding: '0.3rem 0.75rem' }}>RMS (dex)</th>
-                  <th style={{ textAlign: 'right', padding: '0.3rem 0' }}>ΔBIC vs McGaugh</th>
+                  <th style={{ textAlign: 'right', padding: '0.3rem 0' }}>ΔBIC vs McGaugh (point level, N = 2,807)</th>
                 </tr>
               </thead>
               <tbody>
@@ -354,7 +363,9 @@ export default function GalaxyRotation() {
             RMS identical to McGaugh to four digits (with &Upsilon; frozen at 0.5 and points unweighted; with per-galaxy nuisances
             refitted the free fit moves to &#x03B3;&#x0302; &asymp; 0.6 [0.43, 0.95]). ΔBIC=+7 is entirely the BIC penalty for the
             extra parameter — the fit improvement is zero.{' '}
-            <strong>Made quantitative (2026-07-27, simulated-reader review point):</strong> with N = 2807,
+            <strong>Made quantitative (2026-07-27, simulated-reader review point):</strong> this is the table&apos;s third row, the
+            free-&#x03B3; compander against McGaugh&apos;s ν, scored on points. It is not the galaxy-level +10.9 above, which compares
+            &#x03B3; = 2 with free &#x03B3; using N = 166 galaxies (ln&nbsp;166 = 5.1). With N = 2807,
             ln&nbsp;N = 7.94, so one added free parameter costs +7.94 in BIC <em>before any likelihood
             is considered</em>. The observed +7.1 therefore implies Δχ² ≈ &minus;0.84 — the free-γ
             compander fits the data <em>marginally better</em> than McGaugh&apos;s ν and loses purely

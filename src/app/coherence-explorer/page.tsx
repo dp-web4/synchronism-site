@@ -102,7 +102,7 @@ export default function CoherenceExplorer() {
             High &#x03B3; (&gt; 1.4, small N<sub>corr</sub>) = <em>single-particle / uncorrelated</em> regime (ideal gases, free atoms);
             &#x03B3; &#x2248; 1 = where the archive&apos;s fitted chemistry &#x03B3; values cluster &mdash; nothing in C(&#x03C1;) singles it out (<a href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Boundary</a>, retracted 2026-08-09);
             low &#x03B3; (&lt; 0.6, large N<sub>corr</sub>) = <em>many particles moving together</em> (BEC, superconductors, superfluids) &mdash; which does <strong>not</strong> mean C near 1: low &#x03B3; gives <em>low</em> C at any plottable density (see &ldquo;What to notice&rdquo; below).
-            Note: these labels describe the <em>number of correlated degrees of freedom</em>, not the standard quantum/classical distinction — BEC and BCS superconductors appear in the &ldquo;collective&rdquo; basin, which is correct (they have large N<sub>corr</sub>).
+            Note: these labels come only through &#x03B3; = 2/&#x221A;N<sub>corr</sub>, the relation this page&apos;s caveat below calls sign-inverted, so under that inversion they point the wrong way (flagged 2026-10-22, graduate-physics simulated-visitor persona). They describe the <em>number of correlated degrees of freedom</em>, not the standard quantum/classical distinction — BEC and BCS superconductors appear in the &ldquo;collective&rdquo; basin, which is correct (they have large N<sub>corr</sub>).
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(239,68,68,0.06)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(239,68,68,0.4)' }}>
             <strong>&#x26A0; Sign-inversion caveat:</strong> &#x03B3; = 2/&#x221A;N<sub>corr</sub> is <em>structurally
@@ -257,7 +257,7 @@ export default function CoherenceExplorer() {
               preset puts you &ldquo;at&rdquo; a galaxy, a metal, or a brain. For named systems via N<sub>corr</sub>, use the{' '}
               <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</Link>.
             </p>
-            <p style={{ color: regimeColor, fontSize: '0.8rem', marginTop: '0.25rem' }}>{regime}</p>
+            <p style={{ color: regimeColor, fontSize: '0.8rem', marginTop: '0.25rem' }}>{regime} <span style={{ color: 'var(--color-text-muted)' }}>(label from the audited-negative N<sub>corr</sub> map, whose sign is inverted; see the caveat above)</span></p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               Higher &#x03B3; = sharper, more abrupt snap to coherent. Lower &#x03B3; = gentler slope. (The framework also wrote &#x03B3; = 2/&#x221A;N<sub>corr</sub>, which would make <em>more</em> correlated systems <em>gentler</em>. That runs backwards against real condensed-matter physics and is audited-negative; see the <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>. Treat &#x03B3; here as a shape dial only.)
             </p>

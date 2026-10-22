@@ -18,7 +18,7 @@ const regions = [
   },
   {
     id: 'boundary',
-    label: 'γ ≈ 1 (0.6–1.4) — Boundary · N_corr = 3–11',
+    label: 'γ ≈ 1 (0.6–1.4) — Crossover band · N_corr = 3–11',
     color: '#f59e0b',
     range: [0.6, 1.4],
     systems: ['Liquid water', 'Enzymes', 'Chemical bonds', 'Neural firing'],
@@ -63,6 +63,11 @@ export default function PhaseBoundaryVisualizer() {
         Formerly &ldquo;Phase Boundary Visualizer&rdquo; (the URL keeps that name). C(&#x03C1;) is analytic everywhere &mdash;
         a smooth <em>crossover</em>, not a thermodynamic phase transition &mdash; so the regimes below are ranges of
         &#x03B3;, not phases (full naming note below).
+      </p>
+      <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+        <strong>How to use it:</strong> one slider, labelled &#x03B3; (the sharpness of the S-curve), runs from 0 to 4 in steps
+        of 0.01 and starts at 1.0. Drag it and the marker moves across three &#x03B3; ranges (below 0.6, 0.6&ndash;1.4, above
+        1.4); the card under the bar describes the range you are in and says where the formula gets real physics backwards.
       </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
@@ -165,7 +170,7 @@ export default function PhaseBoundaryVisualizer() {
 
             {/* Labels */}
             <text x={30 + (0.3 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#10b981" fontSize="11">Collective</text>
-            <text x={30 + (1.0 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#f59e0b" fontSize="11">Boundary</text>
+            <text x={30 + (1.0 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#f59e0b" fontSize="11">Crossover band</text>
             <text x={30 + (2.7 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#8b5cf6" fontSize="11">Single-particle</text>
 
             {/* Anchored example markers */}

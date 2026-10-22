@@ -13,7 +13,7 @@ export default function MeasurementWithoutObservers() {
       <Breadcrumbs currentPath="/measurement-without-observers" />
       <PathNav currentPath="/measurement-without-observers" />
       <h1>Measurement Without Observers</h1>
-      <ValidationBadge status="reparametrization" label="Reparametrization — MRH crossing restates decoherence; no differing prediction; 6 experiment classes (not protocols)" />
+      <ValidationBadge status="speculative" label="Speculative — a reading of decoherence with no rate parameter, downstream of an audited-negative relation (γ = 2/√N_corr); no differing prediction; 6 experiment classes (not protocols)" />
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
         <strong>In plain words:</strong> this page is a way of <em>describing</em> decoherence, not a new test. Standard
         quantum mechanics already says no conscious observer is needed: contact with a large environment is enough.{' '}
@@ -41,7 +41,9 @@ export default function MeasurementWithoutObservers() {
         mapping &mdash; the galaxy-sector pin requires N<sub>corr</sub>&nbsp;=&nbsp;1 while the SPARC fit requires
         N<sub>corr</sub>&nbsp;&#x2248;&nbsp;17. A page whose mechanism is audited-negative is not
         &ldquo;untested&rdquo; (this page once carried that badge; it read Speculative until 2026-10-19, and
-        now reads Reparametrization, because by its own description it adds no differing prediction to decoherence);
+        read Reparametrization from 2026-10-19 to 2026-10-22, and is Speculative again because &ldquo;Reparametrization&rdquo; means
+        equivalent to existing physics in different notation, and a mechanism with no rate cannot be equivalent to decoherence theory,
+        which has rates (graduate-physics simulated-visitor persona); it adds no differing prediction either way);
         it is <strong>downstream of a negative audit</strong>. Read the protocols
         below as illustrating what the framework would predict <em>if</em> the ladder were anchored. See{' '}
         <Link href="/parameter-derivations" style={{ color: '#ef4444' }}>Parameter Derivations</Link>.
@@ -179,6 +181,13 @@ export default function MeasurementWithoutObservers() {
         </div>
 
         <h2>What&apos;s Untested</h2>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+          <strong>Bell / CHSH (S = 2&radic;2).</strong> A reading of measurement has to say how quantum correlations reach
+          Tsirelson&apos;s bound. This one does not. The framework&apos;s own local single-observer construction was run and caps at
+          S &le; 2, which Bell&apos;s theorem guarantees for any local model, and the nonlocal-grid variant sits at S = 2 as well.
+          Reaching 2&radic;2 would need an entanglement-like primitive the ontology does not contain. Details:{' '}
+          <Link href="/for-researchers#chsh" style={{ color: 'var(--color-accent-blue)' }}>For Researchers, CHSH</Link>.
+        </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Six experiment classes were sketched (Sessions #368-370) to test whether
           decoherence patterns at the MRH boundary match Synchronism&apos;s predictions. None has

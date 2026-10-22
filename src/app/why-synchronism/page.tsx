@@ -14,12 +14,12 @@ export default function WhySynchronism() {
       <PathNav currentPath="/why-synchronism" />
 
       <h1>Start Here: Why Synchronism?</h1>
-      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
-        Beginner Path, first step. This is the page the nav&apos;s &ldquo;Start Here&rdquo; points to.
-      </p>
-      <p className="hero-subtitle" style={{ marginBottom: '2rem' }}>
+      <p className="hero-subtitle" style={{ marginBottom: '0.5rem' }}>
         Physics has a fragmentation problem. Synchronism asks whether one principle
         could connect what we currently treat as separate domains.
+      </p>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '2rem' }}>
+        Beginner Path &middot; step 1.
       </p>
 
       <section className="section content-width">

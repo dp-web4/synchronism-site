@@ -97,6 +97,11 @@ export default function Home() {
 
       {/* The Equation */}
       <section className="card card-highlight" style={{ marginBottom: '3rem' }}>
+        <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0 0 0.6rem', textAlign: 'center' }}>
+          Abbreviations ahead (RAR, &Delta;BIC, BTFR, &Omega;<sub>m</sub>, N<sub>corr</sub>, CFD, SPARC):{' '}
+          <a href="#terms-on-this-page" style={{ color: 'var(--color-accent-blue)' }}>short key</a>, or the{' '}
+          <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>glossary</Link>.
+        </p>
         <div className="equation" style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>
           C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </div>
@@ -340,7 +345,7 @@ export default function Home() {
             <div style={{ fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
               Scientific Outcomes
             </div>
-            <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0 0 0.5rem', lineHeight: 1.55 }}>
+            <p id="terms-on-this-page" style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0 0 0.5rem', lineHeight: 1.55, scrollMarginTop: '5rem' }}>
               <strong>Abbreviations used in the table below:</strong>{' '}
               <strong>SPARC</strong> = a catalogue of 175 disc-galaxy rotation curves (Lelli+2016);{' '}
               <strong>BTFR</strong> = baryonic Tully&ndash;Fisher relation (galaxy mass vs rotation speed);{' '}
@@ -359,6 +364,8 @@ export default function Home() {
               <strong>DESI</strong> = Dark Energy Spectroscopic Instrument (the survey behind the BAO and growth tests);{' '}
               <strong>KiDS-1000</strong> = a weak-lensing survey (Kilo-Degree Survey, 1000 deg&sup2;);{' '}
               <strong>Youden&apos;s J</strong> = a score from &minus;1 to 1 for how well a classifier separates two classes (0 = no better than chance, 1 = perfect);{' '}
+              <strong>&Omega;<sub>m</sub></strong> = the fraction of the universe&apos;s energy in matter (&asymp; 0.315);{' '}
+              <strong>N<sub>corr</sub></strong> = the number of a system&apos;s parts that move together (the input to &gamma; = 2/&radic;N<sub>corr</sub>);{' '}
               <strong>CFD</strong> = computational fluid dynamics.{' '}
               More in the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
             </p>
@@ -377,6 +384,7 @@ export default function Home() {
               <span>Prospective predictions confirmed <em style={{ color: 'var(--color-text-muted)' }}>(predictions fixed before the data existed, then borne out)</em>: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong> <em style={{ color: 'var(--color-text-muted)' }}>&mdash; and 0 prospective tests completed at all. That does not contradict the 6 below: all six refutations ran on data that already existed, which can sink an idea but cannot confirm one (<Link href="/glossary#Prospective" style={{ color: 'var(--color-accent-blue)' }}>prospective</Link> vs <Link href="/glossary#Retrodiction" style={{ color: 'var(--color-accent-blue)' }}>retrodiction</Link>).</em></span>
               <div style={{ flexBasis: '100%' }}>
                 Refutations executed <em style={{ color: 'var(--color-text-muted)' }}>(tests that could have killed the idea &mdash; and the idea failed them)</em>: <strong style={{ color: '#ef4444' }}>6</strong>{' '}
+                <em style={{ color: 'var(--color-text-muted)' }}>(6 under the current counting rule; 4&ndash;8 under rules already on file, at most 5 independent &mdash; <Link href="/honest-assessment#count-rule" style={{ color: 'var(--color-accent-blue)' }}>why</Link>)</em>{' '}
                 &mdash; <strong>in plain words: we ran six tests that could have shown it wrong, and it lost all six.</strong>{' '}
                 <em style={{ color: 'var(--color-text-muted)' }}>(Five ran on outside data; the sixth, Bell/CHSH, is a construction check, not a data test. Whether TEST-09 and TEST-10 count as one refutation or two is pending the project lead.)</em>{' '}
                 <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six? &rarr;</Link>{' '}

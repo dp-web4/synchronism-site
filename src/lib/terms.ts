@@ -150,7 +150,7 @@ export const terms: Record<string, TermDefinition> = {
   'tanh': {
     term: 'tanh',
     fullName: 'Hyperbolic Tangent',
-    brief: 'A mathematical function that smoothly maps any input to a value between \u22121 and +1. Synchronism only ever feeds it non-negative inputs (\u03b3\u00b7ln(1 + \u03c1/\u03c1_crit) \u2265 0), so C stays between 0 and 1 with no shifting.',
+    brief: 'An S-shaped curve: as its input grows from 0 it rises steeply at first, then levels off at 1. Technically, a function that smoothly maps any input to a value between \u22121 and +1. Synchronism only ever feeds it non-negative inputs (\u03b3\u00b7ln(1 + \u03c1/\u03c1_crit) \u2265 0), so C stays between 0 and 1 with no shifting.',
     explanation: 'Think of it as a dimmer switch: small inputs pass through almost unchanged, large inputs get squashed toward the ceiling. In plain words, Synchronism picked tanh because its S-shape matches the data, not because any deeper theory demands it \u2014 any similar S-curve (logistic, erf, arctan, Hill) would fit equally well. (For physicists: in Ising mean-field theory tanh arises from the self-consistency loop m = tanh(\u03b2Jz\u00b7m); Synchronism has no such loop \u2014 the choice is phenomenological, i.e. "picked because it matches the data." See /parameter-derivations.)',
     learnMore: '/coherence-function',
   },
@@ -159,6 +159,20 @@ export const terms: Record<string, TermDefinition> = {
     fullName: 'Falsification Threshold',
     brief: 'A specific, pre-registered outcome that would falsify a prediction if observed.',
     explanation: 'Each registered test has a kill-criterion field: the result that, if observed, means the prediction is wrong. A well-formed one names a statistic, a threshold and a significance the data can deliver. Measured 2026-09-18, 2 of the 26 registered criteria meet that; 3 state any significance; 11 contain no number at all (this entry\u2019s former example, TEST-02\u2019s \u201cwide-binary anomaly is independent of local stellar density\u201d, is one of the 11). The criteria were fixed before the data were analysed \u2014 commit history shows no threshold was moved after a result \u2014 so timing is sound and specificity is the open defect. This entry used to call a kill criterion \u201ca numerical threshold\u201d and the set of them \u201cthe framework\u2019s most important methodological contribution\u201d; the count does not support either. See also Prospective and Outcome words.',
+    learnMore: '/test-catalog',
+  },
+  'crossover': {
+    term: 'Crossover',
+    fullName: 'Smooth Regime Change (vs Phase Transition)',
+    brief: 'A change from one kind of behaviour to another that happens smoothly, with no sharp threshold and no critical point.',
+    explanation: 'In a true phase transition (water freezing, a magnet losing its magnetism) some quantity changes non-smoothly at a critical point, and quantities like the specific heat show singular behaviour described by critical exponents. In a crossover the system moves between two regimes gradually, like the colour of a sky at dusk: you can say roughly where the change happens, but there is no exact point where it happens. C(\u03c1) = tanh(\u03b3\u00b7ln(1 + \u03c1/\u03c1_crit)) is smooth everywhere (no critical point, no critical exponents), so the regime changes it describes are crossovers. That is why the Crossover Regime Visualizer (formerly \u201cPhase Boundary Visualizer\u201d) and the chemistry page \u201c\u03b3 Regimes: Crossovers, Not Phase Transitions\u201d were renamed: the older names claimed a sharp transition the equation does not have.',
+    learnMore: '/phase-boundary-visualizer',
+  },
+  'pre-registration': {
+    term: 'Pre-registration',
+    fullName: 'Writing the Test Down Before Running It',
+    brief: 'Recording a prediction, the statistic it will be judged on and its kill criterion in a dated, public commit before the test is run.',
+    explanation: 'Pre-registration stops a researcher (human or AI) from choosing, after seeing the data, which number counts as the test or where the pass/fail line sits. On this site a pre-registration is a git commit (often a *_PREREG.md file next to the script) made before the analysis code exists or runs. Its hash is quoted beside the result, so anyone can check the order of events. Two things it does not guarantee: that the registered criterion was well formed (see Kill criterion: 2 of 26 registered criteria name a statistic, a threshold and a significance), and that the test is prospective (the data may already have been published; see Prospective).',
     learnMore: '/test-catalog',
   },
   'mean-field theory': {

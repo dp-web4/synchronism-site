@@ -131,6 +131,7 @@ function synchronismVel(r: number, vflat: number): number {
 export default function GalaxyPlotter() {
   const [selected, setSelected] = useState(0);
   const [showStandIn, setShowStandIn] = useState(false);
+  const [showQuad, setShowQuad] = useState(false);
   const galaxy = galaxies[selected];
 
   const svgW = 600;
@@ -198,7 +199,7 @@ export default function GalaxyPlotter() {
         <ul style={{ margin: '0.4rem 0 0', paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
           <li><strong>The dots</strong> are what telescopes measure: stars keep orbiting fast far from the centre.</li>
           <li><strong>The dashed gray line</strong> is what the visible matter alone would give. It sags below the dots. That gap is the dark-matter puzzle.</li>
-          <li><strong>Green</strong> (MOND, an existing theory) follows the dots. <strong>Solid violet</strong> (this framework&apos;s equation as written) does not: it is the gray line scaled up, still falling where the dots stay flat.</li>
+          <li><strong>Green</strong> (MOND, an existing theory) follows the dots (partly because its flat level is set from each galaxy&apos;s own speed). <strong>Solid violet</strong> (this framework&apos;s equation as written) does not: it is the gray line scaled up, still falling where the dots stay flat.</li>
           <li><strong>&ldquo;But First Encounter says the fitted &gamma; &asymp; 0.5 reproduces MOND?&rdquo;</strong> It does, and that is not a win. The fit that gives &gamma; &asymp; 0.5 feeds the equation acceleration, which is MOND&apos;s own input, instead of the density the framework names; with that swap the equation becomes MOND&apos;s formula and you get the green line back. That is why the site calls it a reparametrization. The violet line is the equation as written, keyed on density, and it fails.</li>
         </ul>
         <p style={{ margin: '0.4rem 0 0' }}>
@@ -266,7 +267,7 @@ export default function GalaxyPlotter() {
           <br />&bull; <strong>&gamma;&nbsp;=&nbsp;2</strong> &mdash; the pin refuted on the RAR at
           &Delta;BIC&nbsp;=&nbsp;+184 &mdash; strictly, that fit used the acceleration-keyed C<sub>g</sub> (keyed on g<sub>obs</sub>, no floor; not the floored C<sub>a</sub> of TEST-09/10); the density-keyed
           C<sub>&#x03C1;</sub> drawn here lost its own head-to-head by &Delta;BIC&nbsp;+2843 even with &gamma; free (<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
-          <br />&bull; <strong>&rho;<sub>crit</sub>&nbsp;=&nbsp;0.029&middot;V<sub>flat</sub><sup>+2</sup></strong>
+          <br />&bull; <strong>&rho;<sub>crit</sub>&nbsp;=&nbsp;0.029&middot;V<sub>flat</sub><sup>+2</sup></strong> (M<sub>&#x2609;</sub>/pc&sup3; with V in km/s)
           &mdash; an a&#x2080;-tracking knee would need &rho;<sub>crit</sub>&nbsp;&propto;&nbsp;V<sup>&minus;2</sup>, and the knee
           measured on SPARC has no velocity dependence at all (V<sup>&minus;0.16 &plusmn; 0.19</sup>, median 0.161&nbsp;M<sub>&#x2609;</sub>/pc&sup3;), so
           V<sup>+2</sup> is a <em>wrong exponent</em>, excluded at ~11&sigma; at galaxy level (<Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>).
@@ -509,7 +510,7 @@ export default function GalaxyPlotter() {
             <li>&ldquo;The equation never switches on here&rdquo; is a property of the calibration <strong>A = 0.029</strong>, not of
               the equation&apos;s form. <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
               Derivations</Link> records that A = 0.029 does not follow from its own stated formula, which gives
-              A &asymp; 4.6&times;10<sup>&minus;5</sup>. At that value the knee sits inside dwarf-disc densities: a
+              A &asymp; 4.6&times;10<sup>&minus;5</sup> M<sub>&#x2609;</sub>&nbsp;pc<sup>&minus;3</sup>&nbsp;(km/s)<sup>&minus;2</sup> (A = 0.029 is in the same units). At that value the knee sits inside dwarf-disc densities: a
               visitor&apos;s estimate puts C &asymp; 0.5 near the DDO&nbsp;154 midplane (an estimate, not a
               computation this page performs). The chart draws only A = 0.029.</li>
             <li>The dashed quadrature law, v&sup2; = v<sub>b</sub>&sup2; + [V<sub>flat</sub>&middot;C<sub>&#x03C1;</sub>]&sup2;, takes the observed
@@ -641,7 +642,7 @@ export default function GalaxyPlotter() {
                 tests wire it (gravity divided by C). The disk is far too thin to reach the equation&apos;s switch, so C sits on its floor and
                 the boost in gravity is the same 3.17&times; at every radius, so in speed the curve is the gray line scaled up by &radic;3.17 &asymp; 1.78&times;. It overshoots the inner points and
                 still falls at the edge, where the dots stay flat &mdash; that is the failure. The <strong style={{ color: '#c4b5fd' }}>light violet
-                dashed line</strong> is the same C wired the other way (added on top), which does nothing at all. The two wirings fail in
+                dashed line</strong> (off by default; checkbox below) is the same C wired the other way (added on top), which does nothing at all. The two wirings fail in
                 opposite directions; without the floor, the division wiring would run up to {maxRawRatio.toFixed(0)}&times; above the gray line, far off the chart.</li>
             </ol>
             <p style={{ margin: '0.4rem 0 0', fontSize: '0.82rem' }}>
@@ -652,6 +653,11 @@ export default function GalaxyPlotter() {
             <label style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', marginTop: '0.4rem', fontSize: '0.82rem', cursor: 'pointer' }}>
               <input type="checkbox" checked={showStandIn} onChange={e => setShowStandIn(e.target.checked)} />
               Show the old hand-drawn stand-in (amber dotted; <strong>not</strong> the theory, kept for the record)
+            </label>
+            <br />
+            <label style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', marginTop: '0.2rem', fontSize: '0.82rem', cursor: 'pointer' }}>
+              <input type="checkbox" checked={showQuad} onChange={e => setShowQuad(e.target.checked)} />
+              Show the second, untested wiring of the same equation (light violet dashed; it lies on the gray line, so it changes nothing here)
             </label>
           </div>
           <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', height: 'auto', display: 'block' }}>
@@ -691,11 +697,11 @@ export default function GalaxyPlotter() {
               fill="none" stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.75"
             />}
 
-            {/* C(ρ), quadrature display wiring (light violet, dashed) — hugs the baryon line */}
-            <path
+            {/* C(ρ), quadrature display wiring (light violet, dashed) — hugs the baryon line; hidden by default 2026-10-22 */}
+            {showQuad && <path
               d={modelPoints.map((p, i) => `${i === 0 ? 'M' : 'L'}${toX(p.r).toFixed(1)},${toY(p.vSynReal).toFixed(1)}`).join(' ')}
               fill="none" stroke="#c4b5fd" strokeWidth="1.5" strokeDasharray="3 3"
-            />
+            />}
 
             {/* C(ρ), division wiring g = g_bar/C floored at Ω_m (violet solid) — the form the ledger tests */}
             <path
@@ -712,20 +718,23 @@ export default function GalaxyPlotter() {
             <circle cx={pad.left + 20} cy={pad.top + 15} r="4" fill="#38bdf8" />
             <text x={pad.left + 30} y={pad.top + 19} fill="#38bdf8" fontSize="10">Observed (what telescopes measure)</text>
             <line x1={pad.left + 20 - 8} y1={pad.top + 30} x2={pad.left + 20 + 8} y2={pad.top + 30} stroke="#8b5cf6" strokeWidth="2.5" />
-            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">This framework&apos;s equation, the tested reading (failed): Newton&apos;s shape &times;{Math.sqrt(1/0.315).toFixed(2)} in speed (= &radic;{(1/0.315).toFixed(2)}, the boost in gravity)</text>
-            <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#c4b5fd" strokeWidth="1.5" strokeDasharray="3 3" />
-            <text x={pad.left + 30} y={pad.top + 49} fill="#c4b5fd" fontSize="10">Same equation, an untested display reading: no visible effect here</text>
-            <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />
-            <text x={pad.left + 30} y={pad.top + 64} fill="#22c55e" fontSize="10">MOND, the rival theory (gravity changes in weak fields)</text>
-            <line x1={pad.left + 20 - 8} y1={pad.top + 75} x2={pad.left + 20 + 8} y2={pad.top + 75} stroke="#6b7280" strokeWidth="1.5" strokeDasharray="3 2" />
-            <text x={pad.left + 30} y={pad.top + 79} fill="#6b7280" fontSize="10">Newton, visible matter only (no dark matter, no change to gravity)</text>
+            <text x={pad.left + 30} y={pad.top + 34} fill="#8b5cf6" fontSize="10">This framework&apos;s equation (tested reading, failed)</text>
+            <line x1={pad.left + 20 - 8} y1={pad.top + 45} x2={pad.left + 20 + 8} y2={pad.top + 45} stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={pad.left + 30} y={pad.top + 49} fill="#22c55e" fontSize="10">MOND, the rival theory (gravity changes in weak fields)</text>
+            <line x1={pad.left + 20 - 8} y1={pad.top + 60} x2={pad.left + 20 + 8} y2={pad.top + 60} stroke="#6b7280" strokeWidth="1.5" strokeDasharray="3 2" />
+            <text x={pad.left + 30} y={pad.top + 64} fill="#6b7280" fontSize="10">Newton, visible matter only (no dark matter, no change to gravity)</text>
+            {showQuad && <>
+              <line x1={pad.left + 20 - 8} y1={pad.top + 75} x2={pad.left + 20 + 8} y2={pad.top + 75} stroke="#c4b5fd" strokeWidth="1.5" strokeDasharray="3 3" />
+              <text x={pad.left + 30} y={pad.top + 79} fill="#c4b5fd" fontSize="10">Same equation, untested second wiring (no visible effect)</text>
+            </>}
             {showStandIn && <>
-              <line x1={pad.left + 20 - 8} y1={pad.top + 90} x2={pad.left + 20 + 8} y2={pad.top + 90} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.75" />
-              <text x={pad.left + 30} y={pad.top + 94} fill="#f59e0b" fontSize="10" opacity="0.9">NOT the theory — illustration stand-in: hand-drawn to show what a working boost would look like</text>
+              <line x1={pad.left + 20 - 8} y1={pad.top + (showQuad ? 90 : 75)} x2={pad.left + 20 + 8} y2={pad.top + (showQuad ? 90 : 75)} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="2 4" opacity="0.75" />
+              <text x={pad.left + 30} y={pad.top + (showQuad ? 94 : 79)} fill="#f59e0b" fontSize="10" opacity="0.9">NOT the theory — illustration stand-in: hand-drawn to show what a working boost would look like</text>
             </>}
           </svg>
           <p style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', margin: '0.4rem 0 0' }}>
-            Legend in plain words (shortened 2026-10-14 after a beginner simulated-visitor pass could not tell which line was the theory).
+            Legend in plain words (shortened 2026-10-14 after a beginner simulated-visitor pass could not tell which line was the theory, and again 2026-10-22).
+            The violet line is Newton&apos;s shape &times;{Math.sqrt(1/0.315).toFixed(2)} in speed (= &radic;{(1/0.315).toFixed(2)}, the floored boost in gravity).
             The technical definition of each curve (division vs quadrature reading, the &#x03A9;<sub>m</sub> floor, max C<sub>&#x03C1;</sub> on this disk = {maxC.toFixed(3)},
             the simple-&#x03BD; MOND function and its BTFR mass) is in the &ldquo;Reading this plot&rdquo; list and the formula box on this page.
           </p>
@@ -747,7 +756,7 @@ export default function GalaxyPlotter() {
             <strong> gets the shape wrong</strong>: the disk never gets dense enough for C to move off its floor
             (this galaxy&apos;s maximum C(&#x03C1;) is {maxC.toFixed(3)}; the knee needs it to approach 1), so the boost is the
             same everywhere and the curve still falls where the dots stay flat. The{' '}
-            <span style={{ color: '#c4b5fd' }}>light-violet dashed curve</span> wires the same C the other way and does nothing.
+            <span style={{ color: '#c4b5fd' }}>light-violet dashed curve</span> (behind a checkbox above the chart since 2026-10-22) wires the same C the other way and does nothing.
             The hand-tuned tanh(radius) stand-in this page displayed before 2026-07-08 (it fit because it was drawn to fit) is behind
             the checkbox above the chart. Full disclosure of the formulas below the plot.
           </p>

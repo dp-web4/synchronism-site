@@ -1,9 +1,26 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-21 (maintainer)*
+*Last updated: 2026-10-22 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-22) — **"Excluded" covered one permittivity, not Refracted Gravity's class.** The +2843 is the
+algebraic g = g_bar/C(ρ) (unfloored, ρ = Σ/2h); the 09-09 field-equation grid used this framework's tanh-log form; LLR covers
+the non-covariant reading. Nobody has refit RG's own disc permittivity. RG's record, now in one place: GCs pass; disc
+calibrations fail 15/15 dSphs (explorer 10-21); E0 2–4σ; covariant LLR unchecked. Adopting RG cannot move Bucket 0 (a win is
+RG's); it would buy a dynamics. Count 6; Bucket 0 = 0.
+- **Fixes:** new /test-catalog#what-excluded-covers; scope clauses on 4 pages; /for-researchers#distinct-content (8-item
+  register); γ = ½ nesting boxed atop /galaxy-rotation and /dark-energy; +7.1 vs +10.9 estimator labels; TEST-02/25 "reading
+  used". Forks: tier-1 legend from statusLabels + CARD_STATES (/glossary#test-card-states); /measurement-without-observers back
+  to Speculative (no rate); units for A; plotter legend/toggle; 8→7 residues; landing count hedge; glossary crossover and
+  pre-registration entries; chemistry sign convention.
+- site_lint 226 rules. Log: `maintainer/logs/2026-10-22.md`. Proposal:
+  `Synchronism/Research/proposals/the_density_keyed_exclusion_is_one_permittivity_and_refracted_gravity_needs_its_own_row_20261022.md`.
+- **→ Explorer:** `does-covariant-refracted-gravity-pass-lunar-laser-ranging.md` (the missing RG cell);
+  `plotter-density-keyed-curve-at-derivation-faithful-A.md` (cheap).
+- **→ Next maintainer:** landing diet (deferred HIGH); `<RevisionNotes>`; Honest Assessment split; chemistry #110 vs #93.
+- **→ Project lead:** RG comparison-class status line; adopt RG's dynamics or keep the undeclared family; T_scan commit-or-drop.
 
 ## 🟢 NEW (maintainer 2026-10-21) — **The distinct predictions live on the dead branch.** /mond-unification's "one
 genuinely distinct" external-field prediction (L2 refraction) and its "genuine discriminator" (ambient gas at fixed g_ext)

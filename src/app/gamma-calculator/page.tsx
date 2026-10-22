@@ -32,7 +32,7 @@ export default function GammaCalculator() {
         <Link href="/interactive-tools" style={{ color: 'var(--color-accent-blue)' }}>&larr; Interactive Tools</Link>
       </p>
       <div style={{ display: 'flex', alignItems: 'baseline', gap: '1rem', flexWrap: 'wrap', marginBottom: '0.5rem' }}>
-        <h1 style={{ margin: 0 }}>&#x03B3; Calculator</h1>
+        <h1 style={{ margin: 0 }}>&#x03B3; Calculator <span style={{ fontSize: '0.55em', fontWeight: 400, color: 'var(--color-text-muted)' }}>&mdash; a &#x03B3; formula kept to show how it fails</span></h1>
         <ValidationBadge status="audited-negative" label="Formula Audited-Negative — Sign Inverted for All Collective Systems" />
       </div>
       <p style={{ color: 'var(--color-text-primary)', fontSize: '1rem', marginBottom: '0.5rem' }}>
@@ -68,7 +68,7 @@ export default function GammaCalculator() {
         &#x03B3; = 2/&#x221A;N<sub>corr</sub> assigns the <em>sharpest</em> coherence transition to the
         least-correlated system (ideal gas) and the <em>flattest</em> to the most-correlated (BCS
         superconductor) — the opposite of real condensed-matter transitions. This is a structural
-        inversion in the formula (Caveat 2 below), not a calibration issue. This tool is preserved
+        inversion in the formula (Caveat 2 below), not a calibration issue. One vivid case: &#x03B3; = 2, the framework&apos;s original galaxy value, maps to N<sub>corr</sub> = 1, the ideal-gas row, so on its own map the galaxy guess says a galaxy is &ldquo;uncorrelated&rdquo;. This tool is preserved
         for exploration; treat its outputs as &ldquo;what the inverted formula predicts&rdquo; rather
         than as physical estimates.
       </p>

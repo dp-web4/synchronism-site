@@ -29,6 +29,7 @@ const coreTools = [
     href: '/coherence-explorer',
     desc: 'Drag γ and ρ_crit sliders and watch the C(ρ) curve update live. See how the sparse/independent → dense/collective transition sharpens or flattens. Best first tool.',
     level: 'Beginner',
+    state: 'none (a shape demonstration, not a failure lesson)',
     epistemic: 'core' as EpistemicStatus,
     pageBadges: ['reparametrization'] as ValidationStatus[],
   },
@@ -38,12 +39,11 @@ const coreTools = [
     desc: 'Pick a real galaxy and see the dark-matter problem: the gray line (what visible matter alone predicts) sags below the measured dots. The green line (MOND, an existing theory) follows the dots. The violet line (this framework\'s equation as written) does not: it sags like the gray one. The page explains why, and the wiring details sit on the tool page.',
     level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
+    state: 'Artifact Lesson',
     pageBadges: ['failed', 'reparametrization'] as ValidationStatus[],
-    // 2026-10-12: two bare badges ran together on this card with no indication which applied to what
-    pageBadgeLabels: {
-      failed: 'published density law (γ = 2, ρ_crit = 0.029·V_flat²), division wiring g = g_bar/C',
-      reparametrization: 'hand-drawn stand-in / fitted γ ≈ 0.49 = MOND',
-    } as Partial<Record<ValidationStatus, string>>,
+    // 2026-10-12: two bare badges ran together with no indication which applied to what; 2026-10-22 the
+    // long per-badge labels moved into badgeNote so each badge is one term (tech-writer persona).
+    badgeNote: 'Failed = the published density law (γ = 2, ρ_crit = 0.029·V_flat²) with division wiring g = g_bar/C. Reparametrization = the hand-drawn stand-in, whose fitted γ ≈ 0.49 is MOND.',
   },
   {
     title: 'γ Calculator',
@@ -68,6 +68,7 @@ const coreTools = [
     href: '/equation-walkthrough',
     desc: 'Step-by-step breakdown of C(ρ) = tanh(γ·ln(ρ/ρcrit + 1)). Each step shows one piece of the equation, why it was chosen (nothing here is derived), and which choices are known to be broken.',
     level: 'Intermediate',
+    state: 'Artifact Lesson',
     epistemic: 'core' as EpistemicStatus,
     pageBadges: ['audited-negative'] as ValidationStatus[],
   },
@@ -196,7 +197,8 @@ export default function InteractiveTools() {
                 {'pageBadges' in tool && tool.pageBadges ? (
                   <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', alignItems: 'center', marginTop: '0.5rem', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
                     Badge on its page:
-                    {tool.pageBadges.map(b => <ValidationBadge key={b} status={b} label={'pageBadgeLabels' in tool ? tool.pageBadgeLabels?.[b] : undefined} />)}
+                    {tool.pageBadges.map(b => <ValidationBadge key={b} status={b} />)}
+                    {'badgeNote' in tool && tool.badgeNote ? <span style={{ flexBasis: '100%' }}>{tool.badgeNote}</span> : null}
                   </div>
                 ) : null}
               </div>

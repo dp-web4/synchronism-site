@@ -45,7 +45,7 @@ const pendingTests = [
 const proposedTests = [
   {
     id: 'TEST-26 (proposed)',
-    name: 'DESI DR3 Dark-Energy Class No-Go (kill-or-tie)',
+    name: 'DESI DR3 Dark-Energy Class No-Go (Self-Eliminating-or-Tie)',
     status: 'DRAFTED 2026-08-10 — HARDENED TO MODEL CLASS 2026-08-11 — ADOPTION GATES ON OPERATOR',
     verdict: 'KILL IS SHARED WITH ΛCDM (2026-09-27); WIN SIDE SHARED WITH CONSTANT-w CARDASSIAN (2026-10-08: wCDM fits any DR2-allowed point on the framework\'s curve to Δχ² ≤ 0.42 on DR3-like data; resolving the shape needs γ ≈ 0.30, excluded by DR2 at Δχ² = 137): the family contains ΛCDM at γ = ½, so its kill fires only when DR3 excludes Λ in the thawing or crossing direction, and that refutes ΛCDM equally. It cannot single out the framework. Its only non-Λ outcome (freezing away from Λ) is a win branch for Cardassian-class prior art. | The framework\'s cosmic sector (Session 100: G_eff = G/C in the Friedmann equation, C₀ = Ω_m forced, γ the only parameter) cannot produce the w = −1 crossing DESI DR2 prefers (w₀ > −1 with wₐ < 0, all four data combinations) — and as of 2026-08-11 that statement holds for the model CLASS, not just the model as specified. The originally drafted criterion targeted the substituted model\'s literal sign lock, sign(w₀ + 1) = sign(wₐ); the covariant completions were then derived and the literal lock DIED (the Brans-Dicke completion populates mixed-sign pairs, and the Appendix-D equation as written has no dark-energy sector at all) while the no-go HARDENED: every consistent completion misses the DESI quadrant — 0/192 γ values at four Brans-Dicke ω; forced wₐ comes out +0.23…+0.60, wrong sign every time (this is the Brans-Dicke covariant completion with w₀ forced to DESI\'s value; the non-covariant substituted family\'s best fit is a different object, (w₀, wₐ) = (−0.993, +0.023), i.e. ΛCDM; see /dark-energy). The class statement to register: dark energy slaved to matter density reaches the DESI quadrant iff ρ_DE(x) has an interior maximum, and no completion of C = tanh(γ·ln(1+x)) produces one. Kill fires if DR3 (full published covariance, Ω_m and r_d·H₀ marginalised, one SNe compilation fixed in advance) robustly requires the crossing the class cannot produce — with a pre-committed projection-robustness check, since the CPL (w₀, wₐ) crossing preference is itself debated as a parameterization artifact (Shlivko & Steinhardt 2024; Cortês & Liddle 2024 — a debate that cuts in the framework\'s favor and is cited both ways). NOT discriminating in the confirming direction — though the tie is now conditional: the γ = 1/2 = ΛCDM identity is a property of the substitution (completion B has no ΛCDM member), so "kill-or-tie" is substitution-conditional. Timeline: DESI DR3 ~2027–2028. Full derivation and honest bounds: /dark-energy and /honest-assessment#dark-energy.',
   },
@@ -121,7 +121,7 @@ export default function Top5Tests() {
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>{' '}
           while this page — the one a researcher opens to find what could still work — kept advertising
           them. That propagation lag is the defect a simulated-visitor Pass 3 caught, not the emptiness.{' '}
-          <strong>One candidate has appeared since (2026-08-11):</strong> a proposed kill-or-tie
+          <strong>One candidate has appeared since (2026-08-11):</strong> a proposed Self-Eliminating-or-Tie
           pre-registration against DESI DR3 (TEST-26, below) &mdash; falsifiable only jointly with &Lambda;CDM (its kill
           refutes &Lambda;CDM too, because the family contains &Lambda;), and expected only to kill or tie: it would <em>select</em> the framework over &Lambda;CDM only if DR3 landed in the
           quadrant it allows at a &gamma; measurably away from &frac12; (unlikely on current data, not impossible &mdash;
@@ -176,7 +176,7 @@ export default function Top5Tests() {
           Closed self-eliminating: <strong>1</strong> (TEST-02) &nbsp;|&nbsp;
           Not rankable, observables undefined: <strong>1</strong> (TEST-11 consciousness) &nbsp;|&nbsp;
           Monitoring: <strong>1</strong> (TEST-07 no derivation) &nbsp;|&nbsp;
-          Proposed prospective, kill-or-tie: <strong>1</strong> (TEST-26 DESI DR3 sign-lock — adoption gates on operator)
+          Proposed prospective, Self-Eliminating-or-Tie: <strong>1</strong> (TEST-26 DESI DR3 sign-lock — adoption gates on operator)
         </div>
 
         <h3 style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.75rem' }}>
@@ -298,7 +298,7 @@ export default function Top5Tests() {
           <p style={{ color: 'var(--color-text-secondary)' }}>
             With zero active discriminating tests, the strategy is no longer &ldquo;run the next test&rdquo; —
             it is to hold the two falsifiable positions the framework still occupies, both prospective and
-            both kill-or-tie: the adopted DESI DR2 f&sigma;&#x2088; pre-commitment (adjudicates ~Spring 2027)
+            both Self-Eliminating-or-Tie: the adopted DESI DR2 f&sigma;&#x2088; pre-commitment (adjudicates ~Spring 2027)
             and the proposed TEST-26 DESI DR3 sign-lock registration (above; adoption gates on the operator).
             Neither can select the framework over &Lambda;CDM; each can kill it or retire cleanly. That is what
             remains when the discriminating list is honestly empty.

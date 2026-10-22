@@ -418,7 +418,7 @@ export default function HonestAssessment() {
           bins (Brouwer et al. 2021; explorer 2026-10-04, pre-registered, script{' '}
           <code style={{ fontSize: '0.78rem' }}>explorer/findings/scripts/lensing_cap_on_kids_bins.py</code>) it is excluded only if
           galaxies carry less than ~2&ndash;3× their stars plus cold gas out to ~0.3&ndash;1 Mpc, and the face-value exclusion
-          (boost ≈ 300 at 10⁻¹⁵ m/s²) sits in bins the data paper flags for satellite contamination. (Until 2026-10-06 this sentence led with a lensing kill &ldquo;1.71× short at 10⁻¹⁵&rdquo;,
+          (observed boost ≈ 300 on the lowest published bin, g<sub>bar</sub> ≈ 1.4×10⁻¹⁵ m/s²; MOND&apos;s √(a₀/g) there is ≈ 295 at a₀ = 1.2×10⁻¹⁰) sits in bins the data paper flags for satellite contamination. (Until 2026-10-06 this sentence led with a lensing kill &ldquo;1.71× short at 10⁻¹⁵&rdquo;,
           read off a represented curve rather than the published bins.) The kill that carries it predates SPARC by two decades: the classical dwarf spheroidals (Draco, Ursa Minor, Sextans) have dynamical
           M/L<sub>V</sub> ≈ 100–300 (Mateo 1998; Walker et al. 2009), boosts of 30–100 under any stellar M/L, above every cap; MOND has its own
           dSph problems (external field, tides), so cite this against the ceiling, not as a discriminator against MOND (added 2026-09-29). Stated as a class
@@ -967,8 +967,10 @@ export default function HonestAssessment() {
               presenting +184 as the density-keyed kill while <Link href="/coherence-function" style={{ color: '#f87171' }}>Coherence
               Function</Link> says every fit ran in acceleration. The density-keyed law has its own refutations, and they are
               stronger: head-to-head on the same SPARC points with γ <em>free</em> it loses at <strong>ΔBIC +2843</strong>{' '}
+              (read algebraically, g = g<sub>bar</sub>/C; this excludes the framework&apos;s permittivity, not the Refracted Gravity
+              field-equation class it belongs to: <Link href="/test-catalog#what-excluded-covers" style={{ color: '#f87171' }}>what &ldquo;excluded&rdquo; covers</Link>){' '}
               (best-fit γ → 0.046, i.e. density-dependence switched off), its floored form is capped by the boost ceiling
-              (B<sub>max</sub> = 3.17 vs the 13.7 SPARC dwarfs require; lensing ν = 110–347), and at the solar Oort limit it
+              (B<sub>max</sub> = 3.17 vs the 13.7 SPARC dwarfs require; lensing ν = 110–347, MOND&apos;s √(a₀/g) at 10⁻¹⁴–10⁻¹⁵ m/s² with a₀ = 1.2×10⁻¹⁰), and at the solar Oort limit it
               predicts f<sub>DM</sub> = 0.685 against 0.13 ± 0.04 for any knee above ~0.15 M<sub>☉</sub>/pc³. The strongest
               real-data constraint on it is not on SPARC at all: <strong>lunar laser ranging</strong>. A boost shared by a whole
               neighbourhood cancels in any same-instant ratio, but not in time. The Sun moves through the disc and past nearby
@@ -1572,7 +1574,7 @@ export default function HonestAssessment() {
             <li><strong>Galaxies, the fit that works</strong>: x = observed acceleration / a₀′ (C<sub>g</sub>). SPARC fits γ = 0.489 ± 0.11
               (statistical; the stellar mass-to-light choice moves it from 0.27 to 0.96). At γ = ½ this is MOND&apos;s simple μ exactly.</li>
             <li><strong>Galaxies, the framework&apos;s own variable</strong>: x = local density (C<sub>ρ</sub> again). SPARC drives γ to 0.046
-              and rejects the law (ΔBIC +2843).</li>
+              and rejects the law (ΔBIC +2843, algebraic reading g = g<sub>bar</sub>/C).</li>
           </ul>
           <p style={{ margin: '0 0 0.5rem' }}>
             <strong>Why this matters (a simulated-visitor researcher persona asked, 2026-10-15):</strong> if one γ ran every sector,

@@ -45,3 +45,15 @@ code was run.
   therefore be a renormalization of G, which would require Ω_b ≈ 0.3 against η-based ≈ 0.05.
 - The scalar range ~ H₀⁻¹ makes "locally measured G" partially Yukawa-suppressed on Hubble scales, so this is not clean.
 - Flagged as an open thread only.
+
+## Addendum (2026-10-22, before the script ran)
+- **P6 (analytic, LLR — Nordtvedt).** The static linearized ij equations of CRG (their Eq. 8, outside matter, T_ij = 0)
+  together with the scalar equation force the spatial potential U ≡ 0, so γ = 0. Brans–Dicke has β = 1, so the Nordtvedt
+  parameter is η_N = 4β − γ − 3 = 1/(2+ω) = 1.
+  - LLR bounds: η_N = (4.4 ± 4.5)×10⁻⁴ (Will 2014 review), and (2.0 ± 4.0)×10⁻⁴ (Hofmann/Müller workshop table, read
+    secondhand from a search snippet: recall-level).
+  - Prediction: CRG sits ≥ 2×10³σ off.
+  - **Refuted if** the sympy linearization gives U ≠ 0 (so γ ≠ 0).
+- Value provenance: Ġ/G = (7.1 ± 7.6)×10⁻¹⁴ yr⁻¹ is quoted as Hofmann & Müller 2018 (CQG) in two prior findings. The
+  workshop paper shows (1.4 ± 1.5)×10⁻¹³ (older reduction). The verdict is insensitive to this choice (3 orders of
+  margin), and the script will report both.

@@ -1,1 +1,32 @@
 Starting Synchronism Explorer Session at Thu Oct 22 08:00:01 PDT 2026
+Covariant Refracted Gravity (RG) fails lunar laser ranging (LLR) twice and Cassini once, and its weak field doesn't reproduce RG at all. So the "adopt RG's dynamics" option has no working dynamics behind it.
+
+**WAKE.** The topic asked a narrow question: does the permittivity drift as the Sun orbits the galaxy? Underneath it was an untested assumption, that the covariant theory (Sanna, Matsakos & Diaferio 2023) actually reduces to RG in the weak field. That had only been read from the abstract, never executed, so I widened the question to cover it.
+
+**Results.** I read the equations from the paper's arXiv source. Pre-registration is in commits `4e3898f` and `1244148`; the analytic parts were worked out while reading, which the pre-registration says.
+- **The scalar equation is exactly linear,** □φ − 2Ξφ = 8πG T (checked in sympy). That makes the theory ω = −1 Brans–Dicke with a scalar of about 2.2 Gpc range. Nothing in a linear equation can screen, so the paper's screening argument doesn't hold.
+- **Cassini:** the light-bending parameter γ_PPN comes out exactly 0 (GR has 1), about 4×10⁴σ off.
+- **LLR, Nordtvedt test:** η = 1, about 2×10³σ off.
+- **LLR, Ġ/G:**
+  - The paper's own cosmology forces |Ġ/G| ≥ 0.99 H₀ at every allowed parameter point. That is at least 900σ off, and 2,574σ at the paper's best fit.
+  - The orbital drift the topic asked about is 8×10⁻¹⁶ per year, which passes. The theory tracks the potential, not the density, so the mechanism from the earlier LLR finding doesn't apply.
+- **Weak field:** φ varies by at most 10⁻⁴ across a galaxy, so the theory never produces RG's density-dependent permittivity. Its rotation curves are Newtonian to 10⁻⁵, and the paper's far-field relation has no real solution inside about 200 kpc.
+
+**Correction to our own record.** This track's 09-19 high-priority note said "'No covariant completion exists' is false". The site took that up, and the /honest-assessment row now says RG's completion is "exactly what this framework lacks". Run through the equations, that reverses: neither RG nor this framework has a field equation derived from a theory that survives.
+
+**For the maintainer:**
+- Fix the RG row on /honest-assessment and the "covariant … unchecked" line in /test-catalog#what-excluded-covers.
+- Add a lint rule for the old wording.
+- Back-annotate line 28 of today's proposal, which calls the completion unchecked.
+
+**For you to decide:** whether to tell the RG authors. I found no published Solar System test of their covariant theory, so this would be new to them, and contacting them is outward-facing.
+
+**So what?** This changes a pending decision and gives a result about someone else's published theory. It doesn't move the count of 6 or Bucket 0. One open thread is untested: no standard scalar–tensor theory seems able to produce a density-dependent permittivity, since the field only shifts by about (Φ/c²)/(3+2ω). If that holds, density-keyed gravity would have no covariant theory behind it at all.
+
+The finding is `explorer/findings/covariant-refracted-gravity-is-omega-minus-one-brans-dicke-fails-cassini-llr-and-never-reproduces-rg.md`. I archived the topic, wrote the session log, updated SESSION_FOCUS, pushed (`542da52`), and saved one memory: restore c before crediting a weak-field reduction.
+
+Sources:
+- [Covariant formulation of refracted gravity (arXiv:2109.11217)](https://arxiv.org/pdf/2109.11217)
+- [Refracted Gravity Solutions from Small to Large Scales (arXiv:2404.06538)](https://arxiv.org/pdf/2404.06538)
+- [Müller et al., LLR workshop paper](https://ilrs.gsfc.nasa.gov/lw18/docs/papers/Session9/13-04-02-MuellerJM.pdf)
+- [Will, The Confrontation between GR and Experiment (arXiv:1403.7377)](https://arxiv.org/pdf/1403.7377)

@@ -1,3 +1,31 @@
 Starting Synchronism Maintainer Session at Thu Oct 22 06:00:01 PDT 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+I've pushed both repos: the site as `9e94061` (Vercel deploys from that) and the research repo as `81303040`. The build passes (93/93 pages) and the site lint is clean.
+
+**What the visitor feedback showed about the research.** The site called the density-keyed branch "excluded", credited its field equation to Refracted Gravity (RG), and also said RG "is not excluded". I checked the script behind the ΔBIC +2843: it fits the algebraic `g = g_bar/C(ρ)`, not the solved field equation. Lunar laser ranging covers only one reading, and nobody here has refit RG's own permittivity on disc galaxies. So "excluded" was true of this framework's permittivity but was worded as if it covered RG's whole class.
+
+RG's actual record, now gathered in one place:
+- **Globular clusters:** it passes.
+- **Dwarf spheroidals:** its disc calibrations fail all 15 dwarfs (from yesterday's explorer run), and its elliptical calibration is in 2–4σ tension.
+- **Lunar laser ranging, covariant version:** unchecked. That is the one missing cell.
+
+The researcher persona suggested the framework adopt RG. I disagree with half of that, and the proposal I wrote says why. Adopting RG cannot add a confirmed prediction, because any win would be RG's, published ten years earlier. What it would buy is a defined dynamics, which would settle the site's open "which dynamics?" question by borrowing one. That choice is yours.
+
+**Site changes:**
+- **Scope of "excluded":** a new section at `/test-catalog#what-excluded-covers`, scope clauses on four pages, and the explorer's satellite-refraction result in place of "not computed".
+- **One register:** `/for-researchers#distinct-content` lists all eight things on the site that differ from MOND, ΛCDM or standard QM, with status, prior art and cheapest test. The persona's proposed cheap test for the scan-period idea (microsecond sidebands in clock data) would test a version that is already excluded, and the register says so.
+- **γ = ½ point:** a boxed note at the top of /galaxy-rotation and /dark-energy says that landing on γ ≈ ½ in both galaxies and cosmology is each dataset picking its own standard model, not agreement between sectors. This was already on those pages, but buried mid-paragraph.
+- **Labels:** the Tier 1 badge legend now comes from the same source as the main one, and the operational states have a definitions table. /measurement-without-observers is back to Speculative, because a mechanism with no rate parameter can't be "equivalent in different notation". Plus about twenty smaller fixes from three parallel subagents.
+- **Number checks:** the persona's "350 vs ≈300" inconsistency turned out to be two correct numbers for different quantities, so I labelled both rather than changing either. The "dim-4 Lorentz violation marked untested" complaint came from a fetch summary and was already correct on the page; I made the wording more explicit.
+
+**Research repo:** a new 2026-10-22 block in PREDICTIONS.md and a proposal in `Research/proposals/`. No bucket moves: count stays 6, confirmed novel predictions stay 0. Two new explorer topics: whether covariant RG passes lunar laser ranging, and a cheap galaxy-plotter run at the derivation-based value of A.
+
+**Deferred:** the landing-page cut (the enthusiast's HIGH item; only the hedge beside the "6" and an abbreviations pointer went in), the shared revision-notes component, and splitting Honest Assessment.
+
+**Your calls:**
+- whether RG gets its own status line beside the density-keyed rows;
+- whether to adopt RG's dynamics or keep the undeclared family;
+- whether to commit to the scan-period bet or drop it.
+
+There were no external issues or PRs to act on today.

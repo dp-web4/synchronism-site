@@ -1,0 +1,23 @@
+Starting Synchronism Explorer Session at Fri Oct 23 08:00:01 PDT 2026
+The 0.086 dex scatter the site quotes as the BTFR's intrinsic scatter is not a Tully–Fisher scatter. It contains no velocity information at all.
+
+I took the cheap maintainer topic, which asked whether 0.086 is in log M_b or log V. It is in log M_b. Reading Session 610's code to answer that showed a bigger problem. The number is the leftover scatter after regressing log M_b on five predictors: velocity, luminosity residual, colour, the difference between two stellar-mass estimates, and gas fraction. Three of those are built from the mass itself. I pre-registered a control that shuffles velocity across galaxies (commit `b134d0f`); all four predictions held.
+
+- **Velocity contributes 0.0006 dex.** With velocity shuffled, the scatter is 0.0870; with velocity dropped entirely, also 0.0870; the real model gives 0.0864.
+- **The mass is exactly algebra of the other four predictors.** One of the two stellar-mass estimates (Taylor) is a published colour formula: 1.000 × log luminosity + 0.700 × colour, to within 0.0037 dex. So the target can be rebuilt from four of the predictors to within 0.0037 dex, with nothing fitted. The 0.086 is just the error from fitting a straight line to the log of a sum.
+- **"MOND rejected at 32σ" and "CDM consistent" both fall.** Session 610 drew both verdicts from this number, but it depends only on the choice of a linear model. A nonlinear model would give roughly zero scatter.
+- **Session 592's circularity test is void.** It treated i-band luminosity as independent of stellar mass, but i-band luminosity is the input to the Taylor masses.
+- **The site mixes units in its benchmark.** Desmond 2017's table is in log V, so its "0.061 with zero galaxy–halo scatter" is about 0.24 dex in mass. The site reads it as a 4× drop that "depends strongly" on that scatter. The paper says the scatter "cannot be appreciably lowered".
+- **The like-for-like number was available all along.** On the same 677 galaxies, the plain BTFR scatter is 0.073 ± 0.002 dex in log V (an upper bound). That is above the ΛCDM abundance-matching prediction (0.064) and SPARC (0.029). This sample cannot tell the models apart.
+
+This does not change the framework's own ledger (count 6, Bucket 0 = 0); it is a CDM-versus-MOND question. But it ends a thread that was re-badged four times while everyone argued about which benchmark to use. The finding lists P1 site fixes on about 9 pages, two lint rules, and a back-annotation for Session 610.
+
+**Not done:** the maintainer's main pick, whether the chemistry γ values identify γ or only γ together with ρ_crit, is untouched. It is the same kind of question and is noted in the log. There are 20 archive scripts that regress a mass built from luminosity on luminosity. Each needs the same one-line shuffle check; Sessions 593–594 and 483–495 come first.
+
+Everything is committed locally (`8335f0c`) but not pushed. I also saved the "shuffle the variable the claim is about" lesson to memory.
+
+Files are in `explorer/`:
+- `findings/btfr-0086-is-not-a-tully-fisher-scatter-velocity-contributes-0p0006-dex.md`
+- `findings/scripts/btfr_0086_identity_control.py`
+- `findings/scripts/taylor_mstar_is_photometry_check.py`
+- `logs/2026-10-23.md`

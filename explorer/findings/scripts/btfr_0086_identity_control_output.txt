@@ -1,0 +1,22 @@
+======================================================================
+SESSION #610: CDM Discrimination Synthesis — What ALFALFA-SDSS Shows
+======================================================================
+
+Loading data...
+  Quality-filtered: 14435 galaxies
+N_opt = 677
+R0  5-var   sigma_int = 0.0864 +- 0.0027  (rms 0.0942, LOO R2 0.958)
+R0  BTFR    sigma_int = 0.2695 +- 0.0076  (rms 0.2757, LOO R2 0.653)
+R1  shuffled-V 5-var sigma_int: median 0.0870  [2.5,97.5]% 0.0867-0.0870; LOO R2 median 0.957
+R1b no-V  (logL, dSPS, g-i, f_gas) sigma_int = 0.0870  LOO R2 0.957
+    velocity adds: 0.0870 -> 0.0864
+R2  colour-only (logV, g-i) sigma_int = 0.2689 +- 0.0076  LOO R2 0.652
+R3  forward slope dlogM/dlogV = 3.017; inverse slope dlogV/dlogM = 0.217 (1/inv = 4.607)
+    rms in log V at fixed M = 0.0740 dex; x(1/inverse slope) = 0.3407 dex in M
+    forward rms in log M at fixed V = 0.2757; x forward slope^-1 = 0.0914 dex in V
+    -> compare Desmond 2017 (log V_f dex): SPARC 0.029, AM 0.064, AM-scatter-0 0.061
+coef S610 form [V, TFRres, dSPS, g-i, fgas]: +3.349, +0.902, -0.449, +0.629, +1.036
+coef same span [V, logL, dSPS, g-i, fgas]: +0.173, +0.902, -0.449, +0.629, +1.036
+R3b plain inverse BTFR sigma_int in log V = 0.0733 +- 0.0020 dex (median noise 0.0083)
+     V in [80,150) km/s: N=490, sigma_int(log V) = 0.0723
+     V in [150,400) km/s: N=187, sigma_int(log V) = 0.0758

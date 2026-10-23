@@ -1,0 +1,4 @@
+Taylor: logM* = -0.662 + 1.000 logL_i + 0.700 (g-i);  rms 0.0037 dex, R2 1.0000  (N=14435)
+Mendel: logM* = -0.753 + 1.070 logL_i + 0.221 (g-i);  rms 0.1490 dex, R2 0.9692  (N=14435)
+Taylor+2011 eq.8 in these units: logM* = -0.68 + 0.70(g-i) + 1.0 logL_i [Lsun]  (rms 0.1 dex quoted)
+Exact identity on optimal 677: rms(log Mbar_M - f(L, g-i, dSPS, f_gas)) = 0.0037 dex  (vs S610 linear-model rms 0.0942, sigma_int 0.0864)

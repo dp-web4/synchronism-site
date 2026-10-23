@@ -1,3 +1,40 @@
 Starting Synchronism Maintainer Session at Fri Oct 23 06:00:01 PDT 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+I fixed the explorer's covariant Refracted Gravity action, all three HIGH items from today's visitor log, and most of the MEDIUM ones. Everything is pushed in three site commits and one research-repo commit; Vercel will redeploy. The build passes, all 234 lint rules pass, and the 8 new rules fire on the old wording in HEAD.
+
+**The research finding:** in C = tanh(γ ln(1+ρ/ρ_crit)), γ isn't a "sharpness".
+- **What γ does:** it sets the starting slope and how fast C approaches 1. At large γ it mostly moves the knee rather than sharpening it.
+- **How strong the overlap is:** if ρ_crit is refit, γ = 2 and γ = 4 never differ by more than 0.020 in C across seven decades of density. At SPARC densities only the ratio γ/ρ_crit matters.
+- **Consequence:** γ = 2/√N_corr can't be tested by any density-based fit unless ρ_crit is fixed independently, and ρ_crit's coefficient is itself fitted. It also means the free density fit's γ = 0.046 says nothing about γ on its own.
+
+A grad-student persona proposed this. I checked it numerically (`maintainer/scripts/gamma_rho_crit_degeneracy.py`), and it's an estimate, not pre-registered. I wrote it up as a proposal and a PREDICTIONS block. The confirmed count stays at 0 and the refutation count stays at 6.
+
+**Site fixes:**
+- **Refracted Gravity:** three pages had credited its covariant version or called it "unchecked". The explorer's 10-22 result is that it fails Cassini by about 4×10⁴σ and lunar laser ranging by at least 900σ, and it doesn't reproduce RG's galaxy behaviour. All three pages now say so.
+- **Wide binaries (TEST-02):** six pages still said the signal is "~80× below reach". They now say the density version predicts exactly no effect, which matches Tier 1.
+- **Refutation definition:** /honest-assessment and the glossary now use one rule, which matches the footer's "5 on external data + 1 construction check".
+- **Landing Quantum card:** changed to Speculative, to match the page it links to.
+- **A2ACW's 1.4% survival rate:** no longer called an upper bound. The filter also flags real discoveries (it flagged all six canonical ones in calibration), so the rate bounds nothing until the post-cutoff test runs.
+- **Smaller fixes:**
+  - 0.446 → 0.448, and the 644× now states its inputs (635× with the rounded 0.029).
+  - The 0.086 dex figure is labelled as BTFR scatter, not RAR.
+  - "Withdrawn" and "Underpowered as Registered" each belong to one label system now.
+  - The /for-researchers opening is shorter, and its "not refuted" Lorentz-violation classification is now argued.
+  - New glossary entries for AQUAL and Cardassian; missing landing abbreviations added.
+- **Renamed URL:** the visualizer is now at /crossover-regime-visualizer, and the old /phase-boundary-visualizer link redirects there.
+
+**Back to the research repo:** the 10-22 proposal's "unchecked" line and PREDICTIONS' "LLR status unchecked" are annotated with the covariant RG result. The new proposal is `gamma_is_identified_only_jointly_with_rho_crit_and_covariant_rg_closes_the_rg_fork_20261023.md`.
+
+**New explorer topics:**
+- Whether the archive's chemistry γ values measure γ at all, or only γ together with the knee.
+- Whether the 0.086 dex scatter is in mass or in velocity. That decides which way the comparison with Desmond's 0.25 dex goes.
+
+**Deferred:** collapsing the landing stats block (deferred since yesterday), breadcrumb sections with no hub page, and the remaining acronym glosses.
+
+**For you:**
+- The "adopt RG's dynamics" option has no working dynamics behind it, so the choice is now "build a covariant completion or keep the current undeclared family".
+- Two personas independently asked why a test registry with no possible win is still presented as a forward programme. That's the 10-04 stopping question coming back from readers.
+- The open outside issue, Synchronism#4 (a proposed holdout test for the "generative" claim), already has a fleet comment from 10-13. No new reply is drafted.
+
+**So what:** the γ result changes what testing γ = 2/√N_corr can even mean; the rest was propagating fixes to summary pages. Today's eight lint rules are another hand patch for updates that reach the destination page but not the summaries. The structural fix is a lint that checks each page's badge against every card that links to it. I haven't built it.

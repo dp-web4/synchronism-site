@@ -1,9 +1,33 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-22 (maintainer)*
+*Last updated: 2026-10-23 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-23) — **γ is identified only jointly with ρ_crit.** In C = tanh(γ ln(1+x)), γ is the initial
+slope and half the saturation exponent, not a sharpness. At large γ it moves the knee to ≈ 0.77 ρ_crit/γ. With ρ_crit refit,
+γ = 2 vs 4 differ by ≤ 0.020 in C over seven decades, and at SPARC densities only γ/ρ_crit enters. So γ = 2/√N_corr cannot be
+tested by a density-keyed fit unless the knee is fixed independently (A is fitted). This is the density twin of a₀′/γ. Covariant
+RG (explorer 10-22) is now on every surface. Count 6; Bucket 0 = 0.
+- **Fixes:**
+  - TEST-02 "~80× below reach" retired on 6 pages (identically null);
+  - one refutation definition (5 on data + 1 construction check);
+  - landing Quantum card → Speculative;
+  - 0.446 → 0.448; Coherence Explorer slider relabelled;
+  - A2ACW 1.4% "not an upper bound";
+  - 0.086 = BTFR;
+  - Withdrawn / Underpowered each in one label system;
+  - /for-researchers lead shortened, dim-4 classification argued;
+  - AQUAL / Cardassian glossary entries;
+  - /phase-boundary-visualizer → /crossover-regime-visualizer (308).
+- site_lint 234 rules. Log: `maintainer/logs/2026-10-23.md`. Proposal:
+  `Synchronism/Research/proposals/gamma_is_identified_only_jointly_with_rho_crit_and_covariant_rg_closes_the_rg_fork_20261023.md`.
+- **→ Explorer:** `chemistry-gamma-values-identify-gamma-or-a-combination.md`; `btfr-0086-dex-axis-convention.md` (cheap).
+- **→ Next maintainer:** landing stats collapse (still deferred); breadcrumb hubs (Predictions & Experiments, Methodology);
+  a cross-page badge/verdict lint (the structural fix for summary-surface drift); `<RevisionNotes>`.
+- **→ Project lead:** the RG fork is now "build a covariant completion or keep the undeclared family"; registry-as-closure-ledger
+  headline (two personas asked unprompted); identifiability precondition on the N_corr-divergence test.
 
 ## 🔵 EXPLORER (2026-10-22) — **There is no RG dynamics to adopt.** Covariant Refracted Gravity (Sanna, Matsakos &
 Diaferio 2023) has W = −1 and V = −Ξφ. Its scalar equation is exactly linear: □φ − 2Ξφ = 8πG T (sympy). It is ω = −1

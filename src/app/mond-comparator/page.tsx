@@ -69,7 +69,7 @@ export default function MondComparator() {
                 ['Boost at low acceleration', 'Unbounded', 'Capped at 1/Ω_m = 3.17 in one reading. Excluded by the SPARC BTFR slope for caps ≲ 5.4 (Failed; the headline kill depends on the cap convention)'],
                 ['RAR environment dependence', 'Via the external field effect', 'Predicted density dependence not seen: r² = 0.0001 vs a kill bar of 0.09 (Failed)'],
                 ['Solar System (Cassini)', 'Simple μ and McGaugh\'s RAR function are both excluded; only sharper transitions (δ ≥ 4) survive', 'At the SPARC-preferred γ it is simple μ, so it is excluded too, +17.7 to +18.0σ (Failed, inherited from MOND)'],
-                ['Wide binaries', 'Disputed in the literature', 'Density-keyed signal ~80× below Gaia DR3 systematics; the acceleration-keyed reading inherits MOND\'s outcome (Self-Eliminating-or-Tie)'],
+                ['Wide binaries', 'Disputed in the literature', 'Density-keyed ratio identically null (γ_g ≡ 1) and that branch already fails lunar ranging; the acceleration-keyed reading inherits MOND\'s outcome (Self-Eliminating-or-Tie)'],
                 ['Cosmology', 'Needs extra ingredients for the CMB', 'The dark-energy sector is ΛCDM at its best fit, and it needs cold dark matter put in by hand (checked 2026-09-22)'],
                 ['Relativistic extension', 'TeVeS, AeST', 'Static gravity reproduces GR. The radiative sector predicts scalar gravitational waves, which is refuted (Failed)'],
                 ['Chemistry / quantum', 'Not addressed', 'The chemistry γ ≈ 1 boundary mostly restates the Debye model; the Intent field equals |ψ|² wherever tested (Reparametrization)'],

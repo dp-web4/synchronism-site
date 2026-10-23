@@ -17,7 +17,7 @@ export default function LabelMap() {
     { system: 'Retired label', answers: 'Nothing new; kept so old text still reads', where: 'Only in history notes and legends', members: RETIRED_LABELS.map(r => r.name).join(', ') },
     { system: 'Operational state', answers: 'What did this test do, or what happened to it?', where: 'Test cards (Tier 1, Test Catalog), next to the badge', members: OPERATIONAL_STATES.join(', ') },
     { system: 'Lifecycle verb', answers: 'What is the history of this row?', where: 'Inside status text and revision notes', members: LIFECYCLE_VERBS.join(', ') },
-    { system: 'Descriptor / qualifier', answers: 'A caveat on a badge, not a verdict', where: 'In brackets after a badge or result', members: 'Post-diction, Caveat, Underpowered as Registered' },
+    { system: 'Descriptor / qualifier', answers: 'A caveat on a badge, not a verdict', where: 'In brackets after a badge or result', members: 'Post-diction, Caveat (Underpowered as Registered is a lifecycle verb only, since 2026-10-23)' },
     { system: 'Tool Kind', answers: 'What sort of interactive tool is this?', where: 'Interactive Tools hub cards', members: 'Model Explainer, Chemistry Data, Consciousness' },
     { system: 'Tool Level', answers: 'How much background does it assume?', where: 'Interactive Tools hub cards', members: 'Beginner, Intermediate, Advanced' },
   ];

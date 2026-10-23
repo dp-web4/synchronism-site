@@ -234,7 +234,8 @@ export default function ParameterDerivations() {
                 (equations.ts). The derivation that hits 5% underpins a law the framework does not use.</li>
                 <li><strong>Stated formula gives 600× off:</strong> A = 4π/(β<sub>J</sub>²·G·R₀²) with β<sub>J</sub>=1,
                 R₀=8 kpc gives A ≈ 4.6×10⁻⁵ M<sub>☉</sub>&nbsp;pc<sup>−3</sup>&nbsp;(km/s)<sup>−2</sup> (3.09×10⁻³⁰ kg&nbsp;s²&nbsp;m⁻⁵) — not 0.029 in the same units. The Session 66 markdown bridges them with an
-                unexplained 644× &ldquo;unit conversion.&rdquo;
+                unexplained 644× &ldquo;unit conversion&rdquo; (644 = 0.0294/4.565×10⁻⁵ with G = 4.301×10⁻³ pc&nbsp;(km/s)²/M<sub>☉</sub>, R₀ = 8000 pc;
+                with the rounded 0.029 it is 635, the figure used below).
                 <strong> The 644× is not a unit conversion — and it was already decomposed, on 2026-06-07.</strong>{' '}
                 A depends only on the <em>product</em> β<sub>J</sub>·R₀, and <code>Session687</code> §1.2 records
                 Session 66&apos;s own factorization β<sub>J</sub> = 4.5, R₀ = 0.07 kpc — product 0.315 kpc, within

@@ -201,7 +201,9 @@ export default function GalaxyRotation() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>0.086</div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              &#x03C3;<sub>int</sub> (dex) &mdash; intrinsic scatter
+              BTFR &#x03C3;<sub>int</sub> (dex), ALFALFA&ndash;SDSS, one point per galaxy &mdash; <em>not</em> the RAR scatter (SPARC RAR &asymp; 0.057);{' '}
+              <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>which relation</Link>
+              <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>(labelled 2026-10-23; it read &ldquo;intrinsic scatter&rdquo; beside the RAR bullet)</span>
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>

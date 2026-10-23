@@ -254,8 +254,9 @@ export default function ResearchPhilosophy() {
           Noether) against three reparametrizations from outside the audited claims (Eddington&apos;s &alpha;&#x207B;&sup1; = 137,
           tired light, a Tully&ndash;Fisher &ldquo;derivation&rdquo; that assumes MOND). One model wrote the name-omitted
           restatements and scored them. The literal rule (&ldquo;flag if canonical prior art is named&rdquo;) flagged all nine:
-          sensitivity 3/3, specificity 0/6, so Youden&apos;s J &isin; [&minus;0.71, +0.46] (two marginal Clopper&ndash;Pearson 95%
-          intervals, roughly 90% joint coverage). It detects &ldquo;has antecedents&rdquo;, which all non-trivial
+          sensitivity 3/3, specificity 0/6, so Youden&apos;s J = 3/3 + 0/6 &minus; 1 = <strong>0</strong> as a point estimate, with range
+          [&minus;0.71, +0.46] from the two marginal Clopper&ndash;Pearson 95% intervals (sensitivity 0.29&ndash;1, specificity 0&ndash;0.46; roughly 90%
+          joint coverage; the point value was added 2026-10-23). It detects &ldquo;has antecedents&rdquo;, which all non-trivial
           physics does. A steelmanned rule (&ldquo;reduces to prior art with nothing added&rdquo;) sorted all nine correctly,
           but only because the scorer&apos;s own novelty judgment did the discriminating. The six discoveries were chosen to
           trip prior art and sit in every training corpus, so this arm cannot separate &ldquo;the framework had nothing
@@ -345,8 +346,11 @@ export default function ResearchPhilosophy() {
             say which of them causes the gap.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', marginBottom: 0 }}>
-            This is why the 1.4% figure is an internal-consistency-survival rate, not a discovery rate: it is an upper bound on what
-            in-distribution adversarial AI-AI collaboration can find. The reparametrizations the
+            This is why the 1.4% figure is an internal-consistency-survival rate, not a discovery rate. It is <em>not</em> an upper bound on what
+            in-distribution adversarial AI-AI collaboration can find: the calibration arm flagged all six canonical discoveries
+            (specificity 0/6), so a filter like this removes real discoveries along with relabels, and the survivors bound nothing
+            until the discriminating (post-cutoff) arm runs. (Until 2026-10-23 this sentence called it an upper bound; a researcher
+            simulated-visitor persona pointed out that an uncalibrated filter cannot bound from either side.) The reparametrizations the
             framework identified (Abrikosov-Gor&apos;kov, Milgrom-Verlinde, Freeman, Landau
             sigmoids) are exactly what you would predict from in-distribution debate — the corpus
             already contained these patterns. <strong>This does not invalidate the method, but it
@@ -361,8 +365,8 @@ export default function ResearchPhilosophy() {
             on closer review</strong> (galaxy rotation, chemistry r=0.982, Born rule,
             a₀ = cH₀/2π, decoherence protection &#x0393; = &#x03B3;&sup2;(1&minus;c), Bell-freezing c(d)), and
             3 more claims swept later also failed: 0 of 9 retained. The reviewers were LLM agents
-            too, so this is one uncalibrated instrument overruling another, not an external expert verdict. The 1.4% figure is therefore both an upper bound (on in-distribution detection)
-            and — by track record — an overestimate of actual novelty.
+            too, so this is one uncalibrated instrument overruling another, not an external expert verdict. By track record the 1.4% is an overestimate of what survives audit (0 of 9 retained); as a rate of discovery it is
+            uninterpretable until the post-cutoff arm runs.
           </p>
         </div>
 

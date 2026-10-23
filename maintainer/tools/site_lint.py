@@ -23,6 +23,23 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-23 (maintainer): covariant RG "unchecked"/"what this framework lacks"; TEST-02 "~80x below";
+    #     refutation defined as external-data-only; A2ACW 1.4% "upper bound"; landing quantum equivalence; gamma "sharpness" slider;
+    #     0.446 as the gamma->inf limit; unhedged "5 independent roots"
+    (r"which is exactly what this framework|covariant completion(&apos;s|'s| is)\s+(lunar-ranging status is )?unchecked", "2026-10-23",
+     "covariant RG (Sanna+2023) is omega=-1 Brans-Dicke: Cassini gamma=0 (4e4 sigma), Nordtvedt eta=1, |Gdot/G| >= 0.99 H0; explorer 2026-10-22"),
+    (r"80\s?(×|&times;)\s+below\s+(the\s+)?(Gaia|systematics)", "2026-10-23",
+     "TEST-02's density branch is identically null (gamma_g = 1); 0.05-0.4% needs a knee no other page uses"),
+    (r"executed on external data against a registered criterion", "2026-10-23",
+     "the 6 includes the Bell/CHSH construction check; rule = stated failure condition, actually run, failed (glossary)"),
+    (r"it is an upper bound on what|figure is therefore both an upper bound", "2026-10-23",
+     "A2ACW calibration specificity 0/6: the filter removes real discoveries too, so the 1.4% bounds nothing until the post-cutoff arm"),
+    (r"Born rule: equivalent to Zurek", "2026-10-23",
+     "/measurement-without-observers is Speculative (no rate parameter) since 2026-10-22"),
+    (r"<strong>Transition sharpness</strong>", "2026-10-23",
+     "gamma sets the initial slope and saturation rate; at large gamma it relocates the knee (degenerate with rho_crit)"),
+    (r"0\.446 as γ→∞", "2026-10-23", "the gamma->inf limit of max dC/dln x is 0.448 (max u sech^2 u)"),
+    (r"(?<!most )(?<!at most )from 5 independent roots", "2026-10-23", "say 'at most 5 independent roots' (dp-gated recount)"),
     # --- retired 2026-10-22 (maintainer): unscoped density-keyed exclusion; unscoped "RG is not excluded"; "6 Testable Protocols"
     (r"already excluded twice|<strong>Refracted Gravity is not excluded:</strong>", "2026-10-22",
      "scope it: +2843 is the algebraic g = g_bar/C on this framework's permittivity; RG passes GCs but its disc calibrations fail dSphs (explorer 2026-10-21); see /test-catalog#what-excluded-covers"),

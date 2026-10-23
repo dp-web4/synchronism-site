@@ -56,11 +56,11 @@ export const RETIRED_LABELS: { name: string; oneLiner: string }[] = [
 
 // Lifecycle verbs: provenance and history of a row. Not badges, not operational states.
 // Membership matches the #status-lifecycle-verbs grid on /honest-assessment.
+// 'Withdrawn' was removed 2026-10-23: it is an operational state only (a technical-writer persona found it in both systems).
 export const LIFECYCLE_VERBS: string[] = [
   'Executed',
   'Adjudicated',
   'Closed',
-  'Withdrawn',
   'Retired',
   'Reclassified',
   'Never run as registered',

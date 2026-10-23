@@ -98,7 +98,10 @@ export default function CoherenceExplorer() {
             </details>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-            <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> controls the transition sharpness.
+            <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> was proposed as the transition sharpness. What it actually sets is the
+            initial slope (C &#x2248; &#x03B3;x at low density) and how fast C approaches 1; for &#x03B3; above ~1 it mostly moves the knee
+            (to &#x2248; 0.77&nbsp;&#x03C1;<sub>crit</sub>/&#x03B3;) rather than sharpening it, so it trades off against &#x03C1;<sub>crit</sub>{' '}
+            (<a href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>derivation</a>; added 2026-10-23).
             High &#x03B3; (&gt; 1.4, small N<sub>corr</sub>) = <em>single-particle / uncorrelated</em> regime (ideal gases, free atoms);
             &#x03B3; &#x2248; 1 = where the archive&apos;s fitted chemistry &#x03B3; values cluster &mdash; nothing in C(&#x03C1;) singles it out (<a href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Boundary</a>, retracted 2026-08-09);
             low &#x03B3; (&lt; 0.6, large N<sub>corr</sub>) = <em>many particles moving together</em> (BEC, superconductors, superfluids) &mdash; which does <strong>not</strong> mean C near 1: low &#x03B3; gives <em>low</em> C at any plottable density (see &ldquo;What to notice&rdquo; below).
@@ -229,7 +232,7 @@ export default function CoherenceExplorer() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
           <div className="card">
             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
-              <strong>Transition sharpness</strong> (&#x03B3;) = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{gamma < 0.1 ? gamma.toFixed(3) : gamma.toFixed(2)}</span>
+              <strong>Initial slope / saturation rate</strong> (&#x03B3;; proposed as &ldquo;sharpness&rdquo;) = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{gamma < 0.1 ? gamma.toFixed(3) : gamma.toFixed(2)}</span>
             </label>
             <input
               type="range" min="0.01" max="4.0" step="0.01" value={gamma}
@@ -238,7 +241,7 @@ export default function CoherenceExplorer() {
             />
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
               {[
-                { g: 0.046, label: 'γ = 0.046 — density version fit to real galaxies: nearly flat (SPARC, density-keyed free fit; loses at ΔBIC +2843)' },
+                { g: 0.046, label: 'γ = 0.046 — density version fit to real galaxies: nearly flat (SPARC, density-keyed free fit; loses at ΔBIC +2843; at SPARC densities C ≈ γx, so only γ/ρ_crit is identified)' },
                 { g: 0.49, label: 'γ = 0.49 — what real galaxies prefer, acceleration version (SPARC acceleration-keyed fit; = MOND there; killed by Cassini: 8.7σ published for the RAR-preferred MOND functions (Desmond+2024, marginalized), +17.95σ in this site\'s own unmarginalized run; illustrative on this density axis)' },
                 { g: 0.5, label: 'γ = ½ exactly — the same curve as MOND’s formula (MOND’s simple μ function; see note below)' },
                 { g: 2.0, label: 'γ = 2 — steep: the framework’s original guess (disfavoured on SPARC; at the threshold once galaxies are the unit)' },

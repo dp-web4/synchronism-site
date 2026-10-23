@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Fragment } from 'react';
-import { BADGES } from '@/lib/statusLabels';
+import { BADGES, RETIRED_LABELS } from '@/lib/statusLabels';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -155,7 +155,7 @@ export default function HonestAssessment() {
               <Fragment key={b.name}><strong>{b.name}</strong><span>{b.oneLiner}{b.name === 'Active-MRH' ? ' (MRH-relationship family)' : b.name === 'Untested' ? ' (descriptive family)' : ''}</span></Fragment>
             ))}
           </div>
-          <span style={{ color: 'var(--color-text-muted)' }}>Retired, still met on a few older pages: Validated, Strongly Supported.</span>
+          <span style={{ color: 'var(--color-text-muted)' }}>Retired, still met on a few older pages: {RETIRED_LABELS.map(r => r.name).join(', ')} (rendered from the same list as the glossary and Test Roadmap since 2026-10-23).</span>
         </div>
 
         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
@@ -168,7 +168,12 @@ export default function HonestAssessment() {
           types; the epistemic verdict is always the formal status. <strong>Three negative-outcome words, one
           relationship (added 2026-07-18):</strong> a <em>Failed</em> badge is the formal status of any
           data-contradicted prediction; a <em>refutation</em> (the footer count) is the narrower subset of
-          Failed results executed on external data against a registered criterion; &ldquo;Refuted by
+          Failed results where a test with a stated failure condition was actually run and the claim failed it: five
+          ran on outside data, and one (Bell/CHSH) is a construction check on the framework&apos;s own substrate, which is why the
+          footer says &ldquo;5 on external data + 1 construction check&rdquo; (same rule as the{' '}
+          <Link href="/glossary#refutation-executed" style={{ color: 'var(--color-accent-blue)' }}>glossary entry</Link>; this
+          sentence said, until 2026-10-23, &ldquo;executed on external data against a registered criterion&rdquo;, which excluded the sixth item and the
+          γ = 2 pin, which has no TEST ID; a technical-writer simulated-visitor persona caught the mismatch); &ldquo;Refuted by
           Execution&rdquo; is the descriptor marking that a specific run — not an argument — did the killing.
           Every refutation carries a Failed badge; not every Failed badge counts as a refutation. Not every
           defined tag has a current
@@ -240,7 +245,7 @@ export default function HonestAssessment() {
           <strong>EXECUTED</strong><span>The registered computation was actually run on real data, with scripts cited — as opposed to asserted, estimated, or argued. Always date-stamped. The strongest provenance word on the site.</span>
           <strong>ADJUDICATED</strong><span>A verdict was rendered by structural argument or by analysis of already-published results, without a new run (e.g. TEST-05&apos;s lever-magnitude comparison). Weaker provenance than EXECUTED; the distinction is preserved so readers can tell which verdicts rest on runs.</span>
           <strong>CLOSED</strong><span>Applies to a research <em>question</em>, not a prediction: the question is resolved (sometimes as a null) and no further work is planned. E.g. &ldquo;EFE gap — CLOSED,&rdquo; &ldquo;form selection closed as a null.&rdquo;</span>
-          <strong>WITHDRAWN</strong><span>Applies to a <em>test</em>: retracted by the framework before execution because of internal contradiction or underivable amplitude. A test replaced by a later formulation is Superseded, not Withdrawn. Never adjudicated, carries no verdict badge. E.g. TEST-04 (BAO). Same term as the operational state Withdrawn above; one definition, two places it can appear (the stray &ldquo;or supersession&rdquo; here was removed 2026-10-15).</span>
+          <strong>WITHDRAWN</strong><span>Not a lifecycle verb: it is an <em>operational state</em>, defined once in the grid above. (Until 2026-10-23 it was defined in both grids; a technical-writer simulated-visitor persona counted that as one term in two label systems.)</span>
           <strong>RETIRED</strong><span>Applies to <em>vocabulary or framing</em>, not to data verdicts: a label or badge class removed from service after audit showed it defective. E.g. the &ldquo;MOND-shared&rdquo; tie-badge class (retired 2026-07-15 when all three carriers dissolved on execution). &ldquo;MOND-shared / RETIRED&rdquo; therefore means: this label used to sit here, and the label itself — not the test — was withdrawn from the site&apos;s vocabulary.</span>
           <strong>RECLASSIFIED</strong><span>Moved between categories (e.g. Tier 1 → Tier 2, prediction → exploratory hypothesis) after audit showed the original category&apos;s entry requirements were never met. The row is kept in place, demoted visibly, so the demotion is not silent.</span>
           <strong>NEVER RUN AS REGISTERED</strong><span>A different dataset, sample, or statistic was substituted and adjudicated in the registered test&apos;s place — the substitute has its own verdict, but the test as originally pre-registered remains unrun and still runnable. Distinct from WITHDRAWN (which is retracted, not substituted). E.g. TEST-03 (the ALFALFA-SDSS run was executed as TEST-03s instead).</span>
@@ -1917,7 +1922,7 @@ export default function HonestAssessment() {
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem', fontSize: '0.88rem' }}>
           {[
-            { name: 'Refracted Gravity (Matsakos & Diaferio 2016)', desc: 'The nearest neighbour, listed first for that reason. Its field equation ∇·[ε(ρ)∇Φ] = 4πGρ, with a density-keyed permittivity, IS the L2 equation this site\'s galaxy tests use — published a decade before this sector rediscovered it. Calibrated on DiskMass discs (Cesare et al. 2020) and on ellipticals (Cesare et al. 2022); a covariant scalar-tensor completion exists (Sanna, Matsakos & Diaferio 2023), which is exactly what this framework\'s "postulated, not derived" field equation lacks. RG\'s elliptical-calibrated knee (0.0083 M☉/pc³) passes the globular-cluster slope test that this framework\'s knees fail. It shares the smoothing-length problem: Matsakos & Diaferio themselves say a density-keyed ε needs a smoothing scale D and postpone it. (Row added 2026-09-19; the table had omitted the one theory the site elsewhere says it rediscovered.)' },
+            { name: 'Refracted Gravity (Matsakos & Diaferio 2016)', desc: 'The nearest neighbour, listed first for that reason. Its field equation ∇·[ε(ρ)∇Φ] = 4πGρ, with a density-keyed permittivity, IS the L2 equation this site\'s galaxy tests use — published a decade before this sector rediscovered it. Calibrated on DiskMass discs (Cesare et al. 2020) and on ellipticals (Cesare et al. 2022); its published covariant completion (Sanna, Matsakos & Diaferio 2023) was checked here on 2026-10-22 and is not a usable dynamics: its scalar equation is exactly linear (ω = −1 Brans–Dicke with a 2.2 Gpc range, so nothing screens it), giving PPN γ = 0 against Cassini (~4×10⁴σ), Nordtvedt η = 1 against lunar ranging (~2×10³σ), and |Ġ/G| ≥ 0.99 H₀ from its own cosmology (≥ 900σ). Its weak field varies the scalar by ≤ 10⁻⁴ across a galaxy, so it does not reproduce RG\'s permittivity either (explorer 2026-10-22). Until that date this row said the completion was "exactly what this framework lacks"; adopting RG\'s dynamics would import that record. RG\'s elliptical-calibrated knee (0.0083 M☉/pc³) passes the globular-cluster slope test that this framework\'s knees fail. It shares the smoothing-length problem: Matsakos & Diaferio themselves say a density-keyed ε needs a smoothing scale D and postpone it. (Row added 2026-09-19; the table had omitted the one theory the site elsewhere says it rediscovered.)' },
             { name: 'MOND (Milgrom 1983)', desc: 'Began as an empirical μ-function; has had governing equations since AQUAL (Bekenstein & Milgrom 1984, a Lagrangian modified-Poisson theory) and QUMOND (Milgrom 2010). Synchronism\'s compander collapses onto MOND\'s simple μ at free-γ (SPARC RAR, ΔBIC=+7 vs ΔBIC=+184 for γ=2). (Corrected 2026-09-19: this row said "No dynamics, no governing equation" — false for forty years, and contradicted by the correction paragraph directly beneath this table, which cites AQUAL and QUMOND.)' },
             { name: 'Verlinde Emergent Gravity (2016)', desc: 'Derives MOND-like rotation curves from entropy gradients in the Hubble volume. First lensing test: Brouwer et al. (2017), KiDS+GAMA — consistent. Superseded by Brouwer et al. (2021, KiDS-1000 lensing RAR, A&A 650, A113), which extends the RAR to much lower accelerations and finds a dependence on galaxy type that neither EG nor MOND predicts as formulated. Key question: does C(ρ) reduce to Verlinde in the low-acceleration limit? Not yet shown.' },
             { name: 'Superfluid dark matter (Berezhiani & Khoury 2015)', desc: 'The other major program that reproduces MOND phenomenology: dark matter that condenses into a superfluid inside galaxies, whose phonons mediate a MOND-like force, while behaving as ordinary CDM on cluster and cosmological scales. A hybrid, not a modified-gravity theory — and so an existence proof that "MOND in galaxies, ΛCDM in cosmology" (which is where this framework\'s fitted γ = ½ lands in both sectors) can come from one physical mechanism. No comparison with the compander exists. (Added 2026-09-19.)' },

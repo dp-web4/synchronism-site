@@ -76,7 +76,14 @@ export default function GammaParameter() {
               <em>flattest</em> coherence curves &mdash; which is how a BCS superconductor, a system with
               a real macroscopic transition, ends up at C &#x2248; 0. The{' '}
               <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>coherence function page</Link>{' '}
-              discloses that consequence; it originates here.
+              discloses that consequence; it originates here. The standard result this rests on: in mean-field finite-size
+              scaling the rounding width of a transition shrinks as N<sup>&minus;1/2</sup>, so a sharpness parameter should
+              <em> grow</em> like &#x221A;N; 2/&#x221A;N runs the other way. One caveat weakens the slot itself: in C = tanh(&#x03B3; ln(1+x))
+              &#x03B3; is the initial slope and half the saturation exponent, and at large &#x03B3; it mostly relocates the knee
+              (degenerate with &#x03C1;<sub>crit</sub>) instead of sharpening it, so no &#x03B3; makes a step on a log-density axis
+              (<Link href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Boundary</Link>). The sign argument holds
+              on a linear axis at fixed &#x03C1;<sub>crit</sub>. <em style={{ color: 'var(--color-text-muted)' }}>(Both sentences added
+              2026-10-23 from a simulated-visitor graduate persona.)</em>
             </li>
           </ol>
         </div>

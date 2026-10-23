@@ -24,8 +24,14 @@ export default function ForResearchers() {
           all distinct items in <a href="#distinct-content" style={{ color: 'var(--color-accent-blue)' }}>one register</a>), and every surviving
           branch is nested in its parent: the galaxy fit is MOND&apos;s simple interpolating function (at &#x03B3; &asymp; &frac12; under the L2 field equation; the action-derived L3 draws the same curve at &#x03B3; &asymp; 0.44), the dark-energy sector is
           &Lambda;CDM at &gamma; = &frac12; (or Cardassian/wCDM-degenerate off it). Scope: this covers the 26 registered tests and the
-          keyings and wirings executed; it does not cover the unbuilt hidden-communication substrates (Bell) or door #3
-          (secular / time-domain observables, a direction with no registered bet). The third door, density-keyed L3
+          versions of the equation actually run; it does not cover two things nobody has built: a substrate that could pass Bell
+          tests, and &ldquo;door #3&rdquo; (the archive names three routes to a distinct prediction: #1 galaxy profiles, closed; #2
+          discreteness and Lorentz violation, see <a href="#dim4-liv" style={{ color: 'var(--color-accent-blue)' }}>below</a>; #3 slow drifts
+          over time, a direction with no registered bet). <em style={{ color: 'var(--color-text-muted)' }}>(Lead shortened 2026-10-23; a
+          technical-writer simulated-visitor persona said it read like a changelog. The L3 detail is in the fold.)</em>
+          <details style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.4rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Detail: the action-derived (L3) dynamics and lunar ranging</summary>
+            A gap that stayed open until 2026-10-19, density-keyed L3
           (striction) dynamics with the knee inside discs, is now closed by a rate rather than a rotation curve. Under
           the action the field equation is unchanged, so lunar laser ranging&apos;s Ġ/G = &minus;Ċ/C bound carries over
           exactly: 68 of 74 density-keyed laws are excluded at a 1 pc smoothing length (62 at 10 pc), the in-disc knees
@@ -35,7 +41,9 @@ export default function ForResearchers() {
           <code>edb0108</code>). Elsewhere, L3 at the gradient keying is AQUAL with &#x03B3; relabelled to 0.44,
           indistinguishable from L2 on SPARC and lensing, and at the framework&apos;s own density knee (0.029&nbsp;V&sup2;) it
           equals L2 to &lt;&nbsp;0.1% (explorer 2026-10-13). The ledger states the same as &ldquo;no registered test has a
-          branch that moves the confirmed-novel count&rdquo;.
+          branch that moves the confirmed-novel count&rdquo;. (AQUAL: Bekenstein &amp; Milgrom&apos;s 1984 field-equation form of MOND;
+            L2/L3: the two candidate field equations, see the glossary.)
+          </details>
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.4rem' }}>
             <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
             <ul style={{ margin: '0.3rem 0 0', paddingLeft: '1.1rem' }}>
@@ -695,7 +703,7 @@ export default function ForResearchers() {
               the minimal custodial protector against radiative generation of this coefficient
               (Collins, Perez, Sudarsky, Urrutia &amp; Vucetich, <em>PRL</em> 93, 191301 (2004)).
               <strong> Verdict: severe naturalness/fine-tuning gap (CPSU 2004).</strong>{' '}
-              Computation (2026-06-26 explorer): tree-level c<sub>&#x03BC;&#x03BD;</sub>=0 by single-substrate universality (no species-dependent k² coefficient at tree level). One-loop correction is UV-dominated and Planck-cutoff-independent: c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;&#x03B1;/&#x03C0;&nbsp;~&nbsp;10<sup>&#x2212;2</sup>–10<sup>&#x2212;3</sup>. Existing bounds: ≲10<sup>&#x2212;18</sup> (cavity MM), ≲10<sup>&#x2212;29</sup>–10<sup>&#x2212;30</sup> (nucleon comagnetometer). Fine-tuning gap: <strong>16–28 orders of magnitude</strong>. Two standard perturbative custodial escapes exist in the literature but are unexhibited in this framework: (1) <strong>SUSY</strong> (Groot Nibbelink &amp; Pospelov, <em>PRL</em> 94, 081601, 2005): forbids dim-3/4 LV operators entirely; (2) <strong>Anisotropic scale-hierarchy</strong> (Pospelov &amp; Shang, <em>PRD</em> 85, 105001, 2012): demonstrated for Hořava–Lifshitz gravity (the canonical absolute-time class) — separates the LV-generating scale from the electroweak scale via Λ_HL ≪ M_pl, suppressing SM-sector LV perturbatively without restoring boost invariance. The framework adopts neither: single-substrate universality is itself the obstacle to a Λ_HL ≪ M_pl scale separation. Status: <em>open custodial-mechanism gap, not a closed refutation.</em>
+              Computation (2026-06-26 explorer): tree-level c<sub>&#x03BC;&#x03BD;</sub>=0 by single-substrate universality (no species-dependent k² coefficient at tree level). One-loop correction is UV-dominated and Planck-cutoff-independent: c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;&#x03B1;/&#x03C0;&nbsp;~&nbsp;10<sup>&#x2212;2</sup>–10<sup>&#x2212;3</sup>. Existing bounds: ≲10<sup>&#x2212;18</sup> (cavity MM), ≲10<sup>&#x2212;29</sup>–10<sup>&#x2212;30</sup> (nucleon comagnetometer). Fine-tuning gap: <strong>16–28 orders of magnitude</strong>. Two standard perturbative custodial escapes exist in the literature but are unexhibited in this framework: (1) <strong>SUSY</strong> (Groot Nibbelink &amp; Pospelov, <em>PRL</em> 94, 081601, 2005): forbids dim-3/4 LV operators entirely; (2) <strong>Anisotropic scale-hierarchy</strong> (Pospelov &amp; Shang, <em>PRD</em> 85, 105001, 2012): demonstrated for Hořava–Lifshitz gravity (the canonical absolute-time class) — separates the LV-generating scale from the electroweak scale via Λ_HL ≪ M_pl, suppressing SM-sector LV perturbatively without restoring boost invariance. The framework adopts neither: single-substrate universality is itself the obstacle to a Λ_HL ≪ M_pl scale separation. Status: <em>open custodial-mechanism gap, not a closed refutation.</em> <strong>Why not &ldquo;refuted&rdquo;, argued (added 2026-10-23, researcher simulated-visitor persona):</strong> in the LV literature an effective theory that predicts c<sub>&#x03BC;&#x03BD;</sub> ~ &#x03B1;/&#x03C0; with no protecting mechanism counts as excluded, and on that reading the <em>minimal</em> completion (single substrate, absolute time, Standard-Model couplings) is excluded at its natural value; the research ledger records it that way. The framework as a whole is not counted refuted only because it specifies no interacting completion, so there is no EFT whose coefficient can be computed beyond that minimal one. That is a debt, not a defence: until a custodial mechanism is exhibited, &ldquo;not refuted&rdquo; here means &ldquo;not yet specified enough to refute&rdquo;.
             </li>
             <li>
               <strong>Velocity-anisotropic phase-transition threshold (Phase-16, 2026-06-24).</strong>{' '}
@@ -865,7 +873,7 @@ export default function ForResearchers() {
             <strong> Citable numbers, residual form (2026-09-24):</strong> density law −0.196 to −0.199 ± 0.027 after refitting the mass
             scale under the law itself (−0.211 on catalogue masses); MOND+EFE −0.093; MOND without EFE −0.245; Newton −0.057 (King-like) or
             +0.021 ± 0.027 (Plummer). There is no systematic budget. <strong>Under L3 (striction included) this band does not hold:</strong> it becomes 0.031–0.196 M<sub>☉</sub>/pc³ at γ = 0.489, with no passing knee, and the outer shells stop being bound (caveat iii below).
-            <strong>Refracted Gravity is not excluded by this window</strong> (at globular-cluster densities only: its disc calibrations fail all 15
+            <strong>Refracted Gravity is not excluded by this window</strong> (at globular-cluster densities only; its published covariant completion fails Cassini and lunar ranging, explorer 2026-10-22; its disc calibrations fail all 15
             Milky Way dwarf spheroidals by &ge; 3&sigma; and its elliptical calibration is in 2&ndash;4&sigma; tension on the equilibrium dwarfs,
             explorer 2026-10-21; see <Link href="/test-catalog#what-excluded-covers" style={{ color: 'var(--color-accent-blue)' }}>what &ldquo;excluded&rdquo; covers</Link>): its published ρ<sub>c</sub> = 10⁻²⁴·²⁵ g/cm³ = 0.0083
             M<sub>☉</sub>/pc³ lies below the excluded window, and every value in that set&apos;s 1σ range

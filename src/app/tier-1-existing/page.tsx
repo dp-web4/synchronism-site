@@ -341,10 +341,11 @@ export default function Tier1Existing() {
       <Breadcrumbs currentPath="/tier-1-existing" />
       <h1>Tier 1: Existing Data</h1>
       <ValidationBadge status="failed" label={`Failed — ${TALLY.killsFired.length} numbered tests with the kill fired (${TALLY.killsFired.join('; ')})`} />
-      <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
+      <details style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
+        <summary style={{ cursor: 'pointer' }}>What this badge covers, what it leaves out, and how the 6 is traced (folded 2026-10-23: a technical-writer persona read the whole paragraph as the badge)</summary>
         {`Of ${EXECUTED_COUNT} numbered executed tests (+ the unnumbered RAR-shape test, card under Recommended Start), the badge covers only the ${TALLY.killsFired.length} whose kill fired. ${TALLY.underpowered.length} more (${TALLY.underpowered.join('; ')}) is not Failed: it is underpowered as registered (a lifecycle verb, not a badge) and not counted as a refutation. Convention-dependent: ${TALLY.conventionDependent.join(' and ')} fire at B_max = 1/Ω_m but not at every candidate ceiling (TEST-09 does not survive the 2026-09-18 sweep; convention-free, B_max ≲ 5.4 is excluded by the BTFR slope and B_max ≲ 14 by SPARC dwarfs); the ceiling both tests share is excluded at every Ω_m-based convention by the weak-lensing RAR (Brouwer+2021; see /honest-assessment#refutation-ledger); whether they stay in the count of 6 is pending the project lead (dp). Not executed: TEST-04 withdrawn; TEST-02 self-eliminating; rest untested. Site-ledger split: ${ROOTS_SENTENCE}. ${SIX_TRACE}. $0 cost.`}{' '}
         <em>(Revised 2026-10-19: the badge used to read &ldquo;Failed — all {EXECUTED_COUNT} numbered executed tests&rdquo;, which put TEST-04a under Failed while the Test Roadmap says it is not; a simulated-visitor technical-writer persona caught the contradiction.)</em>
-      </p>
+      </details>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -772,8 +773,8 @@ export default function Tier1Existing() {
             they discriminate <em>by structure</em> — the framework&apos;s bounded boost and local coupling variable, its only
             two differences from MOND, each force disagreement on exactly these observables. What is true post-execution:
             <strong> 0 tests remain where the framework ties MOND; the executed ones it loses.</strong> TEST-02&apos;s
-            predicted amplitude remains ~80× below Gaia DR3 single-bin statistical reach (referent: Hernandez 2023-scale
-            γ_g analyses, not raw astrometric systematics).
+            density branch predicts an identically null ratio (γ<sub>g</sub> ≡ 1; see its card), not a small amplitude below reach.
+            (Until 2026-10-23 this sentence said the amplitude was ~80× below Gaia DR3 single-bin reach, a knee-conditional figure.)
           </p>
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginTop: '0.4rem' }}>
             <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>

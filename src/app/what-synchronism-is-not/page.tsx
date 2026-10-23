@@ -224,7 +224,7 @@ export default function WhatSynchronismIsNot() {
               kill criteria, pre-registration discipline, mechanism-class failure taxonomy — a reproducible self-audit
               infrastructure for AI-collaborative science. This is the most distinctive and citable output.</li>
             <li>A <strong>source of open questions</strong>: TEST-02 wide-binary density dependence is triple-conditional —
-              (1) the wide-binary anomaly is itself disputed (Chae 2023 ~10σ detection vs Banik et al. 2024 / Pittordis &amp; Sutherland: Newtonian consistency); (2) even if real, it is MOND+EFE degenerate; (3) the predicted amplitude depends on an unfixed density knee (~80× below Gaia DR3 reach at the knee that yields the quoted 0.05–0.4%; excluded locally at the published calibration).
+              (1) the wide-binary anomaly is itself disputed (Chae 2023 ~10σ detection vs Banik et al. 2024 / Pittordis &amp; Sutherland: Newtonian consistency); (2) even if real, it is MOND+EFE degenerate; (3) the predicted amplitude depends on an unfixed density knee (at the knee that yields the quoted 0.05–0.4%, a knee nothing else uses, the signal is below Gaia DR3 reach by ~80×; excluded locally at the published calibration).
               No component of this triple-conditional stack is currently resolved. The self-consistency loop gap (C(ρ) has no fixed-point equation) is the deepest structural question.</li>
             <li>A <strong>demonstration of radical honesty</strong>: failures documented, reparametrizations acknowledged,
               kill criteria defined, 0 unique confirmed predictions. The honest-assessment page lists every

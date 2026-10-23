@@ -476,8 +476,12 @@ export default function TestCatalog() {
           refit (Cesare et al. fit it to 30 DiskMass discs). RG&apos;s own record in this archive is mixed. Globular clusters pass. Its disc
           calibrations fail all 15 Milky Way dwarf spheroidals by &ge; 3&sigma;, because in spherical symmetry Gauss&apos;s law caps the boost at
           1/&epsilon;<sub>0</sub> exactly (Leo I, which RG keeps in equilibrium, is off by 9&ndash;15&sigma;). Its elliptical calibration is in
-          2&ndash;4&sigma; tension on the dwarfs that are in equilibrium under RG (explorer, 2026-10-21). Its covariant completion&apos;s
-          lunar-ranging status is unchecked. So the refraction effect above is RG&apos;s prediction, and prior art. If the framework adopted
+          2&ndash;4&sigma; tension on the dwarfs that are in equilibrium under RG (explorer, 2026-10-21). Its published covariant completion (Sanna, Matsakos &amp; Diaferio 2023)
+          fails the Solar System outright: its scalar equation is linear, so it is unscreened &omega; = &minus;1 Brans&ndash;Dicke, with PPN &gamma; = 0
+          (Cassini, ~4&times;10<sup>4</sup>&sigma;), Nordtvedt &eta; = 1 (lunar ranging, ~2&times;10<sup>3</sup>&sigma;) and |&#x120;/G| &ge; 0.99 H<sub>0</sub> from its own
+          cosmology. Its weak field cannot vary the scalar by more than ~10<sup>&minus;4</sup> across a galaxy, so it does not contain RG&apos;s
+          permittivity at all (explorer, 2026-10-22; until then this sentence said the covariant status was unchecked). RG therefore
+          has a fitted galaxy-scale equation and no working covariant theory behind it. So the refraction effect above is RG&apos;s prediction, and prior art. If the framework adopted
           RG&apos;s permittivity it would inherit that test, and RG&apos;s dependence on flattening, but a result would score for RG, not for
           anything this framework adds. A positive result on the framework&apos;s own permittivity would contradict the exclusions above,
           and a null would add a further root to an existing refutation. (Until 2026-10-22 this paragraph said only &ldquo;already excluded

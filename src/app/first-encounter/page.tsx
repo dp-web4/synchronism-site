@@ -59,9 +59,10 @@ const steps = [
     of the speed of light and the universe's expansion rate. That may be luck; nobody has derived it.`,
     // Visitor 2026-09-27: the dimensional-analysis detail was pitched above the rest of the page;
     // it now sits behind a "For the curious" fold rendered below the section text.
-    curious: `a₀ = cH₀/(2π) falls out of the same constants, but this is a dimensional coincidence (the only
-    acceleration scale buildable from c and H₀, the Hubble constant), not a first-principles derivation; the 2π is
-    unexplained and the match is off by ~13%. See Honest Assessment.`,
+    curious: `Verdict first: probably a coincidence, and not evidence for this framework. Why: c and H₀ (the Hubble
+    constant) can only be combined into an acceleration one way, cH₀, so any formula of the form cH₀ × (a number) will
+    land near MOND's a₀ for some number. Here the number is 1/(2π), which nothing derives; with it the match is off by
+    ~13%. Milgrom noticed a₀ ≈ cH₀/6 in 1983, so the closeness was known before this framework. See Honest Assessment.`,
     highlight: 'a₀ ≈ cH₀/(2π): a coincidence, not a derivation',
   },
   {

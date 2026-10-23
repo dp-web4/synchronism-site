@@ -56,7 +56,7 @@ const closedTests = [
     id: 'TEST-02',
     name: 'Wide Binary Density Dependence',
     status: 'CLOSED — SELF-ELIMINATING-OR-TIE (demoted off this page 2026-08-10)',
-    verdict: 'This page advertised TEST-02 as the #1 active discriminating test — "requires zero-cost Gaia DR3 analysis" — for weeks after /tier-1-existing had closed it. It has no outcome that favours the framework. If Gaia confirms a MOND-scale ~18% anomaly (Chae 2023–2025), C(ρ) is refuted, because C(ρ) predicts a Newtonian null of 0.05–0.4%. If Gaia confirms the null (Banik et al. 2024; Pittordis & Sutherland 2023), the framework merely reproduces Newton and is not selected over it. Both branches lose or tie. Worse, the confirmation branch is not reachable: the predicted 0.05–0.4% deviation sits ~80× below the Gaia DR3 wide-binary systematics floor, so the distinguishing measurement cannot be made at all with current data. Separately, Desmond, Hees & Famaey (2024) — the same paper TEST-25 inherits — pre-empts this test. Demoted here 2026-08-10 after a simulated-visitor Pass 3 found this page still selling it; the closure was on the Tier-1 ledger since 2026-06-07 and never propagated to the page a researcher opens to find live tests.',
+    verdict: 'This page advertised TEST-02 as the #1 active discriminating test — "requires zero-cost Gaia DR3 analysis" — for weeks after /tier-1-existing had closed it. It has no outcome that favours the framework. If Gaia confirms a MOND-scale ~18% anomaly (Chae 2023–2025), C(ρ) is refuted, because C(ρ) predicts a Newtonian null (γ_g ≡ 1 exactly in the wide-binary ratio, not a small signal below reach; current status on Tier 1, 2026-10-18). If Gaia confirms the null (Banik et al. 2024; Pittordis & Sutherland 2023), the framework merely reproduces Newton and is not selected over it. Both branches lose or tie. And at the knees where the ratio is null, the density law already fails lunar laser ranging (68/74 laws) and SPARC (ΔBIC +2843), so neither Gaia outcome reaches a live model. (Until 2026-10-23 this card said the density branch predicted 0.05–0.4%, ~80× below the Gaia DR3 systematics floor; that figure needs a knee no other page uses, and a researcher simulated-visitor persona found it contradicting Tier 1.) Separately, Desmond, Hees & Famaey (2024) — the same paper TEST-25 inherits — pre-empts this test. Demoted here 2026-08-10 after a simulated-visitor Pass 3 found this page still selling it; the closure was on the Tier-1 ledger since 2026-06-07 and never propagated to the page a researcher opens to find live tests.',
   },
   {
     id: 'TEST-11',
@@ -115,7 +115,8 @@ export default function Top5Tests() {
           <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>fork</Link>.) The two that stood here until today
           were demoted, both for reasons that had been documented elsewhere on this site and had never
           reached this page: TEST-02 is <em>self-eliminating-or-tie</em> — no Gaia outcome selects the
-          framework, and the confirmation branch sits ~80× below the systematics floor — and the EEG test
+          framework (the density branch predicts an identically null ratio, γ<sub>g</sub> ≡ 1, and already fails lunar ranging at the
+          knees where it is null; the acceleration branch predicts MOND&apos;s boost, which is TEST-25&apos;s physics) — and the EEG test
           ranks an experiment whose two observables have no operational definition. Neither was refuted
           today; both were closed weeks ago on{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>{' '}

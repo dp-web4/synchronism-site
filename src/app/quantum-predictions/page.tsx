@@ -256,8 +256,9 @@ export default function QuantumPredictions() {
           <strong>Both zero-cost starting points have already been run (this paragraph was stale until
           2026-09-05).</strong> Protocol 2 (Wide Binary &#x03B3;) is TEST-02 on{' '}
           <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> &mdash; closed 2026-06-07
-          as <em>self-eliminating-or-tie</em>: no Gaia outcome selects this framework, and its predicted 0.05&ndash;0.4%
-          signal is below DR3 systematics. Protocol 3 (SPARC Environment) is TEST-05 / TEST-03s &mdash; executed
+          as <em>self-eliminating-or-tie</em>: no Gaia outcome selects this framework. The density branch predicts an identically
+          null ratio, and the acceleration branch predicts MOND&apos;s boost (the 0.05&ndash;0.4% figure once quoted here needs a knee
+          no other page uses). Protocol 3 (SPARC Environment) is TEST-05 / TEST-03s &mdash; executed
           2026-07-14 on SPARC RAR offsets vs Cosmicflows-4 densities: r&sup2; = 0.0001, the registered kill fired. By
           this page&apos;s own logic (&ldquo;if both fail, the more expensive protocols are likely not worth
           pursuing&rdquo;), the funded protocols below are not currently motivated. They are kept as a record of what

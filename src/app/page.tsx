@@ -358,14 +358,20 @@ export default function Home() {
               <strong>&Lambda;CDM</strong> = the standard cosmological model;{' '}
               <strong>f&sigma;₈</strong> = growth rate of cosmic structure;{' '}
               <strong>g<sub>bar</sub> / g<sub>obs</sub> / a<sub>0</sub></strong> = acceleration from visible matter / observed acceleration / MOND&apos;s acceleration scale;{' '}
-              <strong>&Omega;<sub>m</sub> / &Omega;<sub>b</sub></strong> = matter / baryon fraction of the universe;{' '}
+              <strong>&Omega;<sub>m</sub> / &Omega;<sub>b</sub></strong> = the fraction of the universe&apos;s energy in matter (&asymp; 0.315) / in ordinary (baryonic) matter (&asymp; 0.049);{' '}
               <strong>LLM</strong> = large language model;{' '}
               <strong>BAO</strong> = baryon acoustic oscillations (a standard ruler in galaxy clustering);{' '}
               <strong>DESI</strong> = Dark Energy Spectroscopic Instrument (the survey behind the BAO and growth tests);{' '}
               <strong>KiDS-1000</strong> = a weak-lensing survey (Kilo-Degree Survey, 1000 deg&sup2;);{' '}
               <strong>Youden&apos;s J</strong> = a score from &minus;1 to 1 for how well a classifier separates two classes (0 = no better than chance, 1 = perfect);{' '}
-              <strong>&Omega;<sub>m</sub></strong> = the fraction of the universe&apos;s energy in matter (&asymp; 0.315);{' '}
               <strong>N<sub>corr</sub></strong> = the number of a system&apos;s parts that move together (the input to &gamma; = 2/&radic;N<sub>corr</sub>);{' '}
+              <strong>CMB</strong> = cosmic microwave background;{' '}
+              <strong>DR2</strong> = a survey&apos;s second data release;{' '}
+              <strong>ALFALFA / SDSS</strong> = a radio survey of galaxy hydrogen gas / the Sloan Digital Sky Survey (optical);{' '}
+              <strong>N<sub>eff</sub></strong> = effective number of independent data points, after correlated points are discounted;{' '}
+              <strong>V<sub>flat</sub> / V<sub>max</sub></strong> = a galaxy&apos;s steady outer rotation speed / its peak rotation speed;{' '}
+              <strong>f<sub>DM</sub></strong> = the fraction of a galaxy&apos;s inferred mass that is dark matter;{' '}
+              <strong>&mu;-law</strong> = MOND&apos;s interpolating function, which sets how gravity changes between the two regimes;{' '}
               <strong>CFD</strong> = computational fluid dynamics.{' '}
               More in the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
             </p>
@@ -578,10 +584,13 @@ export default function Home() {
               <Link href="/measurement-without-observers" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Quantum Physics</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  MRH (Markov Relevancy Horizon) crossing replaces wave function collapse. Born rule: equivalent to Zurek/Carroll-Sebens
-                  (reparametrization, no novel quantum prediction yet). Ontological reframe, not a new formula.
+                  MRH (Markov Relevancy Horizon) crossing replaces wave function collapse. A reading of decoherence, not a new formula:
+                  it has no rate parameter, so it cannot even be equivalent to decoherence theory (which has rates), and it makes no
+                  prediction that differs from standard quantum mechanics. <em style={{ fontSize: '0.85em' }}>(This card read
+                  &ldquo;Reparametrization&rdquo; and &ldquo;Born rule: equivalent to Zurek/Carroll-Sebens&rdquo; until 2026-10-23, a day after its
+                  destination page went back to Speculative.)</em>
                 </p>
-                <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — same math, not new physics">Reparametrization — No Novel Prediction Yet</span>
+                <span className="badge badge-speculative" title="A proposal without a test or a rate; not shown equivalent to existing physics">Speculative — No Rate Parameter</span>
               </Link>
 
               <Link href="/galaxy-rotation" className="card" style={{ textDecoration: 'none' }}>

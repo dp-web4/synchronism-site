@@ -114,8 +114,17 @@ export default function GammaBoundary() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             &mdash; strictly increasing in γ, with no maximum at γ&nbsp;≈&nbsp;1 or at any finite γ. Reading
             &ldquo;curvature&rdquo; in log-density instead does not rescue it: max<sub>x</sub>&nbsp;dC/d&nbsp;ln&nbsp;x
-            rises monotonically with γ and <em>saturates</em> at ≈&nbsp;0.446 (verified numerically: 0.250 at
-            γ=0.5, 0.322 at γ=1, 0.375 at γ=2, 0.408 at γ=4, 0.446 as γ→∞). And C is <strong>concave on the
+            rises monotonically with γ and <em>saturates</em> at ≈&nbsp;0.448 (verified numerically: 0.250 at
+            γ=0.5, 0.322 at γ=1, 0.375 at γ=2, 0.408 at γ=4, 0.446 at γ=100; the γ→∞ limit is max&nbsp;u&nbsp;sech²u&nbsp;=&nbsp;0.448, at
+            2u&nbsp;tanh&nbsp;u&nbsp;=&nbsp;1; this read &ldquo;0.446 as γ→∞&rdquo; until 2026-10-23).{' '}
+            <strong>Why it saturates, and what γ actually does:</strong> for large γ the change happens at small x, where
+            ln(1+x)&nbsp;≈&nbsp;x, so C&nbsp;≈&nbsp;tanh(γx) depends only on γ·ρ/ρ<sub>crit</sub>. Raising γ there <em>moves the knee</em> to
+            ≈&nbsp;0.77&nbsp;ρ<sub>crit</sub>/γ; it does not sharpen it, and on that side γ is degenerate with ρ<sub>crit</sub>. What γ
+            sets is the initial slope (C&nbsp;≈&nbsp;γx) and half the exponent of approach to saturation
+            (1&nbsp;−&nbsp;C&nbsp;≈&nbsp;2(1+x)<sup>−2γ</sup>). So &ldquo;sharpness&rdquo; has a meaning only on a linear axis at fixed ρ<sub>crit</sub>. This is
+            the density-side twin of the a₀′/γ point the galaxy fits already show (the scale the data identify is a combination, not
+            γ alone). <em style={{ color: 'var(--color-text-muted)' }}>(Added 2026-10-23 from a simulated-visitor graduate persona&apos;s
+            derivation, re-checked numerically here: the peak of dC/d&nbsp;ln&nbsp;x sits at γx&nbsp;=&nbsp;0.78 at γ&nbsp;=&nbsp;10 and 0.772 at γ&nbsp;=&nbsp;1000.)</em> And C is <strong>concave on the
             whole domain</strong> &mdash; d²C/dx²&nbsp;&lt;&nbsp;0 for every x&nbsp;≥&nbsp;0 &mdash; so there is
             no inflection point to sit at. <strong>No feature of C(ρ) singles out γ&nbsp;≈&nbsp;1.</strong>{' '}
             One quantity does peak near it: the geometric curvature of the graph at the origin,

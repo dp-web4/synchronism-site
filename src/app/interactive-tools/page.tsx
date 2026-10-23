@@ -56,7 +56,7 @@ const coreTools = [
   },
   {
     title: 'Crossover Regime Visualizer',
-    href: '/phase-boundary-visualizer',
+    href: '/crossover-regime-visualizer',
     desc: '(Formerly "Phase Boundary Visualizer" — C(ρ) has no phase transition, only a smooth crossover.) Drag the γ slider and catch a refuted formula being wrong at every stop — the tool now teaches the audited sign inversion as its lesson (real BCS/BEC transitions are among nature\'s sharpest; the formula files them at the flat end). Each regime card carries a live reality-check line. Note: the axis here is γ, not coherence C.',
     level: 'Intermediate',
     state: 'Artifact Lesson',

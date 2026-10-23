@@ -141,7 +141,7 @@ export const navigationTree: NavigationTree = {
       desc: '\u03B3 > 1.4, 0.6\u20131.4 (\u2248 1), < 0.6 regimes \u2014 smooth crossovers in C(\u03C1), not phase transitions',
       keywords: ['phase', 'transition', 'regime', 'quantum', 'classical', 'boundary'],
       prerequisites: ['/gamma-parameter'],
-      related: ['/gamma-boundary', '/chemistry-phase-transitions', '/phase-boundary-visualizer'],
+      related: ['/gamma-boundary', '/chemistry-phase-transitions', '/crossover-regime-visualizer'],
     },
     {
       title: 'Scale Invariance',
@@ -628,7 +628,7 @@ export const navigationTree: NavigationTree = {
     },
     {
       title: 'Crossover Regime Visualizer',
-      href: '/phase-boundary-visualizer',
+      href: '/crossover-regime-visualizer',
       desc: 'Interactive \u03B3 < 0.6 / 0.6\u20131.4 / > 1.4 diagram (a crossover, not a phase boundary)',
       keywords: ['phase', 'boundary', 'visualizer', 'diagram', 'interactive'],
       related: ['/phase-transitions', '/gamma-boundary'],

@@ -166,7 +166,7 @@ export const terms: Record<string, TermDefinition> = {
     fullName: 'Smooth Regime Change (vs Phase Transition)',
     brief: 'A change from one kind of behaviour to another that happens smoothly, with no sharp threshold and no critical point.',
     explanation: 'In a true phase transition (water freezing, a magnet losing its magnetism) some quantity changes non-smoothly at a critical point, and quantities like the specific heat show singular behaviour described by critical exponents. In a crossover the system moves between two regimes gradually, like the colour of a sky at dusk: you can say roughly where the change happens, but there is no exact point where it happens. C(\u03c1) = tanh(\u03b3\u00b7ln(1 + \u03c1/\u03c1_crit)) is smooth everywhere (no critical point, no critical exponents), so the regime changes it describes are crossovers. That is why the Crossover Regime Visualizer (formerly \u201cPhase Boundary Visualizer\u201d) and the chemistry page \u201c\u03b3 Regimes: Crossovers, Not Phase Transitions\u201d were renamed: the older names claimed a sharp transition the equation does not have.',
-    learnMore: '/phase-boundary-visualizer',
+    learnMore: '/crossover-regime-visualizer',
   },
   'pre-registration': {
     term: 'Pre-registration',

@@ -10,7 +10,7 @@ import { learningPaths } from '@/lib/paths';
 // Physics/Chemistry/Philosophy journeys).
 const difficultyPaths = learningPaths.filter(p => p.kind === 'difficulty');
 // Computed, not hand-written: a 2026-10-12 visitor found "none of the paths include a tool" while Beginner step 3 was the Plotter.
-const TOOL_HREFS = new Set(['/chemistry-correlation-explorer', '/coherence-explorer', '/consciousness-demo', '/equation-walkthrough', '/galaxy-plotter', '/gamma-calculator', '/phase-boundary-visualizer']);
+const TOOL_HREFS = new Set(['/chemistry-correlation-explorer', '/coherence-explorer', '/consciousness-demo', '/equation-walkthrough', '/galaxy-plotter', '/gamma-calculator', '/crossover-regime-visualizer']);
 const pathsWithTools = learningPaths.filter(p => p.steps.some(s => TOOL_HREFS.has(s.href)));
 const domainPaths = learningPaths.filter(p => p.kind === 'domain');
 

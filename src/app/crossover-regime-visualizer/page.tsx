@@ -48,8 +48,8 @@ export default function PhaseBoundaryVisualizer() {
 
   return (
     <>
-      <Breadcrumbs currentPath="/phase-boundary-visualizer" />
-      {/* Visible title renamed 2026-09-15; route and navigation.ts title unchanged (URL stays /phase-boundary-visualizer) */}
+      <Breadcrumbs currentPath="/crossover-regime-visualizer" />
+      {/* Visible title renamed 2026-09-15; route renamed 2026-10-23 from /phase-boundary-visualizer (old URL redirects) */}
       <h1>Crossover Regime Visualizer</h1>
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.35rem' }}>
         <ValidationBadge status="audited-negative" label="γ = 2/√N_corr — sharpness sign inverted" />
@@ -60,7 +60,8 @@ export default function PhaseBoundaryVisualizer() {
         badge above.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.25rem' }}>
-        Formerly &ldquo;Phase Boundary Visualizer&rdquo; (the URL keeps that name). C(&#x03C1;) is analytic everywhere &mdash;
+        Formerly &ldquo;Phase Boundary Visualizer&rdquo;; the URL carried that name until 2026-10-23, when a technical-writer
+        simulated-visitor persona pointed out that it still asserted the retracted claim in every link. C(&#x03C1;) is analytic everywhere &mdash;
         a smooth <em>crossover</em>, not a thermodynamic phase transition &mdash; so the regimes below are ranges of
         &#x03B3;, not phases (full naming note below).
       </p>
@@ -301,7 +302,7 @@ export default function PhaseBoundaryVisualizer() {
         </div>
       </section>
 
-      <RelatedConcepts currentPath="/phase-boundary-visualizer" />
+      <RelatedConcepts currentPath="/crossover-regime-visualizer" />
     </>
   );
 }

@@ -113,7 +113,7 @@ export default function PhaseTransitions() {
           <Link href="/scale-invariance" className="btn-primary">
             Next: Scale Invariance &rarr;
           </Link>
-          <Link href="/phase-boundary-visualizer" className="btn-secondary">
+          <Link href="/crossover-regime-visualizer" className="btn-secondary">
             Interactive Visualizer
           </Link>
         </div>

@@ -325,7 +325,7 @@ export default function GammaCalculator() {
         <div style={{ marginBottom: '1.5rem', padding: '0.75rem 1rem', background: 'rgba(245,158,11,0.07)', borderRadius: '6px', borderLeft: '3px solid #f59e0b' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
             <strong>⚠ Preset caveat:</strong> N<sub>corr</sub> values in the presets are approximate estimates, not measured physical pair counts. The BCS superconductor preset uses N<sub>corr</sub> = 10<sup>7</sup> (mid-range of physical Cooper-pair coherence volumes); physical estimates span 10<sup>6</sup>–10<sup>9</sup> pairs (Al vs. Nb vs. Pb differ significantly). The{' '}
-            <Link href="/phase-boundary-visualizer" style={{ color: '#f59e0b' }}>Crossover Regime Visualizer</Link>{' '}
+            <Link href="/crossover-regime-visualizer" style={{ color: '#f59e0b' }}>Crossover Regime Visualizer</Link>{' '}
             uses different Ncorr estimates for some systems. How to count N<sub>corr</sub> for a real system is an open question: no operational, scale-invariant recipe for N<sub>corr</sub> exists yet.
           </p>
         </div>

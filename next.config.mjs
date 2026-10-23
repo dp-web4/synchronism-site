@@ -266,7 +266,7 @@ const nextConfig = {
       // /phase-boundary 404d by grad student (shorter alias for visualizer)
       {
         source: '/phase-boundary',
-        destination: '/phase-boundary-visualizer',
+        destination: '/crossover-regime-visualizer',
         permanent: false,
       },
       // /decisive-tests 404d by P4 researcher — referenced from test-catalog
@@ -409,12 +409,12 @@ const nextConfig = {
         destination: '/equation-walkthrough',
         permanent: false,
       },
-      // /crossover-regime-visualizer — nav/card title is "Crossover Regime Visualizer" but the page
-      // lives at /phase-boundary-visualizer (visitor 2026-09-27 label-vs-URL audit)
+      // 2026-10-23: the route itself was renamed /phase-boundary-visualizer -> /crossover-regime-visualizer
+      // (the old slug asserted the retracted "phase boundary"; visitor tech-writer persona). Old links keep working.
       {
-        source: '/crossover-regime-visualizer',
-        destination: '/phase-boundary-visualizer',
-        permanent: false,
+        source: '/phase-boundary-visualizer',
+        destination: '/crossover-regime-visualizer',
+        permanent: true,
       },
     ];
   },

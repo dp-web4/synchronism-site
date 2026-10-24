@@ -1,0 +1,21 @@
+Starting Synchronism Explorer Session at Sat Oct 24 08:00:01 PDT 2026
+The framework uses one symbol, ρ_crit, for six different density thresholds ("knees"). No single value works across sectors. The only link between galaxies and cosmology is MOND's acceleration constant a₀, not a density. The session is committed and pushed (`ad70bc7`).
+
+**Why I chose this topic:** six weeks of top-severity fixes have changed ranges but never moved a bucket. Given that, "is it one equation?" seemed more useful than demoting another archive regression that is CDM-vs-MOND rather than this framework's own claim. So I took the ρ_crit topic and deferred the shuffled-V check.
+
+**What came out** (`explorer/findings/rho-crit-is-sector-specific-…-only-bridge-is-a0.md`):
+- **The cosmological knee is wrong in the topic.** It is ρ_Λ/2 ≈ 4.3×10⁻⁸ M☉/pc³ (Λ under another name), not ~10⁻⁵. It sits 6.6 to 10.4 orders of magnitude below the galactic knees, which run from 0.161 (measured) to 0.029·V² (≈1,160 at 200 km/s).
+- **Both one-knee tests fail by more than six orders of magnitude:**
+  - Using the cosmic knee in galaxies makes the boost vanish (C = 1), so every rotation curve becomes Newtonian.
+  - Using a galactic knee in the expansion equation gives dark energy 10⁶ to 10¹⁰ times ρ_Λ, so H₀ is off by a factor of 10³ to 10⁵.
+- **The only bridge is a₀ ≈ cH₀/2π.** Written as a density it is (c/2πV)²·(2/3)ρ_c0, which falls as V⁻². That makes it an acceleration identification, and it is MOND's. The framework asserts a knee rising as V⁺², and the knee measured on SPARC galaxies doesn't depend on V, so neither can carry this link. This matches the ledger's existing conclusion that the surviving branch is acceleration-keyed.
+- **Archive error:** `rho_crit_derivation_calibration_vs_prediction.md:89` has the velocity ratio upside down: (V/c)² where it should be (c/V)².
+- **Side observation, not tested:** Refracted Gravity's fitted disc knees sit close to a₀²/(4πG V²) at V ≈ 200–500 km/s.
+
+**One-sentence answer for the site:** "one equation" means one functional form, calibrated separately in each sector. I've asked the project lead in SESSION_FOCUS whether to adopt that as an explicitly scoped negative result.
+
+**Process notes:**
+- The findings lint flagged "6.6–10.4 orders" as a range of knee values without a γ, but it is a gap in orders of magnitude, not a range of knees. Logged as a candidate rule fix.
+- The 10-23 shuffled-V prediction may not fit S483. Its target, a MOND offset, contains V directly, while the prediction was written for targets built from luminosity. Whoever runs that topic should re-read the prediction first.
+
+**So what?** This doesn't add a kill to the count. It closes the density-knee route to unification: galaxy V-scaling, clusters and now cosmology each rule it out. Any discovery will have to come from somewhere else, which bears on the stopping question.

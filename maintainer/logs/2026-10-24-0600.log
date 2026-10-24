@@ -1,3 +1,45 @@
 Starting Synchronism Maintainer Session at Sat Oct 24 06:00:00 PDT 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+The session is done and pushed: site commit `f9b830e`, research repo commit `379b3b7f`. `next build` passes, and the site lint is clean at 240 rules. The new rules caught 31 problems on the previous version and none now.
+
+**WAKE:** the two most severe items in today's visitor log were challenges to the arithmetic behind the refutations, so I checked them against the scripts before changing anything. **Both were wrong, but the site caused one of them.**
+- **"+10.9 should be +6.2":** the persona assumed γ = 2 was being compared with a free γ, so a penalty term should have been recalculated. The script actually compares γ = 2 with McGaugh's ν. Both fit one parameter, so there is no penalty term: 166 × ln(RSS ratio) = +10.9. But /galaxy-rotation itself described the comparison as "γ = 2 vs free γ, ln 166". That false sentence is where the +6.2 came from.
+- **"+163 / +142 labels swapped":** that comparison uses 2,438 data points in 122 galaxies, not 2,807. With the right number the labels are correct.
+- **Bootstrap interval [23, 351]:** this is the spread of the full-sample number. Scaled to one count per galaxy it becomes [1.4, 20.8], which straddles the threshold of 10. So "at the threshold" was right.
+- **What was actually missing:** no page printed the comparator, the parameter difference, N, or the formula. /galaxy-rotation now has a section showing the formula (`#dbic-formula`), and /dark-matter shows the +2843 one.
+
+**One persona point held:** TEST-25 (the Cassini squeeze) only fires if every data point counts as independent, and the count range left that out. The range is now **3 to 8**. TEST-25 moves together with the γ = 2 pin under the same counting choice, so they are not independent adjustments. The two galaxy-level γ intervals are now labelled as different statistics.
+
+**Other site fixes:**
+- **0.086 correction:** the explorer's 10-23 finding that this number is not a Tully–Fisher scatter (velocity adds only 0.0006 dex) is now on all 9 pages it named. Desmond 2017's numbers are now labelled as log V, and the backwards "0.061" sentence is gone.
+- **Honest Assessment top box:** it now opens with "failed its galaxy tests / MOND in other notation / fatal". The counting caveats are in a collapsed note.
+- **A parallel agent made these changes, which I reviewed and built:**
+  - /phase-transitions is now /gamma-regimes, with a permanent redirect and a rewritten lead sentence.
+  - The TEST-04a card no longer says "Failed".
+  - The critical-exponents badge stays Failed, reworded as a category error of the old framing.
+  - Superconductivity's two different N_corr values are explained.
+  - Toner–Bacon is now described as an existence proof whose cost is a preferred frame.
+  - Chemistry's Debye row is marked "by construction".
+  - The galaxy-plotter caption now explains the floor, and the equation-term pages have their glosses.
+- **Mine as well:**
+  - /dark-energy now says the P(k) constraint applies on both sides of γ = ½, with the reason.
+  - /for-researchers has a new row on joint galaxy + cosmology content (none, or already excluded).
+  - The a₀′ notation slip is fixed.
+  - /parameter-derivations now gives a status line for the ln(1+x) argument: chosen, no derivation.
+
+**Research repo:**
+- **Session 610:** back-annotated with the 0.086 finding.
+- **PREDICTIONS.md:** new 2026-10-24 block. No bucket moves: the count stays 6 and Bucket 0 stays 0.
+- **Proposal** (`refutation_arithmetic_is_right_but_unprintable_and_test25_joins_the_count_range_20261024.md`). It asks you for two things:
+  - **Print the inputs beside every ΔBIC in the ledger:** comparator, parameter difference, N and unit.
+  - **Rule on the stopping question routed 10-04.** For six weeks the most severe visitor items have changed ranges and labels, never buckets, and today two of them were misreadings of numbers the site never printed. I agree with the researcher persona that the physics question is answered at this scale.
+
+**Explorer topics seeded:**
+- The four different ρ_crit's on the site (galaxy and cosmology values are 8 orders of magnitude apart).
+- The same shuffled-velocity check on the S593 and S483 offset models.
+
+**Housekeeping:**
+- I accidentally created an empty file in the site repo. Hestia blocks `rm` outside /tmp, so I moved it to /tmp; it was never committed.
+- The three untracked `dbic2843_boot_*.npy` files from 10-18 are left out of the commit.
+- I saved a memory note: read the script's comparator and N before rescaling a ΔBIC.

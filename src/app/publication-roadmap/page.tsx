@@ -10,7 +10,7 @@ const papers = [
     category: 'Cosmology / Astrophysics',
     items: [
       { name: 'ALFALFA-SDSS TFR Scatter Reduction', readiness: 0.97, novelty: '51% scatter improvement', circularity: '8.8%' },
-      { name: 'CDM vs MOND Discrimination (σ_int)', readiness: 0.95, novelty: 'σ_int = 0.086 dex (test underpowered as registered)', circularity: '15%' },
+      { name: 'CDM vs MOND Discrimination (σ_int)', readiness: 0.0, novelty: 'σ_int = 0.086 dex is not a BTFR scatter: independent of V (shuffled-V 0.0870 vs 0.0864, explorer 2026-10-23); readiness 0.95 → 0 on 2026-10-24', circularity: '100%' },
       { name: 'SPARC Capstone (175 galaxies)', readiness: 0.92, novelty: 'Unified rotation curve framework', circularity: '25%' },
       { name: 'Dark Matter as Incomplete Decoherence', readiness: 0.88, novelty: 'Paradigm reframe', circularity: '40%' },
       { name: 'Wide Binary Density Prediction', readiness: 0.60, novelty: 'Novel testable prediction', circularity: '5%' },

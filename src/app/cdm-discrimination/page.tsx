@@ -37,12 +37,28 @@ export default function CdmDiscrimination() {
       </div>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
-        <EquationDisplay size="lg" label="Measured intrinsic scatter">
+        <EquationDisplay size="lg" label="Residual of an in-sample photometric mass model (not a BTFR scatter; independent of V)">
           &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex
         </EquationDisplay>
 
+        <p id="not-a-btfr-scatter" style={{ scrollMarginTop: '5rem', background: 'rgba(239,68,68,0.06)', borderLeft: '3px solid rgba(239,68,68,0.5)', padding: '0.6rem 0.9rem', borderRadius: '4px' }}>
+          <strong>The 0.086 is not a Tully&ndash;Fisher scatter (explorer 2026-10-23, pre-registered; this box added 2026-10-24).</strong>{' '}
+          Session 610&apos;s 0.086 dex is the residual of log M<sub>b</sub> regressed on five predictors: log V, the i-band
+          Tully&ndash;Fisher residual, a stellar-population offset, g&minus;i colour and gas fraction. Shuffle V across galaxies, or drop it,
+          and the residual is 0.0870 against 0.0864: <strong>velocity contributes 0.0006 dex</strong>, so the number is independent of V.
+          The reason is algebraic. The catalogue&apos;s stellar masses are the Taylor et&nbsp;al. 2011 colour formula (log M* = &minus;0.662 +
+          log L<sub>i</sub> + 0.700(g&minus;i), rms 0.0037 dex), so the target is a closed-form function of four of the five predictors, and
+          0.086 is the error of fitting a linear model to the log of a sum. Every verdict built on it, the retired &ldquo;MOND rejected at 32&sigma;&rdquo;
+          and &ldquo;CDM-consistent&rdquo; alike, compared a photometric-estimator residual with a dynamical prediction, and neither
+          comparison has content. <strong>The plain BTFR on the same 677 galaxies:</strong> 0.270 dex in log M<sub>b</sub> (forward), and
+          &sigma;<sub>int</sub> = 0.073 &plusmn; 0.002 dex <em>in log V</em> (inverse, noise modelled; an upper bound), against Desmond
+          2017&apos;s abundance-matching 0.064 and SPARC&apos;s 0.029, both also in log V. On ALFALFA W50 widths this sample is not tighter than
+          the &Lambda;CDM prediction, and W50 and stellar-mass systematics keep it from discriminating either way. Finding:{' '}
+          <code style={{ fontSize: '0.78rem' }}>explorer/findings/btfr-0086-is-not-a-tully-fisher-scatter-velocity-contributes-0p0006-dex.md</code>.
+          The paragraphs below are kept as the record of how the number was read before.
+        </p>
         <p>
-          <strong>Which relation this is (corrected 2026-09-23):</strong> the 0.086 dex is the intrinsic scatter of the{' '}
+          <strong>Which relation this is (corrected 2026-09-23; superseded 2026-10-24 by the box above, the number is not a BTFR scatter at all):</strong> the 0.086 dex is the intrinsic scatter of the{' '}
           <em>baryonic Tully&ndash;Fisher relation</em> (BTFR), one point per galaxy, built from ALFALFA&apos;s global HI
           line width W50 and SDSS stellar masses (Session 610 calls it &ldquo;BTFR scatter&rdquo;). It is <em>not</em> the
           scatter of the resolved Radial Acceleration Relation (RAR), which uses many radii per galaxy; the observed SPARC RAR
@@ -51,7 +67,7 @@ export default function CdmDiscrimination() {
           comparison below is BTFR-to-BTFR where it can be.{' '}
           Cold Dark Matter (CDM) models predict a range of intrinsic scatter in these relations from halo-to-halo assembly
           diversity. The measured value,
-          0.086 &plusmn; 0.003 dex, sits at the source session&apos;s own CDM figure (0.085) once the
+          0.086 &plusmn; 0.003 dex (not a BTFR scatter, per the box above), sits at the source session&apos;s own CDM figure (0.085) once the
           measurement&apos;s own noise budget is modeled correctly &mdash; it does not beat <em>that</em> figure; whether
           it matches published &Lambda;CDM predictions is a separate question, and the first external number checked says it
           does not (benchmark below).
@@ -63,11 +79,12 @@ export default function CdmDiscrimination() {
           noted it had been queued for three months):</strong> Desmond 2017 (MNRAS 472, L35; arXiv:1706.01017) is a BTFR-to-BTFR
           comparison in baryonic mass. Halo abundance matching gives SPARC-like mock samples with a typical BTFR scatter of
           &ldquo;&sim;0.25 dex&rdquo;, &ldquo;3.6&sigma; discrepant with the SPARC value of &sim;0.11 dex&rdquo; (quoted verbatim);
-          with zero abundance-matching scatter the mean falls to 0.061. So the one external &Lambda;CDM figure checked is about
+          the paper&apos;s table is in log V<sub>f</sub> (SPARC 0.029, abundance matching 0.064, and 0.061 with zero galaxy&ndash;halo scatter), so the &ldquo;0.061&rdquo; is a 5% change in log V, not a fall from 0.25 (corrected 2026-10-24: this sentence put 0.061 beside the log-M<sub>b</sub> &ldquo;0.25&rdquo; as if both were in one unit). So the one external &Lambda;CDM figure checked is about
           3&times; the internal 0.085, and the &ldquo;sits inside the CDM range&rdquo; verdict above is <strong>not supported by the
-          literature as it stands</strong>. It is suspended rather than reversed: the 0.086 is on ALFALFA W50 widths after an
-          in-sample TFR-residual mass-to-light correction, not on SPARC V<sub>flat</sub>, and Desmond&apos;s 0.061 shows the
-          prediction depends strongly on the assumed galaxy&ndash;halo scatter. A like-for-like comparison (same velocity
+          literature as it stands</strong>. It was suspended rather than reversed: the 0.086 (independent of V, as the box above shows) is on ALFALFA W50 widths after an
+          in-sample TFR-residual mass-to-light correction, not on SPARC V<sub>flat</sub>. (A sentence here said Desmond&apos;s 0.061 (in log V)
+          shows the prediction depends strongly on the galaxy&ndash;halo scatter. The paper says the opposite: the scatter &ldquo;cannot be
+          appreciably lowered by tightening the galaxy&ndash;halo connection&rdquo;. Removed 2026-10-24.) A like-for-like comparison (same velocity
           definition, same mass estimator) has not been run. This is a CDM-versus-MOND question; neither reading moves this
           framework&apos;s ledger.
           The papers it should take its CDM numbers from: Ludlow et al. 2017 (PRL 118, 161103; EAGLE/APOSTLE), Keller &amp;
@@ -98,7 +115,7 @@ export default function CdmDiscrimination() {
           </li>
           <li>
             The program&apos;s own definitive re-analysis, correcting for distance noise, revised the
-            estimate to &#x03C3;<sub>int</sub>&nbsp;=&nbsp;0.086 dex and explicitly labeled the
+            estimate to &#x03C3;<sub>int</sub>&nbsp;=&nbsp;0.086 dex (not a BTFR scatter; see the top box) and explicitly labeled the
             &minus;6.2&sigma; reading <strong>premature</strong>. Its own verdict: <strong>CDM-consistent
             at z&nbsp;=&nbsp;+0.5</strong> &mdash; well within one standard deviation of the CDM
             prediction, not a tension.
@@ -169,7 +186,9 @@ export default function CdmDiscrimination() {
 
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          Net verdict: whether &#x03C3;<sub>int</sub> = 0.086 dex is consistent with CDM is <strong>suspended</strong>.
+          Net verdict (2026-10-24): <strong>the 0.086 is not a BTFR scatter</strong> (it is independent of V; see the box at the top), so
+          it has no CDM verdict to give. The like-for-like number on the same sample, 0.073 dex in log V, is not tighter than
+          abundance matching&apos;s 0.064. Until 2026-10-24 this verdict read &ldquo;suspended&rdquo;, with this reasoning:
           Against the internal 0.085 dex it looked consistent; against Desmond 2017&apos;s abundance-matching ~0.25 dex it sits
           about 3&times; <em>below</em> CDM. That would be the known BTFR-tightness problem for &Lambda;CDM, which MOND explains
           with near-zero intrinsic scatter, so even the restored reading would favour the MOND class, not this framework.

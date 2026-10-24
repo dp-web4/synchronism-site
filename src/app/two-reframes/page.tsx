@@ -227,10 +227,17 @@ export default function TwoReframes() {
             constructions reached the Tsirelson bound (2.83) without it. <strong>Scope (added 2026-09-11):</strong> that
             covers the three constructions built, not every substrate. Toner &amp; Bacon (Phys. Rev. Lett. 91, 187904, 2003)
             showed that local hidden variables plus <em>one hidden bit</em> of communication per trial reproduce the singlet
-            correlations exactly, with no signaling visible in anyone&apos;s statistics. A one-grid substrate passing such a
-            bit was never built here, so that class is <em>untested</em>, not refuted &mdash; and building one would be
-            exactly the &ldquo;conditional setting-dependence&rdquo; the verdict below says the ontology would have to supply.
-            It would be nonlocal the way Bohmian mechanics is: a choice about the ontology, not a loophole in Bell.</li>
+            correlations exactly, with no signaling visible in anyone&apos;s statistics. That is an existence proof: the
+            class <em>works</em>, so whether it could reproduce quantum correlations is not an open question. The open
+            question is whether this substrate supplies that bit between two measurements too far apart for light to connect
+            them. Doing that needs a preferred frame (a &ldquo;now&rdquo; shared across space), which is what the framework&apos;s
+            absolute time already assumes, and a preferred frame carries a Lorentz-violation cost already priced on{' '}
+            <Link href="/for-researchers#dim4-liv" style={{ color: 'var(--color-accent-blue)' }}>For Researchers (the dim-4 LIV row, Audited-Negative)</Link>.
+            Building such a substrate would be exactly the &ldquo;conditional setting-dependence&rdquo; the verdict below says
+            the ontology would have to supply. It would be nonlocal the way Bohmian mechanics is: a choice about the ontology,
+            not a loophole in Bell. (Until 2026-10-24 this sentence called the class &ldquo;<em>untested</em>, not
+            refuted&rdquo;; a researcher simulated-visitor persona pointed out that Toner &amp; Bacon already settle that it
+            works, and that the real cost is the preferred frame.)</li>
           <li><strong>Substrate-independence check (run 2026-07-06):</strong> the earlier runs used a
             borrowed Kuramoto <em>phase</em> substrate, leaving one escape open &mdash; maybe the
             framework&apos;s own scalar Intent-<em>density</em> substrate behaves differently. It was

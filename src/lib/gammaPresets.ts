@@ -48,7 +48,8 @@ export const GAMMA_PRESETS: GammaPreset[] = [
   {
     // Label says 'back-fitted' up front (visitor 2026-09-23): a reader arriving from
     // /first-encounter (galaxy stars 'uncorrelated, N_corr = 1') took N_corr = 17 as a claim.
-    label: 'Galaxy (back-fitted from SPARC γ ≈ 0.49, N_corr ≈ 17)',
+    // 2026-10-24: casual visitor still read '17' as a count ('a galaxy is 17 particles?'); say what 17 is.
+    label: 'Galaxy (back-fitted: N_corr = (2/0.49)² ≈ 17 from the SPARC γ, not a count of anything)',
     ncorr: 17,
     galaxySector: true,
     story:

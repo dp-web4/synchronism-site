@@ -137,7 +137,7 @@ export const terms: Record<string, TermDefinition> = {
     fullName: 'Abrupt Change in System Behavior',
     brief: 'A sudden shift in how a system behaves, like water freezing or a magnet losing its magnetism.',
     explanation: 'In Synchronism, the quantum-to-classical transition is modeled as a sharp-but-smooth saturation controlled by \u03B3. Caution: despite the name, C(\u03C1) is NOT a literal phase transition \u2014 the function is analytic with no critical point, no diverging correlation length, and no critical exponents (the site\u2019s own audit states this; see /parameter-derivations). At \u03B3 \u2248 1, systems sit at the sparse/collective boundary \u2014 where chemistry clusters.',
-    learnMore: '/phase-transitions',
+    learnMore: '/gamma-regimes',
   },
   'reparametrization': {
     term: 'Reparametrization',

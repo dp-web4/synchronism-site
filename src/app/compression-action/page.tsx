@@ -94,7 +94,7 @@ export default function CompressionAction() {
         </p>
 
         <div style={{ marginTop: '2rem' }}>
-          <Link href="/phase-transitions" className="btn-primary">
+          <Link href="/gamma-regimes" className="btn-primary">
             Next: Phase Transitions &rarr;
           </Link>
         </div>

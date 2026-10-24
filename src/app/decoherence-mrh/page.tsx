@@ -124,7 +124,7 @@ export default function DecoherenceMRH() {
           <Link href="/quantum-predictions" className="btn-primary">
             Next: Quantum Predictions &rarr;
           </Link>
-          <Link href="/phase-transitions" className="btn-secondary">
+          <Link href="/gamma-regimes" className="btn-secondary">
             Phase Transitions
           </Link>
         </div>

@@ -320,10 +320,10 @@ const nextConfig = {
         destination: '/galaxy-rotation',
         permanent: false,
       },
-      // /explore/phase-transition — dead link caught by Pass 1, Pass 2 (2026-05-28); real page is /phase-transitions
+      // /explore/phase-transition — dead link caught by Pass 1, Pass 2 (2026-05-28); real page is /gamma-regimes (renamed 2026-10-24)
       {
         source: '/explore/phase-transition',
-        destination: '/phase-transitions',
+        destination: '/gamma-regimes',
         permanent: false,
       },
       // /measurement-without-quantum — guessed URL by researcher (2026-05-28); real page is /measurement-without-observers
@@ -414,6 +414,13 @@ const nextConfig = {
       {
         source: '/phase-boundary-visualizer',
         destination: '/crossover-regime-visualizer',
+        permanent: true,
+      },
+      // 2026-10-24: same fix one link away. /phase-transitions -> /gamma-regimes (slug said "phase transitions",
+      // H1 says "Not Phase Transitions"; visitor tech-writer persona). Old links keep working.
+      {
+        source: '/phase-transitions',
+        destination: '/gamma-regimes',
         permanent: true,
       },
     ];

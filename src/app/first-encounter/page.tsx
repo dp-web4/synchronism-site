@@ -27,7 +27,9 @@ const steps = [
     content: `γ sets how sharply the dial turns. The original idea was γ = 2/√N_corr, where N_corr is how many
     particles move together as a unit: one electron alone gives γ = 2, a crystal of 10²⁴ atoms gives γ ≈ 10⁻¹².
     That formula did not survive testing. Where it made a checkable prediction, the sign came out backwards
-    (predicted correlation +0.55, measured −0.55), and N_corr had to be defined differently in every field to make
+    (predicted correlation +0.55, measured −0.55). In plain words: the formula said galaxies with fewer stars moving
+    together should sit further above the standard galaxy rotation relation, and the real galaxies did the reverse; the
+    ±0.55 is the correlation between the formula's γ and how far each galaxy sits from that relation. N_corr also had to be defined differently in every field to make
     it work. When γ is simply fitted to galaxy data it comes out near 0.5 — the value at which the equation turns
     into MOND's (MOND: a 40-year-old rival idea that says gravity itself gets stronger than Newton predicts in very weak
     fields, instead of adding dark matter, a proposed invisible substance that has never been directly detected and is inferred only from its gravitational pull; section E says more). So read γ = 2/√N_corr as the starting hypothesis, not as how things work.
@@ -82,7 +84,10 @@ const steps = [
   },
   {
     title: 'Where It Fails',
-    content: `Melting points: 53% error. Critical exponents: 2× off. Superconductor Tc: 6.5× wrong.
+    content: `Melting points: 53% error. Critical exponents (the numbers that describe how sharply a property changes
+    near a phase transition): listed as 2× off, though the function as written has none, so that entry records a failed
+    framing rather than a measured number. Superconductor Tc (the temperature below which a material superconducts):
+    6.5× wrong (607 K predicted for YBCO, 93 K actual).
     Not every application of C(ρ) works. The function captures density→coherence well,
     but can't replace domain-specific physics where crystal structure, spin-orbit coupling,
     or multi-body effects dominate.`,

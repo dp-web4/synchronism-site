@@ -118,6 +118,14 @@ export default function ParameterDerivations() {
               critical exponents — nothing to put it in a universality class. The Landau framing
               was retired at the landing page (compander family); this page now matches.
             </p>
+            <p style={{ color: 'var(--color-text-secondary)' }}>
+              <strong>The log argument, ln(1 + &rho;/&rho;<sub>crit</sub>): chosen, no derivation</strong> (status line added 2026-10-24; a
+              graduate simulated-visitor persona noted every other ingredient had one). The &ldquo;+1&rdquo; keeps C finite and zero at
+              &rho; = 0. With it, tanh(&gamma; ln(1+x)) = ((1+x)<sup>2&gamma;</sup> &minus; 1)/((1+x)<sup>2&gamma;</sup> + 1) exactly, so the
+              log turns the tanh into a power-law compander: C &asymp; &gamma;x at small x, and 1 &minus; C &asymp; 2(1+x)<sup>&minus;2&gamma;</sup>
+              at large x. The power law and its index come from this choice, not from a principle (MOND derives the corresponding deep-limit
+              slope from scale invariance; this form inherits it from the regulator). No archive document motivates the log itself.
+            </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               <strong>Note on the Ising analogy:</strong> tanh arises in mean-field Ising models as
               m = tanh(βJzm) — but that tanh comes from the <em>self-consistency equation</em>

@@ -133,7 +133,13 @@ export default function DarkEnergy() {
             DESI best fit &gamma;&nbsp;=&nbsp;0.487 the matter power is already ~10&times; &Lambda;CDM&apos;s at
             k&nbsp;=&nbsp;0.01&nbsp;h/Mpc. This is the known result for the class: fluid Cardassian models are inconsistent
             with galaxy P(k) (Amarzguioui, Elgar&oslash;y &amp; Multam&auml;ki 2005, JCAP 01, 008), as is generalized
-            Chaplygin gas away from &Lambda;CDM (Sandvik, Tegmark, Zaldarriaga &amp; Waga 2004, PRD 69, 123524).{' '}<strong>Which reading this bound belongs to:</strong> the fluid one. Under the modified-G reading of the same substitution there is no pressure term at all; its growth number (+21&nbsp;% in f&sigma;&#x2088;(0.51)) is at <a href="#growth-readings" style={{ color: 'var(--color-accent-blue)' }}>growth readings</a> and is excluded by the ISW sign and lensing (explorer 2026-10-07). Labelled 2026-10-10.{' '}
+            Chaplygin gas away from &Lambda;CDM (Sandvik, Tegmark, Zaldarriaga &amp; Waga 2004, PRD 69, 123524).{' '}
+            <strong>Two-sided, and why the (1+w) suppression does not apply (added 2026-10-24, researcher simulated-visitor persona):</strong>{' '}
+            for a separate dark-energy fluid the pressure perturbation is sourced in proportion to (1+w), so a small c<sub>s</sub>&sup2;
+            near w&nbsp;=&nbsp;&minus;1 is nearly invisible. Here &rho;<sub>DE</sub> = f(&rho;<sub>m</sub>) moves with the matter, so matter and
+            dark energy are one fluid and the pressure acts on the matter perturbation itself. The explorer&apos;s run shows both sides: at
+            &gamma; = 0.4999 the matter power at k = 0.1 h/Mpc is 6&times; &Lambda;CDM&apos;s (blow-up), and at &gamma; = 0.5005 it is
+            0.007&times; (Jeans suppression). That is the Sandvik et&nbsp;al. pair, one failure on each side.{' '}<strong>Which reading this bound belongs to:</strong> the fluid one. Under the modified-G reading of the same substitution there is no pressure term at all; its growth number (+21&nbsp;% in f&sigma;&#x2088;(0.51)) is at <a href="#growth-readings" style={{ color: 'var(--color-accent-blue)' }}>growth readings</a> and is excluded by the ISW sign and lensing (explorer 2026-10-07). Labelled 2026-10-10.{' '}
             <strong>Which sound speed (added 2026-09-23):</strong> the pin uses the <em>adiabatic</em> c<sub>s</sub>&sup2; =
             dP/d&rho; that a barotropic &rho;<sub>DE</sub> = f(&rho;<sub>m</sub>) forces. It does not hold under the other two
             conventions an EFT-of-dark-energy reader will ask about. With c<sub>s</sub>&sup2; = 0 there is no pressure term and

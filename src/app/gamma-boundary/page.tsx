@@ -141,7 +141,7 @@ export default function GammaBoundary() {
             specific function for ρ&nbsp;≥&nbsp;0&rdquo;) &mdash; one click from the page asserting its
             negation. Fixing one page and not sweeping for the same error elsewhere is the site&apos;s most
             frequent failure mode; the identical sentence on{' '}
-            <Link href="/phase-transitions" style={{ color: 'var(--color-accent-blue)' }}>γ Regimes (crossovers, not phase transitions)</Link>
+            <Link href="/gamma-regimes" style={{ color: 'var(--color-accent-blue)' }}>γ Regimes (crossovers, not phase transitions)</Link>
             {' '}was corrected in the same pass.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>

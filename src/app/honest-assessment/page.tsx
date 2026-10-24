@@ -80,7 +80,23 @@ export default function HonestAssessment() {
           If you read nothing else (this page is ~18,000 words)
         </p>
         <ul style={{ margin: 0, paddingLeft: '1.2rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-          <li><strong>The one equation did not hold as stated.</strong> No prediction that differs from MOND or &Lambda;CDM (the standard cosmology: dark matter plus a cosmological constant) survived the tests it executed &mdash; 6 refutations as currently counted (4 to 8 under counting rules not yet chosen, <a href="#count-rule" style={{ color: 'var(--color-accent-blue)' }}>how firm is the 6?</a>; at most 5 independent), 0 predictions confirmed. <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six?</a> Not all six are decisive tests on outside data: the &gamma;&nbsp;=&nbsp;2 pin (row #3) sits at the threshold once each galaxy counts once, and row #6 is a construction check, not data. Two of them (TEST-09, TEST-10) fired on galaxy rotation data only under the site&apos;s choice of cap (a ceiling on how much extra gravity the formula can add); galaxy weak-lensing data exclude that ceiling under all three candidate choices. Those two share one cause, so no more than five are independent. The count itself is under review.</li>
+          <li><strong>The one equation failed its galaxy tests. Where it fits, it is MOND in different notation. As a theory of galaxies: fatal.</strong>{' '}
+            (MOND is a 40-year-old rival theory that tweaks gravity instead of adding dark matter; &Lambda;CDM is the standard cosmology, dark
+            matter plus a cosmological constant.) No prediction that differs from MOND or &Lambda;CDM survived the tests it ran: 6 refutations
+            as currently counted, 0 predictions confirmed. <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six?</a>
+            <details style={{ marginTop: '0.3rem', fontSize: '0.82rem' }}>
+              <summary style={{ cursor: 'pointer', color: 'var(--color-text-muted)' }}>How firm is the 6? (for readers checking the bookkeeping)</summary>
+              <span style={{ display: 'block', marginTop: '0.3rem' }}>
+                The number depends on counting rules the project lead has not chosen: 3 to 8 under rules already on file
+                (<a href="#count-rule" style={{ color: 'var(--color-accent-blue)' }}>the rules</a>), and at most 5 of the six are independent.
+                Not all six are decisive tests on outside data. The &gamma;&nbsp;=&nbsp;2 pin (row #3) and the Cassini squeeze (row #5) sit at
+                the threshold once each galaxy counts once instead of each data point, and row #6 is a construction check, not data.
+                Two of them (TEST-09, TEST-10) fired on galaxy rotation data only under the site&apos;s choice of cap (a ceiling on how
+                much extra gravity the formula can add); galaxy weak-lensing data exclude that ceiling under all three candidate
+                choices. Those two share one cause, so no more than five are independent.
+              </span>
+            </details>
+          </li>
           <li><strong>Where it fits galaxies, it is MOND in different notation</strong> (MOND = the 40-year-old rival theory that tweaks gravity instead of adding dark matter). Let the dial that sets how sharp its S-curve is be fitted freely, and the equation lands on MOND&apos;s own formula; set that dial to the value the framework itself chose (γ = 2) and it fails.</li>
           <li><strong>Its two genuinely different claims both failed.</strong> That ceiling on extra gravity (galaxy edges need 4× more than it allows) and a switch that turns on with local density instead of acceleration (the data reject that at every turn-on point tried).</li>
           <li><strong>&ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence.</strong> It is a classical &ldquo;how much does the system act as one thing&rdquo; score. See{' '}
@@ -93,7 +109,9 @@ export default function HonestAssessment() {
           contradicted (researcher simulated-visitor persona). On 2026-10-20 &Lambda;CDM and &ldquo;cap&rdquo; were defined in
           place, &ldquo;rows #1 and #2&rdquo; became &ldquo;those two&rdquo;, and the table of contents and plain summary were moved
           above the refutation table (technical-writer and casual simulated-visitor personas: this is the Beginner Path&apos;s last
-          step, and the plain content sat ~5,000 words down).
+          step, and the plain content sat ~5,000 words down). On 2026-10-24 the first bullet was led with its plainest sentences, the counting-rule caveats moved into a collapsed
+          note, and the range became 3 to 8 (casual and graduate simulated-visitor personas: the box beginners are sent to read like an
+          internal ledger, and TEST-25&apos;s galaxy-level dependence was missing from the range).
         </details>
       </div>
 
@@ -725,7 +743,7 @@ export default function HonestAssessment() {
               <ValidationBadge status="untested" label="TEST-03 Never Run As Registered" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>equal to the source session&apos;s own CDM figure</strong> (0.085; z&nbsp;=&nbsp;+0.5 in the definitive run), not below CDM. Whether it is consistent with <em>published</em> &Lambda;CDM predictions is unsettled: the first external benchmark checked (Desmond 2017, abundance matching, ~0.25 dex in baryonic mass for SPARC-like samples) is about 3&times; larger, so the CDM-consistency verdict is suspended (2026-10-09; see <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link>).
+              &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex is <strong>not a BTFR scatter: it is independent of V (shuffling V across galaxies gives 0.0870 vs 0.0864; explorer 2026-10-23), the residual of an in-sample photometric mass model</strong>, so the CDM question below has no object (corrected 2026-10-24). The earlier reading: <strong>equal to the source session&apos;s own CDM figure</strong> (0.085; z&nbsp;=&nbsp;+0.5 in the definitive run), not below CDM. Whether it is consistent with <em>published</em> &Lambda;CDM predictions is unsettled: the first external benchmark checked (Desmond 2017, abundance matching, ~0.25 dex in baryonic mass for SPARC-like samples) is about 3&times; larger, so the CDM-consistency verdict was suspended on 2026-10-09 and withdrawn on 2026-10-24 (see <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link>).
               <strong> Sample correction (2026-07-10):</strong> the 0.086 figure belongs to the source session&apos;s{' '}
               <em>optimal quality cut, N&nbsp;=&nbsp;677</em> (SNR&nbsp;&gt;&nbsp;15, e<sub>W50</sub>&nbsp;&lt;&nbsp;10, b/a&nbsp;&lt;&nbsp;0.65, V&nbsp;&gt;&nbsp;80&nbsp;km/s),
               not to the full ALFALFA&ndash;SDSS cross-match &mdash; the full sample (N&nbsp;=&nbsp;14,435 in the definitive session) gives
@@ -739,7 +757,7 @@ export default function HonestAssessment() {
                 <span><strong>14,585</strong></span><span>the raw ALFALFA&ndash;SDSS cross-match, before any quality cut (TEST-03&apos;s registered sample).</span>
                 <span><strong>14,435</strong></span><span>after the quality cut, in the definitive session (Session 610) &mdash; this is the number in the landing headline: 175 SPARC + 14,435 = <strong>14,610</strong>.</span>
                 <span><strong>14,437</strong></span><span>the analysis subset in Session 593&apos;s TFR-residual test &mdash; two galaxies different from 14,435, two sessions apart; treated on this site as the same quality-cut sample at two pipeline versions. Not reconciled in the archive; it is a two-galaxy difference, not a typo, and not a different cut.</span>
-                <span><strong>677</strong></span><span>the optimal-quality cut (SNR &gt; 15 etc.) that the σ<sub>int</sub> = 0.086 figure belongs to.</span>
+                <span><strong>677</strong></span><span>the optimal-quality cut (SNR &gt; 15 etc.) that the σ<sub>int</sub> = 0.086 figure belongs to (not a BTFR scatter: independent of V).</span>
               </div>
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
@@ -1870,14 +1888,14 @@ export default function HonestAssessment() {
           Top results: 6-variable MOND offset model (LOO R&sup2;=0.938),
           TFR residual as complete M/L predictor (51.4% improvement on 14,437 galaxies — an
           analysis subset of the 14,585-galaxy ALFALFA-SDSS cross-match),
-          &#963;<sub>int</sub>&nbsp;=&nbsp;0.086&nbsp;&plusmn;&nbsp;0.003&nbsp;dex (BTFR intrinsic scatter).
+          &#963;<sub>int</sub>&nbsp;=&nbsp;0.086&nbsp;&plusmn;&nbsp;0.003&nbsp;dex (described then as BTFR intrinsic scatter; it is not a BTFR scatter: it is independent of V (shuffling V across galaxies gives 0.0870 vs 0.0864; explorer 2026-10-23), the residual of an in-sample photometric mass model, 2026-10-24).
           <strong> Status (updated 2026-07-04): these three were swept against prior art and the archive on 2026-07-03 — 0/3 survive.</strong>{' '}
           The offset model and the TFR-residual predictor are <em>the same fact</em> (the offset model is
           dominated by log-luminosity at t&nbsp;=&nbsp;&minus;36, i.e. it <em>is</em> the Tully-Fisher residual),
           and both reduce to published work: Kannappan et al. 2002 (TF residuals carry M/L information),
           Li et al. 2018 (RAR offsets are the error budget of a constant-M/L assumption), and
           Stiskalek &amp; Desmond 2023 (exhaustive regression null over galaxy features). The
-          &#963;<sub>int</sub>&nbsp;=&nbsp;0.086 figure is addressed above &mdash; it inverted the source
+          &#963;<sub>int</sub>&nbsp;=&nbsp;0.086 figure (not a BTFR scatter; independent of V) is addressed above &mdash; it inverted the source
           session&apos;s own retracted verdict. Demotion base rate across the whole program: 9 of 9 audited
           claims (the prior 6 &ldquo;Validated&rdquo; claims plus these 3) failed to survive. Given that
           record, the honest prior on any not-yet-swept contribution is <strong>near-certain demotion</strong>,

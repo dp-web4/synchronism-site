@@ -101,7 +101,7 @@ export const navigationTree: NavigationTree = {
       href: '/coherence-function',
       desc: 'C(\u03C1) = tanh(\u03B3 ln(\u03C1/\u03C1_crit + 1))',
       keywords: ['coherence', 'function', 'equation', 'tanh', 'density', 'C(rho)'],
-      related: ['/gamma-parameter', '/critical-density', '/phase-transitions'],
+      related: ['/gamma-parameter', '/critical-density', '/gamma-regimes'],
     },
     {
       title: 'The \u03B3 Parameter',
@@ -109,7 +109,7 @@ export const navigationTree: NavigationTree = {
       desc: '\u03B3 = 2/\u221AN_corr \u2014 the proposed derivation and why it did not survive testing',
       keywords: ['gamma', 'parameter', 'correlation', 'N_corr', 'derivation'],
       prerequisites: ['/coherence-function'],
-      related: ['/critical-density', '/scale-invariance', '/phase-transitions'],
+      related: ['/critical-density', '/scale-invariance', '/gamma-regimes'],
     },
     {
       title: 'Critical Density',
@@ -137,7 +137,7 @@ export const navigationTree: NavigationTree = {
     },
     {
       title: 'γ Regimes: Crossovers, Not Phase Transitions',
-      href: '/phase-transitions',
+      href: '/gamma-regimes',
       desc: '\u03B3 > 1.4, 0.6\u20131.4 (\u2248 1), < 0.6 regimes \u2014 smooth crossovers in C(\u03C1), not phase transitions',
       keywords: ['phase', 'transition', 'regime', 'quantum', 'classical', 'boundary'],
       prerequisites: ['/gamma-parameter'],
@@ -223,7 +223,7 @@ export const navigationTree: NavigationTree = {
       desc: 'Why classical emerges from quantum',
       keywords: ['decoherence', 'classical', 'quantum', 'emergence', 'MRH', 'boundary'],
       prerequisites: ['/mrh', '/measurement-without-observers'],
-      related: ['/phase-transitions', '/cosmic-horizons'],
+      related: ['/gamma-regimes', '/cosmic-horizons'],
     },
     {
       title: 'Quantum Predictions',
@@ -279,7 +279,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'CDM Discrimination',
       href: '/cdm-discrimination',
-      desc: '\u03C3_int = 0.086 dex: not below CDM; CDM-consistency suspended (external benchmark disagrees)',
+      desc: '\u03C3_int = 0.086 dex is not a BTFR scatter (independent of V), so no CDM verdict',
       keywords: ['CDM', 'discrimination', 'sigma', 'intrinsic', 'scatter'],
       prerequisites: ['/galaxy-rotation', '/rar-scatter'],
       related: ['/cosmology-predictions', '/dark-matter'],
@@ -332,7 +332,7 @@ export const navigationTree: NavigationTree = {
       href: '/gamma-boundary',
       desc: 'Where the chemistry track\'s fitted γ values cluster (1,703 is a session counter); fitted, not predicted',
       keywords: ['gamma', 'boundary', 'quantum', 'classical', 'phenomena', 'chemistry'],
-      prerequisites: ['/gamma-parameter', '/phase-transitions'],
+      prerequisites: ['/gamma-parameter', '/gamma-regimes'],
       related: ['/sound-velocity', '/electronegativity', '/chemistry-correlation-explorer'],
     },
     {
@@ -391,7 +391,7 @@ export const navigationTree: NavigationTree = {
       href: '/hard-problem',
       desc: 'A philosophical identity claim: phase patterns are experience (not an empirical finding)',
       keywords: ['hard problem', 'consciousness', 'experience', 'qualia', 'Chalmers'],
-      prerequisites: ['/coherence-function', '/phase-transitions'],
+      prerequisites: ['/coherence-function', '/gamma-regimes'],
       related: ['/consciousness-threshold', '/qualia-coherence', '/marys-room'],
     },
     {
@@ -469,7 +469,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'A2ACW Protocol',
       href: '/a2acw',
-      desc: 'AI-to-AI Adversarial Collaboration',
+      desc: 'AI-to-AI Adversarial Collaboration Workshop',
       keywords: ['A2ACW', 'adversarial', 'collaboration', 'stress-test', 'protocol'],
       related: ['/autonomous-research', '/falsifiability'],
     },
@@ -624,14 +624,14 @@ export const navigationTree: NavigationTree = {
       href: '/gamma-calculator',
       desc: 'The formula that failed, and why we left it up \u2014 input N_corr, get \u03B3, watch it rank the most tightly correlated matter in nature as the flattest',
       keywords: ['gamma', 'calculator', 'N_corr', 'regime', 'compute'],
-      related: ['/gamma-parameter', '/phase-transitions', '/coherence-function'],
+      related: ['/gamma-parameter', '/gamma-regimes', '/coherence-function'],
     },
     {
       title: 'Crossover Regime Visualizer',
       href: '/crossover-regime-visualizer',
       desc: 'Interactive \u03B3 < 0.6 / 0.6\u20131.4 / > 1.4 diagram (a crossover, not a phase boundary)',
       keywords: ['phase', 'boundary', 'visualizer', 'diagram', 'interactive'],
-      related: ['/phase-transitions', '/gamma-boundary'],
+      related: ['/gamma-regimes', '/gamma-boundary'],
     },
     {
       title: 'MOND-Synchronism Comparator',

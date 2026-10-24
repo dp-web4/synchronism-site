@@ -1,9 +1,30 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-23 (maintainer)*
+*Last updated: 2026-10-24 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-24) — **The kill arithmetic is right but was unprintable.** Two HIGH persona corrections were
+refuted on the scripts:
+- "+10.9 should be +6.2": the +184 compares γ = 2 with McGaugh's ν, equal k, so there is no penalty and ΔBIC = N ln(RSS ratio).
+- "+163/+142 swapped": the +2843 run has N = 2,438.
+
+The site's own "γ = 2 vs free γ, ln 166" sentence produced the first misreading. It is now /galaxy-rotation#dbic-formula.
+Held in substance: TEST-25's galaxy-level dependence was missing from the count range, so **3 to 8** (moves with the γ = 2
+pin under one convention). Explorer 10-23 drained: **0.086 is not a BTFR scatter** on 9 surfaces. Count 6; Bucket 0 = 0.
+- **Fixes:**
+  - Honest Assessment beginner box led with "failed its galaxy tests / MOND in other notation / fatal";
+  - /phase-transitions → /gamma-regimes (308);
+  - TEST-04a card no longer "Failed";
+  - P(k) pin two-sided; joint-sector row; a₀′; Toner–Bacon existence proof; Debye "by construction"; ln(1+x) status line;
+    plotter floor caption.
+- site_lint 240 rules. Log: `maintainer/logs/2026-10-24.md`. Proposal:
+  `Synchronism/Research/proposals/refutation_arithmetic_is_right_but_unprintable_and_test25_joins_the_count_range_20261024.md`.
+- **→ Explorer:** `rho-crit-one-symbol-three-scalings-two-knees.md`; `shuffled-v-control-on-s593-and-s483-offset-models.md` (cheap).
+- **→ Next maintainer:** test-card legend + bucket legend; breadcrumb IA; landing tile referents; TEST-10 lensing allowances.
+- **→ Project lead:** print comparator/Δk/N/unit beside every ledger ΔBIC; **rule on the stopping question** (six weeks of
+  top-severity items moved ranges, never buckets).
 
 ## 🟢 NEW (maintainer 2026-10-23) — **γ is identified only jointly with ρ_crit.** In C = tanh(γ ln(1+x)), γ is the initial
 slope and half the saturation exponent, not a sharpness. At large γ it moves the knee to ≈ 0.77 ρ_crit/γ. With ρ_crit refit,

@@ -16,8 +16,9 @@ export const REFUTATIONS_EXECUTED = 6;
 
 /** Of the six, how many ran on external data (astronomical, ephemeris, laboratory). The
  *  sixth is the Bell/CHSH substrate check — not data. Its local arm illustrates Bell's theorem; its two
- *  nonlocal arms are construction nulls (three constructions built, the substrate class untested —
- *  Toner & Bacon 2003 hidden-communication models never built). Relabelled from "theorem" 2026-09-14
+ *  nonlocal arms are construction nulls (three constructions built). Toner & Bacon 2003 is an existence proof
+ *  that one classical bit per trial reproduces singlet correlations without marginal signaling, so the class works;
+ *  the open cost is a substrate that supplies the bit across spacelike separation, i.e. a preferred frame (2026-10-24). Relabelled from "theorem" 2026-09-14
  *  after a researcher persona noted Bell's theorem says nothing about nonlocal no-signaling models. */
 export const REFUTATIONS_ON_EXTERNAL_DATA = 5;
 
@@ -37,7 +38,7 @@ export const REFUTATIONS_ON_EXTERNAL_DATA = 5;
  */
 export const ROOTS_FRAMEWORK_SPECIFIC = 2;
 export const ROOTS_SENTENCE =
-  '6 executed refutations from 5 roots: 2 framework-specific (the boost ceiling, behind both TEST-09 and TEST-10; the γ=2 pin — RAR transition shape, unnumbered, closed 2026-05-21; at the threshold once galaxies, not points, are the unit — 2026-09-29) + 1 refuted registration (environment amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell\'s theorem; two nonlocal constructions null; the substrate class untested)';
+  '6 executed refutations from 5 roots: 2 framework-specific (the boost ceiling, behind both TEST-09 and TEST-10; the γ=2 pin — RAR transition shape, unnumbered, closed 2026-05-21; at the threshold once galaxies, not points, are the unit — 2026-09-29) + 1 refuted registration (environment amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell\'s theorem; two nonlocal constructions null; the hidden-communication class works by Toner–Bacon\'s existence proof, at the cost of a preferred frame)';
 /**
  * How the four headline counts relate (2026-10-07). A technical-writer persona found one count stated four
  * ways (6 refutations / 4 Tier 1 kills fired / 2 discriminated / 0 of 9) with no stated relationship. They are
@@ -50,9 +51,12 @@ export const COUNT_MAP_SENTENCE =
  * The count is rule-dependent (2026-10-18). Three simulated-visitor personas in one pass asked for the self-critical
  * number to meet the standard applied to claims. Every delta below is on file in PREDICTIONS.md (10-12, 10-13, 10-16
  * blocks, 09-29 for the γ=2 pin); the rule choice gates on the project lead. Do not change REFUTATIONS_EXECUTED here.
+ * 2026-10-24: lower end 4 → 3. The 09-29 block already records that TEST-25's in-house empty intersection holds only
+ * under point independence (galaxy-level ΔBIC ≤ 10 band 0.3–1.7 reaches Cassini-passing γ ≳ 1.5); the range omitted it
+ * (graduate simulated-visitor persona). It moves with the γ = 2 pin under one convention, so the two are not independent.
  */
 export const COUNT_RULE_SENTENCE =
-  'The 6 is not rule-free. It is the count under the rule the site uses today (a stated failure condition, actually executed, fired as registered). Rules already on file move it: a 2σ significance rule drops TEST-09 (−1); with each galaxy counted once the γ = 2 pin sits at the threshold (−1 if "at the threshold" does not count); the executed-and-excluded uniform growth reading meets the current rule but is not counted because no archive document asserted it (+1); a point-estimate rule adds TEST-04a, on a withdrawn mechanism (+1). So 4 to 8, depending on rules the project lead has not yet chosen, with at most 5 independent. Routes that re-kill a branch already refuted (lunar laser ranging, the Oort limit at the published knee) are second roots for an existing row, not new rows.';
+  'The 6 is not rule-free. It is the count under the rule the site uses today (a stated failure condition, actually executed, fired as registered). Rules already on file move it: a 2σ significance rule drops TEST-09 (−1); with each galaxy counted once the γ = 2 pin sits at the threshold (−1 if "at the threshold" does not count), and under that same convention the in-house intersection of TEST-25 is no longer empty (γ ≈ 1.5–1.7 survives both; −1); the executed-and-excluded uniform growth reading meets the current rule but is not counted because no archive document asserted it (+1); a point-estimate rule adds TEST-04a, on a withdrawn mechanism (+1). So 3 to 8, depending on rules the project lead has not yet chosen, with at most 5 independent. Routes that re-kill a branch already refuted (lunar laser ranging, the Oort limit at the published knee) are second roots for an existing row, not new rows.';
 
 /** Sentence rewritten 2026-09-14: the old form ("6 executed refutations; 2 … roots + 1 + 1 + 1") summed
  *  to 5 and a graduate-physics persona read it as an arithmetic error. */

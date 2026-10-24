@@ -36,7 +36,10 @@ export default function KeyClaims() {
             </Link>
             {' '}&mdash; canonical reference on the Honest Assessment page. Text after a dash inside a badge is a
             finding descriptor, not a separate badge; descriptors without a badge of their own appear in italics under
-            it. Definitions:{' '}
+            it. The three badges on this page, in three words each:{' '}
+            <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization</Link> = known result, new notation;{' '}
+            <Link href="/glossary#speculative-badge" style={{ color: 'var(--color-accent-blue)' }}>Speculative</Link> = not yet testable;{' '}
+            <Link href="/glossary#failed-badge" style={{ color: 'var(--color-accent-blue)' }}>Failed</Link> = tested, did not hold. Definitions:{' '}
             <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
               /honest-assessment#validation-badge-definitions
             </Link>.
@@ -350,7 +353,9 @@ export default function KeyClaims() {
             &#x03B3; = coherence parameter, D = dimensional embedding (representational richness), S = self-modeling depth
           </p>
           <p style={{ color: 'rgba(245,158,11,0.9)', fontSize: '0.78rem', textAlign: 'center', marginBottom: '1rem', fontStyle: 'italic' }}>
-            ⚠ This C&nbsp;=&nbsp;f(&#x03B3;,&nbsp;D,&nbsp;S) is a distinct, undefined construct &mdash; not the same function as the physics C(&#x03C1;)&nbsp;=&nbsp;tanh(&#x03B3;&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub>+1)).
+            ⚠ <strong>Plainly: this formula is a placeholder.</strong> f, D and S are defined nowhere, so it cannot be
+            evaluated for any system. The letters C and &#x03B3; are reused from the physics, but they name a different,
+            not-yet-defined construct. This C&nbsp;=&nbsp;f(&#x03B3;,&nbsp;D,&nbsp;S) is a distinct, undefined construct &mdash; not the same function as the physics C(&#x03C1;)&nbsp;=&nbsp;tanh(&#x03B3;&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub>+1)).
             In C(&#x03C1;), &#x03C1; is the input and &#x03B3; is a fixed parameter; here &#x03B3; becomes an input alongside two undefined quantities D and S, with &#x03C1; absent.
             Same symbol, different functional form.{' '}
             <strong>So does this claim depend on the density curve that failed?</strong> No. It shares the name

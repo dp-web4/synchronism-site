@@ -641,7 +641,10 @@ export default function GalaxyPlotter() {
               <li>The <strong style={{ color: '#8b5cf6' }}>solid violet line</strong> is Synchronism&apos;s density equation wired the way its
                 tests wire it (gravity divided by C). The disk is far too thin to reach the equation&apos;s switch, so C sits on its floor and
                 the boost in gravity is the same 3.17&times; at every radius, so in speed the curve is the gray line scaled up by &radic;3.17 &asymp; 1.78&times;. It overshoots the inner points and
-                still falls at the edge, where the dots stay flat &mdash; that is the failure. The <strong style={{ color: '#c4b5fd' }}>light violet
+                still falls at the edge, where the dots stay flat &mdash; that is the failure. This holds on every galaxy in the menu:
+                with &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;, C<sub>&#x03C1;</sub> stays at or below about 0.001 everywhere on
+                every shipped disc, so the violet curve is the floor&apos;s constant boost, never the tanh&apos;s S-shape. The tool never
+                exercises the curve&apos;s shape on a real galaxy, and that is the actual reason it fails. The <strong style={{ color: '#c4b5fd' }}>light violet
                 dashed line</strong> (off by default; checkbox below) is the same C wired the other way (added on top), which does nothing at all. The two wirings fail in
                 opposite directions; without the floor, the division wiring would run up to {maxRawRatio.toFixed(0)}&times; above the gray line, far off the chart.</li>
             </ol>
@@ -649,6 +652,13 @@ export default function GalaxyPlotter() {
               <em>Why should the gray line fall at all?</em> Under ordinary gravity, stars far from a galaxy&apos;s centre should orbit more
               slowly, the way Neptune orbits the Sun more slowly than Earth, because almost all the visible mass is inside their orbit. A
               &ldquo;rotation curve&rdquo; is just orbital speed plotted against distance from the centre.
+            </p>
+            <details style={{ marginTop: '0.4rem', fontSize: '0.82rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Advanced: two extra lines (why a line that does nothing is offered)</summary>
+            <p style={{ margin: '0.3rem 0 0' }}>
+              The framework never fixed how C enters gravity: divided into it (solid violet) or added on top (light violet). The
+              second wiring is shown so you can check for yourself that it changes nothing, rather than take the page&apos;s word that
+              the choice of wiring is not hiding a success. The amber stand-in is the hand-drawn curve this page used to show.
             </p>
             <label style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', marginTop: '0.4rem', fontSize: '0.82rem', cursor: 'pointer' }}>
               <input type="checkbox" checked={showStandIn} onChange={e => setShowStandIn(e.target.checked)} />
@@ -659,6 +669,7 @@ export default function GalaxyPlotter() {
               <input type="checkbox" checked={showQuad} onChange={e => setShowQuad(e.target.checked)} />
               Show the second, untested wiring of the same equation (light violet dashed; it lies on the gray line, so it changes nothing here)
             </label>
+            </details>
           </div>
           <svg viewBox={`0 0 ${svgW} ${svgH}`} style={{ width: '100%', height: 'auto', display: 'block' }}>
             {/* Grid */}

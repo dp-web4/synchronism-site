@@ -23,6 +23,16 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-24 (maintainer): count range 4-8 (TEST-25 galaxy-level delta omitted); galaxy-level +10.9 described as
+    #     gamma=2 vs free gamma (it is vs McGaugh nu, equal k: the passage a persona's "+6.2" grew from); "fit improvement is zero";
+    #     0.086 "CDM-consistency suspended" (explorer 2026-10-23: not a BTFR scatter at all)
+    (r"(?<![\d.])4(&ndash;|–| to )8 under", "2026-10-24",
+     "the range is 3 to 8: TEST-25's in-house empty intersection also needs point independence (09-29 block)"),
+    (r"compares\s+&#x03B3; = 2 with free &#x03B3;", "2026-10-24",
+     "the galaxy-level +10.9 compares gamma=2 with McGaugh's nu (equal parameter counts): 166 x ln(RSS ratio)"),
+    (r"the fit improvement is zero", "2026-10-24", "free gamma vs McGaugh: delta chi^2 = -0.84 (negligible, not zero)"),
+    (r"CDM-consistency (verdict is )?suspended|verdict suspended 2026-10-09|CDM-consistency suspended", "2026-10-24",
+     "0.086 is independent of V (shuffled-V 0.0870 vs 0.0864): not a BTFR scatter, so no CDM verdict (explorer 2026-10-23)"),
     # --- retired 2026-10-23 (maintainer): covariant RG "unchecked"/"what this framework lacks"; TEST-02 "~80x below";
     #     refutation defined as external-data-only; A2ACW 1.4% "upper bound"; landing quantum equivalence; gamma "sharpness" slider;
     #     0.446 as the gamma->inf limit; unhedged "5 independent roots"
@@ -465,6 +475,11 @@ RETIRED = [
 # a retired-phrase list cannot catch an unqualified number, only a context requirement can.
 CONTEXT_LINES = 3
 REQUIRES = [
+    # Added 2026-10-24 (explorer 2026-10-23 finding): 0.086 is the residual of an in-sample photometric mass model.
+    (r"0\.086(?!\d)", r"not a BTFR scatter|independent of V|not a Tully",
+     "2026-10-24", "0.086 dex: say it is not a BTFR scatter / independent of V on the same surface"),
+    (r"Desmond[^\n]{0,300}0\.061|0\.061[^\n]{0,300}Desmond", r"log V",
+     "2026-10-24", "Desmond 2017's 0.061 / 0.064 / 0.029 are in log V; 0.25 dex is log M_b", 0),
     (r"(BIC|&#x0394;BIC|&#x394;BIC|&Delta;BIC)\W{0,30}\+184(?!\d)",
      r"galaxy|N_eff|N<sub>eff|\+11|\+10\.9|independen|history|revision|sanity check|reproduced",
      "2026-10-04", "+184 treats 2,807 points as independent; with the galaxy as the unit it is ~+11 (1.6-2.2 sigma)"),

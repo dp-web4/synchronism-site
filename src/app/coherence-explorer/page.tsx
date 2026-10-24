@@ -62,7 +62,9 @@ export default function CoherenceExplorer() {
       <ValidationBadge status="reparametrization" label="At γ = ½ this curve is MOND's simple μ (acceleration-keyed) and Λ (cosmology)" />
       <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem', maxWidth: '60ch' }}>
         <strong>What this toy is for:</strong> seeing the shape of the S-curve and what &#x03B3; does to it. It does
-        not model any real material, and the density axis has no units.
+        not model any real material, and the density axis has no units. <strong>One thing to try first:</strong> drag &#x03B3;
+        from 2 down to 0.5 and watch the S flatten into a gentle ramp. That flattening is what happens when the curve is fitted
+        to galaxies, and at &#x03B3; = &frac12; the ramp has exactly the shape of MOND&apos;s formula (when it is fed acceleration instead of density), which is why the galaxy fit is not a new prediction.
       </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>

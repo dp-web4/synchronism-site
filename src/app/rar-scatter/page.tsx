@@ -70,7 +70,7 @@ export default function RarScatter() {
           Using the ALFALFA-SDSS cross-matched sample, &#x03C3;<sub>int</sub> = 0.086 dex was measured on the
           <em> optimal quality cut (N = 677)</em> — the full cross-match (N = 14,435) gives 0.118 dex; pairing
           the headline N with the optimal-cut statistic was a sample splice, corrected 2026-07-10
-          (CDM-consistency suspended 2026-10-09: it matches only the source session&apos;s own CDM figure — see{' '}
+          (2026-10-24: the number is not a BTFR scatter: it is independent of V (shuffling V across galaxies gives 0.0870 vs 0.0864; explorer 2026-10-23), the residual of an in-sample photometric mass model, so it has no CDM verdict; see{' '}
           <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link>).
           The p = 5&times;10<sup>&minus;6</sup>, R&sup2; = 0.14 environment-density statistics below are <strong>not</strong>
           from this sample: they trace to a SPARC-scale (N&asymp;171) Hubble-type/morphology regression

@@ -160,7 +160,7 @@ export default function GalaxyRotation() {
             </p>
             <ul style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
               <li>No environment result exists for this sample: the registered TEST-03 environment-density test on it was never run. The p&nbsp;=&nbsp;5&nbsp;&times;&nbsp;10<sup>&minus;6</sup>, R&sup2;&nbsp;=&nbsp;0.14 figure this bullet used to show is a different measurement on a different sample (SPARC, N&nbsp;&asymp;&nbsp;130&ndash;175) of a different predictor: <strong>Hubble type</strong>, not environment (see the Honest Caveat below).</li>
-              <li>&#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex &mdash; <strong>equal to the source session&apos;s own CDM figure</strong>, not to published &Lambda;CDM predictions (Desmond 2017 abundance matching gives ~0.25 dex; verdict suspended 2026-10-09; z&nbsp;=&nbsp;+0.5 in the source session&apos;s definitive run), not below CDM. An earlier &minus;6.2&sigma; &ldquo;below CDM&rdquo; reading from an intermediate session was retracted in-archive as premature once distance-noise modeling was added; the verdict is also modeling-choice-dependent (z ranges +0.5 to +64). See{' '}
+              <li>&#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex is <strong>not a BTFR scatter: it is independent of V (shuffling V across galaxies gives 0.0870 vs 0.0864; explorer 2026-10-23), the residual of an in-sample photometric mass model</strong>, so it has no CDM or MOND verdict (corrected 2026-10-24; the like-for-like inverse BTFR on the same 677 galaxies is 0.073 dex in log V, against abundance matching&apos;s 0.064). Before that it read: <strong>equal to the source session&apos;s own CDM figure</strong>, not to published &Lambda;CDM predictions (Desmond 2017 abundance matching gives ~0.25 dex; a verdict suspended on 2026-10-09 and withdrawn 2026-10-24; z&nbsp;=&nbsp;+0.5 in the source session&apos;s definitive run), not below CDM. An earlier &minus;6.2&sigma; &ldquo;below CDM&rdquo; reading from an intermediate session was retracted in-archive as premature once distance-noise modeling was added; the verdict is also modeling-choice-dependent (z ranges +0.5 to +64). See{' '}
                 <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link> for the full history.</li>
               <li>Cluster vs. field scatter: no executed comparison on this sample. (This bullet said &ldquo;cluster vs. field galaxies show different scatter &mdash; the effect is real but sub-threshold&rdquo; until 2026-10-21; no run behind it was found.)</li>
             </ul>
@@ -201,9 +201,9 @@ export default function GalaxyRotation() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-accent-violet)' }}>0.086</div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              BTFR &#x03C3;<sub>int</sub> (dex), ALFALFA&ndash;SDSS, one point per galaxy &mdash; <em>not</em> the RAR scatter (SPARC RAR &asymp; 0.057);{' '}
+              &#x03C3;<sub>int</sub> (dex), ALFALFA&ndash;SDSS: not a BTFR scatter: it is independent of V (shuffling V across galaxies gives 0.0870 vs 0.0864; explorer 2026-10-23), the residual of an in-sample photometric mass model; <em>not</em> the RAR scatter either (SPARC RAR &asymp; 0.057);{' '}
               <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>which relation</Link>
-              <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>(labelled 2026-10-23; it read &ldquo;intrinsic scatter&rdquo; beside the RAR bullet)</span>
+              <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>(labelled 2026-10-23 as a BTFR scatter; relabelled 2026-10-24, explorer: it is not one)</span>
             </div>
           </div>
           <div className="card" style={{ textAlign: 'center' }}>
@@ -342,7 +342,16 @@ export default function GalaxyRotation() {
             replication unit (run 2026-09-29, pre-registered):</strong> γ = 2 is worse than the free fit in 94 of 166 galaxies
             (57%; exact sign test p = 0.051 one-sided, 0.10 two-sided; the one-sided test asks whether γ = 2 is worse, which is the registered direction); a 10-fold galaxy-level cross-validation prefers free γ by 1.6σ; a galaxy-block bootstrap
             puts the full-N ΔBIC at 179 with 95% interval [23, 351], a spread that implies an effective N of about 150; and
-            ΔBIC recomputed with N = 166 is +10.9, at the threshold. (On the Kass&ndash;Raftery scale +11 would read &ldquo;very strong&rdquo;; that scale assumes the BIC approximation holds, and the bootstrap spread of &plusmn;82 on the full-N value is why this page reads it as 1.6&ndash;2.2σ instead.) Seven galaxies carry 98% of the net excess, five pull the
+            ΔBIC recomputed with N = 166 is +10.9, at the threshold.{' '}
+            <span id="dbic-formula" style={{ scrollMarginTop: '5rem' }}><strong>How +184 becomes +10.9 (formula added 2026-10-24, after two simulated-visitor personas could not reconstruct it):</strong>{' '}
+            the comparison is &#x03B3; = 2 against McGaugh&apos;s ν, each with one fitted acceleration scale, so the parameter counts are equal
+            and the BIC has no penalty term. With Gaussian residuals and a fitted variance, ΔBIC = N&nbsp;ln(RSS<sub>&#x03B3;=2</sub>/RSS<sub>McGaugh</sub>)
+            = 2807&nbsp;&times;&nbsp;ln(0.1485²/0.1437²) = +184. The galaxy-level figure keeps the per-point likelihood ratio and replaces N with
+            N<sub>gal</sub> = 166: 166&nbsp;&times;&nbsp;0.0656 = +10.9 (= 184&nbsp;&times;&nbsp;166/2807). A persona reconstruction that treated it as
+            pinned-versus-free &#x03B3; (&Delta;k = 1) and re-applied a ln&nbsp;N penalty got +6.2; that applies to a comparison this number is not.
+            The bootstrap [23, 351] is the sampling spread of the full-N statistic, not of the galaxy-level one; scaled by the same 166/2807 it is
+            [1.4, 20.8], which straddles 10. That is why both read &ldquo;at the threshold&rdquo;.</span>{' '}
+            (On the Kass&ndash;Raftery scale +11 would read &ldquo;very strong&rdquo;; that scale assumes the BIC approximation holds, and the bootstrap spread of &plusmn;82 on the full-N value is why this page reads it as 1.6&ndash;2.2σ instead.) Seven galaxies carry 98% of the net excess, five pull the
             other way. So the pin is <em>disfavoured at the threshold</em>, not decisively refuted; the previously quoted
             &ldquo;effective N ≈ 500–1000, ΔBIC ≈ 33, still decisive&rdquo; was a guessed discount (retired 2026-09-29), and the
             &ldquo;~8σ per bin&rdquo; also assumed independent points. Script:{' '}
@@ -350,7 +359,7 @@ export default function GalaxyRotation() {
             profiled per galaxy under Li+2018 priors and a velocity &chi;² (Desmond, Hees &amp; Famaey 2024&apos;s treatment), the pin sits at
             z = 1.9 galaxy-level, 2.2&ndash;2.3 with their intrinsic scatter, worse than free &#x03B3; in 52&ndash;56% of galaxies:
             disfavoured, not refuted. Marginalizing the nuisances does not narrow the galaxy-level interval (its width stays 3&ndash;8&times;
-            the point-level width), and the free fit moves to &#x03B3;&#x0302; &asymp; 0.6 [0.43, 0.95]. Script:{' '}
+            the point-level width), and the free fit moves to &#x03B3;&#x0302; &asymp; 0.6 [0.43, 0.95] (a 95% galaxy-block bootstrap interval on the best-fit &#x03B3;, with &Upsilon;, D and i profiled per galaxy). Script:{' '}
             <code style={{ fontSize: '0.78rem' }}>explorer/findings/scripts/gamma2_pin_nuisance_refit.py</code>. (This sentence read
             &ldquo;Not done: refitting per-galaxy nuisances&rdquo; until 2026-10-04.)
           </p>
@@ -364,10 +373,10 @@ export default function GalaxyRotation() {
             <strong>The fork that closes the question:</strong> free-γ converges to γ≈0.49 with
             RMS identical to McGaugh to four digits (with &Upsilon; frozen at 0.5 and points unweighted; with per-galaxy nuisances
             refitted the free fit moves to &#x03B3;&#x0302; &asymp; 0.6 [0.43, 0.95]). ΔBIC=+7 is entirely the BIC penalty for the
-            extra parameter — the fit improvement is zero.{' '}
+            extra parameter — the fit improvement is negligible (Δχ² ≈ −0.84, derived below).{' '}
             <strong>Made quantitative (2026-07-27, simulated-reader review point):</strong> this is the table&apos;s third row, the
             free-&#x03B3; compander against McGaugh&apos;s ν, scored on points. It is not the galaxy-level +10.9 above, which compares
-            &#x03B3; = 2 with free &#x03B3; using N = 166 galaxies (ln&nbsp;166 = 5.1). With N = 2807,
+            &#x03B3; = 2 with McGaugh&apos;s ν (one fitted scale each, so no penalty term), with N = 166 in place of 2,807. With N = 2807,
             ln&nbsp;N = 7.94, so one added free parameter costs +7.94 in BIC <em>before any likelihood
             is considered</em>. The observed +7.1 therefore implies Δχ² ≈ &minus;0.84 — the free-γ
             compander fits the data <em>marginally better</em> than McGaugh&apos;s ν and loses purely
@@ -419,8 +428,8 @@ export default function GalaxyRotation() {
             the fit solves g<sub>bar</sub> = g<sub>obs</sub>&middot;C(g<sub>obs</sub>/a&#x2080;&prime;) implicitly for g<sub>obs</sub>, the
             &#x03BC;-form. The identity does <em>not</em> survive keying on g<sub>bar</sub>: with g<sub>obs</sub> = g<sub>bar</sub>/C(g<sub>bar</sub>/a&#x2080;&prime;)
             at &#x03B3; = &frac12; one gets g<sub>obs</sub> = g<sub>bar</sub> + 2a&#x2080;&prime;, a constant acceleration offset (v&sup2; rising linearly
-            with r), not a flat curve and not MOND: at g<sub>bar</sub>/a&#x2080; = 0.01 the &#x03BC;-form gives g<sub>obs</sub>/a&#x2080; = 0.147
-            (deep-MOND &radic;(2x) = 0.141) while the g<sub>bar</sub>-keyed division gives 2.01. The &ldquo;g<sub>obs</sub> = g<sub>bar</sub>/C&rdquo;
+            with r), not a flat curve and not MOND: at g<sub>bar</sub>/a&#x2080;&prime; = 0.01 the &#x03BC;-form gives g<sub>obs</sub>/a&#x2080;&prime; = 0.147
+            (deep-MOND &radic;(2x) = 0.141) while the g<sub>bar</sub>-keyed division gives 2.01. (The primes were missing until 2026-10-24; in units of Milgrom&apos;s a&#x2080; = 2a&#x2080;&prime; the same point reads g<sub>bar</sub>/a&#x2080; = 0.005 &rarr; 0.073, graduate simulated-visitor persona.) The &ldquo;g<sub>obs</sub> = g<sub>bar</sub>/C&rdquo;
             written elsewhere on this page is the floored TEST-09/10 form, a different function (added 2026-09-29, graduate-physics simulated-visitor persona). The free-&#x03B3; SPARC fit lands at <strong>0.489, which is 2% from the
             unique &#x03B3; at which this model does not resemble MOND but <em>is</em> MOND.</strong> The same
             cancellation runs the cosmology sector: at &#x03B3; = &frac12;, (1&minus;C)/C = 2/x, so the substituted
@@ -447,9 +456,10 @@ export default function GalaxyRotation() {
             PRD 114, 024066). The in-house numbers below already use the 2026 value; the 3&ndash;15σ range is theirs. Our own pre-registered squeeze used the point-count SPARC interval
             (ΔBIC ≤ 10 ⇒ γ = 0.425&ndash;0.600) and found an empty intersection there: +17.95σ at the SPARC fit, unmarginalized.
             <strong> That emptiness holds only under point independence.</strong> With the galaxy as the unit, the retained
-            interval widens to roughly γ ≈ 0.3&ndash;1.7, which reaches the Cassini-passing γ ≳ 1.5 at a cost of about 2σ per
+            interval widens to roughly γ ≈ 0.3&ndash;1.7 (the registered statistic: the ΔBIC ≤ 10 band against the best fit, N = 166, nuisances frozen as in the original run; not the same object as the 95% interval [0.43, 0.95] on the best-fit &#x03B3; above, which profiles the nuisances), which reaches the Cassini-passing γ ≳ 1.5 at a cost of about 2σ per
             galaxy. So at galaxy level the intersection is narrow, not empty, and the surviving member is a steep-return
-            MOND-class function.
+            MOND-class function. Under the registered rule the in-house kill therefore fires only with points as independent: TEST-25 is N<sub>eff</sub>-dependent in the same way as the &#x03B3; = 2 pin, and the count range on{' '}
+            <a href="/honest-assessment#count-rule" style={{ color: 'var(--color-accent-blue)' }}>/honest-assessment</a> carries it (added 2026-10-24, graduate simulated-visitor persona). What does not depend on N<sub>eff</sub> is the published, nuisance-marginalized result below, which covers the family near &#x03B3; &asymp; &frac12;, not the 1.5&ndash;1.7 tail.
             <br /><br />
             <strong>This failure is shared with MOND&apos;s own functions.</strong> On the same instrument, McGaugh&apos;s
             RAR function ν = 1/(1&minus;e<sup>&minus;√y</sup>), the one fitted on this page, fails by +15.9σ to +20.9σ.

@@ -9,16 +9,16 @@ type SortKey = 'name' | 'r' | 'category';
 type SortDir = 'asc' | 'desc';
 
 const phenomena = [
-  { name: 'Sound velocity', r: 0.982, category: 'Propagation', regime: 1, session: '#47' },
+  { name: 'Sound velocity', note: 'inherits θ_D (v_s ∝ θ_D)', r: 0.982, category: 'Propagation', regime: 1, session: '#47' },
   { name: 'Electronegativity', r: 0.979, category: 'Bonding', regime: 1, session: '#62' },
-  { name: 'Bulk modulus', r: 0.967, category: 'Mechanical', regime: 1, session: '#55' },
+  { name: 'Bulk modulus', note: 'inherits θ_D (v_s ∝ θ_D)', r: 0.967, category: 'Mechanical', regime: 1, session: '#55' },
   { name: 'Thermal conductivity', r: 0.961, category: 'Transport', regime: 1, session: '#70' },
   { name: 'Electrical conductivity', r: 0.955, category: 'Transport', regime: 1, session: '#68' },
-  { name: 'Debye temperature', r: 0.948, category: 'Thermal', regime: 1, session: '#78' },
+  { name: 'Debye temperature', note: 'by construction: the γ proxy contains θ_D', r: 0.948, category: 'Thermal', regime: 1, session: '#78' },
   { name: 'Piezoelectricity d₃₃', r: 0.940, category: 'Response', regime: 2, session: '#110' },
   { name: 'Superconducting T_c', r: 0.923, category: 'Phase transition', regime: 1, session: '#95' },
-  { name: 'Young\'s modulus', r: 0.912, category: 'Mechanical', regime: 1, session: '#58' },
-  { name: 'Shear modulus', r: 0.901, category: 'Mechanical', regime: 1, session: '#59' },
+  { name: 'Young\'s modulus', note: 'inherits θ_D (v_s ∝ θ_D)', r: 0.912, category: 'Mechanical', regime: 1, session: '#58' },
+  { name: 'Shear modulus', note: 'inherits θ_D (v_s ∝ θ_D)', r: 0.901, category: 'Mechanical', regime: 1, session: '#59' },
   { name: 'Refractive index', r: 0.887, category: 'Optical', regime: 1, session: '#85' },
   { name: 'Seebeck coefficient', r: 0.834, category: 'Thermoelectric', regime: 1, session: '#92' },
   { name: 'Specific heat C_v', r: 0.756, category: 'Thermal', regime: 2, session: '#80' },
@@ -194,6 +194,15 @@ export default function ChemistryCorrelationExplorer() {
           expression and sign convention are <strong>not recorded</strong> in the source table: the archive&apos;s heat-capacity
           entry quotes a different fit (r = &minus;0.988 against the Debye form). Read that row&apos;s sign as unverified.
         </p>
+        <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
+          <strong>The top rows are close to one identity, not five correlations (added 2026-10-24, researcher simulated-visitor
+          persona).</strong> The phonon proxy &#x03B3;<sub>phonon</sub> = 2T/&#x03B8;<sub>D</sub> contains the Debye temperature, so the
+          &ldquo;Debye temperature, r = +0.948&rdquo; row correlates &#x03B8;<sub>D</sub> with a function of &#x03B8;<sub>D</sub>: high r
+          there is <em>by construction</em>. Sound velocity and the three elastic moduli inherit it, because in the Debye model
+          &#x03B8;<sub>D</sub> &#x221D; v<sub>s</sub> and v<sub>s</sub> &#x221D; &#x221A;(modulus/density). Those five rows (marked in the table) are one
+          definitional relation seen five ways. They show how a high r arises, which is this page&apos;s lesson; they are not
+          evidence that coherence organizes the properties.
+        </p>
 
         {/* Regime filter */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
@@ -259,7 +268,12 @@ export default function ChemistryCorrelationExplorer() {
             <tbody>
               {sorted.map(p => (
                 <tr key={p.name} style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
-                  <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>{p.name}</td>
+                  <td style={{ padding: '0.5rem', color: 'var(--color-text-secondary)' }}>
+                    {p.name}
+                    {'note' in p && p.note && (
+                      <em style={{ display: 'block', fontSize: '0.72rem', color: 'var(--color-text-muted)' }}>{p.note}</em>
+                    )}
+                  </td>
                   <td style={{ textAlign: 'right', padding: '0.5rem', fontFamily: 'monospace', color: rColor(p.r), fontWeight: 'bold' }}>
                     {p.r > 0 ? '+' : ''}{p.r.toFixed(3)}
                   </td>

@@ -5,6 +5,26 @@
 
 ---
 
+## 🔵 EXPLORER (2026-10-24) — **ρ_crit is not one scale.** Six objects share the symbol. The cosmological knee is
+ρ_Λ/2 = 4.3×10⁻⁸ M☉/pc³ (not ~10⁻⁵), 6.6–10.4 orders below the galactic knees (0.161 measured; 0.029·V²).
+- **Both one-knee identifications fail by more than six orders:**
+  - the cosmic knee in galaxies gives C = 1 at every disc density (Newtonian);
+  - a galactic knee in Friedmann gives ρ_DE/ρ_Λ = 3.7×10⁶ to 2.7×10¹⁰.
+- **The only bridge is a₀ ≈ cH₀/2π.** As a density it is (c/2πV)²·(2/3)ρ_c0 ∝ V⁻², an *acceleration* identification
+  (MOND's). The framework asserts V⁺²; SPARC's knee is V-blind.
+- **Archive error:** `rho_crit_derivation_calibration_vs_prediction.md:89` has the (V/c)² ratio inverted.
+- Count unchanged; Bucket 0 = 0.
+
+Finding: `explorer/findings/rho-crit-is-sector-specific-no-density-knee-spans-galaxy-and-cosmos-the-only-bridge-is-a0.md`.
+- **→ Maintainer:**
+  - P2: inventory table and one sentence on /parameter-derivations and /gamma-regimes;
+  - P2: the cosmological knee value in M☉/pc³ on /dark-energy l.88;
+  - glossary entry;
+  - back-annotate the two proposals.
+- **→ Project lead:** "one equation" = one functional form, calibrated per sector. Own it as a scoped negative?
+- **Note for the shuffled-V topic:** S483's target is a MOND offset that contains V. The 10-23 prediction was written for
+  L-built mass targets. Re-read before executing.
+
 ## 🟢 NEW (maintainer 2026-10-24) — **The kill arithmetic is right but was unprintable.** Two HIGH persona corrections were
 refuted on the scripts:
 - "+10.9 should be +6.2": the +184 compares γ = 2 with McGaugh's ν, equal k, so there is no penalty and ΔBIC = N ln(RSS ratio).

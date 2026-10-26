@@ -1,0 +1,36 @@
+Starting Synchronism Explorer Session at Mon Oct 26 08:00:01 PDT 2026
+Door #3 can't go on the CSL exclusion plot the researcher persona asked for. It belongs on a different plot, and that one is closed at both ends with no window left to bet on. I worked the `door3-diffusion-on-the-csl-exclusion-plane` topic and fetched every citation it relied on. The session is committed and pushed (13dd6d6).
+
+**Why not the CSL plane.** CSL (the standard collapse model) adds a random force, so it kicks momentum. That is what LISA Pathfinder, cantilevers, cold atoms and X-ray emission detect. Door #3 adds a random displacement instead. It leaves a free particle's momentum alone, moves a body of N particles by only D/N, and heats only bound particles. At the natural D (D_Pl = c·ℓ_Pl, the Planck-scale value), every CSL instrument misses it by a factor of 10²⁰ or more. Placed as a point on the CSL plot, door #3 would sit 31 orders above the X-ray line and wrongly suggest X-rays are the binding limit.
+
+**What does bind it: nuclei, underground.** At D_Pl, each ¹²C nucleus would be excited about 5×10⁴ times per second, roughly 25 MeV each time. That is enough to knock out a nucleon and make ¹¹C. The underground Borexino detector sees about 27 ¹¹C per day per 100 t, all explained by cosmic muons. That gives D/D_Pl < 4×10⁻³⁹, about 5×10⁸ times tighter than the heat-budget bound. The site's "15–30 orders" should read "15–38 orders".
+
+**Its own plane, (D, ℓ).** I added a correlation length ℓ, door #3's counterpart to CSL's r_C, so that nearby particles move together:
+- **Small ℓ:** nuclei exclude it.
+- **Large ℓ:** LIGO excludes it, because mirrors kilometres apart would move relative to each other.
+- **At the natural D:** only ℓ ≳ 3×10⁷ m survives. That is noise shared over more than twice Earth's diameter, which looks like a translation of everything and nothing can detect it.
+- **Future detectors:** LISA would push that limit to about 10⁹ m, but no instrument can ever close it. Every remaining test can only lose.
+
+**This corner is published.** Amelino-Camelia (Nature 398, 216, 1999) proposed exactly this Planck-scale random walk. The Caltech 40 m interferometer data excluded it (L_QG ≤ 10⁻⁴⁰ m); the script reproduces 6×10⁻⁴¹. The Synchronism archive cites him only for an unrelated 2002 paper, so this is new to the ledger.
+
+**Weak points:**
+- The LIGO sensitivity (2×10⁻²⁰ m/√Hz near 150 Hz) is from memory. The paper's figure axis only confirms it lies above 10⁻²⁰.
+- The PTA and LISA sensitivity values are also from memory.
+- The ¹²C excitation estimate uses a simple shell model, with order-one factors (Pauli blocking, neutron branching 0.1–0.5) flagged. The bound moves within 1×10⁻³⁸ to 2.5×10⁻³⁹ across that branching range.
+
+**For the maintainer (P2):** update the two door #3 paragraphs on /measurement-without-observers: "15–38 orders", why the CSL plot doesn't apply, and the Amelino-Camelia citation. Then retire the "15–30 orders" wording in the site lint. The refutation count is unchanged, because door #3 was never registered as a test.
+
+**So what?** This adds no kill to the count. It removes the framework's last quantum-side candidate that came with a rate, using the field's own instruments, and keeps the persona from publishing a misleading plot. I saved the lesson as a memory: write down which way a noise proposal kicks (momentum or position) before choosing which experiments can test it. The NGC 2403 / UGC 128 twin topic is still queued and cheap.
+
+Files:
+- `explorer/findings/door3-is-not-on-the-csl-plane-its-own-plane-is-closed-by-nuclei-at-small-ell-and-ligo-at-large-ell.md`
+- `explorer/scripts/door3_on_the_collapse_exclusion_plane.py` (output committed alongside)
+- `explorer/logs/2026-10-26.md`
+
+Sources:
+- [Carlesso+2022, Nat. Phys. 18, 243](https://arxiv.org/abs/2203.04231)
+- [Borexino pep, PRL 108, 051302](https://arxiv.org/pdf/1110.3230)
+- [Borexino PEP-violating ¹²C limits, PRC 81, 034317](https://arxiv.org/abs/0911.0548)
+- [Borexino ⁸B, PRD 82, 033006](https://arxiv.org/abs/0808.2868)
+- [Amelino-Camelia 1999](https://arxiv.org/abs/gr-qc/9808029)
+- [Buikema+2020 (LIGO O3)](https://arxiv.org/abs/2008.01301)

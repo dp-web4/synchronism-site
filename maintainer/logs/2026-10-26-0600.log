@@ -1,0 +1,35 @@
+Starting Synchronism Maintainer Session at Mon Oct 26 06:00:01 PDT 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+I fixed all four of today's high-severity visitor items. Both repos are pushed: site `0a895d3`, research repo `e03d771b`. `next build` passes, and the site lint (243 rules) reports no live retired phrases. No prediction moves bucket: zero confirmed, 6 refutations as counted (range 3–8 under the counting rules on file).
+
+**Start-of-session check:** two items reach the research itself, not just the site:
+- **The labels on the coherence curve C were backwards.** The site said C runs "from quantum (C → 0) to classical (C → 1)" as density rises. In real physics quantum effects appear at *high* density. Superconductors and condensates, the most quantum many-part systems, land at the end the site called "classical". It's the known wrong-direction problem in γ = 2/√N_corr, seen from the ends of the curve. The research repo's README carried the same label; I added a note there.
+- **The TEST-26 kill text would have missed one outcome.** It said the test fires if DESI's next data release (DR3) "requires the crossing" of w = −1. The model also can't produce "thawing", where w rises above −1 without crossing. A thawing-only result would have killed the model without firing the written kill. This had to be fixed before DR3.
+
+**Site fixes:**
+- **ρ_crit page:** retitled "Reference Density (Saturation Knee)" and rewritten so the curve runs from uncorrelated to collective; the γ regime labels changed to match. I also added the explorer's 10-24 table: the symbol ρ_crit names six different quantities. The cosmological one (4.3×10⁻⁸ M☉/pc³) sits 6.6 to 10.4 orders of magnitude below the galaxy ones, and no single value works in both.
+- **TEST-26 wording:** now "DR3 excludes Λ in the thawing or crossing direction", in four places plus the drafted registration on /top-5-tests.
+- **Galaxy plotter:** the "observed SPARC" points were hand-drawn on all five galaxies. UGC 128 was a 55 km/s curve; SPARC says 129.3 km/s, and it's the low-surface-brightness twin of NGC 2403. All five now use real SPARC points with error bars. The plot's conclusion is unchanged, and none of the 6 counted refutations used the plotter.
+- **Smaller fixes:** glossary entries for "rotation curve" and "dark energy"; a symbols box on /coherence-function; the TEST-10 row now says the failure is the boost floor, not the exponent; the two Solar System bounds are linked and explained; the Zurek envariance comparison is reworded; the /equation-anatomy redirect is now permanent.
+
+**Persona claims I checked and didn't act on:**
+- The "5×10⁻⁶ vs 10⁻⁵" mismatch is two different variables (γ − ½ and 2γ − 1). The page now names both.
+- "Bell/CHSH is just a theorem" is only true of the local version. The other two versions were actual constructions, and the page already says so.
+
+**Research repo:** a new proposal, a 10-26 entry in PREDICTIONS (no bucket moves), the README note, and the two corrections the explorer asked for. One fixes an archive formula whose ratio was inverted; the other extends the one-scale result to cosmology. I seeded two explorer topics:
+- where the framework's "door #3" diffusion falls on the standard collapse-model exclusion plot (its citations are from memory and need retrieving first);
+- the NGC 2403 / UGC 128 twin on real SPARC mass models.
+
+**Deferred:**
+- Merging the roughly 30 status words into one reader-facing set. It's a high-severity item but a redesign, best done in a dedicated session.
+- Headings and a table of contents for /for-researchers.
+- Folding revision notes away on the beginner tools.
+- About a dozen low-severity cleanups, listed in the log.
+
+**For you:**
+- A one-sentence definition of C that avoids "quantum" and "classical".
+- The TEST-26 registration wording, if you register it.
+- A frame question. The visitor loop now mostly finds corrections that reached one sentence but not its neighbour. That's useful, but it isn't discovery. Two experiments with unknown outcomes need your approval: the cross-vendor A2ACW control or the post-cutoff arm. Otherwise, a ruling on the stopping question.
+
+Today's log is `maintainer/logs/2026-10-26.md`.

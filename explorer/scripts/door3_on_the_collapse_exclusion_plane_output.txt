@@ -1,0 +1,48 @@
+D_Pl = c l_Pl = 4.845e-27 m^2/s
+
+[1] Heating-equivalent lambda: CSL with the same per-nucleon heating as literal door #3
+    P_CSL per nucleon = 3 hbar^2 lam / (4 m0 rC^2)  ->  lam_eq = 4 m0 rC^2 P / (3 hbar^2)  (slope +2)
+    A= 12: P = 1.12e+11 eV/s/nucleon -> lam_eq(rC=1e-7 m) = 3.61e+19 /s
+    A= 56: P = 4.03e+10 eV/s/nucleon -> lam_eq(rC=1e-7 m) = 1.29e+19 /s
+    A=128: P = 2.32e+10 eV/s/nucleon -> lam_eq(rC=1e-7 m) = 7.46e+18 /s
+    consistency: bulk-heating lam bound / lam_eq(A=128) = D/D_Pl < 4.4e-30
+    direct: TeO2 ~2.24e+18 W/kg at D_Pl vs 10 pW/kg -> D/D_Pl < 4.5e-30
+    (valid only for heating-class experiments; X-ray emission needs accelerated free charges,
+     and literal door #3 conserves a free particle's momentum: no bremsstrahlung channel)
+
+[2] Underground nuclear excitation: 12C -> 11C + n against Borexino's 11C rate
+    b = 1.52 fm, r_rms = 2.24 fm, sum<k^2> = 1.12e+31 /m^2
+    excitation rate per 12C at D_Pl = 5.44e+04 /s, mean deposit ~25 MeV (1 hbar w region, above S_n = 18.7 MeV in part)
+    branching to n f_n=0.1: D/D_Pl < 1.3e-38
+    branching to n f_n=0.3: D/D_Pl < 4.2e-39
+    branching to n f_n=0.5: D/D_Pl < 2.5e-39
+    N_C(100 t) = 4.51e+30; per-nucleus 11C rate < 6.9e-35 /s; adopted x_N = 4.2e-39
+    vs Earth-heat nucleon bound 2.0e-30: 5e+08 times tighter
+
+[3] Literal door #3 on the CSL-plane instruments: c.o.m. of N independent particles diffuses at D/N
+    40-m (3e-19 m/rtHz @450 Hz): D_lim = 1.8e-31 m^2/s = 3.7e-05 D_Pl
+    O3   (2e-20 m/rtHz @150 Hz, recall): D_lim = 8.9e-35 m^2/s = 1.8e-08 D_Pl
+    check vs Amelino-Camelia eq.4 convention: L_QG <= 6.1e-41 m (paper: 1e-40)
+    LIGO mirror 40 kg: N = 2.4e+28, D/N at D_Pl = 2.0e-55 m^2/s  (needs 9e-35: short by 4e+20)
+    LISA PF 1.93 kg: N = 1.2e+27, D/N at D_Pl = 4.2e-54 m^2/s
+    cantilever sphere 100 ng: N = 6.0e+16, D/N at D_Pl = 8.0e-44 m^2/s
+    25 kDa KDTL, d=266 nm: washout rate (D_Pl/N) K^2 = 1.1e-16 /s, needs >~1/T=1e+02 -> D/D_Pl < 9e+17 (no bound)
+
+[4] Correlated door #3: plane (D, ell).  Relative displacement over separation r suppressed by
+    s(r, ell) = 1 - exp(-r^2/(4 ell^2))  (~ r^2/4ell^2 for ell >> r)
+    nuclear bound D s(r_N) < 2.1e-65 m^2/s ; LIGO D 4 s(L) / ... sees D*s(L,ell) > 2.2e-35
+    D = 1e+00 D_Pl: nuclear needs ell > 1.7e+04 m; O3 excludes ell < 3.0e+07 m (40-m: < 6.6e+03 m) -> survives ell > 3.0e+07 m
+    D = 1e-04 D_Pl: nuclear needs ell > 1.7e+02 m; O3 excludes ell < 3.0e+05 m (40-m: < 6.4e+01 m) -> survives ell > 3.0e+05 m
+    D = 1e-06 D_Pl: nuclear needs ell > 1.7e+01 m; O3 excludes ell < 3.0e+04 m (40-m: < 0.0e+00 m) -> survives ell > 3.0e+04 m
+    D = 1e-08 D_Pl: nuclear needs ell > 1.7e+00 m; O3 excludes ell < 2.6e+03 m (40-m: < 0.0e+00 m) -> survives ell > 2.6e+03 m
+    band of D/ell^2 that O3 excludes but nuclei allow: width x3.0e+06 (exists iff > 1)
+    nucleon (v ~ hbar/(m b)): v = 4.1e+07 m/s -> P/m ~ D v^2/ell^2 relative weight 1.7e+15
+    H electron (alpha c): v = 2.2e+06 m/s -> P/m ~ D v^2/ell^2 relative weight 4.8e+12
+    lattice (c_s 5 km/s): v = 5.0e+03 m/s -> P/m ~ D v^2/ell^2 relative weight 2.5e+07
+    D_Pl at ell = Earth-Moon 3.8e+08 m: LLR needs D>~3e-16 m^2/s; local O3 sees 4 D s(L) = 5.4e-37 < 8.9e-35 -> invisible
+
+[5] ell >> baseline: relative displacement = L x strain, strain random-walks with D_eps ~ D/ell^2
+    strain ASD sqrt(D_eps)/(pi f) -> figure of merit f*h(f); bound D/ell^2 < (pi f h)^2  [h values recalled]
+    aLIGO O3 (2e-20 m / 4 km)           : f*h = 7.5e-22; D/ell^2 < 5.6e-42 /s -> at D_Pl, ell > 3.0e+07 m
+    PTA (h_c 2e-15 @ 1/yr)              : f*h = 3.6e-19; D/ell^2 < 1.3e-36 /s -> at D_Pl, ell > 6.2e+04 m
+    LISA design (~1e-20 /rtHz @ 3 mHz)  : f*h = 3.0e-23; D/ell^2 < 8.9e-45 /s -> at D_Pl, ell > 7.4e+08 m

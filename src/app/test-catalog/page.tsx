@@ -288,16 +288,16 @@ export default function TestCatalog() {
           floor never binds on the past light cone (C &ge; &Omega;<sub>m</sub> for every z &ge; 0), so flooring opens no
           escape. Derived by a simulated-visitor researcher persona; verified against the continuity equation numerically
           (<code>maintainer/scripts/floor_is_cosmic_C_and_w_sign.py</code>, 0 sign violations over 11 &gamma; &times; 51 z).
-          Kill fires if DR3 robustly requires that crossing; if the data sit at &Lambda;CDM it is a tie. <strong>TEST-26
+          Kill fires if DR3 excludes &Lambda; in the thawing or crossing direction (w&#x2080; &gt; &minus;1 with w<sub>a</sub> &lt; 0, whether or not w = &minus;1 is crossed); if the data sit at &Lambda;CDM it is a tie. (Until 2026-10-26 this said &ldquo;requires that crossing&rdquo;, narrower than the sign lock&apos;s forbidden region, which also excludes thawing; researcher simulated-visitor persona.) <strong>TEST-26
           can select the mean-density (Cardassian) reading, which the framework&apos;s local-density postulate forbids</strong>{' '}
           (but not as a win: if the data move into the freezing quadrant the family allows, the 2002 constant-w Cardassian fits the
           framework&apos;s curve to &Delta;&chi;&sup2;&nbsp;&le;&nbsp;0.42 at DR3 precision, and resolving the shape would need
-          &gamma;&nbsp;&asymp;&nbsp;0.30, excluded by DR2, explorer 2026-10-08; on the local fluid reading P(k) pins &gamma; = &frac12; to ~10&#x207B;&#x2075;). So no branch of TEST-26 singles out the framework or moves the confirmed-novel count off zero. <strong>It cannot select
+          &gamma;&nbsp;&asymp;&nbsp;0.30, excluded by DR2, explorer 2026-10-08; on the local fluid reading P(k) pins &#x03B3; = &frac12; to about 5&times;10<sup>&minus;6</sup>, i.e. |2&#x03B3; &minus; 1| &#x2272; 10<sup>&minus;5</sup>). So no branch of TEST-26 singles out the framework or moves the confirmed-novel count off zero. <strong>It cannot select
           the framework as postulated.</strong> It is listed outside the 24-test discrimination count. (This line said
           &ldquo;cannot select the framework&rdquo;, unqualified, until 2026-09-22, after{' '}
-          <Link href="/dark-energy" style={{ color: 'var(--color-accent-violet)' }}>Dark Energy</Link> was corrected on 2026-09-14.) Adoption gates on the operator. <strong>Booking if the kill fires (proposed):</strong> a DR3 result that robustly requires a
-          w = &minus;1 crossing kills &Lambda;CDM equally, because &Lambda;CDM is the &gamma; = &frac12; member of this
-          family and cannot cross either. It would therefore be booked as an <em>inherited root (inherited from
+          <Link href="/dark-energy" style={{ color: 'var(--color-accent-violet)' }}>Dark Energy</Link> was corrected on 2026-09-14.) Adoption gates on the operator. <strong>Booking if the kill fires (proposed):</strong> a DR3 result that excludes &Lambda; in the
+          thawing or crossing direction kills &Lambda;CDM equally, because &Lambda;CDM is the &gamma; = &frac12; member of this
+          family and can do neither. It would therefore be booked as an <em>inherited root (inherited from
           &Lambda;CDM)</em>, not as a framework-specific seventh refutation. This is the same rule that books
           TEST-25 (Cassini/SPARC) as &ldquo;inherited from MOND&rdquo;. The booking is stated before DR3 so that it cannot
           be chosen after the result. The booking also gates on the operator (ledger governance).

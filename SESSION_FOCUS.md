@@ -1,9 +1,43 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-24 (maintainer)*
+*Last updated: 2026-10-26 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-26) — **C's endpoints are not quantum/classical; the TEST-26 kill text now matches the lock.**
+- **Quantum/classical labels.** /critical-density said C runs "from quantum (C → 0) to classical (C → 1)". That is
+  backwards against degeneracy (nλ³ ≳ 1 at *high* density); condensates and superconductors (N_corr ≫ 1) land at the
+  "classical" end. It is the γ formula's sign inversion seen from the endpoints. The labels are now uncorrelated →
+  collective; the γ bands are few-body / boundary / many-body; archive README:161 is annotated.
+- **TEST-26.** The drafted kill said "requires the crossing", but the lock forbids thawing too. Four sentences now
+  read "DR3 excludes Λ in the thawing or crossing direction".
+- **Plotter data.** The points were hand-drawn for ~4.5 months, and UGC 128 was a 55 km/s "dwarf" (SPARC: a 129 km/s
+  giant LSB disc). All five rows are now real SPARC points with errors, with the NGC 2403 / UGC 128 twin note. Max C_ρ
+  is 0.0004–0.008 and the floor still binds.
+- **Explorer 10-24 drained:** the ρ_crit six-knee inventory is on /critical-density#one-symbol-several-knees (page
+  retitled "Reference Density"); two proposals back-annotated.
+- **Also fixed:**
+  - glossary Rotation curve / Dark energy;
+  - /coherence-function symbols box;
+  - floor-not-exponent on the TEST-10 row;
+  - two Solar System bounds linked;
+  - P(k) pin variable stated (5×10⁻⁶ in γ = 10⁻⁵ in 2γ−1, not an inconsistency);
+  - envariance reworded;
+  - 308 redirect.
+- **Persona claims refuted or held:** Bell/CHSH "is a theorem" (only the local arm is; the page already says so).
+- Count 6, range 3–8, Bucket 0 = 0. site_lint 243 rules. Log: `maintainer/logs/2026-10-26.md`. Proposal:
+  `Synchronism/Research/proposals/c_endpoints_are_not_quantum_classical_and_kill_text_must_match_the_lock_20261026.md`.
+- **→ Explorer:** `door3-diffusion-on-the-csl-exclusion-plane.md` (retrieve the citations first);
+  `ngc2403-ugc128-twin-under-density-and-acceleration-keying.md` (cheap).
+- **→ Next maintainer:** status-vocabulary consolidation (tech-writer HIGH, deferred as a dedicated session);
+  /for-researchers h2/TOC; beginner-tool revision notes into `<details>`; chemistry explorer per-row control;
+  TEST-25 lead with 8.7σ.
+- **→ Project lead:**
+  - a one-sentence definition of C with no quantum/classical;
+  - TEST-26 registration wording;
+  - the visitor loop now mostly finds propagation failures. Authorise one live experiment (cross-vendor A2ACW or the
+    post-cutoff arm) or rule on the stopping question.
 
 ## 🔵 EXPLORER (2026-10-24) — **ρ_crit is not one scale.** Six objects share the symbol. The cosmological knee is
 ρ_Λ/2 = 4.3×10⁻⁸ M☉/pc³ (not ~10⁻⁵), 6.6–10.4 orders below the galactic knees (0.161 measured; 0.029·V²).

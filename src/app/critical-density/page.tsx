@@ -10,21 +10,39 @@ export default function CriticalDensity() {
   return (
     <>
       <Breadcrumbs currentPath="/critical-density" />
-      <h1>Critical Density</h1>
+      <h1>&#x03C1;<sub>crit</sub>: the Reference Density (Saturation Knee)</h1>
       <ValidationBadge status="audited-negative" label="A-from-Jeans | scale-dependent, not derived" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
-        <EquationDisplay label="Critical density from rotation velocity">
+        <EquationDisplay label="Galactic reference density from rotation velocity">
           &#x03C1;<sub>crit</sub> = A &times; V<sub>flat</sub>&sup2;
         </EquationDisplay>
 
         <p>
-          The critical density &#x03C1;<sub>crit</sub> is the density at which the coherence function
-          transitions from quantum (C &rarr; 0) to classical (C &rarr; 1). It is <strong>per-system</strong>,
-          not a universal constant: V<sub>flat</sub> is the observed flat rotation velocity of each specific
-          system, so each galaxy (or other gravitationally bound object) has its own &#x03C1;<sub>crit</sub>.
-          A is the universal proportionality constant; V<sub>flat</sub> enters as an input. The rotation-curve
-          fit is not zero-parameter — it requires an observed V<sub>flat</sub> per galaxy.
+          &#x03C1;<sub>crit</sub> is the density scale at which C(&#x03C1;) = tanh(&#x03B3; ln(1 + &#x03C1;/&#x03C1;<sub>crit</sub>))
+          bends from its low-density ramp (C &#x2248; &#x03B3;&#x03C1;/&#x03C1;<sub>crit</sub>) into saturation (C &rarr; 1).
+          It is a <strong>saturation knee</strong>, a reference scale, <strong>not a critical point</strong>: the function is
+          smooth and nothing transitions there. At &#x03B3; = 2, C(&#x03C1;<sub>crit</sub>) = tanh(2 ln 2) = 0.88, and the midpoint
+          C = &frac12; sits at &#x03C1; &#x2248; 0.32&#x03C1;<sub>crit</sub>. The &ldquo;crit&rdquo; subscript is kept only because every
+          script and ledger row since Session 53 uses it (see the{' '}
+          <Link href="/glossary#%CF%81_crit" style={{ color: 'var(--color-accent-blue)' }}>glossary entry</Link>).
+        </p>
+        <p>
+          C runs from <strong>uncorrelated (C &rarr; 0)</strong> to <strong>collective (C &rarr; 1)</strong>. It is
+          <strong> not</strong> a quantum-degeneracy parameter. Earlier versions of this page said C runs &ldquo;from quantum
+          (C &rarr; 0) to classical (C &rarr; 1)&rdquo; as density rises. That is backwards physics: quantum degeneracy sets in at
+          <em> high</em> phase-space density (n&#x03BB;<sub>dB</sub>&sup3; &#x2273; 1), and a dilute gas is the classical limit.
+          The same labelling is why the most collective quantum states (superconductors, condensates) come out at the
+          &ldquo;wrong&rdquo; end of the &#x03B3; formula; see{' '}
+          <Link href="/gamma-regimes" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; regimes</Link>.
+        </p>
+        <p>
+          In the galaxy sector &#x03C1;<sub>crit</sub> is <strong>per-system</strong>, not a universal constant:
+          V<sub>flat</sub> is the observed flat rotation velocity of each specific system, so each galaxy (or other
+          gravitationally bound object) has its own &#x03C1;<sub>crit</sub>. A is the proportionality constant; V<sub>flat</sub>
+          enters as an input. The rotation-curve fit is not zero-parameter — it requires an observed V<sub>flat</sub> per galaxy.
+          Other sectors use different knees altogether; see{' '}
+          <a href="#one-symbol-several-knees" style={{ color: 'var(--color-accent-blue)' }}>one symbol, several knees</a> below.
         </p>
 
         <h2>The A Parameter</h2>
@@ -92,7 +110,7 @@ export default function CriticalDensity() {
           x &#x2272; 0.019&#x03B2;<sub>J</sub>&sup2; &#x2248; <strong>0.02 in every sector at every
           &#x2113;</strong> &mdash; the knee is out of reach by roughly 40&times; for free, with no fitted
           parameter. Verified numerically on all five plotter disks (max over &#x2113;:
-          1.7&times;10<sup>&minus;3</sup> to 1.1&times;10<sup>&minus;2</sup>) and to four digits at Cassini and
+          1.7&times;10<sup>&minus;3</sup> to 1.1&times;10<sup>&minus;2</sup>, computed 2026-08-05 on the plotter&apos;s earlier rows; on 2026-10-26 the plotter switched to real SPARC rows, including a corrected UGC 128, and this range has not been recomputed; the 0.019&#x03B2;<sub>J</sub>&sup2; bound does not depend on it) and to four digits at Cassini and
           wide-binary scales. It is kernel-robust: a Gaussian kernel gives coefficient 0.00505, moving the ceiling
           <em> down</em> a further 3.8&times;. This is the only galaxy-sector statement on this site that requires
           <strong> no estimator choice, no velocity definition, and no contested external measurement.</strong>
@@ -118,16 +136,66 @@ export default function CriticalDensity() {
           </Link>; the disclaimer is no longer needed.
         </p>
 
-        <h2>Physical Meaning</h2>
+        <h2>Physical Meaning (as proposed)</h2>
         <p>
           Every gravitationally bound system has a characteristic rotation velocity V<sub>flat</sub> &mdash;
           the velocity at which its rotation curve flattens. This velocity encodes the total mass
-          and size of the system. The critical density is where internal gravitational binding energy
-          equals the coherence threshold.
+          and size of the system. The original motivation (Session 53) was a Jeans-type argument: put the knee
+          where a system&apos;s self-gravity becomes strong enough to bind it as one unit. That argument
+          calibrates A; it does not derive it (see the correction above).
         </p>
         <p>
-          Below &#x03C1;<sub>crit</sub>: the system is under-dense, loosely bound, quantum effects persist.
-          Above &#x03C1;<sub>crit</sub>: the system is gravitationally coherent, classical behavior dominates.
+          Below &#x03C1;<sub>crit</sub>, C is small and the proposed boost is large (1/C in the division reading).
+          Above it, C saturates toward 1 and gravity is Newtonian. Nothing about quantum versus classical
+          behaviour enters: this is a statement about how strongly matter is proposed to act as one collective
+          unit, not about degeneracy.
+        </p>
+
+        <h2 id="one-symbol-several-knees">One symbol, several knees</h2>
+        <p>
+          The symbol &#x03C1;<sub>crit</sub> names at least six different objects across the site and archive. They span
+          more than ten orders of magnitude. All values are in M<sub>&#x2609;</sub>/pc&sup3;, at V = 200 km/s where V enters
+          (explorer finding 2026-10-24, arithmetic on knees the site already prints; not a pre-registered test):
+        </p>
+        <div style={{ overflowX: 'auto' }}>
+          <table style={{ width: '100%', fontSize: '0.85rem', borderCollapse: 'collapse' }}>
+            <thead>
+              <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--color-dark-border)' }}>
+                <th style={{ padding: '0.3rem' }}>Knee</th>
+                <th style={{ padding: '0.3rem' }}>Value</th>
+                <th style={{ padding: '0.3rem' }}>Scales as</th>
+                <th style={{ padding: '0.3rem' }}>Status</th>
+              </tr>
+            </thead>
+            <tbody style={{ color: 'var(--color-text-secondary)' }}>
+              <tr><td style={{ padding: '0.3rem' }}>A&middot;V&sup2;, A = 0.029 (site-wide working value)</td><td>1,160</td><td>V<sup>+2</sup></td><td>asserted; 0.029 was derived for a V<sup>0.5</sup> law</td></tr>
+              <tr><td style={{ padding: '0.3rem' }}>A&middot;V&sup2;, A = 4.6&times;10<sup>&minus;5</sup> (stated formula)</td><td>1.8</td><td>V<sup>+2</sup></td><td>formula-consistent; never adopted</td></tr>
+              <tr><td style={{ padding: '0.3rem' }}>A&middot;V<sup>0.5</sup> (Session 53)</td><td>per galaxy</td><td>V<sup>0.5</sup></td><td>archive only</td></tr>
+              <tr><td style={{ padding: '0.3rem' }}>Jeans-construction knee, measured on SPARC</td><td>0.161 (median)</td><td>V<sup>&minus;0.16 &plusmn; 0.19</sup></td><td>measured (velocity-blind)</td></tr>
+              <tr><td style={{ padding: '0.3rem' }}>Knee that tracks MOND&apos;s a&#x2080;, a&#x2080;&sup2;/(4&#x03C0;GV&sup2;)</td><td>6.3&times;10<sup>&minus;3</sup></td><td>V<sup>&minus;2</sup></td><td>what matching MOND requires; not asserted</td></tr>
+              <tr><td style={{ padding: '0.3rem' }}>Cosmological knee (dark-energy sector)</td><td><strong>4.3&times;10<sup>&minus;8</sup></strong> = &#x03C1;<sub>&#x039B;</sub>/2</td><td>none</td><td>calibrated so that C&#x2080; = &#x03A9;<sub>m</sub>; &#x039B; renamed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <strong>No single knee serves both galaxies and cosmology.</strong> The galactic knees sit 6.6 to 10.4 orders of
+          magnitude above the cosmological one. Put the cosmological knee into a galaxy and C = 1 at every disc density, so
+          gravity is Newtonian and there is no boost. Put a galactic knee into the Friedmann equation and the late-time dark
+          energy comes out 3.7&times;10<sup>6</sup> to 2.7&times;10<sup>10</sup> times &#x03C1;<sub>&#x039B;</sub>. Both fail by
+          more than six orders of magnitude.
+        </p>
+        <p>
+          The one cross-sector link on file is MOND&apos;s a&#x2080; &#x2248; cH&#x2080;/2&#x03C0;. Written as a density it becomes
+          &#x03C1;<sub>knee</sub>(V) = (c/2&#x03C0;V)&sup2;&middot;(2/3)&#x03C1;<sub>c0</sub>, which scales as V<sup>&minus;2</sup>. That is
+          an <em>acceleration</em> identification (Milgrom&apos;s), not a density knee. The framework asserts V<sup>+2</sup> and the
+          measured knee is velocity-blind, so neither carries it. So &ldquo;one equation&rdquo; means one functional form with a
+          knee calibrated separately in each sector.
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem' }}>
+          <strong>Open question (untested, not refuted):</strong> is there a rule that <em>predicts</em> each sector&apos;s knee
+          without fitting? For example, put the knee wherever the sector&apos;s characteristic acceleration equals a&#x2080;. Such a
+          rule would have to land both 4&times;10<sup>&minus;8</sup> (cosmos) and the SPARC knee. Nobody has proposed one. If one
+          exists, the unifying object is a&#x2080;, not &#x03C1;<sub>crit</sub>.
         </p>
 
         <h2>Connection to MOND</h2>

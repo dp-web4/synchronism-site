@@ -489,7 +489,14 @@ export default function GalaxyRotation() {
             (ΔBIC +59 to reach 0.87). At galaxy level it does not: the published-nuisance interval reaches 0.95, so a reading
             with no external-field effect survives at γ ≈ 0.87–0.95 for about 1.2σ of SPARC cost, less than the ~2σ the
             Q₂-passing γ ≳ 1.5 needs. For readings with no external field, the binding Solar-System number is 0.87, not 1.5.
-            It is also inherited, not framework-specific &mdash; at γ = &frac12; the compander <em>is</em> simple μ. (
+            It is also inherited, not framework-specific &mdash; at γ = &frac12; the compander <em>is</em> simple μ.{' '}
+            <strong>Two Solar-System bounds, two observables.</strong> The compander returns to Newton as a power law,
+            1 &minus; C &asymp; 2x<sup>&minus;2γ</sup>, and that tail is what the perihelion bound (γ &lt; 0.87 excluded) probes.
+            McGaugh&apos;s ν returns exponentially (ν &minus; 1 &asymp; e<sup>&minus;&radic;y</sup>), so it is immune to this direct tail; it fails
+            only through the external-field quadrupole Q₂ that{' '}
+            <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link> uses, where the
+            compander needs γ &#x2273; 1.5 to pass. When McGaugh&apos;s ν and simple μ are listed together as failing TEST-25, that is the
+            quadrupole channel only (sentence added 2026-10-26, graduate-physics simulated-visitor persona). (
             <a href="https://github.com/dp-web4/synchronism-site/blob/main/explorer/findings/direct-tail-planetary-precession-floor-gamma-087-closes-point-level-not-galaxy-level.md" style={{ color: 'var(--color-accent-blue)' }}>finding</a>;
             supplementary precessions fitted without the tail in the dynamical model, the standard Iorio-style test.)
             <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>

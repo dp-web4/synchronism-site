@@ -36,7 +36,7 @@ export const terms: Record<string, TermDefinition> = {
     term: '\u03C1_crit',
     fullName: 'Reference Density (Saturation Knee)',
     brief: 'Reference density \u2014 a saturation knee, not a critical point. C(\u03C1_crit, \u03B3=2) = 0.88; the midpoint C=0.5 sits at \u03C1 \u2248 0.32\u00D7\u03C1_crit. \u03C1_crit = A \u00D7 V_flat\u00B2 (astrophysical case).',
-    explanation: '\u03C1_crit sets the scale at which the coherence function enters saturation \u2014 NOT a phase-transition critical density. At \u03B3=2, C(\u03C1_crit) = tanh(2\u00B7ln 2) = 0.88; the actual C=0.5 midpoint is at \u03C1 \u2248 0.32\u00D7\u03C1_crit. The "+1" regulator in ln(\u03C1/\u03C1_crit + 1) makes the function asymmetric. "Critical density" or "transition density" are misleading terms for this parameter \u2014 the correct description is saturation knee or reference density. The symbol keeps the "crit" subscript for historical continuity only: it was named in Session 53 when it was believed to mark a phase transition, every script and ledger row since carries that name, and renaming it would break the audit trail (note added 2026-09-08).',
+    explanation: '\u03C1_crit sets the scale at which the coherence function enters saturation \u2014 NOT a phase-transition critical density. At \u03B3=2, C(\u03C1_crit) = tanh(2\u00B7ln 2) = 0.88; the actual C=0.5 midpoint is at \u03C1 \u2248 0.32\u00D7\u03C1_crit. The "+1" regulator in ln(\u03C1/\u03C1_crit + 1) makes the function asymmetric. "Critical density" or "transition density" are misleading terms for this parameter \u2014 the correct description is saturation knee or reference density. The symbol keeps the "crit" subscript for historical continuity only: it was named in Session 53 when it was believed to mark a phase transition, every script and ledger row since carries that name, and renaming it would break the audit trail (note added 2026-09-08). It is also sector-specific: the galactic knees (0.16 to ~10\u00B3 M\u2609/pc\u00B3 at V = 200 km/s) and the cosmological knee (\u03C1_\u039B/2 \u2248 4.3\u00D710\u207B\u2078 M\u2609/pc\u00B3) differ by 6.6\u201310.4 orders of magnitude, and no single value works in both sectors; see the inventory on the \u03C1_crit page (added 2026-10-26).',
     learnMore: '/critical-density',
   },
   'MRH': {
@@ -314,6 +314,20 @@ export const terms: Record<string, TermDefinition> = {
     brief: 'The constant speed at which stars orbit in the outer parts of a galaxy.',
     explanation: 'Galaxy rotation curves show that stars far from the center orbit at roughly constant speed instead of slowing down (as Newton predicts). This "flat" velocity is the key observable that reveals the dark matter problem.',
     learnMore: '/galaxy-rotation',
+  },
+  'Rotation curve': {
+    term: 'Rotation curve',
+    fullName: 'Rotation Curve',
+    brief: 'A plot of how fast stars and gas orbit a galaxy\u2019s centre against their distance from it. Newton says it should fall off far out; observed curves stay flat.',
+    explanation: 'Picture: distance from the centre on the horizontal axis, orbital speed on the vertical. If the visible stars and gas were all the mass, speeds far outside the bright disc should drop the way planets slow with distance from the Sun (v \u221D 1/\u221Ar). Observed curves instead rise and then stay roughly flat out to the last measured point (the flat speed is V_flat). That gap is the galaxy dark-matter problem. Dark matter explains it with unseen mass; MOND explains it by changing gravity at low acceleration. Every galaxy test on this site, including the Galaxy Curve Plotter and the SPARC fits, is a comparison against measured rotation curves. (Entry added 2026-10-26; two simulated-visitor personas found the galaxy story\u2019s central object missing from the glossary.)',
+    learnMore: '/galaxy-plotter',
+  },
+  'Dark energy': {
+    term: 'Dark energy',
+    fullName: 'Dark Energy',
+    brief: 'Whatever makes the expansion of the universe speed up. In standard cosmology (\u039BCDM) it is a cosmological constant \u039B, about 68% of the universe\u2019s energy today.',
+    explanation: 'Since 1998, distant supernovae (and later the CMB and galaxy clustering) show the expansion of the universe accelerating. The simplest explanation is a constant vacuum energy density, the cosmological constant \u039B, with equation of state w = \u22121. DESI\u2019s 2024\u20132025 data hint that w may change with time (the w\u2080\u2013w\u2090 parametrization). This framework\u2019s dark-energy sector writes \u03C1_DE = \u03C1_m(1\u2212C)/C. At \u03B3 = \u00BD that is exactly \u039B (\u03C1_DE = 2\u03C1_crit), and the general family is a known Cardassian-class model. It can only evolve toward w = \u22121, so it cannot produce the thawing or crossing behaviour DESI hints at. (Entry added 2026-10-26, from simulated-visitor feedback.)',
+    learnMore: '/dark-energy',
   },
   'qualia': {
     term: 'Qualia',

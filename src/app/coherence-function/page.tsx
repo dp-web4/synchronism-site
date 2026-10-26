@@ -28,11 +28,20 @@ export default function CoherenceFunction() {
         </EquationDisplay>
 
         <div style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.25)', borderRadius: '0.375rem', padding: '0.6rem 1rem', marginBottom: '1rem', fontSize: '0.88rem' }}>
-          <strong>New to the notation?</strong>{' '}
+          <strong>Symbols in this equation.</strong>
+          <ul style={{ margin: '0.3rem 0 0.4rem', paddingLeft: '1.2rem' }}>
+            <li><strong>C</strong>: coherence, the output, between 0 (parts act independently) and 1 (parts act as one).</li>
+            <li><strong>&#x03C1;</strong>: the system&apos;s density (for a galaxy, mass per cubic parsec at a given radius).</li>
+            <li><strong>&#x03C1;<sub>crit</sub></strong>: a reference density where the curve bends into saturation, a knee rather than a critical point (<Link href="/critical-density" style={{ color: 'var(--color-accent-blue)' }}>reference density</Link>).</li>
+            <li><strong>&#x03B3;</strong>: sets how fast C rises at low density (C &#x2248; &#x03B3;&#x03C1;/&#x03C1;<sub>crit</sub>) and how fast it saturates.</li>
+            <li><strong>ln</strong>: natural logarithm, which compresses huge ranges (1,000&times; more input adds only about 7). <strong>tanh</strong>: the hyperbolic tangent, an S-shaped &ldquo;dimmer switch&rdquo; that keeps C below 1.</li>
+            <li><strong>MOND</strong>: Modified Newtonian Dynamics (Milgrom 1983), the rival that changes gravity at low acceleration instead of adding dark matter. Its <em>interpolating function</em> &#x03BC; sets how gravity blends between the Newtonian and modified regimes.</li>
+            <li><strong>Hill function</strong>: the saturating curve x<sup>n</sup>/(x<sup>n</sup> + K), familiar from biochemistry; &ldquo;Hill n = 1&rdquo; is x/(x + K).</li>
+          </ul>
           <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>
             Walk through it step by step &rarr;
           </Link>{' '}
-          — a 6-step interactive that defines every symbol (C, &#x03C1;, &#x03C1;<sub>crit</sub>, &#x03B3;, ln, tanh) in plain language.
+          (a 6-step interactive with the same symbols in plain language).
         </div>
 
         <div style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>

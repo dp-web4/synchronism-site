@@ -10,7 +10,7 @@ export default function DarkEnergy() {
     <>
       <Breadcrumbs currentPath="/dark-energy" />
       <h1>Dark Energy &amp; DESI</h1>
-      <ValidationBadge status="reparametrization" label="ΛCDM where it fits (direct DESI DR2 fit 2026-08-12: γ = 0.487, Δχ² = −0.3, mean-density reading only; read at local density as a fluid, P(k) pins γ = ½ to 1e-5); covariant completions fail the fit — proposed TEST-26 is a consistency check at DESI DR3, not a discriminator" />
+      <ValidationBadge status="reparametrization" label="ΛCDM where it fits (direct DESI DR2 fit 2026-08-12: γ = 0.487, Δχ² = −0.3, mean-density reading only; read at local density as a fluid, P(k) pins γ = ½ to 5e-6, |2γ−1| < 1e-5); covariant completions fail the fit — proposed TEST-26 is a consistency check at DESI DR3, not a discriminator" />
       <div id="gamma-half-nesting" style={{ fontSize: '0.88rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #f59e0b', paddingLeft: '0.75rem', margin: '0.75rem 0 1rem', scrollMarginTop: '5rem' }}>
         <strong>&#x03B3; &asymp; &frac12; twice is not a cross-sector agreement.</strong> At &#x03B3; = &frac12; the function satisfies
         1/C &minus; 1 = 2/x exactly. Keyed on acceleration (the galaxy fit&apos;s variable) that is MOND&apos;s simple interpolating function;
@@ -34,8 +34,7 @@ export default function DarkEnergy() {
           but the family contains &Lambda;CDM at &gamma;&nbsp;=&nbsp;&frac12;, so it can only be killed by data that kill
           &Lambda;CDM too. It is a live position that no data can refute without refuting &Lambda;CDM; it is not a
           discriminating one (corrected 2026-09-27 from &ldquo;the framework&apos;s one live falsifiable position&rdquo;). Read at the local density (the framework&apos;s own postulate), existing galaxy clustering data already pin
-          &gamma; to &frac12; (box below), so there is nothing left for DR3 to decide. On the mean-density reading: at DESI DR3 it is killed if the
-          crossing holds and tied if the data sit at &Lambda;CDM (&gamma;&nbsp;=&nbsp;&frac12;). <strong>It has no
+          &gamma; to &frac12; (box below), so there is nothing left for DR3 to decide. On the mean-density reading: at DESI DR3 it is killed if DR3 excludes &Lambda; in the thawing or crossing direction (w&#x2080; &gt; &minus;1 with w<sub>a</sub> &lt; 0, whether or not w = &minus;1 is crossed) and tied if the data sit at &Lambda;CDM (&gamma;&nbsp;=&nbsp;&frac12;). <strong>It has no
           win branch at DR3 either</strong> (executed 2026-10-08, pre-registered <code>f3e045e</code>): if the data move into the
           freezing quadrant it allows, the 2002 constant-w Cardassian (wCDM, same parameter count) fits the framework&apos;s
           curve to &Delta;&chi;&sup2;&nbsp;&le;&nbsp;0.42 at every DR2-allowed &gamma;. Telling the two apart at 2&sigma; would need
@@ -503,8 +502,8 @@ export default function DarkEnergy() {
         <p>
           A prospective registration against DESI DR3 (~2027&ndash;28) is drafted on{' '}
           <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>Top Decisive Tests</Link>:
-          the kill fires if DR3 robustly requires the crossing the model class cannot produce, with a
-          pre-committed projection-robustness check; the &ldquo;confirming&rdquo; branch is a tie (the
+          the kill fires if DR3 excludes &Lambda; in the thawing or crossing direction (w&#x2080; &gt; &minus;1 with w<sub>a</sub> &lt; 0, whether or not w = &minus;1 is crossed), the region the sign lock forbids, with a
+          pre-committed projection-robustness check (worded &ldquo;requires the crossing&rdquo; until 2026-10-26; a thawing-only result would have killed the family without firing that text); the &ldquo;confirming&rdquo; branch is a tie (the
           substituted &gamma;&nbsp;=&nbsp;1/2 branch <em>is</em> &Lambda;CDM &mdash; though that identity is
           itself substitution-conditional, since completion B has no &Lambda;CDM member). Recorded now so a
           later tie cannot be read as a success. Adoption gates on the operator.

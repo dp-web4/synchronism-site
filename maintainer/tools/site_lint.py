@@ -23,6 +23,15 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-26 (maintainer): TEST-26 kill worded as "requires the crossing" (the sign lock also forbids thawing;
+    #     a thawing-only DR3 would kill the family without firing that text); rho_crit as "the transition point"; C's endpoints
+    #     as quantum (C -> 0) / classical (C -> 1), which is backwards against degeneracy (n lambda^3 >~ 1 at HIGH density)
+    (r"requires (that|the|a)\s+(w = (&minus;|−)1\s+)?crossing|crossing holds and tied", "2026-10-26",
+     "TEST-26 kill: DR3 excludes Lambda in the thawing or crossing direction (w0 > -1 with wa < 0, crossed or not)"),
+    (r"V_flat\\u00B2: the transition point|The transition point, unique|transitions from quantum \(C", "2026-10-26",
+     "rho_crit is a saturation knee / reference density, and C runs uncorrelated -> collective, not quantum -> classical"),
+    (r"sharpness of the quantum-classical transition", "2026-10-26",
+     "gamma = 2/sqrt(N_corr) is audited-negative and C's endpoints are not quantum/classical"),
     # --- retired 2026-10-24 (maintainer): count range 4-8 (TEST-25 galaxy-level delta omitted); galaxy-level +10.9 described as
     #     gamma=2 vs free gamma (it is vs McGaugh nu, equal k: the passage a persona's "+6.2" grew from); "fit improvement is zero";
     #     0.086 "CDM-consistency suspended" (explorer 2026-10-23: not a BTFR scatter at all)

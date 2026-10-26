@@ -173,7 +173,7 @@ export default function MeasurementWithoutObservers() {
             Any measurement theory must address the Born rule: the probability of a measurement outcome is |⟨ψ|m⟩|². Standard decoherence (Zurek/Joos/Zeh) addresses this via einselection and pointer-state dynamics. The statement &ldquo;MRH crossing IS the measurement&rdquo; is a description of <em>when</em> collapse occurs, not <em>what probabilities</em> the outcomes carry.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0 0 0.5rem' }}>
-            The framework has a derivation attempt on the <a href="/born-rule" style={{ color: 'var(--color-accent-blue)' }}>Born Rule page</a> — but the honest assessment there is that it is a <strong>reparametrization</strong>: the argument relies on &ldquo;coherence conservation&rdquo; as an axiom, derives no testable deviation from |α|², and has not been subjected to peer review. It is the same logical status as Zurek&apos;s envariance and Carroll-Sebens self-locating uncertainty — both also criticized for circularity.
+            The framework has a derivation attempt on the <a href="/born-rule" style={{ color: 'var(--color-accent-blue)' }}>Born Rule page</a> — but the honest assessment there is that it is a <strong>reparametrization</strong>: the argument relies on &ldquo;coherence conservation&rdquo; as an axiom, derives no testable deviation from |α|², and has not been subjected to peer review. It is <em>not</em> on the same footing as Zurek&apos;s envariance or Carroll&ndash;Sebens self-locating uncertainty. Those are also criticized for circularity, but each derives the rule from stated assumptions weaker than the rule itself; here the rule is effectively assumed (this sentence said &ldquo;the same logical status&rdquo; until 2026-10-26; researcher simulated-visitor persona, matching the /born-rule page&apos;s own wording).
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', margin: 0 }}>
             This page is best read as an interpretive overlay on decoherence, not a complete measurement theory. The open question &mdash; which programs like quantum Darwinism (Zurek), Deutsch-Wallace (decision-theoretic), and Carroll-Sebens are actively pursuing &mdash; is whether Born&apos;s rule can be derived from more fundamental principles rather than postulated.
@@ -194,7 +194,7 @@ export default function MeasurementWithoutObservers() {
           been run, and none can be as written: a protocol needs a predicted <em>rate</em>, and the MRH-crossing
           mechanism has no rate parameter, so they are experiment classes, not protocols (relabelled 2026-09-29, researcher
           simulated-visitor persona). The theory asserts scaling relationships between N<sub>corr</sub>,
-          decoherence timescales, and the sharpness of the quantum-classical transition, with no rung of the N<sub>corr</sub> ladder anchored to
+          decoherence timescales, and how sharply C saturates, with no rung of the N<sub>corr</sub> ladder anchored to
           an apparatus. The one rate the framework&apos;s own substrate suggests, intrinsic decoherence from Planck-scale diffusion, was checked
           against the heat budget of ordinary matter (explorer, 2026-09-27): at that diffusion constant a hydrogen atom would be heated at
           2&times;10⁻⁴ eV/s, so the bound-state limit is 15&ndash;30 orders of magnitude below the natural value (prior art: Pearle &amp; Squires 1994;

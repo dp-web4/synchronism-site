@@ -407,7 +407,7 @@ const nextConfig = {
       {
         source: '/equation-anatomy',
         destination: '/equation-walkthrough',
-        permanent: false,
+        permanent: true, // 307 -> 308 on 2026-10-26 (technical-writer persona: the name is permanent, so the redirect should be too)
       },
       // 2026-10-23: the route itself was renamed /phase-boundary-visualizer -> /crossover-regime-visualizer
       // (the old slug asserted the retracted "phase boundary"; visitor tech-writer persona). Old links keep working.

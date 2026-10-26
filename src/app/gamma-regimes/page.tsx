@@ -17,7 +17,7 @@ export default function GammaRegimes() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           C(&#x03C1;) is a smooth curve: it has no sharp transition anywhere. What &#x03B3; does is sort systems into three
-          bands (strongly quantum, boundary, classical), and the clustering of fitted &#x03B3; near 1 restates the Debye
+          bands (few-body / uncorrelated, boundary, many-body collective), and the clustering of fitted &#x03B3; near 1 restates the Debye
           temperature &#x03B8;<sub>D</sub> (1912) rather than adding new physics. This page describes those bands and why
           they are crossovers, not phase transitions.
         </p>
@@ -46,21 +46,36 @@ export default function GammaRegimes() {
             marginBottom: '1rem',
           }}>
             <div style={{ flex: 1, background: 'linear-gradient(90deg, #38bdf8, #38bdf880)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 500 }}>
-              Quantum
+              Few-body (N<sub>corr</sub> &#x2248; 1)
             </div>
             <div style={{ flex: 0.5, background: 'linear-gradient(90deg, #8b5cf680, #8b5cf6, #8b5cf680)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 500 }}>
               Boundary
             </div>
             <div style={{ flex: 1, background: 'linear-gradient(90deg, #22c55e80, #22c55e)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 500 }}>
-              Classical
+              Many-body collective
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             <span>&#x03B3; = 2 (single electron)</span>
             <span style={{ color: 'var(--color-accent-violet)' }}>&#x03B3; &#x2248; 1</span>
-            <span>&#x03B3; &rarr; 0 (macroscopic)</span>
+            <span>&#x03B3; &rarr; 0 (N<sub>corr</sub> &#x226B; 1)</span>
           </div>
         </div>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem' }}>
+          <strong>Why the bands are no longer labelled &ldquo;quantum&rdquo; and &ldquo;classical&rdquo; (2026-10-26).</strong> The
+          archive called the &#x03B3; = 2 end &ldquo;strongly quantum&rdquo; (a single electron) and the &#x03B3; &rarr; 0 end
+          &ldquo;classical&rdquo; (macroscopic). That reading is backwards against statistical mechanics: quantum degeneracy needs
+          <em> many</em> overlapping particles (n&#x03BB;<sub>dB</sub>&sup3; &#x2273; 1), so the most quantum many-body states,
+          condensates and superconductors, have N<sub>corr</sub> &#x226B; 1 and land at the far right, the &ldquo;classical&rdquo;
+          end. That is the formula&apos;s sign inversion in one picture. The deeper reason is on{' '}
+          <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</Link>: in every
+          mean-field model a transition gets <em>sharper</em> as more units correlate (the Curie&ndash;Weiss rounding width shrinks
+          as N<sup>&minus;1/2</sup>), so a sharpness parameter should grow as &#x221A;N, the reciprocal of &#x03B3; = 2/&#x221A;N<sub>corr</sub>.
+          The band cutoffs (0.6 and 1.4 on the{' '}
+          <Link href="/crossover-regime-visualizer" style={{ color: 'var(--color-accent-blue)' }}>visualizer</Link>) are display
+          conventions with no derivation behind them, and N<sub>corr</sub> itself has no operational definition (see the
+          superconductor example below).
+        </p>
 
         <h2>The &#x03B3; &#x2248; 1 Boundary</h2>
         <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1rem' }}>
@@ -86,7 +101,7 @@ export default function GammaRegimes() {
           <li>Phase transitions cluster here (melting, boiling, sublimation)</li>
           <li>Catalysis operates at this boundary (enzymes, industrial catalysts)</li>
           <li>Superconductivity appears (Cooper pairs &#x2248; 2-body correlations)</li>
-          <li>Biology emerges (molecular recognition requires quantum-classical interface)</li>
+          <li>Biology emerges (the archive&apos;s gloss was &ldquo;molecular recognition requires a quantum-classical interface&rdquo;; see the band note above for why that labelling does not hold)</li>
         </ul>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem' }}>
           <strong>Which N<sub>corr</sub> for a superconductor?</strong> This list places superconductivity at &#x03B3; &#x2248; 1 by

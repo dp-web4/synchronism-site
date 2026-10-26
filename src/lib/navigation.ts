@@ -112,9 +112,9 @@ export const navigationTree: NavigationTree = {
       related: ['/critical-density', '/scale-invariance', '/gamma-regimes'],
     },
     {
-      title: 'Critical Density',
+      title: 'Reference Density (\u03C1_crit)',
       href: '/critical-density',
-      desc: '\u03C1_crit = A V_flat\u00B2: the transition point',
+      desc: '\u03C1_crit = A V_flat\u00B2: the saturation knee of C(\u03C1), a reference scale, not a transition point',
       keywords: ['density', 'critical', 'rho_crit', 'transition', 'threshold'],
       prerequisites: ['/coherence-function'],
       related: ['/gamma-parameter', '/parameter-derivations'],

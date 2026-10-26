@@ -72,7 +72,7 @@ export default function CdmDiscrimination() {
           it matches published &Lambda;CDM predictions is a separate question, and the first external number checked says it
           does not (benchmark below).
           <strong> Benchmark disclosure (2026-07-10):</strong> the &ldquo;CDM prediction&rdquo; used here is the
-          source session&apos;s own internal figure (&#x2248;0.085 dex from halo-concentration scatter, Session 610)
+          source session&apos;s own internal figure (&#x2248;0.085 dex from halo-concentration scatter, Session 610; <strong>superseded</strong> by the published Desmond 2017 benchmark below, and kept here only as provenance)
           &mdash; no external published CDM scatter estimate (semi-analytic or hydrodynamic-simulation) has been
           cited or checked against, so the CDM-consistency verdict is internally coherent but not yet anchored
           to the literature&apos;s range. <strong>External benchmark, first look (2026-10-09, after a researcher visitor

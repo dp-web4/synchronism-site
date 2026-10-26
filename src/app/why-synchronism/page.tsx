@@ -98,7 +98,15 @@ export default function WhySynchronism() {
         <p style={{ marginTop: '0.75rem' }}>
           Synchronism proposes a coherence function: <span className="equation-inline">C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))</span>.
           It takes one input (density) and returns one output (coherence: 0 = sparse/independent, 1 = dense/collective).{' '}
-          <span style={{ fontSize: '0.9em', color: 'var(--color-text-muted)' }}>⚠ &ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence — superconductors and ultra-cold atom clouds (Bose&ndash;Einstein condensates), the textbook quantum-coherent materials, score <em>low</em> on this scale (large N<sub>corr</sub> → γ→0 → flat S-curve → C≈0).</span>
+          <span style={{ fontSize: '0.9em', color: 'var(--color-text-muted)' }}>⚠ &ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence — superconductors and ultra-cold atom clouds (Bose&ndash;Einstein condensates), the textbook quantum-coherent materials, score <em>low</em> on this scale. In plain words: the formula γ&nbsp;=&nbsp;2/√N<sub>corr</sub> gives a system with <em>more</em> parts moving together a <em>flatter</em> curve, so the most collective materials score lowest. Real superconductors switch on sharply, the opposite. So the low score is not a subtle definition; it is the formula getting collective systems backwards, and it is why that formula is marked audited-negative (<Link href="/gamma-regimes" style={{ color: 'var(--color-accent-blue)' }}>γ regimes</Link>).</span>
+        </p>
+        <p style={{ color: 'var(--color-text-secondary)' }}>
+          <strong>What &ldquo;density&rdquo; means, concretely.</strong> For a galaxy, ρ is the mass of stars and gas per cubic
+          parsec at a given distance from the centre: about 0.6 M<sub>&#x2609;</sub>/pc&sup3; in the middle of a disc like NGC 3198,
+          falling outward. For a liquid or solid it is the ordinary mass (or particle) density. These are the same kind of number
+          but on wildly different scales, so each sector needs its own reference density ρ<sub>crit</sub> to compare against (see{' '}
+          <Link href="/critical-density#one-symbol-several-knees" style={{ color: 'var(--color-accent-blue)' }}>one symbol, several knees</Link>).
+          The consciousness pages do not compute C from a density at all.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>tanh</strong> is the hyperbolic tangent &mdash; an S-shaped saturation function; over

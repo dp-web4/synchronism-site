@@ -50,14 +50,14 @@ export default function Presence() {
             <h3><Link href="/gamma-parameter" style={{ color: 'inherit', textDecoration: 'none' }}>&#x03B3; — Coupling strength</Link></h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               &#x03B3; = 2/&#x221AN<sub>corr</sub>. How correlated the system&apos;s particles are.
-              Determines the sharpness of the quantum-classical transition.
+              Proposed to set how sharply C saturates (audited-negative: the N<sub>corr</sub>-dependence is inverted).
             </p>
           </div>
           <div className="card">
-            <h3><Link href="/critical-density" style={{ color: 'inherit', textDecoration: 'none' }}>&#x03C1;<sub>crit</sub> — Critical threshold</Link></h3>
+            <h3><Link href="/critical-density" style={{ color: 'inherit', textDecoration: 'none' }}>&#x03C1;<sub>crit</sub> — Reference density</Link></h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              &#x03C1;<sub>crit</sub> = A &times; V<sub>flat</sub>&#x00B2;. The transition point, unique
-              to each system, where C = tanh(&#x03B3; &middot; ln(2)) &#x2248; 0.76.
+              &#x03C1;<sub>crit</sub> = A &times; V<sub>flat</sub>&#x00B2;. The saturation knee (not a transition point), unique
+              to each system, where C = tanh(&#x03B3; &middot; ln 2): 0.88 at &#x03B3; = 2, 0.33 at &#x03B3; = 0.49.
             </p>
           </div>
           <div className="card">

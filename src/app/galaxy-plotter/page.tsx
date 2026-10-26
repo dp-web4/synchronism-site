@@ -7,51 +7,55 @@ import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
+// Observed points: SPARC rotmod files (Lelli, McGaugh & Schombert 2016), subsampled to at most 14 radii per galaxy,
+// [radius kpc, V_obs km/s, error km/s]. V_flat and R_d: SPARC Table 1 (R_d = 3.6 μm disc scale length), with two
+// exceptions noted per row. Until 2026-10-26 every row held hand-drawn approximations, and UGC 128 was entered as an
+// "LSB dwarf" with V_flat 55 km/s; it is a giant LSB disc with V_flat 129 km/s (graduate-physics simulated-visitor persona).
 const galaxies = [
   {
     name: 'DDO 154',
-    rd: 1.5, // disk scale length, kpc (representative literature value — an observed input, not a fit)
-    type: 'Dwarf irregular',
-    vflat: 47,
+    rd: 1.5, // kpc. NOT SPARC's 3.6 μm R_d (0.37): this dwarf's baryons are mostly gas, which extends far beyond the stars
+    type: 'Dwarf irregular (gas-dominated)',
+    vflat: 47, // SPARC 47.0
     points: [
-      [0.3, 10], [0.6, 18], [1.0, 25], [1.5, 32], [2.0, 37], [2.8, 41], [3.5, 44], [4.2, 46], [5.0, 47],
-    ] as [number, number][],
+      [0.49, 13.8, 1.6], [0.99, 21.6, 0.8], [1.48, 28.9, 0.7], [1.97, 34.3, 0.5], [2.47, 38.2, 0.4], [2.96, 42, 0.2], [3.46, 44.6, 0.2], [3.95, 46.3, 0.2], [4.44, 47.4, 0.3], [4.94, 48.2, 0.6], [5.43, 47.4, 0.7], [5.92, 45.5, 1.3],
+    ] as [number, number, number][],
   },
   {
     name: 'NGC 2403',
-    rd: 2.7, // disk scale length, kpc (representative literature value — an observed input, not a fit)
-    type: 'SAB(s)cd',
-    vflat: 136,
+    rd: 1.39, // kpc, SPARC Table 1
+    type: 'SAB(s)cd (high surface brightness)',
+    vflat: 131, // SPARC 131.2
     points: [
-      [0.5, 40], [1.0, 70], [2.0, 100], [3.0, 118], [4.0, 127], [5.5, 132], [7.0, 134], [9.0, 135], [11.0, 136],
-    ] as [number, number][],
-  },
-  {
-    name: 'NGC 3198',
-    rd: 3.2, // disk scale length, kpc (representative literature value — an observed input, not a fit)
-    type: 'SB(rs)c',
-    vflat: 150,
-    points: [
-      [1.0, 60], [2.0, 105], [4.0, 140], [6.0, 148], [8.0, 150], [10.0, 150], [13.0, 149], [16.0, 150], [20.0, 150],
-    ] as [number, number][],
+      [0.16, 24.5, 2.83], [0.76, 71.7, 1.25], [1.27, 83.4, 1.8], [1.87, 95.2, 1.25], [2.37, 98.2, 1], [2.98, 100, 2.69], [3.49, 107, 2.46], [4.47, 118, 5.36], [6.96, 126, 0.55], [9.94, 127, 2.56], [12.42, 132, 2.68], [15.4, 134, 0.79], [17.89, 136, 6.38], [20.87, 134, 3.12],
+    ] as [number, number, number][],
   },
   {
     name: 'UGC 128',
-    rd: 4.0, // disk scale length, kpc (representative literature value — an observed input, not a fit)
-    type: 'LSB dwarf',
-    vflat: 55,
+    rd: 5.95, // kpc, SPARC Table 1
+    type: 'Giant low-surface-brightness disc (NGC 2403\'s LSB twin)',
+    vflat: 129, // SPARC 129.3
     points: [
-      [1.0, 15], [2.0, 25], [4.0, 35], [6.0, 42], [8.0, 48], [10.0, 51], [13.0, 53], [16.0, 54], [18.0, 55],
-    ] as [number, number][],
+      [1.25, 34.1, 18.8], [6.25, 96.9, 2.44], [8.76, 108, 1.26], [13.74, 114, 0.86], [16.22, 121, 0.68], [21.3, 128, 0.63], [26.28, 129, 0.65], [28.77, 131, 0.73], [33.74, 131, 0.75], [38.82, 126, 1.4], [41.31, 130, 1.62], [46.28, 134, 2.1], [48.77, 129, 2.66], [53.75, 125, 5.95],
+    ] as [number, number, number][],
+  },
+  {
+    name: 'NGC 3198',
+    rd: 3.2, // kpc. SPARC Table 1 gives 3.14; 3.2 kept because other pages quote this disc's toy midplane density (0.6164 M☉/pc³)
+    type: 'SB(rs)c',
+    vflat: 150, // SPARC 150.1
+    points: [
+      [0.32, 24.4, 35.9], [1.28, 58.5, 15.4], [2.24, 82, 8.09], [3.54, 107, 7.51], [4.5, 119, 5.67], [5.46, 134, 2.36], [6.43, 142, 0.88], [9.04, 148, 3], [12.05, 156, 2], [18.13, 153, 2], [24.03, 150, 2], [32.14, 147, 2], [38.19, 149, 2], [44.08, 149, 3],
+    ] as [number, number, number][],
   },
   {
     name: 'NGC 7331',
-    rd: 6.5, // disk scale length, kpc (representative literature value — an observed input, not a fit)
+    rd: 5.02, // kpc, SPARC Table 1
     type: 'SA(s)b',
-    vflat: 250,
+    vflat: 239, // SPARC 239.0
     points: [
-      [1.0, 100], [2.0, 180], [4.0, 230], [6.0, 245], [8.0, 250], [10.0, 250], [13.0, 249], [16.0, 250], [20.0, 250],
-    ] as [number, number][],
+      [2.67, 221, 20], [4.27, 250, 5], [5.35, 257, 5], [7.48, 257, 5], [10.66, 247, 6], [12.83, 244, 6], [16.08, 236, 3], [19.24, 236, 3], [22.49, 240, 3], [24.57, 237, 3], [27.82, 239, 3], [30.98, 236, 4], [33.15, 239, 5], [36.31, 238, 9],
+    ] as [number, number, number][],
   },
 ];
 
@@ -288,7 +292,7 @@ export default function GalaxyPlotter() {
           with the wrong shape (floored division).
           <br />So the tool is best read not as &ldquo;the theory&apos;s prediction&rdquo; but as a
           <strong> working demonstration that the equation never switches on at its published calibration</strong>: C(&rho;)
-          stays near 0.001, so what you see is decided entirely by the wiring (nothing, a flat 3.17&times;, or ~30&times;). The
+          stays below 0.01 on every shipped disc (0.0004 on UGC 128 up to 0.008 on the compact NGC 2403), so what you see is decided entirely by the wiring (nothing, a flat 3.17&times;, or ~30&times;). The
           legend used to read &ldquo;max C on this disk: 0.001 &mdash; the equation never switches on here: this galaxy is too
           spread out&rdquo; under the quadrature curve, and &ldquo;inert by construction&rdquo; before 2026-09-25; &ldquo;inert&rdquo;
           described the display wiring, not the tested law (corrected 2026-10-08). At V<sub>flat</sub>&nbsp;=&nbsp;47&nbsp;km/s that calibration puts the knee at
@@ -300,6 +304,13 @@ export default function GalaxyPlotter() {
           that is a real tension in the comparison and not a drafting slip.
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '-0.5rem' }}>
+          <strong>Try the twin pair:</strong> NGC 2403 and UGC 128 have the same flat speed (131 vs 129 km/s) but UGC 128&apos;s
+          disc is 16&times; dimmer per unit area and 4&times; wider. This is the classic low-surface-brightness test (de Blok &amp;
+          McGaugh). MOND keys on acceleration, so it predicts the dimmer twin is more dark-matter dominated, which is what the dots
+          show. A law keyed on local density makes its own prediction for the pair. Here both discs sit on the floor, so the
+          violet line is just the gray line scaled up in both. (Observed points switched from hand-drawn approximations to real
+          SPARC rows on 2026-10-26; the UGC 128 row had been a 55 km/s curve that is not this galaxy.)
+          <br />
           Select a SPARC galaxy. The plot shows five things: what visible matter predicts (dashed gray),
           what we observe (dots), what Synchronism&apos;s equation <em>as written</em>, with the registered tests&apos; &#x03A9;<sub>m</sub> floor, gives (violet solid — it
           fails, at a calibration refuted three ways; see the red box above),
@@ -390,7 +401,7 @@ export default function GalaxyPlotter() {
           </span>
           <ul style={{ margin: '0.4rem 0 0', color: 'var(--color-text-secondary)', paddingLeft: '1.2rem' }}>
             <li><strong>Dashed gray</strong> — Newtonian prediction using visible matter only (toy exponential disk). Drops off at the edges; this is the puzzle.</li>
-            <li><strong>Dots</strong> — observed rotation velocities. Flat at large radius; doesn&apos;t drop like Newtonian says it should.</li>
+            <li><strong>Dots</strong> — observed rotation velocities from SPARC (up to 14 radii per galaxy, with their quoted errors as vertical bars; real data since 2026-10-26, hand-drawn approximations before). Flat at large radius; doesn&apos;t drop like Newtonian says it should.</li>
             <li><strong>Violet solid (division reading)</strong> — Synchronism&apos;s real C<sub>&#x03C1;</sub> at &#x03B3;=2 with the framework&apos;s asserted &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, wired as g = g<sub>bar</sub>/C<sub>f</sub> with C<sub>f</sub> = &Omega;<sub>m</sub> + (1&minus;&Omega;<sub>m</sub>)&middot;C<sub>&#x03C1;</sub>. The disk&apos;s density is thousands of times below &#x03C1;<sub>crit</sub>, so C<sub>&#x03C1;</sub> stays near zero, C<sub>f</sub> sits on the floor, and the curve is the baryon line times &radic;3.17 &asymp; 1.78 at every radius: wrong shape. <strong>Light-violet dashed (quadrature reading)</strong> &mdash; the same C<sub>&#x03C1;</sub> added in quadrature, v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C<sub>&#x03C1;</sub>)&sup2;; with C<sub>&#x03C1;</sub> &asymp; 0.001 it sits on the baryon line. <strong>This is the 2026-07-02 audit result, rendered.</strong> <em>Caveat (2026-08-05, revised same day):</em> that &ldquo;thousands of times below&rdquo; is <strong>conditional on A = 0.029</strong>, since &#x03C1;/&#x03C1;<sub>crit</sub> &#x221D; 1/A &mdash; at A = 4.6&times;10<sup>&minus;5</sup> the ratio for NGC 3198 is 0.60 and the curve would lift off the baryon line. But the 635&times; between them is a <strong>law swap, not a scale choice</strong>: universal A with &#x03C1;<sub>crit</sub> &#x221D; V&sup2; versus per-galaxy A &#x221D; R<sub>half</sub><sup>&minus;2</sup> with &#x03C1;<sub>crit</sub> &#x221D; V<sup>0.5</sup> &mdash; the two-law fork{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</Link> item 1 has documented since 2026-06-07. An earlier version of this caveat attributed the gap to an unstated coarse-graining length &#x2113;; <strong>that is withdrawn</strong> &mdash; a self-consistent &#x2113; smooths &#x03C1; and &#x03C1;<sub>crit</sub> alike and <em>cancels</em>, leaving &#x03C1;/&#x03C1;<sub>crit</sub> &#x2272; 0.019&#x03B2;<sub>J</sub>&sup2; in every sector at every &#x2113;. This plot shows the framework under its own stated law.</li>
             <li><strong>Amber dotted</strong> — shown only to illustrate what a working boost would look like; <strong>not a prediction of any theory</strong>. It is the hand-tuned tanh(radius) stand-in previously displayed, and it fits because it was drawn to fit; no &#x03C1;, &#x03C1;<sub>crit</sub>, or &#x03B3; enters it. (Recolored from violet 2026-07-23: it is an illustration, not the theory.)</li>
@@ -642,8 +653,8 @@ export default function GalaxyPlotter() {
                 tests wire it (gravity divided by C). The disk is far too thin to reach the equation&apos;s switch, so C sits on its floor and
                 the boost in gravity is the same 3.17&times; at every radius, so in speed the curve is the gray line scaled up by &radic;3.17 &asymp; 1.78&times;. It overshoots the inner points and
                 still falls at the edge, where the dots stay flat &mdash; that is the failure. This holds on every galaxy in the menu:
-                with &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;, C<sub>&#x03C1;</sub> stays at or below about 0.001 everywhere on
-                every shipped disc, so the violet curve is the floor&apos;s constant boost, never the tanh&apos;s S-shape. The tool never
+                with &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;, C<sub>&#x03C1;</sub> stays below 0.01 everywhere on
+                every shipped disc (0.0004 on UGC 128 up to 0.008 on the compact NGC 2403; &ldquo;about 0.001&rdquo; before the 2026-10-26 switch to real SPARC rows), so the violet curve is the floor&apos;s constant boost, never the tanh&apos;s S-shape. The tool never
                 exercises the curve&apos;s shape on a real galaxy, and that is the actual reason it fails. The <strong style={{ color: '#c4b5fd' }}>light violet
                 dashed line</strong> (off by default; checkbox below) is the same C wired the other way (added on top), which does nothing at all. The two wirings fail in
                 opposite directions; without the floor, the division wiring would run up to {maxRawRatio.toFixed(0)}&times; above the gray line, far off the chart.</li>
@@ -721,8 +732,11 @@ export default function GalaxyPlotter() {
             />
 
             {/* Observed data points (blue dots) */}
-            {galaxy.points.map(([r, v], i) => (
-              <circle key={i} cx={toX(r)} cy={toY(v)} r="4" fill="#38bdf8" />
+            {galaxy.points.map(([r, v, e], i) => (
+              <g key={i}>
+                <line x1={toX(r)} x2={toX(r)} y1={toY(Math.max(v - e, 0))} y2={toY(v + e)} stroke="#38bdf8" strokeWidth="1" opacity="0.6" />
+                <circle cx={toX(r)} cy={toY(v)} r="4" fill="#38bdf8" />
+              </g>
             ))}
 
             {/* Legend */}

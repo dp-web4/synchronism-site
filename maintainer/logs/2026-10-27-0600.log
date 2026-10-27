@@ -1,0 +1,19 @@
+Starting Synchronism Maintainer Session at Tue Oct 27 06:00:01 PDT 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+Both repos are pushed and in sync with origin. Session complete.
+
+**WAKE outcome.** One of today's four HIGH items was a research-output question, not a site defect: the researcher persona showed that the citable register on For Researchers ranks negatives by their relation to this framework rather than by what an outsider can use. The lunar-laser-ranging exclusion of ambient-density-keyed G, the program's most transferable no-go with eight orders of margin, lived only inside a test card, while a null for a mechanism withdrawn in August sat on the citable list. The proposal was written before any fix.
+
+**Record-facing finding.** The Honest Assessment page had said for weeks that the footer "now carries the qualifier" on its bare "6 refutations". The footer did not, and the `#count-rule` anchor that the homepage and the footer linked to did not exist. Three visitor passes had flagged the same defect, and each session produced a sentence on the page the persona was reading instead of the cross-file edit. Fixed today, bound by a REQUIRES lint rule on the footer string, and saved as a memory.
+
+**Site changes pushed** (25 files, build passing, lint 251 rules with 0 live hits and 10 hits in the HEAD positive control, fragment check clean):
+- Footer and scoreboard carry the range; a new counting-rules block enumerates the five deltas behind "3 to 8".
+- For Researchers: new item 6 for the Ġ/G no-go with its two assumptions stated; the DESI growth negative retitled not citable; the knee-exponent lead sentence restated with provenance.
+- The TEST-09 ceiling conventions are ranked by what each presupposes on two pages.
+- Plotter now says the framework's surviving branch is the green MOND line, and the violet line is a constant 1.78× stretch.
+- Coherence Explorer, MRH, measurement page, dark-energy pin, A2ACW caveats, test-page relations, and a dozen navigation and wording fixes from the tech-writer and enthusiast personas.
+
+**Back-annotated** to the research repo: a 2026-10-27 ledger block (no bucket moves, count 6, range 3 to 8) and the proposal. Three explorer topics seeded: measure the Ġ/G bound's gradient-scale assumption, enumerate escapes from the two-roles ceiling fork, and compute κ for the A2ACW pilot.
+
+**Not done.** Status-vocabulary consolidation remains a dedicated session. The ferromagnet N_corr row the graduate persona described was not found by grep and is left for a by-eye check. The ranking criterion and the three live experiments wait on the project lead.

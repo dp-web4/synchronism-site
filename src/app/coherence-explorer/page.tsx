@@ -59,10 +59,10 @@ export default function CoherenceExplorer() {
       <Breadcrumbs currentPath="/coherence-explorer" />
       <h1>Coherence Explorer</h1>
       {/* Badge added 2026-10-08 (graduate-physics visitor): the default γ = 0.49 preset is the MOND-analogue point */}
-      <ValidationBadge status="reparametrization" label="At γ = ½ this curve is MOND's simple μ (acceleration-keyed) and Λ (cosmology)" />
+      <ValidationBadge status="reparametrization" label="At γ = ½ this is a formula physics already had (MOND's, fed acceleration; ΛCDM in cosmology), not a new one" />
       <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem', maxWidth: '60ch' }}>
         <strong>What this toy is for:</strong> seeing the shape of the S-curve and what &#x03B3; does to it. It does
-        not model any real material, and the density axis has no units. <strong>One thing to try first:</strong> drag &#x03B3;
+        not model any real material, and the density axis has no units. The curve drawn is the <em>density</em> version of the equation; the opening &#x03B3; = 0.49 comes from fitting the <em>acceleration</em> version (a different function of a different variable, see the caption), so the default is illustrative here. <strong>One thing to try first:</strong> drag &#x03B3;
         from 2 down to 0.5 and watch the S flatten into a gentle ramp. That flattening is what happens when the curve is fitted
         to galaxies, and at &#x03B3; = &frac12; the ramp has exactly the shape of MOND&apos;s formula (when it is fed acceleration instead of density), which is why the galaxy fit is not a new prediction.
       </p>
@@ -243,8 +243,8 @@ export default function CoherenceExplorer() {
             />
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
               {[
-                { g: 0.046, label: 'γ = 0.046 — density version fit to real galaxies: nearly flat (SPARC, density-keyed free fit; loses at ΔBIC +2843; at SPARC densities C ≈ γx, so only γ/ρ_crit is identified)' },
-                { g: 0.49, label: 'γ = 0.49 — what real galaxies prefer, acceleration version (SPARC acceleration-keyed fit; = MOND there; killed by Cassini: 8.7σ published for the RAR-preferred MOND functions (Desmond+2024, marginalized), +17.95σ in this site\'s own unmarginalized run; illustrative on this density axis)' },
+                { g: 0.046, label: 'γ = 0.046 — density version fit to real galaxies: nearly flat (SPARC, density-keyed free fit at fixed A = 0.029 in ρ_crit = A·V²; loses at ΔBIC +2843; at SPARC densities C ≈ γx, so only γ/A is identified and 0.046 is not a measurement of γ alone)' },
+                { g: 0.49, label: 'γ = 0.49 — what real galaxies prefer, acceleration version (SPARC acceleration-keyed fit; = MOND there; killed by Cassini, a failure inherited from MOND\'s simple μ: 8.7σ published for the RAR-preferred MOND functions (Desmond+2024, marginalized), +17.95σ in this site\'s own unmarginalized run; illustrative on this density axis)' },
                 { g: 0.5, label: 'γ = ½ exactly — the same curve as MOND’s formula (MOND’s simple μ function; see note below)' },
                 { g: 2.0, label: 'γ = 2 — steep: the framework’s original guess (disfavoured on SPARC; at the threshold once galaxies are the unit)' },
               ].map(p => (

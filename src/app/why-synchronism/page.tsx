@@ -116,7 +116,7 @@ export default function WhySynchronism() {
           <strong>phenomenological</strong> choice (plain words: picked because it matches the data,
           not because a deeper theory demands it), not a derived result:
           any S-curve with the same saturation properties would fit the same data equally well.
-          (Full step-by-step breakdown: <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Walkthrough &rarr;</Link>)
+          (Full step-by-step breakdown: <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Anatomy &rarr;</Link>)
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           The parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> is meant to depend only on how many
@@ -210,7 +210,7 @@ export default function WhySynchronism() {
             <div style={{ fontSize: '0.72rem', color: 'var(--color-text-muted)', marginBottom: '0.35rem' }}>
               Badges on this page: <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Failed &middot; Reparametrization</Link>{' '}
               (definitions); text after the bar is a finding descriptor. &ldquo;89% Boundary-Consistent&rdquo; and &ldquo;Template Bias Caveat&rdquo; are
-              defined in the <Link href="/glossary#boundary-consistent" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
+              defined in the <Link href="/glossary#boundary-consistent-89" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
             </div>
             <span className="badge badge-failed" title="Registered environment-density run executed 2026-07-14 (SPARC RAR offsets vs Cosmicflows-4): r²=0.0001 vs registered >20% — refuted; the MOND+EFE tie dissolved on adjudication 2026-07-15 (levers differ ~50–5,000×), see /tier-1-existing#TEST-05">Failed | TEST-03/05 Environment Run — Refuted by Execution</span>
           </div>

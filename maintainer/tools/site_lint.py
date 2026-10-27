@@ -23,6 +23,25 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-27 (maintainer): door #3 bound "15-30 orders" (nucleons via Borexino 11C make it 15-38, explorer
+    #     2026-10-26); the /for-researchers lead's "BTFR-forced V^-2 excluded at ~10 sigma by the same measurement" (the 10 sigma is
+    #     for the Jeans-construction knee estimator, not MOND's transition density: ledger 2026-10-14); a public-page process note
+    #     that claimed the footer carried a qualifier it did not; the Key Claims legend's paraphrase of Speculative; a status baked
+    #     into a learning-path title; the MRH "predicts specific decoherence patterns" sentence (no rate, basis or environment
+    #     model); the DESI growth negative titled "Secondary" on the citable list (mechanism withdrawn 2026-08-11)
+    (r"15(&ndash;|–|-)30 orders", "2026-10-27",
+     "door #3 is excluded 15-38 orders below the natural rate once nucleons are included (Borexino 11C: D/D_Pl < 4e-39)"),
+    (r"BTFR-forced V<sup>&minus;2</sup> is excluded at ~10&sigma; by the same measurement", "2026-10-27",
+     "the ~10 sigma is for the Jeans-construction knee estimator; MOND's transition density is a different object (ledger 2026-10-14)"),
+    (r"simulated-visitor passes\s+have now flagged the footer|the footer now carries the\s+qualifier", "2026-10-27",
+     "process note claiming a footer qualifier that did not exist until 2026-10-27; keep process notes off reader-facing pages", True),
+    (r"Speculative</Link> = not yet testable", "2026-10-27",
+     "canonical wording: conceptual proposal without quantitative test (Honest Assessment)"),
+    (r"Decisive Tests: Status \(none active\)", "2026-10-27", "a status baked into a title; the label is now 'Decisive Tests (none currently running)'"),
+    (r"predicts specific decoherence patterns at the MRH boundary", "2026-10-27",
+     "no rate, basis or environment model exists; the MRH page now says so (door #3 is a direction, excluded at its natural rate)", True),
+    (r"Secondary: the DESI growth-suppression negative", "2026-10-27",
+     "the mechanism behind fsigma8 = 0.418 was withdrawn 2026-08-11; not citable, kept as a power calculation"),
     # --- retired 2026-10-26 (maintainer): TEST-26 kill worded as "requires the crossing" (the sign lock also forbids thawing;
     #     a thawing-only DR3 would kill the family without firing that text); rho_crit as "the transition point"; C's endpoints
     #     as quantum (C -> 0) / classical (C -> 1), which is backwards against degeneracy (n lambda^3 >~ 1 at HIGH density)
@@ -484,6 +503,9 @@ RETIRED = [
 # a retired-phrase list cannot catch an unqualified number, only a context requirement can.
 CONTEXT_LINES = 3
 REQUIRES = [
+    # Added 2026-10-27: the footer read a bare "6 refutations executed" while /honest-assessment claimed it carried the qualifier.
+    (r"<strong>6 refutations executed</strong>", r"3(&ndash;|–)8 under rules on file|under the current counting rule",
+     "2026-10-27", "the footer/scoreboard count must carry its range (3-8 under rules on file) on the same surface", 3),
     # Added 2026-10-24 (explorer 2026-10-23 finding): 0.086 is the residual of an in-sample photometric mass model.
     (r"0\.086(?!\d)", r"not a BTFR scatter|independent of V|not a Tully",
      "2026-10-24", "0.086 dex: say it is not a BTFR scatter / independent of V on the same surface"),

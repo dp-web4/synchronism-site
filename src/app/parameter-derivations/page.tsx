@@ -724,6 +724,7 @@ export default function ParameterDerivations() {
               <br />&bull; B<sub>max</sub> = 3.175 (1/&#x03A9;<sub>m</sub>): n = 3.35, |&#x0394;n| = 0.41 &mdash; <strong>fires</strong>
               <br />&bull; B<sub>max</sub> = 5.389 ((&#x03A9;<sub>m</sub>&minus;&#x03A9;<sub>b</sub>)/&#x03A9;<sub>b</sub>): n = 3.46, |&#x0394;n| = 0.30 &mdash; <strong>does not fire</strong> (the registered threshold is a strict &gt; 0.3; this lands on it)
               <br />&bull; B<sub>max</sub> = 6.389 (&#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub>): n = 3.49, |&#x0394;n| = 0.26 &mdash; <strong>does not fire</strong>
+              <br />What each ceiling presupposes (added 2026-10-27): 1/&#x03A9;<sub>m</sub> is the framework as written (C floored at the cosmic C<sub>0</sub> = &#x03A9;<sub>m</sub>, which contains cold dark matter); &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> is a galaxy sector that replaces dark matter, a premise the dark-energy sector cannot carry (2026-09-22). The non-firing branch is a variant whose cosmology fails.
               <br />
               Pre-fixed rule: the kill stands iff it fires under every candidate. It does not. <strong>Both
               discriminating galaxy-sector kills now rest on the same undefended choice of cosmic ratio</strong>, and

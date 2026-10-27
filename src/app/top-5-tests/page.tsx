@@ -84,6 +84,12 @@ export default function Top5Tests() {
       <Breadcrumbs currentPath="/top-5-tests" />
       <PathNav currentPath="/top-5-tests" />
       <h1>Decisive Tests: Status</h1>
+<p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', margin: '0.35rem 0 0', maxWidth: '65ch' }}>
+        <strong>How the three test pages relate</strong> (one line, added 2026-10-27): the{' '}
+        <Link href="/test-catalog" style={{ color: 'var(--color-accent-blue)' }}>Test Roadmap</Link> is the full 26-test registry;{' '}
+        <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> is its zero-cost slice with verdict cards;{' '}
+        <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>Decisive Tests</Link> is the May 2026 ranked shortlist, now empty.
+      </p>
       <ValidationBadge status="audited-negative" label="0 active discriminating tests (reviewed 2026-09-14)" />
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem' }}>
         (This page was ranked &ldquo;Top 5&rdquo; in May 2026 &mdash; hence the URL. Every ranked test has since closed or

@@ -58,7 +58,7 @@ export const learningPaths: LearningPath[] = [
       { title: 'The γ ≈ 1 Boundary', href: '/gamma-boundary' },
       { title: 'The Hard Problem: A Proposed Reframing', href: '/hard-problem' },
       { title: 'How We Handle Failure', href: '/handling-failure' },
-      { title: 'Decisive Tests: Status (none active)', href: '/top-5-tests' },
+      { title: 'Decisive Tests (none currently running)', href: '/top-5-tests' },
     ],
   },
   {

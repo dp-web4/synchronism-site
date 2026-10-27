@@ -39,7 +39,8 @@ const steps = [
     by construction. That is neither a win nor a loss; it means nothing new survives.
     In everyday terms: "predicted" means the number was fixed before looking at the data; "fitted" means a knob was
     turned until the curve matched. A fitted match is not evidence, and here the tuned knob simply lands on an older,
-    already-known theory (MOND). Matching MOND tells you the idea can reproduce MOND, not that it adds anything.`,
+    already-known theory (MOND). Matching MOND tells you the idea can reproduce MOND, not that it adds anything. MOND wrote this
+    shape down in 1983, so matching it after tuning adds nothing new.`,
     highlight: 'In short: the γ formula failed; γ = 2 loses to MOND; the fitted γ ≈ 0.5 is MOND itself.',
   },
   {
@@ -77,7 +78,8 @@ const steps = [
     it just drops below what the surroundings can tell apart from noise.)
     (See "Two Reframes" for the CRT analogy that makes this intuitive.)
     Status, in one line: an interpretation, not a failed or a winning prediction. Read as "looking doesn't disturb
-    anything", it is contradicted by experiment (the quantum Zeno effect); read as "measuring resets the system", it
+    anything", it is contradicted by experiment (the quantum Zeno effect: watching a system very frequently can freeze it in
+    place, a real measured effect, Itano et al. 1990); read as "measuring resets the system", it
     gives exactly standard quantum mechanics. It would become testable only if the framework named a scan period, and
     it hasn't.`,
     highlight: 'Measurement = MRH crossing (an interpretation; same predictions as standard QM)',

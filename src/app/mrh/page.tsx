@@ -264,8 +264,12 @@ export default function MRH() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           The MRH as a replacement for &ldquo;wave function collapse&rdquo; is the central untested
           prediction. Six experiment classes were sketched (Sessions #368-370; none carries a predicted rate, so none is a runnable protocol) but none
-          have been run. The theory predicts specific decoherence patterns at the MRH boundary
-          that should be measurable.
+          have been run. The framework asserts decoherence at the MRH boundary but supplies no rate, basis or
+          environment model, so there is nothing yet to measure (sentence replaced 2026-10-27; it read &ldquo;predicts specific
+          decoherence patterns &hellip; that should be measurable&rdquo;, which a researcher persona read against this page&apos;s
+          own zero count). The one concrete direction, intrinsic decoherence &prop; Dk&sup2; (door #3), is a direction, not a
+          registered bet, and its natural rate is already excluded by nuclear stability; see{' '}
+          <Link href="/for-researchers#distinct-content" style={{ color: 'var(--color-accent-blue)' }}>the register</Link>.
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

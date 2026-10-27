@@ -53,6 +53,12 @@ export default function TestCatalog() {
       <Breadcrumbs currentPath="/test-catalog" />
       <PathNav currentPath="/test-catalog" />
       <h1>Test Roadmap</h1>
+<p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', margin: '0.35rem 0 0', maxWidth: '65ch' }}>
+        <strong>How the three test pages relate</strong> (one line, added 2026-10-27): the{' '}
+        <Link href="/test-catalog" style={{ color: 'var(--color-accent-blue)' }}>Test Roadmap</Link> is the full 26-test registry;{' '}
+        <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> is its zero-cost slice with verdict cards;{' '}
+        <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>Decisive Tests</Link> is the May 2026 ranked shortlist, now empty.
+      </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0.25rem 0 0', maxWidth: '65ch' }}>
         <strong>26 tests</strong> (24 in the original registry + 2 added later). There is no single page-level status, so
         each test carries its own badge on its tier page. <strong>Executed and Failed:</strong> TEST-09, TEST-10, TEST-25, and
@@ -92,7 +98,7 @@ export default function TestCatalog() {
           {OPERATIONAL_STATES.join(' | ')} &mdash; what a test <em>can</em> do or what happened to it.{' '}
           <strong style={{ color: 'var(--color-text-secondary)' }}>Lifecycle verbs (not badges):</strong>{' '}
           {LIFECYCLE_VERBS.join(' | ')} &mdash; the provenance of a row.
-          Both lists are complete and rendered from one source; neither is a verdict on the claim. Retired, no longer
+          Both lists are complete and rendered from one source (Tier 1&apos;s card legend shows the smaller per-card subset of the operational states, from the same file); neither is a verdict on the claim. Retired, no longer
           assigned: {RETIRED_LABELS.map(r => r.name).join(', ')}.{' '}
           <Link href="/glossary#test-card-states" style={{ color: 'var(--color-text-muted)' }}>States used on test cards, one line each →</Link>{' '}
           <Link href="/glossary" style={{ color: 'var(--color-text-muted)' }}>Definitions (Glossary) →</Link>{' '}

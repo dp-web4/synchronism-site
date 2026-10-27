@@ -128,7 +128,7 @@ export default function DarkEnergy() {
             (k/aH)&sup2;, which is 10&#x2074;&ndash;10&#x2075; on the scales where the matter power spectrum P(k) is
             measured. <strong>Executed (explorer 2026-09-14, rule pre-registered before computing):</strong> existing P(k)
             requires <strong>|2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10&#x207B;&#x2075;</strong>, i.e. &gamma;&nbsp;=&nbsp;&frac12;
-            to within ~5&times;10&#x207B;&#x2076; &mdash; about 5,000&times; narrower than the DESI fit&apos;s 1&sigma;. At the
+            to within ~5&times;10&#x207B;&#x2076; &mdash; about 5,000&times; narrower than the DESI fit&apos;s 1&sigma;. The order of magnitude in one line (added 2026-10-27 after two personas asked where 10&#x207B;&#x2075; comes from): the gradient term enters growth as c<sub>s</sub>&sup2;(k/aH)&sup2;, and (k/aH)&sup2; &asymp; 9&times;10&#x2074; at k = 0.1 h/Mpc today, so a mode changes by order unity over the matter era once |2&gamma;&minus;1| ~ 10&#x207B;&#x2075;; the executed run gives a power ratio of 1.2 at k = 0.2 h/Mpc for |2&gamma;&minus;1| = 2&times;10&#x207B;&#x2075; and 2.7&times;10&sup2;&sup2; at k = 0.1 for the DESI-fit 0.026. At the
             DESI best fit &gamma;&nbsp;=&nbsp;0.487 the matter power is already ~10&times; &Lambda;CDM&apos;s at
             k&nbsp;=&nbsp;0.01&nbsp;h/Mpc. This is the known result for the class: fluid Cardassian models are inconsistent
             with galaxy P(k) (Amarzguioui, Elgar&oslash;y &amp; Multam&auml;ki 2005, JCAP 01, 008), as is generalized

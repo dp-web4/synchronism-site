@@ -38,8 +38,8 @@ export default function KeyClaims() {
             finding descriptor, not a separate badge; descriptors without a badge of their own appear in italics under
             it. The three badges on this page, in three words each:{' '}
             <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization</Link> = known result, new notation;{' '}
-            <Link href="/glossary#speculative-badge" style={{ color: 'var(--color-accent-blue)' }}>Speculative</Link> = not yet testable;{' '}
-            <Link href="/glossary#failed-badge" style={{ color: 'var(--color-accent-blue)' }}>Failed</Link> = tested, did not hold. Definitions:{' '}
+            <Link href="/glossary#speculative-badge" style={{ color: 'var(--color-accent-blue)' }}>Speculative</Link> = conceptual proposal without quantitative test (the canonical wording);{' '}
+            <Link href="/glossary#failed-badge" style={{ color: 'var(--color-accent-blue)' }}>Failed</Link> = tested, did not hold. &ldquo;Unfalsifiable as stated&rdquo; or &ldquo;untestable as stated&rdquo; after a dash is a descriptor saying <em>why</em> the Speculative badge applies to that claim, not a stronger sub-status. Definitions:{' '}
             <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
               /honest-assessment#validation-badge-definitions
             </Link>.

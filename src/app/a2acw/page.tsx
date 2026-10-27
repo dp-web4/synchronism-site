@@ -274,7 +274,7 @@ export default function A2ACW() {
           <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers, &ldquo;Current state&rdquo;</Link>. In short:
           <ul style={{ margin: '0.5rem 0 0', paddingLeft: '1.2rem', lineHeight: 1.6 }}>
             <li><strong>Audited claims: 0 of 9 survived</strong> (the 6 demoted claims (only 2 confirmed to have carried a &ldquo;Validated&rdquo; badge) plus the top 3 of ~47 candidates). The
-              auditors were LLM agents, not an external human expert, so this count is <em>instrument-uncalibrated</em>. The adversarial
+              auditors were LLM agents, not an external human expert, so this count is <em>instrument-uncalibrated</em> (positive control and post-cutoff arm not run; the two-rater pilot reports run-to-run agreement 0.86 and cross-vendor agreement 0.41&ndash;0.52, no &kappa;). The adversarial
               loop itself had passed all six badges; the demotions came from a later audit. With 0 of 9 the true survival rate can be as
               high as 0.34 (Clopper&ndash;Pearson, two-sided 95%).</li>
             <li><strong>Designed benchmark</strong> (positive class = &ldquo;is a reparametrization&rdquo;): 3 external reparametrizations and 6

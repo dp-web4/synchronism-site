@@ -41,6 +41,11 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/core-theory',
+        destination: '/learning-paths', // 2026-10-27: the breadcrumb section label had no page (404, tech-writer persona); the paths list the Core Theory pages
+        permanent: false,
+      },
+      {
         source: '/methodology',
         destination: '/research-philosophy',
         permanent: false,

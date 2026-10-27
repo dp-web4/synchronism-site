@@ -6,7 +6,7 @@ import ValidationBadge from '@/components/ValidationBadge';
 
 export const metadata: Metadata = {
   title: 'For Researchers: What\'s Citable',
-  description: 'Five citable negative results extracted from the failure documentation: the local-density locality no-go, dim-4 LIV naturalness gap for absolute-time substrates, the B1 CHSH check (Bell illustrated; two nonlocal construction nulls), density-keyed unidentifiability (knee above the sampled density ⇒ interpolant unmeasurable), and the globular-cluster exclusion window on density-keyed knees (L2-conditional, quoted as residuals). Plus one secondary DESI mechanism-class negative and one open question about the audit instrument (A2ACW), which is not a citable null.',
+  description: 'Six citable negative results extracted from the failure documentation: the local-density locality no-go, dim-4 LIV naturalness gap for absolute-time substrates, the B1 CHSH check (Bell illustrated; two nonlocal construction nulls), density-keyed unidentifiability (knee above the sampled density ⇒ interpolant unmeasurable), the globular-cluster exclusion window on density-keyed knees (L2-conditional, quoted as residuals), and the lunar-laser-ranging Ġ/G no-go for ambient-density-keyed G (the most transferable). Plus one DESI power calculation (mechanism withdrawn, not citable) and one open question about the audit instrument (A2ACW), which is not a citable null.',
 };
 
 export default function ForResearchers() {
@@ -88,7 +88,7 @@ export default function ForResearchers() {
                 <tr><td style={{ padding: '0.3rem' }}>Dark-energy sign lock, sign(w&#x2080;+1) = sign(w<sub>a</sub>)</td><td style={{ padding: '0.3rem' }}>Substituted Friedmann (superset of &Lambda;CDM)</td><td style={{ padding: '0.3rem' }}>Reparametrization: its kill is &Lambda;CDM&apos;s and its win is wCDM&apos;s (<Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>)</td><td style={{ padding: '0.3rem' }}>Cardassian (Freese &amp; Lewis 2002); freezing class (Caldwell &amp; Linder 2005)</td><td style={{ padding: '0.3rem' }}>DESI DR3; cannot single out the framework</td></tr>
                 <tr><td style={{ padding: '0.3rem' }}>Joint galaxy + cosmology content (one &gamma; in both sectors)</td><td style={{ padding: '0.3rem' }}>Cross-sector</td><td style={{ padding: '0.3rem' }}>None, or already excluded. The galaxy &gamma; is fitted on acceleration (C<sub>g</sub>), the cosmology &gamma; on mean density (C<sub>&rho;</sub>), so &ldquo;one &gamma;&rdquo; mixes variables, and &gamma; = 2/&radic;N<sub>corr</sub> makes &gamma; system-dependent anyway. Read as one parameter, the local-fluid P(k) pin forces &gamma; = &frac12;, the galaxy law becomes MOND&apos;s simple &mu; exactly, and TEST-25&apos;s Cassini bound already excludes that function (added 2026-10-24, researcher simulated-visitor persona; archive 2026-09-24 and 10-15)</td><td style={{ padding: '0.3rem' }}>&mdash;</td><td style={{ padding: '0.3rem' }}>None: no outcome is framework-specific</td></tr>
                 <tr><td style={{ padding: '0.3rem' }}>Non-monogamous entanglement (dimension form)</td><td style={{ padding: '0.3rem' }}>Bell sector</td><td style={{ padding: '0.3rem' }}>Gated: needs a construction that exceeds S&nbsp;=&nbsp;2 first, and none exists (<a href="#chsh" style={{ color: 'var(--color-accent-blue)' }}>&sect;CHSH</a>)</td><td style={{ padding: '0.3rem' }}>&mdash;</td><td style={{ padding: '0.3rem' }}>None until the construction exists</td></tr>
-                <tr><td style={{ padding: '0.3rem' }}>Intrinsic decoherence &prop; Dk&sup2; (door #3)</td><td style={{ padding: '0.3rem' }}>Dissipative substrate</td><td style={{ padding: '0.3rem' }}>A direction, not a registered bet; gated because the dissipative substrate cannot host matter</td><td style={{ padding: '0.3rem' }}>Collapse-model class</td><td style={{ padding: '0.3rem' }}>None registered</td></tr>
+                <tr><td style={{ padding: '0.3rem' }}>Intrinsic decoherence &prop; Dk&sup2; (door #3)</td><td style={{ padding: '0.3rem' }}>Dissipative substrate</td><td style={{ padding: '0.3rem' }}>A direction, not a registered bet; gated because the dissipative substrate cannot host matter. The diffusion is in <em>position</em> (a random displacement), not momentum, so the CSL (&lambda;, r<sub>C</sub>) exclusion plane does not apply to it; the binding bound is nuclear stability (Borexino &sup1;&sup1;C): D/D<sub>Pl</sub> &lt; 4&times;10<sup>&minus;39</sup> (explorer 2026-10-26)</td><td style={{ padding: '0.3rem' }}>Collapse-model class; the correlated-noise variant is Amelino-Camelia 1999 (Nature 398, 216), excluded with Caltech 40 m data</td><td style={{ padding: '0.3rem' }}>None winnable: with a correlation length &#x2113;, nuclei exclude &#x2113; &lt; 17 km and aLIGO &#x2113; &lt; 3&times;10<sup>7</sup> m at the natural D; the survivor is a global translation</td></tr>
               </tbody>
             </table>
           </div>
@@ -229,14 +229,22 @@ export default function ForResearchers() {
           <strong style={{ color: 'var(--color-accent-violet)' }}>Start here: negative results on density-keyed modified gravity
           (framework-independent)</strong>
           <p style={{ margin: '0.4rem 0 0.5rem' }}>
-            <strong>If you read one thing:</strong> the sign statement in item 1, then item 5 with its &#x03B3; attached, then
-            item 4. None of the three needs Synchronism to be right; each is scoped in its own card.
+            <strong>If you read one thing:</strong> item 6 (the lunar-ranging &#x0120;/G bound: framework-independent, eight orders of
+            margin, no SPARC), then the sign statement in item 1, then item 5 with its &#x03B3; attached, then
+            item 4. None of the four needs Synchronism to be right; each is scoped in its own card.
           </p>
           <ul style={{ margin: 0, paddingLeft: '1.2rem', lineHeight: 1.6 }}>
             <li>
+              <a href="#gdot-llr" style={{ color: 'var(--color-accent-blue)' }}>6. Solar-neighbourhood &#x0120;/G no-go</a>: any
+              G<sub>eff</sub> that depends on the matter density smoothed on 1&ndash;10 pc drifts as the Sun moves through its
+              neighbourhood; lunar laser ranging holds &#x0120;/G to (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> yr<sup>&minus;1</sup>, so
+              |d ln G<sub>eff</sub>/d ln &rho;| &#x2272; 10<sup>&minus;8</sup>. 68 of 74 density-keyed laws die at 1 pc (62 at 10 pc), both
+              Refracted Gravity calibrations included. Promoted from the TEST-02 card 2026-10-27 (a researcher persona asked why it was not here).
+            </li>
+            <li>
               <a href="#locality-no-go" style={{ color: 'var(--color-accent-blue)' }}>1. Local-density no-go</a>: a knee keyed
               on local volumetric density must fall as V<sup>&minus;2</sup> (BTFR-forced); the framework asserts &#x03C1;<sub>crit</sub> &prop;
-              V<sup>+2</sup>, and the measured knee has no velocity exponent (V<sup>+2</sup> excluded at ~11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap); the BTFR-forced V<sup>&minus;2</sup> is excluded at ~10&sigma; by the same measurement, exponent &minus;0.16 &plusmn; 0.19, so no velocity scaling of a density knee reproduces both the fitted knee and the BTFR &mdash; quantified 2026-10-10). Algebraic-coupling class only; gradient (symmetron-class) schemes escape. Refracted Gravity (item 5&apos;s comparison, not excluded) is outside this class for the same reason: its permittivity &epsilon;(&rho;) enters the Poisson equation under the divergence, &nabla;&middot;(&epsilon;&nabla;&Phi;) = 4&pi;G&rho;, not as a multiplier on g, so its knee is identifiable where an algebraic one is not (added 2026-09-29).
+              V<sup>+2</sup>, and the measured knee has no velocity exponent (V<sup>+2</sup> excluded at ~11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap); a V<sup>&minus;2</sup> law <em>for this knee estimator</em> is excluded at ~10&sigma; by the same regression, exponent &minus;0.16 &plusmn; 0.19; MOND&apos;s own transition density is a different object and is not tested by it. Provenance (stated 2026-10-27): the exponent is Session 53&apos;s Jeans-construction knee &#x03C1;<sub>crit</sub> &prop; V<sup>s&minus;2</sup>, with s = 1.84 &plusmn; 0.19 the forward-regression slope of SPARC Table 1 central disc surface density on V<sub>flat</sub>; neither A nor &#x03B3; is fitted, so item 4&apos;s &#x03B3;/A degeneracy does not enter &mdash; quantified 2026-10-10, restated 2026-10-14). Algebraic-coupling class only; gradient (symmetron-class) schemes escape. Refracted Gravity (item 5&apos;s comparison, not excluded) is outside this class for the same reason: its permittivity &epsilon;(&rho;) enters the Poisson equation under the divergence, &nabla;&middot;(&epsilon;&nabla;&Phi;) = 4&pi;G&rho;, not as a multiplier on g, so its knee is identifiable where an algebraic one is not (added 2026-09-29).
             </li>
             <li>
               <a href="#gc-window" style={{ color: 'var(--color-accent-blue)' }}>5. Globular-cluster exclusion window</a>: 42
@@ -951,14 +959,63 @@ export default function ForResearchers() {
           </details>
         </div>
 
-        {/* Secondary: DESI mechanism-class */}
+        {/* Artifact 6: LLR Gdot/G no-go (promoted from the Tier 1 TEST-02 card 2026-10-27) */}
+        <div id="gdot-llr" className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #38bdf8', scrollMarginTop: '5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>6. Solar-neighbourhood &#x0120;/G no-go for ambient-density-keyed G &mdash; a transferable null from lunar laser ranging</h2>
+            <ValidationBadge status="audited-negative" />
+          </div>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
+            Audited-Negative: executed 2026-09-23 (explorer; pre-registered at site commit <code>80b8c9c</code> before the script,
+            <code>density_keyed_gdot_solar_motion.py</code>). The bound does not depend on the framework. It lived only inside the{' '}
+            <Link href="/tier-1-existing#TEST-02" style={{ color: 'var(--color-accent-blue)' }}>TEST-02 card</Link> until a researcher
+            simulated-visitor persona asked (2026-10-27) why the cleanest framework-independent result on the site was not on this list.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
+            <strong>The statement.</strong> Write any law as G<sub>eff</sub> = G&middot;f(&rho;<sub>s</sub>), with &rho;<sub>s</sub> the matter
+            density smoothed on a length &#x2113;. A boost shared by everything in one volume cancels in a same-instant ratio (which is
+            why TEST-02&apos;s Gaia statistic is identically null on this branch), but not in time: the Sun moves at ~20 km/s
+            (2&times;10<sup>&minus;5</sup> pc/yr) through its neighbourhood, so
+            &#x0120;/G = (d ln f/d ln &rho;)&middot;(v<sub>&#x2609;</sub>&middot;&nabla;ln &rho;<sub>s</sub>). With a density e-fold over
+            &#x2113; = 1&ndash;10 pc the second factor is 2&times;10<sup>&minus;6</sup> to 2&times;10<sup>&minus;5</sup> yr<sup>&minus;1</sup>. Lunar
+            laser ranging gives &#x0120;/G = (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> yr<sup>&minus;1</sup> (Hofmann &amp; M&uuml;ller 2018),
+            so <strong>|d ln G<sub>eff</sub>/d ln &rho;<sub>s</sub>| &#x2272; 4&times;10<sup>&minus;9</sup> to 4&times;10<sup>&minus;8</sup></strong>
+            &mdash; eight to nine orders below an O(1) sensitivity. In the small-x regime of this framework&apos;s C, d ln C/d ln &rho; = 1,
+            so the whole gradient lands on &#x0120;/G.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>What it kills.</strong> 68 of 74 density-keyed grid laws at &#x2113; = 1 pc (62 at 10 pc), including every TEST-02
+            &ldquo;Newtonian-null&rdquo; window and both Refracted Gravity calibrations (the pointwise, non-covariant reading). The six
+            survivors are &#x03B3; = 2 laws with &rho;<sub>c</sub> &le; 10<sup>&minus;3</sup> M<sub>&#x2609;</sub>/pc&sup3;, Newtonian to
+            10<sup>&minus;8</sup> at the Sun. Even the floored published knee (&rho;<sub>crit</sub> = 0.029&middot;V&sup2; &asymp; 650
+            M<sub>&#x2609;</sub>/pc&sup3;, &#x03B3; = 2) fails: d ln C<sub>f</sub>/d ln &rho; = (1&minus;&Omega;<sub>m</sub>)&middot;&#x03B3;x/C<sub>f</sub>
+            &asymp; 7&times;10<sup>&minus;4</sup> at the solar x &asymp; 1.5&times;10<sup>&minus;4</sup>, five orders above the bound at 1 pc.
+            Under the action-derived (L3) dynamics the field equation is unchanged, so the bound carries over exactly (explorer 2026-10-19).
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Assumptions that must travel with it.</strong> (a) The smoothing length &#x2113; &isin; [1, 10] pc, which is also what
+            the wide-binary null needs (&#x2113; &#x226B; 10&#x2074; AU) and what the galaxy fits&apos; smooth profiles need (&#x2113; &#x2273; 1 pc).
+            (b) The gradient scale of &rho;<sub>s</sub> is ~&#x2113;, which holds when the discrete stellar neighbourhood is inside
+            &rho;<sub>s</sub> (nearest stars ~1 pc apart). If &rho;<sub>s</sub> is a smooth stellar-plus-halo density on &ge; 100 pc, the
+            gradient scale becomes the disc scale height and the bound weakens by ~10&sup2;, still six orders.
+            <strong> Escapes:</strong> a relaxation-time law (&tau; &#x2273; 83 Myr, which is a different, orbit-averaged law), or C as a
+            field with its own dynamics (covariant Refracted Gravity&apos;s route; that theory itself fails the same &#x0120;/G bound by
+            &ge; 900&sigma;, 2026-10-23). <strong>Scope:</strong> the archive ledger counts this as a second root of the density-keyed row,
+            not a seventh refutation; on this page the question is what an outsider can cite, and on that axis this is the cleanest item.
+          </p>
+        </div>
+
+        {/* Not citable: DESI mechanism-class (retitled 2026-10-27; mechanism withdrawn 2026-08-11) */}
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #ef4444' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>Secondary: the DESI growth-suppression negative (mechanism-class)</h2>
+            <h2 style={{ margin: 0, fontSize: '1.1rem' }}>Not citable: the DESI growth-suppression negative (mechanism withdrawn 2026-08-11; kept as a power calculation)</h2>
             <ValidationBadge status="failed" label="Disfavored 2.4σ on σ₈ (a GR-conditioned statistic); ~1.5σ on the registered fσ₈(z=0.51); underpowered as registered; post-hoc, not counted as a refutation" />
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
-            Same badge and descriptor as on 
+            <strong>Not citable (2026-10-27):</strong> the mechanism behind the 0.418 (Session 107&apos;s G<sub>local</sub>/G<sub>global</sub>)
+            was withdrawn in the archive on 2026-08-11, and the executed uniform G/C reading moves growth the other way (+21%, 2026-10-12);
+            a null for a mechanism nobody holds is not a citable negative. What remains is a power calculation: the DR2 kill branch fires
+            under 1% of the time if &Lambda;CDM is true. Same badge and descriptor as on 
             <Link href="/tier-1-existing#TEST-04a" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> and 
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>. The
             DR2 registration as adopted is no fix: its kill branch fires with under 1% probability if &Lambda;CDM is true
@@ -1036,7 +1093,7 @@ export default function ForResearchers() {
               </li>
               <li>
                 <strong>Program-level count.</strong> 3,308 sessions &rarr; ~47 internally consistent candidates. Across all
-                audited claims the count is <strong>0 of 9</strong>: the 6 demoted claims (only 2 confirmed to have carried a &ldquo;Validated&rdquo; badge) plus the top 3
+                audited claims the count is <strong>0 of 9</strong> (auditor uncalibrated: positive control and post-cutoff arm not run): the 6 demoted claims (only 2 confirmed to have carried a &ldquo;Validated&rdquo; badge) plus the top 3
                 of the ~47, swept 2026-07-03. The rest are ~47 candidates not yet individually audited, an open count rather than
                 an outcome. The adversarial loop itself passed all six badges; the demotions came from the later audit. With 0 of 9
                 the true survival rate can be as high as 0.34 (Clopper&ndash;Pearson, two-sided 95%; 0.46 on the six alone).
@@ -1143,7 +1200,7 @@ export default function ForResearchers() {
               is the <strong>program-level null result with retrospective controls</strong> (N=6 audits,
               not preregistered held-out experiments; one corpus, one framework): <strong>3,308 sessions
               produced ~47 internally-consistent candidate claims (1.4% survival rate); 9 claims were audited
-              (by LLM agents, not an outside domain expert), and 0 survived</strong>. The honest denominator is <strong>0 of 9
+              (by LLM agents, not an outside domain expert, with the positive control and post-cutoff arm not run), and 0 survived</strong>. The honest denominator is <strong>0 of 9
               audited</strong> &mdash; not &ldquo;0 across 3,308 sessions,&rdquo; which
               would overstate the number of adjudicated trials by two orders of magnitude (corrected 2026-07-09
               after two simulated-visitor personas independently flagged the site quoting this null at three different,

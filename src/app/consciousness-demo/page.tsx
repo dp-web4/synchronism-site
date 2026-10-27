@@ -132,7 +132,7 @@ export default function ConsciousnessDemo() {
         }}>
           <strong style={{ color: '#f59e0b' }}>Calibration caveat:</strong>{' '}
           C &#x2248; 0.50 is the <strong>output-range midpoint</strong> of [0, 1) &mdash; a geometric label,
-          not an <em>independently measured</em> value. The convergence of 7 approaches on a mean of 0.501 (no spread is quoted, see the note under the chart; 8 and 0.499 &#x00B1; 0.012 before 2026-10-13, which counted the phase-transition row the page says does not exist) is <strong>circular,
+          not an <em>independently measured</em> value. The convergence of 7 approaches on a mean of 0.501 (the seven: 0.50, 0.52, 0.49, 0.51, 0.50, 0.50, 0.49, listed 2026-10-27 so the mean can be checked; no spread is quoted, see the note under the chart; 8 and 0.499 &#x00B1; 0.012 before 2026-10-13, which counted the phase-transition row the page says does not exist) is <strong>circular,
           not empirical</strong>: all of them share the same framework assumptions and the same unvalidated calibration,
           and none of them measures C. Every approach that picks the midpoint of a [0,1)-bounded output range will
           land near 0.50 by construction. No calibration procedure exists to map actual EEG, fMRI,

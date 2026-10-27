@@ -139,7 +139,8 @@ export default function RootLayout({
           </p>
           <p style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             All sessions, derivations, and failures are public.{' '}
-            0 confirmed predictions; <strong>6 refutations executed</strong> (5 on external data + 1 Bell/CHSH construction check) from 5 roots:
+            0 confirmed predictions; <strong>6 refutations executed</strong> under the current counting rule (3&ndash;8 under rules on file, see the{' '}
+            <Link href="/honest-assessment#count-rule" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>counting rules</Link>; one of the six, the BTFR slope, fires only at the B<sub>max</sub> = 1/&Omega;<sub>m</sub> ceiling) (5 on external data + 1 Bell/CHSH construction check) from 5 roots:
             2 framework-specific mechanism roots (boost ceiling, &#x03B3;=2 pin) + 1 refuted registration (environment
             amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell&apos;s theorem; two nonlocal constructions null)
             (RAR shape, BTFR slope, dwarf DM fractions, environment null, Cassini/SPARC squeeze, Bell/CHSH substrate &mdash; recounted 2026-07-30, roots split 2026-09-05, exact independent count gates on the archive;{' '}

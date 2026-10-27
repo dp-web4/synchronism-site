@@ -291,7 +291,7 @@ export default function ResearchPhilosophy() {
           3,308 A2ACW sessions have been run across the research archive. Of these, approximately
           47 produced internal-consistency survivors &mdash; a 1.4% session yield. <strong>Across all
           audited claims, 0 of 9 survived</strong> (the 6 demoted claims (only 2 confirmed to have carried a &ldquo;Validated&rdquo; badge) plus the top 3 of the ~47,
-          swept 2026-07-03); each resolved as a reparametrization of known physics, an internal-consistency finding, or a null
+          swept 2026-07-03; auditor uncalibrated: positive control and post-cutoff arm not run); each resolved as a reparametrization of known physics, an internal-consistency finding, or a null
           result. The rest are ~47 candidates not yet individually audited &mdash; an open count, not an outcome (see{' '}
           <a href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</a>{' '}
           for the audited-vs-pending breakdown). <strong>Who audited:</strong> LLM agents, not an external human domain

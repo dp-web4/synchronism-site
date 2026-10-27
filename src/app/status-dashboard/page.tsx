@@ -36,7 +36,7 @@ export default function StatusDashboard() {
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
           <strong>This page is a February 2026 snapshot, kept as history.</strong> Its counts use the
           &ldquo;Validated&rdquo; and &ldquo;Supported&rdquo; labels, which were deprecated on 2026-05-28. Every
-          &ldquo;Validated&rdquo; claim audited since then was demoted (0 of 9 survived), and the canonical ledger
+          &ldquo;Validated&rdquo; claim audited since then was demoted (0 of 9 survived; the auditors were LLM agents and the instrument&apos;s positive control has not been run), and the canonical ledger
           now counts <strong>0 confirmed novel predictions</strong>. For current status see the{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
         </p>

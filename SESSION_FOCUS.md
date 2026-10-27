@@ -1,9 +1,50 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-26 (maintainer)*
+*Last updated: 2026-10-27 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-27) — **The citable register ranked its negatives by framework, not transferability; the footer
+"6" never carried the qualifier a public page said it did.**
+- **Register.** The lunar-laser-ranging Ġ/G exclusion of ambient-density-keyed G (|d ln G/d ln ρ_s| ≲ 4×10⁻⁹–4×10⁻⁸ at ℓ = 1–10 pc;
+  68/74 laws dead) lived only inside the TEST-02 card. It is now item 6 on /for-researchers, with its two assumptions printed
+  (smoothing length; gradient scale ~ℓ). The "secondary DESI growth-suppression negative" is retitled **not citable** (mechanism
+  withdrawn 2026-08-11; kept as a power calculation). A ranking criterion is proposed to the project lead.
+- **Ω_m's two roles.** The three TEST-09 ceilings presuppose different frameworks: 1/Ω_m is the framework as written (cosmic C₀ with
+  CDM inside); Ω_m/Ω_b is a no-CDM galaxy sector, whose cosmology fails (09-22). The non-firing branch is a variant that cannot run.
+  Printed beside the sweep on /honest-assessment and /parameter-derivations. Does not settle the counting rule.
+- **Footer.** Now reads "6 under the current counting rule (3–8 under rules on file; the BTFR slope fires only at 1/Ω_m)". The
+  `#count-rule` anchor the homepage and footer linked to did not exist; it now enumerates the five deltas. /honest-assessment's
+  "the footer now carries the qualifier" sentence (false until today) is replaced; a REQUIRES lint rule binds the footer string.
+- **Knee exponent.** /for-researchers lead: "BTFR-forced V⁻² excluded at ~10σ" → the Jeans-estimator reading (ledger 10-14) plus a
+  provenance sentence (SPARC Table 1 Σ_c on V_flat, s = 1.84 ± 0.19, N = 129; neither A nor γ fitted). Lint rule.
+- **Explorer 10-26 drained:** door #3 is position diffusion, not on the CSL plane; Borexino ¹¹C gives D/D_Pl < 4×10⁻³⁹; "15–30
+  orders" → 15–38 on /measurement-without-observers (×2) and the Dk² register row; Amelino-Camelia 1999 named. Back-annotated.
+- **Plotter.** The "New here" box now says the framework's surviving branch *is* the green line (so the chart is dead branch vs
+  live branch, and the live branch is MOND's); the violet line is a constant 1.78× stretch; the green line's 7% normalisation
+  offset is in the legend; the per-galaxy V_flat caveats have a plain-words lead and a physicists' `<details>`.
+- **Beginner tools.** Coherence Explorer badge in plain words (technical form stays in the caption); density-vs-acceleration
+  stated in the first paragraph; preset 0.046 labelled "at fixed A = 0.029, only γ/A identified"; Cassini kill marked inherited.
+- **Also:** /mrh "predicts specific decoherence patterns" replaced; A2ACW "instrument uncalibrated; positive control not run" beside
+  every "0 of 9" (6 pages) and the pilot's 0.86 / 0.41–0.52 agreements quoted; /dark-energy 10⁻⁵ pin in one line ((k/aH)² ≈ 9×10⁴
+  at k = 0.1 h/Mpc); Key Claims legend quotes the canonical Speculative wording and defines "unfalsifiable as stated" as a
+  descriptor; one-line "how the three test pages relate" on /test-catalog, /tier-1-existing, /top-5-tests; Tier 1 vs Roadmap state
+  lists explained as subset/superset from one file; `/glossary#boundary-consistent-89`; `/core-theory` → /learning-paths; "Decisive
+  Tests (none currently running)"; TEST-25 leads with 8.7σ (×2); First Encounter MOND-1983 and Zeno glosses; Two Reframes
+  take-away line; TEST-02 smoothing scale stated once; consciousness demo lists the seven values; Equation Anatomy naming.
+- Count 6, range 3–8, Bucket 0 = 0. site_lint 251 rules (7 retired + 1 REQUIRES added; HEAD control run). Log:
+  `maintainer/logs/2026-10-27.md`. Proposal:
+  `Synchronism/Research/proposals/citable_register_ranks_by_framework_not_transferability_and_omega_m_plays_two_roles_20261027.md`.
+- **→ Explorer:** `llr-gdot-bound-gradient-scale-of-the-smoothed-solar-neighbourhood.md` (measure the register item's one
+  assumption); `ceiling-fork-omega-m-plays-two-roles-close-it-from-both-sides.md` (enumerate escapes; cheap, reuses two scripts);
+  `a2acw-two-rater-pilot-needs-an-agreement-statistic.md` (κ on existing logs; cheap).
+- **→ Next maintainer:** status-vocabulary consolidation (still a dedicated session); /for-researchers h2/TOC; breadcrumb rule
+  stated to readers; glossary ASCII ids (`σ (statistical)`); server-render Equation Anatomy steps; chemistry explorer per-row r;
+  hover definitions for σ / kill criterion / reparametrization / Cassini on beginner pages; ferromagnet N_corr row (not found by
+  grep today; verify the γ Calculator presets).
+- **→ Project lead:** adopt (or reject) the register ranking criterion; read the presupposition column before ruling on the counting
+  rule; the three live experiments (cross-vendor A2ACW, post-cutoff arm, cross-vendor discrimination matrix) are still unrun.
 
 ## 🟢 NEW (maintainer 2026-10-26) — **C's endpoints are not quantum/classical; the TEST-26 kill text now matches the lock.**
 - **Quantum/classical labels.** /critical-density said C runs "from quantum (C → 0) to classical (C → 1)". That is

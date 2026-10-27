@@ -144,8 +144,8 @@ export default function MeasurementWithoutObservers() {
               boundary whose sharpness depends on N<sub>corr</sub>, it is a collapse-class hypothesis and must face existing
               bounds on spontaneous-collapse models &mdash; underground X-ray limits on CSL/Di&oacute;si&ndash;Penrose
               (Donadi et al. 2021) and large-molecule interferometry (Fein et al. 2019, ~25&nbsp;kDa). For a Planck-scale diffusion rate neither is the binding bound: the matter-stability
-              limit further down this page (heating of bound hydrogen) already puts the allowed rate 15&ndash;30 orders below the natural
-              value, and it supersedes both. The X-ray and
+              limit further down this page (heating of bound hydrogen) already puts the allowed rate 15&ndash;38 orders below the natural
+              value (electrons via the heat budget, 15&ndash;30; nucleons via Borexino&apos;s &sup1;&sup1;C rate, D/D<sub>Pl</sub> &lt; 4&times;10<sup>&minus;39</sup>, explorer 2026-10-26), and it supersedes both. Door #3&apos;s diffusion is in position, not momentum, so the CSL (&lambda;, r<sub>C</sub>) exclusion plot (LISA Pathfinder, cantilevers, X-rays; Carlesso et al. 2022, Nat. Phys. 18, 243) does not apply to it. With a correlation length &#x2113; added, nuclei exclude small &#x2113; and gravitational-wave interferometers exclude large &#x2113;; at the natural D only &#x2113; &#x2273; 3&times;10<sup>7</sup> m survives, indistinguishable from a global translation. That regime is Amelino-Camelia&apos;s 1999 random-walk model (Nature 398, 216), excluded with Caltech 40 m data. The X-ray and
               interferometry comparisons would matter only for a rate that survives it, and no such rate has been specified. (Until
               2026-10-04 this sentence read &ldquo;Neither confrontation has been done&rdquo;, beside that bound.) (Row wording corrected 2026-09-15 after a researcher visitor flagged &ldquo;derived from &#x03B3;&rdquo;.)
             </p>
@@ -197,7 +197,7 @@ export default function MeasurementWithoutObservers() {
           decoherence timescales, and how sharply C saturates, with no rung of the N<sub>corr</sub> ladder anchored to
           an apparatus. The one rate the framework&apos;s own substrate suggests, intrinsic decoherence from Planck-scale diffusion, was checked
           against the heat budget of ordinary matter (explorer, 2026-09-27): at that diffusion constant a hydrogen atom would be heated at
-          2&times;10⁻⁴ eV/s, so the bound-state limit is 15&ndash;30 orders of magnitude below the natural value (prior art: Pearle &amp; Squires 1994;
+          2&times;10⁻⁴ eV/s, so the bound-state limit is 15&ndash;38 orders of magnitude below the natural value (15&ndash;30 from electrons via that heat budget; 15&ndash;38 once nucleons are included through Borexino&apos;s &sup1;&sup1;C rate, D/D<sub>Pl</sub> &lt; 4&times;10<sup>&minus;39</sup>, explorer 2026-10-26; prior art: Pearle &amp; Squires 1994;
           Donadi et al. 2021), which is where CSL and Di&oacute;si&ndash;Penrose bounds bite. This is the same logic used to bound collapse models: GRW/CSL predict spontaneous heating of matter, and the absence of that heating limits their rates (see Bassi et al. 2013, Rev. Mod. Phys. 85, 471). Any rate assigned here inherits those bounds.
         </p>
 

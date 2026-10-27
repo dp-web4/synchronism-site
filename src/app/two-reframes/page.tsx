@@ -11,6 +11,12 @@ export default function TwoReframes() {
       <Breadcrumbs currentPath="/two-reframes" />
       <h1>Two Reframes</h1>
       <ValidationBadge status="speculative" label="Conceptual Framework" />
+      <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.92rem', marginTop: '0.6rem', maxWidth: '65ch' }}>
+        <strong>Take-away first:</strong> use the two pictures for intuition. The literal version of the CRT picture (measurement
+        as non-invasive sampling) was tested against existing data and failed; the pendulum picture has no discriminating test left
+        (every clock mechanism dilates alike). The page explains both, which is why it spends more words on the failures than on
+        the pictures. (Line added 2026-10-27; a first-time visitor could not tell whether to keep the pictures or drop them.)
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginBottom: '1rem', borderLeft: '2px solid rgba(148,163,184,0.3)', paddingLeft: '0.75rem' }}>

@@ -1,0 +1,35 @@
+Starting Synchronism Maintainer Session at Thu Oct 29 06:00:01 PDT 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+Today's maintainer session is done and pushed: site commit `98ff8d6` and research repo commit `c13237c6`. The build passes with no warnings, the anchor check shows 0 broken links, and the lint is clean on the working tree. As a control, the same lint finds 9 hits on HEAD before today's changes. Yesterday's maintainer run and the 10-27 and 10-28 explorer runs all stopped on usage limits, so there were no new explorer findings to process.
+
+**WAKE (does the feedback point at the research, not just the site?):** yes, one thing. The site already says the refutation count runs from 3 to 8 depending on the counting rule. Three rows stay under every rule: TEST-10 (the dwarf dark-matter cap), the environment run, and Bell/CHSH. Of those, only TEST-10 is a refutation of the framework's own content on data. The environment run refutes a registered amplitude the equation never predicted, and Bell/CHSH is a construction check, not data. TEST-10's rotation-curve part that holds for any stellar mass-to-light ratio rests on two gas-dominated galaxies, NGC 3741 and ESO 444-G084; weak lensing excludes the cap separately. I wrote this up as a proposal and a PREDICTIONS.md block; no buckets move.
+
+**Site fixes:**
+- **Count bookkeeping.** Working out that floor turned up two errors on the site:
+  - The Honest Assessment box said TEST-10 fires only under the site's choice of cap. That is true of TEST-09 only; TEST-10 fires under every candidate cap.
+  - The ledger marked TEST-25 "convention: None" while the counting rule subtracts it under galaxy-level scoring.
+  - I fixed both, named the floor's three rows on Honest Assessment, and removed a duplicate `#count-rule` anchor.
+- **a₀(z):** now stated the same way on three pages. The framework's a₀ = cH(z)/2π implies n = 1, and that form was already in the literature as cosmologically coupled MOND. The "5σ" exclusion of constant a₀ is measured with the normalisation free. It comes from redshift bins read off a figure, with error bars taken as 1σ. It is Ciocan et al.'s own result, not an in-house test of MOND.
+- **Equation Anatomy:** two new steps. One shows how C couples to gravity (g = g_bar/C). The other shows what the equation becomes at γ = ½: MOND's simple interpolating function in galaxies and Λ in cosmology.
+- **Galaxy plotter:** implemented the exact thin-disk baryon curve (Freeman 1970), which the page had listed as queued since 07-17. I checked it against scipy in Python and against the TypeScript port. The old spherical approximation ran 14–16% low near the peak. The page now also says plainly that the only version that fits the dots is MOND's formula.
+- **Smaller changes:**
+  - Key Claims cards rewritten as "proposed" instead of stated as fact.
+  - TEST-04a now has the same status on every page.
+  - TEST-26 shows DESI DR2's 2.8–4.2σ preference, and TEST-02 cites Banik+2024 and Chae. I read all three abstracts today; DR2's central w₀, wₐ values are still unread.
+  - Beginner pages got a plain explanation of ln, a definition of "knee", and a fixed γ starting value.
+  - New glossary entry for "surviving branch".
+  - Seven new lint rules retire today's corrected wordings (258 rules in total).
+
+**Not changed:** Two persona claims were partly wrong. NGC 2915 depends on the assumed mass-to-light ratio at the most permissive cap, and the 5σ is not a confidence-interval mistake. The "no search box" and "/why-synchronism is too long" complaints are mostly artefacts of the visitor's fetch tool, which doesn't show input boxes and expands folded sections; the technical part of /why-synchronism is already in a collapsible section.
+
+**Deferred:**
+- The technical writer's top item: moving the dated, inline revision notes (79 on /honest-assessment alone) into collapsed notes. It needs its own session.
+- Shortening the footer.
+- Making the Test Roadmap's name, URL and breadcrumbs agree.
+
+**Next:**
+- **For you:** whether to print "3 under every rule, 1 of them a data refutation of the framework's own content" beside the count.
+- **For the explorer:** a cheap test with an unknown outcome. Propagate distance and inclination errors for the two galaxies that carry TEST-10.
+
+I hit one hestia deny when I chained an `rm` of `/tmp` into a longer command. Running the `rm` on its own worked; the mistake was mine, not a problem with the rule.

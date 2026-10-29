@@ -1,0 +1,30 @@
+Starting Synchronism Explorer Session at Thu Oct 29 08:00:01 PDT 2026
+TEST-10's rotation-curve exclusion holds up once SPARC's distance, inclination and M/L errors are propagated. TEST-10 is the one row in the count floor that refutes the framework's own content on data. What it actually depends on is the gas census, not those error bars.
+
+I worked the topic the maintainer pointed to (`test10-robust-half-…`), because it carries the site's minimum claim and a researcher persona asked it directly: "is the robust exclusion one galaxy or many?" I pre-registered the test (commit d38045c) before running it. In WAKE I added a gas-mass nuisance to the registration, in case the binding uncertainty wasn't distance or inclination. It turned out to be the gas.
+
+**Results at the permissive cap B ≤ 6.39** (fitting each galaxy with distance, inclination, M/L and gas free under their priors):
+- **NGC 3741:** distance and inclination barely matter (χ² = 82 with those plus M/L free). Allowing the gas mass to vary drops it to χ² = 9.5, and doubling its gas would remove the exclusion.
+- **ESO 444-G084:** it falls to 1.65σ once its 32 ± 6° inclination is propagated. The ledger's "M/L-free pair NGC 3741 / ESO 444-G084" is half wrong.
+- **NGC 2915:** the site calls it "M/L-conditional", but escaping needs M/L ≥ 2.2 at 3.6 μm, about 6σ above the prior. It is the most robust galaxy once all the uncertainties are combined.
+- **Count:** of the 28 face-value exceeders, 6 survive at 2σ and 3 at 3σ or more (NGC 2915, NGC 3741, UGC 06667). Three more galaxies that pass at the outer radii fail further in.
+- **Predictions:** two of three confirmed and one half confirmed; ESO 444-G084 survives narrowly when gas is held fixed.
+
+**Follow-up (not pre-registered; rule fixed in the script before running):** the escape that remains is extra unseen gas, a factor of 2–3 proposed in the literature (Pfenniger & Revaz 2005). If such gas were the same for every galaxy, gas-rich galaxies would sit off the baryonic Tully–Fisher relation. They don't: the extra gas is limited to ×1.25 or less at M/L 0.5 and ×1.75 or less at 0.7 (95% galaxy bootstrap). So saving NGC 3741 would need about ×2 gas and M/L ≳ 0.8 at the same time, and NGC 2915's ×3.1 is excluded at every defensible M/L. The only escape left is hidden gas that differs from galaxy to galaxy.
+
+**For the maintainer:** the finding has replacement wording for the TEST-10 card and the count-floor box on /honest-assessment. That includes dropping the "upper bounds on significance" caveat, since distance and inclination are now propagated. The literature citations come from search summaries, not full papers, and I didn't get Gentile+2007's own gas factor for NGC 3741.
+
+I committed and pushed (0b8a7b5), archived the topic, and saved one memory: report the actual M/L or gas value needed before calling a result "conditional".
+
+Files are in `explorer/`:
+- findings/test10-floor-survives-distance-and-inclination-binds-on-the-gas-census.md
+- scripts/test10_full_error_propagation_PREREG.md
+- scripts/test10_full_error_propagation.py
+- scripts/test10_full_error_propagation_supp.py
+- scripts/btfr_gas_scaling_allowed_c.py
+- logs/2026-10-29.md
+
+Sources:
+- [Gentile et al. 2007, NGC 3741](https://arxiv.org/abs/astro-ph/0611355)
+- [Pfenniger & Revaz 2005](https://arxiv.org/abs/astro-ph/0409621)
+- [Begum et al. 2008](https://arxiv.org/pdf/0801.3606)

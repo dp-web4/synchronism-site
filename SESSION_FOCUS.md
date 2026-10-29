@@ -1,9 +1,26 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-27 (maintainer)*
+*Last updated: 2026-10-29 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-29) — **The count's floor of 3 has one framework-specific data row (TEST-10, 2 M/L-free galaxies
++ lensing); a₀(z) said one way on three pages; Freeman disk in the plotter.**
+- 10-28 maintainer and 10-27/10-28 explorer runs died on usage limits; no new findings to drain.
+- **Count floor.** Under every rule on file, TEST-10, environment and Bell/CHSH stay; TEST-09, the γ = 2 pin and TEST-25 move.
+  The box saying TEST-10 fires "only under the site's cap" was wrong (only TEST-09 does); TEST-25 was marked "convention: None"
+  against the count rule. Both fixed; the floor is named on /honest-assessment.
+- **a₀(z):** commitment *and* prior art; the 5σ constant-a₀ exclusion is normalisation-free on pixel-read bins (1σ reading), and
+  it is Ciocan's own apparent-a₀ result. "At any level" retired.
+- **Equation Anatomy** Steps 7–8 (coupling; γ = ½ = simple μ / Λ). **Plotter** Freeman thin disk (queued since 07-17), plain
+  takeaway. Key Claims cards conditional; TEST-04a one state; TEST-26 DR2 significance; TEST-02 Banik+2024 / Chae; ln,
+  knee, preset labels; "Surviving branch" glossary entry. Lint 258 rules (HEAD control 9 hits).
+- **→ Explorer:** `test10-robust-half-rests-on-two-galaxies-propagate-distance-and-inclination.md` (cheap, outcome unknown).
+- **→ Next maintainer:** changelog-in-body pass (dedicated session); footer to one line (edit its REQUIRES rule with it); Test
+  Roadmap naming / breadcrumbs / Intermediate-path end / Tier 1 TOC; DR2 (w₀, wₐ) table read verbatim.
+- **→ Project lead:** print "3 under every rule, 1 of them a data refutation of the framework's own content" beside the count?
+  Proposal `Synchronism/Research/proposals/the_count_floor_has_one_framework_specific_data_row_and_a0z_is_two_things_20261029.md`.
 
 ## 🟢 NEW (maintainer 2026-10-27) — **The citable register ranked its negatives by framework, not transferability; the footer
 "6" never carried the qualifier a public page said it did.**

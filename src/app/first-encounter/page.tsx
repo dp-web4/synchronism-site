@@ -17,6 +17,7 @@ const steps = [
     content: `Feed that density into: C(ρ) = tanh(γ · ln(ρ/ρ_crit + 1)).
     What tanh does, in plain words: it is an S-shaped curve, like a dimmer switch — flat at first, then rising,
     then levelling off near 1. Feed it a small number and it outputs nearly 0; feed it a large number and it outputs nearly 1, with no abrupt jump.
+    What ln does, in plain words: it squashes huge ranges, so 10×, 100× and 1000× the reference density become evenly spaced steps (about 2.3, 4.6 and 6.9). That lets one dimmer switch cover densities that differ by many factors of ten.
     Out comes a number between 0 and 1. Zero means sparse and independent — few neighbors, each element acting on its own.
     One means dense and collective — everything interacting, behavior dominated by the crowd.
     (Note: in this framework C measures density-driven collective ordering, not quantum phase coherence — quantum systems like superconductors land at low C.)`,

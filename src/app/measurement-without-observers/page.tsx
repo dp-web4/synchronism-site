@@ -91,6 +91,12 @@ export default function MeasurementWithoutObservers() {
           Correlations that were &ldquo;inside&rdquo; the horizon are now &ldquo;outside&rdquo; it.
           The system has crossed the MRH boundary. That crossing is what we call measurement.
         </p>
+        <p style={{ color: '#f87171', fontSize: '0.85rem', borderLeft: '2px solid #f87171', paddingLeft: '0.6rem' }}>
+          <strong>This chain runs through an audited-negative relation.</strong> The middle arrow is &#x03B3; = 2/&#x221A;N<sub>corr</sub>,
+          whose sign is inverted against real finite-size physics (more correlated systems have <em>sharper</em> transitions) and whose
+          N<sub>corr</sub> ladder has no anchored rungs. Read the paragraph above as the story the framework tells, not as a mechanism
+          that has survived its own audit; the next paragraph asks whether the direction survives the sign correction.
+        </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           <strong>Does the direction survive the sign correction? (added 2026-10-18, simulated-visitor researcher persona)</strong>{' '}
           No, not on its own. The chain has two steps, and neither is derived: N<sub>corr</sub>&nbsp;&rarr;&nbsp;&#x03B3; (audited as

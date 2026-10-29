@@ -460,7 +460,7 @@ export default function ParameterDerivations() {
               </table>
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              Constant a&#x2080; is excluded by Ciocan&apos;s bins at any level (5&#x03C3;). n = 1 lies between the
+              With the normalisation free, constant a&#x2080; (n = 0) is excluded by the bins at about 5&#x03C3; (bars pixel-read from Ciocan&apos;s Fig. 3, which prints no CI level, and read as 1&#x03C3;; about 10&#x03C3; if they are 95%). That is Ciocan&apos;s own headline, an <em>apparent</em> a&#x2080; rising with z. It is not an in-house test of MOND, and it shares the degeneracy with a redshift drift in stellar M/L, gas fraction or pressure-support correction. n = 1 lies between the
               paper&apos;s two estimators, which disagree with each other at 3&#x03C3; (the bins exclude n = 1 at
               2.1&#x03C3;; the global line sits above it). &Lambda;CDM+baryons sits at n &asymp; 1 too, so nothing here
               selects the framework. The row is <strong>estimator-dominated; the anchor does not enter the

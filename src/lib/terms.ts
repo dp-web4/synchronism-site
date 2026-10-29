@@ -595,6 +595,13 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'Text such as “raised by a simulated-visitor researcher persona” means the point came from that automated pass, not from a human physicist or an external referee. The passes are useful because they read the live site cold, and many corrections on this site started there, but they carry no outside authority: every point they raise is checked against the source before anything changes, and several have been wrong. No outside physicist has reviewed this site. (Entry added 2026-10-13, after a simulated visitor found older wording such as “a visiting researcher pointed it out” and “external-reviewer pass” that read as outside peer review.)',
     learnMore: '/research-philosophy',
   },
+  'surviving-branch': {
+    term: 'Surviving branch',
+    fullName: 'Surviving branch / live branch (the version of the equation not yet refuted)',
+    brief: 'The one version of the framework’s galaxy equation that still fits the data: C keyed on acceleration, with γ fitted to about ½. At γ = ½ that version is exactly MOND’s “simple” interpolating function, so the surviving branch is MOND written differently.',
+    explanation: 'The equation C = tanh(γ ln(1 + x)) can be fed different inputs (density, or acceleration) and can be used with γ pinned at 2 or fitted. Each choice is a “branch”. The density-keyed branch and the γ = 2 pin failed their tests. The branch that survives is the acceleration-keyed one with γ fitted, and it lands on γ ≈ ½, where the equation is identically MOND’s simple μ (and, keyed on mean cosmic density, identically Λ). “Surviving” therefore means “not refuted”, not “distinct from MOND”.',
+    learnMore: '/galaxy-rotation',
+  },
   'dp': {
     term: 'dp',
     fullName: 'The project lead (github.com/dp-web4)',

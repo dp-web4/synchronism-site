@@ -23,6 +23,26 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-29 (maintainer): "constant a0 excluded at any level (5 sigma)" (ambiguous: "level" meant normalisation,
+    #     read as CI level; the bins are pixel-read and the exclusion is Ciocan's own apparent-a0 result); the bare "a0 derivation
+    #     within 13%" bullet under a Failed card; Key Claims' declaratives under Failed/Speculative badges; the "Not: Just notation"
+    #     heading that contradicted "MOND in different notation"; TEST-04a's "DISFAVORED 2.4 sigma" status on Decisive Tests
+    #     (Tier 1 says Underpowered as Registered); the plotter's queued-Bessel note (implemented today); the "Two of them fired
+    #     only under the site's choice of cap" sentence (true for TEST-09, false for TEST-10)
+    (r"excluded by (Ciocan&apos;s bins|the bins) at any level", "2026-10-29",
+     "ambiguous 'at any level' (normalisation, not CI level); state 'with the normalisation free', the bar convention and that it is Ciocan's own apparent-a0 result", False),
+    (r"a&#x2080; derivation within 13%", "2026-10-29",
+     "a0 = cH0/2pi is Milgrom's coincidence, not a derivation", False),
+    (r"it&apos;s the coherence gradient at the\s+transition|are not mysterious\. They are synchronization phenomena", "2026-10-29",
+     "mechanism stated as fact under a Failed/Speculative badge; write it as 'proposed'", False),
+    (r"claim: 'Just notation'|claim: 'Just philosophy'", "2026-10-29",
+     "list-of-disclaimers heading that reads as a defence; the fitted equations ARE notation", False),
+    (r"DISFAVORED 2\.4σ on σ₈", "2026-10-29",
+     "TEST-04a's state is Underpowered as Registered on every page; the 2.4 sigma is a GR-conditioned sigma8 statistic", False),
+    (r"a Bessel-function implementation is queued", "2026-10-29",
+     "the Freeman thin-disk curve was implemented 2026-10-29", False),
+    (r"fired on galaxy rotation data only under the site&apos;s choice of cap", "2026-10-29",
+     "TEST-10 fires under every candidate cap on rotation curves (2 galaxies M/L-unconditionally at 6.39); only TEST-09 is cap-dependent", False),
     # --- retired 2026-10-27 (maintainer): door #3 bound "15-30 orders" (nucleons via Borexino 11C make it 15-38, explorer
     #     2026-10-26); the /for-researchers lead's "BTFR-forced V^-2 excluded at ~10 sigma by the same measurement" (the 10 sigma is
     #     for the Jeans-construction knee estimator, not MOND's transition density: ledger 2026-10-14); a public-page process note

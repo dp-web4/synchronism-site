@@ -56,7 +56,7 @@ export const COUNT_MAP_SENTENCE =
  * (graduate simulated-visitor persona). It moves with the γ = 2 pin under one convention, so the two are not independent.
  */
 export const COUNT_RULE_SENTENCE =
-  'The 6 is not rule-free. It is the count under the rule the site uses today (a stated failure condition, actually executed, fired as registered). Rules already on file move it: a 2σ significance rule drops TEST-09 (−1); with each galaxy counted once the γ = 2 pin sits at the threshold (−1 if "at the threshold" does not count), and under that same convention the in-house intersection of TEST-25 is no longer empty (γ ≈ 1.5–1.7 survives both; −1); the executed-and-excluded uniform growth reading meets the current rule but is not counted because no archive document asserted it (+1); a point-estimate rule adds TEST-04a, on a withdrawn mechanism (+1). So 3 to 8, depending on rules the project lead has not yet chosen, with at most 5 independent. Routes that re-kill a branch already refuted (lunar laser ranging, the Oort limit at the published knee) are second roots for an existing row, not new rows.';
+  'The 6 is not rule-free. It is the count under the rule the site uses today (a stated failure condition, actually executed, fired as registered). Rules already on file move it: a 2σ significance rule drops TEST-09 (−1); with each galaxy counted once the γ = 2 pin sits at the threshold (−1 if "at the threshold" does not count), and under that same convention the in-house intersection of TEST-25 is no longer empty (γ ≈ 1.5–1.7 survives both; −1); the executed-and-excluded uniform growth reading meets the current rule but is not counted because no archive document asserted it (+1); a point-estimate rule adds TEST-04a, on a withdrawn mechanism (+1). So 3 to 8, depending on rules the project lead has not yet chosen, with at most 5 independent. Under every rule on file three rows stay: #2 (dwarf dark-matter fractions), #4 (the environment run) and #6 (Bell/CHSH, a construction check rather than data). Three move with the rule: #1, #3 and #5. In plain words, the count varies because some failures are close calls (does a result at the threshold count?) and some share a cause (count once or twice?). Routes that re-kill a branch already refuted (lunar laser ranging, the Oort limit at the published knee) are second roots for an existing row, not new rows.';
 
 /** Sentence rewritten 2026-09-14: the old form ("6 executed refutations; 2 … roots + 1 + 1 + 1") summed
  *  to 5 and a graduate-physics persona read it as an arithmetic error. */
@@ -132,7 +132,7 @@ export const REFUTATION_ROWS: RefutationRow[] = [
     root: 'Boost ceiling (same inequality as #1)',
     whichC: 'C_a, acceleration-keyed, floored at Ω_m',
     data: '153 SPARC rotation curves',
-    convention: 'Headline figure is for 1/Ω_m; convention-free on SPARC, B_max ≲ 14 is excluded. Lensing: as #1.',
+    convention: 'Not convention-dependent in kind, unlike #1. At 1/Ω_m (cap 68.5%) 106/153 discs exceed; at the most permissive Ω_m/Ω_b = 6.39 (cap 84%) 28/153 still do at face value, and 2 (NGC 3741, ESO 444-G084, both gas-dominated) do for every stellar M/L in 0.3–0.7. So the robust half rests on two galaxies, with distance and inclination errors not propagated. Lensing: as #1.',
   },
   {
     n: 3,
@@ -159,7 +159,7 @@ export const REFUTATION_ROWS: RefutationRow[] = [
     root: 'Inherited from MOND\'s slowly-transitioning interpolating functions under a modified-Poisson completion (Desmond, Hees & Famaey 2024; McGaugh\'s own RAR function fails the same instrument by +15.9 to +20.9σ). Not a refutation of MOND as a whole.',
     whichC: 'C_g, keyed on observed acceleration',
     data: 'Cassini quadrupole bound + SPARC',
-    convention: 'None.',
+    convention: 'The published 8.7σ: none. The in-house empty intersection: yes. It treats the 2,807 points as independent; with the galaxy as the unit the SPARC-allowed γ band widens to 0.3–1.7 and γ ≈ 1.5–1.7 passes both, so it moves with #3.',
   },
   {
     n: 6,

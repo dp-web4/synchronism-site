@@ -44,6 +44,18 @@ const steps = [
     explanation: 'C = 0: no collective order — the sparse/independent regime. C = 1: full collective coherence — the dense/collective regime. The same output tells you different things in different domains. Note on consciousness: C ≈ 0.50 was the proposed consciousness threshold — it is untestable as stated: no calibration maps any measurement to C, and the one cited test (gnosis-research Session 63) measured a different variable (SNARC salience). A prior "C ≈ 0.64 also rejected" claim had no source and was removed 2026-07-08.',
     key: 'One function, universal interpretation, domain-specific consequences — but the consciousness threshold is untestable as stated.',
   },
+  {
+    title: 'Step 7: Couple C to gravity',
+    equation: 'g_obs = g_bar / C   (equivalently G_eff = G / C)',
+    explanation: 'Steps 1–6 produce a number between 0 and 1. On its own that number does nothing; it acts on dynamics only through how it enters gravity. The framework divides by it: observed acceleration = Newtonian acceleration from the visible matter, divided by C. So C < 1 means stronger-than-Newtonian gravity, and the boost is 1/C. Three written forms use this: (a) the algebraic one above, used by the galaxy fits; (b) a field equation, ∇·[C∇Φ] = 4πGρ, which is Refracted Gravity (Matsakos & Diaferio 2016) under another name; (c) cosmology, H² = 8πGρ_m / (3C), a Cardassian-class modified Friedmann equation (Freese & Lewis 2002). Which C enters matters: the galaxy fits key C on acceleration (C as a function of g_obs/a₀′), not on density. The floored acceleration-keyed version caps the boost at 1/Ω_m ≈ 3.17, which is what TEST-09 and TEST-10 refuted.',
+    key: 'C becomes physics only through g = g_bar/C (or G → G/C). That coupling, not the tanh, is where every galaxy and cosmology test bites.',
+  },
+  {
+    title: 'Step 8: What the equation is at γ = ½',
+    equation: 'γ = ½:  C = x / (x + 2),   1/C = 1 + 2/x',
+    explanation: 'At γ = ½ the Step 3 identity collapses: (1+x)^(2γ) = 1+x, so C = x/(x+2) exactly, for every x. Now put it into Step 7. Keyed on acceleration (x = g_obs/a₀′): g_bar = g_obs · C is MOND\'s "simple" interpolating function (Famaey & Binney 2005) with a₀ = 2a₀′. Keyed on the mean cosmic density (x = ρ_m/ρ_crit): ρ_m/C = ρ_m + 2ρ_crit, which is matter plus a constant, i.e. ΛCDM with ρ_Λ = 2ρ_crit. SPARC rotation curves fit γ ≈ 0.49 and DESI+CMB+SN fit γ ≈ 0.487. Both land on the one value where the function is two standard models at once, so the "agreement" between sectors cannot fail and is not evidence for the framework. The two sectors also key on different variables, so their knees (a₀′ and ρ_crit) are separate fitted numbers. The framework fixes no relation between them, which means it cannot turn the a₀ ≈ cH₀ coincidence into a derived link between a₀ and Λ.',
+    key: 'At γ = ½ the one equation is MOND\'s simple μ in galaxies and Λ in cosmology. This is the most important structural fact about it: where it fits, it is known physics in different notation.',
+  },
 ];
 
 export default function EquationWalkthrough() {

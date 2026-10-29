@@ -77,9 +77,9 @@ const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: Re
     note: 'This card used to say "Site-wide audit total: 6 reparametrizations (4 quantum + Born rule + entity criterion)", a different list from the Honest Assessment scoreboard\'s 5, which does not include the entity criterion (Honest Assessment badges that criterion Reparametrization in its own card). It also said the wide-binary and resynchronization predictions "have not been tested", without noting that the first depends on an unfixed knee and the second is dynamical decoupling as stated.',
   },
   {
-    claim: 'Just notation',
+    claim: 'Only notation (though where it fits data, it is)',
     plain: 'The ingredients are borrowed from known mathematics; the new part is the claim that they describe one phenomenon at every scale — which could be wrong.',
-    reality: 'The core equation uses known components (compander/sigmoid tanh — μ-law/Hill/logistic lineage, chosen not derived; fluctuation-scaling ansatz γ=2/√Ncorr; Abrikosov-Gor\'kov pair-breaking — a textbook 1960 superconductivity result the framework\'s η formula turns out to restate). But the claim is ontological, not notational: that quantum mechanics, consciousness, and astrophysical coherence are the same phenomenon at different scales. That\'s either wrong or significant — not "just relabeling."',
+    reality: 'The core equation uses known components (compander/sigmoid tanh — μ-law/Hill/logistic lineage, chosen not derived; fluctuation-scaling ansatz γ=2/√Ncorr; Abrikosov-Gor\'kov pair-breaking — a textbook 1960 superconductivity result the framework\'s η formula turns out to restate). But the claim is ontological, not notational: that quantum mechanics, consciousness, and astrophysical coherence are the same phenomenon at different scales. That\'s either wrong or significant — not "just relabeling." Where the quantitative tests reach, though, notation is exactly what it is: at γ ≈ ½ the galaxy law is MOND\'s simple interpolating function and the dark-energy law is Λ (see Honest Assessment, "MOND in different notation"). So the two statements are about different things: the ontological claim is more than notation and is untested as physics; the fitted equations are notation for known models.',
   },
   {
     claim: 'A Lorentz-invariant theory',
@@ -88,7 +88,7 @@ const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: Re
     note: 'Card added 2026-09-10: this page, whose job is listing what the framework is not, was missing its single largest fine-tuning problem, which a reader had to find on /honest-assessment instead.',
   },
   {
-    claim: 'Just philosophy',
+    claim: 'Only philosophy (though its consciousness sector is untested)',
     plain: (
       <>
         The framework also extends its coherence idea to consciousness. The site treats that as a speculative sector

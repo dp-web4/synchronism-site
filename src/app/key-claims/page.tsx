@@ -71,9 +71,10 @@ export default function KeyClaims() {
           </div>
 
           <p style={{ fontWeight: 500, marginBottom: '1rem' }}>
-            Quantum &ldquo;mysteries&rdquo; &mdash; superposition, collapse, entanglement, the measurement
-            problem &mdash; are not mysterious. They are synchronization phenomena in a phase field.
-            The observer plays no special role, just as the Earth plays no special role in planetary orbits.
+            <em>Proposed:</em> quantum &ldquo;mysteries&rdquo; &mdash; superposition, collapse, entanglement, the measurement
+            problem &mdash; are synchronization phenomena in a phase field, and the observer plays no special role, just as
+            the Earth plays no special role in planetary orbits. This is an interpretation, not a result: it has no rate
+            parameter, and its substrate constructions stay at the classical Bell bound (S &le; 2).
           </p>
 
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.5rem' }}>The reframe</h3>
@@ -583,10 +584,11 @@ export default function KeyClaims() {
           </div>
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
-            Dark matter effects arise where density falls into the sparse/independent (low&nbsp;C) regime.
-            The MOND acceleration scale a&#x2080; emerges from the coherence transition, not as a fundamental constant.
-            The &ldquo;dark matter&rdquo; is not missing matter &mdash; it&apos;s the coherence gradient at the
-            transition from dense/collective to sparse/independent behavior.
+            <em>The claim as proposed (it failed; see the badge):</em> dark matter effects would arise where density falls into
+            the sparse/independent (low&nbsp;C) regime; the MOND acceleration scale a&#x2080; would emerge from the coherence
+            transition rather than being a fundamental constant; and the &ldquo;dark matter&rdquo; would be the coherence
+            gradient at the transition from dense/collective to sparse/independent behavior, not missing matter. On test,
+            the density-keyed version failed on SPARC, and the version that fits is MOND&apos;s simple &mu; in different notation.
             <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em', display: 'block', marginTop: '0.25rem' }}>
               Note: &ldquo;coherence&rdquo; here means density-driven collective ordering (0=sparse/independent,
               1=dense/collective) &mdash; not quantum phase coherence. BEC/BCS, which are maximally quantum-coherent,
@@ -685,7 +687,7 @@ export default function KeyClaims() {
             the registered Tully&ndash;Fisher environment test (TEST-03, on the 14,585-galaxy cross-match) was never run as registered.
             (&ldquo;14,760&rdquo; stood here until 2026-09-06; corrected to the ledger figure.) Three counts, one sample: 14,585 is the
             ALFALFA&ndash;SDSS cross-match as registered, 14,435 is what remains after the quality cut and was actually run, and
-            the homepage&apos;s 14,610 is those 14,435 plus the 175 SPARC galaxies. a&#x2080; derivation within 13%.
+            the homepage&apos;s 14,610 is those 14,435 plus the 175 SPARC galaxies. a&#x2080; = cH&#x2080;/2&#x03C0; sits 13% below 1.2&times;10&#x207B;&#xB9;&#x2070; m/s&sup2; at H&#x2080; = 67.4; that is Milgrom&apos;s 1983 cH&#x2080; coincidence, not a derivation (no calculation on file yields the 2&#x03C0;).
             Freeman&apos;s Law &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#8776; 119 M&#x2609;/pc&sup2; at the
             site-standard H&#x2080; = 67.4 km/s/Mpc &mdash; consistent with Freeman&apos;s observed normalization
             within the factor-of-~2 mass-to-light systematic, which is all the observable supports (sub-percent

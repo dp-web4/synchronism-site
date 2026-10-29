@@ -16,7 +16,7 @@ export default function RefutationLedger() {
       <p id="count-map" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch', scrollMarginTop: '5rem' }}>
         {COUNT_MAP_SENTENCE}
       </p>
-      <p id="count-rule" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch', scrollMarginTop: '5rem' }}>
+      <p id="count-rule-short" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch', scrollMarginTop: '5rem' }}>
         <strong>How firm is the 6?</strong> {COUNT_RULE_SENTENCE}
       </p>
       <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch' }}>

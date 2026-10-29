@@ -67,7 +67,7 @@ const closedTests = [
   {
     id: 'TEST-04a',
     name: 'DESI RSD fσ₈ Suppression',
-    status: 'DISFAVORED 2.4σ on σ₈ — prediction ~1.5σ below the data; registered fσ₈ threshold exceeded by ~0.9σ (bar: 3σ) (corrected 2026-07-14, 2026-10-12)',
+    status: 'UNDERPOWERED AS REGISTERED; not counted (same state as Tier 1). The predicted 0.418 has no live mechanism (Session 107\'s G_local/G_global, withdrawn 2026-08-11). Prediction ~1.5σ below the data; registered fσ₈ threshold exceeded by ~0.9σ (bar: 3σ). The 2.4σ is a GR-conditioned σ₈ statistic, not the registered one',
     verdict: 'Session 107 predicted fσ₈(z=0.51) ≈ 0.418 (suppression), kill criterion fσ₈ > 0.46 for >3σ. DESI DR1 full-shape (arXiv:2411.12021): LRG1 fσ₈/(fσ₈)_fid = 1.09 (+0.12/−0.14), Table 9 → fσ₈ = 0.516 (+0.057/−0.066) — exceeds 0.46 by only ~0.9σ, short of the registered >3σ (corrected 2026-10-10: the 1.16 ± 0.13 quoted here since May was the QSO row). Combined σ₈ = 0.841 ± 0.034 gives a 2.4σ tension, but σ₈ is a different, GR-conditioned statistic — using it to falsify a modified-growth model risks circularity. DESI\'s own modified-gravity analysis (Ishak et al. arXiv:2411.12026) gives a weaker verdict (μ₀ within 1σ of zero). Honest verdict: post-hoc either way; the test as registered lacked the power to discriminate this framework from GR. See /tier-1-existing and /honest-assessment for the full correction.',
   },
   {
@@ -178,7 +178,7 @@ export default function Top5Tests() {
           and stale by three months):</strong>{' '}
           Confirmed: <strong>0</strong> &nbsp;|&nbsp;
           <strong style={{ color: '#ef4444' }}>Active discriminating: 0</strong> &nbsp;|&nbsp;
-          Disfavored 2.4σ (σ₈ amplitude): <strong>1</strong> (TEST-04a post-hoc, registered endpoint underpowered; reframed 2026-07-02) &nbsp;|&nbsp;
+          Underpowered as registered: <strong>1</strong> (TEST-04a; the 2.4σ on the σ₈ amplitude is GR-conditioned and post-hoc, and the predicted value&apos;s mechanism was withdrawn) &nbsp;|&nbsp;
           Withdrawn: <strong>1</strong> (TEST-04 internal contradiction) &nbsp;|&nbsp;
           Closed self-eliminating: <strong>1</strong> (TEST-02) &nbsp;|&nbsp;
           Not rankable, observables undefined: <strong>1</strong> (TEST-11 consciousness) &nbsp;|&nbsp;

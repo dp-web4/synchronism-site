@@ -36,7 +36,7 @@ export const learningPaths: LearningPath[] = [
     color: '#10b981',
     kind: 'difficulty',
     steps: [
-      { title: 'Why Synchronism?', href: '/why-synchronism', time: '~8 min' },
+      { title: 'Why Synchronism?', href: '/why-synchronism', time: '~8 min; the technical fold is optional' },
       { title: 'First Encounter', href: '/first-encounter', time: '~10 min' },
       { title: 'Galaxy Curve Plotter', href: '/galaxy-plotter', time: '~6 min: read the green "three things" box at the top, then pick a galaxy' },
       { title: 'What Synchronism Is Not', href: '/what-synchronism-is-not', time: '~9 min' },

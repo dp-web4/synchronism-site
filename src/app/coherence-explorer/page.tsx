@@ -62,8 +62,8 @@ export default function CoherenceExplorer() {
       <ValidationBadge status="reparametrization" label="At γ = ½ this is a formula physics already had (MOND's, fed acceleration; ΛCDM in cosmology), not a new one" />
       <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem', maxWidth: '60ch' }}>
         <strong>What this toy is for:</strong> seeing the shape of the S-curve and what &#x03B3; does to it. It does
-        not model any real material, and the density axis has no units. The curve drawn is the <em>density</em> version of the equation; the opening &#x03B3; = 0.49 comes from fitting the <em>acceleration</em> version (a different function of a different variable, see the caption), so the default is illustrative here. <strong>One thing to try first:</strong> drag &#x03B3;
-        from 2 down to 0.5 and watch the S flatten into a gentle ramp. That flattening is what happens when the curve is fitted
+        not model any real material, and the density axis has no units. The curve drawn is the <em>density</em> version of the equation; the opening &#x03B3; = 0.49 comes from fitting the <em>acceleration</em> version (a different function of a different variable, see the caption), so the default is illustrative here. <strong>One thing to try first:</strong> the page opens at &#x03B3; = 0.49, so first drag &#x03B3; up to 2 (the original guess), then
+        drag it back down to 0.5 and watch the S flatten into a gentle ramp. That flattening is what happens when the curve is fitted
         to galaxies, and at &#x03B3; = &frac12; the ramp has exactly the shape of MOND&apos;s formula (when it is fed acceleration instead of density), which is why the galaxy fit is not a new prediction.
       </p>
 
@@ -102,7 +102,7 @@ export default function CoherenceExplorer() {
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
             <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> was proposed as the transition sharpness. What it actually sets is the
             initial slope (C &#x2248; &#x03B3;x at low density) and how fast C approaches 1; for &#x03B3; above ~1 it mostly moves the knee
-            (to &#x2248; 0.77&nbsp;&#x03C1;<sub>crit</sub>/&#x03B3;) rather than sharpening it, so it trades off against &#x03C1;<sub>crit</sub>{' '}
+            (to &#x2248; 0.77&nbsp;&#x03C1;<sub>crit</sub>/&#x03B3;; the &ldquo;knee&rdquo; here is the inflection point of C on a log-density axis, and &rho;<sub>crit</sub> itself is a reference scale, not the half-way point: C(&#x03C1;<sub>crit</sub>) = tanh(&#x03B3; ln 2), 0.33 at the default &#x03B3;) rather than sharpening it, so it trades off against &#x03C1;<sub>crit</sub>{' '}
             (<a href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>derivation</a>; added 2026-10-23).
             High &#x03B3; (&gt; 1.4, small N<sub>corr</sub>) = <em>single-particle / uncorrelated</em> regime (ideal gases, free atoms);
             &#x03B3; &#x2248; 1 = where the archive&apos;s fitted chemistry &#x03B3; values cluster &mdash; nothing in C(&#x03C1;) singles it out (<a href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Boundary</a>, retracted 2026-08-09);

@@ -69,16 +69,42 @@ function diskMass(vflat: number): number {
   return BTFR_A * Math.pow(vflat, 4);
 }
 
-function enclosedMassFrac(r: number, rd: number): number {
-  const x = r / rd;
-  return 1 - Math.exp(-x) * (1 + x);
+// Modified Bessel functions, Abramowitz & Stegun 9.8.1–9.8.8 (relative error of y²[I₀K₀ − I₁K₁] ≤ 3×10⁻⁴ against
+// scipy over y = 0.05–20, checked 2026-10-29).
+function besselI0(x: number): number {
+  const t = x / 3.75;
+  if (x < 3.75) { const t2 = t * t; return 1 + t2 * (3.5156229 + t2 * (3.0899424 + t2 * (1.2067492 + t2 * (0.2659732 + t2 * (0.0360768 + t2 * 0.0045813))))); }
+  const u = 1 / t;
+  return (Math.exp(x) / Math.sqrt(x)) * (0.39894228 + u * (0.01328592 + u * (0.00225319 + u * (-0.00157565 + u * (0.00916281 + u * (-0.02057706 + u * (0.02635537 + u * (-0.01647633 + u * 0.00392377))))))));
+}
+function besselI1(x: number): number {
+  const t = x / 3.75;
+  if (x < 3.75) { const t2 = t * t; return x * (0.5 + t2 * (0.87890594 + t2 * (0.51498869 + t2 * (0.15084934 + t2 * (0.02658733 + t2 * (0.00301532 + t2 * 0.00032411)))))); }
+  const u = 1 / t;
+  return (Math.exp(x) / Math.sqrt(x)) * (0.39894228 + u * (-0.03988024 + u * (-0.00362018 + u * (0.00163801 + u * (-0.01031555 + u * (0.02282967 + u * (-0.02895312 + u * (0.01787654 - u * 0.00420059))))))));
+}
+function besselK0(x: number): number {
+  if (x <= 2) { const t = (x * x) / 4; return -Math.log(x / 2) * besselI0(x) + (-0.57721566 + t * (0.4227842 + t * (0.23069756 + t * (0.0348859 + t * (0.00262698 + t * (0.0001075 + t * 0.0000074)))))); }
+  const u = 2 / x;
+  return (Math.exp(-x) / Math.sqrt(x)) * (1.25331414 + u * (-0.07832358 + u * (0.02189568 + u * (-0.01062446 + u * (0.00587872 + u * (-0.0025154 + u * 0.00053208))))));
+}
+function besselK1(x: number): number {
+  if (x <= 2) { const t = (x * x) / 4; return Math.log(x / 2) * besselI1(x) + (1 / x) * (1 + t * (0.15443144 + t * (-0.67278579 + t * (-0.18156897 + t * (-0.01919402 + t * (-0.00110404 - t * 0.00004686)))))); }
+  const u = 2 / x;
+  return (Math.exp(-x) / Math.sqrt(x)) * (1.25331414 + u * (0.23498619 + u * (-0.0365562 + u * (0.01504268 + u * (-0.00780353 + u * (0.00325614 - u * 0.00068245))))));
 }
 
+// Thin exponential disk (Freeman 1970): v² = 4πGΣ₀R_d·y²[I₀K₀ − I₁K₁], y = r/2R_d, Σ₀ = M/(2πR_d²).
+// Replaced the spherical √(G·M(<r)/r) on 2026-10-29 (queued since 2026-07-17); the spherical form ran 14–16%
+// low between 2 and 3 R_d (0.542 vs 0.622 √(GM/R_d) at 2.2 R_d) and converges to it beyond ~10 R_d.
 function newtonianVel(r: number, vflat: number, rd: number): number {
   if (r <= 0) return 0;
-  const M = diskMass(vflat) * enclosedMassFrac(r, rd);
-  return Math.sqrt((G_KPC * M) / r);
+  const y = r / (2 * rd);
+  const bracket = besselI0(y) * besselK0(y) - besselI1(y) * besselK1(y);
+  const v2 = ((2 * G_KPC * diskMass(vflat)) / rd) * y * y * bracket;
+  return v2 > 0 ? Math.sqrt(v2) : 0;
 }
+
 
 // Real MOND simple interpolating function: g = ν(y)·g_N, ν(y) = ½ + √(¼ + 1/y), y = g_N/a₀
 function mondVel(r: number, vflat: number, rd: number): number {
@@ -203,7 +229,7 @@ export default function GalaxyPlotter() {
         <ul style={{ margin: '0.4rem 0 0', paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
           <li><strong>The dots</strong> are what telescopes measure: stars keep orbiting fast far from the centre.</li>
           <li><strong>The dashed gray line</strong> is what the visible matter alone would give. It sags below the dots. That gap is the dark-matter puzzle.</li>
-          <li><strong>Green</strong> (MOND, an existing theory) follows the dots (partly because its flat level is set from each galaxy&apos;s own speed). <strong>Solid violet</strong> (this framework&apos;s equation as written) does not: it is the gray line scaled up, still falling where the dots stay flat. The framework&apos;s <em>surviving</em> branch is not a separate line: fed acceleration instead of density, the equation at &gamma; &asymp; &frac12; is MOND&apos;s formula, so it coincides with the green curve. The chart is the dead branch (violet) against the live branch (green), and the live branch is MOND&apos;s. At these densities the violet line is a constant 1.78&times; stretch of the gray one at every radius (the floor binds; details in the physicists&apos; block).</li>
+          <li><strong>Green</strong> (MOND, an existing theory) follows the dots (partly because its flat level is set from each galaxy&apos;s own speed). <strong>Solid violet</strong> (this framework&apos;s equation as written) does not: it is the gray line scaled up, still falling where the dots stay flat. <strong>In plain words: the only version of this framework&apos;s equation that fits these dots is MOND&apos;s formula written differently.</strong> Fed acceleration instead of density, the equation at &gamma; &asymp; &frac12; is MOND&apos;s formula, so that version is the green curve; there is no separate line for it. The chart is the version that failed (violet) against the version that survives (green), and the one that survives is MOND. At these densities the violet line is a constant 1.78&times; stretch of the gray one at every radius (the floor binds; details in the physicists&apos; block).</li>
           <li><strong>&ldquo;But First Encounter says the fitted &gamma; &asymp; 0.5 reproduces MOND?&rdquo;</strong> It does, and that is not a win. The fit that gives &gamma; &asymp; 0.5 feeds the equation acceleration, which is MOND&apos;s own input, instead of the density the framework names; with that swap the equation becomes MOND&apos;s formula and you get the green line back. That is why the site calls it a reparametrization. The violet line is the equation as written, keyed on density, and it fails.</li>
         </ul>
         <p style={{ margin: '0.4rem 0 0' }}>
@@ -434,7 +460,7 @@ export default function GalaxyPlotter() {
           for a page badged Reparametrization, the formulas are the argument — so here they are, exactly as coded:
           <div style={{ fontFamily: 'monospace', fontSize: '0.8rem', margin: '0.5rem 0', padding: '0.5rem 0.75rem', background: 'rgba(0,0,0,0.25)', borderRadius: '4px', overflowX: 'auto' }}>
             Toy mass model: M_b = 47&middot;V_flat&#x2074; M&#x2609; (empirical BTFR, McGaugh 2011), exponential disk with each galaxy&apos;s observed scale length R_d, h = 0.3 kpc<br />
-            Gray &ldquo;Newtonian&rdquo;: v_b(r) = &radic;(G&middot;M(&lt;r)/r), M(&lt;r) = M_disk&middot;[1 &minus; e^(&minus;r/R_d)(1+r/R_d)]<br />
+            Gray &ldquo;Newtonian&rdquo;: thin exponential disk (Freeman 1970), v_b&sup2;(r) = (2GM_disk/R_d)&middot;y&sup2;[I&#x2080;(y)K&#x2080;(y) &minus; I&#x2081;(y)K&#x2081;(y)], y = r/2R_d; all baryons in one disk, no separate gas component<br />
             Density-keyed coherence (both violet lines): C<sub>&#x03C1;</sub>(r) = tanh(2&middot;ln(&#x03C1;(r)/&#x03C1;<sub>crit</sub>+1)), &#x03C1;(r) = &#x03A3;(r)/2h, &#x03C1;<sub>crit</sub> = 0.029&middot;V_flat&sup2;<br />
             Violet SOLID, division reading (the wiring the ledger&apos;s tests use; failed): g = g_bar/C<sub>f</sub>, i.e. v(r) = v_b/&radic;C<sub>f</sub>, C<sub>f</sub> = &Omega;<sub>m</sub> + (1&minus;&Omega;<sub>m</sub>)&middot;C<sub>&#x03C1;</sub>, &Omega;<sub>m</sub> = 0.315 (boost &le; 1/&Omega;<sub>m</sub> = 3.17 in g)<br />
             Light-violet DASHED, quadrature reading (display branch, not a tested law; inert at C<sub>&#x03C1;</sub> &asymp; 0.001): v(r) = &radic;(v_b&sup2; + [V_flat&middot;C<sub>&#x03C1;</sub>]&sup2;)<br />
@@ -496,18 +522,20 @@ export default function GalaxyPlotter() {
           own definition and it needs no data at all; see{' '}
           <a href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>MRH &rarr; Does the framework respect
           its own horizon?</a>
-          <p style={{ margin: '0.6rem 0 0' }}>
-            <strong style={{ color: '#f59e0b' }}>Approximation note (added 2026-07-17, flagged by an
-            expert reader):</strong> the gray Newtonian curve uses <em>spherical</em> enclosed mass for what is
-            physically a thin exponential disk. The exact thin-disk result (Freeman 1970:
-            v&sup2; = 4&pi;G&Sigma;&#x2080;R<sub>d</sub>&middot;y&sup2;[I&#x2080;K&#x2080; &minus; I&#x2081;K&#x2081;],
-            modified Bessel functions) runs ~15&ndash;20% <em>higher</em> near the peak (r &#x2248; 2R<sub>d</sub>),
-            so the plotted Newtonian baseline understates the baryonic prediction there and the visual
-            &ldquo;dark matter gap&rdquo; — this page&apos;s pedagogical centerpiece — is modestly exaggerated near
-            the peak. The gap itself is real and much larger than this correction at large radius (where the
-            discrepancy actually lives), so no conclusion flips; a Bessel-function implementation is queued for a
-            future pass rather than rushed here.
-          </p>
+          <div style={{ margin: '0.6rem 0 0' }}>
+            <strong style={{ color: '#f59e0b' }}>Mass-model note:</strong> the gray Newtonian curve is the exact
+            thin exponential disk (Freeman 1970: v&sup2; = 4&pi;G&Sigma;&#x2080;R<sub>d</sub>&middot;y&sup2;[I&#x2080;K&#x2080;
+            &minus; I&#x2081;K&#x2081;], modified Bessel functions). All baryons sit in that one disk (no separate gas
+            disk or bulge), so it is a toy built from V<sub>flat</sub>, not a fit to each galaxy&apos;s photometry. Every
+            curve built on it (violet, dashed violet, green) inherits it.
+            <details style={{ marginTop: '0.3rem' }}>
+              <summary style={{ cursor: 'pointer' }}>Revision note</summary>
+              Until 2026-10-29 the gray curve used spherical enclosed mass, &radic;(G&middot;M(&lt;r)/r). That ran 14&ndash;16% low
+              between 2 and 3 R<sub>d</sub> (0.542 against 0.622 &radic;(GM/R<sub>d</sub>) at 2.2 R<sub>d</sub>), so the
+              visual gap near the peak was exaggerated; the two agree to under 3% beyond 10 R<sub>d</sub>, where the
+              discrepancy lives. An expert reader flagged it on 2026-07-17 and a graduate-physics reader again on 2026-10-29.
+            </details>
+          </div>
         </div>
 
         <div style={{ background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', padding: '0.7rem 0.9rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>

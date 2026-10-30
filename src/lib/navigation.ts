@@ -397,7 +397,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Consciousness Threshold',
       href: '/consciousness-threshold',
-      desc: 'C \u2248 0.50: 8 approaches that agree because they share one calibration \u2014 not independent evidence',
+      desc: 'C \u2248 0.50: 7 approaches (an eighth has no critical point) that agree because they share one calibration \u2014 not independent evidence',
       keywords: ['consciousness', 'threshold', '0.50', 'convergence', 'Gnosis'],
       prerequisites: ['/hard-problem'],
       related: ['/qualia-coherence', '/consciousness-predictions', '/consciousness-demo'],
@@ -664,7 +664,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Consciousness Threshold Demo',
       href: '/consciousness-demo',
-      desc: 'Visualize the C \u2248 0.50 convergence from 8 approaches',
+      desc: 'Visualize the C \u2248 0.50 convergence from 7 approaches',
       keywords: ['consciousness', 'threshold', 'demo', 'convergence', 'visualization'],
       related: ['/consciousness-threshold', '/hard-problem'],
     },

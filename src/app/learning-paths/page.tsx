@@ -123,7 +123,7 @@ export default function LearningPaths() {
         <Link href="/interactive-tools" style={{ color: 'var(--color-accent-blue)' }}>interactive tool</Link> as a step &mdash;
         if you want the equation explained rather than stated, try{' '}
         <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Anatomy</Link>{' '}
-        (a tool with its own six-step tour, not a step on any path).
+        (a tool with its own step-by-step tour, not a step on any path).
       </p>
 
       <h2 style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>By Difficulty</h2>

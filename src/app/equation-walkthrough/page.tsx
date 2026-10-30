@@ -15,9 +15,9 @@ const steps = [
     key: 'Density is the universal input to the coherence function.',
   },
   {
-    title: 'Step 2: Normalize by critical density',
+    title: 'Step 2: Normalize by the reference density (ρ_crit)',
     equation: 'ρ / ρ_crit — dimensionless ratio',
-    explanation: 'ρ_crit is a reference density — a saturation knee, not a phase-transition critical point. At γ=2: C(ρ_crit) = tanh(2·ln 2) = 0.88, not 0.5 — but at the galaxy-fitted γ ≈ 0.49 (the Coherence Explorer default) it is only 0.33, so whether ρ_crit sits above or below the halfway point depends on γ. The midpoint C=0.5 sits at ρ ≈ 0.32×ρ_crit. For galaxies: ρ_crit = A × V_flat² (calibrated per galaxy). The ratio ρ/ρ_crit tells you where you are relative to the saturation region.',
+    explanation: 'ρ_crit is a reference density — a saturation knee, not a phase-transition critical point. At γ=2: C(ρ_crit) = tanh(2·ln 2) = 0.88, not 0.5 — but at the galaxy-fitted γ ≈ 0.49 (the Coherence Explorer default) it is only 0.33, so whether ρ_crit sits above or below the halfway point depends on γ. The midpoint C=0.5 sits at ρ ≈ 0.32×ρ_crit. For galaxies, the original density-keyed proposal set ρ_crit = A × V_flat² (calibrated per galaxy); that branch is excluded on SPARC, and the surviving galaxy fits key on acceleration instead (Step 7). The ratio ρ/ρ_crit tells you where you are relative to the saturation region.',
     key: 'ρ_crit is a saturation knee, not a critical density — calling it "transition density" is misleading. Where it sits on the curve is γ-dependent and must always be quoted with its γ: C(ρ_crit) = 0.88 at γ = 2, but 0.33 at the SPARC-fitted γ ≈ 0.49 — near saturation in one case, well below the halfway point in the other.',
   },
   {
@@ -47,7 +47,7 @@ const steps = [
   {
     title: 'Step 7: Couple C to gravity',
     equation: 'g_obs = g_bar / C   (equivalently G_eff = G / C)',
-    explanation: 'Steps 1–6 produce a number between 0 and 1. On its own that number does nothing; it acts on dynamics only through how it enters gravity. The framework divides by it: observed acceleration = Newtonian acceleration from the visible matter, divided by C. So C < 1 means stronger-than-Newtonian gravity, and the boost is 1/C. Three written forms use this: (a) the algebraic one above, used by the galaxy fits; (b) a field equation, ∇·[C∇Φ] = 4πGρ, which is Refracted Gravity (Matsakos & Diaferio 2016) under another name; (c) cosmology, H² = 8πGρ_m / (3C), a Cardassian-class modified Friedmann equation (Freese & Lewis 2002). Which C enters matters: the galaxy fits key C on acceleration (C as a function of g_obs/a₀′), not on density. The floored acceleration-keyed version caps the boost at 1/Ω_m ≈ 3.17, which is what TEST-09 and TEST-10 refuted.',
+    explanation: 'Steps 1–6 produce a number between 0 and 1. On its own that number does nothing; it acts on dynamics only through how it enters gravity. The framework divides by it: observed acceleration = Newtonian acceleration from the visible matter, divided by C. So C < 1 means stronger-than-Newtonian gravity, and the boost is 1/C. Three written forms use this: (a) the algebraic one above, used by the galaxy fits; (b) a field equation, ∇·[C∇Φ] = 4πGρ, which is Refracted Gravity (Matsakos & Diaferio 2016) under another name; (c) cosmology, H² = 8πGρ_m / (3C), a Cardassian-class modified Friedmann equation (Freese & Lewis 2002). Which C enters matters: the galaxy fits key C on acceleration (C as a function of g_obs/a₀′, where a₀′ is the framework\'s own fitted knee acceleration; at γ = ½ it is half of MOND\'s a₀), not on density. The floored acceleration-keyed version caps the boost at 1/Ω_m ≈ 3.17, which is what TEST-09 and TEST-10 refuted.',
     key: 'C becomes physics only through g = g_bar/C (or G → G/C). That coupling, not the tanh, is where every galaxy and cosmology test bites.',
   },
   {

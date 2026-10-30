@@ -44,7 +44,7 @@ const examples: {
     tier: 'Tier 1',
     reach: 'fired',
     note:
-      'Executed 2026-07-14 on real SPARC. Observed n = 3.75 ± 0.10; deviation 0.41 > 0.3, so the kill fired at 3.3σ. MOND passes the same differential at 0.6σ. Definition-robustness was then executed under a pre-fixed verdict rule (2026-07-18): all 11 adjudicated runs exceed threshold. This is what a criterion that can fire looks like — and it did.',
+      'Executed 2026-07-14 on real SPARC. Observed n = 3.75 ± 0.10; deviation 0.41 > 0.3, so the kill fired; the prediction sits 3.3σ from the data, and the kill line is crossed by about 1σ. MOND passes the same differential at 0.6σ. Definition-robustness was then executed under a pre-fixed verdict rule (2026-07-18): all 11 adjudicated runs exceed threshold. This is what a criterion that can fire looks like — and it did.',
   },
   {
     id: 'TEST-10',

@@ -588,7 +588,7 @@ export default function KeyClaims() {
             the sparse/independent (low&nbsp;C) regime; the MOND acceleration scale a&#x2080; would emerge from the coherence
             transition rather than being a fundamental constant; and the &ldquo;dark matter&rdquo; would be the coherence
             gradient at the transition from dense/collective to sparse/independent behavior, not missing matter. On test,
-            the density-keyed version failed on SPARC, and the version that fits is MOND&apos;s simple &mu; in different notation.
+            the density-keyed version failed on SPARC, and the version that fits is MOND&apos;s simple &mu; in different notation. Why matching MOND still counts as <em>Failed</em>: fitting the same curves as an existing theory with a renamed formula adds nothing new. A match would only be news if the equation also predicted something MOND does not and that prediction held. It made three such predictions (a cap on how much gravity can be boosted, an effect of a galaxy&apos;s surroundings, and a density knee that grows with rotation speed), and each failed when tested.
             <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em', display: 'block', marginTop: '0.25rem' }}>
               Note: &ldquo;coherence&rdquo; here means density-driven collective ordering (0=sparse/independent,
               1=dense/collective) &mdash; not quantum phase coherence. BEC/BCS, which are maximally quantum-coherent,

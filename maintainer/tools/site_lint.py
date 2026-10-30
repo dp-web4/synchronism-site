@@ -23,6 +23,29 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-30 (maintainer): glossary "every executed test" uses density (galaxy kills keyed on acceleration;
+    #     Equation Anatomy retired it 10-04, the glossary kept it); "six-step tour" (eight steps); Step 2 "critical density" title;
+    #     alpha/pi ~ 1e-2 and "16-28 orders" (alpha/pi = 2.3e-3, gap 15-27); the TEST-09 sweep at 2 decimals (|dn| = 0.297 at 5.389,
+    #     edge at B_max ~ 5.31, so "<~ 5.4" and "lands on it" were rounding artefacts; sigma-distances 3.4/2.6 used sigma = 0.12);
+    #     the non-physicist summary's "far too much to be a fluke" (criterion margin ~1 sigma) and "slower growth ... disfavored"
+    #     (mechanism withdrawn 2026-08-11); "kill fired 3.3 sigma" (3.3 sigma is prediction-data, not the criterion margin);
+    #     the TEST-10 "M/L-free pair NGC 3741, ESO 444-G084" (ESO 444 is 1.65 sigma under its inclination; explorer 2026-10-29)
+    (r"In every executed test: physical density|Every test on this site uses", "2026-10-30",
+     "galaxy kills key C on acceleration; say 'every density-keyed test'", False),
+    (r"six-step tour", "2026-10-30", "Equation Anatomy has eight steps; don't hard-code a count on another page", False),
+    (r"Normalize by critical density", "2026-10-30", "rho_crit is a reference density, not a critical point", False),
+    (r"16(&ndash;|–|-| to )28 (OOM|order)|&#x03B1;/&#x03C0;&nbsp;~&nbsp;10<sup>&#x2212;2</sup>|α/π&nbsp;~&nbsp;10<sup>(&#x2212;|−)2</sup>|O\(α/π\) ~ 10⁻²", "2026-10-30",
+     "alpha/pi = 2.3e-3; against 1e-18..1e-30 the gap is 15-27 orders", False),
+    (r"&#8818;(&nbsp;| )5\.4\b|≲ 5\.4\b|below about 5\.4|ceilings of 5\.4 and above", "2026-10-30",
+     "TEST-09 class-exclusion edge is B_max ~ 5.31 (|dn| = 0.300); 5.389 gives 0.297", False),
+    (r"\|(&Delta;|&#x0394;|Δ)n\|(&nbsp;| )=(&nbsp;| )0\.30(?!\d)|0\.30/0\.12|0\.41/0\.12|lands exactly on it|this lands on it", "2026-10-30",
+     "unrounded sweep: |dn| = 0.406 / 0.297 / 0.260, sigma-distances 3.3 / 2.5 / 2.2", False),
+    (r"by far too much to be a fluke|slower growth of cosmic structure\) is disfavored", "2026-10-30",
+     "TEST-09 criterion crossed by ~1 sigma (3.3 sigma is prediction-data); the growth mechanism was withdrawn 2026-08-11", False),
+    (r"kill fired (at )?3\.3σ|registered kill fired 3\.3", "2026-10-30",
+     "3.3 sigma is the prediction-data separation; the kill line is crossed by ~1 sigma", False),
+    (r"two gas-dominated dwarfs \(NGC 3741, ESO 444-G084|NGC 3741, ESO 444-G084, both gas-dominated", "2026-10-30",
+     "with D/i/M/L propagated the robust trio is NGC 2915, NGC 3741, UGC 06667; ESO 444-G084 is 1.65 sigma; condition is the gas census", False),
     # --- retired 2026-10-29 (maintainer): "constant a0 excluded at any level (5 sigma)" (ambiguous: "level" meant normalisation,
     #     read as CI level; the bins are pixel-read and the exclusion is Ciocan's own apparent-a0 result); the bare "a0 derivation
     #     within 13%" bullet under a Failed card; Key Claims' declaratives under Failed/Speculative badges; the "Not: Just notation"
@@ -523,6 +546,9 @@ RETIRED = [
 # a retired-phrase list cannot catch an unqualified number, only a context requirement can.
 CONTEXT_LINES = 3
 REQUIRES = [
+    # Added 2026-10-30: the EFE-free corner gamma ~ 0.87-0.95 is closed by the GC statistic (10.6 sigma vs MOND+EFE, pre-registered).
+    (r"0\.87(&ndash;|–)0\.95", r"clos(ed|es)|globular|cluster|GC",
+     "2026-10-30", "EFE-free corner gamma 0.87-0.95: say it is closed by the globular-cluster statistic (2026-10-30)"),
     # Added 2026-10-27: the footer read a bare "6 refutations executed" while /honest-assessment claimed it carried the qualifier.
     (r"<strong>6 refutations executed</strong>", r"3(&ndash;|–)8 under rules on file|under the current counting rule",
      "2026-10-27", "the footer/scoreboard count must carry its range (3-8 under rules on file) on the same surface", 3),

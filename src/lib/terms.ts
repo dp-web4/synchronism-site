@@ -48,9 +48,9 @@ export const terms: Record<string, TermDefinition> = {
   },
   'presence': {
     term: 'Presence (\u03C1)',
-    fullName: 'In every executed test: physical density. In the ontology: compatible structural elements within an MRH',
-    brief: 'Two readings. Every test on this site uses \u03C1 = ordinary local mass (or energy) density. The ontology pages also use \u03C1 for a broader "presence": how much compatible stuff is nearby within your MRH. That broader reading has never been turned into a measurement.',
-    explanation: 'Why not just call it density? Physical density (g/cm\u00B3) is one form of presence, but the framework applies the same equation to chemistry (presence = compatible molecular configurations), neural tissue (presence = coupled neurons), and galaxies (presence = baryonic density). A single word covers all these cases. Presence is not merely quantity \u2014 it encodes compatibility, configuration, and environmental suitability: \u03C1 = f(compatibility vector), the scalar projection of a multidimensional compatibility space onto a single number. Must be quantifiable, domain-transparent, MRH-dependent, and falsifiable. In practice: every executed test uses \u03C1 = the local mass/energy density; the broader \u201Ccompatibility\u201D reading has never been operationalized (see /equation-walkthrough).',
+    fullName: 'In every density-keyed test: physical density. In the ontology: compatible structural elements within an MRH',
+    brief: 'Two readings. Every density-keyed test on this site uses \u03C1 = ordinary local mass (or energy) density. Not every test is density-keyed: the galaxy RAR fits, the \u03B3 = 2 pin, TEST-09/10 and the Cassini squeeze key C on acceleration instead (see Coherence Function, "which C"). The ontology pages also use \u03C1 for a broader "presence": how much compatible stuff is nearby within your MRH. That broader reading has never been turned into a measurement.',
+    explanation: 'Why not just call it density? Physical density (g/cm\u00B3) is one form of presence, but the framework applies the same equation to chemistry (presence = compatible molecular configurations), neural tissue (presence = coupled neurons), and galaxies (presence = baryonic density). A single word covers all these cases. Presence is not merely quantity \u2014 it encodes compatibility, configuration, and environmental suitability: \u03C1 = f(compatibility vector), the scalar projection of a multidimensional compatibility space onto a single number. Must be quantifiable, domain-transparent, MRH-dependent, and falsifiable. In practice: every density-keyed test uses \u03C1 = the local mass/energy density (the galaxy acceleration-keyed fits use no \u03C1 at all); the broader \u201Ccompatibility\u201D reading has never been operationalized (see /equation-walkthrough).',
     learnMore: '/coherence-function',
   },
   'a\u2080': {
@@ -59,6 +59,13 @@ export const terms: Record<string, TermDefinition> = {
     brief: 'Milgrom\'s acceleration constant, observed \u2248 1.2\u00D710\u207B\u00B9\u2070 m/s\u00B2; cH\u2080/(2\u03C0) \u2248 1.04\u00D710\u207B\u00B9\u2070 at H\u2080 = 67.4 (~13% below).',
     explanation: 'In MOND, this is a fundamental constant. Synchronism writes it as cH\u2080/(2\u03C0) \u2014 but that is a dimensional rederivation of a numerical coincidence Milgrom himself noted in 1983 (a\u2080 \u2248 cH\u2080/6; the 2\u03C0 vs 6 difference is ~5%), not an independent derivation. The site\u2019s audited verdict is Reparametrization: the relation is real, shared with MOND-adjacent literature (McCulloch, Verlinde, Smolin), and predicts nothing MOND doesn\u2019t. (Glossary entry rewritten 2026-07-17 to match the audited framing \u2014 an earlier version called this \u201Cone of Synchronism\u2019s strongest results,\u201D which contradicted the landing page and Honest Assessment.)',
     learnMore: '/mond-unification',
+  },
+  'a\u2080\u2032': {
+    term: 'a\u2080\u2032',
+    fullName: 'The framework\'s knee acceleration (a-naught-prime)',
+    brief: 'The acceleration scale in the acceleration-keyed C, x = g_obs/a\u2080\u2032. It is fitted, not derived. At \u03B3 = \u00BD the law is MOND\'s simple \u03BC with a\u2080 = 2a\u2080\u2032.',
+    explanation: 'Only the combination a\u2080\u2032/\u03B3 is pinned by SPARC (1.07\u20131.09\u00D710\u207B\u00B9\u2070 m/s\u00B2 across stellar mass-to-light 0.4\u20130.6, while a\u2080\u2032 itself moves 3.6\u00D7). That combination is the Milgrom-equivalent scale of the deep regime, so compare a\u2080\u2032/\u03B3, not a\u2080\u2032, with MOND\'s a\u2080 = 1.2\u00D710\u207B\u00B9\u2070 m/s\u00B2.',
+    learnMore: '/equation-walkthrough',
   },
   'RAR': {
     term: 'RAR',
@@ -263,7 +270,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Ceiling Exceeded',
     fullName: 'Ceiling Exceeded (operational label)',
     brief: 'The data need more than the framework\u2019s built-in maximum, so no parameter choice can fit them.',
-    explanation: 'The acceleration-keyed law with a floor caps the gravity boost at 1/\u03A9_m \u2248 3.17. When a galaxy needs a larger boost, the fit fails whatever the other parameters are. This is the structural failure behind TEST-09 and TEST-10. Whether the cap should be 1/\u03A9_m or \u03A9_m/\u03A9_b is a convention the site flags; the class result is that a boost capped below about 5.4 is excluded by the SPARC BTFR slope.',
+    explanation: 'The acceleration-keyed law with a floor caps the gravity boost at 1/\u03A9_m \u2248 3.17. When a galaxy needs a larger boost, the fit fails whatever the other parameters are. This is the structural failure behind TEST-09 and TEST-10. Whether the cap should be 1/\u03A9_m or \u03A9_m/\u03A9_b is a convention the site flags; the class result is that a boost capped below about 5.3 is excluded by the SPARC BTFR slope.',
     learnMore: '/honest-assessment#validation-badge-definitions',
   },
   'bet b1': {
@@ -675,7 +682,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'LIV',
     fullName: 'Lorentz Invariance Violation',
     brief: 'Predicted deviation from exact Lorentz symmetry — any model with an absolute preferred frame inherits dimension-4 LIV operators radiatively (CPSU 2004 naturalness problem).',
-    explanation: 'Lorentz invariance is the symmetry of special relativity: physics looks the same in all inertial frames. Discrete-substrate models that commit to an absolute preferred frame (like Synchronism\'s absolute-time substrate) generate Lorentz-violating Standard Model Extension (SME) operators radiatively at one loop. The Collins–Perez–Sudarsky–Urrutia–Vucetich (CPSU 2004, PRL 93, 191301) result shows that the dimension-4 c_μν coefficient is generated at O(α/π) ~ 10⁻² — 16–28 orders of magnitude above existing experimental bounds (cavity Michelson–Morley, Hughes–Drever). This is a naturalness problem, not a falsification: perturbative escapes exist (SUSY, anisotropic scale-hierarchy) but have not been exhibited within the Synchronism framework. The dimension≥5 (time-of-flight) channel is structurally unreachable by three independent locks and is not the exposed sector.',
+    explanation: 'Lorentz invariance is the symmetry of special relativity: physics looks the same in all inertial frames. Discrete-substrate models that commit to an absolute preferred frame (like Synchronism\'s absolute-time substrate) generate Lorentz-violating Standard Model Extension (SME) operators radiatively at one loop. The Collins–Perez–Sudarsky–Urrutia–Vucetich (CPSU 2004, PRL 93, 191301) result shows that the dimension-4 c_μν coefficient is generated at O(α/π) ≈ 2×10⁻³ — 15–27 orders of magnitude above existing experimental bounds (cavity Michelson–Morley, Hughes–Drever). This is a naturalness problem, not a falsification: perturbative escapes exist (SUSY, anisotropic scale-hierarchy) but have not been exhibited within the Synchronism framework. The dimension≥5 (time-of-flight) channel is structurally unreachable by three independent locks and is not the exposed sector.',
     learnMore: '/for-researchers',
   },
   'SME': {

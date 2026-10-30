@@ -143,9 +143,9 @@ export default function TestCatalog() {
           <strong>2 executed tests did discriminate, and both selected MOND</strong> (TEST-09, BTFR slope,
           separating the models at 3.3σ; TEST-10, dwarf DM fractions). &ldquo;Selected MOND&rdquo; means the MOND class with an unbounded boost; the particular simple &mu; that the free-&gamma; fit lands on is itself excluded by Cassini (TEST-25), so only MOND with a sharper return survives both. Both kills are convention-dependent: TEST-09 fired at
           B<sub>max</sub> = 1/&Omega;<sub>m</sub> (n = 3.35, |&Delta;n| = 0.41 &gt; 0.3) but the 2026-09-18 ceiling sweep finds
-          it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub> (|&Delta;n| = 0.30, strict
+          it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub> (|&Delta;n| = 0.297, strict
           &gt; 0.3) or &Omega;<sub>m</sub>/&Omega;<sub>b</sub> (0.26), so it does not survive its own pre-fixed rule; the
-          convention-free results are class exclusions, B<sub>max</sub> &#8818; 5.4 by the BTFR slope and
+          convention-free results are class exclusions, B<sub>max</sub> &#8818; 5.3 by the BTFR slope and
           B<sub>max</sub> &#8818; 14 by SPARC dwarfs; the weak-lensing RAR (Brouwer+2021) excludes every candidate ceiling, 6.39 included, even with all cosmic baryons counted (<Link href="/honest-assessment#lensing-ceiling" style={{ color: '#f59e0b' }}>details</Link>). Whether they stay in the count of 6 is pending the project lead (dp). TEST-09 and TEST-10 would have selected
           the framework had its boost ceiling held.
           A test that separates two models <em>is</em> discriminating regardless of which one wins. The

@@ -80,7 +80,7 @@ export default function ForResearchers() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td style={{ padding: '0.3rem' }}>Dim-4 Lorentz violation (species-dependent limiting speed)</td><td style={{ padding: '0.3rem' }}>Absolute-time substrate</td><td style={{ padding: '0.3rem' }}>Audited-Negative: one-loop natural value ~10&#x207B;&sup2;, 16&ndash;28 orders above bounds; custodial mechanism owed (<a href="#dim4-liv" style={{ color: 'var(--color-accent-blue)' }}>&sect;2</a>)</td><td style={{ padding: '0.3rem' }}>Collins et al. 2004</td><td style={{ padding: '0.3rem' }}>Already bounded (clock comparisons, cavities); time-of-flight cannot see it</td></tr>
+                <tr><td style={{ padding: '0.3rem' }}>Dim-4 Lorentz violation (species-dependent limiting speed)</td><td style={{ padding: '0.3rem' }}>Absolute-time substrate</td><td style={{ padding: '0.3rem' }}>Audited-Negative: one-loop natural value ~&alpha;/&pi; &asymp; 2&times;10&#x207B;&sup3;, 15&ndash;27 orders above bounds; custodial mechanism owed (<a href="#dim4-liv" style={{ color: 'var(--color-accent-blue)' }}>&sect;2</a>)</td><td style={{ padding: '0.3rem' }}>Collins et al. 2004</td><td style={{ padding: '0.3rem' }}>Already bounded (clock comparisons, cavities); time-of-flight cannot see it</td></tr>
                 <tr><td style={{ padding: '0.3rem' }}>Dim &ge; 5 dispersion (quadratic only)</td><td style={{ padding: '0.3rem' }}>Discrete grid</td><td style={{ padding: '0.3rem' }}>Untested; ~10&#x2077; below reach</td><td style={{ padding: '0.3rem' }}>Not unique (loop quantum gravity, causal sets)</td><td style={{ padding: '0.3rem' }}>None reachable</td></tr>
                 <tr><td style={{ padding: '0.3rem' }}>External-field refraction (&nabla;ln C)</td><td style={{ padding: '0.3rem' }}>Density-keyed field equation</td><td style={{ padding: '0.3rem' }}>Framework&apos;s permittivity excluded; for RG it is order unity and dipolar in satellites (<Link href="/test-catalog#what-excluded-covers" style={{ color: 'var(--color-accent-blue)' }}>scope</Link>)</td><td style={{ padding: '0.3rem' }}>Refracted Gravity (Matsakos &amp; Diaferio 2016)</td><td style={{ padding: '0.3rem' }}>Host-aligned m&nbsp;=&nbsp;1 lopsidedness of Milky Way satellites (unrun; would score for RG)</td></tr>
                 <tr><td style={{ padding: '0.3rem' }}>Ambient density at fixed g<sub>ext</sub></td><td style={{ padding: '0.3rem' }}>Density-keyed</td><td style={{ padding: '0.3rem' }}>Branch excluded; lever capped by a tidal identity, signal/systematics &asymp; 4&times;10&#x207B;&sup3;</td><td style={{ padding: '0.3rem' }}>&mdash;</td><td style={{ padding: '0.3rem' }}>None useful (systematics-limited)</td></tr>
@@ -175,8 +175,8 @@ export default function ForResearchers() {
           is refuted), so a discriminating test could at best tie on fit, and could select it only if its restriction held.
           The two that discriminated are TEST-09 (BTFR slope, 3.3σ) and TEST-10 (dwarf DM fractions), both at the
           boost ceiling B<sub>max</sub>&nbsp;=&nbsp;1/&Omega;<sub>m</sub>, and both kills are convention-dependent: TEST-09 does
-          not fire at the baryon-budget ceilings in the 2026-09-18 sweep (|&Delta;n| = 0.30 and 0.26 against a strict
-          &gt;&nbsp;0.3), so its convention-free content is that a bounded boost with B<sub>max</sub>&nbsp;&#8818;&nbsp;5.4 is
+          not fire at the baryon-budget ceilings in the 2026-09-18 sweep (|&Delta;n| = 0.297 and 0.260 against a strict
+          &gt;&nbsp;0.3), so its convention-free content is that a bounded boost with B<sub>max</sub>&nbsp;&#8818;&nbsp;5.3 is
           excluded; TEST-10&apos;s is B<sub>max</sub>&nbsp;&#8818;&nbsp;14. Whether they stay in the count of 6 is pending
           the project lead. (Corrected 2026-07-27 and 2026-08-08; see revision notes.)
           What remains citable are <strong>replications,
@@ -266,7 +266,7 @@ export default function ForResearchers() {
             <li>
               Different domain, also framework-independent:{' '}
               <a href="#dim4-liv" style={{ color: 'var(--color-accent-blue)' }}>2. dim-4 LIV naturalness gap</a> for
-              absolute-time discrete substrates (16&ndash;28 OOM).
+              absolute-time discrete substrates (15&ndash;27 OOM).
             </li>
           </ul>
           <p style={{ margin: '0.6rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
@@ -630,7 +630,7 @@ export default function ForResearchers() {
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
             Untested: the time-of-flight face (dim &ge; 5, energy-dependent dispersion; this is <em>not</em> the dim-4 face, which time-of-flight cannot see), which is structurally unreachable. Audited-Negative: the
-            preferred-frame / dim-4 face, a naturalness gap of 16&ndash;28 OOM with custodial escapes unexhibited.
+            preferred-frame / dim-4 face, a naturalness gap of 15&ndash;27 OOM with custodial escapes unexhibited.
           </p>
 
           {/* Citable result framing — what transfers beyond Synchronism */}
@@ -646,10 +646,10 @@ export default function ForResearchers() {
           }}>
             <strong style={{ color: '#f59e0b' }}>Transferable result (independent of Synchronism being correct):</strong>{' '}
             Any discrete absolute-time substrate without an added custodial boost-symmetry generates
-            dimension-4 Lorentz-violating SME coefficients c<sub>μν</sub>&nbsp;~&nbsp;α/π&nbsp;~&nbsp;10<sup>&#x2212;2</sup>
+            dimension-4 Lorentz-violating SME coefficients c<sub>μν</sub>&nbsp;~&nbsp;α/π&nbsp;&asymp;&nbsp;2&times;10<sup>&#x2212;3</sup>
             at one loop (Collins, Perez, Sudarsky, Urrutia &amp; Vucetich, <em>PRL</em> 93, 191301, 2004 &mdash;
             author list corrected 2026-07-09; see revision notes).
-            Existing bounds reach 10<sup>&#x2212;18</sup>–10<sup>&#x2212;30</sup> — a 16–28 OOM fine-tuning gap.
+            Existing bounds reach 10<sup>&#x2212;18</sup>–10<sup>&#x2212;30</sup> — a 15–27 OOM fine-tuning gap.
             The exclusion applies to any model whose defining commitment is an absolute preferred frame,
             regardless of the other details. A LIV/quantum-foundations referee can cite this as a
             naturalness problem — not a falsification. The distinction matters for the site&apos;s own
@@ -693,7 +693,7 @@ export default function ForResearchers() {
             </li>
           </ol>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem', fontWeight: 600, marginBottom: '0.25rem' }}>
-            Face 2 — Preferred frame + dim-4: <strong>CPSU 2004 naturalness gap</strong> (c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;10<sup>&#x2212;2</sup> at one loop, 16–28 OOM above bounds; custodial escapes unexhibited)
+            Face 2 — Preferred frame + dim-4: <strong>CPSU 2004 naturalness gap</strong> (c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;α/π&nbsp;&asymp;&nbsp;2&times;10<sup>&#x2212;3</sup> at one loop, 15–27 OOM above bounds; custodial escapes unexhibited)
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             A discrete substrate with absolute time picks out a preferred (CMB-rest) frame. Preferred-frame
@@ -712,7 +712,7 @@ export default function ForResearchers() {
               the minimal custodial protector against radiative generation of this coefficient
               (Collins, Perez, Sudarsky, Urrutia &amp; Vucetich, <em>PRL</em> 93, 191301 (2004)).
               <strong> Verdict: severe naturalness/fine-tuning gap (CPSU 2004).</strong>{' '}
-              Computation (2026-06-26 explorer): tree-level c<sub>&#x03BC;&#x03BD;</sub>=0 by single-substrate universality (no species-dependent k² coefficient at tree level). One-loop correction is UV-dominated and Planck-cutoff-independent: c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;&#x03B1;/&#x03C0;&nbsp;~&nbsp;10<sup>&#x2212;2</sup>–10<sup>&#x2212;3</sup>. Existing bounds: ≲10<sup>&#x2212;18</sup> (cavity MM), ≲10<sup>&#x2212;29</sup>–10<sup>&#x2212;30</sup> (nucleon comagnetometer). Fine-tuning gap: <strong>16–28 orders of magnitude</strong>. Two standard perturbative custodial escapes exist in the literature but are unexhibited in this framework: (1) <strong>SUSY</strong> (Groot Nibbelink &amp; Pospelov, <em>PRL</em> 94, 081601, 2005): forbids dim-3/4 LV operators entirely; (2) <strong>Anisotropic scale-hierarchy</strong> (Pospelov &amp; Shang, <em>PRD</em> 85, 105001, 2012): demonstrated for Hořava–Lifshitz gravity (the canonical absolute-time class) — separates the LV-generating scale from the electroweak scale via Λ_HL ≪ M_pl, suppressing SM-sector LV perturbatively without restoring boost invariance. The framework adopts neither: single-substrate universality is itself the obstacle to a Λ_HL ≪ M_pl scale separation. Status: <em>open custodial-mechanism gap, not a closed refutation.</em> <strong>Why not &ldquo;refuted&rdquo;, argued (added 2026-10-23, researcher simulated-visitor persona):</strong> in the LV literature an effective theory that predicts c<sub>&#x03BC;&#x03BD;</sub> ~ &#x03B1;/&#x03C0; with no protecting mechanism counts as excluded, and on that reading the <em>minimal</em> completion (single substrate, absolute time, Standard-Model couplings) is excluded at its natural value; the research ledger records it that way. The framework as a whole is not counted refuted only because it specifies no interacting completion, so there is no EFT whose coefficient can be computed beyond that minimal one. That is a debt, not a defence: until a custodial mechanism is exhibited, &ldquo;not refuted&rdquo; here means &ldquo;not yet specified enough to refute&rdquo;.
+              Computation (2026-06-26 explorer): tree-level c<sub>&#x03BC;&#x03BD;</sub>=0 by single-substrate universality (no species-dependent k² coefficient at tree level). One-loop correction is UV-dominated and Planck-cutoff-independent: c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;&#x03B1;/&#x03C0;&nbsp;&asymp;&nbsp;2&times;10<sup>&#x2212;3</sup>. Existing bounds: ≲10<sup>&#x2212;18</sup> (cavity MM), ≲10<sup>&#x2212;29</sup>–10<sup>&#x2212;30</sup> (nucleon comagnetometer). Fine-tuning gap: <strong>15–27 orders of magnitude</strong>. Two standard perturbative custodial escapes exist in the literature but are unexhibited in this framework: (1) <strong>SUSY</strong> (Groot Nibbelink &amp; Pospelov, <em>PRL</em> 94, 081601, 2005): forbids dim-3/4 LV operators entirely; (2) <strong>Anisotropic scale-hierarchy</strong> (Pospelov &amp; Shang, <em>PRD</em> 85, 105001, 2012): demonstrated for Hořava–Lifshitz gravity (the canonical absolute-time class) — separates the LV-generating scale from the electroweak scale via Λ_HL ≪ M_pl, suppressing SM-sector LV perturbatively without restoring boost invariance. The framework adopts neither: single-substrate universality is itself the obstacle to a Λ_HL ≪ M_pl scale separation. Status: <em>open custodial-mechanism gap, not a closed refutation.</em> <strong>Why not &ldquo;refuted&rdquo;, argued (added 2026-10-23, researcher simulated-visitor persona):</strong> in the LV literature an effective theory that predicts c<sub>&#x03BC;&#x03BD;</sub> ~ &#x03B1;/&#x03C0; with no protecting mechanism counts as excluded, and on that reading the <em>minimal</em> completion (single substrate, absolute time, Standard-Model couplings) is excluded at its natural value; the research ledger records it that way. The framework as a whole is not counted refuted only because it specifies no interacting completion, so there is no EFT whose coefficient can be computed beyond that minimal one. That is a debt, not a defence: until a custodial mechanism is exhibited, &ldquo;not refuted&rdquo; here means &ldquo;not yet specified enough to refute&rdquo;.
             </li>
             <li>
               <strong>Velocity-anisotropic phase-transition threshold (Phase-16, 2026-06-24).</strong>{' '}
@@ -729,14 +729,14 @@ export default function ForResearchers() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Net:</strong> the time-of-flight face is symmetry-protected and unreachable (three locks stand).
-            The preferred-frame / dim-4 face carries a <strong>severe naturalness gap</strong> (c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;10<sup>&#x2212;2</sup>, 16–28 OOM above existing bounds; CPSU 2004) — and it is the framework&apos;s defining commitment (absolute time) that generates it. This is the framework&apos;s only non-MOND, non-Zurek channel. Standard perturbative escapes (SUSY, anisotropic scale-hierarchy) exist in the literature but are unexhibited in the framework; without one, the naturalness gap is unresolved.
+            The preferred-frame / dim-4 face carries a <strong>severe naturalness gap</strong> (c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;α/π&nbsp;&asymp;&nbsp;2&times;10<sup>&#x2212;3</sup>, 15–27 OOM above existing bounds; CPSU 2004) — and it is the framework&apos;s defining commitment (absolute time) that generates it. This is the framework&apos;s only non-MOND, non-Zurek channel. Standard perturbative escapes (SUSY, anisotropic scale-hierarchy) exist in the literature but are unexhibited in the framework; without one, the naturalness gap is unresolved.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             Research lineage: PREDICTIONS.md B7 / Phase-12 / Phase-13 / Phase-16 in the{' '}
             <a href="https://github.com/dp-web4/Synchronism" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}>
               Synchronism research archive
             </a>.{' '}
-            Dim-4 c<sub>μν</sub> coefficient computed (2026-06-26): radiative value ~10<sup>&#x2212;2</sup>, 16–28 OOM above existing bounds (CPSU 2004 naturalness problem, not a data-driven refutation). For the framework to survive this channel, an unexhibited custodial mechanism must be specified — known candidates are SUSY (Groot Nibbelink &amp; Pospelov 2005) and anisotropic scale-hierarchy (Pospelov &amp; Shang 2012, demonstrated for Hořava–Lifshitz). This is the framework&apos;s most severe naturalness constraint (framing corrected per 2026-06-30 explorer audit; see revision notes).
+            Dim-4 c<sub>μν</sub> coefficient computed (2026-06-26): radiative value ~α/π&nbsp;&asymp;&nbsp;2&times;10<sup>&#x2212;3</sup>, 15–27 OOM above existing bounds (CPSU 2004 naturalness problem, not a data-driven refutation). For the framework to survive this channel, an unexhibited custodial mechanism must be specified — known candidates are SUSY (Groot Nibbelink &amp; Pospelov 2005) and anisotropic scale-hierarchy (Pospelov &amp; Shang 2012, demonstrated for Hořava–Lifshitz). This is the framework&apos;s most severe naturalness constraint (framing corrected per 2026-06-30 explorer audit; see revision notes).
           </p>
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.35rem' }}>
             <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>

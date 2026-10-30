@@ -451,7 +451,7 @@ export default function TwoReframes() {
             equivalence principle &mdash; so it predicts clock universality, the opposite of the
             mechanism-dependence a real instrument-effect claim would need to show. This reframe is not free:
             it is the same absolute-time interpretation that produces the
-            16&ndash;28 order-of-magnitude Lorentz-violation naturalness gap documented on{' '}
+            15&ndash;27 order-of-magnitude Lorentz-violation naturalness gap documented on{' '}
             <Link href="/honest-assessment#structural-tensions" style={{ color: 'var(--color-accent-blue)' }}>
               Honest Assessment
             </Link>. The only place mechanism-dependence could still show up is relocated, not open: a

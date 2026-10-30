@@ -1,0 +1,39 @@
+N clusters 42
+IDENTITY CONTROL (published: Newton -0.057, MOND+EFE -0.093, EFE-off -0.245, g0.489 -0.211, g2 -0.111)
+  Newton                       -0.0565
+  MOND+EFE                     -0.0933
+  MOND EFE-off                 -0.2447
+  dens g=0.489                 -0.2108
+  dens g=2                     -0.1111
+  compander EFE-off g=0.5      -0.2397
+  compander EFE-off g=0.87     -0.2408
+  compander EFE-off g=0.9      -0.2407
+  compander EFE-off g=0.95     -0.2406
+
+ROW LEVELS with cluster-bootstrap s.d.
+  Newton                       -0.0565 +/- 0.0210
+  MOND+EFE                     -0.0933 +/- 0.0241
+  MOND EFE-off                 -0.2447 +/- 0.0303
+  dens g=0.489                 -0.2108 +/- 0.0387
+  dens g=2                     -0.1111 +/- 0.0282
+  compander EFE-off g=0.5      -0.2397 +/- 0.0303
+  compander EFE-off g=0.87     -0.2408 +/- 0.0332
+  compander EFE-off g=0.9      -0.2407 +/- 0.0333
+  compander EFE-off g=0.95     -0.2406 +/- 0.0336
+
+PAIRED DIFFERENCES (row A minus row B; negative = A worse in the observed direction)
+  Newton                     - MOND+EFE       +0.0368 +/- 0.0046  (+8.0 sigma)  SEPARATED
+  MOND EFE-off               - MOND+EFE       -0.1514 +/- 0.0106  (-14.3 sigma)  SEPARATED
+  MOND EFE-off               - Newton         -0.1882 +/- 0.0136  (-13.9 sigma)  SEPARATED
+  dens g=0.489               - MOND+EFE       -0.1175 +/- 0.0178  (-6.6 sigma)  SEPARATED
+  dens g=2                   - MOND+EFE       -0.0178 +/- 0.0103  (-1.7 sigma)  not separated
+  dens g=2                   - Newton         -0.0546 +/- 0.0124  (-4.4 sigma)  SEPARATED
+  compander EFE-off g=0.5    - MOND EFE-off   +0.0050 +/- 0.0002  (+31.1 sigma)  SEPARATED
+  compander EFE-off g=0.87   - MOND+EFE       -0.1474 +/- 0.0138  (-10.7 sigma)  SEPARATED
+  compander EFE-off g=0.87   - Newton         -0.1843 +/- 0.0168  (-10.9 sigma)  SEPARATED
+  compander EFE-off g=0.9    - MOND+EFE       -0.1474 +/- 0.0139  (-10.6 sigma)  SEPARATED
+  compander EFE-off g=0.9    - Newton         -0.1842 +/- 0.0170  (-10.8 sigma)  SEPARATED
+  compander EFE-off g=0.95   - MOND+EFE       -0.1472 +/- 0.0142  (-10.4 sigma)  SEPARATED
+  compander EFE-off g=0.95   - Newton         -0.1841 +/- 0.0173  (-10.7 sigma)  SEPARATED
+
+>>> PRE-FIXED RULE: EFE-free corner closed by GCs on this statistic: YES

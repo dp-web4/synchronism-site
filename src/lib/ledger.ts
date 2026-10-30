@@ -132,7 +132,7 @@ export const REFUTATION_ROWS: RefutationRow[] = [
     root: 'Boost ceiling (same inequality as #1)',
     whichC: 'C_a, acceleration-keyed, floored at Ω_m',
     data: '153 SPARC rotation curves',
-    convention: 'Not convention-dependent in kind, unlike #1. At 1/Ω_m (cap 68.5%) 106/153 discs exceed; at the most permissive Ω_m/Ω_b = 6.39 (cap 84%) 28/153 still do at face value, and 2 (NGC 3741, ESO 444-G084, both gas-dominated) do for every stellar M/L in 0.3–0.7. So the robust half rests on two galaxies, with distance and inclination errors not propagated. Lensing: as #1.',
+    convention: 'Not convention-dependent in kind, unlike #1. At 1/Ω_m (cap 68.5%) 106/153 discs exceed; at the most permissive Ω_m/Ω_b = 6.39 (cap 84%) 28/153 still do at face value, and with distance, inclination and M/L propagated (explorer 2026-10-29) 3 stay above it at ≥ 3σ (NGC 2915, NGC 3741, UGC 06667; 6 at 2σ). ESO 444-G084 drops to 1.65σ under its inclination error. The condition is the gas census: gas × 2.0 removes NGC 3741 and × 3.1 removes NGC 2915; a uniform factor that large is disfavoured by the BTFR (c ≤ 1.25 at Υ* = 0.5), but gas hidden differently in each galaxy is not excluded. Lensing: as #1, also census-conditional.',
   },
   {
     n: 3,

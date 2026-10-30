@@ -15,7 +15,7 @@ export default function DarkEnergy() {
         <strong>&#x03B3; &asymp; &frac12; twice is not a cross-sector agreement.</strong> At &#x03B3; = &frac12; the function satisfies
         1/C &minus; 1 = 2/x exactly. Keyed on acceleration (the galaxy fit&apos;s variable) that is MOND&apos;s simple interpolating function;
         keyed on the mean matter density (the cosmology&apos;s) it adds a constant to the Friedmann equation, which is &Lambda;. So the galaxy
-        fit (&#x03B3; = 0.489) and the DESI fit (&#x03B3; = 0.487) are each dataset choosing its own standard model, in different variables,
+        fit (&#x03B3; = 0.489) and the DESI fit (&#x03B3; = 0.487 on the mean-density background; read at local density, P(k) pins |2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10&#x207B;&#x2075;) are each dataset choosing its own standard model, in different variables,
         at the one point where this family contains both. The match has no power to fail and is not evidence for the framework.
         Details: <Link href="/galaxy-rotation#gamma-half-nesting" style={{ color: 'var(--color-accent-blue)' }}>the galaxy side</Link>. (Box added 2026-10-22 at a
         graduate-physics simulated-visitor persona&apos;s request; the statement was already on this page, lower down.)
@@ -327,7 +327,7 @@ export default function DarkEnergy() {
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', fontSize: '0.9rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
           <li>
             <strong>The substituted family is not &ldquo;3.4&ndash;6.3&sigma; excluded&rdquo; &mdash; it is &Lambda;CDM.</strong>{' '}
-            Best &gamma; = 0.487 (&minus;0.021/+0.024), &Delta;&chi;&sup2; = &minus;0.3 vs &Lambda;CDM with one extra
+            Best &gamma; = 0.487 (&minus;0.021/+0.024; on the mean-density background; read at local density, P(k) pins |2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10&#x207B;&#x2075;), &Delta;&chi;&sup2; = &minus;0.3 vs &Lambda;CDM with one extra
             parameter; its best member projects to (w&#x2080;, w&#x2090;) = (&minus;0.993, +0.023). (Not the same object as the +0.23&hellip;+0.60 above: that is completion B with w&#x2080; forced to DESI&apos;s value; this is the free best fit of the non-covariant substituted family.) It cannot reach the
             crossing, and the data-level price of that is exactly &Lambda;CDM&apos;s own: +11.0 behind w&#x2080;w&#x2090;CDM
             (~2.9&sigma; for two parameters), no more. <em>(Data combination: DESI DR2 BAO + compressed CMB + one SN sample, DES

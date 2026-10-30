@@ -66,7 +66,7 @@ export default function MondComparator() {
                 ['a₀ origin', 'Empirical fit', 'Same coincidence restated (Reparametrization)'],
                 ['Galaxy rotation curves (RAR)', 'Good fit', 'Free γ lands on 0.489 ≈ ½, i.e. MOND\'s simple μ (Reparametrization). The framework\'s own γ = 2 loses by ΔBIC +184 (Failed)'],
                 ['Stated variable', 'Acceleration', 'Local density ρ, but every quantitative galaxy fit used acceleration. Keyed on density, the best fit switches the effect off (γ → 0.046)'],
-                ['Boost at low acceleration', 'Unbounded', 'Capped at 1/Ω_m = 3.17 in one reading. Excluded by the SPARC BTFR slope for caps ≲ 5.4 (Failed; the headline kill depends on the cap convention)'],
+                ['Boost at low acceleration', 'Unbounded', 'Capped at 1/Ω_m = 3.17 in one reading. Excluded by the SPARC BTFR slope for caps ≲ 5.3 (Failed; the headline kill depends on the cap convention)'],
                 ['RAR environment dependence', 'Via the external field effect', 'Predicted density dependence not seen: r² = 0.0001 vs a kill bar of 0.09 (Failed)'],
                 ['Solar System (Cassini)', 'Simple μ and McGaugh\'s RAR function are both excluded; only sharper transitions (δ ≥ 4) survive', 'At the SPARC-preferred γ it is simple μ, so it is excluded too, +17.7 to +18.0σ (Failed, inherited from MOND)'],
                 ['Wide binaries', 'Disputed in the literature', 'Density-keyed ratio identically null (γ_g ≡ 1) and that branch already fails lunar ranging; the acceleration-keyed reading inherits MOND\'s outcome (Self-Eliminating-or-Tie)'],

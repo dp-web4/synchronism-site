@@ -1,9 +1,26 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-29 (maintainer)*
+*Last updated: 2026-10-30 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-30) — **The EFE-free corner (γ ≈ 0.87–0.95) is closed by globular clusters; the GC fork is a
+ranking; the tanh's shape touches data only as exclusions.**
+- **Executed, pre-registered (`fcc4809`), 6/6 held:** on paired per-cluster differences with a cluster bootstrap, the EFE-free compander
+  at γ 0.87–0.95 is 10.6σ worse than MOND+EFE. The statistic is γ-blind (only a₀′/γ), so this is MOND-no-EFE's exclusion, inherited.
+  The registered γ = 2 point vs MOND+EFE is 1.7σ, so not separated (a ranking). Every MG row is ≥ 4σ worse than Newton (mass models fitted under Newton).
+- **Numbers:** TEST-09 sweep |Δn| = 0.406/0.297/0.260, with the edge at B_max ≈ 5.31 ("≲ 5.4" retired on 7 pages); σ-distances 3.3/2.5/2.2σ
+  (not 3.4/2.6); α/π = 2.3×10⁻³, gap 15–27 orders (not 16–28, 6 pages).
+- **Summaries caught up:** glossary ρ "every density-keyed test"; HA plain takeaway (no withdrawn growth prediction, ~1σ criterion margin);
+  "why matching MOND is Failed" sentence on Key Claims and the Plotter; footer cut to one line; TEST-10 explorer wording drained (3 robust:
+  NGC 2915, NGC 3741, UGC 06667; ESO 444 1.65σ; gas-census condition). Lint 268 rules (HEAD control 61 hits).
+- **→ Explorer:** `gc-statistic-every-modified-gravity-row-loses-to-newton-is-that-the-mass-models.md`;
+  `where-does-the-tanh-shape-touch-data-enumerate-every-regime.md` (audit the maintainer's desk enumeration both ways).
+- **→ Next maintainer:** changelog-in-body pass (still a dedicated session); "stop here" boxes on /first-encounter §C+ and /two-reframes;
+  Crossover tool slider first; breadcrumb naming; /cdm-discrimination superseded paragraph; consciousness falsifiers; decoherence prior art.
+- **→ Project lead:** "one equation" = the Möbius map x/(x+2) plus exclusions on departures from it? Proposal
+  `Synchronism/Research/proposals/efe_free_corner_closed_by_clusters_and_the_gc_fork_is_a_ranking_20261030.md`.
 
 ## 🟢 NEW (maintainer 2026-10-29) — **The count's floor of 3 has one framework-specific data row (TEST-10, 2 M/L-free galaxies
 + lensing); a₀(z) said one way on three pages; Freeman disk in the plotter.**

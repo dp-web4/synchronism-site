@@ -1,0 +1,52 @@
+
+=== ARM A
+  LEVEL (obs - model) vs zero, cluster bootstrap; |z| is how far the law misses the observed outer slope
+   Newton               -0.0830 +/- 0.0244  z=-3.4   sum chi2   1798.6
+   MOND+EFE             -0.1259 +/- 0.0274  z=-4.6   sum chi2   1295.2
+   dens g=2             -0.1498 +/- 0.0319  z=-4.7   sum chi2   1740.9
+   MOND EFE-off         -0.2812 +/- 0.0326  z=-8.6   sum chi2   5342.5
+   comp g=0.9 EFE-off   -0.2813 +/- 0.0352  z=-8.0   sum chi2   3649.0
+  PAIRED d(A) - d(Newton) with real obs, and with obs shuffled across clusters (data-cancellation control)
+   MOND+EFE             real -0.0429+/-0.0053  shuffled -0.0429+/-0.0053   dchi2 vs Newton   -503.4 +/-  186.2 (-2.7 sig)
+   dens g=2             real -0.0667+/-0.0160  shuffled -0.0667+/-0.0160   dchi2 vs Newton    -57.7 +/-   48.9 (-1.2 sig)
+   MOND EFE-off         real -0.1982+/-0.0149  shuffled -0.1982+/-0.0149   dchi2 vs Newton  +3543.9 +/- 1193.9 (+3.0 sig)
+   comp g=0.9 EFE-off   real -0.1983+/-0.0182  shuffled -0.1983+/-0.0182   dchi2 vs Newton  +1850.4 +/-  688.6 (+2.7 sig)
+
+=== ARM B
+  LEVEL (obs - model) vs zero, cluster bootstrap; |z| is how far the law misses the observed outer slope
+   Newton               +0.0151 +/- 0.0310  z=+0.5   sum chi2   2841.4
+   MOND+EFE             -0.0250 +/- 0.0323  z=-0.8   sum chi2   3755.1
+   dens g=2             -0.0039 +/- 0.0293  z=-0.1   sum chi2   2863.7
+   MOND EFE-off         -0.1313 +/- 0.0378  z=-3.5   sum chi2   7656.2
+   comp g=0.9 EFE-off   -0.1265 +/- 0.0392  z=-3.2   sum chi2   5427.6
+  PAIRED d(A) - d(Newton) with real obs, and with obs shuffled across clusters (data-cancellation control)
+   MOND+EFE             real -0.0402+/-0.0048  shuffled -0.0402+/-0.0048   dchi2 vs Newton   +913.7 +/-  389.0 (+2.3 sig)
+   dens g=2             real -0.0190+/-0.0075  shuffled -0.0190+/-0.0075   dchi2 vs Newton    +22.2 +/-   26.0 (+0.9 sig)
+   MOND EFE-off         real -0.1465+/-0.0142  shuffled -0.1465+/-0.0142   dchi2 vs Newton  +4814.7 +/- 1349.3 (+3.6 sig)
+   comp g=0.9 EFE-off   real -0.1417+/-0.0169  shuffled -0.1417+/-0.0169   dchi2 vs Newton  +2586.2 +/-  686.5 (+3.8 sig)
+
+=== ARM C beta in (-0.3, 0.0, 0.3)
+  LEVEL (obs - model) vs zero, cluster bootstrap; |z| is how far the law misses the observed outer slope
+   Newton               +0.0431 +/- 0.0258  z=+1.7   sum chi2    272.5
+   MOND+EFE             +0.0348 +/- 0.0280  z=+1.2   sum chi2    281.2
+   dens g=2             +0.0278 +/- 0.0267  z=+1.0   sum chi2    273.3
+   MOND EFE-off         +0.0103 +/- 0.0311  z=+0.3   sum chi2    343.1
+   comp g=0.9 EFE-off   -0.0058 +/- 0.0308  z=-0.2   sum chi2    326.9
+  PAIRED d(A) - d(Newton) with real obs, and with obs shuffled across clusters (data-cancellation control)
+   MOND+EFE             real -0.0083+/-0.0094  shuffled -0.0083+/-0.0094   dchi2 vs Newton     +8.7 +/-    4.7 (+1.8 sig)
+   dens g=2             real -0.0153+/-0.0071  shuffled -0.0153+/-0.0071   dchi2 vs Newton     +0.8 +/-    2.8 (+0.3 sig)
+   MOND EFE-off         real -0.0329+/-0.0260  shuffled -0.0329+/-0.0260   dchi2 vs Newton    +70.6 +/-   22.5 (+3.1 sig)
+   comp g=0.9 EFE-off   real -0.0489+/-0.0146  shuffled -0.0489+/-0.0146   dchi2 vs Newton    +54.4 +/-   18.8 (+2.9 sig)
+
+=== ARM C beta in (-0.3, 0.0)
+  LEVEL (obs - model) vs zero, cluster bootstrap; |z| is how far the law misses the observed outer slope
+   Newton               +0.0310 +/- 0.0293  z=+1.1   sum chi2    284.3
+   MOND+EFE             +0.0069 +/- 0.0320  z=+0.2   sum chi2    301.0
+   dens g=2             +0.0242 +/- 0.0287  z=+0.8   sum chi2    285.8
+   MOND EFE-off         +0.0572 +/- 0.0244  z=+2.3   sum chi2    395.4
+   comp g=0.9 EFE-off   +0.0545 +/- 0.0257  z=+2.1   sum chi2    377.2
+  PAIRED d(A) - d(Newton) with real obs, and with obs shuffled across clusters (data-cancellation control)
+   MOND+EFE             real -0.0241+/-0.0098  shuffled -0.0241+/-0.0098   dchi2 vs Newton    +16.7 +/-    8.5 (+2.0 sig)
+   dens g=2             real -0.0069+/-0.0074  shuffled -0.0069+/-0.0074   dchi2 vs Newton     +1.6 +/-    3.2 (+0.5 sig)
+   MOND EFE-off         real +0.0262+/-0.0129  shuffled +0.0262+/-0.0129   dchi2 vs Newton   +111.1 +/-   36.1 (+3.1 sig)
+   comp g=0.9 EFE-off   real +0.0235+/-0.0147  shuffled +0.0235+/-0.0147   dchi2 vs Newton    +92.9 +/-   31.7 (+2.9 sig)

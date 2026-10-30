@@ -1,0 +1,32 @@
+Starting Synchronism Maintainer Session at Fri Oct 30 06:00:01 PDT 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+I ran a test today instead of rewording around it, and it closed the framework's last galaxy-scale corner with a prediction different from MOND's.
+
+**The test.** One visitor persona (the researcher) raised two HIGH items, and both could be settled by running the globular-cluster test rather than editing text. I pre-registered it (`fcc4809`) before writing the script. It scores the laws by their per-cluster differences, with a cluster bootstrap for the errors. All six registered predictions held.
+- **The no-external-field corner (γ ≈ 0.87–0.95) is closed.** It comes out 10.6σ worse than MOND with its external-field effect (EFE) and 10.8σ worse than Newton. This was the one reading that still survived both SPARC and the planetary orbits. But the cluster test can't see γ: cluster outskirts only respond to one combined scale, and γ = ½ gives the same −0.240. So this is MOND-without-EFE's exclusion, inherited. It is not a test of the framework's own shape.
+- **The globular-cluster "fork" is a ranking, not a separation.** The old pass rule used MOND+EFE's own residual as the bar, so MOND+EFE passed by construction. On paired differences, the registered γ = 2 point and MOND+EFE are only 1.7σ apart. Every modified-gravity row, MOND+EFE included, is at least 4σ worse than Newton. Part of that is built in, because the cluster mass models were fitted assuming Newton.
+
+**Numbers corrected from unrounded output:**
+- **BTFR ceiling test:** at the middle cap the miss is 0.297 against a 0.3 line, so the verdict was decided at the third decimal. The cutoff for "excluded" is ≈ 5.31, not 5.4 (fixed on 7 pages).
+- **σ-distances on that test:** 3.3 / 2.5 / 2.2σ, not 3.4 / 2.6. The old values divided by an error rounded to 0.12.
+- **Lorentz-violation gap:** α/π is 2.3×10⁻³, so the gap is 15–27 orders of magnitude, not 16–28 (fixed on 6 pages).
+
+**Site fixes (`f402a15`, pushed):**
+- The glossary entry for ρ no longer says every test used density; the galaxy tests used acceleration.
+- The Honest Assessment plain-language summary no longer cites the withdrawn growth prediction. It now says the BTFR kill line was crossed by about 1σ, instead of "far too much to be a fluke".
+- Key Claims and the Galaxy Plotter now have one plain sentence on why matching MOND still counts as Failed.
+- The explorer's 10-29 TEST-10 results are on the site: three galaxies stay robust, ESO 444-G084 drops to 1.65σ once its inclination error is included, and the remaining condition is how much gas is uncounted.
+- The footer is one line.
+- The retired-wordings lint now has 268 rules; checked against the previous commit it flags 61 old hits, so the new rules work. The build passes.
+
+**Research repo (`2c985ae4`, pushed):** a new PREDICTIONS block and a proposal. The frame point, prompted by the graduate persona's question about where the tanh's shape ever meets data: wherever data reach the equation, it is either linear, sitting exactly at the γ = ½ point x/(x+2) (MOND's simple μ in galaxies, Λ in cosmology), or dependent on one combined scale. Its γ ≠ ½ shape meets data only in the planetary-orbit tail and the Cassini test, and both exclude it. So the stated content of "one equation" would become that γ = ½ formula plus a list of exclusions on departing from it. Whether to adopt that wording is your call.
+
+**Explorer topics seeded:**
+- Does Newton's lead in the cluster test survive refitting the mass models under each law?
+- An audit of my regime-by-regime list, checking it for both over- and under-refutation.
+
+**Loose ends:**
+- The runner reported 1 open external item on the site repo, but `gh` listed none, and the flagger's state file only holds Synchronism#4. I've noted the mismatch in the session log; no reply drafted.
+- The Gaia wide-binary number (≈2.1× boost against Chae's 1.49) is my estimate, not a run on the binned data.
+- The big "move dated revision notes out of the main text" pass is deferred again; it needs its own session.

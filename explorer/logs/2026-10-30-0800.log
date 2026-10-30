@@ -1,0 +1,35 @@
+Starting Synchronism Explorer Session at Fri Oct 30 08:00:01 PDT 2026
+The two strongest globular-cluster claims published on the site yesterday are not data results. They measure how far apart the models are, not which one the data prefer.
+
+**Why:** the cluster statistic is the observed outer slope of the velocity-dispersion profile minus the model's slope. When you subtract two laws' values for the same cluster, the observed slope cancels exactly, leaving only the difference between the two models. As a check I shuffled the observed slopes across clusters, and every paired difference and its bootstrap error came out identical to the last digit. So these figures say nothing about the data: "MOND+EFE 8σ worse than Newton", "γ = 2 4.4σ worse than Newton", "EFE-free corner closed at 10.6σ", and "γ = 2 vs MOND+EFE 1.7σ".
+
+**What the data say instead.** I re-scored with measures that do use the data: the fit quality (χ²) with the mass model refit under each law, and how far each law's slope misses the observed one. This was pre-registered at commit `012ca7c` and run on the 28 clusters that aren't core-collapsed.
+- **The "−0.057 systematics floor" comes from the catalogue's tidal radius.** That column is calculated with Newtonian physics (Webb+2013), not measured. Swapping in measured (photometric) tidal radii from the Harris catalogue moves Newton's offset from −0.083 to +0.015 ± 0.031.
+- **Newton vs MOND+EFE has no stable sign:**
+
+  | Mass model | Which law fits better | Significance |
+  |---|---|---|
+  | Catalogue | MOND+EFE | 2.7σ |
+  | Photometric tidal radius | Newton | 2.3σ |
+  | Refit under each law | Newton | 1.8σ |
+
+- **The registered γ = 2 point can't be told apart from Newton** (0.3–1.2σ in every setup). That's expected, since cluster densities sit far above the knee, where C ≈ 1.
+- **The EFE-free corner is about 3σ worse than Newton in every setup.** It is disfavoured, not closed at 10.6σ.
+
+**My own error:** my pre-registered decision rule leaned on that same subtraction for one of its two arms, so that arm could only pass. The rule's verdict was "mixed". I've recorded the defect in the finding and the session log. I also updated the memory note that had recommended this kind of paired scoring: compare fit quality (χ² or squared misses) between laws, never the raw residuals, and run a shuffled-observation check first.
+
+**For the maintainer** (wording is in the finding):
+- Rewrite the bolded "closed by globular clusters … 10.6σ" sentence on /galaxy-rotation.
+- Replace the "every modified-gravity row is worse than Newton … 8σ" passage and the "systematics floor" phrase on /honest-assessment.
+- Add retired-phrase lint rules for those wordings.
+- Correct the 10-30 research proposal: its list of exclusions should carry this one at about 3σ.
+
+**So what?** The physics that survives is that the deep-MOND-without-EFE class is disfavoured at about 3σ by cluster outer slopes. Cluster data can't separate Newton from MOND+EFE with this pipeline, and they say nothing about the registered γ = 2 point. The method lesson applies beyond this framework: any paired comparison of residuals elsewhere in the record should get the same shuffle check.
+
+Everything is committed in `c5b5824` and pushed. The GC topic is archived. I left the untracked maintainer `.npy` files and the 08:00 run log alone.
+
+Files are in `explorer/`:
+- findings/gc-paired-differences-cancel-the-data-the-8-and-10p6-sigma-are-model-separations.md
+- findings/scripts/gc_per_law_refit.py
+- findings/scripts/gc_per_law_refit_posthoc.py
+- logs/2026-10-30.md

@@ -1,0 +1,24 @@
+Starting Synchronism Explorer Session at Sat Oct 31 08:00:01 PDT 2026
+I worked the chemistry Z-null topic. The question turned out to rest on a false premise, and the actual finding is bigger than the one the topic asked for.
+
+**What the chemistry table actually is.** The visitor and the topic both asked "which 23 materials?". The 23 rows on /chemistry-correlation-explorer are 23 different properties. Each is a correlation over its own set of materials from a different research session (19–33 materials, atomic numbers 3–82, some compounds). There is no shared sample for the old Z-polynomial null to have been fitted to.
+
+**The Z-null fails on real data.** I pre-registered (`6a1c4b6`), then ran it on the 10 property rows I could recover from `Synchronism/simulations/chemistry/`. A polynomial in Z gets nowhere near the published r values: |r| ≤ 0.53 against 0.60–0.98. So the May null's conclusion is wrong on data, not just argued with the wrong method. Three of four predictions held; the fourth was wrong (electronegativity, not atomic volume, is the least Z-like).
+
+**Why the r values are high anyway.** The framework variables are textbook quantities with new names:
+- γ_phonon = 2T/θ_D, so its correlation with any property is exactly that property's correlation with the Debye temperature.
+- γ_optical = 13.6 eV / ionization energy. The "electronegativity 0.979" is actually chemical softness plotted against 1/IE.
+
+The Reparametrization verdict survives, but on this ground, not on the Z-null.
+
+**Provenance (the largest result).** The table has not changed since the site's initial commit (2026-02-21), and it has drifted from the research archive:
+- None of the 16 high-r rows cites a session whose topic matches the property. 5 of the 7 low-r rows do.
+- Several r values belong to other properties. "Thermal conductivity 0.961" is the redox-potential result, for example.
+- Electrical conductivity is shown as **+0.955 "Coherence helps"**, but the archive records **r = −0.414, "WRONG SIGN"** (#81).
+- The Young's, shear and bulk modulus correlations depend on one material: without diamond they fall from 0.92/0.94/0.71 to 0.60/0.63/0.37.
+
+**Mistake I made.** My registered loader skipped diamond because three scripts label it `C-d`, which I didn't map to carbon. I fixed the mapping after the registered run and kept both outputs. The conclusion is the same either way.
+
+I wrote up the finding with a P0 action list for the maintainer (`explorer/findings/chemistry-table-rows-are-not-traceable-and-the-z-null-fails-on-the-real-rows.md`) and the session log (`explorer/logs/2026-10-31.md`). I archived the topic and added a memory note about tracing rows before running a null on them. Everything is committed as `a2b9ecd`, not pushed.
+
+**What this changes:** an argument the site used against its own claims was false. The real situation is simpler: the chemistry γ variables are θ_D and ionization energy under other names, and the table every chemistry page quotes is not a record of actual computations. The next useful step is to check which other data tables have also never been regenerated since the initial commit.

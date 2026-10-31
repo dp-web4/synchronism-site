@@ -1,3 +1,29 @@
 Starting Synchronism Maintainer Session at Sat Oct 31 06:00:01 PDT 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+Session done and pushed: site `3892831`, research repo `e2784def`. The build passes and the lint is clean.
+
+**WAKE: yes, this is a research problem, not just a site problem.** Two of the site's negative results were not measuring the data the way their sentences said:
+
+1. **The globular-cluster "10.6σ" was mine, from yesterday.** It compared each pair of models by the difference of their residuals, cluster by cluster, and in that difference the observed data cancels exactly. So the number measured how far apart the models are, not which one the data prefer. The explorer caught this on 10-30, and today's researcher persona caught it again on its own.
+2. **The chemistry polynomial-in-Z comparison was never run on the actual data.** It used made-up smooth curves (√Z, log Z on Z = 1–50). Eleven files said it was "fit to the same targets" for 5½ months, and its premise, that these properties change steadily with Z, is false across the periodic table. The graduate-physics persona caught it.
+
+Pre-registration caught neither, because it checks when a test was written, not whether the number depends on the data. I wrote a proposal before fixing anything: `refutation_statistics_need_a_data_dependence_column_20261031.md`. It asks for one check on every negative σ in the register: does the number move when the data are shuffled?
+
+**Site fixes**
+- **Globular clusters (4 pages):** "closed at 10.6σ" now reads "disfavoured at about 3σ, depending on the cluster mass model" (Δχ² +54 ± 19 against Newton). The registered γ = 2 point can't be told apart from Newton. Newton vs MOND with its external field changes sign depending on which tidal radius is used. What was called a "systematics floor" (−0.057) is actually the catalogue's computed tidal radius. Yesterday's wording is kept in a collapsible revision note. I checked the explorer's numbers against its output files before editing.
+- **Chemistry (11 files):** the comparison is now described as what it was. The "Reparametrization" badge stays, now justified by the real reason: each correlation is an after-the-fact fit against a quantity built from the Debye temperature. Four rows had opposite verdicts on two pages (Hall coefficient, magnetic susceptibility, piezoelectricity, T_c); each now has one status, the failure.
+- **Beginner pages:** added a plain one-line MOND explanation on the Plotter and What Synchronism Is Not. On the landing page, "non-degenerate galaxy test" is now plain words.
+- **Lint:** 4 new rules. Run against the previous commit, they hit 29 times. The chemistry rule found 3 pages my own search had missed.
+
+**Research repo:** a correction block in PREDICTIONS.md (no bucket moves; Bucket 0 is still 0) and a correction banner at the top of yesterday's proposal, with its original text kept.
+
+**Explorer topics:** run the shuffle check across every negative result in the register; recover the 23 chemistry rows and run the comparison on real data.
+
+**Deferred:**
+- **Revision history inside body text:** this still needs its own session. One finding: the lint lets a phrase through if it sits next to an in-body "(corrected …)" note, which encourages exactly the clutter the tech-writer persona complained about. That session should change the lint so only collapsible revision notes count.
+- **Renaming the misleading terms** (coherence, ρ_crit, MRH, the badge family): this is a decision for you, not a copy fix.
+- **Not mine, left alone:** three untracked `.npy` files in `maintainer/scripts/` are not from this session, so I didn't commit them.
+- **External item:** Synchronism#4 has had one comment since it was flagged on 10-13, so nothing new is owed.
+
+**So what?** The one galaxy-scale version of the framework that differs from MOND with its external field is less dead than the site said yesterday. The chemistry verdict stands, but for a different reason than the one printed. The lesson "audit refutations as hard as claims" was already in memory and didn't stop either error. A check built into the register is the fix.

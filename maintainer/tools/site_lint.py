@@ -23,6 +23,20 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-10-31 (maintainer): the 10-30 GC "row differences" scores. A paired difference of residuals between two
+    #     laws cancels the observed slope (d_A - d_B = s_B - s_A); shuffling s_obs reproduces every number (explorer 2026-10-30).
+    #     8 sigma / 4.4 sigma / 6.6 sigma / 10.6 sigma / 10.8 sigma were model separations. Data-facing: gamma=2 ~ Newton,
+    #     Newton vs MOND+EFE sign flips with r_t, EFE-free rows ~3 sigma worse than Newton. The -0.057 is the Webb r_t.
+    # 2026-10-31 chemistry: the polynomial-in-Z null (2026-05-10) was run on synthetic sqrt(Z)/log Z/Z^(1/3) curves, Z = 1-50,
+    #     never on the chemistry rows; and "near-monotonic in Z" is false across the table (Lothar Meyer atomic-volume curve).
+    (r"near-monotonic (in|functions of) (atomic number )?Z|polynomial in (atomic number )?Z matches|polynomial in atomic number matches|comparable r on density-monotonic rows|matches every r to within 0\.07|any monotone function of Z reaches", "2026-10-31",
+     "the Z-polynomial null ran on synthetic curves, not the rows; the reason r is not evidence is the post-hoc theta_D proxy", False),
+    (r"10\.6σ|10\.8σ|0\.147 ± 0\.014|0\.184 ± 0\.017", "2026-10-31",
+     "GC paired differences cancel s_obs; the EFE-free corner is ~3 sigma disfavoured vs Newton (refit), not 10.6 sigma", False),
+    (r"systematics floor every law|−0\.037 ± 0\.005|γ&nbsp;=&nbsp;2 by 4\.4σ|separated from both at 6\.6σ", "2026-10-31",
+     "the -0.057 Newton offset is the catalogue (Webb+2013) tidal radius; the 8/4.4/6.6 sigma were model separations", False),
+    (r"CLOSED BY GLOBULAR CLUSTERS|corner is closed by globular|closes the external-field-free corner|With the corner closed", "2026-10-31",
+     "globular clusters disfavour the EFE-free corner at ~3 sigma, conditional on the mass model; not closed", False),
     # --- retired 2026-10-30 (maintainer): glossary "every executed test" uses density (galaxy kills keyed on acceleration;
     #     Equation Anatomy retired it 10-04, the glossary kept it); "six-step tour" (eight steps); Step 2 "critical density" title;
     #     alpha/pi ~ 1e-2 and "16-28 orders" (alpha/pi = 2.3e-3, gap 15-27); the TEST-09 sweep at 2 decimals (|dn| = 0.297 at 5.389,

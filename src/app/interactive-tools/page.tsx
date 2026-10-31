@@ -75,7 +75,7 @@ const coreTools = [
   {
     title: 'Chemistry Correlation Explorer',
     href: '/chemistry-correlation-explorer',
-    desc: 'See how γ correlates with chemical properties on 23 curated rows; the source table and the γ assignments are unpublished (the archive\'s "1,703 phenomena" is a session counter, not a table). High r values (0.98+) reflect density-monotonicity, not Synchronism-specific physics — the page states the null-model result (a 2-parameter polynomial in Z matches every r to within 0.07, sometimes better) at the head of the table; it has no per-row null column, and how γ was assigned per material is undocumented.',
+    desc: 'See how γ correlates with chemical properties on 23 curated rows; the source table and the γ assignments are unpublished (the archive\'s "1,703 phenomena" is a session counter, not a table). High r values (0.98+) are post-hoc fits against a γ proxy that contains the target, not Synchronism-specific physics; the polynomial-in-Z null was run on synthetic curves, not these rows (corrected 2026-10-31), and how γ was assigned per material is undocumented.',
     level: 'Advanced',
     state: 'Artifact Lesson',
     epistemic: 'chemistry' as EpistemicStatus,

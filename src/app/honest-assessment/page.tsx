@@ -819,15 +819,14 @@ export default function HonestAssessment() {
               matches them.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              <strong>Null model result (run 2026-05-10; this row previously said &ldquo;not yet
-              run&rdquo; — that was stale):</strong> Sound velocity, electronegativity, and atomic
-              volume are all near-monotonic functions of atomic number Z, so the relevant null is
-              r(polynomial in Z), not r = 0. A 2-parameter degree-2 polynomial in Z was fit to the
-              same targets, analytically and numerically: <strong>|&#x0394;r| &#x2264; 0.07 on
-              essentially all density-monotonic targets, and the polynomial sometimes outperforms
-              Synchronism</strong> (r &#x2248; 0.99 vs &#x2248; 0.87 on linear-in-Z and generic
-              smooth-monotonic targets). Verdict: the chemistry correlations are <strong>null-class</strong> —
-              they demonstrate density-monotonicity (known physics), not anything specific to C(&#x03C1;).
+              <strong>Null model (corrected 2026-10-31, graduate-physics simulated-visitor persona):</strong> the
+              2026-05-10 polynomial-in-Z null was run on synthetic monotonic curves (√Z, log Z, Z<sup>1/3</sup>,
+              Z = 1–50), not on the chemistry rows. Its |&#x0394;r| &#x2264; 0.07 shows only that two monotonic functions
+              of one variable correlate highly. The earlier premise, that sound velocity, electronegativity and atomic volume
+              rise or fall steadily with Z, is false across the periodic table (atomic volume against Z is the Lothar Meyer periodicity
+              curve). The verdict, <strong>null-class / Reparametrization</strong>, stands on a different ground: each r is a
+              post-hoc fit against a γ proxy that contains the target (γ<sub>phonon</sub> = 2T/θ<sub>D</sub>), and about 86% of
+              the &ldquo;89%&rdquo; are restatements of the Debye model. The real-data null is not run (the row list is unpublished).
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               Additional caveats: ~11% failure rate. Era 2 chemistry (sessions 134-2660) identified as
@@ -1111,20 +1110,35 @@ export default function HonestAssessment() {
               residual, |−0.093|. A row <em>passes</em> if |residual| ≤ 0.093, is <em>marginal</em> if it is below 2 × 0.093 = 0.186, and is
               <em> excluded</em> otherwise. The ±0.027 is shared across rows (same clusters, same mass models), so differences between rows
               are better determined than ±0.027 each would suggest, but no covariance was computed. The Newtonian row is not zero
-              (−0.057): that is the systematics floor every law sits on, and it is why the rule is relative to MOND+EFE rather than to zero.
+              (−0.057). That offset is the catalogue tidal radius, not a floor in the data: Baumgardt&apos;s r<sub>t</sub> is computed
+              (Webb+2013 eq. 8, a Newtonian formula), and swapping in Harris&apos;s photometric King r<sub>t</sub> moves Newton to
+              +0.015 ± 0.031 on the 28 non-core-collapsed clusters (explorer 2026-10-30). The rule is relative to MOND+EFE for that reason.
               The &ldquo;× Newtonian&rdquo; column is a display, not the rule.
-              <br />&bull; <strong>Scored on row differences, the fork is a ranking (2026-10-30, pre-registered at site <code style={{ fontSize: '0.75rem' }}>fcc4809</code> before the script).</strong>{' '}
+              <br />&bull; <strong>The fork is a ranking, scored on data-facing statistics (corrected 2026-10-31).</strong>{' '}
               A researcher simulated-visitor persona pointed out that the pass bar is MOND+EFE&apos;s own residual, so MOND+EFE passes by
-              construction. Re-scored with a cluster bootstrap on paired per-cluster differences (identity control reproduces every row to
-              ±0.001): the registered γ&nbsp;=&nbsp;2 row and MOND+EFE are <strong>not separated</strong> (−0.018 ± 0.010, 1.7σ), so
-              &ldquo;marginal&rdquo; ranks the registered point beside MOND+EFE; it does not distinguish them. Every modified-gravity row
-              is worse than Newton on this statistic, MOND+EFE included (−0.037 ± 0.005, 8σ), and γ&nbsp;=&nbsp;2 by 4.4σ. The
-              external-field-off rows are separated from both at 6.6σ or more: γ&nbsp;=&nbsp;0.489 density, simple μ without the external
-              field, and the compander without it at γ&nbsp;=&nbsp;0.87–0.95. That last row closes the external-field-free corner that
-              survived SPARC and the planets (<Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>).
-              The statistic cannot see γ there, so the closure is inherited from MOND without its external field. Newton&apos;s lead is partly
-              built in, since the mass models were fitted under Newton (the 2026-09-19 refit moved ratios by 7%). Script:{' '}
-              <code style={{ fontSize: '0.75rem' }}>maintainer/scripts/gc_row_differences_cluster_bootstrap.py</code>.
+              construction. Scored instead with a per-law refit (tidal radius, anisotropy β and mass free, 0.25 dex prior on the
+              photometric r<sub>t</sub>; 28 clusters; cluster bootstrap; explorer 2026-10-30, pre-registered at site{' '}
+              <code style={{ fontSize: '0.75rem' }}>012ca7c</code>):
+              the registered γ&nbsp;=&nbsp;2 row is <strong>indistinguishable from Newton</strong> (Δχ² +0.8 ± 2.8, 0.3σ; GC densities sit far
+              above the knee, so C&nbsp;≈&nbsp;1), and slightly ahead of MOND+EFE (−7.9 ± 5.2, 1.5σ). <strong>Newton vs MOND+EFE has no stable
+              sign:</strong> with catalogue inputs MOND+EFE is better (Δχ² −503 ± 186, 2.7σ); with photometric r<sub>t</sub> Newton is better
+              (+914 ± 389, 2.3σ); refit, Newton is better by +8.7 ± 4.7 (1.8σ). The external-field-off rows (simple μ, and the compander at
+              γ&nbsp;=&nbsp;0.9) are <strong>about 3σ worse than Newton in every arm</strong> (refit: +71 ± 23 and +54 ± 19), so the
+              external-field-free corner that survived SPARC and the planets is <strong>disfavoured at ~3σ, conditional on the mass
+              model, not closed</strong> (<Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>).
+              The statistic cannot see γ there, so the disfavouring is inherited from MOND without its external field. Script:{' '}
+              <code style={{ fontSize: '0.75rem' }}>explorer/findings/scripts/gc_per_law_refit.py</code>.
+              <details style={{ marginTop: '0.35rem' }}>
+                <summary style={{ cursor: 'pointer' }}>Revision note: what this bullet said on 2026-10-30, and why it was wrong</summary>
+                The 2026-10-30 version scored paired per-cluster differences of residuals between two laws. For two laws A and B the
+                difference is (s<sub>obs</sub> − s<sub>A</sub>) − (s<sub>obs</sub> − s<sub>B</sub>) = s<sub>B</sub> − s<sub>A</sub>: the observed slope cancels
+                exactly. Shuffling the observed slopes across clusters reproduces every difference and its bootstrap width to the last
+                printed digit. So its numbers (Newton ahead of MOND+EFE at 8σ, of γ&nbsp;=&nbsp;2 at 4.4σ, the external-field-free corner
+                10.6σ behind MOND+EFE, and the rows separated at 6.6σ or more) measured how far apart the models are, cluster by
+                cluster, not which one the data prefer. Caught independently by the explorer (2026-10-30) and a researcher
+                simulated-visitor persona (2026-10-31). The arithmetic in{' '}
+                <code style={{ fontSize: '0.75rem' }}>maintainer/scripts/gc_row_differences_cluster_bootstrap.py</code> is right; the statistic was the error.
+              </details>
               <br />&bull; <strong>Under the action (L3, striction included) the window does not survive in this form.</strong> In a
               cluster&apos;s knee shell the striction force is 1.7&ndash;13&times; gravity and the net force points outward for all five knees
               tested. Re-running the 42-cluster statistic under L3 changes 18 of the 27 verdicts on the γ&nbsp;=&nbsp;0.489 row. The

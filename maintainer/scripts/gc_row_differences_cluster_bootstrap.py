@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 """
+WARNING (maintainer 2026-10-31): the arithmetic here is right, the STATISTIC is data-free. For two laws,
+d_A - d_B = (s_obs - s_A) - (s_obs - s_B) = s_B - s_A: the observation cancels, and shuffling s_obs
+reproduces every difference (explorer/findings/gc-paired-differences-cancel-the-data-...md). Its 8 / 4.4 /
+10.6 / 10.8 sigma are model separations. Data-facing scores: explorer/findings/scripts/gc_per_law_refit.py.
+
 Maintainer 2026-10-30 -- GC table scored on row DIFFERENCES with a cluster bootstrap, plus the
 external-field-free compander at gamma ~ 0.9 (the corner that survives SPARC at galaxy level and the
 planetary perihelia). PREREG: gc_row_differences_cluster_bootstrap_PREREG.md (committed fcc4809

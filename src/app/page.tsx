@@ -33,7 +33,7 @@ export default function Home() {
           The bet: a single dial &mdash; how coherently a system&apos;s parts act together, computed from its
           density &mdash; might explain what currently needs a separate patch at every scale (dark matter for
           galaxies, wavefunction collapse for quantum measurement). That is what the equation tried to do.
-          Tested against real data, it has not won: the one non-degenerate galaxy test collapsed it onto MOND
+          Tested against real data, it has not won: the one galaxy test that could tell it apart from existing ideas collapsed it onto MOND
           (Modified Newtonian Dynamics &mdash; a 40-year-old idea that gravity itself gets stronger than Newton&apos;s law at
           extremely weak accelerations, used instead of dark matter; the framework&apos;s galaxy formula turned out to be MOND&apos;s), and the
           cluster scale requires a second density parameter the framework doesn&apos;t have. &ldquo;Tested&rdquo; here
@@ -606,9 +606,9 @@ export default function Home() {
               <Link href="/gamma-boundary" className="card" style={{ textDecoration: 'none' }}>
                 <h3 style={{ color: 'var(--color-accent-blue)' }}>Chemistry</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  1,703 logged chemistry sessions (one &ldquo;phenomenon type&rdquo; per session, so a counter, not a census) near the &#x03B3; &#x2248; 1 boundary. Sound velocity r = 0.982 (no null class: a two-parameter polynomial in atomic number Z matches it to within 0.07, and the &#x03B3; assignments behind it are unpublished; see the Chemistry Correlation Explorer).
+                  1,703 logged chemistry sessions (one &ldquo;phenomenon type&rdquo; per session, so a counter, not a census) near the &#x03B3; &#x2248; 1 boundary. Sound velocity r = 0.982 (null-class: it is a post-hoc fit against a &#x03B3; proxy that contains the Debye temperature, and the &#x03B3; assignments behind it are unpublished; see the Chemistry Correlation Explorer).
                   Melting point prediction: 53% error. The 89% consistency rate reflects
-                  generic sigmoid behavior on density-monotonic properties — not a Synchronism-unique prediction.
+                  restatements of the Debye model (about 86%) — not a Synchronism-unique prediction.
                 </p>
                 <span className="badge badge-reparametrization" title="Equivalent to existing physics in different notation — same math, not new physics">Reparametrization — Chemistry</span>
               </Link>

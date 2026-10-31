@@ -333,9 +333,9 @@ export default function CoreIdea() {
                   89% of 1,703 logged chemistry sessions (a session counter, not a census of phenomena) landed here.
                 </p>
                 <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-                  Null model run (2026-05-10): a plain 2-parameter polynomial in atomic number matches these
-                  correlations (|&#x0394;r| &#x2264; 0.07) and sometimes beats them, so they reflect density-monotonic
-                  chemistry, not anything specific to this framework (null-class). (This card said &ldquo;pending
+                  Why the correlations are not evidence: each is a post-hoc fit against a γ proxy that contains the
+                  target (Debye temperature), so they restate the Debye model, not anything specific to this framework
+                  (null-class). The polynomial-in-Z null cited here until 2026-10-31 was run on synthetic curves, not these rows. (This card said &ldquo;pending
                   null model&rdquo; until 2026-09-15 &mdash; stale; Honest Assessment has carried the result since May.)
                 </p>
               </div>

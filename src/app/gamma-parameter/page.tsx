@@ -114,7 +114,7 @@ export default function GammaParameter() {
             <p style={{ color: 'var(--color-text-secondary)' }}>
               N<sub>corr</sub> &#x2248; 4. A crossover band, not a phase transition (tanh is smooth). When &#x03B3;
               was fitted phenomenon by phenomenon, most fits across ~1,700 chemistry sessions (a session counter, not distinct phenomena) landed near here; those values
-              were fitted, not predicted, and a polynomial in atomic number matches the same correlations.
+              were fitted, not predicted, against a γ proxy that contains the Debye temperature, so they restate the Debye model.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               Example: Small molecule cluster, catalytic site, neural synapse

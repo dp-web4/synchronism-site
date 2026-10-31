@@ -330,7 +330,8 @@ export default function A2ACW() {
             wide-binary EFE/Bekenstein&ndash;Milgrom 1984, galaxy rotation/MOND 1983, and Γ=γ²(1−c)/Palma&ndash;Suominen&ndash;Ekert 1996.</li>
           <li><strong>Symbol audit:</strong> check that each symbol has one meaning. It surfaced the dual-C tension and γ used in three incompatible roles.</li>
           <li><strong>Null-baseline computation:</strong> compute what a null model predicts before claiming evidence. It surfaced
-            chemistry r = 0.98, which any monotone function of Z reaches on density-monotonic targets.</li>
+            chemistry r = 0.98, a post-hoc fit against a γ proxy that contains the target. (Its first null, a polynomial in Z, was run on
+            synthetic curves, not the rows; the premise that the properties are monotonic in Z is false across the periodic table. Corrected 2026-10-31.)</li>
         </ul>
 
         <details style={{ marginBottom: '1.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>

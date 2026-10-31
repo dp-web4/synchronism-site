@@ -15,8 +15,8 @@ const phenomena = [
   { name: 'Thermal conductivity', r: 0.961, category: 'Transport', regime: 1, session: '#70' },
   { name: 'Electrical conductivity', r: 0.955, category: 'Transport', regime: 1, session: '#68' },
   { name: 'Debye temperature', note: 'by construction: the γ proxy contains θ_D', r: 0.948, category: 'Thermal', regime: 1, session: '#78' },
-  { name: 'Piezoelectricity d₃₃', r: 0.940, category: 'Response', regime: 2, session: '#110' },
-  { name: 'Superconducting T_c', r: 0.923, category: 'Phase transition', regime: 1, session: '#95' },
+  { name: 'Piezoelectricity d₃₃', note: 'post-hoc fit d₃₃ ∝ γε; the direction stated in advance came out backward (Failed on /gamma-boundary)', r: 0.940, category: 'Response', regime: 2, session: '#110' },
+  { name: 'Superconducting T_c', note: 'correlation of a post-hoc fit; the magnitude prediction is 6.5× wrong (Failed on /gamma-boundary)', r: 0.923, category: 'Phase transition', regime: 1, session: '#95' },
   { name: 'Young\'s modulus', note: 'inherits θ_D (v_s ∝ θ_D)', r: 0.912, category: 'Mechanical', regime: 1, session: '#58' },
   { name: 'Shear modulus', note: 'inherits θ_D (v_s ∝ θ_D)', r: 0.901, category: 'Mechanical', regime: 1, session: '#59' },
   { name: 'Refractive index', r: 0.887, category: 'Optical', regime: 1, session: '#85' },
@@ -29,9 +29,9 @@ const phenomena = [
   { name: 'SC penetration depth', r: 0.280, category: 'Superconductivity', regime: 1, session: '#105' },
   { name: 'Thermionic emission', r: 0.150, category: 'Barrier', regime: 3, session: '#115' },
   { name: 'Coordination number CN', r: 0.116, category: 'Topology', regime: 0, session: '#123' },
-  { name: 'Hall coefficient R_H', r: 0.001, category: 'Transport', regime: 0, session: '#102' },
+  { name: 'Hall coefficient R_H', note: 'no correlation: Failed (same result as /gamma-boundary; not a counting property)', r: 0.001, category: 'Transport', regime: 0, session: '#102' },
   { name: 'Valence electron count', r: -0.161, category: 'Counting', regime: 0, session: '#125' },
-  { name: 'Magnetic susceptibility', r: 0.000, category: 'Magnetic', regime: 0, session: '#82' },
+  { name: 'Magnetic susceptibility', note: 'no correlation: Failed (same result as /gamma-boundary; not a counting property)', r: 0.000, category: 'Magnetic', regime: 0, session: '#82' },
 ];
 
 const regimeLabels: Record<number, { label: string; color: string }> = {
@@ -79,7 +79,7 @@ export default function ChemistryCorrelationExplorer() {
       <Breadcrumbs currentPath="/chemistry-correlation-explorer" />
       <h1>Chemistry Correlation Explorer</h1>
       {/* Badge added 2026-10-08: graduate-physics visitor found this tool unbadged on page and index */}
-      <ValidationBadge status="reparametrization" label="r values reflect density-monotonicity (a 2-parameter polynomial in Z matches); γ assignments unpublished, so r carries no evidence either way until the procedure is published" />
+      <ValidationBadge status="reparametrization" label="r values are post-hoc fits in a γ proxy that contains the target; γ assignments and the row list are unpublished, so r carries no evidence either way until the procedure is published" />
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.4rem' }}>
         <strong>Read the r values with this caveat first:</strong> the per-material γ (or N<sub>corr</sub>) assignment table has not been
         published. If γ was set per material with the property in view, a high r between γ and that property carries no
@@ -123,15 +123,17 @@ export default function ChemistryCorrelationExplorer() {
           Debye model (&#x03B8;<sub>D</sub> &#x221D; v). Electrical and thermal conductivity are linked in metals by
           the Wiedemann&ndash;Franz law. Those two groups alone reduce 7 rows to roughly 2 independent ones. Specific
           heat per unit mass is close to 3R/M (Dulong&ndash;Petit), which falls steadily with atomic mass and so
-          roughly with atomic number Z. That is exactly the kind of trend the polynomial-in-Z null below reproduces.
+          roughly with atomic number Z. That is a trend with mass, which is not the same as a trend with Z across the whole table.
           The effective number of independent tests is therefore much smaller than 23.
           <br /><br />
-          <strong style={{ color: '#ef4444' }}>Null-model verdict (computed 2026-05-10):</strong>{' '}
-          before reading any number in this table as evidence, know that a plain 2-parameter
-          polynomial in atomic number Z, fit to the same targets, <strong>matches these correlations
-          (|&#x0394;r| &#x2264; 0.07) and sometimes beats them</strong>. The targets are near-monotonic
-          in Z, so any smooth monotonic curve scores r &#x2248; 1 by construction. High r here is
-          evidence of density-monotonicity (known chemistry), not of C(&#x03C1;)-specific physics.
+          <strong style={{ color: '#ef4444' }}>Null-model status (corrected 2026-10-31):</strong>{' '}
+          the 2026-05-10 polynomial-in-Z null was run on <strong>synthetic monotonic curves</strong> (√Z, log Z,
+          Z<sup>1/3</sup> for Z = 1–50), not on these 23 rows. Its |&#x0394;r| &#x2264; 0.07 shows that two smooth
+          monotonic functions of one variable correlate highly; it does not show that these properties are monotonic in Z,
+          and across the periodic table several are not (atomic volume against Z is the Lothar Meyer periodicity curve;
+          electronegativity falls from F, 3.98, to Na, 0.93, in two steps of Z). The row list is unpublished, so the null has
+          not been run on the real data. The reason high r here is not evidence is the one stated below: each r is a fit,
+          chosen after the data, against a γ proxy that contains the target.
           The &ldquo;47 research contributions&rdquo; cited elsewhere on the site are <strong>audited and
           demoted</strong>, not uncharacterized (corrected 2026-07-24; this caveat previously said
           &ldquo;not audited&rdquo;): every contribution the (LLM-agent) audit examined resolved to a
@@ -180,7 +182,10 @@ export default function ChemistryCorrelationExplorer() {
           piezoelectricity), so a positive r in this regime is a positive correlation with &#x03B3;.{' '}
           <em>Barrier-dominated</em>: thermally activated, &#x221D; exp(&minus;E/kT), where &#x03B3; is negligible.{' '}
           <em>Neutral</em>: counting properties (coordination number CN, valence electrons) on which &#x03B3; has no
-          bearing. The labels were assigned after the fits, not predicted in advance.
+          bearing. Hall coefficient and magnetic susceptibility also carry this label, but they are not counting properties: the label
+          records that no correlation was found, and /gamma-boundary lists both as failures. Four rows carry two verdicts across the two
+          chemistry pages (Hall, susceptibility, piezoelectricity, T<sub>c</sub>); the row notes give one status each, and it is the failure
+          (reconciled 2026-10-31, graduate-physics simulated-visitor persona). The labels were assigned after the fits, not predicted in advance.
         </p>
         <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
           <strong>What r is computed against (added 2026-10-22, researcher simulated-visitor persona):</strong> not C, and not
@@ -245,8 +250,7 @@ export default function ChemistryCorrelationExplorer() {
         {/* Table */}
         {/* 2026-09-15: no per-row Z-null values exist in this dataset, so the null is stated at the table head instead of as a column */}
         <p style={{ fontSize: '0.85rem', color: '#f87171', border: '1px solid rgba(239,68,68,0.4)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem', marginBottom: '0.5rem' }}>
-          <strong>Read before sorting: the r column is not evidence.</strong> A 2-parameter polynomial in atomic number Z
-          matches these correlations to within |&#x0394;r| &#x2264; 0.07 (null-model verdict above), and how &#x03B3; was assigned to each material is
+          <strong>Read before sorting: the r column is not evidence.</strong> Each r is a post-hoc fit against a γ proxy that contains the target (null-model status above), and how &#x03B3; was assigned to each material is
           undocumented, so the r values are <strong>not reproducible from this site</strong>: the per-material N<sub>corr</sub> (or &#x03B3;) assignment table has not been published, and the full 1,703-row file is not linked. Per-row null values are not in this page&apos;s data, so they are not shown beside each r.
         </p>
         <div style={{ overflowX: 'auto', marginBottom: '1.5rem' }}>

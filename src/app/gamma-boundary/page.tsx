@@ -55,7 +55,8 @@ export default function GammaBoundary() {
           </ul>
           <p style={{ marginTop: '0.5rem', marginBottom: 0 }}>
             Pattern: the framework &ldquo;works&rdquo; where targets are density-monotonic by construction (sound velocity, electronegativity, atomic volume)
-            and fails where they are not. A degree-2 polynomial in Z achieves comparable r on density-monotonic rows (Δr ≤ 0.07; sometimes exceeds Synchronism). The null was computed 2026-05-10.
+            and fails where they are not. (Corrected 2026-10-31: the 2026-05-10 polynomial-in-Z null that this sentence cited was run on
+            synthetic monotonic curves, not on these rows; see the null-model box below.)
             See <a href="/honest-assessment" style={{ color: '#ef4444' }}>Honest Assessment</a>.
           </p>
         </div>
@@ -70,9 +71,17 @@ export default function GammaBoundary() {
           fontSize: '0.85rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: '#f59e0b' }}>Null model result (2026-05-10 explorer, propagated 2026-06-06):</strong>{' '}
-          Sound velocity, electronegativity, and atomic volume are all near-monotonic in atomic number Z —
-          and a 2-parameter polynomial in Z achieves comparable or higher r than Synchronism in most density-monotonic cases (Δr ≤ 0.07; polynomial sometimes wins). The null was computed analytically and numerically in <code>chemistry-null-model-analytic.md</code>: any smooth monotonic function of Z achieves r ≥ 0.9 on density-monotonic targets by construction. Synchronism is <em>not</em> meaningfully above the polynomial null on its &ldquo;success&rdquo; cases. The r-values below are consistent with the periodic table being density-monotonic in Z, not with Synchronism-specific physics.{' '}
+          <strong style={{ color: '#f59e0b' }}>Why these r values are not evidence (restated 2026-10-31, graduate-physics simulated-visitor persona):</strong>{' '}
+          each r is a post-hoc fit of the property against a γ proxy that contains the target (for phonon properties
+          γ<sub>phonon</sub> = 2T/θ<sub>D</sub>, and sound velocity ∝ θ<sub>D</sub>), with the expression chosen after the data. That, and
+          the Debye-model reparametrization below, is why the verdict is Reparametrization.{' '}
+          <strong>What the polynomial-in-Z null does and does not show.</strong> The 2026-05-10 null
+          (<code>chemistry-null-model-analytic.md</code>) was run on <em>synthetic</em> monotonic curves (√Z, log Z, Z<sup>1/3</sup> for
+          Z = 1–50), not on these rows, so its |Δr| ≤ 0.07 is a statement about those curves. It shows that two monotonic functions
+          of one variable correlate highly; it does not show that these properties are monotonic in Z. Across the periodic table they
+          are not: atomic volume against Z is the Lothar Meyer curve, the textbook picture of periodicity, and electronegativity
+          falls from F (3.98) to Na (0.93) in two steps of Z. Which elements and compounds make up the rows is not published, so the
+          null has not been run on the real data. <em>Open:</em> publish the row list and run it.{' '}
           See <a href="/honest-assessment" style={{ color: '#f59e0b' }}>Honest Assessment</a>.
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
@@ -149,8 +158,8 @@ export default function GammaBoundary() {
             regularity with <em>no derivation from the equation behind it</em>. Combined with the template-bias
             caveat and the null-model result on the{' '}
             <Link href="/chemistry-correlation-explorer" style={{ color: 'var(--color-accent-blue)' }}>Chemistry Correlation Explorer</Link>
-            {' '}(a plain 2-parameter polynomial in Z matches C(ρ) to |Δr|&nbsp;≤&nbsp;0.07 &mdash; the high
-            correlations track density-monotonicity, known chemistry, not C(ρ)-specific physics), the chemistry
+            {' '}(the high correlations are post-hoc fits in a γ proxy that contains the target, so they carry no
+            C(ρ)-specific information; the polynomial-in-Z null was run on synthetic curves, not these rows, corrected 2026-10-31), the chemistry
             sector now has a fitted parameter, an unexplained clustering, and no mechanism.
             (Simulated-visitor Pass 3, 2026-08-09; verified independently before the edit.)
           </p>
@@ -170,8 +179,8 @@ export default function GammaBoundary() {
           result (withdrawn 2026-09-27 after a visitor graduate-student persona flagged it). The research ledger books
           &#x03B3;&nbsp;&#x2248;&nbsp;1 as a reparametrization of the Debye model (1912): about 86% of the &ldquo;89%
           boundary-consistent&rdquo; are restatements of &#x03B8;<sub>D</sub>. The rationale for &#x03B3;&nbsp;&#x2248;&nbsp;1 was
-          retracted. No documented procedure assigns N<sub>corr</sub> to a phenomenon before the fit. A degree-2
-          polynomial in Z matches the correlations to within &Delta;r&nbsp;&le;&nbsp;0.07. So the clustering cannot be
+          retracted. No documented procedure assigns N<sub>corr</sub> to a phenomenon before the fit. The correlations
+          are post-hoc fits in a γ proxy containing θ<sub>D</sub>. So the clustering cannot be
           evaluated as evidence either way. The open question is whether an N<sub>corr</sub> rule can be written down
           <em>before</em> looking at the data. If it can, the clustering becomes testable.
         </p>

@@ -30,7 +30,7 @@ const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: Re
   },
   {
     claim: 'A replacement for ΛCDM or MOND',
-    plain: 'The two leading explanations of galaxy and cosmic data are not displaced; where this framework matches data, it mostly restates them.',
+    plain: 'The two leading explanations of galaxy and cosmic data (ΛCDM: invisible dark matter plus a cosmological constant; MOND: gravity gets slightly stronger than Newton predicts where it is very weak) are not displaced; where this framework matches data, it mostly restates them.',
     reality: 'MOND has 40 years of empirical success. ΛCDM explains the CMB, Bullet Cluster, and large-scale structure. Session #616 (sessions are the numbered research sessions in the Synchronism research archive, github.com/dp-web4/Synchronism) confirmed Synchronism\'s cosmological tracks are reparametrizations of known physics — same mechanics, different notation. Of the claims meant to be new, environment-dependent RAR scatter has been run and refuted (r² = 0.0001 against a registered effect of more than 20%). Density-dependent wide binaries depend on a density knee the framework never fixed: at its published calibration the density law is already excluded in the solar neighbourhood.',
     note: 'This card used to end: "The genuinely new claims (environment-dependent RAR scatter, density-dependent wide binaries) are untested." The 2026-07-14 environment run refuted the first. The second turned out to depend on the knee.',
   },

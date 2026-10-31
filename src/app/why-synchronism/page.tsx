@@ -219,15 +219,15 @@ export default function WhySynchronism() {
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
               Most of 1,703 logged chemistry sessions (one &ldquo;phenomenon type&rdquo; each, a counter rather than a census) fitted near the &#x03B3;&#x2248;1 boundary
               (sparse/independent &#x2194; dense/collective crossover).
-              Sound velocity correlation: r = 0.982 &mdash; but the null model (run 2026-05-10) shows a
-              plain polynomial in atomic number matches or beats these correlations, so they are
-              evidence of known density-monotonic chemistry, not of this framework.
+              Sound velocity correlation: r = 0.982 &mdash; but each correlation is a fit, chosen after the data,
+              against a quantity built from the material&apos;s Debye temperature, which already sets its sound speed.
+              So they restate textbook solid-state physics (the Debye model, 1912), not this framework.
               <br /><small style={{ color: 'var(--color-text-muted)' }}>
                 Note: C here measures collective ordering, not quantum phase coherence —
                 quantum-coherent systems (superconductors, ultra-cold atom clouds) sit at <em>low</em> C due to their tiny &#x03B3;.
               </small>
             </p>
-            <span className="badge badge-reparametrization" title="Descriptive rate, not a verdict — 89% reflects generic sigmoid behavior on density-monotonic properties; a polynomial null model matches it">89% Boundary-Consistent | Template Bias Caveat</span>
+            <span className="badge badge-reparametrization" title="Descriptive rate, not a verdict — the correlations are post-hoc fits in a γ proxy that contains the Debye temperature, so they restate the Debye model">89% Boundary-Consistent | Template Bias Caveat</span>
           </div>
         </div>
       </section>

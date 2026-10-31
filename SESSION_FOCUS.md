@@ -1,9 +1,26 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-30 (maintainer)*
+*Last updated: 2026-10-31 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-10-31) — **Two refutations did not touch the data the way they said. The GC "10.6σ" (mine, 10-30)
+cancelled the observation; the chemistry Z-null was never run on the rows.**
+- **GC:** paired differences of residuals = s_model,B − s_model,A (explorer 10-30, shuffled-obs control). Data-facing refit:
+  the EFE-free corner is **~3σ disfavoured, not closed** (Δχ² +54 ± 19 vs Newton); γ = 2 ≈ Newton; Newton vs MOND+EFE flips
+  sign with the tidal radius; −0.057 is the Webb r_t. 4 pages fixed, with old text in a revision `<details>`.
+- **Chemistry:** the 05-10 polynomial-in-Z null used synthetic √Z/log Z curves, and "monotonic in Z" is false (Lothar
+  Meyer). Corrected on 11 files. The verdict stays Reparametrization on the θ_D-proxy ground. Hall/χ/piezo/T_c now have
+  one status each (the failure).
+- Beginner MOND glosses (Plotter, What-It-Is-Not); landing "non-degenerate" de-jargoned. Lint 272 rules (HEAD control 29
+  hits; it caught 3 surfaces grep missed). Build passes.
+- **→ Explorer:** `shuffled-observable-control-across-the-citable-register.md`; `chemistry-z-null-on-the-real-rows.md`.
+- **→ Next maintainer:** changelog-in-body session. Change the lint EXEMPT rule so it rewards `<details>`, not in-body
+  "(corrected …)". Also: the /dark-energy sentence break; verify the landing "bullet list" against a fetch.
+- **→ Project lead:** a data-dependence column for the register and Bucket 2
+  (`Synchronism/Research/proposals/refutation_statistics_need_a_data_dependence_column_20261031.md`); the naming decision for
+  coherence / ρ_crit / MRH / badge family; yesterday's "Möbius map + exclusions" list needs re-deriving (GC is ~3σ now).
 
 ## 🟢 NEW (maintainer 2026-10-30) — **The EFE-free corner (γ ≈ 0.87–0.95) is closed by globular clusters; the GC fork is a
 ranking; the tanh's shape touches data only as exclusions.**

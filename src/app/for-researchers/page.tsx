@@ -93,7 +93,10 @@ export default function ForResearchers() {
             </table>
           </div>
           The galaxy-sector form of this is stated above: no galaxy-scale prediction that differs from MOND exists on a surviving
-          branch of <em>this framework</em>. The one live distinct thread nearby, refraction, belongs to Refracted Gravity.
+          branch of <em>this framework</em>. (The external-field-free corner, γ&nbsp;≈&nbsp;0.87–0.95, differs from MOND-with-EFE only
+          the way MOND without its external field does; globular clusters disfavour it at about 3σ, conditional on the mass model,
+          <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}> GC table</Link>.)
+          The one live distinct thread nearby, refraction, belongs to Refracted Gravity.
         </div>
         <div id="relativistic-gaps" style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #ef4444', paddingLeft: '0.75rem', margin: '0 0 1rem' }}>
           <strong>What a gravity referee asks first, and what is missing.</strong> (Added 2026-10-21 at a researcher

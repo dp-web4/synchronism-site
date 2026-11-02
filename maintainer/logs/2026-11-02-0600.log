@@ -1,3 +1,37 @@
 Starting Synchronism Maintainer Session at Mon Nov  2 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+The session is finished. Both repos are committed and pushed (site `09d39b2`, research `5709b579`). The build passes and the retired-phrase lint shows 0 live hits.
+
+**The biggest problem wasn't in the visitor log.** The 10-31 explorer run had left an unaddressed top-priority item. The site's 23-row chemistry correlation table dated from the site's first commit (2026-02-21) and was never checked against the research archive. None of the 16 high-correlation rows matched the session it cited. Electrical conductivity was shown as +0.955, "Coherence helps", for about eight months. The session that actually tested it (#81) recorded r = −0.414, wrong sign. I fixed it:
+- The table now has a Trace column. Rows that could be matched to the archive were corrected. Rows that couldn't be matched stay visible and are labelled Untraced.
+- The atomic-number null test was finally run on 10 real rows, and it fails. So the high correlations don't come from a trend with atomic number. They come from the γ proxies being textbook quantities under new names: one is the Debye temperature, the other is ionization energy.
+- The verdict doesn't change: it stays Reparametrization, now on firmer ground. The correction went out to five pages, including /honest-assessment, whose chemistry card still said the null test "matches them".
+
+**Visitor items fixed:**
+- **Refutation count:** the published counting rule says refutations are "on data", but Bell/CHSH is a simulation and sits in the group of three that survive every counting rule. Both /honest-assessment and the homepage now say this. The homepage also adds a plain sentence: of those three, only TEST-10 is outside data refuting something the framework itself predicts.
+- **Homepage order:** the "AI-run, not reviewed by a journal or any outside physicist" sentence is now in the hero, bolded. The jargon-heavy "Which C" paragraph is collapsed into a "For physicists" section. CDM, DM and BIC were added to the abbreviation key.
+- **Numbers:**
+  - TEST-09's 3.3σ now shows its working: (3.753 − 3.347)/√(0.10² + 0.07²).
+  - The /dark-energy bound is now one-sided: below γ = ½ the fluid is unstable outright, not just limited in amplitude.
+  - The two pages' a₀(z) wording ("faster than H(z)" vs a fitted slope of 0.71) and the two RC100 numbers are reconciled.
+  - The plotter now says plainly that γ has no effect on its curve.
+  - There is a new glossary entry for the "Bucket 0–3" terms.
+- **Validation badges:** the persona said badges were hover-only. They were already clickable, so that was partly an artifact of reading the site as fetched text. Nothing on screen said you could click, though, so I added an ⓘ marker. I also fixed a duplicate glossary anchor (a₀ and a₀′ both used `#a`).
+- **Lint:** I added 3 rules and widened one; the 10-29 rule had missed a second phrasing of "at any level". Checked against the previous commit, the new rules catch 10 hits there and 0 in the current tree.
+
+**Research back-annotation:** I added a 2026-11-02 block to PREDICTIONS.md and wrote a proposal. No bucket moved and Bucket 0 is still 0. Two decisions are flagged for you: how to word the counting rule given the Bell/CHSH row, and whether the two framework-independent negative results become standalone notes. Those are the bound on G drifting as the Sun moves through local density (from lunar laser ranging), and the result that density-keyed fits can only pin down γ·A.
+
+**Explorer topics seeded:**
+- A provenance check of every data table still unchanged since the first commit. The other numbers on /gamma-boundary are next; they haven't been checked yet.
+- Whether the density law's +2843 verdict holds when A is set free or to its own formula's value, which would put the knee inside the discs.
+
+**Deferred:**
+- The T_scan row on /for-researchers versus the QM page.
+- The κ = 0.58 vs 0.86 / 0.41–0.52 mismatch between /for-researchers and /a2acw.
+- Breadcrumb categories with no landing page.
+- The changelog-in-body pass.
+
+I left the three untracked `dbic2843_boot_*.npy` files alone; they aren't from this session.
+
+**Frame question:** the most serious record defect this week came from the explorer reading the archive's scripts, not from the visitor loop. The visitor loop now mostly tidies labels and wording; the remaining record errors sit in places no simulated visitor ever reads.

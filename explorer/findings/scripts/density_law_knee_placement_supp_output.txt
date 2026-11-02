@@ -1,0 +1,41 @@
+A = 4.6e-05: profile over gamma (sigma profiled)
+   log gamma  0.0  dBIC vs B  +11335.6  sig 1.316
+   log gamma  0.5  dBIC vs B   +9715.0  sig 0.944
+   log gamma  1.0  dBIC vs B   +8155.8  sig 0.685
+   log gamma  1.5  dBIC vs B   +7184.8  sig 0.561
+   log gamma  2.0  dBIC vs B   +6733.0  sig 0.511
+   log gamma  2.5  dBIC vs B   +6600.4  sig 0.497
+   log gamma  3.0  dBIC vs B   +6595.1  sig 0.496
+   log gamma  3.5  dBIC vs B   +6601.3  sig 0.497
+   log gamma  4.0  dBIC vs B   +6599.5  sig 0.497
+   log gamma  4.5  dBIC vs B   +6608.0  sig 0.498
+   log gamma  5.0  dBIC vs B   +6628.0  sig 0.500
+   log gamma  5.5  dBIC vs B   +6640.8  sig 0.501
+   log gamma  6.0  dBIC vs B   +6643.7  sig 0.501
+   log gamma  6.5  dBIC vs B   +6643.8  sig 0.501
+   log gamma  7.0  dBIC vs B   +6643.8  sig 0.501
+   log gamma  7.5  dBIC vs B   +6643.8  sig 0.501
+   log gamma  8.0  dBIC vs B   +6643.8  sig 0.501
+   OPT gamma 578.8  dBIC vs B +6592.5  sig 0.4959  gamma/A = 1.258e+07  C median 1.000 range [0.001,1.000]
+A = 0.029: profile over gamma (sigma profiled)
+   log gamma  0.0  dBIC vs B  +17097.5  sig 3.000
+   log gamma  0.5  dBIC vs B  +16121.9  sig 3.000
+   log gamma  1.0  dBIC vs B  +15280.8  sig 2.957
+   log gamma  1.5  dBIC vs B  +14419.6  sig 2.478
+   log gamma  2.0  dBIC vs B  +13398.6  sig 2.010
+   log gamma  2.5  dBIC vs B  +12167.2  sig 1.561
+   log gamma  3.0  dBIC vs B  +10686.8  sig 1.152
+   log gamma  3.5  dBIC vs B   +9046.0  sig 0.823
+   log gamma  4.0  dBIC vs B   +7692.7  sig 0.623
+   log gamma  4.5  dBIC vs B   +6959.4  sig 0.535
+   log gamma  5.0  dBIC vs B   +6652.7  sig 0.502
+   log gamma  5.5  dBIC vs B   +6593.0  sig 0.496
+   log gamma  6.0  dBIC vs B   +6598.6  sig 0.497
+   log gamma  6.5  dBIC vs B   +6600.8  sig 0.497
+   log gamma  7.0  dBIC vs B   +6600.8  sig 0.497
+   log gamma  7.5  dBIC vs B   +6615.6  sig 0.498
+   log gamma  8.0  dBIC vs B   +6634.8  sig 0.500
+   OPT gamma 3.681e+05  dBIC vs B +6592.7  sig 0.4959  gamma/A = 1.269e+07  C median 1.000 range [0.001,1.000]
+Newton C=1: dBIC vs B +6636.0  sig 0.5013
+gamma=2, A=4.6e-5 (k=1): dBIC vs B +10371.5 sig 1.082 C median 0.088 boost median 11.39
+C0 - F: -2lnL diff +952.7, gal-sd 154.8, z 6.2; BIC diff +944.9

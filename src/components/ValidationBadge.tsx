@@ -60,6 +60,9 @@ export default function ValidationBadge({ status, label }: ValidationBadgeProps)
       onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); window.location.assign(definitionsHref); } }}
     >
       {text}
+      {/* 2026-11-02: visible affordance. A technical-writer persona read the chips as hover-only; they were clickable,
+          but nothing on screen said so (and touch screens have no hover). */}
+      <span aria-hidden="true" style={{ marginLeft: '0.35em', opacity: 0.7, fontSize: '0.85em' }}>&#x24D8;</span>
     </span>
   );
 }

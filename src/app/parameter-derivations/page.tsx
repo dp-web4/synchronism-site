@@ -495,7 +495,7 @@ export default function ParameterDerivations() {
               two on this sample (stated plainly 2026-10-10, with the RC100 counter-sample on Relation to MOND), and the
               level-free slope says the same thing without an anchor: constant a&#x2080; is n = 0, excluded by
               Ciocan&apos;s bins at 5&#x03C3;. <em>(Corrected 2026-10-12: Ciocan&apos;s errors are 95% CIs; earlier
-              &#x03C3;&apos;s divided them as 1&#x03C3;. This sentence read 12&#x03C3; / 4.2&#x03C3; and 2.3&#x03C3; / 0.5&#x03C3;.)</em> An a&#x2080; evolving
+              &#x03C3;&apos;s divided them as 1&#x03C3;. This sentence read 12&#x03C3; / 4.2&#x03C3; and 2.3&#x03C3; / 0.5&#x03C3;.)</em> If the paper&apos;s global slope (n = 1.15) holds, an a&#x2080; evolving
               faster than H(z) embarrasses both halves of the 1983 coincidence, not this framework specifically.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>

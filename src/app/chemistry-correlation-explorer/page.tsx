@@ -8,31 +8,44 @@ import ValidationBadge from '@/components/ValidationBadge';
 type SortKey = 'name' | 'r' | 'category';
 type SortDir = 'asc' | 'desc';
 
-const phenomena = [
-  { name: 'Sound velocity', note: 'inherits θ_D (v_s ∝ θ_D)', r: 0.982, category: 'Propagation', regime: 1, session: '#47' },
-  { name: 'Electronegativity', r: 0.979, category: 'Bonding', regime: 1, session: '#62' },
-  { name: 'Bulk modulus', note: 'inherits θ_D (v_s ∝ θ_D)', r: 0.967, category: 'Mechanical', regime: 1, session: '#55' },
-  { name: 'Thermal conductivity', r: 0.961, category: 'Transport', regime: 1, session: '#70' },
-  { name: 'Electrical conductivity', r: 0.955, category: 'Transport', regime: 1, session: '#68' },
-  { name: 'Debye temperature', note: 'by construction: the γ proxy contains θ_D', r: 0.948, category: 'Thermal', regime: 1, session: '#78' },
-  { name: 'Piezoelectricity d₃₃', note: 'post-hoc fit d₃₃ ∝ γε; the direction stated in advance came out backward (Failed on /gamma-boundary)', r: 0.940, category: 'Response', regime: 2, session: '#110' },
-  { name: 'Superconducting T_c', note: 'correlation of a post-hoc fit; the magnitude prediction is 6.5× wrong (Failed on /gamma-boundary)', r: 0.923, category: 'Phase transition', regime: 1, session: '#95' },
-  { name: 'Young\'s modulus', note: 'inherits θ_D (v_s ∝ θ_D)', r: 0.912, category: 'Mechanical', regime: 1, session: '#58' },
-  { name: 'Shear modulus', note: 'inherits θ_D (v_s ∝ θ_D)', r: 0.901, category: 'Mechanical', regime: 1, session: '#59' },
-  { name: 'Refractive index', r: 0.887, category: 'Optical', regime: 1, session: '#85' },
-  { name: 'Seebeck coefficient', r: 0.834, category: 'Thermoelectric', regime: 1, session: '#92' },
-  { name: 'Specific heat C_v', r: 0.756, category: 'Thermal', regime: 2, session: '#80' },
-  { name: 'Thermal expansion', r: 0.723, category: 'Response', regime: 2, session: '#83' },
-  { name: 'Boiling point', r: 0.681, category: 'Phase transition', regime: 3, session: '#100' },
-  { name: 'Melting point', r: 0.470, category: 'Phase transition', regime: 3, session: '#98' },
-  { name: 'Magnetic anisotropy (RE)', r: -0.434, category: 'Magnetic', regime: 2, session: '#130' },
-  { name: 'SC penetration depth', r: 0.280, category: 'Superconductivity', regime: 1, session: '#105' },
-  { name: 'Thermionic emission', r: 0.150, category: 'Barrier', regime: 3, session: '#115' },
-  { name: 'Coordination number CN', r: 0.116, category: 'Topology', regime: 0, session: '#123' },
-  { name: 'Hall coefficient R_H', note: 'no correlation: Failed (same result as /gamma-boundary; not a counting property)', r: 0.001, category: 'Transport', regime: 0, session: '#102' },
-  { name: 'Valence electron count', r: -0.161, category: 'Counting', regime: 0, session: '#125' },
-  { name: 'Magnetic susceptibility', note: 'no correlation: Failed (same result as /gamma-boundary; not a counting property)', r: 0.000, category: 'Magnetic', regime: 0, session: '#82' },
+// Provenance trace (2026-11-02, from explorer finding
+// chemistry-table-rows-are-not-traceable-and-the-z-null-fails-on-the-real-rows.md, 2026-10-31).
+// The table dates from the site's initial commit (1e805d5, 2026-02-21) and was never regenerated from the archive.
+// trace: 'traced'    = r and session both confirmed in the archive
+//        'corrected' = r and/or session replaced on 2026-11-02 with the archive value for this property against γ
+//        'untraced'  = the r shown could not be matched to this property in the cited session (see note)
+type Trace = 'traced' | 'corrected' | 'untraced';
+const phenomena: { name: string; note?: string; r: number; category: string; regime: number; session: string; trace: Trace }[] = [
+  { name: 'Sound velocity', note: 'r(v, 1/γ_phonon) ≡ r(v, θ_D) exactly, because γ_phonon = 2T/θ_D; session was shown as #47 (material design)', r: 0.982, category: 'Propagation', regime: 1, session: '#109', trace: 'corrected' },
+  { name: 'Electronegativity', note: 'Pauling χ vs 1/γ_optical, and γ_optical = 13.6 eV / IE: this is χ vs ionization energy (0.938 archive; 0.956 on the explorer recomputation). The 0.979 shown until 2026-11-02 was chemical softness (#118) against the same 1/IE', r: 0.938, category: 'Bonding', regime: 1, session: '#115', trace: 'corrected' },
+  { name: 'Bulk modulus', note: 'vs 1/γ_phonon (= θ_D); drops to 0.37 without diamond (jackknife). 0.967 shown until 2026-11-02 was not found for B', r: 0.712, category: 'Mechanical', regime: 1, session: '#110', trace: 'corrected' },
+  { name: 'Thermal conductivity', note: '0.961 matches redox potential E° (#72), not κ. The archive’s κ results are 0.804 (#65) and 0.883 for metals only (#108). Cited #70 is SN1/SN2 kinetics', r: 0.961, category: 'Transport', regime: 1, session: '#70', trace: 'untraced' },
+  { name: 'Electrical conductivity', note: 'Failed: the session’s own verdict is “WRONG SIGN” (σ vs γ_phonon). Shown as +0.955 “Coherence helps” (#68) until 2026-11-02', r: -0.414, category: 'Transport', regime: 1, session: '#81', trace: 'corrected' },
+  { name: 'Debye temperature', note: 'by construction: γ_phonon = 2T/θ_D contains θ_D. 0.948 matches the T_c (#62) and Richard’s-rule (#77) rows; cited #78 is elastic moduli', r: 0.948, category: 'Thermal', regime: 1, session: '#78', trace: 'untraced' },
+  { name: 'Piezoelectricity d₃₃', note: 'post-hoc fit d₃₃ ∝ γε; the direction stated in advance came out backward (Failed on /gamma-boundary). Session was shown as #110', r: 0.940, category: 'Response', regime: 2, session: '#93', trace: 'corrected' },
+  { name: 'Superconducting T_c', note: 'correlation of a post-hoc fit; the magnitude prediction is 6.5× wrong (Failed on /gamma-boundary). Shown as 0.923 (#95, electro-optic) until 2026-11-02', r: 0.948, category: 'Phase transition', regime: 1, session: '#62', trace: 'corrected' },
+  { name: 'Young\'s modulus', note: 'vs 1/γ_phonon (= θ_D); drops to 0.60 without diamond (jackknife). Shown as 0.912 (#58, fluorescence) until 2026-11-02', r: 0.920, category: 'Mechanical', regime: 1, session: '#110', trace: 'corrected' },
+  { name: 'Shear modulus', note: 'vs 1/γ_phonon (= θ_D); drops to 0.63 without diamond (jackknife). Shown as 0.901 (#59, no such session) until 2026-11-02', r: 0.936, category: 'Mechanical', regime: 1, session: '#110', trace: 'corrected' },
+  { name: 'Refractive index', note: 'not found in the archive; its refractive-index result is 0.986 (#76, Moss rule). Cited #85 is polarizability', r: 0.887, category: 'Optical', regime: 1, session: '#85', trace: 'untraced' },
+  { name: 'Seebeck coefficient', note: 'not located in the archive; cited #92 is glass thermal conductivity', r: 0.834, category: 'Thermoelectric', regime: 1, session: '#92', trace: 'untraced' },
+  { name: 'Specific heat C_v', note: 'not located (the archive’s 0.965 is ΔC/Cₙ); cited #80 is sound speed', r: 0.756, category: 'Thermal', regime: 2, session: '#80', trace: 'untraced' },
+  { name: 'Thermal expansion', note: 'not found; the archive has 0.940 for α vs 1/T_m (#79), a different variable. Cited #83 is Grüneisen', r: 0.723, category: 'Response', regime: 2, session: '#83', trace: 'untraced' },
+  { name: 'Boiling point', note: 'not located; cited #100 is Fermi energy', r: 0.681, category: 'Phase transition', regime: 3, session: '#100', trace: 'untraced' },
+  { name: 'Melting point', note: 'not found; the archive has 0.948 for Richard’s rule (#77), a different quantity. Cited #98 is thermionic emission', r: 0.470, category: 'Phase transition', regime: 3, session: '#98', trace: 'untraced' },
+  { name: 'Magnetic anisotropy (RE)', note: 'cited #130 is an exciton session', r: -0.434, category: 'Magnetic', regime: 2, session: '#130', trace: 'untraced' },
+  { name: 'SC penetration depth', r: 0.280, category: 'Superconductivity', regime: 1, session: '#105', trace: 'traced' },
+  { name: 'Thermionic emission', note: 'thermionic emission is session #98; cited #115 is electronegativity', r: 0.150, category: 'Barrier', regime: 3, session: '#115', trace: 'untraced' },
+  { name: 'Coordination number CN', r: 0.116, category: 'Topology', regime: 0, session: '#123', trace: 'traced' },
+  { name: 'Hall coefficient R_H', note: 'no correlation: Failed (same result as /gamma-boundary; not a counting property)', r: 0.001, category: 'Transport', regime: 0, session: '#102', trace: 'traced' },
+  { name: 'Valence electron count', r: -0.161, category: 'Counting', regime: 0, session: '#125', trace: 'traced' },
+  { name: 'Magnetic susceptibility', note: 'no correlation: Failed (same result as /gamma-boundary; not a counting property)', r: 0.000, category: 'Magnetic', regime: 0, session: '#82', trace: 'traced' },
 ];
+
+const traceLabels: Record<Trace, { label: string; color: string }> = {
+  traced: { label: 'Traced', color: '#10b981' },
+  corrected: { label: 'Corrected 11-02', color: 'var(--color-accent-blue)' },
+  untraced: { label: 'Untraced', color: '#ef4444' },
+};
 
 const regimeLabels: Record<number, { label: string; color: string }> = {
   0: { label: 'Neutral', color: 'var(--color-text-muted)' },
@@ -126,14 +139,32 @@ export default function ChemistryCorrelationExplorer() {
           roughly with atomic number Z. That is a trend with mass, which is not the same as a trend with Z across the whole table.
           The effective number of independent tests is therefore much smaller than 23.
           <br /><br />
-          <strong style={{ color: '#ef4444' }}>Null-model status (corrected 2026-10-31):</strong>{' '}
-          the 2026-05-10 polynomial-in-Z null was run on <strong>synthetic monotonic curves</strong> (√Z, log Z,
-          Z<sup>1/3</sup> for Z = 1–50), not on these 23 rows. Its |&#x0394;r| &#x2264; 0.07 shows that two smooth
-          monotonic functions of one variable correlate highly; it does not show that these properties are monotonic in Z,
-          and across the periodic table several are not (atomic volume against Z is the Lothar Meyer periodicity curve;
-          electronegativity falls from F, 3.98, to Na, 0.93, in two steps of Z). The row list is unpublished, so the null has
-          not been run on the real data. The reason high r here is not evidence is the one stated below: each r is a fit,
-          chosen after the data, against a γ proxy that contains the target.
+          <strong style={{ color: '#ef4444' }}>What the 23 rows are, and the null run on them:</strong>{' '}
+          the rows are <strong>23 properties</strong>, each a correlation over a different set of materials from a different
+          session (n = 19–33; some include compounds). There is no single 23-material sample. On the 10 property rows that could be
+          recovered from the session scripts, a polynomial in atomic number Z <strong>fails</strong> to reproduce the
+          correlations: |r(property, Z)| &#x2264; 0.53 and a quadratic in Z reaches R &#x2264; 0.51, against framework r of
+          0.60–0.98 (site explorer, pre-registered, 2026-10-31). So the high r values do not come from a trend with Z. They
+          come from the proxy being a renamed textbook quantity: &#x03B3;<sub>phonon</sub> = 2T/&#x03B8;<sub>D</sub>, so every
+          correlation with 1/&#x03B3;<sub>phonon</sub> equals the same correlation with the Debye temperature &#x03B8;<sub>D</sub>,
+          exactly; and &#x03B3;<sub>optical</sub> = 13.6&nbsp;eV / ionization energy, so &ldquo;electronegativity vs
+          1/&#x03B3;<sub>optical</sub>&rdquo; is electronegativity against ionization energy, a relation Mulliken&apos;s definition
+          of electronegativity builds in. That is why the Reparametrization badge stands.
+          <br /><br />
+          <strong style={{ color: '#ef4444' }}>Most rows do not trace to their cited session.</strong>{' '}
+          The same audit checked each row against the archive. In the 16 high-r rows, no cited session is about the
+          property (the closest is #83, Grüneisen, for thermal expansion), and several r values belong to other properties. One
+          documented failure was shown as a success: electrical conductivity was listed until 2026-11-02 as +0.955 &ldquo;Coherence helps&rdquo;,
+          but the session that tested it (#81) found r = &minus;0.414 and recorded &ldquo;WRONG SIGN&rdquo;. The table below now
+          has a <em>Trace</em> column: rows corrected to the archive value on 2026-11-02, and rows whose number could not be
+          found (kept, marked <em>Untraced</em>, so the drift stays visible). The three elastic-modulus rows rest on diamond:
+          without it, r falls to 0.60 (Young&apos;s), 0.63 (shear) and 0.37 (bulk).
+          <details style={{ marginTop: '0.5rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Earlier versions of this paragraph</summary>
+            Until 2026-10-31 this page said a polynomial-in-Z null &ldquo;fit to the same targets&rdquo; matched the r values
+            within 0.07. That null was run on synthetic curves (√Z, log Z, Z<sup>1/3</sup>), not on the rows. From 2026-10-31 to
+            2026-11-02 it said the null had not been run on the real data; it has now been run and fails.
+          </details>
           The &ldquo;47 research contributions&rdquo; cited elsewhere on the site are <strong>audited and
           demoted</strong>, not uncharacterized (corrected 2026-07-24; this caveat previously said
           &ldquo;not audited&rdquo;): every contribution the (LLM-agent) audit examined resolved to a
@@ -267,6 +298,8 @@ export default function ChemistryCorrelationExplorer() {
                   Category {sortKey === 'category' ? (sortDir === 'asc' ? '↑' : '↓') : ''}
                 </th>
                 <th style={{ textAlign: 'left', padding: '0.5rem' }}>Regime</th>
+                <th style={{ textAlign: 'left', padding: '0.5rem' }}>Session</th>
+                <th style={{ textAlign: 'left', padding: '0.5rem' }}>Trace</th>
               </tr>
             </thead>
             <tbody>
@@ -284,6 +317,10 @@ export default function ChemistryCorrelationExplorer() {
                   <td style={{ padding: '0.5rem', color: 'var(--color-text-muted)' }}>{p.category}</td>
                   <td style={{ padding: '0.5rem', color: regimeLabels[p.regime].color, fontSize: '0.8rem' }}>
                     {regimeLabels[p.regime].label}
+                  </td>
+                  <td style={{ padding: '0.5rem', color: 'var(--color-text-muted)', fontFamily: 'monospace', fontSize: '0.8rem' }}>{p.session}</td>
+                  <td style={{ padding: '0.5rem', color: traceLabels[p.trace].color, fontSize: '0.8rem' }}>
+                    {traceLabels[p.trace].label}
                   </td>
                 </tr>
               ))}

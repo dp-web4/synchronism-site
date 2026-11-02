@@ -24,7 +24,7 @@ const predictions = [
   { domain: 'Cosmology', name: 'Void galaxies show higher DM fraction', status: 'untested' as const },
   { domain: 'Cosmology', name: 'Fractal coherence bridge', status: 'failed' as const },
   { domain: 'Chemistry', name: 'Sound velocity vs γ (r = 0.982) — a post-hoc fit against a γ proxy that contains the Debye temperature (the polynomial-in-Z null was run on synthetic curves, not the rows; corrected 2026-10-31)', status: 'reparametrization' as const },
-  { domain: 'Chemistry', name: 'Electronegativity vs γ (r = 0.979) — a post-hoc fit; no null run on the real rows', status: 'reparametrization' as const },
+  { domain: 'Chemistry', name: 'Electronegativity vs γ (r = 0.94–0.96) — γ_optical is 13.6 eV / ionization energy, so this is χ vs IE; the Z-null fails on the real rows', status: 'reparametrization' as const },
   { domain: 'Chemistry', name: 'Bulk modulus vs γ (r > 0.95) — same Z-polynomial null; tied to sound velocity by elasticity, so not an independent test', status: 'reparametrization' as const },
   { domain: 'Chemistry', name: 'Thermal conductivity vs γ — same Z-polynomial null applies', status: 'reparametrization' as const },
   { domain: 'Chemistry', name: 'η ≡ Abrikosov-Gor\'kov pair-breaking (1960) — a useful reframe, not a new prediction (ledger Bucket 3)', status: 'reparametrization' as const },

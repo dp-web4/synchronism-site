@@ -168,7 +168,9 @@ export default function HonestAssessment() {
         intersection is likewise scored at galaxy level (it moves with the &gamma; = 2 pin, so these two are not independent);
         +1 if the executed uniform G/C growth reading is admitted as a run; +1 if TEST-04a fires on a point-estimate rule
         (0.516 &gt; 0.46, on a withdrawn mechanism). Range 3&ndash;8; at most 5 of the six are independent. The floor of 3 is
-        rows #2 (TEST-10), #4 (environment) and #6 (Bell/CHSH, not data); rows #1, #3 and #5 are the ones that move. TEST-10, the floor&apos;s one data refutation of the framework&apos;s own content, is census-conditional on both of its legs: on rotation curves, three galaxies stay above the most permissive cap at &ge; 3&sigma; with distance, inclination and M/L propagated, unless their gas is under-counted by &times;2&ndash;3 (explorer 2026-10-29); on lensing, unless hidden baryons exceed about 2&ndash;3&times; stars plus cold gas. Choosing the rule is the
+        rows #2 (TEST-10), #4 (environment) and #6 (Bell/CHSH, not data); rows #1, #3 and #5 are the ones that move. Of the three, only
+        TEST-10 is an external-data refutation of content the framework itself asserts: #6 is a simulation, outside the rule&apos;s
+        &ldquo;on data&rdquo; wording, and #4 refuted a registered &gt; 20% amplitude that the framework&apos;s own equation cannot produce. TEST-10, the floor&apos;s one data refutation of the framework&apos;s own content, is census-conditional on both of its legs: on rotation curves, three galaxies stay above the most permissive cap at &ge; 3&sigma; with distance, inclination and M/L propagated, unless their gas is under-counted by &times;2&ndash;3 (explorer 2026-10-29); on lensing, unless hidden baryons exceed about 2&ndash;3&times; stars plus cold gas. Choosing the rule is the
         project lead&apos;s decision, not the site&apos;s.
       </p>
       <RefutationLedger />
@@ -349,8 +351,7 @@ export default function HonestAssessment() {
           holds under every convention is a class exclusion: <strong>a bounded-boost law with
           B<sub>max</sub>&nbsp;&#8818;&nbsp;5.3 is excluded by the observed slope.</strong> The registered kill
           itself is convention-dependent: it fired at B<sub>max</sub>&nbsp;=&nbsp;1/&Omega;<sub>m</sub> (predicted
-          n&nbsp;=&nbsp;3.35, |&Delta;n|&nbsp;=&nbsp;0.41&nbsp;&gt;&nbsp;0.3; the prediction sits 3.3σ from the
-          data), but the 2026-09-18 ceiling sweep finds it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub>{' '}
+          n&nbsp;=&nbsp;3.35, |&Delta;n|&nbsp;=&nbsp;0.41&nbsp;&gt;&nbsp;0.3; the prediction sits 3.3σ from the data: (3.753 − 3.347)/√(0.10² + 0.07²) = 3.3, with the observed slope&apos;s ±0.10 and the predicted slope&apos;s ±0.07 (both bootstrap 1σ, N = 123) combined in quadrature; dividing by the observed error alone gives ~4σ), but the 2026-09-18 ceiling sweep finds it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub>{' '}
           (|&Delta;n|&nbsp;=&nbsp;0.297 against a strict &gt;&nbsp;0.3) or at &Omega;<sub>m</sub>/&Omega;<sub>b</sub> (0.26), so it
           does not survive its own pre-fixed rule; whether it stays in the count of 6 is pending the project lead. The same ceiling caps how
           dark-matter-dominated a galaxy can appear at 68.5% — a convention-dependent figure (see the Verdict
@@ -697,7 +698,9 @@ export default function HonestAssessment() {
             Every simulated-visitor persona in the 2026-08-09 pass independently hit the same defect: the count is quoted
             everywhere and auditable nowhere. Two separate problems. <strong>(a) The inclusion rule was never
             written down.</strong> It is: a row counts if it was <em>executed against a registered criterion on
-            data the framework did not fit</em>, and carries the <em>Failed</em> badge together with
+            data the framework did not fit</em> (row #6, Bell/CHSH, is the exception: a registered construction check run in
+            simulation, not on data, so the rule as worded does not cover it; whether it stays in the count is the project
+            lead&apos;s decision, and the floor below names it as the non-data row), and carries the <em>Failed</em> badge together with
             one of three failure descriptors: the operational state <em>Kill Criterion Triggered</em>, or the structural
             descriptors <em>Ceiling Exceeded</em> or <em>Empty Intersection</em> (Failed is a badge, not one of these; the
             earlier wording listed it as a fourth &ldquo;operational label&rdquo;, corrected 2026-10-15). All are defined in the{' '}
@@ -811,12 +814,14 @@ export default function HonestAssessment() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>Chemistry: &#x03B3; &#x2248; 1 Boundary</h3>
-              <ValidationBadge status="reparametrization" label="Null Model RUN (2026-05-10) — Null-Class" />
+              <ValidationBadge status="reparametrization" label="Z-null run on the real rows (2026-10-31): fails; the proxies are θ_D and ionization energy renamed" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              1,703 logged chemistry sessions (a counter, not a census). Sound velocity r = 0.982, electronegativity r = 0.979.
-              Top correlations are strong — and the relevant null <strong>has been computed</strong>: it
-              matches them.
+              1,703 logged chemistry sessions (a counter, not a census). Sound velocity r = 0.982, electronegativity r = 0.94–0.96.
+              The top correlations are strong because the γ proxies are textbook quantities renamed: γ<sub>phonon</sub> = 2T/θ<sub>D</sub>
+              (so sound velocity against 1/γ is sound velocity against the Debye temperature, exactly) and γ<sub>optical</sub> = 13.6 eV
+              divided by the ionization energy (so electronegativity against 1/γ is electronegativity against ionization energy). A
+              polynomial in atomic number does <strong>not</strong> reproduce them (run on the 10 recoverable rows, 2026-10-31).
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               <strong>Null model (corrected 2026-10-31, graduate-physics simulated-visitor persona):</strong> the
@@ -826,7 +831,11 @@ export default function HonestAssessment() {
               rise or fall steadily with Z, is false across the periodic table (atomic volume against Z is the Lothar Meyer periodicity
               curve). The verdict, <strong>null-class / Reparametrization</strong>, stands on a different ground: each r is a
               post-hoc fit against a γ proxy that contains the target (γ<sub>phonon</sub> = 2T/θ<sub>D</sub>), and about 86% of
-              the &ldquo;89%&rdquo; are restatements of the Debye model. The real-data null is not run (the row list is unpublished).
+              the &ldquo;89%&rdquo; are restatements of the Debye model. The real-data Z-null has since been run on the 10 property rows recoverable
+              from the session scripts and fails (|r with Z| ≤ 0.53). The same audit found that most of the site&apos;s 23-row table did not trace
+              to its cited sessions, and that electrical conductivity, shown until 2026-11-02 as +0.955, is a documented wrong-sign failure (r = −0.414,
+              session #81); see the <a href="/chemistry-correlation-explorer" style={{ color: 'var(--color-accent-blue)' }}>Chemistry Correlation
+              Explorer</a> Trace column.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               Additional caveats: ~11% failure rate. Era 2 chemistry (sessions 134-2660) identified as

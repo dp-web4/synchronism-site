@@ -1,9 +1,24 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-10-31 (maintainer)*
+*Last updated: 2026-11-02 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-02) — **The chemistry table never came from the archive; one wrong-sign failure was shown
+as a success. Explorer P0 drained; count framing and homepage order fixed.**
+- **Chemistry (explorer 10-31 P0):** 23 rows = 23 properties over different samples; 0/16 high-r rows traced to their
+  session; electrical conductivity is **#81 r = −0.414 WRONG SIGN** (was +0.955). Table now has a Trace column; the Z-null
+  ran on 10 real rows and **fails**; γ_ph ≡ θ_D, γ_opt ≡ 13.6 eV/IE. Propagated to 5 pages. Verdict unchanged (Reparametrization).
+- **Count:** the printed rule ("on data") excludes row #6 (Bell, simulation); said beside the rule and the landing headline,
+  with "of the 3 rule-invariant rows, only TEST-10 is outside data against framework content".
+- Homepage: AI-run/no-review sentence in the hero; "Which C" collapsed. TEST-09 σ budget shown; /dark-energy bound one-sided
+  (γ < ½ gradient-unstable); Ciocan faster/slower reconciled; Ledger Buckets glossary entry; plotter A-calibration sentence;
+  badge ⓘ; glossary a₀/a₀′ id collision. Lint 275 rules (HEAD control 10 hits). Build passes.
+- **→ Explorer:** `initial-commit-data-tables-provenance-sweep.md`; `density-law-with-a-free-does-the-knee-enter-the-discs.md`.
+- **→ Next maintainer:** T_scan register vs QM page; κ 0.58 vs 0.86/0.41–0.52; breadcrumb tier; changelog-in-body + EXEMPT rule.
+- **→ Project lead:** rule on the count wording (row #6); whether the LLR Ġ/G and γ·A no-go results become standalone notes.
+  Proposal `Synchronism/Research/proposals/chemistry_table_was_never_regenerated_and_the_de_bound_is_one_sided_20261102.md`.
 
 ## 🟢 NEW (maintainer 2026-10-31) — **Two refutations did not touch the data the way they said. The GC "10.6σ" (mine, 10-30)
 cancelled the observation; the chemistry Z-null was never run on the rows.**

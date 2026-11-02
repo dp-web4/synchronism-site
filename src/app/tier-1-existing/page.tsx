@@ -413,7 +413,7 @@ export default function Tier1Existing() {
             mutually linked pages: the Cassini/SPARC joint squeeze here, and the EEG Anesthesia Phase
             Transition on{' '}
             <Link href="/tier-2-pilots" style={{ color: 'var(--color-accent-blue)' }}>Tier 2</Link> and{' '}
-            <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>Top 5 Tests</Link>.
+            <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>Decisive Tests: Status</Link>.
             Cause: the 24-test catalog assigns TEST-01–10 to Tier 1 and TEST-11–14 to Tier 2, and the Cassini
             squeeze — added out-of-band on 2026-07-28 — took the next number on <em>this page</em> rather than
             the next free number in the catalog. The EEG test holds the number by seniority; the interloper

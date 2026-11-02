@@ -9,7 +9,7 @@ import ValidationBadge from '@/components/ValidationBadge';
 
 const topCorrelations = [
   { property: 'Sound velocity', r: '0.982', status: 'reparametrization' as const },
-  { property: 'Electronegativity', r: '0.979', status: 'reparametrization' as const },
+  { property: 'Electronegativity (vs 1/γ_optical ∝ ionization energy)', r: '0.94–0.96', status: 'reparametrization' as const },
   { property: 'Atomic volume', r: '0.956', status: 'reparametrization' as const },
   { property: 'Thermal conductivity', r: '0.93', status: 'reparametrization' as const },
   { property: 'Ionization energy', r: '0.91', status: 'reparametrization' as const },
@@ -80,8 +80,12 @@ export default function GammaBoundary() {
           Z = 1–50), not on these rows, so its |Δr| ≤ 0.07 is a statement about those curves. It shows that two monotonic functions
           of one variable correlate highly; it does not show that these properties are monotonic in Z. Across the periodic table they
           are not: atomic volume against Z is the Lothar Meyer curve, the textbook picture of periodicity, and electronegativity
-          falls from F (3.98) to Na (0.93) in two steps of Z. Which elements and compounds make up the rows is not published, so the
-          null has not been run on the real data. <em>Open:</em> publish the row list and run it.{' '}
+          falls from F (3.98) to Na (0.93) in two steps of Z. On 2026-10-31 the site explorer ran the Z-null on the 10 property rows
+          recoverable from the session scripts: it <strong>fails</strong> (|r with Z| ≤ 0.53, quadratic R ≤ 0.51). The high r values come
+          from the proxies themselves: 1/γ<sub>phonon</sub> is θ<sub>D</sub>, and γ<sub>optical</sub> = 13.6 eV / ionization energy, so the
+          electronegativity row is electronegativity against ionization energy (r = 0.94–0.96; the 0.979 shown here until 2026-11-02 was
+          chemical softness against the same quantity). The other r values in this list come from the same uncorrected table and are
+          not re-traced yet.{' '}
           See <a href="/honest-assessment" style={{ color: '#f59e0b' }}>Honest Assessment</a>.
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>

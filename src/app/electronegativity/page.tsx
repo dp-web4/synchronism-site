@@ -10,13 +10,16 @@ export default function Electronegativity() {
     <>
       <Breadcrumbs currentPath="/electronegativity" />
       <h1>Electronegativity</h1>
-      <ValidationBadge status="reparametrization" label="r = 0.979 — Circular via Bonding Character" />
+      <ValidationBadge status="reparametrization" label="r = 0.94–0.96 — the γ proxy is ionization energy renamed" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Electronegativity &mdash; how strongly an atom attracts electrons in a bond &mdash; correlates
-          with the coherence parameter at r = 0.979. This is the second-strongest correlation
-          in the chemistry data.
+          with the archive&apos;s optical γ proxy at r = 0.94–0.96. That proxy is defined as
+          &#x03B3;<sub>optical</sub> = 13.6&nbsp;eV / IE, where IE is the ionization energy, so the correlation is
+          electronegativity against ionization energy: a textbook relation that Mulliken&apos;s definition of
+          electronegativity, &#x03C7; = (IE + EA)/2, builds in. (Until 2026-11-02 this page gave r = 0.979. That number is
+          chemical softness against the same 1/IE, archive session #118; site explorer audit 2026-10-31.)
         </p>
 
         <h2>Why This Works</h2>
@@ -42,11 +45,19 @@ export default function Electronegativity() {
             dataset. See <Link href="/chemistry-correlation-explorer" style={{ color: 'var(--color-accent-blue)' }}>Chemistry
             Correlation Explorer</Link> for the same caveat applied to the wider cohort.
           </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>The number did not come from that route (site explorer audit, 2026-10-31).</strong> The script that
+            produced the electronegativity correlation does not use an entropy-ratio N<sub>corr</sub>. It sets
+            &#x03B3;<sub>optical</sub> = 13.6&nbsp;eV / IE, so the circularity is more direct than the one described
+            above: the proxy <em>is</em> the inverse ionization energy. The &ldquo;Why This Works&rdquo; story above
+            (electrons and nucleus moving as a correlated unit) is an interpretation laid over that relation, not
+            something the calculation tested.
+          </p>
         </div>
 
         <h2>Connection to Sound Velocity</h2>
         <p>
-          Both sound velocity (r = 0.982) and electronegativity (r = 0.979) correlate with &#x03B3;
+          Both sound velocity (r = 0.982) and electronegativity (r = 0.94–0.96) correlate with &#x03B3;
           for the same reason: they both measure aspects of collective coupling. Sound velocity
           measures atom-atom coupling; electronegativity measures electron-atom coupling. The
           coherence function captures the underlying correlation structure that drives both.

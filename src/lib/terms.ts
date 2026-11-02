@@ -792,6 +792,13 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'Appears on Why Synchronism (Beginner step 1) next to the chemistry result. The 89% counts how many of 1,703 logged chemistry sessions (a session counter, not a census of phenomena) sit where a sigmoid in density says they should. Each correlation is a post-hoc fit against a \u03b3 proxy that contains the Debye temperature, so the template, not the coherence equation, explains the rate. (Corrected 2026-10-31: a polynomial-in-Z null cited here was run on synthetic curves, not the chemistry rows.) It is a qualifier on a descriptive number, not one of the nine validation badges. (Entry added 2026-09-29 after a technical-writer simulated-visitor persona found the label undefined.)',
     learnMore: '/chemistry-correlation-explorer',
   },
+  'ledger-buckets': {
+    term: 'Ledger Buckets',
+    fullName: 'Research ledger buckets: the four bins of PREDICTIONS.md',
+    brief: 'The research archive files every claim in one of four buckets. Bucket 0: confirmed novel predictions (count 0). Bucket 1: untested but falsifiable novel bets. Bucket 2: refuted (tested and failed). Bucket 3: reparametrizations (known physics in new notation).',
+    explanation: 'The buckets are the archive\u2019s scoreboard (Synchronism repo, PREDICTIONS.md). They are not the site\u2019s badges, though they line up: Bucket 2 rows carry Failed or Audited-Negative, Bucket 3 rows carry Reparametrization. \u201cIt cannot move Bucket 0\u201d means no outcome of that test could produce a confirmed novel prediction. Bucket 2 lists more rows than the site\u2019s \u201c6 refutations\u201d: it includes eliminations that were not registered tests (for example a dimensional error, a derivation that fails, a result shown to be a textbook relation). So \u201c13 empirical eliminations in the refuted bucket\u201d (For Researchers, A2ACW) counts Bucket 2 rows decided by outside data, and the 6 are the subset that also meet the site\u2019s counting rule (a registered criterion, executed). (Entry added 2026-11-02 after a researcher simulated-visitor persona found the terms undefined.)',
+    learnMore: '/honest-assessment#count-rule',
+  },
   'boundary-consistent': {
     term: 'Boundary-Consistent (89%)',
     fullName: '89% Boundary-Consistent \u2014 the chemistry consistency rate',

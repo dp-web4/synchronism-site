@@ -9,7 +9,10 @@ import { getAllTerms } from '@/lib/terms';
 import LabelMap from '@/components/LabelMap';
 
 function glossarySlug(t: string): string {
-  return t.replace(/Δ/g, 'delta ').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  // 2026-11-02: a₀ and a₀′ both slugged to "a" (duplicate id); γ, η, ξ, ρ got no ASCII anchor (technical-writer persona).
+  return t.replace(/Δ/g, 'delta ').replace(/₀/g, '0').replace(/′/g, ' prime').replace(/γ/g, 'gamma ')
+    .replace(/η/g, 'eta ').replace(/ξ/g, 'xi ').replace(/ρ/g, 'rho ')
+    .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
 // Jump-bar group for a term: its first Latin letter, or "Greek" for symbol-led terms

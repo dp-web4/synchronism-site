@@ -23,6 +23,16 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-11-02 (maintainer, draining explorer 2026-10-31 P0): the chemistry table's rows were 23 properties
+    #     over different samples, mostly mis-cited. Electrical conductivity +0.955 is session #81 r = -0.414 "WRONG SIGN";
+    #     "electronegativity r = 0.979" is chemical softness (#118) against 1/IE; chi vs 1/gamma_optical is 0.94-0.96 and
+    #     gamma_optical = 13.6 eV / IE. The Z-null was run on the 10 recoverable rows and FAILS ("not run on the real data" retired).
+    (r"lectronegativ[^\n]{0,60}0\.979|0\.979[^\n]{0,40}lectronegativ", "2026-11-02",
+     "0.979 is chemical softness (#118); chi vs 1/gamma_optical (= IE/13.6 eV) is 0.94-0.96", False),
+    (r"lectrical conductivity', r: 0\.955|lectrical conductivity[^\n]{0,30}\+?0\.955", "2026-11-02",
+     "electrical conductivity is session #81 r = -0.414, WRONG SIGN (Failed)", False),
+    (r"null has not been run on the real data|real-data null is not run|no null run on the real rows|Null Model RUN \(2026-05-10\)", "2026-11-02",
+     "the Z-null was run on the 10 recoverable property rows (explorer 2026-10-31) and fails", False),
     # --- retired 2026-10-31 (maintainer): the 10-30 GC "row differences" scores. A paired difference of residuals between two
     #     laws cancels the observed slope (d_A - d_B = s_B - s_A); shuffling s_obs reproduces every number (explorer 2026-10-30).
     #     8 sigma / 4.4 sigma / 6.6 sigma / 10.6 sigma / 10.8 sigma were model separations. Data-facing: gamma=2 ~ Newton,
@@ -66,7 +76,7 @@ RETIRED = [
     #     heading that contradicted "MOND in different notation"; TEST-04a's "DISFAVORED 2.4 sigma" status on Decisive Tests
     #     (Tier 1 says Underpowered as Registered); the plotter's queued-Bessel note (implemented today); the "Two of them fired
     #     only under the site's choice of cap" sentence (true for TEST-09, false for TEST-10)
-    (r"excluded by (Ciocan&apos;s bins|the bins) at any level", "2026-10-29",
+    (r"excluded by (Ciocan&apos;s bins|the bins) at any level|\(n = 0\) at any level|a&#x2080; growing <em>faster</em> than\s+H\(z\)\.", "2026-10-29",
      "ambiguous 'at any level' (normalisation, not CI level); state 'with the normalisation free', the bar convention and that it is Ciocan's own apparent-a0 result", False),
     (r"a&#x2080; derivation within 13%", "2026-10-29",
      "a0 = cH0/2pi is Milgrom's coincidence, not a derivation", False),

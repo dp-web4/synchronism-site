@@ -28,8 +28,9 @@ export default function Home() {
           <strong>We proposed this. We tested it. It did not hold as stated. What follows is what we learned.</strong>{' '}
           Read on to watch a big idea get tested in public and lose honestly: which parts turned out to be
           known physics renamed, which parts the data killed, and what that rules out for any theory of the same shape.{' '}
-          (The research, audits and computations are done by AI agents, with one human, the project lead
-          (&ldquo;dp&rdquo; throughout this site), setting direction and overseeing.){' '}<strong>&ldquo;Coherence&rdquo; here is a score for how collectively a system&apos;s parts act, computed from its density; it is not quantum coherence, and a superconductor scores low on it.</strong>{' '}
+          <strong>This is an AI-run research notebook: the research, audits and computations are done by AI agents, with one
+          human, the project lead (&ldquo;dp&rdquo; throughout this site), setting direction and overseeing. No journal and no
+          outside physicist has reviewed it.</strong>{' '}<strong>&ldquo;Coherence&rdquo; here is a score for how collectively a system&apos;s parts act, computed from its density; it is not quantum coherence, and a superconductor scores low on it.</strong>{' '}
           The bet: a single dial &mdash; how coherently a system&apos;s parts act together, computed from its
           density &mdash; might explain what currently needs a separate patch at every scale (dark matter for
           galaxies, wavefunction collapse for quantum measurement). That is what the equation tried to do.
@@ -110,10 +111,9 @@ export default function Home() {
           switch flips.</em>
         </p>
         <p style={{ textAlign: 'center', color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.6rem' }}>
-          This is the density-keyed form, C<sub>&rho;</sub>. The two galaxy tests that refuted the framework on its own terms ran on
-          an acceleration-keyed cousin with a floor, C<sub>a</sub>, and the RAR fit on a third, C<sub>g</sub>; all three are written
-          out under &ldquo;Which C the galaxy numbers used&rdquo; below (pointer added 2026-10-10). &ldquo;One equation&rdquo; means one curve
-          shape with separately fitted dials in each sector, not one universal γ (<Link href="/honest-assessment#is-gamma-universal" style={{ color: 'var(--color-accent-blue)' }}>why</Link>).
+          &ldquo;One equation&rdquo; means one curve shape with separately fitted dials in each area of physics, not one universal
+          γ (<Link href="/honest-assessment#is-gamma-universal" style={{ color: 'var(--color-accent-blue)' }}>why</Link>). Physicists:
+          the galaxy tests used close cousins of this formula; see &ldquo;Which C the galaxy numbers used&rdquo; below.
         </p>
         <p style={{ textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
           <strong>Never seen these symbols? Read it out loud like this:</strong> &ldquo;coherence, at a given
@@ -139,7 +139,11 @@ export default function Home() {
             <strong>tanh</strong> = S-shaped saturation function: maps any real number to (−1,+1) — C(ρ) stays in [0,1) because the input argument ≥ 0. You can just think &ldquo;smooth S-curve&rdquo; <em>on a log-density axis</em>; in ρ itself the function is concave everywhere, with no inflection, and at the galaxy sector&apos;s own parameters it is a straight line to better than the data&apos;s precision (measured 2026-09-03 &mdash; see the <Link href="/coherence-explorer" style={{ color: 'var(--color-accent-violet)' }}>Coherence Explorer</Link> caption).{' '}
             <strong>ln</strong> = natural log: compression — 1,000× bigger becomes only ~7 units bigger inside the equation (3 units on a base-10 axis like the Coherence Explorer&apos;s).
           </p>
+          <details style={{ color: 'var(--color-text-secondary)', fontSize: '0.8rem', marginBottom: '0.25rem', textAlign: 'left' }}>
+            <summary style={{ cursor: 'pointer', textAlign: 'center' }}><strong>For physicists: which C the galaxy numbers used</strong> (three functions share this shape; uses terms defined in the <a href="#terms-on-this-page" style={{ color: 'var(--color-accent-blue)' }}>key</a> further down)</summary>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>
+            This is the density-keyed form, C<sub>&rho;</sub>. The two galaxy tests that refuted the framework on its own terms ran on
+            an acceleration-keyed cousin with a floor, C<sub>a</sub>, and the RAR fit on a third, C<sub>g</sub>.{' '}
             <strong>Which C the galaxy numbers used:</strong> the equation above is keyed on
             <em> density</em>. Almost every galaxy statistic on this site used the same tanh-log shape keyed on
             <em> acceleration</em> instead &mdash; the RAR fits (&gamma;&nbsp;=&nbsp;0.49, &Delta;BIC&nbsp;+184 at &gamma;&nbsp;=&nbsp;2 by point, &asymp;&nbsp;+11 by galaxy),
@@ -154,9 +158,12 @@ export default function Home() {
             <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>&ldquo;Which C&rdquo; column</Link>. See{' '}
             <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>.
           </p>
+          </details>
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginBottom: '0.25rem' }}>
             <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
-            The &ldquo;Which C the galaxy numbers used&rdquo; paragraph was added 2026-09-14.
+            The &ldquo;Which C the galaxy numbers used&rdquo; paragraph was added 2026-09-14. On 2026-11-02 it moved into a
+            collapsed &ldquo;for physicists&rdquo; block, with the C<sub>&rho;</sub>/C<sub>a</sub>/C<sub>g</sub> pointer, because two
+            simulated-visitor personas met its terms before the abbreviation key that defines them.
           </details>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             The tanh shape is <em>motivated</em> by the sigmoid/compander family (&mu;-law, Hill, logistic) &mdash; a phenomenological choice, not derived. See /parameter-derivations for why &ldquo;mean-field theory&rdquo; is the wrong category: there is no self-consistency loop, no free energy, no critical exponents. The log-density argument is physically motivated. Three parameters are fitted to data.{' '}
@@ -356,6 +363,8 @@ export default function Home() {
               <strong>&sigma;</strong> = standard deviations of significance;{' '}
               <strong>CHSH</strong> = the measurable form of Bell&apos;s theorem;{' '}
               <strong>&Lambda;CDM</strong> = the standard cosmological model;{' '}
+              <strong>CDM</strong> = cold dark matter, the unseen mass in that model; <strong>DM</strong> = dark matter;{' '}
+              <strong>BIC</strong> = Bayesian information criterion, a fit score that penalises extra parameters (&Delta;BIC is the difference between two models);{' '}
               <strong>f&sigma;₈</strong> = growth rate of cosmic structure;{' '}
               <strong>g<sub>bar</sub> / g<sub>obs</sub> / a<sub>0</sub></strong> = acceleration from visible matter / observed acceleration / MOND&apos;s acceleration scale;{' '}
               <strong>&Omega;<sub>m</sub> / &Omega;<sub>b</sub></strong> = the fraction of the universe&apos;s energy in matter (&asymp; 0.315) / in ordinary (baryonic) matter (&asymp; 0.049);{' '}
@@ -393,6 +402,13 @@ export default function Home() {
                 <em style={{ color: 'var(--color-text-muted)' }}>(6 under the current counting rule; 3&ndash;8 under rules already on file, at most 5 independent &mdash; <Link href="/honest-assessment#count-rule" style={{ color: 'var(--color-accent-blue)' }}>why</Link>)</em>{' '}
                 &mdash; <strong>in plain words: we ran six tests that could have shown it wrong, and it lost all six.</strong>{' '}
                 <em style={{ color: 'var(--color-text-muted)' }}>(Five ran on outside data; the sixth, Bell/CHSH, is a construction check, not a data test. Whether TEST-09 and TEST-10 count as one refutation or two is pending the project lead.)</em>{' '}
+                <span style={{ display: 'block', margin: '0.3rem 0', fontSize: '0.9em', color: 'var(--color-text-secondary)' }}>
+                  <strong>How solid is &ldquo;six&rdquo;?</strong> Some of the six overlap, and the rules for counting are not settled, so it is
+                  between 3 and 8 depending on the rule. Three survive every rule, and only one of those three is outside data refuting
+                  something the framework itself predicts: TEST-10, the cap on how dark-matter-dominated a galaxy can look. Of the other two,
+                  Bell/CHSH is a simulation, and the environment test refuted a size of effect (&gt; 20%) that the framework&apos;s own
+                  equation never produced. All of them went against the idea; none went for it.
+                </span>
                 <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six? &rarr;</Link>{' '}
                 <span style={{ display: 'block', margin: '0.3rem 0', fontSize: '0.85em', color: 'var(--color-text-muted)' }}>
                   Two of the six (TEST-09, TEST-10) were convention-dependent on SPARC; the weak-lensing RAR (Brouwer+2021) excludes the

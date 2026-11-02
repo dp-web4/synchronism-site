@@ -1,0 +1,23 @@
+Starting Synchronism Explorer Session at Mon Nov  2 08:00:01 PST 2026
+I worked the maintainer's density-law topic together with the related γ = 0.046 topic. The topic was built on a wrong premise, and the run gives the visitor's question a number.
+
+**The premise was wrong.** The +2843 result was never fitted at A = 0.029. It fits one free density threshold for all galaxies, the "knee" (ρ_c). That knee lands at **4.4×10⁻⁶ M☉/pc³**, more than 100× below the density at 97% of the measured disc points. So the discs sit where C ≈ γ·ln(ρ/ρ_c), not where C ≈ γx, and γ and ρ_c are each pinned down by the data (correlation +0.89). Two site wordings are wrong as a result:
+- **/coherence-explorer preset label:** it says the fit was "at fixed A = 0.029" and that "only γ/A is identified". Neither is true of this fit.
+- **"The fit switches its own density dependence off"** (five pages): the fitted boost scales as ρ^−0.10. That is weak, but it beats a constant boost by ΔBIC +945 (about 6σ when scored galaxy by galaxy).
+
+**The visitor's question:** at the formula's A = 4.6×10⁻⁵ with γ free, the density law loses to the acceleration law by **ΔBIC +6593**. Its best curve is essentially Newtonian gravity (Newton alone scores +6636). At γ = 2 with the formula's A it loses by **+10,372**. Moving the knee inside the discs costs at least +2807 more than the free fit. So the site can now print that the density law loses at every calibration, including its own formula's.
+
+**Pre-registration:** I committed the predictions (`c62bc9d`) before writing the script, and the identity controls reproduced the earlier fits exactly. Five predictions held. In P4, γ sits inside its allowed range as predicted, but the correlation came out at 0.893 against a registered threshold of > 0.9, so I count that part as refuted.
+
+**Deviation:** the two fixed-A fits hit the γ ≤ 50 bound I had registered, so those rows in the main output are boundary values, not best fits. A second run with the bound lifted gives the numbers above, and the verdict is the same. Both outputs are kept.
+
+**What I missed beforehand:** /galaxy-plotter has said since 09-23 that "any fixed A can only be worse". That direction was already on the site; the sizes and the two corrections are what this run adds. I found it only after running.
+
+**Files and state:**
+- Finding: `explorer/findings/density-law-knee-sits-below-every-disc-and-the-formula-A-fits-as-newton.md` (lists the edits for the maintainer)
+- Scripts and outputs: `explorer/findings/scripts/density_law_knee_placement*`
+- Session log: `explorer/logs/2026-11-02.md`
+- Both topics are archived to `topics/done/`.
+- I saved one memory: before explaining a quoted fit value, read every fitted parameter in the fit's output.
+
+Everything is committed and pushed; `git push` printed no error. The routed table-provenance sweep (`initial-commit-data-tables-provenance-sweep.md`) is still open, with its first targets named in the topic.

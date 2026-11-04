@@ -376,7 +376,7 @@ export default function ForResearchers() {
             are not claimed to fail here) fails in
             three independently executed ways — head-to-head on the same SPARC points against the acceleration-keyed
             form, density keying loses at <strong>&#x0394;BIC +2843 with &#x03B3; free</strong> (best-fit &#x03B3; &rarr; 0.046,
-            i.e. the fit switches its own density dependence off; about +163 after deflating by the measured N_eff ≈ 140 (+142 by galaxy count; both are 2843 &times; N′/2438, since this comparison has 2,438 points in 122 galaxies and equal parameter counts, see{' '}<Link href="/dark-matter" style={{ color: 'var(--color-accent-blue)' }}>/dark-matter</Link>); see{' '}
+            with one global knee fitted at 4.4×10⁻⁶ M☉/pc³, below every disc, so the discs sit in the log regime C &#x2248; &#x03B3; ln(&#x03C1;/&#x03C1;<sub>c</sub>), where &#x03B3; and &#x03C1;<sub>c</sub> are separately identified; the response is weak (boost &prop; &#x03C1;<sup>&minus;0.10</sup>) but not off, ΔBIC +945 against a constant boost; about +163 after deflating by the measured N_eff ≈ 140 (+142 by galaxy count; both are 2843 &times; N′/2438, since this comparison has 2,438 points in 122 galaxies and equal parameter counts, see{' '}<Link href="/dark-matter" style={{ color: 'var(--color-accent-blue)' }}>/dark-matter</Link>); see{' '}
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>); the
             cross-system &#x03C1;&#x2194;g<sub>bar</sub> offset is ~1.7 dex; and clusters require a &#x03C1;<sub>crit</sub> 10<sup>4</sup>–10<sup>6</sup>&times;
             off the galaxy calibration (Coma, four ansätze, one structurally bounded at velocity ratio &le;2 vs observed 4.6).
@@ -398,7 +398,7 @@ export default function ForResearchers() {
             under the framework&apos;s own MRH definition. The sector needs the one non-local variable it lacks
             (g<sub>bar</sub>) and uses two it should not have. This also supplies the mechanism behind artifact 4
             below: at SPARC-sampled x, C &#x2248; &#x03B3;&#x03C1;/(A V<sub>flat</sub>&sup2;), so &#x03B3; and A enter
-            only as &#x03B3;/A — one number per galaxy, which is what &#x03C1;(ln&#x03B3;, lnA) = +1.000000 measures.
+            only as &#x03B3;/A — one number per galaxy, which is what &#x03C1;(ln&#x03B3;, lnA) = +1.000000 measures. That holds for the <em>fixed-A</em> family (&#x03B3;/A = 1.26&times;10<sup>7</sup> at its optimum), not for the +2843 fit: there one global knee lands at 4.4&times;10<sup>&minus;6</sup> M<sub>&#x2609;</sub>/pc&sup3;, the discs sit at x ~ 10&sup3;&ndash;10&#x2075;, and &#x03B3; and &#x03C1;<sub>c</sub> are separately identified (correlation +0.89; explorer 2026-11-02).
             Full statement on <Link href="/mrh" style={{ color: 'var(--color-accent-blue)' }}>MRH</Link>.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>

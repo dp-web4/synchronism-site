@@ -266,7 +266,7 @@ const tests: Test[] = [
     name: 'Solar System / SPARC Joint Squeeze',
     badge: 'failed',
     badgeLabel: 'Failed — inherited: MOND\'s own functions fail it too (published 8.7σ)',
-    state: 'Kill Criterion Triggered',
+    state: 'Kill Criterion Triggered (the published, marginalized 8.7σ; the in-house empty intersection holds at point level only)',
     data: 'SPARC (2,807-point RAR, McGaugh 2016 pipeline) + Cassini spacecraft quadrupole bound on the Solar System',
     cost: '$0',
     time: 'EXECUTED (2026-07-23; re-verified 2026-07-24)',
@@ -566,7 +566,11 @@ export default function Tier1Existing() {
             &ldquo;below reach&rdquo;. The Gaia statistic &gamma;<sub>g</sub> is a ratio of wide to close binaries drawn
             from the same volume. Under the ambient-density keying the galaxy runs use, the boost 1/C is common to both
             bins and cancels, so &gamma;<sub>g,pred</sub> = 1 exactly, at every &#x03C1;<sub>crit</sub> and every
-            &#x03B3;, floored or bare. No Gaia release can move that. It turns into a live constraint only under
+            &#x03B3;, floored or bare. No Gaia release can move that. <em>The ratio is null; the branch is not untested.</em> The
+            boost itself does not cancel in absolute dynamics: at the published knee (&#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, unfloored)
+            it is ~3.5&times;10&#x2074; in g at the Sun, which the Oort limit excludes; at the knees where it is small it fails lunar
+            laser ranging and SPARC (see this card&apos;s kill criterion). Added 2026-11-04 after a researcher persona read
+            &ldquo;identically null&rdquo; as &ldquo;untestable&rdquo;. It turns into a live Gaia constraint only under
             enclosed/MRH keying (explorer finding <code>test02-is-not-below-reach-it-is-identically-null.md</code>).
             Neither branch changes the count, which stays at 6.
           </p>
@@ -633,7 +637,7 @@ export default function Tier1Existing() {
             <br />A card carries at most one badge and one State; a parenthesis after the State names a substitute run&apos;s
             state or what it is shared with. A row&apos;s history can also carry lifecycle verbs. E.g. TEST-09 reads
             &ldquo;Failed, Kill Criterion Triggered&rdquo; (at B<sub>max</sub> = 1/&Omega;<sub>m</sub>; convention-dependent, see its card), and TEST-04a
-            reads &ldquo;Failed &mdash; Underpowered as Registered&rdquo;. <strong>Read them in that order: badge (what the evidence
+            reads badge &ldquo;Untested at the registered power&rdquo;, state &ldquo;Underpowered as Registered&rdquo; (until 2026-10-24 its badge said Failed; this example lagged it until 2026-11-04). <strong>Read them in that order: badge (what the evidence
             says) &rarr; operational state (what happened to the test) &rarr; lifecycle verb (where the test now sits).</strong>
           </p>
           <details style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', marginTop: '0.3rem' }}>

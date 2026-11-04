@@ -107,7 +107,7 @@ export default function ChemistryCorrelationExplorer() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Browse the chemistry phenomena tested against &#x03B3;. Sort by correlation strength,
-          filter by regime. These 23 rows were curated from a corpus of ~1,700 chemistry sessions (1,703 is a session counter, not a count of distinct phenomena).
+          filter by regime. These 23 rows were curated from a chemistry corpus of 2,671 sessions (the archive&apos;s &ldquo;1,703&rdquo; is a type counter read at session #1,840, not a corpus size or a count of distinct phenomena; see the note under the table).
         </p>
 
         <div style={{
@@ -120,7 +120,7 @@ export default function ChemistryCorrelationExplorer() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#f59e0b' }}>Methodological caveat:</strong>{' '}
-          This display shows 23 hand-curated rows from ~1,700 chemistry sessions. Selecting the highest-correlation
+          This display shows 23 hand-curated rows from a 2,671-session chemistry corpus. Selecting the highest-correlation
           rows from a large pool inflates apparent effect sizes by construction (multiple-comparison
           artifact). The sessions&apos; results are also not statistically independent &mdash; many share
           underlying physical mechanisms. The r-values shown are Pearson correlations from exploratory

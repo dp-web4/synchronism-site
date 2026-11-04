@@ -11,7 +11,7 @@ export default function WideBinaries() {
     <>
       <Breadcrumbs currentPath="/wide-binaries" />
       <h1>Wide Binaries</h1>
-      <ValidationBadge status="untested" label="Self-Eliminating-or-Tie — density branch identically null in the ratio (excluded by SPARC and LLR), acceleration branch already failed at the SPARC γ via TEST-25; DR3 dispute unresolved" />
+      <ValidationBadge status="untested" label="Self-Eliminating-or-Tie — density branch identically null in the ratio but not in absolute dynamics (excluded by the Oort limit at the published knee, by SPARC and by LLR), acceleration branch already failed at the SPARC γ via TEST-25; DR3 dispute unresolved" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

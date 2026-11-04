@@ -51,7 +51,7 @@ export default function CoherenceExplorer() {
     }).join(' ');
   }, [points, logScale, xMin, xMax, plotW, plotH, pad.left, pad.top]);
 
-  const regime = gamma > 1.4 ? 'Single-particle (γ > 1.4)' : gamma > 0.6 ? 'Boundary (γ ≈ 1)' : 'Collective (γ < 0.6)';
+  const regime = gamma > 1.4 ? 'Single-particle (γ > 1.4)' : gamma > 0.6 ? 'Boundary (γ ≈ 1)' : 'Many-body by γ = 2/√N_corr (γ < 0.6), yet C is lower here: the formula’s sign inversion';
   const regimeColor = gamma > 1.4 ? '#8b5cf6' : gamma > 0.6 ? '#f59e0b' : '#10b981';
 
   return (
@@ -224,7 +224,7 @@ export default function CoherenceExplorer() {
           <strong>Before you drag:</strong> the default &#x03B3; = 0.49 is what galaxy data prefer when &#x03B3; is left free
           in the <em>acceleration</em> version of this curve (the one that turns out to be MOND). This tool&apos;s x-axis is
           <em> density</em>, and the density version fitted freely to the same galaxies runs to &#x03B3; = 0.046 &mdash; a
-          nearly flat curve (try that preset). &#x03B3; = 2 is what the framework originally said. The gaps between these
+          slow, log-like rise (the preset sets &#x03B3; only; the fit&apos;s knee is far off this axis). &#x03B3; = 2 is what the framework originally said. The gaps between these
           numbers are part of why the framework failed its galaxy test.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '-0.5rem', marginBottom: '1rem' }}>
@@ -243,7 +243,7 @@ export default function CoherenceExplorer() {
             />
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
               {[
-                { g: 0.046, label: 'γ = 0.046 — density version fit to real galaxies: nearly flat (SPARC, density-keyed free fit at fixed A = 0.029 in ρ_crit = A·V²; loses at ΔBIC +2843; at SPARC densities C ≈ γx, so only γ/A is identified and 0.046 is not a measurement of γ alone)' },
+                { g: 0.046, label: 'γ = 0.046 — density version fit to real galaxies (SPARC, one global knee fitted at ρ_c = 4.4×10⁻⁶ M☉/pc³, below every disc; loses at ΔBIC +2843). Sets γ only: the fitted knee is not representable on this axis, so the drawn curve is not the fit. On the fit the discs sit at x ~ 10³–10⁵, where C ≈ γ·ln(ρ/ρ_c) runs 0.02–0.6 and γ and ρ_c are separately identified. (Label corrected 2026-11-04: it said “fixed A = 0.029, only γ/A identified”, which describes a different fit.)' },
                 { g: 0.49, label: 'γ = 0.49 — what real galaxies prefer, acceleration version (SPARC acceleration-keyed fit; = MOND there; killed by Cassini, a failure inherited from MOND\'s simple μ: 8.7σ published for the RAR-preferred MOND functions (Desmond+2024, marginalized), +17.95σ in this site\'s own unmarginalized run; illustrative on this density axis)' },
                 { g: 0.5, label: 'γ = ½ exactly — the same curve as MOND’s formula (MOND’s simple μ function; see note below)' },
                 { g: 2.0, label: 'γ = 2 — steep: the framework’s original guess (disfavoured on SPARC; at the threshold once galaxies are the unit)' },
@@ -269,7 +269,7 @@ export default function CoherenceExplorer() {
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               Opens at &#x03B3; &#x2248; 0.49, the value SPARC galaxy data prefer when the <em>acceleration-keyed</em> version
               is fit freely (0.489). The <em>density-keyed</em> version &mdash; the one this tool&apos;s &#x03C1;/&#x03C1;<sub>crit</sub> axis
-              draws &mdash; fit freely to SPARC runs to &#x03B3; = 0.046 instead: the fit switches its own density dependence off
+              draws &mdash; fit freely to SPARC runs to &#x03B3; = 0.046 instead: the fit keeps only a weak density response (boost &prop; &#x03C1;<sup>&minus;0.10</sup>, with its knee fitted at 4.4&times;10<sup>&minus;6</sup> M<sub>&#x2609;</sub>/pc&sup3;, below every disc; it beats a constant boost by &Delta;BIC +945, so the response is weak, not off)
               (see <Link href="/core-idea#density-fit" style={{ color: 'var(--color-accent-blue)' }}>Core Idea</Link>).
               &#x03B3; = 2 was the framework&apos;s original galaxy guess &mdash; refuted (drag the slider up to see it).
               <strong style={{ color: '#f87171' }}> The default is dead on two fronts, not one (added 2026-09-05):</strong>{' '}
@@ -279,9 +279,9 @@ export default function CoherenceExplorer() {
               own unmarginalized run gives a larger number, but only by treating 2,807 rotation-curve points as independent; with
               the galaxy as the unit its retained &#x03B3; range widens to 0.3&ndash;1.7, so the published 8.7&#x03C3; is the figure to quote.
               At the &#x03B3; galaxies prefer the bound fails; the &#x03B3; values that pass Cassini (&#x2273; 1.5) are disfavoured by SPARC at ~2&#x03C3; per galaxy, not excluded. And the S-shape you see is a property of the log axis: with the density-keyed
-              knee where the galaxy fits put it, SPARC samples x = &#x03C1;/&#x03C1;<sub>crit</sub> at a median of ~7&times;10<sup>&minus;5</sup>,
+              knee at the published &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, SPARC samples x = &#x03C1;/&#x03C1;<sub>crit</sub> at a median of ~7&times;10<sup>&minus;5</sup>,
               where C = &#x03B3;x to 1.8% at worst (0.22&times; the data&apos;s precision on C) &mdash; a straight line. Toggle to
-              linear and zoom to x &lt; 10<sup>&minus;3</sup> to see the regime the data actually occupy (explorer measurement 2026-09-03).
+              linear and zoom to x &lt; 10<sup>&minus;3</sup> to see the regime the data occupy at that knee (explorer measurement 2026-09-03). The free density fit puts the knee elsewhere: at 4.4&times;10<sup>&minus;6</sup> M<sub>&#x2609;</sub>/pc&sup3;, below every disc, so its discs sit at x ~ 10&sup3;&ndash;10&#x2075; in the log regime, not the linear one (explorer 2026-11-02).
             </p>
             <p style={{ color: '#fbbf24', fontSize: '0.75rem', marginTop: '0.35rem', borderLeft: '2px solid rgba(245,158,11,0.6)', paddingLeft: '0.5rem' }}>
               <strong>Two models, one curve (added 2026-09-06).</strong> &ldquo;&#x03B3; &#x2248; 0.49 fits SPARC and fails

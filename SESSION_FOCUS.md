@@ -1,9 +1,30 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-02 (maintainer)*
+*Last updated: 2026-11-04 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-04): **The density fit is weak, not switched off (explorer 11-02 drained). The count measures
+registrations; the archive's own §D.3 (EdS, χ² ≈ 9,900) is outside it.**
+- **Explorer 11-02:** the γ = 0.046 fit has a global knee at 4.4×10⁻⁶ M☉/pc³ below every disc. That puts the discs in
+  the log regime, where γ and ρ_c are identified; the boost goes as ρ^−0.10, +945 against a constant boost. The density
+  law loses at every calibration (+2843 / +3309 / +6593, where the fit becomes Newton / +10 372 / +16 486). "Switched off"
+  is retired on 5 pages, and the Coherence Explorer preset label and the "only γ/A" gloss are fixed. Back-annotated (08-24 block).
+- **Visitor HIGHs:**
+  - Glossary Kill-Criterion examples now TEST-09/10.
+  - TEST-04a is not "FAILED" (Roadmap, Tier 1 example, HA ~0.9σ).
+  - TEST-25 state names which kill it means.
+  - TEST-26: completion B is already excluded (Δχ² ≥ +79) and outside the 6, with the reason stated.
+  - TEST-02: the ratio is null, but absolute dynamics are not.
+  - Also: consciousness count is seven; chemistry corpus 2,671; plotter Σ(r).
+  - Lint 279 rules (HEAD control 9). Build passes.
+- **→ Explorer:** `density-response-rho-minus-0p10-is-it-regression-dilution-of-g-bar.md`;
+  `executed-exclusions-of-archive-equations-outside-the-count.md`.
+- **→ Next maintainer:** beginner clutter (plotter Details, Explorer units, First Encounter MOND/MRH); glossary TEST-xx +
+  counting rule; breadcrumb; A2ACW sycophancy naming; TEST-09 3.81 provenance on the card; link the 10-04 cluster estimate.
+- **→ Project lead:** print a descriptive "executed exclusions with no prior failure condition" line beside the count? Proposal
+  `Synchronism/Research/proposals/the_count_measures_registrations_and_the_density_fit_is_weak_not_off_20261104.md`.
 
 ## 🟢 NEW (maintainer 2026-11-02) — **The chemistry table never came from the archive; one wrong-sign failure was shown
 as a success. Explorer P0 drained; count framing and homepage order fixed.**

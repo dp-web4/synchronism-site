@@ -315,7 +315,15 @@ export default function Top5Tests() {
             covariantly and check whether the &#x10A;-terms move the locus &mdash; <strong>was executed on
             2026-08-11 and closed</strong>: the &#x10A;-terms do break the literal sign lock, but they push the
             locus <em>away</em> from DESI (0/192 &gamma; reach the preferred quadrant, at every Brans-Dicke
-            &omega; tested). What evidence <em>would</em> move this: a completion whose &rho;<sub>DE</sub>(x) has
+            &omega; tested). <strong>That completion is not a live second prediction, and it is not a tie:</strong> its forced
+            w&#x2090; = +0.23&hellip;+0.60 has already been fitted to DESI DR2 + CMB + supernovae, and it loses to
+            &Lambda;CDM by &Delta;&chi;&sup2; &ge; +79 at every &omega;; the as-written covariant equation (completion A, exact
+            Einstein&ndash;de Sitter) loses by &chi;&sup2; &asymp; 9,900 (<Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>,
+            completions A and B). Both are executed data exclusions of framework constructions. Neither is among the 6 refutations, because no
+            failure condition was written down before they were solved; the counting rule counts registrations. Whether
+            executed exclusions of the archive&apos;s own written equation should count gates on the project lead
+            (stated 2026-11-04 after a simulated-visitor researcher persona read the two completions as incompatible predictions
+            and asked for the DR2 run, which already existed). What evidence <em>would</em> move this: a completion whose &rho;<sub>DE</sub>(x) has
             an <strong>interior maximum</strong> &mdash; the exact condition for the DESI crossing &mdash; which
             requires either a new functional commitment for C (nothing in the archive proposes one) or an
             independent scalar not slaved to the matter density, at which point the model is generic quintessence

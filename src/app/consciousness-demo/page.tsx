@@ -47,8 +47,8 @@ export default function ConsciousnessDemo() {
         this page cannot drift apart.)
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.95rem', marginTop: '0.75rem', maxWidth: '65ch' }}>
-        <strong>What this shows, in one sentence:</strong> eight Synchronism-internal estimates of a consciousness threshold all
-        land near C &asymp; 0.50, and the chart below is why that is expected (they share one midpoint assumption) rather than
+        <strong>What this shows, in one sentence:</strong> seven Synchronism-internal estimates of a consciousness threshold all
+        land near C &asymp; 0.50 (the chart draws an eighth row hollow: a method with nothing to measure), and the chart below is why that is expected (they share one midpoint assumption) rather than
         evidence. It is a static chart with hover tooltips; there are no controls. (Lead sentence added 2026-10-10.)
       </p>
 
@@ -153,7 +153,7 @@ export default function ConsciousnessDemo() {
             measure</em> (C* &#x2248; 0.497 at &#x03B3; = 0.487, the DESI value). On linear &#x03C1; the maximum sensitivity is at
             &#x03C1; = 0, where C = 0, so the distinction depends on choosing log &#x03C1; as the measure. Nothing
             yet makes log &#x03C1; the natural measure for a consciousness threshold.
-            The <em>conclusion</em> of this caveat is unchanged and does not need the geometry argument: the eight
+            The <em>conclusion</em> of this caveat is unchanged and does not need the geometry argument: the seven
             &ldquo;methods&rdquo; inherit one calibration and none of them measures C, which is circularity, not
             coincidence. But the old rebuttal was wrong, and a reader who checked the derivative would have found
             the site refuting itself with false algebra. Over-refuting costs the same credibility as overclaiming.
@@ -302,7 +302,7 @@ export default function ConsciousnessDemo() {
 
         <h2>What Has Falsified This</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li><strong>C &#x2248; 0.50 is the output-range midpoint, and the eight estimates are one estimate.</strong> The convergence is forced by shared calibration — every approach keyed to the midpoint of [0,1) lands near 0.50 by construction, and none of the eight measures C independently. <em>Not</em> forced by the shape of C(&#x03C1;): at &#x03B3; = &frac12;, C = 0.50 is exactly the log-density inflection (C* = 1/(2&#x03B3;u*) &rarr; u* = 2), so the function <em>does</em> distinguish that value &mdash; see the corrected calibration caveat above. The circularity is the finding; the geometry is not. (gnosis-research Session 63&apos;s p&lt;0.0001 rejection concerned a different variable — SNARC salience, not C; see the correction banner above.)</li>
+          <li><strong>C &#x2248; 0.50 is the output-range midpoint, and the seven estimates are one estimate.</strong> The convergence is forced by shared calibration — every approach keyed to the midpoint of [0,1) lands near 0.50 by construction, and none of the seven measures C independently. <em>Not</em> forced by the shape of C(&#x03C1;): at &#x03B3; = &frac12;, C = 0.50 is exactly the log-density inflection (C* = 1/(2&#x03B3;u*) &rarr; u* = 2), so the function <em>does</em> distinguish that value &mdash; see the corrected calibration caveat above. The circularity is the finding; the geometry is not. (gnosis-research Session 63&apos;s p&lt;0.0001 rejection concerned a different variable — SNARC salience, not C; see the correction banner above.)</li>
         </ul>
         <h2>What Would Still Falsify C(&#x03C1;)-Based Consciousness More Broadly</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>

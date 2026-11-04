@@ -23,6 +23,19 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-11-04 (maintainer, draining explorer 2026-11-02): the density-keyed free fit (gamma 0.046) has a
+    #     global knee at 4.4e-6 Msun/pc3 below every disc (log regime; gamma and rho_c separately identified, corr +0.89);
+    #     boost ~ rho^-0.10 beats a constant boost by dBIC +945. "Switched off", "fixed A = 0.029" and "only gamma/A" for this
+    #     fit are wrong (gamma/A-only holds for the fixed-A family). Glossary Kill-Criterion examples TEST-03 R2 = 0.14 and
+    #     TEST-04a ~0.55 were reclassified (misattribution; underpowered). TEST-04a is not "FAILED" (underpowered as registered).
+    (r"switch(es|ed)? (its own |the )?(density[- ]dependence|effect) off|density[- ]dependence switched off", "2026-11-04",
+     "the density fit keeps a weak response (boost ~ rho^-0.10, +945 vs constant boost), not switched off", False),
+    (r"0\.046[^\n]{0,120}fixed A = 0\.029", "2026-11-04",
+     "the gamma = 0.046 fit has a free global knee at 4.4e-6 Msun/pc3, not fixed A = 0.029", False),
+    (r"observed R\\u00b2 = 0\.14, criterion triggered|measures \\u2248 0\.55, criterion triggered", "2026-11-04",
+     "both glossary examples were reclassified (TEST-03 misattributed; TEST-04a underpowered as registered)", False),
+    (r"FAILED &mdash; disfavored 2\.4", "2026-11-04",
+     "TEST-04a is Underpowered as Registered, not Failed", False),
     # --- retired 2026-11-02 (maintainer, draining explorer 2026-10-31 P0): the chemistry table's rows were 23 properties
     #     over different samples, mostly mis-cited. Electrical conductivity +0.955 is session #81 r = -0.414 "WRONG SIGN";
     #     "electronegativity r = 0.979" is chemical softness (#118) against 1/IE; chi vs 1/gamma_optical is 0.94-0.96 and

@@ -1,3 +1,28 @@
 Starting Synchronism Maintainer Session at Wed Nov  4 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+Both repos are committed and pushed: site `3c5a3be` (Vercel deploys on push), research repo `6fd7f521`. The build passes, and the lint (279 rules) shows 0 hits on the new tree and 9 on the old one.
+
+**Research gap, checked first.** One of today's top items was the visitor asking for DESI DR2 to be run against the Brans–Dicke version of the dark-energy sector. That run already exists: it loses to ΛCDM by Δχ² ≥ +79, and the archive's own covariant equation as written (Appendix D §D.3) loses by χ² ≈ 9,900. Neither is among the "6 refutations", because nobody wrote down a failure condition before solving them. So the 6 counts how well tests were registered, not how much of the framework has failed on data. I wrote a proposal for dp: keep the 6, and print those exclusions beside it as a separate descriptive line. I didn't change the count.
+
+**Explorer finding from 11-02, cleared before the visitor items.** It reached no maintainer session until today, and it contradicted five site pages and the 08-24 block in PREDICTIONS. I checked its numbers against the script output files.
+- **The fit was described wrongly.** Fitted freely, the density version of the law has its turning point at 4.4×10⁻⁶ M☉/pc³, below every galaxy disc. Its response to density is weak (boost ∝ ρ^−0.10) but not "switched off": it beats a constant boost by ΔBIC +945.
+- **The verdict got stronger.** The density law loses to the acceleration law at every calibration tried: +2843, +3309, +6593 (the framework's own formula, where the best fit is just Newton), +10 372 and +16 486.
+- **Fixed:** the "switched off" wording on five pages, the Coherence Explorer's γ = 0.046 preset label and regime label, the "only γ/A identified" claim, and the size of each loss on the plotter. The correction is also added to PREDICTIONS.
+
+**Visitor HIGH items:**
+- **Glossary "Kill Criterion Triggered":** both examples had been reclassified. They are replaced with TEST-09 and TEST-10, and the old ones are kept and named as reclassified.
+- **TEST-04a:** the "FAILED" label is gone from the Test Roadmap, the Tier 1 example and Honest Assessment (~0.9σ, not ~1.5σ).
+- **TEST-25:** the card state now says which kill it means. The published 8.7σ holds; the in-house result holds only when individual data points are treated as independent. The visitor's suggested wording would have been wrong about the published number.
+- **TEST-26:** the card now says the Brans–Dicke version isn't a live second prediction, since it already fails DR2, and why it sits outside the count.
+- **TEST-02 (wide binaries):** the card now says the wide/close ratio is null but the absolute boost is not. At the published density threshold the boost at the Sun is ~3.5×10⁴, which the Oort limit already excludes.
+- **Also fixed:** the consciousness page counts seven estimates, not eight; the chemistry corpus is stated once as 2,671 sessions; the plotter prints its surface-density formula.
+- **Already on the site:** the type-by-type headline and the plotter's MOND normalisation. I didn't add more text to the landing page.
+
+**Explorer topics seeded:**
+- Is the ρ^−0.10 response just a noisy stand-in for baryonic acceleration (g_bar)? A cheap fit, and the answer is unknown.
+- An audit, in both directions, of my list of exclusions that sit outside the count.
+
+**Deferred:** clutter on the beginner pages, glossary entries for TEST-xx and "counting rule", the empty breadcrumb, naming sycophancy as a risk in the AI review protocol, and where the 3.81 BTFR slope comes from.
+
+The one external item is Synchronism#4, flagged 2026-10-13. The site repo has no open issues or PRs, and I drafted no reply. I left three untracked `.npy` files in `maintainer/scripts/` uncommitted, because I don't know where they came from.

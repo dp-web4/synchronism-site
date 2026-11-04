@@ -1,0 +1,2 @@
+between-galaxy (galaxy-mean log rho) beta +0.0417 CI [-0.0078,+0.0785]
+var share of log rho that is between-galaxy 0.30192975752470597

@@ -1,0 +1,28 @@
+Starting Synchronism Explorer Session at Wed Nov  4 08:00:01 PST 2026
+The density fit's "boost ∝ ρ^−0.10" response does not show density in the data. It is g_bar showing through ρ, because the two are strongly correlated (r = 0.84). The bigger problem is that a result from 08-02 saying exactly this never reached the site.
+
+I pre-registered the test (`4891f7e`) and ran it on the same 2,438 points / 122 galaxies behind the site's "+945 vs constant boost". Both baselines reproduced the 11-02 fit values exactly, and all six predictions held. The prediction that would have overturned the posture was a negative density coefficient with an interval excluding zero; that did not happen.
+
+- **Density adds nothing once g_bar is known.** With the acceleration-keyed law refit around it, the density coefficient is −0.001, and adding it costs ΔBIC +7.7. With a free cubic baseline in g_bar it is +0.003, galaxy-bootstrap 95% CI −0.022 to +0.027. That holds under both other scale-height choices.
+- **The controls work.** Density effects injected at −0.05 and −0.10 were recovered almost exactly, so this null is not a blind pipeline.
+- **The density slope is all g_bar.** The data's slope of boost on density is −0.211. A model that never sees ρ reproduces it to 0.2%. The density law's own response (−0.12) picks up about half of that.
+- **The reverse is large.** g_bar adds a great deal beyond density (ΔBIC −2469). Even the density law plus a g_bar term still loses to the plain acceleration-keyed law by +374.
+- **One control of mine was wrong.** Shuffling ρ within each galaxy keeps each galaxy's mean density, so it is not a null here. It gave +0.0074 instead of 0, and its spread is ten times narrower than the galaxy bootstrap. The verdict rests on the bootstrap and the injected controls instead. The finding flags this.
+
+**The orphaned result.** Grepping first turned up the 08-02 finding, which had already measured a near-zero partial correlation (+0.0012). It also showed that conditioning the boost on density gives 1.37× the scatter of conditioning on g_bar, with no fitted parameters. None of its numbers appear anywhere in `src/` three months later, while five pages now print "weak density response" without saying it comes from g_bar. It probably went undrained because its first action line read "Do NOT increment the count".
+
+**Asks for the maintainer:**
+- Add "and that response is g_bar's" to the five ρ^−0.10 sentences.
+- Put the 1.37× result on a page researchers reach.
+- Add a lint rule tying the two together.
+
+I tried a quick sweep for other orphaned findings and it failed. Checking whether each finding's filename appears in maintainer logs flags 91 of 198, but 5 of the 6 recent ones I spot-checked had reached the site by content. That 91 should not be quoted. The real drain rate needs a tool that pulls each finding's headline numbers and greps `src/` for them; I think that is the highest-value next tool.
+
+The finding, scripts and outputs are committed (`2ba2480`) and the topic is archived. I updated two memories: the within-galaxy shuffle limitation, and this orphan case. The executed-exclusions topic, which the maintainer also recommended, is untouched.
+
+**So what?** The data result mostly confirms an existing null on the exact sample behind the site's numbers, and bounds any effect in the framework's direction at about 0.02. The more useful discovery is about the loop: the project's cleanest density negative sat outside the site for three months while the site drifted toward the opposite impression.
+
+Files are in `explorer/`:
+- `findings/density-response-is-g-bar-leakage-and-the-08-02-null-never-reached-the-site.md`
+- `findings/scripts/density_partial_beyond_gbar.py`
+- `logs/2026-11-04.md`

@@ -1,0 +1,37 @@
+Starting Synchronism Explorer Session at Thu Nov  5 08:00:01 PST 2026
+I worked the TEST-09 paired-bootstrap topic. The quadrature 3.3σ was slightly conservative, and the refutation count and its 3–8 range don't move. Everything is committed locally (`c9ff6ab`, `da1308c`), but **the push failed**: GitHub rejected it twice with a server-side "fatal error in commit_refs_rules". I didn't keep retrying, so a manual `git push` will be needed.
+
+**What I did:** I wrote the predictions down and committed them before writing the script. I then resampled the 123 galaxies 4,000 times and refit both slopes (observed and predicted) on the same resample each time. A control run reproduced the published 3.75 ± 0.10 and 3.35 ± 0.07, and the 07-18 paired value of 0.44 ± 0.12. All five predictions held.
+
+**Result:**
+
+| Ceiling | Paired σ | Quadrature σ (site) | Margin over the 0.3 threshold |
+|---|---|---|---|
+| 1/Ω_m | **3.6σ** | 3.3σ | 0.95σ |
+| (Ω_m−Ω_b)/Ω_b | **2.8σ** | 2.5σ | below threshold |
+| Ω_m/Ω_b | **2.5σ** | 2.2σ | below threshold |
+
+- **Correlation:** the two slopes' errors are only weakly positively correlated (ρ = +0.14), so the paired σ is 7% smaller than quadrature. The correlation is weak because the scatter of the model curves around the mass trend lines up with the observed scatter at only r = 0.29.
+- **Count:** the count's "2σ rule drops TEST-09 (−1)" stands. Excluding the threshold at 2σ would need ρ ≈ 0.85.
+- **Not a conflict:** the topic's "two σ's on file" are two different statistics. The 3.3σ is distance from zero; the 07-18 "~1.2σ" is margin over the 0.3 threshold.
+
+**The more useful finding is a naming problem.** The site calls two different rules "the 2σ rule", and they point opposite ways for TEST-09:
+- In `ledger.ts:59` it means "the threshold itself excluded at 2σ", and it removes TEST-09 from the count.
+- In the Tier 1 card it means "2σ separation from zero", and it makes TEST-09 fire at every ceiling, which removes its "convention-dependent" label.
+
+Both are true, but a reader can't tell which rule does which. I suggested wording for the maintainer.
+
+**Prior art:** one search on the queued modified-G / Cardassian topic suggests the site's lunar-laser-ranging exclusion is a known result for this whole class of theories. Published nonlocal-gravity work makes the same argument ([arXiv:1812.11181](https://arxiv.org/pdf/1812.11181)), and a review notes that Ġ/G ≈ H₀ is generic on cosmological scales ([arXiv:2001.07619](https://arxiv.org/pdf/2001.07619)). I haven't read either yet, so the topic stays queued.
+
+**So what?** This closes a question about the project's own error bar with a measured number rather than an argued one. The record defect it turned up is vocabulary, not the verdicts.
+
+Files are in `explorer/`:
+- findings/test09-paired-bootstrap-the-3p3-sigma-is-3p6-and-two-different-2-sigma-rules-are-on-file.md
+- findings/scripts/test09_paired_bootstrap_delta_n.py
+- findings/scripts/test09_paired_bootstrap_delta_n_output.txt
+- findings/scripts/test09_paired_bootstrap_delta_n_PREREG.md
+- logs/2026-11-05.md
+
+Sources:
+- [Testing nonlocal gravity with Lunar Laser Ranging](https://arxiv.org/pdf/1812.11181)
+- [Gravity in the infrared and effective nonlocal models](https://arxiv.org/pdf/2001.07619)

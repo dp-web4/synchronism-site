@@ -1,9 +1,35 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-04 (maintainer)*
+*Last updated: 2026-11-05 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-05): **Every G/C reading that touches local dynamics fails lunar laser ranging. The density fit's
+ρ^−0.10 is g_bar's (explorer 11-04 drained). The 08-02 form-free null reached the site after three months.**
+- **Modified-G DE reading:** Ġ/G = 3(1−Ω_m)H₀ = 1.4×10⁻¹⁰/yr at γ = ½, and ≥ 527× the LLR 2σ edge for γ 0.3–3 (script
+  `maintainer/scripts/de_modified_g_reading_vs_llr.py`, 3/3 predictions). Only the fluid (Cardassian) reading survives.
+  /dark-energy now has one status: Reparametrization.
+- **Density:** the g_bar clause is on all 5 ρ^−0.10 surfaces (lint REQUIRES rule). `/honest-assessment#density-form-free-null`
+  carries 1.37× and r_partial +0.0012.
+- **Visitor HIGHs:**
+  - The glossary range is now 3–8, with plain words for why.
+  - The count is printed by kind (`COUNT_BY_KIND_SENTENCE`), with lensing named.
+  - The plotter's "New here?" box comes first, and its badges are plain.
+- **Also:** the Coherence Function identifiability sentence was wrong (fixed); the form-table "(refuted)" labels now show
+  N_eff values; μ-law fixed on the landing page and glossary; a third galaxy γ is noted. Lint 281 rules (HEAD control 6).
+  Build passes.
+- **→ Explorer:** `test09-paired-bootstrap-of-delta-n.md`; `orphan-sweep-by-number-extraction.md`;
+  `modified-g-cardassian-prior-art-and-other-gdot-bounds.md`.
+- **→ Next maintainer:**
+  - Plotter: SPARC V_bar and a consistent a₀.
+  - Tool pages: toy first.
+  - CDM Discrimination retitle.
+  - Acronyms (landing, Key Claims).
+  - Registered vs pre-registered.
+  - Research Philosophy top line.
+- **→ Project lead:** print the outside-the-count exclusions beside the 6? Should "fluid reading only" be the archive-wide DE
+  status? Proposal `Synchronism/Research/proposals/modified_g_de_reading_fails_llr_and_the_density_response_is_g_bar_20261105.md`.
 
 ## 🟢 NEW (maintainer 2026-11-04): **The density fit is weak, not switched off (explorer 11-02 drained). The count measures
 registrations; the archive's own §D.3 (EdS, χ² ≈ 9,900) is outside it.**

@@ -394,7 +394,7 @@ export default function CoreIdea() {
             data reject that: fit head-to-head on the same SPARC galaxy points with &#x03B3; free, the density-keyed law
             loses to the acceleration-keyed one at <strong>&#x0394;BIC +2843</strong> (about +163 after allowing for
             neighbouring points on a rotation curve not being independent), and its best-fit &#x03B3; runs down
-            to <strong>0.046</strong> &mdash; the fit keeps only a weak density response (boost &prop; &#x03C1;<sup>&minus;0.10</sup>, with its knee fitted at 4.4&times;10<sup>&minus;6</sup> M<sub>&#x2609;</sub>/pc&sup3;, below every disc; it beats a constant boost by &Delta;BIC +945, so the response is weak, not off).{' '}
+            to <strong>0.046</strong> &mdash; the fit keeps only a weak density response (boost &prop; &#x03C1;<sup>&minus;0.10</sup>, with its knee fitted at 4.4&times;10<sup>&minus;6</sup> M<sub>&#x2609;</sub>/pc&sup3;, below every disc; it beats a constant boost by &Delta;BIC +945, so the fit&apos;s response is weak, not off; that response is g<sub>bar</sub>&apos;s, not density&apos;s: at fixed g<sub>bar</sub>, local density adds nothing (partial slope +0.003, 95% CI &minus;0.022 to +0.027), and a model that never sees &#x03C1; reproduces the data&apos;s density slope to 0.2%, explorer 2026-11-04).{' '}
             <strong>In plain words: when the density version is allowed to choose, it chooses to barely respond to
             density at all &mdash; the best fit says the parts don&apos;t switch to acting together, the opposite of the
             idea.</strong> That is the criticality retraction above arriving a second time, through the data rather than

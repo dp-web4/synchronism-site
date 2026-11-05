@@ -51,12 +51,16 @@ export default function HonestAssessment() {
         <a href="#if-you-read-nothing-else" style={{ color: 'var(--color-accent-blue)' }}>If you read nothing else</a> &middot;{' '}
         <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>Plain summary</a> &middot;{' '}
         <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six refutations?</a> &middot;{' '}
+        <a href="#count-rule" style={{ color: 'var(--color-accent-blue)' }}>Counting rules (why 3&ndash;8)</a> &middot;{' '}
         <a href="#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Badge definitions (canonical)</a> &middot;{' '}
         <a href="#status-lifecycle-verbs" style={{ color: 'var(--color-accent-blue)' }}>Status lifecycle verbs</a> &middot;{' '}
         <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>The Verdict</a> &middot;{' '}
         <a href="#coherence-meaning" style={{ color: 'var(--color-accent-blue)' }}>What &ldquo;Coherence&rdquo; Means Here</a> &middot;{' '}
         <a href="#what-was-tested" style={{ color: 'var(--color-accent-blue)' }}>What Was Tested</a> &middot;{' '}
         <a href="#what-failed" style={{ color: 'var(--color-accent-blue)' }}>What Failed</a> &middot;{' '}
+        <a href="#density-form-free-null" style={{ color: 'var(--color-accent-blue)' }}>Density adds nothing beyond g<sub>bar</sub></a> &middot;{' '}
+        <a href="#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Globular-cluster fork</a> &middot;{' '}
+        <a href="#test04a" style={{ color: 'var(--color-accent-blue)' }}>TEST-04a (DESI growth)</a> &middot;{' '}
         <a href="#is-gamma-universal" style={{ color: 'var(--color-accent-blue)' }}>Is γ universal?</a> &middot;{' '}
         <a href="#structural-tensions" style={{ color: 'var(--color-accent-blue)' }}>Structural Tensions</a> &middot;{' '}
         <a href="#whats-untested" style={{ color: 'var(--color-accent-blue)' }}>What&apos;s Untested</a> &middot;{' '}
@@ -1013,7 +1017,7 @@ export default function HonestAssessment() {
               stronger: head-to-head on the same SPARC points with γ <em>free</em> it loses at <strong>ΔBIC +2843</strong>{' '}
               (read algebraically, g = g<sub>bar</sub>/C; this excludes the framework&apos;s permittivity, not the Refracted Gravity
               field-equation class it belongs to: <Link href="/test-catalog#what-excluded-covers" style={{ color: '#f87171' }}>what &ldquo;excluded&rdquo; covers</Link>){' '}
-              (best-fit γ → 0.046 with its knee at 4.4×10⁻⁶ M☉/pc³, below every disc: a weak density response, boost ∝ ρ<sup>−0.10</sup>, not a switched-off one), its floored form is capped by the boost ceiling
+              (best-fit γ → 0.046 with its knee at 4.4×10⁻⁶ M☉/pc³, below every disc: a weak density response, boost ∝ ρ<sup>−0.10</sup>, not a switched-off one; that response is g<sub>bar</sub>&apos;s: at fixed g<sub>bar</sub>, density adds nothing, partial slope +0.003, 95% CI −0.022 to +0.027, explorer 2026-11-04), its floored form is capped by the boost ceiling
               (B<sub>max</sub> = 3.17 vs the 13.7 SPARC dwarfs require; lensing ν = 110–347, MOND&apos;s √(a₀/g) at 10⁻¹⁴–10⁻¹⁵ m/s² with a₀ = 1.2×10⁻¹⁰), and at the solar Oort limit it
               predicts f<sub>DM</sub> = 0.685 against 0.13 ± 0.04 for any knee above ~0.15 M<sub>☉</sub>/pc³. The strongest
               real-data constraint on it is not on SPARC at all: <strong>lunar laser ranging</strong>. A boost shared by a whole
@@ -1027,6 +1031,20 @@ export default function HonestAssessment() {
               the project lead&apos;s call (added 2026-10-06; a researcher simulated-visitor persona found it missing from this page). Its one
               registered per-object test is the globular-cluster fork <a href="#gc-fork" style={{ color: '#f87171' }}>below</a>.
               Lead with those; +184 is the right number attached to the wrong model.
+            </p>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }} id="density-form-free-null">
+              <ValidationBadge status="audited-negative" label="Form-free: local density adds nothing beyond g_bar" />{' '}
+              <strong>The simplest density negative needs no γ, no ρ<sub>crit</sub> and no compander.</strong> On 2,622 SPARC
+              points (149 galaxies), the boost each point requires scatters <strong>0.161 dex</strong> when conditioned on local
+              baryonic density and <strong>0.118 dex</strong> when conditioned on g<sub>bar</sub>: 1.37&times; wider, and
+              1.34&ndash;1.77&times; across nine gas and scale-height treatments, including a free scale height per galaxy. At fixed
+              g<sub>bar</sub> the partial correlation with density is +0.0012 (explorer 2026-08-02). The 2026-11-04 rerun on the
+              exact 2,438 points behind the +945 and +2843 gives a partial slope of +0.003 (95% CI &minus;0.022 to +0.027, galaxy
+              bootstrap; injected slopes of &minus;0.05 and &minus;0.10 are recovered), and a model that never sees density
+              reproduces the data&apos;s density slope to 0.2%. So the fitted density law&apos;s weak response is g<sub>bar</sub>
+              seen through a proxy (their correlation is +0.84). This is the same root as the density-keyed rows above, not a new
+              refutation. It sat in the explorer&apos;s findings for three months without reaching this site; a visitor never
+              asked for it, because nothing on the site said it existed (added 2026-11-05).
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
               The residual is a coherent S-shaped ≈0.05–0.10 dex signature at the RAR transition

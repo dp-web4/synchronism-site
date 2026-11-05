@@ -58,6 +58,14 @@ export const COUNT_MAP_SENTENCE =
 export const COUNT_RULE_SENTENCE =
   'The 6 is not rule-free. It is the count under the rule the site uses today (a stated failure condition, actually executed, fired as registered). Rules already on file move it: a 2σ significance rule drops TEST-09 (−1); with each galaxy counted once the γ = 2 pin sits at the threshold (−1 if "at the threshold" does not count), and under that same convention the in-house intersection of TEST-25 is no longer empty (γ ≈ 1.5–1.7 survives both; −1); the executed-and-excluded uniform growth reading meets the current rule but is not counted because no archive document asserted it (+1); a point-estimate rule adds TEST-04a, on a withdrawn mechanism (+1). So 3 to 8, depending on rules the project lead has not yet chosen, with at most 5 independent. Under every rule on file three rows stay: #2 (dwarf dark-matter fractions), #4 (the environment run) and #6 (Bell/CHSH, a construction check rather than data). Three move with the rule: #1, #3 and #5. In plain words, the count varies because some failures are close calls (does a result at the threshold count?) and some share a cause (count once or twice?). Routes that re-kill a branch already refuted (lunar laser ranging, the Oort limit at the published knee) are second roots for an existing row, not new rows.';
 
+/**
+ * The 6 by kind (2026-11-05). A researcher simulated-visitor persona read the 6 as one undifferentiated count and asked
+ * for it split by kind, with the weak-lensing exclusion visible. Descriptive only: do not change REFUTATIONS_EXECUTED.
+ * Printing executed exclusions outside the count as a line beside it gates on the project lead (proposal 2026-11-04).
+ */
+export const COUNT_BY_KIND_SENTENCE =
+  'By kind: 3 rows refute content the framework itself asserts, on data (#1 TEST-09 and #2 TEST-10, the boost cap; #3 the γ = 2 pin); 1 is inherited from MOND (#5 TEST-25: Cassini excludes McGaugh\'s own function too); 1 is a registration the equation could never have met (#4, the environment amplitude); 1 is a construction check, not data (#6 Bell/CHSH). The strongest independent dataset against the boost cap, galaxy weak lensing (KiDS-1000), excludes every Ω_m-based cap; it is recorded on rows #1–#2 rather than as a seventh row because it shares their root. Several executed exclusions of the archive\'s own equations sit outside the count because no failure condition was written before they ran (the covariant dark-energy completions, the density fit at the formula knee, the modified-G reading against lunar laser ranging); whether to print them beside the count is the project lead\'s call.';
+
 /** Sentence rewritten 2026-09-14: the old form ("6 executed refutations; 2 … roots + 1 + 1 + 1") summed
  *  to 5 and a graduate-physics persona read it as an arithmetic error. */
 

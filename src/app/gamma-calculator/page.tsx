@@ -181,7 +181,10 @@ export default function GammaCalculator() {
             framework&apos;s <em>original guess</em> for galaxies (it is also the ideal-gas preset, N<sub>corr</sub> = 1);
             SPARC rotation curves disfavour it. The &ldquo;Galaxy&rdquo; preset&apos;s &#x03B3; &#x2248; 0.49 is the
             <em> best fit</em> to those curves, read back into N<sub>corr</sub> &#x2248; 17; that fit is MOND&apos;s
-            formula and fails a Solar System test. Neither is a value the framework predicts. The full list of &#x03B3;
+            formula and fails a Solar System test. It is the fit with the equation fed <em>acceleration</em>; fed density,
+            as the framework states it, the best fit is &#x03B3; = 0.046 and it loses to the acceleration version by
+            &Delta;BIC +2843 (see the <a href="/coherence-explorer" style={{ color: 'var(--color-accent-blue)' }}>Coherence Explorer</a>), so
+            a third &ldquo;galaxy &#x03B3;&rdquo; exists and it is the refuted one. Neither is a value the framework predicts. The full list of &#x03B3;
             values in use is in the <a href="/glossary#which-c-which" style={{ color: 'var(--color-accent-blue)' }}>Glossary: Which C? Which &#x03B3;?</a>
           </p>
           <svg viewBox="0 0 560 240" role="img" aria-label={`The coherence S-curve at gamma = ${gamma < 0.001 ? gamma.toExponential(2) : gamma.toFixed(3)}: larger gamma means a steeper switch, smaller gamma a flatter curve`} style={{ width: '100%', height: 'auto' }}>

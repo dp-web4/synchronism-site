@@ -12,7 +12,7 @@ const steps = [
     title: 'Step 1: Start with density',
     equation: 'ρ — the local mass/energy density',
     explanation: 'Everything begins with density. In a galaxy, ρ is the baryon density profile. In chemistry, it\'s the number density of particles. The same starting point everywhere. (Definition note: the ontology pages define ρ more broadly as "presence within a relevancy boundary" — but every density-keyed test uses exactly this physical density, and no broader form has ever been operationalized. Not every executed test is density-keyed: the galaxy RAR fits, the γ = 2 pin, TEST-09/10 and the Cassini squeeze key C on acceleration instead (see Coherence Function, "which C"). This walkthrough uses the density definition. This sentence said "every executed test" until 2026-10-04.)',
-    key: 'Density is the universal input to the coherence function.',
+    key: 'Density is the input the framework states. In galaxies that is the refuted version: fed density, the equation loses to the same equation fed acceleration by ΔBIC +2843 and is excluded again by lunar laser ranging; the form that fits rotation curves takes acceleration, MOND\'s own variable (Glossary: Which C? Which γ?). This tour follows the equation as stated.',
   },
   {
     title: 'Step 2: Normalize by the reference density (ρ_crit)',

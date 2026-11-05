@@ -227,10 +227,13 @@ export default function CoherenceFunction() {
           One caveat: for
           &#x03C1;&nbsp;&#x226a;&nbsp;&#x03C1;<sub>crit</sub> (real galaxy outskirts), C&nbsp;&asymp;&nbsp;&#x03B3;x to first order (it equals
           &#x03B3;x/(1+&#x03B3;x) only through second order at &#x03B3;&nbsp;=&nbsp;&frac12;), and so
-          depends on &#x03B3; and &#x03C1;<sub>crit</sub> only through their ratio &mdash; the
-          degeneracy-breaking term is &#x03B3;(2&#x03B3;&minus;1), which vanishes at exactly &#x03B3;=1/2. So near
-          the fitted value, &#x03B3;&nbsp;&asymp;&nbsp;0.489 is not a clean measurement of &#x03B3; alone without
-          also stating the &#x03C1;<sub>crit</sub> prior it was fit under.
+          to first order depends on &#x03B3; and &#x03C1;<sub>crit</sub> only through their ratio. The next term,
+          C&nbsp;=&nbsp;&#x03B3;x&nbsp;&minus;&nbsp;&#x03B3;x&sup2;/2&nbsp;+&nbsp;&hellip;, separates them in principle at <em>any</em> &#x03B3;, but only where
+          the data reach x of order 0.1 or more; SPARC discs sit near x&nbsp;&asymp;&nbsp;10<sup>&minus;4</sup>, where only the ratio is
+          seen. (Until 2026-11-05 this sentence called &#x03B3;(2&#x03B3;&minus;1) the degeneracy-breaking term. It is not: &#x03B3;(2&#x03B3;&minus;1)x&sup2;/2
+          is how far the shape departs from &#x03B3;x/(1+&#x03B3;x), MOND&apos;s simple form, and it vanishes at &#x03B3;&nbsp;=&nbsp;&frac12;. A graduate
+          simulated-visitor persona caught it.) So &#x03B3;&nbsp;&asymp;&nbsp;0.489 is not a clean measurement of &#x03B3; alone without
+          also stating the &#x03C1;<sub>crit</sub> (or, for the acceleration-keyed fit, a&#x2080;&prime;) it was fit with.
         </div>
 
         <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
@@ -393,10 +396,10 @@ export default function CoherenceFunction() {
               <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>erf-log, free &#x03B3;</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>&#x03B3;=0.39</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1435</td><td style={{ padding: '0.2rem 0' }}>+1.5</td></tr>
               <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>Hill, free n</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>n=0.975</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1437</td><td style={{ padding: '0.2rem 0' }}>+5.9</td></tr>
               <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}><strong>tanh-log, free &#x03B3; (this site&apos;s form)</strong></td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>&#x03B3;=0.489</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1437</td><td style={{ padding: '0.2rem 0' }}>+7.1</td></tr>
-              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>algebraic-log</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>&#x03B3;=0.66</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1441</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#ef4444' }}>+23.8 (refuted)</strong></td></tr>
-              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>arctan-log</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>&#x03B3;=2.15</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1447</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#ef4444' }}>+46.7 (refuted)</strong></td></tr>
-              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>Gompertz</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>n=0.61</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1450</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#ef4444' }}>+58.0 (refuted)</strong></td></tr>
-              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>tanh-log, &#x03B3;=2 pinned (the framework&apos;s asserted value)</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>pinned</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1485</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#ef4444' }}>+184.0 (refuted)</strong></td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>algebraic-log</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>&#x03B3;=0.66</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1441</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#f59e0b' }}>+23.8</strong> <span style={{ fontSize: '0.8em' }}>(points independent; +1.4 at N_eff &asymp; 150: not refuted)</span></td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>arctan-log</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>&#x03B3;=2.15</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1447</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#f59e0b' }}>+46.7</strong> <span style={{ fontSize: '0.8em' }}>(points independent; +2.8 at N_eff &asymp; 150: not refuted)</span></td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>Gompertz</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>n=0.61</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1450</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#f59e0b' }}>+58.0</strong> <span style={{ fontSize: '0.8em' }}>(points independent; +3.4 at N_eff &asymp; 150: not refuted)</span></td></tr>
+              <tr><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>tanh-log, &#x03B3;=2 pinned (the framework&apos;s asserted value)</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>pinned</td><td style={{ padding: '0.2rem 0.75rem 0.2rem 0' }}>0.1485</td><td style={{ padding: '0.2rem 0' }}><strong style={{ color: '#ef4444' }}>+184.0</strong> <span style={{ fontSize: '0.8em' }}>(points independent; +10.9 at N_eff &asymp; 150, at the decisive line)</span></td></tr>
             </tbody>
           </table>
           <strong>A consistency check the table passes without saying so (added 2026-09-06):</strong> free-&#x03B3;

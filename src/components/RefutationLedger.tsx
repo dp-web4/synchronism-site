@@ -1,4 +1,4 @@
-import { COUNT_MAP_SENTENCE, COUNT_RULE_SENTENCE, REFUTATION_ROWS, REFUTATIONS_EXECUTED, ROOTS_SENTENCE } from '@/lib/ledger';
+import { COUNT_BY_KIND_SENTENCE, COUNT_MAP_SENTENCE, COUNT_RULE_SENTENCE, REFUTATION_ROWS, REFUTATIONS_EXECUTED, ROOTS_SENTENCE } from '@/lib/ledger';
 
 /**
  * One table for "which six?" (2026-09-25). Data lives in src/lib/ledger.ts; change it there.
@@ -12,6 +12,9 @@ export default function RefutationLedger() {
       <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch' }}>
         Every &ldquo;{REFUTATIONS_EXECUTED} refutations&rdquo; on this site means these rows. {ROOTS_SENTENCE}.
         Rows #1 and #2 test one inequality (the boost cap) on two observables, so the independent count is at most 5.
+      </p>
+      <p id="count-by-kind" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch', scrollMarginTop: '5rem' }}>
+        {COUNT_BY_KIND_SENTENCE}
       </p>
       <p id="count-map" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch', scrollMarginTop: '5rem' }}>
         {COUNT_MAP_SENTENCE}

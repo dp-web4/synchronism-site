@@ -213,23 +213,12 @@ export default function GalaxyPlotter() {
       <Breadcrumbs currentPath="/galaxy-plotter" />
       <PathNav currentPath="/galaxy-plotter" />
       <h1>Galaxy Curve Plotter</h1>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.35rem' }}>
-        <ValidationBadge status="failed" label="published density law C_ρ (γ = 2, ρ_crit = 0.029·V_flat²) in the division wiring g = g_bar/C, floored at Ω_m (solid violet); the quadrature wiring (dashed) is inert" />
-        <ValidationBadge status="reparametrization" label="what matched MOND: the hand-drawn stand-in, and the fitted γ ≈ 0.49 law" />
-      </div>
-      {/* 2026-09-15: visitor saw "Reparametrization" here and "Model Explainer" on the tools index and could not tell which applied */}
-      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginTop: '0.35rem' }}>
-        Tool type: <strong>Model Explainer</strong> (the Interactive Tools index grouping &mdash; shows how the equation
-        works, not a verdict) &middot; Claim status: the two badges above. The label says what kind of tool this is;
-        the badges say how its claims stand.
-      </p>
-
-      <div style={{ maxWidth: '65ch', margin: '1rem 0 0', padding: '0.7rem 1rem', background: 'rgba(16,185,129,0.07)', border: '1px solid rgba(16,185,129,0.35)', borderRadius: '0.375rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
+      <div style={{ maxWidth: '65ch', margin: '0.6rem 0 0', padding: '0.7rem 1rem', background: 'rgba(16,185,129,0.07)', border: '1px solid rgba(16,185,129,0.35)', borderRadius: '0.375rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
         <strong style={{ color: '#10b981' }}>New here? Look at three things on the chart below.</strong>
         <ul style={{ margin: '0.4rem 0 0', paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
           <li><strong>The dots</strong> are what telescopes measure: stars keep orbiting fast far from the centre.</li>
-          <li><strong>The dashed gray line</strong> is what the visible matter alone would give. It sags below the dots. That gap is the dark-matter puzzle.</li>
-          <li><strong>Green</strong> (MOND: an existing theory, from 1983, that gravity gets slightly stronger than Newton predicts where it is very weak, as at the far edges of galaxies) follows the dots (partly because its flat level is set from each galaxy&apos;s own speed). <strong>Solid violet</strong> (this framework&apos;s equation as written) does not: it is the gray line scaled up, still falling where the dots stay flat. <strong>In plain words: the only version of this framework&apos;s equation that fits these dots is MOND&apos;s formula written differently.</strong> Fed acceleration instead of density, the equation at &gamma; &asymp; &frac12; is MOND&apos;s formula, so that version is the green curve; there is no separate line for it. The chart is the version that failed (violet) against the version that survives (green), and the one that survives is MOND. At these densities the violet line is a constant 1.78&times; stretch of the gray one at every radius (the floor binds; details in the physicists&apos; block).</li>
+          <li><strong>The dashed gray line</strong> is what the visible matter alone would give. It sags below the dots. That gap is the dark-matter puzzle. (Here the gray line is a simple stand-in built from each galaxy&apos;s speed, not its measured gas and stars; a version with measured gas and stars is queued.)</li>
+          <li><strong>Green</strong> (MOND: an existing theory, from 1983, that gravity gets slightly stronger than Newton predicts where it is very weak, as at the far edges of galaxies) follows the dots (partly because its flat level is set from each galaxy&apos;s own speed, which gives it a head start; with measured gas and stars it still fits rotation curves well, which is why it is the rival worth comparing against). <strong>Solid violet</strong> (this framework&apos;s equation as written) does not: it is the gray line scaled up, still falling where the dots stay flat. <strong>In plain words: the only version of this framework&apos;s equation that fits these dots is MOND&apos;s formula written differently.</strong> Fed acceleration instead of density, the equation at &gamma; &asymp; &frac12; is MOND&apos;s formula, so that version is the green curve; there is no separate line for it. The chart is the version that failed (violet) against the version that survives (green), and the one that survives is MOND. At these densities the violet line is a constant 1.78&times; stretch of the gray one at every radius (the floor binds; details in the physicists&apos; block).</li>
           <li><strong>&ldquo;But First Encounter says the fitted &gamma; &asymp; 0.5 reproduces MOND?&rdquo;</strong> It does, and that is not a win. The fit that gives &gamma; &asymp; 0.5 feeds the equation acceleration, which is MOND&apos;s own input, instead of the density the framework names; with that swap the equation becomes MOND&apos;s formula and you get the green line back. That is why the site calls it a reparametrization. The violet line is the equation as written, keyed on density, and it fails. Why matching MOND still counts as <em>Failed</em>: fitting the same curves as an existing theory with a renamed formula adds nothing new. A match would only be news if the equation also predicted something MOND does not and that prediction held. It made three such predictions (a cap on how much gravity can be boosted, an effect of a galaxy&apos;s surroundings, and a density knee that grows with rotation speed), and each failed when tested.</li>
         </ul>
         <p style={{ margin: '0.4rem 0 0' }}>
@@ -238,6 +227,28 @@ export default function GalaxyPlotter() {
           <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not &rarr;</Link>
         </p>
       </div>
+
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.8rem' }}>
+        <ValidationBadge status="failed" label="Failed: the framework's equation as written does not match these galaxies (violet)" />
+        <ValidationBadge status="reparametrization" label="Reparametrization: the version that matches is MOND's formula in new notation" />
+      </div>
+      <details style={{ marginTop: '0.3rem', fontSize: '0.78rem', color: 'var(--color-text-muted)' }}>
+        <summary style={{ cursor: 'pointer' }}>&#9432; What exactly the two badges cover (for physicists)</summary>
+        <p style={{ margin: '0.3rem 0 0' }}>
+          <strong>Failed:</strong> the published density law C<sub>&rho;</sub> (&gamma; = 2, &rho;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;)
+          in the division wiring g = g<sub>bar</sub>/C, floored at &Omega;<sub>m</sub> (solid violet). At these densities C<sub>&rho;</sub> &asymp; 10<sup>&minus;3</sup>
+          sits under the floor everywhere, so what is plotted is G &rarr; G/&Omega;<sub>m</sub>: the floor (the boost ceiling) failing, not the
+          shape of the density law. The quadrature wiring (dashed) is inert. <strong>Reparametrization:</strong> what matched MOND, the
+          hand-drawn stand-in and the fitted &gamma; &asymp; 0.49 law (acceleration-keyed). Badges made plain 2026-11-05 after a beginner
+          visitor met this spec as the first thing on step 3 of the Beginner Path.
+        </p>
+      </details>
+      {/* 2026-09-15: visitor saw "Reparametrization" here and "Model Explainer" on the tools index and could not tell which applied */}
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginTop: '0.35rem' }}>
+        Tool type: <strong>Model Explainer</strong> (the Interactive Tools index grouping &mdash; shows how the equation
+        works, not a verdict) &middot; Claim status: the two badges above. The label says what kind of tool this is;
+        the badges say how its claims stand.
+      </p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div style={{ background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
@@ -325,8 +336,8 @@ export default function GalaxyPlotter() {
           64&nbsp;M<sub>&#x2609;</sub>/pc&sup3; against disc densities of order 10<sup>&minus;2</sup>: no galaxy in the
           dropdown can lift off the Newtonian baseline, for any of them.
           <br /><strong>One more cross-link the plot owes you:</strong> the green MOND reference uses the simple-&nu;
-          function of Famaey &amp; Binney (2005) &mdash; not the RAR fit function the &Delta;BIC table on Galaxy Rotation uses (McGaugh&apos;s &nu;); the two are different functions and are not interchangeable toward the Solar System (corrected 2026-10-10; this note previously called the simple function &ldquo;the RAR-preferred choice&rdquo;) &mdash; and <em>also</em> precisely the function TEST-25 reports Cassini
-          excluding at +17.95&sigma;. The benchmark drawn here is a function this site refutes in the Solar System;
+          function of Famaey &amp; Binney (2005) &mdash; not the RAR fit function the &Delta;BIC table on Galaxy Rotation uses (McGaugh&apos;s &nu;); the two are different functions and are not interchangeable toward the Solar System (corrected 2026-10-10; this note previously called the simple function &ldquo;the RAR-preferred choice&rdquo;) &mdash; and <em>also</em> a function TEST-25&apos;s instrument finds Cassini
+          excluding, at +15.3&sigma; to +20.1&sigma; (the +17.95&sigma; quoted until 2026-11-05 is the framework&apos;s compander at the SPARC fit, not the simple function; see below). The benchmark drawn here is a function this site refutes in the Solar System;
           that is a real tension in the comparison and not a drafting slip.
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '-0.5rem' }}>

@@ -232,8 +232,8 @@ export default function ForResearchers() {
           <strong style={{ color: 'var(--color-accent-violet)' }}>Start here: negative results on density-keyed modified gravity
           (framework-independent)</strong>
           <p style={{ margin: '0.4rem 0 0.5rem' }}>
-            <strong>If you read one thing:</strong> item 6 (the lunar-ranging &#x0120;/G bound: framework-independent, eight orders of
-            margin, no SPARC), then the sign statement in item 1, then item 5 with its &#x03B3; attached, then
+            <strong>If you read one thing:</strong> item 6 (the lunar-ranging &#x0120;/G bound: framework-independent, five to eight orders of
+            margin across the knee grid (eight only at the top; corrected 2026-11-05), no SPARC), then the sign statement in item 1, then item 5 with its &#x03B3; attached, then
             item 4. None of the four needs Synchronism to be right; each is scoped in its own card.
           </p>
           <ul style={{ margin: 0, paddingLeft: '1.2rem', lineHeight: 1.6 }}>
@@ -376,7 +376,7 @@ export default function ForResearchers() {
             are not claimed to fail here) fails in
             three independently executed ways — head-to-head on the same SPARC points against the acceleration-keyed
             form, density keying loses at <strong>&#x0394;BIC +2843 with &#x03B3; free</strong> (best-fit &#x03B3; &rarr; 0.046,
-            with one global knee fitted at 4.4×10⁻⁶ M☉/pc³, below every disc, so the discs sit in the log regime C &#x2248; &#x03B3; ln(&#x03C1;/&#x03C1;<sub>c</sub>), where &#x03B3; and &#x03C1;<sub>c</sub> are separately identified; the response is weak (boost &prop; &#x03C1;<sup>&minus;0.10</sup>) but not off, ΔBIC +945 against a constant boost; about +163 after deflating by the measured N_eff ≈ 140 (+142 by galaxy count; both are 2843 &times; N′/2438, since this comparison has 2,438 points in 122 galaxies and equal parameter counts, see{' '}<Link href="/dark-matter" style={{ color: 'var(--color-accent-blue)' }}>/dark-matter</Link>); see{' '}
+            with one global knee fitted at 4.4×10⁻⁶ M☉/pc³, below every disc, so the discs sit in the log regime C &#x2248; &#x03B3; ln(&#x03C1;/&#x03C1;<sub>c</sub>), where &#x03B3; and &#x03C1;<sub>c</sub> are separately identified; the fit&apos;s response is weak (boost &prop; &#x03C1;<sup>&minus;0.10</sup>) but not off (and it is g<sub>bar</sub>&apos;s: at fixed g<sub>bar</sub> the partial slope on log &#x03C1; is +0.003, 95% CI &minus;0.022 to +0.027, and a g<sub>bar</sub>-only model reproduces the data&apos;s density slope to 0.2%, explorer 2026-11-04), ΔBIC +945 against a constant boost; about +163 after deflating by the measured N_eff ≈ 140 (+142 by galaxy count; both are 2843 &times; N′/2438, since this comparison has 2,438 points in 122 galaxies and equal parameter counts, see{' '}<Link href="/dark-matter" style={{ color: 'var(--color-accent-blue)' }}>/dark-matter</Link>); see{' '}
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>); the
             cross-system &#x03C1;&#x2194;g<sub>bar</sub> offset is ~1.7 dex; and clusters require a &#x03C1;<sub>crit</sub> 10<sup>4</sup>–10<sup>6</sup>&times;
             off the galaxy calibration (Coma, four ansätze, one structurally bounded at velocity ratio &le;2 vs observed 4.6).

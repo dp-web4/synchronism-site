@@ -32,8 +32,13 @@ export default function DarkEnergy() {
           derived in December 2025, arithmetically corrected in August 2026 &mdash; and{' '}
           <strong>every consistent version of it misses the specific behaviour DESI prefers</strong>,
           but the family contains &Lambda;CDM at &gamma;&nbsp;=&nbsp;&frac12;, so it can only be killed by data that kill
-          &Lambda;CDM too. It is a live position that no data can refute without refuting &Lambda;CDM; it is not a
-          discriminating one (corrected 2026-09-27 from &ldquo;the framework&apos;s one live falsifiable position&rdquo;). Read at the local density (the framework&apos;s own postulate), existing galaxy clustering data already pin
+          &Lambda;CDM too. <strong>Status: Reparametrization.</strong> It nests &Lambda;CDM, so no data can refute it without
+          refuting &Lambda;CDM, and it has no win branch (below). It is not a discriminating position (corrected 2026-09-27 from
+          &ldquo;the framework&apos;s one live falsifiable position&rdquo;; until 2026-11-05 this page also called it &ldquo;a live
+          position&rdquo; here and &ldquo;a currently-disfavoured falsifiable position&rdquo; further down, three statuses for one
+          sector). <strong>Only the dark-energy-fluid reading survives:</strong> read as modified gravity, G<sub>eff</sub> =
+          G/C(&rho;&#772;) drifts as the cosmic density falls, and lunar laser ranging excludes that by about 2,000&times;
+          (<a href="#modified-g-llr" style={{ color: 'var(--color-accent-blue)' }}>box below</a>). Read at the local density (the framework&apos;s own postulate), existing galaxy clustering data already pin
           &gamma; to &frac12; (box below), so there is nothing left for DR3 to decide. On the mean-density reading: at DESI DR3 it is killed if DR3 excludes &Lambda; in the thawing or crossing direction (w&#x2080; &gt; &minus;1 with w<sub>a</sub> &lt; 0, whether or not w = &minus;1 is crossed) and tied if the data sit at &Lambda;CDM (&gamma;&nbsp;=&nbsp;&frac12;). <strong>It has no
           win branch at DR3 either</strong> (executed 2026-10-08, pre-registered <code>f3e045e</code>): if the data move into the
           freezing quadrant it allows, the 2002 constant-w Cardassian (wCDM, same parameter count) fits the framework&apos;s
@@ -425,7 +430,7 @@ export default function DarkEnergy() {
           </li>
           <li>
             <strong>Nothing on this page is a new counted refutation.</strong> The refutation count stays at its
-            audited value; this sector is a currently-disfavoured falsifiable position, not an executed kill.
+            audited value; this sector&apos;s status is Reparametrization (it nests &Lambda;CDM and has no win branch), and the readings excluded on this page are excluded readings, not counted kills.
             Completion A&apos;s Einstein&ndash;de Sitter exclusion rests on the 1998 dark-energy discovery, not on
             new statistics.
           </li>
@@ -475,6 +480,22 @@ export default function DarkEnergy() {
             The researcher visitor who expected the +21% reading to be in trouble with ISW and S<sub>8</sub> (2026-10-08) was right.
             Script: <code>maintainer/scripts/growth_under_uniform_G_over_C.py</code> (+ <code>_output.txt</code>; two of its
             three written predictions failed: the enhancement is late-time-limited, so smaller than expected).
+          </p>
+          <p id="modified-g-llr" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.6rem', background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.8rem' }}>
+            <strong>The modified-G reading also fails locally, with no growth model needed (added 2026-11-05).</strong> If
+            G<sub>eff</sub> = G/C(&rho;&#772;<sub>m</sub>) is the G that binds the Earth and the Moon, it drifts as the mean density
+            falls: &#x0120;/G = 3H<sub>0</sub> &middot; d ln C/d ln &rho;. With C<sub>0</sub> = &Omega;<sub>m</sub>, at &gamma; = &frac12; this is
+            exactly 3(1 &minus; &Omega;<sub>m</sub>)H<sub>0</sub> = <strong>1.4&times;10<sup>&minus;10</sup> per year</strong>. Lunar laser ranging
+            measures (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> per year (Hofmann &amp; M&uuml;ller 2018), so the reading is out by about
+            2,000&times;, and by at least 527&times; against LLR&apos;s 2&sigma; upper edge for every &gamma; from 0.3 to 3. The same
+            G<sub>eff</sub> is what the uniform growth row applies, so that row is now excluded twice, once by ISW and once by the Moon. The
+            dark-energy-fluid reading, with gravity unmodified, has &#x0120; = 0 and is untouched; it is ordinary Cardassian-class dark
+            energy. The local-density version of G/C is the separate LLR exclusion on{' '}
+            <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link> (item 6). A researcher
+            simulated-visitor persona raised this on 2026-11-05; script{' '}
+            <code>maintainer/scripts/de_modified_g_reading_vs_llr.py</code> (predictions in its header before it ran; 3/3 held; the
+            identity d ln C/d ln &rho; = 1 &minus; &Omega;<sub>m</sub> at &gamma; = &frac12; reproduces to 10<sup>&minus;10</sup>). Not a counted refutation:
+            no archive document asserted that the cosmic G/C governs local dynamics.
           </p>
         </div>
       </section>

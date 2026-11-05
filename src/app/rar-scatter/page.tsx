@@ -27,6 +27,15 @@ export default function RarScatter() {
           scatter, so a detection here does not by itself discriminate Synchronism from MOND.
         </p>
 
+        <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          <strong>Local density, point by point (the within-galaxy version):</strong> the boost each SPARC point requires scatters
+          0.161&nbsp;dex conditioned on local baryonic density and 0.118&nbsp;dex conditioned on g<sub>bar</sub> (1.37&times; wider;
+          1.34&ndash;1.77&times; across gas and scale-height treatments; 2,622 points). At fixed g<sub>bar</sub>, density adds nothing:
+          partial correlation +0.0012 (explorer 2026-08-02), partial slope +0.003 with 95% CI &minus;0.022 to +0.027 on the 2,438
+          points behind the density fit (explorer 2026-11-04). No &#x03B3;, &#x03C1;<sub>crit</sub> or compander enters. Details on{' '}
+          <Link href="/honest-assessment#density-form-free-null" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
+        </p>
+
         <h2>What Is RAR Scatter?</h2>
         <p>
           The Radial Acceleration Relation plots observed gravitational acceleration (g<sub>obs</sub>)

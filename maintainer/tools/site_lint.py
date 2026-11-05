@@ -23,6 +23,9 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-11-05 (maintainer, visitor tech-writer HIGH): the glossary printed "4-8 under rules on file" while every
+    #     footer printed "3-8" (the range moved to 3-8 on 2026-10-24 when TEST-25 joined it).
+    (r"4(&ndash;|–|\\u2013)8 under rules on file", "2026-11-05", "the range on file is 3-8 since 2026-10-24", False),
     # --- retired 2026-11-04 (maintainer, draining explorer 2026-11-02): the density-keyed free fit (gamma 0.046) has a
     #     global knee at 4.4e-6 Msun/pc3 below every disc (log regime; gamma and rho_c separately identified, corr +0.89);
     #     boost ~ rho^-0.10 beats a constant boost by dBIC +945. "Switched off", "fixed A = 0.029" and "only gamma/A" for this
@@ -583,6 +586,10 @@ RETIRED = [
 # a retired-phrase list cannot catch an unqualified number, only a context requirement can.
 CONTEXT_LINES = 3
 REQUIRES = [
+    # Added 2026-11-05 (explorer 2026-11-04): the density fit's boost ~ rho^-0.10 is g_bar leaking through rho (corr +0.84);
+    #     at fixed g_bar the partial slope is +0.003 (CI -0.022..+0.027). Any surface quoting the response must say so, same line.
+    (r"(&#x03C1;|\u03C1|ρ)(<sup>|\^)(&minus;|−|-)0\.10", r"g<sub>bar|g_bar|fixed g",
+     "2026-11-05", "rho^-0.10 is the fit's response; say on the same line that it is g_bar's (partial +0.003 at fixed g_bar)", 0),
     # Added 2026-10-30: the EFE-free corner gamma ~ 0.87-0.95 is closed by the GC statistic (10.6 sigma vs MOND+EFE, pre-registered).
     (r"0\.87(&ndash;|–)0\.95", r"clos(ed|es)|globular|cluster|GC",
      "2026-10-30", "EFE-free corner gamma 0.87-0.95: say it is closed by the globular-cluster statistic (2026-10-30)"),

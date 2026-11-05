@@ -380,7 +380,7 @@ export default function Home() {
               <strong>N<sub>eff</sub></strong> = effective number of independent data points, after correlated points are discounted;{' '}
               <strong>V<sub>flat</sub> / V<sub>max</sub></strong> = a galaxy&apos;s steady outer rotation speed / its peak rotation speed;{' '}
               <strong>f<sub>DM</sub></strong> = the fraction of a galaxy&apos;s inferred mass that is dark matter;{' '}
-              <strong>&mu;-law</strong> = MOND&apos;s interpolating function, which sets how gravity changes between the two regimes;{' '}
+              <strong>&mu;-law</strong> = a logarithmic audio-compression curve used in telephone networks, one of the S-shaped &ldquo;compander&rdquo; family the equation&apos;s tanh was borrowed from (not MOND&apos;s interpolating function &mu;, which only shares the letter; corrected 2026-11-05);{' '}
               <strong>CFD</strong> = computational fluid dynamics.{' '}
               More in the <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
             </p>
@@ -399,7 +399,7 @@ export default function Home() {
               <span>Prospective predictions confirmed <em style={{ color: 'var(--color-text-muted)' }}>(predictions fixed before the data existed, then borne out)</em>: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong> <em style={{ color: 'var(--color-text-muted)' }}>&mdash; and 0 prospective tests completed at all. That does not contradict the 6 below: all six refutations ran on data that already existed, which can sink an idea but cannot confirm one (<Link href="/glossary#Prospective" style={{ color: 'var(--color-accent-blue)' }}>prospective</Link> vs <Link href="/glossary#Retrodiction" style={{ color: 'var(--color-accent-blue)' }}>retrodiction</Link>).</em></span>
               <div style={{ flexBasis: '100%' }}>
                 Refutations executed <em style={{ color: 'var(--color-text-muted)' }}>(tests that could have killed the idea &mdash; and the idea failed them)</em>: <strong style={{ color: '#ef4444' }}>6</strong>{' '}
-                <em style={{ color: 'var(--color-text-muted)' }}>(6 under the current counting rule; 3&ndash;8 under rules already on file, at most 5 independent &mdash; <Link href="/honest-assessment#count-rule" style={{ color: 'var(--color-accent-blue)' }}>why</Link>)</em>{' '}
+                <em style={{ color: 'var(--color-text-muted)' }}>(6 under the current counting rule; 3&ndash;8 under rules already on file, depending on how close calls and shared causes are counted; at most 5 independent &mdash; <Link href="/honest-assessment#count-rule" style={{ color: 'var(--color-accent-blue)' }}>why</Link>)</em>{' '}
                 &mdash; <strong>in plain words: we ran six tests that could have shown it wrong, and it lost all six.</strong>{' '}
                 <em style={{ color: 'var(--color-text-muted)' }}>(Five ran on outside data; the sixth, Bell/CHSH, is a construction check, not a data test. Whether TEST-09 and TEST-10 count as one refutation or two is pending the project lead.)</em>{' '}
                 <span style={{ display: 'block', margin: '0.3rem 0', fontSize: '0.9em', color: 'var(--color-text-secondary)' }}>

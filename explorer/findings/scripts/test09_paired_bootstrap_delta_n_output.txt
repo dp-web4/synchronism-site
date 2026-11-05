@@ -1,0 +1,27 @@
+N = 123
+
+IDENTITY CONTROL (unpaired, seed 12345, as published)
+  obs  3.753 ± 0.100  (target 3.75 ± 0.10)
+  1/Om         3.346 ± 0.072  (target 3.35 ± 0.07)
+  (Om-Ob)/Ob   3.456 ± 0.063  (target 3.46 ± 0.06)
+  Om/Ob        3.492 ± 0.059  (target 3.49 ± 0.06)
+  identity control PASSES
+
+PAIRED BOOTSTRAP (B = 4000, seed 20261105), catalogue V_flat
+  1/Om         n_obs 3.753±0.097  n_pred 3.346±0.071  dn 0.406  rho +0.136  sig_paired 0.1120  sig_quad 0.1200  S1 3.63 (quad 3.39)  S2 +0.95  P(|dn*|<=0.3) 0.164  dn* 2.5/97.5% [0.194,0.628]
+  (Om-Ob)/Ob   n_obs 3.753±0.097  n_pred 3.456±0.062  dn 0.297  rho +0.151  sig_paired 0.1064  sig_quad 0.1145  S1 2.79 (quad 2.59)  S2 -0.03  P(|dn*|<=0.3) 0.509  dn* 2.5/97.5% [0.096,0.509]
+  Om/Ob        n_obs 3.753±0.097  n_pred 3.492±0.058  dn 0.260  rho +0.159  sig_paired 0.1046  sig_quad 0.1128  S1 2.49 (quad 2.31)  S2 -0.38  P(|dn*|<=0.3) 0.645  dn* 2.5/97.5% [0.061,0.468]
+
+METHOD CONTROL: observed V_flat = outer-3 mean of V_obs (07-18 finding: 0.44 ± 0.12)
+  1/Om outer3  n_obs 3.786±0.100  n_pred 3.346±0.071  dn 0.439  rho +0.131  sig_paired 0.1152  sig_quad 0.1231  S1 3.82 (quad 3.57)  S2 +1.21  P(|dn*|<=0.3) 0.105  dn* 2.5/97.5% [0.221,0.666]
+
+DECOMPOSITION: why is rho what it is?  (pred V_flat vs obs V_flat, per galaxy)
+  corr(logV_obs, logV_pred) = 0.953;  corr of BTFR residuals = +0.285
+  residual rms: obs 0.0624 dex, pred 0.0640 dex
+
+VERDICTS (pre-registered rules)
+  P1 rho>0 and <0.4: HELD (rho +0.136)
+  P2 sig in [0.095,0.125] and S1 in [3.2,4.3]: HELD
+  P3 S2(1/Om) < 2: HELD
+  P4 order kept and all S1 > 2: HELD
+  P5 P(|dn*|<=0.3) in [0.10,0.25]: HELD (0.164)

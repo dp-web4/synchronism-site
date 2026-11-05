@@ -1,0 +1,42 @@
+Starting Synchronism Maintainer Session at Thu Nov  5 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+I've finished the maintainer session. The site build passes and both repos are pushed: site commit `6a13ba7`, research commit `a850db9e`.
+
+**WAKE: two findings that reach past the site**
+- **The modified-gravity reading of dark energy fails lunar laser ranging.** A visitor persona raised this as HIGH, and I checked it with a script before writing anything. If the coupling G/C(ρ̄) is the G that holds the Earth and Moon together, it drifts as the universe thins out: Ġ/G = 3(1−Ω_m)H₀ ≈ 1.4×10⁻¹⁰ per year. Lunar laser ranging measures (7.1 ± 7.6)×10⁻¹⁴ per year. That is about 2,000× too large, and at least 527× beyond the 2σ edge for every γ from 0.3 to 3. The script's three predictions, written before it ran, all held. So any reading where G/C affects local gravity is now excluded, whether keyed on local or on mean density. Only the ordinary dark-energy-fluid reading (Cardassian-class) survives. No bucket moves and the count stays at 6.
+- **A three-month-old result never reached the site.** The 08-02 null (local density adds nothing once g_bar is known) sat in the explorer's findings and no page carried any of its numbers. I drained it, and also asked the explorer to measure how many other findings were never drained, by searching the site for each finding's numbers. Filenames turned out to be a bad proxy for this.
+
+**Site changes**
+- **Explorer 11-04 finding:**
+  - All five pages that quote "boost ∝ ρ^−0.10" now say that response comes from g_bar, not density: at fixed g_bar the slope is +0.003, with a 95% CI of −0.022 to +0.027.
+  - The 08-02 result (1.37× wider scatter when conditioned on density) is now on Honest Assessment and /rar-scatter.
+- **Visitor HIGH items:**
+  - The glossary said "4–8" while every footer said "3–8". It now says 3–8, with the plain reason: it depends on how close calls and shared causes are counted.
+  - The 6 refutations are now listed by kind. Three refute the framework's own claims on data, one is inherited from MOND, one is a registration the equation could never meet, and one is a construction check. The weak-lensing result is named as the strongest evidence against the boost cap.
+  - The Galaxy Plotter now opens with the "New here?" box, followed by plain-language badges; the technical detail is in a fold.
+  - The /dark-energy page had three different statuses for the same sector. It now has one: Reparametrization, fluid reading only.
+- **Corrections:**
+  - The Coherence Function identifiability sentence was mathematically wrong; I checked the series by hand and rewrote it.
+  - The form-selection table no longer says "(refuted)" for rows that don't survive galaxy-level scoring.
+  - The landing page called μ-law "MOND's interpolating function". It is an audio-compression curve.
+  - Several smaller arithmetic and count errors are fixed.
+- **Checks:** I added two lint rules (281 total). The new rules flag 6 lines in the previous commit and none now. The anchor check is clean.
+
+**Research repo:** a new 2026-11-05 block in `PREDICTIONS.md` and a proposal under `Research/proposals/`. The block also corrects yesterday's "weak, not off" note: that describes the fitted model, not a density signal in the data. The proposal flags one citation idea as unverified recall.
+
+**Explorer topics seeded:** a paired bootstrap for TEST-09's 3.3σ, the sweep for undrained findings, and a check on whether the Ġ/G result is already published, plus other Ġ/G bounds.
+
+**Decisions for you:**
+- Should the exclusions that sit outside the count be printed beside the 6? That list now includes the modified-G result.
+- Should "fluid reading only" become the dark-energy status across the whole archive?
+
+**Still open:**
+- The plotter needs measured gas and stars for both curves, and one consistent a₀.
+- Tool pages still put long correction notes before the interactive part.
+- The CDM Discrimination page needs a new title and a demoted headline number.
+- Acronyms on the landing page and Key Claims need expanding.
+
+At the start I chained a `rm` with other commands, which the safety rule denies. I redid that step in a fresh directory without deleting anything.
+
+**So what?** The only physics result today is another exclusion; what's left of the dark-energy sector is ordinary dark energy. The more useful finding is about the feedback loop: a decisive null went undrained for three months, so the next thing worth measuring is how often that happens.

@@ -1,3 +1,29 @@
 Starting Synchronism Maintainer Session at Fri Nov  6 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+I tried to pre-register the Gaia DR4 γ window, as the researcher persona asked, and found the window never existed. The site and the research ledger have been corrected and pushed (site `df896fd`, research repo `330d49d1`); the build passes.
+
+**What was wrong.** Since 09-17 the ledger has said the γ-family passes the Cassini Solar-System bound at γ ≳ 1.5–2. That came from a preparatory scan in `sparc_cassini_q2.py` that holds a₀ at 1.03×10⁻¹⁰ for every γ; its own docstring says it isn't the registered test. I re-ran it with a₀ taken from the SPARC fit at each γ, using predictions written before the run (3 of 3 held), and the γ = 0.489 control reproduced the registered +17.96σ. Cassini fails at **14.5–19.3σ for every γ from 0.3 to 3**. That one fixed-a₀ scan had been holding up four things:
+- **Count range:** the 10-24 change to 3–8 is reversed, so the range is 4–8 again. TEST-25 now joins the rows that stay under every counting rule (TEST-10, environment, Bell/CHSH).
+- **DR4:** no γ survives, so whatever DR4 shows, it can only say which already-excluded member it resembles. DR4 settles MOND's own dispute (Banik vs Chae), not this framework's.
+- **Wide-binary prediction:** the 10-06 bracket was too wide to register, and its "a Newtonian null fails every γ ≲ 3" read the bracket's upper edge. I replaced it with the quasi-linear QUMOND point-mass result ν_e(1 + L_e/3), which gives 1.38–1.53 at γ ≈ ½ (MOND's published range) and 1.03–1.09 at γ = 3. A dated map from measured boost to γ is committed before DR4: `maintainer/scripts/wb_dr4_reading_key_PREREG.md`.
+- **Site pages:** six pages carried the "Cassini-passing" window; all are corrected, with the old wording kept as visible history.
+
+**Visitor HIGH items fixed:**
+- **TEST-10:** it is described as fires-at-every-ceiling everywhere now. The landing page and the Tier 1 tally had contradicted its own ledger row.
+- **TEST-09:**
+  - Key Claims now says it only fires at one of the three ceilings.
+  - The paired bootstrap from the 11-05 explorer finding is in (3.6 / 2.8 / 2.5σ).
+  - The site's two different "2σ rules" now have different names.
+- **Beginners:** there's a "New here?" pointer under the landing intro, and Why Synchronism explains MOND in plain words at first use.
+- **Medium items:** the wrong LIV "16–28 … actually yields" sentence is removed, the stale γ ≈ 1 Boundary badge and its two related descriptions are fixed, and N_corr < 1.78 is corrected.
+
+The lint now has 285 rules. It gives 0 hits on the new pages and 23 on the previous version, so the new rules catch the old wording. The anchor check is clean.
+
+**Back to the research repo:** a new block in `PREDICTIONS.md` and a proposal (`cassini_pass_held_a0_fixed_test25_leaves_the_range_and_dr4_has_no_window_20261106.md`). It recommends that every "passes / fails at γ" sentence record whether a₀ was fitted at that γ. This is the under-refutation twin of earlier over-refutation errors with the same cause.
+
+**For the explorer:** a new topic to sweep every "passes at γ" claim for a held-fixed scale. Its first target is MOND's own "passes Cassini at δ ≈ 4", which may rest on the same fixed-a₀ setup; the outcome is unknown.
+
+**Deferred:** one shared list for badges and status labels (a refactor that needs its own session), "action" meaning two things, γ described as "sharpness", a chance-corrected agreement statistic for the AI-debate method (A2ACW), deflated ΔBIC wording, and the plotter's default galaxy.
+
+**Needs you (dp):** rule on the count now that the floor is 4, decide whether to adopt the DR4 reading key, and answer the stopping question. This is the fourth time it's been raised, and it's sharper now: no registered branch in the galaxy or dark-energy sectors has an open window left.

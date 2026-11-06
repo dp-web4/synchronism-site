@@ -1,0 +1,29 @@
+Starting Synchronism Explorer Session at Fri Nov  6 08:00:01 PST 2026
+The site's claim that MOND's sharper transitions "survive" Cassini (δ ≥ 4) doesn't hold up. Like the compander pass the maintainer retired this morning, it came from a table that held a₀ fixed. Re-fitting a₀ to SPARC at each δ, δ = 4 fails Cassini at +9.2σ and no δ from 1 to 6 passes. That holds only for the instrument's fixed setup (mass-to-light ratios 0.5/0.7, bulge galaxies included), and dropping the bulge galaxies moves the answer a lot.
+
+**WAKE:** I worked the topic the maintainer dispatched (`partner-scale-profiled-sweep-…`). Its first target was a concrete question nobody had answered: was MOND's "δ ≈ 4 passes Cassini" another fixed-a₀ result? The frame worry I took in was that a₀ isn't the only partner parameter. Mass-to-light ratios and the sample cut are partners too.
+
+**What I ran:** I committed the predictions (`a4d99f4`) before computing. I used the same SPARC likelihood and Cassini instrument as TEST-25, and both identity checks reproduced the earlier numbers exactly.
+
+- **The δ = 4 pass was a fixed-a₀ artefact.** The 09-17 table evaluated δ = 4 at McGaugh's a₀ (1.20 and 1.128e−10). Fitting a₀ at δ = 4 gives 1.72e−10, and Cassini z at the middle external field (2.32e−10) goes from +1.32 to **+9.17**.
+- **The SPARC cost of δ = 4** is +466 counting individual points. Resampling whole galaxies (1000 bootstrap draws) puts it at about 3σ.
+- **Predictions:** 4 of 5 held. My guess that a₀ would stay below 1.6e−10 was wrong: it reaches 1.74e−10 at δ = 6.
+- **Extra arms (added after seeing the results, so not pre-registered):**
+  - Passing Cassini at a hand-picked a₀ costs at least +692 against SPARC.
+  - With the 32 bulge galaxies dropped, δ = 6 reaches +3.0σ at a cost of only +164.
+  - That is the direction Desmond, Hees & Famaey 2024 report: 8.7σ under fiducial assumptions, falling to 1.9σ with freer mass-to-light ratios and no bulge-dominated galaxies.
+
+**So what:**
+- Two pages are wrong as written: `/mond-comparator` ("δ ≥ 4 survive") and `/tier-1-existing:549` ("passes below δ = 4"). The corrected statement is *stronger* against MOND on TEST-25's instrument.
+- The bigger result is the bulge arm. This morning's compander correction (fails at 14.5–19σ) used the same harshest-case setup. **Whether the compander gains as much as MOND when bulges are dropped is untested.** The range change from 3–8 to 4–8 shouldn't be treated as settled until that cheap run is done. I flagged it as the top open thread.
+
+**Saved:**
+- Finding: `findings/mond-delta4-cassini-pass-held-a0-fixed-at-sparc-profiled-a0-no-delta-to-6-passes.md`. It includes maintainer actions: reword the two pages, label the setup on the compander's 14.5–19σ sentence, and add a lint rule.
+- Scripts and outputs in `explorer/scripts/`; session log at `logs/2026-11-06.md`.
+- The topic stays queued, with a progress note: the full "passes/fails at" sweep and the compander bulge arm are still to do.
+- Committed and pushed as `79f213e`.
+- I added this third instance to the existing partner-parameter memory rather than creating a new one.
+
+Sources:
+- [Desmond, Hees & Famaey 2024, arXiv:2401.04796](https://arxiv.org/abs/2401.04796)
+- [arXiv HTML v2](https://arxiv.org/html/2401.04796v2)

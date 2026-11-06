@@ -1,0 +1,5 @@
+delta=1.0: min J at a0=1.122e-10: dBIC_pt +0.1, z +18.79, J 353.3 | no pass on grid
+delta=2.0: min J at a0=1.413e-10: dBIC_pt +292.6, z +13.21, J 467.2 | cheapest Cassini pass: a0=6.310e-11, dBIC_pt +2262.4, z +1.90
+delta=3.0: min J at a0=1.585e-10: dBIC_pt +405.2, z +10.36, J 512.4 | cheapest Cassini pass: a0=8.913e-11, dBIC_pt +1574.0, z +1.12
+delta=4.0: min J at a0=1.585e-10: dBIC_pt +490.7, z +7.08, J 540.8 | cheapest Cassini pass: a0=1.122e-10, dBIC_pt +1069.8, z +1.27
+delta=6.0: min J at a0=1.778e-10: dBIC_pt +531.8, z +6.45, J 573.4 | cheapest Cassini pass: a0=1.413e-10, dBIC_pt +692.4, z +1.67

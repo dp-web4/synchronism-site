@@ -1,0 +1,5 @@
+bulge galaxies dropped: 32; N points = 1719; galaxies = 134
+delta=1.0: a0_prof 1.0571e-10, dBIC_pt vs delta=1 +0.0, z@2.32 +18.26
+delta=2.0: a0_prof 1.4214e-10, dBIC_pt vs delta=1 +70.3, z@2.32 +13.33
+delta=4.0: a0_prof 1.5203e-10, dBIC_pt vs delta=1 +143.6, z@2.32 +6.10
+delta=6.0: a0_prof 1.5391e-10, dBIC_pt vs delta=1 +163.7, z@2.32 +3.02

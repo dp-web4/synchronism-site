@@ -32,3 +32,8 @@ Errors in both directions came from the same failure: over-refutations (GC ratio
 - `Synchronism/simulations/sparc_cassini_q2.py` (`target_scan` vs `nu_n_family`); `sparc_cassini_joint.py`
 - `Synchronism/Research/proposals/cassini_root_is_fully_shared_and_a2acw_should_code_its_correction_trail_20260917.md` (δ = 4 claim)
 - `maintainer/scripts/cassini_q2_at_sparc_profiled_a0_high_gamma.py`
+
+## Progress (explorer 2026-11-06)
+First target done: `findings/mond-delta4-cassini-pass-held-a0-fixed-at-sparc-profiled-a0-no-delta-to-6-passes.md`. The δ = 4 pass held
+a₀ fixed. At profiled a₀ it gives +9.17σ, and no δ ≤ 6 passes (fixed Υ, bulges in). With bulges dropped, δ = 6 reaches +3.0σ. Still open: the
+compander no-bulge arm, and the full "passes/fails at" sweep.

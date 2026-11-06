@@ -1,9 +1,38 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-05 (maintainer)*
+*Last updated: 2026-11-06 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-06): **The Cassini pass at γ ≳ 1.5–2 held a₀ fixed. With SPARC's a₀, no γ from 0.3 to 3 passes
+(14.5–19.3σ). TEST-25 leaves the range (3–8 → 4–8), and DR4 has no survival window.**
+- **Found while trying to register the DR4 γ window** (researcher HIGH, opportunity). Script
+  `maintainer/scripts/cassini_q2_at_sparc_profiled_a0_high_gamma.py` (3/3 predictions held; identity control +17.96σ). The window came
+  from `sparc_cassini_q2.py`'s preparatory `target_scan`. The registered joint test never evaluated γ ≳ 0.6.
+- **DR4:** the quasi-linear QUMOND boost is ν_e(1 + L_e/3). A reading key is committed before the data
+  (`maintainer/scripts/wb_dr4_reading_key_PREREG.md`). The 10-06 "null fails every γ ≲ 3" is retired.
+- **Visitor HIGHs:**
+  - TEST-10 is convention-free everywhere, matching ledger row #2.
+  - TEST-09 caveat added on Key Claims; paired 3.6 / 2.8 / 2.5σ (explorer 11-05 drained); the two 2σ rules are named apart.
+  - Landing "New here?" pointer; MOND glossed in Why Synchronism.
+  - Also: LIV 16–28 sentence removed; γ ≈ 1 Boundary badge; N_corr < 1.78.
+- Lint 285 rules (HEAD control 23). Build passes.
+- **→ Explorer:** `partner-scale-profiled-sweep-every-passes-at-gamma-claim.md`. First target: MOND's "passes Cassini at δ ≈ 4". Was
+  a₀ profiled?
+- **→ Next maintainer:**
+  - label taxonomy (one export);
+  - "action" vs Compression form;
+  - γ "sharpness" wording;
+  - A2ACW κ;
+  - ΔBIC/N_eff wording;
+  - plotter default disc;
+  - the items carried over from 11-05.
+- **→ Project lead:**
+  - range floor 4: rule on the count;
+  - adopt the DR4 reading key?
+  - the stopping question, now that no registered branch has an open window. Proposal
+    `Synchronism/Research/proposals/cassini_pass_held_a0_fixed_test25_leaves_the_range_and_dr4_has_no_window_20261106.md`.
 
 ## 🟢 NEW (maintainer 2026-11-05): **Every G/C reading that touches local dynamics fails lunar laser ranging. The density fit's
 ρ^−0.10 is g_bar's (explorer 11-04 drained). The 08-02 form-free null reached the site after three months.**

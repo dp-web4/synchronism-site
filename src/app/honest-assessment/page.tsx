@@ -51,7 +51,7 @@ export default function HonestAssessment() {
         <a href="#if-you-read-nothing-else" style={{ color: 'var(--color-accent-blue)' }}>If you read nothing else</a> &middot;{' '}
         <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>Plain summary</a> &middot;{' '}
         <a href="#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six refutations?</a> &middot;{' '}
-        <a href="#count-rule" style={{ color: 'var(--color-accent-blue)' }}>Counting rules (why 3&ndash;8)</a> &middot;{' '}
+        <a href="#count-rule" style={{ color: 'var(--color-accent-blue)' }}>Counting rules (why 4&ndash;8)</a> &middot;{' '}
         <a href="#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Badge definitions (canonical)</a> &middot;{' '}
         <a href="#status-lifecycle-verbs" style={{ color: 'var(--color-accent-blue)' }}>Status lifecycle verbs</a> &middot;{' '}
         <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>The Verdict</a> &middot;{' '}
@@ -91,10 +91,10 @@ export default function HonestAssessment() {
             <details style={{ marginTop: '0.3rem', fontSize: '0.82rem' }}>
               <summary style={{ cursor: 'pointer', color: 'var(--color-text-muted)' }}>How firm is the 6? (for readers checking the bookkeeping)</summary>
               <span style={{ display: 'block', marginTop: '0.3rem' }}>
-                The number depends on counting rules the project lead has not chosen: 3 to 8 under rules already on file
+                The number depends on counting rules the project lead has not chosen: 4 to 8 under rules already on file
                 (<a href="#count-rule" style={{ color: 'var(--color-accent-blue)' }}>the rules</a>), and at most 5 of the six are independent.
-                Not all six are decisive tests on outside data. The &gamma;&nbsp;=&nbsp;2 pin (row #3) and the Cassini squeeze (row #5) sit at
-                the threshold once each galaxy counts once instead of each data point, and row #6 is a construction check, not data.
+                Not all six are decisive tests on outside data. The &gamma;&nbsp;=&nbsp;2 pin (row #3) sits at
+                the threshold once each galaxy counts once instead of each data point (the Cassini squeeze, row #5, was listed here too until 2026-11-06; with SPARC&apos;s a<sub>0</sub> at each &gamma; it fails at every &gamma; up to 3), and row #6 is a construction check, not data.
                 Two of them (TEST-09, TEST-10) test one cap (a ceiling on how much extra gravity the formula can add). On
                 rotation curves TEST-09 fires only under the site&apos;s choice of cap; TEST-10 fires under every candidate cap,
                 though at the most permissive one its M/L-independent part rests on two gas-dominated galaxies. Galaxy
@@ -118,7 +118,7 @@ export default function HonestAssessment() {
           above the refutation table (technical-writer and casual simulated-visitor personas: this is the Beginner Path&apos;s last
           step, and the plain content sat ~5,000 words down). On 2026-10-24 the first bullet was led with its plainest sentences, the counting-rule caveats moved into a collapsed
           note, and the range became 3 to 8 (casual and graduate simulated-visitor personas: the box beginners are sent to read like an
-          internal ledger, and TEST-25&apos;s galaxy-level dependence was missing from the range).
+          internal ledger, and TEST-25&apos;s galaxy-level dependence was missing from the range). On 2026-11-06 it went back to 4 to 8: that dependence came from a Cassini scan with a<sub>0</sub> held fixed, and with a<sub>0</sub> re-profiled from SPARC at each &gamma; Cassini fails at 14.5&ndash;19.3&sigma; for every &gamma; from 0.3 to 3.
         </details>
       </div>
 
@@ -167,14 +167,13 @@ export default function HonestAssessment() {
       <p id="count-rule" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', background: 'rgba(245,158,11,0.06)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem', scrollMarginTop: '5rem', marginBottom: '0.75rem' }}>
         <strong>The counting rules on file, and what each does to the 6</strong> (this anchor was linked from the homepage and the
         footer but did not exist until 2026-10-27). Deltas from the research ledger (2026-10-13, 10-16, 10-18, 10-24):
-        &minus;1 if TEST-09 must exclude its threshold at 2&sigma; (under V<sub>flat</sub> it is ~1.2&sigma;); &minus;1 if the &gamma; = 2 pin is
-        scored with the galaxy as the unit (&Delta;BIC &asymp; +11, interval reaching 23); &minus;1 if TEST-25&apos;s in-house empty
-        intersection is likewise scored at galaxy level (it moves with the &gamma; = 2 pin, so these two are not independent);
+        &minus;1 if TEST-09 must exclude its threshold at 2&sigma; (the margin is 0.95&sigma; on a paired galaxy bootstrap, ~1.2&sigma; in the 07-18 run; this is a different rule from the zero-tolerance 2&sigma; <em>separation</em> on Tier 1, under which TEST-09 fires at all three ceilings); &minus;1 if the &gamma; = 2 pin is
+        scored with the galaxy as the unit (&Delta;BIC &asymp; +11, interval reaching 23); TEST-25 does not move (until 2026-11-06 a &minus;1 stood here: its in-house intersection seemed to reopen at galaxy level, at &gamma; &asymp; 1.5&ndash;1.7, but that Cassini pass came from a scan holding a<sub>0</sub> fixed; with a<sub>0</sub> from SPARC at each &gamma; Cassini fails at 14.5&ndash;19.3&sigma; for every &gamma; from 0.3 to 3, maintainer/scripts/cassini_q2_at_sparc_profiled_a0_high_gamma.py);
         +1 if the executed uniform G/C growth reading is admitted as a run; +1 if TEST-04a fires on a point-estimate rule
-        (0.516 &gt; 0.46, on a withdrawn mechanism). Range 3&ndash;8; at most 5 of the six are independent. The floor of 3 is
-        rows #2 (TEST-10), #4 (environment) and #6 (Bell/CHSH, not data); rows #1, #3 and #5 are the ones that move. Of the three, only
+        (0.516 &gt; 0.46, on a withdrawn mechanism). Range 4&ndash;8; at most 5 of the six are independent. The floor of 4 is
+        rows #2 (TEST-10), #4 (environment), #5 (TEST-25, inherited from MOND) and #6 (Bell/CHSH, not data); rows #1 and #3 are the ones that move. Of the four, only
         TEST-10 is an external-data refutation of content the framework itself asserts: #6 is a simulation, outside the rule&apos;s
-        &ldquo;on data&rdquo; wording, and #4 refuted a registered &gt; 20% amplitude that the framework&apos;s own equation cannot produce. TEST-10, the floor&apos;s one data refutation of the framework&apos;s own content, is census-conditional on both of its legs: on rotation curves, three galaxies stay above the most permissive cap at &ge; 3&sigma; with distance, inclination and M/L propagated, unless their gas is under-counted by &times;2&ndash;3 (explorer 2026-10-29); on lensing, unless hidden baryons exceed about 2&ndash;3&times; stars plus cold gas. Choosing the rule is the
+        &ldquo;on data&rdquo; wording, #4 refuted a registered &gt; 20% amplitude that the framework&apos;s own equation cannot produce, and #5 fails McGaugh&apos;s own function too. TEST-10, the floor&apos;s one data refutation of the framework&apos;s own content, is census-conditional on both of its legs: on rotation curves, three galaxies stay above the most permissive cap at &ge; 3&sigma; with distance, inclination and M/L propagated, unless their gas is under-counted by &times;2&ndash;3 (explorer 2026-10-29); on lensing, unless hidden baryons exceed about 2&ndash;3&times; stars plus cold gas. Choosing the rule is the
         project lead&apos;s decision, not the site&apos;s.
       </p>
       <RefutationLedger />
@@ -375,7 +374,7 @@ export default function HonestAssessment() {
           different names. Zero predictions have been independently confirmed.
           Zero parameters have an independent first-principles derivation — the last surviving candidate (A-from-Jeans) was closed as audited-negative on 2026-06-07: the Session 66 script produces A ≈ 4.6×10⁻⁵ (600× off the stated 0.029) under the framework&apos;s own ρ<sub>crit</sub> ∝ V² scaling.
           Scoreboard: <strong>0 confirmed, 0 prospective predictions tested, 6 refutations executed (5 on external
-          data; 3&ndash;8 under rules on file, <a href="#count-rule" style={{ color: 'inherit' }}>see the rules</a>), 5 reparametrizations, 0 independently-derived parameters</strong> (recounted 2026-07-30; the BTFR
+          data; 4&ndash;8 under rules on file, <a href="#count-rule" style={{ color: 'inherit' }}>see the rules</a>), 5 reparametrizations, 0 independently-derived parameters</strong> (recounted 2026-07-30; the BTFR
           slope moved from the reparametrization list to an executed refutation on 2026-07-14, and the Cassini/SPARC
           squeeze and Bell/CHSH substrate test were added to the count on 2026-07-30 &mdash; both were already
           executed and badged Failed/Refuted elsewhere on the site).
@@ -416,7 +415,7 @@ export default function HonestAssessment() {
           <em>Asserted, Not Derived</em> &mdash; so strictly they refute the assertion. The honest split (revised
           2026-09-05 from &ldquo;3&ndash;4 roots&rdquo;) is <strong>2 framework-specific mechanism roots + 1 refuted
           registration + 1 inherited from MOND + 1 Bell/CHSH construction check</strong> &mdash; see the classification table below and{' '}
-          <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>Tier 1</Link>. The site-wide footer carries the count with its range (6 under the current rule, 3&ndash;8 under rules on
+          <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>Tier 1</Link>. The site-wide footer carries the count with its range (6 under the current rule, 4&ndash;8 under rules on
           file) and links here for the rest; it read a bare &ldquo;6&rdquo; until 2026-10-27, and was cut to one line on 2026-10-30. The two failures that depend on <em>no</em> convention and <em>no</em> data are the
           mass-cancellation no-go and the vacuum divergence &mdash; see{' '}
           <Link href="/key-claims" style={{ color: '#f59e0b' }}>Key Claims</Link>.
@@ -1673,7 +1672,7 @@ export default function HonestAssessment() {
           </ul>
           <p style={{ margin: '0 0 0.5rem' }}>
             <strong>Why this matters (a simulated-visitor researcher persona asked, 2026-10-15):</strong> if one γ ran every sector,
-            cosmology (γ = ½ to 5×10⁻⁶) and the Cassini Solar-System bound (which, for the acceleration-keyed curve, passes only at
+            cosmology (γ = ½ to 5×10⁻⁶) and the Cassini Solar-System bound (which, for the acceleration-keyed curve with a<sub>0</sub> taken from SPARC, passes at no γ up to 3; an earlier fixed-a<sub>0</sub> scan had it passing at
             γ ≳ 1.5) would kill the framework without touching SPARC. That kill does not go through, for a reason that is itself
             informative: the cosmology pin is on the density-keyed curve and the Cassini bound is on the acceleration-keyed one. They
             are different functions that share a symbol. Put density into both sectors and the galaxy law is already refuted by

@@ -139,7 +139,7 @@ export default function RootLayout({
           </p>
           <p style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             All sessions, derivations, and failures are public.{' '}
-            0 confirmed predictions &middot; <strong>6 refutations executed</strong> under the current counting rule (3&ndash;8 under rules on file, depending on how close calls and shared causes are counted){' '}
+            0 confirmed predictions &middot; <strong>6 refutations executed</strong> under the current counting rule (4&ndash;8 under rules on file, depending on how close calls and shared causes are counted){' '}
             &rarr;{' '}
             <Link href="/honest-assessment#what-was-tested" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>ledger</Link>
             {' \u00B7 '}

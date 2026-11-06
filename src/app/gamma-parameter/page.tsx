@@ -102,7 +102,7 @@ export default function GammaParameter() {
           <div className="card" style={{ borderLeft: '3px solid #38bdf8' }}>
             <h3 style={{ color: '#38bdf8' }}>&#x03B3; &gt; 1.5 &mdash; Low N<sub>corr</sub> (&#x03B3;-sharp)</h3>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              Few correlated particles (N<sub>corr</sub> &lt; 2). Individual electrons, photons,
+              Few correlated particles (N<sub>corr</sub> &lt; 1.78, since &#x03B3; = 2/&radic;N<sub>corr</sub> &gt; 1.5). Individual electrons, photons,
               isolated quantum systems. Superposition, interference, entanglement dominate.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>

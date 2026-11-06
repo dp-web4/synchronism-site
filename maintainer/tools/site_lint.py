@@ -23,9 +23,25 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-11-06 (maintainer): (i) the count range 3-8 / floor of 3. TEST-25's galaxy-level reopening ("gamma ~ 1.5-1.7
+    #     passes both") came from sparc_cassini_q2.py's preparatory scan holding a0 = 1.03e-10 fixed; with a0 profiled from SPARC at
+    #     each gamma, Cassini fails at 14.5-19.3 sigma for gamma 0.3-3 (maintainer/scripts/cassini_q2_at_sparc_profiled_a0_high_gamma.py).
+    #     (ii) "Cassini-passing gamma ~ 1.5-2" and "a Newtonian null fails every gamma <~ 3" (the latter read the 10-06 bracket's
+    #     upper edge; quasi-linear QUMOND gives 1.03-1.09 at gamma 3, so it is precision-dependent). (iii) visitor 11-06: TEST-10 listed
+    #     as convention-dependent; LIV "16-28 is the range ... actually yields"; gamma-boundary "Z-polynomial null matches".
+    (r"(?<![\d.])3(&ndash;|–| to |\\u2013)8 under|between 3 and 8 depending|Three survive every rule|The floor of 3 is", "2026-11-06",
+     "the range is 4 to 8: TEST-25 does not move (Cassini fails at every gamma 0.3-3 once a0 is profiled from SPARC)", False),
+    (r"Cassini-passing (γ|&#x03B3;) (≈|&asymp;|≳|&#x2273;) 1\.5", "2026-11-06",
+     "no gamma up to 3 passes Cassini with SPARC's a0 at each gamma; the 'passing' window held a0 fixed", False),
+    (r"(Newtonian )?null fails (the acceleration-keyed compander at )?every (γ|&#x03B3;) (≲|&#x2272;) 3", "2026-11-06",
+     "gamma = 3 predicts 1.03-1.09 (quasi-linear QUMOND); a null excludes only gamma whose boost exceeds 1 + 2 sigma", False),
+    (r"Two of the six \(TEST-09, TEST-10\) were convention-dependent", "2026-11-06",
+     "TEST-10 fires at every candidate ceiling (ledger.ts row #2); only TEST-09 is convention-dependent", False),
+    (r"16&ndash;28 is the range the", "2026-11-06", "the LIV range is 15-27 orders (alpha/pi = 2.3e-3)", False),
+    (r"Z-polynomial null matches", "2026-11-06", "the Z-null run on the real rows fails (2026-10-31)", False),
     # --- retired 2026-11-05 (maintainer, visitor tech-writer HIGH): the glossary printed "4-8 under rules on file" while every
     #     footer printed "3-8" (the range moved to 3-8 on 2026-10-24 when TEST-25 joined it).
-    (r"4(&ndash;|–|\\u2013)8 under rules on file", "2026-11-05", "the range on file is 3-8 since 2026-10-24", False),
+    # (r"4(&ndash;|–|\\u2013)8 under rules on file", ...) REVERSED 2026-11-06: the range is 4-8 again (see the 2026-11-06 block).
     # --- retired 2026-11-04 (maintainer, draining explorer 2026-11-02): the density-keyed free fit (gamma 0.046) has a
     #     global knee at 4.4e-6 Msun/pc3 below every disc (log regime; gamma and rho_c separately identified, corr +0.89);
     #     boost ~ rho^-0.10 beats a constant boost by dBIC +945. "Switched off", "fixed A = 0.029" and "only gamma/A" for this
@@ -137,8 +153,7 @@ RETIRED = [
     # --- retired 2026-10-24 (maintainer): count range 4-8 (TEST-25 galaxy-level delta omitted); galaxy-level +10.9 described as
     #     gamma=2 vs free gamma (it is vs McGaugh nu, equal k: the passage a persona's "+6.2" grew from); "fit improvement is zero";
     #     0.086 "CDM-consistency suspended" (explorer 2026-10-23: not a BTFR scatter at all)
-    (r"(?<![\d.])4(&ndash;|–| to )8 under", "2026-10-24",
-     "the range is 3 to 8: TEST-25's in-house empty intersection also needs point independence (09-29 block)"),
+    # (r"(?<![\d.])4(&ndash;|–| to )8 under", ...) REVERSED 2026-11-06: TEST-25's galaxy-level reopening came from a fixed-a0 scan.
     (r"compares\s+&#x03B3; = 2 with free &#x03B3;", "2026-10-24",
      "the galaxy-level +10.9 compares gamma=2 with McGaugh's nu (equal parameter counts): 166 x ln(RSS ratio)"),
     (r"the fit improvement is zero", "2026-10-24", "free gamma vs McGaugh: delta chi^2 = -0.84 (negligible, not zero)"),
@@ -594,8 +609,8 @@ REQUIRES = [
     (r"0\.87(&ndash;|–)0\.95", r"clos(ed|es)|globular|cluster|GC",
      "2026-10-30", "EFE-free corner gamma 0.87-0.95: say it is closed by the globular-cluster statistic (2026-10-30)"),
     # Added 2026-10-27: the footer read a bare "6 refutations executed" while /honest-assessment claimed it carried the qualifier.
-    (r"<strong>6 refutations executed</strong>", r"3(&ndash;|–)8 under rules on file|under the current counting rule",
-     "2026-10-27", "the footer/scoreboard count must carry its range (3-8 under rules on file) on the same surface", 3),
+    (r"<strong>6 refutations executed</strong>", r"4(&ndash;|–)8 under rules on file|under the current counting rule",
+     "2026-10-27", "the footer/scoreboard count must carry its range (4-8 under rules on file since 2026-11-06) on the same surface", 3),
     # Added 2026-10-24 (explorer 2026-10-23 finding): 0.086 is the residual of an in-sample photometric mass model.
     (r"0\.086(?!\d)", r"not a BTFR scatter|independent of V|not a Tully",
      "2026-10-24", "0.086 dex: say it is not a BTFR scatter / independent of V on the same surface"),

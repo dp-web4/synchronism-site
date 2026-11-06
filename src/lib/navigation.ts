@@ -338,7 +338,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Sound Velocity',
       href: '/sound-velocity',
-      desc: 'r = 0.982 with fitted γ; matched by a Z-polynomial null',
+      desc: 'r = 0.982 with fitted γ; restates the Debye temperature',
       keywords: ['sound', 'velocity', 'correlation', 'phonon', 'acoustic'],
       prerequisites: ['/gamma-boundary'],
       related: ['/electronegativity', '/chemistry-phase-transitions'],
@@ -346,7 +346,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Electronegativity',
       href: '/electronegativity',
-      desc: 'r = 0.979 correlation with coherence',
+      desc: 'r = 0.94–0.96: electronegativity against ionization energy, renamed',
       keywords: ['electronegativity', 'correlation', 'atomic', 'bonding'],
       prerequisites: ['/gamma-boundary'],
       related: ['/sound-velocity', '/materials-predictions'],

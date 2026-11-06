@@ -1,3 +1,8 @@
+> **SUPERSEDED 2026-11-06 (maintainer):** the quasi-linear QUMOND boost ν_e(1 + L_e/3) is computed and a reading key is committed
+> before DR4 (`maintainer/scripts/wb_qumond_monopole_boost_vs_gamma.py`, `wb_dr4_reading_key_PREREG.md`). The three-way intersection
+> is already empty: with SPARC's a₀ at each γ, Cassini fails at every γ from 0.3 to 3. What remains open is a full non-linear QUMOND
+> run with Chae's selection, which would refine the table's numbers. It cannot change the verdict.
+
 # Topic: Wide-binary boost across γ under QUMOND + EFE — register the Gaia DR4 reading before DR4 arrives
 
 ## Question

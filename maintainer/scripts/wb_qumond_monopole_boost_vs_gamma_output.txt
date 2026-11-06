@@ -1,0 +1,45 @@
+Control 2 (closed form solves the linearized QUMOND eq. off-origin): worst rel. residual = 7.4e-06
+Control 2b: <1 + (L/2) sin^2> over the sphere = 0.91000 vs 1 + L/3 = 0.91000
+
+Control 1 (reproduce 10-06 bracket nu_e, L_e at g_e = 1.9e-10):
+  gamma=0.489 nu_e= 1.580 L_e=-0.266
+  gamma=1.000 nu_e= 1.302 L_e=-0.254
+  gamma=2.000 nu_e= 1.174 L_e=-0.232
+
+Asymptotic wide-binary boost in g, B = nu_e(1 + L_e/3) (monopole of quasi-linear QUMOND point mass)
+gamma  g_e=1.6e-10  g_e=1.9e-10  g_e=2.2e-10   old bracket @1.9e-10
+0.300         1.855         1.750         1.672   [1.413, 1.919]
+0.400         1.643         1.550         1.482   [1.248, 1.701]
+0.489         1.526         1.440         1.378   [1.160, 1.580]
+0.500         1.515         1.429         1.368   [1.151, 1.568]
+0.600         1.428         1.349         1.293   [1.088, 1.480]
+0.750         1.342         1.270         1.219   [1.028, 1.391]
+0.870         1.294         1.227         1.180   [0.996, 1.342]
+1.000         1.256         1.192         1.149   [0.971, 1.302]
+1.250         1.205         1.147         1.109   [0.941, 1.250]
+1.500         1.172         1.118         1.084   [0.922, 1.216]
+1.750         1.149         1.098         1.067   [0.910, 1.192]
+2.000         1.131         1.083         1.054   [0.902, 1.174]
+2.500         1.108         1.064         1.038   [0.892, 1.150]
+3.000         1.092         1.051         1.028   [0.886, 1.134]
+5.000         1.062         1.028         1.011   [0.878, 1.103]
+
+Inverse map: outcome B -> gamma (g_e band 1.6-2.2e-10)
+  B=1.50: gamma = 0.39 - 0.51
+  B=1.45: gamma = 0.42 - 0.57
+  B=1.40: gamma = 0.47 - 0.64
+  B=1.30: gamma = 0.59 - 0.85
+  B=1.20: gamma = 0.80 - 1.28
+  B=1.15: gamma = 0.99 - 1.73
+  B=1.12: gamma = 1.17 - 2.21
+  B=1.10: gamma = 1.33 - 2.72
+  B=1.08: gamma = 1.55 - 3.57
+  B=1.06: gamma = 1.88 - 5.30
+  B=1.04: gamma = 2.44 - 10.80
+  B=1.02: gamma = nan - nan
+
+Boost at the window edges named in the ledger (g_e band):
+  gamma=0.87: B = 1.180 - 1.294
+  gamma=1.5: B = 1.084 - 1.172
+  gamma=1.7: B = 1.070 - 1.153
+  gamma=2.0: B = 1.054 - 1.131

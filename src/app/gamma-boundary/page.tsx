@@ -28,7 +28,7 @@ export default function GammaBoundary() {
       <Breadcrumbs currentPath="/gamma-boundary" />
       <PathNav currentPath="/gamma-boundary" />
       <h1>The &#x03B3; &#x2248; 1 Boundary</h1>
-      <ValidationBadge status="reparametrization" label="Reparametrizes the Debye θ_D (≈86% of the 89% are θ_D restatements) | Z-polynomial null matches | No N_corr procedure" />
+      <ValidationBadge status="reparametrization" label="Reparametrizes the Debye θ_D (≈86% of the 89% are θ_D restatements) | Z-null run on the real rows (2026-10-31): fails | No N_corr procedure" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>

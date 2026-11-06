@@ -94,6 +94,13 @@ export default function Home() {
           framework&apos;s audited sign-inversion failure showing through (
           <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>γ Calculator</Link>).
         </p>
+        {/* 2026-11-06 (casual simulated-visitor persona): the Where to Start cards sit below the hardest content; a beginner
+            pointer here, before the equation card and the refutation tallies. */}
+        <p style={{ margin: '0.75rem 0 0', padding: '0.5rem 0.75rem', background: 'rgba(16,185,129,0.08)', borderLeft: '3px solid #10b981', borderRadius: '0.25rem', fontSize: '0.92rem' }}>
+          <strong>New here?</strong> The next sections get technical fast.{' '}
+          <Link href={BEGINNER_STEPS[0].href} style={{ color: '#10b981' }}>Start with {BEGINNER_STEPS[0].title} ({BEGINNER_STEPS[0].time}) &rarr;</Link>{' '}
+          or jump to <a href="#where-to-start" style={{ color: '#10b981' }}>Where to Start</a>.
+        </p>
       </section>
 
       {/* The Equation */}
@@ -399,19 +406,19 @@ export default function Home() {
               <span>Prospective predictions confirmed <em style={{ color: 'var(--color-text-muted)' }}>(predictions fixed before the data existed, then borne out)</em>: <strong style={{ color: 'var(--color-text-secondary)' }}>0</strong> <em style={{ color: 'var(--color-text-muted)' }}>&mdash; and 0 prospective tests completed at all. That does not contradict the 6 below: all six refutations ran on data that already existed, which can sink an idea but cannot confirm one (<Link href="/glossary#Prospective" style={{ color: 'var(--color-accent-blue)' }}>prospective</Link> vs <Link href="/glossary#Retrodiction" style={{ color: 'var(--color-accent-blue)' }}>retrodiction</Link>).</em></span>
               <div style={{ flexBasis: '100%' }}>
                 Refutations executed <em style={{ color: 'var(--color-text-muted)' }}>(tests that could have killed the idea &mdash; and the idea failed them)</em>: <strong style={{ color: '#ef4444' }}>6</strong>{' '}
-                <em style={{ color: 'var(--color-text-muted)' }}>(6 under the current counting rule; 3&ndash;8 under rules already on file, depending on how close calls and shared causes are counted; at most 5 independent &mdash; <Link href="/honest-assessment#count-rule" style={{ color: 'var(--color-accent-blue)' }}>why</Link>)</em>{' '}
+                <em style={{ color: 'var(--color-text-muted)' }}>(6 under the current counting rule; 4&ndash;8 under rules already on file, depending on how close calls and shared causes are counted; at most 5 independent &mdash; <Link href="/honest-assessment#count-rule" style={{ color: 'var(--color-accent-blue)' }}>why</Link>)</em>{' '}
                 &mdash; <strong>in plain words: we ran six tests that could have shown it wrong, and it lost all six.</strong>{' '}
                 <em style={{ color: 'var(--color-text-muted)' }}>(Five ran on outside data; the sixth, Bell/CHSH, is a construction check, not a data test. Whether TEST-09 and TEST-10 count as one refutation or two is pending the project lead.)</em>{' '}
                 <span style={{ display: 'block', margin: '0.3rem 0', fontSize: '0.9em', color: 'var(--color-text-secondary)' }}>
                   <strong>How solid is &ldquo;six&rdquo;?</strong> Some of the six overlap, and the rules for counting are not settled, so it is
-                  between 3 and 8 depending on the rule. Three survive every rule, and only one of those three is outside data refuting
-                  something the framework itself predicts: TEST-10, the cap on how dark-matter-dominated a galaxy can look. Of the other two,
-                  Bell/CHSH is a simulation, and the environment test refuted a size of effect (&gt; 20%) that the framework&apos;s own
+                  between 4 and 8 depending on the rule. Four survive every rule, and only one of those four is outside data refuting
+                  something the framework itself predicts: TEST-10, the cap on how dark-matter-dominated a galaxy can look. Of the other three,
+                  the Solar-System test (TEST-25) fails MOND&apos;s own function too, Bell/CHSH is a simulation, and the environment test refuted a size of effect (&gt; 20%) that the framework&apos;s own
                   equation never produced. All of them went against the idea; none went for it.
                 </span>
                 <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>Which six? &rarr;</Link>{' '}
                 <span style={{ display: 'block', margin: '0.3rem 0', fontSize: '0.85em', color: 'var(--color-text-muted)' }}>
-                  Two of the six (TEST-09, TEST-10) were convention-dependent on SPARC; the weak-lensing RAR (Brouwer+2021) excludes the
+                  One of the six (TEST-09) is convention-dependent on SPARC: it fires at the ceiling 1/&Omega;<sub>m</sub> but not at the two baryon-budget ceilings. TEST-10 fires at all three (at the most permissive, 6.39, three discs stay above it at &ge; 3&sigma; with distance, inclination and M/L propagated, conditional on the gas census). The weak-lensing RAR (Brouwer+2021) excludes the
                   ceiling under every candidate convention (all three are built from &Omega;<sub>m</sub>) &mdash; see the <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>ledger</Link>.
                 </span>
                 <span style={{ display: 'block', margin: '0.35rem 0', padding: '0.35rem 0.6rem', background: 'rgba(167,139,250,0.08)', borderLeft: '2px solid var(--color-accent-violet)', borderRadius: '0.25rem' }}>
@@ -441,7 +448,7 @@ export default function Home() {
                   <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem', marginTop: '0.4rem' }}>
                     <thead><tr><th style={{ padding: '0.2rem 0.6rem 0.2rem 0', textAlign: 'left' }}>Test</th><th style={{ padding: '0.2rem 0.6rem 0.2rem 0', textAlign: 'left' }}>Realization tested</th><th style={{ padding: '0.2rem 0.6rem 0.2rem 0', textAlign: 'left' }}>Result (both numbers where they differ)</th><th style={{ padding: '0.2rem 0.6rem 0.2rem 0', textAlign: 'left' }}>Root</th></tr></thead>
                     <tbody>
-                    <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}><a href="/glossary#BTFR" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>BTFR</a> slope (TEST-09)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>floored C = Ω<sub>m</sub> + (1−Ω<sub>m</sub>)·x/(1+x), x = (g<sub>bar</sub>/a<sub>0</sub>)<sup>1/φ</sup>; g<sub>obs</sub> = g<sub>bar</sub>/C; boost capped at 3.17×</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>predicted slope 3.35 vs data 3.75 ± 0.10 (3.3σ apart) <strong>at the ceiling B<sub>max</sub> = 1/Ω<sub>m</sub>, which no archive document derives</strong>; registered |Δn| &gt; 0.3 met on the point estimate, ~1σ margin under V<sub>flat</sub> alone, robust under V<sub>max</sub>. Convention-dependent: it does not fire at (Ω<sub>m</sub>−Ω<sub>b</sub>)/Ω<sub>b</sub> or Ω<sub>m</sub>/Ω<sub>b</sub> (2026-09-18 sweep)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>boost ceiling</td></tr>
+                    <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}><a href="/glossary#BTFR" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>BTFR</a> slope (TEST-09)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>floored C = Ω<sub>m</sub> + (1−Ω<sub>m</sub>)·x/(1+x), x = (g<sub>bar</sub>/a<sub>0</sub>)<sup>1/φ</sup>; g<sub>obs</sub> = g<sub>bar</sub>/C; boost capped at 3.17×</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>predicted slope 3.35 ± 0.07 vs data 3.75 ± 0.10 (3.3σ apart in quadrature; 3.6σ on a paired galaxy bootstrap) <strong>at the ceiling B<sub>max</sub> = 1/Ω<sub>m</sub>, which no archive document derives</strong>; registered |Δn| &gt; 0.3 met on the point estimate, ~1σ margin under V<sub>flat</sub> alone, robust under V<sub>max</sub>. Convention-dependent: it does not fire at (Ω<sub>m</sub>−Ω<sub>b</sub>)/Ω<sub>b</sub> or Ω<sub>m</sub>/Ω<sub>b</sub> (2026-09-18 sweep)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>boost ceiling</td></tr>
                     <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>Dwarf dark-matter fractions (TEST-10)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>same as TEST-09</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>SPARC&apos;s max f<sub>DM</sub> = 0.927 needs a boost ≥ 13.7; fails under either floor (1/Ω<sub>m</sub> = 3.17 or Ω<sub>m</sub>/Ω<sub>b</sub> ≈ 6.4)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>boost ceiling (same root)</td></tr>
                     <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}><a href="/glossary#RAR" style={{ color: 'inherit', textDecoration: 'underline dotted' }}>RAR</a> shape, γ = 2 pin (no TEST ID; closed 2026-05-21)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>tanh-log compander in μ-form, keyed on g<sub>obs</sub>/a<sub>0</sub>′, no floor</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>ΔBIC +184 vs MOND counting each of 2,807 points as independent; <strong>≈ +11 with the galaxy as the unit</strong> (measured N<sub>eff</sub> ≈ 150): disfavoured at the threshold, not decisive. Free γ lands at 0.489 &asymp; MOND (identical at γ = ½; the fit is 2% away)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>γ = 2 pin</td></tr>
                     <tr style={{ borderTop: '1px solid rgba(239,68,68,0.15)' }}><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>Environment amplitude (TEST-03s)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>registered &gt;20% effect of ambient density (S177)</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>r² = 0.0001 vs the &gt;20% claim; the equation itself never predicted &gt;10<sup>−3</sup> dex</td><td style={{ padding: '0.2rem 0.6rem 0.2rem 0', verticalAlign: 'top' }}>refuted registration</td></tr>
@@ -525,16 +532,14 @@ export default function Home() {
               only tests <em>executed</em> against registered criteria. Separately, the framework&apos;s
               preferred-frame (absolute-time) sector is excluded at face value by <em>existing</em> precision
               measurements — by 15 to 27 orders of magnitude — unless a protection mechanism nobody has
-              exhibited exists. 16&ndash;28 is the range the
-              computation on <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link> actually
-              yields — one-loop c<sub>μν</sub>&nbsp;~&nbsp;α/π&nbsp;&asymp;&nbsp;2&times;10<sup>&minus;3</sup> (15&ndash;27 orders above) against
+              exhibited exists. The computation behind it is on <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link> — one-loop c<sub>μν</sub>&nbsp;~&nbsp;α/π&nbsp;&asymp;&nbsp;2&times;10<sup>&minus;3</sup> (15&ndash;27 orders above) against
               cavity bounds ≲10<sup>&minus;18</sup> and comagnetometer bounds ≲10<sup>&minus;29</sup>&ndash;10<sup>&minus;30</sup>. See{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
             </p>
             <details style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0.3rem 0 0' }}>
               <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
               The &ldquo;6 refutations&rdquo; count read &ldquo;4&rdquo; until 2026-08-09 &mdash; the pre-recount number, stale here while the footer said 6.{' '}
-              The preferred-frame range was corrected 2026-08-09 from &ldquo;11 to 28&rdquo; to 16&ndash;28; the &ldquo;11&rdquo; had no derivation behind it.
+              The preferred-frame range was corrected 2026-08-09 from &ldquo;11 to 28&rdquo; to 16&ndash;28 (the &ldquo;11&rdquo; had no derivation behind it), and on 2026-10-30 to 15&ndash;27 (α/π = 2.3&times;10<sup>&minus;3</sup>). A leftover sentence calling 16&ndash;28 &ldquo;the range the computation actually yields&rdquo; was removed 2026-11-06 (graduate simulated-visitor persona).
             </details>
           </section>
 
@@ -670,7 +675,7 @@ export default function Home() {
 
           {/* Guided Path */}
           <section style={{ marginBottom: '3rem' }}>
-            <h2>Where to Start</h2>
+            <h2 id="where-to-start" style={{ scrollMarginTop: '5rem' }}>Where to Start</h2>
             <div className="grid-3">
               <Link href="/why-synchronism" className="card" style={{ textDecoration: 'none' }}>
                 <div style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>{beginnerLabel('/why-synchronism')}</div>

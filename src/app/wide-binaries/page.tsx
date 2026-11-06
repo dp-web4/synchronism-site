@@ -55,9 +55,10 @@ export default function WideBinaries() {
             EFE included. Here the test cannot separate it from MOND. It can only fail both together. And at that fit it has
             already failed: the Cassini Solar-System bound (<Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>)
             tests the same &#x03BD;, the same QUMOND field equation and the same Milky Way external field that make the
-            wide-binary boost. Across the compander family the dial &#x03B3; sets both: a &asymp;1.4&times; boost needs
-            &#x03B3; &#x2272; 1, where Cassini fails, and the Cassini-passing &#x03B3; &asymp; 1.5&ndash;2 predicts only
-            &asymp;1.1&ndash;1.2&times; (rough bracket, not pre-registered; added 2026-10-06).
+            wide-binary boost. Across the compander family the dial &#x03B3; sets both: a &asymp;1.4&ndash;1.5&times; boost maps to
+            &#x03B3; &asymp; 0.4&ndash;0.64 and &#x03B3; = 2 predicts 1.05&ndash;1.13&times; (quasi-linear QUMOND, orientation-averaged, 2026-11-06). No
+            &#x03B3; passes Cassini once a<sub>0</sub> is taken from SPARC at each &#x03B3;: it fails at 14.5&ndash;19.3&sigma; from &#x03B3; = 0.3 to 3. (Until
+            2026-11-06 this sentence read &ldquo;Cassini-passing &#x03B3; &asymp; 1.5&ndash;2&rdquo;; that pass held a<sub>0</sub> fixed.)
           </p>
         </div>
         <div className="card card-highlight" style={{ margin: '1.5rem 0' }}>
@@ -224,8 +225,8 @@ export default function WideBinaries() {
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               A confirmed EFE-suppressed MOND anomaly of &asymp;1.4&times; would rescue nothing: it needs the acceleration-keyed
               version at &#x03B3; &#x2272; 1, where Cassini already fails it, so it adds no second failure but no support either.
-              Only a precise &asymp;1.1&ndash;1.2&times; boost would land on the Cassini-passing &#x03B3; &asymp; 1.5&ndash;2, which
-              SPARC disfavours at ~2&sigma;. For the density law it would rule out the near-Newtonian knee window. The
+              No outcome lands on a Cassini-passing &#x03B3;: with a<sub>0</sub> taken from SPARC at each &#x03B3;, none exists up to 3
+              (2026-11-06; the earlier &ldquo;precise 1.1&ndash;1.2&times; at &#x03B3; &asymp; 1.5&ndash;2&rdquo; held a<sub>0</sub> fixed). For the density law it would rule out the near-Newtonian knee window. The
               published calibration is already excluded. (Until 2026-10-06 this card said a confirmed anomaly would
               &ldquo;support MOND and the acceleration-keyed version equally&rdquo;.)
             </p>

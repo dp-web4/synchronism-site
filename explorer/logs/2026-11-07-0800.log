@@ -1,0 +1,36 @@
+Starting Synchronism Explorer Session at Sat Nov  7 08:00:01 PST 2026
+Today's question was whether the label "inherited from MOND" on TEST-25 (the Cassini test) applies equally to MOND and to the compander, once the mass-to-light ratio Υ is left free per galaxy. It doesn't. The MOND family has a way through Cassini that the compander lacks.
+
+**Main result** (predictions committed before running, in `10d0bdf`):
+- **MOND passes.** With Υ free per galaxy and bulge galaxies dropped, MOND's sharpest transition (δ = 6) passes Cassini at all three external-field values (z = 1.48 / 0.48 / 0.18).
+- **The compander does not.** Its best case is about 10σ.
+- **Both depend on the Υ prior.** At a 0.1 dex prior width the compander sits at 10.0σ; at 0.2 dex it falls to 7.1σ, and MOND's δ = 4 passes as well. Freer Υ lets the average mass-to-light ratio rise, which pulls a₀ down, and the Cassini z follows a₀. So a z quoted at one prior width says more about the prior than about the model.
+- **Turning the question around gives a stable answer.** I asked what population-wide Υ each family needs in order to pass:
+
+| | Υ_d needed to pass | SPARC cost (galaxy-level bootstrap) | Galaxies whose stars outweigh the observed pull by >20 % |
+|---|---|---|---|
+| MOND δ = 6 | ≈ 0.54, close to stellar-population values | 1.8σ | 7.5 % |
+| Compander γ = 3 | ≈ 1.22, 2.4× stellar-population values | 2.9σ | 36 % |
+| Compander γ = 2 | ≈ 1.40 | not bootstrapped | 42 % |
+
+  A galaxy in the last column can't be fit by either family at all.
+- **Published number reproduced.** MOND's 1.8σ matches the 1.9σ Desmond, Hees & Famaey 2024 report for their mitigated case. This is the first time our pipeline has matched a published result, which makes the compander numbers from the same pipeline more trustworthy.
+
+**What it means for the site:**
+- "Inherited from MOND" is true only of McGaugh's simple function, the form the compander's γ = ½ also reduces to. Across the whole MOND family, the framework does strictly worse on the Solar System than MOND.
+- The refutation count doesn't move. TEST-25 stays in the floor, and the range 4–8 stands.
+- Every Cassini σ in the ledger (14.5–19.3σ, 13.4σ) assumed fixed Υ. The verdict holds, but those σ values overstate how precise it is. With Υ free (0.1 dex prior), the floor is about 10σ.
+
+**My predictions:** 2 of 5 held.
+- I expected the Υ change to shift a₀ by under 10 %; it shifted 14 %.
+- I expected MOND only to approach a pass; it passed.
+- The "compander stays above 10σ" prediction held by 0.03σ at one prior width and fails at the others, so it shouldn't be quoted.
+
+**Files:**
+- **Finding:** `findings/cassini-upsilon-free-mond-family-escapes-at-1p8-sigma-compander-needs-upsilon-x2p4.md`. It includes maintainer actions: reword the TEST-25 line in `src/lib/ledger.ts`, and label every Cassini σ as fixed-Υ.
+- **Session log:** `logs/2026-11-07.md`.
+- **Topic:** archived to `topics/done/`.
+- **Memory:** new entry `invert-a-prior-width-driven-verdict`.
+- Everything is committed and pushed in `2db4494`.
+
+**Next step:** rerun with AQUAL, a different way of solving MOND's field equation. Desmond et al. say it raises the tension compared with the QUMOND solver we use. If it pushes MOND's δ = 6 back above 2σ, the escape closes for both families and today's headline flips.

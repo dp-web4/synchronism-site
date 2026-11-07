@@ -1,3 +1,31 @@
 Starting Synchronism Maintainer Session at Sat Nov  7 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+I fixed today's visitor HIGHs and pushed the site and research repos. The stale summaries left over from yesterday's Cassini revision were the main problem, and the corrected survivor count now rests on a new run rather than on yesterday's sentence.
+
+**The new run.** /honest-assessment said "three of the six refutations survive every counting rule" where it should say four. Before changing it, I checked that four holds up. The explorer's 11-06 finding had left one open question: does our version of the equation (the compander) still fail the Cassini Solar-System test if the 32 galaxies with central bulges are dropped? That cut is one of the two adjustments Desmond, Hees & Famaey use to soften the same test for MOND. I wrote the predictions into the script and committed it before running (`d7eb6b2`). All three predictions held, and the identity check reproduced yesterday's +17.95σ.
+- **The count range stays 4–8.** Without bulge galaxies the compander still fails Cassini at 13.4–17.5σ for every γ from 0.489 to 3.
+- **"Inherited from MOND" is lopsided.** On the same cut, MOND's family of functions drops to +3.0σ at its sharpest member, but ours only drops about 2σ. Above γ ≈ 1, raising γ moves the transition point instead of sharpening it, so our family has nothing sharp to fall back on.
+- **Solver artefact caught.** The first table showed a −8.2σ "drop" at γ = 0.3. That was the solver failing to converge there: repeat runs gave anywhere from 8σ to 22σ. Yesterday's published γ = 0.3 value carries the same noise, though every run still fails above 5σ, so no verdict changes. Rows at γ ≥ 0.489 are stable to ±0.02σ.
+
+**Site fixes (commit `52db8d5`):**
+- **/honest-assessment:** the survivor count now reads four, naming the four rows (TEST-10, the environment run, TEST-25, Bell/CHSH). The out-of-date "narrow, not empty" wording is marked superseded. The Lorentz and H₀ badges now agree with the text under them.
+- **/galaxy-rotation:** the stale "narrow, not empty / steep-return survivor" conclusion is rewritten. The old wording is kept in a collapsed history block.
+- **/for-researchers:** TEST-10 is now marked as holding under every ceiling choice. I added a table listing which equation of motion each verdict used, across five versions of the theory, which the researcher persona asked for.
+- **/tier-1-existing:** the first caveat now says which convention it means. The TEST-02 prediction line is marked "as registered, superseded". Every "δ = 4 passes" statement now says whether a₀ was held fixed or refit to the galaxy data. /mond-comparator gets the same fix.
+- **/key-claims:** "MOND explains all observed variance" is narrowed to what was actually tested. The entanglement row is badged Speculative, since our own Bell construction stays at the classical limit.
+- **Smaller:** "the ln is cosmetic" is corrected on two pages (it is what makes γ = ½ equal MOND). The landing page links the glossary's ten starter words, and First Encounter's two summary lines are in plain words.
+- **Checks:** the lint now has 292 rules. It finds 11 hits on the old version and 0 on the new one. The build passes and the anchor check is clean.
+
+**Back to the research repo (`cf84bb8c`):** a new 2026-11-07 block in PREDICTIONS.md and a proposal, `compander_has_no_cassini_escape_that_mond_has_20261107.md`. Nothing new needs your ruling.
+
+**For the explorer:** `cassini-both-families-upsilon-free-per-galaxy.md` asks for Desmond's other adjustment, a free mass-to-light ratio per galaxy, run for both families. Its result decides whether "inherited from MOND" holds in both directions. The A2ACW post-cutoff control was already queued, so I didn't add it twice.
+
+**Still open:**
+- The hand-typed count sentence on /honest-assessment should be generated from `ledger.ts`, which is the technical writer's structural fix.
+- /equation-walkthrough shows steps 2–8 only after the page's JavaScript runs.
+- The chemistry explorer's default sort.
+- /honest-assessment is about 175k characters long.
+- The abbreviation key on the landing page still isn't folded away.
+
+**Housekeeping:** I created an empty file by mistake, `synchronism-site/memory_placeholder_unused`. It's untracked and not committed. The safety law only lets me delete files under /tmp, so it needs a manual `rm`. The three `dbic2843_boot_*.npy` files from an earlier session are also still untracked.

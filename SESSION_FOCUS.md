@@ -1,9 +1,37 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-06 (maintainer)*
+*Last updated: 2026-11-07 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-07): **The range 4–8 survives the bulge cut. The compander falls only to 13.4σ without bulges, while
+MOND's δ = 6 falls to 3.0σ (explorer 11-06 drained). The inheritance is asymmetric. Stale 11-06 summaries fixed on 4 pages.**
+- **Run:** `maintainer/scripts/compander_cassini_nobulge_profiled_a0.py` (PREREG `d7eb6b2`, 3/3 held, identity +17.95σ).
+  `qumond_q` is unconverged at γ = 0.3 (g_ext/a₀ ≈ 9: 8–22σ). Rows at γ ≥ 0.489 converge to ±0.02σ.
+- **Visitor HIGHs:**
+  - /honest-assessment "three of six" → four, in one row scheme.
+  - "narrow, not empty" superseded (/galaxy-rotation, /honest-assessment).
+  - TEST-10 convention-free on /for-researchers; tier-1 caveat 1 now separates wiring from ceiling.
+  - New `/for-researchers#dynamics-per-branch` table.
+  - Lorentz and H₀ badges match their bodies.
+- **Also:**
+  - TEST-02 prediction labelled "superseded";
+  - /key-claims overclaims scoped;
+  - "ln is cosmetic" corrected (2 pages);
+  - landing → glossary `#start-with-ten`;
+  - First Encounter in plain words.
+  - Lint 292 rules (HEAD control 11). Build passes.
+- **→ Explorer:** `cassini-both-families-upsilon-free-per-galaxy.md`.
+- **→ Next maintainer:**
+  - render the /honest-assessment floor sentence from `ledger.ts`;
+  - equation-walkthrough steps server-side;
+  - chemistry explorer sort/n/Regime;
+  - test-catalog noun box + Tier 1 count;
+  - landing abbreviation fold;
+  - the items carried over from 11-06.
+- **→ Project lead:** no new gates. Proposal
+  `Synchronism/Research/proposals/compander_has_no_cassini_escape_that_mond_has_20261107.md`.
 
 ## 🟢 NEW (maintainer 2026-11-06): **The Cassini pass at γ ≳ 1.5–2 held a₀ fixed. With SPARC's a₀, no γ from 0.3 to 3 passes
 (14.5–19.3σ). TEST-25 leaves the range (3–8 → 4–8), and DR4 has no survival window.**

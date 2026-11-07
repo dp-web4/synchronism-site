@@ -53,8 +53,8 @@ export default function CoherenceFunction() {
           wording corrected 2026-09-06 from &ldquo;a two-parameter Hill function,&rdquo; caught by a graduate-physics
           persona.) With x = &#x03C1;/&#x03C1;<sub>crit</sub>,
           tanh(&#x03B3;&middot;ln(1+x)) = [(1+x)<sup>2&#x03B3;</sup> &minus; 1] / [(1+x)<sup>2&#x03B3;</sup> + 1]
-          — an algebraic identity, verified numerically (the ln is cosmetic; nothing about the composition is
-          load-bearing). Slope behavior follows directly: dC/dx = &#x03B3;(1&minus;C&sup2;)/(1+x) is maximal at
+          — an algebraic identity, verified numerically (the ln is not an independent ingredient, but it is load-bearing: it
+          gives the power-law tail 1&minus;C &asymp; 2x<sup>&minus;2&#x03B3;</sup> that makes &#x03B3;&nbsp;=&nbsp;&frac12; equal MOND&apos;s simple &mu;; tanh(&#x03B3;x) would have an exponential tail. Until 2026-11-07 this said the composition was not load-bearing). Slope behavior follows directly: dC/dx = &#x03B3;(1&minus;C&sup2;)/(1+x) is maximal at
           x = 0 (where it equals &#x03B3;) and decreases monotonically — the curve is concave in x everywhere on x &ge; 0, with no critical
           point and no inflection to serve as a &ldquo;transition.&rdquo; Asymptotics: C &asymp; &#x03B3;x for
           small x; C &rarr; 1 like 1 &minus; 2(1+x)<sup>&minus;2&#x03B3;</sup> for large x. This dissolves any

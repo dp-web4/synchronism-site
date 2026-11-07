@@ -68,6 +68,60 @@ export default function ForResearchers() {
           only in an open-items list on{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.)
         </div>
+        <div id="dynamics-per-branch" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0 0 1rem', scrollMarginTop: '5rem', overflowX: 'auto' }}>
+          <strong>Which equation of motion each verdict used.</strong> Different tests evaluated &ldquo;the framework&rdquo; under
+          different dynamics. No verdict below changes, but each is a statement about one row, not about the others.
+          (Table added 2026-11-07 at a researcher simulated-visitor persona&apos;s request.)
+          <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '0.5rem', fontSize: '0.8rem' }}>
+            <thead>
+              <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--color-dark-border)' }}>
+                <th style={{ padding: '0.3rem' }}>Branch</th>
+                <th style={{ padding: '0.3rem' }}>Equation of motion</th>
+                <th style={{ padding: '0.3rem' }}>External-field effect?</th>
+                <th style={{ padding: '0.3rem' }}>Solar-System observable</th>
+                <th style={{ padding: '0.3rem' }}>Verdict and where it was run</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)', verticalAlign: 'top' }}>
+                <td style={{ padding: '0.3rem' }}>Acceleration-keyed, algebraic</td>
+                <td style={{ padding: '0.3rem' }}>g<sub>obs</sub> = g<sub>bar</sub>/C, C evaluated at g<sub>bar</sub></td>
+                <td style={{ padding: '0.3rem' }}>None (the law is local in g)</td>
+                <td style={{ padding: '0.3rem' }}>Direct Newtonian-return tail: planetary perihelia (EPM2011)</td>
+                <td style={{ padding: '0.3rem' }}>Galaxy fits, TEST-09, TEST-10, the &gamma;&nbsp;=&nbsp;2 pin. Is MOND&apos;s simple &mu; at &gamma;&nbsp;=&nbsp;&frac12;. Perihelia exclude &gamma; &lt; 0.87 at 3&sigma; with SPARC&apos;s a<sub>0</sub>; a corner at &gamma; &asymp; 0.87&ndash;0.95 survives galaxy-level SPARC (~1.2&sigma;) and is disfavoured ~3&sigma; by globular clusters, conditional on the mass model.</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)', verticalAlign: 'top' }}>
+                <td style={{ padding: '0.3rem' }}>Acceleration-keyed, modified Poisson</td>
+                <td style={{ padding: '0.3rem' }}>QUMOND: &nabla;&sup2;&Phi; = &nabla;&middot;[&nu;(|&nabla;&Phi;<sub>N</sub>|/a<sub>0</sub>)&nabla;&Phi;<sub>N</sub>], &nu; from C</td>
+                <td style={{ padding: '0.3rem' }}>Yes, MOND&apos;s</td>
+                <td style={{ padding: '0.3rem' }}>Cassini quadrupole Q<sub>2</sub>, set near 7,000&nbsp;AU</td>
+                <td style={{ padding: '0.3rem' }}>TEST-25 and wide binaries (TEST-02 / Gaia DR4). With SPARC&apos;s a<sub>0</sub> refit, Cassini fails at 14.5&ndash;19&sigma; for every &gamma; 0.3&ndash;3, and 13&ndash;18&sigma; with bulge-dominated galaxies dropped. Inherited from MOND.</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)', verticalAlign: 'top' }}>
+                <td style={{ padding: '0.3rem' }}>Density-keyed, L2</td>
+                <td style={{ padding: '0.3rem' }}>&nabla;&middot;[C(&rho;)&nabla;&Phi;] = 4&pi;G&rho;, g = &minus;&nabla;&Phi;</td>
+                <td style={{ padding: '0.3rem' }}>Zero for uniform C; refracted where &nabla;C &ne; 0</td>
+                <td style={{ padding: '0.3rem' }}>GM&#x2609; from different planets; lunar laser ranging &#x0120;/G</td>
+                <td style={{ padding: '0.3rem' }}>The &ldquo;only structurally discriminating&rdquo; branch (no MOND-type EFE). Excluded on SPARC (&Delta;BIC +2843, galaxy bootstrap [2178, 3590]) and by LLR (68/74 grid laws at a 1&nbsp;pc smoothing length). See items 4&ndash;6 below.</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)', verticalAlign: 'top' }}>
+                <td style={{ padding: '0.3rem' }}>Density-keyed, L3</td>
+                <td style={{ padding: '0.3rem' }}>Same field equation; force from the action, with a striction term</td>
+                <td style={{ padding: '0.3rem' }}>As L2, plus striction from self-energy</td>
+                <td style={{ padding: '0.3rem' }}>Planetary perihelia (a repulsive, &Lambda;-like term); LLR</td>
+                <td style={{ padding: '0.3rem' }}>Globular-cluster registered point excluded under L3 (2026-10-08); the LLR exclusion carries over unchanged. Never run on SPARC.</td>
+              </tr>
+              <tr style={{ verticalAlign: 'top' }}>
+                <td style={{ padding: '0.3rem' }}>Cosmology, mean density</td>
+                <td style={{ padding: '0.3rem' }}>H&sup2; = 8&pi;G&rho;<sub>m</sub>/(3C(&rho;<sub>m</sub>)) (Cardassian class)</td>
+                <td style={{ padding: '0.3rem' }}>Not applicable</td>
+                <td style={{ padding: '0.3rem' }}>&#x0120;/G if the cosmic G/C also governs local dynamics</td>
+                <td style={{ padding: '0.3rem' }}>Is &Lambda;CDM at &gamma;&nbsp;=&nbsp;&frac12;. The modified-G reading fails LLR by &ge;&nbsp;527&times;; only the fluid reading (gravity unmodified) survives.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style={{ marginTop: '0.4rem' }}>Two consequences. Cassini&apos;s Q<sub>2</sub> is an external-field observable, so it tests the second row, not the first; the first row&apos;s Solar-System test is the perihelion tail. And &ldquo;&rho;&rdquo; means mass density in rows 3&ndash;5; the ontology pages&apos; broader &ldquo;Presence&rdquo; reading has no equation of motion of its own.</p>
+        </div>
         <div id="distinct-content" style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #f59e0b', paddingLeft: '0.75rem', margin: '0 0 1rem', scrollMarginTop: '5rem' }}>
           <strong>Distinct-content register: everything on this site that differs from MOND, &Lambda;CDM or standard QM, in one place.</strong>{' '}
           Until 2026-10-22 these items sat on four pages under four framings, and this page named only one of them (a researcher
@@ -75,7 +129,7 @@ export default function ForResearchers() {
           <div style={{ overflowX: 'auto', marginTop: '0.5rem' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem' }}>
               <thead>
-                <tr style={{ borderBottom: '1px solid var(--color-border)', textAlign: 'left' }}>
+                <tr style={{ borderBottom: '1px solid var(--color-dark-border)', textAlign: 'left' }}>
                   <th style={{ padding: '0.3rem' }}>Item</th><th style={{ padding: '0.3rem' }}>Branch</th><th style={{ padding: '0.3rem' }}>Status</th><th style={{ padding: '0.3rem' }}>Prior art</th><th style={{ padding: '0.3rem' }}>Cheapest test</th>
                 </tr>
               </thead>
@@ -177,11 +231,13 @@ export default function ForResearchers() {
           plotter, and the environment test were run against, it is not a submodel but a distinct theory, and that one
           is refuted), so a discriminating test could at best tie on fit, and could select it only if its restriction held.
           The two that discriminated are TEST-09 (BTFR slope, 3.3σ) and TEST-10 (dwarf DM fractions), both at the
-          boost ceiling B<sub>max</sub>&nbsp;=&nbsp;1/&Omega;<sub>m</sub>, and both kills are convention-dependent: TEST-09 does
-          not fire at the baryon-budget ceilings in the 2026-09-18 sweep (|&Delta;n| = 0.297 and 0.260 against a strict
-          &gt;&nbsp;0.3), so its convention-free content is that a bounded boost with B<sub>max</sub>&nbsp;&#8818;&nbsp;5.3 is
-          excluded; TEST-10&apos;s is B<sub>max</sub>&nbsp;&#8818;&nbsp;14. Whether they stay in the count of 6 is pending
-          the project lead. (Corrected 2026-07-27 and 2026-08-08; see revision notes.)
+          boost ceiling B<sub>max</sub>&nbsp;=&nbsp;1/&Omega;<sub>m</sub>. <strong>TEST-09 is convention-dependent; TEST-10 is
+          not.</strong> TEST-09 does not fire at the baryon-budget ceilings in the 2026-09-18 sweep (|&Delta;n| = 0.297 and 0.260
+          against a strict &gt;&nbsp;0.3), so its convention-free content is that a bounded boost with
+          B<sub>max</sub>&nbsp;&#8818;&nbsp;5.3 is excluded. TEST-10 fires at every candidate ceiling (B<sub>max</sub>&nbsp;&#8818;&nbsp;14
+          excluded by SPARC dwarfs), conditional on the gas census. Whether TEST-09 stays in the count of 6 is pending
+          the project lead; TEST-10 is in the rule-independent floor. (Until 2026-11-07 this sentence called both kills
+          convention-dependent, one day after TEST-10&apos;s own card was corrected.) (Corrected 2026-07-27 and 2026-08-08; see revision notes.)
           What remains citable are <strong>replications,
           quantified instances of known results, and executed negative results</strong> — the five
           numbered artifacts below survive the framework being wrong, precisely because they do not depend

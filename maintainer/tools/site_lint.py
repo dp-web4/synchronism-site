@@ -23,6 +23,17 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-11-07 (maintainer, visitor 11-07 HIGHs): summaries left behind by the 11-06 Cassini revision.
+    #     (i) "three of the six stay" (floor is 4: TEST-10, environment, TEST-25, Bell/CHSH); (ii) the galaxy-level intersection
+    #     "narrow, not empty" (it is empty with SPARC's a0; 13-18 sigma without bulges too, compander_cassini_nobulge_profiled_a0.py);
+    #     (iii) "both kills are convention-dependent" (TEST-10 is not); (iv) MOND "only sharper transitions (delta >= 4) survive"
+    #     (fixed-a0; explorer 11-06: no delta <= 6 passes at profiled a0); (v) "the ln is cosmetic"; (vi) "explain all observed variance".
+    (r"three of the six stay|[Tt]hree of six stay", "2026-11-07", "the rule-independent floor is 4 rows: TEST-10, environment, TEST-25, Bell/CHSH", False),
+    (r"intersection is narrow, not empty", "2026-11-07", "with SPARC's a0 refit at each gamma the intersection is empty at galaxy level too", False),
+    (r"both kills are convention-dependent", "2026-11-07", "TEST-10 fires at every candidate ceiling; only TEST-09 is convention-dependent", False),
+    (r"only sharper transitions \((δ|&delta;) ≥ 4\) survive", "2026-11-07", "delta >= 4 passed only with a0 fixed; at SPARC-profiled a0 no delta <= 6 passes", False),
+    (r"the ln is cosmetic", "2026-11-07", "the ln sets the power-law tail that makes gamma = 1/2 equal MOND's simple mu", False),
+    (r"explain all observed variance", "2026-11-07", "MOND + M/L explains the rotation-curve variance tested, not all variance (clusters, Cassini)", False),
     # --- retired 2026-11-06 (maintainer): (i) the count range 3-8 / floor of 3. TEST-25's galaxy-level reopening ("gamma ~ 1.5-1.7
     #     passes both") came from sparc_cassini_q2.py's preparatory scan holding a0 = 1.03e-10 fixed; with a0 profiled from SPARC at
     #     each gamma, Cassini fails at 14.5-19.3 sigma for gamma 0.3-3 (maintainer/scripts/cassini_q2_at_sparc_profiled_a0_high_gamma.py).
@@ -607,7 +618,11 @@ REQUIRES = [
      "2026-11-05", "rho^-0.10 is the fit's response; say on the same line that it is g_bar's (partial +0.003 at fixed g_bar)", 0),
     # Added 2026-10-30: the EFE-free corner gamma ~ 0.87-0.95 is closed by the GC statistic (10.6 sigma vs MOND+EFE, pre-registered).
     (r"0\.87(&ndash;|–)0\.95", r"clos(ed|es)|globular|cluster|GC",
-     "2026-10-30", "EFE-free corner gamma 0.87-0.95: say it is closed by the globular-cluster statistic (2026-10-30)"),
+     "2026-10-30", "EFE-free corner gamma 0.87-0.95: name the globular-cluster result (~3 sigma disfavoured, mass-model conditional, 2026-10-31; not 'closed')"),
+    # Added 2026-11-07 (explorer 2026-11-06): MOND's delta = 4 Cassini pass held a0 fixed. Any delta = 4 / delta >= 4 near Cassini
+    #     must say whether a0 was fixed or refit.
+    (r"(δ|&delta;) (≥|=|&ge;) 4", r"refit|profiled|fixed|held",
+     "2026-11-07", "delta = 4 and Cassini: say whether a0 was held fixed or refit to SPARC (at refit a0, delta = 4 fails at +9.2 sigma)", 0),
     # Added 2026-10-27: the footer read a bare "6 refutations executed" while /honest-assessment claimed it carried the qualifier.
     (r"<strong>6 refutations executed</strong>", r"4(&ndash;|–)8 under rules on file|under the current counting rule",
      "2026-10-27", "the footer/scoreboard count must carry its range (4-8 under rules on file since 2026-11-06) on the same surface", 3),

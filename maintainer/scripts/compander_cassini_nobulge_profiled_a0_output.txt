@@ -1,0 +1,27 @@
+bulge galaxies dropped: 32; no-bulge N = 1719, all N = 2807
+ gamma |     a0_all   a0/g_all   z_all |      a0_nb    a0/g_nb    z_nb  dBIC_nb vs g=.489
+ 0.300 |  2.526e-11  8.420e-11    8.42 |  2.504e-11  8.347e-11   16.62              +38.4
+ 0.489 |  5.333e-11  1.091e-10   17.95 |  5.057e-11  1.034e-10   17.53               +0.0
+ 0.750 |  9.427e-11  1.257e-10   17.88 |  8.731e-11  1.164e-10   17.02               +6.1
+ 1.000 |  1.343e-10  1.343e-10   17.53 |  1.231e-10  1.231e-10   16.36              +17.8
+ 1.500 |  2.153e-10  1.435e-10   16.81 |  1.953e-10  1.302e-10   15.24              +36.2
+ 2.000 |  2.967e-10  1.483e-10   16.26 |  2.678e-10  1.339e-10   14.44              +47.9
+ 3.000 |  4.598e-10  1.533e-10   15.54 |  4.131e-10  1.377e-10   13.44              +61.5
+
+C1 identity (bulges-in gamma=0.489 z within 0.5 of +17.96): PASS (+17.95)
+P1 (no-bulge z > 5 at every gamma): HELD (min +13.44)
+P2 (a0'/gamma falls 3-10% at 0.489): HELD (5.2%)
+P3 (z drop < 2.86 at every gamma): HELD (drops -8.20, 0.43, 0.86, 1.16, 1.57, 1.82, 2.10)
+
+--- POST-RUN CONVERGENCE CHECK (added after reading the table; /tmp/q03.py, /tmp/qhi.py) ---
+gamma = 0.3 rows are NOT converged: g_ext/a0 ~ 9.2 is outside the solver's stable range. At a0 = 2.526e-11 / 2.5262e-11 /
+2.504e-11 and angular/radial order 128/512 vs 192/768, z@2.32 ranges 15.2, 16.0, 20.3, 15.3, 21.5, 16.8 (this run's
+bulges-in 8.42 is a further draw). Every draw is > 5, so P1 is unaffected, but the gamma = 0.3 "drop -8.20" in P3 is an
+artefact, and the 11-06 table's gamma = 0.3 value (17.73) carries the same ~+-6 sigma numerical uncertainty.
+gamma >= 0.489 rows converge: a0 x1.001 and order 192/768 move z by <= 0.02
+  (0.489: 17.53-17.54; 1.0: 16.36-16.38; 2.0: 14.44-14.46; 3.0: 13.44-13.46).
+READING: dropping the 32 bulge galaxies lowers the compander's Cassini z by 0.4-2.1 sigma across gamma 0.489-3; the minimum
+is +13.4 sigma at gamma = 3. MOND's delta family falls to +3.0 at delta = 6 on the same cut (explorer 11-06). The asymmetry
+is structural: delta sharpens the transition; gamma above ~1 mainly moves the knee (10-90 width saturates near 1.17 dex), so
+the compander has no sharp-transition member to reach for. The 11-06 range change (3-8 -> 4-8) survives the bulge cut.
+Untested for both families: Upsilon free per galaxy (Desmond+2024's other mitigation).

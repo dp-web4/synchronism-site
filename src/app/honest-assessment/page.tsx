@@ -99,8 +99,11 @@ export default function HonestAssessment() {
                 rotation curves TEST-09 fires only under the site&apos;s choice of cap; TEST-10 fires under every candidate cap,
                 though at the most permissive one its M/L-independent part rests on two gas-dominated galaxies. Galaxy
                 weak-lensing data exclude the cap under all three candidate choices. Those two share one cause, so no more than
-                five are independent. Under every counting rule on file three of the six stay (TEST-10, the environment run, and
-                the Bell/CHSH construction check); the other three depend on the rule.
+                five are independent. Under every counting rule on file four of the six stay: row #2 (TEST-10), row #4 (the
+                environment run), row #5 (TEST-25, the Cassini row inherited from MOND) and row #6 (the Bell/CHSH construction
+                check). The other two (row #1 TEST-09, row #3 the &gamma;&nbsp;=&nbsp;2 pin) depend on the rule. Only row #2 refutes
+                the framework&apos;s own content on outside data. (This sentence said &ldquo;three&rdquo; until 2026-11-07, one day
+                after row #5 joined the floor; the TEST-25 row survives dropping bulge-dominated galaxies too, at 13&ndash;18&sigma;.)
               </span>
             </details>
           </li>
@@ -288,7 +291,7 @@ export default function HonestAssessment() {
           <strong>NEVER RUN AS REGISTERED</strong><span>A different dataset, sample, or statistic was substituted and adjudicated in the registered test&apos;s place — the substitute has its own verdict, but the test as originally pre-registered remains unrun and still runnable. Distinct from WITHDRAWN (which is retracted, not substituted). E.g. TEST-03 (the ALFALFA-SDSS run was executed as TEST-03s instead).</span>
           <strong>UNDERPOWERED AS REGISTERED</strong><span>The registered kill threshold sits inside the measurement&apos;s own known systematics or pipeline-dependence range, so neither outcome (threshold crossed or not) can adjudicate anything until the registration is tightened. Marked before the data arrives where possible, not as a post-hoc excuse. E.g. TEST-06 (BTFR σ_int threshold vs. ~3× velocity-definition-dependent scatter), TEST-04a (data past the fσ₈ threshold by ~0.9σ against a &gt;3σ demand; ~1.5σ until the 2026-10-10 QSO-row correction).</span>
           <strong>Ceiling Exceeded</strong><span>A structural failure mode specific to this framework: the data demands more than the framework&apos;s built-in maximum (the bounded boost 1/&Omega;_m = 3.17), so no parameter choice can rescue the fit. Needs no threshold registration — the ceiling is algebraic.</span>
-          <strong>Empty Intersection</strong><span>A joint test fails because the parameter ranges two datasets each allow do not overlap: no single value satisfies both. E.g. TEST-25: the γ interval SPARC retains with points treated as independent (0.425&ndash;0.600) and the interval the Cassini Solar-System bound allows share no point. With the galaxy as the unit the SPARC interval reaches γ ≈ 1.7 and the intersection is narrow, not empty (2026-10-15). Each dataset alone may be fit; the <em>conjunction</em> is what is refuted, and only for the realization that uses one function at both scales. (The 0.425&ndash;0.600 interval treats SPARC points as independent; with the galaxy as the unit it widens to 0.3&ndash;1.7 and the in-house intersection sits at the 2&sigma; edge, so TEST-25 rests on the published, marginalized 8.7&sigma;. Qualifier added 2026-10-04.)</span>
+          <strong>Empty Intersection</strong><span>A joint test fails because the parameter ranges two datasets each allow do not overlap: no single value satisfies both. E.g. TEST-25: the γ interval SPARC retains with points treated as independent (0.425&ndash;0.600) and the interval the Cassini Solar-System bound allows share no point. With the galaxy as the unit the SPARC interval widens to γ ≈ 0.3&ndash;1.7, and the intersection is still empty: with SPARC&apos;s own a<sub>0</sub> refit at each γ, Cassini fails at 14.5&ndash;19σ for every γ from 0.3 to 3 (2026-11-06), and at 13&ndash;18σ with the bulge-dominated galaxies dropped (2026-11-07). Each dataset alone may be fit; the <em>conjunction</em> is what is refuted, and only for the realization that uses one function at both scales under a modified-Poisson (QUMOND) field equation. (Superseded wording, kept for the record: on 2026-10-15 this entry said the galaxy-level intersection was &ldquo;narrow, not empty&rdquo;. That rested on a Cassini pass at γ ≳ 1.5&ndash;2 computed with a<sub>0</sub> held fixed, withdrawn 2026-11-06.)</span>
           <strong>Kill Criterion Triggered</strong><span>Defined once, under operational states above (a pre-registered threshold was crossed; the claim carries the Failed badge). Listed here only so a reader scanning the verbs finds it.</span>
           <strong>Demoted &mdash; Exploratory</strong><span>A RECLASSIFIED test whose registration never met the entry bar for a prediction (no derivation of the amplitude, or no threshold). It stays visible as an exploratory hypothesis and counts neither for nor against. (Added 2026-10-04.)</span>
           <strong>Closed by Execution</strong><span>CLOSED reached by running the computation rather than by argument: the question was answered on data, often as a null. (Added 2026-10-04.)</span>
@@ -1779,7 +1782,7 @@ export default function HonestAssessment() {
           <div className="card" style={{ borderLeft: '3px solid var(--color-failed)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>Lorentz Invariance: Preferred-Frame + Dim-4 Naturalness Gap (Added 2026-07-02)</h3>
-              <ValidationBadge status="audited-negative" label="Naturalness Gap: 15–27 OOM; custodial escapes unexhibited" />
+              <ValidationBadge status="audited-negative" label="Naturalness Gap: the audit (15–27 OOM) is closed; whether a custodial escape exists is open" />
             </div>
             <PlainTerms>
               the framework needs a universal &ldquo;absolute clock,&rdquo; which physics-wise means a preferred
@@ -1897,7 +1900,7 @@ export default function HonestAssessment() {
           <div className="card" id="h0-tension" style={{ borderLeft: '3px solid #ef4444' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>H₀ Tension — Not Addressed</h3>
-              <ValidationBadge status="speculative" label="No prediction" />
+              <ValidationBadge status="speculative" label="No mechanism; a non-discriminating H₀ (77.6 ± 15.5) only" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               The Hubble tension — a ~5σ discrepancy between early-universe (CMB) and late-universe
@@ -1921,7 +1924,7 @@ export default function HonestAssessment() {
               σ&rdquo; was an error-bar deflation &mdash; the explorer&apos;s 2026-07-26 finding, which this page never
               absorbed until a researcher persona re-derived it.)</em> What remains true is the substantive point above:
               no <em>mechanism</em> for the tension has been worked out, neither an early-time nor a
-              late-time fix. The correct badge is a non-discriminating soft constraint, not silence — and it is one
+              late-time fix. The correct label is a non-discriminating soft constraint, not silence (the badge above says so since 2026-11-07; until then it read &ldquo;No prediction&rdquo;, which this paragraph contradicts) — and it is one
               more reading on which a₀ ≈ cH₀/2π looks like numerology rather than a derivation. Flagged
               by the graduate-physics simulated-visitor pass; the same inversion had been noted internally
               2026-07-26 without reaching this page, which is the propagation break rather than the

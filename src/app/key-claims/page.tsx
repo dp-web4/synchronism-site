@@ -107,7 +107,7 @@ export default function KeyClaims() {
               </div>
               <div className="card" style={{ padding: '0.75rem', margin: 0, borderLeft: '2px solid var(--color-accent-violet)' }}>
                 <div style={{ fontSize: '0.75rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>Synchronism</div>
-                <div style={{ fontSize: '0.9rem' }}>Entanglement = one extended phase pattern, not two correlated particles</div>
+                <div style={{ fontSize: '0.9rem' }}>Entanglement = one extended phase pattern, not two correlated particles <span style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>(Speculative. The framework&apos;s own local construction stays at the classical Bell bound, S&nbsp;&le;&nbsp;2; reaching the quantum value needs a primitive the ontology does not yet contain. See <Link href="/measurement-without-observers" style={{ color: 'var(--color-accent-blue)' }}>Measurement Without Observers</Link>.)</span></div>
               </div>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
@@ -704,7 +704,7 @@ export default function KeyClaims() {
             <h3 style={{ fontSize: '0.9rem', color: '#f59e0b', marginBottom: '0.25rem', marginTop: 0 }}>Honest caveat</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
               The quantitative predictions are MOND-equivalent &mdash; they match existing MOND results,
-              not new data. Standard MOND + M/L corrections explain all observed variance.
+              not new data. Standard MOND + M/L corrections explain the rotation-curve variance this framework was tested on. MOND&apos;s own open problems (galaxy-cluster residual mass, the Solar-System Cassini quadrupole) apply here unchanged. (Until 2026-11-07 this read &ldquo;explain all observed variance&rdquo;, an overclaim for MOND.)
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
               <strong style={{ color: '#f59e0b' }}>Sharpened 2026-09-07 (simulated-visitor graduate-physics persona):

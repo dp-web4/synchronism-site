@@ -100,6 +100,7 @@ export default function Home() {
           <strong>New here?</strong> The next sections get technical fast.{' '}
           <Link href={BEGINNER_STEPS[0].href} style={{ color: '#10b981' }}>Start with {BEGINNER_STEPS[0].title} ({BEGINNER_STEPS[0].time}) &rarr;</Link>{' '}
           or jump to <a href="#where-to-start" style={{ color: '#10b981' }}>Where to Start</a>.
+          If a word stops you, the glossary has <Link href="/glossary#start-with-ten" style={{ color: '#10b981' }}>ten words to learn first</Link>.
         </p>
       </section>
 

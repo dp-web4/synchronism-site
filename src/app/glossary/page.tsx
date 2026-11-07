@@ -63,7 +63,7 @@ export default function Glossary() {
         All eight label systems are mapped side by side in the table below.
       </p>
 
-      <div style={{ marginBottom: '1.5rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+      <div id="start-with-ten" style={{ marginBottom: '1.5rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)', scrollMarginTop: '5rem' }}>
         <strong>New here? Start with these ten:</strong>{' '}
         {['Coherence', 'Presence (\u03C1)', '\u03B3', 'tanh', 'MOND', 'Dark matter', 'Reparametrization', 'Refutation (executed)', '\u03c3 (statistical)', 'MRH'].map((t, i) => (
           <span key={t}>{i > 0 && ' \u00b7 '}<a href={`#${encodeURIComponent(t)}`} style={{ color: 'var(--color-accent-blue)' }}>{t}</a></span>

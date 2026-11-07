@@ -42,7 +42,7 @@ const steps = [
     turned until the curve matched. A fitted match is not evidence, and here the tuned knob simply lands on an older,
     already-known theory (MOND). Matching MOND tells you the idea can reproduce MOND, not that it adds anything. MOND wrote this
     shape down in 1983, so matching it after tuning adds nothing new.`,
-    highlight: 'In short: the γ formula failed; γ = 2 loses to MOND; the fitted γ ≈ 0.5 is MOND itself.',
+    highlight: 'In short: the formula for the dial failed. The dial setting the framework chose loses to MOND, an older rival theory. When we tuned the dial until it matched galaxies, the equation turned into MOND, so it added nothing new there.',
   },
   {
     title: 'Where γ ≈ 1',
@@ -67,7 +67,7 @@ const steps = [
     constant) can only be combined into an acceleration one way, cH₀, so any formula of the form cH₀ × (a number) will
     land near MOND's a₀ for some number. Here the number is 1/(2π), which nothing derives; with it the match is off by
     ~13%. Milgrom noticed a₀ ≈ cH₀/6 in 1983, so the closeness was known before this framework. See Honest Assessment.`,
-    highlight: 'a₀ ≈ cH₀/(2π): a coincidence, not a derivation',
+    highlight: 'A number measured in galaxies sits suspiciously close to a number from the expansion of the universe. Nobody knows why, and this framework does not explain it either.',
   },
   {
     title: 'Scale Down: Quantum Measurement',

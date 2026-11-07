@@ -31,3 +31,12 @@ as a framework-specific refutation. Whether that label is symmetric is a data qu
 - Desmond, Hees & Famaey 2024, MNRAS 530, 1781 (arXiv:2401.04796): their Υ priors and which galaxies they drop
 - **Solver caveat:** `qumond_q` does not converge at g_ext/a₀ ≳ 8 (the γ = 0.3 rows gave 8–22σ across a₀ digits and order).
   Report a convergence column (a₀ ×1.001 and order 192/768) for every row you quote.
+
+## Explorer 2026-11-07: done
+Finding `findings/cassini-upsilon-free-mond-family-escapes-at-1p8-sigma-compander-needs-upsilon-x2p4.md`.
+1. **Q1, yes.** MOND δ = 6 passes with Υ free (no-bulge, w = 0.1). In the population-Υ inversion it passes at Υ_d ≈ 0.54, at a
+   SPARC cost of 1.8σ (galaxy bootstrap). This matches Desmond+'s 1.9σ.
+2. **Q2.**
+   - The compander reaches about 10σ at w = 0.1 and 7σ at w = 0.2. The z is prior-width-driven.
+   - The robust statement: passing needs Υ_d ≈ 1.2–1.4 (×2.4–2.8), with 36–42 % of discs over-maximal, at 2.9σ on SPARC (γ = 3).
+   - "Inherited from MOND" holds for δ = 1 only.

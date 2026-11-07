@@ -1,0 +1,2 @@
+MOND d6@s1.089 vs d1 prof: point +128.3; boot median +129.0 16-84% [+60.7,+204.0] sd 72.7; point/sd 1.8; frac>0 0.980  (B=2000, 134 galaxies)
+tanh g3@s2.438 vs g0.489 prof: point +479.5; boot median +483.8 16-84% [+334.7,+662.3] sd 165.6; point/sd 2.9; frac>0 1.000  (B=2000, 134 galaxies)

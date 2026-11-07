@@ -1,0 +1,5 @@
+MOND d=6: SSR-min s=1.50; at s_pass=1.089: a0=1.442e-10, dSSR vs min +2.57 (N ln ratio +101.2); points gbar>gobs 0.025; galaxies with max gbar/gobs>1.2: 0.075
+MOND d=4: SSR-min s=1.50; at s_pass=1.352: a0=1.196e-10, dSSR vs min +0.23 (N ln ratio +9.4); points gbar>gobs 0.069; galaxies with max gbar/gobs>1.2: 0.119
+tanh g=3: SSR-min s=1.35; at s_pass=2.438: a0=1.847e-10, dSSR vs min +14.19 (N ln ratio +507.6); points gbar>gobs 0.255; galaxies with max gbar/gobs>1.2: 0.358
+tanh g=2: SSR-min s=1.35; at s_pass=2.799: a0=1.026e-10, dSSR vs min +24.69 (N ln ratio +805.9); points gbar>gobs 0.299; galaxies with max gbar/gobs>1.2: 0.418
+s=1: points gbar>gobs 0.017; galaxies max>1.2 0.060

@@ -1,0 +1,25 @@
+N points 2807, galaxies 166 (bulge 32), sigma 0.1, prior width w = 0.1 dex
+C1 pinned delta=1 all: a0 1.12752e-10 (ref 1.12751e-10) -> PASS
+C2 pinned delta=6 no-bulge: a0 1.5391e-10 (ref 1.5391e-10) z@2.32 +3.02 (ref +3.02) -> PASS
+all     MOND d 1.000 | pinned a0 1.1275e-10 dchi     +0.0 z +15.89 +18.84 +20.25 | free a0 9.0238e-11 dchi     +0.0 z +14.36 +16.76 +17.89 conv +16.77/+16.76 | Ud med 0.542 [0.394,0.811] chi_free 2873.9  t=7s
+all     MOND d 2.000 | pinned a0 1.5830e-10 dchi   +523.2 z +14.34 +15.37 +15.68 | free a0 1.1718e-10 dchi   +231.6 z  +9.82  +9.82  +9.70 conv +9.84/+9.82 | Ud med 0.576 [0.410,0.897] chi_free 3105.5  t=14s
+all     MOND d 4.000 | pinned a0 1.7182e-10 dchi  +1045.8 z +10.66  +9.17  +8.30 | free a0 1.2331e-10 dchi   +453.5 z  +3.67  +2.35  +1.81 conv +2.37/+2.35 | Ud med 0.602 [0.422,0.969] chi_free 3327.4  t=17s
+all     MOND d 6.000 | pinned a0 1.7430e-10 dchi  +1205.2 z  +8.40  +5.88  +4.74 | free a0 1.2404e-10 dchi   +524.0 z  +1.36  +0.41  +0.12 conv +0.42/+0.41 | Ud med 0.606 [0.427,0.990] chi_free 3397.9  t=22s
+all     tanh g 0.489 | pinned a0 5.3326e-11 dchi     +0.0 z +15.10 +17.95 +19.33 | free a0 4.3749e-11 dchi     +0.0 z +13.87 +16.34 +17.53 conv +16.35/+16.34 | Ud med 0.531 [0.391,0.799] chi_free 2883.1  t=33s
+all     tanh g 1.000 | pinned a0 1.3432e-10 dchi   +170.6 z +15.37 +17.53 +18.48 | free a0 1.0321e-10 dchi    +75.9 z +12.62 +13.98 +14.55 conv +13.99/+13.98 | Ud med 0.552 [0.407,0.835] chi_free 2959.0  t=44s
+all     tanh g 2.000 | pinned a0 2.9665e-10 dchi   +394.5 z +14.89 +16.26 +16.76 | free a0 2.2167e-10 dchi   +165.9 z +10.80 +11.14 +11.19 conv +11.16/+11.14 | Ud med 0.566 [0.409,0.884] chi_free 3049.0  t=52s
+all     tanh g 3.000 | pinned a0 4.5984e-10 dchi   +492.5 z +14.55 +15.54 +15.82 | free a0 3.4067e-10 dchi   +206.5 z  +9.89  +9.81  +9.65 conv +9.82/+9.81 | Ud med 0.573 [0.409,0.897] chi_free 3089.6  t=62s
+nobulge MOND d 1.000 | pinned a0 1.0571e-10 dchi     +0.0 z +15.47 +18.26 +19.59 | free a0 8.4262e-11 dchi     +0.0 z +13.85 +16.08 +17.13 conv +16.09/+16.08 | Ud med 0.545 [0.391,0.840] chi_free 2378.2  t=67s
+nobulge MOND d 2.000 | pinned a0 1.4214e-10 dchi   +175.7 z +12.74 +13.33 +13.45 | free a0 1.0855e-10 dchi   +133.1 z  +8.70  +8.53  +8.34 conv +8.54/+8.53 | Ud med 0.573 [0.417,0.894] chi_free 2511.3  t=73s
+nobulge MOND d 4.000 | pinned a0 1.5203e-10 dchi   +366.7 z  +7.74  +6.10  +5.29 | free a0 1.1383e-10 dchi   +244.7 z  +2.52  +1.41  +0.99 conv +1.42/+1.41 | Ud med 0.598 [0.421,0.911] chi_free 2622.9  t=77s
+nobulge MOND d 6.000 | pinned a0 1.5391e-10 dchi   +420.7 z  +5.08  +3.02  +2.23 | free a0 1.1434e-10 dchi   +277.4 z  +0.59  -0.05  -0.23 conv -0.04/-0.05 | Ud med 0.601 [0.420,0.921] chi_free 2655.6  t=82s
+nobulge tanh g 0.489 | pinned a0 5.0565e-11 dchi     +0.0 z +14.77 +17.53 +18.86 | free a0 4.0754e-11 dchi     +0.0 z +13.41 +15.75 +16.87 conv +15.75/+15.75 | Ud med 0.537 [0.384,0.836] chi_free 2374.3  t=90s
+nobulge tanh g 1.000 | pinned a0 1.2309e-10 dchi    +44.0 z +14.49 +16.36 +17.18 | free a0 9.5896e-11 dchi    +54.8 z +11.82 +12.99 +13.47 conv +13.00/+12.99 | Ud med 0.563 [0.405,0.859] chi_free 2429.1  t=97s
+nobulge tanh g 2.000 | pinned a0 2.6775e-10 dchi   +119.1 z +13.49 +14.44 +14.75 | free a0 2.0554e-10 dchi   +104.5 z  +9.74  +9.90  +9.87 conv +9.91/+9.90 | Ud med 0.574 [0.415,0.875] chi_free 2478.8  t=105s
+nobulge tanh g 3.000 | pinned a0 4.1309e-10 dchi   +153.4 z +12.91 +13.44 +13.52 | free a0 3.1565e-10 dchi   +125.7 z  +8.73  +8.48  +8.27 conv +8.50/+8.48 | Ud med 0.574 [0.415,0.890] chi_free 2500.0  t=109s
+
+P1 Upsilon-free all delta=1 a0 9.0238e-11 within 10% of 1.128e-10: FAILED
+P2 no-bulge free: passing deltas [6.0]; delta=6 z@2.32 -0.05 (< +3.02?) -> FAILED
+P3 compander no-bulge free min z@2.32 +8.48 > 10: FAILED
+P4 |dz| delta=6 3.06 > |dz| gamma=3 4.96: FAILED
+P5 no-bulge free cost delta=6 vs 1 +277.4 > +50: HELD

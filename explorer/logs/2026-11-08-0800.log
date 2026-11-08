@@ -1,0 +1,45 @@
+Starting Synchronism Explorer Session at Sun Nov  8 08:00:01 PST 2026
+The scan is still running, and I'll be notified when it finishes. I'll run the mixture profile and write up the finding once it's done.
+
+# Explorer session 2026-11-08: wide-binary mock injection
+
+**The wide-binary split between γ = 1.00 and γ = 1.56 isn't about deprojection.** It comes from a separation-error setting in Saad & Ting's public code, and the open question is now how many of the 36 systems are contaminated. I chose this topic because Gaia DR4 is 24 days away, the outcome was unknown, and the answer can be scored against known mock truth. It doesn't move the framework or the count. Everything is committed and pushed.
+
+## What I found
+- **Deprojection isn't the cause.** With an exact separation s, free semi-major axis under an Öpik prior and geometric deprojection are algebraically the same model. Saad & Ting's broken power-law prior moves γ up about 4%, not down.
+- **The cause is in the code.** The separation error σ_s/s has a median of 1.88 in their code, while the paper states about 0.1% and the physical value is 0.09%. This confirms what Chae, Park & Yoon alleged, by reading the code lines and by an independent calculation.
+- **That setting biases the answer low.** Run as coded, the pipeline returns about 0.65 × the true γ: 1.6 comes back as 1.06, with 68% coverage near 7%. Their injection test ran at 5% error, so it couldn't see this. Read through its own calibration, their 1.00 corresponds to a true γ of roughly 1.3–1.5 (±0.25), so it isn't evidence for Newton.
+- **Two further defects:**
+    - A free v_sys for each system adds a median of about 60 m/s of noise per proper-motion component.
+    - A coordinate-frame mismatch reproduces the shape of the drift Chae et al. called "unclear", but not its level.
+- **This doesn't establish a gravity boost.** Newton alone loses to a uniform boost by ΔlnL = 25, but contaminants can stand in for the boost:
+
+| Allowed contaminant fraction f | Median γ (range across kick caps) |
+|---|---|
+| ≤ 0.05 | 1.70–1.78 |
+| ≤ 0.10 | 1.46–1.68 |
+| ≤ 0.20 | 1.18–1.50 |
+| ≤ 0.50 | 1.00–1.24 |
+
+Only the kick model capped at 2000 m/s was registered; the other caps and this table are post-hoc. A uniform boost alone doesn't fit: adding contaminants improved the fit by the observed amount in 0 of 300 uniform-boost mocks. A pure Newton model with 30% contaminants (kicks up to 2000 m/s) doesn't fit either. Follow-up radial velocities on systems #3, #4 and #6 would help more than further modelling.
+
+## What didn't hold
+- **Chae's consolidated Γ is not reproduced.** I get 0.131–0.139 against their 0.102, even though my per-system values match their table (rms 0.045). This could be my error, and I'd need their per-system PDFs to settle it.
+- **Predictions:** of the 11 registered, 3 held outright (P2, P4, P5), 7 split and 1 failed narrowly. For example, 100 m/s of noise doesn't imitate a boost, which I had predicted it would.
+- **The lemma's numeric check is unmet.** The registered 1% test wasn't reached, because the brute-force run is limited by Monte Carlo noise and an argument slip of mine ran the wrong set. The algebra itself is exact.
+- **Reading was partial.** I read Saad & Ting and the reply in full, but only targeted sections of Chae et al. and Boufourou, though the topic asked for all of them in full.
+- **Not outside review.** This is one AI session's calculation and nobody outside has checked it.
+
+## Corrections
+My June finding called this a "prior over 3D geometry" crux, read from an abstract. It now carries a correction note saying this run refutes that.
+
+## Decisions for you
+- **For the maintainer before 2 December:** replacement wording for `/wide-binaries` and a new check for the DR4 reading key are in the finding. It should describe this as a defect in the public code, not as "fatal" or as intentional; I found no evidence of intent.
+- **For the project lead:** should the authors be told? I haven't contacted anyone. The useful content would be the frame mismatch, the v_sys term, the injection setting, and a request for Chae's PDFs.
+
+## So what?
+This advances discovery, but on someone else's question. The most useful step was opening a repository rather than doing new physics, so checking the code behind other cited papers may be a better use of time than extending this site's own physics.
+
+The finding is `explorer/findings/wide-binary-mock-injection-saad-ting-newton-is-a-separation-error-bug-deprojection-is-not-the-crux-contamination-is.md`, with predictions in `PREREG-wide-binary-estimators-mock-injection-20261108.md` and the session log in `explorer/logs/2026-11-08.md`. Scripts and outputs are in `explorer/scripts/` (`wb_*`).
+
+The waiter I started for the kick-cap scan was stopped at its time limit, with no effect on the results. Its grep was looking for the lemma label, which never appeared because of the argument slip. The scan itself had already finished and its output is committed, so there's nothing to restart.

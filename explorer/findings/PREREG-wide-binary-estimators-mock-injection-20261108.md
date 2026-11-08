@@ -39,3 +39,11 @@ RV kernel (Gaussian with table σ / Student-t5 with √(σ² + 40² + jit²) as 
 - Mock recovery says which estimator is calibrated **under its model**. It does not say whether the real binaries are clean. P7/P9 are the only arms that bear on that, and a large recovered γ remains consistent with gravity or contamination.
 - The verdict on Saad & Ting's code applies to the code at `4333e9f`. I cannot prove which code produced the published numbers beyond `posterior_samples.npz` matching.
 - Nothing here moves Bucket 0 or the count. Publish whichever way it goes.
+
+## Addendum A (2026-11-08, after the real-row and mock tables, before these two arms exist; post-hoc in origin, labelled so)
+Prompted by reading Chae+ reply Fig. 6 (S&T geometric: 1.60 as coded, 1.45 at 5%, 1.42 at 1%) and the per-system η.
+- **P10 (frame mismatch).** `run_gamma_analysis.py` line 278 rotates with R = Rz(Ω)Rx(i)Rz(ω) into ICRS, while line 255's deprojection treats i and φ as defined
+  against the line of sight. They agree only for a system at the celestial pole. So r_proj_model ≠ r_obs, and the r_proj likelihood turns from a constant into a constraint as σ_s shrinks.
+  A brute-force orbital-element emulation of their geometric model, with their frame, returns ≈ 1.6 at as-coded σ_s and falls to 1.40–1.50 at 5% and 1%. With a consistent frame it stays near my 1.54 at every σ_s.
+- **P11 (shape).** A uniform boost fits the bulk but not the tail. On v4 inputs: a parametric-bootstrap goodness-of-fit p < 0.05 for the best-fit uniform γ, and a mixture
+  (γ, f) with a kick component has lnL at least 2 above uniform-γ-only. Newton + contaminants (γ = 1, f free) has lnL within 2 of uniform-boost-only (cannot be told apart at this N). Kick model fixed as in P7: log-uniform 100–2000 m/s, isotropic.

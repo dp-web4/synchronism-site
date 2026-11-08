@@ -1,0 +1,48 @@
+Starting Synchronism Maintainer Session at Sun Nov  8 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+# Maintainer session 2026-11-08: summary
+
+The site fixes and research notes are pushed to both repos; no bucket moved (count 6, range 4–8, Bucket 0 = 0). The build and lint pass (the lint's new rules flag 23 hits on the pre-session code and 0 now), and `curl` shows the new text live on five pages. I couldn't check layout in a browser because Playwright isn't available.
+
+## WAKE: research gap
+The feedback did point at the research, in two ways:
+- **Literature statements fail where computations hold.** The graduate persona's recomputed algebra nearly all held, while the "same geometric factor" claim failed on all three papers cited for it.
+- **The correction loop only adds words.** If no scheduled test can raise the confirmed count, it's unclear what each new correction note is for.
+
+The proposal covering both is `Research/proposals/literature_statements_fail_where_computations_hold_and_test10_is_a_bound_20261108.md`.
+
+## Findings
+- **TEST-10's "B_max ≲ 14" was one galaxy's face-value number, not a bound.**
+  - I registered predictions before running the scan (3 of 5 held). The all-radii edge of 14 comes from UGC 06667's inner points, where SPARC lists no gas, which also explains the odd "gas × ∞" in the 10-29 table.
+  - Using only the outer half of each curve (chosen after seeing that result), caps up to about 7.5 are excluded at 3σ for one disc, or about 5.7 after correcting for 153 discs.
+  - The framework's own cap of 3.17 still fails badly. At the most permissive cap, 6.39, two discs clear 3σ and none clears the correction, so rotation curves alone don't settle that case.
+- **The a₀ credit was wrong, and so was part of the persona's fix.** McCulloch, Verlinde and Smolin give 0.99 cH, cH₀/6 and a_Λ/8.3, so they share no common factor. Milgrom 2008 credits the 2π form to his own 1983 paper, which strengthens the reparametrization verdict. I couldn't read the 1983 paper itself, and the site says so.
+- **TEST-25 now has one status sentence on three pages (explorer 11-07).** MOND's δ = 6 passes Cassini at a disc mass-to-light ratio of about 0.54, while the compander needs about 1.2–1.4. AQUAL hasn't been run and could reverse that difference, so I seeded a topic to test it.
+
+## Site changes
+- **Wording and numbers:**
+  - "γ = sharpness" replaced on 12 surfaces, with a width readout on the Coherence Explorer.
+  - Stale ">10σ" and "~1.5σ" corrected.
+  - The environment statistic now quotes an upper limit.
+  - Dovekie's 3.2σ added to /dark-energy.
+- **Pages and navigation:**
+  - /wide-binaries updated ahead of Gaia DR4 on 2 December. The re-read abstracts corrected two of its numbers.
+  - The Beginner Path now has a real ending.
+  - Broken glossary links fixed, and the link checker now catches that kind of error.
+- **Subtraction:** visible words on the long pages fell by about 1,200, the first net cut I've measured. Corrections moved into collapsed logs word for word, though total source text still grew.
+
+## Not done
+- The one-name-per-object pass needs a naming decision first.
+- The MRH badge family hasn't been renamed.
+- Tier 1's correction text isn't folded yet.
+- 17 page files still use "sharpness". Many of those uses are correct, but some still teach the old idea.
+- There were no new external items to read or draft a reply for.
+
+## Questions for dp
+1. Should the DR4 reading key be adopted? It has to be decided before 2 December to count as written ahead of the data.
+2. Should a random-sample error rate of verdict sentences replace further physics corrections as the default work? I'd lean yes: it can be run in-house, its outcome is unknown, and outsiders could cite it, though it can't move Bucket 0.
+3. Do you want a correction-retirement rule and word budgets per page? I folded corrections by hand today, which is reversible but isn't a policy.
+4. Should the Bucket 3 a₀ row be edited, and should the count rule take a trials term for TEST-10 at 6.39? I recorded both in the ledger as a block rather than editing the row or the rule, and the count stays at 6.
+
+**So what?** Partly discovery: the TEST-10 run halved what the program's one framework-specific data refutation actually bounds. Most of the rest is correction bookkeeping, which is the researcher persona's point. The seeded error-rate topic may matter most, because it would turn hundreds of individual corrections into one measured number.

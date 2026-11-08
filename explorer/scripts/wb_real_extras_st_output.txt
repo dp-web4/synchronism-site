@@ -1,0 +1,22 @@
+  val = np.where(ok, a ** (-1.5) * mu ** (-1.5) * (alpha + 1) / 2.0 * e ** (alpha - 1.0), 0.0)
+dataset st
+--- (a) Added RV jitter, Chae kernel (z used, Gaussian, exact s)
+ jitter   0 m/s: gamma 1.809 [1.653, 2.002] Gamma 0.129  P(gamma<1)=0.0000
+ jitter  50 m/s: gamma 1.746 [1.579, 1.948] Gamma 0.121  P(gamma<1)=0.0000
+ jitter 100 m/s: gamma 1.607 [1.432, 1.812] Gamma 0.103  P(gamma<1)=0.0000
+ jitter 150 m/s: gamma 1.475 [1.305, 1.679] Gamma 0.084  P(gamma<1)=0.0006
+ jitter 200 m/s: gamma 1.384 [1.217, 1.579] Gamma 0.071  P(gamma<1)=0.0052
+ jitter 250 m/s: gamma 1.327 [1.162, 1.517] Gamma 0.061  P(gamma<1)=0.0133
+--- (b) eccentricity prior by direct MC (Opik, exact s, no z). alpha=1 checks the reduction.
+ kernel gauss   alpha 0.0: gamma 1.749 [1.616, 1.916] Gamma 0.121
+ kernel gauss   alpha 1.0: gamma 1.842 [1.676, 2.047] Gamma 0.133
+ kernel gauss   alpha 1.2: gamma 1.855 [1.684, 2.064] Gamma 0.134
+ kernel gauss   alpha 1.3: gamma 1.861 [1.688, 2.071] Gamma 0.135
+ kernel robust  alpha 0.0: gamma 1.666 [1.518, 1.840] Gamma 0.111
+ kernel robust  alpha 1.0: gamma 1.781 [1.606, 1.988] Gamma 0.125
+ kernel robust  alpha 1.2: gamma 1.797 [1.617, 2.010] Gamma 0.127
+ kernel robust  alpha 1.3: gamma 1.805 [1.623, 2.022] Gamma 0.128
+ reduction, gauss, alpha=1 : gamma 1.840 [1.674, 2.045] Gamma 0.132
+ reduction, robust, alpha=1: gamma 1.783 [1.609, 1.988] Gamma 0.126
+
+[exited with code 0]

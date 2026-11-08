@@ -1,0 +1,85 @@
+=== exploratory (post-hoc): kick cap 500 m/s; truths: (gamma, f)
+h(xi): P(xi>1) = 0.0000 (0 expected up to bound), median xi 0.510
+real rows (v4):
+  uniform   lnL -764.98  gamma 1.905  f 0.00
+  newton+c  lnL -761.67  gamma 1.000  f 0.50
+  both      lnL -761.07  gamma 1.202  f 0.50
+  newton    lnL -789.87  gamma 1.000  f 0.00
+  max eta 1.669; n(eta>1.26) 3; n(eta>1) 6
+  per-system ln[p_c/p_a] at uniform best fit (largest): [(3, 2.8), (6, 1.7), (4, 0.9), (59, 0.3), (42, 0.0), (75, -0.0)]
+kick cap 500.0
+
+mocks: truth gamma=1.00 f=0.30 N 200
+  lnL(both)-lnL(uniform): median 0.92, 95pct 15.25; observed 3.91; P(>=obs) 0.255
+  lnL(uniform)-lnL(newton+c): median -0.49, 16-84 [-6.05, 0.66]; observed -3.31; P(<=obs) 0.265
+  lnL(uniform) itself: median -743.44, 2.5pct -762.55; observed -764.98; P(<=obs) 0.020
+  max eta: median 1.20, P(>=obs) 0.045 | n(eta>1.26): mean 0.47, P(>=obs) 0.010
+
+mocks: truth gamma=1.00 f=0.50 N 200
+  lnL(both)-lnL(uniform): median 2.01, 95pct 17.33; observed 3.91; P(>=obs) 0.365
+  lnL(uniform)-lnL(newton+c): median -1.63, 16-84 [-9.43, 0.65]; observed -3.31; P(<=obs) 0.365
+  lnL(uniform) itself: median -750.99, 2.5pct -771.14; observed -764.98; P(<=obs) 0.105
+  max eta: median 1.29, P(>=obs) 0.165 | n(eta>1.26): mean 0.81, P(>=obs) 0.035
+
+mocks: truth gamma=1.20 f=0.20 N 200
+  lnL(both)-lnL(uniform): median 0.00, 95pct 12.87; observed 3.91; P(>=obs) 0.185
+  lnL(uniform)-lnL(newton+c): median 0.31, 16-84 [-4.08, 2.03]; observed -3.31; P(<=obs) 0.200
+  lnL(uniform) itself: median -747.10, 2.5pct -767.67; observed -764.98; P(<=obs) 0.045
+  max eta: median 1.21, P(>=obs) 0.075 | n(eta>1.26): mean 0.49, P(>=obs) 0.010
+
+mocks: truth gamma=1.40 f=0.10 N 200
+  lnL(both)-lnL(uniform): median 0.00, 95pct 6.98; observed 3.91; P(>=obs) 0.090
+  lnL(uniform)-lnL(newton+c): median 1.38, 16-84 [-0.72, 3.75]; observed -3.31; P(<=obs) 0.070
+  lnL(uniform) itself: median -751.75, 2.5pct -765.71; observed -764.98; P(<=obs) 0.035
+  max eta: median 1.18, P(>=obs) 0.035 | n(eta>1.26): mean 0.41, P(>=obs) 0.000
+
+mocks: truth gamma=1.60 f=0.05 N 200
+  lnL(both)-lnL(uniform): median 0.00, 95pct 1.93; observed 3.91; P(>=obs) 0.020
+  lnL(uniform)-lnL(newton+c): median 3.45, 16-84 [0.97, 6.40]; observed -3.31; P(<=obs) 0.010
+  lnL(uniform) itself: median -756.28, 2.5pct -769.97; observed -764.98; P(<=obs) 0.095
+  max eta: median 1.19, P(>=obs) 0.020 | n(eta>1.26): mean 0.42, P(>=obs) 0.005
+
+mocks: truth gamma=1.90 f=0.00 N 200
+  lnL(both)-lnL(uniform): median 0.00, 95pct 0.37; observed 3.91; P(>=obs) 0.000
+  lnL(uniform)-lnL(newton+c): median 6.90, 16-84 [3.62, 11.18]; observed -3.31; P(<=obs) 0.000
+  lnL(uniform) itself: median -763.61, 2.5pct -774.84; observed -764.98; P(<=obs) 0.420
+  max eta: median 1.27, P(>=obs) 0.055 | n(eta>1.26): mean 0.73, P(>=obs) 0.030
+=== exploratory (post-hoc): kick cap 1000 m/s
+h(xi): P(xi>1) = 0.0000 (0 expected up to bound), median xi 0.510
+real rows (v4):
+  uniform   lnL -764.98  gamma 1.905  f 0.00
+  newton+c  lnL -760.41  gamma 1.000  f 0.44
+  both      lnL -760.41  gamma 1.000  f 0.44
+  newton    lnL -789.87  gamma 1.000  f 0.00
+  max eta 1.669; n(eta>1.26) 3; n(eta>1) 6
+  per-system ln[p_c/p_a] at uniform best fit (largest): [(3, 3.3), (6, 1.5), (4, 1.4), (59, 0.4), (75, -0.1), (42, -0.1)]
+kick cap 1000.0
+
+mocks: truth gamma=1.00 f=0.15 N 200
+  lnL(both)-lnL(uniform): median 5.36, 95pct 44.57; observed 4.56; P(>=obs) 0.525
+  lnL(uniform)-lnL(newton+c): median -4.98, 16-84 [-26.57, 0.43]; observed -4.56; P(<=obs) 0.510
+  lnL(uniform) itself: median -750.58, 2.5pct -796.41; observed -764.98; P(<=obs) 0.250
+  max eta: median 1.41, P(>=obs) 0.305 | n(eta>1.26): mean 0.90, P(>=obs) 0.040
+
+mocks: truth gamma=1.20 f=0.10 N 200
+  lnL(both)-lnL(uniform): median 0.29, 95pct 28.19; observed 4.56; P(>=obs) 0.395
+  lnL(uniform)-lnL(newton+c): median 0.00, 16-84 [-16.04, 2.14]; observed -4.56; P(<=obs) 0.375
+  lnL(uniform) itself: median -749.79, 2.5pct -791.91; observed -764.98; P(<=obs) 0.235
+  max eta: median 1.33, P(>=obs) 0.255 | n(eta>1.26): mean 0.82, P(>=obs) 0.055
+
+mocks: truth gamma=1.40 f=0.05 N 200
+  lnL(both)-lnL(uniform): median 0.00, 95pct 23.63; observed 4.56; P(>=obs) 0.175
+  lnL(uniform)-lnL(newton+c): median 2.23, 16-84 [-4.72, 4.34]; observed -4.56; P(<=obs) 0.165
+  lnL(uniform) itself: median -751.14, 2.5pct -794.66; observed -764.98; P(<=obs) 0.140
+  max eta: median 1.21, P(>=obs) 0.135 | n(eta>1.26): mean 0.52, P(>=obs) 0.010
+=== lemma replicate seeds
+dataset st N samples per system 4000000
+r_proj_model/r_obs in S&T's frame, geometric model, prior draws: median of the 5/50/95 pct over systems: [0.343 1.    2.924]
+ geom icrs coded          gamma 1.444 [1.271, 1.652]   (116 s)
+ geom icrs 5%             gamma 1.308 [1.140, 1.489]   (117 s)
+ geom icrs 1%             gamma 1.284 [1.101, 1.458]   (111 s)
+ geom consistent coded    gamma 1.517 [1.317, 1.735]   (113 s)
+ geom consistent 5%       gamma 1.517 [1.317, 1.735]   (109 s)
+ geom consistent exact    gamma 1.517 [1.317, 1.735]   (109 s)
+ base icrs coded          gamma 0.953 [0.740, 1.191]   (108 s)
+ base icrs 5%             gamma 1.555 [1.349, 1.777]   (112 s)

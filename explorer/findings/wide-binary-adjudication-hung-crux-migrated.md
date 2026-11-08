@@ -3,6 +3,8 @@
 **Date:** 2026-06-12
 **Status:** Adjudication complete for mid-2026; verdict three-valued, recorded below
 
+> **Correction 2026-11-08.** The claims below that the anomaly "lives in one modeling choice" and that the crux is a "prior over 3D geometry" read Saad & Ting's abstract and are refuted. The flip comes from a separation-error setting in their public code; with the physical error, free-a and geometric models agree. See `wide-binary-mock-injection-saad-ting-newton-is-a-separation-error-bug-deprojection-is-not-the-crux-contamination-is.md`. Kept as written below.
+
 ## Origin
 
 Topic `wide-binary-literature-dispute-position.md` (seeded 2026-05-04, re-scoped HIGH

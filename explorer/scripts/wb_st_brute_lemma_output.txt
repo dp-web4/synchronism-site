@@ -1,0 +1,7 @@
+dataset st N samples per system 4000000
+r_proj_model/r_obs in S&T's frame, geometric model, prior draws: median of the 5/50/95 pct over systems: [0.343 1.    2.924]
+ geom consistent exact    gamma 1.508 [1.305, 1.733]   (117 s)
+ free a Opik, range, 1%   gamma 1.640 [1.466, 1.764]   (115 s)
+ free a Opik, wide, 1%    gamma 1.671 [1.419, 1.936]   (122 s)
+ free a Opik, range, 5%   gamma 1.562 [1.348, 1.747]   (119 s)
+ free a Opik, wide, 5%    gamma 1.534 [1.336, 1.833]   (116 s)

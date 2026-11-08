@@ -1,0 +1,20 @@
+h(xi): P(xi>1) = 0.0000 (0 expected up to bound), median xi 0.510
+real rows (v4):
+  uniform   lnL -764.98  gamma 1.905  f 0.00
+  newton+c  lnL -763.08  gamma 1.000  f 0.30
+  both      lnL -762.87  gamma 1.096  f 0.26
+  newton    lnL -789.87  gamma 1.000  f 0.00
+  max eta 1.669; n(eta>1.26) 3; n(eta>1) 6
+  per-system ln[p_c/p_a] at uniform best fit (largest): [(3, 3.1), (4, 1.3), (6, 1.2), (59, 0.3), (54, -0.3), (75, -0.3)]
+
+mocks: uniform-boost truth (gamma=1.91) N 300
+  lnL(both)-lnL(uniform): median 0.00, 95pct 0.00; observed 2.11; P(>=obs) 0.000
+  lnL(uniform)-lnL(newton+c): median 10.08, 16-84 [6.83, 13.20]; observed -1.90; P(<=obs) 0.000
+  lnL(uniform) itself: median -764.35, 2.5pct -774.51; observed -764.98; P(<=obs) 0.457
+  max eta: median 1.27, P(>=obs) 0.040 | n(eta>1.26): mean 0.76, P(>=obs) 0.027
+
+mocks: Newton+contaminants truth (f=0.30) N 300
+  lnL(both)-lnL(uniform): median 46.65, 95pct 710.56; observed 2.11; P(>=obs) 0.950
+  lnL(uniform)-lnL(newton+c): median -45.92, 16-84 [-208.71, -20.94]; observed -1.90; P(<=obs) 0.947
+  lnL(uniform) itself: median -814.15, 2.5pct -1498.14; observed -764.98; P(<=obs) 0.900
+  max eta: median 2.94, P(>=obs) 0.897 | n(eta>1.26): mean 3.71, P(>=obs) 0.747

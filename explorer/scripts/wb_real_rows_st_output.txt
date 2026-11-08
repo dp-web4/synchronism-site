@@ -1,0 +1,70 @@
+dataset st N systems 36
+
+--- data checks: my eta vs the CSV's v_obs/v_esc column
+ median ratio mine/csv 0.923, 16-84 [0.848, 0.988]; max |ln| 0.465
+ n(central eta>1): mine 6, csv 6; csv eta-2sig>1: 3, eta-3sig>1: 1
+ id eta_mine eta_csv err M s_kau v_ms
+   6 1.264 1.26 0.10 1.21 19.80 417 APOGEE
+  33 1.184 1.20 0.16 2.10 30.30 415 LCO
+   4 1.170 1.17 0.08 1.12 3.35 900 APOGEE
+   3 1.155 1.16 0.09 2.22 19.30 522 APOGEE
+  59 1.206 1.12 0.03 2.00 5.78 945 HARPS
+  42 1.071 1.09 0.14 1.52 7.87 627 LCO
+  36 0.938 0.96 0.11 1.88 6.69 662 LCO
+  32 0.925 0.94 0.07 2.01 13.10 483 LCO
+  53 0.634 0.93 0.06 2.20 4.83 570 HARPS
+  75 0.911 0.92 0.03 2.01 4.70 794 Scarpa
+
+--- configurations on real rows (median [16, 84] of gamma)
+ chae           gamma 1.809 [1.653, 2.002]  Gamma 0.129
+ opik_noz       gamma 1.840 [1.674, 2.045]  Gamma 0.132
+ bpl_noz        gamma 1.928 [1.751, 2.145]  Gamma 0.143
+ st_geom        gamma 1.544 [1.353, 1.753]  Gamma 0.094
+ st_base_1pc    gamma 1.631 [1.433, 1.854]  Gamma 0.106
+ st_base_5pc    gamma 1.592 [1.396, 1.810]  Gamma 0.101
+ st_base        gamma 0.925 [0.748, 1.144]  Gamma -0.017
+ st_base_true   gamma 1.623 [1.424, 1.844]  Gamma 0.105
+
+--- one-knob walks from st_geom to st_base (kernel coded unless stated)
+ geom                         1.544 [1.353, 1.753]
+ + a-range only (Opik)        1.544 [1.353, 1.753]
+ + BPL + range, exact s       1.610 [1.413, 1.827]
+ + BPL + range, s true sigma  1.623 [1.424, 1.844]
+ + BPL + range, sigma_s=0.01   1.631 [1.433, 1.854]
+ + BPL + range, sigma_s=0.05   1.592 [1.396, 1.810]
+ + BPL + range, sigma_s=0.1    1.535 [1.342, 1.754]
+ + BPL + range, sigma_s=0.2    1.326 [1.144, 1.541]
+ + BPL + range, sigma_s=0.5    0.901 [0.744, 1.091]
+ + BPL + range, sigma_s=1.0    0.844 [0.683, 1.041]
+ + BPL + range, sigma_s=coded  0.925 [0.748, 1.144]
+ Opik + no range, sigma_s=coded 0.418 [0.307, 0.575]
+ Opik + range, sigma_s=coded    1.037 [0.837, 1.290]
+
+--- P8: kernel swap at exact s, Opik, no z
+ gaussian table sigma          1.840 [1.674, 2.045]
+ coded kernel (t5, 40, vsys)   1.544 [1.353, 1.753]
+ coded, no vsys (raw diffs)    1.783 [1.609, 1.988]
+ coded, no vsys, Gaussian RV   1.825 [1.657, 2.032]
+ coded with vsys, Gaussian RV  1.630 [1.464, 1.827]
+ v_sys-induced noise (m/s) E,N,R: median [60. 63. 15.]  max [251. 251. 103.]  median table sE 9.0
+
+--- baseline without the free v_sys (t5 kept)
+ sigma_s=exact  BPL+range no vsys  1.866 [1.681, 2.083]
+ sigma_s=0.05   BPL+range no vsys  1.847 [1.663, 2.067]
+ sigma_s=coded  BPL+range no vsys  1.074 [0.880, 1.317]
+ sigma_s=coded, no vsys, Gaussian RV  1.112 [0.914, 1.360]
+ pm_jit marginal sensitivity (st_base): 0.00:0.926 [0.749, 1.146] 0.02:0.925 [0.748, 1.144] 0.05:0.917 [0.741, 1.137] 0.10:0.896 [0.724, 1.113] 
+ pm_jit (st_geom): 0.00:1.545 [1.355, 1.754] 0.02:1.544 [1.353, 1.753] 0.05:1.537 [1.346, 1.746] 0.10:1.519 [1.327, 1.729] 
+
+--- leave-out: chae configuration
+ drop (3,): gamma 1.756 [1.603, 1.947] Gamma 0.122
+ drop (59,): gamma 1.674 [1.511, 1.871] Gamma 0.112
+ drop (3, 59): gamma 1.589 [1.427, 1.782] Gamma 0.101
+
+--- per-system contribution to ln L(gamma=1.56) - ln L(gamma=1) (top and bottom), chae and st_base
+ chae total 66.52; top: [(59, 49.34), (6, 6.01), (4, 5.17), (3, 4.69), (33, 2.3)] bottom: [(62, -0.59), (1, -0.59), (58, -0.61)]
+ st_geom total 5.09; top: [(59, 3.91), (4, 2.01), (3, 1.65), (75, 1.2), (54, 0.94)] bottom: [(34, -0.52), (62, -0.54), (1, -0.54)]
+ st_base total -2.82; top: [(59, 0.41), (4, 0.38), (42, 0.35), (3, 0.34), (75, 0.28)] bottom: [(62, -0.45), (1, -0.46), (58, -0.51)]
+
+ per-system Gamma: mine(chae) vs csv Gamma (peak)
+ corr 0.970  median diff -0.057

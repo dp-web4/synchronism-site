@@ -1,0 +1,82 @@
+catalogs per arm 300  elapsed 332 s
+arm                    estimator          med g   mean g    std g   cov68 P(g>=real-ish)
+opik g=1.0             chae               0.975    0.971    0.099   0.720   frac(med>=1.6)=0.000  frac(16pct>1)=0.073  semean=0.006
+opik g=1.0             opik_noz           0.980    0.973    0.100   0.750   frac(med>=1.6)=0.000  frac(16pct>1)=0.070  semean=0.006
+opik g=1.0             bpl_noz            1.031    1.025    0.106   0.663   frac(med>=1.6)=0.000  frac(16pct>1)=0.230  semean=0.006
+opik g=1.0             st_geom            0.886    0.882    0.108   0.527   frac(med>=1.6)=0.000  frac(16pct>1)=0.010  semean=0.006
+opik g=1.0             robust             0.984    0.974    0.109   0.670   frac(med>=1.6)=0.000  frac(16pct>1)=0.113  semean=0.006
+opik g=1.0             st_base_5pc        0.923    0.921    0.113   0.663   frac(med>=1.6)=0.000  frac(16pct>1)=0.020  semean=0.007
+opik g=1.0             st_base            0.629    0.639    0.103   0.063   frac(med>=1.6)=0.000  frac(16pct>1)=0.000  semean=0.006
+opik g=1.0             st_base_novsys     0.744    0.756    0.118   0.283   frac(med>=1.6)=0.000  frac(16pct>1)=0.000  semean=0.007
+   count eta>1: mean 0.52  P(>=6) 0.0000 | eta-2sig>1: mean 0.00  P(>=4) 0.0000
+opik g=1.2             chae               1.178    1.176    0.125   0.700   frac(med>=1.6)=0.000  frac(16pct>1)=0.703  semean=0.007
+opik g=1.2             opik_noz           1.176    1.176    0.128   0.703   frac(med>=1.6)=0.000  frac(16pct>1)=0.683  semean=0.007
+opik g=1.2             bpl_noz            1.240    1.239    0.135   0.630   frac(med>=1.6)=0.003  frac(16pct>1)=0.840  semean=0.008
+opik g=1.2             st_geom            1.081    1.076    0.137   0.553   frac(med>=1.6)=0.000  frac(16pct>1)=0.360  semean=0.008
+opik g=1.2             robust             1.176    1.173    0.134   0.663   frac(med>=1.6)=0.000  frac(16pct>1)=0.673  semean=0.008
+opik g=1.2             st_base_5pc        1.131    1.124    0.143   0.687   frac(med>=1.6)=0.000  frac(16pct>1)=0.503  semean=0.008
+opik g=1.2             st_base            0.789    0.788    0.126   0.063   frac(med>=1.6)=0.000  frac(16pct>1)=0.000  semean=0.007
+opik g=1.2             st_base_novsys     0.909    0.911    0.135   0.317   frac(med>=1.6)=0.000  frac(16pct>1)=0.023  semean=0.008
+   count eta>1: mean 1.18  P(>=6) 0.0033 | eta-2sig>1: mean 0.00  P(>=4) 0.0000
+opik g=1.4             chae               1.373    1.373    0.149   0.717   frac(med>=1.6)=0.040  frac(16pct>1)=0.947  semean=0.009
+opik g=1.4             opik_noz           1.363    1.369    0.156   0.680   frac(med>=1.6)=0.053  frac(16pct>1)=0.933  semean=0.009
+opik g=1.4             bpl_noz            1.438    1.443    0.165   0.617   frac(med>=1.6)=0.170  frac(16pct>1)=0.957  semean=0.010
+opik g=1.4             st_geom            1.265    1.264    0.164   0.583   frac(med>=1.6)=0.010  frac(16pct>1)=0.810  semean=0.009
+opik g=1.4             robust             1.369    1.365    0.161   0.667   frac(med>=1.6)=0.070  frac(16pct>1)=0.943  semean=0.009
+opik g=1.4             st_base_5pc        1.320    1.320    0.172   0.663   frac(med>=1.6)=0.050  frac(16pct>1)=0.867  semean=0.010
+opik g=1.4             st_base            0.935    0.940    0.162   0.120   frac(med>=1.6)=0.000  frac(16pct>1)=0.047  semean=0.009
+opik g=1.4             st_base_novsys     1.060    1.068    0.177   0.307   frac(med>=1.6)=0.000  frac(16pct>1)=0.203  semean=0.010
+   count eta>1: mean 2.14  P(>=6) 0.0200 | eta-2sig>1: mean 0.02  P(>=4) 0.0000
+opik g=1.6             chae               1.547    1.544    0.165   0.653   frac(med>=1.6)=0.363  frac(16pct>1)=0.990  semean=0.010
+opik g=1.6             opik_noz           1.548    1.542    0.166   0.670   frac(med>=1.6)=0.343  frac(16pct>1)=0.990  semean=0.010
+opik g=1.6             bpl_noz            1.629    1.625    0.175   0.680   frac(med>=1.6)=0.557  frac(16pct>1)=1.000  semean=0.010
+opik g=1.6             st_geom            1.423    1.420    0.174   0.517   frac(med>=1.6)=0.153  frac(16pct>1)=0.950  semean=0.010
+opik g=1.6             robust             1.531    1.533    0.175   0.647   frac(med>=1.6)=0.347  frac(16pct>1)=0.987  semean=0.010
+opik g=1.6             st_base_5pc        1.486    1.483    0.181   0.617   frac(med>=1.6)=0.263  frac(16pct>1)=0.967  semean=0.010
+opik g=1.6             st_base            1.059    1.056    0.160   0.070   frac(med>=1.6)=0.000  frac(16pct>1)=0.150  semean=0.009
+opik g=1.6             st_base_novsys     1.183    1.196    0.174   0.240   frac(med>=1.6)=0.003  frac(16pct>1)=0.433  semean=0.010
+   count eta>1: mean 3.49  P(>=6) 0.1367 | eta-2sig>1: mean 0.04  P(>=4) 0.0000
+BPL-truth g=1.0        opik_noz           0.923    0.922    0.103   0.607   frac(med>=1.6)=0.000  frac(16pct>1)=0.030  semean=0.006
+BPL-truth g=1.0        bpl_noz            0.973    0.972    0.110   0.677   frac(med>=1.6)=0.000  frac(16pct>1)=0.100  semean=0.006
+BPL-truth g=1.0        st_base            0.604    0.609    0.107   0.050   frac(med>=1.6)=0.000  frac(16pct>1)=0.000  semean=0.006
+   count eta>1: mean 0.41  P(>=6) 0.0000 | eta-2sig>1: mean 0.00  P(>=4) 0.0000
+e-alpha1.3 g=1.0       opik_noz           0.977    0.970    0.113   0.643   frac(med>=1.6)=0.000  frac(16pct>1)=0.103  semean=0.007
+e-alpha1.3 g=1.0       chae               0.970    0.968    0.112   0.630   frac(med>=1.6)=0.000  frac(16pct>1)=0.110  semean=0.006
+   count eta>1: mean 0.58  P(>=6) 0.0000 | eta-2sig>1: mean 0.00  P(>=4) 0.0000
+BPL-truth g=1.6        opik_noz           1.497    1.491    0.156   0.627   frac(med>=1.6)=0.253  frac(16pct>1)=0.997  semean=0.009
+BPL-truth g=1.6        bpl_noz            1.576    1.570    0.165   0.683   frac(med>=1.6)=0.460  frac(16pct>1)=0.997  semean=0.010
+BPL-truth g=1.6        st_base            1.032    1.037    0.161   0.053   frac(med>=1.6)=0.000  frac(16pct>1)=0.123  semean=0.009
+   count eta>1: mean 2.88  P(>=6) 0.0567 | eta-2sig>1: mean 0.04  P(>=4) 0.0000
+e-alpha1.3 g=1.6       opik_noz           1.543    1.537    0.172   0.697   frac(med>=1.6)=0.390  frac(16pct>1)=0.987  semean=0.010
+e-alpha1.3 g=1.6       chae               1.546    1.537    0.166   0.693   frac(med>=1.6)=0.357  frac(16pct>1)=0.987  semean=0.010
+   count eta>1: mean 3.51  P(>=6) 0.1367 | eta-2sig>1: mean 0.06  P(>=4) 0.0000
+Newton rv_extra=50     chae               0.988    0.989    0.110   0.653   frac(med>=1.6)=0.000  frac(16pct>1)=0.143  semean=0.006
+Newton rv_extra=50     opik_noz           0.987    0.990    0.113   0.617   frac(med>=1.6)=0.000  frac(16pct>1)=0.160  semean=0.007
+Newton rv_extra=50     robust             0.987    0.987    0.115   0.607   frac(med>=1.6)=0.000  frac(16pct>1)=0.173  semean=0.007
+Newton rv_extra=50     st_geom            0.891    0.894    0.119   0.530   frac(med>=1.6)=0.000  frac(16pct>1)=0.020  semean=0.007
+   count eta>1: mean 0.63  P(>=6) 0.0000 | eta-2sig>1: mean 0.00  P(>=4) 0.0000
+Newton rv_extra=100    chae               1.038    1.038    0.117   0.633   frac(med>=1.6)=0.000  frac(16pct>1)=0.260  semean=0.007
+Newton rv_extra=100    opik_noz           1.037    1.038    0.118   0.660   frac(med>=1.6)=0.000  frac(16pct>1)=0.247  semean=0.007
+Newton rv_extra=100    robust             1.012    1.010    0.114   0.647   frac(med>=1.6)=0.000  frac(16pct>1)=0.210  semean=0.007
+Newton rv_extra=100    st_geom            0.918    0.925    0.118   0.640   frac(med>=1.6)=0.000  frac(16pct>1)=0.027  semean=0.007
+   count eta>1: mean 1.02  P(>=6) 0.0000 | eta-2sig>1: mean 0.01  P(>=4) 0.0000
+Newton rv_extra=200    chae               1.256    1.282    0.219   0.210   frac(med>=1.6)=0.083  frac(16pct>1)=0.780  semean=0.013
+Newton rv_extra=200    opik_noz           1.257    1.274    0.210   0.230   frac(med>=1.6)=0.063  frac(16pct>1)=0.753  semean=0.012
+Newton rv_extra=200    robust             1.146    1.145    0.159   0.410   frac(med>=1.6)=0.007  frac(16pct>1)=0.560  semean=0.009
+Newton rv_extra=200    st_geom            1.066    1.069    0.170   0.573   frac(med>=1.6)=0.003  frac(16pct>1)=0.333  semean=0.010
+   count eta>1: mean 2.82  P(>=6) 0.0600 | eta-2sig>1: mean 0.07  P(>=4) 0.0000
+Newton comp=0.03       chae               1.074    1.851    1.775   0.463   frac(med>=1.6)=0.263  frac(16pct>1)=0.457  semean=0.102
+Newton comp=0.03       opik_noz           1.075    1.852    1.788   0.463   frac(med>=1.6)=0.267  frac(16pct>1)=0.450  semean=0.103
+Newton comp=0.03       robust             1.071    1.664    1.495   0.450   frac(med>=1.6)=0.223  frac(16pct>1)=0.437  semean=0.086
+Newton comp=0.03       st_geom            0.964    1.458    1.389   0.450   frac(med>=1.6)=0.187  frac(16pct>1)=0.283  semean=0.080
+   count eta>1: mean 1.05  P(>=6) 0.0000 | eta-2sig>1: mean 0.19  P(>=4) 0.0000
+Newton comp=0.10       chae               2.118    3.185    2.603   0.187   frac(med>=1.6)=0.580  frac(16pct>1)=0.767  semean=0.150
+Newton comp=0.10       opik_noz           2.122    3.185    2.600   0.200   frac(med>=1.6)=0.583  frac(16pct>1)=0.750  semean=0.150
+Newton comp=0.10       robust             1.886    2.782    2.252   0.220   frac(med>=1.6)=0.540  frac(16pct>1)=0.710  semean=0.130
+Newton comp=0.10       st_geom            1.375    2.285    1.992   0.260   frac(med>=1.6)=0.467  frac(16pct>1)=0.590  semean=0.115
+   count eta>1: mean 1.99  P(>=6) 0.0100 | eta-2sig>1: mean 0.53  P(>=4) 0.0000
+Newton comp=0.19       chae               4.481    5.018    2.794   0.040   frac(med>=1.6)=0.900  frac(16pct>1)=0.953  semean=0.161
+Newton comp=0.19       opik_noz           4.535    5.051    2.799   0.037   frac(med>=1.6)=0.900  frac(16pct>1)=0.953  semean=0.162
+Newton comp=0.19       robust             3.901    4.499    2.696   0.053   frac(med>=1.6)=0.850  frac(16pct>1)=0.933  semean=0.156
+Newton comp=0.19       st_geom            3.130    3.783    2.467   0.080   frac(med>=1.6)=0.773  frac(16pct>1)=0.890  semean=0.142
+   count eta>1: mean 3.68  P(>=6) 0.1667 | eta-2sig>1: mean 1.05  P(>=4) 0.0167

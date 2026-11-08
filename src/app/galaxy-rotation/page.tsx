@@ -407,8 +407,7 @@ export default function GalaxyRotation() {
             fontSize: '0.85rem',
             color: 'var(--color-text-secondary)',
           }}>
-            <strong style={{ color: 'var(--color-accent-violet)' }}>Stated exactly, not asymptotically
-           .</strong> The paragraph above argues
+            <strong style={{ color: 'var(--color-accent-violet)' }}>Stated exactly, not asymptotically.</strong> The paragraph above argues
             MOND-equivalence through a <em>tail</em> exponent. It holds <em>identically</em>, and the exact
             version is both shorter and more damning. Because e<sup>&#x03B3;ln(1+x)</sup> = (1+x)<sup>&#x03B3;</sup>,
             <span style={{ display: 'block', textAlign: 'center', fontFamily: 'monospace', margin: '0.5rem 0', color: 'var(--color-text-primary)' }}>

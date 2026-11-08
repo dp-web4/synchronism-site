@@ -939,8 +939,7 @@ export default function ForResearchers() {
             Milky Way dwarf spheroidals by &ge; 3&sigma; and its elliptical calibration is in 2&ndash;4&sigma; tension on the equilibrium dwarfs,
             explorer 2026-10-21; see <Link href="/test-catalog#what-excluded-covers" style={{ color: 'var(--color-accent-blue)' }}>what &ldquo;excluded&rdquo; covers</Link>): its published ρ<sub>c</sub> = 10⁻²⁴·²⁵ g/cm³ = 0.0083
             M<sub>☉</sub>/pc³ lies below the excluded window, and every value in that set&apos;s 1σ range
-            (0.0052–0.0158 M<sub>☉</sub>/pc³) scores within MOND+EFE&apos;s mismatch on the same statistic. <em>Provenance
-           :</em> 0.0083 (with ε₀ = 0.089, Q = 0.47) is RG&apos;s <strong>elliptical-galaxy
+            (0.0052–0.0158 M<sub>☉</sub>/pc³) scores within MOND+EFE&apos;s mismatch on the same statistic. <em>Provenance:</em> 0.0083 (with ε₀ = 0.089, Q = 0.47) is RG&apos;s <strong>elliptical-galaxy
             (E0) calibration</strong>, Cesare et al. 2022 (arXiv:2102.12499), not the disc one. RG&apos;s DiskMass disc calibrations
             are ρ<sub>c</sub> = 7.4×10⁻⁴ (mean; ε₀ = 0.56, Q = 0.92) and 4.3×10⁻³ M<sub>☉</sub>/pc³ (joint fit; ε₀ = 0.661, Q = 1.79).
             Both also sit below the excluded window, so no verdict changes.

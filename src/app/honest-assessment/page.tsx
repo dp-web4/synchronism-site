@@ -466,8 +466,7 @@ export default function HonestAssessment() {
           galaxies carry less than ~2&ndash;3× their stars plus cold gas out to ~0.3&ndash;1 Mpc, and the face-value exclusion
           (observed boost ≈ 300 on the lowest published bin, g<sub>bar</sub> ≈ 1.4×10⁻¹⁵ m/s²; MOND&apos;s √(a₀/g) there is ≈ 295 at a₀ = 1.2×10⁻¹⁰) sits in bins the data paper flags for satellite contamination. The kill that carries it predates SPARC by two decades: the classical dwarf spheroidals (Draco, Ursa Minor, Sextans) have dynamical
           M/L<sub>V</sub> ≈ 100–300 (Mateo 1998; Walker et al. 2009), boosts of 30–100 under any stellar M/L, above every cap; MOND has its own
-          dSph problems (external field, tides), so cite this against the ceiling, not as a discriminator against MOND (added 2026-09-29). Stated as a class
-         : <strong>no boost ceiling tied to a cosmic
+          dSph problems (external field, tides), so cite this against the ceiling, not as a discriminator against MOND (added 2026-09-29). Stated as a class: <strong>no boost ceiling tied to a cosmic
           abundance ratio survives SPARC&apos;s most dark-dominated dwarfs</strong>, because those dwarfs are baryon-poor
           relative to the cosmic mean and the largest such ratio, &Omega;<sub>m</sub>/&Omega;<sub>b</sub> &asymp; 6.4, is half the
           13.7 they need. The class statement belongs to TEST-10 only; the BTFR-slope limb (TEST-09) does <em>not</em>
@@ -1902,7 +1901,7 @@ export default function HonestAssessment() {
               H₀ = 2πa₀/c ≈ <strong>77.6 ± 15.5 km/s/Mpc</strong> once a₀&apos;s ±0.24 systematic is carried
               (0.7σ from Planck&apos;s 67.4, 0.3σ from SH0ES&apos; 73.0 &mdash; consistent with both). So there{' '}
               <em>is</em> an H₀ consequence; it is currently <em>non-discriminating</em> rather than failing, and it
-              was being booked as no statement at all. <em></em> What remains true is the substantive point above:
+              was being booked as no statement at all. What remains true is the substantive point above:
               no <em>mechanism</em> for the tension has been worked out, neither an early-time nor a
               late-time fix. The correct label is a non-discriminating soft constraint, not silence — and it is one
               more reading on which a₀ ≈ cH₀/2π looks like numerology rather than a derivation. Flagged

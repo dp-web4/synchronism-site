@@ -97,7 +97,7 @@ export default function MondUnification() {
           already notes that V<sub>max</sub> zero points do not constrain a&#x2080;(z), and modelled, the lever is
           0.12&ndash;0.24 dex against a 0.25&ndash;0.35 dex spread between two surveys measuring the same relation at
           z &asymp; 0.9 (explorer 2026-09-19). The level-free test, the slope of a&#x2080;(z) against E(z), has now been run on
-          both direct-RAR samples (RC100 2026-10-06, Ciocan&apos;s bins 2026-10-10; results above). <em></em>
+          both direct-RAR samples (RC100 2026-10-06, Ciocan&apos;s bins 2026-10-10; results above).
         </p>
 
         <h2>The Dimensional-Analysis Chain (not a derivation)</h2>

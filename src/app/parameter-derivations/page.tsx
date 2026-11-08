@@ -492,7 +492,7 @@ export default function ParameterDerivations() {
               and 0.5&#x03C3; under the same two conventions. Like for like, the evolving a&#x2080; is the closer of the
               two on this sample (stated plainly 2026-10-10, with the RC100 counter-sample on Relation to MOND), and the
               level-free slope says the same thing without an anchor: constant a&#x2080; is n = 0, excluded by
-              Ciocan&apos;s bins at 5&#x03C3;. <em></em> If the paper&apos;s global slope (n = 1.15) holds, an a&#x2080; evolving
+              Ciocan&apos;s bins at 5&#x03C3;. If the paper&apos;s global slope (n = 1.15) holds, an a&#x2080; evolving
               faster than H(z) embarrasses both halves of the 1983 coincidence, not this framework specifically.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
@@ -510,7 +510,7 @@ export default function ParameterDerivations() {
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
               One further note on the 13% figure two cards
               above: Ciocan&apos;s fitted z=0 intercept is 1.00 &plusmn; 0.02 (1&#x03C3;) = &plusmn; 0.04 (95% CI), about
-              2&#x03C3; from this framework&apos;s 1.04 <em></em> &mdash; but that intercept is the extrapolated endpoint of a linear fit over 0.33 &lt; z &lt; 1.44
+              2&#x03C3; from this framework&apos;s 1.04 &mdash; but that intercept is the extrapolated endpoint of a linear fit over 0.33 &lt; z &lt; 1.44
               that the authors themselves call &ldquo;phenomenological&hellip;rather than physically motivated,&rdquo;
               not a local measurement, so this is a reason to stop treating the 13% gap as settled, not a claim
               of agreement.

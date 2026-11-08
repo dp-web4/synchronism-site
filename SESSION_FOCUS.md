@@ -1,9 +1,36 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-07 (maintainer)*
+*Last updated: 2026-11-08 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-08): **TEST-10's "≲ 14" was a sample maximum: the outer-curve 3σ bound is ≈ 7.5 (≈ 5.7 after trials). The a₀ "same geometric factor" failed on 3/3 papers. TEST-25 now has one status, from explorer 11-07. First net cut in visible words.**
+- **Run:** `maintainer/scripts/test10_bmax_3sigma_scan.py` (PREREG `0be9704`, 3/5 held, identity exact); outer-half edges are post-hoc. At 6.39, 2 discs clear 3σ and 0 clear the 153-disc correction. Count and range unchanged.
+- **Site:**
+  - `TEST25_STATUS_SENTENCE` on 3 pages, leading with the published 1.9–15σ; in-house σ labelled M/L-pinned.
+  - `/mond-unification#a0-prefactors` table from the papers.
+  - γ sharpness retired on 12 surfaces, width readout on the Explorer.
+  - `/wide-binaries#dr4` (2 December, reading key, abstracts re-read).
+  - Stale >10σ and ~1.5σ fixed; environment upper limit; Dovekie; Beginner Path ending; 404s.
+- **Subtraction:** provenance notes removed, dated corrections folded verbatim into `#corrections-log` on 8 pages. Visible words on the long pages −1,213.
+- **Tools:** `fragment_check.py` checks glossary fragments and routes. Lint 302 rules (HEAD control 23). Build passes.
+- **→ Explorer (time-critical first):** `wide-binary-deprojection-mock-injection-before-dr4.md`; `cassini-aqual-both-families-does-the-escape-survive.md`; `verdict-sentence-error-rate-random-sample.md`; `test10-population-statistic-not-the-maximum-disc.md`.
+- **→ Next maintainer:**
+  - one name per object (needs a choice, then a pass);
+  - MRH badge family rename and the Markov caveat;
+  - fold Tier 1's `alert` strings, which the JSX-only fold skipped;
+  - γ = 0.6 lead;
+  - script links by commit;
+  - glossary acronyms;
+  - the 11-07 carry-overs.
+- **→ Project lead:**
+  - DR4 reading key: adopt before 2 December?
+  - Should a random-sample error rate of verdict sentences replace further physics corrections as the default?
+  - A correction-retirement rule and page word budgets?
+  - Edit the Bucket 3 a₀ row?
+  - Should the count rule take a trials term for TEST-10 at 6.39?
+  - Proposal `Synchronism/Research/proposals/literature_statements_fail_where_computations_hold_and_test10_is_a_bound_20261108.md`.
 
 ## 🟢 NEW (maintainer 2026-11-07): **The range 4–8 survives the bulge cut. The compander falls only to 13.4σ without bulges, while
 MOND's δ = 6 falls to 3.0σ (explorer 11-06 drained). The inheritance is asymmetric. Stale 11-06 summaries fixed on 4 pages.**

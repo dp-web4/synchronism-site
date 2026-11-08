@@ -21,7 +21,7 @@ export const terms: Record<string, TermDefinition> = {
     term: '\u03B3',
     fullName: 'Gamma Parameter',
     brief: 'The steepness of the S-curve. Status first: the original formula \u03B3 = 2/\u221AN_corr is audited-negative (wrong-sign correlation; it ranks the most collective systems flattest). The framework\u2019s pinned galaxy value \u03B3 = 2 is disfavoured on SPARC; the fitted value \u03B3 \u2248 0.49 sits on the exact MOND point (\u03B3 = \u00BD), so nothing new survives. (\u03B3 multiplies the log; it is not an exponent.)',
-    explanation: 'Intuition first: \u03B3 sets how abruptly a system switches from "individuals" to "a crowd" as it gets denser \u2014 big \u03B3 means a sharp snap, small \u03B3 means a slow fade (try the presets in the \u03B3 Calculator to feel this). Large \u03B3 (few correlated units \u2014 a single electron: N_corr = 1, \u03B3 = 2) gives a sharp C(\u03C1) transition; small \u03B3 (many correlated units \u2014 a crystal: \u03B3 \u2248 10\u207B\u00B9\u00B2) gives a flat one. \u03B3 \u2248 1 marks the sparse/collective boundary where chemistry clusters. Why 2/\u221AN_corr? No independent derivation exists \u2014 the formula is audited-negative: 1/\u221AN is a fluctuation width, and placing it in the sharpness slot inverts mean-field physics (the most collective systems get the FLATTEST curves \u2014 BCS superconductors land at C \u2248 0, backwards from observation). (This entry previously stated the regimes backwards \u2014 corrected 2026-06-12.) Structurally, \u03B3 is claimed to encode MRH coupling density (\u03B3 \u221D \u03BB\u00B7K/D), but no protocol independently measures N_corr in any system.',
+    explanation: 'Intuition first: \u03B3 sets how early C starts to rise as density grows and how fast it approaches 1. Small \u03B3 means a slow fade stretched over many powers of ten. Above \u03B3 \u2248 1, a bigger \u03B3 mostly slides the curve to lower density without narrowing it: the 10\u201390% width stops near 1.17 dex (a factor of 15 in density), so no \u03B3 gives a sharp switch. It was proposed as a sharpness, and the proposal assigned large \u03B3 to few correlated units (a single electron: N_corr = 1, \u03B3 = 2) and small \u03B3 to many (a crystal: \u03B3 \u2248 10\u207B\u00B9\u00B2). \u03B3 \u2248 1 marks the sparse/collective boundary where chemistry clusters. Why 2/\u221AN_corr? No independent derivation exists \u2014 the formula is audited-negative: 1/\u221AN is a fluctuation width, and placing it where a sharpness was wanted inverts mean-field physics (the most collective systems get the FLATTEST curves \u2014 BCS superconductors land at C \u2248 0, backwards from observation). (This entry previously stated the regimes backwards \u2014 corrected 2026-06-12.) Structurally, \u03B3 is claimed to encode MRH coupling density (\u03B3 \u221D \u03BB\u00B7K/D), but no protocol independently measures N_corr in any system.',
     learnMore: '/gamma-parameter',
   },
   'N_corr': {
@@ -57,7 +57,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'a\u2080',
     fullName: 'MOND Acceleration Scale',
     brief: 'Milgrom\'s acceleration constant, observed \u2248 1.2\u00D710\u207B\u00B9\u2070 m/s\u00B2; cH\u2080/(2\u03C0) \u2248 1.04\u00D710\u207B\u00B9\u2070 at H\u2080 = 67.4 (~13% below).',
-    explanation: 'In MOND, this is a fundamental constant. Synchronism writes it as cH\u2080/(2\u03C0) \u2014 but that is a dimensional rederivation of a numerical coincidence Milgrom himself noted in 1983 (a\u2080 \u2248 cH\u2080/6; the 2\u03C0 vs 6 difference is ~5%), not an independent derivation. The site\u2019s audited verdict is Reparametrization: the relation is real, shared with MOND-adjacent literature (McCulloch, Verlinde, Smolin), and predicts nothing MOND doesn\u2019t. (Glossary entry rewritten 2026-07-17 to match the audited framing \u2014 an earlier version called this \u201Cone of Synchronism\u2019s strongest results,\u201D which contradicted the landing page and Honest Assessment.)',
+    explanation: 'In MOND, this is a fundamental constant. Synchronism writes it as cH\u2080/(2\u03C0) \u2014 but that is a rewriting of a numerical coincidence Milgrom noted in 1983 (a\u2080 is close to cH\u2080; the prefactor varies by author, and 1/2\u03C0 vs 1/6 differ by ~5%), not an independent derivation. The site\u2019s audited verdict is Reparametrization: the relation is real, shared with MOND-adjacent literature (McCulloch, Verlinde, Smolin), and predicts nothing MOND doesn\u2019t. (Glossary entry rewritten 2026-07-17 to match the audited framing \u2014 an earlier version called this \u201Cone of Synchronism\u2019s strongest results,\u201D which contradicted the landing page and Honest Assessment.)',
     learnMore: '/mond-unification',
   },
   'a\u2080\u2032': {
@@ -113,7 +113,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Ansatz',
     fullName: 'Ansatz (German: "starting point", "approach")',
     brief: 'An educated guess at the form of an answer, written down first and justified (or not) by whether it works.',
-    explanation: 'Physicists say "ansatz" when they pick a mathematical form because it looks plausible, not because they derived it, and then test it. Synchronism\u2019s tanh(\u03B3\u00B7ln(1+\u03C1/\u03C1_crit)) is an ansatz in this sense: the site calls it "motivated, not derived" on The Coherence Function. Calling something an ansatz is an honest label, not a criticism; the question is always whether the guessed form survives the data. (Entry added 2026-10-08: a beginner visitor met the word on Why Synchronism and the glossary did not have it.)',
+    explanation: 'Physicists say "ansatz" when they pick a mathematical form because it looks plausible, not because they derived it, and then test it. Synchronism\u2019s tanh(\u03B3\u00B7ln(1+\u03C1/\u03C1_crit)) is an ansatz in this sense: the site calls it "motivated, not derived" on The Coherence Function. Calling something an ansatz is an honest label, not a criticism; the question is always whether the guessed form survives the data.',
     learnMore: '/coherence-function',
   },
   'NP2': {
@@ -194,7 +194,7 @@ export const terms: Record<string, TermDefinition> = {
     fullName: 'Lambda Cold Dark Matter',
     brief: 'The standard model of cosmology: the universe is ~68% dark energy (\u039B), ~27% cold dark matter, ~5% ordinary matter.',
     explanation: 'The mainstream cosmological framework that explains the universe\'s expansion, galaxy formation, and cosmic microwave background. Synchronism doesn\'t replace \u039BCDM \u2014 it proposes an alternative interpretation of what "dark matter" represents (coherence effects rather than invisible particles).',
-    learnMore: '/dark-matter-reframed',
+    learnMore: '/dark-matter',
   },
   'MOND': {
     term: 'MOND',
@@ -207,7 +207,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'AQUAL',
     fullName: 'Aquadratic Lagrangian MOND (Bekenstein & Milgrom 1984)',
     brief: 'The first field-equation form of MOND: a modified Poisson equation, \u2207\u00B7[\u03BC(|\u2207\u03A6|/a\u2080)\u2207\u03A6] = 4\u03C0G\u03C1, derived from an action so momentum and energy are conserved.',
-    explanation: 'MOND began as an algebraic rule. AQUAL turns it into a field theory by making the Poisson equation nonlinear in the gradient of the potential. QUMOND (Milgrom 2010) is a later, easier-to-solve variant. On this site AQUAL matters because the framework\u2019s action-derived (L3) dynamics, keyed on the gradient, turns out to be AQUAL with \u03B3 relabelled, and because the Cassini test (TEST-25) is run in this family. (Entry added 2026-10-23 after a technical-writer persona found the term used on /for-researchers with no definition.)',
+    explanation: 'MOND began as an algebraic rule. AQUAL turns it into a field theory by making the Poisson equation nonlinear in the gradient of the potential. QUMOND (Milgrom 2010) is a later, easier-to-solve variant. On this site AQUAL matters because the framework\u2019s action-derived (L3) dynamics, keyed on the gradient, turns out to be AQUAL with \u03B3 relabelled, and because the Cassini test (TEST-25) is run in this family.',
     learnMore: '/for-researchers',
   },
   'Cardassian': {
@@ -242,7 +242,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Refutation (executed)',
     fullName: 'Executed Refutation \u2014 the site\u2019s counting rule',
     brief: 'A test with a stated failure condition that was actually run, on outside data or as a construction check, and that the idea failed. The site counts 6 under its current rule (4\u20138 under rules on file, depending on how close calls and shared causes are counted), from at most 5 independent roots.',
-    explanation: 'Counting rule: a claim counts as an executed refutation when (1) a test with a stated failure condition was actually run, on data or as a simulation, and (2) the claim failed it. Arguments that a test could never succeed, untested predictions and underpowered tests (like the DESI growth-rate check) do not count. The count is 6 (BTFR slope TEST-09, dwarf dark-matter fractions TEST-10, RAR shape at \u03b3 = 2, the environment run, the Cassini/SPARC squeeze TEST-25, and the Bell/CHSH substrate check), but these come from at most 5 independent roots, because TEST-09 and TEST-10 fail on the same boost cap. Only two roots are specific to this framework. The upstream ledger is PREDICTIONS.md in the research repo. Pending (2026-10-12): the uniform G/C growth reading was pre-registered, executed and excluded (ISW sign, lensing, S\u2088), which meets this rule as written; it is left out of the 6 only because no archive document asserted that reading, and whether that exclusion becomes part of the rule gates on the project lead. What the landing-page \u201c6\u201d includes: one construction check (Bell/CHSH, run on the framework’s own substrate construction rather than on observational data) and two pending-review entries (TEST-09 and TEST-10, whose independence awaits the project lead). Claims refuted this way carry the Failed badge. (Entry added 2026-09-14, after a visitor noticed the site\u2019s headline number had no definition; composition note added 2026-10-15.)',
+    explanation: 'Counting rule: a claim counts as an executed refutation when (1) a test with a stated failure condition was actually run, on data or as a simulation, and (2) the claim failed it. Arguments that a test could never succeed, untested predictions and underpowered tests (like the DESI growth-rate check) do not count. The count is 6 (BTFR slope TEST-09, dwarf dark-matter fractions TEST-10, RAR shape at \u03b3 = 2, the environment run, the Cassini/SPARC squeeze TEST-25, and the Bell/CHSH substrate check), but these come from at most 5 independent roots, because TEST-09 and TEST-10 fail on the same boost cap. Only two roots are specific to this framework. The upstream ledger is PREDICTIONS.md in the research repo. Pending (2026-10-12): the uniform G/C growth reading was pre-registered, executed and excluded (ISW sign, lensing, S\u2088), which meets this rule as written; it is left out of the 6 only because no archive document asserted that reading, and whether that exclusion becomes part of the rule gates on the project lead. What the landing-page \u201c6\u201d includes: one construction check (Bell/CHSH, run on the framework’s own substrate construction rather than on observational data) and two pending-review entries (TEST-09 and TEST-10, whose independence awaits the project lead). Claims refuted this way carry the Failed badge.',
     learnMore: '/honest-assessment',
   },
   'prospective': {
@@ -305,7 +305,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Milgrom',
     fullName: 'Mordehai Milgrom',
     brief: 'The physicist who proposed MOND in 1983.',
-    explanation: 'Milgrom introduced Modified Newtonian Dynamics and its acceleration constant a\u2080, and in 1983 observed that a\u2080 is numerically close to cH\u2080/6; this framework later rewrote it as cH\u2080/(2\u03c0) (a rederivation of the coincidence, not an independent result). See MOND.',
+    explanation: 'Milgrom introduced Modified Newtonian Dynamics and its acceleration constant a\u2080, and in 1983 observed that a\u2080 is numerically close to cH\u2080; this framework writes it as cH\u2080/(2\u03c0) (the coincidence again, not an independent result). See MOND.',
     learnMore: '/mond-unification',
   },
   'knee': {
@@ -326,14 +326,14 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Rotation curve',
     fullName: 'Rotation Curve',
     brief: 'A plot of how fast stars and gas orbit a galaxy\u2019s centre against their distance from it. Newton says it should fall off far out; observed curves stay flat.',
-    explanation: 'Picture: distance from the centre on the horizontal axis, orbital speed on the vertical. If the visible stars and gas were all the mass, speeds far outside the bright disc should drop the way planets slow with distance from the Sun (v \u221D 1/\u221Ar). Observed curves instead rise and then stay roughly flat out to the last measured point (the flat speed is V_flat). That gap is the galaxy dark-matter problem. Dark matter explains it with unseen mass; MOND explains it by changing gravity at low acceleration. Every galaxy test on this site, including the Galaxy Curve Plotter and the SPARC fits, is a comparison against measured rotation curves. (Entry added 2026-10-26; two simulated-visitor personas found the galaxy story\u2019s central object missing from the glossary.)',
+    explanation: 'Picture: distance from the centre on the horizontal axis, orbital speed on the vertical. If the visible stars and gas were all the mass, speeds far outside the bright disc should drop the way planets slow with distance from the Sun (v \u221D 1/\u221Ar). Observed curves instead rise and then stay roughly flat out to the last measured point (the flat speed is V_flat). That gap is the galaxy dark-matter problem. Dark matter explains it with unseen mass; MOND explains it by changing gravity at low acceleration. Every galaxy test on this site, including the Galaxy Curve Plotter and the SPARC fits, is a comparison against measured rotation curves.',
     learnMore: '/galaxy-plotter',
   },
   'Dark energy': {
     term: 'Dark energy',
     fullName: 'Dark Energy',
     brief: 'Whatever makes the expansion of the universe speed up. In standard cosmology (\u039BCDM) it is a cosmological constant \u039B, about 68% of the universe\u2019s energy today.',
-    explanation: 'Since 1998, distant supernovae (and later the CMB and galaxy clustering) show the expansion of the universe accelerating. The simplest explanation is a constant vacuum energy density, the cosmological constant \u039B, with equation of state w = \u22121. DESI\u2019s 2024\u20132025 data hint that w may change with time (the w\u2080\u2013w\u2090 parametrization). This framework\u2019s dark-energy sector writes \u03C1_DE = \u03C1_m(1\u2212C)/C. At \u03B3 = \u00BD that is exactly \u039B (\u03C1_DE = 2\u03C1_crit), and the general family is a known Cardassian-class model. It can only evolve toward w = \u22121, so it cannot produce the thawing or crossing behaviour DESI hints at. (Entry added 2026-10-26, from simulated-visitor feedback.)',
+    explanation: 'Since 1998, distant supernovae (and later the CMB and galaxy clustering) show the expansion of the universe accelerating. The simplest explanation is a constant vacuum energy density, the cosmological constant \u039B, with equation of state w = \u22121. DESI\u2019s 2024\u20132025 data hint that w may change with time (the w\u2080\u2013w\u2090 parametrization). This framework\u2019s dark-energy sector writes \u03C1_DE = \u03C1_m(1\u2212C)/C. At \u03B3 = \u00BD that is exactly \u039B (\u03C1_DE = 2\u03C1_crit), and the general family is a known Cardassian-class model. It can only evolve toward w = \u22121, so it cannot produce the thawing or crossing behaviour DESI hints at.',
     learnMore: '/dark-energy',
   },
   'qualia': {
@@ -341,7 +341,7 @@ export const terms: Record<string, TermDefinition> = {
     fullName: 'Subjective Experience',
     brief: 'The "what it\'s like" of conscious experience \u2014 the redness of red, the pain of pain.',
     explanation: 'In Synchronism, qualia are modeled as coherence resonance patterns that emerge when C crosses \u2248 0.50. This is speculative and untested. The site marks all consciousness claims with appropriate caveats.',
-    learnMore: '/qualia-as-coherence',
+    learnMore: '/qualia-coherence',
     educationalNote: 'All consciousness predictions are untested. This is the most speculative part of the framework.',
   },
   'falsifiability': {
@@ -355,7 +355,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Post-diction (descriptor, not a badge)',
     fullName: 'Post-diction — Free-Text Finding Descriptor (not in the canonical badge legend)',
     brief: 'Formula or derivation produced after the confirming experiment was already published. Appears after the dash on a badge (e.g. "Reparametrization — Post-diction"); the formal status is always the badge word.',
-    explanation: 'Not one of the nine formal badges on the Honest Assessment legend (aligned 2026-09-08 after a visitor documentation persona found this entry labelled as a badge while the canonical legend has no such badge). It is a finding descriptor: the text after the dash. A post-diction matches known data but was not a forward prediction — the experiment\'s result was already in the literature when the formula was derived. Epistemically weaker than "Validated" (genuine pre-registered prediction confirmed) but distinct from "Reparametrization" (notation change). Post-dictions can be valuable as consistency checks and can motivate forward predictions, but they do not independently confirm a framework.',
+    explanation: 'Not one of the nine formal badges on the Honest Assessment legend. It is a finding descriptor: the text after the dash. A post-diction matches known data but was not a forward prediction — the experiment\'s result was already in the literature when the formula was derived. Epistemically weaker than "Validated" (genuine pre-registered prediction confirmed) but distinct from "Reparametrization" (notation change). Post-dictions can be valuable as consistency checks and can motivate forward predictions, but they do not independently confirm a framework.',
     learnMore: '/research-philosophy',
   },
   'badge-active-mrh': {
@@ -789,14 +789,14 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Template Bias Caveat',
     fullName: 'Template Bias Caveat (badge qualifier on the chemistry rate)',
     brief: 'A warning attached to the chemistry \u201c89% boundary-consistent\u201d rate: the rate was scored against a template that any smooth S-shaped trend in atomic number would also satisfy, so it measures the template, not the framework.',
-    explanation: 'Appears on Why Synchronism (Beginner step 1) next to the chemistry result. The 89% counts how many of 1,703 logged chemistry sessions (a session counter, not a census of phenomena) sit where a sigmoid in density says they should. Each correlation is a post-hoc fit against a \u03b3 proxy that contains the Debye temperature, so the template, not the coherence equation, explains the rate. (Corrected 2026-10-31: a polynomial-in-Z null cited here was run on synthetic curves, not the chemistry rows.) It is a qualifier on a descriptive number, not one of the nine validation badges. (Entry added 2026-09-29 after a technical-writer simulated-visitor persona found the label undefined.)',
+    explanation: 'Appears on Why Synchronism (Beginner step 1) next to the chemistry result. The 89% counts how many of 1,703 logged chemistry sessions (a session counter, not a census of phenomena) sit where a sigmoid in density says they should. Each correlation is a post-hoc fit against a \u03b3 proxy that contains the Debye temperature, so the template, not the coherence equation, explains the rate. (Corrected 2026-10-31: a polynomial-in-Z null cited here was run on synthetic curves, not the chemistry rows.) It is a qualifier on a descriptive number, not one of the nine validation badges.',
     learnMore: '/chemistry-correlation-explorer',
   },
   'ledger-buckets': {
     term: 'Ledger Buckets',
     fullName: 'Research ledger buckets: the four bins of PREDICTIONS.md',
     brief: 'The research archive files every claim in one of four buckets. Bucket 0: confirmed novel predictions (count 0). Bucket 1: untested but falsifiable novel bets. Bucket 2: refuted (tested and failed). Bucket 3: reparametrizations (known physics in new notation).',
-    explanation: 'The buckets are the archive\u2019s scoreboard (Synchronism repo, PREDICTIONS.md). They are not the site\u2019s badges, though they line up: Bucket 2 rows carry Failed or Audited-Negative, Bucket 3 rows carry Reparametrization. \u201cIt cannot move Bucket 0\u201d means no outcome of that test could produce a confirmed novel prediction. Bucket 2 lists more rows than the site\u2019s \u201c6 refutations\u201d: it includes eliminations that were not registered tests (for example a dimensional error, a derivation that fails, a result shown to be a textbook relation). So \u201c13 empirical eliminations in the refuted bucket\u201d (For Researchers, A2ACW) counts Bucket 2 rows decided by outside data, and the 6 are the subset that also meet the site\u2019s counting rule (a registered criterion, executed). (Entry added 2026-11-02 after a researcher simulated-visitor persona found the terms undefined.)',
+    explanation: 'The buckets are the archive\u2019s scoreboard (Synchronism repo, PREDICTIONS.md). They are not the site\u2019s badges, though they line up: Bucket 2 rows carry Failed or Audited-Negative, Bucket 3 rows carry Reparametrization. \u201cIt cannot move Bucket 0\u201d means no outcome of that test could produce a confirmed novel prediction. Bucket 2 lists more rows than the site\u2019s \u201c6 refutations\u201d: it includes eliminations that were not registered tests (for example a dimensional error, a derivation that fails, a result shown to be a textbook relation). So \u201c13 empirical eliminations in the refuted bucket\u201d (For Researchers, A2ACW) counts Bucket 2 rows decided by outside data, and the 6 are the subset that also meet the site\u2019s counting rule (a registered criterion, executed).',
     learnMore: '/honest-assessment#count-rule',
   },
   'boundary-consistent': {
@@ -848,7 +848,7 @@ export const terms: Record<string, TermDefinition> = {
   'Cassini': {
     term: 'Cassini',
     fullName: 'Cassini spacecraft (Solar-System quadrupole bound)',
-    brief: 'NASA/ESA Saturn mission whose radio tracking bounds any anomalous tidal (quadrupole, Q₂) field in the Solar System. That bound is what kills MOND-like laws at γ ≈ 0.49 (TEST-25).',
+    brief: 'NASA/ESA Saturn mission whose radio tracking bounds any anomalous tidal (quadrupole, Q₂) field in the Solar System. That bound excludes this framework’s compander at every γ tested, unless discs carry more than twice their stellar-population mass, and MOND’s slowly-transitioning functions at 1.9–15σ by mass model (TEST-25).',
     explanation: 'Modified-gravity laws that act at galaxy-scale accelerations leave a small external-field quadrupole in the Solar System, which would perturb planetary orbits. Ranging to Cassini at Saturn measures Saturn’s orbit precisely enough to bound it. Measured bound: Hees, Folkner, Jacobson & Park 2014, Phys. Rev. D 89, 102002; updated by Park et al. 2026, Phys. Rev. D 114, 024066. The site’s Cassini/SPARC squeeze (TEST-25) compares the γ range SPARC galaxies allow with the range this bound allows. (Entry added 2026-10-15.)',
     learnMore: '/honest-assessment',
   },

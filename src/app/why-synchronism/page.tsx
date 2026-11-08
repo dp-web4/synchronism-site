@@ -87,8 +87,8 @@ export default function WhySynchronism() {
         <p style={{ color: 'var(--color-text-secondary)', fontStyle: 'italic', borderLeft: '3px solid var(--color-accent-violet)', paddingLeft: '0.75rem' }}>
           In plain English: Synchronism proposes one S-curve that smoothly goes from 0 (everything
           acting independently &mdash; the crowd) to 1 (everything locked together &mdash; the marching
-          band) as density grows. There&apos;s a dial for how abrupt the crowd&#x2192;band snap is
-          &mdash; turn it up and the system snaps suddenly; turn it down and the change is gradual
+          band) as density grows. There&apos;s a setting, &#x03B3;, for how early that change starts
+          &mdash; turn it down and the change stretches out; turn it up and it comes earlier, though never as a sudden snap
           &mdash; and a reference density that sets where on the curve a given system sits.
         </p>
         <details style={{ margin: '0.75rem 0', border: '1px solid var(--color-border)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
@@ -121,8 +121,7 @@ export default function WhySynchronism() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           The parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> is meant to depend only on how many
           particles are moving as a correlated unit: many correlated particles &rarr; small &#x03B3;,
-          few &rarr; large &#x03B3;. Note what &#x03B3; is <em>not</em> &mdash; it is the{' '}
-          <strong>sharpness</strong> dial, setting how abruptly C rises as density increases. What
+          few &rarr; large &#x03B3;. It was meant as a sharpness, but it sets how early C rises; no &#x03B3; makes the rise sudden. What
           makes a system sparse or dense is &#x03C1;, the other input. Two systems at the same density
           with different &#x03B3; sit at different points on the curve; &#x03B3; does not move them
           along the density axis.
@@ -197,9 +196,8 @@ export default function WhySynchronism() {
               galaxy); the registered Tully&ndash;Fisher environment test (TEST-03, on the 14,585-galaxy cross-match) was
               never run as registered. a&#x2080; = cH&#x2080;/(2&#x03C0;) reproduced within 13%, shared with MOND and other
               frameworks. The environment-dependent scatter prediction (TEST-03/05) has a corrected verdict as of 2026-07-15:
-              R²=0.14 is a real, significant effect (p=5&times;10⁻⁶, i.e. very unlikely to be chance) but on the SPARC-scale
-              sample, not the 14,585-galaxy ALFALFA-SDSS one this page previously attributed it to, and it is morphology,
-              not cleanly environment. The brief &ldquo;MOND-shared&rdquo; verdict (07-09) dissolved on adjudication: the
+              the one real pattern found is that the scatter depends on a galaxy&apos;s shape (Hubble type; R²=0.14, p=5&times;10⁻⁶), on the SPARC-scale
+              sample. Galaxy shape is not what was predicted, and it does not rescue the idea. The brief &ldquo;MOND-shared&rdquo; verdict (07-09) dissolved on adjudication: the
               frameworks&apos; environment levers differ by orders of magnitude, so the axis discriminates, and the
               registered density-classified run now exists (research repo, 2026-07-14): r²=0.0001 against the
               framework&apos;s registered &gt;20% claim. Refuted by execution.
@@ -209,8 +207,7 @@ export default function WhySynchronism() {
             </details>
             <div style={{ fontSize: '0.72rem', color: 'var(--color-text-muted)', marginBottom: '0.35rem' }}>
               Badges on this page: <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>Failed &middot; Reparametrization</Link>{' '}
-              (definitions); text after the bar is a finding descriptor. &ldquo;89% Boundary-Consistent&rdquo; and &ldquo;Template Bias Caveat&rdquo; are
-              defined in the <Link href="/glossary#boundary-consistent-89" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
+              (definitions); text after the bar is a finding descriptor. The old &ldquo;89%&rdquo; figure for the chemistry card is explained in the <Link href="/glossary#boundary-consistent-89" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>.
             </div>
             <span className="badge badge-failed" title="Registered environment-density run executed 2026-07-14 (SPARC RAR offsets vs Cosmicflows-4): r²=0.0001 vs registered >20% — refuted; the MOND+EFE tie dissolved on adjudication 2026-07-15 (levers differ ~50–5,000×), see /tier-1-existing#TEST-05">Failed | TEST-03/05 Environment Run — Refuted by Execution</span>
           </div>
@@ -227,7 +224,7 @@ export default function WhySynchronism() {
                 quantum-coherent systems (superconductors, ultra-cold atom clouds) sit at <em>low</em> C due to their tiny &#x03B3;.
               </small>
             </p>
-            <span className="badge badge-reparametrization" title="Descriptive rate, not a verdict — the correlations are post-hoc fits in a γ proxy that contains the Debye temperature, so they restate the Debye model">89% Boundary-Consistent | Template Bias Caveat</span>
+            <span className="badge badge-reparametrization" title="Descriptive rate, not a verdict — the correlations are post-hoc fits in a γ proxy that contains the Debye temperature, so they restate the Debye model">Reparametrization | Restates the textbook Debye model</span>
           </div>
         </div>
       </section>

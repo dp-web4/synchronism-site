@@ -71,7 +71,7 @@ export default function ForResearchers() {
         <div id="dynamics-per-branch" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0 0 1rem', scrollMarginTop: '5rem', overflowX: 'auto' }}>
           <strong>Which equation of motion each verdict used.</strong> Different tests evaluated &ldquo;the framework&rdquo; under
           different dynamics. No verdict below changes, but each is a statement about one row, not about the others.
-          (Table added 2026-11-07 at a researcher simulated-visitor persona&apos;s request.)
+         
           <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '0.5rem', fontSize: '0.8rem' }}>
             <thead>
               <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--color-dark-border)' }}>
@@ -95,7 +95,7 @@ export default function ForResearchers() {
                 <td style={{ padding: '0.3rem' }}>QUMOND: &nabla;&sup2;&Phi; = &nabla;&middot;[&nu;(|&nabla;&Phi;<sub>N</sub>|/a<sub>0</sub>)&nabla;&Phi;<sub>N</sub>], &nu; from C</td>
                 <td style={{ padding: '0.3rem' }}>Yes, MOND&apos;s</td>
                 <td style={{ padding: '0.3rem' }}>Cassini quadrupole Q<sub>2</sub>, set near 7,000&nbsp;AU</td>
-                <td style={{ padding: '0.3rem' }}>TEST-25 and wide binaries (TEST-02 / Gaia DR4). With SPARC&apos;s a<sub>0</sub> refit, Cassini fails at 14.5&ndash;19&sigma; for every &gamma; 0.3&ndash;3, and 13&ndash;18&sigma; with bulge-dominated galaxies dropped. Inherited from MOND.</td>
+                <td style={{ padding: '0.3rem' }}>TEST-25 and wide binaries (TEST-02 / Gaia DR4). With SPARC&apos;s a<sub>0</sub> refit and M/L pinned, Cassini fails at 14.5&ndash;19&sigma; for every &gamma; 0.3&ndash;3, and 13&ndash;18&sigma; with bulge-dominated galaxies dropped. To pass, the compander needs &Upsilon;<sub>d</sub> &asymp; 1.2&ndash;1.4; MOND&apos;s &delta; = 6 needs about 0.54, at about 1.8&sigma; on SPARC.</td>
               </tr>
               <tr style={{ borderBottom: '1px solid var(--color-dark-border)', verticalAlign: 'top' }}>
                 <td style={{ padding: '0.3rem' }}>Density-keyed, L2</td>
@@ -140,7 +140,7 @@ export default function ForResearchers() {
                 <tr><td style={{ padding: '0.3rem' }}>Ambient density at fixed g<sub>ext</sub></td><td style={{ padding: '0.3rem' }}>Density-keyed</td><td style={{ padding: '0.3rem' }}>Branch excluded; lever capped by a tidal identity, signal/systematics &asymp; 4&times;10&#x207B;&sup3;</td><td style={{ padding: '0.3rem' }}>&mdash;</td><td style={{ padding: '0.3rem' }}>None useful (systematics-limited)</td></tr>
                 <tr><td style={{ padding: '0.3rem' }}>Scan period T<sub>scan</sub> &ge; 1.6&ndash;9.4 &micro;s, drawn per particle</td><td style={{ padding: '0.3rem' }}>Measurement as synchronization</td><td style={{ padding: '0.3rem' }}>Speculative, not committed to; every clock the archive names is already excluded (<Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>)</td><td style={{ padding: '0.3rem' }}>Grangier, Roger &amp; Aspect 1986 (the setup)</td><td style={{ padding: '0.3rem' }}>g&sup2;(0) against photon duration at fixed window. Clock or ion-trap sidebands would test a <em>global periodic</em> clock, which already fails at every T, not the survivor</td></tr>
                 <tr><td style={{ padding: '0.3rem' }}>Dark-energy sign lock, sign(w&#x2080;+1) = sign(w<sub>a</sub>)</td><td style={{ padding: '0.3rem' }}>Substituted Friedmann (superset of &Lambda;CDM)</td><td style={{ padding: '0.3rem' }}>Reparametrization: its kill is &Lambda;CDM&apos;s and its win is wCDM&apos;s (<Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>)</td><td style={{ padding: '0.3rem' }}>Cardassian (Freese &amp; Lewis 2002); freezing class (Caldwell &amp; Linder 2005)</td><td style={{ padding: '0.3rem' }}>DESI DR3; cannot single out the framework</td></tr>
-                <tr><td style={{ padding: '0.3rem' }}>Joint galaxy + cosmology content (one &gamma; in both sectors)</td><td style={{ padding: '0.3rem' }}>Cross-sector</td><td style={{ padding: '0.3rem' }}>None, or already excluded. The galaxy &gamma; is fitted on acceleration (C<sub>g</sub>), the cosmology &gamma; on mean density (C<sub>&rho;</sub>), so &ldquo;one &gamma;&rdquo; mixes variables, and &gamma; = 2/&radic;N<sub>corr</sub> makes &gamma; system-dependent anyway. Read as one parameter, the local-fluid P(k) pin forces &gamma; = &frac12;, the galaxy law becomes MOND&apos;s simple &mu; exactly, and TEST-25&apos;s Cassini bound already excludes that function (added 2026-10-24, researcher simulated-visitor persona; archive 2026-09-24 and 10-15)</td><td style={{ padding: '0.3rem' }}>&mdash;</td><td style={{ padding: '0.3rem' }}>None: no outcome is framework-specific</td></tr>
+                <tr><td style={{ padding: '0.3rem' }}>Joint galaxy + cosmology content (one &gamma; in both sectors)</td><td style={{ padding: '0.3rem' }}>Cross-sector</td><td style={{ padding: '0.3rem' }}>None, or already excluded. The galaxy &gamma; is fitted on acceleration (C<sub>g</sub>), the cosmology &gamma; on mean density (C<sub>&rho;</sub>), so &ldquo;one &gamma;&rdquo; mixes variables, and &gamma; = 2/&radic;N<sub>corr</sub> makes &gamma; system-dependent anyway. Read as one parameter, the local-fluid P(k) pin forces &gamma; = &frac12;, the galaxy law becomes MOND&apos;s simple &mu; exactly, and TEST-25&apos;s Cassini bound already excludes that function</td><td style={{ padding: '0.3rem' }}>&mdash;</td><td style={{ padding: '0.3rem' }}>None: no outcome is framework-specific</td></tr>
                 <tr><td style={{ padding: '0.3rem' }}>Non-monogamous entanglement (dimension form)</td><td style={{ padding: '0.3rem' }}>Bell sector</td><td style={{ padding: '0.3rem' }}>Gated: needs a construction that exceeds S&nbsp;=&nbsp;2 first, and none exists (<a href="#chsh" style={{ color: 'var(--color-accent-blue)' }}>&sect;CHSH</a>)</td><td style={{ padding: '0.3rem' }}>&mdash;</td><td style={{ padding: '0.3rem' }}>None until the construction exists</td></tr>
                 <tr><td style={{ padding: '0.3rem' }}>Intrinsic decoherence &prop; Dk&sup2; (door #3)</td><td style={{ padding: '0.3rem' }}>Dissipative substrate</td><td style={{ padding: '0.3rem' }}>A direction, not a registered bet; gated because the dissipative substrate cannot host matter. The diffusion is in <em>position</em> (a random displacement), not momentum, so the CSL (&lambda;, r<sub>C</sub>) exclusion plane does not apply to it; the binding bound is nuclear stability (Borexino &sup1;&sup1;C): D/D<sub>Pl</sub> &lt; 4&times;10<sup>&minus;39</sup> (explorer 2026-10-26)</td><td style={{ padding: '0.3rem' }}>Collapse-model class; the correlated-noise variant is Amelino-Camelia 1999 (Nature 398, 216), excluded with Caltech 40 m data</td><td style={{ padding: '0.3rem' }}>None winnable: with a correlation length &#x2113;, nuclei exclude &#x2113; &lt; 17 km and aLIGO &#x2113; &lt; 3&times;10<sup>7</sup> m at the natural D; the survivor is a global translation</td></tr>
               </tbody>
@@ -217,7 +217,7 @@ export default function ForResearchers() {
           TEST-10) ran on, and its floor 1/&Omega;<sub>m</sub> = 3.17 is the one structural difference from MOND. A reader
           who takes the landing equation and tries to reproduce TEST-10 will compute the wrong function. The refutation
           ledger&apos;s &ldquo;Which C&rdquo; column names the function for every row; glossary entry:{' '}
-          <Link href="/glossary#which-c-which" style={{ color: 'var(--color-accent-violet)' }}>Which C? Which &gamma;?</Link>.
+          <Link href="/glossary#which-c-which-gamma" style={{ color: 'var(--color-accent-violet)' }}>Which C? Which &gamma;?</Link>.
         </div>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           An arriving expert should not have to excavate the failure documentation to find what
@@ -236,8 +236,7 @@ export default function ForResearchers() {
           against a strict &gt;&nbsp;0.3), so its convention-free content is that a bounded boost with
           B<sub>max</sub>&nbsp;&#8818;&nbsp;5.3 is excluded. TEST-10 fires at every candidate ceiling (B<sub>max</sub>&nbsp;&#8818;&nbsp;14
           excluded by SPARC dwarfs), conditional on the gas census. Whether TEST-09 stays in the count of 6 is pending
-          the project lead; TEST-10 is in the rule-independent floor. (Until 2026-11-07 this sentence called both kills
-          convention-dependent, one day after TEST-10&apos;s own card was corrected.) (Corrected 2026-07-27 and 2026-08-08; see revision notes.)
+          the project lead; TEST-10 is in the rule-independent floor.
           What remains citable are <strong>replications,
           quantified instances of known results, and executed negative results</strong> — the five
           numbered artifacts below survive the framework being wrong, precisely because they do not depend
@@ -251,14 +250,13 @@ export default function ForResearchers() {
           strongest empirical results as zero; the bolded line was reunified 2026-08-08.
         </details>
         <div id="forward-data" style={{ marginBottom: '1.25rem', fontSize: '0.85rem' }}>
-          <strong>What upcoming data can still move</strong> (added 2026-10-06 at a researcher simulated-visitor persona&apos;s request;
-          from the explorer&apos;s 2026-10-04 stopping table). None of these can confirm a novel prediction. Each can only
+          <strong>What upcoming data can still move</strong>. None of these can confirm a novel prediction. Each can only
           refute a reading or leave it standing.
           <div style={{ overflowX: 'auto' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '0.4rem', color: 'var(--color-text-secondary)' }}>
             <thead><tr><th style={{ textAlign: 'left', padding: '0.35rem 0.5rem' }}>Data</th><th style={{ textAlign: 'left', padding: '0.35rem 0.5rem' }}>Test</th><th style={{ textAlign: 'left', padding: '0.35rem 0.5rem' }}>Can confirm novelty?</th><th style={{ textAlign: 'left', padding: '0.35rem 0.5rem' }}>Can kill?</th><th style={{ textAlign: 'left', padding: '0.35rem 0.5rem' }}>Note</th></tr></thead>
             <tbody>
-              <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Gaia DR4 wide binaries (planned Dec 2026)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>TEST-02</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>No</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Only a branch already counted failed. The branch is already failed via Cassini (TEST-25) at every γ from 0.3 to 3 once a₀ is taken from SPARC at each γ (14.5–19.3σ; 2026-11-06). DR4 can only say which failed member it resembles: a Chae-type 1.4–1.5× maps to γ ≈ 0.4–0.64, a precise 1.1–1.2× to γ ≈ 0.8–2.7 (quasi-linear QUMOND boost ν_e(1 + L_e/3)), and a Newtonian null excludes the γ whose boost exceeds 1 + 2σ (γ = 3 still predicts 1.03–1.09), killing MOND&apos;s simple μ with them. Otherwise: a tie with MOND+EFE (Self-Eliminating-or-Tie on the Test Roadmap). It cannot move Bucket 0.</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>No Cassini-passing γ is left (until 2026-11-06 this cell named γ ≈ 1.5–2; that pass held a₀ fixed). Density branch: identically null in this ratio. Map from boost to γ: maintainer/scripts/wb_qumond_monopole_boost_vs_gamma.py, written before DR4.</td></tr>
+              <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Gaia DR4 wide binaries (2 December 2026)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>TEST-02</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>No</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Only a branch already counted failed. The branch is already failed via Cassini (TEST-25) at every γ from 0.3 to 3 once a₀ is taken from SPARC at each γ (14.5–19.3σ; 2026-11-06). DR4 can only say which failed member it resembles: a Chae-type 1.4–1.5× maps to γ ≈ 0.4–0.64, a precise 1.1–1.2× to γ ≈ 0.8–2.7 (quasi-linear QUMOND boost ν_e(1 + L_e/3)), and a Newtonian null excludes the γ whose boost exceeds 1 + 2σ (γ = 3 still predicts 1.03–1.09), killing MOND&apos;s simple μ with them. Otherwise: a tie with MOND+EFE (Self-Eliminating-or-Tie on the Test Roadmap). It cannot move Bucket 0.</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>No Cassini-passing γ is left (until 2026-11-06 this cell named γ ≈ 1.5–2; that pass held a₀ fixed). Density branch: identically null in this ratio. Map from boost to γ: maintainer/scripts/wb_qumond_monopole_boost_vs_gamma.py, written before DR4.</td></tr>
               <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>BIG-SPARC (~4,000 rotation curves; release pending)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>γ = 2 pin (ledger row #3)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>No: free γ is MOND</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Yes: on 166 galaxies, 1.6σ with Υ, D, i frozen (galaxy-level CV) and 1.9–2.3σ with them refitted per galaxy (Li+2018 priors) could sharpen to a refutation, or relax</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Would sharpen the γ = 2 pin; the γ ≳ 1.5–2 tail is no longer open on Cassini (it fails with SPARC&apos;s a₀, 2026-11-06)</td></tr>
               <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>RC100 high-redshift rotation curves (published; executed 2026-10-06)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>a₀(z) = cH(z)/2π trend</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>No: a₀ ∝ H is prior art</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Not the framework: the ratio between redshift bins is 1 for constant-a₀ MOND and 1.74 for a₀ ∝ H(z), which is cosmologically coupled MOND generally (tested on KMOS3D/SINS since Genzel+2017 and Milgrom 2017&apos;s reply), not a Synchronism-specific prediction</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Executed 2026-10-06 (pre-registered): non-discriminating. Measured ratio 1.11 against 1.74 for a₀ ∝ H(z) and 1 for constant a₀ (all three are plain ratios; the galaxy-bootstrap error is ±0.36 on ln of the ratio, i.e. 1.11 within a factor of ~1.4). Post-hoc only: a₀ ∝ Eⁿ fits n = 0.0 (galaxy-bootstrap 95% ±1.0), with this branch at the ~2σ edge. (Two estimators, so two numbers: the two-bin ratio alone gives n = ln 1.11 / ln 1.74 ≈ 0.19, ±0.65 at 1σ; the 0.0 is the fit of a₀ ∝ Eⁿ across the individual galaxies&apos; E(z), which /mond-unification quotes as n = 0.0 ± 0.5. They agree within errors; neither tests n = 1.) Deciding it needs N ≳ 170 and a measured method floor. Prior use of the same table: Del Popolo &amp; Chan 2024. The framework&apos;s a₀ = cH(z)/2π does imply n = 1; it is the framework&apos;s commitment and prior art at once. Ciocan et al. 2026&apos;s bins give n = 0.71 ± 0.13 with the normalisation free (bars pixel-read, read as 1σ); constant a₀ is out at about 5σ there, but that is Ciocan&apos;s own apparent-a₀ result, degenerate with a redshift drift in M/L, gas or pressure support. Ciocan&apos;s printed equation errors are 95% CIs. One statement of the whole row: <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>, row 4</td></tr>
               <tr><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>DESI DR3</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Dark energy w(z) (TEST-26); growth fσ₈ (TEST-04a)</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>No: the family contains Λ at γ = ½</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Only jointly with ΛCDM; TEST-04a&apos;s kill fires &lt;1% even under ΛCDM</td><td style={{ padding: '0.35rem 0.5rem', verticalAlign: 'top', borderTop: '1px solid rgba(148,163,184,0.2)' }}>Not a discriminator at current power</td></tr>
@@ -279,7 +277,7 @@ export default function ForResearchers() {
           <p style={{ margin: '0.4rem 0 0' }}>
             <strong>What limits it, stated before you cite it:</strong> n = 92 units from one program; two AI raters with
             &kappa;(caught-by) = 0.58, one of unknown model provenance; <strong>no human or different-model-family rater</strong>, which is
-            the same-corpus problem the pilot itself names; and no positive control, so whether the protocol could recognise a
+            the same-corpus problem the pilot itself names (the separate verdict re-run on <Link href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW</Link> did use a second vendor); and no post-cutoff arm, so whether the protocol could recognise a
             genuinely novel result is unmeasured. It is an observation about one record, with its denominator, not a general law.{' '}
             <a href="/a2acw#oracle-thesis" style={{ color: 'var(--color-accent-blue)' }}>Full account on the A2ACW page</a>.
           </p>
@@ -382,8 +380,7 @@ export default function ForResearchers() {
           opposite ways: at Refracted Gravity&apos;s f&nbsp;=&nbsp;0.089 the ceiling problem <em>is</em> solved (the
           can&apos;t-be-lifted fraction falls to 10&ndash;23%) and &chi;&sup2;/N rises to 195&ndash;2700 &mdash;
           <strong> 3 to 17&times; worse</strong>, because the boost then arrives in the inner disc where SPARC says
-          nothing should happen. <strong>How those numbers were computed</strong> (stated 2026-09-11, after a researcher
-          reader reasonably assumed the algebraic shortcut): by solving the full field equation
+          nothing should happen. <strong>How those numbers were computed</strong>: by solving the full field equation
           &nabla;&middot;[C&nabla;&Phi;] = 4&pi;G&rho; for each disc on an axisymmetric (R, z) grid, refraction term
           &nabla;C&middot;&nabla;&Phi; included and the solver validated against exact Hankel-transform discs &mdash;{' '}
           <em>not</em> by g = g<sub>bar</sub>/C. The &ldquo;3 to 17&times;&rdquo; is relative to the same law at the
@@ -421,8 +418,7 @@ export default function ForResearchers() {
             What this project adds is the <strong>quantified local-density instance</strong>: any
             gravity modification keyed on the <em>local volumetric density</em> &#x03C1;(r){' '}
             <strong>via algebraic coupling</strong> (C(&#x03C1;)&middot;g as a multiplicative scalar on
-            the force — the class the framework&apos;s <em>algebraic</em> reading belongs to. <strong>Scope (corrected
-            2026-09-11, simulated-visitor researcher persona; see revision notes):</strong> the framework&apos;s field-equation form &nabla;&middot;[C&nabla;&Phi;] = 4&pi;G&rho;
+            the force — the class the framework&apos;s <em>algebraic</em> reading belongs to. <strong>Scope:</strong> the framework&apos;s field-equation form &nabla;&middot;[C&nabla;&Phi;] = 4&pi;G&rho;
             (Refracted Gravity&apos;s) carries a gradient coupling &nabla;C&middot;&nabla;&Phi; in discs and is outside this
             statement as written. For that form the SPARC evidence is the disc-geometry grid in the box above (floored
             switch at &gamma; &isin; {'{'}0.489, 2{'}'}, f &isin; {'{'}0.089, 0.315{'}'}, knee 3&times;10&#x207B;&#x2074;&ndash;0.16
@@ -445,8 +441,7 @@ export default function ForResearchers() {
             equation&apos;s own tiny ambient-density lever.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem' }}>
-            <strong style={{ color: '#ef4444' }}>Companion result, no data required (added 2026-09-07,
-            simulated-visitor researcher persona):</strong> the framework&apos;s galaxy sector is not local either, so the
+            <strong style={{ color: '#ef4444' }}>Companion result, no data required:</strong> the framework&apos;s galaxy sector is not local either, so the
             no-go above is not a contest between a local theory and a non-local phenomenon.
             &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2; keys the coherence threshold to an
             r &rarr; &infin; quantity (BTFR-fixed by total baryonic mass), and B<sub>max</sub> = 1/&#x03A9;<sub>m</sub>{' '}
@@ -497,13 +492,12 @@ export default function ForResearchers() {
             so &rho;<sub>t</sub> &prop; a&#x2080;&sup2;/GV&sup2;); the framework asserts
             &rho;<sub>crit</sub> &prop; V<sup>+2</sup>; the Jeans-construction knee measured on SPARC carries exponent
             &minus;0.16 &plusmn; 0.19, so V<sup>+2</sup> is excluded at ~11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap). This is profile-independent within the family it covers.
-            (Citable form restated 2026-10-14. The 2026-07-02 form read &ldquo;inverted sign, 240&times;&ndash;300,000&times; magnitude
-            error&rdquo;; that magnitude is withdrawn, see below, and a withdrawn figure cannot be the citable form.){' '}
+           {' '}
             <strong>Measured since (2026-08-27; archive ledger row restated 2026-08-28):</strong> on SPARC the knee
             carries no velocity exponent at all; V<sup>+2</sup> is excluded at about 11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap), and a V<sup>&minus;2</sup> law <em>for this knee estimator</em> at about 10&sigma; by the same measured exponent (&minus;0.16 &plusmn; 0.19): the Jeans construction cannot be the a&#x2080; knee. This does not test MOND. MOND&apos;s transition density (mean enclosed density where g<sub>bar</sub> = a&#x2080;) is a different object and scales as V<sup>&minus;2</sup> by construction under the BTFR. That figure is for the forward regression of disc surface density on V, which is the question a law &#x03C1;<sub>crit</sub>(V) poses; the inverse and orthogonal fits answer different questions and would give about V<sup>+2</sup>, and the gap between them is the intrinsic scatter of real galaxies (r = 0.64; explorer finding 2026-08-27). The refutation stands as
             a <em>wrong exponent</em>. &ldquo;Inverted sign&rdquo; and the 240&times;&ndash;300,000&times; figures are the
             pre-measurement statement, kept in the parenthesis above as history only.{' '}
-            <strong>Scope (corrected 2026-07-27; see revision notes):</strong> the result does not hold for{' '}
+            <strong>Scope:</strong> the result does not hold for{' '}
             <em>any</em> local-&rho; MOND mimic — see the counterexample
             paragraph below. It holds for local-&rho; schemes that modulate the force{' '}
             <em>algebraically</em> (C(&#x03C1;)&middot;g), which is the class C(&#x03C1;) belongs to.
@@ -643,7 +637,7 @@ export default function ForResearchers() {
             velocity definition, and no contested external measurement</strong> &mdash; every other one does.
             Sole escape: &#x03B2;<sub>J</sub> = 4.5 lifts x to 0.385, at 17&#x03C3; from the framework&apos;s own
             calibration &#x03B2;<sub>J</sub> = 1.1 &plusmn; 0.2. Does <em>not</em> add to the refutation count.
-            <em>Scope (added 2026-09-16, simulated-visitor researcher persona):</em> the bound is about the A·V² knee only. The other knees
+            <em>Scope:</em> the bound is about the A·V² knee only. The other knees
             in use on this site are fixed densities and are not bounded by it: the globular-cluster-measured 0.161, the
             solar/cluster joint window 0.0039&ndash;0.078 (γ-dependent), and Refracted Gravity&apos;s fitted knees. A knee keyed on
             the host&apos;s V<sub>flat</sub> is also a global quantity, so this corollary is not an instance of the local-density no-go.
@@ -771,7 +765,7 @@ export default function ForResearchers() {
               the minimal custodial protector against radiative generation of this coefficient
               (Collins, Perez, Sudarsky, Urrutia &amp; Vucetich, <em>PRL</em> 93, 191301 (2004)).
               <strong> Verdict: severe naturalness/fine-tuning gap (CPSU 2004).</strong>{' '}
-              Computation (2026-06-26 explorer): tree-level c<sub>&#x03BC;&#x03BD;</sub>=0 by single-substrate universality (no species-dependent k² coefficient at tree level). One-loop correction is UV-dominated and Planck-cutoff-independent: c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;&#x03B1;/&#x03C0;&nbsp;&asymp;&nbsp;2&times;10<sup>&#x2212;3</sup>. Existing bounds: ≲10<sup>&#x2212;18</sup> (cavity MM), ≲10<sup>&#x2212;29</sup>–10<sup>&#x2212;30</sup> (nucleon comagnetometer). Fine-tuning gap: <strong>15–27 orders of magnitude</strong>. Two standard perturbative custodial escapes exist in the literature but are unexhibited in this framework: (1) <strong>SUSY</strong> (Groot Nibbelink &amp; Pospelov, <em>PRL</em> 94, 081601, 2005): forbids dim-3/4 LV operators entirely; (2) <strong>Anisotropic scale-hierarchy</strong> (Pospelov &amp; Shang, <em>PRD</em> 85, 105001, 2012): demonstrated for Hořava–Lifshitz gravity (the canonical absolute-time class) — separates the LV-generating scale from the electroweak scale via Λ_HL ≪ M_pl, suppressing SM-sector LV perturbatively without restoring boost invariance. The framework adopts neither: single-substrate universality is itself the obstacle to a Λ_HL ≪ M_pl scale separation. Status: <em>open custodial-mechanism gap, not a closed refutation.</em> <strong>Why not &ldquo;refuted&rdquo;, argued (added 2026-10-23, researcher simulated-visitor persona):</strong> in the LV literature an effective theory that predicts c<sub>&#x03BC;&#x03BD;</sub> ~ &#x03B1;/&#x03C0; with no protecting mechanism counts as excluded, and on that reading the <em>minimal</em> completion (single substrate, absolute time, Standard-Model couplings) is excluded at its natural value; the research ledger records it that way. The framework as a whole is not counted refuted only because it specifies no interacting completion, so there is no EFT whose coefficient can be computed beyond that minimal one. That is a debt, not a defence: until a custodial mechanism is exhibited, &ldquo;not refuted&rdquo; here means &ldquo;not yet specified enough to refute&rdquo;.
+              Computation (2026-06-26 explorer): tree-level c<sub>&#x03BC;&#x03BD;</sub>=0 by single-substrate universality (no species-dependent k² coefficient at tree level). One-loop correction is UV-dominated and Planck-cutoff-independent: c<sub>&#x03BC;&#x03BD;</sub>&nbsp;~&nbsp;&#x03B1;/&#x03C0;&nbsp;&asymp;&nbsp;2&times;10<sup>&#x2212;3</sup>. Existing bounds: ≲10<sup>&#x2212;18</sup> (cavity MM), ≲10<sup>&#x2212;29</sup>–10<sup>&#x2212;30</sup> (nucleon comagnetometer). Fine-tuning gap: <strong>15–27 orders of magnitude</strong>. Two standard perturbative custodial escapes exist in the literature but are unexhibited in this framework: (1) <strong>SUSY</strong> (Groot Nibbelink &amp; Pospelov, <em>PRL</em> 94, 081601, 2005): forbids dim-3/4 LV operators entirely; (2) <strong>Anisotropic scale-hierarchy</strong> (Pospelov &amp; Shang, <em>PRD</em> 85, 105001, 2012): demonstrated for Hořava–Lifshitz gravity (the canonical absolute-time class) — separates the LV-generating scale from the electroweak scale via Λ_HL ≪ M_pl, suppressing SM-sector LV perturbatively without restoring boost invariance. The framework adopts neither: single-substrate universality is itself the obstacle to a Λ_HL ≪ M_pl scale separation. Status: <em>open custodial-mechanism gap, not a closed refutation.</em> <strong>Why not &ldquo;refuted&rdquo;, argued:</strong> in the LV literature an effective theory that predicts c<sub>&#x03BC;&#x03BD;</sub> ~ &#x03B1;/&#x03C0; with no protecting mechanism counts as excluded, and on that reading the <em>minimal</em> completion (single substrate, absolute time, Standard-Model couplings) is excluded at its natural value; the research ledger records it that way. The framework as a whole is not counted refuted only because it specifies no interacting completion, so there is no EFT whose coefficient can be computed beyond that minimal one. That is a debt, not a defence: until a custodial mechanism is exhibited, &ldquo;not refuted&rdquo; here means &ldquo;not yet specified enough to refute&rdquo;.
             </li>
             <li>
               <strong>Velocity-anisotropic phase-transition threshold (Phase-16, 2026-06-24).</strong>{' '}
@@ -815,7 +809,7 @@ export default function ForResearchers() {
             <ValidationBadge status="failed" />
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
-            Failed: S &le; 2 in every construction built (executed 2026-06-21 / 2026-07-06). The local arm stays at 2 because it is local (factorisable): that is Bell&apos;s theorem. No-signaling alone would allow up to 2&radic;2 (quantum) or 4 (a PR box). The two nonlocal arms stay at 2 for a construction reason: their grid mixing turned out to be equivalent to relabelling the measurement angles. (Wording corrected 2026-09-25; it previously read &ldquo;every no-signaling construction&rdquo;, which a graduate-physics reader correctly flagged as wrong: the bound comes from locality, not from no-signaling.) It is counted among
+            Failed: S &le; 2 in every construction built (executed 2026-06-21 / 2026-07-06). The local arm stays at 2 because it is local (factorisable): that is Bell&apos;s theorem. No-signaling alone would allow up to 2&radic;2 (quantum) or 4 (a PR box). The two nonlocal arms stay at 2 for a construction reason: their grid mixing turned out to be equivalent to relabelling the measurement angles. It is counted among
             the 6 as a theorem-level check, not as an executed refutation of the substrate class.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
@@ -946,7 +940,7 @@ export default function ForResearchers() {
             explorer 2026-10-21; see <Link href="/test-catalog#what-excluded-covers" style={{ color: 'var(--color-accent-blue)' }}>what &ldquo;excluded&rdquo; covers</Link>): its published ρ<sub>c</sub> = 10⁻²⁴·²⁵ g/cm³ = 0.0083
             M<sub>☉</sub>/pc³ lies below the excluded window, and every value in that set&apos;s 1σ range
             (0.0052–0.0158 M<sub>☉</sub>/pc³) scores within MOND+EFE&apos;s mismatch on the same statistic. <em>Provenance
-            (corrected 2026-09-16, explorer 2026-09-15):</em> 0.0083 (with ε₀ = 0.089, Q = 0.47) is RG&apos;s <strong>elliptical-galaxy
+           :</em> 0.0083 (with ε₀ = 0.089, Q = 0.47) is RG&apos;s <strong>elliptical-galaxy
             (E0) calibration</strong>, Cesare et al. 2022 (arXiv:2102.12499), not the disc one. RG&apos;s DiskMass disc calibrations
             are ρ<sub>c</sub> = 7.4×10⁻⁴ (mean; ε₀ = 0.56, Q = 0.92) and 4.3×10⁻³ M<sub>☉</sub>/pc³ (joint fit; ε₀ = 0.661, Q = 1.79).
             Both also sit below the excluded window, so no verdict changes.
@@ -978,7 +972,7 @@ export default function ForResearchers() {
             The residuals carry a statistical error (&plusmn;0.027 on each mean; the density law is 7.8 stat-σ from zero, Newton 2.1);
             what has no number is the systematic budget. Still unaddressed by this control: escapers, anisotropy, L3, and the
             N-body-derived r<sub>c</sub> of the King-like model. Cite it as an L2 window, not as an exclusion.
-            This sits beside the B<sub>max</sub> ≲ 14 bound from SPARC dwarfs as the second class-level constraint this
+            This sits beside the boost-cap bound from SPARC dwarfs (B<sub>max</sub> &asymp; 7.5 at 3&sigma; for one disc, &asymp; 5.7 after a 153-disc trials correction, nuisances propagated; the often-quoted 13.7 is a sample maximum) as the second class-level constraint this
             program has produced.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
@@ -1006,7 +1000,7 @@ export default function ForResearchers() {
             solar-neighbourhood (Oort-limit) constraint into a joint no-go. Evaluated <em>at the same γ</em>, the two windows overlap everywhere from γ = 0.3 to 3: the clusters
             call the bottom of the solar window <em>ok</em> and its top <em>marginal</em>, leaving a joint window at
             ρ<sub>c</sub> ∈ 0.0039–0.0079 M<sub>☉</sub>/pc³ (γ = 0.489) and 0.0735–0.078 (γ = 2), sliding as
-            e<sup>1/γ</sup> between them (corrected 2026-09-09; see revision notes). <strong>Quote this window with its γ attached; it is meaningless without one.</strong> Full result,
+            e<sup>1/γ</sup> between them. <strong>Quote this window with its γ attached; it is meaningless without one.</strong> Full result,
             robustness table and the γ fork it opens for this framework specifically:{' '}
             <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
           </p>
@@ -1095,7 +1089,7 @@ export default function ForResearchers() {
             fσ₈ suppression maps to a &#x3bc;&#x2080; inside that 1&#x03C3; band. Honest reading: <strong>the test
             as registered lacked the power to discriminate this framework from GR</strong> &mdash; the
             &#x03C3;&#x2088; comparison is real but is not the registered kill. A single bin
-            (LRG1, z=0.51) also sits above fiducial (ratio 1.09 +0.12/&minus;0.14, ~0.6&#x03C3;; quoted as 1.16&plusmn;0.13, the QSO row, until 2026-10-10), and the
+            (LRG1, z=0.51) also sits above fiducial, and the
             DESI DR1 full-shape RSD <em>ensemble</em> growth index &#x03B3;<sub>growth</sub>&nbsp;&#x2248;&nbsp;0.58,
             above GR&apos;s 0.545, leans mildly toward suppression &mdash; the predicted direction. Caveats:
             the prediction was <strong>post-hoc</strong> (&#x03C3;&#x2088; calibrated to the S8 lensing tension,
@@ -1126,7 +1120,7 @@ export default function ForResearchers() {
           <Link href="/tier-1-existing" style={{ fontSize: '0.85rem' }}>TEST-04a full accounting &rarr;</Link>
         </div>
 
-        {/* Open question: A2ACW (was numbered artifact 2 until 2026-09-14; moved out of the citable list) */}
+        {/* Open question: A2ACW */}
         <h2 id="a2acw-open-question" style={{ fontSize: '1.2rem', marginTop: '2rem', scrollMarginTop: '5rem' }}>Open question (not citable as a null)</h2>
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid #38bdf8' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -1316,7 +1310,7 @@ export default function ForResearchers() {
               demotion from a discovery.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              <strong>Three precisions on the above (added 2026-07-27, from an simulated-reader review pass).</strong>{' '}
+              <strong>Three precisions on the above.</strong>{' '}
               (1) <em>The positive class is &ldquo;is a reparametrization.&rdquo;</em> Under the opposite
               convention the sensitivity and specificity labels invert; both are defensible, and J = 0
               either way, but the convention was never stated and two expert readers have now read the
@@ -1364,7 +1358,7 @@ export default function ForResearchers() {
               None of the site&apos;s Reparametrization badges rests on an A2ACW verdict alone. Each cites a checkable identity
               (the &gamma; = &frac12; MOND identity, Freeman&apos;s &Sigma;<sub>0</sub>, the Born rule, the L&uuml;ders reset), a computed
               null (the chemistry Z-polynomial), a data fit (dark energy on DESI DR2), or named prior art (Debye, Abrikosov&ndash;Gor&rsquo;kov,
-              Breit&ndash;Wigner, Milgrom&apos;s cH<sub>0</sub>/6, Cardassian models). Five are thinly supported but still not A2ACW-only: two
+              Breit&ndash;Wigner, Milgrom&apos;s a<sub>0</sub> ~ cH<sub>0</sub>, Cardassian models). Five are thinly supported but still not A2ACW-only: two
               gamma-boundary table rows extended from the chemistry null without a per-row computation, the &sigma;<sub>int</sub> row, the
               Core Idea &ldquo;regime definition&rdquo; badges, and the archive&apos;s F&Sigma;IR and Intent-field rows. Two caveats. The
               prior-art <em>matches</em> were made by LLM sessions of the same instrument class, so the cited result is checkable but the
@@ -1415,6 +1409,21 @@ export default function ForResearchers() {
       </section>
 
       <RelatedConcepts currentPath="/for-researchers" />
+      <details id="corrections-log" style={{ margin: '2rem 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim). Dated corrections moved here from the running text on 2026-11-08, verbatim, in page order.</summary>
+        <ul style={{ paddingLeft: '1.1rem' }}>
+          <li>Until 2026-11-07 this sentence called both kills convention-dependent, one day after TEST-10&apos;s own card was corrected.</li>
+          <li>Corrected 2026-07-27 and 2026-08-08; see revision notes.</li>
+          <li>corrected 2026-09-11, simulated-visitor researcher persona; see revision notes</li>
+          <li>Citable form restated 2026-10-14. The 2026-07-02 form read &ldquo;inverted sign, 240&times;&ndash;300,000&times; magnitude error&rdquo;; that magnitude is withdrawn, see below, and a withdrawn figure cannot be the citable form.</li>
+          <li>corrected 2026-07-27; see revision notes</li>
+          <li>Wording corrected 2026-09-25; it previously read &ldquo;every no-signaling construction&rdquo;, which a graduate-physics reader correctly flagged as wrong: the bound comes from locality, not from no-signaling.</li>
+          <li>corrected 2026-09-16, explorer 2026-09-15</li>
+          <li>corrected 2026-09-09; see revision notes</li>
+          <li>ratio 1.09 +0.12/&minus;0.14, ~0.6&#x03C3;; quoted as 1.16&plusmn;0.13, the QSO row, until 2026-10-10</li>
+          <li>was numbered artifact 2 until 2026-09-14; moved out of the citable list</li>
+        </ul>
+      </details>
     </>
   );
 }

@@ -11,7 +11,7 @@ export type BadgeFamily = 'mrh' | 'descriptive';
 export const BADGE_FAMILIES: Record<BadgeFamily, { name: string; gloss: string }> = {
   mrh: {
     name: 'MRH-relationship',
-    gloss: 'where the claim sits relative to current research focus (MRH = Markov Relevancy Horizon, the framework\'s word for the context something is currently relevant within)',
+    gloss: 'where the claim sits relative to current research focus (MRH = Markov Relevancy Horizon, the framework\'s word for the context something is currently relevant within; the badge borrows the word by analogy and says nothing about physics)',
   },
   descriptive: { name: 'Descriptive', gloss: 'what happened when the claim met data' },
 };

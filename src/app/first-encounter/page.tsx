@@ -25,7 +25,7 @@ const steps = [
   },
   {
     title: 'The γ Parameter — the original idea, and what happened to it',
-    content: `γ sets how sharply the dial turns. The original idea was γ = 2/√N_corr, where N_corr is how many
+    content: `C is the dial. γ is a setting on it: how early the dial starts to turn as density rises. It was meant to set how sharply the dial turns, but no γ makes this curve sharp. The original idea was γ = 2/√N_corr, where N_corr is how many
     particles move together as a unit: one electron alone gives γ = 2, a crystal of 10²⁴ atoms gives γ ≈ 10⁻¹².
     That formula did not survive testing. Where it made a checkable prediction, the sign came out backwards
     (predicted correlation +0.55, measured −0.55). In plain words: the formula said galaxies with fewer stars moving
@@ -42,7 +42,7 @@ const steps = [
     turned until the curve matched. A fitted match is not evidence, and here the tuned knob simply lands on an older,
     already-known theory (MOND). Matching MOND tells you the idea can reproduce MOND, not that it adds anything. MOND wrote this
     shape down in 1983, so matching it after tuning adds nothing new.`,
-    highlight: 'In short: the formula for the dial failed. The dial setting the framework chose loses to MOND, an older rival theory. When we tuned the dial until it matched galaxies, the equation turned into MOND, so it added nothing new there.',
+    highlight: 'In short: the formula for γ failed. The γ the framework chose loses to MOND, an older rival theory. When we tuned γ until it matched galaxies, the equation turned into MOND, so it added nothing new there.',
   },
   {
     title: 'Where γ ≈ 1',
@@ -66,7 +66,7 @@ const steps = [
     curious: `Verdict first: probably a coincidence, and not evidence for this framework. Why: c and H₀ (the Hubble
     constant) can only be combined into an acceleration one way, cH₀, so any formula of the form cH₀ × (a number) will
     land near MOND's a₀ for some number. Here the number is 1/(2π), which nothing derives; with it the match is off by
-    ~13%. Milgrom noticed a₀ ≈ cH₀/6 in 1983, so the closeness was known before this framework. See Honest Assessment.`,
+    ~13%. Milgrom noticed that a₀ is close to cH₀ in 1983, so the closeness was known before this framework. See Honest Assessment.`,
     highlight: 'A number measured in galaxies sits suspiciously close to a number from the expansion of the universe. Nobody knows why, and this framework does not explain it either.',
   },
   {

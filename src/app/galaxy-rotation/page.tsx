@@ -7,7 +7,7 @@ import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
-import { GALAXIES_RUN, GALAXIES_RUN_BREAKDOWN, GALAXIES_MECHANISM } from '@/lib/ledger';
+import { GALAXIES_RUN, GALAXIES_RUN_BREAKDOWN, GALAXIES_MECHANISM, TEST25_STATUS_SENTENCE } from '@/lib/ledger';
 
 export default function GalaxyRotation() {
   return (
@@ -23,8 +23,7 @@ export default function GalaxyRotation() {
         keyed on the mean matter density (the cosmology&apos;s) it adds a constant to the Friedmann equation, which is &Lambda;. So the galaxy
         fit (&#x03B3; = 0.489) and the DESI fit (&#x03B3; = 0.487) are each dataset choosing its own standard model, in different variables,
         at the one point where this family contains both. The match has no power to fail and is not evidence for the framework.
-        Details: <Link href="/dark-energy#gamma-half-nesting" style={{ color: 'var(--color-accent-blue)' }}>the cosmology side</Link>. (Box added 2026-10-22 at a
-        graduate-physics simulated-visitor persona&apos;s request; the statement was already on this page, lower down.)
+        Details: <Link href="/dark-energy#gamma-half-nesting" style={{ color: 'var(--color-accent-blue)' }}>the cosmology side</Link>.
       </div>
       <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
         Sub-note: the registered ALFALFA test, TEST-03, was never run as registered (see correction below), so that one
@@ -66,8 +65,7 @@ export default function GalaxyRotation() {
           Tier 1 as TEST-03s &mdash; not the Freeman-law card TEST-08). The structural reason
           is in the next paragraph; the tested-and-killed compander variants are further down.
           <span style={{ display: 'block', marginTop: '0.5rem', fontSize: '0.85rem' }}>
-            <strong>How C entered the RAR fit, in one sentence (added 2026-09-08; asked by two simulated-visitor personas who
-            showed the alternatives give different force laws):</strong> the compander was used as an <em>implicit</em>{' '}
+            <strong>How C entered the RAR fit, in one sentence:</strong> the compander was used as an <em>implicit</em>{' '}
             interpolating function keyed on g<sub>obs</sub> &mdash; the script solves
             g<sub>bar</sub> = g<sub>obs</sub>·tanh(γ ln(1 + g<sub>obs</sub>/a₀′)) for g<sub>obs</sub> with a₀′ profiled
             (<code style={{ fontSize: '0.78rem' }}>simulations/sparc_tanhlog_profile.py</code>, research repo, line 85). At
@@ -162,7 +160,7 @@ export default function GalaxyRotation() {
               <li>No environment result exists for this sample: the registered TEST-03 environment-density test on it was never run. The p&nbsp;=&nbsp;5&nbsp;&times;&nbsp;10<sup>&minus;6</sup>, R&sup2;&nbsp;=&nbsp;0.14 figure this bullet used to show is a different measurement on a different sample (SPARC, N&nbsp;&asymp;&nbsp;130&ndash;175) of a different predictor: <strong>Hubble type</strong>, not environment (see the Honest Caveat below).</li>
               <li>&#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex is <strong>not a BTFR scatter: it is independent of V (shuffling V across galaxies gives 0.0870 vs 0.0864; explorer 2026-10-23), the residual of an in-sample photometric mass model</strong>, so it has no CDM or MOND verdict (corrected 2026-10-24; the like-for-like inverse BTFR on the same 677 galaxies is 0.073 dex in log V, against abundance matching&apos;s 0.064). Before that it read: <strong>equal to the source session&apos;s own CDM figure</strong>, not to published &Lambda;CDM predictions (Desmond 2017 abundance matching gives ~0.25 dex; a verdict suspended on 2026-10-09 and withdrawn 2026-10-24; z&nbsp;=&nbsp;+0.5 in the source session&apos;s definitive run), not below CDM. An earlier &minus;6.2&sigma; &ldquo;below CDM&rdquo; reading from an intermediate session was retracted in-archive as premature once distance-noise modeling was added; the verdict is also modeling-choice-dependent (z ranges +0.5 to +64). See{' '}
                 <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link> for the full history.</li>
-              <li>Cluster vs. field scatter: no executed comparison on this sample. (This bullet said &ldquo;cluster vs. field galaxies show different scatter &mdash; the effect is real but sub-threshold&rdquo; until 2026-10-21; no run behind it was found.)</li>
+              <li>Cluster vs. field scatter: no executed comparison on this sample.</li>
             </ul>
           </div>
         </div>
@@ -188,7 +186,7 @@ export default function GalaxyRotation() {
           under different theoretical umbrellas. The 2&#x03C0; prefactor is chosen to match the
           observed value; cH&#x2080;/(2&#x03C0;) &#x2248; 1.04&#x00D7;10&#x207B;&#xB9;&#x2070; m/s&#x00B2; at the
           site-standard H&#x2080; = 67.4
-          undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;13%. Against this framework&apos;s own SPARC fit the comparison changes but gets no sharper (added 2026-10-04, from a graduate-physics visitor): the scale the fit identifies is a₀′/&#x03B3; (the compander&apos;s deep-regime limit; 2a₀′ at &#x03B3; = ½). It stays at 1.07&ndash;1.09&times;10⁻¹⁰ across the whole &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 band while a₀′ itself moves 3.6&times;, and reads 1.16&ndash;1.18&times;10⁻¹⁰ under the velocity-&chi;² fits. cH₀/2&pi; sits 3&ndash;12% below it at H₀ = 67.4. Closing the gap needs H₀ &asymp; 69&ndash;70.5 for the &Upsilon;-sweep values (inside the Planck&ndash;SH0ES range) and &asymp; 75&ndash;76 for the velocity-&chi;² values (above SH0ES&apos;s 73), so only the low end is absorbed by the H₀ tension (corrected 2026-10-12: read &ldquo;inside the &plusmn;5% the H₀ tension allows&rdquo;, which a 12% gap is not; graduate simulated-visitor persona). Still Milgrom&apos;s 1983 coincidence, still a reparametrization (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>).
+          undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;13%. Against this framework&apos;s own SPARC fit the comparison changes but gets no sharper: the scale the fit identifies is a₀′/&#x03B3; (the compander&apos;s deep-regime limit; 2a₀′ at &#x03B3; = ½). It stays at 1.07&ndash;1.09&times;10⁻¹⁰ across the whole &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 band while a₀′ itself moves 3.6&times;, and reads 1.16&ndash;1.18&times;10⁻¹⁰ under the velocity-&chi;² fits. cH₀/2&pi; sits 3&ndash;12% below it at H₀ = 67.4. Closing the gap needs H₀ &asymp; 69&ndash;70.5 for the &Upsilon;-sweep values (inside the Planck&ndash;SH0ES range) and &asymp; 75&ndash;76 for the velocity-&chi;² values (above SH0ES&apos;s 73), so only the low end is absorbed by the H₀ tension. Still Milgrom&apos;s 1983 coincidence, still a reparametrization (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>).
           Synchronism&apos;s contribution is the coherence-function mechanism that provides a
           <em>reason</em> for this scale &mdash; not the identification itself.
           See{' '}<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
@@ -374,7 +372,7 @@ export default function GalaxyRotation() {
             RMS identical to McGaugh to four digits (with &Upsilon; frozen at 0.5 and points unweighted; with per-galaxy nuisances
             refitted the free fit moves to &#x03B3;&#x0302; &asymp; 0.6 [0.43, 0.95]). ΔBIC=+7 is entirely the BIC penalty for the
             extra parameter — the fit improvement is negligible (Δχ² ≈ −0.84, derived below).{' '}
-            <strong>Made quantitative (2026-07-27, simulated-reader review point):</strong> this is the table&apos;s third row, the
+            <strong>Made quantitative:</strong> this is the table&apos;s third row, the
             free-&#x03B3; compander against McGaugh&apos;s ν, scored on points. It is not the galaxy-level +10.9 above, which compares
             &#x03B3; = 2 with McGaugh&apos;s ν (one fitted scale each, so no penalty term), with N = 166 in place of 2,807. With N = 2807,
             ln&nbsp;N = 7.94, so one added free parameter costs +7.94 in BIC <em>before any likelihood
@@ -410,7 +408,7 @@ export default function GalaxyRotation() {
             color: 'var(--color-text-secondary)',
           }}>
             <strong style={{ color: 'var(--color-accent-violet)' }}>Stated exactly, not asymptotically
-            (added 2026-09-07, simulated-visitor graduate-physics persona).</strong> The paragraph above argues
+           .</strong> The paragraph above argues
             MOND-equivalence through a <em>tail</em> exponent. It holds <em>identically</em>, and the exact
             version is both shorter and more damning. Because e<sup>&#x03B3;ln(1+x)</sup> = (1+x)<sup>&#x03B3;</sup>,
             <span style={{ display: 'block', textAlign: 'center', fontFamily: 'monospace', margin: '0.5rem 0', color: 'var(--color-text-primary)' }}>
@@ -429,8 +427,8 @@ export default function GalaxyRotation() {
             &#x03BC;-form. The identity does <em>not</em> survive keying on g<sub>bar</sub>: with g<sub>obs</sub> = g<sub>bar</sub>/C(g<sub>bar</sub>/a&#x2080;&prime;)
             at &#x03B3; = &frac12; one gets g<sub>obs</sub> = g<sub>bar</sub> + 2a&#x2080;&prime;, a constant acceleration offset (v&sup2; rising linearly
             with r), not a flat curve and not MOND: at g<sub>bar</sub>/a&#x2080;&prime; = 0.01 the &#x03BC;-form gives g<sub>obs</sub>/a&#x2080;&prime; = 0.147
-            (deep-MOND &radic;(2x) = 0.141) while the g<sub>bar</sub>-keyed division gives 2.01. (The primes were missing until 2026-10-24; in units of Milgrom&apos;s a&#x2080; = 2a&#x2080;&prime; the same point reads g<sub>bar</sub>/a&#x2080; = 0.005 &rarr; 0.073, graduate simulated-visitor persona.) The &ldquo;g<sub>obs</sub> = g<sub>bar</sub>/C&rdquo;
-            written elsewhere on this page is the floored TEST-09/10 form, a different function (added 2026-09-29, graduate-physics simulated-visitor persona). The free-&#x03B3; SPARC fit lands at <strong>0.489, which is 2% from the
+            (deep-MOND &radic;(2x) = 0.141) while the g<sub>bar</sub>-keyed division gives 2.01. The &ldquo;g<sub>obs</sub> = g<sub>bar</sub>/C&rdquo;
+            written elsewhere on this page is the floored TEST-09/10 form, a different function. The free-&#x03B3; SPARC fit lands at <strong>0.489, which is 2% from the
             unique &#x03B3; at which this model does not resemble MOND but <em>is</em> MOND.</strong> The same
             cancellation runs the cosmology sector: at &#x03B3; = &frac12;, (1&minus;C)/C = 2/x, so the substituted
             dark-energy density &#x03C1;<sub>DE</sub> = &#x03C1;<sub>m</sub>(1&minus;C)/C = 2&#x03C1;<sub>crit</sub>{' '}
@@ -439,8 +437,7 @@ export default function GalaxyRotation() {
             variable), exactly &Lambda; when x is the mean matter density (the cosmology&apos;s). The galaxy fit (&#x03B3; = 0.489) and
             DESI DR2 (&#x03B3; = 0.487) both land there, but they are fits of the same function in <em>different</em> variables, so
             this is each sector&apos;s incumbent fitting its own data, not one parameter measured twice. The density-keyed galaxy
-            law, which shares cosmology&apos;s variable, fits SPARC best at &#x03B3; &rarr; 0.046 and is refuted (corrected
-            2026-09-24; this used to read &ldquo;one algebraic fact with two faces&rdquo;). See{' '}
+            law, which shares cosmology&apos;s variable, fits SPARC best at &#x03B3; &rarr; 0.046 and is refuted. See{' '}
             <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>{' '}
             and <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>.
           </div>
@@ -449,14 +446,13 @@ export default function GalaxyRotation() {
             A QUMOND interpolating function used for galaxies also acts in the Solar System. There the Galactic field
             induces a small quadrupole in the Sun&apos;s potential, and Cassini bounds it. That quadrupole is set near
             the Sun&apos;s MOND radius, √(GM☉/a₀) ≈ 7,000&nbsp;AU, where the Sun&apos;s field is about a₀, so it tests
-            the interpolating function <em>in its transition</em>. <strong>The number to quote is the published,
-            marginalized 8.7σ</strong> (Desmond, Hees &amp; Famaey 2024) for the MOND family near γ ≈ ½. The measured bound is
+            the interpolating function <em>in its transition</em>. <strong>{TEST25_STATUS_SENTENCE}</strong> The measured bound is
             Q₂ = (3 ± 3)×10⁻²⁷&nbsp;s⁻² (Hees, Folkner, Jacobson &amp; Park 2014, PRD 89, 102002); an updated DE440 analysis gives
             (1.6 ± 1.8)×10⁻²⁷&nbsp;s⁻² and puts the galaxy tension at 3&ndash;15σ depending on mass modelling (Park et&nbsp;al. 2026,
             PRD 114, 024066). The in-house numbers below already use the 2026 value; the 3&ndash;15σ range is theirs. Our own pre-registered squeeze used the point-count SPARC interval
-            (ΔBIC ≤ 10 ⇒ γ = 0.425&ndash;0.600) and found an empty intersection there: +17.95σ at the SPARC fit, unmarginalized.
-            <strong> That emptiness holds only under point independence.</strong> With the galaxy as the unit, the retained
-            interval widens to roughly γ ≈ 0.3&ndash;1.7 (the registered statistic: the ΔBIC ≤ 10 band against the best fit, N = 166, nuisances frozen as in the original run; not the same object as the 95% interval [0.43, 0.95] on the best-fit &#x03B3; above, which profiles the nuisances), and the intersection is <strong>still empty</strong>. With SPARC&apos;s own a₀ refit at each γ, Cassini fails at 14.5&ndash;19σ for every γ from 0.3 to 3, and at 13&ndash;18σ with the 32 bulge-dominated galaxies dropped (2026-11-06 and 11-07; scripts <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/cassini_q2_at_sparc_profiled_a0_high_gamma.py</code> and <code style={{ fontSize: '0.78rem' }}>compander_cassini_nobulge_profiled_a0.py</code>). So TEST-25&apos;s in-house kill does not depend on N<sub>eff</sub>, and it sits in the count&apos;s rule-independent floor on{' '}
+            (ΔBIC ≤ 10 ⇒ γ = 0.425&ndash;0.600) and found an empty intersection there: +17.95σ at the SPARC fit, M/L pinned.
+            With the galaxy as the unit, the retained
+            interval widens to roughly γ ≈ 0.3&ndash;1.7 (the registered statistic: the ΔBIC ≤ 10 band against the best fit, N = 166, nuisances frozen as in the original run; not the same object as the 95% interval [0.43, 0.95] on the best-fit &#x03B3; above, which profiles the nuisances), and the intersection is <strong>still empty</strong>. With SPARC&apos;s own a₀ refit at each γ and M/L pinned, Cassini fails at 14.5&ndash;19σ for every γ from 0.3 to 3, and at 13&ndash;18σ with the 32 bulge-dominated galaxies dropped (2026-11-06 and 11-07; scripts <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/cassini_q2_at_sparc_profiled_a0_high_gamma.py</code> and <code style={{ fontSize: '0.78rem' }}>compander_cassini_nobulge_profiled_a0.py</code>). So TEST-25&apos;s in-house kill does not depend on N<sub>eff</sub>, and it sits in the count&apos;s rule-independent floor on{' '}
             <a href="/honest-assessment#count-rule" style={{ color: 'var(--color-accent-blue)' }}>/honest-assessment</a>. This holds for a modified-Poisson (QUMOND) reading of the law; an algebraic g = g<sub>bar</sub>/C law has no external-field quadrupole, and its Solar-System test is the direct tail below.
             <details style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}><summary style={{ cursor: 'pointer' }}>History of this paragraph</summary>
             From 2026-10-24 to 2026-11-06 this paragraph said the galaxy-level intersection was &ldquo;narrow, not empty&rdquo;, with a steep-return survivor near γ ≈ 1.5&ndash;1.7, so the in-house kill fired only with points as independent. That relied on a Cassini pass at γ ≳ 1.5 computed with a₀ held fixed at 1.03×10⁻¹⁰ for every γ; with SPARC&apos;s a₀ no γ up to 3 passes. The conclusion was left behind for a day after the pass was withdrawn (found by a graduate simulated-visitor persona, 2026-11-07).
@@ -489,7 +485,7 @@ export default function GalaxyRotation() {
             (−9,576 vs −0.32 ± 0.47 mas/cy). That empties the point-level SPARC intersection without the quadrupole
             (ΔBIC +59 to reach 0.87). At galaxy level it does not: the published-nuisance interval reaches 0.95, so a reading
             with no external-field effect survives at γ ≈ 0.87–0.95 for about 1.2σ of SPARC cost, less than the ~2σ the
-            Q₂-passing γ ≳ 1.5 was thought to need (with SPARC&apos;s a₀ at each γ no γ up to 3 passes Q₂, 2026-11-06). For readings with no external field, the binding Solar-System number is 0.87, not 1.5. <strong>Globular clusters disfavour that corner at about 3σ; they do not close it</strong> (explorer 2026-10-30, pre-registered): refit per law with a photometric tidal-radius prior, the compander at γ = 0.9 with no external field costs Δχ² = +54 ± 19 against Newton (cluster bootstrap; +93 ± 32 with tangential-or-isotropic orbits), conditional on the mass model. The statistic sits in the deep regime, where only a₀′/γ enters, so this is MOND-without-EFE&apos;s disfavouring, inherited. (Corrected 2026-10-31: an earlier &ldquo;10.6σ&rdquo; here was a paired difference in which the observed slope cancels; it measured how far apart the models are, not which one the data prefer.) (<Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>GC table</Link>).
+            Q₂-passing γ ≳ 1.5 was thought to need (with SPARC&apos;s a₀ at each γ no γ up to 3 passes Q₂, 2026-11-06). For readings with no external field, the binding Solar-System number is 0.87, not 1.5. <strong>Globular clusters disfavour that corner at about 3σ; they do not close it</strong> (explorer 2026-10-30, pre-registered): refit per law with a photometric tidal-radius prior, the compander at γ = 0.9 with no external field costs Δχ² = +54 ± 19 against Newton (cluster bootstrap; +93 ± 32 with tangential-or-isotropic orbits), conditional on the mass model. The statistic sits in the deep regime, where only a₀′/γ enters, so this is MOND-without-EFE&apos;s disfavouring, inherited. (<Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>GC table</Link>).
             It is also inherited, not framework-specific &mdash; at γ = &frac12; the compander <em>is</em> simple μ.{' '}
             <strong>Two Solar-System bounds, two observables.</strong> The compander returns to Newton as a power law,
             1 &minus; C &asymp; 2x<sup>&minus;2γ</sup>, and that tail is what the perihelion bound (γ &lt; 0.87 excluded) probes.
@@ -497,7 +493,7 @@ export default function GalaxyRotation() {
             only through the external-field quadrupole Q₂ that{' '}
             <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link> uses, where the
             compander was thought to pass at γ &#x2273; 1.5; with a<sub>0</sub> taken from SPARC at each γ it passes at no γ up to 3 (2026-11-06). When McGaugh&apos;s ν and simple μ are listed together as failing TEST-25, that is the
-            quadrupole channel only (sentence added 2026-10-26, graduate-physics simulated-visitor persona). (
+            quadrupole channel only. (
             <a href="https://github.com/dp-web4/synchronism-site/blob/main/explorer/findings/direct-tail-planetary-precession-floor-gamma-087-closes-point-level-not-galaxy-level.md" style={{ color: 'var(--color-accent-blue)' }}>finding</a>;
             supplementary precessions fitted without the tail in the dynamical model, the standard Iorio-style test.)
             <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
@@ -526,9 +522,7 @@ export default function GalaxyRotation() {
 
         <h2>Wide Binaries</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          The RAR environment test refuted its registered amplitude (Session 177&apos;s claim, r&sup2; = 0.0001 on
-          2026-07-14; this line previously credited TEST-03 with tripping a kill criterion, a metric conflation corrected on
-          Tier 1 in July), and the RAR
+          The RAR environment test refuted its registered amplitude, and the RAR
           transition-shape test (above) has now closed the main galaxy-scale question.
           The <Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>wide binary test (TEST-02)</Link>{' '}
           was previously identified as a discriminator, but with the compander collapsing to MOND
@@ -593,9 +587,8 @@ export default function GalaxyRotation() {
           Session 107&apos;s prediction of suppressed growth (fσ₈&nbsp;≈&nbsp;0.418) was compared against DESI DR1.
           Full-shape result (arXiv:2411.12021): combined σ₈&nbsp;=&nbsp;0.841&nbsp;±&nbsp;0.034 vs predicted 0.76 → 2.4σ tension on the σ₈ amplitude, a GR-conditioned statistic. The 0.76 was calibrated to the weak-lensing S8 value, so this 2.4σ restates the known lensing-vs-clustering S8 difference; a calibrated number cannot test the framework (note added 2026-10-04). The <em>registered</em> kill
           criterion (fσ₈(z&nbsp;=&nbsp;0.51)&nbsp;&gt;&nbsp;0.46 at &gt;3σ) was <strong>not met</strong>: ~1.5σ, underpowered as
-          registered (this page kept the retired &ldquo;triggered&rdquo; wording until 2026-09-11, two months after Tier 1 and
-          Honest Assessment dropped it).
-          The LRG1 fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.09 (+0.12/&minus;0.14) &ldquo;enhancement&rdquo; is a single ~0.6σ bin, not load-bearing (read 1.16&nbsp;±&nbsp;0.13, the QSO row, until 2026-10-10).
+          registered.
+          The LRG1 fσ₈/(fσ₈)_fid&nbsp;=&nbsp;1.09 (+0.12/&minus;0.14) &ldquo;enhancement&rdquo; is a single ~0.6σ bin, not load-bearing.
           Verdict: post-hoc retrodiction, disfavored 2.4σ on amplitude. (Prior 2026-05-25 &ldquo;correction&rdquo; was itself an error — misattributed z≈0.07 PV value.){' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment: TEST-04a &rarr;</Link>
         </div>
@@ -612,6 +605,19 @@ export default function GalaxyRotation() {
       </section>
 
       <RelatedConcepts currentPath="/galaxy-rotation" />
+      <details id="corrections-log" style={{ margin: '2rem 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim). Dated corrections moved here from the running text on 2026-11-08, verbatim, in page order.</summary>
+        <ul style={{ paddingLeft: '1.1rem' }}>
+          <li>This bullet said &ldquo;cluster vs. field galaxies show different scatter &mdash; the effect is real but sub-threshold&rdquo; until 2026-10-21; no run behind it was found.</li>
+          <li>corrected 2026-10-12: read &ldquo;inside the &plusmn;5% the H₀ tension allows&rdquo;, which a 12% gap is not; graduate simulated-visitor persona</li>
+          <li>The primes were missing until 2026-10-24; in units of Milgrom&apos;s a&#x2080; = 2a&#x2080;&prime; the same point reads g<sub>bar</sub>/a&#x2080; = 0.005 &rarr; 0.073, graduate simulated-visitor persona.</li>
+          <li>corrected 2026-09-24; this used to read &ldquo;one algebraic fact with two faces&rdquo;</li>
+          <li>Corrected 2026-10-31: an earlier &ldquo;10.6σ&rdquo; here was a paired difference in which the observed slope cancels; it measured how far apart the models are, not which one the data prefer.</li>
+          <li>Session 177&apos;s claim, r&sup2; = 0.0001 on 2026-07-14; this line previously credited TEST-03 with tripping a kill criterion, a metric conflation corrected on Tier 1 in July</li>
+          <li>this page kept the retired &ldquo;triggered&rdquo; wording until 2026-09-11, two months after Tier 1 and Honest Assessment dropped it</li>
+          <li>read 1.16&nbsp;±&nbsp;0.13, the QSO row, until 2026-10-10</li>
+        </ul>
+      </details>
     </>
   );
 }

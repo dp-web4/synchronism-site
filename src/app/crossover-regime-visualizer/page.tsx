@@ -66,7 +66,7 @@ export default function PhaseBoundaryVisualizer() {
         &#x03B3;, not phases (full naming note below).
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
-        <strong>How to use it:</strong> one slider, labelled &#x03B3; (the sharpness of the S-curve), runs from 0 to 4 in steps
+        <strong>How to use it:</strong> one slider, labelled &#x03B3; (proposed as the sharpness of the S-curve), runs from 0 to 4 in steps
         of 0.01 and starts at 1.0. Drag it and the marker moves across three &#x03B3; ranges (below 0.6, 0.6&ndash;1.4, above
         1.4); the card under the bar describes the range you are in and says where the formula gets real physics backwards.
       </p>

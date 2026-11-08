@@ -282,7 +282,7 @@ export default function CoherenceFunction() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontFamily: 'serif', fontStyle: 'italic', fontSize: '1.3rem', color: 'var(--color-accent-violet)' }}>&#x03B3;, &#x03C1;<sub>crit</sub></div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <strong>Parameters:</strong> transition sharpness (half the Hill exponent: n = 2&#x03B3;, since tanh(&#x03B3; ln u) = (u<sup>2&#x03B3;</sup>&minus;1)/(u<sup>2&#x03B3;</sup>+1); labelled &ldquo;Hill coefficient&rdquo; until 2026-09-11 and &ldquo;coupling strength&rdquo; before 2026-07-27), saturation knee (reference density — not a critical point; C(&#x03C1;<sub>crit</sub>,&#x03B3;=2)&#x2248;0.88)
+              <strong>Parameters:</strong> &#x03B3;, proposed as a transition sharpness; it sets the initial slope and the return exponent, and no value is sharp (half the Hill exponent: n = 2&#x03B3;, since tanh(&#x03B3; ln u) = (u<sup>2&#x03B3;</sup>&minus;1)/(u<sup>2&#x03B3;</sup>+1); labelled &ldquo;Hill coefficient&rdquo; until 2026-09-11 and &ldquo;coupling strength&rdquo; before 2026-07-27), saturation knee (reference density — not a critical point; C(&#x03C1;<sub>crit</sub>,&#x03B3;=2)&#x2248;0.88)
             </div>
           </div>
         </div>

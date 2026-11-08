@@ -33,8 +33,8 @@ export default function MondComparator() {
               a&#x2080; &#x2248; 1.2 &times; 10&#x207B;&#xB9;&#x2070; m/s&sup2;
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              <strong>Status:</strong> Empirical constant, fitted to data. Milgrom noted the coincidence
-              a&#x2080; &#x2248; cH&#x2080;/6 in 1983.
+              <strong>Status:</strong> Empirical constant, fitted to data. Milgrom noted in 1983 that a&#x2080; is close to cH&#x2080;
+              (the prefactor varies by author).
             </p>
           </div>
           <div className="card" style={{ borderTop: '3px solid var(--color-accent-violet)' }}>

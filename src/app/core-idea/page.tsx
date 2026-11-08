@@ -162,7 +162,7 @@ export default function CoreIdea() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>&#x03B3;</div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-              2/&#x221A;N<sub>corr</sub>: <strong>transition sharpness</strong>{' '}
+              2/&#x221A;N<sub>corr</sub>: <strong>proposed as a transition sharpness</strong>{' '}
               <span style={{ display: 'block', fontSize: '0.95em' }}>(N<sub>corr</sub> = how many particles move together as one unit)</span>
               <span style={{ color: 'var(--color-text-muted)', display: 'block', marginTop: '0.35rem', fontSize: '0.95em' }}>
                 ⚠ This card used to read &ldquo;coupling strength&rdquo; (corrected 2026-07-27). That is

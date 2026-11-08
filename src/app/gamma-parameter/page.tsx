@@ -29,7 +29,7 @@ export default function GammaParameter() {
       </div>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
-        <EquationDisplay size="lg" label="Transition sharpness (Hill coefficient)">
+        <EquationDisplay size="lg" label="Proposed transition sharpness (half the Hill exponent)">
           &#x03B3; = 2 / &#x221A;N<sub>corr</sub>
         </EquationDisplay>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>

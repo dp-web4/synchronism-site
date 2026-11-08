@@ -153,9 +153,9 @@ export default function TestCatalog() {
           represents proposed tests, not tests that are ready to run or are expected to discriminate.{' '}
           <strong>A third executed result (TEST-25, added 2026-07-28) is a different kind of kill</strong> —
           not Synchronism-vs-MOND discrimination, but an internal-consistency squeeze: the SPARC-preferred
-          γ interval and the Cassini Solar-System bound have an empty intersection with SPARC points treated as independent (narrow, not empty, with the galaxy as the unit) under the
-          scale-universal tanh-log QUMOND realization (8.7σ for the RAR-preferred interpolating functions,
-          marginalized, Desmond, Hees &amp; Famaey 2024; this site&apos;s unmarginalized run gives +17.95σ for the compander).
+          γ interval and the Cassini Solar-System bound have an empty intersection, with points or with galaxies as the unit, under the
+          scale-universal tanh-log QUMOND realization (published for the RAR-preferred interpolating functions: 1.9&ndash;15σ by mass model, 8.7σ fiducial;
+          this site&apos;s run for the compander at the SPARC fit gives +17.95σ with M/L pinned).
           It is booked as inherited from MOND: on the same instrument McGaugh&apos;s RAR function fails by +15.9&ndash;20.9σ.
           See Tier 1 for the full statement.{' '}
           <Link href="/tier-1-existing" style={{ color: '#f59e0b' }}>
@@ -293,7 +293,7 @@ export default function TestCatalog() {
           floor never binds on the past light cone (C &ge; &Omega;<sub>m</sub> for every z &ge; 0), so flooring opens no
           escape. Derived by a simulated-visitor researcher persona; verified against the continuity equation numerically
           (<code>maintainer/scripts/floor_is_cosmic_C_and_w_sign.py</code>, 0 sign violations over 11 &gamma; &times; 51 z).
-          Kill fires if DR3 excludes &Lambda; in the thawing or crossing direction (w&#x2080; &gt; &minus;1 with w<sub>a</sub> &lt; 0, whether or not w = &minus;1 is crossed); if the data sit at &Lambda;CDM it is a tie. (Until 2026-10-26 this said &ldquo;requires that crossing&rdquo;, narrower than the sign lock&apos;s forbidden region, which also excludes thawing; researcher simulated-visitor persona.) <strong>TEST-26
+          Kill fires if DR3 excludes &Lambda; in the thawing or crossing direction (w&#x2080; &gt; &minus;1 with w<sub>a</sub> &lt; 0, whether or not w = &minus;1 is crossed); if the data sit at &Lambda;CDM it is a tie. <strong>TEST-26
           can select the mean-density (Cardassian) reading, which the framework&apos;s local-density postulate forbids</strong>{' '}
           (but not as a win: if the data move into the freezing quadrant the family allows, the 2002 constant-w Cardassian fits the
           framework&apos;s curve to &Delta;&chi;&sup2;&nbsp;&le;&nbsp;0.42 at DR3 precision, and resolving the shape would need
@@ -437,7 +437,7 @@ export default function TestCatalog() {
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           Two external-field predictions differ from MOND and appear on{' '}
           <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>Relation to MOND</Link>, but neither has a
-          test ID. Listed here (added 2026-10-21, at a researcher simulated-visitor persona&apos;s request) so they are not
+          test ID. Listed here so they are not
           described as tested elsewhere. <ValidationBadge status="untested" />
         </p>
         <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
@@ -485,16 +485,23 @@ export default function TestCatalog() {
           fails the Solar System outright: its scalar equation is linear, so it is unscreened &omega; = &minus;1 Brans&ndash;Dicke, with PPN &gamma; = 0
           (Cassini, ~4&times;10<sup>4</sup>&sigma;), Nordtvedt &eta; = 1 (lunar ranging, ~2&times;10<sup>3</sup>&sigma;) and |&#x120;/G| &ge; 0.99 H<sub>0</sub> from its own
           cosmology. Its weak field cannot vary the scalar by more than ~10<sup>&minus;4</sup> across a galaxy, so it does not contain RG&apos;s
-          permittivity at all (explorer, 2026-10-22; until then this sentence said the covariant status was unchecked). RG therefore
+          permittivity at all. RG therefore
           has a fitted galaxy-scale equation and no working covariant theory behind it. So the refraction effect above is RG&apos;s prediction, and prior art. If the framework adopted
           RG&apos;s permittivity it would inherit that test, and RG&apos;s dependence on flattening, but a result would score for RG, not for
           anything this framework adds. A positive result on the framework&apos;s own permittivity would contradict the exclusions above,
-          and a null would add a further root to an existing refutation. (Until 2026-10-22 this paragraph said only &ldquo;already excluded
-          twice&rdquo;, without saying which reading or which permittivity; researcher simulated-visitor persona.)
+          and a null would add a further root to an existing refutation.
         </p>
       </section>
 
       <RelatedConcepts currentPath="/test-catalog" />
+      <details id="corrections-log" style={{ margin: '2rem 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim). Dated corrections moved here from the running text on 2026-11-08, verbatim, in page order.</summary>
+        <ul style={{ paddingLeft: '1.1rem' }}>
+          <li>Until 2026-10-26 this said &ldquo;requires that crossing&rdquo;, narrower than the sign lock&apos;s forbidden region, which also excludes thawing; researcher simulated-visitor persona.</li>
+          <li>explorer, 2026-10-22; until then this sentence said the covariant status was unchecked</li>
+          <li>Until 2026-10-22 this paragraph said only &ldquo;already excluded twice&rdquo;, without saying which reading or which permittivity; researcher simulated-visitor persona.</li>
+        </ul>
+      </details>
     </>
   );
 }

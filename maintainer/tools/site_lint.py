@@ -23,6 +23,18 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # --- retired 2026-11-08 (maintainer, visitor 11-08 + explorer 11-07). Literature and verdict sentences that failed against primary
+    #     sources or newer runs: (i) a0 prefactor attributions (McCulloch 0.99 cH, Verlinde cH0/6, Smolin a_L/8.3; Milgrom 2008 cites 2 pi a0 ~ cH0);
+    #     (ii) gamma as sharpness (10-90 width stops at 1.17 dex); (iii) stale sigma numbers; (iv) the sample maximum as a bound.
+    (r"same geometric factor|standard geometric factor", "2026-11-08", "authors print different prefactors; see /mond-unification#a0-prefactors", False),
+    (r"he wrote cH|Milgrom[^.]{0,40}cH(&#x2080;|\u2080|₀|<sub>0</sub>)/6", "2026-11-08", "no source locates /6 in Milgrom 1983; Sanders & McGaugh 2002 print /6, Milgrom 2008 cites 2 pi", False),
+    (r"hair-trigger|sharp snap|sharp cliff", "2026-11-08", "no gamma gives a sharp switch; the 10-90 width stops at 1.17 dex", False),
+    (r"excluded at &gt; 10σ|excluded at > 10σ by the globular", "2026-11-08", "the EFE-free corner is ~3 sigma disfavoured, conditional on the mass model (explorer 10-30)", False),
+    (r"900× under|1,400× under", "2026-11-08", "ratio to a near-zero r2; quote the 95% upper limit (r2 ~ 0.03: about 3x and 6x)", False),
+    (r"interval reaching 23", "2026-11-08", "23 is the full-N interval; the galaxy-level one is [1.4, 20.8]", False),
+    (r"B(_max|<sub>max</sub>) ≲ 14", "2026-11-08", "13.7 is a sample maximum; caps to about 7.5 are excluded at 3 sigma per disc, about 5.7 after trials", False),
+    (r"same 36 binaries[^.]{0,120}1\.12|γ = 1\.12 ± 0\.25", "2026-11-08", "Saad & Ting v2 abstract: gamma = 1.00 (+0.24/-0.19)", False),
+    (r"positive control nobody has run", "2026-11-08", "the known-good arm exists; the unrun control is the post-cutoff arm", False),
     # --- retired 2026-11-07 (maintainer, visitor 11-07 HIGHs): summaries left behind by the 11-06 Cassini revision.
     #     (i) "three of the six stay" (floor is 4: TEST-10, environment, TEST-25, Bell/CHSH); (ii) the galaxy-level intersection
     #     "narrow, not empty" (it is empty with SPARC's a0; 13-18 sigma without bulges too, compander_cassini_nobulge_profiled_a0.py);
@@ -612,6 +624,8 @@ RETIRED = [
 # a retired-phrase list cannot catch an unqualified number, only a context requirement can.
 CONTEXT_LINES = 3
 REQUIRES = [
+    # Added 2026-11-08 (explorer 11-07): every in-house Cassini sigma is at pinned M/L; say so on the line.
+    (r"14\.5(&ndash;|–)19", r"pinned|M/L", "2026-11-08", "in-house Cassini sigmas hold M/L pinned; about 10 sigma at gamma = 3 with Upsilon free at 0.1 dex", 0),
     # Added 2026-11-05 (explorer 2026-11-04): the density fit's boost ~ rho^-0.10 is g_bar leaking through rho (corr +0.84);
     #     at fixed g_bar the partial slope is +0.003 (CI -0.022..+0.027). Any surface quoting the response must say so, same line.
     (r"(&#x03C1;|\u03C1|ρ)(<sup>|\^)(&minus;|−|-)0\.10", r"g<sub>bar|g_bar|fixed g",

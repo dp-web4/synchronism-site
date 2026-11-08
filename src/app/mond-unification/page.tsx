@@ -37,14 +37,28 @@ export default function MondUnification() {
         </EquationDisplay>
 
         <p>
-          The MOND acceleration scale a&#x2080; is related to cosmological parameters.
-          However, this relationship is not unique to Synchronism: Milgrom noted the a&#x2080; ~ cH&#x2080;
-          coincidence in his original 1983 paper. McCulloch (2007) derived a&#x2080; = cH&#x2080;/(2&#x03C0;)
-          from quantized inertia. Verlinde (2017) obtained a similar relation from emergent gravity.
-          The 2&#x03C0; factor is the standard geometric factor arising from any argument involving a
-          spherical causal horizon. This is best understood as dimensional analysis with a geometric prior,
-          not a unique derivation from first principles.
+          The MOND acceleration scale a&#x2080; is close to cH&#x2080;, and this is not unique to Synchronism. What is shared is the
+          dimensional origin, not the number: authors who write the relation put different prefactors in front of it, and none is
+          forced. This is dimensional analysis, not a derivation from first principles.
         </p>
+        <div id="a0-prefactors" style={{ overflowX: 'auto', margin: '0.75rem 0', scrollMarginTop: '5rem' }}>
+          <table style={{ borderCollapse: 'collapse', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+            <thead><tr style={{ textAlign: 'left' }}><th style={{ padding: '0.3rem 0.6rem 0.3rem 0' }}>Source (read 2026-11-08)</th><th style={{ padding: '0.3rem 0.6rem' }}>What it writes</th><th style={{ padding: '0.3rem 0.6rem' }}>&times; cH&#x2080;</th></tr></thead>
+            <tbody>
+              <tr><td style={{ padding: '0.3rem 0.6rem 0.3rem 0' }}>Milgrom 2008 (arXiv:0801.3133 &sect;VI), of his 1983 paper</td><td style={{ padding: '0.3rem 0.6rem' }}>&ldquo;observed that 2&pi;a&#x2080;&asymp;cH&#x2080;&rdquo;; no derivation</td><td style={{ padding: '0.3rem 0.6rem' }}>0.16</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.6rem 0.3rem 0' }}>Sanders &amp; McGaugh 2002 (astro-ph/0204521)</td><td style={{ padding: '0.3rem 0.6rem' }}>a&#x2080; ~ cH&#x2080;/6; Milgrom noticed a&#x2080; &asymp; cH&#x2080; &ldquo;to within a factor of 5 or 6&rdquo;</td><td style={{ padding: '0.3rem 0.6rem' }}>0.17</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.6rem 0.3rem 0' }}>Famaey &amp; McGaugh 2012 (arXiv:1112.3960 &sect;4.1)</td><td style={{ padding: '0.3rem 0.6rem' }}>&ldquo;a&#x2080;&asymp;cH&#x2080;/2&pi;&rdquo;; no derivation</td><td style={{ padding: '0.3rem 0.6rem' }}>0.16</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.6rem 0.3rem 0' }}>McCulloch 2007 (astro-ph/0612599, Eq. 12)</td><td style={{ padding: '0.3rem 0.6rem' }}>0.99&times;cH, &ldquo;about six times larger&rdquo; than MOND&apos;s value; a Pioneer-anomaly paper</td><td style={{ padding: '0.3rem 0.6rem' }}>0.99</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.6rem 0.3rem 0' }}>Verlinde 2016 (arXiv:1611.02269, Eq. 1.7)</td><td style={{ padding: '0.3rem 0.6rem' }}>a<sub>M</sub> = a&#x2080;/6 in d = 4, with his a&#x2080; defined as cH&#x2080;; a factor from d</td><td style={{ padding: '0.3rem 0.6rem' }}>0.17</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.6rem 0.3rem 0' }}>Smolin 2017 (arXiv:1704.00780, Eq. 3)</td><td style={{ padding: '0.3rem 0.6rem' }}>a&#x2080; &asymp; a<sub>&Lambda;</sub>/8.3, a<sub>&Lambda;</sub> = c&sup2;&radic;&Lambda;; an empirical ratio</td><td style={{ padding: '0.3rem 0.6rem' }}>~0.17 (at &Omega;<sub>&Lambda;</sub> &asymp; 0.69)</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.6rem 0.3rem 0' }}>This framework</td><td style={{ padding: '0.3rem 0.6rem' }}>cH&#x2080;/2&pi;; the 2&pi; has no derivation here, and the named Hubble-sphere calculation gives cH&#x2080;/2</td><td style={{ padding: '0.3rem 0.6rem' }}>0.16</td></tr>
+            </tbody>
+          </table>
+          <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
+            Milgrom&apos;s 1983 paper is not on arXiv and was not read directly, so the first row is his own later description of it.
+            cH&#x2080;/6 and cH&#x2080;/2&pi; differ by about 5%, which a<sub>0</sub> alone cannot separate.
+          </p>
+        </div>
 
         <h2>The Significance</h2>
         <p>
@@ -56,7 +70,7 @@ export default function MondUnification() {
         </EquationDisplay>
         <p>
           For 40 years, the coincidence that a&#x2080; &#x2248; cH&#x2080; has been noted by many
-          researchers. Multiple frameworks produce the same relation with the same geometric factor.
+          researchers, with several different prefactors (table above).
           In Synchronism, the coherence function provides a physical narrative for why this
           relationship holds, but the result itself is shared with other approaches.
         </p>
@@ -78,13 +92,12 @@ export default function MondUnification() {
           <strong>non-discriminating</strong>, not disfavored, and not counted. The coincidence has a second face the
           site long omitted &mdash; a&#x2080; &#x221D; c&#x221A;&#x039B;, which predicts <em>zero</em> evolution and fares worse
           against Ciocan than the H(z) branch; if the paper&apos;s global n = 1.15 holds, a&#x2080; running faster than H(z) embarrasses both readings of the 1983
-          coincidence, not this framework specifically (on the bin fit, 0.71, it runs slower instead). Full four-anchor table on Parameter Derivations, row 4.{' '}<strong>The three numbers, like for like (added 2026-10-10 after a researcher persona said this paragraph under-reads its own table):</strong> measured a&#x2080;(z&nbsp;&asymp;&nbsp;1) = 2.38 (+0.12/&minus;0.10, a <em>95% CI</em>; 1&#x03C3; &asymp; 0.06) (Ciocan); constant a&#x2080; = 1.20 (McGaugh+2016 anchor): ~21&#x03C3; off on the measurement error alone (the paper&apos;s own figure is 19&#x03C3;), 4.4&#x03C3; once the anchor&apos;s own &plusmn;0.26 is carried; cH(z)/2&#x03C0; on the same anchor: 2.15, which is ~4&#x03C3; and 0.5&#x03C3; under the same two conventions. <em>(Corrected 2026-10-12: Ciocan&apos;s errors are 95% CIs; earlier &#x03C3;&apos;s divided them as 1&#x03C3;, so the measurement-only figures shipped 2026-10-10 were about half size. The anchor-carried figures barely move.)</em> Against a <em>constant</em> a&#x2080; the forced commitment comes out closer, under either convention. The level comparison is not the prediction&apos;s own statistic, though. Branch (A) is a ratio, a&#x2080;(z)/a&#x2080;(0) = E(z); its statistic is the slope n in a&#x2080; &prop; E(z)<sup>n</sup> with the level free, and <strong>the anchor does not enter the slope</strong> (adding the SPARC anchor moves n by 0.05; explorer 2026-10-10, pre-registered). On the slope: Ciocan&apos;s four quantile bins give n = 0.71&nbsp;&plusmn;&nbsp;0.13, which excludes constant a&#x2080; (n = 0) with the normalisation free at 5&#x03C3; (bars read as 1&#x03C3;; this is Ciocan&apos;s own apparent-a&#x2080; result, degenerate with a drift in &Upsilon; or gas fraction) and n = 1 at 2.1&#x03C3;; the paper&apos;s own global line gives n = 1.15 and its MOND-track refit 0.99. n = 1 lies between the paper&apos;s two estimators, which disagree with each other at 3&#x03C3;: the row is <strong>estimator-dominated; the anchor does not enter the slope</strong>. That is not evidence for the framework. &#x039B;CDM+baryons sits at n &asymp; 1 too: Mayer, Teklu, Dolag &amp; Remus 2023 (MNRAS 518, 257; arXiv:2206.04333) find the RAR-fitted a&#x2080; grows by a factor &asymp;3 from z = 0 to 2 in Magneticum ΛCDM simulations, which is n &asymp; 0.99. And at high z, &ldquo;a&#x2080;(z) rises&rdquo; and &ldquo;the stellar M/L (&Upsilon;), gas fraction or pressure-support correction drifts with z&rdquo; predict the same shift in the RAR intercept, so the level and the slope both inherit that degeneracy. The other intermediate-z sample, RC100, gives n = 0.0&nbsp;&plusmn;&nbsp;0.5 (galaxy-bootstrap 95% interval about [&minus;1, +1]; explorer 2026-10-06), 1.4&#x03C3; from Ciocan&apos;s bins: RC100&apos;s slope error (&plusmn;0.5) is too wide to test either. <em>(Revised 2026-10-12: a sentence here, shipped 2026-10-10, said the two samples conflict more than either conflicts with any model; at 1.4&#x03C3; that was not supported, and it was withdrawn.)</em> Full slope table on Parameter Derivations, row 4. <strong>Why it is not counted either way:</strong> the site&apos;s counting rule (glossary, &ldquo;Refutation (executed)&rdquo;) admits a test only when a failure condition was stated before the comparison. TEST-25&apos;s was pre-registered, so its failure counts although MOND shares it; a&#x2080;(z) had no failure condition registered before Ciocan published, so neither its miss on three anchors, nor its hit on one, nor the bins&apos; 2.1&#x03C3; slope miss enters the tally. One rule, applied both ways.
+          coincidence, not this framework specifically (on the bin fit, 0.71, it runs slower instead). Full four-anchor table on Parameter Derivations, row 4.{' '}<strong>The three numbers, like for like:</strong> measured a&#x2080;(z&nbsp;&asymp;&nbsp;1) = 2.38 (+0.12/&minus;0.10, a <em>95% CI</em>; 1&#x03C3; &asymp; 0.06) (Ciocan); constant a&#x2080; = 1.20 (McGaugh+2016 anchor): ~21&#x03C3; off on the measurement error alone (the paper&apos;s own figure is 19&#x03C3;), 4.4&#x03C3; once the anchor&apos;s own &plusmn;0.26 is carried; cH(z)/2&#x03C0; on the same anchor: 2.15, which is ~4&#x03C3; and 0.5&#x03C3; under the same two conventions. <em>(Corrected 2026-10-12: Ciocan&apos;s errors are 95% CIs; earlier &#x03C3;&apos;s divided them as 1&#x03C3;, so the measurement-only figures shipped 2026-10-10 were about half size. The anchor-carried figures barely move.)</em> Against a <em>constant</em> a&#x2080; the forced commitment comes out closer, under either convention. The level comparison is not the prediction&apos;s own statistic, though. Branch (A) is a ratio, a&#x2080;(z)/a&#x2080;(0) = E(z); its statistic is the slope n in a&#x2080; &prop; E(z)<sup>n</sup> with the level free, and <strong>the anchor does not enter the slope</strong> (adding the SPARC anchor moves n by 0.05; explorer 2026-10-10, pre-registered). On the slope: Ciocan&apos;s four quantile bins give n = 0.71&nbsp;&plusmn;&nbsp;0.13, which excludes constant a&#x2080; (n = 0) with the normalisation free at 5&#x03C3; (bars read as 1&#x03C3;; this is Ciocan&apos;s own apparent-a&#x2080; result, degenerate with a drift in &Upsilon; or gas fraction) and n = 1 at 2.1&#x03C3;; the paper&apos;s own global line gives n = 1.15 and its MOND-track refit 0.99. n = 1 lies between the paper&apos;s two estimators, which disagree with each other at 3&#x03C3;: the row is <strong>estimator-dominated; the anchor does not enter the slope</strong>. That is not evidence for the framework. &#x039B;CDM+baryons sits at n &asymp; 1 too: Mayer, Teklu, Dolag &amp; Remus 2023 (MNRAS 518, 257; arXiv:2206.04333) find the RAR-fitted a&#x2080; grows by a factor &asymp;3 from z = 0 to 2 in Magneticum ΛCDM simulations, which is n &asymp; 0.99. And at high z, &ldquo;a&#x2080;(z) rises&rdquo; and &ldquo;the stellar M/L (&Upsilon;), gas fraction or pressure-support correction drifts with z&rdquo; predict the same shift in the RAR intercept, so the level and the slope both inherit that degeneracy. The other intermediate-z sample, RC100, gives n = 0.0&nbsp;&plusmn;&nbsp;0.5 (galaxy-bootstrap 95% interval about [&minus;1, +1]; explorer 2026-10-06), 1.4&#x03C3; from Ciocan&apos;s bins: RC100&apos;s slope error (&plusmn;0.5) is too wide to test either. <em>(Revised 2026-10-12: a sentence here, shipped 2026-10-10, said the two samples conflict more than either conflicts with any model; at 1.4&#x03C3; that was not supported, and it was withdrawn.)</em> Full slope table on Parameter Derivations, row 4. <strong>Why it is not counted either way:</strong> the site&apos;s counting rule (glossary, &ldquo;Refutation (executed)&rdquo;) admits a test only when a failure condition was stated before the comparison. TEST-25&apos;s was pre-registered, so its failure counts although MOND shares it; a&#x2080;(z) had no failure condition registered before Ciocan published, so neither its miss on three anchors, nor its hit on one, nor the bins&apos; 2.1&#x03C3; slope miss enters the tally. One rule, applied both ways.
           Why not use high-z Tully&ndash;Fisher zero points instead? They cannot decide this: Milgrom (2017, &sect;4)
           already notes that V<sub>max</sub> zero points do not constrain a&#x2080;(z), and modelled, the lever is
           0.12&ndash;0.24 dex against a 0.25&ndash;0.35 dex spread between two surveys measuring the same relation at
           z &asymp; 0.9 (explorer 2026-09-19). The level-free test, the slope of a&#x2080;(z) against E(z), has now been run on
-          both direct-RAR samples (RC100 2026-10-06, Ciocan&apos;s bins 2026-10-10; results above). <em>(Revised
-          2026-10-12: this sentence read &ldquo;has not been run&rdquo; after both runs.)</em>
+          both direct-RAR samples (RC100 2026-10-06, Ciocan&apos;s bins 2026-10-10; results above). <em></em>
         </p>
 
         <h2>The Dimensional-Analysis Chain (not a derivation)</h2>
@@ -116,7 +129,7 @@ export default function MondUnification() {
               no 2&#x03C0; appears anywhere in it. <strong>Step 2 does not produce Step 3.</strong> The 2&#x03C0; is a choice
               that lands near 1.2 &times; 10<sup>&minus;10</sup>; no argument on this site or in the archive derives it. What is
               left is the dimensional statement a&#x2080; ~ cH&#x2080; &times; (a number of order 0.1&ndash;1), which is
-              Milgrom&apos;s 1983 coincidence (he wrote cH&#x2080;/6) and is badged accordingly on{' '}
+              Milgrom&apos;s 1983 coincidence (see <a href="#a0-prefactors" style={{ color: 'var(--color-accent-blue)' }}>the prefactor table</a>) and is badged accordingly on{' '}
               <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>.
               The open question this leaves: is there <em>any</em> construction in the framework that fixes the prefactor
               before looking at Milgrom&apos;s number? None is known.
@@ -138,8 +151,7 @@ export default function MondUnification() {
               Plugging in H&#x2080; = 67.4 km/s/Mpc and c = 3 &times; 10<sup>8</sup> m/s
               gives 1.04 &times; 10<sup>&minus;10</sup> m/s&sup2;.
               Milgrom&apos;s observed value: 1.20 &times; 10<sup>&minus;10</sup>.
-              Error: ~13%. (Corrected 2026-07-22: the 1.08 / &ldquo;~10%&rdquo; previously
-              shown here belongs to H&#x2080; = 70, not the 67.4 stated in this very step.)
+              Error: ~13%.
             </p>
           </div>
         </div>
@@ -190,15 +202,11 @@ export default function MondUnification() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Applying the framework&apos;s actual structure instead: C is a function of <strong>local matter
           density ρ</strong> alone. A uniform external gravitational field does not change ρ. So an algebraic
-          g<sub>obs</sub>&nbsp;=&nbsp;g<sub>bar</sub>/C(ρ) modification (the direction the site&apos;s own
-          f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C identity implies &mdash; corrected 2026-08-04, this previously
-          read &ldquo;C(ρ)&middot;g,&rdquo; the opposite direction) <strong>satisfies the Strong Equivalence
+          g<sub>obs</sub>&nbsp;=&nbsp;g<sub>bar</sub>/C(ρ) modification <strong>satisfies the Strong Equivalence
           Principle by construction and predicts EFE&nbsp;=&nbsp;0 exactly</strong>. That holds for the algebraic reading only.
           The field-equation completion refracts an external field, as the next box shows. It is a sharper structural
           claim than &ldquo;0.3&ndash;0.4&times; MOND.&rdquo; Three qualifications an expert reader supplies
-          immediately, stated here so they don&apos;t have to (rewritten 2026-08-12; this sentence previously
-          ended &ldquo;already in tension with Chae et al. 2020&rdquo;, a claim the research ledger withdrew on
-          2026-08-05): <strong>(1)</strong> EFE&nbsp;=&nbsp;0 <em>is</em> the Strong Equivalence Principle, which
+          immediately, stated here so they don&apos;t have to: <strong>(1)</strong> EFE&nbsp;=&nbsp;0 <em>is</em> the Strong Equivalence Principle, which
           is also &Lambda;CDM&apos;s prediction for internal galaxy dynamics &mdash; so this channel is{' '}
           <strong>refutation-only</strong>: a confirmed EFE detection wounds this framework and &Lambda;CDM alike
           while selecting MOND, and no EFE outcome can ever select this framework over &Lambda;CDM.{' '}
@@ -240,8 +248,7 @@ export default function MondUnification() {
           (&ge; 4&sigma;, including Leo I at 9&ndash;15&sigma;, which RG keeps in equilibrium; explorer 2026-10-21). The effect belongs to the
           field-equation class, so it is RG&apos;s prediction (prior art). This framework&apos;s own permittivity is already excluded on SPARC and by lunar
           laser ranging, so testing it here could add a second root to that refutation but could not move the confirmed count (<Link href="/test-catalog#what-excluded-covers" style={{ color: 'var(--color-accent-blue)' }}>what &ldquo;excluded&rdquo; covers</Link>).
-          (Until 2026-10-21 this sentence called it &ldquo;the one genuinely distinct external-field prediction of this family&rdquo;
-          with no scope.)
+         
           <br />&bull; <strong>Floored vs unfloored C.</strong> &ldquo;The knee never enters a disc, so none of this touches the framework&apos;s
           parameters&rdquo; holds for the floored form, where C &asymp; Ω<sub>m</sub> below the knee. For the unfloored form
           C = γρ/ρ<sub>c</sub> below the knee, &nabla;ln C = &nabla;ln ρ exactly, whatever the knee and γ. The equation then
@@ -275,7 +282,7 @@ export default function MondUnification() {
           computes the lever comparison (MOND+EFE&apos;s external-acceleration coupling vs. this
           framework&apos;s ambient-density coupling), cites Chae et al. 2020/2021&apos;s ~4σ EFE detection, and
           the registered run (SPARC RAR offsets vs. Cosmicflows-4 ambient density, N&nbsp;=&nbsp;141) gives
-          r²&nbsp;=&nbsp;0.0001 &mdash; the kill bar fires. <strong>Scope (added 2026-10-21, researcher simulated-visitor persona):</strong>{' '}
+          r²&nbsp;=&nbsp;0.0001 &mdash; the kill bar fires. <strong>Scope:</strong>{' '}
           that run refuted the registered amplitude (&gt;&nbsp;20% of the scatter from Mpc-scale density). It did not hold
           g<sub>ext</sub> fixed or measure gas density at a satellite, so it did not run the two-satellite discriminator above. Two independent expert simulated-visitor passes (2026-08-03)
           flagged this page and <Link href="/for-researchers" style={{ color: '#38bdf8' }}>For Researchers</Link>{' '}
@@ -354,6 +361,16 @@ export default function MondUnification() {
       </section>
 
       <RelatedConcepts currentPath="/mond-unification" />
+      <details id="corrections-log" style={{ margin: '2rem 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim). Dated corrections moved here from the running text on 2026-11-08, verbatim, in page order.</summary>
+        <ul style={{ paddingLeft: '1.1rem' }}>
+          <li>Revised 2026-10-12: this sentence read &ldquo;has not been run&rdquo; after both runs.</li>
+          <li>Corrected 2026-07-22: the 1.08 / &ldquo;~10%&rdquo; previously shown here belongs to H&#x2080; = 70, not the 67.4 stated in this very step.</li>
+          <li>the direction the site&apos;s own f<sub>DM</sub>&nbsp;=&nbsp;1&minus;C identity implies &mdash; corrected 2026-08-04, this previously read &ldquo;C(ρ)&middot;g,&rdquo; the opposite direction</li>
+          <li>rewritten 2026-08-12; this sentence previously ended &ldquo;already in tension with Chae et al. 2020&rdquo;, a claim the research ledger withdrew on 2026-08-05</li>
+          <li>Until 2026-10-21 this sentence called it &ldquo;the one genuinely distinct external-field prediction of this family&rdquo; with no scope.</li>
+        </ul>
+      </details>
     </>
   );
 }

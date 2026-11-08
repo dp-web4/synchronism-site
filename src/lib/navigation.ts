@@ -75,7 +75,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Key Claims',
       href: '/key-claims',
-      desc: '3 claims where Synchronism proposes something new: two untested, one failed',
+      desc: '3 claims where Synchronism proposes something new: one failed, two that cannot yet be tested',
       keywords: ['key', 'claims', 'novel', 'predictions', 'needle', 'new', 'original'],
       related: ['/why-synchronism', '/honest-assessment', '/quantum-predictions', '/consciousness-threshold', '/free-will', '/test-catalog'],
     },

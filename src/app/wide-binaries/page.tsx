@@ -57,8 +57,7 @@ export default function WideBinaries() {
             tests the same &#x03BD;, the same QUMOND field equation and the same Milky Way external field that make the
             wide-binary boost. Across the compander family the dial &#x03B3; sets both: a &asymp;1.4&ndash;1.5&times; boost maps to
             &#x03B3; &asymp; 0.4&ndash;0.64 and &#x03B3; = 2 predicts 1.05&ndash;1.13&times; (quasi-linear QUMOND, orientation-averaged, 2026-11-06). No
-            &#x03B3; passes Cassini once a<sub>0</sub> is taken from SPARC at each &#x03B3;: it fails at 14.5&ndash;19.3&sigma; from &#x03B3; = 0.3 to 3. (Until
-            2026-11-06 this sentence read &ldquo;Cassini-passing &#x03B3; &asymp; 1.5&ndash;2&rdquo;; that pass held a<sub>0</sub> fixed.)
+            &#x03B3; passes Cassini once a<sub>0</sub> is taken from SPARC at each &#x03B3; and M/L is held at stellar-population values: it fails at 14.5&ndash;19.3&sigma; from &#x03B3; = 0.3 to 3, and passing would take a disc M/L more than twice that value (<Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>).
           </p>
         </div>
         <div className="card card-highlight" style={{ margin: '1.5rem 0' }}>
@@ -166,19 +165,43 @@ export default function WideBinaries() {
           </details>
         </div>
 
-        <h2>Current Observational Status (last surveyed 2026-06-23; not re-surveyed since)</h2>
+        <h2 id="dr4">Gaia DR4: 2 December 2026</h2>
         <p>
-          The wide-binary debate escalated in 2026. The earlier dispute (sample selection,
-          contamination, statistical cuts) has been superseded by a sharper disagreement:
+          ESA has set DR4 (66 months of data) for 2 December 2026. A reading key for this framework was committed before the data (<code>maintainer/scripts/wb_dr4_reading_key_PREREG.md</code>, 2026-11-06). Whatever DR4 shows, it <strong>cannot raise the novelty count</strong>: every outcome lands on a compander member Cassini already excludes unless discs carry over twice their stellar-population M/L. What DR4 decides is MOND&apos;s question, the Chae vs Banik dispute. The key is a dated mapping, not a registered test; adopting it gates on the project lead.
+        </p>
+        <div style={{ overflowX: 'auto', margin: '0.5rem 0 1rem' }}>
+          <table style={{ borderCollapse: 'collapse', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+            <thead><tr style={{ textAlign: 'left' }}><th style={{ padding: '0.25rem 1rem 0.25rem 0' }}>Boost in g reported from DR4</th><th style={{ padding: '0.25rem 0' }}>Compander &#x03B3; it would resemble</th></tr></thead>
+            <tbody>
+              <tr><td style={{ padding: '0.25rem 1rem 0.25rem 0' }}>1.50</td><td>0.39&ndash;0.51</td></tr>
+              <tr><td style={{ padding: '0.25rem 1rem 0.25rem 0' }}>1.40</td><td>0.47&ndash;0.64</td></tr>
+              <tr><td style={{ padding: '0.25rem 1rem 0.25rem 0' }}>1.30</td><td>0.59&ndash;0.85</td></tr>
+              <tr><td style={{ padding: '0.25rem 1rem 0.25rem 0' }}>1.20</td><td>0.80&ndash;1.28</td></tr>
+              <tr><td style={{ padding: '0.25rem 1rem 0.25rem 0' }}>1.10</td><td>1.33&ndash;2.72</td></tr>
+              <tr><td style={{ padding: '0.25rem 1rem 0.25rem 0' }}>1.00 (Newtonian null)</td><td>none (&#x03B3; = 3 still predicts 1.03&ndash;1.09)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Cassini already speaks to this question for modified-Poisson MOND. Desmond, Hees &amp; Famaey 2024 state that the Solar-System quadrupole &ldquo;implies, to high precision, no deviation from Newtonian gravity in nearby wide binaries&rdquo;; Park et al. 2026 put an upper bound of 2% (95%) on the MOND boost at the Sun&apos;s position. So a Chae-type boost in DR4 would be in tension with Cassini for that class of theory, whatever it does for rotation curves.
+        </p>
+
+        <h2>Current Observational Status (abstracts re-read 2026-11-08)</h2>
+        <p>
+          The earlier dispute (sample selection, contamination, statistical cuts) has been joined by a sharper disagreement about one
+          modelling step. Papers below are read from their abstracts only, at the arXiv version noted.
         </p>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li><strong>Chae et al. 2026 (arXiv:2601.21728)</strong>: Enlarged RV+speckle-vetted sample
-            of 36 binaries → 4.9σ boost with γ_boost ≈ 1.6 — consistent with MOND. (As summarised in June; the sample cut
-            and significance have not been re-checked against the paper since.)</li>
-          <li><strong>Saad &amp; Ting 2026 (arXiv:2603.11015)</strong>: Reanalyzed the <em>same</em> 36 binaries
-            from Chae et al. 2026 using a hierarchical semi-major-axis fit (replacing geometric deprojection)
-            → <strong>γ = 1.12 ± 0.25, Newton-consistent at 0.4σ</strong>. The entire anomaly lives in one
-            modeling assumption (orbital deprojection prior).</li>
+          <li><strong>Chae et al. 2026 (arXiv:2601.21728, v4)</strong>: 36 nearby binaries with accurate 3D velocities give a boost
+            &#x03B3; = 1.60 (+0.24/&minus;0.14), which the abstract says &ldquo;rules out Newton&rdquo;. The same abstract says the strong anomaly is dominated
+            by two pairs; without them &Gamma; = 0.042 (+0.027/&minus;0.024), i.e. &#x03B3; &asymp; 1.2.</li>
+          <li><strong>Saad &amp; Ting 2026 (arXiv:2603.11015, v2; Open Journal of Astrophysics)</strong>: the <em>same</em> 36 binaries with the
+            semi-major axis forward-modelled give <strong>&#x03B3; = 1.00 (+0.24/&minus;0.19), consistent with Newton</strong>. Using a geometric deprojection instead
+            gives 1.56 (+0.21/&minus;0.18), matching Chae, so the disagreement sits in that one modelling step.</li>
+          <li><strong>Chae, Park &amp; Yoon 2026 (arXiv:2610.40388, v2)</strong>: replies that a recent claim of Newtonian gravity from the Chae sample is &ldquo;a consequence of a fatal
+            error in the code or arbitrarily enlarged errors&rdquo;. The abstract does not name Saad &amp; Ting; the description fits. Unresolved.</li>
+          <li><strong>Boufourou 2026 (arXiv:2608.24556)</strong>: on the 81,088-pair Chae 2024 sample, robust estimators give &#x03B3; = 1.045 [1.025, 1.068] at 2&ndash;30 kau and reject 1.4
+            at ~16&sigma;, with mock catalogues recovering an injected boost and a proposed pre-registered protocol for DR4. Preprint, one author, abstract only.</li>
           <li><strong>Prior generation (2023–2024)</strong>: Banik et al. (2024), Pittordis &amp; Sutherland
             (2023), Saurabh &amp; Desmond (2024) all Newtonian-consistent with different cuts.</li>
           <li><strong>Hernandez (2023–2024)</strong>: Anomalies in projected-velocity statistics; methodology
@@ -195,8 +218,8 @@ export default function WideBinaries() {
         }}>
           <strong style={{ color: '#f59e0b' }}>Status: pending external adjudication (adjudication executed 2026-06-12 — HUNG).</strong>{' '}
           The crux migrated from sample cuts to orbital modeling prior. The adjudication will turn on:
-          (1) Chae rebuttal of Saad &amp; Ting's deprojection model; (2) mock-injection cross-validation
-          of the deprojection crux (decidable with <em>no new data</em>); (3) independent ≥3σ boost
+          (1) whether the 2610.40388 reply holds up against Saad &amp; Ting&apos;s model; (2) mock-injection cross-validation
+          of the deprojection crux specifically (decidable with <em>no new data</em>, still not done as far as these abstracts show); (3) independent ≥3σ boost
           confirmation → kill fires; (4) independent null replication → degenerate survival; (5) Gaia DR4.
           All independent third parties (Saad &amp; Ting, Saglia et al. 2025, Pasquini et al. 2026) currently
           lean Newtonian or deflationary.

@@ -144,7 +144,7 @@ export default function CoherenceExplorer() {
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             <strong>Why &#x03B3; is decoupled from N<sub>corr</sub> here:</strong> This tool sets &#x03B3;
-            directly to explore how curve shape depends on the sharpness parameter, independently of any
+            directly to explore how curve shape depends on &#x03B3;, independently of any
             physical system. The relationship &#x03B3; = 2/&#x221A;N<sub>corr</sub> links &#x03B3; to
             real systems &mdash; use the{' '}
             <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
@@ -157,7 +157,7 @@ export default function CoherenceExplorer() {
           <ul style={{ marginTop: '0.5rem', marginBottom: 0, color: 'var(--color-text-secondary)' }}>
             <li><strong>ln(x)</strong> — logarithm: it compresses huge ranges into small ones. A density 1,000× bigger becomes only ~7 units bigger inside the equation (natural log); on this chart&apos;s base-10 axis the same jump is 3 gridlines. The compression does <em>not</em> let one curve span quantum to cosmic scales: at any sharp γ the tanh saturates within ~1.6 decades of the knee, which is why the &ldquo;80 orders of magnitude&rdquo; unification was refuted (Session 633; corrected here 2026-09-14).</li>
             <li><strong>tanh(u)</strong> — the &ldquo;S-curve&rdquo; shape. At u = 0 it returns 0; as u grows it rises, steeply at first, and levels off toward 1. Here u = &#x03B3; ln(1 + &#x03C1;/&#x03C1;<sub>crit</sub>) is never negative, so C always runs from 0 (no density) to 1 (very dense). Think of a dimmer whose sharpness &#x03B3; sets: gradual at &#x03B3; &#x2248; &frac12;, steeper at large &#x03B3;.</li>
-            <li><strong>&#x03B3;</strong> — controls how quickly the snap happens: large &#x03B3; = a sharp cliff, small &#x03B3; = a long gentle ramp. <strong>Warning first:</strong> the framework&apos;s rule for <em>which</em> material gets which &#x03B3; (&#x03B3; = 2/&radic;N<sub>corr</sub>: free atoms &rarr; 2, superconductors &rarr; ~6×10⁻⁴) runs backwards against real condensed-matter physics, where superconductors switch on abruptly. So treat this tool as a shape toy for learning the curve, not a map of real materials (details further down).</li>
+            <li><strong>&#x03B3;</strong> — small &#x03B3; = a long gentle ramp; above &#x03B3; &asymp; 1, more &#x03B3; slides the curve left without narrowing it. No &#x03B3; makes the rise sudden: the 10&ndash;90% width stops near 1.17 dex (see the readout). <strong>Warning first:</strong> the framework&apos;s rule for <em>which</em> material gets which &#x03B3; (&#x03B3; = 2/&radic;N<sub>corr</sub>: free atoms &rarr; 2, superconductors &rarr; ~6×10⁻⁴) runs backwards against real condensed-matter physics, where superconductors switch on abruptly. So treat this tool as a shape toy for learning the curve, not a map of real materials (details further down).</li>
             <li><strong>&#x03C1;<sub>crit</sub></strong> — the density where the dimensionless argument x = &#x03C1;/&#x03C1;<sub>crit</sub> equals 1; a reference point set by fitting, not a physical critical point and <em>not</em> the curve&apos;s midpoint: C(&#x03C1;<sub>crit</sub>) = tanh(&#x03B3; ln 2) is &#x03B3;-dependent (0.327 at &#x03B3; = 0.49, 0.60 at &#x03B3; = 1, 0.88 at &#x03B3; = 2 &mdash; the three values printed on three pages of this site are all correct, at those three &#x03B3;).</li>
           </ul>
         </div>
@@ -228,13 +228,14 @@ export default function CoherenceExplorer() {
           numbers are part of why the framework failed its galaxy test.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '-0.5rem', marginBottom: '1rem' }}>
-          Default &#x03B3; = 0.49 is the galaxy-fit value, fitted with acceleration (g/a&#x2080;&prime;) as the argument, not density; the same curve shape, a different variable. See the caveats below for why it fails in the Solar System (the presets quote that miss in &sigma;, standard deviations: 8.7&sigma; means the mismatch is 8.7 times the measurement uncertainty, far beyond chance). The tool opens on this value because it is the one galaxy data pick, not because the framework stands behind it; no &#x03B3; here is one the framework predicts. All the &#x03B3; values in use, with their variables: <Link href="/glossary#which-c-which" style={{ color: 'var(--color-accent-blue)' }}>Which C? Which &#x03B3;?</Link>
+          Default &#x03B3; = 0.49 is the galaxy-fit value, fitted with acceleration (g/a&#x2080;&prime;) as the argument, not density; the same curve shape, a different variable. See the caveats below for why it fails in the Solar System (the presets quote that miss in &sigma;, standard deviations: 8.7&sigma; means the mismatch is 8.7 times the measurement uncertainty, far beyond chance). The tool opens on this value because it is the one galaxy data pick, not because the framework stands behind it; no &#x03B3; here is one the framework predicts. All the &#x03B3; values in use, with their variables: <Link href="/glossary#which-c-which-gamma" style={{ color: 'var(--color-accent-blue)' }}>Which C? Which &#x03B3;?</Link>
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
           <div className="card">
             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
               <strong>Initial slope / saturation rate</strong> (&#x03B3;; proposed as &ldquo;sharpness&rdquo;) = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{gamma < 0.1 ? gamma.toFixed(3) : gamma.toFixed(2)}</span>
+              {gamma > 0 && <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em' }}> &middot; 10&ndash;90% width {Math.log10((Math.exp(Math.atanh(0.9) / gamma) - 1) / (Math.exp(Math.atanh(0.1) / gamma) - 1)).toFixed(2)} dex</span>}
             </label>
             <input
               type="range" min="0.01" max="4.0" step="0.01" value={gamma}

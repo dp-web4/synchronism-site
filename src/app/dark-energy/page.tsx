@@ -17,8 +17,7 @@ export default function DarkEnergy() {
         keyed on the mean matter density (the cosmology&apos;s) it adds a constant to the Friedmann equation, which is &Lambda;. So the galaxy
         fit (&#x03B3; = 0.489) and the DESI fit (&#x03B3; = 0.487 on the mean-density background; read at local density, P(k) pins |2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10&#x207B;&#x2075;) are each dataset choosing its own standard model, in different variables,
         at the one point where this family contains both. The match has no power to fail and is not evidence for the framework.
-        Details: <Link href="/galaxy-rotation#gamma-half-nesting" style={{ color: 'var(--color-accent-blue)' }}>the galaxy side</Link>. (Box added 2026-10-22 at a
-        graduate-physics simulated-visitor persona&apos;s request; the statement was already on this page, lower down.)
+        Details: <Link href="/galaxy-rotation#gamma-half-nesting" style={{ color: 'var(--color-accent-blue)' }}>the galaxy side</Link>.
       </div>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
@@ -33,10 +32,7 @@ export default function DarkEnergy() {
           <strong>every consistent version of it misses the specific behaviour DESI prefers</strong>,
           but the family contains &Lambda;CDM at &gamma;&nbsp;=&nbsp;&frac12;, so it can only be killed by data that kill
           &Lambda;CDM too. <strong>Status: Reparametrization.</strong> It nests &Lambda;CDM, so no data can refute it without
-          refuting &Lambda;CDM, and it has no win branch (below). It is not a discriminating position (corrected 2026-09-27 from
-          &ldquo;the framework&apos;s one live falsifiable position&rdquo;; until 2026-11-05 this page also called it &ldquo;a live
-          position&rdquo; here and &ldquo;a currently-disfavoured falsifiable position&rdquo; further down, three statuses for one
-          sector). <strong>Only the dark-energy-fluid reading survives:</strong> read as modified gravity, G<sub>eff</sub> =
+          refuting &Lambda;CDM, and it has no win branch (below). It is not a discriminating position. <strong>Only the dark-energy-fluid reading survives:</strong> read as modified gravity, G<sub>eff</sub> =
           G/C(&rho;&#772;) drifts as the cosmic density falls, and lunar laser ranging excludes that by about 2,000&times;
           (<a href="#modified-g-llr" style={{ color: 'var(--color-accent-blue)' }}>box below</a>). Read at the local density (the framework&apos;s own postulate), existing galaxy clustering data already pin
           &gamma; to &frac12; (box below), so there is nothing left for DR3 to decide. On the mean-density reading: at DESI DR3 it is killed if DR3 excludes &Lambda; in the thawing or crossing direction (w&#x2080; &gt; &minus;1 with w<sub>a</sub> &lt; 0, whether or not w = &minus;1 is crossed) and tied if the data sit at &Lambda;CDM (&gamma;&nbsp;=&nbsp;&frac12;). <strong>It has no
@@ -45,9 +41,7 @@ export default function DarkEnergy() {
           curve to &Delta;&chi;&sup2;&nbsp;&le;&nbsp;0.42 at every DR2-allowed &gamma;. Telling the two apart at 2&sigma; would need
           a 9.3&sigma; departure from &Lambda;, i.e. &gamma;&nbsp;&asymp;&nbsp;0.30, which DR2 already excludes at
           &Delta;&chi;&sup2;&nbsp;=&nbsp;137. A freezing detection would select &ldquo;freezing dark energy&rdquo;, not this
-          family. (Corrected 2026-10-09; this sentence previously read &ldquo;wins only if the data move into the quadrant it allows&hellip; not impossible by
-          construction&rdquo;, 2026-09-14. That sentence was right that a tie-on-fit can win on selection in principle, and
-          wrong that the shape could be resolved: it is a level difference, not a shape difference, at DR3 precision.) This page shows the construction, what it predicts, how
+          family. This page shows the construction, what it predicts, how
           the covariant check sharpened the verdict, and exactly what evidence would change it.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
@@ -133,12 +127,12 @@ export default function DarkEnergy() {
             (k/aH)&sup2;, which is 10&#x2074;&ndash;10&#x2075; on the scales where the matter power spectrum P(k) is
             measured. <strong>Executed (explorer 2026-09-14, rule pre-registered before computing):</strong> existing P(k)
             requires <strong>|2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10&#x207B;&#x2075;</strong>, i.e. &gamma;&nbsp;=&nbsp;&frac12;
-            to within ~5&times;10&#x207B;&#x2076; &mdash; about 5,000&times; narrower than the DESI fit&apos;s 1&sigma;. <strong>The two sides of that bound are different in kind (added 2026-11-02, graduate and researcher simulated-visitor personas):</strong> below &gamma;&nbsp;=&nbsp;&frac12;, c<sub>s</sub>&sup2; &lt; 0 is a <em>gradient instability</em>: in linear theory every scale smaller than about (aH)/&radic;|c<sub>s</sub>&sup2;| grows exponentially, so on the adiabatic reading the &gamma; &lt; &frac12; side has no stable member at any distance from &frac12;, and 10&#x207B;&#x2075; only marks where the blow-up reaches the scales P(k) measures. Above &frac12; the pressure smooths clumps out (Jeans suppression), and 10&#x207B;&#x2075; is an amplitude bound. The DESI mean-density fit, &gamma;&nbsp;=&nbsp;0.487, sits on the unstable side. (The galaxy fit&apos;s &gamma; &asymp; 0.49 is a different function, keyed on acceleration, so it is not on this axis.) The escape is the same on both sides: a non-adiabatic sound speed (c<sub>s</sub>&sup2; = 0, or an entropy-carrying second field), which the archive does not write down. The order of magnitude in one line (added 2026-10-27 after two personas asked where 10&#x207B;&#x2075; comes from): the gradient term enters growth as c<sub>s</sub>&sup2;(k/aH)&sup2;, and (k/aH)&sup2; &asymp; 9&times;10&#x2074; at k = 0.1 h/Mpc today, so a mode changes by order unity over the matter era once |2&gamma;&minus;1| ~ 10&#x207B;&#x2075;; the executed run gives a power ratio of 1.2 at k = 0.2 h/Mpc for |2&gamma;&minus;1| = 2&times;10&#x207B;&#x2075; and 2.7&times;10&sup2;&sup2; at k = 0.1 for the DESI-fit 0.026. At the
+            to within ~5&times;10&#x207B;&#x2076; &mdash; about 5,000&times; narrower than the DESI fit&apos;s 1&sigma;. <strong>The two sides of that bound are different in kind:</strong> below &gamma;&nbsp;=&nbsp;&frac12;, c<sub>s</sub>&sup2; &lt; 0 is a <em>gradient instability</em>: in linear theory every scale smaller than about (aH)/&radic;|c<sub>s</sub>&sup2;| grows exponentially, so on the adiabatic reading the &gamma; &lt; &frac12; side has no stable member at any distance from &frac12;, and 10&#x207B;&#x2075; only marks where the blow-up reaches the scales P(k) measures. Above &frac12; the pressure smooths clumps out (Jeans suppression), and 10&#x207B;&#x2075; is an amplitude bound. The DESI mean-density fit, &gamma;&nbsp;=&nbsp;0.487, sits on the unstable side. (The galaxy fit&apos;s &gamma; &asymp; 0.49 is a different function, keyed on acceleration, so it is not on this axis.) The escape is the same on both sides: a non-adiabatic sound speed (c<sub>s</sub>&sup2; = 0, or an entropy-carrying second field), which the archive does not write down. The order of magnitude in one line: the gradient term enters growth as c<sub>s</sub>&sup2;(k/aH)&sup2;, and (k/aH)&sup2; &asymp; 9&times;10&#x2074; at k = 0.1 h/Mpc today, so a mode changes by order unity over the matter era once |2&gamma;&minus;1| ~ 10&#x207B;&#x2075;; the executed run gives a power ratio of 1.2 at k = 0.2 h/Mpc for |2&gamma;&minus;1| = 2&times;10&#x207B;&#x2075; and 2.7&times;10&sup2;&sup2; at k = 0.1 for the DESI-fit 0.026. At the
             DESI best fit &gamma;&nbsp;=&nbsp;0.487 the matter power is already ~10&times; &Lambda;CDM&apos;s at
             k&nbsp;=&nbsp;0.01&nbsp;h/Mpc. This is the known result for the class: fluid Cardassian models are inconsistent
             with galaxy P(k) (Amarzguioui, Elgar&oslash;y &amp; Multam&auml;ki 2005, JCAP 01, 008), as is generalized
             Chaplygin gas away from &Lambda;CDM (Sandvik, Tegmark, Zaldarriaga &amp; Waga 2004, PRD 69, 123524).{' '}
-            <strong>Two-sided, and why the (1+w) suppression does not apply (added 2026-10-24, researcher simulated-visitor persona):</strong>{' '}
+            <strong>Two-sided, and why the (1+w) suppression does not apply:</strong>{' '}
             for a separate dark-energy fluid the pressure perturbation is sourced in proportion to (1+w), so a small c<sub>s</sub>&sup2;
             near w&nbsp;=&nbsp;&minus;1 is nearly invisible. Here &rho;<sub>DE</sub> = f(&rho;<sub>m</sub>) moves with the matter, so matter and
             dark energy are one fluid and the pressure acts on the matter perturbation itself. The explorer&apos;s run shows both sides: at
@@ -168,7 +162,7 @@ export default function DarkEnergy() {
           Arithmetic provenance: the archive&apos;s published w(z) table was wrong twice &mdash; a sign error in
           the continuity relation and a dropped &minus;1 term (its formula returns w&nbsp;=&nbsp;&minus;2 for
           ordinary matter, where the correct answer is 0). Corrected 2026-08-10; dated errata are in the research
-          repo (Sessions 100/101). The corrected w(0) at &gamma;&nbsp;=&nbsp;2 is &minus;1.26 at the site-standard &Omega;<sub>m</sub>&nbsp;=&nbsp;0.315 (&minus;1.24 at &Omega;<sub>m</sub>&nbsp;=&nbsp;0.30, the value this sentence quoted until 2026-10-21 without naming its &Omega;<sub>m</sub>), not the
+          repo (Sessions 100/101). The corrected w(0) at &gamma;&nbsp;=&nbsp;2 is &minus;1.26 at the site-standard &Omega;<sub>m</sub>&nbsp;=&nbsp;0.315, not the
           &ldquo;&gt;&nbsp;0&rdquo; the archive reported &mdash; eight months of downstream reasoning had followed
           the uncorrected branch.
         </p>
@@ -185,7 +179,7 @@ export default function DarkEnergy() {
           prefers precisely the forbidden combination &mdash; w&#x2080;&nbsp;&gt;&nbsp;&minus;1 <em>with</em>{' '}
           w&#x2090;&nbsp;&lt;&nbsp;0 &mdash; in all four of its data combinations (DESI&apos;s own reported preference for
           w&#x2080;w&#x2090;CDM over &Lambda;CDM: 3.1&sigma; for DESI BAO + CMB, and 2.8&sigma;, 3.8&sigma; and 4.2&sigma; adding
-          Pantheon+, Union3 and DESY5 supernovae respectively). That quadrant is wider than
+          Pantheon+, Union3 and DESY5 supernovae respectively; DES&apos;s own recalibration, DES-Dovekie, lowers the 4.2&sigma; to 3.2&sigma;, with w&#x2080; = &minus;0.803 &plusmn; 0.054 and w&#x2090; = &minus;0.72 &plusmn; 0.21, Popovic et al., arXiv:2511.07517, which calls this &ldquo;only a weak preference&rdquo;; the fit further down this page uses Dovekie). That quadrant is wider than
           &ldquo;crossing&rdquo;: in CPL the early-time value is w&#x2080;&nbsp;+&nbsp;w&#x2090;, so a crossing of
           w&nbsp;=&nbsp;&minus;1 needs w&#x2080;&nbsp;+&nbsp;w&#x2090;&nbsp;&lt;&nbsp;&minus;1 (DESI&apos;s central values do
           cross). The rest of the quadrant is ordinary <strong>thawing</strong> dark energy (w starts near &minus;1 and rises),
@@ -231,9 +225,7 @@ export default function DarkEnergy() {
           cosmology&apos;s variable, density-keyed C(&rho;), fits SPARC best at &gamma;&nbsp;&rarr;&nbsp;0.046 and is refuted
           there (&Delta;BIC&nbsp;+2843). Read with density in both sectors, the framework&apos;s cosmology is &Lambda; and its galaxy
           law fails. Read with each sector&apos;s fitted variable, it is &Lambda; plus MOND. Either way, where it fits it is the
-          incumbent it was meant to replace. (Corrected 2026-09-24: this box used to say &ldquo;one algebraic fact with two
-          faces&rdquo; and &ldquo;both sectors independently pin the framework&rdquo; (retired wording). That contradicted the notation-not-derivation
-          paragraph further down this page.)
+          incumbent it was meant to replace.
         </div>
       </section>
 
@@ -356,7 +348,7 @@ export default function DarkEnergy() {
             <em>standard</em> models sit at the same point by construction. Agreement between the two fits is the agreement of
             &Lambda; with the simple &mu;, inherited, with no power to fail. Both reductions are one line of algebra (at &gamma; = &frac12;, &rho;<sub>m</sub>/C = &rho;<sub>m</sub> + 2&rho;<sub>crit</sub>; and <em>any</em> C = &rho;/(&rho;+K) gives
             &rho;<sub>m</sub>/C = &rho;<sub>m</sub> + K, exact &Lambda;, so landing on &Lambda; is a property of the simplest saturating rational function, which
-            tanh-log becomes at &gamma; = &frac12;, not of tanh-log), and the scale is fitted separately in each sector, in different variables (mean density here, g<sub>obs</sub> in galaxies), so both datasets landing on the &gamma; where tanh(&gamma; ln(1+x)) becomes a known function carries no evidential weight (sentence added 2026-10-12, researcher simulated-visitor persona). The 0.011 is SPARC&apos;s fitted offset from &frac12;
+            tanh-log becomes at &gamma; = &frac12;, not of tanh-log), and the scale is fitted separately in each sector, in different variables (mean density here, g<sub>obs</sub> in galaxies), so both datasets landing on the &gamma; where tanh(&gamma; ln(1+x)) becomes a known function carries no evidential weight. The 0.011 is SPARC&apos;s fitted offset from &frac12;
             (a slightly McGaugh-like RAR shape), consistent with zero at &sigma;<sub>&gamma;</sub> = 0.11 (galaxy-limited,
             2026-08-14). Telling that offset from zero would need &sigma;<sub>&gamma;</sub> &asymp; 0.004, and it would answer a
             different question (does SPARC prefer the simple &mu; exactly?), not a cross-sector one.{' '}
@@ -424,9 +416,7 @@ export default function DarkEnergy() {
             +Union3 &minus;0.667&nbsp;&plusmn;&nbsp;0.088, &minus;1.09<sup>+0.31</sup><sub>&minus;0.27</sub>; +DESY5
             &minus;0.752&nbsp;&plusmn;&nbsp;0.057, &minus;0.86<sup>+0.23</sup><sub>&minus;0.20</sub>. Every combination has
             w&#x2080;&nbsp;&gt;&nbsp;&minus;1 and w&#x2090;&nbsp;&lt;&nbsp;0, the quadrant the sign lock forbids. The preference over
-            &Lambda;CDM is 3.1&sigma; (DESI+CMB) and 2.8&ndash;4.2&sigma; with supernovae (abstract). (Until 2026-10-13 this item
-            said the centrals were carried from the abstract and &ldquo;should be re-verified&rdquo;; a simulated-visitor
-            researcher persona noted it was one lookup.)
+            &Lambda;CDM is 3.1&sigma; (DESI+CMB) and 2.8&ndash;4.2&sigma; with supernovae (abstract).
           </li>
           <li>
             <strong>Nothing on this page is a new counted refutation.</strong> The refutation count stays at its
@@ -524,7 +514,7 @@ export default function DarkEnergy() {
           A prospective registration against DESI DR3 (~2027&ndash;28) is drafted on{' '}
           <Link href="/top-5-tests" style={{ color: 'var(--color-accent-blue)' }}>Top Decisive Tests</Link>:
           the kill fires if DR3 excludes &Lambda; in the thawing or crossing direction (w&#x2080; &gt; &minus;1 with w<sub>a</sub> &lt; 0, whether or not w = &minus;1 is crossed), the region the sign lock forbids, with a
-          pre-committed projection-robustness check (worded &ldquo;requires the crossing&rdquo; until 2026-10-26; a thawing-only result would have killed the family without firing that text); the &ldquo;confirming&rdquo; branch is a tie (the
+          pre-committed projection-robustness check; the &ldquo;confirming&rdquo; branch is a tie (the
           substituted &gamma;&nbsp;=&nbsp;1/2 branch <em>is</em> &Lambda;CDM &mdash; though that identity is
           itself substitution-conditional, since completion B has no &Lambda;CDM member). Recorded now so a
           later tie cannot be read as a success. Adoption gates on the operator.
@@ -541,6 +531,17 @@ export default function DarkEnergy() {
       </section>
 
       <RelatedConcepts currentPath="/dark-energy" />
+      <details id="corrections-log" style={{ margin: '2rem 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim). Dated corrections moved here from the running text on 2026-11-08, verbatim, in page order.</summary>
+        <ul style={{ paddingLeft: '1.1rem' }}>
+          <li>corrected 2026-09-27 from &ldquo;the framework&apos;s one live falsifiable position&rdquo;; until 2026-11-05 this page also called it &ldquo;a live position&rdquo; here and &ldquo;a currently-disfavoured falsifiable position&rdquo; further down, three statuses for one sector</li>
+          <li>Corrected 2026-10-09; this sentence previously read &ldquo;wins only if the data move into the quadrant it allows&hellip; not impossible by construction&rdquo;, 2026-09-14. That sentence was right that a tie-on-fit can win on selection in principle, and wrong that the shape could be resolved: it is a level difference, not a shape difference, at DR3 precision.</li>
+          <li>&minus;1.24 at &Omega;<sub>m</sub>&nbsp;=&nbsp;0.30, the value this sentence quoted until 2026-10-21 without naming its &Omega;<sub>m</sub></li>
+          <li>Corrected 2026-09-24: this box used to say &ldquo;one algebraic fact with two faces&rdquo; and &ldquo;both sectors independently pin the framework&rdquo; (retired wording). That contradicted the notation-not-derivation paragraph further down this page.</li>
+          <li>Until 2026-10-13 this item said the centrals were carried from the abstract and &ldquo;should be re-verified&rdquo;; a simulated-visitor researcher persona noted it was one lookup.</li>
+          <li>worded &ldquo;requires the crossing&rdquo; until 2026-10-26; a thawing-only result would have killed the family without firing that text</li>
+        </ul>
+      </details>
     </>
   );
 }

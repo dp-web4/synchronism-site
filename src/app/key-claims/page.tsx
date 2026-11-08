@@ -402,9 +402,7 @@ export default function KeyClaims() {
             &#x03B3; &laquo; 0.001 are experience, not correlates of it. That is a philosophical identity claim, not a
             finding. It likewise <em>proposes</em> that free will sits at the &#x03B3; &#x2248; 1 boundary as constrained
             indeterminacy, with the agent&apos;s coherence pattern shaping which of several possible futures is taken.
-            Neither proposal has a test yet. (Until 2026-10-07 this paragraph said the formula &ldquo;dissolves the hard
-            problem&rdquo; and that free will &ldquo;emerges&rdquo;, unhedged; the target pages already called that an
-            overclaim.)
+            Neither proposal has a test yet.
           </p>
 
           <h3 style={{ fontSize: '0.9rem', color: '#22c55e', marginBottom: '0.25rem' }}>Evidence</h3>
@@ -412,8 +410,7 @@ export default function KeyClaims() {
             <strong>None yet.</strong> The framework&apos;s internal approaches (7 that exist; an eighth, &ldquo;phase transition
             analysis&rdquo;, has no critical point to analyse) land on C &#x2248; 0.50, but that is expected, not discovered:
             0.50 is the midpoint of the function&apos;s [0,1) output range, so any approach that picks the midpoint lands there (see the
-            caveat below). It is a normalization artefact, listed here so it is not mistaken for support. (Until 2026-10-22 this line
-            read &ldquo;Theoretical: 8 approaches converge on 0.50&rdquo; under this heading, with the caveat only below it.)
+            caveat below). It is a normalization artefact, listed here so it is not mistaken for support.
             <em> Also not evidence:</em> the Gnosis AI architecture also
             arrived at C &#x2248; 0.50 as its operating threshold through 4 different mathematical frameworks, but it was
             built with Synchronism access, so this is not an independent convergence.
@@ -599,9 +596,9 @@ export default function KeyClaims() {
           <h3 style={{ fontSize: '0.9rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>What&apos;s new</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             MOND treats a&#x2080; as an empirical constant. &#x039B;CDM (Lambda Cold Dark Matter) adds a new particle.
-            Synchronism reproduces a cH&#x2080;/(2&#x03C0;) version of Milgrom&apos;s a&#x2080;&#x2248;cH&#x2080;/6 coincidence (cf.
-            McCulloch (2007), Verlinde (2017), and Smolin (2017)) &mdash; it does not derive a&#x2080; from first
-            principles any more than they do; see <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter
+            Synchronism writes Milgrom&apos;s a&#x2080; ~ cH&#x2080; coincidence as cH&#x2080;/(2&#x03C0;), the form Milgrom himself and Famaey &amp; McGaugh
+            print (others have different prefactors: <a href="/mond-unification#a0-prefactors" style={{ color: 'var(--color-accent-blue)' }}>table</a>) &mdash; it does not derive a&#x2080; from first
+            principles; see <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter
             derivations</a>, which calls this &ldquo;dimensional bookkeeping, not a Synchronism-specific derivation.&rdquo;
             <strong> a&#x2080; itself is badged Reparametrization, not Failed</strong> &mdash; the Failed badge above is on
             the <em>interpretation</em> layered on top of it (that a local-density function marks the transition),
@@ -685,7 +682,7 @@ export default function KeyClaims() {
             Tested against {GALAXIES_RUN} galaxies ({GALAXIES_RUN_BREAKDOWN}); the mechanism itself was
             tested on the {GALAXIES_MECHANISM} resolved SPARC rotation curves (123 for TEST-09, 153 for TEST-10) &mdash;
             the registered Tully&ndash;Fisher environment test (TEST-03, on the 14,585-galaxy cross-match) was never run as registered.
-            (&ldquo;14,760&rdquo; stood here until 2026-09-06; corrected to the ledger figure.) Three counts, one sample: 14,585 is the
+            Three counts, one sample: 14,585 is the
             ALFALFA&ndash;SDSS cross-match as registered, 14,435 is what remains after the quality cut and was actually run, and
             the homepage&apos;s 14,610 is those 14,435 plus the 175 SPARC galaxies. a&#x2080; = cH&#x2080;/2&#x03C0; sits 13% below 1.2&times;10&#x207B;&#xB9;&#x2070; m/s&sup2; at H&#x2080; = 67.4; that is Milgrom&apos;s 1983 cH&#x2080; coincidence, not a derivation (no calculation on file yields the 2&#x03C0;).
             Freeman&apos;s Law &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) &#8776; 119 M&#x2609;/pc&sup2; at the
@@ -704,7 +701,7 @@ export default function KeyClaims() {
             <h3 style={{ fontSize: '0.9rem', color: '#f59e0b', marginBottom: '0.25rem', marginTop: 0 }}>Honest caveat</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
               The quantitative predictions are MOND-equivalent &mdash; they match existing MOND results,
-              not new data. Standard MOND + M/L corrections explain the rotation-curve variance this framework was tested on. MOND&apos;s own open problems (galaxy-cluster residual mass, the Solar-System Cassini quadrupole) apply here unchanged. (Until 2026-11-07 this read &ldquo;explain all observed variance&rdquo;, an overclaim for MOND.)
+              not new data. Standard MOND + M/L corrections explain the rotation-curve variance this framework was tested on. MOND&apos;s own open problems (galaxy-cluster residual mass, the Solar-System Cassini quadrupole) apply here unchanged.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
               <strong style={{ color: '#f59e0b' }}>Sharpened 2026-09-07 (simulated-visitor graduate-physics persona):
@@ -728,8 +725,7 @@ export default function KeyClaims() {
               as the environment-scatter refutation. Session 616 is the unrelated η/superconductivity audit and never
               measured RAR scatter; the R&sup2; = 0.14 figure is a SPARC-scale Hubble-type (morphology) effect, not an environment measurement.
               TEST-05&apos;s kill text reads &ldquo;independent of Hubble type / environment&rdquo;, so the type result rejects its type
-              leg; the environment leg is null (r&sup2;&nbsp;=&nbsp;0.0001), and only the environment leg is a framework prediction. (Until
-              2026-10-21 this sentence said TEST-05 &ldquo;in fact met its own registered criterion&rdquo;, without the split.) See{' '}
+              leg; the environment leg is null (r&sup2;&nbsp;=&nbsp;0.0001), and only the environment leg is a framework prediction. See{' '}
               <Link href="/tier-1-existing#TEST-05" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: TEST-05</Link>.
               It also previously cited a CFD-viscosity sign error (dark matter predicted &ldquo;stickier&rdquo; than
               baryons, contradicted by the Bullet Cluster) as evidence against this claim&apos;s headline. That
@@ -847,6 +843,16 @@ export default function KeyClaims() {
       </section>
 
       <RelatedConcepts currentPath="/key-claims" />
+      <details id="corrections-log" style={{ margin: '2rem 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim). Dated corrections moved here from the running text on 2026-11-08, verbatim, in page order.</summary>
+        <ul style={{ paddingLeft: '1.1rem' }}>
+          <li>Until 2026-10-07 this paragraph said the formula &ldquo;dissolves the hard problem&rdquo; and that free will &ldquo;emerges&rdquo;, unhedged; the target pages already called that an overclaim.</li>
+          <li>Until 2026-10-22 this line read &ldquo;Theoretical: 8 approaches converge on 0.50&rdquo; under this heading, with the caveat only below it.</li>
+          <li>&ldquo;14,760&rdquo; stood here until 2026-09-06; corrected to the ledger figure.</li>
+          <li>Until 2026-11-07 this read &ldquo;explain all observed variance&rdquo;, an overclaim for MOND.</li>
+          <li>Until 2026-10-21 this sentence said TEST-05 &ldquo;in fact met its own registered criterion&rdquo;, without the split.</li>
+        </ul>
+      </details>
     </>
   );
 }

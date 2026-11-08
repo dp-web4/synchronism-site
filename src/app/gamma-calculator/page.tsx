@@ -47,9 +47,9 @@ export default function GammaCalculator() {
         badge above. (Added 2026-09-15: the index and this page showed different words with no key between them.)
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
-        <strong>In one sentence: &#x03B3; is the steepness of the coherence S-curve</strong> — how abruptly
-        a system switches from &ldquo;independent individuals&rdquo; to &ldquo;acting as one&rdquo; as density
-        rises. Big &#x03B3; = hair-trigger switch; small &#x03B3; = slow fade. The live curve below redraws
+        <strong>In one sentence: &#x03B3; sets how early the coherence S-curve starts to rise</strong> as density
+        rises. Small &#x03B3; = a slow fade stretched over many powers of ten. Big &#x03B3; = the rise comes earlier, but it does not
+        become a switch: however big &#x03B3; gets, going from 10% to 90% still takes about a factor of 15 in density. The live curve below redraws
         as you change N<sub>corr</sub>.
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
@@ -62,13 +62,13 @@ export default function GammaCalculator() {
         yourself: click the &ldquo;Ideal gas&rdquo; preset, then &ldquo;BCS superconductor&rdquo; (a metal whose electrons pair up and move in lockstep, so it
         conducts with zero resistance below a critical temperature: the <em>most</em> collective system here), and
         notice the far more collective system gets the far <em>flatter</em> curve. Real superconductors
-        have among the sharpest transitions in nature — you just watched the formula get that backwards.
+        have among the sharpest transitions in nature (sharp in temperature; this curve&apos;s axis is density, so the comparison is loose) — you just watched the formula get that backwards.
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
-        &#x03B3; = 2/&#x221A;N<sub>corr</sub> assigns the <em>sharpest</em> coherence transition to the
+        &#x03B3; = 2/&#x221A;N<sub>corr</sub> assigns the <em>narrowest</em> coherence curve to the
         least-correlated system (ideal gas) and the <em>flattest</em> to the most-correlated (BCS
         superconductor) — the opposite of real condensed-matter transitions. This is a structural
-        inversion in the formula (Caveat 2 below), not a calibration issue. One vivid case: &#x03B3; = 2, the framework&apos;s original galaxy value, maps to N<sub>corr</sub> = 1, the ideal-gas row, so on its own map the galaxy guess says a galaxy is &ldquo;uncorrelated&rdquo;. This tool is preserved
+        inversion in the formula (Caveat 2 below), not a calibration issue. <strong>The deeper defect is the family, not the sign:</strong> flipping the sign would not produce a sharp transition, because this curve has none at any &#x03B3;. One vivid case: &#x03B3; = 2, the framework&apos;s original galaxy value, maps to N<sub>corr</sub> = 1, the ideal-gas row, so on its own map the galaxy guess says a galaxy is &ldquo;uncorrelated&rdquo;. This tool is preserved
         for exploration; treat its outputs as &ldquo;what the inverted formula predicts&rdquo; rather
         than as physical estimates.
       </p>
@@ -114,7 +114,7 @@ export default function GammaCalculator() {
               &#x03B3; = 2 sits at the fixed point N<sub>corr</sub> = 1. At N<sub>corr</sub> = 17 the flip moves &#x03B3;
               by a factor of 17, from 2/&#x221A;17 &#x2248; 0.485 to 2&#x221A;17 &#x2248; 8.25. Run the other way, the
               flipped map needs N<sub>corr</sub> = (0.489/2)&sup2; &#x2248; 0.06 to give the SPARC &#x03B3; = 0.489. That is
-              less than one correlated unit, which no count of correlated units can reach.
+              less than one correlated unit, which no count of correlated units can reach. And &#x03B3; = 8.25 is not sharp either: its 10&ndash;90% width is 1.2 dex, against 1.17 dex at any larger &#x03B3;.
           </p>
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem' }}>
             <summary style={{ cursor: 'pointer' }}>Revision note</summary>
@@ -185,7 +185,7 @@ export default function GammaCalculator() {
             as the framework states it, the best fit is &#x03B3; = 0.046 and it loses to the acceleration version by
             &Delta;BIC +2843 (see the <a href="/coherence-explorer" style={{ color: 'var(--color-accent-blue)' }}>Coherence Explorer</a>), so
             a third &ldquo;galaxy &#x03B3;&rdquo; exists and it is the refuted one. Neither is a value the framework predicts. The full list of &#x03B3;
-            values in use is in the <a href="/glossary#which-c-which" style={{ color: 'var(--color-accent-blue)' }}>Glossary: Which C? Which &#x03B3;?</a>
+            values in use is in the <a href="/glossary#which-c-which-gamma" style={{ color: 'var(--color-accent-blue)' }}>Glossary: Which C? Which &#x03B3;?</a>
           </p>
           <svg viewBox="0 0 560 240" role="img" aria-label={`The coherence S-curve at gamma = ${gamma < 0.001 ? gamma.toExponential(2) : gamma.toFixed(3)}: larger gamma means a steeper switch, smaller gamma a flatter curve`} style={{ width: '100%', height: 'auto' }}>
             <line x1="50" y1="200" x2="530" y2="200" stroke="var(--color-dark-border, #374151)" strokeWidth="1" />

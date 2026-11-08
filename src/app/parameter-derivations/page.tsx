@@ -82,8 +82,7 @@ export default function ParameterDerivations() {
               N<sub>corr</sub>-dependence is <em>sign-inverted relative to the mean-field physics it borrows</em>.
               In any mean-field model (Ising, Curie–Weiss), increasing the number of correlated units
               makes the transition <em>sharper</em>: in Curie–Weiss the finite-size rounding width shrinks as N<sup>&minus;1/2</sup>,
-              so a mean-field sharpness parameter would grow as &#x221A;N, the exact reciprocal of the ansatz (mechanism restated
-              2026-10-16; this used to say &ldquo;fluctuations stop self-averaging near criticality&rdquo;, which is a different phenomenon). Here, &#x03B3; = 2/&#x221A;N<sub>corr</sub> <em>decreases</em> with
+              so a mean-field sharpness parameter would grow as &#x221A;N, the reciprocal of the ansatz. That holds when N is the total size of an all-to-all model; N<sub>corr</sub> is closer to the count in one coherence volume, where the Ginzburg criterion applies and the scaling is steeper (for BCS the fluctuation window goes roughly as (T<sub>c</sub>/E<sub>F</sub>)&#x2074;; textbook, recalled, not re-derived), and that sharpness is in temperature while C&apos;s axis is density. The direction of the audit survives; &ldquo;exact&rdquo; did not. The deeper defect is the family: no &#x03B3; makes this curve sharp. Here, &#x03B3; = 2/&#x221A;N<sub>corr</sub> <em>decreases</em> with
               N<sub>corr</sub>, giving the most-correlated systems (BCS, BEC, N<sub>corr</sub> ≈ 10⁶&ndash;10⁹, depending on material and on what is counted &mdash;
               <em>range widened 2026-09-10 and again 2026-10-16 to match the calculator</em>: this read &ldquo;≈ 10⁶&rdquo; while the{' '}
               <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&gamma; Calculator</Link>{' '}
@@ -119,8 +118,7 @@ export default function ParameterDerivations() {
               was retired at the landing page (compander family); this page now matches.
             </p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
-              <strong>The log argument, ln(1 + &rho;/&rho;<sub>crit</sub>): chosen, no derivation</strong> (status line added 2026-10-24; a
-              graduate simulated-visitor persona noted every other ingredient had one). The &ldquo;+1&rdquo; keeps C finite and zero at
+              <strong>The log argument, ln(1 + &rho;/&rho;<sub>crit</sub>): chosen, no derivation</strong>. The &ldquo;+1&rdquo; keeps C finite and zero at
               &rho; = 0. With it, tanh(&gamma; ln(1+x)) = ((1+x)<sup>2&gamma;</sup> &minus; 1)/((1+x)<sup>2&gamma;</sup> + 1) exactly, so the
               log turns the tanh into a power-law compander: C &asymp; &gamma;x at small x, and 1 &minus; C &asymp; 2(1+x)<sup>&minus;2&gamma;</sup>
               at large x. The power law and its index come from this choice, not from a principle (MOND derives the corresponding deep-limit
@@ -134,7 +132,7 @@ export default function ParameterDerivations() {
               tanh is derived; this tanh is chosen. These are structurally different justifications.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem', marginTop: '0.5rem' }}>
-              <strong>Closed form (added 2026-10-09, graduate-physics visitor):</strong> with x = &rho;/&rho;<sub>crit</sub>,
+              <strong>Closed form:</strong> with x = &rho;/&rho;<sub>crit</sub>,
               tanh(&gamma; ln(1+x)) = [(1+x)<sup>2&gamma;</sup> &minus; 1] / [(1+x)<sup>2&gamma;</sup> + 1] exactly (checked to
               10<sup>&minus;12</sup>). Limits: C &asymp; &gamma;x for small x, and 1 &minus; C &asymp; 2x<sup>&minus;2&gamma;</sup> for large x.
               At &gamma; = &frac12; it is x/(x+2), MOND&apos;s simple &mu; with the scale doubled. It is a smooth sigmoid in (1+x)<sup>2&gamma;</sup>,
@@ -223,7 +221,7 @@ export default function ParameterDerivations() {
               exponent now has three mutually incompatible provenances — stated-Jeans &rarr; +0.5, code/usage
               &rarr; +2, MOND-requirement &rarr; &minus;2 — and no derived one.<strong> Restated 2026-08-28 (propagated here 2026-09-24):</strong> measured on SPARC (N = 129), the Jeans knee
               carries no velocity exponent at all, &#x03C1;<sub>crit</sub> &prop; V<sup>&minus;0.16 &plusmn; 0.19</sup> (median 0.161
-              M&#x2299;/pc&sup3;). The framework&apos;s V<sup>+2</sup> is excluded at ~11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap). A V<sup>&minus;2</sup> law <em>for this Jeans-construction knee</em> is excluded at ~10&sigma; by the same exponent, so the construction cannot be the a&#x2080; knee. That is not a test of MOND: MOND&apos;s transition density (the mean enclosed density where g<sub>bar</sub> = a&#x2080;) is a different quantity, and it scales as V<sup>&minus;2</sup> by construction on any sample that obeys the BTFR. (Disambiguated 2026-10-14; the sentence used to read &ldquo;MOND&apos;s required V<sup>&minus;2</sup> at ~10&sigma; too&rdquo;, which a simulated-visitor researcher persona read as a 10&sigma; anti-MOND result.) The refutation stands as a <em>wrong exponent</em>, not a sign inversion. The 240&times;&ndash;300,000&times;
+              M&#x2299;/pc&sup3;). The framework&apos;s V<sup>+2</sup> is excluded at ~11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap). A V<sup>&minus;2</sup> law <em>for this Jeans-construction knee</em> is excluded at ~10&sigma; by the same exponent, so the construction cannot be the a&#x2080; knee. That is not a test of MOND: MOND&apos;s transition density (the mean enclosed density where g<sub>bar</sub> = a&#x2080;) is a different quantity, and it scales as V<sup>&minus;2</sup> by construction on any sample that obeys the BTFR. The refutation stands as a <em>wrong exponent</em>, not a sign inversion. The 240&times;&ndash;300,000&times;
               magnitude is withdrawn: it used &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, but A = 0.028 was derived (Session 53)
               for &#x03C1;<sub>crit</sub> = A&middot;V<sup>0.5</sup>. Whether a disc crosses the knee is therefore reopened and
               estimator-dependent. This is the{' '}
@@ -322,7 +320,7 @@ export default function ParameterDerivations() {
             <p style={{ color: 'var(--color-text-secondary)' }}>
               The MOND acceleration scale is <em>posited</em> as a&#x2080; = cH&#x2080;/(2&#x03C0;) by dimensional analysis: cH&#x2080; is
               the only acceleration cosmology supplies. It does not follow from the coherence function, which contains no
-              a&#x2080; (until 2026-10-16 this sentence said it did; flagged by a simulated-visitor graduate persona).
+              a&#x2080;.
               <strong> Base rate:</strong> a 43-member grammar of simple prefactors on cH&#x2080; matches 89% of targets in
               [0.1, 0.3]&times;cH&#x2080; to &plusmn;10%, and the archive itself used five such routes (cH&#x2080;/2&#x03C0;, /6, /2,
               &#x03A9;<sub>m</sub>-power forms) and three H&#x2080; values, so a match at this level cannot be evidence
@@ -335,7 +333,7 @@ export default function ParameterDerivations() {
               with item 5&apos;s &#x03A3;&#x2080; = 119 at H&#x2080; = 67.4, since &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G)
               exactly (one number, not two). At the site-standard H&#x2080; = 67.4: a&#x2080; = 1.04&times;10<sup>&minus;10</sup>
               (13% below Milgrom) with &#x03A3;&#x2080; = 119 &mdash; the consistent pair, now quoted site-wide.
-              <strong> Convention caveat (2026-09-05, simulated-visitor grad-student persona):</strong> at &#x03B3; = &frac12; the compander
+              <strong> Convention caveat:</strong> at &#x03B3; = &frac12; the compander
               collapses to x/(x+2) = &#x03BC;<sub>simple</sub>(x/2) &mdash; MOND&apos;s simple function with a&#x2080; &rarr; 2a&#x2080;. Because
               &#x03C1;<sub>crit</sub> (or a&#x2080;) is free in every fit this factor is silently absorbed, but it means the framework&apos;s
               a&#x2080; is only defined up to a convention-dependent factor of 2 (the archive records a&#x2080; = g<sup>&dagger;</sup>/2 as exactly
@@ -343,9 +341,9 @@ export default function ParameterDerivations() {
               &ldquo;same order, same dimensional origin,&rdquo; not as agreement or disagreement.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-              This dimensional relation a&#x2080; &#x223C; cH&#x2080; has been noted since Milgrom (1983) and
-              independently derived by multiple frameworks (McCulloch 2007, Verlinde 2017, Smolin 2017)
-              with the same geometric factor. The quantities c and H&#x2080; are dimensionally sufficient to
+              This dimensional relation a&#x2080; &#x223C; cH&#x2080; has been noted since Milgrom (1983). Other authors reach the same
+              dimensional origin with different prefactors, not a shared one: McCulloch 2007 has 0.99&nbsp;cH, Verlinde 2016 cH&#x2080;/6, Smolin 2017
+              a<sub>&Lambda;</sub>/8.3 (<Link href="/mond-unification#a0-prefactors" style={{ color: 'var(--color-accent-blue)' }}>table</Link>). The quantities c and H&#x2080; are dimensionally sufficient to
               produce an acceleration &mdash; cH&#x2080; is not a Synchronism-specific derivation.
               Classified as dimensional analysis / reparametrization on the honest assessment page.
             </p>
@@ -494,8 +492,7 @@ export default function ParameterDerivations() {
               and 0.5&#x03C3; under the same two conventions. Like for like, the evolving a&#x2080; is the closer of the
               two on this sample (stated plainly 2026-10-10, with the RC100 counter-sample on Relation to MOND), and the
               level-free slope says the same thing without an anchor: constant a&#x2080; is n = 0, excluded by
-              Ciocan&apos;s bins at 5&#x03C3;. <em>(Corrected 2026-10-12: Ciocan&apos;s errors are 95% CIs; earlier
-              &#x03C3;&apos;s divided them as 1&#x03C3;. This sentence read 12&#x03C3; / 4.2&#x03C3; and 2.3&#x03C3; / 0.5&#x03C3;.)</em> If the paper&apos;s global slope (n = 1.15) holds, an a&#x2080; evolving
+              Ciocan&apos;s bins at 5&#x03C3;. <em></em> If the paper&apos;s global slope (n = 1.15) holds, an a&#x2080; evolving
               faster than H(z) embarrasses both halves of the 1983 coincidence, not this framework specifically.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
@@ -513,8 +510,7 @@ export default function ParameterDerivations() {
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>.
               One further note on the 13% figure two cards
               above: Ciocan&apos;s fitted z=0 intercept is 1.00 &plusmn; 0.02 (1&#x03C3;) = &plusmn; 0.04 (95% CI), about
-              2&#x03C3; from this framework&apos;s 1.04 <em>(corrected 2026-10-12: read as 1.0&#x03C3; until today, dividing
-              the 95% CI as 1&#x03C3;)</em> &mdash; but that intercept is the extrapolated endpoint of a linear fit over 0.33 &lt; z &lt; 1.44
+              2&#x03C3; from this framework&apos;s 1.04 <em></em> &mdash; but that intercept is the extrapolated endpoint of a linear fit over 0.33 &lt; z &lt; 1.44
               that the authors themselves call &ldquo;phenomenological&hellip;rather than physically motivated,&rdquo;
               not a local measurement, so this is a reason to stop treating the 13% gap as settled, not a claim
               of agreement.
@@ -567,8 +563,7 @@ export default function ParameterDerivations() {
               <strong>H&#x2080; inconsistency RESOLVED (2026-07-17</strong>, root cause identified by a visitor
               physics persona 2026-07-17): the 119-vs-123.3 split across pages was exactly an undisclosed
               Hubble-constant switch &mdash; &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G) gives 119.0 M&#x2609;/pc&sup2;
-              at H&#x2080; = 67.4 km/s/Mpc (Planck 2018) and 123.6 at H&#x2080; = 70 (the value implicit in the
-              a&#x2080; &#8776; 1.08&times;10<sup>&minus;10</sup> m/s&sup2; this page quoted until 2026-07-22). <strong>Site standard is
+              at H&#x2080; = 67.4 km/s/Mpc (Planck 2018) and 123.6 at H&#x2080; = 70. <strong>Site standard is
               now H&#x2080; = 67.4 km/s/Mpc</strong> (matching /freemans-law and Honest Assessment), giving
               &#x03A3;&#x2080; &#8776; 119. Given the caveat below, no sub-percent &ldquo;match&rdquo; claim
               survives either H&#x2080; choice, so the choice changes bookkeeping, not verdicts. (2) Neither error bar is meaningful on its
@@ -864,6 +859,17 @@ export default function ParameterDerivations() {
       </section>
 
       <RelatedConcepts currentPath="/parameter-derivations" />
+      <details id="corrections-log" style={{ margin: '2rem 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+        <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim). Dated corrections moved here from the running text on 2026-11-08, verbatim, in page order.</summary>
+        <ul style={{ paddingLeft: '1.1rem' }}>
+          <li>mechanism restated 2026-10-16; this used to say &ldquo;fluctuations stop self-averaging near criticality&rdquo;, which is a different phenomenon</li>
+          <li>Disambiguated 2026-10-14; the sentence used to read &ldquo;MOND&apos;s required V<sup>&minus;2</sup> at ~10&sigma; too&rdquo;, which a simulated-visitor researcher persona read as a 10&sigma; anti-MOND result.</li>
+          <li>until 2026-10-16 this sentence said it did; flagged by a simulated-visitor graduate persona</li>
+          <li>Corrected 2026-10-12: Ciocan&apos;s errors are 95% CIs; earlier &#x03C3;&apos;s divided them as 1&#x03C3;. This sentence read 12&#x03C3; / 4.2&#x03C3; and 2.3&#x03C3; / 0.5&#x03C3;.</li>
+          <li>corrected 2026-10-12: read as 1.0&#x03C3; until today, dividing the 95% CI as 1&#x03C3;</li>
+          <li>the value implicit in the a&#x2080; &#8776; 1.08&times;10<sup>&minus;10</sup> m/s&sup2; this page quoted until 2026-07-22</li>
+        </ul>
+      </details>
     </>
   );
 }

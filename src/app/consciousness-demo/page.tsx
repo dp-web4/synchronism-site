@@ -69,7 +69,7 @@ export default function ConsciousnessDemo() {
           C<sub>&rho;</sub>&nbsp;=&nbsp;tanh(&gamma;&nbsp;ln(&rho;/&rho;<sub>crit</sub>&nbsp;+&nbsp;1)). It is <em>not</em> the C behind the
           site&apos;s galaxy fits: those use acceleration-keyed variants (C<sub>g</sub>, C<sub>a</sub>, order 0.3&ndash;1 on SPARC
           discs), while C<sub>&rho;</sub> on the same discs is ~10<sup>&minus;3</sup> or below. See the glossary&apos;s{' '}
-          <Link href="/glossary#which-c-which" style={{ color: 'var(--color-accent-blue)' }}>Which C? Which &gamma;?</Link> entry. This demo asks
+          <Link href="/glossary#which-c-which-gamma" style={{ color: 'var(--color-accent-blue)' }}>Which C? Which &gamma;?</Link> entry. This demo asks
           <em> where on that one axis consciousness might sit</em>, and its honest answer is: nobody can currently
           say, because <strong>no calibration procedure maps EEG, fMRI, or IIT-&Phi; onto the C axis at all.</strong>
           Two separate readers (a casual reader and a technical writer, both 2026-09-10) reported that the unlabelled

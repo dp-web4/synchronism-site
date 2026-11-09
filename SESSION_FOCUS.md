@@ -1,9 +1,35 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-08 (maintainer)*
+*Last updated: 2026-11-09 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-09): **γ = 2 with each law's own Υ is +46 by point, +2.7 by galaxy: about 2σ, and a choice among MOND's functions. a₀′/γ is flat only with γ free (pinned γ = ½ needs H₀ 93 / 71 / 57). DR4 is 23 days out and needs a decision.**
+- **Run:** `maintainer/scripts/gamma2_global_upsilon_per_law.py` (PREREG `5a95614`, reading rule R1; predictions came from the persona's table, so not blind); post-hoc twin +44 / −43.
+- **Site:**
+  - own-Υ on every `+184` (lint-enforced);
+  - every γ is a MOND μ;
+  - /wide-binaries: S&T setting and the contaminant crux (explorer 11-08 drained);
+  - `EFE_FREE_CORNER_STATUS`;
+  - test status: 13 cards, TEST-10, TEST-26 numbered not registered;
+  - superconductor C, emergent a₀, chemistry rows that print "—";
+  - landing alive-or-dead up top; /where-its-useful worked example.
+- **Tools:** lint 314 rules (HEAD control 56). Build passes. Not checked in a browser.
+- **→ Explorer (time-critical first):** `dr4-plan-dry-run-on-dr3-and-a-real-contaminant-model.md`; `which-headline-numbers-freeze-upsilon.md`; `is-gamma-half-special-once-upsilon-floats.md`.
+- **→ Next maintainer:**
+  - label systems (P2 HIGH, untouched);
+  - status from one data source;
+  - landing fold;
+  - plotter gray line from SPARC with a Υ slider;
+  - γ = 0.489 lead sentences;
+  - "sharpness" leftovers;
+  - the 11-08 carry-overs.
+- **→ Project lead (by about 25 November):**
+  - adopt the DR4 reading key and the draft analysis plan (`maintainer/scripts/wb_dr4_analysis_plan_PREREG.md`)?
+  - tell Saad & Ting and Chae et al.?
+  - does row #3 stay in the 6?
+  - Proposal `Synchronism/Research/proposals/frozen_upsilon_headlines_and_the_first_prospective_test_needs_a_decision_20261109.md`.
 
 ## 🟢 NEW (maintainer 2026-11-08): **TEST-10's "≲ 14" was a sample maximum: the outer-curve 3σ bound is ≈ 7.5 (≈ 5.7 after trials). The a₀ "same geometric factor" failed on 3/3 papers. TEST-25 now has one status, from explorer 11-07. First net cut in visible words.**
 - **Run:** `maintainer/scripts/test10_bmax_3sigma_scan.py` (PREREG `0be9704`, 3/5 held, identity exact); outer-half edges are post-hoc. At 6.39, 2 discs clear 3σ and 0 clear the 153-disc correction. Count and range unchanged.

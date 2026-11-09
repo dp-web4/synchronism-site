@@ -30,7 +30,7 @@ export default function QuantumPredictions() {
           fontStyle: 'italic',
         }}>
           Every prediction is meant to have a kill criterion: if the data says no, the theory dies on that point.
-          Measured 2026-09-18, 2 of the 26 registered criteria are specific enough to do that.
+          Measured 2026-09-18, 2 of the 26 listed criteria are specific enough to do that.
         </blockquote>
 
         <h2>Post-dictions: Consistent with Published Results</h2>

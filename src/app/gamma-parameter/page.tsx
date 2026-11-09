@@ -74,7 +74,7 @@ export default function GammaParameter() {
               (more particles &rarr; narrower), but &#x03B3; sits in a transition-<em>sharpness</em> slot
               (larger &rarr; sharper). The formula therefore gives the most collective systems the{' '}
               <em>flattest</em> coherence curves &mdash; which is how a BCS superconductor, a system with
-              a real macroscopic transition, ends up at C &#x2248; 0. The{' '}
+              a real macroscopic transition, is assigned C &#x2248; 0. That value is the formula&apos;s output from a hand-assigned N<sub>corr</sub>, not a calculation: no electron density or critical density is used, and C(ρ) has no temperature, so it cannot see a transition that happens at fixed density. The{' '}
               <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>coherence function page</Link>{' '}
               discloses that consequence; it originates here. The standard result this rests on: in mean-field finite-size
               scaling the rounding width of a transition shrinks as N<sup>&minus;1/2</sup>, so a sharpness parameter should
@@ -187,7 +187,7 @@ export default function GammaParameter() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           The galaxy rung &mdash; the only one tested quantitatively &mdash; refutes the premise from both
           directions: pinning &#x03B3; = 2 (from N<sub>corr</sub> = 1) is rejected on the SPARC RAR at
-          &#x0394;BIC = +184 (with the 2,807 points treated as independent; scored by galaxy, 2026-09-29, the margin is ΔBIC ≈ +11, 1.6–2.2σ: disfavoured at the threshold, not decisive), and the data-preferred &#x03B3; &#x2248; 0.49 back-implies
+          &#x0394;BIC = +184 (Υ frozen; +46 with Υ free per law; with the 2,807 points treated as independent; scored by galaxy, 2026-09-29, the margin is ΔBIC ≈ +11, 1.6–2.2σ: disfavoured at the threshold, not decisive), and the data-preferred &#x03B3; &#x2248; 0.49 back-implies
           N<sub>corr</sub> &#x2248; 17, contradicting the independent-stars premise that licensed
           N<sub>corr</sub> = 1 in the first place. On the chemistry rung, N<sub>corr</sub> is read backward
           from &#x03B3;. Across all 17 scales, the formula has never <em>predicted</em> an

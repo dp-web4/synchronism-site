@@ -63,10 +63,7 @@ export default function CosmicHorizons() {
         <p>
           This is the{' '}
           <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>MOND unification equation</Link>{' '}
-          read backwards. If a&#x2080; emerges from H&#x2080;, then H&#x2080; can be understood as
-          encoding the coherence transition rate of the universe. The expansion rate of the cosmos
-          and the acceleration threshold for modified gravity are the same physical quantity viewed
-          from different frames.
+          read backwards. <em>The proposal:</em> if a&#x2080; came from H&#x2080;, then H&#x2080; would encode the coherence transition rate of the universe, and the expansion rate and the acceleration threshold would be one quantity seen from different frames. The relation is posited, not derived from C, and a&#x2080; &#x2248; cH&#x2080; is an old coincidence in the MOND literature.
         </p>
 
         <h2>Cosmology Arc 2.0: Sessions #332&ndash;335</h2>

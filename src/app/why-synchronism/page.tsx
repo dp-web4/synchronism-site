@@ -273,7 +273,7 @@ export default function WhySynchronism() {
         <p>
           3,308 autonomous research sessions. 42 complete research arcs.
           Conducted by autonomous AI agents, with a human (dp) setting direction and overseeing the ledger.
-          The rule is that every prediction gets a kill criterion; in practice, 2 of 26 registered criteria are
+          The rule is that every prediction gets a kill criterion; in practice, 2 of 26 listed criteria are
           fully specified (<Link href="/falsifiability" style={{ color: 'var(--color-accent-blue)' }}>the count</Link>).
           Every failure is documented.
         </p>

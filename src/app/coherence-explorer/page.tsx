@@ -324,7 +324,7 @@ export default function CoherenceExplorer() {
               style={{ width: '100%' }}
             />
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.25rem' }}>
-              Lower &#x03C1;<sub>crit</sub> = transition starts at lower density (shifts curve left). Higher = transition occurs at higher density.
+              Lower &#x03C1;<sub>crit</sub> moves the whole curve left, and higher moves it right. It sets the scale, not the shape, and it does not mark a transition.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', marginTop: '0.25rem', borderLeft: '2px solid rgba(139,92,246,0.6)', paddingLeft: '0.5rem' }}>
               <strong style={{ color: '#a78bfa' }}>This slider carries no shape information &mdash; and that is the

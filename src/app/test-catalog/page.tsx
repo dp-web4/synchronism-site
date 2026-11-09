@@ -98,7 +98,7 @@ export default function TestCatalog() {
           {OPERATIONAL_STATES.join(' | ')} &mdash; what a test <em>can</em> do or what happened to it.{' '}
           <strong style={{ color: 'var(--color-text-secondary)' }}>Lifecycle verbs (not badges):</strong>{' '}
           {LIFECYCLE_VERBS.join(' | ')} &mdash; the provenance of a row.
-          Both lists are complete and rendered from one source (Tier 1&apos;s card legend shows the smaller per-card subset of the operational states, from the same file); neither is a verdict on the claim. Retired, no longer
+          Both lists are complete and rendered from one source (Tier 1&apos;s card legend draws from both lists, from the same file); neither is a verdict on the claim. Retired, no longer
           assigned: {RETIRED_LABELS.map(r => r.name).join(', ')}.{' '}
           <Link href="/glossary#test-card-states" style={{ color: 'var(--color-text-muted)' }}>States used on test cards, one line each →</Link>{' '}
           <Link href="/glossary" style={{ color: 'var(--color-text-muted)' }}>Definitions (Glossary) →</Link>{' '}
@@ -140,12 +140,12 @@ export default function TestCatalog() {
           <strong style={{ color: '#f59e0b' }}>Discrimination status:</strong>{' '}
           Of the 24 registry tests (TEST-01 to TEST-24), <strong>0 selected Synchronism over MOND+EFE+&Lambda;CDM (MOND with its external field effect, plus the standard &Lambda;-cold-dark-matter cosmology), and none still unrun can
           select the framework as postulated</strong>. The 2 added later do not change that: TEST-25&apos;s Cassini failure is shared with MOND&apos;s simple &mu;, and TEST-26 has no framework-specific outcome (its kill is shared with &Lambda;CDM, its win with wCDM).{' '}
-          <strong>2 executed tests did discriminate, and both selected MOND</strong> (TEST-09, BTFR slope: the prediction sits 3.3σ from the data: (3.753 − 3.347)/√(0.10² + 0.07²) = 3.3, with the observed slope&apos;s ±0.10 and the predicted slope&apos;s ±0.07 (both bootstrap 1σ, N = 123) combined in quadrature; dividing by the observed error alone gives ~4σ; TEST-10, dwarf DM fractions). &ldquo;Selected MOND&rdquo; means the MOND class with an unbounded boost; the particular simple &mu; that the free-&gamma; fit lands on is itself excluded by Cassini (TEST-25), so only MOND with a sharper return survives both. Both kills are convention-dependent: TEST-09 fired at
+          <strong>2 executed tests did discriminate, and both selected MOND</strong> (TEST-09, BTFR slope: the prediction sits 3.3σ from the data: (3.753 − 3.347)/√(0.10² + 0.07²) = 3.3, with the observed slope&apos;s ±0.10 and the predicted slope&apos;s ±0.07 (both bootstrap 1σ, N = 123) combined in quadrature; dividing by the observed error alone gives ~4σ; TEST-10, dwarf DM fractions). &ldquo;Selected MOND&rdquo; means the MOND class with an unbounded boost; the particular simple &mu; that the free-&gamma; fit lands on is itself excluded by Cassini (TEST-25), so only MOND with a sharper return survives both. TEST-10 fires at every candidate ceiling under its registered rule. TEST-09&apos;s kill is convention-dependent: it fired at
           B<sub>max</sub> = 1/&Omega;<sub>m</sub> (n = 3.35, |&Delta;n| = 0.41 &gt; 0.3) but the 2026-09-18 ceiling sweep finds
           it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub> (|&Delta;n| = 0.297, strict
           &gt; 0.3) or &Omega;<sub>m</sub>/&Omega;<sub>b</sub> (0.26), so it does not survive its own pre-fixed rule; the
           convention-free results are class exclusions, B<sub>max</sub> &#8818; 5.3 by the BTFR slope and
-          B<sub>max</sub> &#8818; 14 by SPARC dwarfs; the weak-lensing RAR (Brouwer+2021) excludes every candidate ceiling, 6.39 included, even with all cosmic baryons counted (<Link href="/honest-assessment#lensing-ceiling" style={{ color: '#f59e0b' }}>details</Link>). Whether they stay in the count of 6 is pending the project lead (dp). TEST-09 and TEST-10 would have selected
+          B<sub>max</sub> &#8818; 7.5 at 3&sigma; on one SPARC disc&apos;s outer curve (&asymp; 5.7 after correcting for 153 discs); the weak-lensing RAR (Brouwer+2021) excludes every candidate ceiling, 6.39 included, even with all cosmic baryons counted (<Link href="/honest-assessment#lensing-ceiling" style={{ color: '#f59e0b' }}>details</Link>). Whether TEST-09 stays in the count of 6 is pending the project lead (dp). TEST-09 and TEST-10 would have selected
           the framework had its boost ceiling held.
           A test that separates two models <em>is</em> discriminating regardless of which one wins. The
           remaining Tier-1 tests are self-eliminating (no outcome selects Synchronism), failed by sign, or
@@ -217,8 +217,7 @@ export default function TestCatalog() {
           (Tier 1 = 01&ndash;10, Tier 2 = 11&ndash;14, Tier 3 = 15&ndash;21, Tier 4 = 22&ndash;24), plus <strong>TEST-25</strong>,
           the Cassini/SPARC squeeze added out-of-band 2026-07-28, and <strong>TEST-26</strong>, the DESI (Dark Energy Spectroscopic Instrument) DR3
           dark-energy class no-go (proposed 2026-08-10, prospective; kill or tie for the framework as postulated, select only
-          on the mean-density reading; catalog-registered 2026-08-12
-          after a simulated-visitor pass found it existing on one page and absent here). Both use existing data or scheduled survey data,
+          on the mean-density reading). <strong>TEST-26 is numbered in this list but not registered:</strong> it was added 2026-08-12, after a simulated-visitor pass found it existing on one page and absent here, and its kill text has not been adopted. So 26 tests are numbered and 25 have a registered kill criterion. Both use existing data or scheduled survey data,
           so both are listed with Tier 1 (<Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1: Existing Data</Link>),
           even though the ID-range rule above does not cover them. Suffixes: <code>a</code> = amended sub-test
           registered after the parent was withdrawn (TEST-04a); <code>s</code> = substituted protocol, run on a
@@ -249,7 +248,7 @@ export default function TestCatalog() {
             datasets with these results:
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0.5rem', paddingLeft: '1.25rem' }}>
-            <li><strong>RAR transition shape</strong> (2807 SPARC points, 2026-05-21): γ=2 compander refuted at ΔBIC=+184 (ΔBIC: difference in Bayesian Information Criterion; positive disfavours the first model); free-γ=0.49=MOND — <span style={{ color: '#ef4444' }}>FAILED (γ=2); collapses to MOND at fitted γ (curve-equivalence only — the field equation is postulated in the archive, not derived, and the version stated there is eliminated a priori — corrected 2026-08-09 from &ldquo;no action, no Lagrangian, no dynamics&rdquo;). Galaxy tests that selected Synchronism over MOND: 0 (2 discriminated, TEST-09 and TEST-10, and both selected MOND).</span>{' '}
+            <li><strong>RAR transition shape</strong> (2807 SPARC points, 2026-05-21): γ=2 compander at ΔBIC=+184 by point with Υ frozen, +46 with each law&apos;s own Υ (ΔBIC: difference in Bayesian Information Criterion; positive disfavours the first model): disfavoured at about 2σ; free-γ=0.49=MOND — <span style={{ color: '#ef4444' }}>FAILED (γ=2); collapses to MOND at fitted γ (curve-equivalence only — the field equation is postulated in the archive, not derived, and the version stated there is eliminated a priori — corrected 2026-08-09 from &ldquo;no action, no Lagrangian, no dynamics&rdquo;). Galaxy tests that selected Synchronism over MOND: 0 (2 discriminated, TEST-09 and TEST-10, and both selected MOND).</span>{' '}
               <details style={{ display: 'inline', color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
                 <summary style={{ cursor: 'pointer', display: 'inline' }}>Revision note</summary>{' '}
                 This line used to end &ldquo;Net discriminating galaxy tests vs MOND: 0&rdquo;, which read as the retracted
@@ -391,9 +390,9 @@ export default function TestCatalog() {
           </div>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1.5rem' }}>
-          <strong>10 vs 11:</strong> the 10 are the registry&apos;s Tier-1 tests (TEST-01 to TEST-10). The{' '}
-          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 page</Link> lists 11 because it also
-          carries TEST-25, one of the 2 tests added later, which also runs on existing data. 10 + 1 = 11.{' '}
+          <strong>10 vs 13:</strong> the 10 are the registry&apos;s Tier-1 tests (TEST-01 to TEST-10). The{' '}
+          <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 page</Link> has 13 cards because it also
+          carries the variant 04a and the 2 tests added later, TEST-25 and TEST-26. 10 + 1 + 2 = 13.{' '}
           The &ldquo;Pre-registered &amp; Completed: 0&rdquo; counts only tests whose kill criterion was registered
           <em> before</em> the relevant dataset was analyzed. This is distinct from the retrospective analyses
           in the &ldquo;What&apos;s Already Been Analyzed&rdquo; box above (galaxy rotation, chemistry, TEST-03/04a).
@@ -425,7 +424,7 @@ export default function TestCatalog() {
             S = 1.98, nonlocal-grid arm S = 2.0, the framework&apos;s own density substrate S = 1.85. <strong>Refuted</strong> (a
             construction check, not data; see{' '}
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).</li>
-          <li>B2 RAR transition shape at &#x03B3; = 2 (refuted under the registered point-level criterion, &Delta;BIC +184; &asymp;&nbsp;+11, 1.6&ndash;2.2&sigma;, with the galaxy as the unit: disfavoured at the threshold, recount pending the project lead) &middot; B3 consciousness threshold C &asymp; 0.50
+          <li>B2 RAR transition shape at &#x03B3; = 2 (refuted under the registered point-level criterion, &Delta;BIC +184; &asymp;&nbsp;+11 with the galaxy as the unit; +46 and +2.7 with each law&apos;s own global &Upsilon;: disfavoured at about 2&sigma;, recount pending the project lead) &middot; B3 consciousness threshold C &asymp; 0.50
             (untested; the one test ran on a different variable) &middot; B4 compatibility scaling (heterogeneous case run 2026-09-25: refuted as stated;
             the surviving 1/&lang;C&rang; holds by construction, so reparametrization) &middot; B5 f(N) reconstruction rate (not yet derived) &middot; B6 non-monogamous entanglement (gated on B1,
             which failed) &middot; B7 vacuum Umklapp (Planck-suppressed).</li>

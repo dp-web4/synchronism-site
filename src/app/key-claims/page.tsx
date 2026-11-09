@@ -383,7 +383,7 @@ export default function KeyClaims() {
               stated, and the 34 dependent neural predictions inherit that verdict.
             </span>
             Note: C&nbsp;&#x2248;&nbsp;0.50 is the arithmetic midpoint of [0,1), not the dynamically privileged
-            point — the maximum rate of change occurs at C&nbsp;&#x2248;&nbsp;0.58–0.59 (vs log-density, γ=2)
+            point — the maximum rate of change occurs at C&nbsp;&#x2248;&nbsp;0.60 (vs log-density, γ=2)
             or at C&nbsp;=&nbsp;0 (vs linear density). This is a geometric threshold in the output range,
             not a mathematical phase transition (the function is smooth everywhere). It requires three
             conditions simultaneously &mdash; coherence,
@@ -582,8 +582,8 @@ export default function KeyClaims() {
 
           <p style={{ fontWeight: 500, marginBottom: '0.75rem' }}>
             <em>The claim as proposed (it failed; see the badge):</em> dark matter effects would arise where density falls into
-            the sparse/independent (low&nbsp;C) regime; the MOND acceleration scale a&#x2080; would emerge from the coherence
-            transition rather than being a fundamental constant; and the &ldquo;dark matter&rdquo; would be the coherence
+            the sparse/independent (low&nbsp;C) regime; the MOND acceleration scale a&#x2080; would come from the coherence
+            transition (on audit, the relation is posited, not derived; see <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>); and the &ldquo;dark matter&rdquo; would be the coherence
             gradient at the transition from dense/collective to sparse/independent behavior, not missing matter. On test,
             the density-keyed version failed on SPARC, and the version that fits is MOND&apos;s simple &mu; in different notation. Why matching MOND still counts as <em>Failed</em>: fitting the same curves as an existing theory with a renamed formula adds nothing new. A match would only be news if the equation also predicted something MOND does not and that prediction held. It made three such predictions (a cap on how much gravity can be boosted, an effect of a galaxy&apos;s surroundings, and a density knee that grows with rotation speed), and each failed when tested.
             <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em', display: 'block', marginTop: '0.25rem' }}>
@@ -711,7 +711,7 @@ export default function KeyClaims() {
               C = tanh(&#x03B3;&thinsp;ln(1+x)) = [(1+x)<sup>2&#x03B3;</sup>&minus;1]/[(1+x)<sup>2&#x03B3;</sup>+1] exactly, and at{' '}
               <strong>&#x03B3; = &frac12;</strong> this is <strong>C = x/(x+2) = &#x03BC;<sub>simple</sub>(x/2)</strong>{' '}
               &mdash; MOND&apos;s simple interpolating function for every x, not just asymptotically. The free-&#x03B3;
-              SPARC fit lands at 0.489, 2% away. The <em>same</em> cancellation gives (1&minus;C)/C = 2/x, hence
+              SPARC fit lands at 0.489 at Υ = 0.5, 2% away (&#x03B3;&#x0302; runs 0.28&ndash;0.96 across Υ = 0.4&ndash;0.6, so that 2% is a statement about one M/L). The <em>same</em> cancellation gives (1&minus;C)/C = 2/x, hence
               &#x03C1;<sub>DE</sub> = 2&#x03C1;<sub>crit</sub> = constant &mdash; exactly &Lambda; &mdash; and a DESI DR2 fit lands at
               &#x03B3; = 0.487 +0.024/&minus;0.021 (SPARC&apos;s own uncertainty is &plusmn;0.11). These are not two measurements agreeing
               on a constant: γ = ½ is the one member of the family with no collective transition, and each dataset sends γ there.
@@ -802,8 +802,7 @@ export default function KeyClaims() {
               Freeman&apos;s Law, &#x0393; = &#x03BA;&sup2;(1&minus;c) (Palma&ndash;Suominen&ndash;Ekert 1996),
               Bell-freezing c(d) (waveguide QED). These are documented on the{' '}
               <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link> page.
-              Reparametrizations are not failures &mdash; they confirm the framework is internally consistent
-              with known physics &mdash; but they are not novel contributions.
+              Reparametrizations are not failures, and they are consistent with known physics by construction, so they earn no evidential credit and are not novel contributions.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
               <strong>The BTFR slope left this list on 2026-07-14</strong> &mdash; executed on real SPARC, it is

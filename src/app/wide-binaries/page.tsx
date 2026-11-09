@@ -188,8 +188,9 @@ export default function WideBinaries() {
 
         <h2>Current Observational Status (abstracts re-read 2026-11-08)</h2>
         <p>
-          The earlier dispute (sample selection, contamination, statistical cuts) has been joined by a sharper disagreement about one
-          modelling step. Papers below are read from their abstracts only, at the arXiv version noted.
+          Papers below are read from their abstracts, at the arXiv version noted. Where a line says so, a public code or an in-house
+          calculation was also read. Is there a boost in these 36 binaries? It now depends on how many of them have hidden companions or were
+          disturbed, not on how the orbit is deprojected.
         </p>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
           <li><strong>Chae et al. 2026 (arXiv:2601.21728, v4)</strong>: 36 nearby binaries with accurate 3D velocities give a boost
@@ -197,9 +198,8 @@ export default function WideBinaries() {
             by two pairs; without them &Gamma; = 0.042 (+0.027/&minus;0.024), i.e. &#x03B3; &asymp; 1.2.</li>
           <li><strong>Saad &amp; Ting 2026 (arXiv:2603.11015, v2; Open Journal of Astrophysics)</strong>: the <em>same</em> 36 binaries with the
             semi-major axis forward-modelled give <strong>&#x03B3; = 1.00 (+0.24/&minus;0.19), consistent with Newton</strong>. Using a geometric deprojection instead
-            gives 1.56 (+0.21/&minus;0.18), matching Chae, so the disagreement sits in that one modelling step.</li>
-          <li><strong>Chae, Park &amp; Yoon 2026 (arXiv:2610.40388, v2)</strong>: replies that a recent claim of Newtonian gravity from the Chae sample is &ldquo;a consequence of a fatal
-            error in the code or arbitrarily enlarged errors&rdquo;. The abstract does not name Saad &amp; Ting; the description fits. Unresolved.</li>
+            gives 1.56 (+0.21/&minus;0.18), matching Chae. Their abstract attributes the difference to the semi-major axis model. <strong>Checked 2026-11-08/09:</strong> in the public code at commit <code>4333e9f</code>, <code>run_gamma_analysis.py</code> line 106 sets the separation error to the larger of 5% of s and the absolute line-of-sight distance error. That comes to a median of about 190% of s, where the paper states about 0.1%. An in-house mock test finds that this setting returns about 0.65 × the true &#x03B3;, and that free-a and geometric models agree when the separation error is physical. So the deprojection step is not the crux. <a href="https://github.com/dp-web4/synchronism-site/blob/main/explorer/findings/wide-binary-mock-injection-saad-ting-newton-is-a-separation-error-bug-deprojection-is-not-the-crux-contamination-is.md" style={{ color: 'var(--color-accent-blue)' }}>Finding and scripts</a>: one AI session&apos;s calculation, not externally reviewed. The same run does <em>not</em> establish a boost (next box).</li>
+          <li><strong>Chae, Park &amp; Yoon 2026 (arXiv:2610.40388, v2)</strong>: replies that a recent claim of Newtonian gravity from the Chae sample comes from an error in the code or from enlarged errors. The abstract does not name Saad &amp; Ting; the description fits, and the separation-error setting above is what it describes. The check found no evidence about motive, and the setting reads as a defect: the same 5% floor appears from the code&apos;s first release.</li>
           <li><strong>Boufourou 2026 (arXiv:2608.24556)</strong>: on the 81,088-pair Chae 2024 sample, robust estimators give &#x03B3; = 1.045 [1.025, 1.068] at 2&ndash;30 kau and reject 1.4
             at ~16&sigma;, with mock catalogues recovering an injected boost and a proposed pre-registered protocol for DR4. Preprint, one author, abstract only.</li>
           <li><strong>Prior generation (2023–2024)</strong>: Banik et al. (2024), Pittordis &amp; Sutherland
@@ -216,13 +216,13 @@ export default function WideBinaries() {
           fontSize: '0.85rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: '#f59e0b' }}>Status: pending external adjudication (adjudication executed 2026-06-12 — HUNG).</strong>{' '}
-          The crux migrated from sample cuts to orbital modeling prior. The adjudication will turn on:
-          (1) whether the 2610.40388 reply holds up against Saad &amp; Ting&apos;s model; (2) mock-injection cross-validation
-          of the deprojection crux specifically (decidable with <em>no new data</em>, still not done as far as these abstracts show); (3) independent ≥3σ boost
-          confirmation → kill fires; (4) independent null replication → degenerate survival; (5) Gaia DR4.
-          All independent third parties (Saad &amp; Ting, Saglia et al. 2025, Pasquini et al. 2026) currently
-          lean Newtonian or deflationary.
+          <strong style={{ color: '#f59e0b' }}>Status: still hung, with the crux restated (2026-11-09).</strong>{' '}
+          <strong>The crux is the contaminant fraction f of the 36 systems.</strong> In the in-house mixture fit, &#x03B3; is about 1.5&ndash;1.8 if f &le; 0.1, and about 1.0&ndash;1.2 if f is free
+          (fitted f 0.26&ndash;0.50). Chae et al. cite f &lesssim; 0.1 for such samples, so the answer turns on whether that bound holds for these systems. Follow-up radial velocities on the three highest-velocity
+          systems would do more than further modelling. <strong>One number was not reproduced:</strong> Chae et al.&apos;s consolidated &Gamma; = 0.102 (this calculation gives 0.139 from the same per-system values; either implementation could be wrong, and their consolidation script is not public).
+          The adjudication will turn on: (1) a real contaminant model for these 36; (2) independent ≥3σ boost
+          confirmation → kill fires; (3) independent null replication → degenerate survival; (4) Gaia DR4. Mock-injection cross-validation of the deprojection step, once listed here, is done.
+          Saglia et al. 2025, Pasquini et al. 2026 and Boufourou 2026 lean Newtonian or deflationary. Saad &amp; Ting&apos;s 1.00 as coded is not evidence for Newton: read through its own calibration it maps to a true &#x03B3; of about 1.3&ndash;1.5.
         </div>
 
         <div style={{

@@ -31,8 +31,8 @@ const regions = [
     color: '#8b5cf6',
     range: [1.4, 4.0],
     systems: ['Ideal gases', 'Single atoms', 'Few-particle systems', 'Uncorrelated matter'],
-    physics: 'Few correlated particles (small N_corr, large γ) — the single-particle / uncorrelated regime. Individual behavior dominates; rapid decoherence. γ = 2 (N_corr = 1) is the value the framework asserts for galaxies — but the SPARC RAR ensemble test rejected γ = 2 at ΔBIC = +184; the free fit gives γ ≈ 0.49, which back-implies N_corr ≈ 17 and contradicts the N_corr = 1 premise. The galaxy marker below is shown at the asserted value with that refutation flagged.',
-    realityCheck: 'Reality check: an ideal gas has no phase transition at all — yet the formula assigns it the sharpest curve on the map: maximal sharpness with nothing to be sharp about. And the galaxies the framework pins here at γ = 2 were refuted on SPARC data at ΔBIC = +184.',
+    physics: 'Few correlated particles (small N_corr, large γ) — the single-particle / uncorrelated regime. Individual behavior dominates; rapid decoherence. γ = 2 (N_corr = 1) is the value the framework asserts for galaxies — but the SPARC RAR ensemble test disfavours γ = 2 (ΔBIC = +184, Υ frozen; +46 with Υ free per law); the free fit gives γ ≈ 0.49, which back-implies N_corr ≈ 17 and contradicts the N_corr = 1 premise. The galaxy marker below is shown at the asserted value with that refutation flagged.',
+    realityCheck: 'Reality check: an ideal gas has no phase transition at all — yet the formula assigns it the sharpest curve on the map: maximal sharpness with nothing to be sharp about. And the galaxies the framework pins here at γ = 2 are disfavoured on SPARC data (ΔBIC = +184, Υ frozen; +46 with Υ free per law).',
   },
 ];
 
@@ -265,7 +265,7 @@ export default function PhaseBoundaryVisualizer() {
             When two physically unrelated systems produce the same &#x03B3;, &#x03B3; is classifying the <em>counting method</em>, not the system.
             Until a scale-invariant N<sub>corr</sub> recipe is established, every cross-scale &#x03B3; comparison is method-dependent.
             BCS superconductor placement uses N<sub>corr</sub> = 10<sup>7</sup> (&#x03B3; = 2/&#x221A;10<sup>7</sup> &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>, matching the &#x03B3; Calculator preset); physical Cooper-pair volumes contain ~10<sup>6</sup>–10<sup>9</sup> pairs depending on material.
-            <strong>Galaxy placement (2026-06-11):</strong> the asserted &#x03B3; = 2 (N<sub>corr</sub> = 1) was rejected on the SPARC RAR ensemble at &#x394;BIC = +184; the free fit gives &#x03B3; &#x2248; 0.49 &#x2192; N<sub>corr</sub> &#x2248; 17, contradicting the independent-stars premise. Both markers are shown so the refutation is visible, not hidden.
+            <strong>Galaxy placement (2026-06-11):</strong> the asserted &#x03B3; = 2 (N<sub>corr</sub> = 1) is disfavoured on the SPARC RAR ensemble (&#x394;BIC = +184, Υ frozen; +46 with Υ free per law); the free fit gives &#x03B3; &#x2248; 0.49 &#x2192; N<sub>corr</sub> &#x2248; 17, contradicting the independent-stars premise. Both markers are shown so the refutation is visible, not hidden.
             <strong> Which law (added 2026-09-24):</strong> the +184 and the 0.49 both come from the formula keyed on
             <em> acceleration</em> (MOND&apos;s variable), while this axis is the density-keyed law&apos;s &#x03B3; = 2/&radic;N<sub>corr</sub>.
             Fitted in density, the galaxy law goes to &#x03B3; &rarr; 0.046 (N<sub>corr</sub> &asymp; 1.9&times;10&sup3;) and is refuted at

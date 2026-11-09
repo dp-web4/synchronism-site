@@ -47,6 +47,17 @@ export default function WhereItsUseful() {
       <Breadcrumbs currentPath="/where-its-useful" />
       <h1>Where It&apos;s Already Useful</h1>
       <ValidationBadge status="active-mrh" label="Applied design ontology — load-bearing in running code" />
+      <div className="card" style={{ margin: '1rem 0 1.5rem', borderLeft: '3px solid var(--color-accent-blue)' }}>
+        <p style={{ margin: '0 0 0.5rem' }}>
+          <strong>What does any of this do, in plain words?</strong> One example: in this lab, AI agents do the work, and every command an agent tries passes a rule check first.
+          A rule can refuse a command, the refusal says why, the agent can appeal, and the record is kept. The idea borrowed from Synchronism is that what an agent may touch is bounded by a context
+          (the &ldquo;relevancy horizon&rdquo;). This site&apos;s own maintenance sessions run under that check: if a command&apos;s reach cannot be worked out in advance, it is refused and has to be rewritten.
+        </p>
+        <p style={{ margin: 0 }}>
+          <strong>Did it make anything better?</strong> Nothing here has been measured. No row on this page has a before-and-after result or a comparison with ordinary access control. What it offers is code you can run and judge for yourself.
+          It is also no evidence for the physics: these designs would work the same whether or not the physics is right. The evidence below is links to this project&apos;s own repositories.
+        </p>
+      </div>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p className="hero-subtitle" style={{ marginBottom: '1.5rem' }}>

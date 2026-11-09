@@ -75,10 +75,9 @@ export default function MondUnification() {
           relationship holds, but the result itself is shared with other approaches.
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
-          <strong>Update 2026-08-01, revised 2026-08-04 (this page not updated until 2026-09-05):</strong> treating
-          a&#x2080; as emergent rather than fundamental is not cost-free &mdash; it is a forced commitment to
-          a&#x2080;(z) = cH(z)/2&#x03C0;, the one prediction here that structurally differs from MOND&apos;s constant
-          a&#x2080;. It has been tested: Ciocan et al. 2026 (MUSE-DARK III, A&amp;A 709, L16;{' '}
+          <strong>Update 2026-08-01, revised 2026-08-04 (this page not updated until 2026-09-05):</strong> positing
+          a&#x2080; = cH/2&#x03C0; (the relation is posited, not derived from C) is not cost-free &mdash; taken at every epoch it is a commitment to
+          a&#x2080;(z) = cH(z)/2&#x03C0;. That differs from a constant a&#x2080;, but it is prior art (cosmologically coupled MOND), not this framework&apos;s own, and it does not discriminate on the RC100 sample. It has been tested: Ciocan et al. 2026 (MUSE-DARK III, A&amp;A 709, L16;{' '}
           <a href="https://arxiv.org/abs/2604.22613" style={{ color: 'var(--color-accent-blue)' }}>arXiv:2604.22613</a>)
           fit the RAR directly in 79 galaxies at 0.33 &lt; z &lt; 1.44 and find a&#x2080; growing with redshift. How fast depends on the
           estimator: the paper&apos;s global line gives a&#x2080; &prop; E(z)<sup>1.15</sup>, <em>faster</em> than H(z); the site&apos;s fit to the
@@ -161,16 +160,16 @@ export default function MondUnification() {
           <div className="card">
             <h3>MOND (Milgrom 1983)</h3>
             <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              <li>a&#x2080; is a <strong>fundamental constant</strong></li>
+              <li>a&#x2080; is a fitted acceleration scale; whether it is constant is open within MOND</li>
               <li>Value determined empirically from galaxy fits</li>
-              <li>No explanation for why a&#x2080; &#x2248; cH&#x2080;</li>
+              <li>The near-equality a&#x2080; &#x2248; cH&#x2080; has been discussed in the MOND literature for decades, with no accepted derivation</li>
               <li>Extremely successful at fitting rotation curves</li>
             </ul>
           </div>
           <div className="card">
             <h3>Synchronism</h3>
             <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              <li>a&#x2080; is an <strong>emergent scale</strong></li>
+              <li>a&#x2080; &#x2248; cH&#x2080;/2&#x03C0; is <strong>posited</strong>, not derived from C</li>
               <li>Value from dimensional analysis of H&#x2080; and c (shared with other frameworks)</li>
               <li>Two interpolating functions have been used, in different fits: early RAR comparisons used the standard McGaugh et al. (2016) &#x03BD;; the framework&apos;s own tanh-log compander, when its &#x03B3; is left free, lands on &#x03B3; &#x2248; &frac12;, which is <em>Milgrom&apos;s simple &#x03BC;</em> exactly (C = x/(x+2)). These are different functions (&#x0394;BIC between them is quoted on <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>); <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> says which fit used which</li>
               <li>Predicts EFE = 0 structurally <em>for the strict C(ρ<sub>local</sub>) reading</em> &mdash; the load-bearing premise is that C is independent of &Phi;, not locality per se (archive 2026-08-24: a fully non-local, &Phi;-independent C still gives EFE = 0 to 10<sup>&minus;13</sup>; a &nabla;&Phi;-keyed C gives 0.046). At the fitted &#x03B3; = &frac12; the compander that actually reproduces rotation curves is keyed on acceleration and its EFE is MOND&apos;s identically &mdash; so the EFE = 0 prediction has no live carrier that fits galaxies. If one reads the acceleration-keyed compander with EFE = 0 anyway, its Solar-System floor is γ &#x2273; 0.87 from planetary precessions (the direct tail, explorer 2026-10-15), not Cassini&apos;s quadrupole, and its next adjudicator is the galaxy-side EFE detection on SPARC (Chae et al. 2020, ApJ 904, 51: &gt;4&#x03C3;), which has not been confronted in-house: untested, not refuted. See correction below and the reconciled caveat on <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link></li>

@@ -64,7 +64,7 @@ export default function MondComparator() {
             <tbody>
               {[
                 ['a₀ origin', 'Empirical fit', 'Same coincidence restated (Reparametrization)'],
-                ['Galaxy rotation curves (RAR)', 'Good fit', 'Free γ lands on 0.489 ≈ ½, i.e. MOND\'s simple μ (Reparametrization). The framework\'s own γ = 2 loses by ΔBIC +184 (Failed)'],
+                ['Galaxy rotation curves (RAR)', 'Good fit', 'Free γ lands on 0.489 ≈ ½, i.e. MOND\'s simple μ (Reparametrization). The framework\'s own γ = 2 loses by ΔBIC +184 (Υ frozen; +46 with Υ free per law) (Failed)'],
                 ['Stated variable', 'Acceleration', 'Local density ρ, but every quantitative galaxy fit used acceleration. Keyed on density, the best fit keeps only a weak response (γ → 0.046, boost ∝ ρ^−0.10, knee below every disc; that response is g_bar’s: at fixed g_bar, density adds nothing, partial slope +0.003, 95% CI −0.022 to +0.027) and loses by ΔBIC +2843'],
                 ['Boost at low acceleration', 'Unbounded', 'Capped at 1/Ω_m = 3.17 in one reading. Excluded by the SPARC BTFR slope for caps ≲ 5.3 (Failed; the headline kill depends on the cap convention)'],
                 ['RAR environment dependence', 'Via the external field effect', 'Predicted density dependence not seen: r² = 0.0001 vs a kill bar of 0.09 (Failed)'],

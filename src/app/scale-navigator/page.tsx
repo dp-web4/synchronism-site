@@ -58,7 +58,7 @@ export default function ScaleNavigator() {
           back-computed from &#x03B3;, not forward-predicted from physics.
           Only ~4 of 17 rungs have ever been confronted with data; all fail or are null. The galaxy
           rung is self-contradictory in both directions: the framework asserts N<sub>corr</sub>=1 (independent
-          stars) &rarr; &#x03B3;=2, but SPARC RAR rejects &#x03B3;=2 (&#x394;BIC=+184); the data-preferred
+          stars) &rarr; &#x03B3;=2, but SPARC RAR disfavours &#x03B3;=2 (&#x394;BIC=+184, Υ frozen; +46 with Υ free per law); the data-preferred
           &#x03B3;&#x2248;0.49 back-implies N<sub>corr</sub>&#x2248;17 &mdash; contradicting the
           independent-stars premise that motivates applying C(&#x03C1;) to galaxies at all.
         </div>
@@ -147,7 +147,7 @@ export default function ScaleNavigator() {
             The framework asserts stars are <strong>uncorrelated</strong> (N<sub>corr</sub> = 1, &#x03B3; = 2),
             the same &#x03B3; as an ideal gas, and applies C(&#x03C1;) at this value to predict rotation
             curves. <strong style={{ color: '#ef4444' }}>However, &#x03B3;=2 is rejected on SPARC
-            RAR at &#x394;BIC=+184 with points as independent (&asymp;&nbsp;+11, 1.6&ndash;2.2&sigma;, with the galaxy as the unit)</strong> — the data-preferred
+            RAR at &#x394;BIC=+184 with points as independent (Υ frozen; +46 with Υ free per law) (&asymp;&nbsp;+11, 1.6&ndash;2.2&sigma;, with the galaxy as the unit)</strong> — the data-preferred
             free &#x03B3;&#x2248;0.49 equals MOND. Furthermore, &#x03B3;&#x2248;0.49 back-implies
             N<sub>corr</sub>&#x2248;17 (&ldquo;stars correlated in units of ~17&rdquo;), directly
             contradicting the N<sub>corr</sub>=1 independent-stars premise.

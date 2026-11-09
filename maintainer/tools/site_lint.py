@@ -23,6 +23,17 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-09 (visitor personas; each checked before retiring).
+    (r"Pin γ=2 → refuted|Fit γ → MOND", "2026-11-09", "every γ is a MOND μ; γ = 2 vs McGaugh selects among MOND's functions"),
+    (r"matches no MOND function", "2026-11-09", "tanh(γx) has the right limits for a μ; it only leaves the simple-μ family"),
+    (r"<strong>emergent scale</strong>|a&#x2080; would emerge from the coherence", "2026-11-09", "a₀ ≈ cH₀/2π is posited, not derived from C", True),
+    (r"S ≤ 2 on every arm", "2026-11-09", "one arm reaches 2.67, with signaling"),
+    (r"lists 11 because", "2026-11-09", "Tier 1 has 13 cards"),
+    (r"by about 3σ and far above", "2026-11-09", "one point on a curve running 0 to +5.8σ across Chae's bin; a σ needs the bin's g_N distribution"),
+    (r"closes the last possible EFE discriminator|no live model that both fits", "2026-11-09", "the algebraic EFE-free corner is alive and disfavoured; use EFE_FREE_CORNER_STATUS"),
+    (r"catalog-registered", "2026-11-09", "TEST-26 is numbered, not registered"),
+    (r"0\.58–0\.59", "2026-11-09", "peak slope vs log-density at γ = 2 is at C = 0.601"),
+    (r"the disagreement sits in that one modelling step", "2026-11-09", "the flip is a separation-error setting in S&T's code; the crux is the contaminant fraction", True),
     # --- retired 2026-11-08 (maintainer, visitor 11-08 + explorer 11-07). Literature and verdict sentences that failed against primary
     #     sources or newer runs: (i) a0 prefactor attributions (McCulloch 0.99 cH, Verlinde cH0/6, Smolin a_L/8.3; Milgrom 2008 cites 2 pi a0 ~ cH0);
     #     (ii) gamma as sharpness (10-90 width stops at 1.17 dex); (iii) stale sigma numbers; (iv) the sample maximum as a bound.
@@ -648,6 +659,12 @@ REQUIRES = [
     (r"(BIC|&#x0394;BIC|&#x394;BIC|&Delta;BIC)\W{0,30}\+184(?!\d)",
      r"galaxy|N_eff|N<sub>eff|\+11|\+10\.9|independen|history|revision|sanity check|reproduced",
      "2026-10-04", "+184 treats 2,807 points as independent; with the galaxy as the unit it is ~+11 (1.6-2.2 sigma)"),
+    # Added 2026-11-09: a₀′/γ's flatness and the 69–70.5 H₀ hold only with γ floating along the Υ valley (PREREG 5a95614).
+    (r"1\.07(&ndash;|–|\\u2013)1\.09", r"float|only when|valley|pinned",
+     "2026-11-09", "a₀′/γ stays flat only with γ free; at pinned γ = ½ a₀ moves 1.44 → 0.87", 3),
+    # Added 2026-11-09: +184 / +10.9 / +11 freeze Υ = 0.5; with one global Υ per law they are +46 / +2.7.
+    (r"\+184(?!\d)", r"\+46|frozen|Υ|&Upsilon;|history|revision|sanity check|reproduced|Corrected|until 20",
+     "2026-11-09", "+184 holds Υ = 0.5 for both laws; print the own-Υ result (+46 by point, +2.7 by galaxy)", 3),
     (r"(V<sup>\+2</sup>|V\^\+2|V\u207A\u00B2)[^\n]{0,60}(excluded at|excluded)[^\n]{0,12}(~|about )?1[0-2](\.\d)?(&sigma;|&#x03C3;|\u03C3|σ)",
      r"galaxy|N&nbsp;=&nbsp;129|N = 129|bootstrap",
      "2026-10-07", "V^+2 exclusion: state the unit (one point per galaxy, N = 129, galaxy bootstrap) — researcher persona asked"),

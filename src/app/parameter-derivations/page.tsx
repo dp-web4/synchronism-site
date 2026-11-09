@@ -51,7 +51,7 @@ export default function ParameterDerivations() {
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
               <h3>1. &#x03B3; = 2/&#x221A;N<sub>corr</sub></h3>
-              <ValidationBadge status="speculative" label="Motivated Ansatz" />
+              <ValidationBadge status="audited-negative" label="Motivated ansatz, audited-negative (same status as on γ Parameter)" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #64-65</p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>

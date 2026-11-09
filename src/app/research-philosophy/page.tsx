@@ -36,7 +36,7 @@ export default function ResearchPhilosophy() {
             <h3>1. Falsifiability First</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               The rule: every prediction gets an explicit kill criterion, and a prediction that can&apos;t be falsified
-              is philosophy, not science, and gets labelled so. The practice, measured 2026-09-18: of 26 registered
+              is philosophy, not science, and gets labelled so. The practice, measured 2026-09-18: of 26 listed
               criteria, 2 are well-formed, 11 contain no number, and one says &ldquo;not falsifiable as stated&rdquo;.
               The rule is the aspiration; <Link href="/falsifiability" style={{ color: 'var(--color-accent-blue)' }}>Falsifiability</Link> carries the count.
             </p>
@@ -361,8 +361,8 @@ export default function ResearchPhilosophy() {
             <strong>The symmetric lower-bound problem:</strong> A2ACW also systematically
             <em> over-credits</em> reformulations of known physics as &ldquo;Validated.&rdquo;
             Adversarial AIs in shared distribution badge the same patterns the training corpus rewards.
-            The track record: <strong>all 6 &ldquo;Validated&rdquo; badges audited to date were demoted
-            on closer review</strong> (galaxy rotation, chemistry r=0.982, Born rule,
+            The track record: <strong>6 claims audited to date were demoted
+            on closer review, 2 of them confirmed to have carried a &ldquo;Validated&rdquo; badge</strong> (galaxy rotation, chemistry r=0.982, Born rule,
             a₀ = cH₀/2π, decoherence protection &#x0393; = &#x03B3;&sup2;(1&minus;c), Bell-freezing c(d)), and
             3 more claims swept later also failed: 0 of 9 retained. The reviewers were LLM agents
             too, so this is one uncalibrated instrument overruling another, not an external expert verdict. By track record the 1.4% is an overestimate of what survives audit (0 of 9 retained); as a rate of discovery it is

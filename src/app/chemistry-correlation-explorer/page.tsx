@@ -19,11 +19,11 @@ const phenomena: { name: string; note?: string; r: number; category: string; reg
   { name: 'Sound velocity', note: 'r(v, 1/γ_phonon) ≡ r(v, θ_D) exactly, because γ_phonon = 2T/θ_D; session was shown as #47 (material design)', r: 0.982, category: 'Propagation', regime: 1, session: '#109', trace: 'corrected' },
   { name: 'Electronegativity', note: 'Pauling χ vs 1/γ_optical, and γ_optical = 13.6 eV / IE: this is χ vs ionization energy (0.938 archive; 0.956 on the explorer recomputation). The 0.979 shown until 2026-11-02 was chemical softness (#118) against the same 1/IE', r: 0.938, category: 'Bonding', regime: 1, session: '#115', trace: 'corrected' },
   { name: 'Bulk modulus', note: 'vs 1/γ_phonon (= θ_D); drops to 0.37 without diamond (jackknife). 0.967 shown until 2026-11-02 was not found for B', r: 0.712, category: 'Mechanical', regime: 1, session: '#110', trace: 'corrected' },
-  { name: 'Thermal conductivity', note: '0.961 matches redox potential E° (#72), not κ. The archive’s κ results are 0.804 (#65) and 0.883 for metals only (#108). Cited #70 is SN1/SN2 kinetics', r: 0.961, category: 'Transport', regime: 1, session: '#70', trace: 'untraced' },
+  { name: 'Thermal conductivity', note: 'archive κ result (#65); 0.883 for metals only (#108). The 0.961 shown until 2026-11-09 was redox potential E° (#72), not κ', r: 0.804, category: 'Transport', regime: 1, session: '#65', trace: 'corrected' },
   { name: 'Electrical conductivity', note: 'Failed: the session’s own verdict is “WRONG SIGN” (σ vs γ_phonon). Shown as +0.955 “Coherence helps” (#68) until 2026-11-02', r: -0.414, category: 'Transport', regime: 1, session: '#81', trace: 'corrected' },
-  { name: 'Debye temperature', note: 'by construction: γ_phonon = 2T/θ_D contains θ_D. 0.948 matches the T_c (#62) and Richard’s-rule (#77) rows; cited #78 is elastic moduli', r: 0.948, category: 'Thermal', regime: 1, session: '#78', trace: 'untraced' },
+  { name: 'Debye temperature', note: 'by construction: γ_phonon = 2T/θ_D contains θ_D, so at fixed T the correlation is exactly 1 and carries nothing. The 0.948 shown until 2026-11-09 belongs to the T_c (#62) and Richard’s-rule (#77) rows', r: 0.948, category: 'Thermal', regime: 1, session: '#78', trace: 'untraced' },
   { name: 'Piezoelectricity d₃₃', note: 'post-hoc fit d₃₃ ∝ γε; the direction stated in advance came out backward (Failed on /gamma-boundary). Session was shown as #110', r: 0.940, category: 'Response', regime: 2, session: '#93', trace: 'corrected' },
-  { name: 'Superconducting T_c', note: 'correlation of a post-hoc fit; the magnitude prediction is 6.5× wrong (Failed on /gamma-boundary). Shown as 0.923 (#95, electro-optic) until 2026-11-02', r: 0.948, category: 'Phase transition', regime: 1, session: '#62', trace: 'corrected' },
+  { name: 'Superconducting T_c', note: 'correlation of a post-hoc fit, proxy not stated in this table (it cannot be a θ_D-type γ_phonon: r(T_c, θ_D) ≈ −0.47 on 18 elements in a visitor persona’s check, not re-run); the magnitude prediction is 6.5× wrong (Failed on /gamma-boundary). Shown as 0.923 (#95, electro-optic) until 2026-11-02', r: 0.948, category: 'Phase transition', regime: 1, session: '#62', trace: 'corrected' },
   { name: 'Young\'s modulus', note: 'vs 1/γ_phonon (= θ_D); drops to 0.60 without diamond (jackknife). Shown as 0.912 (#58, fluorescence) until 2026-11-02', r: 0.920, category: 'Mechanical', regime: 1, session: '#110', trace: 'corrected' },
   { name: 'Shear modulus', note: 'vs 1/γ_phonon (= θ_D); drops to 0.63 without diamond (jackknife). Shown as 0.901 (#59, no such session) until 2026-11-02', r: 0.936, category: 'Mechanical', regime: 1, session: '#110', trace: 'corrected' },
   { name: 'Refractive index', note: 'not found in the archive; its refractive-index result is 0.986 (#76, Moss rule). Cited #85 is polarizability', r: 0.887, category: 'Optical', regime: 1, session: '#85', trace: 'untraced' },
@@ -74,7 +74,7 @@ export default function ChemistryCorrelationExplorer() {
 
     items.sort((a, b) => {
       let cmp = 0;
-      if (sortKey === 'r') cmp = Math.abs(b.r) - Math.abs(a.r);
+      if (sortKey === 'r') cmp = (b.trace === 'untraced' ? -1 : Math.abs(b.r)) - (a.trace === 'untraced' ? -1 : Math.abs(a.r));
       else if (sortKey === 'name') cmp = a.name.localeCompare(b.name);
       else if (sortKey === 'category') cmp = a.category.localeCompare(b.category);
       return sortDir === 'desc' ? cmp : -cmp;
@@ -157,7 +157,7 @@ export default function ChemistryCorrelationExplorer() {
           documented failure was shown as a success: electrical conductivity was listed until 2026-11-02 as +0.955 &ldquo;Coherence helps&rdquo;,
           but the session that tested it (#81) found r = &minus;0.414 and recorded &ldquo;WRONG SIGN&rdquo;. The table below now
           has a <em>Trace</em> column: rows corrected to the archive value on 2026-11-02, and rows whose number could not be
-          found (kept, marked <em>Untraced</em>, so the drift stays visible). The three elastic-modulus rows rest on diamond:
+          found (kept as rows, marked <em>Untraced</em>, so the gap stays visible; since 2026-11-09 they print no number, because a value that could not be traced to its own property should not read as a result). The three elastic-modulus rows rest on diamond:
           without it, r falls to 0.60 (Young&apos;s), 0.63 (shear) and 0.37 (bulk).
           <details style={{ marginTop: '0.5rem' }}>
             <summary style={{ cursor: 'pointer' }}>Earlier versions of this paragraph</summary>
@@ -312,7 +312,7 @@ export default function ChemistryCorrelationExplorer() {
                     )}
                   </td>
                   <td style={{ textAlign: 'right', padding: '0.5rem', fontFamily: 'monospace', color: rColor(p.r), fontWeight: 'bold' }}>
-                    {p.r > 0 ? '+' : ''}{p.r.toFixed(3)}
+                    {p.trace === 'untraced' ? <span title="This value could not be traced to this property, so it is not printed">—</span> : <>{p.r > 0 ? '+' : ''}{p.r.toFixed(3)}</>}
                   </td>
                   <td style={{ padding: '0.5rem', color: 'var(--color-text-muted)' }}>{p.category}</td>
                   <td style={{ padding: '0.5rem', color: regimeLabels[p.regime].color, fontSize: '0.8rem' }}>

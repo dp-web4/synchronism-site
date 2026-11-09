@@ -62,7 +62,7 @@ const examples: {
     tier: 'Tier 1',
     reach: 'unreachable',
     note:
-      'Closed as self-eliminating. The density-keyed branch predicts an identically null ratio (γ_g ≡ 1), and at the knees where it is null it already fails lunar ranging; the acceleration-keyed branch predicts MOND\'s boost (TEST-25\'s physics). So neither outcome of the ongoing Chae-vs-Banik dispute can select it: a detection is covered by MOND, a null by Newton. (Until 2026-10-23 this read "0.05–0.4%, roughly 80× below Gaia DR3 systematic reach", a figure that needs a knee no other page uses.) Gaia DR4 (~Dec 2026) improves the baseline but not by two orders of magnitude.',
+      'Closed as self-eliminating. The density-keyed branch predicts an identically null ratio (γ_g ≡ 1), and at the knees where it is null it already fails lunar ranging; the acceleration-keyed branch predicts MOND\'s boost (TEST-25\'s physics). So neither outcome of the ongoing Chae-vs-Banik dispute can select it: a detection is covered by MOND, a null by Newton. DR4 can kill the algebraic EFE-free corner (Tier 1, TEST-25 card), without selecting anything. (Until 2026-10-23 this read "0.05–0.4%, roughly 80× below Gaia DR3 systematic reach", a figure that needs a knee no other page uses.) Gaia DR4 (2 December 2026) improves the baseline but not by two orders of magnitude.',
   },
   {
     id: 'TEST-04',
@@ -184,7 +184,7 @@ export default function Falsifiability() {
               BAO nulls at 10⁻⁵; cluster oscillation nulls to 2000 Mpc), and one more is
               unrunnable because no protocol maps a measurement onto C. That 4 is a count over this page&apos;s eight
               hand-picked examples, not over the registry; until 2026-09-19 it was printed here without its denominator.
-              Over all 26 registered rows the instrument-unreachable count has not been made. A second, larger class has:
+              Over all 26 numbered rows the instrument-unreachable count has not been made. A second, larger class has:
               criteria that cannot fire <em>by construction</em> (no number, no statistic, or a quantity the site has
               already ruled unmeasurable) &mdash; 11 to 15 of 26, depending on coding.
             </li>

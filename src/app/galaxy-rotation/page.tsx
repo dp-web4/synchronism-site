@@ -7,7 +7,7 @@ import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
-import { GALAXIES_RUN, GALAXIES_RUN_BREAKDOWN, GALAXIES_MECHANISM, TEST25_STATUS_SENTENCE } from '@/lib/ledger';
+import { GALAXIES_RUN, GALAXIES_RUN_BREAKDOWN, GALAXIES_MECHANISM, TEST25_STATUS_SENTENCE, GAMMA2_OWN_UPSILON_SENTENCE } from '@/lib/ledger';
 
 export default function GalaxyRotation() {
   return (
@@ -15,8 +15,8 @@ export default function GalaxyRotation() {
       <Breadcrumbs currentPath="/galaxy-rotation" />
       <PathNav currentPath="/galaxy-rotation" />
       <h1>Galaxy Rotation Curves</h1>
-      <ValidationBadge status="failed" label="Failed — density-keyed form ΔBIC +2843; γ = 2 compander disfavoured: ΔBIC ≈ +11 at galaxy level (1.6–2.3σ by estimator; +184 if points were independent)" />{' '}
-      <ValidationBadge status="reparametrization" label="Acceleration-keyed fit is exactly MOND's simple μ" />
+      <ValidationBadge status="failed" label="Failed — density-keyed form ΔBIC +2843; γ = 2 compander disfavoured at about 2σ: ΔBIC ≈ +11 at galaxy level and +184 by point with Υ frozen, +2.7 and +46 with each law's own Υ" />{' '}
+      <ValidationBadge status="reparametrization" label="Acceleration-keyed fit is a MOND μ at every γ; MOND's simple μ exactly at γ = ½" />
       <div id="gamma-half-nesting" style={{ fontSize: '0.88rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #f59e0b', paddingLeft: '0.75rem', margin: '0.75rem 0 1rem', scrollMarginTop: '5rem' }}>
         <strong>&#x03B3; &asymp; &frac12; twice is not a cross-sector agreement.</strong> At &#x03B3; = &frac12; the function satisfies
         1/C &minus; 1 = 2/x exactly. Keyed on acceleration (the galaxy fit&apos;s variable) that is MOND&apos;s simple interpolating function;
@@ -186,7 +186,7 @@ export default function GalaxyRotation() {
           under different theoretical umbrellas. The 2&#x03C0; prefactor is chosen to match the
           observed value; cH&#x2080;/(2&#x03C0;) &#x2248; 1.04&#x00D7;10&#x207B;&#xB9;&#x2070; m/s&#x00B2; at the
           site-standard H&#x2080; = 67.4
-          undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;13%. Against this framework&apos;s own SPARC fit the comparison changes but gets no sharper: the scale the fit identifies is a₀′/&#x03B3; (the compander&apos;s deep-regime limit; 2a₀′ at &#x03B3; = ½). It stays at 1.07&ndash;1.09&times;10⁻¹⁰ across the whole &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 band while a₀′ itself moves 3.6&times;, and reads 1.16&ndash;1.18&times;10⁻¹⁰ under the velocity-&chi;² fits. cH₀/2&pi; sits 3&ndash;12% below it at H₀ = 67.4. Closing the gap needs H₀ &asymp; 69&ndash;70.5 for the &Upsilon;-sweep values (inside the Planck&ndash;SH0ES range) and &asymp; 75&ndash;76 for the velocity-&chi;² values (above SH0ES&apos;s 73), so only the low end is absorbed by the H₀ tension. Still Milgrom&apos;s 1983 coincidence, still a reparametrization (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>).
+          undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;13%. Against this framework&apos;s own SPARC fit the comparison changes but gets no sharper: the scale the fit identifies is a₀′/&#x03B3; (the compander&apos;s deep-regime limit; 2a₀′ at &#x03B3; = ½). It stays at 1.07&ndash;1.09&times;10⁻¹⁰ across the whole &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 band while a₀′ itself moves 3.6&times;, but only because &#x03B3; floats along a valley with &Upsilon; (0.28 &rarr; 0.96 across that band). <strong>Pin &#x03B3; = &frac12;, the reading this page calls surviving, and a₀ moves 1.44 &rarr; 1.10 &rarr; 0.87&times;10⁻¹⁰, so closing cH₀/2&pi; needs H₀ &asymp; 93 / 71 / 57 at &Upsilon; = 0.4 / 0.5 / 0.6</strong> (<code>maintainer/scripts/gamma2_global_upsilon_per_law.py</code>). The scale is identified only jointly with &#x03B3;. The free-&#x03B3; value reads 1.16&ndash;1.18&times;10⁻¹⁰ under the velocity-&chi;² fits. cH₀/2&pi; sits 3&ndash;12% below it at H₀ = 67.4. With &#x03B3; free, closing the gap needs H₀ &asymp; 69&ndash;70.5 for the &Upsilon;-sweep values (inside the Planck&ndash;SH0ES range) and &asymp; 75&ndash;76 for the velocity-&chi;² values (above SH0ES&apos;s 73), so only the low end is absorbed by the H₀ tension. Still Milgrom&apos;s 1983 coincidence, still a reparametrization (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>).
           Synchronism&apos;s contribution is the coherence-function mechanism that provides a
           <em>reason</em> for this scale &mdash; not the identification itself.
           See{' '}<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
@@ -326,6 +326,11 @@ export default function GalaxyRotation() {
                   <td style={{ textAlign: 'right', padding: '0.25rem 0', color: '#ef4444', fontWeight: 700 }}>+184</td>
                 </tr>
                 <tr>
+                  <td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Same, each law with its own global &Upsilon; (&#x03B3;=2 at 0.61, McGaugh at 0.54; added 2026-11-09)</td>
+                  <td style={{ textAlign: 'right', padding: '0.25rem 0.75rem' }}>0.1443 vs 0.1431</td>
+                  <td style={{ textAlign: 'right', padding: '0.25rem 0', color: '#f59e0b', fontWeight: 700 }}>+46</td>
+                </tr>
+                <tr>
                   <td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Compander μ, γ free (best fit: γ=0.49)</td>
                   <td style={{ textAlign: 'right', padding: '0.25rem 0.75rem' }}>0.1437</td>
                   <td style={{ textAlign: 'right', padding: '0.25rem 0', color: '#f59e0b' }}>+7.1</td>
@@ -334,14 +339,14 @@ export default function GalaxyRotation() {
             </table>
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-            <strong>Kill criterion triggered &mdash; under point independence.</strong> ΔBIC = +184 ≫ 10 refutes the γ=2 compander
+            <strong>Kill criterion triggered &mdash; under point independence and frozen &Upsilon;.</strong> {GAMMA2_OWN_UPSILON_SENTENCE}{' '} ΔBIC = +184 ≫ 10 refutes the γ=2 compander
             as the galaxy mechanism if the 2,807 points are independent. They are not: they come from 166 rotation curves, and
             the mass-to-light, distance and inclination errors move a whole curve together. <strong>With the galaxy as the
             replication unit (run 2026-09-29, pre-registered):</strong> γ = 2 is worse than the free fit in 94 of 166 galaxies
             (57%; exact sign test p = 0.051 one-sided, 0.10 two-sided; the one-sided test asks whether γ = 2 is worse, which is the registered direction); a 10-fold galaxy-level cross-validation prefers free γ by 1.6σ; a galaxy-block bootstrap
             puts the full-N ΔBIC at 179 with 95% interval [23, 351], a spread that implies an effective N of about 150; and
             ΔBIC recomputed with N = 166 is +10.9, at the threshold.{' '}
-            <span id="dbic-formula" style={{ scrollMarginTop: '5rem' }}><strong>How +184 becomes +10.9 (formula added 2026-10-24, after two simulated-visitor personas could not reconstruct it):</strong>{' '}
+            <span id="dbic-formula" style={{ scrollMarginTop: '5rem' }}><strong>How +184 becomes +10.9, both at frozen &Upsilon; (formula added 2026-10-24, after two simulated-visitor personas could not reconstruct it):</strong>{' '}
             the comparison is &#x03B3; = 2 against McGaugh&apos;s ν, each with one fitted acceleration scale, so the parameter counts are equal
             and the BIC has no penalty term. With Gaussian residuals and a fitted variance, ΔBIC = N&nbsp;ln(RSS<sub>&#x03B3;=2</sub>/RSS<sub>McGaugh</sub>)
             = 2807&nbsp;&times;&nbsp;ln(0.1485²/0.1437²) = +184. The galaxy-level figure keeps the per-point likelihood ratio and replaces N with
@@ -384,8 +389,7 @@ export default function GalaxyRotation() {
             a₀ is floated in both arms, so Δk = 1 — McGaugh&apos;s ν is fitted with k = 1 (a₀), the free-γ
             compander with k = 2 (a₀, γ); see <code style={{ fontSize: '0.78rem' }}>explorer/scripts/rar_transition_shape_real_sparc.py</code>,
             where the BIC is computed as <code style={{ fontSize: '0.78rem' }}>bic(ssr_F,2) &minus; bic(ssr_M,1)</code>.) Note the contrast with the γ=2 row: ΔBIC = +184 there (points as independent; &asymp;&nbsp;+11 with the galaxy as the unit) is <em>pure likelihood</em>{' '}
-            (Δk = 0). The two numbers do different work and are not one ladder. There is no γ for which the compander is
-            both (a) distinct from MOND and (b) consistent with SPARC. Pin γ=2 → refuted. Fit γ → MOND.
+            (Δk = 0). The two numbers do different work and are not one ladder. Every γ is a MOND interpolating function: C &asymp; γx in the deep regime, so a₀ = a₀′/γ, and γ only picks the transition shape and the return exponent q = 2γ. So there is no γ at which the compander is distinct from MOND in kind. The γ = 2 result selects among MOND&apos;s functions (disfavoured at about 2σ once each law has its own Υ), and free γ at Υ = 0.5 lands near the simple μ.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             <strong>Why 0.49? Mechanism identified (2026-07-22 form-selection run):</strong> γ controls the
@@ -396,7 +400,7 @@ export default function GalaxyRotation() {
             fits the same 2,807 points with the same RMS. q = 1 is the value hard-coded in MOND&apos;s
             &ldquo;simple&rdquo; μ-function. γ = 0.49 was never a constant awaiting derivation; it is the tanh
             family&apos;s encoding of MOND&apos;s simple μ. The framework&apos;s asserted γ=2 means q=4 —
-            re-Newtonianizing far too abruptly — which is the +184 kill restated mechanistically.
+            re-Newtonianizing far too abruptly — which is the γ = 2 disfavouring restated mechanistically.
           </p>
           <div style={{
             background: 'rgba(139,92,246,0.07)',
@@ -545,7 +549,7 @@ export default function GalaxyRotation() {
           MOND <em>with the External Field Effect</em> (EFE, Bekenstein-Milgrom 1984) also predicts
           environment-dependent wide-binary dynamics. The quantitative divergence was computed
           on 2026-06-03: a bounded C(a) is the only form whose EFE prediction differs from MOND
-          (TDG velocity dispersion σ ≈ 14.5 vs 41 km/s in Tidal Dwarf Galaxies), but that same
+          (in Tidal Dwarf Galaxies; the velocity-dispersion intervals once quoted here are retracted on <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>MOND Unification</Link>), but that same
           boundedness caps the acceleration boost at ≈3.17 while ~42% of SPARC RAR data points
           require boosts above that (up to ~34×), giving RMS 0.224 vs McGaugh&apos;s 0.146.
           The boost ceiling and RAR fit trade off monotonically with opposite sign — no ceiling

@@ -1,0 +1,40 @@
+rows: original 2807, positive at every Upsilon 2807
+C1 dBIC = +184.0, rms 0.1485/0.1437, a0'=2.967e-10, a0_McG=1.128e-10
+C2 gamma_hat=0.489 a0'=5.333e-11
+C1 C2 PASS
+fixed rows: 2807 points, 166 galaxies
+frozen 0.5 on fixed rows: dBIC +184.0
+P1 best Upsilon: gamma=2 0.61, McGaugh 0.54
+P2 own-Upsilon dBIC +46.2  rms 0.1443 vs 0.1431
+P3 N->N_gal (166): +2.73
+   gamma=2 vs McGaugh at a common Upsilon:
+     Y=0.40: dBIC  +344.7  rms McG 0.1505  gamma=2 0.1601
+     Y=0.45: dBIC  +269.8  rms McG 0.1461  gamma=2 0.1533
+     Y=0.50: dBIC  +184.0  rms McG 0.1437  gamma=2 0.1485
+     Y=0.55: dBIC   +95.1  rms McG 0.1431  gamma=2 0.1455
+     Y=0.60: dBIC   +10.2  rms McG 0.1441  gamma=2 0.1443
+     Y=0.65: dBIC   -65.4  rms McG 0.1464  gamma=2 0.1447
+     Y=0.70: dBIC  -128.4  rms McG 0.1498  gamma=2 0.1464
+   prior cost (0.1 dex about 0.5): Y=0.61 chi2 0.75; Y=0.54 chi2 0.11
+P4 own-Upsilon bootstrap (B=5000) dBIC percentiles 2.5/16/50/84/97.5: [-26.1   7.7  45.9  87.4 132.5]; P(dBIC<=0)=0.116
+   N_gal form: [-1.57  0.47  2.75  5.09  7.52]; P(<=0)=0.116; P(<6)=0.914
+   frozen 0.5 same resamples: [ 28.9 106.9 183.8 267.5 347. ]
+   Upsilon spread: gamma=2 [0.56 0.58 0.61 0.64 0.67]  McGaugh [0.48 0.51 0.54 0.57 0.6 ]
+   per galaxy at own Upsilon: gamma=2 worse in 90/166; top 7 share of net 1.45: ['NGC5985', 'IC2574', 'UGC06787', 'NGC2841', 'UGC03205', 'UGC06786', 'UGC09133']
+P5 pinned gamma=1/2 (a0_M = a0'/gamma = 2 a0'):
+     Y=0.40: a0'=7.178e-11  a0_M=1.436e-10  H0 for cH0/2pi  92.8  rms 0.1492
+     Y=0.45: a0'=6.252e-11  a0_M=1.250e-10  H0 for cH0/2pi  80.9  rms 0.1454
+     Y=0.50: a0'=5.495e-11  a0_M=1.099e-10  H0 for cH0/2pi  71.1  rms 0.1437
+     Y=0.55: a0'=4.875e-11  a0_M=9.751e-11  H0 for cH0/2pi  63.1  rms 0.1438
+     Y=0.60: a0'=4.365e-11  a0_M=8.730e-11  H0 for cH0/2pi  56.5  rms 0.1456
+     Y=0.65: a0'=3.945e-11  a0_M=7.889e-11  H0 for cH0/2pi  51.0  rms 0.1486
+     Y=0.70: a0'=3.565e-11  a0_M=7.129e-11  H0 for cH0/2pi  46.1  rms 0.1528
+P6 free gamma, a0'/gamma:
+     Y=0.40: gamma_hat 0.28  a0'=3.061e-11  a0'/gamma=1.093e-10  rms 0.1458
+     Y=0.50: gamma_hat 0.48  a0'=5.195e-11  a0'/gamma=1.082e-10  rms 0.1437
+     Y=0.55: gamma_hat 0.68  a0'=7.430e-11  a0'/gamma=1.093e-10  rms 0.1433
+     Y=0.60: gamma_hat 0.96  a0'=1.040e-10  a0'/gamma=1.083e-10  rms 0.1435
+     Y=0.65: gamma_hat 1.40  a0'=1.492e-10  a0'/gamma=1.066e-10  rms 0.1445
+     Y=0.70: gamma_hat 2.14  a0'=2.229e-10  a0'/gamma=1.042e-10  rms 0.1464
+
+READING RULE: R1  (P4 lower edge -26.1, N_gal form 2.73)

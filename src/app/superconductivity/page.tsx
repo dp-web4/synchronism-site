@@ -35,6 +35,9 @@ export default function Superconductivity() {
           pair-breaking disrupts superconductivity. It was calculated for cuprates and pnictides,
           and a material design protocol was proposed.
         </p>
+        <p>
+          <strong>Why does this page say nothing about C(ρ)?</strong> Because nothing connects them: this formula contains no C, ρ or N<sub>corr</sub>. The archive calls &#x03B7; an Abrikosov&ndash;Gor&apos;kov &ldquo;pair-breaking efficiency&rdquo;. That is a label, and it has not been checked here against Abrikosov&ndash;Gor&apos;kov theory, whose T<sub>c</sub> relation is a digamma equation in a pair-breaking parameter and which lowers T<sub>c</sub>. Taken at face value, &#x03B7; &lt; 1 in the formula above raises T<sub>c</sub>.
+        </p>
 
         <h2>What Happened</h2>
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-warm)' }}>

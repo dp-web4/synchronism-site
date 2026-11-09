@@ -11,7 +11,7 @@ const topCorrelations = [
   { property: 'Sound velocity', r: '0.982', status: 'reparametrization' as const },
   { property: 'Electronegativity (vs 1/γ_optical ∝ ionization energy)', r: '0.94–0.96', status: 'reparametrization' as const },
   { property: 'Atomic volume', r: '0.956', status: 'reparametrization' as const },
-  { property: 'Thermal conductivity', r: '0.93', status: 'reparametrization' as const },
+  { property: 'Thermal conductivity', r: '0.804 (0.883, metals only)', status: 'reparametrization' as const },
   { property: 'Ionization energy', r: '0.91', status: 'reparametrization' as const },
 ];
 

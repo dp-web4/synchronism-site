@@ -135,7 +135,7 @@ export default function CoherenceFunction() {
               statement. In the Solar System the floored density-keyed form is a separate problem: read pointwise, the
               interplanetary medium (solar wind) makes GM&#x2609; inferred from different planets differ at O(1), so the law needs a
               declared smoothing length before it says anything there (PREDICTIONS.md, &ldquo;SCOPE CONDITION&rdquo; block;
-              script <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/density_keyed_law_vs_interplanetary_medium.py</code>). &Delta;BIC +184: acceleration-keyed, &#x03B3; = 2 (2,807 points treated as independent; &asymp;&nbsp;+11 with the galaxy as the unit, 1.6&ndash;2.2&sigma;).
+              script <code style={{ fontSize: '0.78rem' }}>maintainer/scripts/density_keyed_law_vs_interplanetary_medium.py</code>). &Delta;BIC +184 (Υ frozen; +46 with Υ free per law): acceleration-keyed, &#x03B3; = 2 (2,807 points treated as independent; &asymp;&nbsp;+11 with the galaxy as the unit, 1.6&ndash;2.2&sigma;).
               &Delta;BIC +2843: density-keyed, &#x03B3; free. The 2026-09-08/09 SPARC knee grid: density-keyed, floored, form (b)
               solved in disc geometry. Globular clusters: density-keyed under (a) on spherical Jeans models, where (a) and (b)
               agree. Not in any of them: the striction force that a <em>variational</em> version of (b) adds (see{' '}
@@ -166,7 +166,7 @@ export default function CoherenceFunction() {
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}><strong>C<sub>g</sub></strong></td>
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>tanh(&#x03B3; ln(1 + g<sub>obs</sub>/a&#x2080;&prime;)), solved implicitly</td>
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>observed acceleration (MOND&apos;s variable)</td>
-                  <td style={{ padding: '0.25rem 0' }}>&#x03B3; = 0.489 fit; &Delta;BIC +184 at &#x03B3; = 2 (RAR shape; &asymp;&nbsp;+11 with the galaxy as the unit); form-selection table; Cassini (TEST-25)</td>
+                  <td style={{ padding: '0.25rem 0' }}>&#x03B3; = 0.489 fit; &Delta;BIC +184 at &#x03B3; = 2 (RAR shape, Υ frozen; +46 with Υ free per law; &asymp;&nbsp;+11 with the galaxy as the unit); form-selection table; Cassini (TEST-25)</td>
                 </tr>
                 <tr style={{ verticalAlign: 'top' }}>
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}><strong>C<sub>a</sub></strong> (the ceiling)</td>
@@ -201,7 +201,7 @@ export default function CoherenceFunction() {
           <p style={{ margin: '0.4rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             The wiring (how C enters gravity: division g<sub>bar</sub>/C, the field equation, or the plotter&apos;s quadrature
             display) is a separate choice on top of each row; see item 2. The headline equation at the top of this page is
-            C<sub>&#x03C1;</sub>. Its own head-to-head result is the +2843 / +3309 pair, not the +184.
+            C<sub>&#x03C1;</sub>. Its own head-to-head result is the +2843 / +3309 pair, not the +184 (Υ frozen).
           </p>
         </div>
 

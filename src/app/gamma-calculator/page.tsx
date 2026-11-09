@@ -62,7 +62,8 @@ export default function GammaCalculator() {
         yourself: click the &ldquo;Ideal gas&rdquo; preset, then &ldquo;BCS superconductor&rdquo; (a metal whose electrons pair up and move in lockstep, so it
         conducts with zero resistance below a critical temperature: the <em>most</em> collective system here), and
         notice the far more collective system gets the far <em>flatter</em> curve. Real superconductors
-        have among the sharpest transitions in nature (sharp in temperature; this curve&apos;s axis is density, so the comparison is loose) — you just watched the formula get that backwards.
+        have among the sharpest transitions in nature (sharp in temperature; this curve&apos;s axis is density, so the comparison is loose) — you just watched the formula get that backwards.{' '}
+        <strong>Does that contradict &ldquo;superconductors score low C&rdquo; on other pages?</strong> No, it is the same fact. The flat curve <em>is</em> the low C. &ldquo;Backwards&rdquo; compares that output with the real material. And C(ρ) has no temperature in it, so it cannot describe a superconductor&apos;s transition at all: the only input is an N<sub>corr</sub> assigned by hand, which has no measurement protocol.
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
         &#x03B3; = 2/&#x221A;N<sub>corr</sub> assigns the <em>narrowest</em> coherence curve to the
@@ -239,7 +240,7 @@ export default function GammaCalculator() {
             exponential return fits equally well). q = 1 is the value hard-coded in
             MOND&apos;s &ldquo;simple&rdquo; &#x03BC;-function, so &#x03B3; = 0.49 is not a constant awaiting
             derivation: it is the tanh family&apos;s encoding of MOND. The framework&apos;s asserted &#x03B3; = 2
-            means q = 4 — returning to Newton far too abruptly, which is the &#x0394;BIC = +184 refutation
+            means q = 4 — returning to Newton far too abruptly, which is the &#x0394;BIC = +184 (Υ frozen; +46 with Υ free per law) result
             restated as a mechanism. See{' '}
             <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-violet)' }}>Galaxy Rotation</Link>.
           </p>

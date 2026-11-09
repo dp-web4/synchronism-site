@@ -42,6 +42,9 @@ The band below is the Galactic field g_e = 1.6–2.2×10⁻¹⁰ m/s². The asym
 - Take every published DR4 wide-binary analysis that reports a G_eff/G-type boost with an error (Chae-type γ_g; Banik-type
   α_grav converted to a boost at the sample's median acceleration). If they disagree, report each reading separately. Do not
   choose between them.
+- Added 2026-11-09, before any DR4 analysis exists (explorer 2026-11-08): for each analysis, check the error setting used against
+  the one stated, and whether any injection test ran at the real-data configuration. How a boost would be measured in-house is in
+  `wb_dr4_analysis_plan_PREREG.md` (draft, not adopted).
 - For each one, the 2σ boost interval maps through the table to a γ interval. That interval is a statement about which member
   of an already-closed family the data resemble. It is not a survival window: no γ in 0.3–3 passes Cassini with SPARC's a₀.
 - What would change this key: a Cassini Q₂ re-measurement that loosens the bound by more than ~8×, or an a₀ profile that

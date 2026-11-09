@@ -26,7 +26,7 @@ export const REFUTATIONS_ON_EXTERNAL_DATA = 5;
  * Independent roots behind the six. Three live figures existed on the site until
  * 2026-09-05 (2 / 3–4 / 6). The reconciliation, derivable from published numbers:
  *   - 2 framework-specific mechanism roots: the boost ceiling B ≤ 1/Ω_m (TEST-09 ≡ TEST-10,
- *     one inequality) and the γ = 2 pin (ΔBIC +184);
+ *     one inequality) and the γ = 2 pin (ΔBIC +184 at frozen Υ, +46 with Υ free per law);
  *   - 1 registration-specific: the environment null (S177's registration; site card TEST-03s —
  *     the research ledger calls it "TEST-08", which collides with the site's Freeman-law TEST-08) refuted S177's registered
  *     >20 % amplitude, which C(ρ)'s own lever (≤2×10⁻³ dex ⇒ r² ~ 10⁻⁴) never predicted —
@@ -38,7 +38,7 @@ export const REFUTATIONS_ON_EXTERNAL_DATA = 5;
  */
 export const ROOTS_FRAMEWORK_SPECIFIC = 2;
 export const ROOTS_SENTENCE =
-  '6 executed refutations from 5 roots: 2 framework-specific (the boost ceiling, behind both TEST-09 and TEST-10; the γ=2 pin — RAR transition shape, unnumbered, closed 2026-05-21; at the threshold once galaxies, not points, are the unit — 2026-09-29) + 1 refuted registration (environment amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell\'s theorem; two nonlocal constructions null; the hidden-communication class works by Toner–Bacon\'s existence proof, at the cost of a preferred frame)';
+  '6 executed refutations from 5 roots: 2 framework-specific (the boost ceiling, behind both TEST-09 and TEST-10; the γ=2 pin — RAR transition shape, unnumbered, closed 2026-05-21; about 2σ once galaxies are the unit and each law has its own Υ — 2026-11-09) + 1 refuted registration (environment amplitude) + 1 inherited from MOND (Cassini/SPARC) + 1 Bell/CHSH check (local arm = Bell\'s theorem; two nonlocal constructions null; the hidden-communication class works by Toner–Bacon\'s existence proof, at the cost of a preferred frame)';
 /**
  * How the four headline counts relate (2026-10-07). A technical-writer persona found one count stated four
  * ways (6 refutations / 4 Tier 1 kills fired / 2 discriminated / 0 of 9) with no stated relationship. They are
@@ -67,7 +67,7 @@ export const COUNT_RULE_SENTENCE =
  * Printing executed exclusions outside the count as a line beside it gates on the project lead (proposal 2026-11-04).
  */
 export const COUNT_BY_KIND_SENTENCE =
-  'By kind: 3 rows refute content the framework itself asserts, on data (#1 TEST-09 and #2 TEST-10, the boost cap; #3 the γ = 2 pin); 1 shares its root with MOND (#5 TEST-25: Cassini excludes McGaugh\'s own function too, though MOND\'s δ = 6 escapes near stellar-population M/L at about 1.8σ on SPARC, while the compander needs more than twice that M/L); 1 is a registration the equation could never have met (#4, the environment amplitude); 1 is a construction check, not data (#6 Bell/CHSH). The strongest independent dataset against the boost cap, galaxy weak lensing (KiDS-1000), excludes every Ω_m-based cap; it is recorded on rows #1–#2 rather than as a seventh row because it shares their root. Several executed exclusions of the archive\'s own equations sit outside the count because no failure condition was written before they ran (the covariant dark-energy completions, the density fit at the formula knee, the modified-G reading against lunar laser ranging); whether to print them beside the count is the project lead\'s call.';
+  'By kind: 3 rows refute content the framework itself asserts, on data (#1 TEST-09 and #2 TEST-10, the boost cap; #3 the γ = 2 pin, a choice among MOND\'s functions at about 2σ); 1 shares its root with MOND (#5 TEST-25: Cassini excludes McGaugh\'s own function too, though MOND\'s δ = 6 escapes near stellar-population M/L at about 1.8σ on SPARC, while the compander needs more than twice that M/L); 1 is a registration the equation could never have met (#4, the environment amplitude); 1 is a construction check, not data (#6 Bell/CHSH). The strongest independent dataset against the boost cap, galaxy weak lensing (KiDS-1000), excludes every Ω_m-based cap; it is recorded on rows #1–#2 rather than as a seventh row because it shares their root. Several executed exclusions of the archive\'s own equations sit outside the count because no failure condition was written before they ran (the covariant dark-energy completions, the density fit at the formula knee, the modified-G reading against lunar laser ranging); whether to print them beside the count is the project lead\'s call.';
 
 /**
  * One statement of TEST-25, rendered on every page that gives its status (2026-11-08). A graduate persona found three different
@@ -75,6 +75,20 @@ export const COUNT_BY_KIND_SENTENCE =
  * the Υ-free column (scripts/cassini_both_families_upsilon_free.py, PREREG 10d0bdf). Do not quote "stays above 10σ with Υ free":
  * that held by 0.03σ at one prior width. The robust statement is the Υ_d each family needs in order to pass.
  */
+/**
+ * The EFE-free corner, one status (2026-11-09). A researcher persona found it alive in some sentences of Tier 1 and dead in others,
+ * and absent from /for-researchers' DR4 row. Every page that discusses it renders this.
+ */
+export const GAMMA2_OWN_UPSILON_SENTENCE =
+  'Both numbers hold Υ_disk = 0.5 for both laws. With one global Υ per law (γ = 2 best at 0.61, McGaugh at 0.54; same parameter count), ΔBIC is +46 by point (galaxy-block bootstrap 95%: −26 to +132) and +2.7 by galaxy. A noise-free twin puts a McGaugh world at +44 and a γ = 2 world at −43, so the data sit about 2σ from a γ = 2 world, in line with the 1.9–2.3σ from per-galaxy nuisances. Read this row as disfavoured at about 2σ. (maintainer/scripts/gamma2_global_upsilon_per_law.py, PREREG 5a95614; twin post-hoc.)';
+
+/** Every γ is a MOND μ (2026-11-09, graduate persona; checked by hand). */
+export const EVERY_GAMMA_IS_A_MU_SENTENCE =
+  'Every γ is a MOND interpolating function: C ≈ γx in the deep regime, so the compander has the right limits with a₀ = a₀′/γ, and γ only picks the transition shape and the return exponent q = 2γ. So γ = 2 against McGaugh selects among MOND\'s functions. It does not test a rival to MOND.';
+
+export const EFE_FREE_CORNER_STATUS =
+  'The EFE-free corner, one status (2026-11-09): alive, disfavoured, not novel. It is the acceleration-keyed compander at γ ≈ 0.87–0.95, read algebraically with no external field effect. Cassini\'s quadrupole test does not reach it, because Q₂ is the external field\'s effect; the direct perihelion tail sets its floor of γ ≳ 0.87. It costs about 1.2σ on SPARC at galaxy level and about 3σ on globular clusters (Δχ² = +54 ± 19 against Newton, conditional on the mass model). It has no field equation: it is an algebraic fit, and a modified-inertia reading would have to be non-local in time. It differs from MOND with its external field only the way MOND without one does, so keeping or losing it cannot move Bucket 0. Gaia DR4 can kill it: its boost keeps rising as the internal acceleration falls (estimate: 1.49 at 1.0×10⁻¹⁰ m/s², 2.70 at 0.2×10⁻¹⁰), where external-field-dominated MOND levels off. Not yet run against binned wide-binary data.';
+
 export const TEST25_STATUS_SENTENCE =
   'TEST-25 status (2026-11-08). Published, for MOND\'s own slowly-transitioning functions: 1.9–15σ depending on mass model and sample (Desmond, Hees & Famaey 2024: 8.7σ fiducial, 1.9σ with M/L freedom and bulge galaxies removed; Park et al. 2026: 3–15σ). In-house, for this compander with a₀ refit to SPARC: 14.5–19.3σ for every γ from 0.3 to 3 with M/L pinned at Υ = 0.5/0.7 (13–18σ without bulges; the γ = 0.3 row is solver-limited to about ±6σ). Those σ values track the M/L prior (at γ = 3, about 10σ with Υ free per galaxy at 0.1 dex and about 7σ at 0.2 dex), so the number that travels is the M/L each family needs in order to pass. MOND\'s sharpest member tested (δ = 6, no bulges) passes at Υ_d ≈ 0.54, near stellar-population values, at about 1.8σ on SPARC. The compander needs Υ_d ≈ 1.2–1.4, more than twice that, which makes 36–42% of discs over-maximal and costs 2.9σ on SPARC at γ = 3; at γ ≤ 1 it does not pass for any Υ_d up to 1.5, and neither does McGaugh\'s RAR function. So the root is shared with MOND at δ = 1 / γ ≈ ½, and the family-wide failure is the compander\'s own. Earlier "2σ edge" and "narrow, not empty" statements compared against a Cassini pass that held a₀ fixed; both were superseded on 2026-11-06.';
 
@@ -156,12 +170,12 @@ export const REFUTATION_ROWS: RefutationRow[] = [
   },
   {
     n: 3,
-    what: 'RAR transition shape at the framework\'s own γ = 2 (ΔBIC = +184 by point, ≈ +11 by galaxy)',
+    what: 'RAR transition shape at the framework\'s own γ = 2 (ΔBIC = +184 by point, ≈ +11 by galaxy, both at Υ = 0.5; +46 and +2.7 with each law\'s own global Υ)',
     ids: 'unnumbered (closed 2026-05-21)',
     root: 'The γ = 2 pin',
     whichC: 'C_g, keyed on observed acceleration',
     data: 'SPARC radial acceleration relation (2,807 points)',
-    convention: 'Effective-N. The +184 treats 2,807 points as independent; with the galaxy as the unit (measured N_eff ≈ 150, 2026-09-29) it is ΔBIC ≈ +11, 1.6σ with Υ, D, i frozen and 1.9–2.3σ with them refitted per galaxy under Li+2018 priors (explorer 2026-09-29): disfavoured at the threshold, not decisive. Refitting the nuisances does not narrow the galaxy-level interval. With γ free the fit lands on MOND\'s simple μ (a reparametrization, not a refutation).',
+    convention: 'Effective-N. The +184 treats 2,807 points as independent; with the galaxy as the unit (measured N_eff ≈ 150, 2026-09-29) it is ΔBIC ≈ +11, 1.6σ with Υ, D, i frozen and 1.9–2.3σ with them refitted per galaxy under Li+2018 priors (explorer 2026-09-29): disfavoured at the threshold, not decisive. Refitting the nuisances does not narrow the galaxy-level interval. Both numbers hold Υ_disk = 0.5 for both laws. With one global Υ per law (γ = 2 best at 0.61, McGaugh at 0.54; same parameter count), ΔBIC is +46 by point (galaxy-block bootstrap 95%: −26 to +132) and +2.7 by galaxy. A noise-free twin puts a McGaugh world at +44 and a γ = 2 world at −43, so the data sit about 2σ from a γ = 2 world, in line with the 1.9–2.3σ from per-galaxy nuisances. Read this row as disfavoured at about 2σ. Every γ is itself a MOND μ, so this row selects among MOND\'s functions. With γ free at Υ = 0.5 the fit lands on MOND\'s simple μ (a reparametrization, not a refutation).',
   },
   {
     n: 4,
@@ -183,7 +197,7 @@ export const REFUTATION_ROWS: RefutationRow[] = [
   },
   {
     n: 6,
-    what: 'Bell/CHSH: the substrate constructions stay at S ≤ 2 (quantum needs 2√2)',
+    what: 'Bell/CHSH: the no-signaling substrate constructions stay at S ≤ 2 (quantum needs 2√2; the one arm above 2, up to 2.67, signals)',
     ids: 'Bet B1 (not a TEST ID)',
     root: 'Bell\'s theorem (local arm); two nonlocal constructions null',
     whichC: 'none (no C function involved)',

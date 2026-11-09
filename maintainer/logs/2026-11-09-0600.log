@@ -1,0 +1,50 @@
+Starting Synchronism Maintainer Session at Mon Nov  9 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+The session's fixes are pushed and live on the site, and the research repo has its back-annotations, but several visitor HIGH items are still open. The site builds and lints clean, and I confirmed the new text on five live pages, but layout wasn't checked because Playwright can't start here.
+
+## Main finding
+The site's most-quoted framework-specific refutation is much weaker than its headline. The "+184" against γ = 2 held the stellar mass-to-light ratio Υ at 0.5 for both laws. A simulated graduate-student visitor questioned that, so I pre-registered a run and tested it on the real SPARC galaxy data:
+
+| γ = 2 vs McGaugh (ΔBIC) | Υ frozen at 0.5 | Each law gets its own Υ |
+|---|---|---|
+| Counting every point | +184 | **+46** (95%: −26 to +132) |
+| Counting by galaxy | +10.9 | **+2.7** |
+
+- **Size of the effect:** a noise-free comparison, added after the run, puts the data about 2σ from a γ = 2 world. That matches the explorer's earlier per-galaxy result of 1.9–2.3σ.
+- **What it tests:** every γ is itself a MOND function, so this row chooses among MOND's functions and does not test a rival to MOND.
+- **H₀ claim:** the a₀ = cH₀/2π match only holds at one Υ. With γ pinned at ½, it needs H₀ of 93, 71 or 57 at Υ = 0.4, 0.5 or 0.6.
+- **Caveat:** all 6 predictions held, but I wrote them from the visitor's own table, so this confirms their number and isn't a blind test.
+- **Ledger:** no bucket moved, and the count stays at 6.
+
+## Also changed on the site
+- **Wide binaries:** Saad & Ting's public code sets a separation error far above what their paper states; I read the line myself. The site now says the open question is how many of the systems are contaminated. The mock-test numbers are the explorer's, and I did not re-run them.
+- **Contradictions fixed:**
+  - the EFE-free corner now has one status;
+  - Tier 1 is 13 cards, not 11;
+  - TEST-10's status now agrees across pages;
+  - TEST-26 is "numbered, not registered".
+- **Claims corrected:**
+  - superconductor "C ≈ 0" now says it comes from a hand-assigned input;
+  - "emergent a₀" is gone;
+  - chemistry rows that can't be traced now print "—".
+- **For newcomers:** the alive-or-dead answer now sits near the top of the landing page. `/where-its-useful` has a worked example and says plainly that no benefit has been measured.
+
+One visitor claim didn't hold: their estimate of TEST-05's power against MOND's external field was too high. The explorer had computed the real number on 09-05 (r² ≈ 0.001), but it never reached the page, so I added it.
+
+## Decisions for dp
+Details are in the proposal, ideally decided by about 25 November because Gaia DR4 arrives on 2 December.
+1. **Adopt the DR4 method?** Should the reading key and today's draft analysis plan be adopted? I recommend adopting them or a revision. They can't move Bucket 0, but they would make this the first prospective test; otherwise DR4 becomes one more retrospective.
+2. **Tell the authors?** Should Saad & Ting and Chae et al. be told? The site now states the code setting publicly, naming the commit and avoiding any talk of motive. I haven't contacted anyone.
+3. **Keep row #3 in the count of 6?** I printed the new numbers but left the count alone.
+
+## Still open
+- **Label systems:** this visitor HIGH is untouched; merging the eight needs a choice about what readers actually need.
+- **Test status:** it still lives in prose on several pages, so this kind of drift will come back.
+- **Landing page:** it's two sentences longer, and its key and tables aren't folded yet.
+- **Headline γ = 0.489:** other pages still lead with it unqualified; only `/key-claims` is fixed.
+- **Required reading:** I read every PREDICTIONS block, but truncated the longer table rows, so not literally in full as required. The file is 213 kB, and the log records the coverage.
+
+Everything is in `maintainer/logs/2026-11-09.md`, including three new explorer topics, led by a DR3 dry run of the DR4 plan. The proposal is `Synchronism/Research/proposals/frozen_upsilon_headlines_and_the_first_prospective_test_needs_a_decision_20261109.md`.
+
+**So what?** It partly advances discovery: a headline refutation shrank to about 2σ, but no bucket moved and no scheduled test can move one. A simulated reader who downloaded the table caught it, not us. The only thing that could change what kind of record this is, a method fixed before the DR4 data, is waiting on dp's decision.

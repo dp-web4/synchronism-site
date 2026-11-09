@@ -1,0 +1,72 @@
+VARIANT q=flat rv_frac=0.583 a_med=40
+=== 1. per-system, ordered by g (config opik_noz Gaussian, then chae with z; robust = t5 with 40 m/s, no v_sys)
+  #33  g  0.14  s  30.30 d  73.9 M 2.10 v   415±( 11,189) eta 1.18  RV:LCO        | gamma_ML  2.09  with z  2.00  robust  2.00 | dlnL(1->ML)   0.3
+  #24  g  0.17  s  24.67 d  53.4 M 1.74 v   144±(  7, 73) eta 0.41  RV:APOGEE     | gamma_ML  0.44  with z  0.38  robust  0.44 | dlnL(1->ML)   0.4
+  #23  g  0.17  s  19.92 d 113.0 M 1.15 v   199±( 12, 82) eta 0.62  RV:APOGEE     | gamma_ML  0.87  with z  0.95  robust  0.83 | dlnL(1->ML)   0.0
+  #6   g  0.18  s  19.80 d 145.9 M 1.21 v   440±( 32, 96) eta 1.33  RV:APOGEE     | gamma_ML  4.79  with z  4.79  robust  4.79 | dlnL(1->ML)   9.7
+  #3   g  0.35  s  19.30 d 131.3 M 2.22 v   755±( 19,103) eta 1.67  RV:APOGEE     | gamma_ML  7.24  with z  7.24  robust  6.92 | dlnL(1->ML)  10.6
+  #27  g  0.43  s  16.76 d  55.0 M 2.03 v   314±(  7, 73) eta 0.68  RV:LCO        | gamma_ML  1.05  with z  0.95  robust  0.91 | dlnL(1->ML)   0.0
+  #28  g  0.50  s  16.35 d  86.0 M 2.25 v   277±( 15,156) eta 0.56  RV:LCO        | gamma_ML  0.25  with z  0.25  robust  0.25 | dlnL(1->ML)   0.8
+  #32  g  0.69  s  13.10 d 105.0 M 2.01 v   483±( 11, 93) eta 0.93  RV:LCO        | gamma_ML  2.19  with z  2.19  robust  2.19 | dlnL(1->ML)   1.0
+  #58  g  0.79  s  12.33 d  38.1 M 2.03 v   119±(  5, 40) eta 0.22  RV:HARPS      | gamma_ML  0.25  with z  0.25  robust  0.25 | dlnL(1->ML)   1.5
+  #39  g  0.98  s  11.04 d  59.5 M 2.02 v   477±(  6, 98) eta 0.84  RV:LCO        | gamma_ML  1.91  with z  2.51  robust  2.00 | dlnL(1->ML)   0.8
+  #66  g  1.05  s  10.30 d  14.5 M 1.87 v   325±(  8,188) eta 0.57  RV:Scarpa     | gamma_ML  0.25  with z  0.25  robust  0.25 | dlnL(1->ML)   0.8
+  #30  g  1.29  s   9.72 d 121.7 M 2.05 v   256±( 16, 84) eta 0.42  RV:LCO        | gamma_ML  0.50  with z  0.50  robust  0.50 | dlnL(1->ML)   0.3
+  #56  g  1.32  s   9.09 d  35.9 M 1.84 v   322±(  3, 53) eta 0.54  RV:HARPS      | gamma_ML  0.72  with z  0.87  robust  0.69 | dlnL(1->ML)   0.1
+  #42  g  1.45  s   7.87 d  33.5 M 1.52 v   627±(  5,146) eta 1.07  RV:LCO        | gamma_ML  2.51  with z  2.40  robust  2.29 | dlnL(1->ML)   0.7
+  #62  g  1.54  s   7.75 d  92.4 M 1.56 v   176±(  7, 59) eta 0.29  RV:MAROON-X   | gamma_ML  0.25  with z  0.25  robust  0.26 | dlnL(1->ML)   1.0
+  #69  g  1.57  s   8.82 d  45.6 M 2.06 v   487±(  6,111) eta 0.76  RV:Scarpa     | gamma_ML  1.32  with z  1.15  robust  1.15 | dlnL(1->ML)   0.1
+  #61  g  1.71  s   8.36 d 107.5 M 2.02 v   376±( 10, 56) eta 0.57  RV:MAROON-X   | gamma_ML  0.91  with z  0.91  robust  0.91 | dlnL(1->ML)   0.0
+  #31  g  1.85  s   7.52 d  55.1 M 1.76 v   220±(  6,153) eta 0.34  RV:LCO        | gamma_ML  0.30  with z  0.29  robust  0.30 | dlnL(1->ML)   0.7
+  #36  g  2.49  s   6.69 d  82.8 M 1.88 v   662±(  6,162) eta 0.94  RV:LCO        | gamma_ML  2.09  with z  2.00  robust  1.91 | dlnL(1->ML)   0.5
+  #60  g  2.80  s   6.75 d  44.3 M 2.15 v   278±(  5, 42) eta 0.37  RV:HARPS      | gamma_ML  0.38  with z  0.48  robust  0.38 | dlnL(1->ML)   0.6
+  #1   g  3.04  s   4.58 d  56.0 M 1.08 v   197±( 10, 77) eta 0.31  RV:APOGEE     | gamma_ML  0.25  with z  0.25  robust  0.25 | dlnL(1->ML)   1.1
+  #59  g  3.87  s   5.78 d 100.3 M 2.18 v   945±( 14, 43) eta 1.16  RV:HARPS      | gamma_ML  3.63  with z  3.63  robust  3.47 | dlnL(1->ML)  10.1
+  #65  g  4.25  s   5.24 d  79.5 M 1.97 v   521±(  9,143) eta 0.64  RV:MAROON-X   | gamma_ML  1.05  with z  1.10  robust  1.05 | dlnL(1->ML)   0.0
+  #50  g  4.95  s   4.73 d  69.8 M 1.87 v   388±(  7,122) eta 0.46  RV:LCO        | gamma_ML  0.60  with z  0.60  robust  0.63 | dlnL(1->ML)   0.2
+  #20  g  5.24  s   3.29 d  37.8 M 0.95 v   552±(  6,120) eta 0.77  RV:APOGEE     | gamma_ML  1.45  with z  1.45  robust  1.38 | dlnL(1->ML)   0.1
+  #75  g  5.40  s   4.70 d  40.9 M 2.01 v   794±(  4, 85) eta 0.91  RV:Scarpa     | gamma_ML  2.19  with z  2.09  robust  2.09 | dlnL(1->ML)   1.1
+  #54  g  5.40  s   4.94 d 116.3 M 2.22 v   802±(  9, 40) eta 0.90  RV:HARPS      | gamma_ML  2.19  with z  2.19  robust  2.19 | dlnL(1->ML)   1.4
+  #34  g  5.53  s   4.98 d  63.7 M 2.31 v   286±( 14, 75) eta 0.32  RV:LCO        | gamma_ML  0.28  with z  0.28  robust  0.29 | dlnL(1->ML)   0.9
+  #53  g  5.55  s   4.83 d 108.6 M 2.18 v   570±( 15, 43) eta 0.64  RV:HARPS      | gamma_ML  1.10  with z  1.10  robust  1.05 | dlnL(1->ML)   0.0
+  #4   g  5.90  s   3.35 d  82.9 M 1.12 v  1032±( 12, 88) eta 1.34  RV:APOGEE     | gamma_ML  4.79  with z  4.79  robust  4.57 | dlnL(1->ML)   8.7
+  #51  g  5.91  s   4.42 d 100.2 M 1.95 v   374±( 11, 94) eta 0.42  RV:LCO        | gamma_ML  0.50  with z  0.50  robust  0.52 | dlnL(1->ML)   0.3
+  #26  g  6.18  s   4.18 d  69.9 M 1.82 v   430±( 13, 92) eta 0.49  RV:LCO        | gamma_ML  0.58  with z  0.58  robust  0.52 | dlnL(1->ML)   0.2
+  #16  g  7.02  s   3.13 d 108.2 M 1.16 v   527±( 16, 96) eta 0.65  RV:APOGEE     | gamma_ML  1.15  with z  1.15  robust  1.15 | dlnL(1->ML)   0.0
+  #57  g  7.69  s   4.18 d  55.0 M 2.26 v   324±(  7, 42) eta 0.33  RV:HARPS      | gamma_ML  0.29  with z  0.29  robust  0.29 | dlnL(1->ML)   0.8
+  #55  g  7.92  s   3.72 d  12.0 M 1.85 v   690±(  5, 49) eta 0.74  RV:HARPS      | gamma_ML  1.45  with z  1.20  robust  1.38 | dlnL(1->ML)   0.2
+  #5   g 10.31  s   2.96 d 147.7 M 1.53 v   459±( 19, 86) eta 0.48  RV:APOGEE     | gamma_ML  0.63  with z  0.63  robust  0.63 | dlnL(1->ML)   0.2
+
+  by plan bin:
+   bin 0 n= 4 no z    gamma 2.84 [2.07, 4.22]  P(gamma<=1) 0.000
+   bin 0 n= 4 with z  gamma 2.81 [2.05, 4.15]  P(gamma<=1) 0.000
+   bin 0 n= 4 robust  gamma 2.90 [2.13, 4.29]  P(gamma<=1) 0.000
+   bin 1 n= 3 no z    gamma 4.00 [2.71, 6.13]  P(gamma<=1) 0.000
+   bin 1 n= 3 with z  gamma 3.84 [2.62, 5.87]  P(gamma<=1) 0.000
+   bin 1 n= 3 robust  gamma 3.08 [1.68, 5.26]  P(gamma<=1) 0.019
+   bin 2 n= 3 no z    gamma 1.74 [1.22, 2.80]  P(gamma<=1) 0.045
+   bin 2 n= 3 with z  gamma 1.82 [1.25, 2.99]  P(gamma<=1) 0.039
+   bin 2 n= 3 robust  gamma 1.72 [1.19, 2.78]  P(gamma<=1) 0.053
+   bin 3 n=10 no z    gamma 0.86 [0.65, 1.16]  P(gamma<=1) 0.696
+   bin 3 n=10 with z  gamma 0.86 [0.66, 1.14]  P(gamma<=1) 0.705
+   bin 3 n=10 robust  gamma 0.71 [0.54, 0.98]  P(gamma<=1) 0.855
+   bin 4 n=16 no z    gamma 1.87 [1.61, 2.21]  P(gamma<=1) 0.000
+   bin 4 n=16 with z  gamma 1.83 [1.59, 2.16]  P(gamma<=1) 0.000
+   bin 4 n=16 robust  gamma 1.65 [1.36, 2.01]  P(gamma<=1) 0.007
+  g>3 bin, dropping its top systems one at a time (no z): []:1.87  [59]:1.64  [59, 4]:1.17  [59, 4, 54]:1.02  [59, 4, 54, 1]:1.06  
+  all 36: no z 1.905; with z 1.866; robust 1.727
+
+=== 2. real 36, mixture with forward-model pools; surv by system median 0.085; kick median 852 m/s
+  per-star F=0.00  median f 0.000  gamma 1.874 [1.659, 2.128]  P(gamma<=1) 0.0000  lnL_max -764.48
+  per-star F=0.10  median f 0.019  gamma 1.706 [1.440, 1.976]  P(gamma<=1) 0.0083  lnL_max -764.29
+  per-star F=0.20  median f 0.042  gamma 1.457 [1.112, 1.791]  P(gamma<=1) 0.0629  lnL_max -763.98
+  per-star F=0.30  median f 0.069  gamma 1.234 [1.013, 1.580]  P(gamma<=1) 0.1367  lnL_max -763.19
+  per-star F=0.45  median f 0.124  gamma 1.115 [0.955, 1.369]  P(gamma<=1) 0.2330  lnL_max -762.08
+  per-star F=0.50  median f 0.148  gamma 1.097 [0.942, 1.329]  P(gamma<=1) 0.2644  lnL_max -761.92
+  profile over a scale on f (F=0.3 pattern):  x0.0:-764.5(g2.00) x1.0:-763.2(g1.12) x2.0:-761.9(g1.12) x3.0:-761.8(g1.12) x4.0:-762.3(g1.12) x5.0:-763.1(g1.00) x6.0:-764.3(g1.00) x7.0:-765.7(g1.00) x8.0:-767.3(g0.89)  | best scale 2.50, gamma 1.12, median f 0.173, lnL -761.73
+  mock truth gamma=1.0 F=0.00: mixture-at-true-F median 0.937 (16-84 0.861, 1.026); no-mixture reads 0.937 (16-84 0.861, 1.026); P(no-mixture >= real 1.87) = 0.000
+  mock truth gamma=1.0 F=0.30: mixture-at-true-F median 0.947 (16-84 0.849, 1.050); no-mixture reads 2.213 (16-84 1.009, 6.220); P(no-mixture >= real 1.87) = 0.542
+  mock truth gamma=1.0 F=0.50: mixture-at-true-F median 0.947 (16-84 0.821, 1.062); no-mixture reads 5.134 (16-84 1.820, 9.416); P(no-mixture >= real 1.87) = 0.825
+  mock truth gamma=1.4 F=0.30: mixture-at-true-F median 1.331 (16-84 1.204, 1.489); no-mixture reads 2.529 (16-84 1.382, 6.809); P(no-mixture >= real 1.87) = 0.600
+  mock truth gamma=1.4 F=0.50: mixture-at-true-F median 1.330 (16-84 1.141, 1.470); no-mixture reads 5.425 (16-84 2.084, 9.433); P(no-mixture >= real 1.87) = 0.875
+  mock truth gamma=1.6 F=0.50: mixture-at-true-F median 1.522 (16-84 1.310, 1.685); no-mixture reads 5.590 (16-84 2.193, 9.438); P(no-mixture >= real 1.87) = 0.892

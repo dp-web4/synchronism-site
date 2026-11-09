@@ -1,0 +1,67 @@
+=== 1. CONTROL. Published (Pittordis+25 via Boufourou v1 text, not independently re-read): triple survival 40.5%, RUWE rejecting ~37%; triple median v~ 0.87 to 1.62 over eight separation bins.
+  ruwe<1.20: RUWE alone rejects  42.1%; survive RUWE+resolved+CMD  38.3%
+  ruwe<1.25: RUWE alone rejects  39.0%; survive RUWE+resolved+CMD  40.5%
+  ruwe<1.40: RUWE alone rejects  34.2%; survive RUWE+resolved+CMD  44.2%
+  median v~ of surviving triples by s bin [kau]:
+    0.20-0.37: all 0.65   within v~<2.5 0.65
+    0.37-0.70: all 0.69   within v~<2.5 0.69
+    0.70-1.31: all 0.74   within v~<2.5 0.74
+    1.31-2.45: all 0.79   within v~<2.5 0.77
+    2.45-4.58: all 0.88   within v~<2.5 0.83
+    4.58-8.57: all 0.99   within v~<2.5 0.86
+    8.57-16.04: all 1.16   within v~<2.5 0.90
+    16.04-30.00: all 1.39   within v~<2.5 0.88
+
+=== 2. What survives, S1-like: d<150 pc, flat q 0.1-1, a median 40 AU sigma 1.5 dex, baseline 34 mo
+RUWE<1.25 only                               surv  59.1%  f(F=0.30) 0.368 | sky kick med   291 [16-84:    45,    821] m/s; 3D med    524; P(sky>100)=0.76 P(>500)=0.32 P(>2000)=0.01 | a med   59 AU [16-84   12,   286]; q med 0.57
++ resolved                                   surv  39.5%  f(F=0.30) 0.272 | sky kick med   380 [16-84:    20,    972] m/s; 3D med    766; P(sky>100)=0.76 P(>500)=0.40 P(>2000)=0.01 | a med   29 AU [16-84    5,    82]; q med 0.58
++ IPD                                        surv  25.6%  f(F=0.30) 0.191 | sky kick med   341 [16-84:     6,    957] m/s; 3D med    893; P(sky>100)=0.70 P(>500)=0.38 P(>2000)=0.01 | a med   17 AU [16-84    0,    56]; q med 0.39
++ CMD 0.4 mag                                surv  19.8%  f(F=0.30) 0.153 | sky kick med   443 [16-84:    12,   1067] m/s; 3D med   1021; P(sky>100)=0.78 P(>500)=0.46 P(>2000)=0.02 | a med   22 AU [16-84    0,    66]; q med 0.32
++ CMD 0.25 mag                               surv  17.9%  f(F=0.30) 0.140 | sky kick med   443 [16-84:    15,   1068] m/s; 3D med    983; P(sky>100)=0.79 P(>500)=0.45 P(>2000)=0.02 | a med   23 AU [16-84    0,    70]; q med 0.30
++ RV stable 100 m/s, 3-11 yr (21 of the 36)  surv   7.8%  f(F=0.30) 0.065 | sky kick med   417 [16-84:   174,    876] m/s; 3D med    571; P(sky>100)=0.94 P(>500)=0.41 P(>2000)=0.01 | a med   52 AU [16-84   24,   110]; q med 0.25
++ RV stable 50 m/s                           surv   6.0%  f(F=0.30) 0.050 | sky kick med   381 [16-84:   163,    806] m/s; 3D med    515; P(sky>100)=0.93 P(>500)=0.36 P(>2000)=0.00 | a med   61 AU [16-84   30,   123]; q med 0.24
++ RV + speckle (10 of the 36)                surv   6.3%  f(F=0.30) 0.053 | sky kick med   385 [16-84:   163,    801] m/s; 3D med    526; P(sky>100)=0.93 P(>500)=0.37 P(>2000)=0.00 | a med   51 AU [16-84   25,   108]; q med 0.22
++ speckle, no RV                             surv  14.4%  f(F=0.30) 0.115 | sky kick med   331 [16-84:     6,    874] m/s; 3D med    939; P(sky>100)=0.70 P(>500)=0.36 P(>2000)=0.01 | a med   21 AU [16-84    0,    68]; q med 0.26
+
+  f among survivors vs F (per star), cut = RUWE+res+IPD+CMD / + RV 100 / + RV + speckle
+    F=0.10  0.043  0.017  0.014
+    F=0.20  0.094  0.039  0.031
+    F=0.30  0.153  0.065  0.053
+    F=0.45  0.263  0.119  0.097
+
+=== 3. Kick distribution against the 11-08 log-uniform 100-2000 m/s placeholder (quantiles of the sky kick after RUWE+res+IPD+CMD; log-uniform quartiles 211, 447, 946)
+   quantiles 5,25,50,75,95:  [   2.  146.  443.  839. 1562.]
+   a-range carrying survivors with sky kick 100-2000 m/s:  [  9.  16.  28.  54. 132.]
+   fraction of survivors with kick<30 m/s (harmless): 0.191
+
+=== 4. DR4 vetting: same systems, 66 months, Nep scaled. RUWE<1.25 at 66 mo; acceleration flag (delta chi2 of 7-par > 30); PM change between baselines > 5 sigma
+   no RV            34 mo                      surv  19.8%  sky kick med   443  a med   22 AU  frac with kick>100 m/s among all companions 0.154
+   no RV            66 mo RUWE                 surv  13.9%  sky kick med   309  a med   31 AU  frac with kick>100 m/s among all companions 0.098
+   no RV            66 mo RUWE+acc             surv  13.3%  sky kick med   293  a med   33 AU  frac with kick>100 m/s among all companions 0.093
+   no RV            66 mo RUWE+acc+PM change   surv   9.7%  sky kick med   195  a med   41 AU  frac with kick>100 m/s among all companions 0.059
+   + RV stable 100  34 mo                      surv   7.8%  sky kick med   417  a med   52 AU  frac with kick>100 m/s among all companions 0.073
+   + RV stable 100  66 mo RUWE                 surv   6.8%  sky kick med   372  a med   59 AU  frac with kick>100 m/s among all companions 0.063
+   + RV stable 100  66 mo RUWE+acc             surv   6.6%  sky kick med   366  a med   60 AU  frac with kick>100 m/s among all companions 0.062
+   + RV stable 100  66 mo RUWE+acc+PM change   surv   5.2%  sky kick med   318  a med   70 AU  frac with kick>100 m/s among all companions 0.047
+
+=== 5. q shape sensitivity; cut = RUWE+res+IPD+CMD, then + RV stable
+   Chae MSC as quoted: P(q<0.3)=4.5%. flat 0.1-1: 22%. MD17 shape computed below.
+  q mode flat      P(q<0.3)=0.223 P(q<0.15)=0.055
+   no RV                                     surv  19.9%  f(F=0.30) 0.153 | sky kick med   447 [16-84:    11,   1063] m/s; 3D med   1018; P(sky>100)=0.78 P(>500)=0.46 P(>2000)=0.01 | a med   22 AU [16-84    0,    66]; q med 0.32
+   + RV stable                               surv   7.8%  f(F=0.30) 0.065 | sky kick med   427 [16-84:   179,    872] m/s; 3D med    578; P(sky>100)=0.94 P(>500)=0.42 P(>2000)=0.01 | a med   53 AU [16-84   24,   109]; q med 0.25
+  q mode md17      P(q<0.3)=0.262 P(q<0.15)=0.058
+   no RV                                     surv  22.0%  f(F=0.30) 0.167 | sky kick med   449 [16-84:    14,   1057] m/s; 3D med    987; P(sky>100)=0.79 P(>500)=0.46 P(>2000)=0.01 | a med   23 AU [16-84    0,    68]; q med 0.31
+   + RV stable                               surv   9.1%  f(F=0.30) 0.075 | sky kick med   423 [16-84:   179,    875] m/s; 3D med    578; P(sky>100)=0.94 P(>500)=0.42 P(>2000)=0.01 | a med   53 AU [16-84   25,   111]; q med 0.25
+  q mode chae_msc  P(q<0.3)=0.045 P(q<0.15)=0.017
+   no RV                                     surv  12.5%  f(F=0.30) 0.101 | sky kick med   503 [16-84:     6,   1203] m/s; 3D med   1361; P(sky>100)=0.74 P(>500)=0.50 P(>2000)=0.02 | a med   17 AU [16-84    0,    46]; q med 0.58
+   + RV stable                               surv   2.9%  f(F=0.30) 0.025 | sky kick med   469 [16-84:   187,   1011] m/s; 3D med    661; P(sky>100)=0.94 P(>500)=0.47 P(>2000)=0.01 | a med   48 AU [16-84   21,   104]; q med 0.34
+
+=== 6. a-median sensitivity (K/M hosts have smaller a)
+   a_med  10 AU, no RV                       surv  21.0%  f(F=0.30) 0.161 | sky kick med   311 [16-84:     3,    988] m/s; 3D med   1353; P(sky>100)=0.62 P(>500)=0.38 P(>2000)=0.01 | a med   14 AU [16-84    0,    51]; q med 0.34
+   a_med  10 AU, + RV                        surv   6.2%  f(F=0.30) 0.052 | sky kick med   431 [16-84:   177,    900] m/s; 3D med    594; P(sky>100)=0.93 P(>500)=0.43 P(>2000)=0.01 | a med   49 AU [16-84   23,   103]; q med 0.25
+   a_med  20 AU, no RV                       surv  20.3%  f(F=0.30) 0.156 | sky kick med   393 [16-84:     5,   1026] m/s; 3D med   1138; P(sky>100)=0.71 P(>500)=0.42 P(>2000)=0.01 | a med   18 AU [16-84    0,    59]; q med 0.33
+   a_med  20 AU, + RV                        surv   7.0%  f(F=0.30) 0.058 | sky kick med   423 [16-84:   178,    882] m/s; 3D med    577; P(sky>100)=0.94 P(>500)=0.42 P(>2000)=0.01 | a med   51 AU [16-84   24,   106]; q med 0.25
+   a_med  40 AU, no RV                       surv  19.9%  f(F=0.30) 0.154 | sky kick med   447 [16-84:    12,   1068] m/s; 3D med   1017; P(sky>100)=0.78 P(>500)=0.46 P(>2000)=0.02 | a med   22 AU [16-84    0,    66]; q med 0.32
+   a_med  40 AU, + RV                        surv   7.8%  f(F=0.30) 0.065 | sky kick med   413 [16-84:   172,    881] m/s; 3D med    570; P(sky>100)=0.94 P(>500)=0.41 P(>2000)=0.01 | a med   52 AU [16-84   25,   110]; q med 0.25
+   a_med  80 AU, no RV                       surv  19.4%  f(F=0.30) 0.150 | sky kick med   474 [16-84:    85,   1078] m/s; 3D med    934; P(sky>100)=0.83 P(>500)=0.48 P(>2000)=0.02 | a med   25 AU [16-84    8,    73]; q med 0.31
+   a_med  80 AU, + RV                        surv   8.4%  f(F=0.30) 0.070 | sky kick med   414 [16-84:   172,    857] m/s; 3D med    568; P(sky>100)=0.94 P(>500)=0.40 P(>2000)=0.01 | a med   54 AU [16-84   26,   114]; q med 0.25

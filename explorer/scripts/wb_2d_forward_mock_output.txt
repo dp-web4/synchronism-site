@@ -1,0 +1,79 @@
+N by cut: {'fiducial': 38591, 'ruwe1.25+cmd d<150': 14847, 'S2like+cmd': 3732}
+
+===== CUT fiducial N 38591
+REAL E2 chae_sdep  val 1.048±0.007 test 1.089±0.019 deep 1.314±0.092 g<0.3 1.385±0.111 g0.3-0.6 1.226±0.069 g0.6-1 1.060±0.068 g1-3 1.126±0.045 g>3 1.045±0.008  beta -0.177±0.076
+REAL E1 chae_sdep  val 1.079±0.009 test 1.148±0.022 deep 1.368±0.086 g<0.3 1.432±0.109 g0.3-0.6 1.164±0.070 g0.6-1 1.089±0.078 g1-3 1.169±0.045 g>3 1.079±0.009  beta -0.185±0.069
+REAL E2 thermal    val 1.035±0.008 test 1.036±0.020 deep 1.227±0.082 g<0.3 1.301±0.093 g0.3-0.6 1.107±0.058 g0.6-1 1.049±0.071 g1-3 1.081±0.047 g>3 1.033±0.008  beta -0.144±0.063
+REAL E1 thermal    val 1.067±0.008 test 1.092±0.020 deep 1.284±0.092 g<0.3 1.329±0.117 g0.3-0.6 1.150±0.063 g0.6-1 1.059±0.069 g1-3 1.101±0.042 g>3 1.069±0.008  beta -0.149±0.081
+REAL E2 individual val 1.140±0.010 test 1.222±0.022 deep 1.557±0.130 g<0.3 1.642±0.163 g0.3-0.6 1.380±0.085 g0.6-1 1.145±0.087 g1-3 1.263±0.058 g>3 1.129±0.008  beta -0.241±0.092
+REAL E1 individual val 1.173±0.010 test 1.268±0.023 deep 1.417±0.096 g<0.3 1.443±0.114 g0.3-0.6 1.337±0.070 g0.6-1 1.227±0.085 g1-3 1.305±0.058 g>3 1.163±0.009  beta -0.105±0.064
+MOCK newton    F=0.00 q=flat     a= 40 E2 N 38591 val 1.005 test 1.012 deep 1.070 g<0.3 1.016 g0.3-0.6 0.964 g0.6-1 1.031 g1-3 0.979 g>3 1.007  beta 0.013 (sd over reals 0.068; boot 0.070)
+MOCK newton    F=0.00 q=flat     a= 40 E1 N 38591 val 1.005 test 1.007 deep 1.074 g<0.3 1.030 g0.3-0.6 0.958 g0.6-1 1.004 g1-3 0.972 g>3 1.006  beta -0.016 (sd over reals 0.048; boot 0.074)
+MOCK flat      F=0.00 q=flat     a= 40 E2 N 38591 val 1.033 test 1.151 deep 1.246 g<0.3 1.303 g0.3-0.6 1.307 g0.6-1 1.396 g1-3 1.331 g>3 1.041  beta 0.042 (sd over reals 0.042; boot 0.080)
+MOCK flat      F=0.00 q=flat     a= 40 E1 N 38591 val 1.034 test 1.153 deep 1.255 g<0.3 1.293 g0.3-0.6 1.339 g0.6-1 1.384 g1-3 1.331 g>3 1.041  beta 0.048 (sd over reals 0.060; boot 0.071)
+MOCK efe_free  F=0.00 q=flat     a= 40 E2 N 38591 val 1.015 test 1.254 deep 3.557 g<0.3 3.700 g0.3-0.6 2.180 g0.6-1 1.947 g1-3 1.428 g>3 1.030  beta -0.399 (sd over reals 0.127; boot 0.121)
+MOCK efe_free  F=0.00 q=flat     a= 40 E1 N 38591 val 1.013 test 1.281 deep 3.155 g<0.3 3.246 g0.3-0.6 2.098 g0.6-1 1.881 g1-3 1.433 g>3 1.030  beta -0.357 (sd over reals 0.068; boot 0.080)
+MOCK newton    F=0.10 q=flat     a= 40 E2 N 35652 val 1.045 test 1.051 deep 1.008 g<0.3 0.965 g0.3-0.6 1.046 g0.6-1 1.120 g1-3 1.050 g>3 1.042  beta 0.093 (sd over reals 0.025; boot 0.072)
+MOCK newton    F=0.10 q=flat     a= 40 E1 N 35652 val 1.060 test 1.070 deep 1.015 g<0.3 0.966 g0.3-0.6 1.073 g0.6-1 1.173 g1-3 1.073 g>3 1.057  beta 0.120 (sd over reals 0.038; boot 0.070)
+MOCK newton    F=0.20 q=flat     a= 40 E2 N 32861 val 1.105 test 1.101 deep 1.063 g<0.3 1.062 g0.3-0.6 1.088 g0.6-1 1.081 g1-3 1.095 g>3 1.103  beta 0.007 (sd over reals 0.055; boot 0.074)
+MOCK newton    F=0.20 q=flat     a= 40 E1 N 32861 val 1.136 test 1.143 deep 1.114 g<0.3 1.106 g0.3-0.6 1.131 g0.6-1 1.168 g1-3 1.141 g>3 1.136  beta 0.033 (sd over reals 0.070; boot 0.082)
+MOCK newton    F=0.30 q=flat     a= 40 E2 N 30190 val 1.172 test 1.178 deep 1.204 g<0.3 1.188 g0.3-0.6 1.154 g0.6-1 1.136 g1-3 1.177 g>3 1.170  beta -0.015 (sd over reals 0.071; boot 0.083)
+MOCK newton    F=0.30 q=flat     a= 40 E1 N 30190 val 1.231 test 1.267 deep 1.264 g<0.3 1.220 g0.3-0.6 1.245 g0.6-1 1.222 g1-3 1.279 g>3 1.231  beta 0.005 (sd over reals 0.056; boot 0.075)
+MOCK newton    F=0.45 q=flat     a= 40 E2 N 26433 val 1.282 test 1.286 deep 1.041 g<0.3 1.017 g0.3-0.6 1.179 g0.6-1 1.349 g1-3 1.252 g>3 1.279  beta 0.185 (sd over reals 0.106; boot 0.110)
+MOCK newton    F=0.45 q=flat     a= 40 E1 N 26433 val 1.396 test 1.456 deep 1.135 g<0.3 1.131 g0.3-0.6 1.349 g0.6-1 1.496 g1-3 1.405 g>3 1.393  beta 0.179 (sd over reals 0.035; boot 0.115)
+MOCK newton    F=0.30 q=chae_msc a= 40 E2 N 30404 val 1.178 test 1.172 deep 1.117 g<0.3 1.121 g0.3-0.6 1.073 g0.6-1 1.205 g1-3 1.184 g>3 1.174  beta 0.052 (sd over reals 0.138; boot 0.097)
+MOCK newton    F=0.30 q=chae_msc a= 40 E1 N 30404 val 1.235 test 1.249 deep 1.153 g<0.3 1.178 g0.3-0.6 1.148 g0.6-1 1.287 g1-3 1.248 g>3 1.231  beta 0.067 (sd over reals 0.102; boot 0.085)
+MOCK newton    F=0.30 q=flat     a=150 E2 N 30589 val 1.197 test 1.191 deep 1.116 g<0.3 1.150 g0.3-0.6 1.094 g0.6-1 1.249 g1-3 1.154 g>3 1.193  beta 0.056 (sd over reals 0.061; boot 0.096)
+MOCK newton    F=0.30 q=flat     a=150 E1 N 30589 val 1.261 test 1.284 deep 1.164 g<0.3 1.175 g0.3-0.6 1.182 g0.6-1 1.289 g1-3 1.271 g>3 1.256  beta 0.059 (sd over reals 0.089; boot 0.090)
+
+===== CUT ruwe1.25+cmd d<150 N 14847
+REAL E2 chae_sdep  val 0.979±0.013 test 1.025±0.028 deep 1.296±0.175 g<0.3 1.328±0.192 g0.3-0.6 1.052±0.166 g0.6-1 1.002±0.104 g1-3 1.046±0.061 g>3 0.980±0.013  beta -0.184±0.112
+REAL E1 chae_sdep  val 1.001±0.015 test 1.061±0.031 deep 1.290±0.140 g<0.3 1.267±0.183 g0.3-0.6 1.063±0.128 g0.6-1 1.143±0.108 g1-3 1.094±0.068 g>3 1.004±0.011  beta -0.059±0.112
+REAL E2 thermal    val 0.967±0.015 test 0.968±0.022 deep 1.276±0.202 g<0.3 1.289±0.212 g0.3-0.6 0.991±0.124 g0.6-1 0.928±0.072 g1-3 0.992±0.063 g>3 0.969±0.013  beta -0.205±0.109
+REAL E1 thermal    val 0.997±0.013 test 1.007±0.022 deep 1.240±0.179 g<0.3 1.229±0.155 g0.3-0.6 0.994±0.141 g0.6-1 1.045±0.109 g1-3 1.021±0.072 g>3 1.001±0.012  beta -0.107±0.109
+REAL E2 individual val 1.047±0.015 test 1.123±0.033 deep 1.410±0.242 g<0.3 1.417±0.206 g0.3-0.6 1.179±0.205 g0.6-1 1.055±0.091 g1-3 1.188±0.070 g>3 1.038±0.013  beta -0.195±0.100
+REAL E1 individual val 1.074±0.016 test 1.176±0.031 deep 1.571±0.198 g<0.3 1.579±0.256 g0.3-0.6 1.109±0.180 g0.6-1 1.205±0.095 g1-3 1.197±0.063 g>3 1.068±0.011  beta -0.157±0.113
+MOCK newton    F=0.00 q=flat     a= 40 E2 N 14847 val 0.999 test 0.998 deep 0.911 g<0.3 0.932 g0.3-0.6 1.125 g0.6-1 1.127 g1-3 1.009 g>3 0.999  beta 0.126 (sd over reals 0.057; boot 0.107)
+MOCK newton    F=0.00 q=flat     a= 40 E1 N 14847 val 0.992 test 0.997 deep 0.917 g<0.3 0.934 g0.3-0.6 1.101 g0.6-1 1.107 g1-3 1.005 g>3 0.994  beta 0.110 (sd over reals 0.051; boot 0.111)
+MOCK flat      F=0.00 q=flat     a= 40 E2 N 14847 val 1.030 test 1.160 deep 1.332 g<0.3 1.333 g0.3-0.6 1.455 g0.6-1 1.585 g1-3 1.313 g>3 1.032  beta 0.107 (sd over reals 0.068; boot 0.140)
+MOCK flat      F=0.00 q=flat     a= 40 E1 N 14847 val 1.027 test 1.170 deep 1.365 g<0.3 1.373 g0.3-0.6 1.461 g0.6-1 1.603 g1-3 1.312 g>3 1.029  beta 0.099 (sd over reals 0.064; boot 0.127)
+MOCK efe_free  F=0.00 q=flat     a= 40 E2 N 14847 val 1.024 test 1.298 deep 3.047 g<0.3 3.505 g0.3-0.6 2.480 g0.6-1 1.883 g1-3 1.602 g>3 1.036  beta -0.392 (sd over reals 0.254; boot 0.208)
+MOCK efe_free  F=0.00 q=flat     a= 40 E1 N 14847 val 1.017 test 1.333 deep 2.875 g<0.3 3.368 g0.3-0.6 2.229 g0.6-1 1.828 g1-3 1.571 g>3 1.032  beta -0.380 (sd over reals 0.038; boot 0.126)
+MOCK newton    F=0.10 q=flat     a= 40 E2 N 13124 val 1.027 test 1.030 deep 1.058 g<0.3 1.113 g0.3-0.6 1.011 g0.6-1 0.956 g1-3 1.075 g>3 1.022  beta -0.089 (sd over reals 0.103; boot 0.127)
+MOCK newton    F=0.10 q=flat     a= 40 E1 N 13124 val 1.039 test 1.043 deep 1.045 g<0.3 1.087 g0.3-0.6 1.008 g0.6-1 0.977 g1-3 1.085 g>3 1.036  beta -0.071 (sd over reals 0.117; boot 0.119)
+MOCK newton    F=0.20 q=flat     a= 40 E2 N 11469 val 1.072 test 1.031 deep 0.937 g<0.3 0.970 g0.3-0.6 0.927 g0.6-1 1.209 g1-3 1.042 g>3 1.062  beta 0.154 (sd over reals 0.157; boot 0.117)
+MOCK newton    F=0.20 q=flat     a= 40 E1 N 11469 val 1.099 test 1.070 deep 0.989 g<0.3 1.013 g0.3-0.6 0.986 g0.6-1 1.209 g1-3 1.060 g>3 1.091  beta 0.121 (sd over reals 0.169; boot 0.120)
+MOCK newton    F=0.30 q=flat     a= 40 E2 N  9943 val 1.122 test 1.076 deep 1.026 g<0.3 1.062 g0.3-0.6 1.001 g0.6-1 1.084 g1-3 1.064 g>3 1.116  beta 0.011 (sd over reals 0.136; boot 0.177)
+MOCK newton    F=0.30 q=flat     a= 40 E1 N  9943 val 1.172 test 1.146 deep 1.004 g<0.3 1.049 g0.3-0.6 1.114 g0.6-1 1.166 g1-3 1.129 g>3 1.168  beta 0.095 (sd over reals 0.127; boot 0.177)
+MOCK newton    F=0.45 q=flat     a= 40 E2 N  7873 val 1.202 test 1.268 deep 1.156 g<0.3 1.169 g0.3-0.6 1.695 g0.6-1 1.202 g1-3 1.270 g>3 1.200  beta 0.062 (sd over reals 0.090; boot 0.215)
+MOCK newton    F=0.45 q=flat     a= 40 E1 N  7873 val 1.305 test 1.378 deep 1.138 g<0.3 1.154 g0.3-0.6 1.527 g0.6-1 1.379 g1-3 1.415 g>3 1.296  beta 0.133 (sd over reals 0.074; boot 0.177)
+MOCK newton    F=0.30 q=chae_msc a= 40 E2 N  9580 val 1.115 test 1.119 deep 0.962 g<0.3 0.920 g0.3-0.6 1.129 g0.6-1 1.144 g1-3 1.168 g>3 1.110  beta 0.161 (sd over reals 0.133; boot 0.168)
+MOCK newton    F=0.30 q=chae_msc a= 40 E1 N  9580 val 1.151 test 1.209 deep 1.011 g<0.3 0.972 g0.3-0.6 1.170 g0.6-1 1.209 g1-3 1.312 g>3 1.148  beta 0.141 (sd over reals 0.078; boot 0.160)
+MOCK newton    F=0.30 q=flat     a=150 E2 N 10084 val 1.134 test 1.115 deep 0.896 g<0.3 0.840 g0.3-0.6 1.258 g0.6-1 1.038 g1-3 1.023 g>3 1.136  beta 0.145 (sd over reals 0.069; boot 0.138)
+MOCK newton    F=0.30 q=flat     a=150 E1 N 10084 val 1.192 test 1.220 deep 0.913 g<0.3 0.865 g0.3-0.6 1.405 g0.6-1 1.009 g1-3 1.110 g>3 1.191  beta 0.072 (sd over reals 0.093; boot 0.134)
+
+===== CUT S2like+cmd N 3732
+REAL E2 chae_sdep  val 0.965±0.037 test 0.991±0.030 deep 1.347±0.254 g<0.3 1.289±0.258 g0.3-0.6 1.094±0.140 g0.6-1 1.001±0.102 g1-3 1.023±0.062 g>3 0.954±0.027  beta -0.176±0.130
+REAL E1 chae_sdep  val 0.996±0.036 test 1.026±0.029 deep 1.371±0.182 g<0.3 1.292±0.244 g0.3-0.6 1.031±0.143 g0.6-1 0.993±0.111 g1-3 1.059±0.067 g>3 0.993±0.025  beta -0.173±0.160
+REAL E2 thermal    val 0.919±0.039 test 0.937±0.031 deep 1.101±0.208 g<0.3 1.116±0.164 g0.3-0.6 0.920±0.117 g0.6-1 0.957±0.103 g1-3 0.954±0.054 g>3 0.913±0.029  beta -0.101±0.118
+REAL E1 thermal    val 0.972±0.036 test 0.980±0.029 deep 1.262±0.189 g<0.3 1.229±0.204 g0.3-0.6 0.971±0.129 g0.6-1 1.039±0.108 g1-3 1.051±0.070 g>3 0.952±0.027  beta -0.091±0.149
+REAL E2 individual val 1.066±0.043 test 1.095±0.033 deep 1.571±0.344 g<0.3 1.578±0.396 g0.3-0.6 1.057±0.144 g0.6-1 1.048±0.100 g1-3 1.139±0.054 g>3 1.057±0.029  beta -0.236±0.152
+REAL E1 individual val 1.084±0.044 test 1.133±0.027 deep 1.497±0.207 g<0.3 1.494±0.213 g0.3-0.6 1.151±0.170 g0.6-1 1.133±0.121 g1-3 1.143±0.070 g>3 1.087±0.031  beta -0.190±0.105
+MOCK newton    F=0.00 q=flat     a= 40 E2 N  3732 val 1.013 test 1.021 deep 0.919 g<0.3 0.900 g0.3-0.6 1.032 g0.6-1 0.983 g1-3 0.971 g>3 1.025  beta 0.071 (sd over reals 0.065; boot 0.138)
+MOCK newton    F=0.00 q=flat     a= 40 E1 N  3732 val 1.012 test 1.021 deep 0.908 g<0.3 0.898 g0.3-0.6 0.998 g0.6-1 0.972 g1-3 0.972 g>3 1.027  beta 0.069 (sd over reals 0.036; boot 0.135)
+MOCK flat      F=0.00 q=flat     a= 40 E2 N  3732 val 1.034 test 1.190 deep 1.439 g<0.3 1.472 g0.3-0.6 1.492 g0.6-1 1.409 g1-3 1.354 g>3 1.055  beta -0.009 (sd over reals 0.161; boot 0.178)
+MOCK flat      F=0.00 q=flat     a= 40 E1 N  3732 val 1.037 test 1.194 deep 1.444 g<0.3 1.425 g0.3-0.6 1.512 g0.6-1 1.433 g1-3 1.360 g>3 1.054  beta 0.030 (sd over reals 0.134; boot 0.149)
+MOCK efe_free  F=0.00 q=flat     a= 40 E2 N  3732 val 1.007 test 1.305 deep 3.099 g<0.3 2.953 g0.3-0.6 2.174 g0.6-1 1.802 g1-3 1.392 g>3 1.070  beta -0.401 (sd over reals 0.212; boot 0.231)
+MOCK efe_free  F=0.00 q=flat     a= 40 E1 N  3732 val 1.025 test 1.332 deep 2.791 g<0.3 2.814 g0.3-0.6 2.442 g0.6-1 1.705 g1-3 1.414 g>3 1.081  beta -0.388 (sd over reals 0.131; boot 0.143)
+MOCK newton    F=0.10 q=flat     a= 40 E2 N  3257 val 1.018 test 1.022 deep 1.138 g<0.3 1.067 g0.3-0.6 1.024 g0.6-1 0.898 g1-3 0.987 g>3 1.028  beta -0.103 (sd over reals 0.070; boot 0.167)
+MOCK newton    F=0.10 q=flat     a= 40 E1 N  3257 val 1.051 test 1.045 deep 1.165 g<0.3 1.063 g0.3-0.6 1.085 g0.6-1 0.941 g1-3 0.998 g>3 1.057  beta -0.065 (sd over reals 0.140; boot 0.166)
+MOCK newton    F=0.20 q=flat     a= 40 E2 N  2862 val 1.090 test 1.070 deep 1.136 g<0.3 1.053 g0.3-0.6 1.076 g0.6-1 1.023 g1-3 1.060 g>3 1.091  beta 0.011 (sd over reals 0.163; boot 0.178)
+MOCK newton    F=0.20 q=flat     a= 40 E1 N  2862 val 1.112 test 1.132 deep 1.138 g<0.3 1.083 g0.3-0.6 1.117 g0.6-1 1.092 g1-3 1.104 g>3 1.129  beta 0.023 (sd over reals 0.097; boot 0.192)
+MOCK newton    F=0.30 q=flat     a= 40 E2 N  2423 val 1.080 test 1.109 deep 1.315 g<0.3 1.246 g0.3-0.6 1.281 g0.6-1 0.880 g1-3 1.124 g>3 1.094  beta -0.245 (sd over reals 0.166; boot 0.245)
+MOCK newton    F=0.30 q=flat     a= 40 E1 N  2423 val 1.146 test 1.188 deep 1.307 g<0.3 1.365 g0.3-0.6 1.262 g0.6-1 0.926 g1-3 1.244 g>3 1.161  beta -0.218 (sd over reals 0.241; boot 0.233)
+MOCK newton    F=0.45 q=flat     a= 40 E2 N  1905 val 1.179 test 1.229 deep 1.060 g<0.3 1.251 g0.3-0.6 1.175 g0.6-1 1.168 g1-3 1.272 g>3 1.195  beta -0.067 (sd over reals 0.168; boot 0.280)
+MOCK newton    F=0.45 q=flat     a= 40 E1 N  1905 val 1.325 test 1.353 deep 1.183 g<0.3 1.320 g0.3-0.6 1.309 g0.6-1 1.267 g1-3 1.433 g>3 1.329  beta -0.047 (sd over reals 0.170; boot 0.264)
+MOCK newton    F=0.30 q=chae_msc a= 40 E2 N  2305 val 1.165 test 1.139 deep 1.040 g<0.3 1.003 g0.3-0.6 1.025 g0.6-1 1.139 g1-3 1.197 g>3 1.158  beta 0.061 (sd over reals 0.107; boot 0.207)
+MOCK newton    F=0.30 q=chae_msc a= 40 E1 N  2305 val 1.222 test 1.201 deep 1.038 g<0.3 0.975 g0.3-0.6 1.107 g0.6-1 1.216 g1-3 1.260 g>3 1.217  beta 0.154 (sd over reals 0.085; boot 0.186)
+MOCK newton    F=0.30 q=flat     a=150 E2 N  2447 val 1.101 test 1.101 deep 1.124 g<0.3 1.184 g0.3-0.6 1.002 g0.6-1 1.059 g1-3 1.056 g>3 1.112  beta -0.059 (sd over reals 0.201; boot 0.226)
+MOCK newton    F=0.30 q=flat     a=150 E1 N  2447 val 1.159 test 1.187 deep 1.263 g<0.3 1.361 g0.3-0.6 1.031 g0.6-1 1.118 g1-3 1.177 g>3 1.183  beta -0.153 (sd over reals 0.157; boot 0.210)

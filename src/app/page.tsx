@@ -25,6 +25,9 @@ export default function Home() {
           What if one equation described reality from quantum to cosmic?
         </h1>
         <p className="hero-subtitle">
+          <strong>The idea, in one line:</strong> every system, from an atom to a galaxy, gets one number between 0 (a crowd of strangers) and 1
+          (a marching band) for how much its parts act together, and that number is computed from how dense the system is. One dial, one
+          equation, every scale.{' '}
           <strong>We proposed this. We tested it. It did not hold as stated. What follows is what we learned.</strong>{' '}
           Read on to watch a big idea get tested in public and lose honestly: which parts turned out to be
           known physics renamed, which parts the data killed, and what that rules out for any theory of the same shape.{' '}
@@ -242,7 +245,7 @@ export default function Home() {
               <strong>2.</strong> Consciousness equation &mdash; <em>Speculative</em> (C&nbsp;&asymp;&nbsp;0.50 threshold untestable as stated)
             </span>
             <span style={{ color: '#ef4444' }}>
-              <strong>3.</strong> Dark matter as incomplete decoherence &mdash; <em>Failed</em> as a mechanism; the galaxy fits that work are MOND in new notation (a reparametrization), and the framework&apos;s own cosmology needs ordinary cold dark matter put in by hand (<Link href="/dark-energy" style={{ color: 'inherit', textDecoration: 'underline' }}>details</Link>); adding a real halo on top of the boost overshoots SPARC by +0.28&nbsp;dex (explorer 2026-09-22). Closest prior art for &ldquo;dark matter that behaves like MOND inside galaxies&rdquo;: superfluid dark matter (Berezhiani &amp; Khoury 2015), which has real dark-matter particles whose superfluid phase produces the MOND-like force inside galaxies; this framework proposes no such particle.
+              <strong>3.</strong> Dark matter as incomplete decoherence &mdash; <em>Failed</em> as a mechanism; the galaxy fits that work are MOND in new notation (a reparametrization), and the framework&apos;s own cosmology needs ordinary cold dark matter put in by hand (<Link href="/dark-energy" style={{ color: 'inherit', textDecoration: 'underline' }}>details on the cosmology page</Link>); adding a real halo on top of the boost overshoots SPARC by +0.28&nbsp;dex (explorer 2026-09-22). Closest prior art for &ldquo;dark matter that behaves like MOND inside galaxies&rdquo;: superfluid dark matter (Berezhiani &amp; Khoury 2015), which has real dark-matter particles whose superfluid phase produces the MOND-like force inside galaxies; this framework proposes no such particle.
             </span>
           </div>
           <span style={{ color: 'var(--color-accent-violet)', fontSize: '0.9rem', marginTop: '0.75rem', display: 'inline-block' }}>

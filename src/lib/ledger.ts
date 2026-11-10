@@ -67,7 +67,27 @@ export const COUNT_RULE_SENTENCE =
  * Printing executed exclusions outside the count as a line beside it gates on the project lead (proposal 2026-11-04).
  */
 export const COUNT_BY_KIND_SENTENCE =
-  'By kind: 3 rows refute content the framework itself asserts, on data (#1 TEST-09 and #2 TEST-10, the boost cap; #3 the γ = 2 pin, a choice among MOND\'s functions at about 2σ); 1 shares its root with MOND (#5 TEST-25: Cassini excludes McGaugh\'s own function too, though MOND\'s δ = 6 escapes near stellar-population M/L at about 1.8σ on SPARC, while the compander needs more than twice that M/L); 1 is a registration the equation could never have met (#4, the environment amplitude); 1 is a construction check, not data (#6 Bell/CHSH). The strongest independent dataset against the boost cap, galaxy weak lensing (KiDS-1000), excludes every Ω_m-based cap; it is recorded on rows #1–#2 rather than as a seventh row because it shares their root. Several executed exclusions of the archive\'s own equations sit outside the count because no failure condition was written before they ran (the covariant dark-energy completions, the density fit at the formula knee, the modified-G reading against lunar laser ranging); whether to print them beside the count is the project lead\'s call.';
+  'By kind (criterion: a row refutes the framework\'s own content on data when the archive asserts the statement for this framework and the kill came from an external dataset, not a simulation): 3 rows refute content the framework itself asserts, on data (#1 TEST-09 and #2 TEST-10, the boost cap; #3 the γ = 2 pin, a choice among MOND\'s functions at about 2σ); 1 shares its root with MOND (#5 TEST-25: Cassini excludes McGaugh\'s own function too, though MOND\'s δ = 6 escapes near stellar-population M/L at about 1.8σ on SPARC, while the compander needs more than twice that M/L); 1 is a registration the equation could never have met (#4, the environment amplitude); 1 is a construction check, not data (#6 Bell/CHSH). The strongest independent dataset against the boost cap, galaxy weak lensing (KiDS-1000), excludes every Ω_m-based cap; it is recorded on rows #1–#2 rather than as a seventh row because it shares their root. Several executed exclusions of the archive\'s own equations sit outside the count because no failure condition was written before they ran (the covariant dark-energy completions, the density fit at the formula knee, the modified-G reading against lunar laser ranging); whether to print them beside the count is the project lead\'s call.';
+
+/**
+ * The lensing leg's two conditions, one sentence (2026-11-10). A researcher simulated-visitor persona pointed out that
+ * /for-researchers says "no light-deflection rule exists" while TEST-10's card and the ledger note use the KiDS lensing RAR
+ * as the "independent leg" that settles the ceiling convention. Reading a lensing g_obs as a dynamical boost assumes light
+ * follows the same effective potential as stars (true by construction in AeST/TeVeS; undefined here). The ×5 is the site's own
+ * allowance (09-25), not Brouwer et al.'s: their fiducial g_bar is stars + cold gas only (Sec. 1 footnote 3, read verbatim
+ * 2026-11-10), so hot gas is not double-counted, but their own footnote allows up to about ×10 at the outer edge, at which
+ * the most permissive cap would pass at 1e-14. Rendered wherever the leg is used to settle anything.
+ */
+export const LENSING_LEG_ASSUMPTION =
+  'Two conditions travel with the lensing leg. (1) It assumes light follows the same effective potential that moves stars, as it does by construction in AeST and TeVeS; this framework has no light-deflection rule (see For Researchers), so the leg is a statement about completions that have one. (2) The "×5 on the baryons" is this site\'s own allowance for every cosmic baryon inside the lensing radius, not a number from Brouwer et al. 2021, whose fiducial g_bar "only takes into account the stellar and cold gas mass" (their footnote 3); their own footnote allows hot gas, dust and missing baryons to raise g_bar by up to about an order of magnitude at the outer edge, and at ×10 the most permissive cap (6.39) passes at 10⁻¹⁴ and fails only at 10⁻¹⁵, where the isolation criterion is least reliable. So the leg settles the TEST-09 convention question only under (1), and the census condition recorded on 2026-10-04 is the paper\'s own.';
+
+/**
+ * What "refutes the framework's own content on outside data" means, defined once (2026-11-10). A technical-writer persona
+ * counted fifteen count sentences and found "only row #2", "3 rows" and "only TEST-10" answering the same question with
+ * three unnamed criteria. They are consistent once the criterion and its scope are printed.
+ */
+export const FRAMEWORK_CONTENT_CRITERION =
+  'A row "refutes the framework\'s own content on outside data" when both hold: (a) the statement killed is one the archive asserts for this framework (not a registered amplitude its own equation cannot produce, as in #4, and not a function it shares with MOND, as in #5), and (b) the kill came from an external dataset the framework did not fit, not from a simulation (which excludes #6). Of all six, three meet it (#1 TEST-09, #2 TEST-10, #3 the γ = 2 pin). Of the four that survive every counting rule on file (#2, #4, #5, #6), only #2 does.';
 
 /**
  * One statement of TEST-25, rendered on every page that gives its status (2026-11-08). A graduate persona found three different

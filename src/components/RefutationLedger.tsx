@@ -1,4 +1,4 @@
-import { COUNT_BY_KIND_SENTENCE, COUNT_MAP_SENTENCE, COUNT_RULE_SENTENCE, REFUTATION_ROWS, REFUTATIONS_EXECUTED, ROOTS_SENTENCE } from '@/lib/ledger';
+import { COUNT_BY_KIND_SENTENCE, COUNT_MAP_SENTENCE, COUNT_RULE_SENTENCE, LENSING_LEG_ASSUMPTION, REFUTATION_ROWS, REFUTATIONS_EXECUTED, ROOTS_SENTENCE } from '@/lib/ledger';
 
 /**
  * One table for "which six?" (2026-09-25). Data lives in src/lib/ledger.ts; change it there.
@@ -72,6 +72,7 @@ export default function RefutationLedger() {
         isolation cuts and neighbouring haloes matter. So the <em>registered</em> TEST-09 kill is convention-dependent, and the
         <em> ceiling it tests</em> is not. The one cap that nearly survives is a floor at &Omega;<sub>b</sub> (cap 1/&Omega;<sub>b</sub> = 20.3, what the floor becomes if there is
         no cold dark matter). On the published KiDS bins that cap is excluded only if hidden baryons are less than about 2&ndash;3&times; stars plus cold gas, and its face-value exclusion sits in the lowest bins, which Brouwer et al. flag for satellite contamination (explorer 2026-10-04); the gas-free classical dwarf spheroidals, which need boosts of 30&ndash;100, carry that kill instead.
+        {' '}<strong style={{ color: '#f59e0b' }}>Conditions (added 2026-11-10):</strong> {LENSING_LEG_ASSUMPTION}{' '}
         Each cap is a ratio built from &Omega;<sub>m</sub>, and &Omega;<sub>m</sub> counts cold dark matter, so which cap is right depends on the
         open dark-matter question (see <a href="#verdict" style={{ color: 'var(--color-accent-blue)' }}>the Verdict</a>) as much as on convention.
         Whether this changes the headline count is the project lead&apos;s decision (&ldquo;dp&rdquo; on this site); the count stays at {REFUTATIONS_EXECUTED}.

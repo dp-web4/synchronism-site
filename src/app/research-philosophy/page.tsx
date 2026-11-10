@@ -217,7 +217,10 @@ export default function ResearchPhilosophy() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>A2ACW</strong> (AI-to-AI Adversarial Collaboration Workshop) is the adversarial
           protocol used to stress-test claims in this framework. Rather than a single AI agent
-          generating and validating its own output, two agents take opposing roles:
+          generating and validating its own output, two agents take opposing roles. (This is the minimal form. The archive&apos;s
+          protocol defines four rotating roles, Primary, Challenger, Observer and Coordinator, described once on the{' '}
+          <Link href="/a2acw" style={{ color: 'var(--color-accent-blue)' }}>A2ACW page</Link>; &ldquo;Defender&rdquo; here is the
+          Primary. Until 2026-11-10 the two pages described the protocol with different role counts and neither said so.)
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', margin: '1rem 0 1.5rem' }}>
           <div className="card" style={{ padding: '0.75rem 1rem' }}>

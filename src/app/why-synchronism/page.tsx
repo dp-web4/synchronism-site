@@ -187,6 +187,13 @@ export default function WhySynchronism() {
               <TermTooltip term="MOND">MOND</TermTooltip>, already explains that number. (MOND tweaks gravity itself instead
               of adding invisible dark matter; it is the benchmark this framework keeps being compared to, and losing to.)
             </p>
+            <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
+              <strong>Why &ldquo;it turned into MOND&rdquo; counts as a loss, not a win:</strong> MOND is a 40-year-old rival. When the
+              galaxy formula is tuned to fit, it becomes MOND&apos;s own formula written in new symbols. Matching a rival exactly shows the
+              new idea can reproduce the old one; it does not show the new idea adds anything. A theory earns its keep by predicting
+              something the rival does not, and here it did not. (Added 2026-11-10 after a first-time reader asked why matching an
+              existing theory was being called a failure.)
+            </p>
             <details style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
               <summary style={{ cursor: 'pointer' }}>The detail, with survey names and statistics</summary>
               Tested against {GALAXIES_RUN} galaxies ({GALAXIES_RUN_BREAKDOWN}) &mdash; but the

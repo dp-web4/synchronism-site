@@ -110,6 +110,20 @@ export default function GalaxyRotation() {
           shows the amplitude reading only; it is not necessarily the framework&apos;s asserted one.
         </div>
 
+        <div id="vflat-twice" style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)', scrollMarginTop: '5rem' }}>
+          <strong style={{ color: '#f59e0b' }}>The published density law is handed V<sub>flat</sub> twice, so it cannot predict a flat curve (stated in one place 2026-11-10).</strong>{' '}
+          The calibration &rho;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2; sets the knee from the galaxy&apos;s asymptotic speed, and the
+          display wiring v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C)&sup2; sets the boost&apos;s amplitude from the same speed. V<sub>flat</sub> is the
+          quantity a rotation-curve law exists to predict. A law whose knee and amplitude are both set by it is handed the answer, so a match
+          would not have counted, and the mismatch it actually produces (C &asymp; 10<sup>&minus;5</sup> at disc densities, a boost at the Sun of
+          3.5&times;10<sup>4</sup> under the division wiring) is a separate failure. The Milky Way knee at this calibration is 1.5&times;10&sup3;
+          M<sub>&#x2609;</sub>/pc&sup3; and DDO 154&apos;s is 64, against disc midplane densities of 0.03&ndash;0.1, so every galaxy sits on the linear
+          branch. This was said in pieces on <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>,{' '}
+          <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link> and the{' '}
+          <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link>; a graduate-physics reader asked for it as one sentence.
+          It is also an MRH violation on the framework&apos;s own terms: C(&rho;(r), M<sub>total</sub>) is not C(&rho;(r)).
+        </div>
+
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           <strong>The literature already contains both this obstruction and its known escapes
           (noted 2026-07-10; corrected 2026-07-27):</strong> density-dependent transitions are a mature
@@ -579,9 +593,14 @@ export default function GalaxyRotation() {
         <div style={{ background: 'rgba(245, 158, 11, 0.07)', border: '1px solid rgba(245, 158, 11, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
           <strong style={{ color: '#f59e0b' }}>Open gap:</strong>{' '}
           This statement has not been formally derived from the framework&apos;s equations.
-          The coherence field couples to density (ρ), not directly to the metric, but the precise
-          relationship between C(ρ) and the effective gravitational action at GW propagation scales
-          has never been written down. Until it is, &ldquo;GW170817 doesn&apos;t apply&rdquo;
+          The coherence field couples to density (ρ), not directly to the metric, and no <em>covariant</em> (relativistic)
+          action containing C(ρ) has been written down, so the relationship between C(ρ) and GW propagation is undefined.
+          (Scope, added 2026-11-10 after a graduate-physics reader found this box contradicting the &ldquo;action-derived L3&rdquo;
+          wiring above: L3&apos;s &mu;<sub>eff</sub> = C + &frac12;xC&prime; comes from varying a <em>non-relativistic</em> Lagrangian in
+          &Phi;, with C(&rho;)|&nabla;&Phi;|&sup2; as its kinetic term and a striction force as its by-product (explorer 2026-10-13). That is a
+          Newtonian action. It says nothing about photons, wave speed or polarization, which is why GW170817, c<sub>T</sub> and lensing
+          are not well-posed questions here; see <Link href="/for-researchers#dynamics-per-branch" style={{ color: 'var(--color-accent-blue)' }}>dynamics per branch</Link>.)
+          Until a covariant action exists, &ldquo;GW170817 doesn&apos;t apply&rdquo;
           is a reasonable expectation but not a proven constraint.
         </div>
 

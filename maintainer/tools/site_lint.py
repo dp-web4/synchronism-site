@@ -32,6 +32,15 @@ RETIRED = [
     (r"by about 3σ and far above", "2026-11-09", "one point on a curve running 0 to +5.8σ across Chae's bin; a σ needs the bin's g_N distribution"),
     (r"closes the last possible EFE discriminator|no live model that both fits", "2026-11-09", "the algebraic EFE-free corner is alive and disfavoured; use EFE_FREE_CORNER_STATUS"),
     (r"catalog-registered", "2026-11-09", "TEST-26 is numbered, not registered"),
+    # Added 2026-11-10 (visitor personas + explorer 11-09; each checked before retiring).
+    (r"Boufourou 2026 lean|and Boufourou 2026 lean", "2026-11-10", "Boufourou 2026 is withdrawn by its author (input was Chae's Newtonian mock); not a DR3 result"),
+    (r"adopt or compare with (that one|Boufourou)", "2026-11-10", "the withdrawn paper's DR4 protocol is not a candidate"),
+    (r"γ-sharp|&#x03B3;-sharp", "2026-11-10", "γ is knee position above 1, not sharpness; the family has no sharp member"),
+    (r"five\s+numbered artifacts", "2026-11-10", "For Researchers numbers six artifacts"),
+    (r"6\.39 included, even with all cosmic baryons counted", "2026-11-10", "the lensing leg carries a deflection-rule condition and Brouwer's own ×10 allowance; use LENSING_LEG_ASSUMPTION"),
+    (r"second, untested wiring of the same equation", "2026-11-10", "plain checkbox label: an alternative way of plugging C in"),
+    (r"visitor persona(’|\')s check on 18 elements", "2026-11-10", "a data page does not cite an unnamed persona as a source; the T_c row is untraced"),
+    (r"simple stand-in built from each galaxy", "2026-11-10", "the plotter's gray line is SPARC's mass model since 2026-11-10"),
     (r"0\.58–0\.59", "2026-11-09", "peak slope vs log-density at γ = 2 is at C = 0.601"),
     (r"the disagreement sits in that one modelling step", "2026-11-09", "the flip is a separation-error setting in S&T's code; the crux is the contaminant fraction", True),
     # --- retired 2026-11-08 (maintainer, visitor 11-08 + explorer 11-07). Literature and verdict sentences that failed against primary

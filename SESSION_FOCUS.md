@@ -1,9 +1,33 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-09 (maintainer)*
+*Last updated: 2026-11-10 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-10): **The lensing leg assumes a light-deflection rule the framework has not written; Brouwer's own allowance is ×10, not ×5. The DR4 plan fails its dry run and cited a withdrawn preprint. The plotter's "visible matter" was the BTFR; rebuilt on SPARC components with a Υ slider.**
+- **Checks:** Brouwer+2021 fn. 3 read verbatim (fiducial g_bar = stars + cold gas; hot gas is a sensitivity case, so ×5 does not double-count, but the paper allows ≈ ×10); Boufourou `CORRECTION.md` read (withdrawn 8 Sep 2026; arXiv v1 silent); Session 62 has no T_c content.
+- **Site:**
+  - `LENSING_LEG_ASSUMPTION` on the ledger note, TEST-10 card, Roadmap, count-rules paragraph; Roadmap no longer says lensing settles the convention;
+  - `FRAMEWORK_CONTENT_CRITERION` stated once; "of those four, only #2; of all six, three";
+  - /wide-binaries: Boufourou withdrawn; status box on the per-star companion rate; DR4 plan addendum "do not adopt as written";
+  - /galaxy-plotter: SPARC V_gas/V_disk/V_bul gray line, Υ_disk slider, MOND now a prediction; stale sentences removed;
+  - /galaxy-rotation: L3 scope (non-relativistic action; no covariant one) and `#vflat-twice`;
+  - /for-researchers: six artifacts; knee exponent leads with "no velocity exponent";
+  - chemistry T_c row untraced; covariant RG provenance; landing idea-before-verdict; MOND-as-rival paragraph; γ-sharp retired; A2ACW roles reconciled; glossary DR4/LCT.
+- **Tools:** lint 322 rules (HEAD control 7). Build passes. Not checked in a browser.
+- **→ Explorer:** `crater-ii-and-dsph-efe-test-for-the-efe-free-corner.md` (free, existing data); `lensing-leg-deflection-rule-and-brouwer-hot-gas-at-x10.md`; `chemistry-tc-vs-theta-d-sourced-table.md`.
+- **→ Next maintainer:**
+  - ρ/γ one-name pass and the label systems (P2 HIGH, carried twice);
+  - landing fold (key, ledger table, methodology);
+  - MOND Comparator (article under "Try It") and Consciousness Demo in the tools index;
+  - verify the plotter slider in a browser if one is available;
+  - the 11-09 carry-overs.
+- **→ Project lead (DR4 is 22 days out):**
+  - does the framework commit to light following the effective potential? (decides whether the lensing leg is unconditional);
+  - DR4 plan: adopt the explorer's revised version or leave as a dated draft; the reading key can be adopted alone;
+  - tell Saad & Ting / Chae et al. (carried), now with the companion-rate content;
+  - Proposal `Synchronism/Research/proposals/lensing_leg_has_no_deflection_law_and_the_dr4_plan_fails_its_dry_run_20261110.md`.
 
 ## 🟢 NEW (maintainer 2026-11-09): **γ = 2 with each law's own Υ is +46 by point, +2.7 by galaxy: about 2σ, and a choice among MOND's functions. a₀′/γ is flat only with γ free (pinned γ = ½ needs H₀ 93 / 71 / 57). DR4 is 23 days out and needs a decision.**
 - **Run:** `maintainer/scripts/gamma2_global_upsilon_per_law.py` (PREREG `5a95614`, reading rule R1; predictions came from the persona's table, so not blind); post-hoc twin +44 / −43.

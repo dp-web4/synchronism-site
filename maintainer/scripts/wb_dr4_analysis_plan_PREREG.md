@@ -57,3 +57,28 @@ Adopting this file means: no changes after adoption except **[check at release]*
 ## Open points for the lead
 - Adopt this, adopt a revised version, or leave it as a dated draft?
 - Boufourou 2026 proposes a pre-registered DR4 protocol of its own. It may be better to adopt or compare with that one. Abstract read only.
+
+## Addendum 2026-11-10 (maintainer): do not adopt as written
+
+The explorer dry-ran this plan on DR3 (PREREG `c31d20e`, finding
+`explorer/findings/dr4-plan-dry-run-returns-no-result-on-dr3-its-calibration-bin-is-a-mond-regime-and-boufourou-is-withdrawn.md`).
+Run as written it returns "Calibration bin fails → no result" on both samples. The body above is left unchanged as the dated draft;
+these are the defects and the tested revisions, for whichever version the lead adopts.
+
+1. **Calibration bin.** g_N > 3×10⁻¹⁰ m/s² is a MOND regime (EFE-free predicts 1.2–1.4 there; EFE taper ≈ 1.1; the rule rejects
+   55 % of EFE-free mocks at N = 150 and 100 % at N = 500). Revise to g_N ≥ 10⁻⁸ m/s² (Chae's Newtonian regime) or s = 0.2–2 kau.
+   S1 has no such systems, so calibrate on Chae's high-acceleration sample.
+2. **Calibration rule.** On the 2D catalogue the > 3 bin reads 1.036–1.047 ± 0.008 and the e-prior systematic is ± 5 %, so
+   "consistent with 1 at 2σ" cannot pass on any large sample. State a systematic tolerance, or read the low bins as a ratio to
+   calibration.
+3. **Outcome table.** Add the row "pooled γ > 1.5, excludes 1" (EFE-free predicts ≈ 2.6 on S1's g distribution). The table above
+   cannot record the outcome it was built to detect.
+4. **S2 instrument.** `wb_estimators.py` needs ΔRV to ≈ 100 m/s; no pair in Chae's 81,880-pair DR3 catalogue has σ(ΔRV) < 0.1 km/s
+   (median 10 km/s). S2 needs a 2D estimator (E2/E3 type, zone-matched noise).
+5. **S1 baseline.** Use the mixture with a physical companion pool (photocentre orbits through the RUWE/CMD/IPD/RV cuts). The
+   no-mixture likelihood reads Newton + F = 0.3 as γ ≈ 2.2.
+6. **Open point withdrawn.** Boufourou 2026's protocol is not a candidate: the author withdrew the paper's observational premises on
+   8 September 2026 (its input was Chae's Newtonian mock; `CORRECTION.md` in `HBoufourou/paperI-wide-binaries`, confirmed read
+   2026-11-10). The arXiv listing carries no notice.
+
+The reading key (`wb_dr4_reading_key_PREREG.md`) is unaffected by any of this and can be adopted on its own.

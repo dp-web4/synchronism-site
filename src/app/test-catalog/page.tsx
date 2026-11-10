@@ -145,7 +145,7 @@ export default function TestCatalog() {
           it does not fire at (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub> (|&Delta;n| = 0.297, strict
           &gt; 0.3) or &Omega;<sub>m</sub>/&Omega;<sub>b</sub> (0.26), so it does not survive its own pre-fixed rule; the
           convention-free results are class exclusions, B<sub>max</sub> &#8818; 5.3 by the BTFR slope and
-          B<sub>max</sub> &#8818; 7.5 at 3&sigma; on one SPARC disc&apos;s outer curve (&asymp; 5.7 after correcting for 153 discs); the weak-lensing RAR (Brouwer+2021) excludes every candidate ceiling, 6.39 included, even with all cosmic baryons counted (<Link href="/honest-assessment#lensing-ceiling" style={{ color: '#f59e0b' }}>details</Link>). Whether TEST-09 stays in the count of 6 is pending the project lead (dp). TEST-09 and TEST-10 would have selected
+          B<sub>max</sub> &#8818; 7.5 at 3&sigma; on one SPARC disc&apos;s outer curve (&asymp; 5.7 after correcting for 153 discs); the weak-lensing RAR (Brouwer+2021) excludes every candidate ceiling, 6.39 included, with the site&apos;s &times;5 baryon allowance, <em>if</em> light follows the same effective potential as stars, a rule this framework has not written, and if hidden baryons are below about &times;10 (<Link href="/honest-assessment#lensing-ceiling" style={{ color: '#f59e0b' }}>conditions and details</Link>; until 2026-11-10 this sentence presented the lensing exclusion as settling the convention question outright). Whether TEST-09 stays in the count of 6 is pending the project lead (dp). TEST-09 and TEST-10 would have selected
           the framework had its boost ceiling held.
           A test that separates two models <em>is</em> discriminating regardless of which one wins. The
           remaining Tier-1 tests are self-eliminating (no outcome selects Synchronism), failed by sign, or
@@ -481,7 +481,9 @@ export default function TestCatalog() {
           calibrations fail all 15 Milky Way dwarf spheroidals by &ge; 3&sigma;, because in spherical symmetry Gauss&apos;s law caps the boost at
           1/&epsilon;<sub>0</sub> exactly (Leo I, which RG keeps in equilibrium, is off by 9&ndash;15&sigma;). Its elliptical calibration is in
           2&ndash;4&sigma; tension on the dwarfs that are in equilibrium under RG (explorer, 2026-10-21). Its published covariant completion (Sanna, Matsakos &amp; Diaferio 2023)
-          fails the Solar System outright: its scalar equation is linear, so it is unscreened &omega; = &minus;1 Brans&ndash;Dicke, with PPN &gamma; = 0
+          fails the Solar System outright on a site computation (explorer 2026-10-22; unpublished, unreviewed, and contrary to the
+          authors&apos; own presentation of the theory as Solar-System viable; the weak-field reduction is in{' '}
+          <a href="https://github.com/dp-web4/synchronism-site/blob/main/explorer/findings/covariant-refracted-gravity-is-omega-minus-one-brans-dicke-fails-cassini-llr-and-never-reproduces-rg.md" style={{ color: 'var(--color-accent-blue)' }}>the finding</a>): its scalar equation is linear, so it is unscreened &omega; = &minus;1 Brans&ndash;Dicke, with PPN &gamma; = 0
           (Cassini, ~4&times;10<sup>4</sup>&sigma;), Nordtvedt &eta; = 1 (lunar ranging, ~2&times;10<sup>3</sup>&sigma;) and |&#x120;/G| &ge; 0.99 H<sub>0</sub> from its own
           cosmology. Its weak field cannot vary the scalar by more than ~10<sup>&minus;4</sup> across a galaxy, so it does not contain RG&apos;s
           permittivity at all. RG therefore

@@ -1,0 +1,18 @@
+Starting Synchronism Maintainer Session at Tue Nov 10 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+Session complete. Both repos are committed and pushed (site `2110d7c`, research `76a139e0`).
+
+**WAKE outcome.** Today's feedback reached the research on two counts, and a proposal went in before any friction fix: `Synchronism/Research/proposals/lensing_leg_has_no_deflection_law_and_the_dr4_plan_fails_its_dry_run_20261110.md`.
+
+- **The lensing leg was settling a question it can only settle under an unstated assumption.** The KiDS weak-lensing RAR has been the "independent leg" deciding whether TEST-09 counts since late September, but reading a lensing g_obs as a dynamical boost needs light to follow the dynamical potential, and the framework has no deflection rule. I had a fetch agent read Brouwer et al. 2021 verbatim: their fiducial baryons are stars plus cold gas only, so the researcher persona's double-count objection fails, but the paper's own footnote allows roughly ×10 of hidden baryons against the site's ×5. At ×10 the most permissive cap survives at 10⁻¹⁴ and fails only at 10⁻¹⁵. Both conditions now render on every surface that uses the leg.
+- **The DR4 plan the lead was asked to adopt returns "no result" on today's data, and it cited a withdrawn preprint.** The explorer's dry run found four defects with tested fixes. Boufourou 2026's withdrawal is confirmed from the author's repository; the site, the plan and the 11-09 proposal all cited it as a DR3 result until today. The reading key still stands. The lead has 22 days.
+
+**Site changes** across 16 files, build passing twice, lint at 322 rules with a clean tree and 7 HEAD-control hits:
+- Galaxy Curve Plotter rebuilt: the gray "visible matter" line had been the BTFR in disguise for eight months. It is now SPARC's measured gas, disc and bulge with a Υ slider, and the MOND line is a real prediction.
+- Framework-content count criterion defined once; "of those four, only #2; of all six, three."
+- L3 "action-derived" scoped against "no action written"; V_flat-used-twice stated in one place; knee exponent reframed as "no velocity exponent"; chemistry T_c row blanked as untraced; covariant RG σ labelled a site computation; landing leads with the idea before the verdict; MOND introduced as the rival; "γ-sharp" retired; glossary DR4 and LCT entries.
+
+**Seeded for the explorer:** Crater II as a free existing-data test of the EFE-free corner, the lensing leg's deflection rule plus a re-run at ×10, and a sourced T_c vs θ_D table.
+
+**Not done:** the ρ/γ one-name pass and label systems (P2 HIGH, carried twice), the landing fold, and nothing was verified in a browser.

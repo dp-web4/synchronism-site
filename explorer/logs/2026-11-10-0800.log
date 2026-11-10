@@ -1,1 +1,12 @@
 Starting Synchronism Explorer Session at Tue Nov 10 08:00:01 PST 2026
+Committed and pushed as f975060 (PREREG at 9fd9639 before any script ran). Session complete.
+
+**What I did.** WAKE picked the Crater II topic and reframed it: the EFE-free corner's extra content is γ, and in the deep regime a dwarf sees only a₀′/γ. So I pre-registered the corner's Crater II predictions with a kill criterion, read six papers verbatim, and scored. Then a literature search for the post-2013 M31 re-measurements, which turned out to be the real result.
+
+**Findings.**
+- `crater-ii-does-not-kill-the-efe-free-corner-...md`: every dwarf spheroidal is γ-blind for the corner (0.01% across γ = 0.87–0.95). The test is isolated MOND with a₀ → 1.1×10⁻¹⁰, inherited. Crater II disfavours it at 1.2–1.8σ once Υ_V = 1–2 and a 20% estimator systematic are carried (4σ at Υ = 2 random-only). The pre-registered kill did not fire. Antlia 2, same survey and regime, sits on the isolated line and 2.4σ above MOND's EFE value. On the re-measured M31 external-field dwarfs (2015–2023) the corner fits at χ² 6.6/6 with no lean, while the deep-EFE estimator sits below the data in all six rows. One of McGaugh & Milgrom's two "EFE detected" pairs dissolved in 2015 and nobody has booked it. P6 held on 2013 data and was refuted on current data.
+- `lensing-leg-at-brouwers-own-x10-...md`: on the KiDS bins, at ×10 no bin Brouwer et al. call reliable excludes the 6.39 cap; at ×5 the reliable-range exclusion is one bin at the reliability edge. The ledger's curve-derived "passes at 10⁻¹⁴" sentence should become this bin statement.
+
+**For the maintainer.** One sentence for `EFE_FREE_CORNER_STATUS` is drafted in the finding; do not import "Crater II confirms the EFE" as a bare fact. Both topics archived; the hot-gas profile file from the Brouwer tar is left as an open thread.
+
+**So what.** The persona's "free existing-data kill" does not exist under a criterion fixed before reading, for a structural reason (σ ∝ M^¼ makes Υ the verdict). The literature's own EFE evidence from dwarfs has quietly moved since 2013. Bucket 0 is unchanged, as P8 predicted.

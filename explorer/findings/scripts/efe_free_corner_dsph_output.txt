@@ -1,0 +1,73 @@
+C1 identity: Crater II sigma_iso at a0=1.2e-10, Upsilon=2: 3.983 km/s (08-23 value 3.98; McGaugh '~4')
+   McGaugh & Milgrom 2013b table at Upsilon=2:  Crater II 3.98/4.0, And XVII 4.50/4.5, And XIX 5.04/5.0, And XXI 5.19/5.2, And XXV 5.65/5.7, And XXIII 6.30/6.4, And XXVIII 4.26/4.3, And XXIX 4.10/4.1, And XXII 2.72/2.7
+C2 gamma-blind: Crater II corner sigma at gamma 0.87/0.90/0.95, Upsilon=2: 3.9031, 3.9029, 3.9027
+   g_N/a_M at r_1/2 = 1.00e-04; finite-x factor on g = 1.0028
+
+=== Corner (gamma = 0.9, a_M = 1.1e-10) vs observed, per Upsilon_V; z random-only and with 20% prefactor systematic
+dwarf      reg     obs                   sigma_obs       U=1                   U=2                   U=4                   sigma_efe(McG)
+Crater II  EFE     Caldwell+17           2.70 +0.30/-0.30   3.28 (+1.9|+0.8)     3.90 (+4.0|+1.4)     4.64 (+6.5|+2.0)    2.1
+Crater II  EFE     Fu+19                 2.70 +0.50/-0.40   3.28 (+1.2|+0.7)     3.90 (+2.4|+1.3)     4.64 (+3.9|+1.8)    2.1
+Crater II  EFE     Ji+21 S5 (grad.)      2.34 +0.42/-0.30   3.28 (+2.2|+1.2)     3.90 (+3.7|+1.8)     4.64 (+5.5|+2.3)    2.1
+Crater II  EFE     Ji+21 S5 (no grad.)   2.43 +0.54/-0.35   3.28 (+1.6|+1.0)     3.90 (+2.7|+1.6)     4.64 (+4.1|+2.1)    2.1
+Antlia 2   EFE     Ji+21 S5 (grad.)      5.98 +0.37/-0.36   4.84 (-3.2|-1.1)     5.76 (-0.6|-0.2)     6.85 (+2.4|+0.6)    2.8
+Antlia 2   EFE     Ji+21 S5 (no grad.)   7.69 +0.40/-0.37   4.84 (-7.7|-2.7)     5.76 (-5.2|-1.6)     6.85 (-2.3|-0.6)    2.8
+And XVII   EFE     Collins+13            2.90 +2.20/-1.90   3.72 (+0.4|+0.4)     4.43 (+0.7|+0.6)     5.28 (+1.1|+1.0)    2.5
+And XIX    EFE     Collins+13            4.70 +1.60/-1.40   4.15 (-0.4|-0.3)     4.94 (+0.1|+0.1)     5.88 (+0.7|+0.6)    2.6
+And XXI    EFE     Collins+13            4.50 +1.20/-1.00   4.28 (-0.2|-0.2)     5.09 (+0.5|+0.4)     6.06 (+1.3|+0.9)    3.7
+And XXV    EFE     Collins+13            3.00 +1.20/-1.10   4.67 (+1.4|+1.1)     5.56 (+2.1|+1.6)     6.62 (+3.0|+2.0)    3.5
+And XXIII  EFE?    Collins+13            7.10 +1.00/-1.00   5.20 (-1.9|-1.3)     6.18 (-0.9|-0.6)     7.37 (+0.3|+0.1)    4.4
+And XXVIII iso     Collins+13            6.60 +2.90/-2.10   3.53 (-1.5|-1.4)     4.21 (-1.1|-1.1)     5.02 (-0.8|-0.7)      -
+And XXVIII iso     Tollerud+13           4.90 +1.60/-1.60   3.53 (-0.9|-0.8)     4.21 (-0.4|-0.4)     5.02 (+0.1|+0.1)      -
+And XXIX   iso/EFE Tollerud+13           5.70 +1.20/-1.20   3.39 (-1.9|-1.7)     4.03 (-1.4|-1.2)     4.80 (-0.7|-0.6)    3.8
+And XXII   iso/EFE Collins+13            2.80 +1.90/-1.40   2.25 (-0.4|-0.4)     2.67 (-0.1|-0.1)     3.18 (+0.2|+0.2)    2.3
+
+=== Crater II: Upsilon_V needed for the corner to pass at 2 sigma (random-only / with 20% sys), per measurement
+  Caldwell+17            sys=0.0: passes at 2 sigma for Upsilon_V <= 1.02
+  Caldwell+17            sys=0.2: passes at 2 sigma for Upsilon_V <= 4.00
+  Fu+19                  sys=0.0: passes at 2 sigma for Upsilon_V <= 1.61
+  Fu+19                  sys=0.2: passes at 2 sigma for Upsilon_V <= 4.00
+  Ji+21 S5 (grad.)       sys=0.0: passes at 2 sigma for Upsilon_V <= 0.88
+  Ji+21 S5 (grad.)       sys=0.2: passes at 2 sigma for Upsilon_V <= 2.75
+  Ji+21 S5 (no grad.)    sys=0.0: passes at 2 sigma for Upsilon_V <= 1.30
+  Ji+21 S5 (no grad.)    sys=0.2: passes at 2 sigma for Upsilon_V <= 3.66
+  (old, [Fe/H] ~ -2 population: McGaugh adopts 2 +2/-1; McGaugh & Wolf 2010 Kroupa mean 1.3; Ji+21 adopt 2.2)
+
+=== Ratio R = sigma_obs / sigma_corner(U=2) against McGaugh's R_efe = sigma_efe / sigma_iso
+dwarf      obs                     R_obs  R_efe   note
+Crater II  Caldwell+17              0.69   0.53   almost certainly stripped (Fu+19); tentative gradient (Ji+21)
+Crater II  Fu+19                    0.69   0.53   almost certainly stripped (Fu+19); tentative gradient (Ji+21)
+Crater II  Ji+21 S5 (grad.)         0.60   0.53   almost certainly stripped (Fu+19); tentative gradient (Ji+21)
+Crater II  Ji+21 S5 (no grad.)      0.62   0.53   almost certainly stripped (Fu+19); tentative gradient (Ji+21)
+Antlia 2   Ji+21 S5 (grad.)         1.04   0.48   clear gradient, >90% stars lost (Ji+21)
+Antlia 2   Ji+21 S5 (no grad.)      1.34   0.48   clear gradient, >90% stars lost (Ji+21)
+And XVII   Collins+13               0.65   0.56   8 stars
+And XIX    Collins+13               0.95   0.52   tentative gradient (Collins+20)
+And XXI    Collins+13               0.88   0.71   
+And XXV    Collins+13               0.54   0.62   
+And XXIII  Collins+13               1.15   0.70   
+
+=== Kill criterion (PREREG): Crater II at Upsilon=1 with 20% sys >= 3 sigma?  Population of EFE-regime rows combined?
+  Crater II Caldwell+17           : U=1, 20% sys: z = +0.80   (U=2: +1.44)
+  Crater II Fu+19                 : U=1, 20% sys: z = +0.70   (U=2: +1.30)
+  Crater II Ji+21 S5 (grad.)      : U=1, 20% sys: z = +1.21   (U=2: +1.76)
+  Crater II Ji+21 S5 (no grad.)   : U=1, 20% sys: z = +1.00   (U=2: +1.55)
+  U=1: EFE-regime rows Crater II(Ji+21) +1.2, Antlia 2(Ji+21) -1.1, And XVII(Collins+13) +0.4, And XIX(Collins+13) -0.3, And XXI(Collins+13) -0.2, And XXV(Collins+13) +1.1
+        chi2 = 4.1 / 6 dof; signed mean z*sqrt(n) = +0.43 (positive = corner over-predicts)
+        sign count: corner above data in 3/6 rows
+  U=2: EFE-regime rows Crater II(Ji+21) +1.8, Antlia 2(Ji+21) -0.2, And XVII(Collins+13) +0.6, And XIX(Collins+13) +0.1, And XXI(Collins+13) +0.4, And XXV(Collins+13) +1.6
+        chi2 = 6.2 / 6 dof; signed mean z*sqrt(n) = +1.75 (positive = corner over-predicts)
+        sign count: corner above data in 5/6 rows
+
+=== 4a. Current M31 numbers (L and r_1/2 updated where the papers updated them); corner at gamma=0.9, a_M=1.1e-10
+dwarf     ref         sigma_obs         corner U=1/2/4          z U=2 (rand|sys)    sigma_efe (rescaled)  z_efe (rand, Ups band)
+And XIX   Collins+20  7.80 +1.70/-1.50    4.89/5.82/6.92          -1.3 |  -1.0        2.68                   -3.4 (-2.6 at Ups=4)
+And XXI   Collins+21  6.10 +1.00/-0.90    3.90/4.64/5.53          -1.6 |  -1.1        2.70                   -3.8 (-2.5 at Ups=4)
+And XXV   Charles+23  3.70 +1.20/-1.10    4.05/4.82/5.74          +0.9 |  +0.7        2.64                   -1.0 (+0.0 at Ups=4)
+And XVII  Collins+15  6.50 +3.30/-2.70    3.72/4.43/5.28          -0.8 |  -0.7        2.50                   -1.5 (-1.1 at Ups=4)
+Crater II Ji+21       2.34 +0.42/-0.30    3.28/3.90/4.64          +3.7 |  +1.8        2.10                   -0.8 (+0.0 at Ups=4)
+Antlia 2  Ji+21       5.98 +0.37/-0.36    4.84/5.76/6.85          -0.6 |  -0.2        2.80                   -8.8 (-5.5 at Ups=4)
+  corner U=2, 20% sys                     : chi2 =   6.6/6; signed mean z*sqrt(n) = -0.24; prediction above data in 2/6
+  corner U=1, 20% sys                     : chi2 =   9.8/6; signed mean z*sqrt(n) = -1.68; prediction above data in 2/6
+  MOND+EFE (rescaled, U=2, random-only)   : chi2 = 107.7/6; signed mean z*sqrt(n) = -7.87; prediction above data in 0/6
+  (And XVII's 16-star sample is flagged contaminated by its authors; And XIX/XXI/XXV authors each flag possible non-equilibrium.)
+  P6 re-scored on current data: the EFE-regime rows are NOT below sigma_iso on average -> P6 REFUTED on the re-measured sample.

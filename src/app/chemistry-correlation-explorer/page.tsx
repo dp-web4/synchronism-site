@@ -226,14 +226,14 @@ export default function ChemistryCorrelationExplorer() {
           that expression, and the regime label says whether the expression rises with &#x03B3; or with 1/&#x03B3;. For example,
           d&#x2083;&#x2083; = +0.940 is the fit d&#x2083;&#x2083; &#x221D; &#x03B3;&nbsp;&times;&nbsp;&#x03B5; (permittivity), whence &ldquo;incoherence helps&rdquo;
           (Synchronism research archive, <code>Research/Chemistry/Phase2_Synthesis.md</code> and <code>Framework_Summary.md</code>,
-          where the piezoelectric result is filed under chemistry session #93). For the specific-heat row (+0.756) the
+          where the piezoelectric result is filed under chemistry session #93). For the specific-heat row the
           expression and sign convention are <strong>not recorded</strong> in the source table: the archive&apos;s heat-capacity
-          entry quotes a different fit (r = &minus;0.988 against the Debye form). Read that row&apos;s sign as unverified.
+          entry quotes a different fit (r = &minus;0.988 against the Debye form). That row now prints &ldquo;&mdash;&rdquo; in the table (it showed +0.756 until 2026-11-09).
         </p>
         <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
           <strong>The top rows are close to one identity, not five correlations (added 2026-10-24, researcher simulated-visitor
           persona).</strong> The phonon proxy &#x03B3;<sub>phonon</sub> = 2T/&#x03B8;<sub>D</sub> contains the Debye temperature, so the
-          &ldquo;Debye temperature, r = +0.948&rdquo; row correlates &#x03B8;<sub>D</sub> with a function of &#x03B8;<sub>D</sub>: high r
+          &ldquo;Debye temperature&rdquo; row (it printed r = +0.948 until 2026-11-09 and now prints &ldquo;&mdash;&rdquo;) correlates &#x03B8;<sub>D</sub> with a function of &#x03B8;<sub>D</sub>: high r
           there is <em>by construction</em>. Sound velocity and the three elastic moduli inherit it, because in the Debye model
           &#x03B8;<sub>D</sub> &#x221D; v<sub>s</sub> and v<sub>s</sub> &#x221D; &#x221A;(modulus/density). Those five rows (marked in the table) are one
           definitional relation seen five ways. They show how a high r arises, which is this page&apos;s lesson; they are not

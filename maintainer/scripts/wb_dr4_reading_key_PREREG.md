@@ -57,3 +57,20 @@ The band below is the Galactic field g_e = 1.6–2.2×10⁻¹⁰ m/s². The asym
 - It cannot rescue the density branch. That branch is identically null in the same-instant ratio and is excluded by SPARC
   (+2843) and by lunar laser ranging.
 - The live question DR4 does decide is MOND's, the Banik vs Chae dispute.
+
+## Addendum 2026-11-11 (before any DR4 analysis exists): the algebraic "EFE-free corner" row
+A researcher simulated-visitor persona pointed out that the table above covers the QUMOND boost only, while the site says
+the algebraic corner (γ ≈ 0.87–0.95) "can still be killed by DR4". The corner has two readings, and they predict different
+things (`efe_free_corner_which_acceleration.py`, PREREG `3d53a42`, output on file):
+
+| reading of the argument of C | boost in g at wide-binary accelerations | status before DR4 |
+|---|---|---|
+| (I) internal relative acceleration of the pair | rises as the internal acceleration falls: 1.48 at g_N = 1.0×10⁻¹⁰ m/s², 2.69 at 0.2×10⁻¹⁰ (γ = 0.90); no levelling off | needs a rule for which bodies form the system; none is written |
+| (T) each star's total acceleration | orientation-averaged 1.17–1.30 for γ = 0.87–0.95 and g_e = 1.6–2.2×10⁻¹⁰, flat in internal acceleration (same expression as the QUMOND rows above) | excluded by the planets: Saturn's perihelion would turn by about −85,000 mas/cy against −0.32 ± 0.47 |
+
+Reading rule for the corner, fixed now:
+- A boost that keeps rising below g_N ≈ 10⁻¹⁰ m/s², reaching 2 or more by 0.3×10⁻¹⁰, is what reading (I) predicts. A boost
+  that is flat at 1.2–1.5 across the low-acceleration bins, or absent, kills reading (I).
+- Reading (T) is not tested by DR4; it is already excluded.
+- Neither outcome can move Bucket 0: reading (I) with a rising boost is isolated MOND without an external field effect,
+  not a prediction of this framework alone.

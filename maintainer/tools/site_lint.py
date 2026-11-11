@@ -23,6 +23,16 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-11 (visitor personas; each traced or recomputed before retiring).
+    (r"expert review|expert-review point|independent expert reviews|four independent reviews", "2026-11-11", "every credited review was a simulated-visitor persona (AI); traced through git and the visitor logs of 07-18/23/24"),
+    (r"how sudden the switch is|how sharp its S-curve is|= sharper, more abrupt snap", "2026-11-11", "γ sets how early C rises; it narrows the rise modestly up to γ ≈ 1 and no value makes it sudden"),
+    (r"0\.489[^\n]{0,40}2(\.2)?% from|is 2(\.2)?% away", "2026-11-11", "0.489 ± 0.11 (0.43–0.95 with nuisances refit) is consistent with ½; a % of central values is not a distance"),
+    (r"McGaugh et al\. 2016 measured value", "2026-11-11", "0.057 dex is Li, Lelli, McGaugh & Schombert 2018 (M/L, D, i fitted per galaxy), abstract read 2026-11-11"),
+    (r"&gt; 5\.9 E<sub>Pl", "2026-11-11", "LHAASO abstract (arXiv:2402.06009): E_QG,1 > 10 E_Pl; 5.9 had no source on file"),
+    (r"all three candidate (conventions|choices)", "2026-11-11", "lensing excludes the framework's own cap under either reading of light, the 6.39 cap only if hidden baryons < ~6×; use LENSING_LEG_ASSUMPTION"),
+    (r"See the 6 Protocols", "2026-11-11", "the page's own badge says they are not protocols: 6 proposed tests, 2 run, 4 never run"),
+    (r"8 \"independent\" approaches|eight &ldquo;independent&rdquo; approaches", "2026-11-11", "the Consciousness Demo has seven approaches; the eighth has nothing to measure"),
+    (r"alive, disfavoured, not novel", "2026-11-11", "the EFE-free corner is not a defined model until the argument of C is specified; use EFE_FREE_CORNER_STATUS"),
     # Added 2026-11-09 (visitor personas; each checked before retiring).
     (r"Pin γ=2 → refuted|Fit γ → MOND", "2026-11-09", "every γ is a MOND μ; γ = 2 vs McGaugh selects among MOND's functions"),
     (r"matches no MOND function", "2026-11-09", "tanh(γx) has the right limits for a μ; it only leaves the simple-μ family"),
@@ -653,6 +663,9 @@ REQUIRES = [
     # Added 2026-10-30: the EFE-free corner gamma ~ 0.87-0.95 is closed by the GC statistic (10.6 sigma vs MOND+EFE, pre-registered).
     (r"0\.87(&ndash;|–)0\.95", r"clos(ed|es)|globular|cluster|GC",
      "2026-10-30", "EFE-free corner gamma 0.87-0.95: name the globular-cluster result (~3 sigma disfavoured, mass-model conditional, 2026-10-31; not 'closed')"),
+    # Added 2026-11-11: RG's published parameters were run on SPARC, not on the sample they were fitted to.
+    (r"&chi;&sup2;/N = 188", r"not as a property|DiskMass fits",
+     "2026-11-11", "RG at its published parameters: say it is this site's solver on another sample, with no reproduction of the published fits", 6),
     # Added 2026-11-07 (explorer 2026-11-06): MOND's delta = 4 Cassini pass held a0 fixed. Any delta = 4 / delta >= 4 near Cassini
     #     must say whether a0 was fixed or refit.
     (r"(δ|&delta;) (≥|=|&ge;) 4", r"refit|profiled|fixed|held",

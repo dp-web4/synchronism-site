@@ -1,4 +1,4 @@
-import { COUNT_BY_KIND_SENTENCE, COUNT_MAP_SENTENCE, COUNT_RULE_SENTENCE, LENSING_LEG_ASSUMPTION, REFUTATION_ROWS, REFUTATIONS_EXECUTED, ROOTS_SENTENCE } from '@/lib/ledger';
+import { COUNT_BY_KIND_SENTENCE, COUNT_MAP_SENTENCE, COUNT_RULE_SENTENCE, LENSING_LEG_ASSUMPTION, REFUTATION_ROWS, REFUTATIONS_EXECUTED, ROOTS_SENTENCE, TEST10_ONE_STATEMENT } from '@/lib/ledger';
 
 /**
  * One table for "which six?" (2026-09-25). Data lives in src/lib/ledger.ts; change it there.
@@ -58,13 +58,16 @@ export default function RefutationLedger() {
           </tbody>
         </table>
       </div>
+      <p id="test10-one-statement" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch', marginTop: '0.9rem', scrollMarginTop: '5rem' }}>
+        <strong style={{ color: '#f87171' }}>Note on #2 (added 2026-11-11).</strong> {TEST10_ONE_STATEMENT}
+      </p>
       <p id="lensing-ceiling" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', maxWidth: '75ch', marginTop: '0.9rem', scrollMarginTop: '5rem' }}>
         <strong style={{ color: '#f87171' }}>Note on #1&ndash;#2: the convention question has a data answer (added 2026-09-25).</strong>{' '}
         On SPARC, whether the cap kills depends on which cosmic ratio sets it: 1/&Omega;<sub>m</sub> = 3.17 (the site&apos;s),
         (&Omega;<sub>m</sub>&minus;&Omega;<sub>b</sub>)/&Omega;<sub>b</sub> = 5.39, or &Omega;<sub>m</sub>/&Omega;<sub>b</sub> = 6.39.
         Galaxy&ndash;galaxy weak lensing reaches far lower accelerations than rotation curves. The KiDS-1000 lensing RAR
         (Brouwer et al. 2021, A&amp;A 650, A113) follows the extrapolated MOND branch down to g<sub>bar</sub> &asymp; 10<sup>&minus;15</sup> m/s&sup2;,
-        where the boost the data require is about 110 at 10<sup>&minus;14</sup> and 350 at 10<sup>&minus;15</sup>.
+        where the boost the data require is about 110 at 10<sup>&minus;14</sup> and 350 at 10<sup>&minus;15</sup> (these two figures and the next three sentences are read off the fitted MOND curve; the published bins, which change the picture for the most permissive cap, are in the conditions below).
         Hidden hot gas lowers the required boost in proportion to the extra mass. Grant a 0.3 dex allowance below the MOND branch
         and put every cosmic baryon inside the lensing radius (&times;5 on the baryons), and the requirement at 10<sup>&minus;14</sup>
         is still 11: <strong>1.7&times; the most permissive cap (6.39), 3.5&times; the site&apos;s</strong>. At 10<sup>&minus;13</sup> the same allowance

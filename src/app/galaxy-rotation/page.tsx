@@ -7,7 +7,7 @@ import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import EquationDisplay from '@/components/EquationDisplay';
-import { GALAXIES_RUN, GALAXIES_RUN_BREAKDOWN, GALAXIES_MECHANISM, TEST25_STATUS_SENTENCE, GAMMA2_OWN_UPSILON_SENTENCE } from '@/lib/ledger';
+import { GALAXIES_RUN, GALAXIES_RUN_BREAKDOWN, GALAXIES_MECHANISM, TEST25_STATUS_SENTENCE, GAMMA2_OWN_UPSILON_SENTENCE, DBIC2843_SPEC } from '@/lib/ledger';
 
 export default function GalaxyRotation() {
   return (
@@ -17,6 +17,7 @@ export default function GalaxyRotation() {
       <h1>Galaxy Rotation Curves</h1>
       <ValidationBadge status="failed" label="Failed — density-keyed form ΔBIC +2843; γ = 2 compander disfavoured at about 2σ: ΔBIC ≈ +11 at galaxy level and +184 by point with Υ frozen, +2.7 and +46 with each law's own Υ" />{' '}
       <ValidationBadge status="reparametrization" label="Acceleration-keyed fit is a MOND μ at every γ; MOND's simple μ exactly at γ = ½" />
+      <p id="dbic2843-spec" style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', margin: '0.5rem 0 0.75rem', maxWidth: '75ch', scrollMarginTop: '5rem' }}>{DBIC2843_SPEC}</p>
       <div id="gamma-half-nesting" style={{ fontSize: '0.88rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #f59e0b', paddingLeft: '0.75rem', margin: '0.75rem 0 1rem', scrollMarginTop: '5rem' }}>
         <strong>&#x03B3; &asymp; &frac12; twice is not a cross-sector agreement.</strong> At &#x03B3; = &frac12; the function satisfies
         1/C &minus; 1 = 2/x exactly. Keyed on acceleration (the galaxy fit&apos;s variable) that is MOND&apos;s simple interpolating function;
@@ -156,7 +157,7 @@ export default function GalaxyRotation() {
               {' '}<a href="http://astroweb.cwru.edu/SPARC/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)', fontSize: '0.8rem' }}>[Public data]</a>
             </p>
             <ul style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <li>Tight RAR confirmed (&#x03C3;<sub>int</sub> &#x2248; 0.057 dex) — <em>McGaugh et al. 2016 measured value, restated</em></li>
+              <li>Tight RAR: 0.057 dex rms residual once each galaxy&apos;s M/L, distance and inclination are fitted — <em>Li, Lelli, McGaugh &amp; Schombert 2018 (arXiv:1803.00022, abstract read 2026-11-11), a literature value restated here, not a result of this framework. It is not comparable to this page&apos;s 0.1437 dex, which holds those three fixed. Until 2026-11-11 this line credited McGaugh et al. 2016 and said &ldquo;confirmed&rdquo;.</em></li>
               <li>The coherence function fits within the scatter only at free &#x03B3;&nbsp;&#x2248;&nbsp;0.49, where it is MOND&apos;s simple &#x03BC; (inherited, not a Synchronism result). The framework&apos;s pinned &#x03B3;&nbsp;=&nbsp;2 is disfavoured: &Delta;BIC&nbsp;&#x2248;&nbsp;+11 with the galaxy as the unit (1.6σ by galaxy-level cross-validation with Υ, D, i frozen; 1.9&ndash;2.3σ with them refitted per galaxy), at the threshold, not decisive. Read as points treated independently, it is +184.</li>
               <li>Environment dependence: <strong>null</strong>. The 2026-07-14 environment run (Tier 1 TEST-03s; the archive numbers it S177 / TEST-08) gives r&sup2;&nbsp;=&nbsp;0.0001 (N&nbsp;=&nbsp;141, p&nbsp;=&nbsp;0.89) against a registered prediction of &gt;&nbsp;20% of the scatter and a kill bar of r&sup2;&nbsp;&lt;&nbsp;0.09, so the kill fired (see <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>). These two bullets read &ldquo;fits within observational scatter&rdquo; and &ldquo;environment effects visible&rdquo; until 2026-09-27.</li>
             </ul>
@@ -445,7 +446,7 @@ export default function GalaxyRotation() {
             at &#x03B3; = &frac12; one gets g<sub>obs</sub> = g<sub>bar</sub> + 2a&#x2080;&prime;, a constant acceleration offset (v&sup2; rising linearly
             with r), not a flat curve and not MOND: at g<sub>bar</sub>/a&#x2080;&prime; = 0.01 the &#x03BC;-form gives g<sub>obs</sub>/a&#x2080;&prime; = 0.147
             (deep-MOND &radic;(2x) = 0.141) while the g<sub>bar</sub>-keyed division gives 2.01. The &ldquo;g<sub>obs</sub> = g<sub>bar</sub>/C&rdquo;
-            written elsewhere on this page is the floored TEST-09/10 form, a different function. The free-&#x03B3; SPARC fit lands at <strong>0.489, which is 2% from the
+            written elsewhere on this page is the floored TEST-09/10 form, a different function. The free-&#x03B3; SPARC fit lands at <strong>0.489 &plusmn; 0.11 at &Upsilon; = 0.5 (0.43&ndash;0.95 once the nuisances are refit), consistent with the
             unique &#x03B3; at which this model does not resemble MOND but <em>is</em> MOND.</strong> The same
             cancellation runs the cosmology sector: at &#x03B3; = &frac12;, (1&minus;C)/C = 2/x, so the substituted
             dark-energy density &#x03C1;<sub>DE</sub> = &#x03C1;<sub>m</sub>(1&minus;C)/C = 2&#x03C1;<sub>crit</sub>{' '}
@@ -587,8 +588,8 @@ export default function GalaxyRotation() {
           <strong>Synchronism&apos;s posture:</strong> The coherence function C(&#x03C1;) is not a tensor-vector-scalar
           theory and does not introduce new propagating tensor degrees of freedom.
           It does not modify the graviton kinetic term or introduce derivative couplings of a scalar
-          to the metric that would change gravitational wave speed. Therefore the framework&apos;s
-          prediction is c<sub>GW</sub> = c by construction, and GW170817 does not apply.
+          to the metric that would change gravitational wave speed. That is a description of what has not been written, not a prediction. GW170817 bounds |c<sub>T</sub>/c &minus; 1| below ~10<sup>&minus;15</sup>; the framework has no relativistic completion, and its one radiative model (scalar inflow) is already refuted for having no spin-2 waves, so c<sub>T</sub> = c is an unaddressed constraint, not a passed one. (Until 2026-11-11 this paragraph ended: the framework&apos;s
+          prediction is c<sub>GW</sub> = c by construction, and GW170817 does not apply. That was wrong; the Honest Assessment statement is the one kept.)
         </p>
         <div style={{ background: 'rgba(245, 158, 11, 0.07)', border: '1px solid rgba(245, 158, 11, 0.25)', borderRadius: '0.375rem', padding: '0.7rem 1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
           <strong style={{ color: '#f59e0b' }}>Open gap:</strong>{' '}

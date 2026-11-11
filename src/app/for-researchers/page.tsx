@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
+import { THIRD_PARTY_CLAIM_LABEL } from '@/lib/ledger';
 
 export const metadata: Metadata = {
   title: 'For Researchers: What\'s Citable',
@@ -211,7 +212,7 @@ export default function ForResearchers() {
           observed acceleration as an implicit &mu;: the RAR shape fit (&gamma; = 0.489; &Delta;BIC +184 by point at
           &gamma; = 2, &asymp; +11 by galaxy, both at &Upsilon; = 0.5; +46 and +2.7 with each law&apos;s own global &Upsilon;) and the Cassini squeeze (TEST-25).{' '}
           <strong>C<sub>a</sub></strong> = &Omega;<sub>m</sub> + (1 &minus; &Omega;<sub>m</sub>)&middot;x/(1+x),
-          x = (g<sub>bar</sub>/a&#x2080;)<sup>1/&phi;</sup>, evaluated explicitly at g<sub>bar</sub>: a floored simple-&mu;
+          x = (g<sub>bar</sub>/a&#x2080;)<sup>1/&phi;</sup> (&phi; = 1.618, the golden ratio; the exponent 0.618 was fitted and then named), evaluated explicitly at g<sub>bar</sub>: a floored simple-&mu;
           with an asserted exponent that no archive document derives (the 2026-09-17 check found the TEST-09 kill does not
           depend on it). <em>This</em>, not the headline equation, is what the two framework-specific refutations (TEST-09,
           TEST-10) ran on, and its floor 1/&Omega;<sub>m</sub> = 3.17 is the one structural difference from MOND. A reader
@@ -234,8 +235,8 @@ export default function ForResearchers() {
           boost ceiling B<sub>max</sub>&nbsp;=&nbsp;1/&Omega;<sub>m</sub>. <strong>TEST-09 is convention-dependent; TEST-10 is
           not.</strong> TEST-09 does not fire at the baryon-budget ceilings in the 2026-09-18 sweep (|&Delta;n| = 0.297 and 0.260
           against a strict &gt;&nbsp;0.3), so its convention-free content is that a bounded boost with
-          B<sub>max</sub>&nbsp;&#8818;&nbsp;5.3 is excluded. TEST-10 fires at every candidate ceiling (B<sub>max</sub>&nbsp;&#8818;&nbsp;14
-          excluded by SPARC dwarfs), conditional on the gas census. Whether TEST-09 stays in the count of 6 is pending
+          B<sub>max</sub>&nbsp;&#8818;&nbsp;5.3 is excluded. TEST-10 exceeds every candidate ceiling at face value (as a bound, B<sub>max</sub>&nbsp;&#8818;&nbsp;7.5 at 3&sigma; from one disc, about 5.7 after correcting for 153 discs; the &ldquo;&#8818;&nbsp;14 excluded by SPARC dwarfs&rdquo; printed here until 2026-11-11 was one disc&apos;s maximum, not a bound),
+          conditional on the gas census (<Link href="/honest-assessment#test10-one-statement" style={{ color: 'var(--color-accent-blue)' }}>TEST-10 in one statement</Link>). Whether TEST-09 stays in the count of 6 is pending
           the project lead; TEST-10 is in the rule-independent floor.
           What remains citable are <strong>replications,
           quantified instances of known results, and executed negative results</strong> — the six
@@ -388,7 +389,7 @@ export default function ForResearchers() {
           <em>this framework&apos;s</em> switch (&gamma; = 0.489 or 2) at RG&apos;s floor, so they are not a test of Refracted
           Gravity. RG at its <em>own</em> published parameters was run with the same solver on 2026-08-28, without refitting:
           &chi;&sup2;/N = 188 and 240 for the two DiskMass parameter sets (between MOND&apos;s 21 and Newton&apos;s 465) and
-          716&ndash;1,252 for the elliptical-galaxy (E0) sets of Cesare et al. 2022, beating MOND in 10&ndash;17% of galaxies. Still open: a
+          716&ndash;1,252 for the elliptical-galaxy (E0) sets of Cesare et al. 2022, beating MOND in 10&ndash;17% of galaxies. <strong>Read these as &ldquo;our solver, on another sample&rdquo;, not as a property of Refracted Gravity:</strong> the parameters were fitted by their authors to the DiskMass Survey with their own mass models and mass-to-light ratios (Cesare et al. 2020; that paper was not re-read for this note), and were transplanted here to SPARC discs at fixed M/L. This site has not reproduced the published DiskMass fits with the authors&apos; setup, which is the control that would have to come first. {THIRD_PARTY_CLAIM_LABEL} Still open: a
           SPARC <em>refit</em> of RG&apos;s three parameters (its steepness exponent is written with ln in some papers and log
           in others, a 2.3&times; ambiguity), and the striction force a variational completion of the field equation adds,
           which neither RG as published nor these runs include. <em>Prior art worth knowing before anyone re-runs this:</em> Cesare et al. 2020
@@ -726,7 +727,7 @@ export default function ForResearchers() {
               The substrate dispersion relation is even in k (lattice reflection symmetry), so the leading
               LIV correction is <em>quadratic</em> (n=2) — no linear (n=1) term. Current GRB time-of-flight
               bounds put n=1 LIV <em>above</em> the Planck scale (LHAASO GRB 221009A 2024:
-              E<sub>QG,1</sub> &gt; 5.9 E<sub>Pl</sub>; Fermi-LAT: &gt; 7.6 E<sub>Pl</sub>).
+              E<sub>QG,1</sub> &gt; 10 E<sub>Pl</sub> at 95% confidence, arXiv:2402.06009 abstract, read 2026-11-11; this page said 5.9 until then, a figure with no source on file; Fermi-LAT: &gt; 7.6 E<sub>Pl</sub>, not re-read).
               <em>Note: Lock 1 holds only if the substrate has reflection symmetry. A parity-breaking
               discretization restores the n=1 term — which is already refuted. The choice of
               even-k symmetry is an assumption, not a derivation.</em>
@@ -1031,7 +1032,7 @@ export default function ForResearchers() {
             &#x2113; = 1&ndash;10 pc the second factor is 2&times;10<sup>&minus;6</sup> to 2&times;10<sup>&minus;5</sup> yr<sup>&minus;1</sup>. Lunar
             laser ranging gives &#x0120;/G = (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> yr<sup>&minus;1</sup> (Hofmann &amp; M&uuml;ller 2018),
             so <strong>|d ln G<sub>eff</sub>/d ln &rho;<sub>s</sub>| &#x2272; 4&times;10<sup>&minus;9</sup> to 4&times;10<sup>&minus;8</sup></strong>
-            &mdash; eight to nine orders below an O(1) sensitivity. In the small-x regime of this framework&apos;s C, d ln C/d ln &rho; = 1,
+            &mdash; eight to nine orders below an O(1) sensitivity. <strong>Which density carries that gradient matters, and a referee will ask:</strong> an e-fold over 1&ndash;10 pc is the lumpy part of &rho;<sub>s</sub>, the individual stars and gas clouds that pass through the smoothing volume. If &rho;<sub>s</sub> is the total mass density and is smooth over 100 pc or more, the bound weakens by about 100, to &#x2272; 4&times;10<sup>&minus;7</sup>&ndash;4&times;10<sup>&minus;6</sup>, still six orders below O(1). In the small-x regime of this framework&apos;s C, d ln C/d ln &rho; = 1,
             so the whole gradient lands on &#x0120;/G.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>

@@ -11,7 +11,7 @@ const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: Re
   {
     claim: 'A Theory of Everything',
     plain: 'It does not replace today\'s theories of particles or gravity; it offers a different picture of what might sit underneath them.',
-    reality: 'Synchronism does not replace the Standard Model, QFT, or GR. It proposes a different ontology — that quantum phenomena are synchronization phenomena — which reproduces known results and makes a few predictions those theories don\'t. Whether that ontological reframe reveals something real or is just useful notation is the open question.',
+    reality: 'Synchronism does not replace the Standard Model, QFT, or GR. It proposes a different ontology — that quantum phenomena are synchronization phenomena — which reproduces known results. The few predictions that differed from those theories have failed, turned out to be earlier work, or have not been committed to. Whether that ontological reframe reveals something real or is just useful notation is the open question.',
   },
   {
     claim: 'About quantum coherence',
@@ -239,10 +239,13 @@ export default function WhatSynchronismIsNot() {
         <h2>The Distinguishing-Experiment Question</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           For a physics audience, the classification question is specific: <em>Is there one equation, regime, or
-          measurement where Synchronism predicts something that MOND + ΛCDM + decoherence does not?</em> As of May 2026,
-          the honest answer is: not yet confirmed, and TEST-02 is a triple-conditional placeholder
-          (disputed anomaly + EFE-degenerate + knee-conditional amplitude) rather than a standing discriminator.
-          Until a condition of the triple stack resolves, the framework&apos;s contribution is interpretive and methodological,
+          measurement where Synchronism predicts something that MOND + ΛCDM + decoherence does not?</em> As of November 2026,
+          the honest answer is no: no registered test has an outcome that would select this framework over those three
+          (<Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link> lists each one). TEST-02, the wide-binary test this paragraph used to
+          hold up as the candidate, was re-described on 2026-09-17: the density-keyed branch predicts no signal at all in the ratio it
+          measures, and the acceleration-keyed branch is a member of MOND&apos;s family that solar-system data already exclude, so{' '}
+          <Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>Gaia DR4</Link> settles a question about MOND, not about this framework.
+          The framework&apos;s contribution is interpretive and methodological,
           not empirically novel. That&apos;s a real contribution — just not the one the landing page implies.
         </p>
 

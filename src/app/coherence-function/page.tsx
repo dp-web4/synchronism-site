@@ -71,7 +71,7 @@ export default function CoherenceFunction() {
           &mdash; MOND&apos;s simple interpolating function &#x03BC;<sub>simple</sub>(u) = u/(1+u), <strong>identically,
           for all x</strong>, not asymptotically. &#x03B3;&nbsp;=&nbsp;1/2 is the exact algebraic MOND point of
           this function family. The free-&#x03B3; SPARC fit in the table below independently lands at
-          &#x03B3;&nbsp;=&nbsp;0.489 &mdash; 2.2% from that point. This is the executed form-selection table
+          &#x03B3;&nbsp;=&nbsp;0.489 &plusmn; 0.11 (statistical, at &Upsilon; = 0.5; 0.43&ndash;0.95 once the nuisances are refit) &mdash; consistent with that point. This is the executed form-selection table
           (below) reporting the <em>same</em> parameter two ways: its independently-fitted Hill exponent
           n&nbsp;=&nbsp;0.975 and this page&apos;s 2&#x03B3;&nbsp;=&nbsp;0.978 agree to 0.3% because they are the
           same quantity, and the table&apos;s best-scoring simple form is Hill with n&nbsp;=&nbsp;1 exactly &mdash;
@@ -170,7 +170,7 @@ export default function CoherenceFunction() {
                 </tr>
                 <tr style={{ verticalAlign: 'top' }}>
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}><strong>C<sub>a</sub></strong> (the ceiling)</td>
-                  <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>&#x03A9;<sub>m</sub> + (1&minus;&#x03A9;<sub>m</sub>)&middot;x/(1+x), x = (g<sub>bar</sub>/a&#x2080;)<sup>1/&phi;</sup>; no tanh, no &#x03B3;</td>
+                  <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>&#x03A9;<sub>m</sub> + (1&minus;&#x03A9;<sub>m</sub>)&middot;x/(1+x), x = (g<sub>bar</sub>/a&#x2080;)<sup>1/&phi;</sup> (&phi; = 1.618, the golden ratio; exponent 0.618, fitted then named); no tanh, no &#x03B3;</td>
                   <td style={{ padding: '0.25rem 0.6rem 0.25rem 0' }}>baryonic acceleration</td>
                   <td style={{ padding: '0.25rem 0' }}>TEST-09 (BTFR slope) and TEST-10 (dark-matter fraction), the boost-ceiling kills</td>
                 </tr>

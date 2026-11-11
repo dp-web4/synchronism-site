@@ -887,9 +887,7 @@ export default function GalaxyPlotter() {
         </div>
 
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-          Note: Curves shown are simplified models for illustration. Actual SPARC fits use
-          full surface brightness profiles and mass-to-light ratios. See the research data for
-          precise fits.
+          Note: the points and the gray line are SPARC&apos;s own tables (since 2026-10-26 and 2026-11-10). The MOND line uses one a&#x2080; = 1.2&times;10<sup>&minus;10</sup> m/s&sup2; and the simple interpolating function for every galaxy, with no external field and no distance or inclination uncertainty. The fits quoted elsewhere on the site vary those; this chart does not.
         </p>
       </section>
 

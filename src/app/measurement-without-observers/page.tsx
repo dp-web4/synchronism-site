@@ -23,7 +23,7 @@ export default function MeasurementWithoutObservers() {
         theory; the page delivers a reading of one.
       </p>
       <p style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
-        <strong style={{ color: '#f59e0b' }}>Badge caveat (2026-07-24, from expert review):</strong> this page&apos;s
+        <strong style={{ color: '#f59e0b' }}>Badge caveat (2026-07-24, from a simulated-visitor persona, an AI pass):</strong> this page&apos;s
         badge previously read &ldquo;6 Testable Protocols&rdquo; unqualified — but the framework-wide finding on{' '}
         <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link> is that no
         calibration procedure maps any real apparatus to &#x03B3; or N<sub>corr</sub>. A protocol that cannot specify
@@ -212,7 +212,7 @@ export default function MeasurementWithoutObservers() {
             Next: The Observer Problem &rarr;
           </Link>
           <Link href="/quantum-predictions" className="btn-secondary">
-            See the 6 Protocols
+            See the 6 proposed tests (2 run, 4 never run)
           </Link>
         </div>
       </section>

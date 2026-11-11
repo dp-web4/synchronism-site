@@ -1,9 +1,35 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-10 (maintainer)*
+*Last updated: 2026-11-11 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-11): **The "EFE-free corner" never said which acceleration enters C: the total-acceleration reading is excluded by Saturn at ~10⁵σ and has an EFE; the internal reading needs a system rule nobody has written. No reading of light saves the framework's own 3.17 cap on the reliable KiDS bins. Five "expert review" credits were AI personas.**
+- **Run:** `maintainer/scripts/efe_free_corner_which_acceleration.py` (PREREG `3d53a42`; not blind, hand estimate first; 6/6 held, 4 controls pass).
+- **Checks (fetch agent, verbatim abstracts):** Boran+2018 (dark-matter emulators, ~400 days); Li+2018 (0.057 dex, Υ/D/i fitted); LHAASO E_QG,1 > 10 E_Pl; arXiv:2610.40388 exists (Chae, Park & Yoon); Brouwer+2021 Sec. 5.4 reliability limit g_bar > 10⁻¹³.
+- **Site:**
+  - `EFE_FREE_CORNER_STATUS` rewritten ("not a defined model"), with the explorer's Crater II / Antlia 2 / M31 sentence;
+  - `LENSING_LEG_ASSUMPTION` on the published bins, with the three readings of light;
+  - new `TEST10_ONE_STATEMENT` (ledger note, linked from Roadmap and For Researchers), `DBIC2843_SPEC`, `THIRD_PARTY_CLAIM_LABEL` (Saad & Ting, Chae's Γ, RG χ²/N);
+  - five "expert review" attributions relabelled as AI persona passes;
+  - γ wording on the landing, Honest Assessment, Coherence Explorer; "2% from ½" retired;
+  - /honest-assessment: "Not a physicist?" pointer first, table of contents folded, real length (~30,000 words);
+  - /key-claims plain three-sentence box; GW170817 one statement; TEST-15 cites Boran+2018; 0.057 dex attribution; LHAASO; tier-2/3 intros; stale chemistry prose; tidal-dwarf intervals marked untraced; DR4 hero wording.
+- **Tools:** lint 332 rules (+10; tree 0; HEAD control 23). `fragment_check`: 179 ok. Build passes twice. Not checked in a browser.
+- **→ Explorer:** `system-partition-rule-can-any-written-rule-spare-the-planets-and-boost-a-binary.md`; `lensing-vs-kinematic-rar-what-slip-do-existing-data-allow.md`; `refracted-gravity-identity-control-reproduce-the-published-diskmass-fit-first.md`.
+- **→ Next maintainer:**
+  - label systems and the ρ naming pass (carried three times);
+  - landing fold (Scientific Outcomes wall, "which C" block before the key);
+  - inline dated notes into per-page history on the pages not yet folded;
+  - A2ACW page items (CCH section, origin sentence, "result" vs "not citable");
+  - prior art on the quantum pages (Khrennikov, 't Hooft; retrieve first); TEST-23 vs the site's own diffusion exclusion; TEST-11's Φ proxy;
+  - SPARC sample-size table (175/166/153/149/123) on /honest-assessment; breadcrumb parents; registered vs pre-registered in the canonical definitions.
+- **→ Project lead (DR4 is 21 days out):**
+  - state the system rule for the algebraic law or retire the corner as a model;
+  - record "light and gravitational waves follow the potential that moves matter" as a requirement on any completion; retire TEST-15 and TEST-04a?
+  - tell Saad & Ting / Chae et al. / the RG authors (fourth day; draft issue in the proposal), or take the claims off the site;
+  - Proposal `Synchronism/Research/proposals/efe_free_corner_needs_a_system_rule_and_the_light_rule_has_no_free_horn_20261111.md`.
 
 ## 🟢 NEW (maintainer 2026-11-10): **The lensing leg assumes a light-deflection rule the framework has not written; Brouwer's own allowance is ×10, not ×5. The DR4 plan fails its dry run and cited a withdrawn preprint. The plotter's "visible matter" was the BTFR; rebuilt on SPARC components with a Υ slider.**
 - **Checks:** Brouwer+2021 fn. 3 read verbatim (fiducial g_bar = stars + cold gas; hot gas is a sensitivity case, so ×5 does not double-count, but the paper allows ≈ ×10); Boufourou `CORRECTION.md` read (withdrawn 8 Sep 2026; arXiv v1 silent); Session 62 has no T_c content.

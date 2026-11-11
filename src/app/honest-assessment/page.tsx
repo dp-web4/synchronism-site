@@ -33,19 +33,16 @@ export default function HonestAssessment() {
         It documents what works, what failed, what we got wrong, and what remains untested.
         Updated as new results come in.
       </p>
-      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', maxWidth: '65ch' }}>
-        <strong>Who is doing this work.</strong> Every audit, correction and computation on this page was made by AI agents:
-        the research archive&apos;s AI sessions and this site&apos;s three daily AI tracks. The <em>visitor</em> track reads the
-        site as four simulated readers (&ldquo;personas&rdquo;: a casual reader, a technical writer, a graduate physics student,
-        a researcher); the <em>maintainer</em> track fixes the site; the <em>explorer</em> track does research. When a note
-        says &ldquo;a graduate-physics reader&rdquo; or &ldquo;a simulated-visitor researcher persona&rdquo;, it means one of those AI
-        passes, not an outside human. No outside human domain expert has audited these claims; the external feedback so far
-        has come from other AI systems (Grok, DeepSeek, GPT), relayed by the people who ran them. The one human decision-maker is
-        the project lead, written <strong>&ldquo;dp&rdquo;</strong> on this site (github.com/dp-web4): &ldquo;pending the project lead&rdquo; or &ldquo;gates on the project lead&rdquo; means a
-        governance decision, such as whether the headline count changes, that the AI tracks may recommend but do not make.
+      <p style={{ maxWidth: '65ch', fontSize: '0.9rem', margin: '0 0 1rem', color: 'var(--color-text-secondary)' }}>
+        <strong>Not a physicist?</strong> Read the box below and the{' '}
+        <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>one-paragraph plain summary</a> under it, then{' '}
+        <a href="#non-physicist-takeaway" style={{ color: 'var(--color-accent-blue)' }}>what a non-physicist should take away</a>.
+        On the Beginner Path that is the whole of step 5 (about 4 minutes), and you can stop at the green &ldquo;you can stop here&rdquo; box. Everything after it is the detailed record.
       </p>
 
       {/* Table of contents */}
+      <details style={{ marginBottom: '1.25rem', maxWidth: '65ch', fontSize: '0.85rem' }}>
+        <summary style={{ cursor: 'pointer', color: 'var(--color-text-secondary)' }}>On this page (full table of contents)</summary>
       <nav style={{ marginBottom: '2rem', maxWidth: '65ch', fontSize: '0.85rem' }} aria-label="Page contents">
         <strong style={{ color: 'var(--color-text-secondary)' }}>On this page:</strong>{' '}
         <a href="#if-you-read-nothing-else" style={{ color: 'var(--color-accent-blue)' }}>If you read nothing else</a> &middot;{' '}
@@ -71,17 +68,12 @@ export default function HonestAssessment() {
         <a href="#a2acw-self-audit" style={{ color: 'var(--color-accent-blue)' }}>A2ACW Self-Audit</a> &middot;{' '}
         <a href="#bottom-line" style={{ color: 'var(--color-accent-blue)' }}>Bottom Line</a>
       </nav>
+      </details>
 
-      <p style={{ maxWidth: '65ch', fontSize: '0.9rem', margin: '0 0 1rem', color: 'var(--color-text-secondary)' }}>
-        <strong>Not a physicist?</strong> Read the box below and the{' '}
-        <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>one-paragraph plain summary</a> under it, then{' '}
-        <a href="#non-physicist-takeaway" style={{ color: 'var(--color-accent-blue)' }}>what a non-physicist should take away</a>.
-        Everything after the green &ldquo;you can stop here&rdquo; box is the detailed record.
-      </p>
 
       <div id="if-you-read-nothing-else" className="card" style={{ scrollMarginTop: '5rem', maxWidth: '65ch', marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-warm)', fontSize: '0.9rem' }}>
         <p style={{ margin: '0 0 0.5rem', color: 'var(--color-accent-warm)', fontWeight: 600 }}>
-          If you read nothing else (this page is about 25,000 words)
+          If you read nothing else (this page is about 30,000 words)
         </p>
         <ul style={{ margin: 0, paddingLeft: '1.2rem', color: 'var(--color-text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
           <li><strong>The one equation failed its galaxy tests. Where it fits, it is MOND in different notation. As a theory of galaxies: fatal.</strong>{' '}
@@ -98,7 +90,7 @@ export default function HonestAssessment() {
                 Two of them (TEST-09, TEST-10) test one cap (a ceiling on how much extra gravity the formula can add). On
                 rotation curves TEST-09 fires only under the site&apos;s choice of cap; TEST-10 fires under every candidate cap,
                 though at the most permissive one its M/L-independent part rests on two gas-dominated galaxies. Galaxy
-                weak-lensing data exclude the cap under all three candidate choices. Those two share one cause, so no more than
+                weak-lensing data exclude the framework&apos;s own cap whichever way light is assumed to bend, and the most permissive cap only if hidden baryons are below about 6&times; the stars and cold gas. Those two share one cause, so no more than
                 five are independent. Under every counting rule on file four of the six stay: row #2 (TEST-10), row #4 (the
                 environment run), row #5 (TEST-25, the Cassini row inherited from MOND) and row #6 (the Bell/CHSH construction
                 check). The other two (row #1 TEST-09, row #3 the &gamma;&nbsp;=&nbsp;2 pin) depend on the rule. Of those four, only row #2 refutes
@@ -107,7 +99,7 @@ export default function HonestAssessment() {
               </span>
             </details>
           </li>
-          <li><strong>Where it fits galaxies, it is MOND in different notation</strong> (MOND = the 40-year-old rival theory that tweaks gravity instead of adding dark matter). Let the dial that sets how sharp its S-curve is be fitted freely, and the equation lands on MOND&apos;s own formula; set that dial to the value the framework itself chose (γ = 2) and it fails.</li>
+          <li><strong>Where it fits galaxies, it is MOND in different notation</strong> (MOND = the 40-year-old rival theory that tweaks gravity instead of adding dark matter). Let its dial γ (which sets how early its S-curve starts to rise) be fitted freely, and the equation lands on MOND&apos;s own formula; set that dial to the value the framework itself chose (γ = 2) and it fails.</li>
           <li><strong>Its two genuinely different claims both failed.</strong> That ceiling on extra gravity (galaxy edges need 4× more than it allows) and a switch that turns on with local density instead of acceleration (the data reject that at every turn-on point tried).</li>
           <li><strong>&ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence.</strong> It is a classical &ldquo;how much does the system act as one thing&rdquo; score. See{' '}
             <a href="#coherence-meaning" style={{ color: 'var(--color-accent-blue)' }}>the section on what the word means</a>.</li>
@@ -170,6 +162,19 @@ export default function HonestAssessment() {
         <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary &rarr;</Link>{' '}
         (a reference: look terms up as you need them).
       </div>
+
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', maxWidth: '65ch' }}>
+        <strong>Who is doing this work.</strong> Every audit, correction and computation on this page was made by AI agents:
+        the research archive&apos;s AI sessions and this site&apos;s three daily AI tracks. The <em>visitor</em> track reads the
+        site as four simulated readers (&ldquo;personas&rdquo;: a casual reader, a technical writer, a graduate physics student,
+        a researcher); the <em>maintainer</em> track fixes the site; the <em>explorer</em> track does research. When a note
+        says &ldquo;a graduate-physics reader&rdquo; or &ldquo;a simulated-visitor researcher persona&rdquo;, it means one of those AI
+        passes, not an outside human. No outside human domain expert has audited these claims; the external feedback so far
+        has come from other AI systems (Grok, DeepSeek, GPT), relayed by the people who ran them. Wherever a note on this site credits a &ldquo;review&rdquo;, a &ldquo;reviewer&rdquo; or a &ldquo;reader&rdquo; and names no human, it was an AI (until 2026-11-11 five notes said &ldquo;expert review&rdquo; or &ldquo;independent reviews&rdquo;; all five were simulated-visitor personas). The one human decision-maker is
+        the project lead, written <strong>&ldquo;dp&rdquo;</strong> on this site (github.com/dp-web4): &ldquo;pending the project lead&rdquo; or &ldquo;gates on the project lead&rdquo; means a
+        governance decision, such as whether the headline count changes, that the AI tracks may recommend but do not make.
+      </p>
+
 
       <p id="count-rule" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', background: 'rgba(245,158,11,0.06)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem', scrollMarginTop: '5rem', marginBottom: '0.75rem' }}>
         <strong>The counting rules on file, and what each does to the 6</strong>. Deltas from the research ledger (2026-10-13, 10-16, 10-18, 10-24):
@@ -273,14 +278,14 @@ export default function HonestAssessment() {
           <strong>Unrunnable as stated</strong><span>The test as written cannot be executed: a mapping, calibration or amplitude it needs is undefined, so no observation can be compared to it (e.g. every C-keyed consciousness prediction: no EEG &rarr; C calibration exists). Distinct from Untested, which has a runnable protocol and no data yet. Added to this legend 2026-10-19 (it was in use on six pages and the Test Roadmap&apos;s list).</span>
           <strong>Sign Correction</strong><span>Annotation marking that the prediction direction on this page was corrected after initial publication. Not a verdict badge — a correction provenance marker. TEST-02 (2026-06-06).</span>
           <strong>Null-Class</strong><span>The result achieves the same or better fit using a structurally simpler null model (e.g., polynomial in atomic number Z). The match is evidence of monotonicity in the target variable, not framework-specific physics. Chemistry correlation explorer.</span>
-          <strong>Artifact Lesson</strong><span>Added to this legend 2026-08-05 (it was in use on three tool cards and defined in no legend). Marks an <em>interactive tool</em>, not a prediction: the tool animates a relation the audit found wrong, kept deliberately so a reader can watch it fail rather than read that it failed. Currently on three tools: the Crossover Regime Visualizer (formerly &ldquo;Phase Boundary Visualizer&rdquo;) and the γ Calculator (both animate γ = 2/√N_corr, audited-negative), and the Consciousness Demo (eight &ldquo;independent&rdquo; approaches converging on C ≈ 0.50 by construction); it also applies to any tool whose displayed law is superseded. Companion label &ldquo;Model Explainer&rdquo; means the tool shows how the equation works and is not itself a verdict on whether the equation is correct. Both are tool-card labels; neither is a validation badge.</span>
+          <strong>Artifact Lesson</strong><span>Added to this legend 2026-08-05 (it was in use on three tool cards and defined in no legend). Marks an <em>interactive tool</em>, not a prediction: the tool animates a relation the audit found wrong, kept deliberately so a reader can watch it fail rather than read that it failed. Currently on three tools: the Crossover Regime Visualizer (formerly &ldquo;Phase Boundary Visualizer&rdquo;) and the γ Calculator (both animate γ = 2/√N_corr, audited-negative), and the Consciousness Demo (seven &ldquo;independent&rdquo; approaches converging on C ≈ 0.50 by construction); it also applies to any tool whose displayed law is superseded. Companion label &ldquo;Model Explainer&rdquo; means the tool shows how the equation works and is not itself a verdict on whether the equation is correct. Both are tool-card labels; neither is a validation badge.</span>
           <strong>89% Boundary-Consistent</strong><span>Fraction of natural phenomena in the gamma-boundary catalog whose gamma parameter falls within the regime boundaries defined by the visualizer. Descriptive only — not a prediction or a test. Carries Template Bias Caveat.</span>
           <strong>Template Bias Caveat</strong><span>The 89% consistency figure is derived from a catalog that was populated <em>using</em> the framework's regime boundaries as a guide — boundary-consistent framing is baked into the collection method. The fraction should not be read as independent confirmation.</span>
         </div>
 
         <p id="status-lifecycle-verbs" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '1rem', scrollMarginTop: '5rem' }}>
           <strong>Status lifecycle verbs</strong> (added 2026-07-23 — this vocabulary was used with precision
-          across test cards but documented nowhere; four independent reviews flagged the gap). These are the
+          across test cards but documented nowhere; four simulated-visitor persona passes, all AI, flagged the gap). These are the
           capitalized verbs that appear in headings and status notes. They are distinct on purpose:
         </p>
 
@@ -1055,7 +1060,7 @@ export default function HonestAssessment() {
               set <strong>&#x03B3;&nbsp;=&nbsp;1/2</strong> exactly. Then 2&#x03B3;&nbsp;=&nbsp;1 and it collapses to
               <strong> C(x)&nbsp;=&nbsp;x/(x+2)&nbsp;=&nbsp;&#x03BC;<sub>simple</sub>(x/2)</strong> &mdash; MOND&apos;s
               simple interpolating function, with the factor of 2 absorbed entirely into the fitted
-              &#x03C1;<sub>crit</sub>. SPARC&apos;s 0.489 is 2.2% from that exact point. So the four-digit RMS
+              &#x03C1;<sub>crit</sub>. SPARC&apos;s 0.489 is consistent with that exact point (&plusmn;0.11 statistical at &Upsilon; = 0.5; 0.43&ndash;0.95 once the nuisances are refit). So the four-digit RMS
               agreement with McGaugh is the <em>only possible outcome</em> once the fit is free to find
               &#x03B3;&nbsp;=&nbsp;1/2: <strong>the functional form was never a difference from MOND at all. The
               only difference that ever existed is the argument</strong> (local &#x03C1; in place of
@@ -1080,8 +1085,8 @@ export default function HonestAssessment() {
               galaxies never get dense enough to reach the &ldquo;knee&rdquo; where this framework&apos;s density switch is
               supposed to turn on &mdash; but globular clusters (tight balls of ~10⁵ stars orbiting our galaxy) do, from
               their cores outward. So they are the one place the density idea can be tested on its own terms. Result: if
-              the switch has one sharpness everywhere, the clusters rule it out at every setting the framework has ever
-              used. If the sharpness resets inside each cluster &mdash; which the framework <em>had</em> predicted, seven
+              the switch has one γ setting everywhere, the clusters rule it out at every setting the framework has ever
+              used. If the setting resets inside each cluster &mdash; which the framework <em>had</em> predicted, seven
               months earlier, and nobody had run &mdash; the clusters are marginally consistent, but only if the density switch
               acts in the simple algebraic way (L2). Under the framework&apos;s own action (L3), which adds a force the simple
               version leaves out, the registered setting is excluded too, narrowly (2026-10-08). The price of the L2 survival
@@ -1998,7 +2003,7 @@ export default function HonestAssessment() {
             { name: 'Verlinde Emergent Gravity (2016)', desc: 'Derives MOND-like rotation curves from entropy gradients in the Hubble volume. First lensing test: Brouwer et al. (2017), KiDS+GAMA — consistent. Superseded by Brouwer et al. (2021, KiDS-1000 lensing RAR, A&A 650, A113), which extends the RAR to much lower accelerations and finds a dependence on galaxy type that neither EG nor MOND predicts as formulated. Key question: does C(ρ) reduce to Verlinde in the low-acceleration limit? Not yet shown.' },
             { name: 'Superfluid dark matter (Berezhiani & Khoury 2015)', desc: 'The other major program that reproduces MOND phenomenology: dark matter that condenses into a superfluid inside galaxies, whose phonons mediate a MOND-like force, while behaving as ordinary CDM on cluster and cosmological scales. A hybrid, not a modified-gravity theory — and so an existence proof that "MOND in galaxies, ΛCDM in cosmology" (which is where this framework\'s fitted γ = ½ lands in both sectors) can come from one physical mechanism. No comparison with the compander exists. (Added 2026-09-19.)' },
             { name: 'TeVeS (Bekenstein 2004)', desc: 'Lorentz-covariant scalar-vector-tensor extension of MOND. Has galaxy-rotation and lensing predictions. Failed: requires dark matter for the Bullet Cluster; GW170817 constrains the tensor sector. No longer the benchmark relativistic completion — see AeST below.' },
-            { name: 'AeST (Skordis & Złośnik 2021)', desc: 'Aether-scalar-tensor theory — the current benchmark relativistic MOND completion. Reproduces galaxy phenomenology, passes CMB power-spectrum tests where TeVeS failed, and GW speed equals c. Keyed on |∇Φ| — i.e. NON-local in density — which is exactly the escape class the locality no-go on this page identifies: the surviving relativistic MOND theory avoids the local-density trap that kills C(ρ). Caveat: post-2021 stability concerns are under active discussion; cite as "AeST-class," not AeST-final. (Added 2026-07-23 — an expert review correctly flagged that this table was frozen at TeVeS-2006 while the verdict "0 discriminating tests vs MOND+ΛCDM" was being scored against it.)' },
+            { name: 'AeST (Skordis & Złośnik 2021)', desc: 'Aether-scalar-tensor theory — the current benchmark relativistic MOND completion. Reproduces galaxy phenomenology, passes CMB power-spectrum tests where TeVeS failed, and GW speed equals c. Keyed on |∇Φ| — i.e. NON-local in density — which is exactly the escape class the locality no-go on this page identifies: the surviving relativistic MOND theory avoids the local-density trap that kills C(ρ). Caveat: post-2021 stability concerns are under active discussion; cite as "AeST-class," not AeST-final. (Added 2026-07-23 — a simulated-visitor researcher persona (an AI pass, not a human expert) correctly flagged that this table was frozen at TeVeS-2006 while the verdict "0 discriminating tests vs MOND+ΛCDM" was being scored against it.)' },
             { name: 'MOG / STVG (Moffat 2006)', desc: 'Running gravitational coupling with massive vector field. Makes post-Newtonian predictions beyond rotation curves. No direct comparison with Synchronism compander exists.' },
           ].map(f => (
             <div key={f.name} className="card" style={{ padding: '0.6rem 0.9rem' }}>

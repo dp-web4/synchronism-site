@@ -36,7 +36,7 @@ export default function KeyClaims() {
             </Link>
             {' '}&mdash; canonical reference on the Honest Assessment page. Text after a dash inside a badge is a
             finding descriptor, not a separate badge; descriptors without a badge of their own appear in italics under
-            it. The three badges on this page, in three words each:{' '}
+            it. The three badges on this page, in a few words each:{' '}
             <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization</Link> = known result, new notation;{' '}
             <Link href="/glossary#speculative-badge" style={{ color: 'var(--color-accent-blue)' }}>Speculative</Link> = conceptual proposal without quantitative test (the canonical wording);{' '}
             <Link href="/glossary#failed-badge" style={{ color: 'var(--color-accent-blue)' }}>Failed</Link> = tested, did not hold. &ldquo;Unfalsifiable as stated&rdquo; or &ldquo;untestable as stated&rdquo; after a dash is a descriptor saying <em>why</em> the Speculative badge applies to that claim, not a stronger sub-status. Definitions:{' '}
@@ -44,6 +44,20 @@ export default function KeyClaims() {
               /honest-assessment#validation-badge-definitions
             </Link>.
           </p>
+        </div>
+
+        <div style={{ background: 'rgba(16,185,129,0.07)', border: '1px solid rgba(16,185,129,0.25)', borderRadius: '0.5rem', padding: '0.9rem 1.25rem', marginBottom: '2rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
+          <strong style={{ color: '#10b981' }}>In plain words: the three claims, one sentence each.</strong>
+          <ol style={{ margin: '0.5rem 0 0.5rem', paddingLeft: '1.3rem', display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+            <li>Quantum strangeness might come from things falling into step with each other, with nothing special about observers. No number is attached to the idea yet, so it cannot be tested.</li>
+            <li>Consciousness might be a level of &ldquo;acting as one&rdquo; that could in principle be measured. The formula given for it is a placeholder: nothing in it has been calibrated.</li>
+            <li>The extra gravity usually blamed on dark matter might come from matter that has not fallen into step. This is the one claim that was tested, on galaxy data, and it failed.</li>
+          </ol>
+          <span style={{ fontSize: '0.85rem' }}>
+            The rest of this page is written for readers with some physics. If the three sentences are enough, go on with the{' '}
+            <Link href="/why-synchronism" style={{ color: 'var(--color-accent-blue)' }}>Beginner Path</Link> or read{' '}
+            <Link href="/honest-assessment#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>what failed, in one paragraph</Link>.
+          </span>
         </div>
 
         {/* === CLAIM 1: THE QUANTUM REFRAME === */}

@@ -277,7 +277,7 @@ export default function MRH() {
             Next: Measurement Without Observers &rarr;
           </Link>
           <Link href="/quantum-predictions" className="btn-secondary">
-            See the 6 Protocols
+            See the 6 proposed tests (2 run, 4 never run)
           </Link>
         </div>
       </section>

@@ -82,7 +82,7 @@ export default function CoherenceExplorer() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(139,92,246,0.07)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(139,92,246,0.4)' }}>
             <strong>What this shows / what it gets wrong:</strong> the tool shows how the curve&apos;s
-            shape responds to its three parameters &mdash; that part is faithful. What the formula gets
+            shape responds to its two settings, &#x03B3; and &#x03C1;<sub>crit</sub> (density is the axis, not a setting) &mdash; that part is faithful. What the formula gets
             wrong, and you should know before sliding: the &#x03B3; = 2/&#x221A;N<sub>corr</sub> sharpness
             rule runs <em>backwards</em> against real condensed-matter physics (the most correlated
             systems get the flattest curves; real BCS transitions are among nature&apos;s sharpest), and
@@ -244,7 +244,7 @@ export default function CoherenceExplorer() {
             />
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
               {[
-                { g: 0.046, label: 'γ = 0.046 — density version fit to real galaxies (SPARC, one global knee fitted at ρ_c = 4.4×10⁻⁶ M☉/pc³, below every disc; loses at ΔBIC +2843). Sets γ only: the fitted knee is not representable on this axis, so the drawn curve is not the fit. On the fit the discs sit at x ~ 10³–10⁵, where C ≈ γ·ln(ρ/ρ_c) runs 0.02–0.6 and γ and ρ_c are separately identified. (Label corrected 2026-11-04: it said “fixed A = 0.029, only γ/A identified”, which describes a different fit.)' },
+                { g: 0.046, label: 'γ = 0.046 — density version fit to real galaxies (SPARC, one global knee fitted at ρ_c = 4.4×10⁻⁶ M☉/pc³, below every disc; loses at ΔBIC +2843). Sets γ only: the fitted knee is not representable on this axis, so the drawn curve is not the fit. On the fit the discs sit at x ~ 10³–10⁵, where C = tanh(γ·ln(1+ρ/ρ_c)) runs about 0.31–0.49 and γ and ρ_c are separately identified (until 2026-11-11 this read 0.02–0.6, which does not match that range of x). (Label corrected 2026-11-04: it said “fixed A = 0.029, only γ/A identified”, which describes a different fit.)' },
                 { g: 0.49, label: 'γ = 0.49 — what real galaxies prefer, acceleration version (SPARC acceleration-keyed fit; = MOND there; killed by Cassini, a failure inherited from MOND\'s simple μ: 8.7σ published for the RAR-preferred MOND functions (Desmond+2024, marginalized), +17.95σ in this site\'s own unmarginalized run; illustrative on this density axis)' },
                 { g: 0.5, label: 'γ = ½ exactly — the same curve as MOND’s formula (MOND’s simple μ function; see note below)' },
                 { g: 2.0, label: 'γ = 2 — steep: the framework’s original guess (disfavoured on SPARC; at the threshold once galaxies are the unit)' },
@@ -265,7 +265,7 @@ export default function CoherenceExplorer() {
             </p>
             <p style={{ color: regimeColor, fontSize: '0.8rem', marginTop: '0.25rem' }}>{regime} <span style={{ color: 'var(--color-text-muted)' }}>(label from the audited-negative N<sub>corr</sub> map, whose sign is inverted; see the caveat above)</span></p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
-              Higher &#x03B3; = sharper, more abrupt snap to coherent. Lower &#x03B3; = gentler slope. (The framework also wrote &#x03B3; = 2/&#x221A;N<sub>corr</sub>, which would make <em>more</em> correlated systems <em>gentler</em>. That runs backwards against real condensed-matter physics and is audited-negative; see the <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>. Treat &#x03B3; here as a shape dial only.)
+              Higher &#x03B3; = the rise starts earlier (at lower density) and narrows a little: the 10&ndash;90% width goes from 1.93 dex at &#x03B3; = 0.49 to 1.33 dex at &#x03B3; = 2 and stops near 1.17 dex, so no setting makes it abrupt. Lower &#x03B3; = a slower fade spread over more factors of ten. (The framework also wrote &#x03B3; = 2/&#x221A;N<sub>corr</sub>, which would make <em>more</em> correlated systems <em>gentler</em>. That runs backwards against real condensed-matter physics and is audited-negative; see the <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>. Treat &#x03B3; here as a shape dial only.)
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginTop: '0.15rem' }}>
               Opens at &#x03B3; &#x2248; 0.49, the value SPARC galaxy data prefer when the <em>acceleration-keyed</em> version
@@ -304,7 +304,7 @@ export default function CoherenceExplorer() {
               <strong style={{ color: '#a78bfa' }}>What the default view actually shows (added 2026-08-08):
               MOND.</strong> Set &#x03B3; = 1/2 exactly and the compander collapses algebraically to
               C(x) = x/(x+2) = &#x03BC;<sub>simple</sub>(x/2) &mdash; MOND&apos;s simple interpolating function,
-              the factor of 2 absorbed by the fitted &#x03C1;<sub>crit</sub>. SPARC&apos;s 0.489 is 2.2% from that
+              the factor of 2 absorbed by the fitted &#x03C1;<sub>crit</sub>. SPARC&apos;s 0.489 (&plusmn;0.11 statistical) is consistent with that
               point, so the curve you are looking at on load is MOND&apos;s &#x03BC;, not an alternative to it.
               Drag &#x03B3; away from 0.5 and you are leaving MOND; the data pull it back.
             </p>

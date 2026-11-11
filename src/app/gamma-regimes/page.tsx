@@ -108,8 +108,8 @@ export default function GammaRegimes() {
           counting the Cooper pair (N<sub>corr</sub> &#x2248; 2&ndash;4). The{' '}
           <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</Link>&apos;s BCS preset counts
           the electrons overlapping inside one coherence volume (N<sub>corr</sub> = 10<sup>7</sup>, &#x03B3; &#x2248; 6&times;10<sup>&minus;4</sup>).
-          Both counts are defensible, and the formula has no rule that picks one. The same system lands four orders of magnitude
-          apart in &#x03B3; depending on what is counted. That is the N<sub>corr</sub>-divergence problem in one example: until
+          Both counts are defensible, and the formula has no rule that picks one. The same system lands three orders of magnitude
+          apart in &#x03B3; (six to seven in N<sub>corr</sub>) depending on what is counted. That is the N<sub>corr</sub>-divergence problem in one example: until
           N<sub>corr</sub> has one operational definition, &#x03B3; = 2/&#x221A;N<sub>corr</sub> can place a system wherever it is needed.
         </p>
         <p>

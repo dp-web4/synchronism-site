@@ -25,7 +25,7 @@ export default function MondUnification() {
         version is excluded separately: a knee that tracks a&#x2080; would have to scale as V<sup>&minus;2</sup>, the framework asserts V<sup>+2</sup>, and
         SPARC shows no velocity exponent (V<sup>+2</sup> excluded at ~11&sigma;, one point per galaxy, N = 129, galaxy bootstrap; see{' '}
         <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>). It also loses to the
-        acceleration-keyed form on SPARC by &Delta;BIC +2843 with &gamma; free (read algebraically, g = g<sub>bar</sub>/C; the field-equation
+        acceleration-keyed form on SPARC by &Delta;BIC +2843 with &gamma; and the knee free in both laws (<Link href="/galaxy-rotation#dbic2843-spec" style={{ color: 'var(--color-accent-blue)' }}>comparator, sample and script</Link>; read algebraically, g = g<sub>bar</sub>/C; the field-equation
         class it belongs to, Refracted Gravity, is not excluded by that number, see{' '}
         <Link href="/test-catalog#what-excluded-covers" style={{ color: 'var(--color-accent-blue)' }}>what &ldquo;excluded&rdquo; covers</Link>). So this page is about how the framework <em>relates</em> to MOND
         (the a&#x2080; coincidence and the acceleration-keyed reparametrization), not a unification. Until 2026-10-08 it was titled &ldquo;MOND Unification&rdquo;.
@@ -295,6 +295,7 @@ export default function MondUnification() {
             For a 10<sup>7</sup> M&#x2609; TDG at g<sub>ext</sub> = 1.0 a&#x2080;,
             Synchronism predicts &#x03C3; ~ 10.5&ndash;14.5 km/s while MOND predicts &#x03C3; ~
             10.9&ndash;40.9 km/s. Observable with the NGC 5291 system (Bournaud et al. 2007, Lelli et al. 2015).
+            {' '}<strong>These two intervals are untraced (flagged 2026-11-11):</strong> no mass range or estimator is recorded for them, and both lie above the isolated deep-MOND value for 10<sup>7</sup> M&#x2609;, &#x03C3; = (4GMa&#x2080;/81)<sup>1/4</sup> &asymp; 9.4 km/s, although an external field can only lower &#x03C3;. Do not use them.
           </p>
           <ValidationBadge status="untested" label="Nested inside MOND's interval — see caveat" />
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginTop: '0.5rem' }}>

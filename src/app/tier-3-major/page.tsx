@@ -37,7 +37,14 @@ const tests: Tier3Test[] = [
       <>
         <strong>Unreachable / monitoring-only.</strong> The kill criterion (a null at 10⁻¹⁶) sits an order of
         magnitude below the best bound ever achieved (GW170817, |Δv/v| ≲ 10⁻¹⁵), so it can never fire. The
-        framework predicts no positive signal, so GW170817 was passed vacuously. See{' '}
+        framework predicts no positive signal, so GW170817 was passed vacuously. <strong>The test that matters here has already been done by others.</strong>{' '}
+        Boran, Desai, Kahya &amp; Woodard (2018, Phys. Rev. D 97, 041501; abstract read 2026-11-11) used the same event to rule out
+        &ldquo;dark matter emulators&rdquo;: theories with no dark matter in which light and ordinary matter feel the boosted
+        potential while gravitational waves feel only the visible matter. In such a theory the gravitational waves would have
+        arrived about 400 days before the light, and they arrived within two seconds. So a framework that boosts gravity without
+        dark matter must say that gravitational waves and light follow the same potential, and this one has no rule for either.
+        It is the same missing rule that makes the{' '}
+        <Link href="/honest-assessment#lensing-ceiling" style={linkStyle}>weak-lensing exclusion of the boost cap</Link> conditional. See{' '}
         <Link href="/falsifiability" style={linkStyle}>Falsifiability</Link> and{' '}
         <Link href="/top-5-tests" style={linkStyle}>Decisive Tests</Link>.{CORRECTED}
       </>
@@ -152,8 +159,9 @@ export default function Tier3Major() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           These experiments require dedicated facilities, significant funding, and multi-year
-          timelines. They test the deepest predictions &mdash; the ones that would, if confirmed,
-          represent genuinely new physics.
+          timelines. They were proposed as tests of the deepest predictions. Read each card&apos;s verdict before the
+          headline &ldquo;7 tests&rdquo;: several are not live tests any more (unreachable on any instrument, unrunnable
+          as stated because they need a measured C or &gamma;, already executed, or already answered by other groups).
         </p>
 
         <div style={{

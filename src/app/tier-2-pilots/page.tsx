@@ -57,9 +57,12 @@ export default function Tier2Pilots() {
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
-          These experiments require modest funding and institutional collaboration, but are
-          feasible with current technology. They test the most novel predictions &mdash; the ones
-          that can&apos;t be explained as reparametrizations.
+          These experiments would need modest funding and institutional collaboration, and the instruments
+          exist. They are not runnable as stated: each depends on measuring C, &gamma; or N<sub>corr</sub>, and no
+          protocol turns an EEG recording or a spectrum into those numbers (see the{' '}
+          <Link href="/test-catalog" style={{ color: 'var(--color-accent-blue)' }}>Test Roadmap</Link>). They were proposed as tests of the most novel
+          predictions. Until that protocol exists, each card is a proposal for one. (Until 2026-11-11 this paragraph
+          said only &ldquo;feasible with current technology&rdquo;.)
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginBottom: '1.5rem' }}>

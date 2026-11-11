@@ -1,0 +1,197 @@
+======================================================================================================================
+0. CONTROLS
+======================================================================================================================
+C1 Crater II corner sigma (Upsilon=2, gamma=0.9, 11-10 estimator): 3.90 km/s   (11-10: 3.90)
+C2 internal-reading boost at g_N = 1.0e-10 / 0.2e-10 (gamma=0.9): 1.48 / 2.69   (ledger 1.48 / 2.69)
+C3 Newtonian Plummer global sigma_1D: Jeans 0.3752 vs analytic sqrt(pi G M / 32 a) 0.3752  (+0.00 %)
+C4 deep-limit Plummer global sigma_1D: Jeans 0.9214 vs (4/81 G M a_M)^(1/4) 0.9215  (-0.01 %)
+
+======================================================================================================================
+1. THE TABLE: what a rule could key on (dimensionless), beside what the data require
+   x_int = g_N(r_1/2)/a_M; x_ext = g_host/a_M; gN/gext Newtonian; gB/gext with the internal law applied; fill = r_1/2 / r_J (Newtonian, counted mass);
+   contrast = mean density inside r_1/2 over ambient (disc 0.084 Msun/pc3; halo: host mean enclosed); t_rh/age on the Newtonian (N) and boosted (B) branch;
+   sigma_N = exact Plummer virial; sigma_B = Jeans under the internal law (gamma=0.9, global); B_req = (sigma_obs/sigma_N)^2
+======================================================================================================================
+system      class        x_int  x_ext  gN/gext  gB/gext   fill  contrast        N trh/age N       B  n_cross  sig_N  sig_B      sig_obs  B_req
+Hyades      open cl.  1.22e-02   1.74    0.007    0.065   0.41       6.7  6.3e+02      0.17     6.4       34   0.21   0.70   0.40+-0.03    3.7
+Pleiades    open cl.  3.19e-02   1.74    0.018    0.108   0.30      18.2  1.6e+03      1.17    22.4       10   0.33   0.89   0.48+-0.02    2.1
+Praesepe    open cl.  2.66e-02   1.74    0.015    0.098   0.32      14.5  1.4e+03      0.21     4.5       54   0.31   0.86   0.63+-0.03    4.1
+Coma Ber    open cl.  2.47e-03   1.74    0.001    0.029   0.74       1.2  1.7e+02      0.13    16.4       15   0.10   0.50   0.28+-0.04    7.5
+Alpha Per   open cl.  5.96e-03   1.74    0.003    0.045   0.65       1.7  1.1e+03      4.30   279.8        2   0.20   0.81   0.80+-0.02   15.9
+M67         open cl.  5.09e-02   1.74    0.029    0.139   0.24      33.9  1.8e+03      0.03     0.4      469   0.39   0.93   0.59+-0.07    2.3
+NGC 188     open cl.  2.93e-02   1.74    0.017    0.104   0.38       8.7  5.3e+03      0.08     1.7      415   0.44   1.20   0.41+-0.04    0.9
+Fornax      dSph      2.21e-02   0.08    0.276    1.939   0.28      43.8  6.0e+07   3741.52 93401.8       47   4.22  12.34  11.70+-0.90    7.7
+Leo I       dSph      4.87e-02   0.05    1.050    5.085   0.11     814.2  1.6e+07    446.32  6340.6      116   3.73   9.02   9.20+-1.40    6.1
+Sculptor    dSph      1.60e-02   0.14    0.117    0.959   0.33      27.2  6.9e+06    365.86 11541.8       63   2.27   7.17   9.20+-1.40   16.4
+Leo II      dSph      1.33e-02   0.05    0.264    2.361   0.16     267.4  2.2e+06    110.20  3975.0       73   1.63   5.39   6.60+-0.70   16.4
+Sextans     dSph      5.08e-04   0.14    0.004    0.166   1.42       0.4  1.3e+06    693.14280265.8        7   0.63   4.68   7.90+-1.30  155.6
+Carina      dSph      3.39e-03   0.11    0.031    0.533   0.47       9.9  1.1e+06    140.53 13856.2       31   0.98   4.53   6.60+-1.20   45.2
+Ursa Minor  dSph      4.94e-03   0.16    0.032    0.462   0.46      10.2  8.7e+05     77.23  5769.9       44   1.01   4.24   9.50+-1.20   88.9
+Draco       dSph      3.31e-03   0.16    0.021    0.377   0.56       5.6  8.7e+05    104.20 10455.5       32   0.91   4.24   9.10+-1.20   99.6
+Crater II   dSph      7.86e-05   0.10    0.001    0.088   2.48       0.1  4.8e+05    860.011404002.2        2   0.31   3.63   2.34+-0.42   57.6
+Antlia 2    dSph      6.56e-05   0.09    0.001    0.091   3.25       0.0  2.3e+06   6109.9011422075.2        1   0.43   5.36   5.98+-0.37  189.1
+Segue 1     dSph      2.26e-04   0.42    0.001    0.036   1.36       0.4  1.0e+03      0.36   267.0       23   0.09   0.78   3.70+-1.40 1843.6
+Pal 14      GC        9.31e-03   0.17    0.054    0.577   0.21     102.9  3.8e+04      1.07    50.0      184   0.54   1.95   0.71+-0.18(dyn M)
+NGC 2419    GC        7.46e-01   0.12    6.073    9.552   0.04   22591.6  1.6e+06      2.98     7.3     1946   4.09   5.52   5.51+-0.57(dyn M)
+WB 5 kAU    binary    4.31e+00   1.74    2.481    2.676  0.013   4.0e+05        2         -       -    20003   internal-law boost g/g_N = 1.08
+WB 10 kAU   binary    1.08e+00   1.74    0.620    0.872  0.027   5.0e+04        2         -       -     7072   internal-law boost g/g_N = 1.41
+WB 20 kAU   binary    2.70e-01   1.74    0.155    0.354  0.053   6.2e+03        2         -       -     2500   internal-law boost g/g_N = 2.28
+Sun-Saturn  planetary 5.88e+05   1.74337869.486        -      -         -        2         -       -        -   internal-law boost g/g_N = 1.000000
+Earth-Moon  planetary 2.48e+07   1.7414277428.775        -      -         -        2         -       -        -   internal-law boost g/g_N = 1.000000
+
+======================================================================================================================
+2. OPEN CLUSTERS UNDER THE INTERNAL READING  (P1, P2, kill criterion)
+   prediction = isotropic Jeans, Plummer, mass-weighted inside the dispersion's 3D aperture; M at the LOWEST counted mass (registered)
+======================================================================================================================
+Hyades:  a = 3.1 pc, aperture 9.0 pc, r_t 9.0 pc
+   masses: 193 +- 43 inside r_J 8.06 pc (Hunt & Reffert 2024 T1, binary-corrected); 276 inside r_t 9 pc, 435 total to 30 pc (Roeser+2011); 313 + 262 two Plummer components (Evans & Oh 2022 T1)
+   structure: Plummer r_co 3.10 pc, r_h 4.1 pc (Roeser+2011 abstract); r_t 9.0 pc is computed from the counted mass; age from recall
+   M_lo =  193 Msun: x_int(r_1/2) = 0.0075;  Newton 0.171;  with an EFE 0.195-0.210;  internal reading 0.623/0.623/0.622 (gamma 0.87/0.90/0.95; truncated at r_t 0.592; deep estimator 0.611) km/s
+   M_hi =  435 Msun: x_int(r_1/2) = 0.0168;  Newton 0.257;  with an EFE 0.293-0.315;  internal reading 0.768/0.767/0.767 (gamma 0.87/0.90/0.95; truncated at r_t 0.730; deep estimator 0.748) km/s
+      Oh&Evans20 DR2 rms         0.400 +- 0.025   obs/Newton(M_hi) 1.56 [z +2.5 | random +5.7]   obs/internal(M_lo) 0.64 [z -1.8 | random -8.9]   position between Newton(M_hi) and internal(M_lo): 0.39   (r<10 pc, 400 stars, PM + partial RV forward model; my rms of the three components 0.442/0.383/0.371; binaries tested, not removed)
+      Evans&Oh22 high-mass       0.427 +- 0.022   obs/Newton(M_hi) 1.66 [z +3.0 | random +7.7]   obs/internal(M_lo) 0.69 [z -1.5 | random -8.9]   position between Newton(M_hi) and internal(M_lo): 0.46   (within r_t; 94 % HPD (0.386, 0.467) converted to 1 sigma)
+      Olivares+24 DR3 rms        0.528 +- 0.035   obs/Newton(M_hi) 2.05 [z +4.4 | random +7.7]   obs/internal(M_lo) 0.85 [z -0.7 | random -2.7]   position between Newton(M_hi) and internal(M_lo): 0.74   (same 387 core stars re-fit on DR3; my rms of 0.50/0.66/0.39)
+      Olivares+24 DR3 max comp.  0.660 +- 0.050   obs/Newton(M_hi) 2.57 [z +5.6 | random +8.1]   obs/internal(M_lo) 1.06 [z +0.3 | random +0.7]   position between Newton(M_hi) and internal(M_lo): 1.10   (std[V] on DR3; was 0.38 +- 0.02 on DR2 for the same stars)
+      Roeser+11 pre-Gaia         0.470 +- 0.075   obs/Newton(M_hi) 1.83 [z +2.3 | random +2.8]   obs/internal(M_lo) 0.75 [z -1.1 | random -2.0]   position between Newton(M_hi) and internal(M_lo): 0.58   (3D 0.82 +- 0.13 at r <= 9 pc (bin III) / sqrt 3; PPMXL)
+   REGISTERED KILL (largest sigma = Olivares+24 DR3 max comp. 0.660, lowest mass): pred 0.623, obs/pred 1.06, z = -0.3 -> does not fire
+   highest z the registered form can reach at any error is (1 - obs/pred)/0.2: best row 1.8
+Pleiades:  a = 3.02 pc, aperture 11.6 pc, r_t 11.6 pc
+   masses: 617.8 observed, 850 IMF-extrapolated (Meingast+2021 T2); 627 within 10 pc (Heyl+2022); 650 +- 18 (Hobart+ arXiv:2607.17300 T3); 946.5 +- 86.8 inside r_J (Hunt & Reffert 2024)
+   structure: r_h,2D 3.02 +- 0.14 pc, r_h,3D 4.27 +- 0.13 (Hobart+ T3); r_t 11.6 computed (Lodieu+2019); age from recall
+   M_lo =  618 Msun: x_int(r_1/2) = 0.0252;  Newton 0.305;  with an EFE 0.347-0.373;  internal reading 0.838/0.838/0.837 (gamma 0.87/0.90/0.95; truncated at r_t 0.814; deep estimator 0.817) km/s
+   M_hi =  946 Msun: x_int(r_1/2) = 0.0386;  Newton 0.377;  with an EFE 0.430-0.462;  internal reading 0.937/0.937/0.936 (gamma 0.87/0.90/0.95; truncated at r_t 0.910; deep estimator 0.909) km/s
+      Torres+21 RV               0.480 +- 0.040   obs/Newton(M_hi) 1.27 [z +1.2 | random +2.6]   obs/internal(M_lo) 0.57 [z -2.1 | random -8.9]   position between Newton(M_hi) and internal(M_lo): 0.22   (136 stars, detected and astrometric binaries removed)
+      Torres+21 PM               0.480 +- 0.020   obs/Newton(M_hi) 1.27 [z +1.3 | random +5.2]   obs/internal(M_lo) 0.57 [z -2.1 | random -17.9]   position between Newton(M_hi) and internal(M_lo): 0.22   (292 DR2 members, excess-noise stars removed, error-corrected; 'may represent an upper limit')
+      Hobart+26 PM               0.739 +- 0.011   obs/Newton(M_hi) 1.96 [z +4.8 | random +32.9]   obs/internal(M_lo) 0.88 [z -0.6 | random -9.0]   position between Newton(M_hi) and internal(M_lo): 0.79   (1602 members within 15 deg (36 pc), binaries not removed)
+   REGISTERED KILL (largest sigma = Hobart+26 PM 0.739, lowest mass): pred 0.838, obs/pred 0.88, z = +0.6 -> does not fire
+   highest z the registered form can reach at any error is (1 - obs/pred)/0.2: best row 2.1
+Praesepe:  a = 3.16 pc, aperture 10.77 pc, r_t 10.77 pc
+   masses: 483 inside r_t, lower limit (Roeser & Schilbach 2019); 598 +- 14 (Hobart+); 945 +- 73 inside r_J (Hunt & Reffert 2024)
+   structure: r_h,2D 3.16 +- 0.15 pc (Hobart+ T3); Plummer r_co 3.7 pc, r_h 4.8 (Roeser & Schilbach); r_t computed; age from recall
+   M_lo =  483 Msun: x_int(r_1/2) = 0.0180;  Newton 0.265;  with an EFE 0.302-0.325;  internal reading 0.787/0.786/0.786 (gamma 0.87/0.90/0.95; truncated at r_t 0.758; deep estimator 0.768) km/s
+   M_hi =  945 Msun: x_int(r_1/2) = 0.0352;  Newton 0.371;  with an EFE 0.423-0.454;  internal reading 0.937/0.937/0.936 (gamma 0.87/0.90/0.95; truncated at r_t 0.904; deep estimator 0.909) km/s
+      Olivares+24 Hao list rms   0.628 +- 0.030   obs/Newton(M_hi) 1.69 [z +3.2 | random +8.6]   obs/internal(M_lo) 0.80 [z -1.0 | random -5.3]   position between Newton(M_hi) and internal(M_lo): 0.62   (cleaned, < R_tidal; my rms of 0.60/0.68/0.60; binary treatment not read)
+      Olivares+24 GG list rms    0.707 +- 0.030   obs/Newton(M_hi) 1.91 [z +4.2 | random +11.2]   obs/internal(M_lo) 0.90 [z -0.5 | random -2.6]   position between Newton(M_hi) and internal(M_lo): 0.81   (cleaned, < R_tidal; my rms of 0.80/0.62/0.69)
+      Hobart+26 PM               0.809 +- 0.017   obs/Newton(M_hi) 2.18 [z +5.8 | random +25.8]   obs/internal(M_lo) 1.03 [z +0.1 | random +1.3]   position between Newton(M_hi) and internal(M_lo): 1.05   (binaries not removed; radial range not read)
+   REGISTERED KILL (largest sigma = Hobart+26 PM 0.809, lowest mass): pred 0.786, obs/pred 1.03, z = -0.1 -> does not fire
+   highest z the registered form can reach at any error is (1 - obs/pred)/0.2: best row 1.0
+Coma Ber:  a = 3.6 pc, aperture 6.9 pc, r_t 6.9 pc
+   masses: ~57 inside r_t, 115 (+5/-3) total (Tang+2019); 101.6 (Pang+2021 T1)
+   structure: r_h 4.7 pc (Pang+2021 T1), taken as 3D so a = 4.7/1.305; r_t 6.9 +- 0.1 computed (Tang+2019); age 700 Myr (Pang T1)
+   M_lo =   57 Msun: x_int(r_1/2) = 0.0016;  Newton 0.090;  with an EFE 0.103-0.110;  internal reading 0.461/0.461/0.461 (gamma 0.87/0.90/0.95; truncated at r_t 0.414; deep estimator 0.450) km/s
+   M_hi =  115 Msun: x_int(r_1/2) = 0.0033;  Newton 0.128;  with an EFE 0.146-0.156;  internal reading 0.550/0.550/0.550 (gamma 0.87/0.90/0.95; truncated at r_t 0.494; deep estimator 0.537) km/s
+      Pang+21 PM rms             0.275 +- 0.035   obs/Newton(M_hi) 2.15 [z +3.4 | random +4.2]   obs/internal(M_lo) 0.60 [z -1.9 | random -5.3]   position between Newton(M_hi) and internal(M_lo): 0.44   (within r_t; my rms of 0.22 (+0.04/-0.03) and 0.32 (+0.05/-0.04))
+      Pang+21 RV                 0.610 +- 0.180   obs/Newton(M_hi) 4.77 [z +2.7 | random +2.7]   obs/internal(M_lo) 1.32 [z +0.7 | random +0.8]   position between Newton(M_hi) and internal(M_lo): 1.45   (RV fit with a binary model)
+   REGISTERED KILL (largest sigma = Pang+21 RV 0.610, lowest mass): pred 0.461, obs/pred 1.32, z = -0.7 -> does not fire
+   highest z the registered form can reach at any error is (1 - obs/pred)/0.2: best row 2.0
+Alpha Per:  a = 5.93 pc, aperture 10.0 pc, r_t 10.0 pc
+   masses: 391.6 +- 54.1 inside r_J (Hunt & Reffert 2024); 518 +- 21 (Hobart+); 735 observed (Meingast+2021, with corona)
+   structure: r_h,2D 5.93 +- 0.33 pc (Hobart+ T3); r_t ~9.5-10 computed; age from recall
+   M_lo =  392 Msun: x_int(r_1/2) = 0.0041;  Newton 0.187;  with an EFE 0.213-0.228;  internal reading 0.752/0.752/0.752 (gamma 0.87/0.90/0.95; truncated at r_t 0.657; deep estimator 0.729) km/s
+   M_hi =  735 Msun: x_int(r_1/2) = 0.0078;  Newton 0.255;  with an EFE 0.291-0.313;  internal reading 0.883/0.883/0.882 (gamma 0.87/0.90/0.95; truncated at r_t 0.772; deep estimator 0.853) km/s
+      Hobart+26 PM               0.799 +- 0.017   obs/Newton(M_hi) 3.13 [z +10.1 | random +32.0]   obs/internal(M_lo) 1.06 [z +0.3 | random +2.8]   position between Newton(M_hi) and internal(M_lo): 1.10   (binaries not removed)
+   REGISTERED KILL (largest sigma = Hobart+26 PM 0.799, lowest mass): pred 0.752, obs/pred 1.06, z = -0.3 -> does not fire
+   highest z the registered form can reach at any error is (1 - obs/pred)/0.2: best row -0.3
+M67:  a = 2.58 pc, aperture 7.4 pc, r_t 16.8 pc
+   masses: 553, 724, 903, 1100, 1016 -> 1270 with binaries (luminosity-function counts cited in Geller+2015 VI.4 and Hurley+2005; Geller+ call them lower limits); virial 2100 (+610/-550)
+   structure: projected half-mass radius 2.58 +- 0.45 pc (Geller+2015, from Fan+1996); r_t 16.8 pc fitted King (Davenport & Sandquist 2010); R_GC ~ 9 kpc, the Sun's g_ext used
+   M_lo =  553 Msun: x_int(r_1/2) = 0.0309;  Newton 0.318;  with an EFE 0.363-0.390;  internal reading 0.821/0.820/0.819 (gamma 0.87/0.90/0.95; truncated at r_t 0.820; deep estimator 0.795) km/s
+   M_hi = 1270 Msun: x_int(r_1/2) = 0.0710;  Newton 0.482;  with an EFE 0.550-0.591;  internal reading 1.024/1.023/1.022 (gamma 0.87/0.90/0.95; truncated at r_t 1.022; deep estimator 0.978) km/s
+      Geller+15 RV corrected     0.590 +- 0.065   obs/Newton(M_hi) 1.22 [z +0.9 | random +1.7]   obs/internal(M_lo) 0.72 [z -1.3 | random -3.5]   position between Newton(M_hi) and internal(M_lo): 0.32   (single members, R <= 30' (7.4 pc), corrected for measurement error and undetected binaries; +0.07/-0.06)
+      Geller+15 RV uncorrected   0.800 +- 0.040   obs/Newton(M_hi) 1.66 [z +3.0 | random +7.9]   obs/internal(M_lo) 0.98 [z -0.1 | random -0.5]   position between Newton(M_hi) and internal(M_lo): 0.94   (same sample, measurement error removed only)
+   REGISTERED KILL (largest sigma = Geller+15 RV uncorrected 0.800, lowest mass): pred 0.820, obs/pred 0.98, z = +0.1 -> does not fire
+   highest z the registered form can reach at any error is (1 - obs/pred)/0.2: best row 1.4
+NGC 188:  a = 5.8 pc, aperture 17.0 pc, r_t 21.0 pc
+   masses: 2350 counted PM members (Geller+2008 VIII); 'about 1500 to 3800' (Geller+2013); (3.8 +- 1.6)e3 extrapolated (Bonatto+2005); virial 2300 +- 460
+   structure: projected half-mass radius 5.8 +- 0.3 pc (Geller+2008); r_t 21 +- 4 pc fitted King (Bonatto+2005); R_GC ~ 9.5 kpc, z ~ 0.6 kpc, the Sun's g_ext used
+   M_lo = 1500 Msun: x_int(r_1/2) = 0.0166;  Newton 0.349;  with an EFE 0.398-0.427;  internal reading 1.046/1.046/1.045 (gamma 0.87/0.90/0.95; truncated at r_t 1.027; deep estimator 1.020) km/s
+   M_hi = 3800 Msun: x_int(r_1/2) = 0.0420;  Newton 0.555;  with an EFE 0.633-0.680;  internal reading 1.334/1.333/1.331 (gamma 0.87/0.90/0.95; truncated at r_t 1.310; deep estimator 1.287) km/s
+      Geller+08 RV corrected     0.410 +- 0.040   obs/Newton(M_hi) 0.74 [z -1.2 | random -3.6]   obs/internal(M_lo) 0.39 [z -3.0 | random -15.9]   position between Newton(M_hi) and internal(M_lo): -0.30   (0.23 km/s binary correction borrowed from M67 simulations, error assumed)
+      Geller+08 RV uncorrected   0.640 +- 0.040   obs/Newton(M_hi) 1.15 [z +0.7 | random +2.1]   obs/internal(M_lo) 0.61 [z -1.9 | random -10.1]   position between Newton(M_hi) and internal(M_lo): 0.17   (single members, global; 'likely inflated due to the presence of undetected binaries')
+   REGISTERED KILL (largest sigma = Geller+08 RV uncorrected 0.640, lowest mass): pred 1.046, obs/pred 0.61, z = +1.9 -> does not fire
+   highest z the registered form can reach at any error is (1 - obs/pred)/0.2: best row 3.0
+
+Kill criterion (>= 2 clusters at z >= 3 with the 20 % systematic, lowest mass, largest sigma, sigma_obs <= 0.8 pred): 0 fire  ->  NOT MET
+
+======================================================================================================================
+3. SINGLE-VARIABLE SEPARABILITY: does any one variable put the open clusters (must be ~Newtonian) on one side and the
+   dwarf spheroidals (must be boosted) on the other?  And on which side do the wide binaries fall?
+======================================================================================================================
+  g_N,int / a_M                  open cl.   0.00247..0.0509    dSph  6.56e-05..0.0487    separable: no   binaries 0.27..4.31         
+  g_ext / a_M                    open cl.      1.74..1.74      dSph    0.0464..0.421     separable: YES  binaries 1.74..1.74         with open clusters
+  g_N,int / g_ext                open cl.   0.00142..0.0293    dSph  0.000536..1.05      separable: no   binaries 0.155..2.48        
+  g_int(boosted) / g_ext         open cl.     0.029..0.139     dSph    0.0358..5.08      separable: no   binaries 0.354..2.68        
+  r_1/2 / r_J                    open cl.     0.241..0.739     dSph     0.107..3.25      separable: no   binaries 0.0134..0.0534     
+  density contrast               open cl.      1.18..33.9      dSph    0.0292..814       separable: no   binaries 6.24e+03..3.99e+05 
+  number of bodies               open cl.       172..5.3e+03   dSph  1.02e+03..6e+07     separable: no   binaries 2..2               
+  t_rh/age (Newtonian branch)    open cl.    0.0291..4.3       dSph      0.36..6.11e+03  separable: no   binaries n/a                
+  t_rh/age (boosted branch)      open cl.     0.401..280       dSph       267..1.14e+07  separable: no   binaries n/a                
+  age / crossing time            open cl.      2.12..469       dSph      1.34..116       separable: no   binaries 2.5e+03..2e+04     
+  POST-HOC w_int/w_ext (Newton)  open cl.      1.38..7.41      dSph      0.15..25        separable: no   binaries 115..916           
+  POST-HOC w_int/w_ext (observed) open cl.       3.5..11.3      dSph       1.7..61.8      separable: no   binaries 115..916           
+  --- robustness: the same test on the eight classical dwarfs only (Crater II, Antlia 2: tidally disturbed; Segue 1: contested) ---
+  x_ext        separable on the classical eight: gap 0.155 .. 1.74  (1.05 dex)
+  ratioB       separable on the classical eight: gap 0.139 .. 0.166  (0.08 dex)
+  N            separable on the classical eight: gap 5.3e+03 .. 8.7e+05  (2.22 dex)
+  trh_age_N    separable on the classical eight: gap 4.3 .. 77.2  (1.25 dex)
+  trh_age_B    separable on the classical eight: gap 280 .. 3.97e+03  (1.15 dex)
+
+======================================================================================================================
+4. RULE BY RULE
+======================================================================================================================
+  R1' pairwise sum, Galaxy as stars of 1 Msun   : g(Sun) ~ N sqrt(G m a_M)/R = 2.87e-05 m/s^2 = 1.5e+05 x observed   (sqrt(N) = 2.45e+05)
+  R1' pairwise sum, Galaxy as 10^5 Msun clouds  : g(Sun) ~ N sqrt(G m a_M)/R = 9.06e-08 m/s^2 = 474 x observed   (sqrt(N) = 775)
+  R1' pairwise sum, Galaxy as one body          : g(Sun) ~ N sqrt(G m a_M)/R = 1.17e-10 m/s^2 = 0.612 x observed   (sqrt(N) = 1)
+  R2 Hill/tidal (fill < 1): Hyades 0.41, Pleiades 0.30, Praesepe 0.32, Coma Ber 0.74, Alpha Per 0.65, M67 0.24, NGC 188 0.38, Fornax 0.28, Leo I 0.11, Sculptor 0.33, Leo II 0.16, Sextans 1.42, Carina 0.47, Ursa Minor 0.46, Draco 0.56, Crater II 2.48, Antlia 2 3.25, Segue 1 1.36
+     binaries: WB 5 kAU 0.013, WB 10 kAU 0.027, WB 20 kAU 0.053
+  R5 relaxation, bistability: (t_rh/age on the Newtonian branch -> on the boosted branch)
+     Hyades           0.17 ->      6.4   BISTABLE (collisional if Newtonian, collisionless if boosted)
+     Pleiades         1.17 ->     22.4   collisionless on both
+     Praesepe         0.21 ->      4.5   BISTABLE (collisional if Newtonian, collisionless if boosted)
+     Coma Ber         0.13 ->     16.4   BISTABLE (collisional if Newtonian, collisionless if boosted)
+     Alpha Per        4.30 ->    279.8   collisionless on both
+     M67              0.03 ->      0.4   collisional on both
+     NGC 188          0.08 ->      1.7   BISTABLE (collisional if Newtonian, collisionless if boosted)
+     Fornax        3741.52 ->  93401.8   collisionless on both
+     Leo I          446.32 ->   6340.6   collisionless on both
+     Sculptor       365.86 ->  11541.8   collisionless on both
+     Leo II         110.20 ->   3975.0   collisionless on both
+     Sextans        693.14 -> 280265.8   collisionless on both
+     Carina         140.53 ->  13856.2   collisionless on both
+     Ursa Minor      77.23 ->   5769.9   collisionless on both
+     Draco          104.20 ->  10455.5   collisionless on both
+     Crater II      860.01 -> 1404002.2   collisionless on both
+     Antlia 2      6109.90 -> 11422075.2   collisionless on both
+     Segue 1          0.36 ->    267.0   BISTABLE (collisional if Newtonian, collisionless if boosted)
+     Pal 14           1.07 ->     50.0   collisionless on both
+     NGC 2419         2.98 ->      7.3   collisionless on both
+
+======================================================================================================================
+5. POST-HOC (prompted by retrieval): a constant dispersion floor in the Huisjes & Hernandez (arXiv:2603.03522) plane
+   Their definitions: g_obs = 3 sigma^2 / R_1/2, g_bar = G M / (2 R_1/2^2); sigma = raw std of member proper motions, no error
+   deconvolution; the catalogue warns binaries 'can contribute >~ 500 m/s'.  Model: sigma_obs^2 = sigma_N^2 + floor^2,
+   sigma_N^2 = g_bar R/3 (Newtonian point in their own plane).  RAR: g_bar/(1-exp(-sqrt(g_bar/g_dag))), g_dag = 1.2e-10.
+======================================================================================================================
+ M [Msun]  R [pc]      g_bar  sigma_N sigma_RAR             floor 0.3             floor 0.5             floor 0.7   (sigma_obs km/s, g_obs/g_RAR in dex)
+       30     2.0   5.23e-13    0.104     0.410       0.317 (-0.22)       0.511 (+0.19)       0.708 (+0.47)
+       30     4.0   1.31e-13    0.073     0.407       0.309 (-0.24)       0.505 (+0.19)       0.704 (+0.48)
+      100     2.0   1.74e-12    0.189     0.562       0.355 (-0.40)       0.535 (-0.04)       0.725 (+0.22)
+      100     4.0   4.36e-13    0.134     0.554       0.329 (-0.45)       0.518 (-0.06)       0.713 (+0.22)
+      250     2.0   4.36e-12    0.299     0.719       0.424 (-0.46)       0.583 (-0.18)       0.761 (+0.05)
+      250     4.0   1.09e-12    0.212     0.702       0.367 (-0.56)       0.543 (-0.22)       0.731 (+0.04)
+      500     2.0   8.71e-12    0.423     0.871       0.519 (-0.45)       0.655 (-0.25)       0.818 (-0.05)
+      500     4.0   2.18e-12    0.299     0.843       0.424 (-0.60)       0.583 (-0.32)       0.761 (-0.09)
+     1000     2.0   1.74e-11    0.599     1.064       0.670 (-0.40)       0.780 (-0.27)       0.921 (-0.12)
+     1000     4.0   4.36e-12    0.423     1.016       0.519 (-0.58)       0.655 (-0.38)       0.818 (-0.19)
+     3000     2.0   5.23e-11    1.037     1.492       1.079 (-0.28)       1.151 (-0.23)       1.251 (-0.15)
+     3000     4.0   1.31e-11    0.733     1.383       0.792 (-0.48)       0.887 (-0.39)       1.014 (-0.27)
+   Gaia DR3 proper-motion error -> km/s: 0.05 mas/yr at 1 / 2 / 3 kpc = 0.24 / 0.47 / 0.71;  0.1 mas/yr = 0.47 / 0.95 / 1.42
+
+======================================================================================================================
+6. POST-HOC: the same cluster measured with and without binaries.  Quadrature difference = what binaries add;
+   beside it, the internal-reading prediction and Newton, both at the mid counted mass.
+======================================================================================================================
+  Pleiades  uncleaned 0.739  cleaned 0.480  binary term 0.56 km/s   | internal reading 0.891  Newton 0.343  Newton+EFE 0.391-0.420   cleaned/Newton 1.40  cleaned/internal 0.54  uncleaned/internal 0.83
+  M67       uncleaned 0.800  cleaned 0.590  binary term 0.54 km/s   | internal reading 0.936  Newton 0.408  Newton+EFE 0.466-0.500   cleaned/Newton 1.44  cleaned/internal 0.63  uncleaned/internal 0.85
+  NGC 188   uncleaned 0.640  cleaned 0.410  binary term 0.49 km/s   | internal reading 1.212  Newton 0.464  Newton+EFE 0.529-0.568   cleaned/Newton 0.88  cleaned/internal 0.34  uncleaned/internal 0.53
+  Hobart+ (binaries not removed), three clusters of 518-650 Msun: 0.799 / 0.739 / 0.809 km/s.  Internal reading at those masses: 0.788 / 0.844 / 0.825;  Newton (+) 0.52 km/s binary term: 0.554 / 0.601 / 0.592

@@ -1,0 +1,201 @@
+{
+ "Hyades": {
+  "M_lo": 193,
+  "M_hi": 435,
+  "a_pc": 3.1,
+  "r_t_pc": 9.0,
+  "r_ap_pc": 9.0,
+  "age_Myr": 650,
+  "masses": "193 +- 43 inside r_J 8.06 pc (Hunt & Reffert 2024 T1, binary-corrected); 276 inside r_t 9 pc, 435 total to 30 pc (Roeser+2011); 313 + 262 two Plummer components (Evans & Oh 2022 T1)",
+  "struct": "Plummer r_co 3.10 pc, r_h 4.1 pc (Roeser+2011 abstract); r_t 9.0 pc is computed from the counted mass; age from recall",
+  "best": "Oh&Evans20 DR2 rms",
+  "obs": [
+   [
+    "Oh&Evans20 DR2 rms",
+    0.4,
+    0.025,
+    "r<10 pc, 400 stars, PM + partial RV forward model; my rms of the three components 0.442/0.383/0.371; binaries tested, not removed"
+   ],
+   [
+    "Evans&Oh22 high-mass",
+    0.427,
+    0.022,
+    "within r_t; 94 % HPD (0.386, 0.467) converted to 1 sigma"
+   ],
+   [
+    "Olivares+24 DR3 rms",
+    0.528,
+    0.035,
+    "same 387 core stars re-fit on DR3; my rms of 0.50/0.66/0.39"
+   ],
+   [
+    "Olivares+24 DR3 max comp.",
+    0.66,
+    0.05,
+    "std[V] on DR3; was 0.38 +- 0.02 on DR2 for the same stars"
+   ],
+   [
+    "Roeser+11 pre-Gaia",
+    0.47,
+    0.075,
+    "3D 0.82 +- 0.13 at r <= 9 pc (bin III) / sqrt 3; PPMXL"
+   ]
+  ]
+ },
+ "Pleiades": {
+  "M_lo": 618,
+  "M_hi": 946,
+  "a_pc": 3.02,
+  "r_t_pc": 11.6,
+  "r_ap_pc": 11.6,
+  "age_Myr": 120,
+  "masses": "617.8 observed, 850 IMF-extrapolated (Meingast+2021 T2); 627 within 10 pc (Heyl+2022); 650 +- 18 (Hobart+ arXiv:2607.17300 T3); 946.5 +- 86.8 inside r_J (Hunt & Reffert 2024)",
+  "struct": "r_h,2D 3.02 +- 0.14 pc, r_h,3D 4.27 +- 0.13 (Hobart+ T3); r_t 11.6 computed (Lodieu+2019); age from recall",
+  "best": "Torres+21 PM",
+  "obs": [
+   [
+    "Torres+21 RV",
+    0.48,
+    0.04,
+    "136 stars, detected and astrometric binaries removed"
+   ],
+   [
+    "Torres+21 PM",
+    0.48,
+    0.02,
+    "292 DR2 members, excess-noise stars removed, error-corrected; 'may represent an upper limit'"
+   ],
+   [
+    "Hobart+26 PM",
+    0.739,
+    0.011,
+    "1602 members within 15 deg (36 pc), binaries not removed"
+   ]
+  ]
+ },
+ "Praesepe": {
+  "M_lo": 483,
+  "M_hi": 945,
+  "a_pc": 3.16,
+  "r_t_pc": 10.77,
+  "r_ap_pc": 10.77,
+  "age_Myr": 700,
+  "masses": "483 inside r_t, lower limit (Roeser & Schilbach 2019); 598 +- 14 (Hobart+); 945 +- 73 inside r_J (Hunt & Reffert 2024)",
+  "struct": "r_h,2D 3.16 +- 0.15 pc (Hobart+ T3); Plummer r_co 3.7 pc, r_h 4.8 (Roeser & Schilbach); r_t computed; age from recall",
+  "best": "Olivares+24 Hao list rms",
+  "obs": [
+   [
+    "Olivares+24 Hao list rms",
+    0.628,
+    0.03,
+    "cleaned, < R_tidal; my rms of 0.60/0.68/0.60; binary treatment not read"
+   ],
+   [
+    "Olivares+24 GG list rms",
+    0.707,
+    0.03,
+    "cleaned, < R_tidal; my rms of 0.80/0.62/0.69"
+   ],
+   [
+    "Hobart+26 PM",
+    0.809,
+    0.017,
+    "binaries not removed; radial range not read"
+   ]
+  ]
+ },
+ "Coma Ber": {
+  "M_lo": 57,
+  "M_hi": 115,
+  "a_pc": 3.6,
+  "r_t_pc": 6.9,
+  "r_ap_pc": 6.9,
+  "age_Myr": 700,
+  "masses": "~57 inside r_t, 115 (+5/-3) total (Tang+2019); 101.6 (Pang+2021 T1)",
+  "struct": "r_h 4.7 pc (Pang+2021 T1), taken as 3D so a = 4.7/1.305; r_t 6.9 +- 0.1 computed (Tang+2019); age 700 Myr (Pang T1)",
+  "best": "Pang+21 PM rms",
+  "obs": [
+   [
+    "Pang+21 PM rms",
+    0.275,
+    0.035,
+    "within r_t; my rms of 0.22 (+0.04/-0.03) and 0.32 (+0.05/-0.04)"
+   ],
+   [
+    "Pang+21 RV",
+    0.61,
+    0.18,
+    "RV fit with a binary model"
+   ]
+  ]
+ },
+ "Alpha Per": {
+  "M_lo": 392,
+  "M_hi": 735,
+  "a_pc": 5.93,
+  "r_t_pc": 10.0,
+  "r_ap_pc": 10.0,
+  "age_Myr": 80,
+  "masses": "391.6 +- 54.1 inside r_J (Hunt & Reffert 2024); 518 +- 21 (Hobart+); 735 observed (Meingast+2021, with corona)",
+  "struct": "r_h,2D 5.93 +- 0.33 pc (Hobart+ T3); r_t ~9.5-10 computed; age from recall",
+  "best": "Hobart+26 PM",
+  "obs": [
+   [
+    "Hobart+26 PM",
+    0.799,
+    0.017,
+    "binaries not removed"
+   ]
+  ]
+ },
+ "M67": {
+  "M_lo": 553,
+  "M_hi": 1270,
+  "a_pc": 2.58,
+  "r_t_pc": 16.8,
+  "r_ap_pc": 7.4,
+  "age_Myr": 4000,
+  "masses": "553, 724, 903, 1100, 1016 -> 1270 with binaries (luminosity-function counts cited in Geller+2015 VI.4 and Hurley+2005; Geller+ call them lower limits); virial 2100 (+610/-550)",
+  "struct": "projected half-mass radius 2.58 +- 0.45 pc (Geller+2015, from Fan+1996); r_t 16.8 pc fitted King (Davenport & Sandquist 2010); R_GC ~ 9 kpc, the Sun's g_ext used",
+  "best": "Geller+15 RV corrected",
+  "obs": [
+   [
+    "Geller+15 RV corrected",
+    0.59,
+    0.065,
+    "single members, R <= 30' (7.4 pc), corrected for measurement error and undetected binaries; +0.07/-0.06"
+   ],
+   [
+    "Geller+15 RV uncorrected",
+    0.8,
+    0.04,
+    "same sample, measurement error removed only"
+   ]
+  ]
+ },
+ "NGC 188": {
+  "M_lo": 1500,
+  "M_hi": 3800,
+  "a_pc": 5.8,
+  "r_t_pc": 21.0,
+  "r_ap_pc": 17.0,
+  "age_Myr": 7000,
+  "masses": "2350 counted PM members (Geller+2008 VIII); 'about 1500 to 3800' (Geller+2013); (3.8 +- 1.6)e3 extrapolated (Bonatto+2005); virial 2300 +- 460",
+  "struct": "projected half-mass radius 5.8 +- 0.3 pc (Geller+2008); r_t 21 +- 4 pc fitted King (Bonatto+2005); R_GC ~ 9.5 kpc, z ~ 0.6 kpc, the Sun's g_ext used",
+  "best": "Geller+08 RV corrected",
+  "obs": [
+   [
+    "Geller+08 RV corrected",
+    0.41,
+    0.04,
+    "0.23 km/s binary correction borrowed from M67 simulations, error assumed"
+   ],
+   [
+    "Geller+08 RV uncorrected",
+    0.64,
+    0.04,
+    "single members, global; 'likely inflated due to the presence of undetected binaries'"
+   ]
+  ]
+ }
+}

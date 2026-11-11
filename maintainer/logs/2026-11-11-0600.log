@@ -1,3 +1,47 @@
 Starting Synchronism Maintainer Session at Wed Nov 11 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+The session is complete and both repos are pushed (site `58c6925`, Synchronism `15d9e61d`). The build passes, the retired-phrase lint is clean, and no link fragments are broken. Nothing was checked in a browser.
+
+## WAKE: yes, the feedback reached the research
+
+Two of the framework's surviving positions were alive only because a rule had never been written.
+
+- **The "EFE-free corner" never said which acceleration enters C.** I had carried it as "alive, disfavoured" for four weeks.
+  - **Total acceleration:** this is the only reading a local law can evaluate. The Sun's Galactic acceleration is boosted and Saturn's is not, so Saturn's perihelion would turn by about −85,000 mas per century against a measured −0.32 ± 0.47. This reading also has an external field effect after all (wide-binary boost 1.17–1.30).
+  - **Internal acceleration:** this needs a rule for which bodies form a system, and no document writes one. That is the third time the MRH has been asked for a number by hand.
+  - **How it was run:** the check was registered before the script, but it was not blind, since my hand estimate came first. All six predictions held.
+- **No reading of light saves the framework's own boost cap (3.17) on the reliable KiDS lensing bins.** Yesterday I softened this to "conditional on a deflection rule", which was too generous.
+  - **Light follows the boosted potential:** the cap is exceeded at 4.2σ even with a ×10 baryon allowance.
+  - **Light follows visible matter only:** excluded at 7–11σ.
+  - **Unseen matter does the lensing:** this passes, but it is the dark-matter fork.
+  - **Caveat:** this uses the explorer's bin transcription, which I did not re-read, and flat baryon factors.
+
+The proposal is `Research/proposals/efe_free_corner_needs_a_system_rule_and_the_light_rule_has_no_free_horn_20261111.md`.
+
+## Site changes
+
+- **Provenance:** five "expert review" / "independent reviews" credits traced to simulated-visitor personas. They are now labelled as AI passes and lint-barred.
+- **Third-party claims:** the statements about Saad & Ting's code, Chae's consolidated Γ and Refracted Gravity's χ²/N now carry "not confirmed by the authors, who have not been contacted". The Refracted Gravity numbers are described as this site's solver on SPARC, not a reproduction of the published fits.
+- **Literature corrections (abstracts read today):**
+  - 0.057 dex is Li et al. 2018, not McGaugh 2016.
+  - LHAASO's linear bound is > 10 E_Pl, not 5.9.
+  - TEST-15 now cites Boran et al. 2018.
+- **Honest Assessment:** the plain-language pointer comes first, the table of contents is folded, and the stated length is corrected to about 30,000 words.
+- **Key Claims:** a plain three-sentence box now sits before claim 1.
+- **Wording:** γ no longer described as "sharp" or "sudden"; "2% from ½" retired; TEST-10 has one statement, with the stale "≲ 14" removed.
+- **Explorer findings drained:** both 11-10 findings (Crater II / Antlia 2, lensing at ×10) are in the ledger sentences.
+
+Three explorer topics were seeded: the system-partition rule, the lensing slip that existing data allow, and the Refracted Gravity identity control.
+
+## Not done
+
+- The label systems, ρ naming, landing fold, A2ACW page items and quantum prior art are carried again.
+- PREDICTIONS.md was read in full for every block, but the Bucket 1–3 table rows were read truncated; the file is now too large to read whole in one session.
+- External items: the runner reported one open item and nothing new to flag, so there was nothing to read or draft.
+
+## For you (DR4 is 21 days out)
+
+1. State the system rule for the algebraic law, or retire the corner as a model.
+2. Tell Saad & Ting, Chae et al. and the Refracted Gravity authors, or take the claims off the site. This is the fourth day routed; a draft repository issue is in the proposal, not sent. Leaving them published and unsent is the one option I'd argue against.
+3. Decide whether to retire TEST-15 (answered by others in 2018) and TEST-04a (cannot fire).

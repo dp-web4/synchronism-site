@@ -1,0 +1,46 @@
+Starting Synchronism Explorer Session at Wed Nov 11 08:00:01 PST 2026
+The session is committed and pushed (`a1b3be0` pre-registration, `82a480b` session). I worked the newest queue topic, the partition rule for the "EFE-free corner", and the pre-registered kill came out **not met**, against my own expectation.
+
+## What I found
+
+- **The corner's missing rule already exists in print.** Milgrom's 2011 modified-inertia toy model (arXiv:1111.1611 §3.1) modifies each frequency component of a body's motion by its own acceleration. That gives no external field effect and correct centre-of-mass motion, which is the corner's "internal reading". He sets it aside in the next sentence: "I think that an EFE in MOND is observationally required." So the corner is defined, as prior art, and the rule is a spectral decomposition, not the MRH.
+- **Open clusters are the class the topic's list omitted.** Milgrom's 1983 paper (p. 368, read from the page scan) introduced the external field effect because Pleiades and Praesepe showed only a factor 1.5 mass discrepancy at internal accelerations well below a₀.
+- **No membership rule separates open clusters from dwarf spheroidals.** Tidal filling, binding, density contrast, number of bodies, relaxation time, dynamical age and field ratio all overlap. Only the external field in units of a₀ separates them, and wide binaries sit with the clusters. Pairwise summation over-predicts the Galaxy's field by 1.5×10⁵, and the relaxation rule is bistable.
+- **The kill did not fire on any of seven clusters.** The split the criterion missed is cleaned versus uncleaned:
+
+| measurements | vs. no-EFE prediction | vs. Newton |
+|---|---|---|
+| Uncleaned Gaia proper motions (Hyades, Pleiades, Praesepe, α Per) | 0.85–1.06 | 2.0–3.1 |
+| Binary-cleaned or corrected (Pleiades, M67, NGC 188) | 0.34–0.63 | 0.9–1.4 |
+
+  The binary contribution measured in those three clusters is 0.49–0.56 km/s, the same size as the prediction itself.
+- **A March 2026 preprint claims the opposite of the 1983 premise.** Huisjes & Hernandez (arXiv:2603.03522) find small open clusters on the radial acceleration relation, using raw proper-motion scatter with no error subtraction. A constant 0.5 km/s floor reproduces their pattern in their own plane. That is my model, not their data, and the authors have not been contacted.
+
+## Scoring and my own errors
+
+Five of eight predictions held, one partly, two were refuted, and the four controls pass.
+
+- My recalled Hyades dispersion (≈ 0.3 km/s) was low in the direction of my hypothesis; Gaia-era values are 0.40–0.66.
+- The kill criterion was badly built. Its 20% systematic caps z at (1 − obs/pred)/0.2, so it needed observations below 0.4 of the prediction. "Largest published σ" selected the binary-contaminated measurements. I saved this as a memory.
+- The rule that passes on paper was not on my list; it came from a retrieval question I added as an afterthought.
+
+## Not done or not verified
+
+- No binary-removed dispersion for the Hyades or Praesepe was found; that measurement decides the cluster test, and Gaia DR4 should supply it.
+- Hobart+'s three uncleaned dispersions sit closer to the no-EFE prediction than to Newton plus a 0.52 km/s binary term. I have not read that paper's radial range or binary treatment, so I do not know why.
+- The claim that Saturn is safe under the frequency rule is argued, not computed.
+- Cluster ages and dwarf distances are from recall, marked as such; they affect only the relaxation, crossing-time and external-field columns.
+- A grep of the stranded memory store under `/mnt/c/Users` was refused as out of scope and not pursued.
+
+## For the maintainer
+
+The finding's action list asks for:
+
+- sourced quotes in `EFE_FREE_CORNER_STATUS` in place of the from-memory sentence;
+- one sentence on open clusters there;
+- a frequency condition and an open-cluster row in the DR4 reading key;
+- no bare "open clusters are Newtonian", and no citing the 2026 preprint as support.
+
+**So what?** The site has been scoring MOND-as-modified-inertia with a γ, which is not this framework's content. DR4 can test the same rule twice, with wide binaries and with binary-cleaned open clusters that have counted masses. Bucket 0 does not move.
+
+Everything is in `explorer/findings/`; open `partition-rule-open-clusters-are-the-row-it-must-exclude-cleaned-dispersions-sit-near-newton-uncleaned-on-the-no-efe-line.md` first. The script, inputs and output are under `scripts/system_partition_rules*`.

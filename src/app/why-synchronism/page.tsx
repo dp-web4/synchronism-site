@@ -33,7 +33,7 @@ export default function WhySynchronism() {
           <p style={{ margin: '0 0 0.5rem 0' }}><strong>What happened, in three lines</strong></p>
           <ul style={{ margin: 0, paddingLeft: '1.25rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem' }}>
             <li>The proposal: one equation for how &ldquo;crowding&rdquo; makes the parts of a system act as one, from atoms to galaxies.</li>
-            <li>It was tested against real data, mostly galaxies. Where it could be told apart from existing physics, it lost: 0 confirmed predictions, 6 refutations.</li>
+            <li>It was tested against real data, mostly galaxies. Where it could be told apart from existing physics, it lost: 0 confirmed predictions, 6 refutations. (A refutation here means a test with a failure condition written down in advance, which was run, and which the claim failed. Whether some related failures count once or twice moves the number between 4 and 8; the 6 is the current rule.)</li>
             <li>What remains open is the bigger question behind it, and this site shows the whole attempt, failures included.</li>
           </ul>
           <p style={{ margin: '0.75rem 0 0 0', fontSize: '0.9rem' }}>

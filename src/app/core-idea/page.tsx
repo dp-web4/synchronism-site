@@ -5,6 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
+import { GAMMA_GLOSS, WHICH_C_CALLOUT } from '@/lib/ledger';
 
 export default function CoreIdea() {
   return (
@@ -77,6 +78,10 @@ export default function CoreIdea() {
         <div className="equation" style={{ fontSize: '1.5rem' }}>
           C(&#x03C1;) = tanh(&#x03B3; &middot; ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1))
         </div>
+        <p id="which-c" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #f59e0b', paddingLeft: '0.75rem', margin: '0.75rem 0', maxWidth: '75ch' }}>
+          <strong>&#x26A0; Which C:</strong> {WHICH_C_CALLOUT}{' '}
+          <Link href="/glossary#which-c-which-gamma" style={{ color: 'var(--color-accent-blue)' }}>Which C? Which &#x03B3;?</Link>
+        </p>
 
         <div className="card" style={{ marginTop: '1.5rem', padding: '1rem 1.25rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
@@ -162,16 +167,12 @@ export default function CoreIdea() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '1.5rem', color: 'var(--color-accent-violet)', fontFamily: 'serif', fontStyle: 'italic' }}>&#x03B3;</div>
             <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-              2/&#x221A;N<sub>corr</sub>: <strong>proposed as a transition sharpness</strong>{' '}
+              2/&#x221A;N<sub>corr</sub>: <strong>first proposed as a transition sharpness</strong>{' '}
               <span style={{ display: 'block', fontSize: '0.95em' }}>(N<sub>corr</sub> = how many particles move together as one unit)</span>
               <span style={{ color: 'var(--color-text-muted)', display: 'block', marginTop: '0.35rem', fontSize: '0.95em' }}>
-                ⚠ This card used to read &ldquo;coupling strength&rdquo; (corrected 2026-07-27). That is
-                the wrong <em>kind</em> of quantity: the Hill identity proved below makes &#x03B3; a
-                <strong> Hill coefficient</strong> (a biochemistry term: one number for how steep a
-                switch-like response is) — a log-log slope, with Hill index n&nbsp;=&nbsp;2&#x03B3; —
-                not a coupling. Also note the map 2/&#x221A;N<sub>corr</sub> is audited{' '}
+                {GAMMA_GLOSS} The map 2/&#x221A;N<sub>corr</sub> is audited{' '}
                 <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>sign-inverted</a>,
-                and the galaxy pin &#x03B3;&nbsp;=&nbsp;2 inverts to N<sub>corr</sub>&nbsp;=&nbsp;1 — the
+                and the galaxy pin &#x03B3;&nbsp;=&nbsp;2 inverts to N<sub>corr</sub>&nbsp;=&nbsp;1, the
                 ideal-gas value.
               </span>
             </div>

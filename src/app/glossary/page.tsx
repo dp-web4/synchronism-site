@@ -59,7 +59,7 @@ export default function Glossary() {
         <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
           canonical reference in Honest Assessment
         </Link>.
-        Deprecated badges (Validated, Strongly Supported) are kept for back-compat but no longer used in new content.
+        Retired labels (Validated, Strongly Supported, MOND-shared) are no longer assigned; their entries stay so old text still reads (the label map below lists them).
         All eight label systems are mapped side by side in the table below.
       </p>
 

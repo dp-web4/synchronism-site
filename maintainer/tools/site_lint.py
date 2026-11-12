@@ -23,6 +23,10 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-12 (graduate + researcher personas; 2.15 = 1.20·E(1) recomputed; Hill form checked by hand).
+    (r"cH\(z\)/2&#x03C0; on the same anchor|cH\(z\)/2π on the same anchor", "2026-11-12", "2.15 is McGaugh's 1.20 × E(1); the framework's own cH(z)/2π is 1.86 (~9.8σ on the measurement error)", True),
+    (r"a\s*<strong> Hill coefficient</strong>|γ is a Hill coefficient", "2026-11-12", "C is a Hill function of exponent 2γ in 1 + x only; near zero C ≈ γx for every γ, so 'Hill coefficient' describes the tail"),
+    (r"One reading DR4 can still kill is not counted failed", "2026-11-12", "the EFE-free corner is not a defined model until a rule says which acceleration enters C (Milgrom 2011 is the one written rule)"),
     # Added 2026-11-11 (visitor personas; each traced or recomputed before retiring).
     (r"expert review|expert-review point|independent expert reviews|four independent reviews", "2026-11-11", "every credited review was a simulated-visitor persona (AI); traced through git and the visitor logs of 07-18/23/24"),
     (r"how sudden the switch is|how sharp its S-curve is|= sharper, more abrupt snap", "2026-11-11", "γ sets how early C rises; it narrows the rise modestly up to γ ≈ 1 and no value makes it sudden"),

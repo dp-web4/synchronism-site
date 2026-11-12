@@ -66,7 +66,7 @@ export default function PhaseBoundaryVisualizer() {
         &#x03B3;, not phases (full naming note below).
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
-        <strong>How to use it:</strong> one slider, labelled &#x03B3; (proposed as the sharpness of the S-curve), runs from 0 to 4 in steps
+        <strong>How to use it:</strong> one slider, labelled &#x03B3; (it sets how early the curve rises; it was first proposed as the sharpness of the S-curve, which it is not), runs from 0 to 4 in steps
         of 0.01 and starts at 1.0. Drag it and the marker moves across three &#x03B3; ranges (below 0.6, 0.6&ndash;1.4, above
         1.4); the card under the bar describes the range you are in and says where the formula gets real physics backwards.
       </p>
@@ -116,7 +116,7 @@ export default function PhaseBoundaryVisualizer() {
           See the caveat box below for details.
         </div>
         <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.85rem', color: 'var(--color-text-muted)', marginBottom: '1rem' }}>
-          <strong style={{ color: '#ef4444' }}>Sharpness direction is inverted (open problem):</strong>{' '}
+          <strong style={{ color: '#ef4444' }}>Sharpness direction is inverted (audited and closed for this formula; what would replace it is open):</strong>{' '}
           this tool positions systems by transition sharpness, and &#x03B3; = 2/&#x221A;N<sub>corr</sub>{' '}
           assigns the most strongly correlated systems the <em>flattest</em> C(&#x03C1;) curves.
           In real physics the opposite holds: BCS superconductors and BECs — the highest-N<sub>corr</sub>{' '}

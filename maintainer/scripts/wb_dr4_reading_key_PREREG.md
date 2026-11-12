@@ -74,3 +74,25 @@ Reading rule for the corner, fixed now:
 - Reading (T) is not tested by DR4; it is already excluded.
 - Neither outcome can move Bucket 0: reading (I) with a rising boost is isolated MOND without an external field effect,
   not a prediction of this framework alone.
+
+## Addendum 2026-11-12 (before any DR4 analysis exists): the one written rule for reading (I), and a second observable
+From explorer 2026-11-11 (PREREG `a1b3be0`; finding
+`explorer/findings/partition-rule-open-clusters-are-the-row-it-must-exclude-cleaned-dispersions-sit-near-newton-uncleaned-on-the-no-efe-line.md`),
+not re-run by the maintainer.
+- **Rule.** The only written rule that gives reading (I) is Milgrom's 2011 frequency-by-frequency modified-inertia toy
+  (arXiv:1111.1611 §3.1): motion components at frequencies far above the Galactic orbital frequency see only the internal
+  acceleration. Milgrom set it aside as observationally excluded. Under it, reading (I) applies to pairs whose orbital
+  frequency is far above the Galactic one: ω_int/ω_ext = 115–916 for 5–20 kAU (2 M☉). Under his replacement (his eq. 9)
+  the pair feels the Galactic field and the row is the QUMOND/EFE row above. Adopting the rule makes reading (I) MOND as
+  modified inertia with a γ, not this framework's content; the "cannot move Bucket 0" line above is unchanged.
+- **Frequency window.** Open clusters sit at ω_int/ω_ext = 3.5–11.3, binaries at 30–100 kAU at about 10–60. If clusters
+  are Newtonian and 5–20 kAU binaries are boosted, the 2011 toy predicts a boost that rises to ~20 kAU and falls back
+  beyond. Record the boost per separation bin out to 100 kAU, not only per g_N bin.
+- **Second observable for the same row.** Binary-removed, error-deconvolved internal velocity dispersions of nearby open
+  clusters (Hyades, Praesepe, Pleiades, α Per, M67, NGC 188) from DR4 epoch astrometry. Reading (I) predicts 0.46–1.05 km/s
+  at the mid counted mass; current binary-cleaned values are 0.34–0.63 of that (0.9–1.4 of Newton), uncleaned Gaia proper
+  motions 0.85–1.06 of it. The binary term (0.49–0.56 km/s) is as large as the prediction, so only binary-cleaned values
+  count. Reading rule fixed now: cleaned dispersions ≥ 0.85 of the reading-(I) value in at least four of the six clusters
+  supports reading (I); ≤ 0.65 in at least four kills it under the 2011 rule; anything else is "no result". (Thresholds chosen by the maintainer on 2026-11-12 after seeing the pre-DR4 values above, so they are fixed before DR4 but not blind to DR3.)
+- Do not cite arXiv:2603.03522 as support for a boost in open clusters (the explorer's dispersion-floor control
+  reproduces its pattern; not confirmed by its authors, who have not been contacted).

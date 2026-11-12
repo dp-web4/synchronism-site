@@ -17,23 +17,6 @@ export default function GalaxyRotation() {
       <h1>Galaxy Rotation Curves</h1>
       <ValidationBadge status="failed" label="Failed — density-keyed form ΔBIC +2843; γ = 2 compander disfavoured at about 2σ: ΔBIC ≈ +11 at galaxy level and +184 by point with Υ frozen, +2.7 and +46 with each law's own Υ" />{' '}
       <ValidationBadge status="reparametrization" label="Acceleration-keyed fit is a MOND μ at every γ; MOND's simple μ exactly at γ = ½" />
-      <p id="dbic2843-spec" style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', margin: '0.5rem 0 0.75rem', maxWidth: '75ch', scrollMarginTop: '5rem' }}>{DBIC2843_SPEC}</p>
-      <div id="gamma-half-nesting" style={{ fontSize: '0.88rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #f59e0b', paddingLeft: '0.75rem', margin: '0.75rem 0 1rem', scrollMarginTop: '5rem' }}>
-        <strong>&#x03B3; &asymp; &frac12; twice is not a cross-sector agreement.</strong> At &#x03B3; = &frac12; the function satisfies
-        1/C &minus; 1 = 2/x exactly. Keyed on acceleration (the galaxy fit&apos;s variable) that is MOND&apos;s simple interpolating function;
-        keyed on the mean matter density (the cosmology&apos;s) it adds a constant to the Friedmann equation, which is &Lambda;. So the galaxy
-        fit (&#x03B3; = 0.489) and the DESI fit (&#x03B3; = 0.487) are each dataset choosing its own standard model, in different variables,
-        at the one point where this family contains both. The match has no power to fail and is not evidence for the framework.
-        Details: <Link href="/dark-energy#gamma-half-nesting" style={{ color: 'var(--color-accent-blue)' }}>the cosmology side</Link>.
-      </div>
-      <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
-        Sub-note: the registered ALFALFA test, TEST-03, was never run as registered (see correction below), so that one
-        test is <em>untested</em>. Until 2026-09-19 that was this page&apos;s only badge, which undersold the page&apos;s own
-        opening verdict; the two badges above are the ones the{' '}
-        <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Plotter</Link> already carried
-        for the same content.
-      </p>
-
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Galaxy rotation curves are the most important empirical test for any theory of gravity at
@@ -41,6 +24,8 @@ export default function GalaxyRotation() {
           Newtonian gravity predicts from visible mass alone. The Radial Acceleration Relation (RAR)
           captures this: observed acceleration correlates tightly with the acceleration predicted from
           baryonic mass, but systematically exceeds it below a critical scale.
+          (Plain version: the outer stars of a galaxy orbit faster than the visible mass can explain, and either unseen
+          matter or a change to gravity has to make up the difference.)
         </p>
 
         <div style={{ background: 'rgba(56,189,248,0.08)', border: '1px solid rgba(56,189,248,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.95rem', color: 'var(--color-text-secondary)' }}>
@@ -49,13 +34,31 @@ export default function GalaxyRotation() {
           pull without invisible matter. Written that way, keyed on density, the equation does not fit galaxies. In a
           real disc it barely changes gravity at all, which you can see on the{' '}
           <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link>.
-          A version keyed on acceleration, with one dial fitted, does fit, but at that setting it is exactly MOND&apos;s
-          formula. So it carries MOND&apos;s successes and MOND&apos;s problems, including the Solar System test below, and it
-          never does better. Everything after this box is the technical detail behind those three sentences.
+          A version keyed on acceleration, with one dial fitted, does fit, but at that setting it is exactly the formula of MOND
+          (Modified Newtonian Dynamics, Milgrom&apos;s 1983 alternative to dark matter). So it carries MOND&apos;s successes and MOND&apos;s problems, including the Solar System test below, and it
+          never does better. Everything after this box is the technical detail behind those three sentences, starting with what the numbers in the badges above compare.
         </div>
 
+        <h2 id="for-physicists" style={{ fontSize: '1.05rem', marginTop: '1.25rem' }}>For physicists: what the badges compare</h2>
+        <p id="dbic2843-spec" style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', margin: '0.5rem 0 0.75rem', maxWidth: '75ch', scrollMarginTop: '5rem' }}>{DBIC2843_SPEC}</p>
+        <div id="gamma-half-nesting" style={{ fontSize: '0.88rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #f59e0b', paddingLeft: '0.75rem', margin: '0.75rem 0 1rem', scrollMarginTop: '5rem' }}>
+          <strong>&#x03B3; &asymp; &frac12; twice is not a cross-sector agreement.</strong> At &#x03B3; = &frac12; the function satisfies
+          1/C &minus; 1 = 2/x exactly. Keyed on acceleration (the galaxy fit&apos;s variable) that is MOND&apos;s simple interpolating function;
+          keyed on the mean matter density (the cosmology&apos;s) it adds a constant to the Friedmann equation, which is &Lambda;. So the galaxy
+          fit (&#x03B3; = 0.489) and the DESI fit (&#x03B3; = 0.487) are each dataset choosing its own standard model, in different variables,
+          at the one point where this family contains both. The match has no power to fail and is not evidence for the framework.
+          Details: <Link href="/dark-energy#gamma-half-nesting" style={{ color: 'var(--color-accent-blue)' }}>the cosmology side</Link>.
+        </div>
+        <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
+          Sub-note: the registered ALFALFA test, TEST-03, was never run as registered (see correction below), so that one
+          test is <em>untested</em>. Until 2026-09-19 that was this page&apos;s only badge, which undersold the page&apos;s own
+          opening verdict; the two badges above are the ones the{' '}
+          <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Plotter</Link> already carried
+          for the same content.
+        </p>
+
         <div style={{ background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
-          <strong style={{ color: '#ef4444' }}>Read this first (promoted to the top 2026-07-23):</strong>{' '}
+          <strong style={{ color: '#ef4444' }}>Read this before the fits:</strong>{' '}
           the headline equation never reaches this page&apos;s fits. When this box was written no chain from
           C(&#x03C1;) to g<sub>obs</sub> was stated anywhere in the framework. Two have since been written down (division
           g<sub>obs</sub> = g<sub>bar</sub>/C, and a field equation that turned out to be Refracted Gravity&apos;s; see{' '}
@@ -503,7 +506,7 @@ export default function GalaxyRotation() {
             (−9,576 vs −0.32 ± 0.47 mas/cy). That empties the point-level SPARC intersection without the quadrupole
             (ΔBIC +59 to reach 0.87). At galaxy level it does not: the published-nuisance interval reaches 0.95, so a reading
             with no external-field effect survives at γ ≈ 0.87–0.95 for about 1.2σ of SPARC cost, less than the ~2σ the
-            Q₂-passing γ ≳ 1.5 was thought to need (with SPARC&apos;s a₀ at each γ no γ up to 3 passes Q₂, 2026-11-06). For readings with no external field, the binding Solar-System number is 0.87, not 1.5. <strong>Globular clusters disfavour that corner at about 3σ; they do not close it</strong> (explorer 2026-10-30, pre-registered): refit per law with a photometric tidal-radius prior, the compander at γ = 0.9 with no external field costs Δχ² = +54 ± 19 against Newton (cluster bootstrap; +93 ± 32 with tangential-or-isotropic orbits), conditional on the mass model. The statistic sits in the deep regime, where only a₀′/γ enters, so this is MOND-without-EFE&apos;s disfavouring, inherited. (<Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>GC table</Link>).
+            Q₂-passing γ ≳ 1.5 was thought to need (with SPARC&apos;s a₀ at each γ no γ up to 3 passes Q₂, 2026-11-06). For readings with no external field, the binding Solar-System number is 0.87, not 1.5. <strong>In one line:</strong> the &#x03B3; SPARC prefers (0.489 &plusmn; 0.11) sits about 3.5&sigma; below that floor on statistical error alone, which is the known failure of MOND&apos;s simple &mu; in the inner Solar System; with an external field (QUMOND) no &#x03B3; from 0.3 to 3 passes Cassini at stellar-population M/L; without one, the window is &#x03B3; &asymp; 0.87&ndash;0.95 on a reading that still needs a rule for which acceleration enters C. <strong>Globular clusters disfavour that corner at about 3σ; they do not close it</strong> (explorer 2026-10-30, pre-registered): refit per law with a photometric tidal-radius prior, the compander at γ = 0.9 with no external field costs Δχ² = +54 ± 19 against Newton (cluster bootstrap; +93 ± 32 with tangential-or-isotropic orbits), conditional on the mass model. The statistic sits in the deep regime, where only a₀′/γ enters, so this is MOND-without-EFE&apos;s disfavouring, inherited. (<Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>GC table</Link>).
             It is also inherited, not framework-specific &mdash; at γ = &frac12; the compander <em>is</em> simple μ.{' '}
             <strong>Two Solar-System bounds, two observables.</strong> The compander returns to Newton as a power law,
             1 &minus; C &asymp; 2x<sup>&minus;2γ</sup>, and that tail is what the perihelion bound (γ &lt; 0.87 excluded) probes.

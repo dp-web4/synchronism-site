@@ -236,8 +236,13 @@ export default function ChemistryCorrelationExplorer() {
           &ldquo;Debye temperature&rdquo; row (it printed r = +0.948 until 2026-11-09 and now prints &ldquo;&mdash;&rdquo;) correlates &#x03B8;<sub>D</sub> with a function of &#x03B8;<sub>D</sub>: high r
           there is <em>by construction</em>. Sound velocity and the three elastic moduli inherit it, because in the Debye model
           &#x03B8;<sub>D</sub> &#x221D; v<sub>s</sub> and v<sub>s</sub> &#x221D; &#x221A;(modulus/density). Those five rows (marked in the table) are one
-          definitional relation seen five ways. They show how a high r arises, which is this page&apos;s lesson; they are not
-          evidence that coherence organizes the properties.
+          definitional relation seen five ways. Electronegativity is the same kind of row on the optical side:
+          &#x03B3;<sub>optical</sub> = 13.6&nbsp;eV / IE, and Mulliken&apos;s electronegativity is built from IE, so that row restates
+          its ingredient too. They show how a high r arises, which is this page&apos;s lesson; they are not
+          evidence that coherence organizes the properties. <strong>The right null for these rows is the ingredient alone,
+          not Z:</strong> 1/&#x03B3; is proportional to &#x03B8;<sub>D</sub> (at fixed T) or to IE, so r(property, &#x03B8;<sub>D</sub>) and
+          r(property, IE) equal the framework&apos;s r on these rows exactly. The Z-polynomial null above rules out a trend with atomic number. It is not evidence for the framework,
+          and &ldquo;0.60&ndash;0.98 against &le; 0.53&rdquo; should not be read as one.
         </p>
 
         {/* Regime filter */}

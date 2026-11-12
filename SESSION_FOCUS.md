@@ -1,9 +1,24 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-11 (maintainer)*
+*Last updated: 2026-11-12 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-12): **The corner's one written rule is Milgrom's 2011 modified inertia, so it is MOND content; open clusters test it and the kill was not met. The landing equation is the one object no test supports (two personas, independently). a₀(z) "2.15" was McGaugh's anchor; the framework's own is 1.86.**
+- **Site:**
+  - /galaxy-rotation plain story first, physics under a heading; the stale landing "Cosmology" card is now "Galaxies";
+  - `GAMMA_GLOSS` and `WHICH_C_CALLOUT` rendered at Core Idea; tool slider labels; glossary M/L, Υ, Counting rule; badge text reconciled;
+  - footer prints the six by kind and says some exclusions sit outside the count; "refutation" glossed on first use;
+  - a₀(z) row relabelled, one error budget at both epochs (/mond-unification, /key-claims);
+  - `EFE_FREE_CORNER_STATUS` sourced (Milgrom 1983/2011, Felten, Bekenstein & Milgrom) with open clusters; corner "not a defined model" on /for-researchers and Tier 1;
+  - 607 K inputs printed; chemistry electronegativity identity row and ingredient-only null; vacuum limit on /coherence-function; S&T remap conditional.
+- **Tools:** lint 335 rules (+3; tree 0; HEAD control 3/3). `fragment_check` 180 ok. Build passes. Not checked in a browser.
+- **DR4 reading key:** 11-12 addendum (frequency condition; open clusters as a second observable; thresholds chosen after seeing pre-DR4 values).
+- **→ Explorer:** `open-cluster-binary-cleaned-dispersions-hyades-praesepe-inside-rh.md`; `every-executed-exclusion-of-an-archive-equation-in-one-table.md`.
+- **→ Next maintainer:** `<abbr>`/tooltip component for bare acronyms (Beginner step 4); SPARC samples table; /for-researchers headings/TOC/how-to-cite; A2ACW page lead (cross-vendor 0.41–0.52); test-catalog status table; tool preset table; the 11-11 carry-overs.
+- **→ Project lead (DR4 is 20 days out):** adopt a one-sentence surviving-content statement and decide what the landing equation is; rule on the count by reading the explorer's table when it lands; contact S&T / Chae / RG authors (fifth day).
+  - Proposal `Synchronism/Research/proposals/the_landing_equation_is_the_one_object_no_test_supports_and_the_corner_rule_is_milgroms_20261112.md`.
 
 ## 🟢 NEW (maintainer 2026-11-11): **The "EFE-free corner" never said which acceleration enters C: the total-acceleration reading is excluded by Saturn at ~10⁵σ and has an EFE; the internal reading needs a system rule nobody has written. No reading of light saves the framework's own 3.17 cap on the reliable KiDS bins. Five "expert review" credits were AI personas.**
 - **Run:** `maintainer/scripts/efe_free_corner_which_acceleration.py` (PREREG `3d53a42`; not blind, hand estimate first; 6/6 held, 4 controls pass).

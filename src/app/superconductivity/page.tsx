@@ -43,8 +43,18 @@ export default function Superconductivity() {
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-warm)' }}>
           <h3 style={{ color: 'var(--color-accent-warm)' }}>Session #616 Audit Result</h3>
           <p style={{ color: 'var(--color-text-secondary)' }}>
-            &#x03B7; &#x2261; Abrikosov-Gor&apos;kov pair-breaking efficiency, known since 1960.
+            The archive labels &#x03B7; as Abrikosov-Gor&apos;kov pair-breaking efficiency (1960); see the caveat below.
             The T<sub>c</sub> formula predicts 607K for YBCO; actual T<sub>c</sub> is 93K (6.5&times; wrong).
+            <span style={{ display: 'block', marginTop: '0.4rem', fontSize: '0.9em' }}>
+              <strong>The inputs, so you can reproduce it:</strong> T<sub>c</sub> = &#x0394;/(1.76 k<sub>B</sub> &#x03B7;) with
+              &#x0394; = 35 meV (YBCO&apos;s maximum d-wave gap) and &#x03B7; = 0.38 (Session #297&apos;s value): 35 / (1.76 &times; 0.08617 &times; 0.38)
+              = 607 K (Session #616, Test 5). At &#x03B7; = 1 the formula is exactly BCS weak coupling and gives 231 K, so
+              &#x03B7; &lt; 1 <em>raises</em> T<sub>c</sub>. Two further reasons the formula cannot describe a cuprate: real
+              Abrikosov&ndash;Gor&apos;kov pair breaking enters through the digamma equation
+              ln(T<sub>c0</sub>/T<sub>c</sub>) = &#x03C8;(&frac12; + &#x03B1;/2&#x03C0;k<sub>B</sub>T<sub>c</sub>) &minus; &#x03C8;(&frac12;) and lowers
+              T<sub>c</sub>, not as a factor on &#x0394;; and d-wave cuprates have 2&#x0394;/k<sub>B</sub>T<sub>c</sub> &asymp; 5&ndash;9, not BCS&apos;s 3.53,
+              which is why Session #297 had to add a 0.4 d-wave factor by hand.
+            </span>
             All 23 predictions (P292-P300) are standard condensed matter physics in &#x03B7; notation.
             <strong> Zero unique predictions.</strong>
           </p>

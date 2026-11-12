@@ -234,8 +234,8 @@ export default function CoherenceExplorer() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
           <div className="card">
             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
-              <strong>Initial slope / saturation rate</strong> (&#x03B3;; proposed as &ldquo;sharpness&rdquo;) = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{gamma < 0.1 ? gamma.toFixed(3) : gamma.toFixed(2)}</span>
-              {gamma > 0 && <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em' }}> &middot; 10&ndash;90% width {Math.log10((Math.exp(Math.atanh(0.9) / gamma) - 1) / (Math.exp(Math.atanh(0.1) / gamma) - 1)).toFixed(2)} dex</span>}
+              <strong>&#x03B3;, how early the curve rises</strong> = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{gamma < 0.1 ? gamma.toFixed(3) : gamma.toFixed(2)}</span>
+              {gamma > 0 && <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em' }}> &middot; 10&ndash;90% width {Math.log10((Math.exp(Math.atanh(0.9) / gamma) - 1) / (Math.exp(Math.atanh(0.1) / gamma) - 1)).toFixed(2)} dex (1 dex = a factor of 10 in density)</span>}
             </label>
             <input
               type="range" min="0.01" max="4.0" step="0.01" value={gamma}

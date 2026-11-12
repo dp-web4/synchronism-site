@@ -33,7 +33,7 @@ export default function Home() {
           known physics renamed, which parts the data killed, and what that rules out for any theory of the same shape.{' '}
           <strong>This is an AI-run research notebook: the research, audits and computations are done by AI agents, with one
           human, the project lead (&ldquo;dp&rdquo; throughout this site), setting direction and overseeing. No journal and no
-          outside physicist has reviewed it.</strong>{' '}<strong>&ldquo;Coherence&rdquo; here is a score for how collectively a system&apos;s parts act, computed from its density; it is not quantum coherence, and a superconductor scores low on it.</strong>{' '}
+          outside physicist has reviewed it.</strong>{' '}<strong>&ldquo;Coherence&rdquo; here is a score for how collectively a system&apos;s parts act, computed from its density; it is not quantum coherence, and a superconductor scores low on it.</strong> (Why: the score depends only on how densely matter is packed, and a metal is no denser when it becomes a superconductor; the quantum order that makes a superconductor special is something this formula does not measure.){' '}
           The bet: a single dial &mdash; how coherently a system&apos;s parts act together, computed from its
           density &mdash; might explain what currently needs a separate patch at every scale (dark matter for
           galaxies, wavefunction collapse for quantum measurement). That is what the equation tried to do.
@@ -623,13 +623,16 @@ export default function Home() {
               </Link>
 
               <Link href="/galaxy-rotation" className="card" style={{ textDecoration: 'none' }}>
-                <h3 style={{ color: 'var(--color-accent-blue)' }}>Cosmology</h3>
+                <h3 style={{ color: 'var(--color-accent-blue)' }}>Galaxies</h3>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-                  Galaxy rotation tested on 14,610 galaxies (MOND reparametrization + environment
-                  scatter). Dark matter mechanism: structural failure (Bullet Cluster sign error,
-                  March 2026).
+                  Why do outer stars orbit too fast? Keyed on density, the equation barely changes gravity in a real
+                  galaxy and loses to MOND on SPARC. Keyed on acceleration it fits, and is MOND&apos;s own formula.
+                  The page opens with the plain version; new readers may prefer the Galaxy Curve Plotter first.
+                  (The environment-scatter add-on, run on 14,610 galaxies, failed; the dark-matter mechanism carried a sign
+                  error on the Bullet Cluster.)
                 </p>
-                <span className="badge badge-failed" title="Prediction contradicted by data — kill criterion fired or claim demoted on audit">Failed — Mechanism Under Revision</span>
+                <span className="badge badge-failed" title="Prediction contradicted by data — kill criterion fired or claim demoted on audit">Failed — density-keyed</span>{' '}
+                <span className="badge badge-reparametrization" title="Re-expresses known physics in new notation">Reparametrization — acceleration-keyed</span>
               </Link>
 
               <Link href="/gamma-boundary" className="card" style={{ textDecoration: 'none' }}>

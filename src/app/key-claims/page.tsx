@@ -549,7 +549,13 @@ export default function KeyClaims() {
             (McGaugh, Lelli &amp; Schombert 2016, PRL 117, 201101). The 0.16 offset is
             <strong> 0.7&#x03C3; against the systematic &mdash; consistent</strong>, and it is
             H&#x2080;-dependent: at SH0ES&apos; H&#x2080; = 73 the same relation gives
-            1.13 &#x00D7; 10&#x207B;&#x00B9;&#x2070;, 6% low.
+            1.13 &#x00D7; 10&#x207B;&#x00B9;&#x2070;, 6% low.{' '}
+            <strong>Same error budget at both epochs:</strong> against the random error alone the offset is 8&#x03C3;.
+            At z&nbsp;&asymp;&nbsp;1 the same anchor scaled by E(z) is 1.86 against Ciocan&apos;s measured 2.38: about
+            10&#x03C3; on the measurement error alone (the figure on{' '}
+            <a href="/parameter-derivations" style={{ color: 'var(--color-accent)' }}>Parameter Derivations</a>), about
+            1&#x03C3; with the same 20% systematic carried. So the relation is consistent at both epochs once systematics are
+            carried and excluded at both without them. Quoting 0.7&#x03C3; here and ~10&#x03C3; there mixes the two budgets.
             <br />
             <em style={{ fontSize: '0.9em' }}>
               Lead rewritten 2026-08-10. It previously read &ldquo;a ~13% miss&hellip; not an exact

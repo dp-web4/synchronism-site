@@ -30,7 +30,7 @@ const steps = [
     That formula did not survive testing. Where it made a checkable prediction, the sign came out backwards
     (predicted correlation +0.55, measured −0.55). In plain words: the formula said galaxies with fewer stars moving
     together should sit further above the standard galaxy rotation relation, and the real galaxies did the reverse; the
-    ±0.55 is the correlation between the formula's γ and how far each galaxy sits from that relation. N_corr also had to be defined differently in every field to make
+    0.55 (+ predicted, − measured: opposite sign) is the correlation between the formula's γ and how far each galaxy sits from that relation. N_corr also had to be defined differently in every field to make
     it work. When γ is simply fitted to galaxy data it comes out near 0.5 — the value at which the equation turns
     into MOND's (MOND: a 40-year-old rival idea that says gravity itself gets stronger than Newton predicts in very weak
     fields, instead of adding dark matter, a proposed invisible substance that has never been directly detected and is inferred only from its gravitational pull; section E says more). So read γ = 2/√N_corr as the starting hypothesis, not as how things work.
@@ -66,8 +66,9 @@ const steps = [
     curious: `Verdict first: probably a coincidence, and not evidence for this framework. Why: c and H₀ (the Hubble
     constant) can only be combined into an acceleration one way, cH₀, so any formula of the form cH₀ × (a number) will
     land near MOND's a₀ for some number. Here the number is 1/(2π), which nothing derives; with it the match is off by
-    ~13%. Milgrom noticed that a₀ is close to cH₀ in 1983, so the closeness was known before this framework. See Honest Assessment.`,
-    highlight: 'A number measured in galaxies sits suspiciously close to a number from the expansion of the universe. Nobody knows why, and this framework does not explain it either.',
+    ~13%. Is 13% close? For a number built this way, not impressively: some simple multiple of cH₀ will always land
+    about this near, so the closeness by itself carries little weight. Milgrom noticed that a₀ is close to cH₀ in 1983, so the closeness was known before this framework. See Honest Assessment.`,
+    highlight: 'a₀ ≈ cH₀/2π: a coincidence?',
   },
   {
     title: 'Scale Down: Quantum Measurement',

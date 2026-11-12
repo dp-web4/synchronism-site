@@ -114,6 +114,13 @@ export default function CoherenceFunction() {
             <li><strong>The coupling: two live forms.</strong> (a) Algebraic g<sub>obs</sub> = g<sub>bar</sub>/C, the reading
               behind f<sub>DM</sub> = 1 &minus; C and the ledger. (b) The field equation
               &nabla;&middot;[C(&#x03C1;)&nabla;&Phi;] = 4&pi;G&#x03C1;, which reduces to (a) <em>only in spherical symmetry</em>.
+              <strong>In empty space it is not yet a defined equation:</strong> the unfloored C is 0 where &#x03C1; = 0, so the
+              operator vanishes and nothing constrains &Phi; there (equivalently g = g<sub>N</sub>/C &rarr; &infin;). A floor C<sub>min</sub>
+              makes vacuum Newtonian with G/C<sub>min</sub>; a smoothing length makes C depend on matter within that length. The
+              archive has written neither; the planets require a smoothing length of at least ~30 AU, and lunar laser ranging
+              bounds it from above (see the{' '}
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
+              Refracted Gravity&apos;s floor &#x03B5;<sub>0</sub> is its answer to the same question.
               In a thin disc the &nabla;C&middot;&nabla;&Phi; term refracts field lines and the two differ by up to 5.9&times;
               (bounded by the ceiling) once the knee sits inside the disc; at this framework&apos;s own knee, which never enters
               a disc, they coincide. Form (b) is <strong>Refracted Gravity&apos;s field equation</strong> (Matsakos &amp; Diaferio

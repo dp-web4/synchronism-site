@@ -1,0 +1,78 @@
+| # | equation or reading | C | tier | kind | status | statistic | data | written before | root | in the 6 | source |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | bounded boost, cap 1/Om (BTFR slope, TEST-09) | C_a floored | A2 | fs-data | weak | n 3.35+-0.07 vs obs 3.75+-0.10 (3.3s); fires only at B_max = 1/Om | 123 SPARC | registered | cap | yes | ledger.ts REFUTATION_ROWS #1 |
+| 2 | bounded boost, cap 1/Om (dwarf f_DM, TEST-10) | C_a floored | A2 | fs-data | stands | 106/153 exceed at face value; 28 at >=3s at 3.17; caps <= ~7.5 excluded at 3s by one disc | 153 SPARC | registered | cap | yes | ledger.ts #2, TEST10_ONE_STATEMENT |
+| 3 | bounded boost vs galaxy weak lensing | C_a floored | A2 | fs-data | cond | 3.17 cap exceeded in 3 reliable bins at x5 (4-9s); conditional on a light-deflection rule | KiDS-1000 RAR | none | cap |  | ledger.ts LENSING_LEG_ASSUMPTION |
+| 4 | Om floor at the solar mid-plane (Oort limit) | C_a floored | A2 | fs-data | stands | f_DM 0.685 vs 0.13+-0.04 (15s; 7s in surface density) | local Oort limit | script header only | cap |  | XF knee_inventory_oort_limit_and_globular_clusters_output.txt |
+| 5 | field equation div[C grad Phi], density-keyed, floored | C_rho floored | A2 | fs-data | stands | chi2/N 69-160 vs MOND simple-mu 21.2; at RG's floor 195-2700 | 153 SPARC | none | cap |  | PRED 2026-09-09; XF sparc_pinned_at_rg_knee_l2_output.txt |
+| 6 | evolving floor 1-Om(z) at high z | C_a floored | S | fs-data | stands | Price+21: 10-13 of 21 above cap at >2s; RC100 slope 1.07+-0.33 vs 2.2-2.9 | high-z discs | a9dfc48 | cap |  | XF evolving_floor_highz_and_ambient_z0_output.txt |
+| 7 | gamma = 2 pin (RAR transition shape) | C_g | A1 | mond | weak | dBIC +184 by point, ~+11 by galaxy; ~2s with own Upsilon per law | SPARC RAR | registered | gamma2 | yes | ledger.ts #3 |
+| 8 | environment raises G_eff in voids (> 20% of RAR scatter) | C_rho | A2 | reg | stands | r2 = 0.0001 vs bar 0.09 | SPARC + Cosmicflows-4 | registered | env | yes | ledger.ts #4 |
+| 9 | compander under a modified-Poisson completion vs Cassini | C_g | S | mond | stands | 14.5-19.3s for gamma 0.3-3 at pinned M/L; family needs Upsilon_d 1.2-1.4 (2.9s on SPARC) | Cassini + SPARC | registered (TEST-25, post-registry) | solar-tail | yes | ledger.ts TEST25_STATUS_SENTENCE |
+| 10 | compander direct tail, no EFE (planetary perihelia) | C_g | A2 | mond | stands | Saturn -9,576 mas/cy vs -0.32+-0.47; gamma < 0.87 excluded at 3s | EPM2011 | cbfa9c5 | solar-tail |  | X direct_tail_planetary_precession_output.txt |
+| 11 | observer-relative Bell/CHSH (bet B1) | none | A0 | constr | stands | local S = 1.98; nonlocal grid S = 2.0; 2.67 only with signalling | simulation | registered (B1) | bell | yes | ledger.ts #6; PRED B1 |
+| 12 | Peres-Mermin on the substrate | none | A2 | constr | stands | 0/512 assignments | simulation | none | bell |  | kuramoto-lattice-suite/06_peres_mermin_contextuality.py (rec) |
+| 13 | density-keyed law, one global knee free | C_rho | A1 | fs-data | stands | dBIC +2843 (galaxy bootstrap 2178-3590), worse in 105/122 | SPARC 2438 pts / 122 gal | PREREG for the galaxy-level rerun only (10-18) | dens-gal |  | ledger.ts DBIC2843_SPEC |
+| 14 | density-keyed law AS WRITTEN: rho_crit = 0.028 V^0.5, gamma = 2 | C_rho | A1 | fs-data | stands | dBIC +8404, worse in 115/122 (gal-sd 824); gamma free +6407; A,B free best B ~ -4 at +2295 | SPARC 2438 / 122 | 09bea5e (today) | dens-gal |  | XF density_law_at_archive_calibration_v05_output.txt |
+| 15 | local density as the boost variable | C_rho | A2 | fs-data | stands | sigma(logB|rho) 0.161 vs sigma(logB|g_bar) 0.118; mixing weight 1.00 [0.75,1.00] excludes all-local-rho | SPARC | not checked | dens-gal |  | X rar_scatter_nogo_output.txt (rec) |
+| 16 | density-keyed law at the solar neighbourhood, archive calibration | C_rho | A1 | fs-data | stands | boost in g 2.7 (gamma 2) to 10.5 (gamma 0.489) at rho 0.09; Oort limit allows ~1.0-1.3 (recall). The site's 3.5e4 uses 0.029 V^2, not the archive's form | Oort limit / wide binaries | 09bea5e (P7) | dens-local |  | XF density_law_at_archive_calibration_v05_output.txt LOCAL |
+| 17 | density-keyed law at Chae's wide-binary radii | C_rho | A2 | fs-data | stands | rotation curve missed by +2.0 to +4.2 dex | Gaia wide binaries | none | dens-local |  | X efe_required_ambient_density_output.txt (rec) |
+| 18 | density-keyed G drifting with the Sun's motion (LLR) | C_rho smoothed | S | fs-data | cond | 68/74 grid laws excluded at l = 1 pc, 62/74 at 10 pc; needs a smoothing length no document states | LLR Gdot/G | 80b8c9c | dens-local |  | X density_keyed_gdot_solar_motion_output.txt (rec) |
+| 19 | density-keyed law read pointwise in the interplanetary medium | C_rho | S | fs-data | cond | 192/192 grid points exceed 1e-6 in GM_sun(Earth)/GM_sun(Saturn) | ephemerides | 0ad68f3 | dens-local |  | M density_keyed_law_vs_interplanetary_medium_output.txt; 'not a refutation' |
+| 20 | rho_crit velocity exponent B = 0.5 (premise R_half ~ V^0.75) | C_rho | A1 | premise | stands | measured exponent -0.15+-0.18 (p = 1.08+-0.09): B = 0.5 at 3.6s; the site's V^+2 at 12.2s | SPARC Table 1, 129 | none | rhocrit-V |  | F rho-crit-has-no-velocity-exponent-A-is-a-half-power-coefficient.md |
+| 21 | gamma = 2/sqrt(N_corr) vs RAR offset | C_g/gamma | A0 | fs-data | stands | predicted r = +0.55, measured r = -0.55 | SPARC | S430 prediction (rec) | gammaNcorr |  | PRED Bucket 2 (S430/S437; not re-run) |
+| 22 | Appendix D sec. D.3 covariant DE completion as written (EdS) | DE sector | A1 | fs-data | stands | chi2 ~ 9,900 | DESI DR2 + CMB + SN | none | de-cov |  | PRED 2026-08-12 block |
+| 23 | completion B (site pinning) | DE sector | S | fs-data | stands | dChi2 >= +79 vs LCDM at every omega | DESI DR2 + CMB + SN | none | de-cov |  | PRED 2026-08-12 |
+| 24 | DE sector without CDM (C0 = Om_b) | DE sector | S | fs-data | stands | no gamma gives q0 < 0 and dark/baryon 5.36 (best 1.54) | recombination ratio | 71ba3e0 | de-nocdm |  | M de_sector_without_cdm_output.txt (rec) |
+| 25 | local-fluid DE horn | DE sector | S | fs-data | stands | excluded unless |eps| < ~1e-5 | P(k) | 7d8efbf | de-local |  | F de-sector-local-horn (rec) |
+| 26 | uniform G/C governs growth and local dynamics | DE sector | S | fs-data | stands | ISW A = -8.5 (-47.5s); Gdot/G >= 527x the LLR 2s edge for gamma 0.3-3 | ISW, KiDS, LLR | be3ecba; script header | uniformG |  | XF uniform_g_over_c_growth_vs_isw_s8_mu_output.txt; M de_modified_g_reading_vs_llr_output.txt |
+| 27 | Session 107 growth suppression (TEST-04a) | DE/growth | A2 | fs-data | weak | registered bin ~0.9s (LRG1 row corrected); mechanism withdrawn 08-11 | DESI fs8 | registered | test04a |  | PRED Bucket 2 row; ledger COUNT_RULE_SENTENCE (+1 under point-estimate rule) |
+| 28 | inflow gravity, radiative sector (scalar GW) | substrate | A2 | fs-data | stands | Hulse-Taylor 0.9983+-0.0016 of GR tensor quadrupole; LIGO polarization tensor | binary pulsar, LIGO | none | spin2 |  | PRED Bucket 2 (Phase-14) |
+| 29 | velocity-anisotropic identity threshold | substrate | A2 | fs-data | stands | 11-19 orders above cavity / clock-comparison bounds (10-19: 1e-22 figure uncheckable as written) | isotropy bounds | none | aniso |  | PRED Bucket 2 (Phase-16) |
+| 30 | door #3 intrinsic decoherence D k^2 at Planck D ('near-reach, not Planck-killed') | substrate | A0 | fs-data | stands | D/D_Pl < 4e-39 (Borexino 11C); hydrogen heating at D_Pl | Borexino, matter stability | none | door3 |  | PRED frame block l.~70 vs block l.987; X door3_*_output.txt |
+| 31 | dimension-4 Lorentz violation at natural c ~ 1e-2 | substrate | A2 | fs-data | stands | 15-27 orders (corrected 10-30 from 16-28) | LIV bounds | none | liv |  | F liv-dim4 (rec) |
+| 32 | 'measurement is sampling' (CRT reading of witnessing) | substrate | S | fs-data | stands | Zeno (Itano) 40.3s at n = 8; T_scan rule g2(0) ~ 1 vs 7.5e-5 | Itano 1990; HBT | ee7f509; 5139489 | crt |  | X crt_zeno_itano_fit_output.txt; X t_scan_window_rule_hbt_output.txt |
+| 33 | transfer rule + saturation = Navier-Stokes | substrate | A0 | constr | stands | proved 1-DOF scalar diffusion (irrotational, dissipative) | proof | none | ns |  | PRED Bucket 2; FUNDAMENTALS still states it unannotated in its last section |
+| 34 | monotonic saturation builds the walls (Foundation 3) | substrate | A0 | constr | stands | monotonic-R substrates disperse at 0% | CA simulation | none | f3 |  | PRED Bucket 2 |
+| 35 | 80-orders unification by one tanh | C (any) | A0 | constr | stands | tanh(gamma log) saturates within ~1.6 decades | construction | none | 80orders |  | PRED Bucket 2 (S633) |
+| 36 | cosmic interference scale ~500 Mpc | cosmology | A2 | constr | stands | dimensional error | construction | none | lambda500 |  | PRED Bucket 2 (S632) |
+| 37 | a0 from the Jeans analysis | a0 | A2 | constr | stands | stated formula off by 614x | construction | none | a0jeans |  | PRED Bucket 2 (S687) |
+| 38 | fractal coherence bridge (OQ007) | cosmology | A2 | fs-data | stands | 0/7 scale boundaries | scale boundaries | none | oq007 |  | PRED Bucket 2 (S611-614) |
+| 39 | hot-SC T_c formula (TEST-18 candidates) | eta / chemistry | A1 | fs-data | stands | YBCO 607 K vs 93 K (6.5x); registered falsification is dated 2035 | YBCO T_c | registered (2035 date) | tc |  | PRED Bucket 2; EXPERIMENTAL_TEST_CATALOG TEST-18 |
+| 40 | chemistry gamma ladder: melting points, critical exponents, conductivity | gamma (chemistry) | A0 | fs-data | stands | melting 53% mean error; exponents 2x off; conductivity r = -0.414 (site showed +0.955) | chemistry tables | none | chem |  | README honest limitations; PRED 11-02 |
+| 41 | compatibility law p_crit ~ 1/<C> (bet B4) | coupling | A0 | fs-data | stands | 0.0925 predicted vs 0.0320 at C = 0.2 (2.9x); affine fit 82% intercept | own coupling runs | none | b4 |  | PRED B4 (09-25) |
+| 42 | EFE-free corner, internal reading (Milgrom 2011 rule) | C_g | S | mond | stands | Hyades cleaned 0.21+-0.05 = 0.30 of prediction (3.3s with 20% sys); 4 of 4 cleaned clusters <= 0.65 | Torres+2026, Geller+, Torres+21 | 8d8070a (reading); thresholds set 11-12 after DR3 values | corner |  | XF hyades_torres2026_inner_posthoc_output.txt; XF system_partition_rules_output.txt sec. 6 |
+| 43 | EFE-free corner, total-acceleration reading | C_g | S | mond | stands | Saturn ~85,000 mas/cy vs -0.32+-0.47 | EPM2011 | 3d53a42 | corner |  | ledger.ts EFE_FREE_CORNER_STATUS |
+| 44 | a0(z) = cH(z)/2pi | a0 | A1 | fs-data | unresolved | level-free slope n: Ciocan bins 0.71+-0.13, global line 1.15 (straddle n = 1); RC100 0.0+-0.5; z~2.3 BTFR on constant a0. (Level at z~1, 1.86 vs 2.38, is anchor-dominated) | Ciocan+2026 MUSE-DARK | post-hoc | a0z |  | XF a0_constant_branch_four_anchors_output.txt; TEST CATALOG l.504-518 |
+| W1 | density-keyed law at universal gamma on globular clusters | C_rho | A2 | fs-data | withdrawn | '3.7-4.4x Newton' was a ratio to a near-zero baseline; model separation | Baumgardt-Hilker | none | gc |  | PRED 09-19, 10-31 |
+| W2 | EFE-free corner on 42 globular clusters, 10.6s | C_g | S | mond | withdrawn | model separation (shuffled-data control reproduces it); replacement +2.9s, conditional on mass model | Baumgardt-Hilker | fcc4809 | corner |  | PRED 10-31 |
+| W3 | compander form loses 2.10x to MOND mu | C_g | S | mond | withdrawn | function-only swap 0.988x | 153 SPARC | 04c4037 | form |  | PRED 09-16 |
+| W4 | substituted DE branch forced w_a, 3.4-5.4s | DE sector | S | lcdm | withdrawn | died on execution: gamma 0.487, dChi2 -0.3 vs LCDM | DESI DR2 | none | de-sub |  | PRED 08-12 |
+
+COUNTS (live = status stands or weak; cond / unresolved / withdrawn excluded unless stated)
+R0  the count today (registered, fired)
+   rows 6; independent roots 5: cap [1,2]; gamma2 [7]; env [8]; solar-tail [9]; bell [11]
+R1  every live executed loss, any tier, any kind
+   rows 40; independent roots 29: cap [1,2,4,5,6]; gamma2 [7]; env [8]; solar-tail [9,10]; bell [11,12]; dens-gal [13,14,15]; dens-local [16,17]; rhocrit-V [20]; gammaNcorr [21]; de-cov [22,23]; de-nocdm [24]; de-local [25]; uniformG [26]; test04a [27]; spin2 [28]; aniso [29]; door3 [30]; liv [31]; crt [32]; ns [33]; f3 [34]; 80orders [35]; lambda500 [36]; a0jeans [37]; oq007 [38]; tc [39]; chem [40]; b4 [41]; corner [42,43]
+R2  the archive asserts it (A0-A2), any kind
+   rows 31; independent roots 24: cap [1,2,4,5]; gamma2 [7]; env [8]; solar-tail [10]; bell [11,12]; dens-gal [13,14,15]; dens-local [16,17]; rhocrit-V [20]; gammaNcorr [21]; de-cov [22]; test04a [27]; spin2 [28]; aniso [29]; door3 [30]; liv [31]; ns [33]; f3 [34]; 80orders [35]; lambda500 [36]; a0jeans [37]; oq007 [38]; tc [39]; chem [40]; b4 [41]
+R3  canonical docs or framework papers assert it (A0-A1)
+   rows 15; independent roots 14: gamma2 [7]; bell [11]; dens-gal [13,14]; dens-local [16]; rhocrit-V [20]; gammaNcorr [21]; de-cov [22]; door3 [30]; ns [33]; f3 [34]; 80orders [35]; tc [39]; chem [40]; b4 [41]
+R4  archive-asserted, framework-specific, external data
+   rows 20; independent roots 14: cap [1,2,4,5]; dens-gal [13,14,15]; dens-local [16,17]; gammaNcorr [21]; de-cov [22]; test04a [27]; spin2 [28]; aniso [29]; door3 [30]; liv [31]; oq007 [38]; tc [39]; chem [40]; b4 [41]
+R5  strictest: A0-A1, framework-specific data, stands (no 'weak')
+   rows 9; independent roots 8: dens-gal [13,14]; dens-local [16]; gammaNcorr [21]; de-cov [22]; door3 [30]; tc [39]; chem [40]; b4 [41]
+    site-built readings (no archive assertion)
+   rows 9; independent roots 8: cap [6]; solar-tail [9]; de-cov [23]; de-nocdm [24]; de-local [25]; uniformG [26]; crt [32]; corner [42,43]
+    conditional on an unwritten rule
+   rows 3; independent roots 2: cap [3]; dens-local [18,19]
+
+THE SIX UNDER R2-R5 (does each row survive an 'archive asserts it' clause?)
+   # 1 tier A2 kind fs-data status weak    R2 in  R4 in  R5 OUT  bounded boost, cap 1/Om (BTFR slope, TEST-09)
+   # 2 tier A2 kind fs-data status stands  R2 in  R4 in  R5 OUT  bounded boost, cap 1/Om (dwarf f_DM, TEST-10)
+   # 7 tier A1 kind mond    status weak    R2 in  R4 OUT  R5 OUT  gamma = 2 pin (RAR transition shape)
+   # 8 tier A2 kind reg     status stands  R2 in  R4 OUT  R5 OUT  environment raises G_eff in voids (> 20% of RAR scatter)
+   # 9 tier S  kind mond    status stands  R2 OUT  R4 OUT  R5 OUT  compander under a modified-Poisson completion vs Cassini
+   #11 tier A0 kind constr  status stands  R2 in  R4 OUT  R5 OUT  observer-relative Bell/CHSH (bet B1)
+
+live rows by tier x kind: {('A0', 'constr'): 4, ('A0', 'fs-data'): 4, ('A1', 'fs-data'): 5, ('A1', 'mond'): 1, ('A1', 'premise'): 1, ('A2', 'constr'): 3, ('A2', 'fs-data'): 11, ('A2', 'mond'): 1, ('A2', 'reg'): 1, ('S', 'fs-data'): 6, ('S', 'mond'): 3}

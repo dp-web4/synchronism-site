@@ -1,0 +1,9 @@
+Hyades, Plummer a = 3.1 pc (Roeser+2011), 3D aperture 5.5 pc (Torres+2026 'inner region'); r_t 9.0 pc truncated and untruncated
+  M_lo 193 (Hunt & Reffert, binary-corrected)  trunc None: Newton 0.180  internal 0.631/0.631/0.630  obs/Newton 1.17  obs/internal 0.33  internal above obs by 3.1 sigma (20% sys) / 8.4 (random)
+  M_lo 193 (Hunt & Reffert, binary-corrected)  trunc  9.0: Newton 0.179  internal 0.622/0.622/0.622  obs/Newton 1.18  obs/internal 0.34  internal above obs by 3.1 sigma (20% sys) / 8.2 (random)
+  M_mid 314                                    trunc None: Newton 0.230  internal 0.715/0.715/0.714  obs/Newton 0.91  obs/internal 0.29  internal above obs by 3.3 sigma (20% sys) / 10.1 (random)
+  M_mid 314                                    trunc  9.0: Newton 0.228  internal 0.705/0.705/0.704  obs/Newton 0.92  obs/internal 0.30  internal above obs by 3.3 sigma (20% sys) / 9.9 (random)
+  M_hi 435 (Roeser+2011 to 30 pc)              trunc None: Newton 0.270  internal 0.778/0.778/0.777  obs/Newton 0.78  obs/internal 0.27  internal above obs by 3.5 sigma (20% sys) / 11.4 (random)
+  M_hi 435 (Roeser+2011 to 30 pc)              trunc  9.0: Newton 0.268  internal 0.767/0.767/0.766  obs/Newton 0.78  obs/internal 0.27  internal above obs by 3.5 sigma (20% sys) / 11.1 (random)
+Reading rule (maintainer DR4 addendum 11-12, mid counted mass): <= 0.65 counts against reading (I).
+Caveat: 75% completeness for P < 1e4 d; residual long-period binaries inflate sigma, so 0.21 is an upper estimate.

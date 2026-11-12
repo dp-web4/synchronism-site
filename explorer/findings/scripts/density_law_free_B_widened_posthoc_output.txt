@@ -1,0 +1,14 @@
+profile over B (A, gamma, sigma free at each B); dBIC counted with k = 4
+  B  -12.0: gamma 0.0187  lnA   +34.12  dBIC vs B  +2647.0  gal-sd  350.9  lose 109/122
+  B   -8.0: gamma 0.0269  lnA   +20.88  dBIC vs B  +2479.5  gal-sd  327.3  lose 109/122
+  B   -6.0: gamma 0.0335  lnA   +13.97  dBIC vs B  +2369.0  gal-sd  309.4  lose 110/122
+  B   -4.0: gamma 0.0420  lnA    +6.53  dBIC vs B  +2294.7  gal-sd  298.8  lose 109/122
+  B   -3.0: gamma 0.0458  lnA    +2.40  dBIC vs B  +2324.8  gal-sd  305.8  lose 108/122
+  B   -2.0: gamma 0.0481  lnA    -2.10  dBIC vs B  +2434.0  gal-sd  323.2  lose 107/122
+  B   -1.0: gamma 0.0481  lnA    -7.03  dBIC vs B  +2619.5  gal-sd  346.7  lose 106/122
+  B   +0.0: gamma 0.0462  lnA   -12.33  dBIC vs B  +2850.4  gal-sd  371.5  lose 105/122
+  B   +0.5: gamma 0.0447  lnA   -15.11  dBIC vs B  +2971.3  gal-sd  383.3  lose 103/122
+  B   +1.0: gamma 0.0430  lnA   -17.96  dBIC vs B  +3091.1  gal-sd  394.4  lose 103/122
+  B   +2.0: gamma 0.0389  lnA   -23.97  dBIC vs B  +3316.8  gal-sd  414.6  lose 103/122
+best grid B -4.0  dBIC +2294.7
+note: in the log regime C ~ gamma(ln rho - lnA) - gamma*B*ln V, so B is a V-dependent additive term in C

@@ -1,0 +1,27 @@
+Starting Synchronism Explorer Session at Thu Nov 12 08:00:01 PST 2026
+Today's two findings are committed and pushed (`6f25275`). Neither changes Bucket 0, which is still zero confirmed novel predictions. The "~3.5×10⁴" number and the "+16,486 at the published A" both rest on a units slip the site diagnosed on 08-27 and never propagated. Every density-law fit the site ran used ρ_crit = A·V², or one global knee, instead of the archive's 0.028·V^0.5.
+
+**WAKE.** The queue's top topic asked for a count of exclusions. I changed it to a table organised by equation: for each equation the archive writes, is it excluded, does it survive but match MOND/ΛCDM, or does it survive and differ? The Hyades search ran in the background, with its expected result written down before the search.
+
+**1. Every executed loss, by equation** (`exclusion_table_by_equation.py`)
+- The table has 44 rows of losses plus 4 withdrawn ones. Each row says who asserts the equation: canonical docs, framework papers, a single session, or only the site.
+- **Under the strictest rule, none of the footer's six qualify.** That rule is: written in the canonical docs or a framework paper, specific to this framework, lost on outside data, and the result stands. It gives 9 rows in 8 independent causes. If the 1/Ω_m boost cap counts as framework-paper content, one of the six (#2) gets in, which matches the site's own criterion.
+- **The archive's own density calibration (ρ_crit = 0.028·V^0.5, γ = 2) had never been fitted.** I ran it, with the prediction written down first (`09bea5e`). It loses to the acceleration law by ΔBIC +8,404 and is worse in 115 of 122 galaxies. Five of my seven predictions held. With the velocity exponent left free, the best fit reaches +2,295, a better density fit than the +2,843 the site quotes.
+- **The site's "~3.5×10⁴ local over-prediction" uses the V² form.** With the archive's form, the boost near the Sun is 2.7–10.5 in g. That is still ruled out by the Oort limit, but it is 3–4 orders of magnitude smaller. `criticalDensity()` in `equations.ts` still multiplies by V².
+- **Only one equation survives, differs from MOND+ΛCDM, and has data on it: a₀ ∝ H(z).** It is unresolved. Ciocan's two estimates of how a₀ changes with redshift fall either side of the predicted value, and another proposed cosmological scale for a₀ would make the same prediction. That is the closest thing to a one-sentence statement of what survives, which the project lead has been asked for.
+- Two archive notes for back-annotation: FUNDAMENTALS.md has no C(ρ) at all, and it still states the refuted Navier–Stokes equivalence without a caveat.
+
+**2. Hyades.** Torres+2026 (arXiv:2603.00229v2 §12) gives σ = 0.21 ± 0.05 km/s inside about 5.5 pc, with binaries removed using 45 years of radial velocities.
+- That is 0.30 of what the "EFE-free corner" predicts (3.3σ even allowing a 20% systematic) and 0.91 of Newton.
+- All four clusters with binary-cleaned values are now at or below the maintainer's 0.65 threshold. That threshold was written for DR4 data, so applying it to today's values is my extension.
+- No usable Praesepe value exists, and the wide-binary half of the question is still open.
+
+**Mistakes I caught.** My first draft of the a₀(z) row used the level comparison at z ≈ 1. The 10-10 finding had already shown that is the wrong statistic for this prediction; I fixed both the finding and the script. Two of my seven predictions were wrong, as noted above.
+
+**For the maintainer:**
+- Correct `/wide-binaries` lines 73 and 153 and `criticalDensity()`, then add lint rules for the V²-derived numbers.
+- Tell the project lead which counting rule the table supports; they can re-tier rows and re-run it.
+
+I also updated the memory note on chasing a diagnosed slip to every number built on it, and compacted the memory index from 20.9 KB to 16.6 KB, keeping all 87 entries.
+
+**So what?** The count on every page and the framework's own decisive losses are almost separate lists. The one direction left that could move the program is a level-free, multi-source a₀(z) slope test, not DR4 wide binaries.

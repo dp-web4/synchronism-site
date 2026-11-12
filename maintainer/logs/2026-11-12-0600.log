@@ -1,0 +1,32 @@
+Starting Synchronism Maintainer Session at Thu Nov 12 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+The session is finished. Site commit `e347362` and research commit `a7078191` are both pushed. The build passes, the lint shows 0 hits across 335 rules, and `fragment_check` reports 180 links ok. I didn't check any page in a browser.
+
+**WAKE: one finding for the research itself.** Two of today's four visitor personas (simulated AI readers, not outside reviewers) independently reached the same point. The density-keyed equation the landing page leads with is excluded by the galaxy data. The acceleration-keyed version that every fit actually used is MOND's formula at every γ. Cosmology reduces to Λ, the cosmological constant. So the equation the site leads with is the one object no test supports. I wrote a proposal before fixing anything, with suggested one-sentence wording for what survives. The decision is for the project lead.
+
+**Site fixes, mostly moving a qualifier to where the claim is first made:**
+- **/galaxy-rotation:** the plain explanation and the "No, it doesn't replace dark matter" box now come first, with the physics under a "For physicists" heading. The homepage card linking there was a stale February card mislabelled "Cosmology"; it is now "Galaxies".
+- **a₀(z) error:** /mond-unification labelled McGaugh's anchor (2.15) as the framework's own number, which is 1.86 and about 10σ low. It also compared two redshifts with different error budgets. With the same budget at both, the miss is 8σ and ~10σ without systematics, or 0.7σ and ~1σ with them.
+- **Definitions:** "C" now carries a warning that three functions share the letter, and γ has one definition wherever it is introduced (it is not a "Hill coefficient" except in the tail). The glossary gained entries for M/L, Υ and "Counting rule", and its badge descriptions no longer contradict each other.
+- **The refutation count:** the footer now breaks the six refutations down by kind. It also says that some of the strongest failures of the framework's own equations sit outside the count. "Refutation" is defined where it first appears.
+- **Explorer finding drained:** the "EFE-free corner" now cites its sources. Its one written rule is Milgrom's 2011 modified-inertia model, which makes it MOND content rather than the framework's. I relabelled it "not a defined model" on two pages.
+- **DR4 reading key:** I added open clusters as a second observable, with a reading rule. I chose its thresholds today after seeing the existing pre-DR4 values, so it is fixed in advance but not blind; the file says so.
+- **Smaller items:**
+  - the YBCO 607 K prediction now prints its inputs;
+  - the chemistry table marks electronegativity as an identity row;
+  - /coherence-function says the field equation has no defined form in empty space;
+  - the remapping of Saad & Ting's result is marked conditional on our unconfirmed reading of their code.
+
+**Research repo:** PREDICTIONS.md has a new 11-12 block. It corrects my 11-11 claim that no partition rule exists: one exists in the literature, it is Milgrom's, and it has nothing to do with the MRH. No bucket moved; the count stays 6, the range 4–8, and Bucket 0 stays 0.
+
+**Explorer topics seeded:**
+- binary-cleaned velocity dispersions for the Hyades and Praesepe, the measurement the 11-11 test was missing;
+- one table of every executed failure of an archive equation, inside and outside the count, so the counting rule can be decided by reading it.
+
+**Waiting on the project lead (DR4 is 20 days out):**
+- what the landing equation should be, and the one-sentence statement of what survives;
+- the counting-rule decision;
+- contacting Saad & Ting, Chae et al. and the Refracted Gravity authors, now the fifth day. The draft message is in the 11-11 proposal.
+
+Remaining lower-priority items (acronym tooltips, a SPARC sample-size table, /for-researchers structure, the A2ACW page lead) are listed in `maintainer/logs/2026-11-12.md`.

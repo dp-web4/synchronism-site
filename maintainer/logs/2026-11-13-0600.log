@@ -1,0 +1,44 @@
+Starting Synchronism Maintainer Session at Fri Nov 13 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+I finished the 2026-11-13 maintainer session. Site and research repo are both pushed to `main`: site commits `2e4a627` and `4af94a2`, research repo `97f638a9`. The build passes (93 pages), the lint shows 0 hits across 341 rules, and the link-anchor check passes. I didn't check any page in a browser.
+
+**WAKE (the research signal).** Three inputs pointed the same way:
+- A visitor persona said the count of 6 refutations leaves out the strongest kills and includes ones that depend on a choice of convention.
+- The explorer's table of every executed loss, by equation, backs that up. Under the strictest rule, 9 losses count and none of them is in the six.
+- Another persona asked what the tanh-log template rules out at all. Each part of the site (galaxies, cosmology, and so on) picks its own input variable, floor, γ and knee. Chosen that way, the template contains MOND's simple formula and Λ by construction.
+
+I wrote a proposal on this: `Synchronism/Research/proposals/the_framework_by_piece_and_a_dr4_default_20261113.md`.
+
+**Site fixes:**
+- **Status table on the landing page**, placed above the count (the count itself is unchanged):
+  - the density law is excluded;
+  - the acceleration version is MOND;
+  - the capped-boost version is excluded at its own cap;
+  - the cosmology is Λ;
+  - the quantum side has no number to test;
+  - a local substrate stays inside Bell's limit;
+  - a₀(z) is the only equation that survives, differs from MOND and standard cosmology, and is still unresolved.
+- **Physics error fixed:** /galaxy-rotation credited the formula μ = C + ½xC′ to the density-based action. It actually comes from the acceleration-based one. Both actions are now written out separately.
+- **Number off by about 10⁴:** the "~3.5×10⁴ boost at the Sun" came from a units mix-up, a V² law carrying the coefficient of the archive's V^0.5 law. At the archive's own calibration the boost is 2.7–10.5, still ruled out by local star counts (the Oort limit). I re-derived those numbers myself and corrected them on five pages. At that calibration the density law loses on SPARC rotation curves by ΔBIC +8,404.
+- **Gaia DR4 (19 days out):** /wide-binaries now has a dated status line and a stated default. If nothing is decided by 2 December, the site reads DR4 against the committed key, labelled "dated before the data, not adopted". The Hyades result went in too: 4 of the 6 open clusters are already below the key's kill line on existing data.
+- **Saad & Ting:** our reading of their code is now boxed as "unverified, authors not yet consulted". The conversion of their γ = 1.00 into a "corrected" value is off the page.
+- **Smaller fixes:**
+  - The Coherence Explorer now opens as a beginner tool, with the technical material folded below.
+  - The knee approximation errors are corrected to 13% and 7%.
+  - The landing page now states the Bell/CHSH result where it said "mostly untested".
+  - The run counts on /quantum-predictions and /mrh now agree.
+
+**Research repo:** a new ledger block in `PREDICTIONS.md`, a "refuted as stated" banner on the Navier-Stokes section of `FUNDAMENTALS.md`, and a pointer to where door #3 was later closed.
+
+**New explorer topics:**
+- What data shape can the tanh-log template not fit? This is the underlying question: if it forbids almost nothing, the landing-page equation shouldn't lead.
+- Which of the ~20 site claims built on the 0.029·V² knee survive at the archive's V^0.5. The /key-claims "mass cancels" argument may not.
+
+**Waiting on you:**
+- Confirm or override the DR4 default before 2 December.
+- Decide whether to retire the open-cluster row now.
+- Adopt, edit, or take down the status table as the statement of what survives.
+- Saad & Ting, Chae et al. and the Refracted Gravity authors still haven't been contacted (day six).
+
+**Deferred:** the 0.029·V² cleanup across the site (waiting on the explorer), deriving breadcrumbs from `navigation.ts` and cutting down the status labels, and the remaining medium and low items listed in `maintainer/logs/2026-11-13.md`.

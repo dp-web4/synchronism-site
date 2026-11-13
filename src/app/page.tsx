@@ -46,7 +46,7 @@ export default function Home() {
           documented honestly &mdash; the honest map of where it fails is the product.
         </p>
         <p style={{ marginTop: '0.75rem', color: 'var(--color-text-secondary)' }}>
-          <strong>So is it alive or dead?</strong> As tested physics, dead so far: no prediction that differs from MOND or the standard cosmology has survived the tests run. As a public record of finding that out, and as a mostly untested picture of reality, alive. <a href="#alive-or-dead" style={{ color: 'var(--color-accent-blue)' }}>The full answer</a>.{' '}
+          <strong>So is it alive or dead?</strong> As tested physics, dead so far: no prediction that differs from MOND or the standard cosmology has survived the tests run. As a public record of finding that out, alive. As a picture of reality, partly tested: the framework&apos;s own local substrate stays inside Bell&apos;s limit (S = 1.85 &le; 2), as every local model must, and the substrates with hidden communication that could do otherwise were never built. <a href="#sector-status" style={{ color: 'var(--color-accent-blue)' }}>Where each piece stands</a> &middot; <a href="#alive-or-dead" style={{ color: 'var(--color-accent-blue)' }}>The full answer</a>.{' '}
           <strong>Next data:</strong> <Link href="/wide-binaries#dr4" style={{ color: 'var(--color-accent-blue)' }}>Gaia DR4 is released on 2 December 2026</Link>. That is a catalogue, not an answer: wide-binary analyses of it follow over months. They can settle a question about MOND. They cannot select this framework.
         </p>
 
@@ -362,6 +362,36 @@ export default function Home() {
             </p>
           </section>
 
+          {/* Sector status (2026-11-13): a researcher persona found the count of 6 leaves out the decisive exclusions and counts
+              convention-driven ones; the explorer's by-equation table (11-12) agrees. This states each piece's status; the count is unchanged. */}
+          <section id="sector-status" style={{ marginBottom: '1.5rem', scrollMarginTop: '5rem' }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
+              Where each piece stands
+            </div>
+            <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.82rem', color: 'var(--color-text-secondary)' }}>
+              <thead><tr><th style={{ textAlign: 'left', padding: '0.2rem 0.6rem 0.2rem 0' }}>Piece</th><th style={{ textAlign: 'left', padding: '0.2rem 0.6rem 0.2rem 0' }}>Status</th><th style={{ textAlign: 'left', padding: '0.2rem 0.6rem 0.2rem 0' }}>Why</th></tr></thead>
+              <tbody>
+                <tr style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>The density law C(ρ), the equation this site leads with (coherence set by local matter density)</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: '#ef4444', fontWeight: 600 }}>Excluded</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>Galaxy rotation curves (SPARC): loses to the acceleration version at every calibration on file, &Delta;BIC +2,843 with its knee free and +8,404 at the archive&apos;s own calibration, worse in 105&ndash;115 of 122 galaxies, checked with the galaxy as the unit. Lunar laser ranging: excludes 68 of 74 versions at parsec smoothing, without using galaxies. Neither is in the count of 6 below, because no failure condition was written down before they ran.</td></tr>
+                <tr style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>The acceleration version (the one that fits galaxies)</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: '#f59e0b', fontWeight: 600 }}>Is MOND</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>At every &gamma; it is one of MOND&apos;s interpolating functions, and at &gamma; = &frac12; it is exactly MOND&apos;s simple one. It shares MOND&apos;s Solar-System (Cassini) tension. The framework&apos;s own &gamma; = 2 is disfavoured at about 2&sigma;.</td></tr>
+                <tr style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>The capped-boost version (TEST-09, TEST-10)</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: '#ef4444', fontWeight: 600 }}>Excluded at its own cap</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>With the boost capped at 1/&Omega;<sub>m</sub> = 3.17 it fails dwarf galaxies and the Tully&ndash;Fisher slope (rows 1&ndash;2 of the count). No archive document derives that cap.</td></tr>
+                <tr style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>The cosmology (dark-energy sector)</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: '#f59e0b', fontWeight: 600 }}>Is &Lambda;</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>At &gamma; = &frac12; it is exactly a cosmological constant. The forms that differ are excluded or fit no better than &Lambda;CDM, and the form is prior art (Cardassian models, 2002).</td></tr>
+                <tr style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>The quantum and measurement side</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: 'var(--color-text-muted)', fontWeight: 600 }}>No number to test</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>No rate parameter is written down, so it makes no quantitative prediction yet. The one rate that was tried (diffusion of the substrate) is excluded at its natural size by nuclear stability and by LIGO.</td></tr>
+                <tr style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>A local substrate on Bell&apos;s test</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: '#ef4444', fontWeight: 600 }}>Inside Bell&apos;s limit</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>S &le; 2 on every construction that does not signal (the framework&apos;s own substrate: 1.85). Substrates with hidden communication were never built: untested.</td></tr>
+                <tr style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>a&#x2080;(z) = cH(z)/2&pi; (the galaxy scale grows with the cosmic expansion rate)</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: '#3b82f6', fontWeight: 600 }}>Survives, differs, unresolved</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>The one equation the archive writes that survives and differs from both MOND and &Lambda;CDM. Two published estimators straddle its prediction (slope 0.71 &plusmn; 0.13 and 1.15 against 1). It is also not unique to this framework.</td></tr>
+              </tbody>
+            </table>
+            </div>
+            <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0.4rem 0 0', lineHeight: 1.55 }}>
+              This is the site&apos;s reading of the{' '}
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>research ledger</Link>, by piece, not a count. The count of
+              refutations below is ledger bookkeeping and is unchanged: it counts tests registered with a failure condition, so the two strongest
+              exclusions of the density law sit outside it. Whether they become counted rows is a decision for the project lead. Sources: explorer
+              2026-11-12 (<code>exclusion_table_by_equation.py</code>, 44 executed losses by equation), the ledger blocks of 2026-09-24, 10-18,
+              11-09 and 11-12. Added 2026-11-13.
+            </p>
+          </section>
+
           {/* Scientific Outcomes — lead with this */}
           <section style={{ marginBottom: '1.5rem' }}>
             <div style={{ fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
@@ -518,8 +548,9 @@ export default function Home() {
             <p id="why-keep-reading" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.6rem 0 0', scrollMarginTop: '5rem' }}>
               <strong id="alive-or-dead" style={{ scrollMarginTop: '5rem' }}>So is the idea alive or dead?</strong> As tested physics: dead as far as it has been tested — no prediction
               that differs from MOND or ΛCDM survived the tests run so far, and this site says so. As a public record of how you find that out
-              honestly — and as an ontology that is mostly untested — it is alive and still being worked. Mostly,
-              not wholly: its one sharp commitment, a single absolute clock, is something instruments <em>have</em>
+              honestly, it is alive and still being worked. As an ontology it is partly tested. Its own local substrate was run on Bell&apos;s
+              test and stays at S = 1.85 &le; 2, which Bell&apos;s theorem requires of any local model; substrates with hidden communication were never
+              built (<Link href="/for-researchers#chsh" style={{ color: 'var(--color-accent-blue)' }}>details</Link>). Its other sharp commitment, a single absolute clock, is something instruments <em>have</em>
               looked at for twenty years (Lorentz-violation searches), and the framework owes an answer to a known
               naturalness problem there (<Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>,
               artifact 2). Its other novel bets are untested, several because they are not yet sharp enough to test.{' '}

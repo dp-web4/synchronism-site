@@ -70,8 +70,12 @@ export default function WideBinaries() {
             density &#x03C1; &asymp; 0.09&nbsp;M&#x2609;/pc&sup3; the velocity excess over Newton is:
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            <li><strong>Published calibration</strong> &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2; = 1.5&times;10&sup3; M&#x2609;/pc&sup3; (Milky Way, &#x03B3; = 0.489):
-              <strong> +1.8&times;10&#x2074;%</strong>. That is a factor ~3.5&times;10&#x2074; in g, excluded by the Oort limit by orders of magnitude. (Planetary
+            <li><strong>The archive&apos;s own calibration</strong> &#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup> &asymp; 0.42&nbsp;M&#x2609;/pc&sup3;
+              (Sessions 52, 62, 64, 65; Milky Way): <strong>+64%</strong> (&#x03B3; = 2) to <strong>+223%</strong> (&#x03B3; = 0.489), a factor 2.7 to 10.5 in g.
+              Still excluded by the Oort limit, which leaves room for a few tens of percent at most. (Corrected 2026-11-13. This line used to
+              quote &ldquo;0.029&middot;V&sup2; = 1.5&times;10&sup3;, +1.8&times;10&#x2074;%, a factor ~3.5&times;10&#x2074; in g&rdquo; as the published calibration.
+              That form puts the V<sup>0.5</sup> coefficient on a V&sup2; law, a units slip the explorer traced on 2026-08-27, and no archive fit uses it. Explorer
+              2026-11-12, <code>exclusion_table_by_equation.py</code>.) (Planetary
               ephemerides cannot see a boost that is uniform across the Solar System, because it is degenerate with the Sun&apos;s
               GM. They constrain only its variation, so they bite only if density is read pointwise, not smoothed over
               &ge; 30 AU.)</li>
@@ -150,9 +154,10 @@ export default function WideBinaries() {
           Newtonian null favours Newton.
           <p style={{ margin: '0.6rem 0 0' }}>
             <strong>Why isn&apos;t the local exclusion booked as a refutation?</strong> This is not because it is weak. It is
-            cleaner than TEST-09&apos;s 3.3&sigma;. It is a consequence of the knee calibration &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, and
-            that calibration is already recorded as failed in the research ledger (its velocity exponent is excluded at
-            ~11&sigma;, galaxy level). The site counts executed tests grouped by root. Whether this becomes its own booked result is
+            cleaner than TEST-09&apos;s 3.3&sigma;. It follows from the knee calibration, and the archive&apos;s calibration (0.028&middot;V<sup>0.5</sup>) is
+            already excluded on other grounds: its velocity exponent +0.5 is 3.6&sigma; from the measured &minus;0.16 &plusmn; 0.19, and on SPARC
+            the law at that calibration loses to the acceleration-keyed version by &Delta;BIC +8,404, worse in 115 of 122 galaxies (explorer
+            2026-11-12, pre-registered). The &ldquo;~11&sigma;&rdquo; often quoted here is for a V&sup2; exponent, which is the site&apos;s reading, not the archive&apos;s. The site counts executed tests grouped by root. Whether this becomes its own booked result is
             ledger governance and gates on the project lead.
           </p>
           <details style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
@@ -169,6 +174,16 @@ export default function WideBinaries() {
         <h2 id="dr4">Gaia DR4: 2 December 2026</h2>
         <p>
           ESA has set DR4 (66 months of data) for 2 December 2026. A reading key for this framework was committed before the data (<code>maintainer/scripts/wb_dr4_reading_key_PREREG.md</code>, 2026-11-06). Whatever DR4 shows, it <strong>cannot raise the novelty count</strong>: every outcome lands on a compander member Cassini already excludes unless discs carry over twice their stellar-population M/L. What DR4 decides is MOND&apos;s question, the Chae vs Banik dispute. The key is a dated mapping, not a registered test; adopting it gates on the project lead.
+        </p>
+        <p id="dr4-decision-status" style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.88rem', scrollMarginTop: '5rem' }}>
+          <strong style={{ color: '#f59e0b' }}>Decision status, 2026-11-13 (19 days before release):</strong> the project lead has neither adopted
+          nor rejected the reading key or the analysis plan. The plan should not be adopted as written: run on DR3, it returns
+          &ldquo;no result&rdquo; on both samples (explorer 2026-11-09; revisions are in its addendum). The key&apos;s git commit (2026-11-06) and its
+          addenda (11-11, 11-12, 11-13) fix it before the data whatever is decided. <strong>Default if nothing is recorded by 2 December:</strong> this
+          site will read DR4 analyses against the key as committed and label that reading &ldquo;dated before the data, not adopted&rdquo;.
+          That makes it a pre-data mapping, not a registered test, and it cannot change the count. A decision, with its date, will replace this paragraph.
+          Open clusters: four of the six in the key&apos;s second observable already sit below its kill line on pre-DR4 cleaned values (Hyades 0.30
+          of the internal-reading prediction, Torres et al. 2026 §12; Pleiades, M67, NGC 188 at 0.34&ndash;0.63).
         </p>
         <div style={{ overflowX: 'auto', margin: '0.5rem 0 1rem' }}>
           <table style={{ borderCollapse: 'collapse', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
@@ -199,8 +214,8 @@ export default function WideBinaries() {
             by two pairs; without them &Gamma; = 0.042 (+0.027/&minus;0.024), i.e. &#x03B3; &asymp; 1.2. (&Gamma; is Chae&apos;s log<sub>10</sub>&radic;&#x03B3;, so &#x03B3; = 10<sup>2&Gamma;</sup>: 0.042 &rarr; 1.21, 0.102 &rarr; 1.60.)</li>
           <li><strong>Saad &amp; Ting 2026 (arXiv:2603.11015, v2; Open Journal of Astrophysics)</strong>: the <em>same</em> 36 binaries with the
             semi-major axis forward-modelled give <strong>&#x03B3; = 1.00 (+0.24/&minus;0.19), consistent with Newton</strong>. Using a geometric deprojection instead
-            gives 1.56 (+0.21/&minus;0.18), matching Chae. Their abstract attributes the difference to the semi-major axis model. <strong>Checked 2026-11-08/09:</strong> in the public code at commit <code>4333e9f</code>, <code>run_gamma_analysis.py</code> line 106 sets the separation error to the larger of 5% of s and the absolute line-of-sight distance error. That comes to a median of about 190% of s, where the paper states about 0.1%. An in-house mock test finds that this setting returns about 0.65 × the true &#x03B3;, and that free-a and geometric models agree when the separation error is physical. So the deprojection step is not the crux. <a href="https://github.com/dp-web4/synchronism-site/blob/main/explorer/findings/wide-binary-mock-injection-saad-ting-newton-is-a-separation-error-bug-deprojection-is-not-the-crux-contamination-is.md" style={{ color: 'var(--color-accent-blue)' }}>Finding and scripts</a>: one AI session&apos;s calculation. <strong>{THIRD_PARTY_CLAIM_LABEL}</strong> The same run does <em>not</em> establish a boost (next box).</li>
-          <li><strong>Chae, Park &amp; Yoon 2026 (arXiv:2610.40388, v2)</strong>: replies that a recent claim of Newtonian gravity from the Chae sample comes from an error in the code or from enlarged errors. The abstract does not name Saad &amp; Ting; the description fits, and the separation-error setting above is what it describes. The check found no evidence about motive, and the setting reads as a defect: the same 5% floor appears from the code&apos;s first release.</li>
+            gives 1.56 (+0.21/&minus;0.18), matching Chae. Their abstract attributes the difference to the semi-major axis model. <span style={{ display: 'block', margin: '0.4rem 0', padding: '0.4rem 0.7rem', border: '1px dashed rgba(245,158,11,0.5)', borderRadius: '0.3rem' }}><strong style={{ color: '#f59e0b' }}>Unverified reproduction, authors not yet consulted.</strong> <strong>Checked 2026-11-08/09:</strong> in the public code at commit <code>4333e9f</code>, <code>run_gamma_analysis.py</code> line 106 sets the separation error to the larger of 5% of s and the absolute line-of-sight distance error. That comes to a median of about 190% of s, where the paper states about 0.1%. An in-house mock test finds that this setting returns about 0.65 × the true &#x03B3;, and that free-a and geometric models agree when the separation error is physical. So the deprojection step is not the crux. <a href="https://github.com/dp-web4/synchronism-site/blob/main/explorer/findings/wide-binary-mock-injection-saad-ting-newton-is-a-separation-error-bug-deprojection-is-not-the-crux-contamination-is.md" style={{ color: 'var(--color-accent-blue)' }}>Finding and scripts</a>: one AI session&apos;s calculation. <strong>{THIRD_PARTY_CLAIM_LABEL}</strong> Until they have seen it, this page does not convert Saad &amp; Ting&apos;s 1.00 into a corrected &#x03B3;.</span> The same run does <em>not</em> establish a boost (next box).</li>
+          <li><strong>Chae, Park &amp; Yoon 2026 (arXiv:2610.40388, v2)</strong>: replies that a recent claim of Newtonian gravity from the Chae sample comes from an error in the code or from enlarged errors. The abstract does not name Saad &amp; Ting; the description fits, and the separation-error setting above is what it describes. The same 5% floor appears from the code&apos;s first release. Whether it is a defect is for the authors to say.</li>
           <li><strong>Boufourou 2026 (arXiv:2608.24556 v1). Withdrawn by its author on 8 September 2026:</strong> its 81,088-pair input was Chae&apos;s Newtonian <em>mock</em> catalogue (Zenodo 10652994), not observed Gaia data. The author&apos;s correction notice (<a href="https://github.com/HBoufourou/paperI-wide-binaries/blob/main/CORRECTION.md" style={{ color: 'var(--color-accent-blue)' }}>CORRECTION.md</a>) reads: &ldquo;The affected observational measurements and the gravity-exclusion claims based on them are withdrawn.&rdquo; Its &#x03B3; = 1.045 and &ldquo;rejects 1.4 at ~16&sigma;&rdquo; are not DR3 measurements, and its DR4 protocol rests on the same input. The arXiv page carries no notice (checked 2026-11-10). Checked in-house: the paper&apos;s 41,760-pair fiducial count reproduces exactly on the mock file (explorer 2026-11-09). Until 2026-11-10 this page listed it as a DR3 result and among the analyses that lean Newtonian; a researcher reader asked for an erratum check the day after the explorer had done one.</li>
           <li><strong>Prior generation (2023–2024)</strong>: Banik et al. (2024), Pittordis &amp; Sutherland
             (2023), Saurabh &amp; Desmond (2024) all Newtonian-consistent with different cuts.</li>
@@ -221,7 +236,7 @@ export default function WideBinaries() {
           systems would do more than further modelling. <strong>One number was not reproduced:</strong> Chae et al.&apos;s consolidated &Gamma; = 0.102 (this calculation gives 0.139 from the same per-system values; {THIRD_PARTY_CLAIM_LABEL} either implementation could be wrong, and their consolidation script is not public).
           The adjudication will turn on: (1) a real contaminant model for these 36; (2) independent ≥3σ boost
           confirmation → kill fires; (3) independent null replication → degenerate survival; (4) Gaia DR4. Mock-injection cross-validation of the deprojection step, once listed here, is done.
-          Saglia et al. 2025 and Pasquini et al. 2026 lean Newtonian or deflationary (Boufourou 2026, listed here until 2026-11-10, is withdrawn; see above). <em>Conditional on this site&apos;s unconfirmed reading of their code (the authors have not been contacted; see the label above):</em> Saad &amp; Ting&apos;s 1.00 as coded would not be evidence for Newton, since read through the in-house mock calibration it maps to a true &#x03B3; of about 1.3&ndash;1.5 (read off the mock calibration curve: 1.4&ndash;1.5 with their inputs, about 1.3 with Chae&apos;s, scatter about &plusmn;0.25; the plain ratio 1.00/0.65 would give 1.54).
+          Saglia et al. 2025 and Pasquini et al. 2026 lean Newtonian or deflationary (Boufourou 2026, listed here until 2026-11-10, is withdrawn; see above). Saad &amp; Ting&apos;s 1.00 is listed above as they report it. A conversion of it through the in-house mock calibration was shown here until 2026-11-13. It was removed from the page because it rests on an unverified reading of named authors&apos; code, and a researcher reader judged that it tilted a box that says &ldquo;still hung&rdquo; toward one side. The numbers stay in the linked finding.
         </div>
 
         <div style={{

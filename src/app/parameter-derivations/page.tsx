@@ -290,12 +290,11 @@ export default function ParameterDerivations() {
               sector&apos;s knee &mdash; named neither the Oort limit nor the local stellar density, while the
               single sharpest zero-cost exclusion on the site sat inside a card marked &ldquo;unrun&rdquo;. The
               exclusion, propagated here from{' '}
-              <Link href="/tier-1-existing" style={{ color: '#f87171' }}>TEST-02</Link>: at <em>this row&apos;s
-              published calibration</em> &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;
-              (= 1.52&times;10&sup3; M<sub>&#x2609;</sub>/pc&sup3; for the Milky Way at V<sub>flat</sub> = 229 km/s),
-              the local density sits ~10<sup>4</sup> below the knee, so C &#x2248; &#x03B3;x &#x226A; 1 and the
-              division wiring gives a boost of about <strong>3.5&times;10<sup>4</sup> in g</strong> in the solar
-              neighbourhood &mdash; excluded by the Oort limit and planetary ephemerides by orders of magnitude.
+              <Link href="/tier-1-existing" style={{ color: '#f87171' }}>TEST-02</Link>: at the archive&apos;s own calibration &#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup>
+              (&asymp; 0.42 M<sub>&#x2609;</sub>/pc&sup3; for the Milky Way), the local density sits about 5&times; below the knee and the
+              unfloored division wiring gives a boost of <strong>2.7 (&#x03B3; = 2) to 10.5 (&#x03B3; = 0.489) in g</strong> in the solar
+              neighbourhood, excluded by the Oort limit. (Corrected 2026-11-13: this passage quoted ~3.5&times;10<sup>4</sup> from
+              0.029&middot;V&sup2;, which is the V<sup>0.5</sup> coefficient on a V&sup2; law, a units slip, not a published calibration; explorer 2026-11-12.)
               The knee window that would instead reproduce the 0.05&ndash;0.4% wide-binary signal is
               &#x03C1;<sub>crit</sub> &isin; [3.8&times;10<sup>&minus;5</sup>, 3.2&times;10<sup>&minus;4</sup>]
               M<sub>&#x2609;</sub>/pc&sup3; at &#x03B3; = 0.489 &mdash; seven orders below this row&apos;s value and

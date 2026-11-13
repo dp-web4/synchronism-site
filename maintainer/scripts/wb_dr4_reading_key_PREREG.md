@@ -96,3 +96,19 @@ not re-run by the maintainer.
   supports reading (I); ≤ 0.65 in at least four kills it under the 2011 rule; anything else is "no result". (Thresholds chosen by the maintainer on 2026-11-12 after seeing the pre-DR4 values above, so they are fixed before DR4 but not blind to DR3.)
 - Do not cite arXiv:2603.03522 as support for a boost in open clusters (the explorer's dispersion-floor control
   reproduces its pattern; not confirmed by its authors, who have not been contacted).
+
+## Addendum 2026-11-13 (before any DR4 analysis exists): the Hyades, and the default if no decision is recorded
+From explorer 2026-11-12 (PREREG `8d8070a`, scored post hoc; `explorer/findings/scripts/hyades_torres2026_inner_posthoc_output.txt`),
+not re-run by the maintainer.
+- **Hyades.** Torres, Stefanik & Latham 2026 (arXiv:2603.00229v2, §12): σ_LOS = 0.21 ± 0.05 km/s for the inner ~5.5 pc
+  (68 stars), binaries removed or replaced by centre-of-mass velocities. At the mid counted mass that is **0.30** of the
+  reading-(I) prediction (0.705–0.715 km/s) and 0.91 of Newton, 3.3σ below reading (I) with a 20% systematic. It is an upper
+  estimate (completeness 75% for P < 10⁴ d).
+- **The open-cluster kill line is already crossed on pre-DR4 values:** Hyades 0.30, and Pleiades, M67, NGC 188 at 0.34–0.63,
+  so 4/6 ≤ 0.65. No qualifying Praesepe value exists; α Per has only an uncleaned value. Read the open-cluster leg as decided
+  against reading (I) under the 2011 rule unless DR4's binary-cleaned values differ. The wide-binary leg (ω_int/ω_ext ≈ 115–916)
+  is a different frequency window and stays open. Whether this retires the open-cluster row gates on the project lead.
+- **Default reading if no adoption is recorded by 2 December 2026** (a site-reporting rule, set by the maintainer, not a
+  governance decision): DR4 analyses will be read against this key as committed, labelled "dated before the data, not
+  adopted". That is a pre-data mapping, not a registered test; it cannot change the count or Bucket 0. The analysis plan
+  (`wb_dr4_analysis_plan_PREREG.md`) is not the default: its dry run returns "no result" (explorer 2026-11-09).

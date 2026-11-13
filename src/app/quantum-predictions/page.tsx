@@ -12,7 +12,7 @@ export default function QuantumPredictions() {
       <Breadcrumbs currentPath="/quantum-predictions" />
       <PathNav currentPath="/quantum-predictions" />
       <h1>Quantum Predictions</h1>
-      <ValidationBadge status="untested" label="2 Post-dictions, 6 Untested" />
+      <ValidationBadge status="untested" label="2 post-dictions; 6 protocols: 2 run (both astrophysics), 4 never run" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -113,11 +113,12 @@ export default function QuantumPredictions() {
           </div>
         </div>
 
-        <h2>The 6 Protocols: 2 Run, 4 Never Run</h2>
+        <h2>The 6 Protocols (Mixed Domains): 2 Run, 4 Never Run</h2>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
           Designed in Sessions #368-370. Each has a specific falsification criterion. Two have since been run, both on
           existing data: Protocol 2 (wide binaries, TEST-02) closed as a tie that cannot select this framework, and
-          Protocol 3 (SPARC environment) fired its registered kill. The other four have never been run. Details under
+          Protocol 3 (SPARC environment) fired its registered kill. Neither of the two that ran is a quantum test; the protocols span neuroscience, qubits and astrophysics, and the
+          page title is older than that mix (badge reconciled with this heading 2026-11-13). The other four have never been run. Details under
           &ldquo;Where to Start&rdquo; below. (Until 2026-10-07 this heading read &ldquo;The 6 Untested Protocols&rdquo;
           and said none had been run.)
         </p>

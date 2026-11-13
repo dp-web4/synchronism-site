@@ -139,8 +139,9 @@ export default function DarkMatter() {
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', marginBottom: '1rem' }}>
           <li><strong><Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>Wide binary stars</Link> &mdash;
             depends on an unfixed knee.</strong> The predicted signal depends on where the density knee &rho;<sub>crit</sub> sits.
-            At the framework&apos;s published calibration, the density law predicts a boost of order 10<sup>4</sup> in the
-            solar neighbourhood, which the Oort limit and Solar-System ephemerides already rule out. The small
+            At the archive&apos;s own calibration, the density law predicts that gravity near the Sun is 2.7 to 10.5 times
+            stronger than Newton&apos;s, which star counts near the Galactic plane (the Oort limit) already rule out. (Until
+            2026-11-13 this said &ldquo;of order 10<sup>4</sup>&rdquo;; that number came from a units slip.) The small
             0.05&ndash;0.4% signal usually quoted needs a knee that nothing else in the framework uses. Whether to book this
             as an executed exclusion is a ledger decision for the project steward; the refutation count is unchanged
             (see <Link href="/tier-1-existing#TEST-02" style={{ color: 'var(--color-accent-blue)' }}>Tier 1 TEST-02</Link>).</li>

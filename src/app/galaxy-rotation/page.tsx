@@ -116,11 +116,13 @@ export default function GalaxyRotation() {
 
         <div id="vflat-twice" style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)', scrollMarginTop: '5rem' }}>
           <strong style={{ color: '#f59e0b' }}>The published density law is handed V<sub>flat</sub> twice, so it cannot predict a flat curve (stated in one place 2026-11-10).</strong>{' '}
-          The calibration &rho;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2; sets the knee from the galaxy&apos;s asymptotic speed, and the
+          The calibration &rho;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2; (the form this site has used; the archive&apos;s own sessions write
+          0.028&middot;V<sub>flat</sub><sup>0.5</sup>, and the objection is the same for both) sets the knee from the galaxy&apos;s asymptotic speed, and the
           display wiring v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C)&sup2; sets the boost&apos;s amplitude from the same speed. V<sub>flat</sub> is the
           quantity a rotation-curve law exists to predict. A law whose knee and amplitude are both set by it is handed the answer, so a match
           would not have counted, and the mismatch it actually produces (C &asymp; 10<sup>&minus;5</sup> at disc densities, a boost at the Sun of
-          3.5&times;10<sup>4</sup> under the division wiring) is a separate failure. The Milky Way knee at this calibration is 1.5&times;10&sup3;
+          3.5&times;10<sup>4</sup> under the unfloored division wiring C<sub>&rho;</sub>, or 2.7&ndash;10.5 at the archive&apos;s V<sup>0.5</sup> form; the floored
+          C<sub>f</sub> caps it at 3.17) is a separate failure. The Milky Way knee at this calibration is 1.5&times;10&sup3;
           M<sub>&#x2609;</sub>/pc&sup3; and DDO 154&apos;s is 64, against disc midplane densities of 0.03&ndash;0.1, so every galaxy sits on the linear
           branch. This was said in pieces on <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>,{' '}
           <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link> and the{' '}
@@ -443,7 +445,9 @@ export default function GalaxyRotation() {
             &mdash; MOND&apos;s simple interpolating function <em>for all x</em>, not just in the tail, with
             a&#x2080; &rarr; 2a&#x2080;. (&ldquo;&#x03B3; = &frac12;&rdquo; is an L2 statement, the algebraic or plain field-equation wiring. Under the
             action-derived L3 wiring the effective μ is C + &frac12;xC&prime;, the tanh-log family maps onto itself, and the same
-            fitted curve sits at &#x03B3; &asymp; 0.44 with identical RMS; explorer 2026-10-13.) <strong>x is defined once, and it matters which:</strong> here x = g<sub>obs</sub>/a&#x2080;&prime;, and
+            fitted curve sits at &#x03B3; &asymp; 0.44 with identical RMS; explorer 2026-10-13. That L3 is the <em>acceleration-keyed</em>
+            action, L = (1/8&pi;G)&thinsp;C(|&nabla;&Phi;|/a&#x2080;&prime;)&thinsp;|&nabla;&Phi;|&sup2;, an AQUAL-type Lagrangian; the density-keyed action
+            gives a different equation, see the box under GW170817 below.) <strong>x is defined once, and it matters which:</strong> here x = g<sub>obs</sub>/a&#x2080;&prime;, and
             the fit solves g<sub>bar</sub> = g<sub>obs</sub>&middot;C(g<sub>obs</sub>/a&#x2080;&prime;) implicitly for g<sub>obs</sub>, the
             &#x03BC;-form. The identity does <em>not</em> survive keying on g<sub>bar</sub>: with g<sub>obs</sub> = g<sub>bar</sub>/C(g<sub>bar</sub>/a&#x2080;&prime;)
             at &#x03B3; = &frac12; one gets g<sub>obs</sub> = g<sub>bar</sub> + 2a&#x2080;&prime;, a constant acceleration offset (v&sup2; rising linearly
@@ -600,9 +604,20 @@ export default function GalaxyRotation() {
           The coherence field couples to density (ρ), not directly to the metric, and no <em>covariant</em> (relativistic)
           action containing C(ρ) has been written down, so the relationship between C(ρ) and GW propagation is undefined.
           (Scope, added 2026-11-10 after a graduate-physics reader found this box contradicting the &ldquo;action-derived L3&rdquo;
-          wiring above: L3&apos;s &mu;<sub>eff</sub> = C + &frac12;xC&prime; comes from varying a <em>non-relativistic</em> Lagrangian in
-          &Phi;, with C(&rho;)|&nabla;&Phi;|&sup2; as its kinetic term and a striction force as its by-product (explorer 2026-10-13). That is a
-          Newtonian action. It says nothing about photons, wave speed or polarization, which is why GW170817, c<sub>T</sub> and lensing
+          wiring above. There are two non-relativistic actions, and an earlier version of this note mixed them; corrected
+          2026-11-13 after a graduate-physics reader worked the Euler&ndash;Lagrange equations.
+          <span style={{ display: 'block', margin: '0.4rem 0 0.4rem 1rem' }}>
+            <strong>Acceleration-keyed</strong>: L = (1/8&pi;G)&thinsp;C(|&nabla;&Phi;|/a&#x2080;&prime;)&thinsp;|&nabla;&Phi;|&sup2; + &rho;&Phi;. Varying &Phi; gives
+            &nabla;&middot;[&mu;<sub>eff</sub>&nabla;&Phi;] = 4&pi;G&rho; with &mu;<sub>eff</sub> = C + &frac12;xC&prime;, the AQUAL form. This is where
+            &ldquo;L3 sits at &#x03B3; &asymp; 0.44&rdquo; comes from.
+          </span>
+          <span style={{ display: 'block', margin: '0 0 0.4rem 1rem' }}>
+            <strong>Density-keyed</strong>: L = (1/8&pi;G)&thinsp;C(&rho;)&thinsp;|&nabla;&Phi;|&sup2; + &rho;&Phi;. Varying &Phi; gives
+            &nabla;&middot;[C(&rho;)&nabla;&Phi;] = 4&pi;G&rho;, with no xC&prime; term. Varying the matter adds a striction force on matter
+            proportional to C&prime;(&rho;)|&nabla;&Phi;|&sup2;&nabla;&rho;. The globular-cluster, LLR and disc-equilibrium results that say
+            &ldquo;under L3&rdquo; use this one (explorer 2026-10-13, 10-19).
+          </span>
+          Neither is a relativistic action. It says nothing about photons, wave speed or polarization, which is why GW170817, c<sub>T</sub> and lensing
           are not well-posed questions here; see <Link href="/for-researchers#dynamics-per-branch" style={{ color: 'var(--color-accent-blue)' }}>dynamics per branch</Link>.)
           Until a covariant action exists, &ldquo;GW170817 doesn&apos;t apply&rdquo;
           is a reasonable expectation but not a proven constraint.

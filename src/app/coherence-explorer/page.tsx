@@ -80,7 +80,16 @@ export default function CoherenceExplorer() {
             It takes a density (&#x03C1;) and returns a coherence value between 0 (sparse/independent)
             and 1 (dense/collective).
           </p>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(139,92,246,0.07)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(139,92,246,0.4)' }}>
+          <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
+            <strong>One thing to try first:</strong> drag &#x03B3; from 2 down to 0.5 and watch the S-curve flatten into a long ramp.
+            That flattened ramp is what fitting real galaxies produced, and at &#x03B3; = &frac12; it is a formula physics already had
+            (MOND&apos;s), which is why the galaxy fit is not a new prediction. Then move &#x03C1;<sub>crit</sub>: it slides the curve sideways.
+          </p>
+          <details style={{ marginBottom: '0.25rem' }}>
+          <summary style={{ cursor: 'pointer', color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            For physicists: what the formula gets wrong, the &#x03B3; regimes, and the fine print (folded 2026-11-13 so the page starts as a beginner tool)
+          </summary>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem', marginTop: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(139,92,246,0.07)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(139,92,246,0.4)' }}>
             <strong>What this shows / what it gets wrong:</strong> the tool shows how the curve&apos;s
             shape responds to its two settings, &#x03B3; and &#x03C1;<sub>crit</sub> (density is the axis, not a setting) &mdash; that part is faithful. What the formula gets
             wrong, and you should know before sliding: the &#x03B3; = 2/&#x221A;N<sub>corr</sub> sharpness
@@ -102,7 +111,7 @@ export default function CoherenceExplorer() {
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
             <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> was proposed as the transition sharpness. What it actually sets is the
             initial slope (C &#x2248; &#x03B3;x at low density) and how fast C approaches 1; for &#x03B3; above ~1 it mostly moves the knee
-            (toward 0.77&nbsp;&#x03C1;<sub>crit</sub>/&#x03B3; as &#x03B3; grows, from 2u&nbsp;tanh&nbsp;u = 1; that asymptote is 15% low at &#x03B3; = 1 and 8% low at &#x03B3; = 2; the &ldquo;knee&rdquo; here is the inflection point of C on a log-density axis, and &rho;<sub>crit</sub> itself is a reference scale, not the half-way point: C(&#x03C1;<sub>crit</sub>) = tanh(&#x03B3; ln 2), 0.33 at the default &#x03B3;) rather than sharpening it, so it trades off against &#x03C1;<sub>crit</sub>{' '}
+            (toward 0.77&nbsp;&#x03C1;<sub>crit</sub>/&#x03B3; as &#x03B3; grows, from 2u&nbsp;tanh&nbsp;u = 1; that asymptote is 13% low at &#x03B3; = 1 and 7% low at &#x03B3; = 2, against the exact inflection at 0.89 and 0.42&nbsp;&#x03C1;<sub>crit</sub>; corrected 2026-11-13 from 15% and 8%. In this sentence &ldquo;knee&rdquo; means the inflection point of C on a log-density axis, which at &#x03B3; &asymp; &frac12; sits near 2&#x03C1;<sub>crit</sub>, close to the C = 0.5 point; the chart&apos;s dotted marker is &#x03C1; = &#x03C1;<sub>crit</sub>, and &rho;<sub>crit</sub> itself is a reference scale, not the half-way point: C(&#x03C1;<sub>crit</sub>) = tanh(&#x03B3; ln 2), 0.33 at the default &#x03B3;) rather than sharpening it, so it trades off against &#x03C1;<sub>crit</sub>{' '}
             (<a href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>derivation</a>; added 2026-10-23).
             High &#x03B3; (&gt; 1.4, small N<sub>corr</sub>) = <em>single-particle / uncorrelated</em> regime (ideal gases, free atoms);
             &#x03B3; &#x2248; 1 = where the archive&apos;s fitted chemistry &#x03B3; values cluster &mdash; nothing in C(&#x03C1;) singles it out (<a href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Boundary</a>, retracted 2026-08-09);
@@ -150,6 +159,7 @@ export default function CoherenceExplorer() {
             <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
             to enter a physical N<sub>corr</sub> and see where a real system lands.
           </p>
+          </details>
         </div>
 
         <div style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.2)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.88rem' }}>
@@ -204,7 +214,7 @@ export default function CoherenceExplorer() {
                   {kneeX > pad.left && kneeX < pad.left + plotW && (
                     <>
                       <line x1={kneeX} y1={pad.top} x2={kneeX} y2={pad.top + plotH} stroke="#9ca3af" strokeDasharray="2 3" strokeWidth="1" />
-                      <text x={kneeX + 3} y={pad.top + plotH - 18} fill="#9ca3af" fontSize="8.5">knee: &rho; = &rho;<tspan baselineShift="sub" fontSize="6.5">crit</tspan>; C = {Math.tanh(gamma * Math.LN2).toFixed(2)} at this &#x03B3;</text>
+                      <text x={kneeX + 3} y={pad.top + plotH - 18} fill="#9ca3af" fontSize="8.5">&rho; = &rho;<tspan baselineShift="sub" fontSize="6.5">crit</tspan> (reference scale); C = {Math.tanh(gamma * Math.LN2).toFixed(2)} at this &#x03B3;</text>
                     </>
                   )}
                 </>

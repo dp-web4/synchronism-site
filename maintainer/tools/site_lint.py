@@ -651,6 +651,19 @@ RETIRED = [
      "crystal example is N_corr = 10^24 on /gamma-parameter; no N_corr protocol exists"),
     (r"Synchronism makes no statement on H₀\. If", "2026-10-16",
      "a0 = cH0/2pi ties a0 to H0; say it offers no resolution of the tension"),
+    # Added 2026-11-13 (graduate persona): C + ½xC′ is the AQUAL result of the acceleration-keyed action; the density-keyed
+    #     action C(ρ)|∇Φ|² gives ∇·(C∇Φ) = 4πGρ plus striction.
+    (r"C \+ &frac12;xC&prime;[^\n]{0,200}\n?[^\n]{0,120}C\(&rho;\)\|&nabla;&Phi;\|&sup2; as its kinetic term", "2026-11-13",
+     "mu_eff = C + x C'/2 comes from the acceleration-keyed (AQUAL-type) action, not from C(rho)|grad Phi|^2", True),
+    # Added 2026-11-13 (explorer 11-12): the ~10^4 solar boost is the V^2 units slip; the archive's 0.028 V^0.5 gives 2.7-10.5.
+    (r"of order 10<sup>4</sup> in the\s+solar", "2026-11-13", "archive calibration 0.028·V^0.5 gives 2.7–10.5 in g at the Sun; 10^4 was the V² slip"),
+    # Added 2026-11-13 (researcher persona): the in-house mock conversion of Saad & Ting's 1.00 is off the page until the authors see it.
+    (r"maps to a true &#x03B3; of about 1\.3", "2026-11-13", "unverified conversion of named authors' result; keep it in the finding, not the page body"),
+    # Added 2026-11-13 (researcher persona): the framework's own local substrate was run on CHSH (S = 1.85).
+    (r"mostly untested picture of reality|as an ontology that is mostly untested", "2026-11-13",
+     "the local substrate was run on Bell (S = 1.85 <= 2); only hidden-communication substrates are untested"),
+    # Added 2026-11-13 (graduate persona): the 0.77 rho_crit/gamma asymptote is 13% / 7% low against the exact inflection.
+    (r"15% low at &#x03B3; = 1 and 8% low", "2026-11-13", "13% / 7% against the exact inflection (0.889, 0.416 rho_crit)"),
 ]
 
 # Numbers that may appear only with their qualifier nearby (within CONTEXT_LINES lines either side).
@@ -658,6 +671,9 @@ RETIRED = [
 # a retired-phrase list cannot catch an unqualified number, only a context requirement can.
 CONTEXT_LINES = 3
 REQUIRES = [
+    # Added 2026-11-13 (explorer 11-12): ~3.5×10⁴ at the Sun exists only under the V² units slip, unfloored. Say so on the line.
+    (r"3\.5(&times;|×)10(<sup>4</sup>|&#x2074;|⁴)", r"slip|V&sup2;|V²|0\.029|unfloored|Corrected|until 2026",
+     "2026-11-13", "~3.5e4 solar boost is the 0.029·V² units slip (unfloored); the archive's 0.028·V^0.5 gives 2.7–10.5", 1),
     # Added 2026-11-08 (explorer 11-07): every in-house Cassini sigma is at pinned M/L; say so on the line.
     (r"14\.5(&ndash;|–)19", r"pinned|M/L", "2026-11-08", "in-house Cassini sigmas hold M/L pinned; about 10 sigma at gamma = 3 with Upsilon free at 0.1 dex", 0),
     # Added 2026-11-05 (explorer 2026-11-04): the density fit's boost ~ rho^-0.10 is g_bar leaking through rho (corr +0.84);

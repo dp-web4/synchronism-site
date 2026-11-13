@@ -1,0 +1,5 @@
+archive 0.028*V^0.5            x median 0.0975 max 59.4  points x>1 0.122  galaxies with any x>1 45/122
+site 0.029*V^2                 x median 7.14e-05 max 0.0184  points x>1 0.000  galaxies with any x>1 0/122
+Jeans-consistent 4.6e-5*V^2    x median 0.045 max 11.6  points x>1 0.028  galaxies with any x>1 22/122
+V^0.5: slope d log max x / d log V_flat = +2.42  (0 = mass cancels)
+V^2: slope d log max x / d log V_flat = +0.92  (0 = mass cancels)

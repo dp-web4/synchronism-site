@@ -1,0 +1,92 @@
+==============================================================================
+PART 1 -- shape statistics of each family (no data)
+==============================================================================
+template: W(0.5) analytic = 1.9085; numeric via nu->mu route = 1.9085   (identity control C2)
+template: W monotone decreasing over [0.05,50]: True;  min W = 1.1725 at gamma=50.0;  limit log10(atanh0.9/atanh0.1) = 1.1665
+  gamma       W   t(10)  t(100)
+  0.200   3.383   0.263   0.342
+  0.300   2.529   0.441   0.559
+  0.489   1.928   0.811   0.958
+  0.500   1.908   0.833   0.980
+  0.700   1.669   1.230   1.384
+  1.000   1.503   1.803   1.980
+  1.500   1.382   2.725   2.970
+  2.000   1.325   3.636   3.960
+  3.000   1.270   5.455   5.941
+  6.000   1.217  10.909  11.881
+  delta       W   t(10)  t(100)
+   0.50   2.617   0.441   0.814
+   1.00   1.725   1.668   5.001
+   1.50   1.415   4.256  22.285
+   2.00   1.264  10.002  -0.000
+   3.00   1.123  44.676  -0.000
+   4.00   1.060   0.000  -0.000
+   5.00   1.026   0.000  -0.000
+   6.00   1.006   0.000  -0.000
+      n       W   t(10)  t(100)
+   0.50   3.204   0.328   0.433
+   1.00   1.908   0.909   0.990
+   1.50   1.502   1.462   1.499
+   2.00   1.313   1.985   2.000
+   3.00   1.143   2.998   3.000
+   4.00   1.070   4.000   4.000
+   5.00   1.032   5.000   4.999
+   6.00   1.009   6.000   6.200
+
+Distance of MOND members from the template curve in the (W, t(10)) plane:
+  delta=1: W=1.725 t(10)=1.67; template at same W: gamma=0.639, t(10)=1.11
+  delta=2: W=1.264 t(10)=10.00; template at same W: gamma=3.185, t(10)=5.79
+  delta=4: W=1.060 < template floor 1.172 -> unreachable at any gamma
+  delta=6: W=1.006 < template floor 1.172 -> unreachable at any gamma
+  n=1: W=1.908 t(10)=0.91; template at same W: gamma=0.500, t(10)=0.83
+  n=2: W=1.313 t(10)=1.99; template at same W: gamma=2.160, t(10)=3.93
+  n=4: W=1.070 < template floor 1.172 -> unreachable at any gamma
+  n=6: W=1.009 < template floor 1.172 -> unreachable at any gamma
+
+==============================================================================
+PART 2 -- SPARC fits, frozen Upsilon (11-06 loader)
+==============================================================================
+N = 2807  galaxies = 166
+C1 delta=1: a0 = 1.12751e-10 (ref 1.12751e-10)  SSR = 57.9649 (ref 57.9649) -> PASS
+template: best param 0.4907  a0 5.3583e-11  SSR 57.9477  rms 0.1437  W 1.925  dBIC_pt vs delta=1 -0.8
+   delta: best param 0.8819  a0 9.9512e-11  SSR 57.7641  rms 0.1435  W 1.849  dBIC_pt vs delta=1 -9.7
+       n: best param 0.9749  a0 1.0738e-10  SSR 57.9391  rms 0.1437  W 1.941  dBIC_pt vs delta=1 -1.2
+template best vs delta best: dBIC_pt = +8.91 (each family has one shape param + a0)
+
+==============================================================================
+PART 3 -- galaxy-block bootstrap (B=400): W per family, template-vs-delta
+==============================================================================
+template: W median 1.919  2.5% 1.621  16% 1.749  84% 2.100  97.5% 2.264  frac<1.17 0.0000
+   delta: W median 1.842  2.5% 1.608  16% 1.704  84% 1.988  97.5% 2.124  frac<1.17 0.0000
+       n: W median 1.933  2.5% 1.666  16% 1.780  84% 2.097  97.5% 2.247  frac<1.17 0.0000
+template-vs-delta dBIC (galaxy boot): point +8.91  median +7.63  sd 8.90  16-84% [+0.00, +17.71]  point/sd +1.00
+
+==============================================================================
+PART 4 -- global Upsilon scale profiled (P5)
+==============================================================================
+template: best param 0.7194  a0 7.8498e-11  Ups-scale 1.117  SSR 57.6371  W 1.654
+   delta: best param 1.1000  a0 1.0678e-10  Ups-scale 1.117  SSR 57.4339  W 1.640
+       n: best param 1.2000  a0 1.1310e-10  Ups-scale 1.105  SSR 57.7423  W 1.702
+delta family, Ups scale free, galaxy boot B=150: W median 1.640  2.5% 1.377  97.5% 1.955  frac<1.17 0.0000
+
+==============================================================================
+PART 5 -- positive control: could SPARC show a sharp transition?
+==============================================================================
+inject delta=6.0 (W_true 1.006): recovered delta 3.297 W 1.099; boot 97.5% 1.348; template best gamma 6.000 dBIC vs delta +12.3
+inject delta=4.0 (W_true 1.060): recovered delta 2.638 W 1.160; boot 97.5% 1.401; template best gamma 6.000 dBIC vs delta +1.7
+
+==============================================================================
+SCORING (against PREREG d5e38a3; written after the run)
+==============================================================================
+P1 W(gamma) monotone decreasing, min >= 1.15, W(1/2) = 1.908: min 1.1725 (limit 1.1665), W(1/2) 1.9085 -> HELD
+P2 W(delta=1) in [1.3,1.8]: 1.725; all delta>=4 < 1.17: 1.060/1.026/1.006; all n>=3 < 1.17: 1.143/1.070/1.032/1.009 -> HELD
+   (delta=3 is also below the floor: 1.123)
+P3 best gamma in [0.4,0.8]: 0.491; template-vs-delta galaxy dBIC within 2 sd: +8.91, sd 8.90 (1.0 sd) -> HELD
+   (sign: the delta family is preferred by about 1 sd)
+P4 W per family in [1.4,2.0]: 1.925/1.849/1.941; spread 0.092 <= 0.2; delta boot 2.5% 1.608 > 1.3 -> HELD
+P5 Ups scale profiled: delta W 1.640, boot 2.5% 1.377 > 1.17 -> HELD (W moves down 0.21 dex when Ups floats)
+P6 W(delta=6) < 1.17: 1.006 -> HELD
+POSITIVE CONTROL (not pre-registered as a prediction): the delta-family W estimator is biased broad near the floor.
+   An injected W 1.006 comes back 1.099 (97.5% 1.348); W 1.060 comes back 1.160 (97.5% 1.401). The frozen-Ups real lower
+   bound 1.608 clears both; the Ups-free real lower bound 1.377 sits inside the control's upper range (control run at
+   frozen Ups only). On sharp injected data the template's best member costs only +12.3 (delta=6) and +1.7 (delta=4) by point.

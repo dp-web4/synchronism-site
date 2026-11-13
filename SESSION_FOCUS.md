@@ -1,9 +1,32 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-12 (maintainer)*
+*Last updated: 2026-11-13 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-13): **The landing now says where each piece stands (density law excluded, acceleration law is MOND, cosmology is Λ, a₀(z) the one survives-and-differs) above an unchanged count. The site's "published 0.029·V²" knee was a units hybrid: at the archive's own 0.028·V^0.5 the density law loses by ΔBIC +8,404 and the solar boost is 2.7–10.5, not 3.5×10⁴. DR4 has a dated default.**
+- **Site (`2e4a627`):**
+  - sector-status table on the landing; Bell result (S = 1.85) replaces "mostly untested";
+  - /galaxy-rotation writes the AQUAL and density-keyed actions apart (μ = C + ½xC′ belongs to the first);
+  - 3.5×10⁴ → 2.7–10.5 on 5 pages; Hyades 0.30 in `EFE_FREE_CORNER_STATUS`;
+  - /wide-binaries#dr4-decision-status with the default; Saad & Ting reading boxed as unverified, conversion removed;
+  - Coherence Explorer folded below "One thing to try first"; knee 13%/7%;
+  - quantum-predictions and mrh counts.
+- **Tools:** lint 341 rules (+6; tree 0; HEAD control 6/6, 8 hits). `fragment_check` 181 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `what-data-shape-can-the-tanh-log-template-not-fit.md` (frame question); `v2-dependent-site-claims-at-the-archive-v05-knee.md` (gates the 0.029·V² sweep).
+- **→ Next maintainer:**
+  - 0.029·V² sweep after the explorer reports;
+  - breadcrumbs from `navigation.ts` and the status-vocabulary prune (P2 HIGH);
+  - landing scoreboard toggle and First Encounter §E–F optional;
+  - knee-exponent three estimators; a₀(z) slope headline; chemistry ingredient column; consciousness demo placement;
+  - the 11-12 carry-overs.
+- **→ Project lead (DR4 is 19 days out):**
+  - confirm or override the DR4 default reading rule before 2 December;
+  - retire the corner's open-cluster row (4/6 below the kill line pre-DR4)?
+  - adopt or edit the by-piece table as the surviving-content statement;
+  - contact S&T / Chae / RG authors (sixth day).
+  - Proposal `Synchronism/Research/proposals/the_framework_by_piece_and_a_dr4_default_20261113.md`.
 
 ## 🟢 NEW (maintainer 2026-11-12): **The corner's one written rule is Milgrom's 2011 modified inertia, so it is MOND content; open clusters test it and the kill was not met. The landing equation is the one object no test supports (two personas, independently). a₀(z) "2.15" was McGaugh's anchor; the framework's own is 1.86.**
 - **Site:**

@@ -1,0 +1,6 @@
+archive gamma=2: same-sign-as-gravity (compressive) cell fraction median over galaxies 0.916, |ratio|-weighted 0.993
+   |gz_s/gz| median 2.74e-01 90% 9.78e-01 99% 3.85e+00 max 1.31e+01; galaxies with any cell >0.5: 110/153; anti-restoring cells 16/377186 in 1 galaxies ['UGC06787']
+site gamma=.489: same-sign-as-gravity (compressive) cell fraction median over galaxies 0.874, |ratio|-weighted 0.986
+   |gz_s/gz| median 9.32e-02 90% 3.09e-01 99% 9.13e-01 max 1.90e+00; galaxies with any cell >0.5: 40/153; anti-restoring cells 3/377186 in 2 galaxies ['UGC05253', 'UGC06787']
+control hybrid gamma=.489 0.029V^2: same-sign-as-gravity (compressive) cell fraction median over galaxies 0.814, |ratio|-weighted 0.974
+   |gz_s/gz| median 1.08e-04 90% 6.33e-03 99% 4.64e-02 max 1.75e-01; galaxies with any cell >0.5: 0/153; anti-restoring cells 0/377186 in 0 galaxies []

@@ -1,0 +1,47 @@
+cap = 6.39  (Omega_m/Omega_b; f_b floor 1/cap = 0.1565)
+system                                                                                      f_b      B    +- z vs cap B(h=.674)
+X-COP 13 massive clusters, r500, HSE masses (median)                                      0.156   6.41  0.29     +0.1      6.06
+  same, M_HSE/M_tot = 0.94+-0.04 applied [summary-grade]                                  0.147   6.82  0.42     +1.0      6.44
+  same, r200: f_gas 0.149 (+0.006/-0.008) + f* 0.015                                      0.164   6.10  0.32     -0.9      5.76
+Gonzalez+13 A2955 (0.99e14), r500, T_X-M masses [summary-grade]                           0.097  10.31  1.17     +3.4      9.74
+Gonzalez+13 AS0296 (1.45e14), r500, T_X-M masses [summary-grade]                          0.095  10.53  1.44     +2.9      9.95
+Gonzalez+13 A2401 (0.95e14), r500, T_X-M masses [summary-grade]                           0.118   8.47  1.01     +2.1      8.01
+Gonzalez+13 A2984 (0.95e14), r500, T_X-M masses [summary-grade]                           0.152   6.58  0.65     +0.3      6.22
+Gonzalez+13 weighted mean M500>2e14 (WMAP7) [summary-grade]                               0.136   7.35  0.27     +3.6      6.95
+Sun+09 groups T=1 keV r500, Lin-type stars (fit, no error; 15% assumed)                   0.097  10.30  1.54     +2.5      9.73
+Sun+09 groups T=1 keV r500, Gonzalez-type stars (incl. ICL) (fit, no error; 15% assumed)  0.157   6.36  0.95     -0.0      6.01
+Sun+09 groups T=2 keV r500, Lin-type stars (fit, no error; 15% assumed)                   0.101   9.87  1.48     +2.4      9.33
+Sun+09 groups T=2 keV r500, Gonzalez-type stars (incl. ICL) (fit, no error; 15% assumed)  0.124   8.06  1.21     +1.4      7.62
+Sun+09 groups T=3 keV r500, Lin-type stars (fit, no error; 15% assumed)                   0.106   9.46  1.42     +2.2      8.94
+Sun+09 groups T=3 keV r500, Gonzalez-type stars (incl. ICL) (fit, no error; 15% assumed)  0.117   8.53  1.28     +1.7      8.06
+Lovisari+15 20 groups r500 mean, Lin-type stars at 1.5 keV (15% assumed)                  0.096  10.46  1.57     +2.6      9.88
+Lovisari+15 20 groups r500 mean, Gonzalez-type stars at 1.5 keV (15% assumed)             0.130   7.67  1.15     +1.1      7.25
+
+Extra baryons (fraction of detected) needed to bring B down to the cap:  B/cap - 1
+  X-COP 13 massive clusters, r500, HSE masses (median)         0.00
+    same, M_HSE/M_tot = 0.94+-0.04 applied [summary-grade]     0.07
+    same, r200: f_gas 0.149 (+0.006/-0.008) + f* 0.015         0.00
+  Gonzalez+13 A2955 (0.99e14), r500, T_X-M masses [summary-gra 0.61
+  Gonzalez+13 AS0296 (1.45e14), r500, T_X-M masses [summary-gr 0.65
+  Gonzalez+13 A2401 (0.95e14), r500, T_X-M masses [summary-gra 0.33
+  Gonzalez+13 A2984 (0.95e14), r500, T_X-M masses [summary-gra 0.03
+  Gonzalez+13 weighted mean M500>2e14 (WMAP7) [summary-grade]  0.15
+  Sun+09 groups T=1 keV r500, Lin-type stars (fit, no error; 1 0.61
+  Sun+09 groups T=1 keV r500, Gonzalez-type stars (incl. ICL)  0.00
+  Sun+09 groups T=2 keV r500, Lin-type stars (fit, no error; 1 0.54
+  Sun+09 groups T=2 keV r500, Gonzalez-type stars (incl. ICL)  0.26
+  Sun+09 groups T=3 keV r500, Lin-type stars (fit, no error; 1 0.48
+  Sun+09 groups T=3 keV r500, Gonzalez-type stars (incl. ICL)  0.33
+  Lovisari+15 20 groups r500 mean, Lin-type stars at 1.5 keV ( 0.64
+  Lovisari+15 20 groups r500 mean, Gonzalez-type stars at 1.5  0.20
+
+POST-HOC: cluster cores at R2500 (well inside detected emission). Eckert+2022 Table 4 (percent, HSE, gas+BCG+satellites, ICL excluded, h=0.7)
+cluster     f_b      B    +-     z | stress: h=.674 (f_gas x1.058) + masses 10% high (f_gas x1.111) + stars x2 -> f_b, B
+A644      0.089  11.24  0.52  +9.3 | 0.115  B= 8.73  extra baryons needed at face value 0.76
+A1795     0.113   8.85  0.48  +5.2 | 0.147  B= 6.81  extra baryons needed at face value 0.38
+A2029     0.139   7.19  0.47  +1.7 | 0.186  B= 5.36  extra baryons needed at face value 0.13
+A2142     0.143   6.99  0.39  +1.5 | 0.187  B= 5.35  extra baryons needed at face value 0.09
+A2319     0.112   8.93  0.56  +4.5 | 0.148  B= 6.75  extra baryons needed at face value 0.40
+mean of five f_b,2500 = 0.119 -> B = 8.39
+Allen+08 42 relaxed: f_b(r2500) = 0.128 -> B = 7.81; stat+s err on B 0.36 (z +4.0); with 12.5% abs-normalisation sys 1.04 (z +1.4)
+  stress (h=.674, f_gas x1.125 normalisation, s=0.32): f_b = 0.173 -> B = 5.77

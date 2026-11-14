@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""POST-HOC (not in the 11-14 PREREG): vertical striction dPsi/dz vs vertical gravity dPhi/dz on the same L2 solves,
+archive knee 0.028 V^0.5, Ups_d 0.5. Cells counted where rho > 1% of the local midplane density and R <= last data radius.
+'Anti-restoring' = total vertical force points away from the midplane (dPhi/dz + dPsi/dz < 0 for z > 0)."""
+import sys, numpy as np
+sys.argv = ['x']
+src = open('/home/dp/ai-workspace/synchronism-site/explorer/scripts/l3_density_keyed_first_order_sparc.py').read()
+ns = {}; exec(compile(src.split('gal = K.load_sparc()')[0], 'l3dk', 'exec'), ns)
+K, Gal, fw = ns['K'], ns['Gal'], ns['fw']; G = K.G
+gal = K.load_sparc(); GG = []
+for gid in sorted(gal):
+    try: GG.append(Gal(gal[gid], "bershady", "vgas", 0.5))
+    except Exception: pass
+for name, gam, A, B in (("archive gamma=2", 2.0, 0.028, 0.5), ("site gamma=.489", 0.489, 0.028, 0.5), ("Jeans gamma=.489 rho_c=0.161 (10-13 knee)", 0.489, 0.161, 0.0)):
+    allr = []; n_anti = n_cells = 0; gal_anti = []; gal_big = 0
+    for gg in GG:
+        V = max(gg.d["props"]["Vflat"], 10.0); C, dC, Cmin = fw(gam, A*V**B, 0.315)
+        Phi = K.solve_poisson_fast(gg.g, C(gg.rho), gg.Mc, Cmin, gg.Mtot)
+        dR = np.gradient(Phi, gg.g.Rc, axis=0, edge_order=2); dz = np.gradient(Phi, gg.g.zc, axis=1, edge_order=2)
+        Psi = dC(gg.rho)*(dR**2 + dz**2)/(8*np.pi*G)
+        dPz = np.gradient(Psi, gg.g.zc, axis=1, edge_order=2)
+        mask = (gg.rho > 0.01*gg.rho[:, :1]) & (gg.g.Rc[:, None] <= gg.d["R"][-1]) & (gg.g.zc[None, :] > 0) & (np.abs(dz) > 0)
+        r = np.abs(dPz[mask]/dz[mask]); allr.extend(r.tolist())
+        anti = np.sum((dz[mask] + dPz[mask]) < 0); n_anti += anti; n_cells += mask.sum()
+        if anti: gal_anti.append(gg.gid)
+        gal_big += np.any(r > 0.5)
+    a = np.array(allr)
+    print(f"{name}: |gz_s/gz| median {np.median(a):.2e} 90% {np.percentile(a,90):.2e} 99% {np.percentile(a,99):.2e} max {a.max():.2e}; "
+          f"galaxies with any cell >0.5: {gal_big}/{len(GG)}; anti-restoring cells {n_anti}/{n_cells} in {len(gal_anti)} galaxies {gal_anti[:8]}", flush=True)

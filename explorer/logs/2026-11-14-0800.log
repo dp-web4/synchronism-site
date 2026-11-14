@@ -1,0 +1,26 @@
+Starting Synchronism Explorer Session at Sat Nov 14 08:00:01 PST 2026
+I worked both of the maintainer's new topics. Each answered its question and turned up something the topic didn't ask about. Two findings, the session log and the archived topics are committed and pushed as `6d97ef9`, with each run's pre-registration committed before it ran.
+
+## 1. Is the baryon census a convention-free kill of the 6.39 cap?
+No, not the census the persona cited. But its conclusion partly holds by a different route.
+
+- **The galaxy census can't test the cap.** McGaugh et al. 2010 take the outermost rotation speed and assume it stays flat out to R₅₀₀, using a dark-halo correction factor. I built a mock universe that obeys a 6.39 cap exactly, with no dark matter, and ran it through their formula. It reports a baryon deficit of 0.12–0.50, which covers the observed spiral range. So the site should not cite McGaugh+2010 as a kill.
+- **Hot gas in clusters reaches the cap with no light rule.** X-ray gas in hydrostatic balance traces the same potential that moves matter.
+  - Massive clusters at R₅₀₀ sit almost exactly on the cap: X-COP gives B = 6.41 ± 0.29.
+  - Galaxy groups give B ≈ 6.4–10.5. The spread comes mostly from which stellar mass estimate is used.
+  - Cluster cores at R₂₅₀₀ give B = 7.0–11.2 (five X-COP clusters, Eckert+2022) and 7.8 (42 relaxed clusters, Allen+2008). That is above the cap at face value.
+- **Not a kill yet.** The registered prediction for groups failed. For the 42-cluster ensemble the excess is only 1.4σ once the calibration uncertainty is included. One cluster, A644 (B = 11.2), stays above the cap even with all the uncertainties stacked against it, but I didn't check whether it is relaxed. I chose the R₂₅₀₀ reading after seeing the data, so it is post-hoc.
+- **What this changes on the site:** "only lensing reaches 6.39, conditionally" becomes "cluster cores exceed it at face value, limited by systematics". The finding has suggested wording for `BOUNDED_BOOST_JOINT`.
+
+## 2. Striction at the archive's own knee (0.028·V^0.5)
+- **Radial (pre-registered):** the striction is 0.5–1.6% of gravity at the median, at most 26–51%. It never pushes outward harder than gravity, so there's no disc-stability problem. All four predictions held, and the control row reproduced the 10-13 numbers exactly. The site's "~10⁻⁵" was the median at the 0.029·V² units slip.
+- **Vertical (post-hoc, the main result):** the vertical striction is 9–27% of vertical gravity at the median. It exceeds half of gravity somewhere in 40–110 of 153 discs, and it squeezes the disc rather than puffing it up. So "the L2 verdicts stand under L3" holds only at fixed disc thickness, and the self-consistent vertical solve (carried since August) now matters.
+- **Why it matters:** it suggests a prediction only the density-keyed law makes, namely thinner discs at a given vertical velocity dispersion.
+
+## Caveats
+- The papers were read from arXiv HTML by fetch agents. Only the McGaugh method was checked against the PDF. The finding marks some group/cluster rows as model-extracted; those need a PDF check before the site uses them.
+- I saved one memory: hydrostatic X-ray is the probe that needs no light rule.
+
+**Next step I'd recommend:** solve the vertical disc for one galaxy (UGC 2916). That decides whether thinner discs is a real, testable prediction.
+
+The striction-run monitor has now timed out. That is expected: the run had already finished and all its results are in the committed findings, so nothing is left to watch.

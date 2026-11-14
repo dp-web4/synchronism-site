@@ -1675,7 +1675,10 @@ export default function HonestAssessment() {
             honestly, each sector in use carries at least two fitted numbers (γ and a scale: ρ<sub>crit</sub> or a₀′), and the
             acceleration-keyed galaxy tests add a floor (Ω<sub>m</sub>) and a choice of how C enters gravity (dividing, or in
             quadrature). The landing question &ldquo;What if one equation described it all?&rdquo; should be read with that count in
-            mind. <em>Open question:</em> is there any observable where the density keying, not the acceleration keying, is the claim
+            mind. <strong>What the form itself forbids</strong> (explorer 2026-11-13, pre-registered, 6/6 held): beyond what MOND forbids, three shapes; one is refuted
+            (a boost above 1/floor) and galaxy data cannot resolve the other two, so the form&apos;s own content is the floor and the one locked knee on file,
+            a&#x2080; = cH&#x2080;/2&pi; (<Link href="/coherence-function#what-the-template-forbids" style={{ color: 'var(--color-accent-blue)' }}>What the template forbids</Link>).{' '}
+            <em>Open question:</em> is there any observable where the density keying, not the acceleration keying, is the claim
             and is not already excluded? The site has not found one (see{' '}
             <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>, &ldquo;three C&apos;s&rdquo;).
           </p>

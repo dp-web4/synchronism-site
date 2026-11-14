@@ -664,6 +664,18 @@ RETIRED = [
      "the local substrate was run on Bell (S = 1.85 <= 2); only hidden-communication substrates are untested"),
     # Added 2026-11-13 (graduate persona): the 0.77 rho_crit/gamma asymptote is 13% / 7% low against the exact inflection.
     (r"15% low at &#x03B3; = 1 and 8% low", "2026-11-13", "13% / 7% against the exact inflection (0.889, 0.416 rho_crit)"),
+    # --- retired 2026-11-14 (maintainer; explorer 11-13 + visitor 11-14 graduate/researcher personas)
+    (r"crosses the coherence knee at the published calibration|at the published calibration no galaxy", "2026-11-14",
+     "held only at the 0.029·V² units hybrid; at the archive's 0.028·V^0.5, 45/122 SPARC galaxies cross the knee"),
+    (r"needs a boost ≥ 13\.7; fails under either floor", "2026-11-14",
+     "13.7 is one disc's maximum; at Ω_m/Ω_b = 6.39 none exceed after the trials correction (BOUNDED_BOOST_JOINT)"),
+    (r"Gaia can see that; a confirmed Newtonian null would exclude those knees", "2026-11-14",
+     "a uniform density-keyed boost is absorbed into close-binary-calibrated masses (TEST-02 γ_g ≡ 1); only the Oort limit sees it"),
+    (r"<span>Audited claims surviving:", "2026-11-14", "label the cell as LLM-audit verdicts from an uncalibrated instrument"),
+    (r"the full 80-minute read", "2026-11-14", "Honest Assessment is ~30,000 words, ~2 hours"),
+    (r">Genuine Contributions<|>Discovery Rate<", "2026-11-14", "47 / 1.4% are internal-consistency survivors, not discoveries (landing)"),
+    (r"First working AI-to-AI adversarial peer review|First sustained autonomous AI research program", "2026-11-14",
+     "unsurveyed priority claim; the audit's measured specificity is 0/6"),
 ]
 
 # Numbers that may appear only with their qualifier nearby (within CONTEXT_LINES lines either side).

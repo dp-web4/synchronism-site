@@ -32,7 +32,7 @@ export const learningPaths: LearningPath[] = [
   {
     name: 'Beginner',
     timeEstimate: '~37 min on the short route (step 5\'s summary box); ~2 h reading every page in full',
-    desc: 'No physics background needed. Plain language, core concepts only. Keep the Glossary open alongside for any word you trip on. Step 5 (Honest Assessment) is the site\'s long audit page — on this path, read its "If you read nothing else" box and stop there; the full 80-minute read is for when you want the evidence rather than the verdict. (2026-10-08: The Core Idea moved to Intermediate, where its Ising/Hill-function material belongs, and the Galaxy Curve Plotter took its place; the Glossary is now a companion, not the last step.)',
+    desc: 'No physics background needed. Plain language, core concepts only. Keep the Glossary open alongside for any word you trip on. Step 5 (Honest Assessment) is the site\'s long audit page — on this path, read its "If you read nothing else" box and stop there; the full read (about 30,000 words, roughly 2 hours) is for when you want the evidence rather than the verdict. (2026-10-08: The Core Idea moved to Intermediate, where its Ising/Hill-function material belongs, and the Galaxy Curve Plotter took its place; the Glossary is now a companion, not the last step.)',
     color: '#10b981',
     kind: 'difficulty',
     steps: [

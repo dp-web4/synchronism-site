@@ -527,9 +527,10 @@ export default function KeyClaims() {
 
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
             <strong>What failed:</strong> the interpretation &mdash; that a local-density coherence function marks
-            where &ldquo;dark matter&rdquo; effects switch on. With &#x03C1;<sub>crit</sub> &#x221D; V&sup2;, a
-            disc&apos;s mass cancels out of &#x03C1;/&#x03C1;<sub>crit</sub>, so at the published calibration no galaxy
-            disc reaches the coherence knee (details under &ldquo;What&apos;s new&rdquo; below). <strong>And at
+            where &ldquo;dark matter&rdquo; effects switch on. Fitted to 122 SPARC galaxies at the archive&apos;s own knee
+            (&#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup>), the density law loses to the acceleration law by &Delta;BIC +8,404 and is
+            worse in 115 of them; with one global knee, +2,843. (This line used to say no disc reaches the knee. That held only for
+            0.029&middot;V&sup2;, a units slip; at the archive&apos;s form 45 of 122 galaxies cross it. Corrected 2026-11-14, from the explorer&apos;s 2026-11-13 count.) <strong>And at
             cosmological scale (checked 2026-09-22):</strong> the framework&apos;s own dark-energy sector is calibrated on
             an &Omega;<sub>m</sub> that includes cold dark matter. Run with baryons only, no &gamma; gives both
             accelerating expansion today and enough dark matter at recombination (the best reaches 1.5&times; the
@@ -605,7 +606,7 @@ export default function KeyClaims() {
             the sparse/independent (low&nbsp;C) regime; the MOND acceleration scale a&#x2080; would come from the coherence
             transition (on audit, the relation is posited, not derived; see <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>); and the &ldquo;dark matter&rdquo; would be the coherence
             gradient at the transition from dense/collective to sparse/independent behavior, not missing matter. On test,
-            the density-keyed version failed on SPARC, and the version that fits is MOND&apos;s simple &mu; in different notation. Why matching MOND still counts as <em>Failed</em>: fitting the same curves as an existing theory with a renamed formula adds nothing new. A match would only be news if the equation also predicted something MOND does not and that prediction held. It made three such predictions (a cap on how much gravity can be boosted, an effect of a galaxy&apos;s surroundings, and a density knee that grows with rotation speed), and each failed when tested.
+            the density-keyed version failed on SPARC, and the version that fits is MOND&apos;s simple &mu; in different notation. Why matching MOND still counts as <em>Failed</em>: fitting the same curves as an existing theory with a renamed formula adds nothing new. A match would only be news if the equation also predicted something MOND does not and that prediction held. It made three such predictions (a cap on how much gravity can be boosted, an effect of a galaxy&apos;s surroundings, and a density knee that grows with rotation speed), and each failed when tested. (The surroundings test that ran is the SPARC environment run, TEST-08; the registered Tully&ndash;Fisher environment test, TEST-03, never ran as registered.)
             <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em', display: 'block', marginTop: '0.25rem' }}>
               Note: &ldquo;coherence&rdquo; here means density-driven collective ordering (0=sparse/independent,
               1=dense/collective) &mdash; not quantum phase coherence. BEC/BCS, which are maximally quantum-coherent,
@@ -622,12 +623,14 @@ export default function KeyClaims() {
             derivations</a>, which calls this &ldquo;dimensional bookkeeping, not a Synchronism-specific derivation.&rdquo;
             <strong> a&#x2080; itself is badged Reparametrization, not Failed</strong> &mdash; the Failed badge above is on
             the <em>interpretation</em> layered on top of it (that a local-density function marks the transition),
-            which fails structurally: with &#x03C1;<sub>crit</sub> &#x221D; V&sup2;, mass cancels out of a disk&apos;s
-            &#x03C1;/&#x03C1;<sub>crit</sub> ratio entirely (see{' '}
-            <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>)
-            &mdash; <strong>no galaxy disk, of any mass, crosses the coherence knee at the published calibration</strong>. This
-            is a quantified instance of Milgrom&apos;s locality no-go (a local-density function cannot reproduce an
-            acceleration-space law), not a fitting problem.{' '}
+            which fails on the data: at the archive&apos;s own knee (&#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup>), 45 of 122 SPARC
+            galaxies do cross the knee, and the law loses anyway (&Delta;BIC +8,404, worse in 115/122). <strong>Correction 2026-11-14:</strong> this
+            sentence used to say &ldquo;no galaxy disk, of any mass, crosses the coherence knee at the published calibration&rdquo;, because with
+            &#x03C1;<sub>crit</sub> &#x221D; V&sup2; mass cancels out of &#x03C1;/&#x03C1;<sub>crit</sub>. That holds only for 0.029&middot;V&sup2;, which puts the archive&apos;s
+            V<sup>0.5</sup> coefficient on the Jeans exponent (a units slip; see{' '}
+            <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>). Under V<sup>0.5</sup> mass does not cancel
+            (log max x rises with log V<sub>flat</sub> at slope +2.42). The verdict stood; the reason given for it depended on the slip. Milgrom&apos;s
+            locality no-go (a local-density function cannot reproduce an acceleration-space law) remains the general argument.{' '}
             <em>Scope narrowed 2026-09-08 (visitor graduate persona):</em> mass cancels from ρ/ρ<sub>crit</sub>;
             radius does not (ρ/ρ<sub>crit</sub> ∝ 1/(A·G·R²)), so &ldquo;no galaxy crosses&rdquo; is a statement about the
             calibration A = 0.029 (which puts the knee 2.5×10⁴ above sampled disk densities), not about all calibrations.
@@ -734,7 +737,8 @@ export default function KeyClaims() {
               SPARC fit lands at 0.489 at Υ = 0.5, 2% away (&#x03B3;&#x0302; runs 0.28&ndash;0.96 across Υ = 0.4&ndash;0.6, so that 2% is a statement about one M/L). The <em>same</em> cancellation gives (1&minus;C)/C = 2/x, hence
               &#x03C1;<sub>DE</sub> = 2&#x03C1;<sub>crit</sub> = constant &mdash; exactly &Lambda; &mdash; and a DESI DR2 fit lands at
               &#x03B3; = 0.487 +0.024/&minus;0.021 (SPARC&apos;s own uncertainty is &plusmn;0.11). These are not two measurements agreeing
-              on a constant: γ = ½ is the one member of the family with no collective transition, and each dataset sends γ there.
+              on a constant: γ = ½ is the one member of the family with no collective transition, and each dataset sends γ there. (And the 0.487 holds only on the mean-density reading: read as a local fluid, the same sector&apos;s P(k) pins |2&gamma;&minus;1| below about 10<sup>&minus;5</sup>, which 0.487 misses by a factor of thousands; see{' '}
+              <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>.)
               So the mechanism is not novel where it works: at the parameter value both fits land near, the model <em>is</em> MOND in the galaxy sector and <em>is</em> &Lambda; in the
               cosmological sector, by one Möbius cancellation. See{' '}
               <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> and{' '}
@@ -781,7 +785,7 @@ export default function KeyClaims() {
             color: '#ef4444',
           }}>
             Status: <strong>Failed</strong> (unchanged) &mdash; not on the retracted R&sup2;=0.14/Session-616 claim, but
-            on the mass-cancellation locality no-go above (no galaxy disc crosses the coherence knee at the published calibration A = 0.029; other calibrations are scoped above) and the
+            on the SPARC fit at the archive&apos;s own knee (&Delta;BIC +8,404; the older &ldquo;no disc crosses the knee&rdquo; reason held only at the units-hybrid 0.029&middot;V&sup2;, corrected 2026-11-14) and the
             Clowe 2006 Bullet Cluster argument.
             See <Link href="/honest-assessment" style={{ color: '#ef4444' }}>honest assessment</Link> for the full failure catalog.
           </div>

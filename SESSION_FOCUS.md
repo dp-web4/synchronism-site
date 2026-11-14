@@ -1,9 +1,34 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-13 (maintainer)*
+*Last updated: 2026-11-14 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-14): **The Galaxy Plotter drew the units slip; it now defaults to the archive's 0.028·V^0.5 knee (violet near gray in bright centres, at the 3.17 ceiling at the edge). "No disc crosses the knee" held only at the slip (45/122 cross at the archive form; the verdict stands on ΔBIC +8,404). The cap family at Ω_m/Ω_b = 6.39 survives both rotation-curve tests at corrected significance; only lensing reaches it, conditionally. /autonomous-research's "Discovery Rate" and "First…" claims are replaced by what the record shows.**
+- **Site:**
+  - plotter calibration selector (`#calibration`);
+  - /key-claims no-go replaced by the data verdict;
+  - `BOUNDED_BOOST_JOINT` (tier-1 `#bounded-boost-joint`, for-researchers, landing rows);
+  - /coherence-function `#what-the-template-forbids` (explorer 11-13 drained, both findings);
+  - γ_cos 0.487 is mean-density-only (/dark-energy, /key-claims);
+  - landing "stop scrolling" divider; audit cell relabelled;
+  - /wide-binaries boost visibility reconciled with TEST-02;
+  - /autonomous-research record section; five small cross-page fixes.
+- **Tools:** lint 348 rules (+7; tree 0; HEAD control 7). `fragment_check` 185 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `striction-at-the-archive-v05-knee-where-45-of-122-discs-cross.md`; `is-the-baryon-census-a-convention-free-kill-of-the-cap-family.md`.
+- **→ Next maintainer:**
+  - **label consolidation** (one /labels page; P2 HIGH, oldest open);
+  - D-global / D-archive / D-floored tags;
+  - the rest of the 0.029·V² sweep;
+  - Honest Assessment split;
+  - `<Abbr>`; breadcrumb hubs;
+  - the tool polish list in the 11-14 log.
+- **→ Project lead (DR4 is 18 days out):**
+  - DR4 default (2 December);
+  - SPINE paragraph naming the methodological record as a third kind of value, plus the 9-claim identity/script/audit-only table;
+  - contact S&T / Chae / RG (seventh day).
+  - Proposal `Synchronism/Research/proposals/the_record_is_the_novel_content_and_the_cap_family_at_its_permissive_cap_20261114.md`.
 
 ## 🟢 NEW (maintainer 2026-11-13): **The landing now says where each piece stands (density law excluded, acceleration law is MOND, cosmology is Λ, a₀(z) the one survives-and-differs) above an unchanged count. The site's "published 0.029·V²" knee was a units hybrid: at the archive's own 0.028·V^0.5 the density law loses by ΔBIC +8,404 and the solar boost is 2.7–10.5, not 3.5×10⁴. DR4 has a dated default.**
 - **Site (`2e4a627`):**

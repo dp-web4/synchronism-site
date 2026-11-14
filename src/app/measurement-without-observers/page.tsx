@@ -196,8 +196,9 @@ export default function MeasurementWithoutObservers() {
         </p>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Six experiment classes were sketched (Sessions #368-370) to test whether
-          decoherence patterns at the MRH boundary match Synchronism&apos;s predictions. None has
-          been run, and none can be as written: a protocol needs a predicted <em>rate</em>, and the MRH-crossing
+          decoherence patterns at the MRH boundary match Synchronism&apos;s predictions. Two have since been run, both
+          astrophysics checks on existing data (wide binaries and the SPARC environment run), neither about decoherence; none of the
+          other four has been run, and none can be as written: a protocol needs a predicted <em>rate</em>, and the MRH-crossing
           mechanism has no rate parameter, so they are experiment classes, not protocols (relabelled 2026-09-29, researcher
           simulated-visitor persona). The theory asserts scaling relationships between N<sub>corr</sub>,
           decoherence timescales, and how sharply C saturates, with no rung of the N<sub>corr</sub> ladder anchored to

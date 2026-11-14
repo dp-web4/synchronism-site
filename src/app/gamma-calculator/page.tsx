@@ -180,7 +180,7 @@ export default function GammaCalculator() {
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem' }}>
             <strong>Two different &ldquo;galaxy&rdquo; &#x03B3;&apos;s, on purpose.</strong> The gray &#x03B3; = 2 is the
             framework&apos;s <em>original guess</em> for galaxies (it is also the ideal-gas preset, N<sub>corr</sub> = 1);
-            SPARC rotation curves disfavour it. The &ldquo;Galaxy&rdquo; preset&apos;s &#x03B3; &#x2248; 0.49 is the
+            SPARC rotation curves disfavour it. The &ldquo;Galaxy&rdquo; preset&apos;s &#x03B3; &#x2248; 0.49 (0.485 = 2/&#x221A;17 in the table, the N<sub>corr</sub> = 17 it reads back to) is the
             <em> best fit</em> to those curves, read back into N<sub>corr</sub> &#x2248; 17; that fit is MOND&apos;s
             formula and fails a Solar System test. It is the fit with the equation fed <em>acceleration</em>; fed density,
             as the framework states it, the best fit is &#x03B3; = 0.046 and it loses to the acceleration version by

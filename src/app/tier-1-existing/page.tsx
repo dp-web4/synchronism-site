@@ -7,7 +7,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import TermTooltip from '@/components/TermTooltip';
-import { ROOTS_SENTENCE, TEST25_STATUS_SENTENCE, EFE_FREE_CORNER_STATUS, LENSING_LEG_ASSUMPTION } from '@/lib/ledger';
+import { ROOTS_SENTENCE, TEST25_STATUS_SENTENCE, EFE_FREE_CORNER_STATUS, LENSING_LEG_ASSUMPTION, BOUNDED_BOOST_JOINT } from '@/lib/ledger';
 import type { ValidationStatus } from '@/lib/types';
 
 type Test = {
@@ -433,6 +433,9 @@ export default function Tier1Existing() {
           <h3 style={{ fontSize: '0.9rem', marginBottom: '0.5rem', color: '#ef4444' }}>
             Three caveats that belong here, not only on the pages that discovered them (added 2026-08-07)
           </h3>
+          <p id="bounded-boost-joint" style={{ margin: '0 0 0.5rem 0', scrollMarginTop: '5rem' }}>
+            <strong>The cap family, both tests read together (added 2026-11-14):</strong> {BOUNDED_BOOST_JOINT}
+          </p>
           <p style={{ margin: '0 0 0.5rem 0' }}>
             <strong>1. TEST-09 and TEST-10 share one root, and both presuppose one reading of the coupling.</strong> (This is
             the <em>wiring</em> convention, how C enters the force law. On the separate <em>ceiling</em> convention, which cap

@@ -147,8 +147,9 @@ export default function CoherenceFunction() {
               solved in disc geometry. Globular clusters: density-keyed under (a) on spherical Jeans models, where (a) and (b)
               agree. Not in any of them: the striction force that a <em>variational</em> version of (b) adds (see{' '}
               <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>). At the framework&apos;s
-              own knee (0.029&nbsp;V&sup2;) the radial striction is ~10<sup>&minus;5</sup> of gravity, so these verdicts stand under that
-              variational version too (first order, fixed disc; explorer 2026-10-13). Knees placed inside discs are a different case: there
+              units-hybrid knee (0.029&nbsp;V&sup2;) the radial striction is ~10<sup>&minus;5</sup> of gravity, so these verdicts stand under that
+              variational version too (first order, fixed disc; explorer 2026-10-13). At the archive&apos;s own 0.028&nbsp;V<sup>0.5</sup>, where 45 of 122 SPARC
+              galaxies have points above the knee, it has not been computed; it scales with C&prime;, so it must be far larger there (explorer 2026-11-13). Knees placed inside discs are a different case: there
               the striction exceeds gravity and the disc&apos;s equilibrium is not yet solved.</li>
           </ol>
           <p style={{ margin: '0.75rem 0 0.35rem', fontWeight: 600 }}>Which C, in one table (added 2026-09-23)</p>
@@ -198,8 +199,8 @@ export default function CoherenceFunction() {
             <strong>The knees do not match either.</strong> At &#x03B3; = &frac12; the cosmology sector fixes
             &#x03C1;<sub>crit</sub> = &#x03C1;<sub>&Lambda;</sub>/2 &asymp; 4&times;10<sup>&minus;8</sup> M<sub>&#x2609;</sub>/pc&sup3;
             (&#x03C1;<sub>&Lambda;</sub> = 0.685 &times; 1.26&times;10<sup>&minus;7</sup> M<sub>&#x2609;</sub>/pc&sup3;), while the
-            Galaxy Plotter&apos;s DDO&nbsp;154 uses &#x03C1;<sub>crit</sub> = 0.029 &times; 47&sup2; &asymp; 64 M<sub>&#x2609;</sub>/pc&sup3;
-            &mdash; about 10<sup>9</sup> apart. With the cosmic knee, every galaxy disc (&#x03C1; ~ 10<sup>&minus;2</sup>&ndash;1
+            archive&apos;s galaxy knee for DDO&nbsp;154 is &#x03C1;<sub>crit</sub> = 0.028 &times; 47<sup>0.5</sup> &asymp; 0.19 M<sub>&#x2609;</sub>/pc&sup3;
+            &mdash; about 5&times;10<sup>6</sup> apart (10<sup>9</sup> with the units-hybrid 0.029 &times; 47&sup2; &asymp; 64 the Galaxy Plotter drew until 2026-11-14). With the cosmic knee, every galaxy disc (&#x03C1; ~ 10<sup>&minus;2</sup>&ndash;1
             M<sub>&#x2609;</sub>/pc&sup3;) sits at x = &#x03C1;/&#x03C1;<sub>crit</sub> ~ 10<sup>5</sup>&ndash;10<sup>7</sup>, where
             C &asymp; 1: under the division wiring (g<sub>bar</sub>/C, the one the cosmology uses) that is plain Newtonian gravity, no missing mass explained. So the two sectors share the function&apos;s form
             only, not its knee. Can one &#x03C1;<sub>crit</sub> serve both? On these numbers, no.
@@ -495,6 +496,39 @@ export default function CoherenceFunction() {
             The Ising mean-field equation m = tanh(βJzm) is in a different structural class: it is implicit (m appears on both sides)
             and supports a phase transition. C(ρ) evaluates C from ρ directly with no feedback. These are different objects.
             The Landau analogy is motivational, not a claim of class membership.
+          </p>
+        </div>
+
+        <h2 id="what-the-template-forbids" style={{ scrollMarginTop: '5rem' }}>What the Template Forbids</h2>
+        <div style={{ padding: '0.75rem 1rem', background: 'rgba(167,139,250,0.07)', border: '1px solid rgba(167,139,250,0.3)', borderRadius: '6px', marginBottom: '1.5rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
+          <p style={{ margin: 0 }}>
+            <strong>In plain words:</strong> a curve that can be bent to fit anything says nothing. So what shapes can tanh(&gamma; ln(1+x)) <em>not</em> make,
+            when the input variable, knee and &gamma; are chosen per sector, as the archive uses it? Almost everything it rules out, MOND rules out too.
+            <strong> As a template it forbids three things MOND&apos;s general interpolating function allows: a boost above 1/floor (refuted), a transition
+            sharper than 1.17 dex (galaxies sit at 1.6&ndash;1.9 dex and cannot test it), and a fixed tie between transition width and the approach to Newton
+            (galaxies prefer MOND&apos;s RAR function by 1&sigma;). Across sectors its only content is a locked relation between knees, and the one on file is
+            a&#x2080; = cH&#x2080;/2&pi;.</strong>
+          </p>
+          <div style={{ overflowX: 'auto', margin: '0.6rem 0 0' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem' }}>
+            <thead><tr><th style={{ textAlign: 'left', padding: '0.3rem 0.5rem' }}>Part of the form</th><th style={{ textAlign: 'left', padding: '0.3rem 0.5rem' }}>What it forbids</th><th style={{ textAlign: 'left', padding: '0.3rem 0.5rem' }}>Does MOND forbid it too?</th><th style={{ textAlign: 'left', padding: '0.3rem 0.5rem' }}>Outcome</th></tr></thead>
+            <tbody>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>tanh of a monotone argument</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>a response that rises and falls back in the keyed variable</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>yes</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>consistent with the RAR</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>one keyed variable (algebraic reading)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>dependence on a second variable at fixed keyed variable (an external-field effect)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>no for field-equation MOND (QUMOND/AQUAL); yes for the algebraic RAR reading</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>the &ldquo;EFE-free corner&rdquo;; not a defined model (see For Researchers)</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>onset C &asymp; &gamma;x</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>a deep-MOND slope other than &frac12; (per wiring: holds keyed on g<sub>obs</sub> in &mu;-form, not across wirings)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>yes</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>consistent (regulator exponent 0.76 &plusmn; 0.16)</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>floor &Omega;<sub>m</sub></strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>a boost above 1/&Omega;<sub>m</sub> = 3.17</strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>no</strong> (MOND&apos;s boost is unbounded)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>refuted</strong> (TEST-10, Oort limit; lensing conditionally)</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>tanh saturation</strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>a transition sharper than 1.17 dex</strong> (10&ndash;90% width)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>no</strong> (MOND members with &delta; &ge; 3 or n &ge; 3 go below)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>untested by galaxies</strong>: SPARC sits at 1.6&ndash;1.9 dex; it touched data once, as the 2026-11-07 Cassini asymmetry</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>one shape parameter</strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>a transition width and an approach to Newton that do not lie on the template&apos;s curve</strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>no</strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>unresolved</strong>: MOND&apos;s RAR family preferred by &Delta;BIC +8.9 by point, 1.0&sigma; by galaxy</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>knee per sector</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>nothing across sectors unless knees are locked</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>n/a</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>the one lock on file is a&#x2080; = cH&#x2080;/2&pi; (survives, differs, unresolved; Milgrom&apos;s 1983 coincidence)</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p style={{ margin: '0.5rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+            Source: site explorer 2026-11-13, pre-registered at commit <code>d5e38a3</code> before the run (not blind), all six predictions held;
+            <code> explorer/findings/scripts/template_forbidden_shapes.py</code>. SPARC width W = 1.85 dex (galaxy bootstrap 95% 1.61&ndash;2.12) with &Upsilon; frozen,
+            1.64 (1.38&ndash;1.96) with one global &Upsilon; scale floating; per-galaxy &Upsilon; was not floated. Positive control: if the truth were MOND &delta; = 6 (width 1.01 dex),
+            the template&apos;s best member would cost only +12.3 by point, about 1&sigma; at galaxy level, so the width restriction is real in shape space and nearly
+            invisible in rotation curves. The template&apos;s own content is therefore the floor (refuted) and the cross-sector lock (unresolved); neither is a shape.
           </p>
         </div>
 

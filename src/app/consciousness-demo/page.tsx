@@ -169,7 +169,7 @@ export default function ConsciousnessDemo() {
           <p style={{ margin: '0.75rem 0 0 0' }}>
             <strong style={{ color: '#f59e0b' }}>Sharper (added 2026-08-08): the scatter is not just
             uninformative &mdash; it is too small to be honest.</strong> If the 7 approaches really were
-            independent estimators of a psychological threshold, &#x03C3; &asymp; 0.01 would be an{' '}
+            independent estimators of a psychological threshold, a spread of about 0.01 (the seven values listed above; this page no longer quotes it as a result, see the note under the chart) would be an{' '}
             <em>implausibly</em> tight agreement &mdash; a Millikan-style clustering signature, which is
             evidence that estimators inherited each other&apos;s assumptions rather than evidence that they
             agree. Independent methods for a quantity this loosely defined should scatter by far more than 1.2%

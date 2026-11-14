@@ -351,7 +351,10 @@ export default function DarkEnergy() {
             tanh-log becomes at &gamma; = &frac12;, not of tanh-log), and the scale is fitted separately in each sector, in different variables (mean density here, g<sub>obs</sub> in galaxies), so both datasets landing on the &gamma; where tanh(&gamma; ln(1+x)) becomes a known function carries no evidential weight. The 0.011 is SPARC&apos;s fitted offset from &frac12;
             (a slightly McGaugh-like RAR shape), consistent with zero at &sigma;<sub>&gamma;</sub> = 0.11 (galaxy-limited,
             2026-08-14). Telling that offset from zero would need &sigma;<sub>&gamma;</sub> &asymp; 0.004, and it would answer a
-            different question (does SPARC prefer the simple &mu; exactly?), not a cross-sector one.{' '}
+            different question (does SPARC prefer the simple &mu; exactly?), not a cross-sector one.{' '}<strong>And one side of the comparison is excluded by this page&apos;s own perturbation box</strong> under the local-fluid reading: P(k) pins
+            |2&gamma;&minus;1| to about 5&times;10<sup>&minus;6</sup>, and 0.487 is |2&gamma;&minus;1| = 0.026, thousands of times outside it. The 0.487 survives only on
+            the mean-density (background-only) reading, where there is no pressure perturbation to pin. (Clause added 2026-11-14; a leading-edge simulated-visitor
+            persona put the two numbers side by side.){' '}
             <span style={{ color: 'var(--color-text-muted)' }}>(Until 2026-09-23 this item said &ldquo;&gamma; = 0.489 is exactly
             MOND&apos;s simple &mu; &hellip; 0.011 apart by construction&rdquo;. That was wrong: the simple-&mu; point is
             &gamma; = &frac12;, as the box above says. A simulated-visitor researcher persona caught it; the archive ledger carried the

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
-import { THIRD_PARTY_CLAIM_LABEL } from '@/lib/ledger';
+import { THIRD_PARTY_CLAIM_LABEL, BOUNDED_BOOST_JOINT } from '@/lib/ledger';
 
 export const metadata: Metadata = {
   title: 'For Researchers: What\'s Citable',
@@ -237,7 +237,7 @@ export default function ForResearchers() {
           against a strict &gt;&nbsp;0.3), so its convention-free content is that a bounded boost with
           B<sub>max</sub>&nbsp;&#8818;&nbsp;5.3 is excluded. TEST-10 exceeds every candidate ceiling at face value (as a bound, B<sub>max</sub>&nbsp;&#8818;&nbsp;7.5 at 3&sigma; from one disc, about 5.7 after correcting for 153 discs; the &ldquo;&#8818;&nbsp;14 excluded by SPARC dwarfs&rdquo; printed here until 2026-11-11 was one disc&apos;s maximum, not a bound),
           conditional on the gas census (<Link href="/honest-assessment#test10-one-statement" style={{ color: 'var(--color-accent-blue)' }}>TEST-10 in one statement</Link>). Whether TEST-09 stays in the count of 6 is pending
-          the project lead; TEST-10 is in the rule-independent floor.
+          the project lead; TEST-10 is in the rule-independent floor. {BOUNDED_BOOST_JOINT}
           What remains citable are <strong>replications,
           quantified instances of known results, and executed negative results</strong> — the six
           numbered artifacts below survive the framework being wrong, precisely because they do not depend

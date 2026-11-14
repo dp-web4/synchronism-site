@@ -290,7 +290,7 @@ export default function CoherenceExplorer() {
               own unmarginalized run gives a larger number, but only by treating 2,807 rotation-curve points as independent; with
               the galaxy as the unit its retained &#x03B3; range widens to 0.3&ndash;1.7, so the published 8.7&#x03C3; is the figure to quote.
               At the &#x03B3; galaxies prefer the bound fails; and once a<sub>0</sub> is taken from SPARC at each &#x03B3;, no &#x03B3; up to 3 passes Cassini (an earlier scan with a<sub>0</sub> held fixed had &#x03B3; &#x2273; 1.5 passing; corrected 2026-11-06). And the S-shape you see is a property of the log axis: with the density-keyed
-              knee at the published &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, SPARC samples x = &#x03C1;/&#x03C1;<sub>crit</sub> at a median of ~7&times;10<sup>&minus;5</sup>,
+              knee at &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2; (the units hybrid, not the archive&apos;s 0.028&middot;V<sup>0.5</sup>, at which the median is 0.0975 and 45 of 122 galaxies have points above the knee; explorer 2026-11-13), SPARC samples x = &#x03C1;/&#x03C1;<sub>crit</sub> at a median of ~7&times;10<sup>&minus;5</sup>,
               where C = &#x03B3;x to 1.8% at worst (0.22&times; the data&apos;s precision on C) &mdash; a straight line. Toggle to
               linear and zoom to x &lt; 10<sup>&minus;3</sup> to see the regime the data occupy at that knee (explorer measurement 2026-09-03). The free density fit puts the knee elsewhere: at 4.4&times;10<sup>&minus;6</sup> M<sub>&#x2609;</sub>/pc&sup3;, below every disc, so its discs sit at x ~ 10&sup3;&ndash;10&#x2075; in the log regime, not the linear one (explorer 2026-11-02).
             </p>
@@ -299,7 +299,7 @@ export default function CoherenceExplorer() {
               Cassini&rdquo; is a fact about the <em>acceleration-keyed</em> branch, x = g<sub>obs</sub>/a<sub>0</sub>&prime;
               (the compander used as an implicit interpolating function and solved for g<sub>obs</sub>; see{' '}
               <Link href="/galaxy-rotation" style={{ color: '#fbbf24' }}>Galaxy Rotation</Link>).
-              &ldquo;SPARC sits at x ~ 7&times;10<sup>&minus;5</sup> where C = &#x03B3;x&rdquo; is a fact about the{' '}
+              &ldquo;SPARC sits at x ~ 7&times;10<sup>&minus;5</sup> where C = &#x03B3;x&rdquo; is a fact about the units-hybrid knee of the{' '}
               <em>density-keyed</em> branch, x = &#x03C1;/&#x03C1;<sub>crit</sub>. The slider draws one curve; the site&apos;s
               galaxy numbers come from two different arguments of it, and no single model both fits the RAR and is linear
               over all of SPARC. The two are compared head-to-head on{' '}

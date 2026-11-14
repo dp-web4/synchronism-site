@@ -137,6 +137,15 @@ export const TEST10_ONE_STATEMENT =
   'TEST-10 in one statement: under its registered rule, which is a face-value count with no significance term, the ceiling is exceeded at every candidate value. At the framework\'s own 1/Ω_m = 3.17, 106 of 153 discs exceed it at face value and 28 at 3σ or more (10 after correcting for 153 discs). At the most permissive candidate, Ω_m/Ω_b = 6.39, 28 exceed at face value, 2 at 3σ or more on the outer half of their curves (NGC 2915, NGC 3741), and none after the correction. As a bound, rotation curves exclude caps up to about 7.5 at 3σ from one disc (about 5.7 after the correction). All of it is conditional on the gas census: doubling the gas removes NGC 3741. The 13.7 once printed as an upper bound of 14 is one disc\'s maximum, not a bound.';
 
 /**
+ * The bounded-boost family at its most permissive cap, both rotation-curve tests read together (2026-11-14). A graduate
+ * simulated-visitor persona found that each test's own numbers leave Ω_m/Ω_b alive at corrected significance and that no
+ * page said so in one sentence. Numbers are the ones already printed: TEST-09 sweep (which_C_carries_the_floor.py, 2026-09-18),
+ * TEST10_ONE_STATEMENT, LENSING_LEG_ASSUMPTION. No new computation.
+ */
+export const BOUNDED_BOOST_JOINT =
+  'Both rotation-curve tests together: TEST-09 (BTFR slope) excludes caps up to about 5.3, and TEST-10 (dwarf dark-matter fractions) excludes caps up to about 5.7 after correcting for 153 discs. The framework\'s own cap, 1/Ω_m = 3.17, fails both. The most permissive candidate, Ω_m/Ω_b = 6.39, fails neither at corrected significance: TEST-09 does not fire there (|Δn| = 0.26 against a 0.3 threshold), and TEST-10 fires there only under its registered face-value count (28 discs above, none after the trials correction). What reaches 6.39 is weak lensing, and only if light follows the same boosted potential as stars, a rule this framework has not written. So at the galaxy scale the cap family is excluded below about 5.7 by rotation curves and above that only conditionally.';
+
+/**
  * What the +2843 compares (2026-11-11). A graduate simulated-visitor persona could not find the comparator, N or free
  * parameters on the page that leads with the number, and found "γ free" on one page and "ρ_crit free" on another (both are).
  * From the docstring and output of maintainer/scripts/dbic2843_galaxy_level.py (PREREG, 6/6 held, 2026-10-18).

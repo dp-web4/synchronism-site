@@ -67,7 +67,8 @@ export default function WideBinaries() {
             Here gravity is boosted by 1/C(&#x03C1;), where &#x03C1; is the local density. The boost does not depend on the
             binary&apos;s internal acceleration at all, so wide binaries are not special: whatever boost holds at the local
             density applies to every orbit there. Its size depends on the knee &#x03C1;<sub>crit</sub>. At the solar-neighbourhood
-            density &#x03C1; &asymp; 0.09&nbsp;M&#x2609;/pc&sup3; the velocity excess over Newton is:
+            density &#x03C1; &asymp; 0.09&nbsp;M&#x2609;/pc&sup3; the velocity excess over Newton is as below. These are <em>absolute</em> boosts at the Sun, which the
+            Oort limit can see; a wide-binary ratio cannot, because the same boost is absorbed into masses calibrated on close binaries (see the red box below):
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <li><strong>The archive&apos;s own calibration</strong> &#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup> &asymp; 0.42&nbsp;M&#x2609;/pc&sup3;
@@ -147,11 +148,14 @@ export default function WideBinaries() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#ef4444' }}>At the framework&apos;s published calibration, the density law is already excluded locally.</strong>{' '}
-          No wide-binary sample is needed for that. At the other knees the site uses, the predicted boost is
-          9&ndash;116%, and Gaia can see that; a confirmed Newtonian null would exclude those knees too. Only the
-          otherwise-unused knee window above gives a signal below Gaia DR3 systematics (~3&ndash;5%). So no outcome
-          selects Synchronism: a MOND-scale anomaly favours MOND and the acceleration-keyed version equally, and a
-          Newtonian null favours Newton.
+          No wide-binary sample is needed for that. At the other knees the site uses, the boost at the Sun is
+          9&ndash;116%, but <strong>a wide-binary test does not see it</strong>: the boost is the same for wide and close pairs in one
+          neighbourhood, and stellar masses come from relations calibrated on close-binary orbits there, so the boost is absorbed into the
+          masses and the wide-to-Newton ratio is 1 (TEST-02&apos;s &#x03B3;<sub>g</sub> &equiv; 1). What sees an absolute boost at the Sun is the
+          Oort limit, and its change in time is what lunar laser ranging sees (the box above). (Corrected 2026-11-14.
+          This paragraph previously said &ldquo;Gaia can see that; a confirmed Newtonian null would exclude those knees too&rdquo;, which contradicted TEST-02; a researcher
+          simulated-visitor persona put the two side by side.) So no wide-binary outcome selects Synchronism: a MOND-scale anomaly favours MOND
+          and the acceleration-keyed version equally, and a Newtonian null favours Newton.
           <p style={{ margin: '0.6rem 0 0' }}>
             <strong>Why isn&apos;t the local exclusion booked as a refutation?</strong> This is not because it is weak. It is
             cleaner than TEST-09&apos;s 3.3&sigma;. It follows from the knee calibration, and the archive&apos;s calibration (0.028&middot;V<sup>0.5</sup>) is

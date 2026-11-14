@@ -1,0 +1,40 @@
+Starting Synchronism Maintainer Session at Sat Nov 14 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+I fixed the site's two biggest problems from today's feedback, drained both of yesterday's explorer findings, and pushed both repos (site `d7806d4`, research repo `f3b3c5bc`). The build passes, but nothing was checked in a browser because the browser tool can't start on this machine. The new galaxy-plotter switch is verified by arithmetic only.
+
+**The most important change: the Galaxy Plotter was drawing the wrong curve.** Its violet "framework's equation" line used ρ_crit = 0.029·V², which is a units slip, not the archive's formula. At that setting the equation never switches on, so the line was just the 1.78× speed ceiling at every radius. I recomputed it at the archive's own 0.028·V^0.5:
+- In bright galaxy centres the line now sits close to the visible-matter line (C_ρ ≈ 0.94–0.97).
+- It climbs to the ceiling toward the edge, which is still not enough to match the data.
+
+There is now a switch between the two settings, with the archive's form as the default. The verdict is unchanged: the density law still loses on real data, by ΔBIC +8,404.
+
+**What else changed on the site:**
+- **Wrong reason for a right verdict.** /key-claims has argued since August that "no galaxy disc crosses the knee". That is only true at the slipped calibration; at the archive's form 45 of 122 SPARC galaxies cross it. I replaced the argument with the data verdict and a correction note.
+- **The capped-boost version survives its most permissive setting.** The site had all the numbers on different pages but never put them together. At its own cap (3.17) the framework fails both rotation-curve tests. At the most permissive cap (6.39) it fails neither once you correct for testing 153 galaxies. Only weak lensing reaches 6.39, and only if light bends the way stars move, a rule the framework hasn't written. This is now one shared sentence on three pages. The refutation count stays at 6, because the framework's own cap still fails.
+- **The γ "agreement".** The 0.487 cosmology value holds only on the background reading; the same sector's own clustering data rule it out on the local-fluid reading. That clause is now on /dark-energy and /key-claims.
+- **/autonomous-research had never been through the visitor loop.**
+  - It called the 47 consistency survivors "Genuine Contributions" and 1.4% a "Discovery Rate", which the landing page explicitly says it isn't.
+  - It also made unsourced "First…" claims, including a "working" adversarial review whose measured specificity is 0/6.
+  - I replaced these with a "What the record shows about AI-run theory" section, using only numbers already on file.
+- **Landing:** a "stop scrolling here if you're new" divider before the status tables. The audit count is relabelled as LLM verdicts from an uncalibrated instrument, not data. A stale TEST-10 row is fixed.
+- **Explorer's "what the template forbids" finding** is now a section on /coherence-function. Beyond what MOND forbids, the curve forbids three shapes. One is refuted; galaxy data can't test the other two.
+- **Smaller fixes:**
+  - /wide-binaries said Gaia could see a boost that its own TEST-02 shows cancels out.
+  - Run counts, a reading time and a γ value were inconsistent across pages.
+  - The site lint has 7 new rules. They flag 7 phrases in the last commit and none in the edited files.
+
+Several visitor complaints turned out to be already handled on the site or artifacts of how pages were fetched: the AI-authorship notice, the "no power to fail" caveat, and five page anchors. I didn't change those. One claim I didn't adopt: that a 2010 baryon census rules out the 6.39 cap outright. I suspect it depends on dark-matter halo assumptions, but couldn't verify it, so it went to the explorer instead.
+
+**Research repo:** a dated 2026-11-14 block in PREDICTIONS.md covering the above, with no bucket changes. A new proposal raises the researcher persona's main point as a decision for you. The novel content here may be the record of an AI-run theory program auditing itself, not the physics. Since the audit can't tell real discoveries from prior art (J ≈ 0), its negative verdicts carry no more weight than its positive ones. The table sorting the 9 audited claims by evidence type (written identity, script, or audit only) is still owed.
+
+**Explorer topics:**
+- Whether the extra force term is larger than gravity in the discs that cross the archive knee.
+- Whether the baryon census is independent of dark-matter assumptions.
+
+**Decisions waiting on you (DR4 is 18 days out):**
+1. Confirm or override the DR4 reading default before 2 December. The key is already committed and dated; adopting it is one sentence from you.
+2. Whether SPINE should name this record as a third kind of value, alongside physics and applied use.
+3. Contacting Saad & Ting, Chae and the Refracted Gravity authors: seventh day carried, and outward-facing, so yours.
+
+**Deferred:** the badge and label consolidation into one /labels page is the oldest open high-priority item and needs its own session. The rest of the 0.029·V² cleanup also waits; today covered only the pages the explorer listed.

@@ -1,0 +1,34 @@
+Starting Synchronism Explorer Session at Sun Nov 15 08:00:01 PST 2026
+The maintainer's proposed headline sentence for the landing page shouldn't go up as written. Half of it holds, and that half can be made stronger and testable. The finding, scripts and log are committed and pushed (`4129f4d`).
+
+**The topic:** today the maintainer sent dp a candidate sentence for the landing page: "every sector that fits picks γ = ½". I checked it against every γ the archive fits, and against what the known theory in each sector predicts.
+
+**What I found**
+- **Every fitted γ in the archive matches what you get by fitting the template to the established theory's curve, with no data at all:**
+
+  | Sector | Established theory | γ from that theory alone | γ from the data fits |
+  |---|---|---|---|
+  | Cosmology | Λ | ½ | 0.487 ± 0.02 |
+  | Galaxies | McGaugh's empirical galaxy relation (RAR) | 0.595 | 0.58–0.62 (the careful galaxy-level fits) |
+  | Superconductors | BCS, with the knee pinned at 2 | 2.644 | 2.31–2.65 |
+  | Solar System | Newton | γ → ∞ | a lower bound, γ ≥ 0.87 |
+
+  So the fitted γ measures which established theory the data follow, not anything the template adds. Checks that the code reproduces known results came out exact: simple μ → 0.500, and the archive's own superconductor fit → 2.308 / 2.645 / 2.453.
+- **SPARC (the galaxy rotation-curve dataset) does not pick ½.** The sentence's "0.489 ± 0.11" holds only with the mass-to-light ratio Υ frozen at 0.5. The 08-14 finding had already demoted that number; across the plausible Υ range γ runs from 0.27 to 0.96. The careful fits centre near McGaugh's relation (0.6), and the data cannot tell 0.5 from 0.6.
+- **The clause "no sector measures γ away from ½" is either false or empty.** The Solar System requires γ ≥ 0.87, and that reading of the framework is disfavoured (about 3σ) but not refuted. If "refuting" means refuting ½ itself, the clause says nothing.
+- **Chemistry is not a counterexample.** Its "γ ≈ 1" values are computed from a formula (γ = 2/√N_corr), not fitted to data.
+- **The superconductor γ is not real information.** It was fitted to six hand-typed points per metal with the knee pinned. Freeing the knee makes γ slide to 0.57. The site doesn't quote it, so the correction belongs in the research archive.
+- **Two side results:**
+  - The Solar-System-compatible MOND interpolating functions lie outside the range of shapes the template can reach at all.
+  - γ = ½ shows up in both galaxies and cosmology for a purely algebraic reason: it is the only value where the template becomes a simple ratio, and both established theories have that form. It is not a coincidence across sectors.
+
+**For dp:** the finding offers a replacement sentence ("the fitted shape is the established theory's and can be predicted from it alone"). It also has maintainer actions: an incumbent-map table for /coherence-function, a note wherever "0.489" appears, and a back-annotation of the superconductor fit in the archive.
+
+**Caveats**
+- I computed the incumbent map after seeing the data values, so it was not pre-registered. It has almost no tunable choices, and I checked the one it has (the acceleration range).
+- The archive sweep reported one number that had already been withdrawn on 10-31 (a "10.6σ" closure); I used the corrected status.
+- The findings lint still flags the summary table, because its numbers come from other findings rather than today's scripts; I noted that in the finding.
+
+**So what:** this turns a disputed description ("lands on ½") into a predictive rule that passed in four sectors. It is cheap to test blind: compute γ from a known theory in a new sector first, then fit real data. A mismatch would be the first place γ carries information of its own. I deferred the dSph tides topic to the next session and saved a memory on this method.
+
+Sources: [Hees, Famaey, Angus & Gentile 2016, arXiv:1510.01369](https://ar5iv.arxiv.org/html/1510.01369)

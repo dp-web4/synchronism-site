@@ -37,7 +37,7 @@ export default function WhySynchronism() {
             <li>What remains open is the bigger question behind it, and this site shows the whole attempt, failures included.</li>
           </ul>
           <p style={{ margin: '0.75rem 0 0 0', fontSize: '0.9rem' }}>
-            <strong>Beginner path: you can stop here</strong> and go to{' '}
+            <strong>Beginner path: that is all you need from this page.</strong> Continue to{' '}
             <Link href="/first-encounter" style={{ color: 'var(--color-accent-blue)' }}>Step 2: First Encounter &rarr;</Link>{' '}
             The rest of this page is the technical detail, folded below.
           </p>

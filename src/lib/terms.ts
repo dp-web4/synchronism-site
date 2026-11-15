@@ -424,14 +424,14 @@ export const terms: Record<string, TermDefinition> = {
   'badge-untested': {
     term: 'Untested (badge)',
     fullName: 'Validation Badge: Untested',
-    brief: 'A specific prediction exists, but the relevant data or experiment has not been run.',
-    explanation: '"Untested" is not a failure \u2014 it means nobody has looked yet. Many Synchronism predictions in astrophysics and quantum measurement are Untested because this lab cannot run experiments and the specific test has not been done by others.',
+    brief: 'A specific prediction exists, but it has not yet been run against data (the data may already exist; see TEST-02 and Gaia DR3).',
+    explanation: '"Untested" is not a failure \u2014 it means nobody has run the comparison yet, whether or not the data exist. Many Synchronism predictions in astrophysics and quantum measurement are Untested because this lab cannot run experiments and the specific test has not been done by others.',
     learnMore: '/honest-assessment#validation-badge-definitions',
   },
   'badge-failed': {
     term: 'Failed (badge)',
     fullName: 'Validation Badge: Failed',
-    brief: 'Prediction was tested and contradicted by data, with a specific error documented.',
+    brief: 'Prediction was run against data and contradicted; the card names the specific error.',
     explanation: 'Failed predictions are not removed \u2014 they are documented with the exact error. Examples: YBCO T_c predicted 607K (observed 93K, 6.5\u00d7 error); Bullet Cluster dark matter viscosity sign wrong. Failures stay visible.',
     learnMore: '/honest-assessment#validation-badge-definitions',
   },

@@ -27,7 +27,7 @@ const regions = [
   },
   {
     id: 'quantum',
-    label: 'γ > 1.4 — Single-particle · N_corr = 1 or 2',
+    label: 'γ > 1.4 — Single-particle · N_corr = 1 (γ = 2) or 2 (γ ≈ 1.41)',
     color: '#8b5cf6',
     range: [1.4, 4.0],
     systems: ['Ideal gases', 'Single atoms', 'Few-particle systems', 'Uncorrelated matter'],

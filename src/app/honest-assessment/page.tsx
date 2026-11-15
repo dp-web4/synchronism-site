@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Fragment } from 'react';
-import { BADGES, RETIRED_LABELS } from '@/lib/statusLabels';
+import { BADGES, RETIRED_LABELS, capitalize } from '@/lib/statusLabels';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -89,7 +89,8 @@ export default function HonestAssessment() {
                 the threshold once each galaxy counts once instead of each data point (the Cassini squeeze, row #5, was listed here too until 2026-11-06; with SPARC&apos;s a<sub>0</sub> at each &gamma; it fails at every &gamma; up to 3), and row #6 is a construction check, not data.
                 Two of them (TEST-09, TEST-10) test one cap (a ceiling on how much extra gravity the formula can add). On
                 rotation curves TEST-09 fires only under the site&apos;s choice of cap; TEST-10 fires under every candidate cap,
-                though at the most permissive one its M/L-independent part rests on two gas-dominated galaxies. Galaxy
+                though at the most permissive one (6.39) its M/L-independent part rests on two gas-dominated galaxies; there the cap is
+                excluded instead by two dwarf spheroidals (Draco, Crater II, 4.9&sigma; each at the heaviest plausible stars, no gas and no rule about light needed; 2026-11-15). Galaxy
                 weak-lensing data exclude the framework&apos;s own cap whichever way light is assumed to bend, and the most permissive cap only if hidden baryons are below about 6&times; the stars and cold gas. Those two share one cause, so no more than
                 five are independent. Under every counting rule on file four of the six stay: row #2 (TEST-10), row #4 (the
                 environment run), row #5 (TEST-25, the Cassini row inherited from MOND) and row #6 (the Bell/CHSH construction
@@ -157,10 +158,10 @@ export default function HonestAssessment() {
 
       <div style={{ maxWidth: '65ch', marginBottom: '1.5rem', padding: '0.7rem 1rem', background: 'rgba(16,185,129,0.07)', border: '1px solid rgba(16,185,129,0.35)', borderRadius: '0.375rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
         <strong style={{ color: '#10b981' }}>New here, or on the Beginner Path?</strong> You can stop here &mdash; the rest of this
-        page is the detailed audit, kept for readers who want the evidence behind the verdict above. Your next step
-        is the{' '}
-        <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary &rarr;</Link>{' '}
-        (a reference: look terms up as you need them).
+        page is the detailed audit, kept for readers who want the evidence behind the verdict above. The Beginner Path ends
+        here. If you want to look up a word later, the{' '}
+        <Link href="/glossary" style={{ color: 'var(--color-accent-blue)' }}>Glossary</Link>{' '}
+        is a reference, not a sixth step.
       </div>
 
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', maxWidth: '65ch' }}>
@@ -239,11 +240,9 @@ export default function HonestAssessment() {
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-          <strong>Active-MRH</strong><span>Currently in active research focus; being extended or revised</span>
-          <strong>Parallel-Paths</strong><span>Kept in the hypothesis space: not in active focus, not abandoned</span>
-          <strong>Sidelined</strong><span>Was in active focus, currently not pursued; reasons documented; reactivation condition specified</span>
-          <strong>Superseded</strong><span>Replaced by a later formulation; pointer to successor</span>
-          <strong>Audited-Negative</strong><span>Closed audit finding on a historical track; durable record; does not move</span>
+          {BADGES.filter((b) => b.family === 'mrh').map((b) => (
+            <Fragment key={b.name}><strong>{b.name}</strong><span>{capitalize(b.oneLiner)}</span></Fragment>
+          ))}
         </div>
 
         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '1rem' }}>
@@ -251,10 +250,9 @@ export default function HonestAssessment() {
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-          <strong>Untested</strong><span>Prediction exists, no data yet</span>
-          <strong>Speculative</strong><span>Conceptual proposal without quantitative test</span>
-          <strong>Reparametrization</strong><span>Equivalent to existing physics in different notation</span>
-          <strong>Failed</strong><span>Prediction contradicted by data (with specific error)</span>
+          {BADGES.filter((b) => b.family === 'descriptive').map((b) => (
+            <Fragment key={b.name}><strong>{b.name}</strong><span>{capitalize(b.oneLiner)}</span></Fragment>
+          ))}
         </div>
 
         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '1rem' }}>
@@ -470,7 +468,7 @@ export default function HonestAssessment() {
           <code style={{ fontSize: '0.78rem' }}>explorer/findings/scripts/lensing_cap_on_kids_bins.py</code>) it is excluded only if
           galaxies carry less than ~2&ndash;3× their stars plus cold gas out to ~0.3&ndash;1 Mpc, and the face-value exclusion
           (observed boost ≈ 300 on the lowest published bin, g<sub>bar</sub> ≈ 1.4×10⁻¹⁵ m/s²; MOND&apos;s √(a₀/g) there is ≈ 295 at a₀ = 1.2×10⁻¹⁰) sits in bins the data paper flags for satellite contamination. The kill that carries it predates SPARC by two decades: the classical dwarf spheroidals (Draco, Ursa Minor, Sextans) have dynamical
-          M/L<sub>V</sub> ≈ 100–300 (Mateo 1998; Walker et al. 2009), boosts of 30–100 under any stellar M/L, above every cap; MOND has its own
+          M/L<sub>V</sub> ≈ 100–300 (Mateo 1998; Walker et al. 2009), boosts of 30–100 at typical stellar M/L, above every cap at that M/L (at the heaviest plausible stars, M/L = 4, Draco still excludes caps up to about 18.5 at 3σ, 14.7 after a six-system trials correction, so 1/Ω<sub>b</sub> = 20.3 is excluded at fiducial M/L but not at the band edge; maintainer 2026-11-15); MOND has its own
           dSph problems (external field, tides), so cite this against the ceiling, not as a discriminator against MOND (added 2026-09-29). Stated as a class: <strong>no boost ceiling tied to a cosmic
           abundance ratio survives SPARC&apos;s most dark-dominated dwarfs</strong>, because those dwarfs are baryon-poor
           relative to the cosmic mean and the largest such ratio, &Omega;<sub>m</sub>/&Omega;<sub>b</sub> &asymp; 6.4, is half the

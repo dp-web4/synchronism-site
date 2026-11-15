@@ -1,5 +1,6 @@
 'use client';
 
+import { badgeOneLiner } from '@/lib/statusLabels';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -37,9 +38,9 @@ export default function KeyClaims() {
             {' '}&mdash; canonical reference on the Honest Assessment page. Text after a dash inside a badge is a
             finding descriptor, not a separate badge; descriptors without a badge of their own appear in italics under
             it. The three badges on this page, in a few words each:{' '}
-            <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization</Link> = known result, new notation;{' '}
-            <Link href="/glossary#speculative-badge" style={{ color: 'var(--color-accent-blue)' }}>Speculative</Link> = conceptual proposal without quantitative test (the canonical wording);{' '}
-            <Link href="/glossary#failed-badge" style={{ color: 'var(--color-accent-blue)' }}>Failed</Link> = tested, did not hold. &ldquo;Unfalsifiable as stated&rdquo; or &ldquo;untestable as stated&rdquo; after a dash is a descriptor saying <em>why</em> the Speculative badge applies to that claim, not a stronger sub-status. Definitions:{' '}
+            <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization</Link> = {badgeOneLiner('Reparametrization')};{' '}
+            <Link href="/glossary#speculative-badge" style={{ color: 'var(--color-accent-blue)' }}>Speculative</Link> = {badgeOneLiner('Speculative')};{' '}
+            <Link href="/glossary#failed-badge" style={{ color: 'var(--color-accent-blue)' }}>Failed</Link> = {badgeOneLiner('Failed')}. &ldquo;Unfalsifiable as stated&rdquo; or &ldquo;untestable as stated&rdquo; after a dash is a descriptor saying <em>why</em> the Speculative badge applies to that claim, not a stronger sub-status. Definitions:{' '}
             <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
               /honest-assessment#validation-badge-definitions
             </Link>.

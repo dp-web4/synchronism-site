@@ -241,7 +241,7 @@ const tests: Test[] = [
     id: 'TEST-10',
     name: 'Dwarf Galaxy DM Dominance',
     badge: 'failed',
-    badgeLabel: 'Failed — ceiling exceeded at every candidate cap; caps up to B_max ≈ 7.5 excluded at 3σ (one disc, outer curves)',
+    badgeLabel: 'Failed — every candidate cap exceeded at face value; rotation curves exclude caps up to ≈ 7.5 at 3σ (one disc), ≈ 5.7 after trials; the most permissive cap, 6.39, is excluded by dwarf spheroidals (Draco, Crater II), not by rotation curves',
     state: 'Kill Criterion Triggered',
     data: 'SPARC outer rotation-curve points (Q ≤ 2, i > 30°, N = 153)',
     cost: '$0',

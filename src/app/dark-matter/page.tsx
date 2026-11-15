@@ -226,7 +226,13 @@ export default function DarkMatter() {
             fails where MOND works&rdquo; but &ldquo;density keying fails four to six orders of magnitude harder than
             acceleration keying.&rdquo;)</em></li>
           <li><strong>CMB acoustic peaks:</strong> The relative heights of the CMB power spectrum peaks
-            are precisely fit by CDM. Any dark-matter-free framework must reproduce these ratios.</li>
+            are precisely fit by CDM (Planck Collaboration 2020, VI). Any dark-matter-free framework must reproduce these ratios.
+            Synchronism cannot yet be confronted with them: it has <strong>no relativistic (covariant) completion</strong>, so it
+            makes no prediction for the CMB, for the speed of gravitational waves, or for how light bends, and the last of these is
+            why its lensing tests are conditional (see{' '}
+            <Link href="/tier-1-existing#bounded-boost-joint" style={{ color: 'var(--color-accent-blue)' }}>the cap family</Link>).
+            That a MOND-class theory <em>can</em> fit the CMB peaks is shown by AeST (Skordis &amp; Złośnik 2021, Phys. Rev. Lett.
+            127, 161302); nothing comparable exists here. (Added 2026-11-15, researcher simulated-visitor persona.)</li>
           <li><strong>Large-scale structure:</strong> The matter power spectrum and BAO measurements
             tightly constrain the dark matter fraction. Synchronism has not been confronted with this data.</li>
           <li><strong>Gravitational lensing:</strong> Strong and weak lensing surveys map dark matter

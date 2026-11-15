@@ -29,11 +29,23 @@ export const BADGES: BadgeLabel[] = [
   { name: 'Sidelined', family: 'mrh', oneLiner: 'was in focus, now parked; reactivation condition stated', color: '#94a3b8' },
   { name: 'Superseded', family: 'mrh', oneLiner: 'replaced by a later formulation', color: '#6b7280' },
   { name: 'Audited-Negative', family: 'mrh', oneLiner: 'closed audit finding; durable; does not move', color: '#ef4444' },
-  { name: 'Untested', family: 'descriptive', oneLiner: 'prediction exists, no data yet', color: '#f59e0b' },
+  { name: 'Untested', family: 'descriptive', oneLiner: 'prediction exists; not yet run against data (the data may already exist)', color: '#f59e0b' },
   { name: 'Speculative', family: 'descriptive', oneLiner: 'conceptual proposal, no quantitative test', color: '#94a3b8' },
   { name: 'Reparametrization', family: 'descriptive', oneLiner: 'equivalent to existing physics in different notation', color: '#f59e0b' },
-  { name: 'Failed', family: 'descriptive', oneLiner: 'contradicted by data, with the specific error', color: '#ef4444' },
+  { name: 'Failed', family: 'descriptive', oneLiner: 'run against data and contradicted; the card names the specific error', color: '#ef4444' },
 ];
+
+// One wording per badge, rendered everywhere (2026-11-15). A technical-writer persona found "Failed" defined as
+// "tested, did not hold" on /key-claims and "contradicted by data, with the specific error" on /honest-assessment, and
+// "Untested" as "no data yet" on one page and "nobody has looked yet" on another (TEST-02 is Untested although Gaia DR3
+// exists). Untested now means not yet RUN, whether or not data exist. ValidationBadge, the /honest-assessment grids,
+// /key-claims and the glossary briefs all read badgeOneLiner().
+export function badgeOneLiner(name: string): string {
+  const b = BADGES.find((x) => x.name.toLowerCase() === name.toLowerCase());
+  if (!b) throw new Error(`unknown badge ${name}`);
+  return b.oneLiner;
+}
+export const capitalize = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
 
 // Operational states: what a test can do or what happened to it. Not badges.
 // Membership matches the #operational-states grid on /honest-assessment.

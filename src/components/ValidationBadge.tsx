@@ -1,6 +1,9 @@
 'use client';
 
 import type { ValidationStatus } from '@/lib/types';
+import { badgeOneLiner, capitalize } from '@/lib/statusLabels';
+
+const def = (name: string) => capitalize(badgeOneLiner(name));
 
 interface ValidationBadgeProps {
   status: ValidationStatus;
@@ -19,16 +22,16 @@ interface ValidationBadgeProps {
  */
 const statusConfig: Record<ValidationStatus, { className: string; defaultLabel: string; definition: string }> = {
   // MRH-relationship tags (preferred)
-  'active-mrh':       { className: 'badge badge-active-mrh',       defaultLabel: 'Active-MRH',        definition: 'Currently in active research focus; being extended or revised' },
-  'parallel-paths':   { className: 'badge badge-parallel-paths',   defaultLabel: 'Parallel-Paths',    definition: 'Kept in the hypothesis space: not in active focus, not abandoned' },
-  'sidelined':        { className: 'badge badge-sidelined',        defaultLabel: 'Sidelined',         definition: 'Was in active focus, currently not pursued; reasons documented' },
-  'superseded':       { className: 'badge badge-superseded',       defaultLabel: 'Superseded',        definition: 'Replaced by a later formulation' },
-  'audited-negative': { className: 'badge badge-audited-negative', defaultLabel: 'Audited-Negative',  definition: 'Closed audit finding on a historical track; durable record' },
+  'active-mrh':       { className: 'badge badge-active-mrh',       defaultLabel: 'Active-MRH',        definition: def('Active-MRH') },
+  'parallel-paths':   { className: 'badge badge-parallel-paths',   defaultLabel: 'Parallel-Paths',    definition: def('Parallel-Paths') },
+  'sidelined':        { className: 'badge badge-sidelined',        defaultLabel: 'Sidelined',         definition: def('Sidelined') },
+  'superseded':       { className: 'badge badge-superseded',       defaultLabel: 'Superseded',        definition: def('Superseded') },
+  'audited-negative': { className: 'badge badge-audited-negative', defaultLabel: 'Audited-Negative',  definition: def('Audited-Negative') },
   // Descriptive tags
-  untested:           { className: 'badge badge-untested',         defaultLabel: 'Untested',          definition: 'Prediction exists, no data yet' },
-  failed:             { className: 'badge badge-failed',           defaultLabel: 'Failed',            definition: 'Prediction contradicted by data' },
-  speculative:        { className: 'badge badge-speculative',      defaultLabel: 'Speculative',       definition: 'Conceptual proposal without quantitative test' },
-  reparametrization:  { className: 'badge badge-reparametrization', defaultLabel: 'Reparametrization', definition: 'Equivalent to existing physics in different notation — same math, not new physics' },
+  untested:           { className: 'badge badge-untested',         defaultLabel: 'Untested',          definition: def('Untested') },
+  failed:             { className: 'badge badge-failed',           defaultLabel: 'Failed',            definition: def('Failed') },
+  speculative:        { className: 'badge badge-speculative',      defaultLabel: 'Speculative',       definition: def('Speculative') },
+  reparametrization:  { className: 'badge badge-reparametrization', defaultLabel: 'Reparametrization', definition: def('Reparametrization') },
   // Deprecated — kept for back-compat; do not use in new code
   validated:          { className: 'badge badge-validated',        defaultLabel: 'Validated',         definition: 'Deprecated badge — see Honest Assessment for current taxonomy' },
   supported:          { className: 'badge badge-supported',        defaultLabel: 'Strongly Supported', definition: 'Deprecated badge — see Honest Assessment for current taxonomy' },

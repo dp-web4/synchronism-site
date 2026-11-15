@@ -23,6 +23,11 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-15 (researcher + technical-writer personas; dSph run maintainer/scripts/cap6p39_vs_dsph.py, PREREG c7d729c).
+    (r"[Ww]hat reaches 6\.39 is weak lensing|only (weak )?lensing reaches 6\.39|only weak lensing reaches", "2026-11-15", "gas-free dSphs (Draco, Crater II) exceed 6.39 at 4.9σ each at M/L = 4 with no light rule; use BOUNDED_BOOST_JOINT", True),
+    (r"boosts of 30(–|&ndash;)100 under any stellar M/L", "2026-11-15", "at M/L = 4 Draco excludes caps only to ~18.5 (3σ local), 14.7 after trials; 20.3 is excluded at fiducial M/L only"),
+    (r"= tested, did not hold|[Pp]rediction exists, no data yet", "2026-11-15", "badge wording is single-sourced in statusLabels.ts (badgeOneLiner); Untested = not yet run against data"),
+    (r"Your next step\s+is the\{' '\}\s*<Link href=\"/glossary\"", "2026-11-15", "the Beginner Path ends at step 5; the Glossary is a reference, not a sixth step"),
     # Added 2026-11-12 (graduate + researcher personas; 2.15 = 1.20·E(1) recomputed; Hill form checked by hand).
     (r"cH\(z\)/2&#x03C0; on the same anchor|cH\(z\)/2π on the same anchor", "2026-11-12", "2.15 is McGaugh's 1.20 × E(1); the framework's own cH(z)/2π is 1.86 (~9.8σ on the measurement error)", True),
     (r"a\s*<strong> Hill coefficient</strong>|γ is a Hill coefficient", "2026-11-12", "C is a Hill function of exponent 2γ in 1 + x only; near zero C ≈ γx for every γ, so 'Hill coefficient' describes the tail"),

@@ -16,7 +16,7 @@ export default function GalaxyRotation() {
       <PathNav currentPath="/galaxy-rotation" />
       <h1>Galaxy Rotation Curves</h1>
       <ValidationBadge status="failed" label="Failed — density-keyed form ΔBIC +2843; γ = 2 compander disfavoured at about 2σ: ΔBIC ≈ +11 at galaxy level and +184 by point with Υ frozen, +2.7 and +46 with each law's own Υ" />{' '}
-      <ValidationBadge status="reparametrization" label="Acceleration-keyed fit is a MOND μ at every γ; MOND's simple μ exactly at γ = ½" />
+      <ValidationBadge status="reparametrization" label="Acceleration-keyed fit is a MOND μ at every γ; MOND's simple μ exactly at γ = ½ (algebraic wiring; the action form gives a different μ)" />
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Galaxy rotation curves are the most important empirical test for any theory of gravity at
@@ -444,8 +444,8 @@ export default function GalaxyRotation() {
             </span>
             &mdash; MOND&apos;s simple interpolating function <em>for all x</em>, not just in the tail, with
             a&#x2080; &rarr; 2a&#x2080;. (&ldquo;&#x03B3; = &frac12;&rdquo; is an L2 statement, the algebraic or plain field-equation wiring. Under the
-            action-derived L3 wiring the effective μ is C + &frac12;xC&prime;, the tanh-log family maps onto itself, and the same
-            fitted curve sits at &#x03B3; &asymp; 0.44 with identical RMS; explorer 2026-10-13. That L3 is the <em>acceleration-keyed</em>
+            action-derived L3 wiring the effective μ is C + &frac12;xC&prime;, which at &#x03B3; = &frac12; is x(x+3)/(x+2)&sup2;, <em>not</em> &#x03BC;<sub>simple</sub>: its deep limit is 3x/4, so a&#x2080; = (4/3)a&#x2080;&prime; there, not 2a&#x2080;&prime;. The tanh-log family maps onto itself, and the same
+            fitted curve sits at &#x03B3; &asymp; 0.44 with identical RMS; explorer 2026-10-13. <strong>Which equation each test used</strong> (added 2026-11-15 after graduate and researcher simulated-visitor personas each asked): the SPARC fits and the Galaxy Plotter use the algebraic &#x03BC;-form g<sub>bar</sub> = g<sub>obs</sub>&middot;C; TEST-25&apos;s Cassini quadrupole uses the quasi-linear (QUMOND) field equation built from that same &#x03BC; = C (code: <code style={{ fontSize: '0.78rem' }}>TanhLogNu</code> in Synchronism/simulations/sparc_cassini_q2.py); TEST-09/10 use the floored g<sub>bar</sub>-keyed division. The L3 action has been refit to SPARC but never run against Cassini, so it is untested there. That L3 is the <em>acceleration-keyed</em>
             action, L = (1/8&pi;G)&thinsp;C(|&nabla;&Phi;|/a&#x2080;&prime;)&thinsp;|&nabla;&Phi;|&sup2;, an AQUAL-type Lagrangian; the density-keyed action
             gives a different equation, see the box under GW170817 below.) <strong>x is defined once, and it matters which:</strong> here x = g<sub>obs</sub>/a&#x2080;&prime;, and
             the fit solves g<sub>bar</sub> = g<sub>obs</sub>&middot;C(g<sub>obs</sub>/a&#x2080;&prime;) implicitly for g<sub>obs</sub>, the

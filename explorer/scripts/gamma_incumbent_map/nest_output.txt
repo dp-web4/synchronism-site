@@ -1,0 +1,11 @@
+simple mu a0=1.2e-10 (identity: expect g=0.5,a0'=0.6e-10) gamma=0.500 a0'=6.000e-11 rms=0.00 mdex
+McGaugh RAR g+=1.2e-10                                  gamma=0.595 a0'=7.363e-11 rms=4.18 mdex
+standard mu a0=1.2e-10                                  gamma=2.546 a0'=2.953e-10 rms=3.73 mdex
+RAR profile (a0' refit):
+  gamma=0.40 rms=22.11 mdex a0'=4.307e-11
+  gamma=0.50 rms=9.62 mdex a0'=5.859e-11
+  gamma=0.60 rms=4.20 mdex a0'=7.440e-11
+  gamma=0.70 rms=8.13 mdex a0'=9.039e-11
+  gamma=0.80 rms=12.68 mdex a0'=1.065e-10
+  gamma=1.00 rms=19.50 mdex a0'=1.388e-10
+  gamma=1.50 rms=28.83 mdex a0'=2.201e-10

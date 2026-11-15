@@ -1,0 +1,6 @@
+delta=0.85 -> gamma=0.459
+delta=0.89 -> gamma=0.493
+delta=0.93 -> gamma=0.529
+delta=0.97 -> gamma=0.566
+delta=1.01 -> gamma=0.605
+delta=1.05 -> gamma=0.646

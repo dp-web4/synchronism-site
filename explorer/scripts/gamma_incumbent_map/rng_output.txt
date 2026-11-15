@@ -1,0 +1,5 @@
+range [-12.0,-9.0]: gamma=0.590 a0'=7.31e-11 rms=3.4 mdex
+range [-12.3,-8.7]: gamma=0.595 a0'=7.36e-11 rms=4.2 mdex
+range [-12.8,-8.5]: gamma=0.592 a0'=7.27e-11 rms=4.4 mdex
+range [-11.5,-9.5]: gamma=0.573 a0'=7.08e-11 rms=1.6 mdex
+range [-12.3,-10.5]: gamma=0.523 a0'=6.31e-11 rms=0.2 mdex

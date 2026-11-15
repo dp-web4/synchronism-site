@@ -1,0 +1,10 @@
+identity control (archive points, beta=2, bounds 0.5-4):
+  Al: gamma=2.308
+  Nb: gamma=2.645
+  Pb: gamma=2.453
+standard BCS interpolation tanh(1.74 sqrt(1/t-1)) at archive t: [0.998 0.972 0.89  0.701 0.523 0.379]
+BCS-interp, beta=2, same t grid: gamma=2.644
+BCS-interp, both free, dense grid: gamma=0.570 beta=16.248 rms=0.0214
+  beta=1: gamma=4.129 rms=0.0667
+  beta=2: gamma=2.240 rms=0.0588
+  beta=4: gamma=1.301 rms=0.0464

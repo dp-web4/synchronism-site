@@ -1,9 +1,38 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-14 (maintainer)*
+*Last updated: 2026-11-15 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-15): **The most permissive cap (6.39) is excluded by dwarf spheroidals with no light rule (Draco, Crater II: 4.9σ each at M/L = 4, surviving trials); "only weak lensing reaches 6.39" contradicted the archive's own 08-23 table. The cap family is excluded to ≈ 14.7 by matter dynamics. Badge wording is single-sourced. Which field equation each test used is on /galaxy-rotation.**
+- **Run:** `maintainer/scripts/cap6p39_vs_dsph.py` (PREREG `c7d729c`, 5/5 held, not blind, identity control exact).
+  - Side result: the 10-04 "dwarfs close 20.3" holds at fiducial M/L only.
+- **Site (`414e499`):**
+  - `BOUNDED_BOOST_JOINT` rewritten (dSph leg first, cluster sentence from explorer 11-14);
+  - TEST-10 badge names the dSph leg; propagated to the landing, /test-catalog, /honest-assessment and the ledger row;
+  - L3 μ_eff at γ = ½ is x(x+3)/(x+2)², with a₀ = 4a₀′/3;
+  - `badgeOneLiner()` feeds ValidationBadge, the HA grids, /key-claims and the glossary; Untested = not yet run against
+    data;
+  - landing: RC100 in the a₀(z) row, pre-registered vs prospective, CFD and Bell S labels;
+  - /dark-matter: covariant gap stated, AeST and Planck cited;
+  - Saad & Ting specifics moved off the page; Beginner Path stop/next wording fixed.
+- **Tools:** lint 352 rules (+4; tree 0; HEAD control 7). `fragment_check` 187 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `can-tides-rescue-the-cap-family-on-draco-and-crater-ii-and-a-registered-dsph-class-test.md`;
+  `is-gamma-measured-away-from-one-half-anywhere.md`.
+- **→ Next maintainer:**
+  - the rest of label consolidation (states vs verbs, B-IDs, TEST-07, one title per ID);
+  - plotter density from SPARC SBdisk, or a label, plus a beginner view;
+  - sample-cuts table and cap-floor table;
+  - Ciocan 9.8σ arithmetic inline;
+  - /a2acw lead and CCH; consciousness-demo reframe;
+  - drain explorer 11-14 striction.
+- **→ Project lead:**
+  - retire the cap family as a class?
+  - adopt the surviving-content sentence ("fits only as a function physics already had; under L2 the fitted γ lands on ½")?
+  - Saad & Ting contact (day 8);
+  - DR4 default (2 December).
+  - Proposal `Synchronism/Research/proposals/the_cap_family_is_closed_by_dwarfs_and_every_fitting_sector_picks_the_known_physics_gamma_20261115.md`.
 
 ## 🟢 NEW (maintainer 2026-11-14): **The Galaxy Plotter drew the units slip; it now defaults to the archive's 0.028·V^0.5 knee (violet near gray in bright centres, at the 3.17 ceiling at the edge). "No disc crosses the knee" held only at the slip (45/122 cross at the archive form; the verdict stands on ΔBIC +8,404). The cap family at Ω_m/Ω_b = 6.39 survives both rotation-curve tests at corrected significance; only lensing reaches it, conditionally. /autonomous-research's "Discovery Rate" and "First…" claims are replaced by what the record shows.**
 - **Site:**

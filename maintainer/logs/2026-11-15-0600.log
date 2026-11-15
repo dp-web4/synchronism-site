@@ -1,0 +1,45 @@
+Starting Synchronism Maintainer Session at Sun Nov 15 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+The main result today corrects the research record, not just the site. Yesterday's ledger entry and proposal said the most permissive boost cap (Ω_m/Ω_b = 6.39) could be excluded only by weak lensing, and only if light follows the boosted potential. The archive's own 2026-08-23 dwarf-galaxy table already contradicted that; it had never been checked at 6.39.
+
+**WAKE: a research gap the record already contained**
+- I pre-registered and ran the test at 6.39 (`maintainer/scripts/cap6p39_vs_dsph.py`, PREREG `c7d729c`). All 5 predictions held, but they weren't blind: I'd seen the August table. The recomputed inputs match the August values exactly.
+- Draco and Crater II exceed the 6.39 cap at 4.9σ each, even assuming the heaviest plausible stars (M/L = 4). Both survive a correction for the six systems checked, and no gas count or light rule is involved.
+- The only escapes are stars 8–12 times heavier than their light, or speeds inflated by tides by 1.3× or more.
+- So the whole cap family is excluded up to a cap of about 14.7 by matter dynamics alone.
+- A side result cuts the other way: the 10-04 claim that dwarfs rule out the 20.3 cap holds only at typical M/L, not at the heavy end.
+
+**Site changes (commit `414e499`, pushed)**
+- **Cap sentences:** the dwarf result now appears on the landing page, the Tier 1 TEST-10 badge, the test catalog, the honest assessment, and the shared `BOUNDED_BOOST_JOINT` sentence.
+  - The researcher persona's HIGH item about the TEST-10 badge ("exceeded at every candidate cap") was half right. The badge was correct, but it rests on dwarf galaxies, not on lensing. It now says so.
+- **Which equation each test used (/galaxy-rotation):** I checked this in the simulation code.
+  - The SPARC fits and the plotter use the algebraic form.
+  - Cassini (TEST-25) uses the QUMOND field equation built from that same μ = C.
+  - TEST-09/10 use the floored division.
+  - The action form gives a different function at γ = ½ (x(x+3)/(x+2)², so a₀ = 4a₀′/3) and has never been run against Cassini.
+- **Badge definitions:** these now come from one source (`badgeOneLiner()` in `statusLabels.ts`). "Untested" now means "not yet run against data", whether or not the data exist.
+- **Landing page:**
+  - The a₀(z) row now leads with the site's own pre-registered RC100 run.
+  - The scoreboard separates pre-registered analyses of existing data from prospective predictions.
+  - CFD is spelled out, and the two Bell S values are labelled correctly.
+- **/dark-matter:** states that the framework has no relativistic version, and cites Planck and AeST. The AeST reference is from memory and wasn't fetched.
+- **/wide-binaries:** I removed the line-level claim about Saad & Ting's code from the page until the authors are contacted. The details remain in the linked finding, whose filename still contains "bug".
+- **Beginner Path:** fixed the "stop here" wording on step 1 and the "you're done / next step" mix-up on step 5.
+
+**Checks:** the build passes. The lint has 352 rules with 0 hits on the edited tree, and the 4 new rules fire 7 times on the previous commit, as they should. All 187 page anchors resolve. Nothing was checked in a browser.
+
+**Research repo (commit `f971b1bc`, pushed)**
+- A dated block in PREDICTIONS.md corrects the 11-14 entry, narrows the 10-04 claim, and records which equation each test used. No bucket moves: still 6 refutations, range 4–8, 0 confirmed.
+- **Proposal for you to decide:** `the_cap_family_is_closed_by_dwarfs_and_every_fitting_sector_picks_the_known_physics_gamma_20261115.md`. It asks you to:
+  - retire the cap family as a class;
+  - decide whether to contact Saad & Ting (day 8; I have not);
+  - adopt, edit or reject a one-line summary: wherever the framework fits data, it fits as a function physics already had.
+
+**Explorer topics:** whether tides can actually rescue Draco or Crater II, as a registered test on a full dwarf-galaxy compilation; and whether γ has been measured away from ½ in any sector.
+
+**Two things I didn't do:**
+- I read SPINE in full, but only the relevant parts of PREDICTIONS.md. At 236 KB, "read in full every session" is no longer realistic, and a short current-state section at the top would help.
+- The remaining label consolidation (states vs. verbs, test IDs, one title per test) and the plotter's mixed baryon models are carried to the next session.
+
+**So what?** The framework's one number of its own, the cap, had been called a survivor for two days while the record already showed it excluded. This is the third time a verdict has been written on one line of evidence while a contradicting result sat on file. I've added a step to the existing memory note: before writing a verdict, search the explorer findings by object class (dSph, cluster), not just by test ID.

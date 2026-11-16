@@ -1,0 +1,31 @@
+Starting Synchronism Explorer Session at Mon Nov 16 08:00:01 PST 2026
+I ran the blind-sector γ test, the one experiment the ledger called "the one left" with an unknown outcome. It can't make γ informative either way, and running it also showed the template gets the shape of a measured transition wrong.
+
+**WAKE.** The topic assumed that whether a fit "lands on the incumbent's γ" would tell us something about the template. My worry was that a fitted γ just reflects whatever curve the data follow, so the test would only say whether the textbook curve fits. I built the experiment to check that.
+
+**Run.**
+- **Data:** liquid-helium superfluid fraction (Donnelly & Barenghi 1998, Table 2.1). I kept only the 48 measured rows (Maynard 1976; Tam & Ahlers 1987). Rows below 1.25 K are Landau-theory output and rows above 2.07 K come from an asymptotic formula, so I dropped both. Nickel magnetisation tables were paywalled.
+- **Pre-registration:** committed before the fit code existed (`9ad8437`). It was **not blind**: the fetch report had already shown me the rounded table.
+
+**Results.**
+- **The registered verdict is ambiguous.** At β = 2, γ_fit = 2.596 ± 0.060, 15.7% from Andronikashvili's 1 − t^5.6 (γ_eq 2.243). With β free, γ_fit = 0.753, 18.4% from London's ideal Bose gas (0.636). That second closeness is a coincidence: London's curve misses the data badly. Landau's excitation-gas curve never reaches zero at the transition, so the template can't represent it.
+- **The "incumbent rule" is a least-squares identity.** When I use the curve that actually fits the data as the incumbent (found after the fact), the fit lands within 2% (0.737 vs 0.753). A fitted γ is simply the γ of whatever curve the data follow. It predicts nothing unless a textbook curve already fits.
+- **γ is not a constant of the sector.** It runs from 0.44 to 4.83 depending on the knee convention and the weighting. The two experiments on the same liquid give 0.60 and 0.95.
+- **The template fails the shape at the transition.** It always goes to zero linearly in (1 − T/T_c), whatever γ and β. The measured onset exponent is about 0.7 (0.745 fitted; 3D-XY theory says 0.67). The template's error is 4.1× that of a two-parameter rival curve and 12× the scatter between repeat measurements. This is the first test of that onset rule against measured order-parameter data.
+- **SPARC 0.489 vs 0.595 is closed.** It is not the grid, the loss or the error cut: the RAR's own γ on SPARC's points, with the same loss, is 0.587. The gap comes from the data's ±0.02 dex wiggle about McGaugh's curve. Both curves fit equally well, and the gap is about 1σ at galaxy level.
+
+**So what?** Mostly elimination. A blind sector can't make γ carry framework content. Only γ = 2/√N_corr, stated before fitting, could, and no sector on file states N_corr for an order-parameter system. The site's `/coherence-function#incumbent-map` lead ("every γ lands where the known theory sits") now overstates the rule. The finding gives the maintainer replacement text and a new table row. My own γ forecasts missed, and I reported the registered verdict rather than the more dramatic 5.9σ.
+
+**Files.** Committed and pushed as `9ad8437` and `960bc2c`. I updated the incumbent-map memory with the correction. I deferred the a₀(z) high-z literature topic.
+- Finding: `explorer/findings/blind-sector-he4-gamma-lands-on-no-textbook-incumbent-the-rule-is-a-projection-identity.md` (findings-lint clean)
+- Scripts: `explorer/scripts/blind_sector_he4/`
+- Log: `explorer/logs/2026-11-16.md`
+
+Sources:
+- [Donnelly & Barenghi, Observed Properties of Liquid Helium, ch. 2 (vapor3.htm)](https://pages.uoregon.edu/rjd/vapor3.htm)
+- [Donnelly vapor1.htm index](https://pages.uoregon.edu/rjd/vapor1.htm)
+- [NIST JPCRD reprint](https://srd.nist.gov/jpcrdreprint/1.556028.pdf)
+- [Crangle & Goodman 1971 (scilit record)](https://scilit.com/publications/444cc2fef9855825e266ce4d80fd49b3)
+- [A primer on quantum fluids](https://arxiv.org/pdf/1605.09580)
+- [Gerbier et al., cond-mat/0401585](https://arxiv.org/pdf/cond-mat/0401585)
+- [NASA NTRS 19720015089](https://ntrs.nasa.gov/api/citations/19720015089/downloads/19720015089.pdf)

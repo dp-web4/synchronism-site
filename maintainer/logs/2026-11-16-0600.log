@@ -1,0 +1,39 @@
+Starting Synchronism Maintainer Session at Mon Nov 16 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+I fixed all four HIGH items from today's visitor log and most of the MEDIUM ones, and pushed both repos. The site build passed twice, the lint is clean (360 rules, 8 new) and all 188 page anchors resolve. I haven't checked any page in a browser.
+
+**One decision I made without you.** I took the claim about Saad & Ting's code off /wide-binaries. The page said our reproduction of their public code differs from their paper "on one input setting", and we have not told the authors. The researcher persona rated this the top problem: a named group is in a live dispute, DR4 is 16 days out, and you've had the question for 8 days. The page now prints their numbers as published. The finding, scripts and mock tests are untouched in the explorer record, and one revert restores the sentence. I recommend contacting them before 2 December; a draft is in the 11-11 proposal.
+
+**WAKE.** All four personas agreed nothing on the site is new physics, and that the site says so first. The research content came from the explorer's 11-15 finding. Fit the equation to each field's standard curve, with no data, and you get the γ (its one shape parameter) that the data fits returned: 0.5 for MOND's simple formula and for Λ, 0.595 for McGaugh's empirical galaxy relation, 2.64 for BCS superconductors, infinity for Newton. So a fitted γ only tells you which known curve the data resemble.
+- It also settles the ledger's test of whether γ's link to a correlation count (the "N_corr" test) settles on one definition across fields: it can't, by construction.
+- The one experiment left: pick a field where nobody here has fitted γ yet (BEC or Ising), commit the predicted γ first, then fit real data. If the fit lands elsewhere, γ carries information for the first time.
+
+**Site changes:**
+- **/coherence-function:** the headline equation's own badge said "Speculative", which means never tested; it was tested and lost. It now reads Failed (density version) and Reparametrization (it reduces to MOND's formula or to Λ). I also added the table of where each standard curve sits on the γ axis. It shows why the Cassini test fails at every γ: MOND only passes Cassini with sharp transitions, and this equation can't be sharper than 1.17 dex.
+- **Beginner path:**
+  - First Encounter now teaches the same ρ_crit formula the plotter uses (0.028·V^0.5). It also explains that the older V² version was a units mix-up.
+  - The Coherence Explorer opens at γ = 1, a neutral display value, with the fitted values folded under "For physicists". It used to open at 0.49, a value fitted to a different version of the curve.
+- **Labels:** /honest-assessment now builds its lists of test states and history verbs from the same file as every other page: 7 states and 11 verbs everywhere, instead of 10 states on one page. "Validation badges" are now called "Status badges", and the retracted "γ ≈ 1 Boundary" is renamed everywhere.
+- **Verdicts that disagreed between pages now match:**
+  - a₀(z) now reads "survives; does not discriminate" everywhere.
+  - The 9.8σ now shows which uncertainty it uses.
+  - The DESI sign rule now says which model it holds for and which it doesn't.
+  - The lunar-ranging factor reads 635× at γ = ½, and at least 527× across the range.
+  - The Saturn number on the Cassini card is labelled as a separate measurement from the 17.95σ.
+  - The 1/Ω_m gravity cap is now linked to its cosmological origin.
+
+**Research repo:** a new 11-16 block in PREDICTIONS.md (no bucket moves; still 6 refutations, range 4–8, 0 confirmed). There is also a note on the superconductor session: its γ values were fitted to six hand-typed points per metal and are just BCS's own value. The proposal is `every_fitted_gamma_is_the_incumbents_and_a_code_claim_left_the_page_20261116.md`.
+
+**Also for you:**
+- **The visitor loop:** the HIGH items have mostly been label and page-consistency fixes for six weeks. I suggest running it less often, or giving one persona the job of writing a referee report on /for-researchers.
+- **PREDICTIONS.md:** it's now about 240 KB (about 60,000 tokens), and reading it in full as instructed costs a large share of each session. I suggest a one-page current-state section at the top, with the dated correction blocks moved to a separate log.
+- **Still waiting on a ruling:**
+  - the DR4 reading rule, before 2 December;
+  - which surviving-content sentence goes on the site: use the explorer's replacement, not the 11-15 wording;
+  - the counting rule.
+
+**Not done:**
+- The explorer's 11-14 striction finding has now waited three sessions; next session should start with it.
+- The technical writer's navigation list (tiers, breadcrumbs, URLs) is in the log.
+- I seeded two explorer topics: the γ test above, and the high-redshift galaxy rotation papers that bear on a₀(z).

@@ -1,0 +1,11 @@
+measured grid: 31 unique T from 1.2033 to 2.1636 K (t 0.553-0.994)
+Landau incumbent spot values rho_s/rho: {1.2: 0.9749, 1.6: 0.8691, 1.8: 0.7753, 2.0: 0.6559, 2.1: 0.588, 2.16: 0.5451}
+I1 London ideal BEC 1-t^1.5 (1938)
+   data grid        β=1.0: γ=1.220 (β=1, rms=0.0133) | β=2.0: γ=0.711 (β=2, rms=0.0028) | β=free: γ=0.636 (β=2.34, rms=0.0003) | β free, rel-weighted: γ=0.624 (β=2.4)
+   dense 0.02-0.99  β=1.0: γ=1.120 (β=1, rms=0.0282) | β=2.0: γ=0.703 (β=2, rms=0.0038) | β=free: γ=0.668 (β=2.18, rms=0.0017) | β free, rel-weighted: γ=0.647 (β=2.29)
+I2 Landau phonon+roton gas (neutron consts)
+   data grid        β=1.0: γ=37.632 (β=1, rms=0.2071) | β=2.0: γ=18.818 (β=2, rms=0.2063) | β=free: γ=0.181 (β=2.34e+03, rms=0.0634) | β free, rel-weighted: γ=0.153 (β=4.79e+03)
+   dense 0.02-0.99  β=1.0: γ=8.431 (β=1, rms=0.1007) | β=2.0: γ=4.310 (β=2, rms=0.0976) | β=free: γ=0.353 (β=140, rms=0.0472) | β free, rel-weighted: γ=0.286 (β=286)
+I3 Andronikashvili 1-t^5.6 (1946 data)
+   data grid        β=1.0: γ=4.090 (β=1, rms=0.0270) | β=2.0: γ=2.243 (β=2, rms=0.0167) | β=free: γ=1.321 (β=3.95, rms=0.0047) | β free, rel-weighted: γ=1.135 (β=4.85)
+   dense 0.02-0.99  β=1.0: γ=4.063 (β=1, rms=0.0202) | β=2.0: γ=2.231 (β=2, rms=0.0118) | β=free: γ=1.425 (β=3.56, rms=0.0041) | β free, rel-weighted: γ=1.232 (β=4.35)

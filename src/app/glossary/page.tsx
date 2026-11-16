@@ -51,7 +51,7 @@ export default function Glossary() {
         highlight terms with a dotted underline; hover them to see these definitions inline. Most pages link here instead.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '2rem' }}>
-        <strong>Validation badges</strong> come in two families.{' '}
+        <strong>Status badges</strong> (the component is still called a validation badge; none of them certifies a result) come in two families.{' '}
         <em>MRH-relationship</em> badges (Active-MRH, Parallel-Paths, Sidelined, Superseded, Audited-Negative)
         describe where a claim sits in the research inventory.{' '}
         <em>Descriptive</em> badges (Untested, Speculative, Reparametrization, Failed) describe the empirical status.

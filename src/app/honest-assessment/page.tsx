@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { Fragment } from 'react';
-import { BADGES, RETIRED_LABELS, capitalize } from '@/lib/statusLabels';
+import { BADGES, RETIRED_LABELS, OPERATIONAL_STATES, LIFECYCLE_VERBS, capitalize } from '@/lib/statusLabels';
+import { LABEL_DEFINITIONS } from '@/lib/labelDefinitions';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -71,6 +72,40 @@ export default function HonestAssessment() {
       </details>
 
 
+      <div style={{ maxWidth: '65ch', marginBottom: '1.5rem' }}>
+        <p id="plain-summary" style={{ scrollMarginTop: '5rem', margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, background: 'rgba(59,130,246,0.07)', borderLeft: '3px solid rgba(59,130,246,0.5)', borderRadius: '4px', padding: '0.75rem 1rem' }}>
+          <strong>What failed, in one paragraph — no jargon:</strong> This project proposed one equation meant to describe how things hold together at
+          every scale, from atoms to galaxies. When its galaxy predictions were tested against real telescope
+          measurements, the predictions that differed from its rival theory failed. It predicted a specific relationship between a
+          galaxy&apos;s mass and its rotation speed — the measured relationship landed far enough away to cross
+          the line the project itself had drawn in advance as &ldquo;this would kill the theory&rdquo; (with one
+          catch: that verdict depends on where the project sets its cap on extra gravity; what holds at every
+          reasonable setting is that small caps are ruled out). It puts
+          a hard cap on how much &ldquo;missing gravity&rdquo; a galaxy can display — and about two-thirds of
+          real galaxies display more than that cap allows. And an environmental effect it predicted turned out,
+          when measured, not to exist at all. Where the equation <em>does</em> fit galaxies, it fits only by
+          imitating MOND — a 40-year-old rival theory that tweaks gravity instead of adding dark matter — and
+          never fits better than it. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
+          own scoreboard — zero confirmed predictions, <strong>six</strong> executed refutations
+          resting on two framework-specific mechanism roots, plus one refuted registration, one constraint
+          inherited from MOND, and one Bell/CHSH construction check. <strong>Why does the site
+          still exist?</strong> Because a few of the framework&apos;s core ideas have never been testable with
+          existing instruments (untested is not the same as failed), and because this record — a theory testing
+          itself in public and publishing every failure — is itself the point. The paragraph &ldquo;the same, with the
+          numbers&rdquo;, after the refutation table, says it with the actual figures.
+        </p>
+        <div id="non-physicist-takeaway" style={{ marginTop: '0.75rem', scrollMarginTop: '5rem' }}>
+          <strong style={{ color: 'var(--color-text-primary)', fontSize: '0.95rem' }}>What a non-physicist should take away:</strong>
+          <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0.5rem 0 0', paddingLeft: '1.25rem' }}>
+            <li>The equation driven by <em>density</em> &mdash; the actual idea &mdash; does not fit galaxy rotation (the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link> shows it failing). A version with its input switched to <em>acceleration</em> and one dial fitted to the data does fit &mdash; but at that setting it becomes MOND, an existing 40-year-old idea, and never does better. (Reworded 2026-09-14: this line used to say &ldquo;the one equation fits galaxy rotation,&rdquo; which a reader fairly took as contradicting the plotter.)</li>
+            <li>Its one galaxy prediction that differed from MOND (how a galaxy&apos;s mass relates to its rotation speed) was checked against real data in July 2026 and failed the test it had set for itself at the cap the site uses: the measured slope sits about 3.3&sigma; from the prediction, but the pre-registered kill line was crossed by only about 1&sigma;. At two other candidate caps it lands on or just inside the line, so the firm result is that small caps are ruled out. On cosmology, it has no live prediction that differs from standard cosmology (&Lambda;CDM): the one growth prediction it registered came from a mechanism later withdrawn (August 2026), and of the readings that remain, one is &Lambda;CDM to within 0.2% and the other is already excluded by existing data.</li>
+            <li>None of its numbers come from first principles — every parameter is fitted to data or simply asserted.</li>
+            <li>No currently proposed experiment can tell the framework, as it defines itself, apart from existing physics. (One future dark-energy test could favour a variant reading of it &mdash; one the framework&apos;s own starting assumption rules out.)</li>
+            <li>The real product is this audit itself: every failure documented, with the numbers, by the same project that made the claims.</li>
+          </ul>
+        </div>
+      </div>
+
       <div id="if-you-read-nothing-else" className="card" style={{ scrollMarginTop: '5rem', maxWidth: '65ch', marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-warm)', fontSize: '0.9rem' }}>
         <p style={{ margin: '0 0 0.5rem', color: 'var(--color-accent-warm)', fontWeight: 600 }}>
           If you read nothing else (this page is about 30,000 words)
@@ -122,39 +157,7 @@ export default function HonestAssessment() {
         </details>
       </div>
 
-      <div style={{ maxWidth: '65ch', marginBottom: '1.5rem' }}>
-        <p id="plain-summary" style={{ scrollMarginTop: '5rem', margin: '0 0 0.75rem', color: 'var(--color-text-secondary)', fontSize: '0.95rem', lineHeight: 1.6, background: 'rgba(59,130,246,0.07)', borderLeft: '3px solid rgba(59,130,246,0.5)', borderRadius: '4px', padding: '0.75rem 1rem' }}>
-          <strong>What failed, in one paragraph — no jargon:</strong> This project proposed one equation meant to describe how things hold together at
-          every scale, from atoms to galaxies. When its galaxy predictions were tested against real telescope
-          measurements, the predictions that differed from its rival theory failed. It predicted a specific relationship between a
-          galaxy&apos;s mass and its rotation speed — the measured relationship landed far enough away to cross
-          the line the project itself had drawn in advance as &ldquo;this would kill the theory&rdquo; (with one
-          catch: that verdict depends on where the project sets its cap on extra gravity; what holds at every
-          reasonable setting is that small caps are ruled out). It puts
-          a hard cap on how much &ldquo;missing gravity&rdquo; a galaxy can display — and about two-thirds of
-          real galaxies display more than that cap allows. And an environmental effect it predicted turned out,
-          when measured, not to exist at all. Where the equation <em>does</em> fit galaxies, it fits only by
-          imitating MOND — a 40-year-old rival theory that tweaks gravity instead of adding dark matter — and
-          never fits better than it. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
-          own scoreboard — zero confirmed predictions, <strong>six</strong> executed refutations
-          resting on two framework-specific mechanism roots, plus one refuted registration, one constraint
-          inherited from MOND, and one Bell/CHSH construction check. <strong>Why does the site
-          still exist?</strong> Because a few of the framework&apos;s core ideas have never been testable with
-          existing instruments (untested is not the same as failed), and because this record — a theory testing
-          itself in public and publishing every failure — is itself the point. The paragraph &ldquo;the same, with the
-          numbers&rdquo;, after the refutation table, says it with the actual figures.
-        </p>
-        <div id="non-physicist-takeaway" style={{ marginTop: '0.75rem', scrollMarginTop: '5rem' }}>
-          <strong style={{ color: 'var(--color-text-primary)', fontSize: '0.95rem' }}>What a non-physicist should take away:</strong>
-          <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0.5rem 0 0', paddingLeft: '1.25rem' }}>
-            <li>The equation driven by <em>density</em> &mdash; the actual idea &mdash; does not fit galaxy rotation (the <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link> shows it failing). A version with its input switched to <em>acceleration</em> and one dial fitted to the data does fit &mdash; but at that setting it becomes MOND, an existing 40-year-old idea, and never does better. (Reworded 2026-09-14: this line used to say &ldquo;the one equation fits galaxy rotation,&rdquo; which a reader fairly took as contradicting the plotter.)</li>
-            <li>Its one galaxy prediction that differed from MOND (how a galaxy&apos;s mass relates to its rotation speed) was checked against real data in July 2026 and failed the test it had set for itself at the cap the site uses: the measured slope sits about 3.3&sigma; from the prediction, but the pre-registered kill line was crossed by only about 1&sigma;. At two other candidate caps it lands on or just inside the line, so the firm result is that small caps are ruled out. On cosmology, it has no live prediction that differs from standard cosmology (&Lambda;CDM): the one growth prediction it registered came from a mechanism later withdrawn (August 2026), and of the readings that remain, one is &Lambda;CDM to within 0.2% and the other is already excluded by existing data.</li>
-            <li>None of its numbers come from first principles — every parameter is fitted to data or simply asserted.</li>
-            <li>No currently proposed experiment can tell the framework, as it defines itself, apart from existing physics. (One future dark-energy test could favour a variant reading of it &mdash; one the framework&apos;s own starting assumption rules out.)</li>
-            <li>The real product is this audit itself: every failure documented, with the numbers, by the same project that made the claims.</li>
-          </ul>
-        </div>
-      </div>
+
 
       <div style={{ maxWidth: '65ch', marginBottom: '1.5rem', padding: '0.7rem 1rem', background: 'rgba(16,185,129,0.07)', border: '1px solid rgba(16,185,129,0.35)', borderRadius: '0.375rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
         <strong style={{ color: '#10b981' }}>New here, or on the Beginner Path?</strong> You can stop here &mdash; the rest of this
@@ -192,7 +195,7 @@ export default function HonestAssessment() {
 
       <details id="validation-badge-definitions" style={{ marginBottom: '2rem', maxWidth: '65ch' }}>
         <summary style={{ cursor: 'pointer', color: 'var(--color-accent-blue)', fontSize: '0.9rem' }}>
-          Validation badge definitions (canonical reference)
+          Status badge definitions (canonical reference; called &ldquo;validation badges&rdquo; until 2026-11-16, though none of them is a validation)
         </summary>
 
         <div id="badge-table" style={{ marginTop: '0.75rem', scrollMarginTop: '5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
@@ -269,17 +272,17 @@ export default function HonestAssessment() {
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-          <strong>Kill Criterion Triggered</strong><span>A pre-registered falsification threshold was crossed. Carries Failed badge. Stronger than &ldquo;Failed&rdquo; alone because failure was quantified in advance.</span>
-          <strong>MOND-shared</strong><span>RETIRED (class audited 2026-07-14/15). Asserted &ldquo;a positive result confirms Synchronism AND MOND equally.&rdquo; All three carriers dissolved when executed or adjudicated: TEST-09 (BTFR — Failed; kill fired at B<sub>max</sub> = 1/&Omega;<sub>m</sub>, |&Delta;n| = 0.41 &gt; 0.3, but convention-dependent: the 2026-09-18 ceiling sweep finds it does not fire at the two baryon-budget ceilings, so it does not survive its own pre-fixed rule; convention-free, B<sub>max</sub> &#8818; 5.3 is excluded; whether it stays in the count of 6 is pending the project lead), TEST-10 (dwarf DM fractions — 69% of SPARC exceeds the framework&apos;s 68.5% ceiling), TEST-05 (environment levers differ by ~50–5,000×). A tie badge was the site&apos;s only unfalsifiable label — it carried no execution burden and sounded modest. New rule: a claimed tie carries the same execution burden as a claimed kill (both predictions computed, agreement shown within the data&apos;s discriminating power).</span>
-          <strong>Withdrawn</strong><span>Framework disowned the test — not from data refutation, but from internal contradiction or an unmotivated amplitude. A test replaced by a later formulation is Superseded, not Withdrawn (overlap removed 2026-09-25). Carries no badge (never adjudicated). TEST-04 (BAO).</span>
-          <strong>Self-Eliminating-or-Tie</strong><span>No measurement outcome selects Synchronism over the standard alternatives — either the signal is below systematics reach, or both outcomes (null and confirmed anomaly) are covered by Newton or MOND respectively. TEST-02 (wide binaries).</span>
-          <strong>Unrunnable as stated</strong><span>The test as written cannot be executed: a mapping, calibration or amplitude it needs is undefined, so no observation can be compared to it (e.g. every C-keyed consciousness prediction: no EEG &rarr; C calibration exists). Distinct from Untested, which has a runnable protocol and no data yet. Added to this legend 2026-10-19 (it was in use on six pages and the Test Roadmap&apos;s list).</span>
-          <strong>Sign Correction</strong><span>Annotation marking that the prediction direction on this page was corrected after initial publication. Not a verdict badge — a correction provenance marker. TEST-02 (2026-06-06).</span>
-          <strong>Null-Class</strong><span>The result achieves the same or better fit using a structurally simpler null model (e.g., polynomial in atomic number Z). The match is evidence of monotonicity in the target variable, not framework-specific physics. Chemistry correlation explorer.</span>
-          <strong>Artifact Lesson</strong><span>Added to this legend 2026-08-05 (it was in use on three tool cards and defined in no legend). Marks an <em>interactive tool</em>, not a prediction: the tool animates a relation the audit found wrong, kept deliberately so a reader can watch it fail rather than read that it failed. Currently on three tools: the Crossover Regime Visualizer (formerly &ldquo;Phase Boundary Visualizer&rdquo;) and the γ Calculator (both animate γ = 2/√N_corr, audited-negative), and the Consciousness Demo (seven &ldquo;independent&rdquo; approaches converging on C ≈ 0.50 by construction); it also applies to any tool whose displayed law is superseded. Companion label &ldquo;Model Explainer&rdquo; means the tool shows how the equation works and is not itself a verdict on whether the equation is correct. Both are tool-card labels; neither is a validation badge.</span>
-          <strong>89% Boundary-Consistent</strong><span>Fraction of natural phenomena in the gamma-boundary catalog whose gamma parameter falls within the regime boundaries defined by the visualizer. Descriptive only — not a prediction or a test. Carries Template Bias Caveat.</span>
-          <strong>Template Bias Caveat</strong><span>The 89% consistency figure is derived from a catalog that was populated <em>using</em> the framework's regime boundaries as a guide — boundary-consistent framing is baked into the collection method. The fraction should not be read as independent confirmation.</span>
+          {OPERATIONAL_STATES.map(n => (
+            <Fragment key={n}><strong>{n}</strong><span dangerouslySetInnerHTML={{ __html: LABEL_DEFINITIONS[n] ?? '' }} /></Fragment>
+          ))}
         </div>
+        <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
+          Seven states, the same seven listed on Test Roadmap and Tier 1 (all three render from one list since 2026-11-16).
+          MOND-shared is a retired label (above). &ldquo;89% Boundary-Consistent&rdquo; and its &ldquo;Template Bias Caveat&rdquo;
+          were listed here until 2026-11-16; they describe one catalogue on the{' '}
+          <Link href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; &#x2248; 1 page</Link> (a fraction collected using
+          the boundaries it is then checked against), not a state a test can be in.
+        </p>
 
         <p id="status-lifecycle-verbs" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '1rem', scrollMarginTop: '5rem' }}>
           <strong>Status lifecycle verbs</strong> (added 2026-07-23 — this vocabulary was used with precision
@@ -288,21 +291,15 @@ export default function HonestAssessment() {
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '0.25rem 1rem', marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-          <strong>EXECUTED</strong><span>The registered computation was actually run on real data, with scripts cited — as opposed to asserted, estimated, or argued. Always date-stamped. The strongest provenance word on the site.</span>
-          <strong>ADJUDICATED</strong><span>A verdict was rendered by structural argument or by analysis of already-published results, without a new run (e.g. TEST-05&apos;s lever-magnitude comparison). Weaker provenance than EXECUTED; the distinction is preserved so readers can tell which verdicts rest on runs.</span>
-          <strong>CLOSED</strong><span>Applies to a research <em>question</em>, not a prediction: the question is resolved (sometimes as a null) and no further work is planned. E.g. &ldquo;EFE gap — CLOSED,&rdquo; &ldquo;form selection closed as a null.&rdquo;</span>
-          <strong>WITHDRAWN</strong><span>Not a lifecycle verb: it is an <em>operational state</em>, defined once in the grid above. (Until 2026-10-23 it was defined in both grids; a technical-writer simulated-visitor persona counted that as one term in two label systems.)</span>
-          <strong>RETIRED</strong><span>Applies to <em>vocabulary or framing</em>, not to data verdicts: a label or badge class removed from service after audit showed it defective. E.g. the &ldquo;MOND-shared&rdquo; tie-badge class (retired 2026-07-15 when all three carriers dissolved on execution). &ldquo;MOND-shared / RETIRED&rdquo; therefore means: this label used to sit here, and the label itself — not the test — was withdrawn from the site&apos;s vocabulary.</span>
-          <strong>RECLASSIFIED</strong><span>Moved between categories (e.g. Tier 1 → Tier 2, prediction → exploratory hypothesis) after audit showed the original category&apos;s entry requirements were never met. The row is kept in place, demoted visibly, so the demotion is not silent.</span>
-          <strong>NEVER RUN AS REGISTERED</strong><span>A different dataset, sample, or statistic was substituted and adjudicated in the registered test&apos;s place — the substitute has its own verdict, but the test as originally pre-registered remains unrun and still runnable. Distinct from WITHDRAWN (which is retracted, not substituted). E.g. TEST-03 (the ALFALFA-SDSS run was executed as TEST-03s instead).</span>
-          <strong>UNDERPOWERED AS REGISTERED</strong><span>The registered kill threshold sits inside the measurement&apos;s own known systematics or pipeline-dependence range, so neither outcome (threshold crossed or not) can adjudicate anything until the registration is tightened. Marked before the data arrives where possible, not as a post-hoc excuse. E.g. TEST-06 (BTFR σ_int threshold vs. ~3× velocity-definition-dependent scatter), TEST-04a (data past the fσ₈ threshold by ~0.9σ against a &gt;3σ demand; ~1.5σ until the 2026-10-10 QSO-row correction).</span>
-          <strong>Ceiling Exceeded</strong><span>A structural failure mode specific to this framework: the data demands more than the framework&apos;s built-in maximum (the bounded boost 1/&Omega;_m = 3.17), so no parameter choice can rescue the fit. Needs no threshold registration — the ceiling is algebraic.</span>
-          <strong>Empty Intersection</strong><span>A joint test fails because the parameter ranges two datasets each allow do not overlap: no single value satisfies both. E.g. TEST-25: the γ interval SPARC retains with points treated as independent (0.425&ndash;0.600) and the interval the Cassini Solar-System bound allows share no point. With the galaxy as the unit the SPARC interval widens to γ ≈ 0.3&ndash;1.7, and the intersection is still empty: with SPARC&apos;s own a<sub>0</sub> refit at each γ and M/L pinned, Cassini fails at 14.5&ndash;19σ for every γ from 0.3 to 3 (2026-11-06), and at 13&ndash;18σ with the bulge-dominated galaxies dropped (2026-11-07). Each dataset alone may be fit; the <em>conjunction</em> is what is refuted, and only for the realization that uses one function at both scales under a modified-Poisson (QUMOND) field equation. (Superseded wording, kept for the record: on 2026-10-15 this entry said the galaxy-level intersection was &ldquo;narrow, not empty&rdquo;. That rested on a Cassini pass at γ ≳ 1.5&ndash;2 computed with a<sub>0</sub> held fixed, withdrawn 2026-11-06.)</span>
-          <strong>Kill Criterion Triggered</strong><span>Defined once, under operational states above (a pre-registered threshold was crossed; the claim carries the Failed badge). Listed here only so a reader scanning the verbs finds it.</span>
-          <strong>Demoted &mdash; Exploratory</strong><span>A RECLASSIFIED test whose registration never met the entry bar for a prediction (no derivation of the amplitude, or no threshold). It stays visible as an exploratory hypothesis and counts neither for nor against. (Added 2026-10-04.)</span>
-          <strong>Closed by Execution</strong><span>CLOSED reached by running the computation rather than by argument: the question was answered on data, often as a null. (Added 2026-10-04.)</span>
-          <strong>[Brackets]</strong><span>Text in brackets inside a quoted prediction (e.g. &ldquo;[Withdrawn]&rdquo;) marks that the surrounding wording is preserved verbatim for the record but is no longer asserted.</span>
+          {LIFECYCLE_VERBS.map(n => (
+            <Fragment key={n}><strong>{n}</strong><span dangerouslySetInnerHTML={{ __html: LABEL_DEFINITIONS[n] ?? '' }} /></Fragment>
+          ))}
         </div>
+        <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
+          Withdrawn and Kill Criterion Triggered are operational states only (grid above). Text in [brackets] inside a quoted
+          prediction marks wording kept verbatim for the record but no longer asserted. Card capitalisation follows these lists
+          (&ldquo;as registered&rdquo;, lower case).
+        </p>
 
         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
           <strong>Transitions:</strong> statuses move in one direction. Untested → Executed/Adjudicated → Failed
@@ -812,7 +809,7 @@ export default function HonestAssessment() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>Chemistry: &#x03B3; &#x2248; 1 Boundary</h3>
+              <h3>Chemistry: &#x03B3; &#x2248; 1 Band (boundary reading retracted)</h3>
               <ValidationBadge status="reparametrization" label="Z-null run on the real rows (2026-10-31): fails; the proxies are θ_D and ionization energy renamed" />
             </div>
             <p style={{ color: 'var(--color-text-secondary)' }}>

@@ -77,7 +77,7 @@ export default function GammaRegimes() {
           superconductor example below).
         </p>
 
-        <h2>The &#x03B3; &#x2248; 1 Boundary</h2>
+        <h2>The &#x03B3; &#x2248; 1 Band (boundary reading retracted)</h2>
         <div className="card" style={{ borderLeft: '3px solid #ef4444', marginBottom: '1rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Correction (2026-08-09):</strong> this section stated that at γ&nbsp;≈&nbsp;1

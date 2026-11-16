@@ -119,7 +119,7 @@ export default function CoreIdea() {
             <strong> Both markers move with &#x03B3;</strong>, so neither number means anything without it:
             C(&#x03C1;<sub>crit</sub>) = tanh(&#x03B3;&middot;ln&nbsp;2), which is 0.88 at &#x03B3; = 2 but only 0.33 at the
             SPARC-fitted &#x03B3; &#x2248; 0.49 &mdash; below the halfway point rather than near saturation. The
-            Coherence Explorer defaults to &#x03B3; = 0.49 and reads 0.327; this figure is drawn at the refuted pin.
+            Coherence Explorer&apos;s 0.49 button reads 0.327; this figure is drawn at the refuted pin.
             (Flagged 2026-09-18 by a visitor who found the two figures 2.7&times; apart with neither stating its &#x03B3;.)
           </p>
         </div>

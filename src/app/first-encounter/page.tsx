@@ -57,9 +57,11 @@ const steps = [
   {
     title: 'Scale Up: Galaxies',
     content: `Apply the same equation to galaxies. Stars in a galaxy are individual uncorrelated
-    classical particles (N_corr = 1, γ = 2: the framework's original guess, which loses to MOND, not the fitted γ ≈ 0.5; see the γ status above). The critical density ρ_crit = A × V_flat² (V_flat is the steady top speed of stars far from a galaxy's centre; A is a
-    fitted constant, about 0.029 in these units, not derived from anything) connects
-    to rotation velocity. MOND — Modified Newtonian Dynamics, the long-standing rival proposal that gravity itself changes below a threshold acceleration, rather than invoking dark matter — has an acceleration constant a₀. Its value happens to match a combination
+    classical particles (N_corr = 1, γ = 2: the framework's original guess, which loses to MOND, not the fitted γ ≈ 0.5; see the γ status above). The switch-over density ρ_crit is tied to how fast the galaxy spins: the archive writes
+    ρ_crit = 0.028 × V_flat^0.5 (V_flat is the steady top speed of stars far from a galaxy's centre; 0.028 is a
+    fitted constant, not derived from anything). This is the default on the Galaxy Curve Plotter, the next step.
+    Some older pages wrote 0.029 × V_flat² instead: that put the first formula's number on a different power of
+    V_flat, a units mix-up that the plotter keeps as a switch so you can compare. MOND — Modified Newtonian Dynamics, the long-standing rival proposal that gravity itself changes below a threshold acceleration, rather than invoking dark matter — has an acceleration constant a₀. Its value happens to match a combination
     of the speed of light and the universe's expansion rate. That may be luck; nobody has derived it.`,
     // Visitor 2026-09-27: the dimensional-analysis detail was pitched above the rest of the page;
     // it now sits behind a "For the curious" fold rendered below the section text.

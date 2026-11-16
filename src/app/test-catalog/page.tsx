@@ -66,7 +66,7 @@ export default function TestCatalog() {
         fire at the site&apos;s ceiling B<sub>max</sub> = 1/&Omega;<sub>m</sub>. On galaxy rotation data TEST-09 does not fire at the other two candidate ceilings, and TEST-10 exceeds them at face value only (two discs at 3&sigma; at the most permissive one, none after correcting for 153 discs).
         Galaxy weak lensing excludes the framework&apos;s own ceiling whichever way light is assumed to bend, and the most permissive candidate only if hidden baryons are below about 6&times; the stars and cold gas (<Link href="/honest-assessment#lensing-ceiling" style={{ color: 'var(--color-accent-blue)' }}>conditions</Link>). Whether TEST-09 stays in the count of 6 is
         pending the project lead (&ldquo;dp&rdquo;).{' '}
-        <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>All six in one table &rarr;</Link> <strong>Underpowered as Registered (not Failed, not counted as a
+        <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>All six in one table &rarr;</Link> <strong>Underpowered as registered (not Failed, not counted as a
         refutation):</strong> TEST-04a. <strong>Reparametrization:</strong> TEST-08. <strong>Withdrawn:</strong> TEST-04.
         The rest have not been run, or cannot be run as stated (details on each tier page).
       </p>
@@ -86,7 +86,7 @@ export default function TestCatalog() {
           fontSize: '0.8rem',
           color: 'var(--color-text-muted)',
         }}>
-          <strong style={{ color: 'var(--color-text-secondary)' }}>Validation Badge Guide — MRH-relationship</strong>{' '}({BADGE_FAMILIES.mrh.gloss}):{' '}
+          <strong style={{ color: 'var(--color-text-secondary)' }}>Status Badge Guide — MRH-relationship</strong>{' '}({BADGE_FAMILIES.mrh.gloss}):{' '}
           {BADGES.filter((x) => x.family === 'mrh').map((x, i, arr) => (
             <Fragment key={x.name}><span style={{ color: x.color }}>■ {x.name}</span> — {x.oneLiner}{i < arr.length - 1 ? ' | ' : '. '}</Fragment>
           ))}

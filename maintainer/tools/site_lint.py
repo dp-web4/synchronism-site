@@ -23,6 +23,15 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-16 (four visitor personas, 2026-11-16 log).
+    (r"Survives, differs, unresolved|survives, differs, unresolved;", "2026-11-16", "a0(z) = cH(z)/2pi differs from constant-a0 MOND but not from LCDM+baryons (Mayer+2023): 'survives; does not discriminate'", True),
+    (r"the literal lock DIED", "2026-11-16", "the sign lock holds for the substituted mean-density background and is absent in the covariant completions; say which object", True),
+    (r"C names three different functions", "2026-11-16", "C names at least four functions (C_rho, C_g, C_a, and the consciousness C = f(gamma, D, S))", True),
+    (r"label=\"Phenomenological Ansatz", "2026-11-16", "the headline form was run and lost (Failed as a density law; Reparametrization when keyed on acceleration or mean density)", True),
+    (r"differs from the paper on one input setting|reproduction of their public code differs", "2026-11-16", "no claims about Saad & Ting's code on public pages before the authors have seen them", True),
+    (r"Validation badge definitions \(canonical", "2026-11-16", "heading renamed 'Status badge definitions': the text says they are not verdicts", True),
+    (r"\(the Coherence Explorer default\)|Coherence Explorer defaults to &#x03B3; = 0\.49", "2026-11-16", "the Coherence Explorer opens at a display value gamma = 1; 0.49 is a button (acceleration-keyed fit)", True),
+    (r"ρ_crit = A × V_flat² \(V_flat is the steady", "2026-11-16", "First Encounter teaches the archive's 0.028 x V_flat^0.5 (the plotter default); V^2 was the units hybrid", True),
     # Added 2026-11-15 (researcher + technical-writer personas; dSph run maintainer/scripts/cap6p39_vs_dsph.py, PREREG c7d729c).
     (r"[Ww]hat reaches 6\.39 is weak lensing|only (weak )?lensing reaches 6\.39|only weak lensing reaches", "2026-11-15", "gas-free dSphs (Draco, Crater II) exceed 6.39 at 4.9σ each at M/L = 4 with no light rule; use BOUNDED_BOOST_JOINT", True),
     (r"boosts of 30(–|&ndash;)100 under any stellar M/L", "2026-11-15", "at M/L = 4 Draco excludes caps only to ~18.5 (3σ local), 14.7 after trials; 20.3 is excluded at fiducial M/L only"),

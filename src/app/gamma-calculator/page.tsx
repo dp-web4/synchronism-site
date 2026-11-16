@@ -9,7 +9,7 @@ import { GAMMA_PRESETS, gammaFromNcorr, GALAXY_PIN_GAMMA, GALAXY_SPARC_GAMMA } f
 
 function regimeInfo(g: number): { label: string; color: string; desc: string } {
   if (g > 1.4) return { label: 'Weakly Correlated (γ > 1.4: earliest rise)', color: '#8b5cf6', desc: 'Few correlated particles; large γ makes C(ρ) rise earliest (the knee moves to about 0.77 ρ_crit/γ), but no steeper: above γ ≈ 1 the 10–90% width saturates near 1.17 dex, so the family has no sharp member. C(ρ) near zero at galactic densities. Note: per Caveat 2, γ assigns the earliest rise to the least collective systems, opposite to condensed-matter intuition. (Row label read "γ-sharp" until 2026-11-10, under a sentence saying γ is not a sharpness; a technical-writer reader counted that as six names for one dial.)' };
-  if (g > 0.6) return { label: 'Boundary (γ ≈ 1)', color: '#f59e0b', desc: 'Crossover zone (N_corr = 3–11). C(ρ) has no phase transition here: tanh is smooth, so this is a crossover in γ, not a critical point. Fitted chemistry γ values cluster near this band, and the consciousness-threshold conjecture was placed here historically; neither placement follows from the equation.' };
+  if (g > 0.6) return { label: 'Crossover band (γ ≈ 1; the "boundary" reading is retracted)', color: '#f59e0b', desc: 'Crossover zone (N_corr = 3–11). C(ρ) has no phase transition here: tanh is smooth, so this is a crossover in γ, not a critical point. Fitted chemistry γ values cluster near this band, and the consciousness-threshold conjecture was placed here historically; neither placement follows from the equation.' };
   if (g >= 0.2) return { label: 'Strongly Correlated (0.2 ≤ γ ≤ 0.6: later rise)', color: '#38bdf8', desc: 'Enzymes, magnets, large cooperative ensembles. C(ρ) is high. Note (Caveat 2): large N_corr → small γ → latest, lowest-slope rise — γ assigns the flattest curve to strongly correlated systems, which is inverted relative to real condensed-matter physics where strong correlations produce sharp transitions.' };
   return { label: 'Collective (γ < 0.2, flattest)', color: '#10b981', desc: 'Superconductors, BEC, superfluids (N_corr ≫ 1). C(ρ) saturates near 1. Note (Caveat 2): the smallest γ values (flattest C(ρ) curves) go to the most collective systems — BCS superconductors (N_corr~10⁷, γ~6×10⁻⁴) have the flattest transition in this formula, while real BCS has a very sharp Tc. See Caveat 2 for the sign-inversion explanation.' };
 }
@@ -39,7 +39,9 @@ export default function GammaCalculator() {
         <strong>This tool lets you explore how a failed formula fails.</strong> It computes
         &#x03B3; = 2/&#x221A;N<sub>corr</sub>, the framework&apos;s original guess for &#x03B3;, which an internal audit
         found gets the direction backwards for collective systems. It is kept so you can watch that happen, not as a
-        way to estimate &#x03B3;.
+        way to estimate &#x03B3;. <strong>What to watch:</strong> click the presets from gas to superconductor. The more
+        particles move together (bigger N<sub>corr</sub>), the <em>smaller</em> &#x03B3; gets, which makes the curve gentler. Real
+        collective systems get sharper, not gentler, so the formula points the opposite way from what the idea needed.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginBottom: '0.5rem' }}>
         Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index Kind and Status

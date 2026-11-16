@@ -14,7 +14,9 @@ export default function CoherenceFunction() {
       <Breadcrumbs currentPath="/coherence-function" />
       <PathNav currentPath="/coherence-function" />
       <h1>The Coherence Function</h1>
-      <ValidationBadge status="speculative" label="Phenomenological Ansatz — tanh motivated, not derived" />
+      <ValidationBadge status="failed" label="Failed as a density law on galaxies — ΔBIC +2843 against the acceleration-keyed form (+8,404 at the archive&apos;s own knee)" />{' '}
+      <ValidationBadge status="reparametrization" label="Keyed on acceleration it is a MOND μ at every γ (simple μ at γ = ½); on the mean cosmic density it is Λ at γ = ½" />
+      <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', margin: '0.4rem 0 0' }}>Badged by its strongest executed results (2026-11-16). Until then this page carried &ldquo;Speculative &mdash; phenomenological ansatz&rdquo;, which by the site&apos;s own definition means no quantitative test; the form has been run and lost. The tanh itself is still chosen, not derived (see below).</p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -290,7 +292,7 @@ export default function CoherenceFunction() {
           <div className="card" style={{ textAlign: 'center' }}>
             <div style={{ fontFamily: 'serif', fontStyle: 'italic', fontSize: '1.3rem', color: 'var(--color-accent-violet)' }}>&#x03B3;, &#x03C1;<sub>crit</sub></div>
             <div style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-              <strong>Parameters:</strong> &#x03B3;, proposed as a transition sharpness; it sets the initial slope and the return exponent, and no value is sharp (half the Hill exponent: n = 2&#x03B3;, since tanh(&#x03B3; ln u) = (u<sup>2&#x03B3;</sup>&minus;1)/(u<sup>2&#x03B3;</sup>+1); labelled &ldquo;Hill coefficient&rdquo; until 2026-09-11 and &ldquo;coupling strength&rdquo; before 2026-07-27), saturation knee (reference density — not a critical point; C(&#x03C1;<sub>crit</sub>,&#x03B3;=2)&#x2248;0.88)
+              <strong>Parameters:</strong> &#x03B3;, proposed as a transition sharpness; it sets the initial slope and the return exponent, and no value is sharp: above &#x03B3; &asymp; 1 the 10&ndash;90% width stops near 1.17 dex (1.33 dex already at &#x03B3; = 2, 1.91 at &#x03B3; = &frac12;) and raising &#x03B3; mostly moves the knee (toward 0.77&nbsp;&#x03C1;<sub>crit</sub>/&#x03B3;), so &#x03B3; acts as a width only below about 1 and a &#x03B3; = 2 vs &frac12; test is a 1.33 vs 1.91 dex width test (half the Hill exponent: n = 2&#x03B3;, since tanh(&#x03B3; ln u) = (u<sup>2&#x03B3;</sup>&minus;1)/(u<sup>2&#x03B3;</sup>+1); labelled &ldquo;Hill coefficient&rdquo; until 2026-09-11 and &ldquo;coupling strength&rdquo; before 2026-07-27), saturation knee (reference density — not a critical point; C(&#x03C1;<sub>crit</sub>,&#x03B3;=2)&#x2248;0.88)
             </div>
           </div>
         </div>
@@ -519,7 +521,7 @@ export default function CoherenceFunction() {
               <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>floor &Omega;<sub>m</sub></strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>a boost above 1/&Omega;<sub>m</sub> = 3.17</strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>no</strong> (MOND&apos;s boost is unbounded)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>refuted</strong> (TEST-10, Oort limit; lensing conditionally)</td></tr>
               <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>tanh saturation</strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>a transition sharper than 1.17 dex</strong> (10&ndash;90% width)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>no</strong> (MOND members with &delta; &ge; 3 or n &ge; 3 go below)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>untested by galaxies</strong>: SPARC sits at 1.6&ndash;1.9 dex; it touched data once, as the 2026-11-07 Cassini asymmetry</td></tr>
               <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>one shape parameter</strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>a transition width and an approach to Newton that do not lie on the template&apos;s curve</strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>no</strong></td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}><strong>unresolved</strong>: MOND&apos;s RAR family preferred by &Delta;BIC +8.9 by point, 1.0&sigma; by galaxy</td></tr>
-              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>knee per sector</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>nothing across sectors unless knees are locked</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>n/a</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>the one lock on file is a&#x2080; = cH&#x2080;/2&pi; (survives, differs, unresolved; Milgrom&apos;s 1983 coincidence)</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>knee per sector</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>nothing across sectors unless knees are locked</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>n/a</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>the one lock on file is a&#x2080; = cH&#x2080;/2&pi; (survives; differs from constant-a&#x2080; MOND but not from &Lambda;CDM with ordinary matter, so it does not discriminate; Milgrom&apos;s 1983 coincidence)</td></tr>
             </tbody>
           </table>
           </div>
@@ -531,6 +533,38 @@ export default function CoherenceFunction() {
             invisible in rotation curves. The template&apos;s own content is therefore the floor (refuted) and the cross-sector lock (unresolved); neither is a shape.
           </p>
         </div>
+
+        <h3 id="incumbent-map" style={{ scrollMarginTop: '5rem' }}>Where known functions sit on the &gamma; axis</h3>
+        <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+          Fit the template to a known theory&apos;s curve, with no data at all, and you get a &gamma;. Every &gamma; the site
+          reports from data lands where the known theory of that sector already sits. So a fitted &gamma; tells you which known
+          function the data look like; it carries nothing the known function did not already supply.
+        </p>
+        <div style={{ overflowX: 'auto', marginBottom: '0.5rem' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem' }}>
+            <thead><tr><th style={{ textAlign: 'left', padding: '0.3rem 0.5rem' }}>Known function (over SPARC&apos;s acceleration range)</th><th style={{ textAlign: 'left', padding: '0.3rem 0.5rem' }}>&gamma; that matches it</th><th style={{ textAlign: 'left', padding: '0.3rem 0.5rem' }}>rms of the match / what data give</th></tr></thead>
+            <tbody>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>MOND simple &mu; (also &Lambda; in cosmology, in its density ratio)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>0.500</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>identity: exact, a&#x2080;&prime; = a&#x2080;/2</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>McGaugh et al. 2016 empirical galaxy relation (RAR, &delta; = 1)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>0.595</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>4 mdex; careful SPARC fits return 0.58&ndash;0.62</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>MOND &delta;-family, &delta; = 0.5</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>0.21</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>14 mdex</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>MOND &delta;-family, &delta; = 2</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>3.5</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>1.5 mdex</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>MOND standard &mu; (n = 2)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>2.55</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>3.7 mdex</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>MOND &delta; &ge; 4, n &ge; 3: the sharp end, the only part of MOND&apos;s family that can pass Cassini (&delta; = 6 with M/L free per galaxy and no bulges; &delta; = 4 fails at +9.2&sigma; once a&#x2080; is refit to SPARC)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>none: the fit runs to the edge of the scan</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>5&ndash;19 mdex; outside the template&apos;s span</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>BCS gap curve (superconductors, knee pinned at &beta; = 2)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>2.64</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>the archive&apos;s 2.31&ndash;2.65 fits; &gamma; unidentified once &beta; is free</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>Newton (Solar System)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>&rarr; &infin;</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>the data return only a floor, &gamma; &ge; 0.87</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+          Source: site explorer 2026-11-15, <code>explorer/scripts/gamma_incumbent_map/</code> (<code>dict.py</code>, <code>nest.py</code>, 
+          <code>sc2.py</code>; identity controls exact, not pre-registered, run after the data fits were known). The template is fitted as
+          g<sub>bar</sub> = g&middot;tanh(&gamma; ln(1 + g/a&#x2080;&prime;)) with &gamma; and a&#x2080;&prime; free. <strong>Why Cassini fails at every &gamma;
+          (TEST-25):</strong> the only MOND functions that can pass Cassini are sharp ones (&delta; = 6 passes with M/L free per galaxy and no bulges; &delta; = 4 fails at +9.2&sigma; once a&#x2080; is refit to SPARC), and the template cannot reach that end,
+          because its transition is never narrower than 1.17 dex (row &ldquo;tanh saturation&rdquo; above). The width floor that rotation curves
+          barely see is what the Solar System sees. See <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>.
+          SPARC alone cannot tell &gamma; = &frac12; (simple &mu;) from 0.595 (the RAR function): they are 0.1 apart, against a galaxy-level
+          uncertainty of about 0.11.
+        </p>
 
         <h2>Scope Limit: Universality Classes</h2>
         <div style={{ padding: '0.75rem 1rem', background: 'rgba(239,68,68,0.06)', borderRadius: '6px', borderLeft: '3px solid #ef4444', marginBottom: '1rem' }}>

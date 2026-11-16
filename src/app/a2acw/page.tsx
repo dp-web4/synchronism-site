@@ -15,12 +15,6 @@ export default function A2ACW() {
       <ValidationBadge status="active-mrh" label="In Use — Protocol Is Assembled Prior Art" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
-        <p>
-          <strong>AI-to-AI Adversarial Collaboration Workshop</strong> &mdash; a protocol designed
-          to prevent the failure modes that emerge when AI systems collaborate without adversarial
-          pressure. Developed in Session #291.
-        </p>
-
         {/* Lead added 2026-10-08: a researcher visitor called the oracle observation the closest thing to a discovery on the site, buried under hedges */}
         <div style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.35)', borderRadius: '0.375rem', padding: '0.7rem 1rem', margin: '0 0 1.25rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: 'var(--color-accent-blue)' }}>What this program&apos;s record says about AI self-play (the citable part of this page):</strong>{' '}
@@ -32,6 +26,13 @@ export default function A2ACW() {
           protocol can recognise a genuinely novel result at all: that needs the post-cutoff arm, which has not been run. If it will not be run, this audit stays uncalibrated.{' '}
           <a href="#oracle-thesis" style={{ color: 'var(--color-accent-blue)' }}>Details below &darr;</a>
         </div>
+
+        <p>
+          <strong>AI-to-AI Adversarial Collaboration Workshop</strong> &mdash; a protocol designed
+          to prevent the failure modes that emerge when AI systems collaborate without adversarial
+          pressure. Developed in Session #291.
+        </p>
+
 
         <h2>The Problem</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>

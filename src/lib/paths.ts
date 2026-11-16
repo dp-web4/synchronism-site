@@ -55,7 +55,7 @@ export const learningPaths: LearningPath[] = [
       { title: 'The γ Parameter', href: '/gamma-parameter' },
       { title: 'Dark Matter Reframed', href: '/dark-matter' },
       { title: 'Galaxy Rotation Curves', href: '/galaxy-rotation' },
-      { title: 'The γ ≈ 1 Boundary', href: '/gamma-boundary' },
+      { title: 'The γ ≈ 1 Band (boundary reading retracted)', href: '/gamma-boundary' },
       { title: 'The Hard Problem: A Proposed Reframing', href: '/hard-problem' },
       { title: 'How We Handle Failure', href: '/handling-failure' },
       { title: 'Decisive Tests (none currently running)', href: '/top-5-tests' },
@@ -103,7 +103,7 @@ export const learningPaths: LearningPath[] = [
     steps: [
       { title: 'The γ Parameter', href: '/gamma-parameter' },
       { title: 'γ Regimes: Crossovers, Not Phase Transitions', href: '/gamma-regimes' },
-      { title: 'The γ ≈ 1 Boundary', href: '/gamma-boundary' },
+      { title: 'The γ ≈ 1 Band (boundary reading retracted)', href: '/gamma-boundary' },
       { title: 'Sound Velocity', href: '/sound-velocity' },
       { title: 'Superconductivity', href: '/superconductivity' },
       { title: 'Chemistry Limitations', href: '/chemistry-limitations' },

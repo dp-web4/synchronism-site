@@ -691,8 +691,17 @@ export default function ParameterDerivations() {
               a parameter-inventory gap, not a derivation.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem' }}>
-              <strong>No archive document derives 1/&#x03A9;<sub>m</sub> from the compander or from anything else
-              &mdash; it is asserted.</strong> A live, unexecuted proposal
+              <strong>No archive document derives 1/&#x03A9;<sub>m</sub> from the galaxy compander.</strong> It is not unmotivated,
+              though: it is the cosmological calibration C<sub>0</sub> = &#x03A9;<sub>m</sub> (on{' '}
+              <Link href="/dark-energy" style={{ color: 'var(--color-accent-blue)' }}>Dark Energy</Link>, C read on the mean
+              cosmic density equals &#x03A9;<sub>m</sub>(a) by construction) carried into galaxies as a floor. With one rising C and
+              one shared knee, every region denser than the cosmic mean has C &gt; &#x03A9;<sub>m</sub>, so the boost stays below
+              1/&#x03A9;<sub>m</sub>. That argument needs the knee to be shared, and it is not: the cosmological knee
+              (&#x03C1;<sub>&Lambda;</sub>/2 &asymp; 4&times;10<sup>&minus;8</sup> M<sub>&#x2609;</sub>/pc&sup3;) sits 6.6&ndash;10.4 orders of
+              magnitude below the galactic knees (explorer 2026-10-24), and with the cosmological knee every galaxy would sit at
+              C &asymp; 1, with no boost at all. So the ceiling&apos;s origin and the framework&apos;s need for a second density
+              scale in galaxies are one problem, not two (connection raised by a graduate-level reader, 2026-11-16; until then this
+              sentence read &ldquo;it is asserted&rdquo;). A proposal (its sweep has since run: TEST-10 2026-07-29, TEST-09 2026-09-18)
               (<code>Research/proposals/boost_ceiling_provenance_and_class_exclusion.md</code>) flags that the
               cosmic ratio a <em>dynamical-to-baryonic</em> boost should reference is arguably
               &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> &#8776; 6.40 (the baryon budget), not 1/&#x03A9;<sub>m</sub>

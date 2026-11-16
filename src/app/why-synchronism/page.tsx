@@ -219,7 +219,7 @@ export default function WhySynchronism() {
             <span className="badge badge-failed" title="Registered environment-density run executed 2026-07-14 (SPARC RAR offsets vs Cosmicflows-4): r²=0.0001 vs registered >20% — refuted; the MOND+EFE tie dissolved on adjudication 2026-07-15 (levers differ ~50–5,000×), see /tier-1-existing#TEST-05">Failed | TEST-03/05 Environment Run — Refuted by Execution</span>
           </div>
           <div className="card">
-            <h3>Chemistry: &#x03B3; &#x2248; 1 Boundary</h3>
+            <h3>Chemistry: &#x03B3; &#x2248; 1 Band (boundary reading retracted; the correlations are Debye-model restatements)</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
               Most of 1,703 logged chemistry sessions (one &ldquo;phenomenon type&rdquo; each, a counter rather than a census) fitted near the &#x03B3;&#x2248;1 boundary
               (sparse/independent &#x2194; dense/collective crossover).

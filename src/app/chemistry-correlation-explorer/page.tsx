@@ -15,14 +15,14 @@ type SortDir = 'asc' | 'desc';
 //        'corrected' = r and/or session replaced on 2026-11-02 with the archive value for this property against γ
 //        'untraced'  = the r shown could not be matched to this property in the cited session (see note)
 type Trace = 'traced' | 'corrected' | 'untraced';
-const phenomena: { name: string; note?: string; r: number; category: string; regime: number; session: string; trace: Trace }[] = [
+const phenomena: { name: string; note?: string; r: number; category: string; regime: number; session: string; trace: Trace; signFailed?: boolean }[] = [
   { name: 'Sound velocity', note: 'r(v, 1/γ_phonon) ≡ r(v, θ_D) exactly, because γ_phonon = 2T/θ_D; session was shown as #47 (material design)', r: 0.982, category: 'Propagation', regime: 1, session: '#109', trace: 'corrected' },
   { name: 'Electronegativity', note: 'Pauling χ vs 1/γ_optical, and γ_optical = 13.6 eV / IE: this is χ vs ionization energy (0.938 archive; 0.956 on the explorer recomputation). The 0.979 shown until 2026-11-02 was chemical softness (#118) against the same 1/IE', r: 0.938, category: 'Bonding', regime: 1, session: '#115', trace: 'corrected' },
   { name: 'Bulk modulus', note: 'vs 1/γ_phonon (= θ_D); drops to 0.37 without diamond (jackknife). 0.967 shown until 2026-11-02 was not found for B', r: 0.712, category: 'Mechanical', regime: 1, session: '#110', trace: 'corrected' },
   { name: 'Thermal conductivity', note: 'archive κ result (#65); 0.883 for metals only (#108). The 0.961 shown until 2026-11-09 was redox potential E° (#72), not κ', r: 0.804, category: 'Transport', regime: 1, session: '#65', trace: 'corrected' },
-  { name: 'Electrical conductivity', note: 'Failed: the session’s own verdict is “WRONG SIGN” (σ vs γ_phonon). Shown as +0.955 “Coherence helps” (#68) until 2026-11-02', r: -0.414, category: 'Transport', regime: 1, session: '#81', trace: 'corrected' },
+  { name: 'Electrical conductivity', note: 'Failed: the session’s own verdict is “WRONG SIGN” (σ vs γ_phonon). Shown as +0.955 “Coherence helps” (#68) until 2026-11-02', r: -0.414, category: 'Transport', regime: 1, session: '#81', trace: 'corrected', signFailed: true },
   { name: 'Debye temperature', note: 'by construction: γ_phonon = 2T/θ_D contains θ_D, so at fixed T the correlation is exactly 1 and carries nothing. The 0.948 shown until 2026-11-09 is Richard’s rule (#77); the T_c row carried the same number from the initial commit, and #62 does not contain it', r: 0.948, category: 'Thermal', regime: 1, session: '#78', trace: 'untraced' },
-  { name: 'Piezoelectricity d₃₃', note: 'post-hoc fit d₃₃ ∝ γε; the direction stated in advance came out backward (Failed on /gamma-boundary). Session was shown as #110', r: 0.940, category: 'Response', regime: 2, session: '#93', trace: 'corrected' },
+  { name: 'Piezoelectricity d₃₃', note: 'post-hoc fit d₃₃ ∝ γε; the direction stated in advance came out backward (Failed on /gamma-boundary). Session was shown as #110', r: 0.940, category: 'Response', regime: 2, session: '#93', trace: 'corrected', signFailed: true },
   { name: 'Superconducting T_c', note: 'not traced: the cited #62 (Universal Coherence Test) contains no superconductivity result (checked 2026-11-10), and the proxy behind the 0.948 is unstated. Withheld rather than printed, because a positive r against any θ_D-type proxy would have the wrong sign: across elemental superconductors T_c falls as θ_D rises (strong-coupling, soft lattices; McMillan 1968), so the expected sign is negative. The magnitude prediction is 6.5× wrong (Failed on /gamma-boundary). Shown as 0.923 (#95, electro-optic) until 2026-11-02 and as +0.948 “Coherence helps” at rank 2 until 2026-11-10, when a graduate-physics reader objected that a cell whose own footnote gives the opposite sign should not sort to the top', r: 0.948, category: 'Phase transition', regime: 1, session: '#62', trace: 'untraced' },
   { name: 'Young\'s modulus', note: 'vs 1/γ_phonon (= θ_D); drops to 0.60 without diamond (jackknife). Shown as 0.912 (#58, fluorescence) until 2026-11-02', r: 0.920, category: 'Mechanical', regime: 1, session: '#110', trace: 'corrected' },
   { name: 'Shear modulus', note: 'vs 1/γ_phonon (= θ_D); drops to 0.63 without diamond (jackknife). Shown as 0.901 (#59, no such session) until 2026-11-02', r: 0.936, category: 'Mechanical', regime: 1, session: '#110', trace: 'corrected' },
@@ -208,7 +208,7 @@ export default function ChemistryCorrelationExplorer() {
           <strong>What &ldquo;Regime&rdquo; means:</strong> the chemistry track&apos;s label for how each property was
           modelled against &#x03B3; (defined on{' '}
           <a href="/handling-failure" style={{ color: 'var(--color-accent-blue)' }}>Handling Failure</a>).{' '}
-          <em>Coherence helps</em>: property modelled as rising with 1/&#x03B3; (transport, stiffness).{' '}
+          The regime is the direction the archive assigned before looking; &ldquo;(sign failed)&rdquo; marks rows where the data went the other way (added 2026-11-16: two rows sat under a regime their own sign contradicted). <em>Coherence helps</em>: property modelled as rising with 1/&#x03B3; (transport, stiffness).{' '}
           <em>Incoherence helps</em>: property modelled as rising with &#x03B3; itself (soft-mode response such as
           piezoelectricity), so a positive r in this regime is a positive correlation with &#x03B3;.{' '}
           <em>Barrier-dominated</em>: thermally activated, &#x221D; exp(&minus;E/kT), where &#x03B3; is negligible.{' '}
@@ -321,7 +321,7 @@ export default function ChemistryCorrelationExplorer() {
                   </td>
                   <td style={{ padding: '0.5rem', color: 'var(--color-text-muted)' }}>{p.category}</td>
                   <td style={{ padding: '0.5rem', color: regimeLabels[p.regime].color, fontSize: '0.8rem' }}>
-                    {regimeLabels[p.regime].label}
+                    {regimeLabels[p.regime].label}{p.signFailed && <span style={{ color: '#ef4444' }}> (sign failed)</span>}
                   </td>
                   <td style={{ padding: '0.5rem', color: 'var(--color-text-muted)', fontFamily: 'monospace', fontSize: '0.8rem' }}>{p.session}</td>
                   <td style={{ padding: '0.5rem', color: traceLabels[p.trace].color, fontSize: '0.8rem' }}>

@@ -27,8 +27,8 @@ export default function GammaBoundary() {
     <>
       <Breadcrumbs currentPath="/gamma-boundary" />
       <PathNav currentPath="/gamma-boundary" />
-      <h1>The &#x03B3; &#x2248; 1 Boundary</h1>
-      <ValidationBadge status="reparametrization" label="Reparametrizes the Debye θ_D (≈86% of the 89% are θ_D restatements) | Z-null run on the real rows (2026-10-31): fails | No N_corr procedure" />
+      <h1>The &#x03B3; &#x2248; 1 Band (the &ldquo;boundary&rdquo; reading is retracted)</h1>
+      <ValidationBadge status="reparametrization" label="Reparametrizes the Debye θ_D (≈86% of the 89% are θ_D restatements) | A null using atomic number alone does not reproduce the correlations (checked on the archive&apos;s own data, 2026-10-31) | No N_corr procedure" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -136,7 +136,7 @@ export default function GammaBoundary() {
             sets is the initial slope (C&nbsp;≈&nbsp;γx) and half the exponent of approach to saturation
             (1&nbsp;−&nbsp;C&nbsp;≈&nbsp;2(1+x)<sup>−2γ</sup>). So &ldquo;sharpness&rdquo; has a meaning only on a linear axis at fixed ρ<sub>crit</sub>. This is
             the density-side twin of the a₀′/γ point the galaxy fits already show (the scale the data identify is a combination, not
-            γ alone). <em style={{ color: 'var(--color-text-muted)' }}>(Added 2026-10-23 from a simulated-visitor graduate persona&apos;s
+            γ alone). <em style={{ color: 'var(--color-text-muted)' }}>(Added 2026-10-23 from a reader(Added 2026-10-23 from a simulated-visitor graduate persona&apos;sapos;s
             derivation, re-checked numerically here: the peak of dC/d&nbsp;ln&nbsp;x sits at γx&nbsp;=&nbsp;0.78 at γ&nbsp;=&nbsp;10 and 0.772 at γ&nbsp;=&nbsp;1000.)</em> And C is <strong>concave on the
             whole domain</strong> &mdash; d²C/dx²&nbsp;&lt;&nbsp;0 for every x&nbsp;≥&nbsp;0 &mdash; so there is
             no inflection point to sit at. <strong>No feature of C(ρ) singles out γ&nbsp;≈&nbsp;1.</strong>{' '}
@@ -145,7 +145,7 @@ export default function GammaBoundary() {
             which is largest at γ&nbsp;=&nbsp;1/√2&nbsp;≈&nbsp;0.71 (verified numerically, κ<sub>max</sub>&nbsp;≈&nbsp;0.385). That
             may be where &ldquo;maximum curvature near γ&nbsp;≈&nbsp;1&rdquo; came from. It depends on the units chosen for
             x (rescale x and the peak moves), so it carries no physical meaning.{' '}
-            <em style={{ color: 'var(--color-text-muted)' }}>(Named 2026-10-18 at a simulated-visitor graduate persona&apos;s suggestion.)</em>
+            <em style={{ color: 'var(--color-text-muted)' }}>(Named 2026-10-18.)</em>
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             The correct derivative fact was already stated on{' '}
@@ -180,7 +180,7 @@ export default function GammaBoundary() {
           Sessions 134-2660 were identified as &ldquo;template-based&rdquo; &mdash; the AI used
           similar analysis patterns across phenomena, which may inflate the validation rate.
           This page used to say &ldquo;the core result (&#x03B3; &#x2248; 1 clustering) holds&rdquo;. It does not stand as a
-          result (withdrawn 2026-09-27 after a visitor graduate-student persona flagged it). The research ledger books
+          result (withdrawn 2026-09-27). The research ledger books
           &#x03B3;&nbsp;&#x2248;&nbsp;1 as a reparametrization of the Debye model (1912): about 86% of the &ldquo;89%
           boundary-consistent&rdquo; are restatements of &#x03B8;<sub>D</sub>. The rationale for &#x03B3;&nbsp;&#x2248;&nbsp;1 was
           retracted. No documented procedure assigns N<sub>corr</sub> to a phenomenon before the fit. The correlations

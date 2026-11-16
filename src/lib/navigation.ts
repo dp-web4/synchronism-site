@@ -328,7 +328,7 @@ export const navigationTree: NavigationTree = {
 
   'Chemistry': [
     {
-      title: 'The \u03B3 \u2248 1 Boundary',
+      title: 'The \u03B3 \u2248 1 Band (boundary reading retracted)',
       href: '/gamma-boundary',
       desc: 'Where the chemistry track\'s fitted γ values cluster (1,703 is a session counter); fitted, not predicted',
       keywords: ['gamma', 'boundary', 'quantum', 'classical', 'phenomena', 'chemistry'],

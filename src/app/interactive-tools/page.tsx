@@ -87,7 +87,7 @@ const speculativeTools = [
   {
     title: 'Consciousness Threshold Demo',
     href: '/consciousness-demo',
-    desc: 'Watch 7 "independent" approaches converge on C ≈ 0.50 — because they share one assumption. The convergence is geometric, not empirical: any approach keyed to the midpoint of a [0,1)-bounded range lands near 0.50 by construction. The threshold is untestable as stated (no calibration to EEG/fMRI/IIT/PCI* exists; the one cited test measured a different variable). An artifact lesson, not a finding about consciousness. Static chart with hover tooltips, no controls (labelled 2026-10-10).',
+    desc: 'A static chart with hover notes, not an interactive tool: no controls. Watch 7 "independent" approaches converge on C ≈ 0.50 — because they share one assumption. The convergence is geometric, not empirical: any approach keyed to the midpoint of a [0,1)-bounded range lands near 0.50 by construction. The threshold is untestable as stated (no calibration to EEG/fMRI/IIT/PCI* exists; the one cited test measured a different variable). An artifact lesson, not a finding about consciousness. Static chart with hover tooltips, no controls (labelled 2026-10-10).',
     level: 'Intermediate',
     state: 'Artifact Lesson',
     epistemic: 'consciousness' as EpistemicStatus,
@@ -105,7 +105,7 @@ export default function InteractiveTools() {
         separately-labelled slots</strong>, so you know what you&apos;re looking at before you click in:
         a <strong>Kind</strong> (top right &mdash; what sort of thing the tool is),
         a <strong>Level</strong> (the difficulty scale: Beginner / Intermediate / Advanced), and,
-        where it applies, a <strong>Status</strong> (an operational state, square-cornered and amber,
+        where it applies, a <strong>State</strong> (an operational state, square-cornered and amber,
         deliberately styled so it cannot be mistaken for a difficulty). Each card also repeats the verdict badge from the
         tool&apos;s own page (&ldquo;Badge on its page&rdquo;), which is a claim status, not a fourth label about the tool. Every label system on the site is mapped side by side in{' '}
         <Link href="/glossary#label-map" style={{ color: 'var(--color-accent-blue)' }}>one table on the Glossary</Link>.
@@ -124,7 +124,7 @@ export default function InteractiveTools() {
         operational state (the site&apos;s own term, per{' '}
         <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>) marking a tool kept
         deliberately to demonstrate a documented failure (a sign inversion, a geometric convergence)
-        rather than to teach a working relation. It now sits in its own Status slot.
+        rather than to teach a working relation. It now sits in its own State slot (called &ldquo;Status&rdquo; until 2026-11-16).
       </p>
       <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem', maxWidth: '60ch' }}>
         <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
@@ -190,7 +190,7 @@ export default function InteractiveTools() {
                       background: 'rgba(245, 158, 11, 0.10)',
                       color: '#f59e0b',
                     }}>
-                      Status: {tool.state}
+                      State: {tool.state}
                     </span>
                   ) : null}
                 </div>
@@ -270,7 +270,7 @@ export default function InteractiveTools() {
                         background: 'rgba(245, 158, 11, 0.10)',
                         color: '#f59e0b',
                       }}>
-                        Status: {tool.state}
+                        State: {tool.state}
                       </span>
                     ) : null}
                   </div>

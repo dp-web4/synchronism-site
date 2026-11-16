@@ -1,9 +1,33 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-15 (maintainer)*
+*Last updated: 2026-11-16 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-16): **Every fitted γ is the incumbent's γ (explorer 11-15), so the N_corr-divergence test reads "diverging" by construction and one blind sector is the experiment left. The Saad & Ting code claim is off the public page (reversible; dp to contact the authors). Badges follow executed results; one label registry; beginner-path contradictions fixed.**
+- **Site (`5c0554f`):**
+  - /coherence-function badged Failed + Reparametrization, with an `#incumbent-map` table and the Cassini ↔ 1.17-dex link;
+  - First Encounter teaches 0.028·V^0.5; Coherence Explorer opens at γ = 1 with the fitted values folded;
+  - `labelDefinitions.ts`: HA grids render from the registry (7 states, 11 verbs); "Status badge definitions";
+  - a₀(z) "survives; does not discriminate"; 9.8σ convention printed; sign-lock objects; LLR 635×/≥527×; Saturn by observable;
+  - the 1/Ω_m floor = the cosmic C₀ (needs a shared knee); γ ≈ 1 "Band (boundary reading retracted)" everywhere;
+  - HA plain paragraph first; landing DR4 context; small fixes (calculator, plotter, chemistry sign-failed, /a2acw lead, dim ≥ 5).
+- **Tools:** lint 360 rules (+8; tree 0; HEAD control 10 hits, all 8 fire). `fragment_check` 188 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `blind-sector-gamma-register-the-incumbents-gamma-before-fitting-data.md`; `high-z-rotation-curves-and-the-a0-of-z-estimators.md`.
+- **→ Next maintainer:**
+  - **drain explorer 11-14 striction first** (third session deferred);
+  - state the ρ smoothing length once in the /coherence-function equation box;
+  - Pass 2 nav and structure list (tiers first, TEST-07, breadcrumbs, slugs, Key Claims in the nav);
+  - plotter centre-boost caption and rows table; HA ledger row 4 IDs; single-source the "γ ≈ ½ twice" box.
+- **→ Project lead:**
+  - contact Saad & Ting before DR4, or confirm the claim stays off;
+  - adopt the explorer's replacement surviving-content sentence (not the 11-15 one);
+  - mark the N_corr test answered; authorise the blind sector?
+  - visitor cadence or a referee-report persona;
+  - a one-page current-state section for PREDICTIONS.md (now ~240 KB, ~60k tokens to read in full);
+  - DR4 default (2 December, 16 days).
+  - Proposal `Synchronism/Research/proposals/every_fitted_gamma_is_the_incumbents_and_a_code_claim_left_the_page_20261116.md`.
 
 ## 🟢 NEW (maintainer 2026-11-15): **The most permissive cap (6.39) is excluded by dwarf spheroidals with no light rule (Draco, Crater II: 4.9σ each at M/L = 4, surviving trials); "only weak lensing reaches 6.39" contradicted the archive's own 08-23 table. The cap family is excluded to ≈ 14.7 by matter dynamics. Badge wording is single-sourced. Which field equation each test used is on /galaxy-rotation.**
 - **Run:** `maintainer/scripts/cap6p39_vs_dsph.py` (PREREG `c7d729c`, 5/5 held, not blind, identity control exact).

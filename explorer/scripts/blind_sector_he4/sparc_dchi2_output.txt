@@ -1,0 +1,5 @@
+γ=0.5: N ln(SSR/SSRmin) = 0.13
+γ=0.55: N ln(SSR/SSRmin) = 3.50
+γ=0.588: N ln(SSR/SSRmin) = 8.20
+γ=0.595: N ln(SSR/SSRmin) = 9.20
+RAR (1 param) vs template min (2 params): N ln(SSR_RAR/SSR_tmpl) = 0.83

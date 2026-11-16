@@ -1,0 +1,27 @@
+CONTROLS
+  identity I3: [2.243, 1.321] expect [2.243, 1.321]
+  injection I1: [0.711, 0.636] expect [0.711, 0.636]
+duplicate-row scatter (rms of per-T sd, 12 T with >1 row): 0.00186
+
+DATA FITS (48 measured rows)
+  β=1             γ=4.827 ± 0.162 (boot)  β=1  rms=0.0594
+  β=2 (primary)   γ=2.596 ± 0.060 (boot)  β=2  rms=0.0511
+  β free          γ=0.753 ± 0.047 (boot)  β=10.6  rms=0.0236
+  β free rel-wt   γ=0.443 ± 0.029 (boot)  β=25.8  rms=0.0166
+  split Maynard (key 2)        n=20  β=2: γ=2.478 β=2 | β free: γ=0.952 β=7.26
+  split Tam & Ahlers (key 3)   n=28  β=2: γ=2.698 β=2 | β free: γ=0.598 β=15.2
+
+RIVAL (1-t^a)^b: a=4.963 b=0.745 rms=0.0058
+TEMPLATE β free rms=0.0236; ratio template/rival rms = 4.08
+  t in [0.55,0.8): n=15 mean resid template=+0.0161  rival=+0.0059
+  t in [0.8,0.95): n=17 mean resid template=-0.0160  rival=-0.0044
+  t in [0.95,1.0): n=16 mean resid template=+0.0284  rival=+0.0040
+
+RULE R: fractional distance |γ_fit-γ_eq|/γ_eq
+  β=2 (primary)   I1: 265.1%  I3:  15.7%
+  β free          I1:  18.4%  I3:  43.0%
+  β=1             I1: 295.6%  I3:  18.0%
+  β free rel-wt   I1:  29.0%  I3:  61.0%
+  rms(data - I1) = 0.3470
+  rms(data - I2) = 0.2547
+  rms(data - I3) = 0.0506

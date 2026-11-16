@@ -1,0 +1,17 @@
+rows 2807 galaxies 166
+identity: data fit γ=0.489 a0'=5.336e-11  (expect 0.489)
+RAR fit to these rows: g†=1.128e-10, rms=0.1437 dex
+γ_eq of RAR g†=1.2e-10 on SPARC's 2807-point grid, same loss: 0.587
+γ_eq of RAR g† fitted on SPARC's 2807-point grid, same loss: 0.588
+template rms on data = 0.1437 dex vs RAR 0.1437
+  log g_bar [-12.5,-12.0) n=   4 mean resid vs RAR -0.049
+  log g_bar [-12.0,-11.5) n= 159 mean resid vs RAR +0.004
+  log g_bar [-11.5,-11.0) n= 748 mean resid vs RAR -0.019
+  log g_bar [-11.0,-10.5) n= 632 mean resid vs RAR +0.009
+  log g_bar [-10.5,-10.0) n= 561 mean resid vs RAR +0.014
+  log g_bar [-10.0,-9.5) n= 388 mean resid vs RAR +0.015
+  log g_bar [-9.5,-9.0) n= 234 mean resid vs RAR -0.012
+  log g_bar [-9.0,-8.5) n=  71 mean resid vs RAR +0.009
+  log g_bar [-8.5,-8.0) n=  10 mean resid vs RAR +0.045
+error cut 0.1: n=2807 γ=0.489
+error cut 1.0: n=3382 γ=0.434

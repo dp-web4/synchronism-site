@@ -1,0 +1,36 @@
+Starting Synchronism Explorer Session at Tue Nov 17 08:00:01 PST 2026
+I worked the time-critical topic: writing a dated DR4 reading of the hidden-companion rate before Gaia DR4 lands on 2 December. The answer goes against what the site, the maintainer's proposal and the visitor persona all assumed: DR4 cannot measure the rate in the 36-system sample. Everything rests on the 11-09 companion model, is one AI session's work, and hasn't been seen by Chae's group or Saad & Ting.
+
+**What I found**
+- **DR4 alone carries almost no information on the 36 systems.** Its companion flags are worth about 0.06–0.27 nats (nats measure expected evidence; that is a typical likelihood ratio of about 1.2) between "Newton plus a per-star companion rate of 0.45–0.5" and "a boost of γ 1.3–1.4 plus a rate of 0.3".
+  - Even a perfect companion census of the same 36 systems would only reach about 2 nats (likelihood ratio about 7). No companion measurement on this sample can settle the dispute by itself.
+  - Adding two new ground-based RV epochs to DR4 gets about 1 nat, half that ceiling.
+- **The systems with the largest velocities can't tell the readings apart.** #3 and #4 need a companion under Newton and under a moderate boost alike.
+  - #3 needs one even under Chae's own reading (γ = 1.6, probability 0.86), so checking #3 tests the data, not gravity.
+  - #59 is the one system whose companion odds separate all three readings, so it should be the first target for new RVs.
+- **DR4 can decide the rate in the large parent sample, with one condition.** There the predicted flag rate per star is 0.032, 0.057 and 0.068 at companion rates of 0.3, 0.45 and 0.5. Statistics are not the limit; the rate at which Gaia falsely flags single stars is. It trades one-for-one against the companion rate and has to be measured on DR4 itself to about ±0.005. The registration names two ways to do that.
+- **I found one existing direct measurement.** Pasquini et al. 2026 found RV variability in 12 of 26 wide binaries with ESPRESSO. Their sample wasn't cleaned the way S1 was, so it gives a field-like rate, not S1's.
+
+**Registered before DR4 (pre-registration `1a4d020`, committed before any code):**
+- **Leg A:** flag counts on the 36 systems, declared non-decisive in advance.
+- **Leg B:** the parent-sample companion rate, with an outcome table and a "no reading" branch if the false-flag rate can't be pinned.
+- **Leg C:** an ordered RV target list for anyone with telescope time.
+
+My own forecasts did badly: 5 of 7 held, but the two that failed (P1, P2) both overrated DR4's power on these systems. The "is this design useless?" test I wrote in advance was also mis-specified. It would have passed a design with about 9% power, so the finding reports the information figures instead.
+
+**Checks:** the new forward model reproduces the 11-09 model exactly on all shared outputs. The result holds under doubled astrometric errors, a different mass-ratio distribution, Gaia's epoch-RV channel switched off, and tolerances from 0.02 to 0.08. The findings lint passes.
+
+**For the maintainer and project lead**
+- `/wide-binaries` (`src/app/wide-binaries/page.tsx:245`) says the rate "is measurable (RV monitoring; DR4 epoch astrometry)". The finding gives replacement text.
+- Legs A–C should go into the DR4 analysis plan before 2 December so the plan counts as dated.
+- If the outreach to Chae's group and Saad & Ting goes ahead, the useful content is the false-flag requirement and the RV target list, not a γ.
+
+I saved one memory: compute a measurement's expected information against a perfect-measurement ceiling before registering it. The session is committed and pushed (`a564f1f`).
+
+Sources:
+- [Gaia DR4 content](https://www.cosmos.esa.int/en/web/gaia/dr4)
+- [Gaia data release scenario](https://www.cosmos.esa.int/en/web/gaia/release)
+- [Katz et al. 2023, Gaia DR3 radial velocities](https://arxiv.org/abs/2206.05902)
+- [Pasquini et al. 2026, VLT-ESPRESSO wide binaries](https://arxiv.org/abs/2602.04661)
+- [Chae et al. 2026, 36 wide binaries (v4)](https://arxiv.org/abs/2601.21728)
+- [Pittordis, Sutherland & Shepherd 2025](https://arxiv.org/abs/2504.07569)

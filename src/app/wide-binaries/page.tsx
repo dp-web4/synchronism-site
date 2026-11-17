@@ -159,7 +159,7 @@ export default function WideBinaries() {
           <p style={{ margin: '0.6rem 0 0' }}>
             <strong>Why isn&apos;t the local exclusion booked as a refutation?</strong> This is not because it is weak. It is
             cleaner than TEST-09&apos;s 3.3&sigma;. It follows from the knee calibration, and the archive&apos;s calibration (0.028&middot;V<sup>0.5</sup>) is
-            already excluded on other grounds: its velocity exponent +0.5 is 3.6&sigma; from the measured &minus;0.16 &plusmn; 0.19, and on SPARC
+            already excluded on other grounds: its velocity exponent +0.5 is 3.5&sigma; from the measured &minus;0.16 &plusmn; 0.19, and on SPARC
             the law at that calibration loses to the acceleration-keyed version by &Delta;BIC +8,404, worse in 115 of 122 galaxies (explorer
             2026-11-12, pre-registered). The &ldquo;~11&sigma;&rdquo; often quoted here is for a V&sup2; exponent, which is the site&apos;s reading, not the archive&apos;s. The site counts executed tests grouped by root. Whether this becomes its own booked result is
             ledger governance and gates on the project lead.
@@ -186,8 +186,8 @@ export default function WideBinaries() {
           addenda (11-11, 11-12, 11-13) fix it before the data whatever is decided. <strong>Default if nothing is recorded by 2 December:</strong> this
           site will read DR4 analyses against the key as committed and label that reading &ldquo;dated before the data, not adopted&rdquo;.
           That makes it a pre-data mapping, not a registered test, and it cannot change the count. A decision, with its date, will replace this paragraph.
-          Open clusters: four of the six in the key&apos;s second observable already sit below its kill line on pre-DR4 cleaned values (Hyades 0.30
-          of the internal-reading prediction, Torres et al. 2026 §12; Pleiades, M67, NGC 188 at 0.34&ndash;0.63).
+          Open clusters: four of the six in the key&apos;s second observable already sit below its kill line on pre-DR4 binary-cleaned values. That line (obs/pred &le; 0.65 per cluster) was chosen after the pre-DR4 values were seen. The kill registered before retrieval used &sigma; with binaries included, and it was not met (PREREG a1b3be0). The values are: Hyades 0.30
+          of the internal-reading prediction (Torres et al. 2026 §12); Pleiades, M67 and NGC 188 at 0.34&ndash;0.63.
         </p>
         <div style={{ overflowX: 'auto', margin: '0.5rem 0 1rem' }}>
           <table style={{ borderCollapse: 'collapse', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>

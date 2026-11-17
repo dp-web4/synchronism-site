@@ -32,7 +32,8 @@ export default function GalaxyRotation() {
           <strong style={{ color: 'var(--color-accent-blue)' }}>Does Synchronism replace dark matter? No, not on current evidence.</strong>{' '}
           The idea was that gravity&apos;s strength depends on how densely matter is packed, which would make the extra
           pull without invisible matter. Written that way, keyed on density, the equation does not fit galaxies. In a
-          real disc it barely changes gravity at all, which you can see on the{' '}
+          real disc it gives the wrong shape: close to Newton in the bright centre, a capped boost outside, and still falling
+          where the stars stay flat. You can see this on the{' '}
           <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link>.
           A version keyed on acceleration, with one dial fitted, does fit, but at that setting it is exactly the formula of MOND
           (Modified Newtonian Dynamics, Milgrom&apos;s 1983 alternative to dark matter). So it carries MOND&apos;s successes and MOND&apos;s problems, including the Solar System test below, and it

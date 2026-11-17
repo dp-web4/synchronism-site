@@ -1953,7 +1953,7 @@ export default function HonestAssessment() {
           Stiskalek &amp; Desmond 2023 (exhaustive regression null over galaxy features). The
           &#963;<sub>int</sub>&nbsp;=&nbsp;0.086 figure (not a BTFR scatter; independent of V) is addressed above &mdash; it inverted the source
           session&apos;s own retracted verdict. Demotion base rate across the whole program: 9 of 9 audited
-          claims (the prior 6 &ldquo;Validated&rdquo; claims plus these 3) failed to survive. Given that
+          claims (the 6 earlier demoted claims, of which only 2 are confirmed to have carried a &ldquo;Validated&rdquo; badge, plus these 3) failed to survive. Given that
           record, the honest prior on any not-yet-swept contribution is <strong>near-certain demotion</strong>,
           not residual upside — and the research archive&apos;s own later sessions (#631–#691) have in fact
           already demoted the remainder in-archive (cosmology: zero novel items; C(&#x03C1;)&nbsp;&rarr;&nbsp;MOND

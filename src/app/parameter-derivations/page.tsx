@@ -268,9 +268,12 @@ export default function ParameterDerivations() {
               </ol>
               Verdict: A-from-Jeans is <strong>not</strong> an independent first-principles derivation under any reading.
               The framework has zero first-principles predictions with an independent derivation.
-              <strong>Which scaling is the framework&apos;s stated position?</strong> ρ<sub>crit</sub> ∝ V² (equations.ts:23, used site-wide).
-              The 0.0294 computation used ρ<sub>crit</sub> ∝ V<sup>0.5</sup> — inconsistent with the stated framework.
-              Both are documented as separate failures: the V<sup>0.5</sup> derivation contradicts the site&apos;s own equations; the stated V² formula gives A ≈ 4.6×10⁻⁵, 600× off.
+              <strong>Which scaling is the framework&apos;s stated position?</strong> The archive&apos;s own: ρ<sub>crit</sub> = 0.028·V<sup>0.5</sup>
+              (Sessions 52/62/64/65), the galaxy plotter&apos;s default since 2026-11-14. Until then this page named ρ<sub>crit</sub> ∝ V²
+              (equations.ts:23) as the stated position. That law with A = 0.029 puts the V<sup>0.5</sup> law&apos;s coefficient on a V² exponent.
+              It is a units slip, and no archive fit uses it. The V² formula on its own terms gives A ≈ 4.6×10⁻⁵, 600× off.
+              All three knee laws lose on SPARC; see the{' '}
+              <Link href="/critical-density#knee-laws-in-use" style={{ color: 'var(--color-accent-blue)' }}>knee-laws box</Link>.
               The number 0.0294 is a flagged inconsistency (number detached from its derivation), not a rounding error.
               Finding: <code>a-from-jeans-chain-of-custody-failure.md</code>; back-annotation:
               <code>a_from_jeans_chain_of_custody_closure.md</code> (Synchronism Research repo, 2026-06-07).
@@ -485,8 +488,8 @@ export default function ParameterDerivations() {
               cH&#x2080; &#8776; c&sup2;(&#x039B;/3)<sup>1/2</sup> &mdash; the site has cited only the H&#x2080; half. The
               &#x039B; half predicts <em>zero</em> epoch evolution, since &#x039B; is constant, and fares worse
               against Ciocan than branch (A): at the Milgrom-local normalization, a constant a&#x2080; = 1.20
-              against the observed 2.38 (+0.12/&minus;0.10, 95% CI) is roughly <strong>21&#x03C3;</strong> away on the
-              measurement error alone (1&#x03C3; &asymp; 0.06; the paper&apos;s own figure is 19&#x03C3;), and <strong>4.4&#x03C3;</strong>{' '}
+              against the observed 2.38 (+0.12/&minus;0.10, 95% CI) is roughly <strong>23&#x03C3;</strong> away on the
+              measurement error alone with the low-side 1&#x03C3; = 0.051 (about 21&#x03C3; with the anchor&apos;s own &plusmn;0.02 in quadrature; 19.7&#x03C3; at 1&#x03C3; &asymp; 0.06, the paper&apos;s own figure being 19&#x03C3;), and <strong>4.4&#x03C3;</strong>{' '}
               carrying the anchor&apos;s &plusmn;0.26 as the table above does for branch (A), against branch (A)&apos;s ~4&#x03C3;
               and 0.5&#x03C3; under the same two conventions. Like for like, the evolving a&#x2080; is the closer of the
               two on this sample (stated plainly 2026-10-10, with the RC100 counter-sample on Relation to MOND), and the

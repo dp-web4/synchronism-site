@@ -33,7 +33,7 @@ export default function KeyClaims() {
           <p style={{ color: 'var(--color-text-muted)', margin: 0, fontSize: '0.8rem' }}>
             Status labels (Untested, Speculative, etc.) follow the site&apos;s{' '}
             <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
-              validation badge taxonomy
+              status badge taxonomy
             </Link>
             {' '}&mdash; canonical reference on the Honest Assessment page. Text after a dash inside a badge is a
             finding descriptor, not a separate badge; descriptors without a badge of their own appear in italics under

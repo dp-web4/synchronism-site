@@ -18,6 +18,34 @@ export default function CriticalDensity() {
           &#x03C1;<sub>crit</sub> = A &times; V<sub>flat</sub>&sup2;
         </EquationDisplay>
 
+        <div id="knee-laws-in-use" className="card" style={{ borderLeft: '3px solid #f59e0b', marginBottom: '1.25rem', padding: '0.75rem 1rem' }}>
+          <p style={{ margin: '0 0 0.5rem 0' }}>
+            <strong>Which knee law is &ldquo;the framework&rdquo;? Three are in use, and each headline number on this site uses one of them.</strong>{' '}
+            All three are density laws. All three lose to the acceleration-keyed version on SPARC rotation curves.
+          </p>
+          <ul style={{ margin: 0, paddingLeft: '1.2rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+            <li>
+              <strong>The archive&apos;s own form, &#x03C1;<sub>crit</sub> = 0.028&middot;V<sub>flat</sub><sup>0.5</sup></strong> (Sessions 52/62/64/65, &#x03B3; = 2).
+              This is the default on the{' '}
+              <Link href="/galaxy-plotter#calibration" style={{ color: 'var(--color-accent-blue)' }}>galaxy plotter</Link> since 2026-11-14.
+              45 of 122 SPARC galaxies have points above this knee. It loses by &Delta;BIC +8,404 and is worse in 115/122 galaxies.
+            </li>
+            <li>
+              <strong>One global knee, fitted freely</strong>: &Delta;BIC +2,843, worse in 105/122 galaxies (galaxy-block bootstrap 95% 2,178&ndash;3,590).
+            </li>
+            <li>
+              <strong>&#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2;</strong>. At A = 0.029 this is a <strong>units slip</strong>:
+              the V<sup>0.5</sup> law&apos;s coefficient was put on a V&sup2; exponent, and no archive fit uses that combination.
+              At the A = 4.6&times;10<sup>&minus;5</sup> that the Jeans formula actually gives, 22/122 galaxies cross the knee.
+              A velocity exponent of +2 is excluded at ~11&#x03C3; by the measured &minus;0.16 &plusmn; 0.19. The archive&apos;s +0.5 is excluded at ~3.5&#x03C3;.
+            </li>
+          </ul>
+          <p style={{ margin: '0.5rem 0 0 0', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+            Until 2026-11-17 this page treated A = 0.029 as the working value across the site and said the knee is unreachable in every sector.
+            That statement holds only for the A&middot;V&sup2; law under one reading (below). Sources: explorer findings 2026-11-12 and 2026-11-13; ledger blocks 2026-11-13 and 2026-11-14.
+          </p>
+        </div>
+
         <p>
           &#x03C1;<sub>crit</sub> is the density scale at which C(&#x03C1;) = tanh(&#x03B3; ln(1 + &#x03C1;/&#x03C1;<sub>crit</sub>))
           bends from its low-density ramp (C &#x2248; &#x03B3;&#x03C1;/&#x03C1;<sub>crit</sub>) into saturation (C &rarr; 1).
@@ -96,7 +124,11 @@ export default function CriticalDensity() {
         </div>
 
         <p>
-          <strong>Consequence &mdash; the knee is unreachable, and no length choice rescues it.</strong> If
+          <strong>Consequence for the A&middot;V&sup2; law only: if the same length sets A and smooths &#x03C1;, the knee is out of reach.</strong>{' '}
+          This does not hold for the archive&apos;s V<sup>0.5</sup> knee, and it does not hold with R<sub>0</sub> fixed at 8 kpc
+          and the local midplane density &#x03C1; = &Sigma;/2h that the site&apos;s fits use. Under those choices 22/122 SPARC discs
+          cross the Jeans-consistent A&middot;V&sup2; knee (see the{' '}
+          <a href="#knee-laws-in-use" style={{ color: 'var(--color-accent-blue)' }}>box at the top</a>). If
           &#x2113; were a coarse-graining length it would have to smooth &#x03C1; and &#x03C1;<sub>crit</sub>
           alike &mdash; that is what a coarse-graining length <em>is</em>. Doing both, <strong>&#x2113;
           cancels</strong>:
@@ -108,18 +140,18 @@ export default function CriticalDensity() {
         <p>
           <strong>x is a virial ratio.</strong> For any bound system V<sub>c</sub> &#x2272; V<sub>flat</sub>, so
           x &#x2272; 0.019&#x03B2;<sub>J</sub>&sup2; &#x2248; <strong>0.02 in every sector at every
-          &#x2113;</strong> &mdash; the knee is out of reach by roughly 40&times; for free, with no fitted
+          &#x2113;</strong>, on this coarse-grained A&middot;V&sup2; reading. The knee is out of reach by roughly 40&times; for free, with no fitted
           parameter. Verified numerically on all five plotter disks (max over &#x2113;:
           1.7&times;10<sup>&minus;3</sup> to 1.1&times;10<sup>&minus;2</sup>, computed 2026-08-05 on the plotter&apos;s earlier rows; on 2026-10-26 the plotter switched to real SPARC rows, including a corrected UGC 128, and this range has not been recomputed; the 0.019&#x03B2;<sub>J</sub>&sup2; bound does not depend on it) and to four digits at Cassini and
           wide-binary scales. It is kernel-robust: a Gaussian kernel gives coefficient 0.00505, moving the ceiling
-          <em> down</em> a further 3.8&times;. This is the only galaxy-sector statement on this site that requires
+          <em> down</em> a further 3.8&times;. On this reading it requires
           <strong> no estimator choice, no velocity definition, and no contested external measurement.</strong>
           The single escape found is &#x03B2;<sub>J</sub> = 4.5, which lifts the self-consistent x to 0.385
           (C = 0.57) &mdash; at 17&#x03C3; from this page&apos;s own calibration. <strong>No refutation is added
           to the ledger from this</strong> (it remains at 6): it closes a question rather than opening one.
         </p>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-          At the site&apos;s working A = 0.029, NGC 3198 gives
+          At the units-hybrid A = 0.029 (the site&apos;s working value until 2026-11-14), NGC 3198 gives
           &#x03C1;/&#x03C1;<sub>crit</sub> = 9.45&times;10<sup>&minus;4</sup> &mdash; recomputed from the{' '}
           <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>plotter</Link>&apos;s own{' '}
           <code>midplaneDensity()</code> (&#x03C1;(0) = 0.6164 M<sub>&#x2609;</sub> pc<sup>&minus;3</sup>), so it
@@ -168,9 +200,9 @@ export default function CriticalDensity() {
               </tr>
             </thead>
             <tbody style={{ color: 'var(--color-text-secondary)' }}>
-              <tr><td style={{ padding: '0.3rem' }}>A&middot;V&sup2;, A = 0.029 (site-wide working value)</td><td>1,160</td><td>V<sup>+2</sup></td><td>asserted; 0.029 was derived for a V<sup>0.5</sup> law</td></tr>
+              <tr><td style={{ padding: '0.3rem' }}>A&middot;V&sup2;, A = 0.029 (units slip; site default until 2026-11-14)</td><td>1,160</td><td>V<sup>+2</sup></td><td>units hybrid: 0.029 was derived for a V<sup>0.5</sup> law; no archive fit uses it</td></tr>
               <tr><td style={{ padding: '0.3rem' }}>A&middot;V&sup2;, A = 4.6&times;10<sup>&minus;5</sup> (stated formula)</td><td>1.8</td><td>V<sup>+2</sup></td><td>formula-consistent; never adopted</td></tr>
-              <tr><td style={{ padding: '0.3rem' }}>A&middot;V<sup>0.5</sup> (Session 53)</td><td>per galaxy</td><td>V<sup>0.5</sup></td><td>archive only</td></tr>
+              <tr><td style={{ padding: '0.3rem' }}>A&middot;V<sup>0.5</sup> (Session 53)</td><td>per galaxy</td><td>V<sup>0.5</sup></td><td>the archive&apos;s own form; plotter default; 45/122 cross; &Delta;BIC +8,404</td></tr>
               <tr><td style={{ padding: '0.3rem' }}>Jeans-construction knee, measured on SPARC</td><td>0.161 (median)</td><td>V<sup>&minus;0.16 &plusmn; 0.19</sup></td><td>measured (velocity-blind)</td></tr>
               <tr><td style={{ padding: '0.3rem' }}>Knee that tracks MOND&apos;s a&#x2080;, a&#x2080;&sup2;/(4&#x03C0;GV&sup2;)</td><td>6.3&times;10<sup>&minus;3</sup></td><td>V<sup>&minus;2</sup></td><td>what matching MOND requires; not asserted</td></tr>
               <tr><td style={{ padding: '0.3rem' }}>Cosmological knee (dark-energy sector)</td><td><strong>4.3&times;10<sup>&minus;8</sup></strong> = &#x03C1;<sub>&#x039B;</sub>/2</td><td>none</td><td>calibrated so that C&#x2080; = &#x03A9;<sub>m</sub>; &#x039B; renamed</td></tr>
@@ -200,8 +232,9 @@ export default function CriticalDensity() {
 
         <h2>Connection to MOND</h2>
         <p>
-          From &#x03C1;<sub>crit</sub> = A &times; V<sub>flat</sub>&sup2; and the coherence function,
-          two cosmological results emerge:
+          Two dimensional coincidences are often quoted alongside &#x03C1;<sub>crit</sub>. Neither follows from
+          &#x03C1;<sub>crit</sub> or from the coherence function; see{' '}
+          <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>Relation to MOND</Link>.
         </p>
         <div className="grid-2">
           <div className="card">

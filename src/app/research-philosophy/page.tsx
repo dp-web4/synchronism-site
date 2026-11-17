@@ -75,7 +75,7 @@ export default function ResearchPhilosophy() {
           <li>47 internal-consistency survivors out of ~3,308 sessions = 1.4% internal-consistency-survival rate (see below for why this is not a discovery rate).</li>
         </ul>
 
-        <h2 id="validation-badge-taxonomy">Validation Badge Taxonomy</h2>
+        <h2 id="validation-badge-taxonomy">Status Badge Taxonomy</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
           Every scientific claim on this site carries a validation badge.
           The <strong>canonical reference</strong> is on the{' '}
@@ -108,23 +108,23 @@ export default function ResearchPhilosophy() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="active-mrh" />
-            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>canonical legend</Link></span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="parallel-paths" />
-            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>canonical legend</Link></span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="sidelined" />
-            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>canonical legend</Link></span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="superseded" />
-            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>canonical legend</Link></span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="audited-negative" />
-            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>canonical legend</Link></span>
           </div>
         </div>
 
@@ -134,19 +134,19 @@ export default function ResearchPhilosophy() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="untested" />
-            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>canonical legend</Link></span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="speculative" />
-            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>canonical legend</Link></span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="reparametrization" />
-            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>canonical legend</Link></span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <ValidationBadge status="failed" />
-            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see canonical legend</span>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>&mdash; see <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>canonical legend</Link></span>
           </div>
         </div>
 
@@ -264,7 +264,7 @@ export default function ResearchPhilosophy() {
           but only because the scorer&apos;s own novelty judgment did the discriminating. The six discoveries were chosen to
           trip prior art and sit in every training corpus, so this arm cannot separate &ldquo;the framework had nothing
           novel&rdquo; from &ldquo;LLM audit maps real novelty onto prior art&rdquo;: flagging Dirac or Bell as prior art is
-          correct, so specificity 0/6 there says little about novelty detection. The arm that could separate them uses
+          correct, so specificity 0/6 there says little about novelty detection. Put plainly, this control could not have returned a specificity above 0, so J = 0 carries no information about the instrument (a simulated-visitor researcher persona, 2026-11-17). The arm that could separate them uses
           modest-novelty results published after the models&apos; training cutoff; it is unrun (routed to the project lead since 2026-09-10).
           Arm-by-arm numbers, the class convention and
           the intervals are on{' '}
@@ -303,7 +303,7 @@ export default function ResearchPhilosophy() {
           claims exists in the archive or site logs. So the 0-of-9 line is <strong>instrument-uncalibrated</strong>: it comes
           from the same instrument class whose calibration is still open (control status above). The executed physics refutations stand
           on external data and simulation, and do not depend on it. A human (dp) reviews borderline cases and maintains the
-          validation badge taxonomy.
+          status badge taxonomy.
           <strong>A2ACW&apos;s calibration, stated as a calibration:</strong> of the 9 claims its top verdict passed, 0
           survived later audit (positive predictive value 0/9; the one-sided 95% upper bound is about 28%, or 34% two-sided). Every demotion came from a
           <em>later</em> audit pass, not from the challenge cycle itself. So A2ACW works as a search heuristic and as an

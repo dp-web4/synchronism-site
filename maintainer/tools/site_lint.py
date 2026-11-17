@@ -23,6 +23,23 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-17 (four visitor personas, 2026-11-17 log): knee law, gamma gloss, Bell row, stale counts.
+    (r"site-wide working value", "2026-11-17", "A = 0.029 on V^2 is the units hybrid, not the working value; the archive's 0.028 V^0.5 is the plotter default (see /critical-density#knee-laws-in-use)", True),
+    (r"the knee is unreachable, and no length", "2026-11-17", "'unreachable' holds only for the A V^2 law under the coarse-graining reading; 45/122 discs cross the archive knee", True),
+    (r"two cosmological results emerge", "2026-11-17", "a0 and Sigma0 do not follow from rho_crit or C; they are dimensional coincidences quoted alongside", True),
+    (r"curve is a flat 3\.17&times; boost in gravity \(1\.78&times; in speed\) of the\s+baryon line", "2026-11-17", "the flat 3.17x boost is the units-hybrid setting only; condition on the calibration"),
+    (r"sags like the gray one", "2026-11-17", "at the default archive knee the violet curve is near-Newtonian in bright centres and capped outside"),
+    (r"published density law \(\u03B3 = 2, \u03C1_crit = 0\.029|published density law \(γ = 2, ρ_crit = 0\.029", "2026-11-17", "0.029 V^2 is the units hybrid, not the published law", True),
+    (r"real disc it barely changes gravity", "2026-11-17", "at the archive knee the density law gives the wrong shape, not 'barely changes'", True),
+    (r"The steepness of the S-curve", "2026-11-17", "gamma is not a steepness/sharpness: it sets the low-density slope and how fast C closes on 1 (GAMMA_GLOSS)", True),
+    (r"sharpness sign inverted", "2026-11-17", "gamma is not a sharpness; say what the formula ranks backwards", True),
+    (r"0\.33 at the default (&#x03B3;|\u03B3|γ)\)", "2026-11-17", "the Coherence Explorer default gamma is 1, C(rho_crit) = 0.60", True),
+    (r"on every construction that does not signal", "2026-11-17", "QM does not signal and reaches 2 sqrt 2; scope to the three constructions built here", True),
+    (r"the 6 &ldquo;Validated&rdquo; plus 3|prior 6 &ldquo;Validated&rdquo; claims", "2026-11-17", "6 demoted claims, only 2 confirmed to have carried a Validated badge (/autonomous-research 2026-11-14)", True),
+    (r"Validation taxonomy, kill criteria", "2026-11-17", "badges were renamed status badges 2026-11-16; tooltip promised a section that does not exist", True),
+    (r"exponent \+0\.5 is 3\.6&sigma;", "2026-11-17", "(0.5 + 0.16)/0.19 = 3.5 sigma on the printed numbers", True),
+    (r"Ice cubes have high coherence", "2026-11-17", "C is density-keyed and ice is less dense than water: C(ice) < C(water)", True),
+    (r"21&#x03C3;</strong> away on the\s+measurement error alone|~21&#x03C3; off on the measurement error alone", "2026-11-17", "21 sigma includes the anchor's +-0.02; measurement alone at the low-side 0.051 is 23 sigma", True),
     # Added 2026-11-16 (four visitor personas, 2026-11-16 log).
     (r"Survives, differs, unresolved|survives, differs, unresolved;", "2026-11-16", "a0(z) = cH(z)/2pi differs from constant-a0 MOND but not from LCDM+baryons (Mayer+2023): 'survives; does not discriminate'", True),
     (r"the literal lock DIED", "2026-11-16", "the sign lock holds for the substituted mean-density background and is absent in the covariant completions; say which object", True),

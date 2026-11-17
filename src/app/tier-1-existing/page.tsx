@@ -630,7 +630,7 @@ export default function Tier1Existing() {
           </details>
           <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.5rem' }}>
             Full canonical definitions, one link per label family:{' '}
-            <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>validation badges</Link>{' '}
+            <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>status badges</Link>{' '}
             &middot;{' '}
             <Link href="/honest-assessment#operational-states" style={{ color: 'var(--color-accent-blue)' }}>operational states</Link>{' '}
             ({OPERATIONAL_STATES.join(', ')}) &middot;{' '}

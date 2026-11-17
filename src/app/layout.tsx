@@ -75,7 +75,7 @@ export default function RootLayout({
             <Link
               href="/research-philosophy"
               style={{ color: 'var(--color-text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}
-              title="Validation taxonomy, kill criteria, methodology"
+              title="Methodology, falsifiability, badge families (definitions on Honest Assessment)"
             >
               Research Philosophy
             </Link>

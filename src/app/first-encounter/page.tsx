@@ -85,7 +85,12 @@ const steps = [
     anything", it is contradicted by experiment (the quantum Zeno effect: watching a system very frequently can freeze it in
     place, a real measured effect, Itano et al. 1990); read as "measuring resets the system", it
     gives exactly standard quantum mechanics. It would become testable only if the framework named a scan period, and
-    it hasn't.`,
+    it hasn't.
+    Is this the same "coherence" as quantum coherence? No. This section borrows the word. The C in the S-curve
+    above is a number computed from density alone, and it is not the quantum coherence (fixed phase relations in a
+    wavefunction) you may have heard of. The BEC and superconductor presets in the tools are there because they are
+    famous collective systems, not because C measures their quantum state; C has no temperature in it, so it cannot see a
+    superconductor switch on.`,
     highlight: 'Measurement = MRH crossing (an interpretation; same predictions as standard QM)',
   },
   {

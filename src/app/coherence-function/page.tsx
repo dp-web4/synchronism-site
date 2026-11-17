@@ -21,8 +21,9 @@ export default function CoherenceFunction() {
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
           Before the math: <strong>coherence</strong> measures how collectively particles behave.
-          Ice cubes have high coherence (rigid crystal lattice). Steam has low coherence (random
-          motion). This function quantifies that spectrum for any system, at any scale.
+          Steam has low coherence (random motion). In the intuition the framework started from, a crystal has high coherence (a
+          rigid lattice). <strong>This function does not see order, only density.</strong> Ice floats, so it is less dense than liquid
+          water, and on this formula C(ice) &lt; C(water). The formula assigns a value along that spectrum from density alone.
         </p>
 
         <EquationDisplay size="lg" label="The Synchronism coherence function">
@@ -151,8 +152,11 @@ export default function CoherenceFunction() {
               <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>). At the framework&apos;s
               units-hybrid knee (0.029&nbsp;V&sup2;) the radial striction is ~10<sup>&minus;5</sup> of gravity, so these verdicts stand under that
               variational version too (first order, fixed disc; explorer 2026-10-13). At the archive&apos;s own 0.028&nbsp;V<sup>0.5</sup>, where 45 of 122 SPARC
-              galaxies have points above the knee, it has not been computed; it scales with C&prime;, so it must be far larger there (explorer 2026-11-13). Knees placed inside discs are a different case: there
-              the striction exceeds gravity and the disc&apos;s equilibrium is not yet solved.</li>
+              galaxies have points above the knee, the radial striction is 0.5&ndash;1.6% of gravity at the median (at most 26&ndash;51%) and never outward-dominant.
+              First-order L3 improves &chi;&sup2; by 8&ndash;10% there, without approaching MOND (&chi;&sup2;/N 123&ndash;173 against 21).
+              The vertical striction is not small: it is 9&ndash;27% of vertical gravity at the median, compressive, and above half of gravity somewhere in
+              40&ndash;110 of 153 discs. These verdicts therefore hold at fixed disc thickness. A self-consistent vertical equilibrium has not been
+              solved (explorer 2026-11-14).</li>
           </ol>
           <p style={{ margin: '0.75rem 0 0.35rem', fontWeight: 600 }}>Which C, in one table (added 2026-09-23)</p>
           <div style={{ overflowX: 'auto' }}>
@@ -536,9 +540,12 @@ export default function CoherenceFunction() {
 
         <h3 id="incumbent-map" style={{ scrollMarginTop: '5rem' }}>Where known functions sit on the &gamma; axis</h3>
         <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
-          Fit the template to a known theory&apos;s curve, with no data at all, and you get a &gamma;. Every &gamma; the site
-          reports from data lands where the known theory of that sector already sits. So a fitted &gamma; tells you which known
-          function the data look like; it carries nothing the known function did not already supply.
+          Fit the template to a known theory&apos;s curve, with no data at all, and you get a &gamma;. Where a known function fits
+          a sector&apos;s data, the fitted &gamma; lands on that function&apos;s &gamma;. The first sector tested blind is the liquid-helium
+          superfluid fraction (Donnelly &amp; Barenghi 1998). There no textbook function fits, and the fitted &gamma; lands on none of them:
+          it moves from 0.44 to 4.8 with the knee convention and the loss, and two experiments on the same liquid give 0.60 and 0.95.
+          Either way, a fitted &gamma; carries nothing the data&apos;s own curve did not already supply (explorer 2026-11-16,{' '}
+          <code>explorer/scripts/blind_sector_he4/</code>, PREREG 9ad8437, registered before the fit but not blind).
         </p>
         <div style={{ overflowX: 'auto', marginBottom: '0.5rem' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem' }}>
@@ -551,6 +558,7 @@ export default function CoherenceFunction() {
               <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>MOND standard &mu; (n = 2)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>2.55</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>3.7 mdex</td></tr>
               <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>MOND &delta; &ge; 4, n &ge; 3: the sharp end, the only part of MOND&apos;s family that can pass Cassini (&delta; = 6 with M/L free per galaxy and no bulges; &delta; = 4 fails at +9.2&sigma; once a&#x2080; is refit to SPARC)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>none: the fit runs to the edge of the scan</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>5&ndash;19 mdex; outside the template&apos;s span</td></tr>
               <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>BCS gap curve (superconductors, knee pinned at &beta; = 2)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>2.64</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>the archive&apos;s 2.31&ndash;2.65 fits; &gamma; unidentified once &beta; is free</td></tr>
+              <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>Liquid helium superfluid fraction (London ideal Bose gas 1 &minus; t<sup>1.5</sup>; Andronikashvili 1 &minus; t<sup>5.6</sup>)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>0.64 / 1.32 (&beta; free); 0.71 / 2.24 (&beta; = 2)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>data give 0.75 (&beta; free) and 2.60 (&beta; = 2): neither function; the template&apos;s rms is 4&times; that of a rival with the same number of parameters (explorer 2026-11-16)</td></tr>
               <tr><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>Newton (Solar System)</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>&rarr; &infin;</td><td style={{ padding: '0.3rem 0.5rem', borderTop: '1px solid rgba(148,163,184,0.2)', verticalAlign: 'top' }}>the data return only a floor, &gamma; &ge; 0.87</td></tr>
             </tbody>
           </table>
@@ -565,6 +573,13 @@ export default function CoherenceFunction() {
           SPARC alone cannot tell &gamma; = &frac12; (simple &mu;) from 0.595 (the RAR function): they are 0.1 apart, against a galaxy-level
           uncertainty of about 0.11.
         </p>
+        <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+          <strong>Why SPARC&apos;s own fit sits at 0.489 rather than the RAR function&apos;s 0.59 (explorer 2026-11-16).</strong> The cause is neither the grid, nor the loss, nor the 10% error cut.
+          Replacing every measured g<sub>obs</sub> in the frozen 2,807-row fit by McGaugh&apos;s relation at its own g<sub>bar</sub> returns &gamma; = 0.587.
+          Dropping the error cut moves &gamma; to 0.434, away from 0.59. What is left is the data&apos;s own &plusmn;0.015&ndash;0.02 dex structured residual about the RAR,
+          which the template absorbs by moving &gamma; down by 0.1. The template and the RAR fit the points to the same rms (0.1437 dex; &Delta;&chi;&sup2; = 0.83 at
+          point level, about 0.6 at galaxy level). So the fitted &gamma; is a high-gain readout of a 0.02 dex wiggle, and the data cannot distinguish 0.49 from 0.59.
+        </p>
 
         <h2>Scope Limit: Universality Classes</h2>
         <div style={{ padding: '0.75rem 1rem', background: 'rgba(239,68,68,0.06)', borderRadius: '6px', borderLeft: '3px solid #ef4444', marginBottom: '1rem' }}>
@@ -575,7 +590,9 @@ export default function CoherenceFunction() {
             3D-XY (&#x03B1;&nbsp;=&nbsp;&minus;0.015), or mean-field (&#x03B1;&nbsp;=&nbsp;0). C(&#x03C1;) has no
             inputs encoding <em>d</em>, <em>n</em>, or symmetry. It therefore cannot reproduce critical exponents
             or distinguish universality classes — a one-parameter scalar coherence function is structurally
-            blind to this information.
+            blind to this information. It has been tested on data once. Near the transition the template is linear in
+            (1 &minus; T/T<sub>c</sub>) for every &gamma;, while liquid helium&apos;s superfluid fraction goes as (1 &minus; T/T<sub>c</sub>)<sup>0.67</sup>, and the
+            template misfits it at 12&times; the measurement scatter (explorer 2026-11-16).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
             This is a <strong>scope limit</strong>, not a parameter-tuning failure. C(&#x03C1;) describes

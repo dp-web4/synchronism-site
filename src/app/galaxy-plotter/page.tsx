@@ -22,6 +22,8 @@ const galaxies = [
     vflat: 47, // SPARC 47.0
     // SPARC mass model (MassModels_Lelli2016c.mrt), every tabulated radius: [R kpc, V_gas, V_disk, V_bul] km/s, V_disk/V_bul at M/L = 1 (3.6 μm); added 2026-11-10
     sparc: [[0.49, 3.74, 12.31, 0], [0.99, 7.46, 14.55, 0], [1.48, 10.87, 12.95, 0], [1.97, 13.32, 11.54, 0], [2.47, 14.77, 10.18, 0], [2.96, 16.2, 9.16, 0], [3.46, 17.6, 8.37, 0], [3.95, 17.91, 7.77, 0], [4.44, 17.48, 7.29, 0], [4.94, 16.93, 6.89, 0], [5.43, 16.28, 6.55, 0], [5.92, 15.64, 6.26, 0]] as [number, number, number, number][],
+    // SPARC surface densities at the same radii: [R kpc, SB_disk, SB_bul (M☉/pc² at M/L = 1, 3.6 μm), Σ_gas from V_gas (M☉/pc²)]; added 2026-11-17 (maintainer/scripts/plotter_sparc_surface_densities.py)
+    sb: [[0.49,15.93,0.0,7.29], [0.99,5.52,0.0,6.4], [1.48,1.26,0.0,7.51], [1.97,0.29,0.0,6.9], [2.47,0.08,0.0,6.48], [2.96,0.02,0.0,6.72], [3.46,0.01,0.0,5.28], [3.95,0.0,0.0,2.72], [4.44,0.0,0.0,1.26], [4.94,0.0,0.0,0.62], [5.43,0.0,0.0,0.22], [5.92,0.0,0.0,0.11]],
     points: [
       [0.49, 13.8, 1.6], [0.99, 21.6, 0.8], [1.48, 28.9, 0.7], [1.97, 34.3, 0.5], [2.47, 38.2, 0.4], [2.96, 42, 0.2], [3.46, 44.6, 0.2], [3.95, 46.3, 0.2], [4.44, 47.4, 0.3], [4.94, 48.2, 0.6], [5.43, 47.4, 0.7], [5.92, 45.5, 1.3],
     ] as [number, number, number][],
@@ -33,6 +35,8 @@ const galaxies = [
     vflat: 131, // SPARC 131.2
     // SPARC mass model (MassModels_Lelli2016c.mrt), every tabulated radius: [R kpc, V_gas, V_disk, V_bul] km/s, V_disk/V_bul at M/L = 1 (3.6 μm); added 2026-11-10
     sparc: [[0.16, 0, 23.21, 0], [0.26, 0, 35.33, 0], [0.36, 1.92, 46.97, 0], [0.46, 2.29, 56.68, 0], [0.56, 2.64, 63.77, 0], [0.66, 3, 67.56, 0], [0.76, 3.34, 70.83, 0], [0.86, 3.68, 72.8, 0], [0.96, 4.02, 74.87, 0], [1.06, 4.37, 77.12, 0], [1.16, 4.75, 79.47, 0], [1.27, 5.15, 82.18, 0], [1.36, 5.51, 85.19, 0], [1.47, 5.76, 87.94, 0], [1.57, 5.98, 90.77, 0], [1.67, 6.21, 93.98, 0], [1.77, 6.42, 96.86, 0], [1.87, 6.61, 99.21, 0], [1.97, 6.81, 101.42, 0], [2.08, 7.01, 103.79, 0], [2.18, 7.27, 106.07, 0], [2.28, 7.54, 106.73, 0], [2.37, 7.81, 106.19, 0], [2.47, 8.25, 105.57, 0], [2.57, 8.77, 105.08, 0], [2.68, 9.31, 104.39, 0], [2.78, 9.95, 103.8, 0], [2.88, 10.97, 103.16, 0], [2.98, 11.96, 102.68, 0], [3.08, 13.06, 102.46, 0], [3.19, 14.06, 102.29, 0], [3.29, 15.05, 102.51, 0], [3.39, 16.15, 102.82, 0], [3.49, 17.15, 103.06, 0], [3.59, 18.14, 102.95, 0], [3.69, 19.24, 103.12, 0], [3.79, 20.24, 102.93, 0], [3.9, 21.03, 102.5, 0], [3.99, 21.83, 101.99, 0], [4.47, 25.72, 99.49, 0], [4.97, 27.81, 97.06, 0], [5.47, 29.41, 94.4, 0], [5.96, 30.7, 91.13, 0], [6.46, 31.7, 87.9, 0], [6.96, 33.29, 84.95, 0], [7.45, 34.99, 81.98, 0], [7.95, 36.58, 79.11, 0], [8.45, 38.38, 76.42, 0], [8.94, 39.97, 74.09, 0], [9.44, 41.47, 71.75, 0], [9.94, 42.57, 69.58, 0], [10.43, 43.96, 67.61, 0], [10.93, 45.06, 65.75, 0], [11.43, 45.76, 64.12, 0], [11.92, 46.15, 62.55, 0], [12.42, 46.65, 61.06, 0], [12.92, 46.95, 59.67, 0], [13.42, 46.75, 58.37, 0], [13.91, 46.25, 57.26, 0], [14.41, 45.95, 56.12, 0], [14.91, 45.66, 55.05, 0], [15.4, 45.26, 54.06, 0], [15.9, 44.76, 53.11, 0], [16.4, 44.16, 52.26, 0], [16.89, 43.36, 51.43, 0], [17.39, 42.67, 50.61, 0], [17.89, 41.87, 49.84, 0], [18.38, 41.07, 49.16, 0], [18.88, 40.27, 48.46, 0], [19.38, 39.87, 47.78, 0], [19.87, 39.87, 47.15, 0], [20.37, 39.87, 46.52, 0], [20.87, 39.87, 45.97, 0]] as [number, number, number, number][],
+    // SPARC surface densities at the same radii: [R kpc, SB_disk, SB_bul (M☉/pc² at M/L = 1, 3.6 μm), Σ_gas from V_gas (M☉/pc²)]; added 2026-11-17 (maintainer/scripts/plotter_sparc_surface_densities.py)
+    sb: [[0.16,1105.79,0.0,0.0], [0.26,1006.36,0.0,0.94], [0.36,938.26,0.0,1.24], [0.46,789.78,0.0,1.04], [0.56,624.65,0.0,1.17], [0.66,511.64,0.0,1.28], [0.76,469.31,0.0,1.39], [0.86,402.53,0.0,1.51], [0.96,381.19,0.0,1.66], [1.06,359.63,0.0,1.86], [1.16,345.41,0.0,2.03], [1.27,332.26,0.0,2.25], [1.36,317.57,0.0,2.1], [1.47,297.25,0.0,1.79], [1.57,286.72,0.0,1.84], [1.67,271.01,0.0,1.86], [1.77,252.38,0.0,1.81], [1.87,231.06,0.0,1.82], [1.97,214.5,0.0,1.83], [2.08,203.15,0.0,2.05], [2.18,177.77,0.0,2.33], [2.28,143.26,0.0,2.53], [2.37,125.45,0.0,3.11], [2.47,115.5,0.0,3.98], [2.57,108.64,0.0,4.39], [2.68,99.02,0.0,5.17], [2.78,91.66,0.0,7.61], [2.88,86.76,0.0,9.7], [2.98,83.79,0.0,11.1], [3.08,81.8,0.0,11.71], [3.19,78.36,0.0,12.25], [3.29,75.36,0.0,14.26], [3.39,71.99,0.0,15.35], [3.49,67.49,0.0,15.75], [3.59,62.39,0.0,17.5], [3.69,56.77,0.0,18.62], [3.79,52.43,0.0,16.82], [3.9,47.97,0.0,16.93], [3.99,44.58,0.0,18.55], [4.47,31.94,0.0,16.48], [4.97,24.17,0.0,13.21], [5.47,15.97,0.0,12.12], [5.96,11.31,0.0,11.04], [6.46,7.9,0.0,12.01], [6.96,5.51,0.0,14.14], [7.45,3.88,0.0,14.67], [7.95,2.71,0.0,15.48], [8.45,1.9,0.0,16.13], [8.94,1.34,0.0,15.83], [9.44,0.93,0.0,14.62], [9.94,0.65,0.0,14.78], [10.43,0.46,0.0,14.99], [10.93,0.32,0.0,12.79], [11.43,0.22,0.0,10.43], [11.92,0.16,0.0,9.69], [12.42,0.11,0.0,9.21], [12.92,0.08,0.0,6.59], [13.42,0.05,0.0,3.53], [13.91,0.04,0.0,2.93], [14.41,0.03,0.0,3.42], [14.91,0.02,0.0,2.8], [15.4,0.01,0.0,1.88], [15.9,0.01,0.0,1.01], [16.4,0.01,0.0,0.0], [16.89,0.0,0.0,0.0], [17.39,0.0,0.0,0.0], [17.89,0.0,0.0,0.0], [18.38,0.0,0.0,0.0], [18.88,0.0,0.0,0.0], [19.38,0.0,0.0,1.89], [19.87,0.0,0.0,2.96], [20.37,0.0,0.0,2.89], [20.87,0.0,0.0,2.82]],
     points: [
       [0.16, 24.5, 2.83], [0.76, 71.7, 1.25], [1.27, 83.4, 1.8], [1.87, 95.2, 1.25], [2.37, 98.2, 1], [2.98, 100, 2.69], [3.49, 107, 2.46], [4.47, 118, 5.36], [6.96, 126, 0.55], [9.94, 127, 2.56], [12.42, 132, 2.68], [15.4, 134, 0.79], [17.89, 136, 6.38], [20.87, 134, 3.12],
     ] as [number, number, number][],
@@ -44,6 +48,8 @@ const galaxies = [
     vflat: 129, // SPARC 129.3
     // SPARC mass model (MassModels_Lelli2016c.mrt), every tabulated radius: [R kpc, V_gas, V_disk, V_bul] km/s, V_disk/V_bul at M/L = 1 (3.6 μm); added 2026-11-10
     sparc: [[1.25, 1.71, 29.4, 0], [3.75, 4.27, 49.15, 0], [6.25, 7.23, 50.52, 0], [8.76, 11.57, 51.47, 0], [11.25, 13.37, 53.63, 0], [13.74, 16.66, 57.25, 0], [16.22, 23.15, 57.75, 0], [18.71, 30.33, 55.23, 0], [21.3, 35.52, 52.6, 0], [23.79, 39.51, 50.52, 0], [26.28, 42, 47.75, 0], [28.77, 44.9, 45.88, 0], [31.25, 45.1, 43.92, 0], [33.74, 43, 42.1, 0], [36.23, 42.3, 40.43, 0], [38.82, 42.4, 38.83, 0], [41.31, 41.7, 37.43, 0], [43.8, 40.21, 36.18, 0], [46.28, 38.81, 35.02, 0], [48.77, 37.11, 33.97, 0], [51.26, 35.72, 33.04, 0], [53.75, 34.72, 32.1, 0]] as [number, number, number, number][],
+    // SPARC surface densities at the same radii: [R kpc, SB_disk, SB_bul (M☉/pc² at M/L = 1, 3.6 μm), Σ_gas from V_gas (M☉/pc²)]; added 2026-11-17 (maintainer/scripts/plotter_sparc_surface_densities.py)
+    sb: [[1.25,81.19,0.0,0.77], [3.75,28.11,0.0,0.64], [6.25,15.91,0.0,1.3], [8.76,10.69,0.0,1.42], [11.25,8.58,0.0,1.74], [13.74,6.03,0.0,3.63], [16.22,3.5,0.0,6.14], [18.71,2.13,0.0,7.07], [21.3,1.35,0.0,6.83], [23.79,0.8,0.0,6.09], [26.28,0.59,0.0,5.9], [28.77,0.38,0.0,4.45], [31.25,0.25,0.0,1.05], [33.74,0.17,0.0,0.28], [36.23,0.11,0.0,1.47], [38.82,0.07,0.0,1.29], [41.31,0.05,0.0,0.19], [43.8,0.03,0.0,0.0], [46.28,0.02,0.0,0.0], [48.77,0.01,0.0,0.0], [51.26,0.01,0.0,0.0], [53.75,0.0,0.0,0.0]],
     points: [
       [1.25, 34.1, 18.8], [6.25, 96.9, 2.44], [8.76, 108, 1.26], [13.74, 114, 0.86], [16.22, 121, 0.68], [21.3, 128, 0.63], [26.28, 129, 0.65], [28.77, 131, 0.73], [33.74, 131, 0.75], [38.82, 126, 1.4], [41.31, 130, 1.62], [46.28, 134, 2.1], [48.77, 129, 2.66], [53.75, 125, 5.95],
     ] as [number, number, number][],
@@ -55,6 +61,8 @@ const galaxies = [
     vflat: 150, // SPARC 150.1
     // SPARC mass model (MassModels_Lelli2016c.mrt), every tabulated radius: [R kpc, V_gas, V_disk, V_bul] km/s, V_disk/V_bul at M/L = 1 (3.6 μm); added 2026-11-10
     sparc: [[0.32, 0, 63.28, 0], [0.64, 0, 73.66, 0], [0.96, 0, 78.98, 0], [1.28, 0.35, 82.7, 0], [1.61, 0.15, 84.22, 0], [1.93, -0.05, 83.17, 0], [2.24, -0.47, 87.04, 0], [2.57, -0.95, 88.91, 0], [2.89, -1.43, 88.98, 0], [3.21, -1.14, 93.81, 0], [3.54, -0.39, 101.22, 0], [3.85, 0.36, 108.53, 0], [4.17, 1.52, 115.51, 0], [4.5, 3.07, 120.51, 0], [4.82, 4.63, 125.42, 0], [5.15, 6.02, 129.4, 0], [5.46, 7.16, 133.15, 0], [5.78, 8.31, 136.45, 0], [6.1, 9.46, 139.41, 0], [6.43, 10.61, 141.85, 0], [6.74, 11.77, 142.32, 0], [7.06, 12.87, 140.94, 0], [8.04, 16.39, 135.68, 0], [9.04, 20.03, 130.79, 0], [10.04, 23.68, 128.1, 0], [11.04, 27.08, 126.67, 0], [12.05, 30.11, 124.98, 0], [14.05, 34.48, 118.12, 0], [16.07, 36.43, 108.22, 0], [18.13, 37.76, 101.1, 0], [20.05, 39.83, 96.4, 0], [22.12, 40.92, 91.56, 0], [24.03, 41.77, 87.03, 0], [26.1, 43.71, 82.67, 0], [28.16, 45.41, 79.06, 0], [30.08, 45.29, 76.07, 0], [32.14, 44.56, 73.27, 0], [34.06, 44.81, 70.91, 0], [36.12, 45.9, 68.62, 0], [38.19, 46.75, 66.59, 0], [40.1, 47.48, 64.84, 0], [42.17, 48.93, 63.1, 0], [44.08, 47.84, 61.63, 0]] as [number, number, number, number][],
+    // SPARC surface densities at the same radii: [R kpc, SB_disk, SB_bul (M☉/pc² at M/L = 1, 3.6 μm), Σ_gas from V_gas (M☉/pc²)]; added 2026-11-17 (maintainer/scripts/plotter_sparc_surface_densities.py)
+    sb: [[0.32,1084.92,0.0,0.0], [0.64,590.57,0.0,0.0], [0.96,410.97,0.0,0.01], [1.28,329.34,0.0,0.0], [1.61,268.62,0.0,0.0], [1.93,247.67,0.0,0.0], [2.24,227.56,0.0,0.0], [2.57,205.02,0.0,0.0], [2.89,200.2,0.0,0.0], [3.21,208.58,0.0,0.09], [3.54,208.47,0.0,0.07], [3.85,196.07,0.0,0.15], [4.17,179.96,0.0,0.56], [4.5,164.19,0.0,1.2], [4.82,150.99,0.0,1.7], [5.15,138.08,0.0,1.99], [5.46,126.0,0.0,2.28], [5.78,113.63,0.0,2.66], [6.1,101.19,0.0,3.02], [6.43,86.52,0.0,3.51], [6.74,70.23,0.0,3.88], [7.06,57.67,0.0,4.21], [8.04,40.74,0.0,5.69], [9.04,31.83,0.0,7.1], [10.04,26.64,0.0,8.24], [11.04,21.02,0.0,8.82], [12.05,15.42,0.0,8.69], [14.05,6.42,0.0,6.82], [16.07,2.95,0.0,5.16], [18.13,2.39,0.0,5.44], [20.05,1.44,0.0,5.22], [22.12,0.72,0.0,4.25], [24.03,0.28,0.0,4.88], [26.1,0.16,0.0,5.54], [28.16,0.08,0.0,3.81], [30.08,0.04,0.0,1.81], [32.14,0.02,0.0,1.99], [34.06,0.01,0.0,3.3], [36.12,0.01,0.0,3.74], [38.19,0.0,0.0,3.48], [40.1,0.0,0.0,4.0], [42.17,0.0,0.0,2.13], [44.08,0.0,0.0,0.0]],
     points: [
       [0.32, 24.4, 35.9], [1.28, 58.5, 15.4], [2.24, 82, 8.09], [3.54, 107, 7.51], [4.5, 119, 5.67], [5.46, 134, 2.36], [6.43, 142, 0.88], [9.04, 148, 3], [12.05, 156, 2], [18.13, 153, 2], [24.03, 150, 2], [32.14, 147, 2], [38.19, 149, 2], [44.08, 149, 3],
     ] as [number, number, number][],
@@ -66,6 +74,8 @@ const galaxies = [
     vflat: 239, // SPARC 239.0
     // SPARC mass model (MassModels_Lelli2016c.mrt), every tabulated radius: [R kpc, V_gas, V_disk, V_bul] km/s, V_disk/V_bul at M/L = 1 (3.6 μm); added 2026-11-10
     sparc: [[2.67, -12.02, 317.9, 136.84], [3.21, -12.52, 344.05, 124.77], [3.74, -12.91, 365.51, 115.63], [4.27, -12.71, 368.89, 108.22], [4.81, -11.52, 367.77, 101.96], [5.35, -9.56, 371.23, 96.68], [5.88, -6.26, 365.05, 92.22], [6.41, 4.8, 360.1, 88.33], [7.48, 12.22, 345.54, 81.76], [8.55, 16.59, 324.23, 76.48], [9.62, 22.45, 311.29, 72.1], [10.66, 28.21, 299.93, 68.49], [11.74, 33.77, 288.64, 65.26], [12.83, 38.94, 280.42, 62.43], [13.91, 43.31, 272.13, 59.96], [15, 45.59, 263.74, 57.74], [16.08, 47.38, 256.44, 55.77], [17.07, 49.66, 250.86, 54.12], [18.15, 53.93, 245.89, 52.49], [19.24, 57.71, 242, 50.98], [20.32, 60.09, 237.62, 49.61], [21.41, 61.78, 231.06, 48.33], [22.49, 63.67, 224.49, 47.15], [23.48, 64.56, 219.56, 46.15], [24.57, 62.97, 214.35, 45.11], [25.65, 61.48, 209.72, 44.15], [26.74, 60.79, 205.21, 43.24], [27.82, 59.4, 200.95, 42.4], [28.91, 57.31, 196.85, 41.59], [29.89, 55.13, 193.34, 40.9], [30.98, 52.84, 189.65, 40.18], [32.06, 51.55, 186.2, 39.49], [33.15, 51.35, 182.89, 38.84], [34.23, 50.86, 179.88, 38.22], [35.32, 49.27, 177.27, 37.63], [36.31, 47.97, 173.78, 37.11]] as [number, number, number, number][],
+    // SPARC surface densities at the same radii: [R kpc, SB_disk, SB_bul (M☉/pc² at M/L = 1, 3.6 μm), Σ_gas from V_gas (M☉/pc²)]; added 2026-11-17 (maintainer/scripts/plotter_sparc_surface_densities.py)
+    sb: [[2.67,2029.41,0.0,0.0], [3.21,1695.43,0.0,0.0], [3.74,1209.56,0.0,0.0], [4.27,879.42,0.0,0.0], [4.81,718.98,0.0,1.43], [5.35,558.39,0.0,2.65], [5.88,415.53,0.0,3.78], [6.41,334.62,0.0,4.49], [7.48,196.95,0.0,5.1], [8.55,125.71,0.0,7.55], [9.62,108.76,0.0,11.24], [10.66,79.7,0.0,13.91], [11.74,68.87,0.0,15.92], [12.83,55.08,0.0,16.89], [13.91,43.42,0.0,14.39], [15.0,35.37,0.0,11.37], [16.08,30.67,0.0,12.29], [17.07,27.32,0.0,17.12], [18.15,23.83,0.0,20.65], [19.24,19.98,0.0,18.23], [20.32,14.17,0.0,14.81], [21.41,9.38,0.0,14.19], [22.49,7.57,0.0,12.69], [23.48,6.48,0.0,5.28], [24.57,5.34,0.0,0.0], [25.65,4.39,0.0,0.91], [26.74,3.53,0.0,0.76], [27.82,2.83,0.0,0.0], [28.91,2.28,0.0,0.0], [29.89,1.87,0.0,0.0], [30.98,1.51,0.0,0.0], [32.06,1.22,0.0,0.47], [33.15,0.98,0.0,1.72], [34.23,0.79,0.0,0.0], [35.32,0.0,0.0,0.0], [36.31,0.0,0.0,0.0]],
     points: [
       [2.67, 221, 20], [4.27, 250, 5], [5.35, 257, 5], [7.48, 257, 5], [10.66, 247, 6], [12.83, 244, 6], [16.08, 236, 3], [19.24, 236, 3], [22.49, 240, 3], [24.57, 237, 3], [27.82, 239, 3], [30.98, 236, 4], [33.15, 239, 5], [36.31, 238, 9],
     ] as [number, number, number][],
@@ -174,8 +184,31 @@ type Calib = 'archive' | 'hybrid';
 function rhoCritOf(vflat: number, calib: Calib): number {
   return calib === 'archive' ? 0.028 * Math.sqrt(vflat) : 0.029 * vflat * vflat;
 }
-function coherenceC(r: number, vflat: number, rd: number, calib: Calib = 'archive'): number {
-  const ratio = midplaneDensity(r, vflat, rd) / rhoCritOf(vflat, calib);
+// Midplane density from SPARC's own surface densities (2026-11-17), the convention behind the fitted density-law numbers
+// (+8,404; 45/122 cross): rho = (Ups_d·SB_disk + Ups_b·SB_bul + Σ_gas) / 2h, h = 0.3 kpc. Until 2026-11-17 C_ρ was evaluated on
+// the BTFR toy disc (midplaneDensity above) while the gray and green curves used SPARC's measured components, so the violet
+// curve mixed two mass models (graduate-physics simulated-visitor persona, 2026-11-17). Linear interpolation between SPARC
+// radii; held at the first value inside the first radius; exponential fall-off with the galaxy's rd beyond the last.
+function sparcMidplaneDensity(r: number, g: Galaxy, upsD: number): number {
+  const rows = g.sb;
+  const sig = (row: number[]) => Math.max(upsD * row[1] + UPS_BULGE_OVER_DISK * upsD * row[2] + row[3], 0);
+  const first = rows[0];
+  const last = rows[rows.length - 1];
+  let s: number;
+  if (r <= first[0]) s = sig(first);
+  else if (r >= last[0]) s = sig(last) * Math.exp(-(r - last[0]) / g.rd);
+  else {
+    let i = 0;
+    while (i < rows.length - 2 && rows[i + 1][0] <= r) i++;
+    const a = rows[i];
+    const b = rows[i + 1];
+    const t = (r - a[0]) / (b[0] - a[0]);
+    s = sig(a) + t * (sig(b) - sig(a));
+  }
+  return s / (2 * H_Z * 1000);
+}
+function coherenceC(r: number, g: Galaxy, upsD: number, calib: Calib = 'archive'): number {
+  const ratio = sparcMidplaneDensity(r, g, upsD) / rhoCritOf(g.vflat, calib);
   return Math.tanh(2 * Math.log(ratio + 1));
 }
 
@@ -183,7 +216,7 @@ function coherenceC(r: number, vflat: number, rd: number, calib: Calib = 'archiv
 // actual C(ρ(r)) as the coherence factor instead of a hand-tuned tanh(radius)
 function synchronismRealVel(r: number, g: Galaxy, upsD: number, calib: Calib): number {
   const vb = newtonianVel(r, g, upsD);
-  const c = coherenceC(r, g.vflat, g.rd, calib);
+  const c = coherenceC(r, g, upsD, calib);
   return Math.sqrt(vb * vb + Math.pow(g.vflat * c, 2));
 }
 
@@ -194,7 +227,7 @@ function synchronismRealVel(r: number, g: Galaxy, upsD: number, calib: Calib): n
 const OMEGA_M = 0.315;
 function synchronismDivVel(r: number, g: Galaxy, upsD: number, calib: Calib, floored = true): number {
   const vb = newtonianVel(r, g, upsD);
-  const c = coherenceC(r, g.vflat, g.rd, calib);
+  const c = coherenceC(r, g, upsD, calib);
   const cEff = floored ? OMEGA_M + (1 - OMEGA_M) * c : Math.max(c, 1e-12);
   return vb / Math.sqrt(cEff);
 }
@@ -244,10 +277,10 @@ export default function GalaxyPlotter() {
     let m = 0;
     for (let i = 1; i <= 50; i++) {
       const r = (i / 50) * xMax;
-      m = Math.max(m, coherenceC(r, galaxy.vflat, galaxy.rd, calib));
+      m = Math.max(m, coherenceC(r, galaxy, upsD, calib));
     }
     return m;
-  }, [galaxy, xMax, calib]);
+  }, [galaxy, xMax, upsD, calib]);
 
   // y-range covers the floored division curve, which runs ~1.8× the baryon line (2026-10-08)
   const yMax = Math.max(
@@ -311,8 +344,10 @@ export default function GalaxyPlotter() {
           instead of narrating it: the solid violet curve is the density-keyed C<sub>&#x03C1;</sub> evaluated on a disk
           density profile and wired by <em>division</em>, the way the ledger&apos;s tests wire their C (g = g<sub>bar</sub>/C, with C floored at
           &Omega;<sub>m</sub>; TEST-09/TEST-10 themselves divide by a different, acceleration-keyed C<sub>a</sub> &mdash; see the
-          two-C&apos;s box by the chart). C never gets anywhere near its knee, so the curve is a flat 3.17&times; boost in gravity (1.78&times; in speed) of the
-          baryon line: wrong shape, Newtonian decline at the edge. The light-violet dashed curve is the same C added
+          two-C&apos;s box by the chart). At the default calibration (the archive&apos;s 0.028&middot;V<sub>flat</sub><sup>0.5</sup>) the bright
+          centres of large discs cross the knee, so the curve is near-Newtonian there and rises to the 3.17&times; ceiling in the faint
+          outskirts: wrong shape, still falling at the edge. Under the units-hybrid 0.029&middot;V<sub>flat</sub>&sup2; setting C never gets
+          near its knee, and the curve is the baryon line with a flat 3.17&times; boost in gravity (1.78&times; in speed). The light-violet dashed curve is the same C added
           in quadrature, which hugs the baryon line (until 2026-10-08 that inert wiring was the only one drawn; a
           graduate-physics visitor pointed out it shows the milder of two opposite failures). The old hand-tuned
           stand-in is now hidden behind a checkbox. The green curve is MOND&apos;s real simple-&#x03BD; interpolating function on SPARC&apos;s measured gas, disc and bulge components (since 2026-11-10; before that, a toy disc whose mass came from V<sub>flat</sub>) &mdash; nothing is fitted to the dots.{' '}
@@ -333,7 +368,8 @@ export default function GalaxyPlotter() {
           gravity via density-dependent coupling. Only the first two fit the observations: dark-matter
           halos and MOND both reproduce these curves (MOND with one global constant, a&#x2080;, for every
           galaxy). The framework&apos;s own equation, as written (with the registered tests&apos; &#x03A9;<sub>m</sub> floor), does not &mdash; wired by division (solid violet below) it is
-          the visible-matter line scaled up by a constant, still falling where the dots stay flat; wired in quadrature (dashed light
+          the visible-matter line, boosted little in bright centres and by at most 3.17&times; in the outskirts, still falling where the dots stay flat
+          (under the units-hybrid setting the boost is a constant 3.17&times;); wired in quadrature (dashed light
           violet) it stays on the visible-matter line. What matched MOND was either the hand-drawn amber stand-in or,
           in the archive&apos;s SPARC work, a fit that re-tunes &#x03C1;<sub>crit</sub> for each galaxy
           (one extra free parameter per galaxy). The violet curve is not a fit of any kind: nothing in it
@@ -358,7 +394,9 @@ export default function GalaxyPlotter() {
           <br />&bull; <strong>&gamma;&nbsp;=&nbsp;2</strong> &mdash; the pin refuted on the RAR at
           &Delta;BIC&nbsp;=&nbsp;+184 (Υ frozen; +46 with Υ free per law) &mdash; strictly, that fit used the acceleration-keyed C<sub>g</sub> (keyed on g<sub>obs</sub>, no floor; not the floored C<sub>a</sub> of TEST-09/10); the density-keyed
           C<sub>&#x03C1;</sub> drawn here lost its own head-to-head by &Delta;BIC&nbsp;+2843 even with &gamma; free (<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>).
-          <br />&bull; <strong>&rho;<sub>crit</sub>&nbsp;=&nbsp;0.029&middot;V<sub>flat</sub><sup>+2</sup></strong> (M<sub>&#x2609;</sub>/pc&sup3; with V in km/s)
+          <br />&bull; <strong>&rho;<sub>crit</sub> = 0.028&middot;V<sub>flat</sub><sup>0.5</sup></strong> (default since 2026-11-14; the archive&apos;s own form,
+          &Delta;BIC +8,404 on SPARC, velocity exponent +0.5 excluded at ~3.5&sigma;) <strong>or 0.029&middot;V<sub>flat</sub><sup>+2</sup></strong> (the units-hybrid setting,
+          the archive&apos;s coefficient on the Jeans exponent; see <Link href="/critical-density#knee-laws-in-use" style={{ color: 'var(--color-accent-blue)' }}>knee laws in use</Link>)
           &mdash; an a&#x2080;-tracking knee would need &rho;<sub>crit</sub>&nbsp;&propto;&nbsp;V<sup>&minus;2</sup>, and the knee
           measured on SPARC has no velocity dependence at all (V<sup>&minus;0.16 &plusmn; 0.19</sup>, median 0.161&nbsp;M<sub>&#x2609;</sub>/pc&sup3;), so
           V<sup>+2</sup> is a <em>wrong exponent</em>, excluded at ~11&sigma; at galaxy level (<Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>).
@@ -378,13 +416,14 @@ export default function GalaxyPlotter() {
           floor it would be the ~30&times; curve. So the plot shows both failure modes: inert (quadrature), and a uniform boost
           with the wrong shape (floored division).
           <br />So the tool is best read not as &ldquo;the theory&apos;s prediction&rdquo; but as a
-          <strong> working demonstration that the equation never switches on at its published calibration</strong>: C(&rho;)
-          stays below 0.01 on every shipped disc (0.0004 on UGC 128 up to 0.008 on the compact NGC 2403), so what you see is decided entirely by the wiring (no boost; a flat 3.17&times; in gravity, 1.78&times; in speed; or about 1000&times; in gravity, about 30&times; in speed, unfloored). The
+          <strong> working demonstration of how the equation fails at each calibration</strong>. Under the units-hybrid setting C(&rho;)
+          stays below 0.01 on every shipped disc (below 0.004 on SPARC surface densities), so what you see is decided entirely by the wiring (no boost; a flat 3.17&times; in gravity, 1.78&times; in speed; or about 1000&times; in gravity, about 30&times; in speed, unfloored). The
           legend used to read &ldquo;max C on this disk: 0.001 &mdash; the equation never switches on here: this galaxy is too
           spread out&rdquo; under the quadrature curve, and &ldquo;inert by construction&rdquo; before 2026-09-25; &ldquo;inert&rdquo;
           described the display wiring, not the tested law (corrected 2026-10-08). At V<sub>flat</sub>&nbsp;=&nbsp;47&nbsp;km/s that calibration puts the knee at
           64&nbsp;M<sub>&#x2609;</sub>/pc&sup3; against disc densities of order 10<sup>&minus;2</sup>: no galaxy in the
-          dropdown can lift off the Newtonian baseline, for any of them.
+          dropdown can lift off the Newtonian baseline, for any of them. At the default 0.028&middot;V<sup>0.5</sup> knee the SPARC midplane
+          density crosses the knee in the centres of NGC 2403, NGC 3198 and NGC 7331 (x up to 2.6&ndash;3.9 at &Upsilon;<sub>disk</sub> = 0.5), and stays below it on DDO 154 (0.13) and UGC 128 (0.22).
           <br /><strong>One more cross-link the plot owes you:</strong> the green MOND reference uses the simple-&nu;
           function of Famaey &amp; Binney (2005) &mdash; not the RAR fit function the &Delta;BIC table on Galaxy Rotation uses (McGaugh&apos;s &nu;); the two are different functions and are not interchangeable toward the Solar System (corrected 2026-10-10; this note previously called the simple function &ldquo;the RAR-preferred choice&rdquo;) &mdash; and <em>also</em> a function TEST-25&apos;s instrument finds Cassini
           excluding, at +15.3&sigma; to +20.1&sigma; (the +17.95&sigma; quoted until 2026-11-05 is the framework&apos;s compander at the SPARC fit, not the simple function; see below). The benchmark drawn here is a function this site refutes in the Solar System;
@@ -521,8 +560,8 @@ export default function GalaxyPlotter() {
           for a page badged Reparametrization, the formulas are the argument — so here they are, exactly as coded:
           <div style={{ fontFamily: 'monospace', fontSize: '0.8rem', margin: '0.5rem 0', padding: '0.5rem 0.75rem', background: 'rgba(0,0,0,0.25)', borderRadius: '4px', overflowX: 'auto' }}>
             Gray &ldquo;Newtonian&rdquo; (the base of every other curve), since 2026-11-10: v_b&sup2;(r) = V_gas&middot;|V_gas| + &Upsilon;_d&middot;V_disk&sup2; + 1.4&Upsilon;_d&middot;V_bul&sup2; from SPARC&apos;s per-radius mass model (Lelli, McGaugh &amp; Schombert 2016, MassModels table; V_gas carries the 1.33 helium factor; V_disk, V_bul tabulated at M/L = 1), linear in v&sup2; between tabulated radii, solid-body inside the first, Keplerian beyond the last; &Upsilon;_d from the slider (default 0.5, SPARC&apos;s convention; bulge 0.7 at that value)<br />
-            Toy mass model, now used only for the density &#x03C1;(r) that feeds C<sub>&#x03C1;</sub> and for the amber stand-in: M_b = 47&middot;V_flat&#x2074; M&#x2609; (empirical BTFR, McGaugh 2011), exponential disk with each galaxy&apos;s observed scale length R_d, h = 0.3 kpc. Until 2026-11-10 the gray line was this toy disc&apos;s Freeman (1970) curve, v_b&sup2;(r) = (2GM_disk/R_d)&middot;y&sup2;[I&#x2080;(y)K&#x2080;(y) &minus; I&#x2081;(y)K&#x2081;(y)], y = r/2R_d, with no gas component<br />
-            Density-keyed coherence (both violet lines): C<sub>&#x03C1;</sub>(r) = tanh(2&middot;ln(&#x03C1;(r)/&#x03C1;<sub>crit</sub>+1)), &#x03C1;(r) = &#x03A3;(r)/2h with &#x03A3;(r) = (M_b/2&pi;R_d&sup2;)&middot;e<sup>&minus;r/R_d</sup> (M&#x2609;/pc&sup2;, R_d in pc), &#x03C1;<sub>crit</sub> = 0.028&middot;V_flat<sup>0.5</sup> (default since 2026-11-14) or 0.029&middot;V_flat&sup2; (units hybrid, selectable; the numbers in the rest of this line are for it) (&#x03A3;(r) printed 2026-11-04 so a reader can reproduce &#x03C1; and C<sub>&#x03C1;</sub>; C<sub>&#x03C1;</sub> stays &lt; 10<sup>&minus;3</sup> on every disc here, so the solid violet line is the &Omega;<sub>m</sub> floor, a constant 1/&radic;&Omega;<sub>m</sub> = 1.78&times; stretch in v, and tests &Omega;<sub>m</sub>, not the tanh)<br />
+            Toy mass model, now used only for the amber stand-in (until 2026-11-17 it also supplied the density &#x03C1;(r) that feeds C<sub>&#x03C1;</sub>, so the violet curves mixed this mass model with SPARC&apos;s): M_b = 47&middot;V_flat&#x2074; M&#x2609; (empirical BTFR, McGaugh 2011), exponential disk with each galaxy&apos;s observed scale length R_d, h = 0.3 kpc. Until 2026-11-10 the gray line was this toy disc&apos;s Freeman (1970) curve, v_b&sup2;(r) = (2GM_disk/R_d)&middot;y&sup2;[I&#x2080;(y)K&#x2080;(y) &minus; I&#x2081;(y)K&#x2081;(y)], y = r/2R_d, with no gas component<br />
+            Density-keyed coherence (both violet lines): C<sub>&#x03C1;</sub>(r) = tanh(2&middot;ln(&#x03C1;(r)/&#x03C1;<sub>crit</sub>+1)), &#x03C1;(r) = &#x03A3;(r)/2h, h = 0.3 kpc, with &#x03A3;(r) = &Upsilon;_d&middot;SB_disk + 1.4&Upsilon;_d&middot;SB_bul + &#x03A3;_gas from SPARC at each tabulated radius (&#x03A3;_gas from V_gas, the convention of the fitted density-law runs; since 2026-11-17; before then &#x03A3;(r) = (M_b/2&pi;R_d&sup2;)&middot;e<sup>&minus;r/R_d</sup> from the toy disc), &#x03C1;<sub>crit</sub> = 0.028&middot;V_flat<sup>0.5</sup> (default since 2026-11-14) or 0.029&middot;V_flat&sup2; (units hybrid, selectable; the numbers in the rest of this line are for it) (&#x03A3;(r) printed 2026-11-04 so a reader can reproduce &#x03C1; and C<sub>&#x03C1;</sub>; C<sub>&#x03C1;</sub> stays &lt; 10<sup>&minus;3</sup> on every disc here, so the solid violet line is the &Omega;<sub>m</sub> floor, a constant 1/&radic;&Omega;<sub>m</sub> = 1.78&times; stretch in v, and tests &Omega;<sub>m</sub>, not the tanh)<br />
             Violet SOLID, division reading (the wiring the ledger&apos;s tests use; failed): g = g_bar/C<sub>f</sub>, i.e. v(r) = v_b/&radic;C<sub>f</sub>, C<sub>f</sub> = &Omega;<sub>m</sub> + (1&minus;&Omega;<sub>m</sub>)&middot;C<sub>&#x03C1;</sub>, &Omega;<sub>m</sub> = 0.315 (boost &le; 1/&Omega;<sub>m</sub> = 3.17 in g)<br />
             Light-violet DASHED, quadrature reading (display branch, not a tested law; inert at C<sub>&#x03C1;</sub> &asymp; 0.001): v(r) = &radic;(v_b&sup2; + [V_flat&middot;C<sub>&#x03C1;</sub>]&sup2;)<br />
             Amber DOTTED (old illustrative stand-in &mdash; what this page showed before 2026-07-08, kept for comparison): v(r) = &radic;(v_toy&sup2; + [V_flat&middot;tanh(0.4&middot;r/2.5)]&sup2;), v_toy = 0.6&middot;V_flat&middot;&radic;(1&minus;e^(&minus;r/2.5))<br />
@@ -602,9 +641,10 @@ export default function GalaxyPlotter() {
 
         <div style={{ background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', padding: '0.7rem 0.9rem', marginBottom: '1rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: '#a78bfa' }}>What to notice in the chart below:</strong> both violet lines are the
-          framework&apos;s density law with &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;, wired two ways. The solid
-          (division) line is the dashed gray Newtonian line scaled up by a constant, so it keeps the Newtonian fall-off; the dashed
-          (quadrature) line barely moves off the gray line. The green MOND line does follow the dots. That gap between violet and
+          framework&apos;s density law (at the default knee, the archive&apos;s 0.028&middot;V<sub>flat</sub><sup>0.5</sup>), wired two ways. The solid
+          (division) line sits near the dashed gray Newtonian line where the disc is bright and dense, and rises toward 3.17&times; the gray line in gravity
+          where it is faint, so it still falls at the edge; the dashed (quadrature) line barely moves off the gray line. Under the
+          units-hybrid setting the solid line is the gray line scaled up by a constant. The green MOND line does follow the dots. That gap between violet and
           green is the failure this tool shows.
           <br /><strong>Two assumptions behind that picture:</strong>
           <ul style={{ margin: '0.35rem 0 0', paddingLeft: '1.2rem' }}>
@@ -671,7 +711,7 @@ export default function GalaxyPlotter() {
             : <>In plain words: this setting puts the switch hundreds of times above any disc&apos;s density, so C<sub>&rho;</sub> stays near 0 and the violet line is just the 1.78&times; ceiling at every radius. It shows the ceiling failing, not the shape of the density law. The 0.029 belongs to the archive&apos;s V<sup>0.5</sup> law; putting it on V&sup2; was a units slip (<Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>).</>}
           <details style={{ marginTop: '0.3rem', fontSize: '0.8rem' }}>
             <summary style={{ cursor: 'pointer' }}>Detail for physicists</summary>
-            Both settings keep &gamma; = 2, the &Omega;<sub>m</sub> floor and division wiring, and the toy disc density described in the disclosure box (M<sub>b</sub> = 47&middot;V<sub>flat</sub>&#x2074;, h = 0.3 kpc), not SPARC surface densities.
+            Both settings keep &gamma; = 2, the &Omega;<sub>m</sub> floor and division wiring, and, since 2026-11-17, SPARC&apos;s own surface densities (&Upsilon;<sub>d</sub>&middot;SB<sub>disk</sub> + bulge + &#x03A3;<sub>gas</sub>, h = 0.3 kpc), the convention of the 122-galaxy fits quoted next. Until then the density was a BTFR toy disc (M<sub>b</sub> = 47&middot;V<sub>flat</sub>&#x2074;).
             The knee moves by &times;{(0.029 * galaxy.vflat * galaxy.vflat / (0.028 * Math.sqrt(galaxy.vflat))).toFixed(0)} between them for this galaxy. On the 122-galaxy SPARC loader (explorer 2026-11-13,
             {' '}<code style={{ fontSize: '0.76rem' }}>explorer/findings/scripts/knee_crossing_at_each_calibration.py</code>): at 0.029&middot;V&sup2; no galaxy has a point above the knee (max x = 0.018);
             at 0.028&middot;V<sup>0.5</sup>, 45 of 122 do (12.2% of points); at the Jeans-consistent 4.6&times;10<sup>&minus;5</sup>&middot;V&sup2;, 22 of 122. The density law is excluded at every
@@ -692,7 +732,7 @@ export default function GalaxyPlotter() {
             {' '}&mdash; taken from SPARC for this galaxy and fed <em>into</em> the curves, not predicted by them. <strong>In plain words:</strong> both violet lines use this galaxy&apos;s measured speed to set themselves up (the green MOND line no longer does, since 2026-11-10), so where they land at large radius is partly the answer fed back in; the green line is also 7% low by its normalisation.
             <details style={{ marginTop: '0.3rem' }}><summary style={{ cursor: 'pointer' }}>Detail for physicists (how V<sub>flat</sub> enters each curve, units, the 47 vs 62.8)</summary>
             It enters both violet curves through &#x03C1;<sub>crit</sub> (0.028&middot;V<sub>flat</sub><sup>0.5</sup> by default, here {(0.028 * Math.sqrt(galaxy.vflat)).toFixed(2)} M<sub>&#x2609;</sub>/pc&sup3;; or the units-hybrid 0.029&middot;V<sub>flat</sub>&sup2;,
-            here {(0.029 * galaxy.vflat * galaxy.vflat).toFixed(0)} M<sub>&#x2609;</sub>/pc&sup3;), through the toy disc density that feeds C<sub>&#x03C1;</sub> (M<sub>b</sub> = 47&middot;V<sub>flat</sub>&#x2074;),
+            here {(0.029 * galaxy.vflat * galaxy.vflat).toFixed(0)} M<sub>&#x2609;</sub>/pc&sup3;), through the toy disc density that fed C<sub>&#x03C1;</sub> until 2026-11-17 (M<sub>b</sub> = 47&middot;V<sub>flat</sub>&#x2074;; now SPARC surface densities, which do not use V<sub>flat</sub>),
             and the dashed quadrature curve a third time through its V<sub>flat</sub>&middot;C boost term. The gray baryon line no longer uses it (since 2026-11-10). <strong>A curve built from V<sub>flat</sub> cannot be a prediction of
             V<sub>flat</sub>.</strong> Units: the code compares &#x03C1;<sub>crit</sub> with a disk density in
             M<sub>&#x2609;</sub>/pc&sup3; with V<sub>flat</sub> in km/s, so the 0.029 carries units of
@@ -779,7 +819,7 @@ export default function GalaxyPlotter() {
                 the boost in gravity is the same 3.17&times; at every radius, so in speed the curve is the gray line scaled up by &radic;3.17 &asymp; 1.78&times;. It overshoots the inner points and
                 still falls at the edge, where the dots stay flat &mdash; that is the failure. This holds on every galaxy in the menu:
                 with &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;, C<sub>&#x03C1;</sub> stays below 0.01 everywhere on
-                every shipped disc (0.0004 on UGC 128 up to 0.008 on the compact NGC 2403; &ldquo;about 0.001&rdquo; before the 2026-10-26 switch to real SPARC rows), so the violet curve is the floor&apos;s constant boost, never the tanh&apos;s S-shape. In plain terms: on these discs the violet curve is the gray line times 1/&radic;&Omega;<sub>m</sub>, and &gamma; has no effect on it at all. What keeps the knee out of the discs is the calibration A = 0.029 in &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2;. That A is about 600&times; larger than its own Jeans formula gives (4.6&times;10&#x207B;&#x2075;; <a href="/parameter-derivations" style={{ color: '#c4b5fd' }}>Parameter Derivations</a>). With the formula&apos;s value, &#x03C1;<sub>crit</sub> &asymp; 0.8 M&#x2609;/pc&sup3; at 130 km/s, disc midplanes sit at about a tenth of the knee, and the curve&apos;s shape would start to matter (added 2026-11-02, graduate-physics simulated-visitor persona; the archive&apos;s own 0.028&middot;V<sup>0.5</sup> knee is drawn by default since 2026-11-14). The tool never
+                every shipped disc (below 0.004 on SPARC surface densities since 2026-11-17; 0.0004&ndash;0.008 on the toy disc before that, and &ldquo;about 0.001&rdquo; before the 2026-10-26 switch to real SPARC rows), so the violet curve is the floor&apos;s constant boost, never the tanh&apos;s S-shape. In plain terms: on these discs the violet curve is the gray line times 1/&radic;&Omega;<sub>m</sub>, and &gamma; has no effect on it at all. What keeps the knee out of the discs is the calibration A = 0.029 in &#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2;. That A is about 600&times; larger than its own Jeans formula gives (4.6&times;10&#x207B;&#x2075;; <a href="/parameter-derivations" style={{ color: '#c4b5fd' }}>Parameter Derivations</a>). With the formula&apos;s value, &#x03C1;<sub>crit</sub> &asymp; 0.8 M&#x2609;/pc&sup3; at 130 km/s, disc midplanes sit at about a tenth of the knee, and the curve&apos;s shape would start to matter (added 2026-11-02, graduate-physics simulated-visitor persona; the archive&apos;s own 0.028&middot;V<sup>0.5</sup> knee is drawn by default since 2026-11-14). The tool never
                 exercises the curve&apos;s shape on a real galaxy, and that is the actual reason it fails. The <strong style={{ color: '#c4b5fd' }}>light violet
                 dashed line</strong> (off by default; checkbox below) is the same C wired the other way (added on top), which does nothing at all. The two wirings fail in
                 opposite directions; without the floor, the division wiring would run up to {maxRawRatio.toFixed(0)}&times; above the gray line, far off the chart.</li>

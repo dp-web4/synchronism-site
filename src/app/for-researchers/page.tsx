@@ -89,7 +89,7 @@ export default function ForResearchers() {
                 <td style={{ padding: '0.3rem' }}>g<sub>obs</sub> = g<sub>bar</sub>/C, C evaluated at g<sub>bar</sub></td>
                 <td style={{ padding: '0.3rem' }}>None (the law is local in g)</td>
                 <td style={{ padding: '0.3rem' }}>Direct Newtonian-return tail: planetary perihelia (EPM2011)</td>
-                <td style={{ padding: '0.3rem' }}>Galaxy fits, TEST-09, TEST-10, the &gamma;&nbsp;=&nbsp;2 pin. Is MOND&apos;s simple &mu; at &gamma;&nbsp;=&nbsp;&frac12;. Perihelia exclude &gamma; &lt; 0.87 at 3&sigma; with SPARC&apos;s a<sub>0</sub>; a corner at &gamma; &asymp; 0.87&ndash;0.95, read on each system&apos;s internal acceleration, survives galaxy-level SPARC (~1.2&sigma;) and is disfavoured ~3&sigma; by globular clusters, conditional on the mass model; it is not a defined model until a rule says which bodies form the system. The one rule in print is Milgrom&apos;s 2011 frequency-by-frequency modified inertia (arXiv:1111.1611 &sect;3.1; exact for circular orbits), which he set aside as observationally excluded; under it this row&apos;s equation of motion is MOND as modified inertia with a &gamma;, and nearby open clusters (internal acceleration far below a<sub>0</sub> inside a Galactic field above it) test it: binary-cleaned dispersions sit near Newton, uncleaned ones on the no-EFE line, and the kill fixed in advance was not met (explorer 2026-11-11).</td>
+                <td style={{ padding: '0.3rem' }}>Galaxy fits, TEST-09, TEST-10, the &gamma;&nbsp;=&nbsp;2 pin. Is MOND&apos;s simple &mu; at &gamma;&nbsp;=&nbsp;&frac12;. Perihelia exclude &gamma; &lt; 0.87 at 3&sigma; with SPARC&apos;s a<sub>0</sub>; a corner at &gamma; &asymp; 0.87&ndash;0.95, read on each system&apos;s internal acceleration, survives galaxy-level SPARC (~1.2&sigma;) and is disfavoured ~3&sigma; by globular clusters, conditional on the mass model; it is not a defined model until a rule says which bodies form the system. The one rule in print is Milgrom&apos;s 2011 frequency-by-frequency modified inertia (arXiv:1111.1611 &sect;3.1; exact for circular orbits), which he set aside as observationally excluded; under it this row&apos;s equation of motion is MOND as modified inertia with a &gamma;, and nearby open clusters (internal acceleration far below a<sub>0</sub> inside a Galactic field above it) test it: binary-cleaned dispersions sit near Newton, uncleaned ones on the no-EFE line. The kill fixed in advance was z &ge; 3 in two of three clusters on the largest published &sigma;, binaries included, and it was not met (PREREG a1b3be0, explorer 2026-11-11). The DR4 key&apos;s per-cluster rule uses binary-cleaned values, with its 0.65 line chosen after the pre-DR4 values were seen. Four of six clusters sit below that line, including the Hyades at 0.30 of the prediction, 3.3&sigma; below it (explorer 2026-11-12). So the verdict depends on whether binaries are removed, and only the cleaned reading counts against the corner.</td>
               </tr>
               <tr style={{ borderBottom: '1px solid var(--color-dark-border)', verticalAlign: 'top' }}>
                 <td style={{ padding: '0.3rem' }}>Acceleration-keyed, modified Poisson</td>
@@ -250,6 +250,38 @@ export default function ForResearchers() {
           This page said &ldquo;0 tests currently discriminating&rdquo; until 2026-07-27, which booked the framework&apos;s two
           strongest empirical results as zero; the bolded line was reunified 2026-08-08.
         </details>
+        <div id="other-theories" style={{ fontSize: '0.88rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #10b981', paddingLeft: '0.75rem', margin: '0 0 1.25rem', scrollMarginTop: '5rem' }}>
+          <p style={{ margin: '0 0 0.4rem' }}>
+            <strong>Results about other people&apos;s theories (added 2026-11-17).</strong> The six artifacts below concern this framework&apos;s own branches.
+            The four results here do not depend on it at all, and they are the ones a MOND, wide-binary or modified-gravity researcher is most likely to use.
+            Each comes from one AI session. None is peer reviewed, and the authors whose work each bears on have not been contacted.
+          </p>
+          <ol style={{ margin: 0, paddingLeft: '1.2rem' }}>
+            <li><strong>Wide binaries: the hidden-companion rate is the crux.</strong> The question is how often a star has a physical companion that
+              survives the RUWE, CMD, IPD and RV cuts. At a rate of 0.3 per star only about 7% of the 36-system sample is contaminated,
+              yet the mixture estimate of the boost moves from 1.87 to about 1.2 [1.0, 1.6]. To explain the near-escape systems with Newton
+              needs 0.45&ndash;0.5, which is the field value for solar-type stars (Moe &amp; Di Stefano 2017) but 3&ndash;5&times; what the 2D parent
+              implies under Chae&apos;s eccentricity prior. That turns a deprojection dispute into a measurable number (RV monitoring, DR4 epoch
+              astrometry). Conditional on one mock pipeline (explorer 2026-11-09; <Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>Wide Binaries</Link>).</li>
+            <li><strong>Open clusters test modified inertia without an external field effect.</strong> This is Milgrom&apos;s 2011 frequency-by-frequency
+              rule, read with an internal acceleration. Binary-cleaned dispersions sit near Newton: the Hyades at 0.21 &plusmn; 0.05 km/s are 0.91 of Newton,
+              0.30 of the prediction and 3.3&sigma; below it with a 20% estimator systematic, and the Pleiades, M67 and NGC 188 are at 0.34&ndash;0.63.
+              Conditional on the binary cleaning; uncleaned Gaia dispersions sit on the prediction (explorer 2026-11-11/12).</li>
+            <li><strong>Cassini excludes every tanh-log (compander) interpolating function at SPARC&apos;s a&#x2080;.</strong> The family&apos;s transition is never
+              narrower than 1.17 dex, so it cannot reach the sharp MOND functions that pass (&delta; = 6 at &Upsilon;<sub>d</sub> &asymp; 0.54 without bulges).
+              It fails at 14.5&ndash;19.3&sigma; for every &gamma; from 0.3 to 3 with M/L pinned. With M/L free it needs &Upsilon;<sub>d</sub> &asymp; 1.2&ndash;1.4,
+              so 36&ndash;42% of discs are over-maximal. This holds for any theory using that family (<Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>).</li>
+            <li><strong>Dwarf spheroidals exclude saturating-boost gravity up to B<sub>max</sub> &asymp; 14.7.</strong> In any theory whose boost over Newton saturates
+              at B<sub>max</sub>, Draco (M/L = 4, after a six-system trials correction) and Crater II exclude caps below about 14.7, with no light-deflection rule
+              and no gas census needed. The escapes are M/L &ge; 8&ndash;12, or a measured &sigma; inflated by tides by &ge; 1.3&times;. Draco is a shared failure with
+              MOND+EFE; Crater II is where MOND&apos;s a-priori prediction held (<Link href="/tier-1-existing#bounded-boost-joint" style={{ color: 'var(--color-accent-blue)' }}>bounded-boost joint statement</Link>).</li>
+          </ol>
+          <p style={{ margin: '0.4rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+            The lunar-laser-ranging bound on any density-dependent G (item 6 below) also belongs to this list. Whether the program should pursue these
+            directly rather than through this framework&apos;s branches is a question routed to the project lead (proposal 2026-11-17). A simulated-visitor
+            researcher persona raised it (2026-11-17): &ldquo;the site&apos;s external value has moved.&rdquo;
+          </p>
+        </div>
         <div id="forward-data" style={{ marginBottom: '1.25rem', fontSize: '0.85rem' }}>
           <strong>What upcoming data can still move</strong>. None of these can confirm a novel prediction. Each can only
           refute a reading or leave it standing.

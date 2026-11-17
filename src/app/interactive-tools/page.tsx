@@ -36,14 +36,14 @@ const coreTools = [
   {
     title: 'Galaxy Curve Plotter',
     href: '/galaxy-plotter',
-    desc: 'Pick a real galaxy and see the dark-matter problem: the gray line (what visible matter alone predicts) sags below the measured dots. The green line (MOND, an existing theory) follows the dots. The violet line (this framework\'s equation as written) does not: it sags like the gray one. The page explains why, and the wiring details sit on the tool page.',
+    desc: 'Pick a real galaxy and see the dark-matter problem: the gray line (what visible matter alone predicts) sags below the measured dots. The green line (MOND, an existing theory) follows the dots. The violet line (this framework\'s equation as written) does not: it stays near the gray line in bright centres and still falls at the edge. The page explains why, and the wiring details sit on the tool page.',
     level: 'Beginner',
     epistemic: 'core' as EpistemicStatus,
     state: 'Artifact Lesson',
     pageBadges: ['failed', 'reparametrization'] as ValidationStatus[],
     // 2026-10-12: two bare badges ran together with no indication which applied to what; 2026-10-22 the
     // long per-badge labels moved into badgeNote so each badge is one term (tech-writer persona).
-    badgeNote: 'Failed = the published density law (γ = 2, ρ_crit = 0.029·V_flat²) with division wiring g = g_bar/C. Reparametrization = the hand-drawn stand-in, whose fitted γ ≈ 0.49 is MOND.',
+    badgeNote: 'Failed = the density law at the archive\'s own knee (γ = 2, ρ_crit = 0.028·V_flat^0.5; the units-hybrid 0.029·V_flat² is selectable) with division wiring g = g_bar/C. Reparametrization = the hand-drawn stand-in, whose fitted γ ≈ 0.49 is MOND.',
   },
   {
     title: 'γ Calculator',

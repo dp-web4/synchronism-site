@@ -52,7 +52,7 @@ export default function PhaseBoundaryVisualizer() {
       {/* Visible title renamed 2026-09-15; route renamed 2026-10-23 from /phase-boundary-visualizer (old URL redirects) */}
       <h1>Crossover Regime Visualizer</h1>
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.35rem' }}>
-        <ValidationBadge status="audited-negative" label="γ = 2/√N_corr — sharpness sign inverted" />
+        <ValidationBadge status="audited-negative" label="γ = 2/√N_corr — ranks the most collective systems flattest (sign inverted)" />
       </div>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginTop: '0.35rem' }}>
         Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index Kind and Status
@@ -66,6 +66,9 @@ export default function PhaseBoundaryVisualizer() {
         &#x03B3;, not phases (full naming note below).
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+        <strong>What is plotted:</strong> C(&#x03C1;) = tanh(&#x03B3;&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1)), the framework&apos;s proposed measure of how
+        collectively a system behaves (0 to 1) as a function of its density &#x03C1;, with &#x03C1;<sub>crit</sub> a reference density (see{' '}
+        <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Anatomy</Link>).{' '}
         <strong>How to use it:</strong> one slider, labelled &#x03B3; (it sets how early the curve rises; it was first proposed as the sharpness of the S-curve, which it is not), runs from 0 to 4 in steps
         of 0.01 and starts at 1.0. Drag it and the marker moves across three &#x03B3; ranges (below 0.6, 0.6&ndash;1.4, above
         1.4); the card under the bar describes the range you are in and says where the formula gets real physics backwards.

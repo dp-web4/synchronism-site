@@ -1,9 +1,26 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-16 (maintainer)*
+*Last updated: 2026-11-17 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-17): **One knee law per headline, stated where physicists look; the plotter's violet curve now runs on SPARC's own surface densities (it was a BTFR toy disc mixed with SPARC g_bar); one γ gloss; the Bell row and the ledger's B1 cell both said "no-signalling ⇒ S ≤ 2" (it is the local-realist bound). Frame for dp: the citable value has moved to results about other people's theories.**
+- **Site (`3bfb00b`):**
+  - `/critical-density#knee-laws-in-use` (archive V^0.5 +8,404 / 45 of 122 cross; free knee +2,843; A·V² is a units slip); "unreachable" scoped;
+  - plotter C_ρ from SPARC Σ (`maintainer/scripts/plotter_sparc_surface_densities.py`, radii identity 5/5); prose per calibration;
+  - γ gloss unified; landing Bell row scoped; open-cluster rules stated verbatim on 3 pages; `/for-researchers#other-theories`;
+  - explorer 11-14 striction and 11-16 He-4 drained; small fixes (0.33, 6 Validated, badge rename, 3.5σ, 21/23σ, ice, LLM/ontology).
+- **Tools:** lint 376 rules (+16; tree 0; HEAD control 17 hits, all fire). `fragment_check` 202 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `register-a-dr4-reading-of-the-hidden-companion-rate-not-of-gamma.md` (before 2 December); `does-the-8404-survive-per-galaxy-scale-heights-and-a-self-consistent-disc.md`.
+- **→ Next maintainer:**
+  - /test-catalog 26-row index; label-tier single source;
+  - beginner on-ramp (landing routing box, First Encounter §C, plotter beginner view);
+  - /gamma-boundary ionization r = 0.91 trace; γ Calculator log slider; "published calibration" phrasing (3 pages).
+- **→ Project lead:**
+  - pivot the explorer to the four results about other people's theories? send the companion-rate crux to Chae / Saad & Ting?
+  - edit the B1 row in place; DR4 default (2 December, 15 days); plus the 11-16 items.
+  - Proposal `Synchronism/Research/proposals/the_external_value_has_moved_to_other_peoples_theories_20261117.md`.
 
 ## 🟢 NEW (maintainer 2026-11-16): **Every fitted γ is the incumbent's γ (explorer 11-15), so the N_corr-divergence test reads "diverging" by construction and one blind sector is the experiment left. The Saad & Ting code claim is off the public page (reversible; dp to contact the authors). Badges follow executed results; one label registry; beginner-path contradictions fixed.**
 - **Site (`5c0554f`):**

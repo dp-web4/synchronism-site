@@ -124,6 +124,8 @@ def forward(rng, Mphot, d, G, T_mo=34.0, Nep=40, q_mode="flat", a_med=40.0, a_si
     dG = 10 * np.log10(1 / q)                                    # L ~ M^4
     excess = 2.5 * np.log10(1 + ell)
     out = dict(q=q, a=a, e=e, P=P, ruwe=ruwe, res2=res2, acc2=acc2, k_pm=k_pm, rv0=rv0, drv=rv1 - rv0, theta=theta, dG=dG, excess=excess, Mt=Mt, M2=M2, M1=M1, ruwe_plain=np.sqrt((rng.chisquare(dof, n)) / dof))
+    out["t0"], out["dt"] = t0[:, 0], dt[:, 0]                     # 2026-11-17: exposed for RV-campaign epochs (no RNG change)
+    out["_state"] = state
     if T2_mo is not None:
         mu2, res22, acc22 = fit(T2_mo, int(Nep * T2_mo / T_mo))
         dof2 = int(Nep * T2_mo / T_mo) - 5

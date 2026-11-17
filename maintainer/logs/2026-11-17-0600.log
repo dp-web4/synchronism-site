@@ -1,0 +1,35 @@
+Starting Synchronism Maintainer Session at Tue Nov 17 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+I fixed the high- and medium-severity items from today's visitor log, wrote a proposal to you, and pushed everything. The build and both checking tools pass. I haven't looked at the changed pages in a browser.
+
+**Research direction (needs your decision).** The four visitor passes found no real physics errors in current claims; every number they recomputed checked out apart from rounding slips. The researcher pass made a point I agree with. The framework's own open questions are now answered, and the results an outside group could use are about other people's theories:
+- **Wide binaries:** how often stars hide a close companion is the number the dispute turns on. Newton needs a rate of about 0.45–0.5 per star; the current samples imply about 0.3.
+- **Open clusters:** with binaries removed, their internal speeds sit near Newton and well below what modified inertia without an external-field effect predicts.
+- **Cassini:** the Solar System measurement excludes the whole tanh-log family of interpolating functions.
+- **Dwarf galaxies:** Draco and Crater II exclude any theory whose extra gravity levels off below about 14.7× Newton.
+
+I wrote this up as a proposal in the research repo. It asks whether the explorer should pursue these directly, and whether the companion-rate result should go to Chae's group and to Saad & Ting. That would be outward-facing, so it's your call. Gaia DR4 lands on 2 December, 15 days out.
+
+**Site changes:**
+- **Which knee law is the framework.** /critical-density now opens with the three density laws in use and how each loses:
+  - the archive's own 0.028·V^0.5 (ΔBIC +8,404; 45 of 122 galaxies cross it);
+  - one freely fitted knee (+2,843);
+  - 0.029·V², which is a units slip.
+
+  Its "the knee is unreachable" claim now says it holds for only one reading of the V² law. The same correction went to four other pages.
+- **Galaxy plotter.** The violet curve was dividing SPARC's measured gravity by a coherence value computed from a different, made-up disc. It now uses SPARC's own surface densities, the same convention as the published fits. I checked that the radii match the plotter's existing rows for all five galaxies, and that the crossing values the page prints match a hand calculation.
+- **γ:** the glossary, Crossover Visualizer, Coherence Explorer and Core Idea now all say γ sets how early the curve rises and is not a sharpness.
+- **Landing Bell row:** it said any construction that doesn't signal stays at S ≤ 2. That's false: quantum mechanics doesn't signal and reaches 2√2. It now says S ≤ 2 holds for the three constructions built here.
+- **Other fixes:**
+  - the two open-cluster test rules are now stated word for word on all three pages that cite them;
+  - a "Results about other people's theories" list on /for-researchers;
+  - the two overdue explorer findings, which were the vertical-force numbers (deferred three sessions) and the liquid-helium test;
+  - about a dozen small fixes, including the 0.33→0.60 caption, the "6 Validated" count, the badge rename in visible text, two σ conventions, the ice-cube analogy, and glossary entries for LLM and ontology.
+- **Lint:** 16 new rules block the retired wordings. They find nothing on the edited pages, and every one of them fires on the previous version.
+
+**Research repo:** a new block in `PREDICTIONS.md` notes that the B1 row itself makes the same Bell mistake. I didn't edit the row, because ledger row edits need your approval.
+
+**Left for the next session:** a full 26-test index on /test-catalog, a simpler entry path for beginners, and tracing a /gamma-boundary row (r = 0.91) that should equal 1 if it uses the stated proxy.
+
+**Commits:** site `3bfb00b` and `c637af9`; research repo `5d2d684c`. The session log is in `maintainer/logs/2026-11-17.md`.

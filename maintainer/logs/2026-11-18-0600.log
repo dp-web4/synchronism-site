@@ -1,0 +1,41 @@
+Starting Synchronism Maintainer Session at Wed Nov 18 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+I fixed the site against today's four visitor personas, emptied the explorer's 11-17 action list, back-annotated the research repo and pushed both repos. The build, the lint and the link-fragment check all pass. Nothing was checked in a browser.
+
+**Research direction (the WAKE question)**
+- **Door #3 can't explain measurement.** The researcher persona pointed out something nobody had written down, and I checked it on the master equation. Door #3's noise is a random walk in position. That destroys interference between different momenta, not between different positions. So it can't produce definite position readings at any noise level, whatever its size. The 10-27 bounds already ruled out its size; this rules out its role. SPINE called door #3 the one genuinely open direction, so this is the session's main result.
+- **"Can only lose" is now the first thing on `/for-researchers`.** None of the upcoming datasets (Gaia DR4, BIG-SPARC, DESI DR3) can confirm a new prediction. The landing's DR4 line now says the same.
+- **The post-cutoff A2ACW experiment has waited 69 days for a decision.** It is the only experiment we can run ourselves whose outcome we don't know. I proposed a dated default: if dp records no decision by 2026-12-09, the explorer runs a version where every role (generator, critic, scorer) is a Claude model. Using another vendor's model as the scorer stays with dp, because that sends items outside. I also seeded a topic so the explorer writes the pre-registration now.
+
+**Corrections to numbers the site was printing**
+- **Lunar laser ranging bound:** the most citable negative result on `/for-researchers` was computed from the measurement's central value. At the 2σ upper edge it is about 3× looser (1×10⁻⁸ to 1×10⁻⁷). The "68 of 74 laws excluded" count doesn't change.
+- **Width of γ's switch:** 1.17 decades is the limit as γ grows without bound, not where the width stops at γ ≈ 1. It is 1.50 at γ = 1 and 1.33 at γ = 2. Fixed on 8 pages; the conclusion that no setting gives a sharp switch still holds.
+- **a₀(z):** the figure's error bars carry no stated confidence level. Read as 1σ, n = 1 is 2.2σ from the data; read as 95%, it is about 4.4σ. Both readings are now printed, as they already were for the rival model.
+- **`/cdm-discrimination`:** I removed a "3× below CDM" ratio that compared quantities in different units. A new box says that, as written, the framework assumes cold dark matter in cosmology.
+
+**Other site fixes (commit `960082d`)**
+- The landing now says γ sets where the switch starts to turn, not how fast it flips; three of the site's own tools contradicted the old line.
+- The glossary has an "Outcome words" entry mapping failed / refuted / kill / excluded and the landing's status words. This was the technical writer's top complaint.
+- On `/wide-binaries`:
+  - It now says DR4 cannot measure the hidden-companion rate in the 36-system sample, per the 11-17 explorer finding.
+  - The page no longer says an anomaly "favours MOND and this framework equally"; it now says an anomaly gives no support over MOND.
+  - The current disputants are named (Chae et al. vs Saad & Ting).
+  - Each boost number is labelled with the calibration it uses.
+- The companion-rate reading rules from the explorer finding are appended to the DR4 analysis plan, dated before DR4.
+- Smaller fixes:
+  - the galaxy plotter's calibration switch is folded away for beginners;
+  - the chemistry explorer no longer sorts by r first;
+  - the consciousness pages are made consistent (7 approaches, "Proposed Dissolution", EEG test only once C can be measured);
+  - `/research-philosophy` says the nine audited claims were not a random draw.
+- 13 new lint rules. All 13 fire on the previous commit, and the current tree has no hits.
+
+**Back-annotation:** PREDICTIONS.md has a 2026-11-18 block, and the proposal is `Research/proposals/door3_closed_by_basis_and_the_post_cutoff_arm_needs_a_default_20261118.md`. No predictions changed bucket: the count stays at 6 and Bucket 0 at 0.
+
+**Waiting on dp:**
+- Decide the post-cutoff default, and separately whether another vendor's model may score it.
+- Approve a one-sentence SPINE edit on door #3.
+- The DR4 default is due 2 December, 14 days away.
+- Which dark-matter story to keep (open since 09-22).
+
+The second explorer topic checks whether the lunar-laser-ranging bound is already in the published literature before anyone cites it.

@@ -72,7 +72,7 @@ export default function WideBinaries() {
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <li><strong>The archive&apos;s own calibration</strong> &#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup> &asymp; 0.42&nbsp;M&#x2609;/pc&sup3;
-              (Sessions 52, 62, 64, 65; Milky Way): <strong>+64%</strong> (&#x03B3; = 2) to <strong>+223%</strong> (&#x03B3; = 0.489), a factor 2.7 to 10.5 in g.
+              (Sessions 52, 62, 64, 65; Milky Way): <strong>+64%</strong> (&#x03B3; = 2) to <strong>+223%</strong> (&#x03B3; = 0.489), a factor 2.7 to 10.5 in g with the unfloored C; with the &Omega;<sub>m</sub> floor (C<sub>f</sub> = &Omega;<sub>m</sub> + (1&minus;&Omega;<sub>m</sub>)C, the form the plotter draws) it is +33% to +62%, a factor 1.8 to 2.6 in g.
               Still excluded by the Oort limit, which leaves room for a few tens of percent at most. (Corrected 2026-11-13. This line used to
               quote &ldquo;0.029&middot;V&sup2; = 1.5&times;10&sup3;, +1.8&times;10&#x2074;%, a factor ~3.5&times;10&#x2074; in g&rdquo; as the published calibration.
               That form puts the V<sup>0.5</sup> coefficient on a V&sup2; law, a units slip the explorer traced on 2026-08-27, and no archive fit uses it. Explorer
@@ -147,15 +147,16 @@ export default function WideBinaries() {
           fontSize: '0.85rem',
           color: 'var(--color-text-secondary)',
         }}>
-          <strong style={{ color: '#ef4444' }}>At the framework&apos;s published calibration, the density law is already excluded locally.</strong>{' '}
+          <strong style={{ color: '#ef4444' }}>At the archive&apos;s own calibration (0.028&middot;V<sup>0.5</sup>), the density law is already excluded locally.</strong>{' '}
           No wide-binary sample is needed for that. At the other knees the site uses, the boost at the Sun is
           9&ndash;116%, but <strong>a wide-binary test does not see it</strong>: the boost is the same for wide and close pairs in one
           neighbourhood, and stellar masses come from relations calibrated on close-binary orbits there, so the boost is absorbed into the
           masses and the wide-to-Newton ratio is 1 (TEST-02&apos;s &#x03B3;<sub>g</sub> &equiv; 1). What sees an absolute boost at the Sun is the
           Oort limit, and its change in time is what lunar laser ranging sees (the box above). (Corrected 2026-11-14.
           This paragraph previously said &ldquo;Gaia can see that; a confirmed Newtonian null would exclude those knees too&rdquo;, which contradicted TEST-02; a researcher
-          simulated-visitor persona put the two side by side.) So no wide-binary outcome selects Synchronism: a MOND-scale anomaly favours MOND
-          and the acceleration-keyed version equally, and a Newtonian null favours Newton.
+          simulated-visitor persona put the two side by side.) So no wide-binary outcome selects Synchronism: a MOND-scale anomaly favours MOND and gives this framework no support over
+          MOND (its acceleration-keyed version is a MOND interpolating function, and the &#x03B3; an anomaly needs is Cassini-excluded), and a Newtonian null favours Newton.
+          (Until 2026-11-18 this sentence said an anomaly favours MOND &ldquo;and the acceleration-keyed version equally&rdquo;; the card below already said &ldquo;no support&rdquo;.)
           <p style={{ margin: '0.6rem 0 0' }}>
             <strong>Why isn&apos;t the local exclusion booked as a refutation?</strong> This is not because it is weak. It is
             cleaner than TEST-09&apos;s 3.3&sigma;. It follows from the knee calibration, and the archive&apos;s calibration (0.028&middot;V<sup>0.5</sup>) is
@@ -168,8 +169,8 @@ export default function WideBinaries() {
             <summary style={{ cursor: 'pointer' }}>Revision note</summary>
             This box was titled &ldquo;Feasibility Kill &mdash; Signal Below Gaia Systematics&rdquo;. It said solar-neighbourhood
             density sits above &#x03C1;<sub>crit</sub>, giving C&nbsp;&asymp;&nbsp;1, a 0.05&ndash;0.4% Newtonian null, and a signal ~80&times;
-            below Gaia&apos;s reach. At the published calibration the density sits far below the knee, so C&nbsp;&asymp;&nbsp;3&times;10&#x207B;&#x2075;
-            and the boost is maximal. The page also said &ldquo;Standard MOND predicts the same anomaly regardless of where the
+            below Gaia&apos;s reach. At the units-hybrid calibration (0.029&middot;V&sup2;, then called &ldquo;published&rdquo;) the density sits far below the knee, so C&nbsp;&asymp;&nbsp;3&times;10&#x207B;&#x2075;
+            and the boost is maximal (3.17&times; in g with the floor). At the archive&apos;s 0.028&middot;V<sup>0.5</sup> it is the factor 1.8&ndash;2.6 (floored) quoted above. The page also said &ldquo;Standard MOND predicts the same anomaly regardless of where the
             binary system is located&rdquo;, which ignores the External Field Effect. Tier 1 carried the knee-conditional
             correction from 2026-09-10. It reached this page on 2026-09-17, after a researcher simulated-visitor persona found both errors.
           </details>
@@ -177,7 +178,7 @@ export default function WideBinaries() {
 
         <h2 id="dr4">Gaia DR4: 2 December 2026</h2>
         <p>
-          ESA has set DR4 (66 months of data) for 2 December 2026. A reading key for this framework was committed before the data (<code>maintainer/scripts/wb_dr4_reading_key_PREREG.md</code>, 2026-11-06). Whatever DR4 shows, it <strong>cannot raise the novelty count</strong>: every outcome lands on a compander member Cassini already excludes unless discs carry over twice their stellar-population M/L. What DR4 decides is MOND&apos;s question, the Chae vs Banik dispute. The key is a dated mapping, not a registered test; adopting it gates on the project lead.
+          ESA has set DR4 (66 months of data) for 2 December 2026. A reading key for this framework (a table, written before the data, that turns each possible measured boost into the value of &#x03B3; it would imply) was committed before the data (<code>maintainer/scripts/wb_dr4_reading_key_PREREG.md</code>, 2026-11-06). Whatever DR4 shows, it <strong>cannot raise the novelty count</strong>: every outcome lands on a compander member (the compander is this framework&apos;s acceleration-keyed curve, C = tanh(&#x03B3; ln(1 + g/a<sub>0</sub>&prime;)), which is a MOND interpolating function at every &#x03B3;) that Cassini already excludes unless discs carry over twice their stellar-population M/L. What DR4 decides is MOND&apos;s question: today Chae et al. against Saad &amp; Ting on the same 36 systems, and the earlier large-sample analyses (Banik et al. 2024 and Pittordis &amp; Sutherland, which use the velocity-ratio statistic &#x1E7D;). The key is a dated mapping, not a registered test; adopting it gates on the project lead.
         </p>
         <p id="dr4-decision-status" style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.3)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.88rem', scrollMarginTop: '5rem' }}>
           <strong style={{ color: '#f59e0b' }}>Decision status, 2026-11-13 (19 days before release):</strong> the project lead has neither adopted
@@ -242,7 +243,7 @@ export default function WideBinaries() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#f59e0b' }}>Status: still hung, with the crux restated (2026-11-09).</strong>{' '}
-          <strong>The crux is the per-star close-companion rate of the 36 systems, not a fraction f.</strong> With a physical model of hidden companions (photocentre orbits passed through the RUWE, colour&ndash;magnitude, IPD and RV-stability cuts; explorer 2026-11-09, PREREG <code>c31d20e</code>), a per-star companion rate of 0.3 leaves only about 7% of the 36 contaminated, yet moves the mixture estimate of &#x03B3; from 1.87 to about 1.2 [1.0, 1.6]. Explaining the number of systems near escape speed with Newton needs a per-star rate of about 0.45&ndash;0.5: the field value for solar-type stars (Moe &amp; Di Stefano 2017, 0.50 &plusmn; 0.04), but 3&ndash;5&times; what the 2D parent sample&apos;s calibration bin implies under Chae&apos;s eccentricity prior. So S1 needs either a boost or an unusually contaminated sample, and that rate is measurable (RV monitoring; DR4 epoch astrometry). Conditional on the model; one AI session. (Until 2026-11-10 this box said &ldquo;&#x03B3; is about 1.5&ndash;1.8 if f &le; 0.1&rdquo;, from a placeholder companion-kick distribution; with physical kicks, f &asymp; 0.07 already gives about 1.2.) Follow-up radial velocities on the three highest-velocity
+          <strong>The crux is the per-star close-companion rate of the 36 systems, not a fraction f.</strong> With a physical model of hidden companions (photocentre orbits passed through the RUWE, colour&ndash;magnitude, IPD and RV-stability cuts; explorer 2026-11-09, PREREG <code>c31d20e</code>), a per-star companion rate of 0.3 leaves only about 7% of the 36 contaminated, yet moves the mixture estimate of &#x03B3; from 1.87 to about 1.2 [1.0, 1.6]. Explaining the number of systems near escape speed with Newton needs a per-star rate of about 0.45&ndash;0.5: the field value for solar-type stars (Moe &amp; Di Stefano 2017, 0.50 &plusmn; 0.04), but 3&ndash;5&times; what the 2D parent sample&apos;s calibration bin implies under Chae&apos;s eccentricity prior. So S1 (the 36 Chae 2026 systems with 3D velocities) needs either a boost or an unusually contaminated sample. <strong>DR4 cannot measure that rate in these 36.</strong> Its companion flags carry about a tenth of what a perfect companion census would, and even that census is worth a likelihood ratio of about 7, not a verdict. DR4 can measure the rate in the parent sample if the single-star false-flag rate is pinned from DR4 itself. Two new RV epochs on #59, #6 and #54 would carry half of what any census of the 36 can. System #3 needs a companion under every reading, Chae&apos;s &#x03B3; = 1.6 included (explorer 2026-11-17, PREREG <code>1a4d020</code>; conditional on the companion model; one AI session). (Until 2026-11-18 this sentence said the rate &ldquo;is measurable (RV monitoring; DR4 epoch astrometry)&rdquo;.) Conditional on the model; one AI session. (Until 2026-11-10 this box said &ldquo;&#x03B3; is about 1.5&ndash;1.8 if f &le; 0.1&rdquo;, from a placeholder companion-kick distribution; with physical kicks, f &asymp; 0.07 already gives about 1.2.) Follow-up radial velocities on the three highest-velocity
           systems would do more than further modelling. <strong>One number was not reproduced:</strong> Chae et al.&apos;s consolidated &Gamma; = 0.102 (this calculation gives 0.139 from the same per-system values; {THIRD_PARTY_CLAIM_LABEL} either implementation could be wrong, and their consolidation script is not public).
           The adjudication will turn on: (1) a real contaminant model for these 36; (2) independent ≥3σ boost
           confirmation → kill fires; (3) independent null replication → degenerate survival; (4) Gaia DR4. Mock-injection cross-validation of the deprojection step, once listed here, is done.
@@ -268,7 +269,7 @@ export default function WideBinaries() {
         <h2>Why This Test Cannot Be Decisive (As Currently Formulated)</h2>
         <div className="grid-2" style={{ margin: '1.5rem 0' }}>
           <div className="card">
-            <h3 style={{ color: '#ef4444' }}>If anomaly confirmed (Chae wins)</h3>
+            <h3 style={{ color: '#ef4444' }}>If an anomaly is confirmed (Chae et al.&apos;s reading)</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               A confirmed EFE-suppressed MOND anomaly of &asymp;1.4&times; would rescue nothing: it needs the acceleration-keyed
               version at &#x03B3; &#x2272; 1, where Cassini already fails it, so it adds no second failure but no support either.
@@ -279,7 +280,7 @@ export default function WideBinaries() {
             </p>
           </div>
           <div className="card">
-            <h3 style={{ color: 'var(--color-text-secondary)' }}>If null confirmed (Banik wins)</h3>
+            <h3 style={{ color: 'var(--color-text-secondary)' }}>If a null is confirmed (Saad &amp; Ting&apos;s reading of the same 36; Banik et al. 2024 on a large sample)</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               The acceleration-keyed version fails together with MOND&apos;s simple function. The density law survives only
               in the near-Newtonian knee window, where it cannot be told apart from Newton.

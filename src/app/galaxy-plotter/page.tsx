@@ -306,6 +306,8 @@ export default function GalaxyPlotter() {
         </ul>
         <p style={{ margin: '0.4rem 0 0' }}><strong>&ldquo;But First Encounter says the fitted &gamma; &asymp; 0.5 reproduces MOND?&rdquo;</strong> It does, and that is not a win. The fit that gives &gamma; &asymp; 0.5 feeds the equation acceleration, which is MOND&apos;s own input, instead of the density the framework names; with that swap the equation becomes MOND&apos;s formula and you get the green line back. That is why the site calls it a reparametrization. The violet line is the equation as written, keyed on density, and it fails. Why matching MOND still counts as <em>Failed</em>: fitting the same curves as an existing theory with a renamed formula adds nothing new. A match would only be news if the equation also predicted something MOND does not and that prediction held. It made three such predictions (a cap on how much gravity can be boosted, an effect of a galaxy&apos;s surroundings, and a density knee that grows with rotation speed), and each failed when tested.</p>
         <p style={{ margin: '0.4rem 0 0' }}>
+          Green matching these galaxies does not make MOND right everywhere: further down, the same MOND formula fails a Solar-System test
+          (the Cassini spacecraft&apos;s tracking), and MOND has other open problems. The point here is only that the violet curve does not match.
           That is the whole lesson. You can ignore the other lines (an old hand-drawn stand-in and a second violet variant) and
           the &ldquo;For physicists&rdquo; block. Your next step is{' '}
           <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-accent-blue)' }}>What Synchronism Is Not &rarr;</Link>
@@ -692,12 +694,12 @@ export default function GalaxyPlotter() {
         </div>
 
         {/* 2026-11-14: calibration selector. Until today the violet curve drew only 0.029·V², the units hybrid (graduate-physics simulated-visitor persona; explorer 2026-11-13) */}
-        <div id="calibration" style={{ margin: '0 0 1rem', padding: '0.6rem 0.9rem', background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
-          <strong>Where is the density law&apos;s switch? (violet line only)</strong>
+        <details id="calibration" style={{ margin: '0 0 1rem', padding: '0.6rem 0.9rem', background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.35)', borderRadius: '0.375rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
+          <summary style={{ cursor: 'pointer' }}><strong>For physicists: where is the density law&apos;s switch? (violet line only; the default is the archive&apos;s own form, and beginners can leave this closed)</strong></summary>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', margin: '0.35rem 0' }}>
             <label style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', cursor: 'pointer' }}>
               <input type="radio" name="calib" checked={calib === 'archive'} onChange={() => setCalib('archive')} />
-              Archive&apos;s own form: &rho;<sub>crit</sub> = 0.028&middot;V<sub>flat</sub><sup>0.5</sup> (default)
+              Archive&apos;s own form: &rho;<sub>crit</sub> = 0.028&middot;V<sub>flat</sub><sup>0.5</sup> (default; the 0.028 is in M<sub>&#x2609;</sub>&nbsp;pc<sup>&minus;3</sup>&nbsp;(km/s)<sup>&minus;&frac12;</sup>)
             </label>
             <label style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', cursor: 'pointer' }}>
               <input type="radio" name="calib" checked={calib === 'hybrid'} onChange={() => setCalib('hybrid')} />
@@ -718,7 +720,7 @@ export default function GalaxyPlotter() {
             one of these by fitting (&Delta;BIC +2,843 with one global knee; +8,404 at the archive&apos;s form), not by a &ldquo;no disc reaches the knee&rdquo; argument. Much of the
             explanatory text below was written for the hybrid; where it says C<sub>&rho;</sub> &lt; 0.01 on every disc, that holds for the hybrid setting only.
           </details>
-        </div>
+        </details>
 
         <div className="card" style={{ marginBottom: '1.5rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem', flexWrap: 'wrap', gap: '0.5rem' }}>

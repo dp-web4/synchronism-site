@@ -82,7 +82,7 @@ export default function MondUnification() {
           fit the RAR directly in 79 galaxies at 0.33 &lt; z &lt; 1.44 and find a&#x2080; growing with redshift. How fast depends on the
           estimator: the paper&apos;s global line gives a&#x2080; &prop; E(z)<sup>1.15</sup>, <em>faster</em> than H(z); the site&apos;s fit to the
           paper&apos;s four quantile bins gives n = 0.71 &plusmn; 0.13, <em>slower</em> than H(z) (bins read off the paper&apos;s figure, whose bars state no
-          confidence level; read here as 1&#x03C3;). Details below. This sentence read &ldquo;disfavored by 2&#x03C3;&ndash;6&#x03C3;&rdquo; for a month after{' '}
+          confidence level; read here as 1&#x03C3;, which puts n = 1 at 2.2&#x03C3; from the bins; if the bars are 95%, it is about 4.4&#x03C3;, and the &ldquo;survives&rdquo; reading below holds only under the 1&#x03C3; convention). Details below. This sentence read &ldquo;disfavored by 2&#x03C3;&ndash;6&#x03C3;&rdquo; for a month after{' '}
           <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
           had already revised the verdict: the <em>level</em> deviation depends on the anchor (four published a&#x2080;(0)
           values disagree by 69%; against the McGaugh+2016 anchor the site uses elsewhere, branch (A) is consistent at

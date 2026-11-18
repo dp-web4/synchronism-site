@@ -84,7 +84,7 @@ export default function ConsciousnessThreshold() {
             2/3 (p&nbsp;=&nbsp;0.0064) — the &ldquo;golden ratio&rdquo; reading fails on its own aggregate.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: 0 }}>
-            The 8-way convergence above is best read
+            The 7-approach convergence above is best read
             as <strong>normalization / selection on the tanh output-midpoint</strong>: any approach mapping
             its criterion onto the [0,1)-bounded C scale lands near the arithmetic midpoint by construction.
             The{' '}
@@ -186,8 +186,8 @@ export default function ConsciousnessThreshold() {
 
         <h2>Honest Caveats</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li><strong>No threshold value has ever been tested against C:</strong> the one cited test (gnosis-research Session 63) measured SNARC salience, a different variable with no mapping to C — see the correction box above. The previously stated &ldquo;C&nbsp;&#x2248;&nbsp;0.64 also rejected at p&nbsp;&lt;&nbsp;0.0001&rdquo; had no source and was removed 2026-07-08. The 8-way convergence is a normalization artifact, not corroboration.</li>
-          <li>The 8 theoretical approaches share underlying assumptions; they&apos;re not fully independent</li>
+          <li><strong>No threshold value has ever been tested against C:</strong> the one cited test (gnosis-research Session 63) measured SNARC salience, a different variable with no mapping to C — see the correction box above. The previously stated &ldquo;C&nbsp;&#x2248;&nbsp;0.64 also rejected at p&nbsp;&lt;&nbsp;0.0001&rdquo; had no source and was removed 2026-07-08. The 7-approach convergence is a normalization artifact, not corroboration.</li>
+          <li>The 7 theoretical approaches (the eighth row on the Consciousness Demo is hollow) share underlying assumptions; they&apos;re not fully independent</li>
           <li>The Gnosis convergence is intriguing, but the architecture was designed by AI agents with access to the Synchronism framework &mdash; the &ldquo;independence&rdquo; needs qualification</li>
           <li>Converting neural measurements to C requires calibration not yet defined</li>
           <li>The prediction could be unfalsifiable if the mapping from EEG to C is too flexible</li>

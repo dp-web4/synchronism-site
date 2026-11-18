@@ -53,7 +53,7 @@ export default function ResearchPhilosophy() {
             <h3>3. Honest Labeling</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               Every parameter is labeled as either <strong>derived</strong> (from first principles)
-              or <strong>fitted</strong> (calibrated to data). Every claim carries a validation badge.
+              or <strong>fitted</strong> (calibrated to data). Every claim carries a status badge, except withdrawn ones.
               No hiding the ball.
             </p>
           </div>
@@ -77,11 +77,11 @@ export default function ResearchPhilosophy() {
 
         <h2 id="validation-badge-taxonomy">Status Badge Taxonomy</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-          Every scientific claim on this site carries a validation badge.
+          Every scientific claim on this site carries a status badge (called a &ldquo;validation badge&rdquo; until 2026-11-16), except withdrawn claims, which carry none. For how the badges relate to the words &ldquo;refuted&rdquo;, &ldquo;kill&rdquo; and &ldquo;excluded&rdquo;, see <Link href="/glossary#outcome-words" style={{ color: 'var(--color-accent-blue)' }}>Outcome words</Link>.
           The <strong>canonical reference</strong> is on the{' '}
           <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
             Honest Assessment page
-          </Link>. The taxonomy has two families:
+          </Link>. The taxonomy has two families, plus two deprecated labels kept for old pages:
         </p>
 
         <div style={{ background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
@@ -294,7 +294,7 @@ export default function ResearchPhilosophy() {
           3,308 A2ACW sessions have been run across the research archive. Of these, approximately
           47 produced internal-consistency survivors &mdash; a 1.4% session yield. <strong>Across all
           audited claims, 0 of 9 survived</strong> (the 6 demoted claims (only 2 confirmed to have carried a &ldquo;Validated&rdquo; badge) plus the top 3 of the ~47,
-          swept 2026-07-03; auditor uncalibrated: positive control and post-cutoff arm not run); each resolved as a reparametrization of known physics, an internal-consistency finding, or a null
+          swept 2026-07-03; auditor uncalibrated: positive control and post-cutoff arm not run). <strong>The nine were not a random draw:</strong> the six are the claims that had been promoted and later demoted, and the three are the ones ranked highest; so 0 of 9 describes the archive&apos;s most visible claims, not the method&apos;s yield on a typical session; each resolved as a reparametrization of known physics, an internal-consistency finding, or a null
           result. The rest are ~47 candidates not yet individually audited &mdash; an open count, not an outcome (see{' '}
           <a href="/honest-assessment#research-outputs" style={{ color: 'var(--color-accent-blue)' }}>honest assessment</a>{' '}
           for the audited-vs-pending breakdown). <strong>Who audited:</strong> LLM agents, not an external human domain
@@ -335,9 +335,9 @@ export default function ResearchPhilosophy() {
             model held which role. So &ldquo;same training distribution&rdquo; above means overlapping training corpora across
             vendors, not one model talking to itself, except in those two single-model results. It also means a partly disjoint
             pair has been used since January 2026. A cross-vendor control could be run with such a pair now, as a lower bound on
-            independence, instead of waiting for a fully disjoint corpus. Session 662 says the six demotions &ldquo;came from human audit, not the AI loop&rdquo;. Traced
-            through git (explorer, 2026-10-20), every one of the six edits and decisions was made by AI tracks (simulated personas and
-            autonomous sessions). No human audit decision is on record, so Session 662&apos;s line is wrong.
+            independence, instead of waiting for a fully disjoint corpus. The six demotions were all made by AI tracks: traced through git (explorer, 2026-10-20), every one of the six edits and decisions
+            came from simulated personas or autonomous sessions, and no human audit decision is on record. (An archive note, Session 662,
+            says they &ldquo;came from human audit&rdquo;; that note is wrong.)
           </p>
           <p id="a2acw-arm-dependence" style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.75rem 0 0', scrollMarginTop: '5rem' }}>
             <strong>Do verdicts depend on who argues?</strong> <ValidationBadge status="active-mrh" /> Yes, on the one test run so far.
@@ -346,7 +346,7 @@ export default function ResearchPhilosophy() {
             41&ndash;52% of the time. Every one of the 17 disagreements was harsher than LV&apos;s, and LV&apos;s &ldquo;HELD&rdquo; on his
             second target did not reproduce. So the cross-vendor arm was the lenient one. Vendor, model generation, round count
             (LV&apos;s second run went 9 rounds) and the human relaying between models all differ between the two arms, so this does not
-            say which of them causes the gap.
+            say which of them causes the gap. The direction matches the calibration arm&apos;s six false flags of real discoveries: two separate measurements say the in-house critic is now miscalibrated toward <em>strict</em>, the same over-refutation the archive measured in its own corrections (1 in 20 in May, 9 in 24 by August).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem', marginBottom: 0 }}>
             This is why the 1.4% figure is an internal-consistency-survival rate, not a discovery rate. It is <em>not</em> an upper bound on what
@@ -500,9 +500,9 @@ export default function ResearchPhilosophy() {
           </div>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
-          <strong>Operational states vs. validation badges:</strong> Terms like &ldquo;Kill Criterion Triggered,&rdquo;
+          <strong>Operational states vs. status badges:</strong> Terms like &ldquo;Kill Criterion Triggered,&rdquo;
           &ldquo;Withdrawn,&rdquo; and &ldquo;MOND-shared&rdquo; are <em>operational states</em> describing prediction lifecycle
-          and scope &mdash; distinct from the nine <Link href="#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>validation badges</Link>{' '}
+          and scope &mdash; distinct from the nine <Link href="#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>status badges</Link>{' '}
           (5 MRH-relationship: Active-MRH / Parallel-Paths / Sidelined / Superseded / Audited-Negative; 4 descriptive: Untested / Speculative / Reparametrization / Failed). A prediction flagged
           &ldquo;Kill Criterion Triggered&rdquo; also carries the Failed badge; &ldquo;Withdrawn&rdquo; does not carry any
           badge (it was never adjudicated); &ldquo;MOND-shared&rdquo; (RETIRED 2026-07-15) asserted a positive result

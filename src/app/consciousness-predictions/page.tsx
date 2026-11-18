@@ -10,7 +10,7 @@ const categories = [
   {
     category: 'EEG Phase Coherence',
     count: 8,
-    testable: 'Yes — $150K, 12 months',
+    testable: 'Once C has a measurement protocol (none exists); the EEG study itself would cost ~$150K over 12 months',
     predictions: [
       'Anesthesia induction shows a discontinuity (not gradual fade) in EEG phase coherence at the moment of consciousness loss',
       'The discontinuity maps to C ≈ 0.50 when coherence is computed from gamma-band phase-locking',

@@ -79,8 +79,9 @@ export default function CdmDiscrimination() {
           noted it had been queued for three months):</strong> Desmond 2017 (MNRAS 472, L35; arXiv:1706.01017) is a BTFR-to-BTFR
           comparison in baryonic mass. Halo abundance matching gives SPARC-like mock samples with a typical BTFR scatter of
           &ldquo;&sim;0.25 dex&rdquo;, &ldquo;3.6&sigma; discrepant with the SPARC value of &sim;0.11 dex&rdquo; (quoted verbatim);
-          the paper&apos;s table is in log V<sub>f</sub> (SPARC 0.029, abundance matching 0.064, and 0.061 with zero galaxy&ndash;halo scatter), so the &ldquo;0.061&rdquo; is a 5% change in log V, not a fall from 0.25 (corrected 2026-10-24: this sentence put 0.061 beside the log-M<sub>b</sub> &ldquo;0.25&rdquo; as if both were in one unit). So the one external &Lambda;CDM figure checked is about
-          3&times; the internal 0.085, and the &ldquo;sits inside the CDM range&rdquo; verdict above is <strong>not supported by the
+          the paper&apos;s table is in log V<sub>f</sub> (SPARC 0.029, abundance matching 0.064, and 0.061 with zero galaxy&ndash;halo scatter), so the &ldquo;0.061&rdquo; is a 5% change in log V, not a fall from 0.25 (corrected 2026-10-24: this sentence put 0.061 beside the log-M<sub>b</sub> &ldquo;0.25&rdquo; as if both were in one unit). The one external &Lambda;CDM figure checked, ~0.25 dex, is a scatter in log
+          baryonic mass; the internal 0.085 is a residual on W50 velocity widths, so no ratio between the two means anything (until 2026-11-18 this
+          sentence called the first &ldquo;about 3&times;&rdquo; the second; a researcher persona pointed out the unit mismatch). The &ldquo;sits inside the CDM range&rdquo; verdict above is <strong>not supported by the
           literature as it stands</strong>. It was suspended rather than reversed: the 0.086 (independent of V, as the box above shows) is on ALFALFA W50 widths after an
           in-sample TFR-residual mass-to-light correction, not on SPARC V<sub>flat</sub>. (A sentence here said Desmond&apos;s 0.061 (in log V)
           shows the prediction depends strongly on the galaxy&ndash;halo scatter. The paper says the opposite: the scatter &ldquo;cannot be
@@ -184,13 +185,38 @@ export default function CdmDiscrimination() {
           </li>
         </ul>
 
+        <h2 id="not-addressed">What This Page Does Not Address</h2>
+        <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.92rem', borderLeft: '3px solid #f59e0b', paddingLeft: '0.75rem', margin: '0 0 1.5rem' }}>
+          <p style={{ margin: '0 0 0.5rem' }}>
+            The title promises CDM discrimination, but the places where MOND-like galaxy laws actually struggle against cold dark matter are
+            not on this page: the residual mass in galaxy clusters, the third peak of the cosmic microwave background, the Bullet Cluster,
+            galaxy&ndash;galaxy lensing out to ~1 Mpc (Brouwer et al. 2021) and the diversity of rotation-curve shapes (Oman et al. 2015).
+            What the record says about each:
+          </p>
+          <ul style={{ margin: 0, paddingLeft: '1.2rem', lineHeight: 1.6 }}>
+            <li><strong>Cosmology (CMB, growth):</strong> the dark-energy sector is calibrated with C&#x2080; = &Omega;<sub>m</sub>, and that &Omega;<sub>m</sub>
+              contains cold dark matter. Run with baryons only, no &#x03B3; gives both an accelerating universe and the dark-to-baryon ratio at
+              recombination (2026-09-22). So at z &asymp; 1100 the framework assumes CDM.</li>
+            <li><strong>Clusters:</strong> at r<sub>500</sub> of a Coma-class cluster the capped boost falls short by &times;1.7&ndash;3.5, about as short as
+              MOND (estimate, 2026-10-04); cluster cores need boosts of 7&ndash;11 (explorer 2026-11-14). Not run on the Bullet Cluster.</li>
+            <li><strong>Lensing to ~1 Mpc:</strong> the framework&apos;s own 3.17 cap passes the KiDS bins only if unseen matter does the lensing
+              (2026-11-11), which is the same dark-matter question.</li>
+            <li><strong>Rotation-curve diversity:</strong> not examined.</li>
+          </ul>
+          <p style={{ margin: '0.5rem 0 0' }}>
+            So, as written, the framework is a MOND interpolating function in galaxies and &Lambda;CDM, cold dark matter included, in
+            cosmology, side by side. That is a coherent position (hybrid dark-matter models sit near it), but it is not a unification, and
+            which dark-matter story the framework keeps is an open decision for the project lead. (Box added 2026-11-18 at a researcher persona&apos;s request.)
+          </p>
+        </div>
+
         <h2>Honest Caveat</h2>
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Net verdict (2026-10-24): <strong>the 0.086 is not a BTFR scatter</strong> (it is independent of V; see the box at the top), so
           it has no CDM verdict to give. The like-for-like number on the same sample, 0.073 dex in log V, is not tighter than
           abundance matching&apos;s 0.064. Until 2026-10-24 this verdict read &ldquo;suspended&rdquo;, with this reasoning:
           Against the internal 0.085 dex it looked consistent; against Desmond 2017&apos;s abundance-matching ~0.25 dex it sits
-          about 3&times; <em>below</em> CDM. That would be the known BTFR-tightness problem for &Lambda;CDM, which MOND explains
+          about 3&times; <em>below</em> CDM. (That ratio compared a log-mass scatter with a velocity-width residual and is withdrawn.) That would be the known BTFR-tightness problem for &Lambda;CDM, which MOND explains
           with near-zero intrinsic scatter, so even the restored reading would favour the MOND class, not this framework.
           Neither reading is a win here (until 2026-10-16 this box still said &ldquo;consistent with CDM&rdquo;; flagged by a
           simulated-visitor graduate persona). Also:

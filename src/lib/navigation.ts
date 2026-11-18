@@ -507,7 +507,7 @@ export const navigationTree: NavigationTree = {
     {
       title: 'Test Roadmap',
       href: '/test-catalog',
-      desc: '26 tests by tier (24 in the original registry + 2 added later)',
+      desc: '26 test IDs by tier (24 in the original registry + 2 added later; three IDs are one environment test)',
       keywords: ['test', 'catalog', 'experiment', 'tier', 'overview'],
       related: ['/tier-1-existing', '/tier-2-pilots', '/top-5-tests'],
     },

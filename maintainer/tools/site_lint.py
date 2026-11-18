@@ -23,6 +23,20 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-18 (four visitor personas, 2026-11-18 log): gamma onset, width limit, LLR CL, DR4 companion rate, CDM ratio, consciousness wording.
+    (r"how fast that\s+switch flips", "2026-11-18", "gamma sets where the switch starts to turn, not how fast it flips (three tools say so)", True),
+    (r"stops near 1\.(17|2) dex|width saturates near 1\.17", "2026-11-18", "1.17 dex is the gamma -> infinity limit; the width is 1.50 at gamma = 1, 1.33 at 2, 1.20 at 10", True),
+    (r"without narrowing it", "2026-11-18", "raising gamma above 1 narrows the width a little (1.50 -> 1.33 dex from 1 to 2)", True),
+    (r"acts as a width only below about 1", "2026-11-18", "the width keeps falling above gamma = 1, by 0.33 dex to its limit", True),
+    (r"favours MOND\s+and the acceleration-keyed version equally", "2026-11-18", "an anomaly gives this framework no support over MOND (equal likelihood ratio = zero support)"),
+    (r"rate is measurable \(RV monitoring; DR4 epoch astrometry\)", "2026-11-18", "DR4 cannot measure the companion rate in the 36 S1 systems (explorer 2026-11-17); it can in the parent if the false-flag rate is pinned", True),
+    (r"4&times;10<sup>&minus;9</sup> to 4&times;10<sup>&minus;8</sup>", "2026-11-18", "the LLR transferable bound divided the central value; at the 2-sigma edge it is 1e-8 to 1e-7"),
+    (r"about\s+3&times; the internal 0\.085", "2026-11-18", "Desmond's 0.25 dex is log-mass scatter, the internal 0.085 a velocity-width residual: no ratio", True),
+    (r"testable: 'Yes — \$150K", "2026-11-18", "the EEG row cannot be tested until C has a measurement protocol", True),
+    (r"8-way convergence", "2026-11-18", "seven approaches; the Consciousness Demo's eighth row is hollow (no critical point)", True),
+    (r"&#x03B3; is the sharpness exponent", "2026-11-18", "gamma is not a sharpness (GAMMA_GLOSS)", True),
+    (r"<h2>The Dissolution</h2>|Mind-Body: Dissolved<", "2026-11-18", "the page itself says 'Dissolved' would overclaim; headings now say 'Proposed Dissolution'", True),
+    (r"B<sub>max</sub> &#8818; 14 excluded by SPARC dwarfs&rdquo;\. The Failed", "2026-11-18", "13.7 is one disc's maximum, not a bound; the bound is ~7.5 at 3 sigma (5.7 after trials)", True),
     # Added 2026-11-17 (four visitor personas, 2026-11-17 log): knee law, gamma gloss, Bell row, stale counts.
     (r"site-wide working value", "2026-11-17", "A = 0.029 on V^2 is the units hybrid, not the working value; the archive's 0.028 V^0.5 is the plotter default (see /critical-density#knee-laws-in-use)", True),
     (r"the knee is unreachable, and no length", "2026-11-17", "'unreachable' holds only for the A V^2 law under the coarse-graining reading; 45/122 discs cross the archive knee", True),

@@ -82,3 +82,45 @@ these are the defects and the tested revisions, for whichever version the lead a
    2026-11-10). The arXiv listing carries no notice.
 
 The reading key (`wb_dr4_reading_key_PREREG.md`) is unaffected by any of this and can be adopted on its own.
+
+## Addendum 2026-11-18 (maintainer): the companion-rate leg (R-A, R-B, R-C)
+
+Copied verbatim from the explorer's dated registration of 2026-11-17 (PREREG `1a4d020`, finding
+`explorer/findings/dr4-cannot-measure-the-companion-rate-in-the-36-it-can-in-the-parent-if-the-false-flag-rate-is-pinned.md`),
+committed here before Gaia DR4 (2 December 2026) so the plan carries it as dated. R-A is declared non-decisive in advance.
+It does not touch γ, this framework, the count or Bucket 0. Every number is conditional on the 11-09 companion model.
+Adoption gates on the project lead with the rest of this plan.
+
+**R-A. S1 flag counts. Registered as a consistency check and declared non-decisive in advance.**
+- **Data.** DR4 for the 72 S1 stars.
+- **Flag.** Any of the four channels in Section A, computed on DR4 epoch astrometry and epoch RVs with DPAC's recommended error
+  inflation, or any DR4 NSS solution.
+- **Frozen expectations** (ε = 0.01, base), Newton F 0.45 against γ 1.4 F 0.3:
+  - T_hi: E 1.23 vs 0.91. T_all: E 2.18 vs 1.62.
+  - LR ≈ 2.6 at T_hi = 3, ≈ 3.1 at T_all = 5, and 0.5–0.7 at zero flags.
+- **No outcome of R-A will be reported as deciding Newton against a boost.** Flags on #3 or #4 are predicted by every reading.
+- Flagged systems are removed and the S1 mixture re-run. This is reported as vetting.
+
+**R-B. Parent per-star rate. The leg that can decide F.**
+- **Sample.** Chae's 2D catalogue (Zenodo 10986733), d ≤ 150 pc, G 5.5–13, s 2–30 kau.
+  - Both stars must be DR3-clean: RUWE < 1.25, no NSS solution, IPD multi-peak 0, within 0.4 mag of the main sequence.
+  - Weighted to S1's mass and distance distribution.
+- **Statistic.** r = fraction of stars with a DR4 flag (Section A).
+- **ε, measured on DR4 itself, two ways that must agree within 0.01.**
+  - (i) The same flag on field stars in the same G and colour range with ≥ 10 years of precise-RV monitoring and no trend above
+    10 m/s (for example the California Legacy Survey and HARPS volume-limited samples). About 1,000 stars give ±0.005.
+  - (ii) A fit of r(d) = ε + F·c(d) over 20–150 pc. c(d) falls with distance as the photocentre signal does, while ε is flat
+    in d at fixed G.
+- **F̂** is read from the base model's r(F) at the measured ε, and also reported under σ_AL × 2 and q MD17.
+- **Outcomes.**
+  - **F̂ ≥ 0.40 under all three models:** the parent supplies the rate Newton needs in S1. The S1 excess is a
+    typical-companions outcome, and the 11-09 "3–5× the parent" was an artefact of the eccentricity prior.
+  - **F̂ ≤ 0.25 under all three:** Newton needs S1 to carry at least 1.8× its parent's rate after stricter vetting. The
+    companion explanation is disfavoured. This favours a boost or an unmodelled systematic. It says nothing about which boost
+    law, this framework's included.
+  - **Otherwise:** undecided.
+  - **ε not pinned to ±0.01 by (i) and (ii):** no reading, stated as such.
+
+**R-C. Targeted RV census. Not DR4; offered to anyone with RV time.**
+- Targets in order of value: #59, then #6, #54, #42, #36, #32. #3 and #4 are data checks predicted under every reading.
+- Two epochs at ≤ 30 m/s, 12–15 years after the archival RVs, carry about 1 nat, half of what any companion census of S1 can.

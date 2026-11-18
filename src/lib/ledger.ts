@@ -118,7 +118,7 @@ export const TEST25_STATUS_SENTENCE =
  * in the variable 1+x (near ρ = 0, C ≈ γx is linear for every γ, while a Hill function in x goes as xⁿ). Checked by hand.
  */
 export const GAMMA_GLOSS =
-  'γ sets how fast C first rises (C ≈ γ·x just above zero) and how fast it closes on 1 (1 − C ≈ 2x^(−2γ) far above the knee). It is not a sharpness: no value of γ makes the switch narrower than about 1.17 decades, and above γ ≈ 1 raising it moves the knee rather than steepening it. The function is exactly a Hill function of exponent 2γ in the variable 1 + x, not in x, so "Hill coefficient" describes only the tail. In fits it is a fitted number (0.489 with acceleration as the argument, 0.046 with density).';
+  'γ sets how fast C first rises (C ≈ γ·x just above zero) and how fast it closes on 1 (1 − C ≈ 2x^(−2γ) far above the knee). It is not a sharpness: no value of γ makes the switch narrower than about 1.17 decades (the γ → ∞ limit; the 10–90% width is 1.91 decades at γ = ½, 1.50 at 1, 1.33 at 2, 1.20 at 10), and above γ ≈ 1 raising it moves the knee much more than it narrows the switch. The function is exactly a Hill function of exponent 2γ in the variable 1 + x, not in x, so "Hill coefficient" describes only the tail. In fits it is a fitted number (0.489 with acceleration as the argument, 0.046 with density).';
 
 /**
  * Which C (2026-11-12). The same persona found the "three functions share this letter" warning only on /for-researchers and

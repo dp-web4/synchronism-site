@@ -63,7 +63,8 @@ function rColor(r: number): string {
 }
 
 export default function ChemistryCorrelationExplorer() {
-  const [sortKey, setSortKey] = useState<SortKey>('r');
+  // 2026-11-18: default sort by category, not by r. A researcher persona: every r restates its ingredient (θ_D or IE), so an r-descending default presents the restatement as the headline.
+  const [sortKey, setSortKey] = useState<SortKey>('category');
   const [sortDir, setSortDir] = useState<SortDir>('desc');
   const [regimeFilter, setRegimeFilter] = useState<number | null>(null);
 

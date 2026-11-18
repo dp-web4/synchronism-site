@@ -448,7 +448,7 @@ export default function ParameterDerivations() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan, four quantile bins (Fig. 3, pixel-read; bars as 1&#x03C3;)</td><td style={{ padding: '0.25rem 0' }}>0.71 &plusmn; 0.13</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan, four quantile bins (Fig. 3, pixel-read; bars as 1&#x03C3;)</td><td style={{ padding: '0.25rem 0' }}>0.71 &plusmn; 0.13 (n = 1 at 2.2&#x03C3;; about 4.4&#x03C3; if the bars are 95%)</td></tr>
                   <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan, global linear fit (Eq. 4) over 0.33&ndash;1.44</td><td style={{ padding: '0.25rem 0' }}>1.15</td></tr>
                   <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan, MOND-track refit (App. E)</td><td style={{ padding: '0.25rem 0' }}>0.99</td></tr>
                   <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan, per-galaxy regression (App. E)</td><td style={{ padding: '0.25rem 0' }}>1.04 &plusmn; 0.6</td></tr>

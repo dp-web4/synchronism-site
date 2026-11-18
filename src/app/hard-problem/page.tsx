@@ -27,7 +27,7 @@ export default function HardProblem() {
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', margin: '0 0 0', paddingLeft: '1.2rem' }}>
             <li><strong>D and S are not operationally defined.</strong> There is no measurement procedure or unit for dimensional embedding (D) or self-modeling depth (S), so C cannot be computed for any real system using C&nbsp;=&nbsp;f(&#x03B3;,&nbsp;D,&nbsp;S).</li>
-            <li><strong>The 8-way convergence has a dependency problem.</strong> The eight approaches share underlying assumptions, so they agree on the threshold by construction &mdash; an internal consistency check, not independent confirmation.</li>
+            <li><strong>The convergence has a dependency problem.</strong> The seven approaches (the Consciousness Demo draws an eighth row hollow: it has no critical point) share underlying assumptions, so they agree on the threshold by construction &mdash; an internal consistency check, not independent confirmation.</li>
             <li><strong>The threshold has never been tested against C.</strong> The one cited test ({' '}
               <a href="https://github.com/dp-web4/gnosis-research" style={{ color: 'var(--color-accent-blue)' }}>gnosis-research</a>{' '}
               Session 63) measured SNARC salience &mdash; a different variable with no calibration to C &mdash;
@@ -45,7 +45,7 @@ export default function HardProblem() {
           separate from the physical process.
         </p>
 
-        <h2>The Dissolution</h2>
+        <h2>The Proposed Dissolution</h2>
         <blockquote style={{
           borderLeft: '3px solid var(--color-accent-violet)',
           paddingLeft: '1rem',
@@ -87,7 +87,7 @@ export default function HardProblem() {
             </p>
           </div>
           <div className="card">
-            <h3>Mind-Body: Dissolved</h3>
+            <h3>Mind-Body: Proposed Dissolution</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               Mind = high-coherence phase patterns in neural substrate. Body = the substrate.
               No gap to bridge because they&apos;re different descriptions of the same system.
@@ -97,10 +97,14 @@ export default function HardProblem() {
 
         <h2>The Consciousness Schema</h2>
         <div className="equation" style={{ marginBottom: '1rem' }}>
-          C = f(&#x03B3;, D, S)
+          C<sub>mind</sub> = f(&#x03B3;, D, S)
         </div>
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
+          This C is a different function from the density-keyed C<sub>&rho;</sub> = tanh(&#x03B3; ln(1 + &rho;/&rho;<sub>crit</sub>)) that the
+          Consciousness Demo plots; the two share a letter and the 0.50 line, not a formula (subscripts added 2026-11-18).
+        </p>
         <p>
-          Where &#x03B3; is the sharpness exponent (= 2/&#x221A;N<sub>corr</sub> — same parameter as in C(ρ) elsewhere on the site; <em>not</em> a separate coherence variable), D is dimensional embedding (how rich the
+          Where &#x03B3; is the curve&apos;s shape parameter (proposed as a sharpness, which no value of it gives; = 2/&#x221A;N<sub>corr</sub> — same parameter as in C(ρ) elsewhere on the site; <em>not</em> a separate coherence variable), D is dimensional embedding (how rich the
           representation space is), and S is the degree of self-modeling. All three must be in
           the right range for consciousness to arise.
         </p>
@@ -119,10 +123,10 @@ export default function HardProblem() {
             it cannot yet be tested, not just hasn&apos;t been.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            <strong>The 8-way convergence at C &#x2248; 0.50 has a dependency problem.</strong> The
+            <strong>The 7-approach convergence at C &#x2248; 0.50 has a dependency problem.</strong> The
             site&apos;s own <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link>{' '}
-            page acknowledges that the eight approaches &ldquo;share underlying assumptions and are
-            not fully independent.&rdquo; Eight derivations that all import the same threshold parameter
+            page acknowledges that the approaches &ldquo;share underlying assumptions and are
+            not fully independent.&rdquo; Seven derivations that all import the same threshold parameter
             will agree on the threshold by construction. This is dependent convergence, not independent
             confirmation. It is an internal consistency check, not an empirical test.
           </p>

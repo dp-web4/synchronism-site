@@ -27,7 +27,7 @@ const papers = [
   {
     category: 'Consciousness / Philosophy',
     items: [
-      { name: 'Consciousness Threshold (C ≈ 0.50)', readiness: 0.60, novelty: '8-way convergence', circularity: '30%' },
+      { name: 'Consciousness Threshold (C ≈ 0.50)', readiness: 0.60, novelty: '7-approach convergence', circularity: '30%' },
       { name: '34 Falsifiable Predictions', readiness: 0.55, novelty: 'EEG protocols defined', circularity: '15%' },
     ],
   },

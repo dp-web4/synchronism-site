@@ -17,6 +17,13 @@ export default function ForResearchers() {
       <h1>For Researchers: What&apos;s Citable</h1>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
+        {/* Added 2026-11-18: a researcher persona assembled this from the four forward-data rows and asked for it first. */}
+        <p id="can-only-lose" style={{ fontSize: '1rem', color: 'var(--color-text-primary)', margin: '0 0 0.9rem', fontWeight: 600 }}>
+          No dataset on the horizon can confirm a novel prediction of this framework. Every upcoming release on file (Gaia DR4,
+          BIG-SPARC, DESI DR3; RC100 is already in) can only remove options or leave them standing (<a href="#forward-data" style={{ color: 'var(--color-accent-blue)' }}>table</a>).
+          What an outside researcher can use is in the <a href="#other-theories" style={{ color: 'var(--color-accent-blue)' }}>results about other people&apos;s theories</a> and the
+          transferable negatives below.
+        </p>
         <div style={{ fontSize: '0.92rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #ef4444', paddingLeft: '0.75rem', margin: '0 0 1rem' }}>
           <strong>Is any prediction that differs from MOND or &Lambda;CDM still alive?</strong> No, within the registered
           tests and the readings run so far. Every prediction that differed sits in a branch already excluded (the
@@ -261,8 +268,10 @@ export default function ForResearchers() {
               survives the RUWE, CMD, IPD and RV cuts. At a rate of 0.3 per star only about 7% of the 36-system sample is contaminated,
               yet the mixture estimate of the boost moves from 1.87 to about 1.2 [1.0, 1.6]. To explain the near-escape systems with Newton
               needs 0.45&ndash;0.5, which is the field value for solar-type stars (Moe &amp; Di Stefano 2017) but 3&ndash;5&times; what the 2D parent
-              implies under Chae&apos;s eccentricity prior. That turns a deprojection dispute into a measurable number (RV monitoring, DR4 epoch
-              astrometry). Conditional on one mock pipeline (explorer 2026-11-09; <Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>Wide Binaries</Link>).</li>
+              implies under Chae&apos;s eccentricity prior. That turns a deprojection dispute into a number, measurable in the parent sample but not by DR4 in the 36 themselves
+              (DR4&apos;s flags there carry about a tenth of a perfect companion census; targeted radial velocities on #59, #6 and #54 reach half of it).
+              Conditional on one mock pipeline (explorer 2026-11-09; <Link href="/wide-binaries" style={{ color: 'var(--color-accent-blue)' }}>Wide Binaries</Link>).
+              A dated DR4 reading (the parent rate; S1 flag counts declared non-decisive in advance) is in <code>explorer/findings/</code> (2026-11-17).</li>
             <li><strong>Open clusters test modified inertia without an external field effect.</strong> This is Milgrom&apos;s 2011 frequency-by-frequency
               rule, read with an internal acceleration. Binary-cleaned dispersions sit near Newton: the Hyades at 0.21 &plusmn; 0.05 km/s are 0.91 of Newton,
               0.30 of the prediction and 3.3&sigma; below it with a 20% estimator systematic, and the Pleiades, M67 and NGC 188 are at 0.34&ndash;0.63.
@@ -328,7 +337,7 @@ export default function ForResearchers() {
               <a href="#gdot-llr" style={{ color: 'var(--color-accent-blue)' }}>6. Solar-neighbourhood &#x0120;/G no-go</a>: any
               G<sub>eff</sub> that depends on the matter density smoothed on 1&ndash;10 pc drifts as the Sun moves through its
               neighbourhood; lunar laser ranging holds &#x0120;/G to (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> yr<sup>&minus;1</sup>, so
-              |d ln G<sub>eff</sub>/d ln &rho;| &#x2272; 10<sup>&minus;8</sup>. 68 of 74 density-keyed laws die at 1 pc (62 at 10 pc), both
+              |d ln G<sub>eff</sub>/d ln &rho;| &#x2272; 10<sup>&minus;8</sup>&ndash;10<sup>&minus;7</sup> at 2&sigma;. 68 of 74 density-keyed laws die at 1 pc (62 at 10 pc), both
               Refracted Gravity calibrations included. Promoted from the TEST-02 card 2026-10-27 (a researcher persona asked why it was not here).
             </li>
             <li>
@@ -736,8 +745,9 @@ export default function ForResearchers() {
             author list corrected 2026-07-09; see revision notes).
             Existing bounds reach 10<sup>&#x2212;18</sup>–10<sup>&#x2212;30</sup> — a 15–27 OOM fine-tuning gap.
             The exclusion applies to any model whose defining commitment is an absolute preferred frame,
-            regardless of the other details. A LIV/quantum-foundations referee can cite this as a
-            naturalness problem — not a falsification. The distinction matters for the site&apos;s own
+            regardless of the other details. A LIV/quantum-foundations referee can cite it as: excluded at its
+            natural value, surviving only by fine-tuning or a custodial mechanism nobody has exhibited. That is a
+            naturalness problem, not a data falsification of the framework. The distinction matters for the site&apos;s own
             epistemic discipline: &ldquo;refuted&rdquo; is reserved for data contradictions; this is a severe
             fine-tuning gap (matching the electroweak hierarchy problem in kind, if not in degree).
           </div>
@@ -1063,8 +1073,8 @@ export default function ForResearchers() {
             &#x0120;/G = (d ln f/d ln &rho;)&middot;(v<sub>&#x2609;</sub>&middot;&nabla;ln &rho;<sub>s</sub>). With a density e-fold over
             &#x2113; = 1&ndash;10 pc the second factor is 2&times;10<sup>&minus;6</sup> to 2&times;10<sup>&minus;5</sup> yr<sup>&minus;1</sup>. Lunar
             laser ranging gives &#x0120;/G = (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> yr<sup>&minus;1</sup> (Hofmann &amp; M&uuml;ller 2018),
-            so <strong>|d ln G<sub>eff</sub>/d ln &rho;<sub>s</sub>| &#x2272; 4&times;10<sup>&minus;9</sup> to 4&times;10<sup>&minus;8</sup></strong>
-            &mdash; eight to nine orders below an O(1) sensitivity. <strong>Which density carries that gradient matters, and a referee will ask:</strong> an e-fold over 1&ndash;10 pc is the lumpy part of &rho;<sub>s</sub>, the individual stars and gas clouds that pass through the smoothing volume. If &rho;<sub>s</sub> is the total mass density and is smooth over 100 pc or more, the bound weakens by about 100, to &#x2272; 4&times;10<sup>&minus;7</sup>&ndash;4&times;10<sup>&minus;6</sup>, still six orders below O(1). In the small-x regime of this framework&apos;s C, d ln C/d ln &rho; = 1,
+            so at the 2&sigma; upper edge (|&#x0120;/G| &lt; 2.2&times;10<sup>&minus;13</sup> yr<sup>&minus;1</sup>) <strong>|d ln G<sub>eff</sub>/d ln &rho;<sub>s</sub>| &#x2272; 1&times;10<sup>&minus;8</sup> to 1&times;10<sup>&minus;7</sup></strong>
+            &mdash; seven to eight orders below an O(1) sensitivity. (Until 2026-11-18 this line divided the LLR <em>central value</em>, 7.1&times;10<sup>&minus;14</sup>, and printed 4&times;10<sup>&minus;9</sup> to 4&times;10<sup>&minus;8</sup>, which is not an upper limit; a researcher persona caught it. The 68/74 count below is unaffected: its script uses a looser cut, 10<sup>&minus;12</sup> yr<sup>&minus;1</sup>.) <strong>Which density carries that gradient matters, and a referee will ask:</strong> an e-fold over 1&ndash;10 pc is the lumpy part of &rho;<sub>s</sub>, the individual stars and gas clouds that pass through the smoothing volume. If &rho;<sub>s</sub> is the total mass density and is smooth over 100 pc or more, the bound weakens by about 100, to &#x2272; 1&times;10<sup>&minus;6</sup>&ndash;1&times;10<sup>&minus;5</sup> (2&sigma;), still five orders below O(1). In the small-x regime of this framework&apos;s C, d ln C/d ln &rho; = 1,
             so the whole gradient lands on &#x0120;/G.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
@@ -1073,7 +1083,7 @@ export default function ForResearchers() {
             survivors are &#x03B3; = 2 laws with &rho;<sub>c</sub> &le; 10<sup>&minus;3</sup> M<sub>&#x2609;</sub>/pc&sup3;, Newtonian to
             10<sup>&minus;8</sup> at the Sun. Even the floored published knee (&rho;<sub>crit</sub> = 0.029&middot;V&sup2; &asymp; 650
             M<sub>&#x2609;</sub>/pc&sup3;, &#x03B3; = 2) fails: d ln C<sub>f</sub>/d ln &rho; = (1&minus;&Omega;<sub>m</sub>)&middot;&#x03B3;x/C<sub>f</sub>
-            &asymp; 7&times;10<sup>&minus;4</sup> at the solar x &asymp; 1.5&times;10<sup>&minus;4</sup>, five orders above the bound at 1 pc.
+            &asymp; 7&times;10<sup>&minus;4</sup> at the solar x &asymp; 1.5&times;10<sup>&minus;4</sup>, about five orders above the 2&sigma; bound at 1 pc.
             Under the action-derived (L3) dynamics the field equation is unchanged, so the bound carries over exactly (explorer 2026-10-19).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>

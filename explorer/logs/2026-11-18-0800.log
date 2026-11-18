@@ -1,0 +1,46 @@
+Starting Synchronism Explorer Session at Wed Nov 18 08:00:01 PST 2026
+The site's "most portable negative", the lunar-laser-ranging bound on a gravitational constant keyed to ambient density, holds up as a bound. But its printed range is wrong at the 10-parsec end, and I found no published version of the argument in the six sources I read.
+
+**Decision:** I took `is-the-llr-density-keyed-g-bound-prior-art.md` over the A2ACW arm pre-registration. The LLR card is already public; the A2ACW write-up has until 2026-12-09.
+
+**1. Prior art: the ingredients are published, the combination was not found.**
+- Berengut & Flambaum 2010, eq. (4), already turn a spatial gradient times the observer's velocity into a laboratory drift, for α.
+- Olive & Pospelov 2008, eq. (2.7), already key couplings on the ambient density, but they hold G fixed.
+- None of the six sources applies lunar laser ranging to a density-keyed G. That means "not found", not "new". The likeliest places for an earlier statement (Uzan 2011 §5.4.2/§6; Clifton, Mota & Barrow 2005) were not read. Uzan's later sections could not be loaded.
+
+**2. Measured gradient (Gaia DR3, every star within 30 pc, with radial velocities).**
+- The site assumes the density changes by a factor e over the smoothing length ℓ. That only holds at ℓ = 1 pc, where the rate is 2.3×10⁻⁵ per year and comes from α Cen and Barnard's Star.
+- At ℓ = 10 pc about 2,600 stars sit in the smoothing kernel and largely cancel. The rate is 4–8×10⁻⁸ per year, 25–50× below the site's figure.
+- So the 2σ bound on d ln G / d ln ρ is about 1×10⁻⁸ at 1 pc and 3–6×10⁻⁶ at 10 pc, not "1×10⁻⁸ to 1×10⁻⁷".
+- Beyond 30 pc the Galaxy's own density gradient sets a floor of about 5×10⁻⁵.
+- The bound stays at least about four orders of magnitude below a sensitivity of order one at every ℓ. The 68/74 kill count does not change.
+- The same card calls the 100-pc case both "five orders" and "six orders" below that.
+- The script reproduces the earlier 09-23 hand-list value exactly. About 30% of radial velocities are missing and were drawn at random, and masses come from a rough brightness-to-mass relation.
+
+**3. Scope.** Screened theories (chameleon, symmetron, stiff scalar fields) and couplings keyed on the gravitational potential escape the bound. In each, a body pins the field to its own interior density. The framework can't use that exit: its own wide-binary and galaxy-fit requirements need a smoothing length far larger than any body.
+
+**Scorecard against the pre-registration (committed before any code, `6c15fc7`):** 5 held, 1 half, 1 failed. Both misses were my physics shortcuts:
+- **Failed:** the gas-cloud edge estimate assumed the cloud is larger than the smoothing length, which is false at 10 pc. Gas never dominates the stars.
+- **Half:** "fields respond only to the potential" is wrong for stiff massive scalars like Olive–Pospelov's.
+
+**For the maintainer:** the finding gives replacement wording for `/for-researchers#gdot-llr`. It replaces the range and assumption (b), adds a scope sentence, and credits the two prior-art papers.
+
+**So what?** The bound is now tied to named, measured objects instead of an assumed rate. Separately, the 09-23 script had printed a figure 70× smaller than the site's sentence for two months without anyone comparing them; I saved that as a memory.
+
+Pushed as `2d55fe4`: finding, script and output, session log, and the topic moved to `done/`.
+
+Files are in `explorer/`:
+- `findings/llr-density-keyed-g-bound-ingredients-are-prior-art-the-combination-is-not-and-the-10pc-end-was-50x-too-strong.md`
+- `scripts/llr_bound_measured_gradient.py`
+- `scripts/llr_bound_measured_gradient_output.txt`
+- `logs/2026-11-18.md`
+
+Sources:
+- [Berengut & Flambaum, arXiv:1008.3957](https://ar5iv.labs.arxiv.org/html/1008.3957)
+- [Olive & Pospelov, arXiv:0709.3825](https://ar5iv.labs.arxiv.org/html/0709.3825)
+- [Shaw & Barrow, gr-qc/0512117](https://arxiv.org/abs/gr-qc/0512117)
+- [Belgacem et al., arXiv:1812.11181](https://arxiv.org/pdf/1812.11181)
+- [Will 2014, arXiv:1403.7377](https://ar5iv.org/html/1403.7377)
+- [Uzan 2011, arXiv:1009.5514](https://arxiv.org/pdf/1009.5514)
+- [Linsky EGU2020 abstract](https://meetingorganizer.copernicus.org/EGU2020/EGU2020-1410.html)
+- [Linsky, Redfield & Tilipman 2019](https://ar5iv.arxiv.org/html/1910.01243)

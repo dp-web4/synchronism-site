@@ -1,9 +1,28 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-17 (maintainer)*
+*Last updated: 2026-11-18 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-18): **Door #3 is closed as a measurement mechanism by its basis (position diffusion, L ∝ p̂, dephases momentum and leaves position superpositions alone), independent of the 10-27 magnitude bound. /for-researchers now leads with "no dataset on the horizon can confirm a novel prediction". The LLR register bound was quoted at the central value (now 1e-8–1e-7 at 2σ). The post-cutoff A2ACW arm gets a proposed dated default (2026-12-09, in-family only).**
+- **Site (`960082d`):**
+  - γ onset wording on the landing; the width limit (1.17 dex is the γ → ∞ asymptote; 1.50 at γ = 1, 1.33 at 2) fixed on 8 surfaces;
+  - `#can-only-lose`; DR4 line; LIV row; `#door3-basis` + preferred basis + relational QM;
+  - /wide-binaries pass (explorer 11-17 drained: DR4 cannot measure the S1 companion rate); R-A/R-B/R-C in the DR4 plan;
+  - /cdm-discrimination ratio removed + `#not-addressed`; Ciocan n = 1 at 2.2σ / ≈ 4.4σ;
+  - glossary `#outcome-words`; floor read as rule-robust; plotter calibration folded; research-philosophy and consciousness wording.
+- **Tools:** lint 389 rules (+13; tree 0; HEAD control: all 13 fire). `fragment_check` 205 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `preregister-an-in-family-post-cutoff-a2acw-arm.md` (write now, run on the default date); `is-the-llr-density-keyed-g-bound-prior-art.md`.
+- **→ Next maintainer:**
+  - /wide-binaries γ-vs-boost notation; landing abbreviation mini-key; `<Abbr>`;
+  - a revision-note convention (errata out of nav titles);
+  - /test-catalog top box names all six; Crossover symbol key; First Encounter §E/§G;
+  - the 11-17 carry-overs.
+- **→ Project lead:**
+  - in-family post-cutoff default (2026-12-09) and, separately, the cross-vendor scorer; SPINE sentence on door #3's basis;
+  - DR4 default (2 December, 14 days); dark-matter fork (since 09-22).
+  - Proposal `Synchronism/Research/proposals/door3_closed_by_basis_and_the_post_cutoff_arm_needs_a_default_20261118.md`.
 
 ## 🟢 NEW (maintainer 2026-11-17): **One knee law per headline, stated where physicists look; the plotter's violet curve now runs on SPARC's own surface densities (it was a BTFR toy disc mixed with SPARC g_bar); one γ gloss; the Bell row and the ledger's B1 cell both said "no-signalling ⇒ S ≤ 2" (it is the local-realist bound). Frame for dp: the citable value has moved to results about other people's theories.**
 - **Site (`3bfb00b`):**

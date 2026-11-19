@@ -1,0 +1,15 @@
+**Short answer:** I don't know of a published model with this exact C(ρ)=tanh(γ ln(1+ρ/ρ_crit)). The structure is not new, though, and the "emergence" claim is mostly a calibration identity. I answered from memory and ran no searches, so check the citations.
+
+**Known framework.** The construction is a matter-only modified Friedmann equation, H² = (8πG/3)·g(ρ_m), with g = ρ_m/C. This is the generic form of:
+- **Cardassian expansion** (Freese & Lewis, Phys. Lett. B 540, 1 (2002), astro-ph/0201229). It has H² = Aρ + Bρⁿ, with no Λ and an effective dark sector derived from matter alone. Your model is the Cardassian class with a different g(ρ). The "dark energy" is ρ_m(1/C − 1), the same kind of term they call an effective fluid.
+- **Density-dependent or running G**. Related ideas are RG-improved cosmology with running G (Bonanno & Reuter, Phys. Rev. D 65, 043508 (2002)) and running-vacuum models (Shapiro & Solà, JHEP 0202:006 (2002)). I am less sure these match your model, so treat them as uncertain.
+- Other matter-only or unified-dark-sector models with the same logic include the Chaplygin gas (Kamenshchik, Moschella & Pasquier, Phys. Lett. B 511, 265 (2001)) and DGP self-acceleration (Dvali, Gabadadze & Porrati, Phys. Lett. B 485, 208 (2000)).
+- The functional form is like a MOND-style interpolating function, but applied to density rather than acceleration. I know of no published use of this specific tanh-log form in cosmology. I could not rule it out without a search.
+
+**Critical points.**
+1. **Calibration is tautological.** Setting C₀ = Ω_m gives ρ_m0/C₀ = 3H₀²/8πG, which is just the definition of Ω_m. Reproducing H₀ is not a prediction, and (1−C₀)/C₀ = 7/3 is put in by hand. Real tests are the shape of H(z), w_eff(z), distances, and growth. Any Cardassian-type model can be tuned to match H₀ in the same way.
+2. **Low-density limit.** For ρ ≪ ρ_crit, C ≈ γρ/ρ_crit, so ρ_eff → ρ_crit/γ. This is a constant, so the model behaves like an emergent Λ with Λ-scale ρ_crit/γ. That scale is a free parameter, so the cosmological-constant coincidence problem is relocated, not solved.
+3. **Consistency.** If G varies with ρ, you must check energy-momentum conservation and the Bianchi identity. In the Cardassian approach one defines an effective pressure so that ρ_eff obeys continuity. You also need to derive perturbations and growth, which a modified Friedmann equation alone does not fix. A 1/C enhancement of G at low density, such as in voids and galaxy outskirts, also needs checking against local and structure-formation constraints.
+4. The word "coherence" has no independent content here unless C is derived from a microphysical mechanism. As stated, C is a phenomenological ansatz.
+
+**Verdict:** The specific C(ρ) is probably unpublished (uncertain). The mechanism is a special case of the Cardassian-type matter-only modified Friedmann class, with an effective Λ at late times.

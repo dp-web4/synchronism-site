@@ -1,0 +1,138 @@
+A  R1 r1  family=1  member=0  paper=0
+A  R1mu r1  family=1  member=1  paper=0
+A  R2 r1  family=1  member=0  paper=0
+A  R3 r1  family=1  member=0  paper=0
+A  R4 r1  family=1  member=1  paper=1
+C  R1 r1  family=1  member=1  paper=0
+C  R1 r2  family=1  member=1  paper=1
+C  R1 r3  family=1  member=1  paper=1
+C  R1mu r1  family=1  member=1  paper=1
+C  R1mu r2  family=1  member=1  paper=1
+C  R1mu r3  family=1  member=1  paper=1
+C  R2 r1  family=1  member=1  paper=1
+C  R2 r2  family=1  member=1  paper=1
+C  R2 r3  family=1  member=1  paper=1
+C  R3 r1  family=1  member=0  paper=0
+C  R3 r2  family=1  member=0  paper=0
+C  R3 r3  family=1  member=0  paper=0
+C  R4 r1  family=1  member=1  paper=1
+C  R4 r2  family=1  member=1  paper=1
+C  R4 r3  family=1  member=1  paper=1
+C  X1 r1  decoy_flag=0
+C  X1 r2  decoy_flag=0
+C  X1 r3  decoy_flag=0
+C  X2 r1  decoy_flag=0
+C  X2 r2  decoy_flag=0
+C  X2 r3  decoy_flag=0
+C  X3 r1  decoy_flag=0
+C  X3 r2  decoy_flag=0
+C  X3 r3  decoy_flag=1
+C  X4 r1  decoy_flag=0
+C  X4 r2  decoy_flag=0
+C  X4 r3  decoy_flag=0
+Cp R1 r1  family=1  member=1  paper=0
+Cp R1 r2  family=1  member=1  paper=0
+Cp R1mu r1  family=1  member=1  paper=1
+Cp R1mu r2  family=1  member=1  paper=1
+Cp R2 r1  family=1  member=1  paper=1
+Cp R2 r2  family=1  member=1  paper=1
+Cp R3 r1  family=1  member=1  paper=1
+Cp R3 r2  family=1  member=0  paper=0
+Cp R4 r1  family=1  member=1  paper=1
+Cp R4 r2  family=1  member=1  paper=1
+Cp X1 r1  decoy_flag=1
+Cp X1 r2  decoy_flag=0
+Cp X2 r1  decoy_flag=0
+Cp X2 r2  decoy_flag=0
+Cp X3 r1  decoy_flag=0
+Cp X3 r2  decoy_flag=0
+Cp X4 r1  decoy_flag=0
+Cp X4 r2  decoy_flag=0
+D  R1 r1  family=1  member=1  paper=0
+D  R1 r2  family=1  member=1  paper=1
+D  R1mu r1  family=1  member=1  paper=1
+D  R1mu r2  family=1  member=1  paper=1
+D  R2 r1  family=1  member=1  paper=1
+D  R2 r2  family=1  member=1  paper=1
+D  R3 r1  family=1  member=0  paper=0
+D  R3 r2  family=1  member=0  paper=0
+D  R4 r1  family=0  member=1  paper=1
+D  R4 r2  family=0  member=1  paper=1
+D  X1 r1  decoy_flag=0
+D  X1 r2  decoy_flag=0
+D  X2 r1  decoy_flag=0
+D  X2 r2  decoy_flag=0
+D  X3 r1  decoy_flag=0
+D  X3 r2  decoy_flag=0
+D  X4 r1  decoy_flag=0
+D  X4 r2  decoy_flag=0
+Df R1 r1  family=1  member=0  paper=0
+Df R1 r2  family=1  member=0  paper=0
+Df R1mu r1  family=1  member=0  paper=0
+Df R1mu r2  family=1  member=1  paper=0
+Df R2 r1  family=1  member=0  paper=0
+Df R2 r2  family=1  member=0  paper=0
+Df R3 r1  family=1  member=1  paper=1
+Df R3 r2  family=1  member=1  paper=1
+Df R4 r1  family=1  member=1  paper=1
+Df R4 r2  family=1  member=1  paper=1
+Df X1 r1  decoy_flag=0
+Df X1 r2  decoy_flag=0
+Df X2 r1  decoy_flag=0
+Df X2 r2  decoy_flag=0
+Df X3 r1  decoy_flag=0
+Df X3 r2  decoy_flag=0
+Df X4 r1  decoy_flag=0
+Df X4 r2  decoy_flag=0
+E  R1 r1  family=1  member=0  paper=0
+E  R1 r2  family=1  member=0  paper=0
+E  R1 r3  family=1  member=1  paper=0
+E  R1mu r1  family=1  member=1  paper=0
+E  R1mu r2  family=1  member=1  paper=0
+E  R1mu r3  family=1  member=1  paper=0
+E  R2 r1  family=1  member=0  paper=0
+E  R2 r2  family=1  member=0  paper=0
+E  R2 r3  family=1  member=0  paper=0
+E  R3 r1  family=1  member=0  paper=0
+E  R3 r2  family=1  member=0  paper=0
+E  R3 r3  family=1  member=0  paper=0
+E  R4 r1  family=1  member=1  paper=1
+E  R4 r2  family=1  member=1  paper=1
+E  R4 r3  family=1  member=1  paper=1
+E  X1 r1  decoy_flag=0
+E  X1 r2  decoy_flag=0
+E  X1 r3  decoy_flag=0
+E  X2 r1  decoy_flag=0
+E  X2 r2  decoy_flag=0
+E  X2 r3  decoy_flag=0
+E  X3 r1  decoy_flag=0
+E  X3 r2  decoy_flag=0
+E  X3 r3  decoy_flag=0
+E  X4 r1  decoy_flag=0
+E  X4 r2  decoy_flag=0
+E  X4 r3  decoy_flag=0
+
+cell E: R1-R3 family 9/9 member 3/9 paper 0/9 | R4 member 3/3 paper 3/3 | decoy regex-flags 0/12
+cell C: R1-R3 family 9/9 member 6/9 paper 6/9 | R4 member 3/3 paper 3/3 | decoy regex-flags 1/12
+cell Cp: R1-R3 family 6/6 member 5/6 paper 5/6 | R4 member 2/2 paper 2/2 | decoy regex-flags 1/8
+cell D: R1-R3 family 6/6 member 4/6 paper 4/6 | R4 member 2/2 paper 2/2 | decoy regex-flags 0/8
+cell Df: R1-R3 family 6/6 member 3/6 paper 2/6 | R4 member 2/2 paper 2/2 | decoy regex-flags 0/8
+cell A: R1-R3 family 3/3 member 1/3 paper 0/3 | R4 member 1/1 paper 1/1 | decoy regex-flags -
+
+HAND OVERRIDES (2026-11-19, read by the designer; the finding's table uses these)
+R1 (mis-keyed): regex member hits are false — the x/(x+2) pattern matches, but under g_bar keying that is NOT simple mu.
+  All 13 R1 responses flag the inconsistency (no deep-MOND limit / g_obs = g_bar + 2a0'); 0/13 claim simple mu.
+R1mu registered key (identity x/(x+2) counts): E 3/3, C 3/3, Cp 2/2, D 2/2, Df 1/2 (r2 identity only), A 1/1.
+R1mu strict (names simple mu / Famaey-Binney): E 1/3 (r2), C 3/3, Cp 2/2, D 2/2, Df 0/2, A 1/1.
+  E r1 regex 'simple' hit is in a next-steps list, not an identification.
+F&B locators (correct = MNRAS 363, 603 / astro-ph/0506723; PRD 71, 121301 is Mitra 2005, DAMA):
+  C r1 both (hedged; counted hit), C r2 MNRAS, C r3 PRD (confab), Cp r1 MNRAS, Cp r2 PRD (confab),
+  D r1 MNRAS, D r2 astro-ph/0501362 + PRD (confab). Df: none. => recalled F&B wrong-locator 4/7.
+R2 Cardassian: C 3/3, Cp 2/2, D 2/2, Df 0/2, E 0/3, A 0/1; all named locators PLB 540, 1 / astro-ph/0201229 correct.
+R3 RG: Cp r1 member hit, arXiv 1603.04950 (wrong; correct 1603.04943) => paper miss. Df r1, r2: 1603.04943 correct.
+  No-retrieval RG member: 1/11 (E3, C3, Cp2, D2, A1).
+R4: member 13/13; journal locator (PRL 93, 191301 / gr-qc/0403053) 9/13 (E 0/3, A 0/1 give authors+year only).
+Decoys: all regex flags (C X3 r3, Cp X1 r1) read as 'not published' => 0/48 false IDs. X2 Milgrom named: C 3/3, E 0/3.
+D (tools permitted, 'you may search'): 18/18 state they did not search.
+Corrected cell totals R1mu+R2+R3 member (registered/strict) and correct locator:
+  E 3/9 / 1/9, 0/9 | C 6/9 / 6/9, 5/9 | Cp 5/6 / 5/6, 3/6 | D 4/6 / 4/6, 3/6 | Df 3/6 / 2/6, 2/6 | A 1/3 / 1/3, 0/3

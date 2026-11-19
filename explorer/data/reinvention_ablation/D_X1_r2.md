@@ -1,0 +1,13 @@
+**Short answer:** I haven't found this exact construction published, and I didn't search. The mechanism is a standard one, though, and the bound is a rough application of it.
+
+**What is known (from memory, not checked in this session):**
+- **Varying G from a scalar field.** Any theory where G depends on a scalar field sourced by local matter has a spatial gradient of G. A body moving through that gradient sees a secular drift, Ġ = v·∇G. Scalar–tensor theories (Brans–Dicke, Damour–Esposito-Farèse) and environment-dependent ones (chameleon, symmetron, Vainshtein-type) all share this structure. Citations (uncertain on details):
+  - Khoury & Weltman 2004, PRL 93, 171104, and PRD 69, 044026, for the chameleon.
+  - Hinterbichler & Khoury 2010, PRL 104, 231301, for the symmetron.
+- **Reviews.** Uzan, *Living Rev. Relativ.* 14, 2 (2011), "Varying constants, gravitation and cosmology", reviews Ġ/G bounds and the link to spatial and temporal variation. Will & Nordtvedt-type analyses treat Ġ and galactic-scale gradients in the parametrized post-Newtonian framework. I can't give a specific citation for the latter.
+- **LLR bound.** Williams, Turyshev & Boggs 2004, PRL 93, 261101, gave Ġ/G = (4±9)×10⁻¹³ yr⁻¹. Hofmann & Müller 2018 (CQG 35, 035015) gave a somewhat tighter bound, with the exact number uncertain. So |Ġ/G| ≲ 10⁻¹³ yr⁻¹ is conventional.
+- **Galactic-motion Ġ.** Papers treat the Sun's motion through the galactic dark-matter or scalar background as a source of apparent Ġ. I recall such discussions but can't give a reliable citation.
+
+**Sanity check of the numbers:** v⊙ ≈ 20 km/s ≈ 2×10⁻⁵ pc/yr. For ∇ln ρ̄ ~ 1/ℓ with ℓ = 1–10 pc, v⊙∇ln ρ̄ is about 2×10⁻⁶–2×10⁻⁵ yr⁻¹. Dividing 10⁻¹³ by that gives d ln f/d ln ρ ≲ 10⁻⁸–10⁻⁷. The stated upper end of 10⁻⁵ needs a gradient scale of about 1 kpc, or a smoother ρ̄. The range is plausible, but the gradient assumption should be stated explicitly. The local gradient also depends on ℓ, and a smoothed disk-like density has a much smaller gradient than 1/ℓ. The "independent of the form of f" claim holds only at linear order, where it's just the chain rule.
+
+**Assessment:** It looks like a straightforward chain-rule application of known physics, not a new model. The specific "G = G₀ f(ρ̄_ℓ), smoothed over ℓ, LLR-bounded via the Sun's motion" framing resembles environment-dependent-G proposals, including some made to address the Hubble tension or the dark-matter phenomenology. I can't name one that matches. Treat novelty as unlikely at the level of the mechanism and possible only in the specific bound. A real literature search (ADS/arXiv for "density-dependent G", "Ġ galactic gradient", "LLR chameleon") would be needed before claiming priority.

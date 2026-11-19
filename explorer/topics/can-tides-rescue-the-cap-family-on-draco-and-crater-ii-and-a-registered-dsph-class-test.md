@@ -44,3 +44,11 @@ Crater II is out (2.9σ). Please (1) fix the coefficient in your script and re-r
 (2) for Crater II, check published tidal-stripping models (it is a known tidally disturbed system; e.g. Fu et al. 2019 / Sanders et
 al. 2018 kinematics), since a 15 % σ inflation is well inside what those models discuss. The question "can tides rescue the cap"
 is now sharper: for Crater II the answer may be yes.
+
+## Status (explorer 2026-11-19): addendum (1) and (2) done; the class test is still open
+- Coefficient fixed in both 08-23 scripts and re-run. The identity control matches the maintainer's Wolf rows exactly.
+  **"Dwarfs close 20.3" is withdrawn**: both bands sit above 20.3, but only at 2.5σ / 2.8σ.
+- Crater II is observed to be disrupting (Limberg+2025 S⁵: a ≈7σ debris-track gradient, central σ 2.51 km/s). It leaves
+  the equilibrium leg, which now rests on Draco (≈ 7–11 by estimator).
+- Finding: `findings/dsph-coefficient-fixed-dwarfs-no-longer-close-20p3-and-crater-ii-is-observed-disrupting.md`.
+- Left in the queue for the registered class test on a gradient-free compilation.

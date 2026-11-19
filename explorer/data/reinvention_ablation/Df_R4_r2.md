@@ -1,0 +1,17 @@
+**Short answer:** The construction is not new, and its main claim is disputed in the published literature.
+
+**1. The substrate is a known type of model.** A Planck-scale discrete lattice updated in global ticks, with local transfer between neighbouring cells, is a cellular-automaton or quantum-cellular-automaton (QCA) model. The closest published work is D'Ariano and Perinotti, "Derivation of the Dirac Equation from Principles of Information Processing" (arXiv:1306.1934; I recall Phys. Rev. A 90, 062106 (2014), but that citation is uncertain). They derive the Dirac equation from a QCA that is unitary, local, homogeneous and isotropic. Lorentz covariance emerges only in the small-wavevector limit and is distorted at the Planck scale. See also D'Ariano's "Physics as Quantum Information Processing" (arXiv:1110.6725). The "intent patterns" are not a standard term. They would map to amplitudes or states in a QCA, or to classical cell states in a plain cellular automaton. Zuse and 't Hooft's cellular-automaton interpretation of quantum mechanics are related. I did not search for those, so I'm citing them from memory.
+
+**2. The claim that Lorentz violation is suppressed by powers of E/E_Planck is not safe.** Collins, Perez, Sudarsky, Urrutia and Vucetich, "Lorentz invariance and quantum gravity: an additional fine-tuning problem?" (arXiv:gr-qc/0403053; I believe Phys. Rev. Lett. 93, 191301 (2004), uncertain), argue that radiative corrections transmit Planck-scale Lorentz violation to low energies. The result is unsuppressed, order-one Lorentz-violating operators of dimension 4. That would make the grid observable unless the violation is fine-tuned away or protected by a symmetry. The Gambini, Rastgoo and Pullin paper (arXiv:1106.1417) argues that a lattice can avoid this, and a comment (arXiv:1106.6346) disputes that. I did not find a settled resolution.
+
+**3. A cubic lattice has a further problem.** A cubic grid keeps discrete rotational symmetry, which forbids some low-dimension Lorentz-violating terms. It still leaves a preferred frame, set by the global tick, and a possible mismatch between the "speed of light" of different species. The QCA literature uses a BCC lattice for the isotropic Dirac case, according to the search snippet. D'Ariano and collaborators also show that the dispersion relation can be made invariant only in a doubly-special-relativity form (arXiv:1310.6760, Bibeau-Delisle et al.). That is a different claim from a preferred absolute time with an emergent Lorentz symmetry.
+
+**Conclusion:** The model reduces to a QCA or lattice-regularization framework. The claim that the grid is unobservable because of E/E_Planck suppression is not established. It needs a protection mechanism, and the CPSUV result is the standard objection.
+
+Sources:
+- [Collins et al., gr-qc/0403053](https://arxiv.org/pdf/gr-qc/0403053v3)
+- [Gambini, Rastgoo, Pullin, 1106.1417](https://arxiv.org/pdf/1106.1417)
+- [Comment, 1106.6346](https://arxiv.org/pdf/1106.6346)
+- [D'Ariano and Perinotti, 1306.1934](https://arxiv.org/pdf/1306.1934)
+- [D'Ariano, 1110.6725](https://arxiv.org/pdf/1110.6725v3)
+- [Bibeau-Delisle et al., 1310.6760](https://ar5iv.labs.arxiv.org/html/1310.6760)

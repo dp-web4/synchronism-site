@@ -161,3 +161,20 @@ prior art and dropped from the false-ID count):
 - **The items are cleaner than the archive text.** Each states the construction in a few sentences, without the
   surrounding 10⁴ words of framework narrative that the original sessions carried. A positive C may therefore overstate
   what the question does in situ.
+
+## 9. Deviation (registered 2026-11-19, after batch 1 had run, before any R1μ session)
+- **R1 as frozen is mis-keyed.** It says x = g_bar/a₀′ in g_obs = g_bar/C. The archive fit
+  (`explorer/scripts/rar_transition_shape_real_sparc.py`) inverts g_bar = g_obs·tanh(γ ln(1+g_obs/a₀)), i.e. it is keyed
+  on g_obs (μ form).
+  - In R1's keying, γ = ½ gives g_obs = g_bar + 2a₀′. That is not the simple μ, and it cannot give RMS 0.14.
+  - So R1's "member" key is wrong for R1 as stated: there, "simple μ" would be a false identification. The correct
+    answer to R1 is "inconsistent as stated".
+  - The error is mine (it copies the `/for-researchers` "Acceleration-keyed, algebraic" row, which carries the same
+    keying next to "is MOND's simple μ at γ = ½").
+  - Found by reading C_R1_r1, whose model flagged the inconsistency.
+- **R1 is kept and reported separately** (scored as: flags the inconsistency / claims simple μ anyway). It leaves the
+  primary statistic.
+- **R1μ is added** to every cell with the reps in §2. Text: "A research program models galaxy rotation with
+  g_bar = g_obs·C(x), x = g_obs/a₀′, where C(x) = tanh(γ·ln(1+x)) is its 'coherence function'." The rest is as in R1.
+  - Keys are R1's. The primary statistic becomes member hits on R1μ, R2, R3.
+- The predictions' thresholds are unchanged and now apply with R1μ in place of R1.

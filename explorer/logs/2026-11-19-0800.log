@@ -1,0 +1,50 @@
+Starting Synchronism Explorer Session at Thu Nov 19 08:00:01 PST 2026
+I ran the reinvention ablation the maintainer proposed (pre-registered before any session ran). On the way, auditing the record behind it changed its headline claim, and I fixed the dSph coefficient. Everything is committed and pushed (`05284fc`). The ablation is a pilot: one model (Sonnet 5.5), 2–3 runs per cell, and I wrote and scored the items myself (mechanical regex first, every hand override listed).
+
+**1. The record says less than the site claims.** Checked against git, the archive's own 3,308 sessions named the broad theory family in every one of the four cases:
+- Session #574: "a reparametrization of MOND".
+- Session #100: "Modified Friedmann".
+- Session #68: compared directly against MOND.
+- Sessions #617–621: "Lorentz violation, already excluded".
+
+What they never did was name the specific published model or paper. So "cited in none of 3,308 sessions" holds only at that finer level. Two of the four constructions (the Refracted Gravity field equation and the γ ≈ 0.49 fit) were built by the site's explorer lane, which has literature search. It took 22 and 73 days to notice them.
+
+**2. The ablation** (hits = naming the specific published model, on the simple μ, Cardassian and Refracted Gravity items):
+
+| Cell | Hits |
+|---|---|
+| Neutral critique, no tools | 3/9 (1/9 if it must name the model) |
+| Asked "is this already published?", no tools | 6/9 |
+| Same question, search permitted | 4/6, and it never searched (18/18 sessions) |
+| Same question, search required | 3/6 |
+| Adversarial debate, no tools | 1/3 |
+
+- **Required search trades one kind of find for another.** It found Refracted Gravity (2/2, correct arXiv id; memory found it in only 1 of 11 sessions, with a wrong id). It lost Cardassian (3/3 from memory → 0/2): the model searched for the literal formula, found nothing, and reported "not published".
+- **Memory gets the paper right and the locator wrong, the same way each time.** 4 of 7 Famaey & Binney citations gave "Phys. Rev. D 71, 121301", which is actually Mitra 2005 on DAMA.
+- **Decoys:** 0 false identifications in 48 sessions.
+- **The Lorentz-violation objection** (Collins et al. 2004) was found in all 13 sessions across every cell, at the level of argument and authors.
+- **Scorecard:** 5 of 6 predictions held. The one that failed is the one I most expected: that retrieval settles what memory notices.
+
+The sentence the finding offers as citable: asking the question surfaces what the model already knows; optional search goes unused; required search finds obscure prior art and suppresses what it already knew. That points to a two-pass prior-art role (recall candidates first, then search to verify each), which is the obvious next test.
+
+**3. A live site error, caught by the experiment.** My first version of the simple-μ item keyed C on g_bar. That is my own transcription error, and it matches the "Acceleration-keyed, algebraic" row on /for-researchers (src/app/for-researchers/page.tsx:96), which also claims "MOND's simple μ at γ = ½". That keying gives g_obs = g_bar + 2a₀, not MOND, and /coherence-function already says so. All 13 sessions given that version flagged it as inconsistent, and the row is routed to the maintainer. I added a correctly keyed item, and it and two other mid-run fixes were each registered and committed before the sessions they affect:
+- the first search runs couldn't actually use their tools (print mode needs `--allowedTools`), so they were relabelled;
+- with tools permitted the model still didn't search, so I added the required-search cell.
+
+**4. dSph fix.** My 08-23 scripts used Wolf's coefficient 4 with a 3D radius; it should be 3. With that fixed:
+- Required boosts drop to 45.1 (Crater II) and 76.1 (Draco), exactly matching the maintainer's independent script.
+- "Dwarfs close 1/Ω_b = 20.3" is withdrawn: both clear it at only 2.5σ and 2.8σ, under the scripts' 3σ rule.
+- Crater II is now observed to be disrupting ([Limberg et al. 2025](https://arxiv.org/abs/2512.02177): a ≈7σ velocity gradient along its debris track). It can't serve as an equilibrium test, so the dwarf exclusion of the cap family rests on Draco alone, at about 7–11 depending on the estimator.
+
+**Caveats:**
+- The items are short distilled versions of the archive text, so these hit rates are an upper bound on what happens inside a full session.
+- The suppression under required search may come from my prompt clause "cite only what you found or can verify" rather than from searching itself. The next cell should drop that clause.
+
+Files are in `explorer/findings/`:
+- reinvention-ablation-the-question-finds-recallable-members-retrieval-finds-obscure-ones-and-forced-search-displaces-recall.md
+- dsph-coefficient-fixed-dwarfs-no-longer-close-20p3-and-crater-ii-is-observed-disrupting.md
+- PREREG-reinvention-ablation-question-vs-retrieval-20261119.md
+
+The session log is `explorer/logs/2026-11-19.md` and the raw sessions are in `explorer/data/reinvention_ablation/`.
+
+Sources: [Limberg et al. 2025, arXiv:2512.02177](https://arxiv.org/abs/2512.02177) · [Vivas et al. 2025, arXiv:2512.05535](https://arxiv.org/abs/2512.05535) · [Ji et al. 2021, arXiv:2106.12656](https://arxiv.org/abs/2106.12656) · [arXiv:2112.01540](https://arxiv.org/pdf/2112.01540) · [APS PRD vol. 71 issue 12](https://journals.aps.org/prd/issues/71/12) · [arXiv:1603.04943](https://arxiv.org/pdf/1603.04943)

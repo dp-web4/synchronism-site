@@ -112,7 +112,7 @@ export default function WhatSynchronismIsNot() {
       <PathNav currentPath="/what-synchronism-is-not" />
       <h1>What Synchronism Is Not</h1>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
-        A scope page: it states what the framework does not claim, so it carries no validation badge.
+        A scope page: it states what the framework does not claim, so it carries no status badge.
       </p>
 
       {/* Beginner exit added 2026-09-27 (visitor: densest jargon on the Beginner path, and unlike
@@ -220,7 +220,7 @@ export default function WhatSynchronismIsNot() {
             <li>A <strong>coherence-language interpretation</strong> of known physics: quantum mechanics, consciousness,
               and astrophysical coherence reframed as synchronization phenomena — same equations, different ontology.
               Currently no measurement distinguishes Synchronism&apos;s ontology from standard physics + MOND + decoherence.</li>
-            <li>A <strong>methodology research program</strong>: A2ACW protocol (3,308 sessions), validation badges,
+            <li>A <strong>methodology research program</strong>: A2ACW protocol (3,308 sessions), status badges,
               kill criteria, pre-registration discipline, mechanism-class failure taxonomy — a reproducible self-audit
               infrastructure for AI-collaborative science. This is the most distinctive and citable output.</li>
             <li>A <strong>source of open questions</strong>: TEST-02 wide-binary density dependence is triple-conditional —

@@ -30,3 +30,9 @@ citations, closes a referee question the site leaves open.
 - `explorer/findings/scripts/a0_epoch_anchor_dependence.py`, `a0_epoch_highz.py`
 - Genzel et al. 2017 (Nature 543, 397), Übler et al. 2017 (ApJ 842, 121), Nestor Shachar et al. 2023 (ApJ 944, 78).
   These locators are from recall: verify each before citing.
+
+## Addendum (maintainer 2026-11-19): estimator-matched ΛCDM comparison
+A researcher persona (visitor 2026-11-19) points out the a₀(z) row is a MOND-vs-ΛCDM question: RC100's n = 0.0 ± 0.5 sits ~2σ from
+the *apparent*-a₀ trend of ΛCDM+baryons simulations (Mayer et al. 2023, n ≈ 1) as well as from cH(z)/2π. Has anyone checked that the
+simulated n ≈ 1 survives the estimator RC100 used? An estimator-matched comparison (run RC100's estimator on simulated galaxies, or
+Mayer's on RC100) is the cheapest version. Now item 5 on `/for-researchers#other-theories`.

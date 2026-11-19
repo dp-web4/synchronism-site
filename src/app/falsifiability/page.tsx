@@ -53,7 +53,7 @@ const examples: {
     tier: 'Tier 1',
     reach: 'fired',
     note:
-      'Executed 2026-07-15. 106/153 = 69% of SPARC galaxies exceed the ceiling; the maximum observed f_DM = 0.927 would require a boost B ≥ 13.7. The ceiling is algebraic, so no parameter choice rescues it. Caveat now under review: the ceiling constant 1/Ω_m = 3.17 is itself underived — see the open item below.',
+      'Executed 2026-07-15. 106/153 = 69% of SPARC galaxies exceed the ceiling; the most dark-matter-dominated disc (f_DM = 0.927, B = 13.7) is a sample maximum, not a bound: with distance, inclination, M/L and gas profiled, the rotation curves exclude caps up to B_max ≈ 7.5 at 3σ (≈ 5.7 after a 153-disc trials correction), and dwarf spheroidals exclude them up to ≈ 11 (Wolf et al. 2010 mass estimator; about 7 under Walker et al. 2009). The ceiling is algebraic, so no parameter choice inside the law rescues it. Caveat now under review: the ceiling constant 1/Ω_m = 3.17 is itself underived — see the open item below.',
   },
   {
     id: 'TEST-02',
@@ -249,12 +249,14 @@ export default function Falsifiability() {
             larger ceiling, TEST-10&apos;s median-based statistic passes.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
-            <strong>The kill still stands</strong>, because the maximum observed f<sub>DM</sub> = 0.927
-            requires B ≥ 13.7 and exceeds every candidate ceiling — but the robust statistic is the
-            maximum, not the &ldquo;69% exceed&rdquo; median figure the site currently headlines. A
-            ceiling-definition sweep, structurally analogous to the velocity-definition sweep already
-            executed for TEST-09, has been proposed and not yet run. Recording this here rather than
-            after a reviewer finds it is what this page is for.
+            <strong>Update (2026-11-19): the sweep has run, and the kill stands on a bound, not on the maximum.</strong> This paragraph used to say the
+            robust statistic was the maximum observed f<sub>DM</sub> = 0.927 (B = 13.7). A sample maximum is not a bound. With distance, inclination,
+            M/L and gas profiled, the rotation curves exclude caps up to B<sub>max</sub> &asymp; 7.5 at 3&sigma; (&asymp; 5.7 after a 153-disc trials
+            correction), so 6.40 survives the rotation curves at corrected significance; dwarf spheroidals with no gas and no light rule (Draco,
+            Crater II) then exclude every cap up to &asymp; 11 under Wolf et al. 2010&apos;s mass estimator (about 7 under Walker et al. 2009&apos;s). The ceiling-definition sweep proposed here ran on 2026-07-29 (TEST-10) and 2026-09-18
+            (TEST-09). The 1/&Omega;<sub>m</sub> constant is now traced to the cosmic C<sub>0</sub> = &Omega;<sub>m</sub> calibration (motivated, but only
+            if galaxies and cosmology share one knee). Details on the{' '}
+            <Link href="/tier-1-existing#TEST-10" style={{ color: 'var(--color-accent-blue)' }}>TEST-10 card</Link>.
           </p>
         </div>
 

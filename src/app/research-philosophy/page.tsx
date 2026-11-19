@@ -81,7 +81,7 @@ export default function ResearchPhilosophy() {
           The <strong>canonical reference</strong> is on the{' '}
           <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
             Honest Assessment page
-          </Link>. The taxonomy has two families, plus two deprecated labels kept for old pages:
+          </Link>. The taxonomy has two families, plus three retired labels (Validated, Strongly Supported, MOND-shared) that survive only in revision notes on old pages:
         </p>
 
         <div style={{ background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.35)', borderRadius: '0.375rem', padding: '0.6rem 0.85rem', marginBottom: '1rem', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>
@@ -500,8 +500,8 @@ export default function ResearchPhilosophy() {
           </div>
         </div>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
-          <strong>Operational states vs. status badges:</strong> Terms like &ldquo;Kill Criterion Triggered,&rdquo;
-          &ldquo;Withdrawn,&rdquo; and &ldquo;MOND-shared&rdquo; are <em>operational states</em> describing prediction lifecycle
+          <strong>Operational states vs. status badges:</strong> Terms like &ldquo;Kill Criterion Triggered&rdquo; and
+          &ldquo;Withdrawn&rdquo; are <em>operational states</em> describing prediction lifecycle
           and scope &mdash; distinct from the nine <Link href="#validation-badge-taxonomy" style={{ color: 'var(--color-accent-blue)' }}>status badges</Link>{' '}
           (5 MRH-relationship: Active-MRH / Parallel-Paths / Sidelined / Superseded / Audited-Negative; 4 descriptive: Untested / Speculative / Reparametrization / Failed). A prediction flagged
           &ldquo;Kill Criterion Triggered&rdquo; also carries the Failed badge; &ldquo;Withdrawn&rdquo; does not carry any

@@ -108,7 +108,7 @@ export default function MRH() {
           <p style={{ margin: '0 0 0.6rem' }}>
             The galaxy sector advertises C as a function of <em>local</em> density &mdash; that is the whole
             reason it is claimed to be MRH-respecting, and the reason the{' '}
-            <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>local-density no-go</Link>{' '}
+            <Link href="/for-researchers#locality-no-go" style={{ color: 'var(--color-accent-blue)' }}>local-density no-go</Link>{' '}
             bites. But look at what the mechanism actually evaluates. Two of its three inputs are imported
             from outside any local neighborhood:
           </p>
@@ -126,8 +126,10 @@ export default function MRH() {
               is set by a <em>cosmological</em> parameter. A galaxy&apos;s relevancy horizon does not contain
               &#x03A9;<sub>m</sub>. (Flagged independently by a simulated-visitor graduate-physics persona the same day.)
               Note this objection is stronger than the empirical one it accompanies, because it does not
-              depend on the value: TEST-10 needs B &#x2265; 13.7 and no cosmic ratio supplies it, but even a
-              ratio that <em>did</em> supply it would still be an import.
+              depend on the value: the most dark-matter-dominated SPARC disc sits at B = 13.7 (a sample maximum, not a bound;
+              the 3&sigma; bound from rotation curves is B<sub>max</sub> &asymp; 7.5, &asymp; 5.7 after a trials correction, and dwarf
+              spheroidals push it to &asymp; 11 (Wolf et al. 2010 mass estimator); see the <Link href="/tier-1-existing#TEST-10" style={{ color: 'var(--color-accent-blue)' }}>TEST-10 card</Link>),
+              but even a cosmic ratio that <em>did</em> supply the needed boost would still be an import.
             </li>
           </ul>
           <p style={{ margin: '0 0 0.6rem' }}>

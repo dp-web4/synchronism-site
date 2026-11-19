@@ -124,7 +124,7 @@ const tests: Test[] = [
     id: 'TEST-04a',
     name: 'DESI RSD fσ₈',
     badge: 'untested',
-    badgeLabel: 'Untested at the registered power — underpowered as registered; not counted',
+    badgeLabel: 'Untested — underpowered as registered; not counted',
     state: 'Underpowered as registered',
     data: 'DESI DR1 (arXiv:2411.12021): Table 9 ShapeFit+BAO, LRG1 row (ratio 1.09 +0.12/−0.14); Table 11 fiducial (0.4733); Table 10 σ₈',
     cost: '$0',
@@ -640,7 +640,7 @@ export default function Tier1Existing() {
             <br />A card carries at most one badge and one State; a parenthesis after the State names a substitute run&apos;s
             state or what it is shared with. A row&apos;s history can also carry lifecycle verbs. E.g. TEST-09 reads
             &ldquo;Failed, Kill Criterion Triggered&rdquo; (at B<sub>max</sub> = 1/&Omega;<sub>m</sub>; convention-dependent, see its card), and TEST-04a
-            reads badge &ldquo;Untested at the registered power&rdquo;, state &ldquo;Underpowered as registered&rdquo; (until 2026-10-24 its badge said Failed; this example lagged it until 2026-11-04). <strong>Read them in that order: badge (what the evidence
+            reads badge &ldquo;Untested&rdquo; (until 2026-11-19 &ldquo;Untested at the registered power&rdquo;, a tenth badge string), state &ldquo;Underpowered as registered&rdquo; (until 2026-10-24 its badge said Failed; this example lagged it until 2026-11-04). <strong>Read them in that order: badge (what the evidence
             says) &rarr; operational state (what happened to the test) &rarr; lifecycle verb (where the test now sits).</strong>
           </p>
           <details style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', marginTop: '0.3rem' }}>

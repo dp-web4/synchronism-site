@@ -1,0 +1,11 @@
+identity: simple mu width 1.908 dex; tanh gamma=1/2 width 1.908 dex
+delta = 1: width 1.725 dex; nu - 1 at g_N = 2 a0: 3.2e-01
+delta = 2: width 1.264 dex; nu - 1 at g_N = 2 a0: 7.5e-02
+delta = 4: width 1.060 dex; nu - 1 at g_N = 2 a0: 4.6e-03
+delta = 6: width 1.006 dex; nu - 1 at g_N = 2 a0: 5.6e-05
+delta = 8: width 0.983 dex; nu - 1 at g_N = 2 a0: 1.4e-08
+compander gamma = 0.5: width 1.908 dex; nu - 1 at g_N = 2 a0: 6.2e-01
+compander gamma = 1: width 1.503 dex; nu - 1 at g_N = 2 a0: 1.9e-01
+compander gamma = 2: width 1.325 dex; nu - 1 at g_N = 2 a0: 2.3e-02
+compander gamma = 3: width 1.270 dex; nu - 1 at g_N = 2 a0: 2.7e-03
+compander gamma = 10000: width 1.167 dex; nu - 1 at g_N = 2 a0: 0.0e+00

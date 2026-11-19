@@ -1,0 +1,16 @@
+rows 2438, galaxies 122; total Delta(-2lnL) = 2842.6 (identity: +2843)
+C_g gamma 0.509; C_rho gamma 0.046, rho_c 2.98e-25 (code units)
+radial-rank quarter (0.00,0.25]: n=  624  sum    519.3  ( 18.3%)  per point 0.83
+radial-rank quarter (0.25,0.50]: n=  626  sum    729.7  ( 25.7%)  per point 1.17
+radial-rank quarter (0.50,0.75]: n=  592  sum    727.7  ( 25.6%)  per point 1.23
+radial-rank quarter (0.75,1.00]: n=  596  sum    865.9  ( 30.5%)  per point 1.45
+log g_bar (-13,-11.5]: n=  120  sum    377.1  ( 13.3%)  per point 3.14
+log g_bar (-11.5,-11]: n=  559  sum    740.4  ( 26.0%)  per point 1.32
+log g_bar (-11,-10.5]: n=  559  sum    443.3  ( 15.6%)  per point 0.79
+log g_bar (-10.5,-10]: n=  521  sum    352.2  ( 12.4%)  per point 0.68
+log g_bar (-10,-8]: n=  679  sum    929.6  ( 32.7%)  per point 1.37
+mean residual log g_obs - model, C_rho, log g_bar (-13,-11]: +0.210 dex; C_g -0.008
+mean residual log g_obs - model, C_rho, log g_bar (-11,-10]: -0.013 dex; C_g +0.007
+mean residual log g_obs - model, C_rho, log g_bar (-10,-8]: -0.205 dex; C_g -0.008
+top 10 galaxies carry 34.7%; top 30 70.9%; galaxies with C_rho worse: 105/122
+top 10: UGC02953 146, UGC05253 142, UGC09133 108, NGC2403 100, NGC3741 88, NGC2915 84, NGC6946 83, NGC3109 80, UGC06787 79, UGC02916 75

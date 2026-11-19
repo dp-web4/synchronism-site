@@ -9,7 +9,7 @@ const scales = [
   { exp: -35, label: 'Planck length', system: 'Quantum vacuum', ncorr: 1, gamma: 2.0, desc: 'Smallest meaningful length. Single quantum fluctuation.' },
   { exp: -15, label: 'Nucleus', system: 'Protons/neutrons', ncorr: 3, gamma: 1.15, desc: 'Strong force binds quarks into nucleons. ~3 correlated quarks.' },
   { exp: -10, label: 'Atom', system: 'Electron cloud', ncorr: 1, gamma: 2.0, desc: 'Single electron orbitals. Each electron largely independent.' },
-  { exp: -9, label: 'Molecule', system: 'Chemical bonds', ncorr: 4, gamma: 1.0, desc: 'Water: ~4 molecules in hydrogen bond network. γ ≈ 1 boundary.' },
+  { exp: -9, label: 'Molecule', system: 'Chemical bonds', ncorr: 4, gamma: 1.0, desc: 'Water: ~4 molecules in hydrogen bond network. γ ≈ 1 band (the boundary reading is retracted).' },
   { exp: -8, label: 'Protein', system: 'Folded structure', ncorr: 50, gamma: 0.28, desc: 'Enzyme active site: 20-50 atoms move as coherent unit.' },
   { exp: -7, label: 'Virus', system: 'Self-assembly', ncorr: 200, gamma: 0.14, desc: 'Capsid proteins self-assemble via coherent interactions.' },
   { exp: -6, label: 'Bacterium', system: 'Minimal cell', ncorr: 1000, gamma: 0.06, desc: 'Coordinated metabolism. ~1000 molecules in signaling cascades.' },

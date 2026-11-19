@@ -18,11 +18,27 @@ Exit 1 if any live hit.  Add an entry whenever a session retires a wording.
 """
 import pathlib
 import re
+from html.entities import name2codepoint as HTML4
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-19 (four visitor personas, 2026-11-19 log; explorer 2026-11-18): summary layers lagging the ledger.
+    (r"4\.9(&sigma;|σ) each|boosts of about 100 and 60|(≈|&asymp;|about) 14\.7\b|up to B<sub>max</sub> &asymp; 14\.7", "2026-11-19", "dSph masses used Wolf's projected coefficient on the 3D radius (4/3 too high): Draco 4.5, Crater II 4.2 sigma; cap excluded to ~11"),
+    (r"the pin refuted on the RAR", "2026-11-19", "the gamma = 2 pin is disfavoured at about 2 sigma (+184 by point at frozen Upsilon; ~+11 by galaxy; +2.7 with own Upsilon)", True),
+    (r"refutes three separate ways", "2026-11-19", "one of the three legs (gamma = 2) is now ~2 sigma; say 'two excluded, one disfavoured'", True),
+    (r"[Ii]t is not a sharpness|, not a sharpness:", "2026-11-19", "gamma IS the width below ~1 (13 dex at 0.046, 1.9 at 1/2); what no gamma gives is a SHARP switch (floor 1.17 dex)", True),
+    (r"log-density argument is physically motivated", "2026-11-19", "/parameter-derivations: the log argument is chosen, no derivation", True),
+    (r"In every <em>quantitative</em> test the framework has run", "2026-11-19", "the tests used three inputs: density (refuted), acceleration (= MOND), chemistry proxies", True),
+    (r"Some predictions held up\. Others failed", "2026-11-19", "0 confirmed: say 'some fits to existing data held up; no new prediction confirmed'", True),
+    (r"The novelty is in unification", "2026-11-19", "a reparametrization is not evidence; each sector is fitted separately, so no unification is shown", True),
+    (r"TEST-10 needs B &#x2265; 13\.7|robust statistic is the\s+maximum", "2026-11-19", "13.7 is a sample maximum, not a bound; 3-sigma bound 7.5 (5.7 after trials), dSphs to 14.7", True),
+    (r"1&times;10<sup>&minus;8</sup> to 1&times;10<sup>&minus;7</sup></strong>|10<sup>&minus;8</sup>&ndash;10<sup>&minus;7</sup> at 2&sigma;", "2026-11-19", "measured Gaia gradient: 1e-8 at 1 pc, 3-6e-6 at 10 pc (explorer 2026-11-18)", True),
+    (r"still (five|six) orders\b", "2026-11-19", "smooth >=100 pc variant: ~5e-5, about four orders (explorer 2026-11-18)", True),
+    (r"with ~95% accuracy", "2026-11-19", "Casarotto+2016: 100% on the 150-subject benchmark, ~95% sensitivity in MCS; two numbers", True),
+    (r"is a <strong>dichotomy</strong>, not a single constraint", "2026-11-19", "three horns: trilemma", True),
+    (r"Validation badge: (MRH|descriptive)|Validation Badge: |not a validation badge", "2026-11-19", "renamed status badge 2026-11-16", True),
     # Added 2026-11-18 (four visitor personas, 2026-11-18 log): gamma onset, width limit, LLR CL, DR4 companion rate, CDM ratio, consciousness wording.
     (r"how fast that\s+switch flips", "2026-11-18", "gamma sets where the switch starts to turn, not how fast it flips (three tools say so)", True),
     (r"stops near 1\.(17|2) dex|width saturates near 1\.17", "2026-11-18", "1.17 dex is the gamma -> infinity limit; the width is 1.50 at gamma = 1, 1.33 at 2, 1.20 at 10", True),
@@ -848,6 +864,14 @@ def main():
                     continue
                 print(f"{path.relative_to(ROOT.parent)}:{lineno}: unqualified ({date}): {m.group(0)!r}\n    -> {why}")
                 hits += 1
+        # Added 2026-11-19: JSX decodes only the HTML4 named entities (plus &apos;). An HTML5-only name such as
+        # &lesssim; or &propto; is emitted as literal text ("|2γ−1| &lesssim; 10⁻⁵" showed 5× on /dark-energy).
+        if path.suffix == ".tsx":
+            for m in re.finditer(r"&([a-zA-Z][a-zA-Z0-9]*);", text):
+                if m.group(1) not in HTML4 and m.group(1) != "apos":
+                    lineno = text.count("\n", 0, m.start()) + 1
+                    print(f"{path.relative_to(ROOT.parent)}:{lineno}: entity not decoded by JSX: {m.group(0)!r}\n    -> use the character or a numeric &#x....; reference")
+                    hits += 1
     print(f"\n{hits} live retired phrase(s) across {len(files)} files, {len(RETIRED) + len(REQUIRES)} rules.")
     return 1 if hits else 0
 

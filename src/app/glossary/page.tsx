@@ -47,7 +47,7 @@ export default function Glossary() {
       <h1>Glossary</h1>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
         Key terms used throughout Synchronism, listed alphabetically (Greek-symbol terms sort
-        after the Latin alphabet; the nine formal validation badges are marked &ldquo;(badge)&rdquo;). Some pages
+        after the Latin alphabet; the nine formal status badges are marked &ldquo;(badge)&rdquo;). Some pages
         highlight terms with a dotted underline; hover them to see these definitions inline. Most pages link here instead.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '2rem' }}>

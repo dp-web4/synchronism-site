@@ -66,7 +66,12 @@ export default function Breadcrumbs({ currentPath }: BreadcrumbsProps) {
             <li style={{ color: 'var(--color-text-muted)' }} aria-hidden="true">/</li>
             <li>
               {categoryHubs[category] && categoryHubs[category] !== currentPath ? (
-                <Link href={categoryHubs[category]} style={{ color: 'var(--color-text-secondary)' }}>{category}</Link>
+                // Visitor 2026-11-19 (tech writer): the crumb said "Methodology" / "Predictions & Experiments" but landed on pages
+                // titled "Research Philosophy" / "Test Roadmap". A linked crumb now carries the destination page's own title;
+                // the section name moves to the tooltip.
+                <Link href={categoryHubs[category]} title={`Section: ${category}`} style={{ color: 'var(--color-text-secondary)' }}>
+                  {getPageInfo(categoryHubs[category])?.title ?? category}
+                </Link>
               ) : (
                 // No index page exists for this section (e.g. /core-theory is a 404), so the crumb is
                 // plain text. Visitor 2026-09-23: in text-secondary it was brighter than the linked

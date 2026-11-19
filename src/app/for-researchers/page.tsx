@@ -260,7 +260,7 @@ export default function ForResearchers() {
         <div id="other-theories" style={{ fontSize: '0.88rem', color: 'var(--color-text-secondary)', borderLeft: '3px solid #10b981', paddingLeft: '0.75rem', margin: '0 0 1.25rem', scrollMarginTop: '5rem' }}>
           <p style={{ margin: '0 0 0.4rem' }}>
             <strong>Results about other people&apos;s theories (added 2026-11-17).</strong> The six artifacts below concern this framework&apos;s own branches.
-            The four results here do not depend on it at all, and they are the ones a MOND, wide-binary or modified-gravity researcher is most likely to use.
+            The five results here do not depend on it at all, and they are the ones a MOND, wide-binary or modified-gravity researcher is most likely to use.
             Each comes from one AI session. None is peer reviewed, and the authors whose work each bears on have not been contacted.
           </p>
           <ol style={{ margin: 0, paddingLeft: '1.2rem' }}>
@@ -275,15 +275,37 @@ export default function ForResearchers() {
             <li><strong>Open clusters test modified inertia without an external field effect.</strong> This is Milgrom&apos;s 2011 frequency-by-frequency
               rule, read with an internal acceleration. Binary-cleaned dispersions sit near Newton: the Hyades at 0.21 &plusmn; 0.05 km/s are 0.91 of Newton,
               0.30 of the prediction and 3.3&sigma; below it with a 20% estimator systematic, and the Pleiades, M67 and NGC 188 are at 0.34&ndash;0.63.
-              Conditional on the binary cleaning; uncleaned Gaia dispersions sit on the prediction (explorer 2026-11-11/12).</li>
-            <li><strong>Cassini excludes every tanh-log (compander) interpolating function at SPARC&apos;s a&#x2080;.</strong> The family&apos;s transition is never
-              narrower than 1.17 dex, so it cannot reach the sharp MOND functions that pass (&delta; = 6 at &Upsilon;<sub>d</sub> &asymp; 0.54 without bulges).
+              Conditional on the binary cleaning; uncleaned Gaia dispersions sit on the prediction (explorer 2026-11-11/12). Also conditional on a virial
+              reading: the Hyades has documented tidal tails and is not in equilibrium (R&ouml;ser et al. 2019; Meingast &amp; Alves 2019), Tidal heating and expansion usually
+              <em>inflate</em> &sigma;, which would push the equilibrium value further below the prediction, but their effect on the binary-cleaned inner stars,
+              and on the cluster mass the prediction is built from, has not been modelled. Milgrom set this rule aside
+              himself in 2011, so excluding it is low-yield; its use is as a clean test class (internal &#x226A; a&#x2080; inside an external field &gt; a&#x2080;).</li>
+            <li><strong>Cassini excludes every tanh-log (compander) interpolating function at SPARC&apos;s a&#x2080;.</strong> The family&apos;s 10&ndash;90% transition is never
+              narrower than 1.17 dex; the MOND function that passes (&delta; = 6 at &Upsilon;<sub>d</sub> &asymp; 0.54 without bulges) has a width of 1.01 dex
+              (widths are shape-only, at a fixed a&#x2080;; &delta; = 4: 1.06, which fails Cassini at +9.2&sigma; once a&#x2080; is refit to SPARC; &delta; = 1: 1.73; simple &mu;: 1.91). The width gap is only 0.16 dex; what separates them more is the return to Newton: the
+              compander approaches it as a power law, 1 &minus; C &asymp; 2x<sup>&minus;2&gamma;</sup>, the &delta; family exponentially, and at the same a&#x2080;
+              and g<sub>N</sub> = 2a&#x2080;, &nu; &minus; 1 is 6&times;10<sup>&minus;5</sup> for &delta; = 6 against 3&times;10<sup>&minus;3</sup> for the compander at &gamma; = 3
+              (<code>maintainer/scripts/delta6_width_vs_compander_floor.py</code>; at the same a&#x2080;, not each family&apos;s SPARC-profiled a&#x2080;).
               It fails at 14.5&ndash;19.3&sigma; for every &gamma; from 0.3 to 3 with M/L pinned. With M/L free it needs &Upsilon;<sub>d</sub> &asymp; 1.2&ndash;1.4,
               so 36&ndash;42% of discs are over-maximal. This holds for any theory using that family (<Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>).</li>
-            <li><strong>Dwarf spheroidals exclude saturating-boost gravity up to B<sub>max</sub> &asymp; 14.7.</strong> In any theory whose boost over Newton saturates
-              at B<sub>max</sub>, Draco (M/L = 4, after a six-system trials correction) and Crater II exclude caps below about 14.7, with no light-deflection rule
-              and no gas census needed. The escapes are M/L &ge; 8&ndash;12, or a measured &sigma; inflated by tides by &ge; 1.3&times;. Draco is a shared failure with
+            <li><strong>Dwarf spheroidals exclude saturating-boost gravity up to B<sub>max</sub> &asymp; 11.</strong> In any theory whose boost over Newton saturates
+              at B<sub>max</sub>, Draco (M/L = 4, after a six-system trials correction) excludes caps below about 11 (13.9 at local 3&sigma;) and Crater II below
+              about 8, with no light-deflection rule and no gas census needed. Masses use Wolf et al. 2010, M<sub>&frac12;</sub> = 3&sigma;&sup2;r<sub>&frac12;,3D</sub>/G
+              (required boosts at fiducial M/L = 2: Draco &asymp; 76, Crater II &asymp; 45). Walker et al. 2009&apos;s smaller estimator (2.5&sigma;&sup2;R<sub>e</sub>/G)
+              lowers Draco&apos;s reach to about 7 and takes Crater II below the trials threshold, so the result is estimator-conditional at its edge.
+              The escapes are M/L &ge; 5&ndash;7, or a measured &sigma; inflated by tides by &ge; 1.15&ndash;1.3&times; (Crater II is a known tidally disturbed system).
+              Novelty is low: this restates the long-known dSph dynamical M/L of ~10&sup2; (Mateo 1998) as a bound on caps. Until 2026-11-19 this item said 14.7,
+              100 and 60, and M/L &ge; 8&ndash;12: the script applied Wolf&apos;s projected-radius coefficient (4) to the 3D radius, which overstates the mass by
+              4/3; a researcher persona&apos;s question about the estimator surfaced it (<code>maintainer/scripts/cap6p39_vs_dsph_estimator.py</code>). Draco is a shared failure with
               MOND+EFE; Crater II is where MOND&apos;s a-priori prediction held (<Link href="/tier-1-existing#bounded-boost-joint" style={{ color: 'var(--color-accent-blue)' }}>bounded-boost joint statement</Link>).</li>
+            <li><strong>a&#x2080;(z) is a MOND-versus-&Lambda;CDM question, and three direct datasets read it three ways.</strong> A constant a&#x2080; (MOND) predicts no
+              redshift trend; cosmologically coupled MOND (a&#x2080; &prop; H(z), the form this framework&apos;s cH/2&pi; takes) and the <em>apparent</em> a&#x2080; in
+              &Lambda;CDM-plus-baryons simulations (Mayer et al. 2023, n &asymp; 1) both predict a&#x2080; &prop; H(z)<sup>n</sup> with n &asymp; 1. Ciocan&apos;s
+              high-z bins rise (constant a&#x2080; out at ~5&sigma; with the normalisation free; n = 1 at 2.2&sigma; on 1&sigma; bars), Del Popolo&apos;s are flat to
+              falling, and this site&apos;s pre-registered RC100 run gives n = 0.0 &plusmn; 0.5 (galaxy bootstrap 95% &plusmn;1.0), about 2&sigma; from n = 1. Not
+              yet checked: whether the simulated n &asymp; 1 survives the estimator RC100 used. An estimator-matched comparison, with a measured method floor and
+              N &#x2273; 170 galaxies, would decide between two other people&apos;s theories; this framework only sides with one of them
+              (<Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>, a&#x2080;(z) row).</li>
           </ol>
           <p style={{ margin: '0.4rem 0 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             The lunar-laser-ranging bound on any density-dependent G (item 6 below) also belongs to this list. Whether the program should pursue these
@@ -328,8 +350,8 @@ export default function ForResearchers() {
           <strong style={{ color: 'var(--color-accent-violet)' }}>Start here: negative results on density-keyed modified gravity
           (framework-independent)</strong>
           <p style={{ margin: '0.4rem 0 0.5rem' }}>
-            <strong>If you read one thing:</strong> item 6 (the lunar-ranging &#x0120;/G bound: framework-independent, five to eight orders of
-            margin across the knee grid (eight only at the top; corrected 2026-11-05), no SPARC), then the sign statement in item 1, then item 5 with its &#x03B3; attached, then
+            <strong>If you read one thing:</strong> item 6 (the lunar-ranging &#x0120;/G bound: framework-independent, no SPARC; the bound sits four to eight orders below an O(1)
+            sensitivity, eight at &#x2113; = 1 pc and about five at 10 pc on the measured Gaia gradient, corrected 2026-11-19), then the sign statement in item 1, then item 5 with its &#x03B3; attached, then
             item 4. None of the four needs Synchronism to be right; each is scoped in its own card.
           </p>
           <ul style={{ margin: 0, paddingLeft: '1.2rem', lineHeight: 1.6 }}>
@@ -337,7 +359,7 @@ export default function ForResearchers() {
               <a href="#gdot-llr" style={{ color: 'var(--color-accent-blue)' }}>6. Solar-neighbourhood &#x0120;/G no-go</a>: any
               G<sub>eff</sub> that depends on the matter density smoothed on 1&ndash;10 pc drifts as the Sun moves through its
               neighbourhood; lunar laser ranging holds &#x0120;/G to (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> yr<sup>&minus;1</sup>, so
-              |d ln G<sub>eff</sub>/d ln &rho;| &#x2272; 10<sup>&minus;8</sup>&ndash;10<sup>&minus;7</sup> at 2&sigma;. 68 of 74 density-keyed laws die at 1 pc (62 at 10 pc), both
+              |d ln G<sub>eff</sub>/d ln &rho;| &#x2272; 10<sup>&minus;8</sup> at 1 pc and 3&ndash;6&times;10<sup>&minus;6</sup> at 10 pc (2&sigma;, measured Gaia gradient). 68 of 74 density-keyed laws die at 1 pc (62 at 10 pc), both
               Refracted Gravity calibrations included. Promoted from the TEST-02 card 2026-10-27 (a researcher persona asked why it was not here).
             </li>
             <li>
@@ -1070,11 +1092,16 @@ export default function ForResearchers() {
             density smoothed on a length &#x2113;. A boost shared by everything in one volume cancels in a same-instant ratio (which is
             why TEST-02&apos;s Gaia statistic is identically null on this branch), but not in time: the Sun moves at ~20 km/s
             (2&times;10<sup>&minus;5</sup> pc/yr) through its neighbourhood, so
-            &#x0120;/G = (d ln f/d ln &rho;)&middot;(v<sub>&#x2609;</sub>&middot;&nabla;ln &rho;<sub>s</sub>). With a density e-fold over
-            &#x2113; = 1&ndash;10 pc the second factor is 2&times;10<sup>&minus;6</sup> to 2&times;10<sup>&minus;5</sup> yr<sup>&minus;1</sup>. Lunar
+            &#x0120;/G = (d ln f/d ln &rho;)&middot;(d ln &rho;<sub>s</sub>/dt). The second factor is <em>measured</em>, not assumed
+            (explorer 2026-11-18, Gaia DR3 census to 30 pc, each star weighted by its radial velocity): <strong>2.3&times;10<sup>&minus;5</sup> yr<sup>&minus;1</sup> at
+            &#x2113; = 1 pc</strong> (set by &alpha; Centauri and Barnard&apos;s Star), 1.7&times;10<sup>&minus;6</sup> at 3 pc, and <strong>4&ndash;8&times;10<sup>&minus;8</sup> at
+            10 pc</strong>, where the 2,640 stars in the kernel average down as &radic;N. Lunar
             laser ranging gives &#x0120;/G = (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> yr<sup>&minus;1</sup> (Hofmann &amp; M&uuml;ller 2018),
-            so at the 2&sigma; upper edge (|&#x0120;/G| &lt; 2.2&times;10<sup>&minus;13</sup> yr<sup>&minus;1</sup>) <strong>|d ln G<sub>eff</sub>/d ln &rho;<sub>s</sub>| &#x2272; 1&times;10<sup>&minus;8</sup> to 1&times;10<sup>&minus;7</sup></strong>
-            &mdash; seven to eight orders below an O(1) sensitivity. (Until 2026-11-18 this line divided the LLR <em>central value</em>, 7.1&times;10<sup>&minus;14</sup>, and printed 4&times;10<sup>&minus;9</sup> to 4&times;10<sup>&minus;8</sup>, which is not an upper limit; a researcher persona caught it. The 68/74 count below is unaffected: its script uses a looser cut, 10<sup>&minus;12</sup> yr<sup>&minus;1</sup>.) <strong>Which density carries that gradient matters, and a referee will ask:</strong> an e-fold over 1&ndash;10 pc is the lumpy part of &rho;<sub>s</sub>, the individual stars and gas clouds that pass through the smoothing volume. If &rho;<sub>s</sub> is the total mass density and is smooth over 100 pc or more, the bound weakens by about 100, to &#x2272; 1&times;10<sup>&minus;6</sup>&ndash;1&times;10<sup>&minus;5</sup> (2&sigma;), still five orders below O(1). In the small-x regime of this framework&apos;s C, d ln C/d ln &rho; = 1,
+            so at the 2&sigma; upper edge (|&#x0120;/G| &lt; 2.2&times;10<sup>&minus;13</sup> yr<sup>&minus;1</sup>) <strong>|d ln G<sub>eff</sub>/d ln &rho;<sub>s</sub>| &#x2272; 1&times;10<sup>&minus;8</sup> at
+            &#x2113; = 1 pc, 1.5&times;10<sup>&minus;7</sup> at 3 pc and 3&ndash;6&times;10<sup>&minus;6</sup> at 10 pc</strong>; beyond ~30 pc the Galaxy&apos;s own radial
+            density gradient and the Sun&apos;s inward motion set a floor of about 5&times;10<sup>&minus;5</sup>. At every &#x2113; the bound sits at least
+            about four orders below an O(1) sensitivity. (Until 2026-11-19 this line assumed a density e-fold over &#x2113; and printed
+            1&times;10<sup>&minus;8</sup> to 1&times;10<sup>&minus;7</sup> for &#x2113; = 1&ndash;10 pc; the e-fold holds only at 1 pc, so the 10-pc end was 25&ndash;50&times; too strong.) (Until 2026-11-18 this line divided the LLR <em>central value</em>, 7.1&times;10<sup>&minus;14</sup>, and printed 4&times;10<sup>&minus;9</sup> to 4&times;10<sup>&minus;8</sup>, which is not an upper limit; a researcher persona caught it. The 68/74 count below is unaffected: its script uses a looser cut, 10<sup>&minus;12</sup> yr<sup>&minus;1</sup>.) <strong>Which density carries that gradient matters, and a referee will ask:</strong> an e-fold over 1&ndash;10 pc is the lumpy part of &rho;<sub>s</sub>, the individual stars and gas clouds that pass through the smoothing volume. If &rho;<sub>s</sub> is the total mass density and is smooth over 100 pc or more, the gradient is the Galaxy&apos;s and the bound is &#x2272; 5&times;10<sup>&minus;5</sup> (2&sigma;), about four orders below O(1), weaker near &#x2113; &asymp; 100 pc where disc terms can partly cancel. In the small-x regime of this framework&apos;s C, d ln C/d ln &rho; = 1,
             so the whole gradient lands on &#x0120;/G.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
@@ -1083,19 +1110,30 @@ export default function ForResearchers() {
             survivors are &#x03B3; = 2 laws with &rho;<sub>c</sub> &le; 10<sup>&minus;3</sup> M<sub>&#x2609;</sub>/pc&sup3;, Newtonian to
             10<sup>&minus;8</sup> at the Sun. Even the floored published knee (&rho;<sub>crit</sub> = 0.029&middot;V&sup2; &asymp; 650
             M<sub>&#x2609;</sub>/pc&sup3;, &#x03B3; = 2) fails: d ln C<sub>f</sub>/d ln &rho; = (1&minus;&Omega;<sub>m</sub>)&middot;&#x03B3;x/C<sub>f</sub>
-            &asymp; 7&times;10<sup>&minus;4</sup> at the solar x &asymp; 1.5&times;10<sup>&minus;4</sup>, about five orders above the 2&sigma; bound at 1 pc.
+            &asymp; 7&times;10<sup>&minus;4</sup> at the solar x &asymp; 1.5&times;10<sup>&minus;4</sup>, about five orders above the 2&sigma; bound at 1 pc and two above it at 10 pc.
             Under the action-derived (L3) dynamics the field equation is unchanged, so the bound carries over exactly (explorer 2026-10-19).
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>Assumptions that must travel with it.</strong> (a) The smoothing length &#x2113; &isin; [1, 10] pc, which is also what
             the wide-binary null needs (&#x2113; &#x226B; 10&#x2074; AU) and what the galaxy fits&apos; smooth profiles need (&#x2113; &#x2273; 1 pc).
-            (b) The gradient scale of &rho;<sub>s</sub> is ~&#x2113;, which holds when the discrete stellar neighbourhood is inside
-            &rho;<sub>s</sub> (nearest stars ~1 pc apart). If &rho;<sub>s</sub> is a smooth stellar-plus-halo density on &ge; 100 pc, the
-            gradient scale becomes the disc scale height and the bound weakens by ~10&sup2;, still six orders.
+            (b) &rho;<sub>s</sub> includes the discrete stellar neighbourhood. At &#x2113; &asymp; 1 pc the rate is set by the nearest stars
+            (and is epoch-specific: &alpha; Cen is still approaching, closest in ~28 kyr, which does not matter for a 50-year baseline); at larger
+            &#x2113; it averages down as &radic;N (Gaia DR3 census, explorer 2026-11-18). If &rho;<sub>s</sub> is a smooth stellar-plus-halo density
+            on &ge; 100 pc, the Galaxy&apos;s radial gradient sets the rate and the bound is ~5&times;10<sup>&minus;5</sup>, about four orders.
+            (c) The coupling is keyed on the <em>ambient</em> density, smoothed over more than the Earth&ndash;Moon&ndash;Sun bodies. Screened couplings
+            (chameleon, symmetron, stiff-field) and couplings keyed on each body&apos;s own density or potential escape, because each body pins the field
+            to its interior value; this framework cannot use that escape, since its own wide-binary and galaxy fits need &#x2113; &#x226B; 10&#x2074; AU.
             <strong> Escapes:</strong> a relaxation-time law (&tau; &#x2273; 83 Myr, which is a different, orbit-averaged law), or C as a
             field with its own dynamics (covariant Refracted Gravity&apos;s route; that theory itself fails the same &#x0120;/G bound by
             &ge; 900&sigma;, 2026-10-23). <strong>Scope:</strong> the archive ledger counts this as a second root of the density-keyed row,
             not a seventh refutation; on this page the question is what an outsider can cite, and on that axis this is the cleanest item.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Prior art.</strong> Both ingredients are published: converting a spatial gradient times the observer&apos;s motion into a
+            laboratory drift is Berengut &amp; Flambaum 2010 (eq. 4, for the fine-structure constant), and couplings keyed on the ambient matter
+            density are Olive &amp; Pospelov 2008 (eq. 2.7, with G<sub>N</sub> held fixed). Applying LLR to a G keyed on parsec-smoothed ambient
+            density was <em>not found</em> in the six sources checked (explorer 2026-11-18); Uzan 2011 &sect;5.4.2/&sect;6 and Clifton, Mota &amp;
+            Barrow 2005 are not yet read. &ldquo;Not found&rdquo; is not &ldquo;new&rdquo;.
           </p>
         </div>
 

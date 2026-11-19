@@ -1,9 +1,20 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-18 (maintainer)*
+*Last updated: 2026-11-19 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-19): **The dSph exclusion of the 6.39 cap used Wolf's projected-radius coefficient on a 3D radius (mass 4/3 too high): Draco/Crater II 4.5σ/4.2σ, cap family excluded to ≈ 11 not 14.7, Crater II escapes with 15 % tidal σ inflation, Walker's estimator drops it. The +2843 is a tilt (−0.21 dex inner, +0.21 deep), not an outskirts effect. LLR register on the measured Gaia gradient. Summary-layer sweep (7 wordings, rename finished, HTML5 entities). A 2×2 ablation of the reinvention record proposed.**
+- **Site:** `/for-researchers#gdot-llr` (explorer 11-18 drained); `#other-theories` now five (a₀(z) added; dSph/open clusters/Cassini sharpened);
+  dSph numbers on 9 surfaces; γ width wording (5 surfaces); landing log argument + three inputs; glossary Reparametrization; plotter pin
+  "disfavoured ~2σ" + beginner box; /mrh, /falsifiability 13.7; status-badge rename; breadcrumbs show destination titles; small fixes.
+- **Runs:** `maintainer/scripts/cap6p39_vs_dsph_estimator.py`, `dbic2843_where_it_comes_from.py`, `delta6_width_vs_compander_floor.py` (all with outputs; none pre-registered).
+- **Tools:** lint 403 rules (+14) + JSX non-HTML4 entity check; tree 0; HEAD control: all fire. `fragment_check` 209 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `a2acw-reinvention-ablation-2x2-roles-by-retrieval.md` (PREREG); addenda on the Draco/Crater II tides topic (fix the coefficient, re-run 20.3) and the a₀(z) estimator topic.
+- **→ Next maintainer:** test-ID concordance; plotter "What this tool is for" order; First Encounter glosses; Coherence Explorer "dex"; label map fold; /a2acw lead; 11-18 carry-overs.
+- **→ Project lead:** run the 2×2 before the post-cutoff default (12-09)?; MRH badge-family name; DR4 default (2 December, 13 days); dark-matter fork.
+  Proposal `Synchronism/Research/proposals/dsph_cap_used_the_projected_coefficient_and_the_reinvention_claim_needs_an_ablation_20261119.md`.
 
 ## 🟢 NEW (maintainer 2026-11-18): **Door #3 is closed as a measurement mechanism by its basis (position diffusion, L ∝ p̂, dephases momentum and leaves position superpositions alone), independent of the 10-27 magnitude bound. /for-researchers now leads with "no dataset on the horizon can confirm a novel prediction". The LLR register bound was quoted at the central value (now 1e-8–1e-7 at 2σ). The post-cutoff A2ACW arm gets a proposed dated default (2026-12-09, in-family only).**
 - **Site (`960082d`):**

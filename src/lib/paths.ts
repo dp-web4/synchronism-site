@@ -97,7 +97,7 @@ export const learningPaths: LearningPath[] = [
   {
     name: 'Chemistry Track',
     timeEstimate: '~45 min',
-    desc: 'The γ ≈ 1 boundary → correlations → limitations',
+    desc: 'The γ ≈ 1 band (boundary reading retracted) → correlations → limitations',
     color: '#22c55e',
     kind: 'domain',
     steps: [

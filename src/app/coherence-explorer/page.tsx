@@ -112,7 +112,7 @@ export default function CoherenceExplorer() {
           </div>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
             <strong>&#x03B3;</strong> = 2/&#x221A;N<sub>corr</sub> was proposed as the transition sharpness. What it actually sets is the
-            initial slope (C &#x2248; &#x03B3;x at low density) and how fast C approaches 1; for &#x03B3; above ~1 it mostly moves the knee
+            initial slope (C &#x2248; &#x03B3;x at low density), how fast C approaches 1 and, below &#x03B3; &asymp; 1, the width of the switch (13 dex at &#x03B3; = 0.046, 1.9 at &frac12;); for &#x03B3; above ~1 it mostly moves the knee
             (toward 0.77&nbsp;&#x03C1;<sub>crit</sub>/&#x03B3; as &#x03B3; grows, from 2u&nbsp;tanh&nbsp;u = 1; that asymptote is 13% low at &#x03B3; = 1 and 7% low at &#x03B3; = 2, against the exact inflection at 0.89 and 0.42&nbsp;&#x03C1;<sub>crit</sub>; corrected 2026-11-13 from 15% and 8%. In this sentence &ldquo;knee&rdquo; means the inflection point of C on a log-density axis, which at &#x03B3; &asymp; &frac12; sits near 2&#x03C1;<sub>crit</sub>, close to the C = 0.5 point; the chart&apos;s dotted marker is &#x03C1; = &#x03C1;<sub>crit</sub>, and &rho;<sub>crit</sub> itself is a reference scale, not the half-way point: C(&#x03C1;<sub>crit</sub>) = tanh(&#x03B3; ln 2), 0.60 at the default &#x03B3; = 1 and 0.33 at the fitted &#x03B3; &#x2248; 0.49) rather than sharpening it, so it trades off against &#x03C1;<sub>crit</sub>{' '}
             (<a href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>derivation</a>; added 2026-10-23).
             High &#x03B3; (&gt; 1.4, small N<sub>corr</sub>) = <em>single-particle / uncorrelated</em> regime (ideal gases, free atoms);

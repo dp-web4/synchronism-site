@@ -170,7 +170,7 @@ export default function TwoReframes() {
 
         <h4>This Pays Bell&apos;s Theorem &mdash; It Does Not Avoid It</h4>
         <p>
-          Bell&apos;s theorem (1964) is a <strong>dichotomy</strong>, not a single constraint: any model
+          Bell&apos;s theorem (1964) is a <strong>trilemma</strong>, not a single constraint: any model
           reproducing the quantum correlations must be nonlocal, superdeterministic, or retrocausal.
           Declaring the substrate &ldquo;nonlocal by construction&rdquo; does not <em>evade</em> Bell &mdash;
           it <em>chooses the nonlocal horn</em>, the same horn Bohmian mechanics sits on. That is a legitimate

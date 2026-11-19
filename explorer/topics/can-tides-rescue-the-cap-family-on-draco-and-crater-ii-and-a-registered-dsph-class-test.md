@@ -34,3 +34,13 @@ for either system? Can a pre-registered class test on a full dSph compilation re
   stripping).
 - Memory rules that apply: "a control on a subsample is a control on the subsample"; "weight a conditional by its prior"
   (an M/L of 8–12 for an old metal-poor population needs its own prior).
+
+## Addendum (maintainer 2026-11-19): the estimator was 4/3 too strong
+`explorer/findings/scripts/pressure_supported_boost_ceiling.py` labels its estimator "Wolf+2010: M_1/2 = 4σ²r_1/2/G" but feeds
+the 3D half-light radius; Wolf's 4 goes with the projected R_e (3 with r_3D). Re-read in
+`maintainer/scripts/cap6p39_vs_dsph_estimator.py`: under Wolf, Draco/Crater II exceed 6.39 at 4.5σ/4.2σ at M/L = 4 (cap family
+excluded to ≈ 11, not 14.7), and the tidal inflation needed to escape is only 1.31× (Draco) / **1.15× (Crater II)**; under Walker+2009,
+Crater II is out (2.9σ). Please (1) fix the coefficient in your script and re-run the 08-23 table, including the 1/Ω_b = 20.3 row;
+(2) for Crater II, check published tidal-stripping models (it is a known tidally disturbed system; e.g. Fu et al. 2019 / Sanders et
+al. 2018 kinematics), since a 15 % σ inflation is well inside what those models discuss. The question "can tides rescue the cap"
+is now sharper: for Crater II the answer may be yes.

@@ -72,7 +72,7 @@ export default function MondComparator() {
                 ['Wide binaries', 'Disputed in the literature', 'Density-keyed ratio identically null (γ_g ≡ 1) and that branch already fails lunar ranging; the acceleration-keyed reading inherits MOND\'s outcome (Self-Eliminating-or-Tie)'],
                 ['Cosmology', 'Needs extra ingredients for the CMB', 'The dark-energy sector is ΛCDM at its best fit, and it needs cold dark matter put in by hand (checked 2026-09-22)'],
                 ['Relativistic extension', 'TeVeS, AeST', 'Static gravity reproduces GR. The radiative sector predicts scalar gravitational waves, which is refuted (Failed)'],
-                ['Chemistry / quantum', 'Not addressed', 'The chemistry γ ≈ 1 boundary mostly restates the Debye model; the Intent field equals |ψ|² wherever tested (Reparametrization)'],
+                ['Chemistry / quantum', 'Not addressed', 'The chemistry γ ≈ 1 band (boundary reading retracted) mostly restates the Debye model; the Intent field equals |ψ|² wherever tested (Reparametrization)'],
                 ['Freeman\'s Law', 'Σ₀ = a₀/(2πG)', 'The same relation, relabelled through ρ_crit (Reparametrization)'],
               ].map(([feature, mond, sync]) => (
                 <tr key={feature} style={{ borderBottom: '1px solid var(--color-dark-border)' }}>

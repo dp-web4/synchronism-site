@@ -125,7 +125,7 @@ export default function HonestAssessment() {
                 Two of them (TEST-09, TEST-10) test one cap (a ceiling on how much extra gravity the formula can add). On
                 rotation curves TEST-09 fires only under the site&apos;s choice of cap; TEST-10 fires under every candidate cap,
                 though at the most permissive one (6.39) its M/L-independent part rests on two gas-dominated galaxies; there the cap is
-                excluded instead by two dwarf spheroidals (Draco, Crater II, 4.9&sigma; each at the heaviest plausible stars, no gas and no rule about light needed; 2026-11-15). Galaxy
+                excluded instead by two dwarf spheroidals (Draco, Crater II, 4.5&sigma; and 4.2&sigma; at the heaviest plausible stars under Wolf et al. 2010&apos;s mass estimator, no gas and no rule about light needed; 2026-11-15, corrected 2026-11-19 from 4.9&sigma; each; marginal under Walker et al. 2009&apos;s smaller estimator). Galaxy
                 weak-lensing data exclude the framework&apos;s own cap whichever way light is assumed to bend, and the most permissive cap only if hidden baryons are below about 6&times; the stars and cold gas. Those two share one cause, so no more than
                 five are independent. Under every counting rule on file four of the six stay: row #2 (TEST-10), row #4 (the
                 environment run), row #5 (TEST-25, the Cassini row inherited from MOND) and row #6 (the Bell/CHSH construction
@@ -230,7 +230,7 @@ export default function HonestAssessment() {
           Every refutation carries a Failed badge; not every Failed badge counts as a refutation. Not every
           defined tag has a current
           instance — tags exist to cover the claim lifecycle, not to guarantee one of each. (The
-          &ldquo;Model Explainer&rdquo; tag on the Tools page is a content grouping, not a validation badge —
+          &ldquo;Model Explainer&rdquo; tag on the Tools page is a content grouping, not a status badge —
           it means &ldquo;shows how the equation works,&rdquo; with no verdict content.)
         </p>
 
@@ -465,11 +465,11 @@ export default function HonestAssessment() {
           <code style={{ fontSize: '0.78rem' }}>explorer/findings/scripts/lensing_cap_on_kids_bins.py</code>) it is excluded only if
           galaxies carry less than ~2&ndash;3× their stars plus cold gas out to ~0.3&ndash;1 Mpc, and the face-value exclusion
           (observed boost ≈ 300 on the lowest published bin, g<sub>bar</sub> ≈ 1.4×10⁻¹⁵ m/s²; MOND&apos;s √(a₀/g) there is ≈ 295 at a₀ = 1.2×10⁻¹⁰) sits in bins the data paper flags for satellite contamination. The kill that carries it predates SPARC by two decades: the classical dwarf spheroidals (Draco, Ursa Minor, Sextans) have dynamical
-          M/L<sub>V</sub> ≈ 100–300 (Mateo 1998; Walker et al. 2009), boosts of 30–100 at typical stellar M/L, above every cap at that M/L (at the heaviest plausible stars, M/L = 4, Draco still excludes caps up to about 18.5 at 3σ, 14.7 after a six-system trials correction, so 1/Ω<sub>b</sub> = 20.3 is excluded at fiducial M/L but not at the band edge; maintainer 2026-11-15); MOND has its own
+          M/L<sub>V</sub> ≈ 100–300 (Mateo 1998; Walker et al. 2009), boosts of 30–100 at typical stellar M/L, above every cap at that M/L (at the heaviest plausible stars, M/L = 4, Draco still excludes caps up to about 13.9 at 3σ, 11 after a six-system trials correction, under Wolf et al. 2010&apos;s mass estimator, so 1/Ω<sub>b</sub> = 20.3 is excluded at fiducial M/L but not at the band edge; maintainer 2026-11-15, corrected 2026-11-19 from 18.5 / 14.7, which applied Wolf&apos;s projected-radius coefficient to the 3D radius); MOND has its own
           dSph problems (external field, tides), so cite this against the ceiling, not as a discriminator against MOND (added 2026-09-29). Stated as a class: <strong>no boost ceiling tied to a cosmic
           abundance ratio survives SPARC&apos;s most dark-dominated dwarfs</strong>, because those dwarfs are baryon-poor
-          relative to the cosmic mean and the largest such ratio, &Omega;<sub>m</sub>/&Omega;<sub>b</sub> &asymp; 6.4, is half the
-          13.7 they need. The class statement belongs to TEST-10 only; the BTFR-slope limb (TEST-09) does <em>not</em>
+          relative to the cosmic mean and the largest such ratio, &Omega;<sub>m</sub>/&Omega;<sub>b</sub> &asymp; 6.4, falls short of what Draco and Crater II need at any plausible stellar M/L
+          under Wolf et al. 2010&apos;s estimator (the SPARC disc maximum of 13.7 is a sample maximum, not the requirement). The class statement belongs to TEST-10 only; the BTFR-slope limb (TEST-09) does <em>not</em>
           generalise this way, since it stops firing at ceilings of about 5.3 and above. The
           framework&apos;s registered environment effect (&gt;20% of RAR scatter) was also run as
           registered: r²&nbsp;=&nbsp;0.0001 — refuted by execution. These, plus the RAR shape test and the

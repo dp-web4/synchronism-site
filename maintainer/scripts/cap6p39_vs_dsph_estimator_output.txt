@@ -1,0 +1,14 @@
+Crater II  site 11-15 (4 r3D)                   M/L=2: B_req=  60.2 z@6.39= 6.1 | M/L=4: B_req=  30.1 z@6.39= 4.9 | escape M/L (z=3.51) >= 7.0
+Crater II  Wolf+2010 (3 r3D)                    M/L=2: B_req=  45.1 z@6.39= 5.6 | M/L=4: B_req=  22.6 z@6.39= 4.2 | escape M/L (z=3.51) >= 5.3
+Crater II  Walker+2009 (2.5 R_e = 1.875 r3D)    M/L=2: B_req=  28.2 z@6.39= 4.7 | M/L=4: B_req=  14.1 z@6.39= 2.9 | escape M/L (z=3.51) >= 3.3
+Draco      site 11-15 (4 r3D)                   M/L=2: B_req= 101.5 z@6.39= 5.7 | M/L=4: B_req=  50.8 z@6.39= 4.9 | escape M/L (z=3.51) >= 9.2
+Draco      Wolf+2010 (3 r3D)                    M/L=2: B_req=  76.1 z@6.39= 5.4 | M/L=4: B_req=  38.1 z@6.39= 4.5 | escape M/L (z=3.51) >= 6.9
+Draco      Walker+2009 (2.5 R_e = 1.875 r3D)    M/L=2: B_req=  47.6 z@6.39= 4.8 | M/L=4: B_req=  23.8 z@6.39= 3.7 | escape M/L (z=3.51) >= 4.3
+
+At M/L = 4 (heaviest plausible): cap excluded up to B (z = 3.51 after trials / local z = 3); tidal inflation of sigma needed to pass 6.39 at z = 3.51
+Crater II  site 11-15 (4 r3D)                   B_excl  11.2 (local  13.4); sigma inflation >= 1.32x
+Crater II  Wolf+2010 (3 r3D)                    B_excl   8.4 (local  10.0); sigma inflation >= 1.15x
+Crater II  Walker+2009 (2.5 R_e = 1.875 r3D)    B_excl   5.2 (local   6.3); sigma inflation >= 0.91x
+Draco      site 11-15 (4 r3D)                   B_excl  14.6 (local  18.5); sigma inflation >= 1.51x
+Draco      Wolf+2010 (3 r3D)                    B_excl  11.0 (local  13.9); sigma inflation >= 1.31x
+Draco      Walker+2009 (2.5 R_e = 1.875 r3D)    B_excl   6.9 (local   8.7); sigma inflation >= 1.04x

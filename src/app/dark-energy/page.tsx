@@ -15,7 +15,7 @@ export default function DarkEnergy() {
         <strong>&#x03B3; &asymp; &frac12; twice is not a cross-sector agreement.</strong> At &#x03B3; = &frac12; the function satisfies
         1/C &minus; 1 = 2/x exactly. Keyed on acceleration (the galaxy fit&apos;s variable) that is MOND&apos;s simple interpolating function;
         keyed on the mean matter density (the cosmology&apos;s) it adds a constant to the Friedmann equation, which is &Lambda;. So the galaxy
-        fit (&#x03B3; = 0.489) and the DESI fit (&#x03B3; = 0.487 on the mean-density background; read at local density, P(k) pins |2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10&#x207B;&#x2075;) are each dataset choosing its own standard model, in different variables,
+        fit (&#x03B3; = 0.489) and the DESI fit (&#x03B3; = 0.487 on the mean-density background; read at local density, P(k) pins |2&gamma;&minus;1|&nbsp;&#x2272;&nbsp;10&#x207B;&#x2075;) are each dataset choosing its own standard model, in different variables,
         at the one point where this family contains both. The match has no power to fail and is not evidence for the framework.
         Details: <Link href="/galaxy-rotation#gamma-half-nesting" style={{ color: 'var(--color-accent-blue)' }}>the galaxy side</Link>.
       </div>
@@ -32,7 +32,7 @@ export default function DarkEnergy() {
           <strong>every consistent version of it misses the specific behaviour DESI prefers</strong>,
           but the family contains &Lambda;CDM at &gamma;&nbsp;=&nbsp;&frac12;, so it can only be killed by data that kill
           &Lambda;CDM too. <strong>Status: Reparametrization.</strong> It nests &Lambda;CDM, so no data can refute it without
-          refuting &Lambda;CDM, and it has no win branch (below). It is not a discriminating position. <strong>Only the dark-energy-fluid reading survives:</strong> read as modified gravity, G<sub>eff</sub> =
+          refuting &Lambda;CDM, and it has no win branch <em>for this framework</em>: its one non-&Lambda; branch (freezing) is already won by Cardassian-class prior art, Freese &amp; Lewis 2002 (below). It is not a discriminating position. <strong>Only the dark-energy-fluid reading survives:</strong> read as modified gravity, G<sub>eff</sub> =
           G/C(&rho;&#772;) drifts as the cosmic density falls, and lunar laser ranging excludes that by about 2,000&times;
           (<a href="#modified-g-llr" style={{ color: 'var(--color-accent-blue)' }}>box below</a>). Read at the local density (the framework&apos;s own postulate), existing galaxy clustering data already pin
           &gamma; to &frac12; (box below), so there is nothing left for DR3 to decide. On the mean-density reading: at DESI DR3 it is killed if DR3 excludes &Lambda; in the thawing or crossing direction (w&#x2080; &gt; &minus;1 with w<sub>a</sub> &lt; 0, whether or not w = &minus;1 is crossed) and tied if the data sit at &Lambda;CDM (&gamma;&nbsp;=&nbsp;&frac12;). <strong>It has no
@@ -126,7 +126,7 @@ export default function DarkEnergy() {
             up), positive above it (clumps are smoothed out). That pressure term enters growth multiplied by
             (k/aH)&sup2;, which is 10&#x2074;&ndash;10&#x2075; on the scales where the matter power spectrum P(k) is
             measured. <strong>Executed (explorer 2026-09-14, rule pre-registered before computing):</strong> existing P(k)
-            requires <strong>|2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10&#x207B;&#x2075;</strong>, i.e. &gamma;&nbsp;=&nbsp;&frac12;
+            requires <strong>|2&gamma;&minus;1|&nbsp;&#x2272;&nbsp;10&#x207B;&#x2075;</strong>, i.e. &gamma;&nbsp;=&nbsp;&frac12;
             to within ~5&times;10&#x207B;&#x2076; &mdash; about 5,000&times; narrower than the DESI fit&apos;s 1&sigma;. <strong>The two sides of that bound are different in kind:</strong> below &gamma;&nbsp;=&nbsp;&frac12;, c<sub>s</sub>&sup2; &lt; 0 is a <em>gradient instability</em>: in linear theory every scale smaller than about (aH)/&radic;|c<sub>s</sub>&sup2;| grows exponentially, so on the adiabatic reading the &gamma; &lt; &frac12; side has no stable member at any distance from &frac12;, and 10&#x207B;&#x2075; only marks where the blow-up reaches the scales P(k) measures. Above &frac12; the pressure smooths clumps out (Jeans suppression), and 10&#x207B;&#x2075; is an amplitude bound. The DESI mean-density fit, &gamma;&nbsp;=&nbsp;0.487, sits on the unstable side. (The galaxy fit&apos;s &gamma; &asymp; 0.49 is a different function, keyed on acceleration, so it is not on this axis.) The escape is the same on both sides: a non-adiabatic sound speed (c<sub>s</sub>&sup2; = 0, or an entropy-carrying second field), which the archive does not write down. The order of magnitude in one line: the gradient term enters growth as c<sub>s</sub>&sup2;(k/aH)&sup2;, and (k/aH)&sup2; &asymp; 9&times;10&#x2074; at k = 0.1 h/Mpc today, so a mode changes by order unity over the matter era once |2&gamma;&minus;1| ~ 10&#x207B;&#x2075;; the executed run gives a power ratio of 1.2 at k = 0.2 h/Mpc for |2&gamma;&minus;1| = 2&times;10&#x207B;&#x2075; and 2.7&times;10&sup2;&sup2; at k = 0.1 for the DESI-fit 0.026. At the
             DESI best fit &gamma;&nbsp;=&nbsp;0.487 the matter power is already ~10&times; &Lambda;CDM&apos;s at
             k&nbsp;=&nbsp;0.01&nbsp;h/Mpc. This is the known result for the class: fluid Cardassian models are inconsistent
@@ -324,7 +324,7 @@ export default function DarkEnergy() {
         <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '1.25rem', fontSize: '0.9rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
           <li>
             <strong>The substituted family is not &ldquo;3.4&ndash;6.3&sigma; excluded&rdquo; &mdash; it is &Lambda;CDM.</strong>{' '}
-            Best &gamma; = 0.487 (&minus;0.021/+0.024; on the mean-density background; read at local density, P(k) pins |2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10&#x207B;&#x2075;), &Delta;&chi;&sup2; = &minus;0.3 vs &Lambda;CDM with one extra
+            Best &gamma; = 0.487 (&minus;0.021/+0.024; on the mean-density background; read at local density, P(k) pins |2&gamma;&minus;1|&nbsp;&#x2272;&nbsp;10&#x207B;&#x2075;), &Delta;&chi;&sup2; = &minus;0.3 vs &Lambda;CDM with one extra
             parameter; its best member projects to (w&#x2080;, w&#x2090;) = (&minus;0.993, +0.023). (Not the same object as the +0.23&hellip;+0.60 above: that is completion B with w&#x2080; forced to DESI&apos;s value; this is the free best fit of the non-covariant substituted family.) It cannot reach the
             crossing, and the data-level price of that is exactly &Lambda;CDM&apos;s own: +11.0 behind w&#x2080;w&#x2090;CDM
             (~2.9&sigma; for two parameters), no more. <em>(Data combination: DESI DR2 BAO + compressed CMB + one SN sample, DES
@@ -343,7 +343,7 @@ export default function DarkEnergy() {
           </li>
           <li>
             <strong>The first executed cross-sector &gamma; test &mdash; and it has no power to fail.</strong>{' '}
-            &gamma;<sub>cosmo</sub> = 0.487 vs &gamma;<sub>galaxy</sub> = 0.489 &ldquo;agree at 0.1&sigma;&rdquo; &mdash;
+            &gamma;<sub>cosmo</sub> = 0.487 vs &gamma;<sub>galaxy</sub> = 0.489 &ldquo;agree&rdquo; (the archive said 0.1&sigma;; with &sigma;<sub>galaxy</sub> = 0.11 it is 0.02&sigma;) &mdash;
             but &gamma; = &frac12; is exactly &Lambda; <em>and</em> exactly MOND&apos;s simple &mu;, so the two sectors&apos;{' '}
             <em>standard</em> models sit at the same point by construction. Agreement between the two fits is the agreement of
             &Lambda; with the simple &mu;, inherited, with no power to fail. Both reductions are one line of algebra (at &gamma; = &frac12;, &rho;<sub>m</sub>/C = &rho;<sub>m</sub> + 2&rho;<sub>crit</sub>; and <em>any</em> C = &rho;/(&rho;+K) gives
@@ -396,7 +396,7 @@ export default function DarkEnergy() {
             repo 2026-08-18: &delta;<sub>DE</sub>/&delta;<sub>m</sub>&nbsp;=&nbsp;1&nbsp;+&nbsp;w<sub>DE</sub>) forecast an
             fσ₈ shift of about &minus;0.22% &mdash; &Lambda;CDM-like, 0.10&sigma; &mdash; but that is the{' '}
             <em>pressure-free</em> local reading. Its growth equation omitted the fluid&apos;s pressure (Jeans) term, which
-            dominates by (k/aH)&sup2;; with it, P(k) forces |2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10&#x207B;&#x2075; (box
+            dominates by (k/aH)&sup2;; with it, P(k) forces |2&gamma;&minus;1|&nbsp;&#x2272;&nbsp;10&#x207B;&#x2075; (box
             above). The &minus;0.22% / 0.10&sigma; figure and &ldquo;power, not data, is the blocker&rdquo; hold only for the
             mean-density (background-only) reading. The &minus;0.22% channel is also <em>not</em> the
             source of TEST-04a&apos;s fσ₈&nbsp;&asymp;&nbsp;0.418, which came from Session 107&apos;s separate
@@ -503,7 +503,7 @@ export default function DarkEnergy() {
         <p style={{ padding: '0.75rem 1rem', borderLeft: '3px solid #f59e0b', background: 'rgba(245,158,11,0.06)' }}>
           <strong>Read this first (2026-09-27):</strong> TEST-26 cannot single out the framework. Its kill fires only
           when DR3 excludes &Lambda; in the thawing or crossing direction, and that outcome refutes &Lambda;CDM equally. On
-          the local-fluid reading, existing P(k) already pins |2&gamma;&minus;1|&nbsp;&lesssim;&nbsp;10<sup>&minus;5</sup> (and every &gamma; &lt; &frac12; is gradient-unstable), so the
+          the local-fluid reading, existing P(k) already pins |2&gamma;&minus;1|&nbsp;&#x2272;&nbsp;10<sup>&minus;5</sup> (and every &gamma; &lt; &frac12; is gradient-unstable), so the
           sector <em>is</em> &Lambda; there. On the mean-density reading &gamma; is free, and the only non-&Lambda; outcome is
           freezing, which is a win branch for a known model class. <strong>The win side is shared too (explorer
           2026-10-08, pre-registered <code>f3e045e</code>):</strong> on DR3-like Asimov data the 2002 constant-w Cardassian

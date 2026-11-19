@@ -150,7 +150,8 @@ export default function MondUnification() {
               Plugging in H&#x2080; = 67.4 km/s/Mpc and c = 3 &times; 10<sup>8</sup> m/s
               gives 1.04 &times; 10<sup>&minus;10</sup> m/s&sup2;.
               Milgrom&apos;s observed value: 1.20 &times; 10<sup>&minus;10</sup>.
-              Error: ~13%.
+              Error: ~13%. At the SH0ES value H&#x2080; = 73 km/s/Mpc the same formula gives 1.13 &times; 10<sup>&minus;10</sup>, 6% below;
+              that is the &ldquo;6&ndash;13%&rdquo; in the badge, and it is why the badge says H&#x2080;-dependent.
             </p>
           </div>
         </div>
@@ -171,7 +172,7 @@ export default function MondUnification() {
             <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               <li>a&#x2080; &#x2248; cH&#x2080;/2&#x03C0; is <strong>posited</strong>, not derived from C</li>
               <li>Value from dimensional analysis of H&#x2080; and c (shared with other frameworks)</li>
-              <li>Two interpolating functions have been used, in different fits: early RAR comparisons used the standard McGaugh et al. (2016) &#x03BD;; the framework&apos;s own tanh-log compander, when its &#x03B3; is left free, lands on &#x03B3; &#x2248; &frac12;, which is <em>Milgrom&apos;s simple &#x03BC;</em> exactly (C = x/(x+2)). These are different functions (&#x0394;BIC between them is quoted on <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>); <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> says which fit used which</li>
+              <li>Two interpolating functions have been used, in different fits: early RAR comparisons used the standard McGaugh et al. (2016) &#x03BD;; the framework&apos;s own tanh-log compander, when its &#x03B3; is left free, lands on &#x03B3; &#x2248; &frac12;, which is <em>Milgrom&apos;s simple &#x03BC;</em> exactly (C = x/(x+2), with x = g/a&#x2080;&prime; and a&#x2080; = 2a&#x2080;&prime;, i.e. Milgrom&apos;s simple &mu; once x is read as g/a&#x2080;&prime;). These are different functions (&#x0394;BIC between them is quoted on <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>); <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> says which fit used which</li>
               <li>Predicts EFE = 0 structurally <em>for the strict C(ρ<sub>local</sub>) reading</em> &mdash; the load-bearing premise is that C is independent of &Phi;, not locality per se (archive 2026-08-24: a fully non-local, &Phi;-independent C still gives EFE = 0 to 10<sup>&minus;13</sup>; a &nabla;&Phi;-keyed C gives 0.046). At the fitted &#x03B3; = &frac12; the compander that actually reproduces rotation curves is keyed on acceleration and its EFE is MOND&apos;s identically &mdash; so the EFE = 0 prediction has no live carrier that fits galaxies. If one reads the acceleration-keyed compander with EFE = 0 anyway, its Solar-System floor is γ &#x2273; 0.87 from planetary precessions (the direct tail, explorer 2026-10-15), not Cassini&apos;s quadrupole, and its next adjudicator is the galaxy-side EFE detection on SPARC (Chae et al. 2020, ApJ 904, 51: &gt;4&#x03C3;), which has not been confronted in-house: untested, not refuted. See correction below and the reconciled caveat on <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link></li>
             </ul>
           </div>
@@ -321,7 +322,7 @@ export default function MondUnification() {
             on (the &ldquo;nonlinear Poisson equation&rdquo;) has been retracted above &mdash; the structural
             prediction is EFE&nbsp;=&nbsp;0, not a weakened MOND EFE, so the quoted 10.5&ndash;14.5 km/s interval
             does not follow from anything currently on the site. Independently, an isolated-deep-MOND check for a
-            10<sup>7</sup>&nbsp;M&#x2609; system gives &#x03C3;&nbsp;=&nbsp;(4GMa&#x2080;/81)<sup>1/4</sup>&nbsp;&approx;&nbsp;9.4&nbsp;km/s (with the observed a&#x2080; = 1.2&times;10⁻¹⁰; the framework&apos;s cH&#x2080;/2&pi; gives 9.1&nbsp;km/s),
+            10<sup>7</sup>&nbsp;M&#x2609; system gives &#x03C3;&nbsp;=&nbsp;(4GMa&#x2080;/81)<sup>1/4</sup>&nbsp;&asymp;&nbsp;9.4&nbsp;km/s (with the observed a&#x2080; = 1.2&times;10⁻¹⁰; the framework&apos;s cH&#x2080;/2&pi; gives 9.1&nbsp;km/s),
             radius-independent &mdash; below both quoted intervals, which the EFE (in MOND) can only lower further, not
             raise. No radius is stated for either interval and MOND&apos;s 40.9&nbsp;km/s upper bound does not
             reconstruct from the stated mass. The nested-interval, non-discriminating conclusion above still

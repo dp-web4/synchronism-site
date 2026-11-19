@@ -163,8 +163,9 @@ export default function WhySynchronism() {
         </p>
         </details>
         <p>
-          The log-density argument is physically motivated. Then tested against data.
-          Some predictions held up. Others failed.
+          The log-density argument is chosen too, not derived (the +1 keeps C finite at zero density; see{' '}
+          <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>). Then it was tested against data.
+          Some fits to existing data held up, mostly because they reproduce known formulas; others failed. No new prediction has been confirmed.
         </p>
       </section>
 

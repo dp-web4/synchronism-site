@@ -117,7 +117,7 @@ export default function InteractiveTools() {
         name the topic, nothing more. The verdict lives in a separate slot: where a tool&apos;s own page
         carries a{' '}
         <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
-          validation badge
+          status badge
         </Link>, its card shows that same badge under &ldquo;Badge on its page&rdquo;
         — no tool here is certified correct. Level uses one scale and one scale only: Beginner /
         Intermediate / Advanced. <strong>Artifact Lesson</strong> is <em>not</em> a level — it is an
@@ -210,7 +210,7 @@ export default function InteractiveTools() {
       <div style={{ marginTop: '2rem', padding: '1rem', borderRadius: '8px', background: 'rgba(56, 189, 248, 0.05)', border: '1px solid rgba(56, 189, 248, 0.15)', marginBottom: '2rem' }}>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: 0 }}>
           <strong>Where to start:</strong> Coherence Explorer (Model Explainer) → Galaxy Plotter (Model Explainer) → Honest Assessment.
-          <span style={{ color: 'var(--color-text-muted)' }}> &ldquo;Model Explainer&rdquo; is a content grouping (tools that show how the equation works), not a validation badge — no tool here certifies the model as correct; see the badge definitions on the Honest Assessment. Each tool page repeats its card label next to its own claim badges, with a one-line &ldquo;tool type / claim status&rdquo; caption (the Galaxy Plotter, for example, is a Model Explainer whose drawn equation is badged Failed and whose MOND-matching stand-in is badged Reparametrization).</span>
+          <span style={{ color: 'var(--color-text-muted)' }}> &ldquo;Model Explainer&rdquo; is a content grouping (tools that show how the equation works), not a status badge — no tool here certifies the model as correct; see the badge definitions on the Honest Assessment. Each tool page repeats its card label next to its own claim badges, with a one-line &ldquo;tool type / claim status&rdquo; caption (the Galaxy Plotter, for example, is a Model Explainer whose drawn equation is badged Failed and whose MOND-matching stand-in is badged Reparametrization).</span>
           The tools above illustrate the framework&apos;s core equation and its known reparametrizations, including the parts that failed.
         </p>
       </div>

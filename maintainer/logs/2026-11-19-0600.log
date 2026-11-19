@@ -1,3 +1,40 @@
 Starting Synchronism Maintainer Session at Thu Nov 19 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+Session done. Both repos are pushed: site `8cd22c7`, research `b26f6fa9`. The build passes, the lint is clean (403 rules, plus a new check for HTML entities that render as literal text) and all 209 anchor links resolve. I did not check the pages in a browser.
+
+**Most important result: a correction to one of the site's citable results.** A researcher persona asked which mass formula was behind "Draco ≈ 100, Crater II ≈ 60" (the boosts two dwarf galaxies need, which the site uses to rule out capped-boost gravity). The persona guessed the site had picked the cautious formula. It had picked the most aggressive one, by mistake. The August script took Wolf et al. 2010's coefficient 4, which goes with the projected radius, and applied it to the 3D radius. That makes every mass 4/3 too high. Rerun with the coefficient applied correctly:
+- Both dwarfs still rule out the most permissive cap (6.39): Draco at 4.5σ and Crater II at 4.2σ. These were printed as 4.9σ each.
+- Caps are ruled out up to about 11, not 14.7.
+- Crater II escapes if tides have inflated its measured star speeds by only 15%. It is a known tidally disturbed galaxy.
+- With Walker et al. 2009's mass formula, which gives a smaller mass, Crater II no longer rules out the cap and Draco only just does.
+
+I corrected this on 9 site surfaces and logged it in PREDICTIONS.md. No prediction moves between buckets.
+
+**Other new runs (none pre-registered):**
+- **The density law's +2843 loss to the acceleration law, broken down.** The graduate persona expected it to come from galaxy outskirts. It doesn't. The density law predicts gravity 0.21 dex too high in bright galaxy centres and 0.21 dex too low in the weak-gravity outskirts. That is a tilt across the whole range, and density-keying fails even in inner discs. One of my two written predictions held.
+- **Cassini comparison numbers.** The MOND function that passes Cassini (δ = 6) has a transition 1.01 dex wide. The framework's curve can't get narrower than 1.17 dex. That gap is small; the bigger difference is how each returns to Newtonian gravity (a power law versus exponentially).
+
+**Site fixes from the visitor log and the explorer:**
+- The lunar-ranging bound on density-dependent G now uses the explorer's measured Gaia star motions. The 10-pc end had been stated 25–50× too strong. The two ingredients are now credited to their papers.
+- Seven plain-language summaries lagged the detailed pages and are fixed:
+  - γ does set the curve's width below about 1; there is just a floor of 1.17 dex.
+  - The log argument is chosen, not derived.
+  - The tests used three different inputs, each fitted separately, not one density.
+  - The plotter now calls γ = 2 disfavoured at about 2σ, not refuted.
+  - The /why-synchronism page now says some fits to existing data held up and no new prediction has been confirmed.
+  - The glossary's "reparametrization" entry now agrees with the plotter: matching a known formula is not evidence.
+  - 13.7 is now described as a sample maximum, not a requirement.
+- The rename from "validation badge" to "status badge" is finished everywhere.
+- Three entities that showed up as literal text are fixed (`&lesssim;` five times on /dark-energy, `&propto;`, `&approx;`). The lint now flags any that aren't on the list React decodes.
+- Breadcrumb links now show the title of the page they lead to.
+- The "Results about other people's theories" list now has a fifth item: how MOND's acceleration constant changes with redshift, which is a question between MOND and ΛCDM.
+
+**Decisions for you:**
+- **Run a 2×2 test first?** The question is why the debate sessions rederived four published theories and never cited them. The test crosses two factors: debate roles versus a single agent asked "what known result does this reduce to?", each with and without literature search. It runs on Claude alone, takes tens of sessions, and can tell those two explanations apart. The planned run on post-training-cutoff data can't. I recommend running it before that run's default date of 12-09. The explorer has a topic to pre-register it.
+- **The "MRH-relationship" badge family name.** The site's own MRH page proposes renaming MRH. The badge name comes from the project CLAUDE.md, so I left it alone.
+- Still waiting on you: the Gaia DR4 default (2 December, 13 days away) and which dark-matter story the framework keeps.
+
+**For the explorer:** fix the coefficient in its script and rerun the August table, including the separate cap of 20.3 (which assumes no dark matter). Then check whether tides explain Crater II, and whether simulated galaxies show the same redshift trend under the estimator our own RC100 run used.
+
+I also saved one memory: when a script cites a paper for a coefficient, check which variable the paper pairs it with. An exact identity control reproduces an inherited formula slip rather than catching it.

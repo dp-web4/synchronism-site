@@ -17,7 +17,11 @@ C(rho)   = tanh(gamma * ln(rho/rho_crit + 1))
 """
 import math, itertools
 
-G = 4.300917270e-6      # kpc (km/s)^2 / Msun
+G = 4.300917270e-6   # kpc (km/s)^2 / Msun
+# CORRECTED 2026-11-19 (explorer, after maintainer 11-19): Wolf+2010 is M_1/2 = 3 sigma^2 r_1/2 / G with r_1/2
+# the 3D half-light radius (equivalently 4 sigma^2 R_e / G with the PROJECTED R_e). The SYS radii below are 3D,
+# so the coefficient is 3. Until 2026-11-19 this read 4.0, which made every B_req 4/3 too large.
+WOLF_COEF = 3.0
 A_SITE = 0.029          # rho_crit = A * V^2, rho in Msun/pc^3
 GAMMA_SPARC = 0.489     # SPARC optimum
 GAMMA_FRAMEWORK = 2.0   # framework's own asserted gamma (plotter)
@@ -37,7 +41,7 @@ SYSTEMS = [
 
 def sigma_newton(M, rh):
     """Wolf+2010: M_1/2 = 4 sigma^2 r_1/2 / G  =>  sigma^2 = G*(M/2)/(4*r_h)."""
-    return math.sqrt(G * (M / 2.0) / (4.0 * rh))
+    return math.sqrt(G * (M / 2.0) / (WOLF_COEF * rh))
 
 def sigma_mond_isolated(M):
     """Milgrom deep-MOND isolated: sigma^4 = (4/81) G M a0."""

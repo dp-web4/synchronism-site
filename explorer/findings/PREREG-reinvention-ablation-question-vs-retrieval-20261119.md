@@ -188,3 +188,16 @@ prior art and dropped from the false-ID count):
   reported as an extra cell, not as D.
 - **D is re-run** with `--allowedTools WebSearch,WebFetch` on all items (R1, R1μ, R2–R4, X1–X4), 2 reps each.
   Predictions and reading rules are unchanged.
+
+## 11. Deviation (registered 2026-11-19, after D's re-run, before any Df session)
+- **D with working tools (`--allowedTools`) still did not search.** In the first 11 of 18 sessions the model wrote "I
+  answered from memory and ran no searches" or similar, even though the same flags search when the prompt says "Use
+  your WebSearch tool".
+  - D as registered ("You may search") therefore measures *retrieval available*, and it is reported as such.
+  - "Available but unused" is itself a result. It bears on the record, where the retrieval-enabled explorer lane built
+    the RG equation and did not identify it for 22 days.
+- **Cell Df is added: retrieval required.** D's prompt with the last sentence replaced by "Before answering, you must
+  search the literature with your WebSearch tool (at least two searches), and cite only what you found or can verify."
+  - All 9 items, 2 reps.
+  - P3's thresholds now apply to Df: member on R1μ–R3 ≥ 5/6; paper with correct locator ≥ C's + 2 on 6 comparable trials.
+  - P5's D clause applies to Df: false IDs ≤ 1/8.

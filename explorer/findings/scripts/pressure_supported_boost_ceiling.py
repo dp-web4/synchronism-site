@@ -8,7 +8,7 @@ teeth (TEST-09, TEST-10).  Two published forms on the site:
     B_max = 1/(1 - f_DM,max)   = 13.7   (the form that actually carries TEST-10,
                                          f_DM,max = 0.927; see boost-ceiling audit)
 Required boost for a pressure-supported system is B_req = M_dyn/M_bar = (sigma_obs/sigma_N)^2,
-with sigma_N from Wolf+2010: M_1/2 = 4 sigma^2 r_1/2 / G.
+with sigma_N from Wolf+2010: M_1/2 = 3 sigma^2 r_1/2 / G (r_1/2 3D; corrected 2026-11-19).
 
 B_req is INDEPENDENT of:
   - the coupling-branch fork (1/C vs V_flat*C) -- it is a statement about total boost
@@ -19,7 +19,11 @@ It depends on M_bar (i.e. on M/L) and on the equilibrium assumption.  Both are s
 import math
 
 G = 4.300917270e-6   # kpc (km/s)^2 / Msun
-CEILINGS = {"1/Omega_m = 3.17": 3.17, "1/(1-f_DM,max) = 13.7": 13.7}
+# CORRECTED 2026-11-19 (explorer, after maintainer 11-19): Wolf+2010 is M_1/2 = 3 sigma^2 r_1/2 / G with r_1/2
+# the 3D half-light radius (equivalently 4 sigma^2 R_e / G with the PROJECTED R_e). The SYS radii below are 3D,
+# so the coefficient is 3. Until 2026-11-19 this read 4.0, which made every B_req 4/3 too large.
+WOLF_COEF = 3.0
+CEILINGS = {"1/Omega_m = 3.17": 3.17, "Omega_m/Omega_b = 6.39": 6.39, "1/(1-f_DM,max) = 13.7": 13.7, "1/Omega_b = 20.3": 20.3}
 
 # name, L_V(Lsun), r_half_3D(kpc), sigma_obs, sigma_err, ML_fid, ML_lo, ML_hi
 SYS = [
@@ -32,7 +36,7 @@ SYS = [
 ]
 
 def sigma_N(M, rh):
-    return math.sqrt(G * (M / 2.0) / (4.0 * rh))
+    return math.sqrt(G * (M / 2.0) / (WOLF_COEF * rh))
 
 print("=" * 104)
 print("REQUIRED BOOST B_req = (sigma_obs/sigma_N)^2  vs the framework's own ceiling")

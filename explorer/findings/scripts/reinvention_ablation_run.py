@@ -32,6 +32,7 @@ C = HEAD + ("Question: is this construction, or the result it states, already kn
             "journal/volume/page or arXiv id). If you believe it is not published, say so. Mark any citation you are unsure of as "
             "uncertain. At most 400 words.\n\n")
 D_SUFFIX = "\n\nYou may search the literature with your tools before answering."
+DF_SUFFIX = "\n\nBefore answering, you must search the literature with your WebSearch tool (at least two searches), and cite only what you found or can verify."  # deviation §11
 
 
 def call(sys_prompt, user, tools="", timeout=540):
@@ -88,6 +89,8 @@ def main():
         txt = call(SYS, C + ITEMS[item])
     elif cell == "D":
         txt = call(SYS, C + ITEMS[item] + D_SUFFIX, tools="WebSearch,WebFetch", timeout=590)
+    elif cell == "Df":
+        txt = call(SYS, C + ITEMS[item] + DF_SUFFIX, tools="WebSearch,WebFetch", timeout=590)
     elif cell == "A":
         tr = debate(ITEMS[item])
         json.dump([{"role": r, "text": t} for r, t in tr], open(base + ".json", "w"), indent=1)

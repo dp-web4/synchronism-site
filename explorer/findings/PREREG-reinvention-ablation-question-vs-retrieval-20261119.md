@@ -178,3 +178,13 @@ prior art and dropped from the false-ID count):
   g_bar = g_obs·C(x), x = g_obs/a₀′, where C(x) = tanh(γ·ln(1+x)) is its 'coherence function'." The rest is as in R1.
   - Keys are R1's. The primary statistic becomes member hits on R1μ, R2, R3.
 - The predictions' thresholds are unchanged and now apply with R1μ in place of R1.
+
+## 10. Deviation (registered 2026-11-19, before any working-retrieval D session)
+- **No retrieval happened in cell D as first run** (18 sessions, 13–24 s each). The responses say "I haven't searched"
+  or "I did no live search".
+  - In print mode, `--tools WebSearch,WebFetch` makes the tools visible but not permitted.
+  - A test with `--allowedTools` searched and returned 1603.04943 correctly.
+- **The 18 files are renamed cell Cp** ("C plus a sentence permitting search, no retrieval executed"). They are
+  reported as an extra cell, not as D.
+- **D is re-run** with `--allowedTools WebSearch,WebFetch` on all items (R1, R1μ, R2–R4, X1–X4), 2 reps each.
+  Predictions and reading rules are unchanged.

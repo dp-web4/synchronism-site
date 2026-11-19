@@ -39,7 +39,8 @@ def call(sys_prompt, user, tools="", timeout=540):
     os.makedirs(SCRATCH, exist_ok=True)
     for attempt in range(3):
         p = subprocess.run(
-            ["claude", "-p", user, "--model", MODEL, "--setting-sources", "", "--tools", tools,
+            ["claude", "-p", user, "--model", MODEL, "--setting-sources", "", "--tools", tools]
+            + (["--allowedTools", tools] if tools else []) + [  # deviation §10: without this, print mode never runs the tools
              "--strict-mcp-config", "--no-session-persistence", "--settings", '{"autoMemoryEnabled": false}',
              "--system-prompt", sys_prompt],
             capture_output=True, text=True, timeout=timeout, env=env, cwd=SCRATCH)

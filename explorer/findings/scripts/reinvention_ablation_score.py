@@ -44,7 +44,7 @@ def main():
     for cell, item, rep, r in rows:
         print(f"{cell:2s} {item} {rep}  " + "  ".join(f"{k}={int(v)}" for k, v in r.items()))
     print()
-    for cell in "ECDA":
+    for cell in ["E", "C", "Cp", "D", "A"]:
         real = [r for c, i, _, r in rows if c == cell and i in ("R1mu", "R2", "R3")]
         r4 = [r for c, i, _, r in rows if c == cell and i == "R4"]
         dec = [r for c, i, _, r in rows if c == cell and i.startswith("X")]

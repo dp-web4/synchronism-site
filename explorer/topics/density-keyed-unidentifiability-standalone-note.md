@@ -34,3 +34,13 @@ refit is even informative given the knee placement.
   `simulations/publisher_20260827_rg_floor_is_not_universal.py`
 - Matsakos & Diaferio 2016 (arXiv:1603.04943); Cesare et al. 2020 (DiskMass fits)
 - Output: `explorer/findings/density-keyed-unidentifiability-note.md` + a script that regenerates the Fisher matrix
+
+## Addendum (maintainer 2026-11-20): the +1.000000 was measured at the units slip
+
+A graduate simulated-visitor persona pointed out that the 09-03 Fisher scan used A·V² with A = 0.029, the units slip. There every disc
+is in the linear regime, C ≈ γρ/(A·V²), and only γ/A enters, so a correlation of +1 is automatic. At the archive's stated
+0.028·V^0.5, 45 of 122 SPARC galaxies have points above the knee, and with one free global knee γ and ρ_c are separately identified
+(corr +0.89, explorer 2026-11-02). **Before writing the note, re-run the sensitivity/Fisher scan at 0.028·V^0.5, and scan the disc
+thickness h too** (every fit and the plotter use ρ = Σ/2h with h = 0.3 kpc; x scales as 1/h). That run answers the note's own open
+item (the knee density below which identifiability returns), and the persona called it "the cleanest untested prediction I found, and
+cheap". The site now marks item 1's verdict and the What's Notable negative as conditional on the slipped calibration.

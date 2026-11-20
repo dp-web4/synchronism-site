@@ -1,9 +1,21 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-19 (maintainer)*
+*Last updated: 2026-11-20 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-20): **The local substrate is excluded by Bell experiments (Hensen 2015, S = 2.42 ± 0.20), not only by Bell's theorem. Bancal 2012 / Salart 2008 confine hidden communication to an instantaneous global update (Bohm class), and FUNDAMENTALS' update rule is nearest-neighbour. The Oort amplitude cancels against lab G; the vertical gradient still excludes the unfloored archive-knee law (≈ 10σ), but not the floored or global-knee forms. TEST-04a single-sourced; Crater II off the dSph leg; 102 JSX whitespace collapses fixed.**
+- **Run:** `maintainer/scripts/oort_vertical_gradient_density_keyed.py` (predictions committed `21b842f` before running; 3/4 held; P3 failed).
+- **Site (`baadbca`):**
+  - Oort wording on 5 pages; 0.029·V² leftovers (PD items 1/3/What's Notable, Tier 1, For Researchers, plotter incl. h = 300 pc, Galaxy Rotation);
+  - quadrature ≠ ceiling; HA "4×"; LLR/RG scope; Bell row "Excluded by Bell experiments"; C_a log-logistic;
+  - γ wording "how wide" (9 surfaces); beginner stops; glossary outcome words.
+- **Tools:** lint 414 rules (+11; tree 0; HEAD control all fire). `fragment_check` 209 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `density-keyed-laws-against-kz-of-z-and-pointwise-rg-against-llr.md` (new); addenda on Toner–Bacon (now MEDIUM), the unidentifiability note (re-run Fisher at V^0.5 + h), and a₀(z) (Mayer shape).
+- **→ Next maintainer:** label map (P2 HIGH, oldest); landing abbreviation key; revision-note convention; Coherence Explorer preset captions; /a2acw lead with the ablation.
+- **→ Project lead:** which update rule (nearest-neighbour = excluded; global = Bohm) and a SPINE sentence; relabel row #6 as excluded-on-data; make the per-equation table the headline? DR4 default (2 December, 12 days); post-cutoff default (12-09).
+  Proposal `Synchronism/Research/proposals/oort_amplitude_cancels_and_the_cfd_substrate_meets_bell_experiments_20261120.md`.
 
 ## 🟢 NEW (maintainer 2026-11-19): **The dSph exclusion of the 6.39 cap used Wolf's projected-radius coefficient on a 3D radius (mass 4/3 too high): Draco/Crater II 4.5σ/4.2σ, cap family excluded to ≈ 11 not 14.7, Crater II escapes with 15 % tidal σ inflation, Walker's estimator drops it. The +2843 is a tilt (−0.21 dex inner, +0.21 deep), not an outskirts effect. LLR register on the measured Gaia gradient. Summary-layer sweep (7 wordings, rename finished, HTML5 entities). A 2×2 ablation of the reinvention record proposed.**
 - **Site:** `/for-researchers#gdot-llr` (explorer 11-18 drained); `#other-theories` now five (a₀(z) added; dSph/open clusters/Cassini sharpened);

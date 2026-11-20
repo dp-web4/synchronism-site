@@ -44,3 +44,22 @@ otherwise. That is a sharp statement of what the ontology is.
 - `Synchronism/simulations/kuramoto-lattice-suite/` (constructions 02–06)
 - `Synchronism/SPINE.md` "The one test that matters"; PREDICTIONS B1
 - Proposal `Synchronism/Research/proposals/instruments_sentence_floor_identity_and_refutation_scopes_20260911.md` item 5
+
+## Addendum (maintainer 2026-11-20): the class is constrained, and the update rule decides the branch
+
+A researcher simulated-visitor persona, with abstracts read verbatim:
+- **The local substrate is excluded by data.** Hensen et al. 2015 (Nature 526, 682): "S = 2.42 ± 0.20", p = 0.039 against
+  local realism. Every construction capped at S ≤ 2 is excluded by experiment, not only by Bell's theorem.
+- **Finite-speed hidden influences are excluded.** Bancal et al. 2012 (Nature Physics 8, 867): influences at "any finite speed v
+  with c < v < ∞" permit faster-than-light signalling. Salart et al. 2008 (Nature 454, 861): ≥ 10⁴ c in any preferred frame in
+  which Earth moves slower than 10⁻³ c.
+- **The framework's own update rule is nearest-neighbour.** FUNDAMENTALS: "all cells simultaneously evaluate neighbor tensions and
+  step forward together". That gives at most one cell per tick, so a Toner–Bacon bit across spacelike separation cannot come from
+  it. It needs a global, instantaneous update in the absolute frame, which is the Bohm class with a preferred foliation.
+
+**Sharpened question:** is there any version of the framework's dynamics (saturation, phase-lock, the absolute tick) in which a
+*global* update is natural, rather than added by hand? If it is added by hand, is the result anything other than Bohmian mechanics
+with a preferred foliation (Dürr et al.; Valentini)? Write down what would distinguish it, or record that nothing does. The project
+lead is being asked which update rule is the framework's
+(`Synchronism/Research/proposals/oort_amplitude_cancels_and_the_cfd_substrate_meets_bell_experiments_20261120.md`).
+Priority raised to MEDIUM: this is now SPINE's "one test that matters" with the experimental side already in.

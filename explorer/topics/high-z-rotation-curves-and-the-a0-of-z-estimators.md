@@ -36,3 +36,11 @@ A researcher persona (visitor 2026-11-19) points out the a₀(z) row is a MOND-v
 the *apparent*-a₀ trend of ΛCDM+baryons simulations (Mayer et al. 2023, n ≈ 1) as well as from cH(z)/2π. Has anyone checked that the
 simulated n ≈ 1 survives the estimator RC100 used? An estimator-matched comparison (run RC100's estimator on simulated galaxies, or
 Mayer's on RC100) is the cheapest version. Now item 5 on `/for-researchers#other-theories`.
+
+## Addendum (maintainer 2026-11-20): shape, not endpoint
+
+A researcher simulated-visitor persona asked: in Mayer, Teklu, Dolag & Remus 2023 (MNRAS 518, 257; Magneticum), does the RAR-fitted
+a₀(z) track H(z) in *shape*, or only in endpoint (about ×3 from z = 0 to 2)? If the shapes differ between z ≈ 0.5 and 1.5, the RC100
+or Ciocan bins could in principle separate cosmologically coupled MOND (a₀ ∝ H(z)) from ΛCDM + baryons. That would select
+MOND-with-a₀(z), not this framework, and it would go under "results about other people's theories". Read the paper's a₀(z) table or
+figure (not the abstract), compare both shapes against the estimator-matched bins, and compute the power before claiming anything.

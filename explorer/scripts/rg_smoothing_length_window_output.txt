@@ -1,0 +1,85 @@
+rho_c per calibration: DMS mean: 0.00074 Msun/pc^3 = n_H 0.0214 cm^-3; DMS joint: 0.00426 Msun/pc^3 = n_H 0.123 cm^-3; E0 mean: 0.00831 Msun/pc^3 = n_H 0.24 cm^-3
+solar wind at 1 AU (n=5): 0.143 Msun/pc^3
+
+IDENTITY CONTROLS
+  DMS mean: eps0=1 -> planet D 0.0e+00, pioneer 0.0e+00;  Q=0 -> planet D 0.0e+00, dlneps/dlnrho 0.0e+00, Sigma_inf 47.100 (=47.1)
+  DMS joint: eps0=1 -> planet D 0.0e+00, pioneer 0.0e+00;  Q=0 -> planet D 0.0e+00, dlneps/dlnrho 0.0e+00, Sigma_inf 47.100 (=47.1)
+  E0 mean: eps0=1 -> planet D 0.0e+00, pioneer 0.0e+00;  Q=0 -> planet D 0.0e+00, dlneps/dlnrho 0.0e+00, Sigma_inf 47.100 (=47.1)
+
+1. SOLAR SYSTEM: smallest D (AU) passing planets (<=1e-8) and Pioneer (<=8.7e-10 m/s^2)
+  DMS mean  Q*ln     gauss D_min =      8.9 AU   top-hat D_min =     70.1 AU
+  DMS mean  Q*log10  gauss D_min =     9.67 AU   top-hat D_min =     70.1 AU
+  DMS mean  /Q       gauss D_min =     9.49 AU   top-hat D_min =     70.1 AU
+  DMS joint Q*ln     gauss D_min =      8.9 AU   top-hat D_min =     70.1 AU
+  DMS joint Q*log10  gauss D_min =     9.23 AU   top-hat D_min =     70.1 AU
+  DMS joint /Q       gauss D_min =      749 AU   top-hat D_min =     70.1 AU
+  E0 mean   Q*ln     gauss D_min =     10.1 AU   top-hat D_min =     70.1 AU
+  E0 mean   Q*log10  gauss D_min = 2.05e+04 AU   top-hat D_min =     70.1 AU
+  E0 mean   /Q       gauss D_min =      9.4 AU   top-hat D_min =     70.1 AU
+  pointwise-like D=0.01 AU DMS mean: planet D 0.415, Pioneer dg 7.93e-06 m/s^2
+  pointwise-like D=0.01 AU DMS joint: planet D 0.339, Pioneer dg 7.6e-06 m/s^2
+  pointwise-like D=0.01 AU E0 mean: planet D 0.882, Pioneer dg 9.48e-05 m/s^2
+
+2. WIDE BINARIES (s >> D): boost = 3/(1+2 eps_s) [bare 1/eps_s]; Banik pass <=1.1, Chae pass 1.2-1.6
+  DMS mean  Q*ln     n=0.005: 1.38 [1.70]  n=0.02: 1.18 [1.30]  n=0.05: 1.05 [1.08]  n=0.2: 1.00 [1.01]
+  DMS mean  Q*log10  n=0.005: 1.29 [1.50]  n=0.02: 1.18 [1.29]  n=0.05: 1.11 [1.17]  n=0.2: 1.04 [1.07]
+  DMS mean  /Q       n=0.005: 1.31 [1.54]  n=0.02: 1.18 [1.29]  n=0.05: 1.10 [1.16]  n=0.2: 1.03 [1.05]
+  DMS joint Q*ln     n=0.005: 1.29 [1.51]  n=0.02: 1.29 [1.51]  n=0.05: 1.28 [1.48]  n=0.2: 1.04 [1.05]
+  DMS joint Q*log10  n=0.005: 1.29 [1.51]  n=0.02: 1.27 [1.47]  n=0.05: 1.22 [1.37]  n=0.2: 1.08 [1.12]
+  DMS joint /Q       n=0.005: 1.23 [1.39]  n=0.02: 1.19 [1.32]  n=0.05: 1.16 [1.26]  n=0.2: 1.11 [1.18]
+  E0 mean   Q*ln     n=0.005: 2.45 [8.90]  n=0.02: 2.24 [5.91]  n=0.05: 1.98 [3.87]  n=0.2: 1.49 [1.98]
+  E0 mean   Q*log10  n=0.005: 2.01 [4.09]  n=0.02: 1.80 [3.02]  n=0.05: 1.66 [2.48]  n=0.2: 1.46 [1.90]
+  E0 mean   /Q       n=0.005: 2.54 [11.15]  n=0.02: 2.51 [10.19]  n=0.05: 2.36 [7.33]  n=0.2: 1.55 [2.14]
+
+3. LLR Gdot/G = |dln eps/dln rho_s| x |dln rho_s/dt|; pass <= 2.23e-13/yr (stars + gas lo); [with gas hi]
+   rates: D=0.05: rho_s 508, stars 2.29e-150, gas 4.3e-10-3.8e-09; D=0.1: rho_s 63.5, stars 7.73e-41, gas 1.7e-09-1.5e-08; D=0.2: rho_s 7.95, stars 3.35e-13, gas 6.9e-09-6.0e-08; D=0.3: rho_s 2.36, stars 3.51e-08, gas 1.6e-08-1.3e-07; D=0.5: rho_s 0.547, stars 6.91e-06, gas 4.0e-08-3.5e-07; D=0.7: rho_s 0.259, stars 1.71e-05, gas 6.1e-08-5.3e-07; D=1.0: rho_s 0.116, stars 2.32e-05, gas 9.5e-08-8.3e-07; D=2.0: rho_s 0.0599, stars 6.33e-06, gas 9.2e-08-8.0e-07; D=3.0: rho_s 0.0544, stars 1.70e-06, gas 4.5e-08-3.9e-07; D=5.0: rho_s 0.0525, stars 3.36e-07, gas 3.6e-09-3.1e-08; D=10.0: rho_s 0.0521, stars 4.30e-08, gas 1.1e-10-9.9e-10; D=30.0: rho_s 0.043, stars 4.50e-09, gas 0.0e+00-0.0e+00; D=100.0: rho_s 0.043, stars 4.50e-09, gas 0.0e+00-0.0e+00; D=300.0: rho_s 0.043, stars 4.50e-09, gas 0.0e+00-0.0e+00
+   edge at 0.1 pc instead of 0: gas lo at D=0.05/0.1/0.2 = 5.9e-11, 1.1e-09, 6.1e-09
+  DMS mean  Q*ln     ratio to bound (* = excluded): 0.05:2.8e-08 0.1:5.3e-06 0.2:9.6e-04 0.3:6.6e-02 0.5:1.3e+02* 0.7:1.3e+03* 1:7.8e+03* 2:7.2e+03* 3:2.3e+03* 5:4.8e+02* 10:6.2e+01* 30:9.3e+00* 100:9.3e+00* 300:9.3e+00*
+  DMS mean  Q*log10  ratio to bound (* = excluded): 0.05:1.5e-02 0.1:3.1e-01 0.2:6.6e+00* 0.3:1.3e+02* 0.5:5.5e+04* 0.7:2.5e+05* 1:6.3e+05* 2:2.9e+05* 3:8.4e+04* 5:1.7e+04* 10:2.2e+03* 30:2.6e+02* 100:2.6e+02* 300:2.6e+02*
+  DMS mean  /Q       ratio to bound (* = excluded): 0.05:2.5e-03 0.1:7.1e-02 0.2:2.0e+00* 0.3:4.6e+01* 0.5:2.5e+04* 0.7:1.3e+05* 1:3.6e+05* 2:1.8e+05* 3:5.5e+04* 5:1.1e+04* 10:1.4e+03* 30:1.8e+02* 100:1.8e+02* 300:1.8e+02*
+  DMS joint Q*ln     ratio to bound (* = excluded): 0.05:0.0e+00 0.1:4.3e-09 0.2:6.9e-08 0.3:4.1e-05 0.5:1.1e+00* 0.7:3.8e+01* 1:9.4e+02* 2:2.7e+03* 3:1.0e+03* 5:2.3e+02* 10:3.0e+01* 30:6.2e+00* 100:6.2e+00* 300:6.2e+00*
+  DMS joint Q*log10  ratio to bound (* = excluded): 0.05:1.3e-05 0.1:1.3e-03 0.2:1.3e-01 0.3:6.5e+00* 0.5:8.6e+03* 0.7:6.8e+04* 1:3.2e+05* 2:2.4e+05* 3:7.6e+04* 5:1.6e+04* 10:2.0e+03* 30:2.8e+02* 100:2.8e+02* 300:2.8e+02*
+  DMS joint /Q       ratio to bound (* = excluded): 0.05:1.1e+00* 0.1:1.2e+01* 0.2:1.3e+02* 0.3:1.6e+03* 0.5:4.2e+05* 0.7:1.4e+06* 1:2.5e+06* 2:8.7e+05* 3:2.4e+05* 5:4.8e+04* 10:6.1e+03* 30:6.7e+02* 100:6.7e+02* 300:6.7e+02*
+  E0 mean   Q*ln     ratio to bound (* = excluded): 0.05:5.3e-02 0.1:1.5e+00* 0.2:4.2e+01* 0.3:9.5e+02* 0.5:5.1e+05* 0.7:2.5e+06* 1:6.9e+06* 2:3.3e+06* 3:9.6e+05* 5:1.9e+05* 10:2.5e+04* 30:3.0e+03* 100:3.0e+03* 300:3.0e+03*
+  E0 mean   Q*log10  ratio to bound (* = excluded): 0.05:7.9e+00* 0.1:7.3e+01* 0.2:6.6e+02* 0.3:7.6e+03* 0.5:1.7e+06* 0.7:5.5e+06* 1:9.6e+06* 2:3.2e+06* 3:8.9e+05* 5:1.7e+05* 10:2.2e+04* 30:2.4e+03* 100:2.4e+03* 300:2.4e+03*
+  E0 mean   /Q       ratio to bound (* = excluded): 0.05:4.7e-06 0.1:8.7e-04 0.2:1.6e-01 0.3:1.1e+01* 0.5:2.3e+04* 0.7:2.2e+05* 1:1.3e+06* 2:1.2e+06* 3:4.0e+05* 5:8.2e+04* 10:1.1e+04* 30:1.5e+03* 100:1.5e+03* 300:1.5e+03*
+
+4. K_z(1.1 kpc), D >= 30 pc: Sigma_inf = Sigma_b eps(rho_mid)/eps(rho(1.1 kpc)) vs 68 +- 4
+  DMS mean  Q*ln     rho_z=0.0014: 45-53 (-3.5s)  rho_z=0.002: 43-50 (-4.0s)  rho_z=0.0025: 42-49 (-4.2s)  rho_z=0.003: 42-49 (-4.3s)
+  DMS mean  Q*log10  rho_z=0.0014: 48-56 (-2.8s)  rho_z=0.002: 46-54 (-3.1s)  rho_z=0.0025: 45-53 (-3.3s)  rho_z=0.003: 45-52 (-3.5s)
+  DMS mean  /Q       rho_z=0.0014: 47-56 (-2.9s)  rho_z=0.002: 46-54 (-3.3s)  rho_z=0.0025: 45-53 (-3.5s)  rho_z=0.003: 44-52 (-3.6s)
+  DMS joint Q*ln     rho_z=0.0014: 61-71 (-0.4s)  rho_z=0.002: 59-69 (-0.6s)  rho_z=0.0025: 57-67 (-0.9s)  rho_z=0.003: 55-64 (-1.4s)
+  DMS joint Q*log10  rho_z=0.0014: 56-66 (-1.1s)  rho_z=0.002: 54-63 (-1.5s)  rho_z=0.0025: 52-62 (-1.8s)  rho_z=0.003: 51-60 (-2.1s)
+  DMS joint /Q       rho_z=0.0014: 47-56 (-2.7s)  rho_z=0.002: 46-55 (-2.9s)  rho_z=0.0025: 46-55 (-3.0s)  rho_z=0.003: 45-54 (-3.1s)
+  E0 mean   Q*ln     rho_z=0.0014: 146-184 (+5.0s)  rho_z=0.002: 122-154 (+4.2s)  rho_z=0.0025: 109-137 (+3.7s)  rho_z=0.003: 99-125 (+3.3s)
+  E0 mean   Q*log10  rho_z=0.0014: 72-91 (+1.4s)  rho_z=0.002: 67-85 (+0.8s)  rho_z=0.0025: 64-81 (+0.5s)  rho_z=0.003: 62-78 (+0.2s)
+  E0 mean   /Q       rho_z=0.0014: 318-383 (+8.6s)  rho_z=0.002: 258-310 (+8.1s)  rho_z=0.0025: 217-261 (+7.6s)  rho_z=0.003: 185-223 (+7.0s)
+
+3b. LLR at D >= 30 pc with rho_s = 0.084 (McKee baryonic midplane) and rate 2e-9 / 4.5e-9:
+  DMS mean  Q*ln     rho_s=0.043: 4.1-9.3x  rho_s=0.084: 1.2-2.7x
+  DMS mean  Q*log10  rho_s=0.043: 1.2e+02-2.6e+02x  rho_s=0.084: 69-1.6e+02x
+  DMS mean  /Q       rho_s=0.043: 78-1.8e+02x  rho_s=0.084: 42-95x
+  DMS joint Q*ln     rho_s=0.043: 2.8-6.2x  rho_s=0.084: 0.25-0.57x
+  DMS joint Q*log10  rho_s=0.043: 1.2e+02-2.8e+02x  rho_s=0.084: 45-1e+02x
+  DMS joint /Q       rho_s=0.043: 3e+02-6.7e+02x  rho_s=0.084: 2.4e+02-5.5e+02x
+  E0 mean   Q*ln     rho_s=0.043: 1.3e+03-3e+03x  rho_s=0.084: 7.8e+02-1.7e+03x
+  E0 mean   Q*log10  rho_s=0.043: 1.1e+03-2.4e+03x  rho_s=0.084: 9e+02-2e+03x
+  E0 mean   /Q       rho_s=0.043: 6.9e+02-1.5e+03x  rho_s=0.084: 2.1e+02-4.7e+02x
+
+5. JOINT WINDOW: D (pc) passing solar system (either kernel) + LLR + wide binaries, per WB reading
+  DMS mean  Q*ln     WB boost(LB) 1.05-1.38 | Banik reading: 0.027-0.34 pc (5500-6.93e+04 AU)     | Chae reading: 4.5e-05-0.025 pc (9-5.19e+03 AU)
+  DMS mean  Q*log10  WB boost(LB) 1.11-1.29 | Banik reading: 0.027-0.13 pc (5500-2.6e+04 AU)      | Chae reading: 4.7e-05-0.025 pc (10-5.19e+03 AU)
+  DMS mean  /Q       WB boost(LB) 1.10-1.31 | Banik reading: 0.027-0.17 pc (5500-3.47e+04 AU)     | Chae reading: 4.7e-05-0.025 pc (10-5.19e+03 AU)
+  DMS joint Q*ln     WB boost(LB) 1.28-1.29 | Banik reading: 0.027-0.47 pc (5500-9.79e+04 AU)     | Chae reading: 4.5e-05-0.025 pc (9-5.19e+03 AU)
+  DMS joint Q*log10  WB boost(LB) 1.22-1.29 | Banik reading: 0.027-0.25 pc (5500-5.2e+04 AU)      | Chae reading: 4.7e-05-0.025 pc (10-5.19e+03 AU)
+  DMS joint /Q       WB boost(LB) 1.16-1.23 | Banik reading: 0.027-0.047 pc (5500-9.78e+03 AU)    | Chae reading: 0.00036-0.025 pc (73-5.19e+03 AU)
+  E0 mean   Q*ln     WB boost(LB) 1.98-2.45 | Banik reading: 0.027-0.089 pc (5500-1.84e+04 AU)    | Chae reading: none
+  E0 mean   Q*log10  WB boost(LB) 1.66-2.01 | Banik reading: none                                 | Chae reading: none
+  E0 mean   /Q       WB boost(LB) 2.36-2.54 | Banik reading: 0.027-0.25 pc (5500-5.2e+04 AU)      | Chae reading: none
+  s_onset (n_H=0.02) at D = 0.001/0.003/0.01/0.03 pc: 1.47e+03 AU, 4.1e+03 AU, 1.25e+04 AU, 3.39e+04 AU
+  galaxy fits (smooth density) presuppose D >~ 2 pc.
+
+POINTWISE (D->0, disclaimed by M&D) eps spread at the Moon, solar wind n=3 vs 10 cm^-3, Q*ln (one-off, appended):
+DMS mean 6.22e-05
+DMS joint 7.12e-06
+E0 mean 5.96e-02

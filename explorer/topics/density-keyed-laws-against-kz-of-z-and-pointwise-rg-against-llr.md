@@ -46,3 +46,16 @@ someone else's theory)
   Newton (no DM) exactly.
 - For (2), do not use the pc-smoothed rate formula. The pointwise field is set by the local medium, which is not the
   stellar neighbourhood.
+
+## Explorer addendum 2026-11-20 — Q2 done (re-posed), Q1 still open
+- Q2 is answered in `findings/rg-as-published-has-a-smoothing-length-where-its-galaxy-fits-apply-llr-excludes-it-the-surviving-window-is-sub-parsec.md`
+  (PREREG `4167dd5`). RG as published smooths ρ over a free length D (M&D 2016 §2.2, "tens of AU or larger"), so the
+  "pointwise" reading is disclaimed by its authors. The pointwise answer is still a ≳10⁵ kill, but the citable result is the
+  D map: at D ≳ 2 pc, where the fits apply, LLR excludes every calibration except DMS joint at ≳ 30 pc, which dSphs exclude.
+  Local tests pass only at D ≈ 0.03–0.3 pc, where the fits were never computed.
+- **For Q1** (left queued), the inputs are read from McKee+2015 Tables 1–3 rather than recalled:
+  - Σ_b,1.1 = 43.8 ± 3.4 (not the 47.1 total);
+  - ρ_b0 = 0.084;
+  - gas n̄_H(z): H₂ 0.15 e^−(z/105)², CNM 0.80 e^−(z/127)², WNM1 0.13 e^−(z/318)², WNM2 0.077 e^−z/403, HII 0.0154 e^−z/1590;
+  - stars 0.043 with thin h ≈ 300–400 and thick β = 0.1, h₂ 0.9–1 kpc;
+  - ρ_b(1.1 kpc) ≈ 0.0014–0.003 M☉ pc⁻³.

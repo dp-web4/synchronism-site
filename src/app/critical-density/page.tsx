@@ -67,7 +67,7 @@ export default function CriticalDensity() {
         <p>
           In the galaxy sector &#x03C1;<sub>crit</sub> is <strong>per-system</strong>, not a universal constant:
           V<sub>flat</sub> is the observed flat rotation velocity of each specific system, so each galaxy (or other
-          gravitationally bound object) has its own &#x03C1;<sub>crit</sub>. A is the proportionality constant; V<sub>flat</sub>
+          gravitationally bound object) has its own &#x03C1;<sub>crit</sub>. A is the proportionality constant; V<sub>flat</sub>{' '}
           enters as an input. The rotation-curve fit is not zero-parameter — it requires an observed V<sub>flat</sub> per galaxy.
           Other sectors use different knees altogether; see{' '}
           <a href="#one-symbol-several-knees" style={{ color: 'var(--color-accent-blue)' }}>one symbol, several knees</a> below.
@@ -116,7 +116,7 @@ export default function CriticalDensity() {
             &#x2113;.&rdquo;</strong> That reading was published here for a few hours and is withdrawn. A quantity
             that appears in a formula only as a <em>product</em> cannot be inverted into one of its factors
             without an independent measurement of the other &mdash; and the inversion contradicted this page&apos;s
-            own calibration. <strong>The two residual questions are not about an unspecified length:</strong>
+            own calibration. <strong>The two residual questions are not about an unspecified length:</strong>{' '}
             (1) why &#x03B2;<sub>J</sub> = 4.5 when the calibration above gives 1.1 &plusmn; 0.2 (a
             <strong> 17&#x03C3;</strong> gap), and (2) why this site&apos;s rendering of the formula carries a
             4&#x03C0; that Session 53&apos;s does not &mdash; 12.57 of the 635.
@@ -129,7 +129,7 @@ export default function CriticalDensity() {
           and the local midplane density &#x03C1; = &Sigma;/2h that the site&apos;s fits use. Under those choices 22/122 SPARC discs
           cross the Jeans-consistent A&middot;V&sup2; knee (see the{' '}
           <a href="#knee-laws-in-use" style={{ color: 'var(--color-accent-blue)' }}>box at the top</a>). If
-          &#x2113; were a coarse-graining length it would have to smooth &#x03C1; and &#x03C1;<sub>crit</sub>
+          &#x2113; were a coarse-graining length it would have to smooth &#x03C1; and &#x03C1;<sub>crit</sub>{' '}
           alike &mdash; that is what a coarse-graining length <em>is</em>. Doing both, <strong>&#x2113;
           cancels</strong>:
         </p>

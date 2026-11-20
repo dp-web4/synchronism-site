@@ -41,7 +41,7 @@ export default function BaoCoherenceModulation() {
             </li>
             <li>
               <strong>Buried under standard physics:</strong> Environment-dependent BAO shifts are an
-              active subfield of standard cosmology. Achitouv et al. (2018) found ~6&times;10<sup>&minus;2</sup>
+              active subfield of standard cosmology. Achitouv et al. (2018) found ~6&times;10<sup>&minus;2</sup>{' '}
               shifts in SDSS &mdash; 600&times; larger than the proposed Synchronism signal. The kill criterion
               (10<sup>&minus;5</sup>) is 3000&times; below DESI Y3&apos;s best precision (~0.3%).
             </li>

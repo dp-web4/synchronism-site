@@ -10,9 +10,9 @@ import ValidationBadge from '@/components/ValidationBadge';
 const topCorrelations = [
   { property: 'Sound velocity', r: '0.982', status: 'reparametrization' as const },
   { property: 'Electronegativity (vs 1/γ_optical ∝ ionization energy)', r: '0.94–0.96', status: 'reparametrization' as const },
-  { property: 'Atomic volume', r: '0.956', status: 'reparametrization' as const },
+  { property: 'Atomic volume', r: '0.956 (untraced: not among the Chemistry Correlation Explorer\'s 23 rows)', status: 'reparametrization' as const },
   { property: 'Thermal conductivity', r: '0.804 (0.883, metals only)', status: 'reparametrization' as const },
-  { property: 'Ionization energy', r: '0.91', status: 'reparametrization' as const },
+  { property: 'Ionization energy', r: '0.91 (untraced: with γ_optical = 13.6 eV/IE, r(IE, 1/γ_optical) is exactly 1, so 0.91 used some other proxy)', status: 'reparametrization' as const },
 ];
 
 const failures = [
@@ -136,7 +136,7 @@ export default function GammaBoundary() {
             sets is the initial slope (C&nbsp;≈&nbsp;γx) and half the exponent of approach to saturation
             (1&nbsp;−&nbsp;C&nbsp;≈&nbsp;2(1+x)<sup>−2γ</sup>). So &ldquo;sharpness&rdquo; has a meaning only on a linear axis at fixed ρ<sub>crit</sub>. This is
             the density-side twin of the a₀′/γ point the galaxy fits already show (the scale the data identify is a combination, not
-            γ alone). <em style={{ color: 'var(--color-text-muted)' }}>(Added 2026-10-23 from a reader(Added 2026-10-23 from a simulated-visitor graduate persona&apos;sapos;s
+            γ alone). <em style={{ color: 'var(--color-text-muted)' }}>(Added 2026-10-23 from a simulated-visitor graduate persona&apos;s
             derivation, re-checked numerically here: the peak of dC/d&nbsp;ln&nbsp;x sits at γx&nbsp;=&nbsp;0.78 at γ&nbsp;=&nbsp;10 and 0.772 at γ&nbsp;=&nbsp;1000.)</em> And C is <strong>concave on the
             whole domain</strong> &mdash; d²C/dx²&nbsp;&lt;&nbsp;0 for every x&nbsp;≥&nbsp;0 &mdash; so there is
             no inflection point to sit at. <strong>No feature of C(ρ) singles out γ&nbsp;≈&nbsp;1.</strong>{' '}
@@ -185,7 +185,7 @@ export default function GammaBoundary() {
           boundary-consistent&rdquo; are restatements of &#x03B8;<sub>D</sub>. The rationale for &#x03B3;&nbsp;&#x2248;&nbsp;1 was
           retracted. No documented procedure assigns N<sub>corr</sub> to a phenomenon before the fit. The correlations
           are post-hoc fits in a γ proxy containing θ<sub>D</sub>. So the clustering cannot be
-          evaluated as evidence either way. The open question is whether an N<sub>corr</sub> rule can be written down
+          evaluated as evidence either way. The open question is whether an N<sub>corr</sub> rule can be written down{' '}
           <em>before</em> looking at the data. If it can, the clustering becomes testable.
         </p>
 

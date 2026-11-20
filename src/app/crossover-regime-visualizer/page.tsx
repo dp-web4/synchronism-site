@@ -69,7 +69,7 @@ export default function PhaseBoundaryVisualizer() {
         <strong>What is plotted:</strong> C(&#x03C1;) = tanh(&#x03B3;&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1)), the framework&apos;s proposed measure of how
         collectively a system behaves (0 to 1) as a function of its density &#x03C1;, with &#x03C1;<sub>crit</sub> a reference density (see{' '}
         <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Anatomy</Link>).{' '}
-        <strong>How to use it:</strong> one slider, labelled &#x03B3; (it sets how early the curve rises; it was first proposed as the sharpness of the S-curve, which it is not), runs from 0 to 4 in steps
+        <strong>How to use it:</strong> one slider, labelled &#x03B3; (it sets how wide the S-curve&apos;s rise is, down to a floor; it was first proposed as a sharpness, and no value makes the curve sharp), runs from 0 to 4 in steps
         of 0.01 and starts at 1.0. Drag it and the marker moves across three &#x03B3; ranges (below 0.6, 0.6&ndash;1.4, above
         1.4); the card under the bar describes the range you are in and says where the formula gets real physics backwards.
       </p>
@@ -112,7 +112,7 @@ export default function PhaseBoundaryVisualizer() {
         <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.85rem', color: 'var(--color-text-muted)', marginBottom: '1rem' }}>
           <strong style={{ color: '#ef4444' }}>What γ actually classifies:</strong>{' '}
           γ = 2/√N<sub>corr</sub> encodes the <em>counting convention</em> used for N<sub>corr</sub>,
-          not a physical invariant of the system. Two unrelated systems with the same estimated N<sub>corr</sub>
+          not a physical invariant of the system. Two unrelated systems with the same estimated N<sub>corr</sub>{' '}
           (e.g., ideal gases and galaxies, both assigned N<sub>corr</sub> = 1) share a γ value for
           methodological reasons, not physical ones. This visualizer shows how systems cluster under
           the current counting convention; it does not imply they have the same microphysics.
@@ -120,7 +120,7 @@ export default function PhaseBoundaryVisualizer() {
         </div>
         <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.85rem', color: 'var(--color-text-muted)', marginBottom: '1rem' }}>
           <strong style={{ color: '#ef4444' }}>Sharpness direction is inverted (audited and closed for this formula; what would replace it is open):</strong>{' '}
-          this tool positions systems by transition sharpness, and &#x03B3; = 2/&#x221A;N<sub>corr</sub>{' '}
+          this tool positions systems by the width of their transition, and &#x03B3; = 2/&#x221A;N<sub>corr</sub>{' '}
           assigns the most strongly correlated systems the <em>flattest</em> C(&#x03C1;) curves.
           In real physics the opposite holds: BCS superconductors and BECs — the highest-N<sub>corr</sub>{' '}
           systems shown here — undergo transitions that are among the <em>sharpest</em> in nature.

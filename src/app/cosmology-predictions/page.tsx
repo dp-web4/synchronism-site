@@ -4,13 +4,14 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
+import { TEST04A_BADGE, TEST04A_BADGE_LABEL, TEST04A_SIGMA_SENTENCE } from '@/lib/ledger';
 
 export default function CosmologyPredictions() {
   return (
     <>
       <Breadcrumbs currentPath="/cosmology-predictions" />
       <h1>Cosmology Predictions</h1>
-      <ValidationBadge status="failed" label="TEST-04a Disfavored 2.4σ — σ₈ Amplitude — Kill Triggered (Reframed 2026-07-02)" />
+      <ValidationBadge status={TEST04A_BADGE} label={'TEST-04a: ' + TEST04A_BADGE_LABEL} />
 
       {/* TEST-04a kill — most important cosmological result */}
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
@@ -27,12 +28,13 @@ export default function CosmologyPredictions() {
           </h2>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>
             The framework&apos;s primary cosmological test compared against DESI DR1 full-shape (arXiv:2411.12021).
+            {' '}{TEST04A_SIGMA_SENTENCE} (This page&apos;s badge read &ldquo;Kill Triggered&rdquo; until 2026-11-20.)
           </p>
           <div style={{ background: 'rgba(251,191,36,0.07)', border: '1px solid rgba(251,191,36,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '0.75rem', fontSize: '0.85rem' }}>
             <strong style={{ color: '#fbbf24' }}>Which DESI data product — this is the whole of whether the registration is stale.</strong>{' '}
             Three different DESI things get called &ldquo;DESI DR2&rdquo; on this site and they are not interchangeable:
             <br />• <strong>DR1 full-shape</strong> (arXiv:2411.12021, published April 2024) — what this card is adjudicated against.
-            <br />• <strong>DR2 BAO</strong> (arXiv:2503.14738, published March 2025) — <em>published, and already used</em>
+            <br />• <strong>DR2 BAO</strong> (arXiv:2503.14738, published March 2025) — <em>published, and already used</em>{' '}
             by this program: the 2026-08-12 dark-energy likelihood fit is DR2 BAO + Planck priors + Dovekie SN. It constrains
             <em> expansion</em>, not growth, so it cannot adjudicate an fσ₈ criterion.
             <br />• <strong>DR2 full-shape</strong> — the <em>registered</em> statistic (fσ₈ at z ≈ 0.51).

@@ -427,6 +427,8 @@ export default function GalaxyPlotter() {
           64&nbsp;M<sub>&#x2609;</sub>/pc&sup3; against disc densities of order 10<sup>&minus;2</sup>: no galaxy in the
           dropdown can lift off the Newtonian baseline, for any of them. At the default 0.028&middot;V<sup>0.5</sup> knee the SPARC midplane
           density crosses the knee in the centres of NGC 2403, NGC 3198 and NGC 7331 (x up to 2.6&ndash;3.9 at &Upsilon;<sub>disk</sub> = 0.5), and stays below it on DDO 154 (0.13) and UGC 128 (0.22).
+          These x values assume one disc thickness for every galaxy, &rho; = &Sigma;/2h with h = 0.3 kpc (the SPARC fits&apos; convention); x scales as 1/h, so a thinner
+          disc crosses further and a thicker one less (h stated here 2026-11-20, after a researcher simulated-visitor persona recomputed the crossings from this page&apos;s code).
           <br /><strong>One more cross-link the plot owes you:</strong> the green MOND reference uses the simple-&nu;
           function of Famaey &amp; Binney (2005) &mdash; not the RAR fit function the &Delta;BIC table on Galaxy Rotation uses (McGaugh&apos;s &nu;); the two are different functions and are not interchangeable toward the Solar System (corrected 2026-10-10; this note previously called the simple function &ldquo;the RAR-preferred choice&rdquo;) &mdash; and <em>also</em> a function TEST-25&apos;s instrument finds Cassini
           excluding, at +15.3&sigma; to +20.1&sigma; (the +17.95&sigma; quoted until 2026-11-05 is the framework&apos;s compander at the SPARC fit, not the simple function; see below). The benchmark drawn here is a function this site refutes in the Solar System;
@@ -436,8 +438,11 @@ export default function GalaxyPlotter() {
           <strong>Try the twin pair:</strong> NGC 2403 and UGC 128 have the same flat speed (131 vs 129 km/s) but UGC 128&apos;s
           disc is 16&times; dimmer per unit area and 4&times; wider. This is the classic low-surface-brightness test (de Blok &amp;
           McGaugh). MOND keys on acceleration, so it predicts the dimmer twin is more dark-matter dominated, which is what the dots
-          show. A law keyed on local density makes its own prediction for the pair. Here both discs sit on the floor, so the
-          violet line is just the gray line scaled up in both. (Observed points switched from hand-drawn approximations to real
+          show. A law keyed on local density makes its own prediction for the pair. At the default knee NGC 2403&apos;s bright centre crosses
+          the knee (x &asymp; 2.9), so its boost there falls to about 1, while UGC 128 stays below it (x &le; 0.22): about 1.7 at its centre, rising toward the 3.17
+          cap outward. So the density law also boosts the dimmer twin more, the same direction as MOND, but through a knee set by V<sub>flat</sub> and under a cap.
+          (Under the units-hybrid setting both discs sit on the floor and the violet line is the gray line scaled by 1.78; until 2026-11-20 this box described only
+          that setting.) <strong style={{ color: '#10b981' }}>New here? That is the whole lesson; everything below the chart is for physicists.</strong> (Observed points switched from hand-drawn approximations to real
           SPARC rows on 2026-10-26; the UGC 128 row had been a 55 km/s curve that is not this galaxy.)
           <br />
           Select a SPARC galaxy. The plot shows five things: what visible matter predicts (dashed gray),
@@ -531,7 +536,9 @@ export default function GalaxyPlotter() {
           <ul style={{ margin: '0.4rem 0 0', color: 'var(--color-text-secondary)', paddingLeft: '1.2rem' }}>
             <li><strong>Dashed gray</strong> — Newtonian prediction from the measured gas, stellar disc and bulge (SPARC&apos;s mass model at the slider&apos;s &Upsilon;<sub>disk</sub>; a BTFR toy disc until 2026-11-10). Drops off at the edges; this is the puzzle.</li>
             <li><strong>Dots</strong> — observed rotation velocities from SPARC (up to 14 radii per galaxy, with their quoted errors as vertical bars; real data since 2026-10-26, hand-drawn approximations before). Flat at large radius; doesn&apos;t drop like Newtonian says it should.</li>
-            <li><strong>Violet solid (division reading)</strong> — Synchronism&apos;s real C<sub>&#x03C1;</sub> at &#x03B3;=2 (since 2026-11-14 at the archive&apos;s &#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup> by default; what follows in this item describes the units-hybrid 0.029&middot;V&sup2; setting), wired as g = g<sub>bar</sub>/C<sub>f</sub> with C<sub>f</sub> = &Omega;<sub>m</sub> + (1&minus;&Omega;<sub>m</sub>)&middot;C<sub>&#x03C1;</sub>. The disk&apos;s density is thousands of times below &#x03C1;<sub>crit</sub>, so C<sub>&#x03C1;</sub> stays near zero, C<sub>f</sub> sits on the floor, and the curve is the baryon line times &radic;3.17 &asymp; 1.78 at every radius: wrong shape. <strong>Light-violet dashed (quadrature reading)</strong> &mdash; the same C<sub>&#x03C1;</sub> added in quadrature, v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C<sub>&#x03C1;</sub>)&sup2;; with C<sub>&#x03C1;</sub> &asymp; 0.001 it sits on the baryon line. <strong>This is the 2026-07-02 audit result, rendered.</strong> <em>Caveat (2026-08-05, revised same day):</em> that &ldquo;thousands of times below&rdquo; is <strong>conditional on A = 0.029</strong>, since &#x03C1;/&#x03C1;<sub>crit</sub> &#x221D; 1/A &mdash; at A = 4.6&times;10<sup>&minus;5</sup> the ratio for NGC 3198 is 0.60 and the curve would lift off the baryon line. But the 635&times; between them is a <strong>law swap, not a scale choice</strong>: universal A with &#x03C1;<sub>crit</sub> &#x221D; V&sup2; versus per-galaxy A &#x221D; R<sub>half</sub><sup>&minus;2</sup> with &#x03C1;<sub>crit</sub> &#x221D; V<sup>0.5</sup> &mdash; the two-law fork{' '}
+            <li><strong>Violet solid (division reading)</strong> — Synchronism&apos;s real C<sub>&#x03C1;</sub> at &#x03B3;=2 (since 2026-11-14 at the archive&apos;s &#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup> by default), wired as g = g<sub>bar</sub>/C<sub>f</sub> with C<sub>f</sub> = &Omega;<sub>m</sub> + (1&minus;&Omega;<sub>m</sub>)&middot;C<sub>&#x03C1;</sub>. At the default knee C<sub>&#x03C1;</sub> is close to 1 in the bright centres of NGC 2403, NGC 3198 and NGC 7331 (boost near 1) and
+            falls toward 0 in every outskirt (boost toward 3.17): wrong shape, still falling at the edge. <em>Under the units-hybrid 0.029&middot;V&sup2; setting</em> (the rest of
+            this item until the caveat) the disk&apos;s density is thousands of times below &#x03C1;<sub>crit</sub>, so C<sub>&#x03C1;</sub> stays near zero, C<sub>f</sub> sits on the floor, and the curve is the baryon line times &radic;3.17 &asymp; 1.78 at every radius: wrong shape. <strong>Light-violet dashed (quadrature reading)</strong> &mdash; the same C<sub>&#x03C1;</sub> added in quadrature, v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C<sub>&#x03C1;</sub>)&sup2;; with C<sub>&#x03C1;</sub> &asymp; 0.001 it sits on the baryon line. <strong>This is the 2026-07-02 audit result, rendered.</strong> <em>Caveat (2026-08-05, revised same day):</em> that &ldquo;thousands of times below&rdquo; is <strong>conditional on A = 0.029</strong>, since &#x03C1;/&#x03C1;<sub>crit</sub> &#x221D; 1/A &mdash; at A = 4.6&times;10<sup>&minus;5</sup> the ratio for NGC 3198 is 0.60 and the curve would lift off the baryon line. But the 635&times; between them is a <strong>law swap, not a scale choice</strong>: universal A with &#x03C1;<sub>crit</sub> &#x221D; V&sup2; versus per-galaxy A &#x221D; R<sub>half</sub><sup>&minus;2</sup> with &#x03C1;<sub>crit</sub> &#x221D; V<sup>0.5</sup> &mdash; the two-law fork{' '}
             <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>parameter derivations</Link> item 1 has documented since 2026-06-07. An earlier version of this caveat attributed the gap to an unstated coarse-graining length &#x2113;; <strong>that is withdrawn</strong> &mdash; a self-consistent &#x2113; smooths &#x03C1; and &#x03C1;<sub>crit</sub> alike and <em>cancels</em>, leaving &#x03C1;/&#x03C1;<sub>crit</sub> &#x2272; 0.019&#x03B2;<sub>J</sub>&sup2; in every sector at every &#x2113;. This plot shows the framework under its own stated law.</li>
             <li><strong>Amber dotted</strong> — shown only to illustrate what a working boost would look like; <strong>not a prediction of any theory</strong>. It is the hand-tuned tanh(radius) stand-in previously displayed, and it fits because it was drawn to fit; no &#x03C1;, &#x03C1;<sub>crit</sub>, or &#x03B3; enters it. (Recolored from violet 2026-07-23: it is an illustration, not the theory.)</li>
             <li><strong>Green dashed</strong> — MOND&apos;s simple-&#x03BD; function (Famaey &amp; Binney 2005) on SPARC&apos;s measured baryons (gas, disc and bulge at the slider&apos;s &Upsilon;<sub>disk</sub>) with one global a&#x2080; = 1.2&times;10<sup>&minus;10</sup> m/s&sup2; and zero per-galaxy knobs: a prediction, since 2026-11-10. Until then it ran on a BTFR-assigned mass M<sub>b</sub> = 47&middot;V<sub>flat</sub>&#x2074;, which set its flat level to 0.93&middot;V<sub>flat</sub> by construction (the same circularity this page counts against &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;); a leading-edge reader pointed out on 2026-11-10 that the &ldquo;visible matter&rdquo; line was then MOND&apos;s own mass&ndash;velocity relation fed in as the baryons, on a gas-dominated default galaxy. Where the green line sits relative to the outer dots now depends on &Upsilon;<sub>disk</sub> and on the measured gas, not on the dots.</li>
@@ -599,8 +606,8 @@ export default function GalaxyPlotter() {
           </div>
           The light-violet dashed (quadrature) curve and the amber dotted one differ in exactly one ingredient: the coherence factor.
           The stand-in used tanh(<em>radius</em>) with hand-tuned constants; the real curve uses
-          C<sub>&#x03C1;</sub> on the disk&apos;s density profile. With the framework&apos;s asserted
-          &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, the disk midplane density sits orders of magnitude below
+          C<sub>&#x03C1;</sub> on the disk&apos;s density profile. At the units-hybrid
+          &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2; (a slip, selectable below; called &ldquo;the framework&apos;s asserted&rdquo; knee here until 2026-11-20), the disk midplane density sits orders of magnitude below
           &#x03C1;<sub>crit</sub> everywhere (the legend shows this galaxy&apos;s maximum C<sub>&#x03C1;</sub>), so the quadrature
           curve stays on the baryon line and the division curve sits on its floor (a flat 3.17&times; in g) — the knee is never crossed, exactly as the
           2026-07-02 audit found by computation (its more charitable density estimates reach at most C &#x2248; 0.28;
@@ -610,7 +617,7 @@ export default function GalaxyPlotter() {
           (BTFR envelope), while the framework makes it rise as V<sup>+2</sup> — see{' '}
           <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</a>.
           The stand-in is forced, not incidental: C(&#x03C1;) is a function of <em>local</em> density, while the
-          rotation curve it needs to reproduce is organized by g<sub>bar</sub>, a <em>non-local</em>
+          rotation curve it needs to reproduce is organized by g<sub>bar</sub>, a <em>non-local</em>{' '}
           enclosed-mass acceleration — see the{' '}
           <a href="/honest-assessment#structural-tensions" style={{ color: 'var(--color-accent-blue)' }}>
             local-vs-non-local structural no-go
@@ -618,7 +625,7 @@ export default function GalaxyPlotter() {
           for why a pointwise density map cannot in general reproduce an acceleration-space relation without
           per-galaxy calibration.{' '}
           <strong style={{ color: '#f59e0b' }}>And the &ldquo;local&rdquo; side of that contrast is not local
-          either (added 2026-09-07):</strong> &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2; keys
+          either (added 2026-09-07):</strong> &#x03C1;<sub>crit</sub> = 0.028&middot;V<sub>flat</sub><sup>0.5</sup>, like the units-hybrid 0.029&middot;V<sub>flat</sub>&sup2;, keys
           the threshold to the asymptotic rotation speed &mdash; an r &rarr; &infin; quantity fixed by the
           galaxy&apos;s total baryonic mass &mdash; so what this curve evaluates is
           C(&#x03C1;(r), M<sub>total</sub>), not C(&#x03C1;(r)). That is an MRH violation by the framework&apos;s
@@ -778,7 +785,7 @@ export default function GalaxyPlotter() {
             &bull; <strong>C<sub>&#x03C1;</sub> = tanh(&#x03B3;&middot;ln(1+&#x03C1;/&#x03C1;<sub>crit</sub>))</strong>,
             keyed on <em>density</em> &mdash; what this chart draws, and what &ldquo;max C = {maxC.toFixed(3)}&rdquo;
             reports. It carries no floor. The 0.001 figure <em>does</em> generalise off the toy: over 123 SPARC discs
-            the per-disc maximum has median 1.2&times;10<sup>&minus;3</sup> at &#x03B3; = 2 (1.6&times;10<sup>&minus;4</sup>
+            the per-disc maximum has median 1.2&times;10<sup>&minus;3</sup> at &#x03B3; = 2 (1.6&times;10<sup>&minus;4</sup>{' '}
             to 4.9&times;10<sup>&minus;2</sup>), and <strong>0 of 123</strong> reach &#x03A9;<sub>m</sub> anywhere.
             <br />
             &bull; <strong>C<sub>a</sub> = &#x03A9;<sub>m</sub> + (1&minus;&#x03A9;<sub>m</sub>)&middot;x/(1+x)</strong>,

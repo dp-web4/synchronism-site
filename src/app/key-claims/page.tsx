@@ -257,9 +257,10 @@ export default function KeyClaims() {
               &#x03B3; = 2/&#x221A;N<sub>corr</sub>, which is bounded above by 2 site-wide and cannot equal
               10.82. See <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>,
               which states the same refutation correctly as B<sub>max</sub> = 3.17. The underlying
-              result is parameter-independent and stronger than it looks under either symbol: C &le; 1
-              bounds the quadrature boost, so the framework cannot reach the observed deep-MOND mass
-              discrepancies for any parameter choice. Count currency: the &ldquo;1 refutation&rdquo; is the
+              ceiling belongs to one wiring: floored division, g<sub>obs</sub> = g<sub>bar</sub>/C<sub>f</sub> with C<sub>f</sub> &ge; &Omega;<sub>m</sub>, caps the boost at 3.17
+              for any parameter choice. Under quadrature, v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C)&sup2;, C &le; 1 bounds the added <em>velocity</em> by V<sub>flat</sub>,
+              but the boost 1 + (V<sub>flat</sub>&middot;C/v<sub>b</sub>)&sup2; is unbounded as v<sub>b</sub> &rarr; 0; quadrature fails by circularity (V<sub>flat</sub> in, V<sub>flat</sub> out),
+              not by a ceiling. (Corrected 2026-11-20; until then this sentence said C &le; 1 bounds the quadrature boost, which a graduate simulated-visitor persona showed is false.) Count currency: the &ldquo;1 refutation&rdquo; is the
               quoted 2026-02 audit&apos;s count for the quantum arc; the site-wide count is{' '}
               {REFUTATIONS_EXECUTED} executed refutations ({REFUTATIONS_ON_EXTERNAL_DATA} on external data) &mdash; the boost ceiling quoted here was
               subsequently cashed out as two of them, TEST-09 and TEST-10.)
@@ -634,7 +635,7 @@ export default function KeyClaims() {
             locality no-go (a local-density function cannot reproduce an acceleration-space law) remains the general argument.{' '}
             <em>Scope narrowed 2026-09-08 (visitor graduate persona):</em> mass cancels from ρ/ρ<sub>crit</sub>;
             radius does not (ρ/ρ<sub>crit</sub> ∝ 1/(A·G·R²)), so &ldquo;no galaxy crosses&rdquo; is a statement about the
-            calibration A = 0.029 (which puts the knee 2.5×10⁴ above sampled disk densities), not about all calibrations.
+            calibration A = 0.029 (the units slip, which puts the knee 2.5×10⁴ above sampled disk densities; the archive&apos;s 0.028&middot;V<sup>0.5</sup> puts it about 13× above the median), not about all calibrations.
             Under the <em>measured</em> velocity-blind knee of 0.161 M<sub>☉</sub>/pc³ (2026-08-27) the densest 1% of SPARC
             midplane points do cross it &mdash; and <strong>globular clusters cross it wholesale</strong>, which is why they are
             the one place the density law has now been tested at its own knee: see the{' '}
@@ -644,7 +645,7 @@ export default function KeyClaims() {
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>
               <strong>Correction (2026-08-05) &mdash; this claim was over-stated and is now narrowed.</strong> It
               previously read &ldquo;&hellip;crosses the coherence knee <em>for any value of the calibration
-              constant</em>.&rdquo; That is false. Mass cancellation makes &#x03C1;/&#x03C1;<sub>crit</sub>
+              constant</em>.&rdquo; That is false. Mass cancellation makes &#x03C1;/&#x03C1;<sub>crit</sub>{' '}
               independent of <em>M</em>; it does <em>not</em> make it independent of the calibration constant A,
               since &#x03C1;/&#x03C1;<sub>crit</sub> &#x221D; 1/A exactly &mdash; any x exceeds 1 for small
               enough A. <strong>The retraction stands; the reason first given for it does not.</strong> That

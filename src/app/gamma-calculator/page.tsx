@@ -49,7 +49,7 @@ export default function GammaCalculator() {
         badge above. (Added 2026-09-15: the index and this page showed different words with no key between them.)
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
-        <strong>In one sentence: &#x03B3; sets how early the coherence S-curve starts to rise</strong> as density
+        <strong>In one sentence: &#x03B3; sets how wide the coherence S-curve&apos;s rise is</strong> as density
         rises. Small &#x03B3; = a slow fade stretched over many powers of ten. Big &#x03B3; = the rise comes earlier, but it does not
         become a switch: however big &#x03B3; gets, going from 10% to 90% still takes about a factor of 15 in density. The live curve below redraws
         as you change N<sub>corr</sub>.
@@ -137,7 +137,7 @@ export default function GammaCalculator() {
             This tool maps that count to &#x03B3; = 2/&#x221A;N<sub>corr</sub> and shows which physical regime results.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', marginBottom: 0 }}>
-            <strong>What to do with it:</strong> press the BEC and BCS presets. The formula gives them the <em>flattest</em>
+            <strong>What to do with it:</strong> press the BEC and BCS presets. The formula gives them the <em>flattest</em>{' '}
             curves on the site; in reality they switch on <em>sharply</em> at a critical temperature. That mismatch is the
             audited failure this tool exists to show. (An earlier version of this line placed a chemistry regime boundary at &#x03B3; &#x2248; 1;
             that was retracted on{' '}

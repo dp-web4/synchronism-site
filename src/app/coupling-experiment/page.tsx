@@ -375,7 +375,7 @@ export default function CouplingExperiment() {
         <h2>The p<sub>crit</sub> Question</h2>
         <p>
           In physics, &#961;<sub>crit</sub> is <strong>derived</strong> from fundamental constants
-          (&#961;<sub>crit</sub> = A &times; V<sub>flat</sub>&sup2;). Can we derive p<sub>crit</sub>
+          (&#961;<sub>crit</sub> = A &times; V<sub>flat</sub>&sup2;). Can we derive p<sub>crit</sub>{' '}
           from world properties?
         </p>
 
@@ -574,7 +574,7 @@ export default function CouplingExperiment() {
               intercept. In the heterogeneous case (explorer 2026-09-25) the inverse law fits only once a threshold
               artefact is removed, and then it holds because compatibility multiplies the coupling weight in the
               model&apos;s own update rule. So it restates the rule and predicts nothing new: research-ledger bet B4 is
-              a reparametrization, not a Bucket-0 candidate. <strong>Open question:</strong> if compatibility acted as a
+              a reparametrization, not a Bucket-0 candidate. <strong>Open question:</strong> if compatibility acted as a{' '}
               <em>filter</em> (agent i accepts only the belief types that j&apos;s compatibility unlocks), p and C would stop
               entering as a product, and 1/&lang;C&rang; would become a falsifiable prediction. Nobody has run that version.
             </p>

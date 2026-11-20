@@ -188,7 +188,7 @@ export default function DarkEnergy() {
           w&#x2090;&nbsp;&gt;&nbsp;0), or its phantom mirror from below for &gamma;&nbsp;&gt;&nbsp;&frac12;
           (w&#x2080;&nbsp;&lt;&nbsp;&minus;1, w&#x2090;&nbsp;&lt;&nbsp;0). It excludes thawing <em>and</em> crossing in either
           direction. That is a wider forbidden region than &ldquo;forbids crossing&rdquo;. <strong>It is not a
-          discriminating kill, because the family contains &Lambda;.</strong> At &gamma;&nbsp;=&nbsp;&frac12; the model
+          discriminating kill, because the family contains &Lambda;.</strong> At &gamma;&nbsp;=&nbsp;&frac12; the model{' '}
           <em>is</em> &Lambda;CDM, so data that prefer thawing over freezing only push the fit to &gamma;&nbsp;=&nbsp;&frac12;.
           The family dies only when &Lambda; itself is excluded in the thawing or crossing direction, and then &Lambda;CDM dies
           with it. The framework&apos;s dark-energy sector is a <em>superset</em> of &Lambda;CDM, so it cannot lose a test

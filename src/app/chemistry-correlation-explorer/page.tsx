@@ -191,7 +191,7 @@ export default function ChemistryCorrelationExplorer() {
           &#x03B3; = 2/&#x221A;N<sub>corr</sub> is <strong>audited-negative and sign-inverted for every
           collective system</strong> &mdash; see the{' '}
           <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>:
-          high &#x03B3; means <em>few</em> correlated particles (gas-like), low &#x03B3; means <em>many</em>
+          high &#x03B3; means <em>few</em> correlated particles (gas-like), low &#x03B3; means <em>many</em>{' '}
           (BCS-superconductor-like). This page&apos;s top result &mdash; sound velocity, r&nbsp;=&nbsp;+0.982,
           highest in the stiffest, most strongly-bonded, most collective solids (diamond &#x2248; 12,000 m/s
           vs air &#x2248; 340 m/s) &mdash; is therefore a <strong>positive</strong> correlation with &#x03B3;

@@ -84,7 +84,7 @@ export default function GalaxyRotation() {
 
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           One structural reason to expect this fit to reparametrize rather than derive MOND: C(&#x03C1;) is a
-          function of <em>local</em> density, while the RAR is organized by g<sub>bar</sub>, a <em>non-local</em>
+          function of <em>local</em> density, while the RAR is organized by g<sub>bar</sub>, a <em>non-local</em>{' '}
           enclosed-mass acceleration. A pointwise map cannot in general reproduce an acceleration-space
           relation across systems with different mass geometries except by per-system calibration &mdash; see
           the{' '}
@@ -117,15 +117,16 @@ export default function GalaxyRotation() {
 
         <div id="vflat-twice" style={{ background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.3)', borderRadius: '0.375rem', padding: '0.75rem 1rem', marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--color-text-secondary)', scrollMarginTop: '5rem' }}>
           <strong style={{ color: '#f59e0b' }}>The published density law is handed V<sub>flat</sub> twice, so it cannot predict a flat curve (stated in one place 2026-11-10).</strong>{' '}
-          The calibration &rho;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2; (the form this site has used; the archive&apos;s own sessions write
-          0.028&middot;V<sub>flat</sub><sup>0.5</sup>, and the objection is the same for both) sets the knee from the galaxy&apos;s asymptotic speed, and the
+          The calibration &rho;<sub>crit</sub> = 0.028&middot;V<sub>flat</sub><sup>0.5</sup> (the archive&apos;s own sessions; the site used 0.029&middot;V<sub>flat</sub>&sup2;
+          until 2026-11-14, a units slip, and the objection is the same for both) sets the knee from the galaxy&apos;s asymptotic speed, and the
           display wiring v&sup2; = v<sub>b</sub>&sup2; + (V<sub>flat</sub>&middot;C)&sup2; sets the boost&apos;s amplitude from the same speed. V<sub>flat</sub> is the
           quantity a rotation-curve law exists to predict. A law whose knee and amplitude are both set by it is handed the answer, so a match
-          would not have counted, and the mismatch it actually produces (C &asymp; 10<sup>&minus;5</sup> at disc densities, a boost at the Sun of
-          3.5&times;10<sup>4</sup> under the unfloored division wiring C<sub>&rho;</sub>, or 2.7&ndash;10.5 at the archive&apos;s V<sup>0.5</sup> form; the floored
-          C<sub>f</sub> caps it at 3.17) is a separate failure. The Milky Way knee at this calibration is 1.5&times;10&sup3;
-          M<sub>&#x2609;</sub>/pc&sup3; and DDO 154&apos;s is 64, against disc midplane densities of 0.03&ndash;0.1, so every galaxy sits on the linear
-          branch. This was said in pieces on <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>,{' '}
+          would not have counted, and the mismatch it actually produces (a tilt: 0.21 dex too high in bright inner discs and 0.21 dex too low in the deep regime, &Delta;BIC +8,404 at the archive&apos;s form; a boost at the Sun of
+          2.7&ndash;10.5 under the unfloored division wiring, whose change with height the vertical Oort data exclude; the floored C<sub>f</sub> caps it at 3.17)
+          is a separate failure. The Milky Way knee at the archive&apos;s form is about 0.42 M<sub>&#x2609;</sub>/pc&sup3;, so bright disc centres cross it
+          (45 of 122 SPARC galaxies have points above it). (Until 2026-11-20 this paragraph led with the units-slip numbers: C &asymp; 10<sup>&minus;5</sup>, a
+          3.5&times;10<sup>4</sup> boost, a Milky Way knee of 1.5&times;10&sup3; M<sub>&#x2609;</sub>/pc&sup3;, and &ldquo;every galaxy sits on the linear branch&rdquo;, which
+          held only at 0.029&middot;V&sup2;; a graduate simulated-visitor persona.) This was said in pieces on <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>,{' '}
           <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link> and the{' '}
           <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve Plotter</Link>; a graduate-physics reader asked for it as one sentence.
           It is also an MRH violation on the framework&apos;s own terms: C(&rho;(r), M<sub>total</sub>) is not C(&rho;(r)).
@@ -208,7 +209,7 @@ export default function GalaxyRotation() {
           observed value; cH&#x2080;/(2&#x03C0;) &#x2248; 1.04&#x00D7;10&#x207B;&#xB9;&#x2070; m/s&#x00B2; at the
           site-standard H&#x2080; = 67.4
           undershoots the observed 1.2&#x00D7;10&#x207B;&#xB9;&#x2070; by &#x223C;13%. Against this framework&apos;s own SPARC fit the comparison changes but gets no sharper: the scale the fit identifies is a₀′/&#x03B3; (the compander&apos;s deep-regime limit; 2a₀′ at &#x03B3; = ½). It stays at 1.07&ndash;1.09&times;10⁻¹⁰ across the whole &Upsilon;<sub>disk</sub> = 0.4&ndash;0.6 band while a₀′ itself moves 3.6&times;, but only because &#x03B3; floats along a valley with &Upsilon; (0.28 &rarr; 0.96 across that band). <strong>Pin &#x03B3; = &frac12;, the reading this page calls surviving, and a₀ moves 1.44 &rarr; 1.10 &rarr; 0.87&times;10⁻¹⁰, so closing cH₀/2&pi; needs H₀ &asymp; 93 / 71 / 57 at &Upsilon; = 0.4 / 0.5 / 0.6</strong> (<code>maintainer/scripts/gamma2_global_upsilon_per_law.py</code>). The scale is identified only jointly with &#x03B3;. The free-&#x03B3; value reads 1.16&ndash;1.18&times;10⁻¹⁰ under the velocity-&chi;² fits. cH₀/2&pi; sits 3&ndash;12% below it at H₀ = 67.4. With &#x03B3; free, closing the gap needs H₀ &asymp; 69&ndash;70.5 for the &Upsilon;-sweep values (inside the Planck&ndash;SH0ES range) and &asymp; 75&ndash;76 for the velocity-&chi;² values (above SH0ES&apos;s 73), so only the low end is absorbed by the H₀ tension. Still Milgrom&apos;s 1983 coincidence, still a reparametrization (<code style={{ fontSize: '0.78rem' }}>maintainer/scripts/a0_identified_scale_across_upsilon.py</code>).
-          Synchronism&apos;s contribution is the coherence-function mechanism that provides a
+          Synchronism&apos;s contribution is the coherence-function mechanism that provides a{' '}
           <em>reason</em> for this scale &mdash; not the identification itself.
           See{' '}<Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
           and{' '}<Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}
@@ -262,7 +263,7 @@ export default function GalaxyRotation() {
             viscosity to get the sign of. The Bullet Cluster still refutes any local-density-sourced-gravity
             reading of Claim 3, via a different and stronger argument: the lensing-mass peaks track the
             collisionless galaxies while the X-ray gas — most of the baryonic mass — is stripped and lags
-            behind (Clowe et al. 2006, ApJ 648, L109). Any theory where gravity responds to <em>local</em>
+            behind (Clowe et al. 2006, ApJ 648, L109). Any theory where gravity responds to <em>local</em>{' '}
             baryon density must put the extra gravity where the baryons are; it isn&apos;t there. This is the
             same local-vs-non-local no-go documented above, applied at cluster scale — not a second,
             independent failure. (MOND needs additional collisionless mass at cluster scale for the same
@@ -390,7 +391,7 @@ export default function GalaxyRotation() {
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', fontStyle: 'italic' }}>
             <strong>Note on γ=2:</strong> γ=2 follows from N<sub>corr</sub>=1 (individual stars taken as uncorrelated),
             but N<sub>corr</sub> is asserted, not independently counted. The SPARC-preferred γ≈0.49 back-implies
-            N<sub>corr</sub>≈17, contradicting the independent-stars premise. γ=2 is the most <em>charitable</em>
+            N<sub>corr</sub>≈17, contradicting the independent-stars premise. γ=2 is the most <em>charitable</em>{' '}
             pin for galaxies given the framework&apos;s own logic — not a prediction derived from independent evidence.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
@@ -446,7 +447,7 @@ export default function GalaxyRotation() {
             &mdash; MOND&apos;s simple interpolating function <em>for all x</em>, not just in the tail, with
             a&#x2080; &rarr; 2a&#x2080;. (&ldquo;&#x03B3; = &frac12;&rdquo; is an L2 statement, the algebraic or plain field-equation wiring. Under the
             action-derived L3 wiring the effective μ is C + &frac12;xC&prime;, which at &#x03B3; = &frac12; is x(x+3)/(x+2)&sup2;, <em>not</em> &#x03BC;<sub>simple</sub>: its deep limit is 3x/4, so a&#x2080; = (4/3)a&#x2080;&prime; there, not 2a&#x2080;&prime;. The tanh-log family maps onto itself, and the same
-            fitted curve sits at &#x03B3; &asymp; 0.44 with identical RMS; explorer 2026-10-13. <strong>Which equation each test used</strong> (added 2026-11-15 after graduate and researcher simulated-visitor personas each asked): the SPARC fits and the Galaxy Plotter use the algebraic &#x03BC;-form g<sub>bar</sub> = g<sub>obs</sub>&middot;C; TEST-25&apos;s Cassini quadrupole uses the quasi-linear (QUMOND) field equation built from that same &#x03BC; = C (code: <code style={{ fontSize: '0.78rem' }}>TanhLogNu</code> in Synchronism/simulations/sparc_cassini_q2.py); TEST-09/10 use the floored g<sub>bar</sub>-keyed division. The L3 action has been refit to SPARC but never run against Cassini, so it is untested there. That L3 is the <em>acceleration-keyed</em>
+            fitted curve sits at &#x03B3; &asymp; 0.44 with identical RMS; explorer 2026-10-13. <strong>Which equation each test used</strong> (added 2026-11-15 after graduate and researcher simulated-visitor personas each asked): the SPARC fits and the Galaxy Plotter use the algebraic &#x03BC;-form g<sub>bar</sub> = g<sub>obs</sub>&middot;C; TEST-25&apos;s Cassini quadrupole uses the quasi-linear (QUMOND) field equation built from that same &#x03BC; = C (code: <code style={{ fontSize: '0.78rem' }}>TanhLogNu</code> in Synchronism/simulations/sparc_cassini_q2.py); TEST-09/10 use the floored g<sub>bar</sub>-keyed division. The L3 action has been refit to SPARC but never run against Cassini, so it is untested there. That L3 is the <em>acceleration-keyed</em>{' '}
             action, L = (1/8&pi;G)&thinsp;C(|&nabla;&Phi;|/a&#x2080;&prime;)&thinsp;|&nabla;&Phi;|&sup2;, an AQUAL-type Lagrangian; the density-keyed action
             gives a different equation, see the box under GW170817 below.) <strong>x is defined once, and it matters which:</strong> here x = g<sub>obs</sub>/a&#x2080;&prime;, and
             the fit solves g<sub>bar</sub> = g<sub>obs</sub>&middot;C(g<sub>obs</sub>/a&#x2080;&prime;) implicitly for g<sub>obs</sub>, the

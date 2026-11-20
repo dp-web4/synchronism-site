@@ -282,7 +282,7 @@ export default function ConsciousnessDemo() {
         <h2>The Convergence</h2>
         <div className="card" style={{ marginBottom: '1.5rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-            The mean threshold across the {counted.length} approaches that exist is C = <strong>{(counted.reduce((s, a) => s + a.threshold, 0) / counted.length).toFixed(3)}</strong>
+            The mean threshold across the {counted.length} approaches that exist is C = <strong>{(counted.reduce((s, a) => s + a.threshold, 0) / counted.length).toFixed(3)}</strong>{' '}
             (the &ldquo;phase transition&rdquo; row, hollow in the chart, is excluded: C(&rho;) has no critical point).
             In plain terms: every approach picks the midpoint of the output range. How tightly they cluster says nothing more, because
             the midpoint was the shared starting assumption, so this page no longer quotes a spread. (Until 2026-10-21 this line gave a

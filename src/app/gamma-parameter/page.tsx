@@ -70,7 +70,7 @@ export default function GammaParameter() {
               fluctuation theory &mdash; not a consequence of the CLT.&rdquo;
             </li>
             <li style={{ margin: 0 }}>
-              <strong>The sign is inverted.</strong> 1/&#x221A;N is a fluctuation <em>width</em>
+              <strong>The sign is inverted.</strong> 1/&#x221A;N is a fluctuation <em>width</em>{' '}
               (more particles &rarr; narrower), but &#x03B3; sits in a transition-<em>sharpness</em> slot
               (larger &rarr; sharper). The formula therefore gives the most collective systems the{' '}
               <em>flattest</em> coherence curves &mdash; which is how a BCS superconductor, a system with

@@ -122,7 +122,7 @@ export default function CoherenceExplorer() {
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '0.5rem', padding: '0.5rem 0.75rem', background: 'rgba(239,68,68,0.06)', borderRadius: '0.375rem', borderLeft: '2px solid rgba(239,68,68,0.4)' }}>
             <strong>&#x26A0; Sign-inversion caveat:</strong> &#x03B3; = 2/&#x221A;N<sub>corr</sub> is <em>structurally
-            inverted</em> relative to real condensed-matter physics — more correlation (larger N<sub>corr</sub>) gives a
+            inverted</em> relative to real condensed-matter physics — more correlation (larger N<sub>corr</sub>) gives a{' '}
             <em>smaller</em> &#x03B3;, i.e. a <em>flatter</em> transition, assigning the flattest curve to BCS
             superconductors (which have a sharp real T<sub>c</sub>) and the sharpest curve to an ideal gas (which has
             no real phase transition). See the{' '}
@@ -144,7 +144,7 @@ export default function CoherenceExplorer() {
             were per-e-fold values labelled per decade.)
             The slider goes down to &#x03B3; = 0.01: on the canonical ladder BEC sits near
             &#x03B3; &#x2248; 2&#xD7;10<sup>&#x2212;3</sup> (N<sub>corr</sub> = 10<sup>6</sup>) and BCS
-            superconductors near &#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>
+            superconductors near &#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>{' '}
             (N<sub>corr</sub> = 10<sup>7</sup>) &mdash; both below the slider&apos;s floor (use the{' '}
             <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
             to reach those regimes). At very low &#x03B3; the curve is nearly flat <em>near C&nbsp;=&nbsp;0</em> &mdash; a very
@@ -241,7 +241,7 @@ export default function CoherenceExplorer() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
           <div className="card">
             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
-              <strong>&#x03B3;, how early the curve rises</strong> = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{gamma < 0.1 ? gamma.toFixed(3) : gamma.toFixed(2)}</span>
+              <strong>&#x03B3;, how wide the switch is</strong> = <span style={{ fontFamily: 'monospace', color: 'var(--color-accent-violet)' }}>{gamma < 0.1 ? gamma.toFixed(3) : gamma.toFixed(2)}</span>
               {gamma > 0 && <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85em' }}> &middot; 10&ndash;90% width {Math.log10((Math.exp(Math.atanh(0.9) / gamma) - 1) / (Math.exp(Math.atanh(0.1) / gamma) - 1)).toFixed(2)} dex (1 dex = a factor of 10 in density)</span>}
             </label>
             <input

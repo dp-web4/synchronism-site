@@ -57,11 +57,16 @@ export default function ParameterDerivations() {
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
               <strong style={{ color: '#f87171' }}>Sensitivity ordering, measured 2026-09-03 (explorer, L2 field equation on 153 SPARC galaxies):</strong>{' '}
               this page audits hardest the parameters the model is <em>least</em> sensitive to. Moving &#x03B3; by 40&times; and A
-              by 10<sup>9</sup>&times; at a working floor changes &#x03C7;&sup2;/N by only 1.07&ndash;2.7&times;; moving the <em>floor</em>
+              by 10<sup>9</sup>&times; at a working floor changes &#x03C7;&sup2;/N by only 1.07&ndash;2.7&times;; moving the <em>floor</em>{' '}
               (item 8) at fixed (&#x03B3;, A) changes it by up to 6.35&times;10<sup>4</sup>. The Fisher correlation of (ln &#x03B3;, ln A) is
               +1.000000 (&#x03BA; = 3.6&times;10<sup>8</sup>): the two are one parameter in the galaxy sector, and neither is
               identifiable there. The CLT point below stands, but the practical verdict on &#x03B3; is not &ldquo;wrong sign&rdquo;
-              so much as <em>unmeasurable where it was fitted</em>. Finding: <code>explorer/findings/the-parameter-ledger-is-unfalsifiable-and-the-knee-is-misplaced-by-25000x.md</code>.
+              so much as <em>unmeasurable where it was fitted</em>. <strong>Scope (added 2026-11-20):</strong> this scan used A&middot;V&sup2; with
+              A = 0.029, the units slip of item 3, where every disc sits in the linear regime C &asymp; &#x03B3;&#x03C1;/(A&middot;V&sup2;) and only &#x03B3;/A
+              enters, so a correlation of +1 is automatic. With one free global knee, &#x03B3; and &#x03C1;<sub>c</sub> are separately identified on the
+              same discs (correlation +0.89, explorer 2026-11-02), and at the archive&apos;s 0.028&middot;V<sup>0.5</sup> 45 of 122 SPARC galaxies have points
+              above the knee. Read &ldquo;neither is identifiable&rdquo; as a property of the slipped calibration; the scan at 0.028&middot;V<sup>0.5</sup> has not
+              been run (untested, not refuted; a graduate simulated-visitor persona). Finding: <code>explorer/findings/the-parameter-ledger-is-unfalsifiable-and-the-knee-is-misplaced-by-25000x.md</code>.
             </p>
             <p style={{ color: 'var(--color-text-secondary)' }}>
               The 1/&#x221A;N<sub>corr</sub> scaling borrows from central-limit-theorem (CLT) statistics.
@@ -96,7 +101,7 @@ export default function ParameterDerivations() {
               BCS superconductors — among the most collectively ordered systems known — sit near C ≈ 0,
               the flattest possible curve. &ldquo;Underived ansatz&rdquo; understates the problem:
               the relation is anti-correlated with the physical intuition that motivates it.
-              Any first-principles derivation must recover γ that <em>increases</em> with N<sub>corr</sub>
+              Any first-principles derivation must recover γ that <em>increases</em> with N<sub>corr</sub>{' '}
               to match mean-field expectations — making the formula a falsified placeholder, not a gap to fill.
             </p>
           </div>
@@ -120,13 +125,13 @@ export default function ParameterDerivations() {
             <p style={{ color: 'var(--color-text-secondary)' }}>
               <strong>The log argument, ln(1 + &rho;/&rho;<sub>crit</sub>): chosen, no derivation</strong>. The &ldquo;+1&rdquo; keeps C finite and zero at
               &rho; = 0. With it, tanh(&gamma; ln(1+x)) = ((1+x)<sup>2&gamma;</sup> &minus; 1)/((1+x)<sup>2&gamma;</sup> + 1) exactly, so the
-              log turns the tanh into a power-law compander: C &asymp; &gamma;x at small x, and 1 &minus; C &asymp; 2(1+x)<sup>&minus;2&gamma;</sup>
+              log turns the tanh into a power-law compander: C &asymp; &gamma;x at small x, and 1 &minus; C &asymp; 2(1+x)<sup>&minus;2&gamma;</sup>{' '}
               at large x. The power law and its index come from this choice, not from a principle (MOND derives the corresponding deep-limit
               slope from scale invariance; this form inherits it from the regulator). No archive document motivates the log itself.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               <strong>Note on the Ising analogy:</strong> tanh arises in mean-field Ising models as
-              m = tanh(βJzm) — but that tanh comes from the <em>self-consistency equation</em>
+              m = tanh(βJzm) — but that tanh comes from the <em>self-consistency equation</em>{' '}
               m = tanh(βJz·m), where m feeds back into itself. C(ρ) has no such self-consistency
               loop: it is evaluated directly at the input ρ with no fixed-point iteration. The Ising
               tanh is derived; this tanh is chosen. These are structurally different justifications.
@@ -185,7 +190,10 @@ export default function ParameterDerivations() {
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
               <strong style={{ color: '#f87171' }}>Lead with the large error, not the small one (explorer 2026-09-03).</strong>{' '}
               The 600&times; formula-vs-calibrated mismatch below is real but is the <em>smaller</em> discrepancy, and it moves
-              &#x03C1;<sub>crit</sub> <em>toward</em> the data. Pure density arithmetic, no fit: the calibrated A = 0.029 puts
+              &#x03C1;<sub>crit</sub> <em>toward</em> the data. <strong>Under the archive&apos;s stated law 0.028&middot;V<sup>0.5</sup></strong> the knee is
+              0.34 M<sub>&#x2609;</sub>/pc&sup3; at V = 150 km/s, about 13&times; the SPARC median midplane density, and the bright centres of three
+              plotter discs cross it (corrected 2026-11-20; until then this lead used only the number below). Pure density arithmetic, no fit, at the
+              units-hybrid A = 0.029 that this item calls a slip further down: it puts
               &#x03C1;<sub>crit</sub> at 6.5&times;10<sup>2</sup> M<sub>&#x2609;</sub>/pc&sup3; (4.4&times;10<sup>&minus;20</sup> g cm<sup>&minus;3</sup>),
               while the SPARC median midplane density is 2.6&times;10<sup>&minus;2</sup> M<sub>&#x2609;</sub>/pc&sup3; (1.8&times;10<sup>&minus;24</sup>)
               &mdash; the knee sits <strong>2.5&times;10<sup>4</sup></strong> above every density the data sample. (Refracted Gravity, whose
@@ -257,7 +265,7 @@ export default function ParameterDerivations() {
                 would smooth ρ and ρ<sub>crit</sub> alike, in which case <strong>ℓ cancels</strong> and
                 x = ρ/ρ<sub>crit</sub> = (3/16π²)β<sub>J</sub>²[V<sub>c</sub>/V<sub>flat</sub>]² ≲ 0.019β<sub>J</sub>²
                 — a virial ratio, bounded in every sector at every ℓ, putting the knee ~40× out of reach with no free
-                parameter. The &ldquo;flip&rdquo; that appeared to depend on ℓ is a <strong>law swap</strong>
+                parameter. The &ldquo;flip&rdquo; that appeared to depend on ℓ is a <strong>law swap</strong>{' '}
                 (universal A with ρ<sub>crit</sub> ∝ V² vs per-galaxy A ∝ R<sub>half</sub><sup>−2</sup> with
                 ρ<sub>crit</sub> ∝ V<sup>0.5</sup>) — the same two-law fork item 1 above has documented since
                 2026-06-07. <strong>No refutation is added to the ledger from this</strong> (count stays 6); it
@@ -268,7 +276,7 @@ export default function ParameterDerivations() {
               </ol>
               Verdict: A-from-Jeans is <strong>not</strong> an independent first-principles derivation under any reading.
               The framework has zero first-principles predictions with an independent derivation.
-              <strong>Which scaling is the framework&apos;s stated position?</strong> The archive&apos;s own: ρ<sub>crit</sub> = 0.028·V<sup>0.5</sup>
+              <strong>Which scaling is the framework&apos;s stated position?</strong> The archive&apos;s own: ρ<sub>crit</sub> = 0.028·V<sup>0.5</sup>{' '}
               (Sessions 52/62/64/65), the galaxy plotter&apos;s default since 2026-11-14. Until then this page named ρ<sub>crit</sub> ∝ V²
               (equations.ts:23) as the stated position. That law with A = 0.029 puts the V<sup>0.5</sup> law&apos;s coefficient on a V² exponent.
               It is a units slip, and no archive fit uses it. The V² formula on its own terms gives A ≈ 4.6×10⁻⁵, 600× off.
@@ -293,10 +301,11 @@ export default function ParameterDerivations() {
               sector&apos;s knee &mdash; named neither the Oort limit nor the local stellar density, while the
               single sharpest zero-cost exclusion on the site sat inside a card marked &ldquo;unrun&rdquo;. The
               exclusion, propagated here from{' '}
-              <Link href="/tier-1-existing" style={{ color: '#f87171' }}>TEST-02</Link>: at the archive&apos;s own calibration &#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup>
+              <Link href="/tier-1-existing" style={{ color: '#f87171' }}>TEST-02</Link>: at the archive&apos;s own calibration &#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup>{' '}
               (&asymp; 0.42 M<sub>&#x2609;</sub>/pc&sup3; for the Milky Way), the local density sits about 5&times; below the knee and the
               unfloored division wiring gives a boost of <strong>2.7 (&#x03B3; = 2) to 10.5 (&#x03B3; = 0.489) in g</strong> in the solar
-              neighbourhood, excluded by the Oort limit. (Corrected 2026-11-13: this passage quoted ~3.5&times;10<sup>4</sup> from
+              neighbourhood. That amplitude cancels against laboratory G, measured at the same smoothed density; the Oort exclusion comes from its change with
+              height (&Sigma;(|z| &lt; 1.1&nbsp;kpc) &asymp; 900&ndash;1,800 M<sub>&#x2609;</sub>/pc&sup2; predicted, 68 &plusmn; 4 observed; estimate 2026-11-20). (Corrected 2026-11-13: this passage quoted ~3.5&times;10<sup>4</sup> from
               0.029&middot;V&sup2;, which is the V<sup>0.5</sup> coefficient on a V&sup2; law, a units slip, not a published calibration; explorer 2026-11-12.)
               The knee window that would instead reproduce the 0.05&ndash;0.4% wide-binary signal is
               &#x03C1;<sub>crit</sub> &isin; [3.8&times;10<sup>&minus;5</sup>, 3.2&times;10<sup>&minus;4</sup>]
@@ -330,10 +339,10 @@ export default function ParameterDerivations() {
               The testable part is the slope of a&#x2080;(z), not the level.
               Milgrom&apos;s observed: 1.20&times;10<sup>&minus;10</sup> m/s&sup2; &mdash; the formula sits
               13% below it. <strong>H&#x2080; bookkeeping corrected 2026-07-22</strong> (caught by a visitor
-              physics persona): this card previously quoted a&#x2080; &#x2248; 1.08&times;10<sup>&minus;10</sup>
+              physics persona): this card previously quoted a&#x2080; &#x2248; 1.08&times;10<sup>&minus;10</sup>{' '}
               (&ldquo;within 10%&rdquo;), which is the H&#x2080; = 70 value &mdash; algebraically incompatible
               with item 5&apos;s &#x03A3;&#x2080; = 119 at H&#x2080; = 67.4, since &#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G)
-              exactly (one number, not two). At the site-standard H&#x2080; = 67.4: a&#x2080; = 1.04&times;10<sup>&minus;10</sup>
+              exactly (one number, not two). At the site-standard H&#x2080; = 67.4: a&#x2080; = 1.04&times;10<sup>&minus;10</sup>{' '}
               (13% below Milgrom) with &#x03A3;&#x2080; = 119 &mdash; the consistent pair, now quoted site-wide.
               <strong> Convention caveat:</strong> at &#x03B3; = &frac12; the compander
               collapses to x/(x+2) = &#x03BC;<sub>simple</sub>(x/2) &mdash; MOND&apos;s simple function with a&#x2080; &rarr; 2a&#x2080;. Because
@@ -374,7 +383,7 @@ export default function ParameterDerivations() {
               the paper that constrains a&#x2080;(z) from six high-z discs (&#8776; 4a&#x2080; at z ~ 2 is in tension;
               H(z) scaling, 3.0&ndash;3.5&times;, is said to be something the data &ldquo;may help constrain,&rdquo; not
               claimed excluded); on 41 discs the same test splits by fitting method (explorer 2026-09-19).
-              Milgrom&apos;s actual proposals are arXiv:0801.3133 and ApJ 698, 1630 (2009), both cited
+              Milgrom&apos;s actual proposals are arXiv:0801.3133 and ApJ 698, 1630 (2009), both cited{' '}
               <em>inside</em> 1703.06110 as references. <strong>Branch (B) (&ldquo;present-epoch
               coincidence, no H(z) statement&rdquo;) is not actually available:</strong> it requires a&#x2080; to
               be fundamental, which is the MOND position this framework explicitly rejects elsewhere
@@ -569,7 +578,7 @@ export default function ParameterDerivations() {
               now H&#x2080; = 67.4 km/s/Mpc</strong> (matching /freemans-law and Honest Assessment), giving
               &#x03A3;&#x2080; &#8776; 119. Given the caveat below, no sub-percent &ldquo;match&rdquo; claim
               survives either H&#x2080; choice, so the choice changes bookkeeping, not verdicts. (2) Neither error bar is meaningful on its
-              own terms: Freeman (1970) reports a central surface <em>brightness</em>
+              own terms: Freeman (1970) reports a central surface <em>brightness</em>{' '}
               (21.65&plusmn;0.30 B-mag/arcsec&sup2;), and converting to a surface <em>density</em> requires a
               mass-to-light ratio M/L<sub>B</sub> that for disk galaxies spans roughly 1&ndash;3 &mdash; the
               target itself is uncertain by a factor of &#x223C;2. Quoting agreement to 0.5% (or 4%) against a
@@ -707,16 +716,18 @@ export default function ParameterDerivations() {
               sentence read &ldquo;it is asserted&rdquo;). A proposal (its sweep has since run: TEST-10 2026-07-29, TEST-09 2026-09-18)
               (<code>Research/proposals/boost_ceiling_provenance_and_class_exclusion.md</code>) flags that the
               cosmic ratio a <em>dynamical-to-baryonic</em> boost should reference is arguably
-              &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> &#8776; 6.40 (the baryon budget), not 1/&#x03A9;<sub>m</sub>
+              &#x03A9;<sub>m</sub>/&#x03A9;<sub>b</sub> &#8776; 6.40 (the baryon budget), not 1/&#x03A9;<sub>m</sub>{' '}
               (a matter-to-critical-density ratio). Under that convention the f<sub>DM</sub> ceiling is 0.844, against
               0.685 under 1/&Omega;<sub>m</sub>. TEST-10&apos;s reported <em>median</em> f<sub>DM</sub> is 0.755, so the
               median passes the 0.844 ceiling. Separately, the &ldquo;69% of SPARC exceeds the ceiling&rdquo; headline
               counts all 153 galaxies against the 0.685 ceiling (106/153), so it holds only under the 1/&Omega;<sub>m</sub>{' '}
               convention. The kill does not depend on the convention
               choice at the tail: SPARC&apos;s maximum observed f<sub>DM</sub> = 0.927 requires B &#8805; 13.7,
-              which no ratio built from &Omega;<sub>m</sub> supplies (1/&Omega;<sub>b</sub> = 20.3 does, and is excluded by the weak-lensing RAR one decade lower, 2026-09-25) &mdash; so the robust, convention-free statement is a
-              class exclusion (B<sub>max</sub> &#8818; 14 is excluded by SPARC dwarfs), not the median-based
-              percentage.
+              which no ratio built from &Omega;<sub>m</sub> supplies (1/&Omega;<sub>b</sub> = 20.3 does; the weak-lensing RAR excludes it only under a light-deflection rule and a baryon census the framework has not fixed, and
+              the dwarf spheroidals no longer close it once Wolf&apos;s coefficient is used correctly, explorer 2026-11-19) &mdash; so the convention-free statement is a
+              class exclusion, not the median-based percentage. Its size: 13.7 is a sample maximum, not a bound. One disc excludes B<sub>max</sub> up to about 7.5 at 3&sigma;,
+              about 5.7 after a 153-disc trials correction (2026-11-08), and Draco alone excludes up to about 7&ndash;11 depending on the mass estimator (2026-11-19). (Until
+              2026-11-20 this sentence said SPARC dwarfs exclude caps up to about 14.)
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(245,158,11,0.07)', border: '1px solid rgba(245,158,11,0.35)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
               <strong style={{ color: '#f59e0b' }}>The sweep is now executed &mdash; TEST-09&apos;s half, run
@@ -724,7 +735,7 @@ export default function ParameterDerivations() {
               sweep &ldquo;has not yet been executed against the full per-galaxy dataset.&rdquo; That was true from
               2026-07-27 to today for the BTFR-slope limb (TEST-10&apos;s exceedance limb was run 2026-07-29). The
               ceiling enters TEST-09 as the floor of C(a) = C<sub>min</sub> + (1&minus;C<sub>min</sub>)&middot;x/(1+x),
-              so the sweep is a one-parameter change with everything else &mdash; sample cuts, V<sub>flat</sub>
+              so the sweep is a one-parameter change with everything else &mdash; sample cuts, V<sub>flat</sub>{' '}
               estimator, bootstrap &mdash; held at TEST-09&apos;s own values. The identity control reproduces the
               published n = 3.35 &plusmn; 0.07 exactly before any new number is read.
               <br />&bull; B<sub>max</sub> = 3.175 (1/&#x03A9;<sub>m</sub>): n = 3.347, |&#x0394;n| = 0.406 &mdash; <strong>fires</strong>
@@ -817,10 +828,14 @@ export default function ParameterDerivations() {
               g<sub>obs</sub> = g<sub>bar</sub>/C(ρ) &mdash; the reading the f<sub>DM</sub> = 1&minus;C identity
               implies &mdash; the boost B = 1/C is unbounded by construction and exceeds 3.17 by 2&ndash;5 orders
               of magnitude at <em>every</em> radius, including the disk centre, on the site&apos;s own five
-              plotter galaxies. The ceiling is consistent only with the quadrature amplitude law (the{' '}
+              plotter galaxies. Nor is the ceiling a property of the quadrature amplitude law (the{' '}
               <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Curve
-              Plotter</Link>&apos;s dashed curve since 2026-10-08; its solid curve is floored division) v² = v<sub>b</sub>² + (V<sub>flat</sub>·C)², where the extra
-              term is bounded by V<sub>flat</sub> irrespective of C. No physical density floor rescues the other
+              Plotter</Link>&apos;s dashed curve since 2026-10-08; its solid curve is floored division) v² = v<sub>b</sub>² + (V<sub>flat</sub>·C)², where the extra{' '}
+              <em>velocity</em> is bounded by V<sub>flat</sub> but the boost B = 1 + (V<sub>flat</sub>&middot;C/v<sub>b</sub>)&sup2; is unbounded as v<sub>b</sub> &rarr; 0 in the
+              outskirts. The 3.17 cap exists only in floored division, C<sub>f</sub> = &Omega;<sub>m</sub> + (1&minus;&Omega;<sub>m</sub>)C; quadrature&apos;s failure is
+              circularity (V<sub>flat</sub> in, V<sub>flat</sub> out), not a ceiling. (Corrected 2026-11-20: until then this sentence said the ceiling is consistent only with
+              quadrature, &ldquo;where the extra term is bounded by V<sub>flat</sub> irrespective of C&rdquo;; a graduate simulated-visitor persona showed the ratio is unbounded
+              there.) No physical density floor rescues the unfloored division
               reading: capping B at 3.17 there requires ρ &#8805; 0.177 ρ<sub>crit</sub>, a floor
               10²&ndash;10⁴× the densest point of the model disk. See the C-convention note on{' '}
               <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>.
@@ -848,15 +863,17 @@ export default function ParameterDerivations() {
           via dimensional bookkeeping &mdash; Reparametrization, not derivation &mdash; and are one number, not
           two (&#x03A3;&#x2080; = a&#x2080;/(2&#x03C0;G) exactly). The 3&ndash;10% agreements could reflect
           approximation limits or implicit calibration through V<sub>flat</sub>; distinguishing these would
-          require the independent derivations that do not exist. B<sub>max</sub> = 1/&#x03A9;<sub>m</sub>
+          require the independent derivations that do not exist. B<sub>max</sub> = 1/&#x03A9;<sub>m</sub>{' '}
           (item 8) is the parameter carrying the most discriminating weight of all of them &mdash; and, as of the
           2026-09-03 sensitivity scan, the only one the galaxy data can actually measure. Its asserted value is
           excluded; &#x03B3; and A, the two this page audits hardest, are unidentifiable in that sector (Fisher
-          correlation +1.000000). <strong>One citable negative falls out of this (explorer 2026-09-03), and it
+          correlation +1.000000, measured at the units-hybrid A = 0.029; see item 1&apos;s scope note). <strong>One citable negative falls out of this (explorer 2026-09-03), and it
           transfers to the whole density-keyed &#x03B5;(&#x03C1;) class:</strong> <em>for a density-keyed algebraic
           modification whose knee is calibrated above galactic midplane densities, the interpolating function is
           unidentifiable &mdash; the model equals its own linearisation to better than observational precision.
-          Testability requires the knee inside the sampled density range, where Refracted Gravity puts it.</em>
+          Testability requires the knee inside the sampled density range, where Refracted Gravity puts it.</em> It is a statement about
+          knee placement. The archive&apos;s own 0.028&middot;V<sup>0.5</sup> knee sits inside the range bright disc centres reach, so it does not apply
+          there (scope added 2026-11-20).
         </p>
 
         <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

@@ -443,7 +443,7 @@ export default function TestCatalog() {
           <li><strong>Refraction of an external field.</strong> If the density-keyed law is solved as a field equation,
             &nabla;&middot;[C(&rho;)&nabla;&Phi;] = 4&pi;G&rho;, an external field bends wherever C varies across a system, as a field does in a
             dielectric. MOND&apos;s external-field effect has a different form. Rough sizes on file: about 0.3&ndash;0.37 g<sub>ext</sub> beyond
-            the knee in a halo globular cluster. In a disc it depends on the form of C: negligible for the floored form (C &asymp; &Omega;<sub>m</sub>
+            the knee in a halo globular cluster. In a disc it depends on the form of C: negligible for the floored form (C &asymp; &Omega;<sub>m</sub>{' '}
             below the knee, so &nabla;C &asymp; 0), but of order R/h for the unfloored form, because there &nabla;ln&nbsp;C = &nabla;ln&nbsp;&rho;
             however small C is. <strong>For satellites (explorer, 2026-10-21, Refracted Gravity&apos;s published parameters):</strong> the
             response is about (&Delta;&epsilon;/&epsilon; across the dwarf) &times; (g<sub>ext</sub>/g<sub>int</sub>), and the second factor is

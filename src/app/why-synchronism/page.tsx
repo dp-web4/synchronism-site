@@ -15,7 +15,7 @@ export default function WhySynchronism() {
 
       <h1>Start Here: Why Synchronism?</h1>
       <p className="hero-subtitle" style={{ marginBottom: '0.5rem' }}>
-        Physics has a fragmentation problem. Synchronism asks whether one principle
+        Physics has a fragmentation problem: quantum rules for the very small, gravity for the very large, and no one equation for both. Synchronism asks whether one principle
         could connect what we currently treat as separate domains.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '2rem' }}>
@@ -87,7 +87,7 @@ export default function WhySynchronism() {
         <p style={{ color: 'var(--color-text-secondary)', fontStyle: 'italic', borderLeft: '3px solid var(--color-accent-violet)', paddingLeft: '0.75rem' }}>
           In plain English: Synchronism proposes one S-curve that smoothly goes from 0 (everything
           acting independently &mdash; the crowd) to 1 (everything locked together &mdash; the marching
-          band) as density grows. There&apos;s a setting, &#x03B3;, for how early that change starts
+          band) as density grows. There&apos;s a setting, &#x03B3;, for how wide that change is
           &mdash; turn it down and the change stretches out; turn it up and it comes earlier, though never as a sudden snap
           &mdash; and a reference density that sets where on the curve a given system sits.
         </p>
@@ -121,7 +121,7 @@ export default function WhySynchronism() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           The parameter &#x03B3; = 2/&#x221A;N<sub>corr</sub> is meant to depend only on how many
           particles are moving as a correlated unit: many correlated particles &rarr; small &#x03B3;,
-          few &rarr; large &#x03B3;. It was meant as a sharpness, but it sets how early C rises; no &#x03B3; makes the rise sudden. What
+          few &rarr; large &#x03B3;. It was meant as a sharpness; it sets how wide the rise is, and no &#x03B3; makes the rise sudden. What
           makes a system sparse or dense is &#x03C1;, the other input. Two systems at the same density
           with different &#x03B3; sit at different points on the curve; &#x03B3; does not move them
           along the density axis.

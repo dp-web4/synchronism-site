@@ -34,7 +34,7 @@ export default function SoundVelocity() {
 
         <h2>What It Tells Us</h2>
         <p>
-          This correlation validates the fundamental idea: &#x03B3; = 2/&#x221A;N<sub>corr</sub>
+          This correlation validates the fundamental idea: &#x03B3; = 2/&#x221A;N<sub>corr</sub>{' '}
           genuinely captures something physical about collective behavior. When N<sub>corr</sub> is
           large (many atoms moving together), sound travels fast and &#x03B3; is small.
         </p>
@@ -52,7 +52,7 @@ export default function SoundVelocity() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>2. Wrong sign vs. the governing equation (explorer finding, 2026-07-29):</strong>{' '}
             C(&#x03C1;) is monotone <em>increasing</em> in density for every &#x03B3;,&nbsp;&#x03C1;<sub>crit</sub>&nbsp;&gt;&nbsp;0.
-            But sound speed is v&nbsp;=&nbsp;&#x221A;(K/&#x03C1;) &mdash; density sits in the <em>denominator</em>
+            But sound speed is v&nbsp;=&nbsp;&#x221A;(K/&#x03C1;) &mdash; density sits in the <em>denominator</em>{' '}
             by definition. Diamond (&#x03C1;&nbsp;=&nbsp;3.51&nbsp;g/cm&sup3;) is ranked <em>more</em> coherent
             than lead (&#x03C1;&nbsp;=&nbsp;11.34&nbsp;g/cm&sup3;) above &mdash; that ordering is
             anti-monotone in density. Computing Spearman(C(&#x03C1;), sound velocity) directly on 22

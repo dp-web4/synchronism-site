@@ -152,7 +152,7 @@ export default function ResearchPhilosophy() {
 
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
           <strong>Deprecated</strong> (kept for back-compat with existing usages; do not appear in new content):{' '}
-          &ldquo;Validated&rdquo; and &ldquo;Strongly Supported&rdquo;{' '}
+          &ldquo;Validated&rdquo;, &ldquo;Strongly Supported&rdquo; and &ldquo;MOND-shared&rdquo;{' '}
           &mdash; verdict-shaped; conflicts with the stewardship discipline (nothing is honestly characterizable as &ldquo;established&rdquo; at the current stage).
           Existing usages being migrated incrementally by the daily maintainer track.
         </p>
@@ -305,7 +305,7 @@ export default function ResearchPhilosophy() {
           on external data and simulation, and do not depend on it. A human (dp) reviews borderline cases and maintains the
           status badge taxonomy.
           <strong>A2ACW&apos;s calibration, stated as a calibration:</strong> of the 9 claims its top verdict passed, 0
-          survived later audit (positive predictive value 0/9; the one-sided 95% upper bound is about 28%, or 34% two-sided). Every demotion came from a
+          survived later audit (positive predictive value 0/9; the one-sided 95% upper bound is about 28%, or 34% two-sided). Every demotion came from a{' '}
           <em>later</em> audit pass, not from the challenge cycle itself. So A2ACW works as a search heuristic and as an
           after-the-fact filter for reparametrizations; its approval step is uncalibrated. Every badge is the product of at
           least one full A2ACW challenge cycle &mdash; which, given that record and the
@@ -548,7 +548,7 @@ export default function ResearchPhilosophy() {
           ))}
         </div>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem' }}>
-          <strong>Diagnosis:</strong> The out-of-distribution problem is solved for AI systems with <em>external formal oracles</em>
+          <strong>Diagnosis:</strong> The out-of-distribution problem is solved for AI systems with <em>external formal oracles</em>{' '}
           (FunSearch, AlphaProof). It is not solved for <em>natural-language theory generation</em>, where no formal verifier
           exists outside the training distribution. A2ACW illustrates this structural point with a retrospective record rather
           than a run experiment: 6/6 retrospective demotions (by a later LLM audit, so instrument-uncalibrated); a desk

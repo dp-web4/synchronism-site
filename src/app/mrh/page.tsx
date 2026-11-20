@@ -255,7 +255,7 @@ export default function MRH() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0' }}>
             <strong>Two paths forward:</strong> (1) Provide the integration measure that defines
             &ldquo;inside MRH&rdquo; vs. &ldquo;outside MRH&rdquo; and write the explicit
-            conditional-independence statement with a probability distribution. (2) Or rename to
+            conditional-independence statement with a probability distribution. (2) Or rename to{' '}
             <em>Relevance Horizon</em> &mdash; acknowledging the intuition is Markov-motivated but
             the formalism is not yet Markov. The &ldquo;Markov&rdquo; label sets an expectation
             that is not currently met.

@@ -67,7 +67,7 @@ export default function CoreIdea() {
           <strong>What does coherence do to gravity?</strong> (added 2026-09-14 &mdash; a reader finished the beginner
           path without learning this.) In galaxies, the proposal was that gravity <em>looks</em> stronger than the visible
           matter explains by a factor set by C. Two wirings were tried, and they point opposite ways. In the one the
-          site&apos;s galaxy refutations used, the boost is 1/C: gravity looks strongest where coherence is <em>low</em>
+          site&apos;s galaxy refutations used, the boost is 1/C: gravity looks strongest where coherence is <em>low</em>{' '}
           (the sparse outskirts), capped at about 3.2&times;. In the other (&ldquo;quadrature&rdquo;), the extra
           speed grows <em>with</em> C, so it switches on in dense centres &mdash; where it isn&apos;t needed &mdash; and fails
           outright. The 1/C wiring fits only after its input is switched from density to acceleration and its dial is
@@ -276,7 +276,7 @@ export default function CoreIdea() {
           then took a day to reach this page. No external derivation is on record.)
         </p>
         <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
-          <strong>Precision (2026-09-14):</strong> &ldquo;Hill-type&rdquo; is exact in the variable (1+x). In x = &rho;/&rho;<sub>crit</sub>
+          <strong>Precision (2026-09-14):</strong> &ldquo;Hill-type&rdquo; is exact in the variable (1+x). In x = &rho;/&rho;<sub>crit</sub>{' '}
           itself, C is exactly a Hill function only at &gamma;&nbsp;=&nbsp;&frac12;, where C&nbsp;=&nbsp;x/(x+2); at other &gamma;
           the Hill index n&nbsp;=&nbsp;2&gamma; is the large-x slope, and near x&nbsp;=&nbsp;0 the curve is simply linear
           (C&nbsp;&asymp;&nbsp;&gamma;x).

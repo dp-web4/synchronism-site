@@ -24,6 +24,18 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-20 (four visitor personas, 2026-11-20 log; explorer 2026-11-19; maintainer Oort run).
+    (r"bounds the quadrature boost", "2026-11-20", "quadrature bounds the added VELOCITY by V_flat; the boost 1 + (V_flat C/v_b)^2 is unbounded; the 3.17 cap is floored division only"),
+    (r"galaxy edges need 4", "2026-11-20", "4x = 13.7/3.17 used the sample maximum; the faintest galaxies need roughly twice the cap after error and trials"),
+    (r"which the\s+Oort limit can see|leaves room for a few tens of percent at most|excluded by the Oort limit at the published knee", "2026-11-20", "the absolute boost cancels against lab G (measured at the same smoothed density); Oort/K_z data see its change with height", True),
+    (r"Refracted Gravity calibrations \(the pointwise, non-covariant reading\)", "2026-11-20", "the LLR item smooths over 1-10 pc; RG as published (pointwise epsilon inside the divergence) is not tested by it"),
+    (r">Inside Bell&apos;s limit<", "2026-11-20", "a local substrate with S <= 2 is excluded by loophole-free Bell experiments (Hensen et al. 2015, S = 2.42 +- 0.20)"),
+    (r"Kill Triggered \(Reframed 2026-07-02\)|Disfavored 2\.4σ on σ₈ \(a GR-conditioned statistic\); ~0\.9σ", "2026-11-20", "TEST-04a renders from TEST04A_BADGE / TEST04A_BADGE_LABEL in ledger.ts: untested, underpowered as registered", True),
+    (r"sapos;", "2026-11-20", "botched apostrophe substitution", True),
+    (r"floored published knee|framework&apos;s asserted\s+&#x03C1;", "2026-11-20", "0.029*V^2 is a units slip, not published or asserted; the archive writes 0.028*V^0.5"),
+    (r"two dwarf spheroidals \(Draco, Crater II|two gas-free dwarf galaxies \(Draco, Crater II\)", "2026-11-20", "Crater II is observed disrupting (Limberg+2025, ~7 sigma gradient); the dSph leg rests on Draco", True),
+    (r"B<sub>max</sub> &#8818; 14 is excluded|20\.3 is excluded at fiducial M/L", "2026-11-20", "13.7 is a sample maximum; dwarfs do not close 20.3 (2.5-2.8 sigma)", True),
+    (r"the form this site has used; the archive", "2026-11-20", "lead with the archive's 0.028*V^0.5; 0.029*V^2 is the units slip", True),
     # Added 2026-11-19 (four visitor personas, 2026-11-19 log; explorer 2026-11-18): summary layers lagging the ledger.
     (r"4\.9(&sigma;|σ) each|boosts of about 100 and 60|(≈|&asymp;|about) 14\.7\b|up to B<sub>max</sub> &asymp; 14\.7", "2026-11-19", "dSph masses used Wolf's projected coefficient on the 3D radius (4/3 too high): Draco 4.5, Crater II 4.2 sigma; cap excluded to ~11"),
     (r"the pin refuted on the RAR", "2026-11-19", "the gamma = 2 pin is disfavoured at about 2 sigma (+184 by point at frozen Upsilon; ~+11 by galaxy; +2.7 with own Upsilon)", True),

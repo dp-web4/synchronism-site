@@ -94,7 +94,7 @@ const notItems: { claim: string; plain: ReactNode; reality: ReactNode; note?: Re
         The framework also extends its coherence idea to consciousness. The site treats that as a speculative sector
         &mdash; its own{' '}
         <Link href="/consciousness-threshold" style={{ color: 'var(--color-accent-blue)' }}>Consciousness Threshold</Link>{' '}
-        page badges the threshold untestable as stated. The two statements below are not in conflict: the threshold
+        page badges the threshold untestable as stated. The two statements below are not in conflict: the threshold{' '}
         <em>value</em> (C &asymp; 0.50) has never been tested &mdash; the one empirical test cited for it measured a
         different variable (a coherence score for AI agents in a companion program), and rejected the threshold for
         that variable. It would become falsifiable only once a measurement protocol maps C onto something measurable in

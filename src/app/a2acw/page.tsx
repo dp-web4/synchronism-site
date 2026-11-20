@@ -194,7 +194,7 @@ export default function A2ACW() {
             after a simulated-visitor researcher persona asked where recall from training is filed:</em> &ldquo;read from published
             measurements&rdquo; mixes two channels. The radiative-gravity refutation, coded as argument, cites a Hulse&ndash;Taylor ratio of
             1.0013 &plusmn; 0.0021 with no locator. The paper says 0.9983 &plusmn; 0.0016 (abstract read 2026-10-19). So that measurement
-            was most likely recalled, not retrieved: the verdict came out right and the number wrong. The γ&nbsp;=&nbsp;2/√N<sub>corr</sub>
+            was most likely recalled, not retrieved: the verdict came out right and the number wrong. The γ&nbsp;=&nbsp;2/√N<sub>corr</sub>{' '}
             sign inversion, a world-facing kill from textbook condensed-matter reasoning, predates the 92 units. If recall counts as an
             external oracle, the thesis is close to definitional; if it does not, these two cases test it. A recall code has been proposed.)
             So

@@ -118,7 +118,7 @@ export default function CoherenceFunction() {
               behind f<sub>DM</sub> = 1 &minus; C and the ledger. (b) The field equation
               &nabla;&middot;[C(&#x03C1;)&nabla;&Phi;] = 4&pi;G&#x03C1;, which reduces to (a) <em>only in spherical symmetry</em>.
               <strong>In empty space it is not yet a defined equation:</strong> the unfloored C is 0 where &#x03C1; = 0, so the
-              operator vanishes and nothing constrains &Phi; there (equivalently g = g<sub>N</sub>/C &rarr; &infin;). A floor C<sub>min</sub>
+              operator vanishes and nothing constrains &Phi; there (equivalently g = g<sub>N</sub>/C &rarr; &infin;). A floor C<sub>min</sub>{' '}
               makes vacuum Newtonian with G/C<sub>min</sub>; a smoothing length makes C depend on matter within that length. The
               archive has written neither; the planets require a smoothing length of at least ~30 AU, and lunar laser ranging
               bounds it from above (see the{' '}
@@ -128,7 +128,7 @@ export default function CoherenceFunction() {
               (bounded by the ceiling) once the knee sits inside the disc; at this framework&apos;s own knee, which never enters
               a disc, they coincide. Form (b) is <strong>Refracted Gravity&apos;s field equation</strong> (Matsakos &amp; Diaferio
               2016). RG&apos;s permittivity is a floored Hill switch, &#x03B5; = &#x03B5;<sub>0</sub> + (1&minus;&#x03B5;<sub>0</sub>)&middot;y<sup>p</sup>/(1+y<sup>p</sup>)
-              with y = &#x03C1;/&#x03C1;<sub>c</sub>. That is identical in closed form to the archive&apos;s floored Hill form C<sub>&#x03A9;</sub>, but
+              with y = &#x03C1;/&#x03C1;<sub>c</sub>. That is identical in closed form to the archive&apos;s floored Hill form C<sub>&#x03A9;</sub>, but{' '}
               <em>not</em> to the headline tanh(&#x03B3;&middot;ln(1+x)) on this page. The two coincide only at &#x03B3; = &frac12; (Hill p = 1,
               knee doubled, &#x03C1;<sub>c</sub> = 2&#x03C1;<sub>crit</sub>). At &#x03B3; = 2 and x = 1 the headline form gives 0.88 and RG&apos;s
               shape gives 0.06 (p = 4) or 0.5 (knee not doubled); at small x one is linear and the other goes as x<sup>p</sup>.
@@ -228,7 +228,8 @@ export default function CoherenceFunction() {
           Cassini/SPARC squeeze &mdash; was computed on acceleration (g<sub>obs</sub>, μ-form), not ρ (see the
           2026-09-08 &ldquo;Which variable the fit actually used&rdquo; note above; this sentence previously said
           &ldquo;g<sub>bar</sub>,&rdquo; which the fit did not use). Running the
-          framework&apos;s own numbers (γ = 2, ρ<sub>crit</sub> = 0.029 V<sub>flat</sub>²) with ρ actually
+          numbers the site then called the framework&apos;s own (γ = 2, ρ<sub>crit</sub> = 0.029 V<sub>flat</sub>², since traced to a units slip; the archive writes
+          0.028&middot;V<sub>flat</sub><sup>0.5</sup>, at which the density law loses by &Delta;BIC +8,404) with ρ actually
           substituted in moves the predicted rotation velocity by <strong>2&ndash;5 orders of magnitude</strong> on
           the site&apos;s own five plotter galaxies, and three mutually exclusive galaxy force laws are live on
           the site depending on how <code>C(ρ)·g</code> vs <code>g/C(ρ)</code> is read (see the C-convention note
@@ -263,7 +264,7 @@ export default function CoherenceFunction() {
         </div>
 
         <p>
-          This maps <strong>presence</strong> to <strong>coherence</strong>
+          This maps <strong>presence</strong> to <strong>coherence</strong>{' '}
           (a dimensionless number between 0 and 1 that measures how collectively elements behave
           &mdash; from sparse/independent (C&nbsp;&asymp;&nbsp;0) to dense/collective (C&nbsp;&asymp;&nbsp;1)).
         </p>
@@ -365,7 +366,7 @@ export default function CoherenceFunction() {
           for the complete derivation vs. motivation distinction.
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-          <strong>Saturation note:</strong> At &#x03B3; = 2, C(&#x03C1;) saturates within ~1 decade of &#x03C1;<sub>crit</sub>
+          <strong>Saturation note:</strong> At &#x03B3; = 2, C(&#x03C1;) saturates within ~1 decade of &#x03C1;<sub>crit</sub>{' '}
           (C(10&#x00B7;&#x03C1;<sub>crit</sub>) &#x2248; 0.9999). The coherence transition is a sharp but smooth
           saturation (a companding curve) — analytic, with no non-analyticity or critical exponents, so
           &ldquo;phase transition&rdquo; is a loose description, not a literal one. Each system has its own
@@ -564,7 +565,7 @@ export default function CoherenceFunction() {
           </table>
         </div>
         <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
-          Source: site explorer 2026-11-15, <code>explorer/scripts/gamma_incumbent_map/</code> (<code>dict.py</code>, <code>nest.py</code>, 
+          Source: site explorer 2026-11-15, <code>explorer/scripts/gamma_incumbent_map/</code> (<code>dict.py</code>, <code>nest.py</code>,{' '}
           <code>sc2.py</code>; identity controls exact, not pre-registered, run after the data fits were known). The template is fitted as
           g<sub>bar</sub> = g&middot;tanh(&gamma; ln(1 + g/a&#x2080;&prime;)) with &gamma; and a&#x2080;&prime; free. <strong>Why Cassini fails at every &gamma;
           (TEST-25):</strong> the only MOND functions that can pass Cassini are sharp ones (&delta; = 6 passes with M/L free per galaxy and no bulges; &delta; = 4 fails at +9.2&sigma; once a&#x2080; is refit to SPARC), and the template cannot reach that end,

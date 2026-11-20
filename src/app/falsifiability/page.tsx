@@ -252,8 +252,8 @@ export default function Falsifiability() {
             <strong>Update (2026-11-19): the sweep has run, and the kill stands on a bound, not on the maximum.</strong> This paragraph used to say the
             robust statistic was the maximum observed f<sub>DM</sub> = 0.927 (B = 13.7). A sample maximum is not a bound. With distance, inclination,
             M/L and gas profiled, the rotation curves exclude caps up to B<sub>max</sub> &asymp; 7.5 at 3&sigma; (&asymp; 5.7 after a 153-disc trials
-            correction), so 6.40 survives the rotation curves at corrected significance; dwarf spheroidals with no gas and no light rule (Draco,
-            Crater II) then exclude every cap up to &asymp; 11 under Wolf et al. 2010&apos;s mass estimator (about 7 under Walker et al. 2009&apos;s). The ceiling-definition sweep proposed here ran on 2026-07-29 (TEST-10) and 2026-09-18
+            correction), so 6.40 survives the rotation curves at corrected significance; a dwarf spheroidal with no gas and no light rule (Draco;
+            Crater II, once listed here, is observed to be disrupting) then excludes every cap up to &asymp; 11 under Wolf et al. 2010&apos;s mass estimator (about 7 under Walker et al. 2009&apos;s). The ceiling-definition sweep proposed here ran on 2026-07-29 (TEST-10) and 2026-09-18
             (TEST-09). The 1/&Omega;<sub>m</sub> constant is now traced to the cosmic C<sub>0</sub> = &Omega;<sub>m</sub> calibration (motivated, but only
             if galaxies and cosmology share one knee). Details on the{' '}
             <Link href="/tier-1-existing#TEST-10" style={{ color: 'var(--color-accent-blue)' }}>TEST-10 card</Link>.

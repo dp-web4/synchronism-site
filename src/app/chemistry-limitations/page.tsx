@@ -44,7 +44,7 @@ export default function ChemistryLimitations() {
 
         <h3>Channel Independence</h3>
         <p>
-          &#x03B3;<sub>phonon</sub>, &#x03B3;<sub>electron</sub>, and &#x03B3;<sub>optical</sub>
+          &#x03B3;<sub>phonon</sub>, &#x03B3;<sub>electron</sub>, and &#x03B3;<sub>optical</sub>{' '}
           don&apos;t correlate with each other. A material can have high phonon coherence (fast sound)
           but low electronic coherence (poor conductor). A single &#x03B3; can&apos;t capture
           multi-channel behavior.
@@ -80,7 +80,7 @@ export default function ChemistryLimitations() {
           (spin, orbital structure, crystal symmetry).
         </p>
         <p>
-          This is an honest limitation, not a failure of the research program. Understanding
+          This is an honest limitation, not a failure of the research program. Understanding{' '}
           <em>where</em> your theory applies and <em>where</em> it doesn&apos;t is as valuable
           as the theory itself.
         </p>

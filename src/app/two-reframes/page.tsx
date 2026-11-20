@@ -153,6 +153,11 @@ export default function TwoReframes() {
           structural, not mysterious.
         </p>
 
+        <p style={{ color: '#10b981', fontSize: '0.85rem', margin: '1rem 0 0.25rem' }}>
+          <strong>Physics detail, safe to skip:</strong> the entanglement section below uses Bell-test vocabulary (Tsirelson bound, PR box,
+          Kochen&ndash;Specker). To stay with the analogies, jump to{' '}
+          <a href="#pendulum" style={{ color: '#10b981' }}>the pendulum clock</a>.
+        </p>
         <h3>Entanglement: Phase Alignment in a Common Substrate</h3>
         <p>
           The CRT analogy extends naturally to entanglement. Imagine two CRT screens driven by the same
@@ -184,7 +189,7 @@ export default function TwoReframes() {
           string with two ends. In the singlet state, the pattern phase at location A is &phi;<sub>0</sub> and
           at B is &phi;<sub>0</sub>&nbsp;+&nbsp;&pi; &mdash; not a correlation between separate things, but the
           structure of the pattern itself. That gets the substrate off the <em>local</em>-hidden-variable hook.
-          It does not, by itself, explain why nature stops at the <strong>Tsirelson bound</strong>
+          It does not, by itself, explain why nature stops at the <strong>Tsirelson bound</strong>{' '}
           (|S|&nbsp;=&nbsp;2&radic;2&nbsp;&asymp;&nbsp;2.83) rather than the algebraic maximum of 4 that generic
           no-signaling nonlocal (PR-box) correlations allow. A substrate reframe of QM owes an account of
           <em> why 2&radic;2 and not 4</em> &mdash; and the 2026-07-06 triptych run below localizes exactly
@@ -222,7 +227,7 @@ export default function TwoReframes() {
           <li><strong>Local construction</strong> (a shared preparation, no coupling between regions during
             measurement): S&nbsp;=&nbsp;1.98 &mdash; at the classical bound, as a local-realist model must be.</li>
           <li><strong>Nonlocal-grid construction</strong> (the shared substrate lets region B&apos;s state mix
-            into region A&apos;s measurement, tunable coupling g): S&nbsp;&equiv;&nbsp;2.00 for <em>every</em>
+            into region A&apos;s measurement, tunable coupling g): S&nbsp;&equiv;&nbsp;2.00 for <em>every</em>{' '}
             coupling strength tried, still with zero signaling. The reason is itself the finding: a uniform
             shared phase only adds a constant offset to one side&apos;s readout axis, which is
             <em> gauge-equivalent to relabeling the measurement angles</em> &mdash; smooth single-grid mediation
@@ -372,7 +377,7 @@ export default function TwoReframes() {
         </div>
 
         {/* ===================== PENDULUM CLOCK ===================== */}
-        <h2 style={{ marginTop: '3rem' }}>The Pendulum Clock Analogy: Relativity as Instrument Effects</h2>
+        <h2 id="pendulum" style={{ marginTop: '3rem', scrollMarginTop: '5rem' }}>The Pendulum Clock Analogy: Relativity as Instrument Effects</h2>
 
         <p>
           Relativistic time dilation was confirmed by flying atomic clocks on airplanes in opposite

@@ -98,7 +98,7 @@ export default function QuantumComputing() {
         <p>
           The T<sub>2</sub> decoherence time of a qubit measures how long it maintains phase
           coherence. In Synchronism, this is the timescale on which environmental coupling
-          pushes &#x03B3; below the quantum regime threshold. Synchronism predicts that T<sub>2</sub>
+          pushes &#x03B3; below the quantum regime threshold. Synchronism predicts that T<sub>2</sub>{' '}
           should scale with N<sub>corr</sub> of the environment:
         </p>
         <ul style={{ color: 'var(--color-text-secondary)' }}>

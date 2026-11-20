@@ -47,8 +47,8 @@ export default function ForResearchers() {
           self-energy, a repulsive &Lambda;-like term on the planets; it is redundant at pc smoothing and closes the
           small-smoothing hole for 21 of 32 &gamma; = 0.489 laws (explorer 2026-10-19, pre-registered{' '}
           <code>edb0108</code>). Elsewhere, L3 at the gradient keying is AQUAL with &#x03B3; relabelled to 0.44,
-          indistinguishable from L2 on SPARC and lensing, and at the framework&apos;s own density knee (0.029&nbsp;V&sup2;) it
-          equals L2 to &lt;&nbsp;0.1% (explorer 2026-10-13). The ledger states the same as &ldquo;no registered test has a
+          indistinguishable from L2 on SPARC and lensing, and at the units-hybrid density knee (0.029&nbsp;V&sup2;, a slip) it
+          equals L2 to &lt;&nbsp;0.1% (explorer 2026-10-13); at the archive&apos;s 0.028&middot;V<sup>0.5</sup>, where 45 of 122 discs cross the knee, the striction term is uncomputed. The ledger states the same as &ldquo;no registered test has a
           branch that moves the confirmed-novel count&rdquo;. (AQUAL: Bekenstein &amp; Milgrom&apos;s 1984 field-equation form of MOND;
             L2/L3: the two candidate field equations, see the glossary.)
           </details>
@@ -276,7 +276,7 @@ export default function ForResearchers() {
               rule, read with an internal acceleration. Binary-cleaned dispersions sit near Newton: the Hyades at 0.21 &plusmn; 0.05 km/s are 0.91 of Newton,
               0.30 of the prediction and 3.3&sigma; below it with a 20% estimator systematic, and the Pleiades, M67 and NGC 188 are at 0.34&ndash;0.63.
               Conditional on the binary cleaning; uncleaned Gaia dispersions sit on the prediction (explorer 2026-11-11/12). Also conditional on a virial
-              reading: the Hyades has documented tidal tails and is not in equilibrium (R&ouml;ser et al. 2019; Meingast &amp; Alves 2019), Tidal heating and expansion usually
+              reading: the Hyades has documented tidal tails and is not in equilibrium (R&ouml;ser et al. 2019; Meingast &amp; Alves 2019), Tidal heating and expansion usually{' '}
               <em>inflate</em> &sigma;, which would push the equilibrium value further below the prediction, but their effect on the binary-cleaned inner stars,
               and on the cluster mass the prediction is built from, has not been modelled. Milgrom set this rule aside
               himself in 2011, so excluding it is low-yield; its use is as a clean test class (internal &#x226A; a&#x2080; inside an external field &gt; a&#x2080;).</li>
@@ -288,9 +288,11 @@ export default function ForResearchers() {
               (<code>maintainer/scripts/delta6_width_vs_compander_floor.py</code>; at the same a&#x2080;, not each family&apos;s SPARC-profiled a&#x2080;).
               It fails at 14.5&ndash;19.3&sigma; for every &gamma; from 0.3 to 3 with M/L pinned. With M/L free it needs &Upsilon;<sub>d</sub> &asymp; 1.2&ndash;1.4,
               so 36&ndash;42% of discs are over-maximal. This holds for any theory using that family (<Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>).</li>
-            <li><strong>Dwarf spheroidals exclude saturating-boost gravity up to B<sub>max</sub> &asymp; 11.</strong> In any theory whose boost over Newton saturates
-              at B<sub>max</sub>, Draco (M/L = 4, after a six-system trials correction) excludes caps below about 11 (13.9 at local 3&sigma;) and Crater II below
-              about 8, with no light-deflection rule and no gas census needed. Masses use Wolf et al. 2010, M<sub>&frac12;</sub> = 3&sigma;&sup2;r<sub>&frac12;,3D</sub>/G
+            <li><strong>One dwarf spheroidal, Draco, excludes saturating-boost gravity up to B<sub>max</sub> &asymp; 7&ndash;11.</strong> In any theory whose boost over Newton saturates
+              at B<sub>max</sub>, Draco (M/L = 4, after a six-system trials correction) excludes caps below about 11 (13.9 at local 3&sigma;), with no light-deflection rule and no gas census needed. Crater II, which gave about 8, is
+              now observed to be disrupting (Limberg et al. 2025: a &asymp;7&sigma; velocity gradient along its debris track, and a lower central dispersion that by itself cuts
+              its required boost by 0.86), so it is not an equilibrium test and this item rests on Draco (explorer 2026-11-19). The no-CDM cap 1/&Omega;<sub>b</sub> = 20.3 is not
+              closed by dwarfs either: both clear it at only 2.5&ndash;2.8&sigma;. Masses use Wolf et al. 2010, M<sub>&frac12;</sub> = 3&sigma;&sup2;r<sub>&frac12;,3D</sub>/G
               (required boosts at fiducial M/L = 2: Draco &asymp; 76, Crater II &asymp; 45). Walker et al. 2009&apos;s smaller estimator (2.5&sigma;&sup2;R<sub>e</sub>/G)
               lowers Draco&apos;s reach to about 7 and takes Crater II below the trials threshold, so the result is estimator-conditional at its edge.
               The escapes are M/L &ge; 5&ndash;7, or a measured &sigma; inflated by tides by &ge; 1.15&ndash;1.3&times; (Crater II is a known tidally disturbed system).
@@ -359,8 +361,8 @@ export default function ForResearchers() {
               <a href="#gdot-llr" style={{ color: 'var(--color-accent-blue)' }}>6. Solar-neighbourhood &#x0120;/G no-go</a>: any
               G<sub>eff</sub> that depends on the matter density smoothed on 1&ndash;10 pc drifts as the Sun moves through its
               neighbourhood; lunar laser ranging holds &#x0120;/G to (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> yr<sup>&minus;1</sup>, so
-              |d ln G<sub>eff</sub>/d ln &rho;| &#x2272; 10<sup>&minus;8</sup> at 1 pc and 3&ndash;6&times;10<sup>&minus;6</sup> at 10 pc (2&sigma;, measured Gaia gradient). 68 of 74 density-keyed laws die at 1 pc (62 at 10 pc), both
-              Refracted Gravity calibrations included. Promoted from the TEST-02 card 2026-10-27 (a researcher persona asked why it was not here).
+              |d ln G<sub>eff</sub>/d ln &rho;| &#x2272; 10<sup>&minus;8</sup> at 1 pc and 3&ndash;6&times;10<sup>&minus;6</sup> at 10 pc (2&sigma;, measured Gaia gradient). 68 of 74 density-keyed laws die at 1 pc (62 at 10 pc), including an
+              algebraic, pc-smoothed law at both Refracted Gravity calibrations&apos; knee values (RG as published, with &epsilon; pointwise inside the divergence, is not tested by it). Promoted from the TEST-02 card 2026-10-27 (a researcher persona asked why it was not here).
             </li>
             <li>
               <a href="#locality-no-go" style={{ color: 'var(--color-accent-blue)' }}>1. Local-density no-go</a>: a knee keyed
@@ -373,7 +375,7 @@ export default function ForResearchers() {
               narrowing to 0.5&ndash;100 at &#x03B3; = 2. Meaningless without its &#x03B3;, and conditional on L2 dynamics (under L3 no knee passes).
               The residual is the inverse-variance-weighted mean over clusters of (observed &minus; predicted) outer
               log-slope d&nbsp;log&nbsp;&sigma;<sub>los</sub>/d&nbsp;log&nbsp;R of the velocity-dispersion profile, each law run through the
-              same isotropic Jeans solver and mass model (definition added 2026-10-09; code
+              same isotropic Jeans solver and mass model (definition added 2026-10-09; code{' '}
               <code>explorer/findings/scripts/gc_slope_with_mond.py</code>). Quote residuals (density law at &#x03B3; = 0.489, knee 0.161: &minus;0.196 to &minus;0.199 &plusmn; 0.027 with the mass scale refitted under the law itself,
               &minus;0.211 on catalogue masses as in the Honest Assessment table; MOND+EFE &minus;0.093), not ratios. The registered &#x03B3; = 2 point is
               &minus;0.111 (marginal) under L2 and &minus;0.203 (excluded, narrowly) under L3 (2026-10-08, pre-registered).
@@ -435,7 +437,7 @@ export default function ForResearchers() {
           <em> demands</em> &mdash; has a clean answer: at the standard &Upsilon;, <strong>90% of the 153 discs require a
           coherence floor f&nbsp;&le;&nbsp;0.100, and all 153 require f&nbsp;&le;&nbsp;0.016.</strong> The framework&apos;s
           own floor is f&nbsp;=&nbsp;&Omega;<sub>m</sub>&nbsp;=&nbsp;0.315, and its archive&apos;s enumerated candidate
-          ratios stop at &Omega;<sub>b</sub>/&Omega;<sub>m</sub>&nbsp;=&nbsp;0.157 &mdash; while 1/&Omega;<sub>m</sub>
+          ratios stop at &Omega;<sub>b</sub>/&Omega;<sub>m</sub>&nbsp;=&nbsp;0.157 &mdash; while 1/&Omega;<sub>m</sub>{' '}
           itself is nowhere derived. <strong>There is no derivation route to a floor low enough</strong>, which closes a
           question this program self-seeded on 2026-09-08. Independent cross-check: the 77% of discs that need more
           boost than 1/&Omega;<sub>m</sub> supplies at some radius (field-equation route; TEST-10&apos;s 69% is a different measure, the outer-point dark-matter fraction, and Galaxy Rotation&apos;s ~42% counts RAR points, not discs) reproduces the 118/153 = 77.1% found by a separate 2026-07-30 route.
@@ -762,7 +764,7 @@ export default function ForResearchers() {
           }}>
             <strong style={{ color: '#f59e0b' }}>Transferable result (independent of Synchronism being correct):</strong>{' '}
             Any discrete absolute-time substrate without an added custodial boost-symmetry generates
-            dimension-4 Lorentz-violating SME coefficients c<sub>μν</sub>&nbsp;~&nbsp;α/π&nbsp;&asymp;&nbsp;2&times;10<sup>&#x2212;3</sup>
+            dimension-4 Lorentz-violating SME coefficients c<sub>μν</sub>&nbsp;~&nbsp;α/π&nbsp;&asymp;&nbsp;2&times;10<sup>&#x2212;3</sup>{' '}
             at one loop (Collins, Perez, Sudarsky, Urrutia &amp; Vucetich, <em>PRL</em> 93, 191301, 2004 &mdash;
             author list corrected 2026-07-09; see revision notes).
             Existing bounds reach 10<sup>&#x2212;18</sup>–10<sup>&#x2212;30</sup> — a 15–27 OOM fine-tuning gap.
@@ -814,7 +816,7 @@ export default function ForResearchers() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             A discrete substrate with absolute time picks out a preferred (CMB-rest) frame. Preferred-frame
-            physics shows up at <strong>dimension four</strong> — the renormalizable, <em>non-Planck-suppressed</em>
+            physics shows up at <strong>dimension four</strong> — the renormalizable, <em>non-Planck-suppressed</em>{' '}
             level — via two channels:
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', paddingLeft: '1.25rem', lineHeight: 1.7 }}>
@@ -893,7 +895,7 @@ export default function ForResearchers() {
             (2026-09-11):</strong> the local arm <em>illustrates</em> Bell&apos;s theorem and adds nothing to it. The two
             nonlocal constructions built (the grid, whose setting dependence is a relabeling, and the clock, which exceeds 2
             only by signaling) are <em>construction nulls</em>, facts about those constructions and not about the
-            substrate class. Hidden-communication substrates were not built and remain untested. Toner &amp; Bacon (PRL 91,
+            substrate class. Hidden-communication substrates were not built. The local constructions are excluded by data, not only by theorem: loophole-free experiments measure S = 2.42 &plusmn; 0.20 (Hensen et al. 2015, Nature 526, 682). And the hidden-communication class is constrained without being built: Bancal et al. 2012 (Nature Physics 8, 867) show that influences at any finite speed above c permit signalling, and Salart et al. 2008 bound the speed above 10<sup>4</sup>&nbsp;c in preferred frames where Earth moves slower than 10<sup>&minus;3</sup>&nbsp;c. The framework&apos;s nearest-neighbour update moves influence at most one cell per tick, so only a global, instantaneous update survives, which is Bohm-class (added 2026-11-20, researcher simulated-visitor persona; abstracts read). Toner &amp; Bacon (PRL 91,
             187904, 2003) reproduce singlet correlations from local variables plus one hidden bit per trial, with no
             observable signaling. Nothing here is a theorem about nonlocal substrates. The triptych A (real-local) = 2 &lt; B (Born-rule cos&sup2;
             projection) = 2&radic;2 &lt; C (PR-box) = 4 localizes the Tsirelson value as the fixed
@@ -907,7 +909,7 @@ export default function ForResearchers() {
             the worked lesson: &ldquo;our substrate is nonlocal by construction, so Bell doesn&apos;t
             apply&rdquo; is a recurring move in emergent-QM proposals, and this is a minimal executed
             counterexample — declaring the substrate nonlocal does not evade Bell, it chooses the nonlocal
-            horn, and the construction must then produce a non-relabelable, <em>conditional</em>
+            horn, and the construction must then produce a non-relabelable, <em>conditional</em>{' '}
             setting-dependence (as Toner&ndash;Bacon&apos;s hidden bit does) or stay at S &le; 2. Cite it for that lesson, not for the number. Full
             construction detail and the open Born-rule problem on{' '}
             <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>.
@@ -957,7 +959,7 @@ export default function ForResearchers() {
             above ~10<sup>&minus;2</sup> M<sub>&#x2609;</sub>/pc&sup3;. Refracted Gravity (Matsakos &amp; Diaferio 2016;
             Cesare et al. 2020) is the contrast case: its permittivity &#x03B5;(&#x03C1;) is the <em>same family</em> as this
             framework&apos;s C<sub>&#x03A9;</sub> (the floored x/(1+x) form is RG at Q = ½ exactly; the tanh-log compander matches it
-            only at γ = Q = ½ with the knee rescaled 2×; qualifier added 2026-09-16) but its knee is fitted <em>inside</em>
+            only at γ = Q = ½ with the knee rescaled 2×; qualifier added 2026-09-16) but its knee is fitted <em>inside</em>{' '}
             the sampled range, so its shape parameters are identifiable and were measured. Same equation, one identifiable
             and one not, decided entirely by where the knee was placed &mdash; which is the citable point.
           </p>
@@ -989,7 +991,7 @@ export default function ForResearchers() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.75rem' }}>
             <strong>Citable form:</strong> for any theory of the form g = g<sub>N</sub>/C(ρ) with a floored tanh-in-log-density
             switch (the same family as Refracted Gravity&apos;s permittivity, but <em>identical</em> to it only at γ = Q = ½ with the
-            knee rescaled 2×: below the knee the tanh-log form is linear in ρ at every γ, while RG goes as ρ<sup>2Q</sup>),
+            knee rescaled 2×: below the knee the tanh-log form is linear in ρ at every γ, while RG goes as ρ<sup>2Q</sup>),{' '}
             <em>evaluated under L2 dynamics (algebraic, or the field equation without striction), on each cluster in isolation, with no smoothing (D ≲ 10 pc), without potential escapers, and on a post-hoc ratio criterion with no σ</em>,
             the outer velocity-dispersion slopes of 42 Galactic globular clusters exclude a knee density
             <strong> ρ<sub>c</sub> ∈ 0.1–300 M<sub>☉</sub>/pc³ (6.8×10⁻²⁴ – 2×10⁻²⁰ g/cm³)</strong> at a switch sharpness
@@ -1082,7 +1084,7 @@ export default function ForResearchers() {
             <ValidationBadge status="audited-negative" />
           </div>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.35rem 0 0' }}>
-            Audited-Negative: executed 2026-09-23 (explorer; pre-registered at site commit <code>80b8c9c</code> before the script,
+            Audited-Negative: executed 2026-09-23 (explorer; pre-registered at site commit <code>80b8c9c</code> before the script,{' '}
             <code>density_keyed_gdot_solar_motion.py</code>). The bound does not depend on the framework. It lived only inside the{' '}
             <Link href="/tier-1-existing#TEST-02" style={{ color: 'var(--color-accent-blue)' }}>TEST-02 card</Link> until a researcher
             simulated-visitor persona asked (2026-10-27) why the cleanest framework-independent result on the site was not on this list.
@@ -1106,10 +1108,17 @@ export default function ForResearchers() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>What it kills.</strong> 68 of 74 density-keyed grid laws at &#x2113; = 1 pc (62 at 10 pc), including every TEST-02
-            &ldquo;Newtonian-null&rdquo; window and both Refracted Gravity calibrations (the pointwise, non-covariant reading). The six
+            &ldquo;Newtonian-null&rdquo; window, and an algebraic, pc-smoothed G<sub>eff</sub> = G&middot;f(&rho;<sub>s</sub>) evaluated at both Refracted Gravity
+            calibrations&apos; knee values. <strong>Refracted Gravity as published is not tested by this item:</strong> its &epsilon;(&rho;) is read pointwise and sits
+            inside the divergence, and read pointwise at the Earth&ndash;Moon system it keys on the interplanetary medium, not on the stellar neighbourhood. The pointwise
+            check on file is a different one: the Sun&apos;s GM inferred from Earth and from Saturn, under &nabla;&middot;[&epsilon;&nabla;&Phi;] = 4&pi;G&rho; in the
+            solar wind (2026-09-15, under one in-repo reading of RG&apos;s Eq. 4.1, against a deliberately loose 10<sup>&minus;6</sup>), which RG passes only for Q &#x2272; 3.7&times;10<sup>&minus;7</sup>.
+            An LLR computation at the interplanetary density has not been done. (Corrected 2026-11-20: until then this line said LLR kills &ldquo;both Refracted Gravity
+            calibrations (the pointwise, non-covariant reading)&rdquo;; a researcher simulated-visitor persona pointed out that the computation smooths over 1&ndash;10 pc.) The six
             survivors are &#x03B3; = 2 laws with &rho;<sub>c</sub> &le; 10<sup>&minus;3</sup> M<sub>&#x2609;</sub>/pc&sup3;, Newtonian to
-            10<sup>&minus;8</sup> at the Sun. Even the floored published knee (&rho;<sub>crit</sub> = 0.029&middot;V&sup2; &asymp; 650
-            M<sub>&#x2609;</sub>/pc&sup3;, &#x03B3; = 2) fails: d ln C<sub>f</sub>/d ln &rho; = (1&minus;&Omega;<sub>m</sub>)&middot;&#x03B3;x/C<sub>f</sub>
+            10<sup>&minus;8</sup> at the Sun. Even the floored units-hybrid knee (&rho;<sub>crit</sub> = 0.029&middot;V&sup2; &asymp; 650
+            M<sub>&#x2609;</sub>/pc&sup3;, &#x03B3; = 2; a units slip no archive fit uses, labelled &ldquo;published&rdquo; here until 2026-11-20) fails, and the archive&apos;s
+            own 0.028&middot;V<sup>0.5</sup> (x &asymp; 0.2 at the Sun, d ln C<sub>f</sub>/d ln &rho; &asymp; 0.36 at &#x03B3; = 2) fails by far more. At the hybrid: d ln C<sub>f</sub>/d ln &rho; = (1&minus;&Omega;<sub>m</sub>)&middot;&#x03B3;x/C<sub>f</sub>
             &asymp; 7&times;10<sup>&minus;4</sup> at the solar x &asymp; 1.5&times;10<sup>&minus;4</sup>, about five orders above the 2&sigma; bound at 1 pc and two above it at 10 pc.
             Under the action-derived (L3) dynamics the field equation is unchanged, so the bound carries over exactly (explorer 2026-10-19).
           </p>
@@ -1320,7 +1329,7 @@ export default function ForResearchers() {
               desk counterfactual, not a control arm. The 07-18 &ldquo;the one registered experiment that would break the
               single-arm degeneracy&rdquo;, because cross-vendor addresses corpus monoculture, not H1 vs H2. The 09-10 &ldquo;the
               positive control has never been run&rdquo;, because the known-good arm exists (the canonical six) but cannot
-              separate H1 from H2. Page heading until 2026-09-14: &ldquo;2. The A2ACW detector is <em>underpowered</em>
+              separate H1 from H2. Page heading until 2026-09-14: &ldquo;2. The A2ACW detector is <em>underpowered</em>{' '}
               (Youden&apos;s J = 0, CI [&minus;0.46, +0.46], n = 6) &mdash; an open question, not a citable null,&rdquo; badge
               &ldquo;Untested &mdash; Underpowered &mdash; No Positive Control Run.&rdquo; (Its interval has since been corrected
               to [&minus;0.71, +0.46].)
@@ -1364,7 +1373,7 @@ export default function ForResearchers() {
               cuts: <strong>under H2 the result is more interesting, not less</strong> &mdash; a measured
               prior-art-illusion rate for adversarial LLM audit would be a finding about AI-assisted research
               methodology, independent of whether any physics here holds, and it is plausibly the last genuinely novel
-              result this project can produce. The badge above is changed from <em>audited-negative / Registered Null</em>
+              result this project can produce. The badge above is changed from <em>audited-negative / Registered Null</em>{' '}
               to <em>untested / Underpowered</em> because the honest state is &ldquo;we do not know what this protocol
               measures,&rdquo; not &ldquo;we measured a null.&rdquo; The cross-vendor control that was listed as pending
               does not address this; a positive control does. Routed to the project lead in{' '}
@@ -1393,7 +1402,7 @@ export default function ForResearchers() {
               (1) <em>The positive class is &ldquo;is a reparametrization.&rdquo;</em> Under the opposite
               convention the sensitivity and specificity labels invert; both are defensible, and J = 0
               either way, but the convention was never stated and two expert readers have now read the
-              numbers as swapped. (2) <em>6/6 = 1.0 is better described as a false <strong>discovery</strong>
+              numbers as swapped. (2) <em>6/6 = 1.0 is better described as a false <strong>discovery</strong>{' '}
               rate</em> — a true false-positive rate needs a true-negative count this positive-only design
               does not have, and J = 0 here is a degeneracy of the design rather than a measurement.
               (3) <em>The program-level null is itself underpowered and now says so.</em> On n = 6 with 0

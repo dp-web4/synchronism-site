@@ -1,0 +1,14 @@
+shapes kept: 38 (Sigma_b(<1.1 kpc) 40-56); rho(1.1 kpc)/rho_0 range 0.0199-0.0473; Sigma_b(<1.1) 40.0-47.8
+P4 identity: inferred midplane density = rho_0 for every law (amplitude cancels): PASS
+
+law                                         C(rho0)      ratio range     Sigma_dyn(1.1)    z vs 68+-4 (min..max)
+archive knee 0.028*V^0.5, gamma=2            0.3526   18.53-  43.88      886-    1783       +9.5 ..  +11.0
+archive knee 0.028*V^0.5, gamma=0.489        0.0898   19.30-  45.72      924-    1858       +9.5 ..  +11.1
+Jeans A=4.6e-5*V^2, gamma=2                  0.0739   20.74-  49.25      992-    2001       +9.6 ..  +11.1
+units hybrid 0.029*V^2, gamma=2              0.0001   21.15-  50.24     1012-    2042       +9.6 ..  +11.1
+global knee fit 4.4e-6, gamma=0.046          0.4247    1.40-   1.59       61-      67       -1.0 ..   -0.1
+archive knee, gamma=2, affine Om floor       0.5565    1.70-   1.74       69-      81       +0.2 ..   +1.7
+archive knee, g=0.489, affine Om floor       0.3765    1.18-   1.19       48-      57       -3.3 ..   -1.8
+CONTROL C = const                            0.4000    1.00-   1.00       40-      48       -4.9 ..   -3.6
+amplitude 1/C(rho_s) at the Sun, archive knee 0.028*V^0.5, gamma=2: 2.84  (cancels against G_lab)
+amplitude 1/C(rho_s) at the Sun, archive knee 0.028*V^0.5, gamma=0.489: 11.13  (cancels against G_lab)

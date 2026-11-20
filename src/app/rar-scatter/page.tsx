@@ -81,7 +81,7 @@ export default function RarScatter() {
           the headline N with the optimal-cut statistic was a sample splice, corrected 2026-07-10
           (2026-10-24: the number is not a BTFR scatter: it is independent of V (shuffling V across galaxies gives 0.0870 vs 0.0864; explorer 2026-10-23), the residual of an in-sample photometric mass model, so it has no CDM verdict; see{' '}
           <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link>).
-          The p = 5&times;10<sup>&minus;6</sup>, R&sup2; = 0.14 environment-density statistics below are <strong>not</strong>
+          The p = 5&times;10<sup>&minus;6</sup>, R&sup2; = 0.14 environment-density statistics below are <strong>not</strong>{' '}
           from this sample: they trace to a SPARC-scale (N&asymp;171) Hubble-type/morphology regression
           (archive Session 377), mislabeled as this test&apos;s result since 2026-04. The result:
         </p>

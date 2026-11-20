@@ -25,7 +25,7 @@ const steps = [
   },
   {
     title: 'The γ Parameter — the original idea, and what happened to it',
-    content: `C is the dial. γ is a setting on it: how early the dial starts to turn as density rises. It was meant to set how sharply the dial turns, but no γ makes this curve sharp. The original idea was γ = 2/√N_corr, where N_corr is how many
+    content: `C is the dial. γ is a setting on it: how wide the dial's turn is, from a slow fade over many powers of ten (small γ) down to a floor (large γ). It was meant to make the turn sharp, and no γ does. The original idea was γ = 2/√N_corr, where N_corr is how many
     particles move together as a unit: one electron alone gives γ = 2, a crystal of 10²⁴ atoms gives γ ≈ 10⁻¹².
     That formula did not survive testing. Where it made a checkable prediction, the sign came out backwards
     (predicted correlation +0.55, measured −0.55). In plain words: the formula said galaxies with fewer stars moving
@@ -282,7 +282,7 @@ export default function FirstEncounter() {
       </div>
       <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
         <Link href="/two-reframes" style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
-          Prefer analogies? Try Two Reframes (side trip; some math and physics names you can skip) &rarr;
+          Prefer analogies? Try Two Reframes (side trip: analogies, with a heavy physics section in the middle marked as safe to skip) &rarr;
         </Link>
       </div>
 

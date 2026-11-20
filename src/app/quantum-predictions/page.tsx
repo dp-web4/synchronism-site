@@ -219,7 +219,7 @@ export default function QuantumPredictions() {
             <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem' }}>
               Test whether qubit T<sub>2</sub> coherence times across different quantum computing
               platforms correlate with N<sub>corr</sub>-based predictions. Synchronism predicts
-              that T<sub>2</sub> should scale inversely with the rate of environmental N<sub>corr</sub>
+              that T<sub>2</sub> should scale inversely with the rate of environmental N<sub>corr</sub>{' '}
               coupling.
             </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>

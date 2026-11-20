@@ -12,7 +12,7 @@ export default function WideBinaries() {
     <>
       <Breadcrumbs currentPath="/wide-binaries" />
       <h1>Wide Binaries</h1>
-      <ValidationBadge status="untested" label="Self-Eliminating-or-Tie — density branch identically null in the ratio but not in absolute dynamics (excluded by the Oort limit at the published knee, by SPARC and by LLR), acceleration branch already failed at the SPARC γ via TEST-25; DR3 dispute unresolved" />
+      <ValidationBadge status="untested" label="Self-Eliminating-or-Tie — density branch identically null in the ratio but not in absolute dynamics (excluded at the archive knee by the vertical Oort/K_z gradient, and by SPARC and LLR), acceleration branch already failed at the SPARC γ via TEST-25; DR3 dispute unresolved" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <p>
@@ -26,7 +26,7 @@ export default function WideBinaries() {
         <h2>Why Wide Binaries?</h2>
         <p>
           At separations greater than ~10<sup>4</sup> AU (roughly 0.05 parsecs), the gravitational
-          acceleration between two stars drops below a&#x2080; &#x2248; 1.2 &times; 10<sup>&minus;10</sup>
+          acceleration between two stars drops below a&#x2080; &#x2248; 1.2 &times; 10<sup>&minus;10</sup>{' '}
           m/s&sup2;. In Newtonian gravity, nothing special happens. In MOND, orbital velocities should
           be higher than Newtonian predictions. The anomaly &mdash; if it exists &mdash; should be
           visible in the orbital dynamics.
@@ -67,13 +67,20 @@ export default function WideBinaries() {
             Here gravity is boosted by 1/C(&#x03C1;), where &#x03C1; is the local density. The boost does not depend on the
             binary&apos;s internal acceleration at all, so wide binaries are not special: whatever boost holds at the local
             density applies to every orbit there. Its size depends on the knee &#x03C1;<sub>crit</sub>. At the solar-neighbourhood
-            density &#x03C1; &asymp; 0.09&nbsp;M&#x2609;/pc&sup3; the velocity excess over Newton is as below. These are <em>absolute</em> boosts at the Sun, which the
-            Oort limit can see; a wide-binary ratio cannot, because the same boost is absorbed into masses calibrated on close binaries (see the red box below):
+            density &#x03C1; &asymp; 0.09&nbsp;M&#x2609;/pc&sup3; the velocity excess over Newton is as below. These are <em>absolute</em> boosts at the Sun, and no
+            local measurement sees an absolute boost: a wide-binary ratio absorbs it into masses calibrated on close binaries (see the red box below), and laboratory G is
+            measured at the same smoothed density, so G<sub>lab</sub> already equals G/C(&#x03C1;<sub>s</sub>). What existing data see is how the boost changes with height (Oort/K<sub>z</sub> data)
+            and in time (lunar laser ranging):
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <li><strong>The archive&apos;s own calibration</strong> &#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup> &asymp; 0.42&nbsp;M&#x2609;/pc&sup3;
               (Sessions 52, 62, 64, 65; Milky Way): <strong>+64%</strong> (&#x03B3; = 2) to <strong>+223%</strong> (&#x03B3; = 0.489), a factor 2.7 to 10.5 in g with the unfloored C; with the &Omega;<sub>m</sub> floor (C<sub>f</sub> = &Omega;<sub>m</sub> + (1&minus;&Omega;<sub>m</sub>)C, the form the plotter draws) it is +33% to +62%, a factor 1.8 to 2.6 in g.
-              Still excluded by the Oort limit, which leaves room for a few tens of percent at most. (Corrected 2026-11-13. This line used to
+              Unfloored, it is excluded through its change with height: the boost grows 18&ndash;44&times; from the midplane to 1.1&nbsp;kpc, so the predicted
+              &Sigma;(|z| &lt; 1.1&nbsp;kpc) is &asymp; 900&ndash;1,800&nbsp;M&#x2609;/pc&sup2; against Bovy &amp; Rix&apos;s 68 &plusmn; 4 (&asymp; 10&sigma;). With the &Omega;<sub>m</sub> floor
+              it passes at &#x03B3; = 2 and falls 2&ndash;3&sigma; short at &#x03B3; = 0.489 (estimate, maintainer 2026-11-20,{' '}
+              <code>maintainer/scripts/oort_vertical_gradient_density_keyed.py</code>; 3 of 4 predictions written before the run held). Until 2026-11-20 this line said the Oort limit
+              excludes the amplitude itself, &ldquo;leaving room for a few tens of percent at most&rdquo;; a researcher simulated-visitor persona pointed out that laboratory G carries the same
+              amplitude, so it cancels. (Corrected 2026-11-13. This line used to
               quote &ldquo;0.029&middot;V&sup2; = 1.5&times;10&sup3;, +1.8&times;10&#x2074;%, a factor ~3.5&times;10&#x2074; in g&rdquo; as the published calibration.
               That form puts the V<sup>0.5</sup> coefficient on a V&sup2; law, a units slip the explorer traced on 2026-08-27, and no archive fit uses it. Explorer
               2026-11-12, <code>exclusion_table_by_equation.py</code>.) (Planetary
@@ -151,8 +158,9 @@ export default function WideBinaries() {
           No wide-binary sample is needed for that. At the other knees the site uses, the boost at the Sun is
           9&ndash;116%, but <strong>a wide-binary test does not see it</strong>: the boost is the same for wide and close pairs in one
           neighbourhood, and stellar masses come from relations calibrated on close-binary orbits there, so the boost is absorbed into the
-          masses and the wide-to-Newton ratio is 1 (TEST-02&apos;s &#x03B3;<sub>g</sub> &equiv; 1). What sees an absolute boost at the Sun is the
-          Oort limit, and its change in time is what lunar laser ranging sees (the box above). (Corrected 2026-11-14.
+          masses and the wide-to-Newton ratio is 1 (TEST-02&apos;s &#x03B3;<sub>g</sub> &equiv; 1). No local measurement sees the absolute boost, because
+          laboratory G carries it too. Its change with height is what the vertical Oort (K<sub>z</sub>) data see, and its change in time is what lunar laser ranging sees (the box above;
+          height leg added 2026-11-20). (Corrected 2026-11-14.
           This paragraph previously said &ldquo;Gaia can see that; a confirmed Newtonian null would exclude those knees too&rdquo;, which contradicted TEST-02; a researcher
           simulated-visitor persona put the two side by side.) So no wide-binary outcome selects Synchronism: a MOND-scale anomaly favours MOND and gives this framework no support over
           MOND (its acceleration-keyed version is a MOND interpolating function, and the &#x03B3; an anomaly needs is Cassini-excluded), and a Newtonian null favours Newton.

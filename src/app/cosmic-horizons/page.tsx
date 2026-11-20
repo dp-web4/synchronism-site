@@ -78,7 +78,7 @@ export default function CosmicHorizons() {
         </ul>
         <p>
           All 32 internal consistency checks passed: the framework does not contradict itself or
-          the validated parts of Synchronism. But internal consistency is the <em>minimum</em>
+          the validated parts of Synchronism. But internal consistency is the <em>minimum</em>{' '}
           bar, not evidence.
         </p>
 

@@ -194,7 +194,7 @@ export default function CdmDiscrimination() {
             What the record says about each:
           </p>
           <ul style={{ margin: 0, paddingLeft: '1.2rem', lineHeight: 1.6 }}>
-            <li><strong>Cosmology (CMB, growth):</strong> the dark-energy sector is calibrated with C&#x2080; = &Omega;<sub>m</sub>, and that &Omega;<sub>m</sub>
+            <li><strong>Cosmology (CMB, growth):</strong> the dark-energy sector is calibrated with C&#x2080; = &Omega;<sub>m</sub>, and that &Omega;<sub>m</sub>{' '}
               contains cold dark matter. Run with baryons only, no &#x03B3; gives both an accelerating universe and the dark-to-baryon ratio at
               recombination (2026-09-22). So at z &asymp; 1100 the framework assumes CDM.</li>
             <li><strong>Clusters:</strong> at r<sub>500</sub> of a Coma-class cluster the capped boost falls short by &times;1.7&ndash;3.5, about as short as

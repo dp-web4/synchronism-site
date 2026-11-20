@@ -38,7 +38,7 @@ export default function ScaleInvariance() {
           &#x03B3; = 0.49), so no single switch acts across 80 decades. Every scale needs its own &#x03C1;<sub>crit</sub>, and
           then the equation is a template re-fitted per scale, not one law. Separately, &#x03B3; is not one number either:
           galaxies select 0.49, the registration said 2, the BCS ladder puts superconductors near 6&times;10<sup>&minus;4</sup>,
-          each from an N<sub>corr</sub> defined a different way. What the page below still shows is the <em>notation</em>
+          each from an N<sub>corr</sub> defined a different way. What the page below still shows is the <em>notation</em>{' '}
           written at each scale, which is real, and what it does not show is a result.
         </p>
 

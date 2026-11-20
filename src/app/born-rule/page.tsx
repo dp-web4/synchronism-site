@@ -106,7 +106,7 @@ export default function BornRule() {
           That is Gleason&apos;s actual premise, and it is the one the framework&apos;s own CRT scanning model
           runs into from the other side: a non-contextual value-assignment is what Kochen&ndash;Specker excludes
           in dim &#x2265; 3 (0 of 512 assignments satisfy the Peres&ndash;Mermin square in the archive&apos;s own
-          construction). An argument for non-contextual <em>probabilities</em> without non-contextual
+          construction). An argument for non-contextual <em>probabilities</em> without non-contextual{' '}
           <em>values</em> would be a contribution. None exists here yet.
         </p>
         <details style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginBottom: '1.5rem' }}>

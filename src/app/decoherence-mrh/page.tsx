@@ -30,7 +30,7 @@ export default function DecoherenceMRH() {
         </p>
         <p>
           What decoherence theory does <em>not</em> provide is a sharp boundary. It says
-          &ldquo;coherence decays exponentially,&rdquo; but doesn&apos;t say <em>where</em>
+          &ldquo;coherence decays exponentially,&rdquo; but doesn&apos;t say <em>where</em>{' '}
           the quantum-to-classical transition occurs. The MRH fills this gap.
         </p>
 
@@ -75,7 +75,7 @@ export default function DecoherenceMRH() {
 
         <h2>Decoherence Timescales</h2>
         <p>
-          The timescale on which decoherence occurs depends on how quickly N<sub>corr</sub>
+          The timescale on which decoherence occurs depends on how quickly N<sub>corr</sub>{' '}
           grows. Synchronism predicts that the decoherence time &#x03C4;<sub>D</sub> should
           scale as:
         </p>
@@ -115,7 +115,7 @@ export default function DecoherenceMRH() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           Synchronism&apos;s reframing of decoherence through the MRH is a conceptual contribution,
           not a calculational one. The decoherence timescales it predicts are the same as standard
-          theory (because the underlying physics is the same). What it adds is a <em>principle</em>
+          theory (because the underlying physics is the same). What it adds is a <em>principle</em>{' '}
           for where to draw the line &mdash; the MRH as a natural boundary rather than an
           arbitrary cutoff.
         </p>

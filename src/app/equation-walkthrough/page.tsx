@@ -205,7 +205,7 @@ export default function EquationWalkthrough() {
           <p style={{ margin: 0, lineHeight: 1.6 }}>
             Two independent failures in the formula&apos;s motivation: <strong>(1) Sign inverted.</strong>{' '}
             1/√N is a fluctuation <em>width</em> that shrinks as N grows (sharper collective behavior) —
-            but sitting in the <em>rate</em> slot of tanh, larger N<sub>corr</sub> gives a
+            but sitting in the <em>rate</em> slot of tanh, larger N<sub>corr</sub> gives a{' '}
             <em>flatter</em> curve. A BCS superconductor (N<sub>corr</sub> ≈ 10<sup>7</sup>, among the
             sharpest real transitions) gets γ ≈ 6×10<sup>&#x2212;4</sup>, the flattest possible curve.
             An ideal gas (N<sub>corr</sub> = 1, no real transition) gets γ = 2, the sharpest.

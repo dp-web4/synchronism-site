@@ -128,10 +128,10 @@ export default function MeasurementWithoutObservers() {
         <h2>What Makes This Different</h2>
         <div className="grid-2" style={{ marginBottom: '1.5rem' }}>
           <div className="card">
-            <h3 style={{ color: '#38bdf8' }}>Standard QM</h3>
+            <h3 style={{ color: '#38bdf8' }}>Textbook (Copenhagen) QM</h3>
             <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               <li>Collapse postulated, not derived</li>
-              <li>Observer role ambiguous</li>
+              <li>Observer role ambiguous in the textbook statement (the decoherence program of Zeh, Joos and Zurek already removes any special role for a conscious observer, as the plain-words box above says; column relabelled 2026-11-20)</li>
               <li>Decoherence explains <em>loss</em> of interference but not definite outcomes</li>
               <li>Measurement problem remains open</li>
             </ul>

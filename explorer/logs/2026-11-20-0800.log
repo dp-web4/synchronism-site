@@ -1,0 +1,28 @@
+Starting Synchronism Explorer Session at Fri Nov 20 08:00:01 PST 2026
+The topic's main question rests on a misreading. The "pointwise" Refracted Gravity (RG) it asks about is a reading RG's own authors rule out. Matsakos & Diaferio 2016 (§2.2) average the density over a smoothing length D, "tens of AU or larger", and leave D free; Cesare's 2024 review never mentions it. So the 09-15 Earth–Saturn exclusion and the site's "RG as published is not tested" line both treat RG as something it isn't. I worked the question as "which D survives local tests?" instead.
+
+Predictions were registered before the script existed. Of six, three held, one held in part and two failed. The worst miss: I predicted one calibration ("DMS joint") would pass lunar laser ranging (LLR) at D = 0.5 pc and at D ≥ 30 pc. It is excluded at 0.5 pc (1.1×), and at ≥ 30 pc whether it passes depends on the local density assumed.
+
+**Results:**
+- **The pointwise reading still fails, by about 10⁵.** Over normal solar-wind conditions the gravity modifier at the Moon moves by 7×10⁻⁶ to 6×10⁻², and LLR is sensitive to about 10⁻¹¹.
+- **Where RG's published galaxy fits apply (D ≳ 2 pc), LLR excludes it.** Above about 1 pc the modifier is the same everywhere in the solar system, so the "pc-smoothed algebraic" version the site already tests is RG as published. At D = 0.5–10 pc it is excluded at all three published calibrations, under all three in-repo readings of the equation, by 30× to 10⁷×.
+- **Above 30 pc, one calibration survives.** DMS joint passes LLR if the local smoothed density is ≳ 0.06 M☉/pc³, and it matches the local vertical-force measurement (68 ± 4 M☉/pc² at 1.1 kpc) within 1.4σ. It already fails the dwarf-galaxy test on file, so that earlier verdict is what now decides RG.
+- **The only D range passing every local test is sub-parsec:** about 0.03–0.3 pc (or 10 AU–0.025 pc under Chae's reading of the wide-binary data). There, stars sit in bubbles of normal gravity surrounded by interstellar gas, and the smooth-density galaxy fits don't describe that. So this range is **untested**, not surviving.
+- **A new wide-binary signature for small D:** a boost of 1.05–1.38 (DMS calibrations) that switches on as a step above a set separation and doesn't depend on the Galaxy's field. MOND's boost instead depends on acceleration. Data release 4 could tell these apart.
+- **Two site lines say "pointwise" is RG as published:** `src/app/for-researchers/page.tsx:365` and `:1112–1113`. Replacement wording is in the finding.
+
+**Not done:** the topic's other question (the framework's own density-keyed laws against the vertical force profile) is still queued. I added the McKee+2015 inputs to the topic so that run starts from published numbers, not recalled ones.
+
+Everything is committed and pushed (pre-registration `4167dd5`, results `a14e45b`):
+- the pre-registration: `explorer/scripts/rg_smoothing_length_window_PREREG.md`
+- the script and output: `explorer/scripts/rg_smoothing_length_window.py` (+ `_output.txt`)
+- the finding: `explorer/findings/rg-as-published-has-a-smoothing-length-where-its-galaxy-fits-apply-llr-excludes-it-the-surviving-window-is-sub-parsec.md`
+- the session log: `explorer/logs/2026-11-20.md`
+
+**So what?** The result shifted from "a reading nobody proposed fails" to "RG's free smoothing length is squeezed from both sides, and what's left lies outside where its fits were done". A possibly larger, untested question: does any density-keyed change to G need sub-parsec smoothing to pass local tests? If so, that would cover this framework's own law as well as RG.
+
+Sources:
+- [Matsakos & Diaferio 2016, arXiv:1603.04943](https://arxiv.org/pdf/1603.04943)
+- [Cesare 2024 RG review, arXiv:2404.06538](https://www.arxiv.org/pdf/2404.06538)
+- [McKee, Parravano & Hollenbach 2015, arXiv:1509.05334](https://arxiv.org/abs/1509.05334)
+- [Bovy & Rix 2013, arXiv:1309.0809](https://arxiv.org/abs/1309.0809)

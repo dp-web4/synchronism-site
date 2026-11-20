@@ -1,3 +1,42 @@
 Starting Synchronism Maintainer Session at Fri Nov 20 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+Everything is committed and pushed: site `21b842f`, `baadbca` and `de24077`; Synchronism `3ad8c74b`. The build passes, the lint has 414 rules and finds nothing on the tree, and all 209 page anchors resolve. I didn't look at the pages in a browser.
+
+**Research-level findings (written up as a proposal before fixing anything):**
+- **Bell is now a data result, not just a theorem.** The site booked the quantum leg as a "construction check" plus "untested". But the 2015 loophole-free experiment measured S = 2.42 ± 0.20 (Hensen et al.), so any local substrate capped at S ≤ 2 is excluded by data. The hidden-communication escape is also constrained:
+  - Bancal et al. 2012 rule out hidden influences at any finite speed.
+  - Salart et al. 2008 put any such influence above 10⁴ c.
+  - FUNDAMENTALS' own update rule is nearest-neighbour ("all cells… evaluate neighbor tensions"), so the substrate as defined is local and excluded.
+  - The only escape left is a global, instantaneous update, which is Bohmian mechanics with a preferred time (an existing theory). I checked all five papers' abstracts before quoting them.
+- **The Oort argument had the wrong mechanism.** The researcher persona was right: the boost's absolute size cancels, because lab G is measured at the same density. I committed predictions first and then ran the right statistic, the boost's change with height. 3 of 4 predictions held. Against Bovy & Rix's 68 ± 4 M☉/pc² at 1.1 kpc:
+
+| Version of the density law | Predicted (M☉/pc²) | Verdict |
+|---|---|---|
+| Archive's own knee, no floor | 890–1,860 | excluded, about 10σ |
+| With the Ω_m floor, γ = 2 | 69–81 | passes |
+| With the Ω_m floor, γ = 0.489 | 48–57 | 2–3σ short |
+| One free global knee (the +2843 fit) | 61–67 | passes |
+
+  The γ = 0.489 floored result is the prediction that failed (I expected it to come out high). The site now says "Oort-excluded" only where it holds.
+
+**Site fixes (`baadbca`):**
+- **Physics error:** the quadrature reading bounds the added velocity, not the boost ratio, so the 3.17 ceiling exists only in the floored-division reading. Fixed on two pages.
+- **Stale 0.029·V² numbers:** removed from about 8 places, including the "+1.000000" non-identifiability verdict, which was only ever measured at that units slip. The plotter now states its 300 pc disc-thickness assumption.
+- **Scope fixes:**
+  - The lunar-laser-ranging item no longer claims to exclude Refracted Gravity as published.
+  - The Honest Assessment box's "4×" (one extreme galaxy at face value) now reads "roughly twice", after measurement error and checking 153 galaxies.
+  - The dwarf-galaxy exclusion now rests on Draco alone, because Crater II is observed to be disrupting (explorer's finding).
+- **TEST-04a** showed three different labels on three pages (including "Kill Triggered"). It now has one badge and one sentence explaining its three σ figures, from a single source.
+- **Beginner pages:** a "stop here" line under the landing buttons; σ explained in the non-physicist box; γ described one way ("how wide the switch is") on 9 pages.
+- **Missing spaces:** visitors reported two text-rendering bugs (a missing space next to italics). A search found 102 of the same kind across 39 files; all fixed and confirmed in the built pages.
+
+**Needs your call:**
+1. Which update rule is the framework's? Nearest-neighbour is excluded by the Bell experiments; a global update is Bohm. Either way SPINE needs one sentence.
+2. Should the Bell row be relabelled "excluded on data" rather than "construction check"? The count stays 6 either way.
+3. Should the landing page lead with the per-sector table instead of "6 refutations (4–8)"?
+4. Two defaults are waiting: Gaia DR4 (2 December, 12 days) and the post-cutoff A2ACW run (9 December).
+
+**For the explorer:** one new topic (a proper vertical-force run, and Refracted Gravity read pointwise against lunar laser ranging). Three existing topics got addenda; Toner–Bacon is raised to MEDIUM priority.
+
+One process note: I chained an `rm` into a compound command, and the safety rule correctly refused it. I re-ran the steps separately.

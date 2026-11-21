@@ -1,0 +1,28 @@
+Starting Synchronism Explorer Session at Sat Nov 21 08:00:01 PST 2026
+I worked the Bell + Lorentz "pincer" topic. The maintainer's "no" survives for Synchronism's own substrate, but the general dichotomy behind it is wrong, and the real requirement is narrower.
+
+**What I found**
+- **A lattice can have a preferred frame and still not leak it.** I ran a one-loop lattice calculation: a scalar and a fermion, both with speed of light exactly 1 before loops.
+  - When the lattice treats time and space the same way (ξ = 1), the loop changes the scalar's speed by zero, to 10⁻¹³.
+  - When time is discretised differently from space, the speed shifts by a finite amount that does not shrink as the grid gets finer: −0.273 at ξ = 2 and +2.46 at ξ = ½, in units of y²/16π². For an electromagnetic-strength coupling that is about 10⁻⁴ to 10⁻³, against experimental bounds of 10⁻¹⁸ to 10⁻³⁰.
+  - So the maintainer's "the discreteness that avoids Lorentz violation is the discreteness that loses the Bell escape" is false as stated.
+- **That protection isn't available to a substrate that ticks in real time.** It only exists when time and space are treated as equivalent in the imaginary-time (path-integral) formulation; real-time ticks distinguish them. For fields like the photon it also needs gauge invariance. Collins et al. explicitly restrict their argument to real time and say no such protecting symmetry is known there.
+- **Bell's own 1986 lattice model is a counter-example.** It has a global update in a preferred frame that Bell calls "experimentally indistinguishable". It hides the frame by using two layers: the frame lives in the particle layer, and the wavefunction layer's loops don't see it.
+- **Proposed replacement stake:** every known way to hide a frame keeps it out of the loops that set particle speeds. Synchronism's founding document defines matter as the recurring pattern of the field that ticks, which puts the frame exactly in those loops. Passing both Bell and Lorentz tests would mean giving up that identity, or tuning every particle's speed to 1 part in 10¹⁸–10³⁰.
+- **"One Bell escape" should be three:** a preferred-frame update, retrocausal models, and superdeterminism. Superdeterminism works with a nearest-neighbour rule and isn't excluded by experiment, but it does nothing for the Lorentz half.
+
+**Pre-registration results (committed before computing)**
+- P1 (zero shift on the symmetric lattice) held.
+- P3 failed as registered: I predicted the wrong extrapolation form. I re-established that the effect doesn't shrink with a finer grid after the fact, by computing the zero-mass case directly.
+- P5 failed on my first zero-mass grid: unequal momentum spacing in time and space faked an anisotropy. Matching the spacing fixed it.
+
+**Weakest link:** the claim that no local real-time update rule can reproduce the symmetric-lattice cancellation is my own argument, not something I found in the literature. The Groot Nibbelink & Pospelov 2005 reference is still unverified.
+
+**Citation fixes found by retrieval:** the co-author of Belenchia et al. is Gambassi, not Gambini. Bell's Phys. Rep. 137 article is titled "Quantum field theory without observers". The finding includes suggested wording for the landing page's `#bell-and-clock` row and the /for-researchers page.
+
+The topic is archived, a lesson about grid spacing is saved to memory, and everything is pushed as `538fa9a`. I did not act on the pending governance review request from kimi-code; it isn't part of this task.
+
+Files are in `explorer/findings/`:
+- the-frame-must-live-where-the-loops-cannot-see-it-single-layer-tick-vs-two-layers.md
+- PREREG-bell-liv-pincer-hypercubic-control-20261121.md
+- scripts/collins_on_a_lattice_hypercubic_control.py (plus companion scripts and JSON outputs)

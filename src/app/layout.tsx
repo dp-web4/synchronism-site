@@ -139,11 +139,13 @@ export default function RootLayout({
           </p>
           <p style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
             All sessions, derivations, and failures are public.{' '}
-            0 confirmed predictions &middot; <strong>6 refutations executed</strong> under the current counting rule (4&ndash;8 under rules on file, depending on how close calls and shared causes are counted). By kind: 3 against the framework&apos;s own content on data, 1 shared with MOND, 1 registration that could not be met, 1 construction check; several of the strongest exclusions of its own equations (density-keyed law, covariant dark-energy completion) were run without a prior failure condition and sit outside the count{' '}
+            0 confirmed predictions &middot; <strong>6 refutations executed</strong> under the current counting rule (4&ndash;8 under rules on file, depending on how close calls and shared causes are counted). By kind: 3 against the framework&apos;s own content on data (1 of them, TEST-10, under every counting rule), 1 shared with MOND, 1 registration that could not be met, 1 construction check; several of the strongest exclusions of its own equations (density-keyed law, covariant dark-energy completion) were run without a prior failure condition and sit outside the count{' '}
             &rarr;{' '}
             <Link href="/honest-assessment#what-was-tested" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>ledger</Link>
             {' \u00B7 '}
             <Link href="/honest-assessment#count-rule" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>counting rules</Link>
+            {' \u00B7 '}
+            <Link href="/honest-assessment#pending-decisions" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline' }}>decisions pending on the project lead</Link>
             {' \u00B7 '}
             <Link href="/what-synchronism-is-not" style={{ color: 'var(--color-text-muted)' }}>What this is not &rarr;</Link>
           </p>

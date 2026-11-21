@@ -117,7 +117,7 @@ export default function LearningPaths() {
         <Link href="/compression-action" style={{ color: 'var(--color-accent-blue)' }}>Compression Action</Link> and{' '}
         <Link href="/cdm-discrimination" style={{ color: 'var(--color-accent-blue)' }}>CDM Discrimination</Link> &mdash;
         and the topic tracks reach 14 the difficulty paths don&apos;t. <strong>Advanced is the only path that
-        covers the derivation chain</strong>; topic tracks are entry points, not complete coverage. Separately,
+        covers the derivation chain</strong>; topic tracks are entry points, not complete coverage. Separately,{' '}
         {pathsWithTools.length === 0 ? `none of the ${learningPaths.length} paths` : `${pathsWithTools.length} of the ${learningPaths.length} paths (${pathsWithTools.map(p => p.name).join(', ')})`}{' '}
         {pathsWithTools.length === 1 ? 'includes' : 'include'} an{' '}
         <Link href="/interactive-tools" style={{ color: 'var(--color-accent-blue)' }}>interactive tool</Link> as a step &mdash;

@@ -472,8 +472,8 @@ export default function TestCatalog() {
             acceleration-keyed law on SPARC by &Delta;BIC +2843, surviving galaxy-level scoring;</li>
           <li>the same family under the <em>solved</em> field equation, at the framework&apos;s floor and at RG&apos;s elliptical floor, on a grid of
             knees: &chi;&sup2;/N 69&ndash;2700 against MOND&apos;s 21.2 (2026-09-09);</li>
-          <li>any pointwise density-keyed G smoothed over &ge; 1 pc, by lunar laser ranging: 68 of 74 laws, including both of RG&apos;s
-            published calibrations, on the non-covariant reading.</li>
+          <li>any pointwise density-keyed G smoothed over &ge; 1 pc, by lunar laser ranging: 68 of 74 laws, and all three of Refracted Gravity&apos;s
+            published calibrations at smoothing lengths 1&ndash;10 pc, where its galaxy fits apply (on the non-covariant reading).</li>
         </ul>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           Not excluded by any of these: <strong>the RG class with its own fitted permittivity on discs</strong>, which nobody here has

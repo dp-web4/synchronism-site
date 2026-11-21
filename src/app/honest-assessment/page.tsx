@@ -9,7 +9,7 @@ import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import RefutationLedger from '@/components/RefutationLedger';
-import { TEST25_STATUS_SENTENCE, FRAMEWORK_CONTENT_CRITERION, LENSING_LEG_ASSUMPTION, TEST04A_BADGE, TEST04A_BADGE_LABEL, TEST04A_SIGMA_SENTENCE } from '@/lib/ledger';
+import { TEST25_STATUS_SENTENCE, FRAMEWORK_CONTENT_CRITERION, LENSING_LEG_ASSUMPTION, TEST04A_BADGE, TEST04A_BADGE_LABEL, TEST04A_SIGMA_SENTENCE, PENDING_DECISIONS } from '@/lib/ledger';
 
 // One-sentence translation for readers without the statistics vocabulary.
 function PlainTerms({ children }: { children: React.ReactNode }) {
@@ -81,11 +81,14 @@ export default function HonestAssessment() {
           the line the project itself had drawn in advance as &ldquo;this would kill the theory&rdquo; (with one
           catch: that verdict depends on where the project sets its cap on extra gravity; what holds at every
           reasonable setting is that small caps are ruled out). It puts
-          a hard cap on how much &ldquo;missing gravity&rdquo; a galaxy can display — and about two-thirds of
-          real galaxies display more than that cap allows. And an environmental effect it predicted turned out,
-          when measured, not to exist at all. Where the equation <em>does</em> fit galaxies, it fits only by
+          a hard cap on how much &ldquo;missing gravity&rdquo; a galaxy can display — and at the cap the project itself
+          uses, about two-thirds of real galaxies display more than it allows (the same catch applies: at the most
+          generous cap anyone has proposed, rotation curves alone no longer rule it out, and the case rests on one
+          small dwarf galaxy, Draco). An environmental effect written into its test list was measured and not found,
+          though on inspection the equation itself never implied that effect, so this one counts against the test
+          list rather than the equation. Where the equation <em>does</em> fit galaxies, it fits only by
           imitating MOND — a 40-year-old rival theory that tweaks gravity instead of adding dark matter — and
-          never fits better than it. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
+          ties it at best: it never beats MOND once its extra dial is charged. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
           own scoreboard — zero confirmed predictions, <strong>six</strong> executed refutations
           resting on two framework-specific mechanism roots, plus one refuted registration, one constraint
           inherited from MOND, and one Bell/CHSH construction check. <strong>Why does the site
@@ -121,25 +124,24 @@ export default function HonestAssessment() {
                 The number depends on counting rules the project lead has not chosen: 4 to 8 under rules already on file
                 (<a href="#count-rule" style={{ color: 'var(--color-accent-blue)' }}>the rules</a>), and at most 5 of the six are independent.
                 Not all six are decisive tests on outside data. The &gamma;&nbsp;=&nbsp;2 pin (row #3) sits at
-                the threshold once each galaxy counts once instead of each data point (the Cassini squeeze, row #5, was listed here too until 2026-11-06; with SPARC&apos;s a<sub>0</sub> at each &gamma; it fails at every &gamma; up to 3), and row #6 is a construction check, not data.
+                the threshold once each galaxy counts once instead of each data point, and row #6 is a construction check, not data.
                 Two of them (TEST-09, TEST-10) test one cap (a ceiling on how much extra gravity the formula can add). On
                 rotation curves TEST-09 fires only under the site&apos;s choice of cap; TEST-10 fires under every candidate cap,
                 though at the most permissive one (6.39) its M/L-independent part rests on two gas-dominated galaxies; there the cap is
-                excluded instead by one dwarf spheroidal, Draco (4.5&sigma; at the heaviest plausible stars under Wolf et al. 2010&apos;s mass estimator, no gas and no rule about light needed; 2026-11-15, corrected 2026-11-19 from 4.9&sigma;; marginal under Walker et al. 2009&apos;s smaller estimator). Crater II, which gave 4.2&sigma;, is observed to be disrupting (Limberg et al. 2025: a &asymp;7&sigma; velocity gradient along its tidal debris track), so it is not an equilibrium test (explorer 2026-11-19). Galaxy
+                excluded instead by one dwarf spheroidal, Draco (4.5&sigma; at the heaviest plausible stars under Wolf et al. 2010&apos;s mass estimator, no gas and no rule about light needed; marginal under Walker et al. 2009&apos;s smaller estimator). Crater II, which gave 4.2&sigma;, is observed to be disrupting (Limberg et al. 2025: a &asymp;7&sigma; velocity gradient along its tidal debris track), so it is not an equilibrium test (explorer 2026-11-19). Galaxy
                 weak-lensing data exclude the framework&apos;s own cap whichever way light is assumed to bend, and the most permissive cap only if hidden baryons are below about 6&times; the stars and cold gas. Those two share one cause, so no more than
                 five are independent. Under every counting rule on file four of the six stay: row #2 (TEST-10), row #4 (the
                 environment run), row #5 (TEST-25, the Cassini row inherited from MOND) and row #6 (the Bell/CHSH construction
                 check). The other two (row #1 TEST-09, row #3 the &gamma;&nbsp;=&nbsp;2 pin) depend on the rule. Of those four, only row #2 refutes
-                the framework&apos;s own content on outside data; of all six, three do (#1, #2, #3). <em>Criterion, stated once:</em> {FRAMEWORK_CONTENT_CRITERION} (The first sentence said &ldquo;three&rdquo; until 2026-11-07, one day
-                after row #5 joined the floor, and lacked its &ldquo;of those four&rdquo; scope until 2026-11-10, when a technical-writer reader found three count sentences with three unnamed criteria; the TEST-25 row survives dropping bulge-dominated galaxies too, at 13&ndash;18&sigma;.)
+                the framework&apos;s own content on outside data; of all six, three do (#1, #2, #3). <em>Criterion, stated once:</em> {FRAMEWORK_CONTENT_CRITERION} The TEST-25 row survives dropping bulge-dominated galaxies too, at 13&ndash;18&sigma;.
               </span>
             </details>
           </li>
           <li><strong>Where it fits galaxies, it is MOND in different notation</strong> (MOND = the 40-year-old rival theory that tweaks gravity instead of adding dark matter). Let its dial γ (which sets how wide its S-curve&apos;s rise is) be fitted freely, and the equation lands on MOND&apos;s own formula; set that dial to the value the framework itself chose (γ = 2) and it fails.</li>
-          <li><strong>Its two genuinely different claims both failed.</strong> That ceiling on extra gravity (the faintest galaxies need roughly twice what it allows, even after allowing for measurement error and for having checked 153 galaxies; this said &ldquo;4×&rdquo; until 2026-11-20, which used the single most extreme galaxy at face value) and a switch that turns on with local density instead of acceleration (the data reject that at every turn-on point tried).</li>
+          <li><strong>Its two genuinely different claims both failed.</strong> That ceiling on extra gravity (the faintest galaxies need roughly twice what it allows, even after allowing for measurement error and for having checked 153 galaxies) and a switch that turns on with local density instead of acceleration (the data reject that at every turn-on point tried).</li>
           <li><strong>&ldquo;Coherence&rdquo; here is <em>not</em> quantum coherence.</strong> It is a classical &ldquo;how much does the system act as one thing&rdquo; score. See{' '}
             <a href="#coherence-meaning" style={{ color: 'var(--color-accent-blue)' }}>the section on what the word means</a>.</li>
-          <li><strong>What survives is the record, not the physics:</strong> a public, reproducible account of how a theory kills itself honestly, a few negative results other theories can reuse, and one question still open: star clusters (globular clusters, dense balls of stars, rule out one dial setting everywhere but are marginally consistent if the dial resets inside each cluster &mdash; a choice not yet made; <a href="#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>below</a>). &ldquo;Untested&rdquo; on this page means nobody has looked yet; &ldquo;Failed&rdquo; means someone looked.</li>
+          <li><strong>What survives is the record, not the physics:</strong> a public, reproducible account of how a theory kills itself honestly, a few negative results other theories can reuse, and one question still open: star clusters (globular clusters, dense balls of stars, rule out one dial setting everywhere but are marginally consistent if the dial resets inside each cluster &mdash; a choice not yet made; <a href="#gc-fork" style={{ color: 'var(--color-accent-blue)' }}>below</a>). What would settle it: the project choosing which force law the framework uses (under the one derived from its own action, the cluster test already rules it out) and cluster masses estimated without assuming Newton&apos;s gravity first. &ldquo;Untested&rdquo; on this page means nobody has looked yet; &ldquo;Failed&rdquo; means someone looked.</li>
         </ul>
         <p style={{ margin: '0.75rem 0 0', padding: '0.5rem 0.75rem', background: 'rgba(16,185,129,0.08)', borderRadius: '0.375rem', color: 'var(--color-text-secondary)' }}>
           <strong>On the Beginner Path? You&apos;re done.</strong> This box is the last stop: you now know what was proposed, how it
@@ -179,6 +181,37 @@ export default function HonestAssessment() {
         governance decision, such as whether the headline count changes, that the AI tracks may recommend but do not make.
       </p>
 
+
+      <div id="pending-decisions" className="card" style={{ scrollMarginTop: '5rem', marginBottom: '1rem', fontSize: '0.85rem', borderLeft: '3px solid #8b5cf6' }}>
+        <p style={{ margin: '0 0 0.4rem', color: 'var(--color-text-primary)' }}>
+          <strong>Decisions queued on the project lead ({PENDING_DECISIONS.length}), oldest first.</strong>{' '}
+          <span style={{ color: 'var(--color-text-secondary)' }}>
+            Each is a fork the AI tracks have analysed and cannot settle. Until they are decided the framework is a family of variants
+            with no single committed member, so a new dataset can refute a variant but not &ldquo;the framework&rdquo;. The default column
+            says what this site does meanwhile.
+          </span>
+        </p>
+        <div style={{ overflowX: 'auto' }}>
+        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem', color: 'var(--color-text-secondary)' }}>
+          <thead>
+            <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--color-dark-border)' }}>
+              <th style={{ padding: '0.25rem 0.4rem' }}>Routed</th>
+              <th style={{ padding: '0.25rem 0.4rem' }}>Decision</th>
+              <th style={{ padding: '0.25rem 0.4rem' }}>Default meanwhile</th>
+            </tr>
+          </thead>
+          <tbody>
+            {PENDING_DECISIONS.map(d => (
+              <tr key={d.item} style={{ borderBottom: '1px solid var(--color-dark-border)', verticalAlign: 'top' }}>
+                <td style={{ padding: '0.25rem 0.4rem', whiteSpace: 'nowrap', fontFamily: 'monospace' }}>{d.routed}</td>
+                <td style={{ padding: '0.25rem 0.4rem' }}><Link href={d.page} style={{ color: 'var(--color-accent-blue)' }}>{d.item}</Link></td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>{d.defaultIfNone}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        </div>
+      </div>
 
       <p id="count-rule" style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', background: 'rgba(245,158,11,0.06)', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem', scrollMarginTop: '5rem', marginBottom: '0.75rem' }}>
         <strong>The counting rules on file, and what each does to the 6</strong>. Deltas from the research ledger (2026-10-13, 10-16, 10-18, 10-24):

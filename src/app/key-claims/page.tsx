@@ -132,7 +132,7 @@ export default function KeyClaims() {
               </div>
               <div className="card" style={{ padding: '0.75rem', margin: 0, borderLeft: '2px solid var(--color-accent-violet)' }}>
                 <div style={{ fontSize: '0.75rem', color: 'var(--color-accent-violet)', marginBottom: '0.25rem' }}>Synchronism</div>
-                <div style={{ fontSize: '0.9rem' }}>Decoherence = phase desynchronization (recoverable via resynchronization)</div>
+                <div style={{ fontSize: '0.9rem' }}>Decoherence = phase desynchronization (only the reversible, inhomogeneous part, T<sub>2</sub>*, is recoverable, and spin echo and dynamical decoupling already recover it; loss to environmental entanglement, T<sub>2</sub>, is not)</div>
               </div>
             </div>
           </div>
@@ -512,7 +512,7 @@ export default function KeyClaims() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
             <h2 style={{ margin: 0, fontSize: '1.15rem' }}>
               <span style={{ color: 'var(--color-text-muted)', marginRight: '0.5rem' }}>3.</span>
-              Is Dark Matter Incomplete Decoherence?
+              Is Dark Matter Matter That Is Out of Step With Ours?
             </h2>
             <span style={{
               fontSize: '0.75rem',
@@ -527,12 +527,16 @@ export default function KeyClaims() {
             </span>
           </div>
 
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', margin: '0 0 0.5rem' }}>
+            <em>Terminology:</em> the archive paper is titled &ldquo;Dark Matter as Incomplete Decoherence&rdquo;. Despite the word, its C is
+            the framework&apos;s classical &ldquo;acts as one&rdquo; score, not quantum coherence; the claim is that dark matter is
+            matter whose patterns are not phase-synchronized with ours.
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
             <strong>What failed:</strong> the interpretation &mdash; that a local-density coherence function marks
             where &ldquo;dark matter&rdquo; effects switch on. Fitted to 122 SPARC galaxies at the archive&apos;s own knee
             (&#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup>), the density law loses to the acceleration law by &Delta;BIC +8,404 and is
-            worse in 115 of them; with one global knee, +2,843. (This line used to say no disc reaches the knee. That held only for
-            0.029&middot;V&sup2;, a units slip; at the archive&apos;s form 45 of 122 galaxies cross it. Corrected 2026-11-14, from the explorer&apos;s 2026-11-13 count.) <strong>And at
+            worse in 115 of them; with one global knee, +2,843. At this knee 45 of 122 galaxies have points above it. <strong>And at
             cosmological scale (checked 2026-09-22):</strong> the framework&apos;s own dark-energy sector is calibrated on
             an &Omega;<sub>m</sub> that includes cold dark matter. Run with baryons only, no &gamma; gives both
             accelerating expansion today and enough dark matter at recombination (the best reaches 1.5&times; the

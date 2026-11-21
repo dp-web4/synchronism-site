@@ -25,7 +25,7 @@ export default function WhySynchronism() {
       <section className="section content-width">
         <div style={{ background: 'rgba(139,92,246,0.07)', border: '1px solid rgba(139,92,246,0.2)', borderRadius: '0.5rem', padding: '1rem 1.25rem', marginBottom: '1.5rem' }}>
           <p style={{ margin: 0, color: 'var(--color-text-secondary)', fontSize: '0.95rem' }}>
-            <strong>What changes if this works?</strong> If one density function really spans quantum to galactic scales, two things become possible that aren&apos;t now: (1) a single measurable quantity (density) predicts behavior in domains currently requiring separate frameworks — fewer free parameters, more cross-domain predictions; (2) the boundary between &ldquo;quantum&rdquo; and &ldquo;classical&rdquo; becomes a calculable density threshold, not a philosophical category. Neither has been demonstrated yet. The site&apos;s self-audit has found zero confirmed predictions and the decisive galaxy test collapses to <TermTooltip term="MOND">MOND</TermTooltip> (Modified Newtonian Dynamics: a 1983 rival idea that gravity gets slightly stronger than Newton predicts where it is very weak, instead of adding invisible dark matter). As one density function spanning every scale, it did not hold; the broader question of the frame is still open.
+            <strong>What changes if this works?</strong> If one density function really spans quantum to galactic scales, two things become possible that aren&apos;t now: (1) a single measurable quantity (density) predicts behavior in domains currently requiring separate frameworks — fewer free parameters (knobs tuned to make a model fit), more cross-domain predictions; (2) the boundary between &ldquo;quantum&rdquo; and &ldquo;classical&rdquo; becomes a calculable density threshold, not a philosophical category. Neither has been demonstrated yet. The site&apos;s self-audit has found zero confirmed predictions and the decisive galaxy test collapses to <TermTooltip term="MOND">MOND</TermTooltip> (Modified Newtonian Dynamics: a 1983 rival idea that gravity gets slightly stronger than Newton predicts where it is very weak, instead of adding invisible dark matter). As one density function spanning every scale, it did not hold; the broader question of the frame is still open.
           </p>
         </div>
 
@@ -36,10 +36,16 @@ export default function WhySynchronism() {
             <li>It was tested against real data, mostly galaxies. Where it could be told apart from existing physics, it lost: 0 confirmed predictions, 6 refutations. (A refutation here means a test with a failure condition written down in advance, which was run, and which the claim failed. Whether some related failures count once or twice moves the number between 4 and 8; the 6 is the current rule.)</li>
             <li>What remains open is the bigger question behind it, and this site shows the whole attempt, failures included.</li>
           </ul>
+          <p style={{ margin: '0.75rem 0 0 0', fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+            <strong>Why does matching an existing theory count as losing?</strong> Where the equation fits galaxies, it turns into
+            MOND, a formula published in 1983. Rediscovering it predicts nothing MOND doesn&apos;t already predict, and a new
+            theory earns its place only by predicting something the old ones don&apos;t. New to the vocabulary?{' '}
+            <Link href="/glossary#start-with-ten" style={{ color: 'var(--color-accent-blue)' }}>Ten terms in two minutes &rarr;</Link>
+          </p>
           <p style={{ margin: '0.75rem 0 0 0', fontSize: '0.9rem' }}>
             <strong>Beginner path: that is all you need from this page.</strong> Continue to{' '}
             <Link href="/first-encounter" style={{ color: 'var(--color-accent-blue)' }}>Step 2: First Encounter &rarr;</Link>{' '}
-            The rest of this page is the technical detail, folded below.
+            The rest of this page is folded below: its first two sections (the problem, and the approach with the crowd and marching-band picture) are plain English; the test details after them are technical.
           </p>
         </div>
 
@@ -47,7 +53,7 @@ export default function WhySynchronism() {
 
       <details className="content-width" style={{ margin: '0 auto 1.5rem auto', border: '1px solid var(--color-border)', borderRadius: '0.5rem', padding: '0.75rem 1rem' }}>
         <summary style={{ cursor: 'pointer', fontWeight: 600 }}>
-          For physicists: the technical details &mdash; the problem, the approach, what was tested, what failed (long; jargon is glossed in plain words where it first appears)
+          More detail (optional): the problem and the approach in plain words, with the crowd-vs-marching-band picture, then what was tested and what failed (gets technical toward the end; jargon is glossed where it first appears)
         </summary>
 
       <section className="section content-width">

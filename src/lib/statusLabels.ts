@@ -94,7 +94,7 @@ export interface CardState {
 }
 
 export const CARD_STATES: CardState[] = [
-  { name: 'Kill Criterion Triggered', kind: 'operational state', oneLiner: 'the measured value crossed the pre-registered kill threshold; the claim carries Failed' },
+  { name: 'Kill Criterion Triggered', kind: 'operational state', oneLiner: 'the measured value crossed a kill threshold registered before the run (registered, not pre-registered: the data already existed); the claim carries Failed' },
   { name: 'Withdrawn', kind: 'operational state', oneLiner: 'retracted by the framework before adjudication (internal contradiction or an amplitude it cannot derive); carries no badge' },
   { name: 'Self-Eliminating-or-Tie', kind: 'operational state', oneLiner: 'no outcome selects the framework: the signal is below reach, or each outcome is already covered by a standard alternative' },
   { name: 'Underpowered as registered', kind: 'lifecycle verb', oneLiner: 'the registered threshold sits inside the measurement\'s own systematics, so neither outcome can adjudicate until the registration is tightened' },

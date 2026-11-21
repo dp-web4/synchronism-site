@@ -60,6 +60,27 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'Think of an atom: Andromeda exists, but its gravitational and electromagnetic influence on a single atom is below the noise floor. The MRH is the minimal neighborhood such that removing anything inside degrades prediction, and adding anything outside does not improve it. Formally: the minimal set of interacting degrees of freedom whose state transitions materially influence coherence evolution. In quantum mechanics, crossing the MRH IS measurement/decoherence. Presence (\u03C1) is defined relative to an MRH: change the MRH, presence changes. Not to be confused with the MRH-relationship badges (Active-MRH, Parallel-Paths, Sidelined, Superseded, Audited-Negative): those borrow the name for the research inventory, not for physics. See "Active-MRH (badge)".',
     learnMore: '/mrh',
   },
+  'density': {
+    term: 'Density (ρ)',
+    fullName: 'Mass (or energy) per unit volume: the input to C(ρ) in every density-keyed test',
+    brief: 'How much mass is packed into a given volume, e.g. solar masses per cubic parsec. Every test on this site that keys the coherence function on ρ uses this ordinary density. The ontology pages also read ρ as a broader “presence”, which has never been turned into a measurement (see Presence).',
+    explanation: 'In the galaxy fits ρ is estimated from a disc’s measured surface density divided by an assumed thickness (ρ = Σ/2h, h = 0.3 kpc for every galaxy), so it is an estimate, not a direct measurement. Many galaxy tests do not use density at all: they key the same tanh shape on acceleration (see C_f and the landing page’s “which C” table).',
+    learnMore: '/coherence-function',
+  },
+  'c-f': {
+    term: 'C_f (floored density form)',
+    fullName: 'C_f = Ω_m + (1 − Ω_m)·C_ρ: the density-keyed coherence function with a floor at Ω_m',
+    brief: 'One of four coherence functions the site uses. Keyed on density like C(ρ), but it never falls below Ω_m ≈ 0.315, so the gravity boost g_bar/C_f can never exceed 1/Ω_m ≈ 3.17. The Galaxy Plotter’s violet curve, the lunar-laser-ranging Ġ/G item and the boost-ceiling sentences on Key Claims use it.',
+    explanation: 'The four: C_ρ (density, no floor; the headline equation), C_f (density, floored at Ω_m), C_g (observed acceleration, no floor; the RAR fits and Cassini), and C_a (baryonic acceleration, floored, a log-logistic curve rather than a tanh-log one; TEST-09 and TEST-10). At small x = ρ/ρ_crit its sensitivity to density is d ln C_f/d ln ρ ≈ (1 − Ω_m)γx/C_f, the quantity the lunar-laser-ranging bound constrains.',
+    learnMore: '/',
+  },
+  'free-parameter': {
+    term: 'Free parameter',
+    fullName: 'A number in a model that is tuned to make it fit the data, rather than predicted',
+    brief: 'A knob you are allowed to turn to make a model fit. Fewer free parameters is better, because a model with many knobs can fit almost anything. Synchronism’s galaxy fits tune γ and ρ_crit (or a₀′); MOND tunes one number, a₀.',
+    explanation: 'Model comparisons such as ΔBIC charge each extra free parameter a penalty, so a model only wins if its better fit outweighs its extra knobs. A number fed in from each galaxy’s own data (for example its measured flat rotation speed) is not a free parameter, but it can make a prediction circular: the model is partly given its own answer.',
+    learnMore: '/parameter-derivations',
+  },
   'presence': {
     term: 'Presence (\u03C1)',
     fullName: 'In every density-keyed test: physical density. In the ontology: compatible structural elements within an MRH',
@@ -612,8 +633,8 @@ export const terms: Record<string, TermDefinition> = {
   'kill-criterion-triggered': {
     term: 'Kill Criterion Triggered (operational state)',
     fullName: 'Kill Criterion Triggered \u2014 Operational State (not a badge; relabelled 2026-09-08 to match the canonical legend)',
-    brief: 'A pre-registered numerical threshold has been crossed; the test is treated as failed unless a revised pre-registration is made.',
-    explanation: 'A Kill Criterion is a pre-registered falsification threshold: before the test is run, a specific numerical value is set such that if the result crosses it, the prediction is treated as failed. "Kill Criterion Triggered" means that threshold was crossed. It is a stronger statement than "Failed" alone because it means the failure was anticipated and quantified in advance. In Synchronism\'s test catalog, TEST-09 (BTFR slope) has kill criterion |\u0394n| > 0.3 \u2014 the executed run gives |\u0394n| = 0.41 at the boost ceiling 1/\u03a9_m, criterion triggered (convention-dependent: it does not fire at the two baryon-budget ceilings). TEST-10 (dwarf dark-matter fractions) caps f_DM at 68.5% \u2014 106 of 153 SPARC discs exceed it, criterion triggered. Two examples this entry used until 2026-11-04 were reclassified and no longer illustrate the label: TEST-03\'s \u201cR\u00b2 = 0.14\u201d was a Hubble-type term misattributed to the environment test (the registered run gave r\u00b2 = 0.0001; see ALFALFA), and TEST-04a\'s \u201c\u2248 0.55\u201d was a superseded DESI reading (LRG1 f\u03c3\u2088 = 0.516, ~0.9\u03c3 past the threshold against a 3\u03c3 bar: Underpowered as Registered, not triggered). Note: "Kill Criterion Triggered" and "Speculative" are mutually exclusive \u2014 Speculative means no quantitative test has been defined; Kill Triggered means one was defined and crossed.',
+    brief: 'A numerical threshold registered before the test was run has been crossed; the test is treated as failed. Registered, not pre-registered: the threshold predates the run, not the data.',
+    explanation: 'A Kill Criterion is a registered falsification threshold: before the test is run, a specific numerical value is written down such that if the result crosses it, the prediction is treated as failed. "Kill Criterion Triggered" means that threshold was crossed. It is a stronger statement than "Failed" alone because the failure line was fixed before the run. On this site registered (before the run) and pre-registered (before the data existed) are different words: every registry test with this state is registered only, because the data it was run on already existed (see the Test Roadmap). In Synchronism\'s test catalog, TEST-09 (BTFR slope) has kill criterion |\u0394n| > 0.3 \u2014 the executed run gives |\u0394n| = 0.41 at the boost ceiling 1/\u03a9_m, criterion triggered (convention-dependent: it does not fire at the two baryon-budget ceilings). TEST-10 (dwarf dark-matter fractions) caps f_DM at 68.5% \u2014 106 of 153 SPARC discs exceed it, criterion triggered. Two examples this entry used until 2026-11-04 were reclassified and no longer illustrate the label: TEST-03\'s \u201cR\u00b2 = 0.14\u201d was a Hubble-type term misattributed to the environment test (the registered run gave r\u00b2 = 0.0001; see ALFALFA), and TEST-04a\'s \u201c\u2248 0.55\u201d was a superseded DESI reading (LRG1 f\u03c3\u2088 = 0.516, ~0.9\u03c3 past the threshold against a 3\u03c3 bar: Underpowered as Registered, not triggered). Note: "Kill Criterion Triggered" and "Speculative" are mutually exclusive \u2014 Speculative means no quantitative test has been defined; Kill Triggered means one was defined and crossed.',
     learnMore: '/tier-1-existing',
   },
   'mond-shared': {

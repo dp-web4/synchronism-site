@@ -6,7 +6,7 @@
 // the extra three (MOND-shared, 89% Boundary-Consistent, Template Bias Caveat) were a retired label and two catalogue notes.
 
 export const LABEL_DEFINITIONS: Record<string, string> = {
-  "Kill Criterion Triggered": "A pre-registered falsification threshold was crossed. Carries Failed badge. Stronger than &ldquo;Failed&rdquo; alone because failure was quantified in advance.",
+  "Kill Criterion Triggered": "A <em>registered</em> falsification threshold was crossed: the threshold was written down before the test was run (not before the data existed, which is what <em>pre-registered</em> means on this site; no registry test meets that stricter bar). Carries the Failed badge. Stronger than &ldquo;Failed&rdquo; alone because the failure line was fixed before the run.",
   "Withdrawn": "Framework disowned the test — not from data refutation, but from internal contradiction or an unmotivated amplitude. A test replaced by a later formulation is Superseded, not Withdrawn (overlap removed 2026-09-25). Carries no badge (never adjudicated). TEST-04 (BAO).",
   "Self-Eliminating-or-Tie": "No measurement outcome selects Synchronism over the standard alternatives — either the signal is below systematics reach, or both outcomes (null and confirmed anomaly) are covered by Newton or MOND respectively. TEST-02 (wide binaries).",
   "Unrunnable as stated": "The test as written cannot be executed: a mapping, calibration or amplitude it needs is undefined, so no observation can be compared to it (e.g. every C-keyed consciousness prediction: no EEG &rarr; C calibration exists). Distinct from Untested, which has a runnable protocol and no data yet. Added to this legend 2026-10-19 (it was in use on six pages and the Test Roadmap&#39;s list).",

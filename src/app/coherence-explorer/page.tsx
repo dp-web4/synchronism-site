@@ -60,8 +60,6 @@ export default function CoherenceExplorer() {
     <>
       <Breadcrumbs currentPath="/coherence-explorer" />
       <h1>Coherence Explorer</h1>
-      {/* Badge added 2026-10-08 (graduate-physics visitor): the default γ = 0.49 preset is the MOND-analogue point */}
-      <ValidationBadge status="reparametrization" label="At γ = ½ this is a formula physics already had (MOND's, fed acceleration; ΛCDM in cosmology), not a new one" />
       <p style={{ color: 'var(--color-text-secondary)', marginTop: '0.5rem', maxWidth: '60ch' }}>
         <strong>What this toy is for:</strong> seeing the shape of the S-curve and what &#x03B3; does to it. It does
         not model any real material, and the density axis has no units. It opens at &#x03B3; = 1, a middle value picked for display, not a fitted number. <strong>One thing to try first:</strong> drag &#x03B3; up to 2 (the framework&apos;s original guess), then
@@ -69,6 +67,8 @@ export default function CoherenceExplorer() {
         to galaxies, and at &#x03B3; = &frac12; the ramp has exactly the shape of MOND&apos;s formula (when it is fed acceleration instead of density), which is why the galaxy fit is not a new prediction. The fitted &#x03B3; values quoted elsewhere on the site belong to other versions of this curve; they are explained in the &ldquo;For physicists&rdquo; note under the sliders.
       </p>
 
+      {/* Badge moved below the intro 2026-11-21 (casual visitor: jargon before touching anything); label in plain words */}
+      <ValidationBadge status="reparametrization" label="At one dial setting (γ = ½) this curve is a formula physics already had (MOND's, when fed acceleration; standard cosmology's Λ), so it is not new" />
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
         <div className="card" style={{ marginBottom: '1.5rem', borderLeft: '3px solid var(--color-accent-violet)' }}>
           <h3 style={{ marginBottom: '0.5rem' }}>What is coherence?</h3>
@@ -83,9 +83,7 @@ export default function CoherenceExplorer() {
             and 1 (dense/collective).
           </p>
           <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
-            <strong>One thing to try first:</strong> drag &#x03B3; from 2 down to 0.5 and watch the S-curve flatten into a long ramp.
-            That flattened ramp is what fitting real galaxies produced, and at &#x03B3; = &frac12; it is a formula physics already had
-            (MOND&apos;s), which is why the galaxy fit is not a new prediction. Then move &#x03C1;<sub>crit</sub>: it slides the curve sideways.
+            After trying &#x03B3;, move &#x03C1;<sub>crit</sub>: it slides the curve sideways without changing its shape.
           </p>
           <details style={{ marginBottom: '0.25rem' }}>
           <summary style={{ cursor: 'pointer', color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>

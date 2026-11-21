@@ -493,7 +493,7 @@ export default function CoherenceFunction() {
           </p>
           <p style={{ margin: '0.5rem 0 0', color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             The <strong>compander class</strong> includes: μ-law audio compression (telephone networks), Hill function (oxygen binding to hemoglobin),
-            Naka-Rushton equation (retinal response), Kubo susceptibility (stat-mech near criticality). All map a wide dynamic range onto a
+            Naka-Rushton equation (retinal response), the Langevin/Brillouin magnetization curve (a saturating, non-critical paramagnet). All map a wide dynamic range onto a
             bounded output using a sigmoidal curve. C(ρ) does the same: density spanning 80+ orders of magnitude →
             coherence in [0, 1].
           </p>

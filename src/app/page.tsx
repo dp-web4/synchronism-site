@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { navigationTree } from '@/lib/navigation';
-import { COUNT_MAP_SENTENCE } from '@/lib/ledger';
+import { COUNT_MAP_SENTENCE, PENDING_DECISIONS } from '@/lib/ledger';
 import { learningPaths } from '@/lib/paths';
 
 // Landing step labels are computed from the path list (2026-10-09: two visitor personas
@@ -161,34 +161,62 @@ export default function Home() {
             <strong>ln</strong> = natural log: compression — 1,000× bigger becomes only ~7 units bigger inside the equation (3 units on a base-10 axis like the Coherence Explorer&apos;s).
           </p>
           <details style={{ color: 'var(--color-text-secondary)', fontSize: '0.8rem', marginBottom: '0.25rem', textAlign: 'left' }}>
-            <summary style={{ cursor: 'pointer', textAlign: 'center' }}><strong>For physicists: which C the galaxy numbers used</strong> (three functions share this shape; uses terms defined in the <a href="#terms-on-this-page" style={{ color: 'var(--color-accent-blue)' }}>key</a> further down)</summary>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.8rem', marginBottom: '0.25rem' }}>
-            This is the density-keyed form, C<sub>&rho;</sub>. The two galaxy tests that refuted the framework on its own terms ran on
-            an acceleration-keyed cousin with a floor, C<sub>a</sub>, and the RAR fit on a third, C<sub>g</sub>.{' '}
-            <strong>Which C the galaxy numbers used:</strong> the equation above is keyed on
-            <em> density</em>. Almost every galaxy statistic on this site used the same tanh-log shape keyed on
-            <em> acceleration</em> instead &mdash; the RAR fits (&gamma;&nbsp;=&nbsp;0.49 at Υ = 0.5, &Delta;BIC&nbsp;+184 at &gamma;&nbsp;=&nbsp;2 by point, &asymp;&nbsp;+11 by galaxy; +46 and +2.7 once each law has its own global Υ),
-            and an &Omega;<sub>m</sub>-floored variant for the BTFR and dwarf tests. At &gamma;&nbsp;=&nbsp;&frac12; the acceleration
-            version <em>is</em> MOND&apos;s simple interpolating function. The density version above was tested
-            separately and fails on galaxy data. So &ldquo;the equation failed&rdquo; means three
-            different functions failed, and only two of them have the shape shown above: <strong>C<sub>&rho;</sub></strong> (the one above, keyed on density),{' '}
-            <strong>C<sub>g</sub></strong> = tanh(&gamma; ln(1 + g<sub>obs</sub>/a<sub>0</sub>&prime;)) (keyed on observed acceleration;
-            RAR shape and Cassini), and <strong>C<sub>a</sub></strong> = &Omega;<sub>m</sub> + (1 &minus; &Omega;<sub>m</sub>)&middot;x/(1+x)
-            with x = (g<sub>bar</sub>/a<sub>0</sub>)<sup>0.618</sup> (keyed on acceleration and floored at &Omega;<sub>m</sub>; BTFR slope and dwarf dark-matter fractions).
-            C<sub>a</sub> is a log-logistic (Hill) curve, not tanh(&gamma; ln(1+&middot;)) at any &gamma;: it rises as g<sup>0.618</sup> where the tanh-log form is
-            linear, and the two tails match only at &gamma; = 0.309. So the two tests that discriminate (TEST-09, TEST-10) tested a different function, in a different
-            variable, with an exponent that was fitted and then named after the golden ratio; they did not test the equation at the top of this page (corrected
-            2026-11-20; it said &ldquo;three functions sharing one shape&rdquo;, a graduate simulated-visitor persona). Each refutation
-            names its function in the{' '}
-            <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>&ldquo;Which C&rdquo; column</Link>. See{' '}
-            <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link>.
+            <summary style={{ cursor: 'pointer', textAlign: 'center' }}><strong>For physicists: which C the galaxy numbers used</strong> (four functions; uses terms defined in the <a href="#terms-on-this-page" style={{ color: 'var(--color-accent-blue)' }}>key</a> further down)</summary>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.8rem', margin: '0.4rem 0 0.25rem' }}>
+            The equation above is keyed on <em>density</em>. Most galaxy statistics on this site used other functions, so
+            &ldquo;the equation failed&rdquo; means four different functions were tested, and the two tests that refuted the framework on
+            its own terms (TEST-09, TEST-10) did not test the equation at the top of this page. Each refutation names its function in the{' '}
+            <Link href="/honest-assessment#refutation-ledger" style={{ color: 'var(--color-accent-blue)' }}>&ldquo;Which C&rdquo; column</Link>.
+          </p>
+          <div style={{ overflowX: 'auto' }}>
+          <table style={{ fontSize: '0.78rem', borderCollapse: 'collapse', width: '100%', color: 'var(--color-text-secondary)', textAlign: 'left' }}>
+            <thead>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
+                <th style={{ padding: '0.25rem 0.4rem' }}>Function</th>
+                <th style={{ padding: '0.25rem 0.4rem' }}>Keyed on</th>
+                <th style={{ padding: '0.25rem 0.4rem' }}>Floor</th>
+                <th style={{ padding: '0.25rem 0.4rem' }}>Used by</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
+                <td style={{ padding: '0.25rem 0.4rem' }}><strong>C<sub>&rho;</sub></strong> = tanh(&gamma; ln(1 + &rho;/&rho;<sub>crit</sub>)) (the equation above)</td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>density</td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>none (&rarr; 0 at low density)</td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>the density-law fits (&Delta;BIC +2,843 with one global knee, +8,404 at the archive&apos;s 0.028&middot;V<sup>0.5</sup> knee); dark-energy sector</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
+                <td style={{ padding: '0.25rem 0.4rem' }}><strong>C<sub>f</sub></strong> = &Omega;<sub>m</sub> + (1 &minus; &Omega;<sub>m</sub>)&middot;C<sub>&rho;</sub></td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>density</td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>&Omega;<sub>m</sub> (boost &le; 1/&Omega;<sub>m</sub> &asymp; 3.17)</td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>the Galaxy Plotter&apos;s violet curve; the lunar-laser-ranging Ġ/G item; the boost-ceiling sentences on Key Claims</td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid var(--color-dark-border)' }}>
+                <td style={{ padding: '0.25rem 0.4rem' }}><strong>C<sub>g</sub></strong> = tanh(&gamma; ln(1 + g<sub>obs</sub>/a<sub>0</sub>&prime;))</td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>observed acceleration</td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>none</td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>RAR fits (&gamma; &asymp; 0.49 at Υ = 0.5; the &gamma; = 2 pin, &Delta;BIC +184 by point, &asymp; +11 by galaxy, +46 / +2.7 with its own global Υ); Cassini (TEST-25). At &gamma; = &frac12; it <em>is</em> MOND&apos;s simple interpolating function.</td>
+              </tr>
+              <tr>
+                <td style={{ padding: '0.25rem 0.4rem' }}><strong>C<sub>a</sub></strong> = &Omega;<sub>m</sub> + (1 &minus; &Omega;<sub>m</sub>)&middot;x/(1+x), x = (g<sub>bar</sub>/a<sub>0</sub>)<sup>0.618</sup></td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>baryonic acceleration</td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>&Omega;<sub>m</sub></td>
+                <td style={{ padding: '0.25rem 0.4rem' }}>TEST-09 (BTFR slope), TEST-10 (dwarf dark-matter fractions). A log-logistic (Hill) curve, not tanh(&gamma; ln(1+&middot;)) at any &gamma;: it rises as g<sup>0.618</sup> where the tanh-log form is linear, and the tails match only at &gamma; = 0.309. Its exponent was fitted, then named after the golden ratio.</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.8rem', margin: '0.4rem 0 0.25rem' }}>
+            See <Link href="/galaxy-rotation" style={{ color: 'var(--color-accent-blue)' }}>Galaxy Rotation</Link> for which field equation each test used.
           </p>
           </details>
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', marginBottom: '0.25rem' }}>
             <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim)</summary>
             The &ldquo;Which C the galaxy numbers used&rdquo; paragraph was added 2026-09-14. On 2026-11-02 it moved into a
             collapsed &ldquo;for physicists&rdquo; block, with the C<sub>&rho;</sub>/C<sub>a</sub>/C<sub>g</sub> pointer, because two
-            simulated-visitor personas met its terms before the abbreviation key that defines them.
+            simulated-visitor personas met its terms before the abbreviation key that defines them. Until 2026-11-20 it said &ldquo;three
+            functions sharing one shape&rdquo;; C<sub>a</sub> is not of that shape. On 2026-11-21 it became a four-row table, adding the floored
+            density form C<sub>f</sub>, which the plotter, the LLR item and Key Claims use but the list had left out.
           </details>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
             The tanh shape is <em>motivated</em> by the sigmoid/compander family (&mu;-law, Hill, logistic) &mdash; a phenomenological choice, not derived. See /parameter-derivations for why &ldquo;mean-field theory&rdquo; is the wrong category: there is no self-consistency loop, no free energy, no critical exponents. The log argument ln(1 + &rho;/&rho;<sub>crit</sub>) is chosen too, with no derivation (the +1 keeps C finite at zero density). Three parameters are fitted to data.{' '}
@@ -398,13 +426,15 @@ export default function Home() {
                 <tr style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>The cosmology (dark-energy sector)</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: '#f59e0b', fontWeight: 600 }}>Is &Lambda;</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>At &gamma; = &frac12; it is exactly a cosmological constant. The forms that differ are excluded or fit no better than &Lambda;CDM, and the form is prior art (Cardassian models, 2002).</td></tr>
                 <tr style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>The quantum and measurement side</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: 'var(--color-text-muted)', fontWeight: 600 }}>No number to test</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>No rate parameter is written down, so it makes no quantitative prediction yet. The one rate that was tried (diffusion of the substrate) is excluded at its natural size by nuclear stability and by LIGO.</td></tr>
                 <tr style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>A local substrate on Bell&apos;s test</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: '#ef4444', fontWeight: 600 }}>Excluded by Bell experiments</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>S &le; 2 on the three constructions built here, none of which signals (the framework&apos;s own substrate: 1.85). Any local model is capped at 2 by Bell&apos;s theorem. Not signalling does not by itself cap S: quantum mechanics does not signal and reaches 2&radic;2. Loophole-free Bell experiments measure S above 2 (Hensen et al. 2015, Nature 526, 682: S = 2.42 &plusmn; 0.20, p = 0.039 against local realism; photonic tests the same year agree), so every local substrate, this one included, is excluded by data, not only by a construction check. Substrates with hidden communication (the Toner&ndash;Bacon class) were never built. They are not unconstrained: Salart et al. 2008 put such an influence above 10<sup>4</sup>&nbsp;c in any preferred frame in which Earth moves slower than 10<sup>&minus;3</sup>&nbsp;c, and Bancal et al. 2012 show that any finite speed permits signalling. The framework&apos;s own update rule (&ldquo;all cells simultaneously evaluate neighbor tensions and step forward together&rdquo;, FUNDAMENTALS) carries influence at most one cell per tick, so the escape needs a different, global and instantaneous update: the class of Bohm-type theories with a preferred time. (Row relabelled 2026-11-20 from &ldquo;Inside Bell&apos;s limit&rdquo;; a researcher simulated-visitor persona. Abstracts read 2026-11-20.)</td></tr>
+                <tr id="bell-and-clock" style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>The Bell escape and the absolute clock, read together</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: '#8b5cf6', fontWeight: 600 }}>One joint requirement (open)</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>The only Bell escape left (row above) is an instantaneous global update in a preferred frame, the Bohm class. The absolute-time sector is excluded by 15&ndash;27 orders of magnitude unless something hides that same frame from radiative corrections (Collins et al. 2004; see the paragraph under the scoreboard). These are one requirement, not two. Bohmian mechanics meets both because its field dynamics are Lorentz invariant and quantum equilibrium hides its foliation (out of equilibrium it would signal). A grid whose own update rule breaks boosts at every tick has neither. <strong>Open question:</strong> can a discrete, preferred-frame substrate keep its frame invisible to 10<sup>&minus;18</sup>&ndash;10<sup>&minus;30</sup>, as Bohm&apos;s is? <strong>Proposed answer, to attack:</strong> not with a nearest-neighbour update, whose dispersion carries the frame; it would need a protecting symmetry, and supersymmetry (Groot Nibbelink &amp; Pospelov 2005, from recall) only softens the problem. Linkage raised by a simulated researcher visitor on 2026-11-21; not yet worked out (queued for the explorer).</td></tr>
                 <tr style={{ borderTop: '1px solid rgba(148,163,184,0.2)' }}><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>a&#x2080;(z) = cH(z)/2&pi; (the galaxy scale grows with the cosmic expansion rate)</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top', whiteSpace: 'nowrap', color: '#3b82f6', fontWeight: 600 }}>Survives; does not discriminate</td><td style={{ padding: '0.3rem 0.6rem 0.3rem 0', verticalAlign: 'top' }}>The one equation the archive writes that survives and differs from constant-a&#x2080; MOND. It does not differ from &Lambda;CDM with ordinary matter physics, whose simulations predict the same growth of a&#x2080; with redshift (Mayer et al. 2023), so no outcome selects this framework (same verdict as on <Link href="/mond-unification" style={{ color: 'var(--color-accent-blue)' }}>Relation to MOND</Link>; until 2026-11-16 this row read &ldquo;survives, differs, unresolved&rdquo;). The site&apos;s own pre-registered run (on the RC100 high-redshift rotation curves, 2026-10-06) did not decide it: the ratio between redshift bins came out 1.11, against 1.74 predicted and 1 for constant a&#x2080;, and a fit afterwards puts the prediction at about the 2&sigma; edge. Two published estimators straddle it (slope 0.71 &plusmn; 0.13 and 1.15 against 1). The &ldquo;survives&rdquo; assumes the figure&apos;s unlabelled bars are 1&sigma; (n = 1 at 2.2&sigma;); if they are 95%, the bins put n = 1 at about 4.4&sigma;. It is also not unique to this framework.</td></tr>
               </tbody>
             </table>
             </div>
             <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', margin: '0.4rem 0 0', lineHeight: 1.55 }}>
               This is the site&apos;s reading of the{' '}
-              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>research ledger</Link>, by piece, not a count. The count of
+              <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>research ledger</Link>, by piece, not a count. Which variant is &ldquo;the framework&rdquo; is itself undecided: {PENDING_DECISIONS.length} forks are{' '}
+              <Link href="/honest-assessment#pending-decisions" style={{ color: 'var(--color-accent-blue)' }}>queued on the project lead</Link>, the oldest since August, so a new dataset can refute a variant but not the framework as a whole. The count of
               refutations below is ledger bookkeeping and is unchanged: it counts tests registered with a failure condition, so the two strongest
               exclusions of the density law sit outside it. Whether they become counted rows is a decision for the project lead. Sources: explorer
               2026-11-12 (<code>exclusion_table_by_equation.py</code>, 44 executed losses by equation), the ledger blocks of 2026-09-24, 10-18,

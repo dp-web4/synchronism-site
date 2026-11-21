@@ -287,3 +287,28 @@ export const REFUTATION_ROWS: RefutationRow[] = [
     convention: 'None.',
   },
 ];
+
+// 2026-11-21: one queue for every fork that "gates on the project lead". A researcher persona counted seven-plus
+// such forks scattered over five pages and read the result as "a family of models with no committed member". The
+// queue does not decide anything; it makes the gating visible, oldest first. Dates are when the item was first
+// routed in a research-repo proposal. Update `status` when a decision is recorded; delete nothing (move to decided).
+export interface PendingDecision {
+  item: string;
+  routed: string; // YYYY-MM-DD first routed
+  defaultIfNone: string;
+  page: string;
+}
+export const PENDING_DECISIONS: PendingDecision[] = [
+  { item: 'Which dark-energy reading is the theory (mean-density fluid vs local fluid); register TEST-26 or retire it and TEST-04a as discriminating tests', routed: '2026-08-12', defaultIfNone: 'Both stay listed; neither can produce a framework-specific outcome', page: '/dark-energy' },
+  { item: 'Whether the A2ACW post-cutoff arm runs (and the 2×2 reinvention ablation before it)', routed: '2026-09-10', defaultIfNone: 'An in-family version is proposed to run on 2026-12-09', page: '/research-philosophy' },
+  { item: 'Which dark-matter story the framework keeps: cold dark matter put in by hand, or the coherence boost', routed: '2026-09-22', defaultIfNone: 'The site prints both; the cosmology as run needs CDM', page: '/dark-matter' },
+  { item: 'Whether the density-law exclusions (SPARC ΔBIC, lunar laser ranging) become counted rows', routed: '2026-09-24', defaultIfNone: 'Printed beside the count, not in it', page: '/honest-assessment#refutation-ledger' },
+  { item: 'Which dynamics is the theory: the algebraic law (L2) or the action-derived law with striction (L3)', routed: '2026-10-08', defaultIfNone: 'Each verdict names the dynamics it used', page: '/galaxy-rotation' },
+  { item: 'The counting rule for the headline 6 (range 4–8 under rules on file)', routed: '2026-10-12', defaultIfNone: 'The 6 is printed with its range and rule', page: '/honest-assessment#count-rule' },
+  { item: 'Contacting outside authors (Refracted Gravity; Saad & Ting; Chae et al.) before anything is said as a claim about their work', routed: '2026-10-14', defaultIfNone: 'Third-party claims carry "authors not contacted"', page: '/wide-binaries' },
+  { item: 'Whether ledger table rows are edited in place when a later block corrects them', routed: '2026-10-16', defaultIfNone: 'Rows stay; corrections live in dated blocks above them', page: '/honest-assessment' },
+  { item: 'Gaia DR4: adopt, revise or reject the wide-binary reading key and analysis plan', routed: '2026-11-06', defaultIfNone: 'From 2 December 2026, DR4 is read against the key as committed, labelled "dated before the data, not adopted"', page: '/wide-binaries#dr4-decision-status' },
+  { item: 'Whether light follows the same effective potential as matter (the lensing leg depends on it)', routed: '2026-11-10', defaultIfNone: 'Lensing verdicts are printed as conditional', page: '/for-researchers' },
+  { item: 'What the landing equation is, and one sentence stating the surviving content', routed: '2026-11-12', defaultIfNone: 'The landing leads with C(ρ) and its by-piece status table', page: '/' },
+  { item: 'Which update rule the substrate has (nearest-neighbour is excluded by Bell experiments; a global instantaneous update is the Bohm class), and relabelling row #6', routed: '2026-11-20', defaultIfNone: 'Row #6 stays a construction check, with the data reading printed beside it', page: '/' },
+];

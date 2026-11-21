@@ -307,7 +307,9 @@ export default function ResearchPhilosophy() {
           <strong>A2ACW&apos;s calibration, stated as a calibration:</strong> of the 9 claims its top verdict passed, 0
           survived later audit (positive predictive value 0/9; the one-sided 95% upper bound is about 28%, or 34% two-sided). Every demotion came from a{' '}
           <em>later</em> audit pass, not from the challenge cycle itself. So A2ACW works as a search heuristic and as an
-          after-the-fact filter for reparametrizations; its approval step is uncalibrated. Every badge is the product of at
+          after-the-fact filter for reparametrizations; its approval step is uncalibrated. The 0/9 is also not A2ACW scored
+          against reality: its ground truth is a later LLM audit pass from the same family of models, itself uncalibrated, so
+          it measures agreement between two correlated instruments. Read it as unidentified, not merely imprecise. Every badge is the product of at
           least one full A2ACW challenge cycle &mdash; which, given that record and the
           0% novel-survivor rate of that cycle on held-out claims, is provenance, not
           assurance: a badge means the claim was challenged, not that the challenge could have

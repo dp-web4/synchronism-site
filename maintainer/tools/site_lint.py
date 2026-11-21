@@ -24,6 +24,16 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-21 (four visitor personas, 2026-11-21 log; explorer 2026-11-20 RG smoothing length).
+    (r"crossed the pre-registered kill threshold|A pre-registered falsification threshold was crossed|A pre-registered numerical threshold has been crossed", "2026-11-21", "no registry test was pre-registered (before the data); Kill Criterion Triggered means a threshold REGISTERED before the run", True),
+    (r"Is Dark Matter Incomplete Decoherence\?", "2026-11-21", "Key Claims title used the quantum word the landing says C is not; retitled (archive paper title kept as a quotation)"),
+    (r"Kubo susceptibility \(stat-mech near criticality\)", "2026-11-21", "a linear-response function is not a bounded sigmoidal map, and 'near criticality' contradicts the no-critical-exponents point"),
+    (r"refits one free &#x03C1;<sub>crit</sub> <em>per galaxy</em>|refits one free ρ_crit per galaxy", "2026-11-21", "the default 0.028 V^0.5 knee refits nothing; the defect is circularity (V_flat as input), not a free parameter"),
+    (r"one has been seen since 2017", "2026-11-21", "only GW170817 itself has an EM counterpart; 'one since 2017' read as a second event"),
+    (r"Saurabh &amp; Desmond \(2024\) all", "2026-11-21", "no locator; could not be sourced, likely a recall error"),
+    (r"recoverable via resynchronization\)", "2026-11-21", "conflates reversible dephasing (T2*, echo) with irreversible entanglement decoherence (T2)"),
+    (r"RG as published, with &epsilon; pointwise inside the divergence, is not tested|Refracted Gravity as published is not tested by this item", "2026-11-21", "RG as published smooths over a free D (M&D 2016 s2.2); for D >= 1 pc the algebraic LLR reading IS RG; the pointwise reading is the one its authors disclaim", True),
+    (r"Crossover zone \(N_corr = 3–11\)", "2026-11-21", "the code assigns crossover for 0.6 < gamma <= 1.4, i.e. N_corr ~ 2-11"),
     # Added 2026-11-20 (four visitor personas, 2026-11-20 log; explorer 2026-11-19; maintainer Oort run).
     (r"bounds the quadrature boost", "2026-11-20", "quadrature bounds the added VELOCITY by V_flat; the boost 1 + (V_flat C/v_b)^2 is unbounded; the 3.17 cap is floored division only"),
     (r"galaxy edges need 4", "2026-11-20", "4x = 13.7/3.17 used the sample maximum; the faintest galaxies need roughly twice the cap after error and trials"),

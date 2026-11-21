@@ -14,9 +14,14 @@ export default function CriticalDensity() {
       <ValidationBadge status="audited-negative" label="A-from-Jeans | scale-dependent, not derived" />
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
-        <EquationDisplay label="Galactic reference density from rotation velocity">
-          &#x03C1;<sub>crit</sub> = A &times; V<sub>flat</sub>&sup2;
+        <EquationDisplay label="Galactic reference density: the archive's own form (Sessions 52/62/64/65; galaxy plotter default)">
+          &#x03C1;<sub>crit</sub> = 0.028 &times; V<sub>flat</sub><sup>0.5</sup>
         </EquationDisplay>
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '-0.5rem' }}>
+          The other written form, &#x03C1;<sub>crit</sub> = A &times; V<sub>flat</sub>&sup2;, comes from the Jeans argument below. Its often-quoted
+          A = 0.029 is a units slip (the V<sup>0.5</sup> law&apos;s coefficient on a V&sup2; exponent); the Jeans formula itself gives
+          A &asymp; 4.6&times;10<sup>&minus;5</sup>. Both forms lose on SPARC (box below).
+        </p>
 
         <div id="knee-laws-in-use" className="card" style={{ borderLeft: '3px solid #f59e0b', marginBottom: '1.25rem', padding: '0.75rem 1rem' }}>
           <p style={{ margin: '0 0 0.5rem 0' }}>
@@ -151,12 +156,11 @@ export default function CriticalDensity() {
           to the ledger from this</strong> (it remains at 6): it closes a question rather than opening one.
         </p>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
-          At the units-hybrid A = 0.029 (the site&apos;s working value until 2026-11-14), NGC 3198 gives
-          &#x03C1;/&#x03C1;<sub>crit</sub> = 9.45&times;10<sup>&minus;4</sup> &mdash; recomputed from the{' '}
-          <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>plotter</Link>&apos;s own{' '}
-          <code>midplaneDensity()</code> (&#x03C1;(0) = 0.6164 M<sub>&#x2609;</sub> pc<sup>&minus;3</sup>), so it
-          can be re-run. Values of 0.934, 1.43&times;10<sup>&minus;3</sup> and 0.91 briefly shown here on
-          2026-08-05 were high by a factor of 1.515 and are corrected.
+          NGC 3198&apos;s innermost SPARC row (R = 0.32 kpc, the{' '}
+          <Link href="/galaxy-plotter" style={{ color: 'var(--color-accent-blue)' }}>plotter</Link>&apos;s data, &Upsilon;<sub>disk</sub> = 0.5,
+          &#x03C1; = &Sigma;/2h with h = 0.3 kpc) has &#x03C1; = 0.904 M<sub>&#x2609;</sub> pc<sup>&minus;3</sup>. At the archive&apos;s
+          0.028&middot;V<sub>flat</sub><sup>0.5</sup> knee (0.343) that is &#x03C1;/&#x03C1;<sub>crit</sub> = 2.64, above the knee; at the units-hybrid
+          A = 0.029 (knee 652) it is 1.39&times;10<sup>&minus;3</sup>, far below it. Which law is used decides whether this disc crosses.
         </p>
 
         <p style={{ color: 'var(--color-accent-warm)', fontSize: '0.85rem' }}>

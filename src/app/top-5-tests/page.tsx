@@ -26,7 +26,7 @@ const pendingTests = [
     tier: 'Tier 3',
     cost: '$1M–$5M',
     why: 'GW170817 already constrains Synchronism to GR-equivalent at −3×10⁻¹⁵ < Δc/c < +7×10⁻¹⁶ (bound: Abbott et al. 2017, ApJL 848, L13 (LIGO/Virgo/Fermi/INTEGRAL); dark-energy implications: Baker et al. 2017; the bound is asymmetric). Synchronism is consistent with GR\'s exact-zero prediction — meaning this constraint was passed vacuously. This test discriminates only if Synchronism predicts a positive signal above zero, which it does not currently. Listed to track if a positive-signal prediction is added.',
-    kill: 'No correlation at 10⁻¹⁶ level after 20+ events (assumes ~20 neutron-star mergers with electromagnetic counterparts; one has been seen since 2017, so this criterion has no realistic rate to be tested at)',
+    kill: 'No correlation at 10⁻¹⁶ level after 20+ events (assumes ~20 neutron-star mergers with electromagnetic counterparts; only one, GW170817 itself, has been seen to date, so this criterion has no realistic rate to be tested at)',
     color: 'var(--color-accent-violet)',
   },
   {

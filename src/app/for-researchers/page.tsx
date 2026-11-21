@@ -361,8 +361,7 @@ export default function ForResearchers() {
               <a href="#gdot-llr" style={{ color: 'var(--color-accent-blue)' }}>6. Solar-neighbourhood &#x0120;/G no-go</a>: any
               G<sub>eff</sub> that depends on the matter density smoothed on 1&ndash;10 pc drifts as the Sun moves through its
               neighbourhood; lunar laser ranging holds &#x0120;/G to (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> yr<sup>&minus;1</sup>, so
-              |d ln G<sub>eff</sub>/d ln &rho;| &#x2272; 10<sup>&minus;8</sup> at 1 pc and 3&ndash;6&times;10<sup>&minus;6</sup> at 10 pc (2&sigma;, measured Gaia gradient). 68 of 74 density-keyed laws die at 1 pc (62 at 10 pc), including an
-              algebraic, pc-smoothed law at both Refracted Gravity calibrations&apos; knee values (RG as published, with &epsilon; pointwise inside the divergence, is not tested by it). Promoted from the TEST-02 card 2026-10-27 (a researcher persona asked why it was not here).
+              |d ln G<sub>eff</sub>/d ln &rho;| &#x2272; 10<sup>&minus;8</sup> at 1 pc and 3&ndash;6&times;10<sup>&minus;6</sup> at 10 pc (2&sigma;, measured Gaia gradient). 68 of 74 density-keyed laws die at 1 pc (62 at 10 pc), and Refracted Gravity as published wherever its galaxy fits apply: RG averages &rho; over a smoothing length D it leaves free (Matsakos &amp; Diaferio 2016 &sect;2.2), and for D &#x2273; 1 pc &epsilon; is uniform across the solar system, so G<sub>eff</sub> = G/&epsilon;(&rho;<sub>s</sub>) is RG itself (explorer 2026-11-20, below).
             </li>
             <li>
               <a href="#locality-no-go" style={{ color: 'var(--color-accent-blue)' }}>1. Local-density no-go</a>: a knee keyed
@@ -1109,12 +1108,14 @@ export default function ForResearchers() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>What it kills.</strong> 68 of 74 density-keyed grid laws at &#x2113; = 1 pc (62 at 10 pc), including every TEST-02
             &ldquo;Newtonian-null&rdquo; window, and an algebraic, pc-smoothed G<sub>eff</sub> = G&middot;f(&rho;<sub>s</sub>) evaluated at both Refracted Gravity
-            calibrations&apos; knee values. <strong>Refracted Gravity as published is not tested by this item:</strong> its &epsilon;(&rho;) is read pointwise and sits
-            inside the divergence, and read pointwise at the Earth&ndash;Moon system it keys on the interplanetary medium, not on the stellar neighbourhood. The pointwise
-            check on file is a different one: the Sun&apos;s GM inferred from Earth and from Saturn, under &nabla;&middot;[&epsilon;&nabla;&Phi;] = 4&pi;G&rho; in the
-            solar wind (2026-09-15, under one in-repo reading of RG&apos;s Eq. 4.1, against a deliberately loose 10<sup>&minus;6</sup>), which RG passes only for Q &#x2272; 3.7&times;10<sup>&minus;7</sup>.
-            An LLR computation at the interplanetary density has not been done. (Corrected 2026-11-20: until then this line said LLR kills &ldquo;both Refracted Gravity
-            calibrations (the pointwise, non-covariant reading)&rdquo;; a researcher simulated-visitor persona pointed out that the computation smooths over 1&ndash;10 pc.) The six
+            calibrations&apos; knee values. <strong>Refracted Gravity as published:</strong> RG averages &rho; over a smoothing length D that it leaves
+            free (Matsakos &amp; Diaferio 2016 &sect;2.2: &ldquo;tens of astronomical units or larger&rdquo;). For D &#x2273; 1 pc, &epsilon; is uniform across the solar
+            system and G<sub>eff</sub> = G/&epsilon;(&rho;<sub>s</sub>) exactly, so this item tests RG itself. At D = 1&ndash;10 pc, LLR excludes all three published
+            calibrations under all three in-repo readings of Eq. 4.1 (30&times; to 10<sup>7</sup>&times; the 2&sigma; bound). At D &#x2273; 30 pc only the DMS joint
+            calibration survives LLR, and only if the smoothed solar density is &#x2273; 0.06 M<sub>&#x2609;</sub> pc<sup>&minus;3</sup>; it fails the dwarf-spheroidal
+            leg on file. Below about 0.5 pc the local tests pass, but RG&apos;s galaxy fits were never computed there: &epsilon; would follow the interstellar
+            medium&apos;s phase structure, and the verdict there is <em>untested</em>. The D &rarr; 0 reading, which Matsakos &amp; Diaferio disclaim, also fails
+            (the 2026-09-15 Earth&ndash;Saturn check). Explorer 2026-11-20, pre-registered, one AI session, not reviewed, RG authors not contacted. The six
             survivors are &#x03B3; = 2 laws with &rho;<sub>c</sub> &le; 10<sup>&minus;3</sup> M<sub>&#x2609;</sub>/pc&sup3;, Newtonian to
             10<sup>&minus;8</sup> at the Sun. Even the floored units-hybrid knee (&rho;<sub>crit</sub> = 0.029&middot;V&sup2; &asymp; 650
             M<sub>&#x2609;</sub>/pc&sup3;, &#x03B3; = 2; a units slip no archive fit uses, labelled &ldquo;published&rdquo; here until 2026-11-20) fails, and the archive&apos;s

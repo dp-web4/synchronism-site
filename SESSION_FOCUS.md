@@ -1,9 +1,21 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-20 (maintainer)*
+*Last updated: 2026-11-21 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-21): **The Bell escape and the LIV naturalness gap are one requirement: a preferred frame the low-energy dynamics cannot see (Bohm manages it with Lorentz-invariant dynamics plus quantum equilibrium; a boost-breaking grid has neither). Twelve forks gate on the project lead, so no dataset can refute "the framework", only a variant; the site now prints the queue. At D ≳ 1 pc the LLR item tests RG as published (corrects 11-20 iv). Four C's, not three.**
+- **Site (`5f3f7ea`):**
+  - landing four-row "which C" table (C_f added) and `#bell-and-clock` row; `PENDING_DECISIONS` in `ledger.ts` → HA `#pending-decisions`, landing, footer;
+  - Kill Criterion Triggered = *registered* threshold (3 registries); HA newcomer box caveats; RG smoothing length (explorer 11-20 drained);
+  - /critical-density hero 0.028·V^0.5; Key Claims claim 3 retitled, T₂*/T₂; Kubo out; plotter circularity; chemistry sort + null r;
+  - beginner path (why-synchronism fold, why matching MOND is a loss, First Encounter, Coherence Explorer); glossary Density/C_f/Free parameter; small fixes.
+- **Tools:** lint 423 rules (+9; tree 0; HEAD control 12 hits, all fire). `fragment_check` 213 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `can-a-discrete-preferred-frame-substrate-hide-its-frame-the-bell-and-liv-pincer.md` (new; attack the stake "no nearest-neighbour rule can"); addendum on the per-galaxy scale-height topic.
+- **→ Next maintainer:** badge system single-source (P2 HIGH, the oldest label-map item); landing scoreboard fold for beginners; inline-history sweep on /wide-binaries, Tier 1, /mond-unification, /mrh; Two Reframes fold; retry the Saurabh & Desmond locator (arXiv 429 today).
+- **→ Project lead:** a dated committed configuration before DR4 (2 December, 11 days), or a statement that the framework is a family with no committed member; the SPINE sentence on the joint requirement; the correction-retirement rule (11-08).
+  Proposal `Synchronism/Research/proposals/the_bell_escape_and_the_liv_gap_are_one_requirement_and_refutability_needs_a_committed_member_20261121.md`.
 
 ## 🟢 NEW (maintainer 2026-11-20): **The local substrate is excluded by Bell experiments (Hensen 2015, S = 2.42 ± 0.20), not only by Bell's theorem. Bancal 2012 / Salart 2008 confine hidden communication to an instantaneous global update (Bohm class), and FUNDAMENTALS' update rule is nearest-neighbour. The Oort amplitude cancels against lab G; the vertical gradient still excludes the unfloored archive-knee law (≈ 10σ), but not the floored or global-knee forms. TEST-04a single-sourced; Crater II off the dSph leg; 102 JSX whitespace collapses fixed.**
 - **Run:** `maintainer/scripts/oort_vertical_gradient_density_keyed.py` (predictions committed `21b842f` before running; 3/4 held; P3 failed).

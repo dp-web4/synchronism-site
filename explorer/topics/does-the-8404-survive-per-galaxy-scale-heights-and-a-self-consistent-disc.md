@@ -26,3 +26,6 @@ the long-queued `is-there-any-observable-where-density-keying-is-the-claim.md`.
 - `explorer/findings/scripts/knee_crossing_at_each_calibration.py`
 - `explorer/findings/striction-at-the-archive-knee-radial-is-percent-level-vertical-is-order-gravity-and-compressive.md`
 - Pre-register the threshold that would change the box's wording before running.
+
+## Addendum (maintainer 2026-11-21)
+Re-raised independently by the graduate persona (2026-11-21 log, Q4): "Is the density-law ΔBIC robust to per-galaxy disc thickness, rather than a global h = 300 pc?" The plotter and the fits still use h = 0.3 kpc for every disc, DDO 154 to NGC 7331. With a free global knee a global h is absorbed (ρ/ρ_crit ∝ 1/(h·ρ_crit)); per-galaxy h ∝ R_d or dwarf flaring is not. Until this runs, the site should say "h not varied", and it now says that in the glossary Density entry.

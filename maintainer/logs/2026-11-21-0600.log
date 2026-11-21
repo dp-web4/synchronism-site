@@ -1,3 +1,37 @@
 Starting Synchronism Maintainer Session at Sat Nov 21 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+I fixed the visitor log's top-severity site items and pushed them. The build passes, and lint and link checks are clean, but nothing was checked in a browser. I also wrote a research proposal on two points from today's log that are about the research, not the site.
+
+**Research direction** (proposal plus a dated block in PREDICTIONS.md, research repo `9cf2e5bc`):
+1. **Two physics problems turn out to be one requirement.**
+   - Bell experiments leave the substrate one escape: an instantaneous global update in a preferred frame (the Bohm class).
+   - The absolute-time sector fails precision Lorentz-invariance tests by 15–27 orders of magnitude unless something hides that same frame.
+   - Bohmian mechanics hides its frame in both ways: its underlying dynamics are Lorentz invariant, and its preferred frame is invisible in equilibrium. A grid whose update rule breaks that symmetry every tick has neither.
+   - That gives the ontology one question a theorist could answer in a page: can a discrete, preferred-frame substrate hide its frame? The stated position is "not with a nearest-neighbour rule," and the new explorer topic asks for it to be attacked.
+2. **Refutability is now held up by decisions, not analysis.** Twelve forks are waiting on you, the oldest since 2026-08-12. Until they're decided, a new dataset can refute one variant but not "the framework."
+   - The site now shows them as one queue on /honest-assessment, linked from the landing page and every footer.
+   - The recommendation: before Gaia DR4 (2 December, 11 days away), publish a dated committed configuration, or state outright that the framework is a family with no committed member.
+3. **Correction to the ledger.** Yesterday's explorer finding: Refracted Gravity as published averages density over a smoothing length D. For D ≳ 1 pc, the lunar-laser-ranging item tests Refracted Gravity itself. Yesterday's ledger block said it did not.
+
+**Site** (`5f3f7ea`, session log `df9d3c3`):
+- The landing page now lists four coherence functions in a table. The floored density form, C_f, was in use but missing from the list.
+- The landing page also gets a row stating the Bell/Lorentz joint requirement, with its proposed answer.
+- "Kill Criterion Triggered" was defined as crossing a pre-registered threshold. The site's own rule says no test was pre-registered, so it now says "registered" (written down before the run).
+- The /honest-assessment beginner box had dropped caveats the landing page carries. It now has them back, and the dated correction notes are gone from it.
+- Yesterday's explorer action on Refracted Gravity is applied on /for-researchers and /test-catalog.
+- The /critical-density hero equation now shows the archive's own knee law instead of the retracted one.
+- Smaller fixes on Key Claims, the galaxy plotter, the chemistry explorer's sort order, the beginner path and the glossary, plus 9 new lint rules. Each rule fires on the old version and finds nothing on the new one.
+
+**Not done:**
+- The badge system is still defined in four places under four names. This was a HIGH item and has been the oldest open site item for weeks.
+- I didn't move the landing scoreboard behind a fold for beginners.
+- Inline correction history is still heavy on /wide-binaries, Tier 1 and /mond-unification. Every persona flagged this, and the maintainer loop is what writes those notes, which the proposal says plainly.
+- I couldn't verify the "Saurabh & Desmond (2024)" citation on /wide-binaries because the arXiv server refused the request (rate limit), so I withdrew it on the page until a source turns up.
+
+**Needs your decision:**
+- A committed configuration before DR4 (2 December).
+- The SPINE sentence on the joint requirement.
+- The rule for retiring old correction notes, first proposed 2026-11-08.
+
+The one open external issue, Synchronism#4, has had no activity since its reply on 2026-10-13.

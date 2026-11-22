@@ -1,0 +1,32 @@
+== C0 identity control: 1D leapfrog lambda=1 ==
+  k=0.001: omega-k = 0.0
+  k=0.3: omega-k = 0.0
+  k=2.0: omega-k = 0.0
+  3D leapfrog lambda=1 along axis, eta: 0.0
+
+== P1 low-k eta per direction (exact dispersion, p=1e-6, m=0) ==
+  S1 scalar, continuous time             axis: -0.083333  face-diag: -0.041667  body-diag: -0.027778
+  S2 scalar leapfrog lambda=1            axis: +0.000000  face-diag: +0.041667  body-diag: +0.055556
+  S3 scalar leapfrog lambda=1/sqrt3      axis: -0.055556  face-diag: -0.013889  body-diag: -0.000000
+  F Wilson fermion r=1, cont. time       axis: -0.083333  face-diag: +0.083333  body-diag: +0.138889
+  predicted: S1 -1/12=-0.083333..-1/36=-0.027778; S2 0..+1/18=0.055556; S3 -1/18..0; F -1/12..+5/36=0.138889
+  sphere scan (4000 dirs, float):
+    S1 scalar, continuous time             min -0.08314 max -0.02787
+    S2 scalar leapfrog lambda=1            min +0.00019 max +0.05547
+    S3 scalar leapfrog lambda=1/sqrt3      min -0.05536 max -0.00009
+    F Wilson fermion r=1, cont. time       min -0.08237 max +0.13854
+
+== P2 stability: 3D 7-point leapfrog at lambda=1 ==
+  unstable fraction of BZ (sum sin^2 > 1): 0.7871
+  worst-mode amplification per tick |g| = 9.899 (corner k=(pi,pi,pi))
+  e-folds per Planck time 2.29; per second 4.25e+43
+  stability limit lambda_max = 1/sqrt(3) = 0.5774
+
+== P3 thresholds from exact dispersion, universal (same E2f for all species) ==
+  gamma->ee [S2 lambda=1, body-diag, eta=+0.05556]: numeric 3.1301692e-6 analytic 3.1301692e-6 ratio 1.0
+  p->p gamma [S2 lambda=1, body-diag]: numeric 1.5650846e-5 analytic 1.5650846e-5 ratio 1.0
+  gamma->ee [F Wilson, body-diag, eta=+0.13889]: numeric 3.5550481e-6 analytic 2.4893319e-6 ratio 1.4281133
+  p->p gamma [F Wilson, body-diag]: numeric 8.7154564e-6 analytic 1.244666e-5 ratio 0.70022453
+  S1 (subluminal) photon decay forbidden at all tested p: True
+  GZK-type [S1 axis] p=1.0e-6: eps_th numeric 7.71847e-16 analytic 7.71847e-16 ratio 1.0; LI value 7.7184e-16 (shift factor 1.0)
+  GZK-type [S1 axis] p=3.0e-6: eps_th numeric 2.57466e-16 analytic 2.57466e-16 ratio 1.0; LI value 2.5728e-16 (shift factor 1.0007)

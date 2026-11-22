@@ -1,0 +1,6 @@
+max (a^2/4) L over BZ = 1.000000 (stable at lambda=1 iff <= 1)
+  eta[axis] = +0.000000
+  eta[face-diag] = -0.020833
+  eta[body-diag] = -0.027778
+  predicted: -sum_{i<j} khat_i^2 khat_j^2 / 12 -> axis 0, face -1/48 = -0.020833, body -1/36 = -0.027778
+  sphere scan: min -0.02781 max -0.00004

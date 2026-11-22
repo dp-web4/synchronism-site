@@ -1,0 +1,6 @@
+Wilson gamma->ee m=1.0e-12: numeric/analytic(eta only) = 1.42811; m/(eta p_th^2) = 0.5697
+Wilson gamma->ee m=1.0e-14: numeric/analytic(eta only) = 1.42811; m/(eta p_th^2) = 0.5697
+Wilson gamma->ee m=1.0e-16: numeric/analytic(eta only) = 1.42811; m/(eta p_th^2) = 0.5697
+GZK S1 axis p=1.0e-5: numeric/analytic 0.997883; shift vs LI 1.0868; 1-sum x^3 = 0.3301
+GZK S1 axis p=2.0e-5: numeric/analytic 0.843084; shift vs LI 2.0449; 1-sum x^3 = 0.3301
+GZK S1 axis p=4.0e-5: numeric/analytic 0.313099; shift vs LI 7.4545; 1-sum x^3 = 0.3301

@@ -1,0 +1,10 @@
+Lorentz-invariant control: eps_th(10^19.75 eV) should be ~ (m_pi(2m_p+m_pi))/(4p)
+  numeric 5.13648 kT; analytic 5.13648 kT
+elementary eta_p=eta_pi=-0.0833                min eps_th =    80.73 kT at E_p=10^18.75 eV; at 10^19.75: 661.6 kT; at 10^20.5: 3722.0 kT
+elementary eta_p=eta_pi=-0.0278                min eps_th =    62.28 kT at E_p=10^18.75 eV; at 10^19.75: 381.8 kT; at 10^20.5: 2149.0 kT
+elementary eta_p=eta_pi=-0.001                 min eps_th =    27.07 kT at E_p=10^19.25 eV; at 10^19.75: 72.32 kT; at 10^20.5: 407.7 kT
+elementary eta_p=eta_pi=-0.0001                min eps_th =    15.22 kT at E_p=10^19.5 eV; at 10^19.75: 23.1 kT; at 10^20.5: 128.9 kT
+elementary eta_p=eta_pi=-1.0e-5                min eps_th =    8.561 kT at E_p=10^19.75 eV; at 10^19.75: 8.561 kT; at 10^20.5: 40.72 kT
+elementary eta_p=eta_pi=-1.0e-6                min eps_th =    4.814 kT at E_p=10^20.0 eV; at 10^19.75: 5.546 kT; at 10^20.5: 12.86 kT
+partonic (G&M) grid eta=-0.0833                min eps_th =    21.67 kT at E_p=10^19.25 eV; at 10^19.75: 48.8 kT; at 10^20.5: 275.0 kT
+partonic (G&M) grid eta=-0.0278                min eps_th =    17.67 kT at E_p=10^19.5 eV; at 10^19.75: 28.3 kT; at 10^20.5: 158.7 kT

@@ -114,7 +114,7 @@ export default function MRH() {
           </p>
           <ul style={{ paddingLeft: '1.2rem', margin: '0 0 0.6rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
             <li>
-              <strong>&#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub>&sup2;.</strong> V<sub>flat</sub> is the
+              <strong>&#x03C1;<sub>crit</sub> = A&middot;V<sub>flat</sub><sup>n</sup></strong> (the archive writes 0.028&middot;V<sub>flat</sub><sup>0.5</sup>; the 0.029&middot;V<sub>flat</sub>&sup2; some pages use is a units slip; the argument here holds for any power). V<sub>flat</sub> is the
               asymptotic rotation speed &mdash; defined in the r &rarr; &infin; limit, and by the BTFR fixed by
               the galaxy&apos;s <em>total</em> baryonic mass. So C at radius r is not C(&#x03C1;(r)); it is
               C(&#x03C1;(r), M<sub>total</sub>). A threshold on a local field has been keyed to a global label,
@@ -134,7 +134,7 @@ export default function MRH() {
           </ul>
           <p style={{ margin: '0 0 0.6rem' }}>
             <strong>The mechanical consequence.</strong> In the small-x regime SPARC actually samples
-            (median x &#x2248; 7&times;10<sup>&minus;5</sup>), C &#x2248; &#x03B3;&thinsp;x = &#x03B3;&#x03C1;/(A&thinsp;V<sub>flat</sub>&sup2;)
+            (median x &#x2248; 7&times;10<sup>&minus;5</sup>), C &#x2248; &#x03B3;&thinsp;x = &#x03B3;&#x03C1;/(A&thinsp;V<sub>flat</sub><sup>n</sup>)
             &mdash; &#x03B3; and A enter only as the ratio &#x03B3;/A. That is <em>one</em> free number per galaxy,
             not two, which is what the Fisher correlation &#x03C1;(ln&#x03B3;, lnA) = +1.000000 on{' '}
             <Link href="/for-researchers" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>{' '}

@@ -40,10 +40,7 @@ export default function KeyClaims() {
             it. The three badges on this page, in a few words each:{' '}
             <Link href="/glossary#reparametrization-badge" style={{ color: 'var(--color-accent-blue)' }}>Reparametrization</Link> = {badgeOneLiner('Reparametrization')};{' '}
             <Link href="/glossary#speculative-badge" style={{ color: 'var(--color-accent-blue)' }}>Speculative</Link> = {badgeOneLiner('Speculative')};{' '}
-            <Link href="/glossary#failed-badge" style={{ color: 'var(--color-accent-blue)' }}>Failed</Link> = {badgeOneLiner('Failed')}. &ldquo;Unfalsifiable as stated&rdquo; or &ldquo;untestable as stated&rdquo; after a dash is a descriptor saying <em>why</em> the Speculative badge applies to that claim, not a stronger sub-status. Definitions:{' '}
-            <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>
-              /honest-assessment#validation-badge-definitions
-            </Link>.
+            <Link href="/glossary#failed-badge" style={{ color: 'var(--color-accent-blue)' }}>Failed</Link> = {badgeOneLiner('Failed')}. &ldquo;Unfalsifiable as stated&rdquo; or &ldquo;untestable as stated&rdquo; after a dash is a descriptor saying <em>why</em> the Speculative badge applies to that claim, not a stronger sub-status.
           </p>
         </div>
 
@@ -80,7 +77,7 @@ export default function KeyClaims() {
                 <ValidationBadge status="speculative" />
               </div>
               <em style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
-                untestable as stated without a scan period; an ontological reframe
+                as an interpretation, reproduces QM; as a literal sequential scan, excluded by single-photon interference
               </em>
             </div>
           </div>
@@ -283,6 +280,19 @@ export default function KeyClaims() {
               claim is &ldquo;untestable as stated&rdquo; <em>without a scan period</em>: it stays an interpretation until it
               names a finite scan period T<sub>scan</sub> whose effects could be looked for. See{' '}
               <Link href="/two-reframes" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>.
+            </p>
+            <p id="mixture-objection" style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0 0 0.5rem' }}>
+              <strong>The objection that comes before any scan period (added 2026-11-22).</strong> A system that visits its modes one after
+              another is, averaged over any window longer than the scan, a classical <em>mixture</em>: probabilities for each mode and no
+              relative phase between them (in density-matrix terms, zero off-diagonal elements). A mixture gives no interference fringes, and
+              single particles do interfere. For the fringes to appear, the scan has to carry a definite relative phase between modes, and a
+              set of modes with amplitudes and relative phases is the wavefunction. So the literal scanning picture fails on interference at
+              every scan period (for slow scans this is now checked against data on{' '}
+              <Link href="/two-reframes#t-scan-interference" style={{ color: 'var(--color-accent-blue)' }}>Two Reframes</Link>), and the version
+              that keeps the phases is standard quantum mechanics in different words. That is why the badge stays Speculative rather than
+              becoming a prediction: what is left is a way of talking about QM, not a rival to it. (Raised by a graduate-student simulated-visitor
+              persona, 2026-11-22. Until then this card&apos;s caveat read &ldquo;untestable as stated without a scan period&rdquo;, which missed that the
+              objection applies first.)
             </p>
             <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0 0 0.5rem' }}>
               <summary style={{ cursor: 'pointer' }}>Revision note</summary>

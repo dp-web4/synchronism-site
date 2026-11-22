@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BADGES, BADGE_FAMILIES, OPERATIONAL_STATES, LIFECYCLE_VERBS, RETIRED_LABELS, CARD_STATES } from '@/lib/statusLabels';
+import { BADGES, OPERATIONAL_STATES, LIFECYCLE_VERBS, RETIRED_LABELS, CARD_STATES } from '@/lib/statusLabels';
 
 // One map of every label system on the site (added 2026-10-21).
 // A technical-writer persona counted five label systems kept apart only by ~22 "not a badge /
@@ -12,7 +12,7 @@ export default function LabelMap() {
   const mrh = BADGES.filter(b => b.family === 'mrh').map(b => b.name).join(', ');
   const desc = BADGES.filter(b => b.family === 'descriptive').map(b => b.name).join(', ');
   const rows: { system: string; answers: string; where: string; members: string }[] = [
-    { system: 'Status badge: MRH-relationship', answers: `Where does this claim sit relative to current research focus? (${BADGE_FAMILIES.mrh.gloss})`, where: 'Coloured pill under a page title or on a claim', members: mrh },
+    { system: 'Status badge: MRH-relationship', answers: `Where does this claim sit relative to current research focus? (MRH = Markov Relevancy Horizon, borrowed by analogy; says nothing about physics)`, where: 'Coloured pill under a page title or on a claim', members: mrh },
     { system: 'Status badge: descriptive', answers: 'What happened when it met data?', where: 'Coloured pill under a page title or on a claim', members: desc },
     { system: 'Retired label', answers: 'Nothing new; kept so old text still reads', where: 'Only in history notes and legends', members: RETIRED_LABELS.map(r => r.name).join(', ') },
     { system: 'Operational state', answers: 'What did this test do, or what happened to it?', where: 'Test cards (Tier 1, Test Roadmap), next to the badge', members: OPERATIONAL_STATES.join(', ') },
@@ -48,7 +48,7 @@ export default function LabelMap() {
           </tbody>
         </table>
       </div>
-      <h3 id="test-card-states" style={{ fontSize: '0.95rem', marginTop: '1.25rem', scrollMarginTop: '5rem' }}>States used on test cards</h3>
+      <h3 id="test-card-states" style={{ fontSize: '0.95rem', marginTop: '1.25rem', scrollMarginTop: '5rem' }}>Values that appear in a card&apos;s State slot</h3>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
         The &ldquo;State&rdquo; slot on a Tier 1 or Test Roadmap card draws from both operational states and lifecycle verbs. A card
         carries at most one badge and one State; a parenthesis after the State names a substitute run&apos;s state or what it is

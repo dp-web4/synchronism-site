@@ -69,8 +69,8 @@ export default function WideBinaries() {
             density applies to every orbit there. Its size depends on the knee &#x03C1;<sub>crit</sub>. At the solar-neighbourhood
             density &#x03C1; &asymp; 0.09&nbsp;M&#x2609;/pc&sup3; the velocity excess over Newton is as below. These are <em>absolute</em> boosts at the Sun, and no
             local measurement sees an absolute boost: a wide-binary ratio absorbs it into masses calibrated on close binaries (see the red box below), and laboratory G is
-            measured at the same smoothed density, so G<sub>lab</sub> already equals G/C(&#x03C1;<sub>s</sub>). What existing data see is how the boost changes with height (Oort/K<sub>z</sub> data)
-            and in time (lunar laser ranging):
+            measured at the same smoothed density, so G<sub>lab</sub> already equals G/C(&#x03C1;<sub>s</sub>). What existing data see is how the boost changes with height (Oort/K<sub>z</sub> data),
+            how it changes in time (lunar laser ranging), and <strong>the boost itself, read across cosmic time</strong> (Big Bang nucleosynthesis, next paragraph):
           </p>
           <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <li><strong>The archive&apos;s own calibration</strong> &#x03C1;<sub>crit</sub> = 0.028&middot;V<sup>0.5</sup> &asymp; 0.42&nbsp;M&#x2609;/pc&sup3;
@@ -92,6 +92,23 @@ export default function WideBinaries() {
             <li>A near-Newtonian 0.05&ndash;0.4% needs a knee between 3.8&times;10&#x207B;&#x2075; and 3.2&times;10&#x207B;&#x2074;&nbsp;M&#x2609;/pc&sup3; (&#x03B3; = 0.489).
               No other page uses a knee in that window, and it starts where the knee range ruled out on SPARC ends.</li>
           </ul>
+          <p id="bbn-absolute-boost" style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            <strong>Big Bang nucleosynthesis sees the absolute boost (maintainer 2026-11-22).</strong>{' '}
+            The &ldquo;no local measurement&rdquo; argument compares two things measured at one density. Nucleosynthesis compares two densities. In the first
+            minutes the density was about 10<sup>18</sup>&nbsp;M&#x2609;/pc&sup3;, far above every knee on this site, so C = 1 there and
+            G<sub>BBN</sub> = G<sub>bare</sub>, while G<sub>lab</sub> = G<sub>bare</sub>/C(&#x03C1;<sub>local</sub>). The density-keyed law therefore predicts
+            G<sub>BBN</sub>/G<sub>lab</sub> = C(&#x03C1;<sub>local</sub>), which is the absolute boost turned upside down. The light-element abundances measure that
+            ratio: G<sub>BBN</sub>/G<sub>0</sub> = 0.99 (+0.06/&minus;0.05) at 2&sigma; (Alvey, Sabti, Escudero &amp; Fairbairn, EPJC 80, 148, 2020,
+            arXiv:1910.10730). Against it: the archive knee (0.42) predicts 0.37&ndash;0.57 and is excluded at 17&ndash;36&sigma;; the measured velocity-blind knee
+            (0.161) predicts 0.21&ndash;0.80, excluded at 7.5&ndash;31&sigma;; Refracted Gravity&apos;s knee (0.0083) at &#x03B3; = 0.489 predicts 0.84&ndash;0.89, excluded
+            at 4&ndash;6&sigma;; at &#x03B3; = 2 that knee is Newtonian and passes. Ranges cover &#x03B3; = 2 and 0.489, floored and unfloored C. This is a third root for the
+            amplitude, independent of SPARC, and unlike lunar ranging it needs no assumption about how density varies along the Sun&apos;s path. It excludes
+            the floored archive-knee law that the Oort test lets through. <em>Condition:</em> it applies only when density is smoothed over a scale that puts the
+            laboratory and the solar neighbourhood at one density, which is the reading these amplitudes use. Read pointwise, lab G sits at Earth&apos;s density
+            (C = 1) and this argument says nothing. (<code>maintainer/scripts/bbn_g_ratio_density_keyed.py</code>, predictions committed before the run; 4 of 4
+            held. The bound&apos;s 2&sigma; lower half-width is treated as Gaussian. A researcher simulated-visitor persona raised the argument from recall on
+            2026-11-22; the numbers here were recomputed and the bound retrieved.)
+          </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>The static amplitude is not the only handle: a density-keyed boost changes with time (explorer, 2026-09-23).</strong>{' '}
             Everything in one neighbourhood shares the same boost, so a ratio taken at one instant cancels it. That is why
@@ -159,8 +176,9 @@ export default function WideBinaries() {
           9&ndash;116%, but <strong>a wide-binary test does not see it</strong>: the boost is the same for wide and close pairs in one
           neighbourhood, and stellar masses come from relations calibrated on close-binary orbits there, so the boost is absorbed into the
           masses and the wide-to-Newton ratio is 1 (TEST-02&apos;s &#x03B3;<sub>g</sub> &equiv; 1). No local measurement sees the absolute boost, because
-          laboratory G carries it too. Its change with height is what the vertical Oort (K<sub>z</sub>) data see, and its change in time is what lunar laser ranging sees (the box above;
-          height leg added 2026-11-20). (Corrected 2026-11-14.
+          laboratory G carries it too. Its change with height is what the vertical Oort (K<sub>z</sub>) data see, its change in time is what lunar laser ranging sees, and the boost
+          itself is what Big Bang nucleosynthesis sees, because G then was measured at a density where C = 1 (the box above; height leg added 2026-11-20, nucleosynthesis leg 2026-11-22:
+          every knee except Refracted Gravity&apos;s at &#x03B3; = 2 is excluded at 4&sigma; or more, if density is smoothed). (Corrected 2026-11-14.
           This paragraph previously said &ldquo;Gaia can see that; a confirmed Newtonian null would exclude those knees too&rdquo;, which contradicted TEST-02; a researcher
           simulated-visitor persona put the two side by side.) So no wide-binary outcome selects Synchronism: a MOND-scale anomaly favours MOND and gives this framework no support over
           MOND (its acceleration-keyed version is a MOND interpolating function, and the &#x03B3; an anomaly needs is Cassini-excluded), and a Newtonian null favours Newton.
@@ -212,7 +230,7 @@ export default function WideBinaries() {
           </table>
         </div>
         <p>
-          Cassini already speaks to this question for modified-Poisson MOND. Desmond, Hees &amp; Famaey 2024 state that the Solar-System quadrupole &ldquo;implies, to high precision, no deviation from Newtonian gravity in nearby wide binaries&rdquo;; Park et al. 2026 put an upper bound of 2% (95%) on the MOND boost at the Sun&apos;s position. So a Chae-type boost in DR4 would be in tension with Cassini for that class of theory, whatever it does for rotation curves.
+          Cassini already speaks to this question for modified-Poisson MOND. Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781) state that the Solar-System quadrupole &ldquo;implies, to high precision, no deviation from Newtonian gravity in nearby wide binaries&rdquo;; Park et al. 2026 put an upper bound of 2% (95%) on the MOND boost at the Sun&apos;s position (no arXiv locator checked on this site yet; treat as pending, the rule that withdrew &ldquo;Saurabh &amp; Desmond 2024&rdquo;). So a Chae-type boost in DR4 would be in tension with Cassini for that class of theory, whatever it does for rotation curves.
         </p>
 
         <h2>Current Observational Status (abstracts re-read 2026-11-08)</h2>
@@ -255,7 +273,7 @@ export default function WideBinaries() {
           systems would do more than further modelling. <strong>One number was not reproduced:</strong> Chae et al.&apos;s consolidated &Gamma; = 0.102 (this calculation gives 0.139 from the same per-system values; {THIRD_PARTY_CLAIM_LABEL} either implementation could be wrong, and their consolidation script is not public).
           The adjudication will turn on: (1) a real contaminant model for these 36; (2) independent ≥3σ boost
           confirmation → kill fires; (3) independent null replication → degenerate survival; (4) Gaia DR4. Mock-injection cross-validation of the deprojection step, once listed here, is done.
-          Saglia et al. 2025 and Pasquini et al. 2026 lean Newtonian or deflationary (Boufourou 2026, listed here until 2026-11-10, is withdrawn; see above). Saad &amp; Ting&apos;s 1.00 is listed above as they report it.
+          Saglia et al. 2025 and Pasquini et al. 2026 (locators pending, as for Park et al. above) lean Newtonian or deflationary (Boufourou 2026, listed here until 2026-11-10, is withdrawn; see above). Saad &amp; Ting&apos;s 1.00 is listed above as they report it.
         </div>
 
         <div style={{

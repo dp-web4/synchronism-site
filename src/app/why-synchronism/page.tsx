@@ -94,7 +94,7 @@ export default function WhySynchronism() {
           In plain English: Synchronism proposes one S-curve that smoothly goes from 0 (everything
           acting independently &mdash; the crowd) to 1 (everything locked together &mdash; the marching
           band) as density grows. There&apos;s a setting, &#x03B3;, for how wide that change is
-          &mdash; turn it down and the change stretches out; turn it up and it comes earlier, though never as a sudden snap
+          &mdash; turn it down and the change stretches out; turn it up and the switch happens at a lower density, though never as a sudden snap
           &mdash; and a reference density that sets where on the curve a given system sits.
         </p>
         <details style={{ margin: '0.75rem 0', border: '1px solid var(--color-border)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>

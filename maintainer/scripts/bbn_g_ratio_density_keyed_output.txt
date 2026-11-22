@@ -1,0 +1,19 @@
+rho_m at BBN (z=4e+08) = 2.54e+18 Msun/pc^3
+
+knee                          gamma       form  C_local boost 1/C  v excess        C_BBN  z Alvey  z Copi
+---------------------------------------------------------------------------------------------------------
+archive 0.028*V^0.5 (MW)      2.000    floored   0.5684     1.759     32.6%      0.0e+00     16.9     2.8
+archive 0.028*V^0.5 (MW)      2.000  unfloored   0.3699     2.703     64.4%      0.0e+00     24.8     4.0
+archive 0.028*V^0.5 (MW)      0.489    floored   0.3798     2.633     62.3%      0.0e+00     24.4     3.9
+archive 0.028*V^0.5 (MW)      0.489  unfloored   0.0947    10.564    225.0%      0.0e+00     35.8     5.7
+velocity-blind (measured)     2.000    floored   0.8017     1.247     11.7%      0.0e+00      7.5     1.3
+velocity-blind (measured)     2.000  unfloored   0.7105     1.408     18.6%      0.0e+00     11.2     1.9
+velocity-blind (measured)     0.489    floored   0.4614     2.167     47.2%      0.0e+00     21.1     3.4
+velocity-blind (measured)     0.489  unfloored   0.2138     4.677    116.3%      0.0e+00     31.0     5.0
+RG elliptical                 2.000    floored   0.9999     1.000      0.0%      0.0e+00     -0.4     0.1
+RG elliptical                 2.000  unfloored   0.9999     1.000      0.0%      0.0e+00     -0.4     0.1
+RG elliptical                 0.489    floored   0.8879     1.126      6.1%      0.0e+00      4.1     0.8
+RG elliptical                 0.489  unfloored   0.8363     1.196      9.4%      0.0e+00      6.1     1.1
+
+z = (central - predicted G_BBN/G_lab) / (1-sigma lower half-width); positive = prediction below the data.
+C_BBN column shows 1 - C at BBN (0 means C = 1 to double precision).

@@ -515,7 +515,7 @@ export default function ResearchPhilosophy() {
 
         <h2>Related Work in AI-Driven Discovery</h2>
         <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.75rem' }}>
-          The A2ACW negative result — AI-AI adversarial collaboration fails when both agents share the same training distribution — is most informative when placed against the optimistic AI-discovery claims it directly addresses:
+          The A2ACW hypothesis — AI-AI adversarial collaboration fails when both agents share the same training distribution — is <em>untested</em> on this page&apos;s own evidence: the 2026-05-22 control could not have returned a specificity above 0, and the one same-vendor versus cross-vendor comparison ran the other way (the same-vendor pair was the stricter one). Its registered test is the cross-vendor corpus control. With that status, it is most informative when placed against the optimistic AI-discovery claims it addresses: (Reworded 2026-11-22 from &ldquo;The A2ACW negative result&rdquo;, stated as established; a researcher simulated-visitor persona.)
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem', fontSize: '0.88rem' }}>
           {[

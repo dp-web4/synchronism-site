@@ -100,7 +100,7 @@ export default function TestCatalog() {
           {LIFECYCLE_VERBS.join(' | ')} &mdash; the provenance of a row.
           Both lists are complete and rendered from one source (Tier 1&apos;s card legend draws from both lists, from the same file); neither is a verdict on the claim. Retired, no longer
           assigned: {RETIRED_LABELS.map(r => r.name).join(', ')}.{' '}
-          <Link href="/glossary#test-card-states" style={{ color: 'var(--color-text-muted)' }}>States used on test cards, one line each →</Link>{' '}
+          <Link href="/glossary#test-card-states" style={{ color: 'var(--color-text-muted)' }}>Values that appear in a card&apos;s State slot, one line each →</Link>{' '}
           <Link href="/glossary" style={{ color: 'var(--color-text-muted)' }}>Definitions (Glossary) →</Link>{' '}
           <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-text-muted)' }}>
             Canonical definitions (Honest Assessment) →

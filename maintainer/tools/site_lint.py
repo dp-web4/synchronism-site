@@ -24,6 +24,18 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-22 (four visitor personas, 2026-11-22 log; explorer 2026-11-21 Bell+LIV pincer).
+    (r"sharpest possible switch", "2026-11-22", "no gamma gives a sharp switch (10-90% width >= 1.17 dex); gamma = 2 is the earliest rise, not the sharpest"),
+    (r"gentler, earlier-starting", "2026-11-22", "smaller gamma gives a LATER, gentler rise; the caption contradicted the regime label beside it"),
+    (r"boundary zone where the framework says chemistry lives", "2026-11-22", "the gamma ~ 1 'boundary' reading is retracted"),
+    (r"Start with Presence", "2026-11-22", "rho is density on every computing page; 'presence' was never turned into a measurement"),
+    (r"captures density(→|&rarr;|->)coherence well", "2026-11-22", "the density law is Excluded; the beginner exit line contradicted the verdict"),
+    (r"only Bell escape left|the only escape left", "2026-11-22", "three realist escapes remain (Wharton & Argaman 2020): foliation, retrocausal, superdeterminism; only the first is a forward tick"),
+    (r"used everywhere else\s*\(equations\.ts\)", "2026-11-22", "the archive's fits use 0.028 V^0.5; equations.ts now states that form"),
+    (r"neither is a validation badge|nine validation badges|the component is still called a validation badge|site&apos;s validation\s+badge taxonomy", "2026-11-22", "renamed status badge 2026-11-16"),
+    (r"BCS superconductors, BECs, superfluids — undergo transitions", "2026-11-22", "He-4's lambda transition has a broad critical region; 'sharpest in nature' holds for BCS only"),
+    (r"The A2ACW negative result", "2026-11-22", "untested on the page's own evidence: uninformative control; same-vendor pair was the stricter one"),
+    (r"bare local construction gives 1\.98 &le; 2\)", "2026-11-22", "read as if 1.85 were Bell's bound"),
     # Added 2026-11-21 (four visitor personas, 2026-11-21 log; explorer 2026-11-20 RG smoothing length).
     (r"crossed the pre-registered kill threshold|A pre-registered falsification threshold was crossed|A pre-registered numerical threshold has been crossed", "2026-11-21", "no registry test was pre-registered (before the data); Kill Criterion Triggered means a threshold REGISTERED before the run", True),
     (r"Is Dark Matter Incomplete Decoherence\?", "2026-11-21", "Key Claims title used the quantum word the landing says C is not; retitled (archive paper title kept as a quotation)"),

@@ -9,7 +9,10 @@
  * collective system. Any page showing this mapping must import from here.
  *
  * The relation γ = 2/√N_corr is itself audited as SIGN-INVERTED (see Caveat 2 on
- * /gamma-calculator): it assigns the sharpest transition to the least-correlated system.
+ * /gamma-calculator): it gives the least-correlated system the earliest, steepest-starting rise and the
+ * most collective system the flattest. (No γ gives a sharp switch: the 10–90% width never drops below 1.17 dex.)
+ * Captions below use 'earlier/later, gentler/steeper rise' for the curve and keep 'sharp' for real materials
+ * only (2026-11-22, after a technical-writer visitor found captions contradicting the regime labels).
  * This file is the canonical statement of what the framework asserts, not an endorsement.
  */
 
@@ -37,13 +40,13 @@ export const GAMMA_PRESETS: GammaPreset[] = [
     label: 'Ideal gas (N_corr = 1, γ = 2; also the framework’s original galaxy guess, now disfavoured)',
     ncorr: 1,
     story:
-      'Nothing moves together in an ideal gas — every particle is its own unit (N_corr = 1) — so γ hits its maximum of 2. In this framework that means the sharpest possible switch from "individuals" to "crowd" as density rises.',
+      'Nothing moves together in an ideal gas — every particle is its own unit (N_corr = 1) — so γ hits its maximum of 2. On this curve that means the earliest rise this family allows, starting at the lowest density. It is not a sharp switch: above γ ≈ 1 raising γ mostly moves the rise earlier, and its width never drops below 1.17 dex (a factor of about 15 in density).',
   },
   {
     label: 'Liquid water',
     ncorr: 4,
     story:
-      'Water molecules hydrogen-bond into small transient clusters (~4 moving together), which drops γ from 2 toward 1 — the boundary zone where the framework says chemistry lives. Compare: one preset click took you from "lone particles" to "small teams."',
+      'Water molecules hydrogen-bond into small transient clusters (~4 moving together), which drops γ from 2 to 1, so the rise starts a little later. (The archive once called γ ≈ 1 the zone where chemistry lives; that reading is retracted, see The γ ≈ 1 Band.) Compare: one preset click took you from "lone particles" to "small teams."',
   },
   {
     // Label says 'back-fitted' up front (visitor 2026-09-23): a reader arriving from
@@ -53,19 +56,19 @@ export const GAMMA_PRESETS: GammaPreset[] = [
     ncorr: 17,
     galaxySector: true,
     story:
-      'This is not a condensed-matter system — it is the framework\'s own galaxy parameter, run backwards through its own formula. The SPARC best fit quoted on /galaxy-rotation is γ ≈ 0.49, and N_corr = (2/γ)² sends it to ≈ 17 correlated units: between liquid water (4) and an enzyme active site (30). The framework\'s data-preferred galaxy value therefore says a galaxy is about as collectively organized as a small protein pocket — while a BCS superconductor two rows down gets 10⁷.',
+      'This is not a condensed-matter system — it is the framework\'s own galaxy parameter, run backwards through its own formula. The SPARC best fit quoted on /galaxy-rotation is γ ≈ 0.49, and N_corr = (2/γ)² sends it to ≈ 17 correlated units: between liquid water (4) and an enzyme active site (30). The framework\'s data-preferred galaxy value therefore says a galaxy is about as collectively organized as a small protein pocket — while the BCS superconductor at the bottom of the table gets 10⁷.',
   },
   {
     label: 'Enzyme site',
     ncorr: 30,
     story:
-      'An enzyme’s active site moves as one unit of ~30 atoms. More teamwork → smaller γ → a gentler, earlier-starting S-curve. You’re watching γ measure "how big is the team?"',
+      'An enzyme’s active site moves as one unit of ~30 atoms. More teamwork → smaller γ → a gentler S-curve that rises later. You’re watching γ measure "how big is the team?"',
   },
   {
     label: 'Ferromagnet',
     ncorr: 100,
     story:
-      'In a magnet, ~100 spins per correlated patch flip together. γ keeps falling as the teams get bigger — and notice the direction: bigger teams are getting FLATTER curves, not sharper ones.',
+      'In a magnet, ~100 spins per correlated patch flip together. γ keeps falling as the teams get bigger — and notice the direction: bigger teams are getting later, FLATTER curves, while in real materials bigger correlated teams go with sharper transitions.',
   },
   {
     label: 'BEC',

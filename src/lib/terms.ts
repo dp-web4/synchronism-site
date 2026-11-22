@@ -488,7 +488,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Reparametrization (badge)',
     fullName: 'Status Badge: Reparametrization',
     brief: 'The result is mathematically equivalent to existing physics expressed in different variables.',
-    explanation: 'A reparametrization is not a failure \u2014 it shows the framework is consistent with known physics. But it is not a new prediction. Example: the \u03b7 reachability factor = Abrikosov-Gor\u2019kov pair-breaking (1960). The honest assessment tracks reparametrizations separately from genuinely novel predictions. For the general concept, see the plain Reparametrization entry.',
+    explanation: 'Not a failure and not a win: known physics in new notation, so it adds no new prediction and is not evidence for the framework. It does show the framework can reproduce what is already known, which is the minimum, not a result. Example: the \u03b7 reachability factor = Abrikosov-Gor\u2019kov pair-breaking (1960). The honest assessment tracks reparametrizations separately from genuinely novel predictions. For the general concept, see the plain Reparametrization entry.',
     learnMore: '/honest-assessment#validation-badge-definitions',
   },
   'badge-strongly-supported': {
@@ -866,7 +866,7 @@ export const terms: Record<string, TermDefinition> = {
     term: 'Template Bias Caveat',
     fullName: 'Template Bias Caveat (badge qualifier on the chemistry rate)',
     brief: 'A warning attached to the chemistry \u201c89% boundary-consistent\u201d rate: the rate was scored against a template that any smooth S-shaped trend in atomic number would also satisfy, so it measures the template, not the framework.',
-    explanation: 'Appears on Why Synchronism (Beginner step 1) next to the chemistry result. The 89% counts how many of 1,703 logged chemistry sessions (a session counter, not a census of phenomena) sit where a sigmoid in density says they should. Each correlation is a post-hoc fit against a \u03b3 proxy that contains the Debye temperature, so the template, not the coherence equation, explains the rate. (Corrected 2026-10-31: a polynomial-in-Z null cited here was run on synthetic curves, not the chemistry rows.) It is a qualifier on a descriptive number, not one of the nine validation badges.',
+    explanation: 'Appears on Why Synchronism (Beginner step 1) next to the chemistry result. The 89% counts how many of 1,703 logged chemistry sessions (a session counter, not a census of phenomena) sit where a sigmoid in density says they should. Each correlation is a post-hoc fit against a \u03b3 proxy that contains the Debye temperature, so the template, not the coherence equation, explains the rate. (Corrected 2026-10-31: a polynomial-in-Z null cited here was run on synthetic curves, not the chemistry rows.) It is a qualifier on a descriptive number, not one of the nine status badges.',
     learnMore: '/chemistry-correlation-explorer',
   },
   'ledger-buckets': {

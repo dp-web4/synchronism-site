@@ -18,7 +18,7 @@ export default function ParameterDerivations() {
           <strong style={{ color: '#f59e0b' }}>Honest framing:</strong> Despite the page title, this is not a
           derivations page in the mathematical sense. γ = 2/√N<sub>corr</sub> is a <strong>motivated ansatz</strong> (the
           factor 2 is not rigorously derived; CLT is invoked for correlated DOF where CLT doesn&apos;t apply).
-          ρ<sub>crit</sub> = A·V<sub>flat</sub>² with A ≈ 0.029 M<sub>☉</sub>&nbsp;pc<sup>−3</sup>&nbsp;(km/s)<sup>−2</sup> is <strong>calibrated</strong> to the Jeans criterion — V<sub>flat</sub> is the input.
+          ρ<sub>crit</sub> = 0.028·V<sub>flat</sub><sup>0.5</sup> (the archive&apos;s form) is <strong>calibrated</strong>: it comes from a Jeans-style estimate whose length scale was fitted, and V<sub>flat</sub> is the input. The form ρ<sub>crit</sub> = 0.029·V<sub>flat</sub>² that some pages reason from puts that coefficient on a different power of V, a units slip (item 3).
           The scaling constants are dimensional analyses with 3–10% errors that may reflect implicit calibration
           rather than predictive accuracy. The functional form tanh is <strong>motivated</strong> by analogy with the sigmoid/compander family (μ-law, Hill, logistic), not uniquely derived. <strong>Update (2026-06-07):</strong> A-from-Jeans — the only surviving first-principles candidate — is now audited-negative: the derivation that produces 0.029 uses a different scaling law (ρ<sub>crit</sub> ∝ V<sup>0.5</sup>) than the framework's stated ρ<sub>crit</sub> ∝ V², and the stated formula gives A ≈ 4.6×10⁻⁵ (600× off). Zero parameters have independent first-principles derivations. A more accurate title: <em>Parameter Calibration &amp; Honest Ansätze</em>.
           Read this page before concluding the equation is derived.
@@ -183,7 +183,7 @@ export default function ParameterDerivations() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>3. A = 4&#x03C0;/(&#x03B2;<sub>J</sub>&sup2;GR&#x2080;&sup2;) &#x2248; 0.029 M<sub>&#x2609;</sub>&nbsp;pc<sup>&minus;3</sup>&nbsp;(km/s)<sup>&minus;2</sup></h3>
+              <h3>3. A = 4&#x03C0;/(&#x03B2;<sub>J</sub>&sup2;GR&#x2080;&sup2;): the stated value 0.029 is a units slip, and the formula gives &#x03C1;<sub>crit</sub> &prop; V<sup>&minus;2</sup></h3>
               <ValidationBadge status="audited-negative" label="Audited-Negative (scaling) — Normalization Unrunnable" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #53, #66 — decisive test run 2026-06-07; badge split 2026-09-05</p>
@@ -230,7 +230,7 @@ export default function ParameterDerivations() {
               &rarr; +2, MOND-requirement &rarr; &minus;2 — and no derived one.<strong> Restated 2026-08-28 (propagated here 2026-09-24):</strong> measured on SPARC (N = 129), the Jeans knee
               carries no velocity exponent at all, &#x03C1;<sub>crit</sub> &prop; V<sup>&minus;0.16 &plusmn; 0.19</sup> (median 0.161
               M&#x2299;/pc&sup3;). The framework&apos;s V<sup>+2</sup> is excluded at ~11&sigma; (one point per galaxy, N&nbsp;=&nbsp;129, galaxy bootstrap). A V<sup>&minus;2</sup> law <em>for this Jeans-construction knee</em> is excluded at ~10&sigma; by the same exponent, so the construction cannot be the a&#x2080; knee. That is not a test of MOND: MOND&apos;s transition density (the mean enclosed density where g<sub>bar</sub> = a&#x2080;) is a different quantity, and it scales as V<sup>&minus;2</sup> by construction on any sample that obeys the BTFR. The refutation stands as a <em>wrong exponent</em>, not a sign inversion. The 240&times;&ndash;300,000&times;
-              magnitude is withdrawn: it used &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, but A = 0.028 was derived (Session 53)
+              magnitude is withdrawn: it used &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2;, but A = 0.028 was computed (Session 53, with a length scale fitted in Sessions 65&ndash;66)
               for &#x03C1;<sub>crit</sub> = A&middot;V<sup>0.5</sup>. Whether a disc crosses the knee is therefore reopened and
               estimator-dependent. This is the{' '}
               <a href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>locality no-go</a>{' '}
@@ -244,8 +244,8 @@ export default function ParameterDerivations() {
               <ol style={{ marginTop: '0.5rem', marginBottom: '0.5rem', paddingLeft: '1.25rem' }}>
                 <li><strong>Wrong scaling law:</strong> The only computation that yields A ≈ 0.0294 uses
                 ρ<sub>crit</sub> ∝ V<sup>0.5</sup> (Session 65: exponent B=0.5) with a fitted R₀ = 0.07 kpc/(km/s)^0.75
-                — <em>not</em> R₀ = 8 kpc and not the framework&apos;s ρ<sub>crit</sub> ∝ V² used everywhere else
-                (equations.ts). The derivation that hits 5% underpins a law the framework does not use.</li>
+                — <em>not</em> R₀ = 8 kpc and not the ρ<sub>crit</sub> ∝ V² that this card was written against. The derivation that hits 5% underpins the V<sup>0.5</sup> law, not the V² one.
+                (Until 2026-11-22 this line called V² the form &ldquo;used everywhere else (equations.ts)&rdquo;. The archive&apos;s fits use V<sup>0.5</sup>; the site&apos;s library now states that form too.)</li>
                 <li><strong>Stated formula gives 600× off:</strong> A = 4π/(β<sub>J</sub>²·G·R₀²) with β<sub>J</sub>=1,
                 R₀=8 kpc gives A ≈ 4.6×10⁻⁵ M<sub>☉</sub>&nbsp;pc<sup>−3</sup>&nbsp;(km/s)<sup>−2</sup> (3.09×10⁻³⁰ kg&nbsp;s²&nbsp;m⁻⁵) — not 0.029 in the same units. The Session 66 markdown bridges them with an
                 unexplained 644× &ldquo;unit conversion&rdquo; (644 = 0.0294/4.565×10⁻⁵ with G = 4.301×10⁻³ pc&nbsp;(km/s)²/M<sub>☉</sub>, R₀ = 8000 pc;
@@ -497,10 +497,12 @@ export default function ParameterDerivations() {
               cH&#x2080; &#8776; c&sup2;(&#x039B;/3)<sup>1/2</sup> &mdash; the site has cited only the H&#x2080; half. The
               &#x039B; half predicts <em>zero</em> epoch evolution, since &#x039B; is constant, and fares worse
               against Ciocan than branch (A): at the Milgrom-local normalization, a constant a&#x2080; = 1.20
-              against the observed 2.38 (+0.12/&minus;0.10, 95% CI) is roughly <strong>23&#x03C3;</strong> away on the
-              measurement error alone with the low-side 1&#x03C3; = 0.051 (about 21&#x03C3; with the anchor&apos;s own &plusmn;0.02 in quadrature; 19.7&#x03C3; at 1&#x03C3; &asymp; 0.06, the paper&apos;s own figure being 19&#x03C3;), and <strong>4.4&#x03C3;</strong>{' '}
-              carrying the anchor&apos;s &plusmn;0.26 as the table above does for branch (A), against branch (A)&apos;s ~4&#x03C3;
-              and 0.5&#x03C3; under the same two conventions. Like for like, the evolving a&#x2080; is the closer of the
+              against the observed 2.38 (+0.12/&minus;0.10, 95% CI) is <strong>4.4&#x03C3;</strong> away carrying the anchor&apos;s
+              &plusmn;0.26, the same convention the table above uses for branch (A), against branch (A)&apos;s ~4&#x03C3;. That is the comparison
+              to read, because the anchor spread is what made the level &ldquo;untestable&rdquo; for branch (A), and it cannot be dropped for one side only.
+              (Until 2026-11-22 this sentence led with &ldquo;roughly 23&#x03C3;&rdquo;, 21&#x03C3; and 19.7&#x03C3; on the measurement error alone, the paper&apos;s
+              own figure being 19&#x03C3;; on that convention branch (A) sits at 0.5&#x03C3;. A graduate-student simulated-visitor persona pointed out that
+              the level was treated as a statistic for one side and not the other.) Like for like, the evolving a&#x2080; is the closer of the
               two on this sample (stated plainly 2026-10-10, with the RC100 counter-sample on Relation to MOND), and the
               level-free slope says the same thing without an anchor: constant a&#x2080; is n = 0, excluded by
               Ciocan&apos;s bins at 5&#x03C3;. If the paper&apos;s global slope (n = 1.15) holds, an a&#x2080; evolving

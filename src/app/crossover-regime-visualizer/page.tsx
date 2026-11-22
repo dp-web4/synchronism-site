@@ -14,7 +14,7 @@ const regions = [
     range: [0, 0.6],
     systems: ['Superconductors', 'BEC', 'Superfluids', 'Cooper pairs', 'Quantum computers'],
     physics: 'Many correlated particles (large N_corr, small γ) — the strongly correlated regime. BEC, BCS superconductors, and superfluids sit here because they have enormous N_corr, giving them very small γ (BCS: N_corr = 10⁷, the γ Calculator preset, giving γ = 2/√10⁷ ≈ 6×10⁻⁴). Important: "collective" in the C-axis sense (C→1) is separate from "large N_corr" here — small γ gives a nearly flat tanh curve, so C stays near 0 at physically accessible densities despite large N_corr.',
-    realityCheck: 'Reality check: the systems in this bin — BCS superconductors, BECs, superfluids — undergo transitions that are among the SHARPEST in nature. The formula just told you they are the flattest. You are looking directly at the inversion; that is the finding.',
+    realityCheck: 'Reality check: conventional (BCS) superconductors in this bin have one of the SHARPEST transitions in nature (critical fluctuations are confined to a tiny window around T_c). The formula just told you they are the flattest. You are looking directly at the inversion; that is the finding. BECs and superfluid helium are the counter-case: helium-4\'s lambda transition has a broad critical region, with fluctuations measured over many decades of temperature. Transition width tracks how many particles share one coherence volume, not how "collective" a system is, so N_corr is the wrong variable either way.',
   },
   {
     id: 'boundary',
@@ -88,8 +88,8 @@ export default function PhaseBoundaryVisualizer() {
           <strong style={{ color: 'var(--color-accent-blue)' }}>What this tool is for:</strong> drag
           the slider to see which physical systems the &#x03B3; formula groups together &mdash; and why
           that grouping is now known to be misleading (the placements carry the formula&apos;s
-          documented sign inversion: real BCS/BEC transitions are among the sharpest in nature, yet
-          the formula files them at the flat end).
+          documented sign inversion: real BCS superconductor transitions are among the sharpest in nature, yet
+          the formula files them at the flat end. Superfluid helium-4, by contrast, has a famously broad critical region, so &ldquo;collective&rdquo; is not what orders transition width either; the number of particles per coherence volume is).
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
           <strong>One more thing to know before reading the map:</strong> the N<sub>corr</sub> values
@@ -224,8 +224,9 @@ export default function PhaseBoundaryVisualizer() {
         />
         <p style={{ color: '#f87171', fontSize: '0.82rem', marginBottom: '0.5rem' }}>
           <strong>What to notice as you drag:</strong> BCS superconductors and BECs land at the far <em>flat</em> (left)
-          end &mdash; yet their real transitions are among the sharpest in nature &mdash; while an ideal gas, which has no
-          phase transition at all, lands at the sharp end (&#x03B3; = 2). That inversion is the lesson.
+          end &mdash; yet a BCS superconductor&apos;s real transition is among the sharpest in nature &mdash; while an ideal gas, which has no
+          phase transition at all, lands at the early-rise end (&#x03B3; = 2). That inversion is the lesson. (Until 2026-11-22 this said BECs and superfluids are among the sharpest too;
+          a researcher simulated-visitor persona pointed out that helium-4&apos;s critical region is broad. The inversion holds for BCS.)
         </p>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginBottom: '1.5rem' }}>
           <strong>Band edges in N<sub>corr</sub>:</strong> inverting &#x03B3; = 2/&#x221A;N<sub>corr</sub> gives

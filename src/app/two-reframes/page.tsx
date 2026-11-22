@@ -129,13 +129,28 @@ export default function TwoReframes() {
             archive names (the Planck tick, the electron Compton period, the optical and hyperfine Bohr periods) is shorter than a
             125 ps photon, so under any reading of a mixed window they predict g&sup2;(0) &asymp; 1, classical-wave splitting;
             Schweickert et al. 2018 measure 7.5 &times; 10<sup>&minus;5</sup>. That is Grangier, Roger &amp; Aspect 1986 turned
-            against the framework&apos;s own detector rule. What survives is a scan period T<sub>scan</sub> &ge; 1.6&ndash;9.4 &micro;s
+            against the framework&apos;s own detector rule. What that half leaves open is a scan period T<sub>scan</sub> &ge; 1.6&ndash;9.4 &micro;s
             (window = the photon&apos;s 125 ps lifetime), 10<sup>4</sup> times longer than the photon exists, which turns
             &ldquo;scanning&rdquo; into a random variable drawn once per particle. A global persistent clock fails at every T. The one
             escape, sampling instantaneously (R0), keeps T<sub>scan</sub> idle at every value and contradicts the archive&apos;s own
-            integral; it stays <em>untested</em>, not refuted. One cheap discriminating measurement remains (g&sup2;(0) against photon
-            duration at fixed window); the framework has not committed to it, so it is a candidate bet, not a registered one.
+            integral. (This box used to end: R0 &ldquo;stays <em>untested</em>, not refuted&rdquo;, with g&sup2;(0) against photon duration as the one cheap
+            discriminating measurement. Both the slow-scan survivor and R0 now face the interference check in the next paragraph.)
             Source: <code style={{ fontSize: '0.78rem' }}>explorer/findings/t-scan-under-the-archives-own-window-rule-every-candidate-clock-predicts-g2-of-one-and-the-survivor-is-slower-than-the-photon.md</code>.
+          </p>
+          <p id="t-scan-interference" style={{ margin: '0.6rem 0 0' }}>
+            <ValidationBadge status="audited-negative" label="the slow-scan survivor, against single-photon interference" />{' '}
+            <strong>The survivor fails the other half of the same experiment (maintainer 2026-11-22).</strong> A scan slower than the photon puts each
+            photon in one arm of the beam splitter for its whole life. That is a which-path variable, and a photon with a definite path gives no
+            fringes when the two arms are recombined: averaged over photons, the state is a mixture (a list of probabilities with no relative phase
+            between the arms), and fringes come from exactly the relative phase a mixture lacks. Single photons do interfere. Grangier, Roger &amp; Aspect&apos;s
+            paper is titled &ldquo;&hellip;a new light on single-photon interferences&rdquo; (Europhys. Lett. 1, 173, 1986), and with the same heralded source in a
+            Mach&ndash;Zehnder they report visibility near 98% (that figure from recall; the publisher page refused retrieval). Any heralded single-photon
+            interferometer makes the same point. So T<sub>scan</sub> &ge; 1.6&ndash;9.4 &micro;s is <em>excluded</em>, not merely untested: the two halves of one 1986
+            experiment close the window from both sides (fast scans split the photon classically, slow scans kill its fringes). The R0 escape gets
+            the same check. A pattern that visits modes one at a time produces fringes only if it carries a definite relative phase between them, and a
+            list of modes with relative phases is the quantum amplitude vector under another name. Until 2026-11-22 this box called the slow-scan branch
+            &ldquo;what survives&rdquo;; a researcher simulated-visitor persona pointed to the interference half, and a graduate-student persona raised the
+            mixture objection on <Link href="/key-claims" style={{ color: 'var(--color-accent-blue)' }}>Key Claims</Link> the same day.
           </p>
         </div>
 

@@ -27,7 +27,7 @@ const coreTools = [
   {
     title: 'Coherence Explorer',
     href: '/coherence-explorer',
-    desc: 'Drag γ and ρ_crit sliders and watch the C(ρ) curve update live. See how the sparse/independent → dense/collective transition sharpens or flattens. Best first tool.',
+    desc: 'Drag γ and ρ_crit sliders and watch the C(ρ) curve update live. See how γ moves the rise earlier or later and makes it steeper or flatter at the start (no setting gives a sharp switch). Best first tool.',
     level: 'Beginner',
     state: 'none (a shape demonstration, not a failure lesson)',
     epistemic: 'core' as EpistemicStatus,
@@ -111,7 +111,7 @@ export default function InteractiveTools() {
         <Link href="/glossary#label-map" style={{ color: 'var(--color-accent-blue)' }}>one table on the Glossary</Link>.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginBottom: '1rem', maxWidth: '60ch' }}>
-        <strong>Before the legend:</strong> this is a <em>content grouping</em>, not the site&apos;s validation
+        <strong>Before the legend:</strong> this is a <em>content grouping</em>, not the site&apos;s status
         badge taxonomy. &ldquo;Model Explainer&rdquo; means &ldquo;shows how the equation works,&rdquo; not a
         verdict on whether the equation is correct. &ldquo;Chemistry Data&rdquo; and &ldquo;Consciousness&rdquo;
         name the topic, nothing more. The verdict lives in a separate slot: where a tool&apos;s own page

@@ -717,7 +717,10 @@ export default function GalaxyPlotter() {
           Here &rho;<sub>crit</sub> = {rhoCritOf(galaxy.vflat, calib) < 1 ? rhoCritOf(galaxy.vflat, calib).toFixed(2) : rhoCritOf(galaxy.vflat, calib).toFixed(0)} M<sub>&#x2609;</sub>/pc&sup3;,
           and the highest C<sub>&rho;</sub> on this disc is {maxC.toFixed(3)}.{' '}
           {calib === 'archive'
-            ? <>In plain words: at the archive&apos;s own setting the switch sits inside the brighter discs, so the violet line hugs the gray one near the centre (C<sub>&rho;</sub> near 1, little boost) and climbs to the 1.78&times; ceiling toward the edge. That is the right <em>direction</em> (more boost where matter is thin), but it stops at the ceiling while the dots need more. On 122 SPARC galaxies this form loses to the acceleration law by &Delta;BIC +8,404 and is worse in 115 of them (2026-11-12).</>
+            ? <>{maxC >= 0.5
+                ? <>In plain words: on this galaxy the switch sits inside the disc, so the violet line hugs the gray one near the centre (C<sub>&rho;</sub> near 1, little boost) and climbs toward the 1.78&times; speed ceiling (3.17&times; in gravity) toward the edge.</>
+                : <>In plain words: this galaxy is too faint for the switch to turn on anywhere (C<sub>&rho;</sub> never passes {maxC.toFixed(2)}), so the violet line is boosted everywhere: {(1 / Math.sqrt(0.315 + 0.685 * maxC)).toFixed(2)}&times; in speed at the disc&apos;s densest point, rising to the 1.78&times; speed ceiling (3.17&times; in gravity) where it thins out.</>}
+              {' '}That is the right <em>direction</em> (more boost where matter is thin), but it stops at the ceiling while the dots need more. On 122 SPARC galaxies this form loses to the acceleration law by &Delta;BIC +8,404 and is worse in 115 of them (2026-11-12).</>
             : <>In plain words: this setting puts the switch hundreds of times above any disc&apos;s density, so C<sub>&rho;</sub> stays near 0 and the violet line is just the 1.78&times; ceiling at every radius. It shows the ceiling failing, not the shape of the density law. The 0.029 belongs to the archive&apos;s V<sup>0.5</sup> law; putting it on V&sup2; was a units slip (<Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>).</>}
           <details style={{ marginTop: '0.3rem', fontSize: '0.8rem' }}>
             <summary style={{ cursor: 'pointer' }}>Detail for physicists</summary>
@@ -962,17 +965,20 @@ export default function GalaxyPlotter() {
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
             The <span style={{ color: '#22c55e' }}>green dashed curve</span> is MOND (Modified
-            Newtonian Dynamics) using its real simple-&#x03BD; interpolating function and the acceleration
-            scale a&#x2080; &#x2248; 1.2&times;10&#x207B;&#xB9;&#x2070; m/s&sup2;, on a mass fixed by the baryonic
-            Tully&ndash;Fisher relation &mdash; no fitted parameters, though the mass itself is read off each galaxy&apos;s plateau. <strong>The MOND curve has a circularity of its
-            own</strong> (disclosed 2026-10-08 after a researcher visitor checked it): its baryonic mass comes from the empirical BTFR,
-            M<sub>b</sub> = 47&middot;V<sub>flat</sub>&#x2074;, so part of its agreement with V<sub>flat</sub> is built in. The 47 is also not exactly
-            consistent with the a&#x2080; used: 1/(G a&#x2080;) = 62.8 M<sub>&#x2609;</sub>/(km/s)&#x2074;, so the green curve levels off at
-            (47/62.8)<sup>&frac14;</sup> &asymp; 0.93 V<sub>flat</sub>, not at V<sub>flat</sub>. The disk has no gas component, which matters most for
-            DDO 154. A fair comparison uses SPARC mass models for both laws; that is what the ledger&apos;s tests do. The stand-in the framework needed
-            to look like MOND is what the site labels a <em>reparametrization</em>; the real equation
-            doesn&apos;t even manage the costume.
+            Newtonian Dynamics) using its real simple-&#x03BD; interpolating function and one global acceleration
+            scale a&#x2080; &#x2248; 1.2&times;10&#x207B;&#xB9;&#x2070; m/s&sup2;, applied to SPARC&apos;s measured baryons (gas, disc and bulge at the slider&apos;s
+            &Upsilon;<sub>disk</sub>). Nothing in it is read off the galaxy&apos;s rotation curve, so it is a prediction for each galaxy, with no external field
+            and no distance or inclination freedom. The violet curves run on the same SPARC baryons and the same &Upsilon;<sub>disk</sub>, so the two laws
+            are compared like for like. The stand-in the framework needed to look like MOND is what the site labels a <em>reparametrization</em>; the
+            density-keyed equation, given the same inputs, stops at its ceiling where the dots keep rising.
           </p>
+          <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.3rem 0 0' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note (history; not the current setup)</summary>
+            Until 2026-11-10 the green curve ran on a mass fixed by the baryonic Tully&ndash;Fisher relation, M<sub>b</sub> = 47&middot;V<sub>flat</sub>&#x2074;,
+            with no gas component, so part of its agreement with V<sub>flat</sub> was built in and it levelled off at (47/62.8)<sup>&frac14;</sup> &asymp; 0.93 V<sub>flat</sub>
+            (circularity disclosed 2026-10-08 after a researcher visitor checked it). The wiring changed on 2026-11-10 but this paragraph kept describing
+            the old one until 2026-11-22, when a graduate-student simulated-visitor persona compared it with the deployed code.
+          </details>
         </div>
 
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>

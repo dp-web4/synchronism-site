@@ -8,9 +8,9 @@ import RelatedConcepts from '@/components/RelatedConcepts';
 
 const steps = [
   {
-    title: 'Start with Presence',
-    content: `A single electron floating in a vacuum — almost nothing around it to interact with. Now: the core of a neutron star, where matter is packed 10¹⁴× denser than lead and everything is interacting with everything. That difference is what Synchronism calls presence (ρ). At its simplest, presence is density — how much stuff is packed into a given space. But which stuff counts? Only the neighbors close enough to actually influence the system — everything beyond some horizon might as well not exist. Synchronism calls that horizon the MRH (Markov Relevancy Horizon — “Markov” is the mathematician’s word for “only the current neighbors matter, not the history”): the bubble of nearest neighbors that matter. Everything outside the bubble can be ignored. (The formal version, if you want it: the minimal set of degrees of freedom whose transitions materially influence coherence — same idea, stated precisely.) A single atom doesn’t “feel” the Andromeda galaxy — it only responds to what’s immediately around it; Andromeda is outside its MRH. See the Glossary for the full definition. Synchronism starts here: presence, measured within that bubble, is the universal input.`,
-    highlight: '\u03C1 (presence)',
+    title: 'Start with Density',
+    content: `A single electron floating in a vacuum — almost nothing around it to interact with. Now: the core of a neutron star, where matter is packed 10¹⁴× denser than lead and everything is interacting with everything. That difference is density (ρ): how much stuff is packed into a given space. Every number on this site that feeds the equation is a density. (The framework's philosophy uses a broader word, "presence", for the same symbol; that broader reading has never been turned into a measurement, so this page sticks to density.) But which stuff counts? Only the neighbors close enough to actually influence the system — everything beyond some horizon might as well not exist. Synchronism calls that horizon the MRH (Markov Relevancy Horizon — the name borrows from a "Markov blanket", a statistician's term for the set of neighbours that, once you know them, make everything further away irrelevant): the bubble of nearest neighbors that matter. Everything outside the bubble can be ignored. (The formal version, if you want it: the minimal set of degrees of freedom whose transitions materially influence coherence — same idea, stated precisely.) A single atom doesn’t “feel” the Andromeda galaxy — it only responds to what’s immediately around it; Andromeda is outside its MRH. See the Glossary for the full definition. Synchronism starts here: density, measured within that bubble, is the universal input.`,
+    highlight: '\u03C1 (density)',
   },
   {
     title: 'The Coherence Function',
@@ -59,9 +59,7 @@ const steps = [
     content: `Apply the same equation to galaxies. Stars in a galaxy are individual uncorrelated
     classical particles (N_corr = 1, γ = 2: the framework's original guess, which loses to MOND, not the fitted γ ≈ 0.5; see the γ status above). The switch-over density ρ_crit is tied to how fast the galaxy spins: the archive writes
     ρ_crit = 0.028 × V_flat^0.5 (V_flat is the steady top speed of stars far from a galaxy's centre; 0.028 is a
-    fitted constant, not derived from anything). This is the default on the Galaxy Curve Plotter, the next step.
-    Some older pages wrote 0.029 × V_flat² instead: that put the first formula's number on a different power of
-    V_flat, a units mix-up that the plotter keeps as a switch so you can compare. MOND — Modified Newtonian Dynamics, the long-standing rival proposal that gravity itself changes below a threshold acceleration, rather than invoking dark matter — has an acceleration constant a₀. Its value happens to match a combination
+    calibrated constant: it comes out of a rough estimate whose length scale was fitted, so it is not derived from first principles). This is the default on the Galaxy Curve Plotter, the next step. MOND — Modified Newtonian Dynamics, the long-standing rival proposal that gravity itself changes below a threshold acceleration, rather than invoking dark matter — has an acceleration constant a₀. Its value happens to match a combination
     of the speed of light and the universe's expansion rate. That may be luck; nobody has derived it.`,
     // Visitor 2026-09-27: the dimensional-analysis detail was pitched above the rest of the page;
     // it now sits behind a "For the curious" fold rendered below the section text.
@@ -84,8 +82,8 @@ const steps = [
     Status, in one line: an interpretation, not a failed or a winning prediction. Read as "looking doesn't disturb
     anything", it is contradicted by experiment (the quantum Zeno effect: watching a system very frequently can freeze it in
     place, a real measured effect, Itano et al. 1990); read as "measuring resets the system", it
-    gives exactly standard quantum mechanics. It would become testable only if the framework named a scan period, and
-    it hasn't.
+    gives exactly standard quantum mechanics. Read as a literal one-mode-at-a-time scan, it cannot produce the interference
+    fringes single photons show, so the version that survives is standard quantum mechanics described differently.
     Is this the same "coherence" as quantum coherence? No. This section borrows the word. The C in the S-curve
     above is a number computed from density alone, and it is not the quantum coherence (fixed phase relations in a
     wavefunction) you may have heard of. The BEC and superconductor presets in the tools are there because they are
@@ -99,9 +97,9 @@ const steps = [
     near a phase transition): listed as 2× off, though the function as written has none, so that entry records a failed
     framing rather than a measured number. Superconductor Tc (the temperature below which a material superconducts):
     6.5× wrong (607 K predicted for YBCO, 93 K actual).
-    Not every application of C(ρ) works. The function captures density→coherence well,
-    but can't replace domain-specific physics where crystal structure, spin-orbit coupling,
-    or multi-body effects dominate.`,
+    The takeaway: even where an S-curve like C(ρ) can be fitted to data, it does not replace domain-specific physics
+    (crystal structure, spin-orbit coupling, many-body effects), and in galaxies, where it was tested hardest, the
+    density version loses (see the Galaxy Curve Plotter, next).`,
     highlight: 'Honest about limits',
   },
 ];

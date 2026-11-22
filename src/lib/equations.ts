@@ -40,9 +40,14 @@ export function ncorrFromGamma(gamma: number): number {
   return Math.pow(2 / gamma, 2);
 }
 
-/** Critical density: ρ_crit = A × V_flat² */
-export function criticalDensity(vFlat: number, A: number = 0.029): number {
-  return A * vFlat * vFlat;
+/**
+ * Critical density, archive form: ρ_crit = A × V_flat^0.5, A = 0.028 M☉ pc⁻³ (km/s)^-0.5
+ * (Session 53/65 Jeans-style estimate with a fitted length scale R₀; calibrated, not derived).
+ * Until 2026-11-22 this function computed 0.029 × V_flat², the V^0.5 coefficient on a V² law
+ * (the units slip traced 2026-08-27). It has no callers; it is kept so the site's library states one form.
+ */
+export function criticalDensity(vFlat: number, A: number = 0.028): number {
+  return A * Math.sqrt(vFlat);
 }
 
 /** MOND acceleration: a₀ = cH₀/(2π) */

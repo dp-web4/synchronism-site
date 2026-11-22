@@ -44,7 +44,7 @@ export default function GammaCalculator() {
         collective systems get sharper, not gentler, so the formula points the opposite way from what the idea needed.
       </p>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginBottom: '0.5rem' }}>
-        Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index Kind and Status
+        Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index Kind and State
         tags &mdash; Artifact Lesson is an operational state, not a level: a tool kept to show a failure, not a verdict) &middot; Claim status: <strong>Audited-Negative</strong>, the
         badge above. (Added 2026-09-15: the index and this page showed different words with no key between them.)
       </p>
@@ -88,7 +88,7 @@ export default function GammaCalculator() {
               {' '}<a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)', fontSize: '0.85rem' }}>See Parameter Derivations for what is and isn&apos;t derived &rarr;</a>
             </li>
             <li>
-              <strong>The direction of the N<sub>corr</sub>→sharpness mapping is inverted relative to the stated analogy (2026-06-06).</strong> In fluctuation theory, 1/&#x221A;N is a <em>width</em> — more correlation &#x2192; smaller width &#x2192; sharper transition. But in &#x03B3; = 2/&#x221A;N<sub>corr</sub>, more correlation &#x2192; larger N<sub>corr</sub> &#x2192; smaller &#x03B3; &#x2192; <em>flatter</em> tanh. This assigns the sharpest transition (&#x03B3;=2) to the least-correlated system (ideal gas, no real phase transition) and the flattest (&#x03B3;&#x2248;6&#xD7;10<sup>&#x2212;4</sup>) to the most-correlated (BCS superconductor, which has a real sharp T<sub>c</sub>). The sign of the analogy is inverted — a structural issue independent of the prefactor. See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</a> and research proposal <a href="https://github.com/dp-web4/Synchronism/blob/main/Research/proposals/gamma_ncorr_sign_inversion_sharpness.md" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}><code>gamma_ncorr_sign_inversion_sharpness.md</code></a>.
+              <strong>The direction of the N<sub>corr</sub>→sharpness mapping is inverted relative to the stated analogy (2026-06-06).</strong> In fluctuation theory, 1/&#x221A;N is a <em>width</em> — more correlation &#x2192; smaller width &#x2192; sharper transition. But in &#x03B3; = 2/&#x221A;N<sub>corr</sub>, more correlation &#x2192; larger N<sub>corr</sub> &#x2192; smaller &#x03B3; &#x2192; <em>flatter</em> tanh. This assigns the earliest, steepest-starting rise this family allows (&#x03B3;=2; no member of the family is a sharp switch) to the least-correlated system (ideal gas, no real phase transition) and the flattest (&#x03B3;&#x2248;6&#xD7;10<sup>&#x2212;4</sup>) to the most-correlated (BCS superconductor, which has a real sharp T<sub>c</sub>). The sign of the analogy is inverted — a structural issue independent of the prefactor. See <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</a> and research proposal <a href="https://github.com/dp-web4/Synchronism/blob/main/Research/proposals/gamma_ncorr_sign_inversion_sharpness.md" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent-blue)' }}><code>gamma_ncorr_sign_inversion_sharpness.md</code></a>.
             </li>
             <li>
               <strong>Preset N<sub>corr</sub> values are back-fits, not measurements.</strong> For BCS superconductors, the physical Cooper-pair coherence volume contains 10<sup>6</sup>–10<sup>9</sup> pairs; the preset uses N<sub>corr</sub> = 10<sup>7</sup> (mid-range of physical estimates) — fitted to produce a plausible γ (6.32×10<sup>−4</sup>), not derived from the Hamiltonian. No protocol exists for converting a system&apos;s Hamiltonian into N<sub>corr</sub> without first fitting γ to observed behavior. Every γ &ldquo;prediction&rdquo; is therefore a consistency check on a back-fitted parameter, not a first-principles result.
@@ -117,7 +117,7 @@ export default function GammaCalculator() {
               &#x03B3; = 2 sits at the fixed point N<sub>corr</sub> = 1. At N<sub>corr</sub> = 17 the flip moves &#x03B3;
               by a factor of 17, from 2/&#x221A;17 &#x2248; 0.485 to 2&#x221A;17 &#x2248; 8.25. Run the other way, the
               flipped map needs N<sub>corr</sub> = (0.489/2)&sup2; &#x2248; 0.06 to give the SPARC &#x03B3; = 0.489. That is
-              less than one correlated unit, which no count of correlated units can reach. And &#x03B3; = 8.25 is not sharp either: its 10&ndash;90% width is 1.2 dex, against 1.17 dex at any larger &#x03B3;.
+              less than one correlated unit, which no count of correlated units can reach. And &#x03B3; = 8.25 is not sharp either: its 10&ndash;90% width is 1.2 dex (dex = a factor of 10, so about a factor of 16 in density), against 1.17 dex at any larger &#x03B3;.
           </p>
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', marginTop: '0.5rem' }}>
             <summary style={{ cursor: 'pointer' }}>Revision note</summary>

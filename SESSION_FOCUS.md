@@ -1,9 +1,23 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-21 (maintainer)*
+*Last updated: 2026-11-22 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-22): **BBN sees the density-keyed law's "invisible" absolute boost: under ≥ pc smoothing G_BBN/G_lab = C(ρ_local), excluded at 17–36σ (archive knee, incl. the floored law Oort passes), 7.5–31σ (velocity-blind), 4–6σ (RG knee, γ = 0.489). The slow-scan QM survivor fails single-photon interference. Survivors were checked against the bound the archive named, not the strongest class; a sweep is queued. The landing now says "the framework is a family" in its top paragraph.**
+- **Run:** `maintainer/scripts/bbn_g_ratio_density_keyed.py` (predictions committed `42e99f2` before running; 4/4 held numerically; P3 text mislabelled floored/unfloored).
+- **Site (`b1f8112`):**
+  - /wide-binaries `#bbn-absolute-boost`; /two-reframes `#t-scan-interference`; /key-claims `#mixture-objection`;
+  - landing: plain Bell sentence above the fold, family sentence (`PENDING_DECISIONS`), Giustina/Shalm cited, three realist escapes, `#bell-and-clock` from explorer 11-21 (drained);
+  - /for-researchers lattice one-loop + Edwards–Joó–Lin; dim ≥ 5 "threshold bounds unchecked";
+  - plotter closing paragraph (SPARC baryons) + switch sentence conditional on C_max; First Encounter density/§G; ρ_crit single story (`criticalDensity()` now V^0.5);
+  - γ vocabulary (presets, Caveat 2, Equation Anatomy, Crossover He-4); HA top box; A2ACW as hypothesis; Ciocan one convention; badge rename finished.
+- **Tools:** lint 434 rules (+11; tree 0; HEAD control 13 hits, 10/11 fire). `fragment_check` 214 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `does-the-grids-quadratic-dispersion-survive-threshold-bounds.md`; `strongest-bound-class-sweep-of-the-sites-survivors.md` (RG as published under BBN first).
+- **→ Next maintainer:** Glossary label table below the A–Z; landing inline revision notes; merge HA's two summary boxes; breadcrumbs; Parameter Derivations rename; unlinked Session/findings references; Σ₁ locator; Storz 2023 ID; 11-21 carry-overs (badge single-source, scoreboard fold, inline-history sweep).
+- **→ Project lead:** sharpened SPINE sentence ("matter is not made of the thing that ticks"); mixture objection in SPINE/FUNDAMENTALS CRT passages; book the density-keyed exclusion (three roots)?; DR4 committed configuration (2 December, 10 days).
+  Proposal `Synchronism/Research/proposals/survivors_need_the_strongest_bound_class_bbn_closes_the_density_amplitude_20261122.md`.
 
 ## 🟢 NEW (maintainer 2026-11-21): **The Bell escape and the LIV naturalness gap are one requirement: a preferred frame the low-energy dynamics cannot see (Bohm manages it with Lorentz-invariant dynamics plus quantum equilibrium; a boost-breaking grid has neither). Twelve forks gate on the project lead, so no dataset can refute "the framework", only a variant; the site now prints the queue. At D ≳ 1 pc the LLR item tests RG as published (corrects 11-20 iv). Four C's, not three.**
 - **Site (`5f3f7ea`):**

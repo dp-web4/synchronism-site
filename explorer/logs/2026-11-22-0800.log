@@ -1,0 +1,41 @@
+Starting Synchronism Explorer Session at Sun Nov 22 08:00:01 PST 2026
+Pushed as `aa5d7bd`. The last artifact, the saved GZK window output, is still regenerating in the background. I'll commit it when the run finishes.
+
+The site calls the grid's quadratic dispersion "below reach". That label is wrong, but the grid is not cleanly excluded either: the self-consistent calculation that would settle it has never been run. Everything is pushed (`4752de6` pre-registration, `aa5d7bd` finding, `82eeeba` last output file), and the saved outputs match the numbers quoted in the finding.
+
+**Topic worked:** `does-the-grids-quadratic-dispersion-survive-threshold-bounds.md` (now archived). The pre-registration was committed before any computation and before I read the literature results.
+
+**What I found** (η is the coefficient in E² = p² + m² + η p⁴/M_Pl², and on a Planck-spacing grid it can be read off directly):
+- **At reach, not 10⁷ below.** The grid's own coefficient is |η| ≈ 0.03–0.14, depending on stencil, direction and particle type. The ~10⁷ figure only applies to time-of-flight measurements. Threshold bounds from cosmic-ray data are a stronger class:
+  - The Auger 2022 bounds, which don't assume any composition, sit right on the grid's range (photons η ≳ −0.015, hadrons η < 0.15).
+  - The pure-proton bounds (Maccione 2009, Galaverni & Sigl 2008, Gagnon & Moore 2004) exclude it by 1.5–5 orders of magnitude.
+- **"Excluded" isn't earned either.** Each excluding bound keeps one sector unmodified. A grid that slows every particle the same way switches off pion production on the CMB, the process behind the GZK cutoff. The threshold photon energy rises to 18–81 kT, against 5.1 kT without the grid. That removes the cosmic-ray photons the photon bounds rely on.
+- **The maintainer's "it all cancels" argument fails.** A shared coefficient cancels only for a pure speed rescale (n = 0). For the quadratic term, reactions feel η(1 − Σx³), where x are the momentum fractions of the products. Exact threshold solves agree with this to 7 digits.
+- **The sign isn't "subluminal for every field".** It depends on how time is discretised and on each particle's stencil:
+  - continuous time is subluminal;
+  - a leapfrog step at one cell per tick is superluminal off the grid axes;
+  - lattice fermions (Wilson type) are mixed by direction. They also carry a speed shift of order m/M_Pl, not the (m/M_Pl)² the archive assumes. It is harmless (~4×10⁻²³ for electrons), but the power is wrong.
+- **The archive's tick/spacing commitment is unstable.** FUNDAMENTALS sets a Planck-time tick and Planck-length spacing, which means light moves one cell per tick:
+  - With nearest-neighbour coupling in 3D, that blows up in 78.7% of modes, ×9.9 per tick in the worst one.
+  - A 26-neighbour rule can run at that ratio. It sits exactly at the stability edge and is subluminal (η between −1/36 and 0).
+  - No archive simulation has ever run at the committed ratio; they use 0.1 or 0.5.
+
+**Pre-registration scorecard:**
+- Held: the four coefficient predictions (exact) and the unstable fraction (0.787, inside my 0.5–0.8 range).
+- Held literally, but only through pure-proton bounds: that published bounds exclude the grid.
+- Held conditionally: that photons are the binding sector.
+- Failed as registered: the analytic threshold formula for Wilson fermions (off by ×1.43, from the mass-dependent speed term) and for pion production once the grid's effect dominates.
+- Split: the threshold below which compositeness rescues the hadrons landed inside my range when particles are slower than light. It came out near 10⁻⁵, outside my range, when they are faster.
+- Not registered, added after the first run: the 26-neighbour stencil check, the GZK window scan and the Wilson mass check.
+
+**Handed to the maintainer:**
+- Rewrite the "Below reach" row on /for-researchers and the "three independent locks" wording in `terms.ts`. The replacement text is in the finding.
+- Back-annotate PREDICTIONS B7 (iii).
+- The project lead needs to decide which neighbourhood FUNDAMENTALS commits to.
+
+**Still open:**
+- The self-consistent cosmic-ray propagation run, with every particle type carrying its stencil's coefficient. This is the one calculation that would turn "conditional" into a verdict.
+- Maccione et al. allow η_p down to −10⁻³, but my kinematics say CMB pion production is already off there. I haven't read their figure, so I don't adjudicate.
+- What the saturated grid-corner modes do at one cell per tick. The archive lists this kind of instability-plus-saturation as a candidate mechanism.
+
+Literature numbers came from a web subagent reading the arXiv PDFs directly. NotebookLM was not authenticated, so I didn't use it. I also saved a memory: a shared coefficient cancels in threshold reactions only for n = 0.

@@ -1,0 +1,36 @@
+Starting Synchronism Maintainer Session at Sun Nov 22 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+The session is finished. The site, the research repo, the session log and the explorer topics are all committed and pushed. The build passes, the retired-wording lint finds nothing on the current tree, and all 214 internal anchor links resolve. I haven't looked at the changed pages in a browser.
+
+**WAKE: what the feedback says about the research, not just the site.** The researcher persona found that several verdicts like "survives" or "below reach" had been checked only against whichever bound the archive happened to name, not the strongest one available. I checked the biggest case before fixing anything else, and wrote down my predictions and committed them first (`42e99f2`):
+
+- **Big Bang nucleosynthesis (BBN) sees the density-keyed boost that "no local measurement can see."** In the first minutes the density was far above every knee value the galaxy fits used, so C = 1. The law therefore predicts that G then, divided by G in the lab, equals C at the local density. Alvey et al. 2020 measure that ratio as 0.99 (+0.06/−0.05 at 2σ); I fetched the paper's abstract to confirm. Results:
+  - archive knee: excluded at 17–36σ, including the floored version that last session's Oort test let through;
+  - measured velocity-blind knee: excluded at 7.5–31σ;
+  - Refracted Gravity's knee at γ = 0.489: excluded at 4–6σ; at γ = 2 it passes.
+
+  This only holds if density is averaged over at least a parsec; with point-by-point density it says nothing. All four predictions held in their numbers, but one of them labelled the site's +9.4% as the floored form when it is the unfloored one.
+- **The slow-scan quantum survivor on Two Reframes is now marked excluded.** A scan slower than the photon fixes which path each photon takes, so it can't produce single-photon interference. That is the other half of the 1986 Grangier–Roger–Aspect paper the page already cites. The ~98% visibility figure is from memory, because the publisher's page refused the fetch.
+- **The "none reachable" verdict for higher-order Lorentz violation was judged on time-of-flight data only.** Threshold bounds from the highest-energy cosmic rays and photons are untested against it. The site now says so, and the question is queued for the explorer.
+
+**Site fixes (`b1f8112`):**
+- I worked through the newest explorer finding: the Bell rows now list three escapes instead of one, and the answer to "can a grid hide its preferred frame?" is rewritten. That finding's fourth action (a misspelled author name) had nothing to fix on the site or in the archive.
+- The landing page's top paragraph now has one plain Bell sentence and says the framework is currently a family of versions, not one theory. The Bell claim cites the two high-significance 2015 photon experiments alongside Hensen.
+- The Galaxy Plotter's closing paragraph described the MOND setup from before 10 November; it now matches the code. Its "C near 1" sentence now depends on the galaxy shown, since it was false for the default dwarf.
+- First Encounter now starts with density and its final line agrees with the "Excluded" verdict.
+- There is now one story for ρ_crit. `criticalDensity()` in `equations.ts` still had the mistaken 0.029·V² form; nothing calls it, but one page cited it as the form "used everywhere else".
+- The γ Calculator captions no longer contradict their own labels.
+- Smaller fixes: the Honest Assessment summary box, the A2ACW claim (now stated as an untested hypothesis), the Ciocan σ convention, and the rest of the badge rename.
+
+**Research repo (`e0f4fd28`):** a new PREDICTIONS block correcting the 20 November "no local measurement" statement, and a proposal asking that every "survives" verdict name the strongest bound class it was checked against. No predictions changed bucket.
+
+**For you (project lead):**
+- whether to adopt the sharper SPINE sentence: "matter is not made of the thing that ticks";
+- whether to add the interference objection where SPINE and FUNDAMENTALS use the CRT scanning analogy;
+- whether the density-keyed exclusion, now on three independent grounds, gets booked as a refutation;
+- still open: a dated committed version of the framework before Gaia DR4 on 2 December, 10 days away.
+
+**Explorer topics added:** threshold bounds on the grid's dispersion, and a sweep of every "survives" verdict against the strongest bound class (Refracted Gravity as published under BBN first).
+
+The deferred items are listed in `maintainer/logs/2026-11-22.md`. The biggest are moving the Glossary's label table below the A–Z list and clearing the revision-note boxes from the landing page's main flow.

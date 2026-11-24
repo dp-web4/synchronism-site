@@ -193,8 +193,7 @@ export default function CoherenceFunction() {
           </div>
           <p style={{ fontSize: '0.82rem', color: 'var(--color-text-secondary)', margin: '0.5rem 0 0' }}>
             <strong>Which &#x03B3;.</strong> The symbol carries different numbers in different rows, and they are not one
-            parameter measured several times. &#x03B3; &asymp; 0.489 is the <strong>C<sub>g</sub></strong> fit (acceleration-keyed, and only
-            &#x03B3;/a&#x2080;&prime; is identified). The density-keyed <strong>C<sub>&#x03C1;</sub></strong> fitted on SPARC goes to
+            parameter measured several times. &#x03B3; &asymp; 0.489 is the <strong>C<sub>g</sub></strong> fit (acceleration-keyed; the deep-MOND regime identifies only a&#x2080;&prime;/&#x03B3;, and &#x03B3; itself is constrained only weakly, by the transition shape: &plusmn; 0.11, 0.43&ndash;0.95 with nuisances refit). The density-keyed <strong>C<sub>&#x03C1;</sub></strong> fitted on SPARC goes to
             &#x03B3; &rarr; 0.046, and &#x03B3; = 2 is its registered value. The cosmology&apos;s &#x03B3; &asymp; &frac12; is C<sub>&#x03C1;</sub> on the mean density.
             &#x03B3; = 2/&radic;N<sub>corr</sub> is the proposed derivation that failed (wrong-sign correlation), and &ldquo;&#x03B3; &asymp; 1&rdquo;
             is a regime name from the chemistry track. &#x03B3; = &frac12; turns up in both the galaxy and cosmology fits because it is
@@ -358,8 +357,7 @@ export default function CoherenceFunction() {
           it is a phenomenological choice from the compander family, not the uniquely forced form — confirmed
           by execution: not uniquely forced, and not even the family&apos;s best member, though inside the
           indistinguishability band.
-          <strong>Empirical caveat:</strong> Landau-universality critical exponents
-          (&#x03B2;, &#x03BD;, &#x03B1;, &#x03B4;, &#x03B7;) are off by ~2&times; in practice — the Landau analogy
+          <strong>Empirical caveat:</strong> mean-field (Landau) critical exponents miss the measured 3D ones (&#x03B2; 0.5 vs 0.326, &#x03BD; 0.5 vs 0.630, &#x03B4; 3 vs 4.79: factors of 1.3&ndash;1.6; mean-field &#x03B1; and &#x03B7; are zero, so no ratio applies), and C(&#x03C1;) has no exponents at all (until 2026-11-24 this read &ldquo;off by ~2&times;&rdquo;; a graduate simulated-visitor persona) — the Landau analogy
           is motivational, not an accurate prediction of universality class. See{' '}
           <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>. See{' '}
           <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>{' '}

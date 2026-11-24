@@ -235,6 +235,7 @@ export default function HonestAssessment() {
           <strong>The nine badges in one table</strong> (added 2026-10-10; a technical-writer persona clicked a badge wanting one
           sentence and got a taxonomy. Everything below this table is the long form. Operational states and lifecycle verbs
           are <em>not</em> badges; the refutation table&apos;s Root column is a third axis and is explained at the table.)
+          <br /><strong>Which label answers which question:</strong> a <em>status badge</em> describes one page&apos;s claim; a <em>scoreboard word</em> (Excluded, Is MOND, Is &Lambda;, Survives&hellip;) describes how a whole piece of the framework fared against data; a <em>ledger class</em> (framework-specific, inherited from MOND, construction check&hellip;) says what kind of refutation a counted row is; <em>operational states</em> and <em>lifecycle verbs</em> track where a test is in its life. To ask &ldquo;did this part of the theory survive contact with data?&rdquo;, read the scoreboard word. (Added 2026-11-24 after a technical-writer persona counted six label systems.)
           <div style={{ display: 'grid', gridTemplateColumns: 'auto 1fr', gap: '0.2rem 0.75rem', marginTop: '0.4rem' }}>
             {BADGES.map((b) => (
               <Fragment key={b.name}><strong>{b.name}</strong><span>{b.oneLiner}{b.name === 'Active-MRH' ? ' (MRH-relationship family)' : b.name === 'Untested' ? ' (descriptive family)' : ''}</span></Fragment>
@@ -310,7 +311,7 @@ export default function HonestAssessment() {
           ))}
         </div>
         <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.4rem' }}>
-          Seven states, the same seven listed on Test Roadmap and Tier 1 (all three render from one list since 2026-11-16).
+          The seven states in the grid just above, the same seven listed on Test Roadmap and Tier 1 (all three render from one list since 2026-11-16).
           MOND-shared is a retired label (above). &ldquo;89% Boundary-Consistent&rdquo; and its &ldquo;Template Bias Caveat&rdquo;
           were listed here until 2026-11-16; they describe one catalogue on the{' '}
           <Link href="/gamma-boundary" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; &#x2248; 1 page</Link> (a fraction collected using
@@ -547,7 +548,7 @@ export default function HonestAssessment() {
         <p style={{ color: 'var(--color-text-secondary)' }}>
           <strong>(2) RAR Transition Shape (2026-05-21):</strong> The one non-degenerate galaxy-scale
           discriminating test — whether the compander&apos;s transition curve (γ=2) differs from McGaugh&apos;s MOND
-          interpolating function — was run on 2807 real SPARC points. γ=2 is refuted at ΔBIC=+184 with the points treated as independent;
+          interpolating function — was run on 2807 real SPARC points. γ=2 scores ΔBIC=+184 with the points treated as independent;
           with the galaxy as the replication unit (166 curves; measured N<sub>eff</sub> ≈ 150, 2026-09-29) the same comparison is
           ΔBIC ≈ +11, 1.6σ out-of-sample and 2.2σ in-sample &mdash; disfavoured at the threshold, not decisive. Free-γ converges to γ≈0.49&nbsp;=&nbsp;MOND, with RMS identical to McGaugh (&Upsilon; frozen at 0.5, unweighted; with per-galaxy nuisances refitted, &#x03B3;&#x0302; &asymp; 0.6 [0.43, 0.95]; the pin then sits at z = 1.9&ndash;2.3 galaxy-level).
         </p>

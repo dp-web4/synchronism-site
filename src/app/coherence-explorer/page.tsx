@@ -11,6 +11,14 @@ function coherence(rho: number, gamma: number, rhoCrit: number): number {
   return Math.tanh(gamma * Math.log(rho / rhoCrit + 1));
 }
 
+const PRESET_CAPTIONS: { g: number; short: string; label: string }[] = [
+  { g: 0.046, short: 'γ = 0.05 · density fit (lost)', label: 'γ = 0.046 — the density version’s free fit to galaxies (its fitted knee is off this axis, so the drawn curve is not that fit; it lost, ΔBIC +2843)' },
+  { g: 0.49, short: 'γ = 0.49 · galaxy fit', label: 'γ = 0.49 — the galaxy fit of the acceleration version (MOND there); drawn here for its shape only' },
+  { g: 0.5, short: 'γ = ½ · same as MOND', label: 'γ = ½ exactly — the same curve as MOND’s formula (MOND’s simple μ function; see note below)' },
+  { g: 1.0, short: 'γ = 1 · start', label: 'γ = 1 — the starting value (display only)' },
+  { g: 2.0, short: 'γ = 2 · original guess', label: 'γ = 2 — steep: the framework’s original guess (disfavoured on SPARC; at the threshold once galaxies are the unit)' },
+];
+
 export default function CoherenceExplorer() {
   // Default is the SPARC free-γ fit of the ACCELERATION-keyed law (≈0.49; the density-keyed free fit is 0.046), not the original γ=2 galaxy guess that
   // the site's own tests refuted — visitor 2026-07-30 (casual persona) found γ=2 as the
@@ -248,22 +256,20 @@ export default function CoherenceExplorer() {
               style={{ width: '100%' }}
             />
             <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.4rem' }}>
-              {[
-                { g: 0.046, label: 'γ = 0.046 — the density version’s free fit to galaxies (its fitted knee is off this axis, so the drawn curve is not that fit; it lost, ΔBIC +2843)' },
-                { g: 0.49, label: 'γ = 0.49 — the galaxy fit of the acceleration version (MOND there); drawn here for its shape only' },
-                { g: 0.5, label: 'γ = ½ exactly — the same curve as MOND’s formula (MOND’s simple μ function; see note below)' },
-                { g: 1.0, label: 'γ = 1 — the starting value (display only)' },
-                { g: 2.0, label: 'γ = 2 — steep: the framework’s original guess (disfavoured on SPARC; at the threshold once galaxies are the unit)' },
-              ].map(p => (
-                <button key={p.g} type="button" onClick={() => setGamma(p.g)}
+              {PRESET_CAPTIONS.map(p => (
+                <button key={p.g} type="button" onClick={() => setGamma(p.g)} title={p.label}
                   style={{ fontSize: '0.72rem', padding: '0.2rem 0.5rem', borderRadius: '0.3rem', cursor: 'pointer',
                     border: `1px solid ${Math.abs(gamma - p.g) < 0.005 ? '#8b5cf6' : 'var(--color-border)'}`,
                     background: Math.abs(gamma - p.g) < 0.005 ? 'rgba(139,92,246,0.18)' : 'transparent',
                     color: 'var(--color-text-secondary)' }}>
-                  {p.label}
+                  {p.short}
                 </button>
               ))}
             </div>
+            {/* 2026-11-24: short button labels, long explanation as a caption after clicking (casual simulated-visitor persona). */}
+            {(() => { const sel = PRESET_CAPTIONS.find(p => Math.abs(gamma - p.g) < 0.005); return sel ? (
+              <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', marginTop: '0.3rem' }}>{sel.label}</p>
+            ) : null; })()}
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.72rem', marginTop: '0.3rem' }}>
               Presets are values of &#x03B3; the site discusses, not physical systems: the density axis has no units, so no
               preset puts you &ldquo;at&rdquo; a galaxy, a metal, or a brain. For named systems via N<sub>corr</sub>, use the{' '}

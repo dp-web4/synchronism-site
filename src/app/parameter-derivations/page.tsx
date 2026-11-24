@@ -189,8 +189,7 @@ export default function ParameterDerivations() {
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #53, #66 — decisive test run 2026-06-07; badge split 2026-09-05</p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>
               <strong style={{ color: '#f87171' }}>Lead with the large error, not the small one (explorer 2026-09-03).</strong>{' '}
-              The 600&times; formula-vs-calibrated mismatch below is real but is the <em>smaller</em> discrepancy, and it moves
-              &#x03C1;<sub>crit</sub> <em>toward</em> the data. <strong>Under the archive&apos;s stated law 0.028&middot;V<sup>0.5</sup></strong> the knee is
+              The &ldquo;600&times;&rdquo; below is a ratio of two coefficients in different units (M<sub>&#x2609;</sub> pc<sup>&minus;3</sup> (km/s)<sup>&minus;2</sup> for the V&sup2; law, (km/s)<sup>&minus;&frac12;</sup> for V<sup>0.5</sup>). It changes by 10<sup>4.5</sup> if km/s becomes m/s, and it equals (8 kpc / 0.315 kpc)&sup2;, the two length scales squared. <strong>Compared as densities at the same V</strong>, the Jeans formula (&#x03B2;<sub>J</sub> = 1, R&#x2080; = 8 kpc: 4.6&times;10<sup>&minus;5</sup>&middot;V&sup2;) and the archive&apos;s 0.028&middot;V<sup>0.5</sup> <strong>cross at V &asymp; 72 km/s</strong>; the Jeans value is 0.27&times; the archive&apos;s at 30 km/s, 3.0&times; at 150 and 8.5&times; at 300. The 600&times; is real only against the units-hybrid 0.029&middot;V&sup2;, which no fit uses (a graduate simulated-visitor persona, 2026-11-24; recomputed). The decisive number is the exponent: the measured knee has no velocity exponent (&minus;0.16 &plusmn; 0.19). The rest of this box is about the units-hybrid law. <strong>Under the archive&apos;s stated law 0.028&middot;V<sup>0.5</sup></strong> the knee is
               0.34 M<sub>&#x2609;</sub>/pc&sup3; at V = 150 km/s, about 13&times; the SPARC median midplane density, and the bright centres of three
               plotter discs cross it (corrected 2026-11-20; until then this lead used only the number below). Pure density arithmetic, no fit, at the
               units-hybrid A = 0.029 that this item calls a slip further down: it puts
@@ -200,7 +199,7 @@ export default function ParameterDerivations() {
               field equation this sector coincides with, puts its knee within 1.8&times; of the data.) <strong>Units, which this
               card never stated:</strong> A is in M<sub>&#x2609;</sub> pc<sup>&minus;3</sup> (km/s)<sup>&minus;2</sup>; the &ldquo;600&times;&rdquo;
               reproduces only in those units (a simulated-visitor grad-student persona recomputed 635&times;). <strong>Why the
-              normalization row is unrunnable, not merely negative:</strong> the 600&times; is repairable for free with
+              normalization row is unrunnable, not merely negative:</strong> the hybrid&apos;s 600&times; is repairable for free with
               N<sub>corr</sub> = 6.7&times;10<sup>6</sup>, inside the 1&ndash;10<sup>7</sup> range the{' '}
               <Link href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</Link> admits &mdash;
               the third mutually inconsistent N<sub>corr</sub> this site&apos;s own relations produce (1, 16.7, 6.7&times;10<sup>6</sup>).
@@ -246,7 +245,7 @@ export default function ParameterDerivations() {
                 ρ<sub>crit</sub> ∝ V<sup>0.5</sup> (Session 65: exponent B=0.5) with a fitted R₀ = 0.07 kpc/(km/s)^0.75
                 — <em>not</em> R₀ = 8 kpc and not the ρ<sub>crit</sub> ∝ V² that this card was written against. The derivation that hits 5% underpins the V<sup>0.5</sup> law, not the V² one.
                 (Until 2026-11-22 this line called V² the form &ldquo;used everywhere else (equations.ts)&rdquo;. The archive&apos;s fits use V<sup>0.5</sup>; the site&apos;s library now states that form too.)</li>
-                <li><strong>Stated formula gives 600× off:</strong> A = 4π/(β<sub>J</sub>²·G·R₀²) with β<sub>J</sub>=1,
+                <li><strong>Stated formula gives 600× off the hybrid coefficient</strong> (a ratio of coefficients in different units; at fixed V the Jeans formula and the archive&apos;s 0.028·V<sup>0.5</sup> cross at 72 km/s and differ by ×0.27–×8.5 over 30–300 km/s): A = 4π/(β<sub>J</sub>²·G·R₀²) with β<sub>J</sub>=1,
                 R₀=8 kpc gives A ≈ 4.6×10⁻⁵ M<sub>☉</sub>&nbsp;pc<sup>−3</sup>&nbsp;(km/s)<sup>−2</sup> (3.09×10⁻³⁰ kg&nbsp;s²&nbsp;m⁻⁵) — not 0.029 in the same units. The Session 66 markdown bridges them with an
                 unexplained 644× &ldquo;unit conversion&rdquo; (644 = 0.0294/4.565×10⁻⁵ with G = 4.301×10⁻³ pc&nbsp;(km/s)²/M<sub>☉</sub>, R₀ = 8000 pc;
                 with the rounded 0.029 it is 635, the figure used below).
@@ -279,7 +278,7 @@ export default function ParameterDerivations() {
               <strong>Which scaling is the framework&apos;s stated position?</strong> The archive&apos;s own: ρ<sub>crit</sub> = 0.028·V<sup>0.5</sup>{' '}
               (Sessions 52/62/64/65), the galaxy plotter&apos;s default since 2026-11-14. Until then this page named ρ<sub>crit</sub> ∝ V²
               (equations.ts:23) as the stated position. That law with A = 0.029 puts the V<sup>0.5</sup> law&apos;s coefficient on a V² exponent.
-              It is a units slip, and no archive fit uses it. The V² formula on its own terms gives A ≈ 4.6×10⁻⁵, 600× off.
+              It is a units slip, and no archive fit uses it. The V² formula on its own terms gives A ≈ 4.6×10⁻⁵, 600× below the hybrid&apos;s 0.029 in the same units; against the archive&apos;s V<sup>0.5</sup> law it is a density ratio of ×0.27–×8.5 over 30–300 km/s, crossing at 72 km/s.
               All three knee laws lose on SPARC; see the{' '}
               <Link href="/critical-density#knee-laws-in-use" style={{ color: 'var(--color-accent-blue)' }}>knee-laws box</Link>.
               The number 0.0294 is a flagged inconsistency (number detached from its derivation), not a rounding error.
@@ -643,7 +642,7 @@ export default function ParameterDerivations() {
               <strong> And at every measured slot the data preferred a different constant:</strong> the anchor fit was
               0.66 (1.0% from 2/3, 6.8% from 1/&#x03C6;); the a&#x2080; slot prefers 3/2 (S217); Gaia gives
               0.688 &plusmn; 0.10 (2/3 at center). Consequence for the ledger: TEST-09&apos;s BTFR kill gets{' '}
-              <em>stronger</em> — the honest accounting is one derived ingredient (&#x03A9;<sub>m</sub>) plus one free
+              <em>stronger</em> — the honest accounting is one imported cosmological input (&#x03A9;<sub>m</sub>, a Planck measurement, not derived) plus one free
               exponent dressed as a constant, and the parameter scan shows no exponent value rescues the slope.
               Full chain: <code>explorer/findings/2026-07-17-phi-exponent-provenance-fitted-then-named.md</code>.
             </p>
@@ -858,7 +857,7 @@ export default function ParameterDerivations() {
           <strong>Honest bottom line (updated 2026-07-18; the previous version of this paragraph was a
           fossil):</strong> zero parameters in this chain have independent first-principles derivations.
           A &mdash; formerly presented here as &ldquo;the effective novel parameter&rdquo; with an independent
-          derivation path &mdash; is audited-negative (item 3: the stated formula gives a value 600&times; off;
+          derivation path &mdash; is audited-negative (item 3: the stated formula gives a coefficient 600&times; below the units-hybrid 0.029, and a density within &times;0.27&ndash;&times;8.5 of the archive&apos;s own V<sup>0.5</sup> law over 30&ndash;300 km/s;
           the computation that hits 5% uses a scaling law the framework does not use). The exponent &#x03C6; is
           fitted-then-named (item 7). &#x03B3; = 2/&#x221A;N<sub>corr</sub> is a sign-inverted ansatz (item 1).
           a&#x2080; and &#x03A3;&#x2080; reproduce known observational relations (Milgrom 1983; Freeman 1970)

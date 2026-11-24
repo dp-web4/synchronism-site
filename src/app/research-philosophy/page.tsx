@@ -379,7 +379,7 @@ export default function ResearchPhilosophy() {
           <h3 style={{ color: 'var(--color-accent-blue)', fontSize: '0.95rem', marginTop: 0 }}>The meta-finding: this pattern is the result</h3>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
             The combined pattern across the full research arc is a well-documented program-level null for this
-            AI-generated research program &mdash; not yet a measured finding about AI-generated science in general: <strong>every structurally novel commitment (TEST-04a disfavored 2.4σ on σ₈ amplitude, post-hoc,
+            AI-generated research program &mdash; not yet a measured finding about AI-generated science in general: <strong>every structurally novel commitment (TEST-04a underpowered as registered: fσ₈ only ~0.9σ past its threshold against a &gt;3σ bar, and the σ₈ 2.4σ is calibration-inherited, since the 0.76 was fitted to lensing S8;
             critical exponents category-error, Bullet Cluster viscosity sign-reversed) has either failed
             or collapsed to non-discriminating; every surviving prediction is degenerate with MOND or standard QM</strong>.
             This is exactly what you would predict from a training-distribution filter operating on a
@@ -480,7 +480,7 @@ export default function ResearchPhilosophy() {
           <div className="card" style={{ padding: '0.75rem 1rem', borderLeft: '3px solid #ef4444' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
               <strong>TEST-04a: DESI RSD fσ₈ Suppression</strong>
-              <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>DISFAVORED 2.4σ on σ₈ — ~1.5σ on Registered fσ₈ (corrected 2026-07-14)</span>
+              <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>UNDERPOWERED AS REGISTERED — ~0.9σ on registered fσ₈; σ₈ 2.4σ is calibration-inherited (relabelled 2026-11-24)</span>
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', margin: '0.25rem 0 0' }}>
               Registered as TEST-04 replacement (2026-05-04). Derivation: Session 107. Threshold: fσ₈(z=0.51) &gt; 0.46

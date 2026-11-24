@@ -24,6 +24,18 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-24 (four visitor personas, 2026-11-24 log; explorer 2026-11-22 grid dispersion; survey rerun).
+    (r"0 of 123</strong> reach|0 of 123 reach &#x03A9;<sub>m</sub> anywhere\.", "2026-11-24", "0/123 was the units-hybrid knee; at 0.028·V^0.5 111/123 exceed Ω_m (plotter_survey_at_archive_knee.py)"),
+    (r"the pin the RAR refuted", "2026-11-24", "the γ = 2 pin is disfavoured ~2σ (ΔBIC ≈ +11 by galaxy, +2.7 with own Υ); +184 assumes independent points"),
+    (r"not on how the orbit is deprojected", "2026-11-24", "both wide-binary groups frame the dispute as the semi-major-axis model; the companion rate is an in-house addition"),
+    (r"TEST-04a disfavored 2\.4σ on σ₈ amplitude|DISFAVORED 2\.4σ on σ₈", "2026-11-24", "the 0.76 was calibrated to lensing S8; on the registered fσ₈ TEST-04a is underpowered (~0.9σ vs >3σ)"),
+    (r"Below reach, not untested", "2026-11-24", "threshold kinematics reach the grid's natural |η| ≈ 0.03–0.14 (explorer 2026-11-22); below reach only by time-of-flight"),
+    (r"subluminal for every field, which partly cancels", "2026-11-24", "sign depends on time step and stencil; a universal n = 2 coefficient does not cancel (explorer 2026-11-22)"),
+    (r"off by ~2&times; in practice|off by ~2× in practice", "2026-11-24", "3D Ising vs mean field: β, ν, δ differ by 1.3–1.6×; mean-field α, η are zero"),
+    (r"addresses this via einselection", "2026-11-24", "einselection explains the preferred basis, not the Born rule"),
+    (r"one derived ingredient \(&#x03A9;", "2026-11-24", "Ω_m is an imported Planck measurement, not derived"),
+    (r"bends from flat to steep", "2026-11-24", "ρ_crit is a reference density; the log-axis bend is at 2ρ_crit (γ = ½) or ~0.77ρ_crit/γ (large γ)"),
+    (r"Currently on three tools", "2026-11-24", "Artifact Lesson is on six of seven tool cards; the Interactive Tools index is the list of record"),
     # Added 2026-11-22 (four visitor personas, 2026-11-22 log; explorer 2026-11-21 Bell+LIV pincer).
     (r"sharpest possible switch", "2026-11-22", "no gamma gives a sharp switch (10-90% width >= 1.17 dex); gamma = 2 is the earliest rise, not the sharpest"),
     (r"gentler, earlier-starting", "2026-11-22", "smaller gamma gives a LATER, gentler rise; the caption contradicted the regime label beside it"),

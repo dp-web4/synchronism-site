@@ -779,7 +779,7 @@ export default function GalaxyPlotter() {
             <strong style={{ color: '#38bdf8' }}>&ldquo;max C = {maxC.toFixed(3)}&rdquo; and &ldquo;the floor at
             &#x03A9;<sub>m</sub>&rdquo; are two different C&apos;s. Measured and corrected 2026-09-18.</strong>{' '}
             A leading-edge simulated-visitor persona put the two numbers side by side on 2026-09-18 and concluded that the floor
-            (0.315) must bind everywhere, since the computed C never exceeds 0.001 &mdash; so that the galaxy sector
+            (0.315) must bind everywhere, since the computed C never exceeded 0.001 at the knee the chart then drew &mdash; so that the galaxy sector
             applies the <em>constant</em> 3.17, the tanh does no work, and TEST-09/TEST-10 are algebra rather than
             data. The persona flagged the inference as unverified and asked for a source check before publishing. It
             was run, on 123 real SPARC discs rather than this page&apos;s five-galaxy toy, and{' '}
@@ -787,9 +787,17 @@ export default function GalaxyPlotter() {
             <br /><br />
             &bull; <strong>C<sub>&#x03C1;</sub> = tanh(&#x03B3;&middot;ln(1+&#x03C1;/&#x03C1;<sub>crit</sub>))</strong>,
             keyed on <em>density</em> &mdash; what this chart draws, and what &ldquo;max C = {maxC.toFixed(3)}&rdquo;
-            reports. It carries no floor. The 0.001 figure <em>does</em> generalise off the toy: over 123 SPARC discs
-            the per-disc maximum has median 1.2&times;10<sup>&minus;3</sup> at &#x03B3; = 2 (1.6&times;10<sup>&minus;4</sup>{' '}
-            to 4.9&times;10<sup>&minus;2</sup>), and <strong>0 of 123</strong> reach &#x03A9;<sub>m</sub> anywhere.
+            reports. It carries no floor. How high it gets depends entirely on the knee. At the units-hybrid knee
+            0.029&middot;V<sub>flat</sub>&sup2; (this chart&apos;s only curve until 2026-11-14, and the knee of the
+            2026-09-18 survey) the per-disc maximum over 123 SPARC discs has median 1.2&times;10<sup>&minus;3</sup> at
+            &#x03B3; = 2 and 0 of 123 reach &#x03A9;<sub>m</sub>. <strong>At the archive knee this chart now draws by
+            default (0.028&middot;V<sub>flat</sub><sup>0.5</sup>) the median is 0.84 at &#x03B3; = 2, and 111 of 123
+            discs exceed &#x03A9;<sub>m</sub> somewhere</strong> (57 of 123 at &#x03B3; = 0.489, median 0.29). DDO 154&apos;s
+            0.244 is among the lowest; UGC 6667 is lowest at 0.135. Rerun 2026-11-24 after a graduate simulated-visitor
+            persona noticed the old survey sitting beside the new default (predictions committed before running, 2 of 4
+            held; both Σ estimators agree;{' '}
+            <code>maintainer/scripts/plotter_survey_at_archive_knee.py</code>). The conclusion below does not depend on
+            it, because the floor lives on a different function.
             <br />
             &bull; <strong>C<sub>a</sub> = &#x03A9;<sub>m</sub> + (1&minus;&#x03A9;<sub>m</sub>)&middot;x/(1+x)</strong>,
             x = (g<sub>bar</sub>/a&#x2080;)<sup>1/&#x03C6;</sup>, keyed on <em>acceleration</em> &mdash; what the

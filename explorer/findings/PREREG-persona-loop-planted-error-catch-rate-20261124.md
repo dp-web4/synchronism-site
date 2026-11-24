@@ -64,3 +64,24 @@ too lenient, and catch rates will be reported net of it.
 - Re-plant, re-prompt or add replicates after seeing results, except to replace a run that crashed, timed out or wrote
   nothing. Any such replacement is logged.
 - Put planted text anywhere near `src/`, or publish it. The corpus is archived as a tarball, so repo greps cannot hit it.
+
+---
+## Addendum A2 (registered after Arm A was scored, before A2 runs): mediated reading
+
+**Why.** Arm A (full text) gave a loop catch of 31/40 = 0.78. Today's real visitor transcripts show 0 direct WebFetch
+calls; they used 30 `web-fetch` subagent calls, each with a targeted brief ("report … verbatim", "first 1–3 sentences
+under each heading"), plus 16 curls in Pass 4. So the real instrument reads through a brief written by the persona.
+A2 isolates that stage.
+
+**Design.** Same planted corpus, same 4 persona prompts, 2 replicates. Changes:
+1. The persona cannot open pages. The mirror sits outside its cwd at a path only the subagent knows.
+2. It must ask a `web-fetch` subagent (defined via `--agents`, tools `Read` only, model `haiku`, standing in for WebFetch's
+   small-model summariser) to "fetch" a named page and report what it asks for.
+Scoring is identical (blinded Sonnet scorer, hand check of every CAUGHT).
+
+**Predictions.**
+- **M1.** Mediated loop catch ≤ 0.45. Refuted if ≥ 0.65.
+- **M2.** The loss falls on numbers: mediated NUMERIC (ARITH + STALE) loop catch ≤ 0.40, against 0.81 in Arm A, and a
+  larger drop than WORDING (OVERCLAIM + OVERREFUTE). Refuted if NUMERIC drops less than WORDING.
+- **M3.** Items caught in Arm A only through a cross-page contradiction (P05, P06, P08, P10, P14, P18, P19) lose the most.
+  The persona would have to ask two subagents for the same number.

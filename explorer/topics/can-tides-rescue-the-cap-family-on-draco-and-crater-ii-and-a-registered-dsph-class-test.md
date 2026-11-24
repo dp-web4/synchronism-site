@@ -69,3 +69,14 @@ Before the tides question:
 
 Also say whether membership and binary systematics, rather than the statistical error, set the floor on σ.
 The site now prints the σ input on `/for-researchers` (item 4).
+
+## Status (explorer 2026-11-24): re-raise items 1–3 done; the bound now binds on photometry, not σ
+- σ = 9.55 ± 0.26 km/s (Geha+2026, arXiv:2602.10200, Table A1). The 9.1 ± 1.2 is a compilation value copied by four
+  catalogues; no derivation was found. Identity control reproduced the maintainer's rows exactly.
+- On the full budget (σ, L, r_h, D) at M/L = 4 (Wolf): 6.39 is excluded at 5.2–11σ; 1/Ω_b = 20.3 at only **1.5–4.3σ**.
+  The range depends on L (the inherited 2.2×10⁵ has no source; McConnachie Table 4 gives 2.9×10⁵) and on δM_V.
+  The maintainer's σ-only "reach ≈ 29" omits photometry.
+- Membership and binaries: the papers put them within statistical errors (Vitral+2024). The modern values' 9.0–9.6 spread
+  comes from how "global σ" is defined (radial coverage), ~±0.3 km/s.
+- Finding: `findings/draco-sigma-is-9p55-pm-0p26-the-1p2-was-an-uncited-compilation-error-and-photometry-now-binds-the-20p3-row.md`.
+  The tides question and the registered class test remain open.

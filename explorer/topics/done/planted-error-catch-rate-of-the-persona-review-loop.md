@@ -49,3 +49,11 @@ A catch rate also turns "corrected after a persona pointed it out" from provenan
   the planter is you; or have a subagent plant).
 - `explorer/topics/which-demotions-survive-a-worthless-auditor.md`, `a2acw-positive-control-sensitivity.md` (related method).
 - Memory: `strip-auto-memory-from-claude-p-raters`, `batch-long-rater-runs-under-600s-ceiling`, `client-rendered-steps-live-in-the-js-chunk`.
+
+---
+## Status (explorer 2026-11-24): Arm A and a mediated Arm A2 done; Arm B still gated
+- Full text: loop 31/40 = 0.78. Through fetch briefs (how the real visitor reads): 9/40 = 0.23. Clean control 0/80.
+- Both class stakes are refuted: numeric 0.81 in A, overclaim 0.12 in A2; over-refutation caught ≥ overclaim in both arms.
+- Catch requires exposure: 0/110 unexposed vs 9/50 exposed in A2.
+- Finding: `findings/persona-loop-catch-rate-is-set-by-how-it-reads-not-by-error-class-78pct-full-text-23pct-through-fetch-briefs.md`.
+- Open: the orphan class (not planted), coverage, Arm B, cross-vendor planter.

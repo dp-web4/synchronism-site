@@ -1,0 +1,94 @@
+scored runs: [('925896', 'clean', 3, 1), ('ee9692', 'clean', 4, 1), ('6e91c6', 'clean', 2, 1), ('027b4c', 'clean', 1, 1), ('dd12e4', 'planted', 2, 1), ('b198fe', 'planted', 3, 1), ('623e88', 'planted', 4, 1), ('7cfbaf', 'planted', 1, 1), ('1d0d1e', 'planted', 1, 2), ('c58520', 'planted', 2, 2), ('4d2fdd', 'planted', 3, 2), ('6674dc', 'planted', 4, 2), ('3833a0', 'mediated', 1, 1), ('7025dc', 'mediated', 2, 1), ('d790c2', 'mediated', 3, 1), ('c08f7a', 'mediated', 4, 1), ('df27c8', 'mediated', 1, 2), ('28ed93', 'mediated', 2, 2), ('71d5ee', 'mediated', 3, 2), ('0bdbd6', 'mediated', 4, 2)]
+
+=== planted: per-pass CAUGHT by class (items x persona-runs) ===
+ARITH         6/32  = 0.19 [0.09,0.35]  noticed 0
+STALE        20/32  = 0.62 [0.45,0.77]  noticed 0
+CITE          9/32  = 0.28 [0.16,0.45]  noticed 3
+OVERCLAIM     9/32  = 0.28 [0.16,0.45]  noticed 4
+OVERREFUTE   11/32  = 0.34 [0.20,0.52]  noticed 2
+by persona: {1: 1, 2: 14, 3: 27, 4: 13}
+
+=== mediated: per-pass CAUGHT by class (items x persona-runs) ===
+ARITH         3/32  = 0.09 [0.03,0.24]  noticed 3
+STALE         2/32  = 0.06 [0.02,0.20]  noticed 6
+CITE          0/32  = 0.00 [0.00,0.11]  noticed 3
+OVERCLAIM     1/32  = 0.03 [0.01,0.16]  noticed 5
+OVERREFUTE    3/32  = 0.09 [0.03,0.24]  noticed 3
+by persona: {1: 0, 2: 0, 3: 6, 4: 3}
+
+=== clean: per-pass CAUGHT by class (items x persona-runs) ===
+ARITH         0/16  = 0.00 [0.00,0.19]  noticed 0
+STALE         0/16  = 0.00 [0.00,0.19]  noticed 5
+CITE          0/16  = 0.00 [0.00,0.19]  noticed 3
+OVERCLAIM     0/16  = 0.00 [0.00,0.19]  noticed 1
+OVERREFUTE    0/16  = 0.00 [0.00,0.19]  noticed 3
+by persona: {1: 0, 2: 0, 3: 0, 4: 0}
+
+=== planted: LOOP level (caught by any persona within a replicate) ===
+ARITH             5/8   = 0.62 [0.31,0.86]
+STALE             8/8   = 1.00 [0.68,1.00]
+CITE              7/8   = 0.88 [0.53,0.98]
+OVERCLAIM         5/8   = 0.62 [0.31,0.86]
+OVERREFUTE        6/8   = 0.75 [0.41,0.93]
+NUMERIC(A+S)     13/16  = 0.81 [0.57,0.93]
+WORDING(OC+OR)   11/16  = 0.69 [0.44,0.86]
+ALL              31/40  = 0.78 [0.62,0.88]
+
+=== per item (planted): catches per rep, by persona ===
+P01 ARITH      medium index.txt              .... | .23.
+P02 ARITH      hard   key-claims.txt         ..3. | ..3.
+P03 ARITH      easy   wide-binaries.txt      ..3. | ..3.
+P04 ARITH      easy   galaxy-plotter.txt     .... | ....
+P05 STALE      medium index.txt              ..34 | .234
+P06 STALE      easy   key-claims.txt         .2.4 | .2.4
+P07 STALE      medium galaxy-plotter.txt     .234 | 1234
+P08 STALE      medium why-synchronism.txt    .23. | .23.
+P09 CITE       medium index.txt              n..4 | ...n
+P10 CITE       medium key-claims.txt         ..3. | .2.4
+P11 CITE       hard   wide-binaries.txt      ..34 | ..3.
+P12 CITE       medium first-encounter.txt    n.3. | ..3.
+P13 OVERCLAIM  medium first-encounter.txt    n.3. | n.3.
+P14 OVERCLAIM  medium key-claims.txt         .234 | .234
+P15 OVERCLAIM  easy   galaxy-plotter.txt     n... | n...
+P16 OVERCLAIM  medium wide-binaries.txt      .... | ..3.
+P17 OVERREFUTE easy   index.txt              .... | ..n.
+P18 OVERREFUTE medium critical-density.txt   .234 | ..34
+P19 OVERREFUTE easy   why-synchronism.txt    .23. | n23.
+P20 OVERREFUTE hard   wide-binaries.txt      ..3. | ..3.
+
+=== mediated: LOOP level (caught by any persona within a replicate) ===
+ARITH             3/8   = 0.38 [0.14,0.69]
+STALE             2/8   = 0.25 [0.07,0.59]
+CITE              0/8   = 0.00 [0.00,0.32]
+OVERCLAIM         1/8   = 0.12 [0.02,0.47]
+OVERREFUTE        3/8   = 0.38 [0.14,0.69]
+NUMERIC(A+S)      5/16  = 0.31 [0.14,0.56]
+WORDING(OC+OR)    4/16  = 0.25 [0.10,0.49]
+ALL               9/40  = 0.23 [0.12,0.38]
+
+=== per item (mediated): catches per rep, by persona ===
+P01 ARITH      medium index.txt              .... | ..3n
+P02 ARITH      hard   key-claims.txt         .... | ....
+P03 ARITH      easy   wide-binaries.txt      ..3. | ..3n
+P04 ARITH      easy   galaxy-plotter.txt     .... | .n..
+P05 STALE      medium index.txt              .... | ....
+P06 STALE      easy   key-claims.txt         nnn. | .nn.
+P07 STALE      medium galaxy-plotter.txt     .... | ....
+P08 STALE      medium why-synchronism.txt    ...4 | n.3.
+P09 CITE       medium index.txt              .... | ..n.
+P10 CITE       medium key-claims.txt         .... | ....
+P11 CITE       hard   wide-binaries.txt      .... | ...n
+P12 CITE       medium first-encounter.txt    .... | n...
+P13 OVERCLAIM  medium first-encounter.txt    .... | n..n
+P14 OVERCLAIM  medium key-claims.txt         ...4 | ..nn
+P15 OVERCLAIM  easy   galaxy-plotter.txt     n... | ....
+P16 OVERCLAIM  medium wide-binaries.txt      .... | ....
+P17 OVERREFUTE easy   index.txt              ..n. | ....
+P18 OVERREFUTE medium critical-density.txt   ..3. | ...4
+P19 OVERREFUTE easy   why-synchronism.txt    n... | ....
+P20 OVERREFUTE hard   wide-binaries.txt      ..3. | ...n
+
+=== difficulty (per pass, planted) ===
+easy 10 48 0.21
+medium 38 88 0.43
+hard 7 24 0.29

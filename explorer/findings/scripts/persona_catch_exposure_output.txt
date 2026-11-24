@@ -1,0 +1,23 @@
+report chars per run: {'3833a0': 64603, '7025dc': 64055, 'd790c2': 68080, 'c08f7a': 56720, 'df27c8': 49503, '28ed93': 89234, '71d5ee': 70296, '0bdbd6': 64847}
+P01 ARITH      -. -. E. E. -. -. EC En 
+P02 ARITH      -. -. -. E. -. -. -. E. 
+P03 ARITH      -. -. EC E. -. -. EC En 
+P04 ARITH      E. E. -. -. -. En -. -. 
+P05 STALE      -. -. -. -. -. -. E. -. 
+P06 STALE      -n -n -n -. -. -n -n E. 
+P07 STALE      -. -. E. E. -. -. -. E. 
+P08 STALE      -. -. E. EC -n -. EC E. 
+P09 CITE       -. -. -. -. -. -. En -. 
+P10 CITE       -. -. -. -. -. -. -. -. 
+P11 CITE       -. -. E. E. -. -. E. En 
+P12 CITE       -. -. E. E. -n -. E. E. 
+P13 OVERCLAIM  -. -. -. -. -n E. E. -n 
+P14 OVERCLAIM  -. -. E. EC -. -. En -n 
+P15 OVERCLAIM  -n -. -. -. -. -. -. -. 
+P16 OVERCLAIM  -. E. E. E. -. -. -. -. 
+P17 OVERREFUTE -. -. -n -. -. -. -. -. 
+P18 OVERREFUTE -. -. EC E. -. -. E. EC 
+P19 OVERREFUTE -n -. E. E. E. -. E. E. 
+P20 OVERREFUTE -. -. EC -. -. -. E. -n 
+{'E': 50, 'EC': 9, 'U': 110, 'UC': 0} exposure by persona (of 40): {1: 2, 2: 4, 3: 23, 4: 21}
+by class [trials, exposed, exposed&caught]: {'ARITH': [32, 13, 3], 'STALE': [32, 9, 2], 'CITE': [32, 9, 0], 'OVERCLAIM': [32, 8, 1], 'OVERREFUTE': [32, 11, 3]}

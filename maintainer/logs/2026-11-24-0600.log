@@ -1,3 +1,29 @@
 Starting Synchronism Maintainer Session at Tue Nov 24 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+I fixed everything flagged HIGH in today's visitor log, and one of the fixes needed a fresh computation rather than a rewording. Site (`d3d9962`) and research repo (`da01daf9`) are pushed. The build, lint and link check pass; I haven't checked any of it in a browser.
+
+**What changed on the site**
+- **Galaxy plotter survey.** The plotter said that across 123 galaxies the density formula's value has a median of 1.2×10⁻³ and that 0 of 123 reach Ω_m. That survey was run under the old calibration, retired on 11-14. I reran it under the current one, with predictions committed before running. The median is 0.84 and 111 of 123 galaxies exceed Ω_m. The control run reproduced the old numbers exactly, and 2 of my 4 predictions held (both misses were on the high side). No verdict changes, because the Ω_m floor sits on a different function, but the printed statistic was off by almost three orders of magnitude.
+- **Wide-binaries page, eight days before Gaia DR4.** The page said the dispute between the two research groups depends on hidden companion stars, "not on how the orbit is deprojected". I re-read both groups' abstracts: both say the orbit-size model decides it, and Chae et al. say companions are "well under control". The page now gives their framing first, and labels our companion estimate as one in-house AI session that neither group has seen. I added Chae's 2023 and 2024 papers, which the page had left out, and struck a citation already withdrawn as unsourceable.
+- **Explorer's 11-22 result applied.** The grid's quadratic Lorentz-violation term is within reach of cosmic-ray threshold bounds, not "below reach". Updated on /for-researchers and in the glossary.
+- **Other corrections:**
+  - The "600×" gap was a ratio of two numbers in different units. At the same rotation speed the two formulas cross at 72 km/s and differ by 0.27× to 8.5× between 30 and 300 km/s.
+  - "Refuted at +184" now reads "disfavoured at about 2σ".
+  - The a₀(z) status now shows that it depends on the error-bar convention.
+  - TEST-04a on Research Philosophy is now "underpowered as registered".
+  - Draco's velocity-dispersion input (9.1 ± 1.2 km/s) is now printed.
+  - The landing page has a clear break for beginners, plus one line saying which status label answers which question.
+  - New glossary entries: Intent, EEG and two status words. Smaller accuracy and tool-label fixes.
+
+**Research-level point:** the AI visitor personas now supply most of the site's corrections. I counted 77 credits to them on three pages and 320 mentions of "persona" across the site's source, and nobody has measured how often they catch a real error. That is the same objection the site raises against A2ACW. I wrote a proposal with a prediction set down before any test: personas catch fewer than a third of planted number errors and more than two thirds of planted wording overclaims. Today supports the worry: the stale survey sat on a page the personas visited in 8 of 9 logs before one of them noticed.
+
+**For the explorer:**
+- the planted-error test, offline on an export, never on the public site;
+- a sweep for other numbers left over from the old calibration;
+- a rerun of the Draco bound with the most precise published velocity dispersion. If its error is near ±0.4 km/s, the bound might also rule out the ceiling built from ordinary matter alone (1/Ω_b = 20.3), which is currently open.
+
+**Decisions only you can make:**
+1. **Gaia DR4 is out on 2 December, 8 days from now.** Contacting Chae et al. and Saad & Ting before the data arrives is still the cheapest thing that could change anything.
+2. Whether to run the planted-error test through the real visitor pipeline, using a Vercel preview build.
+3. Which neighbour rule FUNDAMENTALS commits to: the explorer found that one cell per tick is unstable when each cell talks only to its face neighbours.

@@ -1,0 +1,37 @@
+Starting Synchronism Explorer Session at Tue Nov 24 08:00:01 PST 2026
+I'll wait for the planter and the clean runs to finish.
+
+Waiting on the planter's confirmation and the remaining clean runs.
+
+Waiting on the runs and the Draco literature agent.
+
+Results print in submission order, so later runs may be done already. Waiting on the monitor.
+
+Draco is committed (`7bc0653`). Waiting on the mediated runs.
+
+I worked two topics this session. The main one measured how well the persona review loop catches errors, and the answer is that it depends on how the personas read, not on the kind of error. The other one updated Draco's dispersion, which makes one dwarf-galaxy exclusion stronger and stops another from being promoted to "closed". Everything is committed and pushed (`947f4b1`, `bdfd8ce`, `7bc0653`, `42d0116`).
+
+## 1. How often the persona loop catches errors
+A separate agent planted 20 errors in an offline copy of 7 live pages: 4 each of arithmetic, stale numbers, citations, overclaims and over-refutations. The four visitor personas then read it, and a blinded scorer marked the results. I hand-checked every catch it scored and all 64 stand.
+
+| How the personas read the pages | Caught by at least one persona |
+|---|---|
+| Full page text | 31/40 = **0.78** |
+| Through briefed fetch subagents (how today's real visitor read: 30 subagent fetches, no direct WebFetch) | 9/40 = **0.23** |
+| Unedited copy (control) | 0/80 false matches |
+
+- **The reading path is the bottleneck.** Through the fetch subagents, no error was caught unless its text appeared in the report the persona got back (0/110). Even when it did, only 9 of 50 were caught, because the contradicting statement on another page rarely came through with it.
+- **Both predictions about error type were wrong.** The maintainer predicted numeric errors would be caught under ⅓ of the time; with full text it was 0.81. I predicted self-critical overstatement would slip through; it was caught at least as often as favourable overstatement in both arms (0.75 vs 0.62, and 0.38 vs 0.12).
+- **Three easy errors were never caught, even with full text:** "1 kpc ≈ 326 light-years", "All three fit the observations", and "γ = 2 excluded at about 6σ" on the landing page.
+- **The unedited-copy runs found real defects on the live site.** I confirmed one: /wide-binaries says the archive knee "predicts 0.37–0.57 and is excluded at 17–36σ", but per the maintainer's BBN script output the 36σ end belongs to a row predicting 0.095. One flag was false (an arXiv ID that looks fake but is real). I haven't checked the remaining flags; they are listed for the maintainer, so the false-flag prediction is still untested.
+
+**Recommendation:** have Passes 3–4 read full page text instead of subagent summaries, and add a script that checks the same number across pages. The real motivating defect, a number left over from a retired calibration with nothing on the page to contradict it, was not part of this test.
+
+## 2. Draco's velocity dispersion
+- The σ = 9.1 ± 1.2 km/s the site uses is a compilation value that four catalogues copy; no paper derives it. The current measurement is **9.55 ± 0.26** (Geha et al. 2026, arXiv:2602.10200, Table A1). A rerun with the old value reproduced the maintainer's numbers exactly.
+- **The 6.39 cap** is now excluded at 5–11σ once luminosity, radius and distance errors are included, up from 4.5σ.
+- **The 1/Ω_b = 20.3 row should stay open.** Counting only the σ error gives 7σ, but the full error budget gives 1.5–4.3σ. The limit is now the galaxy's luminosity, and the value the script inherited (2.2×10⁵ L☉) has no source. McConnachie 2012 lists 2.9×10⁵.
+
+**Caveat:** the planter, the personas and the scorer are all Claude models, so 0.78 may partly reflect shared style. A planter from another vendor would test that.
+
+The session log is `explorer/logs/2026-11-24.md`, and the planted-error test data is archived as a tarball, so searches of the repo can't hit the planted text.

@@ -52,3 +52,20 @@ is now sharper: for Crater II the answer may be yes.
   the equilibrium leg, which now rests on Draco (≈ 7–11 by estimator).
 - Finding: `findings/dsph-coefficient-fixed-dwarfs-no-longer-close-20p3-and-crater-ii-is-observed-disrupting.md`.
 - Left in the queue for the registered class test on a gradient-free compilation.
+
+---
+## Re-raise (maintainer 2026-11-24): the statistical error on Draco's σ is a 2009-era number, and it may be the binding limit
+A researcher persona (visitor log 2026-11-24, Pass 4) noticed that every significance in the 11-19 dSph exclusion follows
+from **σ = 9.1 ± 1.2 km/s**. That is the value hard-coded in `maintainer/scripts/cap6p39_vs_dsph_estimator.py`, Walker et al.
+2009 era, and the maintainer has not re-read it against the paper. Arithmetic, checked: with B_req = 38 at M/L = 4, the 6.39 cap
+needs σ = 3.7 km/s (4.5σ). At ±0.4 km/s the 3σ reach rises to a cap ≈ 29, which would close 1/Ω_b = 20.3, now listed as open at
+2.5–2.8σ.
+
+Before the tides question:
+1. Retrieve the most precise published Draco dispersion (later MMT/Hectochelle-class samples with several hundred
+   members) **with its locator**.
+2. Rerun the cap reach with the identity control at 9.1 ± 1.2.
+3. Report whether the bound then becomes limited by M/L and tidal inflation rather than by σ statistics.
+
+Also say whether membership and binary systematics, rather than the statistical error, set the floor on σ.
+The site now prints the σ input on `/for-researchers` (item 4).

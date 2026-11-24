@@ -1,9 +1,29 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-22 (maintainer)*
+*Last updated: 2026-11-24 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-24): **The plotter's "0 of 123 reach Ω_m" was the retired units-hybrid knee: at the default 0.028·V^0.5 the median per-disc max C_ρ is 0.84 and 111/123 discs exceed Ω_m. The wide-binary crux box ruled against both groups' own framing eight days before DR4 (now fixed). The grid's quadratic LIV term is at threshold reach (explorer 11-22 drained). The persona loop is the site's main review instrument and has no catch rate: stake registered.**
+- **Run:** `maintainer/scripts/plotter_survey_at_archive_knee.py` (predictions committed `9fe6951` before running; 2/4 held, both misses on the high side; identity exact).
+- **Site (`d3d9962`):**
+  - /galaxy-plotter and Tier 1 TEST-09: survey scoped to the hybrid knee, archive-knee numbers added;
+  - /wide-binaries: both groups' semi-major-axis framing first, companion rate labelled in-house; Chae 2023/2024 added; Tier 1 Saurabh struck;
+  - /for-researchers: dim ≥ 5 row at threshold reach; Draco σ input printed;
+  - "600×" restated as same-V ratios; +184 "refuted" → "disfavoured ~2σ"; a₀(z) status convention-conditional; Research Philosophy TEST-04a;
+  - landing: beginner section break, family sentence moved to the scoreboard, label-precedence rule (also on HA);
+  - glossary: Intent, EEG, SURVIVES, ONE JOINT REQUIREMENT; Artifact Lesson count; Coherence Explorer short presets; small accuracy fixes.
+- **Tools:** lint 445 rules (+11; tree 0; HEAD control 11/11 fire). `fragment_check` 214 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `planted-error-catch-rate-of-the-persona-review-loop.md` (Arm A offline; stake: numeric catches < ⅓, wording > ⅔); `numbers-computed-under-the-units-hybrid-knee-sweep.md`; Draco re-raise on the tides topic (current dispersion first).
+- **→ Next maintainer:**
+  - /cdm-discrimination retitle, and promote its "side by side" sentence;
+  - plotter calibration radios into the physicists' fold;
+  - γ Calculator and Crossover control placement; Consciousness Demo out of the interactive list;
+  - frame-hiding prior art (Klassen 1998; Pospelov & Shang 2012), locators needed;
+  - 11-22 carry-overs.
+- **→ Project lead:** contact Chae et al. and Saad & Ting **before DR4 (2 December, 8 days)**; Arm B of the planted-error test (preview deploy through the visitor track); FUNDAMENTALS §1 neighbourhood (face-neighbour one-cell-per-tick unstable).
+  Proposal `Synchronism/Research/proposals/the_persona_loop_is_the_review_instrument_and_needs_a_catch_rate_20261124.md`.
 
 ## 🟢 NEW (maintainer 2026-11-22): **BBN sees the density-keyed law's "invisible" absolute boost: under ≥ pc smoothing G_BBN/G_lab = C(ρ_local), excluded at 17–36σ (archive knee, incl. the floored law Oort passes), 7.5–31σ (velocity-blind), 4–6σ (RG knee, γ = 0.489). The slow-scan QM survivor fails single-photon interference. Survivors were checked against the bound the archive named, not the strongest class; a sweep is queued. The landing now says "the framework is a family" in its top paragraph.**
 - **Run:** `maintainer/scripts/bbn_g_ratio_density_keyed.py` (predictions committed `42e99f2` before running; 4/4 held numerically; P3 text mislabelled floored/unfloored).

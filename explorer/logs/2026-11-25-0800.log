@@ -1,0 +1,34 @@
+Starting Synchronism Explorer Session at Wed Nov 25 08:00:01 PST 2026
+I worked the topic the maintainer flagged for this session: does Synchronism's substrate actually differ from 't Hooft's Cellular Automaton Interpretation (CAI)? The maintainer's guess was "no difference that changes a prediction". That guess is wrong as stated: there are two real differences, and both work against the framework. Predictions were committed before anything ran (`ffac773`), and the session is pushed (`a659537`).
+
+**The question has a checkable test.** CAI only works if each update is a permutation of states, meaning no two states ever merge. I ran that test on the three different dynamics the archive actually uses:
+- **The stated update rule (first-order diffusion with saturation) fails.** Its total ΣI² can only decrease, so it can never oscillate from any starting state. Stage 1's "0 of 24 runs" is therefore a proof, not a sample. Read through CAI, it has no quantum dynamics at all.
+- **The "measurement is phase-locking" rule fails.** It merges many input states into few, erasing about 7 bits per lock. In a reversible substrate, phase-locking can only be emergent, which is ordinary decoherence and nothing new.
+- **The working substrate (the focusing Klein-Gordon lattice the archive converged on) passes.** An integer version reverses exactly (18 of 18 runs). Its particle-like breathers survive only at about 2¹² levels per unit amplitude or finer. Between 2⁸ and 2¹¹ they die, which reproduced on two seeds. I didn't predict that band.
+
+**The second difference is what counts as a particle.** Synchronism says particles are lasting physical patterns in the field. 't Hooft considers exactly that picture (particles as "gliders") in §5.7.6 and calls it "hopeless". In his scheme interference comes for free; in Synchronism, the patterns themselves would have to produce it. A pattern can't interfere through its own fading edges: for a rubidium atom split across the 54 cm in Kovachy 2015, the "particle" would have to be bound so weakly (≲10⁻³⁴ of its rest energy) that it isn't a localized lump at all. What remains requires a guiding background wave, the class whose lab analogue (walking droplets) has a contested double-slit record.
+
+**Where the maintainer's guess does hold:** if you take the working substrate, treat particles as CAI does, and read measurement as decoherence, you get CAI with a specific lattice rule. That branch inherits CAI's open problems, which 't Hooft calls unsolved, so there is no ready answer to borrow for the framework's own Lorentz problem.
+
+**Two errors found in the archive's Stage-1 write-up:**
+- The reported "energy drift ~0.23" comes from an energy function missing the nonlinear term. The true drift is about 6×10⁻⁴.
+- Its pass/fail classifier has a second false positive: lattices that are frozen or just drifting get scored as stable particles.
+
+**Prediction scorecard:** three held. One partly failed: period-2 checkerboards appear exactly at the stability edge, the risk I had named. One missed on the number but held qualitatively. One failed at 2¹⁰.
+
+**Not run:** the one experiment where Synchronism's view of particles could show something CAI lacks. That is a 2D breather sent at a double slit, with and without background noise; my stake is that no fringes appear. It's listed as an open thread in the finding.
+
+Files are in `explorer/`:
+- `findings/substrate-vs-cai-two-real-differences-both-cost-the-framework-contraction-and-glider-particles.md`
+- `findings/PREREG-substrate-vs-cai-permutation-test-20261125.md`
+- `tools/substrate_cai_*.py`, with their saved outputs
+- `logs/2026-11-25.md`
+
+Sources:
+- ['t Hooft, CAI (arXiv:1405.1548)](https://arxiv.org/abs/1405.1548) · [HTML v3](https://arxiv.org/html/1405.1548v3)
+- [Pucci et al. 2018, JFM](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/abs/walking-droplets-interacting-with-single-and-double-slits/72C57E9C62FD54A81BB505AAD0D836D8)
+- [Andersen et al. 2015](https://test01.ku.dk/:obvius/pureproxy/3974268/da/publications/double-slit-experiment-with-single-wave-driven-particles-and-its-)
+- [arXiv:2005.12335](https://arxiv.org/pdf/2005.12335)
+- [Kovachy et al. 2015 (RePEc record)](https://ideas.repec.org/a/nat/nature/v528y2015i7583d10.1038_nature16155.html)
+- [Kovachy et al. reply, arXiv:1607.03485](https://arxiv.org/abs/1607.03485)
+- [phys.org coverage](https://phys.org/news/2015-12-half-meter-quantum-superposition-macroscopic.amp)

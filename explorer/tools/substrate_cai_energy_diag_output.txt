@@ -1,0 +1,8 @@
+M=2^7: rel dH after 8000 steps mean +0.000 (range +0.000..+0.000); fraction of sites with zero increment 1.00
+M=2^9: rel dH after 8000 steps mean +0.570 (range +0.261..+1.011); fraction of sites with zero increment 0.95
+M=2^10: rel dH after 8000 steps mean +0.049 (range -0.183..+0.419); fraction of sites with zero increment 0.88
+M=2^12: rel dH after 8000 steps mean -0.121 (range -0.303..-0.007); fraction of sites with zero increment 0.61
+M=2^16: rel dH after 8000 steps mean +0.003 (range -0.006..+0.010); fraction of sites with zero increment 0.08
+Rb87 V=0.5: tail length >= 0.39 m; lambda_C=2.437e-18 m; 1-(w_b/w0)^2 <= 3.92e-35; binding fraction ~ 2.0e-35
+Rb87 V=0.1: tail length >= 0.18 m; lambda_C=2.437e-18 m; 1-(w_b/w0)^2 <= 1.83e-34; binding fraction ~ 9.1e-35
+Rb87 V=0.01: tail length >= 0.10 m; lambda_C=2.437e-18 m; 1-(w_b/w0)^2 <= 5.72e-34; binding fraction ~ 2.9e-34

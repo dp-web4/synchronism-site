@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import ScriptsNote from '@/components/ScriptsNote';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import { THIRD_PARTY_CLAIM_LABEL } from '@/lib/ledger';
@@ -99,7 +100,7 @@ export default function WideBinaries() {
             G<sub>BBN</sub> = G<sub>bare</sub>, while G<sub>lab</sub> = G<sub>bare</sub>/C(&#x03C1;<sub>local</sub>). The density-keyed law therefore predicts
             G<sub>BBN</sub>/G<sub>lab</sub> = C(&#x03C1;<sub>local</sub>), which is the absolute boost turned upside down. The light-element abundances measure that
             ratio: G<sub>BBN</sub>/G<sub>0</sub> = 0.99 (+0.06/&minus;0.05) at 2&sigma; (Alvey, Sabti, Escudero &amp; Fairbairn, EPJC 80, 148, 2020,
-            arXiv:1910.10730). Against it: the archive knee (0.42) predicts 0.37&ndash;0.57 and is excluded at 17&ndash;36&sigma;; the measured velocity-blind knee
+            arXiv:1910.10730). Against it: the archive knee (0.42) predicts 0.095&ndash;0.57 (0.37&ndash;0.57 for the two &#x03B3; = 2 forms) and is excluded at 17&ndash;36&sigma;; the measured velocity-blind knee
             (0.161) predicts 0.21&ndash;0.80, excluded at 7.5&ndash;31&sigma;; Refracted Gravity&apos;s knee (0.0083) at &#x03B3; = 0.489 predicts 0.84&ndash;0.89, excluded
             at 4&ndash;6&sigma;; at &#x03B3; = 2 that knee is Newtonian and passes. Ranges cover &#x03B3; = 2 and 0.489, floored and unfloored C. This is a third root for the
             amplitude, independent of SPARC, and unlike lunar ranging it needs no assumption about how density varies along the Sun&apos;s path. It excludes
@@ -229,6 +230,34 @@ export default function WideBinaries() {
             </tbody>
           </table>
         </div>
+        <div id="efe-free-corner" className="card" style={{ margin: '1rem 0 1.5rem', scrollMarginTop: '5rem' }}>
+          <h3 style={{ color: 'var(--color-accent-violet)', marginTop: 0 }}>The one row the table above leaves out: the &ldquo;EFE-free corner&rdquo;</h3>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
+            The table assumes the binary feels the Milky Way&apos;s pull on the Sun (the external field effect, EFE), which makes the boost
+            level off. One reading of the acceleration-keyed curve has no external field: C is evaluated on the pair&apos;s own internal
+            acceleration only, at &#x03B3; &asymp; 0.87&ndash;0.95 (the range Solar-System perihelia and SPARC jointly leave; globular clusters disfavour it at about 3&sigma;, conditional on the mass model). Its boost does not level
+            off. It keeps rising as the pair&apos;s acceleration falls: about 1.49 at g<sub>N</sub> = 1.0&times;10<sup>&minus;10</sup>&nbsp;m/s&sup2;, 1.67 at 0.7, 1.88 at 0.5, 2.7 at 0.2.
+            That rising trend is the only galaxy-level prediction on this site that differs from MOND-with-EFE at wide-binary accelerations.
+          </p>
+          <ul style={{ color: 'var(--color-text-secondary)', fontSize: '0.88rem' }}>
+            <li><strong>What it is.</strong> Not a defined model of this framework. It needs a rule for which bodies count as &ldquo;the system&rdquo;, and the only written
+              rule is Milgrom&apos;s 2011 frequency-by-frequency modified-inertia toy (arXiv:1111.1611 &sect;3.1), which he set aside as observationally excluded. Under it the
+              corner is MOND as modified inertia without an external field: prior art, so no outcome raises the novelty count. Read on each star&apos;s <em>total</em>{' '}
+              acceleration instead, the planets exclude it (Saturn&apos;s perihelion would turn by about &minus;85,000&nbsp;mas per century against &minus;0.32 &plusmn; 0.47).</li>
+            <li><strong>Other legs.</strong> Globular clusters disfavour it at about 3&sigma;, conditional on the mass model; binary-cleaned open-cluster dispersions
+              sit at 0.30&ndash;0.63 of its prediction (status on <Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>Tier 1, TEST-25</Link>).</li>
+            <li><strong>Against published binned DR3 numbers (maintainer 2026-11-25, predictions committed before running; 3 of 4 held).</strong> Chae 2023
+              (ApJ 952, 128) prints the boost at two characteristic accelerations: 1.43 &plusmn; 0.06 at 10<sup>&minus;10.15</sup> and 1.117 &plusmn; 0.025 at 10<sup>&minus;8.91</sup>&nbsp;m/s&sup2;.
+              The corner predicts 1.59&ndash;1.71 at the first (2.6&ndash;4.7&sigma; too high) and 1.01&ndash;1.02 at the second (about 4&sigma; too low); the ratio of the two is
+              1.57&ndash;1.67 against Chae&apos;s 1.28 &plusmn; 0.06 (4.7&ndash;6.4&sigma;). So its <em>shape</em> is wrong at both ends in the analysis that reports a boost, and the
+              analyses that report Newton sit further below it. These are point comparisons at each bin&apos;s characteristic value; averaging over a bin would raise the
+              low-acceleration prediction further. One caveat: Chae&apos;s high-acceleration point is measured against a multiplicity calibration at 10<sup>&minus;8</sup>&nbsp;m/s&sup2;.
+              (<code>maintainer/scripts/efe_free_corner_vs_chae2023_points.py</code> and its output.)</li>
+            <li><strong>DR4 reading, dated before the data</strong> (key addenda 2026-11-11 and 2026-11-25): take R = boost at 0.2&times;10<sup>&minus;10</sup> divided by boost at
+              1.0&times;10<sup>&minus;10</sup>&nbsp;m/s&sup2;. The corner predicts R = 1.79&ndash;1.84; MOND with the external field effect and Newton both predict R &asymp; 1.
+              R &ge; 1.5 has the corner&apos;s shape; R &le; 1.2 rules it out; in between is no result. A per-separation record out to 100&nbsp;kAU is also asked for.</li>
+          </ul>
+        </div>
         <p>
           Cassini already speaks to this question for modified-Poisson MOND. Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781) state that the Solar-System quadrupole &ldquo;implies, to high precision, no deviation from Newtonian gravity in nearby wide binaries&rdquo;; Park et al. 2026 put an upper bound of 2% (95%) on the MOND boost at the Sun&apos;s position (no arXiv locator checked on this site yet; treat as pending, the rule that withdrew &ldquo;Saurabh &amp; Desmond 2024&rdquo;). So a Chae-type boost in DR4 would be in tension with Cassini for that class of theory, whatever it does for rotation curves.
         </p>
@@ -323,6 +352,7 @@ export default function WideBinaries() {
         </div>
       </section>
 
+      <ScriptsNote />
       <RelatedConcepts currentPath="/wide-binaries" />
     </>
   );

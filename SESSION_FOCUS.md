@@ -1,9 +1,23 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-24 (maintainer)*
+*Last updated: 2026-11-25 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-25): **The one move has a named predecessor: 't Hooft's Cellular Automaton Interpretation (2016, arXiv:1405.1548), never cited in the archive, is a deterministic Planck automaton with observers as patterns, past Bell by superdeterminism. The EFE-free corner's trend is wrong at both ends of Chae 2023's two DR3 points (ratio 4.7–6.4σ off), so the one branch DR4 would read differently from MOND-with-EFE is disfavoured before the data. Draco now rests on a modern dispersion (6.39 out at 5.2–11σ, full budget).**
+- **Run:** `maintainer/scripts/efe_free_corner_vs_chae2023_points.py` (predictions committed `590d4d4` before running; 3/4 held; P2 failed low). DR4 key: numeric trend rule (2026-11-25 addendum).
+- **Site:**
+  - /wide-binaries `#efe-free-corner`; landing 14,610 → 141 (environment run); BBN range; Bell row (signalling arm, CAI);
+  - Draco 9.55 ± 0.26 on six surfaces (explorer 11-24 drained); plotter archive-default captions + DDO 154 MOND offset; key-claims 116×; Freeman 4%;
+  - Research Philosophy `#persona-loop-calibration` (0.78 full text / 0.23 via fetch); ScriptsNote (scripts live in the site repo) on four pages;
+  - Coherence Function ×4, Crossover, Parameter Derivations, Equation Walkthrough, one five-row "Which C?", label map now ten kinds / four verdicts;
+  - beginner: hero, First Encounter (prerequisites, superconductor why, glossary link); count sentence "five data tests + one construction check" with the 12 queued decisions beside it.
+- **Tools:** lint 466 rules (+21; tree 0; HEAD control 20/21 fire, Freeman exempted by context). `fragment_check` 219 ok. Build passes. JSX whitespace check: 4 collapses fixed. Not checked in a browser.
+- **→ Explorer:** `how-does-the-substrate-differ-from-thooft-cellular-automaton-interpretation.md` (stake: no prediction-changing difference); re-raise on `site-propagation-completeness-audit.md` (mechanized number sweep).
+- **→ Next maintainer:** shorten persona credits to "(AI review pass, date)"; dates-outside-revision-notes design; breadcrumbs; Greek slugs; badge-definitions anchor opens collapsed; γ Calculator Linear mode; Intermediate path end; transferable-negatives note (P4).
+- **→ Project lead:** DR4 in 7 days (author contact, reading default); a SPINE sentence naming CAI; full-text reading for the visitor track.
+  Proposal `Synchronism/Research/proposals/the_ontology_has_a_named_predecessor_and_the_corner_trend_fails_dr3_20261125.md`.
 
 ## 🟢 NEW (maintainer 2026-11-24): **The plotter's "0 of 123 reach Ω_m" was the retired units-hybrid knee: at the default 0.028·V^0.5 the median per-disc max C_ρ is 0.84 and 111/123 discs exceed Ω_m. The wide-binary crux box ruled against both groups' own framing eight days before DR4 (now fixed). The grid's quadratic LIV term is at threshold reach (explorer 11-22 drained). The persona loop is the site's main review instrument and has no catch rate: stake registered.**
 - **Run:** `maintainer/scripts/plotter_survey_at_archive_knee.py` (predictions committed `9fe6951` before running; 2/4 held, both misses on the high side; identity exact).

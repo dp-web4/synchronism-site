@@ -72,7 +72,8 @@ export default function MeasurementWithoutObservers() {
           fontStyle: 'italic',
         }}>
           No observer needed. No consciousness required. The MRH boundary doesn&apos;t care
-          who is watching.
+          who is watching. (That much is already the position of the decoherence program, Zeh, Joos and Zurek, since the 1970s;
+          what this framework adds is the MRH vocabulary, not the claim.)
         </blockquote>
 
         <h2>The Mechanism</h2>
@@ -107,15 +108,15 @@ export default function MeasurementWithoutObservers() {
           way the direction of the measurement story comes from the inverted relation, not from anything independent of it.
         </p>
 
-        <h2>The Geocentrism Analogy</h2>
+        <h2>The Decoherence View, in MRH Vocabulary</h2>
         <div className="card card-highlight" style={{ margin: '1rem 0' }}>
           <p style={{ fontSize: '1.05rem', color: 'var(--color-text-primary)' }}>
             <strong>The observer was never special.</strong>
           </p>
           <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-            Just as Copernicus showed that Earth orbits the Sun (not the reverse), Synchronism
-            argues that placing the observer at the center of quantum mechanics was a geocentric
-            error. Patterns exist and decohere on their own terms. &ldquo;Observation&rdquo; is
+            The project frames this with Copernicus: placing the observer at the centre of quantum mechanics as a geocentric
+            error. The physics behind the framing is the decoherence program&apos;s (Zeh 1970; Joos &amp; Zeh 1985; Zurek 2003), not a
+            new result: patterns exist and decohere on their own terms. &ldquo;Observation&rdquo; is
             just one of many interactions that can push a system past the MRH.
           </p>
         </div>

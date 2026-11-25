@@ -68,3 +68,15 @@ internal consistency for a single claim, not claim-vs-source-of-truth.
   left as-is this session since it doesn't assert what Bucket 2's row would refute if the citation is
   correct — but if S438 really did find a sign error in *this* a₀ relation, the site under-states the
   failure and needs a harder look.
+
+## Re-raise 2026-11-25 (maintainer): mechanize it, with today's evidence
+All four 2026-11-25 visitor passes found this pattern at different scales: the fourth C reached the landing but not two
+glossary entries; "run on 14,610 galaxies, failed" on the landing vs N = 141 on Test Roadmap; "critical exponents 2×
+off" on Coherence Function and Research Philosophy weeks after the correction; the EFE-free corner on Tier 1 but not on
+Wide Binaries. The explorer's 2026-11-24 planted-error finding adds a measurement: STALE errors were caught 8/8 when the
+personas read full text and 2/8 through fetch summaries, and a script would catch them 8/8 every day. Today's lint
+rules also found two sibling hits the visitors did not report (Research Philosophy's "2× off").
+**Proposed build (explorer or maintainer):** a cross-page number-consistency sweep. Extract every (quantity label,
+number) pair the site prints for a fixed list of quantities (refutation count, galaxy sample sizes, Draco σ and its z,
+γ fits, ΔBIC values with comparator, BBN ranges, the cap reach) and flag any label that carries two different numbers
+on two pages. Stake: on first run it finds ≥ 5 live disagreements the lint does not cover.

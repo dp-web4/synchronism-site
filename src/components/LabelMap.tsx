@@ -14,6 +14,8 @@ export default function LabelMap() {
   const rows: { system: string; answers: string; where: string; members: string }[] = [
     { system: 'Status badge: MRH-relationship', answers: `Where does this claim sit relative to current research focus? (MRH = Markov Relevancy Horizon, borrowed by analogy; says nothing about physics)`, where: 'Coloured pill under a page title or on a claim', members: mrh },
     { system: 'Status badge: descriptive', answers: 'What happened when it met data?', where: 'Coloured pill under a page title or on a claim', members: desc },
+    { system: 'Scoreboard word', answers: 'How did a whole piece of the framework fare against data? (a verdict on the piece, not on one page)', where: 'Landing page \u201cWhere each piece stands\u201d table and the scoreboard', members: 'Excluded, Excluded at its own cap, Excluded by Bell experiments, Is MOND, Is \u039B, Survives, No number to test, One joint requirement (open); outcome words such as Disfavoured are defined in the glossary' },
+    { system: 'Ledger class', answers: 'What kind of refutation is a counted row? (a verdict on the row)', where: 'Beside the refutation count (landing, Honest Assessment, footer)', members: 'framework-specific (asserts framework content on data), inherited from MOND, unmeetable registration, construction check' },
     { system: 'Retired label', answers: 'Nothing new; kept so old text still reads', where: 'Only in history notes and legends', members: RETIRED_LABELS.map(r => r.name).join(', ') },
     { system: 'Operational state', answers: 'What did this test do, or what happened to it?', where: 'Test cards (Tier 1, Test Roadmap), next to the badge', members: OPERATIONAL_STATES.join(', ') },
     { system: 'Lifecycle verb', answers: 'What is the history of this row?', where: 'Inside status text and revision notes', members: LIFECYCLE_VERBS.join(', ') },
@@ -25,8 +27,9 @@ export default function LabelMap() {
     <div id="label-map" style={{ marginBottom: '2rem', scrollMarginTop: '5rem' }}>
       <h2 style={{ fontSize: '1.1rem' }}>How to read labels on this site</h2>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-        The site uses eight kinds of label. Only the first two are verdicts on a claim. If a label is not in the first two
-        rows, it is not a badge. Full definitions:{' '}
+        The site uses ten kinds of label. Four are verdicts: the two badge families (rows 1&ndash;2) on one page&apos;s claim, the scoreboard
+        word on a whole piece of the framework, and the ledger class on a counted refutation. To ask &ldquo;did this part of the theory survive
+        contact with data?&rdquo;, read the scoreboard word. Only rows 1&ndash;2 are badges; nothing below row 4 is a verdict. Full definitions:{' '}
         <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>badges</Link>,{' '}
         <Link href="/honest-assessment#operational-states" style={{ color: 'var(--color-accent-blue)' }}>operational states</Link>,{' '}
         <Link href="/honest-assessment#status-lifecycle-verbs" style={{ color: 'var(--color-accent-blue)' }}>lifecycle verbs</Link>,{' '}

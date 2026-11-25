@@ -239,8 +239,8 @@ export default function CoherenceFunction() {
 
         <div style={{ marginBottom: '1rem' }}>
           One caveat: for
-          &#x03C1;&nbsp;&#x226a;&nbsp;&#x03C1;<sub>crit</sub> (real galaxy outskirts), C&nbsp;&asymp;&nbsp;&#x03B3;x to first order (it equals
-          &#x03B3;x/(1+&#x03B3;x) only through second order at &#x03B3;&nbsp;=&nbsp;&frac12;), and so
+          &#x03C1;&nbsp;&#x226a;&nbsp;&#x03C1;<sub>crit</sub> (real galaxy outskirts), C&nbsp;&asymp;&nbsp;&#x03B3;x to first order (for &#x03B3;&nbsp;&ne;&nbsp;&frac12; it agrees with
+          &#x03B3;x/(1+&#x03B3;x) only to first order; at &#x03B3;&nbsp;=&nbsp;&frac12; the two are the same function, x/(x+2)), and so
           to first order depends on &#x03B3; and &#x03C1;<sub>crit</sub> only through their ratio. The next term,
           C&nbsp;=&nbsp;&#x03B3;x&nbsp;&minus;&nbsp;&#x03B3;x&sup2;/2&nbsp;+&nbsp;&hellip;, separates them in principle at <em>any</em> &#x03B3;, but only where
           the data reach x of order 0.1 or more; SPARC discs sit near x&nbsp;&asymp;&nbsp;10<sup>&minus;4</sup>, where only the ratio is
@@ -326,8 +326,8 @@ export default function CoherenceFunction() {
           density for any &#x03B3;, &#x03C1;<sub>crit</sub> &gt; 0. But <Link href="/sound-velocity" style={{ color: '#ef4444' }}>Sound
           Velocity</Link> &mdash; the site&apos;s strongest single chemistry correlation &mdash; ranks diamond
           (&#x03C1; = 3.51 g/cm&sup3;) as <em>more</em> coherent than lead (&#x03C1; = 11.34 g/cm&sup3;): higher
-          density, lower coherence. Computed directly, Spearman(C(&#x03C1;), sound velocity) = &minus;0.32 for
-          every parameter choice tested &mdash; the opposite sign from what this monotonicity property requires.
+          density, lower coherence. Because C is strictly increasing in &#x03C1;, its rank correlation with any property equals &#x03C1;&apos;s own:
+          Spearman(&#x03C1;, sound velocity) = &minus;0.32, independent of &#x03B3; and &#x03C1;<sub>crit</sub> by construction &mdash; the opposite sign from what this monotonicity property requires.
           Either the chemistry sector uses a different (inverse) orientation of C that this page does not
           document, or this axiom is violated by the framework&apos;s own strongest empirical claim. Not yet
           resolved.
@@ -461,7 +461,9 @@ export default function CoherenceFunction() {
               High density relative to ρ<sub>crit</sub>, moderate N<sub>corr</sub>.
               Elements act together as a collective — dense matter, crystal lattices, everyday macroscopic physics.
               Newton&apos;s laws work reliably here.
-              Galaxy dynamics (N<sub>corr</sub>&asymp;1, γ=2) lives in this regime.
+              Where galaxies sit depends on the knee: at the archive&apos;s 0.028&middot;V<sup>0.5</sup> most disc points are below it
+              (45 of 122 SPARC galaxies have any point above), while under the cosmic knee they sit at C&nbsp;&asymp;&nbsp;1, which is Newtonian gravity.
+              (&gamma;&nbsp;=&nbsp;2 is the registered galaxy value, disfavoured at about 2&sigma; at galaxy level, not a measured fact.)
               Note: high C does not mean "classical particle" in the quantum-decoherence sense —
               it means dense/collective in the density axis this equation measures.
             </p>
@@ -598,8 +600,9 @@ export default function CoherenceFunction() {
             sigmoidal interpolation between coherent and decoherent regimes. It does not claim to predict
             critical exponents, universality-class membership, or quantitative crossover structure.
             The failures documented in <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>{' '}
-            (critical exponents 2&times; off, T<sub>c</sub> 6.5&times; wrong) are consequences of applying the function
-            outside this scope, not evidence that the function itself is wrong within scope.
+            (critical exponents: the category does not apply, since C(&#x03C1;) has no exponents, and the mean-field ones it would inherit miss by factors of 1.3&ndash;1.6;
+            T<sub>c</sub> 6.5&times; wrong) fall outside this scope. That scope was drawn after those tests came in, so it describes where the function has not failed yet;
+            it is not evidence that the function is right inside it.
           </p>
         </div>
 

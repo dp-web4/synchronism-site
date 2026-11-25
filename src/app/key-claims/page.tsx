@@ -681,8 +681,9 @@ export default function KeyClaims() {
           </div>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
             <strong>What survives, and is genuinely parameter-free:</strong> (a) the <em>V-scaling inversion</em>
-            &mdash; MOND requires &#x03C1;<sub>crit</sub> &#x221D; V<sup>&minus;2</sup> while the framework asserts
-            V<sup>+2</sup>, diverging as V<sup>4</sup> and sitting ~116&times; apart at V = 300 km/s; and (b) the
+            &mdash; MOND requires &#x03C1;<sub>crit</sub> &#x221D; V<sup>&minus;2</sup>, while both archive forms rise with V (the archive&apos;s
+            0.028&middot;V<sup>0.5</sup> and the Jeans form A&middot;V<sup>2</sup>), so the two diverge as V<sup>2.5</sup> or V<sup>4</sup>. How far apart they sit at any one
+            V depends on the coefficients, so only the exponents are parameter-free (the measured exponent, &minus;0.16 &plusmn; 0.19, matches neither); and (b) the
             <em> radial shape mismatch</em> &mdash; C rises with &#x03C1; and &#x03C1; falls exponentially outward,
             so the boost runs exponentially in radius while a flat rotation curve needs it roughly linear. Both
             hold for every value of A. These, not the knee, are the durable galaxy-sector results.

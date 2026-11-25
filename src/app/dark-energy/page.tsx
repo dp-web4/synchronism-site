@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import ScriptsNote from '@/components/ScriptsNote';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 
@@ -533,6 +534,7 @@ export default function DarkEnergy() {
         </p>
       </section>
 
+      <ScriptsNote />
       <RelatedConcepts currentPath="/dark-energy" />
       <details id="corrections-log" style={{ margin: '2rem 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
         <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim). Dated corrections moved here from the running text on 2026-11-08, verbatim, in page order.</summary>

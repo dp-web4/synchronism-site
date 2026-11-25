@@ -637,7 +637,7 @@ export default function GalaxyPlotter() {
             mass model for each galaxy: the tabulated gas, stellar-disc and bulge velocity contributions (Lelli, McGaugh &amp; Schombert 2016),
             combined at the slider&apos;s stellar mass-to-light ratio. It is a fit to each galaxy&apos;s photometry and 21-cm gas map, not a toy
             built from V<sub>flat</sub>. Every curve built on it (violet, dashed violet, green) inherits it, so the green MOND line is now a real
-            prediction with one global constant, and the violet line is a constant boost of real baryons rather than of a BTFR disc. The toy
+            prediction with one global constant, and the violet line boosts real baryons rather than a BTFR disc. The toy
             exponential disc survives only as the density profile fed to C<sub>&#x03C1;</sub> (its own problem; see the V<sub>flat</sub> box).
             <details style={{ marginTop: '0.3rem' }}>
               <summary style={{ cursor: 'pointer' }}>Revision note</summary>
@@ -654,16 +654,17 @@ export default function GalaxyPlotter() {
           framework&apos;s density law (at the default knee, the archive&apos;s 0.028&middot;V<sub>flat</sub><sup>0.5</sup>), wired two ways. The solid
           (division) line sits near the dashed gray Newtonian line where the disc is bright and dense, and rises toward 3.17&times; the gray line in gravity
           where it is faint, so it still falls at the edge; the dashed (quadrature) line barely moves off the gray line. Under the
-          units-hybrid setting the solid line is the gray line scaled up by a constant. The green MOND line does follow the dots. That gap between violet and
+          units-hybrid setting the solid line is the gray line scaled up by a constant. The green MOND line follows the dots far more closely, though not exactly (on the default galaxy, DDO 154, it runs 2&ndash;8&nbsp;km/s high at every radius; note under the chart). That gap between violet and
           green is the failure this tool shows.
           <br /><strong>Two assumptions behind that picture:</strong>
           <ul style={{ margin: '0.35rem 0 0', paddingLeft: '1.2rem' }}>
-            <li>&ldquo;The equation never switches on here&rdquo; is a property of the calibration <strong>A = 0.029</strong>, not of
-              the equation&apos;s form. <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter
-              Derivations</Link> records that A = 0.029 does not follow from its own stated formula, which gives
-              A &asymp; 4.6&times;10<sup>&minus;5</sup> M<sub>&#x2609;</sub>&nbsp;pc<sup>&minus;3</sup>&nbsp;(km/s)<sup>&minus;2</sup> (A = 0.029 is in the same units). At that value the knee sits inside dwarf-disc densities: a
-              visitor&apos;s estimate puts C &asymp; 0.5 near the DDO&nbsp;154 midplane (an estimate, not a
-              computation this page performs). The chart draws only A = 0.029.</li>
+            <li>Where the solid line sits is a property of the knee calibration, not of the equation&apos;s form. At the default (the archive&apos;s
+              0.028&middot;V<sub>flat</sub><sup>0.5</sup>) bright disc centres cross the knee; under the units-hybrid 0.029&middot;V<sub>flat</sub>&sup2; no disc does.
+              <Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link> records that A = 0.029 in &#x03C1;<sub>crit</sub> = A&middot;V&sup2;
+              does not follow from its own stated formula, which gives
+              A &asymp; 4.6&times;10<sup>&minus;5</sup> M<sub>&#x2609;</sub>&nbsp;pc<sup>&minus;3</sup>&nbsp;(km/s)<sup>&minus;2</sup>; at that value the knee sits inside dwarf-disc densities
+              (a visitor&apos;s estimate puts C &asymp; 0.5 near the DDO&nbsp;154 midplane, not a computation this page performs). The chart draws the archive knee and the
+              hybrid, not the formula&apos;s A.</li>
             <li>The dashed quadrature law, v&sup2; = v<sub>b</sub>&sup2; + [V<sub>flat</sub>&middot;C<sub>&#x03C1;</sub>]&sup2;, takes the observed
               V<sub>flat</sub> as an input, so even a match would not count as evidence. The solid division curve uses the
               site&apos;s tested wiring, g = g<sub>bar</sub>/C, but with the density-keyed C<sub>&#x03C1;</sub>; TEST-09/TEST-10 divide by
@@ -964,9 +965,9 @@ export default function GalaxyPlotter() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
             The <span style={{ color: '#8b5cf6' }}>solid violet curve</span> is Synchronism&apos;s real
             C(&#x03C1;) evaluated on the disk&apos;s density profile, with gravity divided by C as the tests do (in plain words: wherever C is small the theory multiplies gravity up, because dividing by a number below 1 makes it bigger; the floor caps that at 3.17&times;) &mdash; and it
-            <strong> gets the shape wrong</strong>: the disk never gets dense enough for C to move off its floor
-            (this galaxy&apos;s maximum C(&#x03C1;) is {maxC.toFixed(3)}; the knee needs it to approach 1), so the boost is the
-            same everywhere and the curve still falls where the dots stay flat. The{' '}
+            <strong> gets the shape wrong</strong>: at the default (archive) knee it sits near the gray line where the disc is dense and rises toward the
+            3.17&times; ceiling where it is thin, so it still falls where the dots stay flat (this galaxy&apos;s maximum C(&#x03C1;) is {maxC.toFixed(3)}).
+            Under the units-hybrid setting C never moves off its floor, the boost is the same everywhere, and the curve is the gray line scaled up. The{' '}
             <span style={{ color: '#c4b5fd' }}>light-violet dashed curve</span> (behind a checkbox above the chart since 2026-10-22) wires the same C the other way and does nothing.
             The hand-tuned tanh(radius) stand-in this page displayed before 2026-07-08 (it fit because it was drawn to fit) is behind
             the checkbox above the chart. Full disclosure of the formulas below the plot.
@@ -977,13 +978,13 @@ export default function GalaxyPlotter() {
             scale a&#x2080; &#x2248; 1.2&times;10&#x207B;&#xB9;&#x2070; m/s&sup2;, applied to SPARC&apos;s measured baryons (gas, disc and bulge at the slider&apos;s
             &Upsilon;<sub>disk</sub>). Nothing in it is read off the galaxy&apos;s rotation curve, so it is a prediction for each galaxy, with no external field
             and no distance or inclination freedom. The violet curves run on the same SPARC baryons and the same &Upsilon;<sub>disk</sub>, so the two laws
-            are compared like for like. The stand-in the framework needed to look like MOND is what the site labels a <em>reparametrization</em>; the
+            are compared like for like. MOND does not fit every galaxy here exactly: on DDO 154 at the default &Upsilon;<sub>disk</sub> = 0.5 it runs 2&ndash;8&nbsp;km/s above every point (about 15% on average; &chi;&sup2; &asymp; 1,080 on SPARC&apos;s errors), and 2&ndash;4&nbsp;km/s at 0.2, since the galaxy is mostly gas. Published MOND fits that let distance and inclination float within their errors do better; this page holds both fixed (recomputed from this page&apos;s arrays 2026-11-25; no specific published fit checked). The stand-in the framework needed to look like MOND is what the site labels a <em>reparametrization</em>; the
             density-keyed equation, given the same inputs, stops at its ceiling where the dots keep rising.
           </p>
           <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0.3rem 0 0' }}>
             <summary style={{ cursor: 'pointer' }}>Revision note (history; not the current setup)</summary>
             Until 2026-11-10 the green curve ran on a mass fixed by the baryonic Tully&ndash;Fisher relation, M<sub>b</sub> = 47&middot;V<sub>flat</sub>&#x2074;,
-            with no gas component, so part of its agreement with V<sub>flat</sub> was built in and it levelled off at (47/62.8)<sup>&frac14;</sup> &asymp; 0.93 V<sub>flat</sub>
+            with no gas component, so part of its agreement with V<sub>flat</sub> was built in and it levelled off at (47/62.8)<sup>&frac14;</sup> &asymp; 0.93 V<sub>flat</sub>{' '}
             (circularity disclosed 2026-10-08 after a researcher visitor checked it). The wiring changed on 2026-11-10 but this paragraph kept describing
             the old one until 2026-11-22, when a graduate-student simulated-visitor persona compared it with the deployed code.
           </details>

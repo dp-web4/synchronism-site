@@ -20,7 +20,7 @@ const steps = [
     What ln does, in plain words: it squashes huge ranges, so 10×, 100× and 1000× the reference density become evenly spaced steps (about 2.3, 4.6 and 6.9). That lets one dimmer switch cover densities that differ by many factors of ten.
     Out comes a number between 0 and 1. Zero means sparse and independent — few neighbors, each element acting on its own.
     One means dense and collective — everything interacting, behavior dominated by the crowd.
-    (Note: in this framework C measures density-driven collective ordering, not quantum phase coherence — quantum systems like superconductors land at low C.)`,
+    Why a superconductor, everything marching in step, does not score high: C here depends only on how densely matter is packed, and a metal is no denser once it becomes superconducting. The quantum order that makes it special is something this formula cannot see. That mismatch with the marching-band picture is part of what went wrong.`,
     highlight: 'C = 0 (sparse) → C = 1 (collective)',
   },
   {
@@ -86,7 +86,7 @@ const steps = [
     fringes single photons show, so the version that survives is standard quantum mechanics described differently.
     Is this the same "coherence" as quantum coherence? No. This section borrows the word. The C in the S-curve
     above is a number computed from density alone, and it is not the quantum coherence (fixed phase relations in a
-    wavefunction) you may have heard of. The BEC and superconductor presets in the tools are there because they are
+    wavefunction) you may have heard of. The BEC (Bose–Einstein condensate, atoms cooled until they share one quantum state) and superconductor presets in the tools are there because they are
     famous collective systems, not because C measures their quantum state; C has no temperature in it, so it cannot see a
     superconductor switch on.`,
     highlight: 'Measurement = MRH crossing (an interpretation; same predictions as standard QM)',
@@ -96,7 +96,7 @@ const steps = [
     content: `Melting points: 53% error. Critical exponents (the numbers that describe how sharply a property changes
     near a phase transition): listed as 2× off, though the function as written has none, so that entry records a failed
     framing rather than a measured number. Superconductor Tc (the temperature below which a material superconducts):
-    6.5× wrong (607 K predicted for YBCO, 93 K actual).
+    6.5× wrong (607 K predicted for YBCO, a copper-oxide high-temperature superconductor; 93 K actual).
     The takeaway: even where an S-curve like C(ρ) can be fitted to data, it does not replace domain-specific physics
     (crystal structure, spin-orbit coupling, many-body effects), and in galaxies, where it was tested hardest, the
     density version loses (see the Galaxy Curve Plotter, next).`,
@@ -118,7 +118,8 @@ export default function FirstEncounter() {
         <Link href="/why-synchronism" style={{ color: 'var(--color-accent-blue)' }}>Prev: Why Synchronism?</Link>)
       </p>
       <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-        A guided walk through the core ideas. No prerequisites needed.
+        A guided walk through the core ideas. No prerequisites for the plain sections; the formulas in them are optional. Stuck on a word?{' '}
+        <Link href="/glossary#start-with-ten" style={{ color: 'var(--color-accent-blue)' }}>Ten words to learn first</Link>.
       </p>
 
       {/* Coherence definition — always visible */}
@@ -133,7 +134,6 @@ export default function FirstEncounter() {
           A marching band moving in lockstep: high coherence. A crowd wandering in a plaza: low coherence.
           Dense matter in a crystal lattice — every atom locked in step: high coherence.
           Sparse gas drifting between stars: low coherence.
-          (Spoiler: the formula as written scores the most locked-in-step materials, such as superconductors, <em>low</em>, the opposite of this picture. Section B below explains why; it is part of what went wrong.)
           Synchronism asks whether <em>one equation</em> can quantify this transition across all of physics.
         </p>
       </div>
@@ -234,7 +234,7 @@ export default function FirstEncounter() {
             <details style={{ marginTop: '0.75rem' }}>
               <summary style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', cursor: 'pointer' }}>Expert note (physicist terminology)</summary>
               <span style={{ display: 'block', marginTop: '0.35rem', fontSize: '0.8em', color: 'rgba(239,68,68,0.8)' }}>
-                BEC/superconductors land at <em>low</em> γ (≈6×10⁻⁴ for BCS) because large N<sub>corr</sub> sits in the denominator: γ = 2/√N<sub>corr</sub>. A very small γ means a nearly flat S-curve — so C stays close to 0 at any physically accessible density, despite these systems being quantum-coherent. This is a documented inversion in the framework (see γ Calculator caveats): the formula assigns the flattest curves to the most-correlated systems, opposite to what real phase transitions do.
+                BEC/superconductors land at <em>low</em> γ (≈6×10⁻⁴ for an ordinary &ldquo;BCS&rdquo; superconductor, the textbook kind) because large N<sub>corr</sub> sits in the denominator: γ = 2/√N<sub>corr</sub>. A very small γ means a nearly flat S-curve — so C stays close to 0 at any physically accessible density, despite these systems being quantum-coherent. This is a documented inversion in the framework (see γ Calculator caveats): the formula assigns the flattest curves to the most-correlated systems, opposite to what real phase transitions do.
               </span>
             </details>
           </>

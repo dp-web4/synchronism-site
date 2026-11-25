@@ -66,9 +66,12 @@ export default function PhaseBoundaryVisualizer() {
         &#x03B3;, not phases (full naming note below).
       </p>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
-        <strong>What is plotted:</strong> C(&#x03C1;) = tanh(&#x03B3;&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1)), the framework&apos;s proposed measure of how
-        collectively a system behaves (0 to 1) as a function of its density &#x03C1;, with &#x03C1;<sub>crit</sub> a reference density (see{' '}
-        <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Anatomy</Link>).{' '}
+        <strong>What is plotted:</strong> not a curve. The bar is a &#x03B3; axis from 0 to 4, split into three bands by the archive&apos;s rule
+        &#x03B3; = 2/&radic;N<sub>corr</sub> (N<sub>corr</sub> is the number of correlated parts). &#x03B3; is the setting in
+        C(&#x03C1;) = tanh(&#x03B3;&middot;ln(&#x03C1;/&#x03C1;<sub>crit</sub> + 1)), the framework&apos;s proposed measure of how
+        collectively a system behaves (0 to 1) as a function of its density &#x03C1; (see{' '}
+        <Link href="/equation-walkthrough" style={{ color: 'var(--color-accent-blue)' }}>Equation Anatomy</Link>). To see the C(&#x03C1;) curve itself, use the{' '}
+        <Link href="/coherence-explorer" style={{ color: 'var(--color-accent-blue)' }}>Coherence Explorer</Link>.{' '}
         <strong>How to use it:</strong> one slider, labelled &#x03B3; (it sets how wide the S-curve&apos;s rise is, down to a floor; it was first proposed as a sharpness, and no value makes the curve sharp), runs from 0 to 4 in steps
         of 0.01 and starts at 1.0. Drag it and the marker moves across three &#x03B3; ranges (below 0.6, 0.6&ndash;1.4, above
         1.4); the card under the bar describes the range you are in and says where the formula gets real physics backwards.

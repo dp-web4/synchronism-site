@@ -112,3 +112,25 @@ not re-run by the maintainer.
   governance decision): DR4 analyses will be read against this key as committed, labelled "dated before the data, not
   adopted". That is a pre-data mapping, not a registered test; it cannot change the count or Bucket 0. The analysis plan
   (`wb_dr4_analysis_plan_PREREG.md`) is not the default: its dry run returns "no result" (explorer 2026-11-09).
+
+## Addendum 2026-11-25 (before any DR4 analysis exists): reading (I) against Chae 2023's two published DR3 points, and a numeric trend rule
+A researcher simulated-visitor persona (visitor log 2026-11-25) noted that the public `/wide-binaries` page never showed
+the corner row above, and that the row had not been checked against published binned DR3 numbers. Pre-registered
+(predictions committed `590d4d4` before running; `efe_free_corner_vs_chae2023_points.py` + `_output.txt`; 3 of 4 held).
+- **Inputs** (arXiv:2305.04613 abstract, read verbatim 2026-11-25): δ = 0.034 ± 0.007 at g_N ≈ 10⁻⁸·⁹¹ and 0.109 ± 0.013
+  at 10⁻¹⁰·¹⁵ m/s², ratio = 10^(√2 δ): 1.117 ± 0.025 and 1.43 ± 0.06. These are values at each bin's characteristic g_N,
+  not bin edges.
+- **Reading (I), γ = 0.87–0.95, a₀′/γ = 1.0–1.2×10⁻¹⁰:** boost 1.59–1.71 at 10⁻¹⁰·¹⁵ (+2.6 to +4.7σ above Chae);
+  1.013–1.023 at 10⁻⁸·⁹¹ (3.7–4.1σ *below* Chae); ratio of the two 1.57–1.67 against Chae's 1.28 ± 0.06 (+4.7 to +6.4σ).
+  The boost is convex in log g_N, so averaging over each bin would raise the low-acceleration prediction further.
+- **So the shape is wrong at both ends in the camp that reports a boost**, and the camps that report Newton (Banik et al.
+  2024; Pittordis & Sutherland 2023) sit further below it at low acceleration. Reading (I) is disfavoured by DR3 before DR4,
+  under either camp's numbers. Not a count change: the corner was never registered, is not a defined model without
+  Milgrom's 2011 rule, and is MOND without an external field effect (prior art). Caveat: Chae's high-acceleration point is
+  measured relative to a multiplicity calibration at 10⁻⁸ m/s²; the ratio cancels a multiplicative calibration error but
+  not a g_N-dependent one.
+- **Numeric trend rule for DR4, fixed now** (refines the 11-11 "keeps rising" wording; thresholds chosen 2026-11-25 from
+  the model, after DR3 was seen): let R = boost(g_N ≈ 0.2×10⁻¹⁰)/boost(g_N ≈ 1.0×10⁻¹⁰) from any binned DR4 analysis.
+  Reading (I) predicts R = 1.79–1.84; EFE-dominated MOND predicts R ≈ 1 (flat boost, the QUMOND rows above); Newton
+  R = 1. **R ≥ 1.5 has reading (I)'s shape; R ≤ 1.2 kills it; between is no result.** Either way Bucket 0 and the count
+  are unchanged.

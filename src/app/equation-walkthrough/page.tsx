@@ -28,7 +28,7 @@ const steps = [
   },
   {
     title: 'Step 4: Multiply by γ',
-    equation: 'γ × ln(ρ/ρ_crit + 1) — scaled by coherence parameter',
+    equation: 'γ × ln(ρ/ρ_crit + 1) — scaled by γ, the switch-width setting',
     explanation: 'γ = 2/√N_corr controls how steeply coherence rises with density. For uncorrelated systems (N_corr = 1, γ = 2), coherence rises fast. For highly correlated systems (large N_corr, γ → 0), the curve goes FLAT — C stays low at every physical density. This is the inversion the site warns about: the most collective systems (BCS superconductors, BECs) get the flattest curves and land at C ≈ 0, not high C. See the Audited-Negative honesty note below — the formula has a sign problem and a self-contradictory CLT motivation.',
     key: 'γ is the only "knob" — Audited-Negative. Sign inverted vs. mean-field physics. The γ Calculator shows the BCS reductio directly.',
   },
@@ -40,8 +40,8 @@ const steps = [
   },
   {
     title: 'Step 6: Interpret the output',
-    equation: 'C = 0 (no coherence) → C = 1 (full coherence)',
-    explanation: 'C = 0: no collective order — the sparse/independent regime. C = 1: full collective coherence — the dense/collective regime. The same output tells you different things in different domains. Note on consciousness: C ≈ 0.50 was the proposed consciousness threshold — it is untestable as stated: no calibration maps any measurement to C, and the one cited test (gnosis-research Session 63) measured a different variable (SNARC salience). A prior "C ≈ 0.64 also rejected" claim had no source and was removed 2026-07-08.',
+    equation: 'C = 0 (no coherence) → C → 1 (full coherence, approached but never reached)',
+    explanation: 'C = 0: no collective order — the sparse/independent regime. C → 1: full collective coherence, approached at high density but never reached — the dense/collective regime. The same output tells you different things in different domains. Note on consciousness: C ≈ 0.50 was the proposed consciousness threshold — it is untestable as stated: no calibration maps any measurement to C, and the one cited test, in a companion AI-agent project, measured a different variable: a hand-coded salience score of AI agents, not neural coherence. A prior "C ≈ 0.64 also rejected" claim had no source and was removed 2026-07-08.',
     key: 'One function, universal interpretation, domain-specific consequences — but the consciousness threshold is untestable as stated.',
   },
   {

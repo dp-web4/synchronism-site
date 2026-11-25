@@ -257,8 +257,9 @@ export default function CriticalDensity() {
               &#x03A3;&#x2080; = cH&#x2080;/(4&#x03C0;&sup2;G)
             </EquationDisplay>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
-              &#8776;4% error vs Freeman&apos;s value (corrected 2026-07-09; not independent of a&#x2080;&apos;s &#8776;13% gap
-              — &#x03A3;&#x2080; = a&#x2080;/2&#x03C0;G is the <em>same number</em>, not a second success)
+              &#x03A3;&#x2080; = a&#x2080;/2&#x03C0;G is the <em>same number</em> as a&#x2080;, so like for like it carries a&#x2080;&apos;s &#8776;13% gap: 119&nbsp;M<sub>&#x2609;</sub>/pc&sup2;
+              at H&#x2080; = 67.4 against 137 from Milgrom&apos;s a&#x2080;. The &ldquo;&#8776;4%&rdquo; this card quoted from 2026-07-09 compared it with a Freeman surface density whose
+              mass-to-light conversion the page never stated; it is not a second success.
             </p>
             <ValidationBadge status="reparametrization" label="same number as a&#x2080;" />
           </div>

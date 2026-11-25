@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import ScriptsNote from '@/components/ScriptsNote';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
 import { THIRD_PARTY_CLAIM_LABEL, BOUNDED_BOOST_JOINT } from '@/lib/ledger';
@@ -151,12 +152,13 @@ export default function ForResearchers() {
                 <tr><td style={{ padding: '0.3rem' }}>Joint galaxy + cosmology content (one &gamma; in both sectors)</td><td style={{ padding: '0.3rem' }}>Cross-sector</td><td style={{ padding: '0.3rem' }}>None, or already excluded. The galaxy &gamma; is fitted on acceleration (C<sub>g</sub>), the cosmology &gamma; on mean density (C<sub>&rho;</sub>), so &ldquo;one &gamma;&rdquo; mixes variables, and &gamma; = 2/&radic;N<sub>corr</sub> makes &gamma; system-dependent anyway. Read as one parameter, the local-fluid P(k) pin forces &gamma; = &frac12;, the galaxy law becomes MOND&apos;s simple &mu; exactly, and TEST-25&apos;s Cassini bound already excludes that function</td><td style={{ padding: '0.3rem' }}>&mdash;</td><td style={{ padding: '0.3rem' }}>None: no outcome is framework-specific</td></tr>
                 <tr><td style={{ padding: '0.3rem' }}>Non-monogamous entanglement (dimension form)</td><td style={{ padding: '0.3rem' }}>Bell sector</td><td style={{ padding: '0.3rem' }}>Gated: needs a construction that exceeds S&nbsp;=&nbsp;2 first, and none exists (<a href="#chsh" style={{ color: 'var(--color-accent-blue)' }}>&sect;CHSH</a>)</td><td style={{ padding: '0.3rem' }}>&mdash;</td><td style={{ padding: '0.3rem' }}>None until the construction exists</td></tr>
                 <tr><td style={{ padding: '0.3rem' }}>Intrinsic decoherence &prop; Dk&sup2; (door #3)</td><td style={{ padding: '0.3rem' }}>Dissipative substrate</td><td style={{ padding: '0.3rem' }}>A direction, not a registered bet; gated because the dissipative substrate cannot host matter. The diffusion is in <em>position</em> (a random displacement), not momentum, so the CSL (&lambda;, r<sub>C</sub>) exclusion plane does not apply to it; the binding bound is nuclear stability (Borexino &sup1;&sup1;C): D/D<sub>Pl</sub> &lt; 4&times;10<sup>&minus;39</sup> (explorer 2026-10-26)</td><td style={{ padding: '0.3rem' }}>Collapse-model class; the correlated-noise variant is Amelino-Camelia 1999 (Nature 398, 216), excluded with Caltech 40 m data</td><td style={{ padding: '0.3rem' }}>None winnable: with a correlation length &#x2113;, nuclei exclude &#x2113; &lt; 17 km and aLIGO &#x2113; &lt; 3&times;10<sup>7</sup> m at the natural D; the survivor is a global translation</td></tr>
-              </tbody>
+                              <tr><td style={{ padding: '0.3rem' }}>The ontology itself: a deterministic discrete substrate in which observers are patterns</td><td style={{ padding: '0.3rem' }}>Substrate ontology (SPINE&apos;s &ldquo;one move&rdquo;)</td><td style={{ padding: '0.3rem' }}>Untested as physics; the nearest-neighbour version is excluded by Bell experiments (<Link href="/#bell-and-clock" style={{ color: 'var(--color-accent-blue)' }}>landing Bell row</Link>), leaving superdeterminism or a global update</td><td style={{ padding: '0.3rem' }}>&apos;t Hooft, <em>The Cellular Automaton Interpretation of Quantum Mechanics</em> (Springer 2016; arXiv:1405.1548): the same ontology, past Bell by superdeterminism. Not cited in the research archive before 2026-11-25. Wolfram-model work on observers inside the computation not checked.</td><td style={{ padding: '0.3rem' }}>None empirical; first owed is a statement of how the substrate differs from CAI, if it does</td></tr>
+</tbody>
             </table>
           </div>
           The galaxy-sector form of this is stated above: no galaxy-scale prediction that differs from MOND exists on a surviving
           branch of <em>this framework</em>. (The external-field-free corner, γ&nbsp;≈&nbsp;0.87–0.95, is not a defined model until a rule says which acceleration enters C; read on a system&apos;s internal acceleration it differs from MOND-with-EFE only
-          the way MOND without its external field does; globular clusters disfavour it at about 3σ, conditional on the mass model,
+          the way MOND without its external field does; globular clusters disfavour it at about 3σ, conditional on the mass model, and its trend is wrong at both ends of Chae 2023&apos;s two published wide-binary points (<Link href="/wide-binaries#efe-free-corner" style={{ color: 'var(--color-accent-blue)' }}>Wide Binaries</Link>),
           <Link href="/honest-assessment#gc-fork" style={{ color: 'var(--color-accent-blue)' }}> GC table</Link>.)
           The one live distinct thread nearby, refraction, belongs to Refracted Gravity.
         </div>
@@ -288,15 +290,21 @@ export default function ForResearchers() {
               (<code>maintainer/scripts/delta6_width_vs_compander_floor.py</code>; at the same a&#x2080;, not each family&apos;s SPARC-profiled a&#x2080;).
               It fails at 14.5&ndash;19.3&sigma; for every &gamma; from 0.3 to 3 with M/L pinned. With M/L free it needs &Upsilon;<sub>d</sub> &asymp; 1.2&ndash;1.4,
               so 36&ndash;42% of discs are over-maximal. This holds for any theory using that family (<Link href="/tier-1-existing#TEST-25" style={{ color: 'var(--color-accent-blue)' }}>TEST-25</Link>).</li>
-            <li><strong>One dwarf spheroidal, Draco, excludes saturating-boost gravity up to B<sub>max</sub> &asymp; 7&ndash;11.</strong> In any theory whose boost over Newton saturates
-              at B<sub>max</sub>, Draco (M/L = 4, after a six-system trials correction) excludes caps below about 11 (13.9 at local 3&sigma;), with no light-deflection rule and no gas census needed. Crater II, which gave about 8, is
+            <li><strong>One dwarf spheroidal, Draco, excludes saturating-boost gravity up to B<sub>max</sub> &asymp; 11&ndash;23.</strong> In any theory whose boost over Newton saturates
+              at B<sub>max</sub>, Draco (M/L = 4, after a six-system trials correction) excludes caps below about 11&ndash;23, with no light-deflection rule and no gas census needed; the
+              most permissive cosmological cap, 6.39, is out at 5.2&ndash;11&sigma;. The range is set by Draco&apos;s luminosity and how well it is known. Crater II, which gave about 8, is
               now observed to be disrupting (Limberg et al. 2025: a &asymp;7&sigma; velocity gradient along its debris track, and a lower central dispersion that by itself cuts
-              its required boost by 0.86), so it is not an equilibrium test and this item rests on Draco (explorer 2026-11-19). The no-CDM cap 1/&Omega;<sub>b</sub> = 20.3 is not
-              closed by dwarfs either: both clear it at only 2.5&ndash;2.8&sigma;. Masses use Wolf et al. 2010, M<sub>&frac12;</sub> = 3&sigma;&sup2;r<sub>&frac12;,3D</sub>/G
-              (required boosts at fiducial M/L = 2: Draco &asymp; 76, Crater II &asymp; 45). Walker et al. 2009&apos;s smaller estimator (2.5&sigma;&sup2;R<sub>e</sub>/G)
-              lowers Draco&apos;s reach to about 7 and takes Crater II below the trials threshold, so the result is estimator-conditional at its edge.
-              <strong>Input printed (2026-11-24):</strong> Draco&apos;s line-of-sight dispersion is taken as &sigma; = 9.1 &plusmn; 1.2 km/s (the value in the script; Walker et al. 2009 era, not re-read against the paper here). Every significance above follows from that error bar: with the required boost 38 at M/L = 4, the 6.39 cap needs &sigma; = 3.7 km/s (4.5&sigma; away). The bound is limited by that 2009-era error, not by Draco: later spectroscopic samples are several times larger, and at &plusmn; 0.4 km/s the 3&sigma; reach would rise to a cap near 29 and would close 1/&Omega;<sub>b</sub> = 20.3, leaving M/L and tidal inflation as the limiting systematics (arithmetic checked here; a researcher simulated-visitor persona raised it). The rerun on the most precise published dispersion is queued for the explorer.
-              The escapes are M/L &ge; 5&ndash;7, or a measured &sigma; inflated by tides by &ge; 1.15&ndash;1.3&times; (Crater II is a known tidally disturbed system).
+              its required boost by 0.86), so it is not an equilibrium test and this item rests on Draco (explorer 2026-11-19). The no-CDM cap 1/&Omega;<sub>b</sub> = 20.3 is
+              open: Draco clears it at 1.5&ndash;4.3&sigma;. Masses use Wolf et al. 2010, M<sub>&frac12;</sub> = 3&sigma;&sup2;r<sub>&frac12;,3D</sub>/G
+              (required boost at fiducial M/L = 2: Draco &asymp; 84). Walker et al. 2009&apos;s smaller estimator (2.5&sigma;&sup2;R<sub>e</sub>/G)
+              lowers Draco&apos;s required boost by about 0.6 (to about 26 at M/L = 4, still about 12&sigma; above 6.39 on the dispersion error alone; full budget not recomputed for it).
+              <strong>Inputs (updated 2026-11-25):</strong> Draco&apos;s line-of-sight dispersion is &sigma; = 9.55 &plusmn; 0.26 km/s (Geha et al. 2026, arXiv:2602.10200, Table A1,
+              velocity-variable stars removed), with a &plusmn;0.3 km/s allowance for how a global &sigma; is defined. The 9.1 &plusmn; 1.2 km/s used until 2026-11-25 is a compilation
+              value: Walker et al. 2009 print it citing a paper that never does, and later compilations copy it (explorer 2026-11-24, every row read from the papers). With the modern
+              dispersion the luminosity error leads the budget (M<sub>V</sub> &plusmn; 0.3 mag; dispersion, half-light radius and distance carried too). The script&apos;s
+              L = 2.2&times;10<sup>5</sup> L<sub>&#x2609;</sub> matches no catalogue the explorer could read; McConnachie 2012&apos;s 2.9&times;10<sup>5</sup> lowers the required boost by 30%,
+              and each range above spans those two luminosities with an M<sub>V</sub> error of &plusmn;0.3 or &plusmn;0.1 mag (reach arithmetic: maintainer 2026-11-25 from the explorer&apos;s printed error budget, B<sub>req</sub>&middot;e<sup>&minus;3.51&sigma;(ln B)</sup>). A modern M<sub>V</sub> to &plusmn;0.1 mag would decide the 20.3 row at fixed estimator.
+              The escapes: for 6.39, stars weighing about 19&times; their light, or a measured &sigma; inflated by tides about 2.6&times;; for 20.3, M/L &ge; 6&ndash;7 or &sigma; inflated &ge; 1.2&ndash;1.3&times;.
               Novelty is low: this restates the long-known dSph dynamical M/L of ~10&sup2; (Mateo 1998) as a bound on caps. Until 2026-11-19 this item said 14.7,
               100 and 60, and M/L &ge; 8&ndash;12: the script applied Wolf&apos;s projected-radius coefficient (4) to the 3D radius, which overstates the mass by
               4/3; a researcher persona&apos;s question about the estimator surfaced it (<code>maintainer/scripts/cap6p39_vs_dsph_estimator.py</code>). Draco is a shared failure with
@@ -1159,8 +1167,8 @@ export default function ForResearchers() {
             <strong>Not citable (2026-10-27):</strong> the mechanism behind the 0.418 (Session 107&apos;s G<sub>local</sub>/G<sub>global</sub>)
             was withdrawn in the archive on 2026-08-11, and the executed uniform G/C reading moves growth the other way (+21%, 2026-10-12);
             a null for a mechanism nobody holds is not a citable negative. What remains is a power calculation: the DR2 kill branch fires
-            under 1% of the time if &Lambda;CDM is true. Same badge and descriptor as on 
-            <Link href="/tier-1-existing#TEST-04a" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> and 
+            under 1% of the time if &Lambda;CDM is true. Same badge and descriptor as on{' '}
+            <Link href="/tier-1-existing#TEST-04a" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link> and{' '}
             <Link href="/honest-assessment" style={{ color: 'var(--color-accent-blue)' }}>Honest Assessment</Link>. The
             DR2 registration as adopted is no fix: its kill branch fires with under 1% probability if &Lambda;CDM is true
             (2026-09-21), so the likely DR2 outcome is &ldquo;underpowered&rdquo; again unless it is re-registered before the
@@ -1499,6 +1507,7 @@ export default function ForResearchers() {
         </div>
       </section>
 
+      <ScriptsNote />
       <RelatedConcepts currentPath="/for-researchers" />
       <details id="corrections-log" style={{ margin: '2rem 0', fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
         <summary style={{ cursor: 'pointer' }}>Revision notes (history; not the current claim). Dated corrections moved here from the running text on 2026-11-08, verbatim, in page order.</summary>

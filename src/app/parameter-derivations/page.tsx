@@ -183,7 +183,7 @@ export default function ParameterDerivations() {
 
           <div className="card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
-              <h3>3. A = 4&#x03C0;/(&#x03B2;<sub>J</sub>&sup2;GR&#x2080;&sup2;): the stated value 0.029 is a units slip, and the formula gives &#x03C1;<sub>crit</sub> &prop; V<sup>&minus;2</sup></h3>
+              <h3>3. A = 4&#x03C0;/(&#x03B2;<sub>J</sub>&sup2;GR&#x2080;&sup2;): the stated value 0.029 is a units slip, and a knee that tracks a&#x2080; would need &#x03C1;<sub>crit</sub> &prop; V<sup>&minus;2</sup> (the formula gives V<sup>+0.5</sup> with the archive&apos;s fitted R&#x2080;, V<sup>+2</sup> with fixed R&#x2080;)</h3>
               <ValidationBadge status="audited-negative" label="Audited-Negative (scaling) — Normalization Unrunnable" />
             </div>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>Sessions #53, #66 — decisive test run 2026-06-07; badge split 2026-09-05</p>

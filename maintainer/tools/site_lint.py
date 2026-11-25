@@ -24,6 +24,28 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-25 (four visitor personas, 2026-11-25 log; explorer 2026-11-24 Draco σ and persona catch-rate findings; corner vs Chae 2023 run).
+    (r"run on 14,610 galaxies, failed", "2026-11-25", "the environment run used 141 SPARC galaxies vs Cosmicflows-4; 14,610 is the qualitative curve-match sample"),
+    (r"predicts 0\.37&ndash;0\.57 and is excluded at 17&ndash;36", "2026-11-25", "archive-knee BBN prediction is 0.095–0.57 over all four forms (0.37–0.57 for γ = 2 only)"),
+    (r"exceed 6\.39 by 4\.5σ and 4\.2σ|at 4\.5&sigma; and 4\.2&sigma;|Draco \(4\.5&sigma; at the heaviest", "2026-11-25", "Draco σ = 9.55 ± 0.26 (Geha+2026); full-budget 5.2–11σ at 6.39; Crater II is disrupting"),
+    (r"&sigma; = 9\.1 &plusmn; 1\.2 km/s \(the value in the script", "2026-11-25", "9.1 ± 1.2 is an uncited compilation value; use 9.55 ± 0.26 (Geha et al. 2026)"),
+    (r"both clear it at only 2\.5&ndash;2\.8&sigma;", "2026-11-25", "20.3 row: Draco 1.5–4.3σ on the full budget, photometry-limited (explorer 2026-11-24)"),
+    (r"The chart draws only A = 0\.029", "2026-11-25", "the plotter draws the archive knee (default) and the units hybrid, not A = 0.029 only"),
+    (r"the disk never gets dense enough for C to move off its floor", "2026-11-25", "true only under the units-hybrid knee; at the archive default bright centres cross the knee"),
+    (r"The green MOND line does follow the dots", "2026-11-25", "MOND runs 2–8 km/s high at every radius of DDO 154 at Υ = 0.5"),
+    (r"sitting ~116&times; apart at V = 300", "2026-11-25", "the absolute gap at one V depends on the coefficients; only exponents are parameter-free"),
+    (r"&#8776;4% error vs Freeman", "2026-11-25", "Σ₀ = a₀/2πG is the same number as a₀: like for like it carries a₀'s ≈13% gap"),
+    (r"S &le; 2 on the three constructions built here, none of which signals", "2026-11-25", "three non-signalling constructions plus a fourth arm that reaches 2.67 by signalling"),
+    (r"It has not been run against binned wide-binary data", "2026-11-25", "corner run against Chae 2023's two points: trend wrong at both ends (efe_free_corner_vs_chae2023_points.py)"),
+    (r"we ran six tests that could have shown it wrong, and it lost all six", "2026-11-25", "five data tests plus one construction check (Bell/CHSH)"),
+    (r"Just as Copernicus showed that Earth orbits the Sun \(not the reverse\), Synchronism", "2026-11-25", "the observer-free measurement view is the decoherence program's (Zeh, Joos, Zurek); MRH is vocabulary"),
+    (r"critical exponents 2&times; off", "2026-11-25", "the category does not apply; inherited mean-field exponents miss by 1.3–1.6×"),
+    (r"not evidence that the function itself is wrong within scope", "2026-11-25", "the scope was drawn after the tests came in"),
+    (r"Galaxy dynamics \(N<sub>corr</sub>&asymp;1, γ=2\) lives in this regime", "2026-11-25", "where galaxies sit depends on the knee; γ = 2 is disfavoured ~2σ"),
+    (r"only through second order at &#x03B3;&nbsp;=&nbsp;&frac12;", "2026-11-25", "at γ = ½ γx/(1+γx) and C are the same function; for γ ≠ ½ they agree to first order"),
+    (r"<strong>What is plotted:</strong> C\(&#x03C1;\) = tanh", "2026-11-25", "the Crossover visualizer draws a γ axis with three bands, not a C(ρ) curve"),
+    (r"The site uses eight kinds of label|All eight label systems", "2026-11-25", "ten label systems, four of them verdicts (scoreboard words and ledger classes added)"),
+    (r"gnosis-research Session 63\) measured a different variable \(SNARC salience\)", "2026-11-25", "describe it plainly: a hand-coded salience score of AI agents in a companion project"),
     # Added 2026-11-24 (four visitor personas, 2026-11-24 log; explorer 2026-11-22 grid dispersion; survey rerun).
     (r"0 of 123</strong> reach|0 of 123 reach &#x03A9;<sub>m</sub> anywhere\.", "2026-11-24", "0/123 was the units-hybrid knee; at 0.028·V^0.5 111/123 exceed Ω_m (plotter_survey_at_archive_knee.py)"),
     (r"the pin the RAR refuted", "2026-11-24", "the γ = 2 pin is disfavoured ~2σ (ΔBIC ≈ +11 by galaxy, +2.7 with own Υ); +184 assumes independent points"),

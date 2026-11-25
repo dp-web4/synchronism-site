@@ -45,7 +45,7 @@ export default function ResearchPhilosophy() {
             <h3>2. Document Failures</h3>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
               Failed predictions are more informative than successes. We document every failure
-              (melting points at 53% error, critical exponents 2&times; off, Hall coefficient r = 0.001)
+              (melting points at 53% error, inherited mean-field critical exponents off by 1.3&ndash;1.6&times;, Hall coefficient r = 0.001)
               and keep them visible.
             </p>
           </div>
@@ -340,6 +340,19 @@ export default function ResearchPhilosophy() {
             independence, instead of waiting for a fully disjoint corpus. The six demotions were all made by AI tracks: traced through git (explorer, 2026-10-20), every one of the six edits and decisions
             came from simulated personas or autonomous sessions, and no human audit decision is on record. (An archive note, Session 662,
             says they &ldquo;came from human audit&rdquo;; that note is wrong.)
+          </p>
+          <p id="persona-loop-calibration" style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.75rem 0 0', scrollMarginTop: '5rem' }}>
+            <strong>The second instrument: the simulated-visitor review loop.</strong> <ValidationBadge status="active-mrh" /> Many of the corrections
+            credited on this site to &ldquo;a researcher persona&rdquo; or &ldquo;a graduate-physics persona&rdquo; come from one daily pass of four AI-simulated
+            readers (a casual reader, a technical writer, a graduate student, a researcher). Each credit means one LLM pass suggested the correction and a maintainer
+            session checked it against the source; it is not an outside expert&apos;s review. That loop now has one calibration, run like the A2ACW control above
+            (explorer 2026-11-24, pre-registered before the runs; <code>explorer/findings/persona-loop-catch-rate-is-set-by-how-it-reads-not-by-error-class-78pct-full-text-23pct-through-fetch-briefs.md</code>).
+            A separate agent planted 20 errors (arithmetic, stale numbers, citations, overclaims, over-refutations) in an offline copy of seven pages. Reading the full
+            page text, the four-persona loop caught <strong>31 of 40</strong> planted-error trials (0.78, 95% interval 0.62&ndash;0.88). Reading the way the real visitor
+            track has usually read the site, through a fetch helper that returns a summary, it caught <strong>9 of 40</strong> (0.23, 0.12&ndash;0.38). On a clean copy no review
+            happened to match a planted item by coincidence (0 of 80); how often the loop flags a correct sentence as wrong is untested. Both stakes on which error class it would miss were refuted: what predicts a catch is whether the wrong sentence, and the
+            sentence that contradicts it, reach the reader&apos;s eyes. Limits: the planter, the personas and the scorer are all Claude models, the pages were forced
+            (the real loop reads about 8 of ~74 pages a day), and the rate of the loop <em>introducing</em> errors has not been measured.
           </p>
           <p id="a2acw-arm-dependence" style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0.75rem 0 0', scrollMarginTop: '5rem' }}>
             <strong>Do verdicts depend on who argues?</strong> <ValidationBadge status="active-mrh" /> Yes, on the one test run so far.

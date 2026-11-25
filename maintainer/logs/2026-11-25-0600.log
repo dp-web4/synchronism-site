@@ -1,3 +1,30 @@
 Starting Synchronism Maintainer Session at Wed Nov 25 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+I fixed both HIGH items from today's visitor log and drained both explorer findings. I also back-annotated the research repo. Both repos are pushed (site `05f0638`, Synchronism `b5f8e45a`). The build passes, and site_lint shows 0 hits across 466 rules (21 added today). The anchor check passes, but I haven't looked at the changes in a browser.
+
+**Research signals (WAKE)**
+- **The ontology has a named predecessor.** The researcher persona pointed out 't Hooft's *Cellular Automaton Interpretation of Quantum Mechanics* (2016, arXiv:1405.1548). I read the abstract: a deterministic Planck-scale automaton, quantum mechanics treated as a tool, Bell handled by superdeterminism. A grep of the whole research archive finds no citation of it. It's the fifth prior-art match on file, and the first one about the core idea SPINE calls the contribution, not one piece of it. I wrote a proposal and seeded an explorer topic. My stake, written before reading the book: no difference between the two changes a prediction.
+- **The review loop's sensitivity depends on how it reads.** The explorer's planted-error test measured the four visitor personas at 78% caught when reading full page text and 23% when reading through fetch summaries. Today three passes happened to read full text, and they found cross-page number drift that earlier passes missed. That fits the measurement but doesn't test it.
+
+**Test run (predictions committed before running; 3 of 4 held)**
+The branch the visitor said the Wide Binaries page was missing (the "EFE-free corner") has the wrong trend in published Gaia DR3 data:
+- At Chae 2023's low-acceleration point it predicts too much boost (2.6–4.7σ high).
+- At the high-acceleration point it predicts too little (about 4σ low). That was the prediction that failed: I'd expected 1.03–1.12 there, and it came out 1.01–1.02.
+- On the ratio between the two points it is 4.7–6.4σ off.
+
+I added a dated numeric trend rule to the DR4 reading key. None of this changes the count of 6.
+
+**Site changes**
+- **Wide Binaries:** new section on that branch, with the DR3 comparison and the DR4 rule.
+- **Landing:** the Galaxies card claimed the environment test ran on 14,610 galaxies; it ran on 141. I also simplified the hero for beginners and put the 12 queued decisions next to the headline count.
+- **Draco:** the error bar behind every dwarf-galaxy significance came from an uncited compilation. Using the modern value (9.55 ± 0.26 km/s, Geha et al. 2026) on six pages, the most permissive cap of 6.39 is now ruled out at 5.2–11σ. The no-dark-matter cap of 20.3 stays open.
+- **Corrections:** the Galaxy Curve Plotter captions, the "~116×" on Key Claims and the "≈4%" on Critical Density, plus a "How the review loop is calibrated" paragraph on Research Philosophy. Script paths now point to the site repo on four pages.
+- **Delegated:** a forked agent made nine physics and glossary fixes (Coherence Function, Crossover, Parameter Derivations, the C list, the label map). I checked these with lint and the build, not line by line.
+
+**For you**
+1. DR4 is in 7 days. Contacting Chae et al. and Saad & Ting, and the default way the site reads DR4, still wait on your decision.
+2. Should SPINE get a sentence naming 't Hooft's interpretation as the nearest relative of the core idea?
+3. The visitor track should read full page text, not fetch summaries. I can't change its config myself.
+
+I deferred shortening the ~65 "persona" credits, a rule against dated history in current-state text, and about a dozen low-severity fixes; they're listed in `maintainer/logs/2026-11-25.md`.

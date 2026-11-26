@@ -1,3 +1,39 @@
 Starting Synchronism Maintainer Session at Thu Nov 26 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+I fixed today's friction across 11 pages and the label map. Before that I ran one calculation on a research gap the visitor log turned up. It has the most interesting result of the session. Both repos are pushed: site `141ed45` and `c7da0d9`, research repo `63579a79`. The build passes, the lint is clean, and the new lint rules all fire against yesterday's text. I didn't check anything in a browser.
+
+**The research gap.** The researcher persona went looking for one prediction that differs from the standard models, has a number, and hasn't been tested. It ended on the /for-researchers row about the Planck grid's p⁴/M_Pl² dispersion term, the energy-dependent correction to the speed of light. Two problems with that row:
+- **Wrong citation.** It said causal sets predict the same thing, but causal sets have discreteness without Lorentz violation (Bombelli, Henson & Sorkin 2009).
+- **Missing signature.** A cubic grid should make the term depend on direction relative to the grid's axes, and the row treated it as the same in every direction.
+
+I wrote the predictions down and committed them before writing the script; 4 of 5 held:
+- **The direction dependence is forced at the archive's own setting.** At one grid cell per tick, all 651 stable update rules I found depend on direction, with a fixed cubic pattern. Ordinary quantum-gravity dispersion has no such pattern.
+- **It can only be removed by giving up one cell per tick.** The update rules with no direction dependence all give the same value, (λ² − 1)/12, where λ is the light speed in cells per tick. None of them is stable above λ = √3/2.
+- **The miss:** no stable rule removes the p⁴ term altogether.
+- **Limits:** scalar field only, one time-stepping scheme only, and the one-cell-per-tick result comes from a numerical scan, not a proof.
+
+It isn't a prediction yet, because the archive has never committed to an update rule for each kind of particle. But it is the one place on the site where a single sentence from the project lead would give the framework a number of its own that could fail a test. I wrote that up as a proposal and seeded an explorer topic to check it against existing Lorentz-violation bounds.
+
+**Yesterday's explorer finding** (how the framework differs from 't Hooft's Cellular Automaton Interpretation) is now on the site:
+- **Dynamics:** the framework's stated update rule loses information, which is now a proof, not a sample result. Measurement as phase-locking either makes the substrate irreversible or is just decoherence.
+- **Particles:** they would have to produce single-particle interference through their own dynamics, which 't Hooft's version gets for free.
+
+I also added both corrections to the research archive's Stage-1 result file, the one about stable patterns on the grid.
+
+**Site fixes:**
+- **Physics slips:** the /consciousness-demo symbol definition, the landing's ρ_crit key (the curve bends at about 0.42 ρ_crit at γ = 2), and the units in /parameter-derivations.
+- **Overclaims:** "validation rate" and "predictions that remain open" on /research-philosophy, and "IS the measurement" on /measurement-without-observers.
+- **Labels (the one HIGH item):** the label map now opens with the four labels that are verdicts and puts the rest under "metadata you can skim". This reorganises the explanation; it doesn't rename labels on individual pages.
+- **Glossary and landing key:** LIGO, RC100 and Ġ/G added.
+- **Gaia DR4 (2 December):** the status now says the reading key is a reading aid dated before the data, not a registration.
+
+**Deferred:** a single table of the seven galaxy ΔBIC figures; moving persona credits and dated revision notes out of body text (asked for by three personas again); a denominator for the /a2acw prior-art claims; and the plain-English fixes.
+
+**For you:**
+1. Gaia DR4 is in 6 days. Unless you decide, the site will read DR4 analyses against the reading key as an unadopted reading aid, and that reading cannot change the refutation count.
+2. Commit an update rule (light speed in cells per tick, and the stencil for each particle kind). It is one sentence in FUNDAMENTALS, and it would turn that row into a real bet.
+3. Add a SPINE sentence naming 't Hooft's interpretation, now with the two differences.
+4. The required-reading rule can't be met as written. PREDICTIONS.md is 277 KB, so I read the November blocks before yesterday's by heading only, and the session log says so. A short current-state summary at the top, or a rule to read the newest blocks, would fix this.
+
+The one open outside issue (Synchronism#4) has nothing new, and I drafted no reply.

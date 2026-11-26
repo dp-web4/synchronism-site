@@ -1,9 +1,23 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-25 (maintainer)*
+*Last updated: 2026-11-26 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-26): **At the archive's own one cell per tick, the grid's p⁴/M_Pl² dispersion must depend on direction: a frame-locked cubic (ℓ = 4) pattern that isotropic QG proposals lack. Within symmetric 27-point leapfrog stencils it cannot vanish (the isotropic family has η ≡ (λ²−1)/12, stable only to λ = √3/2). This is the one register row a single commitment (a stencil per species) would turn into a framework-owned bet. The substrate differs from CAI in two places, both costs (explorer 11-25 drained).**
+- **Run:** `maintainer/scripts/grid_dispersion_anisotropy_by_stencil.py` (PREREG `823387d` before the script; 4/5 held; P4 failed: no stable stencil removes the term).
+- **Site (`141ed45`):**
+  - /for-researchers: lead names the exception in kind; `#grid-anisotropy`; causal sets → counter-example; SME d = 6; `#cai-differences`;
+  - /two-reframes `#phase-lock-fork`; landing Bell row (CAI leaves Lorentz invariance unsolved);
+  - physics slips (consciousness-demo u, landing bend 0.42 ρ_crit, A ≈ 550 units); research-philosophy + measurement overclaims;
+  - label map: four verdict labels + metadata + retired fold (Tech Writer HIGH, presentational); coherence-function pills shortened;
+  - glossary/landing key LIGO, RC100, Ġ/G; DR4 status "reading aid, not a registration".
+- **Tools:** lint 473 rules (+7; tree 0; HEAD control 7/7 fire). `fragment_check` 222 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `does-the-grids-cubic-anisotropic-p4-term-survive-sme-d6-and-uhecr-direction-data.md` (stake: corner stencil at λ = 1 already excluded by a d = 6 photon bound).
+- **→ Next maintainer:** one ΔBIC table with "quote this one"; persona credits + dated notes out of body text (asked by 3 passes again); A2ACW denominator + one data list; plain-English promises; per-tool symbol strips; GEDE re-read.
+- **→ Project lead:** DR4 in 6 days; commit a stencil (λ, per species); SPINE CAI sentence with two readings; PREDICTIONS required-reading rule (277 KB).
+  Proposal `Synchronism/Research/proposals/commit_a_stencil_the_grids_p4_term_is_the_one_register_row_a_commitment_would_fix_20261126.md`.
 
 ## 🟢 NEW (maintainer 2026-11-25): **The one move has a named predecessor: 't Hooft's Cellular Automaton Interpretation (2016, arXiv:1405.1548), never cited in the archive, is a deterministic Planck automaton with observers as patterns, past Bell by superdeterminism. The EFE-free corner's trend is wrong at both ends of Chae 2023's two DR3 points (ratio 4.7–6.4σ off), so the one branch DR4 would read differently from MOND-with-EFE is disfavoured before the data. Draco now rests on a modern dispersion (6.39 out at 5.2–11σ, full budget).**
 - **Run:** `maintainer/scripts/efe_free_corner_vs_chae2023_points.py` (predictions committed `590d4d4` before running; 3/4 held; P2 failed low). DR4 key: numeric trend rule (2026-11-25 addendum).

@@ -71,7 +71,7 @@ export default function ResearchPhilosophy() {
         <ul style={{ color: 'var(--color-text-secondary)' }}>
           <li>Session #616 audited all 4 research tracks and found all are reparametrizations of known physics</li>
           <li>We published that finding prominently, not buried it</li>
-          <li>The 89% chemistry validation rate sounds impressive until you learn it&apos;s mathematical consistency, not novel prediction</li>
+          <li>The 89% chemistry consistency rate sounds impressive until you learn it is mostly the Debye temperature restated, not novel prediction</li>
           <li>47 internal-consistency survivors out of ~3,308 sessions = 1.4% internal-consistency-survival rate (see below for why this is not a discovery rate).</li>
         </ul>
 
@@ -171,7 +171,7 @@ export default function ResearchPhilosophy() {
           it&apos;s the shared notation (one functional form written at every scale &mdash; though &#x03B3; itself takes a
           different value in every domain, from an N<sub>corr</sub> defined differently in each, and a single switch
           saturates within about two decades of density, not eighty), the honest
-          failure documentation, and the testable predictions that remain open.
+          failure documentation, and a short list of bets that differ in structure but have no test yet. No prediction that differs from MOND or &Lambda;CDM remains open among the tests run (<Link href="/for-researchers#can-only-lose" style={{ color: 'var(--color-accent-blue)' }}>For Researchers</Link>).
         </p>
 
         <h2>Reinterpretation as Research Method</h2>

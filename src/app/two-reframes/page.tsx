@@ -112,6 +112,15 @@ export default function TwoReframes() {
             argued that Itano&apos;s result is explained by the probe pulses&apos; dynamical effect on the ion, without collapse,
             which is the decoherence-literature view of the same data.
           </p>
+          <p id="phase-lock-fork" style={{ margin: '0 0 0.6rem', scrollMarginTop: '5rem' }}>
+            <strong>The reset loses information, which forces a choice.</strong> A phase-lock maps many starting phases onto
+            one: the archive&apos;s lock rule takes 4,096 phase bins to 34 in 50 steps, about 7 bits erased (explorer 2026-11-25).
+            If the lock is fundamental, the substrate is irreversible, and that puts it outside &apos;t Hooft&apos;s cellular-automaton
+            interpretation, whose update must be a permutation. If the lock is <em>emergent</em>, with the phase locking while the
+            information spreads into the rest of the lattice, it is decoherence. Standard QM and &apos;t Hooft already put
+            measurement there. Only the emergent reading fits a reversible substrate, and it adds nothing to either
+            (<Link href="/for-researchers#cai-differences" style={{ color: 'var(--color-accent-blue)' }}>how the substrate differs from CAI</Link>).
+          </p>
           <p style={{ margin: 0 }}>
             <strong>What would make it a prediction?</strong> A finite scan period T<sub>scan</sub>. With one, measurement
             windows shorter than T<sub>scan</sub> could show Born-rule deviations that QM does not. No such period is

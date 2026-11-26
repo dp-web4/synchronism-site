@@ -184,7 +184,7 @@ export default function ConsciousnessDemo() {
           midpoint artifact operates. The convergence was shown to be forced (geometric, not empirical) and
           the threshold itself remains untestable as stated (no measurement maps to C). One of the eight,
           &ldquo;phase transition analysis&rdquo;, has nothing to analyse: the C(&rho;) curve has no critical point
-          and, on a linear density axis, no inflection (on a log-density axis it has one steepest point, at C* = 1/(2&gamma;u*), u = ln(1 + &rho;/&rho;<sub>crit</sub>), which is C* = &frac12; at &gamma; = &frac12;; a steepest point on a chosen axis is not a phase transition; see <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>),
+          and, on a linear density axis, no inflection (on a log-density axis it has one steepest point, at C* = 1/(2&gamma;u*) with u = &rho;/&rho;<sub>crit</sub> (not the log argument), which is C* = &frac12; at &gamma; = &frac12;; a steepest point on a chosen axis is not a phase transition; see <Link href="/coherence-function" style={{ color: 'var(--color-accent-blue)' }}>Coherence Function</Link>),
           so there is no phase transition for it to locate. It is relabelled below rather than removed, so the
           count of eight stays visible. Hover over each to see the methodology.
         </p>

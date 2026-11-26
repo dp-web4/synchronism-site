@@ -289,8 +289,10 @@ export default function ParameterDerivations() {
               <strong>Symbol note (2026-04-24 correction):</strong> &#x03B2;<sub>J</sub> is the Jeans ratio &#x03BB;<sub>Jeans</sub>/R<sub>half</sub>
               &mdash; an O(1) structural ratio, <em>not</em> the electromagnetic fine-structure constant
               &#x03B1;<sub>em</sub> &#x2248; 1/137. The formula was previously written with &#x03B1;, which invited
-              that misread. With &#x03B1;<sub>em</sub>&sup2; &#x2248; 5&#x00D7;10<sup>&minus;5</sup>, the formula
-              yields A &#x2248; 550 (km/s)<sup>&minus;2</sup> — 20,000&#x00D7; too large. The formula only closes
+              that misread. Putting &#x03B1;<sub>em</sub>&sup2; &#x2248; 5&#x00D7;10<sup>&minus;5</sup> in place of
+              &#x03B2;<sub>J</sub>&sup2; &#x2248; 1 multiplies A by 1/&#x03B1;<sub>em</sub>&sup2; &#x2248; 19,000, giving A &#x2248; 550
+              M<sub>&#x2609;</sub>&nbsp;pc<sup>&minus;3</sup>&nbsp;(km/s)<sup>&minus;0.5</sup>, the V<sup>0.5</sup> law&apos;s units. That figure holds the
+              length scale &#x03B2;<sub>J</sub>R<sub>0</sub> at whatever value reproduces 0.0294, and a different R<sub>0</sub> changes the factor. The formula only closes
               at 5% with &#x03B2;<sub>J</sub> = O(1). No electromagnetic coupling is implied.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', background: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: '0.375rem', padding: '0.5rem 0.75rem' }}>

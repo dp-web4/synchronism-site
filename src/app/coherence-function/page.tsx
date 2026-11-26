@@ -14,8 +14,15 @@ export default function CoherenceFunction() {
       <Breadcrumbs currentPath="/coherence-function" />
       <PathNav currentPath="/coherence-function" />
       <h1>The Coherence Function</h1>
-      <ValidationBadge status="failed" label="Failed as a density law on galaxies — ΔBIC +2843 against the acceleration-keyed form (+8,404 at the archive&apos;s own knee)" />{' '}
-      <ValidationBadge status="reparametrization" label="Keyed on acceleration it is a MOND μ at every γ (simple μ at γ = ½); on the mean cosmic density it is Λ at γ = ½" />
+      <ValidationBadge status="failed" label="Failed as a density law on galaxies" />{' '}
+      <ValidationBadge status="reparametrization" label="Keyed on acceleration: a MOND formula" />
+      <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', margin: '0.4rem 0 0' }}>
+        <strong>What the two labels mean.</strong> Keyed on density, the curve fits the SPARC galaxy rotation curves far worse
+        than the same curve keyed on acceleration: &Delta;BIC +2843 (&Delta;BIC is a fit score; positive means worse, and above 10
+        is usually called very strong), or +8,404 at the archive&apos;s own knee law. Keyed on acceleration, it is one of MOND&apos;s
+        interpolating functions at every &#x03B3; (the &ldquo;simple&rdquo; one at &#x03B3; = &frac12;). Keyed on the mean cosmic density, it
+        reproduces a cosmological constant &Lambda; at &#x03B3; = &frac12;.
+      </p>
       <p style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', margin: '0.4rem 0 0' }}>Badged by its strongest executed results (2026-11-16). Until then this page carried &ldquo;Speculative &mdash; phenomenological ansatz&rdquo;, which by the site&apos;s own definition means no quantitative test; the form has been run and lost. The tanh itself is still chosen, not derived (see below).</p>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>

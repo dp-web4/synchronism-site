@@ -24,6 +24,21 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-26 (visitor Passes 3-4; maintainer stencil run).
+    (r"Not unique \(loop quantum gravity, causal sets\)", "2026-11-26",
+     "causal sets are Lorentz-invariant by construction (Bombelli, Henson & Sorkin 2009); cite them as the counter-example", 1),
+    (r"crossing IS the measurement", "2026-11-26",
+     "overclaim against the page's own table: decoherence does not give definite outcomes; 'reframed, not solved'", 1),
+    (r"chemistry validation rate", "2026-11-26",
+     "retired 'validation' vocabulary; the 89% is mostly Debye-temperature restatement (a consistency rate)", 1),
+    (r"curve is already at 0\.88 there", "2026-11-26",
+     "0.88 is C at rho_crit itself at gamma = 2; the bend there is at ~0.42 rho_crit with C ~ 0.60", 1),
+    (r"u\*\), u = ln\(1 \+ &rho;/&rho;", "2026-11-26",
+     "C* = 1/(2 gamma u*) holds with u = rho/rho_crit, not the log argument (gives 0.91 at gamma = 1/2)", 1),
+    (r"the testable predictions that remain open", "2026-11-26",
+     "contradicts /for-researchers: no prediction differing from MOND/LCDM remains open among tests run", 1),
+    (r"A &#x2248; 550 \(km/s\)<sup>&minus;2</sup>", "2026-11-26",
+     "wrong units (the V^0.5 law's A is in Msun pc^-3 (km/s)^-0.5) and unnamed length scale", 1),
     # Added 2026-11-25 (four visitor personas, 2026-11-25 log; explorer 2026-11-24 Draco σ and persona catch-rate findings; corner vs Chae 2023 run).
     (r"run on 14,610 galaxies, failed", "2026-11-25", "the environment run used 141 SPARC galaxies vs Cosmicflows-4; 14,610 is the qualitative curve-match sample"),
     (r"predicts 0\.37&ndash;0\.57 and is excluded at 17&ndash;36", "2026-11-25", "archive-knee BBN prediction is 0.095–0.57 over all four forms (0.37–0.57 for γ = 2 only)"),

@@ -137,6 +137,20 @@ export const terms: Record<string, TermDefinition> = {
     explanation: 'The gold-standard dataset for testing galaxy rotation theories. Synchronism was tested against all 175 galaxies.',
     learnMore: '/galaxy-rotation',
   },
+  'RC100': {
+    term: 'RC100',
+    fullName: 'Rotation curves of 100 distant galaxies (Nestor Shachar et al. 2023)',
+    brief: 'A published set of rotation curves for about 100 massive star-forming galaxies seen 6 to 11 billion years ago (redshift z ≈ 0.6–2.5).',
+    explanation: 'Used on this site to ask whether the acceleration scale a₀ changes with cosmic time. The site ran that test with its analysis fixed in advance, on data that already existed (2026-10-06). The ratio between redshift bins came out 1.11, against 1.74 predicted for an a₀ that grows with the expansion rate H(z) and 1 for a constant a₀. That did not decide between them (see the landing page’s a₀(z) row).',
+    learnMore: '/for-researchers',
+  },
+  'LIGO': {
+    term: 'LIGO',
+    fullName: 'Laser Interferometer Gravitational-Wave Observatory',
+    brief: 'The detectors that measure gravitational waves, ripples in space from merging black holes and neutron stars.',
+    explanation: 'Two things on this site rest on LIGO. First, its measured wave polarizations favour the tensor (spin-2) pattern of general relativity, which refutes the framework’s scalar inflow model of gravity. Second, its extremely quiet test masses bound any random jitter added to matter, the "intrinsic decoherence" idea of door #3, at large correlation lengths.',
+    learnMore: '/honest-assessment',
+  },
   'ALFALFA-SDSS': {
     term: 'ALFALFA-SDSS',
     fullName: 'Arecibo Legacy Fast ALFA × Sloan Digital Sky Survey',

@@ -1,0 +1,33 @@
+k^2 coefficient: 2*w1 + 8*w2 + 8*w3
+spatial k^4 term: A*S4 + B*k^4 with A = -w1/6 + w2/3 + 4*w3/3 , B = -w2 - 2*w3
+eta0 = lam**2/12 - w1/10 - 4*w2/5 - 6*w3/5   eta4 = -w1/6 + w2/3 + 4*w3/3    (eta(n) = eta0 + eta4*(sum n^4 - 3/5))
+
+--- P1/P2: 7-point face-neighbour ---
+7-pt: lam_max = 0.5774  eta0 = -0.0222  eta4 = -0.0833  eta(axis) = -0.0556  eta(body diag) = +0.0000  l=4 peak-to-peak = 0.0556
+7-pt: lam = 1 exceeds lam_max = 0.5774 -> UNSTABLE at one cell per tick
+   lam = 0.100: |eta0| = 0.0492, l=4 p2p = 0.0556
+   lam = 0.300: |eta0| = 0.0425, l=4 p2p = 0.0556
+   lam = 0.577: |eta0| = 0.0222, l=4 p2p = 0.0556
+
+--- P3: isotropic-error family (eta4 = 0) ---
+eta4 = 0 family: {w1: 4*w3 + 1/6, w2: 1/12 - 2*w3} (w3 free)
+
+--- P4/P5: scan w3 over the isotropic family, and the general 2-parameter family ---
+  no isotropic-family member has eta0 = 0 at a stable lam
+  isotropic member with largest lam_max: (0.0427, 0.1453, -0.031, 0.866) lam(eta0=0) = [1.0]
+iso-best: lam_max = 0.8660  eta0 = -0.0208  eta4 = -0.0000  eta(axis) = -0.0208  eta(body diag) = -0.0208  l=4 peak-to-peak = 0.0000
+iso-best: lam = 1 exceeds lam_max = 0.8660 -> UNSTABLE at one cell per tick
+
+  general family: stencils stable at lam = 1
+  lam=1-stable w=(0.000,0.000,0.125): lam_max = 1.0000  eta0 = -0.0667  eta4 = +0.1667  eta(axis) = +0.0000  eta(body diag) = -0.1111  l=4 peak-to-peak = 0.1111
+  lam=1-stable w=(0.000,0.000,0.125): lam=1 = 1.0000  eta0 = -0.0667  eta4 = +0.1667  eta(axis) = +0.0000  eta(body diag) = -0.1111  l=4 peak-to-peak = 0.1111
+  lam=1-stable w=(0.000,0.005,0.120): lam_max = 1.0000  eta0 = -0.0647  eta4 = +0.1617  eta(axis) = +0.0000  eta(body diag) = -0.1078  l=4 peak-to-peak = 0.1078
+  lam=1-stable w=(0.000,0.005,0.120): lam=1 = 1.0000  eta0 = -0.0647  eta4 = +0.1617  eta(axis) = +0.0000  eta(body diag) = -0.1078  l=4 peak-to-peak = 0.1078
+  lam=1-stable w=(0.020,0.010,0.110): lam_max = 1.0000  eta0 = -0.0587  eta4 = +0.1467  eta(axis) = -0.0000  eta(body diag) = -0.0978  l=4 peak-to-peak = 0.0978
+  lam=1-stable w=(0.020,0.010,0.110): lam=1 = 1.0000  eta0 = -0.0587  eta4 = +0.1467  eta(axis) = +0.0000  eta(body diag) = -0.0978  l=4 peak-to-peak = 0.0978
+  170 of 2601 grid stencils are stable at lam = 1
+
+--- added after the first run (not pre-registered): closed forms and the lam = 1 anisotropy floor ---
+eta0 on the isotropic family: lam**2/12 - 1/12  (independent of w3)
+isotropic family: 1063 stable members; max lam_max = 0.8660 at w3 = 0.0100 (sqrt(3)/2 = 0.8660)
+lam = 1 stable stencils on a 161x161 weight grid: 651; min |eta4| = 0.0417, min l=4 peak-to-peak = 0.0278

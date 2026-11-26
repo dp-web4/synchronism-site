@@ -60,7 +60,7 @@ export default function Glossary() {
           canonical reference in Honest Assessment
         </Link>.
         Retired labels (Validated, Strongly Supported, MOND-shared) are no longer assigned; their entries stay so old text still reads (the label map below lists them).
-        All ten label systems are mapped side by side in the table below.
+        The label map below separates the four labels that are verdicts from the metadata you can skim.
       </p>
 
       <div id="start-with-ten" style={{ marginBottom: '1.5rem', fontSize: '0.88rem', color: 'var(--color-text-secondary)', scrollMarginTop: '5rem' }}>

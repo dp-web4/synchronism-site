@@ -1,0 +1,21 @@
+LI control (CMB only): attenuation length, exact Breit-Wheeler vs leading-log approximation
+  E = 1e+15 eV: exact 0.00892 Mpc; approx 0.00663 Mpc
+  E = 1e+17 eV: exact 0.0533 Mpc; approx 0.0443 Mpc
+  E = 1e+19 eV: exact 2.48 Mpc; approx 2.22 Mpc
+
+attenuation length on CMB (Mpc): LI | photon-only eta | universal eta (kinematically allowed u only)
+  eta=-0.0149 E=3e+18 eV: LI     0.765 | photon-only      20.6 | universal       1.2
+  eta=-0.0149 E=1e+19 eV: LI      2.22 | photon-only       inf | universal      7.49
+  eta=-0.0149 E=3e+19 eV: LI      5.96 | photon-only       inf | universal      54.5
+  eta=-0.0149 E=1e+20 eV: LI      17.8 | photon-only       inf | universal  1.26e+03
+  eta=-0.0149 E=3e+20 eV: LI      48.9 | photon-only       inf | universal  2.82e+05
+  eta=-0.0208 E=3e+18 eV: LI     0.765 | photon-only      65.3 | universal       1.3
+  eta=-0.0208 E=1e+19 eV: LI      2.22 | photon-only       inf | universal      8.34
+  eta=-0.0208 E=3e+19 eV: LI      5.96 | photon-only       inf | universal      65.8
+  eta=-0.0208 E=1e+20 eV: LI      17.8 | photon-only       inf | universal  1.94e+03
+  eta=-0.0208 E=3e+20 eV: LI      48.9 | photon-only       inf | universal  8.59e+05
+  eta=-0.1111 E=3e+18 eV: LI     0.765 | photon-only  2.41e+09 | universal      1.99
+  eta=-0.1111 E=1e+19 eV: LI      2.22 | photon-only       inf | universal      16.5
+  eta=-0.1111 E=3e+19 eV: LI      5.96 | photon-only       inf | universal       243
+  eta=-0.1111 E=1e+20 eV: LI      17.8 | photon-only       inf | universal  5.42e+04
+  eta=-0.1111 E=3e+20 eV: LI      48.9 | photon-only       inf | universal  8.18e+09

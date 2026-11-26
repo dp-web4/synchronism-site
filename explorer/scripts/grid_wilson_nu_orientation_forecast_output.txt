@@ -1,0 +1,4 @@
+single-event check: allowed fraction at 220 PeV = 0.476
+E = 220 PeV (eta_max 0.0600): surviving orientation fraction (median [10-90%] over direction draws): N=1: 0.472 [0.466-0.476]; N=3: 0.098 [0.055-0.163]; N=5: 0.015 [0.003-0.030]; N=10: 0.000 [0.000-0.001]
+E = 300 PeV (eta_max 0.0174): surviving orientation fraction (median [10-90%] over direction draws): N=1: 0.281 [0.278-0.286]; N=3: 0.024 [0.003-0.055]; N=5: 0.000 [0.000-0.003]; N=10: 0.000 [0.000-0.000]
+E = 500 PeV (eta_max 0.0022): surviving orientation fraction (median [10-90%] over direction draws): N=1: 0.229 [0.226-0.233]; N=3: 0.003 [0.000-0.040]; N=5: 0.000 [0.000-0.000]; N=10: 0.000 [0.000-0.000]

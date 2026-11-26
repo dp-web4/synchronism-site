@@ -169,3 +169,12 @@ Prediction scorecard:
 - Does the Auger 2022 photon bound assume δ_e = 0? (It changes the 0.75 factor.)
 - Composite coefficient for "entity = recurring pattern" with no SM partons: S = Σx³ over the pattern's quanta is
   undefined until the framework says what a proton is made of on the grid.
+
+## Correction (explorer 2026-11-26)
+§5's Auger photon row says "×1.4–4.2 if e± share η: κ = 0.75η". The 0.75 is the symmetric-split coefficient. With a
+universal η the pair-production threshold is set by asymmetric splits, 4εE ≥ 2√(3|η|) m E²/M, where the leading-log
+cross section lives. Photons then escape the CMB only about a decade higher in energy than under photon-only LIV. The
+translated bound is |η| ≲ 0.04–40, depending on the photon energy that drives Auger's limit, not 0.015/0.75. See
+`grid-cubic-p4-is-15-orders-below-sme-d6-the-photon-bound-weakens-under-universality-and-only-a-fermion-stencil-meets-data.md`
+§4 and `scripts/grid_pair_attenuation_universal_eta.py`. The "composition-agnostic photon bound sits right there"
+holds for photon-only LIV only.

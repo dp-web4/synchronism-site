@@ -1,0 +1,64 @@
+=== 1. low-k eta(n) from exact leapfrog dispersions vs closed forms ===
+(a) corner, lam=1            axis: +0.000000 (closed -0.000000) | face diag: -0.083511 (closed -0.083333) | body diag: -0.110842 (closed -0.111111) | generic: -0.082460 (closed -0.082500)
+(M) product, lam=1           axis: +0.000000 (closed -0.000000) | face diag: -0.021011 (closed -0.020833) | body diag: -0.027509 (closed -0.027778) | generic: -0.020584 (closed -0.020625)
+(b) iso-error, lam=sqrt3/2   axis: -0.020833 (closed -0.020833) | face diag: -0.021011 (closed -0.020833) | body diag: -0.020565 (closed -0.020833) | generic: -0.020793 (closed -0.020833)
+corner along axis at lam=1, omega - k at k = 0.001, 0.3, 1.0, 2.5: [-2.4430739928186476e-49, 0.0, 0.0, -5.345529420184391e-51]
+product along axis at lam=1, omega - k at k = 0.001, 0.3, 1.0, 2.5: [-1.5806897543279626e-48, 4.6773382426613424e-51, -1.3363823550460978e-51, -5.345529420184391e-51]
+
+=== 2. lattice Maxwell: generalized Yee (transverse-averaged) vs plain Yee ===
+avg-Yee: max eigenvalue over BZ = 4.0000 -> leapfrog lam_max = 1.0000
+   axis       lam=1.0000: longitudinal eig 0.0e+00; transverse eta = -0.00000, -0.00000  (corner-stencil closed form -0.00000)
+   face diag  lam=1.0000: longitudinal eig 0.0e+00; transverse eta = -0.08333, -0.08333  (corner-stencil closed form -0.08333)
+   body diag  lam=1.0000: longitudinal eig -1.2e-24; transverse eta = -0.11111, -0.11111  (corner-stencil closed form -0.11111)
+   generic    lam=1.0000: longitudinal eig 0.0e+00; transverse eta = -0.08250, -0.08250  (corner-stencil closed form -0.08250)
+plain Yee: max eigenvalue over BZ = 12.0000 -> leapfrog lam_max = 0.5774
+   axis       lam=0.5774: longitudinal eig 0.0e+00; transverse eta = -0.05556, -0.05556  (corner-stencil closed form -0.00000)
+   face diag  lam=0.5774: longitudinal eig 0.0e+00; transverse eta = -0.01389, -0.01389  (corner-stencil closed form -0.08333)
+   body diag  lam=0.5774: longitudinal eig -3.7e-24; transverse eta = +0.00000, +0.00000  (corner-stencil closed form -0.11111)
+   generic    lam=0.5774: longitudinal eig -7.2e-25; transverse eta = -0.01431, -0.01431  (corner-stencil closed form -0.08250)
+avg-Yee: max |difference of the two transverse eigenvalues| over 2000 random k in BZ = 3.1e-15
+   generic dir, k=1e-2: (L_corner - |d_avg|^2)/k^6 = +0.0009, /k^4 = +9.34e-08
+   generic dir, k=1e-3: (L_corner - |d_avg|^2)/k^6 = +0.0009, /k^4 = +9.34e-10
+
+=== 3. SME d=6 nonbirefringent: c^(6)_(I)jm in the grid frame ===
+(a) corner, lam=1            c00 = +7.939e-40 GeV^-2;  rotation-invariant |c_l| = sqrt(sum_m |c_lm|^2): l=0: 7.94e-40, l=2: 3.94e-48, l=4: 3.46e-40, l=6: 6.36e-48 GeV^-2
+                             max over sky |eta|/(2M^2) = 3.73e-40 GeV^-2
+(M) product, lam=1           c00 = +1.985e-40 GeV^-2;  rotation-invariant |c_l| = sqrt(sum_m |c_lm|^2): l=0: 1.98e-40, l=2: 9.85e-49, l=4: 8.66e-41, l=6: 1.59e-48 GeV^-2
+                             max over sky |eta|/(2M^2) = 9.33e-41 GeV^-2
+(b) iso-error, lam=sqrt3/2   c00 = +2.481e-40 GeV^-2;  rotation-invariant |c_l| = sqrt(sum_m |c_lm|^2): l=0: 2.48e-40, l=2: 5.70e-45, l=4: 7.65e-45, l=6: 9.20e-45 GeV^-2
+                             max over sky |eta|/(2M^2) = 7.00e-41 GeV^-2
+
+=== 4. sky fractions ===
+(a) corner, lam=1            photopion-on (elementary |eta|<1e-5): 0.0000; (partonic |eta|*0.0055<1e-5): 0.0084; eta < -0.0149 (Auger photon bound bites if photons exist): 0.928
+(M) product, lam=1           photopion-on (elementary |eta|<1e-5): 0.0001; (partonic |eta|*0.0055<1e-5): 0.0346; eta < -0.0149 (Auger photon bound bites if photons exist): 0.645
+(b) iso-error, lam=sqrt3/2   photopion-on (elementary |eta|<1e-5): 0.0000; (partonic |eta|*0.0055<1e-5): 0.0000; eta < -0.0149 (Auger photon bound bites if photons exist): 1.000
+Wilson r=1       nu: fraction of sky (= fraction of Haar orientations for one event) with eta > 0.060: 0.529; range -0.0833..+0.1389
+staggered/naive  nu: fraction of sky (= fraction of Haar orientations for one event) with eta > 0.060: 0.000; range -0.3333..-0.1111
+
+=== 5. Auger photon bound: self-consistent production vs escape (universal eta, one direction) ===
+Lorentz-invariant control: photopion eps_th at Ep=10^19.75 eV = 5.137 kT (expect ~5.1); pair eps_th at 1e19 eV = 2.61e-17 GeV (m_e^2/E = 2.61e-17)
+eta = -0.0149: photons escape CMB pair production above E_gamma ~ 1.6e+20 eV (3 kT), 5.3e+20 eV (10 kT)
+   elementary: to make such photons, protons >= 6.4e+20 eV need target eps >= 193 eV  (closed: no background photon that energetic)
+   partonic: to make such photons, protons >= 6.4e+20 eV need target eps >= 1.06 eV  (OPEN (<= 13.6 eV UV ceiling))
+eta = -0.0208: photons escape CMB pair production above E_gamma ~ 1.3e+20 eV (3 kT), 4.5e+20 eV (10 kT)
+   elementary: to make such photons, protons >= 5.4e+20 eV need target eps >= 163 eV  (closed: no background photon that energetic)
+   partonic: to make such photons, protons >= 5.4e+20 eV need target eps >= 0.899 eV  (OPEN (<= 13.6 eV UV ceiling))
+eta = -0.0278: photons escape CMB pair production above E_gamma ~ 1.2e+20 eV (3 kT), 3.9e+20 eV (10 kT)
+   elementary: to make such photons, protons >= 4.7e+20 eV need target eps >= 141 eV  (closed: no background photon that energetic)
+   partonic: to make such photons, protons >= 4.7e+20 eV need target eps >= 0.778 eV  (OPEN (<= 13.6 eV UV ceiling))
+eta = -0.1111: photons escape CMB pair production above E_gamma ~ 5.9e+19 eV (3 kT), 1.9e+20 eV (10 kT)
+   elementary: to make such photons, protons >= 2.3e+20 eV need target eps >= 71.2 eV  (closed: no background photon that energetic)
+   partonic: to make such photons, protons >= 2.3e+20 eV need target eps >= 0.393 eV  (OPEN (<= 13.6 eV UV ceiling))
+
+=== 6. added after first run (not pre-registered): pair-production split bracket and EBL photopion ===
+     eta    photon-only  universal sym  universal asym   (eV; photon escapes CMB pair production above this, eps_th > 3 kT)
+ -0.0149       3.05e+18       3.35e+18        1.59e+20
+ -0.0208       2.72e+18       3.00e+18        1.35e+20
+ -0.0278       2.48e+18       2.72e+18        1.17e+20
+ -0.1111       1.56e+18       1.72e+18        5.84e+19
+universal |eta| needed for asym threshold eps_th = 3 kT at E_gamma = 3e+18 eV: 42
+universal |eta| needed for asym threshold eps_th = 3 kT at E_gamma = 1e+19 eV: 3.78
+photopion target-photon threshold (eV) at lower proton energies (EBL far-IR ~0.003-0.03 eV, near-IR/optical ~0.3-3 eV):
+  Ep = 1e+19 eV: eta=+0.000 elem: 0.00679; eta=+0.000 part: 0.00679; eta=-0.021 elem: 0.0149; eta=-0.021 part: 0.00685; eta=-0.111 elem: 0.0321; eta=-0.111 part: 0.00712
+  Ep = 3e+19 eV: eta=+0.000 elem: 0.00226; eta=+0.000 part: 0.00226; eta=-0.021 elem: 0.0433; eta=-0.021 part: 0.00368; eta=-0.111 elem: 0.165; eta=-0.111 part: 0.00728
+  Ep = 1e+20 eV: eta=+0.000 elem: 0.000679; eta=+0.000 part: 0.000679; eta=-0.021 elem: 1.04; eta=-0.021 part: 0.0103; eta=-0.111 elem: 5.55; eta=-0.111 part: 0.0351

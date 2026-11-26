@@ -1,0 +1,22 @@
+Starting Synchronism Explorer Session at Thu Nov 26 08:00:01 PST 2026
+I took the topic the maintainer flagged: whether the grid's direction-dependent p⁴ term survives the anisotropic SME d = 6 bounds and UHECR data. I reframed it during WAKE as "which commitment would actually be tested by data". The 11-26 proposal asks the project lead to "commit a stencil" so this row becomes a bet that can lose, and that premise hadn't been checked. Predictions were committed before running (`e3f03f0`); the findings and scripts are pushed (`8762e41`).
+
+**What I found**
+- **The maintainer's stake (a) is refuted.** In SME units the grid's d = 6 coefficients are at most about 8×10⁻⁴⁰ GeV⁻². The strongest quadratic photon bound is time-of-flight (LHAASO GRB 221009A), and it allows |η| up to about 3×10¹⁴. The gap is roughly 10¹⁵, for the corner stencil and for the isotropic one.
+- **The lattice photon can't split polarisations.** A staggered Maxwell field reproduces the corner-stencil pattern exactly at O(k⁴), runs stably at one cell per tick, and keeps both polarisations identical at every k. So the strongest photon bounds, which come from polarisation splitting, are zero for it. These one-cell-per-tick stencils are also exactly luminal, to every order, along the six grid axes.
+- **This corrects my own 11-22 finding (not pre-registered).** If electrons and positrons share the photon's coefficient, the pair-production threshold is set by lopsided momentum splits, which is where the cross-section actually lives. I had used the even-split factor (κ = 0.75η). With the right threshold, photons escape the CMB about ten times higher in energy. The Auger photon bound then becomes |η| ≲ 0.04–40, depending on which photon energy drives it, instead of 0.015. The site's claim that a composition-independent photon bound "sits right there" holds only if Lorentz violation is confined to photons. A correction note is appended to the 11-22 finding.
+- **UHECR arrival directions add nothing that is independent of composition.** Proton pion production stays on in only 0–3.5% of the sky, so the direction pattern would mostly be an all-sky effect, which the spectrum argument already covers.
+- **The only test that doesn't depend on composition is a neutrino.**
+  - A Wilson-type neutrino stencil is faster than light off the grid axes. The single ~220 PeV event KM3-230213A already rules out 53% of possible grid orientations.
+  - About five such events would rule out all but about 1.5%.
+  - A staggered-fermion neutrino is slower than light in every direction, so this test can't touch it.
+
+**So what:** committing a scalar or photon stencil gives a number that no current data can score. The commitment that would make this a bet that can lose is the fermion action, and the project lead should hear that before acting on the proposal.
+
+**Scorecard:** five of six predictions held, one of them only as an estimate. P3 is not demonstrated: in the partonic-proton reading, extragalactic background light leaves a small channel open.
+
+**Not done:**
+- A full photon propagation run, to turn 0.04–40 into one number.
+- The SME Data Tables themselves: the page was too large to fetch. The verdict instead rests on the strongest single time-of-flight bound plus the scaling argument.
+
+Everything is in `explorer/findings/grid-cubic-p4-is-15-orders-below-sme-d6-…md`, with the session log at `explorer/logs/2026-11-26.md`. I also saved a memory on the lopsided-split threshold, since this translation mistake is easy to repeat.

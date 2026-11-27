@@ -1,9 +1,22 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-26 (maintainer)*
+*Last updated: 2026-11-27 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-27): **The first outside contact is written, not sent: a note to the Refracted Gravity authors on the lunar-ranging bound on their smoothing length (their theory, their calibrations, their free D). Outreach had been routed as a yes/no four times since 11-08 with no text to send. The stencil worth committing is the fermion's (KM3 already excludes 53 % of Wilson-neutrino orientations); scalar/photon stencils give numbers no data can score, and the Auger photon bound weakens under a shared coefficient (explorer 11-26 drained).**
+- **Site (`b608b34`):**
+  - one γ band registry (`src/lib/gammaBands.ts`) rendered on Calculator, Crossover Visualizer, γ Regimes, Coherence Explorer ("Boundary" gone);
+  - Galaxy Plotter legend/step 3/What You're Seeing follow calibration and galaxy (max C_ρ computed: DDO 154, UGC 128 never cross the knee);
+  - Equation Anatomy knee 0.028·V^0.5; Cassini 14.5–19.3σ "M/L pinned" everywhere, DHF 8.7σ no longer credited to γ = 0.49;
+  - /for-researchers LIV cell (photon-only Auger; d = 6 checked; fermion stencil); slips (38 decades, 0.5σ, 1.4σ, 2.2σ);
+  - HA 3 + 1 + 1 + 1; Kroupa 2022 beside the Hyades; A2ACW in-loop 0/6 in the lead + Si et al. 2024; glossary LLR/CAI/PPN/RG.
+- **Tools:** lint 475 rules (+2; tree 0; HEAD control 3 hits). `fragment_check` 223 ok. Build passes. Not checked in a browser.
+- **→ Explorer:** `verify-the-refracted-gravity-llr-note-before-it-goes-out.md` (re-run, verbatim ε, escapes; stake: every D = 1–10 pc cell stays ≥ 10×).
+- **→ Next maintainer:** landing "Where to Start" up and matched to the Beginner Path; current-claim-first sweep (Parameter Derivations row 4, Relation to MOND, Equation Anatomy Step 3, CDM caveat); HA badge descriptors ≤ ~6 words; one BTFR-cap number per test; low items in the 11-27 log. **On 2–3 December: record the DR4 reading per named variant if dp has not adopted a key.**
+- **→ Project lead:** send/edit/decline the RG note; DR4 in 5 days; commit a fermion action (narrows 11-26); a kept-in-sync one-page header for PREDICTIONS.md (281 KB, beyond a single read).
+  Draft `Synchronism/Research/proposals/draft_note_to_refracted_gravity_authors_llr_bounds_the_smoothing_length_20261127.md`.
 
 ## 🟢 NEW (maintainer 2026-11-26): **At the archive's own one cell per tick, the grid's p⁴/M_Pl² dispersion must depend on direction: a frame-locked cubic (ℓ = 4) pattern that isotropic QG proposals lack. Within symmetric 27-point leapfrog stencils it cannot vanish (the isotropic family has η ≡ (λ²−1)/12, stable only to λ = √3/2). This is the one register row a single commitment (a stencil per species) would turn into a framework-owned bet. The substrate differs from CAI in two places, both costs (explorer 11-25 drained).**
 - **Run:** `maintainer/scripts/grid_dispersion_anisotropy_by_stencil.py` (PREREG `823387d` before the script; 4/5 held; P4 failed: no stable stencil removes the term).

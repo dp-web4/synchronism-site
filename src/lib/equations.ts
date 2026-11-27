@@ -67,22 +67,8 @@ export function freemanDensity(
   return (c * H0) / (4 * Math.PI * Math.PI * G);
 }
 
-/** Determine regime from γ value */
-export function regime(gamma: number): 'quantum' | 'boundary' | 'classical' {
-  if (gamma > 1.5) return 'quantum';
-  if (gamma > 0.5) return 'boundary';
-  return 'classical';
-}
-
-/** Regime label with color */
-export function regimeLabel(gamma: number): { label: string; color: string } {
-  const r = regime(gamma);
-  switch (r) {
-    case 'quantum': return { label: 'Quantum (γ > 1.5)', color: '#38bdf8' };
-    case 'boundary': return { label: 'Boundary (γ ≈ 1)', color: '#8b5cf6' };
-    case 'classical': return { label: 'Classical (γ < 0.5)', color: '#22c55e' };
-  }
-}
+// regime()/regimeLabel() removed 2026-11-27: unused, and a fourth γ band vocabulary (Quantum/Boundary/Classical at
+// 1.5/0.5). Band names now live in lib/gammaBands.ts.
 
 /** Coupling-coherence model (generalized form for multi-agent experiments) */
 export function couplingCoherence(p: number, gamma: number, pCrit: number): number {

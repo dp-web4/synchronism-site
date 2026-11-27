@@ -230,7 +230,7 @@ export default function CoherenceFunction() {
           <em>(This heading read &ldquo;has never itself been evaluated (2026-08-04)&rdquo; until 2026-10-08, when a graduate-physics
           visitor noticed the page itself reports the result. The density-keyed form has since been run head-to-head on SPARC:
           free γ goes to 0.046 and it loses to the acceleration-keyed form by ΔBIC +2843.)</em>{' '}
-          every quantitative galaxy result on this site &mdash; γ = 0.489, the ΔBIC form-selection table, the
+          Every quantitative galaxy result on this site &mdash; γ = 0.489, the ΔBIC form-selection table, the
           Cassini/SPARC squeeze &mdash; was computed on acceleration (g<sub>obs</sub>, μ-form), not ρ (see the
           2026-09-08 &ldquo;Which variable the fit actually used&rdquo; note above; this sentence previously said
           &ldquo;g<sub>bar</sub>,&rdquo; which the fit did not use). Running the
@@ -441,7 +441,7 @@ export default function CoherenceFunction() {
 
         <h3>3. Why log?</h3>
         <p>
-          Presence spans enormous ranges &mdash; in the astrophysical case, density alone covers 80+ orders
+          Presence spans enormous ranges &mdash; in the astrophysical case, density alone covers about 38 orders
           of magnitude (interstellar gas at ~10<sup>&minus;24</sup> g/cm&sup3;
           to neutron stars at ~10<sup>14</sup> g/cm&sup3;). The logarithm maps this
           range into something tanh can differentiate between. The &ldquo;+1&rdquo; inside
@@ -501,7 +501,7 @@ export default function CoherenceFunction() {
           <p style={{ margin: '0.5rem 0 0', color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>
             The <strong>compander class</strong> includes: μ-law audio compression (telephone networks), Hill function (oxygen binding to hemoglobin),
             Naka-Rushton equation (retinal response), the Langevin/Brillouin magnetization curve (a saturating, non-critical paramagnet). All map a wide dynamic range onto a
-            bounded output using a sigmoidal curve. C(ρ) does the same: density spanning 80+ orders of magnitude →
+            bounded output using a sigmoidal curve. C(ρ) does the same: density spanning about 38 orders of magnitude →
             coherence in [0, 1].
           </p>
           <p style={{ margin: '0.5rem 0 0', color: 'var(--color-text-secondary)', fontSize: '0.85rem' }}>

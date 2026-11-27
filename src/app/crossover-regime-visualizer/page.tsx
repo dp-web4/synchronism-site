@@ -5,11 +5,12 @@ import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
+import { GAMMA_BANDS, gammaBand } from '@/lib/gammaBands';
 
 const regions = [
   {
     id: 'classical',
-    label: 'γ < 0.6 — High-N_corr (strongly correlated) · N_corr ≥ 12',
+    label: `${GAMMA_BANDS.collective.range} — ${GAMMA_BANDS.collective.name} · ${GAMMA_BANDS.collective.ncorr}`,
     color: '#10b981',
     range: [0, 0.6],
     systems: ['Superconductors', 'BEC', 'Superfluids', 'Cooper pairs', 'Quantum computers'],
@@ -18,7 +19,7 @@ const regions = [
   },
   {
     id: 'boundary',
-    label: 'γ ≈ 1 (0.6–1.4) — Crossover band · N_corr = 3–11',
+    label: `${GAMMA_BANDS.crossover.range} — ${GAMMA_BANDS.crossover.name} · ${GAMMA_BANDS.crossover.ncorr}`,
     color: '#f59e0b',
     range: [0.6, 1.4],
     systems: ['Liquid water', 'Enzymes', 'Chemical bonds', 'Neural firing'],
@@ -27,7 +28,7 @@ const regions = [
   },
   {
     id: 'quantum',
-    label: 'γ > 1.4 — Single-particle · N_corr = 1 (γ = 2) or 2 (γ ≈ 1.41)',
+    label: `${GAMMA_BANDS.single.range} — ${GAMMA_BANDS.single.name} · ${GAMMA_BANDS.single.ncorr} (γ = 2 or ≈ 1.41)`,
     color: '#8b5cf6',
     range: [1.4, 4.0],
     systems: ['Ideal gases', 'Single atoms', 'Few-particle systems', 'Uncorrelated matter'],
@@ -39,7 +40,7 @@ const regions = [
 export default function PhaseBoundaryVisualizer() {
   const [gamma, setGamma] = useState(1.0);
 
-  const activeRegion = regions.find(r => gamma >= r.range[0] && gamma < r.range[1]) || regions[2];
+  const activeRegion = regions.find(r => r.id === ({ collective: 'classical', crossover: 'boundary', single: 'quantum' } as const)[gammaBand(gamma).id]) || regions[2];
 
   const svgW = 600;
   const svgH = 200;
@@ -55,7 +56,7 @@ export default function PhaseBoundaryVisualizer() {
         <ValidationBadge status="audited-negative" label="γ = 2/√N_corr — ranks the most collective systems flattest (sign inverted)" />
       </div>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', marginTop: '0.35rem' }}>
-        Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index Kind and Status
+        Tool type: <strong>Model Explainer &middot; Artifact Lesson</strong> (the Interactive Tools index Kind and State
         tags &mdash; Artifact Lesson is an operational state, not a level: a tool kept to show a failure, not a verdict) &middot; Claim status: <strong>Audited-Negative</strong>, the
         badge above.
       </p>
@@ -176,9 +177,9 @@ export default function PhaseBoundaryVisualizer() {
             <text x={30 + (1.4 / 4.0) * 540} y={barY - 26} textAnchor="middle" fill="#9ca3af" fontSize="9">N&#x2248;2.04</text>
 
             {/* Labels */}
-            <text x={30 + (0.3 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#10b981" fontSize="11">Collective</text>
-            <text x={30 + (1.0 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#f59e0b" fontSize="11">Crossover band</text>
-            <text x={30 + (2.7 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#8b5cf6" fontSize="11">Single-particle</text>
+            <text x={30 + (0.3 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#10b981" fontSize="11">{GAMMA_BANDS.collective.name}</text>
+            <text x={30 + (1.0 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#f59e0b" fontSize="11">{GAMMA_BANDS.crossover.name}</text>
+            <text x={30 + (2.7 / 4.0) * 540} y={barY - 10} textAnchor="middle" fill="#8b5cf6" fontSize="11">{GAMMA_BANDS.single.name}</text>
 
             {/* Anchored example markers */}
             <line x1={32} y1={barY + barH + 5} x2={32} y2={barY + barH + 25} stroke="#10b981" strokeWidth="1" />

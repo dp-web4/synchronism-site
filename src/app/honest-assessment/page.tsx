@@ -35,8 +35,8 @@ export default function HonestAssessment() {
         Updated as new results come in.
       </p>
       <p style={{ maxWidth: '65ch', fontSize: '0.9rem', margin: '0 0 1rem', color: 'var(--color-text-secondary)' }}>
-        <strong>Not a physicist?</strong> Read the box below and the{' '}
-        <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>one-paragraph plain summary</a> under it, then{' '}
+        <strong>Not a physicist?</strong> Read the{' '}
+        <a href="#plain-summary" style={{ color: 'var(--color-accent-blue)' }}>one-paragraph plain summary</a> and the &ldquo;If you read nothing else&rdquo; box under it, then{' '}
         <a href="#non-physicist-takeaway" style={{ color: 'var(--color-accent-blue)' }}>what a non-physicist should take away</a>.
         On the Beginner Path that is the whole of step 5 (about 4 minutes), and you can stop at the green &ldquo;you can stop here&rdquo; box. Everything after it is the detailed record.
       </p>
@@ -90,8 +90,8 @@ export default function HonestAssessment() {
           imitating MOND — a 40-year-old rival theory that tweaks gravity instead of adding dark matter — and
           ties it at best: it never beats MOND once its extra dial is charged. <strong>How fatal is this?</strong> As a theory of galaxies: fatal, by its
           own scoreboard — zero confirmed predictions, <strong>six</strong> executed refutations
-          resting on two framework-specific mechanism roots, plus one refuted registration, one constraint
-          inherited from MOND, and one Bell/CHSH construction check. <strong>Why does the site
+          in all: three on the framework&apos;s own content (from two mechanism roots), one refuted registration, one constraint
+          inherited from MOND, and one Bell/CHSH construction check (3 + 1 + 1 + 1 = 6). <strong>Why does the site
           still exist?</strong> Because a few of the framework&apos;s core ideas have never been testable with
           existing instruments (untested is not the same as failed), and because this record — a theory testing
           itself in public and publishing every failure — is itself the point. The paragraph &ldquo;the same, with the
@@ -336,8 +336,8 @@ export default function HonestAssessment() {
         </p>
 
         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '0.75rem' }}>
-          <strong>Transitions:</strong> statuses move in one direction. Untested → Executed/Adjudicated → Failed
-          (or survives); Failed never softens back. A retirement or reclassification is itself a dated, logged
+          <strong>Transitions:</strong> statuses move in one direction. Badge: Untested → Failed (or it stays Untested
+          after a test it survives); the verb that moves it is Executed or Adjudicated. Failed never softens back. A retirement or reclassification is itself a dated, logged
           event with the audit that forced it linked from the card. Adjudication authority: the daily explorer
           track runs executions; the maintainer track propagates verdicts to pages; contested calls are gated on
           the human operator and marked as such. If a status note seems to contradict its heading, the most

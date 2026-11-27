@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import { gammaBand, gammaBandLabel } from '@/lib/gammaBands';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedConcepts from '@/components/RelatedConcepts';
@@ -61,8 +62,9 @@ export default function CoherenceExplorer() {
     }).join(' ');
   }, [points, logScale, xMin, xMax, plotW, plotH, pad.left, pad.top]);
 
-  const regime = gamma > 1.4 ? 'Single-particle (γ > 1.4)' : gamma > 0.6 ? 'Boundary (γ ≈ 1)' : 'Many-body by γ = 2/√N_corr (γ < 0.6), yet C is lower here: the formula’s sign inversion';
-  const regimeColor = gamma > 1.4 ? '#8b5cf6' : gamma > 0.6 ? '#f59e0b' : '#10b981';
+  const band = gammaBand(gamma);
+  const regime = band.id === 'collective' ? `${gammaBandLabel(gamma)}: many-body by γ = 2/√N_corr, yet C is lower here, the formula’s sign inversion` : gammaBandLabel(gamma);
+  const regimeColor = band.color;
 
   return (
     <>
@@ -270,6 +272,10 @@ export default function CoherenceExplorer() {
             {(() => { const sel = PRESET_CAPTIONS.find(p => Math.abs(gamma - p.g) < 0.005); return sel ? (
               <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', marginTop: '0.3rem' }}>{sel.label}</p>
             ) : null; })()}
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', marginTop: '0.3rem' }}>
+              <strong>Why two galaxy buttons?</strong> 0.05 is what you get when this density curve is fitted to galaxies, and it lost.
+              0.49 is the fit when the same curve is fed acceleration instead of density, and then it is MOND&apos;s curve.
+            </p>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.72rem', marginTop: '0.3rem' }}>
               Presets are values of &#x03B3; the site discusses, not physical systems: the density axis has no units, so no
               preset puts you &ldquo;at&rdquo; a galaxy, a metal, or a brain. For named systems via N<sub>corr</sub>, use the{' '}
@@ -288,11 +294,14 @@ export default function CoherenceExplorer() {
               (see <Link href="/core-idea#density-fit" style={{ color: 'var(--color-accent-blue)' }}>Core Idea</Link>).
               &#x03B3; = 2 was the framework&apos;s original galaxy guess &mdash; refuted (drag the slider up to see it).
               <strong style={{ color: '#f87171' }}> The 0.49 value is dead on two fronts, not one:</strong>{' '}
-              &#x03B3; &#x2248; 0.49 reproduces MOND on SPARC <em>and</em> the same &#x03B3; fails the Cassini Solar-System
-              bound &mdash; at 8.7&#x03C3; as published by Desmond, Hees &amp; Famaey 2024 (MNRAS 530, 1781; marginalized
-              over a&#x2080;, M/L and RAR-fit uncertainty), (TEST-25 on <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>). This site&apos;s
-              own unmarginalized run gives a larger number, but only by treating 2,807 rotation-curve points as independent; with
-              the galaxy as the unit its retained &#x03B3; range widens to 0.3&ndash;1.7, so the published 8.7&#x03C3; is the figure to quote.
+              &#x03B3; &#x2248; 0.49 reproduces MOND on SPARC <em>and</em> fails the Cassini Solar-System bound. Desmond, Hees &amp;
+              Famaey 2024 (MNRAS 530, 1781) exclude MOND&apos;s simple &#x03BC; at 8.7&#x03C3; fiducial (1.9&#x03C3; with M/L freedom and bulge
+              galaxies removed). They tested MOND&apos;s functions, not this compander: the simple &#x03BC; is this curve at &#x03B3; = &frac12; exactly,
+              with a<sub>0</sub>&prime; rescaled, and 0.49 sits inside SPARC&apos;s error (&plusmn;0.11) of &frac12;, so the transfer to 0.49 is this site&apos;s, not
+              theirs (TEST-25 on <Link href="/tier-1-existing" style={{ color: 'var(--color-accent-blue)' }}>Tier 1</Link>). This site&apos;s own run on the compander gives
+              14.5&ndash;19.3&#x03C3; for every &#x03B3; from 0.3 to 3, but with M/L pinned; those &#x03C3; track the M/L prior (about 10&#x03C3; at &#x03B3; = 3 with
+              M/L free at 0.1 dex), so the number that travels is the M/L each family needs in order to pass: the compander needs a disc
+              M/L more than twice stellar-population values, MOND&apos;s sharpest tested member does not.
               At the &#x03B3; galaxies prefer the bound fails; and once a<sub>0</sub> is taken from SPARC at each &#x03B3;, no &#x03B3; up to 3 passes Cassini (an earlier scan with a<sub>0</sub> held fixed had &#x03B3; &#x2273; 1.5 passing; corrected 2026-11-06). And the S-shape you see is a property of the log axis: with the density-keyed
               knee at &#x03C1;<sub>crit</sub> = 0.029&middot;V&sup2; (the units hybrid, not the archive&apos;s 0.028&middot;V<sup>0.5</sup>, at which the median is 0.0975 and 45 of 122 galaxies have points above the knee; explorer 2026-11-13), SPARC samples x = &#x03C1;/&#x03C1;<sub>crit</sub> at a median of ~7&times;10<sup>&minus;5</sup>,
               where C = &#x03B3;x to 1.8% at worst (0.22&times; the data&apos;s precision on C) &mdash; a straight line. Toggle to
@@ -312,7 +321,7 @@ export default function CoherenceExplorer() {
             </p>
             <details style={{ color: 'var(--color-text-muted)', fontSize: '0.72rem', margin: '0.2rem 0 0 0.5rem' }}>
               <summary style={{ cursor: 'pointer' }}>Revision note</summary>
-              The caption above led with &ldquo;fails the Cassini Solar-System bound at ~18&#x03C3;&rdquo;; it now leads with the published, marginalized 8.7&#x03C3;, matching Honest Assessment. This box wrote the acceleration-keyed branch as x = g<sub>bar</sub>/a<sub>0</sub>; the SPARC fit that gives &#x03B3; &#x2248; 0.49 keys on g<sub>obs</sub> implicitly (explicit g<sub>bar</sub> keying is the floored TEST-09/10 form).
+              The caption above led with &ldquo;fails the Cassini Solar-System bound at ~18&#x03C3;&rdquo;; it then led with the published 8.7&#x03C3; as &ldquo;the figure to quote&rdquo;, saying the in-house number was larger only because 2,807 points were treated as independent. Until 2026-11-27 it also credited the 8.7&#x03C3; to &#x03B3; &#x2248; 0.49 directly; DHF tested MOND&apos;s functions, and the in-house spread is an M/L-prior effect (researcher simulated-visitor persona, 2026-11-27). This box wrote the acceleration-keyed branch as x = g<sub>bar</sub>/a<sub>0</sub>; the SPARC fit that gives &#x03B3; &#x2248; 0.49 keys on g<sub>obs</sub> implicitly (explicit g<sub>bar</sub> keying is the floored TEST-09/10 form).
             </details>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', marginTop: '0.35rem', borderLeft: '2px solid rgba(139,92,246,0.6)', paddingLeft: '0.5rem' }}>
               <strong style={{ color: '#a78bfa' }}>What &#x03B3; = &frac12; shows:

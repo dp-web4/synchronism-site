@@ -24,6 +24,12 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-27 (visitor Pass 4): the same-line REQUIRES rule passed four lines where "M/L" appeared elsewhere on a
+    # long JSX line. The qualifier must follow the number closely.
+    (r"14\.5(&ndash;|–)19\.3(&sigma;|&#x03C3;|σ)(?![\s\S]{0,260}?(pinned|M/L))", "2026-11-27",
+     "in-house Cassini 14.5-19.3 sigma holds M/L pinned and tracks the M/L prior; say so right after the number"),
+    (r"published 8\.7(&#x03C3;|σ) is the figure to quote", "2026-11-27",
+     "the in-house spread is an M/L-prior effect, not a point-independence artefact; DHF tested MOND's functions, not the compander", 1),
     # Added 2026-11-26 (visitor Passes 3-4; maintainer stencil run).
     (r"Not unique \(loop quantum gravity, causal sets\)", "2026-11-26",
      "causal sets are Lorentz-invariant by construction (Bombelli, Henson & Sorkin 2009); cite them as the counter-example", 1),

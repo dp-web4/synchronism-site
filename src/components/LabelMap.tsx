@@ -47,7 +47,7 @@ export default function LabelMap() {
     <div id="label-map" style={{ marginBottom: '2rem', scrollMarginTop: '5rem' }}>
       <h2 style={{ fontSize: '1.1rem' }}>How to read labels on this site</h2>
       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-        <strong>Four labels are verdicts, and they are the only ones you need.</strong> The two badge families judge one claim on a page;
+        <strong>Four kinds of label are verdicts, and they are the only ones you need</strong> (about twenty words in all, listed in the first table; everything after it is metadata). The two badge families judge one claim on a page;
         the scoreboard word judges a whole piece of the framework; the ledger class says what kind of refutation a counted row is. To ask
         &ldquo;did this part of the theory survive contact with data?&rdquo;, read the scoreboard word. Full definitions:{' '}
         <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>badges</Link>,{' '}

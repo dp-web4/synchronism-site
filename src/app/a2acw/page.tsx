@@ -19,8 +19,10 @@ export default function A2ACW() {
         <div style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.35)', borderRadius: '0.375rem', padding: '0.7rem 1rem', margin: '0 0 1.25rem', fontSize: '0.92rem', color: 'var(--color-text-secondary)' }}>
           <strong style={{ color: 'var(--color-accent-blue)' }}>What this program&apos;s record says about AI self-play (the citable part of this page):</strong>{' '}
           about 3,300 AI debate sessions produced zero refutations of the physics on their own. Five of the six refutations on the
-          scoreboard came from executing code against external data (SPARC, Cosmicflows-4, Cassini); the sixth is a construction check
-          whose oracle is a theorem. A coded pilot of 92 ledger corrections found that reading the program&apos;s own documents changed
+          scoreboard came from executing code against external data (SPARC, Cosmicflows-4, Cassini; the refuted registration is one of the five, run on
+          Cosmicflows-4); the sixth is a construction check whose oracle is a theorem. <strong>The one in-loop number with ground truth:</strong> the
+          adversarial loop passed all six claims whose badges a later audit demoted, so it caught 0 of 6 (its catch rate can still be as high as
+          0.46, Clopper&ndash;Pearson two-sided 95%). A coded pilot of 92 ledger corrections found that reading the program&apos;s own documents changed
           verdicts only about the record (what was tested, which row), never about the world. So on this evidence A2ACW is
           not a generator of physics. Its working filter was the external oracle. What has not been measured is whether the
           protocol can recognise a genuinely novel result at all: that needs the post-cutoff arm, which has not been run. If it will not be run, this audit stays uncalibrated.{' '}
@@ -131,7 +133,12 @@ export default function A2ACW() {
             <strong>CAMEL</strong> (Li et al. 2023) and <strong>MetaGPT</strong> (Hong et al. 2023).
             The failure modes cataloged above (sycophancy, drift, silent propagation) are documented
             in the multi-agent failure-mode literature (e.g., the <strong>MAST</strong> taxonomy).
-            External-verification grounding is standard practice in AI-for-science pipelines.
+            External-verification grounding is standard practice in AI-for-science pipelines. The closest literature to this
+            page&apos;s open question is on LLM <em>novelty judgment</em>: Si, Yang &amp; Hashimoto 2024 (&ldquo;Can LLMs Generate Novel Research
+            Ideas?&rdquo;, arXiv:2409.04109) ran a blinded human-expert novelty study, and the automated-reviewer evaluations in the AI
+            Scientist line test LLMs as reviewers (pointed out by a researcher simulated-visitor persona, 2026-11-27; not yet read here). Measured
+            against that work, the proposed post-cutoff arm needs a blinded <em>human</em> arm on the same items, or &ldquo;LLMs over-map
+            onto prior art&rdquo; has nothing to be compared with.
           </p>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: 0 }}>
             <strong>What is the contribution, then?</strong> Not the protocol, and not yet a result. The open question is

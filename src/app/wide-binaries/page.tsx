@@ -216,6 +216,12 @@ export default function WideBinaries() {
           That makes it a reading aid dated before the data, not a registration: a registration is decided before the data arrive, and this one has not been. It cannot change the count. A decision, with its date, will replace this paragraph.
           Open clusters: four of the six in the key&apos;s second observable already sit below its kill line on pre-DR4 binary-cleaned values. That line (obs/pred &le; 0.65 per cluster) was chosen after the pre-DR4 values were seen. The kill registered before retrieval used &sigma; with binaries included, and it was not met (PREREG a1b3be0). The values are: Hyades 0.30
           of the internal-reading prediction (Torres et al. 2026 §12); Pleiades, M67 and NGC 188 at 0.34&ndash;0.63.
+          <em>Published open-cluster MOND test on the same objects:</em> Kroupa et al. 2022 (MNRAS, doi:10.1093/mnras/stac2563, arXiv:2210.13472)
+          read the <em>asymmetry</em> of open-cluster tidal tails (Hyades, Praesepe, Coma Berenices, COIN-Gaia 13, NGC 752) as favouring Milgromian
+          dynamics over Newton, whose tails are near-symmetric. That is a different observable from these internal dispersions, and it is computed
+          with MOND&apos;s external field effect, which the internal reading drops by construction. So a sub-prediction Hyades dispersion here
+          argues against the EFE-free reading, not against MOND-with-EFE, and the two results do not conflict on their face; whether the
+          tails and dispersions agree within one MOND model has not been checked here (raised by a researcher simulated-visitor persona, 2026-11-27).
         </p>
         <div style={{ overflowX: 'auto', margin: '0.5rem 0 1rem' }}>
           <table style={{ borderCollapse: 'collapse', fontSize: '0.85rem', color: 'var(--color-text-secondary)' }}>

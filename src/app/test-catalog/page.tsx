@@ -355,7 +355,7 @@ export default function TestCatalog() {
             environment claim was executed 2026-07-14 with r&sup2; = 0.0001 — refuted. That run is TEST-03s, a
             substitute; the ALFALFA-registered TEST-03 remains unrun.{' '}
             <em style={{ color: 'var(--color-text-muted)' }}>(ID corrected 2026-09-14; this label previously
-            said TEST-03, the ALFALFA TFR-scatter card.)</em> Wide binaries (TEST-02): <em>Self-Eliminating-or-Tie; density branch identically null in the wide/close ratio and excluded by SPARC and LLR; acceleration branch already failed via TEST-25; DR3 dispute unresolved</em> —
+            said TEST-03, the ALFALFA TFR-scatter card.)</em> Wide binaries (TEST-02): <em>Self-Eliminating-or-Tie; density branch identically null in the wide/close ratio and excluded by SPARC and LLR (lunar laser ranging); acceleration branch already failed via TEST-25; DR3 dispute unresolved</em> —
             on the density-keyed branch the boost cancels in the wide/close ratio the test measures, so it predicts no signal
             at all; the branch is excluded independently by SPARC and by LLR (lunar laser ranging): as the Sun moves through
             the Galaxy the density-keyed law makes G vary at Ġ/G &asymp; 10⁻⁸&ndash;10⁻⁵ yr⁻¹, against LLR&apos;s (7.1 &plusmn; 7.6)&times;10⁻¹⁴
@@ -477,13 +477,13 @@ export default function TestCatalog() {
         </ul>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
           Not excluded by any of these: <strong>the RG class with its own fitted permittivity on discs</strong>, which nobody here has
-          refit (Cesare et al. fit it to 30 DiskMass discs). RG&apos;s own record in this archive is mixed. Globular clusters pass. Its disc
+          refit (Cesare et al. fit it to 30 DiskMass discs). <Link href="/glossary#RG" style={{ color: 'var(--color-accent-blue)' }}>RG</Link> (Refracted Gravity)&apos;s own record in this archive is mixed. Globular clusters pass. Its disc
           calibrations fail all 15 Milky Way dwarf spheroidals by &ge; 3&sigma;, because in spherical symmetry Gauss&apos;s law caps the boost at
           1/&epsilon;<sub>0</sub> exactly (Leo I, which RG keeps in equilibrium, is off by 9&ndash;15&sigma;). Its elliptical calibration is in
           2&ndash;4&sigma; tension on the dwarfs that are in equilibrium under RG (explorer, 2026-10-21). Its published covariant completion (Sanna, Matsakos &amp; Diaferio 2023)
           fails the Solar System outright on a site computation (explorer 2026-10-22; unpublished, unreviewed, and contrary to the
           authors&apos; own presentation of the theory as Solar-System viable; the weak-field reduction is in{' '}
-          <a href="https://github.com/dp-web4/synchronism-site/blob/main/explorer/findings/covariant-refracted-gravity-is-omega-minus-one-brans-dicke-fails-cassini-llr-and-never-reproduces-rg.md" style={{ color: 'var(--color-accent-blue)' }}>the finding</a>): its scalar equation is linear, so it is unscreened &omega; = &minus;1 Brans&ndash;Dicke, with PPN &gamma; = 0
+          <a href="https://github.com/dp-web4/synchronism-site/blob/main/explorer/findings/covariant-refracted-gravity-is-omega-minus-one-brans-dicke-fails-cassini-llr-and-never-reproduces-rg.md" style={{ color: 'var(--color-accent-blue)' }}>the finding</a>): its scalar equation is linear, so it is unscreened &omega; = &minus;1 Brans&ndash;Dicke, with PPN &gamma; = 0 (the parametrized post-Newtonian &gamma;, not this site&apos;s &gamma;)
           (Cassini, ~4&times;10<sup>4</sup>&sigma;), Nordtvedt &eta; = 1 (lunar ranging, ~2&times;10<sup>3</sup>&sigma;) and |&#x120;/G| &ge; 0.99 H<sub>0</sub> from its own
           cosmology. Its weak field cannot vary the scalar by more than ~10<sup>&minus;4</sup> across a galaxy, so it does not contain RG&apos;s
           permittivity at all. RG therefore

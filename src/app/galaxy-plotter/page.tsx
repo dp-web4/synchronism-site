@@ -353,8 +353,8 @@ export default function GalaxyPlotter() {
           in quadrature, which hugs the baryon line (until 2026-10-08 that inert wiring was the only one drawn; a
           graduate-physics visitor pointed out it shows the milder of two opposite failures). The old hand-tuned
           stand-in is now hidden behind a checkbox. The green curve is MOND&apos;s real simple-&#x03BD; interpolating function on SPARC&apos;s measured gas, disc and bulge components (since 2026-11-10; before that, a toy disc whose mass came from V<sub>flat</sub>) &mdash; nothing is fitted to the dots.{' '}
-          <strong>Why a second (amber) curve?</strong> The dotted one is what a curve <em>would</em> need to
-          look like to fit the data — drawn by hand, not computed. The solid one is what the equation
+          <strong>Why is there a hidden amber curve?</strong> Behind the checkbox, the dotted amber line is what a curve <em>would</em> need to
+          look like to fit the data, drawn by hand, not computed. The solid <em>violet</em> line is what the equation
           actually produces. Showing both is the point: the gap between them <em>is</em> the failure.
         </div>
         <p>
@@ -836,8 +836,8 @@ export default function GalaxyPlotter() {
               <li><strong>The gap</strong> between the gray line and the blue dots, growing toward the edge, is the missing gravity &mdash; the
                 dark-matter puzzle. The <strong style={{ color: '#22c55e' }}>green dashed line</strong> (MOND) closes it with no per-galaxy tuning.</li>
               <li>The <strong style={{ color: '#8b5cf6' }}>solid violet line</strong> is Synchronism&apos;s density equation wired the way its
-                tests wire it (gravity divided by C). <em>At the archive&apos;s calibration (default since 2026-11-14) the line is near the gray one where the disc is dense and
-                reaches the ceiling where it is thin; see the switch above the chart. The rest of this step describes the units-hybrid setting.</em> There the disk is far too thin to reach the equation&apos;s switch, so C sits on its floor and
+                tests wire it (gravity divided by C). <em>At the archive&apos;s calibration (default since 2026-11-14) what you see depends on the galaxy: on bright discs (NGC 2403, NGC 3198, NGC 7331) the switch turns on inside the disc, so the line is near the gray one where the disc is dense and
+                reaches the ceiling where it is thin; on faint ones (DDO 154, UGC 128) it never turns on, so the line is boosted everywhere, least at the centre. {maxC >= 0.5 ? 'The galaxy shown now is the first kind.' : 'The galaxy shown now is the second kind.'} The readout above the chart gives the numbers. The rest of this step describes the units-hybrid setting.</em> There the disk is far too thin to reach the equation&apos;s switch, so C sits on its floor and
                 the boost in gravity is the same 3.17&times; at every radius, so in speed the curve is the gray line scaled up by &radic;3.17 &asymp; 1.78&times;. It overshoots the inner points and
                 still falls at the edge, where the dots stay flat &mdash; that is the failure. This holds on every galaxy in the menu:
                 with &#x03C1;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;, C<sub>&#x03C1;</sub> stays below 0.01 everywhere on
@@ -948,7 +948,9 @@ export default function GalaxyPlotter() {
           </svg>
           <p style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', margin: '0.4rem 0 0' }}>
             Legend in plain words (shortened 2026-10-14 after a beginner simulated-visitor pass could not tell which line was the theory, and again 2026-10-22).
-            The violet line is Newton&apos;s shape &times;{Math.sqrt(1/0.315).toFixed(2)} in speed (= &radic;{(1/0.315).toFixed(2)}, the floored boost in gravity).
+            {calib === 'archive'
+              ? <>The violet line is Newton&apos;s shape boosted by at most &times;{Math.sqrt(1/0.315).toFixed(2)} in speed (= &radic;{(1/0.315).toFixed(2)}, the floored boost in gravity). On this galaxy it is about &times;{(1 / Math.sqrt(0.315 + 0.685 * maxC)).toFixed(2)} where the disc is densest, rising toward &times;{Math.sqrt(1/0.315).toFixed(2)} where it thins out{maxC >= 0.5 ? ' (near the gray line at the centre)' : ' (this disc is too faint for the switch to turn on, so it is boosted everywhere)'}.</>
+              : <>The violet line is Newton&apos;s shape &times;{Math.sqrt(1/0.315).toFixed(2)} in speed at every radius (= &radic;{(1/0.315).toFixed(2)}, the floored boost in gravity): under this units-hybrid setting C never leaves its floor.</>}
             The technical definition of each curve (division vs quadrature reading, the &#x03A9;<sub>m</sub> floor, max C<sub>&#x03C1;</sub> on this disk = {maxC.toFixed(3)},
             the simple-&#x03BD; MOND function and its BTFR mass) is in the &ldquo;Reading this plot&rdquo; list and the formula box on this page.
           </p>
@@ -965,8 +967,8 @@ export default function GalaxyPlotter() {
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
             The <span style={{ color: '#8b5cf6' }}>solid violet curve</span> is Synchronism&apos;s real
             C(&#x03C1;) evaluated on the disk&apos;s density profile, with gravity divided by C as the tests do (in plain words: wherever C is small the theory multiplies gravity up, because dividing by a number below 1 makes it bigger; the floor caps that at 3.17&times;) &mdash; and it
-            <strong> gets the shape wrong</strong>: at the default (archive) knee it sits near the gray line where the disc is dense and rises toward the
-            3.17&times; ceiling where it is thin, so it still falls where the dots stay flat (this galaxy&apos;s maximum C(&#x03C1;) is {maxC.toFixed(3)}).
+            <strong> gets the shape wrong</strong>: at the default (archive) knee, on bright discs it sits near the gray line where the disc is dense and rises toward the
+            3.17&times; ceiling where it is thin, and on faint discs (DDO 154, UGC 128) it is boosted everywhere, least at the centre; either way it still falls where the dots stay flat (this galaxy&apos;s maximum C(&#x03C1;) is {maxC.toFixed(3)}).
             Under the units-hybrid setting C never moves off its floor, the boost is the same everywhere, and the curve is the gray line scaled up. The{' '}
             <span style={{ color: '#c4b5fd' }}>light-violet dashed curve</span> (behind a checkbox above the chart since 2026-10-22) wires the same C the other way and does nothing.
             The hand-tuned tanh(radius) stand-in this page displayed before 2026-07-08 (it fit because it was drawn to fit) is behind

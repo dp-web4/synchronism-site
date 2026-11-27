@@ -300,7 +300,7 @@ export default function ConsciousnessDemo() {
           </p>
         </div>
 
-        <h2>What Has Falsified This</h2>
+        <h2>Why the Convergence Is Not Evidence</h2>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
           <li><strong>C &#x2248; 0.50 is the output-range midpoint, and the seven estimates are one estimate.</strong> The convergence is forced by shared calibration — every approach keyed to the midpoint of [0,1) lands near 0.50 by construction, and none of the seven measures C independently. <em>Not</em> forced by the shape of C(&#x03C1;): at &#x03B3; = &frac12;, C = 0.50 is exactly the log-density inflection (C* = 1/(2&#x03B3;u*) &rarr; u* = 2), so the function <em>does</em> distinguish that value &mdash; see the corrected calibration caveat above. The circularity is the finding; the geometry is not. (gnosis-research Session 63&apos;s p&lt;0.0001 rejection concerned a different variable — SNARC salience, not C; see the correction banner above.)</li>
         </ul>

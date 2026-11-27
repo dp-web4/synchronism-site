@@ -5,6 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
+import { GAMMA_BANDS } from '@/lib/gammaBands';
 
 export default function GammaRegimes() {
   return (
@@ -46,13 +47,13 @@ export default function GammaRegimes() {
             marginBottom: '1rem',
           }}>
             <div style={{ flex: 1, background: 'linear-gradient(90deg, #38bdf8, #38bdf880)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 500 }}>
-              Few-body (N<sub>corr</sub> &#x2248; 1)
+              {GAMMA_BANDS.single.name} ({GAMMA_BANDS.single.range})
             </div>
             <div style={{ flex: 0.5, background: 'linear-gradient(90deg, #8b5cf680, #8b5cf6, #8b5cf680)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 500 }}>
-              Boundary
+              {GAMMA_BANDS.crossover.name}
             </div>
             <div style={{ flex: 1, background: 'linear-gradient(90deg, #22c55e80, #22c55e)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 500 }}>
-              Many-body collective
+              {GAMMA_BANDS.collective.name} ({GAMMA_BANDS.collective.range})
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--color-text-muted)', fontSize: '0.8rem' }}>
@@ -98,8 +99,8 @@ export default function GammaRegimes() {
           description of <em>where that clustering falls</em> &mdash; not a consequence of the equation:
         </p>
         <ul style={{ color: 'var(--color-text-secondary)' }}>
-          <li>Phase transitions cluster here (melting, boiling, sublimation)</li>
-          <li>Catalysis operates at this boundary (enzymes, industrial catalysts)</li>
+          <li>Fitted &#x03B3; for real melting, boiling and sublimation transitions clusters here (a fact about the fits, not a transition in C, which has none; the Crossover Visualizer drops this item from its band list for that reason)</li>
+          <li>Catalysis: fitted &#x03B3; for enzymes and industrial catalysts lands in this band</li>
           <li>Superconductivity appears (Cooper pairs &#x2248; 2-body correlations)</li>
           <li>Biology emerges (the archive&apos;s gloss was &ldquo;molecular recognition requires a quantum-classical interface&rdquo;; see the band note above for why that labelling does not hold)</li>
         </ul>

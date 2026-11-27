@@ -472,7 +472,7 @@ export default function ParameterDerivations() {
             <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
               With the normalisation free, constant a&#x2080; (n = 0) is excluded by the bins at about 5&#x03C3; (bars pixel-read from Ciocan&apos;s Fig. 3, which prints no CI level, and read as 1&#x03C3;; about 10&#x03C3; if they are 95%). That is Ciocan&apos;s own headline, an <em>apparent</em> a&#x2080; rising with z. It is not an in-house test of MOND, and it shares the degeneracy with a redshift drift in stellar M/L, gas fraction or pressure-support correction. n = 1 lies between the
               paper&apos;s two estimators, which disagree with each other at 3&#x03C3; (the bins exclude n = 1 at
-              2.1&#x03C3;; the global line sits above it). &Lambda;CDM+baryons sits at n &asymp; 1 too, so nothing here
+              2.2&#x03C3;; the global line sits above it). &Lambda;CDM+baryons sits at n &asymp; 1 too, so nothing here
               selects the framework. The row is <strong>estimator-dominated; the anchor does not enter the
               slope</strong>. RC100&apos;s slope error (&plusmn;0.5) is too wide to test either; it is 1.4&#x03C3; from
               Ciocan&apos;s bins. One degeneracy sits under every number on this row: at high z, &ldquo;a&#x2080;(z)
@@ -499,7 +499,7 @@ export default function ParameterDerivations() {
               &#x039B; half predicts <em>zero</em> epoch evolution, since &#x039B; is constant, and fares worse
               against Ciocan than branch (A): at the Milgrom-local normalization, a constant a&#x2080; = 1.20
               against the observed 2.38 (+0.12/&minus;0.10, 95% CI) is <strong>4.4&#x03C3;</strong> away carrying the anchor&apos;s
-              &plusmn;0.26, the same convention the table above uses for branch (A), against branch (A)&apos;s ~4&#x03C3;. That is the comparison
+              &plusmn;0.26, the same convention the table above uses for branch (A), against branch (A)&apos;s 0.5&#x03C3; (its ~4&#x03C3; is the measurement-only figure). That is the comparison
               to read, because the anchor spread is what made the level &ldquo;untestable&rdquo; for branch (A), and it cannot be dropped for one side only.
               (Until 2026-11-22 this sentence led with &ldquo;roughly 23&#x03C3;&rdquo;, 21&#x03C3; and 19.7&#x03C3; on the measurement error alone, the paper&apos;s
               own figure being 19&#x03C3;; on that convention branch (A) sits at 0.5&#x03C3;. A graduate-student simulated-visitor persona pointed out that

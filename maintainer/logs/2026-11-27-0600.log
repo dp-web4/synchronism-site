@@ -1,3 +1,32 @@
 Starting Synchronism Maintainer Session at Fri Nov 27 06:00:01 PST 2026
 Flagging external issues/PRs...
 external items (synchronism-site): 1 open, nothing new to flag
+I fixed today's visitor friction on 23 site pages and drained the explorer's 11-26 action items. On the research side I wrote a ready-to-send note to the Refracted Gravity (RG) authors; it has not been sent. Everything is pushed (site `b608b34` + `664961b`, research repo `54c2e1fd`). The build, the wording lint and the anchor check all pass. I didn't check the pages in a browser.
+
+**What the feedback showed about the research.** The researcher persona's main point wasn't about the site. The project is now held back by the 12 decisions waiting on you and by the fact that no outside human has seen any of its results, not by a lack of data. Outreach has gone to you as a bare yes/no four times since 11-08 with nothing ready to send, and nothing happened. So this time I wrote the note itself: `Synchronism/Research/proposals/draft_note_to_refracted_gravity_authors_llr_bounds_the_smoothing_length_20261127.md`. It tells the RG authors that lunar laser ranging (LLR) rules out all three of their published fits. That holds at smoothing lengths of 1–10 pc, which their galaxy fits need. It then asks them what that smoothing length is meant to be. I left out the BBN result on purpose: it was computed for the framework's own law, not for RG's, so including it would claim more than we checked. The explorer has a topic to re-run the numbers before anything goes out.
+
+**Site fixes:**
+- **Galaxy Plotter:** the legend now matches the readout above the chart. I checked against the page's own data: DDO 154 and UGC 128 never cross the knee, while NGC 2403, 3198 and 7331 do.
+- **γ band names:** one shared list now feeds the γ Calculator, Crossover Visualizer, γ Regimes and Coherence Explorer. The four pages had used four different sets of names, and the retracted "Boundary" label is gone.
+- **Cassini σ:** every in-house 14.5–19.3σ now says the stellar mass-to-light ratio was held fixed, since that number moves with that assumption. The Coherence Explorer had credited the published 8.7σ to γ ≈ 0.49 directly, but that paper tested MOND's own formulas, not this one; the page now says so. I added two lint rules so the bare number can't return.
+- **For Researchers, grid-dispersion row (from the explorer):** the Auger photon bound only holds if photons alone break Lorentz symmetry. If they share one coefficient with electrons and positrons, it weakens to |η| ≲ 0.04–40. The row now also says the neutrino (fermion) stencil is the only commitment current data could rule out.
+- **Number slips:** "80+ orders" is now about 38; "~4σ" is 0.5σ under the same convention; "~1σ" is ~1.4σ; 2.1σ is 2.2σ.
+- **Smaller items:**
+  - Equation Anatomy now gives the archive's knee formula, 0.028·V^0.5, not V².
+  - The Honest Assessment count now adds up visibly (3 + 1 + 1 + 1 = 6).
+  - Kroupa et al. 2022 now sits beside the Hyades result.
+  - The A2ACW lead now opens with the in-loop catch of 0 of 6.
+  - New glossary entries: LLR, CAI, PPN and RG.
+  - Saturn's precession unit was checked at the source and is correct as quoted.
+
+**Not fully done:**
+- I read SPINE in full. I only read part of PREDICTIONS (281 KB, too big for one read); the rest of its dated entries I read by headline only. The session log says so.
+- Moving the landing page's "Where to Start" section up, and the sweep to put each page's current claim ahead of its correction history, are deferred to the next session.
+
+**Decisions for you:**
+1. Send the RG note, edit it, or say no. Either answer closes a loop that has been open since 11-08.
+2. Gaia DR4 is out in 5 days. If no reading plan is adopted by then, the next maintainer will record the result against each named variant separately.
+3. Commit a fermion stencil if you want the grid-dispersion row to become a bet that can lose. This is narrower than yesterday's "a stencil per species".
+4. Consider a short summary page at the top of PREDICTIONS that is kept current, so the "read it in full" rule can actually be met.
+
+The one open external issue (Synchronism#4, an outside proposal for an arm's-length holdout test) had nothing new.

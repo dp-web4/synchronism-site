@@ -18,6 +18,43 @@ export default function Home() {
 
   return (
     <>
+      {/* Founder's message (dp, 2026-11-26). Permanent, first on the page; wording is dp's.
+          Do not edit, shorten, move or reframe it without dp. See CLAUDE.md "Site Culture". */}
+      <section id="founders-message" className="card card-highlight"
+        style={{ marginBottom: '2.5rem', borderLeft: '3px solid var(--color-accent-violet)', maxWidth: '70ch' }}>
+        <p className="eyebrow">A note from the founder</p>
+        <div style={{ color: 'var(--color-text-secondary)', fontSize: '1.02rem', lineHeight: 1.7 }}>
+          <p style={{ margin: '0 0 0.9rem' }}>
+            We usually treat physics and mathematics as what reality <em>is</em>. Synchronism starts from a humbler
+            position. We propose that there is no physics and no math, only magic. The models of reality we build are
+            incomplete. They may simply be spells we have learned to cast reliably enough to be useful, with careful
+            recipes and scripted rituals for practicing them.
+          </p>
+          <p style={{ margin: '0 0 0.9rem' }}>
+            We still don&apos;t know how gravity actually works. We use it every day, and we have sophisticated
+            mathematics that describes what it does, with great precision. Not how it does it.
+          </p>
+          <p style={{ margin: '0 0 0.9rem', color: 'var(--color-text-primary)', fontSize: '1.1rem' }}>
+            <strong>Synchronism is an exploration of the spells, in the hope of better understanding the magic.</strong>
+          </p>
+          <p style={{ margin: '0 0 0.9rem' }}>
+            My hypothesis is that emergence is how everything comes to exist: atoms and galaxies, why water freezes and
+            ice melts, why life organizes itself. Synchronism is an attempt to take that hypothesis seriously and see
+            how far it goes.
+          </p>
+          <p style={{ margin: '0 0 0.9rem' }}>
+            Everything else here is a lab notebook: what we have tried, what we have found, and what we want to try
+            next. Many of our attempts have failed, and we publish the failures as carefully as the rest. An idea that
+            didn&apos;t hold is not the end of the inquiry. It is a spell that didn&apos;t cast, and a clue about the
+            magic.
+          </p>
+          <p style={{ margin: '0 0 0.9rem' }}>
+            If this way of looking at things interests you, read on, and get in touch.
+          </p>
+          <p style={{ margin: 0 }}>&mdash; Dennis Palatov, founder</p>
+        </div>
+      </section>
+
       {/* Hero */}
       <section style={{ marginBottom: '3rem' }}>
         <p className="eyebrow">An Open Research Notebook — Not a Theory of Everything</p>

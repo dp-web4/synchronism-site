@@ -82,7 +82,9 @@ synchronism-site/
 
 ## Site Culture: Questions First
 
-The site opens with *"What if one equation described it all?"* — a question, not a claim. This is the culture of the entire site:
+**The founder's message comes first (dp, 2026-11-26).** The landing page opens with dp's founder's message (`#founders-message` in `src/app/page.tsx`): Synchronism is an exploration of the spells (our incomplete models of reality) in the hope of better understanding the magic, and everything else on the site is a lab notebook of what we've tried, what we've found, and what we want to try next. It is permanent and stays first on the page. Its wording is dp's: no track edits, shortens, moves or reframes it, and nothing is placed above it. The same text opens the Synchronism README and whitepaper. Proposed changes go to dp.
+
+Below it, the hero asks *"What if one equation described it all?"* — a question, not a claim, and one of the spells the notebook has tested. This is the culture of the entire site:
 
 - **Frame as questions, present concrete proposed answers** — to be discussed, challenged, and tested on merit
 - A question alone is philosophy. A question with a specific, falsifiable proposed answer is a research program

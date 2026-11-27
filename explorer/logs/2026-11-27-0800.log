@@ -1,0 +1,40 @@
+Starting Synchronism Explorer Session at Fri Nov 27 08:00:01 PST 2026
+I checked the draft note to the Refracted Gravity (RG) authors before it can be sent. Every number in it survived, but the text should not go out as written. I've appended an edited, send-ready version (v2) to the draft for you.
+
+**What held**
+- **The original script** re-runs and reproduces its saved output.
+- **Hand checks:** I recomputed two table cells by hand (7.7×10³ against 7.8×10³; 920 against 940).
+- **Equation and parameters:** read from the authors' own LaTeX sources, the permittivity uses a natural log with Q as an exponent. All nine calibration values match their 2024 review word for word.
+- **Lunar ranging bound:** the 2018 value the note cites, (7.1 ± 7.6)×10⁻¹⁴ per year, is quoted correctly.
+- **The maintainer's stake** ("every cell from 1 to 10 pc is at least 10× over the bound") holds for a smooth, Gaussian kernel; the smallest cell is 30×. Tying the smoothing length to a fixed number of stars makes the bound stronger, not weaker (4×10³ to 5×10⁷×).
+
+**What had to change**
+1. **Drop question 2.** It asked the authors which of three equation forms is theirs, and their papers already say. The other two forms were slips in our own code; asking would tell them we hadn't read their papers.
+2. **Use the newer bound.** Biskupek, Müller & Torre 2021 give (−5.0 ± 9.6)×10⁻¹⁵ per year, 9.2× tighter than the 2018 value. Under it the note's one exception (the DiskMass joint fit at smoothing lengths of 30 pc and up) is excluded too, at 2.3–5.2×. With a Gaussian kernel, all three published calibrations are then excluded at every smoothing length from 0.5 pc up.
+3. **Name the kernel shape.** This is an escape the note didn't mention, and it is real. With a sharp-edged kernel, a star inside contributes a constant amount, so only gas changes the smoothed density between crossings.
+   - At 1 pc, the joint fit then passes the 2018 bound, because the Sun's own mass dominates the kernel.
+   - At 10 pc, both DiskMass fits straddle the 2018 bound.
+   - From 2 to 5 pc, everything stays excluded under either bound.
+   - The authors would find this quickly, so v2 states it first.
+4. **Add one sentence on covariant RG.** The authors' own review points to the covariant version as the possible fix, so it is the first reply to expect. v2 notes that this argument doesn't carry over to it.
+
+I wrote my predictions down and committed them before running the check (`378f2f2`): 4 held, 1 held only just, 1 partly held and 1 failed. The one that failed: I didn't expect the Sun's own mass to dominate the sharp-edged kernel at 1 pc.
+
+**Decision for you:** send v2, edit it, or decline. Recipient addresses still need to come from the authors' current papers.
+
+**Files** (both repos committed and pushed)
+- Site repo `06f031e`: finding `explorer/findings/rg-note-presend-check-…-kernel-shape-is-the-real-escape.md`, script and saved output in `explorer/scripts/rg_note_presend_check*`, session log `explorer/logs/2026-11-27.md`, and the topic moved to `topics/done/`.
+- Synchronism repo `eedec566`: the pre-send check and v2 appended to `Research/proposals/draft_note_to_refracted_gravity_authors_llr_bounds_the_smoothing_length_20261127.md`.
+
+**So what?** The project's first outside contact no longer carries a question that would have embarrassed it. Its headline is cleaner, and the authors' strongest escape is named and sized before they raise it. Two follow-ups:
+- The site may be quoting the old 2018 ranging bound in other places; the maintainer should search for it.
+- The sharp-edged-kernel cell at 10 pc rests on a rough gas estimate. Computing it from a real map of nearby gas clouds would settle the last place a DiskMass fit might still pass.
+
+Sources:
+- [Cesare 2024 review, arXiv:2404.06538](https://arxiv.org/abs/2404.06538)
+- [Sanna, Matsakos & Diaferio, covariant RG, arXiv:2109.11217](https://web3.arxiv.org/pdf/2109.11217v4)
+- [Biskupek, Müller & Torre 2021, arXiv:2012.12032](https://arxiv.org/abs/2012.12032)
+- [Belgacem et al., arXiv:1812.11181](https://arxiv.org/pdf/1812.11181) (quotes the Hofmann & Müller 2018 value)
+- [Hofmann & Müller 2018, catalogue record](https://eld.bl.uk/catalog/100087898374_0x000001)
+- [Solar System experiments review, arXiv:2509.05910](https://arxiv.org/pdf/2509.05910) (where I first saw the 2021 value)
+- [Pizzuti et al. 2025, RG cluster test (A&A 698, A83)](https://iris.unito.it/handle/2318/2117260)

@@ -1,0 +1,37 @@
+Starting Synchronism Maintainer Session at Sat Nov 28 06:00:01 PST 2026
+Flagging external issues/PRs...
+external items (synchronism-site): 1 open, nothing new to flag
+Maintainer session for 2026-11-28 is done. Both repos are pushed: site `b313d67` (its pre-registration commit `13639ec` came before the script), research `a0a3af57`.
+
+**WAKE: one research gap.** The researcher persona's HIGH item, "twelve commitments are waiting on dp", is correct but has been routed nearly every day since 11-20, so I didn't route it again. The new signal was in its medium rows. The results the site calls "citable" have the same kinds of gap the explorer's 11-27 check found in the note to the Refracted Gravity authors: unstated conventions, an older bound edition, and an uncalibrated instrument. I wrote that up as a proposal: "citable" should mean "pre-send checked".
+
+**Runs**
+- **Lunar laser ranging limit on density-keyed G.** I pre-registered predictions, then ran the script; 3 of 4 held. The site said the limit sits "at least four orders below O(1)", but that was only true for a smooth smoothing kernel.
+  - With a sharp-edged 10 pc kernel the margin is about 2.4 orders using the 2018 bound, or 3.4 using Biskupek et al. 2021, which is 9.2× tighter.
+  - The exclusion still stands. The page now gives both kernels and both bound editions, and a lint rule catches the old sentence.
+- **a₀(z) redshift.** I had the Ciocan et al. 2026 paper checked directly. Its 2.38 is one fit over 0.33 < z < 1.44 with no median z, and the paper's own line puts that value at z ≈ 0.87, not z = 1.
+  - The framework's own row moves from 9.8σ to 12.5σ. No verdict changes, and the graduate persona's estimate was exactly right.
+
+**Site changes**
+- **For Researchers:**
+  - The grid's p⁴ dispersion item now states its precondition (the substrate has to escape a separate Lorentz-violation problem first) and its Planck-mass convention. With the cell size free, every bound only limits the cell size, so it isn't a test.
+  - The Cassini item says its calibration against Desmond, Hees & Famaey 2024 is half done: their 1.9σ is reproduced, their δ ≳ 2.5 threshold is not.
+- **Tier 1:** TEST-25 and TEST-02 now open with a three-line current claim / numbers / reading header, and their ~3,000-word status notes are folded underneath. This is the first step on the oldest standing visitor request (current state first, history below).
+- **Smaller fixes:**
+  - The Advanced Path no longer sends readers to the superseded CDM Discrimination page; Dark Energy replaces it.
+  - Corrected the Bullet Cluster and Chae 2024 citations.
+  - About 25 tool-page and beginner-copy fixes, done by two background agents I briefed. One of them caught an error in my brief: I had the Galaxy Plotter readout gloss backwards, and it wrote the correct one.
+- **Checks:** `next build` passes, the lint has 7 new rules (all fire on the old code, none on the new), and 223 in-page links resolve. Nothing was checked in a browser.
+
+**Build blocker.** hestia blocked running node for the build as outside my scope. I escalated rather than calling node by another name; a peer granted it within about 20 minutes, and I re-ran the identical command. If that was a one-time grant, tomorrow's session will hit the same wait.
+
+**Explorer topic.** Reproduce Desmond, Hees & Famaey's Cassini threshold before the compander result is called citable.
+
+**For you**
+1. Send, edit or decline v2 of the note to the Refracted Gravity authors. It has passed the pre-send check.
+2. Gaia DR4 is out in 4 days (2 December). If no reading key is adopted, the maintainer records the result for each named version of the framework.
+3. To make the grid's dispersion a real bet, the framework has to commit to a fermion stencil and a cell size.
+
+**Not done:** merging the site's eight label vocabularies needs a written spec first. The other long Tier 1 cards, breadcrumbs and the plotter's default galaxy are deferred, with reasons in the log.
+
+**So what?** No bucket moved, and none could. But one of the site's "an outsider can cite this" sentences failed the check a referee would apply. About 30 hand checks by two personas all held, so the outward-facing results aren't failing on arithmetic. They fail on conventions nobody wrote down, which is the case for making the pre-send check the standard.

@@ -17,6 +17,15 @@ function regimeInfo(g: number): { label: string; color: string; desc: string } {
 
 const presets = GAMMA_PRESETS;
 
+// Short button labels (2026-11-28: a technical-writer visitor found labels running to 26 words).
+// The full label from gammaPresets.ts is kept: it shows as a caption under the buttons when that
+// preset is selected, and in the Example column of the table below.
+const SHORT_PRESET_LABEL: Record<number, string> = {
+  1: 'Ideal gas',
+  17: 'Galaxy (fitted)',
+  10000000: 'BCS superconductor',
+};
+
 export default function GammaCalculator() {
   const [ncorr, setNcorr] = useState(4);
   const [logMode, setLogMode] = useState(false);
@@ -252,10 +261,10 @@ export default function GammaCalculator() {
         <div className="card" style={{ marginBottom: '1rem' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: '0 0 0.5rem' }}>
             <strong>N<sub>corr</sub></strong> = how many particles move together as one correlated unit (1 for a single
-            atom; millions for a crystal oscillating in phase). Dimensionless.
+            atom; 10&#x00B2;&#x2074;, every atom, for a crystal oscillating in phase, the illustrative value on &#x03B3; Parameter). Dimensionless.
           </p>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '0.78rem', margin: '0 0 0.5rem' }}>
-            Before you type a number: no protocol exists for getting N<sub>corr</sub> from a system&apos;s physics without
+            Before you set a value: no protocol exists for getting N<sub>corr</sub> from a system&apos;s physics without
             first fitting &#x03B3; to its observed behavior (Caveat 3), so a value entered here is a guess you supply, not a
             measurement the tool can check. The presets are back-fits too. (Moved above the input 2026-10-10.)
           </p>
@@ -324,10 +333,15 @@ export default function GammaCalculator() {
                 fontSize: '0.85rem',
               }}
             >
-              {p.label}
+              {SHORT_PRESET_LABEL[p.ncorr] ?? p.label}
             </button>
           ))}
         </div>
+        {presets.find(p => p.ncorr === ncorr && SHORT_PRESET_LABEL[p.ncorr]) && (
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.82rem', marginTop: '-1rem', marginBottom: '1.5rem' }}>
+            <strong>Selected preset:</strong> {presets.find(p => p.ncorr === ncorr)!.label}
+          </p>
+        )}
 
         <div style={{ marginBottom: '1.5rem', padding: '0.75rem 1rem', background: 'rgba(245,158,11,0.07)', borderRadius: '6px', borderLeft: '3px solid #f59e0b' }}>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.85rem', margin: 0 }}>

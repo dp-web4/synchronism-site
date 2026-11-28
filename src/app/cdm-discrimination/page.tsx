@@ -5,15 +5,28 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import PathNav from '@/components/PathNav';
 import RelatedConcepts from '@/components/RelatedConcepts';
 import ValidationBadge from '@/components/ValidationBadge';
-import EquationDisplay from '@/components/EquationDisplay';
 
 export default function CdmDiscrimination() {
   return (
     <>
       <Breadcrumbs currentPath="/cdm-discrimination" />
       <PathNav currentPath="/cdm-discrimination" />
-      <h1>CDM Discrimination</h1>
+      <h1>A Residual That Was a Colour Formula</h1>
+      <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginTop: '-0.5rem' }}>
+        (This page was titled &ldquo;CDM Discrimination&rdquo;; it now teaches the lesson the number turned out to hold.)
+      </p>
       <ValidationBadge status="superseded" label="Superseded — Original 'Below CDM' Claim Retracted In-Archive" />
+
+      <p style={{ marginTop: '1rem' }}>
+        <strong>The lesson:</strong> a number can look like the tight scatter of a scaling law and be something else.
+        The 0.086&nbsp;dex once read here as a Tully&ndash;Fisher scatter (first &ldquo;below CDM&rdquo;, then
+        &ldquo;CDM-consistent&rdquo;) is not a BTFR scatter: it is the residual of a five-predictor fit to baryonic masses that are already a closed-form
+        function of four of those predictors (the stellar masses come from the Taylor et&nbsp;al. 2011 colour formula). Shuffling the galaxies&apos; velocities moves
+        it by 0.0006&nbsp;dex, so it says nothing about dark matter either way. The check that caught it is cheap:
+        shuffle the variable the claim is about, and look up how the target column was made.{' '}
+        <a href="#not-a-btfr-scatter" style={{ color: 'var(--color-accent-blue)' }}>The details are below</a>, followed by the
+        record of how the number was read before.
+      </p>
 
       <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.25)', borderRadius: '0.5rem', padding: '0.9rem 1.1rem', margin: '1.5rem 0', fontSize: '0.9rem' }}>
         <strong style={{ color: '#ef4444' }}>Correction (2026-07-04):</strong>{' '}
@@ -37,9 +50,12 @@ export default function CdmDiscrimination() {
       </div>
 
       <section className="section content-width" style={{ marginTop: '1.5rem' }}>
-        <EquationDisplay size="lg" label="Residual of an in-sample photometric mass model (not a BTFR scatter; independent of V)">
-          &#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex
-        </EquationDisplay>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+          <strong>Superseded number:</strong>{' '}
+          <s>&#x03C3;<sub>int</sub> = 0.086 &plusmn; 0.003 dex</s>{' '}
+          (formerly this page&apos;s headline figure; it is the residual of an in-sample photometric mass model, not a
+          BTFR scatter, and is independent of V).
+        </p>
 
         <p id="not-a-btfr-scatter" style={{ scrollMarginTop: '5rem', background: 'rgba(239,68,68,0.06)', borderLeft: '3px solid rgba(239,68,68,0.5)', padding: '0.6rem 0.9rem', borderRadius: '4px' }}>
           <strong>The 0.086 is not a Tully&ndash;Fisher scatter (explorer 2026-10-23, pre-registered; this box added 2026-10-24).</strong>{' '}

@@ -226,9 +226,11 @@ export default function WhySynchronism() {
             <span className="badge badge-failed" title="Registered environment-density run executed 2026-07-14 (SPARC RAR offsets vs Cosmicflows-4): r²=0.0001 vs registered >20% — refuted; the MOND+EFE tie dissolved on adjudication 2026-07-15 (levers differ ~50–5,000×), see /tier-1-existing#TEST-05">Failed | TEST-03/05 Environment Run — Refuted by Execution</span>
           </div>
           <div className="card">
-            <h3>Chemistry: &#x03B3; &#x2248; 1 Band (boundary reading retracted; the correlations are Debye-model restatements)</h3>
+            <h3>Chemistry: the matches turned out to be an old textbook formula</h3>
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>
-              Most of 1,703 logged chemistry sessions (one &ldquo;phenomenon type&rdquo; each, a counter rather than a census) fitted near the &#x03B3;&#x2248;1 boundary
+              The &#x03B3; &#x2248; 1 band&apos;s boundary reading is retracted, and its correlations are restatements of the Debye model (explained below).
+              The archive&apos;s chemistry &ldquo;phenomenon type&rdquo; counter reads 1,703 (a counter of phenomenon types, not of sessions; the chemistry corpus is 2,671 sessions), and most of those
+              phenomena fitted near the &#x03B3;&#x2248;1 boundary
               (sparse/independent &#x2194; dense/collective crossover).
               Sound velocity correlation: r = 0.982 &mdash; but each correlation is a fit, chosen after the data,
               against a quantity built from the material&apos;s Debye temperature, which already sets its sound speed.

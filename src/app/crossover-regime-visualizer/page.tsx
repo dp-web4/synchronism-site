@@ -15,7 +15,7 @@ const regions = [
     range: [0, 0.6],
     systems: ['Superconductors', 'BEC', 'Superfluids', 'Cooper pairs', 'Quantum computers'],
     physics: 'Many correlated particles (large N_corr, small γ) — the strongly correlated regime. BEC, BCS superconductors, and superfluids sit here because they have enormous N_corr, giving them very small γ (BCS: N_corr = 10⁷, the γ Calculator preset, giving γ = 2/√10⁷ ≈ 6×10⁻⁴). Important: "collective" in the C-axis sense (C→1) is separate from "large N_corr" here — small γ gives a nearly flat tanh curve, so C stays near 0 at physically accessible densities despite large N_corr.',
-    realityCheck: 'Reality check: conventional (BCS) superconductors in this bin have one of the SHARPEST transitions in nature (critical fluctuations are confined to a tiny window around T_c). The formula just told you they are the flattest. You are looking directly at the inversion; that is the finding. BECs and superfluid helium are the counter-case: helium-4\'s lambda transition has a broad critical region, with fluctuations measured over many decades of temperature. Transition width tracks how many particles share one coherence volume, not how "collective" a system is, so N_corr is the wrong variable either way.',
+    realityCheck: 'Reality check: these transitions happen in temperature, and C(ρ) has no temperature axis, so it cannot represent them at all. Even granting the comparison, the sign is backwards: conventional (BCS) superconductors in this bin have one of the SHARPEST transitions in nature (critical fluctuations are confined to a tiny window around T_c), and the formula just told you they are the flattest. Superfluid helium-4 is the counter-case: its lambda transition has a broad critical region, with fluctuations measured over many decades of temperature. Dilute atomic BECs sit with BCS on the narrow side (critical window Gi ∼ a·n^⅓, small for weak interactions). Transition width tracks interaction strength and how many particles share one coherence volume, not how "collective" a system is, so N_corr is the wrong variable either way.',
   },
   {
     id: 'boundary',
@@ -123,33 +123,53 @@ export default function PhaseBoundaryVisualizer() {
           See the caveat box below for details.
         </div>
         <div style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '0.375rem', padding: '0.6rem 0.9rem', fontSize: '0.85rem', color: 'var(--color-text-muted)', marginBottom: '1rem' }}>
-          <strong style={{ color: '#ef4444' }}>Sharpness direction is inverted (audited and closed for this formula; what would replace it is open):</strong>{' '}
-          this tool positions systems by the width of their transition, and &#x03B3; = 2/&#x221A;N<sub>corr</sub>{' '}
-          assigns the most strongly correlated systems the <em>flattest</em> C(&#x03C1;) curves.
-          In real physics the opposite holds: BCS superconductors and BECs — the highest-N<sub>corr</sub>{' '}
-          systems shown here — undergo transitions that are among the <em>sharpest</em> in nature.
-          So a condensed-matter reading of this map is backwards: more correlation should not mean a
-          smoother transition. This is the same audited-negative sign inversion documented on the{' '}
+          <strong style={{ color: '#ef4444' }}>C(&#x03C1;) has no temperature axis, so it cannot represent these transitions at all (audited and closed for this formula; what would replace it is open):</strong>{' '}
+          superconductors, superfluids and condensates change phase as <em>temperature</em> crosses T<sub>c</sub>.
+          C(&#x03C1;) is a function of density only, and the only system-specific input is an N<sub>corr</sub> assigned
+          by hand. Placing these systems by the width of a density curve compares two different variables, so this map
+          is not a condensed-matter reading of them in either direction. The{' '}
           <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>{' '}
-          (1/&#x221A;N is a width, not a rate). The condensed-matter anchor is the <strong>Ginzburg
-          criterion</strong>, which bounds the width of the critical-fluctuation region &mdash; the temperature window in
-          which fluctuations visibly round a transition. In three dimensions the Ginzburg number is
-          Gi &#x221D; (k<sub>B</sub>/(&#x0394;C&nbsp;&#x03BE;<sub>0</sub><sup>3</sup>))<sup>2</sup> (&#x0394;C = specific-heat jump per
-          volume). Only at fixed &#x0394;C does that reduce to &#x03BE;<sub>0</sub><sup>&#x2212;6</sup> &#x221D;
-          N<sub>&#x03BE;</sub><sup>&#x2212;2</sup> (N<sub>&#x03BE;</sub> = particles per coherence volume). For BCS
-          superconductors &#x0394;C itself scales with T<sub>c</sub>/E<sub>F</sub>, and the textbook result is
-          Gi ~ (T<sub>c</sub>/E<sub>F</sub>)<sup>4</sup> ~ (k<sub>F</sub>&#x03BE;<sub>0</sub>)<sup>&#x2212;4</sup> &#x221D;
-          N<sub>&#x03BE;</sub><sup>&#x2212;4/3</sup>. Either way, large &#x03BE;<sub>0</sub> &#x2192; a vanishingly narrow
-          critical-fluctuation region. That is why BCS superconductors, with very many pairs per coherence volume, show
-          mean-field-sharp transitions. Against that anchor the formula has the wrong sign: the real width falls steeply
-          with N<sub>&#x03BE;</sub> (as N<sub>&#x03BE;</sub><sup>&#x2212;4/3</sup> for BCS), while &#x03B3; = 2/&#x221A;N
-          makes high-N curves flatter. The exponent does not match either (1/2 against 4/3 for BCS), but the sign is the
-          decisive point and holds for any exponent. The inversion is stated here because this is the page where systems
-          are visually placed. Also note the axis itself: the quoted BCS value
-          (&#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>) is on-scale, at the left edge of the linear 0&ndash;4 range, but
-          indistinguishable from 0 there (it is ~3 orders of magnitude smaller than the axis&apos;s first band edge, 0.6).
-          (Corrected 2026-09-21: this previously said &ldquo;three orders of magnitude off the left edge&rdquo;; a
-          linear axis starting at 0 cannot place a positive value beyond its left edge.)
+          and{' '}
+          <a href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</a>{' '}
+          (&ldquo;that sharpness is in temperature while C&apos;s axis is density&rdquo;) say the same.
+          <p style={{ marginTop: '0.5rem', marginBottom: 0 }}>
+            <strong>Secondary note, the sign.</strong> Even granting the cross-variable comparison, the direction is
+            backwards: &#x03B3; = 2/&#x221A;N<sub>corr</sub> gives the most strongly correlated systems the{' '}
+            <em>flattest</em> curves, while BCS superconductors, the highest-N<sub>corr</sub> systems shown here,
+            have transitions among the <em>sharpest</em> in nature (1/&#x221A;N is a width, not a rate). Bose
+            condensates split: a dilute atomic BEC has a narrow critical window (Gi &#x223C; a&middot;n<sup>1/3</sup>,
+            small for weak interactions), while strongly interacting &#x2074;He has a broad lambda region. The
+            condensed-matter anchor is the <strong>Ginzburg criterion</strong>, which bounds the width of the
+            critical-fluctuation region &mdash; the temperature window in which fluctuations visibly round a
+            transition. In three dimensions the Ginzburg number is
+            Gi &#x221D; (k<sub>B</sub>/(&#x0394;C&nbsp;&#x03BE;<sub>0</sub><sup>3</sup>))<sup>2</sup> (&#x0394;C = specific-heat jump per
+            volume). Only at fixed &#x0394;C does that reduce to &#x03BE;<sub>0</sub><sup>&#x2212;6</sup> &#x221D;
+            N<sub>&#x03BE;</sub><sup>&#x2212;2</sup> (N<sub>&#x03BE;</sub> = particles per coherence volume). For BCS
+            superconductors &#x0394;C itself scales with T<sub>c</sub>/E<sub>F</sub>, and the textbook result is
+            Gi ~ (T<sub>c</sub>/E<sub>F</sub>)<sup>4</sup> ~ (k<sub>F</sub>&#x03BE;<sub>0</sub>)<sup>&#x2212;4</sup> &#x221D;
+            N<sub>&#x03BE;</sub><sup>&#x2212;4/3</sup>: the real width falls steeply with N<sub>&#x03BE;</sub>, while
+            &#x03B3; = 2/&#x221A;N makes high-N curves flatter. The exponent does not match either (1/2 against 4/3
+            for BCS). As Parameter Derivations puts it: the direction survives; &ldquo;exact&rdquo; did not.
+          </p>
+          <p style={{ marginTop: '0.5rem', marginBottom: 0 }}>
+            Also note the axis itself: the quoted BCS value
+            (&#x03B3; &#x2248; 6&#xD7;10<sup>&#x2212;4</sup>) is on-scale, at the left edge of the linear 0&ndash;4 range, but
+            indistinguishable from 0 there (it is ~3 orders of magnitude smaller than the axis&apos;s first band edge, 0.6).
+          </p>
+          <details style={{ marginTop: '0.35rem', fontSize: '0.8rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note (2026-11-28)</summary>
+            This box used to be headed &ldquo;Sharpness direction is inverted&rdquo; and called the sign &ldquo;the
+            decisive point&rdquo;, holding for any exponent. A researcher simulated-visitor persona pointed out that the
+            site&apos;s own landing and Parameter Derivations name the variable mismatch (temperature vs density) as the
+            decisive defect, and that the box said &ldquo;BCS superconductors and BECs&rdquo; are among the sharpest
+            while the regime card files BEC/&#x2074;He as the counter-case. The box now leads with the variable mismatch,
+            demotes the sign to a secondary note, and splits dilute BECs (narrow) from &#x2074;He (broad).
+          </details>
+          <details style={{ marginTop: '0.35rem', fontSize: '0.8rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Revision note (2026-09-21)</summary>
+            The axis note previously said the BCS value was &ldquo;three orders of magnitude off the left edge&rdquo;; a
+            linear axis starting at 0 cannot place a positive value beyond its left edge.
+          </details>
           <details style={{ marginTop: '0.35rem', fontSize: '0.8rem' }}>
             <summary style={{ cursor: 'pointer' }}>Revision note (2026-10-06)</summary>
             The Ginzburg benchmark used to say the critical-region width &ldquo;scales roughly as

@@ -57,7 +57,7 @@ const coreTools = [
   {
     title: 'Crossover Regime Visualizer',
     href: '/crossover-regime-visualizer',
-    desc: '(Formerly "Phase Boundary Visualizer" — C(ρ) has no phase transition, only a smooth crossover.) Drag the γ slider and catch a refuted formula being wrong at every stop — the tool now teaches the audited sign inversion as its lesson (real BCS/BEC transitions are among nature\'s sharpest; the formula files them at the flat end). Each regime card carries a live reality-check line. Note: the axis here is γ, not coherence C.',
+    desc: '(Formerly "Phase Boundary Visualizer" — C(ρ) has no phase transition, only a smooth crossover.) Drag the γ slider and catch a refuted formula being wrong at every stop. The lesson: C(ρ) has no temperature axis, so it cannot represent these transitions at all; even the sign is backwards (real BCS transitions are among nature\'s sharpest, and the formula files them at the flat end). Each regime card carries a live reality-check line. Note: the axis here is γ, not coherence C.',
     level: 'Intermediate',
     state: 'Artifact Lesson',
     epistemic: 'core' as EpistemicStatus,
@@ -144,6 +144,9 @@ export default function InteractiveTools() {
         ))}
       </div>
 
+      <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem', maxWidth: '60ch' }}>
+        Most of these tools now show <em>how the idea failed</em>; that is what the &ldquo;Artifact Lesson&rdquo; state means.
+      </p>
       <div style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
         {coreTools.map(tool => {
           const ep = statusStyle[tool.epistemic];
@@ -218,11 +221,12 @@ export default function InteractiveTools() {
       <div style={{ borderTop: '2px solid rgba(239, 68, 68, 0.3)', paddingTop: '1.5rem', marginBottom: '1rem' }}>
         <h2 style={{ fontSize: '1rem', color: '#f87171', marginBottom: '0.25rem' }}>Consciousness — Read Before Using</h2>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', marginBottom: '1rem' }}>
-          The tool below illustrates a speculative hypothesis with no empirical calibration.
+          The figure below illustrates a speculative hypothesis with no empirical calibration.
           The convergence it displays is a mathematical property of the sigmoid, not an empirical finding about consciousness.
           The site&apos;s own AI review passes have repeatedly flagged it as the site&apos;s largest credibility liability (no outside human reviewer has assessed it).
           It is included for completeness with full disclosure.
         </p>
+        <h3 style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', margin: '0 0 0.5rem' }}>Static figures (no controls)</h3>
         <div style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
           {speculativeTools.map(tool => {
             const ep = statusStyle[tool.epistemic];

@@ -708,15 +708,23 @@ export default function GalaxyPlotter() {
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', margin: '0.35rem 0' }}>
             <label style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', cursor: 'pointer' }}>
               <input type="radio" name="calib" checked={calib === 'archive'} onChange={() => setCalib('archive')} />
-              Archive&apos;s own form: &rho;<sub>crit</sub> = 0.028&middot;V<sub>flat</sub><sup>0.5</sup> (default; the 0.028 is in M<sub>&#x2609;</sub>&nbsp;pc<sup>&minus;3</sup>&nbsp;(km/s)<sup>&minus;&frac12;</sup>)
+              Archive&apos;s form (current default)
             </label>
             <label style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', cursor: 'pointer' }}>
               <input type="radio" name="calib" checked={calib === 'hybrid'} onChange={() => setCalib('hybrid')} />
-              Units hybrid: 0.029&middot;V<sub>flat</sub>&sup2; (this page&apos;s only curve until 2026-11-14)
+              Older units-hybrid form
             </label>
           </div>
+          <p style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', margin: '0 0 0.35rem' }}>
+            Formulas: archive&apos;s form &rho;<sub>crit</sub> = 0.028&middot;V<sub>flat</sub><sup>0.5</sup> (the 0.028 is in
+            M<sub>&#x2609;</sub>&nbsp;pc<sup>&minus;3</sup>&nbsp;(km/s)<sup>&minus;&frac12;</sup>); units-hybrid form
+            &rho;<sub>crit</sub> = 0.029&middot;V<sub>flat</sub>&sup2;.
+          </p>
           Here &rho;<sub>crit</sub> = {rhoCritOf(galaxy.vflat, calib) < 1 ? rhoCritOf(galaxy.vflat, calib).toFixed(2) : rhoCritOf(galaxy.vflat, calib).toFixed(0)} M<sub>&#x2609;</sub>/pc&sup3;,
           and the highest C<sub>&rho;</sub> on this disc is {maxC.toFixed(3)}.{' '}
+          <em>What that number means:</em> C<sub>&rho;</sub> runs from 0 to 1 and says how far the disc&apos;s density gets past the
+          equation&apos;s switch. Near 1, the solid violet line gets little extra gravity; near 0, it gets close to the full 3.17&times;
+          (the dashed second wiring reads it the other way round: near 0 means almost no extra gravity).{' '}
           {calib === 'archive'
             ? <>{maxC >= 0.5
                 ? <>In plain words: on this galaxy the switch sits inside the disc, so the violet line hugs the gray one near the centre (C<sub>&rho;</sub> near 1, little boost) and climbs toward the 1.78&times; speed ceiling (3.17&times; in gravity) toward the edge.</>
@@ -725,6 +733,7 @@ export default function GalaxyPlotter() {
             : <>In plain words: this setting puts the switch hundreds of times above any disc&apos;s density, so C<sub>&rho;</sub> stays near 0 and the violet line is just the 1.78&times; ceiling at every radius. It shows the ceiling failing, not the shape of the density law. The 0.029 belongs to the archive&apos;s V<sup>0.5</sup> law; putting it on V&sup2; was a units slip (<Link href="/parameter-derivations" style={{ color: 'var(--color-accent-blue)' }}>Parameter Derivations</Link>).</>}
           <details style={{ marginTop: '0.3rem', fontSize: '0.8rem' }}>
             <summary style={{ cursor: 'pointer' }}>Detail for physicists</summary>
+            The units-hybrid form was this page&apos;s only curve until 2026-11-14, when the archive&apos;s form became the default.
             Both settings keep &gamma; = 2, the &Omega;<sub>m</sub> floor and division wiring, and, since 2026-11-17, SPARC&apos;s own surface densities (&Upsilon;<sub>d</sub>&middot;SB<sub>disk</sub> + bulge + &#x03A3;<sub>gas</sub>, h = 0.3 kpc), the convention of the 122-galaxy fits quoted next. Until then the density was a BTFR toy disc (M<sub>b</sub> = 47&middot;V<sub>flat</sub>&#x2074;).
             The knee moves by &times;{(0.029 * galaxy.vflat * galaxy.vflat / (0.028 * Math.sqrt(galaxy.vflat))).toFixed(0)} between them for this galaxy. On the 122-galaxy SPARC loader (explorer 2026-11-13,
             {' '}<code style={{ fontSize: '0.76rem' }}>explorer/findings/scripts/knee_crossing_at_each_calibration.py</code>): at 0.029&middot;V&sup2; no galaxy has a point above the knee (max x = 0.018);

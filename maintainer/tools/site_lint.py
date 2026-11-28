@@ -24,6 +24,21 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2] / "src"
 
 RETIRED = [
+    # Added 2026-11-28 (visitor Passes 2-4; maintainer LLR kernel run).
+    (r"At every (&#x2113;|ℓ) the bound sits at least", "2026-11-28",
+     "four orders holds for a smooth kernel only; a top-hat 10 pc kernel gives ~2.4 orders (2018 bound) / 3.4 (2021)"),
+    (r"2309\.10404, accepted to ApJ", "2026-11-28",
+     "Chae 2024 is published: ApJ 960, 114 (2024)"),
+    (r"1E 0657-558\)[^.]{0,160}0\.47 cm", "2026-11-28",
+     "0.47 cm2/g is Harvey+2015's 72-merger ensemble; the Bullet Cluster alone gives <~1.25 (Randall+2008)"),
+    (r"the (&ldquo;)?bend(&rdquo;)? sits at 2", "2026-11-28",
+     "2 rho_crit / 0.42 rho_crit are maximum-slope points on a log axis, not the bend"),
+    (r"Before you type a number", "2026-11-28",
+     "the gamma calculator has a slider and presets, no number field"),
+    (r"history verbs", "2026-11-28",
+     "the site's name for that list is 'lifecycle verbs'"),
+    (r"only the DMS joint\s+calibration survives LLR,", "2026-11-28",
+     "survives the 2018 bound only; Biskupek 2021 excludes it (2.3-5.2x)"),
     # Added 2026-11-27 (visitor Pass 4): the same-line REQUIRES rule passed four lines where "M/L" appeared elsewhere on a
     # long JSX line. The qualifier must follow the number closely.
     (r"14\.5(&ndash;|–)19\.3(&sigma;|&#x03C3;|σ)(?![\s\S]{0,260}?(pinned|M/L))", "2026-11-27",

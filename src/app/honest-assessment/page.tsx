@@ -1052,7 +1052,7 @@ export default function HonestAssessment() {
               real-data constraint on it is not on SPARC at all: <strong>lunar laser ranging</strong>. A boost shared by a whole
               neighbourhood cancels in any same-instant ratio, but not in time. The Sun moves through the disc and past nearby
               stars, so G<sub>eff</sub> = G/C(ρ) drifts. At the 1&ndash;10 pc density smoothing the galaxy fits need, the knee grid
-              predicts Ġ/G ≈ 10⁻⁸ to 10⁻⁵ per year, against LLR&apos;s (7.1 ± 7.6)×10⁻¹⁴ (Hofmann &amp; Müller 2018). That
+              predicts Ġ/G ≈ 10⁻⁸ to 10⁻⁵ per year, against LLR&apos;s (7.1 ± 7.6)×10⁻¹⁴ (Hofmann &amp; Müller 2018; Biskupek et al. 2021 is 9.2× tighter, so every margin here grows). That
               excludes 68 of 74 laws at 1 pc (62 at 10 pc), and the survivors are Newtonian to 10⁻⁸ at the Sun. The count holds under L2 and L3 alike (explorer 2026-09-23, pre-registered; L3 check 2026-10-19;
               details on the <Link href="/tier-1-existing#TEST-02" style={{ color: '#f87171' }}>TEST-02 card</Link>). This is a
               second, SPARC-independent root for the same density-keyed kill, <em>not a seventh refutation</em>. Whether it becomes

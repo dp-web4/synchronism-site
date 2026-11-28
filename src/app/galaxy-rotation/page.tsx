@@ -252,7 +252,8 @@ export default function GalaxyRotation() {
             Synchronism&apos;s CFD viscosity interpretation mapped low coherence (dark matter) to high
             viscosity &mdash; predicting dark matter should be <em>stickier</em> than baryons. The Bullet
             Cluster (1E 0657-558) shows the opposite: dark matter halos pass through each other with
-            negligible self-interaction (σ/m &lt; 0.47 cm²/g, Harvey et al. 2015). That specific ansatz
+            negligible self-interaction (the Bullet Cluster alone gives σ/m &#x2272; 1.25 cm²/g, Randall et al. 2008; colliding clusters
+            as an ensemble give σ/m &lt; 0.47 cm²/g, Harvey et al. 2015, 72 mergers). That specific ansatz
             has the wrong sign — see the{' '}
             <Link href="/dark-matter-failure" style={{ color: '#ef4444' }}>full failure analysis</Link>.
           </p>

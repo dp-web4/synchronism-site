@@ -407,7 +407,10 @@ export default function ParameterDerivations() {
               <em> Revised 2026-10-12: the 2026-08-04 wording named the anchor as the row&apos;s limiting
               systematic. That is true of this level table only; the prediction&apos;s own statistic is the
               slope (table after this one), and the anchor does not enter the slope.</em> Ciocan&apos;s z~1 value is
-              2.38 (+0.12/&minus;0.10), a 95% CI (1&#x03C3; &asymp; 0.06):
+              2.38 (+0.12/&minus;0.10), a 95% CI (1&#x03C3; &asymp; 0.06). <strong>Which z?</strong> The paper&apos;s 2.38 is one fit to the whole
+              sample, 0.33 &lt; z &lt; 1.44, labelled &ldquo;z &sim; 1&rdquo;, with no median z given; its own line, a&#x2080;(z) = 1.00 + 1.59z, reaches 2.38 at
+              z &asymp; 0.87, where E = 1.66 rather than E(1) = 1.79. The table gives both (a simulated-visitor graduate persona raised it 2026-11-28;
+              checked against the paper and recomputed, <code>maintainer/scripts/ciocan_a0_effective_z_rows.py</code>). Neither verdict moves:
             </p>
             <div style={{ overflowX: 'auto', margin: '0.5rem 0' }}>
               <table style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)', borderCollapse: 'collapse' }}>
@@ -420,10 +423,10 @@ export default function ParameterDerivations() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan&apos;s own fitted intercept</td><td style={{ padding: '0.25rem 0.75rem' }}>1.00 &plusmn; 0.02 (1&#x03C3;) = &plusmn; 0.04 (95%)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.79</td><td style={{ padding: '0.25rem 0' }}>~9.4&#x03C3; low</td></tr>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>framework&apos;s own, cH&#x2080;/2&#x03C0;</td><td style={{ padding: '0.25rem 0.75rem' }}>1.04 &plusmn; 0.008 (from H&#x2080; = 67.4 &plusmn; 0.5; without it the row would read ~10.2&#x03C3;)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.86</td><td style={{ padding: '0.25rem 0' }}>~9.8&#x03C3; low</td></tr>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>McGaugh+2016 SPARC (canonical)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.20 &plusmn; 0.26</td><td style={{ padding: '0.25rem 0.75rem' }}>2.15</td><td style={{ padding: '0.25rem 0', color: '#38bdf8' }}>+0.5&#x03C3; &mdash; CONSISTENT</td></tr>
-                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>V&#x103;r&#x103;&#x15F;teanu+2025 MIGHTEE-HI</td><td style={{ padding: '0.25rem 0.75rem' }}>1.69 &plusmn; 0.13 (at z &asymp; 0.08)</td><td style={{ padding: '0.25rem 0.75rem' }}>2.91 (= 1.69 &times; E(1)/E(0.08))</td><td style={{ padding: '0.25rem 0', color: '#38bdf8' }}>&minus;2.3&#x03C3; &mdash; branch (A) HIGH</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>Ciocan&apos;s own fitted intercept</td><td style={{ padding: '0.25rem 0.75rem' }}>1.00 &plusmn; 0.02 (1&#x03C3;) = &plusmn; 0.04 (95%)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.79</td><td style={{ padding: '0.25rem 0' }}>~9.4&#x03C3; low (z &asymp; 0.87: ~11.9&#x03C3;)</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>framework&apos;s own, cH&#x2080;/2&#x03C0;</td><td style={{ padding: '0.25rem 0.75rem' }}>1.04 &plusmn; 0.008 (from H&#x2080; = 67.4 &plusmn; 0.5; without it the row would read ~10.2&#x03C3;)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.86</td><td style={{ padding: '0.25rem 0' }}>~9.8&#x03C3; low (z &asymp; 0.87: ~12.5&#x03C3;)</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>McGaugh+2016 SPARC (canonical)</td><td style={{ padding: '0.25rem 0.75rem' }}>1.20 &plusmn; 0.26</td><td style={{ padding: '0.25rem 0.75rem' }}>2.15</td><td style={{ padding: '0.25rem 0', color: '#38bdf8' }}>+0.5&#x03C3; &mdash; CONSISTENT (z &asymp; 0.87: +0.9&#x03C3;)</td></tr>
+                  <tr><td style={{ padding: '0.25rem 0.75rem 0.25rem 0' }}>V&#x103;r&#x103;&#x15F;teanu+2025 MIGHTEE-HI</td><td style={{ padding: '0.25rem 0.75rem' }}>1.69 &plusmn; 0.13 (at z &asymp; 0.08)</td><td style={{ padding: '0.25rem 0.75rem' }}>2.91 (= 1.69 &times; E(1)/E(0.08))</td><td style={{ padding: '0.25rem 0', color: '#38bdf8' }}>&minus;2.3&#x03C3; &mdash; branch (A) HIGH (z &asymp; 0.87: &minus;1.4&#x03C3;)</td></tr>
                 </tbody>
               </table>
             </div>

@@ -1,9 +1,30 @@
 # Synchronism Site — Session Focus
 
 *Current priorities, site state, and active work. Updated by tracks and operator.*
-*Last updated: 2026-11-27 (maintainer)*
+*Last updated: 2026-11-28 (maintainer)*
 
 ---
+
+## 🟢 NEW (maintainer 2026-11-28): **"Citable" should mean "pre-send checked". The LLR no-go's "≥ 4 orders below O(1)" held for a smooth kernel only. A sharp-edged 10 pc kernel gives ~2.4 orders (2018 bound) or 3.4 (Biskupek 2021); the exclusion stands. Ciocan's 2.38 is a 0.33–1.44 pooled fit that sits at z ≈ 0.87 on their own line (cH₀/2π 9.8σ → 12.5σ, no verdict moves). Cassini reproduces DHF24's 1.9σ but not their δ ≳ 2.5. B7's commitment is a stencil and a cell size (explorer 11-27 drained).**
+- **Runs:** `maintainer/scripts/llr_density_keyed_kernel_and_bound_edition.py` (PREREG `13639ec` before the script; 3/4 held, P2 failed high). `ciocan_a0_effective_z_rows.py` (paper read verbatim).
+- **Site:**
+  - /for-researchers: LLR kernel and bound edition, RG kernel escape, p⁴ precondition and Planck convention, Cassini "calibration half done";
+  - Biskupek 2021 on HA, /wide-binaries, /dark-energy and the glossary; a₀(z) z ≈ 0.87 column on Parameter Derivations, plus a clause on MOND/Key Claims;
+  - Tier 1 `current` header (TEST-25, TEST-02) with the status note folded; Advanced Path CDM → Dark Energy;
+  - Bullet Cluster citation; Chae 2024 ApJ 960, 114;
+  - tool pages: Crossover, Chemistry, γ Calculator, CDM retitle, plotter labels, LabelMap, Interactive Tools;
+  - landing and beginner copy: ρ, key placement, status glosses, 1,703, bend → steepest, Key Claims, Where It's Useful.
+- **Tools:** lint 482 rules (+7; tree 0; HEAD control 7/7 fire). `fragment_check` 223 ok. Build passes (after scope request `scope-67fb3467328f` for `/usr/local/bin/node` was ruled by a peer; future sessions may hit the same gate). Not checked in a browser.
+- **→ Explorer:** `reproduce-dhf24-cassini-delta-threshold-before-the-compander-item-is-citable.md` (stake: in-house threshold δ = 2–3 under DHF24's choices; compander still ≥ 5σ near SPS M/L).
+- **→ Next maintainer:**
+  - `current` headers for the other long Tier 1 cards and Parameter Derivations items 3/4;
+  - label-consolidation spec (P2 HIGH, eight vocabularies);
+  - per-item pre-send checklist line on /for-researchers;
+  - breadcrumbs (deliberate choices on file, so read the component's comments first);
+  - CDM nav title.
+  - **On 2–3 December: record the DR4 reading per named variant if no key is adopted.**
+- **→ Project lead:** send/edit/decline RG note v2; DR4 in 4 days; B7 = fermion stencil + cell size; (node scope request was ruled in-session).
+  Proposal `Synchronism/Research/proposals/citable_means_presend_checked_llr_kernel_cassini_calibration_ciocan_z_20261128.md`.
 
 ## 🟢 NEW (maintainer 2026-11-27): **The first outside contact is written, not sent: a note to the Refracted Gravity authors on the lunar-ranging bound on their smoothing length (their theory, their calibrations, their free D). Outreach had been routed as a yes/no four times since 11-08 with no text to send. The stencil worth committing is the fermion's (KM3 already excludes 53 % of Wilson-neutrino orientations); scalar/photon stencils give numbers no data can score, and the Auger photon bound weakens under a shared coefficient (explorer 11-26 drained).**
 - **Site (`b608b34`):**

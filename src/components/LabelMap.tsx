@@ -21,7 +21,7 @@ export default function LabelMap() {
   // already draws from both, so they are shown as one; tool Kind and Level are one line of metadata;
   // retired labels moved to a fold (technical-writer pass: "target four systems a reader must learn").
   const metadata: { system: string; answers: string; where: string; members: string }[] = [
-    { system: 'Test history (the State slot)', answers: 'What did this test do, or what happened to it?', where: 'Test cards (Tier 1, Test Roadmap), next to the badge, and inside status text', members: `${OPERATIONAL_STATES.join(', ')}; and the history verbs ${LIFECYCLE_VERBS.join(', ')}` },
+    { system: 'Test history (the State slot)', answers: 'What did this test do, or what happened to it?', where: 'Test cards (Tier 1, Test Roadmap), next to the badge, and inside status text', members: `${OPERATIONAL_STATES.join(', ')}; and the lifecycle verbs ${LIFECYCLE_VERBS.join(', ')}` },
     { system: 'Caveat in brackets', answers: 'A qualifier on a badge, not a verdict', where: 'In brackets after a badge or result', members: 'Post-diction, Caveat' },
     { system: 'Tool metadata', answers: 'What sort of tool, and how much background it assumes', where: 'Interactive Tools hub cards', members: 'Kind: Model Explainer, Chemistry Data, Consciousness. Level: Beginner, Intermediate, Advanced' },
   ];
@@ -52,7 +52,7 @@ export default function LabelMap() {
         &ldquo;did this part of the theory survive contact with data?&rdquo;, read the scoreboard word. Full definitions:{' '}
         <Link href="/honest-assessment#validation-badge-definitions" style={{ color: 'var(--color-accent-blue)' }}>badges</Link>,{' '}
         <Link href="/honest-assessment#operational-states" style={{ color: 'var(--color-accent-blue)' }}>test states</Link>,{' '}
-        <Link href="/honest-assessment#status-lifecycle-verbs" style={{ color: 'var(--color-accent-blue)' }}>history verbs</Link>.
+        <Link href="/honest-assessment#status-lifecycle-verbs" style={{ color: 'var(--color-accent-blue)' }}>lifecycle verbs</Link>.
       </p>
       {table(verdicts)}
       <h3 style={{ fontSize: '0.95rem', marginTop: '1rem' }}>Not verdicts: metadata you can skim</h3>

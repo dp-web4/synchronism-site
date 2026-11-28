@@ -1,0 +1,15 @@
+Bounds: HM18 2-sigma edge 2.23e-13 /yr; B21 worse-side 2-sigma edge 2.42e-14 /yr; ratio 9.21
+
+A. Gaussian kernel (11-18 census; stars dominate; gas added at its hi end)
+   l = 1 pc: rate 2.32e-05/yr -> |dlnG/dln rho| < HM18 9.6e-09; B21 1e-09
+   l = 3 pc: rate 1.7e-06/yr -> |dlnG/dln rho| < HM18 1.3e-07; B21 1.4e-08
+   l = 10 pc: rate 4.3e-08/yr -> |dlnG/dln rho| < HM18 5.2e-06; B21 5.6e-07
+
+B. Top-hat kernel: stars inside are a constant; gas-only rate between crossings
+   l = 1 pc: hand-list stars inside 0, rho_s 0.291 Msun/pc^3, gas rate 1.9e-08..6.3e-07/yr -> |dlnG/dln rho| < HM18 3.6e-07..1.2e-05; B21 3.9e-08..1.3e-06
+   l = 3 pc: hand-list stars inside 8, rho_s 0.0727 Msun/pc^3, gas rate 1.7e-08..5.5e-07/yr -> |dlnG/dln rho| < HM18 4e-07..1.3e-05; B21 4.4e-08..1.4e-06
+   l = 10 pc: hand-list stars inside 13, rho_s 0.0522 Msun/pc^3, gas rate 5.5e-11..1.9e-09/yr -> |dlnG/dln rho| < HM18 0.00012..0.0041; B21 1.3e-05..0.00044
+
+Weakest bound in any cell: 0.0041  (P4: must be < 1e-2) -> HELD
+Note: a top-hat edge crossing by a star inside the 48 yr LLR span is a step of 1e-7..1e-3 in ln rho_s,
+      visible to LLR; probability 0.1-0.3 % (1 pc) to 8-23 % (10 pc), from the explorer's 11-27 run.

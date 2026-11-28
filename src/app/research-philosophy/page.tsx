@@ -72,7 +72,7 @@ export default function ResearchPhilosophy() {
           <li>Session #616 audited all 4 research tracks and found all are reparametrizations of known physics</li>
           <li>We published that finding prominently, not buried it</li>
           <li>The 89% chemistry consistency rate sounds impressive until you learn it is mostly the Debye temperature restated, not novel prediction</li>
-          <li>47 internal-consistency survivors out of ~3,308 sessions = 1.4% internal-consistency-survival rate (see below for why this is not a discovery rate).</li>
+          <li>47 internal-consistency survivors out of ~3,300 sessions = 1.4% internal-consistency-survival rate (see below for why this is not a discovery rate).</li>
         </ul>
 
         <h2 id="validation-badge-taxonomy">Status Badge Taxonomy</h2>

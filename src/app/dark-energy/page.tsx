@@ -480,7 +480,7 @@ export default function DarkEnergy() {
             G<sub>eff</sub> = G/C(&rho;&#772;<sub>m</sub>) is the G that binds the Earth and the Moon, it drifts as the mean density
             falls: &#x0120;/G = 3H<sub>0</sub> &middot; d ln C/d ln &rho;. With C<sub>0</sub> = &Omega;<sub>m</sub>, at &gamma; = &frac12; this is
             exactly 3(1 &minus; &Omega;<sub>m</sub>)H<sub>0</sub> = <strong>1.4&times;10<sup>&minus;10</sup> per year</strong>. Lunar laser ranging
-            measures (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> per year (Hofmann &amp; M&uuml;ller 2018), so the reading is out by about
+            measures (7.1 &plusmn; 7.6)&times;10<sup>&minus;14</sup> per year (Hofmann &amp; M&uuml;ller 2018; Biskupek et al. 2021 is 9.2&times; tighter, so the factors below are conservative), so the reading is out by about
             2,000&times;, and against LLR&apos;s 2&sigma; upper edge (2.2&times;10<sup>&minus;13</sup>) by 635&times; at &gamma; = &frac12; and by at least 527&times; (the smallest value, at &gamma; = 0.3, where d ln C/d ln &rho; is lowest) for every &gamma; from 0.3 to 3 (<code>maintainer/scripts/de_modified_g_reading_vs_llr.py</code>). The same
             G<sub>eff</sub> is what the uniform growth row applies, so that row is now excluded twice, once by ISW and once by the Moon. The
             dark-energy-fluid reading, with gravity unmodified, has &#x0120; = 0 and is untouched; it is ordinary Cardassian-class dark

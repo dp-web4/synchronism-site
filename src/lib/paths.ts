@@ -71,7 +71,7 @@ export const learningPaths: LearningPath[] = [
       { title: 'Parameter Derivations', href: '/parameter-derivations' },
       { title: 'Compression Action', href: '/compression-action' },
       { title: 'Relation to MOND', href: '/mond-unification' },
-      { title: 'CDM Discrimination', href: '/cdm-discrimination' },
+      { title: 'Dark Energy & DESI', href: '/dark-energy' },
       { title: 'Superconductivity (η)', href: '/superconductivity' },
       { title: 'Born Rule Derivation', href: '/born-rule' },
       { title: 'Falsifiability', href: '/falsifiability' },
@@ -81,7 +81,7 @@ export const learningPaths: LearningPath[] = [
   {
     name: 'Physics Track',
     timeEstimate: '~1 hour',
-    desc: 'Quantum mechanics → cosmology → predictions',
+    desc: 'Quantum → galaxies → predictions',
     color: '#38bdf8',
     kind: 'domain',
     steps: [

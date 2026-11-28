@@ -28,7 +28,8 @@ export default function KeyClaims() {
           <p style={{ color: 'var(--color-text-secondary)', margin: '0 0 0.5rem', fontSize: '0.9rem' }}>
             <strong>How to read this page.</strong> Each claim is presented with what&apos;s genuinely new,
             the current evidence, an honest caveat, and the experiment that would kill it. The first claim
-            is the foundational one &mdash; the others follow from it.
+            is the foundational one &mdash; the others follow from it. That is the logical order, top-down; the evidence order runs
+            bottom-up (the most exciting-sounding claims are the least tested), which is why the landing page suggests reading the list from the bottom.
           </p>
           <p style={{ color: 'var(--color-text-muted)', margin: 0, fontSize: '0.8rem' }}>
             Status labels (Untested, Speculative, etc.) follow the site&apos;s{' '}
@@ -77,7 +78,7 @@ export default function KeyClaims() {
                 <ValidationBadge status="speculative" />
               </div>
               <em style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
-                as an interpretation, reproduces QM; as a literal sequential scan, excluded by single-photon interference
+                the badge scores the interpretation: untested, and it reproduces QM; the literal-scan reading is excluded (<a href="#mixture-objection" style={{ color: 'var(--color-accent-blue)' }}>see below</a>)
               </em>
             </div>
           </div>
@@ -292,7 +293,9 @@ export default function KeyClaims() {
               that keeps the phases is standard quantum mechanics in different words. That is why the badge stays Speculative rather than
               becoming a prediction: what is left is a way of talking about QM, not a rival to it. (Raised by a graduate-student simulated-visitor
               persona, 2026-11-22. Until then this card&apos;s caveat read &ldquo;untestable as stated without a scan period&rdquo;, which missed that the
-              objection applies first.)
+              objection applies first.){' '}
+              <strong>Status of the two readings:</strong> the literal sequential scan is excluded by single-photon interference; the
+              interpretation that keeps the phases is untested (the Speculative badge above scores this reading only).
             </p>
             <details style={{ color: 'var(--color-text-muted)', fontSize: '0.8rem', margin: '0 0 0.5rem' }}>
               <summary style={{ cursor: 'pointer' }}>Revision note</summary>
@@ -569,7 +572,7 @@ export default function KeyClaims() {
             1.13 &#x00D7; 10&#x207B;&#x00B9;&#x2070;, 6% low.{' '}
             <strong>Same error budget at both epochs:</strong> against the random error alone the offset is 8&#x03C3;.
             At z&nbsp;&asymp;&nbsp;1 the same anchor scaled by E(z) is 1.86 against Ciocan&apos;s measured 2.38: about
-            10&#x03C3; on the measurement error alone (the figure on{' '}
+            10&#x03C3; on the measurement error alone (~12.5&#x03C3; if the 2.38 belongs at z &asymp; 0.87, where the paper&apos;s own line puts it) (the figure on{' '}
             <a href="/parameter-derivations" style={{ color: 'var(--color-accent)' }}>Parameter Derivations</a>), about
             1&#x03C3; with the same 20% systematic carried. So the relation is consistent at both epochs once systematics are
             carried and excluded at both without them. Quoting 0.7&#x03C3; here and ~10&#x03C3; there mixes the two budgets.

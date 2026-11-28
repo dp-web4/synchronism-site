@@ -1,0 +1,5 @@
+z_eff = 0.868; E(1) = 1.790; E(z_eff) = 1.655
+Ciocan intercept   z=1.00: pred 1.790, +9.5 sigma | z=0.87: pred 1.655, +11.9 sigma
+cH0/2pi            z=1.00: pred 1.862, +9.8 sigma | z=0.87: pred 1.721, +12.5 sigma
+McGaugh+2016       z=1.00: pred 2.148, +0.5 sigma | z=0.87: pred 1.986, +0.9 sigma
+MIGHTEE-HI         z=1.00: pred 2.909, -2.3 sigma | z=0.87: pred 2.689, -1.4 sigma

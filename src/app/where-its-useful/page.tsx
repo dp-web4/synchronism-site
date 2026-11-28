@@ -9,7 +9,7 @@ const applications = [
     where: 'Web4',
     link: 'https://github.com/dp-web4/web4',
     linkLabel: 'github.com/dp-web4/web4',
-    what: 'Fractal context-scoping: relevance and trust bounded by context, implemented as RDF graphs. Same concept, production vocabulary — not an analogy.',
+    what: 'Fractal context-scoping: relevance and trust bounded by context, implemented as RDF graphs. Same concept, same vocabulary — not an analogy.',
   },
   {
     concept: 'Coherence / phase-change machinery',
@@ -23,7 +23,7 @@ const applications = [
     where: 'hestia + the hub',
     link: 'https://github.com/dp-web4/web4/tree/main/hub',
     linkLabel: 'web4/tree/main/hub',
-    what: 'A deployed, runnable society: roles, a signed charter, a witnessed ledger. Entities exist to the degree they are witnessed — Synchronism witnessing turned into governance you can run.',
+    what: 'A public, runnable society: roles, a signed charter, a witnessed ledger. Entities exist to the degree they are witnessed — Synchronism witnessing turned into governance you can run.',
   },
   {
     concept: 'Quantized entities across scales + feedback loops',
@@ -94,7 +94,7 @@ export default function WhereItsUseful() {
         <h2>What it&apos;s already good for</h2>
         <p>
           The proof here isn&apos;t a paper; it&apos;s running code. Each row below is a Synchronism concept
-          doing real work in a deployed system &mdash; production vocabulary, not metaphor.
+          used in public code &mdash; the same vocabulary, not a metaphor.
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '1.75rem' }}>

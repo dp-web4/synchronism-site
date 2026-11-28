@@ -197,22 +197,23 @@ export default function ChemistryCorrelationExplorer() {
           color: 'var(--color-text-secondary)',
         }}>
           <strong style={{ color: '#ef4444' }}>What &#x03B3; means here, and why the flagship row is
-          suspect (added 2026-07-30, two simulated-visitor personas independently flagged this):</strong>{' '}
-          &#x03B3; = 2/&#x221A;N<sub>corr</sub> is <strong>audited-negative and sign-inverted for every
-          collective system</strong> &mdash; see the{' '}
-          <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>&#x03B3; Calculator</a>:
-          high &#x03B3; means <em>few</em> correlated particles (gas-like), low &#x03B3; means <em>many</em>{' '}
-          (BCS-superconductor-like). This page&apos;s top result &mdash; sound velocity, r&nbsp;=&nbsp;+0.982,
-          highest in the stiffest, most strongly-bonded, most collective solids (diamond &#x2248; 12,000 m/s
-          vs air &#x2248; 340 m/s) &mdash; is therefore a <strong>positive</strong> correlation with &#x03B3;
-          running in the direction that formula assigns <em>low</em> N<sub>corr</sub> to the most collective
-          materials, the same inversion badged audited-negative one click away. Two readings are both live and
-          neither is stated on this page: either the per-material &#x03B3; values were computed from
-          2/&#x221A;N<sub>corr</sub>, in which case this table&apos;s r-column inherits the refuted sign; or
-          &#x03B3; was fit per material independently of N<sub>corr</sub>, in which case r&nbsp;=&nbsp;0.982 is
-          a goodness-of-fit statistic for a free parameter, not a correlation with anything the framework
-          predicts. Which branch applies to this dataset is an open bookkeeping question, not yet resolved
-          here.
+          not evidence:</strong>{' '}
+          the r-column is not computed against &#x03B3; = 2/&#x221A;N<sub>corr</sub> (that formula is{' '}
+          <a href="/gamma-calculator" style={{ color: 'var(--color-accent-blue)' }}>audited-negative</a>). Each r is
+          against a domain-specific proxy chosen after looking at the data. Sound velocity&apos;s r&nbsp;=&nbsp;+0.982 is
+          against 1/&#x03B3;<sub>phonon</sub> = &#x03B8;<sub>D</sub>/2T, a proxy that contains its own target, so the
+          top rows are one Debye-model identity, high by construction. See{' '}
+          <a href="#what-r-is-computed-against" style={{ color: 'var(--color-accent-blue)' }}>What r is computed against</a>{' '}
+          and{' '}
+          <a href="#top-rows-one-identity" style={{ color: 'var(--color-accent-blue)' }}>The top rows are close to one identity</a>{' '}
+          below.
+          <details style={{ marginTop: '0.35rem', fontSize: '0.8rem' }}>
+            <summary style={{ cursor: 'pointer' }}>Superseded reading (2026-07-30)</summary>
+            This box used to read r&nbsp;=&nbsp;+0.982 as a positive correlation with &#x03B3; and list two live branches
+            (r inherits the refuted sign, or r is a free-fit statistic), &ldquo;not yet resolved here&rdquo;. The
+            2026-10-22 and 2026-10-24 notes below resolved it as a third branch: a proxy containing the target. Box
+            replaced 2026-11-28 after a researcher simulated-visitor persona noticed the page answered its own question.
+          </details>
         </div>
 
         <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
@@ -229,7 +230,7 @@ export default function ChemistryCorrelationExplorer() {
           chemistry pages (Hall, susceptibility, piezoelectricity, T<sub>c</sub>); the row notes give one status each, and it is the failure
           (reconciled 2026-10-31, graduate-physics simulated-visitor persona). The labels were assigned after the fits, not predicted in advance.
         </p>
-        <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
+        <p id="what-r-is-computed-against" style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
           <strong>What r is computed against (added 2026-10-22, researcher simulated-visitor persona):</strong> not C, and not
           one shared &#x03B3;. Each r is the Pearson correlation between the property and that session&apos;s best-fitting
           expression in a <em>domain-specific</em> &#x03B3; proxy (for phonon properties &#x03B3;<sub>phonon</sub> = 2T/&#x03B8;<sub>D</sub>, a
@@ -241,7 +242,7 @@ export default function ChemistryCorrelationExplorer() {
           expression and sign convention are <strong>not recorded</strong> in the source table: the archive&apos;s heat-capacity
           entry quotes a different fit (r = &minus;0.988 against the Debye form). That row now prints &ldquo;&mdash;&rdquo; in the table (it showed +0.756 until 2026-11-09).
         </p>
-        <p style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
+        <p id="top-rows-one-identity" style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
           <strong>The top rows are close to one identity, not five correlations (added 2026-10-24, researcher simulated-visitor
           persona).</strong> The phonon proxy &#x03B3;<sub>phonon</sub> = 2T/&#x03B8;<sub>D</sub> contains the Debye temperature, so the
           &ldquo;Debye temperature&rdquo; row (it printed r = +0.948 until 2026-11-09 and now prints &ldquo;&mdash;&rdquo;) correlates &#x03B8;<sub>D</sub> with a function of &#x03B8;<sub>D</sub>: high r
